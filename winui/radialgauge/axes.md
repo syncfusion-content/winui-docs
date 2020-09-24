@@ -1,0 +1,1259 @@
+---
+layout: post
+title: Axis of Syncfusion WinUI Gauge
+description: This article describes how to add and customizes the appearence of radial axis and its element of radial gauge in winui platform
+platform: winui
+control: SfRadialGauge
+documentation: ug
+---
+
+# Radial axis customization
+
+The `radial axis` is a circular arc in which a set of values are displayed along a linear or custom scale based on the design requirements. Axis elements such as  labels, ticks, and axis line can be easily customized with built-in properties.
+
+## Axis Customization
+
+**Axis minimum and maximum** 
+
+The `Minimum` and `Maximum` properties of an axis can be used to customize the axis range.The default value of `Minimum` is 0, and the default value of `Maximum` is 100.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis Minimum="-60"
+                              Maximum="60" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.Minimum = -60;
+radialAxis.Maximum = 60;
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis range](images/axis/axis_range.png)
+
+**Angle Customization**
+
+The start and end angles of radial axis can be customized using the `StartAngle` and `EndAngle` properties.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis StartAngle="180"
+                              EndAngle="90" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.StartAngle = 180;
+radialAxis.EndAngle = 90;
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis angle customization](images/axis/axis_angle.png)
+
+**Radius customization**
+
+The radius of the radial axis can be customized using the `RadiusFactor` property. The default value of the `RadiusFactor` is 0.9. The value of `RadiusFactor` ranges from 0 to 1. For example, When the `RadiusFactor` value is 1, the full radius will be considered for rendering the axis, and when the `RadiusFactor` value is 0.5, then half of the radius value will be considered for rendering the circle.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis />
+            <gauge:RadialAxis RadiusFactor="0.5" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis1 = new RadialAxis();
+sfRadialGauge.Axes.Add(radialAxis1);
+
+RadialAxis radialAxis2 = new RadialAxis();
+radialAxis2.RadiusFactor = 0.5;
+sfRadialGauge.Axes.Add(radialAxis2);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis radius customization](images/axis/axis_radius.png)
+
+**Positioning axis based on its angle**
+
+The `CanScaleToFit` property of `radial gauge` allows to position the axis and its features based on the provided `StartAngle` and `EndAngle`. By default, the `CanScaleToFit` is true.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge CanScaleToFit="True">
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis StartAngle="180"
+                              EndAngle="0"
+                              Interval="10" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+sfRadialGauge.CanScaleToFit = true;
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.StartAngle = 180;
+radialAxis.EndAngle = 0;
+radialAxis.Interval = 10;
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis fit to scale](images/axis/axis_fitToScale.png)
+
+
+**Axis label rotation**
+
+The axis label can be rotated based on its current angle using the `CanRotateLabels` property of axis. The default value of `CanRotateLabels` is false.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis CanRotateLabels="True" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.CanRotateLabels = true;
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis label rotation](images/axis/axis_rotate.png)
+
+**Edge label customization**
+
+The visibility of the first and last labels of an axis can be customized using the `ShowFirstLabel` and `ShowLastLabel` properties. 
+
+* `ShowFirstLabel` – Enables or disables the first label of the axis.
+* `ShowLastLabel` – Enables or disables the last label of the axis.
+
+The default value of both the `ShowFirstLabel` and the `ShowLastLabel` properties is true.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis Minimum="0"
+                              Maximum="12"
+                              Interval="1"
+                              StartAngle="270"
+                              EndAngle="270"
+                              ShowFirstLabel="False" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.Minimum = 0;
+radialAxis.Maximum = 12;
+radialAxis.Interval = 1;
+radialAxis.StartAngle = 270;
+radialAxis.EndAngle = 270;
+radialAxis.ShowFirstLabel = false;
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis edge label](images/axis/axis_showfirstlabel.png)
+
+**Axis direction customization**
+
+The direction of `radial axis` can be customized by its `IsInversed` property. 
+
+When the `IsInversed` property is true, the axis can be placed in counter-clockwise direction. When the  `IsInversed` property is set to false, the axis will be positioned in clockwise direction.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis IsInversed="True" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.IsInversed = true;
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis direction](images/axis/axis_inversed.png)
+
+**Maximum number of labels per 100 logical pixels**
+
+By default, a maximum of three labels are displayed for each 100 logical pixels in an axis. The maximum number of labels that should present within 100 logical pixels length can be customized using the `MaximumLabelsCount` property of the axis. This property is applicable only for automatic range calculation and will not work if you set value for interval property of an axis.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis MaximumLabelsCount="5" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.MaximumLabelsCount = 5;
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis maximum labels](images/axis/axis_maximumlabels.png)
+
+**Interval**
+
+The `Interval` between labels can be customized using the `Interval` property of axis.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis Interval="20" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.Interval = 20;
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis label interval](images/axis/axis_interval.png)
+
+**Axis line customization**
+
+The radial axis line can be customized using the following properties.
+
+* `AxisLineWidth` – Customizes the thickness of axis line.
+* `AxisLineWidthUnit` – Allows to specify the thickness of the axis either in logical pixel or factor. Its default value is logicalPixel.
+* `AxisLineFill` – Customizes the color of the axis line.
+* `GradientStops` - Allows to apply the gradient for axis line.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis AxisLineWidth="0.1"
+                              AxisLineWidthUnit="Factor"
+                              AxisLineFill="BlueViolet" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.AxisLineWidth = 0.1;
+radialAxis.AxisLineWidthUnit = SizeUnit.Factor;
+radialAxis.AxisLineFill = new SolidColorBrush(Colors.BlueViolet);
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis line customization](images/axis/axis_color.png)
+
+**Gradient support**
+
+The `GradientStops` property of `radial axis` allows to specify the smooth color transition to the axis line by specifying the different colors based on provided axis value.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis AxisLineWidth="0.1"
+                              AxisLineWidthUnit="Factor">
+                <gauge:RadialAxis.GradientStops>
+                    <gauge:GaugeGradientStop Value="25"
+                                             Color="#FFFF7676" />
+                    <gauge:GaugeGradientStop Value="75"
+                                             Color="#FFF54EA2" />
+                </gauge:RadialAxis.GradientStops>
+            </gauge:RadialAxis>
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.AxisLineWidth = 0.1;
+radialAxis.AxisLineWidthUnit = SizeUnit.Factor;
+
+GaugeGradientStop gaugeGradientStop1 = new GaugeGradientStop();
+gaugeGradientStop1.Value = 25;
+gaugeGradientStop1.Color = Color.FromArgb(255, 255, 118, 118);
+radialAxis.GradientStops.Add(gaugeGradientStop1);
+
+GaugeGradientStop gaugeGradientStop2 = new GaugeGradientStop();
+gaugeGradientStop2.Value = 75;
+gaugeGradientStop2.Color = Color.FromArgb(255, 245, 78, 162);
+radialAxis.GradientStops.Add(gaugeGradientStop2);
+
+sfRadialGauge.Axes.Add(radialAxis);
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis gradient line](images/axis/axis_gradient.png)
+
+**Axis line visibility**
+
+The visibility of the axis line can be customized using the `ShowAxisLine` property of axis. By default, this property is set to true.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis ShowAxisLine="False" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.ShowAxisLine = false;
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis line visibility](images/axis/axis_showline.png)
+
+## Label style customization
+
+The axis labels can be customized using the following properties
+
+* `Foreground` – Allows to customize the color of the labels.
+* `FontFamily` – Allows to specify the font family for labels.
+* `FontStyle` – Allows to specify the font style for labels.
+* `FontWeight` – Allows to specify the font weight for labels.
+* `FontSize` – Allows to specify the font size for labels.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis FontSize="15"
+                              Foreground="Red"
+                              FontFamily="Comic Sans MS"
+                              FontWeight="Bold"
+                              FontStyle="Italic" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.FontSize = 15;
+radialAxis.Foreground = new SolidColorBrush(Colors.Red);
+radialAxis.FontFamily = new FontFamily("Comic Sans MS");
+radialAxis.FontWeight = FontWeights.SemiBold;
+radialAxis.FontStyle = Windows.UI.Text.FontStyle.Italic;
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis label customization](images/axis/axis_label.png)
+
+**Formatting axis label**
+
+The following property of the axis allows to customize the axis label text.
+
+* `LabelFormat` - Allows to customize the axis label with the `globalized label format`.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis LabelFormat="c" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.LabelFormat = "c";
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis label format](images/axis/axis_labelFormat.png)
+
+**Label visibility**
+
+The `ShowLabels` property of axis allows to enable or disable the visibility of labels. The default value of the property is true.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis ShowLabels="False" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.ShowLabels = false;
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis label visibility](images/axis/axis_showLabels.png)
+
+## Tick customization
+
+The major and minor tick lines of an axis can be customized using the below properties.
+
+* `MinorTickLength` – Specifics the major length of ticks.
+
+* `MinorTickLength` – Specifics the minor length of ticks.
+
+* `TickLengthUnit` – Allows to specify the tick length either in logical pixels or factor. This property is common for both major and minor ticks.
+
+* `MajorTickStyle` – Allows to specify the style for major tick line.
+
+* `MinorTickStyle` – Allows to specify the style for minor tick line.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Page.Resources>
+    <Style x:Key="MajorTickLineStyle"
+           TargetType="Line">
+        <Setter Property="Stroke"
+                Value="Black"></Setter>
+        <Setter Property="StrokeThickness"
+                Value="1.5"></Setter>
+    </Style>
+    <Style x:Key="MinorTickLineStyle"
+           TargetType="Line">
+        <Setter Property="Stroke"
+                Value="Black"></Setter>
+        <Setter Property="StrokeThickness"
+                Value="1.5"></Setter>
+    </Style>
+</Page.Resources>
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis MajorTickLength="0.1"
+                              MinorTickLength="0.05"
+                              TickLengthUnit="Factor"
+                              MajorTickStyle="{StaticResource MajorTickLineStyle}"
+                              MinorTickStyle="{StaticResource MinorTickLineStyle}" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.MajorTickLength = 0.1;
+radialAxis.MinorTickLength = 0.05;
+radialAxis.TickLengthUnit = SizeUnit.Factor;
+radialAxis.MajorTickStyle = this.Resources["MajorTickLineStyle"] as Style;
+radialAxis.MinorTickStyle = this.Resources["MinorTickLineStyle"] as Style;
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis tick customization](images/axis/axis_ticks.png)
+
+**Dashed tick lines**
+
+By defining `StrokDashArray` property in both `MajorTickStyle` and `MinorTickStyle` to draw the tick line as dashed line.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Page.Resources>
+    <Style x:Key="MajorTickLineStyle"
+           TargetType="Line">
+        <Setter Property="Stroke"
+                Value="Black"></Setter>
+        <Setter Property="StrokeDashArray"
+                Value="5,2.5"></Setter>
+    </Style>
+
+    <Style x:Key="MinorTickLineStyle"
+           TargetType="Line">
+        <Setter Property="Stroke"
+                Value="Black"></Setter>
+        <Setter Property="StrokeDashArray"
+                Value="3,2.5"></Setter>
+    </Style>
+</Page.Resources>
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis MajorTickLength="15"
+                              MinorTickLength="10"
+                              MajorTickStyle="{StaticResource MajorTickLineStyle}"
+                              MinorTickStyle="{StaticResource MinorTickLineStyle}" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.MajorTickLength = 15;
+radialAxis.MinorTickLength = 10;
+radialAxis.MajorTickStyle = this.Resources["MajorTickLineStyle"] as Style;
+radialAxis.MinorTickStyle = this.Resources["MinorTickLineStyle"] as Style;
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![dashed tick lines](images/axis/axis_tickdash.png)
+
+**Minor tick interval**
+
+The major ticks are generated based on the `Interval` property. Like major ticks, the minor ticks are calculated using the `MinorTicksPerInterval` property of axis.  By default, the value of this property is 1.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis MinorTicksPerInterval="4" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.MinorTicksPerInterval = 4;
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![minor tick line](images/axis/axis_minortick.png)
+
+**Tick line visibility**
+
+The `ShowTicks` property of the axis is used to enable or disable the visibility of both the major and the minor ticks of axis. The default value of this property is true.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis ShowTicks="False" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.ShowTicks = false;
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![tick line visibilty](images/axis/axis_showticks.png)
+
+**Label Placement**
+
+The `radial axis` allows to position the labels either inside or outside of the axis line using the `LabelPosition` property. By default, labels are positioned inside the axis line.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis LabelPosition="Outside" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.LabelPosition = LabelsPosition.Outside;
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![label placement](images/axis/axis_labelOutside.png)
+
+**Tick Placement**
+
+The `radial axis` allows to position the ticks either inside or outside or center of the axis line using the `TickPosition` property. By default, ticks are positioned inside the axis line.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis TickPosition="Outside" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.TickPosition = TickElementsPosition.Outside;
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![tick placement](images/axis/axis_tickOutside.png)
+
+**Tick position customization**
+
+The ticks can be moved near or far to the axis line using the `TickOffset` property. The `OffsetUnit` property of axis allows to specify the `TickOffset` either in factor or logical pixels, and the default value of `OffsetUnit` is logicalPixel and the default value of `TickOffset` is double.NaN.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis TickOffset="50" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.TickOffset = 50;
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis tick offset](images/axis/axis_tickOffset.png)
+
+The following code example shows how to tick offset with the `OffsetUnit` property of axis.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis TickOffset="0.2"
+                              LabelOffset="0.4"
+                              OffsetUnit="Factor" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.OffsetUnit = SizeUnit.Factor;
+radialAxis.TickOffset = 0.2;
+radialAxis.LabelOffset = 0.4;
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis tick and label offset](images/axis/axis_bothOffset.png)
+
+**Label position customization**
+
+The `LabelOffset` property allows to adjust the distance between the axis line and the labels. The `OffsetUnit` property of axis allows to specify the label offset either in factor or logical pixels. By default, the value of the label offset is double.NaN.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis LabelOffset="0.3"
+                              OffsetUnit="Factor" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.OffsetUnit = SizeUnit.Factor;
+radialAxis.LabelOffset = 0.3;
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis label offset](images/axis/axis_labelOffset.png)
+
+The `OffsetUnit` property of axis is common for both the `TickOffset` and `LabelOffset`
+
+N> `SizeUnit` allows to specify the value either in logical pixels or in factor. GaugeSizeUnit.factor ranges from 0 to 1. For example, when setting factor as 0.5, the half of axis radius value will be considered.
+
+## Multiple axis
+
+The `Radial Gauge` allows you to add n number of radial axis in its axes collection. You can also customize individual axis added in the `Axes` collection.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Page.Resources>
+    <Style x:Key="InnerAxisMajorTickStyle"
+           TargetType="Line">
+        <Setter Property="Stroke"
+                Value="Black"></Setter>
+        <Setter Property="StrokeThickness"
+                Value="1.5"></Setter>
+    </Style>
+
+    <Style x:Key="InnerAxisMinorTickStyle"
+           TargetType="Line">
+        <Setter Property="Stroke"
+                Value="Black"></Setter>
+        <Setter Property="StrokeThickness"
+                Value="1.5"></Setter>
+    </Style>
+
+    <Style x:Key="OuterAxisMajorTickStyle"
+           TargetType="Line">
+        <Setter Property="Stroke"
+                Value="#8f1502"></Setter>
+        <Setter Property="StrokeThickness"
+                Value="1.5"></Setter>
+    </Style>
+
+    <Style x:Key="OuterAxisMinorTickStyle"
+           TargetType="Line">
+        <Setter Property="Stroke"
+                Value="#8f1502"></Setter>
+        <Setter Property="StrokeThickness"
+                Value="1.5"></Setter>
+    </Style>
+</Page.Resources>
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis Maximum="60"
+                              Interval="10"
+                              MinorTicksPerInterval="5"
+                              RadiusFactor="0.63"
+                              TickLengthUnit="Factor"
+                              MinorTickLength="0.05"
+                              MajorTickLength="0.10"
+                              AxisLineWidth="3"
+                              AxisLineFill="Black"
+                              Foreground="Black"
+                              MinorTickStyle="{StaticResource InnerAxisMinorTickStyle}"
+                              MajorTickStyle="{StaticResource InnerAxisMajorTickStyle}">
+            </gauge:RadialAxis>
+
+            <gauge:RadialAxis LabelPosition="Outside"
+                              TickPosition="Outside"
+                              Minimum="0"
+                              Maximum="100"
+                              Interval="10"
+                              MinorTicksPerInterval="5"
+                              RadiusFactor="0.95"
+                              TickLengthUnit="Factor"
+                              MinorTickLength="0.07"
+                              MajorTickLength="0.15"
+                              AxisLineWidth="3"
+                              AxisLineFill="#8f1502"
+                              Foreground="#8f1502"
+                              MinorTickStyle="{StaticResource OuterAxisMinorTickStyle}"
+                              MajorTickStyle="{StaticResource OuterAxisMajorTickStyle}">
+
+            </gauge:RadialAxis>
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis innerRadialAxis = new RadialAxis();
+innerRadialAxis.Maximum = 60;
+innerRadialAxis.Interval = 10;
+innerRadialAxis.MinorTicksPerInterval = 5;
+innerRadialAxis.RadiusFactor = 0.63;
+innerRadialAxis.TickLengthUnit = SizeUnit.Factor;
+innerRadialAxis.MinorTickLength = 0.05;
+innerRadialAxis.MajorTickLength = 0.10;
+innerRadialAxis.AxisLineWidth = 3;
+innerRadialAxis.AxisLineFill = new SolidColorBrush(Colors.Black);
+innerRadialAxis.Foreground = new SolidColorBrush(Colors.Black);
+innerRadialAxis.MinorTickStyle = this.Resources["InnerAxisMinorTickStyle"] as Style;
+innerRadialAxis.MajorTickStyle = this.Resources["InnerAxisMajorTickStyle"] as Style;
+sfRadialGauge.Axes.Add(innerRadialAxis);
+
+RadialAxis outerRadialAxis = new RadialAxis();
+outerRadialAxis.LabelPosition = LabelsPosition.Outside;
+outerRadialAxis.TickPosition = TickElementsPosition.Outside;
+outerRadialAxis.Minimum = 0;
+outerRadialAxis.Maximum = 100;
+outerRadialAxis.Interval = 10;
+outerRadialAxis.MinorTicksPerInterval = 5;
+outerRadialAxis.RadiusFactor = 0.95;
+outerRadialAxis.TickLengthUnit = SizeUnit.Factor;
+outerRadialAxis.MinorTickLength = 0.07;
+outerRadialAxis.MajorTickLength = 0.15;
+outerRadialAxis.AxisLineWidth = 3;
+outerRadialAxis.AxisLineFill = new SolidColorBrush(Color.FromArgb(255, 143, 21, 2));
+outerRadialAxis.Foreground = new SolidColorBrush(Color.FromArgb(255, 143, 21, 2));
+outerRadialAxis.MinorTickStyle = this.Resources["OuterAxisMinorTickStyle"] as Style;
+outerRadialAxis.MajorTickStyle = this.Resources["OuterAxisMajorTickStyle"] as Style;
+sfRadialGauge.Axes.Add(outerRadialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis label offset](images/axis/axis_multiplescale.png)
+
+## Events
+
+**LabelPrepared**
+
+The `LabelPrepared` event is called when an axis label is created. The following properties can be customized for the corresponding axis label when this event args:
+
+* `LabelText` – Allows to customize the text property of label.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge>
+        <gauge:SfRadialGauge.Axes>
+            <gauge:RadialAxis LabelPrepared="RadialAxis_LabelPrepared" />
+        </gauge:SfRadialGauge.Axes>
+    </gauge:SfRadialGauge>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+private void RadialAxis_LabelPrepared(object sender, LabelPreparedEventArgs e)
+{
+    e.LabelText += " %";
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis label prepared event](images/axis/axis_labelPrepared.png)
+
+## Custom scale
+
+`Radial gauge` allows you to display a set of values along with a custom scale based on your business logic.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<gauge:SfRadialGauge>
+    <gauge:SfRadialGauge.Axes>
+        <local:RadialAxisExt Maximum="150" />
+    </gauge:SfRadialGauge.Axes>
+</gauge:SfRadialGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+public class RadialAxisExt : RadialAxis
+{
+    public override List<AxisLabelData> GenerateVisibleLabels()
+    {
+        List<AxisLabelData> customLabels = new List<AxisLabelData>();
+
+        for (int i = 0; i < 9; i++)
+        {
+            double value = CalculateLabelValue(i);
+            AxisLabelData label = new AxisLabelData
+            {
+                Value = value,
+                Text = value.ToString()
+            };
+            customLabels.Add(label);
+        }
+
+        return customLabels;
+    }
+
+    public override double ValueToCoefficient(double value)
+    {
+        if (value >= 0 && value <= 2)
+        {
+            return (value * 0.125) / 2;
+        }
+        else if (value > 2 && value <= 5)
+        {
+            return (((value - 2) * 0.125) / (5 - 2)) + (1 * 0.125);
+        }
+        else if (value > 5 && value <= 10)
+        {
+            return (((value - 5) * 0.125) / (10 - 5)) + (2 * 0.125);
+        }
+        else if (value > 10 && value <= 20)
+        {
+            return (((value - 10) * 0.125) / (20 - 10)) + (3 * 0.125);
+        }
+        else if (value > 20 && value <= 30)
+        {
+            return (((value - 20) * 0.125) / (30 - 20)) + (4 * 0.125);
+        }
+        else if (value > 30 && value <= 50)
+        {
+            return (((value - 30) * 0.125) / (50 - 30)) + (5 * 0.125);
+        }
+        else if (value > 50 && value <= 100)
+        {
+            return (((value - 50) * 0.125) / (100 - 50)) + (6 * 0.125);
+        }
+        else if (value > 100 && value <= 150)
+        {
+            return (((value - 100) * 0.125) / (150 - 100)) + (7 * 0.125);
+        }
+        else
+        {
+            return 1;
+        }
+    }
+
+    double CalculateLabelValue(double value)
+    {
+        if (value == 0)
+        {
+            return 0;
+        }
+        else if (value == 1)
+        {
+            return 2;
+        }
+        else if (value == 2)
+        {
+            return 5;
+        }
+        else if (value == 3)
+        {
+            return 10;
+        }
+        else if (value == 4)
+        {
+            return 20;
+        }
+        else if (value == 5)
+        {
+            return 30;
+        }
+        else if (value == 6)
+        {
+            return 50;
+        }
+        else if (value == 7)
+        {
+            return 100;
+        }
+        else
+        {
+            return 150;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![custom scale](images/axis/custom_scale.png)
