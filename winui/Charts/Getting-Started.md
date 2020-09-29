@@ -13,13 +13,13 @@ This section explains you the steps required to populate the Chart with data, he
 
 ## Adding chart reference
 
-Refer to the [Control Dependencies]() section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+Refer to the [Control Dependencies]() section to get the list of NuGet package that needs to be added as a reference to use the control in any application.
 
 Refer to this [documentation]() to find more details about installing nuget packages in a WinUI application.
 
 ## Initialize chart
 
-Import the chart namespace as follows in your respective Window.
+Import the chart namespace as follows in your respective page.
 
 {% tabs %} 
 
@@ -357,7 +357,7 @@ You can add data labels to improve the readability of the chart and it can be en
 	...
   <syncfusion:ColumnSeries > 
         <syncfusion:ColumnSeries.DataMarker>
-            <syncfusion:ChartDataMarker ShowLabel="True" />
+            <syncfusion:ChartDataMarker LabelPosition="Inner" ShowLabel="True" />
         </syncfusion:ColumnSeries.DataMarker>
   </syncfusion:ColumnSeries>  
 	...
@@ -544,7 +544,7 @@ The following code example gives you the complete code of above configurations.
                                       ShowTooltip="True">
                    <!--Add data marker to the series-->                
                     <syncfusion:ColumnSeries.DataMarker>
-                        <syncfusion:ChartDataMarker ShowLabel="True" />
+                        <syncfusion:ChartDataMarker LabelPosition="Inner" ShowLabel="True" />
                     </syncfusion:ColumnSeries.DataMarker>               
             </syncfusion:ColumnSeries>          
 
@@ -665,5 +665,5 @@ The following chart is created as a result of the previous codes.
 
 ![Getting Started WinUI Chart](Getting-Started_images/img3.png)
 
-You can find the complete getting started sample from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Chart_GettingStarted-1219248669.zip).
+You can find the complete getting started sample from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Chart_GettingStarted-1703269833.zip).
 
