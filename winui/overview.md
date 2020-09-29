@@ -28,11 +28,11 @@ The Syncfusion WinUI Controls are the suite you ever need to to create state of 
 </tr>
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/winui/datagrid/getting-started">DataGrid</a>
+<p>DataGrid
 <small> - SfDataGrid</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/winui/treegrid/getting-started">TreeGrid</a>
+<p>TreeGrid
 <small> - SfTreeGrid</small></p>
 </td>
 <td/>
@@ -45,15 +45,15 @@ The Syncfusion WinUI Controls are the suite you ever need to to create state of 
 </tr>
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/winui/charts/getting-started">Charts</a>
+<p>Charts
 <small> - SfChart</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/winui/radialgauge/getting-started">Ragial Gauge</a>
+<p>Ragial Gauge
 <small> - SfRadialGauge</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/winui/barcode/getting-started">Barcode</a>
+<p>Barcode
 <small> - SfBarcode</small></p>
 </td>
 </tr>
@@ -65,7 +65,7 @@ The Syncfusion WinUI Controls are the suite you ever need to to create state of 
 </tr>
 <tr>
 <td colspan="3">
-<p><a href="https://help.syncfusion.com/winui/treeview/getting-started">TreeView</a>
+<p>TreeView
 <small> - SfTreeView</small></p>
 </td>
 </tr>
@@ -77,7 +77,7 @@ The Syncfusion WinUI Controls are the suite you ever need to to create state of 
 </tr>
 <tr>
 <td colspan="3">
-<p><a href="https://help.syncfusion.com/winui/badge/getting-started">Badge</a>
+<p>Badge
 <small> - SfBadge</small></p>
 </td>
 </tr>
@@ -90,22 +90,22 @@ The Syncfusion WinUI Controls are the suite you ever need to to create state of 
 </tr>
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/winui/colorpicker/getting-started">ColorPicker</a>
+<p>ColorPicker
 <small> - SfColorPicker</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/winui/dropdowncolorpicker/getting-started">Dropdown Color Picker</a>
+<p>Dropdown Color Picker
 <small> - SfDropDownColorPicker</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/winui/colorpalette/getting-started">Barcode</a>
+<p>Barcode
 <small> - SfColorPalette</small></p>
 </td>
 </tr>
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/winui/dropdowncolorpalette/getting-started">Dropdown Color Palette</a>
+<p>Dropdown Color Palette
 <small> - SfDropDownColorPalette</small></p>
 </td>
 <td/>
