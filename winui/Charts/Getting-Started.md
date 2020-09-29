@@ -35,14 +35,6 @@ using Syncfusion.UI.Xaml.Charts;
 
 {% endhighlight %}
 
-{% highlight VB %} 
-
-Imports Syncfusion.UI.Xaml.Charts
-
-{% endhighlight %}
-
-{% endtabs %} 
-
 Then initialize an empty chart with two axes as shown below,
 
 {% tabs %} 
@@ -74,20 +66,6 @@ chart.SecondaryAxis = secondaryAxis;
 
 {% endhighlight %}
 
-{% highlight VB %}
-
-Dim chart As New SfChart()
-
-Dim primaryAxis As New CategoryAxis () 
-
-chart.PrimaryAxis = primaryAxis 
-
-Dim secondaryAxis As New NumericalAxis ()  
-
-chart.SecondaryAxis = secondaryAxis
-
-{% endhighlight %}
-
 {% endtabs %} 
 
 Run the project and check if you get following output to make sure you have configured your project properly to add chart.
@@ -110,18 +88,6 @@ public class Person
 
     public double Height { get; set; }
 }
-
-{% endhighlight %} 
-
-{% highlight VB %}
-
-Public Class Person
-
-    Public Property Name As String
-
-    Public Property Height As Double
-
-End Class
 
 {% endhighlight %} 
 
@@ -151,26 +117,6 @@ public class ViewModel
  }
 
 {% endhighlight %} 
-
-
-{% highlight VB %}
-
-Public Class ViewModel
-
-    Public Property Data As List(Of Person)
-
-    Public Sub New()
-        Data = New List(Of Person)() From
-        {
-            New Person With {.Name = "David", .Height = 180},
-            New Person With {.Name = "Michael", .Height = 170},
-            New Person With {.Name = "Steve", .Height = 160},
-            New Person With {.Name = "Joel", .Height = 182}
-        }
-    End Sub
-End Class
-
-{% endhighlight %}
 
 {% endtabs %} 
 
@@ -203,12 +149,6 @@ N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `Da
 {% highlight C# %} 
 
 this.DataContext = new ViewModel();
-
-{% endhighlight %}
-
-{% highlight VB %} 
-
-Me.DataContext = New ViewModel()
 
 {% endhighlight %}
 
@@ -277,39 +217,6 @@ chart.Series.Add(series);
 
 {% endhighlight %}
 
-{% highlight VB %}
-
-Dim chart As New SfChart()
-
-'Adding horizontal axis to the chart 
-
-Dim primaryAxis As New CategoryAxis()
-
-primaryAxis.Header = "Name"
-chart.PrimaryAxis = primaryAxis
-
-
-'Adding vertical axis to the chart  
-
-Dim secondaryAxis As New NumericalAxis()
-
-secondaryAxis.Header = "Height(in cm)"
-
-chart.SecondaryAxis = secondaryAxis        
-
-'Initialize the two series for SfChart
-Dim series As New ColumnSeries()
-
-series.ItemsSource = New ViewModel().Demands
-series.XBindingPath = "Name"
-series.YBindingPath = "Height"
-        
-'Adding Series to the Chart Series Collection
-
-chart.Series.Add(series)
-
-{% endhighlight %}
-
 {% endtabs %} 
 
 ## Add title
@@ -332,12 +239,6 @@ The header of the chart acts as the title to provide quick information to the us
 {% highlight C# %} 
 
 chart.Header = "Chart";
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-chart.Header = "Chart"
 
 {% endhighlight %}
 
@@ -369,12 +270,6 @@ You can add data labels to improve the readability of the chart and it can be en
 {% highlight C# %} 
 
 series.DataMarker = new ChartDataMarker (){ ShowLabel = true }; 
-
-{% endhighlight %}
-
-{% highlight VB %} 
-
-series.DataMarker = New ChartDataMarker() With {.ShowLabel = True} 
 
 {% endhighlight %}
 
@@ -410,12 +305,6 @@ chart.Legend = new ChartLegend ();
 
 {% endhighlight %}
 
-{% highlight VB %} 
-
-chart.Legend = New ChartLegend () 
-
-{% endhighlight %}
-
 {% endtabs %}  
 
 Additionally, you need to set label for each series using the `Label` property of ChartSeries, which will be displayed in corresponding legend.
@@ -443,16 +332,6 @@ series.ItemsSource = (new ViewModel()).Data;
 series.XBindingPath = "Name"; 
 series.YBindingPath = "Height"; 
 series.Label = "Heights";
-
-{% endhighlight %}
-
-{% highlight VB %} 
-
-Dim series As New ColumnSeries () 
-series.ItemsSource = New ViewModel().Data
-series.XBindingPath = "Name" 
-series.YBindingPath = "Height" 
-series.Label = "Heights"
 
 {% endhighlight %}
 
@@ -485,16 +364,6 @@ series.ItemsSource = (new ViewModel()).Data;
 series.XBindingPath = "Name";          
 series.YBindingPath = "Height";
 series.ShowTooltip = true;
-
-{% endhighlight %}
-
-{% highlight VB %} 
-
-Dim series As New ColumnSeries () 
-series.ItemsSource = New ViewModel().Data
-series.XBindingPath = "Name" 
-series.YBindingPath = "Height" 
-series.ShowTooltip = True
 
 {% endhighlight %}
 
@@ -603,59 +472,6 @@ namespace SfChart_GettingStarted
         }
     }   
 }
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-Imports Syncfusion.UI.Xaml.Charts
-Partial Public Class MainPage
-    Inherits Page   
-    Public Sub New()
-        InitializeComponent()
-
-        Dim chart As New SfChart()
-        chart.Header = "Chart"
-        chart.Height = 300
-        chart.Width = 500
-
-        'Adding horizontal axis to the chart 
-
-        Dim primaryAxis As New CategoryAxis()
-        primaryAxis.Header = "Name"
-        primaryAxis.FontSize = 14
-        chart.PrimaryAxis = primaryAxis
-
-        'Adding vertical axis to the chart  
-
-        Dim secondaryAxis As New NumericalAxis()
-        secondaryAxis.Header = "Height(in cm)"
-        secondaryAxis.FontSize = 14
-        chart.SecondaryAxis = secondaryAxis
-
-        'Adding Legends for the chart
-        Dim legend As New ChartLegend()
-        chart.Legend = legend
-
-        'Initializing column series
-        Dim series As New ColumnSeries()
-        series.ItemsSource = New ViewModel().Data
-        series.XBindingPath = "Name"
-        series.YBindingPath = "Height"
-        series.Label = "Heights"
-        series.ShowTooltip = True
-
-        'Setting data marker to the chart series
-        series.DataMarker = New ChartDataMarker() With {.ShowLabel = True}       
-
-        'Adding Series to the Chart Series Collection
-
-        chart.Series.Add(series)
-
-        Me.Content = chart
-
-    End Sub
-End Class
 
 {% endhighlight %}
 
