@@ -7,4 +7,4 @@ control: Overview
 documentation: ug
 ---
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the syncfusion WPF controls by adding resource file for each language.
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the syncfusion WinUI controls by adding resource file for each language.
