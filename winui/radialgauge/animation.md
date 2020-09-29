@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Syncfusion Flutter Gauge Animation
-description: This article describes how to add and customizes the appearence gauge annotation of radial gauge control in flutter platform
-platform: flutter
+title: Syncfusion WinUI Gauge Animation
+description: This article describes how to add and customizes the appearence gauge annotation of radial gauge control in winui platform
+platform: winui
 control: SfRadialGauge
 documentation: ug
 ---
 
-# Animation in  radial gauge
+# Animation in radial gauge
 
-## Pointer Animation
+## Pointer animation
 The `EnableAnimation` property of pointer allows to enable or disable animation for pointer and the `AnimationDuration` property of pointer allows to control the animation duration in milliseconds. The default value of animation duration is 1500ms.
 
 {% tabs %}

@@ -193,7 +193,7 @@ this.Content = sfRadialGauge;
 
 ![text pointer](images/marker-pointers/custom_marker.png)
 
-## Marker Customization
+## Marker customization
 
 The marker pointer can be customized using the following properties:
 

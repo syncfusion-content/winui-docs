@@ -7,7 +7,7 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Needle Pointer customization
+# Needle pointer customization
 
 `Needle Pointer` contains three parts, namely needle, knob, and tail and that can be placed on a gauge to mark the values.
 
@@ -341,7 +341,7 @@ this.Content = sfRadialGauge;
 
 ![knob stroke customization](images/needle-pointer/knob_Stroke.png)
 
-## Tail Customization
+## Tail customization
 
 The `tail` of the needle can be customized using the following properties,
 

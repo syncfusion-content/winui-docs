@@ -63,7 +63,7 @@ this.Content = sfRadialGauge;
 
 ![multiple pointers](images/pointers/multiple_pointer.png)
 
-## Pointer Dragging
+## Pointer dragging
 
 Pointers can be dragged over the scale value. It can be achieved by clicking and dragging the pointer. To enable or disable the pointer drag, use the `IsInteractive` property.
 

@@ -52,7 +52,7 @@ this.Content = sfRadialGauge;
 
 ![default range](images/range/range_default.png)
 
-## Range Customization
+## Range customization
 
 The following properties are used for the range customization:
 

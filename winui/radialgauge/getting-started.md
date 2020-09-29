@@ -7,21 +7,41 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Getting Started with WinUI Radial Gauge (SfRadialGauge)
+# Getting Started
 
-This section explains the steps required to add the radial gauge and its elements such as axis, range, pointer and annotation. This section covers only basic features needed to know to get started with Syncfusion radial gauge. 
+This section explains the steps required to add the radial gauge and its elements such as axis, range, pointer and annotation. This section covers only basic features needed to get started with Syncfusion radial gauge control.
 
-## Add WinUI Radial Gauge to an application
+## Creating an application with WinUI RadialGauge
+
+**1.Create new WinUI Project**
 
 Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
 
-**Add dependency**
+**2.Add Syncfusion.Gauges.WinUI NuGet.**
 
+**3.Declare namespace**
 
+After the package has been added, declare the namespace like below
 
-## Initialize the radial gauge with axis
+{% tabs %}
 
-After the package has been imported, initialize the SfRadialGauge as a child of any control such as grid, stack panel. Axes contain a list of axis elements, where you can add any number of radial axes inside the gauge. You can specify the minimum and maximum values of axis using the `Minimum` and `Maximum` properties as demonstrated in the following code snippet.
+{% highlight xml %}
+
+xmlns:gauge="using:Syncfusion.UI.Xaml.Gauges"
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.UI.Xaml.Gauges;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**4.Initialize the radial gauge with axis**
+
+Initialize the SfRadialGauge as a child of any control such as grid, stack panel. Axes contain a list of axis elements, where you can add any number of radial axes inside the gauge. You can specify the minimum and maximum values of axis using the `Minimum` and `Maximum` properties as demonstrated in the following code snippet.
 
 {% tabs %}
 

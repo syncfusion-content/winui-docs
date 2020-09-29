@@ -11,7 +11,7 @@ documentation: ug
 
 The `radial axis` is a circular arc in which a set of values are displayed along a linear or custom scale based on the design requirements. Axis elements such as  labels, ticks, and axis line can be easily customized with built-in properties.
 
-## Axis Customization
+## Axis customization
 
 **Axis minimum and maximum** 
 
@@ -49,7 +49,7 @@ this.Content = sfRadialGauge;
 
 ![axis range](images/axis/axis_range.png)
 
-**Angle Customization**
+**Angle customization**
 
 The start and end angles of radial axis can be customized using the `StartAngle` and `EndAngle` properties.
 
@@ -793,7 +793,7 @@ this.Content = sfRadialGauge;
 
 ![tick line visibilty](images/axis/axis_showticks.png)
 
-**Label Placement**
+**Label placement**
 
 The `radial axis` allows to position the labels either inside or outside of the axis line using the `LabelPosition` property. By default, labels are positioned inside the axis line.
 
@@ -827,7 +827,7 @@ this.Content = sfRadialGauge;
 
 ![label placement](images/axis/axis_labelOutside.png)
 
-**Tick Placement**
+**Tick placement**
 
 The `radial axis` allows to position the ticks either inside or outside or center of the axis line using the `TickPosition` property. By default, ticks are positioned inside the axis line.
 
