@@ -35,6 +35,8 @@ using Syncfusion.UI.Xaml.Charts;
 
 {% endhighlight %}
 
+{% endtabs %} 
+
 Then initialize an empty chart with two axes as shown below,
 
 {% tabs %} 
