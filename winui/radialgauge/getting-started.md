@@ -9,9 +9,9 @@ documentation: ug
 
 # Getting Started with WinUI Radial Gauge (SfRadialGauge)
 
-This section explains the steps required to add the radial gauge and its elements such as axis, range, pointer and annotation. This section covers only basic features needed to get started with Syncfusion radial gauge control.
+This section explains the steps required to add the Radial Gauge control and its elements such as axis, range, pointer and annotation. This section covers only basic features needed to get started with Syncfusion radial gauge control.
 
-## Creating an application with WinUI RadialGauge
+## Creating an application with WinUI Radial Gauge
 
 **1.Create new WinUI Project**
 
@@ -39,7 +39,7 @@ using Syncfusion.UI.Xaml.Gauges;
 
 {% endtabs %}
 
-**4.Initialize the radial gauge with axis**
+**4.Initialize the radial gauge control with axis**
 
 Initialize the SfRadialGauge as a child of any control such as grid, stack panel. Axes contain a list of axis elements, where you can add any number of radial axes inside the gauge. You can specify the minimum and maximum values of axis using the `Minimum` and `Maximum` properties as demonstrated in the following code snippet.
 
