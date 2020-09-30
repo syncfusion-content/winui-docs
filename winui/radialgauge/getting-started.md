@@ -7,7 +7,7 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WinUI Radial Gauge (SfRadialGauge)
 
 This section explains the steps required to add the radial gauge and its elements such as axis, range, pointer and annotation. This section covers only basic features needed to get started with Syncfusion radial gauge control.
 
