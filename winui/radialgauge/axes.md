@@ -7,15 +7,15 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Radial axis customization
+# Radial axis 
 
-The `radial axis` is a circular arc in which a set of values are displayed along a linear or custom scale based on the design requirements. Axis elements such as  labels, ticks, and axis line can be easily customized with built-in properties.
+The `Radial axis` is a circular arc in which a set of values are displayed along a linear or custom scale based on the design requirements. Axis elements such as  labels, ticks, and axis line can be easily customized with built-in properties.
 
 ## Axis customization
 
 **Axis minimum and maximum** 
 
-The `Minimum` and `Maximum` properties of an axis can be used to customize the axis range.The default value of `Minimum` is 0, and the default value of `Maximum` is 100.
+The `Minimum` and `Maximum` properties of an axis can be used to customize the axis value range.The default value of `Minimum` is 0, and the default value of `Maximum` is 100.
 
 {% tabs %}
 
@@ -480,7 +480,7 @@ this.Content = sfRadialGauge;
 
 ![axis line visibility](images/axis/axis_showline.png)
 
-## Label style customization
+## Axis label customization
 
 The axis labels can be customized using the following properties
 
