@@ -50,7 +50,7 @@ To add the `SfColorPalette` control manually in XAML, follow these steps:
 
 2. Add the  following assembly references to the project,
     * Syncfusion.Core.WinUI
-    * Syncfusion.SfInput.WinUI
+    * Syncfusion.Editors.WinUI
  
 3. Import Syncfusion WinUI schema **using:Syncfusion.UI.Xaml.Editors** and declare the `SfColorPalette` control in XAML page.
 
@@ -85,7 +85,7 @@ To add the `SfColorPalette` control manually in C#, follow these steps:
 
 2. Add the  following assembly references to the project,
     * Syncfusion.Core.WinUI
-    * Syncfusion.SfInput.WinUI
+    * Syncfusion.Editors.WinUI
 
 3. Include the required namespace and create an instance of `SfColorPalette` and add it to the window.
 
