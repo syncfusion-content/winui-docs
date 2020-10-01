@@ -9,7 +9,7 @@ documentation: ug
 
 # Needle Pointer in WinUI Radial Gauge (SfRadialGauge)
 
-`Needle Pointer` contains three parts, namely needle, knob, and tail and that can be placed on a gauge to mark the values.
+[`Needle Pointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.NeedlePointer.html) contains three parts, namely needle, knob, and tail and that can be placed on a gauge to mark the values.
 
 {% tabs %}
 
@@ -65,7 +65,7 @@ The needle can be customized using the following properties:
 The needle length can be controlled using the `NeedleLength` and `NeedleLengthUnit` properties. The length can be set either in logical pixels or factor using `NeedleLengthUnit`.
 
 If the `NeedleLengthUnit` is set to pixel, the logical pixel value will be set to the `NeedleLength` to calculate the needle length. 
-If the `NeedleLengthUnit` is set to factor, then the factor value will be set to the `NeedleLength`. The factor value ranges from 0 to 1. For example, if the needle length is set to 0.5, the half of the radius value is set to the needle length. The default value of  `NeedleLengthUnit` is `SizeUnit.Factor`.
+If the `NeedleLengthUnit` is set to factor, then the factor value will be set to the `NeedleLength`. The factor value ranges from 0 to 1. For example, if the needle length is set to 0.5, the half of the radius value is set to the needle length. The default value of  `NeedleLengthUnit` is factor.
 
 {% tabs %}
 
@@ -155,9 +155,9 @@ this.Content = sfRadialGauge;
 
 ![needle width customization](images/needle-pointer/needle_customization.png)
 
-**Setting Gradient brush to the needle**
+**Setting gradient brush to the needle**
 
- The `NeedleFill` property of `needle pointer` is Brush type. So, it accepts gradient brushes by default as shown in below code
+ The `NeedleFill` property of [`Needle Pointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.NeedlePointer.html) is Brush type. So, it accepts gradient brushes by default as shown in below code
 
 {% tabs %}
 
@@ -287,7 +287,7 @@ this.Content = sfRadialGauge;
 
 ![knob radius customization](images/needle-pointer/knob_pixel.png)
 
-If the `KnobSizeUnit` is set to factor, the factor value will be set to knob radius. The factor value ranges from 0 to 1. For example, if the needle length is set to 0.1, 10% of the radius value of `axis` will be set to knob radius. By default, the value of `KnobSizeUnit` is SizeUnit.factor
+If the `KnobSizeUnit` is set to factor, the factor value will be set to knob radius. The factor value ranges from 0 to 1. For example, if the needle length is set to 0.1, 10% of the radius value of `axis` will be set to knob radius. By default, the value of `KnobSizeUnit` is factor
 
 **Knob stroke customization**
 
@@ -354,7 +354,7 @@ The `tail` of the needle can be customized using the following properties,
 
 **Tail length customization**
 
-The tail length can be controlled using the `TailLength` and `TailLengthUnit` properties. The length can be set either in logical pixels or factor using `TailLengthUnit`. The default value of `TailLengthUnit` is `SizeUnit.Factor`.
+The tail length can be controlled using the `TailLength` and `TailLengthUnit` properties. The length can be set either in logical pixels or factor using `TailLengthUnit`. The default value of `TailLengthUnit` is factor.
 
 **Tail length in pixel**
 
@@ -484,6 +484,8 @@ this.Content = sfRadialGauge;
 {% endtabs %}
 
 ![tail width](images/needle-pointer/needle_tailWidth.png)
+
+**Setting gradient brush to the tail**
 
 The following code shows how to apply the gradient for the tail.
 

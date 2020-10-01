@@ -12,7 +12,7 @@ documentation: ug
  Pointer is used to indicate values on an axis. The radial gauge control has three types of pointers: 
 
 [`Marker pointer`](https://help.syncfusion.com/winui/radial-gauge/marker-pointer)
-[`Needle pointer`](https://help.syncfusion.com/winui/radial-gauge/needle-pointer)
+[`Needle Pointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.NeedlePointer.html)
 [`Range pointer`](https://help.syncfusion.com/winui/radial-gauge/range-pointer)
 
 All the pointers can be customized as needed. You can add multiple pointers to the gauge to point multiple values on the same scale. The value of the pointer is set using the `Value` property.
@@ -65,7 +65,7 @@ this.Content = sfRadialGauge;
 
 ## Pointer dragging
 
-Pointers can be dragged over the scale value. It can be achieved by clicking and dragging the pointer. To enable or disable the pointer drag, use the `IsInteractive` property.
+Pointers can be dragged over the scale value. It can be achieved by clicking and dragging the pointer. To enable or disable the pointer drag, use the [`IsInteractive`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_IsInteractive) property.
 
 {% tabs %}
 
@@ -115,13 +115,13 @@ this.Content = sfRadialGauge;
 
 ## Event
 
-`ValueChangeStarted` - Occurs whenever the pointer starts to drag.
+[`ValueChangeStarted`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_ValueChangeStarted) - Occurs whenever the pointer starts to drag.
 
-`ValueChanging` - Occurs before the current drag value gets updated as pointer value. The `Cancel` argument of `ValueChangingEventArgs` allows to restrict the update of current drag value as pointer value.
+[`ValueChanging`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_ValueChanging) - Occurs before the current drag value gets updated as pointer value. The `Cancel` argument of `ValueChangingEventArgs` allows to restrict the update of current drag value as pointer value.
 
-`ValueChanged` - Occurs whenever the pointer value is changed while dragging.
+[`ValueChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_ValueChanged) - Occurs whenever the pointer value is changed while dragging.
 
-`ValueChangeCompleted` - Occurs once the dragging of the pointer gets completed.
+[`ValueChangeCompleted`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_ValueChangeCompleted) - Occurs once the dragging of the pointer gets completed.
 
 {% tabs %}
 
