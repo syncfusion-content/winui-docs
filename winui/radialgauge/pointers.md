@@ -7,7 +7,7 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Pointers in radial gauge
+# Pointers in WinUI Radial Gauge (SfRadialGauge)
 
  Pointer is used to indicate values on an axis. The radial gauge control has three types of pointers: 
 
