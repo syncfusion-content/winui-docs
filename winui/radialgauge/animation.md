@@ -7,7 +7,7 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Animation in radial gauge
+# Animation Support in WinUI Radial Gauge (SfRadialGauge)
 
 ## Pointer animation
 

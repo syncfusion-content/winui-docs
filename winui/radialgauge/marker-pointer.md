@@ -7,9 +7,9 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Marker pointer for radial gauge
+# Marker pointer in WinUI Radial Gauge (SfRadialGauge)
 
-Different types of markers are used to mark the pointer values in a scale. You can change the marker type using the `markerType` property.
+Indicate current values by using different types of marker pointers. You can change the marker type using the `MarkerType` property.
 
 {% tabs %}
 
@@ -61,7 +61,7 @@ Gauge supports the following types of marker:
 
 ## Image pointer
 
-Image is used to denote the current pointer values instead of shape. It can be achieved by specifying the  `MarkerType` as image and specifying the `ImageSource` property of marker pointer.
+Image is used to denote the current pointer values instead of shape. It can be achieved by specifying the `MarkerType` as image and specifying the `ImageSource` property of marker pointer.
 
 {% highlight xml %}
 
@@ -136,9 +136,9 @@ this.Content = sfRadialGauge;
 
 ![text pointer](images/marker-pointers/text_marker.png)
 
-## Custom pointer
+## Add customized pointer
 
-Custom symbols is used to denote the current pointer value instead of any inbuilt marker shape. It can be achieved by setting the `MarkerType` as Custom and provide requrired shape in `MarkerTemplate` property.
+You can add customized symbols to denote the current pointer value instead of in-built marker shape. It can be achieved by setting the `MarkerType` as `Custom` and provide requrired shape in `MarkerTemplate` property.
 
 {% tabs %}
 
@@ -250,11 +250,11 @@ this.Content = sfRadialGauge;
 
 ![marker pointer customization](images/marker-pointers/marker_customization.png)
 
-## Position customization
+## Marker position customization
 
 The marker pointer can be moved near or far from its actual position using the `MarkerOffset` and `OffsetUnit` properties. 
 
-When you set `OffsetUnit` to logical pixel, then the marker pointer will be moved based on the logical pixel value. If you set `OffsetUnit` to factor, then provided factor will be multiplied with the axis radius value, and then the pointer will be moved to corresponding value. The default value of `OffsetUnit` is SizeUnit.Pixel.
+When you set `OffsetUnit` to logical pixel, the marker pointer will be moved based on the logical pixel value. If you set `OffsetUnit` to factor, then provided factor will be multiplied with the axis radius value, and then the pointer will be moved to corresponding value. The default value of `OffsetUnit` is `SizeUnit.Pixel`.
 
 {% tabs %}
 

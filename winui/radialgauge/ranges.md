@@ -7,7 +7,7 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Gauge range for radial gauge
+# Range Feature in WinUI Radial Gauge (SfRadialGauge)
 
 Gauge range is a visual element that helps to quickly visualize where a value falls on the axis.
 
@@ -111,6 +111,8 @@ this.Content = sfRadialGauge;
 
 **Different range width**
 
+By setting different values to `StartWidth` and `EndWidth` property can create diffent width ranges. 
+
 {% tabs %}
 
 {% highlight xml %}
@@ -156,7 +158,7 @@ When the `WidthUnit` is set as logical pixels, the range will be rendered based 
 
 If the `WidthUnit` is set as factor, the provided factor value in the start width and end width will be multiplied with the axis radius, respectively. The factor value ranges from 0 to 1.
 
-**Gradient support**
+**Setting gradient brush to the range**
 
  The `gradient` property of `range` allows to specify the smooth color transition to pointer by specifying the different colors based on provided factor value.
 
@@ -225,7 +227,7 @@ this.Content = sfRadialGauge;
 
 **Range offset in pixel**
 
-If the `OffsetUnit` is set as logical pixels, then the range will be moved based on the provided logical pixel value.
+If the `OffsetUnit` is set as a pixels, the range will be moved based on the provided logical pixel value.
 
 {% tabs %}
 
@@ -268,7 +270,7 @@ this.Content = sfRadialGauge;
 
 **Range offset in factor**
 
-If the `OffsetUnit` is set as factor, then the provided factor value in the range offset will be multiplied with the axis radius and the range will be moved to the corresponding value. The default value of `OffsetUnit` is logicalPixel.
+If the `OffsetUnit` is set as a factor, the provided factor value in the `RangeOffset` will be multiplied by the axis radius and the range will be moved to the corresponding value. The default value of `OffsetUnit` is logicalPixel.
 
 {% tabs %}
 

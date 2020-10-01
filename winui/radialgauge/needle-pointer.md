@@ -7,7 +7,7 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Needle pointer for radial gauge
+# Needle Pointer in WinUI Radial Gauge (SfRadialGauge)
 
 `Needle Pointer` contains three parts, namely needle, knob, and tail and that can be placed on a gauge to mark the values.
 
@@ -64,8 +64,8 @@ The needle can be customized using the following properties:
 
 The needle length can be controlled using the `NeedleLength` and `NeedleLengthUnit` properties. The length can be set either in logical pixels or factor using `NeedleLengthUnit`.
 
-If the `NeedleLengthUnit` is set to logical pixel, the logical pixel value will be set to the `NeedleLength`
-If the `NeedleLengthUnit` is set to factor, then the factor value will be set to the `NeedleLength`. The factor value ranges from 0 to 1. For example, if the needle length is set to 0.5, the half of the radius value of axis to needle length. The default value of  `NeedleLengthUnit` is SizeUnit.factor
+If the `NeedleLengthUnit` is set to pixel, the logical pixel value will be set to the `NeedleLength` to calculate the needle length. 
+If the `NeedleLengthUnit` is set to factor, then the factor value will be set to the `NeedleLength`. The factor value ranges from 0 to 1. For example, if the needle length is set to 0.5, the half of the radius value is set to the needle length. The default value of  `NeedleLengthUnit` is `SizeUnit.Factor`.
 
 {% tabs %}
 
@@ -155,9 +155,9 @@ this.Content = sfRadialGauge;
 
 ![needle width customization](images/needle-pointer/needle_customization.png)
 
-**Gradient support for needle**
+**Setting Gradient brush to the needle**
 
- The `NeedleFill` property of `needle pointer` is Brush type. So, it accepts gradient brushes by default.
+ The `NeedleFill` property of `needle pointer` is Brush type. So, it accepts gradient brushes by default as shown in below code
 
 {% tabs %}
 
@@ -244,8 +244,7 @@ The knob can be customized using the following properties:
 
 **Knob radius customization**
 
-The radius of the knob can be customized using the `KnobRadius` and `KnobSizeUnit`. 
- The logical pixel value can be set to knob radius when the `KnobSizeUnit` is set to logical pixel
+The radius of the knob can be customized using the `KnobRadius` and `KnobSizeUnit`.  If `KnobSizeUnit` is pixel, the logical pixel value can be set to the `KnobRadius`.
 
 {% tabs %}
 
@@ -292,7 +291,7 @@ If the `KnobSizeUnit` is set to factor, the factor value will be set to knob rad
 
 **Knob stroke customization**
 
-Like radius, the `KnobStrokeThickness` can be specified either in logical pixel or factor. The `KnobSizeUnit` property is common for both `knobRadius` and `KnobStrokeThickness` properties.
+Like knob radius, the `KnobStrokeThickness` can be specified either in logical pixel or factor. The `KnobSizeUnit` property is common for both `knobRadius` and `KnobStrokeThickness` properties.
 
 {% tabs %}
 
@@ -355,11 +354,11 @@ The `tail` of the needle can be customized using the following properties,
 
 **Tail length customization**
 
-The tail length can be controlled using the `TailLength` and `TailLengthUnit` properties. The length can be set either in logical pixels or factor using `TailLengthUnit`. The default value of `TailLengthUnit` is SizeUnit.factor.
+The tail length can be controlled using the `TailLength` and `TailLengthUnit` properties. The length can be set either in logical pixels or factor using `TailLengthUnit`. The default value of `TailLengthUnit` is `SizeUnit.Factor`.
 
 **Tail length in pixel**
 
-If the `TailLengthUnit` is set as logical pixel, then the tail will be rendered based on the provided logical pixel value in `TailLength`.
+If the `TailLengthUnit` is set as a pixel, the tail will be rendered based on the logical pixel value given in `TailLength`.
 
 {% tabs %}
 
@@ -402,7 +401,7 @@ this.Content = sfRadialGauge;
 
 **Tail length in factor**
 
-If the `TailLengthUnit` is set as factor, then the provided factor value in the tail length will be multiplied with the axis radius. The factor value ranges from 0 to 1. For example, if the tail length is set to 0.5, the half of the radius value of axis to tail length. 
+If the `TailLengthUnit` is set as a factor, the provided factor value in the tail length will be multiplied by the axis radius. The factor value ranges from 0 to 1. For example, if the tail length is set to 0.5, the half of the radius value of axis to tail length. 
 
 {% tabs %}
 

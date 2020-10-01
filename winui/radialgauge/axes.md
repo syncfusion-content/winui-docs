@@ -7,13 +7,13 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Radial axis 
+# Radial axis Feature in WinUI Radial Gauge (SfRadialGauge)
 
 The `Radial axis` is a circular arc in which a set of values are displayed along a linear or custom scale based on the design requirements. Axis elements such as  labels, ticks, and axis line can be easily customized with built-in properties.
 
 ## Axis customization
 
-**Axis minimum and maximum** 
+**Setting axis minimum and maximum value** 
 
 The `Minimum` and `Maximum` properties of an axis can be used to customize the axis value range.The default value of `Minimum` is 0, and the default value of `Maximum` is 100.
 
@@ -355,13 +355,13 @@ this.Content = sfRadialGauge;
 The radial axis line can be customized using the following properties.
 
 * `AxisLineWidth` – Customizes the thickness of axis line.
-* `AxisLineWidthUnit` – Allows to specify the thickness of the axis either in logical pixel or factor. Its default value is logicalPixel.
+* `AxisLineWidthUnit` – Allows to specify the thickness of the axis line either in logical pixel or factor. Its default value is `Pixel`.
 * `AxisLineFill` – Customizes the color of the axis line.
-* `GradientStops` - Allows to apply the gradient for axis line.
+* `GradientStops` - Allows to apply the gradient brush for axis line.
 
 **Axis line width in pixel**
 
-If the `AxisLineWidthUnit` is set as pixel, then the axis line will be rendered based on the provided logical pixel values in `AxisLineWidth`.
+If the `AxisLineWidthUnit` is set as a pixel, the axis line will be rendered based on the logical pixel values given in `AxisLineWidth`.
 
 {% tabs %}
 
@@ -397,7 +397,7 @@ this.Content = sfRadialGauge;
 
 **Axis line width in factor**
 
-If the `AxisLineWidthUnit` is set as factor, then the provided factor value in the axis line width will be multiplied with the axis radius. The factor value ranges from 0 to 1.
+If the 'AxisLineWidthUnit' is set as a factor, the given factor value in the 'AxisLineWidth' is multiplied by the axis radius. The value of the factor ranges from 0 to 1.
 
 {% tabs %}
 
@@ -431,7 +431,9 @@ this.Content = sfRadialGauge;
 
 ![axis line width in factor](images/axis/axis_width_factor.png)
 
-**Axis line fill**
+**Setting axis line fill brush**
+
+To fill the brush to axis line using the `AxisLineFill` property of radial axis. 
 
 {% tabs %}
 
@@ -467,9 +469,9 @@ this.Content = sfRadialGauge;
 
 ![axis line fill customization](images/axis/axis_color.png)
 
-**Gradient support**
+**Setting gradient brush to axis line**
 
-The `GradientStops` property of `radial axis` allows to specify the smooth color transition to the axis line by specifying the different colors based on provided axis value.
+The `GradientStops` property of radial axis allows to specify the gradient brush to the axis line by specifying the different colors based on provided axis value.
 
 {% tabs %}
 
@@ -721,7 +723,7 @@ this.Content = sfRadialGauge;
 
 **Label placement**
 
-The `radial axis` allows to position the labels either inside or outside of the axis line using the `LabelPosition` property. By default, labels are positioned inside the axis line.
+The radial axis allows to position the labels either inside or outside of the axis line using the `LabelPosition` property. By default, labels are positioned inside the axis line.
 
 {% tabs %}
 
@@ -759,7 +761,7 @@ The `LabelOffset` property allows to adjust the distance between the axis line a
 
 **Label offset in pixel**
 
-If the `OffsetUnit` is set as pixel, then the axis labels will be moved based on the provided logical pixel values in `LableOffset`.
+If the `OffsetUnit` is set as a pixel, the axis labels will be moved based on the logical pixel values given in `LableOffset`.
 
 {% tabs %}
 
@@ -795,7 +797,7 @@ this.Content = sfRadialGauge;
 
 **Label offset in factor**
 
-If the `OffsetUnit` is set as factor, then the provided factor value in the label offset will be multiplied with the axis radius. The factor value ranges from 0 to 1.
+If the `OffsetUnit` is set as a factor, then the provided factor value in the `LabelOffset` is multiplied by the axis radius. The factor value ranges from 0 to 1.
 
 {% tabs %}
 
@@ -847,7 +849,7 @@ The major and minor tick lines of an axis can be customized using the below prop
 
 **Tick length in pixel**
 
-If the `TickLengthUnit` is set as pixel, then the major and minor tick lines will be rendered based on the provided logical pixel values in `MajorTickLength` and `MinorTickLength`.
+If the `TickLengthUnit` is set as a pixel,  the major and minor tick lines will be rendered based on the logical pixel values given in `MajorTickLength` and `MinorTickLength`.
 
 {% tabs %}
 
@@ -885,7 +887,7 @@ this.Content = sfRadialGauge;
 
 **Tick length in factor**
 
-If the `TickLengthUnit` is set as factor, then the provided factor value in the `MajorTickLength` and `MinorTickLength` will be multiplied with the axis radius, respectively. The factor value ranges from 0 to 1.
+If the `TickLengthUnit` is set as a factor, the provided factor value in the `MajorTickLength` and `MinorTickLength` is multiplied by the axis radius, respectively. The factor value ranges from 0 to 1.
 
 {% tabs %}
 
@@ -921,9 +923,9 @@ this.Content = sfRadialGauge;
 
 ![axis tick length in factor](images/axis/axis_tickLength_factor.png)
 
-**Major tick style**
+**Setting style for major ticks**
 
-The `MajorTickStyle` property allows you to define the style for the major tick's like the following code example.
+The `MajorTickStyle` property allows you to define the style for the major tick's as shown in the following code example.
 
 {% tabs %}
 
@@ -965,9 +967,9 @@ this.Content = sfRadialGauge;
 
 ![major tick style](images/axis/axis_majorTickStyle.png)
 
-**Minor tick style**
+**Setting style for minor ticks**
 
-The `MinorTickStyle` property allows you to define the style for the minor tick's like the following code example.
+The `MinorTickStyle` property allows you to define the style for the minor tick's as shown in the following code example.
 
 {% tabs %}
 
@@ -1009,9 +1011,9 @@ this.Content = sfRadialGauge;
 
 ![minor tick style](images/axis/axis_minorTickStyle.png)
 
-**Dashed tick lines**
+**Setting dashed tick lines**
 
-By defining `StrokDashArray` property in both `MajorTickStyle` and `MinorTickStyle` to draw the tick line as dashed line.
+By defining `StrokDashArray` property in both `MajorTickStyle` and `MinorTickStyle` to draw the dashed tick line.
 
 {% tabs %}
 
@@ -1067,9 +1069,9 @@ this.Content = sfRadialGauge;
 
 ![dashed tick lines](images/axis/axis_tickdash.png)
 
-**Minor tick interval**
+**Setting minor ticks count**
 
-The major ticks are generated based on the `Interval` property. Like major ticks, the minor ticks are calculated using the `MinorTicksPerInterval` property of axis.  By default, the value of this property is 1.
+The major ticks are generated based on the `Interval` property. Like major ticks, the minor ticks are generated using the `MinorTicksPerInterval` property of axis.  By default, the count value of this property is 1.
 
 {% tabs %}
 
@@ -1175,7 +1177,7 @@ The ticks can be moved near or far to the axis line using the `TickOffset` prope
 
 **Tick offset in pixel**
 
-If the `OffsetUnit` is set as pixel, then the axis ticks will be moved based on the provided logical pixel values in `TickOffset`.
+If the `OffsetUnit` is set as a pixel, the axis ticks will be moved based on the logical pixel values given in `TickOffset`.
 
 {% tabs %}
 
@@ -1209,7 +1211,7 @@ this.Content = sfRadialGauge;
 
 **Tick offset in factor**
 
-If the `OffsetUnit` is set as factor, then the provided factor value in the tick offset will be multiplied with the axis radius. The factor value ranges from 0 to 1.
+If the `OffsetUnit` is set as a factor, the provided factor value in the `TickOffset` is multiplied by the axis radius. The factor value ranges from 0 to 1.
 
 {% tabs %}
 
@@ -1372,9 +1374,9 @@ this.Content = sfRadialGauge;
 
 ![axis label offset](images/axis/axis_multiplescale.png)
 
-## Custom scale
+## Custom scale range
 
-`Radial gauge` allows you to display a set of values along with a custom scale based on your business logic.
+`Radial gauge` allows you to define a custom scale range by extending the axis based on your business logic.
 
 {% tabs %}
 
@@ -1501,7 +1503,7 @@ public class RadialAxisExt : RadialAxis
 
 **LabelPrepared**
 
-The `LabelPrepared` event is called when an axis label is created. The following properties can be customized for the corresponding axis label when this event args:
+The `LabelPrepared` event occurs each time a label is prepared for use. The following properties can be customized for each label in this event args:
 
 * `LabelText` – Allows to customize the text property of label.
 

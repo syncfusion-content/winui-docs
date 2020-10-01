@@ -7,7 +7,7 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Range pointer for radial gauge
+# Range Pointer in WinUI Radial Gauge (SfRadialGauge)
 
 A range pointer is an accenting line or shaded background range that can be placed on a gauge to mark the current value.
 
@@ -99,7 +99,7 @@ this.Content = sfRadialGauge;
 
  The default value of `WidthUnit` and `OffsetUnit` is `SizeUnit.Pixel`.
  
- **Gradient support**
+ **Setting gradient brush to the pointer**
 
  The `GradientStops` property of `range pointer` allows to specify the smooth color transition to pointer by specifying the different colors based on provided axis value.
 
@@ -155,7 +155,7 @@ this.Content = sfRadialGauge;
 
 ![range pointer gradient](images/range-pointer/pointer_gradient.png)
 
-**Corner customization**
+**Corner style customization**
 
  The `CornerStyle` property of `range pointer` specifies the corner type for pointer. The corners can be customized using the bothFlat, bothCurve, startCurve, and endCurve options. The default value of this property is bothFlat.
 

@@ -7,19 +7,19 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Annotation for radial gauge
+# Annotation in WinUI Radial Gauge (SfRadialGauge)
 
-`Radial axis` allows you to add multiple controls such as text and image as an annotation to a specific point of interest in radial gauge.
+`Radial axis` allows you to add multiple controls such as text, icon and image etc., as an annotation to a specific point of interest in the radial gauge.
 
 The following properties are available in `Annotation` to customizes the position and alignment.
 
-* `DirectionValue` –  Specifies the value to adjusts the annotation distance from center
+* `DirectionValue` –  Specifies the value that indicates the direction of the annotation based on `DirectionUnit` property. 
 
-* `DirectionUnit` – Specifies the value that indicates the direction of annotation calculated based on `axis value` or `angle`.
+* `DirectionUnit` – Specifies the value that indicates the direction of the annotation to be calculated on the basis of `axis value` or `angle`.
 
-* `PositionFactor` – Specifies the factor value to position the annotation based on the provided `axis value` or `angle`
+* `PositionFactor` – Specifies the factor value(from 0 to 1) to adjusts the annotation distance from center point.
 
-* `HorizontalAlignment` – Specifies the horizontal alignment for positioning the annotation widget.
+* `HorizontalAlignment` – Specifies the horizontal alignment for positioning the annotation.
 
 * `VerticalAlignment` – Specifies the vertical alignment for positioning the annotation.
 
@@ -69,7 +69,7 @@ this.Content = sfRadialGauge;
 
 **Positioning annotation**
 
-The annotation can be positioned either using the `Angle` or `Axis value`. It can be controlled by `DirectionUnit` property of `Annotation`. Its default value is `Angle`.
+The annotation can be positioned using either the `Angle` or the `Axis value`. It can be controlled by the `DirectionUnit` property of `Annotation`. The default value is `Angle`.
 
 **Positioning annotation using angle**
 
