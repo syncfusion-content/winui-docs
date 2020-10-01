@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Specifications of WPF SfColorPalette control | Syncfusion
+title: Control Customization of WPF SfColorPalette control | Syncfusion
 description: Learn about selecting a different types of colors in Syncfusion WPF SfColorPalette control and more details about the control features.
 platform: wpf
 control: SfColorPalette
 documentation: ug
 ---
 
-# Specifications of WPF SfColorPalette
+# Control Customization in WPF SfColorPalette
 
 This section explains the different types of colors available in the `SfColorPalette` and  how to choose the colors and its panel customizations.
 

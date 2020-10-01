@@ -33,7 +33,7 @@ This section explains how to create a WinUI `SfColorPalette` and explains about 
 
 ### More Color Dialog
 
-![SfColorPalette more color window structure](Getting-Started_images/MoreColorControl_Structure_GS.png)
+![SfColorPalette more color dialog structure](Getting-Started_images/MoreColorControl_Structure_GS.png)
 
 ## Assembly deployment
 
@@ -254,7 +254,7 @@ var recentColors = sfColorPalette.RecentColors;
 
 ![SfColorPalette with recently used color items](Getting-Started_images/Recentcolors.png)
 
-## Choosing a color from MoreColor window
+## Choosing a color from MoreColor dialog
 
 If you want to choose a color that is not available in palette, click the more color button and select the color from color spectrums and click the `Ok` button. 
 
@@ -272,7 +272,7 @@ sfColorPalette.ShowMoreColorsButton = true;
 {% endhighlight %}
 {% endtabs %}
 
-![SfColorPalette with more color window](Getting-Started_images/MoreColorWindow.gif)
+![SfColorPalette with more color dialog](Getting-Started_images/MoreColorWindow.gif)
 
 ## Reset the selected color
 
