@@ -7,7 +7,7 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Marker pointer in WinUI Radial Gauge (SfRadialGauge)
+# Marker Pointer in WinUI Radial Gauge (SfRadialGauge)
 
 Indicate current values by using different types of marker pointers. You can change the marker type using the `MarkerType` property.
 
