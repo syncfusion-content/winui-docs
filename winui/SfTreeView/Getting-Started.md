@@ -11,50 +11,34 @@ documentation: ug
 
 This section provides a quick overview for getting started with the `SfTreeView` for WinUI. Walk through the entire process of creating a real world of this control.
 
-## Adding WinUI reference
-
-Refer to the [Control Dependencies]() section to get the list of NuGet package that needs to be added as a reference to use the control in any application.
-
-Refer to this documentation to find more details about installing nuget packages in a WinUI application.
-
 ## Creating simple application with SfTreeView
 
 * Creating the project
-
 * Add SfTreeView to Project
-
 * Bind to a hierarchical data source - Bound Mode
-
 * Bind to a Hierarchy Property Descriptors data source - Bound Mode
-
 * Populating Nodes without data source - Unbound Mode
 
-## Creating the project
+### Creating the project
 
 Create new WinUI Project in Visual Studio to display [SfTreeView]() with data objects.
 
-## Add SfTreeView to Project
+### Add SfTreeView to Project
 
 The SfTreeView control can be added to project by the following ways.
 
-## Adding SfTreeView by XAML
+#### Adding SfTreeView by XAML
 
 In order to add control manually in XAML, do the below steps,
 
 1. Add the below required assembly references to the project,
-
-* Syncfusion.Core.WinUI
-
-* Syncfusion.TreeView.WinUI
-
-* Syncfusion.GridCommon. WinUI
-
+    * Syncfusion.Core.WinUI
+    * Syncfusion.TreeView.WinUI
+    * Syncfusion.GridCommon. WinUI
 2. Import **Syncfusion.UI.Xaml.TreeView** in Xaml Page.
-
 3. Declare SfTreeView control in XAML page.
 
 {% tabs %} 
-
 {% highlight xaml %} 
 
 <Page x:Class="syncfusion.treeviewdemos.winui.GettingStartedPage "
@@ -73,35 +57,30 @@ In order to add control manually in XAML, do the below steps,
 </Page>
 
 {% endhighlight %}
-
 {% endtabs %} 
 
-## Adding SfTreeView by C#
+#### Adding SfTreeView by C#
 
 In order to add control manually in C#, do the below steps,
 
 1. Add the below required assembly references to the project,
-
-* Syncfusion.Core.WinUI
-
-* Syncfusion.TreeView.WinUI
-
-* Syncfusion.GridCommon. WinUI
-
+    * Syncfusion.Core.WinUI
+    * Syncfusion.TreeView.WinUI
+    * Syncfusion.GridCommon. WinUI
 2. Import SfTreeView namespace **using Syncfusion.UI.Xaml.TreeView**.
-
 3. Create SfTreeView control instance and add it to the Page.
 
 {% tabs %} 
-
 {% highlight C# %} 
 
 using Microsoft.UI.Xaml.Controls;
-
 using Syncfusion.UI.Xaml.TreeView;
 
 public sealed partial class GettingStartedPage : Page
 {
+    /// <summary>
+    /// Interaction logic for GettingStartedPage.xaml
+    /// </summary>
     public GettingStartedPage()
     {
         this.InitializeComponent();
@@ -111,15 +90,13 @@ public sealed partial class GettingStartedPage : Page
 }
 
 {% endhighlight %}
-
 {% endtabs %} 
 
-## Bind to a hierarchical data source - Bound Mode
+### Bind to a hierarchical data source - Bound Mode
 
 You can create a tree view by binding the ItemsSource to a hierarchical data source. To create a tree view using data binding, set a hierarchical collection to the [ItemsSource]() property. Then in the [ItemTemplate]() and [ExpanderTemplate](), set the child items collection to the `ItemsSource` property.
 
 {% tabs %} 
-
 {% highlight xaml %} 
 
 <Page x:Class="syncfusion.treeviewdemos.winui.NodeWithImagePage"
@@ -155,12 +132,11 @@ You can create a tree view by binding the ItemsSource to a hierarchical data sou
                             </StackPanel>
                         </DataTemplate>
                     </syncfusion:SfTreeView.ItemTemplate>
-                </syncfusion:SfTreeView>
+        </syncfusion:SfTreeView>
     </Grid>
 </Page>
 
 {% endhighlight %}
-
 {% highlight C# %} 
 
 public class NodeWithImageViewModel
@@ -260,7 +236,6 @@ public class NodeWithImageViewModel
 }
 
 {% endhighlight %}
-
 {% highlight C# %} 
 
 public class Folder : NotificationObject
@@ -305,10 +280,9 @@ public class Folder : NotificationObject
 }
 
 {% endhighlight %}
-
 {% endtabs %} 
 
-## Bind to a Hierarchy Property Descriptors data source - Bound Mode
+### Bind to a Hierarchy Property Descriptors data source - Bound Mode
 
 You can create a tree view by binding the `ItemsSource` to a hierarchy property descriptors data source. To create a tree view using hierarchical data binding, set a hierarchical collection to the [ItemsSource]() property, and then set the TargetType and [ChildPropertyName]() property values in [HierarchyPropertyDescriptors]().
 
@@ -579,12 +553,11 @@ public class SubFile : NotificationObject
 
 {% endtabs %} 
 
-## Populating Nodes without data source - Unbound Mode
+### Populating Nodes without data source - Unbound Mode
 
 You can create and manage the [TreeViewNode]() objects by yourself to display the data in a hierarchical view. To create a tree view, you use a `SfTreeView` control and a hierarchy of `TreeViewNode` objects. You create the node hierarchy by adding one or more root nodes to the [SfTreeView.Nodes]() collection. Each `TreeViewNode` can have more nodes added to its Children collection. You can nest tree view nodes to whatever depth you require.
 
 {% tabs %} 
-
 {% highlight xaml %} 
 
 <Page x:Class="syncfusion.treeviewdemos.winui.GettingStartedPage"
@@ -598,10 +571,8 @@ You can create and manage the [TreeViewNode]() objects by yourself to display th
       mc:Ignorable="d"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
       NavigationCacheMode="Disabled">
-
     <Grid> 
         <syncfusion:SfTreeView x:Name="unboundTreeView" Width="400" Height="500">
-   
             <syncfusion:SfTreeView.Nodes>
                 <node:TreeViewNode Content="Chairman and CEO"
                                    IsExpanded="True">
@@ -669,9 +640,8 @@ You can create and manage the [TreeViewNode]() objects by yourself to display th
 </Page>
 
 {% endhighlight %}
-
 {% endtabs %} 
 
-![Getting Started WinUI TreeView](GettingStarted_images/Unbound_Modes.jpg)
+![Populating nodes without data source in SfTreeView ](GettingStarted_images/Unbound_Modes.jpg)
 
 
