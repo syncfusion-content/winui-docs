@@ -7,7 +7,7 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Animation in radial gauge
+# Animation Support in WinUI Radial Gauge (SfRadialGauge)
 
 ## Pointer animation
 The `EnableAnimation` property of pointer allows to enable or disable animation for pointer and the `AnimationDuration` property of pointer allows to control the animation duration in milliseconds. The default value of animation duration is 1500ms.
