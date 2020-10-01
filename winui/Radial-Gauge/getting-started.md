@@ -189,16 +189,6 @@ You can add any number of control such as text or image as an annotation inside 
 
 {% highlight xml %}
 
-<Page.Resources>
-    <DataTemplate x:Name="GaugeTextTemplate">
-        <Grid>
-            <TextBlock Text="90"
-                       FontSize="25"
-                       FontWeight="Bold" />
-        </Grid>
-    </DataTemplate>
-</Page.Resources>
-
 <Grid>
     <gauge:SfRadialGauge>
         <gauge:SfRadialGauge.Axes>
@@ -208,8 +198,12 @@ You can add any number of control such as text or image as an annotation inside 
                     <gauge:GaugeAnnotation x:Name="annotation"
                                            DirectionUnit="Angle"
                                            DirectionValue="90"
-                                           PositionFactor="0.5"
-                                           ContentTemplate="{StaticResource GaugeTextTemplate}">
+                                           PositionFactor="0.5">
+                        <gauge:GaugeAnnotation.Content>
+                            <TextBlock Text="90"
+                                       FontSize="25"
+                                       FontWeight="Bold" />
+                        </gauge:GaugeAnnotation.Content>
                     </gauge:GaugeAnnotation>
                 </gauge:RadialAxis.Annotations>
             </gauge:RadialAxis>
@@ -231,7 +225,7 @@ GaugeAnnotation gaugeAnnotation = new GaugeAnnotation();
 gaugeAnnotation.DirectionUnit = AnnotationDirection.Angle;
 gaugeAnnotation.DirectionValue = 90;
 gaugeAnnotation.PositionFactor = 0.5;
-gaugeAnnotation.ContentTemplate = this.Resources["GaugeTextTemplate"] as DataTemplate;
+gaugeAnnotation.Content = new TextBlock { Text = "90", FontWeight = FontWeights.Bold, FontSize = 25 };
 radialAxis.Annotations.Add(gaugeAnnotation);
 
 this.Content = sfRadialGauge;
@@ -247,16 +241,6 @@ The following code example gives you the complete code of above configurations.
 {% tabs %}
 
 {% highlight xml %}
-
-<Page.Resources>
-    <DataTemplate x:Name="GaugeTextTemplate">
-        <Grid>
-            <TextBlock Text="90"
-                       FontSize="25"
-                       FontWeight="Bold" />
-        </Grid>
-    </DataTemplate>
-</Page.Resources>
 
 <Grid>
     <gauge:SfRadialGauge>
@@ -283,8 +267,12 @@ The following code example gives you the complete code of above configurations.
                     <gauge:GaugeAnnotation x:Name="annotation"
                                            DirectionUnit="Angle"
                                            DirectionValue="90"
-                                           PositionFactor="0.5"
-                                           ContentTemplate="{StaticResource GaugeTextTemplate}">
+                                           PositionFactor="0.5">
+                        <gauge:GaugeAnnotation.Content>
+                            <TextBlock Text="90"
+                                       FontSize="25"
+                                       FontWeight="Bold" />
+                        </gauge:GaugeAnnotation.Content>
                     </gauge:GaugeAnnotation>
                 </gauge:RadialAxis.Annotations>
             </gauge:RadialAxis>
@@ -328,7 +316,7 @@ GaugeAnnotation gaugeAnnotation = new GaugeAnnotation();
 gaugeAnnotation.DirectionUnit = AnnotationDirection.Angle;
 gaugeAnnotation.DirectionValue = 90;
 gaugeAnnotation.PositionFactor = 0.5;
-gaugeAnnotation.ContentTemplate = this.Resources["GaugeTextTemplate"] as DataTemplate;
+gaugeAnnotation.Content = new TextBlock { Text = "90", FontWeight = FontWeights.Bold, FontSize = 25 };
 radialAxis.Annotations.Add(gaugeAnnotation);
 
 this.Content = sfRadialGauge;
