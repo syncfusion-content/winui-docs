@@ -11,7 +11,7 @@ documentation: ug
 
 Syncfusion WinUI Radial Gauge is a multi-purpose data visualization control, that displays numerical values on a circular scale. It has a rich set of features such as axes, ranges, pointers, and annotations that are fully customizable and extendable. Use it to create speedometers, temperature monitors, dashboards, meter gauges, multiaxis clocks, watches, activity gauges, compasses, and more.
 
-![Overview winui radial gauge](images/overview/gauge_overview.png)
+![Overview WinUI radial gauge](images/overview/gauge_overview.png)
 
 ## Key Features
 

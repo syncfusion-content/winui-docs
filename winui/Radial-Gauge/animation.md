@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Syncfusion WinUI Gauge Animation
-description: This article describes how to add and customizes the appearence gauge annotation of radial gauge control in winui platform
-platform: winui
+description: This article describes how to add and customizes the appearence gauge annotation of radial gauge control in WinUI platform
+platform: WinUI
 control: SfRadialGauge
 documentation: ug
 ---

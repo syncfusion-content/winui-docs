@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Axis of Syncfusion WinUI Gauge
-description: This article describes how to add and customizes the appearence of radial axis and its element of radial gauge in winui platform
-platform: winui
+description: This article describes how to add and customizes the appearence of radial axis and its element of radial gauge in WinUI platform
+platform: WinUI
 control: SfRadialGauge
 documentation: ug
 ---
