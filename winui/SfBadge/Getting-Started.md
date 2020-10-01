@@ -90,9 +90,11 @@ badge.Width = 30;
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Badge control for any object
+## Adding badge for a Button
 
 If you want to assign `Badge` for any objects, create the `Badge` and assign the badge to the `BadgeContainer.Badge` property. Before that you need to create a `BadgeContainer` and add that object to the `BadgeContainer.Content` property.
+
+Here, `Badge` control added for the `Button` control.
 
 {% tabs %}
 {% highlight XAML %}
@@ -520,7 +522,7 @@ If you want to change the shape of the `Badge` other than the default shapes, us
 
 ![Displaying the custom shape of Badge](Getting-Started_images/Custom_Shape.png)
 
-## Animation for Badge display text
+## Animate when content changes
 
 You can enable the `Scale` or `Opacity` based animation for displaying the `Badge` text by using `Badge.AnimationType` property. You can only see the animation when you change the text of the `Badge`. The default value of `Badge.AnimationType` property is `None`.
 
@@ -591,7 +593,7 @@ badge.Content = "99+";
 
 ## Hide the Badge
 
-You can hide the `Badge` by setting the `Badge.Visibility` property value as `Collapsed`. The default value of `Badge.Visibility` property is `Visible`.
+You can hide the `Badge` by setting the `Badge.Visibility` property value as `Collapsed`. Badge will be hidden when its content is `null`. The default value of `Badge.Visibility` property is `Visible`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -766,39 +768,6 @@ badge.Content = "99+";
 {% endtabs %}
 
 ![Alignment of the Badge content is changed](Getting-Started_images/Content_Alignment.png)
-
-## Custom UI for Badge control
-
-You can customize the appearance of `Badge` control by using the `Template` property. The `DataContext` of the `Template` property is `Badge`. 
-
-{% tabs %}
-{% highlight XAML %}
-
-<syncfusion:BadgeContainer Name="badgeContainer"  >
-    <syncfusion:BadgeContainer.Badge>
-        <syncfusion:Badge Name="badge"
-                          Content="99+">
-            <syncfusion:Badge.Template>
-                <ControlTemplate>
-                    <Grid Background="Red">
-                        <TextBlock FontWeight="Bold" 
-                                   Foreground="Blue"
-                                   Text="{Binding ElementName= badge, Path=Content }"/>
-                    </Grid>
-                </ControlTemplate>
-            </syncfusion:Badge.Template>
-        </syncfusion:Badge>
-    </syncfusion:BadgeContainer.Badge>
-    <syncfusion:BadgeContainer.Content>
-        <Button Content="Inbox">
-        </Button>
-    </syncfusion:BadgeContainer.Content>
-</syncfusion:BadgeContainer>
-
-{% endhighlight %}
-{% endtabs %}
-
-![Custom UI of the Badge control](Getting-Started_images/Custom_UI.png)
 
 ## Text formatting
 
