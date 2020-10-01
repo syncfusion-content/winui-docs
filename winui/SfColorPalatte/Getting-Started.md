@@ -235,7 +235,7 @@ sfColorPalette.StandardColors.ShowColorShades = true;
 
 The recently selected color items are displayed in the Recent color panel. If you want to choose a color which are previously selected, use the Recent color panel. You can get the recently used color list from the `RecentColors` collection.
 
-N> Colors selected from theme and standard colors will be added in recent colors.
+N> Colors selected from theme and standard colors will not be added in recent colors.
 
 {% tabs %}
 {% highlight xaml %}
