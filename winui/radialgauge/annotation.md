@@ -27,21 +27,17 @@ The following properties are available in `Annotation` to customizes the positio
 
 {% highlight xml %}
 
-<Page.Resources>
-    <DataTemplate x:Name="annotationTemplate">
-        <TextBlock Text="50.0"
-                   FontWeight="SemiBold"
-                   FontSize="20" />
-    </DataTemplate>
-</Page.Resources>
-
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
         <gauge:RadialAxis>
             <gauge:RadialAxis.Annotations>
                 <gauge:GaugeAnnotation DirectionUnit="AxisValue"
-                                       DirectionValue="50"
-                                       ContentTemplate="{StaticResource annotationTemplate}">
+                                       DirectionValue="50">
+                    <gauge:GaugeAnnotation.Content>
+                        <TextBlock Text="50.0"
+                                   FontWeight="SemiBold"
+                                   FontSize="20" />
+                    </gauge:GaugeAnnotation.Content>
                 </gauge:GaugeAnnotation>
             </gauge:RadialAxis.Annotations>
         </gauge:RadialAxis>
@@ -60,7 +56,7 @@ sfRadialGauge.Axes.Add(radialAxis);
 GaugeAnnotation gaugeAnnotation = new GaugeAnnotation();
 gaugeAnnotation.DirectionUnit = AnnotationDirection.AxisValue;
 gaugeAnnotation.DirectionValue = 50;
-gaugeAnnotation.ContentTemplate = this.Resources["annotationTemplate"] as DataTemplate;
+gaugeAnnotation.Content = new TextBlock { Text = "50.0", FontWeight = FontWeights.SemiBold, FontSize = 20 };
 radialAxis.Annotations.Add(gaugeAnnotation);
 
 this.Content = sfRadialGauge;
@@ -83,29 +79,25 @@ The following example shows how to position the annotation using angle.
 
 {% highlight xml %}
 
-<Page.Resources>
-    <DataTemplate x:Name="annotationTemplate">
-        <TextBlock Text="90.0"
-                   FontWeight="SemiBold"
-                   FontSize="20" />
-    </DataTemplate>
-</Page.Resources>
-
-<gauge:SfRadialGauge>
-    <gauge:SfRadialGauge.Axes>
-        <gauge:RadialAxis>
-            <gauge:RadialAxis.Pointers>
-                <gauge:NeedlePointer Value="90" />
-            </gauge:RadialAxis.Pointers>
-            <gauge:RadialAxis.Annotations>
-                <gauge:GaugeAnnotation DirectionValue="90"
-                                       PositionFactor="0.5"
-                                       ContentTemplate="{StaticResource annotationTemplate}">
-                </gauge:GaugeAnnotation>
-            </gauge:RadialAxis.Annotations>
-        </gauge:RadialAxis>
-    </gauge:SfRadialGauge.Axes>
-</gauge:SfRadialGauge>
+ <gauge:SfRadialGauge>
+     <gauge:SfRadialGauge.Axes>
+         <gauge:RadialAxis>
+             <gauge:RadialAxis.Pointers>
+                 <gauge:NeedlePointer Value="90" />
+             </gauge:RadialAxis.Pointers>
+             <gauge:RadialAxis.Annotations>
+                 <gauge:GaugeAnnotation DirectionValue="90"
+                                        PositionFactor="0.5">
+                     <gauge:GaugeAnnotation.Content>
+                         <TextBlock Text="90.0"
+                                    FontWeight="SemiBold"
+                                    FontSize="20" />
+                     </gauge:GaugeAnnotation.Content>
+                 </gauge:GaugeAnnotation>
+             </gauge:RadialAxis.Annotations>
+         </gauge:RadialAxis>
+     </gauge:SfRadialGauge.Axes>
+ </gauge:SfRadialGauge>
 
 {% endhighlight %}
 
@@ -123,7 +115,7 @@ radialAxis.Pointers.Add(needlePointer);
 GaugeAnnotation gaugeAnnotation = new GaugeAnnotation();
 gaugeAnnotation.DirectionValue = 90;
 gaugeAnnotation.PositionFactor = 0.5;
-gaugeAnnotation.ContentTemplate = this.Resources["annotationTemplate"] as DataTemplate;
+gaugeAnnotation.Content = new TextBlock { Text = "90.0", FontWeight = FontWeights.SemiBold, FontSize = 20 };
 radialAxis.Annotations.Add(gaugeAnnotation);
 
 this.Content = sfRadialGauge;
@@ -142,22 +134,18 @@ The following example shows how to position the annotation using axis value.
 
 {% highlight xml %}
 
-<Page.Resources>
-    <DataTemplate x:Name="annotationTemplate">
-        <TextBlock Text="50.0"
-                   FontWeight="SemiBold"
-                   FontSize="20" />
-    </DataTemplate>
-</Page.Resources>
-
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
         <gauge:RadialAxis>
             <gauge:RadialAxis.Annotations>
                 <gauge:GaugeAnnotation DirectionUnit="AxisValue"
                                        DirectionValue="50"
-                                       PositionFactor="0.4"
-                                       ContentTemplate="{StaticResource annotationTemplate}">
+                                       PositionFactor="0.4">
+                     <gauge:GaugeAnnotation.Content>
+                         <TextBlock Text="50.0"
+                                    FontWeight="SemiBold"
+                                    FontSize="20" />
+                     </gauge:GaugeAnnotation.Content>
                 </gauge:GaugeAnnotation>
             </gauge:RadialAxis.Annotations>
         </gauge:RadialAxis>
@@ -177,7 +165,7 @@ GaugeAnnotation gaugeAnnotation = new GaugeAnnotation();
 gaugeAnnotation.DirectionUnit = AnnotationDirection.AxisValue;
 gaugeAnnotation.DirectionValue = 50;
 gaugeAnnotation.PositionFactor = 0.4;
-gaugeAnnotation.ContentTemplate = this.Resources["annotationTemplate"] as DataTemplate;
+gaugeAnnotation.Content = new TextBlock { Text = "50.0", FontWeight = FontWeights.SemiBold, FontSize = 20 };
 radialAxis.Annotations.Add(gaugeAnnotation);
 
 this.Content = sfRadialGauge;
@@ -200,26 +188,6 @@ Annotations provide options to add any image over the gauge control with respect
 
 {% highlight xml %}
 
-<Page.Resources>
-    <DataTemplate x:Name="annotationTemplate">
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
-            <Image Source="CloudDownload.png"
-                   Height="50"
-                   Width="60" />
-            <TextBlock Text="73°F"
-                       Grid.Row="1"
-                       FontSize="25"
-                       FontWeight="SemiBold"
-                       VerticalAlignment="Top"
-                       HorizontalAlignment="Left" />
-        </Grid>
-    </DataTemplate>
-</Page.Resources>
-
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
         <gauge:RadialAxis Interval="10"
@@ -238,7 +206,25 @@ Annotations provide options to add any image over the gauge control with respect
             </gauge:RadialAxis.Pointers>
 
             <gauge:RadialAxis.Annotations>
-                <gauge:GaugeAnnotation ContentTemplate="{StaticResource annotationTemplate}" />
+                <gauge:GaugeAnnotation>
+                    <gauge:GaugeAnnotation.Content>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Image Source="CloudDownload.png"
+                                   Height="50"
+                                   Width="60" />
+                            <TextBlock Text="73°F"
+                                       Grid.Row="1"
+                                       FontSize="25"
+                                       FontWeight="SemiBold"
+                                       VerticalAlignment="Top"
+                                       HorizontalAlignment="Left" />
+                        </Grid>
+                    </gauge:GaugeAnnotation.Content>
+                </gauge:GaugeAnnotation>
             </gauge:RadialAxis.Annotations>
 
         </gauge:RadialAxis>
@@ -268,8 +254,30 @@ rangePointer.Background = new SolidColorBrush(Color.FromArgb(255, 252, 227, 138)
 rangePointer.CornerStyle = CornerStyle.BothCurve;
 radialAxis.Pointers.Add(rangePointer);
 
+Grid grid = new Grid();
+grid.RowDefinitions.Add(new RowDefinition { Height = new GridLength { GridUnitType = GridUnitType.Star } });
+grid.RowDefinitions.Add(new RowDefinition { Height = new GridLength { GridUnitType = GridUnitType.Auto } });
+
+Image image = new Image();
+BitmapImage bm = new BitmapImage();
+bm.UriSource = new Uri("ms-appx:/CloudDownload.png", UriKind.Absolute);
+image.Source = bm;
+image.Height = 50;
+image.Width = 60;
+Grid.SetRow(image, 0);
+grid.Children.Add(image);
+
+TextBlock textBlock = new TextBlock();
+textBlock.Text = "73°F";
+textBlock.FontSize = 25;
+textBlock.FontWeight = FontWeights.SemiBold;
+textBlock.VerticalAlignment = VerticalAlignment.Top;
+textBlock.HorizontalAlignment = HorizontalAlignment.Left;
+Grid.SetRow(textBlock, 1);
+grid.Children.Add(textBlock);
+
 GaugeAnnotation gaugeAnnotation = new GaugeAnnotation();
-gaugeAnnotation.ContentTemplate = this.Resources["annotationTemplate"] as DataTemplate;
+gaugeAnnotation.Content = grid;
 radialAxis.Annotations.Add(gaugeAnnotation);
 
 this.Content = sfRadialGauge;
@@ -297,8 +305,12 @@ The following code example demonstrates how to set the `HorizontalAlignment` for
                 <gauge:GaugeAnnotation DirectionUnit="AxisValue"
                                        DirectionValue="50"
                                        PositionFactor="0.4"
-                                       HorizontalAlignment="Left"
-                                       ContentTemplate="{StaticResource annotationTemplate}" />
+                                       HorizontalAlignment="Left">
+                     <gauge:GaugeAnnotation.Content>
+                         <TextBlock Text="50.0"
+                                    FontWeight="SemiBold"
+                                    FontSize="20" />
+                     </gauge:GaugeAnnotation.Content>
             </gauge:RadialAxis.Annotations>
         </gauge:RadialAxis>
     </gauge:SfRadialGauge.Axes>
@@ -318,7 +330,7 @@ gaugeAnnotation.DirectionUnit = AnnotationDirection.AxisValue;
 gaugeAnnotation.DirectionValue = 50;
 gaugeAnnotation.HorizontalAlignment = HorizontalAlignment.Left;
 gaugeAnnotation.PositionFactor = 0.4;
-gaugeAnnotation.ContentTemplate = this.Resources["annotationTemplate"] as DataTemplate;
+gaugeAnnotation.Content = new TextBlock { Text = "50.0", FontWeight = FontWeights.SemiBold, FontSize = 20 };
 radialAxis.Annotations.Add(gaugeAnnotation);
 
 this.Content = sfRadialGauge;
@@ -335,14 +347,6 @@ The following code example demonstrates how to set `VerticalAlignment` for annot
 
 {% highlight xml %}
 
-<Page.Resources>
-    <DataTemplate x:Name="annotationTemplate">
-        <TextBlock Text="50.0"
-                   FontWeight="SemiBold"
-                   FontSize="20" />
-    </DataTemplate>
-</Page.Resources>
-
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
         <gauge:RadialAxis>
@@ -350,8 +354,12 @@ The following code example demonstrates how to set `VerticalAlignment` for annot
                 <gauge:GaugeAnnotation DirectionUnit="AxisValue"
                                        DirectionValue="50"
                                        PositionFactor="0.4"
-                                       VerticalAlignment="Top"
-                                       ContentTemplate="{StaticResource annotationTemplate}" />
+                                       VerticalAlignment="Top">
+                     <gauge:GaugeAnnotation.Content>
+                         <TextBlock Text="50.0"
+                                    FontWeight="SemiBold"
+                                    FontSize="20" />
+                     </gauge:GaugeAnnotation.Content>
             </gauge:RadialAxis.Annotations>
         </gauge:RadialAxis>
     </gauge:SfRadialGauge.Axes>
@@ -371,7 +379,7 @@ gaugeAnnotation.DirectionUnit = AnnotationDirection.AxisValue;
 gaugeAnnotation.DirectionValue = 50;
 gaugeAnnotation.VerticalAlignment = VerticalAlignment.Top;
 gaugeAnnotation.PositionFactor = 0.4;
-gaugeAnnotation.ContentTemplate = this.Resources["annotationTemplate"] as DataTemplate;
+gaugeAnnotation.Content = new TextBlock { Text = "50.0", FontWeight = FontWeights.SemiBold, FontSize = 20 };
 radialAxis.Annotations.Add(gaugeAnnotation);
 
 this.Content = sfRadialGauge;
