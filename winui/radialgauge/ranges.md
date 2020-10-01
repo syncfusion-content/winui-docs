@@ -225,7 +225,7 @@ this.Content = sfRadialGauge;
 
 **Range offset in pixel**
 
-The `OffsetUnit` is set as logical pixels, then the range will be moved based on the provided logical pixel value.
+If the `OffsetUnit` is set as logical pixels, then the range will be moved based on the provided logical pixel value.
 
 {% tabs %}
 
@@ -268,7 +268,7 @@ this.Content = sfRadialGauge;
 
 **Range offset in factor**
 
-The `OffsetUnit` is set as factor, the factor value will be multiplied with the axis radius. Then the pointer will be moved to the corresponding value. The default value of `OffsetUnit` is logicalPixel.
+If the `OffsetUnit` is set as factor, then the provided factor value in the range offset will be multiplied with the axis radius and the range will be moved to the corresponding value. The default value of `OffsetUnit` is logicalPixel.
 
 {% tabs %}
 

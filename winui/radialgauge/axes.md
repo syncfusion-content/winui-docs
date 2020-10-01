@@ -361,7 +361,7 @@ The radial axis line can be customized using the following properties.
 
 **Axis line width in pixel**
 
-The `AxisLineWidthUnit` is set as pixel, the axis line will be rendered based on the provided logical pixel values in `AxisLineWidth`.
+If the `AxisLineWidthUnit` is set as pixel, then the axis line will be rendered based on the provided logical pixel values in `AxisLineWidth`.
 
 {% tabs %}
 
@@ -397,7 +397,7 @@ this.Content = sfRadialGauge;
 
 **Axis line width in factor**
 
-The `AxisLineWidthUnit` is set as factor, the provided factor value in the axis line width will be multiplied with the axis radius. The factor value ranges from 0 to 1.
+If the `AxisLineWidthUnit` is set as factor, then the provided factor value in the axis line width will be multiplied with the axis radius. The factor value ranges from 0 to 1.
 
 {% tabs %}
 
@@ -759,7 +759,7 @@ The `LabelOffset` property allows to adjust the distance between the axis line a
 
 **Label offset in pixel**
 
-The `OffsetUnit` is set as pixel, the axis labels will be moved based on the provided logical pixel values in `LableOffset`.
+If the `OffsetUnit` is set as pixel, then the axis labels will be moved based on the provided logical pixel values in `LableOffset`.
 
 {% tabs %}
 
@@ -795,7 +795,7 @@ this.Content = sfRadialGauge;
 
 **Label offset in factor**
 
-The `OffsetUnit` is set as factor, the provided factor value in the label offset will be multiplied with the axis radius. The factor value ranges from 0 to 1.
+If the `OffsetUnit` is set as factor, then the provided factor value in the label offset will be multiplied with the axis radius. The factor value ranges from 0 to 1.
 
 {% tabs %}
 
@@ -847,7 +847,7 @@ The major and minor tick lines of an axis can be customized using the below prop
 
 **Tick length in pixel**
 
-The `TickLengthUnit` is set as pixel, the major and minor tick lines will be rendered based on the provided logical pixel values in `MajorTickLength` and `MinorTickLength`.
+If the `TickLengthUnit` is set as pixel, then the major and minor tick lines will be rendered based on the provided logical pixel values in `MajorTickLength` and `MinorTickLength`.
 
 {% tabs %}
 
@@ -885,7 +885,7 @@ this.Content = sfRadialGauge;
 
 **Tick length in factor**
 
-The `TickLengthUnit` is set as factor, the provided factor value in the `MajorTickLength` and `MinorTickLength` will be multiplied with the axis radius, respectively. The factor value ranges from 0 to 1.
+If the `TickLengthUnit` is set as factor, then the provided factor value in the `MajorTickLength` and `MinorTickLength` will be multiplied with the axis radius, respectively. The factor value ranges from 0 to 1.
 
 {% tabs %}
 
@@ -1175,7 +1175,7 @@ The ticks can be moved near or far to the axis line using the `TickOffset` prope
 
 **Tick offset in pixel**
 
-The `OffsetUnit` is set as pixel, the axis ticks will be moved based on the provided logical pixel values in `TickOffset`.
+If the `OffsetUnit` is set as pixel, then the axis ticks will be moved based on the provided logical pixel values in `TickOffset`.
 
 {% tabs %}
 
@@ -1209,7 +1209,7 @@ this.Content = sfRadialGauge;
 
 **Tick offset in factor**
 
-The `OffsetUnit` is set as factor, the provided factor value in the tick offset will be multiplied with the axis radius. The factor value ranges from 0 to 1.
+If the `OffsetUnit` is set as factor, then the provided factor value in the tick offset will be multiplied with the axis radius. The factor value ranges from 0 to 1.
 
 {% tabs %}
 

@@ -359,7 +359,7 @@ The tail length can be controlled using the `TailLength` and `TailLengthUnit` pr
 
 **Tail length in pixel**
 
-The `TailLengthUnit` is set to logical pixel, the logical pixel value will be set to the `TailLength`.
+If the `TailLengthUnit` is set as logical pixel, then the tail will be rendered based on the provided logical pixel value in `TailLength`.
 
 {% tabs %}
 
@@ -402,7 +402,7 @@ this.Content = sfRadialGauge;
 
 **Tail length in factor**
 
-The `TailLengthUnit` is set to factor, then the factor value will be set to the `TailLength`. The factor value ranges from 0 to 1. For example, if the tail length is set to 0.5, the half of the radius value of axis to tail length. 
+If the `TailLengthUnit` is set as factor, then the provided factor value in the tail length will be multiplied with the axis radius. The factor value ranges from 0 to 1. For example, if the tail length is set to 0.5, the half of the radius value of axis to tail length. 
 
 {% tabs %}
 
