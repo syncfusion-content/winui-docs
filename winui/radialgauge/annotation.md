@@ -7,7 +7,7 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Annotation
+# Annotation for radial gauge
 
 `Radial axis` allows you to add multiple controls such as text and image as an annotation to a specific point of interest in radial gauge.
 
@@ -73,7 +73,11 @@ this.Content = sfRadialGauge;
 
 **Positioning annotation**
 
-The annotation can be positioned either using the `Angle` or `Axis value`. It can be controlled by `DirectionUnit` property of `Annotation`. Its default value is `Angle`. The following example shows how to position the annotation widget using angle.
+The annotation can be positioned either using the `Angle` or `Axis value`. It can be controlled by `DirectionUnit` property of `Annotation`. Its default value is `Angle`.
+
+**Positioning annotation using angle**
+
+The following example shows how to position the annotation using angle.
 
 {% tabs %}
 
@@ -130,6 +134,10 @@ this.Content = sfRadialGauge;
 
 ![annotation position with angle](images/annotation/annottaion_angle.png)
 
+**Positioning annotation using axis value**
+
+The following example shows how to position the annotation using axis value.
+
 {% tabs %}
 
 {% highlight xml %}
@@ -178,7 +186,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![annotation position with axis](images/annotation/annottaion_axis.png)
+![annotation position with axis](images/annotation/annotaion_axis.png)
 
 `PositionFactor` is used to move the annotation from the center of axis to the edge of the axis. For example, when you specify the `positionFactor` as 0.5, the annotation will be moved from the center towards the corresponding direction with the distance of half of the radius value of axis.
 

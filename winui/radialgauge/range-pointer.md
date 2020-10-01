@@ -7,7 +7,7 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Range pointer customization
+# Range pointer for radial gauge
 
 A range pointer is an accenting line or shaded background range that can be placed on a gauge to mark the current value.
 

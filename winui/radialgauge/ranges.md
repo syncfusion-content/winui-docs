@@ -7,7 +7,7 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Gauge range customization
+# Gauge range for radial gauge
 
 Gauge range is a visual element that helps to quickly visualize where a value falls on the axis.
 
@@ -65,6 +65,51 @@ The following properties are used for the range customization:
 * `WidthUnit` – Specifies whether the start width and end width of the range are set in logical pixels or factor.
 
 * `GradientStops` - Specifies the gradient for the range.
+
+**Equal range width**
+
+{% tabs %}
+
+{% highlight xml %}
+
+<gauge:SfRadialGauge>
+    <gauge:SfRadialGauge.Axes>
+        <gauge:RadialAxis>
+            <gauge:RadialAxis.Ranges>
+                <gauge:GaugeRange StartValue="30"
+                                  EndValue="65"
+                                  StartWidth="10"
+                                  EndWidth="10" />
+            </gauge:RadialAxis.Ranges>
+        </gauge:RadialAxis>
+    </gauge:SfRadialGauge.Axes>
+</gauge:SfRadialGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+sfRadialGauge.Axes.Add(radialAxis);
+
+GaugeRange gaugeRange = new GaugeRange();
+gaugeRange.StartValue = 30;
+gaugeRange.EndValue = 65;
+gaugeRange.StartWidth = 10;
+gaugeRange.EndWidth = 10;
+radialAxis.Ranges.Add(gaugeRange);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![equal range width](images/range/range_equalWidth.png)
+
+**Different range width**
 
 {% tabs %}
 
@@ -176,11 +221,11 @@ this.Content = sfRadialGauge;
 
 **Position customization**
 
- The range can be moved far or near to the axis line with using the `RangeOffset` property. The property can be specified either in the logical pixels or the factor value.
+ The range can be moved far or near to the axis line with using the `RangeOffset` property. The `OffsetUnit` property of range allows to specify the `RangeOffset` either in factor or logical pixels, and the default value of `OffsetUnit` is logicalPixel.
 
-If the `OffsetUnit` is set as logical pixels, then the range will be moved based on the provided logical pixel value.
+**Range offset in pixel**
 
-If the `OffsetUnit` is set as factor, the factor value will be multiplied with the axis radius. Then the pointer will be moved to the corresponding value. The default value of `OffsetUnit` is logicalPixel.
+The `OffsetUnit` is set as logical pixels, then the range will be moved based on the provided logical pixel value.
 
 {% tabs %}
 
@@ -219,7 +264,52 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![range offset](images/range/range_offset.png)
+![range offset in pixel](images/range/range_offset_pixel.png)
+
+**Range offset in factor**
+
+The `OffsetUnit` is set as factor, the factor value will be multiplied with the axis radius. Then the pointer will be moved to the corresponding value. The default value of `OffsetUnit` is logicalPixel.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<gauge:SfRadialGauge>
+    <gauge:SfRadialGauge.Axes>
+        <gauge:RadialAxis>
+            <gauge:RadialAxis.Ranges>
+                <gauge:GaugeRange StartValue="30"
+                                  EndValue="65"
+                                  RangeOffset="0.4"
+                                  OffsetUnit="Factor"/>
+            </gauge:RadialAxis.Ranges>
+        </gauge:RadialAxis>
+    </gauge:SfRadialGauge.Axes>
+</gauge:SfRadialGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+sfRadialGauge.Axes.Add(radialAxis);
+
+GaugeRange gaugeRange = new GaugeRange();
+gaugeRange.StartValue = 30;
+gaugeRange.EndValue = 65;
+gaugeRange.RangeOffset = 0.4;
+gaugeRange.OffsetUnit = SizeUnit.Factor;
+radialAxis.Ranges.Add(gaugeRange);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![range offset in factor](images/range/range_offset_factor.png)
 
 ## Setting range color to axis elements
 

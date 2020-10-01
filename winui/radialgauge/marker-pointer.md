@@ -7,7 +7,7 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Marker pointer
+# Marker pointer for radial gauge
 
 Different types of markers are used to mark the pointer values in a scale. You can change the marker type using the `markerType` property.
 

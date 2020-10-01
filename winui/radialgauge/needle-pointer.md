@@ -7,7 +7,7 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Needle pointer customization
+# Needle pointer for radial gauge
 
 `Needle Pointer` contains three parts, namely needle, knob, and tail and that can be placed on a gauge to mark the values.
 
@@ -353,7 +353,99 @@ The `tail` of the needle can be customized using the following properties,
 
 * `TailFill` -  Specifies the tail color.
 
-By default, the value of `TailLengthUnit` is SizeUnit.factor. The factor value ranges from 0 to 1. When the length is set to 0.2, 20 % of axis radius value will be considered as tail length.The following code example shows how to specify the length in factor. 
+**Tail length customization**
+
+The tail length can be controlled using the `TailLength` and `TailLengthUnit` properties. The length can be set either in logical pixels or factor using `TailLengthUnit`. The default value of `TailLengthUnit` is SizeUnit.factor.
+
+**Tail length in pixel**
+
+The `TailLengthUnit` is set to logical pixel, the logical pixel value will be set to the `TailLength`.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<gauge:SfRadialGauge>
+    <gauge:SfRadialGauge.Axes>
+        <gauge:RadialAxis>
+            <gauge:RadialAxis.Pointers>
+                <gauge:NeedlePointer Value="60"
+                                     TailLengthUnit="Pixel"
+                                     TailLength="40" />
+            </gauge:RadialAxis.Pointers>
+        </gauge:RadialAxis>
+    </gauge:SfRadialGauge.Axes>
+</gauge:SfRadialGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+sfRadialGauge.Axes.Add(radialAxis);
+
+NeedlePointer needlePointer = new NeedlePointer();
+needlePointer.Value = 60;
+needlePointer.TailLengthUnit = SizeUnit.Pixel;
+needlePointer.TailLength = 40;
+radialAxis.Pointers.Add(needlePointer);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![tail length in pixel](images/needle-pointer/needle_tailLength_pixel.png)
+
+**Tail length in factor**
+
+The `TailLengthUnit` is set to factor, then the factor value will be set to the `TailLength`. The factor value ranges from 0 to 1. For example, if the tail length is set to 0.5, the half of the radius value of axis to tail length. 
+
+{% tabs %}
+
+{% highlight xml %}
+
+<gauge:SfRadialGauge>
+    <gauge:SfRadialGauge.Axes>
+        <gauge:RadialAxis>
+            <gauge:RadialAxis.Pointers>
+                <gauge:NeedlePointer Value="60"
+                                     TailLengthUnit="Factor"
+                                     TailLength="0.2" />
+            </gauge:RadialAxis.Pointers>
+        </gauge:RadialAxis>
+    </gauge:SfRadialGauge.Axes>
+</gauge:SfRadialGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+sfRadialGauge.Axes.Add(radialAxis);
+
+NeedlePointer needlePointer = new NeedlePointer();
+needlePointer.Value = 60;
+needlePointer.TailLengthUnit = SizeUnit.Factor;
+needlePointer.TailLength = 0.2;
+radialAxis.Pointers.Add(needlePointer);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![tail length in factor](images/needle-pointer/needle_taillength_factor.png)
+
+**Tail width customization**
+
+The width of the tail can be customized using the `TailWidth` property of needle pointer.
 
 {% tabs %}
 
@@ -392,7 +484,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![needle tail](images/needle-pointer/needle_tail.png)
+![tail width](images/needle-pointer/needle_tailWidth.png)
 
 The following code shows how to apply the gradient for the tail.
 
