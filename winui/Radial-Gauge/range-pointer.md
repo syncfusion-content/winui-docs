@@ -50,11 +50,11 @@ The following properties are used to customize the range pointer:
 
 * `Background` – Customizes the color of range pointer.
 
-* [`PointerWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerWidth) - Specifies the width of pointer either in logical pixels or factor.
+* [`PointerWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerWidth) - Specifies the width of pointer either in pixels or factor.
 
-* [`WidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_WidthUnit) – Specifies whether the [`PointerWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerWidth) is defined in logical pixels or factor.
+* [`WidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_WidthUnit) – Specifies whether the [`PointerWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerWidth) is defined in pixels or factor.
 
-The [`PointerWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerWidth) of the pointer can be specified either in logical pixel or factor. If the [`WidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_WidthUnit) is specified as logicalPixel, then the range will be rendered based on the provided pixel value. If the [`WidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_WidthUnit) is set as factor, the provided factor value will be multiplied with axis radius. For example, if the pointer width is set as 0.1, then 10% of axis radius is considered as range pointer width.
+The [`PointerWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerWidth) of the pointer can be specified either in pixel or factor. If the [`WidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_WidthUnit) is specified as Pixel, then the range will be rendered based on the provided pixel value. If the [`WidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_WidthUnit) is set as factor, the provided factor value will be multiplied with axis radius. For example, if the pointer width is set as 0.1, then 10% of axis radius is considered as range pointer width.
 
 {% tabs %}
 
@@ -200,11 +200,11 @@ this.Content = sfRadialGauge;
 
 The following properties are used to customize the position of range pointer:
 
-* [`PointerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerOffset) - Specifies the position value for pointer either in logical pixels or factor.
+* [`PointerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerOffset) - Specifies the position value for pointer either in pixels or factor.
 
-* [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_OffsetUnit) – Specifies whether the [`PointerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerOffset) is defined in logical pixels or factor.
+* [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_OffsetUnit) – Specifies whether the [`PointerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerOffset) is defined in pixels or factor.
 
-The range pointer can be moved far or near to the axis line using the [`PointerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerOffset) property. The [`PointerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerOffset) can be set either in logical pixel or factor value using its [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_OffsetUnit).
+The range pointer can be moved far or near to the axis line using the [`PointerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerOffset) property. The [`PointerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerOffset) can be set either in pixel or factor value using its [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_OffsetUnit).
 
 {% tabs %}
 
@@ -243,6 +243,6 @@ this.Content = sfRadialGauge;
 
 ![pointer position customization](images/range-pointer/pointer_offset.png)
 
-When you set the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_OffsetUnit) as logical pixel, the pointer will be moved to the provided logical pixel value.
+When you set the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_OffsetUnit) as pixel, the pointer will be moved to the provided pixel value.
 
 If the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_OffsetUnit) is specified as factor, the factor value will be multiplied with the axis radius. For example, if you set [`PointerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerOffset) as 0.1, then the pointer offset is considered as 10% of axis radius.

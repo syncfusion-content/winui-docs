@@ -50,9 +50,9 @@ this.Content = sfRadialGauge;
 
 The needle can be customized using the following properties:
 
-* `NeedleLength` – Customizes the length of the needle. The length of the pointer can be set either in logical pixel or factor.
+* `NeedleLength` – Customizes the length of the needle. The length of the pointer can be set either in pixel or factor.
 
-* `NeedleLengthUnit` – Specifies whether to set the length in logical pixel or factor. 
+* `NeedleLengthUnit` – Specifies whether to set the length in pixel or factor. 
 
 * `NeedleStartWidth` – Specifies the start width of the needle.
 
@@ -62,9 +62,9 @@ The needle can be customized using the following properties:
 
 **Needle length customization**
 
-The needle length can be controlled using the `NeedleLength` and `NeedleLengthUnit` properties. The length can be set either in logical pixels or factor using `NeedleLengthUnit`.
+The needle length can be controlled using the `NeedleLength` and `NeedleLengthUnit` properties. The length can be set either in pixels or factor using `NeedleLengthUnit`.
 
-If the `NeedleLengthUnit` is set to pixel, the logical pixel value will be set to the `NeedleLength` to calculate the needle length. 
+If the `NeedleLengthUnit` is set to pixel, the pixel value will be set to the `NeedleLength` to calculate the needle length. 
 If the `NeedleLengthUnit` is set to factor, then the factor value will be set to the `NeedleLength`. The factor value ranges from 0 to 1. For example, if the needle length is set to 0.5, the half of the radius value is set to the needle length. The default value of  `NeedleLengthUnit` is factor.
 
 {% tabs %}
@@ -232,19 +232,19 @@ this.Content = sfRadialGauge;
 
 The knob can be customized using the following properties:
 
-* `knobRadius` – Specifies the knob radius either in logical pixels or factor.
+* `knobRadius` – Specifies the knob radius either in pixels or factor.
 
 * `KnobFill` – Specifies the knob color.
 
-* `KnobStrokeThickness` – Specifies the width of the knob stroke outline of knob either in logical pixels or factor.
+* `KnobStrokeThickness` – Specifies the width of the knob stroke outline of knob either in pixels or factor.
 
 * `KnobStroke` – Specifies the knob border color.
 
-* `KnobSizeUnit` – Allows to specify whether the value of knob radius and border width is in logical pixels or in factor.
+* `KnobSizeUnit` – Allows to specify whether the value of knob radius and border width is in pixels or in factor.
 
 **Knob radius customization**
 
-The radius of the knob can be customized using the `KnobRadius` and `KnobSizeUnit`.  If `KnobSizeUnit` is pixel, the logical pixel value can be set to the `KnobRadius`.
+The radius of the knob can be customized using the `KnobRadius` and `KnobSizeUnit`.  If `KnobSizeUnit` is pixel, the pixel value can be set to the `KnobRadius`.
 
 {% tabs %}
 
@@ -291,7 +291,7 @@ If the `KnobSizeUnit` is set to factor, the factor value will be set to knob rad
 
 **Knob stroke customization**
 
-Like knob radius, the `KnobStrokeThickness` can be specified either in logical pixel or factor. The `KnobSizeUnit` property is common for both `knobRadius` and `KnobStrokeThickness` properties.
+Like knob radius, the `KnobStrokeThickness` can be specified either in pixel or factor. The `KnobSizeUnit` property is common for both `knobRadius` and `KnobStrokeThickness` properties.
 
 {% tabs %}
 
@@ -344,9 +344,9 @@ this.Content = sfRadialGauge;
 
 The `tail` of the needle can be customized using the following properties,
 
-* `TailLength` – Specifies the length of tail either in logical pixels or factor.
+* `TailLength` – Specifies the length of tail either in pixels or factor.
 
-* `TailLengthUnit` – Specifies whether the tail length value is defined in logical pixels or factor.
+* `TailLengthUnit` – Specifies whether the tail length value is defined in pixels or factor.
 
 * `TailWidth` – Specifies the width for the tail.
 
@@ -354,11 +354,11 @@ The `tail` of the needle can be customized using the following properties,
 
 **Tail length customization**
 
-The tail length can be controlled using the `TailLength` and `TailLengthUnit` properties. The length can be set either in logical pixels or factor using `TailLengthUnit`. The default value of `TailLengthUnit` is factor.
+The tail length can be controlled using the `TailLength` and `TailLengthUnit` properties. The length can be set either in pixels or factor using `TailLengthUnit`. The default value of `TailLengthUnit` is factor.
 
 **Tail length in pixel**
 
-If the `TailLengthUnit` is set as a pixel, the tail will be rendered based on the logical pixel value given in `TailLength`.
+If the `TailLengthUnit` is set as a pixel, the tail will be rendered based on the pixel value given in `TailLength`.
 
 {% tabs %}
 
