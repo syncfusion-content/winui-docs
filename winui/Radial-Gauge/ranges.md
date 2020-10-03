@@ -13,7 +13,7 @@ Gauge range is a visual element that helps to quickly visualize where a value fa
 
 **Setting start and end value**
 
-The start and end values of ranges are set using the `StartValue` and `EndValue` properties.
+The start and end values of ranges are set using the [`StartValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_StartValue) and [`EndValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_EndValue) properties.
 
 {% tabs %}
 
@@ -58,15 +58,17 @@ The following properties are used for the range customization:
 
 * `Background` – Specifies the color for the range.
 
-* `StartWidth` – Specifies the start width of the range either in logical pixels or factor.
+* [`StartWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_StartWidth) – Specifies the start width of the range either in pixels or factor.
 
-* `EndWidth` – Specifies the end width of the range either in logical pixels or factor.
+* [`EndWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_EndWidth) – Specifies the end width of the range either in pixels or factor.
 
-* `WidthUnit` – Specifies whether the start width and end width of the range are set in logical pixels or factor.
+* [`WidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_WidthUnit) – Specifies whether the start width and end width of the range are set in pixels or factor.
 
-* `GradientStops` - Specifies the gradient for the range.
+* [`GradientStops`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_GradientStops) - Specifies the gradient for the range.
 
 **Equal range width**
+
+Range width can be controlled by [`StartWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_StartWidth) and [`EndWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_EndWidth) properties of range.
 
 {% tabs %}
 
@@ -111,7 +113,7 @@ this.Content = sfRadialGauge;
 
 **Different range width**
 
-By setting different values to `StartWidth` and `EndWidth` property can create diffent width ranges. 
+By setting different values to [`StartWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_StartWidth) and [`EndWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_EndWidth) property can create diffent width ranges. 
 
 {% tabs %}
 
@@ -154,13 +156,13 @@ this.Content = sfRadialGauge;
 
 ![range thickness](images/range/range_thickness.png)
 
-When the `WidthUnit` is set as logical pixels, the range will be rendered based on the provided logical pixel values in `StartWidth` and `EndWidth`
+When the [`WidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_WidthUnit) is set as pixels, the range will be rendered based on the provided pixel values in [`StartWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_StartWidth) and [`EndWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_EndWidth)
 
-If the `WidthUnit` is set as factor, the provided factor value in the start width and end width will be multiplied with the axis radius, respectively. The factor value ranges from 0 to 1.
+If the [`WidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_WidthUnit) is set as factor, the provided factor value in the start width and end width will be multiplied with the axis radius, respectively. The factor value ranges from 0 to 1.
 
 **Setting gradient brush to the range**
 
- The `gradient` property of `range` allows to specify the smooth color transition to pointer by specifying the different colors based on provided factor value.
+ The [`GradientStops`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_GradientStops) property of [`range`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html) allows to specify the smooth color transition to pointer by specifying the different colors based on provided axis value.
 
 {% tabs %}
 
@@ -223,11 +225,11 @@ this.Content = sfRadialGauge;
 
 **Position customization**
 
- The range can be moved far or near to the axis line with using the `RangeOffset` property. The `OffsetUnit` property of range allows to specify the `RangeOffset` either in factor or logical pixels, and the default value of `OffsetUnit` is logicalPixel.
+ The range can be moved far or near to the axis line with using the [`RangeOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_RangeOffset) property. The [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_OffsetUnit) property of range allows to specify the [`RangeOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_RangeOffset) either in factor or pixels, and the default value of [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_OffsetUnit) is Pixel.
 
 **Range offset in pixel**
 
-If the `OffsetUnit` is set as a pixels, the range will be moved based on the provided logical pixel value.
+If the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_OffsetUnit) is set as a pixels, the range will be moved based on the provided pixel value.
 
 {% tabs %}
 
@@ -270,7 +272,7 @@ this.Content = sfRadialGauge;
 
 **Range offset in factor**
 
-If the `OffsetUnit` is set as a factor, the provided factor value in the `RangeOffset` will be multiplied by the axis radius and the range will be moved to the corresponding value. The default value of `OffsetUnit` is logicalPixel.
+If the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_OffsetUnit) is set as a factor, the provided factor value in the [`RangeOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_RangeOffset) will be multiplied by the axis radius and the range will be moved to the corresponding value. The default value of [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_OffsetUnit) is Pixel.
 
 {% tabs %}
 
