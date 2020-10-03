@@ -19,6 +19,12 @@ Create a simple project using the instructions given in the [Getting Started wit
 
 **2.Add Syncfusion.Gauges.WinUI NuGet.**
 
+Install the Syncfusion WinUI gauge nuget from [`nuget.org`](https://www.nuget.org/)
+
+NuGet name : Syncfusion.Gauge.WinUI
+
+![gauge nuget reference](images/getting-started/gauge_nuget_reference.png)
+
 **3.Declare namespace**
 
 After the package has been added, declare the namespace like below
@@ -39,9 +45,32 @@ using Syncfusion.UI.Xaml.Gauges;
 
 {% endtabs %}
 
-**4.Initialize the radial gauge control with axis**
+**4.Initialize the radial gauge control**
 
-Initialize the SfRadialGauge as a child of any control such as grid, stack panel. Axes contain a list of axis elements, where you can add any number of radial axes inside the gauge. You can specify the minimum and maximum values of axis using the `Minimum` and `Maximum` properties as demonstrated in the following code snippet.
+Initialize the SfRadialGauge as a child of any panel such as grid, stack panel or direct content to the Page. 
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Grid>
+    <gauge:SfRadialGauge />
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Add axis to the radial gauge
+
+Axes contain a list of axis elements, where you can add any number of radial axes inside the gauge. You can specify the minimum and maximum values of axis using the [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_Maximum) properties as demonstrated in the following code snippet.
 
 {% tabs %}
 
@@ -73,9 +102,9 @@ this.Content = sfRadialGauge;
 
 ![Initialize radial gauge with axis](images/getting-started/gauge_with_axis.png)
 
-## Add range
+## Add range to the radial gauge
 
-Ranges contain a list of range elements, where you can add any number of ranges inside the axis. You can specify the start value, end value, and background color for range using the `StartValue`, `EndValue`, and `Background` properties as demonstrated in the following code.   
+Ranges contain a list of range elements, where you can add any number of ranges inside the axis. You can specify the start value, end value, and background color for range using the [`StartValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_StartValue), [`EndValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_EndValue), and `Background` properties as demonstrated in the following code.   
 
 {% tabs %}
 
@@ -138,9 +167,9 @@ this.Content = sfRadialGauge;
 
 ![range support to radial gauge](images/getting-started/gauge_range.png)
 
-## Add pointer
+## Add pointer to the radial gauge
 
-Pointers contains a list of pointer elements, where you can add any number of gauge pointers such as `NeedlePointer`, `RangePointer` and `MarkerPointer` inside the axis to indicate the value.
+Pointers contains a list of pointer elements, where you can add any number of gauge pointers such as [`NeedlePointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.NeedlePointer.html), [`RangePointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html) and [`MarkerPointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html) inside the axis to indicate the value.
 
 {% tabs %}
 
@@ -181,9 +210,9 @@ this.Content = sfRadialGauge;
 
 ![gauge pointers to radial gauge](images/getting-started/gauge_pointer.png)
 
-## Add annotation
+## Add annotation to the radial gauge
 
-You can add any number of control such as text or image as an annotation inside the axis. The position of annotation can be customized using the `DirectionUnit` `DirectionValue` and `PositionFactor` properties as demonstrated in the following code.
+You can add any number of control such as text or image as an annotation inside the axis. The position of annotation can be customized using the [`DirectionUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_DirectionUnit) [`DirectionValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_DirectionValue) and [`PositionFactor`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_PositionFactor) properties as demonstrated in the following code.
 
 {% tabs %}
 

@@ -11,7 +11,7 @@ documentation: ug
 
 ## Pointer animation
 
-The `EnableAnimation` property of pointer allows to enable or disable animation for pointer.
+The `[EnableAnimation`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_EnableAnimation) property of pointer allows to enable or disable animation for pointer.
 
 {% tabs %}
 
@@ -87,7 +87,7 @@ this.Content = sfRadialGauge;
 
 ## Animation duration
 
-The `AnimationDuration` property of pointer allows to control the animation duration (in milliseconds). The default value of animation duration is 1500ms.
+The [`AnimationDuration`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_AnimationDuration) property of pointer allows to control the animation duration (in milliseconds). The default value of animation duration is 1500ms.
 
 {% tabs %}
 
