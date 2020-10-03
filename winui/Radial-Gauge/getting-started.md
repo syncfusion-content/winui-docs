@@ -47,7 +47,7 @@ using Syncfusion.UI.Xaml.Gauges;
 
 **4.Initialize the radial gauge control**
 
-Initialize the SfRadialGauge as a child of any control such as grid, stack panel.
+Initialize the SfRadialGauge as a child of any panel such as grid, stack panel or direct content to the Page. 
 
 {% tabs %}
 
