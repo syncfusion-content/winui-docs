@@ -35,7 +35,7 @@ In order to add control manually in XAML, do the below steps,
     * Syncfusion.Core.WinUI
     * Syncfusion.TreeView.WinUI
     * Syncfusion.GridCommon.WinUI
-2. Import **Syncfusion.UI.Xaml.TreeView** in Xaml Page.
+2. Import **Syncfusion.UI.Xaml.TreeView** in XAML Page.
 3. Declare SfTreeView control in XAML page.
 
 {% tabs %} 
