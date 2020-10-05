@@ -9,15 +9,15 @@ documentation: ug
 
 # Annotation in WinUI Radial Gauge (SfRadialGauge)
 
-`Radial axis` allows you to add multiple controls such as text, icon and image etc., as an annotation to a specific point of interest in the radial gauge.
+[`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) allows you to add multiple controls such as text, icon and image etc., as an annotation to a specific point of interest in the radial gauge.
 
-The following properties are available in `Annotation` to customizes the position and alignment.
+The following properties are available in [`Annotation`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html) to customizes the position and alignment.
 
-* `DirectionValue` –  Specifies the value that indicates the direction of the annotation based on `DirectionUnit` property. 
+* [`DirectionValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_DirectionValue) –  Specifies the value that indicates the direction of the annotation based on [`DirectionUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_DirectionUnit) property. 
 
-* `DirectionUnit` – Specifies the value that indicates the direction of the annotation to be calculated on the basis of `axis value` or `angle`.
+* [`DirectionUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_DirectionUnit) – Specifies the value that indicates the direction of the annotation to be calculated on the basis of [`Axis value`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.AnnotationDirection.html#Syncfusion_UI_Xaml_Gauges_AnnotationDirection_AxisValue) or [`Angle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.AnnotationDirection.html#Syncfusion_UI_Xaml_Gauges_AnnotationDirection_Angle).
 
-* `PositionFactor` – Specifies the factor value(from 0 to 1) to adjusts the annotation distance from center point.
+* [`PositionFactor`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_PositionFactor) – Specifies the factor value(from 0 to 1) to adjusts the annotation distance from center point.
 
 * `HorizontalAlignment` – Specifies the horizontal alignment for positioning the annotation.
 
@@ -69,7 +69,7 @@ this.Content = sfRadialGauge;
 
 **Positioning annotation**
 
-The annotation can be positioned using either the `Angle` or the `Axis value`. It can be controlled by the `DirectionUnit` property of `Annotation`. The default value is `Angle`.
+The annotation can be positioned using either the [`Angle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.AnnotationDirection.html#Syncfusion_UI_Xaml_Gauges_AnnotationDirection_Angle) or the [`Axis value`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.AnnotationDirection.html#Syncfusion_UI_Xaml_Gauges_AnnotationDirection_AxisValue). It can be controlled by the [`DirectionUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_DirectionUnit) property of [`Annotation`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html). The default value is [`Angle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.AnnotationDirection.html#Syncfusion_UI_Xaml_Gauges_AnnotationDirection_Angle).
 
 **Positioning annotation using angle**
 
@@ -176,9 +176,9 @@ this.Content = sfRadialGauge;
 
 ![annotation position with axis](images/annotation/annotaion_axis.png)
 
-`PositionFactor` is used to move the annotation from the center of axis to the edge of the axis. For example, when you specify the `positionFactor` as 0.5, the annotation will be moved from the center towards the corresponding direction with the distance of half of the radius value of axis.
+[`PositionFactor`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_PositionFactor) is used to move the annotation from the center of axis to the edge of the axis. For example, when you specify the [`PositionFactor`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_PositionFactor) as 0.5, the annotation will be moved from the center towards the corresponding direction with the distance of half of the radius value of axis.
 
-By default, the value of `positionFactor` is 0.
+By default, the value of [`PositionFactor`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_PositionFactor) is 0.
 
 ## Setting image for annotation
 
@@ -290,7 +290,7 @@ this.Content = sfRadialGauge;
 
 ## Alignment of annotation
 
-`Annotation` can be aligned to center, near and far using the `HorizontalAlignment` and `VerticalAlignment` properties of annotation.
+[`Annotation`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html) can be aligned to center, near and far using the `HorizontalAlignment` and `VerticalAlignment` properties of annotation.
 
 The following code example demonstrates how to set the `HorizontalAlignment` for annotation
 

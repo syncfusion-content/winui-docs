@@ -9,7 +9,7 @@ documentation: ug
 
 # Marker Pointer in WinUI Radial Gauge (SfRadialGauge)
 
-Indicate current values by using different types of marker pointers. You can change the marker type using the `MarkerType` property.
+Indicate current values by using different types of marker pointers. You can change the marker type using the [`MarkerType`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerType) property.
 
 {% tabs %}
 
@@ -61,7 +61,7 @@ Gauge supports the following types of marker:
 
 ## Image pointer
 
-Image is used to denote the current pointer values instead of shape. It can be achieved by specifying the `MarkerType` as image and specifying the `ImageSource` property of marker pointer.
+Image is used to denote the current pointer values instead of shape. It can be achieved by specifying the [`MarkerType`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerType) as image and specifying the [`ImageSource`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_ImageSource) property of marker pointer.
 
 {% highlight xml %}
 
@@ -85,7 +85,7 @@ Image is used to denote the current pointer values instead of shape. It can be a
 
 ## Text pointer
 
-Text is used to denote the current pointer value instead of any marker shape. It can be achieved by setting the `MarkerType` as text and provide requrired text in `Text` property. The provided text can be customized using the `Foreground` `FontSize` `FontWeight` `FontFamily` properties of marker pointer.
+Text is used to denote the current pointer value instead of any marker shape. It can be achieved by setting the [`MarkerType`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerType) as text and provide requrired text in [`Text`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_Text) property. The provided text can be customized using the `Foreground` `FontSize` `FontWeight` `FontFamily` properties of marker pointer.
 
 {% tabs %}
 
@@ -138,7 +138,7 @@ this.Content = sfRadialGauge;
 
 ## Add customized pointer
 
-You can add customized symbols to denote the current pointer value instead of in-built marker shape. It can be achieved by setting the `MarkerType` as `Custom` and provide requrired shape in `MarkerTemplate` property.
+You can add customized symbols to denote the current pointer value instead of in-built marker shape. It can be achieved by setting the [`MarkerType`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerType) as [`Custom`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerType.html#Syncfusion_UI_Xaml_Gauges_MarkerType_Custom) and provide requrired shape in [`MarkerTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerTemplate) property.
 
 {% tabs %}
 
@@ -198,10 +198,10 @@ this.Content = sfRadialGauge;
 The marker pointer can be customized using the following properties:
 
 * `Background` – Allows to customize the marker color.
-* `MarkerHeight` – Allows to specify the marker height.
-* `MarkerWidth` – Allows to specify the marker width.
+* [`MarkerHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerHeight) – Allows to specify the marker height.
+* [`MarkerWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerWidth) – Allows to specify the marker width.
 * `BorderBrush` – Allows to specify the border color for the marker.
-* `BorderWidth` –  Allows to specify the border width of the marker.
+* [`BorderWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_BorderWidth) –  Allows to specify the border width of the marker.
 
 {% tabs %}
 
@@ -252,9 +252,9 @@ this.Content = sfRadialGauge;
 
 ## Marker position customization
 
-The marker pointer can be moved near or far from its actual position using the `MarkerOffset` and `OffsetUnit` properties. 
+The marker pointer can be moved near or far from its actual position using the [`MarkerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerOffset) and [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_OffsetUnit) properties. 
 
-When you set `OffsetUnit` to logical pixel, the marker pointer will be moved based on the logical pixel value. If you set `OffsetUnit` to factor, then provided factor will be multiplied with the axis radius value, and then the pointer will be moved to corresponding value. The default value of `OffsetUnit` is `SizeUnit.Pixel`.
+When you set [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_OffsetUnit) to pixel, the marker pointer will be moved based on the pixel value. If you set [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_OffsetUnit) to factor, then provided factor will be multiplied with the axis radius value, and then the pointer will be moved to corresponding value. The default value of [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_OffsetUnit) is [`SizeUnit.Pixel`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SizeUnit.html#Syncfusion_UI_Xaml_Gauges_SizeUnit_Pixel).
 
 {% tabs %}
 
