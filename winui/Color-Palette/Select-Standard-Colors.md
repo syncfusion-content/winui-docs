@@ -214,7 +214,7 @@ N> The DataContext of `StandardColors.HeaderTemplate` is `StandardColors.Header`
 
 ## Differentiate base standard color from its variants
 
-If you wants to differentiate base standard color from its variants, change the spacing between base standard color and its varient colors by using the `StandardColors.ColorShadesSpacing` property. The default value of `StandardColors.ColorShadesSpacing` property is `10`.
+If you wants to differentiate base standard color from its variants, change the spacing between base standard color and its variant colors by using the `StandardColors.ColorShadesSpacing` property. The default value of `StandardColors.ColorShadesSpacing` property is `10`.
 
 {% tabs %}
 {% highlight xaml %}

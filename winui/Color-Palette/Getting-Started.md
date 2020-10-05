@@ -33,7 +33,7 @@ This section explains how to create a WinUI [ColorPalette](https://help.syncfusi
 
 ### More Color Dialog
 
-![ColorPalette more color dialog structure](Getting-Started_images/MoreColorControl_Structure_GS.png)
+![ColorPalette more color dialog structure](Getting-Started_images/MoreColorControl_Structure_GS.jpg)
 
 ## Assembly deployment
 
@@ -161,7 +161,7 @@ ColorPalette.StandardColors.ShowColorShades = true;
 
 ## Add your own color in the Theme and Standard color palette
 
-If you want to apply custom colors for base Theme Colors and Standard Colors palette, add the colors into the `PaletteColors.Colors` and `StandardColors.Colors` collections. The varient colors will be automatically created for the own Theme and Standard Colors.
+If you want to apply custom colors for base Theme Colors and Standard Colors palette, add the colors into the `PaletteColors.Colors` and `StandardColors.Colors` collections. The variant colors will be automatically created for the own Theme and Standard Colors.
 
 {% tabs %}
 {% highlight XAML %}
@@ -251,7 +251,7 @@ var recentColors = ColorPalette.RecentColors;
 
 ## Choosing a color from MoreColor dialog
 
-If you want to choose a color that is not available in palette, click the more color button and select the color from color spectrums and click the `Ok` button. 
+If you want to choose a color that is not available in palette, click the more color button and select the color from color spectrum and click the `Ok` button. 
 
 {% tabs %}
 {% highlight xaml %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Select colors from more color dialog in WPF SfColorPalette control | Syncfusion
+title: Select more color dialog in WPF SfColorPalette control | Syncfusion
 description: Learn about selecting a different colors from more color dialog in Syncfusion WPF SfColorPalette control and more details about the control features.
 platform: wpf
 control: SfColorPalette
@@ -13,7 +13,7 @@ In addition to colors in `Theme colors` and `Standard colors`, `MoreColor` featu
 
 ## Select a color from MoreColor dialog
 
-If you wants any custom colors to select with various opacity level, click the more color button and select the color from color spectrums and click the `Ok` button. 
+If you wants any custom colors to select with various opacity level, click the more color button and select the color from color spectrum and click the `Ok` button. 
 
 {% tabs %}
 {% highlight xaml %}

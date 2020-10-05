@@ -200,7 +200,7 @@ N> The DataContext of `PaletteColors.HeaderTemplate` is `PaletteColors.Header`
 
 ## Differentiate base theme color from its variants
 
-If you wants to differentiate base theme color from its variants, change the spacing of theme varient colors from base theme color by using the `PaletteColors.ColorShadesSpacing` property. The default value of `PaletteColors.ColorShadesSpacing` property is `10`.
+If you wants to differentiate base theme color from its variants, change the spacing of theme variant colors from base theme color by using the `PaletteColors.ColorShadesSpacing` property. The default value of `PaletteColors.ColorShadesSpacing` property is `10`.
 
 {% tabs %}
 {% highlight xaml %}
