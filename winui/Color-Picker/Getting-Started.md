@@ -7,33 +7,29 @@ control: SfColorPicker control
 documentation: ug
 ---
 
-# Getting Started with WinUI SfColorPicker control
+# Getting Started with WinUI ColorPicker (SfColorPicker)
 
-This section describes how to create a `SfColorPicker` control in a WinUI application and overview of its basic functionalities.
+This section describes how to create a [ColorPicker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html) control in a WinUI application and overview of its basic functionalities.
 
-## Structure of SfColorPicker control
+## Structure of ColorPicker control
 
-![Structure of WinUI SfColorPicker control](Getting-Started_images/Structure.png)
+![Structure of WinUI ColorPicker control](Getting-Started_images/Structure.png)
 
 ## Assembly deployment
 
 Refer to the `Control Dependencies` section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-Refer to this `documentation` to find more details about installing nuget packages in a WinUI application.
+## Adding WinUI ColorPicker control via XAML
 
-## Adding WinUI SfColorPicker control via XAML
-
-To add the `SfColorPicker` control manually in XAML, follow these steps:
+To add the `ColorPicker` control manually in XAML, follow these steps:
 
 1) Create a new WinUI project in Visual Studio.
 
-2) Add the following required assembly references to the project:
-
-* Syncfusion.Core.WinUI
+2) Add the following assembly reference to the project from [nuget.org](https://www.nuget.org/packages/Syncfusion.Editors.WinUI/),
 
 * Syncfusion.Editors.WinUI
 
-3) Import Syncfusion WinUI schema **using:Syncfusion.UI.Xaml.Editors** and declare the `SfColorPicker` control in XAML page.
+3) Import Syncfusion WinUI schema **using:Syncfusion.UI.Xaml.Editors** and declare the `ColorPicker` control in XAML page.
 
 {% tabs %}
 {% highlight XAML %}
@@ -47,7 +43,7 @@ To add the `SfColorPicker` control manually in XAML, follow these steps:
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors">
     <Grid>
-        <syncfusion:SfColorPicker Name="sfColorPicker" 
+        <syncfusion:SfColorPicker Name="ColorPicker" 
                                   Height="30"
                                   Width="30"/>
     </Grid>
@@ -56,15 +52,13 @@ To add the `SfColorPicker` control manually in XAML, follow these steps:
 {% endhighlight %}
 {% endtabs %}
 
-## Adding WinUI SfColorPicker control via C#
+## Adding WinUI ColorPicker control via C#
 
-To add the `SfColorPicker` control manually in C#, follow these steps:
+To add the `ColorPicker` control manually in C#, follow these steps:
 
 1) Create a new WinUI application via Visual Studio.
 
-2) Add the following required assembly references to the project:
-
-* Syncfusion.Core.WinUI
+2) Add the following assembly reference to the project from [nuget.org](https://www.nuget.org/packages/Syncfusion.Editors.WinUI/),
 
 * Syncfusion.Editors.WinUI
 
@@ -78,26 +72,26 @@ using Syncfusion.UI.Xaml.Editors;
 {% endhighlight %}
 {% endtabs %}
 
-4) Create an instance of `SfColorPicker` control and add it to the page.
+4) Create an instance of `ColorPicker` control and add it to the page.
 
 {% tabs %}
 {% highlight C# %}
 
-// Creating an instance of the SfColorPicker control
-SfColorPicker sfColorPicker = new SfColorPicker();
+// Creating an instance of the ColorPicker control
+SfColorPicker ColorPicker = new SfColorPicker();
 
-// Setting height and width to SfColorPicker control
-sfColorPicker.Height = 300;
-sfColorPicker.Width = 300;
+// Setting height and width to ColorPicker control
+ColorPicker.Height = 300;
+ColorPicker.Width = 300;
 
 {% endhighlight %}
 {% endtabs %}
 
-![SfColorPicker control added in the application](Getting-Started_images/ColorPicker_Added.png)
+![ColorPicker control added in the application](Getting-Started_images/ColorPicker_Added.png)
 
 ## Select Solid Color
 
-You can select the solid color by setting the solid color value to the `SelectedBrush` property. The default value of 
+You can select the solid color by setting the solid color value to the [SelectedBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrush) property. The default value of `SelectedBrush` property is `Blue`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -229,9 +223,9 @@ colorPicker.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 
 ## Change selected color at runtime
 
-You can select a solid or gradient color by using the color spectrum and its value editors or delicate slider available in the `SfColorPicker`. You can select a different color channels like `RGB`, `HSV`, `HSL` and `CMYK` in the solid color mode.
+You can select a solid or gradient color by using the color spectrum and its value editors or delicate slider available in the `ColorPicker`. You can select a different color channels like `RGB`, `HSV`, `HSL` and `CMYK` in the solid color mode.
 
-![Color selected from the SfColorPicker at runtime](Getting-Started_images/SelectColorAtruntime.gif)
+![Color selected from the ColorPicker at runtime](Getting-Started_images/SelectColorAtruntime.gif)
 
 ## Get the selected color
 
@@ -239,18 +233,18 @@ You can get the selected color by using `SelectedBrush` property. The default va
 
 ## Selected brush changed notification
 
-The selected brush changed in `SfColorPicker` can be examined by  using `SelectedBrushChanged` events. You can get the old and newly selected brush by using the `OldBrush` and `NewBrush` properties.
+The selected brush changed in `ColorPicker` can be examined by  using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrushChanged) events. You can get the old and newly selected brush by using the [OldBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) and [NewBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) properties.
 
 {% tabs %}
 {% highlight XAML %}
 
 <syncfusion:SfColorPicker SelectedBrushChanged="ColorPicker_SelectedBrushChanged"
-                      Name="sfColorPicker">
+                      Name="ColorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
 
-sfColorPicker.SelectedBrushChanged += ColorPicker_SelectedBrushChanged;
+ColorPicker.SelectedBrushChanged += ColorPicker_SelectedBrushChanged;
 
 {% endhighlight %}
 {% endtabs %}
@@ -270,7 +264,7 @@ private void ColorPicker_SelectedBrushChanged(object sender, SelectedBrushChange
 
 ## Change color spectrum shapes
 
-You can change the shape of colour spectrum to either `Circle` or `Rectangle` by using the `ColorSpectrumShape` property value as `Ring` or `Box`. The default value of `ColorSpectrumShape` property is `Box`.
+You can change the shape of colour spectrum to either `Circle` or `Rectangle` by using the [ColorSpectrumShape](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_ColorSpectrumShape) property value as `Ring` or `Box`. The default value of `ColorSpectrumShape` property is `Box`.
 
 {% tabs %}
 {% highlight xaml %}

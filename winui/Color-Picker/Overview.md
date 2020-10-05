@@ -7,13 +7,13 @@ control: SfColorPicker Control
 documentation: ug
 ---
 
-# Overview of SfColorPicker control
+# Overview of WinUI ColorPicker (SfColorPicker)
 
-`SfColorPicker` control used to notify users of new or unread messages, notifications, or the status of something. 
+`ColorPicker` control used to notify users of new or unread messages, notifications, or the status of something. 
 
-## SfColorPicker control
+## ColorPicker control structure
 
-![Displaying the SfColorPicker control](Getting-Started_images/SelectColorAtruntime.gif)
+![Displaying the ColorPicker control](Getting-Started_images/SelectColorAtruntime.gif)
 
 ## Key features
 
