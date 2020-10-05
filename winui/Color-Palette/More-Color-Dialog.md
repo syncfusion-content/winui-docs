@@ -19,12 +19,12 @@ If you wants any custom colors to select with various opacity level, click the m
 {% highlight xaml %}
 
 <syncfusion:SfColorPalette ShowMoreColorsButton="true"
-                           Name="ColorPalette"/>
+                           Name="colorPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.ShowMoreColorsButton = true;
+colorPalette.ShowMoreColorsButton = true;
 
 {% endhighlight %}
 {% endtabs %}
@@ -39,12 +39,12 @@ If you want to restrict the user to select the color from `MoreColor` dialog, hi
 {% highlight xaml %}
 
 <syncfusion:SfColorPalette ShowMoreColorsButton="False"
-                           Name="ColorPalette" />
+                           Name="colorPalette" />
 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.ShowMoreColorsButton = false;
+colorPalette.ShowMoreColorsButton = false;
 
 {% endhighlight %}
 {% endtabs %}

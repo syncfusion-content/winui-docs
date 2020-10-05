@@ -19,12 +19,12 @@ You can select a various theme colors by setting the value to the [ActivePalette
 {% highlight xaml %}
 
 <syncfusion:SfColorPalette ActivePalette="Yellow"
-                           Name="ColorPalette" />
+                           Name="colorPalette" />
 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.ActivePalette = ColorPaletteNames.Yellow;
+colorPalette.ActivePalette = ColorPaletteNames.Yellow;
 
 {% endhighlight %}
 {% endtabs %}
@@ -38,7 +38,7 @@ If you want to allow the user to select a color from own theme colors, add that 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette Name="ColorPalette">
+<syncfusion:SfColorPalette Name="colorPalette">
     <syncfusion:SfColorPalette.PaletteColors>
         <syncfusion:ColorPaletteModel ShowColors="True" 
                                       ShowColorShades="True"
@@ -65,9 +65,9 @@ If you want to allow the user to select a color from own theme colors, add that 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.PaletteColors.Header = "Custom Theme Colors";
-ColorPalette.PaletteColors.ShowColors = true;
-ColorPalette.PaletteColors.ShowColorShades = true;
+colorPalette.PaletteColors.Header = "Custom Theme Colors";
+colorPalette.PaletteColors.ShowColors = true;
+colorPalette.PaletteColors.ShowColorShades = true;
 
 {% endhighlight %}
 {% endtabs %}
@@ -81,7 +81,7 @@ If you want allow the user to select only the variants of theme color without it
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette Name="ColorPalette">
+<syncfusion:SfColorPalette Name="colorPalette">
     <syncfusion:SfColorPalette.PaletteColors>
         <syncfusion:ColorPaletteModel ShowColors="False"/>
     </syncfusion:SfColorPalette.PaletteColors>
@@ -90,7 +90,7 @@ If you want allow the user to select only the variants of theme color without it
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.PaletteColors.ShowColors = false;
+colorPalette.PaletteColors.ShowColors = false;
 
 {% endhighlight %}
 {% endtabs %}
@@ -104,7 +104,7 @@ If you want allow the user to select only the base theme colors without its vari
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette Name="ColorPalette">
+<syncfusion:SfColorPalette Name="colorPalette">
     <syncfusion:SfColorPalette.PaletteColors>
         <syncfusion:ColorPaletteModel ShowColorShades="False"/>
     </syncfusion:SfColorPalette.PaletteColors>
@@ -113,7 +113,7 @@ If you want allow the user to select only the base theme colors without its vari
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.PaletteColors.ShowColorShades = false;
+colorPalette.PaletteColors.ShowColorShades = false;
 
 {% endhighlight %}
 {% endtabs %}
@@ -127,7 +127,7 @@ If you want to change header text of the theme color palette, use the `PaletteCo
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette Name="ColorPalette">
+<syncfusion:SfColorPalette Name="colorPalette">
     <syncfusion:SfColorPalette.PaletteColors>
         <syncfusion:ColorPaletteModel Header="My theme colors"/>
     </syncfusion:SfColorPalette.PaletteColors>
@@ -136,7 +136,7 @@ If you want to change header text of the theme color palette, use the `PaletteCo
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.PaletteColors.Header = "My theme colors";
+colorPalette.PaletteColors.Header = "My theme colors";
 
 {% endhighlight %}
 {% endtabs %}
@@ -150,7 +150,7 @@ If you want to hide header of the theme color palette, use the `PaletteColors.Sh
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette Name="ColorPalette">
+<syncfusion:SfColorPalette Name="colorPalette">
     <syncfusion:SfColorPalette.PaletteColors>
         <syncfusion:ColorPaletteModel ShowHeader="False"/>
     </syncfusion:SfColorPalette.PaletteColors>
@@ -159,7 +159,7 @@ If you want to hide header of the theme color palette, use the `PaletteColors.Sh
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.PaletteColors.ShowHeader = false;
+colorPalette.PaletteColors.ShowHeader = false;
 
 {% endhighlight %}
 {% endtabs %}
@@ -175,7 +175,7 @@ N> The DataContext of `PaletteColors.HeaderTemplate` is `PaletteColors.Header`
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette Name="ColorPalette">
+<syncfusion:SfColorPalette Name="colorPalette">
     <syncfusion:SfColorPalette.PaletteColors>
         <syncfusion:ColorPaletteModel >
             <syncfusion:ColorPaletteModel.HeaderTemplate>
@@ -214,7 +214,7 @@ If you wants to differentiate base theme color from its variants, change the spa
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.PaletteColors.ColorShadesSpacing = 20;
+colorPalette.PaletteColors.ColorShadesSpacing = 20;
 
 {% endhighlight %}
 {% endtabs %}
@@ -228,7 +228,7 @@ If you want to hide the theme color palette from the view, use the `PaletteColor
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette Name="ColorPalette">
+<syncfusion:SfColorPalette Name="colorPalette">
     <syncfusion:SfColorPalette.PaletteColors>
         <syncfusion:ColorPaletteModel ShowColors="False" 
                                       ShowColorShades="False"/>
@@ -238,8 +238,8 @@ If you want to hide the theme color palette from the view, use the `PaletteColor
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.PaletteColors.ShowColors = false;
-ColorPalette.PaletteColors.ShowColorShades = false;
+colorPalette.PaletteColors.ShowColors = false;
+colorPalette.PaletteColors.ShowColorShades = false;
 
 {% endhighlight %}
 {% endtabs %}

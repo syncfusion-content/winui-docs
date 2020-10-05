@@ -18,12 +18,12 @@ You can select a various standard colors with its variants by using the Standard
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette Name="ColorPalette" />
+<syncfusion:SfColorPalette Name="colorPalette" />
 
 {% endhighlight %}
 {% highlight C# %}
 
-SfColorPalette ColorPalette= new SfColorPalette();
+SfColorPalette colorPalette= new SfColorPalette();
 
 {% endhighlight %}
 {% endtabs %}
@@ -93,7 +93,7 @@ By default, you can select only the standard color without its variants. If you 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette Name="ColorPalette">
+<syncfusion:SfColorPalette Name="colorPalette">
     <syncfusion:SfColorPalette.StandardColors>
         <syncfusion:StandardPaletteModel ShowColorShades="True"/>
     </syncfusion:SfColorPalette.StandardColors>
@@ -102,7 +102,7 @@ By default, you can select only the standard color without its variants. If you 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.StandardColors.ShowColorShades = true;
+colorPalette.StandardColors.ShowColorShades = true;
 
 {% endhighlight %}
 {% endtabs %}
@@ -116,7 +116,7 @@ If you want hide to the standard color and its variants, use the `StandardColors
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette Name="ColorPalette">
+<syncfusion:SfColorPalette Name="colorPalette">
     <syncfusion:SfColorPalette.StandardColors>
         <syncfusion:StandardPaletteModel ShowColors="False" 
                                          ShowColorShades="False"/>
@@ -126,8 +126,8 @@ If you want hide to the standard color and its variants, use the `StandardColors
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.StandardColors.ShowColors = false;
-ColorPalette.StandardColors.ShowColorShades = false;
+colorPalette.StandardColors.ShowColors = false;
+colorPalette.StandardColors.ShowColorShades = false;
 
 {% endhighlight %}
 {% endtabs %}
@@ -141,7 +141,7 @@ If you want to change header text of the standard color palette, use the `Standa
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette Name="ColorPalette">
+<syncfusion:SfColorPalette Name="colorPalette">
     <syncfusion:SfColorPalette.StandardColors>
         <syncfusion:StandardPaletteModel Header="My standard colors"/>
     </syncfusion:SfColorPalette.StandardColors>
@@ -150,7 +150,7 @@ If you want to change header text of the standard color palette, use the `Standa
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.StandardColors.Header = "My standard colors";
+colorPalette.StandardColors.Header = "My standard colors";
 
 {% endhighlight %}
 {% endtabs %}
@@ -173,7 +173,7 @@ If you want to hide header of the standard color palette, use the `StandardColor
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.StandardColors.ShowHeader = false;
+colorPalette.StandardColors.ShowHeader = false;
 
 {% endhighlight %}
 {% endtabs %}
@@ -189,7 +189,7 @@ N> The DataContext of `StandardColors.HeaderTemplate` is `StandardColors.Header`
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette Name="ColorPalette">
+<syncfusion:SfColorPalette Name="colorPalette">
     <syncfusion:SfColorPalette.StandardColors>
         <syncfusion:StandardPaletteModel >
             <syncfusion:StandardPaletteModel.HeaderTemplate>
@@ -219,7 +219,7 @@ If you wants to differentiate base standard color from its variants, change the 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette Name="ColorPalette">
+<syncfusion:SfColorPalette Name="colorPalette">
     <syncfusion:SfColorPalette.StandardColors>
         <syncfusion:StandardPaletteModel ColorShadesSpacing="20"
                                          ShowColorShades="False"/>
@@ -229,8 +229,8 @@ If you wants to differentiate base standard color from its variants, change the 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.StandardColors.ColorShadesSpacing = 20;
-ColorPalette.StandardColors.ShowColorShades = false;
+colorPalette.StandardColors.ColorShadesSpacing = 20;
+colorPalette.StandardColors.ShowColorShades = false;
 
 {% endhighlight %}
 {% endtabs %}

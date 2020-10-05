@@ -66,7 +66,7 @@ To add the `ColorPalette` control manually in XAML, follow these steps:
     <Grid>
         <!--Adding ColorPalette control -->
         <syncfusion:SfColorPalette Margin="10"
-                                   Name="ColorPalette"/>
+                                   Name="colorPalette"/>
     </Grid>
 </Window>
 
@@ -96,10 +96,10 @@ public sealed partial class MainPage : Page {
         this.InitializeComponent();
 
         //Creating an instance of ColorPalette control
-        SfColorPalette ColorPalette = new SfColorPalette();
+        SfColorPalette colorPalette = new SfColorPalette();
 
         //Adding ColorPalette as window content
-        this.Content = ColorPalette;
+        this.Content = colorPalette;
     }
 }
 
@@ -116,14 +116,14 @@ You can set or change the selected color of the `ColorPalette` programmatically 
 {% highlight xaml %}
 
 <syncfusion:SfColorPalette SelectedBrush="Yellow"
-                           Name="ColorPalette" />
+                           Name="colorPalette" />
 
-<Button Background="{Binding ElementName=ColorPalette, Path=SelectedBrush}"></Button>
+<Button Background="{Binding ElementName=colorPalette, Path=SelectedBrush}"></Button>
 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.SelectedBrush = new SolidColorBrush(Colors.Yellow);
+colorPalette.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 
 {% endhighlight %}
 {% endtabs %}
@@ -139,7 +139,7 @@ You can select a different colors from Theme Color and Standard Color panels. Yo
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette Name="ColorPalette">
+<syncfusion:SfColorPalette Name="colorPalette">
     <syncfusion:SfColorPalette.PaletteColors>
         <syncfusion:ColorPaletteModel ShowColorShades="True"/>
     </syncfusion:SfColorPalette.PaletteColors>
@@ -151,8 +151,8 @@ You can select a different colors from Theme Color and Standard Color panels. Yo
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.PaletteColors.ShowColorShades = true;
-ColorPalette.StandardColors.ShowColorShades = true;
+colorPalette.PaletteColors.ShowColorShades = true;
+colorPalette.StandardColors.ShowColorShades = true;
 
 {% endhighlight %}
 {% endtabs %}
@@ -166,7 +166,7 @@ If you want to apply custom colors for base Theme Colors and Standard Colors pal
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPalette Name="ColorPalette">
+<syncfusion:SfColorPalette Name="colorPalette">
     <syncfusion:SfColorPalette.PaletteColors>
         <syncfusion:ColorPaletteModel ShowColors="True" 
                                       ShowColorShades="True"
@@ -213,13 +213,13 @@ If you want to apply custom colors for base Theme Colors and Standard Colors pal
 {% endhighlight %}
 {% highlight c# %}
 
-ColorPalette.PaletteColors.Header = "Custom Theme Colors";
-ColorPalette.PaletteColors.ShowColors = true;
-ColorPalette.PaletteColors.ShowColorShades = true;
+colorPalette.PaletteColors.Header = "Custom Theme Colors";
+colorPalette.PaletteColors.ShowColors = true;
+colorPalette.PaletteColors.ShowColorShades = true;
 
-ColorPalette.StandardColors.Header = "Custom Standard Colors";
-ColorPalette.StandardColors.ShowColors = true;
-ColorPalette.StandardColors.ShowColorShades = true;
+colorPalette.StandardColors.Header = "Custom Standard Colors";
+colorPalette.StandardColors.ShowColors = true;
+colorPalette.StandardColors.ShowColorShades = true;
 
 {% endhighlight %}
 {% endtabs %}
@@ -235,14 +235,14 @@ N> Colors selected from theme and standard colors will not be added in recent co
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette Name="ColorPalette"/>
+<syncfusion:SfColorPalette Name="colorPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
 
 
 //Getting the recently used color list
-var recentColors = ColorPalette.RecentColors;
+var recentColors = colorPalette.RecentColors;
 
 {% endhighlight %}
 {% endtabs %}
@@ -257,12 +257,12 @@ If you want to choose a color that is not available in palette, click the more c
 {% highlight xaml %}
 
 <syncfusion:SfColorPalette ShowMoreColorsButton="true"
-                           Name="ColorPalette"/>
+                           Name="colorPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.ShowMoreColorsButton = true;
+colorPalette.ShowMoreColorsButton = true;
 
 {% endhighlight %}
 {% endtabs %}
@@ -278,12 +278,12 @@ If you want to reset the selected color as `No color` or `Transparent`, click th
 {% highlight xaml %}
 
 <syncfusion:SfColorPalette ShowNoColorButton="True"
-                           Name="ColorPalette"/>
+                           Name="colorPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.ShowNoColorButton = true;
+colorPalette.ShowNoColorButton = true;
 
 {% endhighlight %}
 {% endtabs %}
@@ -298,12 +298,12 @@ The selected color changed in `ColorPalette` can be examined using [SelectedBrus
 {% highlight xaml %}
 
 <syncfusion:SfColorPalette SelectedBrushChanged="ColorPalette_SelectedBrushChanged"
-                           Name="ColorPalette" />
+                           Name="colorPalette" />
 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.SelectedBrushChanged += ColorPalette_SelectedBrushChanged;
+colorPalette.SelectedBrushChanged += ColorPalette_SelectedBrushChanged;
 
 {% endhighlight %}
 {% endtabs %}

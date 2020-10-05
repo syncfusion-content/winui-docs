@@ -19,12 +19,12 @@ You can set or change the selected color of the `ColorPalette` programmatically 
 {% highlight xaml %}
 
 <syncfusion:SfColorPalette SelectedBrush="Yellow"
-                           Name="ColorPalette" />
+                           Name="colorPalette" />
 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.SelectedBrush = new SolidColorBrush(Colors.Yellow);
+colorPalette.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 
 {% endhighlight %}
 {% endtabs %}
@@ -41,12 +41,12 @@ You can set a null color value for the selected color by setting the color code 
 {% highlight xaml %}
 
 <syncfusion:SfColorPalette SelectedBrush="Transparent"
-                           Name="ColorPalette"/>
+                           Name="colorPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.SelectedBrush = new SolidColorBrush(Colors.Transparent);
+colorPalette.SelectedBrush = new SolidColorBrush(Colors.Transparent);
 
 {% endhighlight %}
 {% endtabs %}
@@ -62,12 +62,12 @@ If you want to reset the selected color as `No color` or `Transparent`, click th
 {% highlight xaml %}
 
 <syncfusion:SfColorPalette ShowNoColorButton="True"
-                           Name="ColorPalette"/>
+                           Name="colorPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.ShowNoColorButton = true;
+colorPalette.ShowNoColorButton = true;
 
 {% endhighlight %}
 {% endtabs %}
@@ -82,12 +82,12 @@ If you want to change the default selected color on application launching, set t
 {% highlight xaml %}
 
 <syncfusion:SfColorPalette AutomaticBrush="Red"
-                           Name="ColorPalette" />
+                           Name="colorPalette" />
 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.AutomaticBrush = new SolidColorBrush(Colors.Red);
+colorPalette.AutomaticBrush = new SolidColorBrush(Colors.Red);
 
 {% endhighlight %}
 {% endtabs %}
@@ -103,13 +103,13 @@ You can hide the default color button visibility by setting the [ShowDefaultColo
 
 <syncfusion:SfColorPalette AutomaticBrush="Green"
                            ShowDefaultColorButton="False"
-                           Name="ColorPalette" />
+                           Name="colorPalette" />
 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.AutomaticBrush = new SolidColorBrush(Colors.Red);
-ColorPalette.ShowDefaultColorButton = false;
+colorPalette.AutomaticBrush = new SolidColorBrush(Colors.Red);
+colorPalette.ShowDefaultColorButton = false;
 
 {% endhighlight %}
 {% endtabs %}
@@ -124,12 +124,12 @@ The selected color changed in `ColorPalette` can be examined using [SelectedBrus
 {% highlight xaml %}
 
 <syncfusion:SfColorPalette SelectedBrushChanged="ColorPalette_SelectedBrushChanged"
-                           Name="ColorPalette" />
+                           Name="colorPalette" />
 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.SelectedBrushChanged += ColorPalette_SelectedBrushChanged;
+colorPalette.SelectedBrushChanged += ColorPalette_SelectedBrushChanged;
 
 {% endhighlight %}
 {% endtabs %}
@@ -160,15 +160,15 @@ The recently selected color items are displayed in the `Recent Colors` panel. If
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette Name="ColorPalette"/>
+<syncfusion:SfColorPalette Name="colorPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
 
-SfColorPalette ColorPalette = new SfColorPalette();
+SfColorPalette colorPalette = new SfColorPalette();
 
 //Recently selected color list 
-var recentColors = ColorPalette.RecentColors;
+var recentColors = colorPalette.RecentColors;
 
 {% endhighlight %}
 {% endtabs %}
@@ -183,12 +183,12 @@ You can change the foreground color of the `ColorPalette` by using the `Foregrou
 {% highlight xaml %}
 
 <syncfusion:SfColorPalette Foreground="Red"
-                           Name="ColorPalette" />
+                           Name="colorPalette" />
 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.Foreground = new SolidColorBrush(Colors.Red);
+colorPalette.Foreground = new SolidColorBrush(Colors.Red);
 
 {% endhighlight %}
 {% endtabs %}
@@ -203,12 +203,12 @@ You can change the background color of the `ColorPalette` by using the `Backgrou
 {% highlight xaml %}
 
 <syncfusion:SfColorPalette Background="LightYellow"
-                           Name="ColorPalette" />
+                           Name="colorPalette" />
 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.Background = new SolidColorBrush(Colors.LightYellow);
+colorPalette.Background = new SolidColorBrush(Colors.LightYellow);
 
 {% endhighlight %}
 {% endtabs %}
@@ -223,12 +223,12 @@ You can change the flow direction of the `ColorPalette` layout from right to lef
 {% highlight xaml %}
 
 <syncfusion:SfColorPalette FlowDirection="RightToLeft"
-                           Name="ColorPalette" />
+                           Name="colorPalette" />
 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.FlowDirection = FlowDirection.RightToLeft;
+colorPalette.FlowDirection = FlowDirection.RightToLeft;
 
 {% endhighlight %}
 {% endtabs %}
@@ -244,13 +244,13 @@ You can change the color palette size by using the `Width` and `Height` properti
 
 <syncfusion:SfColorPalette Width="200" 
                            Height="300"
-                           Name="ColorPalette"/>
+                           Name="colorPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.Width = 200;
-ColorPalette.Height = 300;
+colorPalette.Width = 200;
+colorPalette.Height = 300;
 
 {% endhighlight %}
 {% endtabs %}
@@ -265,12 +265,12 @@ You can hide the `ColorPalette` by setting the `Visibility` property value as `C
 {% highlight xaml %}
 
 <syncfusion:SfColorPalette Visibility="Collapsed"
-                           Name="ColorPalette"/>
+                           Name="colorPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPalette.Visibility = Visibility.Collapsed;
+colorPalette.Visibility = Visibility.Collapsed;
 
 {% endhighlight %}
 {% endtabs %}
