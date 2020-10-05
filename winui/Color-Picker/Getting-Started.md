@@ -43,7 +43,7 @@ To add the `ColorPicker` control manually in XAML, follow these steps:
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors">
     <Grid>
-        <syncfusion:SfColorPicker Name="ColorPicker" 
+        <syncfusion:SfColorPicker Name="colorPicker" 
                                   Height="30"
                                   Width="30"/>
     </Grid>
@@ -78,41 +78,41 @@ using Syncfusion.UI.Xaml.Editors;
 {% highlight C# %}
 
 // Creating an instance of the ColorPicker control
-SfColorPicker ColorPicker = new SfColorPicker();
+SfColorPicker colorPicker = new SfColorPicker();
 
 // Setting height and width to ColorPicker control
-ColorPicker.Height = 300;
-ColorPicker.Width = 300;
+colorPicker.Height = 300;
+colorPicker.Width = 300;
 
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPicker control added in the application](Getting-Started_images/ColorPicker_Added.png)
+![ColorPicker control added in the application](Getting-Started_images/ColorPicker_Added.jpg)
 
-## Select Solid Color
+## Select Solid Color programmatically
 
-You can select the solid color by setting the solid color value to the [SelectedBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrush) property. The default value of `SelectedBrush` property is `Blue`.
+You can select the solid color programmatically by setting the solid color value to the [SelectedBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrush) property. The default value of `SelectedBrush` property is `Blue`.
 
 {% tabs %}
 {% highlight xaml %}
 
- <syncfusion:ColorPicker x:Name="colorPicker"
-                         SelectedBrush="Yellow"/>
+ <syncfusion:SfColorPicker x:Name="colorPicker"
+                           SelectedBrush="Yellow"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
-ColorPicker colorPicker = new ColorPicker();
-colorPicker.Color = Colors.Yellow;
+SfColorPicker colorPicker = new SfColorPicker();
+colorPicker.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Solid color selected from ColorPicker](Getting-Started_images/select_Solidcolor.png)
 
-## Select Gradient Color
+## Select Gradient Color programmatically
 
-You can select a linear or radial gradient color which holds the multiple colors from the `ColorPicker`.
+You can select a linear or radial gradient color which holds the multiple colors  programmatically from the `ColorPicker`.
 
 ### Linear Gradient
 
@@ -202,34 +202,11 @@ colorPicker.SelectedBrush = radialGradient;
 
 ![Assigning a Raidial Gradient brush to ColorPicker](Getting-Started_images/ColorPicker_select-a-RadialGradient.png)
 
-## Select color programmatically
-
-You can select a color programmatically by setting the value to the `SelectedBrush` property. The deafult value of `SelectedBrush` property is `Transparent`.
-
-{% tabs %}
-{% highlight xaml %}
-
- <syncfusion:SfColorPicker x:Name="colorPicker"/>
-
-{% endhighlight %}
-{% highlight c# %}
-
-colorPicker.SelectedBrush = new SolidColorBrush(Colors.Yellow);
-
-{% endhighlight %}
-{% endtabs %}
-
-![Selecting a color programmatically in ColorPicker](Getting-Started_images/ColorPicker_select-a-RadialGradient.png)
-
 ## Change selected color at runtime
 
 You can select a solid or gradient color by using the color spectrum and its value editors or delicate slider available in the `ColorPicker`. You can select a different color channels like `RGB`, `HSV`, `HSL` and `CMYK` in the solid color mode.
 
 ![Color selected from the ColorPicker at runtime](Getting-Started_images/SelectColorAtruntime.gif)
-
-## Get the selected color
-
-You can get the selected color by using `SelectedBrush` property. The default value of `SelectedBrush` and `SelectedBrush` properties is `#FF0000FF (Blue)`.
 
 ## Selected brush changed notification
 
@@ -239,12 +216,12 @@ The selected brush changed in `ColorPicker` can be examined by  using [SelectedB
 {% highlight XAML %}
 
 <syncfusion:SfColorPicker SelectedBrushChanged="ColorPicker_SelectedBrushChanged"
-                      Name="ColorPicker">
+                      Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPicker.SelectedBrushChanged += ColorPicker_SelectedBrushChanged;
+colorPicker.SelectedBrushChanged += ColorPicker_SelectedBrushChanged;
 
 {% endhighlight %}
 {% endtabs %}
@@ -264,7 +241,7 @@ private void ColorPicker_SelectedBrushChanged(object sender, SelectedBrushChange
 
 ## Change color spectrum shapes
 
-You can change the shape of colour spectrum to either `Circle` or `Rectangle` by using the [ColorSpectrumShape](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_ColorSpectrumShape) property value as `Ring` or `Box`. The default value of `ColorSpectrumShape` property is `Box`.
+You can change the shape of color spectrum to either `Circle` or `Rectangle` by using the [ColorSpectrumShape](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_ColorSpectrumShape) property value as `Ring` or `Box`. The default value of `ColorSpectrumShape` property is `Box`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -280,7 +257,7 @@ colorPicker.ColorSpectrumShape = ColorSpectrumShape.Ring;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPicker display the ring shaped color specturms](Getting-Started_images/ColorSpectrumShape.png)
+![ColorPicker display the ring shaped color specturms](Getting-Started_images/ColorSpectrumShape.jpg)
 
 ## Switch between solid, linear and gradient brush mode
 
