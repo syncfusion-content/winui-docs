@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WinUI Chart | Syncfusion
-description: This section explains the steps required to add the Chart control and binding data in chart control. This section covers only basic features needed to get started with Syncfusion chart control.
+description: This section describes about how to add the Chart control into WinUI application and its basic features.
 platform: WinUI
 control: Chart
 documentation: ug
@@ -45,14 +45,14 @@ Then initialize an empty chart with two axes as shown below,
 
 {% highlight xaml %} 
 
- <syncfusion:SfChart> 
+<syncfusion:SfChart> 
       <syncfusion:SfChart.PrimaryAxis> 
            <syncfusion:CategoryAxis /> 
       </syncfusion:SfChart.PrimaryAxis> 
       <syncfusion:SfChart.SecondaryAxis> 
            <syncfusion:NumericalAxis/> 
       </syncfusion:SfChart.SecondaryAxis>
- </syncfusion:SfChart>
+</syncfusion:SfChart>
 
 {% endhighlight %}
 
@@ -76,7 +76,7 @@ Run the project and check if you get following output to make sure you have conf
 
 ![Initializing WinUI Chart](Getting-Started_Images/img1.png)
 
-N> `Chart`supports default axes, so that these axes (['PrimaryAxis'](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) and [`SecondaryAxis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis)) will get generated automatically based upon the data bind to the chart, if you didn’t specify the axes explicitly.
+N> `Chart`supports default axes, so that these axes ([`PrimaryAxis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) and [`SecondaryAxis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis)) will get generated automatically based upon the data bind to the chart, if you didn’t specify the axes explicitly.
 
 ## Initialize view model
 
