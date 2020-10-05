@@ -15,9 +15,9 @@ This section explains the steps required to add the TreeGrid control and binding
 
 1. Create new WinUI Project in Visual Studio to display TreeGrid with data objects.
 
-2. Install the `Syncfusion.Grid.WinUI` Nuget packages.
+2. Install the `Syncfusion.Grid.WinUI` NuGet packages.
 
-3. Declare the namespace in Xaml.
+3. Declare the namespace in XAML.
 
 4. Initialize the SfTreeGrid control.
 
@@ -48,7 +48,7 @@ This section explains the steps required to add the TreeGrid control and binding
 
 In order to add control manually in C#, do the below steps,
 
-1. Install the `Syncfusion.Grid.WinUI` Nuget package.
+1. Install the `Syncfusion.Grid.WinUI` NuGet package.
 2. Import SfTreeGrid namespace **Syncfusion.UI.Xaml.TreeGrid** .
 3. Create SfTreeGrid control instance and add it to the Page.
 
