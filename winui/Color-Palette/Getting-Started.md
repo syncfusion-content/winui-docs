@@ -79,7 +79,7 @@ To add the `ColorPalette` control manually in C#, follow these steps:
 
 1. Create a new WinUI application via Visual Studio.
 
-2. Add the  following assembly references to the project,
+2. Add the following assembly reference to the project from [nuget.org](https://www.nuget.org/packages/Syncfusion.Editors.WinUI/),
     * Syncfusion.Editors.WinUI
 
 3. Include the required namespace and create an instance of `ColorPalette` and add it to the window.
