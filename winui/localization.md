@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Localization of Syncfusion WinUI Controls
-description: Syncfusion Essential Studio for WinUI includes controls for developing Windows apps. It includes grids, charts, gauges, treeview, barcode and color picker.
+description: Learn about localization support in Syncfusion WinUI controls using .resw files and explains editing default strings of WinUI controls.
 platform: winui
-control: Overview
+control: Localization
 documentation: ug
 ---
 
