@@ -89,9 +89,9 @@ colorPicker.Width = 300;
 
 ![ColorPicker control added in the application](Getting-Started_images/ColorPicker_Added.jpg)
 
-## Select Solid Color programmatically
+## Select solid color brush
 
-You can select the solid color programmatically by setting the solid color value to the [SelectedBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrush) property. The default value of `SelectedBrush` property is `Blue`.
+You can select the solid color brush programmatically by setting the solid color brush value to the [SelectedBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrush) property. You can also choose various solid color brush from different standard color models such as `RGB`, `HSV`, `HSL`, `CMYK` formats. The default value of `SelectedBrush` property is `Blue`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -110,13 +110,74 @@ colorPicker.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 
 ![Solid color selected from ColorPicker](Getting-Started_images/select_Solidcolor.png)
 
-## Select Gradient Color programmatically
+You can select any solid color brush at runtime by clicking on the respective solid color brush area.
 
-You can select a linear or radial gradient color which holds the multiple colors  programmatically from the `ColorPicker`.
+![Solid color brush selected at runtime](Getting-Started_images/Solidcolor.png)
 
-### Linear Gradient
+### Switch between solid color channels
 
-Linear Gradient color can be selected by the multiple colors and their location along the gradient axis using the `GradientStop` objects and `StartPoint` and `EndPoint` properties. Based on the `StartPoint` and `EndPoint`, the selected colors will be combined in linear manner.
+ You can select the color model by setting the required color brush model to the [ColorChannelOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_ColorChannelOptions) property or select it from the drop down options. The default value of `ColorChannelOptions` property is `RGB`.
+
+{% tabs %}
+{% highlight xaml %}
+
+ <syncfusion:SfColorPicker x:Name="colorPicker"
+                           ColorChannelOptions="HSV"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfColorPicker colorPicker = new SfColorPicker();
+colorPicker.ColorChannelOptions = ColorChannelOptions.HSV;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Different solid color models in ColorPicker](Getting-Started_images/RGB.jpg)
+
+### Change opacity of solid color brush
+
+You can change opacity of the selected solid color brush by using the A-Alpha value editor or delicate slider in the `ColorPicker`. You can hide the A-Alpha slider by using the [AlphaInputOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_AlphaInputOptions) property value as `TextInput`. The default value of the `AlphaInputOptions` property is `All`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:SfColorPicker AlphaInputOptions="TextInput"
+                          Name="colorPicker">
+
+{% endhighlight %}
+{% highlight C# %}
+
+colorPicker.AlphaInputOptions = ColorInputOptions.TextInput;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Show opacity value editor](Getting-Started_images/AlphaInputOptions.png)
+
+### Hexa-decimal solid color brush value editor
+
+You can select a solid color brush by entering the hexa-decimal color value to the hexa-decimal value editor. You can also get the selected color hexa-decimal value by using the hexa-decimal value editor. You can hide the hexa-decimal value editor by setting the [IsHexInputVisible](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_IsHexInputVisible) property value as `false`. The default value of `IsHexInputVisible` property is `true`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:SfColorPicker IsHexInputVisible="False"
+                          Name="colorPicker">
+
+{% endhighlight %}
+{% highlight C# %}
+
+colorPicker.IsHexInputVisible = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Hide the hexa-decimal value editor](Getting-Started_images/IsHexInputVisible.png)
+
+## Select linear gradient color brush
+
+Linear Gradient color brush can be selected by the multiple colors and their location along the gradient axis using the `GradientStop` objects and `StartPoint` and `EndPoint` properties. Based on the `StartPoint` and `EndPoint`, the selected color brush will be combined in linear manner.
 
 {% tabs %}
 {% highlight xaml %}
@@ -156,14 +217,32 @@ colorPicker.SelectedBrush = linearGradient;
 
 ![Assigning a Linear Gradient brush to ColorPicker](Getting-Started_images/ColorPicker_select-a-LinearGradient.png)
 
-### Radial Gradient
+You can directly select a required linear gradient color brush at runtime by setting the [BrushTypeOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_BrushTypeOptions) property value as `LinearGradientBrush`. The default value of `BrushTypeOptions` property is `All`.
 
-Radial Gradient color is similar to Linear Gradient color, except for the axis defined by the circle. Based on the `GradientOrigin`, `Center` and radius point values, the selected gradient colors are combined in a circle manner. 
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:SfColorPicker BrushTypeOptions="LinearGradientBrush"
+                          Name="colorPicker">
+
+{% endhighlight %}
+{% highlight C# %}
+
+colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Selecting a linear gradient color brush](Getting-Started_images/lineargradient.gif)
+
+## Select radial gradient color brush
+
+Radial Gradient color brush is similar to Linear Gradient color brush, except for the axis defined by the circle. Based on the `GradientOrigin`, `Center` and radius point values, the selected gradient color brush are combined in a circle manner.
 
 {% tabs %}
 {% highlight xaml %}
 
- <syncfusion:SfColorPicker x:Name="colorPicker">
+<syncfusion:SfColorPicker x:Name="colorPicker">
     <syncfusion:SfColorPicker.SelectedBrush>
         <RadialGradientBrush GradientOrigin="0.5,0.5" 
                              Center="0.5,0.5"
@@ -202,11 +281,47 @@ colorPicker.SelectedBrush = radialGradient;
 
 ![Assigning a Raidial Gradient brush to ColorPicker](Getting-Started_images/ColorPicker_select-a-RadialGradient.png)
 
-## Change selected color at runtime
+You can directly select a required radial gradient color brush at runtime by setting the `BrushTypeOptions` property value as `RadialGradientBrush`.
 
-You can select a solid or gradient color by using the color spectrum and its value editors or delicate slider available in the `ColorPicker`. You can select a different color channels like `RGB`, `HSV`, `HSL` and `CMYK` in the solid color mode.
+{% tabs %}
+{% highlight XAML %}
 
-![Color selected from the ColorPicker at runtime](Getting-Started_images/SelectColorAtruntime.gif)
+<syncfusion:SfColorPicker BrushTypeOptions="RadialGradientBrush"
+                          Name="colorPicker">
+
+{% endhighlight %}
+{% highlight C# %}
+
+colorPicker.BrushTypeOptions = BrushTypeOptions.RadialGradientBrush;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Selecting a radial gradient color brush](Getting-Started_images/radialgradient.gif)
+
+## Switch between solid, linear and gradient brush mode
+
+You can allow the user to choose either `Solid`, `Linear` or `Radial` gradient brush or any combination of brush mode by using the `BrushTypeOptions` property. 
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:SfColorPicker BrushTypeOptions="SolidColorBrush,RadialGradientBrush"
+                          Name="colorPicker">
+
+{% endhighlight %}
+{% highlight C# %}
+
+colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush | BrushTypeOptions.RadialGradientBrush;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Allow only the solid and radial gradient brush mode](Getting-Started_images/BrushTypeOptions.png)
+
+You can change the color selection mode directly at runtime by clicking on the corresponding `Solid`, `Linear` or `Radial` gradient brush mode drop down options which is placed in the top of the `ColorPicker` control.
+
+![Switch between solid, linear and gradient brush mode](Getting-Started_images/ColorPicker_Switch_brushes.gif)
 
 ## Selected brush changed notification
 
@@ -238,29 +353,3 @@ private void ColorPicker_SelectedBrushChanged(object sender, SelectedBrushChange
 
 {% endhighlight %}
 {% endtabs %}
-
-## Change color spectrum shapes
-
-You can change the shape of color spectrum to either `Circle` or `Rectangle` by using the [ColorSpectrumShape](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_ColorSpectrumShape) property value as `Ring` or `Box`. The default value of `ColorSpectrumShape` property is `Box`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfColorPicker ColorSpectrumShape="Ring" 
-                          x:Name="colorPicker" />
-
-{% endhighlight %}
-{% highlight C# %}
-
-colorPicker.ColorSpectrumShape = ColorSpectrumShape.Ring;
-
-{% endhighlight %}
-{% endtabs %}
-
-![ColorPicker display the ring shaped color specturms](Getting-Started_images/ColorSpectrumShape.jpg)
-
-## Switch between solid, linear and gradient brush mode
-
-You can change the color selection mode directly by clicking on the corresponding `Solid`, `Linear` or `Radial` gradient brush mode tab buttons which are placed in the top of the `ColorPicker` control.
-
-![Switch between solid, linear and gradient brush mode](Getting-Started_images/ColorPicker_Switch_brushes.gif)
