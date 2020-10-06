@@ -155,9 +155,9 @@ colorPicker.AlphaInputOptions = ColorInputOptions.TextInput;
 
 ![Show opacity value editor](Getting-Started_images/AlphaInputOptions.png)
 
-### Hexa-decimal solid color brush value editor
+### Hexadecimal solid color brush value editor
 
-You can select a solid color brush by entering the hexa-decimal color value to the hexa-decimal value editor. You can also get the selected color hexa-decimal value by using the hexa-decimal value editor. You can hide the hexa-decimal value editor by setting the [IsHexInputVisible](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_IsHexInputVisible) property value as `false`. The default value of `IsHexInputVisible` property is `true`.
+You can select a solid color brush by entering the hexadecimal color value to the hexadecimal value editor. You can also get the selected color hexadecimal value by using the hexadecimal value editor. You can hide the hexadecimal value editor by setting the [IsHexInputVisible](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_IsHexInputVisible) property value as `false`. The default value of `IsHexInputVisible` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -173,7 +173,7 @@ colorPicker.IsHexInputVisible = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Hide the hexa-decimal value editor](Getting-Started_images/IsHexInputVisible.png)
+![Hide the hexadecimal value editor](Getting-Started_images/IsHexInputVisible.png)
 
 ## Select linear gradient color brush
 
