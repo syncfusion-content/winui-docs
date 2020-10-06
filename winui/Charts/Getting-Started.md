@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WinUI Chart | Syncfusion
-description: This section explains the steps required to add the Chart control and binding data in chart control. This section covers only basic features needed to get started with Syncfusion chart control.
+description: This section describes about how to add the Chart control into WinUI application and its basic features.
 platform: WinUI
 control: Chart
 documentation: ug
@@ -13,13 +13,15 @@ This section explains you the steps required to populate the Chart with data, he
 
 ## Adding chart reference
 
-Refer to the [Control Dependencies]() section to get the list of NuGet package that needs to be added as a reference to use the control in any application.
+Install the Syncfusion WinUI Chart nuget from [`nuget.org`](https://www.nuget.org/)
 
-Refer to this [documentation]() to find more details about installing nuget packages in a WinUI application.
+NuGet name : Syncfusion.Chart.WinUI
+
+![gauge nuget reference](Getting-Started_Images/nugetreference.png)
 
 ## Initialize chart
 
-Import the chart namespace as follows in your respective page.
+Import the [`chart`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html) namespace as follows in your respective page.
 
 {% tabs %} 
 
@@ -43,14 +45,14 @@ Then initialize an empty chart with two axes as shown below,
 
 {% highlight xaml %} 
 
- <syncfusion:SfChart> 
+<syncfusion:SfChart> 
       <syncfusion:SfChart.PrimaryAxis> 
            <syncfusion:CategoryAxis /> 
       </syncfusion:SfChart.PrimaryAxis> 
       <syncfusion:SfChart.SecondaryAxis> 
            <syncfusion:NumericalAxis/> 
       </syncfusion:SfChart.SecondaryAxis>
- </syncfusion:SfChart>
+</syncfusion:SfChart>
 
 {% endhighlight %}
 
@@ -74,7 +76,7 @@ Run the project and check if you get following output to make sure you have conf
 
 ![Initializing WinUI Chart](Getting-Started_Images/img1.png)
 
-N> `Chart`supports default axes, so that these axes (`PrimaryAxis` and `SecondaryAxis`) will get generated automatically based upon the data bind to the chart, if you didn’t specify the axes explicitly.
+N> `Chart`supports default axes, so that these axes ([`PrimaryAxis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) and [`SecondaryAxis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis)) will get generated automatically based upon the data bind to the chart, if you didn’t specify the axes explicitly.
 
 ## Initialize view model
 
@@ -158,9 +160,9 @@ this.DataContext = new ViewModel();
 
 ## Populate chart with data
 
-As we are going to visualize the comparison of heights in the data model, add `ColumnSeries` to `SfChart.Series` property, and then bind the `Data` property of the above `ViewModel` to the `ColumnSeries.ItemsSource` as follows.
+As we are going to visualize the comparison of heights in the data model, add [`ColumnSeries`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html) to [`Series`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Series) property of chart, and then bind the `Data` property of the above `ViewModel` to the `ColumnSeries.ItemsSource` as follows.
 
-N> You need to set `XBindingPath`and `YBindingPath` properties, so that chart would fetch values from the respective properties in the data model to plot the series.
+N> You need to set [`XBindingPath`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath) and [`YBindingPath`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.XyDataSeries.html#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties, so that chart would fetch values from the respective properties in the data model to plot the series.
 
 {% tabs %}   
 
@@ -249,7 +251,7 @@ chart.Header = "Chart";
 
 ## Enable data markers
 
-You can add data labels to improve the readability of the chart and it can be enabled using `DataMarker` property of `ChartSeries`. By default, there is no label displayed, you have to set `ShowLabel` property of `ChartDataMarker` to True.
+You can add data labels to improve the readability of the chart and it can be enabled using [`DataMarker`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataMarkerSeries.html#Syncfusion_UI_Xaml_Charts_DataMarkerSeries_DataMarker) property of [`ChartSeries`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataMarkerSeries.html). By default, there is no label displayed, you have to set [`ShowLabel`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_ShowLabel) property of [`ChartDataMarker`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataMarker.html) to True.
 
 {% tabs %} 
 
@@ -279,7 +281,7 @@ series.DataMarker = new ChartDataMarker (){ ShowLabel = true };
 
 ## Enable legend
 
-You can enable legend using the `SfChart.Legend` property as follows.
+You can enable legend using the [`SfChart.Legend`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property as follows.
 
 {% tabs %} 
 
@@ -309,7 +311,7 @@ chart.Legend = new ChartLegend ();
 
 {% endtabs %}  
 
-Additionally, you need to set label for each series using the `Label` property of ChartSeries, which will be displayed in corresponding legend.
+Additionally, you need to set label for each series using the [`Label`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Label) property of ChartSeries, which will be displayed in corresponding legend.
 
 {% tabs %} 
 
@@ -341,7 +343,7 @@ series.Label = "Heights";
 
 ## Enable tooltip
 
-Tooltips are used to show information about the segment, when you click the segment. You can enable tooltip by setting series `ShowTooltip` property to true.
+Tooltips are used to show information about the segment, when you click the segment. You can enable tooltip by setting series [`ShowTooltip`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property to true.
 
 {% tabs %} 
 
