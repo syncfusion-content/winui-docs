@@ -7,9 +7,9 @@ control: TreeView
 documentation: ug
 ---
 
-# WinUI TreeView(SfTreeView) Overview
+# WinUI TreeView Overview
 
-The Syncfusion WinUI TreeView is a data-oriented control that displays data in a hierarchical structure with expanding and collapsing nodes. It is commonly used to illustrate a folder structure, or nested relationships in an application. 
+The Syncfusion WinUI [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) is a data-oriented control that displays data in a hierarchical structure with expanding and collapsing nodes. It is commonly used to illustrate a folder structure, or nested relationships in an application. 
 
 ## Key features
 
