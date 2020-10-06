@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization of Syncfusion WinUI Controls
-description: Syncfusion Essential Studio for WinUI preview includes set of controls for developing line of business applications. It includes datagrid, treegrid, beautiful charts and gauges, treeview, barcode and color picker controls.
+description: Syncfusion Essential Studio for WinUI includes controls for developing Windows apps. It includes grids, charts, gauges, treeview, barcode and color picker.
 platform: winui
 control: Overview
 documentation: ug
@@ -13,7 +13,7 @@ Localization is the process of translating the application resources into differ
 
 ## Changing application culture
 
-When you are changing the application culture, then you can localize the application based on application culture by creating .resw file.
+When you are changing the application culture, then you can localize the application based on application culture by creating `.resw` file.
 
 {% tabs %}
 
@@ -31,9 +31,9 @@ public sealed partial class MainPage
 {% endhighlight %}
 {% endtabs %}
 
-## Creating .resw files
+## Creating `.resw` files
 
-You can create .resw files for any language by following steps,
+You can create `.resw` files for any language by following steps,
 
 1) Right click your project and add new folder named Resources.
 
@@ -41,14 +41,14 @@ You can create .resw files for any language by following steps,
 
 3) Add default resource files of libraries you are using into Resources folder under culture name folder.
 
-![Datagrid resw file](Localization-images/resource.png)
+![SfDatagrid resw file](Localization-images/resource.png)
 
-> Consider you are using SfDataGrid control in your application. Then you need to copy and include Syncfusion.Grid.WinUI.resw (SfDataGrid present in Syncfusion.Grid.WinUI library) file in your application under Resources folder. So, now you can know the key names and values of default strings used in Syncfusion.Grid.WinUI library.
+N> Consider you are using SfDataGrid control in your application. Then you need to copy and include `Syncfusion.Grid.WinUI.resw` (SfDataGrid present in Syncfusion.Grid.WinUI library) file in your application under Resources folder. So, now you can know the key names and values of default strings used in Syncfusion.Grid.WinUI library.
 
 4) Now, you can define the key names from default resource files and assign value based on the culture.
 
-![](Localization-images/key.png)
+![Localized text for SfDataGrid in German](Localization-images/key.png)
 
 ## Editing default culture strings
 
-You can change the default string of any control by adding the default .resw files to Resources folder of your application. Syncfusion WinUI controls reads the default string from the .resw files of application if its added.
+You can change the default string of any control by adding the default `.resw` files to Resources folder of your application. Syncfusion WinUI controls reads the default string from the `.resw` files of application if its added.
