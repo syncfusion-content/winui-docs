@@ -9,7 +9,7 @@ documentation: ug
 
 # Syncfusion WinUI Controls
 
-The Syncfusion WinUI Controls are the suite you ever need to to create state of art WinUI applications.
+The Syncfusion WinUI Controls are the suite you ever need to create state of art WinUI applications.
 
 ## How to best read this user guide
 
