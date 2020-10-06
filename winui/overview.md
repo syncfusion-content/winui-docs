@@ -29,6 +29,10 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
     <tr>
         <td>
             <p>Data Grid</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
             <p>Tree Grid</p>
         </td>
     </tr>
@@ -43,9 +47,18 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
     <tr>
         <td>
             <p>Charts</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
             <p>Radial Gauge</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
             <p>Barcode</p>
         </td>
+    </tr>
     </tr>
 </table>
 
@@ -84,8 +97,20 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
     <tr>
         <td>
             <p>Color Picker</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
             <p>Dropdown Color Picker</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
             <p>Color Picker</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
             <p>Dropdown Color Palette</p>
         </td>
     </tr>
