@@ -317,7 +317,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush | BrushTypeOptio
 {% endhighlight %}
 {% endtabs %}
 
-![Allow only the solid and radial gradient brush mode](Getting-Started_images/BrushTypeOptions.png)
+![Allow only the solid and radial gradient brush mode](Getting-Started_images/BrushTypeOptions.jpg)
 
 You can change the color selection mode directly at runtime by clicking on the corresponding `Solid`, `Linear` or `Radial` gradient brush mode drop down options which is placed in the top of the `ColorPicker` control.
 
