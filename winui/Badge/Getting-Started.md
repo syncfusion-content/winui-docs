@@ -561,7 +561,7 @@ badge.Content = "1";
 
 ## Stroke customization
 
-You can change stroke color and its thickness by using the `Badge.Stroke` and `Badge.StrokeThikness` properties. The default value of `Badge.Stroke` property is `null` and `Badge.StrokeThikness` property is `0`.
+You can change stroke color and its thickness by using the `Badge.Stroke` and `Badge.StrokeThickness` properties. The default value of `Badge.Stroke` property is `null` and `Badge.StrokeThickness` property is `0`.
 
 {% tabs %}
 {% highlight XAML %}
