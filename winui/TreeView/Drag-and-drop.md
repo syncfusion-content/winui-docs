@@ -205,4 +205,4 @@ private void TreeView1_ItemDropped(object sender, Syncfusion.UI.Xaml.TreeView.Tr
 {% endhighlight %}
 {% endtabs %}
 
-![Drag and drop items in WinUI treeview](DragandDrop_images/BetweenTwoTreeView's_image.jpg)
+![Drag and drop items in WinUI treeview](DragandDrop_images/BetweenTwoTreeView_image.jpg)
