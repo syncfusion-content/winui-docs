@@ -7,14 +7,14 @@ control: Barcode
 documentation: ug
 ---
 
-# Getting Started with WinUI Barcode(SfBarcode)
+# Getting Started with WinUI Barcode
 
-This section provides a quick overview for getting started with the `SfBarcode` for WinUI. Walk through the entire process of creating a real world of this control.
+This section provides a quick overview for getting started with the [Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html) for WinUI. Walk through the entire process of creating a real world of this control.
 
-## Creating simple application with SfBarcode
+## Creating simple application with Barcode
 
 * Creating the project
-* Add SfBarcode to Project
+* Add `Barcode` to Project
 * Set the required Barcode using `Symbology` property.
 
 ## Creating an application with WinUI Barcode
@@ -23,15 +23,15 @@ This section provides a quick overview for getting started with the `SfBarcode` 
 
 Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
 
-### Add SfBarcode to Project
+### Add Barcode to Project
 
-The SfBarcode control can be added to project by the following ways.
+The `Barcode` control can be added to project by the following ways.
 
-#### Adding SfBarcode by XAML
+#### Adding Barcode by XAML
 
 1. Add `Syncfusion.Barcode.WinUI` NuGet.
 2. Import `Syncfusion.UI.Xaml.Controls.Barcode` in XAML Page.
-3. Declare `SfBarcode` control in XAML page.
+3. Declare `Barcode` control in XAML page.
 
 The following code example shows how to create the Barcode control from XAML:
 
@@ -56,14 +56,14 @@ The following code example shows how to create the Barcode control from XAML:
 {% endhighlight %}
 {% endtabs %} 
 
-#### Adding SfBarcode by C#
+#### Adding Barcode by C#
 
 In order to add control manually in C#, do the below steps,
 
 1. Add the below required assembly references to the project,
     * Syncfusion.Barcode.WinUI
-2. Import SfBarcode namespace `using Syncfusion.UI.Xaml.Controls.Barcode`.
-3. Create `SfBarcode` control instance and add it to the Page.
+2. Import Barcode namespace `using Syncfusion.UI.Xaml.Controls.Barcode`.
+3. Create `Barcode` control instance and add it to the Page.
 
 {% tabs %} 
 {% highlight C# %} 

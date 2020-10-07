@@ -7,9 +7,9 @@ control: Barcode
 documentation: ug
 ---
 
-# WinUI Barcode(SfBarcode) Overview
+# WinUI Barcode Overview
 
-Syncfusion WinUI Barcode control helps to generate and display data in a machine-readable format. It provides a perfect approach to encode the text using the supported barcode types.
+Syncfusion WinUI [Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html) control helps to generate and display data in a machine-readable format. It provides a perfect approach to encode the text using the supported barcode types.
 
 ![Overview of one dimensional Barcode](Overview_Images/image1.png)
 
