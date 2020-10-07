@@ -13,7 +13,7 @@ The theme affects the colors of the control's background, foreground, border bru
 
 ## Supported themes
 
-Syncfusion WinUI controls supports Light, Dark application themes and also High contrast themes.. 
+Syncfusion WinUI controls supports Light, Dark application themes and High contrast themes. 
 
 **Light theme**
 
@@ -54,11 +54,11 @@ We can change the theme for the whole application using the `RequestedTheme` pro
 {% endhighlight %}
 {% endtabs %}
 
-N> When the `RequestedTheme` property is not set, application will use the user's system settings. When the user set High contrast theme, the system will override the RequestedTheme.
+N> When the `RequestedTheme` property is not set, application will use the user's system settings. When the user set High contrast theme, the system will override the `RequestedTheme`.
 
 ## Applying themes for controls
 
-Themes can also be applied for framework element individually irrespective of the Application level themes. It can be set using the `RequestedTheme` property available in UIElements. When the `RequestedTheme` property is set to `Default` it uses the `Application.RequestedTheme` value for the element.
+Themes can also be applied for framework element individually irrespective of the Application level themes. It can be set using the `RequestedTheme` property available in UIElements. When the `RequestedTheme` property is set to `Default` it uses the `Application.RequestedTheme` value for the elements.
 
 {% tabs %}
 {% highlight xaml %}
@@ -71,7 +71,7 @@ Themes can also be applied for framework element individually irrespective of th
 
         public MainPage()
         {
-            this.RequestedTheme = ElementTheme.Dark;
+            this.datagrid.RequestedTheme = ElementTheme.Dark;
             this.InitializeComponent();
         }
 
