@@ -2,7 +2,7 @@
 layout: post
 title: Overview | SfSfColorPicker | WinUI | Syncfusion
 description: WinUI SfColorPicker control used to notify users of new or unread messages, notifications, or the status of something and different features.
-platform: 
+platform: WinUI
 control: SfColorPicker Control
 documentation: ug
 ---
