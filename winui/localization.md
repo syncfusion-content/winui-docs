@@ -9,11 +9,11 @@ documentation: ug
 
 # Localization of Syncfusion WinUI controls
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the syncfusion WinUI controls by adding resource file for each language.
+Localization is the process of making application multilingual by formatting the content according to the cultures. This involves configuring the application for a specific language. Culture is the combination of language and location. For example, en-US is the culture for English spoken in United States; en-GB is the culture for English spoken in Great Britain.. Syncfusion WinUI controls can be localized by adding resource file for each language.
 
 ## Changing application culture
 
-When you are changing the application culture, then you can localize the application based on application culture by creating .resw file.
+We can change the application culture by assigning the `CultureInfo.CurrentUICulture` to the desired language in the constructor of the Main page. When you are changing the application culture, then you can localize the application based on application culture by creating .resw file.
 
 {% tabs %}
 
@@ -29,6 +29,7 @@ public sealed partial class MainPage
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ## Creating .resw files
@@ -37,9 +38,9 @@ You can create .resw files for any language by following steps,
 
 1) Right click your project and add new folder named Resources.
 
-2) Add another folder and name the folder name as culture name. For example, you have to give name as de for German culture.
+2) Add another folder and name the folder name as culture name. For example, you have to give name as de for German culture. Find the supported culture codes from [here](https://docs.microsoft.com/en-us/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) 
 
-3) Add default resource files of libraries you are using into Resources folder under culture name folder.
+3) Add default resource files in the following structure.
 
 ![SfDatagrid resw file](Localization-images/resource.png)
 
