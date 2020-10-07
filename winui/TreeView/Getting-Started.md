@@ -31,12 +31,10 @@ The `TreeView` control can be added to project by the following ways.
 
 In order to add control manually in XAML, do the below steps,
 
-1. Add the below required assembly references to the project,
-    * Syncfusion.Core.WinUI
-    * Syncfusion.TreeView.WinUI
-    * Syncfusion.GridCommon.WinUI
-2. Import **Syncfusion.UI.Xaml.TreeView** in XAML Page.
-3. Declare `TreeView` control in XAML page.
+1. Create new WinUI Project in Visual Studio to display TreeView with data objects.
+2. Install the `Syncfusion.TreeView.WinUI` NuGet packages.
+3. Import **Syncfusion.UI.Xaml.TreeView** in XAML Page.
+4. Declare `TreeView` control in XAML page.
 
 {% tabs %} 
 {% highlight xaml %} 
@@ -63,12 +61,10 @@ In order to add control manually in XAML, do the below steps,
 
 In order to add control manually in C#, do the below steps,
 
-1. Add the below required assembly references to the project,
-    * Syncfusion.Core.WinUI
-    * Syncfusion.TreeView.WinUI
-    * Syncfusion.GridCommon. WinUI
-2. Import TreeView namespace **using Syncfusion.UI.Xaml.TreeView**.
-3. Create `TreeView` control instance and add it to the Page.
+1. Create new WinUI Project in Visual Studio to display TreeView with data objects.
+2. Install the `Syncfusion.TreeView.WinUI` NuGet packages.
+3. Import TreeView namespace **using Syncfusion.UI.Xaml.TreeView**.
+4. Create `TreeView` control instance and add it to the Page.
 
 {% tabs %} 
 {% highlight C# %} 
