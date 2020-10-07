@@ -25,7 +25,7 @@ documentation: ug
 
 * Predefined and custom shapes for `Badge` control.
 
-* Rotation - Ratate the `Badge` to any angle.
+* Rotation - Rotate the `Badge` to any angle.
 
 * Alignment - Align the `Badge` at any position
 
