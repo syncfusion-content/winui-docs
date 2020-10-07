@@ -9,23 +9,23 @@ documentation: ug
 
 # Themes for Syncfusion WinUI Controls
 
-The theme affects the colors of the control's background, foreground, border brush and padding, margin, font etc.
+Themes provides a sense of visual continuity for the Windows apps. It allows us to customize the appearance of the application. The theme affects the colors of the control's background, foreground, border brush, font etc. 
 
 ## Supported themes
 
-Syncfusion WinUI controls supports Light, Dark application themes and High contrast themes. 
+Syncfusion WinUI controls supports Light and Dark themes. 
 
 **Light theme**
 
 ![Light theme for WinUI controls](themes-images/light.png)
 
 **Dark Theme**
-
+    
 ![Dark theme for WinUI controls](themes-images/dark.png)
 
-## Applying the theme at application level
+## Applying themes at application level
 
-We can change the theme for the whole application using the `RequestedTheme` property available in App.xaml 
+We can change theme for the whole application using the `RequestedTheme` property available in App.xaml. Syncfusion control adopts to theme setting, when it is applied through `RequestedTheme` property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -54,11 +54,11 @@ We can change the theme for the whole application using the `RequestedTheme` pro
 {% endhighlight %}
 {% endtabs %}
 
-N> When the `RequestedTheme` property is not set, application will use the user's system settings. When the user set High contrast theme, the system will override the `RequestedTheme`.
+N> When the `RequestedTheme` property is not set, application will use the user's system settings.
 
 ## Applying themes for controls
 
-Themes can also be applied for framework element individually irrespective of the Application level themes. It can be set using the `RequestedTheme` property available in UIElements. When the `RequestedTheme` property is set to `Default` it uses the `Application.RequestedTheme` value for the elements.
+Themes can also be applied for each framework element individually irrespective of the Application level themes. It can be set using the `RequestedTheme` property available in UIElements. When the `RequestedTheme` property is set to `Default` it uses the `Application.RequestedTheme` value for the elements.
 
 {% tabs %}
 {% highlight xaml %}
