@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Theme support for Syncfusion WinUI Controls
-description: Learn how to configure themes for Syncfusion WinUI controls.
+description: Explains about the supported themes and learn how to configure themes for Syncfusion WinUI controls.
 platform: winui
 control: Themes
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Themes for Syncfusion WinUI Controls
 
-The theme affects the colors of the control's background, foreground, BorderBrush and Padding, Margin, Font etc.
+The theme affects the colors of the control's background, foreground, border brush and padding, margin, font etc.
 
 ## Supported themes
 
