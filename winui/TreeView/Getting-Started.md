@@ -13,7 +13,7 @@ This section provides a quick overview for getting started with the [TreeView](h
 
 ## Creating an application with WinUI TreeView
 
-1. Create new WinUI Project in Visual Studio to display TreeView with data objects.
+1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
 2. Install the [Syncfusion.TreeView.WinUI](https://www.nuget.org/packages/Syncfusion.TreeView.WinUI) NuGet packages.
 3. Declare the namespace in XAML.
 4. Initialize the TreeView control.
