@@ -13,13 +13,13 @@ This section explains the steps required to add the DataGrid control and binding
 
 ## Creating an application with WinUI DataGrid
 
-1.	Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
+1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
 
-2.	Add reference to [Syncfusion.Grid.WinUI](https://www.nuget.org/packages/Syncfusion.Grid.WinUI) NuGet. 
+2. Add reference to [Syncfusion.Grid.WinUI](https://www.nuget.org/packages/Syncfusion.Grid.WinUI) NuGet. 
 
-3.	Import the control namespace `Syncfusion.UI.Xaml.DataGrid`  in XAML or C# code.
+3. Import the control namespace `Syncfusion.UI.Xaml.DataGrid`  in XAML or C# code.
 
-4.	Initialize the SfDataGrid control.
+4. Initialize the SfDataGrid control.
 
 {% tabs %}
 {% highlight xaml %}
