@@ -13,13 +13,14 @@ This section explains the steps required to add the TreeGrid control and binding
 
 ## Creating an application with WinUI TreeGrid
 
-1. Create new WinUI Project in Visual Studio to display TreeGrid with data objects.
+1.	Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
 
-2. Install the `Syncfusion.Grid.WinUI` NuGet packages.
+2.	Add reference to [Syncfusion.Grid.WinUI](https://www.nuget.org/packages/Syncfusion.Grid.WinUI) NuGet. 
 
-3. Declare the namespace in XAML.
+3.	Import the control namespace `Syncfusion.UI.Xaml.TreeGrid`  in XAML or C# code.
 
-4. Initialize the SfTreeGrid control.
+4.	Initialize the SfTreeGrid control.
+
 
 {% tabs %}
 {% highlight xaml %}
@@ -36,23 +37,12 @@ This section explains the steps required to add the TreeGrid control and binding
     <Page.DataContext>
         <local:ViewModel/>
     </Page.DataContext>
-    <Grid>
+    <Grid x:Name="Root_Grid">
         <syncfusion:SfTreeGrid x:Name="sfTreeGrid" />
     </Grid>
 </Page>
 
 {% endhighlight %}
-{% endtabs %}
-
-### Adding control manually in C\#
-
-In order to add control manually in C#, do the below steps,
-
-1. Install the `Syncfusion.Grid.WinUI` NuGet package.
-2. Import SfTreeGrid namespace **Syncfusion.UI.Xaml.TreeGrid** .
-3. Create SfTreeGrid control instance and add it to the Page.
-
-{% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.TreeGrid;
 namespace GettingStarted
@@ -422,7 +412,7 @@ namespace GettingStarted
 ![Binding nested-collection with SfTreeGrid](Getting-Started-images/Getting-Started-image2.png)
 
 
-### Defining Columns
+## Defining Columns
 
 By default, the SfTreeGrid control generates the columns automatically when value assigned to `SfTreeGrid.ItemsSource` property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with.
 
@@ -540,21 +530,21 @@ Represents SfDataGrid column that hosts template-specified content in its cells
 </tr>
 </table>
 
-### Selection
+## Selection
 
 By default, the entire row is selected when a user clicks a cell in a SfTreeGrid. You can set the `SfTreeGrid.SelectionMode` property to specify whether a user can select single row or cell, or multiple rows or cells. 
 You can handle the selection operations with the help of `SfTreeGrid.SelectionChanging` and `SfTreeGrid.SelectionChanged` events.
 
-### Sorting
+## Sorting
 
 By default, you can sort columns in a SfTreeGrid by clicking the column header. You can configure the sorting by setting `SfTreeGrid.SortColumnDescriptions` property.
 You can customize sorting by handling the `SfTreeGrid.SortColumnChanging` and `SfTreeGrid.SortColumnChanged` events. To cancel the default sort, set the Cancel property to true in `SfTreeGrid.SortColumnChanging` event.
 
-### Editing
+## Editing
 
 Editing can be enabled by setting `SfTreeGrid.AllowEditing` property to True. You can customize the editing operations by handling `SfTreeGrid.CurrentCellBeginEdit` and `SfTreeGrid.CurrentCellEndEdit` events.
 
-### Filtering
+## Filtering
 
 Filtering can be enabled by setting the `SfTreeGrid.AllowFiltering` property to true, where advanced filter UI can be opened by clicking the filter icon in column header to filter the nodes in SfTreeGrid. The filtering operations can be customized by handling the `SfTreeGrid.FilterChanging` and `SfTreeGrid.FilterChanged` events.
 
