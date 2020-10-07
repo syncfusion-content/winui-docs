@@ -33,7 +33,7 @@ This section explains the steps required to add the DataGrid control and binding
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.DataGrid"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Grid x:Name="Root_Grid">
+    <Grid x:Name="rootGrid">
     <syncfusion:SfDataGrid x:Name="sfDataGrid" />
     </Grid>
 </Page>
@@ -52,7 +52,7 @@ namespace GettingStarted
         {
             this.InitializeComponent();
             SfDataGrid sfDataGrid = new SfDataGrid();
-            Root_Grid.Children.Add(sfDataGrid);
+            rootGrid.Children.Add(sfDataGrid);
         }
     }
 }

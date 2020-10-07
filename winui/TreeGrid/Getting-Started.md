@@ -37,7 +37,7 @@ This section explains the steps required to add the TreeGrid control and binding
     <Page.DataContext>
         <local:ViewModel/>
     </Page.DataContext>
-    <Grid x:Name="Root_Grid">
+    <Grid x:Name="rootGrid">
         <syncfusion:SfTreeGrid x:Name="sfTreeGrid" />
     </Grid>
 </Page>
@@ -56,7 +56,7 @@ namespace GettingStarted
         {
             this.InitializeComponent();
             SfTreeGrid sfTreeGrid = new SfTreeGrid();
-            Root_Grid.Children.Add(sfTreeGrid);
+            rootGrid.Children.Add(sfTreeGrid);
         }
     }
 }
