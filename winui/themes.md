@@ -81,10 +81,6 @@ Themes can also be applied for framework element individually irrespective of th
 N> When the RequestedTheme value is set on a FrameworkElement, it will inherit to any elements that are nested within the element.
 
 
-## Overriding control themes
-
-We can override the control themes by following the below guidelines, 
-
 
 
 
