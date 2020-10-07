@@ -13,7 +13,7 @@ Localization is the process of translating the application resources into differ
 
 ## Changing application culture
 
-When you are changing the application culture, then you can localize the application based on application culture by creating `.resw` file.
+When you are changing the application culture, then you can localize the application based on application culture by creating .resw file.
 
 {% tabs %}
 
@@ -31,9 +31,9 @@ public sealed partial class MainPage
 {% endhighlight %}
 {% endtabs %}
 
-## Creating `.resw` files
+## Creating .resw files
 
-You can create `.resw` files for any language by following steps,
+You can create .resw files for any language by following steps,
 
 1) Right click your project and add new folder named Resources.
 
@@ -51,4 +51,4 @@ N> Consider you are using SfDataGrid control in your application. Then you need 
 
 ## Editing default culture strings
 
-You can change the default string of any control by adding the default `.resw` files to Resources folder of your application. Syncfusion WinUI controls reads the default string from the `.resw` files of application if its added.
+You can change the default string of any control by adding the default .resw files to Resources folder of your application. Syncfusion WinUI controls reads the default string from the .resw files of application if its added.
