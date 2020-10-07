@@ -9,7 +9,7 @@ documentation: ug
 
 # Syncfusion WinUI Controls
 
-The Syncfusion WinUI Controls are the suite you ever need to to create state of art WinUI applications. 
+The Syncfusion WinUI Controls are the suite you ever need to create state of art WinUI applications.
 
 ## How to best read this user guide
 
@@ -21,95 +21,70 @@ The Syncfusion WinUI Controls are the suite you ever need to to create state of 
 ## Controls List
 
 <table>
-<tr>
-<td colspan="3">
-<b>GRIDS</b>
-</td>
-</tr>
-<tr>
-<td>
-<p>DataGrid
-<small> - SfDataGrid</small></p>
-</td>
-<td>
-<p>TreeGrid
-<small> - SfTreeGrid</small></p>
-</td>
-<td/>
-</tr>
-
-<tr>
-<td colspan="3">
-<b>DATA VISUALIZATION</b>
-</td>
-</tr>
-<tr>
-<td>
-<p>Charts
-<small> - SfChart</small></p>
-</td>
-<td>
-<p>Ragial Gauge
-<small> - SfRadialGauge</small></p>
-</td>
-<td>
-<p>Barcode
-<small> - SfBarcode</small></p>
-</td>
-</tr>
-
-<tr>
-<td colspan="3">
-<b>NAVIGATION</b>
-</td>
-</tr>
-<tr>
-<td colspan="3">
-<p>TreeView
-<small> - SfTreeView</small></p>
-</td>
-</tr>
-
-<tr>
-<td colspan="3">
-<b>NOTIFICATION</b>
-</td>
-</tr>
-<tr>
-<td colspan="3">
-<p>Badge
-<small> - SfBadge</small></p>
-</td>
-</tr>
-
-
-<tr>
-<td colspan="3">
-<b>EDITORS</b>
-</td>
-</tr>
-<tr>
-<td>
-<p>ColorPicker
-<small> - SfColorPicker</small></p>
-</td>
-<td>
-<p>Dropdown Color Picker
-<small> - SfDropDownColorPicker</small></p>
-</td>
-<td>
-<p>Barcode
-<small> - SfColorPalette</small></p>
-</td>
-</tr>
-
-<tr>
-<td>
-<p>Dropdown Color Palette
-<small> - SfDropDownColorPalette</small></p>
-</td>
-<td/>
-<td/>
-</tr>
-
+    <tr>
+        <td>
+            <b>GRIDS</b>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Data Grid</p>
+        </td>
+        <td>
+            <p>Tree Grid</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>DATA VISUALIZATION</b>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Charts</p>
+        </td>
+        <td>
+            <p>Radial Gauge</p>
+        </td>
+        <td>
+            <p>Barcode</p>
+        </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>
+            <b>NAVIGATION & NOTIFICATION</b>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Tree View</p>
+        </td>
+        <td>
+            <p>Badge</p>
+        </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>
+            <b>EDITORS</b>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Color Picker</p>
+        </td>
+        <td>
+            <p>Dropdown Color Picker</p>
+        </td>
+        <td>
+            <p>Color Palette</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Dropdown Color Palette</p>
+        </td>
+    </tr>
 </table>
+

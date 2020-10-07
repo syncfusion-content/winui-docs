@@ -45,10 +45,10 @@ To add the `Badge` control manually in XAML, follow these steps:
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Notifications">
     <Grid>
-        <syncfusion:Badge Name="badge" 
-                          Content="99+"
-                          Height="30"
-                          Width="30"/>
+        <syncfusion:SfBadge Name="badge" 
+                            Content="99+"
+                            Height="30"
+                            Width="30"/>
     </Grid>
 </Page>
 
@@ -101,8 +101,8 @@ Here, `Badge` control added for the `Button` control.
 
 <syncfusion:BadgeContainer Name="badgeContainer"  >
     <syncfusion:BadgeContainer.Badge>
-        <syncfusion:Badge Name="badge" 
-                          Content="10"/>
+        <syncfusion:SfBadge Name="badge" 
+                            Content="10"/>
     </syncfusion:BadgeContainer.Badge>
     <syncfusion:BadgeContainer.Content>
         <Button Content="Inbox">
@@ -185,7 +185,7 @@ public class ViewModel {
                                       Grid.Column="0" 
                                       Content="{Binding ItemName}" 
                                       VerticalAlignment="Center"/>
-                    <syncfusion:Badge 
+                    <syncfusion:SfBadge 
                                       x:Name="badge4"
                                       Grid.Column="1" 
                                       Height="20" 
@@ -193,7 +193,7 @@ public class ViewModel {
                                       Content="{Binding UnreadMessageount}"
                                       Shape="Oval"
                                       Fill="Warning">
-                    </syncfusion:Badge>
+                    </syncfusion:SfBadge>
                 </Grid>
             </DataTemplate>
         </ListView.ItemTemplate>
@@ -214,8 +214,8 @@ If you want to set or change the display content of the `Badge`, use the `Badge.
 
 <syncfusion:BadgeContainer Name="badgeContainer"  >
     <syncfusion:BadgeContainer.Badge>
-        <syncfusion:Badge  Name="badge" 
-                           Content="99+"/>
+        <syncfusion:SfBadge  Name="badge" 
+                             Content="99+"/>
     </syncfusion:BadgeContainer.Badge>
     <syncfusion:BadgeContainer.Content>
         <Button Content="Inbox">
@@ -250,17 +250,17 @@ You can change the appearance of `Badge` content by using `Badge.ContentTemplate
 
 <syncfusion:BadgeContainer Name="badgeContainer"  >
     <syncfusion:BadgeContainer.Badge>
-        <syncfusion:Badge  Name="badge" 
-                           Content="10">                
-            <syncfusion:Badge.ContentTemplate>
+        <syncfusion:SfBadge  Name="badge" 
+                             Content="10">                
+            <syncfusion:SfBadge.ContentTemplate>
                 <DataTemplate>
                     <Grid Background="Yellow">
                         <TextBlock Text="{Binding}" 
                                    Foreground="Red"/>
                     </Grid>
                 </DataTemplate>
-            </syncfusion:Badge.ContentTemplate>
-        </syncfusion:Badge>
+            </syncfusion:SfBadge.ContentTemplate>
+        </syncfusion:SfBadge>
     </syncfusion:BadgeContainer.Badge>
     <syncfusion:BadgeContainer.Content>
         <Button Content="Inbox">
@@ -331,10 +331,10 @@ you can align the `Badge` either horizontally or vertically by using the `Badge.
 
 <syncfusion:BadgeContainer Name="badgeContainer"  >
     <syncfusion:BadgeContainer.Badge>
-        <syncfusion:Badge HorizontalAlignment="Left"
-                          VerticalAlignment="Center"
-                          Content="99+"
-                          Name="badge"/>
+        <syncfusion:SfBadge HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Content="99+"
+                            Name="badge"/>
     </syncfusion:BadgeContainer.Badge>
     <syncfusion:BadgeContainer.Content>
         <Button Content="Inbox">
@@ -363,10 +363,10 @@ You can change the horizontal or vertical position of the `Badge` either inside,
 
 <syncfusion:BadgeContainer Name="badgeContainer"  >
     <syncfusion:BadgeContainer.Badge>
-        <syncfusion:Badge HorizontalAnchor="Outside"
-                          VerticalAnchor="Center"
-                          Content="99+"
-                          Name="badge"/>
+        <syncfusion:SfBadge HorizontalAnchor="Outside"
+                            VerticalAnchor="Center"
+                            Content="99+"
+                            Name="badge"/>
     </syncfusion:BadgeContainer.Badge>
     <syncfusion:BadgeContainer.Content>
         <Button Content="Inbox">
@@ -413,9 +413,9 @@ The `Badge` supports the following different essential states :
 
 <syncfusion:BadgeContainer Name="badgeContainer"  >
     <syncfusion:BadgeContainer.Badge>
-        <syncfusion:Badge Fill="Success"
-                          Content="99+"
-                          Name="badge"/>
+        <syncfusion:SfBadge Fill="Success"
+                            Content="99+"
+                            Name="badge"/>
     </syncfusion:BadgeContainer.Badge>
     <syncfusion:BadgeContainer.Content>
         <Button Content="Inbox">
@@ -443,10 +443,10 @@ If you want to change the background color of the `Badge` other than the default
 
 <syncfusion:BadgeContainer Name="badgeContainer"  >
     <syncfusion:BadgeContainer.Badge>
-        <syncfusion:Badge Background="Black"
-                          Foreground="Yellow"
-                          Content="99+"
-                          Name="badge"/>
+        <syncfusion:SfBadge Background="Black"
+                            Foreground="Yellow"
+                            Content="99+"
+                            Name="badge"/>
     </syncfusion:BadgeContainer.Badge>
     <syncfusion:BadgeContainer.Content>
         <Button Content="Inbox">
@@ -475,9 +475,9 @@ You can change the default shape to either `Rectangle`, `Oval` or `Ellipse` by u
 
 <syncfusion:BadgeContainer Name="badgeContainer"  >
     <syncfusion:BadgeContainer.Badge>
-        <syncfusion:Badge Shape="Oval"
-                          Content="99+"
-                          Name="badge"/>
+        <syncfusion:SfBadge Shape="Oval"
+                            Content="99+"
+                            Name="badge"/>
     </syncfusion:BadgeContainer.Badge>
     <syncfusion:BadgeContainer.Content>
         <Button Content="Inbox">
@@ -505,11 +505,11 @@ If you want to change the shape of the `Badge` other than the default shapes, us
 
 <syncfusion:BadgeContainer Name="badgeContainer"  >
     <syncfusion:BadgeContainer.Badge>
-        <syncfusion:Badge Shape="Custom" 
-                          CustomShape="M 300 100 L 500 400 100 400 Z"
-                          Content="10"
-                          Width="50" Height="30"
-                          Name="badge"/>
+        <syncfusion:SfBadge Shape="Custom" 
+                            CustomShape="M 300 100 L 500 400 100 400 Z"
+                            Content="10"
+                            Width="50" Height="30"
+                            Name="badge"/>
     </syncfusion:BadgeContainer.Badge>
     <syncfusion:BadgeContainer.Content>
         <Button Content="Inbox">
@@ -531,10 +531,10 @@ You can enable the `Scale` or `Opacity` based animation for displaying the `Badg
 
 <syncfusion:BadgeContainer Name="badgeContainer"  >
     <syncfusion:BadgeContainer.Badge>
-        <syncfusion:Badge AnimationType="Scale"
-                          Background="Red"
-                          Content="1"
-                          Name="badge"/>
+        <syncfusion:SfBadge AnimationType="Scale"
+                            Background="Red"
+                            Content="1"
+                            Name="badge"/>
     </syncfusion:BadgeContainer.Badge>
     <syncfusion:BadgeContainer.Content>
         <Button Content="Inbox">
@@ -561,17 +561,17 @@ badge.Content = "1";
 
 ## Stroke customization
 
-You can change stroke color and its thickness by using the `Badge.Stroke` and `Badge.StrokeThikness` properties. The default value of `Badge.Stroke` property is `null` and `Badge.StrokeThikness` property is `0`.
+You can change stroke color and its thickness by using the `Badge.Stroke` and `Badge.StrokeThickness` properties. The default value of `Badge.Stroke` property is `null` and `Badge.StrokeThickness` property is `0`.
 
 {% tabs %}
 {% highlight XAML %}
 
 <syncfusion:BadgeContainer Name="badgeContainer"  >
     <syncfusion:BadgeContainer.Badge>
-        <syncfusion:Badge Stroke="Red"
-                          StrokeThickness="3"
-                          Content="99+"
-                          Name="badge"/>
+        <syncfusion:SfBadge Stroke="Red"
+                            StrokeThickness="3"
+                            Content="99+"
+                            Name="badge"/>
     </syncfusion:BadgeContainer.Badge>
     <syncfusion:BadgeContainer.Content>
         <Button Content="Inbox">
@@ -600,9 +600,9 @@ You can hide the `Badge` by setting the `Badge.Visibility` property value as `Co
 
 <syncfusion:BadgeContainer Name="badgeContainer"  >
     <syncfusion:BadgeContainer.Badge>
-        <syncfusion:Badge Visibility="Collapsed"
-                          Content="99+"
-                          Name="badge"/>
+        <syncfusion:SfBadge Visibility="Collapsed"
+                            Content="99+"
+                            Name="badge"/>
     </syncfusion:BadgeContainer.Badge>
     <syncfusion:BadgeContainer.Content>
         <Button Content="Inbox">
@@ -677,9 +677,9 @@ public class CustomNumberConverter : IValueConverter {
     
     <syncfusion:BadgeContainer Name="badgeContainer">
         <syncfusion:BadgeContainer.Badge>
-            <syncfusion:Badge  Name="badge"
-                               Background="Red"
-                               Content="{x:Bind badgeContent.Text, 
+            <syncfusion:SfBadge  Name="badge"
+                                 Background="Red"
+                                 Content="{x:Bind badgeContent.Text, 
                                                 Mode=OneWay, 
                                                 Converter={StaticResource 
                                                 customNumberConverter}}"/>
@@ -714,10 +714,10 @@ You can change the size of `Badge` by using the `Badge.Width` and `Badge.Height`
 
 <syncfusion:BadgeContainer Name="badgeContainer"  >
     <syncfusion:BadgeContainer.Badge>
-        <syncfusion:Badge Width="60" 
-                          Height="60" 
-                          Content="99+"
-                          Name="badge"/>
+        <syncfusion:SfBadge Width="60" 
+                            Height="60" 
+                            Content="99+"
+                            Name="badge"/>
     </syncfusion:BadgeContainer.Badge>
     <syncfusion:BadgeContainer.Content>
         <Button Content="Inbox">
@@ -746,10 +746,10 @@ you can place the `Badge` content either horizontally or vertically by using the
 
 <syncfusion:BadgeContainer Name="badgeContainer"  >
     <syncfusion:BadgeContainer.Badge>
-        <syncfusion:Badge HorizontalContentAlignment="Right"
-                          VerticalContentAlignment="Top"
-                          Content="99+"
-                          Name="badge"/>
+        <syncfusion:SfBadge HorizontalContentAlignment="Right"
+                            VerticalContentAlignment="Top"
+                            Content="99+"
+                            Name="badge"/>
     </syncfusion:BadgeContainer.Badge>
     <syncfusion:BadgeContainer.Content>
         <Button Content="Inbox">
@@ -778,11 +778,11 @@ You can change the style, size and font family of the `Badge` display content by
 
 <syncfusion:BadgeContainer Name="badgeContainer"  >
     <syncfusion:BadgeContainer.Badge>
-        <syncfusion:Badge  Name="badge"
-                           FontFamily="Perpetua"
-                           FontSize="20"
-                           FontStyle="Oblique" 
-                           Content="99+"/>
+        <syncfusion:SfBadge  Name="badge"
+                             FontFamily="Perpetua"
+                             FontSize="20"
+                             FontStyle="Oblique" 
+                             Content="99+"/>
     </syncfusion:BadgeContainer.Badge>
     <syncfusion:BadgeContainer.Content>
         <Button Content="Inbox">
@@ -812,9 +812,9 @@ You can place the `Badge` with a specific rotation angle by using the `Rotation`
 
 <syncfusion:BadgeContainer Name="badgeContainer"  >
     <syncfusion:BadgeContainer.Badge>
-        <syncfusion:Badge Rotation="30"
-                          Content="99+"
-                          Name="badge"/>
+        <syncfusion:SfBadge Rotation="30"
+                            Content="99+"
+                            Name="badge"/>
     </syncfusion:BadgeContainer.Badge>
     <syncfusion:BadgeContainer.Content>
         <Button Content="Inbox">
@@ -842,9 +842,9 @@ You can change opacity of the `Badge` by using the `Opacity` property. The defau
 
 <syncfusion:BadgeContainer Name="badgeContainer"  >
     <syncfusion:BadgeContainer.Badge>
-        <syncfusion:Badge Opacity="0.6"
-                          Content="99+"
-                          Name="badge"/>
+        <syncfusion:SfBadge Opacity="0.6"
+                            Content="99+"
+                            Name="badge"/>
     </syncfusion:BadgeContainer.Badge>
     <syncfusion:BadgeContainer.Content>
         <Button Content="Inbox">
