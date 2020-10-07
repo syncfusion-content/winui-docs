@@ -9,13 +9,13 @@ documentation: ug
 
 # Getting Started with WinUI TreeView
 
-This section provides a quick overview for getting started with the [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) for WinUI. Walk through the entire process of creating a real world of this control.
+This section explains the steps required to add the [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) control and binding data in Treeview control. This section covers only basic features needed to get started with Syncfusion TreeView control.
 
 ## Creating an application with WinUI TreeView
 
 1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
 2. Install the [Syncfusion.TreeView.WinUI](https://www.nuget.org/packages/Syncfusion.TreeView.WinUI) NuGet packages.
-3. Declare the namespace in XAML.
+3. Declare the namespace `Syncfusion.UI.Xaml.TreeView` in XAML.
 4. Initialize the TreeView control.
 
 {% tabs %} 
@@ -44,7 +44,7 @@ This section provides a quick overview for getting started with the [TreeView](h
 In order to add control manually in C#, do the below steps,
 
 1. Install the [Syncfusion.TreeView.WinUI](https://www.nuget.org/packages/Syncfusion.TreeView.WinUI) NuGet packages.
-2. Import TreeView namespace **using Syncfusion.UI.Xaml.TreeView**.
+2. Import TreeView namespace `using Syncfusion.UI.Xaml.TreeView`.
 3. Create TreeView control instance and add it to the Page.
 
 {% tabs %} 
