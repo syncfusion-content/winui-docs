@@ -473,5 +473,5 @@ The following chart is created as a result of the previous codes.
 
 ![Getting Started WinUI Chart](Getting-Started_images/img3.png)
 
-You can find the complete getting started sample from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Chart_GettingStarted-1703269833.zip).
+N> Download demo application from [`GitHub`](https://github.com/SyncfusionExamples/GettingStartedChartWinUI)
 
