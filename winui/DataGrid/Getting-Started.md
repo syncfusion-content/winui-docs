@@ -13,11 +13,11 @@ This section explains the steps required to add the DataGrid control and binding
 
 ## Creating an application with WinUI DataGrid
 
-1. Create new WinUI Project in Visual Studio to display DataGrid with data objects.
+1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
 
-2. Install the `Syncfusion.Grid.WinUI` NuGet packages.
+2. Add reference to [Syncfusion.Grid.WinUI](https://www.nuget.org/packages/Syncfusion.Grid.WinUI) NuGet. 
 
-3. Declare the namespace in XAML.
+3. Import the control namespace `Syncfusion.UI.Xaml.DataGrid`  in XAML or C# code.
 
 4. Initialize the SfDataGrid control.
 
@@ -33,21 +33,12 @@ This section explains the steps required to add the DataGrid control and binding
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.DataGrid"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid x:Name="rootGrid">
     <syncfusion:SfDataGrid x:Name="sfDataGrid" />
+    </Grid>
 </Page>
 
 {% endhighlight %}
-{% endtabs %}
-
-### Adding control manually in C\#
-
-In order to add control manually in C#, do the below steps,
-
-1. Install the `Syncfusion.Grid.WinUI` NuGet package.
-2. Import SfDataGrid namespace **Syncfusion.UI.Xaml.DataGrid** .
-3. Create SfDataGrid control instance and add it to the Page.
-
-{% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.DataGrid;
 namespace GettingStarted
@@ -61,7 +52,7 @@ namespace GettingStarted
         {
             this.InitializeComponent();
             SfDataGrid sfDataGrid = new SfDataGrid();
-            Root_Grid.Children.Add(sfDataGrid);
+            rootGrid.Children.Add(sfDataGrid);
         }
     }
 }
@@ -346,7 +337,7 @@ By default, the entire row is selected when a user clicks a cell in a SfDataGrid
 
 You can handle the selection operations with the help of `SfDataGrid.SelectionChanging` and `SfDataGrid.SelectionChanged` events of SfDataGrid.
 
-### Sorting
+## Sorting
 
 By default, you can sort columns in a SfDataGrid by clicking the column header. You can configure the sorting by setting `SfDataGrid.SortColumnDescriptions` property as below,
 
@@ -378,7 +369,7 @@ private void SfDataGrid_SortColumnsChanging(object sender, GridSortColumnsChangi
 {% endhighlight %}
 {% endtabs %}
 
-### Grouping
+## Grouping
 
 Grouping can be enabled by setting `SfDataGrid.ShowGroupDropArea` property, where you can group by dragging the column header and dropping it in the `GroupDropArea` over the column headers. You can configure the grouping by setting `SfDataGrid.GroupColumnDescriptions` property as below,
 
@@ -400,7 +391,7 @@ Grouping can be enabled by setting `SfDataGrid.ShowGroupDropArea` property, wher
 Editing can be enabled by setting `SfDataGrid.AllowEditing` property to `true`. 
 You can customize the editing operations by handling `SfDataGrid.CurrentCellBeginEdit` and `SfDataGrid.CurrentCellEndEdit` events.
 
-### Filtering
+## Filtering
 
 Filtering can be enabled by setting `SfDataGrid.AllowFiltering` property to `true`, where you can open advanced filter UI by clicking the Filter icon in column header and filter the SfDataGrid. You can customize the filtering operations by handling `SfDataGrid.FilterChanging` and `SfDataGrid.FilterChanged` events.
 
