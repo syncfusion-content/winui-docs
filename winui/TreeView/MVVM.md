@@ -35,11 +35,12 @@ This section explains about how to work with MVVM pattern in [TreeView](https://
         <local:GettingStartedViewModel />
 </Page.DataContext>
 
-<syncfusion:SfTreeView x:Name="treeView"
-                            AutoExpandMode="AllNodes" 
-                            ChildPropertyName="Childs"                                            
-                            ItemsSource="{Binding Collections}"
-                            SelectedItem="{Binding SelectedNode}">
+<Grid>
+    <syncfusion:SfTreeView x:Name="treeView"
+                       AutoExpandMode="AllNodes" 
+                       ChildPropertyName="Childs"                                            
+                       ItemsSource="{Binding Collections}"
+                       SelectedItem="{Binding SelectedNode}">
                 <syncfusion:SfTreeView.ItemTemplate>
                     <DataTemplate>
                         <Grid >
@@ -48,7 +49,8 @@ This section explains about how to work with MVVM pattern in [TreeView](https://
                         </Grid>
                     </DataTemplate>
                 </syncfusion:SfTreeView.ItemTemplate>
-</syncfusion:SfTreeView>
+    </syncfusion:SfTreeView>
+</Grid>
 </Page>
 
 {% endhighlight %}

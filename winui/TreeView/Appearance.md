@@ -293,7 +293,12 @@ The `TreeView` allows you to customize the style of [TreeViewItem](https://help.
         <local:NodeWithImageViewModel />
     </Page.DataContext>
 
-    <syncfusion:SfTreeView x:Name="treeView"
+    <Page.Resources>
+        <local:FontAttributeConverter x:Key="FontAttributeConverter" />
+    </Page.Resources>
+
+    <Grid>
+        <syncfusion:SfTreeView x:Name="treeView"
                            ChildPropertyName="Files"
                            ItemTemplateDataContextType="Node"
                            ItemsSource="{Binding Folders}">
@@ -307,7 +312,8 @@ The `TreeView` allows you to customize the style of [TreeViewItem](https://help.
                             </StackPanel>
                         </DataTemplate>
                     </syncfusion:SfTreeView.ItemTemplate>
-    </syncfusion:SfTreeView>
+        </syncfusion:SfTreeView>
+    </Grid>
 </Page>
 
 {% endhighlight %}
