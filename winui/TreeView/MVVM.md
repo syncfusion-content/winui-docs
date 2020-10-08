@@ -32,15 +32,15 @@ This section explains about how to work with MVVM pattern in [TreeView](https://
       NavigationCacheMode="Disabled">
 
 <Page.DataContext>
-        <local:GettingStartedViewModel />
+        <local:SelectionViewModel />
 </Page.DataContext>
 
 <Grid>
     <syncfusion:SfTreeView x:Name="treeView"
-                       AutoExpandMode="AllNodes" 
-                       ChildPropertyName="Childs"                                            
-                       ItemsSource="{Binding Collections}"
-                       SelectedItem="{Binding SelectedNode}">
+                           AutoExpandMode="AllNodes" 
+                           ChildPropertyName="Childs"                                            
+                           ItemsSource="{Binding Collections}"
+                           SelectedItem="{Binding SelectedNode}">
                 <syncfusion:SfTreeView.ItemTemplate>
                     <DataTemplate>
                         <Grid >
@@ -62,51 +62,52 @@ treeView.SetBinding(SfTreeView.SelectedItemProperty, new Binding("SelectedNode")
 {% tabs %}
 {% highlight c# %}
 
-public class GettingStartedViewModel : NotificationObject
+public class SelectionViewModel : NotificationObject
 {
-    public GettingStartedViewModel()
+  
+    public SelectionViewModel()
     {
-        Collections = new ObservableCollection<GettingStartedModel>();
+        Collections = new ObservableCollection<SelectionModel>();
         PopulateCollections();
     }
+   
+    public ObservableCollection<SelectionModel> Collections { get; internal set; }
 
-    public ObservableCollection<GettingStartedModel> Collections { get; internal set; }
-
-    public object SelectedNodes { get; internal set; }
-
+    public object SelectedNode { get; internal set; }
+   
     void PopulateCollections()
     {
-        var RootNode1 = new GettingStartedModel { Header = "Work Documents" };
-        var RootNode2 = new GettingStartedModel { Header = "Personal Folder" };
+        var RootNode1 = new SelectionModel { Header = "Work Documents"};
+        var RootNode2 = new SelectionModel { Header = "Personal Folder"};
 
-        var ChildNode1 = new GettingStartedModel { Header = "Functional Specifications” };
-        var ChildNode2 = new GettingStartedModel { Header = "TreeView spec"};
-        var ChildNode3 = new GettingStartedModel { Header = "Feature Schedule"};
-        var ChildNode4 = new GettingStartedModel { Header = "Overall Project Plan"};
-        var ChildNode5 = new GettingStartedModel { Header = "Feature Resource Allocation"};
-        var ChildNode6 = new GettingStartedModel { Header = "Home Remodel Folder"};
-        var ChildNode7 = new GettingStartedModel { Header = "Contractor Contact Info"};
-        var ChildNode8 = new GettingStartedModel { Header = "Paint Color Scheme"};
-        var ChildNode9 = new GettingStartedModel { Header = "Flooring Woodgrain type"};
-        var ChildNode10 = new GettingStartedModel { Header = "Kitchen Cabinet Style"};
+        var ChildNode1 = new SelectionModel { Header = "Functional Specifications"};
+        var ChildNode2 = new SelectionModel { Header = "TreeView spec"};
+        var ChildNode3 = new SelectionModel { Header = "Feature Schedule"};
+        var ChildNode4 = new SelectionModel { Header = "Overall Project Plan"};
+        var ChildNode5 = new SelectionModel { Header = "Feature Resource Allocation"};
+        var ChildNode6 = new SelectionModel { Header = "Home Remodel Folder"};
+        var ChildNode7 = new SelectionModel { Header = "Contractor Contact Info"};
+        var ChildNode8 = new SelectionModel { Header = "Paint Color Scheme"};
+        var ChildNode9 = new SelectionModel { Header = "Flooring Woodgrain type"};
+        var ChildNode10 = new SelectionModel { Header = "Kitchen Cabinet Style"};
 
-        var ChildNode11 = new GettingStartedModel { Header = "My Network Places"};
-        var ChildNode12 = new GettingStartedModel { Header = "Server"};
-        var ChildNode13 = new GettingStartedModel { Header = "My Folders"};
+        var ChildNode11 = new SelectionModel { Header = "My Network Places"};
+        var ChildNode12 = new SelectionModel { Header = "Server"};
+        var ChildNode13 = new SelectionModel { Header = "My Folders"};
 
-        var ChildNode14 = new GettingStartedModel { Header = "My Computer"};
-        var ChildNode15 = new GettingStartedModel { Header = "Music"};
-        var ChildNode16 = new GettingStartedModel { Header = "Videos"};
-        var ChildNode17 = new GettingStartedModel { Header = "Wallpaper.png"};
-        var ChildNode18 = new GettingStartedModel { Header = "My Banner.png"};
+        var ChildNode14 = new SelectionModel { Header = "My Computer" };
+        var ChildNode15 = new SelectionModel { Header = "Music"};
+        var ChildNode16 = new SelectionModel { Header = "Videos"};
+        var ChildNode17 = new SelectionModel { Header = "Wallpaper.png"};
+        var ChildNode18 = new SelectionModel { Header = "My Banner.png"};
 
-        var ChildNode19 = new GettingStartedModel { Header = "Favourites”};
-        var ChildNode20 = new GettingStartedModel { Header = "Image3.png”};
-        var ChildNode21 = new GettingStartedModel { Header = "Image4.png”};
-        var ChildNode22 = new GettingStartedModel { Header = "Image5.png”};
+        var ChildNode19 = new SelectionModel { Header = "Favourites"};
+        var ChildNode20 = new SelectionModel { Header = "Image3.png"};
+        var ChildNode21 = new SelectionModel { Header = "Image4.png"};
+        var ChildNode22 = new SelectionModel { Header = "Image5.png"};
 
-        var ChildNode23 = new GettingStartedModel { Header = "Image1.png”};
-        var ChildNode24 = new GettingStartedModel { Header = "Image2.png”};
+        var ChildNode23 = new SelectionModel { Header = "Image1.png"};
+        var ChildNode24 = new SelectionModel { Header = "Image2.png"};
 
         RootNode1.Childs.Add(ChildNode1);
         RootNode1.Childs.Add(ChildNode3);
@@ -147,17 +148,18 @@ public class GettingStartedViewModel : NotificationObject
 {% endhighlight %}
 {% highlight c# %}
 
-public class GettingStartedModel : NotificationObject
+public class SelectionModel : NotificationObject
 {
+    
     private string header = string.Empty;
-
-    private ObservableCollection<GettingStartedModel> childs;
-
-    public GettingStartedModel()
+   
+    private ObservableCollection<SelectionModel> childs;
+ 
+    public SelectionModel()
     {
-        Childs = new ObservableCollection<GettingStartedModel>();
+        Childs = new ObservableCollection<SelectionModel>();
     }
-
+       
     public string Header
     {
         get
@@ -170,8 +172,8 @@ public class GettingStartedModel : NotificationObject
             this.RaisePropertyChanged(nameof(Header));
         }
     }
-           
-    public ObservableCollection<GettingStartedModel> Childs
+          
+    public ObservableCollection<SelectionModel> Childs
     {
         get
         {
@@ -182,7 +184,7 @@ public class GettingStartedModel : NotificationObject
             childs = value;
             this.RaisePropertyChanged(nameof(Childs));
         }
-    }
+    }      
 }
 
 {% endhighlight %}
@@ -208,15 +210,16 @@ TreeView support to select multiple items through binding the [SelectedItems](ht
       NavigationCacheMode="Disabled">
 
 <Page.DataContext>
-        <local:GettingStartedViewModel />
+        <local:SelectionViewModel />
 </Page.DataContext>
 
-<syncfusion:SfTreeView x:Name="treeView"
-                       AutoExpandMode="AllNodes" 
-                       ChildPropertyName="Childs"                                            
-                       ItemsSource="{Binding Collections}"
-                       SelectedItems="{Binding SelectedNodes}"
-                       SelectionMode="Multiple">
+<Grid>
+    <syncfusion:SfTreeView x:Name="treeView"
+                            AutoExpandMode="AllNodes" 
+                            ChildPropertyName="Childs"                                            
+                            ItemsSource="{Binding Collections}"
+                            SelectedItems="{Binding SelectedNodes}"
+                            SelectionMode="Multiple">
                 <syncfusion:SfTreeView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
@@ -225,7 +228,8 @@ TreeView support to select multiple items through binding the [SelectedItems](ht
                         </Grid>
                     </DataTemplate>
                 </syncfusion:SfTreeView.ItemTemplate>
-</syncfusion:SfTreeView>
+    </syncfusion:SfTreeView>
+</Grid>
 </Page>
 
 {% endhighlight %}
@@ -238,50 +242,52 @@ treeView.SetBinding(SfTreeView.SelectedItemsProperty, new Binding("SelectedNodes
 {% tabs %}
 {% highlight c# %}
 
-public class GettingStartedViewModel : NotificationObject
+public class SelectionViewModel : NotificationObject
 {
-    public GettingStartedViewModel()
+  
+    public SelectionViewModel()
     {
-        Collections = new ObservableCollection<GettingStartedModel>();
+        Collections = new ObservableCollection<SelectionModel>();
         PopulateCollections();
     }
+   
+    public ObservableCollection<SelectionModel> Collections { get; internal set; }
 
-    public ObservableCollection<GettingStartedModel> Collections { get; internal set; }
     public ObservableCollection<object> SelectedNodes { get; internal set; }
-
+   
     void PopulateCollections()
     {
-        var RootNode1 = new GettingStartedModel { Header = "Work Documents" };
-        var RootNode2 = new GettingStartedModel { Header = "Personal Folder" };
+        var RootNode1 = new SelectionModel { Header = "Work Documents"};
+        var RootNode2 = new SelectionModel { Header = "Personal Folder"};
 
-        var ChildNode1 = new GettingStartedModel { Header = "Functional Specifications” };
-        var ChildNode2 = new GettingStartedModel { Header = "TreeView spec"};
-        var ChildNode3 = new GettingStartedModel { Header = "Feature Schedule"};
-        var ChildNode4 = new GettingStartedModel { Header = "Overall Project Plan"};
-        var ChildNode5 = new GettingStartedModel { Header = "Feature Resource Allocation"};
-        var ChildNode6 = new GettingStartedModel { Header = "Home Remodel Folder"};
-        var ChildNode7 = new GettingStartedModel { Header = "Contractor Contact Info"};
-        var ChildNode8 = new GettingStartedModel { Header = "Paint Color Scheme"};
-        var ChildNode9 = new GettingStartedModel { Header = "Flooring Woodgrain type"};
-        var ChildNode10 = new GettingStartedModel { Header = "Kitchen Cabinet Style"};
+        var ChildNode1 = new SelectionModel { Header = "Functional Specifications"};
+        var ChildNode2 = new SelectionModel { Header = "TreeView spec"};
+        var ChildNode3 = new SelectionModel { Header = "Feature Schedule"};
+        var ChildNode4 = new SelectionModel { Header = "Overall Project Plan"};
+        var ChildNode5 = new SelectionModel { Header = "Feature Resource Allocation"};
+        var ChildNode6 = new SelectionModel { Header = "Home Remodel Folder"};
+        var ChildNode7 = new SelectionModel { Header = "Contractor Contact Info"};
+        var ChildNode8 = new SelectionModel { Header = "Paint Color Scheme"};
+        var ChildNode9 = new SelectionModel { Header = "Flooring Woodgrain type"};
+        var ChildNode10 = new SelectionModel { Header = "Kitchen Cabinet Style"};
 
-        var ChildNode11 = new GettingStartedModel { Header = "My Network Places"};
-        var ChildNode12 = new GettingStartedModel { Header = "Server"};
-        var ChildNode13 = new GettingStartedModel { Header = "My Folders"};
+        var ChildNode11 = new SelectionModel { Header = "My Network Places"};
+        var ChildNode12 = new SelectionModel { Header = "Server"};
+        var ChildNode13 = new SelectionModel { Header = "My Folders"};
 
-        var ChildNode14 = new GettingStartedModel { Header = "My Computer"};
-        var ChildNode15 = new GettingStartedModel { Header = "Music"};
-        var ChildNode16 = new GettingStartedModel { Header = "Videos"};
-        var ChildNode17 = new GettingStartedModel { Header = "Wallpaper.png"};
-        var ChildNode18 = new GettingStartedModel { Header = "My Banner.png"};
+        var ChildNode14 = new SelectionModel { Header = "My Computer" };
+        var ChildNode15 = new SelectionModel { Header = "Music"};
+        var ChildNode16 = new SelectionModel { Header = "Videos"};
+        var ChildNode17 = new SelectionModel { Header = "Wallpaper.png"};
+        var ChildNode18 = new SelectionModel { Header = "My Banner.png"};
 
-        var ChildNode19 = new GettingStartedModel { Header = "Favourites”};
-        var ChildNode20 = new GettingStartedModel { Header = "Image3.png”};
-        var ChildNode21 = new GettingStartedModel { Header = "Image4.png”};
-        var ChildNode22 = new GettingStartedModel { Header = "Image5.png”};
+        var ChildNode19 = new SelectionModel { Header = "Favourites"};
+        var ChildNode20 = new SelectionModel { Header = "Image3.png"};
+        var ChildNode21 = new SelectionModel { Header = "Image4.png"};
+        var ChildNode22 = new SelectionModel { Header = "Image5.png"};
 
-        var ChildNode23 = new GettingStartedModel { Header = "Image1.png”};
-        var ChildNode24 = new GettingStartedModel { Header = "Image2.png”};
+        var ChildNode23 = new SelectionModel { Header = "Image1.png"};
+        var ChildNode24 = new SelectionModel { Header = "Image2.png"};
 
         RootNode1.Childs.Add(ChildNode1);
         RootNode1.Childs.Add(ChildNode3);
@@ -317,7 +323,7 @@ public class GettingStartedViewModel : NotificationObject
         SelectedNodes.Add(ChildNode1);
         SelectedNodes.Add(ChildNode4);
         SelectedNodes.Add(ChildNode8);
-
+            
         Collections.Add(RootNode1);
         Collections.Add(RootNode2);
     }
@@ -326,17 +332,18 @@ public class GettingStartedViewModel : NotificationObject
 {% endhighlight %}
 {% highlight c# %}
 
-public class GettingStartedModel : NotificationObject
+public class SelectionModel : NotificationObject
 {
+    
     private string header = string.Empty;
-
-    private ObservableCollection<GettingStartedModel> childs;
-
-    public GettingStartedModel()
+   
+    private ObservableCollection<SelectionModel> childs;
+ 
+    public SelectionModel()
     {
-        Childs = new ObservableCollection<GettingStartedModel>();
+        Childs = new ObservableCollection<SelectionModel>();
     }
-
+       
     public string Header
     {
         get
@@ -349,8 +356,8 @@ public class GettingStartedModel : NotificationObject
             this.RaisePropertyChanged(nameof(Header));
         }
     }
-           
-    public ObservableCollection<GettingStartedModel> Childs
+          
+    public ObservableCollection<SelectionModel> Childs
     {
         get
         {
@@ -361,7 +368,7 @@ public class GettingStartedModel : NotificationObject
             childs = value;
             this.RaisePropertyChanged(nameof(Childs));
         }
-    }
+    }      
 }
 
 {% endhighlight %}
