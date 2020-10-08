@@ -457,3 +457,297 @@ this.Content = sfRadialGauge;
 {% endtabs %}
 
 ![range color to axis element](images/range/range_axislabels.png)
+
+## Range label
+
+A text can be displayed on range using the `Label` property. The provided text can be customized using the `Foreground`, `FontSize`, `FontWeight`, `FontFamily` and `FontStyle` properties of [`range`]().
+
+{% tabs %}
+
+{% highlight xml %}
+
+<gauge:SfRadialGauge>
+    <gauge:SfRadialGauge.Axes>
+        <gauge:RadialAxis ShowLabels="False"
+                          ShowAxisLine="False"
+                          ShowTicks="False"
+                          Minimum="0"
+                          Maximum="99">
+
+            <gauge:RadialAxis.Ranges>
+                <gauge:GaugeRange StartValue="0"
+                                  EndValue="33"
+                                  Label="Slow"
+                                  WidthUnit="Factor"
+                                  StartWidth="0.65"
+                                  EndWidth="0.65"
+                                  FontSize="20"
+                                  Background="#FFFE2A25" />
+                <gauge:GaugeRange StartValue="33"
+                                  EndValue="66"
+                                  Label="Moderate"
+                                  WidthUnit="Factor"
+                                  StartWidth="0.65"
+                                  EndWidth="0.65"
+                                  FontSize="20"
+                                  Background="#FFFFBA00" />
+                <gauge:GaugeRange StartValue="66"
+                                  EndValue="99"
+                                  Label="Fast"
+                                  WidthUnit="Factor"
+                                  StartWidth="0.65"
+                                  EndWidth="0.65"
+                                  FontSize="20"
+                                  Background="#FF00AB47" />
+                <gauge:GaugeRange StartValue="0"
+                                  EndValue="99"
+                                  WidthUnit="Factor"
+                                  StartWidth="0.15"
+                                  EndWidth="0.15"
+                                  OffsetUnit="Factor"
+                                  RangeOffset="0.55"
+                                  Background="#4D9b9b9b" />
+            </gauge:RadialAxis.Ranges>
+
+            <gauge:RadialAxis.Pointers>
+                <gauge:NeedlePointer Value="60"
+                                     NeedleLength="0.6"
+                                     NeedleStartWidth="2"
+                                     NeedleEndWidth="15"
+                                     KnobRadius="15"
+                                     KnobSizeUnit="Pixel" />
+            </gauge:RadialAxis.Pointers>
+        </gauge:RadialAxis>
+    </gauge:SfRadialGauge.Axes>
+</gauge:SfRadialGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.ShowLabels = false;
+radialAxis.ShowAxisLine = false;
+radialAxis.ShowTicks = false;
+radialAxis.Minimum = 0;
+radialAxis.Maximum = 99;
+sfRadialGauge.Axes.Add(radialAxis);
+
+GaugeRange gaugeRange1 = new GaugeRange();
+gaugeRange1.StartValue = 0;
+gaugeRange1.EndValue = 33;
+gaugeRange1.Label = "Slow";
+gaugeRange1.WidthUnit = SizeUnit.Factor;
+gaugeRange1.StartWidth = 0.65;
+gaugeRange1.EndWidth = 0.65;
+gaugeRange1.FontSize = 20;
+gaugeRange1.Background = new SolidColorBrush(Color.FromArgb(255, 254, 42, 37));
+radialAxis.Ranges.Add(gaugeRange1);
+
+GaugeRange gaugeRange2 = new GaugeRange();
+gaugeRange2.StartValue = 33;
+gaugeRange2.EndValue = 66;
+gaugeRange2.Label = "Moderate";
+gaugeRange2.WidthUnit = SizeUnit.Factor;
+gaugeRange2.StartWidth = 0.65;
+gaugeRange2.EndWidth = 0.65;
+gaugeRange2.FontSize = 20;
+gaugeRange2.Background = new SolidColorBrush(Color.FromArgb(255, 255, 186, 0));
+radialAxis.Ranges.Add(gaugeRange2);
+
+GaugeRange gaugeRange3 = new GaugeRange();
+gaugeRange3.StartValue = 66;
+gaugeRange3.EndValue = 99;
+gaugeRange3.Label = "Fast";
+gaugeRange3.WidthUnit = SizeUnit.Factor;
+gaugeRange3.StartWidth = 0.65;
+gaugeRange3.EndWidth = 0.65;
+gaugeRange3.FontSize = 20;
+gaugeRange3.Background = new SolidColorBrush(Color.FromArgb(255, 0, 171, 71));
+radialAxis.Ranges.Add(gaugeRange3);
+
+GaugeRange gaugeRange4 = new GaugeRange();
+gaugeRange4.StartValue = 0;
+gaugeRange4.EndValue = 99;
+gaugeRange4.WidthUnit = SizeUnit.Factor;
+gaugeRange4.StartWidth = 0.15;
+gaugeRange4.EndWidth = 0.15;
+gaugeRange4.OffsetUnit = SizeUnit.Factor;
+gaugeRange4.RangeOffset = 0.55;
+gaugeRange4.Background = new SolidColorBrush(Color.FromArgb(77, 155, 155, 155));
+radialAxis.Ranges.Add(gaugeRange4);
+
+NeedlePointer needlePointer = new NeedlePointer();
+needlePointer.Value = 60;
+needlePointer.NeedleLength = 0.6;
+needlePointer.NeedleStartWidth = 2;
+needlePointer.NeedleEndWidth = 15;
+needlePointer.KnobRadius = 15;
+needlePointer.KnobSizeUnit = SizeUnit.Pixel;
+radialAxis.Pointers.Add(needlePointer);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![range label](images/range/range_label.png)
+
+**Template support for range label**
+
+The `LabelTemplate` property allows you to define the data template for the range label's like the following code example.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Page.Resources>
+    <DataTemplate x:Key="RangeLabelTemplate">
+        <Border Background="Gray"
+                CornerRadius="5">
+            <TextBlock Text="{Binding Label}"
+                       Margin="5"
+                       Foreground="White"
+                       FontSize="{Binding FontSize}" />
+        </Border>
+    </DataTemplate>
+</Page.Resources>
+
+<gauge:SfRadialGauge>
+    <gauge:SfRadialGauge.Axes>
+        <gauge:RadialAxis ShowLabels="False"
+                          ShowAxisLine="False"
+                          ShowTicks="False"
+                          Minimum="0"
+                          Maximum="99">
+
+            <gauge:RadialAxis.Ranges>
+                <gauge:GaugeRange StartValue="0"
+                                  EndValue="33"
+                                  Label="Slow"
+                                  WidthUnit="Factor"
+                                  StartWidth="0.65"
+                                  EndWidth="0.65"
+                                  FontSize="20"
+                                  Background="#FFFE2A25"
+                                  LabelTemplate="{StaticResource RangeLabelTemplate}" />
+                <gauge:GaugeRange StartValue="33"
+                                  EndValue="66"
+                                  Label="Moderate"
+                                  WidthUnit="Factor"
+                                  StartWidth="0.65"
+                                  EndWidth="0.65"
+                                  FontSize="20"
+                                  Background="#FFFFBA00"
+                                  LabelTemplate="{StaticResource RangeLabelTemplate}" />
+                <gauge:GaugeRange StartValue="66"
+                                  EndValue="99"
+                                  Label="Fast"
+                                  WidthUnit="Factor"
+                                  StartWidth="0.65"
+                                  EndWidth="0.65"
+                                  FontSize="20"
+                                  Background="#FF00AB47"
+                                  LabelTemplate="{StaticResource RangeLabelTemplate}" />
+                <gauge:GaugeRange StartValue="0"
+                                  EndValue="99"
+                                  WidthUnit="Factor"
+                                  StartWidth="0.15"
+                                  EndWidth="0.15"
+                                  OffsetUnit="Factor"
+                                  RangeOffset="0.55"
+                                  Background="#4D9b9b9b" />
+            </gauge:RadialAxis.Ranges>
+
+            <gauge:RadialAxis.Pointers>
+                <gauge:NeedlePointer Value="60"
+                                     NeedleLength="0.6"
+                                     NeedleStartWidth="2"
+                                     NeedleEndWidth="15"
+                                     KnobRadius="15"
+                                     KnobSizeUnit="Pixel" />
+            </gauge:RadialAxis.Pointers>
+        </gauge:RadialAxis>
+    </gauge:SfRadialGauge.Axes>
+</gauge:SfRadialGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.ShowLabels = false;
+radialAxis.ShowAxisLine = false;
+radialAxis.ShowTicks = false;
+radialAxis.Minimum = 0;
+radialAxis.Maximum = 99;
+sfRadialGauge.Axes.Add(radialAxis);
+
+GaugeRange gaugeRange1 = new GaugeRange();
+gaugeRange1.StartValue = 0;
+gaugeRange1.EndValue = 33;
+gaugeRange1.Label = "Slow";
+gaugeRange1.LabelTemplate = this.Resources["RangeLabelTemplate"] as DataTemplate;
+gaugeRange1.WidthUnit = SizeUnit.Factor;
+gaugeRange1.StartWidth = 0.65;
+gaugeRange1.EndWidth = 0.65;
+gaugeRange1.FontSize = 20;
+gaugeRange1.Background = new SolidColorBrush(Color.FromArgb(255, 254, 42, 37));
+radialAxis.Ranges.Add(gaugeRange1);
+
+GaugeRange gaugeRange2 = new GaugeRange();
+gaugeRange2.StartValue = 33;
+gaugeRange2.EndValue = 66;
+gaugeRange2.Label = "Moderate";
+gaugeRange2.LabelTemplate = this.Resources["RangeLabelTemplate"] as DataTemplate;
+gaugeRange2.WidthUnit = SizeUnit.Factor;
+gaugeRange2.StartWidth = 0.65;
+gaugeRange2.EndWidth = 0.65;
+gaugeRange2.FontSize = 20;
+gaugeRange2.Background = new SolidColorBrush(Color.FromArgb(255, 255, 186, 0));
+radialAxis.Ranges.Add(gaugeRange2);
+
+GaugeRange gaugeRange3 = new GaugeRange();
+gaugeRange3.StartValue = 66;
+gaugeRange3.EndValue = 99;
+gaugeRange3.Label = "Fast";
+gaugeRange3.LabelTemplate = this.Resources["RangeLabelTemplate"] as DataTemplate;
+gaugeRange3.WidthUnit = SizeUnit.Factor;
+gaugeRange3.StartWidth = 0.65;
+gaugeRange3.EndWidth = 0.65;
+gaugeRange3.FontSize = 20;
+gaugeRange3.Background = new SolidColorBrush(Color.FromArgb(255, 0, 171, 71));
+radialAxis.Ranges.Add(gaugeRange3);
+
+GaugeRange gaugeRange4 = new GaugeRange();
+gaugeRange4.StartValue = 0;
+gaugeRange4.EndValue = 99;
+gaugeRange4.WidthUnit = SizeUnit.Factor;
+gaugeRange4.StartWidth = 0.15;
+gaugeRange4.EndWidth = 0.15;
+gaugeRange4.OffsetUnit = SizeUnit.Factor;
+gaugeRange4.RangeOffset = 0.55;
+gaugeRange4.Background = new SolidColorBrush(Color.FromArgb(77, 155, 155, 155));
+radialAxis.Ranges.Add(gaugeRange4);
+
+NeedlePointer needlePointer = new NeedlePointer();
+needlePointer.Value = 60;
+needlePointer.NeedleLength = 0.6;
+needlePointer.NeedleStartWidth = 2;
+needlePointer.NeedleEndWidth = 15;
+needlePointer.KnobRadius = 15;
+needlePointer.KnobSizeUnit = SizeUnit.Pixel;
+radialAxis.Pointers.Add(needlePointer);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![range label template](images/range/range_labelTemplate.png)
