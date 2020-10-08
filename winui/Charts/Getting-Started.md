@@ -11,35 +11,59 @@ documentation: ug
 
 This section explains you the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to learn to get started with the Chart.
 
-## Adding chart reference
-
-Install the Syncfusion WinUI Chart nuget from [`nuget.org`](https://www.nuget.org/)
-
-NuGet name : Syncfusion.Chart.WinUI
-
-![gauge nuget reference](Getting-Started_Images/nugetreference.png)
-
-## Initialize chart
-
-Import the [`chart`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html) namespace as follows in your respective page.
+## Creating an Application with WinUI Chart
+1.	Create a simple project using the instructions given in the [`Getting Started with your first WinUI app`](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
+2.	Add reference to [`Syncfusion.Chart.WinUI`](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
+3.	Import the control namespace `Syncfusion.UI.Xaml.Charts`  in XAML or C# to initialize the control.
+4.	Initialize SfChart control.
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
-xmlns:syncfusion="using:Syncfusion.UI.Xaml.Charts"
-
+<Page
+    x:Class="SfChart_GettingStarted.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SfChart_GettingStarted"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Charts"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="350" Width="525"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">  
+    <Grid>
+        <syncfusion:SfChart />            
+    </Grid>
+</Page>
+ 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %} 
 
 using Syncfusion.UI.Xaml.Charts;
 
+namespace SfChart_GettingStarted
+{
+    public sealed partial class MainPage : Page
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            
+            SfChart chart = new SfChart();      
+            Root_Chart.Children.Add(chart);
+        }
+    }   
+}
+
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
-Then initialize an empty chart with two axes as shown below,
+## Initialize chart axis
+`Chart`supports default axes, so that these axes ([`PrimaryAxis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) and [`SecondaryAxis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis)) will get generated automatically based upon the data bind to the chart.
+
+Axes will be explicitly specified for it's customization purpose. The initialization of an empty chart with two axes as shown below,
 
 {% tabs %} 
 
@@ -59,13 +83,9 @@ Then initialize an empty chart with two axes as shown below,
 {% highlight C# %} 
 
 SfChart chart = new SfChart();
-
 CategoryAxis primaryAxis = new CategoryAxis();
-
-chart.PrimaryAxis = primaryAxis; 
-   
+chart.PrimaryAxis = primaryAxis;    
 NumericalAxis secondaryAxis = new NumericalAxis();
-
 chart.SecondaryAxis = secondaryAxis;
 
 {% endhighlight %}
@@ -75,8 +95,6 @@ chart.SecondaryAxis = secondaryAxis;
 Run the project and check if you get following output to make sure you have configured your project properly to add chart.
 
 ![Initializing WinUI Chart](Getting-Started_Images/img1.png)
-
-N> `Chart`supports default axes, so that these axes ([`PrimaryAxis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) and [`SecondaryAxis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis)) will get generated automatically based upon the data bind to the chart, if you didn’t specify the axes explicitly.
 
 ## Initialize view model
 
@@ -169,15 +187,12 @@ N> You need to set [`XBindingPath`](https://help.syncfusion.com/cr/winui/Syncfus
 {% highlight xaml %}
 
 <syncfusion:SfChart>
-
     <syncfusion:SfChart.PrimaryAxis>
         <syncfusion:CategoryAxis Header="Name" />
     </syncfusion:SfChart.PrimaryAxis>
-
     <syncfusion:SfChart.SecondaryAxis>
         <syncfusion:NumericalAxis Header="Height(in cm)"/>
-    </syncfusion:SfChart.SecondaryAxis>
-    
+    </syncfusion:SfChart.SecondaryAxis>    
     <syncfusion:ColumnSeries  ItemsSource="{Binding Data}"
                               XBindingPath="Name"
                               YBindingPath="Height">
@@ -192,22 +207,14 @@ N> You need to set [`XBindingPath`](https://help.syncfusion.com/cr/winui/Syncfus
 SfChart chart = new SfChart();
 
 //Adding horizontal axis to the chart 
-
 CategoryAxis primaryAxis = new CategoryAxis();
-
-primaryAxis.Header = "Name";      
-
+primaryAxis.Header = "Name";   
 chart.PrimaryAxis = primaryAxis;
 
-
 //Adding vertical axis to the chart 
-
 NumericalAxis secondaryAxis = new NumericalAxis();
-
-secondaryAxis.Header = "Height(in cm)";          
-
+secondaryAxis.Header = "Height(in cm)";  
 chart.SecondaryAxis = secondaryAxis;
-
 
 //Initialize the two series for SfChart
 ColumnSeries series = new ColumnSeries();
@@ -232,10 +239,8 @@ The header of the chart acts as the title to provide quick information to the us
 {% highlight xaml %}
 
 <Grid>
-
    <syncfusion:SfChart Header="Chart"> 
    </syncfusion:SfChart> 
-
 </Grid>
 
 {% endhighlight %}
@@ -258,7 +263,6 @@ You can add data labels to improve the readability of the chart and it can be en
 {% highlight xaml %}
 
 <syncfusion:SfChart>
-
 	...
   <syncfusion:ColumnSeries > 
         <syncfusion:ColumnSeries.DataMarker>
@@ -266,7 +270,6 @@ You can add data labels to improve the readability of the chart and it can be en
         </syncfusion:ColumnSeries.DataMarker>
   </syncfusion:ColumnSeries>  
 	...
-
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -288,17 +291,11 @@ You can enable legend using the [`SfChart.Legend`](https://help.syncfusion.com/c
 {% highlight xaml %}
 
 <syncfusion:SfChart>
-
 	...
-
     <syncfusion:SfChart.Legend>
-
         <syncfusion:ChartLegend/>
-
     </syncfusion:SfChart.Legend>
-
     ...
-
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -318,13 +315,9 @@ Additionally, you need to set label for each series using the [`Label`](https://
 {% highlight xaml %}
 
 <syncfusion:SfChart>
-
 	...
-
       <syncfusion:ColumnSeries Label="Heights" ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Height" />
-
 	...
-
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -350,13 +343,9 @@ Tooltips are used to show information about the segment, when you click the segm
 {% highlight xaml %}
 
 <syncfusion:SfChart>
-
 	...
-
    <syncfusion:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Height"/>
-
 	...
-
 </syncfusion:SfChart> 
 
 {% endhighlight %}
@@ -471,8 +460,7 @@ namespace SfChart_GettingStarted
 
             //Adding Series to the Chart Series Collection
             chart.Series.Add(series);
-            this.Content = chart;
-                      
+            Root_Chart.Children.Add(chart);    
         }
     }   
 }
@@ -485,5 +473,5 @@ The following chart is created as a result of the previous codes.
 
 ![Getting Started WinUI Chart](Getting-Started_images/img3.png)
 
-You can find the complete getting started sample from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Chart_GettingStarted-1703269833.zip).
+N> Download demo application from [`GitHub`](https://github.com/SyncfusionExamples/GettingStartedChartWinUI)
 
