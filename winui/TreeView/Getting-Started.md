@@ -9,32 +9,14 @@ documentation: ug
 
 # Getting Started with WinUI TreeView
 
-This section provides a quick overview for getting started with the [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) for WinUI. Walk through the entire process of creating a real world of this control.
+This section explains the steps required to add the [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) control and binding data in Treeview control. This section covers only basic features needed to get started with Syncfusion TreeView control.
 
-## Creating simple application with TreeView
+## Creating an application with WinUI TreeView
 
-* Creating the project
-* Add `TreeView` to Project
-* Bind to a hierarchical data source - Bound Mode
-* Bind to a Hierarchy Property Descriptors data source - Bound Mode
-* Populating Nodes without data source - Unbound Mode
-
-### Creating the project
-
-Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
-
-### Add TreeView to Project
-
-The `TreeView` control can be added to project by the following ways.
-
-#### Adding TreeView by XAML
-
-In order to add control manually in XAML, do the below steps,
-
-1. Create new WinUI Project in Visual Studio to display TreeView with data objects.
+1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
 2. Install the [Syncfusion.TreeView.WinUI](https://www.nuget.org/packages/Syncfusion.TreeView.WinUI) NuGet packages.
-3. Import **Syncfusion.UI.Xaml.TreeView** in XAML Page.
-4. Declare `TreeView` control in XAML page.
+3. Import the control namespace `Syncfusion.UI.Xaml.TreeView` in XAML or C# code.
+4. Initialize the TreeView control.
 
 {% tabs %} 
 {% highlight xaml %} 
@@ -55,18 +37,6 @@ In order to add control manually in XAML, do the below steps,
 </Page>
 
 {% endhighlight %}
-{% endtabs %} 
-
-#### Adding TreeView by C#
-
-In order to add control manually in C#, do the below steps,
-
-1. Create new WinUI Project in Visual Studio to display TreeView with data objects.
-2. Install the [Syncfusion.TreeView.WinUI](https://www.nuget.org/packages/Syncfusion.TreeView.WinUI) NuGet packages.
-3. Import TreeView namespace **using Syncfusion.UI.Xaml.TreeView**.
-4. Create `TreeView` control instance and add it to the Page.
-
-{% tabs %} 
 {% highlight C# %} 
 
 using Microsoft.UI.Xaml.Controls;
@@ -88,7 +58,7 @@ public sealed partial class GettingStartedPage : Page
 {% endhighlight %}
 {% endtabs %} 
 
-### Bind to a hierarchical data source - Bound Mode
+## Bind to a hierarchical data source - Bound Mode
 
 You can create a tree view by binding the ItemsSource to a hierarchical data source. To create a tree view using data binding, set a hierarchical collection to the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) property. Then in the [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplate) and [ExpanderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpanderTemplate), set the child items collection to the `ItemsSource` property.
 
@@ -231,9 +201,6 @@ public class NodeWithImageViewModel
     }
 }
 
-{% endhighlight %}
-{% highlight C# %} 
-
 public class Folder : NotificationObject
 { 
         
@@ -278,12 +245,11 @@ public class Folder : NotificationObject
 {% endhighlight %}
 {% endtabs %} 
 
-### Bind to a Hierarchy Property Descriptors data source - Bound Mode
+## Bind to a Hierarchy Property Descriptors data source - Bound Mode
 
 You can create a tree view by binding the `ItemsSource` to a hierarchy property descriptors data source. To create a tree view using hierarchical data binding, set a hierarchical collection to the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) property, and then set the TargetType and [ChildPropertyName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ChildPropertyName) property values in [HierarchyPropertyDescriptors](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_HierarchyPropertyDescriptors).
 
 {% tabs %} 
-
 {% highlight xaml %} 
 
 <Page x:Class="syncfusion.treeviewdemos.winui.NodeWithImagePage"
@@ -330,7 +296,6 @@ You can create a tree view by binding the `ItemsSource` to a hierarchy property 
 </Page>
 
 {% endhighlight %}
-
 {% highlight C# %} 
 
 public class NodeWithImageViewModel
@@ -432,10 +397,6 @@ public class NodeWithImageViewModel
         return nodeImageInfo;
     }
 }
-
-{% endhighlight %}
-
-{% highlight C# %} 
 
 public class Folder : NotificationObject
 {
@@ -546,10 +507,9 @@ public class SubFile : NotificationObject
 }
 
 {% endhighlight %}
-
 {% endtabs %} 
 
-### Populating Nodes without data source - Unbound Mode
+## Populating Nodes without data source - Unbound Mode
 
 You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) objects by yourself to display the data in a hierarchical view. To create a tree view, you use a `TreeView` control and a hierarchy of `TreeViewNode` objects. You create the node hierarchy by adding one or more root nodes to the [TreeView.Nodes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) collection. Each `TreeViewNode` can have more nodes added to its Children collection. You can nest tree view nodes to whatever depth you require.
 
