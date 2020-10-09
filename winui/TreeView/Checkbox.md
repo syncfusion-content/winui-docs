@@ -92,7 +92,7 @@ public class CheckBoxView : NotificationObject
 
         var aus_state1 = new CheckBoxModel { State = "New South Wales" };
         var aus_state2 = new CheckBoxModel { State = "Victoria" };
-        var aus_state3 = new CheckBoxModel { State = "South Autralia" };
+        var aus_state3 = new CheckBoxModel { State = "South Australia" };
         var aus_state4 = new CheckBoxModel { State = "Western Australia" };
 
         var brazil_state1 = new CheckBoxModel { State = "Parana" };
