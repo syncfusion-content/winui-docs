@@ -95,7 +95,7 @@ public class NodeWithImageViewModel
 
     public NodeWithImageViewModel()
     {
-        CommonResourceDictionary = new ResourceDictionary() { Source = new Uri("ms-appx:///syncfusion.treeviewdemos.winui/Assets/PathIcon.xaml", UriKind.RelativeOrAbsolute) };
+        CommonResourceDictionary = new ResourceDictionary() { Source = new Uri("ms-appx:///Icons/PathIcon.xaml", UriKind.RelativeOrAbsolute) };
         this.Folders = GetFiles();
     }
 
