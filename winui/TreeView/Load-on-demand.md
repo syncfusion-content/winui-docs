@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Load On-demand in WinUI TreeView | Syncfusion
-description: Learn here about loading nodes on demand on Syncfusion WinUI TreeView control and more details..
+description: Learn here about loading nodes on demand on Syncfusion WinUI TreeView control. And also explains about the handling expander visibility in TreeView.
 platform: WinUI
 control: TreeView
 documentation: ug
