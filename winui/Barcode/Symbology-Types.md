@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Types of Symbology in Syncfusion Barcode control for Winui
-description: Different Symbology supported in Barcode control
+description: Different types of Symbology in one-dimensional and two-dimensional barcodes are explained.
 platform: WinUI
 control: Barcode
 documentation: ug
 ---
 
-# Symbology
+# Types of Symbology
 
 Barcode Symbology supports 11 variants of one dimension and 2 variants of two dimensional barcodes that are shown as follows.
 
@@ -233,7 +233,7 @@ Code128C Barcode
 
 ### UPC
 
-The `UpcBarcode`(Universal Product Code), also known as UPC-A. It encodes 12 numeric digits. UPC barcode symbology mostly used in trade items.
+The `UPCBarcode`(Universal Product Code), also known as UPC-A. It encodes 12 numeric digits. UPC barcode symbology mostly used in trade items.
 
 {% highlight xaml %}
 

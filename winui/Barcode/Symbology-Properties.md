@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Symbology | SfBarcode | WinUI | Syncfusion
-description: Barcode can be customized using Symbology properties.
+description: Shows that how one-dimensional barcode and two-dimensional barcode can be customized using Symbology properties
 platform: WinUI
 control: Barcode
 documentation: ug
