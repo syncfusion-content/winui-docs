@@ -22,7 +22,7 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
 
 <table>
     <tr>
-        <td>
+        <td colspan="3">
             <b>GRIDS</b>
         </td>
     </tr>
@@ -33,9 +33,10 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
         <td>
             <p>Tree Grid</p>
         </td>
+        <td></td>
     </tr>
     <tr>
-        <td>
+        <td colspan="3">
             <b>DATA VISUALIZATION</b>
         </td>
     </tr>
@@ -50,9 +51,8 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
             <p>Barcode</p>
         </td>
     </tr>
-    </tr>
     <tr>
-        <td>
+        <td colspan="3">
             <b>NAVIGATION & NOTIFICATION</b>
         </td>
     </tr>
@@ -63,10 +63,10 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
         <td>
             <p>Badge</p>
         </td>
-    </tr>
+        <td></td>
     </tr>
     <tr>
-        <td>
+        <td colspan="3">
             <b>EDITORS</b>
         </td>
     </tr>
@@ -85,6 +85,13 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
         <td>
             <p>Dropdown Color Palette</p>
         </td>
+        <td></td>
+        <td></td>
     </tr>
 </table>
 
+## Support and feedback
+
+If you are unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://www.syncfusion.com/support/directtrac/incidents).
+
+Don't see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/winui).
