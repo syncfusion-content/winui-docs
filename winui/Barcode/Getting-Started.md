@@ -158,3 +158,31 @@ The visibility of the Barcode text can be changed using `ShowValue` property in 
 {% endtabs %}
 
 ![CodaBar Barcode with ShowValue set to false](Getting_Started_Images/showvalue.png)
+
+### HorizontalTextAlignment
+
+The alignment of the Barcode text can be changed using `HorizontalTextAlignment' property in Barcode.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfBarcode x:Name="barcode" Value="10110111" Height="150" HorizontalTextAlignment="Right" />
+
+{% endhighlight %}
+{% endtabs %}
+
+![HorizontalTextAlignment set to Right](Getting_Started_Images/HorizontalTextAlignment.png)
+
+### VerticalTextAlignment
+
+The alignment of the Barcode text can be changed using `VerticalTextAlignment' property in Barcode.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfBarcode x:Name="barcode" Value="10110111" Height="150" VerticalTextAlignment="Top" />
+
+{% endhighlight %}
+{% endtabs %}
+
+![VerticalTextAlignment set to Top](Getting_Started_Images/VerticalTextAlignment.png)
