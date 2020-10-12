@@ -359,7 +359,7 @@ N> The `DropDownButtonTemplate` is effective only on when drop down mode is spli
 
 ![Displaying custom UI of drop down header in split mode](Getting-Started_images/customUI.png)
 
-## Change Dropdown alighment
+## Change Dropdown alignment
 
 You can change alignment of the drop down palette as full, center, left, right, top or bottom with edge of the dropdown header by using the [DropDownPlacement](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
 
