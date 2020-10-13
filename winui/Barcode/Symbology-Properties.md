@@ -13,39 +13,39 @@ Each Barcode symbol can be associated with properties that may affect that speci
 
 ## One Dimensional Barcode Properties
 
- The `EnableCheckSum` property enables the redundancy check using a check digit, the decimal equivalent of a binary parity bit. It consists of a single digit computed from the other digits in the message. The check digit can be shown in the barcode or kept hidden by using the `ShowCheckSum` property.
+ The [EnableCheckSum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.UnidimensionalBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_UnidimensionalBarcode_EnableCheckSum) property enables the redundancy check using a check digit, the decimal equivalent of a binary parity bit. It consists of a single digit computed from the other digits in the message. The check digit can be shown in the barcode or kept hidden by using the [ShowCheckSum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.UnidimensionalBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_UnidimensionalBarcode_ShowCheckSum) property.
 
-The `EncodeStartStopSymbols` property adds Start and Stop symbols to signal a bar code reader that a bar code has been scanned.
+The [EncodeStartStopSymbols](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.UnidimensionalBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_UnidimensionalBarcode_EncodeStartStopSymbols) property adds Start and Stop symbols to signal a bar code reader that a bar code has been scanned.
 
+{% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SfBarcode.Symbology>
-
-    <syncfusion:CodabarBarcode EncodeStartStopSymbols="True" EnableCheckSum="True" ShowCheckSum="False" />
-    
-    </syncfusion:SfBarcode.Symbology>
+<syncfusion:SfBarcode.Symbology>  
+    <syncfusion:CodabarBarcode EncodeStartStopSymbols="True" EnableCheckSum="True" ShowCheckSum="False" />   
+</syncfusion:SfBarcode.Symbology>
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Two Dimensional Barcode Properties
 
 ### DataMatrix Barcode settings
 
-The DataMatrix barcode can be modified using the properties Encoding and MatrixSize.
+The DataMatrix barcode can be modified using the properties [Encoding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.DataMatrixBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_DataMatrixBarcode_Encoding) and [MatrixSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.DataMatrixBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_DataMatrixBarcode_MatrixSize).
 
+{% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SfBarcode.Symbology>
-
+<syncfusion:SfBarcode.Symbology>  
     <syncfusion:DataMatrixBarcode MatrixSize="Size104x104"  Encoding="ASCIINumeric" />
-
-    </syncfusion:SfBarcode.Symbology>
+</syncfusion:SfBarcode.Symbology>
 
 {% endhighlight  %}
+{% endtabs %}
 
 **Encoding**
 
-The encoding of the DataMatrix barcode can be modified using `Encoding` property. The DataMatrixEncoding enumeration has the following four encoding,
+The encoding of the DataMatrix barcode can be modified using [Encoding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.DataMatrixBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_DataMatrixBarcode_Encoding) property. The DataMatrixEncoding enumeration has the following four encoding,
 
 * ASCII
 * ASCIINumeric
@@ -54,7 +54,7 @@ The encoding of the DataMatrix barcode can be modified using `Encoding` property
 
 **MatrixSize**
 
-The `MatrixSize` property allows user to specify the size of the barcode from a set of predefined sizes available in the DataMatrixSize enumeration.
+The [MatrixSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.DataMatrixBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_DataMatrixBarcode_MatrixSize) property allows user to specify the size of the barcode from a set of predefined sizes available in the DataMatrixSize enumeration.
 
 **Data Matrix Size Table**
 
@@ -193,24 +193,23 @@ Rectangular matrix with 16 rows and 48 columns.</td></tr>
 
 The QRBarcode properties are used to modify the version, error correction level and Input mode of the QRBarcode.
 
+{% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SfBarcode.Symbology>
-
+<syncfusion:SfBarcode.Symbology>   
     <syncfusion:QRBarcode ErrorCorrectionLevel="Quartile" InputMode="AlphaNumericMode" QRVersion="Auto" />
-
-    </syncfusion:SfBarcode.Symbology>
+</syncfusion:SfBarcode.Symbology>
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 **QRVersion**
 
-The QR Barcode uses version from 1 to 40 where Version 1 measures 21 modules x 21 modules, Version 2 measures 25 modules x 25 modules and so on increasing in steps of 4 modules per side up to Version 40 which measures 177 modules x 177 modules. By default, the QR Version is Auto, which will automatically set the version according to the input text length.
+The QR Barcode uses [QRVersion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.QRBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_QRBarcode_QRVersion) from 1 to 40 where Version 1 measures 21 modules x 21 modules, Version 2 measures 25 modules x 25 modules and so on increasing in steps of 4 modules per side up to Version 40 which measures 177 modules x 177 modules. By default, the QR Version is Auto, which will automatically set the version according to the input text length.
 
 **ErrorCorrectionLevel**
 
-The QR Barcode uses `ErrorCorrectionLevel` property to generate a series of error correction codewords which are added to the data code word sequence in order to enable the symbol to withstand damage without loss of data. There are four user–selectable levels of error correction. By default the Error correction level is Low.
+The QR Barcode uses [ErrorCorrectionLevel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.QRBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_QRBarcode_ErrorCorrectionLevel) property to generate a series of error correction codewords which are added to the data code word sequence in order to enable the symbol to withstand damage without loss of data. There are four user–selectable levels of error correction. By default the Error correction level is Low.
 
 **Error Correction Level Table**
 
@@ -239,7 +238,7 @@ H</td><td>
 
 **InputMode**
 
-There are three input modes as described in the table. Each mode supports the same Input character set. User may select the most appropriate input mode. The default value for `InputMode` property is BinaryMode.
+There are three input modes as described in the table. Each mode supports the same Input character set. User may select the most appropriate input mode. The default value for [InputMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.QRBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_QRBarcode_InputMode) property is BinaryMode.
 
 **Input Mode Table**
 
