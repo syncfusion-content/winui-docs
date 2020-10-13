@@ -19,14 +19,14 @@ We can change the application culture by assigning the `CultureInfo.CurrentUICul
 
 {% highlight c# %}
 
-public sealed partial class MainPage
-{
-    public MainPage()
+    public sealed partial class MainPage
     {
-        CultureInfo.CurrentUICulture = new CultureInfo("de");
-        this.InitializeComponent();
+        public MainPage()
+        {
+            CultureInfo.CurrentUICulture = new CultureInfo("de");
+            this.InitializeComponent();
+        }
     }
-}
 
 {% endhighlight %}
 
@@ -34,21 +34,23 @@ public sealed partial class MainPage
 
 ## Creating .resw files
 
-You can create .resw files for any language by following steps,
+You can create .resw files for any language by following the steps below,
 
 1) Right click your project and add new folder named Resources.
 
-2) Add another folder and name the folder name as culture name. For example, you have to give name as de for German culture. Find the supported culture codes from [here](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c)
+2) Add another folder and name the folder name as culture name. For example, you have to give name as de for German culture. Find the supported culture codes from [here](https://docs.microsoft.com/en-us/windows/uwp/app-resources/how-rms-matches-lang-tags) 
 
 3) Add default resource files in the following structure.
 
-![SfDatagrid resw file](Localization-images/resource.png)
+![WinUI DataGrid resw file](Localization-images/resource.png)
 
-N> Consider you are using SfDataGrid control in your application. Then you need to copy and include `Syncfusion.Grid.WinUI.resw` (SfDataGrid present in Syncfusion.Grid.WinUI library) file in your application under Resources folder. So, now you can know the key names and values of default strings used in Syncfusion.Grid.WinUI library.
+N> Consider you are using `SfDataGrid` control in your application. Then you need to copy and include `Syncfusion.Grid.WinUI.resw` (SfDataGrid present in Syncfusion.Grid.WinUI library) file in your application under Resources folder. So, now you can know the key names and values of default strings used in Syncfusion.Grid.WinUI library.
 
 4) Now, you can define the key names from default resource files and assign value based on the culture.
 
-![Localized text for SfDataGrid in German](Localization-images/key.png)
+![WinUI DataGrid Localization](Localization-images/key.png)
+
+> [Download demo from GitHub](https://github.com/SyncfusionExamples/winui-datagrid-localization)
 
 ## Editing default culture strings
 
