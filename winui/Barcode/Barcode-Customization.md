@@ -25,7 +25,6 @@ The Background represents the Color of the dark bar (Black color by default) and
 
 ![Barcode_Customization](Symbology_Images/Barcode_Customization.png)
 
-
 ## Module
 
  The width ratio of the wide and narrow bars can be customized using [Module](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_SfBarcode_Module) property. The following code snippet explains that how the [Module](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_SfBarcode_Module) property is used,
