@@ -18,7 +18,7 @@ The Background represents the color of the dark bar (Black color by default) and
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfBarcode x:Name="barcode" Background="Orange" Foreground="White" Value="48625310" Height="150" />
+<syncfusion:SfBarcode x:Name="barcode" Background="Orange" Foreground="White" Value="1010111011" Height="150" />
 
 {% endhighlight %}
 {% endtabs %} 
