@@ -11,29 +11,12 @@ documentation: ug
 
 This section provides a quick overview for getting started with the [Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html) for WinUI. Walk through the entire process of creating a real world of this control.
 
-## Creating simple application with Barcode
-
-* Creating the project
-* Add [Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html) to Project
-* Set the required Barcode using [Symbology](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_SfBarcode_Symbology) property.
-
 ## Creating an application with WinUI Barcode
 
-### Create a new WinUI Project
-
-Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
-
-### Add Barcode to Project
-
-The [Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html) control can be added to project by the following ways.
-
-#### Adding Barcode by XAML
-
-1. Add `Syncfusion.Barcode.WinUI` NuGet.
-2. Import `Syncfusion.UI.Xaml.Controls.Barcode` in XAML Page.
-3. Declare `Barcode` control in XAML page.
-
-The following code example shows how to create the Barcode control from XAML:
+1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
+2. Add reference to [Syncfusion.Barcode.WinUI](https://www.nuget.org/packages/Syncfusion.Barcode.WinUI) NuGet. 
+3. Import the control namespace `using Syncfusion.UI.Xaml.Controls.Barcode` in XAML or C# code.
+4. Initialize the SfBarCode control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -54,18 +37,7 @@ The following code example shows how to create the Barcode control from XAML:
 </Page>
 
 {% endhighlight %}
-{% endtabs %} 
 
-#### Adding Barcode by C#
-
-In order to add control manually in C#, do the below steps,
-
-1. Add the below required assembly references to the project,
-    * Syncfusion.Barcode.WinUI
-2. Import Barcode namespace `using Syncfusion.UI.Xaml.Controls.Barcode`.
-3. Create `Barcode` control instance and add it to the Page.
-
-{% tabs %} 
 {% highlight C# %} 
 
 using Microsoft.UI.Xaml.Controls;
