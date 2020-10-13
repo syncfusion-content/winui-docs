@@ -36,6 +36,8 @@ We can change the application culture by assigning the `CultureInfo.CurrentUICul
 
 You can create .resw files for any language by following the steps below,
 
+N> You can get the default resource files of all Syncfusion WinUI libraries from [GitHub](https://github.com/syncfusion/winui-controls-localization-resource-files).
+
 1) Right click your project and add new folder named Resources.
 
 2) Add another folder and name the folder name as culture name. For example, you have to give name as de for German culture. Find the supported culture codes from [here](https://docs.microsoft.com/en-us/windows/uwp/app-resources/how-rms-matches-lang-tags) 
@@ -54,4 +56,4 @@ N> Consider you are using `SfDataGrid` control in your application. Then you nee
 
 ## Editing default culture strings
 
-You can change the default string of any control by adding the default .resw files to Resources folder of your application. Syncfusion WinUI controls reads the default string from the .resw files of application if its added.
+You can change the default string of any control by adding the default .resw files (from [GitHub](https://github.com/syncfusion/winui-controls-localization-resource-files)) to Resources folder of your application. Syncfusion WinUI controls reads the default string from the .resw files of application if its added.
