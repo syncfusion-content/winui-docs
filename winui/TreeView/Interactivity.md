@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interacting with TreeView in WinUI | Syncfusion
-description: Learn here about the different interactions supported on Syncfusion WinUI TreeView control. And also explains about events associated with interactions in TreeView.
+description: Learn here about the different interactions supported on Syncfusion WinUI TreeView control. And also explains the events associated with the TreeView
 platform: WinUI
 control: TreeView
 documentation: ug
