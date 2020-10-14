@@ -61,9 +61,9 @@ The TreeView allows you to customize the appearance of content view and expander
 
 ## BindingContext for ItemTemplate
 
-By default, the binding context of treeview item will be the data model object for bound mode and [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) for unbound mode.
+By default, the binding context of tree view item will be the data model object for Bound Mode and [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) for Unbound Mode.
 
-For bound mode, you can change the binding context of the treeview items by using [ItemTemplateContextType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateDataContextType) property.
+For Bound Mode, you can change the binding context of the treeview items by using [ItemTemplateContextType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateDataContextType) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -123,7 +123,7 @@ For bound mode, you can change the binding context of the treeview items by usin
 
 ## ItemTemplate Selector
 
-The `TreeView` allows to customize the appearance of each item with different templates based on specific constraints by using the [ItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateSelector). You can choose a [DataTemplate](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.datatemplate?view=winrt-19041) for each item at runtime based on the value of data-bound property using `ItemTemplateSelector`.
+The `TreeView` allows you to customize the appearance of each item with different templates based on specific constraints by using the [ItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateSelector). You can choose a [DataTemplate](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.datatemplate?view=winrt-19041) for each item at runtime based on the value of data-bound property using `ItemTemplateSelector`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -273,7 +273,7 @@ treeView.ExpanderPosition = ExpanderPosition.End;
 
 ## Level based styling
 
-The `TreeView` allows to customize the style of [TreeViewItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewItem.html) based on different levels by using [IValueConverter](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.data.ivalueconverter?view=winrt-19041).
+The `TreeView` allows you to customize the style of [TreeViewItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewItem.html) based on different levels by using [IValueConverter](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.data.ivalueconverter?view=winrt-19041).
 
 {% tabs %}
 {% highlight xaml %}

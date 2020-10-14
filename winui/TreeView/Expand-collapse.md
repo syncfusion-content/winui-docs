@@ -13,7 +13,7 @@ The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.
 
 ##  Expand Action Trigger
 
- Expanding and collapsing of nodes can be performed either by tapping the expander view or in both expander view and content view by setting the [ExpandActionTrigger](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpandActionTrigger) property.
+ Expanding and Collapsing of nodes can be performed either by tapping the expander view or in both expander view and content view by setting the [ExpandActionTrigger](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpandActionTrigger) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -31,7 +31,7 @@ treeView.ExpandActionTrigger = ExpandActionTrigger.Node;
 
 ## Auto Expand Mode
 
-By default, the TreeView items will be in collapsed state. You can define how the nodes to be expanded while loading the TreeView by using [AutoExpandMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AutoExpandMode) property.
+By default, the treeview items will be in collapsed state. You can define how the nodes to be expanded while loading the TreeView by using [AutoExpandMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AutoExpandMode) property.
 
 The `AutoExpandMode` property is only applicable for bound mode. For Unbound mode you need to set `IsExpanded` property to `true` while creating the nodes, to be in expanded state while loading the TreeView.
 
@@ -41,7 +41,7 @@ The `AutoExpandMode` property is only applicable for bound mode. For Unbound mod
 
 ## Programmatic Expand and Collapse
 
-The TreeView allows programmatic expand and collapse based on the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) and level by using following methods.
+TreeView allows programmatic expand and collapse based on the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) and level by using following methods.
 
 * [ExpandNode(TreeViewNode item)](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpandNode_Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_) - Method to expand the particular `TreeViewNode` passed to it.
 * [CollapseNode(TreeViewNode item)](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CollapseNode_Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_) - Method to collapse the particular `TreeViewNode` passed to it.
@@ -67,7 +67,7 @@ treeView.CollapseNode(node);
 
 ### Expand and Collapse all the nodes
 
-Expand and collapse all the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) programmatically at runtime by using the `TreeView.ExpandAll` method and `TreeView.CollapseAll` method.
+Expand and Collapse all the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) programmatically at runtime by using the `TreeView.ExpandAll` method and `TreeView.CollapseAll` method.
 
 {% tabs %}
 {% highlight c# %}
