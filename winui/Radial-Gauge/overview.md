@@ -22,4 +22,4 @@ Syncfusion WinUI Radial Gauge is a multi-purpose data visualization control, tha
 * **Pointer interaction** - Radial gauge provides an option to drag a pointer from one value to another. It is used to change the value at run time.
 * **Annotations** - Adds multiple controls such as text and image as an annotation at a specific point of interest in the radial gauge.
 
-You can get the samples in the `GitHub` link. 
+N> You can get the samples in the [GitHub](https://github.com/syncfusion/winui-demos/tree/master/radialgauge) link. 

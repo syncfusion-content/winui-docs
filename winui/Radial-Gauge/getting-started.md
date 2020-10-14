@@ -13,41 +13,13 @@ This section explains the steps required to add the Radial Gauge control and its
 
 ## Creating an application with WinUI Radial Gauge
 
-**1.Create new WinUI Project**
+1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
 
-Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
+2. Add reference to [Syncfusion.Gauge.WinUI](https://www.nuget.org/packages/Syncfusion.Gauge.WinUI) NuGet.
 
-**2.Add Syncfusion.Gauges.WinUI NuGet.**
+3. Import the control namespace `Syncfusion.UI.Xaml.Gauges`  in XAML or C# code.
 
-Install the Syncfusion WinUI gauge nuget from [`nuget.org`](https://www.nuget.org/)
-
-NuGet name : Syncfusion.Gauge.WinUI
-
-![gauge nuget reference](images/getting-started/gauge_nuget_reference.png)
-
-**3.Declare namespace**
-
-After the package has been added, declare the namespace like below
-
-{% tabs %}
-
-{% highlight xml %}
-
-xmlns:gauge="using:Syncfusion.UI.Xaml.Gauges"
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-using Syncfusion.UI.Xaml.Gauges;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-**4.Initialize the radial gauge control**
-
-Initialize the SfRadialGauge as a child of any panel such as grid, stack panel or direct content to the Page. 
+4. Initialize the SfRadialGauge control
 
 {% tabs %}
 
@@ -104,7 +76,7 @@ this.Content = sfRadialGauge;
 
 ## Add range to the radial gauge
 
-Ranges contain a list of range elements, where you can add any number of ranges inside the axis. You can specify the start value, end value, and background color for range using the [`StartValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_StartValue), [`EndValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_EndValue), and `Background` properties as demonstrated in the following code.   
+Ranges contain a list of range elements, where you can add any number of ranges inside the axis. You can specify the start value, end value and background color for range using the [`StartValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_StartValue), [`EndValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_EndValue) and `Background` properties as demonstrated in the following code.   
 
 {% tabs %}
 
@@ -353,3 +325,5 @@ this.Content = sfRadialGauge;
 {% endhighlight %}
 
 {% endtabs %}
+
+N> Download demo application from [GitHub]()
