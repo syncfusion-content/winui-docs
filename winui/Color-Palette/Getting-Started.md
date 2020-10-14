@@ -226,29 +226,6 @@ colorPalette.StandardColors.ShowColorShades = true;
 
 ![ColorPalette with own color items](Working-with-SfColorPalette_images/CustomColor.png)
 
-## Recently used color items
-
-The recently selected color items are displayed in the Recent color panel. If you want to choose a color which are previously selected, use the Recent color panel. You can get the recently used color list from the [RecentColors](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_RecentColors) collection.
-
-N> Colors selected from theme and standard colors will not be added in recent colors.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfColorPalette Name="colorPalette"/>
-
-{% endhighlight %}
-{% highlight C# %}
-
-
-//Getting the recently used color list
-var recentColors = colorPalette.RecentColors;
-
-{% endhighlight %}
-{% endtabs %}
-
-![ColorPalette with recently used color items](Getting-Started_images/Recentcolors.png)
-
 ## Choosing a color from MoreColor dialog
 
 If you want to choose a color that is not available in palette, click the more color button and select the color from color spectrum and click the `Ok` button. 
@@ -268,6 +245,29 @@ colorPalette.ShowMoreColorsButton = true;
 {% endtabs %}
 
 ![ColorPalette with more color dialog](Getting-Started_images/MoreColorWindow.gif)
+
+## Recently used color items
+
+ If you want to choose a color brush which are recently selected from the `More Colors` dialog, use the `Recent Colors` panel. You can get the recently used color list from the [RecentColors](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_RecentColors) collection.
+
+N> Colors selected from theme and standard colors will not be added in recent colors.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfColorPalette Name="colorPalette"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+
+//Getting the recently used color list
+var recentColors = colorPalette.RecentColors;
+
+{% endhighlight %}
+{% endtabs %}
+
+![ColorPalette with recently used color items](Getting-Started_images/Recentcolors.png)
 
 ## Reset the selected color
 
@@ -290,9 +290,9 @@ colorPalette.ShowNoColorButton = true;
 
 ![ColorPalette resets selected color](Working-with-SfColorPalette_images/ShowNoColorButton.png)
 
-## Selected color changed notification
+## Selected color brush changed notification
 
-The selected color changed in `ColorPalette` can be examined using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_SelectedBrushChanged) event. The `SelectedBrushChanged` event contains the old and newly selected color values in the `OldBrush`, `NewBrush` properties.
+The selected color brush changed in `ColorPalette` can be examined using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_SelectedBrushChanged) event. The `SelectedBrushChanged` event contains the old and newly selected color values in the `OldBrush`, `NewBrush` properties.
 
 {% tabs %}
 {% highlight xaml %}
