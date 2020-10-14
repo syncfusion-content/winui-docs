@@ -9,7 +9,7 @@ documentation: ug
 
 # Tree line for WinUI TreeView
 
-[TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) allows to show the tree lines for treeview nodes by enabling the [ShowLines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ShowLines) property as `true`. The default value is `false`.
+The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) allows to show the tree lines for treeview nodes by enabling the [ShowLines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ShowLines) property as `true`. The default value is `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -24,7 +24,7 @@ treeView.ShowLines = true;
 
 ## Enable tree line for root nodes
 
-`TreeView` also supports to show the tree lines for root nodes by enabling the [ShowRootLines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ShowRootLines) property as `true`. The default value is `false`.
+The `TreeView` also supports to show the tree lines for root nodes by enabling the [ShowRootLines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ShowRootLines) property as `true`. The default value is `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -43,7 +43,7 @@ treeView.ShowRootLines = true;
 ## Customizing the tree lines
 
 ### Customizing the line color
-`TreeView` allows to change the color of tree lines by using the [LineStroke](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LineStroke) property. The default value is `SystemBaseMediumLowColor`.
+The `TreeView` allows to change the color of tree lines by using the [LineStroke](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LineStroke) property. The default value is `SystemBaseMediumLowColor`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -62,7 +62,7 @@ treeView.LineStroke = new SolidColorBrush(Colors.DeepSkyBlue);
 ![TreeLines for WinUI TreeView](TreeLines_images/LineStroke_image.jpg)
 
 ### Customizing the line thickness
-`TreeView` allows to change the thickness of tree lines by using the [LineStrokeThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LineStrokeThickness) property. The default value is `1`.
+The `TreeView` allows to change the thickness of tree lines by using the [LineStrokeThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LineStrokeThickness) property. The default value is `1`.
 
 {% tabs %}
 {% highlight xaml %}
