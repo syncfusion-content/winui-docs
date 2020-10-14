@@ -12,10 +12,30 @@ Each Barcode symbol can be associated with properties that may affect that speci
 
 ## One Dimensional Barcode Properties
 ### EnableCheckSum
- The [EnableCheckSum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.UnidimensionalBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_UnidimensionalBarcode_EnableCheckSum) property enables the redundancy check using a check digit, the decimal equivalent of a binary parity bit. It consists of a single digit computed from the other digits in the message. 
+ The [EnableCheckSum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.UnidimensionalBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_UnidimensionalBarcode_EnableCheckSum) property enables the redundancy check using a check digit, the decimal equivalent of a binary parity bit. It consists of a single digit computed from the other digits in the message.
+
+ {% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfBarcode.Symbology>  
+    <syncfusion:CodabarBarcode EnableCheckSum="True" ShowCheckSum="False" />   
+</syncfusion:SfBarcode.Symbology>
+
+{% endhighlight %}
+{% endtabs %}
  
  ### ShowCheckSum
  The check digit can be shown in the barcode or kept hidden by using the [ShowCheckSum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.UnidimensionalBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_UnidimensionalBarcode_ShowCheckSum) property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfBarcode.Symbology>  
+    <syncfusion:CodabarBarcode EnableCheckSum="True" ShowCheckSum="True" />   
+</syncfusion:SfBarcode.Symbology>
+
+{% endhighlight %}
+{% endtabs %}
 
 ### EncodeStartStopSymbols
 The [EncodeStartStopSymbols](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.UnidimensionalBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_UnidimensionalBarcode_EncodeStartStopSymbols) property adds Start and Stop symbols to signal a bar code reader that a bar code has been scanned.
@@ -24,7 +44,7 @@ The [EncodeStartStopSymbols](https://help.syncfusion.com/cr/winui/Syncfusion.UI.
 {% highlight xaml %}
 
 <syncfusion:SfBarcode.Symbology>  
-    <syncfusion:CodabarBarcode EncodeStartStopSymbols="True" EnableCheckSum="True" ShowCheckSum="False" />   
+    <syncfusion:CodabarBarcode EncodeStartStopSymbols="True" />   
 </syncfusion:SfBarcode.Symbology>
 
 {% endhighlight %}
