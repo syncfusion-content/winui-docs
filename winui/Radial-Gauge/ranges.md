@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion WinUI Gauge Range
+title: Syncfusion WinUI Radial Gauge Range
 description: This article describes how to add and customizes the appearence of ranges of radial gauge control in WinUI platform
 platform: WinUI
 control: SfRadialGauge
@@ -113,7 +113,7 @@ this.Content = sfRadialGauge;
 
 **Different range width**
 
-By setting different values to [`StartWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_StartWidth) and [`EndWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_EndWidth) property can create diffent width ranges. 
+By setting different values to [`StartWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_StartWidth) and [`EndWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_EndWidth) property can create different width ranges. 
 
 {% tabs %}
 
