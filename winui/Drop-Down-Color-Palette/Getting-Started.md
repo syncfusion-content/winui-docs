@@ -33,7 +33,7 @@ This section explains the steps required to add the [DropDownColorPalette](https
 
 ![Dropdown ColorPalette more color dialog structure](Getting-Started_images/MoreColorControl_Structure_GS.jpg)
 
-## Creating an application with WinUI DropDownColorPalette
+## Creating an application with WinUI DropDown ColorPalette
 
 1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
 
@@ -84,7 +84,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette added in the winui application](Getting-Started_images/controladded.png)
+![Dropdown ColorPalette added in the winui application](Getting-Started_images/controladded.png)
 
 ## Accessing a Color programmatically
 
@@ -238,13 +238,13 @@ public sealed partial class MainPage : Page
 
 ![Dropdown color palette recent color selected in split mode](Getting-Started_images/Splitbutton.gif)
 
-## Custom Color Palette
+## Customize the ColorPalette
 
-You can embed the [ColorPalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html) control inside the drop down color palette by using the [DropDownContentTemplate](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownContentTemplate) property. You can change the theme and standard colors and customize its panels, etc, based on your requirements.
+You can customize the color palette by replacing the default [ColorPalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html) with your own instance using [DropDownContentTemplate](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownContentTemplate) property.
 
 N> The `DataContext` of `DropDownContentTemplate` property is [SfDropDownColorPalette.DropDownContent](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownContent).
 
-N> You can refer the [ColorPalette](https://help.syncfusion.com/winui/color-palette/overview) documentation page to know more about all customization available for the `ColorPalette` control.
+N> You can refer the [ColorPalette](https://help.syncfusion.com/winui/color-palette/overview) documentation page to know more about all customization available in the `ColorPalette` control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -338,7 +338,7 @@ N> The `DropDownButtonTemplate` is effective only on when drop down mode is spli
         <DataTemplate>
             <StackPanel Height="30" 
                         Orientation="Vertical">
-                <Path Data="M19.551687,9.4412649L5.7859255,23.232995 3.1009826,28.505029 8.8409869,26.226037 22.573929,12.468039 22.138519,12.03162z M27.786037,2.0999956C27.232677,2.0999961,26.679191,2.3019958,26.275703,2.7059948L22.546806,6.4419879 20.686857,4.5799915C20.483862,4.3769917 20.213869,4.264992 19.926878,4.2649922 19.638885,4.264992 19.368892,4.3769917 19.163898,4.5809914 18.74391,5.0019907 18.74391,5.6889894 19.165899,6.1109889L19.552171,6.4977872 19.552927,6.4970304 22.776479,9.726485 25.902713,12.856976C26.105709,13.060976 26.375702,13.173975 26.662693,13.173975 26.949686,13.173975 27.221677,13.060976 27.424673,12.856976 27.845661,12.435977 27.845661,11.749978 27.424673,11.328979L27.424673,11.327979 25.567722,9.4689825 29.295622,5.7349892C30.129598,4.9009908 30.129598,3.5419934 29.295622,2.7059948 28.892631,2.3019958 28.339397,2.0999961 27.786037,2.0999956z M27.785661,0C28.911632,0 29.970602,0.4399991 30.76758,1.2379975 32.409534,2.8819947 32.409534,5.5589896 30.76758,7.2049866L28.506643,9.4689825 28.896631,9.8599815C30.126598,11.09098 30.126598,13.095976 28.896631,14.327973 28.299648,14.924973 27.50667,15.253972 26.662693,15.253972L26.661693,15.253972C25.818716,15.253972,25.025737,14.924973,24.429754,14.325974L24.044054,13.939747 10.008959,28.001 1.5649682,31.352014C1.4289816,31.40603 1.2868914,31.432031 1.1458999,31.432031 0.82888244,31.432031 0.51687,31.300988 0.29689856,31.059045 -0.021095165,30.709008 -0.091041619,30.191003 0.12294829,29.770043L4.197909,21.881004 18.082576,7.9701535 17.692939,7.579986C16.464973,6.3479882 16.464973,4.3429918 17.692939,3.1109939 18.888906,1.9149966 20.965849,1.9179964 22.159816,3.1099939L22.546806,3.4989934 24.803743,1.2379975C25.600723,0.4399991,26.659692,0,27.785661,0z" 
+                <Path Data="M22.078048,10.524087C22.078048,10.524087,31.99999,12.1271,31.99999,19.644161L31.99999,27.061223C31.99999,33.475275 25.987026,29.266241 25.987026,25.55721 25.987026,20.64617 30.397001,18.842155 28.392012,16.838139z M12.757101,0C17.367075,0,20.073059,6.5150537,20.174059,11.325093L20.174059,11.626096 20.374058,11.826097C22.178047,13.631112 24.483034,15.936131 25.28503,16.737138 26.588022,18.040148 25.686028,19.544161 25.18503,20.045165 24.583034,20.64617 14.160093,31.070255 14.160093,31.070255 12.9571,32.272265 8.9481231,30.067247 5.1401448,26.259216 1.3311667,22.450185 -0.8738203,18.341151 0.32917213,17.239142L11.354109,6.2140512C11.354109,6.2140512 12.055105,5.5120449 13.0581,5.5120449 13.559097,5.5120449 14.160093,5.713047 14.76109,6.3140526L15.964083,7.6170626C16.666079,9.8220806 16.165082,11.626096 15.864083,12.528103 15.263087,12.929107 14.862089,13.631112 14.862089,14.332118 14.862089,15.535128 15.864083,16.537136 17.067077,16.537136 18.26907,16.537136 19.272064,15.535128 19.272064,14.332118 19.272064,13.530111 18.871066,12.929107 18.26907,12.528103 18.37007,12.027099 18.37007,11.025091 18.16907,9.7220802 18.16907,9.7220802 18.37007,9.9220819 18.770067,10.323085L18.770067,10.123083C18.26907,6.0130501 15.964083,1.3030109 12.657102,1.3030109 8.6481248,1.3030109 7.7461299,5.4120445 7.74613,6.9150572L6.5431371,6.9150572C6.5431368,4.2090359,8.2471271,0,12.757101,0z" 
                       Stretch="Uniform"
                       Fill="Black" 
                       Width="20" Height="20" 
