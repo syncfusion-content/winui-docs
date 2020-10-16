@@ -11,29 +11,12 @@ documentation: ug
 
 This section provides a quick overview for getting started with the [Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html) for WinUI. Walk through the entire process of creating a real world of this control.
 
-## Creating simple application with Barcode
-
-* Creating the project
-* Add `Barcode` to Project
-* Set the required Barcode using `Symbology` property.
-
 ## Creating an application with WinUI Barcode
 
-### Create a new WinUI Project
-
-Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
-
-### Add Barcode to Project
-
-The `Barcode` control can be added to project by the following ways.
-
-#### Adding Barcode by XAML
-
-1. Add `Syncfusion.Barcode.WinUI` NuGet.
-2. Import `Syncfusion.UI.Xaml.Controls.Barcode` in XAML Page.
-3. Declare `Barcode` control in XAML page.
-
-The following code example shows how to create the Barcode control from XAML:
+1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
+2. Add reference to [Syncfusion.Barcode.WinUI](https://www.nuget.org/packages/Syncfusion.Barcode.WinUI) NuGet. 
+3. Import the control namespace `using Syncfusion.UI.Xaml.Controls.Barcode` in XAML or C# code.
+4. Initialize the SfBarCode control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -54,18 +37,7 @@ The following code example shows how to create the Barcode control from XAML:
 </Page>
 
 {% endhighlight %}
-{% endtabs %} 
 
-#### Adding Barcode by C#
-
-In order to add control manually in C#, do the below steps,
-
-1. Add the below required assembly references to the project,
-    * Syncfusion.Barcode.WinUI
-2. Import Barcode namespace `using Syncfusion.UI.Xaml.Controls.Barcode`.
-3. Create `Barcode` control instance and add it to the Page.
-
-{% tabs %} 
 {% highlight C# %} 
 
 using Microsoft.UI.Xaml.Controls;
@@ -91,7 +63,7 @@ public sealed partial class GettingStartedPage : Page
 
 ## Symbology
 
-You can set the required symbology to the barcode based on input value by initializing the respective Symbology instance in `Symbology` property. In the following code snippet, the QR code has been set as the barcode symbology.
+You can set the required symbology to the barcode based on input value by initializing the respective symbology instance using [Symbology](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_SfBarcode_Symbology) property. In the following code snippet, the QR code has been set as the barcode symbology.
 
 {% tabs %}
 {% highlight xaml %}
@@ -113,13 +85,13 @@ You can set the required symbology to the barcode based on input value by initia
 
 ![OR Barcode](Getting_Started_Images/QRBarcode.png)
 
-## Text Customization
+## Text customization
 
 The Barcode text can be customized by using below properties,
 
 ### Value
 
-The text to be encoded can be set using the `Value` property. By default, this original text will be displayed at the bottom of the bar code. 
+The text to be encoded can be set using the [Value](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_SfBarcode_Value) property. By default, this original text will be displayed at the bottom of the bar code. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -133,7 +105,7 @@ The text to be encoded can be set using the `Value` property. By default, this o
 
 ### TextSpacing
 
-The space between barcode and text can be increased/decreased by using `TextSpacing` property. 
+The space between barcode and text can be increased/decreased by using [TextSpacing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_SfBarcode_TextSpacing) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -147,7 +119,7 @@ The space between barcode and text can be increased/decreased by using `TextSpac
 
 ### ShowValue
 
-The visibility of the Barcode text can be changed using `ShowValue` property in Barcode. 
+The visibility of the Barcode text can be changed using [ShowValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_SfBarcode_ShowValue) property in Barcode. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -158,3 +130,31 @@ The visibility of the Barcode text can be changed using `ShowValue` property in 
 {% endtabs %}
 
 ![CodaBar Barcode with ShowValue set to false](Getting_Started_Images/showvalue.png)
+
+### HorizontalTextAlignment
+
+The horizontal alignment of the Barcode text can be changed using [HorizontalTextAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_SfBarcode_HorizontalTextAlignment) property in Barcode.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfBarcode x:Name="barcode" Value="10110111" Height="150" HorizontalTextAlignment="Right" />
+
+{% endhighlight %}
+{% endtabs %}
+
+![HorizontalTextAlignment set to Right](Getting_Started_Images/HorizontalTextAlignment.png)
+
+### VerticalTextAlignment
+
+The vertical alignment of the Barcode text can be changed using [VerticalTextAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_SfBarcode_VerticalTextAlignment) property in Barcode.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfBarcode x:Name="barcode" Value="10110111" Height="150" VerticalTextAlignment="Top" />
+
+{% endhighlight %}
+{% endtabs %}
+
+![VerticalTextAlignment set to Top](Getting_Started_Images/VerticalTextAlignment.png)
