@@ -7,14 +7,15 @@ control: Barcode
 documentation: ug
 ---
 
-# Symbology Customization
-Each Barcode symbol can be associated with properties that may affect that specific bar code. 
+# Symbology customization
+Each Barcode symbology can be associated with optional settings that may affect the specific bar code. 
 
-## One Dimensional Barcode Properties
+## 1D Barcode settings
+
 ### EnableCheckSum
  The [EnableCheckSum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.UnidimensionalBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_UnidimensionalBarcode_EnableCheckSum) property enables the redundancy check using a check digit, the decimal equivalent of a binary parity bit. It consists of a single digit computed from the other digits in the message.
 
- {% tabs %}
+{% tabs %}
 {% highlight xaml %}
 
 <syncfusion:SfBarcode.Symbology>  
@@ -24,7 +25,7 @@ Each Barcode symbol can be associated with properties that may affect that speci
 {% endhighlight %}
 {% endtabs %}
  
- ### ShowCheckSum
+### ShowCheckSum
  The check digit can be shown in the barcode or kept hidden by using the [ShowCheckSum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.UnidimensionalBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_UnidimensionalBarcode_ShowCheckSum) property.
 
 {% tabs %}
@@ -50,12 +51,15 @@ The [EncodeStartStopSymbols](https://help.syncfusion.com/cr/winui/Syncfusion.UI.
 {% endhighlight %}
 {% endtabs %}
 
-## Two Dimensional Barcode Properties
+## 2D Barcode settings
+
 ### DataMatrix Barcode settings
-The DataMatrix barcode can be modified using the properties [Encoding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.DataMatrixBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_DataMatrixBarcode_Encoding) and [MatrixSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.DataMatrixBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_DataMatrixBarcode_MatrixSize).
+The [DataMatrix](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.DataMatrixBarcode.html) barcode can be customized using the properties [Encoding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.DataMatrixBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_DataMatrixBarcode_Encoding) and [MatrixSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.DataMatrixBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_DataMatrixBarcode_MatrixSize).
 
 #### Encoding
-The encoding of the DataMatrix barcode can be modified using [Encoding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.DataMatrixBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_DataMatrixBarcode_Encoding) property. The DataMatrixEncoding enumeration has the following four encoding,
+The encoding format of the DataMatrix barcode can be modified using [Encoding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.DataMatrixBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_DataMatrixBarcode_Encoding) property to decide on the barcode value to be set.
+
+The [DataMatrixEncoding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.DataMatrixEncoding.html) enumeration has the following four encoding,
 
 * ASCII
 * ASCIINumeric
@@ -73,7 +77,7 @@ The encoding of the DataMatrix barcode can be modified using [Encoding](https://
 {% endtabs %}
 
 #### MatrixSize
-The [MatrixSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.DataMatrixBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_DataMatrixBarcode_MatrixSize) property allows user to specify the size of the barcode from a set of predefined sizes available in the DataMatrixSize enumeration.
+The [MatrixSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.DataMatrixBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_DataMatrixBarcode_MatrixSize) property allows user to specify the size of the barcode from a set of predefined sizes available in the [DataMatrixSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.DataMatrixSize.html) enumeration.
 
 {% tabs %}
 {% highlight xaml %}
@@ -86,6 +90,7 @@ The [MatrixSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Control
 {% endtabs %}
 
 **Data Matrix Size Table**
+
 <table>
 <tr>
 <th>
@@ -217,24 +222,24 @@ Size16x48</td><td>
 Rectangular matrix with 16 rows and 48 columns.</td></tr>
 </table>
 
-### QRBarcode Properties
-The QRBarcode properties are used to modify the version, error correction level and Input mode of the QRBarcode.
+### QRBarcode settings
+The [QRBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.QRBarcode.html) settings allows users to modify the version, error correction level and input mode of the QRBarcode.
 
 #### QRVersion
-The QR Barcode uses [QRVersion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.QRBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_QRBarcode_QRVersion) from 1 to 40 where Version 1 measures 21 modules x 21 modules, Version 2 measures 25 modules x 25 modules and so on increasing in steps of 4 modules per side up to Version 40 which measures 177 modules x 177 modules. By default, the QR Version is Auto, which will automatically set the version according to the input text length.
+The QR Barcode uses [QRVersion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.QRBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_QRBarcode_QRVersion) property to decide on the version from 1 to 40 using [QRBarcodeVersion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.QRBarcodeVersion.html) enumeration where Version 1 measures 21 modules x 21 modules, Version 2 measures 25 modules x 25 modules and so on increasing in steps of 4 modules per side up to Version 40 which measures 177 modules x 177 modules. By default, the QR Version is `Auto`, which will automatically set the version according to the input text length.
 
 {% tabs %}
 {% highlight xaml %}
 
 <syncfusion:SfBarcode.Symbology>   
-    <syncfusion:QRBarcode QRVersion="Auto" />
+    <syncfusion:QRBarcode QRVersion="Version01" />
 </syncfusion:SfBarcode.Symbology>
 
 {% endhighlight  %}
 {% endtabs %}
 
 #### ErrorCorrectionLevel
-The QR Barcode uses [ErrorCorrectionLevel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.QRBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_QRBarcode_ErrorCorrectionLevel) property to generate a series of error correction codewords which are added to the data code word sequence in order to enable the symbol to withstand damage without loss of data. There are four user–selectable levels of error correction. By default the Error correction level is Low.
+The QR Barcode uses [ErrorCorrectionLevel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.QRBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_QRBarcode_ErrorCorrectionLevel) property to generate a series of error correction codewords which are added to the data code word sequence in order to enable the symbol to withstand damage without loss of data. There are four user–selectable levels of error correction. By default the property value is `Low`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -247,6 +252,7 @@ The QR Barcode uses [ErrorCorrectionLevel](https://help.syncfusion.com/cr/winui/
 {% endtabs %}
 
 **Error Correction Level Table**
+
 <table>
 <tr>
 <th>
@@ -254,24 +260,30 @@ Error Correction Level</th><th>
 Recovery Capacity % (approx.)</th></tr>
 <tr>
 <td>
-L</td><td>
+Low</td><td>
 7</td></tr>
 <tr>
 <td>
-M</td><td>
+Medium</td><td>
 15</td></tr>
 <tr>
 <td>
-Q</td><td>
+Quartile</td><td>
 25</td></tr>
 <tr>
 <td>
-H</td><td>
+High</td><td>
 30</td></tr>
 </table>
 
 #### InputMode
-There are three input modes as described in the table. Each mode supports the same Input character set. User may select the most appropriate input mode. The default value for [InputMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.QRBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_QRBarcode_InputMode) property is BinaryMode.
+The QR Barcode uses [InputMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.QRBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_QRBarcode_InputMode) property to decide the supported character set for value. The default value is `BinaryMode`.
+
+The [QRInputMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.QRInputMode.html) enumeration has following values.
+
+* NumericMode
+* AlphaNumericMode
+* BinaryMode
 
 {% tabs %}
 {% highlight xaml %}
@@ -284,6 +296,7 @@ There are three input modes as described in the table. Each mode supports the sa
 {% endtabs %}
 
 **Input Mode Table**
+
 <table>
 <tr>
 <th>

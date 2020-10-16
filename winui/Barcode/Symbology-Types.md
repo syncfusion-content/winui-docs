@@ -8,9 +8,12 @@ documentation: ug
 ---
 
 # Types of Barcode Symbology
-Barcode Symbology supports 11 variants of one dimension and 2 variants of two dimensional barcodes that are shown as follows.
-## One Dimensional Barcodes
-One dimensional barcode is also called as linear barcode. The bars and spaces for each symbol in one dimensional barcodes are grouped in such a way to represent a specific ASCII character.
+Barcode Symbology supports 11 variants of 1D and 2 variants of 2D barcodes.
+
+## 1D Barcodes
+1D barcode is also called as linear barcode. The bars and spaces for each symbol in 1D barcodes are grouped in such a way to represent a specific ASCII character.
+
+The supported 1D barcode symbologies
 
 * Codabar
 * Code 11
@@ -253,14 +256,16 @@ The [UPCBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Control
 
 UPC Barcode
 
-## Two Dimensional Barcodes
-Two dimensional Barcode is a way to represent information via two-dimensional approach. It is similar to one dimensional Barcode, but can represent more data per unit area.
+## 2D Barcodes
+2D Barcode is a way to represent information via two-dimensional approach. It is similar to 1D Barcode, but can represent more data per unit area.
+
+The supported 2D barcode symbologies
 
 * QR Code
 * Data Matrix
 
 ### QR Code
-The [QRBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.QRBarcode.html) is a two dimensional symbology that is popularly used in automotive industry. It is known for fast readability and greater storage capacity.
+The [QRBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.QRBarcode.html) is a 2D barcode symbology that is popularly used in automotive industry. It is known for fast readability and greater storage capacity.
 
 {% tabs %}
 {% highlight xaml %}
@@ -279,7 +284,7 @@ QR Barcode
 {:.caption}
 
 ### Data Matrix
-The [DataMatrixBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.DataMatrixBarcode.html) is widely used in printed media such as labels and letters. It can be read easily by a Barcode reader and also by mobile phones. It consists of a Grid of dark and light dots or blocks forming square or rectangular symbol. The data encoded in the Barcode can be either number or alphanumeric.
+The [DataMatrixBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.DataMatrixBarcode.html) is widely used in printed media such as labels and letters. It can be read easily by a Barcode reader and also by mobile phones. It consists of a grid of dark and light dots or blocks forming square or rectangular symbol. The data encoded in the Barcode can be either number or alphanumeric.
 
 {% tabs %}
 {% highlight xaml %}
