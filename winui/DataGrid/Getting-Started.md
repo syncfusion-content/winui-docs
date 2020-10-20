@@ -162,7 +162,7 @@ public class ViewModel
 
 ### Binding to Data
 
-To bind the SfDataGrid to data, set the `SfDataGrid.ItemsSource` property to an IEnumerable implementation. Each row in SfDataGrid is bound to an object in data source and each column in SfDataGrid bound to a property in data object. 
+To bind the SfDataGrid to data, set the [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ItemsSource) property to an IEnumerable implementation. Each row in SfDataGrid is bound to an object in data source and each column in SfDataGrid bound to a property in data object. 
  
 Bind the collection created in previous step to `SfDataGrid.ItemsSource` property in XAML by setting ViewModel as `DataContext`.
 
@@ -202,7 +202,7 @@ Now, run the application and you can expect the below output,
 
 ## Defining Columns
 
-By default, the SfDataGrid control generates the columns automatically when value assigned to `SfDataGrid.ItemsSource` property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with. 
+By default, the SfDataGrid control generates the columns automatically when value assigned to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ItemsSource) property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with. 
 
 The following table lists the column types and it’s constraints for auto column generation.
 
@@ -233,9 +233,9 @@ Property of type Bool
 </tr>
 </table>
 
-When columns are auto-generated, you can handle the `SfDataGrid.AutoGeneratingColumn` event to customize or cancel the columns before they are added to the SfDataGrid. 
+When columns are auto-generated, you can handle the [SfDataGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_AutoGeneratingColumn) event to customize or cancel the columns before they are added to the SfDataGrid. 
 
-You can prevent the automatic column generation by setting SfDataGrid.AutoGenerateColumns property to `false`. When `SfDataGrid.AutoGenerateColumns` property is `false`, you have to define the columns to be displayed as below,
+You can prevent the automatic column generation by setting SfDataGrid.AutoGenerateColumns property to `false`. When [SfDataGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AutoGenerateColumns) property is `false`, you have to define the columns to be displayed as below,
 
 {% tabs %}
 {% highlight xaml %}
@@ -333,13 +333,13 @@ Represents SfDataGrid column that hosts textual or template-specified content wh
 
 ## Selection
 
-By default, the entire row is selected when a user clicks a cell in a SfDataGrid. You can set the `SfDataGrid.SelectionMode` property to specify whether a user can select single row or cell, or multiple rows or cells.  Set the `SfDataGrid.SelectionUnit` property to specify whether rows can be selected, or cells can selected.
+By default, the entire row is selected when a user clicks a cell in a SfDataGrid. You can set the [SfDataGrid.SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) property to specify whether a user can select single row or cell, or multiple rows or cells.  Set the [SfDataGrid.SelectionUnit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectionUnit) property to specify whether rows can be selected, or cells can selected.
 
-You can handle the selection operations with the help of `SfDataGrid.SelectionChanging` and `SfDataGrid.SelectionChanged` events of SfDataGrid.
+You can handle the selection operations with the help of [SfDataGrid.SelectionChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectionChanging) and [SfDataGrid.SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectionChanged) events of SfDataGrid.
 
 ## Sorting
 
-By default, you can sort columns in a SfDataGrid by clicking the column header. You can configure the sorting by setting `SfDataGrid.SortColumnDescriptions` property as below,
+By default, you can sort columns in a SfDataGrid by clicking the column header. You can configure the sorting by setting [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SortColumnDescriptions) property as below,
 
 {% tabs %}
 {% highlight xaml %}
@@ -354,7 +354,7 @@ By default, you can sort columns in a SfDataGrid by clicking the column header. 
 
 ![Displaying sorting in WinUI SfDataGrid](Getting-Started-images/Getting-Started-image2.png)
 
-You can customize sorting by handling the `SfDataGrid.SortColumnsChanging` and `SfDataGrid.SortColumnsChanged` events. To cancel the default sort, set the `Cancel` property to `true` in `SfDataGrid.SortColumnsChanging` event. 
+You can customize sorting by handling the [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SortColumnsChanging) and [SfDataGrid.SortColumnsChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SortColumnsChanged) events. To cancel the default sort, set the `Cancel` property to `true` in `SfDataGrid.SortColumnsChanging` event. 
 
 {% tabs %}
 {% highlight c# %}
@@ -371,7 +371,7 @@ private void SfDataGrid_SortColumnsChanging(object sender, GridSortColumnsChangi
 
 ## Grouping
 
-Grouping can be enabled by setting `SfDataGrid.ShowGroupDropArea` property, where you can group by dragging the column header and dropping it in the `GroupDropArea` over the column headers. You can configure the grouping by setting `SfDataGrid.GroupColumnDescriptions` property as below,
+Grouping can be enabled by setting [SfDataGrid.ShowGroupDropArea](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ShowGroupDropArea) property, where you can group by dragging the column header and dropping it in the `GroupDropArea` over the column headers. You can configure the grouping by setting [SfDataGrid.GroupColumnDescriptions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_GroupColumnDescriptions) property as below,
 
 {% tabs %}
 {% highlight xaml %}
@@ -388,12 +388,12 @@ Grouping can be enabled by setting `SfDataGrid.ShowGroupDropArea` property, wher
 
 ## Editing
 
-Editing can be enabled by setting `SfDataGrid.AllowEditing` property to `true`. 
-You can customize the editing operations by handling `SfDataGrid.CurrentCellBeginEdit` and `SfDataGrid.CurrentCellEndEdit` events.
+Editing can be enabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowEditing) property to `true`. 
+You can customize the editing operations by handling [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentCellBeginEdit) and [SfDataGrid.CurrentCellEndEdit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentCellEndEdit) events.
 
 ## Filtering
 
-Filtering can be enabled by setting `SfDataGrid.AllowFiltering` property to `true`, where you can open advanced filter UI by clicking the Filter icon in column header and filter the SfDataGrid. You can customize the filtering operations by handling `SfDataGrid.FilterChanging` and `SfDataGrid.FilterChanged` events.
+Filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_AllowFiltering) property to `true`, where you can open advanced filter UI by clicking the Filter icon in column header and filter the SfDataGrid. You can customize the filtering operations by handling [SfDataGrid.FilterChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_FilterChanging) and [SfDataGrid.FilterChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_FilterChanged) events.
 
 ![Displaying Filtering in WinUI SfDataGrid](Getting-Started-images/Getting-Started-image4.png)
 

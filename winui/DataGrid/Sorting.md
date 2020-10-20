@@ -245,7 +245,7 @@ public class CustomComparer : IComparer<object>, ISortDirection
 
 #### Adding custom comparer to SfDataGrid
 
-Custom comparer can be added to `SfDataGrid.SortComparers` property. `SortComparers` maintains custom comparers and the custom comparer gets called when corresponding column gets sorted by clicking column header or programmatically.
+Custom comparer can be added to [SfDataGrid.SortComparers](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SortComparers) property. `SortComparers` maintains custom comparers and the custom comparer gets called when corresponding column gets sorted by clicking column header or programmatically.
  
 {% tabs %}
 {% highlight xaml %}
