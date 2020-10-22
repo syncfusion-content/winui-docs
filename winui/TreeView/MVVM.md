@@ -376,4 +376,6 @@ public class SelectionModel : NotificationObject
 
 ![WinUI TreeView with MVVM selection](MVVM_images/SelectedItems_image.jpg)
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/MVVM-with-Selection)
+
 

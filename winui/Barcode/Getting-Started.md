@@ -158,3 +158,5 @@ The vertical alignment of the Barcode text can be changed using [VerticalTextAli
 {% endtabs %}
 
 ![VerticalTextAlignment set to Top](Getting_Started_Images/VerticalTextAlignment.png)
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-barcode-examples)

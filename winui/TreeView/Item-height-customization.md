@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Item Height Customization in WinUI TreeView | Syncfusion
-description: Learn here about customize the height of the items in WinUI TreeView. And autofit the items based on node content.
+description: Learn here about customize the height of the items in WinUI TreeView and autofit the items based on node content.
 platform: WinUI
 control: TreeView
 documentation: ug
