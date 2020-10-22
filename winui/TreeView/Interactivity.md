@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interacting with TreeView in WinUI | Syncfusion
-description: Learn here about the different interactions supported on Syncfusion WinUI TreeView control. And also explains the events associated with the TreeView
+description: Learn here about the different interactions supported on Syncfusion WinUI TreeView control and also explains the events associated with the TreeView
 platform: WinUI
 control: TreeView
 documentation: ug
@@ -15,7 +15,7 @@ documentation: ug
 
 ### ItemTapped event
 
-The [ItemTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTapped) event will be triggered whenever tapping the item.  [ItemTappedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.ItemTappedEventArgs.html) has the following members which provides the information for `ItemTapped` event:
+The [ItemTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTapped) event will be triggered whenever tapping the item. The [ItemTappedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.ItemTappedEventArgs.html) has the following members which provides the information for `ItemTapped` event:
 
  * `Node`: Gets the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) and data associated with the tapped item as its arguments.
  * `Position`: Gets the touch position in the tapped item.
@@ -59,7 +59,7 @@ private async void treeView_ItemDoubleTapped(object sender, ItemDoubleTappedEven
 
 ### ItemHolding event
 
-The [ItemHolding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemHolding) event will be triggered whenever the item is long pressed.
+The [ItemHolding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemHolding) event will be triggered whenever the item is long pressed. The 
  [ItemHoldingEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.ItemHoldingEventArgs.html) has the following members which provides the information for `ItemHolding` event:
 
  * `Node`: Gets the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) and data associated with the hold item as its arguments.

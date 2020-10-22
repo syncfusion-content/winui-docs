@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Load On-demand in WinUI TreeView | Syncfusion
-description: Learn here about loading nodes on demand on Syncfusion WinUI TreeView control. And also explains about the handling expander visibility in TreeView.
+description: Learn here about loading nodes on demand on Syncfusion WinUI TreeView control and also explains about the handling expander visibility in TreeView.
 platform: WinUI
 control: TreeView
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Load on demand in WinUI TreeView
 
-The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) allows you to load child items only when they are requested using Load on-demand(Lazy load). It helps to load the child items from services when end-user expands the node. Initially populate the root [Nodes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) by assigning [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) and then when any node is expanded, child items can be loaded using [LoadOnDemandCommand](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LoadOnDemandCommand). Load on-demand is applicable for bound mode only.
+The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) allows you to load child items only when they are requested using Load on-demand(Lazy load). It helps to load the child items from services when end-user expands the node. Initially populate the root [Nodes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) by assigning [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) and then when any node is expanded, child items can be loaded using [LoadOnDemandCommand](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LoadOnDemandCommand). The Load on-demand is applicable for bound mode only.
 
 {% tabs %}
 {% highlight xaml %}
@@ -208,21 +208,15 @@ public class LoadOnDemandModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-N> `LoadOnDemandCommand` receives [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) as command parameter by default. 
+N> The `LoadOnDemandCommand` receives [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) as command parameter by default. 
 
 ## Handling expander visibility
 
-The `TreeView` shows the expander for a particular node based on return value of [CanExecute](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.input.icommand.canexecute?view=winrt-19041) method of [LoadOnDemandCommand](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LoadOnDemandCommand). If `CanExecute` returns `true`, then expander icon is displayed for that node. If `CanExecute` returns `false`, then expander icon will not displayed for that node. `CanExecute` method gets called to decide the visibility of expander icon and before executing `LoadOnDemandCommand`. 
+The `TreeView` shows the expander for a particular node based on return value of [CanExecute](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.input.icommand.canexecute?view=winrt-19041) method of [LoadOnDemandCommand](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LoadOnDemandCommand). If `CanExecute` returns `true`, then expander icon is displayed for that node. If `CanExecute` returns `false`, then expander icon will not be displayed for that node. The `CanExecute` method gets called to decide the visibility of expander icon and before executing `LoadOnDemandCommand`. 
 
 {% tabs %}
 {% highlight c# %}
 
-/// <summary>
-/// CanExecute method is called before expanding and initialization of node. Returns whether the node has child nodes or not.
-/// Based on return value, expander visibility of the node is handled.  
-/// </summary>
-/// <param name="sender">TreeViewNode is passed as default parameter </param>
-/// <returns>Returns true, if the specified node has child items to load on demand and expander icon is displayed for that node, else returns false and icon is not displayed.</returns>
 private bool CanExecuteOnDemandLoading(object sender)
 {
     var haschildnodes = ((sender as TreeViewNode).Content as LoadOnDemandModel).HasChildNodes;
@@ -242,7 +236,7 @@ private bool CanExecuteOnDemandLoading(object sender)
 
 ## On-demand loading of child items
 
-You can load child items for the node in [Execute](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.input.icommand.execute?view=winrt-19041) method of `LoadOnDemandCommand`. Execute method will get called when user expands the tree node. In `LoadOnDemand.Execute` method, you have can perform following operations,
+You can load child items for the node in [Execute](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.input.icommand.execute?view=winrt-19041) method of `LoadOnDemandCommand`. The Execute method will get called when user expands the tree node. In `LoadOnDemand.Execute` method, you can perform following operations,
 
 * Show or hide busy indicator in the place of expander by setting [TreeViewNode.ShowExpanderAnimation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html#Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_ShowExpanderAnimation) until the data fetched.
 * Once data fetched, you can populate the child nodes by calling [TreeViewNode.PopulateChildNodes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html#Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_PopulateChildNodes_System_Collections_IEnumerable_) method by passing the child items collection. 
@@ -252,10 +246,6 @@ You can load child items for the node in [Execute](https://docs.microsoft.com/en
 {% tabs %}
 {% highlight c# %}
 
-/// <summary>
-/// Execute method is called when any item is requested for load-on-demand items.
-/// </summary>
-/// <param name="obj">TreeViewNode is passed as default parameter </param>
 private async void ExecuteOnDemandLoading(object obj)
 {
     var node = obj as TreeViewNode;
@@ -276,3 +266,5 @@ private async void ExecuteOnDemandLoading(object obj)
 {% endtabs %}
 
 ![WinUI TreeView with Load On-Demand](LoadOnDemand_images/load-on-demand.gif)
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Load-On-Demand)

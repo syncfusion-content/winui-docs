@@ -88,3 +88,5 @@ private void BringIntoView_Click(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Bring-into-View).
+

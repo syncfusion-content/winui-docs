@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in WinUI TreeView control | Syncfusion
-description: This section describes about the Appearance support in Syncfusion WinUI TreeView control and more details. 
+description: This section describes about the appearance customization in Syncfusion WinUI TreeView control and more details. 
 platform: Winui
 control: TreeView
 documentation: ug
@@ -214,6 +214,8 @@ class ItemTemplateSelector : DataTemplateSelector
 
 ![ItemTemplateSelector in TreeView ](Appearance_images/ItemTemplateSelector_image.jpg)
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Item-Template-Selector)
+
 ## Indentation
 
 The `TreeView` allows customizing the indent spacing of items by setting the [Indentation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Indentation) property. The default value of this property is 30. This property can be customized at runtime.
@@ -254,8 +256,8 @@ treeView.ExpanderWidth = "40";
 
 The `TreeView` allows you change the position of expander view by setting the [ExpanderPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpanderPosition) property. The default value of this property is `Start`. This property has following two positions:
 
-Start: Allows displaying the expander view at the start position.
-End: Allows displaying the expander view at the end position.
+* `Start`: Allows displaying the expander view at the start position.
+* `End`: Allows displaying the expander view at the end position.
 
 {% tabs %}
 {% highlight xaml %}
@@ -336,7 +338,9 @@ public class FontAttributeConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![ItemTemplateSelector in TreeView ](Appearance_images/LevelBasedStyling_image.jpg)
+![Level based styling in TreeView ](Appearance_images/LevelBasedStyling_image.jpg)
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Level-Based-Styling)
 
 ## Animation
 
@@ -356,4 +360,4 @@ treeView.IsAnimationEnabled = true;
 {% endhighlight %}
 {% endtabs %}
 
-![ItemTemplateSelector in TreeView ](Appearance_images/Animation.gif)
+![Animation in TreeView ](Appearance_images/Animation.gif)
