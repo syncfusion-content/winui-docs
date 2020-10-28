@@ -1,79 +1,15 @@
 ---
 layout: post
-title: Getting started with WinUI Badge control | Syncfusion
-description: This section describes about how to add the Badge control into WinUI application and its basic features.
+title: Customization of WinUI Badge control | Syncfusion
+description: This section describes about how to customize the Badge control in WinUI application and its basic features.
 platform: WinUI
 control: SfBadge
 documentation: ug
 ---
 
-# Getting started with WinUI Badge (SfBadge)
+# Customization of WinUI Badge (SfBadge)
 
-This section explains the steps required to add the [Badge](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html) control and its elements such as shapes, alignment and predefined colors. This section covers only basic features needed to get started with Syncfusion `Badge` control.
-
-## Structure of Badge control
-
-![Structure of WinUI Badge control](Getting-Started_images/Structure.png)
-
-## Creating an application with WinUI Badge
-
-1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
-
-2. Add reference to [Syncfusion.Notifications.WinUI](https://www.nuget.org/packages/Syncfusion.Notifications.WinUI) NuGet. 
-
-3. Import the control namespace `Syncfusion.UI.Xaml.Notifications`  in XAML or C# code.
-
-4. Initialize the `SfBadge` control.
-
-{% tabs %}
-{% highlight xaml %}
-<Page
-    x:Class="GettingStarted.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:GettingStarted"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Notifications"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Grid>
-        <syncfusion:SfBadge Name="badge"
-                            Height="30"
-                            Width="30"/>
-    </Grid>
-</Page>
-
-{% endhighlight %}
-{% highlight c# %}
-
-{% highlight C# %}
-
-using Syncfusion.UI.Xaml.Notifications;
-
-namespace GettingStarted
-{
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
-    public sealed partial class MainPage : Page
-    {
-        public MainPage()
-        {
-            this.InitializeComponent();
-            // Creating an instance of the Badge control
-            SfBadge badge = new SfBadge();
-
-            // Setting height and width to Badge control
-            badge.Height = 30;
-            badge.Width = 30;
-            grid.Children.Add(badge);
-        }
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
+This section explains the customization features available in the WinUI [Badge](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html) control.
 
 ## Adding badge for a Button
 
@@ -99,7 +35,7 @@ Here, `Badge` control added for the `Button` control.
 {% highlight C# %}
 
 //Creating Badge control
-SfBadge badge = new SfBadge();
+Badge badge = new Badge();
 badge.Content = "10";
 
 BadgeContainer badgeContainer = new BadgeContainer();
@@ -215,7 +151,7 @@ If you want to set or change the display content of the `Badge`, use the `Conten
 {% endhighlight %}
 {% highlight C# %}
 
-SfBadge badge = new SfBadge();
+Badge badge = new Badge();
 //Setting Badge display content
 badge.Content = "99+";
 
@@ -232,67 +168,26 @@ badgeContainer.Badge = badge;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Content_CustomUI)
 
-## Alignment of Badge
+## Custom UI for Badge content
 
-you can align the `Badge` either horizontally or vertically by using the `Badge.HorizontalAlignment` or `VerticalAlignment` properties. The default value of `HorizontalAlignment` property is `Right` and `VerticalAlignment` property is `Top`.
-
-<table>
-
-<tr>
-<td class="invisible" ></td>
-<th style="text-align:center" colspan = "4">HorizontalAlignment</th>
-</tr>
-
-<tr>
-<th>VerticalAlignment</th>
-<td>Left</td>
-<td>Center</td>
-<td>Right</td>
-<td>Stretch</td>
-</tr>
-
-<tr>
-<td>Top</td>
-<td><img src="Getting-Started_images/Left-top.png" alt="Left-Top alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Center-Top.png" alt="Center-Top alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Right-Top.png" alt="Right-Top alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Stretch-Top.png" alt="Stretch-Top alignment of Badge"/></td>
-</tr>
-
-<tr>
-<td>Center</td>
-<td><img src="Getting-Started_images/Left-center.png" alt="Left-center alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Center-Center.png" alt="Center-Center alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Right-Center.png" alt="Right-Center alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Stretch-Center.png" alt="Stretch-Center alignment of Badge"/></td>
-</tr>
-
-<tr>
-<td>Bottom</td>
-<td><img src="Getting-Started_images/Left-Bottom.png" alt="Left-Bottom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Center-Bottom.png" alt="Center-Bottom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Right-Bottom.png" alt="Right-Bottom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Stretch-Bottom.png" alt="Stretch-Bottom alignment of Badge"/></td>
-</tr>
-
-<tr>
-<td>Stretch</td>
-<td><img src="Getting-Started_images/Left-Stretch.png" alt="Left-Stretch alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Center-Stretch.png" alt="Center-Stretch alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Right-Stretch.png" alt="Right-Stretch alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Stretch-Stretch.png" alt="Stretch-Stretch alignment of Badge"/></td>
-</tr>
-</table>
+You can change the appearance of `Badge` content by using `ContentTemplate` property. The `DataContext` of `ContentTemplate` property is `Content`.
 
 {% tabs %}
 {% highlight XAML %}
 
 <syncfusion:BadgeContainer Name="badgeContainer"  >
     <syncfusion:BadgeContainer.Badge>
-        <syncfusion:SfBadge HorizontalAlignment="Left"
-                            VerticalAlignment="Center"
-                            Content="99+"
-                            Name="badge"/>
+        <syncfusion:SfBadge  Name="badge" 
+                             Content="10">                
+            <syncfusion:SfBadge.ContentTemplate>
+                <DataTemplate>
+                    <Grid Background="Yellow">
+                        <TextBlock Text="{Binding}" 
+                                   Foreground="Red"/>
+                    </Grid>
+                </DataTemplate>
+            </syncfusion:SfBadge.ContentTemplate>
+        </syncfusion:SfBadge>
     </syncfusion:BadgeContainer.Badge>
     <syncfusion:BadgeContainer.Content>
         <Button Content="Inbox">
@@ -301,52 +196,11 @@ you can align the `Badge` either horizontally or vertically by using the `Badge.
 </syncfusion:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
-
-badge.HorizontalAlignment = HorizontalAlignment.Left;
-badge.VerticalAlignment = VerticalAlignment.Center;
-badge.Content = "99+";
-
-{% endhighlight %}
 {% endtabs %}
 
-![Alignment of the Badge control is changed](Getting-Started_images/Alignment.png)
+![Displaying the custom UI of Bagde content](Getting-Started_images/ContentTemplate.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
-
-## Positioning of Badge
-
-You can change the horizontal or vertical position of the `Badge` either inside, outside or in the middle by using the [HorizontalAnchor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalAnchor) and [VerticalAnchor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalAnchor) properties. The default value of `HorizontalAnchor` and `VerticalAnchor` properties is `Center`.
-
-{% tabs %}
-{% highlight XAML %}
-
-<syncfusion:BadgeContainer Name="badgeContainer"  >
-    <syncfusion:BadgeContainer.Badge>
-        <syncfusion:SfBadge HorizontalAnchor="Outside"
-                            VerticalAnchor="Center"
-                            Content="99+"
-                            Name="badge"/>
-    </syncfusion:BadgeContainer.Badge>
-    <syncfusion:BadgeContainer.Content>
-        <Button Content="Inbox">
-        </Button>
-    </syncfusion:BadgeContainer.Content>
-</syncfusion:BadgeContainer>
-
-{% endhighlight %}
-{% highlight C# %}
-
-badge.HorizontalAnchor = BadgeAnchor.Outside;
-badge.VerticalAnchor = BadgeAnchor.Center;
-badge.Content = "99+";
-
-{% endhighlight %}
-{% endtabs %}
-
-![Position of the Badge control is changed](Getting-Started_images/Anchor.png)
-
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Content_CustomUI)
 
 ## Predefined colors for displaying the badges
 
@@ -531,6 +385,70 @@ badge.Content = "1";
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
 
+## Stroke customization
+
+You can change stroke color and its thickness by using the [Stroke](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_Stroke) and [StrokeThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_StrokeThickness) properties. The default value of `Stroke` property is `null` and `StrokeThickness` property is `0`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:BadgeContainer Name="badgeContainer"  >
+    <syncfusion:BadgeContainer.Badge>
+        <syncfusion:SfBadge Stroke="Red"
+                            StrokeThickness="3"
+                            Content="99+"
+                            Name="badge"/>
+    </syncfusion:BadgeContainer.Badge>
+    <syncfusion:BadgeContainer.Content>
+        <Button Content="Inbox">
+        </Button>
+    </syncfusion:BadgeContainer.Content>
+</syncfusion:BadgeContainer>
+
+{% endhighlight %}
+{% highlight C# %}
+
+badge.Stroke = new SolidColorBrush(Colors.Red);
+badge.StrokeThickness = 3;
+badge.Content = "99+";
+
+{% endhighlight %}
+{% endtabs %}
+
+![Displaying the Badge with customized stroke](Getting-Started_images/Stroke.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Control)
+
+## Hide the Badge
+
+You can hide the `Badge` by setting the `Visibility` property value as `Collapsed`. Badge will be hidden when its content is `null`. The default value of `Visibility` property is `Visible`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:BadgeContainer Name="badgeContainer"  >
+    <syncfusion:BadgeContainer.Badge>
+        <syncfusion:SfBadge Visibility="Collapsed"
+                            Content="99+"
+                            Name="badge"/>
+    </syncfusion:BadgeContainer.Badge>
+    <syncfusion:BadgeContainer.Content>
+        <Button Content="Inbox">
+        </Button>
+    </syncfusion:BadgeContainer.Content>
+</syncfusion:BadgeContainer>
+
+{% endhighlight %}
+{% highlight C# %}
+
+badge.Visibility = Visibility.Collapsed;
+badge.Content = "99+";
+
+{% endhighlight %}
+{% endtabs %}
+
+![Visibility of the Badge control is restricted](Getting-Started_images/hidden.png)
+
 ## Display number formatting
 
 You can format the numbers which are displayed in the `Badge` content by using the converters. For example, you can display the number as `99+` which is greater than or equal to `100`.
@@ -616,3 +534,135 @@ public class CustomNumberConverter : IValueConverter {
 ![Number formatting for the Badge content](Getting-Started_images/number.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Content_CustomUI)
+
+## Change Badge size
+
+You can change the size of `Badge` by using the `Width` and `Height` properties. The default value of `Width` property is `40` and `Height` property is `30`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:BadgeContainer Name="badgeContainer"  >
+    <syncfusion:BadgeContainer.Badge>
+        <syncfusion:SfBadge Width="60" 
+                            Height="60" 
+                            Content="99+"
+                            Name="badge"/>
+    </syncfusion:BadgeContainer.Badge>
+    <syncfusion:BadgeContainer.Content>
+        <Button Content="Inbox">
+        </Button>
+    </syncfusion:BadgeContainer.Content>
+</syncfusion:BadgeContainer>
+
+{% endhighlight %}
+{% highlight C# %}
+
+badge.Width = 60;
+badge.Height = 60;
+badge.Content = "99+";
+
+{% endhighlight %}
+{% endtabs %}
+
+![Size of the Badge control is changed](Getting-Started_images/size.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Getting_Started)
+
+## Text formatting
+
+You can change the style, size and font family of the `Badge` display content by using the `FontFamily`, `FontStyle` and `FontSize` properties. The default value of `FontFamily` property is `Segoe UI`, `FontStyle` property is `Normal` and  `FontSize` property is `14`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:BadgeContainer Name="badgeContainer"  >
+    <syncfusion:BadgeContainer.Badge>
+        <syncfusion:SfBadge  Name="badge"
+                             FontFamily="Perpetua"
+                             FontSize="20"
+                             FontStyle="Oblique" 
+                             Content="99+"/>
+    </syncfusion:BadgeContainer.Badge>
+    <syncfusion:BadgeContainer.Content>
+        <Button Content="Inbox">
+        </Button>
+    </syncfusion:BadgeContainer.Content>
+</syncfusion:BadgeContainer>
+
+{% endhighlight %}
+{% highlight C# %}
+
+badge.FontFamily = new FontFamily("Perpetua");
+badge.FontSize = 20;
+badge.FontStyle = Windows.UI.Text.FontStyle.Oblique;
+badge.Content = "99+";
+
+{% endhighlight %}
+{% endtabs %}
+
+![Badge display content text format changed](Getting-Started_images/Text_formatting.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Control)
+
+## Rotate the Badge
+
+You can place the `Badge` with a specific rotation angle by using the `Rotation` property. The default value of `Rotation` property is `0`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:BadgeContainer Name="badgeContainer"  >
+    <syncfusion:BadgeContainer.Badge>
+        <syncfusion:SfBadge Rotation="30"
+                            Content="99+"
+                            Name="badge"/>
+    </syncfusion:BadgeContainer.Badge>
+    <syncfusion:BadgeContainer.Content>
+        <Button Content="Inbox">
+        </Button>
+    </syncfusion:BadgeContainer.Content>
+</syncfusion:BadgeContainer>
+
+{% endhighlight %}
+{% highlight C# %}
+
+badge.Rotation = 30;
+badge.Content = "99+";
+
+{% endhighlight %}
+{% endtabs %}
+
+![Displaying the rotated Badge](Getting-Started_images/Rotation.png)
+
+## Change opacity of Badge
+
+You can change opacity of the `Badge` by using the `Opacity` property. The default value of `Opacity` property is `1`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:BadgeContainer Name="badgeContainer"  >
+    <syncfusion:BadgeContainer.Badge>
+        <syncfusion:SfBadge Opacity="0.6"
+                            Content="99+"
+                            Name="badge"/>
+    </syncfusion:BadgeContainer.Badge>
+    <syncfusion:BadgeContainer.Content>
+        <Button Content="Inbox">
+        </Button>
+    </syncfusion:BadgeContainer.Content>
+</syncfusion:BadgeContainer>
+
+{% endhighlight %}
+{% highlight C# %}
+
+badge.Opacity = 0.6;
+badge.Content = "99+";
+
+{% endhighlight %}
+{% endtabs %}
+
+![Displaying the Badge with reduced opacity](Getting-Started_images/Opacity.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Control)
