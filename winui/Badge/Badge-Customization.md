@@ -72,7 +72,7 @@ public class ViewModel {
             UnreadMessageCount = 20 });
         MailItems.Add(new ListItem() { ItemName = "Drafts", 
             UnreadMessageCount = null });
-        MailItems.Add(new ListItem() { ItemName = "Sent Intems", 
+        MailItems.Add(new ListItem() { ItemName = "Sent Items", 
             UnreadMessageCount = 5 });
         MailItems.Add(new ListItem() { ItemName = "Deleted Items",
             UnreadMessageCount = null });
@@ -132,7 +132,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Setting Badge display content
 
-If you want to set or change the display content of the `Badge`, use the `Badge.Content` property. The default value of `Badge.Content` property is `null`.
+If you want to set or change the display content of the `Badge`, use the `Content` property. The default value of `Content` property is `null`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -170,7 +170,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Custom UI for Badge content
 
-You can change the appearance of `Badge` content by using `Badge.ContentTemplate` property. The `DataContext` of `Badge.ContentTemplate` property is `Badge.Content`.
+You can change the appearance of `Badge` content by using `ContentTemplate` property. The `DataContext` of `ContentTemplate` property is `Content`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -204,7 +204,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Predefined colors for displaying the badges
 
-You can change background color of the `Badge` by using the [Badge.Fill](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_Fill) property. Based on the value of `Badge.Fill` property, respective background color will be applied to the `Badge`. The default value of `Badge.Fill` property is `Accent`.
+You can change background color of the `Badge` by using the [Fill](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_Fill) property. Based on the value of `Fill` property, respective background color will be applied to the `Badge`. The default value of `Fill` property is `Accent`.
 
 The `Badge` supports the following different essential states :
 
@@ -254,7 +254,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Custom colors for displaying the badges
 
-If you want to change the background color of the `Badge` other than the default `Badge.Fill` colors, use the `Badge.Background` property. You can also change foreground of the `Badge` by using the `Badge.Foreground` property. The default value of `Badge.Background` and `Badge.Foreground` properties is `null`. 
+If you want to change the background color of the `Badge` other than the default `Fill` colors, use the `Background` property. You can also change foreground of the `Badge` by using the `Foreground` property. The default value of `Background` and `Foreground` properties is `null`. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -288,7 +288,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Predefined shapes for displaying the Badge
 
-You can change the default shape to either `Rectangle`, `Oval` or `Ellipse` by using [Badge.Shape](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_Shape) property. If you want to display the `Badge` content without any default shapes , use the `Badge.Shape` property value as `None`. The default value of `Badge.Shape` property is `Ellipse`.
+You can change the default shape to either `Rectangle`, `Oval` or `Ellipse` by using [Shape](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_Shape) property. If you want to display the `Badge` content without any default shapes , use the `Shape` property value as `None`. The default value of `Shape` property is `Ellipse`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -320,7 +320,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Custom shape for displaying the Badge
 
-If you want to change the shape of the `Badge` other than the default shapes, use the [Badge.CustomShape](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_CustomShape) property. You can enable the custom shapes by setting the `Badge.Shape` property value as `Custom`.
+If you want to change the shape of the `Badge` other than the default shapes, use the [CustomShape](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_CustomShape) property. You can enable the custom shapes by setting the `Shape` property value as `Custom`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -348,7 +348,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Animate when content changes
 
-You can enable the `Scale` or `Opacity` based animation for displaying the `Badge` text by using [Badge.AnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_AnimationType) property. You can only see the animation when you change the text of the `Badge`. The default value of `Badge.AnimationType` property is `None`.
+You can enable the `Scale` or `Opacity` based animation for displaying the `Badge` text by using [AnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_AnimationType) property. You can only see the animation when you change the text of the `Badge`. The default value of `AnimationType` property is `None`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -387,7 +387,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Stroke customization
 
-You can change stroke color and its thickness by using the [Badge.Stroke](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_Stroke) and [Badge.StrokeThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_StrokeThickness) properties. The default value of `Badge.Stroke` property is `null` and `Badge.StrokeThickness` property is `0`.
+You can change stroke color and its thickness by using the [Stroke](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_Stroke) and [StrokeThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_StrokeThickness) properties. The default value of `Stroke` property is `null` and `StrokeThickness` property is `0`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -421,7 +421,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Hide the Badge
 
-You can hide the `Badge` by setting the `Badge.Visibility` property value as `Collapsed`. Badge will be hidden when its content is `null`. The default value of `Badge.Visibility` property is `Visible`.
+You can hide the `Badge` by setting the `Visibility` property value as `Collapsed`. Badge will be hidden when its content is `null`. The default value of `Visibility` property is `Visible`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -537,7 +537,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change Badge size
 
-You can change the size of `Badge` by using the `Badge.Width` and `Badge.Height` properties. The default value of `Badge.Width` property is `40` and `Badge.Height` property is `30`.
+You can change the size of `Badge` by using the `Width` and `Height` properties. The default value of `Width` property is `40` and `Height` property is `30`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -571,7 +571,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Text formatting
 
-You can change the style, size and font family of the `Badge` display content by using the `Badge.FontFamily`, `Badge.FontStyle` and `Badge.FontSize` properties. The default value of `Badge.FontFamily` property is `Segoe UI`, `Badge.FontStyle` property is `Normal` and  `Badge.FontSize` property is `14`.
+You can change the style, size and font family of the `Badge` display content by using the `FontFamily`, `FontStyle` and `FontSize` properties. The default value of `FontFamily` property is `Segoe UI`, `FontStyle` property is `Normal` and  `FontSize` property is `14`.
 
 {% tabs %}
 {% highlight XAML %}

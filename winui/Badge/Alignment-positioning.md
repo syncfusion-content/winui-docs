@@ -17,7 +17,7 @@ This section explains the alignment and positioning functionalities available in
 
 ## Alignment of Badge
 
-you can align the `Badge` either horizontally or vertically by using the `Badge.HorizontalAlignment` or `Badge.VerticalAlignment` properties. The default value of `Badge.HorizontalAlignment` property is `Right` and `Badge.VerticalAlignment` property is `Top`.
+you can align the `Badge` either horizontally or vertically by using the `HorizontalAlignment` or `VerticalAlignment` properties. The default value of `HorizontalAlignment` property is `Right` and `VerticalAlignment` property is `Top`.
 
 <table>
 
@@ -99,7 +99,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Positioning of Badge
 
-You can change the horizontal or vertical position of the `Badge` either inside, outside or in the middle by using the [Badge.HorizontalAnchor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalAnchor) and [Badge.VerticalAnchor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalAnchor) properties. The default value of `Badge.HorizontalAnchor` and `Badge.VerticalAnchor` properties is `Center`.
+You can change the horizontal or vertical position of the `Badge` either inside, outside or in the middle by using the [HorizontalAnchor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalAnchor) and [VerticalAnchor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalAnchor) properties. The default value of `HorizontalAnchor` and `VerticalAnchor` properties is `Center`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -133,7 +133,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Badge content alignment
 
-you can place the `Badge` content either horizontally or vertically by using the `Badge.HorizontalContentAlignment` or `Badge.VerticalContentAlignment` properties. The default value of `Badge.HorizontalContentAlignment` and `Badge.VerticalContentAlignment` properties is `Center`.
+you can place the `Badge` content either horizontally or vertically by using the `HorizontalContentAlignment` or `VerticalContentAlignment` properties. The default value of `HorizontalContentAlignment` and `VerticalContentAlignment` properties is `Center`.
 
 {% tabs %}
 {% highlight XAML %}
