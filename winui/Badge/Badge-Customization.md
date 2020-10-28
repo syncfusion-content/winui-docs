@@ -60,7 +60,7 @@ You can directly add the `Badge` to any objects without using the `BadgeContaine
 
 public class ListItem {
     public string ItemName { get; set; }
-    public int? UnreadMessageount { get; set; }
+    public int? UnreadMessageCount { get; set; }
 }
 
 public class ViewModel {
@@ -69,15 +69,15 @@ public class ViewModel {
     public ViewModel() {
         MailItems = new List<ListItem>();
         MailItems.Add(new ListItem() { ItemName = "Inbox", 
-            UnreadMessageount = 20 });
+            UnreadMessageCount = 20 });
         MailItems.Add(new ListItem() { ItemName = "Drafts", 
-            UnreadMessageount = null });
+            UnreadMessageCount = null });
         MailItems.Add(new ListItem() { ItemName = "Sent Intems", 
-            UnreadMessageount = 5 });
+            UnreadMessageCount = 5 });
         MailItems.Add(new ListItem() { ItemName = "Deleted Items",
-            UnreadMessageount = null });
+            UnreadMessageCount = null });
         MailItems.Add(new ListItem() { ItemName = "Junk Email",
-            UnreadMessageount = null });
+            UnreadMessageCount = null });
     }
 }
 
@@ -113,7 +113,7 @@ public class ViewModel {
                                       Grid.Column="1" 
                                       Height="20" 
                                       Width="40" 
-                                      Content="{Binding UnreadMessageount}"
+                                      Content="{Binding UnreadMessageCount}"
                                       Shape="Oval"
                                       Fill="Warning">
                     </syncfusion:SfBadge>
