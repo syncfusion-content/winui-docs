@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started with WinUI DropDownColorPicker
 
-This section explains the steps required to add the [DropDownColorPicker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownColorPicker.html) control and its color options such as RGB, HSV , HSL, CMYK and Hexadecimal color editor. This section covers only basic features needed to get started with Syncfusion `DropDownColorPicker` control.
+This section explains the steps required to add the [DropDownColorPicker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownColorPicker.html) control and its color options such as gradient colors and RGB, HSV , HSL, CMYK and Hexadecimal solid color editors.
 
 ## Control Structure
 

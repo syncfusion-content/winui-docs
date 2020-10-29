@@ -3,7 +3,7 @@ layout: post
 title: About WinUI SfColorPicker control | Syncfusion
 description: This section describes about how to add the SfColorPicker control into WinUI application and its basic features.
 platform: WinUI
-control: SfColorPicker control
+control: SfColorPicker
 documentation: ug
 ---
 
@@ -15,74 +15,61 @@ This section describes how to create a [ColorPicker](https://help.syncfusion.com
 
 ![Structure of WinUI ColorPicker control](Getting-Started_images/Structure.png)
 
-## Assembly deployment
+## Creating an application with WinUI ColorPalette
 
-Refer to the `Control Dependencies` section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
 
-## Adding WinUI ColorPicker control via XAML
+2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
 
-To add the `ColorPicker` control manually in XAML, follow these steps:
+3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 
-1) Create a new WinUI project in Visual Studio.
-
-2) Add the following assembly reference to the project from [nuget.org](https://www.nuget.org/packages/Syncfusion.Editors.WinUI/),
-
-* Syncfusion.Editors.WinUI
-
-3) Import Syncfusion WinUI schema **using:Syncfusion.UI.Xaml.Editors** and declare the `ColorPicker` control in XAML page.
+4. Initialize the `SfColorPicker` control.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <Page
-    x:Class="ColorPickercontrol_sample.MainPage"
+    x:Class="GettingStarted.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Getting_Started"
+    xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors">
-    <Grid>
-        <syncfusion:SfColorPicker Name="colorPicker" 
-                                  Height="30"
-                                  Width="30"/>
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Name="grid">
+        <!--Adding ColorPicker control -->
+        <syncfusion:SfColorPicker Name="colorPicker"/>
     </Grid>
 </Page>
 
 {% endhighlight %}
-{% endtabs %}
-
-## Adding WinUI ColorPicker control via C#
-
-To add the `ColorPicker` control manually in C#, follow these steps:
-
-1) Create a new WinUI application via Visual Studio.
-
-2) Add the following assembly reference to the project from [nuget.org](https://www.nuget.org/packages/Syncfusion.Editors.WinUI/),
-
-* Syncfusion.Editors.WinUI
-
-3) Include the required namespace.
-
-{% tabs %}
 {% highlight C# %}
 
 using Syncfusion.UI.Xaml.Editors;
 
-{% endhighlight %}
-{% endtabs %}
+namespace GettingStarted
+{
+    /// <summary>
+    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// </summary>
+    public sealed partial class MainPage : Page
+    {
+        public MainPage()
+        {
+            this.InitializeComponent();
+            // Creating an instance of the ColorPicker control
+            SfColorPicker colorPicker = new SfColorPicker();
 
-4) Create an instance of `ColorPicker` control and add it to the page.
+            // Setting height and width to ColorPicker control
+            colorPicker.Height = 300;
+            colorPicker.Width = 300;
 
-{% tabs %}
-{% highlight C# %}
-
-// Creating an instance of the ColorPicker control
-SfColorPicker colorPicker = new SfColorPicker();
-
-// Setting height and width to ColorPicker control
-colorPicker.Height = 300;
-colorPicker.Width = 300;
+            grid.Children.Add(colorPicker);
+        }
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -325,7 +312,7 @@ You can change the color selection mode directly at runtime by clicking on the c
 
 ## Selected brush changed notification
 
-The selected brush changed in `ColorPicker` can be examined by  using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrushChanged) events. You can get the old and newly selected brush by using the [OldBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) and [NewBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) properties.
+You will be notified when selected brush changed in `ColorPicker` by using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrushChanged) events. You can get the old and newly selected brush by using the [OldBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) and [NewBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) properties.
 
 {% tabs %}
 {% highlight XAML %}
