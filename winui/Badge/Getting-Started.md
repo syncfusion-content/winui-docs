@@ -21,12 +21,13 @@ This section explains the steps required to add the [Badge](https://help.syncfus
 
 2. Add reference to [Syncfusion.Notifications.WinUI](https://www.nuget.org/packages/Syncfusion.Notifications.WinUI) NuGet. 
 
-3. Import the control namespace `Syncfusion.UI.Xaml.Notifications`  in XAML or C# code.
+3. Import the control namespace `Syncfusion.UI.Xaml.Notifications` in XAML or C# code.
 
 4. Initialize the `SfBadge` control.
 
 {% tabs %}
 {% highlight xaml %}
+
 <Page
     x:Class="GettingStarted.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -45,8 +46,6 @@ This section explains the steps required to add the [Badge](https://help.syncfus
 </Page>
 
 {% endhighlight %}
-{% highlight c# %}
-
 {% highlight C# %}
 
 using Syncfusion.UI.Xaml.Notifications;
