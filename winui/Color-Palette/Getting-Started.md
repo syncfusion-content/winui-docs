@@ -43,7 +43,7 @@ This section explains the steps required to add the [ColorPalette](https://help.
 
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 
-4. Initialize the `colorPalette` control.
+4. Initialize the `ColorPalette` control.
 
 {% tabs %}
 {% highlight xaml %}
