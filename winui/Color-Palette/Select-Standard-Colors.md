@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Select standard colors in WPF SfColorPalette control | Syncfusion
-description: Learn about selecting a different standard colors in Syncfusion WPF SfColorPalette control and more details about the control features.
-platform: wpf
+title: Select standard colors in WinUI SfColorPalette control | Syncfusion
+description: Learn about selecting a different standard colors in Syncfusion WinUI SfColorPalette control and more details about the control features.
+platform: WinUI
 control: SfColorPalette
 documentation: ug
 ---
@@ -29,6 +29,8 @@ SfColorPalette colorPalette= new SfColorPalette();
 {% endtabs %}
 
 ![Yellow color selected from standard colors palette](Working-with-SfColorPalette_images/StandardPalatte.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
 ## Add your own custom colors in standard color palette
 
@@ -86,6 +88,8 @@ ColorPalette.StandardColors.ShowColorShades = true;
 
 ![Own colors added in the standard color palette](Working-with-SfColorPalette_images/CustomstandardColors.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
+
 ## Show standard color variants
 
 By default, you can select only the standard color without its variants. If you want allow the user to select standard color with its variant colors, use the `StandardColors.ShowColorShades` property value as `true`. The default value of `StandardColors.StandardColors` property is `false`. 
@@ -108,6 +112,8 @@ colorPalette.StandardColors.ShowColorShades = true;
 {% endtabs %}
 
 ![ColorPalette shows the standard color wih its variants](Working-with-SfColorPalette_images/StandardColors_ShowColorShades.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
 ## Hide standard colors
 
@@ -134,6 +140,8 @@ colorPalette.StandardColors.ShowColorShades = false;
 
 ![ColorPalette hides the standard color and its variants](Working-with-SfColorPalette_images/StandardColors_ShowColorShades1.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
+
 ## Change standard color palette header text
 
 If you want to change header text of the standard color palette, use the `StandardColors.Header` property. The default value of `StandardColors.Header` property is `Standard Colors`.
@@ -157,6 +165,8 @@ colorPalette.StandardColors.Header = "My standard colors";
 
 ![Header text of standard color palette is changed](Working-with-SfColorPalette_images/StandardColors_Header.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
+
 ### Hide standard color palette header
 
 If you want to hide header of the standard color palette, use the `StandardColors.ShowHeader` property. The default value of `StandardColors.ShowHeader` property is `true`.
@@ -179,6 +189,8 @@ colorPalette.StandardColors.ShowHeader = false;
 {% endtabs %}
 
 ![Header of standard color palette is collapsed](Working-with-SfColorPalette_images/StandardColors_ShowHeader.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
 ### Custom UI for standard color palette header 
 
@@ -212,6 +224,8 @@ N> The DataContext of `StandardColors.HeaderTemplate` is `StandardColors.Header`
 
 ![Customized UI for standard color palette header](Working-with-SfColorPalette_images/StandardColors_HeaderTemplate.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
+
 ## Differentiate base standard color from its variants
 
 If you wants to differentiate base standard color from its variants, change the spacing between base standard color and its variant colors by using the `StandardColors.ColorShadesSpacing` property. The default value of `StandardColors.ColorShadesSpacing` property is `10`.
@@ -236,3 +250,5 @@ colorPalette.StandardColors.ShowColorShades = false;
 {% endtabs %}
 
 ![Changed the spacing between base standard color and its variants](Working-with-SfColorPalette_images/ColorShadesSpacing1.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
