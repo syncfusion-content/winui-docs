@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Control Customization of WPF SfColorPalette control | Syncfusion
-description: Learn about selecting a different types of colors in Syncfusion WPF SfColorPalette control and more details about the control features.
-platform: wpf
+title: Control Customization of WinUI SfColorPalette control | Syncfusion
+description: Learn about selecting a different types of colors in Syncfusion WinUI SfColorPalette control and more details about the control features.
+platform: WinUI
 control: SfColorPalette
 documentation: ug
 ---
 
-# Control Customization in WPF ColorPalette (SfColorPalette)
+# Control Customization in WinUI  ColorPalette (SfColorPalette)
 
 This section explains the different types of colors available in the [ColorPalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html) and  how to choose the colors and its panel customizations.
 
@@ -32,6 +32,8 @@ colorPalette.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 ![ColorPalette programmatically picked the yellow color](Working-with-SfColorPalette_images/Colorprogrammatically.png)
 
 Here, `Yellow` color is selected color in the `ColorPalette`.
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
 ## Setting null value programmatically
 
@@ -74,6 +76,8 @@ colorPalette.ShowNoColorButton = true;
 
 ![ColorPalette resets selected color](Working-with-SfColorPalette_images/ShowNoColorButton.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
+
 ## Setting default color
 
 If you want to change the default selected color on application launching, set the value for [DefaultBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_DefaultBrush) property. If you changed the selected color, then you can easily make the default color as selected color by clicking the default color button. The default value of `DefaultBrush` property is `Black`.
@@ -93,6 +97,8 @@ colorPalette.AutomaticBrush = new SolidColorBrush(Colors.Red);
 {% endtabs %}
 
 ![ColorPalette with automatic color](Working-with-SfColorPalette_images/AutomaticBrush.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
 
 ### Hide default color button
 
@@ -118,7 +124,7 @@ colorPalette.ShowDefaultColorButton = false;
 
 ## Selected color changed notification
 
-The selected color changed in `ColorPalette` can be examined using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_SelectedBrushChanged) event. The `SelectedBrushChanged` event contains the old and newly selected color values in the `OldBrush`, `NewBrush` properties.
+You will be notified when selected color changed in `ColorPalette` by using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_SelectedBrushChanged) event. The `SelectedBrushChanged` event contains the old and newly selected color values in the [OldBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedBrushChangedEventArgs_OldBrush) and [NewBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedBrushChangedEventArgs_NewBrush) properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -195,6 +201,8 @@ colorPalette.Foreground = new SolidColorBrush(Colors.Red);
 
 ![ColorPalette foreground color changed](Working-with-SfColorPalette_images/Foreground.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
+
 ## Setting the background
 
 You can change the background color of the `ColorPalette` by using the `Background` property. The default value of `Background` property is `null`.
@@ -215,6 +223,8 @@ colorPalette.Background = new SolidColorBrush(Colors.LightYellow);
 
 ![ColorPalette background color changed](Working-with-SfColorPalette_images/Background.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
+
 ## Change flow direction
 
 You can change the flow direction of the `ColorPalette` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
@@ -234,6 +244,8 @@ colorPalette.FlowDirection = FlowDirection.RightToLeft;
 {% endtabs %}
 
 ![ColorPalette with right to left flow direction](Working-with-SfColorPalette_images/rtl.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
 
 ## Change color palette size
 
@@ -256,6 +268,8 @@ colorPalette.Height = 300;
 {% endtabs %}
 
 ![ColorPalette size changed](Working-with-SfColorPalette_images/Size.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
 
 ## Hide the ColorPalette
 

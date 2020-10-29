@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About WinUI SfDropDownColorPalette control | Syncfusion
+title: Overview of WinUI SfDropDownColorPalette control | Syncfusion
 description: WinUI SfDropDownColorPalette control is a rich visual interface with different types of color items for color selection.
 platform: WinUI
 control: SfDropDownColorPalette
