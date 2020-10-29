@@ -76,6 +76,8 @@ namespace GettingStarted
 
 ![ColorPicker control added in the application](Getting-Started_images/ColorPicker_Added.jpg)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
+
 ## Select solid color brush
 
 You can select the solid color brush programmatically by setting the solid color brush value to the [SelectedBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrush) property. You can also choose various solid color brush from different standard color models such as `RGB`, `HSV`, `HSL`, `CMYK` formats. The default value of `SelectedBrush` property is `Blue`.
@@ -101,6 +103,8 @@ You can select any solid color brush at runtime by clicking on the respective so
 
 ![Solid color brush selected at runtime](Getting-Started_images/Solidcolor.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
+
 ### Switch between solid color channels
 
  You can select the color model by setting the required color brush model to the [ColorChannelOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_ColorChannelOptions) property or select it from the drop down options. The default value of `ColorChannelOptions` property is `RGB`.
@@ -122,6 +126,8 @@ colorPicker.ColorChannelOptions = ColorChannelOptions.HSV;
 
 ![Different solid color models in ColorPicker](Getting-Started_images/RGB.jpg)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
+
 ### Change opacity of solid color brush
 
 You can change opacity of the selected solid color brush by using the A-Alpha value editor or delicate slider in the `ColorPicker`. You can hide the A-Alpha slider by using the [AlphaInputOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_AlphaInputOptions) property value as `TextInput`. The default value of the `AlphaInputOptions` property is `All`.
@@ -142,6 +148,8 @@ colorPicker.AlphaInputOptions = ColorInputOptions.TextInput;
 
 ![Show opacity value editor](Getting-Started_images/AlphaInputOptions.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
+
 ### Hexadecimal solid color brush value editor
 
 You can select a solid color brush by entering the hexadecimal color value to the hexadecimal value editor. You can also get the selected color hexadecimal value by using the hexadecimal value editor. You can hide the hexadecimal value editor by setting the [IsHexInputVisible](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_IsHexInputVisible) property value as `false`. The default value of `IsHexInputVisible` property is `true`.
@@ -161,6 +169,8 @@ colorPicker.IsHexInputVisible = false;
 {% endtabs %}
 
 ![Hide the hexadecimal value editor](Getting-Started_images/IsHexInputVisible.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
 ## Select linear gradient color brush
 
@@ -204,6 +214,8 @@ colorPicker.SelectedBrush = linearGradient;
 
 ![Assigning a Linear Gradient brush to ColorPicker](Getting-Started_images/ColorPicker_select-a-LinearGradient.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
+
 You can directly select a required linear gradient color brush at runtime by setting the [BrushTypeOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_BrushTypeOptions) property value as `LinearGradientBrush`. The default value of `BrushTypeOptions` property is `All`.
 
 {% tabs %}
@@ -221,6 +233,8 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush;
 {% endtabs %}
 
 ![Selecting a linear gradient color brush](Getting-Started_images/lineargradient.gif)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
 ## Select radial gradient color brush
 
@@ -268,6 +282,8 @@ colorPicker.SelectedBrush = radialGradient;
 
 ![Assigning a Raidial Gradient brush to ColorPicker](Getting-Started_images/ColorPicker_select-a-RadialGradient.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
+
 You can directly select a required radial gradient color brush at runtime by setting the `BrushTypeOptions` property value as `RadialGradientBrush`.
 
 {% tabs %}
@@ -285,6 +301,8 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.RadialGradientBrush;
 {% endtabs %}
 
 ![Selecting a radial gradient color brush](Getting-Started_images/radialgradient.gif)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
 ## Switch between solid, linear and gradient brush mode
 
@@ -306,9 +324,13 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush | BrushTypeOptio
 
 ![Allow only the solid and radial gradient brush mode](Getting-Started_images/BrushTypeOptions.jpg)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
+
 You can change the color selection mode directly at runtime by clicking on the corresponding `Solid`, `Linear` or `Radial` gradient brush mode drop down options which is placed in the top of the `ColorPicker` control.
 
 ![Switch between solid, linear and gradient brush mode](Getting-Started_images/ColorPicker_Switch_brushes.gif)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
 ## Selected brush changed notification
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Customization of WinUI ColorPicker (SfColorPicker)
 
-This section explains how to customize the color spectrums and switch to different modes in [ColorPicker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html).
+This section explains how to customize the color spectrum and switch to different modes in [ColorPicker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html).
 
 ## Enable specific brush modes
 
@@ -31,15 +31,19 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush | BrushTypeOptio
 
 ![Allow only the solid and radial gradient brush mode](Getting-Started_images/BrushTypeOptions.jpg)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
+
 ## Switch between solid, linear and gradient brush mode interactively
 
 You can change the color selection mode directly at runtime by clicking on the corresponding `Solid`, `Linear` or `Radial` gradient brush mode drop down options which is placed in the top of the `ColorPicker` control.
 
-![Switch between solid, linear and gradient brush mode](Getting-Started_images/ColorPicker_Switch_brushes.gif)  
+![Switch between solid, linear and gradient brush mode](Getting-Started_images/ColorPicker_Switch_brushes.gif)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)  
 
 ## Change shape of Color Spectrum
 
-By defult, color spectrum is in box shapes. If you want to change the color spectrum shapes as circle, use the [ColorSpectrumShape](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_ColorSpectrumShape) property value as `Ring` . The default value of `ColorSpectrumShape` property is `Box`.
+By default, color spectrum is in box shapes. If you want to change the color spectrum shapes as circle, use the [ColorSpectrumShape](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_ColorSpectrumShape) property value as `Ring` . The default value of `ColorSpectrumShape` property is `Box`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -58,6 +62,8 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush;
 {% endtabs %}
 
 ![Color spectrum shapes changed as ring](Getting-Started_images/ColorSpectrumShape.jpg)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
 ## Change Color spectrum's color components
 
@@ -82,3 +88,5 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush;
 {% endtabs %}
 
 ![Color spectrum combination changed as HueSaturation](Getting-Started_images/ColorSpectrumComponents.jpg)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)

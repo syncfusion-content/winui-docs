@@ -36,7 +36,9 @@ colorPicker.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 
 ![Solid color selected from ColorPicker](Getting-Started_images/select_Solidcolor.png)
 
-## Select linear gradient color brush interactively
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
+
+## Select solid color brush interactively
 
 You can select any solid color brush at runtime by clicking on the respective solid color brush area. You can enable only the solid color brush mode by setting the [BrushTypeOptions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_BrushTypeOptions) property value as `SolidColorBrush`.
 
@@ -52,6 +54,8 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 {% endtabs %}
 
 ![Solid color brush selected at runtime](Getting-Started_images/Solidcolor.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
 ## Change opacity of solid color brush
 
@@ -74,6 +78,8 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 {% endtabs %}
 
 ![Show opacity value editor](Getting-Started_images/AlphaInputOptions.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
 ## Switch between solid color channels
 
@@ -98,6 +104,8 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 
 ![Different solid color models in ColorPicker](Select_Solid_Colors_images/ColorChannels.gif)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
+
 ## Input options for solid color channel
 
 You can change the value of selected solid color channel elements by using either text editor or delicate slider or using both. If you want to change selected solid color channel value only by using text editor or delecate slider, use the [ColorChannelInputOptions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_ColorChannelInputOptions) property value as `TextInput` or `SliderInput`. The default value of `ColorChannelInputOptions` property is `All`.
@@ -119,6 +127,8 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 {% endtabs %}
 
 ![Different input options for solid color channel](Select_Solid_Colors_images/ColorChannelInputOptions.jpg)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
 ## Hexadecimal solid color brush value editor
 
@@ -142,6 +152,8 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 
 ![Hide the hexadecimal value editor](Getting-Started_images/IsHexInputVisible.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
+
 ## Expand or collapse the Color Editors visibility
 
 You can change the visibility of hexadecimal value editor and color channel elements as expandable or collapsed state by setting the [ColorEditorsVisibilityMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_ColorEditorsVisibilityMode) property value as `Expandable` or `Collapsed`. The default value of `ColorEditorsVisibilityMode` property is `Inline`.
@@ -163,6 +175,8 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 {% endtabs %}
 
 ![Expand or collapse the Color Editors visibility](Select_Solid_Colors_images/ColorEditorsVisibilityMode.jpg)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
 ## Selected solid color brush changed notification
 
