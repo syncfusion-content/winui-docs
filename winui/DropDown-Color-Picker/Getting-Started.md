@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started with WinUI DropDownColorPicker
 
-This section explains the steps required to add the [DropDownColorPicker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownColorPicker.html) control and its color options such as RGB, HSV , HSL, CMYK and Hexadecimal color editor. This section covers only basic features needed to get started with Syncfusion `DropDownColorPicker` control.
+This section explains the steps required to add the [DropDownColorPicker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownColorPicker.html) control and its color options such as gradient colors and RGB, HSV , HSL, CMYK and Hexadecimal solid color editors.
 
 ## Control Structure
 
@@ -68,6 +68,8 @@ namespace GettingStarted
 
 ![DropDown ColorPicker added in the winui application](Getting-Started_images/ColorPicker_Added.jpg)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/DropDown_ColorPicker)
+
 ## Select solid color brush programmatically
 
 You can select the solid color brush programmatically by setting the solid color brush value to the [SelectedBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownColorPicker.html#Syncfusion_UI_Xaml_Editors_SfDropDownColorPicker_SelectedBrush) property. The default value of `SelectedBrush` property is `Blue`.
@@ -89,6 +91,8 @@ colorPicker.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 
 ![Solid color programmatically selected from DropDown ColorPicker](Getting-Started_images/select_Solidcolor.jpg)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/DropDown_ColorPicker)
+
 ## Select solid color brush from dropdown ColorPicker
 
 You can select various solid color brush at runtime by selecting the color brush in color spectrum and clicking `OK` button.
@@ -107,6 +111,8 @@ SfDropDownColorPicker sfDropDownColorPicker =  new SfDropDownColorPicker();
 {% endtabs %}
 
 ![Selecting a color brush from Dropdown ColorPicker at runtime](Getting-Started_images/colorselecting.gif)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/DropDown_ColorPicker)
 
 ## Switch between solid color channels
 
@@ -127,6 +133,8 @@ SfDropDownColorPicker sfDropDownColorPicker = new SfDropDownColorPicker();
 
 ![Switch between different solid color channels in Dropdown ColorPicker](Getting-Started_images/RGBSwitch.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/DropDown_ColorPicker)
+
 ## Change opacity of solid color brush
 
 You can change opacity of the selected solid color brush by using the A-Alpha value editor or delicate slider in the `DropDownColorPicker`.
@@ -146,6 +154,8 @@ SfDropDownColorPicker sfDropDownColorPicker  new SfDropDownColorPicker();
 
 ![Opacity value editor and slider in DropDown ColorPicker](Getting-Started_images/AlphaInputOptions.jpg)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/DropDown_ColorPicker)
+
 ## Hexadecimal solid color brush value editor
 
 You can select a solid color brush by entering the hexadecimal color value to the hexadecimal value editor. You can also get the selected color hexadecimal value by using the hexadecimal value editor.
@@ -164,6 +174,8 @@ SfDropDownColorPicker sfDropDownColorPicker  new SfDropDownColorPicker();
 {% endtabs %}
 
 ![Selecting a color from hexadecimal value editor](Getting-Started_images/IsHexInputVisible.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/DropDown_ColorPicker)
 
 ## Color Picker as a command button
 
@@ -217,6 +229,8 @@ public sealed partial class MainPage : Page
 
 ![Dropdown color picker recent color selected in split mode](Getting-Started_images/Splitbutton.gif)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/DropDownColorPicker_as_command)
+
 ## Customize the ColorPicker
 
 You can customize the color picker by replacing the default [ColorPicker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html) with your own instance using [DropDownContentTemplate](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownContentTemplate) property. You can load color picker with solid, linear gradient or gradient brush editors.
@@ -241,6 +255,8 @@ N> You can refer the [ColorPicker](https://help.syncfusion.com/winui/color-picke
 {% endtabs %}
 
 ![Color picker embedded inside the dropdown color picker](Getting-Started_images/custom_colorpicker.jpg)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/DropDownColorPicker_as_command)
 
 ## Custom UI of Dropdown Header
 
@@ -297,6 +313,8 @@ N> The `DropDownButtonTemplate` is effective only on when drop down mode is spli
 
 ![Displaying custom UI of drop down header in split mode](Getting-Started_images/customUIHeader.jpg)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/DropDownColorPicker_as_command)
+
 ## Change Dropdown alignment
 
 You can change alignment of the drop down picker as full, center, left, right, top or bottom with edge of the dropdown header by using the [DropDownPlacement](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
@@ -316,6 +334,8 @@ sfDropDownColorPicker.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAlignedR
 {% endtabs %}
 
 ![Dropdown ColorPicker placement changed as BottomEdgeAlignedRight](Getting-Started_images/DropDownPlacement.jpg)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/DropDown_ColorPicker)
 
 ## Selected brush changed notification
 
