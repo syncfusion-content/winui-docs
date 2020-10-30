@@ -183,7 +183,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 If you want to place the `Badge` anywhere on any shaped container, use the [HorizontalCustomAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalCustomAlignment) or [VerticalCustomAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalCustomAlignment) properties. The value range for `HorizontalCustomAlignment` and `VerticalCustomAlignment` properties is `0` to`1`. The default value of `HorizontalCustomAlignment` property is `1` and `VerticalCustomAlignment` property is `0`.
 
-For example, if you use any circulur containers, you can easily place the `Badge` anywhere by using the `HorizontalCustomAlignment` and `VerticalCustomAlignment` properties.
+For example, if you use any circular containers, you can easily place the `Badge` anywhere by using the `HorizontalCustomAlignment` and `VerticalCustomAlignment` properties.
 
 {% tabs %}
 {% highlight XAML %}
