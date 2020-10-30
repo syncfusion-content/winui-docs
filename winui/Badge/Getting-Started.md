@@ -235,54 +235,6 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 you can align the `Badge` either horizontally or vertically by using the `Badge.HorizontalAlignment` or `VerticalAlignment` properties. The default value of `HorizontalAlignment` property is `Right` and `VerticalAlignment` property is `Top`.
 
-<table>
-
-<tr>
-<td class="invisible" ></td>
-<th style="text-align:center" colspan = "4">HorizontalAlignment</th>
-</tr>
-
-<tr>
-<th>VerticalAlignment</th>
-<td>Left</td>
-<td>Center</td>
-<td>Right</td>
-<td>Stretch</td>
-</tr>
-
-<tr>
-<td>Top</td>
-<td><img src="Getting-Started_images/Left-top.png" alt="Left-Top alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Center-Top.png" alt="Center-Top alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Right-Top.png" alt="Right-Top alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Stretch-Top.png" alt="Stretch-Top alignment of Badge"/></td>
-</tr>
-
-<tr>
-<td>Center</td>
-<td><img src="Getting-Started_images/Left-center.png" alt="Left-center alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Center-Center.png" alt="Center-Center alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Right-Center.png" alt="Right-Center alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Stretch-Center.png" alt="Stretch-Center alignment of Badge"/></td>
-</tr>
-
-<tr>
-<td>Bottom</td>
-<td><img src="Getting-Started_images/Left-Bottom.png" alt="Left-Bottom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Center-Bottom.png" alt="Center-Bottom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Right-Bottom.png" alt="Right-Bottom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Stretch-Bottom.png" alt="Stretch-Bottom alignment of Badge"/></td>
-</tr>
-
-<tr>
-<td>Stretch</td>
-<td><img src="Getting-Started_images/Left-Stretch.png" alt="Left-Stretch alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Center-Stretch.png" alt="Center-Stretch alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Right-Stretch.png" alt="Right-Stretch alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Stretch-Stretch.png" alt="Stretch-Stretch alignment of Badge"/></td>
-</tr>
-</table>
-
 {% tabs %}
 {% highlight XAML %}
 
@@ -490,6 +442,42 @@ If you want to change the shape of the `Badge` other than the default shapes, us
 ![Displaying the custom shape of Badge](Getting-Started_images/Custom_Shape.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
+
+## Place the Badge any where on the container
+
+If you want to place the `Badge` anywhere on any shaped container, use the [HorizontalCustomAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalCustomAlignment) or [VerticalCustomAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalCustomAlignment) properties. The value range for `HorizontalCustomAlignment` and `VerticalCustomAlignment` properties is `0` to`1`. The default value of `HorizontalCustomAlignment` property is `1` and `VerticalCustomAlignment` property is `0`.
+
+For example, if you use any circular containers, you can easily place the `Badge` anywhere by using the `HorizontalCustomAlignment` and `VerticalCustomAlignment` properties.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:BadgeContainer>
+    <syncfusion:BadgeContainer.Content> 
+        <PersonPicture Width="100"
+                       Height="100"
+                       ProfilePicture="/Images/avatar.png"/>    
+    </syncfusion:BadgeContainer.Content>
+    <syncfusion:BadgeContainer.Badge>
+        <syncfusion:SfBadge x:Name="badge3"
+                            Shape="None"
+                            HorizontalCustomAlignment="0.9"
+                            VerticalCustomAlignment="0.8">
+            <Ellipse Width="20" Height="20" Fill="LimeGreen"/>
+        </syncfusion:SfBadge>
+    </syncfusion:BadgeContainer.Badge>
+</syncfusion:BadgeContainer>
+
+{% endhighlight %}
+{% highlight C# %}
+
+badge.HorizontalCustomAlignment = 0.9;
+badge.VerticalCustomAlignment = 0.8;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Displaying the customized alignment of the Badge control](Getting-Started_images/Custom_Alignment.png)
 
 ## Animate when content changes
 
