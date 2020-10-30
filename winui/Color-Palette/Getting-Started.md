@@ -66,8 +66,6 @@ This section explains the steps required to add the [ColorPalette](https://help.
 {% endhighlight %}
 {% highlight c# %}
 
-{% highlight C# %}
-
 using Syncfusion.UI.Xaml.Editors;
 
 namespace GettingStarted
