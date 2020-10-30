@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | Badge | WinUI | Syncfusion
+title: Overview of WinUI Badge | Syncfusion
 description: WinUI Badge control used to notify users of new or unread messages, notifications, or the status of something and different features.
 platform: WinUI
 control: SfBadge
