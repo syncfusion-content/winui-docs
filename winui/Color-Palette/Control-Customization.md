@@ -7,7 +7,7 @@ control: SfColorPalette
 documentation: ug
 ---
 
-# Control Customization in WinUI  ColorPalette (SfColorPalette)
+# Control Customization in WinUI ColorPalette (SfColorPalette)
 
 This section explains the different types of colors available in the [ColorPalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html) and  how to choose the colors and its panel customizations.
 
