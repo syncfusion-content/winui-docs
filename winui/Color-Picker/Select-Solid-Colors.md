@@ -42,6 +42,9 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can select any solid color brush at runtime by clicking on the respective solid color brush area. You can enable only the solid color brush mode by setting the [BrushTypeOptions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_BrushTypeOptions) property value as `SolidColorBrush`.
 
+{% tabs %}
+{% highlight xaml %}
+
 <syncfusion:SfColorPicker Name="colorPicker">
 
 {% endhighlight %}
