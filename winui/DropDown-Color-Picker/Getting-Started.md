@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WinUI SfDropDownColorPicker control | Syncfusion
+title: Getting Started WinUI SfDropDownColorPicker control | Syncfusion
 description: Learn here about getting started with Syncfusion WinUI SfDropDownColorPicker control and more details about the control features.
 platform: WinUI
 control: SfDropDownColorPicker
 documentation: ug
 ---
 
-# Getting started with WinUI DropDownColorPicker
+# Getting Started with WinUI DropDownColorPicker
 
 This section explains the steps required to add the [DropDownColorPicker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownColorPicker.html) control and its color options such as gradient colors and RGB, HSV , HSL, CMYK and Hexadecimal solid color editors.
 
@@ -387,6 +387,8 @@ sfDropDownColorPicker.DropDownClosed += SfDropDownColorPicker_DropDownClosed;
 
 {% endhighlight %}
 {% endtabs %}
+
+You can handle the events as follows,
 
 {% tabs %}
 {% highlight C# %}

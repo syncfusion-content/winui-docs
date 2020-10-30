@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with WinUI SfColorPalette control | Syncfusion
+title: Getting Started with WinUI SfColorPalette control | Syncfusion
 description: Learn here about getting started with Syncfusion WinUI SfColorPalette control and more details about the control features.
 platform: WinUI
 control: SfColorPalette
@@ -65,8 +65,6 @@ This section explains the steps required to add the [ColorPalette](https://help.
 
 {% endhighlight %}
 {% highlight c# %}
-
-{% highlight C# %}
 
 using Syncfusion.UI.Xaml.Editors;
 
@@ -303,6 +301,8 @@ colorPalette.SelectedBrushChanged += ColorPalette_SelectedBrushChanged;
 
 {% endhighlight %}
 {% endtabs %}
+
+You can handle the event as follows,
 
 {% tabs %}
 {% highlight C# %}
