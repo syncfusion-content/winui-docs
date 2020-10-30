@@ -415,6 +415,8 @@ sfDropDownColorPalette.SelectedBrushChanged += sfDropDownColorPalette_SelectedBr
 {% endhighlight %}
 {% endtabs %}
 
+You can handle the events as follows,
+
 {% tabs %}
 {% highlight C# %}
 
@@ -446,6 +448,8 @@ sfDropDownColorPalette.DropDownClosed += sfDropDownColorPalette_DropDownClosed;
 
 {% endhighlight %}
 {% endtabs %}
+
+You can handle the events as follows,
 
 {% tabs %}
 {% highlight C# %}

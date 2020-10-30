@@ -140,6 +140,8 @@ colorPalette.SelectedBrushChanged += ColorPalette_SelectedBrushChanged;
 {% endhighlight %}
 {% endtabs %}
 
+You can handle the event as follows,
+
 {% tabs %}
 {% highlight C# %}
 
