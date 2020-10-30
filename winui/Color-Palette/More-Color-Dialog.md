@@ -1,13 +1,13 @@
 ---
 layout: post
-title: More color dialog in WinUI SfColorPalette control | Syncfusion
+title: More Colors dialog in WinUI SfColorPalette control | Syncfusion
 description: Learn about selecting a different colors from more color dialog in Syncfusion WinUI SfColorPalette control and more details about the control features.
 platform: WinUI
 control: SfColorPalette
 documentation: ug
 ---
 
-## Choosing a color from MoreColor dialog in WinUI ColorPalette
+## Choosing a color from MoreColors dialog in WinUI ColorPalette
 
 In addition to colors in `Theme colors` and `Standard colors`, `MoreColor` feature allows you to select wide range of color options from the WinUI [ColorPalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html). You can select any custom color with various opacity level based on requirement.
 
