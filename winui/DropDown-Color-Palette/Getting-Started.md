@@ -415,6 +415,8 @@ sfDropDownColorPalette.SelectedBrushChanged += sfDropDownColorPalette_SelectedBr
 {% endhighlight %}
 {% endtabs %}
 
+You can handle the events as follows,
+
 {% tabs %}
 {% highlight C# %}
 
@@ -429,7 +431,7 @@ private void sfDropDownColorPalette_SelectedBrushChanged(object sender, Selected
 
 ## Dropdown Color Palette Open and Close notification
 
-You can notified when drop-down opened and closed by using the `DropDownOpened` and `DropDownClosed` events.
+You will be notified when drop-down opened and closed by using the `DropDownOpened` and `DropDownClosed` events.
 
 {% tabs %}
 {% highlight xaml %}
@@ -446,6 +448,8 @@ sfDropDownColorPalette.DropDownClosed += sfDropDownColorPalette_DropDownClosed;
 
 {% endhighlight %}
 {% endtabs %}
+
+You can handle the events as follows,
 
 {% tabs %}
 {% highlight C# %}
