@@ -16,19 +16,12 @@ This section explains the steps required to add the [ColorPalette](https://help.
 ![ColorPalette control structure](Getting-Started_images/Control_Structure_GS.png)
 
 * The Selected Color represents the color that you select.
-
 * The Automatic Color represents the Color, which can be set by you as default color.
-
 * The ToolTip with Color Details represents the ToolTip, when the mouse hovers on the Color.
-
 * The Standard Colors stores the standard colors like `Red`, `Green`, `Blue` and so on.
-
 * The Recently User Colors stores the Colors that are recently selected.
-
 * The No Color represents the `Transparent` color that applied as the selected color. 
-
 * The More Colors Option provides wide range of color in addition to colors in the palette.
-
 * The Theme Variant Colors represents the Theme colors with variants.
 
 ### More Color Dialog
@@ -38,11 +31,8 @@ This section explains the steps required to add the [ColorPalette](https://help.
 ## Creating an application with WinUI ColorPalette
 
 1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
-
 2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
-
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
-
 4. Initialize the `SfColorPalette` control.
 
 {% tabs %}

@@ -18,11 +18,8 @@ This section explains the steps required to add the [DropDownColorPicker](https:
 ## Creating an application with WinUI DropDownColorPicker
 
 1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
-
 2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
-
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
-
 4. Initialize the `SfDropDownColorPicker` control.
 
 {% tabs %}
