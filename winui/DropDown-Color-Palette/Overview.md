@@ -15,18 +15,11 @@ The [DropDownColorPalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xa
 
 ## Key features
 
-* Theme base and its variant colors support
-
-* Standard base and its variant support
-
-* Automatic color support
-
-* Dropdown button split mode option
-
-* More color selection support
-
+* Theme base and its variant colors support.
+* Standard base and its variant support.
+* Automatic color support.
+* Dropdown button split mode option.
+* More color selection support.
 * Drop down palette customization support.
-
-* Dropdown customization support
-
+* Dropdown customization support.
 * Supports ToolTip to show the selected color while hover on the color item.

@@ -16,13 +16,8 @@ The [DropDownColorPicker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xam
 ## Key features
 
 * Color Editing - Drag the handle to pick your favorite color in the picker region or set the color values manually with input control (RGB or HSV or HSL or CMYK or Hex codes).
-
 * A slider displaying the Hue spectrum, allowing for selection of a hue value.
-
 * Color channel modes switching support(RGB, HSV, HSL CMYK)
-
 * Dropdown button split mode option
-
 * Dropdown customization support
-
 * Supports ToolTip to show the selected color while dragging the picker in color spectrum.
