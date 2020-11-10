@@ -15,16 +15,10 @@ The [ColorPalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Edito
 
 ## Key features
 
-* Theme base and its variant colors support
-
-* Standard base and its variant support
-
-* Automatic color support
-
-* More color selection support
-
-* Theme and standard panel customization support
-
-* No color option to selected a transparent color
-
+* Theme base and its variant colors support.
+* Standard base and its variant support.
+* Automatic color support.
+* More color selection support.
+* Theme and standard panel customization support.
+* No color option to selected a transparent color.
 * Supports ToolTip to show the selected color while hover on the color item.
