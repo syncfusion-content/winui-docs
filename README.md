@@ -1,1 +1,1 @@
-This repository holds the user guide documents for winui controls. 
+This repository holds the user guide documents for winUI controls. 
