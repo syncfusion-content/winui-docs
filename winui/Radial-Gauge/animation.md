@@ -167,7 +167,7 @@ this.Content = sfRadialGauge;
 
 ## Animation easing functions
 
-The `EasingFunction` property of pointer allows to change the easing function. The default value is null. 
+The `AnimationEasingFunction` property of pointer allows to change the easing function. The default value is null. 
 
 {% tabs %}
 
@@ -191,9 +191,9 @@ The `EasingFunction` property of pointer allows to change the easing function. T
                                      TailFill="#FFDADADA"
                                      TailLength="0.15"
                                      TailWidth="15">
-                    <gauge:NeedlePointer.EasingFunction>
+                    <gauge:NeedlePointer.AnimationEasingFunction>
                         <ElasticEase Oscillations="1" />
-                    </gauge:NeedlePointer.EasingFunction>
+                    </gauge:NeedlePointer.AnimationEasingFunction>
 
                 </gauge:NeedlePointer>
                 <gauge:RangePointer Value="60"
@@ -201,9 +201,9 @@ The `EasingFunction` property of pointer allows to change the easing function. T
                                     EnableAnimation="True"
                                     AnimationDuration="3000"
                                     Background="Orange">
-                    <gauge:RangePointer.EasingFunction>
+                    <gauge:RangePointer.AnimationEasingFunction>
                         <ElasticEase Oscillations="1" />
-                    </gauge:RangePointer.EasingFunction>
+                    </gauge:RangePointer.AnimationEasingFunction>
                 </gauge:RangePointer>
             </gauge:RadialAxis.Pointers>
         </gauge:RadialAxis>
@@ -235,7 +235,7 @@ needlePointer.KnobStrokeThickness = 0.04;
 needlePointer.TailFill = new SolidColorBrush(Color.FromArgb(255, 218, 218, 218));
 needlePointer.TailLength = 0.15;
 needlePointer.TailWidth = 15;
-needlePointer.EasingFunction = new ElasticEase() { Oscillations = 1 };
+needlePointer.AnimationEasingFunction = new ElasticEase() { Oscillations = 1 };
 radialAxis.Pointers.Add(needlePointer);
 
 RangePointer rangePointer = new RangePointer();
@@ -244,7 +244,7 @@ rangePointer.PointerWidth = 30;
 rangePointer.EnableAnimation = true;
 rangePointer.AnimationDuration = 3000;
 rangePointer.Background = new SolidColorBrush(Colors.Orange);
-rangePointer.EasingFunction = new ElasticEase() { Oscillations = 1 };
+rangePointer.AnimationEasingFunction = new ElasticEase() { Oscillations = 1 };
 radialAxis.Pointers.Add(rangePointer);
 
 this.Content = sfRadialGauge;
