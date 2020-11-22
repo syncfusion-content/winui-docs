@@ -1,32 +1,26 @@
 ---
 layout: post
-title: Getting started with WinUI SfDropDownColorPalette control | Syncfusion
+title: Getting Started with WinUI SfDropDownColorPalette control | Syncfusion
 description: Learn here about getting started with Syncfusion WinUI SfDropDownColorPalette control and more details about the control features.
 platform: WinUI
 control: SfDropDownColorPalette
 documentation: ug
 ---
 
-# Getting started with WinUI DropDown ColorPalette
+# Getting Started with WinUI DropDown ColorPalette
 
-This section explains the steps required to add the [DropDownColorPalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.DropDownColorPalette.html) control and its color options such as theme, standard and more custom colors. This section covers only basic features needed to get started with Syncfusion `DropDownColorPalette` control.
+This section explains the steps required to add the [DropDownColorPalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.DropDownColorPalette.html) control and its color options such as theme, standard and more custom colors.
 
 ## Control Structure
 
 ![Dropdown ColorPalette control structure](Getting-Started_images/Control_Structure_GS.png)
 
 * The Selected Color represents the color that you select.
-
 * The Automatic Color represents the color, which can be set by you as default color.
-
 * The ToolTip with Color Details represents the toolTip, when the mouse hovers on the Color.
-
 * The Standard Colors stores the standard colors like `Red`, `Green`, `Blue` and so on.
-
 * The Recently User Colors stores the colors that are recently selected.
-
 * The More Colors Option provides wide range of color in addition to colors in the palette.
-
 * The Theme Variant Colors represents the Theme colors with variants.
 
 ### More Color Dialog
@@ -36,11 +30,8 @@ This section explains the steps required to add the [DropDownColorPalette](https
 ## Creating an application with WinUI DropDown ColorPalette
 
 1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
-
 2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
-
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
-
 4. Initialize the `SfDropDownColorPalette` control.
 
 {% tabs %}
@@ -86,6 +77,8 @@ namespace GettingStarted
 
 ![Dropdown ColorPalette added in the winui application](Getting-Started_images/controladded.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
+
 ## Accessing a Color programmatically
 
 You can set or change the selected color of the `DropDownColorPalette` programmatically by setting the value to [SelectedBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownColorPalette.html#Syncfusion_UI_Xaml_Editors_SfDropDownColorPalette_SelectedBrush) property. You can also get the selected color by using the `SelectedBrush` property. The default value of `SelectedBrush` property is `Black`.
@@ -108,6 +101,8 @@ colorPalette.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 
 Here, `Yellow` color is selected color in the `DropDownColorPalette`.
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
+
 ## Select Color from dropdown Color Palette
 
 You can select a different colors from `Theme Colors` and `Standard Colors` panels.
@@ -126,6 +121,8 @@ SfDropDownColorPalette sfDropDownColorPalette =  new SfDropDownColorPalette();
 {% endtabs %}
 
 ![Dropdown ColorPalette control with theme and standard color items](Getting-Started_images/ThemeColorPanel.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
 
 ## Select Automatic Color
 
@@ -146,6 +143,8 @@ SfDropDownColorPalette sfDropDownColorPalette =  new SfDropDownColorPalette();
 
 ![Dropdown ColorPalette control with theme and standard color items](Getting-Started_images/automatic_color.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
+
 ## Choosing a Color from MoreColor dialog
 
 If you want to choose a color that is not available in theme and standard palette, click the more color button and select the color from color spectrum and click the `Ok` button. 
@@ -164,6 +163,8 @@ SfDropDownColorPalette sfDropDownColorPalette = new SfDropDownColorPalette();
 {% endtabs %}
 
 ![Dropdown ColorPalette with more color dialog](Getting-Started_images/MoreColorWindow.gif)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
 
 ## Recently used Color items
 
@@ -238,6 +239,8 @@ public sealed partial class MainPage : Page
 
 ![Dropdown color palette recent color selected in split mode](Getting-Started_images/Splitbutton.gif)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDownColorPalette_as_command)
+
 ## Customize the ColorPalette
 
 You can customize the color palette by replacing the default [ColorPalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html) with your own instance using [DropDownContentTemplate](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownContentTemplate) property.
@@ -304,6 +307,8 @@ N> You can refer the [ColorPalette](https://help.syncfusion.com/winui/color-pale
 
 ![Color palette embedded inside the dropdown color palette](Getting-Started_images/custom_colorpalette.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDownColorPalette_as_command)
+
 ## Custom UI of Dropdown Header
 
 You can customize the appearance of the `DropDownColorPalette` header in both split mode and dropdown mode. You can customize the selected color button using [ContentTemplate](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ContentTemplate) property and customize the dropdown button by using the [DropDownButtonTemplate](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownButtonTemplate) property.
@@ -359,6 +364,8 @@ N> The `DropDownButtonTemplate` is effective only on when drop down mode is spli
 
 ![Displaying custom UI of drop down header in split mode](Getting-Started_images/customUI.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDownColorPalette_as_command)
+
 ## Change Dropdown alignment
 
 You can change alignment of the drop down palette as full, center, left, right, top or bottom with edge of the dropdown header by using the [DropDownPlacement](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
@@ -379,9 +386,11 @@ sfDropDownColorPalette.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAligned
 
 ![Dropdown color palette placement changed as BottomEdgeAlignedRight](Getting-Started_images/DropDownPlacement.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
+
 ## Selected Color brush changed notification
 
-The selected color brush changed in `DropDownColorPalette` can be examined using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownColorPalette.html#Syncfusion_UI_Xaml_Editors_SfDropDownColorPalette_SelectedBrushChanged) event. The `SelectedBrushChanged` event contains the old and newly selected color values in the `OldBrush`, `NewBrush` properties.
+You will be notified when selected color brush changed in `DropDownColorPalette` by using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownColorPalette.html#Syncfusion_UI_Xaml_Editors_SfDropDownColorPalette_SelectedBrushChanged) event. The `SelectedBrushChanged` event contains the old and newly selected color values in the [OldBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedBrushChangedEventArgs_OldBrush), [NewBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedBrushChangedEventArgs_NewBrush) properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -397,6 +406,8 @@ sfDropDownColorPalette.SelectedBrushChanged += sfDropDownColorPalette_SelectedBr
 {% endhighlight %}
 {% endtabs %}
 
+You can handle the events as follows,
+
 {% tabs %}
 {% highlight C# %}
 
@@ -411,7 +422,7 @@ private void sfDropDownColorPalette_SelectedBrushChanged(object sender, Selected
 
 ## Dropdown Color Palette Open and Close notification
 
-You can notified when drop-down opened and closed by using the `DropDownOpened` and `DropDownClosed` events.
+You will be notified when drop-down opened and closed by using the `DropDownOpened` and `DropDownClosed` events.
 
 {% tabs %}
 {% highlight xaml %}
@@ -428,6 +439,8 @@ sfDropDownColorPalette.DropDownClosed += sfDropDownColorPalette_DropDownClosed;
 
 {% endhighlight %}
 {% endtabs %}
+
+You can handle the events as follows,
 
 {% tabs %}
 {% highlight C# %}
