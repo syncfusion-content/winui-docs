@@ -560,9 +560,9 @@ this.Content = sfRadialGauge;
 
 ![gauge background color](images/axis/axis_backgroundColor.png)
 
-**Background image support**
+**Background content support**
 
-[`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) allows to add an image frame as its background using `BackgroundImage` property.
+[`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) allows to add an any `FrameworkElement` as its background using `BackgroundContent` property.
 
 {% tabs %}
 
@@ -606,8 +606,11 @@ this.Content = sfRadialGauge;
                           MinorTickLength="0.058"
                           TickLengthUnit="Factor"
                           MajorTickStyle="{StaticResource MajorTickStyle}"
-                          MinorTickStyle="{StaticResource MinorTickStyle}"
-                          BackgroundImage="AxisBackground.png">
+                          MinorTickStyle="{StaticResource MinorTickStyle}">
+
+            <gauge:RadialAxis.BackgroundContent>
+                <Image Source="AxisBackground.png" />
+            </gauge:RadialAxis.BackgroundContent>              
 
             <gauge:RadialAxis.Pointers>
                 <gauge:MarkerPointer Value="90"
@@ -664,7 +667,8 @@ radialAxis.MajorTickStyle = this.Resources["MajorTickStyle"] as Style;
 radialAxis.MinorTickStyle = this.Resources["MinorTickStyle"] as Style;
 BitmapImage bm = new BitmapImage();
 bm.UriSource = new Uri("ms-appx:/AxisBackground.png", UriKind.Absolute);
-radialAxis.BackgroundImage = bm;
+Image image = new Image { Source = bm };
+radialAxis.BackgroundContent = image;
 sfRadialGauge.Axes.Add(radialAxis);
 
 MarkerPointer markerPointer = new MarkerPointer();
@@ -723,7 +727,7 @@ private void RadialAxis_LabelPrepared(object sender, LabelPreparedEventArgs e)
 
 {% endtabs %}
 
-![axis background image](images/axis/axis_background.png)
+![axis background content](images/axis/axis_background.png)
 
 ## Axis label customization
 
