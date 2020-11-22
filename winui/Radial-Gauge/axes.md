@@ -1486,7 +1486,7 @@ The `AxisTapped` event is called when an axis is tapped. The corresponding axis 
 
 {% highlight c# %}
 
-private void RadialAxis_AxisTapped(object sender, ValueChangedEventArgs e)
+private void RadialAxis_AxisTapped(object sender, AxisTappedEventArgs e)
 {
     var value = e.Value;
 }
