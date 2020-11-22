@@ -460,7 +460,7 @@ this.Content = sfRadialGauge;
 
 ## Range label
 
-A text can be displayed on range using the `Label` property. The provided text can be customized using the `Foreground`, `FontSize`, `FontWeight`, `FontFamily` and `FontStyle` properties of [`range`]().
+A text can be displayed on range using the `Label` property. The provided text can be customized using the `Foreground`, `FontSize`, `FontWeight`, `FontFamily` and `FontStyle` properties of [`range`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html).
 
 {% tabs %}
 
