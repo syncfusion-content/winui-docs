@@ -317,7 +317,7 @@ this.Content = sfRadialGauge;
 
 ## Setting range color to axis elements
 
-You can set range color to axis labels and ticks using the `UseRangeColorForAxis` property of axis,
+You can set range color to axis labels and ticks using the [`UseRangeColorForAxis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_UseRangeColorForAxisProperty) property of axis,
 
 {% tabs %}
 
