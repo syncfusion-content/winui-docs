@@ -13,49 +13,19 @@ This section explains the steps required to add the Radial Gauge control and its
 
 ## Creating an application with WinUI Radial Gauge
 
-**1.Create new WinUI Project**
+1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
 
-Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
+2. Add reference to [Syncfusion.Gauge.WinUI](https://www.nuget.org/packages/Syncfusion.Gauge.WinUI) NuGet.
 
-**2.Add Syncfusion.Gauges.WinUI NuGet.**
+3. Import the control namespace `Syncfusion.UI.Xaml.Gauges`  in XAML or C# code.
 
-Install the Syncfusion WinUI gauge nuget from [`nuget.org`](https://www.nuget.org/)
-
-NuGet name : Syncfusion.Gauge.WinUI
-
-![gauge nuget reference](images/getting-started/gauge_nuget_reference.png)
-
-**3.Declare namespace**
-
-After the package has been added, declare the namespace like below
+4. Initialize the SfRadialGauge control
 
 {% tabs %}
 
 {% highlight xml %}
 
-xmlns:gauge="using:Syncfusion.UI.Xaml.Gauges"
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-using Syncfusion.UI.Xaml.Gauges;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-**4.Initialize the radial gauge control**
-
-Initialize the SfRadialGauge as a child of any panel such as grid, stack panel or direct content to the Page. 
-
-{% tabs %}
-
-{% highlight xml %}
-
-<Grid>
-    <gauge:SfRadialGauge />
-</Grid>
+<gauge:SfRadialGauge />
 
 {% endhighlight %}
 
@@ -76,14 +46,12 @@ Axes contain a list of axis elements, where you can add any number of radial axe
 
 {% highlight xml %}
 
-<Grid>
-    <gauge:SfRadialGauge>
-        <gauge:SfRadialGauge.Axes>
-            <gauge:RadialAxis Minimum="0"
-                              Maximum="150" />
-        </gauge:SfRadialGauge.Axes>
-    </gauge:SfRadialGauge>
-</Grid>
+<gauge:SfRadialGauge>
+    <gauge:SfRadialGauge.Axes>
+        <gauge:RadialAxis Minimum="0"
+                          Maximum="150" />
+    </gauge:SfRadialGauge.Axes>
+</gauge:SfRadialGauge>
 
 {% endhighlight %}
 
@@ -104,32 +72,30 @@ this.Content = sfRadialGauge;
 
 ## Add range to the radial gauge
 
-Ranges contain a list of range elements, where you can add any number of ranges inside the axis. You can specify the start value, end value, and background color for range using the [`StartValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_StartValue), [`EndValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_EndValue), and `Background` properties as demonstrated in the following code.   
+Ranges contain a list of range elements, where you can add any number of ranges inside the axis. You can specify the start value, end value and background color for range using the [`StartValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_StartValue), [`EndValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_EndValue) and `Background` properties as demonstrated in the following code.   
 
 {% tabs %}
 
 {% highlight xml %}
 
-<Grid>
-    <gauge:SfRadialGauge>
-        <gauge:SfRadialGauge.Axes>
-            <gauge:RadialAxis Maximum="150"
-                              Interval="10">
-                <gauge:RadialAxis.Ranges>
-                    <gauge:GaugeRange StartValue="0"
-                                      EndValue="50"
-                                      Background="Red" />
-                    <gauge:GaugeRange StartValue="50"
-                                      EndValue="100"
-                                      Background="Orange" />
-                    <gauge:GaugeRange StartValue="100"
-                                      EndValue="150"
-                                      Background="Green" />
-                </gauge:RadialAxis.Ranges>
-            </gauge:RadialAxis>
-        </gauge:SfRadialGauge.Axes>
-    </gauge:SfRadialGauge>
-</Grid>
+<gauge:SfRadialGauge>
+    <gauge:SfRadialGauge.Axes>
+        <gauge:RadialAxis Maximum="150"
+                          Interval="10">
+            <gauge:RadialAxis.Ranges>
+                <gauge:GaugeRange StartValue="0"
+                                  EndValue="50"
+                                  Background="Red" />
+                <gauge:GaugeRange StartValue="50"
+                                  EndValue="100"
+                                  Background="Orange" />
+                <gauge:GaugeRange StartValue="100"
+                                  EndValue="150"
+                                  Background="Green" />
+            </gauge:RadialAxis.Ranges>
+        </gauge:RadialAxis>
+    </gauge:SfRadialGauge.Axes>
+</gauge:SfRadialGauge>
 
 {% endhighlight %}
 
@@ -175,18 +141,16 @@ Pointers contains a list of pointer elements, where you can add any number of ga
 
 {% highlight xml %}
 
-<Grid>
-    <gauge:SfRadialGauge>
-        <gauge:SfRadialGauge.Axes>
-            <gauge:RadialAxis Maximum="150"
-                              Interval="10">
-                <gauge:RadialAxis.Pointers>
-                    <gauge:NeedlePointer Value="90" />
-                </gauge:RadialAxis.Pointers>
-            </gauge:RadialAxis>
-        </gauge:SfRadialGauge.Axes>
-    </gauge:SfRadialGauge>
-</Grid>
+<gauge:SfRadialGauge>
+    <gauge:SfRadialGauge.Axes>
+        <gauge:RadialAxis Maximum="150"
+                          Interval="10">
+            <gauge:RadialAxis.Pointers>
+                <gauge:NeedlePointer Value="90" />
+            </gauge:RadialAxis.Pointers>
+        </gauge:RadialAxis>
+    </gauge:SfRadialGauge.Axes>
+</gauge:SfRadialGauge>
 
 {% endhighlight %}
 
@@ -218,27 +182,25 @@ You can add any number of control such as text or image as an annotation inside 
 
 {% highlight xml %}
 
-<Grid>
-    <gauge:SfRadialGauge>
-        <gauge:SfRadialGauge.Axes>
-            <gauge:RadialAxis Maximum="150"
-                              Interval="10">
-                <gauge:RadialAxis.Annotations>
-                    <gauge:GaugeAnnotation x:Name="annotation"
-                                           DirectionUnit="Angle"
-                                           DirectionValue="90"
-                                           PositionFactor="0.5">
-                        <gauge:GaugeAnnotation.Content>
-                            <TextBlock Text="90"
-                                       FontSize="25"
-                                       FontWeight="Bold" />
-                        </gauge:GaugeAnnotation.Content>
-                    </gauge:GaugeAnnotation>
-                </gauge:RadialAxis.Annotations>
-            </gauge:RadialAxis>
-        </gauge:SfRadialGauge.Axes>
-    </gauge:SfRadialGauge>
-</Grid>
+<gauge:SfRadialGauge>
+    <gauge:SfRadialGauge.Axes>
+        <gauge:RadialAxis Maximum="150"
+                          Interval="10">
+            <gauge:RadialAxis.Annotations>
+                <gauge:GaugeAnnotation x:Name="annotation"
+                                       DirectionUnit="Angle"
+                                       DirectionValue="90"
+                                       PositionFactor="0.5">
+                    <gauge:GaugeAnnotation.Content>
+                        <TextBlock Text="90"
+                                   FontSize="25"
+                                   FontWeight="Bold" />
+                    </gauge:GaugeAnnotation.Content>
+                </gauge:GaugeAnnotation>
+            </gauge:RadialAxis.Annotations>
+        </gauge:RadialAxis>
+    </gauge:SfRadialGauge.Axes>
+</gauge:SfRadialGauge>
 
 {% endhighlight %}
 
@@ -271,43 +233,41 @@ The following code example gives you the complete code of above configurations.
 
 {% highlight xml %}
 
-<Grid>
-    <gauge:SfRadialGauge>
-        <gauge:SfRadialGauge.Axes>
-            <gauge:RadialAxis Maximum="150"
-                              Interval="10">
-                <gauge:RadialAxis.Ranges>
-                    <gauge:GaugeRange StartValue="0"
-                                      EndValue="50"
-                                      Background="Red" />
-                    <gauge:GaugeRange StartValue="50"
-                                      EndValue="100"
-                                      Background="Orange" />
-                    <gauge:GaugeRange StartValue="100"
-                                      EndValue="150"
-                                      Background="Green" />
-                </gauge:RadialAxis.Ranges>
+<gauge:SfRadialGauge>
+    <gauge:SfRadialGauge.Axes>
+        <gauge:RadialAxis Maximum="150"
+                            Interval="10">
+            <gauge:RadialAxis.Ranges>
+                <gauge:GaugeRange StartValue="0"
+                                    EndValue="50"
+                                    Background="Red" />
+                <gauge:GaugeRange StartValue="50"
+                                    EndValue="100"
+                                    Background="Orange" />
+                <gauge:GaugeRange StartValue="100"
+                                    EndValue="150"
+                                    Background="Green" />
+            </gauge:RadialAxis.Ranges>
 
-                <gauge:RadialAxis.Pointers>
-                    <gauge:NeedlePointer Value="90" />
-                </gauge:RadialAxis.Pointers>
+            <gauge:RadialAxis.Pointers>
+                <gauge:NeedlePointer Value="90" />
+            </gauge:RadialAxis.Pointers>
 
-                <gauge:RadialAxis.Annotations>
-                    <gauge:GaugeAnnotation x:Name="annotation"
-                                           DirectionUnit="Angle"
-                                           DirectionValue="90"
-                                           PositionFactor="0.5">
-                        <gauge:GaugeAnnotation.Content>
-                            <TextBlock Text="90"
-                                       FontSize="25"
-                                       FontWeight="Bold" />
-                        </gauge:GaugeAnnotation.Content>
-                    </gauge:GaugeAnnotation>
-                </gauge:RadialAxis.Annotations>
-            </gauge:RadialAxis>
-        </gauge:SfRadialGauge.Axes>
-    </gauge:SfRadialGauge>
-</Grid>
+            <gauge:RadialAxis.Annotations>
+                <gauge:GaugeAnnotation x:Name="annotation"
+                                        DirectionUnit="Angle"
+                                        DirectionValue="90"
+                                        PositionFactor="0.5">
+                    <gauge:GaugeAnnotation.Content>
+                        <TextBlock Text="90"
+                                    FontSize="25"
+                                    FontWeight="Bold" />
+                    </gauge:GaugeAnnotation.Content>
+                </gauge:GaugeAnnotation>
+            </gauge:RadialAxis.Annotations>
+        </gauge:RadialAxis>
+    </gauge:SfRadialGauge.Axes>
+</gauge:SfRadialGauge>
 
 {% endhighlight %}
 
@@ -353,3 +313,5 @@ this.Content = sfRadialGauge;
 {% endhighlight %}
 
 {% endtabs %}
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WinUI_Radial_Gauge_Getting_Started)
