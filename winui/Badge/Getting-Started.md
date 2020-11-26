@@ -443,7 +443,7 @@ You can enable the `Scale` or `Opacity` based animation for displaying the `Badg
 {% endhighlight %}
 {% highlight C# %}
 
-badge.BadgeAnimationType = AnimationType.Scale;
+badge.BadgeAnimationType = BadgeAnimationType.Scale;
 badge.Content = "1";
 
 {% endhighlight %}
