@@ -528,6 +528,207 @@ this.Content = sfRadialGauge;
 
 ![axis line visibility](images/axis/axis_showline.png)
 
+**Background color support**
+
+[`Radial gauge`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) allows customizing its background color using `Background` property.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<gauge:SfRadialGauge Background="LightBlue">
+    <gauge:SfRadialGauge.Axes>
+        <gauge:RadialAxis />
+    </gauge:SfRadialGauge.Axes>
+</gauge:SfRadialGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+sfRadialGauge.Background = new SolidColorBrush(Colors.LightBlue);
+
+RadialAxis radialAxis = new RadialAxis();
+sfRadialGauge.Axes.Add(radialAxis);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![gauge background color](images/axis/axis_backgroundColor.png)
+
+**Background content support**
+
+[`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) allows to add an any `FrameworkElement` as its background using `BackgroundContent` property.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<Page.Resources>
+    <Style x:Key="MajorTickStyle"
+           TargetType="Line">
+        <Setter Property="Stroke"
+                Value="#FF949494" />
+        <Setter Property="StrokeThickness"
+                Value="2.3" />
+    </Style>
+    <Style x:Key="MinorTickStyle"
+           TargetType="Line">
+        <Setter Property="Stroke"
+                Value="#FF616161" />
+        <Setter Property="StrokeThickness"
+                Value="1.6" />
+    </Style>
+</Page.Resources>
+
+<gauge:SfRadialGauge>
+    <gauge:SfRadialGauge.Axes>
+        <gauge:RadialAxis ShowAxisLine="False"
+                          RadiusFactor="1"
+                          CanRotateLabels="True"
+                          TickOffset="0.32"
+                          OffsetUnit="Factor"
+                          LabelPrepared="RadialAxis_LabelPrepared"
+                          StartAngle="270"
+                          EndAngle="270"
+                          LabelOffset="0.45"
+                          Maximum="360"
+                          Minimum="0"
+                          Interval="30"
+                          MinorTicksPerInterval="4"
+                          Foreground="White"
+                          FontSize="11"
+                          MajorTickLength="0.087"
+                          MinorTickLength="0.058"
+                          TickLengthUnit="Factor"
+                          MajorTickStyle="{StaticResource MajorTickStyle}"
+                          MinorTickStyle="{StaticResource MinorTickStyle}">
+
+            <gauge:RadialAxis.BackgroundContent>
+                <Image Source="AxisBackground.png" />
+            </gauge:RadialAxis.BackgroundContent>              
+
+            <gauge:RadialAxis.Pointers>
+                <gauge:MarkerPointer Value="90"
+                                     Background="#FFDF5F2D"
+                                     EnableAnimation="True"
+                                     AnimationDuration="1200"
+                                     MarkerOffset="0.71"
+                                     OffsetUnit="Factor"
+                                     MarkerType="Triangle"
+                                     MarkerHeight="10"
+                                     MarkerWidth="15" />
+            </gauge:RadialAxis.Pointers>
+
+            <gauge:RadialAxis.Annotations>
+                <gauge:GaugeAnnotation DirectionValue="270">
+                    <gauge:GaugeAnnotation.Content>
+                        <TextBlock Text="90"
+                                   Foreground="#FFDF5F2D"
+                                   FontWeight="SemiBold"
+                                   FontSize="22" />
+                    </gauge:GaugeAnnotation.Content>
+                </gauge:GaugeAnnotation>
+            </gauge:RadialAxis.Annotations>
+        </gauge:RadialAxis>
+    </gauge:SfRadialGauge.Axes>
+</gauge:SfRadialGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+radialAxis.ShowAxisLine = false;
+radialAxis.RadiusFactor = 1;
+radialAxis.CanRotateLabels = true;
+radialAxis.TickOffset = 0.32;
+radialAxis.OffsetUnit = SizeUnit.Factor;
+radialAxis.LabelPrepared += this.RadialAxis_LabelPrepared;
+radialAxis.StartAngle = 270;
+radialAxis.EndAngle = 270;
+radialAxis.LabelOffset = 0.45;
+radialAxis.Maximum = 360;
+radialAxis.Minimum = 0;
+radialAxis.Interval = 30;
+radialAxis.MinorTicksPerInterval = 4;
+radialAxis.Foreground = new SolidColorBrush(Colors.White);
+radialAxis.FontSize = 11;
+radialAxis.MajorTickLength = 0.087;
+radialAxis.MinorTickLength = 0.058;
+radialAxis.TickLengthUnit = SizeUnit.Factor;
+radialAxis.MajorTickStyle = this.Resources["MajorTickStyle"] as Style;
+radialAxis.MinorTickStyle = this.Resources["MinorTickStyle"] as Style;
+BitmapImage bm = new BitmapImage();
+bm.UriSource = new Uri("ms-appx:/AxisBackground.png", UriKind.Absolute);
+Image image = new Image { Source = bm };
+radialAxis.BackgroundContent = image;
+sfRadialGauge.Axes.Add(radialAxis);
+
+MarkerPointer markerPointer = new MarkerPointer();
+markerPointer.Value = 90;
+markerPointer.Background = new SolidColorBrush(Color.FromArgb(255, 223, 95, 45));
+markerPointer.EnableAnimation = true;
+markerPointer.AnimationDuration = 1200;
+markerPointer.MarkerOffset = 0.71;
+markerPointer.OffsetUnit = SizeUnit.Factor;
+markerPointer.MarkerType = Syncfusion.UI.Xaml.Gauges.MarkerType.Triangle;
+markerPointer.MarkerHeight = 10;
+markerPointer.MarkerWidth = 15;
+radialAxis.Pointers.Add(markerPointer);
+
+GaugeAnnotation gaugeAnnotation = new GaugeAnnotation();
+gaugeAnnotation.DirectionValue = 270;
+TextBlock textBlock = new TextBlock();
+textBlock.Text = "90";
+textBlock.Foreground = new SolidColorBrush(Color.FromArgb(255, 223, 95, 45));
+textBlock.FontWeight = FontWeights.SemiBold;
+textBlock.FontSize = 22;
+gaugeAnnotation.Content = textBlock;
+radialAxis.Annotations.Add(gaugeAnnotation);
+
+this.Content = sfRadialGauge;
+
+// Label prepared event.
+private void RadialAxis_LabelPrepared(object sender, LabelPreparedEventArgs e)
+{
+    if (e.LabelText == "90")
+    {
+        e.LabelText = "E";
+    }
+    else if (e.LabelText == "360")
+    {
+        e.LabelText = string.Empty;
+    }
+    else
+    {
+        if (e.LabelText == "0")
+        {
+            e.LabelText = "N";
+        }
+        else if (e.LabelText == "180")
+        {
+            e.LabelText = "S";
+        }
+        else if (e.LabelText == "270")
+        {
+            e.LabelText = "W";
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![axis background content](images/axis/axis_background.png)
+
 ## Axis label customization
 
 The axis labels can be customized using the following properties
