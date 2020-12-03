@@ -1467,3 +1467,30 @@ private void RadialAxis_LabelPrepared(object sender, LabelPreparedEventArgs e)
 {% endtabs %}
 
 ![axis label prepared event](images/axis/axis_labelPrepared.png)
+
+**AxisTapped**
+
+The `AxisTapped` event is called when an axis is tapped. The corresponding axis value at the tapped position will be got from the event argument.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<gauge:SfRadialGauge>
+    <gauge:SfRadialGauge.Axes>
+        <gauge:RadialAxis AxisTapped="RadialAxis_AxisTapped" />
+    </gauge:SfRadialGauge.Axes>
+</gauge:SfRadialGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+private void RadialAxis_AxisTapped(object sender, AxisTappedEventArgs e)
+{
+    var value = e.Value;
+}
+
+{% endhighlight %}
+
+{% endtabs %}
