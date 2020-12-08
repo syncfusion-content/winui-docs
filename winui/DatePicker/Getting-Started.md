@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI DatePicker (SfDatePicker)
 
-This section describes how to create a [DatePicker]() control in a WinUI application and overview of its basic functionalities.
+This section explains the steps required to add the [DatePicker]() control and its date selection options. This section covers only basic features needed to get started with Syncfusion `DatePicker` control.
 
 ## Structure of DatePicker control
 
@@ -140,6 +140,33 @@ sfDatePicker.AllowNullValue = true;
 
 N> Download demo application from [GitHub]()
 
+## Setting WaterMark text
+
+You can prompt the user with some information by using the [PlaceHolderText]() property. This will dispaly only on when the `TimePicker` contains the `SelectedDate` property as `null` and `AllowNullValue` property as `true`. If `AllowNullValue` property is `false`, then the current system time is updated in `SelectedDate` property and displayed instead of `PlaceHolderText`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDatePicker PlaceHolderText="Select the Time"
+                         SelectedDate="{x:Null}"
+                         AllowNullValue="True"
+                         Name="sfDatePicker" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfDatePicker sfDatePicker= new SfDatePicker();
+sfDatePicker.PlaceHolderText = "Select the Time";
+sfDatePicker.SelectedDate = null;
+sfDatePicker.AllowNullValue = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfDatePicker displaying watermark text](Getting-Started_images/PlaceHolderText.png)
+
+N> Download demo application from [GitHub]()
+
 ## Date changed notification
 
 You will be notified when selected date changed in `SfDatePicker` by using [DateChanged]() event. The `DateChanged` event contains the old and newly selected date in the [OldDateTime](), [NewDateTime]() properties.
@@ -198,7 +225,7 @@ sfDatePicker.FormatString= "MM/yyyy";
 
 N> Download demo application from [GitHub]()
 
-## Specifying date format for the DateSelector
+## Change date format for Spinner
 
 You can allow the user to select the pair of date, month and year selector or any single selector cell from the drop down date selector by using the [DropdownFormatString]() property. The default value of `DropdownFormatString` property is `d`.
 
@@ -246,7 +273,7 @@ sfDatePicker.MinDate = new DateTimeOffset(new DateTime(2020,12,14));
 
 ![SfDatePicker restrict the date selection with particular range](Features_images/MinDate.png)
 
-## Block dates
+## Block dates using BlackoutDates
 
 If you want to block particular dates from the date selection, add that date ranges to the [BlackoutDates]() collection. You can add more block out date ranges to the `BlackoutDates` collection.
 
@@ -269,7 +296,7 @@ sfDatePicker.MinDate = new DateTimeOffset(new DateTime(2020,12,14));
 
 ![SfDatePicker blocks the particular dates from selection](Features_images/BlackoutDates.png)
 
-## Selecting the date using free form editing
+## Edit date using free form editing
 
 If you want to perform the validation after the user completely entering their date inputs, use the [EditMode]() property value as `Normal`. Then the entered date value is validated with the `FormatString` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the selected date will be set as default format value.
 
@@ -292,9 +319,9 @@ sfDatePicker.EditMode = DateTimeEditingMode.Normal;
 
 ![SfDatePicker enables free form editing to select date](Features_images/Normal.png)
 
-## Restrict date selection using editing
+## Restrict date selection by editing
 
-You can restrict the date selection from editing by using the `EditMode` property value is `None`. Then, you can change the date only using drop down date selector. The default value of `EditMode` property is `Mask`.
+You can restrict the date selection during editing by using the `EditMode` property value is `None`. Then, you can change the date only using drop down date selector. The default value of `EditMode` property is `Mask`.
 
 {% tabs %}
 {% highlight xaml %}
