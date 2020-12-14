@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion WinUI Slider
-description: Learn about introduction of Syncfusion WinUI Slider (SfSlider) control and its available features
+description: To Learn about introduction of Syncfusion WinUI Slider (SfSlider) control and its available features.
 platform: WinUI
 control: SfSlider
 documentation: ug

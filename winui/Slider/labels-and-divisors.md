@@ -276,7 +276,7 @@ this.Content = sfSlider;
 
 ## Divisors height and width
 
-You can change the divisor heigth and width of the slider using `DivisorHeight` and `DivisorWidth` properties respectively.
+You can change the divisor height and width of the slider using `DivisorHeight` and `DivisorWidth` properties respectively.
 
 {% tabs %}
 

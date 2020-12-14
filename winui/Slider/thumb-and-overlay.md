@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Thumb features in Syncfusion WinUI Slider
-description: This section explains about how to customize the thumb and thumb overlay in the WinUI application.
+description: This article describes about how to customize the thumb and thumb overlay of syncfusion Slider control in WinUI platform.
 platform: WinUI
 control: SfSlider
 documentation: ug
@@ -43,7 +43,7 @@ this.Content = sfSlider;
 
 ## Thumb height and width
 
-You can change the thumb heigth and width of the slider using `ThumbHeight` and `ThumbWidth` properties respectively. The default values of both properties are 20.
+You can change the thumb height and width of the slider using `ThumbHeight` and `ThumbWidth` properties respectively. The default values of both properties are 20.
 
 {% tabs %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interval in Syncfusion WinUI Slider
-description: This section explains about how to add intervals for Syncfusion WinUI Slider.
+description: This article describes about how to add intervals for the syncfusion Slider control in WinUI platform.
 platform: WinUI
 control: SfSlider
 documentation: ug

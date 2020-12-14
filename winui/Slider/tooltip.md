@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tooltip features in Syncfusion WinUI Slider
-description: This section explains about how to show tooltip, and customize its appearance in the WinUI slider.
+description: This article describes about how to show tooltip, and customize its appearance of syncfusion Slider control in WinUI platform.
 platform: WinUI
 control: SfSlider
 documentation: ug
