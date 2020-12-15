@@ -51,7 +51,9 @@ You can change the thumb height and width of the slider using `ThumbHeight` and 
 
 <slider:SfSlider Value="50"
                  ThumbHeight="30"
-                 ThumbWidth="30" />
+                 ThumbWidth="30"
+                 ActiveTrackHeight="8"
+                 InactiveTrackHeight="8" />
 
 {% endhighlight %}
 
@@ -61,6 +63,8 @@ SfSlider sfSlider = new SfSlider();
 sfSlider.Value = 50;
 sfSlider.ThumbHeight = 30;
 sfSlider.ThumbWidth = 30;
+sfSlider.ActiveTrackHeight = 8;
+sfSlider.InactiveTrackHeight = 8;
 this.Content = sfSlider;
 
 {% endhighlight %}
@@ -204,13 +208,15 @@ sfSlider.ShowToolTip = false;
 sfSlider.ThumbHeight = 30;
 sfSlider.ThumbHeight = 30;
 sfSlider.ThumbStyle = this.Resources["thumbStyle"] as Style;
-this.MainGrid.Children.Add(sfSlider);
+this.Content = sfSlider;
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![slider with thumb style customization](images/thumb-and-overlay/slider-thumbstyle.png)
+
+N> Its DataContext is current value of thumb.
 
 ## Thumb overlay radius
 
@@ -232,7 +238,7 @@ SfSlider sfSlider = new SfSlider();
 sfSlider.Value = 50;
 sfSlider.ShowToolTip = false;
 sfSlider.ThumbOverlayRadius = 20;
-this.MainGrid.Children.Add(sfSlider);
+this.Content = sfSlider;
 
 {% endhighlight %}
 
@@ -258,7 +264,7 @@ The `ThumbOverlayFill` property allows you to define the fill color for the over
 SfSlider sfSlider = new SfSlider();
 sfSlider.Value = 50;
 sfSlider.ThumbOverlayFill = new SolidColorBrush(Colors.Red);
-this.MainGrid.Children.Add(sfSlider);
+this.Content = sfSlider;
 
 {% endhighlight %}
 
@@ -267,3 +273,54 @@ this.MainGrid.Children.Add(sfSlider);
 ![slider with overlay fill customization](images/thumb-and-overlay/slider-thumboverlayfill.png)
 
 N> Overlay effects displayed with 0.3 opacity.
+
+
+## Events
+
+**ThumbDragStarted**
+
+The `ThumbDragStarted` event occurs when the thumb dragging started.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<slider:SfSlider Value="50"
+                 ThumbDragStarted="SfSlider_ThumbDragStarted" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+private void SfSlider_ThumbDragStarted(object sender, DragStartedEventArgs e)
+{
+    //Perform action here.
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**ThumbDragCompleted**
+
+The `ThumbDragCompleted` event occurs Event raised when the thumb dragged completed.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<slider:SfSlider Value="70"
+                 ThumbDragCompleted="SfSlider_ThumbDragCompleted" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+private void SfSlider_ThumbDragCompleted(object sender, DragCompletedEventArgs e)
+{
+    //Perform action here.
+}
+
+{% endhighlight %}
+
+{% endtabs %}

@@ -73,7 +73,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![slider with active and inactive track color](images/track/slider-activeInactiveHoverFill.png)
+![slider with active and inactive track hover color](images/track/slider-activeInactiveHoverFill.png)
 
 ## Track pressed color
 
@@ -101,15 +101,15 @@ sfSlider.ActiveTrackFill = new SolidColorBrush(ColorHelper.FromArgb(255, 0, 150,
 sfSlider.InactiveTrackFill = new SolidColorBrush(ColorHelper.FromArgb(255, 194, 230, 227));
 sfSlider.ActiveTrackHoverFill = new SolidColorBrush(ColorHelper.FromArgb(255, 41, 186, 173));
 sfSlider.InactiveTrackHoverFill = new SolidColorBrush(ColorHelper.FromArgb(255, 197, 222, 218));
-sfSlider.ActiveTrackHoverFill = new SolidColorBrush(ColorHelper.FromArgb(255, 1, 138, 125));
-sfSlider.InactiveTrackHoverFill = new SolidColorBrush(ColorHelper.FromArgb(255, 152, 184, 181));
+sfSlider.ActiveTrackPressedFill = new SolidColorBrush(ColorHelper.FromArgb(255, 1, 138, 125));
+sfSlider.InactiveTrackPressedFill = new SolidColorBrush(ColorHelper.FromArgb(255, 152, 184, 181));
 this.Content = sfSlider;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![slider with active and inactive track color](images/track/slider-activeInactivePressedFill.png)
+![slider with active and inactive track pressed color](images/track/slider-activeInactivePressedFill.png)
 
 ## Track height
 
@@ -181,7 +181,7 @@ sfSlider.ActiveTrackHeight = 8;
 sfSlider.InactiveTrackHeight = 6;
 sfSlider.ActiveTrackStyle = this.Resources["ActiveTrackStyle"] as Style;
 sfSlider.InactiveTrackStyle = this.Resources["InactiveTrackStyle"] as Style;
-this.MainGrid.Children.Add(sfSlider);
+this.Content = sfSlider;
 
 {% endhighlight %}
 

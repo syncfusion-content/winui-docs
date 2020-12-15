@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains about how to add the WinUI slider with basic features.
 
-## Setting axis minimum and maximum value
+## Setting minimum and maximum value
 
 The `Minimum` and `Maximum` properties of an slider can be used to customize the value range. The default value of `Minimum` is 0 and the default value of `Maximum` is 100.
 
@@ -98,3 +98,33 @@ this.Content = sfSlider;
 {% endtabs %}
 
 ![Slider with is inversed customization](images/basic-features/slider-isInversed.png)
+
+## Events
+
+**ValueChanged**
+
+The `ValueChanged` event occurs each time a `Value` property get changed. You can get the following values in this event args:
+
+* `OldValue` – Gets the previous value of a range value property.
+* `NewValue` – Gets the new value of a range value property.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<slider:SfSlider Value="50"
+                 ValueChanged="SfSlider_ValueChanged" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+private void SfSlider_ValueChanged(object sender, SliderValueChangedEventArgs e)
+{
+    var oldValue = e.OldValue;
+    var newValue = e.NewValue;
+}
+
+{% endhighlight %}
+
+{% endtabs %}

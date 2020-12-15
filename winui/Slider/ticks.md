@@ -47,7 +47,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with ticks](images/ticks/slider-interval.png)
+![Slider with ticks](images/ticks/slider-ticks.png)
 
 ## Show minor ticks
 

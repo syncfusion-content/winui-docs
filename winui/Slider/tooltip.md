@@ -111,7 +111,7 @@ The `ToolTipStyle` property allows you to define the style for the slider toolti
 
 <slider:SfSlider Value="50"
                  ShowToolTip="True"
-                 ToolTipStyle={StaticResource ToolTipStyle} />
+                 ToolTipStyle="{StaticResource ToolTipStyle}" />
 
 {% endhighlight %}
 
@@ -147,7 +147,7 @@ The `ToolTipTemplate` property allows you to define the data template for the sl
 
 <slider:SfSlider Value="50"
                  ShowToolTip="True"
-                 ToolTipTemplate={StaticResource ToolTipTemplate} />
+                 ToolTipTemplate="{StaticResource ToolTipTemplate}" />
 
 {% endhighlight %}
 

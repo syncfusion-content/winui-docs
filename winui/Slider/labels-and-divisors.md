@@ -181,7 +181,7 @@ The `ActiveLabelTemplate` property allows you to define the data template for th
 
 <slider:SfSlider ShowLabels="True"
                  LabelOffset="10"
-                 LabelTemplate="{StaticResource ActiveTrackLabelTemplate}"
+                 ActiveLabelTemplate="{StaticResource ActiveTrackLabelTemplate}"
                  Value="50" />
 
 {% endhighlight %}
@@ -191,7 +191,7 @@ The `ActiveLabelTemplate` property allows you to define the data template for th
 SfSlider sfSlider = new SfSlider();
 sfSlider.ShowLabels = true;
 sfSlider.LabelOffset = 10;
-sfSlider.LabelTemplate = this.Resources["ActiveTrackLabelTemplate"] as DataTemplate;
+sfSlider.ActiveLabelTemplate = this.Resources["ActiveTrackLabelTemplate"] as DataTemplate;
 sfSlider.Value = 50;
 this.Content = sfSlider;
 
@@ -368,7 +368,7 @@ sfSlider.ShowDivisors = true;
 sfSlider.DivisorHeight = 10;
 sfSlider.DivisorWidth = 10;
 sfSlider.DivisorFill = new SolidColorBrush(ColorHelper.FromArgb(255,255, 121, 121));
-this.MainGrid.Children.Add(sfSlider);
+this.Content = sfSlider;
 
 {% endhighlight %}
 

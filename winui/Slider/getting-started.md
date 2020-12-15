@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains the steps required to add the slider control and its elements such as values, ticks, divisors, labels and tooltip. This section covers only basic features needed to know to get started with Syncfusion slider.
 
-## Creating an application with WinUI Radial Gauge
+## Creating an application with WinUI Slider
 
 1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
 
