@@ -7,11 +7,11 @@ control: SfSlider
 documentation: ug
 ---
 
-# Ticks features in WinUI Slider
+# Ticks Features in WinUI Slider
 
 This section helps to learn about how to add major and minor ticks in the slider.
 
-## Show major ticks
+## Show Major Ticks
 
 You can enable the major ticks on the track. It is a shape which is used to represent the major interval points of the track. The default value of `ShowTicks` property is false.
 
@@ -49,7 +49,7 @@ this.Content = sfSlider;
 
 ![Slider with ticks](images/ticks/slider-ticks.png)
 
-## Show minor ticks
+## Show Minor Ticks
 
 It is used to represent the number of smaller ticks between two major ticks. For example, if min is 0 and max is 10 and interval is 2, the slider will render the major ticks at 0, 2, 4 and so on. If `MinorTicksPerInterval` is 1, then smaller ticks will be rendered on 1, 3 and so on. The default value of `MinorTicksPerInterval` property is 1.
 
@@ -85,7 +85,7 @@ this.Content = sfSlider;
 
 ![Slider with ticks](images/ticks/slider-minorTicksPerInterval.png)
 
-## Tick length
+## Tick Length
 
 You can change the major and minor ticks length of the slider using the MajorTickLength and MinorTickLength properties respectively. The default value of MajorTickLength and MinorTickLength properties are 10 and 5 respectively.
 
@@ -125,7 +125,7 @@ this.Content = sfSlider;
 
 ![Slider with ticks](images/ticks/slider-majorMinorTickLength.png)
 
-## Tick placement
+## Tick Placement
 
 The `TickPlacement` property is used to place the ticks either before or after the track. The default value of the `TickPlacement` property is `Placement.After`.
 
@@ -153,7 +153,7 @@ this.Content = sfSlider;
 
 ![Slider with tick placement customization](images/ticks/slider-tickPlacement.png)
 
-## Ticks offset
+## Ticks Offset
 
 You can adjust the space between track and ticks of the slider using the `TickOffset` property. The default value of the `TickOffset` property is 0.
 
@@ -191,9 +191,9 @@ this.Content = sfSlider;
 
 ![Slider with ticks](images/ticks/slider-tickOffset.png)
 
-## Tick style
+## Tick Style
 
-**Setting style for major and minor ticks**
+**Setting Style for Major and Minor Ticks**
 
 The `MajorTickStyle` and `MinorTickStyle` properties allows you to define the style for the major and minor tick’s respectively as shown in the following code example.
 
@@ -244,7 +244,7 @@ this.Content = sfSlider;
 
 ![Slider with ticks](images/ticks/slider-majorMinorTickStyle.png)
 
-**Setting active style for major and minor ticks**
+**Setting Active Style for Major and Minor Ticks**
 
 The `ActiveMajorTickStyle` and `ActiveMinorTickStyle` properties allows you to define the active style for the major and minor tick’s respectively as shown in the following code example.
 

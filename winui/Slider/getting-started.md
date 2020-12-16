@@ -40,7 +40,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-## Set value
+## Set Value
 
 You can show value in the slider by setting double value to the `Value` properties.
 
@@ -64,7 +64,7 @@ this.Content = sfSlider;
 
 ![Setting value to slider](images/getting-started/slider-value.png)
 
-## Enable ticks
+## Enable Ticks
 
 You can enable ticks in the slider using the `ShowTicks` property.
 
@@ -90,7 +90,7 @@ this.Content = sfSlider;
 
 ![Slider with ticks](images/getting-started/slider-ticks.png)
 
-## Enable labels
+## Enable Labels
 
 You can enable ticks in the slider using the `ShowLabels` property.
 
@@ -116,7 +116,7 @@ this.Content = sfSlider;
 
 ![Slider with labels](images/getting-started/slider-labels.png)
 
-## Enable divisors
+## Enable Divisors
 
 You can enable divisors in the slider using the `ShowDivisors` property.
 

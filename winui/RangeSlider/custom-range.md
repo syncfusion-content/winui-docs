@@ -7,7 +7,7 @@ control: SfRangeSlider
 documentation: ug
 ---
 
-# Custom scale range in range slider
+# Custom Scale Range in Range Slider
 
 Range slider allows you to define a custom scale range by extending the range slider based on your business logic.
 

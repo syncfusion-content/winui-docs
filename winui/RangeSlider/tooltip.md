@@ -7,11 +7,11 @@ control: SfRangeSlider
 documentation: ug
 ---
 
-# Tooltip features in Flutter range slider
+# Tooltip Features in WinUI Range Slider
 
 This section helps to learn about how to add tooltip in the range slider.
 
-## Show tooltip
+## Show Tooltip
 
 You can enable tooltip for the thumb using `ShowToolTip` property of range slider. It is used to clearly indicate the current selection of the value during interaction. The default value of `ShowToolTip` property is true.
 
@@ -39,7 +39,7 @@ this.Content = sfRangeSlider;
 
 ![Range slider with tooltip](images/tooltip/slider-tooltip.png)
 
-## Tooltip option
+## Tooltip Option
 
 You can display tooltip for either active thumb or both thumb using `ToolTipOption` property of range slider. The default value of `ToolTipOption` property is `ToolTipOption.Both`.
 
@@ -67,7 +67,7 @@ this.Content = sfRangeSlider;
 
 ![Range slider with tooltip option customization](images/tooltip/slider-tooltipoption.png)
 
-## Tooltip text format
+## Tooltip Text Format
 
 The `ToolTipFormat` property allows to customize the axis label with the globalized label format. The default value of `ToolTipFormat` property is N2.
 
@@ -97,7 +97,7 @@ this.Content = sfRangeSlider;
 
 ![Range slider with tooltip format customization](images/tooltip/slider-tooltipformat.png)
 
-## Tooltip placement
+## Tooltip Placement
 
 The `ToolTipPlacement` property is used to place the tooltip either before or after the track. The default value of the `ToolTipPlacement` property is `Placement.Before`.
 
@@ -127,7 +127,7 @@ this.Content = sfRangeSlider;
 
 ![Range slider with tooltip placement customization](images/tooltip/slider-tooltipplacement.png)
 
-## Tooltip style
+## Tooltip Style
 
 The `ToolTipStyle` property allows you to define the style for the range slider tooltip as shown in the following code example. The default value of `ToolTipStyle` property is null.
 
@@ -165,7 +165,7 @@ this.Content = sfRangeSlider;
 
 ![Range slider with tooltip style](images/tooltip/slider-tooltipstyle.png)
 
-## Tooltip template
+## Tooltip Template
 
 The `ToolTipTemplate` property allows you to define the data template for the range slider tooltip as shown in the following code example.
 

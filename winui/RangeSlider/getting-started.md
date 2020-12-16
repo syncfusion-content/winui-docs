@@ -40,7 +40,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-## Set value
+## Set Values
 
 You can show values in the range slider by setting double value to the `RangeStart` and `RangeEnd` properties.
 
@@ -66,7 +66,7 @@ this.Content = sfRangeSlider;
 
 ![Setting values to range slider](images/getting-started/slider-value.png)
 
-## Enable ticks
+## Enable Ticks
 
 You can enable ticks in the range slider using the `ShowTicks` property.
 
@@ -94,7 +94,7 @@ this.Content = sfRangeSlider;
 
 ![Range slider with ticks](images/getting-started/slider-ticks.png)
 
-## Enable labels
+## Enable Labels
 
 You can enable ticks in the range slider using the `ShowLabels` property.
 
@@ -122,7 +122,7 @@ this.Content = sfRangeSlider;
 
 ![Range slider with labels](images/getting-started/slider-labels.png)
 
-## Enable divisors
+## Enable Divisors
 
 You can enable divisors in the range slider using the `ShowDivisors` property.
 

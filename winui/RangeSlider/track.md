@@ -7,11 +7,11 @@ control: SfRangeSlider
 documentation: ug
 ---
 
-# Track features in Syncfusion WinUI range slider
+# Track Features in Syncfusion WinUI Range Slider
 
 This section helps to learn about how to customize the track in the slider.
 
-## Track color
+## Track Color
 
 You can change the active and inactive track color of the range slider using the `ActiveTrackFill` and `InactiveTrackFill` properties respectively.
 
@@ -47,7 +47,7 @@ this.Content = sfRangeSlider;
 
 ![Range slider with active and inactive track color](images/track/slider-activeInactiveFill.png)
 
-## Track hover color
+## Track Hover Color
 
 You can change the active and inactive track hover color of the range slider using the `ActiveTrackHoverFill` and `InactiveTrackHoverFill` properties respectively. This color will be applied when hover the cursor on the range slider control.
 
@@ -81,7 +81,7 @@ this.Content = sfRangeSlider;
 
 ![Range slider with active and inactive track hover color](images/track/slider-activeInactiveHoverFill.png)
 
-## Track pressed color
+## Track Pressed Color
 
 You can change the active and inactive track pressed color of the range slider using the `ActiveTrackHoverFill` and `InactiveTrackHoverFill` properties respectively. This color will be applied when pressed the cursor on the range slider control.
 
@@ -119,7 +119,7 @@ this.Content = sfRangeSlider;
 
 ![Range slider with active and inactive track pressed color](images/track/slider-activeInactivePressedFill.png)
 
-## Track height
+## Track Height
 
 You can change the track height of the range slider using the `ActiveTrackHeight` and `InactiveTrackHeight` properties. The default value of the both properties are 2.
 
@@ -149,7 +149,7 @@ this.Content = sfRangeSlider;
 
 ![Range slider with active and inactive track color](images/track/slider-activeInactiveTrackHeight.png)
 
-## Track style
+## Track Style
 
 You can change the track height of the range slider using the `ActiveTrackStyle` and `InactiveTrackStyle` properties. The default value of the both properties are null.
 

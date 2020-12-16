@@ -7,14 +7,14 @@ control: SfRangeSlider
 documentation: ug
 ---
 
-# Thumb and thumb overlay features in range slider
+# Thumb and Thumb Overlay Features in Range Slider
 
 This section helps to learn about how to customize the thumb and thumb overlay in the range slider.
 
 Thumb - It is one of the elements of range slider which can be used to drag and change the selected value of the range slider.
 Thumb overlay - It is rendered around the thumb while interacting with them.
 
-## Thumb type
+## Thumb Type
 
 You can change the thumb type using the `ThumbType` property. The default value of `ThumbType` is `ThumbType.Circle`.
 
@@ -43,7 +43,7 @@ this.Content = sfRangeSlider;
 
 ![Range slider with thumb type customization](images/thumb-and-overlay/slider-thumbtype.png)
 
-## Thumb height and width
+## Thumb Height and Width
 
 You can change the thumb height and width of the range slider using `ThumbHeight` and `ThumbWidth` properties respectively. The default values of both properties are 20.
 
@@ -77,7 +77,7 @@ this.Content = sfRangeSlider;
 
 ![Range slider with thumb height and width customization](images/thumb-and-overlay/slider-thumbHeightWidth.png)
 
-## Thumb background
+## Thumb Background
 
 You can change the thumb background of the range slider using the `ThumbBackground` property.
 
@@ -105,7 +105,7 @@ this.Content = sfRangeSlider;
 
 ![Range slider with thumb background customization](images/thumb-and-overlay/slider-thumbbackground.png)
 
-## Thumb hover background
+## Thumb Hover Background
 
 You can change the thumb hover background of the range slider using the `ThumbHoverBackground` property.
 
@@ -135,7 +135,7 @@ this.Content = sfRangeSlider;
 
 ![Range slider with thumb hover background customization](images/thumb-and-overlay/slider-thumbhoverbackground.png)
 
-## Thumb Pressed background
+## Thumb Pressed Background
 
 You can change the thumb pressed background of the range slider using the `ThumbPressedBackground` property.
 
@@ -167,7 +167,7 @@ this.Content = sfRangeSlider;
 
 ![Range slider with thumb pressed background customization](images/thumb-and-overlay/slider-thumbpressedbackground.png)
 
-## Thumb style
+## Thumb Style
 
 The `ThumbStyle` property allows you to define the style for the thumb as shown in the following code example.
 
@@ -230,7 +230,7 @@ this.Content = sfRangeSlider;
 
 N> Its DataContext is current value of thumb.
 
-## Thumb overlay radius
+## Thumb Overlay Radius
 
 The `ThumbOverlayRadius` property allows you to define the radius for the overlay as shown in the following code example. The default value of `ThumbOverlayRadius` property is 10.
 
@@ -260,7 +260,7 @@ this.Content = sfRangeSlider;
 
 ![Range slider with overlay radius customization](images/thumb-and-overlay/slider-thumboverlayradius.png)
 
-## Thumb overlay fill
+## Thumb Overlay Fill
 
 The `ThumbOverlayFill` property allows you to define the fill color for the overlay as shown in the following code example.
 
