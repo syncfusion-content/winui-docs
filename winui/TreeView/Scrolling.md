@@ -97,7 +97,7 @@ By default, horizontal scrollbar is not enabled in the TreeView. If you want to 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfTreeView  
-                x:Name="treeView" 
+                x:Name="sfTreeView" 
                 ScrollViewer.HorizontalScrollBarVisibility="Auto" 
                 AutoExpandMode="AllNodes"
                 IsAnimationEnabled="True" 
