@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Label features in Syncfusion WinUI Slider
-description: This section explains about how to show labels and how to customize it in the WinUI slider.
+description: This section explains about how to show labels and how to customize it in the Syncfusion WinUI slider.
 platform: WinUI
 control: SfSlider
 documentation: ug
