@@ -11,7 +11,7 @@ documentation: ug
 
 Syncfusion WinUI Slider is a highly interactive UI control, allowing users to select a single value from a range of values. It provides rich features such as labels, ticks, divisors, thumb styles, and tooltips.
 
-![Overview WinUI slider](images/overview/)
+![Overview WinUI slider](images/overview/slider.jpg)
 
 ## Key Features
 
