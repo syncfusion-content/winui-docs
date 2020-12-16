@@ -90,3 +90,21 @@ private void BringIntoView_Click(object sender, RoutedEventArgs e)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Bring-into-View).
 
+## Horizontal Scrolling
+
+By default, horizontal scrollbar is not enabled in the TreeView. If you want to enable horizontal scrolling based on the content, you should set [ScrollViewer.HorizontalScrollBarVisibility](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.scrollviewer.horizontalscrollbarvisibility?view=winui-3.0-preview) as `Auto`. 
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeView  
+                x:Name="treeView" 
+                ScrollViewer.HorizontalScrollBarVisibility="Auto" 
+                AutoExpandMode="AllNodes"
+                IsAnimationEnabled="True" 
+				ChildPropertyName="Files"
+                ItemsSource="{Binding Folders}"/>
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI TreeView with horizontal scrolling enabled](Scrolling_images/Scrolling_image1.gif)
+
