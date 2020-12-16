@@ -27,7 +27,7 @@ N> In above section, Latest Essential Studio version details has been provided. 
 
 To explore the locally installed demos, click `Run Local Demos` and open the `WinUI Sample Browser`.
 
-![Syncfusion WinUI Sample Browser](Guide-to-run-the-samples-images/syncfusion-winui-sample-browser.PNG)
+![Syncfusion WinUI Sample Browser](Guide-to-run-the-samples-images/syncfusion-winui-sample-browser.png)
 
 ## Offline Samples
 
