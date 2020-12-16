@@ -177,9 +177,9 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Place the Badge any where on the container
 
-If you want to place the `Badge` anywhere on any shaped container, use the [HorizontalCustomAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalCustomAlignment) or [VerticalCustomAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalCustomAlignment) properties. The value range for `HorizontalCustomAlignment` and `VerticalCustomAlignment` properties is `0` to`1`. The default value of `HorizontalCustomAlignment` property is `1` and `VerticalCustomAlignment` property is `0`.
+If you want to place the `Badge` anywhere on any shaped container, use the [HorizontalPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalPosition) or [VerticalPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalPosition) properties. The value range for `HorizontalPosition` and `VerticalPosition` properties is `0` to`1`. The default value of `HorizontalPosition` property is `1` and `VerticalPosition` property is `0`.
 
-For example, if you use any circular containers, you can easily place the `Badge` anywhere by using the `HorizontalCustomAlignment` and `VerticalCustomAlignment` properties.
+For example, if you use any circular containers, you can easily place the `Badge` anywhere by using the `HorizontalPosition` and `VerticalPosition` properties.
 
 {% tabs %}
 {% highlight XAML %}
@@ -193,8 +193,8 @@ For example, if you use any circular containers, you can easily place the `Badge
     <syncfusion:BadgeContainer.Badge>
         <syncfusion:SfBadge x:Name="badge3"
                             Shape="None"
-                            HorizontalCustomAlignment="0.9"
-                            VerticalCustomAlignment="0.8">
+                            HorizontalPosition="0.9"
+                            VerticalPosition="0.8">
             <Ellipse Width="20" Height="20" Fill="LimeGreen"/>
         </syncfusion:SfBadge>
     </syncfusion:BadgeContainer.Badge>
@@ -203,8 +203,8 @@ For example, if you use any circular containers, you can easily place the `Badge
 {% endhighlight %}
 {% highlight C# %}
 
-badge.HorizontalCustomAlignment = 0.9;
-badge.VerticalCustomAlignment = 0.8;
+badge.HorizontalPosition = 0.9;
+badge.VerticalPosition = 0.8;
 
 {% endhighlight %}
 {% endtabs %}
@@ -213,9 +213,9 @@ badge.VerticalCustomAlignment = 0.8;
 
 ## Custom alignment and positioning of Badge
 
-You can customize the horizontal or vertical position of the `Badge` either inside, outside or in the middle with any point by using the `HorizontalCustomAlignment` & `VerticalCustomAlignment` properties and [HorizontalCustomAnchor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalCustomAnchor) & [VerticalCustomAnchor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalCustomAnchor) properties. This will effective only on by setting the `HorizontalAnchor` and `VerticalAnchor` properties value as `Custom`.  The value range for `HorizontalCustomAnchor` and `VerticalCustomAnchor` properties is `0` to`1`. The default value of `HorizontalCustomAnchor`and `VerticalCustomAnchor` properties is `0`.
+You can customize the horizontal or vertical position of the `Badge` either inside, outside or in the middle with any point by using the `HorizontalPosition` & `VerticalPosition` properties and [HorizontalCustomAnchor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalCustomAnchor) & [VerticalAnchorPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalAnchorPosition) properties. This will effective only on by setting the `HorizontalAnchor` and `VerticalAnchor` properties value as `Custom`.  The value range for `HorizontalCustomAnchor` and `VerticalAnchorPosition` properties is `0` to`1`. The default value of `HorizontalCustomAnchor`and `VerticalAnchorPosition` properties is `0`.
 
-For example, you will see how the `HorizontalCustomAnchor` and  `HorizontalCustomAlignment` values working based on the `VerticalCustomAnchor` and `VerticalCustomAlignment` values. Here,  `VerticalCustomAnchor` and `VerticalCustomAlignment` properties value is `0`.
+For example, you will see how the `HorizontalCustomAnchor` and  `HorizontalPosition` values working based on the `VerticalAnchorPosition` and `VerticalPosition` values. Here,  `VerticalAnchorPosition` and `VerticalPosition` properties value is `0`.
 
 <style>
 table, td, th { 
@@ -227,7 +227,7 @@ table, td, th {
 
 <tr>
 <td class="invisible" ></td>
-<th colspan = "3">HorizontalCustomAlignment
+<th colspan = "3">HorizontalPosition
 </th>
 </tr>
 
@@ -267,11 +267,11 @@ table, td, th {
 <syncfusion:BadgeContainer Name="badgeContainer"  >
     <syncfusion:BadgeContainer.Badge>
         <syncfusion:Badge HorizontalCustomAnchor="0.2"
-                          VerticalCustomAnchor="0" 
+                          VerticalAnchorPosition="0" 
                           HorizontalAnchor="Custom"
                           VerticalAnchor="Custom"
-                          HorizontalCustomAlignment="0"
-                          VerticalCustomAlignment="0"
+                          HorizontalPosition="0"
+                          VerticalPosition="0"
                           Content="99+"
                           Name="badge"/>
     </syncfusion:BadgeContainer.Badge>
@@ -287,9 +287,9 @@ table, td, th {
 badge.HorizontalAnchor = BadgeAnchor.Custom;
 badge.VerticalAnchor = BadgeAnchor.Custom;
 badge.HorizontalCustomAnchor = 0.2;
-badge.VerticalCustomAnchor = 0;
-badge.HorizontalCustomAlignment = 0;
-badge.VerticalCustomAlignment  0;
+badge.VerticalAnchorPosition = 0;
+badge.HorizontalPosition = 0;
+badge.VerticalPosition  0;
 badge.Content = "99+";
 
 {% endhighlight %}
