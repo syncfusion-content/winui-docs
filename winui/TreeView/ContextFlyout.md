@@ -13,17 +13,17 @@ This section explains how to show ContextFlyout and using built-in commands in t
 
 ## ContextFlyout for Nodes
 
-The TreeView provides an entirely customizable context menu to expose the functionality on user interface. You can create context flyout for nodes in an efficient manner.
+The TreeView provides an entirely customizable context flyout to expose the functionality on user interface. You can create context flyout for nodes in an efficient manner.
 
-You can set context flyout for the nodes by using [SfTreeView.ItemContextFlyout]() property.
+You can set context flyout for the nodes by using `SfTreeView.ItemContextFlyout` property.
 
 ## Built-in Commands
 
 The TreeView provides support for the following built-in commands
 
-* [Edit]() - Command to start the editing of the node.
-* [DeleteNode]() - Command to delete the node.
-* [DeleteSelectedNodes]() - Command to delete all the selected nodes.
+* `Edit` - Command to start the editing of the node.
+* `DeleteNode` - Command to delete the node.
+* `DeleteSelectedNodes` - Command to delete all the selected nodes.
 
 {% tabs %}
 {% highlight xaml %}
@@ -47,7 +47,7 @@ The TreeView provides support for the following built-in commands
 
 ## Custom Commands
 
-The TreeView allows to show ContextFlyout using custom commands when built-in commands does not meet your requirement.
+The TreeView allows to show context flyout using custom commands when built-in commands does not meet your requirement.
 
 For an example, custom command is used to expand the nodes using context flyout in the following example
 
@@ -104,7 +104,7 @@ public class FileManagerViewModel
 
 ### Conditionally displaying context flyout on right click
 
-You can cancel showing of [ItemContextFlyout]() for certain nodes using custom logic within this event by setting `ItemContextFlyoutOpeningEventArgs.Cancel` as true.
+You can cancel showing of `ItemContextFlyout` for certain nodes using custom logic within this event by setting `ItemContextFlyoutOpeningEventArgs.Cancel` as true.
 
 {% tabs %}
 {% highlight c# %}
@@ -117,7 +117,4 @@ private void TreeView_ItemContextFlyoutOpening(object sender, Syncfusion.UI.Xaml
 }
 {% endhighlight %}
 {% endtabs %}
-
-
-
 
