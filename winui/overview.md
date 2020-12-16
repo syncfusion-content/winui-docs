@@ -28,10 +28,10 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
     </tr>
     <tr>
         <td>
-            <p>Data Grid</p>
+            <p><a href="https://help.syncfusion.com/winui/datagrid/getting-started">Data Grid</a></p>
         </td>
         <td>
-            <p>Tree Grid</p>
+            <p><a href="https://help.syncfusion.com/winui/treegrid/getting-started">Tree Grid</a></p>
         </td>
         <td></td>
     </tr>
@@ -42,28 +42,72 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
     </tr>
     <tr>
         <td>
-            <p>Charts</p>
+            <p><a href="https://help.syncfusion.com/winui/chart/getting-started">Charts</a></p>
         </td>
         <td>
-            <p>Radial Gauge</p>
+            <p><a href="https://help.syncfusion.com/winui/radial-gauge/getting-started">Radial Gauge</a></p>
         </td>
         <td>
-            <p>Barcode</p>
+            <p><a href="https://help.syncfusion.com/winui/barcode/getting-started">Barcode</a></p>
         </td>
     </tr>
     <tr>
         <td colspan="3">
-            <b>NAVIGATION & NOTIFICATION</b>
+            <b>NAVIGATION</b>
         </td>
     </tr>
     <tr>
         <td>
-            <p>Tree View</p>
+            <p>Ribbon</p>
         </td>
+         <td>
+            <p><a href="https://help.syncfusion.com/winui/treeview/getting-started">Tree View</a></p>
+        </td>
+    </tr>    
+    <tr>
+        <td colspan="3">
+            <b>NOTIFICATION</b>
+        </td>
+    </tr>
+    <tr>
         <td>
-            <p>Badge</p>
+            <p><a href="https://help.syncfusion.com/winui/badge/getting-started">Badge</a></p>
         </td>
         <td></td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <b>CALENDARS</b>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Calendar</p>
+        </td>
+        <td>
+            <p>CalendarDatePicker</p>
+        </td>
+         <td>
+            <p>DatePicker</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>TimePicker</p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <b>INPUT CONTROLS</b>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Slider</p>
+        </td>
+        <td>
+            <p>Range Slider</p>
+        </td>
     </tr>
     <tr>
         <td colspan="3">
@@ -72,18 +116,18 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
     </tr>
     <tr>
         <td>
-            <p>Color Picker</p>
+            <p><a href="https://help.syncfusion.com/winui/color-picker/getting-started">Color Picker</a></p>
         </td>
         <td>
-            <p>Dropdown Color Picker</p>
+            <p><a href="https://help.syncfusion.com/winui/dropdown-color-picker/getting-started">Dropdown Color Picker</a></p>
         </td>
         <td>
-            <p>Color Palette</p>
+            <p><a href="https://help.syncfusion.com/winui/color-palette/getting-started">Color Palette</a></p>
         </td>
     </tr>
     <tr>
         <td>
-            <p>Dropdown Color Palette</p>
+            <p><a href="https://help.syncfusion.com/winui/dropdown-color-palette/getting-started">Dropdown Color Palette</a></p>
         </td>
         <td></td>
         <td></td>
