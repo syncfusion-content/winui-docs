@@ -85,15 +85,15 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
             <p>Calendar</p>
         </td>
         <td>
-            <p>CalendarDatePicker</p>
+            <p>Calendar Date Picker</p>
         </td>
          <td>
-            <p>DatePicker</p>
+            <p>Date Picker</p>
         </td>
     </tr>
     <tr>
         <td>
-            <p>TimePicker</p>
+            <p>Time Picker</p>
         </td>
         <td></td>
         <td></td>
