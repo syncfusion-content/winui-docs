@@ -95,6 +95,8 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
         <td>
             <p>TimePicker</p>
         </td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
         <td colspan="3">
