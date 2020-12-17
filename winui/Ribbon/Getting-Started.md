@@ -158,7 +158,7 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ## Add RibbonButton ##
 
-The `RibbonButton` represents a normal button and can be added to a ribbon group with different sizes using the `SizeMode` property.You can also use the `Content` and `Icon` properties to set the label and icon to the button.
+The `RibbonButton` represents a normal button and can be added to a ribbon group with different sizes using the `SizeMode` property.You can use the `Content` and `Icon` properties to set the label and icon to the button.
 
 {% tabs %}
 {% highlight xaml %}
@@ -176,7 +176,7 @@ The `RibbonButton` represents a normal button and can be added to a ribbon group
                     <ribbon:RibbonButton Content="Format Painter"
                                     SizeMode="Normal">
                         <ribbon:RibbonButton.Icon>
-                        <FontIcon Glyph="&#xF0E3;" />
+                            <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xF0E3;" />
                         </ribbon:RibbonButton.Icon>
                     </ribbon:RibbonButton>
                 </ribbon:RibbonGroup>
@@ -199,7 +199,7 @@ RibbonGroup clipboardGroup = new RibbonGroup() { Header = "Clipboard" };
 
 RibbonButton cutButton = new RibbonButton() { Content = "Cut", SizeMode = SizeMode.Normal, Icon = new SymbolIcon(Symbol.Cut) };
 RibbonButton copyButton = new RibbonButton() { Content = "Copy", SizeMode = SizeMode.Normal, Icon = new SymbolIcon(Symbol.Copy) };
-RibbonButton formatPainterButton = new RibbonButton() { Content = "FormatPainter", SizeMode = SizeMode.Normal, Icon = new FontIcon() { Glyph = "\xF0E3;" } };
+RibbonButton formatPainterButton = new RibbonButton() { Content = "FormatPainter", SizeMode = SizeMode.Normal, Icon = new FontIcon() { Glyph = "\xF0E3", FontFamily = new FontFamily("Segoe MDL2 Assets") } };
 
 clipboardGroup.Items.Add(cutButton);
 clipboardGroup.Items.Add(copyButton);
@@ -220,19 +220,19 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ## Add RibbonDropDown ##
 
-The `RibbonDropDownButton` represents a normal button that displays the drop-down menu items when clicked. It allows you to arrange a button with different sizes within a ribbon group using the `SizeMode` property. You can also use the `Content` and `Icon` properties to set the label and icon to the button, and you can populate the values using the `Flyout` control in the button.
+The `RibbonDropDownButton` represents a normal button that displays the drop-down menu items when clicked. It allows you to arrange a button with different sizes within a ribbon group using the `SizeMode` property. You can use the `Content` and `Icon` properties to set the label and icon to the button, and you can populate the drop-down menu items using using the `Flyout` control in the button.
 
 {% tabs %}
 {% highlight xaml %}
 <Grid x:Name="rootGrid">
     <ribbon:SfRibbon x:Name="sfRibbon">
         <ribbon:SfRibbon.Tabs>
-            <ribbon:RibbonTab Header="Home">                     
+            <ribbon:RibbonTab Header="Home">
                 <ribbon:RibbonGroup Header="File">
                     <ribbon:RibbonDropDownButton Content="New File"
                                                      SizeMode="Large">
                         <ribbon:RibbonDropDownButton.Icon>
-                                <FontIcon Glyph="&#xE7C3;" />
+                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE7C3;" />
                         </ribbon:RibbonDropDownButton.Icon>
                         <ribbon:RibbonDropDownButton.Flyout>
                             <MenuFlyout>
@@ -260,7 +260,7 @@ RibbonTab layoutTab = new RibbonTab() { Header = "Layout" };
 
 RibbonGroup fileGroup = new RibbonGroup() { Header = "File" };
 
-RibbonDropDownButton newFileButton = new RibbonDropDownButton() { Content = "New File", SizeMode = SizeMode.Large, Icon = new FontIcon() { Glyph = "\xE7C3" } };
+RibbonDropDownButton newFileButton = new RibbonDropDownButton() { Content = "New File", SizeMode = SizeMode.Large, Icon = new FontIcon() { Glyph = "\xE7C3", FontFamily = new FontFamily("Segoe MDL2 Assets") } };
 
 MenuFlyout flyout = new MenuFlyout();
 MenuFlyoutItem emptyFileMenuFlyoutItem = new MenuFlyoutItem() { Text = "Empty File" };
@@ -285,14 +285,14 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ## Add RibbonSplitButton ##
 
-The `RibbonSplitButton` represents a combined control that has a primary button that responds to a `Click` event, and a secondary button acts like a drop-down menu with a list of values. It allows you to arrange a button with different sizes within a ribbon group using the `SizeMode` property. You can also use the `Content` and `Icon` properties to set the label and icon to the button, and you can populate the values using the `Flyout` control in the button.
+The `RibbonSplitButton` represents a combined control that has a primary button that responds to a `Click` event, and a secondary button acts like a drop-down menu with a list of values. It allows you to arrange a button with different sizes within a ribbon group using the `SizeMode` property. You can use the `Content` and `Icon` properties to set the label and icon to the button, and you can populate the drop-down menu items using the `Flyout` control in the button.
 
 {% tabs %}
 {% highlight xaml %}
 <Grid x:Name="rootGrid">
     <ribbon:SfRibbon x:Name="sfRibbon">
         <ribbon:SfRibbon.Tabs>
-            <ribbon:RibbonTab Header="Home">                    
+            <ribbon:RibbonTab Header="Home">
                 <ribbon:RibbonGroup Header="Voice">
                     <ribbon:RibbonSplitButton Icon="Microphone"
                                         Content="Dictate"
