@@ -9,11 +9,11 @@ documentation: ug
 
 # Tooltip Features in WinUI Slider
 
-This section helps to learn about how to add tooltip in the slider.
+This section explains how to add the tooltip in the Slider.
 
 ## Show Tooltip
 
-You can enable tooltip for the thumb using [`ShowToolTip`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowToolTip) property of slider. It is used to clearly indicate the current selection of the value during interaction. The default value of [`ShowToolTip`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowToolTip) property is true.
+You can enable tooltip for the thumb using the [`ShowToolTip`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowToolTip) property of Slider. It is used to indicate the current selection of the value during interaction. The default value of [`ShowToolTip`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowToolTip) property is true.
 
 {% tabs %}
 

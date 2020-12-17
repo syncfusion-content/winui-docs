@@ -9,11 +9,11 @@ documentation: ug
 
 # Tooltip Features in WinUI Range Slider
 
-This section helps to learn about how to add tooltip in the range slider.
+This section explains how to add the tooltip in the RangeSlider.
 
 ## Show Tooltip
 
-You can enable tooltip for the thumb using [`ShowToolTip`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowToolTip) property of range slider. It is used to clearly indicate the current selection of the value during interaction. The default value of [`ShowToolTip`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowToolTip) property is true.
+You can enable tooltip for the thumb using the [`ShowToolTip`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowToolTip) property of RangeSlider. It is used to indicate the current selection of the value during interaction. The default value of [`ShowToolTip`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowToolTip) property is true.
 
 {% tabs %}
 
@@ -41,7 +41,7 @@ this.Content = sfRangeSlider;
 
 ## Tooltip Option
 
-You can display tooltip for either active thumb or both thumb using [`ToolTipOption`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html#Syncfusion_UI_Xaml_Sliders_SfRangeSlider_ToolTipOption) property of range slider. The default value of [`ToolTipOption`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html#Syncfusion_UI_Xaml_Sliders_SfRangeSlider_ToolTipOption) property is [`ToolTipOption.BothThumb`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.TooltipOption.html#Syncfusion_UI_Xaml_Sliders_TooltipOption_BothThumb).
+You can display tooltip for either active thumb or both thumb (RangeStart and RangeEnd) using the [`ToolTipOption`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html#Syncfusion_UI_Xaml_Sliders_SfRangeSlider_ToolTipOption) property of the RangeSlider. html#Syncfusion_UI_Xaml_Sliders_SfRangeSlider_ToolTipOption) property is [`ToolTipOption.BothThumb`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.TooltipOption.html#Syncfusion_UI_Xaml_Sliders_TooltipOption_BothThumb).
 
 {% tabs %}
 

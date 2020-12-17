@@ -9,7 +9,7 @@ documentation: ug
 
 # Track Features in Syncfusion WinUI Slider
 
-This section helps to learn about how to customize the track in the slider.
+This section explains how to customize the track in the slider.
 
 ## Track Color
 
@@ -45,7 +45,7 @@ this.Content = sfSlider;
 
 ## Track Hover Color
 
-You can change the active and inactive track hover color of the slider using the [`ActiveTrackHoverFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveTrackHoverFill) and [`InactiveTrackHoverFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_InactiveTrackHoverFill) properties respectively. This color will be applied when hover the cursor on the slider control.
+You can change the active and inactive track hover color of the slider using the [`ActiveTrackHoverFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveTrackHoverFill) and [`InactiveTrackHoverFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_InactiveTrackHoverFill) properties respectively. This color will be applied when hovering the cursor on the Slider control.
 
 {% tabs %}
 
@@ -141,7 +141,7 @@ this.Content = sfSlider;
 
 ## Track Style
 
-You can change the track height of the slider using the [`ActiveTrackStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveTrackStyle) and [`InactiveTrackStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_InactiveTrackStyle) properties. The default value of the both properties are null.
+You can change the track style of the slider using the [`ActiveTrackStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveTrackStyle) and [`InactiveTrackStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_InactiveTrackStyle) properties. The default value of the both properties are null.
 
 {% tabs %}
 

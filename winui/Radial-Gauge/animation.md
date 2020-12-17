@@ -165,9 +165,9 @@ this.Content = sfRadialGauge;
 
 ![pointer animation](images/animation/animation_duration.gif)
 
-## Animation easing functions
+## Animation Easing Function
 
-The [`AnimationEasingFunction`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_AnimationEasingFunction) property of pointer allows to change the easing function. The default value is null. 
+The [`AnimationEasingFunction`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_AnimationEasingFunction) property of pointer allows you to change the easing function. The default value [`AnimationEasingFunction`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_AnimationEasingFunction) property is null.
 
 {% tabs %}
 
@@ -255,4 +255,4 @@ this.Content = sfRadialGauge;
 
 ![animation easing function](images/animation/animation_easingFunction.gif)
 
-N> Refer [EasingFunctionBase](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.animation.easingfunctionbase) to know about available easing functions in WinUI.
+N> Refer to the [EasingFunctionBase](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.animation.easingfunctionbase), to learn about available easing functions in WinUI.

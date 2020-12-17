@@ -9,7 +9,7 @@ documentation: ug
 
 # Labels in the Slider
 
-This section explains about how to add the labels in the slider.
+This section explains about how to show the labels in the slider.
 
 ## Show Labels
 
@@ -39,7 +39,7 @@ this.Content = sfSlider;
 
 ## Maximum number of labels per 100 logical pixels
 
-By default, a maximum of three labels are displayed for each 100 logical pixels in slider. The maximum number of labels that should present within 100 logical pixels length can be customized using the [`MaximumLabelsCount`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_MaximumLabelsCount) property of the slider. This property is applicable only for automatic range calculation and will not work if you set value for [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Interval) property of an slider.
+By default, a maximum of three labels are displayed for each 100 logical pixels in slider. The maximum number of labels that should present within 100 logical pixels length can be customized using the [`MaximumLabelsCount`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_MaximumLabelsCount) property of the slider. This property is applicable only for automatic range calculation and will not work, if you set value for [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Interval) property of a RangeSlider.
 
 {% tabs %}
 
@@ -125,9 +125,9 @@ this.Content = sfSlider;
 
 ## Label Template
 
-**Setting Template for Labels**
+**Setting a Template for Labels**
 
-The [`LabelTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_LabelTemplate) property allows you to define the data template for the label’s like the following code example.
+The [`LabelTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_LabelTemplate) property allows you to define the data template for the label’s as shown in the following code sample.
 
 {% tabs %}
 
@@ -167,7 +167,7 @@ N> Its DataContext is [`SliderLabelInfo`](https://help.syncfusion.com/cr/winui/S
 
 **Setting Active Template for Labels**
 
-The [`ActiveLabelTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveLabelTemplate) property allows you to define the data template for the active label’s like the following code example.
+The [`ActiveLabelTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveLabelTemplate) property allows you to define the data template for the active label’s as shown in the following code sample.
 
 {% tabs %}
 
@@ -204,7 +204,7 @@ N> Its DataContext is [`SliderLabelInfo`](https://help.syncfusion.com/cr/winui/S
 
 **Formating Track Labels using Label Template**
 
-By adding `Converters` in [`LabelTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_LabelTemplate) you can customize the format the labels or display the custom text.
+By adding `Converters` in [`LabelTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_LabelTemplate), you can customize the format of the track labels or display the custom text.
 
 {% tabs %}
 

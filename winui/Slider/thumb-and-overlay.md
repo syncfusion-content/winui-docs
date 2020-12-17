@@ -9,10 +9,10 @@ documentation: ug
 
 # Thumb and Thumb Overlay Features in Slider
 
-This section helps to learn about how to customize the thumb and thumb overlay in the slider.
+This section explains how to customize the thumb and thumb overlay in the Slider.
 
-Thumb - It is one of the elements of slider which can be used to drag and change the selected value of the slider.
-Thumb overlay - It is rendered around the thumb while interacting with them.
+Thumb - It is one of the elements of Slider, which is used to drag and change the selected values of the Slider.
+Thumb overlay - It is rendered around the thumb and it will be displayed, while interacting with thumb.
 
 ## Thumb Type
 
@@ -43,7 +43,7 @@ this.Content = sfSlider;
 
 ## Thumb Height and Width
 
-You can change the thumb height and width of the slider using [`ThumbHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbHeight) and [`ThumbWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbWidth) properties respectively. The default values of both properties are 20.
+You can change the thumb height and width of the slider using the [`ThumbHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbHeight) and [`ThumbWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbWidth) properties respectively. The default values of both properties are 20.
 
 {% tabs %}
 
@@ -279,7 +279,7 @@ N> Overlay effects displayed with 0.3 opacity.
 
 **ThumbDragStarted**
 
-The [`ThumbDragStarted`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbDragStarted) event occurs when the thumb dragging started.
+The [`ThumbDragStarted`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbDragStarted) event raised when the thumb drag is started.
 
 {% tabs %}
 
@@ -303,7 +303,7 @@ private void SfSlider_ThumbDragStarted(object sender, DragStartedEventArgs e)
 
 **ThumbDragCompleted**
 
-The [`ThumbDragCompleted`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbDragCompleted) event occurs Event raised when the thumb dragged completed.
+The [`ThumbDragCompleted`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbDragCompleted) event raised when the thumb drag is completed.
 
 {% tabs %}
 

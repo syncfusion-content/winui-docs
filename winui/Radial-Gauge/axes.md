@@ -528,9 +528,9 @@ this.Content = sfRadialGauge;
 
 ![axis line visibility](images/axis/axis_showline.png)
 
-**Background content support**
+**Background Content Support**
 
-[`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) allows to add an any `FrameworkElement` as its background using [`BackgroundContent`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html#Syncfusion_UI_Xaml_Gauges_RadialAxis_BackgroundContent) property.
+[`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) allows you to add any `FrameworkElement` as its background using the [`BackgroundContent`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html#Syncfusion_UI_Xaml_Gauges_RadialAxis_BackgroundContent) property.
 
 {% tabs %}
 
