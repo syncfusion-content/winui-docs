@@ -150,4 +150,4 @@ this.Content = sfSlider;
 
 ![Slider with divisors](images/getting-started/slider-divisors.png)
 
-N> Download demo application from the [GitHub](https://github.com/SyncfusionExamples/WinUI_Sliders_Getting_Started/Slider)
+N> Download demo application from the [GitHub](https://github.com/SyncfusionExamples/WinUI_Sliders_Getting_Started/tree/main/Slider)
