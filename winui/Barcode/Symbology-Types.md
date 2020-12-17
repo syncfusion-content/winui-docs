@@ -282,4 +282,4 @@ The [Pdf417Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barc
 {% endhighlight %}
 {% endtabs %}
 
-![Pdf417Barcode](Symbology_Images/417Barcode.png)
+![Pdf417Barcode](Symbology_Images/Pdf417Barcode.png)
