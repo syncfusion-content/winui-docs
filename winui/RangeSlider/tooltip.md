@@ -13,7 +13,7 @@ This section helps to learn about how to add tooltip in the range slider.
 
 ## Show Tooltip
 
-You can enable tooltip for the thumb using `ShowToolTip` property of range slider. It is used to clearly indicate the current selection of the value during interaction. The default value of `ShowToolTip` property is true.
+You can enable tooltip for the thumb using [`ShowToolTip`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowToolTip) property of range slider. It is used to clearly indicate the current selection of the value during interaction. The default value of [`ShowToolTip`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowToolTip) property is true.
 
 {% tabs %}
 
@@ -41,7 +41,7 @@ this.Content = sfRangeSlider;
 
 ## Tooltip Option
 
-You can display tooltip for either active thumb or both thumb using `ToolTipOption` property of range slider. The default value of `ToolTipOption` property is `ToolTipOption.Both`.
+You can display tooltip for either active thumb or both thumb using [`ToolTipOption`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html#Syncfusion_UI_Xaml_Sliders_SfRangeSlider_ToolTipOption) property of range slider. The default value of [`ToolTipOption`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html#Syncfusion_UI_Xaml_Sliders_SfRangeSlider_ToolTipOption) property is [`ToolTipOption.BothThumb`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.TooltipOption.html#Syncfusion_UI_Xaml_Sliders_TooltipOption_BothThumb).
 
 {% tabs %}
 
@@ -69,7 +69,7 @@ this.Content = sfRangeSlider;
 
 ## Tooltip Text Format
 
-The `ToolTipFormat` property allows to customize the axis label with the globalized label format. The default value of `ToolTipFormat` property is N2.
+The [`ToolTipFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ToolTipFormat) property allows to customize the axis label with the globalized label format. The default value of [`ToolTipFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ToolTipFormat) property is N2.
 
 {% tabs %}
 
@@ -99,7 +99,7 @@ this.Content = sfRangeSlider;
 
 ## Tooltip Placement
 
-The `ToolTipPlacement` property is used to place the tooltip either before or after the track. The default value of the `ToolTipPlacement` property is `Placement.Before`.
+The [`ToolTipPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ToolTipPlacement) property is used to place the tooltip either before or after the track. The default value of the [`ToolTipPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ToolTipPlacement) property is [`Placement.Before`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.Placement.html#Syncfusion_UI_Xaml_Sliders_Placement_Before).
 
 {% tabs %}
 
@@ -129,7 +129,7 @@ this.Content = sfRangeSlider;
 
 ## Tooltip Style
 
-The `ToolTipStyle` property allows you to define the style for the range slider tooltip as shown in the following code example. The default value of `ToolTipStyle` property is null.
+The [`ToolTipStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ToolTipStyle) property allows you to define the style for the range slider tooltip as shown in the following code example. The default value of [`ToolTipStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ToolTipStyle) property is null.
 
 {% tabs %}
 
@@ -167,7 +167,7 @@ this.Content = sfRangeSlider;
 
 ## Tooltip Template
 
-The `ToolTipTemplate` property allows you to define the data template for the range slider tooltip as shown in the following code example.
+The [`ToolTipTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ToolTipTemplate) property allows you to define the data template for the range slider tooltip as shown in the following code example.
 
 {% tabs %}
 
@@ -204,4 +204,4 @@ this.Content = sfRangeSlider;
 
 ![Range slider with tooltip template](images/tooltip/slider-tooltiptemplate.png)
 
-N> Its DataContext is `RangeSliderToolTipInfo`.
+N> Its DataContext is [`RangeSliderToolTipInfo`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.RangeSliderToolTipInfo.html).

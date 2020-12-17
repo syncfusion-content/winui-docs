@@ -13,7 +13,7 @@ This section explains about how to add the labels in the slider.
 
 ## Show Labels
 
-The `ShowLabels` property is used to render the labels on `Interval`. The default value of `ShowLabels` property is false.
+The [`ShowLabels`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowLabels) property is used to render the labels on [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Interval). The default value of [`ShowLabels`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowLabels) property is false.
 
 {% tabs %}
 
@@ -39,7 +39,7 @@ this.Content = sfSlider;
 
 ## Maximum number of labels per 100 logical pixels
 
-By default, a maximum of three labels are displayed for each 100 logical pixels in slider. The maximum number of labels that should present within 100 logical pixels length can be customized using the `MaximumLabelsCount` property of the slider. This property is applicable only for automatic range calculation and will not work if you set value for `Interval` property of an slider.
+By default, a maximum of three labels are displayed for each 100 logical pixels in slider. The maximum number of labels that should present within 100 logical pixels length can be customized using the [`MaximumLabelsCount`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_MaximumLabelsCount) property of the slider. This property is applicable only for automatic range calculation and will not work if you set value for [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Interval) property of an slider.
 
 {% tabs %}
 
@@ -67,7 +67,7 @@ this.Content = sfSlider;
 
 ## Label Placement
 
-The `labelPlacement` property is used to place the labels either before or after the track. The default value of the `LabelPlacement` property is `Placement.After`.
+The [`labelPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_LabelPlacement) property is used to place the labels either before or after the track. The default value of the [`labelPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_LabelPlacement) property is [`Placement.After`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.Placement.html#Syncfusion_UI_Xaml_Sliders_Placement_After).
 
 {% tabs %}
 
@@ -95,7 +95,7 @@ this.Content = sfSlider;
 
 ## Label Offset
 
-You can adjust the space between ticks and labels of the slider using the `LabelOffset` property. The default value of `LabelOffset` property is 5.
+You can adjust the space between ticks and labels of the slider using the [`LabelOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_LabelOffset) property. The default value of [`LabelOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_LabelOffset) property is 5.
 
 {% tabs %}
 
@@ -127,7 +127,7 @@ this.Content = sfSlider;
 
 **Setting Template for Labels**
 
-The `LabelTemplate` property allows you to define the data template for the label’s like the following code example.
+The [`LabelTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_LabelTemplate) property allows you to define the data template for the label’s like the following code example.
 
 {% tabs %}
 
@@ -163,11 +163,11 @@ this.Content = sfSlider;
 
 ![Slider with labels template customization](images/labels/slider-labelTemplate.png)
 
-N> Its DataContext is `SliderLabelInfo`.
+N> Its DataContext is [`SliderLabelInfo`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderLabelInfo.html?tabs=tabid-1).
 
 **Setting Active Template for Labels**
 
-The `ActiveLabelTemplate` property allows you to define the data template for the active label’s like the following code example.
+The [`ActiveLabelTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveLabelTemplate) property allows you to define the data template for the active label’s like the following code example.
 
 {% tabs %}
 
@@ -176,7 +176,6 @@ The `ActiveLabelTemplate` property allows you to define the data template for th
 <DataTemplate x:Key="ActiveTrackLabelTemplate">
     <TextBlock Text="{Binding Text}"
                Foreground="{ThemeResource SystemAccentColor}" />
-
 </DataTemplate>
 
 <slider:SfSlider ShowLabels="True"
@@ -201,11 +200,11 @@ this.Content = sfSlider;
 
 ![Slider with active labels template customization](images/labels/slider-activelabelTemplate.png)
 
-N> Its DataContext is `SliderLabelInfo`.
+N> Its DataContext is [`SliderLabelInfo`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderLabelInfo.html?tabs=tabid-1).
 
 **Formating Track Labels using Label Template**
 
-By adding `Converters` in `LabelTemplate` you can customize the format the labels or display the custom text.
+By adding `Converters` in [`LabelTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_LabelTemplate) you can customize the format the labels or display the custom text.
 
 {% tabs %}
 
@@ -242,4 +241,4 @@ this.Content = sfSlider;
 
 ![Slider with label format customization](images/labels/slider-labelformat.png)
 
-N> Its DataContext is `SliderLabelInfo`.
+N> Its DataContext is [`SliderLabelInfo`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderLabelInfo.html?tabs=tabid-1).

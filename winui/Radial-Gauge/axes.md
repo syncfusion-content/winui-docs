@@ -530,7 +530,7 @@ this.Content = sfRadialGauge;
 
 **Background content support**
 
-[`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) allows to add an any `FrameworkElement` as its background using `BackgroundContent` property.
+[`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) allows to add an any `FrameworkElement` as its background using [`BackgroundContent`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html#Syncfusion_UI_Xaml_Gauges_RadialAxis_BackgroundContent) property.
 
 {% tabs %}
 
@@ -1639,7 +1639,7 @@ private void RadialAxis_LabelPrepared(object sender, LabelPreparedEventArgs e)
 
 **AxisTapped**
 
-The `AxisTapped` event is called when an axis is tapped. The corresponding axis value at the tapped position will be got from the event argument.
+The [`AxisTapped`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html#Syncfusion_UI_Xaml_Gauges_RadialAxis_AxisTapped) event is called when an axis is tapped. The corresponding axis value at the tapped position will be got from the event argument.
 
 {% tabs %}
 

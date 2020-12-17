@@ -167,7 +167,7 @@ this.Content = sfRadialGauge;
 
 ## Animation easing functions
 
-The `AnimationEasingFunction` property of pointer allows to change the easing function. The default value is null. 
+The [`AnimationEasingFunction`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_AnimationEasingFunction) property of pointer allows to change the easing function. The default value is null. 
 
 {% tabs %}
 

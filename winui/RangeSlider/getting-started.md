@@ -21,7 +21,7 @@ This section explains the steps required to add the range slider control and its
 
 4. Initialize the SfRangeSlider control
 
-The default value of the `Minimum` and `Maximum` properties of the `SfRangeSlider` is 0 and 100 respectively. So, the `RangeStart` and `RangeEnd` properties must be given within the range.
+The default value of the [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Maximum) properties of the `SfRangeSlider` is 0 and 100 respectively. So, the [`RangeStart`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html#Syncfusion_UI_Xaml_Sliders_SfRangeSlider_RangeStart) and [`RangeEnd`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html#Syncfusion_UI_Xaml_Sliders_SfRangeSlider_RangeEnd) properties must be given within the range.
 
 {% tabs %}
 
@@ -42,7 +42,7 @@ this.Content = sfRangeSlider;
 
 ## Set Values
 
-You can show values in the range slider by setting double value to the `RangeStart` and `RangeEnd` properties.
+You can show values in the range slider by setting double value to the [`RangeStart`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html#Syncfusion_UI_Xaml_Sliders_SfRangeSlider_RangeStart) and [`RangeEnd`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html#Syncfusion_UI_Xaml_Sliders_SfRangeSlider_RangeEnd) properties.
 
 {% tabs %}
 
@@ -68,7 +68,7 @@ this.Content = sfRangeSlider;
 
 ## Enable Ticks
 
-You can enable ticks in the range slider using the `ShowTicks` property.
+You can enable ticks in the range slider using the [`ShowTicks`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowTicks) property.
 
 {% tabs %}
 
@@ -96,7 +96,7 @@ this.Content = sfRangeSlider;
 
 ## Enable Labels
 
-You can enable ticks in the range slider using the `ShowLabels` property.
+You can enable ticks in the range slider using the [`ShowLabels`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowLabels) property.
 
 {% tabs %}
 
@@ -124,7 +124,7 @@ this.Content = sfRangeSlider;
 
 ## Enable Divisors
 
-You can enable divisors in the range slider using the `ShowDivisors` property.
+You can enable divisors in the range slider using the [`ShowDivisors`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowDivisors) property.
 
 {% tabs %}
 
