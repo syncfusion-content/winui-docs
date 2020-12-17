@@ -63,28 +63,6 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-## Add Title to the Ribbon
-
-The title of the ribbon provides an information to the user about the ribbon application and can be set using the `Title` property. 
-
-{% tabs %}
-{% highlight xaml %}
-
-<ribbon:SfRibbon x:Name="sfRibbon"
-                         Title="Application1- Ribbon" />
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfRibbon sfRibbon = new SfRibbon();
-sfRibbon.Title = "Application1 - Ribbon";
-this.rootGrid.Children.Add(sfRibbon);
-
-{% endhighlight %}       
-{% endtabs %}
-
-![Title information about SfRibbon](Getting-Started-images/Getting-Started-image1.png)
-
 ## Add RibbonTab to the ribbon ##
 
 Any number of tab elements can be added to the ribbon using the `Tabs` property, and you can use the `Header` property to name the tab.
@@ -118,7 +96,7 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Add RibbonTab in SfRibbon](Getting-Started-images/Getting-Started-image2.png)
+![Add RibbonTab in SfRibbon](Getting-Started-images/Getting-Started-image1.png)
 
 
 ## Add RibbonGroup ##
@@ -176,11 +154,11 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Add RibbonGroup in SfRibbon](Getting-Started-images/Getting-Started-image3.png)
+![Add RibbonGroup in SfRibbon](Getting-Started-images/Getting-Started-image2.png)
 
 ## Add RibbonButton ##
 
-The `RibbonButton` represents a normal button and can be added to a ribbon group with different sizes using the `SizeMode` property.You can also use the `Content` and `Icon` properties to provide the name with the icon to the button.
+The `RibbonButton` represents a normal button and can be added to a ribbon group with different sizes using the `SizeMode` property.You can also use the `Content` and `Icon` properties to set the label and icon to the button.
 
 {% tabs %}
 {% highlight xaml %}
@@ -218,40 +196,31 @@ RibbonTab viewTab = new RibbonTab() { Header = "View" };
 RibbonTab layoutTab = new RibbonTab() { Header = "Layout" };
 
 RibbonGroup clipboardGroup = new RibbonGroup() { Header = "Clipboard" };
-RibbonGroup fileGroup = new RibbonGroup() { Header = "File" };
-RibbonGroup fontGroup = new RibbonGroup() { Header = "Font" };
-RibbonGroup editingGroup = new RibbonGroup() { Header = "Editing" };
-RibbonGroup paragraphGroup = new RibbonGroup() { Header = "Paragraph" };
-RibbonGroup voiceGroup = new RibbonGroup() { Header = "Voice" };
 
-RibbonButton cutButton =new RibbonButton() { Content = "Cut", SizeMode =            SizeMode.Normal, Icon = new SymbolIcon(Symbol.Cut) };
-RibbonButton copyButton = new RibbonButton() { Content = "Copy", SizeMode =         SizeMode.Normal, Icon = new SymbolIcon(Symbol.Copy) };
-RibbonButton formatPainterButton = new RibbonButton() { Content = "FormatPainter",  SizeMode = SizeMode.Normal, Icon = new FontIcon() { Glyph = "&#xF0E3;" } };
+RibbonButton cutButton = new RibbonButton() { Content = "Cut", SizeMode = SizeMode.Normal, Icon = new SymbolIcon(Symbol.Cut) };
+RibbonButton copyButton = new RibbonButton() { Content = "Copy", SizeMode = SizeMode.Normal, Icon = new SymbolIcon(Symbol.Copy) };
+RibbonButton formatPainterButton = new RibbonButton() { Content = "FormatPainter", SizeMode = SizeMode.Normal, Icon = new FontIcon() { Glyph = "\xF0E3;" } };
 
 clipboardGroup.Items.Add(cutButton);
 clipboardGroup.Items.Add(copyButton);
 clipboardGroup.Items.Add(formatPainterButton);
 
 homeTab.Items.Add(clipboardGroup);
-homeTab.Items.Add(fileGroup);
-homeTab.Items.Add(fontGroup);
-homeTab.Items.Add(editingGroup);
-homeTab.Items.Add(paragraphGroup);
-homeTab.Items.Add(voiceGroup);
 
 sfRibbon.Tabs.Add(homeTab);
 sfRibbon.Tabs.Add(insertTab);
 sfRibbon.Tabs.Add(viewTab);
 sfRibbon.Tabs.Add(layoutTab);
 this.rootGrid.Children.Add(sfRibbon);
+
 {% endhighlight %}
 {% endtabs %}
 
-![Add built-in RibbonButton in SfRibbon](Getting-Started-images/Getting-Started-image4.png)
+![Add built-in RibbonButton in SfRibbon](Getting-Started-images/Getting-Started-image3.png)
 
 ## Add RibbonDropDown ##
 
-The `RibbonDropDownButton` represents a normal button that displays the drop-down menu items when clicked. It allows you to configure a button with different sizes within a group using the `SizeMode` property and to set content with an icon using the `Content` and `Icon` properties. You can also populate the drop-down values using the `Flyout` control on the button.
+The `RibbonDropDownButton` represents a normal button that displays the drop-down menu items when clicked. It allows you to arrange a button with different sizes within a ribbon group using the `SizeMode` property. You can also use the `Content` and `Icon` properties to set the label and icon to the button, and you can populate the values using the `Flyout` control in the button.
 
 {% tabs %}
 {% highlight xaml %}
@@ -261,8 +230,7 @@ The `RibbonDropDownButton` represents a normal button that displays the drop-dow
             <ribbon:RibbonTab Header="Home">                     
                 <ribbon:RibbonGroup Header="File">
                     <ribbon:RibbonDropDownButton Content="New File"
-                                                     SizeMode="Large"
-                                                     Icon="File">
+                                                     SizeMode="Large">
                         <ribbon:RibbonDropDownButton.Icon>
                                 <FontIcon Glyph="&#xE7C3;" />
                         </ribbon:RibbonDropDownButton.Icon>
@@ -283,23 +251,26 @@ The `RibbonDropDownButton` represents a normal button that displays the drop-dow
 </Grid>
 {% endhighlight %}   
 {% highlight c# %}
- SfRibbon sfRibbon = new SfRibbon();
+SfRibbon sfRibbon = new SfRibbon();
 
 RibbonTab homeTab = new RibbonTab() { Header = "Home" };
 RibbonTab insertTab = new RibbonTab() { Header = "Insert" };
 RibbonTab viewTab = new RibbonTab() { Header = "View" };
 RibbonTab layoutTab = new RibbonTab() { Header = "Layout" };
 
-RibbonDropDownButton newFileButton = new RibbonDropDownButton() { Content = "New File", SizeMode = SizeMode.Large, Icon = new FontIcon() { Glyph = "&#xE7C3;" } };
+RibbonGroup fileGroup = new RibbonGroup() { Header = "File" };
+
+RibbonDropDownButton newFileButton = new RibbonDropDownButton() { Content = "New File", SizeMode = SizeMode.Large, Icon = new FontIcon() { Glyph = "\xE7C3" } };
 
 MenuFlyout flyout = new MenuFlyout();
-MenuFlyoutItem emptyFileMenuFlyoutItem = new MenuFlyoutItem() { Text="Empty File"};
+MenuFlyoutItem emptyFileMenuFlyoutItem = new MenuFlyoutItem() { Text = "Empty File" };
 MenuFlyoutItem templateFileMenuFlyoutItem = new MenuFlyoutItem() { Text = "Template File" };
 flyout.Items.Add(emptyFileMenuFlyoutItem);
 flyout.Items.Add(templateFileMenuFlyoutItem);
 
 newFileButton.Flyout = flyout;
 fileGroup.Items.Add(newFileButton);
+homeTab.Items.Add(fileGroup);
 
 sfRibbon.Tabs.Add(homeTab);
 sfRibbon.Tabs.Add(insertTab);
@@ -310,36 +281,36 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Add built-in RibbonDropDownButton in SfRibbon](Getting-Started-images/Getting-Started-image5.png)
+![Add built-in RibbonDropDownButton in SfRibbon](Getting-Started-images/Getting-Started-image4.png)
 
 ## Add RibbonSplitButton ##
 
-The `RibbonSplitButton` represents a combined control that has a primary button that responds to a `Click` event, and a secondary button acts like a drop-down menu with a list of values. It allows you to configure a button with different sizes within a group using the `SizeMode` property and to set content with an icon using the `Content` and `Icon` properties.You can also populate the drop-down values using the `Flyout` control on the button.
+The `RibbonSplitButton` represents a combined control that has a primary button that responds to a `Click` event, and a secondary button acts like a drop-down menu with a list of values. It allows you to arrange a button with different sizes within a ribbon group using the `SizeMode` property. You can also use the `Content` and `Icon` properties to set the label and icon to the button, and you can populate the values using the `Flyout` control in the button.
 
 {% tabs %}
 {% highlight xaml %}
 <Grid x:Name="rootGrid">
-<ribbon:SfRibbon x:Name="sfRibbon">
-    <ribbon:SfRibbon.Tabs>
-        <ribbon:RibbonTab Header="Home">                    
-            <ribbon:RibbonGroup Header="Voice">
-                <ribbon:RibbonSplitButton Icon="Microphone"
+    <ribbon:SfRibbon x:Name="sfRibbon">
+        <ribbon:SfRibbon.Tabs>
+            <ribbon:RibbonTab Header="Home">                    
+                <ribbon:RibbonGroup Header="Voice">
+                    <ribbon:RibbonSplitButton Icon="Microphone"
                                         Content="Dictate"
                                         SizeMode="Large">
-                    <ribbon:RibbonSplitButton.Flyout>
-                        <MenuFlyout>
-                            <MenuFlyoutItem Text="Chinese" />
-                            <MenuFlyoutItem Text="English" />
-                            <MenuFlyoutItem Text="French" />
-                            <MenuFlyoutItem Text="German" />
-                        </MenuFlyout>
-                    </ribbon:RibbonSplitButton.Flyout>
-                </ribbon:RibbonSplitButton>
-            </ribbon:RibbonGroup>
-        </ribbon:RibbonTab>
-        <ribbon:RibbonTab Header="Insert" />
-        <ribbon:RibbonTab Header="View" />
-        <ribbon:RibbonTab Header="Layout" /> 
+                        <ribbon:RibbonSplitButton.Flyout>
+                            <MenuFlyout>
+                                <MenuFlyoutItem Text="Chinese" />
+                                <MenuFlyoutItem Text="English" />
+                                <MenuFlyoutItem Text="French" />
+                                <MenuFlyoutItem Text="German" />
+                            </MenuFlyout>
+                        </ribbon:RibbonSplitButton.Flyout>
+                    </ribbon:RibbonSplitButton>
+                </ribbon:RibbonGroup>
+            </ribbon:RibbonTab>
+            <ribbon:RibbonTab Header="Insert" />
+            <ribbon:RibbonTab Header="View" />
+            <ribbon:RibbonTab Header="Layout" /> 
         </ribbon:SfRibbon.Tabs>
     </ribbon:SfRibbon>
 </Grid>
@@ -380,7 +351,7 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Add built-in RibbonSplitButton in SfRibbon](Getting-Started-images/Getting-Started-image6.png)
+![Add built-in RibbonSplitButton in SfRibbon](Getting-Started-images/Getting-Started-image5.png)
 
 ## Host a custom ribbon items to the group ##
 
@@ -389,28 +360,31 @@ You can host other controls such as checkbox, radio button and combobox etc., to
 {% tabs %}
 {% highlight xaml %}
 <Grid x:Name="rootGrid">
-    <ribbon:SfRibbon x:Name="sfRibbon">
-        <ribbon:RibbonTab Header="View">
-            <ribbon:RibbonGroup Header="Views" >
-                <ribbon:RibbonItemHost>
-                    <ribbon:RibbonItemHost.ItemTemplate>
-                        <CheckBox Content="Ruler" IsChecked="true"/>
-                    </ribbon:RibbonItemHost.ItemTemplate>
-                </ribbon:RibbonItemHost>
-                <ribbon:RibbonItemHost>
-                    <ribbon:RibbonItemHost.ItemTemplate>
-                        <CheckBox Content="Gridlines" IsChecked="true"/>
-                    </ribbon:RibbonItemHost.ItemTemplate>
-                </ribbon:RibbonItemHost>
-                <ribbon:RibbonItemHost>
-                    <ribbon:RibbonItemHost.ItemTemplate>
-                        <CheckBox Content="Navigation Pane" />
-                    </ribbon:RibbonItemHost.ItemTemplate>
-                </ribbon:RibbonItemHost>
-             </ribbon:RibbonGroup>
-            </ribbon:RibbonTab>
-        </ribbon:SfRibbon.Tabs>
-    </ribbon:SfRibbon>
+     <ribbon:SfRibbon x:Name="sfRibbon">
+            <ribbon:SfRibbon.Tabs>
+                <ribbon:RibbonTab Header="View">
+                    <ribbon:RibbonGroup Header="Views">
+                        <ribbon:RibbonItemHost>
+                            <ribbon:RibbonItemHost.ItemTemplate>
+                                <CheckBox Content="Ruler"
+                                          IsChecked="true" />
+                            </ribbon:RibbonItemHost.ItemTemplate>
+                        </ribbon:RibbonItemHost>
+                        <ribbon:RibbonItemHost>
+                            <ribbon:RibbonItemHost.ItemTemplate>
+                                <CheckBox Content="Gridlines"
+                                          IsChecked="true" />
+                            </ribbon:RibbonItemHost.ItemTemplate>
+                        </ribbon:RibbonItemHost>
+                        <ribbon:RibbonItemHost>
+                            <ribbon:RibbonItemHost.ItemTemplate>
+                                <CheckBox Content="Navigation Pane" />
+                            </ribbon:RibbonItemHost.ItemTemplate>
+                        </ribbon:RibbonItemHost>
+                    </ribbon:RibbonGroup>
+                </ribbon:RibbonTab>
+            </ribbon:SfRibbon.Tabs>
+        </ribbon:SfRibbon>
 </Grid>
 {% endhighlight %}   
 {% highlight c# %}
@@ -441,11 +415,13 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Host a custom ribbon items to the group](Getting-Started-images/Getting-Started-image7.png)
+![Host a custom ribbon items to the group](Getting-Started-images/Getting-Started-image6.png)
 
-## Add Ribbon Backstage to the ribbon ##
+## Add RibbonBackstage to the ribbon ##
 
-The Ribbon backstage provides a separate view to the ribbon and can be added by using the `Backstage` property of ribbon control. Backstage appears as the first tab in the top left corner named File and opens a backstage view when you click the `File` menu. You can also host a `BackstageView` inside the ribbon for the following code snippet.
+Backstage View is accessible by clicking the "File" tab near the top-left of the application window.
+
+The Ribbon backstage provides a separate view to the ribbon  and can be added by using the `Backstage` property of ribbon control. You can also host `BackstageView` in the ribbon backstage. To open the backstage view in the ribbon, click the `File` tab near the top left of the ribbon.
 
 {% tabs %}
 {% highlight xaml %}
@@ -458,6 +434,7 @@ The Ribbon backstage provides a separate view to the ribbon and can be added by 
         </ribbon:SfRibbon.Backstage>
     </ribbon:SfRibbon>
 </Grid>
+
 {% endhighlight %}   
 {% highlight c# %}
 SfRibbon sfRibbon = new SfRibbon();
@@ -465,15 +442,15 @@ RibbonBackstage ribbonBackstage = new RibbonBackstage();
 BackstageView backstageView = new BackstageView();
 ribbonBackstage.Content = backstageView;
 sfRibbon.Backstage = ribbonBackstage;
- this.rootGrid.Children.Add(sfRibbon);
+this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Add Backstage to the ribbon](Getting-Started-images/Getting-Started-image8.png)
+![Add Backstage to the ribbon](Getting-Started-images/Getting-Started-image7.png)
 
 ## Add Backstage items to the BackStageView ##
 
-The BackstageView allows you to add a number of items such as `BackstageViewTabItem`, `BackstageViewItemSeparator` and `BackstageViewButtonItem` to a view using the `Items` property. You can also add backstage items to the footer of backstage view by using the `FooterItems` property.
+Any number of backstage items such as `BackstageViewTabItem`, `BackstageViewItemSeparator` and `BackstageViewButtonItem` can be added to the top of the backstage view using the `Items` property. You can also add backstage items to the bottom of the backstage view using the `FooterItems` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -540,17 +517,25 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Add Backstage items to the BackStageView](Getting-Started-images/Getting-Started-image9.png)
+![Add Backstage items to the BackStageView](Getting-Started-images/Getting-Started-image8.png)
 
 
 ## Add RightPane to the ribbon ##
 
-The Right pane allows you to add a custom panel with ribbon items on the right side of the ribbon. For example below, added a stack panel as a custom panel with ribbon buttons inside the right pane.
+The Right pane actually stays in the top right corner of the ribbon that allows you to add any controls inside the pane. Commonly used items can be placed in the right side of the control. The contents in the right pane are shown irrespective of the currently selected tab.
+
+For example below, we added a stack panel with two ribbon buttons inside the right pane.
 
 {% tabs %}
 {% highlight xaml %}
 <Grid x:Name="rootGrid">
     <syncfusion:SfRibbon x:Name="sfRibbon">
+        <ribbon:SfRibbon.Tabs>
+            <ribbon:RibbonTab Header="Home" />
+            <ribbon:RibbonTab Header="Insert" />
+            <ribbon:RibbonTab Header="View" />
+            <ribbon:RibbonTab Header="Layout" />
+        </ribbon:SfRibbon.Tabs>
         <syncfusion:SfRibbon.RightPane>
             <StackPanel Orientation="Horizontal">
                 <syncfusion:RibbonButton Icon="Undo" Content="Undo" />
@@ -562,6 +547,16 @@ The Right pane allows you to add a custom panel with ribbon items on the right s
 {% endhighlight %}   
 {% highlight c# %}
 SfRibbon sfRibbon = new SfRibbon();
+
+RibbonTab homeTab = new RibbonTab() { Header = "Home" };
+RibbonTab insertTab = new RibbonTab() { Header = "Insert" };
+RibbonTab viewTab = new RibbonTab() { Header = "View" };
+RibbonTab layoutTab = new RibbonTab() { Header = "Layout" };
+
+sfRibbon.Tabs.Add(homeTab);
+sfRibbon.Tabs.Add(insertTab);
+sfRibbon.Tabs.Add(viewTab);
+sfRibbon.Tabs.Add(layoutTab);
 
 StackPanel customPanel = new StackPanel() { Orientation = Orientation.Horizontal };
 RibbonButton undoButton = new RibbonButton() { Content = "Undo", Icon = new SymbolIcon(Symbol.Undo) };
@@ -575,4 +570,4 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Add RightPane to the ribbon](Getting-Started-images/Getting-Started-image10.png)
+![Add RightPane to the ribbon](Getting-Started-images/Getting-Started-image9.png)
