@@ -597,7 +597,7 @@ private void DataGrid_PrintTaskRequested(object sender, DataGridPrintTaskRequest
 
 ![Print the Specific pages in WinUI DataGrid](Printing-images/Printing-image13.png)
 
-N> View sample in [GitHub]().
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/how-to-print-specific-pages-in-winui-datagrid).
 
 ### Disable print preview
 
@@ -622,5 +622,5 @@ private void DataGrid_PrintTaskRequested(object sender, DataGridPrintTaskRequest
 
 ![Disable the print preview in WinUI DataGrid](Printing-images/Printing-image14.png)
 
-N> View sample in [GitHub](https://github.com/SyncfusionExamples/how-to-disable-print-preview-in-uwp-datagrid).
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/how-to-disable-print-preview-in-winui-datagrid).
 
