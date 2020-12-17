@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started | WinUI | Ribbon | Syncfusion
-description: Learn here about getting started with Syncfusion WinUI Ribbon (SfRibbon) control and more details. 
+description: Learn here about getting started with Syncfusion WinUI SfRibbon control and more details about the control features.
 platform: winui
 control: Ribbon
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains the steps required to add the Ribbon control and its elements such as ribbon tabs, built in ribbon items, custom ribbon items, right pane, backstage and its items. This section covers only basic features needed to get started with Syncfusion ribbon control.
 
-## Creating an application with WinUI TreeGrid
+## Creating an application with WinUI Ribbon
 
 1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
 
