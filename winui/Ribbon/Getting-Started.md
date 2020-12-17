@@ -419,9 +419,7 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ## Add RibbonBackstage to the ribbon ##
 
-Backstage View is accessible by clicking the "File" tab near the top-left of the application window.
-
-The Ribbon backstage provides a separate view to the ribbon  and can be added by using the `Backstage` property of ribbon control. You can also host `BackstageView` in the ribbon backstage. To open the backstage view in the ribbon, click the `File` tab near the top left of the ribbon.
+The Ribbon backstage provides a separate view to the ribbon and can be added by using the `Backstage` property of ribbon control. You can view the Backstage by clicking the application menu button, which is placed before the ribbon tabs. You can also host `BackstageView` in the ribbon backstage.
 
 {% tabs %}
 {% highlight xaml %}
@@ -522,7 +520,7 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ## Add RightPane to the ribbon ##
 
-The Right pane actually stays in the top right corner of the ribbon that allows you to add any controls inside the pane. Commonly used items can be placed in the right side of the control. The contents in the right pane are shown irrespective of the currently selected tab.
+The Right pane is located at the right side of the ribbon tab. Any controls can be placed inside the pane. The contents in the right pane are shown irrespective of the currently selected tab.
 
 For example below, we added a stack panel with two ribbon buttons inside the right pane.
 
