@@ -9,13 +9,13 @@ documentation: ug
 
 # Divisors in the Slider
 
-This section explains about how to add the divisors in the slider.
+This section explains about how to show the divisors in the slider.
 
 ## Show Divisors
 
-The `ShowDivisors` property is used to render the divisors on the track. The default value of the `ShowDivisors` property is false. It is a shape which is used to represent the major interval points of the track.
+The [`ShowDivisors`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowDivisors) property is used to render the divisors on the track. The default value of the [`ShowDivisors`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowDivisors) property is false. It is a shape, which is used to represent the major interval points of the track.
 
-For example, if `Minimum` is 0 and `Maximum` is 100 and `Interval` is 10, the slider will render the divisors at 0, 10, 20 and so on.
+For example, if [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Minimum) is 0, [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Maximum) is 100, and [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Interval) is 10, the slider will render the divisors at 0, 10, 20 and so on.
 
 {% tabs %}
 
@@ -43,7 +43,7 @@ this.Content = sfSlider;
 
 ## Divisors Height and Width
 
-You can change the divisor height and width of the slider using `DivisorHeight` and `DivisorWidth` properties respectively.
+You can change the divisor height and width of the RangeSlider using the [`DivisorHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_DivisorHeight) and [`DivisorWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_DivisorWidth) properties respectively.
 
 {% tabs %}
 
@@ -73,9 +73,9 @@ this.Content = sfSlider;
 
 ![Slider with divisor height and width customization](images/divisors/slider-divisorHeightWidth.png)
 
-## Divisor Stroke Thickness and Stroke Color
+## Divisor Stroke Thickness and Stroke
 
-You can change the divisor stroke thickness of the slider using the `DivisorStrokeThickness` property. The default value of `DivisorStrokeThickness` is 0. Also, you can change the divisor stroke of the slider using the `DivisorStroke` property.
+You can change the divisor stroke thickness of the slider using the [`DivisorStrokeThickness`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_DivisorStrokeThickness) property. The default value of [`DivisorStrokeThickness`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_DivisorStrokeThickness) is 0. Also, you can change the divisor stroke of the slider using the [`DivisorStroke`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_DivisorStroke) property.
 
 {% tabs %}
 
@@ -111,7 +111,7 @@ this.Content = sfSlider;
 
 ## Divisor Fill
 
-You can change the divisor fill of the slider using the `DivisorFill` property.
+You can change the divisor fill of the slider using the [`DivisorFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_DivisorFill) property.
 
 {% tabs %}
 
@@ -145,9 +145,9 @@ this.Content = sfSlider;
 
 ## Divisor Template
 
-**Setting Template for Divisors**
+**Setting a Template for Divisors**
 
-The `DivisorTemplate` property allows you to define the data template for the divisor's like the following code example.
+The [`DivisorTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_DivisorTemplate) property allows you to define the data template for the divisor's as shown in the following code sample.
 
 {% tabs %}
 
@@ -189,11 +189,11 @@ this.Content = sfSlider;
 
 ![Slider with divisor template customization](images/divisors/slider-divisorTemplate.png)
 
-N> Its DataContext is `SliderBase`.
+N> Its DataContext is [`SliderBase`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html?tabs=tabid-1).
 
-**Setting Active Template for Divisors**
+**SSetting a Active Template for Divisors**
 
-The `DivisorTemplate` property allows you to define the data template for the divisor's like the following code example.
+The [`ActiveDivisorTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveDivisorTemplate) property allows you to define the data template for the divisor's as shown in the following code sample.
 
 {% tabs %}
 
