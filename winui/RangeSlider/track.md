@@ -9,17 +9,15 @@ documentation: ug
 
 # Track Features in Syncfusion WinUI Range Slider
 
-This section helps to learn about how to customize the track in the slider.
+This section explains how to customize the track in the slider.
 
 ## Track Color
 
-You can change the active and inactive track color of the range slider using the `ActiveTrackFill` and `InactiveTrackFill` properties respectively.
+You can change the active and inactive track color of the range slider using the [`ActiveTrackFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveTrackFill) and [`InactiveTrackFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_InactiveTrackFill) properties respectively.
 
 The active side of the range slider is between start and end thumbs.
 
-The inactive side of the range slider is between the `Minimum` value and the left thumb, and the right thumb and the `Maximum` value.
-
-For RTL, the inactive side is between the `Maximum` value and the left thumb, and the right thumb and the `Minimum` value.
+The InactiveTrack of the RangeSlider visible between the [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Minimum) value and StartThumb, also between the EndThumb and [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Maximum) value.
 
 {% tabs %}
 
@@ -49,7 +47,7 @@ this.Content = sfRangeSlider;
 
 ## Track Hover Color
 
-You can change the active and inactive track hover color of the range slider using the `ActiveTrackHoverFill` and `InactiveTrackHoverFill` properties respectively. This color will be applied when hover the cursor on the range slider control.
+You can change the active and inactive track hover color of the range slider using the [`ActiveTrackHoverFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveTrackHoverFill) and [`InactiveTrackHoverFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_InactiveTrackHoverFill) properties respectively. This color will be applied when hovering the cursor on the RangeSlider control.
 
 {% tabs %}
 
@@ -83,7 +81,7 @@ this.Content = sfRangeSlider;
 
 ## Track Pressed Color
 
-You can change the active and inactive track pressed color of the range slider using the `ActiveTrackHoverFill` and `InactiveTrackHoverFill` properties respectively. This color will be applied when pressed the cursor on the range slider control.
+You can change the active and inactive track pressed color of the range slider using the [`ActiveTrackHoverFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveTrackHoverFill) and [`InactiveTrackHoverFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_InactiveTrackHoverFill) properties respectively. This color will be applied when pressed the cursor on the range slider control.
 
 {% tabs %}
 
@@ -121,7 +119,7 @@ this.Content = sfRangeSlider;
 
 ## Track Height
 
-You can change the track height of the range slider using the `ActiveTrackHeight` and `InactiveTrackHeight` properties. The default value of the both properties are 2.
+You can change the track height of the range slider using the [`ActiveTrackHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveTrackHeight) and [`InactiveTrackHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_InactiveTrackHeight) properties. The default value of the both properties are 2.
 
 {% tabs %}
 
@@ -151,7 +149,7 @@ this.Content = sfRangeSlider;
 
 ## Track Style
 
-You can change the track height of the range slider using the `ActiveTrackStyle` and `InactiveTrackStyle` properties. The default value of the both properties are null.
+You can change the track style of the range slider using the [`ActiveTrackStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveTrackStyle) and [`InactiveTrackStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_InactiveTrackStyle) properties. The default value of the both properties are null.
 
 {% tabs %}
 
