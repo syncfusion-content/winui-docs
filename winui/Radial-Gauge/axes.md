@@ -528,38 +528,6 @@ this.Content = sfRadialGauge;
 
 ![axis line visibility](images/axis/axis_showline.png)
 
-**Background color support**
-
-[`Radial gauge`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) allows customizing its background color using `Background` property.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<gauge:SfRadialGauge Background="LightBlue">
-    <gauge:SfRadialGauge.Axes>
-        <gauge:RadialAxis />
-    </gauge:SfRadialGauge.Axes>
-</gauge:SfRadialGauge>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfRadialGauge sfRadialGauge = new SfRadialGauge();
-sfRadialGauge.Background = new SolidColorBrush(Colors.LightBlue);
-
-RadialAxis radialAxis = new RadialAxis();
-sfRadialGauge.Axes.Add(radialAxis);
-
-this.Content = sfRadialGauge;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![gauge background color](images/axis/axis_backgroundColor.png)
-
 **Background content support**
 
 [`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) allows to add an any `FrameworkElement` as its background using `BackgroundContent` property.
