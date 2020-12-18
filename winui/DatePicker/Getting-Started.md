@@ -32,12 +32,12 @@ This section explains the steps required to add the [DatePicker]() control and i
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors"
+    xmlns:editors="using:Syncfusion.UI.Xaml.Editors"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid Name="grid">
         <!--Adding DatePicker control -->
-        <syncfusion:SfDatePicker Name="datePicker"/>
+        <editors:SfDatePicker Name="sfDatePicker"/>
     </Grid>
 </Page>
 
@@ -57,9 +57,9 @@ namespace GettingStarted
         {
             this.InitializeComponent();
             // Creating an instance of the DatePicker control
-            SfDatePicker datePicker = new SfDatePicker();
+            SfDatePicker sfDatePicker = new SfDatePicker();
 
-            grid.Children.Add(datePicker);
+            grid.Children.Add(sfDatePicker);
         }
     }
 }
@@ -67,19 +67,18 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![DatePicker control added in the application](Getting-Started_images/DatePicker_Added.jpg)
+![DatePicker control added in the application](Getting-Started_images/DatePicker_Added.png)
 
 N> Download demo application from [GitHub]()
 
 ## Select the date programmatically
 
-You can set or change the selected date by using [SelectedDate]() property. If you not assign any value for the `SelectedDate` property, `DatePicker` will automatically assign the current system date as `SelectedDate`.
+You can set or change the selected date programmatically by using [SelectedDate]() property. If you not assign any value for the `SelectedDate` property, `DatePicker` will automatically assign the current system date as `SelectedDate`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDatePicker SelectedDate="10/29/2021"
-                         Name="sfDatePicker" />
+<editors:SfDatePicker Name="sfDatePicker" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -96,12 +95,12 @@ N> Download demo application from [GitHub]()
 
 ## Select date interactively
 
-You can change the selected date interactively by enter the date value using keyboard or from the drop down date selector. You can get the selected date from the `SelectedDate` property.
+You can change the selected date interactively by enter the date value using keyboard or select from drop down date spinner. You can get the selected date from the `SelectedDate` property.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDatePicker Name="sfDatePicker" />
+<editors:SfDatePicker Name="sfDatePicker" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -111,7 +110,7 @@ SfDatePicker sfDatePicker= new SfDatePicker();
 {% endhighlight %}
 {% endtabs %}
 
-![SfDatePicker displaying selected value](Getting-Started_images/selectedDate.png)
+![SfDatePicker displaying selected value](Getting-Started_images/selectedDateInteract.gif)
 
 N> Download demo application from [GitHub]()
 
@@ -122,7 +121,7 @@ If you want to set null value for the `DatePicker`, set the [AllowNullValue]() p
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDatePicker SelectedDate="{x:Null}"
+<editors:SfDatePicker SelectedDate="{x:Null}"
                          AllowNullValue="True"
                          Name="sfDatePicker" />
 
@@ -147,7 +146,7 @@ You can prompt the user with some information by using the [PlaceHolderText]() p
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDatePicker PlaceHolderText="Select the Time"
+<editors:SfDatePicker PlaceHolderText="Select the Date"
                          SelectedDate="{x:Null}"
                          AllowNullValue="True"
                          Name="sfDatePicker" />
@@ -156,7 +155,7 @@ You can prompt the user with some information by using the [PlaceHolderText]() p
 {% highlight C# %}
 
 SfDatePicker sfDatePicker= new SfDatePicker();
-sfDatePicker.PlaceHolderText = "Select the Time";
+sfDatePicker.PlaceHolderText = "Select the Date";
 sfDatePicker.SelectedDate = null;
 sfDatePicker.AllowNullValue = true;
 
@@ -177,7 +176,7 @@ You will be notified when selected date changed in `SfDatePicker` by using [Date
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfDatePicker DateChanged="SfDatePicker_DateChanged" 
+<editors:SfDatePicker DateChanged="SfDatePicker_DateChanged" 
                          Name="sfDatePicker"/>
 
 {% endhighlight %}
@@ -209,30 +208,30 @@ private void SfDatePicker_DateChanged(DependencyObject d, DependencyPropertyChan
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDatePicker x:Name="sfDatePicker" 
-                         FormatString="MM/yyyy"/>
+<editors:SfDatePicker x:Name="sfDatePicker" 
+                         FormatString="M"/>
 
 {% endhighlight  %}
 {% highlight C# %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
-sfDatePicker.FormatString= "MM/yyyy";
+sfDatePicker.FormatString= "M";
 
 {% endhighlight  %}
 {% endtabs %}
 
-![SfDatePicker selected date with month format](Features_images/Features_img1.png)
+![SfDatePicker selected date with month format](Getting-Started_images/FormatString.png)
 
 N> Download demo application from [GitHub]()
 
 ## Change date format for Spinner
 
-You can allow the user to select the pair of date, month and year selector or any single selector cell from the drop down date selector by using the [DropdownFormatString]() property. The default value of `DropdownFormatString` property is `d`.
+You can allow the user to select the pair of date, month and year spinner or any single spinner cell from the drop down date spinner by using the [DropdownFormatString]() property. The default value of `DropdownFormatString` property is `d`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDatePicker x:Name="sfDatePicker" 
+<editors:SfDatePicker x:Name="sfDatePicker" 
                          DropdownFormatString="dd/MM"/>
 
 {% endhighlight  %}
@@ -244,9 +243,9 @@ sfDatePicker.DropdownFormatString = "dd/MM";
 {% endhighlight  %}
 {% endtabs %}
 
-![SfDatePicker contains only date and month selector](Features_images/Features_img2.png)
+![SfDatePicker contains only date and month spinner](Getting-Started_images/DropdownFormatString.png)
 
-Here, you can only able to select the date and month value from the drop down selector.
+Here, you can only able to select the date and month value from the drop down spinner.
 
 N> Download demo application from [GitHub]()
 
@@ -257,44 +256,78 @@ You can restrict the users from selecting a date within the particular range by 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDatePicker x:Name="sfDatePicker" 
-                         MinDate=""
-                         MaxDate=""/>
+<editors:SfDatePicker x:Name="sfDatePicker" />
 
 {% endhighlight  %}
 {% highlight C# %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
-sfDatePicker.MaxDate = new DateTimeOffset(new DateTime(2020,12,10));
-sfDatePicker.MinDate = new DateTimeOffset(new DateTime(2020,12,14));
+sfDatePicker.MaxDate = new DateTimeOffset(new DateTime(2020,12,17));
+sfDatePicker.MinDate = new DateTimeOffset(new DateTime(2020,12,20));
 
 {% endhighlight  %}
 {% endtabs %}
 
-![SfDatePicker restrict the date selection with particular range](Features_images/MinDate.png)
+![SfDatePicker restrict the date selection with particular range](Getting-Started_images/MinDate.png)
 
-## Block dates using BlackoutDates
+## Disable/block all weekends
 
-If you want to block particular dates from the date selection, add that date ranges to the [BlackoutDates]() collection. You can add more block out date ranges to the `BlackoutDates` collection.
+If you want to block all weekend dates from the date selection, handle the [DateFieldItemPrepared]() event and use the [DateTimeFieldItemPreparedEventArgs.ItemInfo.IsBlackout]() property value as `true`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDatePicker x:Name="sfDatePicker" 
-                         MinDate=""
-                         MaxDate=""/>
+<editors:SfDatePicker x:Name="sfDatePicker" 
+                      DateFieldItemPrepared = "SfDatePicker_DateFieldItemPrepared"/>
 
 {% endhighlight  %}
 {% highlight C# %}
 
-SfDatePicker sfDatePicker = new SfDatePicker();
-sfDatePicker.MaxDate = new DateTimeOffset(new DateTime(2020,12,10));
-sfDatePicker.MinDate = new DateTimeOffset(new DateTime(2020,12,14));
+sfDatePicker.DateFieldItemPrepared += SfDatePicker_DateFieldItemPrepared;
 
 {% endhighlight  %}
 {% endtabs %}
 
-![SfDatePicker blocks the particular dates from selection](Features_images/BlackoutDates.png)
+You can handle the event as follows,
+
+{% tabs %}
+{% highlight C# %}
+
+private void SfDatePicker_DateFieldItemPrepared(object sender, DateTimeFieldItemPreparedEventArgs e)
+{
+    //Restrict the weekend days
+    if (e.ItemInfo.DateTime.Value.DayOfWeek == DayOfWeek.Saturday ||
+            e.ItemInfo.DateTime.Value.DayOfWeek == DayOfWeek.Sunday)
+    {
+        e.ItemInfo.IsBlackout = true;
+    }
+}
+
+{% endhighlight  %}
+{% endtabs %}
+
+![SfDatePicker blocksweekend dates from selection](Getting-Started_images/blockweekends.png)
+
+## Hide submit button(Select date directly from date spinner)
+
+If you want to hide the submit button and select the date directly from the drop down date spinner without clicking the `Ok` button, use the [ShowSubmitButtons]() property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfDatePicker ShowSubmitButtons="False" 
+	                  x:Name="sfDatePicker"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfDatePicker sfDatePicker = new SfDatePicker();
+sfDatePicker.ShowSubmitButtons = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfDatePicker hides the drop down date spinner submit and cancel buttons](Getting-Started_images/ShowSubmitButtons.gif)
 
 ## Edit date using free form editing
 
@@ -305,8 +338,8 @@ By default, the user entering each input numbers are automatically validated wit
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDatePicker EditMode="Normal"
-                         x:Name="sfDatePicker" />
+<editors:SfDatePicker EditMode="Normal"
+                      x:Name="sfDatePicker" />
 
 {% endhighlight  %}
 {% highlight C# %}
@@ -317,50 +350,4 @@ sfDatePicker.EditMode = DateTimeEditingMode.Normal;
 {% endhighlight  %}
 {% endtabs %}
 
-![SfDatePicker enables free form editing to select date](Features_images/Normal.png)
-
-## Restrict date selection by editing
-
-You can restrict the date selection during editing by using the `EditMode` property value is `None`. Then, you can change the date only using drop down date selector. The default value of `EditMode` property is `Mask`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfDatePicker EditMode="None"
-                         x:Name="sfDatePicker" />
-
-{% endhighlight  %}
-{% highlight C# %}
-
-SfDatePicker sfDatePicker = new SfDatePicker();
-sfDatePicker.EditMode = DateTimeEditingMode.None;
-
-{% endhighlight  %}
-{% endtabs %}
-
-![SfDatePicker restrict date selection from editing](Features_images/Normal.png)
-
-## Curved border for DatePicker
-
-If you want to create curved borders for the `DatePicker`, use the [CornerRadius]() property. The default value of `CornerRadius` property is `0,0,0,0`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfDatePicker CornerRadius="10"
-                         x:Name="sfDatePicker" />
-
-{% endhighlight  %}
-{% highlight C# %}
-
-SfDatePicker sfDatePicker = new SfDatePicker();
-sfDatePicker.CornerRadius = new CornerRadius() {
-    BottomLeft=10, 
-    TopLeft=10, 
-    BottomRight=10, 
-    TopRight=10 };
-
-{% endhighlight  %}
-{% endtabs %}
-
-![SfDatePicker with curved border](Features_images/CornerRadius.png)
+![SfDatePicker enables free form editing to select date](Getting-Started_images/EditModeNormal.png)

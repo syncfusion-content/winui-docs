@@ -17,10 +17,11 @@ The [SfDatePicker]() control allows the user to select date values in a touch fr
 
 ### Expanded view:
 
-![SfDatePicker with dropdown date selector](Overview_images/Overview_img2.png)
+![SfDatePicker with dropdown date spinner](Overview_images/Overview_img2.png)
 
 ### Key Features
 
-* Formatting – The Control displays  the selected Date value in a various formats.
-* Date Selector – The drop-down portion used for selecting the date and it can be customized.
+* Formatting – The Control displays the selected date value in a various formats.
+* Date Spinner – The drop-down portion used for selecting the date and it can be customized.
+* Restrict dates – Restrict the user to select specific dates.
 
