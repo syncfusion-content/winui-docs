@@ -87,7 +87,6 @@ SfDataGrid provides various options to customize page settings using [SfDataGrid
 ### Orientation
 
 SfDataGrid provides support to switch between Portrait (more rows but fewer columns) and Landscape (more columns but fewer rows) orientation while printing. Orientation can be changed by setting [PrintSettings.Orientation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_Orientation) Property.
-
 Orientation can also be changed in print dialog at runtime by selecting a option from orientation drop-down.
 
 {% tabs %}
