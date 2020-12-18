@@ -65,7 +65,7 @@ sfTreeView.Nodes.RemoveAt(2);
 
 #### Delete selected nodes conditionally
 
-You can cancel the node deletion by using the `ItemDeletingEventArgs.Cancel` of [ItemDeleting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDeleting) event. This event occurs when the node is being deleted using <kbd>delete</kbd> key. You can skip certain nodes when deleting more than one node by removing items from [ItemDeletingEventArgs.Nodes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.ItemDeletingEventArgs.html#Syncfusion_UI_Xaml_TreeView_ItemDeletingEventArgs_Nodes).
+You can cancel the node deletion by using the `ItemDeletingEventArgs.Cancel` of [ItemDeleting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDeleting) event. This event occurs when the node is being deleted using <kbd>Delete</kbd> key. You can skip certain nodes when deleting more than one node by removing items from [ItemDeletingEventArgs.Nodes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.ItemDeletingEventArgs.html#Syncfusion_UI_Xaml_TreeView_ItemDeletingEventArgs_Nodes).
 
 {% tabs %}
 {% highlight c# %}
@@ -92,7 +92,7 @@ private void TreeView_ItemDeleting (object sender, ItemDeletingEventArgs e)
 
 #### Reset selection after deleting the selected node
 
-You can handle the selection after remove the nodes through [SfTreeView.SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItem) property in [ItemDeleted](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDeleted) event. This event occurs after the node is deleted using <kbd>delete</kbd> key.
+You can handle the selection after remove the nodes through [SfTreeView.SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItem) property in [ItemDeleted](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDeleted) event. This event occurs after the node is deleted using <kbd>Delete</kbd> key.
 
 {% tabs %}
 {% highlight c# %}
