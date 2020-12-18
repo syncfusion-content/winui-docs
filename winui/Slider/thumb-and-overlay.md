@@ -9,14 +9,14 @@ documentation: ug
 
 # Thumb and Thumb Overlay Features in Slider
 
-This section helps to learn about how to customize the thumb and thumb overlay in the slider.
+This section explains how to customize the thumb and thumb overlay in the Slider.
 
-Thumb - It is one of the elements of slider which can be used to drag and change the selected value of the slider.
-Thumb overlay - It is rendered around the thumb while interacting with them.
+Thumb - It is one of the elements of Slider, which is used to drag and change the selected values of the Slider.
+Thumb overlay - It is rendered around the thumb and it will be displayed, while interacting with thumb.
 
 ## Thumb Type
 
-You can change the thumb type using the `ThumbType` property. The default value of `ThumbType` is `ThumbType.Circle`.
+You can change the thumb type using the [`ThumbType`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbType) property. The default value of [`ThumbType`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbType) is [`ThumbType.Circle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.ThumbType.html#Syncfusion_UI_Xaml_Sliders_ThumbType_Circle).
 
 
 {% tabs %}
@@ -43,7 +43,7 @@ this.Content = sfSlider;
 
 ## Thumb Height and Width
 
-You can change the thumb height and width of the slider using `ThumbHeight` and `ThumbWidth` properties respectively. The default values of both properties are 20.
+You can change the thumb height and width of the slider using the [`ThumbHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbHeight) and [`ThumbWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbWidth) properties respectively. The default values of both properties are 20.
 
 {% tabs %}
 
@@ -75,7 +75,7 @@ this.Content = sfSlider;
 
 ## Thumb Background
 
-You can change the thumb background of the slider using the `ThumbBackground` property.
+You can change the thumb background of the slider using the [`ThumbBackground`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbBackground) property.
 
 {% tabs %}
 
@@ -101,7 +101,7 @@ this.Content = sfSlider;
 
 ## Thumb Hover Background
 
-You can change the thumb hover background of the slider using the `ThumbHoverBackground` property.
+You can change the thumb hover background of the slider using the [`ThumbHoverBackground`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbHoverBackground) property.
 
 {% tabs %}
 
@@ -129,7 +129,7 @@ this.Content = sfSlider;
 
 ## Thumb Pressed Background
 
-You can change the thumb pressed background of the slider using the `ThumbPressedBackground` property.
+You can change the thumb pressed background of the slider using the [`ThumbPressedBackground`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbPressedBackground) property.
 
 {% tabs %}
 
@@ -159,7 +159,7 @@ this.Content = sfSlider;
 
 ## Thumb Style
 
-The `ThumbStyle` property allows you to define the style for the thumb as shown in the following code example.
+The [`ThumbStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbStyle) property allows you to define the style for the thumb as shown in the following code example.
 
 {% tabs %}
 
@@ -220,7 +220,7 @@ N> Its DataContext is current value of thumb.
 
 ## Thumb Overlay Radius
 
-The `ThumbOverlayRadius` property allows you to define the radius for the overlay as shown in the following code example. The default value of `ThumbOverlayRadius` property is 10.
+The [`ThumbOverlayRadius`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbOverlayRadius) property allows you to define the radius for the overlay as shown in the following code example. The default value of [`ThumbOverlayRadius`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbOverlayRadius) property is 10.
 
 {% tabs %}
 
@@ -248,7 +248,7 @@ this.Content = sfSlider;
 
 ## Thumb Overlay Fill
 
-The `ThumbOverlayFill` property allows you to define the fill color for the overlay as shown in the following code example.
+The [`ThumbOverlayFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbOverlayFill) property allows you to define the fill color for the overlay as shown in the following code example.
 
 {% tabs %}
 
@@ -279,7 +279,7 @@ N> Overlay effects displayed with 0.3 opacity.
 
 **ThumbDragStarted**
 
-The `ThumbDragStarted` event occurs when the thumb dragging started.
+The [`ThumbDragStarted`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbDragStarted) event raised when the thumb drag is started.
 
 {% tabs %}
 
@@ -303,7 +303,7 @@ private void SfSlider_ThumbDragStarted(object sender, DragStartedEventArgs e)
 
 **ThumbDragCompleted**
 
-The `ThumbDragCompleted` event occurs Event raised when the thumb dragged completed.
+The [`ThumbDragCompleted`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbDragCompleted) event raised when the thumb drag is completed.
 
 {% tabs %}
 

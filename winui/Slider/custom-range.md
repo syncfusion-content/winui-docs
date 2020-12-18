@@ -7,9 +7,9 @@ control: SfSlider
 documentation: ug
 ---
 
-# Custom Scale Range in Slider
+# Custom Scale Range for Slider
 
-Slider allows you to define a custom scale range by extending the slider based on your business logic.
+Slider allows you to define a custom scale range by extending the Slider based on your business logic.
 
 {% tabs %}
 
