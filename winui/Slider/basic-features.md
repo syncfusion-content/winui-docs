@@ -86,7 +86,7 @@ N>
 
 ## Discrete Selection for Values
 
-You can move the thumb in discrete manner for numeric values using the `StepFrequency` property in the range slider.
+You can move the thumb in discrete manner for numeric values using the [`StepFrequency`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_StepFrequency) property in the range slider.
 
 {% tabs %}
 
