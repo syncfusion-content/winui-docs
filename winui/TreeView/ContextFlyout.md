@@ -100,7 +100,7 @@ public class FileManagerViewModel
 
 ![WinUI TreeView with ContextFlyout using custom commands](ContextFlyout_images/ContextFlyout_image2.png)
 
-## Events
+## Event customization
 
 ### Conditionally displaying context flyout on right click
 
