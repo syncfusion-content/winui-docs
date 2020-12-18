@@ -159,81 +159,86 @@ The [RibbonButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbo
 
 {% tabs %}
 {% highlight xaml %}
-<ribbon:SfRibbon x:Name="sfRibbon">
+<ribbon:SfRibbon x:Name="sfRibbon"
+                 SelectedIndex="1">
     <ribbon:SfRibbon.Tabs>
-        <ribbon:RibbonTab Header="Home">
-            <ribbon:RibbonGroup Header="Clipboard">
-                <ribbon:RibbonButton Icon="Paste"
-                                          Content="Paste"
-                                          SizeMode="Large" />
-                <ribbon:RibbonButton Icon="Cut"
-                                     Content="Cut"
-                                     SizeMode="Normal" />
-                <ribbon:RibbonButton Icon="Copy"
-                                     Content="Copy"
-                                     SizeMode="Normal" />
-                <ribbon:RibbonButton Content="Format Painter"
-                                     SizeMode="Normal">
+        <ribbon:RibbonTab Header="Home" />
+        <ribbon:RibbonTab Header="Insert">
+            <ribbon:RibbonGroup Header="Illustrations">
+                <ribbon:RibbonButton Content="Pictures"
+                                     SizeMode="Large">
                     <ribbon:RibbonButton.Icon>
-                        <FontIcon FontFamily="Segoe MDL2 Assets"
-                                  Glyph="&#xF0E3;" />
+                        <SymbolIcon Symbol="Pictures" />
                     </ribbon:RibbonButton.Icon>
                 </ribbon:RibbonButton>
-            </ribbon:RibbonGroup>
-            <ribbon:RibbonGroup Header="Paragraph">
+                <ribbon:RibbonButton Content="Shapes"
+                                     SizeMode="Normal">
+                    <ribbon:RibbonButton.Icon>
+                        <FontIcon Glyph="&#xF158;" />
+                    </ribbon:RibbonButton.Icon>
+                </ribbon:RibbonButton>
+                <ribbon:RibbonButton Content="Icons"
+                                     SizeMode="Normal">
+                    <ribbon:RibbonButton.Icon>
+                        <FontIcon Glyph="&#xECAA;" />
+                    </ribbon:RibbonButton.Icon>
+                </ribbon:RibbonButton>
+                <ribbon:RibbonButton Icon="DisconnectDrive"
+                                     Content="3D Models"
+                                     SizeMode="Normal" />
                 <ribbon:RibbonButton SizeMode="Small">
                     <ribbon:RibbonButton.Icon>
-                        <BitmapIcon UriSource="ms-appx:///Justify.png" />
+                        <BitmapIcon UriSource="ms-appx:///Assets/Bookmarks.png" />
                     </ribbon:RibbonButton.Icon>
-                </ribbon:RibbonButton> 
-                <ribbon:RibbonButton SizeMode="Small"
-                                     Icon="AlignCenter" />
-                <ribbon:RibbonButton SizeMode="Small"
-                                     Icon="AlignRight">
-                    <SymbolIcon Symbol="AlignRight" />
-                </ribbon:RibbonButton> 
-            </ribbon:RibbonGroup>                   
-        </ribbon:RibbonTab>
-        <ribbon:RibbonTab Header="Insert" />
+                </ribbon:RibbonButton>
+                <ribbon:RibbonButton Icon="Character"
+                                     SizeMode="Small" />
+                <ribbon:RibbonButton Icon="FullScreen"
+                                     SizeMode="Small" />
+            </ribbon:RibbonGroup>
+        </ribbon:RibbonTab> 
         <ribbon:RibbonTab Header="View" />
         <ribbon:RibbonTab Header="Layout" />
     </ribbon:SfRibbon.Tabs>
 </ribbon:SfRibbon>
+
 {% endhighlight %}
 {% highlight c# %}
 SfRibbon sfRibbon = new SfRibbon();
+sfRibbon.SelectedIndex = 1;
+
 RibbonTab homeTab = new RibbonTab() { Header = "Home" };
 RibbonTab insertTab = new RibbonTab() { Header = "Insert" };
 RibbonTab viewTab = new RibbonTab() { Header = "View" };
 RibbonTab layoutTab = new RibbonTab() { Header = "Layout" };
 
-RibbonGroup clipboardGroup = new RibbonGroup() { Header = "Clipboard" };
-RibbonGroup paragraphGroup = new RibbonGroup() { Header = "Paragraph" };
+RibbonGroup illustrationsGroup = new RibbonGroup() { Header = "Illustrations" };
 
-RibbonButton pasteButton = new RibbonButton() { Content = "Paste", SizeMode = SizeMode.Large, Icon = new SymbolIcon(Symbol.Paste) };
-RibbonButton cutButton = new RibbonButton() { Content = "Cut", SizeMode = SizeMode.Normal, Icon = new SymbolIcon(Symbol.Cut) };
-RibbonButton copyButton = new RibbonButton() { Content = "Copy", SizeMode = SizeMode.Normal, Icon = new SymbolIcon(Symbol.Copy) };
-RibbonButton formatPainterButton = new RibbonButton() { Content = "FormatPainter", SizeMode = SizeMode.Normal, Icon = new FontIcon() { Glyph = "\xF0E3", FontFamily = new FontFamily("Segoe MDL2 Assets") } };
+RibbonButton pictureButton = new RibbonButton() { Content = "Picures" , SizeMode= SizeMode.Large, Icon = new SymbolIcon(Symbol.Pictures)};
 
-RibbonButton justifyButton = new RibbonButton() { SizeMode = SizeMode.Small, Icon = new BitmapIcon() { UriSource = new Uri(@"ms-appx:///Justify.png", UriKind.RelativeOrAbsolute) } };
-RibbonButton alignCenterButton = new RibbonButton() { SizeMode = SizeMode.Small, Icon = new SymbolIcon(Symbol.AlignCenter)  };
-RibbonButton alignRightButton = new RibbonButton() { SizeMode = SizeMode.Small, Icon = new SymbolIcon(Symbol.AlignRight) };
+RibbonButton shapesButton = new RibbonButton() { Content = "Shapes" , SizeMode= SizeMode.Normal, Icon = new FontIcon() { Glyph= "\xF158" } };
+RibbonButton iconsButton = new RibbonButton() { Content = "Icons" , SizeMode= SizeMode.Normal, Icon = new FontIcon() { Glyph= "\xECAA" } };            
+RibbonButton disconnectDriveButton = new RibbonButton() { Content = "3D Models" , SizeMode= SizeMode.Small, Icon = new SymbolIcon(Symbol.DisconnectDrive)  };
 
-clipboardGroup.Items.Add(pasteButton);
-clipboardGroup.Items.Add(cutButton);
-clipboardGroup.Items.Add(copyButton);
-clipboardGroup.Items.Add(formatPainterButton);
-paragraphGroup.Items.Add(justifyButton);
-paragraphGroup.Items.Add(alignCenterButton);
-paragraphGroup.Items.Add(alignRightButton);
+RibbonButton bookmarksButton = new RibbonButton() { SizeMode = SizeMode.Small, Icon = new BitmapIcon() { UriSource = new Uri("msappx:///Assets/Bookmarks.png") } };
+RibbonButton characterButton = new RibbonButton() {   SizeMode= SizeMode.Small, Icon = new SymbolIcon(Symbol.Character) };
+RibbonButton fullScreenButton = new RibbonButton() { SizeMode = SizeMode.Small, Icon = new SymbolIcon(Symbol.FullScreen) };
 
-homeTab.Items.Add(clipboardGroup);
-homeTab.Items.Add(paragraphGroup);
+illustrationsGroup.Items.Add(pictureButton);
+illustrationsGroup.Items.Add(shapesButton);
+illustrationsGroup.Items.Add(iconsButton);
+illustrationsGroup.Items.Add(disconnectDriveButton);
+illustrationsGroup.Items.Add(bookmarksButton);
+illustrationsGroup.Items.Add(characterButton);
+illustrationsGroup.Items.Add(fullScreenButton);
+
+insertTab.Items.Add(illustrationsGroup);
 
 sfRibbon.Tabs.Add(homeTab);
 sfRibbon.Tabs.Add(insertTab);
 sfRibbon.Tabs.Add(viewTab);
 sfRibbon.Tabs.Add(layoutTab);
+
 this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
