@@ -30,7 +30,7 @@ sfDataGrid.Print();
 
 ### Print
 
-Print method opens the System print dialog where user can select the printer and set the number of copies to be printed.
+Print method opens the print dialog where user can select the available printer, change the orientation and preview of the DataGrid to be printed will be loaded on print preview panel.
 
 ![Print preview window for WinUI DataGrid before printing](Printing-images/Printing-image1.png)
 
@@ -88,6 +88,8 @@ SfDataGrid provides various options to customize page settings using [SfDataGrid
 
 SfDataGrid provides support to switch between Portrait (more rows but fewer columns) and Landscape (more columns but fewer rows) orientation while printing. Orientation can be changed by setting [PrintSettings.Orientation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_Orientation) Property.
 
+Orientation can also be changed in print dialog at runtime by selecting a option from orientation drop-down.
+
 {% tabs %}
 {% highlight c# %}
 sfDataGrid.PrintSettings.Orientation = PrintOrientation.Landscape;
@@ -120,6 +122,7 @@ sfDataGrid.Print();
 ## Setting Header and Footer
 
 SfDataGrid provides a way to display additional content at the top (Header) or bottom (Footer) of the page while printing. This can be achieved by setting [PageHeaderHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_PageHeaderHeight), [HeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_HeaderTemplate), [FooterHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_FooterHeight), [FooterTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_FooterTemplate) properties in [PrintSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_PrintSettings).
+
 Steps to add page header while printing,
 
 1. Create DataTemplate in Page.Resources.
@@ -127,7 +130,7 @@ Steps to add page header while printing,
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-    <DataTemplate x:Key="PageHeaderTempalte">
+    <DataTemplate x:Key="PageHeaderTemplate">
         <Grid Background="Gray">
             <TextBlock Text="Syncfusion" FontSize="18" FontWeight="Bold" 
                Foreground="White" HorizontalAlignment="Center"/>
@@ -142,7 +145,7 @@ Steps to add page header while printing,
 {% tabs %}
 {% highlight c# %}
 sfDataGrid.PrintSettings.PageHeaderHeight = 30;
-sfDataGrid.PrintSettings.HeaderTemplate = Resources["PageHeaderTempalte"] as DataTemplate;
+sfDataGrid.PrintSettings.HeaderTemplate = Resources["PageHeaderTemplate"] as DataTemplate;
 sfDataGrid.Print();
 {% endhighlight %}
 {% endtabs %}
@@ -161,7 +164,7 @@ You can print current Date and Time at each page by setting the  [FooterHeight](
 {% highlight xaml %}
 <Page.Resources>        
     <local:OrderInfoViewModel  x:Key="viewModel"/>    
-    <DataTemplate x:Key="PageFooterTempalte">
+    <DataTemplate x:Key="PageFooterTemplate">
         <Grid>
             <TextBlock HorizontalAlignment="Center" FontSize="20" VerticalAlignment="Center"  
              Text="{Binding Path=Date, Source={StaticResource viewModel}}"/>
@@ -171,14 +174,14 @@ You can print current Date and Time at each page by setting the  [FooterHeight](
 {% endhighlight %}
 {% highlight c# %}
 sfDataGrid.PrintSettings.FooterHeight = 30;
-sfDataGrid.PrintSettings.FooterTemplate = Resources["PageFooterTempalte"] as DataTemplate;
+sfDataGrid.PrintSettings.FooterTemplate = Resources["PageFooterTemplate"] as DataTemplate;
 sfDataGrid.Print();
 {% endhighlight %}
 {% endtabs %}
 
 ![Current date time in print preview window for WinUI DataGrid](Printing-images/Printing-image4.png)
 
-## Printing using UIElement Rendering
+## Printing with styles
 
 When you want to print the SfDataGrid with same appearance settings as in the display (Background and Foreground) or with custom appearance by writing styles.
 You can print SfDataGrid as it displayed in View by setting [PrintSettings.CanPrintStyles](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_CanPrintStyles) to true.
@@ -208,9 +211,9 @@ sfDataGrid.Print();
 
 Printing operations can be customized by overriding [DataGridPrintManager](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html) and its available methods.
 
-### Setting different Row Height 
+### Setting different row height
 
-SfDataGrid allows you to set different Row height for specific rows while printing. You can achieve this by overriding the [GetRowHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintManager_GetRowHeight_System_Object_System_Int32_Syncfusion_UI_Xaml_DataGrid_RowType_) method in [DataGridPrintManager](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html) class.
+SfDataGrid allows you to set different row height for specific rows while printing. You can achieve this by overriding the [GetRowHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintManager_GetRowHeight_System_Object_System_Int32_Syncfusion_UI_Xaml_DataGrid_RowType_) method in [DataGridPrintManager](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -223,10 +226,8 @@ public class CustomPrintManager : DataGridPrintManager
 
     protected override double GetRowHeight(object record, int rowIndex, RowType type)
     {
-        if (rowIndex != -1 && !(record is Group))
-
-            if (rowIndex % 2 != 0)
-                return 80.0;
+        if (rowIndex != -1 && !(record is Group) && rowIndex % 2 != 0)
+            return 80.0;
         return base.GetRowHeight(record, rowIndex, type);
     }
 }
@@ -512,7 +513,7 @@ sfDataGrid.PrintSettings.PrintManager.Print();
 
 N> [GetColumnWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintManager_GetColumnWidth_System_String_), [GetColumnTextWrapping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintManager_GetColumnTextWrapping_System_String_) and [GetColumnTextAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintManager_GetColumnTextAlignment_System_String_) methods are also used for column customization while printing.
 
-### Printing Selected rows
+### Printing selected rows
 
 Selected rows can be printed by overriding [GetSourceListForPrinting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintManager_GetSourceListForPrinting) method in [DataGridPrintManager](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html) class.
 
@@ -559,7 +560,7 @@ sfDataGrid.PrintSettings.PrintManager.Print();
 
 ![Printing Selected rows in WinUI DataGrid](Printing-images/Printing-image12.png)
 
-### Printing Specific pages
+### Printing specific pages
 
 The specific pages can be printed by customizing the print preview window to have options for custom page range through events and customizing the default print manager.
 
@@ -568,7 +569,7 @@ The specific pages can be printed by customizing the print preview window to hav
 You can print the range of pages by adding the [CustomPageRanges](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.printing.standardprinttaskoptions.custompageranges?view=winrt-19041) option to the [PrintTaskOptions.DisplayedOptions](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.printing.printtaskoptions.displayedoptions?view=winrt-19041) property and also add all other available options in the [StandardPrintTaskOptions](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.printing.standardprinttaskoptions?view=winrt-19041) and do the customization to support all other options in [SfDataGrid.PrintTaskRequested](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_PrintTaskRequested) event.
 You have to call the [PrintTaskRequest.CreatePrintTask](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.printing.printtaskrequest.createprinttask?view=winrt-19041) method using [DataGridPrintTaskRequested.Request](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintTaskRequestedEventArgs.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintTaskRequestedEventArgs_Request) property. While performing the custom operation in this event, you have to set the [DataGridPrintTaskRequestedEventArgs.PrintDocumentSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintTaskRequestedEventArgs.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintTaskRequestedEventArgs_PrintDocumentSource) property in [PrintTaskSourceRequestedArgs.SetSource](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.printing.printtasksourcerequestedargs.setsource?view=winrt-19041) which is the event args for event handler available in `PrintTaskRequest.CreatePrintTask` method.
 
-In the below code, to add the page range options in print dialog.
+In the below code, print task has been created with changing needed `PageRangeOptions`.
 
 {% tabs %}
 {% highlight c# %}
