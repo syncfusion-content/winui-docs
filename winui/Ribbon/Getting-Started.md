@@ -383,54 +383,71 @@ You can host other controls such as checkbox, radio button and combobox etc., to
 {% highlight xaml %}
 <ribbon:SfRibbon x:Name="sfRibbon">
     <ribbon:SfRibbon.Tabs>
-        <ribbon:RibbonTab Header="View">
-            <ribbon:RibbonGroup Header="Views">
-                <ribbon:RibbonItemHost>
+        <ribbon:RibbonTab Header="Home">
+            <ribbon:RibbonGroup Header="Font">
+                <ribbon:RibbonItemHost Margin="0,12,0,0">
                     <ribbon:RibbonItemHost.ItemTemplate>
-                        <ComboBox Margin="0,0,0,2"
-                                  PlaceholderText="Select the item" />
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox x:Name="FontComboBox"
+                                      Width="120"
+                                      PlaceholderText="Select Font"
+                                      PlaceholderForeground="#A2A2A2">
+                                <ComboBoxItem Content="Calibri"
+                                              IsSelected="True" />
+                                <ComboBoxItem Content="Arial" />
+                                <ComboBoxItem Content="Segoe UI" />
+                            </ComboBox>
+                            <ComboBox Margin="3,0"
+                                      x:Name="FontSizeComboBox"
+                                      PlaceholderText="Select Font Size"
+                                      PlaceholderForeground="#A2A2A2">
+                                <ComboBoxItem Content="11"
+                                              IsSelected="True" />
+                                <ComboBoxItem Content="12" />
+                            </ComboBox>
+                        </StackPanel>
                     </ribbon:RibbonItemHost.ItemTemplate>
                 </ribbon:RibbonItemHost>
-                <ribbon:RibbonItemHost>
+                <ribbon:RibbonItemHost Margin="0,12,0,0">
                     <ribbon:RibbonItemHost.ItemTemplate>
-                        <TextBox PlaceholderText="Enter Text" />
-                    </ribbon:RibbonItemHost.ItemTemplate>
-                </ribbon:RibbonItemHost>
-                <ribbon:RibbonItemHost>
-                    <ribbon:RibbonItemHost.ItemTemplate>
-                        <CheckBox Content="Ruler"
-                                  IsChecked="true" />
+                        <StackPanel Orientation="Horizontal">
+                            <ToggleButton x:Name="Bold"
+                                          Background="{ThemeResource SystemChromeLowColor}">
+                                <ToggleButton.Content>
+                                    <SymbolIcon Symbol="Bold" />
+                                </ToggleButton.Content>
+                            </ToggleButton>
+                            <ToggleButton x:Name="Italic"
+                                          Background="{ThemeResource SystemChromeLowColor}">
+                                <ToggleButton.Content>
+                                    <SymbolIcon Symbol="Italic" />
+                                </ToggleButton.Content>
+                            </ToggleButton>
+                            <ribbon:RibbonSplitButton x:Name="underlineButton"
+                                                      SizeMode="Small"
+                                                      Icon="Underline"
+                                                      Content="Underline">
+                                <ribbon:RibbonSplitButton.Flyout>
+                                    <MenuFlyout>
+                                        <MenuFlyoutItem Text="Underline" />
+                                        <MenuFlyoutItem Text="Double underline" />
+                                        <MenuFlyoutItem Text="Thick underline" />
+                                        <MenuFlyoutItem Text="Dotted underline" />
+                                    </MenuFlyout>
+                                </ribbon:RibbonSplitButton.Flyout>
+                            </ribbon:RibbonSplitButton>
+                            <ribbon:RibbonButton x:Name="fontSizeButton"
+                                                 Icon="FontSize"
+                                                 SizeMode="Small"
+                                                 Content="FontSize" />
+                        </StackPanel>
                     </ribbon:RibbonItemHost.ItemTemplate>
                 </ribbon:RibbonItemHost>
             </ribbon:RibbonGroup>
         </ribbon:RibbonTab>
     </ribbon:SfRibbon.Tabs>
 </ribbon:SfRibbon>
-{% endhighlight %}   
-{% highlight c# %}
-SfRibbon sfRibbon = new SfRibbon();
-RibbonTab viewTab = new RibbonTab() { Header = "View" };
-RibbonGroup viewsGroup = new RibbonGroup() { Header = "Views" };
 
-ComboBox comboBox = new ComboBox() { PlaceholderText = "Select the item" , Margin= new Thickness() { Bottom = 2} };
-TextBox textBox = new TextBox() { PlaceholderText = "Enter Text" };
-CheckBox rulerCheckBox = new CheckBox() { IsChecked = true, Content = "Ruler" };           
-
-RibbonItemHost customItem1 = new RibbonItemHost();
-customItem1.ItemTemplate = comboBox;
-
-RibbonItemHost customItem2 = new RibbonItemHost();
-customItem2.ItemTemplate = textBox;
-
-RibbonItemHost customItem3 = new RibbonItemHost();
-customItem3.ItemTemplate = rulerCheckBox;
-
-viewsGroup.Items.Add(customItem1);
-viewsGroup.Items.Add(customItem2);
-viewsGroup.Items.Add(customItem3);
-viewTab.Items.Add(viewsGroup);
-sfRibbon.Tabs.Add(viewTab);
-this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
@@ -521,11 +538,11 @@ The [RibbonBackstage](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ri
 {% endhighlight %}
 {% endtabs %}
 
-![Add RibbonBackstage to the ribbon](Getting-Started-images/Getting-Started-image10.png)
+![Add RibbonBackstage to the ribbon](Getting-Started-images/Getting-Started-image10.gif)
 
 ## Add BackstageView to the ribbon backstage ##
 
-You can host [BackstageView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageView.html) inside the ribbon backstage and use it to manage additional commands through a separate backstage view in the ribbon.
+You can host [BackstageView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageView.html) inside the ribbon backstage and use it to manage the settings and options for your application in a separate backstage view.
 
 {% tabs %}
 {% highlight xaml %}
@@ -549,7 +566,7 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %} 
 {% endtabs %}
 
-![Add BackstageView inside the ribbon backstage](Getting-Started-images/Getting-Started-image7.png)
+![Add BackstageView inside the ribbon backstage](Getting-Started-images/Getting-Started-image7.gif)
 
 ## Add Backstage items to the BackStageView ##
 
