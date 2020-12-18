@@ -15,15 +15,15 @@ This section explains how to show ContextFlyout and using built-in commands in t
 
 The TreeView provides an entirely customizable context flyout to expose the functionality on user interface. You can create context flyout for nodes in an efficient manner.
 
-You can set context flyout for the nodes by using `SfTreeView.ItemContextFlyout` property.
+You can set context flyout for the nodes by using [SfTreeView.ItemContextFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemContextFlyout) property.
 
 ## Built-in Commands
 
 The TreeView provides support for the following built-in commands
 
-* `Edit` - Command to start the editing of the node.
-* `DeleteNode` - Command to delete the node.
-* `DeleteSelectedNodes` - Command to delete all the selected nodes.
+* [Edit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewCommands.html#Syncfusion_UI_Xaml_TreeView_TreeViewCommands_Edit) - Command to start the editing of the node.
+* [DeleteNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewCommands.html#Syncfusion_UI_Xaml_TreeView_TreeViewCommands_DeleteNode) - Command to delete the node.
+* [DeleteSelectedNodes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewCommands.html#Syncfusion_UI_Xaml_TreeView_TreeViewCommands_DeleteSelectedNodes) - Command to delete all the selected nodes.
 
 {% tabs %}
 {% highlight xaml %}
@@ -104,7 +104,7 @@ public class FileManagerViewModel
 
 ### Conditionally displaying context flyout on right click
 
-You can cancel showing of `ItemContextFlyout` for certain nodes using custom logic within this event by setting `ItemContextFlyoutOpeningEventArgs.Cancel` as true.
+You can cancel showing of [ItemContextFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemContextFlyout) for certain nodes using custom logic within this event by setting `ItemContextFlyoutOpeningEventArgs.Cancel` as `true`.
 
 {% tabs %}
 {% highlight c# %}
