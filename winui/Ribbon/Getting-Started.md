@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started with WinUI Ribbon (SfRibbon)
 
-This section explains the steps required to add the Ribbon control and its elements such as ribbon tabs, built in ribbon items, custom ribbon items, right pane, backstage and its items. This section covers only basic features needed to get started with Syncfusion ribbon control.
+This section explains the steps required to add the Ribbon control and its elements such as ribbon tabs, ribbon groups, built in ribbon items, custom ribbon items, right pane, backstage and its items. This section covers the basic features needed to get started with Syncfusion ribbon control.
 
 ## Creating an application with WinUI Ribbon
 
@@ -19,7 +19,7 @@ This section explains the steps required to add the Ribbon control and its eleme
 
 3.	Import the control namespace `Syncfusion.UI.Xaml.Ribbon` in XAML or C# code.
 
-4.	Initialize the SfRibbon control. 
+4.	Initialize the [SfRibbon]((https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html)) control. 
 
 
 {% tabs %}
@@ -47,9 +47,6 @@ This section explains the steps required to add the Ribbon control and its eleme
 using Syncfusion.UI.Xaml.Ribbon;
 namespace GettingStarted
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class MainPage : Page
     {
         public MainPage()
@@ -65,7 +62,7 @@ namespace GettingStarted
 
 ## Add RibbonTab to the ribbon ##
 
-Any number of tab elements can be added to the ribbon using the `Tabs` property, and you can use the `Header` property to name the tab.
+We can catagrize the command using the [RibbonTab](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonTab.html). Any number of tab elements can be added to the ribbon using the [Tabs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html#Syncfusion_UI_Xaml_Ribbon_SfRibbon_Tabs) property, and you can use the `Header` property to name the tab.
 
 {% tabs %}
 {% highlight xaml %}
@@ -101,7 +98,7 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ## Add RibbonGroup ##
 
-Any number of `RibbonGroup` can be added to the ribbon, and the group allows you to add built-in ribbon items such as `RibbonButton`, `RibbonDropDownButton` and `RibbonSplitButton`, as well as other controls such as checkbox, combobox and radio button etc., can also be added.
+We can group the commands in the ribbon tab using a [RibbonGroup](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGroup.html) and it allows you to add built-in ribbon items such as [RibbonButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonButton.html), [RibbonDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonDropDownButton.html) and [RibbonSplitButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonSplitButton.html), as well as other controls such as checkbox, combobox and radio button etc., can also be added.
 
 {% tabs %}
 {% highlight xaml %}
@@ -158,35 +155,50 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ## Add RibbonButton ##
 
-The `RibbonButton` represents a normal button and can be added to a ribbon group with different sizes using the `SizeMode` property.You can use the `Content` and `Icon` properties to set the label and icon to the button.
+The [RibbonButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonButton.html) represents a normal button and can be added to a ribbon group with different sizes using the `SizeMode` property.You can use the `Content` and `Icon` properties to set the label and icon to the button.
 
 {% tabs %}
 {% highlight xaml %}
-<Grid x:Name="rootGrid">
-    <ribbon:SfRibbon x:Name="sfRibbon">
-        <ribbon:SfRibbon.Tabs>
-            <ribbon:RibbonTab Header="Home">
-                <ribbon:RibbonGroup Header="Clipboard">
-                    <ribbon:RibbonButton Icon="Cut"
-                                        Content="Cut"
-                                        SizeMode="Normal" />
-                    <ribbon:RibbonButton Icon="Copy"
-                                    Content="Copy"
-                                    SizeMode="Normal" />
-                    <ribbon:RibbonButton Content="Format Painter"
-                                    SizeMode="Normal">
-                        <ribbon:RibbonButton.Icon>
-                            <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xF0E3;" />
-                        </ribbon:RibbonButton.Icon>
-                    </ribbon:RibbonButton>
-                </ribbon:RibbonGroup>
-            </ribbon:RibbonTab>
-            <ribbon:RibbonTab Header="Insert" />
-            <ribbon:RibbonTab Header="View" />
-            <ribbon:RibbonTab Header="Layout" />
-            </ribbon:SfRibbon.Tabs>
-    </ribbon:SfRibbon>
-</Grid>
+<ribbon:SfRibbon x:Name="sfRibbon">
+    <ribbon:SfRibbon.Tabs>
+        <ribbon:RibbonTab Header="Home">
+            <ribbon:RibbonGroup Header="Clipboard">
+                <ribbon:RibbonButton Icon="Paste"
+                                          Content="Paste"
+                                          SizeMode="Large" />
+                <ribbon:RibbonButton Icon="Cut"
+                                     Content="Cut"
+                                     SizeMode="Normal" />
+                <ribbon:RibbonButton Icon="Copy"
+                                     Content="Copy"
+                                     SizeMode="Normal" />
+                <ribbon:RibbonButton Content="Format Painter"
+                                     SizeMode="Normal">
+                    <ribbon:RibbonButton.Icon>
+                        <FontIcon FontFamily="Segoe MDL2 Assets"
+                                  Glyph="&#xF0E3;" />
+                    </ribbon:RibbonButton.Icon>
+                </ribbon:RibbonButton>
+            </ribbon:RibbonGroup>
+            <ribbon:RibbonGroup Header="Paragraph">
+                <ribbon:RibbonButton SizeMode="Small">
+                    <ribbon:RibbonButton.Icon>
+                        <BitmapIcon UriSource="ms-appx:///Justify.png" />
+                    </ribbon:RibbonButton.Icon>
+                </ribbon:RibbonButton> 
+                <ribbon:RibbonButton SizeMode="Small"
+                                     Icon="AlignCenter" />
+                <ribbon:RibbonButton SizeMode="Small"
+                                     Icon="AlignRight">
+                    <SymbolIcon Symbol="AlignRight" />
+                </ribbon:RibbonButton> 
+            </ribbon:RibbonGroup>                   
+        </ribbon:RibbonTab>
+        <ribbon:RibbonTab Header="Insert" />
+        <ribbon:RibbonTab Header="View" />
+        <ribbon:RibbonTab Header="Layout" />
+    </ribbon:SfRibbon.Tabs>
+</ribbon:SfRibbon>
 {% endhighlight %}
 {% highlight c# %}
 SfRibbon sfRibbon = new SfRibbon();
@@ -196,23 +208,33 @@ RibbonTab viewTab = new RibbonTab() { Header = "View" };
 RibbonTab layoutTab = new RibbonTab() { Header = "Layout" };
 
 RibbonGroup clipboardGroup = new RibbonGroup() { Header = "Clipboard" };
+RibbonGroup paragraphGroup = new RibbonGroup() { Header = "Paragraph" };
 
+RibbonButton pasteButton = new RibbonButton() { Content = "Paste", SizeMode = SizeMode.Large, Icon = new SymbolIcon(Symbol.Paste) };
 RibbonButton cutButton = new RibbonButton() { Content = "Cut", SizeMode = SizeMode.Normal, Icon = new SymbolIcon(Symbol.Cut) };
 RibbonButton copyButton = new RibbonButton() { Content = "Copy", SizeMode = SizeMode.Normal, Icon = new SymbolIcon(Symbol.Copy) };
 RibbonButton formatPainterButton = new RibbonButton() { Content = "FormatPainter", SizeMode = SizeMode.Normal, Icon = new FontIcon() { Glyph = "\xF0E3", FontFamily = new FontFamily("Segoe MDL2 Assets") } };
 
+RibbonButton justifyButton = new RibbonButton() { SizeMode = SizeMode.Small, Icon = new BitmapIcon() { UriSource = new Uri(@"ms-appx:///Justify.png", UriKind.RelativeOrAbsolute) } };
+RibbonButton alignCenterButton = new RibbonButton() { SizeMode = SizeMode.Small, Icon = new SymbolIcon(Symbol.AlignCenter)  };
+RibbonButton alignRightButton = new RibbonButton() { SizeMode = SizeMode.Small, Icon = new SymbolIcon(Symbol.AlignRight) };
+
+clipboardGroup.Items.Add(pasteButton);
 clipboardGroup.Items.Add(cutButton);
 clipboardGroup.Items.Add(copyButton);
 clipboardGroup.Items.Add(formatPainterButton);
+paragraphGroup.Items.Add(justifyButton);
+paragraphGroup.Items.Add(alignCenterButton);
+paragraphGroup.Items.Add(alignRightButton);
 
 homeTab.Items.Add(clipboardGroup);
+homeTab.Items.Add(paragraphGroup);
 
 sfRibbon.Tabs.Add(homeTab);
 sfRibbon.Tabs.Add(insertTab);
 sfRibbon.Tabs.Add(viewTab);
 sfRibbon.Tabs.Add(layoutTab);
 this.rootGrid.Children.Add(sfRibbon);
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -220,7 +242,7 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ## Add RibbonDropDown ##
 
-The `RibbonDropDownButton` represents a normal button that displays the drop-down menu items when clicked. It allows you to arrange a button with different sizes within a ribbon group using the `SizeMode` property. You can use the `Content` and `Icon` properties to set the label and icon to the button, and you can populate the drop-down menu items using using the `Flyout` control in the button.
+The [RibbonDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonDropDownButton.html) represents a dropdown button that displays the drop-down menu items when clicked. It allows you to arrange a button with different sizes within a ribbon group using the `SizeMode` property. You can use the `Content` and `Icon` properties to set the label and icon to the button, and you can populate the drop-down menu items using using the `Flyout` control in the button.
 
 {% tabs %}
 {% highlight xaml %}
@@ -285,7 +307,7 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ## Add RibbonSplitButton ##
 
-The `RibbonSplitButton` represents a combined control that has a primary button that responds to a `Click` event, and a secondary button acts like a drop-down menu with a list of values. It allows you to arrange a button with different sizes within a ribbon group using the `SizeMode` property. You can use the `Content` and `Icon` properties to set the label and icon to the button, and you can populate the drop-down menu items using the `Flyout` control in the button.
+The [RibbonSplitButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonSplitButton.html) represents a combined control that has a primary button that responds to a `Click` event, and a secondary button acts like a drop-down menu with a list of values. It allows you to arrange a button with different sizes within a ribbon group using the `SizeMode` property. You can use the `Content` and `Icon` properties to set the label and icon to the button, and you can populate the drop-down menu items using the `Flyout` control in the button.
 
 {% tabs %}
 {% highlight xaml %}
@@ -355,55 +377,53 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ## Host a custom ribbon items to the group ##
 
-You can host other controls such as checkbox, radio button and combobox etc., to a ribbon group using the `ItemTemplate` property of `RibbonItemHost`.
+You can host other controls such as checkbox, radio button and combobox etc., to a ribbon group using the `ItemTemplate` property of [RibbonItemHost](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonItemHost.html).
 
 {% tabs %}
 {% highlight xaml %}
-<Grid x:Name="rootGrid">
-     <ribbon:SfRibbon x:Name="sfRibbon">
-            <ribbon:SfRibbon.Tabs>
-                <ribbon:RibbonTab Header="View">
-                    <ribbon:RibbonGroup Header="Views">
-                        <ribbon:RibbonItemHost>
-                            <ribbon:RibbonItemHost.ItemTemplate>
-                                <CheckBox Content="Ruler"
-                                          IsChecked="true" />
-                            </ribbon:RibbonItemHost.ItemTemplate>
-                        </ribbon:RibbonItemHost>
-                        <ribbon:RibbonItemHost>
-                            <ribbon:RibbonItemHost.ItemTemplate>
-                                <CheckBox Content="Gridlines"
-                                          IsChecked="true" />
-                            </ribbon:RibbonItemHost.ItemTemplate>
-                        </ribbon:RibbonItemHost>
-                        <ribbon:RibbonItemHost>
-                            <ribbon:RibbonItemHost.ItemTemplate>
-                                <CheckBox Content="Navigation Pane" />
-                            </ribbon:RibbonItemHost.ItemTemplate>
-                        </ribbon:RibbonItemHost>
-                    </ribbon:RibbonGroup>
-                </ribbon:RibbonTab>
-            </ribbon:SfRibbon.Tabs>
-        </ribbon:SfRibbon>
-</Grid>
+<ribbon:SfRibbon x:Name="sfRibbon">
+    <ribbon:SfRibbon.Tabs>
+        <ribbon:RibbonTab Header="View">
+            <ribbon:RibbonGroup Header="Views">
+                <ribbon:RibbonItemHost>
+                    <ribbon:RibbonItemHost.ItemTemplate>
+                        <ComboBox Margin="0,0,0,2"
+                                  PlaceholderText="Select the item" />
+                    </ribbon:RibbonItemHost.ItemTemplate>
+                </ribbon:RibbonItemHost>
+                <ribbon:RibbonItemHost>
+                    <ribbon:RibbonItemHost.ItemTemplate>
+                        <TextBox PlaceholderText="Enter Text" />
+                    </ribbon:RibbonItemHost.ItemTemplate>
+                </ribbon:RibbonItemHost>
+                <ribbon:RibbonItemHost>
+                    <ribbon:RibbonItemHost.ItemTemplate>
+                        <CheckBox Content="Ruler"
+                                  IsChecked="true" />
+                    </ribbon:RibbonItemHost.ItemTemplate>
+                </ribbon:RibbonItemHost>
+            </ribbon:RibbonGroup>
+        </ribbon:RibbonTab>
+    </ribbon:SfRibbon.Tabs>
+</ribbon:SfRibbon>
 {% endhighlight %}   
 {% highlight c# %}
 SfRibbon sfRibbon = new SfRibbon();
 RibbonTab viewTab = new RibbonTab() { Header = "View" };
 RibbonGroup viewsGroup = new RibbonGroup() { Header = "Views" };
 
-CheckBox rulerCheckBox = new CheckBox() { IsChecked = true, Content = "Ruler" };
-CheckBox gridLinesCheckBox = new CheckBox() { IsChecked = true, Content = "Gridlines" };
-CheckBox navPaneCheckBox = new CheckBox() { Content = "Navigation Pane" };
+ComboBox comboBox = new ComboBox() { PlaceholderText = "Select the item" , Margin= new Thickness() { Bottom = 2} };
+TextBox textBox = new TextBox() { PlaceholderText = "Enter Text" };
+CheckBox rulerCheckBox = new CheckBox() { IsChecked = true, Content = "Ruler" };           
 
 RibbonItemHost customItem1 = new RibbonItemHost();
-customItem1.ItemTemplate = rulerCheckBox;
+customItem1.ItemTemplate = comboBox;
 
 RibbonItemHost customItem2 = new RibbonItemHost();
-customItem2.ItemTemplate = gridLinesCheckBox;
+customItem2.ItemTemplate = textBox;
 
 RibbonItemHost customItem3 = new RibbonItemHost();
-customItem3.ItemTemplate = navPaneCheckBox;
+customItem3.ItemTemplate = rulerCheckBox;
 
 viewsGroup.Items.Add(customItem1);
 viewsGroup.Items.Add(customItem2);
@@ -411,7 +431,6 @@ viewsGroup.Items.Add(customItem3);
 viewTab.Items.Add(viewsGroup);
 sfRibbon.Tabs.Add(viewTab);
 this.rootGrid.Children.Add(sfRibbon);
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -419,7 +438,94 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ## Add RibbonBackstage to the ribbon ##
 
-The Ribbon backstage provides a separate view to the ribbon and can be added by using the `Backstage` property of ribbon control. You can view the Backstage by clicking the application menu button, which is placed before the ribbon tabs. You can also host `BackstageView` in the ribbon backstage.
+The [RibbonBackstage](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonBackstage.html) provides a separate view to the ribbon and can be added by using the `Backstage` property of ribbon control. You can view the ribbon backstage by clicking the backstage menu button named as `File` by default, which is placed before the ribbon tabs.
+
+{% tabs %}
+{% highlight xaml %}
+<ribbon:SfRibbon x:Name="sfRibbon">
+    <ribbon:SfRibbon.Backstage>
+        <ribbon:RibbonBackstage>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0"
+                      Padding="0,0,0,1"
+                      VerticalAlignment="Top"
+                      BorderBrush="LightGray"
+                      BorderThickness="0,0,0,1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="481" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Row="0"
+                               Padding="15"
+                               FontSize="24"
+                               FontWeight="SemiBold"
+                               Text="Settings" />
+                    <StackPanel Grid.Row="1"
+                                Margin="15,15,15,0"
+                                BorderBrush="LightGray"
+                                BorderThickness="0,0,0,0">
+                        <TextBlock Padding="0,0,0,5"
+                                   FontSize="16"
+                                   Text="User Information" />
+                        <TextBlock Padding="0,5,0,5"
+                                   FontSize="14"
+                                   Text="Name : John" />
+                        <HyperlinkButton Content="Change photo" />
+                        <HyperlinkButton Content="Sign Out" />
+                        <HyperlinkButton Content="Switch Account" />
+                        <TextBlock Padding="0,5,0,5"
+                                   Text="Theme Mode" />
+                        <RadioButton Content="Light" />
+                        <RadioButton Content="Dark" />
+                        <RadioButton Content="Use system setting" />
+                    </StackPanel>
+                    <StackPanel Grid.Row="1"
+                                Grid.Column="1"
+                                Padding="15,15,15,0"
+                                BorderBrush="LightGray"
+                                BorderThickness="1,0,0,0">
+                        <TextBlock Padding="0,0,0,5"
+                                   FontSize="16"
+                                   Text="Product Information" />
+                        <HyperlinkButton Content="About product" />
+                        <HyperlinkButton Content="Help" />
+                        <HyperlinkButton Content="Updates" />
+                    </StackPanel>
+                </Grid>
+                <StackPanel Grid.Row="1"
+                            Grid.ColumnSpan="2"
+                            Padding="120,0,5,5"
+                            HorizontalAlignment="Right"
+                            BorderBrush="LightGray"
+                            BorderThickness="0,0,0,0"
+                            Orientation="Horizontal">
+                    <Button Margin="5"
+                            Content="Options"
+                            CornerRadius="0" />
+                    <Button Margin="5"
+                            Content="Exit Backstage"
+                            CornerRadius="0" />
+                </StackPanel>
+            </Grid>
+        </ribbon:RibbonBackstage>
+    </ribbon:SfRibbon.Backstage>
+</ribbon:SfRibbon>
+{% endhighlight %}
+{% endtabs %}
+
+![Add RibbonBackstage to the ribbon](Getting-Started-images/Getting-Started-image10.png)
+
+## Add BackstageView to the ribbon backstage ##
+
+You can host [BackstageView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageView.html) inside the ribbon backstage and use it to manage additional commands through a separate backstage view in the ribbon.
 
 {% tabs %}
 {% highlight xaml %}
@@ -432,8 +538,7 @@ The Ribbon backstage provides a separate view to the ribbon and can be added by 
         </ribbon:SfRibbon.Backstage>
     </ribbon:SfRibbon>
 </Grid>
-
-{% endhighlight %}   
+{% endhighlight %} 
 {% highlight c# %}
 SfRibbon sfRibbon = new SfRibbon();
 RibbonBackstage ribbonBackstage = new RibbonBackstage();
@@ -441,14 +546,14 @@ BackstageView backstageView = new BackstageView();
 ribbonBackstage.Content = backstageView;
 sfRibbon.Backstage = ribbonBackstage;
 this.rootGrid.Children.Add(sfRibbon);
-{% endhighlight %}
+{% endhighlight %} 
 {% endtabs %}
 
-![Add Backstage to the ribbon](Getting-Started-images/Getting-Started-image7.png)
+![Add BackstageView inside the ribbon backstage](Getting-Started-images/Getting-Started-image7.png)
 
 ## Add Backstage items to the BackStageView ##
 
-Any number of backstage items such as `BackstageViewTabItem`, `BackstageViewItemSeparator` and `BackstageViewButtonItem` can be added to the top of the backstage view using the `Items` property. You can also add backstage items to the bottom of the backstage view using the `FooterItems` property.
+The backstage items such as [BackstageViewTabItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageViewTabItem.html), [BackstageViewItemSeparator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageViewItemSeparator.html) and [BackstageViewButtonItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageViewButtonItem.html) can be added to the top of the backstage view using the [Items](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageView.html#Syncfusion_UI_Xaml_Ribbon_BackstageView_Items) property. You can also add backstage items to the bottom of the backstage view using the [FooterItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageView.html#Syncfusion_UI_Xaml_Ribbon_BackstageView_FooterItems) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -527,34 +632,18 @@ For example below, we added a stack panel with two ribbon buttons inside the rig
 {% tabs %}
 {% highlight xaml %}
 <Grid x:Name="rootGrid">
-    <syncfusion:SfRibbon x:Name="sfRibbon">
-        <ribbon:SfRibbon.Tabs>
-            <ribbon:RibbonTab Header="Home" />
-            <ribbon:RibbonTab Header="Insert" />
-            <ribbon:RibbonTab Header="View" />
-            <ribbon:RibbonTab Header="Layout" />
-        </ribbon:SfRibbon.Tabs>
-        <syncfusion:SfRibbon.RightPane>
+    <ribbon:SfRibbon x:Name="sfRibbon">       
+        <ribbon:SfRibbon.RightPane>
             <StackPanel Orientation="Horizontal">
-                <syncfusion:RibbonButton Icon="Undo" Content="Undo" />
-                <syncfusion:RibbonButton Icon="Redo" Content="Redo" />
+                <ribbon:RibbonButton Icon="Undo" Content="Undo" />
+                <ribbon:RibbonButton Icon="Redo" Content="Redo" />
             </StackPanel>
-        </syncfusion:SfRibbon.RightPane>
-    </syncfusion:SfRibbon>
+        </ribbon:SfRibbon.RightPane>
+    </ribbon:SfRibbon>
 </Grid>
 {% endhighlight %}   
 {% highlight c# %}
 SfRibbon sfRibbon = new SfRibbon();
-
-RibbonTab homeTab = new RibbonTab() { Header = "Home" };
-RibbonTab insertTab = new RibbonTab() { Header = "Insert" };
-RibbonTab viewTab = new RibbonTab() { Header = "View" };
-RibbonTab layoutTab = new RibbonTab() { Header = "Layout" };
-
-sfRibbon.Tabs.Add(homeTab);
-sfRibbon.Tabs.Add(insertTab);
-sfRibbon.Tabs.Add(viewTab);
-sfRibbon.Tabs.Add(layoutTab);
 
 StackPanel customPanel = new StackPanel() { Orientation = Orientation.Horizontal };
 RibbonButton undoButton = new RibbonButton() { Content = "Undo", Icon = new SymbolIcon(Symbol.Undo) };
