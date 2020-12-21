@@ -46,4 +46,4 @@ The offline samples can also be explored by clicking the `Explore Demo Source` b
 
 ## Download demos from online (Clone from github repository)
 
-You can explore Syncfusion WinUI controls using [GitHub WinUI demos](https://github.com/syncfusion/winui-demos) where all winui demos are configured using `NuGet` to run without installing Syncfusion WinUI Studio.
+You can explore Syncfusion WinUI controls using [GitHub WinUI demos](https://github.com/syncfusion/winui-demos) where all WinUI demos are configured using `NuGet` to run without installing Syncfusion WinUI Studio.
