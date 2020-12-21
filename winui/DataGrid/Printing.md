@@ -380,14 +380,13 @@ sfDataGrid.PrintSettings.PrintManager.Print();
 {% endhighlight %}
 {% endtabs %}
 
-N> 
 <table>
 <tr>
 <th>
-**Appearance to be customized**
+Appearance to be customized
 </th>
 <th>
-**Method**
+Method
 </th>
 </tr>
 <tr>
@@ -395,7 +394,7 @@ N>
 Header Cell
 </td>
 <td>
-[GetPrintHeaderCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintManager_GetPrintHeaderCell_Syncfusion_UI_Xaml_DataGrid_GridColumn_)
+{{'[GetPrintHeaderCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintManager_GetPrintHeaderCell_Syncfusion_UI_Xaml_DataGrid_GridColumn_)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -403,7 +402,7 @@ Header Cell
 Normal Cells
 </td>
 <td>
-[GetPrintGridCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintManager_GetPrintGridCell_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_)
+{{'[GetPrintGridCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintManager_GetPrintGridCell_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -411,7 +410,7 @@ Normal Cells
 Caption summary cells
 </td>
 <td>
-[GetPrintCaptionSummaryCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintManager_GetPrintCaptionSummaryCell_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_)
+{{'[GetPrintCaptionSummaryCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintManager_GetPrintCaptionSummaryCell_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -419,7 +418,7 @@ Caption summary cells
 Group summary cells
 </td>
 <td>
-[GetPrintGroupSummaryCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintManager_GetPrintGroupSummaryCell_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_)
+{{'[GetPrintGroupSummaryCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintManager_GetPrintGroupSummaryCell_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -427,7 +426,7 @@ Group summary cells
 Table summary cells
 </td>
 <td>
-[GetPrintTableSummaryCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintManager_GetPrintTableSummaryCell_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_)
+{{'[GetPrintTableSummaryCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintManager_GetPrintTableSummaryCell_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -435,7 +434,7 @@ Table summary cells
 Unbound row cells
 </td>
 <td>
-[GetPrintUnboundRowCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintManager_GetPrintUnboundRowCell_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_)
+{{'[GetPrintUnboundRowCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintManager_GetPrintUnboundRowCell_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_)'| markdownify }}
 </td>
 </tr>
 </table>
