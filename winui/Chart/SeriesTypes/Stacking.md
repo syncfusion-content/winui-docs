@@ -102,7 +102,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedLine chart type in WinUI](Series_images/Stackedline.png)
+![StackedLine chart type in WinUI](Series_images/Stackingline.png)
 
 ## Stacked Line 100
 
@@ -190,7 +190,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedLine100 chart type in WinUI](Series_images/StackedLine100.png)
+![StackedLine100 chart type in WinUI](Series_images/StackingLine100.png)
 
 ## Stacked Column
 
@@ -283,7 +283,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedColumn chart type in WinUI](Series_images/Stackedcolumn.png)
+![StackedColumn chart type in WinUI](Series_images/Stackingcolumn.png)
 
 ## 100% Stacked Column
 
@@ -360,7 +360,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedColumn100 chart type in WinUI](Series_images/Stackedcolumn100.png)
+![StackedColumn100 chart type in WinUI](Series_images/Stackingcolumn100.png)
 
 ## Stacked Bar
 
@@ -453,7 +453,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedBar chart type in WinUI](Series_images/Stackedbar.png)
+![StackedBar chart type in WinUI](Series_images/Stackingbar.png)
 
 
 ## 100% Stacked Bar
@@ -541,7 +541,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedBar100 chart type in WinUI](Series_images/Stackedbar100.png)
+![StackedBar100 chart type in WinUI](Series_images/Stackingbar100.png)
 
 ## Stacked Area
 
@@ -624,7 +624,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedArea chart type in WinUI](Series_images/Stackedarea.png)
+![StackedArea chart type in WinUI](Series_images/Stackingarea.png)
 
 ## 100% Stacked Area
 
@@ -713,7 +713,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedArea100 chart type in WinUI](Series_images/Stackedarea100.png)
+![StackedArea100 chart type in WinUI](Series_images/Stackingarea100.png)
 
 You can draw open curve like Area using this [`IsClosed`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.StackedAreaSeries.html#Syncfusion_UI_Xaml_Charts_StackedAreaSeries_IsClosed) property.
 
@@ -818,4 +818,4 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![IsClosed support for Stacked area series in WinUI Chart](Series_images/Stackedarea_closed.png)
+![IsClosed support for Stacked area series in WinUI Chart](Series_images/Stackingarea_closed.png)
