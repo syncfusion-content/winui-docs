@@ -590,4 +590,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Exploding all the segments of accumlation series in WinUI Chart](Series_images/explodeall.png)
+![Exploding all the segments of accumulation series in WinUI Chart](Series_images/explodeall.png)

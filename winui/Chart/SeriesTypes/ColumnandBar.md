@@ -128,7 +128,6 @@ ChartSeriesBase.SetSpacing(series, 0.8);
 SfChart chart = new SfChart();
 
 ColumnSeries series1 = new ColumnSeries()
-
 {
 
     SegmentSpacing = 0.6,
@@ -138,7 +137,6 @@ ColumnSeries series1 = new ColumnSeries()
 chart.Series.Add(series1);
 
 ColumnSeries series2 = new ColumnSeries()
-
 {
 
     SegmentSpacing = 0.6

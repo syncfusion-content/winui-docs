@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Spline and Spline Area Charts| SfChart | Wpf | Syncfusion
-description: This section explains Spline and Spline Area Charts and its properties for customization in WPF Charts (SfChart)
-platform: wpf
+title: Spline and Spline Area Charts| SfChart | WinUI | Syncfusion
+description: This section explains Spline and Spline Area Charts and its properties for customization in WinUI Charts (SfChart)
+platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Spline and Spline Area Charts in WPF Chart (SfChart)
+# Spline and Spline Area Charts in WinUI Chart (SfChart)
 
 ## Spline
 
-[`SplineSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineSeries.html#) resembles line series, but the difference between them is that instead of connecting the data points with line segments, the data points are connected by smooth Bezier curves.
+[`SplineSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineSeries.html#) resembles line series, but the difference between them is that instead of connecting the data points with line segments, the data points are connected by smooth Bezier curves.
 
 {% tabs %}
 
@@ -67,11 +67,11 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Spline chart type in WPF](Series_images/spline.png)
+![Spline chart type in WinUI](Series_images/spline.png)
 
 **Dashed Lines**
 
-[`StrokeDashArray`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_StrokeDashArray) property of the [`SplineSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineSeries.html#) is used to render spline series with dashes.
+[`StrokeDashArray`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_StrokeDashArray) property of the [`SplineSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineSeries.html#) is used to render spline series with dashes.
 
 {% tabs %}
 
@@ -102,7 +102,7 @@ chart.Series.Add(series);
 
 ## Spline Area
 
-[`SplineAreaSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineAreaSeries.html#) connects a series of data points using smooth Bezier line curves, with the underlying areas filled. 
+[`SplineAreaSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineAreaSeries.html#) connects a series of data points using smooth Bezier line curves, with the underlying areas filled. 
 
 {% tabs %}
 
@@ -137,11 +137,11 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![SplineArea chart type in WPF](Series_images/splinearea.png)
+![SplineArea chart type in WinUI](Series_images/splinearea.png)
 
 ## SplineType
 
-[`Spline`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineSeries.html) and [`SplineArea`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineAreaSeries.html) series provide support for various spline type. The spline type of the series can be changed by using its [`SplineType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineTypeProperty) property. The following spline types are supported by Spline and SplineArea series:
+[`Spline`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineSeries.html) and [`SplineArea`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineAreaSeries.html) series provide support for various spline type. The spline type of the series can be changed by using its [`SplineType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineTypeProperty) property. The following spline types are supported by Spline and SplineArea series:
 
        * Natural
        * Monotonic
@@ -150,7 +150,7 @@ chart.Series.Add(series);
 
 **Cardinal**
 
-The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineType) value as [`Cardinal`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineType.html).
+The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineType) value as [`Cardinal`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineType.html).
 
 {% tabs %}
 
@@ -172,11 +172,11 @@ series.SplineType = SplineType.Cardinal;
 
 {% endtabs %}
 
-![Cardinal spline support in WPF Chart](Series_images/cardinal.png)
+![Cardinal spline support in WinUI Chart](Series_images/cardinal.png)
 
 **Monotonic**
 
-The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineTypeProperty) value as Monotonic.
+The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineTypeProperty) value as Monotonic.
 
 {% tabs %}
 
@@ -198,11 +198,11 @@ series.SplineType = SplineType.Monotonic;
 
 {% endtabs %}
 
-![Monotonic spline support in WPF Chart](Series_images/monotonic.png)
+![Monotonic spline support in WinUI Chart](Series_images/monotonic.png)
 
 **Clamped**
 
-The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineTypeProperty) value as Clamped.
+The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineTypeProperty) value as Clamped.
 
 {% tabs %}
 
@@ -224,4 +224,4 @@ series.SplineType = SplineType.Clamped;
 
 {% endtabs %}
 
-![Clamped spline support in WPF Chart](Series_images/clamped.png)
+![Clamped spline support in WinUI Chart](Series_images/clamped.png)
