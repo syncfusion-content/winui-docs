@@ -124,32 +124,33 @@ SfDataGrid provides a way to display additional content at the top (Header) or b
 
 Steps to add page header while printing,
 
-1. Create DataTemplate in Page.Resources.
-
-{% tabs %}
-{% highlight xaml %}
-<Page.Resources>
-    <DataTemplate x:Key="PageHeaderTemplate">
-        <Grid Background="Gray">
-            <TextBlock Text="Syncfusion" FontSize="18" FontWeight="Bold" 
+    1. Create DataTemplate in Page.Resources.
+    {% tabs %}
+    {% highlight xaml %}
+    <Page.Resources>
+        <DataTemplate x:Key="PageHeaderTemplate">
+            <Grid Background="Gray">
+                <TextBlock Text="Syncfusion" FontSize="18" FontWeight="Bold" 
                Foreground="White" HorizontalAlignment="Center"/>
-        </Grid>
-    </DataTemplate>
-</Page.Resources>
-{% endhighlight %}
-{% endtabs %}
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+    {% endhighlight %}
+    {% endtabs %}
 
-2. Set the above defined DataTemplate to [PrintSettings.HeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_HeaderTemplate) and assign value for [PrintSettings.PageHeaderHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_PageHeaderHeight) property also.
 
-{% tabs %}
-{% highlight c# %}
-sfDataGrid.PrintSettings.PageHeaderHeight = 30;
-sfDataGrid.PrintSettings.HeaderTemplate = Resources["PageHeaderTemplate"] as DataTemplate;
-sfDataGrid.Print();
-{% endhighlight %}
-{% endtabs %}
+    2. Set the above defined DataTemplate to [PrintSettings.HeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_HeaderTemplate) and assign value for [PrintSettings.PageHeaderHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_PageHeaderHeight) property also.
+    
+    {% tabs %}
+    {% highlight c# %}
+    sfDataGrid.PrintSettings.PageHeaderHeight = 30;
+    sfDataGrid.PrintSettings.HeaderTemplate = Resources["PageHeaderTemplate"] as DataTemplate;
+    sfDataGrid.Print();
+    {% endhighlight %}
+    {% endtabs %}
 
-3. Now run the application and you can see page header in all the pages. In the same way, you can set [PrintSettings.FooterTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_FooterTemplate) also.
+
+    3. Now run the application and you can see page header in all the pages. In the same way, you can set [PrintSettings.FooterTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_FooterTemplate) also.
 
 ![Customized HeaderTemplate and HeaderHeight in print preview window for WinUI DataGrid](Printing-images/Printing-image3.png)
 
