@@ -35,14 +35,14 @@ The offline samples are available in the following installed location where you 
 
 C:\Users\Public\Documents\Syncfusion\WinUI\{{ site.releaseversion }}\
 
-The offline samples can also be explored by clicking the `Explore Demo Source` button on the Syncfusion WinUI Control Panel and open the required sample in the visual studio.
+The offline samples can also be explored by clicking the `Explore Demo Source` button on the Syncfusion WinUI Control Panel and open the required sample in the Visual Studio.
 
 
 ![Exploring Syncfusion WinUI Samples from Syncfusion WinUI Sample Browser](Guide-to-run-the-samples-images/exploring-syncfusion-winui-samples-from-sb.png)
 
 ## Online Samples
 
-* Download and install `WinUI` demos from [App Center](https://install.appcenter.ms/orgs/syncfusion-demos/apps/wpf-demos/distribution_groups/release).
+* Download and install `WinUI` demos from [App Center](https://install.appcenter.ms/orgs/syncfusion-demos/apps/winui-demos/distribution_groups/release).
 
 ## Download demos from online (Clone from github repository)
 
