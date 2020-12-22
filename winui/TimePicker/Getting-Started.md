@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI TimePicker (SfTimePicker)
 
-This section explains the steps required to add the [TimePicker]() control and its time selection options. This section covers only basic features needed to get started with Syncfusion `TimePicker` control.
+This section explains the steps required to add the [TimePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) control and its time selection options. This section covers only basic features needed to get started with Syncfusion `TimePicker` control.
 
 ## Structure of TimePicker control
 
@@ -71,7 +71,7 @@ namespace GettingStarted
 
 ## Select the time programmatically
 
-You can set or change the selected time programmatically by using [SelectedTime]() property. If you not assign any value for the `SelectedTime` property, `TimePicker` will automatically assign the current system time as `SelectedTime`.
+You can set or change the selected time programmatically by using [SelectedTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_SelectedTime) property. If you not assign any value for the `SelectedTime` property, `TimePicker` will automatically assign the current system time as `SelectedTime`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -110,7 +110,7 @@ SfTimePicker sfTimePicker= new SfTimePicker();
 
 ## Setting null value
 
-If you want to set null value for the `TimePicker`, set the [AllowNullValue]() property as `true` and [SelectedTime]() property as `null`. If `AllowNullValue` property is `false`, then the current system time is updated in `SelectedTime` property and displayed instead of `null`.
+If you want to set null value for the `TimePicker`, set the [AllowNullValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_AllowNullValue) property as `true` and `SelectedTime` property as `null`. If `AllowNullValue` property is `false`, then the current system time is updated in `SelectedTime` property and displayed instead of `null`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -133,7 +133,7 @@ sfTimePicker.AllowNullValue = true;
 
 ## Setting watermark text
 
-You can prompt the user with some information by using the [PlaceHolderText]() property. This will display only on when the `TimePicker` contains the `SelectedTime` property as `null` and `AllowNullValue` property as `true`. If `AllowNullValue` property is `false`, then the current system time is updated in `SelectedTime` property and displayed instead of `PlaceHolderText`.
+You can prompt the user with some information by using the [PlaceHolderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_PlaceHolderText) property. This will display only on when the `TimePicker` contains the `SelectedTime` property as `null` and `AllowNullValue` property as `true`. If `AllowNullValue` property is `false`, then the current system time is updated in `SelectedTime` property and displayed instead of `PlaceHolderText`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -158,7 +158,7 @@ sfTimePicker.AllowNullValue = true;
 
 ## Time changed notification
 
-You will be notified when selected time changed in `TimePicker` by using [TimeChanged]() event. The `TimeChanged` event contains the old and newly selected time in the [OldDateTime](), [NewDateTime]() properties.
+You will be notified when selected time changed in `TimePicker` by using [TimeChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_TimeChanged) event. The `TimeChanged` event contains the old and newly selected time in the [OldDateTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedDateTimeChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedDateTimeChangedEventArgs_OldDateTime) and [NewDateTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedDateTimeChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedDateTimeChangedEventArgs_NewDateTime) properties.
 
 * `OldDateTime` - Gets a time which is previously selected.
 * `NewDateTime` - Gets a time which is currently selected.
@@ -193,7 +193,7 @@ private void SfTimePicker_TimeChanged(DependencyObject d, DependencyPropertyChan
 
 ## Change time display format
 
- You can edit and display the selected time with various formatting like hour, minutes, seconds and meridiem formats by using the [FormatString]() property. The default value of `FormatString` property is `hh:mm tt`.
+ You can edit and display the selected time with various formatting like hour, minutes, seconds and meridiem formats by using the [FormatString](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_FormatString) property. The default value of `FormatString` property is `hh:mm tt`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -214,7 +214,7 @@ sfTimePicker.FormatString= "HH:mm";
 
 ## Restrict time selection
 
-You can restrict the users from selecting a time within the particular range by specifying [MinTime]() and [MaxTime]() properties in `TimePicker` control. The default value of `MinTime` property is `1/1/0001 12:00:00 AM` and `MaxTime` property is `12/31/9999 11:59:59 PM`.
+You can restrict the users from selecting a time within the particular range by specifying [MinTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MinTime) and [MaxTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MaxTime) properties in `TimePicker` control. The default value of `MinTime` property is `1/1/0001 12:00:00 AM` and `MaxTime` property is `12/31/9999 11:59:59 PM`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -235,7 +235,7 @@ sfTimePicker.MaxTime = new DateTimeOffset(new DateTime(2020, 12, 10, 6, 59, 59))
 
 ## Hide submit button(Select time directly from time spinner)
 
-If you want to hide the submit button and select the time directly from the drop down time spinner without clicking the `Ok` button, use the [ShowSubmitButtons]() property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
+If you want to hide the submit button and select the time directly from the drop down time spinner without clicking the `Ok` button, use the [ShowSubmitButtons](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -256,7 +256,7 @@ sfTimePicker.ShowSubmitButtons = false;
 
 ## Edit time using free form editing
 
-If you want to perform the validation after the user completely entering their time inputs, use the [EditMode]() property value as `Normal`. Then the entered time value is validated with the `FormatString` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the selected time will be set as default format value.
+If you want to perform the validation after the user completely entering their time inputs, use the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_EditMode) property value as `Normal`. Then the entered time value is validated with the `FormatString` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the selected time will be set as default format value.
 
 By default, the user entering each input numbers are automatically validated with the `FormatString` formats and assigned the proper value for it, then it will move to next input part of the time format.
 
