@@ -233,12 +233,6 @@ sfTimePicker.MaxTime = new DateTimeOffset(new DateTime(2020, 12, 10, 6, 59, 59))
 
 ![SfTimePicker restrict the time selection with particular range](Getting-Started_images/MinMaxTime.png)
 
-## Disable/block all weekends
-
-
-
-![SfTimePicker blocks some times from selection](Getting-Started_images/blockweekends.png)
-
 ## Hide submit button(Select time directly from time spinner)
 
 If you want to hide the submit button and select the time directly from the drop down time spinner without clicking the `Ok` button, use the [ShowSubmitButtons]() property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
