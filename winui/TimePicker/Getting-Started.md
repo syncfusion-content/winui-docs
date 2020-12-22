@@ -32,12 +32,12 @@ This section explains the steps required to add the [TimePicker]() control and i
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors"
+    xmlns:editors="using:Syncfusion.UI.Xaml.Editors"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid Name="grid">
         <!--Adding TimePicker control -->
-        <syncfusion:SfTimePicker Name="timePicker"/>
+        <editors:SfTimePicker Name="timePicker"/>
     </Grid>
 </Page>
 
@@ -67,9 +67,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker control added in the application](Getting-Started_images/TimePicker_Added.jpg)
-
-N> Download demo application from [GitHub]()
+![SfTimePicker control added in the application](Getting-Started_images/TimePicker_Added.png)
 
 ## Select the time programmatically
 
@@ -78,21 +76,18 @@ You can set or change the selected time programmatically by using [SelectedTime]
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTimePicker SelectedTime=""
-                         Name="sfTimePicker" />
+<editors:SfTimePicker Name="sfTimePicker" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfTimePicker sfTimePicker= new SfTimePicker();
-sfTimePicker.SelectedTime = new DateTimeOffset(new DateTime(2021, 10, 29));
+sfTimePicker.SelectedTime = new DateTimeOffset(new DateTime(2021, 10, 29, 10, 45, 10));
 
 {% endhighlight %}
 {% endtabs %}
 
 ![SfTimePicker displaying the selected time](Getting-Started_images/SelectedTime.png)
-
-N> Download demo application from [GitHub]()
 
 ## Select time interactively
 
@@ -101,7 +96,7 @@ You can change the selected time interactively by enter the time value using key
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTimePicker Name="sfTimePicker" />
+<editors:SfTimePicker Name="sfTimePicker" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -111,9 +106,7 @@ SfTimePicker sfTimePicker= new SfTimePicker();
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker displaying selected value](Getting-Started_images/selectedTime.gif)
-
-N> Download demo application from [GitHub]()
+![SfTimePicker displaying selected value](Getting-Started_images/selectedTimeinteratct.gif)
 
 ## Setting null value
 
@@ -122,9 +115,9 @@ If you want to set null value for the `TimePicker`, set the [AllowNullValue]() p
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTimePicker SelectedTime="{x:Null}"
-                         AllowNullValue="True"
-                         Name="sfTimePicker" />
+<editors:SfTimePicker SelectedTime="{x:Null}"
+                      AllowNullValue="True"
+                      Name="sfTimePicker" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -138,19 +131,17 @@ sfTimePicker.AllowNullValue = true;
 
 ![SfTimePicker displaying the null value](Getting-Started_images/AllowNullValue.png)
 
-N> Download demo application from [GitHub]()
-
-## Setting WaterMark text
+## Setting watermark text
 
 You can prompt the user with some information by using the [PlaceHolderText]() property. This will dispaly only on when the `TimePicker` contains the `SelectedTime` property as `null` and `AllowNullValue` property as `true`. If `AllowNullValue` property is `false`, then the current system time is updated in `SelectedTime` property and displayed instead of `PlaceHolderText`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTimePicker PlaceHolderText="Select the Time"
-                         SelectedTime="{x:Null}"
-                         AllowNullValue="True"
-                         Name="sfTimePicker" />
+<editors:SfTimePicker PlaceHolderText="Select the Time"
+                      SelectedTime="{x:Null}"
+                      AllowNullValue="True"
+                      Name="sfTimePicker" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -165,8 +156,6 @@ sfTimePicker.AllowNullValue = true;
 
 ![SfTimePicker displaying watermark text](Getting-Started_images/PlaceHolderText.png)
 
-N> Download demo application from [GitHub]()
-
 ## Time changed notification
 
 You will be notified when selected time changed in `TimePicker` by using [TimeChanged]() event. The `TimeChanged` event contains the old and newly selected time in the [OldDateTime](), [NewDateTime]() properties.
@@ -177,8 +166,8 @@ You will be notified when selected time changed in `TimePicker` by using [TimeCh
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfTimePicker TimeChanged="SfTimePicker_TimeChanged" 
-                         Name="sfTimePicker"/>
+<editors:SfTimePicker TimeChanged="SfTimePicker_TimeChanged" 
+                      Name="sfTimePicker"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -204,51 +193,24 @@ private void SfTimePicker_TimeChanged(DependencyObject d, DependencyPropertyChan
 
 ## Change time display format
 
- You can edit and display the selected time with various formatting like hour, minutes, seconds and meridiem formats by using the [FormatString]() property. The default value of `FormatString` property is `hh tt`.
+ You can edit and display the selected time with various formatting like hour, minutes, seconds and meridiem formats by using the [FormatString]() property. The default value of `FormatString` property is `hh:mm tt`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTimePicker x:Name="sfTimePicker" 
-                         FormatString="hh tt"/>
+<editors:SfTimePicker x:Name="sfTimePicker" 
+                      FormatString="HH:mm"/>
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfTimePicker sfTimePicker = new SfTimePicker();
-sfTimePicker.FormatString= "hh tt";
+sfTimePicker.FormatString= "HH:mm";
 
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker selected time with hour and meridiem](Features_images/FormatString.png)
-
-N> Download demo application from [GitHub]()
-
-## Change time format for Spinner
-
-You can allow the user to select the pair of hour, minutes, seconds and meridiem spinner or any single spinner cell from the drop down time spinner by using the [DropdownFormatString]() property. The default value of `DropdownFormatString` property is `hh:mm tt`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfTimePicker x:Name="sfTimePicker" 
-                         DropdownFormatString="hh tt"/>
-
-{% endhighlight  %}
-{% highlight C# %}
-
-SfTimePicker sfTimePicker = new SfTimePicker();
-sfTimePicker.DropdownFormatString = "hh tt";
-
-{% endhighlight  %}
-{% endtabs %}
-
-![SfTimePicker contains only drop down hour and meridiem spinner](Features_images/DropdownFormatString.png)
-
-Here, you can only able to select the hour and meridiem value from the drop down spinner.
-
-N> Download demo application from [GitHub]()
+![SfTimePicker selected time with hour and meridiem](Getting-Started_images/FormatString.png)
 
 ## Restrict time selection
 
@@ -257,41 +219,46 @@ You can restrict the users from selecting a time within the particular range by 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTimePicker x:Name="sfTimePicker" 
-                         MinTime=""
-                         MaxTime=""/>
+<editors:SfTimePicker x:Name="sfTimePicker"/>
 
 {% endhighlight  %}
 {% highlight C# %}
 
 SfTimePicker sfTimePicker = new SfTimePicker();
-sfTimePicker.MinTime = new DateTimeOffset(new DateTime(2020,12,10,00,00,00));
-sfTimePicker.MaxTime = new DateTimeOffset(new DateTime(2020,12,10,11,59,59));
+sfTimePicker.MinTime = new DateTimeOffset(new DateTime(2020, 12, 10, 4, 00, 00));
+sfTimePicker.MaxTime = new DateTimeOffset(new DateTime(2020, 12, 10, 6, 59, 59));
 
 {% endhighlight  %}
 {% endtabs %}
 
-![SfTimePicker restrict the time selection with particular range](Features_images/MinDMinTimeate.png)
+![SfTimePicker restrict the time selection with particular range](Getting-Started_images/MinMaxTime.png)
 
-## Block times using BlackoutTimes
+## Disable/block all weekends
 
-If you want to block particular times from the time selection, add that time ranges to the [BlackoutTimes]() collection. You can add more block out time ranges to the `BlackoutTimes` collection.
+
+
+![SfTimePicker blocks some times from selection](Getting-Started_images/blockweekends.png)
+
+## Hide submit button(Select time directly from time spinner)
+
+If you want to hide the submit button and select the time directly from the drop down time spinner without clicking the `Ok` button, use the [ShowSubmitButtons]() property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
-<syncfusion:SfTimePicker x:Name="sfTimePicker"/>
+<editors:SfTimePicker ShowSubmitButtons="False" 
+	                  x:Name="sfTimePicker"/>
 
-{% endhighlight  %}
-{% highlight C# %}
+{% endhighlight %}
+{% highlight c# %}
 
 SfTimePicker sfTimePicker = new SfTimePicker();
+sfTimePicker.ShowSubmitButtons = false;
 
-
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker blocks the particular times from selection](Features_images/BlackoutTimes.png)
+![SfTimePicker hides the drop down time spinner submit and cancel buttons](Getting-Started_images/ShowSubmitButtons.gif)
 
 ## Edit time using free form editing
 
@@ -302,8 +269,8 @@ By default, the user entering each input numbers are automatically validated wit
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTimePicker EditMode="Normal"
-                         x:Name="sfTimePicker" />
+<editors:SfTimePicker EditMode="Normal"
+                      x:Name="sfTimePicker" />
 
 {% endhighlight  %}
 {% highlight C# %}
@@ -314,50 +281,5 @@ sfTimePicker.EditMode = DateTimeEditingMode.Normal;
 {% endhighlight  %}
 {% endtabs %}
 
-![SfTimePicker enables free form editing to select time](Features_images/Normal.png)
+![SfTimePicker enables free form editing to select time](Getting-Started_images/editmode_Normal.png)
 
-## Restrict time selection by editing
-
-You can restrict the time selection during editing by using the `EditMode` property value as `None`. Then, you can change the time only using drop down time spinner. The default value of `EditMode` property is `Mask`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfTimePicker EditMode="None"
-                         x:Name="sfTimePicker" />
-
-{% endhighlight  %}
-{% highlight C# %}
-
-SfTimePicker sfTimePicker = new SfTimePicker();
-sfTimePicker.EditMode = DateTimeEditingMode.None;
-
-{% endhighlight  %}
-{% endtabs %}
-
-![SfTimePicker restrict time selection from editing](Features_images/None.png)
-
-## Curved border for TimePicker
-
-If you want to create curved borders for the `TimePicker`, use the [CornerRadius]() property. The default value of `CornerRadius` property is `0,0,0,0`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfTimePicker CornerRadius="10"
-                         x:Name="sfTimePicker" />
-
-{% endhighlight  %}
-{% highlight C# %}
-
-SfTimePicker sfTimePicker = new SfTimePicker();
-sfTimePicker.CornerRadius = new CornerRadius() {
-    BottomLeft=10, 
-    TopLeft=10, 
-    BottomRight=10, 
-    TopRight=10 };
-
-{% endhighlight  %}
-{% endtabs %}
-
-![SfTimePicker with curved border](Features_images/CornerRadius.png)

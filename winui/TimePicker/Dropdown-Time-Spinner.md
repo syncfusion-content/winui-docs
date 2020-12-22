@@ -18,7 +18,7 @@ You can allow the user to select the pair of hour, minutes, seconds and meridiem
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTimePicker x:Name="sfTimePicker" 
+<editors:SfTimePicker x:Name="sfTimePicker" 
                          DropdownFormatString="hh tt"/>
 
 {% endhighlight  %}
@@ -36,6 +36,48 @@ Here, you can only able to select the hour and meridiem value from the drop down
 
 N> Download demo application from [GitHub]()
 
+## Block times using BlackoutTimes
+
+If you want to block particular times from the time selection, add that time ranges to the [BlackoutTimes]() collection. You can add more block out time ranges to the `BlackoutTimes` collection.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfTimePicker x:Name="sfTimePicker"/>
+
+{% endhighlight  %}
+{% highlight C# %}
+
+SfTimePicker sfTimePicker = new SfTimePicker();
+
+
+{% endhighlight  %}
+{% endtabs %}
+
+![SfTimePicker blocks the particular times from selection](Features_images/BlackoutTimes.png)
+
+## Restrict time selection by editing
+
+You can restrict the time selection during editing by using the `EditMode` property value as `None`. Then, you can change the time only using drop down time spinner. The default value of `EditMode` property is `Mask`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfTimePicker EditMode="None"
+                         x:Name="sfTimePicker" />
+
+{% endhighlight  %}
+{% highlight C# %}
+
+SfTimePicker sfTimePicker = new SfTimePicker();
+sfTimePicker.EditMode = DateTimeEditingMode.None;
+
+{% endhighlight  %}
+{% endtabs %}
+
+![SfTimePicker restrict time selection from editing](Features_images/None.png)
+
+
 ## Show or hide Dropdown button
 
 If you want to restrict the user to select a time from a drop down time spinner, hide the drop down button by using the [ShowDropDownButton]() property value as `false`. The default value of `ShowDropDownButton` property is `true`.
@@ -43,7 +85,7 @@ If you want to restrict the user to select a time from a drop down time spinner,
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfTimePicker ShowDropDownButton="False" 
+<editors:SfTimePicker ShowDropDownButton="False" 
 	                     x:Name="sfTimePicker"/>
 
 {% endhighlight %}
@@ -66,7 +108,7 @@ If you want to hide the submit button and select the time directly from the drop
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfTimePicker ShowSubmitButtons="False" 
+<editors:SfTimePicker ShowSubmitButtons="False" 
 	                     x:Name="sfTimePicker"/>
 
 {% endhighlight %}
@@ -89,7 +131,7 @@ You can change alignment of the drop down time spinner as full, center, left, ri
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfTimePicker DropDownPlacement="BottomEdgeAlignedRight" 
+<editors:SfTimePicker DropDownPlacement="BottomEdgeAlignedRight" 
 	                     x:Name="sfTimePicker"/>
 
 {% endhighlight %}
@@ -113,7 +155,7 @@ If you want to show the drop down header, use the [ShowDropDownHeader]() propert
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfTimePicker DropDownHeader="Select Time" 
+<editors:SfTimePicker DropDownHeader="Select Time" 
 						 ShowDropDownHeader="True" 
 	                     x:Name="sfTimePicker"/>
 
@@ -138,10 +180,10 @@ You can customize the header of drop down time spinner by using the [DropDownHea
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfTimePicker DropDownHeader="Select Time" 
+<editors:SfTimePicker DropDownHeader="Select Time" 
 						 ShowDropDownHeader="True" 
 	                     x:Name="sfTimePicker">
-    <syncfusion:SfTimePicker.DropDownHeaderTemplate>
+    <editors:SfTimePicker.DropDownHeaderTemplate>
         <DataTemplate>
             <Grid>
                 <TextBlock 
@@ -149,8 +191,8 @@ You can customize the header of drop down time spinner by using the [DropDownHea
                     Text="{Binding}"/>
             </Grid>
         </DataTemplate>
-    </syncfusion:SfTimePicker.DropDownHeaderTemplate>
-</syncfusion:SfTimePicker>
+    </editors:SfTimePicker.DropDownHeaderTemplate>
+</editors:SfTimePicker>
 
 {% endhighlight %}
 {% endtabs %}
@@ -166,7 +208,7 @@ If you want to hide the drop down hour, minutes, seconds and meridiem spinner's 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfTimePicker ShowColumnHeaders="False" 
+<editors:SfTimePicker ShowColumnHeaders="False" 
 	                     x:Name="sfTimePicker"/>
 
 {% endhighlight %}
@@ -189,7 +231,7 @@ You can change the number of times to be shown in the drop down time spinner by 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfTimePicker VisibleItemsCount="BottomEdgeAlignedRight" 
+<editors:SfTimePicker VisibleItemsCount="BottomEdgeAlignedRight" 
 	                     x:Name="sfTimePicker"/>
 
 {% endhighlight %}
@@ -212,7 +254,7 @@ You can change the height of drop down time spinner by using the [DropDownHeight
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfTimePicker DropDownHeight="200"
+<editors:SfTimePicker DropDownHeight="200"
 						 x:Name="sfTimePicker"/>
 
 {% endhighlight %}
@@ -239,7 +281,7 @@ N> `ItemWidth` values must be within the `MinItemWidth` and `MaxItemWidth`values
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfTimePicker MinItemWidth="70" 
+<editors:SfTimePicker MinItemWidth="70" 
 						 MaxItemWidth="120" 
 						 ItemWidth="100"
 						 ItemHeight="50" 
@@ -268,7 +310,7 @@ You can change the flow direction of the `TimePicker` layout from right to left 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfTimePicker FlowDirection="RightToLeft" 
+<editors:SfTimePicker FlowDirection="RightToLeft" 
 	                     x:Name="sfTimePicker"/>
 
 {% endhighlight %}
