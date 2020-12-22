@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection support in Syncfusion Chart WinUI
-description: How to select the segment, series, adornment and customize the appearance of selection in WinUI Chart (SfChart).
+description: How to select the segment, series, datamarker and customize the appearance of selection in WinUI Chart (SfChart).
 platform: WinUI
 control: SfChart
 documentation: ug
@@ -41,7 +41,7 @@ chart.Behaviors.Add(selection);
 
 ## SegmentSelection
 
-Segment Selection allows you to highlight a segment in a chart series. To enable a segment selection in a chart series, you have to set the [`EnableSegmentSelection`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_EnableSegmentSelection) property to True.For highlighting a segment the  brush color can be set using [`SegmentSelectionBrush`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SegmentSelectionBrush) property.
+Segment Selection allows you to highlight a segment in a chart series. To enable a segment selection in a chart series, you have to set the [`EnableSegmentSelection`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_EnableSegmentSelection) property to True. For highlighting a segment the  brush color can be set using [`SegmentSelectionBrush`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SegmentSelectionBrush) property.
 
 **ColumnSeries**
 
@@ -101,9 +101,9 @@ chart.Series.Add(series);
 
 **SplineSeries**
 
-In Linear type series the segment selection can be viewed by changing the datamarkers MarkerType interior.
+In Linear type series the segment selection can be viewed by changing the data marker MarkerType interior.
 
-The following code example demonstrates the spline series segment selection by changing the datamarkers interior.
+The following code example demonstrates the spline series segment selection by changing the data marker interior.
 
 {% tabs %}
 
@@ -176,7 +176,7 @@ chart.Series.Add(series);
 
 ## Series Selection
 
-Series selection is used in case of multiple series when you want to highlight a particular series.Series Selection can be enabled by setting [`EnableSeriesSelection`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_EnableSeriesSelection)  property to True. The [`SeriesSelectionBrush`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SeriesSelectionBrush) property is used to set the brush color to highlight the series.
+Series selection is used in case of multiple series when you want to highlight a particular series. Series selection can be enabled by setting [`EnableSeriesSelection`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_EnableSeriesSelection) property to True. The [`SeriesSelectionBrush`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SeriesSelectionBrush) property is used to set the brush color to highlight the series.
 
 The following code example demonstrates highlighting a series.
 
@@ -269,13 +269,13 @@ N>By default the segment selection is true, so for selecting series you have to 
 
 ## DataMarker Selection
 
-SfChart provides selection for datamarkers by defining [`HighlightOnSelection`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_HighlightOnSelection) property which allows you to select the segment or series with the corresponding datamarkers.
+SfChart provides selection for data marker by defining [`HighlightOnSelection`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_HighlightOnSelection) property which allows you to select the segment or series with the corresponding data marker.
 
 **HighlightOnSelection**
 
 **Segment** **Selection**
 
-The following code example demonstrates the segment selection with datamarkers. 
+The following code example demonstrates the segment selection with data marker. 
 
 {% tabs %}
 
@@ -350,11 +350,11 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Segments selection with datamarkers in WinUI Chart](Interactive-Features_images/Interactive-Features_img39.jpeg)
+![Segments selection with data marker in WinUI Chart](Interactive-Features_images/Interactive-Features_img39.jpeg)
 
 **Series** **Selection**
 
-The following code example demonstrates the series selection with datamarkers. 
+The following code example demonstrates the series selection with data marker. 
 
 {% tabs %}
 
@@ -485,7 +485,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Series selection with datamarkers in WinUI Chart](Interactive-Features_images/Interactive-Features_img40.jpeg)
+![Series selection with data marker in WinUI Chart](Interactive-Features_images/Interactive-Features_img40.jpeg)
 
 ## Selection Mode
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Interactive features
 
-SfChart provides interactive features such as tracking data points and resizing the scrollbar.
+SfChart provides interactive features such as tracking data points and selection.
 
 The following interactive features are supported in SfChart:
 
@@ -18,8 +18,3 @@ The following interactive features are supported in SfChart:
 * TrackBall
 * Zoom and Pan
 * Selection
-
-
-
-
-

@@ -191,7 +191,7 @@ By default, the Trackball symbol is displayed as ellipse to change the default s
 
         <Style TargetType="syncfusion:ChartTrackballControl" x:Key="TrackballStyle">
 
-            <Setter Property="Background" Value="red"></Setter>
+            <Setter Property="Background" Value="Red"></Setter>
 
         </Style>
 
