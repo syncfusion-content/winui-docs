@@ -158,10 +158,10 @@ sfDatePicker.AllowNullValue = true;
 
 ## Date changed notification
 
-You will be notified when selected date changed in `SfDatePicker` by using [DateChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateChanged) event. The `DateChanged` event contains the old and newly selected date in the `OldDateTime`, `NewDateTime` properties.
+You will be notified when selected date changed in `SfDatePicker` by using [DateChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateChanged) event. The `DateChanged` event contains the old and newly selected date in the [OldDateTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedDateTimeChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedDateTimeChangedEventArgs_OldDateTime), [NewDateTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedDateTimeChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedDateTimeChangedEventArgs_NewDateTime) properties.
 
-* OldDateTime - Gets a date which is previously selected.
-* NewDateTime - Gets a date which is currently selected.
+* `OldDateTime` - Gets a date which is previously selected.
+* `NewDateTime` - Gets a date which is currently selected.
 
 {% tabs %}
 {% highlight XAML %}
