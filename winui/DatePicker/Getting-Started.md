@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI DatePicker (SfDatePicker)
 
-This section explains the steps required to add the [DatePicker]() control and its date selection options. This section covers only basic features needed to get started with Syncfusion `DatePicker` control.
+This section explains the steps required to add the [DatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html) control and its date selection options. This section covers only basic features needed to get started with Syncfusion `DatePicker` control.
 
 ## Structure of DatePicker control
 
@@ -71,7 +71,7 @@ namespace GettingStarted
 
 ## Select the date programmatically
 
-You can set or change the selected date programmatically by using [SelectedDate]() property. If you not assign any value for the `SelectedDate` property, `DatePicker` will automatically assign the current system date as `SelectedDate`.
+You can set or change the selected date programmatically by using [SelectedDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_SelectedDate) property. If you not assign any value for the `SelectedDate` property, `DatePicker` will automatically assign the current system date as `SelectedDate`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -110,7 +110,7 @@ SfDatePicker sfDatePicker= new SfDatePicker();
 
 ## Setting null value
 
-If you want to set null value for the `DatePicker`, set the [AllowNullValue]() property as `true` and [SelectedDate]() property as `null`. If `AllowNullValue` property is `false`, then the current system date is updated in `SelectedDate` property and displayed instead of `null`.
+If you want to set null value for the `DatePicker`, set the [AllowNullValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_AllowNullValue) property as `true` and `SelectedDate` property as `null`. If `AllowNullValue` property is `false`, then the current system date is updated in `SelectedDate` property and displayed instead of `null`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -133,7 +133,7 @@ sfDatePicker.AllowNullValue = true;
 
 ## Setting watermark text
 
-You can prompt the user with some information by using the [PlaceHolderText]() property. This will display only on when the `TimePicker` contains the `SelectedDate` property as `null` and `AllowNullValue` property as `true`. If `AllowNullValue` property is `false`, then the current system time is updated in `SelectedDate` property and displayed instead of `PlaceHolderText`.
+You can prompt the user with some information by using the [PlaceHolderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_PlaceHolderText) property. This will display only on when the `TimePicker` contains the `SelectedDate` property as `null` and `AllowNullValue` property as `true`. If `AllowNullValue` property is `false`, then the current system time is updated in `SelectedDate` property and displayed instead of `PlaceHolderText`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -158,7 +158,7 @@ sfDatePicker.AllowNullValue = true;
 
 ## Date changed notification
 
-You will be notified when selected date changed in `SfDatePicker` by using [DateChanged]() event. The `DateChanged` event contains the old and newly selected date in the [OldDateTime](), [NewDateTime]() properties.
+You will be notified when selected date changed in `SfDatePicker` by using [DateChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateChanged) event. The `DateChanged` event contains the old and newly selected date in the `OldDateTime`, `NewDateTime` properties.
 
 * OldDateTime - Gets a date which is previously selected.
 * NewDateTime - Gets a date which is currently selected.
@@ -193,7 +193,7 @@ private void SfDatePicker_DateChanged(DependencyObject d, DependencyPropertyChan
 
 ## Change date display format
 
- You can edit and display the selected date with various formatting like date, month and year formats by using the [FormatString]() property. The default value of `FormatString` property is `d`.
+ You can edit and display the selected date with various formatting like date, month and year formats by using the [FormatString](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_FormatString) property. The default value of `FormatString` property is `d`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -214,7 +214,7 @@ sfDatePicker.FormatString= "M";
 
 ## Change date format for Spinner
 
-You can allow the user to select the pair of date, month and year spinner or any single spinner cell from the drop down date spinner by using the [DropdownFormatString]() property. The default value of `DropdownFormatString` property is `d`.
+You can allow the user to select the pair of date, month and year spinner or any single spinner cell from the drop down date spinner by using the [DropdownFormatString](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DropDownFormatString) property. The default value of `DropdownFormatString` property is `d`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -237,7 +237,7 @@ Here, you can only able to select the date and month value from the drop down sp
 
 ## Restrict date selection
 
-You can restrict the users from selecting a date within the particular range by specifying [MinDate]() and [MaxDate]() properties in `DatePicker` control. The default value of `MinDate` property is `1/1/0001` and `MaxDate` property is `12/31/9999`.
+You can restrict the users from selecting a date within the particular range by specifying [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MinDate) and [MaxDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MaxDate) properties in `DatePicker` control. The default value of `MinDate` property is `1/1/0001` and `MaxDate` property is `12/31/9999`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -258,7 +258,7 @@ sfDatePicker.MinDate = new DateTimeOffset(new DateTime(2020,12,20));
 
 ## Disable/block all weekends
 
-If you want to block all weekend dates from the date selection, handle the [DateFieldItemPrepared]() event and use the [DateTimeFieldItemPreparedEventArgs.ItemInfo.IsBlackout]() property value as `true`.
+If you want to block all weekend dates from the date selection, handle the [DateFieldItemPrepared](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateFieldItemPrepared) event and use the [DateTimeFieldItemPreparedEventArgs.ItemInfo.IsBlackout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DateTimeFieldItemPreparedEventArgs.html#Syncfusion_UI_Xaml_Editors_DateTimeFieldItemPreparedEventArgs_ItemInfo) property value as `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -296,7 +296,7 @@ private void SfDatePicker_DateFieldItemPrepared(object sender, DateTimeFieldItem
 
 ## Hide submit button(Select date directly from date spinner)
 
-If you want to hide the submit button and select the date directly from the drop down date spinner without clicking the `Ok` button, use the [ShowSubmitButtons]() property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
+If you want to hide the submit button and select the date directly from the drop down date spinner without clicking the `Ok` button, use the [ShowSubmitButtons](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -317,7 +317,7 @@ sfDatePicker.ShowSubmitButtons = false;
 
 ## Edit date using free form editing
 
-If you want to perform the validation after the user completely entering their date inputs, use the [EditMode]() property value as `Normal`. Then the entered date value is validated with the `FormatString` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the selected date will be set as default format value.
+If you want to perform the validation after the user completely entering their date inputs, use the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_EditMode) property value as `Normal`. Then the entered date value is validated with the `FormatString` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the selected date will be set as default format value.
 
 By default, the user entering each input numbers are automatically validated with the `FormatString` formats and assigned the proper value for it, then it will move to next input part of the time format.
 

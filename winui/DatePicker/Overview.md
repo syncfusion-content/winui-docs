@@ -7,9 +7,9 @@ control: SfDatePicker
 documentation: ug
 ---
 
-# WinUI SfDatePicker Overview
+# WinUI DatePicker(SfDatePicker) Overview
 
-The [SfDatePicker]() control allows the user to select date values in a touch friendly manner.
+The [DatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html) control allows the user to select date values in a touch friendly manner.
 
 ### Normal view:
 
