@@ -23,4 +23,4 @@ The WinUI [TimePicker]() control provides an intuitive, touch-friendly interface
 
 * Formatting – The Control displays  the selected time value in a various formats.
 * Time spinner – The drop-down portion used for selecting the time and it can be customized.
-* Spinner cstomization - Allow to customize the drop-down spinner header and each cells
+* Spinner customization - Allow to customize the drop-down spinner header and each cells
