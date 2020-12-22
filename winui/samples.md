@@ -33,7 +33,7 @@ To explore the locally installed demos, click `Run Local Demos` and open the `Wi
 
 The offline samples are available in the following installed location where you can make changes and further exploration of controls.
 
-C:\Users\Public\Documents\Syncfusion\WinUI\{{ site.releaseversion }}\SampleBrowser\SampleBrowser\syncfusion.samplebrowser.winui.sln
+C:\Users\Public\Documents\Syncfusion\WinUI\{{ site.releaseversion }}\SampleBrowser\SampleBrowser\
 
 You can also explore individual controls from individual control project.
 
