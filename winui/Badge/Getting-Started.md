@@ -422,14 +422,14 @@ N> If you want to apply your own customized shapes for the `Badge`, refer the [C
 
 ## Animate when content changes
 
-You can enable the `Scale` or `Opacity` based animation for displaying the `Badge` text by using [BadgeAnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_BadgeAnimationType) property. You can only see the animation when you change the text of the `Badge`. The default value of `BadgeAnimationType` property is `None`.
+You can enable the `Scale` or `Opacity` based animation for displaying the `Badge` text by using [AnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_AnimationType) property. You can only see the animation when you change the text of the `Badge`. The default value of `AnimationType` property is `None`.
 
 {% tabs %}
 {% highlight XAML %}
 
 <syncfusion:BadgeContainer Name="badgeContainer"  >
     <syncfusion:BadgeContainer.Badge>
-        <syncfusion:SfBadge BadgeAnimationType="Scale"
+        <syncfusion:SfBadge AnimationType="Scale"
                             Background="Red"
                             Content="1"
                             Name="badge"/>
@@ -443,7 +443,7 @@ You can enable the `Scale` or `Opacity` based animation for displaying the `Badg
 {% endhighlight %}
 {% highlight C# %}
 
-badge.BadgeAnimationType = AnimationType.Scale;
+badge.AnimationType = BadgeAnimationType.Scale;
 badge.Content = "1";
 
 {% endhighlight %}
