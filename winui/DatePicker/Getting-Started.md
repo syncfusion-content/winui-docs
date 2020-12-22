@@ -69,8 +69,6 @@ namespace GettingStarted
 
 ![DatePicker control added in the application](Getting-Started_images/DatePicker_Added.png)
 
-N> Download demo application from [GitHub]()
-
 ## Select the date programmatically
 
 You can set or change the selected date programmatically by using [SelectedDate]() property. If you not assign any value for the `SelectedDate` property, `DatePicker` will automatically assign the current system date as `SelectedDate`.
@@ -91,8 +89,6 @@ sfDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 10, 29));
 
 ![SfDatePicker displaying selected value](Getting-Started_images/selectedDate.png)
 
-N> Download demo application from [GitHub]()
-
 ## Select date interactively
 
 You can change the selected date interactively by enter the date value using keyboard or select from drop down date spinner. You can get the selected date from the `SelectedDate` property.
@@ -112,8 +108,6 @@ SfDatePicker sfDatePicker= new SfDatePicker();
 
 ![SfDatePicker displaying selected value](Getting-Started_images/selectedDateInteract.gif)
 
-N> Download demo application from [GitHub]()
-
 ## Setting null value
 
 If you want to set null value for the `DatePicker`, set the [AllowNullValue]() property as `true` and [SelectedDate]() property as `null`. If `AllowNullValue` property is `false`, then the current system date is updated in `SelectedDate` property and displayed instead of `null`.
@@ -122,8 +116,8 @@ If you want to set null value for the `DatePicker`, set the [AllowNullValue]() p
 {% highlight xaml %}
 
 <editors:SfDatePicker SelectedDate="{x:Null}"
-                         AllowNullValue="True"
-                         Name="sfDatePicker" />
+                      AllowNullValue="True"
+                      Name="sfDatePicker" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -137,9 +131,7 @@ sfDatePicker.AllowNullValue = true;
 
 ![SfDatePicker displaying null value](Getting-Started_images/AllowNullValue.png)
 
-N> Download demo application from [GitHub]()
-
-## Setting WaterMark text
+## Setting watermark text
 
 You can prompt the user with some information by using the [PlaceHolderText]() property. This will display only on when the `TimePicker` contains the `SelectedDate` property as `null` and `AllowNullValue` property as `true`. If `AllowNullValue` property is `false`, then the current system time is updated in `SelectedDate` property and displayed instead of `PlaceHolderText`.
 
@@ -147,9 +139,9 @@ You can prompt the user with some information by using the [PlaceHolderText]() p
 {% highlight xaml %}
 
 <editors:SfDatePicker PlaceHolderText="Select the Date"
-                         SelectedDate="{x:Null}"
-                         AllowNullValue="True"
-                         Name="sfDatePicker" />
+                      SelectedDate="{x:Null}"
+                      AllowNullValue="True"
+                      Name="sfDatePicker" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -164,8 +156,6 @@ sfDatePicker.AllowNullValue = true;
 
 ![SfDatePicker displaying watermark text](Getting-Started_images/PlaceHolderText.png)
 
-N> Download demo application from [GitHub]()
-
 ## Date changed notification
 
 You will be notified when selected date changed in `SfDatePicker` by using [DateChanged]() event. The `DateChanged` event contains the old and newly selected date in the [OldDateTime](), [NewDateTime]() properties.
@@ -177,7 +167,7 @@ You will be notified when selected date changed in `SfDatePicker` by using [Date
 {% highlight XAML %}
 
 <editors:SfDatePicker DateChanged="SfDatePicker_DateChanged" 
-                         Name="sfDatePicker"/>
+                      Name="sfDatePicker"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -209,7 +199,7 @@ private void SfDatePicker_DateChanged(DependencyObject d, DependencyPropertyChan
 {% highlight xaml %}
 
 <editors:SfDatePicker x:Name="sfDatePicker" 
-                         FormatString="M"/>
+                      FormatString="M"/>
 
 {% endhighlight  %}
 {% highlight C# %}
@@ -222,8 +212,6 @@ sfDatePicker.FormatString= "M";
 
 ![SfDatePicker selected date with month format](Getting-Started_images/FormatString.png)
 
-N> Download demo application from [GitHub]()
-
 ## Change date format for Spinner
 
 You can allow the user to select the pair of date, month and year spinner or any single spinner cell from the drop down date spinner by using the [DropdownFormatString]() property. The default value of `DropdownFormatString` property is `d`.
@@ -232,7 +220,7 @@ You can allow the user to select the pair of date, month and year spinner or any
 {% highlight xaml %}
 
 <editors:SfDatePicker x:Name="sfDatePicker" 
-                         DropdownFormatString="dd/MM"/>
+                      DropdownFormatString="dd/MM"/>
 
 {% endhighlight  %}
 {% highlight C# %}
@@ -246,8 +234,6 @@ sfDatePicker.DropdownFormatString = "dd/MM";
 ![SfDatePicker contains only date and month spinner](Getting-Started_images/DropdownFormatString.png)
 
 Here, you can only able to select the date and month value from the drop down spinner.
-
-N> Download demo application from [GitHub]()
 
 ## Restrict date selection
 
@@ -315,8 +301,8 @@ If you want to hide the submit button and select the date directly from the drop
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfDatePicker ShowSubmitButtons="False" 
-	                  x:Name="sfDatePicker"/>
+<editors:SfDatePicker ShowSubmitButtons="False"
+                      x:Name="sfDatePicker"/>
 
 {% endhighlight %}
 {% highlight c# %}
