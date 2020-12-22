@@ -494,7 +494,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **LabelTemplate**
 
-[`LabelTemplate`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelTemplate) property allows you to define the appearance for the axis labels .the following code example illustrates the [`LabelTemplate`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelTemplate) property.
+[`LabelTemplate`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelTemplate) property allows you to define the appearance for the axis labels, the following code example illustrates the [`LabelTemplate`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelTemplate) property.
 
 {% tabs %}
 
@@ -635,7 +635,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 **Hide**
 
-Hide option is used to hide the labels if it intersects .You can define the hide as shown in the below code snippet.
+Hide option is used to hide the labels if it intersects. You can define the hide as shown in the below code snippet.
 
 {% tabs %}
 
@@ -667,7 +667,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **MultipleRows**
 
-This option is used to move the labels to next row if it intersects .The following code demonstrates the MultipleRows option in [`LabelIntersectAction`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction).
+This option is used to move the labels to next row if it intersects. The following code demonstrates the MultipleRows option in [`LabelIntersectAction`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction).
 
 {% tabs %}
 
@@ -701,7 +701,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **Auto**
 
-This option in [`LabelIntersectAction`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction) property is used to rotate the labels if it intersects .The following code snippet and image demonstrates the rotate option in [`LabelIntersectAction`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction) property.
+This option in [`LabelIntersectAction`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction) property is used to rotate the labels if it intersects. The following code snippet and image demonstrates the rotate option in [`LabelIntersectAction`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction) property.
 
 {% tabs %}
 
@@ -867,7 +867,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **EdgeLabelsVisibilityMode**
 
-The visibility of the extreme labels of the axis can be controlled using [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) property. By default the [`Default`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode.html) option in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) is set, which displays the edge label based on auto interval calculations .The following image depicts the default option in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) while zooming.
+The visibility of the extreme labels of the axis can be controlled using [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) property. By default the [`Default`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode.html) option in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) is set, which displays the edge label based on auto interval calculations. The following image depicts the default option in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) while zooming.
 
 ![Axis edge label visibility support in WinUI Chart](Axis_images/Axis_img23.jpeg)
 
@@ -1085,7 +1085,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ## Tick lines
 
-Tick line are the small lines which is drawn on the axis line representing the axis labels .Tick lines will be drawn outside of the axis by default. 
+Tick line are the small lines which is drawn on the axis line representing the axis labels. Tick lines will be drawn outside of the axis by default. 
 
 **TickLineSize**
 
@@ -1155,7 +1155,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **Customization**
 
-Style can be applied to major tick lines using [`MajorTickLineStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorTickLineStyle) property .The following code snippet demonstrates the styling of major tick lines.
+Style can be applied to major tick lines using [`MajorTickLineStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorTickLineStyle) property. The following code snippet demonstrates the styling of major tick lines.
 
 {% tabs %}
 
