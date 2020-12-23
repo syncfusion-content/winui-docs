@@ -396,7 +396,7 @@ sfCalendarDatePicker.Language = "ar";
 
 ## First day of week
 
-By default, Sunday is shown as the first day of the week in a dop-down spinner. If you want to change the first day of week, use the [FirstDayOfWeek](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_FirstDayOfWeek) property value. The default value of `FirstDayOfWeek` property is `Sunday`.
+By default, Sunday is shown as the first day of the week in a drop-down spinner. If you want to change the first day of week, use the [FirstDayOfWeek](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_FirstDayOfWeek) property value. The default value of `FirstDayOfWeek` property is `Sunday`.
 
 {% tabs %}
 {% highlight xaml %}
