@@ -823,5 +823,5 @@ Below code, binds the `ViewModel.AllowFiltering` property to `GridColumn.AllowFi
 {% endtabs %}
 
 
-![Binding column properties with ViewModel](Columns_images/Columns_img11.png)
+![Binding column properties with ViewModel](Columns-images/Columns-image7.png)
 

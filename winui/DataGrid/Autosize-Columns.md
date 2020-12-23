@@ -354,7 +354,7 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI datagrid shows columns width defined based on ColumnRatio](Columns_images/Columns_img10.png)
+![WinUI datagrid shows columns width defined based on ColumnRatio](Autosize-Columns-images/Autosize-Columns-image3.png)
 
 ## Change the width of DataGrid ComboBoxColumn based on it’s ItemsSource
 
