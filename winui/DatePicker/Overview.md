@@ -9,7 +9,7 @@ documentation: ug
 
 # WinUI DatePicker(SfDatePicker) Overview
 
-The [DatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html) control allows the user to select date values in a touch friendly manner.
+The WinUI [DatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html) control provides an intuitive, touch-friendly interface to quickly select a date from a dropdown spinner. It supports different date formats. Date selection can be restricted by specifying minimum and maximum dates. Dates can also be hidden or disable some from selection. In addition, it supports editing with validation and built-in watermark text display.
 
 ### Normal view:
 
