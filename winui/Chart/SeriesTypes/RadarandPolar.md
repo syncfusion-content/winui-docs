@@ -95,7 +95,7 @@ The Radar and Polar charts having the following properties in common:
 
 * [`IsClosed`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase.html#Syncfusion_UI_Xaml_Charts_PolarRadarSeriesBase_IsClosed)
 * [`DrawType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase.html#Syncfusion_UI_Xaml_Charts_PolarRadarSeriesBase_DrawType)
-* `PolarAngle`
+* [`PolarAngle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html)
 
 ### IsClosed
 

@@ -11,7 +11,7 @@ documentation: ug
 
 It defines the placement pattern of bar type series like Column, Bar, StackedColumn, etc. 
 
-It is a Boolean property and its default value is true so the segment will be placed adjacent to each other (Clustered).
+It is a Boolean property and its default value is true, so the segment will be placed adjacent to each other (Clustered).
 
 ![Column chart type placed side by side](Series_images/sidebyside1.jpeg)
 
@@ -32,7 +32,7 @@ AreaBorderThickness="1,1,1,1">
 
 <chart:SfChart.PrimaryAxis>
 
-<chart:CategoryAxis  Header="Metals"/>
+<chart:CategoryAxis Header="Metals"/>
 
 </chart:SfChart.PrimaryAxis>
 
@@ -48,21 +48,21 @@ AreaBorderThickness="1,1,1,1">
 
 </chart:SfChart.Legend>
 
-<chart:ColumnSeries ItemsSource="{Binding SneakersDetail}"
+<chart:ColumnSeries ItemsSource="{Binding Data}"
 
  Label="2015"  
 
-XBindingPath="Brand" 
+XBindingPath="Metals" 
 
-YBindingPath="ItemsCount" />
+YBindingPath="Count1" />
 
-<chart:ColumnSeries ItemsSource="{Binding SneakersDetail}"  
+<chart:ColumnSeries ItemsSource="{Binding Data}"  
 
 SegmentSpacing="0.5"
 
-XBindingPath="Brand" 
+XBindingPath="Metals" 
 
-Label="2014" YBindingPath="Postion"/>            
+Label="2014" YBindingPath="Count2"/>            
 
 </chart:SfChart>
 
@@ -83,7 +83,7 @@ chart.AreaBorderThickness = new Thickness(1);
 chart.PrimaryAxis = new CategoryAxis()
 {
 
-    Header = "Medals"
+    Header = "Metals"
 
 };
 
@@ -104,11 +104,11 @@ chart.Legend = new ChartLegend()
 ColumnSeries columnSeries1 = new ColumnSeries()
 {
 
-    ItemsSource = new ViewModel().SneakersDetail,
+    ItemsSource = new ViewModel().Data,
 
-    XBindingPath = "Brand",
+    XBindingPath = "Metals",
 
-    YBindingPath = "ItemsCount",
+    YBindingPath = "Count1",
 
     Label = "2015",
 
@@ -117,11 +117,11 @@ ColumnSeries columnSeries1 = new ColumnSeries()
 ColumnSeries columnSeries2 = new ColumnSeries()
 {
 
-    ItemsSource = new ViewModel().SneakersDetail,
+    ItemsSource = new ViewModel().Data,
 
-    XBindingPath = "Brand",
+    XBindingPath = "Metals",
 
-    YBindingPath = "Position",
+    YBindingPath = "Count2",
 
     Label = "2014",
 

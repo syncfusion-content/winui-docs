@@ -11,7 +11,7 @@ documentation: ug
 
 ## Pyramid
 
-PyramidSeries has the form of a triangle with lines dividing it into sections and each section has a different width. Depending on the Y co-ordinates, this width indicates a level of hierarchy among other categories.
+[`PyramidSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.PyramidSeries.html#Syncfusion_UI_Xaml_Charts_PyramidSeries) has the form of a triangle with lines dividing it into sections and each section has a different width. Depending on the Y co-ordinates, this width indicates a level of hierarchy among other categories.
 
 {% tabs %}
 
@@ -130,7 +130,7 @@ chart.Series.Add(series);
 
 ## Funnel
 
-FunnelSeries is similar to PyramidSeries, displays data in a funnel shape that equals to 100% when totaled. It is a single series, representing data as portions of 100% and does not use any axes. 
+[`FunnelSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.FunnelSeries.html#Syncfusion_UI_Xaml_Charts_FunnelSeries) is similar to [`PyramidSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.PyramidSeries.html#Syncfusion_UI_Xaml_Charts_PyramidSeries), displays data in a funnel shape that equals to 100% when totaled. It is a single series, representing data as portions of 100% and does not use any axes. 
 
 The following code example shows how to use the funnel series:
 
@@ -176,7 +176,7 @@ The [`FunnelMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Chart
 
 {% highlight xaml %}
 
-<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"    
+<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding Data}"    
 
 FunnelMode="ValueIsHeight" 
 
@@ -189,7 +189,7 @@ YBindingPath="Percentage"/>
 FunnelSeries series = new FunnelSeries()
 {
 
-    ItemsSource = new ViewModel().List,
+    ItemsSource = new ViewModel().Data,
 
     XBindingPath = "Category",
 
@@ -213,7 +213,7 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"    
+<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding Data}"    
 
 FunnelMode="ValueIsWidth" 
 
@@ -226,7 +226,7 @@ YBindingPath="Percentage" />
 FunnelSeries series = new FunnelSeries()
 {
 
-    ItemsSource = new ViewModel().List,
+    ItemsSource = new ViewModel().Data,
 
     XBindingPath = "Category",
 
@@ -259,7 +259,7 @@ The following properties are used to explode the individual segments in Funnel a
 
 {% highlight xaml %}
 
-<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"   
+<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding Data}"   
 
 ExplodeIndex="4"  ExplodeOffset="70" YBindingPath="Percentage">
 
@@ -272,7 +272,7 @@ ExplodeIndex="4"  ExplodeOffset="70" YBindingPath="Percentage">
 FunnelSeries series = new FunnelSeries()
 {
 
-    ItemsSource = new ViewModel().List,
+    ItemsSource = new ViewModel().Data,
 
     XBindingPath = "Category",
 
@@ -300,7 +300,7 @@ The gap between each segment using [`GapRatio`](https://help.syncfusion.com/cr/W
 
 {% highlight xaml %}
 
-<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"     
+<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding Data}"     
 
 GapRatio="0.5" YBindingPath="Percentage">
 
@@ -313,7 +313,7 @@ GapRatio="0.5" YBindingPath="Percentage">
 FunnelSeries series = new FunnelSeries()
 {
 
-    ItemsSource = new ViewModel().List,
+    ItemsSource = new ViewModel().Data,
 
     XBindingPath = "Category",
 
