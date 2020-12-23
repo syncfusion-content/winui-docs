@@ -21,8 +21,6 @@ The following code example illustrates the use of radar series:
 
 <chart:RadarSeries ItemsSource="{Binding PlantDetails}" 
 
-Interior="#BCBCBC"
-
 XBindingPath="Direction"
 
 YBindingPath="Tree" >
@@ -41,8 +39,6 @@ RadarSeries series = new RadarSeries()
     XBindingPath = "Direction",
 
     YBindingPath = "Tree",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
 
 };
 
@@ -63,7 +59,7 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:PolarSeries Interior="#4A4A4A" 
+<chart:PolarSeries 
 
 ItemsSource="{Binding PlantDetails}"  
 
@@ -83,8 +79,6 @@ PolarSeries series = new PolarSeries()
     XBindingPath = "Direction",
 
     YBindingPath = "Tree",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
 
 };
 
@@ -111,7 +105,7 @@ This property used to draw the closed path as below.
 
 {% highlight xaml %}
 
-<chart:PolarSeries x:Name="series1" Interior="#4A4A4A" 
+<chart:PolarSeries x:Name="series1" 
 
 ItemsSource="{Binding PlantDetails}"  
 
@@ -142,8 +136,6 @@ PolarSeries series = new PolarSeries()
 
     StrokeThickness = 2,
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
@@ -164,7 +156,7 @@ This property defines type of curve, whether its [`Line`](https://help.syncfusio
 
 {% highlight xaml %}
 
-<chart:PolarSeries x:Name="series1" Interior="#4A4A4A" 
+<chart:PolarSeries x:Name="series1" 
 
 ItemsSource="{Binding PlantDetails}"  
 
@@ -189,8 +181,6 @@ PolarSeries series = new PolarSeries()
 
     DrawType = ChartSeriesDrawType.Area,
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
@@ -207,7 +197,7 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:PolarSeries x:Name="series1" Interior="#4A4A4A" 
+<chart:PolarSeries
 
 ItemsSource="{Binding PlantDetails}"  
 
@@ -235,8 +225,6 @@ PolarSeries series = new PolarSeries()
     DrawType = ChartSeriesDrawType.Line,
 
     StrokeThickness = 2,
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
 
 };
 

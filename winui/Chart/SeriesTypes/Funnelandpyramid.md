@@ -138,7 +138,7 @@ The following code example shows how to use the funnel series:
 
 {% highlight xaml %}
 
-<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"  
+<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding Data}"  
 
 YBindingPath="Percentage" />
 
@@ -149,7 +149,7 @@ YBindingPath="Percentage" />
 FunnelSeries series = new FunnelSeries()
 {
 
-    ItemsSource = new ViewModel().List,
+    ItemsSource = new ViewModel().Data,
 
     XBindingPath = "Category",
 

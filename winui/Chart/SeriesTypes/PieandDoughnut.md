@@ -378,7 +378,7 @@ XBindingPath="Utilization"
 
 YBindingPath="ResponseTime"
 
-ItemsSource="{Binding}"/>
+ItemsSource="{Binding Data}"/>
 
 {% endhighlight %}
 
@@ -387,7 +387,7 @@ ItemsSource="{Binding}"/>
 PieSeries series = new PieSeries()
 {
 
-    ItemsSource = new ViewModel().Value,
+    ItemsSource = new ViewModel().Data,
 
     XBindingPath = "Utilization",
 
@@ -417,7 +417,7 @@ XBindingPath="Utilization"
 
 YBindingPath="ResponseTime" 
 
-ItemsSource="{Binding}"/>
+ItemsSource="{Binding Data}"/>
 
 {% endhighlight %}
 
@@ -426,7 +426,7 @@ ItemsSource="{Binding}"/>
 DoughnutSeries series = new DoughnutSeries()
 {
 
-    ItemsSource = new ViewModel().Value,
+    ItemsSource = new ViewModel().Data,
 
     XBindingPath = "Utilization",
 
@@ -451,10 +451,15 @@ chart.Series.Add(series);
 Doughnut segments can be separated as individual circles using the [`IsStackedDoughnut`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_IsStackedDoughnut) property. The following properties are used to customize the stacked doughnut chart:
 
 •	[`CapStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_CapStyle) - Specifies the shapes of the start and end points of a circular segment. The supported values are [`BothFlat`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), [`BothCurve`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), [`StartCurve`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), and [`EndCurve`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html). The default value of the this property is BothFlat.
+
 •	[`SegmentSpacing`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_SegmentSpacing) - Changes the spacing between two individual segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 represents 100%, and 0 represents 0% of the available space.
+
 •	[`MaximumValue`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_SegmentSpacing) - Represents the entire span of an individual circle. The default value of the this property is double.NaN.
+
 •	[`TrackColor`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_TrackColor) - Changes the color of the track area.
+
 •	[`TrackBorderColor`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_TrackBorderColor) - Changes the color of the track border.
+
 •	[`TrackBorderWidth`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_TrackBorderWidth) - Changes the width of the track border.
 
 {% tabs %}
@@ -500,8 +505,11 @@ chart.Series.Add(doughnutSeries);
 The following properties are used to explode the individual segments in Pie and Doughnut.
 
 * [`ExplodeAll`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeAll)  - Used to explode all the segments of these series.
+
 * [`ExplodeIndex`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeIndex) - Used to explode any specific segment.
+
 * [`ExplodeRadius`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_ExplodeRadius) - Used to define the explode distance.
+
 * [`ExplodeOnMouseClick`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeOnMouseClick) -Used to explode the segment when segment is clicked.
 
 **Explode** **Index**
@@ -510,7 +518,7 @@ The following properties are used to explode the individual segments in Pie and 
 
 {% highlight xaml %}
 
-<syncfusion:PieSeries x:Name="PieSeries" ItemsSource="{Binding}"          
+<syncfusion:PieSeries x:Name="PieSeries" ItemsSource="{Binding Data}"          
 
 ExplodeIndex="2"
 

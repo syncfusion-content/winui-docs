@@ -13,7 +13,7 @@ It defines the placement pattern of bar type series like Column, Bar, StackedCol
 
 It is a Boolean property and its default value is true so the segment will be placed adjacent to each other (Clustered).
 
-![Column chart type placed side by side](Series_images/Area_img6.jpeg)
+![Column chart type placed side by side](Series_images/sidebyside1.jpeg)
 
 
 The following code example and image illustrates the placement of series while setting [`SideBySideSeriesPlacement`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SideBySideSeriesPlacement) as false.
@@ -48,9 +48,9 @@ AreaBorderThickness="1,1,1,1">
 
 </chart:SfChart.Legend>
 
-<chart:ColumnSeries Interior="#bcbcbc"
+<chart:ColumnSeries ItemsSource="{Binding SneakersDetail}"
 
-ItemsSource="{Binding SneakersDetail}" Label="2015"  
+ Label="2015"  
 
 XBindingPath="Brand" 
 
@@ -60,9 +60,9 @@ YBindingPath="ItemsCount" />
 
 SegmentSpacing="0.5"
 
-Interior="#4a4a4a"  XBindingPath="Brand" 
+XBindingPath="Brand" 
 
-Label="2014" YBindingPath="postion"/>            
+Label="2014" YBindingPath="Postion"/>            
 
 </chart:SfChart>
 
@@ -112,8 +112,6 @@ ColumnSeries columnSeries1 = new ColumnSeries()
 
     Label = "2015",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0xbc, 0xbc, 0xbc)),
-
 };
 
 ColumnSeries columnSeries2 = new ColumnSeries()
@@ -129,8 +127,6 @@ ColumnSeries columnSeries2 = new ColumnSeries()
 
     SegmentSpacing = 0.5,
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x4a, 0x4a, 0x4a)),
-
 };
 
 chart.Series.Add(columnSeries1);
@@ -141,7 +137,7 @@ chart.Series.Add(columnSeries2);
 
 {% endtabs %}
 
-![Column chart type place one over another.](Series_images/Area_img7.jpeg)
+![Column chart type place one over another.](Series_images/sidebyside2.jpeg)
 
 
 N> As the series will be placed one over the other(overlapped), to differentiate between the series the `SegmentSpacing` is used.

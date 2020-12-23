@@ -25,8 +25,6 @@ XBindingPath="MonthlyExpenses"
 
 YBindingPath="Father" 
 
-Interior="#4A4A4A"
-
 ItemsSource="{Binding Data}"/>
 
 <chart:StackedLineSeries
@@ -35,8 +33,6 @@ XBindingPath="MonthlyExpenses"
 
 YBindingPath="Mother"
 
-Interior="#BCBCBC"
-
 ItemsSource="{Binding Data}"/> 
 
 <chart:StackedLineSeries 
@@ -44,8 +40,6 @@ ItemsSource="{Binding Data}"/>
 XBindingPath="MonthlyExpenses" 
 
 YBindingPath="Son"
-
-Interior="#7F7F7F"
 
 ItemsSource="{Binding Data}" />
 
@@ -62,8 +56,6 @@ StackedLineSeries series1 = new StackedLineSeries()
 
     YBindingPath ="Father",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 StackedLineSeries series2 = new StackedLineSeries()
@@ -75,8 +67,6 @@ StackedLineSeries series2 = new StackedLineSeries()
 
     YBindingPath = "Mother",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 StackedLineSeries series3 = new StackedLineSeries()
@@ -87,8 +77,6 @@ StackedLineSeries series3 = new StackedLineSeries()
     XBindingPath = "MonthlyExpenses",
 
     YBindingPath = "Son",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
 
 };
 
@@ -116,27 +104,19 @@ chart.Series.Add(series3);
 
 XBindingPath="MonthlyExpenses" 
 
-YBindingPath="Father" 
-
-Interior="#4A4A4A"
-/>
+YBindingPath="Father" />
 
 <chart:StackedLine100Series ItemsSource="{Binding Data}"
 
 XBindingPath="MonthlyExpenses"  
 
-YBindingPath="Mother"
-
-Interior="#BCBCBC"/>
+YBindingPath="Mother" />
 
 <chart:StackedLine100Series ItemsSource="{Binding Data}"
 
 XBindingPath="MonthlyExpenses" 
 
-YBindingPath="Son"
-
-Interior="#7F7F7F"/>
-
+YBindingPath="Son" 
 {% endhighlight %}
 
 {% highlight c# %}
@@ -150,8 +130,6 @@ StackedLine100Series series1 = new StackedLine100Series()
 
     YBindingPath = "Father",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 StackedLine100Series series2 = new StackedLine100Series()
@@ -163,8 +141,6 @@ StackedLine100Series series2 = new StackedLine100Series()
 
     YBindingPath = "Mother",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 StackedLine100Series series3 = new StackedLine100Series()
@@ -175,8 +151,6 @@ StackedLine100Series series3 = new StackedLine100Series()
     XBindingPath = "MonthlyExpenses",
 
     YBindingPath = "Son",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
 
 };
 
@@ -208,13 +182,9 @@ XBindingPath="CountryName"
 
 YBindingPath="GoldMedals" 
 
-Interior="#4A4A4A"
-
 ItemsSource="{Binding MedalDetails}"/>
 
 <chart:StackedColumnSeries 
-
-Interior="#BCBCBC"
 
 XBindingPath="CountryName" 
 
@@ -223,8 +193,6 @@ YBindingPath="SilverMedals"
 ItemsSource="{Binding MedalDetails}"/> 
 
 <chart:StackedColumnSeries 
-
-Interior="#7F7F7F"
 
 XBindingPath="CountryName" 
 
@@ -243,8 +211,6 @@ StackedColumnSeries series1 = new StackedColumnSeries()
 
     YBindingPath ="GoldMedals",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 StackedColumnSeries series2 = new StackedColumnSeries()
@@ -256,8 +222,6 @@ StackedColumnSeries series2 = new StackedColumnSeries()
 
     YBindingPath = "SilverMedals",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 StackedColumnSeries series3 = new StackedColumnSeries()
@@ -268,8 +232,6 @@ StackedColumnSeries series3 = new StackedColumnSeries()
     XBindingPath = "CountryName",
 
     YBindingPath = "BronzeMedals",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
 
 };
 
@@ -295,7 +257,7 @@ chart.Series.Add(series3);
 
 <chart:StackedColumn100Series  XBindingPath="CountryName" 
 
-YBindingPath="GoldMedals" Interior="#4A4A4A"
+YBindingPath="GoldMedals"
 
 ItemsSource="{Binding MedalDetails}"/>
 
@@ -303,9 +265,7 @@ ItemsSource="{Binding MedalDetails}"/>
 
 XBindingPath="CountryName"  
 
-YBindingPath="SilverMedals"
-
-Interior="#BCBCBC"/>
+YBindingPath="SilverMedals"/>
 
 {% endhighlight %}
 
@@ -320,8 +280,6 @@ StackedColumn100Series series1 = new StackedColumn100Series()
 
     YBindingPath = "GoldMedals",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 StackedColumn100Series series2 = new StackedColumn100Series()
@@ -333,8 +291,6 @@ StackedColumn100Series series2 = new StackedColumn100Series()
 
     YBindingPath = "SilverMedals",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 StackedColumn100Series series3 = new StackedColumn100Series()
@@ -345,8 +301,6 @@ StackedColumn100Series series3 = new StackedColumn100Series()
     XBindingPath = "CountryName",
 
     YBindingPath = "BronzeMedals",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
 
 };
 
@@ -372,15 +326,13 @@ chart.Series.Add(series3);
 
 <chart:StackedBarSeries XBindingPath="CountryName"        
 
-Interior="#BCBCBC"
-
 YBindingPath="GoldMedals" 
 
 ItemsSource="{Binding MedalDetails}" >
 
 </chart:StackedBarSeries>
 
-<chart:StackedBarSeries Interior="#4A4A4A"
+<chart:StackedBarSeries
 
 XBindingPath="CountryName" 
 
@@ -390,7 +342,7 @@ ItemsSource="{Binding MedalDetails}">
 
 </chart:StackedBarSeries>
 
-<chart:StackedBarSeries Interior="#7F7F7F"
+<chart:StackedBarSeries
 
 XBindingPath="CountryName" 
 
@@ -413,8 +365,6 @@ StackedBarSeries series1 = new StackedBarSeries()
 
     YBindingPath = "GoldMedals",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 StackedBarSeries series2 = new StackedBarSeries()
@@ -426,8 +376,6 @@ StackedBarSeries series2 = new StackedBarSeries()
 
     YBindingPath = "SilverMedals",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 StackedBarSeries series3 = new StackedBarSeries()
@@ -438,8 +386,6 @@ StackedBarSeries series3 = new StackedBarSeries()
     XBindingPath = "CountryName",
 
     YBindingPath = "BronzeMedals",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
 
 };
 
@@ -464,7 +410,7 @@ chart.Series.Add(series3);
 
 {% highlight xaml %}
 
-<chart:StackedBar100Series Interior="#BCBCBC"
+<chart:StackedBar100Series
 
 XBindingPath="CountryName" 
 
@@ -472,7 +418,7 @@ YBindingPath="GoldMedals"
 
 ItemsSource="{Binding MedalDetails}" />
 
-<chart:StackedBar100Series Interior="#4A4A4A" 
+<chart:StackedBar100Series 
 
 XBindingPath="CountryName"                          
 
@@ -480,7 +426,7 @@ YBindingPath="SilverMedals"
 
 ItemsSource="{Binding MedalDetails}" />
 
-<chart:StackedBar100Series Interior="#7F7F7F" 
+<chart:StackedBar100Series 
 
 XBindingPath="CountryName" 
 
@@ -501,8 +447,6 @@ StackedBar100Series series1 = new StackedBar100Series()
 
     YBindingPath = "GoldMedals",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 StackedBar100Series series2 = new StackedBar100Series()
@@ -514,8 +458,6 @@ StackedBar100Series series2 = new StackedBar100Series()
 
     YBindingPath = "SilverMedals",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 StackedBar100Series series3 = new StackedBar100Series()
@@ -526,8 +468,6 @@ StackedBar100Series series3 = new StackedBar100Series()
     XBindingPath = "CountryName",
 
     YBindingPath = "BronzeMedals",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
 
 };
 
@@ -551,19 +491,19 @@ chart.Series.Add(series3);
 
 {% highlight xaml %}
 
-<chart:StackedAreaSeries Interior="#BCBCBC" 
+<chart:StackedAreaSeries 
 
 XBindingPath="Month" YBindingPath="Bus" 
 
 ItemsSource="{Binding Accidents}" />
 
-<chart:StackedAreaSeries Interior="#4A4A4A"                  
+<chart:StackedAreaSeries                  
 
 XBindingPath="Month" YBindingPath="Car" 
 
 ItemsSource="{Binding Accidents}" />
 
-<chart:StackedAreaSeries  Interior="#7F7F7FC"                     
+<chart:StackedAreaSeries                     
 
 XBindingPath="Month" 
 
@@ -584,8 +524,6 @@ StackedAreaSeries series1 = new StackedAreaSeries()
 
     YBindingPath = "Bus",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 StackedAreaSeries series2 = new StackedAreaSeries()
@@ -597,8 +535,6 @@ StackedAreaSeries series2 = new StackedAreaSeries()
 
     YBindingPath = "Car",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 StackedAreaSeries series3 = new StackedAreaSeries()
@@ -609,8 +545,6 @@ StackedAreaSeries series3 = new StackedAreaSeries()
     XBindingPath = "Month",
 
     YBindingPath = "Truck",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
 
 };
 
@@ -636,7 +570,7 @@ The following code example shows the way to add Stacked area 100 series:
 
 {% highlight xaml %}
 
-<chart:StackedArea100Series Interior="#BCBCBC" 
+<chart:StackedArea100Series 
 
 XBindingPath="Month"         
 
@@ -646,13 +580,13 @@ ItemsSource="{Binding Accidents}"
 
 />
 
-<chart:StackedArea100Series Interior="#4A4A4A" 
+<chart:StackedArea100Series 
 
 XBindingPath="Month" YBindingPath="Car" 
 
 ItemsSource="{Binding Accidents}" />
 
-<chart:StackedArea100Series Interior="#7F7F7F" 
+<chart:StackedArea100Series 
 
 XBindingPath="Month" 
 
@@ -673,8 +607,6 @@ StackedArea100Series series1 = new StackedArea100Series()
 
     YBindingPath = "Bus",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 StackedArea100Series series2 = new StackedArea100Series()
@@ -686,8 +618,6 @@ StackedArea100Series series2 = new StackedArea100Series()
 
     YBindingPath = "Car",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 StackedArea100Series series3 = new StackedArea100Series()
@@ -698,8 +628,6 @@ StackedArea100Series series3 = new StackedArea100Series()
     XBindingPath = "Month",
 
     YBindingPath = "Truck",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
 
 };
 
@@ -721,7 +649,7 @@ You can draw open curve like Area using this [`IsClosed`](https://help.syncfusio
 
 {% highlight xaml %}
 
-<chart:StackedAreaSeries  Interior="#BCBCBC" Stroke="Black" StrokeThickness="3"
+<chart:StackedAreaSeries Stroke="Black" StrokeThickness="3"
 
 IsClosed="False" XBindingPath="Month" 
 
@@ -729,7 +657,7 @@ YBindingPath="Bus"
 
 ItemsSource="{Binding Accidents}"/>
 
-<chart:StackedAreaSeries  Interior="#777777" Stroke="White" StrokeThickness="3"
+<chart:StackedAreaSeries Stroke="White" StrokeThickness="3"
 
 IsClosed="False"  XBindingPath="Month"             
 
@@ -737,7 +665,7 @@ YBindingPath="Car"
 
 ItemsSource="{Binding Accidents}"/>
 
-<chart:StackedAreaSeries  Interior="#7F7F7F" Stroke="Black"   
+<chart:StackedAreaSeries Stroke="Black"   
 
 StrokeThickness="3" IsClosed="False"   
 
@@ -766,8 +694,6 @@ StackedAreaSeries series1 = new StackedAreaSeries()
 
     IsClosed = false,
 
-    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 StackedAreaSeries series2 = new StackedAreaSeries()
@@ -785,8 +711,6 @@ StackedAreaSeries series2 = new StackedAreaSeries()
 
     IsClosed = false,
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0X77))
-
 };
 
 StackedAreaSeries series3 = new StackedAreaSeries()
@@ -803,8 +727,6 @@ StackedAreaSeries series3 = new StackedAreaSeries()
     StrokeThickness = 3,
 
     IsClosed = false,
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
 
 };
 

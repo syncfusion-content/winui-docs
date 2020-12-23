@@ -19,13 +19,11 @@ The size of the bubble series is relative proportional to the value bind with th
 
 {% highlight xaml %}
 
-<chart:BubbleSeries  ItemsSource="{Binding Fruits}"  XBindingPath="FruitName" 
+<chart:BubbleSeries ItemsSource="{Binding Fruits}" XBindingPath="FruitName" 
 
-YBindingPath="People"   Size="Size" MinimumRadius="5" 
+YBindingPath="People" Size="Size" MinimumRadius="5" 
 
-MaximumRadius="10"
-
-Interior="#BCBCBC" />
+MaximumRadius="10"/>
 
 {% endhighlight %}
 
@@ -43,8 +41,6 @@ BubbleSeries series = new BubbleSeries()
     Size = "Size",
 
     MinimumRadius = 5,
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
 
 };
 
@@ -115,7 +111,7 @@ series.ShowZeroBubbles = false;
 
 {% highlight xaml %}
 
-<chart:ScatterSeries Interior="#4A4A4A" ScatterHeight="4" ScatterWidth="4" 
+<chart:ScatterSeries ScatterHeight="4" ScatterWidth="4" 
 
 ItemsSource="{Binding DataPoints}" XBindingPath="Eruptions" 
 
@@ -137,8 +133,6 @@ ScatterSeries series = new ScatterSeries()
     ScatterHeight = 4,
 
     ScatterWidth = 4,
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
 
 };
 

@@ -17,7 +17,7 @@ Column charts plot discrete rectangles for the given values. The following code 
 
 {% highlight xaml %}
 
-<chart:ColumnSeries Interior="#7F7F7F" ItemsSource="{Binding SneakersDetail}"           
+<chart:ColumnSeries ItemsSource="{Binding SneakersDetail}"           
 
 XBindingPath="Brand" YBindingPath="ItemsCount1"   />
 
@@ -33,8 +33,6 @@ ColumnSeries series = new ColumnSeries()
     XBindingPath = "Brand",
 
     YBindingPath = "ItemsCount1",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
 
 };
 
@@ -56,7 +54,7 @@ Bar series are similar to column series, excepts its orientation. The following 
 
 <chart:BarSeries ItemsSource="{Binding CategoricalDatas}" XBindingPath="Category" 
 
-YBindingPath="Value" Interior="#7F7F7F" />
+YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -70,8 +68,6 @@ BarSeries series = new BarSeries()
     XBindingPath = "Category",
 
     YBindingPath = "Value",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
 
 };
 

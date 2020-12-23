@@ -17,16 +17,16 @@ The following code example shows how to group the stacked series.
 
 {% highlight xaml %}
 
-        <chart:StackedColumnSeries Interior="#4A4A4A" GroupingLabel="Group1" XBindingPath="Year" 
+        <chart:StackedColumnSeries GroupName="Group1" XBindingPath="Year" 
          YBindingPath="Quarter1" ItemsSource="{Binding AnnualDetails}"/>
 
-        <chart:StackedColumnSeries Interior="#BCBCBC" GroupingLabel="Group1" XBindingPath="Year" 
+        <chart:StackedColumnSeries GroupName="Group1" XBindingPath="Year" 
           YBindingPath="Quarter2" ItemsSource="{Binding AnnualDetails}"/>
 
-        <chart:StackedColumnSeries Interior="#7F7F7F" GroupingLabel="Group2" XBindingPath="Year"
+        <chart:StackedColumnSeries GroupName="Group2" XBindingPath="Year"
           YBindingPath="Quarter3" ItemsSource="{Binding AnnualDetails}"/>
 
-        <chart:StackedColumnSeries Interior="#343434" GroupingLabel="Group2" XBindingPath="Year"
+        <chart:StackedColumnSeries GroupName="Group2" XBindingPath="Year"
           YBindingPath="Quarter4" ItemsSource="{Binding AnnualDetails}"/>
 
 {% endhighlight %}
@@ -40,8 +40,7 @@ The following code example shows how to group the stacked series.
                 ItemsSource = new ViewModel().AnnualDetails,
                 XBindingPath = "Year",
                 YBindingPath = "Quarter1",
-                GroupingLabel = "Group1",
-                Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
+                GroupName = "Group1",
             };
 
             StackedColumnSeries series2 = new StackedColumnSeries()
@@ -49,8 +48,7 @@ The following code example shows how to group the stacked series.
                 ItemsSource = new ViewModel().AnnualDetails,
                 XBindingPath = "Year",
                 YBindingPath = "Quarter2",
-                GroupingLabel = "Group1",
-                Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+                GroupName = "Group1",
             };
 
             StackedColumnSeries series3 = new StackedColumnSeries()
@@ -58,8 +56,7 @@ The following code example shows how to group the stacked series.
                 ItemsSource = new ViewModel().AnnualDetails,
                 XBindingPath = "Year",
                 YBindingPath = "Quarter3",
-                GroupingLabel = "Group2",
-                Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
+                GroupName = "Group2",
             };
 
             StackedColumnSeries series4 = new StackedColumnSeries()
@@ -67,8 +64,7 @@ The following code example shows how to group the stacked series.
                 ItemsSource = new ViewModel().AnnualDetails,
                 XBindingPath = "Year",
                 YBindingPath = "Quarter4",
-                GroupingLabel = "Group2",
-                Interior = new SolidColorBrush(Color.FromRgb(0x34, 0x34, 0x34))
+                GroupName = "Group2",
             };
 
             chart.Series.Add(series1);

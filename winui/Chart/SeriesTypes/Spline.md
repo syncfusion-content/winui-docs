@@ -19,15 +19,11 @@ documentation: ug
 
 <chart:SplineSeries  XBindingPath="Year"     
 
-ItemsSource="{Binding List}" YBindingPath="India"               
-
-Interior="#4A4A4A"/>
+ItemsSource="{Binding List}" YBindingPath="India"/>
 
 <chart:SplineSeries  XBindingPath="Year"     
 
-ItemsSource="{Binding List}" YBindingPath="America"               
-
-Interior="#4A4A4A"/>
+ItemsSource="{Binding List}" YBindingPath="America"/>
 
 {% endhighlight %}
 
@@ -42,8 +38,6 @@ SplineSeries series1 = new SplineSeries()
 
     YBindingPath = "India",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 SplineSeries series2 = new SplineSeries()
@@ -54,8 +48,6 @@ SplineSeries series2 = new SplineSeries()
     XBindingPath = "Year",
 
     YBindingPath = "America",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
 
 };
 
@@ -108,7 +100,7 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:SplineAreaSeries Interior="#7F7F7F"              
+<chart:SplineAreaSeries             
 
 ItemsSource="{Binding Products}" XBindingPath="ProdName"     
 
@@ -126,8 +118,6 @@ SplineAreaSeries series = new SplineAreaSeries()
     XBindingPath = "ProdName",
 
     YBindingPath = "Price",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
 
 };
 

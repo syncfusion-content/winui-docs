@@ -18,7 +18,7 @@ The following code example initializes the AreaSeries:
 
 {% highlight xaml %}
 
-<chart:AreaSeries XBindingPath="FruitName" Interior="#BCBCBC" 
+<chart:AreaSeries XBindingPath="FruitName" 
 
 YBindingPath="People" ItemsSource="{Binding Fruits}" >   
 
@@ -34,8 +34,6 @@ AreaSeries series = new AreaSeries()
     XBindingPath = "FruitName",
 
     YBindingPath = "People",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
 
 };
 
@@ -55,7 +53,7 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:StepAreaSeries  Interior="#7F7F7F"  
+<chart:StepAreaSeries 
 
 ItemsSource="{Binding SneakersDetail}" XBindingPath="Brand" 
 
@@ -73,8 +71,6 @@ StepAreaSeries series = new StepAreaSeries()
     XBindingPath = "Brand",
 
     YBindingPath = "ItemsCount",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
 
 };
 
@@ -96,7 +92,7 @@ If you wish to draw the open area series (Area with stroke only at top), SfChart
 
 <chart:AreaSeries  IsClosed="False"
 
-XBindingPath="FruitName" Interior="#BCBCBC" 
+XBindingPath="FruitName"
 
 YBindingPath="People" ItemsSource="{Binding Fruits}" /> 
 
@@ -114,8 +110,6 @@ AreaSeries series = new AreaSeries()
     YBindingPath = "People",
 
     IsClosed = true,
-
-    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
 
 };
 
