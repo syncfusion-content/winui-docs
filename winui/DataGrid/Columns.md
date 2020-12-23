@@ -226,7 +226,7 @@ Custom type properties will be auto-generated through [AutoGenerateColumnsModeFo
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.AutoGenerateColumnsForCustomType = true;
-this.sfDataGrid.AutoGenerateColumnsModeForCustomType = AutoGenerateColumnsModeForCustomType.Parent;           
+this.sfDataGrid.AutoGenerateColumnsModeForCustomType = AutoGenerateColumnsModeForCustomType.Both;           
 {% endhighlight %}
 {% endtabs %}
 
@@ -581,7 +581,7 @@ N> Resizing considers MinWidth and MaxWidth of column.
 
 You can change the column width by click and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line exists between two columns.
  
-![Resizing Columns](Columns-images/Columns-image1.png)
+![Resizing Columns](Columns-images/Columns-image3.png)
 
 ### Hidden column resizing
 

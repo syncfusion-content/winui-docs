@@ -108,7 +108,7 @@ In SfDataGrid while setting `SfDataGrid.ColumnWidthMode` as `AutoLastColumnFill`
             <syncfusion:SfDataGrid.Columns>
                 <syncfusion:GridTextColumn HeaderText="Order ID" MappingName="OrderID" ColumnWidthMode="AutoLastColumnFill" />
                 <syncfusion:GridTextColumn HeaderText="Order Date" MappingName="OrderDate" />
-                <syncfusion:GridTextColumn HeaderText="Unit Price" MappingName="Unit Price" />
+                <syncfusion:GridTextColumn HeaderText="Unit Price" MappingName="UnitPrice" />
                 <syncfusion:GridTextColumn HeaderText="Quantity" MappingName="Quantity" />               
                 <syncfusion:GridTextColumn HeaderText="Ship City" MappingName="ShipCity" />
                 <syncfusion:GridTextColumn HeaderText="Ship Address" MappingName="ShipAddress" />
@@ -117,7 +117,7 @@ In SfDataGrid while setting `SfDataGrid.ColumnWidthMode` as `AutoLastColumnFill`
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.ColumnWidthMode = ColumnWidthMode.AutoLastColumnFill;
-this.sfDataGrid.Columns["OrderID"].ColumnWidthMode = ColumnWidthMode.AutoWithLastColumnFill;
+this.sfDataGrid.Columns["OrderID"].ColumnWidthMode = ColumnWidthMode.AutoLastColumnFill;
 {% endhighlight %}
 {% endtabs %}
 
