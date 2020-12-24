@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Axis| SfChart | WinUI | Syncfusion 
-description: Explains the parts of axis, types of axis, it's behavior and customization options in WinUI Chart (SfChart)
+title: Axis | SfChart | WinUI | Syncfusion 
+description: This scetion explains the types of axis, it's behavior and customization options in WinUI Chart (SfChart)
 platform: WinUI
 control: SfChart
 documentation: ug
