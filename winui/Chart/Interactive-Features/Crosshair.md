@@ -84,7 +84,7 @@ chart.SecondaryAxis = new NumericalAxis()
 ![Crosshair support in WinUI Chart](Interactive-Features_images/Interactive-Features_img46.jpeg)
 
 
-**Crosshair** is composed of the following parts:
+Crosshair is composed of the following parts:
 
 1. Vertical and horizontal line
 
@@ -141,7 +141,7 @@ chart.Behaviors.Add(Crosshair);
 
 {% endtabs %}
 
-![Cross hair line style in WinUI Chart](Interactive-Features_images/Interactive-Features_img47.jpeg)
+![Crosshair line style in WinUI Chart](Interactive-Features_images/Interactive-Features_img47.jpeg)
 
 
 **VerticalLineStyle**
@@ -191,7 +191,7 @@ chart.Behaviors.Add(Crosshair);
 
 {% endtabs %}
 
-![Cross hair line style in WinUI Chart](Interactive-Features_images/Interactive-Features_img48.jpeg)
+![Crosshair line style in WinUI Chart](Interactive-Features_images/Interactive-Features_img48.jpeg)
 
 
 ## Horizontal axis label
@@ -210,7 +210,7 @@ Axis Label can be aligned by Near, Far, Center, and Auto options.
 
 The following image demonstrates the horizontal axis label positioned center to the vertical line.
 
-![Axis label alignment support for cross hair in WinUI Chart](Interactive-Features_images/Interactive-Features_img49.jpeg)
+![Axis label alignment support for crosshair in WinUI Chart](Interactive-Features_images/Interactive-Features_img49.jpeg)
 
 
 **Far**
@@ -244,7 +244,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Axis label alignment support for cross hair in WinUI Chart](Interactive-Features_images/Interactive-Features_img50.jpeg)
+![Axis label alignment support for crosshair in WinUI Chart](Interactive-Features_images/Interactive-Features_img50.jpeg)
 
 
 **Near**
@@ -278,18 +278,18 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Axis label alignment support for cross hair in WinUI Chart](Interactive-Features_images/Interactive-Features_img51.jpeg)
+![Axis label alignment support for crosshair in WinUI Chart](Interactive-Features_images/Interactive-Features_img51.jpeg)
 
 
 ## Vertical axis label
 
-Vertical axis label is displayed when the horizontal line in contact with x axis.The label can be aligned using [`VerticalAxisLabelAlignment`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#Syncfusion_UI_Xaml_Charts_ChartCrosshairBehavior_VerticalAxisLabelAlignment) property.
+Vertical axis label is displayed when the horizontal line in contact with x axis. The label can be aligned using [`VerticalAxisLabelAlignment`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#Syncfusion_UI_Xaml_Charts_ChartCrosshairBehavior_VerticalAxisLabelAlignment) property.
 
 Axis Label can be aligned by Near, Far, Center, and Auto options.
 
 The following image demonstrates the horizontal axis label positioned center to the vertical line.
 
-![Axis label alignment support for cross hair in WinUI Chart](Interactive-Features_images/Interactive-Features_img52.jpeg)
+![Axis label alignment support for crosshair in WinUI Chart](Interactive-Features_images/Interactive-Features_img52.jpeg)
 
 
 **Near**
@@ -323,7 +323,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Axis label alignment support for cross hair in WinUI Chart](Interactive-Features_images/Interactive-Features_img53.jpeg)
+![Axis label alignment support for crosshair in WinUI Chart](Interactive-Features_images/Interactive-Features_img53.jpeg)
 
 **Far**
 
@@ -356,7 +356,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Axis label alignment support for cross hair in WinUI Chart](Interactive-Features_images/Interactive-Features_img54.jpeg)
+![Axis label alignment support for crosshair in WinUI Chart](Interactive-Features_images/Interactive-Features_img54.jpeg)
 
 ## Customization of Crosshair axis labels
 
