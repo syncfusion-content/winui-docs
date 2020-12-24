@@ -17,9 +17,9 @@ Column charts plot discrete rectangles for the given values. The following code 
 
 {% highlight xaml %}
 
-<chart:ColumnSeries ItemsSource="{Binding SneakersDetail}"           
+<chart:ColumnSeries ItemsSource="{Binding Data}"           
 
-XBindingPath="Brand" YBindingPath="ItemsCount1"   />
+XBindingPath="XValue" YBindingPath="YValue"   />
 
 {% endhighlight %}
 
@@ -28,11 +28,11 @@ XBindingPath="Brand" YBindingPath="ItemsCount1"   />
 ColumnSeries series = new ColumnSeries()
 {
 
-    ItemsSource = new ViewModel().SneakersDetail,
+    ItemsSource = new ViewModel().Data,
 
-    XBindingPath = "Brand",
+    XBindingPath = "XValue",
 
-    YBindingPath = "ItemsCount1",
+    YBindingPath = "YValue",
 
 };
 
