@@ -9,13 +9,13 @@ documentation: ug
 
 # Getting Started with WinUI Barcode
 
-This section provides a quick overview for getting started with the [Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html) for WinUI. Walk through the entire process of creating a real world of this control.
+This section provides a quick overview for getting started with the [Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html) for WinUI. Walk through the entire process of creating a real world of this control.
 
 ## Creating an application with WinUI Barcode
 
 1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
 2. Add reference to [Syncfusion.Barcode.WinUI](https://www.nuget.org/packages/Syncfusion.Barcode.WinUI) NuGet. 
-3. Import the control namespace `using Syncfusion.UI.Xaml.Controls.Barcode` in XAML or C# code.
+3. Import the control namespace `using Syncfusion.UI.Xaml.Barcode` in XAML or C# code.
 4. Initialize the SfBarCode control.
 
 {% tabs %}
@@ -26,12 +26,16 @@ This section provides a quick overview for getting started with the [Barcode](ht
                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-                xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Barcode"
+                xmlns:syncfusion="using:Syncfusion.UI.Xaml.Barcode"
                 xmlns:local="using:syncfusion.barcodedemos.winui"
                 Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
                 NavigationCacheMode="Disabled">
                 <Grid>
-                        <syncfusion:SfBarcode x:Name="barcode" Value="48625310"/>
+                        <syncfusion:SfBarcode x:Name="barcode" Value="48625310">
+                        <syncfusion:SfBarcode.Symbology>  
+                        <syncfusion:CodabarBarcode />  
+                        </syncfusion:SfBarcode.Symbology>  
+                        </syncfusion:SfBarcode>
                 </Grid>
 
 </Page>
@@ -41,7 +45,7 @@ This section provides a quick overview for getting started with the [Barcode](ht
 {% highlight C# %} 
 
 using Microsoft.UI.Xaml.Controls;
-using Syncfusion.UI.Xaml.Controls.Barcode;
+using Syncfusion.UI.Xaml.Barcode;
 
 public sealed partial class GettingStartedPage : Page
 {
@@ -52,6 +56,9 @@ public sealed partial class GettingStartedPage : Page
     {
         this.InitializeComponent();
         SfBarcode barcode = new SfBarcode();
+        CodabarBarcode codabarBarcode = new CodabarBarcode();
+        barcode.Symbology = codabarBarcode;
+        barcode.Value = "48625310";
         Root_Grid.Children.Add(barcode);
     }
 }
@@ -63,12 +70,12 @@ public sealed partial class GettingStartedPage : Page
 
 ## Symbology
 
-You can set the required symbology to the barcode based on input value by initializing the respective symbology instance using [Symbology](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_SfBarcode_Symbology) property. In the following code snippet, the QR code has been set as the barcode symbology.
+You can set the required symbology to the barcode based on input value by initializing the respective symbology instance using [Symbology](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_Symbology) property. In the following code snippet, the QR code has been set as the barcode symbology.
 
 {% tabs %}
 {% highlight xaml %}
 
-<Page xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Barcode">
+<Page xmlns:syncfusion="using:Syncfusion.UI.Xaml.Barcode">
 
         <Grid>
                 <syncfusion:SfBarcode x:Name="barcode" Value="http://www.syncfusion.com">
@@ -91,13 +98,17 @@ The Barcode text can be customized by using below properties,
 
 ### Value
 
-The text to be encoded can be set using the [Value](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_SfBarcode_Value) property. By default, this original text will be displayed at the bottom of the bar code. 
+The text to be encoded can be set using the [Value](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_Value) property. By default, this original text will be displayed at the bottom of the bar code. 
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfBarcode x:Name="barcode" Value="48625310" Height="150"/>
-               
+<syncfusion:SfBarcode x:Name="barcode" Value="48625310" Height="150">
+<syncfusion:SfBarcode.Symbology>  
+<syncfusion:CodabarBarcode />  
+</syncfusion:SfBarcode.Symbology>  
+</syncfusion:SfBarcode>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -105,12 +116,16 @@ The text to be encoded can be set using the [Value](https://help.syncfusion.com/
 
 ### TextSpacing
 
-The space between barcode and text can be increased/decreased by using [TextSpacing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_SfBarcode_TextSpacing) property. 
+The space between barcode and text can be increased/decreased by using [TextSpacing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_TextSpacing) property. 
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfBarcode x:Name="barcode" Value="10110111" Height="150" TextSpacing="7"/>
+<syncfusion:SfBarcode x:Name="barcode" Value="10110111" Height="150" TextSpacing="7">  
+<syncfusion:SfBarcode.Symbology>  
+<syncfusion:CodabarBarcode />  
+</syncfusion:SfBarcode.Symbology>  
+</syncfusion:SfBarcode>
 
 {% endhighlight %}
 {% endtabs %}
@@ -119,12 +134,16 @@ The space between barcode and text can be increased/decreased by using [TextSpac
 
 ### ShowValue
 
-The visibility of the Barcode text can be changed using [ShowValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_SfBarcode_ShowValue) property in Barcode. 
+The visibility of the Barcode text can be changed using [ShowValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_ShowValue) property in Barcode. 
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfBarcode x:Name="barcode" Value="10110111" Height="150" ShowValue="False"/>
+<syncfusion:SfBarcode x:Name="barcode" Value="10110111" Height="150" ShowValue="False">  
+<syncfusion:SfBarcode.Symbology>  
+<syncfusion:CodabarBarcode />  
+</syncfusion:SfBarcode.Symbology>  
+</syncfusion:SfBarcode>
 
 {% endhighlight %}
 {% endtabs %}
@@ -133,12 +152,16 @@ The visibility of the Barcode text can be changed using [ShowValue](https://help
 
 ### HorizontalTextAlignment
 
-The horizontal alignment of the Barcode text can be changed using [HorizontalTextAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_SfBarcode_HorizontalTextAlignment) property in Barcode.
+The horizontal alignment of the Barcode text can be changed using [HorizontalTextAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_HorizontalTextAlignment) property in Barcode.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfBarcode x:Name="barcode" Value="10110111" Height="150" HorizontalTextAlignment="Right" />
+<syncfusion:SfBarcode x:Name="barcode" Value="10110111" Height="150" HorizontalTextAlignment="Right">  
+<syncfusion:SfBarcode.Symbology>  
+<syncfusion:CodabarBarcode />  
+</syncfusion:SfBarcode.Symbology>  
+</syncfusion:SfBarcode>
 
 {% endhighlight %}
 {% endtabs %}
@@ -147,12 +170,16 @@ The horizontal alignment of the Barcode text can be changed using [HorizontalTex
 
 ### VerticalTextAlignment
 
-The vertical alignment of the Barcode text can be changed using [VerticalTextAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_SfBarcode_VerticalTextAlignment) property in Barcode.
+The vertical alignment of the Barcode text can be changed using [VerticalTextAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_VerticalTextAlignment) property in Barcode.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfBarcode x:Name="barcode" Value="10110111" Height="150" VerticalTextAlignment="Top" />
+<syncfusion:SfBarcode x:Name="barcode" Value="10110111" Height="150" VerticalTextAlignment="Top">  
+<syncfusion:SfBarcode.Symbology>  
+<syncfusion:CodabarBarcode />  
+</syncfusion:SfBarcode.Symbology>  
+</syncfusion:SfBarcode>
 
 {% endhighlight %}
 {% endtabs %}
