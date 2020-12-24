@@ -9,7 +9,7 @@ documentation: ug
 
 # Custom Scale Range in Range Slider
 
-Range slider allows you to define a custom scale range by extending the range slider based on your business logic.
+RangeSlider allows you to define a custom scale range by extending the RangeSlider based on your business logic.
 
 {% tabs %}
 

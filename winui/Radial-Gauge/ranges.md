@@ -460,7 +460,7 @@ this.Content = sfRadialGauge;
 
 ## Range label
 
-A text can be displayed on range using the `Label` property. The provided text can be customized using the `Foreground`, `FontSize`, `FontWeight`, `FontFamily` and `FontStyle` properties of [`range`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html).
+A text can be displayed on range using the [`Label`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_Label) property. The provided text can be customized using the `Foreground`, `FontSize`, `FontWeight`, `FontFamily` and `FontStyle` properties of [`range`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html).
 
 {% tabs %}
 
@@ -598,7 +598,7 @@ this.Content = sfRadialGauge;
 
 **Template support for range label**
 
-The `LabelTemplate` property allows you to define the data template for the range label's like the following code example.
+The [`LabelTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_LabelTemplate) property allows you to define the data template for the range label's like the following code example.
 
 {% tabs %}
 
