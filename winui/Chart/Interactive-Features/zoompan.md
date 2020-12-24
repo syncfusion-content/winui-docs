@@ -85,8 +85,6 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ![Zooming support in WinUI Chart](Interactive-Features_images/Interactive-Features_img24.jpeg)
 
-**Enable Zooming**
-
 **Mouse** **Wheel** **Zooming**
 
 Zooming can be performed by mouse wheel action by setting [`EnableMouseWheelZooming`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_EnableMouseWheelZooming) property to true.
