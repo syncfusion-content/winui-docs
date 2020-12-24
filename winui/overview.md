@@ -63,6 +63,7 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
          <td>
             <p><a href="https://help.syncfusion.com/winui/treeview/getting-started">Tree View</a></p>
         </td>
+        <td></td>
     </tr>    
     <tr>
         <td colspan="3">
@@ -73,6 +74,7 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
         <td>
             <p><a href="https://help.syncfusion.com/winui/badge/getting-started">Badge</a></p>
         </td>
+        <td></td>
         <td></td>
     </tr>
     <tr>
@@ -110,6 +112,7 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
         <td>
             <p>Range Slider</p>
         </td>
+        <td></td>
     </tr>
     <tr>
         <td colspan="3">
