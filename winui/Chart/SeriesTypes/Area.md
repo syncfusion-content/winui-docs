@@ -20,7 +20,7 @@ The following code example initializes the AreaSeries:
 
 <chart:AreaSeries XBindingPath="FruitName" 
 
-YBindingPath="People" ItemsSource="{Binding Fruits}" >   
+YBindingPath="People" ItemsSource="{Binding Fruits}" />   
 
 {% endhighlight %}
 
@@ -70,7 +70,7 @@ StepAreaSeries series = new StepAreaSeries()
 
     XBindingPath = "Brand",
 
-    YBindingPath = "ItemsCount",
+    YBindingPath = "ItemCount",
 
 };
 
