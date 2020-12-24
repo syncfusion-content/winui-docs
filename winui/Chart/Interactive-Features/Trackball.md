@@ -89,7 +89,7 @@ The Trackball is composed of the following parts:
 
 ## Vertical Line
 
-The vertical line in the Trackball is visible when you initialize the TrackballBehavior. If you want to collapse the visibility of the Trackball line, then you have to set ShowLine to false.
+The vertical line in the Trackball is visible when you initialize the TrackballBehavior. If you want to collapse the visibility of the Trackball line, then you have to set [`ShowLine`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_ShowLine) to false.
 
 The following code snippet explains how to collapse the visibility of Trackball line.
 
