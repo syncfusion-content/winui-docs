@@ -198,7 +198,7 @@ chart.Behaviors.Add(Crosshair);
 
 The vertical line in contact with the x axes shows axis label. The horizontal axis label can be aligned using [`HorizontalAxisLabelAlignment`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#Syncfusion_UI_Xaml_Charts_ChartCrosshairBehavior_HorizontalAxisLabelAlignment) property.
 
-Axis Label can be aligned by Near, Far, Center, Auto Options.
+Axis Label can be aligned by Near, Far, Center, and Auto options.
 
 * [`Auto`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAlignment.html) – Axis label is aligned in Near/Far positions based on the movement of vertical line.
 
@@ -285,7 +285,7 @@ chart.Behaviors.Add(behavior);
 
 Vertical axis label is displayed when the horizontal line in contact with x axis.The label can be aligned using [`VerticalAxisLabelAlignment`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#Syncfusion_UI_Xaml_Charts_ChartCrosshairBehavior_VerticalAxisLabelAlignment) property.
 
-Axis Label can be aligned by Near, Far, Center, Auto, and None Options.
+Axis Label can be aligned by Near, Far, Center, and Auto options.
 
 The following image demonstrates the horizontal axis label positioned center to the vertical line.
 
