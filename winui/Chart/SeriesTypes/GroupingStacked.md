@@ -17,60 +17,60 @@ The following code example shows how to group the stacked series.
 
 {% highlight xaml %}
 
-        <chart:StackedColumnSeries GroupName="Group1" XBindingPath="Year" 
+<chart:StackedColumnSeries GroupName="Group1" XBindingPath="Year" 
          YBindingPath="Quarter1" ItemsSource="{Binding AnnualDetails}"/>
 
-        <chart:StackedColumnSeries GroupName="Group1" XBindingPath="Year" 
+<chart:StackedColumnSeries GroupName="Group1" XBindingPath="Year" 
           YBindingPath="Quarter2" ItemsSource="{Binding AnnualDetails}"/>
 
-        <chart:StackedColumnSeries GroupName="Group2" XBindingPath="Year"
+<chart:StackedColumnSeries GroupName="Group2" XBindingPath="Year"
           YBindingPath="Quarter3" ItemsSource="{Binding AnnualDetails}"/>
 
-        <chart:StackedColumnSeries GroupName="Group2" XBindingPath="Year"
+<chart:StackedColumnSeries GroupName="Group2" XBindingPath="Year"
           YBindingPath="Quarter4" ItemsSource="{Binding AnnualDetails}"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfChart chart = new SfChart();
+SfChart chart = new SfChart();
 
-            StackedColumnSeries series1 = new StackedColumnSeries()
-            {
-                ItemsSource = new ViewModel().AnnualDetails,
-                XBindingPath = "Year",
-                YBindingPath = "Quarter1",
-                GroupName = "Group1",
-            };
+StackedColumnSeries series1 = new StackedColumnSeries()
+{
+    ItemsSource = new ViewModel().AnnualDetails,
+    XBindingPath = "Year",
+    YBindingPath = "Quarter1",
+    GroupName = "Group1",
+};
 
-            StackedColumnSeries series2 = new StackedColumnSeries()
-            {
-                ItemsSource = new ViewModel().AnnualDetails,
-                XBindingPath = "Year",
-                YBindingPath = "Quarter2",
-                GroupName = "Group1",
-            };
+StackedColumnSeries series2 = new StackedColumnSeries()
+{
+    ItemsSource = new ViewModel().AnnualDetails,
+    XBindingPath = "Year",
+    YBindingPath = "Quarter2",
+    GroupName = "Group1",
+};
 
-            StackedColumnSeries series3 = new StackedColumnSeries()
-            {
-                ItemsSource = new ViewModel().AnnualDetails,
-                XBindingPath = "Year",
-                YBindingPath = "Quarter3",
-                GroupName = "Group2",
-            };
+StackedColumnSeries series3 = new StackedColumnSeries()
+{
+    ItemsSource = new ViewModel().AnnualDetails,
+    XBindingPath = "Year",
+    YBindingPath = "Quarter3",
+    GroupName = "Group2",
+};
 
-            StackedColumnSeries series4 = new StackedColumnSeries()
-            {
-                ItemsSource = new ViewModel().AnnualDetails,
-                XBindingPath = "Year",
-                YBindingPath = "Quarter4",
-                GroupName = "Group2",
-            };
+StackedColumnSeries series4 = new StackedColumnSeries()
+{
+    ItemsSource = new ViewModel().AnnualDetails,
+    XBindingPath = "Year",
+    YBindingPath = "Quarter4",
+    GroupName = "Group2",
+};
 
-            chart.Series.Add(series1);
-            chart.Series.Add(series2);
-            chart.Series.Add(series3);
-            chart.Series.Add(series4);
+chart.Series.Add(series1);
+chart.Series.Add(series2);
+chart.Series.Add(series3);
+chart.Series.Add(series4);
 {% endhighlight %}
 
 {% endtabs %}
