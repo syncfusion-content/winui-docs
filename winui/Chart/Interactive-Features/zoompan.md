@@ -13,7 +13,7 @@ SfChart allows you to zoom the chart area with the help of the zoom feature. Thi
 
 Zooming and panning provides you to take a close-up look of the data point plotted in the series
 
-## Enable Zooming and Panning
+## Adding ZoomPanBehavior to the SfChart
 
 You can create an instance ChartZoomPanBehavior and add it to the Behaviors collection.
 
@@ -84,6 +84,8 @@ chart.PrimaryAxis = new CategoryAxis()
 {% endtabs %}
 
 ![Zooming support in WinUI Chart](Interactive-Features_images/Interactive-Features_img24.jpeg)
+
+**Enable Zooming**
 
 **Mouse** **Wheel** **Zooming**
 
@@ -186,7 +188,7 @@ chart.Behaviors.Add(zooming);
 
 **SelectionZooming**
 
-SelectionZooming helps us to zoom a particular area by selecting the region using  rectangle.To enable the selection ,you have to set [`EnableSelectionZooming`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_EnableSelectionZooming) property to true.
+SelectionZooming helps us to zoom a particular area by selecting the region using rectangle. To enable the selection, you have to set [`EnableSelectionZooming`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_EnableSelectionZooming) property to true.
 
 The following code snippet demonstrated selection zooming.
 
@@ -224,7 +226,7 @@ chart.Behaviors.Add(zooming);
 
 **Customization** **of** **Selection** **Rectangle**
 
-Selection Rectangle can be customized by setting the following properties 
+Selection rectangle can be customized by setting the following properties: 
 
 * [`Fill`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_Fill)-Represents the brush filled in selection rectangle. 
 * [`Stroke`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_Stroke)- Represents the outer line color of selection rectangle.
@@ -276,7 +278,7 @@ chart.Behaviors.Add(zooming);
 
 The zooming can be done both horizontally and vertically. The zooming direction is defined using [`ZoomMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ZoomMode) property.
 
-Zooming along [`X`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ZoomMode.html) axis
+Following code example illustrates how to restrict the chart to be zoomed only along horizontal axis,
 
 {% tabs %}
 
@@ -284,7 +286,7 @@ Zooming along [`X`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Char
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True" ZoomMode="X">                                              
+<syncfusion:ChartZoomPanBehavior ZoomMode="X">                                              
 
 </syncfusion:ChartZoomPanBehavior>
 
@@ -296,8 +298,6 @@ Zooming along [`X`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Char
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
-    EnableSelectionZooming = true,
 
     ZoomMode = ZoomMode.X
 
@@ -312,7 +312,7 @@ chart.Behaviors.Add(zooming);
 ![Zoom mode support in WinUI Chart](Interactive-Features_images/Interactive-Features_img27.jpeg)
 
 
-Zooming along Y axis
+Following code example illustrates how to restrict the chart to be zoomed only along vertical axis,
 
 {% tabs %}
 
@@ -320,7 +320,7 @@ Zooming along Y axis
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True" ZoomMode="Y">                                              
+<syncfusion:ChartZoomPanBehavior ZoomMode="Y">                                              
 
 </syncfusion:ChartZoomPanBehavior>
 
@@ -332,8 +332,6 @@ Zooming along Y axis
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
-    EnableSelectionZooming = true,
 
     ZoomMode = ZoomMode.Y
 

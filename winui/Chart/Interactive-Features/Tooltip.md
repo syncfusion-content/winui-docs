@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToolTip feature in Syncfusion SfChart WinUI
+title: Tooltip feature in Syncfusion SfChart WinUI
 description: How to enable, customize the tooltip position, duration and appearance in Essential WinUI Chart (SfChart)
 platform: WinUI
 control: SfChart
@@ -14,7 +14,7 @@ The Tooltip feature allows you to display any information over a [`ChartSeries`]
 
 ## Define Tooltip
 
-By default, a small box containing the data points y values are displayed as the ToolTip. The y values vary depending on the [`ChartSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). For example, a single y value is usually displayed in Column and [`BarSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.BarSeries.html#). 
+By default, a small box containing the data points y values are displayed as the Tooltip. The y values vary depending on the [`ChartSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). For example, a single y value is usually displayed in [`Column`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#) and [`BarSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.BarSeries.html#). 
 
 The tooltip will be visible if you enable [`ShowTooltip`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property as in the below code snippet.
 
@@ -75,7 +75,7 @@ chart.Series.Add(series2);
 ![Tooltip support in WinUI Chart](Interactive-Features_images/Interactive-Features_img1.jpeg)
 
 
-## Aligning the ToolTip
+## Aligning the Tooltip
 
 The tooltip can be aligned with respect to the cursor position using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) and [`VerticalAlignment`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) properties.
 
@@ -210,9 +210,9 @@ chart.Series.Add(series2);
 ![Tooltip alignment support in WinUI Char](Interactive-Features_images/Interactive-Features_img3.jpeg)
 
 
-**ToolTipMargin**
+**TooltipMargin**
 
-You can also set the distance for the margin to be positioned from the cursor using the ToolTipMargin property as in the following code snippet.
+You can also set the distance for the margin to be positioned from the cursor using the TooltipMargin property as in the following code snippet.
 
 {% tabs %}
 
@@ -220,15 +220,13 @@ You can also set the distance for the margin to be positioned from the cursor us
 
 <Chart:ColumnSeries Label="2010" ShowTooltip="True"
 
-ItemsSource="{Binding Demands}"   Interior="#777777"
+ItemsSource="{Binding Demands}"
 
 Chart:ChartTooltip.TooltipMargin="25"
 
 XBindingPath="Demand" YBindingPath="Year2010" />
 
 <Chart:ColumnSeries Label="2011"  ItemsSource="{Binding Demands}"
-
-Interior="#4A4A4A"
 
 Chart:ChartTooltip.TooltipMargin="25"
 
@@ -249,8 +247,6 @@ ColumnSeries series1 = new ColumnSeries()
 
     ShowTooltip = true,
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
 
 };
@@ -267,8 +263,6 @@ ColumnSeries series2 = new ColumnSeries()
     YBindingPath = "Year2011",
 
     ShowTooltip = true,
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A)),
 
     Label = "2011"
 
@@ -330,8 +324,6 @@ ColumnSeries series1 = new ColumnSeries()
 
     ShowTooltip = true,
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
 
 };
@@ -351,8 +343,6 @@ ColumnSeries series2 = new ColumnSeries()
 
     ShowTooltip = true,
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A)),
-
     Label = "2011"
 
 };
@@ -371,9 +361,9 @@ chart.Series.Add(series2);
 
 ![VerticalOffset and HorizontalOffset support for tooltip in WinUI Chart](Interactive-Features_images/Interactive-Features_img5.jpeg)
 
-## ToolTip duration
+## Tooltip duration
 
-This property [`ShowDuration`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetShowDuration_System_Windows_DependencyObject_System_Int32_) in [`ChartToolTip`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) sets the duration time for tooltip to be displayed in milliseconds.
+The attached property [`ShowDuration`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetShowDuration_System_Windows_DependencyObject_System_Int32_) in [`ChartTooltip`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) sets the duration time for tooltip to be displayed in milliseconds.
 
 The following code example demonstrates the duration of the tooltip set as 5 seconds.
 
@@ -385,7 +375,7 @@ The following code example demonstrates the duration of the tooltip set as 5 sec
 
 Chart:ChartTooltip.ShowDuration="5000"                                          
 
-ItemsSource="{Binding Demands}" Interior="#777777"                                     
+ItemsSource="{Binding Demands}"                                     
 
 XBindingPath="Demand"  YBindingPath="Year2010">                                   
 
@@ -406,8 +396,6 @@ ColumnSeries series = new ColumnSeries()
 
     ShowTooltip = true,
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
 
 };
@@ -424,7 +412,7 @@ N> The tooltip by default will be displayed for 1000 milliseconds.
 
 **Show delay**
 
-ToolTip also has support to delay the time to display by setting the [`SetInitialShowDelay`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetInitialShowDelay_System_Windows_DependencyObject_System_Int32_) property in milliseconds.
+Tooltip also has support to delay the time to display by setting the [`SetInitialShowDelay`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetInitialShowDelay_System_Windows_DependencyObject_System_Int32_) property in milliseconds.
 
 The following code example demonstrates the tooltip will be delayed for 1 second at the before display.
 
@@ -436,7 +424,7 @@ The following code example demonstrates the tooltip will be delayed for 1 second
 
 Chart:ChartTooltip.InitialShowDelay="1000"                                          
 
-ItemsSource="{Binding Demands}" Interior="#777777"                                     
+ItemsSource="{Binding Demands}"                                     
 
 XBindingPath="Demand"  YBindingPath="Year2010" />                                   
 
@@ -454,8 +442,6 @@ ColumnSeries series = new ColumnSeries()
     YBindingPath = "Year2010",
 
     ShowTooltip = true,
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
 
     Label = "2010"
 
@@ -481,7 +467,7 @@ You can also provide animation effects for tooltip by setting the [`EnableAnimat
 
 Chart:ChartTooltip.EnableAnimation="True"                                          
 
-ItemsSource="{Binding Demands}" Interior="#777777"                                     
+ItemsSource="{Binding Demands}"                                     
 
 XBindingPath="Demand"  YBindingPath="Year2010">                                   
 
@@ -502,8 +488,6 @@ ColumnSeries series = new ColumnSeries()
 
     ShowTooltip = true,
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
 
 };
@@ -518,7 +502,7 @@ chart.Series.Add(series);
 
 ## Customizing the Appearance
 
-The [`ToolTipTemplate`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TooltipTemplate) property allows you to customize the default appearance of the tooltip as explained in the following code snippet.
+The [`TooltipTemplate`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TooltipTemplate) property allows you to customize the default appearance of the tooltip as explained in the following code snippet.
 
 {% tabs %}
 

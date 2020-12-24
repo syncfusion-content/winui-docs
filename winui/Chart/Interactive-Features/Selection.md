@@ -43,7 +43,7 @@ chart.Behaviors.Add(selection);
 
 Segment Selection allows you to highlight a segment in a chart series. To enable a segment selection in a chart series, you have to set the [`EnableSegmentSelection`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_EnableSegmentSelection) property to True. For highlighting a segment the  brush color can be set using [`SegmentSelectionBrush`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SegmentSelectionBrush) property.
 
-**ColumnSeries**
+**Segment Selection in ColumnSeries**
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ Segment Selection allows you to highlight a segment in a chart series. To enable
 
 </syncfusion:SfChart.Behaviors>
 
-<syncfusion:ColumnSeries Label="2011" SegmentSelectionBrush="Green" Interior="#777777"
+<syncfusion:ColumnSeries Label="2011" SegmentSelectionBrush="Green" 
 
 ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2011"/>
 
@@ -87,8 +87,6 @@ ColumnSeries series = new ColumnSeries()
 
     SegmentSelectionBrush = new SolidColorBrush(Colors.Green),
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 chart.Series.Add(series);
@@ -99,7 +97,7 @@ chart.Series.Add(series);
 
 ![Segment selection support in WinUI Chart](Interactive-Features_images/Interactive-Features_img34.jpeg)
 
-**SplineSeries**
+**Segment Selection in SplineSeries**
 
 In Linear type series the segment selection can be viewed by changing the data marker MarkerType interior.
 
@@ -111,7 +109,7 @@ The following code example demonstrates the spline series segment selection by c
 
 <syncfusion:SplineSeries SegmentSelectionBrush="Red"
 
-ItemsSource="{Binding Demands}" Interior="#4A4A4A"
+ItemsSource="{Binding Demands}"
 
 XBindingPath="Demand"
 
@@ -148,8 +146,6 @@ SplineSeries series = new SplineSeries()
     YBindingPath = "Year2010",
 
     SegmentSelectionBrush = new SolidColorBrush(Colors.Red),
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
 
 };
 
@@ -192,7 +188,7 @@ The following code example demonstrates highlighting a series.
 
 <syncfusion:ScatterSeries Label="2010"  SeriesSelectionBrush="Green"
 
-ItemsSource="{Binding Demands}" Interior="#4A4A4A"
+ItemsSource="{Binding Demands}"
 
 XBindingPath="Demand"
 
@@ -200,7 +196,7 @@ YBindingPath="Year2010">
 
 </syncfusion:ScatterSeries>
 
-<syncfusion:ScatterSeries Label="2011" SeriesSelectionBrush="Green" Interior="#777777"
+<syncfusion:ScatterSeries Label="2011" SeriesSelectionBrush="Green"
 
 ItemsSource="{Binding Demands}" XBindingPath="Demand" 
 
@@ -213,7 +209,7 @@ YBindingPath="Year2011"/>
 ChartSelectionBehavior selection = new ChartSelectionBehavior()
 {
 
-    EnableSegmentSelection = true,
+    EnableSegmentSelection = false,
 
     EnableSeriesSelection = true
 
@@ -234,8 +230,6 @@ ScatterSeries series1 = new ScatterSeries()
 
     SegmentSelectionBrush = new SolidColorBrush(Colors.Green),
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 ScatterSeries series2 = new ScatterSeries()
@@ -251,8 +245,6 @@ ScatterSeries series2 = new ScatterSeries()
 
     SegmentSelectionBrush = new SolidColorBrush(Colors.Green),
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 chart.Series.Add(series1);
@@ -266,226 +258,6 @@ chart.Series.Add(series2);
 ![Series selection support in WinUI Chart](Interactive-Features_images/Interactive-Features_img36.jpeg)
 
 N>By default the segment selection is true, so for selecting series you have to set the EnableSegmentSelection property to false.
-
-## DataMarker Selection
-
-SfChart provides selection for data marker by defining [`HighlightOnSelection`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_HighlightOnSelection) property which allows you to select the segment or series with the corresponding data marker.
-
-**HighlightOnSelection**
-
-**Segment** **Selection**
-
-The following code example demonstrates the segment selection with data marker. 
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<syncfusion:ColumnSeries Interior="#4A4A4A"
-
-ItemsSource="{Binding Demands}" XBindingPath="Demand"
-
-SegmentSelectionBrush="Green"
-
-YBindingPath="Year2010">
-
-<syncfusion:ColumnSeries.DataMarker>
-
-<syncfusion:ChartDataMarker UseSeriesPalette="True" ShowConnectorLine="True"
-
-ConnectorHeight="30" ShowLabel="True" HighlightOnSelection="True">
-
-</syncfusion:ChartDataMarker>
-
-</syncfusion:ColumnSeries.DataMarker>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-ChartSelectionBehavior selection = new ChartSelectionBehavior()
-{
-
-    EnableSegmentSelection = true
-
-};
-
-chart.Behaviors.Add(selection);
-
-ColumnSeries series = new ColumnSeries()
-{
-
-    ItemsSource = new ViewModel().Demands,
-
-    XBindingPath = "Demand",
-
-    YBindingPath = "Year2010",
-
-    SegmentSelectionBrush = new SolidColorBrush(Colors.Green),
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
-};
-
-ChartDataMarker datamarker = new ChartDataMarker()
-{
-
-    ShowLabel = true,
-
-    ShowConnectorLine = true,
-
-    HighlightOnSelection = true,
-
-    UseSeriesPalette = true,
-
-    ConnectorHeight = 30
-
-};
-
-series.DataMarker = datamarker;
-
-chart.Series.Add(series);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Segments selection with data marker in WinUI Chart](Interactive-Features_images/Interactive-Features_img39.jpeg)
-
-**Series** **Selection**
-
-The following code example demonstrates the series selection with data marker. 
-
-{% tabs %}
-
-{% highlight xml %}
-
-<syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartSelectionBehavior EnableSegmentSelection="False" 
-
-EnableSeriesSelection="True"/>
-
-</syncfusion:SfChart.Behaviors>
-
-<syncfusion:SplineSeries ItemsSource="{Binding Demands}" SeriesSelectionBrush="Green"
-
-XBindingPath="Demand" 
-
-YBindingPath="Year2010">
-
-<syncfusion:SplineSeries.DataMarker>
-
-<syncfusion:ChartDataMarker MarkerType="Ellipse"
-
-ShowMarker="True"
-
-HighlightOnSelection="True">                                            
-
-</syncfusion:ChartDataMarker>
-
-</syncfusion:SplineSeries.DataMarker>
-
-</syncfusion:SplineSeries>
-
-<syncfusion:SplineSeries Label="2010" Interior="#4A4A4A" 
-
-ItemsSource="{Binding Demands}" SeriesSelectionBrush="Green"
-
-XBindingPath="Demand"
-
-YBindingPath="Year2011">
-
-<syncfusion:SplineSeries.DataMarker>
-
-<syncfusion:ChartDataMarker MarkerType="Ellipse"
-
-ShowMarker="True"
-
-HighlightOnSelection="True">
-
-</syncfusion:ChartDataMarker>
-
-</syncfusion:SplineSeries.DataMarker>
-
-</syncfusion:SplineSeries>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-ChartSelectionBehavior selection = new ChartSelectionBehavior()
-{
-
-    EnableSegmentSelection = false,
-
-    EnableSeriesSelection = true
-
-};
-
-chart.Behaviors.Add(selection);
-
-SplineSeries series1 = new SplineSeries()
-{
-
-    ItemsSource = new ViewModel().Demands,
-
-    XBindingPath = "Demand",
-
-    YBindingPath = "Year2010",
-
-    SeriesSelectionBrush = new SolidColorBrush(Colors.Green)
-
-};
-
-ChartDataMarker datamarker = new ChartDataMarker()
-{
-
-    ShowMarker = true,
-
-    MarkerType = ChartSymbol.Ellipse
-
-};
-
-series1.DataMarker = datamarker;
-
-SplineSeries series2 = new SplineSeries()
-{
-
-    ItemsSource = new ViewModel().Demands,
-
-    XBindingPath = "Demand",
-
-    YBindingPath = "Year2011",
-
-    SeriesSelectionBrush = new SolidColorBrush(Colors.Green),
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A,0x4A,0x4A))
-
-};
-
-ChartDataMarker datamarker1 = new ChartDataMarker()
-{
-
-    ShowMarker = true,
-
-    MarkerType = ChartSymbol.Ellipse,
-
-    HighlightOnSelection = true
-
-};
-
-series2.DataMarker = datamarker1;
-
-chart.Series.Add(series1);
-
-chart.Series.Add(series2);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Series selection with data marker in WinUI Chart](Interactive-Features_images/Interactive-Features_img40.jpeg)
 
 ## Selection Mode
 
@@ -526,7 +298,7 @@ chart.Behaviors.Add(selection);
 
 ## Customizing the Selection
 
-SfChart allows you to select single or multiple segment /series using [`SelectionType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionType) property. By default the SelectionType is [`Single`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SelectionType.html).
+SfChart allows you to select single or multiple segment\series using [`SelectionType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionType) property. By default the SelectionType is [`Single`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SelectionType.html).
 
 The following code snippet demonstrates multiple segment selection.
 

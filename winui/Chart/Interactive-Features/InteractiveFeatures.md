@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion InteractiveFeatures.
+title: Interactive Features | Chart | WinUI | Syncfusion
 description: How to show the functionality of WinUI Chart with available interaction options such as zooming, selecting, and tracking the data points.
 platform: WinUI
 control: SfChart
@@ -9,12 +9,10 @@ documentation: ug
 
 # Interactive features
 
-SfChart provides interactive features such as tracking data points and selection.
+SfChart supports the following interactive features to interact with chart.
 
-The following interactive features are supported in SfChart:
-
-* CrossHair
-* ToolTip
-* TrackBall
+* Crosshair
+* Tooltip
+* Trackball
 * Zoom and Pan
 * Selection

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serialization in Syncfusion SfChart WinUI.
-description: Essental WinUI Chart (SfChart) supports Crosshair to view the values at mouse point or touch contact point.
+title: Crosshair support in Syncfusion Chart WinUI.
+description: Essential WinUI Chart (SfChart) supports Crosshair to view the values at mouse point or touch contact point.
 platform: WinUI
 control: SfChart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Crosshair in WinUI Charts (SfChart)
 
-ChartCrosshairBehavior is used to view the values at mouse point or touch contact point. By moving these lines horizontally, you can get the X values and by moving these lines vertically, you can get the Y values.
+[`ChartCrosshairBehavior`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#) is used to view the values at mouse point or touch contact point. By moving these lines horizontally, you can get the X values and by moving these lines vertically, you can get the Y values.
 
 ## Adding CrosshairBehavior to SfChart
 
@@ -81,10 +81,10 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Cross hair support in WinUI Chart](Interactive-Features_images/Interactive-Features_img46.jpeg)
+![Crosshair support in WinUI Chart](Interactive-Features_images/Interactive-Features_img46.jpeg)
 
 
-Cross hair is composed of the following parts:
+**Crosshair** is composed of the following parts:
 
 1. Vertical and horizontal line
 
@@ -198,7 +198,7 @@ chart.Behaviors.Add(Crosshair);
 
 The vertical line in contact with the x axes shows axis label. The horizontal axis label can be aligned using [`HorizontalAxisLabelAlignment`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#Syncfusion_UI_Xaml_Charts_ChartCrosshairBehavior_HorizontalAxisLabelAlignment) property.
 
-Axis Label can be aligned by Near, Far, Center, Auto and None Options.
+Axis Label can be aligned by Near, Far, Center, Auto Options.
 
 * [`Auto`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAlignment.html) – Axis label is aligned in Near/Far positions based on the movement of vertical line.
 

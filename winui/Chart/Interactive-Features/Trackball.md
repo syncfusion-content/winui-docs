@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Trackball feature in Syncfusion SfChart WinUI
-description: How to enable, customize the Trackball behavior, label and technical indicators in Essential WinUI Chart (SfChart)
+description: This section describles how to customize the Trackball behavior, label in Essential WinUI Chart (SfChart).
 platform: WinUI
 control: SfChart
 documentation: ug
@@ -89,7 +89,7 @@ The Trackball is composed of the following parts:
 
 ## Vertical Line
 
-The vertical line in the Trackball is visible when you initialize the TrackballBehavior.If you want to collapse the visibility of the Trackball line, then you have to set ShowLine to false.
+The vertical line in the Trackball is visible when you initialize the TrackballBehavior. If you want to collapse the visibility of the Trackball line, then you have to set ShowLine to false.
 
 The following code snippet explains how to collapse the visibility of Trackball line.
 
@@ -125,7 +125,7 @@ chart.Behaviors.Add(behavior);
 
 **Customization of Trackball Line**
 
-SfChart allows you to customize the appearance of  Trackball vertical line using the [`LineStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_LineStyle) property.
+SfChart allows you to customize the appearance of Trackball vertical line using the [`LineStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_LineStyle) property.
 
 The following code snippet explains the customization of Trackball line.
 
@@ -229,21 +229,21 @@ chart.Behaviors.Add(Trackball);
 
 ## Axis Label
 
-The axis label will be viewed when the ShowTrackballInfo property is set to true. If you want to collapse the visibility of axis label in Trackball then you have to set ShowTrackballInfo as false.
+The axis label will be viewed when the [`ShowTrackballInfo`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballInfo) property is set to true. If you want to collapse the visibility of axis label in Trackball then you have to set ShowTrackballInfo as false.
 
-N>By default the value of ShowTrackballInfo is false.
+N>By default the value of [`ShowTrackballInfo`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballInfo) is false.
 
 **Alignment** **of** **Axis** **Label**
 
 The alignment of the axis label while moving Trackball can be defined using [`AxisLabelAlignment`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_AxisLabelAlignment) property.
 
-Auto –Axis label is aligned in Near/Far positions based on the Trackball movement.
+Auto - Axis label is aligned in Near/Far positions based on the Trackball movement.
 
-Far-Axis label is positioned far from the position of Trackball.
+Far - Axis label is positioned far from the position of Trackball.
 
-Near- Axis label is near to the position of Trackball.
+Near - Axis label is near to the position of Trackball.
 
-Center-Axis label is aligned to the center of the Trackball. By default, the axis label will positioned in center.
+Center - Axis label is aligned to the center of the Trackball. By default, the axis label will positioned in center.
 
 **Far**
 
@@ -315,7 +315,7 @@ chart.Behaviors.Add(behavior);
 
 ### Customization of axis label
 
-You can change the default appearance of the axis label in Trackball using [`TrackballLabelTemplate`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TrackballLabelTemplate) property in ChartAxis as in the below code snippet.
+You can change the default appearance of the axis label in Trackball using [`TrackballLabelTemplate`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TrackballLabelTemplate) property in `ChartAxis` as in the below code snippet.
 
 {% tabs %}
 
@@ -390,30 +390,23 @@ The `ShowTrackballInfo` property of [`Cartesian Series`](https://help.syncfusion
 {% highlight xaml %}
 
  <syncfusion:SfChart >
-            <syncfusion:SplineSeries Interior="#4a4a4a"/>    
-            <syncfusion:SplineSeries Interior="#7f7f7f" ShowTrackballInfo="False"/>
-            <syncfusion:SplineSeries Interior="#bcbcbc"/>
+            <syncfusion:SplineSeries />    
+            <syncfusion:SplineSeries ShowTrackballInfo="False"/>
+            <syncfusion:SplineSeries />
  </syncfusion:SfChart>
  
 {% endhighlight %}
 
 {% highlight c# %}
 
-  SplineSeries series1 = new SplineSeries()
-  {
-      Interior = new SolidColorBrush(Color.FromArgb(0, 0x4a, 0x4a, 0x4a))
-  };
+  SplineSeries series1 = new SplineSeries();
   chart.Series.Add(series1);
   SplineSeries series2 = new SplineSeries()
   {
-      Interior = new SolidColorBrush(Color.FromArgb(0, 0x7f, 0x7f, 0x7f)),
       ShowTrackballInfo = false
   };
   chart.Series.Add(series2);
-  SplineSeries series3 = new SplineSeries()
-  {
-      Interior = new SolidColorBrush(Color.FromArgb(0, 0xbc, 0xbc, 0xbc))
-  };
+  SplineSeries series3 = new SplineSeries();
   chart.Series.Add(series3);
 
 {% endhighlight %}
@@ -421,8 +414,6 @@ The `ShowTrackballInfo` property of [`Cartesian Series`](https://help.syncfusion
 {% endtabs %}
 
 ![Trackball series label in WinUI Chart](Interactive-Features_images/ShowTrackball.png)
-
-
 
 **Alignment** **of** **Series** **Label**
 
@@ -606,7 +597,7 @@ The following screenshot illustrates the Trackball label for multiple series, wh
 
         </syncfusion:SfChart.Behaviors>
 
-        <syncfusion:ColumnSeries Label="2010"  Interior="#4A4A4A"     
+        <syncfusion:ColumnSeries Label="2010"     
 
                                  ItemsSource="{Binding Demands}" 
 
@@ -639,8 +630,6 @@ ColumnSeries series = new ColumnSeries()
     YBindingPath = "Year2010",
 
     TrackballLabelTemplate = chart.Resources["labelTemplate"] as DataTemplate,
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
 
 };
 
@@ -719,14 +708,11 @@ The [`ChartPointInfo`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.C
 * [`Interior`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_Interior) - Gets or sets the interior color of the Trackball label.
 * [`Item`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_Item) - Gets the respective underlying object of the data in which the Trackball is activated.
 * [`Low`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_Low) - Gets the low value of the Trackball label when it is applicable.
-* [`LowerLine`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_LowerLine) - Gets the y-value of the lower line in indicator. 
 * [`Median`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_Median) - Gets the median value when it is applicable.
 * [`Open`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_Open) - Gets the open value of the Trackball label when it is applicable.
 * [`PolygonPoints`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_PolygonPoints) - Gets the point collection to render Trackball.
 * [`Series`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_Series) - Gets the associated series in which the Trackball is activated.
 * [`SeriesValues`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_SeriesValues) - Gets the SeriesValues in which the Trackball is activated.
-* [`SignalLine`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_SignalLine) - Gets the y-value of the signal line in indicator. 
-* [`UpperLine`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_UpperLine) - Gets the y-value of the upper line in indicator. 
 * [`ValueX`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_ValueX) - Gets the x-value of the Trackball label.
 * [`ValueY`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_ValueY) - Gets the y-value of the Trackball label.
 * [`X`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_X) - Gets the x-coordinate of the Trackball label.
