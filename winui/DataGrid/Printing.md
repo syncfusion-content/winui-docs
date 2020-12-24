@@ -139,8 +139,9 @@ Steps to add page header while printing,
 {% endhighlight %}
 {% endtabs %}
 
-2.Set the above defined DataTemplate to [PrintSettings.HeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_HeaderTemplate) and assign value for [PrintSettings.PageHeaderHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_PageHeaderHeight) property also.
 
+2.Set the above defined DataTemplate to [PrintSettings.HeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_HeaderTemplate) and assign value for [PrintSettings.PageHeaderHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_PageHeaderHeight) property also.
+    
 {% tabs %}
 {% highlight c# %}
 sfDataGrid.PrintSettings.PageHeaderHeight = 30;
