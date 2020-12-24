@@ -23,7 +23,7 @@ The following code example demonstrates about define the value to be displayed a
 
 {% highlight xaml %}
 
-            <syncfusion:ChartDataMarker SegmentLabelContent="YValue" ShowLabel="True" LabelPosition="Outer"></syncfusion:ChartDataMarker>
+            <syncfusion:ChartDataMarker SegmentLabelContent="YValue" ShowLabel="True"></syncfusion:ChartDataMarker>
 
 {% endhighlight %}
 
@@ -32,7 +32,7 @@ The following code example demonstrates about define the value to be displayed a
             ChartDataMarker datamarker = new ChartDataMarker()
             {
                ShowLabel = true,
-               SegmentLabelContent=LabelContent.YValue
+               SegmentLabelContent = LabelContent.YValue
             };
 
 {% endhighlight %}
@@ -133,7 +133,7 @@ The default appearance of the label can be customized using [`LabelTemplate`](ht
      <Grid>
         <chart:SfChart Width="400" Height="300">
          ...
-            <syncfusion:ColumnSeries Interior="#777777" ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="Value">
+            <syncfusion:ColumnSeries ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="Value">
                 <syncfusion:ColumnSeries.DataMarker>
                     <syncfusion:ChartDataMarker ShowLabel="True" LabelTemplate="{StaticResource dataMarkerTemplate}"
                         LabelPosition="Outer"></syncfusion:ChartDataMarker>
@@ -152,7 +152,6 @@ The default appearance of the label can be customized using [`LabelTemplate`](ht
                 ItemsSource = new ViewModel().Demands,
                 XBindingPath = "Category",
                 YBindingPath = "Value",
-                 Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
             };
 
             ChartDataMarker datamarker = new ChartDataMarker()
@@ -179,7 +178,7 @@ The following code example demonstrates the y value having three decimal digits.
 
 {% highlight xaml %}
 
-        <syncfusion:ChartDataMarker ShowLabel="True" SegmentLabelFormat="#.000" DataMarkerPosition="Top">
+        <syncfusion:ChartDataMarker ShowLabel="True" SegmentLabelFormat="#.000">
         </syncfusion:ChartDataMarker>
 
 {% endhighlight %}
@@ -188,7 +187,7 @@ The following code example demonstrates the y value having three decimal digits.
 
         ChartDataMarker datamarker = new ChartDataMarker()
         {
-             ShowLabel = true,
+            ShowLabel = true,
             SegmentLabelFormat = "0.000"
         };
 
@@ -257,7 +256,7 @@ The following code example shows the customization options for connector line:
         <chart:SfChart Width="400" Height="400">
          ...
 
-        <syncfusion:PieSeries Interior="#777777" ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="FloatValue" LabelPosition="OutsideExtended">
+        <syncfusion:PieSeries ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="FloatValue" LabelPosition="OutsideExtended">
                 <syncfusion:PieSeries.DataMarker>
                     <syncfusion:ChartDataMarker ShowLabel="True" ConnectorLineStyle="{StaticResource lineStyle}" ShowConnectorLine="True" LabelPosition="Outer"></syncfusion:ChartDataMarker>
                 </syncfusion:PieSeries.DataMarker>
@@ -277,7 +276,6 @@ The following code example shows the customization options for connector line:
                 XBindingPath = "Category",
                 YBindingPath = "FloatValue",
                 LabelPosition = CircularSeriesLabelPosition.OutsideExtended,
-                Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
         };
 
         ChartDataMarker datamarker = new ChartDataMarker()
@@ -305,7 +303,7 @@ The following code example shows the customization options for connector line:
 
 {% highlight xaml %}
 
-        <chart:PieSeries Interior="#777777" ItemsSource="{Binding Performance}" XBindingPath="ServerLoad"
+        <chart:PieSeries ItemsSource="{Binding Performance}" XBindingPath="ServerLoad"
             YBindingPath="Server1" EnableSmartLabels="True" ConnectorType="Bezier" LabelPosition="OutsideExtended">
                 <chart:PieSeries.DataMarker>
                     <chart:ChartDataMarker HorizontalAlignment="Center" VerticalAlignment="Center" ShowConnectorLine="True" 
@@ -323,11 +321,8 @@ The following code example shows the customization options for connector line:
                 XBindingPath = "Year",
                 YBindingPath = "Plastic",
                 EnableSmartLabels = true,
-                ExplodeAll = true,
-                ExplodeRadius = 3,
                 ConnectorType=ConnectorMode.Bezier,
                 LabelPosition = CircularSeriesLabelPosition.OutsideExtended,
-                Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
         };
 
         ChartDataMarker datamarker = new ChartDataMarker()
@@ -393,7 +388,7 @@ The following code example demonstrates the EnableSmartLabels property:
 
 {% highlight xaml %}
 
-        <chart:PieSeries Interior="#777777" ItemsSource="{Binding CategoricalData}" ConnectorType="Bezier" XBindingPath="Year"
+        <chart:PieSeries ItemsSource="{Binding CategoricalData}" ConnectorType="Bezier" XBindingPath="Year"
             YBindingPath="Plastic" EnableSmartLabels="True" LabelPosition="OutsideExtended" ExplodeAll="True" ExplodeRadius="3">
                 <chart:PieSeries.DataMarker>
                     <chart:ChartDataMarker ShowLabel="True" HorizontalAlignment="Center" VerticalAlignment="Center" ShowConnectorLine="True"></chart:ChartDataMarker>
@@ -414,7 +409,6 @@ The following code example demonstrates the EnableSmartLabels property:
                 ExplodeRadius = 3,
                 Palette = ChartColorPalette.Custom,
                 LabelPosition = CircularSeriesLabelPosition.OutsideExtended,
-                Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
         };
 
             ChartDataMarker datamarker = new ChartDataMarker()

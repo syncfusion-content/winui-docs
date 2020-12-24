@@ -23,7 +23,7 @@ The following code example illustrates how to initialize the data marker.
 
 {% highlight xaml %}
 
-        <syncfusion:ColumnSeries Interior="#777777" ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="Value">
+        <syncfusion:ColumnSeries ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="Value">
                 <syncfusion:ColumnSeries.DataMarker>
                     <syncfusion:ChartDataMarker></syncfusion:ChartDataMarker>
                 </syncfusion:ColumnSeries.DataMarker>
@@ -38,7 +38,6 @@ The following code example illustrates how to initialize the data marker.
             ItemsSource = ViewModel().Demands,
             XBindingPath = "Category",
             YBindingPath = "Value",
-            Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
         };
         ChartDataMarker datamarker = new ChartDataMarker();
         series.DataMarker = datamarker;

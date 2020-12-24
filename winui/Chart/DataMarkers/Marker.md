@@ -12,6 +12,7 @@ documentation: ug
 Data Marker is used to mark the data points with built-in available shapes.
 
 ## Define Data Marker
+
 To enable the marker in data markers you have to set the [`ShowMarker`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_ShowMarker) property as True. By default, there is no marker displayed, you have to add the desired marker using MarkerType property.
 
 The following code example demonstrates the column series with [`Diamond`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSymbol.html) marker:
@@ -150,6 +151,7 @@ The following code example demonstrates how to use MarkerTemplate.
 
     ChartDataMarker datamarker = new ChartDataMarker()
     {
+        ShowMarker  = true,
         DataMarkerPosition = DataMarkerPosition.Top,
         MarkerTemplate = chart.Resources["markerTemplate"] as DataTemplate,
     };
