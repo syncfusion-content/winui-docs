@@ -150,7 +150,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:CategoryAxis Header="Metals" >
+<syncfusion:CategoryAxis Header="Metals">
 
 <syncfusion:CategoryAxis.HeaderStyle>
 
@@ -235,7 +235,7 @@ The [`LabelPosition`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Ch
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:NumericalAxis  LabelPosition="Inside">
+<syncfusion:NumericalAxis LabelPosition="Inside">
 
 </syncfusion:NumericalAxis>
 
@@ -269,7 +269,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:DateTimeAxis  LabelRotationAngle="90" >
+<syncfusion:DateTimeAxis  LabelRotationAngle="90">
 
 </syncfusion:DateTimeAxis>
 
@@ -372,7 +372,7 @@ You can also directly bind the collection of labels to the [`LabelSource`](https
 chart.PrimaryAxis = new CategoryAxis()
 {
 
-    ContentPath ="Content",
+    ContentPath = "Content",
 
     PositionPath = "Position",
 
@@ -386,21 +386,21 @@ public List<LabelItem> Labels { get; set; }
 Labels = new List<LabelItem>
 {
 
-    new LabelItem() {Position=0, Content = "0-1"},
-
-    new LabelItem() {Position=1, Content = "1-2"},
-
-    new LabelItem() {Position=2, Content = "2-3"},
-
-    new LabelItem() {Position=3, Content = "3-4"},
-
-    new LabelItem() {Position=4, Content = "4-5"},
-
-    new LabelItem() {Position=5, Content = "5-6"},
-
-    new LabelItem() {Position=6, Content = "6-7"},
-
-    new LabelItem() {Position=7, Content = "7-8"},
+    new LabelItem() {Position =  0, Content = "0-1"},
+ 
+     new LabelItem() {Position = 1, Content = "1-2"},
+ 
+     new LabelItem() {Position = 2, Content = "2-3"},
+ 
+     new LabelItem() {Position = 3, Content = "3-4"},
+ 
+     new LabelItem() {Position = 4, Content = "4-5"},
+ 
+     new LabelItem() {Position = 5, Content = "5-6"},
+ 
+     new LabelItem() {Position = 6, Content = "6-7"},
+ 
+     new LabelItem() {Position = 7, Content = "7-8"},
 
 };
 
@@ -432,7 +432,7 @@ Axis labels can be formatting by predefined formatting types based on the axis t
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:DateTimeAxis LabelFormat="MMM/dd" FontSize="12" >
+<syncfusion:DateTimeAxis LabelFormat="MMM/dd" FontSize="12">
 
 </syncfusion:DateTimeAxis>
 
@@ -465,7 +465,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 <syncfusion:SfChart.SecondaryAxis>
 
-<syncfusion:NumericalAxis LabelFormat="0.00" />
+<syncfusion:NumericalAxis LabelFormat="0.00"/>
 
 </syncfusion:SfChart.SecondaryAxis>
 
@@ -560,7 +560,7 @@ This property allows us to set the distance between the axis header and the axis
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:CategoryAxis Header="Demand" LabelExtent="50" >
+<syncfusion:CategoryAxis Header="Demand" LabelExtent="50">
 
 </syncfusion:CategoryAxis>
 
@@ -637,7 +637,7 @@ Hide option is used to hide the labels if it intersects. You can define the hide
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:DateTimeAxis  LabelIntersectAction="Hide"/>
+<syncfusion:DateTimeAxis LabelIntersectAction="Hide"/>
 
 </syncfusion:SfChart.PrimaryAxis>
 
@@ -669,7 +669,7 @@ This option is used to move the labels to next row if it intersects. The followi
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:DateTimeAxis  LabelIntersectAction="MultipleRows">
+<syncfusion:DateTimeAxis LabelIntersectAction="MultipleRows">
 
 </syncfusion:DateTimeAxis>
 
@@ -742,7 +742,7 @@ The following are the customizing options in [`EdgeLabelsDrawingMode`](https://h
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:DateTimeAxis  EdgeLabelsDrawingMode="Center" >
+<syncfusion:DateTimeAxis EdgeLabelsDrawingMode="Center">
 
 </syncfusion:DateTimeAxis>
 
@@ -773,7 +773,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:DateTimeAxis  EdgeLabelsDrawingMode="Shift" >
+<syncfusion:DateTimeAxis EdgeLabelsDrawingMode="Shift">
 
 </syncfusion:DateTimeAxis>
 
@@ -805,7 +805,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:DateTimeAxis  EdgeLabelsDrawingMode="Hide">
+<syncfusion:DateTimeAxis EdgeLabelsDrawingMode="Hide">
 
 </syncfusion:DateTimeAxis>
 
@@ -837,7 +837,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:DateTimeAxis  EdgeLabelsDrawingMode="Fit">
+<syncfusion:DateTimeAxis EdgeLabelsDrawingMode="Fit">
 
 </syncfusion:DateTimeAxis>
 
@@ -949,7 +949,7 @@ The following code example illustrates the [`ShowGridLines`](https://help.syncfu
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:NumericalAxis  ShowGridLines="False">
+<syncfusion:NumericalAxis ShowGridLines="False">
 
 </syncfusion:NumericalAxis>
 
@@ -1091,7 +1091,7 @@ Tick lines thickness can be customized using [`TickLineSize`](https://help.syncf
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:NumericalAxis  TickLineSize="10">
+<syncfusion:NumericalAxis TickLineSize="10">
 
 </syncfusion:NumericalAxis>
 
@@ -1388,7 +1388,7 @@ SfChart provides support to customize the style of the axis line by defining the
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:NumericalAxis  Interval="1" >
+<syncfusion:NumericalAxis Interval="1">
 
 <syncfusion:NumericalAxis.AxisLineStyle>
 
@@ -1438,7 +1438,7 @@ The padding to the axis line is defined using [`AxisLineOffset`](https://help.sy
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:NumericalAxis AxisLineOffset="20" >
+<syncfusion:NumericalAxis AxisLineOffset="20">
 
 </syncfusion:NumericalAxis>
 
@@ -1481,7 +1481,7 @@ You can choose any type of [`ChartAxis`](https://help.syncfusion.com/cr/WinUI/Sy
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:NumericalAxis  >
+<syncfusion:NumericalAxis>
 
 </syncfusion:NumericalAxis>
 
@@ -1489,7 +1489,7 @@ You can choose any type of [`ChartAxis`](https://help.syncfusion.com/cr/WinUI/Sy
 
 <syncfusion:SfChart.SecondaryAxis>
 
-<syncfusion:NumericalAxis >
+<syncfusion:NumericalAxis>
 
 </syncfusion:NumericalAxis>
 
@@ -1596,7 +1596,7 @@ N> By default, Range is calculated between the minimum and maximum value of the 
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:CategoryAxis >
+<syncfusion:CategoryAxis>
 
 </syncfusion:CategoryAxis>
 
@@ -1733,9 +1733,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:DateTimeAxis  Minimum="2015/01/10" Maximum="2015/07/01" LabelFormat="MMM-dd" 
-
-IntervalType="Months" Interval="1">
+<syncfusion:DateTimeAxis Minimum="2015/01/10" Maximum="2015/07/01" LabelFormat="MMM-dd" IntervalType="Months" Interval="1">
 
 </syncfusion:DateTimeAxis>
 
@@ -1771,13 +1769,13 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 SfChart provides support to plot only the business hours in DateTimeAxis. This support is enabled by setting [`EnableBusinessHours`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_EnableBusinessHours) property to true.
 
-The following properties are used for business hour range calculation
+The following properties are used for business hour range calculation,
 
 * [`OpenTime`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_OpenTime)- Represents the open working time of a day.
 * [`CloseTime`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_CloseTime)- Represents the close working time of a day.
 * [`WorkingDays`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_WorkingDays)- Represents the working [`days`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.Day.html) of a week.
 
-The following code snippet demonstrates the business hours support in DateTimeAxis
+The following code snippet demonstrates the business hours support in DateTimeAxis.
 
 {% tabs %}
 
@@ -2012,7 +2010,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 <syncfusion:SfChart.SecondaryAxis>
 
-<syncfusion:NumericalAxis  MaximumLabels="2">
+<syncfusion:NumericalAxis MaximumLabels="2">
 
 </syncfusion:NumericalAxis>
 
@@ -2022,7 +2020,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 <syncfusion:ColumnSeries.YAxis>
 
-<syncfusion:NumericalAxis MaximumLabels="2" >
+<syncfusion:NumericalAxis MaximumLabels="2">
 
 </syncfusion:NumericalAxis>
 
@@ -2099,7 +2097,7 @@ When [`RangePadding`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Ch
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:DateTimeAxis  RangePadding="Additional">
+<syncfusion:DateTimeAxis RangePadding="Additional">
 
 </syncfusion:DateTimeAxis>
 
@@ -2133,7 +2131,7 @@ When [`RangePadding`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Ch
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:DateTimeAxis  RangePadding="Round">
+<syncfusion:DateTimeAxis RangePadding="Round">
 
 </syncfusion:DateTimeAxis>
 
@@ -2169,7 +2167,7 @@ The following screenshot demonstrates a chart’s x-axis with `RangePadding` set
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:DateTimeAxis  RangePadding="None">
+<syncfusion:DateTimeAxis RangePadding="None">
 
 </syncfusion:DateTimeAxis>
 
@@ -2202,7 +2200,7 @@ When [`RangePadding`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Ch
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:DateTimeAxis  RangePadding="RoundStart">
+<syncfusion:DateTimeAxis RangePadding="RoundStart">
 
 </syncfusion:DateTimeAxis>
 
@@ -2236,7 +2234,7 @@ When [`RangePadding`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Ch
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:DateTimeAxis  RangePadding="RoundEnd">
+<syncfusion:DateTimeAxis RangePadding="RoundEnd">
 
 </syncfusion:DateTimeAxis>
 
@@ -2270,7 +2268,7 @@ When [`RangePadding`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Ch
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:DateTimeAxis  RangePadding="PrependInterval">
+<syncfusion:DateTimeAxis RangePadding="PrependInterval">
 
 </syncfusion:DateTimeAxis>
 
@@ -2304,7 +2302,7 @@ When [`RangePadding`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Ch
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:DateTimeAxis  RangePadding="AppendInterval">
+<syncfusion:DateTimeAxis RangePadding="AppendInterval">
 
 </syncfusion:DateTimeAxis>
 
@@ -2363,7 +2361,7 @@ The following screenshot illustrates a chart’s y-axis with [`RangePadding`](ht
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:NumericalAxis  RangePadding="Normal">
+<syncfusion:NumericalAxis RangePadding="Normal">
 
 </syncfusion:NumericalAxis>
 
@@ -2399,7 +2397,7 @@ The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](h
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:NumericalAxis  RangePadding="Additional">
+<syncfusion:NumericalAxis RangePadding="Additional">
 
 </syncfusion:NumericalAxis>
 
@@ -2433,7 +2431,7 @@ The following screenshot demonstrates [`RangePadding`](https://help.syncfusion.c
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:NumericalAxis  RangePadding="None">
+<syncfusion:NumericalAxis RangePadding="None">
 
 </syncfusion:NumericalAxis>
 
@@ -2468,7 +2466,7 @@ The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](h
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:NumericalAxis  RangePadding="RoundStart">
+<syncfusion:NumericalAxis RangePadding="RoundStart">
 
 </syncfusion:NumericalAxis>
 
@@ -2504,7 +2502,7 @@ The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](h
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:NumericalAxis  RangePadding="RoundEnd">
+<syncfusion:NumericalAxis RangePadding="RoundEnd">
 
 </syncfusion:NumericalAxis>
 
@@ -2540,7 +2538,7 @@ The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](h
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:NumericalAxis  RangePadding="PrependInterval">
+<syncfusion:NumericalAxis RangePadding="PrependInterval">
 
 </syncfusion:NumericalAxis>
 
@@ -2576,7 +2574,7 @@ The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](h
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:NumericalAxis  RangePadding="AppendInterval">
+<syncfusion:NumericalAxis RangePadding="AppendInterval">
 
 </syncfusion:NumericalAxis>
 
@@ -2610,7 +2608,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:NumericalAxis  PlotOffset="30">
+<syncfusion:NumericalAxis PlotOffset="30">
 
 </syncfusion:NumericalAxis>
 
@@ -2658,7 +2656,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:NumericalAxis  PlotOffsetStart="30">
+<syncfusion:NumericalAxis PlotOffsetStart="30">
 
 </syncfusion:NumericalAxis>
 
@@ -2706,7 +2704,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:NumericalAxis  PlotOffsetEnd="30">
+<syncfusion:NumericalAxis PlotOffsetEnd="30">
 
 </syncfusion:NumericalAxis>
 
@@ -2787,7 +2785,7 @@ The [`AutoScrollingMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xam
 
 <chart:SfChart.PrimaryAxis>
 
-    <chart:DateTimeAxis AutoScrollingDelta = "3" AutoScrollingMode = "Start">
+<chart:DateTimeAxis AutoScrollingDelta = "3" AutoScrollingMode = "Start">
 
 </chart:SfChart.PrimaryAxis>
 
@@ -2822,9 +2820,7 @@ If you set [`EnableAutoIntervalOnZooming`](https://help.syncfusion.com/cr/WinUI/
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:NumericalAxis Interval="1"
-
-EnableAutoIntervalOnZooming="False">
+<syncfusion:NumericalAxis Interval="1" EnableAutoIntervalOnZooming="False">
 
 </syncfusion:NumericalAxis>
 
@@ -2860,15 +2856,13 @@ By default, all the series are plotted based on primary and secondary axis. You 
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries ItemsSource="{Binding Demands}"
-
-XBindingPath="Demand"  YBindingPath="Year2011">
+<syncfusion:ColumnSeries ItemsSource="{Binding Demands}" 
+         XBindingPath="Demand" YBindingPath="Year2011">
 
 </syncfusion:ColumnSeries>
 
-<syncfusion:LineSeries  ItemsSource="{Binding Demands}"
-
-XBindingPath="Date"  YBindingPath="Year2011">
+<syncfusion:LineSeries  ItemsSource="{Binding Demands}" 
+         XBindingPath="Date"  YBindingPath="Year2011">
 
 <syncfusion:LineSeries.XAxis>
 
