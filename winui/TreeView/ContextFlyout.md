@@ -5,7 +5,7 @@ description: Learn about context flyout support and its customization with Syncf
 platform: WinUI
 control: SfTreeView
 documentation: ug
---
+---
 
 # ContextFlyout in WinUI TreeView (SfTreeView)
 
@@ -17,7 +17,7 @@ The TreeView provides an entirely customizable context flyout to expose the func
 
 You can set context flyout for the nodes by using [SfTreeView.ItemContextFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemContextFlyout) property.
 
-## Built-in Commands
+## Built-in commands
 
 The TreeView provides support for the following built-in commands
 
@@ -45,7 +45,7 @@ The TreeView provides support for the following built-in commands
 
 ![WinUI TreeView with ContextFlyout using built-in commands](ContextFlyout_images/ContextFlyout_image1.png)
 
-## Custom Commands
+## Custom commands
 
 The TreeView allows to show context flyout using custom commands when built-in commands does not meet your requirement.
 
