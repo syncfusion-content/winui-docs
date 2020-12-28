@@ -377,9 +377,9 @@ this.sfDataGrid.AutoGeneratingColumn += SfDataGrid_AutoGeneratingColumn;
 private void SfDataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {
     if (e.Column.MappingName == "OrderID")
-        {
-            e.Column.HeaderTemplate = Resources["headerTemplate"] as DataTemplate;
-        }
+    {
+        e.Column.HeaderTemplate = Resources["headerTemplate"] as DataTemplate;
+    }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -457,14 +457,14 @@ You can change the columns order using `DisplayAttribute.Order` property.
 
 {% tabs %}
 {% highlight c# %}
-[Display(Name = "Order ID",Order = 0)]
+[Display(Name = "Order ID",Order = 1)]
 public int OrderID
 {
     get { return orderID; }
     set { orderID = value;}
 }
 
-[Display(Name = "Ship City",Order = -1)]
+[Display(Name = "Ship City",Order = 0)]
 public string ShipCity
 {
     get { return _shipcity; }

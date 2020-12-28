@@ -37,15 +37,15 @@ Each [StackedHeaderRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
-var firstStackedHeaderRow = new StackedHeaderRow();
-firstStackedHeaderRow.StackedColumns.Add(new StackedColumn() { ChildColumns = "OrderID,OrderDate,Quantity,UnitPrice,ShipCity,ShipAddress" , HeaderText = "Sales Details", MappingName = "SalesDetails" });
-sfDataGrid.StackedHeaderRows.Add(firstStackedHeaderRow);
+var stackedHeaderRow1 = new StackedHeaderRow();
+stackedHeaderRow1.StackedColumns.Add(new StackedColumn() { ChildColumns = "OrderID,OrderDate,Quantity,UnitPrice,ShipCity,ShipAddress" , HeaderText = "Sales Details", MappingName = "SalesDetails" });
+sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 
-var SecondStackedHeaderRow = new StackedHeaderRow();
-SecondStackedHeaderRow.StackedColumns.Add(new StackedColumn() { ChildColumns = "OrderID,OrderDate", HeaderText = "Order Details", MappingName = "OrderDetails" });
-SecondStackedHeaderRow.StackedColumns.Add(new StackedColumn() { ChildColumns = "Quantity,UnitPrice", HeaderText = "Product Details", MappingName = "ProductrDetails" });
-SecondStackedHeaderRow.StackedColumns.Add(new StackedColumn() { ChildColumns = "ShipCity,ShipAddress", HeaderText = "Shipping Details", MappingName = "ShippingDetails" });
-sfDataGrid.StackedHeaderRows.Add(SecondStackedHeaderRow);
+var stackedHeaderRow2 = new StackedHeaderRow();
+stackedHeaderRow2.StackedColumns.Add(new StackedColumn() { ChildColumns = "OrderID,OrderDate", HeaderText = "Order Details", MappingName = "OrderDetails" });
+stackedHeaderRow2.StackedColumns.Add(new StackedColumn() { ChildColumns = "Quantity,UnitPrice", HeaderText = "Product Details", MappingName = "ProductrDetails" });
+stackedHeaderRow2.StackedColumns.Add(new StackedColumn() { ChildColumns = "ShipCity,ShipAddress", HeaderText = "Shipping Details", MappingName = "ShippingDetails" });
+sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow2);
 {% endhighlight %}
 {% endtabs %}
 
@@ -71,7 +71,7 @@ public class OrderInfo : NotificationObject
 
     }
 
-    [Display(Name = "Order ID")]
+    [Display(Name = "Order ID", GroupName = "Order Details")]
     public int OrderID
     {
         get
@@ -162,8 +162,6 @@ public class OrderInfo : NotificationObject
 
 {% endhighlight %}
 {% endtabs %}
-
-![Stacked headers shown with defined GroupName properties in WinUI datagrid](Stacked-Headers-images/Stacked-Headers-image2.png)
 
 ## Adding child columns
 
