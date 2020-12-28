@@ -269,7 +269,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:DateTimeAxis  LabelRotationAngle="90">
+<syncfusion:DateTimeAxis LabelRotationAngle="90">
 
 </syncfusion:DateTimeAxis>
 
@@ -2756,7 +2756,7 @@ In [`DateTimeAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Char
 
 <chart:SfChart.PrimaryAxis>
 
-    <chart:DateTimeAxis AutoScrollingDelta = "3" AutoScrollingDeltaType = "Days">
+<chart:DateTimeAxis AutoScrollingDelta = "3" AutoScrollingDeltaType = "Days">
 
 </chart:SfChart.PrimaryAxis>
 
