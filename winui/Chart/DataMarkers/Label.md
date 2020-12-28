@@ -290,7 +290,7 @@ series.DataMarker = datamarker;
 
 **Connector Type**
 
-[`ConnectorType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_ConnectorType) property in CicularSeriesBase is used to specify the connector line type such as [`Line`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ConnectorMode.html) or [`Bezier`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ConnectorMode.html) or [`StraightLine`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ConnectorMode.html). This property is only for CircularSeries like [`PieSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.PieSeries.html) and [`DoughnutSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html).
+[`ConnectorType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_ConnectorType) property in CicularSeriesBase is used to specify the connector line type such as [`Line`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ConnectorMode.html) or [`Bezier`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ConnectorMode.html) or [`StraightLine`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ConnectorMode.html). This property is only for circular series such as [`PieSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.PieSeries.html) and [`DoughnutSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html).
 
 
 {% tabs %}
