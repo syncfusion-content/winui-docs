@@ -321,11 +321,11 @@ PieSeries series = new PieSeries()
 
 ChartDataMarker datamarker = new ChartDataMarker()
 {
-      ShowLabel = true,
-      ShowConnectorLine = true,
-      HorizontalAlignment = HorizontalAlignment.Center,
-      VerticalAlignment = VerticalAlignment.Center,
-      ConnectorHeight = 80
+        ShowLabel = true,
+        ShowConnectorLine = true,
+        HorizontalAlignment = HorizontalAlignment.Center,
+        VerticalAlignment = VerticalAlignment.Center,
+        ConnectorHeight = 80
 };
 series.DataMarker = datamarker;
 
@@ -405,11 +405,11 @@ PieSeries series = new PieSeries()
 
 ChartDataMarker datamarker = new ChartDataMarker()
 {
-    ShowLabel = true,
-    ShowConnectorLine = true,
-    UseSeriesPalette = true,
-    HorizontalAlignment = HorizontalAlignment.Center,
-    VerticalAlignment = VerticalAlignment.Center
+        ShowLabel = true,
+        ShowConnectorLine = true,
+        UseSeriesPalette = true,
+        HorizontalAlignment = HorizontalAlignment.Center,
+        VerticalAlignment = VerticalAlignment.Center
 };
 series.DataMarker = datamarker
 {% endghlight %}
