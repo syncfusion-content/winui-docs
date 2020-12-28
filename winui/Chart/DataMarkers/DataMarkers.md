@@ -14,7 +14,7 @@ Chart Data Markers are used to display values related to a chart segment element
 Each data marker can be represented by the following:
 
 * Label - Displays the segment label content at the (X, Y) point.
-* Marker- Displays the desired marker at the (X, Y) point.
+* Marker - Displays the desired marker at the (X, Y) point.
 * ConnectorLine - Line used to connect the (X, Y) point and the label element.
 
 The following code example illustrates how to initialize the data marker.
@@ -23,25 +23,26 @@ The following code example illustrates how to initialize the data marker.
 
 {% highlight xaml %}
 
-        <syncfusion:ColumnSeries ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="Value">
-                <syncfusion:ColumnSeries.DataMarker>
-                    <syncfusion:ChartDataMarker></syncfusion:ChartDataMarker>
-                </syncfusion:ColumnSeries.DataMarker>
-        </syncfusion:ColumnSeries> 
+<syncfusion:ColumnSeries ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="Value">
+        <syncfusion:ColumnSeries.DataMarker>
+            <syncfusion:ChartDataMarker>
+            </syncfusion:ChartDataMarker>
+        </syncfusion:ColumnSeries.DataMarker>
+</syncfusion:ColumnSeries> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ColumnSeries series = new ColumnSeries()
-        {
-            ItemsSource = ViewModel().Demands,
-            XBindingPath = "Category",
-            YBindingPath = "Value",
-        };
-        ChartDataMarker datamarker = new ChartDataMarker();
-        series.DataMarker = datamarker;
-        chart.Series.Add(series);
+ColumnSeries series = new ColumnSeries()
+{
+    ItemsSource = ViewModel().Demands,
+    XBindingPath = "Category",
+    YBindingPath = "Value",
+};
+ChartDataMarker datamarker = new ChartDataMarker();
+series.DataMarker = datamarker;
+chart.Series.Add(series);
 
 {% endhighlight %}
 

@@ -23,22 +23,22 @@ The following code example explains the positioning of data markers in the middl
 
 {% highlight xaml %}
 
-        <syncfusion:ChartDataMarker ShowMarker="True" DataMarkerPosition="TopAndBottom" MarkerInterior="DarkGray"  MarkerType="Ellipse">
-        </syncfusion:ChartDataMarker>
+<syncfusion:ChartDataMarker ShowMarker="True" DataMarkerPosition="TopAndBottom" MarkerInterior="DarkGray" MarkerType="Ellipse">
+</syncfusion:ChartDataMarker>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ColumnSeries series = new ColumnSeries();
-        ChartDataMarker datamarker = new ChartDataMarker()
-        {
-            ShowMarker = true,
-            MarkerType = ChartSymbol.Ellipse,
-            MarkerInterior = new SolidColorBrush(Colors.DarkGray),
-            DataMarkerPosition=DataMarkerPosition.TopAndBottom
-        };
-        series.DataMarker = datamarker;
+ColumnSeries series = new ColumnSeries();
+ChartDataMarker datamarker = new ChartDataMarker()
+{
+    ShowMarker = true,
+    MarkerType = ChartSymbol.Ellipse,
+    MarkerInterior = new SolidColorBrush(Colors.DarkGray),
+    DataMarkerPosition=DataMarkerPosition.TopAndBottom
+};
+series.DataMarker = datamarker;
 
 {% endhighlight %}
 
@@ -67,17 +67,17 @@ The following code sample illustrates the center position of data marker labels,
 
 {% highlight xaml %}
 
-        <chart:ChartDataMarker  ShowLabel="True" LabelPosition="Center"/>
+<chart:ChartDataMarker ShowLabel="True" LabelPosition="Center"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ChartDataMarker datamarker = new ChartDataMarker()
-        {
-            ShowLabel = true,
-            LabelPosition = DataMarkerLabelPosition.Center
-        };      
+ChartDataMarker datamarker = new ChartDataMarker()
+{
+    ShowLabel = true,
+    LabelPosition = DataMarkerLabelPosition.Center
+};      
 
 {% endhighlight %}
 
@@ -93,17 +93,17 @@ The following code sample illustrates the inner position of data marker labels,
 
 {% highlight xaml %}
 
-        <chart:ChartDataMarker  ShowLabel="True" LabelPosition="Inner"/>
+<chart:ChartDataMarker ShowLabel="True" LabelPosition="Inner"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ChartDataMarker datamarker = new ChartDataMarker()
-        {
-            ShowLabel = true,
-            LabelPosition = DataMarkerLabelPosition.Inner
-        };      
+ChartDataMarker datamarker = new ChartDataMarker()
+{
+    ShowLabel = true,
+    LabelPosition = DataMarkerLabelPosition.Inner
+};      
 
 {% endhighlight %}
 
@@ -120,17 +120,17 @@ The following code sample illustrates the outer position of data marker labels,
 
 {% highlight xaml %}
 
-        <chart:ChartDataMarker  ShowLabel="True" LabelPosition="Outer"/>
+<chart:ChartDataMarker ShowLabel="True" LabelPosition="Outer"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ChartDataMarker datamarker = new ChartDataMarker()
-        {
-            ShowLabel = true,
-            LabelPosition = DataMarkerLabelPosition.Outer
-        };      
+ChartDataMarker datamarker = new ChartDataMarker()
+{
+    ShowLabel = true,
+    LabelPosition = DataMarkerLabelPosition.Outer
+};      
 
 {% endhighlight %}
 
