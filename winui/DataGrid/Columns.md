@@ -267,11 +267,11 @@ Specifies that the column for only the custom type will be auto generated.
 </tr>
 </table>
 
-N> View sample in [GitHub]().
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/how-to-auto-generate-columns-for-custom-type-properties-in-winui-datagrid).
 
 #### Customize auto-generated columns
 
-You can customize or cancel the generated column by handling [AutoGeneratingColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowDraggingColumns) event.
+You can customize or cancel the generated column by handling [AutoGeneratingColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_AutoGeneratingColumn) event.
  
 `AutoGeneratingColumn` event occurs when the individual column is auto-generated for public and non-static property of underlying data object.
 
