@@ -36,7 +36,7 @@ N> Download demo application from [GitHub]()
 
 ## Customize the date field in dropdown spinner using event
 
-You can change header text, size of date field cells, customize the UI of date field cells and enables the date loopoing, etc., by using the [DateFieldPrepared](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateFieldPrepared) event.
+You can change header text, size of date field cells, customize the UI of date field cells and enables the date looping, etc., by using the [DateFieldPrepared](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateFieldPrepared) event.
 
 Here, date format, header and cell size of the dropdown date field is customized by using `DateFieldPrepared` event.
 
@@ -287,7 +287,7 @@ sfDatePicker.ShowColumnHeaders = false;
 {% endhighlight %}
 {% endtabs %}
 
-![DatePicker hides the drop down date spinner's column headers](Dropdown-Date-Spinner_images/ShowColumnHeaders.png)
+![DatePicker hides the drop down date spinner column headers](Dropdown-Date-Spinner_images/ShowColumnHeaders.png)
 
 N> Download demo application from [GitHub]()
 
@@ -370,7 +370,7 @@ N> Download demo application from [GitHub]()
 
 ## Change dropdown height
 
-You can change the height of drop down date spinner by using the [DropDownHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. Based on the value of `DropDownHeight`, `ItemWidth` and `ItemHeight`, date items to be visibled. The default value of `DropDownHeight` property is `NaN`.
+You can change the height of drop down date spinner by using the [DropDownHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. Based on the value of `DropDownHeight`, `ItemWidth` and `ItemHeight`, date items to be visible. The default value of `DropDownHeight` property is `NaN`.
 
 {% tabs %}
 {% highlight XAML %}
