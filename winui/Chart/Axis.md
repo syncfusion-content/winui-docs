@@ -593,7 +593,7 @@ The following are the options for intersecting action.
 * None
 * Hide
 * MultipleRows
-* Rotate
+* Auto
 
 **None**
 
@@ -906,7 +906,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **Visible**
 
-Visible option is used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state)
+Visible option is used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).
 
 {% tabs %}
 
@@ -1083,7 +1083,7 @@ Tick line are the small lines which is drawn on the axis line representing the a
 
 **TickLineSize**
 
-Tick lines thickness can be customized using [`TickLineSize`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TickLineSize) property as shown in the below code snippet.
+Tick lines height can be customized using [`TickLineSize`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TickLineSize) property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -1281,7 +1281,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **Customization** **of** **Minor** **Ticklines**
 
-The thickness of the minor tick lines can be customized using [`SmallTickLineSize`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTickLineSize) property as shown in the below code snippet.
+The height of the minor tick lines can be customized using [`SmallTickLineSize`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTickLineSize) property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -1687,7 +1687,7 @@ By default, the IsIndexed property value is true, and it is shown in following s
 
 ![Axis label IsIndexed support in WinUI Chart](Axis_images/isindexed_true.png)
 
-N> This feature is not applicable for Accumulation series, RadarSeries, and PolarSeries.
+N> This feature is not applicable for AccumulationSeries, RadarSeries, and PolarSeries.
 
 ### DateTimeAxis
 
@@ -2850,7 +2850,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 SfChart provides a way to arrange multiple series inside the same chart area, giving the chart more space than x-axis and y-axis. These axes can be arranged in a stacking order or in a side by side pattern.
 
-By default, all the series are plotted based on primary and secondary axis. You can add more axes by adding additional axis to the series. There are two properties [`XAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_XAxis) and [`YAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_YAxis) in all the series type which is used to provide Multiple axes support, except [`AccumulationSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#).
+By default, all the series are plotted based on primary and secondary axis. You can add more axes by adding additional axis to the series. There are two properties [`XAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_XAxis) and [`YAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_YAxis) in all the series type which is used to provide Multiple axes support, except [`CircularSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html), [`PyramidSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.PyramidSeries.html), and [`FunnelSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.FunnelSeries.html).
 
 {% tabs %}
 
@@ -2959,7 +2959,7 @@ The [`AxisBoundsChanged`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xam
 
 ### LabelClicked
 
-The [`LabelClicked`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html) event is triggered when labels are clicked. Supports for 2D axis. The argument contains [`Label`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.AxisLabelClickedEventArgs.html#Syncfusion_UI_Xaml_Charts_AxisLabelClickedEventArgs_Label) of [`ChartAxisLabel`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html), which contains the following properties.
+The [`LabelClicked`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html) event is triggered when labels are clicked. The argument contains [`Label`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.AxisLabelClickedEventArgs.html#Syncfusion_UI_Xaml_Charts_AxisLabelClickedEventArgs_Label) of [`ChartAxisLabel`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html), which contains the following properties.
 
 * [`Content`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Content) - Gets the content of label.
 * [`Position`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Position) - Gets the position of label.
