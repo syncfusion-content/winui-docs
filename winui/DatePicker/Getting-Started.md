@@ -294,26 +294,51 @@ private void SfDatePicker_DateFieldItemPrepared(object sender, DateTimeFieldItem
 
 ![SfDatePicker blocksweekend dates from selection](Getting-Started_images/blockweekends.png)
 
-## Hide submit button(Select date directly from date spinner)
+## Block dates using BlackoutDates
 
-If you want to hide the submit button and select the date directly from the drop down date spinner without clicking the `Ok` button, use the [ShowSubmitButtons](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
+If you want to block particular dates from the date selection, add that dates into the [BlackoutDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_BlackoutDates) collection. You can add more block out date ranges to the `BlackoutDates` collection. The defult value of `BlackoutDates` property is `null`.
 
 {% tabs %}
-{% highlight XAML %}
-
-<editors:SfDatePicker ShowSubmitButtons="False"
-                      x:Name="sfDatePicker"/>
-
-{% endhighlight %}
 {% highlight c# %}
 
-SfDatePicker sfDatePicker = new SfDatePicker();
-sfDatePicker.ShowSubmitButtons = false;
+public class ViewModel
+{       
+    public DateTimeOffsetCollection BlockedDates { get; set; }
+    public ViewModel()
+    {
+        BlockedDates = new DateTimeOffsetCollection();
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2018, 1, 28)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 1, 26)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 1, 29)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 1, 31)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2023, 1, 28)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2024, 1, 28)));
+    }
+}
 
-{% endhighlight %}
+{% endhighlight  %}
 {% endtabs %}
 
-![SfDatePicker hides the drop down date spinner submit and cancel buttons](Getting-Started_images/ShowSubmitButtons.gif)
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfDatePicker BlackoutDates="{Binding BlockedDates}" 
+                      x:Name="sfDatePicker">
+    <editors:SfDatePicker.DataContext>
+        <local:ViewModel/>
+    </editors:SfDatePicker.DataContext>
+</editors:SfDatePicker>
+
+{% endhighlight  %}
+{% highlight C# %}
+
+sfDatePicker.DataContext = new ViewModel();
+sfDatePicker.BlackoutDates = BlockedDates;
+
+{% endhighlight  %}
+{% endtabs %}
+
+![SfDatePicker blocks the particular dates from selection](Getting-Started_images/BlackoutDates.png)
 
 ## Edit date using free form editing
 
