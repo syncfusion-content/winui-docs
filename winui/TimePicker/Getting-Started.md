@@ -233,27 +233,6 @@ sfTimePicker.MaxTime = new DateTimeOffset(new DateTime(2020, 12, 10, 6, 59, 59))
 
 ![SfTimePicker restrict the time selection with particular range](Getting-Started_images/MinMaxTime.png)
 
-## Hide submit button(Select time directly from time spinner)
-
-If you want to hide the submit button and select the time directly from the drop down time spinner without clicking the `Ok` button, use the [ShowSubmitButtons](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
-
-{% tabs %}
-{% highlight XAML %}
-
-<editors:SfTimePicker ShowSubmitButtons="False" 
-	                  x:Name="sfTimePicker"/>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfTimePicker sfTimePicker = new SfTimePicker();
-sfTimePicker.ShowSubmitButtons = false;
-
-{% endhighlight %}
-{% endtabs %}
-
-![SfTimePicker hides the drop down time spinner submit and cancel buttons](Getting-Started_images/ShowSubmitButtons.gif)
-
 ## Edit time using free form editing
 
 By default, the user entering each input numbers are automatically validated with the `FormatString` formats and assigned the proper value for it, then it will move to next input part of the time format.

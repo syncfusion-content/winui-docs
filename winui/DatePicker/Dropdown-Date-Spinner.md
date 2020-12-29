@@ -13,7 +13,7 @@ This section describes how to select a date from drop down date spinner and its 
 
 ## Change dropdown alignment
 
-You can change alignment of the drop down date spinner as full, center, left, right, top or bottom with edge of the `DatePicker` by using the [DropDownPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
+You can change the alignment of the drop down date spinner as full, center, left, right, top or bottom with edge of the `DatePicker` by using the [DropDownPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -36,7 +36,7 @@ N> Download demo application from [GitHub]()
 
 ## Customize the date field in dropdown spinner using event
 
-You can change header text, size of date field cells, customize the UI of date field cells and enables the date looping, etc., by using the [DateFieldPrepared](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateFieldPrepared) event.
+You can change the date format header text, size of date field cells, customize the UI of date field cells and enables the date looping, etc., by using the [DateFieldPrepared](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateFieldPrepared) event.
 
 Here, date format, header and cell size of the dropdown date field is customized by using `DateFieldPrepared` event.
 
@@ -236,7 +236,7 @@ You can customize the header of dropdown date spinner by using the [DropDownHead
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfDatePicker DropDownHeader="Select Date" 
+<editors:SfDatePicker DropDownHeader="Choose a Travel Date" 
                       ShowDropDownHeader="True" 
 	                  x:Name="sfDatePicker">
     <editors:SfDatePicker.DropDownHeaderTemplate>
@@ -246,7 +246,7 @@ You can customize the header of dropdown date spinner by using the [DropDownHead
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     Foreground="Green"
-                    Text="Choose a Travel Date" />
+                    Text="{Binding}" />
                 <Path
                     Width="32"
                     Height="32"
