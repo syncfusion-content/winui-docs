@@ -115,16 +115,11 @@ sfCalendar.SelectionMode = CalendarSelectionMode.Multiple;
 You can restrict the users from selecting a date within the particular range by specifying [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MinDate) and [MaxDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MaxDate) properties in `Calendar` control. The default value of `MinDate` property is `1/1/1920 12:00:00 AM +00:00` and `MaxDate` property is `12/31/2120 11:59:59 PM +00:00`.
 
 {% tabs %}
-{% highlight xaml %}
-
-<calendar:Calendar x:Name="sfCalendar"/>
-
-{% endhighlight  %}
 {% highlight C# %}
 
 SfCalendar sfCalendar = new SfCalendar();
- sfCalendar.MinDate = new DateTimeOffset(new DateTime(2021, 01, 5));
- sfCalendar.MaxDate = new DateTimeOffset(new DateTime(2021, 01, 27));
+sfCalendar.MinDate = new DateTimeOffset(new DateTime(2021, 01, 5));
+sfCalendar.MaxDate = new DateTimeOffset(new DateTime(2021, 01, 27));
 
 {% endhighlight  %}
 {% endtabs %}

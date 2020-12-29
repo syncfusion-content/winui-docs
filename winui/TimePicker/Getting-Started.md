@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting started with WinUI SfTimePicker control | Syncfusion
+title: Getting started with WinUI TimePicker control | Syncfusion
 description: This section describes about how to add the SfTimePicker control into WinUI application and its basic features.
 platform: WinUI
-control: SfBadge
+control: SfTimePicker
 documentation: ug
 ---
 
@@ -256,9 +256,9 @@ sfTimePicker.ShowSubmitButtons = false;
 
 ## Edit time using free form editing
 
-If you want to perform the validation after the user completely entering their time inputs, use the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_EditMode) property value as `Normal`. Then the entered time value is validated with the `FormatString` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the selected time will be set as default format value.
-
 By default, the user entering each input numbers are automatically validated with the `FormatString` formats and assigned the proper value for it, then it will move to next input part of the time format.
+
+If you want to perform the validation after the user completely entering their time inputs, use the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_EditMode) property value as `Normal`. Then the entered time value is validated with the `FormatString` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the selected time will be set as default format value.
 
 {% tabs %}
 {% highlight xaml %}

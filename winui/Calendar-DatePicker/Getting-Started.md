@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with WinUI SfCalendarDatePicker control | Syncfusion
+title: Getting started with WinUI CalendarDatePicker control | Syncfusion
 description: This section describes about how to add the SfCalendarDatePicker control into WinUI application and its basic features.
 platform: WinUI
 control: SfCalendarDatePicker
@@ -242,9 +242,9 @@ sfCalendarDatePicker.HeaderFormatInMonthView = "{month.abbreviated} {year.abbrev
 
 ## Edit date using free form editing
 
-If you want to perform the validation after the user completely entering their date inputs, use the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_EditMode) property value as `Normal`. Then the entered date value is validated with the `FormatString` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the selected date will be set as default format value.
-
 By default, user entering each input numbers are automatically validated with the `FormatString` formats and assigned the proper value for it, then it will move to next input part of the date format.
+
+If you want to perform the validation after the user completely entering their date inputs, use the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_EditMode) property value as `Normal`. Then the entered date value is validated with the `FormatString` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the selected date will be set as default format value.
 
 {% tabs %}
 {% highlight xaml %}
