@@ -32,55 +32,7 @@ sfDatePicker.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAlignedLeft;
 
 ![Alignment of drop down date spinner is changed to BottomEdgeAlignedLeft](Dropdown-Date-Spinner_images/DropDownPlacement.png)
 
-N> Download demo application from [GitHub]()
-
-## Customize the date field in dropdown spinner using event
-
-You can change the date format header text, size of date field cells, customize the UI of date field cells and enables the date looping, etc., by using the [DateFieldPrepared](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateFieldPrepared) event.
-
-Here, date format, header and cell size of the dropdown date field is customized by using `DateFieldPrepared` event.
-
-N> This will effective only for the date field cells.
-
-{% tabs %}
-{% highlight XAML %}
-
-<editors:SfDatePicker DateFieldPrepared="SfDatePicker_DateFieldPrepared"
-                      x:Name="sfDatePicker"/>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfDatePicker sfDatePicker = new SfDatePicker();
-sfDatePicker.DateFieldPrepared = SfDatePicker_DateFieldPrepared;
-
-{% endhighlight %}
-{% endtabs %}
-
-You can handle the event as follows,
-
-{% tabs %}
-{% highlight C# %}
-
-private void SfDatePicker_DateFieldPrepared(object sender, DateTimeFieldPreparedEventArgs e)
-{
-    if (e.Column != null)
-    {
-        e.Column.Format = "ddd dd";
-        e.Column.Header = "Choose Date";
-        e.Column.ShowHeader = true;
-        e.Column.ItemHeight = 60;
-        e.Column.ItemWidth = 100;
-        e.Column.ShouldLoop = true;
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-![Dropdown spinner date field elements customized using DateFieldPrepared event](Dropdown-Date-Spinner_images/DateFieldPrepared.png)
-
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
 ## Custom UI for specific cell in dropdown spinner
 
@@ -202,7 +154,56 @@ public class DateItemTemplateSelector : DataTemplateSelector
 
 ![Custom UI of specific date cells in dropdown spinner](Dropdown-Date-Spinner_images/ItemTemplateSelector.png)
 
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/CustomUI)
+
+
+## Customize the date field in dropdown spinner using event
+
+You can change the date format header text, size of date field cells, customize the UI of date field cells and enables the date looping, etc., by using the [DateFieldPrepared](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateFieldPrepared) event.
+
+Here, date format, header and cell size of the dropdown date field is customized by using `DateFieldPrepared` event.
+
+N> This will effective only for the date field cells.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfDatePicker DateFieldPrepared="SfDatePicker_DateFieldPrepared"
+                      x:Name="sfDatePicker"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfDatePicker sfDatePicker = new SfDatePicker();
+sfDatePicker.DateFieldPrepared = SfDatePicker_DateFieldPrepared;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows,
+
+{% tabs %}
+{% highlight C# %}
+
+private void SfDatePicker_DateFieldPrepared(object sender, DateTimeFieldPreparedEventArgs e)
+{
+    if (e.Column != null)
+    {
+        e.Column.Format = "ddd dd";
+        e.Column.Header = "Choose Date";
+        e.Column.ShowHeader = true;
+        e.Column.ItemHeight = 60;
+        e.Column.ItemWidth = 100;
+        e.Column.ShouldLoop = true;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Dropdown spinner date field elements customized using DateFieldPrepared event](Dropdown-Date-Spinner_images/DateFieldPrepared.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateFieldPrepared)
 
 ## Setting hints in dropdown header
 
@@ -227,7 +228,7 @@ sfDatePicker.ShowDropDownHeader = true;
 
 ![DatePicker displays the drop down date spinner header](Dropdown-Date-Spinner_images/DropDownHeader.png)
 
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
 ## Custom UI of dropdown header
 
@@ -266,7 +267,7 @@ You can customize the header of dropdown date spinner by using the [DropDownHead
 
 ![DatePicker with customized drop down date spinner header](Dropdown-Date-Spinner_images/DropDownHeaderTemplate.png)
 
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/CustomUI)
 
 ## Hide the dropdown column headers
 
@@ -289,7 +290,7 @@ sfDatePicker.ShowColumnHeaders = false;
 
 ![DatePicker hides the drop down date spinner column headers](Dropdown-Date-Spinner_images/ShowColumnHeaders.png)
 
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
 ## Hide submit button(Select date directly from date spinner)
 
@@ -312,6 +313,8 @@ sfDatePicker.ShowSubmitButtons = false;
 
 ![SfDatePicker hides the drop down date spinner submit and cancel buttons](Getting-Started_images/ShowSubmitButtons.gif)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+
 ## Change the number of dates to be shown in the dropdown
 
 You can change the number of dates to be shown in the drop down date spinner by using the [VisibleItemsCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_VisibleItemsCount) property. The default value of `VisibleItemsCount` property is `-1`.
@@ -333,7 +336,7 @@ sfDatePicker.VisibleItemsCount = 5
 
 ![Number of dates to be shown in the dropdown is changed](Dropdown-Date-Spinner_images/VisibleItemsCount.png)
 
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
 ## Change the size of dropdown cells
 
@@ -366,7 +369,7 @@ sfDatePicker.ItemHeight = 50;
 
 ![Drop down date spinner cell size changed](Dropdown-Date-Spinner_images/ItemWidth.png)
 
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
 ## Change dropdown height
 
@@ -389,7 +392,7 @@ sfDatePicker.DropDownHeight = 500;
 
 ![DatePicker with customized dropdown height](Dropdown-Date-Spinner_images/DropDownHeight.png)
 
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
 ## Change flow direction
 
@@ -412,4 +415,4 @@ sfDatePicker.FlowDirection = FlowDirection.RightToLeft;
 
 ![DatePicker flow direction changed to right to left](Dropdown-Date-Spinner_images/FlowDirection.png)
 
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
