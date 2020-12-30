@@ -596,7 +596,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Today and selected date highlighting
 
-You can highlight the today and selected date as rectangle, filled rectangle, circel and filled circle. You can use the [TodayHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_TodayHighlightMode) property to highlight the today date and use the [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionHighlightMode) property to highlight the selected date. The default value of `TodayHighlightMode` proeprty is `FilledRectangle` and `SelectionHighlightMode` property is `Rectangle`.
+You can highlight the today and selected date as rectangle, filled rectangle, circle and filled circle. You can use the [TodayHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_TodayHighlightMode) property to highlight the today date and use the [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionHighlightMode) property to highlight the selected date. The default value of `TodayHighlightMode` property is `FilledRectangle` and `SelectionHighlightMode` property is `Rectangle`.
 
 {% tabs %}
 {% highlight XAML %}
