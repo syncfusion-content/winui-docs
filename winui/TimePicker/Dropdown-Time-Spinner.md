@@ -34,6 +34,29 @@ sfTimePicker.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAlignedLeft;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
+## Hide the dropdown button
+
+You can hide the dropdown button in `TimePicker` by setting the [ShowDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as `false`. The default value of `ShowDropDownButton` property is `true`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfTimePicker ShowDropDownButton="False" 
+                      x:Name="sfTimePicker"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfTimePicker sfTimePicker = new SfTimePicker();
+sfTimePicker.ShowDropDownButton = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+![TimePicker hides the dropdown button](Dropdown-Time-Spinner_images/ShowDropDownButton.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+
 ## Custom UI for specific cell in dropdown spinner
 
 You can change the UI of specific hour, minutes or seconds cells in dropdown spinner by using the `ItemTemplateSelector` property. The `DataContext` of `ItemTemplateSelector` is `SfTimePicker`. 

@@ -34,6 +34,29 @@ sfDatePicker.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAlignedLeft;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
+## Hide the dropdown button
+
+You can hide the dropdown button in `DatePicker` by setting the [ShowDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as `false`. The default value of `ShowDropDownButton` property is `true`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfDatePicker ShowDropDownButton="False" 
+                      x:Name="sfDatePicker"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfDatePicker sfDatePicker = new SfDatePicker();
+sfDatePicker.ShowDropDownButton = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+![DatePicker hides the dropdown button](Dropdown-Date-Spinner_images/ShowDropDownButton.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+
 ## Custom UI for specific cell in dropdown spinner
 
 You can change the UI of specific date, month or year cells in dropdown spinner by using the `ItemTemplateSelector` property. The `DataContext` of `ItemTemplateSelector` is `SfDatePicker`. 
