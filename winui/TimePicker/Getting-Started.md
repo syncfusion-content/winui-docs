@@ -69,6 +69,8 @@ namespace GettingStarted
 
 ![SfTimePicker control added in the application](Getting-Started_images/TimePicker_Added.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/Getting_Started)
+
 ## Select the time programmatically
 
 You can set or change the selected time programmatically by using [SelectedTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_SelectedTime) property. If you not assign any value for the `SelectedTime` property, `TimePicker` will automatically assign the current system time as `SelectedTime`.
@@ -89,6 +91,8 @@ sfTimePicker.SelectedTime = new DateTimeOffset(new DateTime(2021, 10, 29, 10, 45
 
 ![SfTimePicker displaying the selected time](Getting-Started_images/SelectedTime.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+
 ## Select time interactively
 
 You can change the selected time interactively by enter the time value using keyboard or from the drop down time spinner. You can get the selected time from the `SelectedTime` property.
@@ -107,6 +111,8 @@ SfTimePicker sfTimePicker= new SfTimePicker();
 {% endtabs %}
 
 ![SfTimePicker displaying selected value](Getting-Started_images/selectedTimeinteratct.gif)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/Getting_Started)
 
 ## Setting null value
 
@@ -130,6 +136,8 @@ sfTimePicker.AllowNullValue = true;
 {% endtabs %}
 
 ![SfTimePicker displaying the null value](Getting-Started_images/AllowNullValue.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
 ## Setting watermark text
 
@@ -155,6 +163,8 @@ sfTimePicker.AllowNullValue = true;
 {% endtabs %}
 
 ![SfTimePicker displaying watermark text](Getting-Started_images/PlaceHolderText.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
 ## Time changed notification
 
@@ -212,6 +222,8 @@ sfTimePicker.FormatString= "HH:mm";
 
 ![SfTimePicker selected time with hour and meridiem](Getting-Started_images/FormatString.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
+
 ## Restrict time selection
 
 You can restrict the users from selecting a time within the particular range by specifying [MinTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MinTime) and [MaxTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MaxTime) properties in `TimePicker` control. The default value of `MinTime` property is `1/1/0001 12:00:00 AM` and `MaxTime` property is `12/31/9999 11:59:59 PM`.
@@ -232,6 +244,8 @@ sfTimePicker.MaxTime = new DateTimeOffset(new DateTime(2020, 12, 10, 6, 59, 59))
 {% endtabs %}
 
 ![SfTimePicker restrict the time selection with particular range](Getting-Started_images/MinMaxTime.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
 ## Edit time using free form editing
 
@@ -255,4 +269,6 @@ sfTimePicker.EditMode = DateTimeEditingMode.Normal;
 {% endtabs %}
 
 ![SfTimePicker enables free form editing to select time](Getting-Started_images/editmode_Normal.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 

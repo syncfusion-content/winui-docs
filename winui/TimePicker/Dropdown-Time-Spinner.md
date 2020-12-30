@@ -32,95 +32,7 @@ sfTimePicker.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAlignedLeft;
 
 ![Alignment of drop down time spinner is changed to BottomEdgeAlignedLeft](Dropdown-Time-Spinner_images/DropDownPlacement.png)
 
-N> Download demo application from [GitHub]()
-
-## Customize the time fields in dropdown spinner using event
-
-You can change the time interval, header text, size of time field cells and customize the UI of time field cells, etc., by using the [TimeFieldPrepared](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_TimeFieldPrepared) event.
-
-Here, time interval, header and cell size of the dropdown time fields is customized by using `TimeFieldPrepared` event.
-
-{% tabs %}
-{% highlight XAML %}
-
-<editors:SfTimePicker TimeFieldPrepared="SfTimePicker_TimeFieldPrepared"
-                      x:Name="sfTimePicker"/>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfTimePicker sfTimePicker = new SfTimePicker();
-sfTimePicker.TimeFieldPrepared = SfTimePicker_TimeFieldPrepared;
-
-{% endhighlight %}
-{% endtabs %}
-
-You can handle the event as follows,
-
-{% tabs %}
-{% highlight C# %}
-
-/// <summary>
-/// Get the ItemsSource for minute or second column.
-/// </summary>
-/// <returns>Return the ItemsSource for minute or second column.</returns>
-private static ObservableCollection<string> GetMinutesOrSeconds(string pattern)
-{
-    ObservableCollection<string> minutes = new ObservableCollection<string>();
-    NumberFormatInfo provider = new NumberFormatInfo();
-    for (int i = 0; i < 60; i = i + 5)
-    {
-        if (i > 9 || pattern == "%s" || pattern == "{second.integer}" || pattern == "%m" || pattern == "{minute.integer}")
-        {
-            minutes.Add(i.ToString(provider));
-        }
-        else
-        {
-            minutes.Add("0" + i.ToString(provider));
-        }
-    }
-
-    return minutes;
-}
-
-private void SfTimePicker_TimeFieldPrepared(object sender, DateTimeFieldPreparedEventArgs e)
-{
-    if (e.Column != null)
-    {
-        //Minutes interval changed as 5.
-        if (e.Column.Field == DateTimeField.Minute || e.Column.Field == DateTimeField.Second)
-        {
-            e.Column.ItemsSource = GetMinutesOrSeconds(e.Column.Format);
-        }
-        if (e.Column.Field == DateTimeField.Hour12)
-        {
-            e.Column.Header = "Hr";
-            e.Column.ItemHeight = 60;
-            e.Column.ItemWidth = 100;
-        }
-        else if (e.Column.Field == DateTimeField.Minute)
-        {
-            e.Column.Header = "Min";
-            e.Column.ItemHeight = 40;
-            e.Column.ItemWidth = 100;
-        }
-        else if (e.Column.Field == DateTimeField.Meridiem)
-        {
-            e.Column.Header = "AM/PM";
-            e.Column.ItemHeight = 60;
-            e.Column.ItemWidth = 100;
-        }                    
-        e.Column.ShowHeader = true;
-       
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-![Dropdown spinner time field elements customized using TimeFieldPrepared event](Dropdown-Time-Spinner_images/TimeFieldPrepared.png)
-
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
 ## Custom UI for specific cell in dropdown spinner
 
@@ -244,7 +156,95 @@ public class TimeItemTemplateSelector : DataTemplateSelector
 
 ![Custom UI of specific time cells in dropdown spinner](Dropdown-Time-Spinner_images/ItemTemplateSelector.png)
 
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/CustomUI)
+
+## Customize the time fields in dropdown spinner using event
+
+You can change the time interval, header text, size of time field cells and customize the UI of time field cells, etc., by using the [TimeFieldPrepared](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_TimeFieldPrepared) event.
+
+Here, time interval, header and cell size of the dropdown time fields is customized by using `TimeFieldPrepared` event.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfTimePicker TimeFieldPrepared="SfTimePicker_TimeFieldPrepared"
+                      x:Name="sfTimePicker"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfTimePicker sfTimePicker = new SfTimePicker();
+sfTimePicker.TimeFieldPrepared = SfTimePicker_TimeFieldPrepared;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows,
+
+{% tabs %}
+{% highlight C# %}
+
+/// <summary>
+/// Get the ItemsSource for minute or second column.
+/// </summary>
+/// <returns>Return the ItemsSource for minute or second column.</returns>
+private static ObservableCollection<string> GetMinutesOrSeconds(string pattern)
+{
+    ObservableCollection<string> minutes = new ObservableCollection<string>();
+    NumberFormatInfo provider = new NumberFormatInfo();
+    for (int i = 0; i < 60; i = i + 5)
+    {
+        if (i > 9 || pattern == "%s" || pattern == "{second.integer}" || pattern == "%m" || pattern == "{minute.integer}")
+        {
+            minutes.Add(i.ToString(provider));
+        }
+        else
+        {
+            minutes.Add("0" + i.ToString(provider));
+        }
+    }
+
+    return minutes;
+}
+
+private void SfTimePicker_TimeFieldPrepared(object sender, DateTimeFieldPreparedEventArgs e)
+{
+    if (e.Column != null)
+    {
+        //Minutes interval changed as 5.
+        if (e.Column.Field == DateTimeField.Minute || e.Column.Field == DateTimeField.Second)
+        {
+            e.Column.ItemsSource = GetMinutesOrSeconds(e.Column.Format);
+        }
+        if (e.Column.Field == DateTimeField.Hour12)
+        {
+            e.Column.Header = "Hr";
+            e.Column.ItemHeight = 60;
+            e.Column.ItemWidth = 100;
+        }
+        else if (e.Column.Field == DateTimeField.Minute)
+        {
+            e.Column.Header = "Min";
+            e.Column.ItemHeight = 40;
+            e.Column.ItemWidth = 100;
+        }
+        else if (e.Column.Field == DateTimeField.Meridiem)
+        {
+            e.Column.Header = "AM/PM";
+            e.Column.ItemHeight = 60;
+            e.Column.ItemWidth = 100;
+        }                    
+        e.Column.ShowHeader = true;
+       
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Dropdown spinner time field elements customized using TimeFieldPrepared event](Dropdown-Time-Spinner_images/TimeFieldPrepared.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeFieldPrepared)
 
 ## Setting hints in dropdown header
 
@@ -269,7 +269,7 @@ sfTimePicker.ShowDropDownHeader = true;
 
 ![TimePicker displays the drop down time spinner header](Dropdown-Time-Spinner_images/DropDownHeader.png)
 
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
 ## Custom UI of dropdown header
 
@@ -308,7 +308,7 @@ You can customize the header of dropdown time spinner by using the [DropDownHead
 
 ![TimePicker with customized drop down time spinner header](Dropdown-Time-Spinner_images/DropDownHeaderTemplate.png)
 
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/CustomUI)
 
 ## Hide the dropdown column headers
 
@@ -331,7 +331,7 @@ sfTimePicker.ShowColumnHeaders = false;
 
 ![TimePicker hides the drop down time spinner column headers](Dropdown-Time-Spinner_images/ShowColumnHeaders.png)
 
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
 ## Hide submit button(Select time directly from time spinner)
 
@@ -354,6 +354,8 @@ sfTimePicker.ShowSubmitButtons = false;
 
 ![TimePicker hides the dropdown time spinner submit and cancel buttons](Getting-Started_images/ShowSubmitButtons.gif)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+
 ## Change the number of dropdown cells to be shown in the dropdown
 
 You can change the number of dropdown cells to be shown in the drop down time spinner by using the [VisibleItemsCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_VisibleItemsCount) property. The default value of `VisibleItemsCount` property is `-1`.
@@ -375,7 +377,7 @@ sfTimePicker.VisibleItemsCount = 5
 
 ![Number of time to be shown in the dropdown is changed](Dropdown-Time-Spinner_images/VisibleItemsCount.png)
 
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
 ## Change the size of dropdown cells
 
@@ -408,7 +410,7 @@ sfTimePicker.ItemHeight = 50;
 
 ![Drop down time spinner cell size changed](Dropdown-Time-Spinner_images/ItemWidth.png)
 
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
 ## Change dropdown height
 
@@ -431,7 +433,7 @@ sfTimePicker.DropDownHeight = 500;
 
 ![TimePicker with customized dropdown height](Dropdown-Time-Spinner_images/DropDownHeight.png)
 
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
 ## Change flow direction
 
@@ -454,4 +456,4 @@ sfTimePicker.FlowDirection = FlowDirection.RightToLeft;
 
 ![TimePicker flow direction changed to right to left](Dropdown-Time-Spinner_images/FlowDirection.png)
 
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
