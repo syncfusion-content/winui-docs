@@ -351,7 +351,7 @@ public class ViewModel
 {% highlight C# %}
 
 sfDatePicker.DataContext = new ViewModel();
-sfDatePicker.BlackoutDates = BlockedDates;
+sfDatePicker.BlackoutDates = (sfDatePicker.DataContext as ViewModel).BlockedDates;;
 
 {% endhighlight  %}
 {% endtabs %}
