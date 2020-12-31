@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WinUI SfDatePicker control | Syncfusion
+title: Getting Started with WinUI DatePicker control | Syncfusion
 description: This section describes about how to add the SfDatePicker control into WinUI application and its basic features.
 platform: WinUI
 control: SfDatePicker
 documentation: ug
 ---
 
-# Getting Started with WinUI DatePicker (SfDatePicker)
+# Getting Started with WinUI DatePicker
 
 This section explains the steps required to add the [DatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html) control and its date selection options. This section covers only basic features needed to get started with Syncfusion `DatePicker` control.
 
@@ -69,6 +69,8 @@ namespace GettingStarted
 
 ![DatePicker control added in the application](Getting-Started_images/DatePicker_Added.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/Getting_Started)
+
 ## Select the date programmatically
 
 You can set or change the selected date programmatically by using [SelectedDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_SelectedDate) property. If you not assign any value for the `SelectedDate` property, `DatePicker` will automatically assign the current system date as `SelectedDate`.
@@ -89,6 +91,8 @@ sfDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 10, 29));
 
 ![SfDatePicker displaying selected value](Getting-Started_images/selectedDate.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+
 ## Select date interactively
 
 You can change the selected date interactively by enter the date value using keyboard or select from drop down date spinner. You can get the selected date from the `SelectedDate` property.
@@ -107,6 +111,8 @@ SfDatePicker sfDatePicker= new SfDatePicker();
 {% endtabs %}
 
 ![SfDatePicker displaying selected value](Getting-Started_images/selectedDateInteract.gif)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/Getting_Started)
 
 ## Setting null value
 
@@ -130,6 +136,8 @@ sfDatePicker.AllowNullValue = true;
 {% endtabs %}
 
 ![SfDatePicker displaying null value](Getting-Started_images/AllowNullValue.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
 ## Setting watermark text
 
@@ -155,6 +163,8 @@ sfDatePicker.AllowNullValue = true;
 {% endtabs %}
 
 ![SfDatePicker displaying watermark text](Getting-Started_images/PlaceHolderText.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
 ## Date changed notification
 
@@ -212,6 +222,8 @@ sfDatePicker.FormatString= "M";
 
 ![SfDatePicker selected date with month format](Getting-Started_images/FormatString.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
+
 ## Change date format for Spinner
 
 You can allow the user to select the pair of date, month and year spinner or any single spinner cell from the drop down date spinner by using the [DropdownFormatString](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DropDownFormatString) property. The default value of `DropdownFormatString` property is `d`.
@@ -235,6 +247,8 @@ sfDatePicker.DropdownFormatString = "dd/MM";
 
 Here, you can only able to select the date and month value from the drop down spinner.
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
+
 ## Restrict date selection
 
 You can restrict the users from selecting a date within the particular range by specifying [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MinDate) and [MaxDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MaxDate) properties in `DatePicker` control. The default value of `MinDate` property is `1/1/0001` and `MaxDate` property is `12/31/9999`.
@@ -255,6 +269,8 @@ sfDatePicker.MinDate = new DateTimeOffset(new DateTime(2020,12,20));
 {% endtabs %}
 
 ![SfDatePicker restrict the date selection with particular range](Getting-Started_images/MinDate.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
 ## Disable/block all weekends
 
@@ -294,32 +310,61 @@ private void SfDatePicker_DateFieldItemPrepared(object sender, DateTimeFieldItem
 
 ![SfDatePicker blocksweekend dates from selection](Getting-Started_images/blockweekends.png)
 
-## Hide submit button(Select date directly from date spinner)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
-If you want to hide the submit button and select the date directly from the drop down date spinner without clicking the `Ok` button, use the [ShowSubmitButtons](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
+## Block dates using BlackoutDates
+
+If you want to block particular dates from the date selection, add that dates into the [BlackoutDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_BlackoutDates) collection. You can add more block out date ranges to the `BlackoutDates` collection. The default value of `BlackoutDates` property is `null`.
 
 {% tabs %}
-{% highlight XAML %}
-
-<editors:SfDatePicker ShowSubmitButtons="False"
-                      x:Name="sfDatePicker"/>
-
-{% endhighlight %}
 {% highlight c# %}
 
-SfDatePicker sfDatePicker = new SfDatePicker();
-sfDatePicker.ShowSubmitButtons = false;
+public class ViewModel
+{       
+    public DateTimeOffsetCollection BlockedDates { get; set; }
+    public ViewModel()
+    {
+        BlockedDates = new DateTimeOffsetCollection();
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2018, 1, 28)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 1, 26)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 1, 29)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 1, 31)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2023, 1, 28)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2024, 1, 28)));
+    }
+}
 
-{% endhighlight %}
+{% endhighlight  %}
 {% endtabs %}
 
-![SfDatePicker hides the drop down date spinner submit and cancel buttons](Getting-Started_images/ShowSubmitButtons.gif)
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfDatePicker BlackoutDates="{Binding BlockedDates}" 
+                      x:Name="sfDatePicker">
+    <editors:SfDatePicker.DataContext>
+        <local:ViewModel/>
+    </editors:SfDatePicker.DataContext>
+</editors:SfDatePicker>
+
+{% endhighlight  %}
+{% highlight C# %}
+
+sfDatePicker.DataContext = new ViewModel();
+sfDatePicker.BlackoutDates = (sfDatePicker.DataContext as ViewModel).BlockedDates;;
+
+{% endhighlight  %}
+{% endtabs %}
+
+![SfDatePicker blocks the particular dates from selection](Getting-Started_images/BlackoutDates.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
 ## Edit date using free form editing
 
-If you want to perform the validation after the user completely entering their date inputs, use the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_EditMode) property value as `Normal`. Then the entered date value is validated with the `FormatString` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the selected date will be set as default format value.
-
 By default, user entering each input numbers are automatically validated with the `FormatString` formats and assigned the proper value for it, then it will move to next input part of the date format.
+
+If you want to perform the validation after the user completely entering their date inputs, use the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_EditMode) property value as `Normal`. Then the entered date value is validated with the `FormatString` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the selected date will be set as default format value.
 
 {% tabs %}
 {% highlight xaml %}
@@ -337,3 +382,5 @@ sfDatePicker.EditMode = DateTimeEditingMode.Normal;
 {% endtabs %}
 
 ![SfDatePicker enables free form editing to select date](Getting-Started_images/EditModeNormal.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)

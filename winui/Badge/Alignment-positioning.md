@@ -213,9 +213,9 @@ badge.VerticalPosition = 0.8;
 
 ## Custom alignment and positioning of Badge
 
-You can customize the horizontal or vertical position of the `Badge` either inside, outside or in the middle with any point by using the `HorizontalPosition` & `VerticalPosition` properties and [HorizontalCustomAnchor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalCustomAnchor) & [VerticalAnchorPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalAnchorPosition) properties. This will effective only on by setting the `HorizontalAnchor` and `VerticalAnchor` properties value as `Custom`.  The value range for `HorizontalCustomAnchor` and `VerticalAnchorPosition` properties is `0` to`1`. The default value of `HorizontalCustomAnchor`and `VerticalAnchorPosition` properties is `0`.
+You can customize the horizontal or vertical position of the `Badge` either inside, outside or in the middle with any point by using the `HorizontalPosition` & `VerticalPosition` properties and [HorizontalAnchorPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalAnchorPosition) & [VerticalAnchorPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalAnchorPosition) properties. This will effective only on by setting the `HorizontalAnchor` and `VerticalAnchor` properties value as `Custom`.  The value range for `HorizontalAnchorPosition` and `VerticalAnchorPosition` properties is `0` to`1`. The default value of `HorizontalAnchorPosition`and `VerticalAnchorPosition` properties is `0`.
 
-For example, you will see how the `HorizontalCustomAnchor` and  `HorizontalPosition` values working based on the `VerticalAnchorPosition` and `VerticalPosition` values. Here,  `VerticalAnchorPosition` and `VerticalPosition` properties value is `0`.
+For example, you will see how the `HorizontalAnchorPosition` and  `HorizontalPosition` values working based on the `VerticalAnchorPosition` and `VerticalPosition` values. Here,  `VerticalAnchorPosition` and `VerticalPosition` properties value is `0`.
 
 <style>
 table, td, th { 
@@ -232,7 +232,7 @@ table, td, th {
 </tr>
 
 <tr>
-<th>HorizontalCustomAnchor</th>
+<th>HorizontalAnchorPosition</th>
 <td>0</td>
 <td >0.5</td>
 <td>1</td>
@@ -266,7 +266,7 @@ table, td, th {
 
 <syncfusion:BadgeContainer Name="badgeContainer"  >
     <syncfusion:BadgeContainer.Badge>
-        <syncfusion:Badge HorizontalCustomAnchor="0.2"
+        <syncfusion:Badge HorizontalAnchorPosition="0.2"
                           VerticalAnchorPosition="0" 
                           HorizontalAnchor="Custom"
                           VerticalAnchor="Custom"
@@ -286,7 +286,7 @@ table, td, th {
 
 badge.HorizontalAnchor = BadgeAnchor.Custom;
 badge.VerticalAnchor = BadgeAnchor.Custom;
-badge.HorizontalCustomAnchor = 0.2;
+badge.HorizontalAnchorPosition = 0.2;
 badge.VerticalAnchorPosition = 0;
 badge.HorizontalPosition = 0;
 badge.VerticalPosition  0;
