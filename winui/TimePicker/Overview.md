@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About WinUI SfTimePicker control | Syncfusion
+title: About WinUI TimePicker control | Syncfusion
 description: This page explains about overview of the WinUI SfTimePicker control and its overall customization features.
 platform: winui
 control: SfTimePicker

@@ -84,18 +84,18 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
     </tr>
     <tr>
         <td>
-            <p>Calendar</p>
+            <p><a href="https://help.syncfusion.com/winui/calendar/getting-started">Calendar</p>
         </td>
         <td>
-            <p>Calendar Date Picker</p>
+            <p><a href="https://help.syncfusion.com/winui/calendar-datepicker/getting-started">Calendar Date Picker</p>
         </td>
          <td>
-            <p>Date Picker</p>
+            <p><a href="https://help.syncfusion.com/winui/datepicker/getting-started">Date Picker</p>
         </td>
     </tr>
     <tr>
         <td>
-            <p>Time Picker</p>
+            <p><a href="https://help.syncfusion.com/winui/timepicker/getting-started">Time Picker</p>
         </td>
         <td></td>
         <td></td>

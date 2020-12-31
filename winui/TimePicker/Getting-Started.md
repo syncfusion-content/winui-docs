@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting started with WinUI SfTimePicker control | Syncfusion
+title: Getting started with WinUI TimePicker control | Syncfusion
 description: This section describes about how to add the SfTimePicker control into WinUI application and its basic features.
 platform: WinUI
-control: SfBadge
+control: SfTimePicker
 documentation: ug
 ---
 
@@ -69,6 +69,8 @@ namespace GettingStarted
 
 ![SfTimePicker control added in the application](Getting-Started_images/TimePicker_Added.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/Getting_Started)
+
 ## Select the time programmatically
 
 You can set or change the selected time programmatically by using [SelectedTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_SelectedTime) property. If you not assign any value for the `SelectedTime` property, `TimePicker` will automatically assign the current system time as `SelectedTime`.
@@ -89,6 +91,8 @@ sfTimePicker.SelectedTime = new DateTimeOffset(new DateTime(2021, 10, 29, 10, 45
 
 ![SfTimePicker displaying the selected time](Getting-Started_images/SelectedTime.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+
 ## Select time interactively
 
 You can change the selected time interactively by enter the time value using keyboard or from the drop down time spinner. You can get the selected time from the `SelectedTime` property.
@@ -107,6 +111,8 @@ SfTimePicker sfTimePicker= new SfTimePicker();
 {% endtabs %}
 
 ![SfTimePicker displaying selected value](Getting-Started_images/selectedTimeinteratct.gif)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/Getting_Started)
 
 ## Setting null value
 
@@ -130,6 +136,8 @@ sfTimePicker.AllowNullValue = true;
 {% endtabs %}
 
 ![SfTimePicker displaying the null value](Getting-Started_images/AllowNullValue.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
 ## Setting watermark text
 
@@ -155,6 +163,8 @@ sfTimePicker.AllowNullValue = true;
 {% endtabs %}
 
 ![SfTimePicker displaying watermark text](Getting-Started_images/PlaceHolderText.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
 ## Time changed notification
 
@@ -212,6 +222,8 @@ sfTimePicker.FormatString= "HH:mm";
 
 ![SfTimePicker selected time with hour and meridiem](Getting-Started_images/FormatString.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
+
 ## Restrict time selection
 
 You can restrict the users from selecting a time within the particular range by specifying [MinTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MinTime) and [MaxTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MaxTime) properties in `TimePicker` control. The default value of `MinTime` property is `1/1/0001 12:00:00 AM` and `MaxTime` property is `12/31/9999 11:59:59 PM`.
@@ -233,32 +245,13 @@ sfTimePicker.MaxTime = new DateTimeOffset(new DateTime(2020, 12, 10, 6, 59, 59))
 
 ![SfTimePicker restrict the time selection with particular range](Getting-Started_images/MinMaxTime.png)
 
-## Hide submit button(Select time directly from time spinner)
-
-If you want to hide the submit button and select the time directly from the drop down time spinner without clicking the `Ok` button, use the [ShowSubmitButtons](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
-
-{% tabs %}
-{% highlight XAML %}
-
-<editors:SfTimePicker ShowSubmitButtons="False" 
-	                  x:Name="sfTimePicker"/>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfTimePicker sfTimePicker = new SfTimePicker();
-sfTimePicker.ShowSubmitButtons = false;
-
-{% endhighlight %}
-{% endtabs %}
-
-![SfTimePicker hides the drop down time spinner submit and cancel buttons](Getting-Started_images/ShowSubmitButtons.gif)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
 ## Edit time using free form editing
 
-If you want to perform the validation after the user completely entering their time inputs, use the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_EditMode) property value as `Normal`. Then the entered time value is validated with the `FormatString` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the selected time will be set as default format value.
-
 By default, the user entering each input numbers are automatically validated with the `FormatString` formats and assigned the proper value for it, then it will move to next input part of the time format.
+
+If you want to perform the validation after the user completely entering their time inputs, use the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_EditMode) property value as `Normal`. Then the entered time value is validated with the `FormatString` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the selected time will be set as default format value.
 
 {% tabs %}
 {% highlight xaml %}
@@ -276,4 +269,6 @@ sfTimePicker.EditMode = DateTimeEditingMode.Normal;
 {% endtabs %}
 
 ![SfTimePicker enables free form editing to select time](Getting-Started_images/editmode_Normal.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
