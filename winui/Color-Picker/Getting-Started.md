@@ -15,7 +15,7 @@ This section describes how to create a [ColorPicker](https://help.syncfusion.com
 
 ![Structure of WinUI ColorPicker control](Getting-Started_images/Structure.png)
 
-## Creating an application with WinUI ColorPalette
+## Creating an application with WinUI ColorPicker
 
 1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
 2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
