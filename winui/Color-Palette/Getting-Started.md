@@ -141,7 +141,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can select a various theme colors by setting the value to the [ActivePalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_ActivePalette) property. Based on the `ActivePalette` value, the respective base theme color items are displayed with its variants. The default value of `ActivePalette` property is `Office`.
 
-![Displaying all theme palettes](Working-with-SfColorPalette_images/themepalettes.png)
+![Displaying all theme palettes](Working-with-SfColorPalette_images/themepalette.png)
 
 {% tabs %}
 {% highlight xaml %}
