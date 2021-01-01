@@ -71,18 +71,18 @@ table, td, th {
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:BadgeContainer Name="badgeContainer"  >
-    <syncfusion:BadgeContainer.Badge>
-        <syncfusion:SfBadge HorizontalAlignment="Left"
-                            VerticalAlignment="Center"
-                            Content="99+"
-                            Name="badge"/>
-    </syncfusion:BadgeContainer.Badge>
-    <syncfusion:BadgeContainer.Content>
+<notification:BadgeContainer Name="badgeContainer"  >
+    <notification:BadgeContainer.Badge>
+        <notification:SfBadge HorizontalAlignment="Left"
+                              VerticalAlignment="Center"
+                              Content="99+"
+                              Name="badge"/>
+    </notification:BadgeContainer.Badge>
+    <notification:BadgeContainer.Content>
         <Button Content="Inbox">
         </Button>
-    </syncfusion:BadgeContainer.Content>
-</syncfusion:BadgeContainer>
+    </notification:BadgeContainer.Content>
+</notification:BadgeContainer>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -102,7 +102,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can change the horizontal or vertical position of the `Badge` either inside, outside or in the middle by using the [HorizontalAnchor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalAnchor) and [VerticalAnchor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalAnchor) properties. It will be placed based on the value of `HorizontalAlignment` and `VerticalAlignment` properties. The default value of `HorizontalAnchor` and `VerticalAnchor` properties is `Center`.
 
-For example, you will change the `HorizontalAnchor` and `VerticalAnchor` property values on when the value of `HorizontalAlignment` properties is `Right` and `VerticalAlignment` property is `Top`. `Badge` will be positioned as follows,
+For example, you will see how the `HorizontalAnchor` and  `VerticalAnchor` values working based on the `HorizontalAlignment` and `VerticalAlignment` values. Here, the value of `HorizontalAlignment` properties is `Right` and `VerticalAlignment` property is `Top`.
 
 <style>
 table, td, th { 
@@ -148,18 +148,18 @@ table, td, th {
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:BadgeContainer Name="badgeContainer"  >
-    <syncfusion:BadgeContainer.Badge>
-        <syncfusion:SfBadge HorizontalAnchor="Outside"
-                            VerticalAnchor="Center"
-                            Content="99+"
-                            Name="badge"/>
-    </syncfusion:BadgeContainer.Badge>
-    <syncfusion:BadgeContainer.Content>
+<notification:BadgeContainer Name="badgeContainer"  >
+    <notification:BadgeContainer.Badge>
+        <notification:SfBadge HorizontalAnchor="Outside"
+                              VerticalAnchor="Center"
+                              Content="99+"
+                              Name="badge"/>
+    </notification:BadgeContainer.Badge>
+    <notification:BadgeContainer.Content>
         <Button Content="Inbox">
         </Button>
-    </syncfusion:BadgeContainer.Content>
-</syncfusion:BadgeContainer>
+    </notification:BadgeContainer.Content>
+</notification:BadgeContainer>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -184,21 +184,21 @@ For example, if you use any circular containers, you can easily place the `Badge
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:BadgeContainer>
-    <syncfusion:BadgeContainer.Content> 
+<notification:BadgeContainer>
+    <notification:BadgeContainer.Content> 
         <PersonPicture Width="100"
                        Height="100"
                        ProfilePicture="/Images/avatar.png"/>    
-    </syncfusion:BadgeContainer.Content>
-    <syncfusion:BadgeContainer.Badge>
-        <syncfusion:SfBadge x:Name="badge3"
-                            Shape="None"
-                            HorizontalPosition="0.9"
-                            VerticalPosition="0.8">
+    </notification:BadgeContainer.Content>
+    <notification:BadgeContainer.Badge>
+        <notification:SfBadge x:Name="badge3"
+                              Shape="None"
+                              HorizontalPosition="0.9"
+                              VerticalPosition="0.8">
             <Ellipse Width="20" Height="20" Fill="LimeGreen"/>
-        </syncfusion:SfBadge>
-    </syncfusion:BadgeContainer.Badge>
-</syncfusion:BadgeContainer>
+        </notification:SfBadge>
+    </notification:BadgeContainer.Badge>
+</notification:BadgeContainer>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -213,9 +213,9 @@ badge.VerticalPosition = 0.8;
 
 ## Custom alignment and positioning of Badge
 
-You can customize the horizontal or vertical position of the `Badge` either inside, outside or in the middle with any point by using the `HorizontalPosition` & `VerticalPosition` properties and [HorizontalAnchorPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalAnchorPosition) & [VerticalAnchorPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalAnchorPosition) properties. This will effective only on by setting the `HorizontalAnchor` and `VerticalAnchor` properties value as `Custom`.  The value range for `HorizontalAnchorPosition` and `VerticalAnchorPosition` properties is `0` to`1`. The default value of `HorizontalAnchorPosition`and `VerticalAnchorPosition` properties is `0`.
+By using the `HorizontalAlignment`, `VerticalAlignment`, `HorizontalAnchor` and `VerticalAnchor` properties, you can place `Badge` only at particular position. If you want to place the `Badge` at custom position, use the `HorizontalPosition` & `VerticalPosition` properties and [HorizontalAnchorPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalAnchorPosition) & [VerticalAnchorPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalAnchorPosition) properties. This will effective only on by setting the `HorizontalAnchor` and `VerticalAnchor` properties value as `Custom`.  The value range for `HorizontalAnchorPosition` and `VerticalAnchorPosition` properties is `0` to`1`. The default value of `HorizontalAnchorPosition`and `VerticalAnchorPosition` properties is `0`.
 
-For example, you will see how the `HorizontalAnchorPosition` and  `HorizontalPosition` values working based on the `VerticalAnchorPosition` and `VerticalPosition` values. Here,  `VerticalAnchorPosition` and `VerticalPosition` properties value is `0`.
+For example, you will see how the  `HorizontalPosition` and `HorizontalAnchorPosition` values working based on the `VerticalAnchorPosition` and `VerticalPosition` values. Here,  `VerticalPosition` and `VerticalAnchorPosition` properties value is `0`.
 
 <style>
 table, td, th { 
@@ -227,36 +227,35 @@ table, td, th {
 
 <tr>
 <td class="invisible" ></td>
-<th colspan = "3">HorizontalPosition
+<th colspan = "3">HorizontalAnchorPosition
 </th>
 </tr>
 
 <tr>
-<th>HorizontalAnchorPosition</th>
+<th>HorizontalPosition</th>
 <td>0</td>
 <td >0.5</td>
 <td>1</td>
 </tr>
 
-
 <tr>
 <td>0</td>
 <td><img src="Getting-Started_images/Custom_Left_top.png" alt="Left-Top custom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Custom_Center_Top.png" alt="Center-Top custom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Custom_Right_Top.png" alt="Right-Top custom alignment of Badge"/></td>
+<td><img src="Getting-Started_images/Custom_Left_center.png" alt="Left-center custom alignment of Badge"/></td>
+<td><img src="Getting-Started_images/Custom_Left_Bottom.png" alt="Left-Bottom custom alignment of Badge"/></td>
 </tr>
 
 <tr>
 <td>0.5</td>
-<td><img src="Getting-Started_images/Custom_Left_center.png" alt="Left-center custom alignment of Badge"/></td>
+<td><img src="Getting-Started_images/Custom_Center_Top.png" alt="Center-Top custom alignment of Badge"/></td>
 <td><img src="Getting-Started_images/Custom_Center_Center.png" alt="Center-Center custom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Custom_Right_Center.png" alt="Right-Center custom alignment of Badge"/></td>
+<td><img src="Getting-Started_images/Custom_Center_Bottom.png" alt="Center-Bottom custom alignment of Badge"/></td>
 </tr>
 
 <tr>
 <td>1</td>
-<td><img src="Getting-Started_images/Custom_Left_Bottom.png" alt="Left-Bottom custom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Custom_Center_Bottom.png" alt="Center-Bottom custom alignment of Badge"/></td>
+<td><img src="Getting-Started_images/Custom_Right_Top.png" alt="Right-Top custom alignment of Badge"/></td>
+<td><img src="Getting-Started_images/Custom_Right_Center.png" alt="Right-Center custom alignment of Badge"/></td>
 <td><img src="Getting-Started_images/Custom_Right_Bottom.png" alt="Right-Bottom custom alignment of Badge"/></td>
 </tr>
 </table>
@@ -264,22 +263,22 @@ table, td, th {
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:BadgeContainer Name="badgeContainer"  >
-    <syncfusion:BadgeContainer.Badge>
-        <syncfusion:Badge HorizontalAnchorPosition="0.2"
-                          VerticalAnchorPosition="0" 
-                          HorizontalAnchor="Custom"
-                          VerticalAnchor="Custom"
-                          HorizontalPosition="0"
-                          VerticalPosition="0"
-                          Content="99+"
-                          Name="badge"/>
-    </syncfusion:BadgeContainer.Badge>
-    <syncfusion:BadgeContainer.Content>
+<notification:BadgeContainer Name="badgeContainer"  >
+    <notification:BadgeContainer.Badge>
+        <notification:Badge HorizontalAnchorPosition="0.2"
+                            VerticalAnchorPosition="0" 
+                            HorizontalAnchor="Custom"
+                            VerticalAnchor="Custom"
+                            HorizontalPosition="0"
+                            VerticalPosition="0"
+                            Content="99+"
+                            Name="badge"/>
+    </notification:BadgeContainer.Badge>
+    <notification:BadgeContainer.Content>
         <Button Content="Inbox">
         </Button>
-    </syncfusion:BadgeContainer.Content>
-</syncfusion:BadgeContainer>
+    </notification:BadgeContainer.Content>
+</notification:BadgeContainer>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -304,18 +303,18 @@ you can place the `Badge` content either horizontally or vertically by using the
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:BadgeContainer Name="badgeContainer"  >
-    <syncfusion:BadgeContainer.Badge>
-        <syncfusion:SfBadge HorizontalContentAlignment="Right"
-                            VerticalContentAlignment="Top"
-                            Content="99+"
-                            Name="badge"/>
-    </syncfusion:BadgeContainer.Badge>
-    <syncfusion:BadgeContainer.Content>
+<notification:BadgeContainer Name="badgeContainer"  >
+    <notification:BadgeContainer.Badge>
+        <notification:SfBadge HorizontalContentAlignment="Right"
+                              VerticalContentAlignment="Top"
+                              Content="99+"
+                              Name="badge"/>
+    </notification:BadgeContainer.Badge>
+    <notification:BadgeContainer.Content>
         <Button Content="Inbox">
         </Button>
-    </syncfusion:BadgeContainer.Content>
-</syncfusion:BadgeContainer>
+    </notification:BadgeContainer.Content>
+</notification:BadgeContainer>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -328,5 +327,37 @@ badge.Content = "99+";
 {% endtabs %}
 
 ![Alignment of the Badge content is changed](Getting-Started_images/Content_Alignment.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
+
+## Padding for Badge content
+
+By default, `Badge` control size automatically assigned based on its content. You can change the left, right, top, bottom content spacing of a `Badge` control by using the `Padding` property. The default value of `Padding` property is `0,0,0,0`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<notification:BadgeContainer Name="badgeContainer">
+    <notification:BadgeContainer.Badge>
+        <notification:SfBadge Padding="10"
+                              Content="10"
+                              Name="badge"/>
+    </notification:BadgeContainer.Badge>
+    <notification:BadgeContainer.Content>
+        <Button Content="Inbox">
+        </Button>
+    </notification:BadgeContainer.Content>
+</notification:BadgeContainer>
+
+{% endhighlight %}
+{% highlight C# %}
+
+badge.Padding = new Thickness() { Bottom = 10, Left = 10, Right = 10, Top = 10 };
+badge.Content = "10";
+
+{% endhighlight %}
+{% endtabs %}
+
+![Content spacing of Badge](Getting-Started_images/Padding.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
