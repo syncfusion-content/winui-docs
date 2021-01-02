@@ -32,13 +32,13 @@ This section explains the steps required to add the [Badge](https://help.syncfus
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Notifications"
+    xmlns:notification="using:Syncfusion.UI.Xaml.Notifications"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
-        <syncfusion:SfBadge Name="badge"
-                            Height="30"
-                            Width="30"/>
+        <notification:SfBadge Name="badge"
+                              Height="30"
+                              Width="30"/>
     </Grid>
 </Page>
 
@@ -80,16 +80,16 @@ Here, `Badge` control added for the `Button` control.
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:BadgeContainer Name="badgeContainer"  >
-    <syncfusion:BadgeContainer.Badge>
-        <syncfusion:SfBadge Name="badge" 
-                            Content="10"/>
-    </syncfusion:BadgeContainer.Badge>
-    <syncfusion:BadgeContainer.Content>
+<notification:BadgeContainer Name="badgeContainer"  >
+    <notification:BadgeContainer.Badge>
+        <notification:SfBadge Name="badge" 
+                              Content="10"/>
+    </notification:BadgeContainer.Badge>
+    <notification:BadgeContainer.Content>
         <Button Content="Inbox">
         </Button>
-    </syncfusion:BadgeContainer.Content>
-</syncfusion:BadgeContainer>
+    </notification:BadgeContainer.Content>
+</notification:BadgeContainer>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -118,16 +118,16 @@ If you want to set or change the display content of the `Badge`, use the `Conten
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:BadgeContainer Name="badgeContainer"  >
-    <syncfusion:BadgeContainer.Badge>
-        <syncfusion:SfBadge  Name="badge" 
-                             Content="99+"/>
-    </syncfusion:BadgeContainer.Badge>
-    <syncfusion:BadgeContainer.Content>
+<notification:BadgeContainer Name="badgeContainer"  >
+    <notification:BadgeContainer.Badge>
+        <notification:SfBadge Name="badge" 
+                              Content="99+"/>
+    </notification:BadgeContainer.Badge>
+    <notification:BadgeContainer.Content>
         <Button Content="Inbox">
         </Button>
-    </syncfusion:BadgeContainer.Content>
-</syncfusion:BadgeContainer>
+    </notification:BadgeContainer.Content>
+</notification:BadgeContainer>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -156,18 +156,18 @@ you can align the `Badge` either horizontally or vertically by using the `Badge.
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:BadgeContainer Name="badgeContainer"  >
-    <syncfusion:BadgeContainer.Badge>
-        <syncfusion:SfBadge HorizontalAlignment="Left"
-                            VerticalAlignment="Center"
-                            Content="99+"
-                            Name="badge"/>
-    </syncfusion:BadgeContainer.Badge>
-    <syncfusion:BadgeContainer.Content>
+<notification:BadgeContainer Name="badgeContainer"  >
+    <notification:BadgeContainer.Badge>
+        <notification:SfBadge HorizontalAlignment="Left"
+                              VerticalAlignment="Center"
+                              Content="99+"
+                              Name="badge"/>
+    </notification:BadgeContainer.Badge>
+    <notification:BadgeContainer.Content>
         <Button Content="Inbox">
         </Button>
-    </syncfusion:BadgeContainer.Content>
-</syncfusion:BadgeContainer>
+    </notification:BadgeContainer.Content>
+</notification:BadgeContainer>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -190,18 +190,18 @@ You can change the horizontal or vertical position of the `Badge` either inside,
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:BadgeContainer Name="badgeContainer"  >
-    <syncfusion:BadgeContainer.Badge>
-        <syncfusion:SfBadge HorizontalAnchor="Outside"
-                            VerticalAnchor="Center"
-                            Content="99+"
-                            Name="badge"/>
-    </syncfusion:BadgeContainer.Badge>
-    <syncfusion:BadgeContainer.Content>
+<notification:BadgeContainer Name="badgeContainer"  >
+    <notification:BadgeContainer.Badge>
+        <notification:SfBadge HorizontalAnchor="Outside"
+                              VerticalAnchor="Center"
+                              Content="99+"
+                              Name="badge"/>
+    </notification:BadgeContainer.Badge>
+    <notification:BadgeContainer.Content>
         <Button Content="Inbox">
         </Button>
-    </syncfusion:BadgeContainer.Content>
-</syncfusion:BadgeContainer>
+    </notification:BadgeContainer.Content>
+</notification:BadgeContainer>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -226,21 +226,21 @@ For example, if you use any circular containers, you can easily place the `Badge
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:BadgeContainer>
-    <syncfusion:BadgeContainer.Content> 
+<notification:BadgeContainer>
+    <notification:BadgeContainer.Content> 
         <PersonPicture Width="100"
                        Height="100"
                        ProfilePicture="/Images/avatar.png"/>    
-    </syncfusion:BadgeContainer.Content>
-    <syncfusion:BadgeContainer.Badge>
-        <syncfusion:SfBadge x:Name="badge3"
-                            Shape="None"
-                            HorizontalPosition="0.9"
-                            VerticalPosition="0.8">
+    </notification:BadgeContainer.Content>
+    <notification:BadgeContainer.Badge>
+        <notification:SfBadge x:Name="badge3"
+                              Shape="None"
+                              HorizontalPosition="0.9"
+                              VerticalPosition="0.8">
             <Ellipse Width="20" Height="20" Fill="LimeGreen"/>
-        </syncfusion:SfBadge>
-    </syncfusion:BadgeContainer.Badge>
-</syncfusion:BadgeContainer>
+        </notification:SfBadge>
+    </notification:BadgeContainer.Badge>
+</notification:BadgeContainer>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -309,18 +309,18 @@ public class ViewModel {
                         <ColumnDefinition Width="100"/>
                     </Grid.ColumnDefinitions>
                     <ContentPresenter 
-                                      Grid.Column="0" 
-                                      Content="{Binding ItemName}" 
-                                      VerticalAlignment="Center"/>
-                    <syncfusion:SfBadge 
-                                      x:Name="badge4"
-                                      Grid.Column="1" 
-                                      Height="20" 
-                                      Width="40" 
-                                      Content="{Binding UnreadMessageCount}"
-                                      Shape="Oval"
-                                      Fill="Warning">
-                    </syncfusion:SfBadge>
+                                       Grid.Column="0" 
+                                       Content="{Binding ItemName}" 
+                                       VerticalAlignment="Center"/>
+                    <notification:SfBadge 
+                                       x:Name="badge4"
+                                       Grid.Column="1" 
+                                       Height="20" 
+                                       Width="40" 
+                                       Content="{Binding UnreadMessageCount}"
+                                       Shape="Oval"
+                                       Fill="Warning">
+                    </notification:SfBadge>
                 </Grid>
             </DataTemplate>
         </ListView.ItemTemplate>
@@ -359,17 +359,17 @@ The `Badge` supports the following different essential states :
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:BadgeContainer Name="badgeContainer"  >
-    <syncfusion:BadgeContainer.Badge>
-        <syncfusion:SfBadge Fill="Success"
-                            Content="99+"
-                            Name="badge"/>
-    </syncfusion:BadgeContainer.Badge>
-    <syncfusion:BadgeContainer.Content>
+<notification:BadgeContainer Name="badgeContainer"  >
+    <notification:BadgeContainer.Badge>
+        <notification:SfBadge Fill="Success"
+                              Content="99+"
+                              Name="badge"/>
+    </notification:BadgeContainer.Badge>
+    <notification:BadgeContainer.Content>
         <Button Content="Inbox">
         </Button>
-    </syncfusion:BadgeContainer.Content>
-</syncfusion:BadgeContainer>
+    </notification:BadgeContainer.Content>
+</notification:BadgeContainer>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -393,17 +393,17 @@ You can change the default shape to either `Rectangle`, `Oval` or `Ellipse` by u
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:BadgeContainer Name="badgeContainer"  >
-    <syncfusion:BadgeContainer.Badge>
-        <syncfusion:SfBadge Shape="Oval"
-                            Content="99+"
-                            Name="badge"/>
-    </syncfusion:BadgeContainer.Badge>
-    <syncfusion:BadgeContainer.Content>
+<notification:BadgeContainer Name="badgeContainer"  >
+    <notification:BadgeContainer.Badge>
+        <notification:SfBadge Shape="Oval"
+                              Content="99+"
+                              Name="badge"/>
+    </notification:BadgeContainer.Badge>
+    <notification:BadgeContainer.Content>
         <Button Content="Inbox">
         </Button>
-    </syncfusion:BadgeContainer.Content>
-</syncfusion:BadgeContainer>
+    </notification:BadgeContainer.Content>
+</notification:BadgeContainer>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -427,18 +427,18 @@ You can enable the `Scale` or `Opacity` based animation for displaying the `Badg
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:BadgeContainer Name="badgeContainer"  >
-    <syncfusion:BadgeContainer.Badge>
-        <syncfusion:SfBadge AnimationType="Scale"
-                            Background="Red"
-                            Content="1"
-                            Name="badge"/>
-    </syncfusion:BadgeContainer.Badge>
-    <syncfusion:BadgeContainer.Content>
+<notification:BadgeContainer Name="badgeContainer"  >
+    <notification:BadgeContainer.Badge>
+        <notification:SfBadge AnimationType="Scale"
+                              Background="Red"
+                              Content="1"
+                              Name="badge"/>
+    </notification:BadgeContainer.Badge>
+    <notification:BadgeContainer.Content>
         <Button Content="Inbox">
         </Button>
-    </syncfusion:BadgeContainer.Content>
-</syncfusion:BadgeContainer>
+    </notification:BadgeContainer.Content>
+</notification:BadgeContainer>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -513,20 +513,20 @@ public class CustomNumberConverter : IValueConverter {
         <ColumnDefinition/>
     </Grid.ColumnDefinitions>
     
-    <syncfusion:BadgeContainer Name="badgeContainer">
-        <syncfusion:BadgeContainer.Badge>
-            <syncfusion:SfBadge  Name="badge"
+    <notification:BadgeContainer Name="badgeContainer">
+        <notification:BadgeContainer.Badge>
+            <notification:SfBadge  Name="badge"
                                  Background="Red"
                                  Content="{x:Bind badgeContent.Text, 
-                                                Mode=OneWay, 
-                                                Converter={StaticResource 
-                                                customNumberConverter}}"/>
-        </syncfusion:BadgeContainer.Badge>
-        <syncfusion:BadgeContainer.Content>
+                                                  Mode=OneWay, 
+                                                  Converter={StaticResource 
+                                                  customNumberConverter}}"/>
+        </notification:BadgeContainer.Badge>
+        <notification:BadgeContainer.Content>
             <Button Content="Inbox">
             </Button>
-        </syncfusion:BadgeContainer.Content>
-    </syncfusion:BadgeContainer>
+        </notification:BadgeContainer.Content>
+    </notification:BadgeContainer>
 
     <Grid Grid.Column="1">
         <muxc:NumberBox x:Name="badgeContent"

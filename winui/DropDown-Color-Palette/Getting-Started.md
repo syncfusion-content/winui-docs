@@ -44,11 +44,11 @@ This section explains the steps required to add the [DropDownColorPalette](https
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors"
+    xmlns:editors="using:Syncfusion.UI.Xaml.Editors"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid x:Name="grid">
-    <syncfusion:SfDropDownColorPalette x:Name="sfDropDownColorPalette" />
+    <editors:SfDropDownColorPalette x:Name="sfDropDownColorPalette" />
     </Grid>
 </Page>
 
@@ -86,8 +86,8 @@ You can set or change the selected color of the `DropDownColorPalette` programma
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDropDownColorPalette SelectedBrush="Yellow"
-                                   Name="sfDropDownColorPalette" />
+<editors:SfDropDownColorPalette SelectedBrush="Yellow"
+                                Name="sfDropDownColorPalette" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -110,7 +110,7 @@ You can select a different colors from `Theme Colors` and `Standard Colors` pane
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDropDownColorPalette Name="sfDropDownColorPalette"/>
+<editors:SfDropDownColorPalette Name="sfDropDownColorPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -131,7 +131,7 @@ By default automatic color brush is selected color brush. If you changed the sel
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDropDownColorPalette Name="sfDropDownColorPalette"/>
+<editors:SfDropDownColorPalette Name="sfDropDownColorPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -152,7 +152,7 @@ If you want to choose a color that is not available in theme and standard palett
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDropDownColorPalette Name="sfDropDownColorPalette"/>
+<editors:SfDropDownColorPalette Name="sfDropDownColorPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -175,7 +175,7 @@ N> Colors selected from theme and standard colors will not be added in recent co
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDropDownColorPalette Name="sfDropDownColorPalette"/>
+<editors:SfDropDownColorPalette Name="sfDropDownColorPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -229,9 +229,9 @@ public sealed partial class MainPage : Page
 
     <RichEditBox  Name="richTextBox" Margin="20"/>
    
-    <syncfusion:SfDropDownColorPalette DropDownMode="Split"
-                                       Command="{x:Bind SelectionChangedCommand}"
-                                       Name="sfDropDownColorPalette" />
+    <editors:SfDropDownColorPalette DropDownMode="Split"
+                                    Command="{x:Bind SelectionChangedCommand}"
+                                    Name="sfDropDownColorPalette" />
 </StackPanel>
 
 {% endhighlight %}
@@ -252,55 +252,55 @@ N> You can refer the [ColorPalette](https://help.syncfusion.com/winui/color-pale
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDropDownColorPalette Name="sfDropDownColorPalette">
-    <syncfusion:SfDropDownColorPalette.DropDownContentTemplate>
+<editors:SfDropDownColorPalette Name="sfDropDownColorPalette">
+    <editors:SfDropDownColorPalette.DropDownContentTemplate>
         <DataTemplate>
-            <syncfusion:SfColorPalette ShowMoreColorsButton="False"  Width="250" >
-                <syncfusion:SfColorPalette.PaletteColors>
-                    <syncfusion:ColorPaletteModel ShowColors="True" 
-                              ShowColorShades="True"
-                              Header="Custom Theme Colors" >
-                        <syncfusion:ColorPaletteModel.Colors>
-                            <syncfusion:ColorCollection>
-                                <syncfusion:ColorModel Color="#FF11EBF8" Tooltip="Custom Aqua" />
-                                <syncfusion:ColorModel Color="#FFF80FA6" Tooltip="Custom Deep Pink" />
-                                <syncfusion:ColorModel Color="#FF8BA7C2" Tooltip="Custom Dark Gray" />
-                                <syncfusion:ColorModel Color="#F53CDF07" Tooltip="Custom Lime Green" />
-                                <syncfusion:ColorModel Color="#C2929545" Tooltip="Custom Olive Drab" />
-                                <syncfusion:ColorModel Color="#2E956145" Tooltip="Custom Sienna" />
-                                <syncfusion:ColorModel Color="#78458E95" Tooltip="Custom Steel Blue" />
-                                <syncfusion:ColorModel Color="#8B8220E4" Tooltip="Custom Blue Violet" />
-                                <syncfusion:ColorModel Color="#FF352722" Tooltip="Custom Dark Slate Gray" />
-                                <syncfusion:ColorModel Color="#FF318B86" Tooltip="Custom Sea Green" />
-                            </syncfusion:ColorCollection>
-                        </syncfusion:ColorPaletteModel.Colors>
-                    </syncfusion:ColorPaletteModel>
-                </syncfusion:SfColorPalette.PaletteColors>
+            <editors:SfColorPalette ShowMoreColorsButton="False" Width="250" >
+                <editors:SfColorPalette.PaletteColors>
+                    <editors:ColorPaletteModel ShowColors="True" 
+                                               ShowColorShades="True"
+                                               Header="Custom Theme Colors" >
+                        <editors:ColorPaletteModel.Colors>
+                            <editors:ColorCollection>
+                                <editors:ColorModel Color="#FF11EBF8" Tooltip="Custom Aqua" />
+                                <editors:ColorModel Color="#FFF80FA6" Tooltip="Custom Deep Pink" />
+                                <editors:ColorModel Color="#FF8BA7C2" Tooltip="Custom Dark Gray" />
+                                <editors:ColorModel Color="#F53CDF07" Tooltip="Custom Lime Green" />
+                                <editors:ColorModel Color="#C2929545" Tooltip="Custom Olive Drab" />
+                                <editors:ColorModel Color="#2E956145" Tooltip="Custom Sienna" />
+                                <editors:ColorModel Color="#78458E95" Tooltip="Custom Steel Blue" />
+                                <editors:ColorModel Color="#8B8220E4" Tooltip="Custom Blue Violet" />
+                                <editors:ColorModel Color="#FF352722" Tooltip="Custom Dark Slate Gray" />
+                                <editors:ColorModel Color="#FF318B86" Tooltip="Custom Sea Green" />
+                            </editors:ColorCollection>
+                        </editors:ColorPaletteModel.Colors>
+                    </editors:ColorPaletteModel>
+                </editors:SfColorPalette.PaletteColors>
 
-                <syncfusion:SfColorPalette.StandardColors>
-                    <syncfusion:StandardPaletteModel ShowColors="True" 
+                <editors:SfColorPalette.StandardColors>
+                    <editors:StandardPaletteModel ShowColors="True" 
                                  ShowColorShades="True"
                                  Header="Custom Standard Colors" >
-                        <syncfusion:StandardPaletteModel.Colors>
-                            <syncfusion:ColorCollection>
-                                <syncfusion:ColorModel Color = "Blue" Tooltip = "Custom Blue" />
-                                <syncfusion:ColorModel Color = "Orchid" Tooltip = "Custom Orchid" />
-                                <syncfusion:ColorModel Color = "Gray" Tooltip = "Custom Gray" />
-                                <syncfusion:ColorModel Color = "Gold" Tooltip = "Custom Gold" />
-                                <syncfusion:ColorModel Color = "SandyBrown" Tooltip = "Custom SandyBrown" />
-                                <syncfusion:ColorModel Color = "Pink" Tooltip = "Custom Pink" />
-                                <syncfusion:ColorModel Color = "Violet" Tooltip = "Custom Violet" />
-                                <syncfusion:ColorModel Color = "Yellow" Tooltip = "Custom Yellow" />
-                                <syncfusion:ColorModel Color = "Orange" Tooltip = "Custom Orange" />
-                                <syncfusion:ColorModel Color = "Red" Tooltip = "Custom Red" />
-                            </syncfusion:ColorCollection>
-                        </syncfusion:StandardPaletteModel.Colors>
-                    </syncfusion:StandardPaletteModel>
-                </syncfusion:SfColorPalette.StandardColors>
-            </syncfusion:SfColorPalette>
+                        <editors:StandardPaletteModel.Colors>
+                            <editors:ColorCollection>
+                                <editors:ColorModel Color = "Blue" Tooltip = "Custom Blue" />
+                                <editors:ColorModel Color = "Orchid" Tooltip = "Custom Orchid" />
+                                <editors:ColorModel Color = "Gray" Tooltip = "Custom Gray" />
+                                <editors:ColorModel Color = "Gold" Tooltip = "Custom Gold" />
+                                <editors:ColorModel Color = "SandyBrown" Tooltip = "Custom SandyBrown" />
+                                <editors:ColorModel Color = "Pink" Tooltip = "Custom Pink" />
+                                <editors:ColorModel Color = "Violet" Tooltip = "Custom Violet" />
+                                <editors:ColorModel Color = "Yellow" Tooltip = "Custom Yellow" />
+                                <editors:ColorModel Color = "Orange" Tooltip = "Custom Orange" />
+                                <editors:ColorModel Color = "Red" Tooltip = "Custom Red" />
+                            </editors:ColorCollection>
+                        </editors:StandardPaletteModel.Colors>
+                    </editors:StandardPaletteModel>
+                </editors:SfColorPalette.StandardColors>
+            </editors:SfColorPalette>
         </DataTemplate>
-    </syncfusion:SfDropDownColorPalette.DropDownContentTemplate>
-</syncfusion:SfDropDownColorPalette>
+    </editors:SfDropDownColorPalette.DropDownContentTemplate>
+</editors:SfDropDownColorPalette>
 
 {% endhighlight %}
 {% endtabs %}
@@ -320,11 +320,11 @@ N> The `DropDownButtonTemplate` is effective only on when drop down mode is spli
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDropDownColorPalette DropDownMode="Split"                   
-                                   Name="sfDropDownColorPalette">
+<editors:SfDropDownColorPalette DropDownMode="Split"                   
+                                Name="sfDropDownColorPalette">
     
     <!--Custom UI for DropDown button-->
-    <syncfusion:SfDropDownColorPalette.DropDownButtonTemplate>
+    <editors:SfDropDownColorPalette.DropDownButtonTemplate>
         <DataTemplate>
             <Grid>
                 <StackPanel Width="30">
@@ -336,10 +336,10 @@ N> The `DropDownButtonTemplate` is effective only on when drop down mode is spli
                 </StackPanel>
             </Grid>
         </DataTemplate>
-    </syncfusion:SfDropDownColorPalette.DropDownButtonTemplate>
+    </editors:SfDropDownColorPalette.DropDownButtonTemplate>
 
     <!--Custom UI for Selected color button-->
-    <syncfusion:SfDropDownColorPalette.ContentTemplate>
+    <editors:SfDropDownColorPalette.ContentTemplate>
         <DataTemplate>
             <StackPanel Height="30" 
                         Orientation="Vertical">
@@ -356,8 +356,8 @@ N> The `DropDownButtonTemplate` is effective only on when drop down mode is spli
                 </Border>
             </StackPanel>
         </DataTemplate>
-    </syncfusion:SfDropDownColorPalette.ContentTemplate> 
-</syncfusion:SfDropDownColorPalette>
+    </editors:SfDropDownColorPalette.ContentTemplate> 
+</editors:SfDropDownColorPalette>
 
 {% endhighlight %}
 {% endtabs %}
@@ -370,11 +370,13 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can change alignment of the drop down palette as full, center, left, right, top or bottom with edge of the dropdown header by using the [DropDownPlacement](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
 
+N> If there is no enough space to open a drop down in a specific position that is assigned by `DropDownPlacement` property, then `DropDownColorPalette` will automatically choose the available position to open the drop down palette.
+
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDropDownColorPalette DropDownPlacement="BottomEdgeAlignedRight" 
-                                   Name="sfDropDownColorPalette"/>
+<editors:SfDropDownColorPalette DropDownPlacement="BottomEdgeAlignedRight" 
+                                Name="sfDropDownColorPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -395,8 +397,8 @@ You will be notified when selected color brush changed in `DropDownColorPalette`
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDropDownColorPalette SelectedBrushChanged="sfDropDownColorPalette_SelectedBrushChanged"
-                                   Name="sfDropDownColorPalette" />
+<editors:SfDropDownColorPalette SelectedBrushChanged="sfDropDownColorPalette_SelectedBrushChanged"
+                                Name="sfDropDownColorPalette" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -427,9 +429,9 @@ You will be notified when drop-down opened and closed by using the `DropDownOpen
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDropDownColorPalette DropDownOpened="sfDropDownColorPalette_DropDownOpened"
-                                   DropDownClosed= "sfDropDownColorPalette_DropDownClosed" 
-                                   Name="sfDropDownColorPalette" />
+<editors:SfDropDownColorPalette DropDownOpened="sfDropDownColorPalette_DropDownOpened"
+                                DropDownClosed= "sfDropDownColorPalette_DropDownClosed" 
+                                Name="sfDropDownColorPalette" />
 
 {% endhighlight %}
 {% highlight C# %}
