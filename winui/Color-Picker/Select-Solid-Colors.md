@@ -22,8 +22,8 @@ You can select the solid color brush programmatically by setting the solid color
 {% tabs %}
 {% highlight xaml %}
 
- <syncfusion:SfColorPicker x:Name="colorPicker"
-                           SelectedBrush="Yellow"/>
+ <editors:SfColorPicker x:Name="colorPicker"
+                        SelectedBrush="Yellow"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -45,7 +45,7 @@ You can select any solid color brush at runtime by clicking on the respective so
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPicker Name="colorPicker">
+<editors:SfColorPicker Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -67,9 +67,9 @@ You can change opacity of the selected solid color brush by using the A-Alpha va
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker BrushTypeOptions="SolidColorBrush"
-                          AlphaInputOptions="TextInput"
-                          Name="colorPicker">
+<editors:SfColorPicker BrushTypeOptions="SolidColorBrush"
+                       AlphaInputOptions="TextInput"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -91,9 +91,9 @@ The `ColorPicker` contains different color channels namely `RGB`, `HSV`, `HSL` a
 {% tabs %}
 {% highlight xaml %}
 
- <syncfusion:SfColorPicker BrushTypeOptions="SolidColorBrush"
-                           x:Name="colorPicker"
-                           ColorChannelOptions="HSV"/>
+ <editors:SfColorPicker BrushTypeOptions="SolidColorBrush"
+                        x:Name="colorPicker"
+                        ColorChannelOptions="HSV"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -116,9 +116,9 @@ You can change the value of selected solid color channel elements by using eithe
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker BrushTypeOptions="SolidColorBrush"
-                          ColorChannelInputOptions="TextInput"
-                          Name="colorPicker">
+<editors:SfColorPicker BrushTypeOptions="SolidColorBrush"
+                       ColorChannelInputOptions="TextInput"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -140,9 +140,9 @@ You can select a solid color brush by entering the hexadecimal color value to th
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker BrushTypeOptions="SolidColorBrush"
-                          IsHexInputVisible="False"
-                          Name="colorPicker">
+<editors:SfColorPicker BrushTypeOptions="SolidColorBrush"
+                       IsHexInputVisible="False"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -164,9 +164,9 @@ You can change the visibility of hexadecimal value editor and color channel elem
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker BrushTypeOptions="SolidColorBrush"
-                          ColorEditorsVisibilityMode="Expandable"
-                          Name="colorPicker">
+<editors:SfColorPicker BrushTypeOptions="SolidColorBrush"
+                       ColorEditorsVisibilityMode="Expandable"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -188,9 +188,9 @@ You will be notified when selected solid color brush changed in `ColorPicker` by
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker BrushTypeOptions="SolidColorBrush"
-                          SelectedBrushChanged="ColorPicker_SelectedBrushChanged"
-                          Name="colorPicker">
+<editors:SfColorPicker BrushTypeOptions="SolidColorBrush"
+                       SelectedBrushChanged="ColorPicker_SelectedBrushChanged"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}

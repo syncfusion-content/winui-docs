@@ -26,8 +26,8 @@ You can enable the user to choose either `Solid`, `Linear` or `Radial` gradient 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker BrushTypeOptions="SolidColorBrush,RadialGradientBrush"
-                          Name="colorPicker">
+<editors:SfColorPicker BrushTypeOptions="SolidColorBrush,RadialGradientBrush"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -48,9 +48,9 @@ By default, color spectrum is in box shapes. If you want to change the color spe
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker ColorSpectrumShape="Ring" 
-                          BrushTypeOptions="LinearGradientBrush"
-                          Name="colorPicker">
+<editors:SfColorPicker ColorSpectrumShape="Ring" 
+                       BrushTypeOptions="LinearGradientBrush"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -74,9 +74,9 @@ You can changes the color spectrum components as any combination of hue, saturat
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker ColorSpectrumComponents = "HueSaturation"
-                          BrushTypeOptions="LinearGradientBrush"
-                          Name="colorPicker">
+<editors:SfColorPicker ColorSpectrumComponents = "HueSaturation"
+                       BrushTypeOptions="LinearGradientBrush"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
