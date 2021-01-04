@@ -1,19 +1,21 @@
 ---
 layout: post
 title: DropDown time spinner in TimePicker control | Syncfusion
-description: This page explain about how to Customization the Drop Down of the WinUI SfTimePicker control and items features.
+description: This page explain about how to Customization the Drop Down of the WinUI TimePicker  (SfTimePicker) control and items features.
 platform: winui
 control:  SfTimePicker
 documentation: ug
 ---
 
-# Dropdown time spinner in WPF TimePicker (SfTimePicker)
+# Dropdown time spinner in WPF TimePicker
 
 This section describes how to select a time from drop down time spinner and its customization options in [SfTimePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) control.
 
 ## Change dropdown alignment
 
-You can change the alignment of the dropdown time spinner as full, center, left, right, top or bottom with edge of the `TimePicker` by using the [DropDownPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
+You can change the alignment of the dropdown time spinner as full, center, left, right, top or bottom edge of the `TimePicker` by using the [DropDownPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
+
+N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then `DatePicker` smartly shifts the spinner alignment.
 
 {% tabs %}
 {% highlight XAML %}
@@ -271,14 +273,14 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Setting hints in dropdown header
 
-You can add a hints in dropdown header by using the [DropDownHeader](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_DropDownHeader) property. The dropdown hints shown only by setting the [ShowDropDownHeader](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_ShowDropDownHeader) property values as `true`. Otherwise, drop down header will not be shown. The default value of `DropDownHeader` property is `null` and `ShowDropDownHeader` property is `false`.
+You can add a hints in dropdown header by using the [DropDownHeader](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_DropDownHeader) property. The dropdown hints will be shown only by setting the [ShowDropDownHeader](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_ShowDropDownHeader) property values as `true`. Otherwise, drop down header will not be shown. The default value of `DropDownHeader` property is `null` and `ShowDropDownHeader` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}
 
 <editors:SfTimePicker DropDownHeader="Select the Time" 
                       ShowDropDownHeader="True" 
-				      x:Name="sfTimePicker"/>
+                      x:Name="sfTimePicker"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -302,8 +304,8 @@ You can customize the header of dropdown time spinner by using the [DropDownHead
 {% highlight XAML %}
 
 <editors:SfTimePicker DropDownHeader="Set an Alarm" 
-                      ShowDropDownHeader="True" 
-	                  x:Name="sfTimePicker">
+                      ShowDropDownHeader="True"
+                      x:Name="sfTimePicker">
     <editors:SfTimePicker.DropDownHeaderTemplate>
         <DataTemplate>
             <StackPanel>
@@ -415,9 +417,9 @@ N> `ItemWidth` values must be within the `MinItemWidth` and `MaxItemWidth`values
 
 <editors:SfTimePicker MinItemWidth="70" 
                       MaxItemWidth="120" 
-				      ItemWidth="100"
-					  ItemHeight="50"
-					  x:Name="sfTimePicker"/>
+                      ItemWidth="100"
+                      ItemHeight="50"
+                      x:Name="sfTimePicker"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -437,7 +439,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change dropdown height
 
-You can change the height of drop down time spinner by using the [DropDownHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. Based on the value of `DropDownHeight`, `ItemWidth` and `ItemHeight`, particular time cells to be visible. The default value of `DropDownHeight` property is `NaN`.
+You can change the height of drop down time spinner by using the [DropDownHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. Based on the value of `DropDownHeight`, `ItemWidth` and `ItemHeight` properties, particular time cells to be visible. The default value of `DropDownHeight` property is `NaN`.
 
 {% tabs %}
 {% highlight XAML %}

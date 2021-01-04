@@ -37,7 +37,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Add your own custom colors in theme palette
 
-If you want to allow the user to select a color from own theme colors, add that color with its name and tooltip text into the `PaletteColors.Colors` collection using the [ColorModel](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.ColorModel.html). It will generates color variants automatically. You can also customize the header text, show or hide its variants by using the [ColorPaletteModel](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.ColorPaletteModel.html). 
+If you want to allow the user to select a color from own theme colors, add that color with its name and tooltip text into the `PaletteColors.Colors` collection using the [ColorModel](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.ColorModel.html). It will generates color variants automatically. You can also customize the header text and show or hide its variants by using the [ColorPaletteModel](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.ColorPaletteModel.html). 
 
 {% tabs %}
 {% highlight xaml %}
@@ -156,7 +156,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Hide theme color palette header
 
-If you want to hide header of the theme color palette, use the `PaletteColors.ShowHeader` property. The default value of `PaletteColors.ShowHeader` property is `true`.
+If you want to hide the header of theme color palette, use the `PaletteColors.ShowHeader` property. The default value of `PaletteColors.ShowHeader` property is `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -181,7 +181,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Custom UI for theme palette header 
 
-You can change the appearance of theme color palette header by using the `PaletteColors.HeaderTemplate` property. 
+You can change the appearance of theme palette header by using the `PaletteColors.HeaderTemplate` property. 
 
 N> The DataContext of `PaletteColors.HeaderTemplate` is `PaletteColors.Header`
 
@@ -240,7 +240,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Hide theme palette
 
-If you want to hide the theme color palette from the view, use the `PaletteColors.ShowColors` and `PaletteColors.ShowColorShades` properties values as `false`. 
+If you want to hide the theme palette from the view, use the `PaletteColors.ShowColors` and `PaletteColors.ShowColorShades` properties values as `false`. 
 
 {% tabs %}
 {% highlight xaml %}
