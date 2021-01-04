@@ -22,16 +22,16 @@ Linear Gradient color brush can be selected by the multiple colors and their loc
 {% tabs %}
 {% highlight xaml %}
 
- <syncfusion:SfColorPicker x:Name="colorPicker">
-    <syncfusion:SfColorPicker.SelectedBrush>
+ <editors:SfColorPicker x:Name="colorPicker">
+    <editors:SfColorPicker.SelectedBrush>
         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
             <GradientStop Color="Yellow" Offset="0.0" />
             <GradientStop Color="Red" Offset="0.25" />
             <GradientStop Color="Blue" Offset="0.75" />
             <GradientStop Color="LimeGreen" Offset="1.0" />
         </LinearGradientBrush>
-    </syncfusion:SfColorPicker.SelectedBrush>
-</syncfusion:SfColorPicker>
+    </editors:SfColorPicker.SelectedBrush>
+</editors:SfColorPicker>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -66,8 +66,8 @@ You can directly select a required linear gradient color brush  as your wish at 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker BrushTypeOptions="LinearGradientBrush"
-                          Name="colorPicker">
+<editors:SfColorPicker BrushTypeOptions="LinearGradientBrush"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -88,9 +88,9 @@ If you want to change the angle of selected linear gradient color brush, change 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker AxisInputOption="Simple" 
-                          BrushTypeOptions="LinearGradientBrush"
-                          Name="colorPicker">
+<editors:SfColorPicker AxisInputOption="Simple" 
+                       BrushTypeOptions="LinearGradientBrush"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -112,9 +112,9 @@ You can change the offset of selected linear gradient color brush by using dedic
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker AxisInputOption="Advanced" 
-                          BrushTypeOptions="LinearGradientBrush"
-                          Name="colorPicker">
+<editors:SfColorPicker AxisInputOption="Advanced" 
+                       BrushTypeOptions="LinearGradientBrush"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -136,8 +136,8 @@ Radial Gradient color brush is similar to Linear Gradient color brush, except fo
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPicker x:Name="colorPicker">
-    <syncfusion:SfColorPicker.SelectedBrush>
+<editors:SfColorPicker x:Name="colorPicker">
+    <editors:SfColorPicker.SelectedBrush>
         <RadialGradientBrush GradientOrigin="0.5,0.5" 
                              Center="0.5,0.5"
                              RadiusX="0.5" RadiusY="0.5">
@@ -146,8 +146,8 @@ Radial Gradient color brush is similar to Linear Gradient color brush, except fo
             <GradientStop Color="Blue" Offset="0.75" />
             <GradientStop Color="LimeGreen" Offset="1" />
         </RadialGradientBrush>
-    </syncfusion:SfColorPicker.SelectedBrush>
-</syncfusion:SfColorPicker>
+    </editors:SfColorPicker.SelectedBrush>
+</editors:SfColorPicker>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -184,8 +184,8 @@ You can directly select a required radial gradient color brush as your wish at r
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker BrushTypeOptions="RadialGradientBrush"
-                          Name="colorPicker">
+<editors:SfColorPicker BrushTypeOptions="RadialGradientBrush"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -206,9 +206,9 @@ If you want to change the direction of selected radial gradient color brush, sel
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker AxisInputOption="Simple" 
-                          BrushTypeOptions="RadialGradientBrush"
-                          Name="colorPicker">
+<editors:SfColorPicker AxisInputOption="Simple" 
+                       BrushTypeOptions="RadialGradientBrush"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -230,9 +230,9 @@ You can change the offset of selected radial gradient color brush by using dedic
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker AxisInputOption="Advanced" 
-                          BrushTypeOptions="RadialGradientBrush"
-                          Name="colorPicker">
+<editors:SfColorPicker AxisInputOption="Advanced" 
+                       BrushTypeOptions="RadialGradientBrush"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -254,8 +254,8 @@ You can change opacity of the selected gradient color brush by using the delicat
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker BrushTypeOptions="SolidColorBrush,RadialGradientBrush"
-                          Name="colorPicker">
+<editors:SfColorPicker BrushTypeOptions="SolidColorBrush,RadialGradientBrush"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -277,9 +277,9 @@ You will be notified when selected gradient color brush changed in `ColorPicker`
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker BrushTypeOptions="SolidColorBrush,RadialGradientBrush"
-                          SelectedBrushChanged="ColorPicker_SelectedBrushChanged"
-                          Name="colorPicker">
+<editors:SfColorPicker BrushTypeOptions="SolidColorBrush,RadialGradientBrush"
+                       SelectedBrushChanged="ColorPicker_SelectedBrushChanged"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}

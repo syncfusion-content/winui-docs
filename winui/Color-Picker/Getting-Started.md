@@ -15,7 +15,7 @@ This section describes how to create a [ColorPicker](https://help.syncfusion.com
 
 ![Structure of WinUI ColorPicker control](Getting-Started_images/Structure.png)
 
-## Creating an application with WinUI ColorPalette
+## Creating an application with WinUI ColorPicker
 
 1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
 2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
@@ -32,12 +32,12 @@ This section describes how to create a [ColorPicker](https://help.syncfusion.com
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors"
+    xmlns:editors="using:Syncfusion.UI.Xaml.Editors"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid Name="grid">
         <!--Adding ColorPicker control -->
-        <syncfusion:SfColorPicker Name="colorPicker"/>
+        <editors:SfColorPicker Name="colorPicker"/>
     </Grid>
 </Page>
 
@@ -82,8 +82,8 @@ You can select the solid color brush programmatically by setting the solid color
 {% tabs %}
 {% highlight xaml %}
 
- <syncfusion:SfColorPicker x:Name="colorPicker"
-                           SelectedBrush="Yellow"/>
+ <editors:SfColorPicker x:Name="colorPicker"
+                        SelectedBrush="Yellow"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -109,8 +109,8 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 {% tabs %}
 {% highlight xaml %}
 
- <syncfusion:SfColorPicker x:Name="colorPicker"
-                           ColorChannelOptions="HSV"/>
+ <editors:SfColorPicker x:Name="colorPicker"
+                        ColorChannelOptions="HSV"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -132,8 +132,8 @@ You can change opacity of the selected solid color brush by using the A-Alpha va
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker AlphaInputOptions="TextInput"
-                          Name="colorPicker">
+<editors:SfColorPicker AlphaInputOptions="TextInput"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -154,8 +154,8 @@ You can select a solid color brush by entering the hexadecimal color value to th
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker IsHexInputVisible="False"
-                          Name="colorPicker">
+<editors:SfColorPicker IsHexInputVisible="False"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -176,16 +176,16 @@ Linear Gradient color brush can be selected by the multiple colors and their loc
 {% tabs %}
 {% highlight xaml %}
 
- <syncfusion:SfColorPicker x:Name="colorPicker">
-    <syncfusion:SfColorPicker.SelectedBrush>
+ <editors:SfColorPicker x:Name="colorPicker">
+    <editors:SfColorPicker.SelectedBrush>
         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
             <GradientStop Color="Yellow" Offset="0.0" />
             <GradientStop Color="Red" Offset="0.25" />
             <GradientStop Color="Blue" Offset="0.75" />
             <GradientStop Color="LimeGreen" Offset="1.0" />
         </LinearGradientBrush>
-    </syncfusion:SfColorPicker.SelectedBrush>
-</syncfusion:SfColorPicker>
+    </editors:SfColorPicker.SelectedBrush>
+</editors:SfColorPicker>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -218,8 +218,8 @@ You can directly select a required linear gradient color brush at runtime by set
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker BrushTypeOptions="LinearGradientBrush"
-                          Name="colorPicker">
+<editors:SfColorPicker BrushTypeOptions="LinearGradientBrush"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -240,8 +240,8 @@ Radial Gradient color brush is similar to Linear Gradient color brush, except fo
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPicker x:Name="colorPicker">
-    <syncfusion:SfColorPicker.SelectedBrush>
+<editors:SfColorPicker x:Name="colorPicker">
+    <editors:SfColorPicker.SelectedBrush>
         <RadialGradientBrush GradientOrigin="0.5,0.5" 
                              Center="0.5,0.5"
                              RadiusX="0.5" RadiusY="0.5">
@@ -250,8 +250,8 @@ Radial Gradient color brush is similar to Linear Gradient color brush, except fo
             <GradientStop Color="Blue" Offset="0.75" />
             <GradientStop Color="LimeGreen" Offset="1" />
         </RadialGradientBrush>
-    </syncfusion:SfColorPicker.SelectedBrush>
-</syncfusion:SfColorPicker>
+    </editors:SfColorPicker.SelectedBrush>
+</editors:SfColorPicker>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -286,8 +286,8 @@ You can directly select a required radial gradient color brush at runtime by set
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker BrushTypeOptions="RadialGradientBrush"
-                          Name="colorPicker">
+<editors:SfColorPicker BrushTypeOptions="RadialGradientBrush"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -308,8 +308,8 @@ You can allow the user to choose either `Solid`, `Linear` or `Radial` gradient b
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker BrushTypeOptions="SolidColorBrush,RadialGradientBrush"
-                          Name="colorPicker">
+<editors:SfColorPicker BrushTypeOptions="SolidColorBrush,RadialGradientBrush"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -336,8 +336,8 @@ You will be notified when selected brush changed in `ColorPicker` by using [Sele
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfColorPicker SelectedBrushChanged="ColorPicker_SelectedBrushChanged"
-                      Name="colorPicker">
+<editors:SfColorPicker SelectedBrushChanged="ColorPicker_SelectedBrushChanged"
+                       Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
