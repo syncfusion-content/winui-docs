@@ -317,7 +317,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Today and selected date highlighting
 
-You can highlight the today and selected date with differnt shapes such as rectangle, filled rectangle, circle and filled circle. You can use the [TodayHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_TodayHighlightMode) property to highlight the today date and use the [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectionHighlightMode) property to highlight the selected date. The default value of `TodayHighlightMode` property is `FilledRectangle` and `SelectionHighlightMode` property is `Rectangle`.
+You can highlight the today and selected date with different shapes such as rectangle, filled rectangle, circle and filled circle. You can use the [TodayHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_TodayHighlightMode) property to highlight the today date and use the [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectionHighlightMode) property to highlight the selected date. The default value of `TodayHighlightMode` property is `FilledRectangle` and `SelectionHighlightMode` property is `Rectangle`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -342,7 +342,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change dropdown size
 
-You can change the size of dropdown calendar by using [DropDownWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_DropDownWidth)and [DropDownHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. The default value of `DropDownHeight`  properties is `NaN`.
+You can change the size of dropdown calendar by using [DropDownWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_DropDownWidth) and [DropDownHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. The default value of `DropDownHeight`  properties is `NaN`.
 
 {% tabs %}
 {% highlight XAML %}
