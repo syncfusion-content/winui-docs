@@ -412,7 +412,7 @@ ChartDataMarker datamarker = new ChartDataMarker()
         VerticalAlignment = VerticalAlignment.Center
 };
 series.DataMarker = datamarker
-{% endghlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
