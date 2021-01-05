@@ -58,7 +58,7 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
     </tr>
     <tr>
         <td>
-            <p>Ribbon</p>
+            <p><a href="https://help.syncfusion.com/winui/ribbon/getting-started">Ribbon</a></p>
         </td>
          <td>
             <p><a href="https://help.syncfusion.com/winui/treeview/getting-started">Tree View</a></p>
@@ -84,18 +84,18 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
     </tr>
     <tr>
         <td>
-            <p><a href="https://help.syncfusion.com/winui/calendar/getting-started">Calendar</p>
+            <p><a href="https://help.syncfusion.com/winui/calendar/getting-started">Calendar</a></p>
         </td>
         <td>
-            <p><a href="https://help.syncfusion.com/winui/calendar-datepicker/getting-started">Calendar Date Picker</p>
+            <p><a href="https://help.syncfusion.com/winui/calendar-datepicker/getting-started">Calendar Date Picker</a></p>
         </td>
          <td>
-            <p><a href="https://help.syncfusion.com/winui/datepicker/getting-started">Date Picker</p>
+            <p><a href="https://help.syncfusion.com/winui/datepicker/getting-started">Date Picker</a></p>
         </td>
     </tr>
     <tr>
         <td>
-            <p><a href="https://help.syncfusion.com/winui/timepicker/getting-started">Time Picker</p>
+            <p><a href="https://help.syncfusion.com/winui/timepicker/getting-started">Time Picker</a></p>
         </td>
         <td></td>
         <td></td>
@@ -107,10 +107,10 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
     </tr>
     <tr>
         <td>
-            <p>Slider</p>
+            <p><a href="https://help.syncfusion.com/winui/slider/getting-started">Slider</a></p>
         </td>
         <td>
-            <p>Range Slider</p>
+            <p><a href="https://help.syncfusion.com/winui/rangeslider/getting-started">Range Slider</a></p>
         </td>
         <td></td>
     </tr>
