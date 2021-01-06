@@ -741,6 +741,8 @@ public class CustomDragDropController : GridColumnDragDropController
         base.OnPopupContentPositionChanged(HorizontalDelta, VerticalDelta, mousePointOverGrid);
     }           
   }
+{% endhighlight %}
+{% endtabs %}  
 
 ### Disabling drag & drop between frozen and non-frozen columns
 

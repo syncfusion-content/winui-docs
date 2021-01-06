@@ -32,11 +32,11 @@ This section explains the steps required to add the [DropDownColorPicker](https:
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors"
+    xmlns:editors="using:Syncfusion.UI.Xaml.Editors"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid x:Name="grid">
-    <syncfusion:SfDropDownColorPicker x:Name="sfDropDownColorPicker" />
+    <editors:SfDropDownColorPicker x:Name="sfDropDownColorPicker" />
     </Grid>
 </Page>
 
@@ -74,8 +74,8 @@ You can select the solid color brush programmatically by setting the solid color
 {% tabs %}
 {% highlight xaml %}
 
- <syncfusion:SfDropDownColorPicker x:Name="sfDropDownColorPicker"
-                                   SelectedBrush="Yellow"/>
+ <editors:SfDropDownColorPicker x:Name="sfDropDownColorPicker"
+                                SelectedBrush="Yellow"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -97,7 +97,7 @@ You can select various solid color brush at runtime by selecting the color brush
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDropDownColorPicker Name="sfDropDownColorPicker"/>
+<editors:SfDropDownColorPicker Name="sfDropDownColorPicker"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -118,7 +118,7 @@ You can switch between required RGB, HSV, HSL or CMYK color brush channels by ch
 {% tabs %}
 {% highlight xaml %}
 
- <syncfusion:SfDropDownColorPicker x:Name="sfDropDownColorPicker"/>
+ <editors:SfDropDownColorPicker x:Name="sfDropDownColorPicker"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -139,7 +139,7 @@ You can change opacity of the selected solid color brush by using the A-Alpha va
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfDropDownColorPicker Name="SfDropDownColorPicker">
+<editors:SfDropDownColorPicker Name="SfDropDownColorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -160,7 +160,7 @@ You can select a solid color brush by entering the hexadecimal color value to th
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfDropDownColorPicker Name="sfDropDownColorPicker">
+<editors:SfDropDownColorPicker Name="sfDropDownColorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -216,9 +216,9 @@ public sealed partial class MainPage : Page
 
     <RichEditBox  Name="richTextBox" Margin="20"/>
    
-    <syncfusion:SfDropDownColorPicker DropDownMode="Split"
-                                       Command="{x:Bind SelectionChangedCommand}"
-                                       Name="sfDropDownColorPicker" />
+    <editors:SfDropDownColorPicker DropDownMode="Split"
+                                   Command="{x:Bind SelectionChangedCommand}"
+                                   Name="sfDropDownColorPicker" />
 </StackPanel>
 
 {% endhighlight %}
@@ -239,14 +239,14 @@ N> You can refer the [ColorPicker](https://help.syncfusion.com/winui/color-picke
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDropDownColorPicker Name="sfDropDownColorPicker">
-    <syncfusion:SfDropDownColorPicker.DropDownContentTemplate>
+<editors:SfDropDownColorPicker Name="sfDropDownColorPicker">
+    <editors:SfDropDownColorPicker.DropDownContentTemplate>
         <DataTemplate>
-            <syncfusion:SfColorPicker BrushTypeOptions="LinearGradientBrush"
-                                      Width="250" />
+            <editors:SfColorPicker BrushTypeOptions="LinearGradientBrush"
+                                   Width="250" />
         </DataTemplate>
-    </syncfusion:SfDropDownColorPicker.DropDownContentTemplate> 
-</syncfusion:SfDropDownColorPicker>
+    </editors:SfDropDownColorPicker.DropDownContentTemplate> 
+</editors:SfDropDownColorPicker>
 
 {% endhighlight %}
 {% endtabs %}
@@ -266,11 +266,11 @@ N> The `DropDownButtonTemplate` is effective only on when drop down mode is spli
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDropDownColorPicker DropDownMode="Split"                   
-                                   Name="sfDropDownColorPicker">
+<editors:SfDropDownColorPicker DropDownMode="Split"                   
+                               Name="sfDropDownColorPicker">
     
     <!--Custom UI for DropDown button-->
-    <syncfusion:SfDropDownColorPicker.DropDownButtonTemplate>
+    <editors:SfDropDownColorPicker.DropDownButtonTemplate>
         <DataTemplate>
             <Grid>
                 <StackPanel Width="30">
@@ -282,10 +282,10 @@ N> The `DropDownButtonTemplate` is effective only on when drop down mode is spli
                 </StackPanel>
             </Grid>
         </DataTemplate>
-    </syncfusion:SfDropDownColorPicker.DropDownButtonTemplate>
+    </editors:SfDropDownColorPicker.DropDownButtonTemplate>
 
     <!--Custom UI for Selected color button-->
-    <syncfusion:SfDropDownColorPicker.ContentTemplate>
+    <editors:SfDropDownColorPicker.ContentTemplate>
         <DataTemplate>
             <StackPanel Height="30" 
                         Orientation="Vertical">
@@ -302,8 +302,8 @@ N> The `DropDownButtonTemplate` is effective only on when drop down mode is spli
                 </Border>
             </StackPanel>
         </DataTemplate>
-    </syncfusion:SfDropDownColorPicker.ContentTemplate>
-</syncfusion:SfDropDownColorPicker>
+    </editors:SfDropDownColorPicker.ContentTemplate>
+</editors:SfDropDownColorPicker>
 
 {% endhighlight %}
 {% endtabs %}
@@ -316,11 +316,13 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can change alignment of the drop down picker as full, center, left, right, top or bottom with edge of the dropdown header by using the [DropDownPlacement](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
 
+N> If there is no enough space to open a drop down in a specific position that is assigned by `DropDownPlacement` property, then `DropDownColorPicker` will automatically choose the available position to open the drop down picker.
+
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDropDownColorPicker DropDownPlacement="BottomEdgeAlignedRight" 
-                                  Name="sfDropDownColorPicker"/>
+<editors:SfDropDownColorPicker DropDownPlacement="BottomEdgeAlignedRight" 
+                               Name="sfDropDownColorPicker"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -341,8 +343,8 @@ The selected brush changed in `DropDownColorPicker` can be examined by using [Se
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfDropDownColorPicker SelectedBrushChanged="SfDropDownColorPicker_SelectedBrushChanged"
-                                  Name="sfDropDownColorPicker">
+<editors:SfDropDownColorPicker SelectedBrushChanged="SfDropDownColorPicker_SelectedBrushChanged"
+                               Name="sfDropDownColorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
@@ -372,9 +374,9 @@ You can notified when drop-down opened and closed by using the `DropDownOpened` 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDropDownColorPicker DropDownOpened="SfDropDownColorPicker_DropDownOpened"
-                                   DropDownClosed= "SfDropDownColorPicker_DropDownClosed" 
-                                   Name="sfDropDownColorPicker" />
+<editors:SfDropDownColorPicker DropDownOpened="SfDropDownColorPicker_DropDownOpened"
+                               DropDownClosed= "SfDropDownColorPicker_DropDownClosed" 
+                               Name="sfDropDownColorPicker" />
 
 {% endhighlight %}
 {% highlight C# %}
