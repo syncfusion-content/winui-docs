@@ -17,13 +17,9 @@ Line series join points on a plot by straight lines, showing data trends at equa
 
 {% highlight xaml %}
 
-<chart:LineSeries  XBindingPath="Year
+<chart:LineSeries XBindingPath="Year" ItemsSource="{Binding Data}" YBindingPath="Value"/>
 
-ItemsSource="{Binding List}" YBindingPath="India"/>
-
-<chart:LineSeries  XBindingPath="Year"     
-
-ItemsSource="{Binding List}" YBindingPath="America"/>
+<chart:LineSeries XBindingPath="Year" ItemsSource="{Binding Data}" YBindingPath="Value1"/>
 
 {% endhighlight %}
 
@@ -32,22 +28,22 @@ ItemsSource="{Binding List}" YBindingPath="America"/>
 LineSeries series1 = new LineSeries()
 {
 
-    ItemsSource = new ViewModel().List,
+    ItemsSource = new ViewModel().Data,
 
     XBindingPath = "Year",
 
-    YBindingPath = "India",
+    YBindingPath = "Value",
 
 };
 
 LineSeries series2 = new LineSeries()
 {
 
-    ItemsSource = new ViewModel().List,
+    ItemsSource = new ViewModel().Data,
 
     XBindingPath = "Year",
 
-    YBindingPath = "America",
+    YBindingPath = "Value1",
 
 };
 
@@ -69,13 +65,8 @@ chart.Series.Add(series2);
 
 {% highlight xaml %}
 
-<chart:StepLineSeries ItemsSource="{Binding Data}"  
-                      
-                      XBindingPath="XValue" 
-                      
-                      YBindingPath="YValue">
-            
- </chart:StepLineSeries>
+<chart:StepLineSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue">       
+</chart:StepLineSeries>
 
 {% endhighlight %}
 
@@ -95,4 +86,4 @@ SteplineChart.Series.Add(stepLine);
 
 {% endtabs %}
 
-![StepLine Chart type in WinUI](Series_images/stepLine.png)
+![StepLine Chart type in WinUI](Series_images/stepline.png)

@@ -22,23 +22,17 @@ The following code example and image illustrates the placement of series while s
 
 {% highlight xaml %}
 
-<chart:SfChart x:Name="columnChart" AreaBorderBrush="DarkGray" 
-
-Header="Usage of Metals"  
-
-SideBySideSeriesPlacement="False"
-
-AreaBorderThickness="1,1,1,1">
+<chart:SfChart SideBySideSeriesPlacement="False">
 
 <chart:SfChart.PrimaryAxis>
 
-<chart:CategoryAxis Header="Metals"/>
+<chart:CategoryAxis Header="Country"/>
 
 </chart:SfChart.PrimaryAxis>
 
 <chart:SfChart.SecondaryAxis>
 
-<chart:NumericalAxis Header="Usage" />                            
+<chart:NumericalAxis Header="Number of Medals" />                            
 
 </chart:SfChart.SecondaryAxis>
 
@@ -48,21 +42,15 @@ AreaBorderThickness="1,1,1,1">
 
 </chart:SfChart.Legend>
 
-<chart:ColumnSeries ItemsSource="{Binding Data}"
+<chart:ColumnSeries ItemsSource="{Binding Data}" Label="2014"  
 
- Label="2015"  
-
-XBindingPath="Metals" 
-
-YBindingPath="Count1" />
+XBindingPath="CountryName" YBindingPath="GoldMedals"/>
 
 <chart:ColumnSeries ItemsSource="{Binding Data}"  
 
-SegmentSpacing="0.5"
+SegmentSpacing="0.5" XBindingPath="CountryName" 
 
-XBindingPath="Metals" 
-
-Label="2014" YBindingPath="Count2"/>            
+Label="2015" YBindingPath="SilverMedals"/>            
 
 </chart:SfChart>
 
@@ -72,25 +60,19 @@ Label="2014" YBindingPath="Count2"/>
 
 SfChart chart = new SfChart();
 
-chart.Header = "Usage of Metals";
-
-chart.AreaBorderBrush = new SolidColorBrush(Colors.DarkGray);
-
 chart.SideBySideSeriesPlacement = false;
-
-chart.AreaBorderThickness = new Thickness(1);
 
 chart.PrimaryAxis = new CategoryAxis()
 {
 
-    Header = "Metals"
+    Header = "Country"
 
 };
 
 chart.SecondaryAxis = new NumericalAxis()
 {
 
-    Header = "Usage"
+    Header = "Number of Medals"
 
 };
 
@@ -106,11 +88,11 @@ ColumnSeries columnSeries1 = new ColumnSeries()
 
     ItemsSource = new ViewModel().Data,
 
-    XBindingPath = "Metals",
+    XBindingPath = "CountryName",
 
-    YBindingPath = "Count1",
+    YBindingPath = "GoldMedals",
 
-    Label = "2015",
+    Label = "2014",
 
 };
 
@@ -119,11 +101,11 @@ ColumnSeries columnSeries2 = new ColumnSeries()
 
     ItemsSource = new ViewModel().Data,
 
-    XBindingPath = "Metals",
+    XBindingPath = "CountryName",
 
-    YBindingPath = "Count2",
+    YBindingPath = "SilverMedals",
 
-    Label = "2014",
+    Label = "2015",
 
     SegmentSpacing = 0.5,
 

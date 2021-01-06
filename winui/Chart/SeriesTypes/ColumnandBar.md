@@ -17,9 +17,7 @@ Column charts plot discrete rectangles for the given values. The following code 
 
 {% highlight xaml %}
 
-<chart:ColumnSeries ItemsSource="{Binding Data}"           
-
-XBindingPath="XValue" YBindingPath="YValue"   />
+<chart:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue"/>
 
 {% endhighlight %}
 
@@ -52,9 +50,7 @@ Bar series are similar to column series, excepts its orientation. The following 
 
 {% highlight xaml %}
 
-<chart:BarSeries ItemsSource="{Binding CategoricalDatas}" XBindingPath="Category" 
-
-YBindingPath="Value"/>
+<chart:BarSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue"/>
 
 {% endhighlight %}
 
@@ -63,11 +59,11 @@ YBindingPath="Value"/>
 BarSeries series = new BarSeries()
 {
 
-    ItemsSource = new ViewModel().CategoricalDatas,
+    ItemsSource = new ViewModel().Data,
 
-    XBindingPath = "Category",
+    XBindingPath = "XValue",
 
-    YBindingPath = "Value",
+    YBindingPath = "YValue",
 
 };
 
@@ -145,4 +141,4 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Column SegmentSpacing support in WinUI](Series_images/SegmentSpacing.png)
+![Column SegmentSpacing support in WinUI](Series_images/segmentspacing.png)

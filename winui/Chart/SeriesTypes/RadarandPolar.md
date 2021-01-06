@@ -23,7 +23,7 @@ The following code example illustrates the use of radar series:
 
 XBindingPath="Direction"
 
-YBindingPath="Tree" >
+YBindingPath="Tree">
 
 </chart:RadarSeries>        
 
@@ -250,7 +250,7 @@ The below snippet explains how the axes of series has been rotated when `PolarAn
 
 <chart:SfChart.PrimaryAxis>
 
-<chart:CategoryAxis  PolarAngle="Rotate0"/>
+<chart:CategoryAxis PolarAngle="Rotate0"/>
 
 </chart:SfChart.PrimaryAxis>
 
@@ -295,7 +295,7 @@ The below snippet explains how the axes of series has been rotated when `PolarAn
 
 <chart:SfChart.PrimaryAxis>
 
-<chart:CategoryAxis  PolarAngle="Rotate90"/>
+<chart:CategoryAxis PolarAngle="Rotate90"/>
 
 </chart:SfChart.PrimaryAxis>
 
@@ -340,7 +340,7 @@ The below snippet explains how the axes of series has been rotated when `PolarAn
 
 <chart:SfChart.PrimaryAxis>
 
-<chart:CategoryAxis  PolarAngle="Rotate180"/>
+<chart:CategoryAxis PolarAngle="Rotate180"/>
 
 </chart:SfChart.PrimaryAxis>
 
@@ -385,7 +385,7 @@ The below snippet explains how the axes of series has been rotated, when `PolarA
 
 <chart:SfChart.PrimaryAxis>
 
-<chart:CategoryAxis  PolarAngle="Rotate270"/>
+<chart:CategoryAxis PolarAngle="Rotate270"/>
 
 </chart:SfChart.PrimaryAxis>
 
