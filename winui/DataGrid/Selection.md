@@ -605,9 +605,9 @@ For group, record must be retrieved from `DisplayElements` instead of records.
 int parentRowIndex = 2;
 var recordIndex = this.sfDataGrid.ResolveToRecordIndex(parentRowIndex);
 
-var newobj = this.sfDataGrid.View.TopLevelGroup.DisplayElements[recordIndex];
-if (newobj is RecordEntry)
-    if (!((RecordEntry)newobj).IsExpanded)
+var newObj = this.sfDataGrid.View.TopLevelGroup.DisplayElements[recordIndex];
+if (newObj is RecordEntry)
+    if (!((RecordEntry)newObj).IsExpanded)
         this.sfDataGrid.ExpandDetailsViewAt(recordIndex);
 
 {% endhighlight %}
