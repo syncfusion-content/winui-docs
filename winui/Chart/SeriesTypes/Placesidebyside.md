@@ -13,7 +13,7 @@ It defines the placement pattern of bar type series like Column, Bar, StackedCol
 
 It is a Boolean property and its default value is true, so the segment will be placed adjacent to each other (Clustered).
 
-![Column chart type placed side by side](Series_images/sidebyside1.jpeg)
+![Column chart type placed side by side](Series_images/sidebyside1.png)
 
 
 The following code example and image illustrates the placement of series while setting [`SideBySideSeriesPlacement`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SideBySideSeriesPlacement) as false.
@@ -119,7 +119,7 @@ chart.Series.Add(columnSeries2);
 
 {% endtabs %}
 
-![Column chart type place one over another.](Series_images/sidebyside2.jpeg)
+![Column chart type place one over another.](Series_images/sidebyside2.png)
 
 
 N> As the series will be placed one over the other(overlapped), to differentiate between the series the `SegmentSpacing` is used.
