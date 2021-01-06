@@ -3,7 +3,7 @@ layout: post
 title: About WinUI Calendar control | Syncfusion
 description: This page explains about overview of the WinUI Calendar control and its overall customization features.
 platform: winui
-control: Calendar
+control: SfCalendar
 documentation: ug
 ---
 

@@ -21,7 +21,7 @@ The Syncfusion Ribbon for WinUI is a command bar that organizes an applicationâ€
 
  ![Overview of WinUI SfRibbon control](Overview-images/Overview-image1.png)
 
- ![Overview of WinUI SfRibbon Backstage](Overview-images/Overview-image2.png)
+ ![Overview of WinUI SfRibbon Backstage](Overview-images/Overview-image2.gif)
 
 
 

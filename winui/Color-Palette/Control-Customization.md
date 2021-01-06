@@ -18,8 +18,8 @@ You can set or change the selected color of the `ColorPalette` programmatically 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette SelectedBrush="Yellow"
-                           Name="colorPalette" />
+<editors:SfColorPalette SelectedBrush="Yellow"
+                        Name="colorPalette" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -42,8 +42,8 @@ You can set a null color value for the selected color by setting the color code 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette SelectedBrush="Transparent"
-                           Name="colorPalette"/>
+<editors:SfColorPalette SelectedBrush="Transparent"
+                        Name="colorPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -55,16 +55,16 @@ colorPalette.SelectedBrush = new SolidColorBrush(Colors.Transparent);
 
 ![ColorPalette with selected transparent color](Working-with-SfColorPalette_images/Nullvalue.png)
 
-## Reset the selected color
+## Select transparent color 
 
-If you want to reset the selected color as `No color` or `Transparent`, click the `No Color` button. You can display the
+If you want to select the `Transparent` color, click the `No Color` button. You can display the
  `No color` button only by setting the [ShowNoColorButton](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_ShowNoColorButton) property value as `true`. The default value of `ShowNoColorButton` property is `false`. 
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette ShowNoColorButton="True"
-                           Name="colorPalette"/>
+<editors:SfColorPalette ShowNoColorButton="True"
+                        Name="colorPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -74,7 +74,7 @@ colorPalette.ShowNoColorButton = true;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette resets selected color](Working-with-SfColorPalette_images/ShowNoColorButton.png)
+![ColorPalette selecting a transparent color](Working-with-SfColorPalette_images/ShowNoColorButton.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -85,8 +85,8 @@ If you want to change the default selected color on application launching, set t
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette AutomaticBrush="Red"
-                           Name="colorPalette" />
+<editors:SfColorPalette AutomaticBrush="Red"
+                        Name="colorPalette" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -107,9 +107,9 @@ You can hide the default color button visibility by setting the [ShowDefaultColo
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette AutomaticBrush="Green"
-                           ShowDefaultColorButton="False"
-                           Name="colorPalette" />
+<editors:SfColorPalette AutomaticBrush="Green"
+                        ShowDefaultColorButton="False"
+                        Name="colorPalette" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -129,8 +129,8 @@ You will be notified when selected color changed in `ColorPalette` by using [Sel
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette SelectedBrushChanged="ColorPalette_SelectedBrushChanged"
-                           Name="colorPalette" />
+<editors:SfColorPalette SelectedBrushChanged="ColorPalette_SelectedBrushChanged"
+                        Name="colorPalette" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -168,7 +168,7 @@ The recently selected color items are displayed in the `Recent Colors` panel. If
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette Name="colorPalette"/>
+<editors:SfColorPalette Name="colorPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -183,15 +183,15 @@ var recentColors = colorPalette.RecentColors;
 
 ![ColorPalette displaying the recently used color items](Getting-Started_images/RecentColors.png)
 
-## Setting the foreground
+## Customize the header text
 
-You can change the foreground color of the `ColorPalette` by using the `Foreground` property. The default value of `Foreground` property is `Black`.
+You can customize the foreground of `Theme Colors`, `Standard Colors` and `Recent Colors` palette headers by using the `Foreground` property. The default value of `Foreground` property is `Black`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette Foreground="Red"
-                           Name="colorPalette" />
+<editors:SfColorPalette Foreground="Red"
+                        Name="colorPalette" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -205,28 +205,6 @@ colorPalette.Foreground = new SolidColorBrush(Colors.Red);
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
 
-## Setting the background
-
-You can change the background color of the `ColorPalette` by using the `Background` property. The default value of `Background` property is `null`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfColorPalette Background="LightYellow"
-                           Name="colorPalette" />
-
-{% endhighlight %}
-{% highlight C# %}
-
-colorPalette.Background = new SolidColorBrush(Colors.LightYellow);
-
-{% endhighlight %}
-{% endtabs %}
-
-![ColorPalette background color changed](Working-with-SfColorPalette_images/Background.png)
-
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
-
 ## Change flow direction
 
 You can change the flow direction of the `ColorPalette` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
@@ -234,8 +212,8 @@ You can change the flow direction of the `ColorPalette` layout from right to lef
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfColorPalette FlowDirection="RightToLeft"
-                           Name="colorPalette" />
+<editors:SfColorPalette FlowDirection="RightToLeft"
+                        Name="colorPalette" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -248,45 +226,3 @@ colorPalette.FlowDirection = FlowDirection.RightToLeft;
 ![ColorPalette with right to left flow direction](Working-with-SfColorPalette_images/rtl.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
-
-## Change color palette size
-
-You can change the color palette size by using the `Width` and `Height` properties. Based on the color palette size, the color items are resized. The default value of `Width` and `Height` properties is `Auto`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfColorPalette Width="200" 
-                           Height="300"
-                           Name="colorPalette"/>
-
-{% endhighlight %}
-{% highlight C# %}
-
-colorPalette.Width = 200;
-colorPalette.Height = 300;
-
-{% endhighlight %}
-{% endtabs %}
-
-![ColorPalette size changed](Working-with-SfColorPalette_images/Size.png)
-
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
-
-## Hide the ColorPalette
-
-You can hide the `ColorPalette` by setting the `Visibility` property value as `Collapsed`. The default value of `Visibility` property is `Visible`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfColorPalette Visibility="Collapsed"
-                           Name="colorPalette"/>
-
-{% endhighlight %}
-{% highlight C# %}
-
-colorPalette.Visibility = Visibility.Collapsed;
-
-{% endhighlight %}
-{% endtabs %}
