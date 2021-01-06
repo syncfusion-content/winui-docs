@@ -124,6 +124,20 @@ this.sfDataGrid.SelectedItem = record;
 {% endhighlight %}
 {% endtabs %}
 
+
+For group, record must be retrieved from [DisplayElements](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.TopLevelGroup.html#Syncfusion_UI_Xaml_Data_TopLevelGroup_DisplayElements) instead of records.
+
+{% tabs %}
+{% highlight c# %}
+
+var recordIndex = this.sfDataGrid.ResolveToRecordIndex(6);
+var newObj = this.sfDataGrid.View.TopLevelGroup.DisplayElements[recordIndex];
+if (newObj is RecordEntry)
+    this.sfDataGrid.SelectedItem = ((RecordEntry)newObj).Data;
+
+{% endhighlight %}
+{% endtabs %}
+
 In Row selection, you can select multiple rows by adding data objects to `SelectedItems` property.
 
 {% tabs %}
@@ -163,8 +177,25 @@ You can select a specific cell by using the [SelectCell](https://help.syncfusion
 {% tabs %}
 {% highlight c# %}
 
-var record = this.sfDataGrid.GetRecordAtRowIndex(3);
+var recordIndex = this.sfDataGrid.ResolveToRecordIndex(3);
+var record = this.sfDataGrid.View.Records[recordIndex].Data;
 var column = this.sfDataGrid.Columns[1];
+this.sfDataGrid.SelectCell(record, column);
+
+{% endhighlight %}
+{% endtabs %}
+
+For group, record must be retrieved from `DisplayElements` instead of records.
+
+{% tabs %}
+{% highlight c# %}
+
+object record = null;
+var recordIndex = this.sfDataGrid.ResolveToRecordIndex(3);
+var newObj = this.sfDataGrid.View.TopLevelGroup.DisplayElements[recordIndex];
+if (newObj is RecordEntry)
+    record = ((RecordEntry)newObj).Data;
+
 this.sfDataGrid.SelectCell(record, column);
 
 {% endhighlight %}
@@ -190,6 +221,40 @@ private void dataGrid_Loaded(object sender, RoutedEventArgs e)
     var recordIndex2 = this.sfDataGrid.ResolveToRecordIndex(7);
     var firstRecord = this.sfDataGrid.View.Records[recordIndex1].Data;
     var lastRecord = this.sfDataGrid.View.Records[recordIndex2].Data;
+    var firstColumn = this.sfDataGrid.Columns[1];
+    var lastColumn = this.sfDataGrid.Columns[3];
+    this.sfDataGrid.SelectCells(firstRecord, firstColumn, lastRecord, lastColumn);
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+For group, record must be retrieved from `DisplayElements` instead of records.
+
+{% tabs %}
+{% highlight c# %}
+
+public MainWindow()
+{
+    InitializeComponent();
+    this.sfDataGrid.Loaded += SfDataGrid_Loaded;
+}
+
+private void dataGrid_Loaded(object sender, RoutedEventArgs e)
+{
+    object firstRecord = null, lastRecord = null;
+
+    var recordIndex1 = this.sfDataGrid.ResolveToRecordIndex(3);
+    var recordIndex2 = this.sfDataGrid.ResolveToRecordIndex(7);
+
+    var newObj1 = this.sfDataGrid.View.TopLevelGroup.DisplayElements[recordIndex1];
+    if (newObj1 is RecordEntry)
+        firstRecord = ((RecordEntry)newObj1).Data;    
+
+    var newObj2 = this.sfDataGrid.View.TopLevelGroup.DisplayElements[recordIndex2];
+    if (newObj2 is RecordEntry)
+        lastRecord = ((RecordEntry)newObj2).Data;
+    
     var firstColumn = this.sfDataGrid.Columns[1];
     var lastColumn = this.sfDataGrid.Columns[3];
     this.sfDataGrid.SelectCells(firstRecord, firstColumn, lastRecord, lastColumn);
@@ -262,6 +327,31 @@ this.sfDataGrid.UnSelectCells(firstRecord, firstColumn, lastRecord, lastColumn);
 {% endhighlight %}
 {% endtabs %}
 
+For group, record must be retrieved from `DisplayElements` instead of records.
+
+{% tabs %}
+{% highlight c# %}
+
+object firstRecord = null, lastRecord = null;
+
+var recordIndex1 = this.sfDataGrid.ResolveToRecordIndex(3);
+var recordIndex2 = this.sfDataGrid.ResolveToRecordIndex(7);
+
+var newObj1 = this.sfDataGrid.View.TopLevelGroup.DisplayElements[recordIndex1];
+if (newObj1 is RecordEntry)
+    firstRecord = ((RecordEntry)newObj1).Data;
+
+var newObj2 = this.sfDataGrid.View.TopLevelGroup.DisplayElements[recordIndex2];
+if (newObj2 is RecordEntry)
+    lastRecord = ((RecordEntry)newObj2).Data;
+
+var firstColumn = this.sfDataGrid.Columns[1];
+var lastColumn = this.sfDataGrid.Columns[3];
+this.sfDataGrid.UnSelectCells(firstRecord, firstColumn, lastRecord, lastColumn);
+
+{% endhighlight %}
+{% endtabs %}
+
 You can clear the selection on particular cell by using the [UnSelectCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_UnSelectCell_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_) method in cell selection.
 
 {% tabs %}
@@ -270,6 +360,24 @@ You can clear the selection on particular cell by using the [UnSelectCell](https
 var recordIndex = this.sfDataGrid.ResolveToRecordIndex(5);
 var removeRecord = this.sfDataGrid.View.Records[recordIndex].Data;
 var removeColumn = this.sfDataGrid.Columns[2];
+this.sfDataGrid.UnSelectCell(removeRecord, removeColumn);
+
+{% endhighlight %}
+{% endtabs %}
+
+For group, record must be retrieved from `DisplayElements` instead of records.
+
+{% tabs %}
+{% highlight c# %}
+
+object removeRecord = null;
+var recordIndex = this.sfDataGrid.ResolveToRecordIndex(3);
+
+var newObj = this.sfDataGrid.View.TopLevelGroup.DisplayElements[recordIndex];
+if (newObj is RecordEntry)
+    removeRecord = ((RecordEntry)newObj).Data;
+
+var removeColumn = this.sfDataGrid.Columns[1];
 this.sfDataGrid.UnSelectCell(removeRecord, removeColumn);
 
 {% endhighlight %}
@@ -444,13 +552,29 @@ You can select data objects while loading DetailsViewDataGrid using [DetailsView
 
 {% highlight c# %}
 
-this.sfDataGrid.DetailsViewLoading += sfDataGrid_DetailsViewLoading;
-
 void sfDataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEventArgs e)
 {
     var recordIndex = e.DetailsViewDataGrid.ResolveToRecordIndex(2);
 	var record = e.DetailsViewDataGrid.View.Records[recordIndex].Data;
 	e.DetailsViewDataGrid.SelectedItem = record;	
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+For group, record must be retrieved from `DisplayElements` instead of records.
+
+{% endhighlight %}
+{% highlight c# %}
+
+void sfDataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEventArgs e)
+{
+    object record = null;
+    var recordIndex = e.DetailsViewDataGrid.ResolveToRecordIndex(2);
+    var newObj = e.DetailsViewDataGrid.View.TopLevelGroup.DisplayElements[recordIndex];
+    if (newObj is RecordEntry)
+        record = ((RecordEntry)newObj).Data;
+    e.DetailsViewDataGrid.SelectedItem = record;
 }
 
 {% endhighlight %}
@@ -469,6 +593,22 @@ var record = this.sfDataGrid.View.Records[recordIndex];
 
 if (!record.IsExpanded)
     this.sfDataGrid.ExpandDetailsViewAt(recordIndex);
+
+{% endhighlight %}
+{% endtabs %}
+
+For group, record must be retrieved from `DisplayElements` instead of records.
+
+{% tabs %}
+{% highlight c# %}
+
+int parentRowIndex = 2;
+var recordIndex = this.sfDataGrid.ResolveToRecordIndex(parentRowIndex);
+
+var newobj = this.sfDataGrid.View.TopLevelGroup.DisplayElements[recordIndex];
+if (newobj is RecordEntry)
+    if (!((RecordEntry)newobj).IsExpanded)
+        this.sfDataGrid.ExpandDetailsViewAt(recordIndex);
 
 {% endhighlight %}
 {% endtabs %}
@@ -874,6 +1014,32 @@ void sfDataGrid_CurrentCellActivating(object sender, CurrentCellActivatingEventA
     var cellValue = provider.GetValue(record, column.MappingName);
 
     if (cellValue.ToString() == "1001")
+        e.Cancel = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+For group, record must be retrieved from `DisplayElements` instead of records.
+
+{% tabs %}
+{% highlight c# %}
+
+void sfDataGrid_CurrentCellActivating(object sender, CurrentCellActivatingEventArgs e)
+{
+    object record = null;
+    var rowIndex = this.sfDataGrid.ResolveToRecordIndex(e.CurrentRowColumnIndex.RowIndex);
+    var newObj = this.sfDataGrid.View.TopLevelGroup.DisplayElements[rowIndex];
+
+    if (newObj == null)
+        return;
+    if (newObj is RecordEntry)
+        record = ((RecordEntry)newObj).Data;
+
+    var column = this.dataGrid.Columns[this.dataGrid.ResolveToGridVisibleColumnIndex(e.CurrentRowColumnIndex.ColumnIndex)];
+    var cellValue = record.GetType().GetProperty(column.MappingName).GetValue(record, null).ToString();
+
+    if (cellValue == "1001")
         e.Cancel = true;
 }
 
