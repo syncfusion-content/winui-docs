@@ -71,7 +71,7 @@ namespace GettingStarted
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/Getting_Started)
 
-## Select the time programmatically
+## Select time programmatically
 
 You can set or change the selected time programmatically by using [SelectedTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_SelectedTime) property. If you not assign any value for the `SelectedTime` property, `TimePicker` will automatically assign the current system time as `SelectedTime`.
 
@@ -241,6 +241,58 @@ sfTimePicker.MaxTime = new DateTimeOffset(new DateTime(2020, 12, 10, 6, 59, 59))
 ![SfTimePicker restrict the time selection with particular range](Getting-Started_images/MinMaxTime.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
+
+## Block times using BlackoutTimes
+
+If you want to block particular times from the time selection, then add that times into the [BlackoutTimes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_BlackoutTimes) collection. You can add more block out times to the `BlackoutTimes` collection. The default value of `BlackoutTimes` property is `null`.
+
+{% tabs %}
+{% highlight c# %}
+
+public class ViewModel
+{       
+    public DateTimeOffset? SelectedTime { get; set; }
+    public DateTimeOffsetCollection BlackoutTimes { get; set; }
+    public ViewModel()
+    {
+        SelectedTime = DateTimeOffset.Now.Date;
+        BlackoutTimes = new DateTimeOffsetCollection();
+        BlackoutTimes.Add(new DateTimeOffset(DateTimeOffset.Now.Year, DateTimeOffset.Now.Month, DateTimeOffset.Now.Day, 0, 3, 0, DateTimeOffset.Now.Offset));
+        BlackoutTimes.Add(new DateTimeOffset(DateTimeOffset.Now.Year, DateTimeOffset.Now.Month, DateTimeOffset.Now.Day, 0, 58, 0, DateTimeOffset.Now.Offset));
+        BlackoutTimes.Add(new DateTimeOffset(DateTimeOffset.Now.Year, DateTimeOffset.Now.Month, DateTimeOffset.Now.Day, 1, 0, 0, DateTimeOffset.Now.Offset));
+        BlackoutTimes.Add(new DateTimeOffset(DateTimeOffset.Now.Year, DateTimeOffset.Now.Month, DateTimeOffset.Now.Day, 3, 0, 0, DateTimeOffset.Now.Offset));
+        BlackoutTimes.Add(new DateTimeOffset(DateTimeOffset.Now.Year, DateTimeOffset.Now.Month, DateTimeOffset.Now.Day, 9, 0, 0, DateTimeOffset.Now.Offset));
+        BlackoutTimes.Add(new DateTimeOffset(DateTimeOffset.Now.Year, DateTimeOffset.Now.Month, DateTimeOffset.Now.Day, 10, 0, 0, DateTimeOffset.Now.Offset));
+    }
+}
+
+{% endhighlight  %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfTimePicker SelectedTime="{Binding SelectedTime}" 
+                      BlackoutTimes="{Binding BlackoutTimes}"
+                      x:Name="sfTimePicker">
+    <editors:SfTimePicker.DataContext>
+        <local:ViewModel/>
+    </editors:SfTimePicker.DataContext>
+</editors:SfTimePicker>
+
+{% endhighlight  %}
+{% highlight C# %}
+
+sfTimePicker.DataContext = new ViewModel();
+sfTimePicker.SelectedTime = (sfTimePicker.DataContext as ViewModel).SelectedTime;
+sfTimePicker.BlackoutTimes = (sfTimePicker.DataContext as ViewModel).BlackoutTimes;
+
+{% endhighlight  %}
+{% endtabs %}
+
+![SfTimePicker blocks the particular times from selection](Getting-Started_images/Blackouttimes.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
 ## Edit time using free form editing
 
