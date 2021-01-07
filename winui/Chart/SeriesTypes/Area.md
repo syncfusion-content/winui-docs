@@ -18,9 +18,7 @@ The following code example initializes the AreaSeries:
 
 {% highlight xaml %}
 
-<chart:AreaSeries XBindingPath="FruitName" 
-
-YBindingPath="People" ItemsSource="{Binding Fruits}" />   
+<chart:AreaSeries XBindingPath="XValue" YBindingPath="YValue" ItemsSource="{Binding Data}"/>   
 
 {% endhighlight %}
 
@@ -29,11 +27,11 @@ YBindingPath="People" ItemsSource="{Binding Fruits}" />
 AreaSeries series = new AreaSeries()
 {
 
-    ItemsSource = new ViewModel().Fruits,
+    ItemsSource = new ViewModel().Data,
 
-    XBindingPath = "FruitName",
+    XBindingPath = "XValue",
 
-    YBindingPath = "People",
+    YBindingPath = "YValue",
 
 };
 
@@ -43,7 +41,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Area chart type in WinUI](Series_images/area.png)
+![Area chart type in WinUI](Series_images/area_chart.png)
 
 ## Step Area
 
@@ -53,11 +51,7 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:StepAreaSeries 
-
-ItemsSource="{Binding SneakersDetail}" XBindingPath="Brand" 
-
-YBindingPath="ItemsCount"/>
+<chart:StepAreaSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue"/>
 
 {% endhighlight %}
 
@@ -66,11 +60,11 @@ YBindingPath="ItemsCount"/>
 StepAreaSeries series = new StepAreaSeries()
 {
 
-    ItemsSource = new ViewModel().SneakersDetail,
+    ItemsSource = new ViewModel().Data,
 
-    XBindingPath = "Brand",
+    XBindingPath = "XValue",
 
-    YBindingPath = "ItemCount",
+    YBindingPath = "YValue",
 
 };
 
@@ -80,7 +74,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![StepArea chart type in WinUI](Series_images/steparea.png)
+![StepArea chart type in WinUI](Series_images/steparea_chart.png)
 
 ## Closed Area
 
@@ -90,11 +84,9 @@ If you wish to draw the open area series (Area with stroke only at top), SfChart
 
 {% highlight xaml %}
 
-<chart:AreaSeries  IsClosed="False"
+<chart:AreaSeries IsClosed="False" XBindingPath="XValue" 
 
-XBindingPath="FruitName"
-
-YBindingPath="People" ItemsSource="{Binding Fruits}" /> 
+YBindingPath="YValue" ItemsSource="{Binding Data}" /> 
 
 {% endhighlight %}
 
@@ -103,13 +95,13 @@ YBindingPath="People" ItemsSource="{Binding Fruits}" />
 AreaSeries series = new AreaSeries()
 {
 
-    ItemsSource = new ViewModel().Fruits,
+    ItemsSource = new ViewModel().Data,
 
-    XBindingPath = "FruitName",
+    XBindingPath = "XValue",
 
-    YBindingPath = "People",
+    YBindingPath = "YValue",
 
-    IsClosed = true,
+    IsClosed = false,
 
 };
 
@@ -119,4 +111,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Closed area chart type in WinUI](Series_images/closedarea.png)
+![Closed area chart type in WinUI](Series_images/area_isclosed_false.png)

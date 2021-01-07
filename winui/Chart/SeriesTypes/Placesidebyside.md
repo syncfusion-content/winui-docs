@@ -13,7 +13,7 @@ It defines the placement pattern of bar type series like Column, Bar, StackedCol
 
 It is a Boolean property and its default value is true, so the segment will be placed adjacent to each other (Clustered).
 
-![Column chart type placed side by side](Series_images/sidebyside1.jpeg)
+![Column chart type placed side by side](Series_images/series_sidebysideplacement_true.png)
 
 
 The following code example and image illustrates the placement of series while setting [`SideBySideSeriesPlacement`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SideBySideSeriesPlacement) as false.
@@ -22,23 +22,17 @@ The following code example and image illustrates the placement of series while s
 
 {% highlight xaml %}
 
-<chart:SfChart x:Name="columnChart" AreaBorderBrush="DarkGray" 
-
-Header="Usage of Metals"  
-
-SideBySideSeriesPlacement="False"
-
-AreaBorderThickness="1,1,1,1">
+<chart:SfChart SideBySideSeriesPlacement="False">
 
 <chart:SfChart.PrimaryAxis>
 
-<chart:CategoryAxis Header="Metals"/>
+<chart:CategoryAxis Header="Country"/>
 
 </chart:SfChart.PrimaryAxis>
 
 <chart:SfChart.SecondaryAxis>
 
-<chart:NumericalAxis Header="Usage" />                            
+<chart:NumericalAxis Header="Number of Medals" />                            
 
 </chart:SfChart.SecondaryAxis>
 
@@ -48,21 +42,15 @@ AreaBorderThickness="1,1,1,1">
 
 </chart:SfChart.Legend>
 
-<chart:ColumnSeries ItemsSource="{Binding Data}"
+<chart:ColumnSeries ItemsSource="{Binding Data}" Label="2014"  
 
- Label="2015"  
+XBindingPath="CountryName" YBindingPath="Count1"/>
 
-XBindingPath="Metals" 
+<chart:ColumnSeries ItemsSource="{Binding Data}" Label="2015"
 
-YBindingPath="Count1" />
+SegmentSpacing="0.5" XBindingPath="CountryName" 
 
-<chart:ColumnSeries ItemsSource="{Binding Data}"  
-
-SegmentSpacing="0.5"
-
-XBindingPath="Metals" 
-
-Label="2014" YBindingPath="Count2"/>            
+YBindingPath="Count2"/>            
 
 </chart:SfChart>
 
@@ -72,25 +60,19 @@ Label="2014" YBindingPath="Count2"/>
 
 SfChart chart = new SfChart();
 
-chart.Header = "Usage of Metals";
-
-chart.AreaBorderBrush = new SolidColorBrush(Colors.DarkGray);
-
 chart.SideBySideSeriesPlacement = false;
-
-chart.AreaBorderThickness = new Thickness(1);
 
 chart.PrimaryAxis = new CategoryAxis()
 {
 
-    Header = "Metals"
+    Header = "Country"
 
 };
 
 chart.SecondaryAxis = new NumericalAxis()
 {
 
-    Header = "Usage"
+    Header = "Number of Medals"
 
 };
 
@@ -106,11 +88,11 @@ ColumnSeries columnSeries1 = new ColumnSeries()
 
     ItemsSource = new ViewModel().Data,
 
-    XBindingPath = "Metals",
+    XBindingPath = "CountryName",
 
     YBindingPath = "Count1",
 
-    Label = "2015",
+    Label = "2014",
 
 };
 
@@ -119,11 +101,11 @@ ColumnSeries columnSeries2 = new ColumnSeries()
 
     ItemsSource = new ViewModel().Data,
 
-    XBindingPath = "Metals",
+    XBindingPath = "CountryName",
 
     YBindingPath = "Count2",
 
-    Label = "2014",
+    Label = "2015",
 
     SegmentSpacing = 0.5,
 
@@ -137,7 +119,7 @@ chart.Series.Add(columnSeries2);
 
 {% endtabs %}
 
-![Column chart type place one over another.](Series_images/sidebyside2.jpeg)
+![Column chart type place one over another.](Series_images/series_sidebysideplacement_false.png)
 
 
 N> As the series will be placed one over the other(overlapped), to differentiate between the series the `SegmentSpacing` is used.
