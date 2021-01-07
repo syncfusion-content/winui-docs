@@ -17,13 +17,9 @@ documentation: ug
 
 {% highlight xaml %}
 
-<chart:SplineSeries  XBindingPath="Year"     
+<chart:SplineSeries XBindingPath="Year" ItemsSource="{Binding Data}" YBindingPath="Value1"/>
 
-ItemsSource="{Binding List}" YBindingPath="India"/>
-
-<chart:SplineSeries  XBindingPath="Year"     
-
-ItemsSource="{Binding List}" YBindingPath="America"/>
+<chart:SplineSeries XBindingPath="Year" ItemsSource="{Binding Data}" YBindingPath="Value2"/>
 
 {% endhighlight %}
 
@@ -32,22 +28,22 @@ ItemsSource="{Binding List}" YBindingPath="America"/>
 SplineSeries series1 = new SplineSeries()
 {
 
-    ItemsSource = new ViewModel().List,
+    ItemsSource = new ViewModel().Data,
 
     XBindingPath = "Year",
 
-    YBindingPath = "India",
+    YBindingPath = "Value1",
 
 };
 
 SplineSeries series2 = new SplineSeries()
 {
 
-    ItemsSource = new ViewModel().List,
+    ItemsSource = new ViewModel().Data,
 
     XBindingPath = "Year",
 
-    YBindingPath = "America",
+    YBindingPath = "Value2",
 
 };
 
@@ -59,7 +55,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Spline chart type in WinUI](Series_images/spline.png)
+![Spline chart type in WinUI](Series_images/spline_chart.png)
 
 **Dashed Lines**
 
@@ -69,28 +65,51 @@ chart.Series.Add(series2);
 
 {% highlight xaml %}
 
-<chart:SplineSeries ItemsSource="{Binding List}" XBindingPath="Year" YBindingPath="India" StrokeDashArray="5,3" />
+<chart:SplineSeries XBindingPath="Year" ItemsSource="{Binding Data}" YBindingPath="Value1" StrokeDashArray="5,3"/>
+
+<chart:SplineSeries XBindingPath="Year" ItemsSource="{Binding Data}" YBindingPath="Value2" StrokeDashArray="5,3"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SplineSeries series = new SplineSeries()
+SplineSeries series1 = new SplineSeries()
 {
-    ItemsSource = new ViewModel().List,
+
+    ItemsSource = new ViewModel().Data,
+
     XBindingPath = "Year",
-    YBindingPath = "India"
+
+    YBindingPath = "Value1",
+
+};
+
+SplineSeries series2 = new SplineSeries()
+{
+
+    ItemsSource = new ViewModel().Data,
+
+    XBindingPath = "Year",
+
+    YBindingPath = "Value2",
+
 };
 
 DoubleCollection doubleCollection = new DoubleCollection();
 doubleCollection.Add(5);
 doubleCollection.Add(3);
-series.StrokeDashArray = doubleCollection;
-chart.Series.Add(series);
+
+series1.StrokeDashArray = doubleCollection;
+series2.StrokeDashArray = doubleCollection;
+
+chart.Series.Add(series1);
+chart.Series.Add(series2);
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![Spline chart type with StrokeDashArray in WinUI](Series_images/spline_strokedash.png)
 
 ## Spline Area
 
@@ -100,11 +119,7 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:SplineAreaSeries             
-
-ItemsSource="{Binding Products}" XBindingPath="ProdName"     
-
-YBindingPath="Price" />
+<chart:SplineAreaSeries ItemsSource="{Binding Products}" XBindingPath="ProdName" YBindingPath="Price"/>
 
 {% endhighlight %}
 
@@ -127,7 +142,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![SplineArea chart type in WinUI](Series_images/splinearea.png)
+![SplineArea chart type in WinUI](Series_images/splinearea_chart.png)
 
 ## SplineType
 
@@ -137,6 +152,32 @@ chart.Series.Add(series);
        * Monotonic
        * Cardinal
        * Clamped
+
+**Natural**
+
+The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineType) value as [`Natural`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineType.html).
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SplineSeries SplineType="Natural">
+
+</chart:SplineSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SplineSeries series = new SplineSeries();
+
+series.SplineType = SplineType.Natural;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Natural spline support in WinUI Chart](Series_images/spline_chart_natural.png)       
 
 **Cardinal**
 
@@ -162,7 +203,7 @@ series.SplineType = SplineType.Cardinal;
 
 {% endtabs %}
 
-![Cardinal spline support in WinUI Chart](Series_images/cardinal.png)
+![Cardinal spline support in WinUI Chart](Series_images/spline_chart_cardinal.png)
 
 **Monotonic**
 
@@ -188,7 +229,7 @@ series.SplineType = SplineType.Monotonic;
 
 {% endtabs %}
 
-![Monotonic spline support in WinUI Chart](Series_images/monotonic.png)
+![Monotonic spline support in WinUI Chart](Series_images/spline_chart_monotonic.png)
 
 **Clamped**
 
@@ -214,4 +255,4 @@ series.SplineType = SplineType.Clamped;
 
 {% endtabs %}
 
-![Clamped spline support in WinUI Chart](Series_images/clamped.png)
+![Clamped spline support in WinUI Chart](Series_images/spline_chart_clamped.png)

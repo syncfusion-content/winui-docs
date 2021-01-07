@@ -90,9 +90,9 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedLine chart type in WinUI](Series_images/Stackingline.png)
+![StackedLine chart type in WinUI](Series_images/stackedline_chart.png)
 
-## Stacked Line 100
+## 100% Stacked Line
 
 [`StackedLine100Series`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.StackedLine100Series.html) resembles [`StackedLineSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.StackedLineSeries.html) but the cumulative portion of each stacked element always comes to a total of 100%. 
 
@@ -164,7 +164,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedLine100 chart type in WinUI](Series_images/StackingLine100.png)
+![StackedLine100 chart type in WinUI](Series_images/stackedline100_chart.png)
 
 ## Stacked Column
 
@@ -176,27 +176,17 @@ The following code example illustrates how to use StackedColumnSeries:
 
 {% highlight xaml %}
 
-<chart:StackedColumnSeries  
+<chart:StackedColumnSeries XBindingPath="CountryName"    
 
-XBindingPath="CountryName"    
+YBindingPath="GoldMedals" ItemsSource="{Binding MedalDetails}"/>
 
-YBindingPath="GoldMedals" 
+<chart:StackedColumnSeries XBindingPath="CountryName" 
 
-ItemsSource="{Binding MedalDetails}"/>
+YBindingPath="SilverMedals" ItemsSource="{Binding MedalDetails}"/> 
 
-<chart:StackedColumnSeries 
+<chart:StackedColumnSeries XBindingPath="CountryName" 
 
-XBindingPath="CountryName" 
-
-YBindingPath="SilverMedals"
-
-ItemsSource="{Binding MedalDetails}"/> 
-
-<chart:StackedColumnSeries 
-
-XBindingPath="CountryName" 
-
-YBindingPath="BronzeMedals" />
+YBindingPath="BronzeMedals" ItemsSource="{Binding MedalDetails}"/>
 
 {% endhighlight %}
 
@@ -245,7 +235,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedColumn chart type in WinUI](Series_images/Stackingcolumn.png)
+![StackedColumn chart type in WinUI](Series_images/stackedcolumn_chart.png)
 
 ## 100% Stacked Column
 
@@ -255,17 +245,17 @@ chart.Series.Add(series3);
 
 {% highlight xaml %}
 
-<chart:StackedColumn100Series  XBindingPath="CountryName" 
+<chart:StackedColumn100Series XBindingPath="CountryName" 
 
-YBindingPath="GoldMedals"
+YBindingPath="GoldMedals" ItemsSource="{Binding MedalDetails}"/>
 
-ItemsSource="{Binding MedalDetails}"/>
+<chart:StackedColumn100Series XBindingPath="CountryName"
 
-<chart:StackedColumn100Series ItemsSource="{Binding MedalDetails}"
+ YBindingPath="SilverMedals" ItemsSource="{Binding MedalDetails}"/>
 
-XBindingPath="CountryName"  
+<chart:StackedColumn100Series XBindingPath="CountryName" 
 
-YBindingPath="SilverMedals"/>
+YBindingPath="BronzeMedals" ItemsSource="{Binding MedalDetails}" />
 
 {% endhighlight %}
 
@@ -314,7 +304,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedColumn100 chart type in WinUI](Series_images/Stackingcolumn100.png)
+![StackedColumn100 chart type in WinUI](Series_images/stackedcolumn100_chart.png)
 
 ## Stacked Bar
 
@@ -326,29 +316,19 @@ chart.Series.Add(series3);
 
 <chart:StackedBarSeries XBindingPath="CountryName"        
 
-YBindingPath="GoldMedals" 
-
-ItemsSource="{Binding MedalDetails}" >
+YBindingPath="GoldMedals" ItemsSource="{Binding MedalDetails}">
 
 </chart:StackedBarSeries>
 
-<chart:StackedBarSeries
+<chart:StackedBarSeries XBindingPath="CountryName" 
 
-XBindingPath="CountryName" 
-
-YBindingPath="SilverMedals" 
-
-ItemsSource="{Binding MedalDetails}">
+YBindingPath="SilverMedals" ItemsSource="{Binding MedalDetails}">
 
 </chart:StackedBarSeries>
 
-<chart:StackedBarSeries
+<chart:StackedBarSeries XBindingPath="CountryName" 
 
-XBindingPath="CountryName" 
-
-YBindingPath="BronzeMedals"
-
-ItemsSource="{Binding MedalDetails}" >
+YBindingPath="BronzeMedals" ItemsSource="{Binding MedalDetails}">
 
 </chart:StackedBarSeries>
 
@@ -399,7 +379,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedBar chart type in WinUI](Series_images/Stackingbar.png)
+![StackedBar chart type in WinUI](Series_images/stackedbar_chart.png)
 
 
 ## 100% Stacked Bar
@@ -410,29 +390,17 @@ chart.Series.Add(series3);
 
 {% highlight xaml %}
 
-<chart:StackedBar100Series
+<chart:StackedBar100Series XBindingPath="CountryName" 
 
-XBindingPath="CountryName" 
+YBindingPath="GoldMedals" ItemsSource="{Binding MedalDetails}" />
 
-YBindingPath="GoldMedals" 
+<chart:StackedBar100Series XBindingPath="CountryName"                          
 
-ItemsSource="{Binding MedalDetails}" />
+YBindingPath="SilverMedals" ItemsSource="{Binding MedalDetails}" />
 
-<chart:StackedBar100Series 
+<chart:StackedBar100Series XBindingPath="CountryName" 
 
-XBindingPath="CountryName"                          
-
-YBindingPath="SilverMedals" 
-
-ItemsSource="{Binding MedalDetails}" />
-
-<chart:StackedBar100Series 
-
-XBindingPath="CountryName" 
-
-YBindingPath="BronzeMedals" 
-
-ItemsSource="{Binding MedalDetails}" />
+YBindingPath="BronzeMedals" ItemsSource="{Binding MedalDetails}" />
 
 {% endhighlight %}
 
@@ -481,7 +449,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedBar100 chart type in WinUI](Series_images/Stackingbar100.png)
+![StackedBar100 chart type in WinUI](Series_images/stackedbar100_chart.png)
 
 ## Stacked Area
 
@@ -491,25 +459,17 @@ chart.Series.Add(series3);
 
 {% highlight xaml %}
 
-<chart:StackedAreaSeries 
+<chart:StackedAreaSeries XBindingPath="Month" 
 
-XBindingPath="Month" YBindingPath="Bus" 
+YBindingPath="Bus" ItemsSource="{Binding Accidents}" />
 
-ItemsSource="{Binding Accidents}" />
+<chart:StackedAreaSeries XBindingPath="Month"         
 
-<chart:StackedAreaSeries                  
+ YBindingPath="Car" ItemsSource="{Binding Accidents}" />
 
-XBindingPath="Month" YBindingPath="Car" 
+<chart:StackedAreaSeries XBindingPath="Month"                 
 
-ItemsSource="{Binding Accidents}" />
-
-<chart:StackedAreaSeries                     
-
-XBindingPath="Month" 
-
-YBindingPath="Truck" 
-
-ItemsSource="{Binding Accidents}" />
+YBindingPath="Truck" ItemsSource="{Binding Accidents}" />
 
 {% endhighlight %}
 
@@ -558,7 +518,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedArea chart type in WinUI](Series_images/Stackingarea.png)
+![StackedArea chart type in WinUI](Series_images/stackedarea_chart.png)
 
 ## 100% Stacked Area
 
@@ -570,29 +530,17 @@ The following code example shows the way to add Stacked area 100 series:
 
 {% highlight xaml %}
 
-<chart:StackedArea100Series 
+<chart:StackedArea100Series XBindingPath="Month"         
 
-XBindingPath="Month"         
+YBindingPath="Bus" ItemsSource="{Binding Accidents}" />
 
-YBindingPath="Bus" 
+<chart:StackedArea100Series XBindingPath="Month" 
 
-ItemsSource="{Binding Accidents}" 
+YBindingPath="Car" ItemsSource="{Binding Accidents}" />
 
-/>
+<chart:StackedArea100Series XBindingPath="Month" 
 
-<chart:StackedArea100Series 
-
-XBindingPath="Month" YBindingPath="Car" 
-
-ItemsSource="{Binding Accidents}" />
-
-<chart:StackedArea100Series 
-
-XBindingPath="Month" 
-
-YBindingPath="Truck" 
-
-ItemsSource="{Binding Accidents}" />
+YBindingPath="Truck" ItemsSource="{Binding Accidents}" />
 
 {% endhighlight %}
 
@@ -641,7 +589,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedArea100 chart type in WinUI](Series_images/Stackingarea100.png)
+![StackedArea100 chart type in WinUI](Series_images/stackedarea100_chart.png)
 
 You can draw open curve like Area using this [`IsClosed`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.StackedAreaSeries.html#Syncfusion_UI_Xaml_Charts_StackedAreaSeries_IsClosed) property.
 
@@ -653,27 +601,19 @@ You can draw open curve like Area using this [`IsClosed`](https://help.syncfusio
 
 IsClosed="False" XBindingPath="Month" 
 
-YBindingPath="Bus" 
-
-ItemsSource="{Binding Accidents}"/>
+YBindingPath="Bus" ItemsSource="{Binding Accidents}"/>
 
 <chart:StackedAreaSeries Stroke="White" StrokeThickness="3"
 
-IsClosed="False"  XBindingPath="Month"             
+IsClosed="False" XBindingPath="Month"             
 
-YBindingPath="Car"
+YBindingPath="Car" ItemsSource="{Binding Accidents}"/>
 
-ItemsSource="{Binding Accidents}"/>
+<chart:StackedAreaSeries Stroke="Black" StrokeThickness="3"  
 
-<chart:StackedAreaSeries Stroke="Black"   
+IsClosed="False" XBindingPath="Month" 
 
-StrokeThickness="3" IsClosed="False"   
-
-XBindingPath="Month" 
-
-YBindingPath="Truck" 
-
-ItemsSource="{Binding Accidents}" />
+YBindingPath="Truck" ItemsSource="{Binding Accidents}"/>
 
 {% endhighlight %}
 
@@ -740,4 +680,4 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![IsClosed support for Stacked area series in WinUI Chart](Series_images/Stackingarea_closed.png)
+![IsClosed support for Stacked area series in WinUI Chart](Series_images/stackedarea_isclosed_false.png)
