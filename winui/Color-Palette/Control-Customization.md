@@ -80,7 +80,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Setting default color
 
-If you want to change the default selected color on application launching, set the value for [DefaultBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_DefaultBrush) property. If you changed the selected color, then you can easily make the default color as selected color by clicking the default color button. The default value of `DefaultBrush` property is `Black`.
+If you want to change the default selected color on application launching, set your color value to the  [DefaultBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_DefaultBrush) property. If you changed the selected color, then you can easily make the default color as selected color by clicking the default color button. The default value of `DefaultBrush` property is `Black`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -164,6 +164,8 @@ Tooltip is used to show the information about the segment, when you mouse over o
 ## Recently used color items
 
 The recently selected color items are displayed in the `Recent Colors` panel. If you want to choose a color which are previously selected, use the `Recent Colors` panel. You can get the recently selected color list by using the [RecentColors](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_RecentColors) collection property.
+
+N> The Colors that are selected from `More Colors` dialog will only be shown in `RecentColors` panel.
 
 {% tabs %}
 {% highlight xaml %}

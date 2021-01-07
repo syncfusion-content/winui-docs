@@ -13,7 +13,7 @@ In addition to colors in `Theme colors` and `Standard colors`, `MoreColor` featu
 
 ## Select a color from MoreColor dialog
 
-If you wants any custom colors to select with various opacity level, click the more color button and select the color from color spectrum and click the `Ok` button. 
+If you wants any custom colors to select with various opacity level, click the more color button and select the color from color spectrum and then click the `Ok` button. 
 
 {% tabs %}
 {% highlight xaml %}
