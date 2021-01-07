@@ -41,7 +41,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Area chart type in WinUI](Series_images/area.png)
+![Area chart type in WinUI](Series_images/area_chart.png)
 
 ## Step Area
 
@@ -74,7 +74,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![StepArea chart type in WinUI](Series_images/steparea.png)
+![StepArea chart type in WinUI](Series_images/steparea_chart.png)
 
 ## Closed Area
 
@@ -101,7 +101,7 @@ AreaSeries series = new AreaSeries()
 
     YBindingPath = "YValue",
 
-    IsClosed = true,
+    IsClosed = false,
 
 };
 
@@ -111,4 +111,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Closed area chart type in WinUI](Series_images/closedarea.png)
+![Closed area chart type in WinUI](Series_images/area_isclosed_false.png)

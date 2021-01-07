@@ -55,7 +55,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Spline chart type in WinUI](Series_images/spline.png)
+![Spline chart type in WinUI](Series_images/spline_chart.png)
 
 **Dashed Lines**
 
@@ -109,7 +109,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Spline chart type with StrokeDashArray in WinUI](Series_images/splinestrokedash.png)
+![Spline chart type with StrokeDashArray in WinUI](Series_images/spline_strokedash.png)
 
 ## Spline Area
 
@@ -142,7 +142,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![SplineArea chart type in WinUI](Series_images/splinearea.png)
+![SplineArea chart type in WinUI](Series_images/splinearea_chart.png)
 
 ## SplineType
 
@@ -177,7 +177,7 @@ series.SplineType = SplineType.Natural;
 
 {% endtabs %}
 
-![Natural spline support in WinUI Chart](Series_images/spline_natural.png)       
+![Natural spline support in WinUI Chart](Series_images/spline_chart_natural.png)       
 
 **Cardinal**
 
@@ -203,7 +203,7 @@ series.SplineType = SplineType.Cardinal;
 
 {% endtabs %}
 
-![Cardinal spline support in WinUI Chart](Series_images/spline_cardinal.png)
+![Cardinal spline support in WinUI Chart](Series_images/spline_chart_cardinal.png)
 
 **Monotonic**
 
@@ -229,7 +229,7 @@ series.SplineType = SplineType.Monotonic;
 
 {% endtabs %}
 
-![Monotonic spline support in WinUI Chart](Series_images/spline_monotonic.png)
+![Monotonic spline support in WinUI Chart](Series_images/spline_chart_monotonic.png)
 
 **Clamped**
 
@@ -255,4 +255,4 @@ series.SplineType = SplineType.Clamped;
 
 {% endtabs %}
 
-![Clamped spline support in WinUI Chart](Series_images/spline_clamped.png)
+![Clamped spline support in WinUI Chart](Series_images/spline_chart_clamped.png)

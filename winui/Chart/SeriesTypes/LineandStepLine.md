@@ -55,7 +55,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Line chart type in WinUI](Series_images/line.png)
+![Line chart type in WinUI](Series_images/line_chart.png)
 
 ## Step Line
 
@@ -86,4 +86,4 @@ SteplineChart.Series.Add(stepLine);
 
 {% endtabs %}
 
-![StepLine Chart type in WinUI](Series_images/stepline.png)
+![StepLine Chart type in WinUI](Series_images/stepline_chart.png)

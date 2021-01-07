@@ -17,7 +17,7 @@ documentation: ug
 
 {% highlight xaml %}
 
-<chart:PyramidSeries XBindingPath="Category" ItemsSource="{Binding Tax}" YBindingPath="Percentage"/>
+<chart:PyramidSeries XBindingPath="Category" ItemsSource="{Binding Data}" YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -26,11 +26,11 @@ documentation: ug
 PyramidSeries series = new PyramidSeries()
 {
 
-    ItemsSource = new ViewModel().Tax,
+    ItemsSource = new ViewModel().Data,
 
     XBindingPath = "Category",
 
-    YBindingPath = "Percentage"
+    YBindingPath = "Value"
 
 };
 
@@ -40,7 +40,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Pyramid chart type in WinUI](Series_images/pyramid.png)
+![Pyramid chart type in WinUI](Series_images/pyramid_chart.png)
 
 
 The [`PyramidMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.PyramidSeries.html#Syncfusion_UI_Xaml_Charts_PyramidSeries_PyramidMode) is used to define the rendering mode such as [`Surface`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html) or [`Linear`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html) pyramid segments.
@@ -51,7 +51,7 @@ The [`PyramidMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Char
 
 {% highlight xaml %}
 
-<chart:PyramidSeries XBindingPath="Category" PyramidMode="Surface" ItemsSource="{Binding Tax}" YBindingPath="Percentage"/>
+<chart:PyramidSeries XBindingPath="Category" PyramidMode="Surface" ItemsSource="{Binding Data}" YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -60,11 +60,11 @@ The [`PyramidMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Char
 PyramidSeries series = new PyramidSeries()
 {
 
-    ItemsSource = new ViewModel().Tax,
+    ItemsSource = new ViewModel().Data,
 
     XBindingPath = "Category",
 
-    YBindingPath = "Percentage",
+    YBindingPath = "Value",
 
     PyramidMode = ChartPyramidMode.Surface
 
@@ -76,7 +76,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Pyramid modes in WinUI Chart](Series_images/pyramidsurface.png)
+![Pyramid modes in WinUI Chart](Series_images/pyramid_surface.png)
 
 
 **PyramidMode** **as** **Linear**
@@ -85,7 +85,7 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:PyramidSeries XBindingPath="Category" PyramidMode="Linear" ItemsSource="{Binding Tax}" YBindingPath="Percentage"/>
+<chart:PyramidSeries XBindingPath="Category" PyramidMode="Linear" ItemsSource="{Binding Data}" YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -94,11 +94,11 @@ chart.Series.Add(series);
 PyramidSeries series = new PyramidSeries()
 {
 
-    ItemsSource = new ViewModel().Tax,
+    ItemsSource = new ViewModel().Data,
 
     XBindingPath = "Category",
 
-    YBindingPath = "Percentage",
+    YBindingPath = "Value",
 
     PyramidMode = ChartPyramidMode.Linear
 
@@ -110,7 +110,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Pyramid modes in WinUI Chart](Series_images/pyramidlinear.png)
+![Pyramid modes in WinUI Chart](Series_images/pyramid_linear.png)
 
 ## Funnel
 
@@ -122,7 +122,7 @@ The following code example shows how to use the funnel series:
 
 {% highlight xaml %}
 
-<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding Data}" YBindingPath="Percentage"/>
+<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding Data}" YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -135,7 +135,7 @@ FunnelSeries series = new FunnelSeries()
 
     XBindingPath = "Category",
 
-    YBindingPath = "Percentage",
+    YBindingPath = "Value",
 
 };
 
@@ -145,7 +145,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Funnel chart type in WinUI](Series_images/funnel.png)
+![Funnel chart type in WinUI](Series_images/funnel_chart.png)
 
 
 ### Funnel Mode
@@ -158,7 +158,7 @@ The [`FunnelMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Chart
 
 {% highlight xaml %}
 
-<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding Data}" FunnelMode="ValueIsHeight" YBindingPath="Percentage"/>
+<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding Data}" FunnelMode="ValueIsHeight" YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -171,7 +171,7 @@ FunnelSeries series = new FunnelSeries()
 
     XBindingPath = "Category",
 
-    YBindingPath = "Percentage",
+    YBindingPath = "Value",
 
     FunnelMode = ChartFunnelMode.ValueIsHeight
 
@@ -183,7 +183,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Funnel modes in WinUI Chart](Series_images/valueisheight.png)
+![Funnel modes in WinUI Chart](Series_images/funnel_mode_valueisheight.png)
 
 **ValueIsWidth**
 
@@ -191,7 +191,7 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding Data}" FunnelMode="ValueIsWidth" YBindingPath="Percentage"/>
+<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding Data}" FunnelMode="ValueIsWidth" YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -204,7 +204,7 @@ FunnelSeries series = new FunnelSeries()
 
     XBindingPath = "Category",
 
-    YBindingPath = "Percentage",
+    YBindingPath = "Value",
 
     FunnelMode = ChartFunnelMode.ValueIsWidth
 
@@ -216,7 +216,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Funnel modes in WinUI Chart](Series_images/valueiswidth.png)
+![Funnel modes in WinUI Chart](Series_images/funnel_mode_valueiswidth.png)
 
 ### Explode Segments
 
@@ -235,7 +235,7 @@ The following properties are used to explode the individual segments in Funnel a
 
 <chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding Data}"   
 
-ExplodeIndex="4"  ExplodeOffset="70" YBindingPath="Percentage">
+ExplodeIndex="4"  ExplodeOffset="70" YBindingPath="Value">
 
 </chart:FunnelSeries>
 
@@ -250,7 +250,7 @@ FunnelSeries series = new FunnelSeries()
 
     XBindingPath = "Category",
 
-    YBindingPath = "Percentage",
+    YBindingPath = "Value",
 
     ExplodeIndex = 4,
 
@@ -264,7 +264,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Exploding the segments of accumlation series in WinUI Chart](Series_images/funnelexplode.png)
+![Exploding the segments of accumlation series in WinUI Chart](Series_images/funnel_explode.png)
 
 **Gap** **Ratio**
 
@@ -276,7 +276,7 @@ The gap between each segment using [`GapRatio`](https://help.syncfusion.com/cr/W
 
 <chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding Data}"     
 
-GapRatio="0.5" YBindingPath="Percentage">
+GapRatio="0.5" YBindingPath="Value">
 
 </chart:FunnelSeries>
 
@@ -291,7 +291,7 @@ FunnelSeries series = new FunnelSeries()
 
     XBindingPath = "Category",
 
-    YBindingPath = "Percentage",
+    YBindingPath = "Value",
 
     GapRatio = 0.5
 
@@ -303,4 +303,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Gap ratio between segments in WinUI Chart](Series_images/funnelgapratio.png)
+![Gap ratio between segments in WinUI Chart](Series_images/funnel_gapratio.png)
