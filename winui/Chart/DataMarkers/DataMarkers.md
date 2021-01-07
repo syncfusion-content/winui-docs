@@ -25,7 +25,7 @@ The following code example illustrates how to initialize the data marker.
 
 <syncfusion:ColumnSeries ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="Value">
         <syncfusion:ColumnSeries.DataMarker>
-            <syncfusion:ChartDataMarker>
+            <syncfusion:ChartDataMarker ShowLabel="True">
             </syncfusion:ChartDataMarker>
         </syncfusion:ColumnSeries.DataMarker>
 </syncfusion:ColumnSeries> 
@@ -41,6 +41,7 @@ ColumnSeries series = new ColumnSeries()
     YBindingPath = "Value",
 };
 ChartDataMarker datamarker = new ChartDataMarker();
+datamarker.ShowLabel = true;
 series.DataMarker = datamarker;
 chart.Series.Add(series);
 

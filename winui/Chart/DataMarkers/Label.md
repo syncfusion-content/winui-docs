@@ -55,7 +55,7 @@ The following properties are used to customize the data marker label.
 * [`BorderThickness`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_BorderThickness)- used to change the thickness of the border.
 * [`Margin`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_Margin)- used to change the margin size for label.
 * [`FontStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_FontStyle)-  used to change font style of the label.
-* [`FontSize`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_FontSize) -  used to change font size of the label.
+* [`FontSize`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_FontSize)-  used to change font size of the label.
 * [`Foreground`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_Foreground)- used to change the color of the label.
 * [`FontFamily`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_FontFamily)-  used to change the font family of the label.
 * [`Background`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_Background)- used to change the label background color.
@@ -67,7 +67,7 @@ The following code example demonstrates the customization of label using the abo
 {% highlight xaml %}
 
 <syncfusion:ColumnSeries.DataMarker>
-    <syncfusion:ChartDataMarker LabelPosition="Outer" Foreground="Black" FontSize="11" FontFamily="Calibri" BorderBrush="Black" BorderThickness="1" Margin="1" FontStyle="Italic" Background="DarkGray" ShowLabel="True">                        
+    <syncfusion:ChartDataMarker LabelPosition="Outer" Foreground="White" FontSize="11" FontFamily="Calibri" BorderBrush="Black" BorderThickness="1" Margin="1" FontStyle="Italic" Background="#1E88E5" ShowLabel="True">                        
     </syncfusion:ChartDataMarker>
 </syncfusion:ColumnSeries.DataMarker>
 
@@ -79,9 +79,9 @@ ChartDataMarker datamarker = new ChartDataMarker()
 
         ShowLabel = true,
         LabelPosition = DataMarkerLabelPosition.Outer,
-        Foreground = new SolidColorBrush(Colors.Black),
+        Foreground = new SolidColorBrush(Colors.White),
         BorderBrush = new SolidColorBrush(Colors.Black),
-        Background = new SolidColorBrush(Colors.DarkGray),
+        Background = "#1E88E5",
         BorderThickness = new Thickness(1),
         Margin = new Thickness(1),
         FontStyle = FontStyles.Italic,
@@ -107,13 +107,11 @@ The default appearance of the label can be customized using [`LabelTemplate`](ht
 <Page.Resources>
     <DataTemplate x:Key="dataMarkerTemplate">
         <StackPanel Orientation="Vertical">               
-            <Path Grid.Row="0"  Stretch="Uniform" Fill="#FF0F0E0E"                              
+            <Path Grid.Row="0"  Stretch="Uniform" Fill="#1E88E5"                              
                        Width="15" Height="15" Margin="0,0,0,0"                              
-                       RenderTransformOrigin="0.5,0.5">
-                <Path.Data>
-                    <PathGeometry FillRule="Nonzero" Figures="M22.5,15.8899993896484L37.5,                                
-                                          30.8899993896484 7.5,30.8899993896484 22.5,15.8899993896484z" />
-                </Path.Data>
+                       RenderTransformOrigin="0.5,0.5"
+                       Data="M22.5,15.8899993896484L37.5,                                
+                       30.8899993896484 7.5,30.8899993896484 22.5,15.8899993896484z">
                 <Path.RenderTransform>
                     <TransformGroup>
                         <TransformGroup.Children>
@@ -300,8 +298,7 @@ series.DataMarker = datamarker;
 <chart:PieSeries ItemsSource="{Binding Performance}" XBindingPath="ServerLoad"
     YBindingPath="Server1" EnableSmartLabels="True" ConnectorType="Bezier" LabelPosition="OutsideExtended">
         <chart:PieSeries.DataMarker>
-            <chart:ChartDataMarker HorizontalAlignment="Center" VerticalAlignment="Center" ShowConnectorLine="True" 
-                     ConnectorHeight="80" ShowLabel="True"/>
+            <chart:ChartDataMarker HorizontalAlignment="Center" VerticalAlignment="Center" ShowConnectorLine="True" ConnectorHeight="80" ShowLabel="True"/>
         </chart:PieSeries.DataMarker>
 </chart:PieSeries>
 
@@ -369,6 +366,8 @@ ChartDataMarker datamarker = new ChartDataMarker()
 {% endhighlight %}
 
 {% endtabs %}
+
+![Applying UseSeriesPalette in WinUI Chart](DataMarkers_images/series_palette.png)
 
 ## Smart Labels
 

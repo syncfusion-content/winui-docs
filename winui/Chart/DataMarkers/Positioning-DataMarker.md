@@ -23,7 +23,7 @@ The following code example explains the positioning of data markers in the middl
 
 {% highlight xaml %}
 
-<syncfusion:ChartDataMarker ShowMarker="True" DataMarkerPosition="TopAndBottom" MarkerInterior="DarkGray" MarkerType="Ellipse">
+<syncfusion:ChartDataMarker ShowMarker="True" DataMarkerPosition="TopAndBottom" MarkerInterior="#1E88E5" MarkerType="Ellipse">
 </syncfusion:ChartDataMarker>
 
 {% endhighlight %}
@@ -35,7 +35,7 @@ ChartDataMarker datamarker = new ChartDataMarker()
 {
     ShowMarker = true,
     MarkerType = ChartSymbol.Ellipse,
-    MarkerInterior = new SolidColorBrush(Colors.DarkGray),
+    MarkerInterior = "#1E88E5",
     DataMarkerPosition=DataMarkerPosition.TopAndBottom
 };
 series.DataMarker = datamarker;

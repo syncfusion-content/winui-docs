@@ -23,7 +23,7 @@ The following code example demonstrates the column series with [`Diamond`](https
 {% highlight xaml %}
 
 <syncfusion:ColumnSeries.DataMarker>
-    <syncfusion:ChartDataMarker ShowMarker="True" MarkerInterior="Black" MarkerType="Diamond">
+    <syncfusion:ChartDataMarker ShowMarker="True" MarkerInterior="#1E88E5" MarkerType="Diamond">
     </syncfusion:ChartDataMarker>
 </syncfusion:ColumnSeries.DataMarker> 
 
@@ -35,7 +35,7 @@ ChartDataMarker datamarker = new ChartDataMarker()
 {
     ShowMarker = true,
     MarkerType = ChartSymbol.Diamond,
-    MarkerInterior = new SolidColorBrush(Colors.Black)          
+    MarkerInterior = "#1E88E5"          
 };
 
 {% endhighlight %}
@@ -59,7 +59,7 @@ Chart provides support more customization for markers in data markers.
 
 {% highlight xaml %}
 
-<syncfusion:ChartDataMarker ShowMarker="True" MarkerStroke="Black" MarkerHeight="10" MarkerWidth="10" MarkerInterior="DarkGray" MarkerType="Ellipse">
+<syncfusion:ChartDataMarker ShowMarker="True" MarkerStroke="#0D47A1" MarkerHeight="10" MarkerWidth="10" MarkerInterior="#1E88E5" MarkerType="Ellipse">
 </syncfusion:ChartDataMarker>
 
 {% endhighlight %}
@@ -69,8 +69,8 @@ Chart provides support more customization for markers in data markers.
 ChartDataMarker datamarker = new ChartDataMarker()
 {
     ShowMarker = true,
-    MarkerStroke = new SolidColorBrush(Colors.Black),
-    MarkerInterior = new SolidColorBrush(Colors.DarkGray),
+    MarkerStroke = "#0D47A1",
+    MarkerInterior = "#1E88E5",
     MarkerHeight = 10,
     MarkerWidth = 10,
     MarkerType = ChartSymbol.Ellipse
@@ -94,11 +94,10 @@ The following code example demonstrates how to use MarkerTemplate.
     <DataTemplate x:Key="markerTemplate">
         <Grid>
             <Grid Name="backgroundGrid" Width="24" Height="24" Visibility="Visible">
-                <Ellipse Fill="#FFE2DBDB" Name="Fill" Visibility="Visible" />
+                <Ellipse Fill="#1E88E5" Name="Fill" Visibility="Visible" />
             </Grid>
-            <Path Stretch="Uniform" Fill="#FF0F0E0E" Width="24" Height="24" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
-                <Path.Data>
-                    <PathGeometry FillRule="Nonzero" Figures="M23.9296875,10.6165618896484L20.759765625,11.2200794219971 18.09375,
+            <Path Stretch="Uniform" Fill="#FF0F0E0E" Width="24" Height="24" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5"
+                        Data="M23.9296875,10.6165618896484L20.759765625,11.2200794219971 18.09375,
                         13.0306243896484 16.283203125,15.6966400146484 15.6796875,18.8665618896484 16.283203125,
                         22.0423431396484 18.09375,24.7259368896484 20.759765625,26.5540618896484 23.9296875,27.1634368896484 271025371551514,
                         26.5540618896484 29.77734375,24.7259368896484 31.5966796875,22.0423431396484 32.203125,18.8665618896484 315966796875,
@@ -111,8 +110,7 @@ The following code example demonstrates how to use MarkerTemplate.
                         28.0306243896484 16.875,25.1009368896484 13.875,24.7728118896484 15.140625,22.1478118896484 12.421875,
                         20.7415618896484 14.5546875,18.6790618896484 12.4921875,16.5228118896484 15.2578125,15.3040618896484 14203125,
                         12.5384368896484 17.1328125,12.3978118896484 17.1328125,9.42124938964844 19.921875,10.4056243896484 21.046875,
-                        7.61656188964844 23.296875,9.49156188964844 25.265625,7.35874938964844z" />
-                </Path.Data>
+                        7.61656188964844 23.296875,9.49156188964844 25.265625,7.35874938964844z">
                 <Path.RenderTransform>
                     <TransformGroup>
                         <TransformGroup.Children>
@@ -155,4 +153,4 @@ ChartDataMarker datamarker = new ChartDataMarker()
 
 {% endtabs %}
 
-![Template support for marker in WinUI Chart](DataMarkers_images/Marker_SymbolTemplate.png)
+![Template support for marker in WinUI Chart](DataMarkers_images/MarkerTemplate.png)
