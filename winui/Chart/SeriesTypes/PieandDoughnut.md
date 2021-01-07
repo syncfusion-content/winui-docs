@@ -17,11 +17,7 @@ documentation: ug
 
 {% highlight xaml %}
 
-<chart:PieSeries  XBindingPath="Category" 
-
-ItemsSource="{Binding Tax}" 
-
-YBindingPath="Percentage"/>
+<chart:PieSeries XBindingPath="Category" ItemsSource="{Binding Data}" YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -30,11 +26,11 @@ YBindingPath="Percentage"/>
 PieSeries series = new PieSeries()
 {
 
-    ItemsSource = new ViewModel().Tax,
+    ItemsSource = new ViewModel().Data,
 
     XBindingPath = "Category",
 
-    YBindingPath = "Percentage"
+    YBindingPath = "Value"
 
 };
 
@@ -44,7 +40,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Pie chart type in WinUI](Series_images/pie.png)
+![Pie chart type in WinUI](Series_images/pie_chart.png)
 
 The rendering size of the PieSeries can be controlled using [`CircularCoefficient`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_CircularCoefficient) property as in below code example.
 
@@ -52,13 +48,7 @@ The rendering size of the PieSeries can be controlled using [`CircularCoefficien
 
 {% highlight xaml %}
 
-<chart:PieSeries CircularCoefficient="0.9" 
-
-XBindingPath="Category" 
-
-ItemsSource="{Binding Tax}" 
-
-YBindingPath="Percentage"/>
+<chart:PieSeries CircularCoefficient="0.9" XBindingPath="Category" ItemsSource="{Binding Data}" YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -67,11 +57,11 @@ YBindingPath="Percentage"/>
 PieSeries series = new PieSeries()
 {
 
-    ItemsSource = new ViewModel().Tax,
+    ItemsSource = new ViewModel().Data,
 
     XBindingPath = "Category",
 
-    YBindingPath = "Percentage",
+    YBindingPath = "Value",
 
     CircularCoefficient = 0.9
 
@@ -83,7 +73,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![CircularCoefficient support in WinUI Chart](Series_images/pie_1.png)
+![CircularCoefficient support in WinUI Chart](Series_images/pie_circularcoefficient.png)
 
 ### Group small data points into “others”
 The small segments in the pie chart can be grouped into the “others” category using the [`GroupTo`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_GroupTo) and [`GroupMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_GroupMode) properties of PieSeries.
@@ -92,7 +82,7 @@ The small segments in the pie chart can be grouped into the “others” categor
 
 **Pie series without grouping**
 
-![Pie series without grouping feature](Series_images/NonGroupingPie.png)
+![Pie series without grouping feature](Series_images/nongrouping_pie.png)
 
 **Pie series with grouping (Mode - Value)**
 
@@ -100,42 +90,38 @@ The small segments in the pie chart can be grouped into the “others” categor
 
 {% highlight xaml %}
 
-            <chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count"
-				   GroupMode="Value" GroupTo="1000" >
-
-                <chart:PieSeries.DataMarker>
-                    <chart:ChartDataMarker ShowConnectorLine="True" 
-                                              ConnectorHeight="80" 
-                                              ShowLabel="True" 
-                                              LabelTemplate="{StaticResource DataLabelTemplate}"  
-                                              SegmentLabelContent="LabelContentPath">
-                    </chart:ChartDataMarker>
-                </chart:PieSeries.DataMarker>
-            </chart:PieSeries>
+<chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count" GroupMode="Value" GroupTo="1000">
+    <chart:PieSeries.DataMarker>
+        <chart:ChartDataMarker ShowConnectorLine="True" 
+                                  ConnectorHeight="80" 
+                                  ShowLabel="True" 
+                                  LabelTemplate="{StaticResource DataLabelTemplate}"  
+                                  SegmentLabelContent="LabelContentPath">
+        </chart:ChartDataMarker>
+    </chart:PieSeries.DataMarker>
+</chart:PieSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            pieSeries.GroupMode = PieGroupMode.Value;
-            pieSeries.GroupTo = 1000;
+pieSeries.GroupMode = PieGroupMode.Value;
+pieSeries.GroupTo = 1000;
+ChartDataMarker datamarker = new ChartDataMarker()
+{
+    ShowConnectorLine = true,
+    ShowLabel = true,
+    ConnectorHeight = 80,
+    LabelTemplate = this.RootGrid.Resources["DataLabelTemplate"] as DataTemplate,
+    SegmentLabelContent = LabelContent.LabelContentPath,
 
-            ChartDataMarker datamarker = new ChartDataMarker()
-            {
-                ShowConnectorLine = true,
-                ShowLabel = true,
-                ConnectorHeight = 80,
-                LabelTemplate = this.RootGrid.Resources["DataLabelTemplate"] as DataTemplate,
-                SegmentLabelContent = LabelContent.LabelContentPath,
-            };
-
-            pieSeries.DataMarker = datamarker;
+pieSeries.DataMarker = datamarker;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Pie series with grouping feature in value mode](Series_images/GroupingPie.png)
+![Pie series with grouping feature in value mode](Series_images/pie_groupmode_value.png)
 
 **Pie series with grouping (Mode - Angle)**
 
@@ -143,9 +129,7 @@ The small segments in the pie chart can be grouped into the “others” categor
 
 {% highlight xaml %}
 
-<chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count" 
-                 GroupMode="Angle" GroupTo="30">
-                 
+<chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count" GroupMode="Angle" GroupTo="30">
     <chart:PieSeries.DataMarker>
         <chart:ChartDataMarker ShowConnectorLine="True" 
                                   ConnectorHeight="80" 
@@ -178,7 +162,7 @@ pieSeries.DataMarker = datamarker;
 
 {% endtabs %}
 
-![Pie series with grouping feature in angle mode](Series_images/GroupingPie.png)
+![Pie series with grouping feature in angle mode](Series_images/pie_groupmode_angle.png)
 
 **Pie series with grouping (Mode - Percentage)**
 
@@ -186,9 +170,7 @@ pieSeries.DataMarker = datamarker;
 
 {% highlight xaml %}
 
-<chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count"                
-                 GroupMode="Percentage" GroupTo="10" >
-
+<chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count" GroupMode="Percentage" GroupTo="10">
     <chart:PieSeries.DataMarker>
         <chart:ChartDataMarker ShowConnectorLine="True" 
                                   ConnectorHeight="80" 
@@ -222,7 +204,7 @@ pieSeries.DataMarker = datamarker;
 
 {% endtabs %}
 
-![Pie series with grouping feature in percentage mode](Series_images/GroupingPie.png)
+![Pie series with grouping feature in percentage mode](Series_images/pie_groupmode_value.png)
 
 ## Doughnut
 
@@ -234,11 +216,7 @@ The DoughnutSeries can be added to chart as in below code example:
 
 {% highlight xaml %}
 
-<chart:DoughnutSeries XBindingPath="Category"
-
-                      ItemsSource="{Binding Tax}" 
-
-                      YBindingPath="Percentage"/>
+<chart:DoughnutSeries XBindingPath="Category" ItemsSource="{Binding Data}" YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -247,11 +225,11 @@ The DoughnutSeries can be added to chart as in below code example:
 DoughnutSeries series = new DoughnutSeries()
 {
 
-    ItemsSource = new ViewModel().Tax,
+    ItemsSource = new ViewModel().Data,
 
     XBindingPath = "Category",
 
-    YBindingPath = "Percentage"
+    YBindingPath = "Value"
 };
 
 chart.Series.Add(series);
@@ -260,7 +238,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Doughnut chart type in WinUI](Series_images/doughnut.png)
+![Doughnut chart type in WinUI](Series_images/doughnut_chart.png)
 
 The Doughnut also having coefficient property, [`DoughnutCoefficient`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_DoughnutCoefficient) which defines the inner circle. Also it has [`DoughnutSize`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_DoughnutSize), used to define the size for this series like [`CircularCoefficient`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_CircularCoefficient) in PieSeries.
 
@@ -268,11 +246,7 @@ The Doughnut also having coefficient property, [`DoughnutCoefficient`](https://h
 
 {% highlight xaml %}
 
-<chart:DoughnutSeries DoughnutCoefficient="0.7"                    
-
-XBindingPath="Category" ItemsSource="{Binding Tax}" 
-
-YBindingPath="Percentage" />
+<chart:DoughnutSeries DoughnutCoefficient="0.7" XBindingPath="Category" ItemsSource="{Binding Data}" YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -281,13 +255,13 @@ YBindingPath="Percentage" />
 DoughnutSeries series = new DoughnutSeries()
 {
 
-    ItemsSource = new ViewModel().Tax,
+    ItemsSource = new ViewModel().Data,
 
     XBindingPath = "Category",
 
-    YBindingPath = "Percentage",
+    YBindingPath = "Value",
 
-    DoughnutCoefficient = 0.9
+    DoughnutCoefficient = 0.7
 };
 
 chart.Series.Add(series);
@@ -296,7 +270,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![DoughnutCoefficient support in WinUI Chart](Series_images/doughnut_1.png)
+![DoughnutCoefficient support in WinUI Chart](Series_images/doughnut_coefficient.png)
 
 **Size**
 
@@ -310,7 +284,7 @@ The size of doughnut series can be customized by using its [`DoughnutSize`](http
 
 <syncfusion:DoughnutSeries DoughnutSize="0.8"/>
        
-<syncfusion:DoughnutSeries DoughnutSize="0.8"/ >
+<syncfusion:DoughnutSeries DoughnutSize="0.8"/>
 
 </syncfusion:SfChart>
 
@@ -335,7 +309,7 @@ chart.Series.Add(doughnut1);
 
 {% endtabs %}
 
-![DoughnutSize support in WinUI Chart](Series_images/HoleSize.png)
+![DoughnutSize support in WinUI Chart](Series_images/doughnut_size.png)
 
 **Hole Size**
 
@@ -361,7 +335,7 @@ DoughnutSeries.SetDoughnutHoleSize(chart, 0.2);
 
 {% endtabs %}
 
-![DoughnutHoleSize support in WinUI Chart](Series_images/doughnutHole.png)
+![DoughnutHoleSize support in WinUI Chart](Series_images/doughnut_holesize.png)
 
 
 ## Semi Pie and Doughnut
@@ -372,13 +346,7 @@ By using custom [`StartAngle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.U
 
 {% highlight xaml %}
 
-<syncfusion:PieSeries x:Name="PieSeries" StartAngle="180" EndAngle="360"    
-
-XBindingPath="Utilization" 
-
-YBindingPath="ResponseTime"
-
-ItemsSource="{Binding Data}"/>
+<syncfusion:PieSeries StartAngle="180" EndAngle="360" XBindingPath="Utilization" YBindingPath="ResponseTime" ItemsSource="{Binding Data}"/>
 
 {% endhighlight %}
 
@@ -405,19 +373,13 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Semi pie support in WinUI Chart](Series_images/semipie.png)
+![Semi pie support in WinUI Chart](Series_images/semi_pie_chart.png)
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:DoughnutSeries StartAngle="180" EndAngle="360" 
-
-XBindingPath="Utilization"
-
-YBindingPath="ResponseTime" 
-
-ItemsSource="{Binding Data}"/>
+<syncfusion:DoughnutSeries StartAngle="180" EndAngle="360" XBindingPath="Utilization" YBindingPath="ResponseTime" ItemsSource="{Binding Data}"/>
 
 {% endhighlight %}
 
@@ -444,7 +406,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Semi doughnut support in WinUI Chart](Series_images/semidoughnut.png)
+![Semi doughnut support in WinUI Chart](Series_images/semi_doughnut_chart.png)
 
 ## Stacked doughnut
 
@@ -468,9 +430,7 @@ Doughnut segments can be separated as individual circles using the [`IsStackedDo
 
 <chart:SfChart>
     …
-    <chart:DoughnutSeries XBindingPath="Category" YBindingPath="Expenditure" ItemsSource="{Binding ExpenditureData}"
-                          IsStackedDoughnut="True" CapStyle="BothCurve" SegmentSpacing="0.2"
-                          MaximumValue="100">
+    <chart:DoughnutSeries IsStackedDoughnut="True" CapStyle="BothCurve" SegmentSpacing="0.2" MaximumValue="100" XBindingPath="Category" YBindingPath="Expenditure" ItemsSource="{Binding ExpenditureData}">
     </chart:DoughnutSeries>
 
 </chart:SfChart>
@@ -483,13 +443,13 @@ SfChart chart = new SfChart();
 
 DoughnutSeries doughnutSeries = new DoughnutSeries()
 {
-    XBindingPath = "Category",
-    YBindingPath = "Expenditure",
-    ItemsSource = new ViewModel().ExpenditureData,
     IsStackedDoughnut = true,
     CapStyle = DoughnutCapStyle.BothCurve,
     SegmentSpacing = 0.2,
-    MaximumValue = 100
+    MaximumValue = 100,
+    XBindingPath = "Category",
+    YBindingPath = "Expenditure",
+    ItemsSource = new ViewModel().ExpenditureData
 };
 
 chart.Series.Add(doughnutSeries);
@@ -498,7 +458,7 @@ chart.Series.Add(doughnutSeries);
 
 {% endtabs %}
 
-![Stacked doughnut chart in WinUI](Series_images/StackedDoughnut.png)
+![Stacked doughnut chart in WinUI](Series_images/stackeddoughnut_chart.png)
 
 ## Explode Segments
 
@@ -518,13 +478,9 @@ The following properties are used to explode the individual segments in Pie and 
 
 {% highlight xaml %}
 
-<syncfusion:PieSeries x:Name="PieSeries" ItemsSource="{Binding Data}"          
+<syncfusion:PieSeries x:Name="PieSeries" ItemsSource="{Binding Data}"    
 
-ExplodeIndex="2"
-
-ExplodeRadius="10"
-
-XBindingPath="Utilization" 
+ExplodeIndex="2" ExplodeRadius="10" XBindingPath="Utilization" 
 
 YBindingPath="ResponseTime" />
 
@@ -553,7 +509,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Exploding a segment of accumlation series in WinUI Chart](Series_images/exploderadius.png)
+![Exploding a segment of accumlation series in WinUI Chart](Series_images/pie_exploderadius.png)
 
 N> We have defined ExplodeRadius as 30, by default its value is zero. So you need to define explode, when you set ExplodeIndex or ExplodeAll.
 
@@ -563,15 +519,11 @@ N> We have defined ExplodeRadius as 30, by default its value is zero. So you nee
 
 {% highlight xaml %}
 
-<chart:PieSeries  ExplodeAll="True"
+<chart:PieSeries  ExplodeAll="True" ExplodeRadius="15"
 
-ExplodeRadius="15"
+XBindingPath="Category" ItemsSource="{Binding Data}" 
 
-XBindingPath="Category" 
-
-ItemsSource="{Binding Tax}" 
-
-YBindingPath="Percentage">
+YBindingPath="Value">
 
 {% endhighlight %}
 
@@ -580,11 +532,11 @@ YBindingPath="Percentage">
 PieSeries series = new PieSeries()
 {
 
-    ItemsSource = new ViewModel().Tax,
+    ItemsSource = new ViewModel().Data,
 
     XBindingPath = "Category",
 
-    YBindingPath = "Percentage",
+    YBindingPath = "Value",
 
     ExplodeAll = true,
 
@@ -598,4 +550,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Exploding all the segments of accumulation series in WinUI Chart](Series_images/explodeall.png)
+![Exploding all the segments of accumulation series in WinUI Chart](Series_images/pie_explodeall.png)
