@@ -1,13 +1,13 @@
 ---
 layout: post
 title: About WinUI Calendar control | Syncfusion
-description: This page explains about overview of the WinUI Calendar control and its overall customization features.
+description: This page explains about overview of the WinUI Calendar (SfCalendar) control and its overall customization features.
 platform: winui
 control: SfCalendar
 documentation: ug
 ---
 
-# WinUI Calendar (SfCalendar) Overview
+# WinUI Calendar Overview
 
 The WinUI [Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control lets a user view and interact with a calendar that they can navigate by month, year, decade, or century. A user can select a single date or a range of dates. Its rich feature set includes functionalities such as date format, blackout dates, localization, and a custom template.
 

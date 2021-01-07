@@ -3,7 +3,7 @@ layout: post
 title: Guide to run online and offline samples from WinUI Studio | Syncfusion
 description: Learn how to run the online samples and offline samples of Syncfusion Essential Studio WinUI controls and components.
 platform: winui
-control: Featured Samples
+control: Samples
 documentation: ug
 ---
 
@@ -31,15 +31,21 @@ To explore the locally installed demos, click `Run Local Demos` and open the `Wi
 
 ## Offline Samples
 
-The offline samples are available in the following installed location where you can make changes and further exploration of controls.
-
-C:\Users\Public\Documents\Syncfusion\WinUI\{{ site.releaseversion }}\SampleBrowser\SampleBrowser\
-
-You can also explore individual controls from individual control project.
-
-C:\Users\Public\Documents\Syncfusion\WinUI\{{ site.releaseversion }}\SampleBrowser\<category name>\
-
 ![Exploring Syncfusion WinUI Samples from Syncfusion WinUI Sample Browser](Guide-to-run-the-samples-images/exploring-syncfusion-winui-samples-from-sb.png)
+
+* The individual control samples can also be run by exploring the individual control project.
+
+For example, below, we demonstrated how to run an individual `Chart` control project in Visual Studio.
+
+![Exploring the Syncfusion WinUI individual control project](Guide-to-run-the-samples-images/exploring-individual-control-project.png)
+
+* You can also open a standalone executable project (not a lib project) in the Visual Studio which is available under the category name.
+
+ ![Open the standalone WinUI project in Visual Studio](Guide-to-run-the-samples-images/open-standalone-winui-project-in-visual-studio.png)
+
+* Build and deploy the individual control executable project and run the application.
+
+![Running an individual control project](Guide-to-run-the-samples-images/run-induvidual-control-project.png)  
 
 ## Online Samples
 
