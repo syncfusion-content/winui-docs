@@ -41,11 +41,11 @@ ChartDataMarker datamarker = new ChartDataMarker()
 
 | SegmentLabelContent values | Description | Output |
 |---|--|---|
-| DateTime | Displays LabelContent.DateTime value | ![ DateTime in DataMarker](DataMarkers_images/Datetime.png) |
-|LabelContentPath | Displays the y value|![ LabelContentPath in DataMarker](DataMarkers_images/LabelContentPath.png)|
-| Percentage | Displays the percentage value of series point among other points |![ Percentage in DataMarker](DataMarkers_images/Percentage.png) |
-| XValue | Displays the X value of series point|![ XValue in DataMarker](DataMarkers_images/Xvalue.png) |
-| YValue | Displays the Y value of series point| ![ YValue in DataMarker](DataMarkers_images/YValue.png) |
+| DateTime | Displays LabelContent.DateTime value | ![ DateTime in DataMarker](DataMarkers_images/labelcontent_datetime.png) |
+|LabelContentPath | Displays the y value|![ LabelContentPath in DataMarker](DataMarkers_images/labelcontent_labelcontentpath.png)|
+| Percentage | Displays the percentage value of series point among other points |![ Percentage in DataMarker](DataMarkers_images/labelcontent_percentage.png) |
+| XValue | Displays the X value of series point|![ XValue in DataMarker](DataMarkers_images/labelcontent_xvalue.png) |
+| YValue | Displays the Y value of series point| ![ YValue in DataMarker](DataMarkers_images/labelcontent_yvalue.png) |
 
 ## Customizing Labels
 
@@ -94,7 +94,7 @@ ChartDataMarker datamarker = new ChartDataMarker()
 
 {% endtabs %}
 
-![DataMarker label content customization support in WinUI Chart](DataMarkers_images/Custom_Label.png)
+![DataMarker label content customization support in WinUI Chart](DataMarkers_images/datamarker_custom_Label.png)
 
 ## Label Template
 
@@ -163,7 +163,7 @@ series.DataMarker = datamarker;
 
 {% endtabs %}
 
-![LabelTemplate support for datamarkers in WinUI Chart](DataMarkers_images/label_template.png)
+![LabelTemplate support for datamarkers in WinUI Chart](DataMarkers_images/datamarker_labeltemplate.png)
 
 ## Label Format
 
@@ -194,7 +194,7 @@ ChartDataMarker datamarker = new ChartDataMarker()
 
 In the following image, you can see the decimal position will be rounded off to two digits by default.
 
-![DataMarkers label format support in WinUI Chart](DataMarkers_images/label_format.png)
+![DataMarkers label format support in WinUI Chart](DataMarkers_images/datamarker_labelformat.png)
 
 ## Label Rotation
 
@@ -332,15 +332,15 @@ series.DataMarker = datamarker;
 
  **Line** 
  
- ![Connector line with Line type in WinUI Chart](DataMarkers_images/Line.png) 
+ ![Connector line with Line type in WinUI Chart](DataMarkers_images/connectortype_line.png) 
 
  **Bezier**
  
-![Connector line with Bezier type in WinUI Chart](DataMarkers_images/Bezier.png)
+![Connector line with Bezier type in WinUI Chart](DataMarkers_images/connectortype_bezier.png)
 
 **Straight Line**
 
-![Connector line with StraightLine type in WinUI Chart](DataMarkers_images/StraightLine.png)
+![Connector line with StraightLine type in WinUI Chart](DataMarkers_images/connectortype_straightline.png)
 
 ## Applying Series Brush
 
@@ -367,7 +367,7 @@ ChartDataMarker datamarker = new ChartDataMarker()
 
 {% endtabs %}
 
-![Applying UseSeriesPalette in WinUI Chart](DataMarkers_images/series_palette.png)
+![Applying UseSeriesPalette in WinUI Chart](DataMarkers_images/useseriespalette_true.png)
 
 ## Smart Labels
 
@@ -415,6 +415,6 @@ series.DataMarker = datamarker
 
 {% endtabs %}
 
-![Smart labels for datamarkers in WinUI Chart](DataMarkers_images/smartlabel.png)
+![Smart labels for datamarkers in WinUI Chart](DataMarkers_images/datamarker_smartlabel.png)
 
 N> For circular series, the data marker position can be changed to [`Inside`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html), [`Outside`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html) or [`OutsideExtended`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html) using the [`LabelPosition`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_LabelPosition) property.

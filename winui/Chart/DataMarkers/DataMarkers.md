@@ -49,4 +49,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Data Markers in WinUI](DataMarkers_images/Label_Overview.PNG) 
+![Data Markers in WinUI](DataMarkers_images/datamarker_label_overview.PNG) 

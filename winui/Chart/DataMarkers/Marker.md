@@ -42,7 +42,7 @@ ChartDataMarker datamarker = new ChartDataMarker()
 
 {% endtabs %}
 
-![Marker support in WinUI Chart](DataMarkers_images/Marker.png)
+![Marker support in WinUI Chart](DataMarkers_images/marker.png)
 
 
 ### Customizing Marker
@@ -80,7 +80,7 @@ ChartDataMarker datamarker = new ChartDataMarker()
 
 {% endtabs %}
 
-![Marker customization support in WinUI Chart](DataMarkers_images/Custom_Marker.png)
+![Marker customization support in WinUI Chart](DataMarkers_images/custom_marker.png)
 
 **MarkerTemplate**
 
@@ -153,4 +153,4 @@ ChartDataMarker datamarker = new ChartDataMarker()
 
 {% endtabs %}
 
-![Template support for marker in WinUI Chart](DataMarkers_images/MarkerTemplate.png)
+![Template support for marker in WinUI Chart](DataMarkers_images/markertemplate.png)
