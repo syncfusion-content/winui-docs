@@ -163,7 +163,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Add your own color in the Theme and Standard color palette
 
-If you want to apply custom colors for base Theme Colors and Standard Colors palette, add the colors into the `PaletteColors.Colors` and `StandardColors.Colors` collections. The variant colors will be automatically created for the own Theme and Standard Colors.
+If you want to add own custom colors in base Theme Colors and Standard Colors palette, add the colors into the `PaletteColors.Colors` and `StandardColors.Colors` collections. The variant colors will be automatically created for the own Theme and Standard Colors.
 
 {% tabs %}
 {% highlight XAML %}
