@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting started with WinUI TimePicker control | Syncfusion
-description: This section describes about how to add the SfTimePicker control into WinUI application and its basic features.
+description: This section describes about how to add the TimePicker (SfTimePicker) control into WinUI application and its basic features.
 platform: WinUI
 control: SfTimePicker
 documentation: ug
 ---
 
-# Getting Started with WinUI TimePicker (SfTimePicker)
+# Getting Started with WinUI TimePicker
 
 This section explains the steps required to add the [TimePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) control and its time selection options. This section covers only basic features needed to get started with Syncfusion `TimePicker` control.
 
@@ -71,16 +71,11 @@ namespace GettingStarted
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/Getting_Started)
 
-## Select the time programmatically
+## Select time programmatically
 
 You can set or change the selected time programmatically by using [SelectedTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_SelectedTime) property. If you not assign any value for the `SelectedTime` property, `TimePicker` will automatically assign the current system time as `SelectedTime`.
 
 {% tabs %}
-{% highlight xaml %}
-
-<editors:SfTimePicker Name="sfTimePicker" />
-
-{% endhighlight %}
 {% highlight C# %}
 
 SfTimePicker sfTimePicker= new SfTimePicker();
@@ -116,7 +111,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Setting null value
 
-If you want to set null value for the `TimePicker`, set the [AllowNullValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_AllowNullValue) property as `true` and `SelectedTime` property as `null`. If `AllowNullValue` property is `false`, then the current system time is updated in `SelectedTime` property and displayed instead of `null`.
+If you want to set null value for the `TimePicker`, set the [AllowNullValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_AllowNullValue) property as `true` and set `SelectedTime` property as `null`. If `AllowNullValue` property is `false`, then the current system time is updated in `SelectedTime` property and displayed instead of `null`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -141,7 +136,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Setting watermark text
 
-You can prompt the user with some information by using the [PlaceHolderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_PlaceHolderText) property. This will display only on when the `TimePicker` contains the `SelectedTime` property as `null` and `AllowNullValue` property as `true`. If `AllowNullValue` property is `false`, then the current system time is updated in `SelectedTime` property and displayed instead of `PlaceHolderText`.
+You can prompt the user with some information by using the [PlaceHolderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_PlaceHolderText) property. This will be displayed only when the `TimePicker` contains the `SelectedTime` property as `null` and `AllowNullValue` property as `true`. If `AllowNullValue` property is `false`, then the current system time is updated in `SelectedTime` property and displayed instead of `PlaceHolderText`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -247,11 +242,63 @@ sfTimePicker.MaxTime = new DateTimeOffset(new DateTime(2020, 12, 10, 6, 59, 59))
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
+## Block times using BlackoutTimes
+
+If you want to block particular times from the time selection, then add that times into the [BlackoutTimes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_BlackoutTimes) collection. You can add more block out times to the `BlackoutTimes` collection. The default value of `BlackoutTimes` property is `null`.
+
+{% tabs %}
+{% highlight c# %}
+
+public class ViewModel
+{       
+    public DateTimeOffset? SelectedTime { get; set; }
+    public DateTimeOffsetCollection BlackoutTimes { get; set; }
+    public ViewModel()
+    {
+        SelectedTime = DateTimeOffset.Now.Date;
+        BlackoutTimes = new DateTimeOffsetCollection();
+        BlackoutTimes.Add(new DateTimeOffset(DateTimeOffset.Now.Year, DateTimeOffset.Now.Month, DateTimeOffset.Now.Day, 0, 3, 0, DateTimeOffset.Now.Offset));
+        BlackoutTimes.Add(new DateTimeOffset(DateTimeOffset.Now.Year, DateTimeOffset.Now.Month, DateTimeOffset.Now.Day, 0, 58, 0, DateTimeOffset.Now.Offset));
+        BlackoutTimes.Add(new DateTimeOffset(DateTimeOffset.Now.Year, DateTimeOffset.Now.Month, DateTimeOffset.Now.Day, 1, 0, 0, DateTimeOffset.Now.Offset));
+        BlackoutTimes.Add(new DateTimeOffset(DateTimeOffset.Now.Year, DateTimeOffset.Now.Month, DateTimeOffset.Now.Day, 3, 0, 0, DateTimeOffset.Now.Offset));
+        BlackoutTimes.Add(new DateTimeOffset(DateTimeOffset.Now.Year, DateTimeOffset.Now.Month, DateTimeOffset.Now.Day, 9, 0, 0, DateTimeOffset.Now.Offset));
+        BlackoutTimes.Add(new DateTimeOffset(DateTimeOffset.Now.Year, DateTimeOffset.Now.Month, DateTimeOffset.Now.Day, 10, 0, 0, DateTimeOffset.Now.Offset));
+    }
+}
+
+{% endhighlight  %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfTimePicker SelectedTime="{Binding SelectedTime}" 
+                      BlackoutTimes="{Binding BlackoutTimes}"
+                      x:Name="sfTimePicker">
+    <editors:SfTimePicker.DataContext>
+        <local:ViewModel/>
+    </editors:SfTimePicker.DataContext>
+</editors:SfTimePicker>
+
+{% endhighlight  %}
+{% highlight C# %}
+
+sfTimePicker.DataContext = new ViewModel();
+sfTimePicker.SelectedTime = (sfTimePicker.DataContext as ViewModel).SelectedTime;
+sfTimePicker.BlackoutTimes = (sfTimePicker.DataContext as ViewModel).BlackoutTimes;
+
+{% endhighlight  %}
+{% endtabs %}
+
+![SfTimePicker blocks the particular times from selection](Getting-Started_images/Blackouttimes.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+
 ## Edit time using free form editing
 
-By default, the user entering each input numbers are automatically validated with the `FormatString` formats and assigned the proper value for it, then it will move to next input part of the time format.
+By default, the user entering each input numbers are automatically validated with the `FormatString`'s formats and assigned the proper value for current field, then it will move to next input field of the time format.
 
-If you want to perform the validation after the user completely entering their time inputs, use the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_EditMode) property value as `Normal`. Then the entered time value is validated with the `FormatString` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the selected time will be set as default format value.
+If you want to perform the validation after the user completely entering their time inputs, use the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_EditMode) property value as `Normal`. Then the entered time value is validated with the `FormatString` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the previously selected time value sets to `SelectedTime` property.
 
 {% tabs %}
 {% highlight xaml %}
