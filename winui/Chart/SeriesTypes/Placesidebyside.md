@@ -44,13 +44,13 @@ The following code example and image illustrates the placement of series while s
 
 <chart:ColumnSeries ItemsSource="{Binding Data}" Label="2014"  
 
-XBindingPath="CountryName" YBindingPath="GoldMedals"/>
+XBindingPath="CountryName" YBindingPath="Count1"/>
 
-<chart:ColumnSeries ItemsSource="{Binding Data}"  
+<chart:ColumnSeries ItemsSource="{Binding Data}" Label="2015"
 
 SegmentSpacing="0.5" XBindingPath="CountryName" 
 
-Label="2015" YBindingPath="SilverMedals"/>            
+YBindingPath="Count2"/>            
 
 </chart:SfChart>
 
@@ -90,7 +90,7 @@ ColumnSeries columnSeries1 = new ColumnSeries()
 
     XBindingPath = "CountryName",
 
-    YBindingPath = "GoldMedals",
+    YBindingPath = "Count1",
 
     Label = "2014",
 
@@ -103,7 +103,7 @@ ColumnSeries columnSeries2 = new ColumnSeries()
 
     XBindingPath = "CountryName",
 
-    YBindingPath = "SilverMedals",
+    YBindingPath = "Count2",
 
     Label = "2015",
 
