@@ -13,7 +13,9 @@ This section explains the customization features available in the WinUI [Badge](
 
 ## Custom colors for displaying the Badge
 
-If you want to change the background color of the `Badge` other than the default `Fill` colors, use the `Background` property. You can also change foreground of the `Badge` by using the `Foreground` property. The default value of `Background` and `Foreground` properties is `null`. 
+If you want to change the background color of the `Badge` other than the default `Fill` colors, use the `Background` property. You can also change foreground of the `Badge` by using the `Foreground` property. The default value of `Background` and `Foreground` properties is `null`.
+
+N> If you change the background color, `Badge` control will automatically assign the suitable foreground to the `Badge` content.
 
 {% tabs %}
 {% highlight XAML %}
@@ -74,7 +76,7 @@ If you want to change the shape of the `Badge` other than the default shapes, us
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
 
-## Custom UI for Badge content
+## Custom UI of Badge content
 
 You can change the appearance of `Badge` content by using `ContentTemplate` property. The `DataContext` of `ContentTemplate` property is `Content`.
 
@@ -260,7 +262,7 @@ badge.Content = "99+";
 
 ## Change Badge size
 
-You can change the size of `Badge` by using the `Width` and `Height` properties. The default value of `Width` property is `40` and `Height` property is `30`.
+By default, the `Badge` control size is automatically allocated based on the content. You can change the size of `Badge` by using the `Width` and `Height` properties. The default value of `Width` property is `40` and `Height` property is `30`.
 
 {% tabs %}
 {% highlight XAML %}
