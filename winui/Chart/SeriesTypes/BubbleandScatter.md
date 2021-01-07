@@ -19,11 +19,7 @@ The size of the bubble series is relative proportional to the value bind with th
 
 {% highlight xaml %}
 
-<chart:BubbleSeries ItemsSource="{Binding Fruits}" XBindingPath="FruitName" 
-
-YBindingPath="People" Size="Size" MinimumRadius="5" 
-
-MaximumRadius="10"/>
+<chart:BubbleSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" Size="Size" MinimumRadius="5" MaximumRadius="10"/>
 
 {% endhighlight %}
 
@@ -32,15 +28,17 @@ MaximumRadius="10"/>
 BubbleSeries series = new BubbleSeries()
 {
 
-    ItemsSource = new ViewModel().Fruits,
+    ItemsSource = new ViewModel().Data,
 
-    XBindingPath = "FruitName",
+    XBindingPath = "XValue",
 
-    YBindingPath = "People",
+    YBindingPath = "YValue",
 
     Size = "Size",
 
     MinimumRadius = 5,
+
+    MaximumRadius = 10
 
 };
 
@@ -50,19 +48,19 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Bubble chart type in WinUI](Series_images/bubble.png)
+![Bubble chart type in WinUI](Series_images/bubble_chart.png)
 
 **Show Zero Bubbles**
 
 The zero size bubble segments can be enabled or disabled by using the [`ShowZeroBubbles`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_ShowZeroBubblesProperty) property. By default, the property value is True.
+
 The following code illustrates how to set the value to the property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:BubbleSeries ShowZeroBubbles="True" >
-
+<chart:BubbleSeries ShowZeroBubbles="True">
 </chart:BubbleSeries>
 
 {% endhighlight %}
@@ -77,7 +75,7 @@ series.ShowZeroBubbles = true;
 
 {% endtabs %}
 
-![ShowZeroBubbles support in WinUI](Series_images/showBubble_true.png)
+![ShowZeroBubbles support in WinUI](Series_images/showzerobubble_true.png)
 
 The following code example and screenshots describes when [`ShowZeroBubbles`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_ShowZeroBubblesProperty) value is false.
 
@@ -85,8 +83,7 @@ The following code example and screenshots describes when [`ShowZeroBubbles`](ht
 
 {% highlight xaml %}
 
-<chart:BubbleSeries ShowZeroBubbles="False" >
-
+<chart:BubbleSeries ShowZeroBubbles="False">
 </chart:BubbleSeries>
 
 {% endhighlight %}
@@ -101,7 +98,7 @@ series.ShowZeroBubbles = false;
 
 {% endtabs %}
 
-![ShowZeroBubbles support in WinUI Chart](Series_images/showBubble_false.png)
+![ShowZeroBubbles support in WinUI Chart](Series_images/showzerobubble_false.png)
 
 ## Scatter
 
@@ -111,11 +108,7 @@ series.ShowZeroBubbles = false;
 
 {% highlight xaml %}
 
-<chart:ScatterSeries ScatterHeight="4" ScatterWidth="4" 
-
-ItemsSource="{Binding DataPoints}" XBindingPath="Eruptions" 
-
-YBindingPath="WaitingTime"/>
+<chart:ScatterSeries ScatterHeight="7" ScatterWidth="7" ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue"/>
 
 {% endhighlight %}
 
@@ -124,15 +117,15 @@ YBindingPath="WaitingTime"/>
 ScatterSeries series = new ScatterSeries()
 {
 
-    ItemsSource = new ViewModel().DataPoints,
+    ItemsSource = new ViewModel().Data,
 
-    XBindingPath = "Eruptions",
+    XBindingPath = "XValue",
 
-    YBindingPath = "WaitingTime",
+    YBindingPath = "YValue",
 
-    ScatterHeight = 4,
+    ScatterHeight = 7,
 
-    ScatterWidth = 4,
+    ScatterWidth = 7,
 
 };
 
@@ -142,4 +135,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Scatter chart type in WinUI](Series_images/scatter.png)
+![Scatter chart type in WinUI](Series_images/scatter_chart.png)
