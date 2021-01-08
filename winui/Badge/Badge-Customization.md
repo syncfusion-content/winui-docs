@@ -15,7 +15,7 @@ This section explains the customization features available in the WinUI [Badge](
 
 If you want to change the background color of the `Badge` other than the default `Fill` colors, use the `Background` property. You can also change foreground of the `Badge` by using the `Foreground` property. The default value of `Background` and `Foreground` properties is `null`.
 
-N> If you change the background color, `Badge` control will automatically assign the suitable foreground to the `Badge` content.
+N> If you change the background color, `Badge` control will automatically assign contrasting foreground to the `Badge` content.
 
 {% tabs %}
 {% highlight XAML %}
