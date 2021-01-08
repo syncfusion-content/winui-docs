@@ -19,7 +19,7 @@ You can change the color selection mode directly at runtime by clicking on the c
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
-## Enable specific brush modes
+## Enable specific brush mode
 
 You can enable the user to choose either `Solid`, `Linear` or `Radial` gradient brush or any combination of brush mode by using the `BrushTypeOptions` property. 
 

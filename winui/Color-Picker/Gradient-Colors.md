@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Select Gradient Colors in WinUI SfColorPicker control | Syncfusion
+title: Gradient Colors in WinUI SfColorPicker control | Syncfusion
 description: This section describes about how to select linear and radial gradient colors in SfColorPicker control.
 platform: WinUI
 control: SfColorPicker
 documentation: ug
 ---
 
-# Select Gradient Color Brush in WinUI ColorPicker (SfColorPicker)
+# Gradient Colors in WinUI ColorPicker (SfColorPicker)
 
 This section describes how to create gradient color brush, modify their colors and their properties available in [ColorPicker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html) control.
 
@@ -15,7 +15,7 @@ This section describes how to create gradient color brush, modify their colors a
 
 A gradient color paints an area with multiple colors that blend into each other along an axis. `ColorPicker` now comes with Gradient tools which returns a brush of type Linear and Radial gradient colors. The offsets can be added or dropped dynamically and its position can be changed to produce different color combinations.
 
-## Select linear gradient color brush programmatically
+## Select linear gradient brush programmatically
 
 Linear Gradient color brush can be selected by the multiple colors and their location along the gradient axis using the `GradientStop` objects and `StartPoint` and `EndPoint` properties of `LinearGradientBrush`. Based on the `StartPoint` and `EndPoint`, the selected color brush will be combined in linear manner.
 
@@ -59,7 +59,7 @@ colorPicker.SelectedBrush = linearGradient;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectLinearGradientColors)
 
-## Select linear gradient color brush interactively
+## Interactively select linear gradient brush
 
 You can directly select a required linear gradient color brush  as your wish at runtime by creating the multiple gradient stops and select color for that gradient stops. Then, created gradient stops will be combined together and form a linear gradient color brush. You can enable the linear gradient mode by setting the [BrushTypeOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_BrushTypeOptions)  property value as `LinearGradientBrush`. The default value of `BrushTypeOptions` property is `All`.
 
@@ -81,7 +81,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
-## Change angle of selected linear gradient color brush
+## Change angle of linear gradient brush
 
 If you want to change the angle of selected linear gradient color brush, change the angle value in `Angle` value editor. Based on the value of `Angle` value editor, selected linear gradient color brush will be rotated. The angle option only shown on when [AxisInputOption](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_AxisInputOption) property value is `Simple`. The `Angle` value editor accept the value from `0` to `359`. The default angle value is `0`.
 
@@ -105,7 +105,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
-## Change offset of linear gradient color brush using value editor
+## Change offset of linear gradient brush using value editor
 
 You can change the offset of selected linear gradient color brush by using dedicated start and end point value editors. By default, offset value editors are collapsed. If you want to show the offset value editors, use the `AxisInputOption` property value as `Advanced`. 
 
@@ -129,7 +129,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
-## Select radial gradient color brush programmatically
+## Select radial gradient brush programmatically
 
 Radial Gradient color brush is similar to Linear Gradient color brush, except for the axis defined by the circle. Based on the `GradientOrigin`, `Center` and radius point values, the selected gradient color brush are combined in a circle manner. You can programmatically select a radial gradient brush by using the `RadialGradientBrush` elements.
 
@@ -177,7 +177,7 @@ colorPicker.SelectedBrush = radialGradient;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectRadialGradientColors)
 
-## Interactively select radial gradient color brush 
+## Interactively select radial gradient brush 
 
 You can directly select a required radial gradient color brush as your wish at runtime by creating the multiple gradient stops and select color for that gradient stops. Then, created gradient stops will be combined together and form a radial gradient color brush. You can enable the radial gradient mode by setting the `BrushTypeOptions` property value as `RadialGradientBrush`. 
 
@@ -199,7 +199,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.RadialGradientBrush;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
-## Change direction of selected radial gradient color brush
+## Change direction of radial gradient brush
 
 If you want to change the direction of selected radial gradient color brush, select the any direction from the drop down option. The direction option only shown on when `AxisInputOption` property value is `Simple`. 
 
@@ -223,7 +223,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.RadialGradientBrush;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
-## Change offset of radial gradient color brush using value editor
+## Change offset of radial gradient brush using value editor
 
 You can change the offset of selected radial gradient color brush by using dedicated center, origin and radius value editors. If you want to show the offset value editors, use the `AxisInputOption` property value as `Advanced`.
 
@@ -247,21 +247,21 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.RadialGradientBrush;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
-## Change opacity of selected gradient color brush
+## Change opacity of gradient brush
 
 You can change opacity of the selected gradient color brush by using the delicate slider in the `ColorPicker`.
 
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfColorPicker BrushTypeOptions="SolidColorBrush,RadialGradientBrush"
+<editors:SfColorPicker BrushTypeOptions="LinearGradientBrush,RadialGradientBrush"
                        Name="colorPicker">
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfColorPicker sfColorPicker = new SfColorPicker();
-colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush | BrushTypeOptions.RadialGradientBrush;
+colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush | BrushTypeOptions.RadialGradientBrush;
 
 {% endhighlight %}
 {% endtabs %}
@@ -270,7 +270,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush | BrushTypeOptio
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
-## Selected gradient color brush changed notification
+## Selected gradient brush changed notification
 
 You will be notified when selected gradient color brush changed in `ColorPicker` by using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrushChanged) events. You can get the old and newly selected brush by using the [OldBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) and [NewBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) properties.
 

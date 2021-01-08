@@ -177,9 +177,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Place the Badge any where on the container
 
-If you want to place the `Badge` anywhere on any shaped container, use the [HorizontalPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalPosition) or [VerticalPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalPosition) properties. The value range for `HorizontalPosition` and `VerticalPosition` properties is `0` to`1`. The default value of `HorizontalPosition` property is `1` and `VerticalPosition` property is `0`.
-
-For example, if you use any circular containers, you can easily place the `Badge` anywhere by using the `HorizontalPosition` and `VerticalPosition` properties.
+If you want to place the `Badge` anywhere on the container, use the [HorizontalPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalPosition) or [VerticalPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalPosition) properties. The value range for `HorizontalPosition` and `VerticalPosition` properties is `0` to `1`. The default value of `HorizontalPosition` property is `1` and `VerticalPosition` property is `0`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -361,3 +359,34 @@ badge.Content = "10";
 ![Content spacing of Badge](Getting-Started_images/Padding.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
+
+## Auto re-positioning support
+
+If you change the container size, `Badge` will be repositioned automatically to the existing position on the container.
+
+{% tabs %}
+{% highlight XAML %}
+
+<notification:BadgeContainer Name="badgeContainer">
+    <notification:BadgeContainer.Badge>
+        <notification:SfBadge Content="99+"
+                              Name="badge"/>
+    </notification:BadgeContainer.Badge>
+    <notification:BadgeContainer.Content>
+        <Button Content="Inbox">
+        </Button>
+    </notification:BadgeContainer.Content>
+</notification:BadgeContainer>
+
+{% endhighlight %}
+{% highlight C# %}
+
+badge.Content = "10";
+
+{% endhighlight %}
+{% endtabs %}
+
+![Auto re-positioning support](Getting-Started_images/StablePositioning.gif)
+
+
+
