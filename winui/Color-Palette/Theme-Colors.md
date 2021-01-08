@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Select Theme colors in WinUI SfColorPalette control | Syncfusion
+title: Theme colors in WinUI SfColorPalette control | Syncfusion
 description: Learn about selecting a different theme colors in Syncfusion WinUI SfColorPalette control and more details about the control features.
 platform: WinUI
 control: SfColorPalette
 documentation: ug
 ---
 
-# Select Theme colors in WinUI ColorPalette (SfColorPalette)
+# Theme colors in WinUI ColorPalette (SfColorPalette)
 
 This section explains the different types of theme colors available in the [ColorPalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html) and  how to choose the colors and its panel customizations.
 
@@ -154,7 +154,7 @@ colorPalette.PaletteColors.Header = "My theme colors";
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
 
-## Hide theme color palette header
+## Hide theme palette header
 
 If you want to hide the header of theme color palette, use the `PaletteColors.ShowHeader` property. The default value of `PaletteColors.ShowHeader` property is `true`.
 

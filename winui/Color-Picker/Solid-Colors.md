@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Select Solid Colors in WinUI SfColorPicker control | Syncfusion
+title: Solid Colors in WinUI SfColorPicker control | Syncfusion
 description: This section describes about how to select the solid color brush in the SfColorPicker control and its features.
 platform: WinUI
 control: SfColorPicker
 documentation: ug
 ---
 
-# Select Solid Color Brush in WinUI ColorPicker (SfColorPicker)
+# Solid Colors in WinUI ColorPicker (SfColorPicker)
 
 This section explains how to select a solid color from different color models, how to modify their individual properties in [ColorPicker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html).
 
 ## What is solid color?
 
-Solid color comprises a single color with its alpha, RGB, HSV, HSL, or CMYK color channels.
+Solid color comprises a single color with its alpha value. It contains different color channels such as RGB, HSV, HSL and CMYK color channels.
 
-## Select solid color brush programmatically
+## Select solid brush programmatically
 
 You can select the solid color brush programmatically by setting the solid color brush value to the [SelectedBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrush) property. You can also choose various solid color brush from different standard color models such as `RGB`, `HSV`, `HSL`, `CMYK` formats. The default value of `SelectedBrush` property is `Blue`.
 
@@ -38,7 +38,7 @@ colorPicker.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
-## Select solid color brush interactively
+## Select solid brush interactively
 
 You can select any solid color brush at runtime by clicking on the respective solid color brush area. You can enable only the solid color brush mode by setting the [BrushTypeOptions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_BrushTypeOptions) property value as `SolidColorBrush`.
 
@@ -60,7 +60,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
-## Change opacity of solid color brush
+## Change opacity of solid brush
 
 You can change opacity of the selected solid color brush by using the A-Alpha value editor or delicate slider in the `ColorPicker`. You can hide the A-Alpha slider by using the [AlphaInputOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_AlphaInputOptions) property value as `TextInput`. The default value of the `AlphaInputOptions` property is `All`.
 
@@ -84,7 +84,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
-## Switch between solid color channels
+## Switch between color channels
 
 The `ColorPicker` contains different color channels namely `RGB`, `HSV`, `HSL` and `CMYK`. You can select any color model by setting value the [ColorChannelOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_ColorChannelOptions) property or select it from the drop down options. The default value of `ColorChannelOptions` property is `RGB`.
 
@@ -109,7 +109,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
-## Input options for solid color channel
+## Input options for color channel
 
 You can change the value of selected solid color channel elements by using either text editor or delicate slider or using both. If you want to change selected solid color channel value only by using text editor or delicate slider, use the [ColorChannelInputOptions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_ColorChannelInputOptions) property value as `TextInput` or `SliderInput`. The default value of `ColorChannelInputOptions` property is `All`.
 
@@ -133,7 +133,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
-## Hexadecimal solid color brush value editor
+## Hexadecimal editor
 
 You can select a solid color brush by entering the hexadecimal color value to the hexadecimal value editor. You can also get the selected color hexadecimal value by using the hexadecimal value editor. You can hide the hexadecimal value editor by setting the [IsHexInputVisible](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_IsHexInputVisible) property value as `false`. The default value of `IsHexInputVisible` property is `true`.
 
@@ -181,7 +181,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
-## Selected solid color brush changed notification
+## Selected brush changed notification
 
 You will be notified when selected solid color brush changed in `ColorPicker` by  using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrushChanged) events. You can get the old and newly selected brush by using the [OldBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) and [NewBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) properties.
 

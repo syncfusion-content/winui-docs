@@ -103,7 +103,7 @@ Here, `Yellow` color is selected color in the `DropDownColorPalette`.
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
 
-## Select Color from dropdown Color Palette
+## Select Color from Dropdown Color Palette
 
 You can select a different colors from `Theme Colors` and `Standard Colors` panels.
 
@@ -166,7 +166,7 @@ SfDropDownColorPalette sfDropDownColorPalette = new SfDropDownColorPalette();
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
 
-## Recently used Color items
+## Recently used Colors
 
  If you want to choose a color brush which are recently selected from the `More Colors` dialog, use the `Recent Colors` panel. 
 
@@ -390,7 +390,7 @@ sfDropDownColorPalette.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAligned
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
 
-## Selected Color brush changed notification
+## Selected brush changed notification
 
 You will be notified when selected color brush changed in `DropDownColorPalette` by using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownColorPalette.html#Syncfusion_UI_Xaml_Editors_SfDropDownColorPalette_SelectedBrushChanged) event. The `SelectedBrushChanged` event contains the old and newly selected color values in the [OldBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedBrushChangedEventArgs_OldBrush), [NewBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedBrushChangedEventArgs_NewBrush) properties.
 
@@ -457,6 +457,3 @@ private void sfDropDownColorPalette_DropDownClosed(object sender, EventArgs e) {
 
 {% endhighlight %}
 {% endtabs %}
-
-
-
