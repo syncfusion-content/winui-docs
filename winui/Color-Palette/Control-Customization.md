@@ -157,7 +157,7 @@ private void ColorPalette_SelectedBrushChanged(object sender, SelectedBrushChang
 
 ## Tooltip support
 
-Tooltip is used to show the information about the segment, when you mouse over on the segment. You can show information about name of the color item using tooltip when hovering the mouse on the specific color item.
+Tooltip is used to show the information about the segment, when you mouse over on the segment. `ColorPalette` shows the information about name of the color item using tooltip when hovering the mouse on the specific color item.
 
 ![ColorPalette with tooltip support](Working-with-SfColorPalette_images/tooltip.gif)
 
