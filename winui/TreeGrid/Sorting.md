@@ -99,7 +99,7 @@ Following are the sequence of sorting orders when clicking column header,
 SfTreeGrid control allows you to sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the &lt;kbd&gt;Ctrl&lt;/kbd&gt; key.
 In the below screen shot, the `First Name` column sorted. Then the `Employee ID` column is sorted against the `First Name` data by clicking column header by pressing &lt;kbd&gt;Ctrl&lt;/kbd&gt; key. The sorting state of `First Name` column is preserved and `Employee ID` column sorted against `First Name` column.
 
-![Multi column sorting in TreeGrid WinUI](Sorting_images/Sorting_img2.png)
+![Multi column sorting in TreeGrid WinUI](Sorting-images/Sorting_img2.png)
 
 ### Display sort order
 
@@ -123,7 +123,7 @@ this.treeGrid.ShowSortNumbers = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Display sort order in TreeGrid WinUI](Sorting_images/Sorting_img3.png)
+![Display sort order in TreeGrid WinUI](Sorting-images/Sorting_img3.png)
 
 ## Programmatic Sorting
 
@@ -190,9 +190,9 @@ The custom sorting can be applied by adding the [SortComparer](https://help.sync
 
 The [SortComparer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.SortComparer.html) have the following properties,
 
-[PropertyName](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.SortComparer~PropertyName.html) - Gets or sets the name of the column to apply custom sorting.
+[PropertyName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.SortComparer.html#Syncfusion_UI_Xaml_Data_SortComparer_PropertyName) - Gets or sets the name of the column to apply custom sorting.
 
-[Comparer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.SortComparer~Comparer.html) - Gets or sets the custom comparer in which you can code to compare the data using custom logic. 
+[Comparer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.SortComparer.html#Syncfusion_UI_Xaml_Data_SortComparer_Comparer) - Gets or sets the custom comparer in which you can code to compare the data using custom logic. 
 
 You can implement [ISortDirection](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.ISortDirection.html) interface in comparer to get the sort direction. So you can apply different custom logics for ascending and descending. 
 
@@ -271,7 +271,7 @@ this.treeGrid.SortComparers.Add(new SortComparer() { Comparer = new CustomSortCo
 
 Sorting `FirstName` column sorts the data using custom sort comparer available in `SfTreeGrid.SortComparers`.
 
-![Custom sort in TreeGrid WinUI](Sorting_images/Sorting_img4.png)
+![Custom sort in TreeGrid WinUI](Sorting-images/Sorting_img4.png)
 
 ## Handling events
 
