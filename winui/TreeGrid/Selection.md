@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Selection | TreeGrid | WinUI | Syncfusion
-description: This section explains about the selection of the rows and its customization
+description: This section explains about the selection of the rows and its customization in Syncfusion WinUI TreeGrid (SfTreeGrid) control and more details
 platform: winui
 control: TreeGrid
 documentation: ug
 ---
 
-# Selection
+# Selection in WinUI TreeGrid (SfTreeGrid)
 
 SfTreeGrid allows you select one or more rows. 
 
