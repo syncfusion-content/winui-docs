@@ -23,7 +23,7 @@ The following code example illustrates the use of radar series:
 
 XBindingPath="Direction"
 
-YBindingPath="Tree" >
+YBindingPath="Tree">
 
 </chart:RadarSeries>        
 
@@ -48,7 +48,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Radar chart type in WinUI](Series_images/radar.png)
+![Radar chart type in WinUI](Series_images/radar_chart.png)
 
 
 ## Polar
@@ -88,7 +88,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Polar chart type in WinUI](Series_images/polar.png)
+![Polar chart type in WinUI](Series_images/polar_chart.png)
 
 
 The Radar and Polar charts having the following properties in common:
@@ -144,7 +144,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Closed polar series in WinUI Chart](Series_images/isclosed.png)
+![Closed polar series in WinUI Chart](Series_images/polar_isclosed_false.png)
 
 ### DrawType
 
@@ -189,7 +189,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Draw type support for polar series in WinUI Chart](Series_images/drawtype_area.png)
+![Draw type support for polar series in WinUI Chart](Series_images/polar_drawtype_area.png)
 
 **DrawType** **as** **Line**
 
@@ -234,7 +234,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Draw type support for polar series in WinUI Chart](Series_images/drawtype_line.png)
+![Draw type support for polar series in WinUI Chart](Series_images/polar_drawtype_line.png)
 
 ### Polar Angle
 
@@ -250,7 +250,7 @@ The below snippet explains how the axes of series has been rotated when `PolarAn
 
 <chart:SfChart.PrimaryAxis>
 
-<chart:CategoryAxis  PolarAngle="Rotate0"/>
+<chart:CategoryAxis PolarAngle="Rotate0"/>
 
 </chart:SfChart.PrimaryAxis>
 
@@ -282,7 +282,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Rotation support for polar series in WinUI Chart](Series_images/Rotate0.png)
+![Rotation support for polar series in WinUI Chart](Series_images/polarangle_rotate0.png)
 
 
 **Rotate90**
@@ -295,7 +295,7 @@ The below snippet explains how the axes of series has been rotated when `PolarAn
 
 <chart:SfChart.PrimaryAxis>
 
-<chart:CategoryAxis  PolarAngle="Rotate90"/>
+<chart:CategoryAxis PolarAngle="Rotate90"/>
 
 </chart:SfChart.PrimaryAxis>
 
@@ -327,7 +327,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Rotation support for polar series in WinUI Chart](Series_images/Rotate90.png)
+![Rotation support for polar series in WinUI Chart](Series_images/polarangle_rotate90.png)
 
 
 **Rotate180**
@@ -340,7 +340,7 @@ The below snippet explains how the axes of series has been rotated when `PolarAn
 
 <chart:SfChart.PrimaryAxis>
 
-<chart:CategoryAxis  PolarAngle="Rotate180"/>
+<chart:CategoryAxis PolarAngle="Rotate180"/>
 
 </chart:SfChart.PrimaryAxis>
 
@@ -372,7 +372,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Rotation support for polar series in WinUI Chart](Series_images/Rotate180.png)
+![Rotation support for polar series in WinUI Chart](Series_images/polarangle_rotate180.png)
 
 
 **Rotate270**
@@ -385,7 +385,7 @@ The below snippet explains how the axes of series has been rotated, when `PolarA
 
 <chart:SfChart.PrimaryAxis>
 
-<chart:CategoryAxis  PolarAngle="Rotate270"/>
+<chart:CategoryAxis PolarAngle="Rotate270"/>
 
 </chart:SfChart.PrimaryAxis>
 
@@ -417,4 +417,4 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Rotation support for polar series in WinUI Chart](Series_images/Rotate270.png)
+![Rotation support for polar series in WinUI Chart](Series_images/polarangle_rotate270.png)
