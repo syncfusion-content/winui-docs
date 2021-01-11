@@ -219,9 +219,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Place the Badge any where on the container
 
-If you want to place the `Badge` anywhere on any shaped container, use the [HorizontalPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalPosition) or [VerticalPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalPosition) properties. The value range for `HorizontalPosition` and `VerticalPosition` properties is `0` to`1`. The default value of `HorizontalPosition` property is `1` and `VerticalPosition` property is `0`.
-
-For example, if you use any circular containers, you can easily place the `Badge` anywhere by using the `HorizontalPosition` and `VerticalPosition` properties.
+If you want to place the `Badge` anywhere on the container, use the [HorizontalPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalPosition) or [VerticalPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalPosition) properties. The value range for `HorizontalPosition` and `VerticalPosition` properties is `0` to `1`. The default value of `HorizontalPosition` property is `1` and `VerticalPosition` property is `0`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -257,7 +255,7 @@ badge.VerticalPosition = 0.8;
 
 You can directly add the `Badge` to any objects without using the `BadgeContainer`.
 
-N> If you use `Badge` control without `BadgeContainer`, alignment and positioning options of `Badge` control will not be working.
+N> By default, `Badge` will automatically aligned and positioned inside the container based on its content. If you use `Badge` control without `BadgeContainer`, alignment and positioning options are not applicable.
 
 {% tabs %}
 {% highlight C# %}
@@ -384,18 +382,18 @@ badge.Content = "99+";
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
 
-N> If you want to apply your own customized colors for the background of `Badge`, refer the [Custom colors for displaying the badges](https://help.syncfusion.com/winui/badge/badge-customization#custom-colors-for-displaying-the-badges) page.
+N> If you want to apply your own customized colors for the background of `Badge`, refer the [Custom colors for displaying the badges](https://help.syncfusion.com/winui/badge/badge-customization#custom-colors-for-displaying-the-badge) page.
 
 ## Predefined shapes for displaying the Badge
 
-You can change the default shape to either `Rectangle`, `Oval` or `Ellipse` by using [Shape](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_Shape) property. If you want to display the `Badge` content without any default shapes , use the `Shape` property value as `None`. The default value of `Shape` property is `Ellipse`.
+You can change the default shape to either `Rectangle`, `Oval` or `Ellipse` by using [Shape](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_Shape) property. If you want to display the `Badge` content without any default shapes , use the `Shape` property value as `None`. The default value of `Shape` property is `Oval`.
 
 {% tabs %}
 {% highlight XAML %}
 
 <notification:BadgeContainer Name="badgeContainer"  >
     <notification:BadgeContainer.Badge>
-        <notification:SfBadge Shape="Oval"
+        <notification:SfBadge Shape="Ellipse"
                               Content="99+"
                               Name="badge"/>
     </notification:BadgeContainer.Badge>
@@ -408,7 +406,7 @@ You can change the default shape to either `Rectangle`, `Oval` or `Ellipse` by u
 {% endhighlight %}
 {% highlight C# %}
 
-badge.Shape = BadgeShape.Oval;
+badge.Shape = BadgeShape.Ellipse;
 badge.Content = "99+";
 
 {% endhighlight %}
