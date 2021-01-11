@@ -23,7 +23,7 @@ The following code example explains the positioning of data markers in the middl
 
 {% highlight xaml %}
 
-<syncfusion:ChartDataMarker ShowMarker="True" DataMarkerPosition="TopAndBottom" MarkerInterior="DarkGray" MarkerType="Ellipse">
+<syncfusion:ChartDataMarker ShowMarker="True" DataMarkerPosition="TopAndBottom" MarkerInterior="#1E88E5" MarkerType="Ellipse">
 </syncfusion:ChartDataMarker>
 
 {% endhighlight %}
@@ -35,8 +35,8 @@ ChartDataMarker datamarker = new ChartDataMarker()
 {
     ShowMarker = true,
     MarkerType = ChartSymbol.Ellipse,
-    MarkerInterior = new SolidColorBrush(Colors.DarkGray),
-    DataMarkerPosition=DataMarkerPosition.TopAndBottom
+    MarkerInterior = "#1E88E5",
+    DataMarkerPosition = DataMarkerPosition.TopAndBottom
 };
 series.DataMarker = datamarker;
 
@@ -44,7 +44,7 @@ series.DataMarker = datamarker;
 
 {% endtabs %}
 
-![TopAndBottom DataMarker](DataMarkers_images/TopBottom.png)
+![TopAndBottom DataMarker](DataMarkers_images/datamarkerposition_topbottom.png)
 
 Also, you can define the label alignment using  [`HorizontalAlignment`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_HorizontalAlignment) and [`VerticalAlignment`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_VerticalAlignment) properties.
 
@@ -85,7 +85,7 @@ ChartDataMarker datamarker = new ChartDataMarker()
 
 | Column | Spline |
 |--|--|
-|![center Column](DataMarkers_images/Center_Column.png)|![center Series](DataMarkers_images/Center_Spline.png)|
+|![center Column](DataMarkers_images/labelposition_center_column.png)|![center Series](DataMarkers_images/labelposition_center_spline.png)|
 
 The following code sample illustrates the inner position of data marker labels,
 
@@ -111,7 +111,7 @@ ChartDataMarker datamarker = new ChartDataMarker()
 
 | Column | Spline |
 |--|--|
-|![Inner Column](DataMarkers_images/Inner_Column.png)|![Inner Series](DataMarkers_images/Inner_Spline.png)|
+|![Inner Column](DataMarkers_images/labelposition_inner_column.png)|![Inner Series](DataMarkers_images/labelposition_inner_spline.png)|
 
 
 The following code sample illustrates the outer position of data marker labels,
@@ -138,4 +138,4 @@ ChartDataMarker datamarker = new ChartDataMarker()
 
 | Column | Spline |
 |--|--|
-|![Outer Column](DataMarkers_images/Outer_Column.png)|![Outer Series](DataMarkers_images/Outer_Spline.png)|
+|![Outer Column](DataMarkers_images/labelposition_outer_column.png)|![Outer Series](DataMarkers_images/labelposition_outer_spline.png)|
