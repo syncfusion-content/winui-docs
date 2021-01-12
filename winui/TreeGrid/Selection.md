@@ -42,7 +42,7 @@ You can disable selection and navigation on particular column by setting the [Gr
 
 ## Multiple row selection
 
-The tree grid allows you select multiple rows by setting the `SelectionMode` property to `Extended` or `Multiple`, where you can select multiple rows by dragging the mouse on tree grid and also using the key modifiers.
+The tree grid allows you select multiple rows by setting the `SelectionMode` property to `Extended` or `Multiple`, where you can select multiple rows by mouse click and also using the key modifiers.
 
 When using `Extended`, you can select multiple rows by pressing the key modifiers `Ctrl` and `Shift`.
 
@@ -108,7 +108,7 @@ var viewModel = this.sfTreeGrid.DataContext as ViewModel;
 
 foreach (var order in viewModel.PersonDetails)
 {
-        if (order.LastName == "Buchanan")
+    if (order.LastName == "Buchanan")
         this.sfTreeGrid.SelectedItems.Add(order);
 }
 {% endhighlight %}
@@ -765,7 +765,6 @@ You can customize the default row selection behaviors by overriding the `TreeGri
 this.sfTreeGrid.SelectionController = new GridSelectionControllerExt(this.sfTreeGrid);
 public class GridSelectionControllerExt : TreeGridRowSelectionController
 {
-
     public GridSelectionControllerExt(SfTreeGrid treeGrid) : base(treeGrid)
     {
     }
@@ -804,9 +803,9 @@ protected override void ProcessPointerPressed(PointerRoutedEventArgs args, RowCo
 {
     var properties = args.GetCurrentPoint(TreeGrid).Properties;
     if (properties.IsRightButtonPressed)
-	{
+    {
         args.Handled = false;
-	}
+    }
     else
         base.ProcessPointerPressed(args, rowColumnIndex);
 }
@@ -885,6 +884,8 @@ private void TextBox_TextChanged(object sender, System.Windows.Controls.TextChan
 {% endhighlight %}
 {% endtabs %}
 
+N> View sample in [GitHub]()
+
 ### Read cell values from selected items
 
 You can get the cell values of `SelectedItems` using `SfTreeGrid.SelectedItems` and internal reflector, which reflects the field value from data object based on field name.
@@ -917,11 +918,11 @@ The `Row`/`Cell` selection border is behind the grid cell content. So, when you 
 {% tabs %}
 {% highlight xaml %}
 <Style TargetType="syncfusion:TreeGridCell">
-            <Setter Property="Background">
-                <Setter.Value>
-                    <SolidColorBrush Color="Blue" Opacity="0.5"/>
-                </Setter.Value>
-</Setter>
+    <Setter Property="Background">
+        <Setter.Value>
+            <SolidColorBrush Color="Blue" Opacity="0.5"/>
+        </Setter.Value>
+    </Setter>
 </Style>
 {% endhighlight %}
 {% endtabs %}
