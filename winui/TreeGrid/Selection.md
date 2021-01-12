@@ -884,7 +884,7 @@ private void TextBox_TextChanged(object sender, System.Windows.Controls.TextChan
 {% endhighlight %}
 {% endtabs %}
 
-N> View sample in [GitHub]()
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-search-and-select-the-record-in-winui-treegrid)
 
 ### Read cell values from selected items
 
