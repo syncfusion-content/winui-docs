@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Types | TreeGrid | WinUI | Syncfusion
-description: How to use different column types in SfTreeGrid.
+description: Learn about different column types support (Text, ComboBox, CheckBox and so on) in Syncfusion WinUI TreeGrid (SfTreeGrid) control and more details.
 platform: winui
 control: SfTreeGrid
 documentation: ug
