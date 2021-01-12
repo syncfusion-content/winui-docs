@@ -15,10 +15,12 @@ SfTreeGrid allows you to sort the data against one or more columns either in asc
 {% highlight xaml %}
 
 <syncfusion:SfTreeGrid Name="treeGrid"
-					   AllowSorting="True"
-					   AutoExpandMode="RootNodesExpanded"    
-					   ChildPropertyName="Children"
-					   ItemsSource="{Binding EmployeeDetails}">
+                       AllowSorting="True"					   
+                       AutoExpandMode="RootNodesExpanded"					   
+                       ChildPropertyName="Children"					   
+                       ItemsSource="{Binding EmployeeDetails}">					   
+</syncfusion:SfTreeGrid>					   
+					   	   
 {% endhighlight %}
 {% highlight c# %}
 
@@ -33,17 +35,16 @@ In another way, you can enable or disable the sorting for particular column by s
 {% highlight xaml %}
 
 <syncfusion:SfTreeGrid Name="treeGrid"
-				       AllowSorting="False"
-					   AutoGenerateColumns="False"
-					   AutoExpandMode="RootNodesExpanded"                    
-					   ChildPropertyName="Children"                  
-					   ItemsSource="{Binding EmployeeDetails}">
-	<syncfusion:SfTreeGrid.Columns>
-                <syncfusion:TreeGridTextColumn HeaderText="First Name" AllowSorting="True" MappingName="FirstName" />
-                <syncfusion:TreeGridTextColumn HeaderText="Last Name" AllowSorting="False" MappingName="LastName" />
-				<syncfusion:TreeGridTextColumn HeaderText="Employee ID" MappingName="EmployeeID" TextAlignment="Right" />
-				<syncfusion:TreeGridTextColumn HeaderText="City" MappingName="City" />
-	</syncfusion:SfTreeGrid.Columns>
+                       AllowSorting="True"
+                       AutoExpandMode="RootNodesExpanded"
+                       ChildPropertyName="Children"
+                       ItemsSource="{Binding EmployeeDetails}">
+    <syncfusion:SfTreeGrid.Columns>
+        <syncfusion:TreeGridTextColumn HeaderText="First Name" AllowSorting="True" MappingName="FirstName" />
+        <syncfusion:TreeGridTextColumn HeaderText="Last Name" AllowSorting="False" MappingName="LastName" />
+        <syncfusion:TreeGridTextColumn HeaderText="Employee ID" MappingName="EmployeeID" TextAlignment="Right" />
+        <syncfusion:TreeGridTextColumn HeaderText="City" MappingName="City" />
+    </syncfusion:SfTreeGrid.Columns>
 </syncfusion:SfTreeGrid>
 	
 {% endhighlight %}
@@ -69,12 +70,13 @@ By default, column gets sorted when column header clicked. You can change this b
 {% highlight xaml %}
 
 <syncfusion:SfTreeGrid Name="treeGrid"
-					   AllowSorting="True"
-					   SortClickAction="DoubleClick"
-					   AutoExpandMode="RootNodesExpanded"                    
-					   ChildPropertyName="Children"                  
-					   ItemsSource="{Binding EmployeeDetails}">
-							   
+                       AllowSorting="True"
+                       AutoExpandMode="RootNodesExpanded"
+                       SortClickAction="DoubleClick"					   
+                       ChildPropertyName="Children"					   
+                       ItemsSource="{Binding EmployeeDetails}">					   
+</syncfusion:SfTreeGrid>					   
+					   							   
 {% endhighlight %}
 {% highlight c# %}
 
@@ -109,11 +111,12 @@ It is also possible to display sorted order of columns in header by setting [SfT
 {% highlight xaml %}
 
 <syncfusion:SfTreeGrid Name="treeGrid"
-					   AllowSorting="True"
-					   ShowSortNumbers="True"
-					   AutoExpandMode="RootNodesExpanded"                    
-					   ChildPropertyName="Children"                  
-					   ItemsSource="{Binding EmployeeDetails}">
+                       AllowSorting="True"
+                       AutoExpandMode="RootNodesExpanded"
+                       ShowSortNumbers="True"
+                       ChildPropertyName="Children"
+                       ItemsSource="{Binding EmployeeDetails}">
+</syncfusion:SfTreeGrid>
 						
 {% endhighlight %}
 {% highlight c# %}
@@ -137,14 +140,14 @@ N> [SfTreeGrid.SortColumnChanging](https://help.syncfusion.com/cr/winui/Syncfusi
 {% highlight xaml %}
 
 <syncfusion:SfTreeGrid Name="treeGrid"
-					   AllowSorting="True"
-					   AutoExpandMode="RootNodesExpanded"                    
-					   ChildPropertyName="Children"                  
-					   ItemsSource="{Binding EmployeeDetails}">
-            <syncfusion:SfTreeGrid.SortColumnDescriptions>
-                <sync:SortColumnDescription ColumnName="FirstName" SortDirection="Ascending" />
-                <sync:SortColumnDescription ColumnName="EmployeeID" SortDirection="Descending"/>
-            </syncfusion:SfTreeGrid.SortColumnDescriptions>
+                       AllowSorting="True"
+                       AutoExpandMode="RootNodesExpanded"
+                       ChildPropertyName="Children"
+                       ItemsSource="{Binding EmployeeDetails}">
+    <syncfusion:SfTreeGrid.SortColumnDescriptions>
+        <sync:SortColumnDescription ColumnName="FirstName" SortDirection="Ascending" />
+        <sync:SortColumnDescription ColumnName="EmployeeID" SortDirection="Descending"/>
+    </syncfusion:SfTreeGrid.SortColumnDescriptions>
 </syncfusion:SfTreeGrid>
 
 {% endhighlight %}
