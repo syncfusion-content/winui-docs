@@ -7,7 +7,7 @@ control: SfDropDownColorPicker
 documentation: ug
 ---
 
-# Getting Started with WinUI DropDownColorPicker
+# Getting Started with WinUI DropDown ColorPicker
 
 This section explains the steps required to add the [DropDownColorPicker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownColorPicker.html) control and its color options such as gradient colors and RGB, HSV , HSL, CMYK and Hexadecimal solid color editors.
 
@@ -15,7 +15,7 @@ This section explains the steps required to add the [DropDownColorPicker](https:
 
 ![Structure of WinUI DropDown ColorPicker control](Getting-Started_images/Structure1.jpg)
 
-## Creating an application with WinUI DropDownColorPicker
+## Creating an application with WinUI DropDown Color Picker
 
 1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
 2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
@@ -67,7 +67,7 @@ namespace GettingStarted
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/DropDown_ColorPicker)
 
-## Select solid color brush programmatically
+## Select solid brush programmatically
 
 You can select the solid color brush programmatically by setting the solid color brush value to the [SelectedBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownColorPicker.html#Syncfusion_UI_Xaml_Editors_SfDropDownColorPicker_SelectedBrush) property. The default value of `SelectedBrush` property is `Blue`.
 
@@ -90,9 +90,9 @@ colorPicker.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/DropDown_ColorPicker)
 
-## Select solid color brush from dropdown ColorPicker
+## Select solid brush interactively
 
-You can select various solid color brush at runtime by selecting the color brush in color spectrum and clicking `OK` button.
+You can select various solid color brush at runtime by selecting the color brush from the color spectrum and clicking `OK` button.
 
 {% tabs %}
 {% highlight xaml %}
@@ -132,7 +132,7 @@ SfDropDownColorPicker sfDropDownColorPicker = new SfDropDownColorPicker();
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/DropDown_ColorPicker)
 
-## Change opacity of solid color brush
+## Change opacity of solid brush
 
 You can change opacity of the selected solid color brush by using the A-Alpha value editor or delicate slider in the `DropDownColorPicker`.
 
@@ -153,7 +153,7 @@ SfDropDownColorPicker sfDropDownColorPicker  new SfDropDownColorPicker();
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/DropDown_ColorPicker)
 
-## Hexadecimal solid color brush value editor
+## Hexadecimal editor
 
 You can select a solid color brush by entering the hexadecimal color value to the hexadecimal value editor. You can also get the selected color hexadecimal value by using the hexadecimal value editor.
 
