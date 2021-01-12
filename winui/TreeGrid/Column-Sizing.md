@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Sizing | TreeGrid | WinUI | Syncfusion
-description: Column Sizing
+description: Column Sizing for WinUI TreeGrid
 platform: winui
 control: SfTreeGrid
 documentation: ug
