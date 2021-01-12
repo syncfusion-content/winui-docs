@@ -7,7 +7,7 @@ control: SfTreeGrid
 documentation: ug
 ---
 
-# Column Sizing
+# Column Sizing in WinUi TreeGrid
 
 SfTreeGrid allows you to set the column widths based on certain logic using [SfTreeGrid.ColumnWidthMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ColumnWidthMode) or [TreeGridColumn.ColumnSizer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ColumnSizer) property. 
 
@@ -108,7 +108,7 @@ Below code, applies `GridLengthUnitType.Star` to equally set width for `SfTreeGr
 {% endhighlight %}
 {% endtabs %}
 
-![Columns with Start width in WinUI SfTreeGrid](Column-Sizing-imagesColumn-Sizing-img1.png)
+![Columns with Start width in WinUI SfTreeGrid](Column-Sizing-images/Column-Sizing-img1.png)
 
 N> The `TreeGridColumn.ColumnSizer` takes higher priority than the `SfTreeGrid.ColumnWidthMode`.
 

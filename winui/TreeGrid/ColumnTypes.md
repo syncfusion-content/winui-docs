@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Column Types
+# Column Types WinUI TreeGrid
 
 SfTreeGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data. 
 You can also add or override existing columns and renderers as you need.
@@ -118,7 +118,7 @@ public class DisplayBindingConverter : IValueConverter
 
 In the below screenshot, `Salary` column display value is formatted to currency by setting `DisplayBinding` property.
 
-![](ColumnTypes-images/ColumnTypes-img1.png)
+![](Column-Type-images/ColumnTypes-img1.png)
 
 By default, Columns handling the data operations (sorting) based on `MappingName` property.
 
@@ -170,7 +170,7 @@ In the below code snippet, `TreeGridTextColumn` is loaded with `ProgressBar` and
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes-images/ColumnTypes-img2.png)
+![](Column-Type-images/ColumnTypes-img2.png)
 
 
 `CellTemplate` is not support by [TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html) and [TreeGridCheckboxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html) columns.
@@ -221,7 +221,7 @@ You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/win
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes-images/ColumnTypes-img3.png)
+![](Column-Type-images/ColumnTypes-img3.png)
 
 #### Setting CellTemplate based on custom logic using TemplateSelector
 
@@ -293,127 +293,7 @@ In the below code, the custom template selector set to `TreeGridColumn.CellTempl
 
 N> Non-Editable columns does not support `CellTemplate`.
 
-![](ColumnTypes-images/ColumnTypes-img4.png)
-
-#### Binding ViewModel properties with CellTemplate
-
-You can bind properties in ViewModel with the controls in CellTemplate.
- 
-Below command defined in ViewModel is bound to `Button` inside `CellTemplate`. Below code, denote the base command.
-
-{% tabs %}
-{% highlight c# %}
-public class BaseCommand : ICommand
-{
-    #region Fields
-    readonly Action<object> _execute;
-    readonly Predicate<object> _canExecute;
-    public event EventHandler CanExecuteChanged;
-    #endregion
-
-    #region Constructors
-    /// <summary>
-    /// Creates a new command that always execute.
-    /// </summary>
-    /// <param name="execute">The execution logic.</param>
-
-    public BaseCommand(Action<object> execute)
-        : this(execute, null)
-    {
-    }
-    /// <summary>
-    /// Creates a new command.
-    /// </summary>
-    /// <param name="execute">The execution logic.</param>
-    /// <param name="canExecute">The execution status logic.</param>
-
-    public BaseCommand(Action<object> execute, Predicate<object> canExecute)
-    {
-
-        if (execute == null)
-            throw new ArgumentNullException("execute");
-        _execute = execute;
-        _canExecute = canExecute;
-    }
-
-    #endregion        
-    bool ICommand.CanExecute(object parameter)
-    {
-        return _canExecute == null ? true : _canExecute(parameter);
-    }
-
-    void ICommand.Execute(object parameter)
-    {
-        _execute(parameter);
-    }                
-}
-{% endhighlight %}
-{% endtabs %}
-
-Below code, defines the command for `Button` in `ViewModel`.
-
-{% tabs %}
-{% highlight c# %}
-public class ViewModel
-{    
-    private BaseCommand deleteRecord;
-
-    public BaseCommand DeleteRecord
-    {
-        get
-        {
-
-            if (deleteRecord == null)
-                deleteRecord = new BaseCommand(OnDeleteRecordClicked, OnCanDelete);
-            return deleteRecord;
-        }
-    }
-
-    private static bool OnCanDelete(object obj)
-    {
-        return true;
-    }
-
-    private void OnDeleteRecordClicked(object obj)
-    {
-
-        //TODO ACTION.
-    }
-}
-{% endhighlight %}
-{% endtabs %}
-
-In the below code, Button inside CellTemplate bound to the command in ViewModel. 
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"
-                        AutoExpandMode="AllNodesExpanded"
-                        ChildPropertyName="ReportsTo"
-                        ItemsSource="{Binding Employees}"
-                        ParentPropertyName="ID">
-    <syncfusion:SfTreeGrid.Columns>
-        <syncfusion:TreeGridTextColumn HeaderText="ID" MappingName="ID">
-            <syncfusion:TreeGridTextColumn.CellTemplate>
-                <DataTemplate>
-                    <Button Command="{Binding DeleteRecord,
-                                        Source={StaticResource viewModel}}"
-                            CommandParameter="{Binding}" 
-                            HorizontalAlignment="Stretch" 
-                            VerticalAlignment="Stretch"
-                            Content="Delete" />
-                                   <!--or-->
-                     <Button Command="{Binding DataContext.DeleteRecord,
-                                              ElementName=treeGrid}"
-                                     CommandParameter="{Binding}"
-                                     Content="Delete" />
-                </DataTemplate>
-            </syncfusion:TreeGridTextColumn.CellTemplate>
-        </syncfusion:TreeGridTextColumn>
-    </syncfusion:SfTreeGrid.Columns>
-</syncfusion:SfTreeGrid>
-{% endhighlight %}
-{% endtabs %}
+![](Column-Type-images/ColumnTypes-img4.png)
 
 ### Data Formatting
 
@@ -482,7 +362,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img5.png)
+![](Column-Type-images/ColumnTypes_img5.png)
 
 
 ### Styling TreeGridColumn
@@ -556,7 +436,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes-images/ColumnTypes-img6.png)
+![](Column-Type-images/ColumnTypes-img6.png)
 
 #### Styles based on custom logic
 
@@ -641,7 +521,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes-images/ColumnTypes-img7.png)
+![](Column-Type-images/ColumnTypes-img7.png)
 
 ### UI Interaction
 
@@ -702,7 +582,7 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes-images/ColumnTypes-img8.png)
+![](Column-Type-images/ColumnTypes-img8.png)
 
 ## TreeGridTextColumn
 
@@ -746,7 +626,7 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", 
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes-images/ColumnTypes-img9.png)
+![](Column-Type-images/ColumnTypes-img9.png)
 
 ## TreeGridCheckBoxColumn
 
@@ -782,7 +662,7 @@ treeGrid.Columns.Add(new TreeGridCheckBoxColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes-images/ColumnTypes-img10.png)
+![](Column-Type-images/ColumnTypes-img10.png)
 
 `TreeGridCheckBoxColumn` allows you to customize check box state and its alignment.
 
@@ -945,7 +825,7 @@ In the below code, custom template selector set to `TreeGridTemplateColumn.EditT
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes-images/ColumnTypes-img11.png)
+![](Column-Type-images/ColumnTypes-img11.png)
 
 
 ## TreeGridComboBoxColumn
@@ -980,7 +860,7 @@ SfTreeGrid triggers, `CurrentCellDropDownSelectionChanged` event, when the Selec
 
 `SelectedItem**`** property returns the selected item from drop down list.
 
-![](ColumnTypes_images/ColumnTypes_img27.png)
+![](Column-Type-images/ColumnTypes_img27.png)
 
 ### Improving dropdown opening time
 
@@ -1052,7 +932,7 @@ treeGrid.Columns.Add(new TreeGridHyperlinkColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes-images/ColumnTypes-img13.png)
+![](Column-Type-images/ColumnTypes-img13.png)
 
 
 
@@ -1105,7 +985,7 @@ You can change the foreground color of `TreeGridHyperlinkColumn` by writing the 
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes-images/ColumnTypes-img14.png)
+![](Column-Type-images/ColumnTypes-img14.png)
 
 ### Customize column renderer
 
@@ -1209,7 +1089,7 @@ public class TreeGridCellTextBoxRendererExt : TreeGridCellTextBoxRenderer
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes-images/ColumnTypes-img15.png)
+![](Column-Type-images/ColumnTypes-img15.png)
 
 
 ## How To
