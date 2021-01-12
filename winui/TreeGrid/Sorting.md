@@ -203,7 +203,7 @@ In the below code snippet, `FirstName` property is compared based on its string 
 {% tabs %}
 {% highlight c# %}
 
-public class CustomSortComparer : IComparer<object>, ISortDirection
+public class CustomSortComparer : IComparer<object>
 {
 
 	public int Compare(object x, object y)
