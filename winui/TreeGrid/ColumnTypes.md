@@ -212,7 +212,6 @@ You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/win
                                 HeaderText="Last Name"
                                 MappingName="LastName"
                                 SetCellBoundValue="True" />
-    <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
         <syncfusion:TreeGridTextColumn MappingName="Title" />
         <syncfusion:TreeGridTextColumn MappingName="Salary"/>
         <syncfusion:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
@@ -233,19 +232,16 @@ For example, two different templates loaded alternatively in `Salary` column.
 {% highlight xaml %}
 <Application.Resources>
     <local:CustomCellTemplateSelector x:Key="cellTemplateSelector" />
-
     <DataTemplate x:Key="DefaultTemplate">
         <TextBlock Foreground="Red"
                     Text="{Binding Path=Salary}"
                     TextAlignment="Center" />
     </DataTemplate>
-
     <DataTemplate x:Key="AlternateTemplate">
         <TextBlock Foreground="Green"
                     Text="{Binding Path=Salary}"
                     TextAlignment="Center" />
-    </DataTemplate>
-        
+    </DataTemplate>      
 </Application.Resources>
 {% endhighlight %}
 {% endtabs %}
