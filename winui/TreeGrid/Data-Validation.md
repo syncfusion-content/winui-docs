@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data Validation support in SfTreeGrid.
-description: How to validate the data in SfTreeGrid.
+title: Data Validation | TreeGrid | WinUI | Syncfusion
+description: Learn how to validate the data in Syncfusion WinUI TreeGrid ( SfTreeGrid ) control and more details.
 platform: winui
 control: SfTreeGrid
 documentation: ug
 ---
 
 
-# Data Validation
+# Data Validation in WinUI TreeGrid (SfTreeGrid)
 
 SfTreeGrid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [TreeGridCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCell.html). When mouse over the error icon, error information will be displayed in tooltip.
 
@@ -79,7 +79,7 @@ treeGrid.DataValidationMode = GridValidationMode.InView;
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img1.png)
+![Displaying validation based on conditions in WinUI SfTreeGrid using INotifyDataErrorInfo](Data-Validation_images/Data-Validation_img1.png)
 
 ### Built-in validation using Data Annotation
 
@@ -301,7 +301,7 @@ You can change the validation error template shape of the `TreeGridCell` by ch
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img2.png)
+![Displaying changed validation error icon WinUI SfTreeGrid](Data-Validation_images/Data-Validation_img2.png)
 
 #### Change the color of error icon
 
@@ -424,7 +424,7 @@ You can change the validation error template color of the `TreeGridCell` by cha
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img3.png)
+![Displaying changed validation error icon color WinUI SfTreeGrid](Data-Validation_images/Data-Validation_img3.png)
 
 ### Customizing error tip
 
@@ -515,7 +515,7 @@ You can change the error tip background color by setting `Background` property o
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img4.png)
+![Displaying changed validation error tooltip WinUI SfTreeGrid](Data-Validation_images/Data-Validation_img4.png)
 
 ### Showing error details in RowHeader
 
@@ -542,4 +542,4 @@ public bool HasErrors
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img5.png)
+![Displaying validation in rowheader WinUI SfTreeGrid](Data-Validation_images/Data-Validation_img5.png)

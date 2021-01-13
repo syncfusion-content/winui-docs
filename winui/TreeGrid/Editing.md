@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing support in SfTreeGrid.
-description: How to edit the data in each cell of SfTreeGrid
+title: Editing support | TreeGrid | WinUI | Syncfusion
+description: Learn how to edit the data in each cell of Syncfusion WinUI TreeGrid (SfTreeGrid) control and more details.
 platform: winui
 control: SfTreeGrid
 documentation: ug
