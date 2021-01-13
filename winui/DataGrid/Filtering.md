@@ -243,11 +243,11 @@ You can skip the `GridFilterControl` styling for particular column from `SfDataG
 
 {% tabs %}
 {% highlight xaml %}
-<Window.Resources>
+<Page.Resources>
     <Style x:Key="filterControlStyle" TargetType="syncfusion:GridFilterControl">
         <Setter Property="FilterMode" Value="AdvancedFilter" />
     </Style>
-</Window.Resources> 
+</Page.Resources> 
 
 <syncfusion:SfDataGrid Name="sfDataGrid"
                        AllowFiltering="True"
@@ -481,6 +481,7 @@ In UI filtering, records are filtered based on actual value by default. If you w
 
 {% tabs %}
 {% highlight xaml %}
+
 xmlns:coreconverter="using:Syncfusion.UI.Xaml.Core.Converters"
 
 <Page.Resources>
@@ -491,7 +492,7 @@ xmlns:coreconverter="using:Syncfusion.UI.Xaml.Core.Converters"
                            HeaderText="Order Date" MappingName="OrderDate"  />
 {% endhighlight %}
 {% highlight c# %}
-dataGrid.Columns["OrderDate"].ColumnFilter = ColumnFilter.DisplayText;
+sfDataGrid.Columns["OrderDate"].ColumnFilter = ColumnFilter.DisplayText;
 {% endhighlight %}
 {% endtabs %}
 
@@ -672,7 +673,7 @@ By default, the default filter created by [ICollectionView.Filter](https://help.
 
 ### Loading the Text Filters for the column having Number or Date value as underlying type
 
-If you want to use the Text Filters for the column that has number or date value as underlying type, you need to set `FilterBehavior` roperty of the `GridColumn` as `StringTyped`. This loads the Text Filters instead of Number or Date Filters.
+If you want to use the Text Filters for the column that has number or date value as underlying type, you need to set `FilterBehavior` property of the `GridColumn` as `StringTyped`. This loads the Text Filters instead of Number or Date Filters.
 
 {% tabs %}
 {% highlight xaml %}
