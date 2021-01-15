@@ -51,17 +51,6 @@ bool isFilterRowIndex = this.sfDataGrid.IsFilterRowIndex(1);
 ## Built-in Editors
 
 By default, FilterRow loads the editors based on underlying property type to filter the data easily. You can change the default editors by using [GridColumn.FilterRowEditorType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_FilterRowEditorType) property.
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:GridTextColumn MappingName="CustomerName"
-                           FilterRowEditorType="Numeric"/>
-{% endhighlight %}
-{% highlight c# %}
-this.sfDataGrid.Columns[2].FilterRowEditorType = "Numeric";
-{% endhighlight %}
-{% endtabs %}
-
-![WinUI DataGrid filter row cell with multi select combobox](FilterRow_images/FilterRow_img2.png)
 
 Below are the built-in FilterRow editor types supported in SfDataGrid. 
 <table>
@@ -228,7 +217,7 @@ this.sfDataGrid.Columns[0].FilterRowCondition = FilterRowCondition.LessThanOrEqu
 ## Filtering null values
 
 You can enable or disable filtering of null values by setting [GridColumn.AllowBlankFilters](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_AllowBlankFilters) property. The default value is `true`.
-When null value filtering is enabled, the filter options loaded with two additional options (“Null” and “Not Null”) to filter the null values. ComboBox and MultiSelectComboBox editors, loads with “Blanks” item in drop down to filter the null values. 
+When null value filtering is enabled, the filter options loaded with two additional options (“Null” and “Not Null”) to filter the null values.
 
 {% tabs %}
 {% highlight xaml %}
@@ -241,20 +230,20 @@ this.sfDataGrid.Columns[0].AllowBlankFilters = false;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid filter row handles null value](FilterRow_images/FilterRow_img5.png)
+![WinUI DataGrid loads numeric in filter row cell](FilterRow_images/FilterRow_img5.png)
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:GridTextColumn MappingName="CustomerName"
+<syncfusion:GridTextColumn MappingName="OrderID"
                            AllowBlankFilters="True"
                            FilterRowEditorType="Numeric"/>
 {% endhighlight %}
 {% highlight c# %}
-this.dataGrid.Columns[2].AllowBlankFilters = true;
+this.dataGrid.Columns[0].AllowBlankFilters = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid loads numeric in filter row cell](FilterRow_images/FilterRow_img6.png)
+![WinUI DataGrid filter row handles null value](FilterRow_images/FilterRow_img6.png)
 
 ## Instant Filtering
 
