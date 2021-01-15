@@ -17,7 +17,7 @@ Keyboard navigation through the rows is determined based on the [NavigationMode]
 
 ## Selection modes
 
-The [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectionMode) property defines the behavior of selection in tree grid. If SelectionMode is [Single](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionMode.html#Syncfusion_UI_Xaml_Grids_GridSelectionMode_Single), you can select a single row, and if the SelectionMode is [Extended](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionMode.html#Syncfusion_UI_Xaml_Grids_GridSelectionMode_Extended) or [Multiple](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionMode.html#Syncfusion_UI_Xaml_Grids_GridSelectionMode_Multiple), you can select multiple rows. If you want to disable the selection, set SelectionMode to [None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionMode.html#Syncfusion_UI_Xaml_Grids_GridSelectionMode_None).
+The [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectionMode) property defines the behavior of selection in tree grid. If `SelectionMode` is [Single](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionMode.html#Syncfusion_UI_Xaml_Grids_GridSelectionMode_Single), you can select a single row, and if the `SelectionMode` is [Extended](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionMode.html#Syncfusion_UI_Xaml_Grids_GridSelectionMode_Extended) or [Multiple](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionMode.html#Syncfusion_UI_Xaml_Grids_GridSelectionMode_Multiple), you can select multiple rows. If you want to disable the selection, set `SelectionMode` to [None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionMode.html#Syncfusion_UI_Xaml_Grids_GridSelectionMode_None).
 
 {% tabs %}
 {% highlight xaml %}
@@ -132,7 +132,7 @@ this.sfTreeGrid.SelectRows(3, 7);
 
 ### Process current cell
 
-When you set [CurrentItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentItem) to a particular record, the [CurrentCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellManager_CurrentCell) will be moved to the corresponding record. When `SelectionMode` is `Multiple` or `Extended`, the selection will added to a particular record item. When SelectionMode is `Single`, the selection will added to a single cell.
+When you set [CurrentItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentItem) to a particular record, the [CurrentCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellManager_CurrentCell) will be moved to the corresponding record. When `SelectionMode` is `Multiple` or `Extended`, the selection will added to a particular record item. When `SelectionMode` is `Single`, the selection will added to a single cell.
 
 You can move the `CurrentCell` to a particular rowColumnIndex using the [MoveCurrentCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowSelectionController_MoveCurrentCell_Syncfusion_UI_Xaml_Grids_ScrollAxis_RowColumnIndex_System_Boolean_) method.
 
@@ -215,7 +215,7 @@ this.sfTreeGrid.ScrollInView(new RowColumnIndex(rowIndex, columnIndex));
 
 </td>
 <td>
-Moves CurrentCell directly below the active current cell. If the CurrentCell is in the last row, pressing the Down arrow does nothing.
+Moves CurrentCell directly below the active current cell. If the CurrentCell is in the last row, pressing the <kbd>DownArrow</kbd> does nothing.
 </td>
 </tr>
 <tr>
@@ -224,7 +224,7 @@ Moves CurrentCell directly below the active current cell. If the CurrentCell is 
 
 </td>
 <td>
-Moves the CurrentCell directly above the active current cell. If the CurrentCell is in the first row, pressing the Up arrow does nothing.
+Moves the CurrentCell directly above the active current cell. If the CurrentCell is in the first row, pressing the <kbd>UpArrow</kbd> does nothing.
 </td>
 </tr>
 <tr>
@@ -233,7 +233,7 @@ Moves the CurrentCell directly above the active current cell. If the CurrentCell
 
 </td>
 <td>
-Moves the current cell to previous to the active current cell. If the CurrentCell is in the first cell, pressing the Left arrow does nothing. If the focused row is group header, the group will be collapsed when it is in expanded state.
+Moves the current cell to previous to the active current cell. If the CurrentCell is in the first cell, pressing the <kbd>LeftArrow</kbd> does nothing. If the focused row is group header, the group will be collapsed when it is in expanded state.
 </td>
 </tr>
 <tr>
@@ -242,7 +242,7 @@ Moves the current cell to previous to the active current cell. If the CurrentCel
 
 </td>
 <td>
-Moves the current cell to next to the active current cell. If the CurrentCell is in the last cell, pressing the Right arrow does nothing. If the focused row is group header, the group will be expanded when it is in collapsed state.
+Moves the current cell to next to the active current cell. If the CurrentCell is in the last cell, pressing the <kbd>RightArrow</kbd> does nothing. If the focused row is group header, the group will be expanded when it is in collapsed state.
 </td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ Commits only the changes when the current cell is in edit mode and retains the f
 </td>
 <td>
 If the {{'[TreeGrid.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowEditing)'| markdownify }} property is <kbd>true</kbd>, and the 
-{{'[GridColumn.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_AllowEditing)'| markdownify }} property is <kbd>true</kbd>true for the current column, the current cell enters into edit mode.
+{{'[GridColumn.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_AllowEditing)'| markdownify }} property is <kbd>true</kbd> for the current column, the current cell enters into edit mode.
 </td>
 </tr>
 <tr>
@@ -476,7 +476,7 @@ When `SelectionMode` is set to `Extended`, you can select multiple rows by click
 
 ### Customize mouse and keyboard behaviors
 
-You can customize the mouse and keyboard behaviors by overriding the selection controller. Refer to the [Customizing Selection Behaviors](https://help.syncfusion.com/winui/treegrid/selection#customizing-selection-behaviors) section to learn about override the selection controller.
+You can customize the mouse and keyboard behaviors by overriding the selection controller. Refer to the [Customizing Selection Behaviors](https://help.syncfusion.com/winui/treegrid/selection#customize-selection-behaviors) section to learn about override the selection controller.
 
 ## Events
 
@@ -551,11 +551,11 @@ The [CurrentCellActivated](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 <syncfusion:SfTreeGrid Name="sfTreeGrid"                       
                        AutoExpandMode="RootNodesExpanded"
                        AutoGenerateColumns="False"                       
-					   ChildPropertyName="Children"
-			           ColumnSizer="Star" 
+                       ChildPropertyName="Children"
+                       ColumnSizer="Star" 
                        ExpanderColumn="FirstName"			           
                        CurrentCellActivated="sfTreeGrid_CurrentCellActivated"                                              
-					   ItemsSource="{Binding PersonDetails}"
+                       ItemsSource="{Binding PersonDetails}"
                        LiveNodeUpdateMode="AllowDataShaping">
 
 {% endhighlight %}
@@ -584,10 +584,10 @@ The [SelectionChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
                        AutoExpandMode="RootNodesExpanded"
                        AutoGenerateColumns="False"                     
                        ChildPropertyName="Children"
-			           ColumnSizer="Star" 
+                       ColumnSizer="Star" 
                        ExpanderColumn="FirstName"			           				  
                        SelectionChanging="sfTreeGrid_SelectionChanging"                       
-					   ItemsSource="{Binding PersonDetails}"	
+                       ItemsSource="{Binding PersonDetails}"	
                        LiveNodeUpdateMode="AllowDataShaping">
 
 {% endhighlight %}
@@ -617,10 +617,10 @@ The [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.T
                        AutoExpandMode="RootNodesExpanded"
                        AutoGenerateColumns="False"                   
                        ChildPropertyName="Children"
-			           ColumnSizer="Star" 
+                       ColumnSizer="Star" 
                        ExpanderColumn="FirstName"			           
                        SelectionChanged="sfTreeGrid_SelectionChanged"                       
-					   ItemsSource="{Binding PersonDetails}"					   
+                       ItemsSource="{Binding PersonDetails}"					   
                        LiveNodeUpdateMode="AllowDataShaping">
 
 {% endhighlight %}
@@ -648,9 +648,9 @@ You can change the selection background and foreground using the [SelectionBackG
                                            AutoGenerateColumns="False"
                                            SelectionMode="Multiple"
                                            ChildPropertyName="Children"
-			                               ColumnSizer="Star" 
+                                           ColumnSizer="Star" 
                                            ExpanderColumn="FirstName"
-			                               ItemsSource="{Binding PersonDetails}"
+                                           ItemsSource="{Binding PersonDetails}"
                                            SelectionBackground="SkyBlue"                                                    
                                            SelectionForeground="DarkBlue"
                                          >
@@ -670,9 +670,9 @@ You can change the current cell border thickness and border color using the [Cur
                                            AutoGenerateColumns="False"
                                            SelectionMode="Multiple"
                                            ChildPropertyName="Children"
-			                               ColumnSizer="Star" 
+                                           ColumnSizer="Star" 
                                            ExpanderColumn="FirstName"
-			                               ItemsSource="{Binding PersonDetails}"
+                                           ItemsSource="{Binding PersonDetails}"
                                            LiveNodeUpdateMode="AllowDataShaping"                                           
                                            CurrentCellBorderBrush="Red"
                                            CurrentCellBorderThickness="1.6"
