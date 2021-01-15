@@ -70,7 +70,7 @@ Below are the built-in FilterRow editor types supported in SfDataGrid.
 </tr>
 <tr>
 <td>
-TextBox / Numeric
+TextBox
 </td>
 <td>
 TextBox
@@ -80,6 +80,20 @@ TextBox
 </td>
 <td>
 Used for filtering the string values.
+</td>
+</tr>
+<tr>
+<td>
+Numeric
+</td>
+<td>
+TextBox
+</td>
+<td>
+{{'[GridFilterRowTextBoxRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.RowFilter.GridFilterRowTextBoxRenderer.html)'| markdownify }}
+</td>
+<td>
+Used for filtering the numeric values.
 </td>
 </tr>
 <tr>
