@@ -126,9 +126,6 @@ Below are the filter conditions supported by different filter row editors in SfD
 {{'**TextBox Editor**'| markdownify }}
 </td>
 <td>
-{{'**DateTime Editor**'| markdownify }}
-</td>
-<td>
 {{'**CheckBox Editor**'| markdownify }}
 </td>
 </tr>
@@ -139,10 +136,6 @@ When integer, double, short, decimal, byte or long are bound to the {{'[GridCol
 </td>
 <td>
 When string value is bounded to the {{'[GridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html)'| markdownify }} or the items is dynamic, then <code>TextBox</code> editor type are loaded in {{'[FilterRowCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.RowFilter.GridFilterRowCellRenderer-2.html#Syncfusion_UI_Xaml_DataGrid_RowFilter_GridFilterRowCellRenderer_2_FilterRowCell)'| markdownify }}.
-
-</td>
-<td>
-When DateTime type is bounded to the {{'[GridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html)'| markdownify }}, then <code>DateTime</code> editor is loaded in {{'[FilterRowCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.RowFilter.GridFilterRowCellRenderer-2.html#Syncfusion_UI_Xaml_DataGrid_RowFilter_GridFilterRowCellRenderer_2_FilterRowCell)'| markdownify }}.
 
 </td>
 <td>
@@ -178,19 +171,6 @@ The default filter condition is Begins With, the below filter conditions are ava
 <li>Does Not Contain</li>
 <li>Empty</li>
 <li>Not Empty</li> 
-</ol>
-</td>
-<td>
-The default filter condition is Equals, the below filter conditions are available in date time filter.
-<ol>
-<li>Equals</li>
-<li>Does Not Equal</li>
-<li>Null</li>
-<li>Not Null</li>
-<li>Before</li>
-<li>Before or Equal</li>
-<li>After</li>
-<li>After or Equal</li>
 </ol>
 </td>
 <td>
@@ -260,7 +240,7 @@ this.sfDataGrid.Columns[2].ImmediateUpdateColumnFilter = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid Filter Row](FilterRow_images/FilterRow_img7.png)
+![WinUI DataGrid Filter Row with immediateupdatecolumnfilter](FilterRow_images/FilterRow_img7.png)
 
 ## Disable filtering for a particular FilterRowCell
 
