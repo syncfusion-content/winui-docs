@@ -70,7 +70,7 @@ Below are the built-in FilterRow editor types supported in SfDataGrid.
 </tr>
 <tr>
 <td>
-TextBox
+TextBox / Numeric
 </td>
 <td>
 TextBox
