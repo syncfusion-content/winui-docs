@@ -21,7 +21,7 @@ Built-in validations through INotifyDataErrorInfo and Data annotation attributes
 
 ### Built-in validation using INotifyDataErrorInfo
 
-You can validate the data by implementing the [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.data?view=winrt-19041) interface in model class.
+You can validate the data by implementing the [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?view=net-5.0) interface in model class.
 
 {% tabs %}
 {% highlight c# %}
