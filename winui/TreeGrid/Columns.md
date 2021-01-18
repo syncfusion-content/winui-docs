@@ -677,7 +677,7 @@ Each [StackedHeaderRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
         <syncfusion1:StackedHeaderRow>
             <syncfusion1:StackedHeaderRow.StackedColumns>
                 <syncfusion1:StackedColumn ChildColumns="FirstName,LastName" HeaderText="Employee Name" />
-                <syncfusion1:StackedColumn ChildColumns="ID,Title,Salary,ReportsTo" HeaderText="Designation Details" />
+                <syncfusion1:StackedColumn ChildColumns="ID,Title,ReportsTo" HeaderText="Designation Details" />
             </syncfusion1:StackedHeaderRow.StackedColumns>
         </syncfusion1:StackedHeaderRow>
     </syncfusion:SfTreeGrid.StackedHeaderRows>
@@ -686,8 +686,7 @@ Each [StackedHeaderRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
             <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
             <syncfusion:TreeGridTextColumn HeaderText="Employee ID" MappingName="ID" />
             <syncfusion:TreeGridTextColumn MappingName="Title" />
-            <syncfusion:TreeGridTextColumn MappingName="Salary" />
-            <syncfusion:TreeGridTextColumn MappingName="ReportsTo" />
+            <syncfusion:TreeGridTextColumn MappingName="ReportsTo" HeaderText = "Reports To" />
     </syncfusion:SfTreeGrid.Columns>
 </syncfusion:SfTreeGrid>
 	
@@ -698,14 +697,13 @@ Each [StackedHeaderRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 var stackedHeaderRow = new StackedHeaderRow();;
 stackedHeaderRow.StackedColumns.Add(new StackedColumn() { ChildColumns = "FirstName,LastName", HeaderText = "Employee Name" });
-stackedHeaderRow.StackedColumns.Add(new StackedColumn() { ChildColumns = "ID,Title,Salary,ReportsTo", HeaderText = "Designation Details" });
+stackedHeaderRow.StackedColumns.Add(new StackedColumn() { ChildColumns = "ID,Title,ReportsTo", HeaderText = "Designation Details" });
 this.treeGrid.StackedHeaderRows.Add(stackedHeaderRow);
 treeGrid.AutoGenerateColumns = false;
 treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", HeaderText = "First Name" });
 treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "LastName", HeaderText = "Last Name" });
 treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "ID", HeaderText = "Employee ID" });
 treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "Title" });
-treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "Salary" });
 treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "ReportsTo", HeaderText = "Reports To" });
 	
 {% endhighlight %}

@@ -131,35 +131,35 @@ In the below code snippet, `TreeGridTextColumn` is loaded with `ProgressBar` and
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"
-                AllowEditing="true"
-                ColumnWidthMode="Star"
-                AutoExpandMode="AllNodesExpanded"
-                AutoGenerateColumns="False"
-                ChildPropertyName="ReportsTo"
-                ItemsSource="{Binding Employees}"
-                ParentPropertyName="ID"
-                SelfRelationRootValue="-1" >
+                AllowEditing="True"
+        ColumnWidthMode="Star"
+        AutoExpandMode="AllNodesExpanded"
+        AutoGenerateColumns="False"
+        ChildPropertyName="ReportsTo"
+        ItemsSource="{Binding Employees}"
+        ParentPropertyName="ID"
+        SelfRelationRootValue="-1" >
     <syncfusion:SfTreeGrid.Columns>
-        <syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
-        <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
         <syncfusion:TreeGridTextColumn HeaderText="Employee ID" MappingName="ID" />
-        <syncfusion:TreeGridTextColumn MappingName="Title" />
+        <syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
+        <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName"   />
+        <syncfusion:TreeGridCheckBoxColumn HeaderText="Availability" MappingName="AvailabilityStatus" />
         <syncfusion:TreeGridTextColumn MappingName="Salary">
             <syncfusion:TreeGridTextColumn.CellTemplate>
                 <DataTemplate>
                     <Grid>
                         <ProgressBar x:Name="progressBar"
-                        Height="50"
-                        Background="Transparent"
-                        BorderThickness="0"
-                        Maximum="5000000"
-                        Minimum="0"
-                        Visibility="Visible"
-                        Value="{Binding Path=Salary}" />
+                Height="50"
+                Background="Transparent"
+                BorderThickness="0"
+                Maximum="5000000"
+                Minimum="0"
+                Visibility="Visible"
+                Value="{Binding Path=Salary}" />
                         <TextBlock HorizontalAlignment="Right"
-                    VerticalAlignment="Center"
-                    Text="{Binding Path=Salary}"
-                    TextAlignment="Center" />
+            VerticalAlignment="Center"
+            Text="{Binding Path=Salary, Converter={StaticResource converter}}"
+            TextAlignment="Center" />
                     </Grid>
                 </DataTemplate>
             </syncfusion:TreeGridTextColumn.CellTemplate>
@@ -167,6 +167,19 @@ In the below code snippet, `TreeGridTextColumn` is loaded with `ProgressBar` and
         <syncfusion:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
     </syncfusion:SfTreeGrid.Columns>
 </syncfusion:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+public class DisplayBindingConverter : IValueConverter
+{
+    public object Convert(object value, Type targetType, object parameter, string language)
+    {
+        return string.Format("{0:C2}", value);
+    }
+    public object ConvertBack(object value, Type targetType, object parameter, string language)
+    {
+        return value;
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -226,7 +239,7 @@ You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/win
 
 `TreeGridColumn` provides support to choose different[DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) based on underlying data object using [TreeGridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_CellTemplateSelector) property.  
 
-For example, two different templates loaded alternatively in `Salary` column. 
+For example, two different templates loaded alternatively in `ID` column. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -234,15 +247,15 @@ For example, two different templates loaded alternatively in `Salary` column.
     <local:CustomCellTemplateSelector x:Key="cellTemplateSelector" />
     <DataTemplate x:Key="DefaultTemplate">
         <TextBlock Foreground="Red"
-                    Text="{Binding Path=Salary}"
-                    TextAlignment="Center" />
+                Text="{Binding Path=ID}"
+                TextAlignment="Center" />
     </DataTemplate>
     <DataTemplate x:Key="AlternateTemplate">
         <TextBlock Foreground="Green"
-                    Text="{Binding Path=Salary}"
-                    TextAlignment="Center" />
-    </DataTemplate>      
-</Application.Resources>
+                Text="{Binding Path=ID}"
+                TextAlignment="Center" />
+    </DataTemplate>
+</Application.Resources>   
 {% endhighlight %}
 {% endtabs %}
 
@@ -250,7 +263,7 @@ Below code returns the `DefaultTemplate` and `AlternateTemplate` based on Salary
 
 {% tabs %}
 {% highlight c# %}
-public class CustomCellTemplateSelector:DataTemplateSelector
+public class CustomCellTemplateSelector : DataTemplateSelector
 {
 
     protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
@@ -260,7 +273,7 @@ public class CustomCellTemplateSelector:DataTemplateSelector
             return null;
         var data = item as EmployeeInfo;
 
-        if (data.Salary < 1000000)
+        if (data.ID < 10)
             return App.Current.Resources["AlternateTemplate"] as DataTemplate;
 
         else
@@ -275,13 +288,21 @@ In the below code, the custom template selector set to `TreeGridColumn.CellTempl
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"
-                        AutoExpandMode="AllNodesExpanded"
-                        ChildPropertyName="ReportsTo"
-                        ItemsSource="{Binding Employees}"
-                        ParentPropertyName="ID">
+        ColumnWidthMode="Star"
+        AutoExpandMode="AllNodesExpanded"
+        AutoGenerateColumns="False"
+        ChildPropertyName="ReportsTo"
+        ItemsSource="{Binding Employees}"
+        ParentPropertyName="ID"
+        SelfRelationRootValue="-1" >
     <syncfusion:SfTreeGrid.Columns>
-        <syncfusion:TreeGridTextColumn CellTemplateSelector="{StaticResource cellTemplateSelector}"
-                                          MappingName="Salary"/>
+        <syncfusion:TreeGridTextColumn  CellTemplateSelector="{StaticResource cellTemplateSelector}"
+                                        HeaderText="ID"
+                                        MappingName="ID" />
+        <syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
+        <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <syncfusion:TreeGridTextColumn MappingName="Title" />
+        <syncfusion:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
     </syncfusion:SfTreeGrid.Columns>
 </syncfusion:SfTreeGrid>
 {% endhighlight %}
@@ -632,19 +653,20 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", 
 {% highlight xaml %}
 
 <syncfusion:SfTreeGrid Name="treeGrid"
-                ColumnWidthMode="Star"
-                AutoExpandMode="AllNodesExpanded"
-                AutoGenerateColumns="False"
-                ChildPropertyName="ReportsTo"
-                ItemsSource="{Binding Employees}"
-                ParentPropertyName="ID"
-                SelfRelationRootValue="-1" >
+        ColumnWidthMode="Star"
+                        AllowEditing="True"
+        AutoExpandMode="AllNodesExpanded"
+        AutoGenerateColumns="False"
+        ChildPropertyName="ReportsTo"
+        ItemsSource="{Binding Employees}"
+        ParentPropertyName="ID"
+        SelfRelationRootValue="-1" >
     <syncfusion:SfTreeGrid.Columns>
-        <syncfusion:TreeGridTextColumn MappingName="ID"/>
-        <syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
-        <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName"   />
+        <syncfusion:TreeGridTextColumn MappingName="ID" />
+        <syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
+        <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
         <syncfusion:TreeGridCheckBoxColumn HeaderText="Availability" MappingName="AvailabilityStatus" />
-        <syncfusion:TreeGridTextColumn HeaderText="Salary" MappingName="Salary" />
+        <syncfusion:TreeGridTextColumn MappingName="Title" />
         <syncfusion:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
     </syncfusion:SfTreeGrid.Columns>
 </syncfusion:SfTreeGrid>
@@ -908,12 +930,15 @@ N> This is applicable when `SfTreeGrid.EditTrigger` is `OnTap`
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid x:Name="treeGrid"
-                        AutoExpandMode="RootNodesExpanded"
-                        AllowEditing="True"
-                        AutoGenerateColumns="False"
-                        ChildPropertyName="Children"
-                        ItemsSource="{Binding EmployeeDetails}">
+ <syncfusion:SfTreeGrid Name="treeGrid"
+                ColumnWidthMode="Star"
+                AllowEditing="True"
+                AutoExpandMode="AllNodesExpanded"
+                AutoGenerateColumns="False"
+                ChildPropertyName="ReportsTo"
+                ItemsSource="{Binding Employees}"
+                ParentPropertyName="ID"
+                SelfRelationRootValue="-1" >
     <syncfusion:SfTreeGrid.Columns>
         <syncfusion:TreeGridHyperlinkColumn HeaderText="Last Name" MappingName="LastName"   />
     </syncfusion:SfTreeGrid.Columns>
