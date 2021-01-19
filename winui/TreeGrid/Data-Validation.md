@@ -233,7 +233,7 @@ You can change the validation error template shape of the `TreeGridCell` by ch
 <Page.Resources>
     <ResourceDictionary>
         <ResourceDictionary.MergedDictionaries>
-            <ResourceDictionary Source="ms-appx:///Syncfusion.Grid.WinUI/Control/Themes/Generic.xaml" />
+            <ResourceDictionary Source="ms-appx:///Syncfusion.Grid.WinUI/SfTreeGrid/Themes/Generic.xaml" />
         </ResourceDictionary.MergedDictionaries>
         <Style TargetType="syncfusion:TreeGridCell">
             <Setter Property="Background" Value="Transparent" />
@@ -244,33 +244,33 @@ You can change the validation error template shape of the `TreeGridCell` by ch
                 <Setter.Value>
                     <ControlTemplate TargetType="syncfusion:TreeGridCell">
                         <Grid x:Name="Root"
-                                Background="{TemplateBinding Background}"
-                                BorderBrush="{TemplateBinding BorderBrush}"
-                                BorderThickness="{TemplateBinding BorderThickness}">
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
                             <ContentPresenter />
 
                             <Border x:Name="PART_CurrentCellBorder"
-                                    Background="Transparent"
-                                    BorderBrush="{TemplateBinding CurrentCellBorderBrush}"
-                                    BorderThickness="{TemplateBinding CurrentCellBorderThickness}"
-                                    IsHitTestVisible="False"
-                                    Visibility="Collapsed" />
+                                Background="Transparent"
+                                BorderBrush="{TemplateBinding CurrentCellBorderBrush}"
+                                BorderThickness="{TemplateBinding CurrentCellBorderThickness}"
+                                IsHitTestVisible="False"
+                                Visibility="Collapsed" />
                             <Border x:Name="PART_InValidCellBorder"
-                                    Width="10"
-                                    Height="10"
-                                    HorizontalAlignment="Right"
-                                    VerticalAlignment="Top"
-                                    Visibility="Collapsed">
+                                Width="10"
+                                Height="10"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Top"
+                                Visibility="Collapsed">
                                 <ToolTipService.ToolTip>
 
                                     <ToolTip Background="#FFDB000C"
-                                                Placement="Right"
-                                                Tag="{TemplateBinding ErrorMessage}"
-                                                Template="{StaticResource ValidationToolTipTemplate}" />
+                                            Placement="Right"
+                                            Tag="{TemplateBinding ErrorMessage}"
+                                            Template="{StaticResource ValidationToolTipTemplate}" />
                                 </ToolTipService.ToolTip>
                                 <Path Data="M15.396557,23.044006C14.220558,23.044006 13.268559,23.886993 13.268559,24.927994 13.268559,25.975006 14.220558,26.817001 15.396557,26.817001 16.572557,26.817001 17.523547,25.975006 17.523547,24.927994 17.523547,23.886993 16.572557,23.044006 15.396557,23.044006z M15.467541,5.1819992C15.447552,5.1819992 15.436566,5.1829987 15.436566,5.1829987 13.118533,5.5049973 13.055545,7.3330002 13.055545,7.3330002L13.055545,9.2929993 13.626531,16.539001C13.983558,18.357002 14.243538,19.020004 14.243538,19.020004 15.275555,19.975006 16.203567,19.25 16.203567,19.25 16.976548,18.565994 17.028552,16.962997 17.028552,16.962997 17.956563,9.2929993 17.696553,7.1029968 17.696553,7.1029968 17.608571,5.2839966 15.823561,5.1849976 15.490551,5.1819992 15.481549,5.1819992 15.473553,5.1819992 15.467541,5.1819992z M15.56355,0C15.56355,0 21.710574,4.1259995 31.581613,2.8030014 31.581613,2.8030014 33.634629,26.556992 15.56355,32 15.56355,32 -0.10249132,27.548004 0.00050565118,2.9670029 0.0005058694,2.9670029 10.72555,3.6309967 15.56355,0z"
-                                        Fill="Red"
-                                        Stretch="Fill" />
+                                    Fill="Red"
+                                    Stretch="Fill" />
                             </Border>
                             <VisualStateManager.VisualStateGroups>
                                 <VisualStateGroup x:Name="IndicationStates">
@@ -310,117 +310,71 @@ You can change the validation error template color of the `TreeGridCell` by cha
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-    <ResourceDictionary>
-        <ResourceDictionary.MergedDictionaries>
-            <ResourceDictionary Source="ms-appx:///Syncfusion.Grid.WinUI/Control/Themes/Generic.xaml" />
-        </ResourceDictionary.MergedDictionaries>
-        <local:BoolToVisibilityConverter x:Key="VisibilityConverter" />
-        <Style TargetType="syncfusion:TreeGridExpanderCell">
+   <ResourceDictionary>
+    <ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary Source="ms-appx:///Syncfusion.Grid.WinUI/SfTreeGrid/Themes/Generic.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+        <Style TargetType="syncfusion:TreeGridCell">
             <Setter Property="Background" Value="Transparent" />
-            <Setter Property="BorderThickness" Value="0,0,1,1" />
             <Setter Property="BorderBrush" Value="Gray" />
+            <Setter Property="BorderThickness" Value="0,0,1,1" />
             <Setter Property="Padding" Value="0" />
             <Setter Property="Template">
                 <Setter.Value>
-                    <ControlTemplate TargetType="syncfusion:TreeGridExpanderCell">
+                    <ControlTemplate TargetType="syncfusion:TreeGridCell">
                         <Grid x:Name="Root"
-                              BorderBrush="{TemplateBinding BorderBrush}"
-                              BorderThickness="{TemplateBinding BorderThickness}">
-                            <Grid Margin="{TemplateBinding IndentMargin}">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="18" />
-                                    <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="*" />
-                                </Grid.ColumnDefinitions>
-                                <syncfusion:TreeGridExpander x:Name="PART_ExpanderCell"
-                                                                 Grid.Column="0"
-                                                                 Width="16"
-                                                                 Height="16"
-                                                                 Margin="2,1,0,1"
-                                                                 HorizontalAlignment="Center"
-                                                                 VerticalAlignment="Center"
-                                                                 IsExpanded="{Binding RelativeSource={RelativeSource TemplatedParent},
-                                                                                      Path=IsExpanded,
-                                                                                      Mode=TwoWay,
-                                                                                      UpdateSourceTrigger=PropertyChanged}"
-                                                                 Visibility="{Binding RelativeSource={RelativeSource TemplatedParent},
-                                                                                      Path=HasChildNodes,
-                                                                                      Converter={StaticResource VisibilityConverter},
-                                                                                      Mode=TwoWay}" />
-                                    <CheckBox Name="PART_SelectCheckBox"
-                                              Grid.Column="1"
-                                              Width="18"
-                                              Height="18"
-                                              MinWidth="22"
-                                              Margin="2,0,0,0"
-                                              HorizontalAlignment="Center"
-                                              VerticalAlignment="Center"
-                                              IsEnabled="{Binding RelativeSource={RelativeSource TemplatedParent},
-                                                                  Path=IsCheckBoxEnabled,
-                                                                  Mode=TwoWay,
-                                                                  UpdateSourceTrigger=PropertyChanged}"
-                                              IsTabStop="False"
-                                              IsThreeState="True"
-                                              Visibility="{Binding Path=ColumnBase.Renderer.TreeGrid.ShowCheckBox,
-                                                                   RelativeSource={RelativeSource Mode=TemplatedParent},
-                                                                   Converter={StaticResource VisibilityConverter},
-                                                                   Mode=TwoWay}" />
-
-
-                                    <Grid Grid.Column="2"
-                                          Margin="2,0,0,0"
-                                          Background="{TemplateBinding Background}">
-                                        <ContentPresenter />
-                                        <Border x:Name="PART_CurrentCellBorder"
-                                                Margin="1,0,0,0"
-                                                Background="Transparent"
-                                                BorderBrush="{TemplateBinding CurrentCellBorderBrush}"
-                                                BorderThickness="{TemplateBinding CurrentCellBorderThickness}"
-                                                IsHitTestVisible="False"
-                                                Visibility="Collapsed" />
-                                        <Border x:Name="PART_InValidCellBorder"
-                                                Width="10"
-                                                Height="10"
-                                                HorizontalAlignment="Right"
-                                                VerticalAlignment="Top"
-                                                Visibility="Collapsed">
-                                            <ToolTipService.ToolTip>
-                                                <ToolTip Background="#FFDB000C"
-                                                         Placement="Right"
-                                                         Tag="{TemplateBinding ErrorMessage}"
-                                                         Template="{StaticResource ValidationToolTipTemplate}" />
-                                            </ToolTipService.ToolTip>
-                                            <Path Data="M0.5,0.5 L12.652698,0.5 12.652698,12.068006 z"
-                                                  Fill="Orange"
-                                                  Stretch="Fill" />
-                                        </Border>
-                                    </Grid>
-                                </Grid>
-                                <VisualStateManager.VisualStateGroups>
-                                    <VisualStateGroup x:Name="IndicationStates">
-                                        <VisualState x:Name="NoError" />
-                                        <VisualState x:Name="HasError">
-                                            <VisualState.Setters>
-                                                <Setter Target="PART_InValidCellBorder.Visibility" Value="Visible" />
-                                            </VisualState.Setters>
-                                        </VisualState>
-                                    </VisualStateGroup>
-                                    <VisualStateGroup x:Name="CurrentStates">
-                                        <VisualState x:Name="Regular" />
-                                        <VisualState x:Name="Current">
-                                            <VisualState.Setters>
-                                                <Setter Target="PART_CurrentCellBorder.Visibility" Value="Visible" />
-                                            </VisualState.Setters>
-                                        </VisualState>
-                                    </VisualStateGroup>
-                                </VisualStateManager.VisualStateGroups>
-                            </Grid>
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter />
+                            <Border x:Name="PART_CurrentCellBorder"
+                            Background="Transparent"
+                            BorderBrush="{TemplateBinding CurrentCellBorderBrush}"
+                            BorderThickness="{TemplateBinding CurrentCellBorderThickness}"
+                            IsHitTestVisible="False"
+                            Visibility="Collapsed" />
+                            <Border x:Name="PART_InValidCellBorder"
+                            Width="10"
+                            Height="10"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Top"
+                            Visibility="Collapsed">
+                                <ToolTipService.ToolTip>
+                                    <ToolTip Background="#FFDB000C"
+                                        Placement="Right"
+                                        Tag="{TemplateBinding ErrorMessage}"
+                                        Template="{StaticResource ValidationToolTipTemplate}" />
+                                </ToolTipService.ToolTip>
+                                <Path Data="M0.5,0.5 L12.652698,0.5 12.652698,12.068006 z"
+                                            Fill="Orange"
+                                            Stretch="Fill" />
+                            </Border>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="IndicationStates">
+                                    <VisualState x:Name="NoError" />
+                                    <VisualState x:Name="HasError">
+                                        <VisualState.Setters>
+                                            <Setter Target="PART_InValidCellBorder.Visibility" Value="Visible" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="CurrentStates">
+                                    <VisualState x:Name="Regular" />
+                                    <VisualState x:Name="Current">
+                                        <VisualState.Setters>
+                                            <Setter Target="PART_CurrentCellBorder.Visibility" Value="Visible" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </Grid>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
         </Style>
     </ResourceDictionary>
 </Page.Resources>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -437,80 +391,80 @@ You can change the error tip background color by setting `Background` property o
 {% tabs %}
 {% highlight xaml %}
 <ControlTemplate x:Key="ValidationToolTipTemplate">
-                <Grid x:Name="Root"
-                      Margin="5,0"
-                      Opacity="0"
-                      RenderTransformOrigin="0,0">
-                    <Grid.RenderTransform>
-                        <TranslateTransform x:Name="transform" X="-25" />
-                    </Grid.RenderTransform>
+    <Grid x:Name="PART_ToolTipPresenter"
+        Margin="5,0"
+        Opacity="0"
+        RenderTransformOrigin="0,0">
+        <Grid.RenderTransform>
+            <TranslateTransform x:Name="Transform" X="-25" />
+        </Grid.RenderTransform>
+                
+        <Border Margin="4,4,-4,-4"
+            Background="Transparent"
+            CornerRadius="5" />
+        <Border Margin="3,3,-3,-3"
+            Background="Transparent"
+            CornerRadius="4" />
+        <Border Margin="2,2,-2,-2"
+            Background="Transparent"
+            CornerRadius="3" />
+        <Border Margin="1,1,-1,-1"
+            Background="Transparent"
+            CornerRadius="2" />
 
-                    <Border Margin="4,4,-4,-4"
-                            Background="#052A2E31"
-                            CornerRadius="5" />
-                    <Border Margin="3,3,-3,-3"
-                            Background="#152A2E31"
-                            CornerRadius="4" />
-                    <Border Margin="2,2,-2,-2"
-                            Background="#252A2E31"
-                            CornerRadius="3" />
-                    <Border Margin="1,1,-1,-1"
-                            Background="#352A2E31"
-                            CornerRadius="2" />
-
-                    <Border Background="Orange" CornerRadius="2" />
-                    <Border CornerRadius="2">
-                        <TextBlock MaxWidth="250"
-                                   Margin="8,4,8,4"
-                                   Foreground="Black"
-                                   Text="{TemplateBinding Tag}"
-                                   TextWrapping="Wrap"
-                                   UseLayoutRounding="false" />
-                    </Border>
-                    <VisualStateManager.VisualStateGroups>
-                        <VisualStateGroup Name="OpenStates">
-                            <VisualStateGroup.Transitions>
-                                <VisualTransition GeneratedDuration="0" />
-                                <VisualTransition GeneratedDuration="0:0:0.2" To="Open">
-                                    <Storyboard>
-                                        <DoubleAnimation Duration="0:0:0.2"
-                                                         Storyboard.TargetName="transform"
-                                                         Storyboard.TargetProperty="X"
-                                                         To="0">
-                                            <DoubleAnimation.EasingFunction>
-                                                <BackEase Amplitude=".3" EasingMode="EaseOut" />
-                                            </DoubleAnimation.EasingFunction>
-                                        </DoubleAnimation>
-                                        <DoubleAnimation Duration="0:0:0.2"
-                                                         Storyboard.TargetName="Root"
-                                                         Storyboard.TargetProperty="Opacity"
-                                                         To="1" />
-                                    </Storyboard>
-                                </VisualTransition>
-                            </VisualStateGroup.Transitions>
-                            <VisualState x:Name="Closed">
-                                <Storyboard>
-                                    <DoubleAnimation Duration="0"
-                                                     Storyboard.TargetName="Root"
-                                                     Storyboard.TargetProperty="Opacity"
-                                                     To="0" />
-                                </Storyboard>
-                            </VisualState>
-                            <VisualState x:Name="Open">
-                                <Storyboard>
-                                    <DoubleAnimation Duration="0"
-                                                     Storyboard.TargetName="transform"
-                                                     Storyboard.TargetProperty="X"
-                                                     To="0" />
-                                    <DoubleAnimation Duration="0"
-                                                     Storyboard.TargetName="Root"
-                                                     Storyboard.TargetProperty="Opacity"
-                                                     To="1" />
-                                </Storyboard>
-                            </VisualState>
-                        </VisualStateGroup>
-                    </VisualStateManager.VisualStateGroups>
-                </Grid>
+        <Border Background="Orange" CornerRadius="2" />
+        <Border CornerRadius="2" >
+            <TextBlock MaxWidth="250"
+                    Margin="8,4,8,4"
+                    Foreground= "Black"
+                    Text="{TemplateBinding Tag}"
+                    TextWrapping="Wrap"
+                    UseLayoutRounding="false" />
+        </Border>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="OpenStates">
+                <VisualStateGroup.Transitions>
+                    <VisualTransition GeneratedDuration="0" />
+                    <VisualTransition GeneratedDuration="0:0:0.2" To="Opened">
+                        <Storyboard>
+                            <DoubleAnimation Duration="0:0:0.2"
+                                            Storyboard.TargetName="Transform"
+                                            Storyboard.TargetProperty="X"
+                                            To="0">
+                                <DoubleAnimation.EasingFunction>
+                                    <BackEase Amplitude=".3" EasingMode="EaseOut" />
+                                </DoubleAnimation.EasingFunction>
+                            </DoubleAnimation>
+                            <DoubleAnimation Duration="0:0:0.2"
+                                            Storyboard.TargetName="PART_ToolTipPresenter"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="1" />
+                        </Storyboard>
+                    </VisualTransition>
+                </VisualStateGroup.Transitions>
+                <VisualState x:Name="Closed">
+                    <Storyboard>
+                        <DoubleAnimation Duration="0"
+                                        Storyboard.TargetName="PART_ToolTipPresenter"
+                                        Storyboard.TargetProperty="Opacity"
+                                        To="0" />
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Opened">
+                    <Storyboard>
+                        <DoubleAnimation Duration="0"
+                                        Storyboard.TargetName="Transform"
+                                        Storyboard.TargetProperty="X"
+                                        To="0" />
+                        <DoubleAnimation Duration="0"
+                                        Storyboard.TargetName="PART_ToolTipPresenter"
+                                        Storyboard.TargetProperty="Opacity"
+                                        To="1" />
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </Grid>
 </ControlTemplate>
 {% endhighlight %}
 {% endtabs %}
@@ -534,7 +488,8 @@ public bool HasErrors
 {
     get
     {
-        if (this.Title.Contains("Purchasing"))
+
+        if (this.Title.Contains("Purchasing") || this.Title.Contains("Sales"))
             return true;
         return false;
     }
