@@ -3,7 +3,7 @@ layout: post
 title: Sorting in WinUI TreeGrid control | Syncfusion
 description: Learn about column sorting support in Syncfusion WinUI TreeGrid (SfTreeGrid) control and more details.
 platform: winui
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
