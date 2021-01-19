@@ -24,28 +24,6 @@ Built-in validations through `INotifyDataErrorInfo` and Data annotation attribut
 
 SfDataGrid provides support to validate the data based on [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.inotifydataerrorinfo?view=winui-3.0-preview).
 
-### INotifyDataErrorInfo
-
-You can validate the data by inheriting the [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.inotifydataerrorinfo?view=winui-3.0-preview) interface in model class.
-
-Enable built-in validation support by setting [SfDataGrid.DataValidationMode]((https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_DataValidationMode) or [GridColumn.DataValidationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_DataValidationMode) property to `InView`.
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
-                        DataValidationMode="InView"
-                        AutoGenerateColumns="True"
-                        ItemsSource="{Binding Employees}"/>
-{% endhighlight %}
-{% highlight c# %}
-this.sfDataGrid.DataValidationMode = GridValidationMode.InView;
-{% endhighlight %}
-{% endtabs %}
-
-![Data validation in WinUI SfDataGrid using INotifyDataErrorInfo](Data-Validation-images/Data-Validation-image1.png)
-
-### INotifyDataErrorInfo
-
 You can validate the data by inheriting the [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.inotifydataerrorinfo?view=winui-3.0-preview) interface in model class.
 
 {% tabs %}
@@ -103,13 +81,15 @@ Enable built-in validation support by setting [SfDataGrid.DataValidationMode]((h
 {% highlight xaml %}
 <syncfusion:SfDataGrid  x:Name="sfDataGrid"
                         DataValidationMode="InView"
-                        AllowEditing="True"    
                         AutoGenerateColumns="True"
                         ItemsSource="{Binding Employees}"/>
 {% endhighlight %}
+{% highlight c# %}
+this.sfDataGrid.DataValidationMode = GridValidationMode.InView;
+{% endhighlight %}
 {% endtabs %}
 
-![Data validation in WinUI DataGrid using INotifyDataErrorInfo](Data-Validation-images/Data-Validation-image2.png)
+![Data validation in WinUI SfDataGrid using INotifyDataErrorInfo](Data-Validation-images/Data-Validation-image1.png)
 
 ## Built-in validation using Data Annotation
 
@@ -162,6 +142,8 @@ public double Salary
  
 {% endhighlight %}
 {% endtabs %}
+
+![Data validation in WinUI DataGrid using INotifyDataErrorInfo](Data-Validation-images/Data-Validation-image2.png)
 
 The string type property can be validated using [Required](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.requiredattribute.aspx), [String Length attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.stringlengthattribute.aspx)
 
