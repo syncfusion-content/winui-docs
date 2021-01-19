@@ -13,7 +13,7 @@ SfDataGrid allows you to select one or more rows or cells. For selecting specifi
 
 ### Current Cell Navigation
 
-Keyboard navigation through the cells and rows is determined based on the [NavigationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_NavigationMode) property. [NavigationMode.Cell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.NavigationMode.html#Syncfusion_UI_Xaml_Grids_NavigationMode_Cell) allows you to navigate between the cells in a row as well as between rows. [NavigationMode.Row](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.NavigationMode.html#Syncfusion_UI_Xaml_Grids_NavigationMode_Row) allows you to navigate only between rows. It is not possible to set `NavigationMode.Row` when cell selection is enabled (`SelectionUnit` is Cell or Any). 
+Keyboard navigation through the cells and rows is determined based on the [NavigationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_NavigationMode) property. [NavigationMode.Cell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.NavigationMode.html#Syncfusion_UI_Xaml_Grids_NavigationMode_Cell) allows you to navigate between the cells in a row as well as between rows. [NavigationMode.Row](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.NavigationMode.html#Syncfusion_UI_Xaml_Grids_NavigationMode_Row) allows you to navigate only between rows. It is not possible to set `NavigationMode.Row` when cell selection is enabled (`SelectionUnit` is `Cell` or `Any`). 
 
 ### Selection Modes
 
@@ -21,7 +21,7 @@ The `SelectionUnit` and [SelectionMode](https://help.syncfusion.com/cr/winui/Syn
 
 {% tabs %}
 {% highlight xaml %}
-<Syncfusion:SfDataGrid x:Name=”sfDataGrid”
+<Syncfusion:SfDataGrid x:Name="sfDataGrid"
                        SelectionUnit="Row"
                        NavigationMode="Cell"
                        SelectionMode="Single"
@@ -143,7 +143,7 @@ var viewModel = this.sfDataGrid.DataContext as ViewModel;
 foreach(var order in viewModel.Orders)
 {
     if (order.Country == "Mexico")
-    this.sfDataGrid.SelectedItems.Add(order);
+        this.sfDataGrid.SelectedItems.Add(order);
 }
 
 {% endhighlight %}
@@ -773,7 +773,7 @@ Commits only the changes when the current cell in edit mode and retains the focu
 <kbd>F2</kbd>
 </td>
 <td>
-If the {{'[DataGrid.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowEditing)'| markdownify }} property is true and the {{'[GridColumn.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_AllowEditing)'| markdownify }} property is true for the current column, the current cell enters into edit mode.
+If the {{'[DataGrid.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowEditing)'| markdownify }} property is <kbd>true</kbd> and the {{'[GridColumn.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_AllowEditing)'| markdownify }} property is <kbd>true</kbd> for the current column, the current cell enters into edit mode.
 </td>
 </tr>
 <tr>
