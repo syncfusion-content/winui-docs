@@ -32,17 +32,17 @@ Enable built-in validation support by setting [SfDataGrid.DataValidationMode]((h
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid" 
-                       ItemsSource="{Binding Orders}"                        
-                       AllowEditing="True"                           
-                       GridValidationMode="InView"/>
+<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+                        DataValidationMode="InView"
+                        AutoGenerateColumns="True"
+                        ItemsSource="{Binding Employees}"/>
 {% endhighlight %}
 {% highlight c# %}
-this.dataGrid.GridValidationMode = GridValidationMode.InView;
+this.sfDataGrid.DataValidationMode = GridValidationMode.InView;
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WinUI SfDataGrid using IDataErrorInfo](Data-Validation-images/Data-Validation-image1.png)
+![Data validation in WinUI SfDataGrid using INotifyDataErrorInfo](Data-Validation-images/Data-Validation-image1.png)
 
 ### INotifyDataErrorInfo
 
@@ -101,7 +101,7 @@ Enable built-in validation support by setting [SfDataGrid.DataValidationMode]((h
 
 {% tabs %}
 {% highlight xaml %}
- <syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<syncfusion:SfDataGrid  x:Name="sfDataGrid"
                         DataValidationMode="InView"
                         AllowEditing="True"    
                         AutoGenerateColumns="True"
@@ -183,7 +183,6 @@ public string Name
     set
     {
         this._Name = value;
-        this.RaisePropertyChanged(nameof(Name));
     }
 }
 
@@ -203,7 +202,6 @@ public string Title
     set
     {
         this._Title = value;
-        this.RaisePropertyChanged(nameof(Title));
     }
 }
 
@@ -231,7 +229,6 @@ public string Title
     set
     {
         this._Title = value;
-        this.RaisePropertyChanged(nameof(Title));
     }
 }
 
@@ -322,7 +319,7 @@ You can customize the error icon by editing `GridCell` style.
 
 ### Change the shape of error icon
 
-You can change the validation error template shape of the GridCell by changing the `Data` property of the path in the `PART_InValidCellBorder` of GridCell. And need to add the DatGrid ThemeDictionary in ResourcesDictionary.
+You can change the validation error template shape of the GridCell by changing the `Data` property of the path in the `PART_InValidCellBorder` of GridCell. And need to add the DataGrid ThemeDictionary in ResourcesDictionary.
 
 {% tabs %}
 {% highlight xaml %}
@@ -493,15 +490,6 @@ You can change the validation error template color of the `GridCell` by changi
                     <VisualStateManager.VisualStateGroups>
                         <VisualStateGroup x:Name="IndicationStates">
                             <VisualState x:Name="NoError">
-                                <!--<Storyboard BeginTime="0">
-                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_InValidCellBorder" Storyboard.TargetProperty="(UIElement.Visibility)">
-                                        <DiscreteObjectKeyFrame KeyTime="0">
-                                            <DiscreteObjectKeyFrame.Value>
-                                                <Visibility>Collapsed</Visibility>
-                                            </DiscreteObjectKeyFrame.Value>
-                                        </DiscreteObjectKeyFrame>
-                                    </ObjectAnimationUsingKeyFrames>
-                                </Storyboard>-->
                             </VisualState>
                             <VisualState x:Name="HasError">
                                 <Storyboard>
@@ -824,7 +812,7 @@ private void FirstLevelDetailsViewGrid_CurrentCellValidating(object sender, Curr
 {% endhighlight %}
 {% endtabs %}
 
-[CurrentCellValidated](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentCellValidated) event [GridViewDefinition.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid) triggered when the cell has finished validating with valid data
+[CurrentCellValidated](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentCellValidated) event of [GridViewDefinition.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid) triggered when the cell has finished validating with valid data
 
 {% tabs %}
 {% highlight xaml %}
@@ -926,7 +914,7 @@ private void FirstLevelDetailsViewGrid_RowValidating(object sender, RowValidatin
 {% endhighlight %}
 {% endtabs %}
 
-[RowValidated](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_RowValidated) of [GridViewDefinition.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid) event triggered when the row has finished validating with valid row data.
+[RowValidated](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_RowValidated) event of [GridViewDefinition.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid) event triggered when the row has finished validating with valid row data.
 
 {% tabs %}
 {% highlight xaml %}
