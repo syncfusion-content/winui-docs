@@ -233,7 +233,7 @@ this.sfDataGrid.Columns[0].AllowBlankFilters = false;
                            FilterRowEditorType="Numeric"/>
 {% endhighlight %}
 {% highlight c# %}
-this.dataGrid.Columns[0].AllowBlankFilters = true;
+this.sfDataGrid.Columns[0].AllowBlankFilters = true;
 {% endhighlight %}
 {% endtabs %}
 
