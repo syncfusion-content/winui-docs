@@ -156,7 +156,6 @@ sfDataGrid.Columns["OrderID"].AllowFiltering = true;
 
 N>
 1. `GridColumn.AllowFiltering` has higher priority than `SfDataGrid.AllowFiltering` property.
-2. UI filtering is not supported when using on-demand paging by setting `UseOnDemandPaging` to `true`.
 
 
 ### Built-in UI Views
@@ -459,7 +458,7 @@ By default, filters are applied to the columns when OK button is clicked in UI f
 <syncfusion:GridTextColumn ImmediateUpdateColumnFilter="True" MappingName="OrderID" />
 {% endhighlight %}
 {% highlight c# %}
-dataGrid.Columns["OrderID"].ImmediateUpdateColumnFilter = true;
+sfDataGrid.Columns["OrderID"].ImmediateUpdateColumnFilter = true;
 {% endhighlight %}
 {% endtabs %}
 
@@ -489,7 +488,7 @@ xmlns:coreconverter="using:Syncfusion.UI.Xaml.Core.Converters"
 </Page.Resources>
 
 <syncfusion:GridTextColumn DisplayBinding="{Binding OrderDate, Converter={StaticResource stringFormatConverter}, ConverterParameter=\{0:dd/MM/yyyy\}}"
-                           HeaderText="Order Date" MappingName="OrderDate"  />
+                           HeaderText="Order Date" MappingName="OrderDate"  ColumnFilter="DisplayText" />
 {% endhighlight %}
 {% highlight c# %}
 sfDataGrid.Columns["OrderDate"].ColumnFilter = ColumnFilter.DisplayText;
@@ -693,7 +692,7 @@ void sfDdataGrid_FilterItemsPopulating(object sender, Syncfusion.UI.Xaml.Grid.Gr
     {
         e.FilterControl.AdvancedFilterType = AdvancedFilterType.TextFilter;
         e.FilterControl.SetColumnDataType(typeof(string));
-	    e.FilterControl.AscendingSortString = GridLocalizationResourceAccessor.Instance.GetLocalizedStringResource("SortStringAscending");
+        e.FilterControl.AscendingSortString = GridLocalizationResourceAccessor.Instance.GetLocalizedStringResource("SortStringAscending");
         e.FilterControl.DescendingSortString = GridLocalizationResourceAccessor.Instance.GetLocalizedStringResource("SortStringDescending"); 
     }
 }
@@ -714,7 +713,7 @@ You can achieve this by using `FilterItemsPopulating` event also. But in this ca
 
 ### Customizing Excel like Filter ItemsSource
 
-When you want to restrict some data from filtering, you need to customize the [GridFilterControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridFilterControl.html) `ItemsSource` by using `FilterItemsPopulated` event. Here,[FilterElement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.FilterElement.html) which has `ActualValue` as 1005 is removed from `ItemsSource`.
+When you want to restrict some data from filtering, you need to customize the [GridFilterControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridFilterControl.html) `ItemsSource` by using `FilterItemsPopulated` event. Here, [FilterElement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.FilterElement.html) which has `ActualValue` as 1005 is removed from `ItemsSource`.
 
 {% tabs %}
 {% highlight c# %}
@@ -802,7 +801,7 @@ void sfDataGrid_FilterItemsPopulating(object sender, GridFilterItemsPopulatingEv
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing SortOptions text from Filter popup in SfDataGrid WinUI](Filtering_images/Filtering_img15.png)
+![Customizing SortOptions text from Filter popup in SfDataGrid WinUI](Filtering_images/Filtering_img18.png)
 
 ### Customize the FilterPopup size using GridFilterControl style
 
