@@ -75,7 +75,9 @@ You can let the SfTreeGrid to create columns or you can manually defined columns
 
 The automatic column generation based on properties of data object can be enabled or disabled by setting [SfTreeGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AutoGenerateColumns). Default value is `true`. 
 
-Columns are generated based on type of property. Below are table shows data type and its column type. For remaining types, [TreeGridTextColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumn.html) will be added. 
+Columns are generated based on type of property. For example, `GridCheckBoxColumn` is added for `bool` type property. 
+
+Below are table shows data type and its column type. For remaining types, `GridTextColumn` will be added.
 
 <table>
 <tr>
