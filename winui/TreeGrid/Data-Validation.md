@@ -14,10 +14,10 @@ SfTreeGrid allows you to validate the data and display hints in case of validati
 
 ## Built-in validations
 
-Built-in validations through INotifyDataErrorInfo and Data annotation attributes, can be enabled by setting[SfTreeGrid.DataValidationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_DataValidationMode) or [TreeGridColumn.DataValidationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_DataValidationMode) properties. ` TreeGridColumn.DataValidationMode ` takes priority than ` SfTreeGrid.DataValidationMode`.
+Built-in validations through INotifyDataErrorInfo and Data annotation attributes, can be enabled by setting[SfTreeGrid.DataValidationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_DataValidationMode) or [TreeGridColumn.DataValidationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_DataValidationMode) properties. `TreeGridColumn.DataValidationMode` takes priority than `SfTreeGrid.DataValidationMode`.
 
-* `DataValidationMode.InView` - displays error icons and tips alone.
-* `DataValidationMode.None` - disables built-in validation support.
+* `GridValidationMode.InView` - displays error icons and tips alone.
+* `GridValidationMode.None` - disables built-in validation support.
 
 ### Built-in validation using INotifyDataErrorInfo
 
@@ -234,10 +234,9 @@ You can change the validation error template shape of the `TreeGridCell` by ch
     <ResourceDictionary>
         <ResourceDictionary.MergedDictionaries>
             <ResourceDictionary Source="ms-appx:///Syncfusion.Grid.WinUI/SfTreeGrid/Themes/Generic.xaml" />
-        </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary.MergedDictionaries>
         <Style TargetType="syncfusion:TreeGridCell">
             <Setter Property="Background" Value="Transparent" />
-            <Setter Property="BorderBrush" Value="Gray" />
             <Setter Property="BorderThickness" Value="0,0,1,1" />
             <Setter Property="Padding" Value="0" />
             <Setter Property="Template">
@@ -248,7 +247,6 @@ You can change the validation error template shape of the `TreeGridCell` by ch
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}">
                             <ContentPresenter />
-
                             <Border x:Name="PART_CurrentCellBorder"
                                 Background="Transparent"
                                 BorderBrush="{TemplateBinding CurrentCellBorderBrush}"
@@ -281,7 +279,6 @@ You can change the validation error template shape of the `TreeGridCell` by ch
                                         </VisualState.Setters>
                                     </VisualState>
                                 </VisualStateGroup>
-
                                 <VisualStateGroup x:Name="CurrentStates">
                                     <VisualState x:Name="Regular" />
                                     <VisualState x:Name="Current">
@@ -310,44 +307,43 @@ You can change the validation error template color of the `TreeGridCell` by cha
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-   <ResourceDictionary>
-    <ResourceDictionary.MergedDictionaries>
+    <ResourceDictionary>
+        <ResourceDictionary.MergedDictionaries>
             <ResourceDictionary Source="ms-appx:///Syncfusion.Grid.WinUI/SfTreeGrid/Themes/Generic.xaml" />
-    </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary.MergedDictionaries>
         <Style TargetType="syncfusion:TreeGridCell">
             <Setter Property="Background" Value="Transparent" />
-            <Setter Property="BorderBrush" Value="Gray" />
             <Setter Property="BorderThickness" Value="0,0,1,1" />
             <Setter Property="Padding" Value="0" />
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="syncfusion:TreeGridCell">
                         <Grid x:Name="Root"
-                        Background="{TemplateBinding Background}"
-                        BorderBrush="{TemplateBinding BorderBrush}"
-                        BorderThickness="{TemplateBinding BorderThickness}">
+                    Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}">
                             <ContentPresenter />
                             <Border x:Name="PART_CurrentCellBorder"
-                            Background="Transparent"
-                            BorderBrush="{TemplateBinding CurrentCellBorderBrush}"
-                            BorderThickness="{TemplateBinding CurrentCellBorderThickness}"
-                            IsHitTestVisible="False"
-                            Visibility="Collapsed" />
+                        Background="Transparent"
+                        BorderBrush="{TemplateBinding CurrentCellBorderBrush}"
+                        BorderThickness="{TemplateBinding CurrentCellBorderThickness}"
+                        IsHitTestVisible="False"
+                        Visibility="Collapsed" />
                             <Border x:Name="PART_InValidCellBorder"
-                            Width="10"
-                            Height="10"
-                            HorizontalAlignment="Right"
-                            VerticalAlignment="Top"
-                            Visibility="Collapsed">
+                        Width="10"
+                        Height="10"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Top"
+                        Visibility="Collapsed">
                                 <ToolTipService.ToolTip>
                                     <ToolTip Background="#FFDB000C"
-                                        Placement="Right"
-                                        Tag="{TemplateBinding ErrorMessage}"
-                                        Template="{StaticResource ValidationToolTipTemplate}" />
+                                    Placement="Right"
+                                    Tag="{TemplateBinding ErrorMessage}"
+                                    Template="{StaticResource ValidationToolTipTemplate}" />
                                 </ToolTipService.ToolTip>
                                 <Path Data="M0.5,0.5 L12.652698,0.5 12.652698,12.068006 z"
-                                            Fill="Orange"
-                                            Stretch="Fill" />
+                                        Fill="Orange"
+                                        Stretch="Fill" />
                             </Border>
                             <VisualStateManager.VisualStateGroups>
                                 <VisualStateGroup x:Name="IndicationStates">
@@ -380,11 +376,11 @@ You can change the validation error template color of the `TreeGridCell` by cha
 
 ![Displaying changed validation error icon color WinUI SfTreeGrid](Data-Validation_images/Data-Validation_img3.png)
 
-### Customizing error tip
+### Customizing error tip (Help tip)
 
 You can customize the error tip by editing the style of `ValidationToolTipTemplate`. Get the style of `ValidationToolTipTemplate` by editing the `TreeGridCell` style.
 
-#### Change the background and foreground color of error tip
+#### Change the background and foreground color of error tip (Help tip)
 
 You can change the error tip background color by setting `Background` property of the border in `ValidationToolTipTemplate`.The error tip foreground color can be changed by setting `Foreground` property of the TextBlock in 'ValidationToolTipTemplate'.
 

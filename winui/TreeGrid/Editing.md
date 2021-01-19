@@ -35,7 +35,7 @@ SfTreeGrid provides support for editing and it can be enabled or disabled by set
 {% endhighlight %}
 {% highlight c# %}
 
-	this.treeGrid.AllowEditing = true;
+this.treeGrid.AllowEditing = true;
 	
 {% endhighlight %}
 {% endtabs %}
@@ -60,7 +60,7 @@ N> `TreeGridColumn.AllowEditing` takes higher priority than `SfTreeGrid.AllowEdi
 
 ![Editing in WinUI treegrid](Editing-images/Editing-img1.png)
 
-N> It is mandatory to set the NavigationMode to Cell to enable CurrentCell navigation and editing.
+N> It is mandatory to set the [NavigationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.NavigationMode.html) to Cell to enable CurrentCell navigation and editing.
 
 ### Entering into edit mode
 
@@ -129,7 +129,7 @@ The editing changes in a row will be committed only when user move to next row o
 
 [EndEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.endedit.aspx) - Gets called when user move to the next row or press Enter key  to commit changes in underlying data object since last `BeginEdit` call. 
 
-In the below code snippet explains the simple implementation of IEditableObject.
+The below code snippet explains the simple implementation of IEditableObject.
 
 {% tabs %}
 {% highlight c# %}
@@ -141,7 +141,6 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	/// Gets or sets the ID.
 	/// </summary>
 	/// <value>The ID.</value>
-
 	public int ID
 	{
 		get
@@ -160,7 +159,6 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	/// Gets or sets the first name.
 	/// </summary>
 	/// <value>The first name.</value>   
-
 	public string FirstName
 	{
 		get { return _firstName; }
@@ -176,7 +174,6 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	/// Gets or sets the last name.
 	/// </summary>
 	/// <value>The last name.</value>
-
 	public string LastName
 	{
 		get { return _lastName; }
@@ -192,7 +189,6 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	/// Gets or sets the title.
 	/// </summary>
 	/// <value>The title.</value>
-
 	public string Title
 	{
 		get
@@ -211,7 +207,6 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	/// Gets or sets the salary.
 	/// </summary>
 	/// <value>The salary.</value>
-
 	public double? Salary
 	{
 		get
@@ -230,7 +225,6 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	/// Gets or sets the reports to.
 	/// </summary>
 	/// <value>The reports to.</value>
-
 	public int ReportsTo
 	{
 		get
@@ -267,15 +261,12 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 
 	public void CancelEdit()
 	{
-
 		if (this.storedValues == null)
 			return;
-
 		foreach (var item in this.storedValues)
 		{
 			var itemProperties = this.GetType().GetTypeInfo().DeclaredProperties;
 			var pDesc = itemProperties.FirstOrDefault(p => p.Name == item.Key);
-
 			if (pDesc != null)
 				pDesc.SetValue(this, item.Value);
 		}
@@ -283,7 +274,6 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 
 	public void EndEdit()
 	{           
-
 		if (this.storedValues != null)
 		{
 			this.storedValues.Clear();
@@ -295,7 +285,6 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 
 	public void RaisePropertyChanged(string propertyName)
 	{
-
 		if (PropertyChanged != null)
 			PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 	}
