@@ -12,7 +12,7 @@ documentation: ug
 
 SfDataGrid provide support for the clipboard operations such as cut, copy and paste the data within control and between other applications such as Notepad, Excel. Clipboard operations copy and paste is enabled by default. You can copy selected records/cells from SfDataGrid by pressing <kbd>Ctrl+C</kbd> and also can paste the content from [Clipboard](https://docs.microsoft.com/en-us/uwp/api/Windows.ApplicationModel.DataTransfer.Clipboard?view=winrt-19041) to SfDataGrid by pressing <kbd>Ctrl+V</kbd>.
 
-N> Clipboard operations is not supported for the summary rows, add new row and unbound rows.
+N> Clipboard operations is not supported for the summary rows, add new row, filter row and unbound rows.
 
  
 ## Copy to Clipboard in DataGrid
