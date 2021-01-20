@@ -259,7 +259,6 @@ Updated
 
 * `AllowDataShaping` and `AllowSummaryUpdate` is not supported when you are binding with dynamic data objects.
 * Complex and indexer properties doesn’t support `LiveDataUpdateMode` - `AllowDataShaping` and `AllowSummaryUpdate`.
-* `LiveDataUpdateMode` is not supported when `DataTable` is `ItemsSource`.
 
 ## Add new rows
 
@@ -352,7 +351,7 @@ void SfDataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid - Add new row with defautl values](Data-Manipulation_images/Data-Manipulation_img2.png)
+![WinUI DataGrid - Add new row initialized with default values](Data-Manipulation_images/Data-Manipulation_img2.png)
 
 ### Working with complex properties in AddNewRow
 

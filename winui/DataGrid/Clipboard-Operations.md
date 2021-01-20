@@ -170,7 +170,7 @@ void sfDataGrid_CopyGridCellContent(object sender, GridCopyPasteCellEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-The below code example change the clipboard value as 100 instead of cell value 1003 in SfDataGrid.
+The below code example changes the clipboard value as 100 instead of cell value 1003 in SfDataGrid.
 
 {% tabs %}
 {% highlight c# %}
