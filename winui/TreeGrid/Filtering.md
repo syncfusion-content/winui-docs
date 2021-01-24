@@ -697,4 +697,4 @@ The filter icon style can be changed by writing style with TargetType as [Filter
 {% endhighlight %}
 {% endtabs %}
 
-![Modified filtered icon style](Filtering_images/Filtering15.png)
+![Modified filtered icon style](Filtering-images/Filtering_img15.png)
