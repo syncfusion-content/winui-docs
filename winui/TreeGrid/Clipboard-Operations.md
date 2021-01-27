@@ -363,3 +363,183 @@ this.treeGrid.SelectionController.SelectAll();
 this.treeGrid.ClipboardController.Cut();
 {% endhighlight %}
 {% endtabs %}
+
+## Customize copy paste behavior
+
+The tree grid processes the clipboard operations in the [TreeGridClipboardController](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridClipboardController.html) class. You can customize the default copy paste behaviors by overriding the TreeGridCutCopyPaste class and set it to `SfTreeGrid.ClipboardController`.
+
+{% tabs %}
+{% highlight c# %}
+public class CustomClipboardController : TreeGridClipboardController
+{
+    public CustomClipboardController(SfTreeGrid sfTreeGrid) : base(sfTreeGrid)
+    {
+    }
+}
+
+{% endhighlight %}
+{% highlight c# %}
+public MainPage()
+{
+    this.InitializeComponent();
+    this.treeGrid.ClipboardController = new CustomClipboardController(this.treeGrid);
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Paste a record into selected rows
+
+By default, you can copy a row and paste it into another row in tree grid. The following code example shows how to copy a row and paste it into all the selected rows by overriding the [PasteRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridClipboardController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridClipboardController_PasteRow_System_Object_System_Object_) method in the [TreeGridClipboardController](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridClipboardController.html) class.
+
+{% tabs %}
+{% highlight c# %}
+public class CustomClipboardController : TreeGridClipboardController
+{
+    SfTreeGrid treeGrid { get; set; }
+    public CustomClipboardController(SfTreeGrid sfTreeGrid) : base(sfTreeGrid)
+    {
+        this.treeGrid = sfTreeGrid;
+    }
+
+    protected override void PasteRow(object clipboardContent, object selectedRecords)
+    {
+        var text = clipboardContent.ToString();
+        string[] clipBoardText = Regex.Split(text, @"\r\n");
+
+        //Get the clipBoardText and check if the clipBoardText is more than one row
+        //means call the base.
+        if (clipBoardText.Count() > 1)
+        {
+            base.PasteRow(clipboardContent, selectedRecords);
+            return;
+        }
+        var selectedRecord = this.treeGrid.SelectedItems;
+        for (int i = 0; i < selectedRecord.Count; i++)
+        {
+            //Get the selected records for paste the copied row.
+            selectedRecords = selectedRecord[i];
+
+            //Call the PasteRow method with clipboardContent and selectedRecords
+            base.PasteRow(clipboardContent, selectedRecords);
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Select pasted records
+
+By default, after pasting the clipboard value to tree grid, the selection is maintained in previously selected records. The following code example shows how to select the pasted records by overriding the [PasteRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridClipboardController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridClipboardController_PasteRow_System_Object_System_Object_) method in the [TreeGridClipboardController](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridClipboardController.html) class.
+
+{% tabs %}
+{% highlight c# %}
+public class CustomClipboardController : TreeGridClipboardController
+{
+    SfTreeGrid treeGrid { get; set; }
+    public CustomClipboardController(SfTreeGrid sfTreeGrid) : base(sfTreeGrid)
+    {
+        this.treeGrid = sfTreeGrid;
+    }
+
+    protected override void PasteRow(object clipboardcontent, object selectedRecords)
+    {
+        base.PasteRow(clipboardcontent, selectedRecords);
+
+        // Add the selected record to list.
+        this.treeGrid.SelectedItems.Add(selectedRecords);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Create new records when pasting
+
+By default, when paste the clipboard value to tree grid, it changes the values of the already existing records. The following code example shows how to add the copied records as new rows in tree grid by overriding the [PasteRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridClipboardController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridClipboardController_PasteRow_System_Object_System_Object_) method in the [TreeGridClipboardController](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridClipboardController.html) class.
+
+{% tabs %}
+{% highlight c# %}
+public class CustomCopyPaste : TreeGridCutCopyPaste
+{
+    public CustomCopyPaste(SfTreeGrid sfTreeGrid) : base(sfTreeGrid)
+    {
+
+    }
+
+    protected override void PasteRows(object clipBoardRows)
+    {
+        var copiedRecord = (string[])clipBoardRows;
+        int copiedRecordsCount = copiedRecord.Count();
+
+        //Based on the clipboard count added the new record for paste
+
+        if (copiedRecordsCount > 0)
+        {
+            //Get the viewModel for adding the record
+            var record = this.TreeGrid.DataContext as ViewModel;
+
+            for (int i = 0; i < copiedRecordsCount; i++)
+            {
+                //Create the new instance for Model, for adding the new record
+                PersonInfo entity = new PersonInfo();
+
+                for (int j = 0; j < this.TreeGrid.Columns.Count; j++)
+                {
+                    string[] values = Regex.Split(copiedRecord[i], @"\t");
+
+                    //Adding the new record by using PasteToCell method by passing the 
+
+                    //created data, particular column, and clipboard value
+                    this.PasteCell(entity, this.TreeGrid.Columns[j], values[j]);
+                }
+
+                //Added the pasted record in collection
+                record.PersonDetails.Add(entity);
+            }
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Paste data by custom column order
+
+The data can be pasted only from the first column, by default. However, you can paste the copied data anywhere in the grid by deriving a new class from [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) and overriding the [PasteRow](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_PasteRow_System_Object_System_Object_) virtual method.
+
+{% tabs %}
+{% highlight c# %}
+public class CustomCopyPaste : TreeGridCutCopyPaste
+{
+    public CustomCopyPaste(SfTreeGrid sfTreeGrid) : base(sfTreeGrid)
+    {
+
+    }
+
+    protected override void PasteRow(object clipboardContent, object selectedRecords)
+    {
+        // Splits the row into number of cells using \t.
+        clipboardContent = Regex.Split(clipboardContent.ToString(), @"\t");
+        var copyValue = (string[])clipboardContent;
+           
+            int columnIndex = 0;
+            //Gets the currentCell column index.
+            var index = this.TreeGrid.SelectionController.CurrentCellManager.CurrentCell.ColumnIndex;
+            foreach (var column in TreeGrid.Columns)
+            {
+                if (index >= TreeGrid.Columns.Count)
+                    return;
+                if (copyValue.Count() <= this.TreeGrid.Columns.IndexOf(column))
+                    break;
+                // Calls the PasteToCell method and passes the copied data and pastes the column index.
+                PasteCell(selectedRecords, this.TreeGrid.Columns[index], copyValue[columnIndex]);
+                index++;
+                columnIndex++;
+            }
+        }
+}
+
+{% endhighlight %}
+{% endtabs %}
