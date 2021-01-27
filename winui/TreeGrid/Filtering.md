@@ -78,7 +78,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 
 Here, `FilterNodes` delegate filters the data based on Salary. `FilterNodes` delegate is assigned to [SfTreeGrid.View.Filter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridView_Filter) method is called to refresh the nodes. If the node satisfies the filter conditions, true will be returned. Else false will be returned.
 
-![View filtering in SfTreeGrid](Filtering-images/Filtering_img1.png)
+![View filtering applied in winui treegrid for salary greater than 70000](Filtering-images/Filtering_img1.png)
 
 While filtering, if the node satisfies filter condition, [IsFiltered](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeNode.html#Syncfusion_UI_Xaml_TreeGrid_TreeNode_IsFiltered) property of [TreeNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeNode.html) will be set as false. Else, it will be true. If `IsFiltered` value is True, the node will not be displayed in view, else it will be displayed in view.
 
@@ -182,7 +182,7 @@ this.treeGrid.Columns["FirstName"].FilterPredicates.Add(
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple filter predicates for a column](Filtering-images/Filtering_img2.png)
+![Multiple filter predicates added for a column in winui treegrid](Filtering-images/Filtering_img2.png)
 
 ## UI filtering
 
@@ -218,11 +218,11 @@ By default, the filter pop-up mode of the column is set to Both. The check box a
 
 #### Checkbox filtering UI
 
-![Checkbox Filtering in SfTreeGrid](Filtering-images/Filtering_img3.png)
+![Checkbox Filter View in winui treegrid](Filtering-images/Filtering_img3.png)
 
 #### Advanced filtering UI
 
-![Advanced Filtering in SfTreeGrid](Filtering-images/Filtering_img4.png)
+![Advanced Filter View in winui treegrid](Filtering-images/Filtering_img4.png)
 
 ## Changing filter UI for grid
 
@@ -412,11 +412,11 @@ Here, the OK and Cancel buttons are unavailable and Done button is available to 
 
 The following screenshot illustrates the check box filter when `ImmediateUpdateColumnFilter` is set to `true`.
 
-![Immediate Checkbox Filtering in SfTreeGrid](Filtering-images/Filtering_img8.png)
+![Apply the immediate filter in CheckBox Filter view in winui treegrid](Filtering-images/Filtering_img8.png)
 
 The following screenshot illustrates the advanced filter when `ImmediateUpdateColumnFilter` is set to `true`.
 
-![Immediate Advanced Filtering in SfTreeGrid](Filtering-images/Filtering_img9.png)
+![Apply the immediate filter in Advanced Filter view in winui treegrid](Filtering-images/Filtering_img9.png)
 
 N> In check box filter, the `SelectAll` option is not reflected in the filter updates if [ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ImmediateUpdateColumnFilter) is true.
 
@@ -442,11 +442,11 @@ this.sfTreeGrid.Columns["FirstName"].AllowBlankFilters = true;
 
 The following screenshot illustrates the check box filter when `AllowBlankFilters` is set to `true`.
 
-![Blank filters in check box filtering](Filtering-images/Filtering_img10.png)
+![Filter the NULL values by using the CheckBox Filter view in winui treegrid](Filtering-images/Filtering_img10.png)
 
 The following screenshot illustrates advanced filter when `AllowBlankFilters` is set to `true`.
 
-![Blank filters in advanced filtering](Filtering-images/Filtering_img11.png)
+![Filter the NULL values by using the Advanced Filter view in winui treegrid](Filtering-images/Filtering_img11.png)
 
 ## Changing AdvancedFilter type when loading dynamic ItemsSource
 
@@ -568,7 +568,7 @@ private void OnSfTreeGridFilterItemsPopulating(object sender, TreeGridFilterItem
 {% endhighlight %}
 {% endtabs %}
 
-![Customized sort option text in TreeGridFilterControl](Filtering-images/Filtering_img12.png)
+![Customizing sort option text in TreeGridFilterControl in winui treegrid](Filtering-images/Filtering_img12.png)
 
 ## Appearance
 
@@ -593,7 +593,7 @@ xmlns:filtering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
 {% endhighlight %}
 {% endtabs %}
 
-![Collapsed sort options in TreeGridFilterControl](Filtering-images/Filtering_img13.png)
+![Hide sort options from TreeGridFilterControl in winui treegrid](Filtering-images/Filtering_img13.png)
 
 ### Customizing the filter popup size 
 
@@ -614,7 +614,7 @@ xmlns:filtering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
 {% endhighlight %}
 {% endtabs %}
 
-![TreeGridFilterControl with modified size](Filtering-images/Filtering_img14.png)
+![TreeGridFilterControl with modified size in winui treegrid](Filtering-images/Filtering_img14.png)
 
 ### Changing filter icon style after applying filters
 
@@ -695,4 +695,4 @@ The filter icon style can be changed by writing style with TargetType as [Filter
 {% endhighlight %}
 {% endtabs %}
 
-![Modified filtered icon style](Filtering-images/Filtering_img15.png)
+![Modified filtered icon style in winui treegrid](Filtering-images/Filtering_img15.png)
