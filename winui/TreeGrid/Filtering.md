@@ -84,8 +84,6 @@ While filtering, if the node satisfies filter condition, [IsFiltered](https://he
 
 N> SfTreeGrid refreshes the filtering on property change if [SfTreeGrid.LiveNodeUpdateMode ](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode) is set as `AllowDataShaping`.
 
-You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FilteringDemo-587565594).
-
 ### Clear filters
 
 You can clear the view filters applied in tree grid by setting the [SfTreeGrid.View.Filter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridView_Filter) delegate to null and calling the `SfTreeGrid.View.RefreshFilter` method.
