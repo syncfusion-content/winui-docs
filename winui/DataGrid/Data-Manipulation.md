@@ -9,7 +9,7 @@ documentation: ug
 
 # CRUD operations in WinUI DataGrid (SfDataGrid)
 
-DataGrid listens and responds to the CRUD operations such as add, delete and data update (property change) at runtime. Also, it supports [editing](https://help.syncfusion.com/winui/datagrid/editing), [add new row](https://help.syncfusion.com/winui/datagrid/data-manipulation#add-new-rows), [delete row](https://help.syncfusion.com/winui/datagrid/data-manipulation#deletion-row) by pressing <kbd>Delete</kbd> key.
+DataGrid listens and responds to the CRUD operations such as add, delete and data update (property change) at runtime. Also, it supports [editing](https://help.syncfusion.com/winui/datagrid/editing), [add new row](https://help.syncfusion.com/winui/datagrid/data-manipulation#add-new-rows), [delete row](https://help.syncfusion.com/winui/datagrid/data-manipulation#delete-row) by pressing <kbd>Delete</kbd> key.
 
 ## Managing data updates
 
@@ -495,7 +495,7 @@ xmlns:syncfusion="using:Syncfusion.UI.Xaml.DataGrid"
                                       VerticalAlignment="Center"
                                       Content="Add New Row"
                                       FontSize="16"
-									  BorderBrush="Gray"
+                                      BorderBrush="Gray"
                                       FontWeight="Light"
                                       Foreground="Red" />
                         </Border>
@@ -597,7 +597,7 @@ You can change the default static string of AddNewRow in details view grid by us
             <syncfusion:GridViewDefinition.DataGrid>
                 <syncfusion:SfDataGrid x:Name="firstLevelNestedGrid"
                                        AddNewRowPosition="Top"
-									   AddNewRowText="Click here to add new row in child grid"									   
+                                       AddNewRowText="Click here to add new row in child grid"									   
                                        AutoGenerateColumns="True" />
             </syncfusion:GridViewDefinition.DataGrid>
         </syncfusion:GridViewDefinition>
