@@ -461,11 +461,12 @@ By default, when paste the clipboard value to tree grid, it changes the values o
 
 {% tabs %}
 {% highlight c# %}
-public class CustomCopyPaste : TreeGridCutCopyPaste
+public class CustomClipboardController : TreeGridClipboardController
 {
-    public CustomCopyPaste(SfTreeGrid sfTreeGrid) : base(sfTreeGrid)
+    SfTreeGrid treeGrid { get; set; }
+    public CustomClipboardController(SfTreeGrid sfTreeGrid) : base(sfTreeGrid)
     {
-
+        this.treeGrid = sfTreeGrid;
     }
 
     protected override void PasteRows(object clipBoardRows)
@@ -474,29 +475,28 @@ public class CustomCopyPaste : TreeGridCutCopyPaste
         int copiedRecordsCount = copiedRecord.Count();
 
         //Based on the clipboard count added the new record for paste
-
         if (copiedRecordsCount > 0)
         {
             //Get the viewModel for adding the record
-            var record = this.TreeGrid.DataContext as ViewModel;
+            var record = this.treeGrid.DataContext as ViewModel;
 
             for (int i = 0; i < copiedRecordsCount; i++)
             {
                 //Create the new instance for Model, for adding the new record
-                PersonInfo entity = new PersonInfo();
+                EmployeeInfo entity = new EmployeeInfo();
 
-                for (int j = 0; j < this.TreeGrid.Columns.Count; j++)
+                for (int j = 0; j < this.treeGrid.Columns.Count; j++)
                 {
                     string[] values = Regex.Split(copiedRecord[i], @"\t");
 
                     //Adding the new record by using PasteToCell method by passing the 
 
                     //created data, particular column, and clipboard value
-                    this.PasteCell(entity, this.TreeGrid.Columns[j], values[j]);
+                    this.PasteCell(entity, this.treeGrid.Columns[j], values[j]);
                 }
 
                 //Added the pasted record in collection
-                record.PersonDetails.Add(entity);
+                record.Employees.Add(entity);
             }
         }
     }
@@ -507,15 +507,16 @@ public class CustomCopyPaste : TreeGridCutCopyPaste
 
 ### Paste data by custom column order
 
-The data can be pasted only from the first column, by default. However, you can paste the copied data anywhere in the grid by deriving a new class from [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) and overriding the [PasteRow](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_PasteRow_System_Object_System_Object_) virtual method.
+The data can be pasted only from the first column, by default. However, you can paste the copied data anywhere in the grid by deriving a new class from [TreeGridClipboardController](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridClipboardController.html) and overriding the [PasteRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridClipboardController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridClipboardController_PasteRow_System_Object_System_Object_) virtual method.
 
 {% tabs %}
 {% highlight c# %}
-public class CustomCopyPaste : TreeGridCutCopyPaste
+public class CustomClipboardController : TreeGridClipboardController
 {
-    public CustomCopyPaste(SfTreeGrid sfTreeGrid) : base(sfTreeGrid)
+    SfTreeGrid treeGrid { get; set; }
+    public CustomClipboardController(SfTreeGrid sfTreeGrid) : base(sfTreeGrid)
     {
-
+        this.treeGrid = sfTreeGrid;
     }
 
     protected override void PasteRow(object clipboardContent, object selectedRecords)
@@ -523,22 +524,22 @@ public class CustomCopyPaste : TreeGridCutCopyPaste
         // Splits the row into number of cells using \t.
         clipboardContent = Regex.Split(clipboardContent.ToString(), @"\t");
         var copyValue = (string[])clipboardContent;
-           
-            int columnIndex = 0;
-            //Gets the currentCell column index.
-            var index = this.TreeGrid.SelectionController.CurrentCellManager.CurrentCell.ColumnIndex;
-            foreach (var column in TreeGrid.Columns)
-            {
-                if (index >= TreeGrid.Columns.Count)
-                    return;
-                if (copyValue.Count() <= this.TreeGrid.Columns.IndexOf(column))
-                    break;
-                // Calls the PasteToCell method and passes the copied data and pastes the column index.
-                PasteCell(selectedRecords, this.TreeGrid.Columns[index], copyValue[columnIndex]);
-                index++;
-                columnIndex++;
-            }
+
+        int columnIndex = 0;
+        //Gets the currentCell column index.
+        var index = this.treeGrid.SelectionController.CurrentCellManager.CurrentCell.ColumnIndex;
+        foreach (var column in treeGrid.Columns)
+        {
+            if (index >= treeGrid.Columns.Count)
+                return;
+            if (copyValue.Count() <= this.treeGrid.Columns.IndexOf(column))
+                break;
+            // Calls the PasteToCell method and passes the copied data and pastes the column index.
+            PasteCell(selectedRecords, this.treeGrid.Columns[index], copyValue[columnIndex]);
+            index++;
+            columnIndex++;
         }
+    }
 }
 
 {% endhighlight %}
