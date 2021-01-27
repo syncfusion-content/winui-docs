@@ -47,8 +47,6 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {% endtabs %}
 
 
-N> View filter is not supported when ItemsSource is [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx).
-
 ### Column Filtering
 
 Column filtering is achieved by using [GridColumn.FilterPredicates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_FilterPredicates) property and adding [FilterPredicate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.FilterPredicate.html) to it.
@@ -67,7 +65,6 @@ sfDataGrid.Columns["OrderID"].FilterPredicates.Add(new FilterPredicate() { Filte
 * [StringTyped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.FilterBehavior.html#Syncfusion_UI_Xaml_Data_FilterBehavior_StringTyped) - Records are filtered without considering the type and it takes [FilterValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.FilterPredicate.html#Syncfusion_UI_Xaml_Data_FilterPredicate_FilterValue) type as string.
 * [StronglyTyped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.FilterBehavior.html#Syncfusion_UI_Xaml_Data_FilterBehavior_StronglyTyped) - Records are filtered by considering the `FilterValue` underlying type.
 
-N> When you use [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx) as items Source, [IsCaseSensitive](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.FilterPredicate.html#Syncfusion_UI_Xaml_Data_FilterPredicate_IsCaseSensitive) property in `FilterPredicate` is not applicable, since `DataTable` does not support CaseSensitive filtering.
 
 #### Improving performance while adding multiple FilterPredicates to the column in loop
 
@@ -156,7 +153,6 @@ sfDataGrid.Columns["OrderID"].AllowFiltering = true;
 
 N>
 1. `GridColumn.AllowFiltering` has higher priority than `SfDataGrid.AllowFiltering` property.
-2. UI filtering is not supported when using on-demand paging by setting `UseOnDemandPaging` to `true`.
 
 
 ### Built-in UI Views
@@ -359,7 +355,7 @@ When the DateTime type value is bound to the {{ '[GridColumn](https://help.syncf
 
 N>
 1. `Null` and `Not Null` options are available only when [AllowBlankFilters](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_AllowBlankFilters) is set to `True`.
-2. If the column is [GridUnboundColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundColumn.html) or `GridMaskColumn`, then `TextFilters` will be loaded.
+2. If the column is [GridUnboundColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundColumn.html), then `TextFilters` will be loaded.
 
 ### Changing Advanced Filter type
 
@@ -401,7 +397,6 @@ void sfDataGrid_FilterItemsPopulating(object sender, Syncfusion.UI.Xaml.DataGrid
 
 By default, casing is not considered while filtering. Because, filter predicates will be created with `IsCaseSensitive` as `false`. If you want to filter the records with `IsCaseSensitive` as `true`, you need to click case sensitive button present in Advanced Filter.
 
-N> When you use [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx) as items Source, CaseSensitive button will not be available in Filter popup as `DataTable` does not support CaseSensitive filtering.
 
 ## Performance tips
 
@@ -459,7 +454,7 @@ By default, filters are applied to the columns when OK button is clicked in UI f
 <syncfusion:GridTextColumn ImmediateUpdateColumnFilter="True" MappingName="OrderID" />
 {% endhighlight %}
 {% highlight c# %}
-dataGrid.Columns["OrderID"].ImmediateUpdateColumnFilter = true;
+sfDataGrid.Columns["OrderID"].ImmediateUpdateColumnFilter = true;
 {% endhighlight %}
 {% endtabs %}
 
@@ -489,7 +484,7 @@ xmlns:coreconverter="using:Syncfusion.UI.Xaml.Core.Converters"
 </Page.Resources>
 
 <syncfusion:GridTextColumn DisplayBinding="{Binding OrderDate, Converter={StaticResource stringFormatConverter}, ConverterParameter=\{0:dd/MM/yyyy\}}"
-                           HeaderText="Order Date" MappingName="OrderDate"  />
+                           HeaderText="Order Date" MappingName="OrderDate"  ColumnFilter="DisplayText" />
 {% endhighlight %}
 {% highlight c# %}
 sfDataGrid.Columns["OrderDate"].ColumnFilter = ColumnFilter.DisplayText;
@@ -665,9 +660,6 @@ public class StringToImageConverter : IValueConverter
 
 ![Apply the column filter for image in winui datagrid](Filtering_images/Filtering_img16.png)
 
-## Apply ICollectionView.Filter and DataView.RowFilter on initial loading
-
-By default, the default filter created by [ICollectionView.Filter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.ICollectionViewAdv.html#Syncfusion_UI_Xaml_Data_ICollectionViewAdv_Filter) and `DataView.RowFilter` will not be applied to the data on initial loading. These filters can be applied on initial loading by enabling [CanUseViewFilter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CanUseViewFilter) property. 
 
 ## Functionality Customization
 
@@ -693,7 +685,7 @@ void sfDdataGrid_FilterItemsPopulating(object sender, Syncfusion.UI.Xaml.Grid.Gr
     {
         e.FilterControl.AdvancedFilterType = AdvancedFilterType.TextFilter;
         e.FilterControl.SetColumnDataType(typeof(string));
-	    e.FilterControl.AscendingSortString = GridLocalizationResourceAccessor.Instance.GetLocalizedStringResource("SortStringAscending");
+        e.FilterControl.AscendingSortString = GridLocalizationResourceAccessor.Instance.GetLocalizedStringResource("SortStringAscending");
         e.FilterControl.DescendingSortString = GridLocalizationResourceAccessor.Instance.GetLocalizedStringResource("SortStringDescending"); 
     }
 }
@@ -714,7 +706,7 @@ You can achieve this by using `FilterItemsPopulating` event also. But in this ca
 
 ### Customizing Excel like Filter ItemsSource
 
-When you want to restrict some data from filtering, you need to customize the [GridFilterControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridFilterControl.html) `ItemsSource` by using `FilterItemsPopulated` event. Here,[FilterElement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.FilterElement.html) which has `ActualValue` as 1005 is removed from `ItemsSource`.
+When you want to restrict some data from filtering, you need to customize the [GridFilterControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridFilterControl.html) `ItemsSource` by using `FilterItemsPopulated` event. Here, [FilterElement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.FilterElement.html) which has `ActualValue` as 1005 is removed from `ItemsSource`.
 
 {% tabs %}
 {% highlight c# %}
@@ -802,7 +794,7 @@ void sfDataGrid_FilterItemsPopulating(object sender, GridFilterItemsPopulatingEv
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing SortOptions text from Filter popup in SfDataGrid WinUI](Filtering_images/Filtering_img15.png)
+![Customizing SortOptions text from Filter popup in SfDataGrid WinUI](Filtering_images/Filtering_img18.png)
 
 ### Customize the FilterPopup size using GridFilterControl style
 
