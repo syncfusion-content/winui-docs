@@ -47,8 +47,6 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {% endtabs %}
 
 
-N> View filter is not supported when ItemsSource is [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx).
-
 ### Column Filtering
 
 Column filtering is achieved by using [GridColumn.FilterPredicates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_FilterPredicates) property and adding [FilterPredicate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.FilterPredicate.html) to it.
@@ -67,7 +65,6 @@ sfDataGrid.Columns["OrderID"].FilterPredicates.Add(new FilterPredicate() { Filte
 * [StringTyped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.FilterBehavior.html#Syncfusion_UI_Xaml_Data_FilterBehavior_StringTyped) - Records are filtered without considering the type and it takes [FilterValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.FilterPredicate.html#Syncfusion_UI_Xaml_Data_FilterPredicate_FilterValue) type as string.
 * [StronglyTyped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.FilterBehavior.html#Syncfusion_UI_Xaml_Data_FilterBehavior_StronglyTyped) - Records are filtered by considering the `FilterValue` underlying type.
 
-N> When you use [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx) as items Source, [IsCaseSensitive](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.FilterPredicate.html#Syncfusion_UI_Xaml_Data_FilterPredicate_IsCaseSensitive) property in `FilterPredicate` is not applicable, since `DataTable` does not support CaseSensitive filtering.
 
 #### Improving performance while adding multiple FilterPredicates to the column in loop
 
@@ -358,7 +355,7 @@ When the DateTime type value is bound to the {{ '[GridColumn](https://help.syncf
 
 N>
 1. `Null` and `Not Null` options are available only when [AllowBlankFilters](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_AllowBlankFilters) is set to `True`.
-2. If the column is [GridUnboundColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundColumn.html) or `GridMaskColumn`, then `TextFilters` will be loaded.
+2. If the column is [GridUnboundColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundColumn.html), then `TextFilters` will be loaded.
 
 ### Changing Advanced Filter type
 
@@ -400,7 +397,6 @@ void sfDataGrid_FilterItemsPopulating(object sender, Syncfusion.UI.Xaml.DataGrid
 
 By default, casing is not considered while filtering. Because, filter predicates will be created with `IsCaseSensitive` as `false`. If you want to filter the records with `IsCaseSensitive` as `true`, you need to click case sensitive button present in Advanced Filter.
 
-N> When you use [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx) as items Source, CaseSensitive button will not be available in Filter popup as `DataTable` does not support CaseSensitive filtering.
 
 ## Performance tips
 
@@ -664,9 +660,6 @@ public class StringToImageConverter : IValueConverter
 
 ![Apply the column filter for image in winui datagrid](Filtering_images/Filtering_img16.png)
 
-## Apply ICollectionView.Filter and DataView.RowFilter on initial loading
-
-By default, the default filter created by [ICollectionView.Filter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.ICollectionViewAdv.html#Syncfusion_UI_Xaml_Data_ICollectionViewAdv_Filter) and `DataView.RowFilter` will not be applied to the data on initial loading. These filters can be applied on initial loading by enabling [CanUseViewFilter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CanUseViewFilter) property. 
 
 ## Functionality Customization
 
