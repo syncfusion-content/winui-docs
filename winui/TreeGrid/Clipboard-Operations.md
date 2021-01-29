@@ -33,7 +33,7 @@ You can use the IncludeHeaders, IncludeFormat, and IncludeHiddenColumn options a
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid
+<treeGrid:SfTreeGrid
                 Name="treeGrid"
                 CopyOption="CopyData,IncludeHeaders"
                 AllowFiltering="True"
@@ -71,7 +71,7 @@ You can use the ExcludeFirstLine and IncludeHiddenColumn options along with the 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid
+<treeGrid:SfTreeGrid
                 Name="treeGrid"
                 CopyOption="CopyData,IncludeHeaders"
                 PasteOption="PasteData,ExcludeFirstLine"
@@ -115,7 +115,7 @@ You can use the IncludeHeaders, IncludeFormat, and IncludeHiddenColumn options a
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid
+<treeGrid:SfTreeGrid
                 Name="treeGrid"
                 CopyOption="CutData,IncludeHeaders" 
                 AllowFiltering="True"

@@ -17,7 +17,7 @@ DataGrid manages the sorting, filtering, grouping and summaries during data upda
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}"
                        LiveDataUpdateMode="AllowDataShaping" />
@@ -270,7 +270,7 @@ N> The underlying data object must be defined with default constructor.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AddNewRowPosition="Top"
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}" />
@@ -305,7 +305,7 @@ You can change the default static string of AddNewRow in datagrid by using the [
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AddNewRowPosition="Top"
                        AddNewRowText="Click here to add new row in datagrid"
                        ItemsSource="{Binding Orders}" />
@@ -324,7 +324,7 @@ SfDataGrid adds new data item from AddNewRow at the end of collection. When data
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"                               
+<dataGrid:SfDataGrid x:Name="sfDataGrid"                               
                        AddNewRowPosition="Top"
                        NewItemPlaceholderPosition="AtBeginning"                            
                        ItemsSource="{Binding Orders}">
@@ -359,16 +359,16 @@ SfDataGrid control does not initiate values for complex properties defined in th
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AddNewRowInitiating="SfDataGrid_AddNewRowInitiating"
                        AutoGenerateColumns="False"
                        ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="OrderID" />
-        <syncfusion:GridTextColumn MappingName="Customer.CustomerID" />
-        <syncfusion:GridTextColumn MappingName="ShipCity" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn MappingName="OrderID" />
+        <dataGrid:GridTextColumn MappingName="Customer.CustomerID" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.AddNewRowInitiating += SfDataGrid_AddNewRowInitiating;
@@ -425,15 +425,15 @@ You can customize the watermark text of AddNewRow by editing the style of `AddNe
 
 {% tabs %}
 {% highlight xaml %}
-xmlns:syncfusion="using:Syncfusion.UI.Xaml.DataGrid"
+xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 
 <Application.Resources>
-    <Style TargetType="syncfusion:AddNewRowControl">
+    <Style TargetType="dataGrid:AddNewRowControl">
         <Setter Property="Background" Value="Transparent"/>    
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="syncfusion:AddNewRowControl">
+                <ControlTemplate TargetType="dataGrid:AddNewRowControl">
                     <Grid>
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="AddNewRowStates">
@@ -517,22 +517,22 @@ You can enable the AddNewRow in `DetailsViewDataGrid` by specifying the position
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AutoGenerateColumns="True"
                        AutoGenerateRelations="False"
                        ItemsSource="{Binding Orders}">
 
-    <syncfusion:SfDataGrid.DetailsViewDefinition>
-        <syncfusion:GridViewDefinition RelationalColumn="OrderDetails">
-            <syncfusion:GridViewDefinition.DataGrid>
-                <syncfusion:SfDataGrid x:Name="firstLevelNestedGrid"
+    <dataGrid:SfDataGrid.DetailsViewDefinition>
+        <dataGrid:GridViewDefinition RelationalColumn="OrderDetails">
+            <dataGrid:GridViewDefinition.DataGrid>
+                <dataGrid:SfDataGrid x:Name="firstLevelNestedGrid"
                                        AddNewRowPosition="Top"                                       
                                        AutoGenerateColumns="True" />
-            </syncfusion:GridViewDefinition.DataGrid>
-        </syncfusion:GridViewDefinition>
-    </syncfusion:SfDataGrid.DetailsViewDefinition>
+            </dataGrid:GridViewDefinition.DataGrid>
+        </dataGrid:GridViewDefinition>
+    </dataGrid:SfDataGrid.DetailsViewDefinition>
 
-</syncfusion:SfDataGrid>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.firstLevelNestedGrid.AddNewRowPosition = AddNewRowPosition.Top;
@@ -587,23 +587,23 @@ You can change the default static string of AddNewRow in details view grid by us
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AutoGenerateColumns="True"
                        AutoGenerateRelations="False"
                        ItemsSource="{Binding Orders}">
 
-    <syncfusion:SfDataGrid.DetailsViewDefinition>
-        <syncfusion:GridViewDefinition RelationalColumn="OrderDetails">
-            <syncfusion:GridViewDefinition.DataGrid>
-                <syncfusion:SfDataGrid x:Name="firstLevelNestedGrid"
+    <dataGrid:SfDataGrid.DetailsViewDefinition>
+        <dataGrid:GridViewDefinition RelationalColumn="OrderDetails">
+            <dataGrid:GridViewDefinition.DataGrid>
+                <dataGrid:SfDataGrid x:Name="firstLevelNestedGrid"
                                        AddNewRowPosition="Top"
                                        AddNewRowText="Click here to add new row in child grid"									   
                                        AutoGenerateColumns="True" />
-            </syncfusion:GridViewDefinition.DataGrid>
-        </syncfusion:GridViewDefinition>
-    </syncfusion:SfDataGrid.DetailsViewDefinition>
+            </dataGrid:GridViewDefinition.DataGrid>
+        </dataGrid:GridViewDefinition>
+    </dataGrid:SfDataGrid.DetailsViewDefinition>
 
-</syncfusion:SfDataGrid>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.firstLevelNestedGrid.AddNewRowPosition = AddNewRowPosition.Top;
@@ -619,7 +619,7 @@ DataGrid provides built-in support to delete the selected records in user interf
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AllowDeleting="True"
                         AutoGenerateColumns="True"
                         ItemsSource="{Binding Orders}" />

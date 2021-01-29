@@ -14,7 +14,7 @@ SfTreeGrid provides support for editing and it can be enabled or disabled by set
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                         ChildPropertyName="ReportsTo"
                         ColumnWidthMode="Star"
                         AutoGenerateColumns="False"
@@ -22,15 +22,15 @@ SfTreeGrid provides support for editing and it can be enabled or disabled by set
                         ItemsSource="{Binding Employees}"
                         ParentPropertyName="ID"
                         SelfRelationRootValue="-1" >
-    <syncfusion:SfTreeGrid.Columns>
-        <syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
-        <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <syncfusion:TreeGridTextColumn HeaderText="Employee ID" MappingName="ID" />
-        <syncfusion:TreeGridTextColumn MappingName="Title" />
-        <syncfusion:TreeGridTextColumn HeaderText="Salary" MappingName="Salary" />
-        <syncfusion:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
-    </syncfusion:SfTreeGrid.Columns>
-</syncfusion:SfTreeGrid>
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridTextColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" />
+        <treeGrid:TreeGridTextColumn HeaderText="Salary" MappingName="Salary" />
+        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -45,7 +45,7 @@ You can enable or disable editing for particular column by setting [TreeGridColu
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:TreeGridTextColumn AllowEditing="True"
+<treeGrid:TreeGridTextColumn AllowEditing="True"
                                 HeaderText="First Name" 
                                 MappingName="FirstName" />							
 {% endhighlight %}
@@ -69,7 +69,7 @@ You can enter into edit mode by pressing &lt;kbd&gt;F2&lt;/kbd&gt; key or clicki
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                         ChildPropertyName="ReportsTo"
                         ColumnWidthMode="Star"
                         AutoGenerateColumns="False"
@@ -97,7 +97,7 @@ MoveLast ֠places the cursor at the last of edit element loaded inside cell.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                         ChildPropertyName="ReportsTo"
                         ColumnWidthMode="Star"
                         AutoGenerateColumns="False"
@@ -452,7 +452,7 @@ You can prevent users from modifying the contents of a treegrid cell by settin
 
 {% tabs %}
 {% highlight xaml %}
-        <syncfusion:SfTreeGrid Name="treeGrid"
+        <treeGrid:SfTreeGrid Name="treeGrid"
                                ChildPropertyName="ReportsTo"
                                ColumnWidthMode="Star"
                                IsReadOnly="True"
@@ -474,7 +474,7 @@ You can enable or disable editing for particular column by setting [TreeGridColu
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:TreeGridTextColumn IsReadOnly="True" 
+<treeGrid:TreeGridTextColumn IsReadOnly="True" 
                                 HeaderText="First Name" 
                                 MappingName="FirstName" />
 {% endhighlight %}

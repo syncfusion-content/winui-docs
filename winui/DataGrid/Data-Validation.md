@@ -79,7 +79,7 @@ Enable built-in validation support by setting [SfDataGrid.DataValidationMode]((h
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         DataValidationMode="InView"
                         AutoGenerateColumns="True"
                         ItemsSource="{Binding Employees}"/>
@@ -714,19 +714,19 @@ You can validate the bound data based on [INotifyDataErrorInfo](https://docs.mic
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AutoGenerateColumns="True"
                         ItemsSource="{Binding OrdersDetails}">
-            <syncfusion:SfDataGrid.DetailsViewDefinition>
-                <syncfusion:GridViewDefinition RelationalColumn="OrderDetails">
-                    <syncfusion:GridViewDefinition.DataGrid>
-                        <syncfusion:SfDataGrid  x:Name="firstLevelDetailsViewGrid"  
+            <dataGrid:SfDataGrid.DetailsViewDefinition>
+                <dataGrid:GridViewDefinition RelationalColumn="OrderDetails">
+                    <dataGrid:GridViewDefinition.DataGrid>
+                        <dataGrid:SfDataGrid  x:Name="firstLevelDetailsViewGrid"  
                                                 AutoGenerateColumns="True"   
                                                 DataValidationMode="InView"/>
-                    </syncfusion:GridViewDefinition.DataGrid>
-                </syncfusion:GridViewDefinition>
-            </syncfusion:SfDataGrid.DetailsViewDefinition>
-</syncfusion:SfDataGrid>
+                    </dataGrid:GridViewDefinition.DataGrid>
+                </dataGrid:GridViewDefinition>
+            </dataGrid:SfDataGrid.DetailsViewDefinition>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -758,21 +758,21 @@ You can validate the cells using [CurrentCellValidating](https://help.syncfusion
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AutoGenerateColumns="True"
                         DataValidationMode="InView"
                         NavigationMode="Cell"
                         ItemsSource="{Binding OrdersDetails}">
-            <syncfusion:SfDataGrid.DetailsViewDefinition>
-                <syncfusion:GridViewDefinition RelationalColumn="OrderDetails">
-                    <syncfusion:GridViewDefinition.DataGrid>
-                        <syncfusion:SfDataGrid  x:Name="firstLevelDetailsViewGrid" 
+            <dataGrid:SfDataGrid.DetailsViewDefinition>
+                <dataGrid:GridViewDefinition RelationalColumn="OrderDetails">
+                    <dataGrid:GridViewDefinition.DataGrid>
+                        <dataGrid:SfDataGrid  x:Name="firstLevelDetailsViewGrid" 
                                                 AutoGenerateColumns="True"       CurrentCellValidating="FirstLevelDetailsViewGrid_CurrentCellValidating">
-                        </syncfusion:SfDataGrid>
-                    </syncfusion:GridViewDefinition.DataGrid>
-                </syncfusion:GridViewDefinition>
-            </syncfusion:SfDataGrid.DetailsViewDefinition>
-</syncfusion:SfDataGrid>
+                        </dataGrid:SfDataGrid>
+                    </dataGrid:GridViewDefinition.DataGrid>
+                </dataGrid:GridViewDefinition>
+            </dataGrid:SfDataGrid.DetailsViewDefinition>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -798,25 +798,25 @@ private void FirstLevelDetailsViewGrid_CurrentCellValidating(object sender, Curr
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AutoGenerateColumns="True"
                         DataValidationMode="InView"
                         NavigationMode="Cell"
                         ItemsSource="{Binding OrdersDetails}"
                         AllowEditing="True">
-    <syncfusion:SfDataGrid.DetailsViewDefinition>
-        <syncfusion:GridViewDefinition RelationalColumn="OrderDetails">
-            <syncfusion:GridViewDefinition.DataGrid>
-                <syncfusion:SfDataGrid  x:Name="firstLevelDetailsViewGrid" 
+    <dataGrid:SfDataGrid.DetailsViewDefinition>
+        <dataGrid:GridViewDefinition RelationalColumn="OrderDetails">
+            <dataGrid:GridViewDefinition.DataGrid>
+                <dataGrid:SfDataGrid  x:Name="firstLevelDetailsViewGrid" 
                                         AutoGenerateColumns="True" 
                                         CurrentCellValidated="FirstLevelDetailsViewGrid_CurrentCellValidated" 
                                         AllowEditing="True" 
                                         DataValidationMode="InView">
-                 </syncfusion:SfDataGrid>
-             </syncfusion:GridViewDefinition.DataGrid>
-         </syncfusion:GridViewDefinition>
-     </syncfusion:SfDataGrid.DetailsViewDefinition>
- </syncfusion:SfDataGrid>
+                 </dataGrid:SfDataGrid>
+             </dataGrid:GridViewDefinition.DataGrid>
+         </dataGrid:GridViewDefinition>
+     </dataGrid:SfDataGrid.DetailsViewDefinition>
+ </dataGrid:SfDataGrid>
 
 {% endhighlight %}
 {% endtabs %}
@@ -859,23 +859,23 @@ The `RowValidating` event occurs when edited cells tries to commit the row data 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AutoGenerateColumns="True"
                         DataValidationMode="InView"
                         ItemsSource="{Binding OrdersDetails}">
-            <syncfusion:SfDataGrid.DetailsViewDefinition>
-                <syncfusion:GridViewDefinition RelationalColumn="OrderDetails">
-                    <syncfusion:GridViewDefinition.DataGrid>
-                        <syncfusion:SfDataGrid x:Name="firstLevelDetailsViewGrid" 
+            <dataGrid:SfDataGrid.DetailsViewDefinition>
+                <dataGrid:GridViewDefinition RelationalColumn="OrderDetails">
+                    <dataGrid:GridViewDefinition.DataGrid>
+                        <dataGrid:SfDataGrid x:Name="firstLevelDetailsViewGrid" 
                                                AutoGenerateColumns="True" 
                                                AllowEditing="True" 
                                                DataValidationMode="InView"
                                                RowValidating="FirstLevelDetailsViewGrid_RowValidating">
-                        </syncfusion:SfDataGrid>
-                    </syncfusion:GridViewDefinition.DataGrid>
-                </syncfusion:GridViewDefinition>
-            </syncfusion:SfDataGrid.DetailsViewDefinition>
-</syncfusion:SfDataGrid>
+                        </dataGrid:SfDataGrid>
+                    </dataGrid:GridViewDefinition.DataGrid>
+                </dataGrid:GridViewDefinition>
+            </dataGrid:SfDataGrid.DetailsViewDefinition>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 <br/>
@@ -900,22 +900,22 @@ private void FirstLevelDetailsViewGrid_RowValidating(object sender, RowValidatin
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AutoGenerateColumns="True"
                         ItemsSource="{Binding OrdersDetails}">
-            <syncfusion:SfDataGrid.DetailsViewDefinition>
-                <syncfusion:GridViewDefinition RelationalColumn="OrderDetails">
-                    <syncfusion:GridViewDefinition.DataGrid>
-                        <syncfusion:SfDataGrid x:Name="firstLevelDetailsViewGrid" 
+            <dataGrid:SfDataGrid.DetailsViewDefinition>
+                <dataGrid:GridViewDefinition RelationalColumn="OrderDetails">
+                    <dataGrid:GridViewDefinition.DataGrid>
+                        <dataGrid:SfDataGrid x:Name="firstLevelDetailsViewGrid" 
                                                AutoGenerateColumns="True" 
                                                AllowEditing="True" 
                                                DataValidationMode="InView"
                                                RowValidated="FirstLevelDetailsViewGrid_RowValidated">
-                        </syncfusion:SfDataGrid>
-                    </syncfusion:GridViewDefinition.DataGrid>
-                </syncfusion:GridViewDefinition>
-            </syncfusion:SfDataGrid.DetailsViewDefinition>
-</syncfusion:SfDataGrid>
+                        </dataGrid:SfDataGrid>
+                    </dataGrid:GridViewDefinition.DataGrid>
+                </dataGrid:GridViewDefinition>
+            </dataGrid:SfDataGrid.DetailsViewDefinition>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 <br/>
