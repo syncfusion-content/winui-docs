@@ -17,7 +17,7 @@ This section explains about various row types in SfDataGrid.
 
 [SummaryRow](https://help.syncfusion.com/winui/datagrid/summaries)
 
-[UnboundRow](https://help.syncfusion.com/winui/datagrid/unbound-rows)
+`UnboundRow`
 
 ## Row Header
 
@@ -77,15 +77,7 @@ Denotes row is AddNewRow.
 <img src="Rows_images/Rows_img5.png"/>
 </td>
 <td>
-Denotes the row has errors. 
-</td>
-</tr>
-<tr>
-<td>
-<img src="Rows_images/Rows_img6.png"/>
-</td>
-<td>
-Denotes that the current row which has errors.
+Denotes the row has errors or current row which has errors. 
 </td>
 </tr>
 </table>
@@ -299,11 +291,11 @@ sfDataGrid.FrozenFooterRowsCount = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![Show the Fotter column, Footer rows, Frozen column , Frozen rows in SfDataGrid](Rows_images/Rows_img9.png)
+![Shown the Frozen footer column, Frozen column, Frozen rows , Frozen footer rows in SfDataGrid](Rows_images/Rows_img9.png)
 
 ### Differentiate frozen rows from normal rows
 
-You can differentiate the frozen rows and footer rows from normal rows by writing style for [VirtualizingCellsControl](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html) and by customizing the `FrozenRow` and `FooterRow` visual states.
+You can differentiate the frozen rows and footer rows from normal rows by writing style for [DataGridRowControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridRowControl.html) and by customizing the `FrozenRow` and `FooterRow` visual states.
 
 
 {% tabs %}
@@ -390,7 +382,7 @@ You can differentiate the frozen rows and footer rows from normal rows by writin
 {% endhighlight %}
 {% endtabs %}
 
-![Show the differentiation of Frozen Rows and Fotter Rows from normal rows](Rows_images/Rows_img10.png)
+![Show the differentiation of Frozen Rows and Footer Rows from normal rows](Rows_images/Rows_img10.png)
 
 ### Disable drag and drop between frozen and non-frozen columns
 
@@ -407,15 +399,15 @@ void SfDataGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs 
 {
     if (e.Reason == QueryColumnDraggingReason.Dropping)
     {
-        //used to get frozen column index from the  frozen column count
-        var frozenColIndex = dataGrid.FrozenColumnCount +
-                                              this.dataGrid.ResolveToStartColumnIndex();
-        //cancels dragging from frozen column to non-frozen column
+        //used to get frozen column index from the  frozen column count.
+        var frozenColIndex = sfDataGrid.FrozenColumnCount +
+                                              this.sfDataGrid.ResolveToStartColumnIndex();
+        //cancels dragging from frozen column to non-frozen column.
 
         if (e.From < frozenColIndex && e.To > frozenColIndex - 1)
             e.Cancel = true;
 
-        // cancels dragging from non-frozen column to frozen column
+        // cancels dragging from non-frozen column to frozen column.
 
         if (e.From > frozenColIndex && e.To < frozenColIndex ||
              (e.From == frozenColIndex && e.To < frozenColIndex))
@@ -434,6 +426,6 @@ void SfDataGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs 
 
 3. SfDataGrid has support to freeze the number of rows from top or bottom. There is no support to freeze a specific row.
 
-N> 
-1. Header rows, table summary rows and row header are frozen regardless of `FrozenRowsCount` and `FooterRowsCount`.
-2. `FrozenRowsCount` and `FooterRowsCount` values should be less than the number of rows and column visible.
+N>
+1. Header rows, table summary rows and row header are frozen regardless of `FrozenRowsCount` and `FrozenFooterRowsCount`.
+2. `FrozenRowsCount` and `FrozenFooterRowsCount` values should be less than the number of rows and column visible.
