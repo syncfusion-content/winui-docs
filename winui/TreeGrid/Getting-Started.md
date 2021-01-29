@@ -457,22 +457,22 @@ You can prevent the automatic column generation by setting [SfTreeGrid.AutoGener
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid x:Name="sfTreeGrid" 
+<treeGrid:SfTreeGrid x:Name="sfTreeGrid" 
                         ChildPropertyName="ReportsTo"
                         AllowEditing="True"
                         ColumnWidthMode="Auto"
                         ItemsSource="{Binding Employees}"
                         ParentPropertyName="ID"
                         SelfRelationRootValue="-1">
-    <syncfusion:SfTreeGrid.Columns>
-        <syncfusion:TreeGridTextColumn HeaderText="First Name"    MappingName="FirstName" />
-        <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <syncfusion:TreeGridTextColumn HeaderText="ID"  MappingName="ID"/>
-        <syncfusion:TreeGridTextColumn HeaderText="Title" MappingName="Title" />
-        <syncfusion:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
-        <syncfusion:TreeGridTextColumn MappingName="Salary"/>
-    </syncfusion:SfTreeGrid.Columns>
-</syncfusion:SfTreeGrid>
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn HeaderText="First Name"    MappingName="FirstName" />
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridTextColumn HeaderText="ID"  MappingName="ID"/>
+        <treeGrid:TreeGridTextColumn HeaderText="Title" MappingName="Title" />
+        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+        <treeGrid:TreeGridTextColumn MappingName="Salary"/>
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
 
 {% endhighlight %}
 {% endtabs %}

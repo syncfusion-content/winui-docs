@@ -432,21 +432,21 @@ SfTreeGrid control allows you to define the columns manually by adding desired c
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                         AutoGenerateColumns="False"
                         ChildPropertyName="ReportsTo"
                         ItemsSource="{Binding EmployeeInfo}"
                         ParentPropertyName="ID"
                         SelfRelationRootValue="-1">
-    <syncfusion:SfTreeGrid.Columns>
-        <syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
-        <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <syncfusion:TreeGridTextColumn HeaderText="Employee ID" MappingName="ID" />
-        <syncfusion:TreeGridTextColumn MappingName="Title" />
-        <syncfusion:TreeGridTextColumn MappingName="Salary" />
-        <syncfusion:TreeGridTextColumn MappingName="ReportsTo" />
-    </syncfusion:SfTreeGrid.Columns>
-</syncfusion:SfTreeGrid>
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridTextColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" />
+        <treeGrid:TreeGridTextColumn MappingName="Salary" />
+        <treeGrid:TreeGridTextColumn MappingName="ReportsTo" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% highlight c# %}
 treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", HeaderText = "First Name" });
@@ -518,7 +518,7 @@ N> Resizing considers MinWidth and MaxWidth of column.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                 AllowResizingColumns="True"
                 AutoGenerateColumns="False"
                 ChildPropertyName="ReportsTo"
@@ -578,7 +578,7 @@ You can allow end-users to rearrange the columns by drag and drop the column hea
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                         AllowDraggingColumns="True"
                         AutoGenerateColumns="False"
                         ChildPropertyName="ReportsTo"
@@ -594,7 +594,7 @@ You can enable or disable dragging on particular column using [TreeGridColumn.Al
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:TreeGridTextColumn AllowDragging="True"
+<treeGrid:TreeGridTextColumn AllowDragging="True"
                                 HeaderText="First Name"
                                 MappingName="FirstName" />
 {% endhighlight %}
@@ -634,7 +634,7 @@ You can freeze the columns in view at the left and right side like in excel by s
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTreeGrid Name="treeGrid" 
+<treeGrid:SfTreeGrid Name="treeGrid" 
                         AutoExpandMode="RootNodesExpanded"
                         ChildPropertyName="Children"
                         FrozenColumnCount="2"
@@ -665,7 +665,7 @@ Each [StackedHeaderRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
     x:Class="StackedHeaderDemo.MainPage"
     xmlns:local="using:StackedHeaderDemo"
     xmlns:treeGrid="using:Syncfusion.UI.Xaml.TreeGrid"
-    xmlns:grid="using:Syncfusion.UI.Xaml.Grid">
+    xmlns:grid="using:Syncfusion.UI.Xaml.Grids">
 
 <treeGrid:SfTreeGrid Name="treeGrid"
                         AutoGenerateColumns="False"
@@ -802,15 +802,15 @@ Below code, binds the `ViewModel.AllowEditing` property to `TreeGridColumn. Allo
     <local:ViewModel/>
 </Page.DataContext>
 
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                         AllowEditing="False"
                         AutoExpandMode="AllNodesExpanded"
                         AutoGenerateColumns="False"
                         ChildPropertyName="ReportsTo"
                         ParentPropertyName="ID">
-    <syncfusion:SfTreeGrid.Columns>
-        <syncfusion:TreeGridTextColumn AllowEditing="{Binding AllowEditing}" MappingName="ID" />
-    </syncfusion:SfTreeGrid.Columns>
-</syncfusion:SfTreeGrid>
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn AllowEditing="{Binding AllowEditing}" MappingName="ID" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}

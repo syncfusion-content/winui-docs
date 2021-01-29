@@ -86,7 +86,7 @@ Below code, applies `GridLengthUnitType.Star` to equally set width for `SfTreeGr
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                 AllowEditing="True"
         ColumnWidthMode="Star"
         AutoExpandMode="AllNodesExpanded"
@@ -95,18 +95,18 @@ Below code, applies `GridLengthUnitType.Star` to equally set width for `SfTreeGr
         ItemsSource="{Binding Employees}"
         ParentPropertyName="ID"
         SelfRelationRootValue="-1" >
-    <syncfusion:SfTreeGrid.Columns>
-        <syncfusion:TreeGridTextColumn HeaderText="Employee ID" MappingName="ID" />
-        <syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
-        <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName"   />
-        <syncfusion:TreeGridCheckBoxColumn HeaderText="Availability" MappingName="AvailabilityStatus" />
-        <syncfusion:TreeGridTextColumn DisplayBinding="{Binding Salary,
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName"   />
+        <treeGrid:TreeGridCheckBoxColumn HeaderText="Availability" MappingName="AvailabilityStatus" />
+        <treeGrid:TreeGridTextColumn DisplayBinding="{Binding Salary,
                                         Converter={StaticResource converter}}"
                                         HeaderText="Salary"
                                         MappingName="Salary" />
-        <syncfusion:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
-    </syncfusion:SfTreeGrid.Columns>
-</syncfusion:SfTreeGrid>
+        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% highlight c# %}
 public class DisplayBindingConverter : IValueConverter
@@ -323,7 +323,7 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                 AllowEditing="True"
         ColumnWidthMode="Star"
         AutoExpandMode="AllNodesExpanded"
@@ -332,22 +332,22 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
         ItemsSource="{Binding Employees}"
         ParentPropertyName="ID"
         SelfRelationRootValue="-1" >
-    <syncfusion:SfTreeGrid.Columns>
-        <syncfusion:TreeGridTextColumn HeaderText="Employee ID" 
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn HeaderText="Employee ID" 
 									MappingName="ID" 
 									TextAlignment="Left" 
 									local:StarRatio.ColumnRatio="1" />
-        <syncfusion:TreeGridTextColumn HeaderText="First Name" 
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" 
 									MappingName="FirstName" 
 									local:StarRatio.ColumnRatio="2" />
-        <syncfusion:TreeGridTextColumn HeaderText="Last Name" 
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" 
 									MappingName="LastName" 
 									local:StarRatio.ColumnRatio="3"/>
-        <syncfusion:TreeGridCheckBoxColumn HeaderText="Availability" MappingName="AvailabilityStatus" />
-        <syncfusion:TreeGridTextColumn HeaderText="Salary" MappingName="Salary" />
-        <syncfusion:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
-    </syncfusion:SfTreeGrid.Columns>
-</syncfusion:SfTreeGrid>
+        <treeGrid:TreeGridCheckBoxColumn HeaderText="Availability" MappingName="AvailabilityStatus" />
+        <treeGrid:TreeGridTextColumn HeaderText="Salary" MappingName="Salary" />
+        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
 	
 {% endhighlight %}
 {% endtabs %}

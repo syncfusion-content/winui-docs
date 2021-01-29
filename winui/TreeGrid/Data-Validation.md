@@ -66,7 +66,7 @@ Enable built-in validation support by setting `SfTreeGrid.DataValidationMode` or
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid" 
+<treeGrid:SfTreeGrid Name="treeGrid" 
                         ChildPropertyName="ReportsTo"
                         ParentPropertyName="ID"
                         AllowEditing="True"
@@ -235,13 +235,13 @@ You can change the validation error template shape of the `TreeGridCell` by ch
         <ResourceDictionary.MergedDictionaries>
             <ResourceDictionary Source="ms-appx:///Syncfusion.Grid.WinUI/SfTreeGrid/Themes/Generic.xaml" />
     </ResourceDictionary.MergedDictionaries>
-        <Style TargetType="syncfusion:TreeGridCell">
+        <Style TargetType="treeGrid:TreeGridCell">
             <Setter Property="Background" Value="Transparent" />
             <Setter Property="BorderThickness" Value="0,0,1,1" />
             <Setter Property="Padding" Value="0" />
             <Setter Property="Template">
                 <Setter.Value>
-                    <ControlTemplate TargetType="syncfusion:TreeGridCell">
+                    <ControlTemplate TargetType="treeGrid:TreeGridCell">
                         <Grid x:Name="Root"
                             Background="{TemplateBinding Background}"
                             BorderBrush="{TemplateBinding BorderBrush}"
@@ -311,13 +311,13 @@ You can change the validation error template color of the `TreeGridCell` by cha
         <ResourceDictionary.MergedDictionaries>
             <ResourceDictionary Source="ms-appx:///Syncfusion.Grid.WinUI/SfTreeGrid/Themes/Generic.xaml" />
         </ResourceDictionary.MergedDictionaries>
-        <Style TargetType="syncfusion:TreeGridCell">
+        <Style TargetType="treeGrid:TreeGridCell">
             <Setter Property="Background" Value="Transparent" />
             <Setter Property="BorderThickness" Value="0,0,1,1" />
             <Setter Property="Padding" Value="0" />
             <Setter Property="Template">
                 <Setter.Value>
-                    <ControlTemplate TargetType="syncfusion:TreeGridCell">
+                    <ControlTemplate TargetType="treeGrid:TreeGridCell">
                         <Grid x:Name="Root"
                     Background="{TemplateBinding Background}"
                     BorderBrush="{TemplateBinding BorderBrush}"

@@ -237,7 +237,7 @@ xmlns:treeGridFiltering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
     <Setter Property="FilterMode" Value="AdvancedFilter" />
 </Style>
 
-<syncfusion:SfTreeGrid Name="sfTreeGrid"
+<treeGrid:SfTreeGrid Name="sfTreeGrid"
                            FilterPopupStyle="{StaticResource filterControlStyle}"
                            AllowFiltering="True”
                            ItemsSource="{Binding EmployeeDetails}" />
@@ -258,7 +258,7 @@ xmlns:treeGridFiltering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
     <Setter Property="FilterMode" Value="AdvancedFilter" />
 </Style>
 
-<syncfusion:TreeGridTextColumn MappingName="FirstName"
+<treeGrid:TreeGridTextColumn MappingName="FirstName"
                                FilterPopupStyle="{StaticResource filterControlStyle}"/>
 
 {% endhighlight %}
@@ -277,12 +277,12 @@ xmlns:treeGridFiltering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
     <Setter Property="FilterMode" Value="AdvancedFilter" />
 </Style>
 
-<syncfusion:SfTreeGrid Name="sfTreeGrid"
+<treeGrid:SfTreeGrid Name="sfTreeGrid"
                            FilterPopupStyle="{StaticResource filterControlStyle}"
                            AllowFiltering="True”
                            ItemsSource="{Binding EmployeeDetails}" />
 
-<syncfusion:TreeGridTextColumn MappingName="LastName" FilterPopupStyle="{x:Null}"/>
+<treeGrid:TreeGridTextColumn MappingName="LastName" FilterPopupStyle="{x:Null}"/>
 
 {% endhighlight %}
 {% endtabs %}
@@ -394,7 +394,7 @@ By default, filters are applied to the columns when OK button is clicked in UI f
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:TreeGridTextColumn MappingName="EmployeeID" 
+<treeGrid:TreeGridTextColumn MappingName="EmployeeID" 
                                ImmediateUpdateColumnFilter="True"/>
 
 {% endhighlight %}
@@ -427,7 +427,7 @@ To filter the null values, the [TreeGridColumn.AllowBlankFilters](https://help.s
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:TreeGridTextColumn MappingName="FirstName" AllowBlankFilters="True"/>
+<treeGrid:TreeGridTextColumn MappingName="FirstName" AllowBlankFilters="True"/>
 
 {% endhighlight %}
 {% endtabs %}
@@ -585,7 +585,7 @@ xmlns:treeGridFiltering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
     <Setter Property="SortOptionVisibility" Value="Collapsed"/>
 </Style>
 
-<syncfusion:SfTreeGrid Name="sfTreeGrid"
+<treeGrid:SfTreeGrid Name="sfTreeGrid"
                            FilterPopupStyle="{StaticResource filterControlStyle}"
                            AllowFiltering="True”
                            ItemsSource="{Binding EmployeeDetails}" />
