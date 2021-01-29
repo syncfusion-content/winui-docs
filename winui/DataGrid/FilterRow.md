@@ -20,7 +20,7 @@ The `FilterRowPosition` property contains the below positions to load the Filter
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        FilterRowPosition="FixedTop"
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}"/>
@@ -118,7 +118,7 @@ Based on the editor type, FilterRowCell displays the filter conditions in dropdo
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:GridNumericColumn MappingName="OrderID" 
+<dataGrid:GridNumericColumn MappingName="OrderID" 
                               FilterRowOptionsVisibility="Collapsed"
                               FilterRowEditorType="Numeric"/>
 {% endhighlight %}
@@ -197,7 +197,7 @@ You can change the default FilterRow condition for a corresponding column by usi
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:GridNumericColumn MappingName="OrderID" 
+<dataGrid:GridNumericColumn MappingName="OrderID" 
                               FilterRowCondition="LessThanOrEqual"
                               FilterRowEditorType="Numeric"/>
 {% endhighlight %}
@@ -215,7 +215,7 @@ When null value filtering is enabled, the filter options loaded with two additio
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:GridTextColumn MappingName="OrderID" 
+<dataGrid:GridTextColumn MappingName="OrderID" 
                               AllowBlankFilters="False"
                               FilterRowEditorType="Numeric"/>
 {% endhighlight %}
@@ -228,7 +228,7 @@ this.sfDataGrid.Columns[0].AllowBlankFilters = false;
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:GridTextColumn MappingName="OrderID"
+<dataGrid:GridTextColumn MappingName="OrderID"
                            AllowBlankFilters="True"
                            FilterRowEditorType="Numeric"/>
 {% endhighlight %}
@@ -245,7 +245,7 @@ By default, filters are applied to the columns when moving to other cells or pre
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:GridTextColumn MappingName="CustomerName"
+<dataGrid:GridTextColumn MappingName="CustomerName"
                            FilterRowEditorType="TextBox"
                            ImmediateUpdateColumnFilter="True"/>
 {% endhighlight %}
@@ -276,7 +276,7 @@ You can collapse the FilterOption button using `FilterRowOptionsVisibility` prop
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:GridNumericColumn MappingName="OrderID" 
+<dataGrid:GridNumericColumn MappingName="OrderID" 
                               FilterRowOptionsVisibility="Collapsed"/>
 {% endhighlight %}
 {% endtabs %}
@@ -290,7 +290,7 @@ You can customize the style of filter row by writing style of TargetType [Filte
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-    <Style TargetType="syncfusion:FilterRowControl">
+    <Style TargetType="dataGrid:FilterRowControl">
         <Setter Property="Background" Value="BlanchedAlmond"/>
     </Style>
 </Page.Resources>
@@ -351,7 +351,7 @@ You can customize the default TextBox editor behavior by overriding `GridFilterR
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:GridTextColumn MappingName="CustomerName"
+<dataGrid:GridTextColumn MappingName="CustomerName"
                            FilterRowEditorType="TextBoxExt"/>
 {% endhighlight %}
 {% highlight c# %}

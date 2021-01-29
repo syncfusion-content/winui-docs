@@ -27,19 +27,19 @@ The TreeView provides support for the following built-in commands
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeView x:Name="sfTreeView"
+<treeView:SfTreeView x:Name="sfTreeView"
 				ItemsSource="{Binding Folders}"
 				ChildPropertyName="SubFiles"
                 AllowEditing="True"
                 SelectionMode="Multiple">
-		<syncfusion:SfTreeView.ItemContextFlyout>
+		<treeView:SfTreeView.ItemContextFlyout>
             <MenuFlyout>
-                <MenuFlyoutItem x:Name="Edit" Text="Edit" Command="{x:Bind syncfusion:TreeViewCommands.Edit}" CommandParameter="{Binding }"/>
-                <MenuFlyoutItem x:Name="DeleteNode" Text="Delete Node" Command="{x:Bind syncfusion:TreeViewCommands.DeleteNode}" CommandParameter="{Binding }"/>
-                <MenuFlyoutItem x:Name="DeleteSelectedNodes" Text="Delete Selected Nodes" Command="{x:Bind syncfusion:TreeViewCommands.DeleteSelectedNodes}" CommandParameter="{Binding }"/>
+                <MenuFlyoutItem x:Name="Edit" Text="Edit" Command="{x:Bind treeView:TreeViewCommands.Edit}" CommandParameter="{Binding }"/>
+                <MenuFlyoutItem x:Name="DeleteNode" Text="Delete Node" Command="{x:Bind treeView:TreeViewCommands.DeleteNode}" CommandParameter="{Binding }"/>
+                <MenuFlyoutItem x:Name="DeleteSelectedNodes" Text="Delete Selected Nodes" Command="{x:Bind treeView:TreeViewCommands.DeleteSelectedNodes}" CommandParameter="{Binding }"/>
             </MenuFlyout>
-        </syncfusion:SfTreeView.ItemContextFlyout>
-</syncfusion:SfTreeView>
+        </treeView:SfTreeView.ItemContextFlyout>
+</treeView:SfTreeView>
 {% endhighlight %}
 {% endtabs %}
 
@@ -53,17 +53,17 @@ For an example, custom command is used to expand the nodes using context flyout 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeView x:Name="sfTreeView"
+<treeView:SfTreeView x:Name="sfTreeView"
 				ItemsSource="{Binding Folders}"
 				ChildPropertyName="SubFiles"
                 AllowEditing="True"
                 SelectionMode="Multiple">
-    <syncfusion:SfTreeView.ItemContextFlyout>
+    <treeView:SfTreeView.ItemContextFlyout>
         <MenuFlyout>
             <MenuFlyoutItem x:Name="Expand" Text="Expand" Command="{Binding TreeView.DataContext.ExpandCommand}" CommandParameter="{Binding }"/>
         </MenuFlyout>
-    </syncfusion:SfTreeView.ItemContextFlyout>
-</syncfusion:SfTreeView>
+    </treeView:SfTreeView.ItemContextFlyout>
+</treeView:SfTreeView>
 {% endhighlight %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Core;
