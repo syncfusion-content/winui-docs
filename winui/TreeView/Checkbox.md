@@ -30,7 +30,7 @@ N> TreeView process and sets [TreeViewNode.IsChecked](https://help.syncfusion.co
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:local="using:syncfusion.treeviewdemos.winui"
-      xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeView"
+      xmlns:treeView="using:Syncfusion.UI.Xaml.TreeView"
       mc:Ignorable="d"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
       NavigationCacheMode="Disabled">
@@ -40,7 +40,7 @@ N> TreeView process and sets [TreeViewNode.IsChecked](https://help.syncfusion.co
 </Page.DataContext>
 
 <Grid>
-    <syncfusion:SfTreeView x:Name="treeView"
+    <treeView:SfTreeView x:Name="treeView"
                            AutoExpandMode="AllNodes"
                            BorderBrush="LightGray"
                            BorderThickness="1"
@@ -52,7 +52,7 @@ N> TreeView process and sets [TreeViewNode.IsChecked](https://help.syncfusion.co
                            ItemTemplateDataContextType="Node"
                            ItemsSource="{Binding Items}"
                            NodePopulationMode="Instant">
-                    <syncfusion:SfTreeView.ItemTemplate>
+                    <treeView:SfTreeView.ItemTemplate>
                         <DataTemplate>
                             <Grid>
                                 <CheckBox x:Name="checkBox"
@@ -61,8 +61,8 @@ N> TreeView process and sets [TreeViewNode.IsChecked](https://help.syncfusion.co
                                           local:NullableTreeCheckbox.IsChecked="{Binding IsChecked, Mode=TwoWay}" />
                             </Grid>
                         </DataTemplate>
-                    </syncfusion:SfTreeView.ItemTemplate>
-    </syncfusion:SfTreeView>
+                    </treeView:SfTreeView.ItemTemplate>
+    </treeView:SfTreeView>
 </Grid>
 </Page>
 
@@ -350,7 +350,7 @@ You can directly set the checkbox state by setting the [TreeViewNode.IsChecked](
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:local="using:syncfusion.treeviewdemos.winui"
-      xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeView"
+      xmlns:treeView="using:Syncfusion.UI.Xaml.TreeView"
       xmlns:Engine="using:Syncfusion.UI.Xaml.TreeView.Engine"
       mc:Ignorable="d"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
@@ -364,7 +364,7 @@ You can directly set the checkbox state by setting the [TreeViewNode.IsChecked](
                            IsAnimationEnabled="True"
                            ItemTemplateDataContextType="Node"
                            CheckBoxMode="Recursive">
-                    <syncfusion:SfTreeView.Nodes>
+                    <treeView:SfTreeView.Nodes>
                         <Engine:TreeViewNode Content="Grains"
                                              IsExpanded="True"
                                              IsChecked="True">
@@ -415,9 +415,9 @@ You can directly set the checkbox state by setting the [TreeViewNode.IsChecked](
                                 </Engine:TreeViewNode>
                             </Engine:TreeViewNode.ChildNodes>
                         </Engine:TreeViewNode>
-                    </syncfusion:SfTreeView.Nodes>
+                    </treeView:SfTreeView.Nodes>
 
-                    <syncfusion:SfTreeView.ItemTemplate>
+                    <treeView:SfTreeView.ItemTemplate>
                         <DataTemplate>
                             <Grid>
                                 <CheckBox x:Name="checkBox"
@@ -426,8 +426,8 @@ You can directly set the checkbox state by setting the [TreeViewNode.IsChecked](
                                           local:NullableTreeCheckbox.IsChecked="{Binding IsChecked, Mode=TwoWay}" />
                             </Grid>
                         </DataTemplate>
-                    </syncfusion:SfTreeView.ItemTemplate>
-    </syncfusion:SfTreeView>
+                    </treeView:SfTreeView.ItemTemplate>
+    </treeView:SfTreeView>
 </Grid>
 </Page>
 

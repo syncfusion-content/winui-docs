@@ -199,7 +199,7 @@ To create a TreeView using data binding, set a hierarchical data collection to t
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:local="using:syncfusion.treeviewdemos.winui"
-      xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeView"
+      xmlns:treeView="using:Syncfusion.UI.Xaml.TreeView"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d"
@@ -211,10 +211,10 @@ To create a TreeView using data binding, set a hierarchical data collection to t
     </Page.DataContext>
 
     <Grid>
-       <syncfusion:SfTreeView x:Name="treeView"
+       <treeView:SfTreeView x:Name="treeView"
                               ChildPropertyName=”Files”  
                               ItemsSource="{Binding Folders}">
-                    <syncfusion:SfTreeView.ItemTemplate>
+                    <treeView:SfTreeView.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
                                 <ContentPresenter Width="20"
@@ -227,8 +227,8 @@ To create a TreeView using data binding, set a hierarchical data collection to t
                                            Text="{Binding FileName}" />
                             </StackPanel>
                         </DataTemplate>
-                    </syncfusion:SfTreeView.ItemTemplate>
-        </syncfusion:SfTreeView>
+                    </treeView:SfTreeView.ItemTemplate>
+        </treeView:SfTreeView>
     </Grid>
 </Page>
 
@@ -252,14 +252,14 @@ You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/winu
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:local="using:syncfusion.treeviewdemos.winui"
-      xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeView"
+      xmlns:treeView="using:Syncfusion.UI.Xaml.TreeView"
       xmlns:node="using:Syncfusion.UI.Xaml.TreeView.Engine"
       mc:Ignorable="d"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
       NavigationCacheMode="Disabled">
     <Grid> 
-        <syncfusion:SfTreeView x:Name="unboundTreeView" Width="400" Height="500"> 
-                        <syncfusion:SfTreeView.Nodes>
+        <treeView:SfTreeView x:Name="unboundTreeView" Width="400" Height="500"> 
+                        <treeView:SfTreeView.Nodes>
                             <node:TreeViewNode Content="Chairman and CEO"
                                                IsExpanded="True">
                                 <node:TreeViewNode.ChildNodes>
@@ -320,8 +320,8 @@ You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/winu
                                     <node:TreeViewNode Content="Brand Design" />
                                 </node:TreeViewNode.ChildNodes>
                             </node:TreeViewNode>
-                        </syncfusion:SfTreeView.Nodes>
-        </syncfusion:SfTreeView>    
+                        </treeView:SfTreeView.Nodes>
+        </treeView:SfTreeView>    
     </Grid>
 </Page>
 

@@ -22,7 +22,7 @@ The TreeView allows you to customize the appearance of content view and expander
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:local="using:syncfusion.treeviewdemos.winui"
-      xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeView"
+      xmlns:treeView="using:Syncfusion.UI.Xaml.TreeView"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d"
@@ -34,11 +34,11 @@ The TreeView allows you to customize the appearance of content view and expander
     </Page.DataContext>
 
     <Grid>
-       <syncfusion:SfTreeView x:Name="treeView"
+       <treeView:SfTreeView x:Name="treeView"
                               FullRowSelect="True"
                               ChildPropertyName=”Files”  
                               ItemsSource="{Binding Folders}">
-                    <syncfusion:SfTreeView.ItemTemplate>
+                    <treeView:SfTreeView.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
                                 <ContentPresenter Width="20"
@@ -51,8 +51,8 @@ The TreeView allows you to customize the appearance of content view and expander
                                            Text="{Binding FileName}" />
                             </StackPanel>
                         </DataTemplate>
-                    </syncfusion:SfTreeView.ItemTemplate>
-        </syncfusion:SfTreeView>
+                    </treeView:SfTreeView.ItemTemplate>
+        </treeView:SfTreeView>
     </Grid >
 </Page>
 
@@ -72,7 +72,7 @@ For bound mode, you can change the binding context of the treeview items by usin
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:local="using:syncfusion.treeviewdemos.winui"
-      xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeView"
+      xmlns:treeView="using:Syncfusion.UI.Xaml.TreeView"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d"
@@ -95,12 +95,12 @@ For bound mode, you can change the binding context of the treeview items by usin
                    Margin="5,5,5,20"
                    Text="This sample demonstrates the default functionalities to include images in SfTreeView." />
 
-        <syncfusion:SfTreeView x:Name="treeView" Grid.Row="1"
+        <treeView:SfTreeView x:Name="treeView" Grid.Row="1"
                                FullRowSelect="True" 
                                ItemTemplateDataContextType="Node"
                                ChildPropertyName=”Files”  
                                ItemsSource="{Binding Folders}">
-                    <syncfusion:SfTreeView.ItemTemplate>
+                    <treeView:SfTreeView.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
                                 <ContentPresenter Width="20"
@@ -113,8 +113,8 @@ For bound mode, you can change the binding context of the treeview items by usin
                                            Text="{Binding Content.FileName}"/>
                             </StackPanel>
                         </DataTemplate>
-                    </syncfusion:SfTreeView.ItemTemplate>
-        </syncfusion:SfTreeView>
+                    </treeView:SfTreeView.ItemTemplate>
+        </treeView:SfTreeView>
     </Grid >
 </Page>
 
@@ -132,7 +132,7 @@ The `TreeView` allows to customize the appearance of each item with different te
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:local="using:syncfusion.treeviewdemos.winui"
-      xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeView"
+      xmlns:treeView="using:Syncfusion.UI.Xaml.TreeView"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d"
@@ -180,7 +180,7 @@ The `TreeView` allows to customize the appearance of each item with different te
     </Page.Resources>
 
     <Grid>
-  	    <syncfusion:SfTreeView x:Name="treeView"
+  	    <treeView:SfTreeView x:Name="treeView"
                                ChildPropertyName="Files"
                                ItemTemplateDataContextType="Node"
                                ItemsSource="{Binding Folders}"
@@ -284,7 +284,7 @@ The `TreeView` allows to customize the style of [TreeViewItem](https://help.sync
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:local="using:syncfusion.treeviewdemos.winui"
-      xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeView"
+      xmlns:treeView="using:Syncfusion.UI.Xaml.TreeView"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d"
@@ -300,11 +300,11 @@ The `TreeView` allows to customize the style of [TreeViewItem](https://help.sync
     </Page.Resources>
 
     <Grid>
-        <syncfusion:SfTreeView x:Name="treeView"
+        <treeView:SfTreeView x:Name="treeView"
                            ChildPropertyName="Files"
                            ItemTemplateDataContextType="Node"
                            ItemsSource="{Binding Folders}">
-                    <syncfusion:SfTreeView.ItemTemplate>
+                    <treeView:SfTreeView.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock FontSize="14"
@@ -313,8 +313,8 @@ The `TreeView` allows to customize the style of [TreeViewItem](https://help.sync
                                            Text="{Binding Content.FileName}" />
                             </StackPanel>
                         </DataTemplate>
-                    </syncfusion:SfTreeView.ItemTemplate>
-        </syncfusion:SfTreeView>
+                    </treeView:SfTreeView.ItemTemplate>
+        </treeView:SfTreeView>
     </Grid>
 </Page>
 

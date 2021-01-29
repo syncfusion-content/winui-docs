@@ -821,13 +821,13 @@ You can change the filter icon style by editing the [FilterToggleButton](https:/
 {% tabs %}
 {% highlight xaml %}
 
-xmlns:syncfusion="using:Syncfusion.UI.Xaml.Grids"
+xmlns:grid="using:Syncfusion.UI.Xaml.Grids"
 
 <Page.Resources>
-    <Style TargetType="syncfusion:FilterToggleButton">
+    <Style TargetType="grid:FilterToggleButton">
 	    <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="syncfusion:FilterToggleButton">
+                <ControlTemplate TargetType="grid:FilterToggleButton">
                     <Grid>
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="FilterStates">

@@ -31,14 +31,14 @@ This section explains the steps required to add the TreeGrid control and binding
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeGrid"
+    xmlns:treeGrid="using:Syncfusion.UI.Xaml.TreeGrid"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.DataContext>
         <local:ViewModel/>
     </Page.DataContext>
     <Grid x:Name="rootGrid">
-        <syncfusion:SfTreeGrid x:Name="sfTreeGrid" />
+        <treeGrid:SfTreeGrid x:Name="sfTreeGrid" />
     </Grid>
 </Page>
 
@@ -217,14 +217,14 @@ Bind the self-relations collection created in the previous step to `SfTreeGrid.I
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeGrid"
+    xmlns:treeGrid="using:Syncfusion.UI.Xaml.TreeGrid"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.DataContext>
         <local:ViewModel/>
     </Page.DataContext>
     <Grid x:Name="Root_Grid">
-        <syncfusion:SfTreeGrid Name="sfTreeGrid"
+        <treeGrid:SfTreeGrid Name="sfTreeGrid"
                                ChildPropertyName="ReportsTo"
                                ItemsSource="{Binding Employees}"
                                ParentPropertyName="ID"
@@ -372,7 +372,7 @@ Bind the nested collection created in the previous step to [SfTreeGrid.ItemsSour
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeGrid"
+    xmlns:treeGrid="using:Syncfusion.UI.Xaml.TreeGrid"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -382,7 +382,7 @@ Bind the nested collection created in the previous step to [SfTreeGrid.ItemsSour
 
     <Grid x:Name="Root_Grid">
 
-        <syncfusion:SfTreeGrid Name="sfTreeGrid" 
+        <treeGrid:SfTreeGrid Name="sfTreeGrid" 
                                ChildPropertyName="Children"
                                ItemsSource="{Binding PersonDetails}"/>
     </Grid>

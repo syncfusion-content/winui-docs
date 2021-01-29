@@ -694,27 +694,27 @@ treeGrid.Columns.Add(new TreeGridCheckBoxColumn()
 
 {% tabs %}
 {% highlight xaml %}
-xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeGrid"
+xmlns:treeGrid="using:Syncfusion.UI.Xaml.TreeGrid"
 
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                 ChildPropertyName="ReportsTo"
                 ItemsSource="{Binding Employees}"
                 ParentPropertyName="ID">
-    <syncfusion:SfTreeGrid.Columns>
-        <syncfusion:TreeGridTemplateColumn MappingName="FirstName" HeaderText="First Name">
-            <syncfusion:TreeGridTemplateColumn.CellTemplate>
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTemplateColumn MappingName="FirstName" HeaderText="First Name">
+            <treeGrid:TreeGridTemplateColumn.CellTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding FirstName}"/>
                 </DataTemplate>
-            </syncfusion:TreeGridTemplateColumn.CellTemplate>
-            <syncfusion:TreeGridTemplateColumn.EditTemplate>
+            </treeGrid:TreeGridTemplateColumn.CellTemplate>
+            <treeGrid:TreeGridTemplateColumn.EditTemplate>
                 <DataTemplate>
                     <TextBox Text="{Binding FirstName}" />
                 </DataTemplate>
-            </syncfusion:TreeGridTemplateColumn.EditTemplate>
-        </syncfusion:TreeGridTemplateColumn>
-    </syncfusion:SfTreeGrid.Columns>
-</syncfusion:SfTreeGrid>
+            </treeGrid:TreeGridTemplateColumn.EditTemplate>
+        </treeGrid:TreeGridTemplateColumn>
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% highlight c# %}
 StringBuilder sb1 = new StringBuilder();

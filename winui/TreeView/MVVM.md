@@ -26,7 +26,7 @@ The `TreeView` provides support to select the items through binding the [Selecte
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:local="using:syncfusion.treeviewdemos.winui"
-      xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeView"
+      xmlns:treeView="using:Syncfusion.UI.Xaml.TreeView"
       mc:Ignorable="d"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
       NavigationCacheMode="Disabled">
@@ -36,20 +36,20 @@ The `TreeView` provides support to select the items through binding the [Selecte
 </Page.DataContext>
 
 <Grid>
-    <syncfusion:SfTreeView x:Name="treeView"
+    <treeView:SfTreeView x:Name="treeView"
                            AutoExpandMode="AllNodes" 
                            ChildPropertyName="Childs"                                            
                            ItemsSource="{Binding Collections}"
                            SelectedItem="{Binding SelectedNode}">
-                <syncfusion:SfTreeView.ItemTemplate>
+                <treeView:SfTreeView.ItemTemplate>
                     <DataTemplate>
                         <Grid >
                             <TextBlock Text="{Binding Header}"
                                         VerticalAlignment="Center" />
                         </Grid>
                     </DataTemplate>
-                </syncfusion:SfTreeView.ItemTemplate>
-    </syncfusion:SfTreeView>
+                </treeView:SfTreeView.ItemTemplate>
+    </treeView:SfTreeView>
 </Grid>
 </Page>
 
@@ -204,7 +204,7 @@ The `TreeView` supports to select multiple items through binding the [SelectedIt
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:local="using:syncfusion.treeviewdemos.winui"
-      xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeView"
+      xmlns:treeView="using:Syncfusion.UI.Xaml.TreeView"
       mc:Ignorable="d"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
       NavigationCacheMode="Disabled">
@@ -214,21 +214,21 @@ The `TreeView` supports to select multiple items through binding the [SelectedIt
 </Page.DataContext>
 
 <Grid>
-    <syncfusion:SfTreeView x:Name="treeView"
+    <treeView:SfTreeView x:Name="treeView"
                             AutoExpandMode="AllNodes" 
                             ChildPropertyName="Childs"                                            
                             ItemsSource="{Binding Collections}"
                             SelectedItems="{Binding SelectedNodes}"
                             SelectionMode="Multiple">
-                <syncfusion:SfTreeView.ItemTemplate>
+                <treeView:SfTreeView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
                             <TextBlock Text="{Binding Header}"
                                        VerticalAlignment="Center" />
                         </Grid>
                     </DataTemplate>
-                </syncfusion:SfTreeView.ItemTemplate>
-    </syncfusion:SfTreeView>
+                </treeView:SfTreeView.ItemTemplate>
+    </treeView:SfTreeView>
 </Grid>
 </Page>
 

@@ -225,7 +225,7 @@ Custom comparer can be added to [SfDataGrid.SortComparers](https://help.syncfusi
  
 {% tabs %}
 {% highlight xaml %}
-xmlns:Linq="using:Syncfusion.UI.Xaml.Data"
+xmlns:data="using:Syncfusion.UI.Xaml.Data"
 
 <Page.Resources>
     <local:CustomComparer x:Key="comparer" />
@@ -233,7 +233,7 @@ xmlns:Linq="using:Syncfusion.UI.Xaml.Data"
 
 <syncfusion:SfDataGrid x:Name="sfDataGrid" ItemsSource="{Binding Orders}">
     <syncfusion:SfDataGrid.SortComparers>
-        <Linq:SortComparer Comparer="{StaticResource comparer}" PropertyName="CustomerName" />
+        <data:SortComparer Comparer="{StaticResource comparer}" PropertyName="CustomerName" />
     </syncfusion:SfDataGrid.SortComparers>
     <syncfusion:SfDataGrid.SortColumnDescriptions>
         <syncfusion:SortColumnDescription ColumnName="CustomerName" SortDirection="Ascending" />

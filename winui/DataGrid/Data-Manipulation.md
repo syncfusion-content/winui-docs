@@ -425,15 +425,15 @@ You can customize the watermark text of AddNewRow by editing the style of `AddNe
 
 {% tabs %}
 {% highlight xaml %}
-xmlns:syncfusion="using:Syncfusion.UI.Xaml.DataGrid"
+xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 
 <Application.Resources>
-    <Style TargetType="syncfusion:AddNewRowControl">
+    <Style TargetType="dataGrid:AddNewRowControl">
         <Setter Property="Background" Value="Transparent"/>    
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="syncfusion:AddNewRowControl">
+                <ControlTemplate TargetType="dataGrid:AddNewRowControl">
                     <Grid>
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="AddNewRowStates">

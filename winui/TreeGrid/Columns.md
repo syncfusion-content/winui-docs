@@ -664,10 +664,10 @@ Each [StackedHeaderRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 <Page
     x:Class="StackedHeaderDemo.MainPage"
     xmlns:local="using:StackedHeaderDemo"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeGrid"
-    xmlns:syncfusion1="using:Syncfusion.UI.Xaml.Grid">
+    xmlns:treeGrid="using:Syncfusion.UI.Xaml.TreeGrid"
+    xmlns:grid="using:Syncfusion.UI.Xaml.Grid">
 
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                         AutoGenerateColumns="False"
                         ColumnWidthMode="Star"
                         AutoExpandMode="RootNodesExpanded"
@@ -675,22 +675,22 @@ Each [StackedHeaderRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
                         ItemsSource="{Binding Employees}"
                         ParentPropertyName="ID"
                         SelfRelationRootValue="-1" >
-    <syncfusion:SfTreeGrid.StackedHeaderRows>
-        <syncfusion1:StackedHeaderRow>
-            <syncfusion1:StackedHeaderRow.StackedColumns>
-                <syncfusion1:StackedColumn ChildColumns="FirstName,LastName" HeaderText="Employee Name" />
-                <syncfusion1:StackedColumn ChildColumns="ID,Title,ReportsTo" HeaderText="Designation Details" />
-            </syncfusion1:StackedHeaderRow.StackedColumns>
-        </syncfusion1:StackedHeaderRow>
-    </syncfusion:SfTreeGrid.StackedHeaderRows>
-    <syncfusion:SfTreeGrid.Columns>
-            <syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
-            <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-            <syncfusion:TreeGridTextColumn HeaderText="Employee ID" MappingName="ID" />
-            <syncfusion:TreeGridTextColumn MappingName="Title" />
-            <syncfusion:TreeGridTextColumn MappingName="ReportsTo" HeaderText = "Reports To" />
-    </syncfusion:SfTreeGrid.Columns>
-</syncfusion:SfTreeGrid>
+    <treeGrid:SfTreeGrid.StackedHeaderRows>
+        <grid:StackedHeaderRow>
+            <grid:StackedHeaderRow.StackedColumns>
+                <grid:StackedColumn ChildColumns="FirstName,LastName" HeaderText="Employee Name" />
+                <grid:StackedColumn ChildColumns="ID,Title,ReportsTo" HeaderText="Designation Details" />
+            </grid:StackedHeaderRow.StackedColumns>
+        </grid:StackedHeaderRow>
+    </treeGrid:SfTreeGrid.StackedHeaderRows>
+    <treeGrid:SfTreeGrid.Columns>
+            <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
+            <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+            <treeGrid:TreeGridTextColumn HeaderText="Employee ID" MappingName="ID" />
+            <treeGrid:TreeGridTextColumn MappingName="Title" />
+            <treeGrid:TreeGridTextColumn MappingName="ReportsTo" HeaderText = "Reports To" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
 	
 </Page>
 
