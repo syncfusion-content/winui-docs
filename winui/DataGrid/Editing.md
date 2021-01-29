@@ -15,7 +15,7 @@ SfDataGrid provides support for editing and it can be enabled or disabled by set
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AllowEditing="True"
                         AutoGenerateColumns="True"
                         ItemsSource="{Binding Employees}"/>
@@ -51,7 +51,7 @@ You can enter into edit mode by pressing <kbd>F2</kbd> key or clicking (touch al
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AllowEditing="True"
                         EditTrigger="OnDoubleTap"
                         AutoGenerateColumns="True"
@@ -73,7 +73,7 @@ When the cell enters into edit mode, cursor is placed based on [EditorSelectionB
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AllowEditing="True"
                         EditorSelectionBehavior="MoveLast"
                         AutoGenerateColumns="True"
@@ -93,7 +93,7 @@ The editing of current cell will be ended by default while the focus is moving f
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AllowEditing="True"
                         AutoGenerateColumns="True"
                         LostFocusBehavior="Default"
@@ -218,7 +218,7 @@ private void SfDataGrid_CurrentCellDropDownSelectionChanged(object sender, Curre
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         CellTapped="SfDataGrid_CellTapped"             
                         AutoGenerateColumns="True"
                         ItemsSource="{Binding Employees}"/>
@@ -248,7 +248,7 @@ private void SfDataGrid_CellTapped(object sender, GridCellTappedEventArgs e)
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         CellDoubleTapped="SfDataGrid_CellDoubleTapped"
                         AutoGenerateColumns="True"
                         ItemsSource="{Binding Employees}"/>

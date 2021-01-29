@@ -101,19 +101,19 @@ In SfDataGrid while setting `SfDataGrid.ColumnWidthMode` as `AutoLastColumnFill`
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                         AutoGenerateColumns="False"
                         ColumnWidthMode="AutoLastColumnFill"
                         ItemsSource="{Binding OrdersDetails}">            
-            <syncfusion:SfDataGrid.Columns>
-                <syncfusion:GridTextColumn HeaderText="Order ID" MappingName="OrderID" ColumnWidthMode="AutoLastColumnFill" />
-                <syncfusion:GridTextColumn HeaderText="Order Date" MappingName="OrderDate" />
-                <syncfusion:GridTextColumn HeaderText="Unit Price" MappingName="UnitPrice" />
-                <syncfusion:GridTextColumn HeaderText="Quantity" MappingName="Quantity" />               
-                <syncfusion:GridTextColumn HeaderText="Ship City" MappingName="ShipCity" />
-                <syncfusion:GridTextColumn HeaderText="Ship Address" MappingName="ShipAddress" />
-            </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+            <dataGrid:SfDataGrid.Columns>
+                <dataGrid:GridTextColumn HeaderText="Order ID" MappingName="OrderID" ColumnWidthMode="AutoLastColumnFill" />
+                <dataGrid:GridTextColumn HeaderText="Order Date" MappingName="OrderDate" />
+                <dataGrid:GridTextColumn HeaderText="Unit Price" MappingName="UnitPrice" />
+                <dataGrid:GridTextColumn HeaderText="Quantity" MappingName="Quantity" />               
+                <dataGrid:GridTextColumn HeaderText="Ship City" MappingName="ShipCity" />
+                <dataGrid:GridTextColumn HeaderText="Ship Address" MappingName="ShipAddress" />
+            </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.ColumnWidthMode = ColumnWidthMode.AutoLastColumnFill;
@@ -336,21 +336,21 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 
 {% tabs %}
 {% highlight c# %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AllowSorting="True"
                         AllowEditing="True"
                         AutoGenerateColumns="False"
                         ColumnWidthMode="Star"
                         ItemsSource="{Binding OrdersDetails}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn HeaderText="Order ID" MappingName="OrderID" local:StarRatio.ColumnRatio="1"/>
-        <syncfusion:GridTextColumn HeaderText="Order Date" MappingName="OrderDate" local:StarRatio.ColumnRatio="1"/>
-        <syncfusion:GridTextColumn   HeaderText="Unit Price" MappingName="Unit Price" local:StarRatio.ColumnRatio="1"/>
-        <syncfusion:GridTextColumn HeaderText="Quantity" MappingName="Quantity" local:StarRatio.ColumnRatio="1" TextAlignment="Right"/>
-        <syncfusion:GridTextColumn   HeaderText="Ship City" MappingName="ShipCity" local:StarRatio.ColumnRatio="2" />
-        <syncfusion:GridTextColumn HeaderText="Ship Address" MappingName="ShipAddress" local:StarRatio.ColumnRatio="2"/>
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn HeaderText="Order ID" MappingName="OrderID" local:StarRatio.ColumnRatio="1"/>
+        <dataGrid:GridTextColumn HeaderText="Order Date" MappingName="OrderDate" local:StarRatio.ColumnRatio="1"/>
+        <dataGrid:GridTextColumn   HeaderText="Unit Price" MappingName="Unit Price" local:StarRatio.ColumnRatio="1"/>
+        <dataGrid:GridTextColumn HeaderText="Quantity" MappingName="Quantity" local:StarRatio.ColumnRatio="1" TextAlignment="Right"/>
+        <dataGrid:GridTextColumn   HeaderText="Ship City" MappingName="ShipCity" local:StarRatio.ColumnRatio="2" />
+        <dataGrid:GridTextColumn HeaderText="Ship Address" MappingName="ShipAddress" local:StarRatio.ColumnRatio="2"/>
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 

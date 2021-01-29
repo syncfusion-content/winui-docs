@@ -15,26 +15,26 @@ Each [StackedHeaderRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                         AllowSorting="True"
                         AutoGenerateColumns="True"
                         ColumnWidthMode="AutoLastColumnFill"
                         ItemsSource="{Binding OrdersDetails}">
-            <syncfusion:SfDataGrid.StackedHeaderRows>
-                <grids:StackedHeaderRow>
-                    <grids:StackedHeaderRow.StackedColumns>
-                        <grids:StackedColumn ChildColumns="OrderID,OrderDate,ProductID,Quantity,UnitPrice,ShipCity,ShipAddress" HeaderText="Sales Details" />                       
-                    </grids:StackedHeaderRow.StackedColumns>
-                </grids:StackedHeaderRow>
-                <grids:StackedHeaderRow>
-                    <grids:StackedHeaderRow.StackedColumns>
-                        <grids:StackedColumn ChildColumns="OrderID,OrderDate" HeaderText="Order Details" />
-                        <grids:StackedColumn ChildColumns="Quantity,UnitPrice" HeaderText="Product Details" />
-                        <grids:StackedColumn ChildColumns="ShipCity,ShipAddress" HeaderText="Shipping Details" />
-                    </grids:StackedHeaderRow.StackedColumns>
-                </grids:StackedHeaderRow>
-            </syncfusion:SfDataGrid.StackedHeaderRows>    
-</syncfusion:SfDataGrid>
+            <dataGrid:SfDataGrid.StackedHeaderRows>
+                <grid:StackedHeaderRow>
+                    <grid:StackedHeaderRow.StackedColumns>
+                        <grid:StackedColumn ChildColumns="OrderID,OrderDate,ProductID,Quantity,UnitPrice,ShipCity,ShipAddress" HeaderText="Sales Details" />                       
+                    </grid:StackedHeaderRow.StackedColumns>
+                </grid:StackedHeaderRow>
+                <grid:StackedHeaderRow>
+                    <grid:StackedHeaderRow.StackedColumns>
+                        <grid:StackedColumn ChildColumns="OrderID,OrderDate" HeaderText="Order Details" />
+                        <grid:StackedColumn ChildColumns="Quantity,UnitPrice" HeaderText="Product Details" />
+                        <grid:StackedColumn ChildColumns="ShipCity,ShipAddress" HeaderText="Shipping Details" />
+                    </grid:StackedHeaderRow.StackedColumns>
+                </grid:StackedHeaderRow>
+            </dataGrid:SfDataGrid.StackedHeaderRows>    
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 var stackedHeaderRow1 = new StackedHeaderRow();

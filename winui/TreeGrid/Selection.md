@@ -21,7 +21,7 @@ The [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grid
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="sfTreeGrid"
+<treeGrid:SfTreeGrid Name="sfTreeGrid"
                                        AutoExpandMode="RootNodesExpanded"
                                        AutoGenerateColumns="False" 
                                        NavigationMode="Row"
@@ -48,7 +48,7 @@ When using `Extended`, you can select multiple rows by pressing the key modifier
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="sfTreeGrid"
+<treeGrid:SfTreeGrid Name="sfTreeGrid"
                                        AutoExpandMode="RootNodesExpanded"
                                        AutoGenerateColumns="False" 
                                        NavigationMode="Row"
@@ -492,7 +492,7 @@ The [CurrentCellActivating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="sfTreeGrid"                       
+<treeGrid:SfTreeGrid Name="sfTreeGrid"                       
                        AutoExpandMode="RootNodesExpanded"
                        AutoGenerateColumns="False"      
                        ChildPropertyName="Children"		
@@ -548,7 +548,7 @@ The [CurrentCellActivated](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="sfTreeGrid"                       
+<treeGrid:SfTreeGrid Name="sfTreeGrid"                       
                        AutoExpandMode="RootNodesExpanded"
                        AutoGenerateColumns="False"                       
                        ChildPropertyName="Children"
@@ -580,7 +580,7 @@ The [SelectionChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="sfTreeGrid"                       
+<treeGrid:SfTreeGrid Name="sfTreeGrid"                       
                        AutoExpandMode="RootNodesExpanded"
                        AutoGenerateColumns="False"                     
                        ChildPropertyName="Children"
@@ -612,7 +612,7 @@ The [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.T
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="sfTreeGrid"
+<treeGrid:SfTreeGrid Name="sfTreeGrid"
                        Grid.Row="0"
                        AutoExpandMode="RootNodesExpanded"
                        AutoGenerateColumns="False"                   
@@ -643,7 +643,7 @@ You can change the selection background and foreground using the [SelectionBackG
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="sfTreeGrid"                                           
+<treeGrid:SfTreeGrid Name="sfTreeGrid"                                           
                                            AutoExpandMode="RootNodesExpanded"
                                            AutoGenerateColumns="False"
                                            SelectionMode="Multiple"
@@ -665,7 +665,7 @@ You can change the current cell border thickness and border color using the [Cur
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="sfTreeGrid"                                           
+<treeGrid:SfTreeGrid Name="sfTreeGrid"                                           
                                            AutoExpandMode="RootNodesExpanded"
                                            AutoGenerateColumns="False"
                                            SelectionMode="Multiple"
@@ -694,7 +694,7 @@ You can customize the row selection by editing the control template of [TreeGrid
             <Setter Property="Foreground" Value="#FF000000"/>
             <Setter Property="Template">
                 <Setter.Value>
-                    <ControlTemplate TargetType="syncfusion:TreeGridRowControl">
+                    <ControlTemplate TargetType="treeGrid:TreeGridRowControl">
                         <Grid BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
                             <VisualStateManager.VisualStateGroups>
                                 <VisualStateGroup x:Name="SelectionStates">
@@ -917,7 +917,7 @@ The `Row`/`Cell` selection border is behind the grid cell content. So, when you 
 
 {% tabs %}
 {% highlight xaml %}
-<Style TargetType="syncfusion:TreeGridCell">
+<Style TargetType="treeGrid:TreeGridCell">
     <Setter Property="Background">
         <Setter.Value>
             <SolidColorBrush Color="Blue" Opacity="0.5"/>

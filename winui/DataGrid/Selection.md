@@ -21,7 +21,7 @@ The `SelectionUnit` and [SelectionMode](https://help.syncfusion.com/cr/winui/Syn
 
 {% tabs %}
 {% highlight xaml %}
-<Syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        SelectionUnit="Row"
                        NavigationMode="Cell"
                        SelectionMode="Single"
@@ -46,7 +46,7 @@ While using `Extended`, you can select multiple rows or cells by pressing the ke
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        SelectionUnit="Cell"
                        NavigationMode="Cell"
                        SelectionMode="Extended"
@@ -61,7 +61,7 @@ N> When the `SelectionMode` as `Multiple`, you can select or deselect multiple r
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        SelectionUnit="Cell"
                        NavigationMode="Cell"
                        SelectionMode="Multiple"
@@ -388,13 +388,13 @@ You can get the `SelectedItem` while it’s changed using [SelectionChanged](htt
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:GridViewDefinition RelationalColumn="OrderDetails">
-    <syncfusion:GridViewDefinition.DataGrid>
-        <syncfusion:SfDataGrid x:Name="firstDetailsViewGrid" 
+<dataGrid:GridViewDefinition RelationalColumn="OrderDetails">
+    <dataGrid:GridViewDefinition.DataGrid>
+        <dataGrid:SfDataGrid x:Name="firstDetailsViewGrid" 
                                SelectionChanged="firstDetailsViewGrid_SelectionChanged">
-        </syncfusion:SfDataGrid>
-    </syncfusion:GridViewDefinition.DataGrid>
-</syncfusion:GridViewDefinition>
+        </dataGrid:SfDataGrid>
+    </dataGrid:GridViewDefinition.DataGrid>
+</dataGrid:GridViewDefinition>
 
 {% endhighlight %}
 
@@ -431,13 +431,13 @@ You can get the `CurrentItem` while it’s changed using `SelectionChanged` even
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:GridViewDefinition RelationalColumn="OrderDetails">
-    <syncfusion:GridViewDefinition.DataGrid>
-        <syncfusion:SfDataGrid x:Name="firstDetailsViewGrid" 
+<dataGrid:GridViewDefinition RelationalColumn="OrderDetails">
+    <dataGrid:GridViewDefinition.DataGrid>
+        <dataGrid:SfDataGrid x:Name="firstDetailsViewGrid" 
                                SelectionChanged="firstDetailsViewGrid_SelectionChanged">
-        </syncfusion:SfDataGrid>
-    </syncfusion:GridViewDefinition.DataGrid>
-</syncfusion:GridViewDefinition>
+        </dataGrid:SfDataGrid>
+    </dataGrid:GridViewDefinition.DataGrid>
+</dataGrid:GridViewDefinition>
 
 {% endhighlight %}
 
@@ -470,13 +470,13 @@ You can get the `CurrentCell` using `CurrentCellBeginEdit` event `ViewDefinition
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:GridViewDefinition RelationalColumn="OrderDetails">
-    <syncfusion:GridViewDefinition.DataGrid>
-        <syncfusion:SfDataGrid x:Name="firstLevelNestedGrid"                                                   
+<dataGrid:GridViewDefinition RelationalColumn="OrderDetails">
+    <dataGrid:GridViewDefinition.DataGrid>
+        <dataGrid:SfDataGrid x:Name="firstLevelNestedGrid"                                                   
                                CurrentCellBeginEdit="firstLevelNestedGrid_CurrentCellBeginEdit">
-        </syncfusion:SfDataGrid>
-    </syncfusion:GridViewDefinition.DataGrid>
-</syncfusion:GridViewDefinition>
+        </dataGrid:SfDataGrid>
+    </dataGrid:GridViewDefinition.DataGrid>
+</dataGrid:GridViewDefinition>
 
 {% endhighlight %}
 
@@ -500,9 +500,9 @@ You can select data objects while loading DetailsViewDataGrid using [DetailsView
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDataGrid Name="sfDataGrid" 
+<dataGrid:SfDataGrid Name="sfDataGrid" 
                        DetailsViewLoading="sfDataGrid_DetailsViewLoading" >
-</syncfusion:SfDataGrid>
+</dataGrid:SfDataGrid>
 
 {% endhighlight %}
 
@@ -919,7 +919,7 @@ The [CurrentCellActivating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        CurrentCellActivating="sfDataGrid_CurrentCellActivating"
                        ItemsSource="{Binding Orders}">
 
@@ -984,7 +984,7 @@ The [CurrentCellActivated](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        CurrentCellActivated="sfDataGrid_CurrentCellActivated"
                        ItemsSource="{Binding Orders}">
 
@@ -1012,7 +1012,7 @@ void sfDataGrid_CurrentCellActivated(object sender, CurrentCellActivatedEventArg
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        SelectionChanging="sfDataGrid_SelectionChanging"
                        ItemsSource="{Binding Orders}">
 
@@ -1056,7 +1056,7 @@ The [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.D
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        SelectionChanged="sfDataGrid_SelectionChanged"
                        ItemsSource="{Binding Orders}">
 
@@ -1104,7 +1104,7 @@ You can change the current cell border thickness and border color using [Current
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        CurrentCellBorderBrush="Red"
                        CurrentCellBorderThickness="1.6"
                        ItemsSource="{Binding Orders}">
@@ -1256,7 +1256,7 @@ You can bind the selection properties like `SelectedItem`, `SelectedIndex` and `
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        SelectedItem="{Binding DataGridSelectedItem, Mode=TwoWay}"
                        CurrentItem="{Binding DataGridCurrentItem, Mode=TwoWay}"
                        SelectedIndex="{Binding DataGridSelectedIndex, Mode=TwoWay}"
