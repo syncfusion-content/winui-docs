@@ -44,26 +44,26 @@ In the below code snippet, summary is defined for `UnitPrice` and `ProductName` 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"                               
+<dataGrid:SfDataGrid x:Name="sfDataGrid"                               
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}">
 
-    <syncfusion:SfDataGrid.TableSummaryRows>
-        <syncfusion:GridTableSummaryRow ShowSummaryInRow="False">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
+    <dataGrid:SfDataGrid.TableSummaryRows>
+        <dataGrid:GridTableSummaryRow ShowSummaryInRow="False">
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="PriceAmount"
                                               Format="'Total UnitPrice : {Sum:c}'"
                                               MappingName="UnitPrice"
                                               SummaryType="DoubleAggregate" />
-                <syncfusion:GridSummaryColumn Name="ProductCount"
+                <dataGrid:GridSummaryColumn Name="ProductCount"
                                               Format="'Total Product Count : {Count:d}'"
                                               MappingName="ProductName"
                                               SummaryType="CountAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridTableSummaryRow>
-    </syncfusion:SfDataGrid.TableSummaryRows>
+            </dataGrid:GridSummaryRow.SummaryColumns>
+        </dataGrid:GridTableSummaryRow>
+    </dataGrid:SfDataGrid.TableSummaryRows>
 
-</syncfusion:SfDataGrid>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
@@ -102,26 +102,26 @@ Refer [Formatting Summary](#formatting-summary) section to know more about how t
  
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}">
                        
-    <syncfusion:SfDataGrid.TableSummaryRows>
-        <syncfusion:GridTableSummaryRow Title=" Total Price : {PriceAmount} for {ProductCount} products " ShowSummaryInRow="True">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
+    <dataGrid:SfDataGrid.TableSummaryRows>
+        <dataGrid:GridTableSummaryRow Title=" Total Price : {PriceAmount} for {ProductCount} products " ShowSummaryInRow="True">
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="PriceAmount"
                                                 Format="'{Sum:c}'"
                                                 MappingName="UnitPrice"
                                                 SummaryType="DoubleAggregate" />
     
-                <syncfusion:GridSummaryColumn Name="ProductCount"
+                <dataGrid:GridSummaryColumn Name="ProductCount"
                                                 Format="'{Count:d}'"
                                                 MappingName="ProductName"
                                                 SummaryType="CountAggregate" />
     
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridTableSummaryRow>
-    </syncfusion:SfDataGrid.TableSummaryRows>
+            </dataGrid:GridSummaryRow.SummaryColumns>
+        </dataGrid:GridTableSummaryRow>
+    </dataGrid:SfDataGrid.TableSummaryRows>
     
 </syncfusion:SfDataGrid>
 {% endhighlight %}
@@ -166,47 +166,47 @@ In the below code snippet, `GridSummaryRow.TitleColumnCount` is set as 2 and `Gr
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}"
                        ShowGroupDropArea="True">
-    <syncfusion:SfDataGrid.TableSummaryRows>
-       <syncfusion:GridTableSummaryRow ShowSummaryInRow="False" TitleColumnCount="2" Position="Top"
+    <dataGrid:SfDataGrid.TableSummaryRows>
+       <dataGrid:GridTableSummaryRow ShowSummaryInRow="False" TitleColumnCount="2" Position="Top"
                                        Title="Total Price : {PriceAmount} for {ProductCount} products">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="CustomerName" 
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="CustomerName" 
                                               Format=" {Count:d}"
                                               MappingName="CustomerName" 
                                               SummaryType="CountAggregate" />
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                <dataGrid:GridSummaryColumn Name="PriceAmount"
                                               Format=" {Sum:c}"
                                               MappingName="UnitPrice"
                                               SummaryType="DoubleAggregate" />
-                <syncfusion:GridSummaryColumn Name="ProductCount"
+                <dataGrid:GridSummaryColumn Name="ProductCount"
                                               Format=" {Count:d}"
                                               MappingName="ProductName"
                                               SummaryType="CountAggregate" />                        
-            </syncfusion:GridSummaryRow.SummaryColumns>
-       </syncfusion:GridTableSummaryRow>     
+            </dataGrid:GridSummaryRow.SummaryColumns>
+       </dataGrid:GridTableSummaryRow>     
 	   
-       <syncfusion:GridTableSummaryRow ShowSummaryInRow="False" TitleColumnCount="2" Position="Bottom"
+       <dataGrid:GridTableSummaryRow ShowSummaryInRow="False" TitleColumnCount="2" Position="Bottom"
                                        Title="Total Price : {PriceAmount} for {ProductCount} products">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="CustomerName" 
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="CustomerName" 
                                               Format=" {Count:d}"
                                               MappingName="CustomerName" 
                                               SummaryType="CountAggregate" />
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                <dataGrid:GridSummaryColumn Name="PriceAmount"
                                               Format=" {Sum:c}"
                                               MappingName="UnitPrice"
                                               SummaryType="DoubleAggregate" />
-                <syncfusion:GridSummaryColumn Name="ProductCount"
+                <dataGrid:GridSummaryColumn Name="ProductCount"
                                               Format=" {Count:d}"
                                               MappingName="ProductName"
                                               SummaryType="CountAggregate" />                        
-            </syncfusion:GridSummaryRow.SummaryColumns>
-       </syncfusion:GridTableSummaryRow>
-    </syncfusion:SfDataGrid.TableSummaryRows>  
+            </dataGrid:GridSummaryRow.SummaryColumns>
+       </dataGrid:GridTableSummaryRow>
+    </dataGrid:SfDataGrid.TableSummaryRows>  
 	
 </syncfusion:SfDataGrid>
 {% endhighlight %}
@@ -300,34 +300,34 @@ You can position the table summary either at top or bottom of SfDataGrid by sett
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                         AutoGenerateColumns="True"
                         ItemsSource="{Binding Orders}">
 
-    <syncfusion:SfDataGrid.TableSummaryRows>
+    <dataGrid:SfDataGrid.TableSummaryRows>
 
-        <syncfusion:GridTableSummaryRow Position="Top" ShowSummaryInRow="False">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
+        <dataGrid:GridTableSummaryRow Position="Top" ShowSummaryInRow="False">
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="PriceAmount"
                                               Format="'{Sum:c}'"
                                               MappingName="UnitPrice"
                                               SummaryType="DoubleAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridTableSummaryRow>
+            </dataGrid:GridSummaryRow.SummaryColumns>
+        </dataGrid:GridTableSummaryRow>
 
-        <syncfusion:GridTableSummaryRow Title=" Total Product count: {ProductCount}"
+        <dataGrid:GridTableSummaryRow Title=" Total Product count: {ProductCount}"
                                         Position="Bottom"
                                         ShowSummaryInRow="True">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="ProductCount"
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="ProductCount"
                                                 Format="'{Count:d}'"
                                                 MappingName="ProductName"
                                                 SummaryType="CountAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridTableSummaryRow>
+            </dataGrid:GridSummaryRow.SummaryColumns>
+        </dataGrid:GridTableSummaryRow>
 
-    </syncfusion:SfDataGrid.TableSummaryRows>
-</syncfusion:SfDataGrid>
+    </dataGrid:SfDataGrid.TableSummaryRows>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 GridTableSummaryRow tablesummaryrow1 = new GridTableSummaryRow() 
@@ -396,28 +396,28 @@ In the below code snippet, summary is defined for `UnitPrice` and `ProductName` 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"                             
+<dataGrid:SfDataGrid x:Name="sfDataGrid"                             
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}"
                        ShowGroupDropArea="True">
 
-    <syncfusion:SfDataGrid.GroupSummaryRows>
-        <syncfusion:GridSummaryRow ShowSummaryInRow="False">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
+    <dataGrid:SfDataGrid.GroupSummaryRows>
+        <dataGrid:GridSummaryRow ShowSummaryInRow="False">
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="PriceAmount"
                                               Format="'Amount - {Sum:c}'"
                                               MappingName="UnitPrice"
                                               SummaryType="DoubleAggregate" />
 
-                <syncfusion:GridSummaryColumn Name="ProductCount"
+                <dataGrid:GridSummaryColumn Name="ProductCount"
                                               Format="'Count - {Count:d}'"
                                               MappingName="ProductName"
                                               SummaryType="CountAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridSummaryRow>
-    </syncfusion:SfDataGrid.GroupSummaryRows>
+            </dataGrid:GridSummaryRow.SummaryColumns>
+        </dataGrid:GridSummaryRow>
+    </dataGrid:SfDataGrid.GroupSummaryRows>
     
-</syncfusion:SfDataGrid>
+</dataGrid:SfDataGrid>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -458,28 +458,28 @@ Refer [Formatting Summary](#formatting-summary) section to know more about how t
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}"
                        ShowGroupDropArea="True">
 
-    <syncfusion:SfDataGrid.GroupSummaryRows>
-        <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="True">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
+    <dataGrid:SfDataGrid.GroupSummaryRows>
+        <dataGrid:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="True">
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="PriceAmount"
                                               Format="'{Sum:c}'"
                                               MappingName="UnitPrice"
                                               SummaryType="DoubleAggregate" />
 
-                <syncfusion:GridSummaryColumn Name="ProductCount"
+                <dataGrid:GridSummaryColumn Name="ProductCount"
                                               Format="'{Count:d}'"
                                               MappingName="ProductName"
                                               SummaryType="CountAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridSummaryRow>
-    </syncfusion:SfDataGrid.GroupSummaryRows>
+            </dataGrid:GridSummaryRow.SummaryColumns>
+        </dataGrid:GridSummaryRow>
+    </dataGrid:SfDataGrid.GroupSummaryRows>
 
-</syncfusion:SfDataGrid>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.GroupSummaryRows.Add(new GridSummaryRow()
@@ -523,30 +523,30 @@ In the below code snippet, `GridSummaryRow.TitleColumnCount` is set as 2 and `Gr
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"                             
+<dataGrid:SfDataGrid x:Name="sfDataGrid"                             
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}"
                        ShowGroupDropArea="True">
-    <syncfusion:SfDataGrid.GroupSummaryRows>
-        <syncfusion:GridSummaryRow ShowSummaryInRow="False" TitleColumnCount="2" 
+    <dataGrid:SfDataGrid.GroupSummaryRows>
+        <dataGrid:GridSummaryRow ShowSummaryInRow="False" TitleColumnCount="2" 
                                    Title="Total Price: {PriceAmount} for {ProductCount} Products" >
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="CustomerName" 
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="CustomerName" 
                                               Format=" {Count:d}"
                                               MappingName="CustomerName" 
                                               SummaryType="CountAggregate" />
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                <dataGrid:GridSummaryColumn Name="PriceAmount"
                                               Format=" {Sum:c}"
                                               MappingName="UnitPrice"
                                               SummaryType="DoubleAggregate" />
-                <syncfusion:GridSummaryColumn Name="ProductCount"
+                <dataGrid:GridSummaryColumn Name="ProductCount"
                                               Format=" {Count:d}"
                                               MappingName="ProductName"
                                               SummaryType="CountAggregate" />                        
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridSummaryRow>
-    </syncfusion:SfDataGrid.GroupSummaryRows>
-</syncfusion:SfDataGrid>
+            </dataGrid:GridSummaryRow.SummaryColumns>
+        </dataGrid:GridSummaryRow>
+    </dataGrid:SfDataGrid.GroupSummaryRows>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.GroupSummaryRows.Add(new GridSummaryRow()
@@ -620,7 +620,7 @@ You can change group caption format to display column name and count alone by se
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AllowGrouping="True"
                         AutoGenerateColumns="True"
                         GroupCaptionTextFormat=" {ColumnName} : {ItemsCount} Items "
@@ -648,26 +648,26 @@ In the below code snippet, summary is defined for `UnitPrice` and `ProductName` 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                         AutoGenerateColumns="True"
                         ItemsSource="{Binding Orders}"
                         ShowGroupDropArea="True">
             
-    <syncfusion:SfDataGrid.CaptionSummaryRow>
-        <syncfusion:GridSummaryRow ShowSummaryInRow="False">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
+    <dataGrid:SfDataGrid.CaptionSummaryRow>
+        <dataGrid:GridSummaryRow ShowSummaryInRow="False">
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="PriceAmount"
                                                 Format="'{Sum:c}'"
                                                 MappingName="UnitPrice"
                                                 SummaryType="DoubleAggregate" />
-                <syncfusion:GridSummaryColumn Name="ProductCount"
+                <dataGrid:GridSummaryColumn Name="ProductCount"
                                                 Format="'{Count:d}'"
                                                 MappingName="ProductName"
                                                 SummaryType="CountAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridSummaryRow>
-    </syncfusion:SfDataGrid.CaptionSummaryRow>
-</syncfusion:SfDataGrid>
+            </dataGrid:GridSummaryRow.SummaryColumns>
+        </dataGrid:GridSummaryRow>
+    </dataGrid:SfDataGrid.CaptionSummaryRow>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.CaptionSummaryRow = new GridSummaryRow()
@@ -708,26 +708,26 @@ Refer [Formatting Summary](#formatting-summary) section to know more about how t
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}"
                        ShowGroupDropArea="True">
 
-    <syncfusion:SfDataGrid.CaptionSummaryRow>
-        <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} Products" ShowSummaryInRow="True">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
+    <dataGrid:SfDataGrid.CaptionSummaryRow>
+        <dataGrid:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} Products" ShowSummaryInRow="True">
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="PriceAmount"
                                               Format="'{Sum:c}'"
                                               MappingName="UnitPrice"
                                               SummaryType="DoubleAggregate" />
-                <syncfusion:GridSummaryColumn Name="ProductCount"
+                <dataGrid:GridSummaryColumn Name="ProductCount"
                                               Format="'{Count:d}'"
                                               MappingName="ProductName"
                                               SummaryType="CountAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridSummaryRow>
-    </syncfusion:SfDataGrid.CaptionSummaryRow>
-</syncfusion:SfDataGrid>
+            </dataGrid:GridSummaryRow.SummaryColumns>
+        </dataGrid:GridSummaryRow>
+    </dataGrid:SfDataGrid.CaptionSummaryRow>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.CaptionSummaryRow = new GridSummaryRow()
@@ -772,30 +772,30 @@ In the below code snippet, `GridSummaryRow.TitleColumnCount` is set as 2 and `Gr
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}"
                        ShowGroupDropArea="True">
-    <syncfusion:SfDataGrid.CaptionSummaryRow>
-        <syncfusion:GridSummaryRow  ShowSummaryInRow="False" TitleColumnCount="2" 
+    <dataGrid:SfDataGrid.CaptionSummaryRow>
+        <dataGrid:GridSummaryRow  ShowSummaryInRow="False" TitleColumnCount="2" 
 		                            Title=" {ColumnName} : {Key} - {ItemsCount} Items ">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="CustomerName" 
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="CustomerName" 
                                               Format=" {Count:d}"
                                               MappingName="CustomerName" 
                                               SummaryType="CountAggregate" />
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                <dataGrid:GridSummaryColumn Name="PriceAmount"
                                               Format=" {Sum:c}"
                                               MappingName="UnitPrice"
                                               SummaryType="DoubleAggregate" />
-                <syncfusion:GridSummaryColumn Name="ProductCount"
+                <dataGrid:GridSummaryColumn Name="ProductCount"
                                               Format=" {Count:d}"
                                               MappingName="ProductName"
                                               SummaryType="CountAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridSummaryRow>
-    </syncfusion:SfDataGrid.CaptionSummaryRow>
-</syncfusion:SfDataGrid>
+            </dataGrid:GridSummaryRow.SummaryColumns>
+        </dataGrid:GridSummaryRow>
+    </dataGrid:SfDataGrid.CaptionSummaryRow>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.CaptionSummaryRow = new GridSummaryRow()
@@ -858,22 +858,22 @@ N> [DoubleAggregate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Dat
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}"
                        ShowGroupDropArea="True">
 
-    <syncfusion:SfDataGrid.TableSummaryRows>
-        <syncfusion:GridTableSummaryRow ShowSummaryInRow="False">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
+    <dataGrid:SfDataGrid.TableSummaryRows>
+        <dataGrid:GridTableSummaryRow ShowSummaryInRow="False">
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="PriceAmount"
                                               Format="'{Sum}'"
                                               MappingName="UnitPrice"
                                               SummaryType="DoubleAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridTableSummaryRow>
-    </syncfusion:SfDataGrid.TableSummaryRows>
-</syncfusion:SfDataGrid>
+            </dataGrid:GridSummaryRow.SummaryColumns>
+        </dataGrid:GridTableSummaryRow>
+    </dataGrid:SfDataGrid.TableSummaryRows>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -888,21 +888,21 @@ In the below code snippet `UnitPrice` column summary is formatted using `c` form
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}"
                        ShowGroupDropArea="True">
-    <syncfusion:SfDataGrid.TableSummaryRows>
-        <syncfusion:GridTableSummaryRow ShowSummaryInRow="False">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
+    <dataGrid:SfDataGrid.TableSummaryRows>
+        <dataGrid:GridTableSummaryRow ShowSummaryInRow="False">
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="PriceAmount"
                                               Format="'{Sum:c}'"
                                               MappingName="UnitPrice"
                                               SummaryType="DoubleAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridTableSummaryRow>
-    </syncfusion:SfDataGrid.TableSummaryRows>
-</syncfusion:SfDataGrid>
+            </dataGrid:GridSummaryRow.SummaryColumns>
+        </dataGrid:GridTableSummaryRow>
+    </dataGrid:SfDataGrid.TableSummaryRows>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -917,22 +917,22 @@ In the below code snippet `Total UnitPrice: ` text is appended before summary va
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"                               
+<dataGrid:SfDataGrid x:Name="sfDataGrid"                               
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}">
                        
-    <syncfusion:SfDataGrid.TableSummaryRows>
-        <syncfusion:GridTableSummaryRow ShowSummaryInRow="False">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
+    <dataGrid:SfDataGrid.TableSummaryRows>
+        <dataGrid:GridTableSummaryRow ShowSummaryInRow="False">
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="PriceAmount"
                                               Format="'Total UnitPrice : {Sum:c}'"
                                               MappingName="UnitPrice"
                                               SummaryType="DoubleAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridTableSummaryRow>
-    </syncfusion:SfDataGrid.TableSummaryRows>
+            </dataGrid:GridSummaryRow.SummaryColumns>
+        </dataGrid:GridTableSummaryRow>
+    </dataGrid:SfDataGrid.TableSummaryRows>
     
-</syncfusion:SfDataGrid>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -945,21 +945,21 @@ You can format the summary value for row using [GridSummaryRow.Title](https://he
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.TableSummaryRows>
-        <syncfusion:GridTableSummaryRow Title=" Total Price : {PriceAmount} "  
+    <dataGrid:SfDataGrid.TableSummaryRows>
+        <dataGrid:GridTableSummaryRow Title=" Total Price : {PriceAmount} "  
                                         ShowSummaryInRow="True">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="PriceAmount"
                                               Format="'{Sum:c}'"
                                               MappingName="UnitPrice"
                                               SummaryType="DoubleAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridTableSummaryRow>
-    </syncfusion:SfDataGrid.TableSummaryRows>
-</syncfusion:SfDataGrid>
+            </dataGrid:GridSummaryRow.SummaryColumns>
+        </dataGrid:GridTableSummaryRow>
+    </dataGrid:SfDataGrid.TableSummaryRows>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -1024,30 +1024,30 @@ In the below code snippet, the summaries for selected records are calculated for
 
 {% tabs %}
 {% highlight xaml %}
-  <syncfusion:SfDataGrid x:Name="sfDataGrid" 
+  <dataGrid:SfDataGrid x:Name="sfDataGrid" 
                         ItemsSource="{Binding Orders}"
                         SelectionMode="Multiple"
                         AutoGenerateColumns="True">
-     <syncfusion:SfDataGrid.TableSummaryRows>
-         <syncfusion:GridTableSummaryRow ShowSummaryInRow="True" Title="Total Price for all records: {UnitPrice}">
-             <syncfusion:GridSummaryRow.SummaryColumns>
-                 <syncfusion:GridSummaryColumn Name="UnitPrice"
+     <dataGrid:SfDataGrid.TableSummaryRows>
+         <dataGrid:GridTableSummaryRow ShowSummaryInRow="True" Title="Total Price for all records: {UnitPrice}">
+             <dataGrid:GridSummaryRow.SummaryColumns>
+                 <dataGrid:GridSummaryColumn Name="UnitPrice"
                                        Format="'{Sum:c}'"
                                        MappingName="UnitPrice"
                                        SummaryType="DoubleAggregate" />
-             </syncfusion:GridSummaryRow.SummaryColumns>
-         </syncfusion:GridTableSummaryRow>
+             </dataGrid:GridSummaryRow.SummaryColumns>
+         </dataGrid:GridTableSummaryRow>
 		 
-         <syncfusion:GridTableSummaryRow ShowSummaryInRow="True" Title="Total Price for selected records: {UnitPrice}" CalculationUnit="SelectedRows" Position="Top">
-             <syncfusion:GridSummaryRow.SummaryColumns>
-                 <syncfusion:GridSummaryColumn Name="UnitPrice"
+         <dataGrid:GridTableSummaryRow ShowSummaryInRow="True" Title="Total Price for selected records: {UnitPrice}" CalculationUnit="SelectedRows" Position="Top">
+             <dataGrid:GridSummaryRow.SummaryColumns>
+                 <dataGrid:GridSummaryColumn Name="UnitPrice"
                                        Format="'{Sum:c}'"
                                        MappingName="UnitPrice"
                                        SummaryType="DoubleAggregate" />
-             </syncfusion:GridSummaryRow.SummaryColumns>
-         </syncfusion:GridTableSummaryRow>
-     </syncfusion:SfDataGrid.TableSummaryRows>
- </syncfusion:SfDataGrid>
+             </dataGrid:GridSummaryRow.SummaryColumns>
+         </dataGrid:GridTableSummaryRow>
+     </dataGrid:SfDataGrid.TableSummaryRows>
+ </dataGrid:SfDataGrid>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -1176,26 +1176,26 @@ public static class LinqExtensions
     <local:CustomAggregate x:Key="customAggregate" />
 </Page.Resources>
 
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}">
 					   
-    <syncfusion:SfDataGrid.TableSummaryRows>
-        <syncfusion:GridTableSummaryRow Name="Total Products"
+    <dataGrid:SfDataGrid.TableSummaryRows>
+        <dataGrid:GridTableSummaryRow Name="Total Products"
                                         Title="Standard Deviation: {UnitPrice}"
                                         Position="Top"
                                         ShowSummaryInRow="True">
-            <syncfusion:GridSummaryRow.SummaryColumns>
+            <dataGrid:GridSummaryRow.SummaryColumns>
 
-                <syncfusion:GridSummaryColumn   Name="UnitPrice"
+                <dataGrid:GridSummaryColumn   Name="UnitPrice"
                                                 CustomAggregate="{StaticResource customAggregate}"
                                                 Format="'{StdDev:##.###}'"
                                                 MappingName="UnitPrice"
                                                 SummaryType="Custom" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridTableSummaryRow>
-    </syncfusion:SfDataGrid.TableSummaryRows>
-</syncfusion:SfDataGrid>
+            </dataGrid:GridSummaryRow.SummaryColumns>
+        </dataGrid:GridTableSummaryRow>
+    </dataGrid:SfDataGrid.TableSummaryRows>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.TableSummaryRows.Add(new GridTableSummaryRow()

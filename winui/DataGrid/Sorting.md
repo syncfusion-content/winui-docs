@@ -14,7 +14,7 @@ DataGrid allows you to sort the data against one or more columns either in ascen
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AllowSorting="True"
                        ItemsSource="{Binding Orders}"/>
 {% endhighlight %}
@@ -27,19 +27,19 @@ In another way, you can enable or disable the sorting for particular column by s
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AllowSorting="False"
                         AutoGenerateColumns="False"
                         ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn AllowSorting="True" MappingName="OrderID" />
-        <syncfusion:GridTextColumn AllowSorting="False" MappingName="CustomerID" />
-        <syncfusion:GridTextColumn AllowSorting="False" MappingName="CustomerName" />
-        <syncfusion:GridTextColumn AllowSorting="True" MappingName="ShipCity" />
-        <syncfusion:GridTextColumn AllowSorting="True" MappingName="Country" />
-    </syncfusion:SfDataGrid.Columns>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn AllowSorting="True" MappingName="OrderID" />
+        <dataGrid:GridTextColumn AllowSorting="False" MappingName="CustomerID" />
+        <dataGrid:GridTextColumn AllowSorting="False" MappingName="CustomerName" />
+        <dataGrid:GridTextColumn AllowSorting="True" MappingName="ShipCity" />
+        <dataGrid:GridTextColumn AllowSorting="True" MappingName="Country" />
+    </dataGrid:SfDataGrid.Columns>
 
-</syncfusion:SfDataGrid>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.Columns["OrderID"].AllowSorting = true;
@@ -61,7 +61,7 @@ By default, column gets sorted when column header clicked. You can change this b
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AllowSorting="True"
                         AutoGenerateColumns="True"
                         ItemsSource="{Binding Orders}"
@@ -98,7 +98,7 @@ In the below screen shot, the OrderID column sorted. Then the `CustomerName` col
 It is also possible to display sorted order of columns in header by setting [SfDataGrid.ShowSortNumbers](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_ShowSortNumbers) property to `true`. 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AllowSorting="True"        
                         ShowSortNumbers="True"
                         ItemsSource="{Binding Orders}" />
@@ -120,15 +120,15 @@ N> [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/winui/Syncfus
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AutoGenerateColumns="True"
                         ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.SortColumnDescriptions>
-        <syncfusion:SortColumnDescription ColumnName="OrderID" SortDirection="Ascending" />
-        <syncfusion:SortColumnDescription ColumnName="CustomerName" SortDirection="Descending" />
-    </syncfusion:SfDataGrid.SortColumnDescriptions>
+    <dataGrid:SfDataGrid.SortColumnDescriptions>
+        <dataGrid:SortColumnDescription ColumnName="OrderID" SortDirection="Ascending" />
+        <dataGrid:SortColumnDescription ColumnName="CustomerName" SortDirection="Descending" />
+    </dataGrid:SfDataGrid.SortColumnDescriptions>
 
-</syncfusion:SfDataGrid>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.SortColumnDescriptions.Add(new SortColumnDescription() { ColumnName = "OrderID", SortDirection = SortDirection.Ascending });
@@ -231,14 +231,14 @@ xmlns:data="using:Syncfusion.UI.Xaml.Data"
     <local:CustomComparer x:Key="comparer" />
 </Page.Resources>
 
-<syncfusion:SfDataGrid x:Name="sfDataGrid" ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.SortComparers>
+<dataGrid:SfDataGrid x:Name="sfDataGrid" ItemsSource="{Binding Orders}">
+    <dataGrid:SfDataGrid.SortComparers>
         <data:SortComparer Comparer="{StaticResource comparer}" PropertyName="CustomerName" />
-    </syncfusion:SfDataGrid.SortComparers>
-    <syncfusion:SfDataGrid.SortColumnDescriptions>
-        <syncfusion:SortColumnDescription ColumnName="CustomerName" SortDirection="Ascending" />
-    </syncfusion:SfDataGrid.SortColumnDescriptions>
-</syncfusion:SfDataGrid>
+    </dataGrid:SfDataGrid.SortComparers>
+    <dataGrid:SfDataGrid.SortColumnDescriptions>
+        <dataGrid:SortColumnDescription ColumnName="CustomerName" SortDirection="Ascending" />
+    </dataGrid:SfDataGrid.SortColumnDescriptions>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.SortComparers.Add(new SortComparer() { Comparer = new CustomComparer(), PropertyName = "CustomerName" });

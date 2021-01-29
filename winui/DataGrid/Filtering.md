@@ -128,7 +128,7 @@ SfDataGrid provides excel like filtering UI and also advanced filter UI to filte
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AllowFiltering="True"
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}" />
@@ -142,7 +142,7 @@ You can enable/disable filtering for particular column by setting [GridColumn.Al
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:GridTextColumn AllowFiltering="True" 
+<dataGrid:GridTextColumn AllowFiltering="True" 
                            MappingName="OrderID" />
 {% endhighlight %}
 {% highlight c# %}
@@ -189,11 +189,11 @@ Filter UI view can be changed for all the columns in grid by changing `FilterMod
 
 {% tabs %}
 {% highlight xaml %}
-<Style x:Key="filterControlStyle" TargetType="syncfusion:GridFilterControl">
+<Style x:Key="filterControlStyle" TargetType="dataGrid:GridFilterControl">
     <Setter Property="FilterMode" Value="AdvancedFilter" />
 </Style>
 
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AllowFiltering="True"
                        AutoGenerateColumns="True"
                        FilterPopupStyle="{StaticResource filterControlStyle}"
@@ -208,11 +208,11 @@ Filter UI view can be changed for the particular column by changing `FilterMode`
 
 {% tabs %}
 {% highlight xaml %}
-<Style x:Key="filterControlStyle" TargetType="syncfusion:GridFilterControl">
+<Style x:Key="filterControlStyle" TargetType="dataGrid:GridFilterControl">
     <Setter Property="FilterMode" Value="AdvancedFilter" />
 </Style>
 
-<syncfusion:GridTextColumn MappingName="OrderID"
+<dataGrid:GridTextColumn MappingName="OrderID"
                            FilterPopupStyle="{StaticResource filterControlStyle}"  />
 {% endhighlight %}
 {% endtabs %}
@@ -245,14 +245,14 @@ You can skip the `GridFilterControl` styling for particular column from `SfDataG
     </Style>
 </Page.Resources> 
 
-<syncfusion:SfDataGrid Name="sfDataGrid"
+<dataGrid:SfDataGrid Name="sfDataGrid"
                        AllowFiltering="True"
                        FilterPopupStyle="{StaticResource filterControlStyle}"
                        ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn FilterPopupStyle="{x:Null}" MappingName="OrderID" />          
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn FilterPopupStyle="{x:Null}" MappingName="OrderID" />          
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.Columns["OrderID"].FilterPopupStyle = null;
@@ -366,9 +366,9 @@ N>
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid.Columns>
-    <syncfusion:GridTextColumn MappingName="OrderID" FilterBehavior="StringTyped"/>
-</syncfusion:SfDataGrid.Columns>
+<dataGrid:SfDataGrid.Columns>
+    <dataGrid:GridTextColumn MappingName="OrderID" FilterBehavior="StringTyped"/>
+</dataGrid:SfDataGrid.Columns>
 {% endhighlight %}
 {% highlight c# %}
 sfDataGrid.Columns["OrderID"].FilterBehavior = FilterBehavior.StringTyped;
@@ -412,7 +412,7 @@ By default, casing is not considered while filtering. Because, filter predicates
     <Setter Property="FilterMode" Value="AdvancedFilter" />
 </Style>
 
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AllowFiltering="True"
                        AutoGenerateColumns="True"
                        FilterPopupStyle="{StaticResource filterControlStyle}"
@@ -477,13 +477,13 @@ In UI filtering, records are filtered based on actual value by default. If you w
 {% tabs %}
 {% highlight xaml %}
 
-xmlns:coreconverter="using:Syncfusion.UI.Xaml.Core.Converters"
+xmlns:core="using:Syncfusion.UI.Xaml.Core"
 
 <Page.Resources>
-    <coreconverter:StringFormatConverter x:Key="stringFormatConverter" />
+    <core:StringFormatConverter x:Key="stringFormatConverter" />
 </Page.Resources>
 
-<syncfusion:GridTextColumn DisplayBinding="{Binding OrderDate, Converter={StaticResource stringFormatConverter}, ConverterParameter=\{0:dd/MM/yyyy\}}"
+<dataGrid:GridTextColumn DisplayBinding="{Binding OrderDate, Converter={StaticResource stringFormatConverter}, ConverterParameter=\{0:dd/MM/yyyy\}}"
                            HeaderText="Order Date" MappingName="OrderDate"  ColumnFilter="DisplayText" />
 {% endhighlight %}
 {% highlight c# %}
@@ -599,12 +599,12 @@ By default, in SfDataGrid image path is shown inside the [CheckBoxFilterControl]
     <local:StringToImageConverter x:Key="stringToImageConverter" />
 </Page.Resources>
 
-<syncfusion:GridTextColumn MappingName="Country">
-    <syncfusion:GridTextColumn.FilterPopupStyle>
-            <Style TargetType="syncfusion:GridFilterControl">
+<dataGrid:GridTextColumn MappingName="Country">
+    <dataGrid:GridTextColumn.FilterPopupStyle>
+            <Style TargetType="dataGrid:GridFilterControl">
                 <Setter Property="CheckboxFilterStyle">
                     <Setter.Value>
-                        <Style TargetType="syncfusion:CheckboxFilterControl">
+                        <Style TargetType="dataGrid:CheckboxFilterControl">
                             <Setter Property="Background" Value="LightGray"/>
                             <Setter Property="ItemTemplate">
                                 <Setter.Value>
@@ -631,15 +631,15 @@ By default, in SfDataGrid image path is shown inside the [CheckBoxFilterControl]
                     </Setter.Value>
                 </Setter>
             </Style>
-        </syncfusion:GridTextColumn.FilterPopupStyle>
-        <syncfusion:GridTextColumn.CellTemplate>
+        </dataGrid:GridTextColumn.FilterPopupStyle>
+        <dataGrid:GridTextColumn.CellTemplate>
             <DataTemplate>
                 <Grid>
                     <Image Source="{Binding Path=Country, Converter={StaticResource stringToImageConverter}}"/>
                 </Grid>
             </DataTemplate>
-        </syncfusion:GridTextColumn.CellTemplate>
-</syncfusion:GridTextColumn>
+        </dataGrid:GridTextColumn.CellTemplate>
+</dataGrid:GridTextColumn>
 {% endhighlight %}
 {% highlight c# %}
 public class StringToImageConverter : IValueConverter
@@ -669,7 +669,7 @@ If you want to use the Text Filters for the column that has number or date value
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:GridTextColumn MappingName="OrderID" FilterBehavior="StringTyped"/>
+<dataGrid:GridTextColumn MappingName="OrderID" FilterBehavior="StringTyped"/>
 {% endhighlight %}
 {% endtabs %}
 
@@ -765,7 +765,7 @@ Sort Options can be collapsed by setting [SortOptionVisibility](https://help.syn
     <Setter Property="SortOptionVisibility" Value="Collapsed"/>
 </Style>
 
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AllowFiltering="True"
                        AutoGenerateColumns="True"
                        FilterPopupStyle="{StaticResource gridFilterControlStyle}"

@@ -34,7 +34,7 @@ You have to use `IncludeHeaders`, `IncludeFormat`, `IncludeHiddenColumn` options
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        SelectionUnit="Row"
                        SelectionMode="Single"
                        CopyOption="CopyData,IncludeHeaders" 
@@ -66,7 +66,7 @@ You have to use `ExcludeFirstLine`, `IncludeHiddenColumn` options along with `Pa
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        SelectionUnit="Row"
                        SelectionMode="Single"
                        GridPasteOption="PasteData,ExcludeFirstLine" 
@@ -97,7 +97,7 @@ You have to use `IncludeHeaders`, `IncludeFormat`, `IncludeHiddenColumn` options
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        SelectionUnit="Row"
                        SelectionMode="Single"
                        GridCopyOption="CutData,IncludeHeaders" 
