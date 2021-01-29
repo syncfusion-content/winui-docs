@@ -25,7 +25,7 @@ When the column is grouped, records that have an identical value in the column a
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AllowGrouping="True"
                         AutoGenerateColumns="True"
                         ItemsSource="{Binding Orders}"
@@ -41,16 +41,16 @@ You can enable or disable grouping on particular column by setting the [GridColu
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AutoGenerateColumns="False"
                         AllowGrouping="True"						
                         ItemsSource="{Binding Orders}"
                         ShowGroupDropArea="True">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn AllowGrouping="True" MappingName="OrderID" />
-        <syncfusion:GridTextColumn AllowGrouping="False" MappingName="CustomerID" />        
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn AllowGrouping="True" MappingName="OrderID" />
+        <dataGrid:GridTextColumn AllowGrouping="False" MappingName="CustomerID" />        
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.Columns["OrderID"].AllowGrouping = true;
@@ -81,15 +81,15 @@ For example, if you want to group the OrderID column programmatically, define it
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AllowGrouping="True"
                         AutoGenerateColumns="True"
                         ItemsSource="{Binding Orders}"
                         ShowGroupDropArea="True">
-    <syncfusion:SfDataGrid.GroupColumnDescriptions>
-        <syncfusion:GroupColumnDescription ColumnName="OrderID" />
-    </syncfusion:SfDataGrid.GroupColumnDescriptions>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.GroupColumnDescriptions>
+        <dataGrid:GroupColumnDescription ColumnName="OrderID" />
+    </dataGrid:SfDataGrid.GroupColumnDescriptions>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription() { ColumnName = "OrderID" });
@@ -101,17 +101,17 @@ You can group more than one column programmatically.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                         AllowGrouping="True"                               
                         ItemsSource="{Binding Orders}"
                         ShowGroupDropArea="True">
 
-    <syncfusion:SfDataGrid.GroupColumnDescriptions>
-        <syncfusion:GroupColumnDescription ColumnName="OrderID" />
-        <syncfusion:GroupColumnDescription ColumnName="CustomerID" />
-    </syncfusion:SfDataGrid.GroupColumnDescriptions>
+    <dataGrid:SfDataGrid.GroupColumnDescriptions>
+        <dataGrid:GroupColumnDescription ColumnName="OrderID" />
+        <dataGrid:GroupColumnDescription ColumnName="CustomerID" />
+    </dataGrid:SfDataGrid.GroupColumnDescriptions>
 
-</syncfusion:SfDataGrid>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.View.BeginInit();
@@ -128,12 +128,12 @@ In the below example, OrderID column displays value with one decimal digit in ce
 
 {% tabs %}
 {% highlight xaml %}
-xmlns:coreconverter="using:Syncfusion.UI.Xaml.Core.Converters"
+xmlns:core="using:Syncfusion.UI.Xaml.Core"
 
 <Page.Resources>
-    <coreconverter:StringFormatConverter x:Key="stringFormatConverter" />
+    <core:StringFormatConverter x:Key="stringFormatConverter" />
 </Page.Resources>
-<syncfusion:GridTextColumn HeaderText="Order ID"  
+<dataGrid:GridTextColumn HeaderText="Order ID"  
                            TextAlignment="Right"
                            DisplayBinding="{Binding OrderID, 
                            Converter={StaticResource stringFormatConverter}, ConverterParameter=\{0:N1\}}" 
@@ -152,7 +152,7 @@ In SfDataGrid, you can group the column based on display value and also the same
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:GridComboBoxColumn MappingName="ShipCityID" HeaderText="Ship Country" SelectedValuePath="ShipCityID" DisplayMemberPath="ShipCityName" ItemsSource="{Binding ComboItemSource, Source={StaticResource viewModel}}" GroupMode="Display" />
+<dataGrid:GridComboBoxColumn MappingName="ShipCityID" HeaderText="Ship Country" SelectedValuePath="ShipCityID" DisplayMemberPath="ShipCityName" ItemsSource="{Binding ComboItemSource, Source={StaticResource viewModel}}" GroupMode="Display" />
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.Columns.Add(new GridComboBoxColumn()
@@ -200,7 +200,7 @@ You can hide the column header when the particular column gets grouped by settin
  
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AutoGenerateColumns="True"
                         AllowGrouping="True"						
                         ItemsSource="{Binding Orders}"
@@ -221,7 +221,7 @@ You can freeze the group caption of the group in view until its records scrolled
  
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"                            
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"                            
                         AutoGenerateColumns="True"
                         AllowGrouping="True"						
                         AllowFrozenGroupHeaders="True"
@@ -248,7 +248,7 @@ You can expand all the groups while grouping by setting [SfDataGrid.AutoExpandGr
  
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AutoExpandGroups="True"
                         AllowGrouping="True"						
                         AutoGenerateColumns="True"
@@ -307,7 +307,7 @@ You can customize the width of IndentColumn in SfDataGrid by using [IndentColumn
 
 {% tabs %}
 {% highlight xaml %}
-<Syncfusion:SfDataGrid x:Name="sfDataGrid"                                      
+<dataGrid:SfDataGrid x:Name="sfDataGrid"                                      
                        AllowGrouping="True"
                        IndentColumnWidth="50"
                        ShowGroupDropArea="True"
@@ -326,7 +326,7 @@ You can change the `GroupDropArea’s` text can by setting [SfDataGrid.GroupDrop
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AllowGrouping="True"
                        GroupDropAreaText="Drag and drop the columns here"
                        ItemsSource="{Binding Orders}"
@@ -342,7 +342,7 @@ By default, the `GroupDropArea` will be expanded while dragging the column towar
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AllowGrouping="True"
                         AutoGenerateColumns="True"
                         IsGroupDropAreaExpanded="True"
@@ -422,15 +422,15 @@ Now , assign the `keySelector` into `GroupColumnDescription.KeySelector` and set
     <local:EmployeeViewModel x:Key="viewModel"/>
 </Page.Resources>
   
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"                          
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"                          
                         AutoGenerateColumns="True"                          
                         ItemsSource="{Binding Employees}">
 
-    <syncfusion:SfDataGrid.GroupColumnDescriptions>
-        <syncfusion:GroupColumnDescription ColumnName="HireDate" KeySelector="{Binding KeySelector, Source={StaticResource viewModel}}" />
-    </syncfusion:SfDataGrid.GroupColumnDescriptions>
+    <dataGrid:SfDataGrid.GroupColumnDescriptions>
+        <dataGrid:GroupColumnDescription ColumnName="HireDate" KeySelector="{Binding KeySelector, Source={StaticResource viewModel}}" />
+    </dataGrid:SfDataGrid.GroupColumnDescriptions>
         
-</syncfusion:SfDataGrid>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -446,11 +446,11 @@ sorted based on the column name described in [GroupColumnDescription](https://he
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid.GroupColumnDescriptions>
-    <syncfusion:GroupColumnDescription ColumnName="SickLeaveHours"
+<dataGrid:SfDataGrid.GroupColumnDescriptions>
+    <dataGrid:GroupColumnDescription ColumnName="SickLeaveHours"
                                        KeySelector="{Binding KeySelector, Source={StaticResource viewModel}}"
                                        SortGroupRecords="True" />
-</syncfusion:SfDataGrid.GroupColumnDescriptions>
+</dataGrid:SfDataGrid.GroupColumnDescriptions>
 {% endhighlight %}
 {% highlight c# %}
 GroupColumnDescription groupColumnDescription = new GroupColumnDescription()

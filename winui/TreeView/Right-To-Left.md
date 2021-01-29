@@ -14,7 +14,7 @@ The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTreeView x:Name="treeView" FlowDirection="RightToLeft"/>
+<treeView:SfTreeView x:Name="treeView" FlowDirection="RightToLeft"/>
 
 {% endhighlight %}
 {% highlight c# %}

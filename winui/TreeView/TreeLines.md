@@ -13,7 +13,7 @@ The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.
 
 {% tabs %}
 {% highlight xaml %}
-<Syncfusion:SfTreeView Name="treeView" ShowLines="True" />
+<treeView:SfTreeView Name="treeView" ShowLines="True" />
 {% endhighlight %}
 {% highlight c# %}
 treeView.ShowLines = true;
@@ -28,7 +28,7 @@ The `TreeView` also supports to show the tree lines for root nodes by enabling t
 
 {% tabs %}
 {% highlight xaml %}
-<Syncfusion:SfTreeView Name="treeView"    
+<treeView:SfTreeView Name="treeView"    
                        ShowLines="True"
                        ShowRootLines="True" />
 {% endhighlight %}
@@ -47,7 +47,7 @@ The `TreeView` allows to change the color of tree lines by using the [LineStroke
 
 {% tabs %}
 {% highlight xaml %}
-<Syncfusion:SfTreeView Name="treeView"    
+<treeView:SfTreeView Name="treeView"    
                        ShowLines="True"
                        ShowRootLines="True"
                        LineStroke="DeepSkyBlue" />
@@ -66,7 +66,7 @@ The `TreeView` allows to change the thickness of tree lines by using the [LineSt
 
 {% tabs %}
 {% highlight xaml %}
-<Syncfusion:SfTreeView Name="treeView"           
+<treeView:SfTreeView Name="treeView"           
                        ShowLines="True"
                        ShowRootLines="True"
                        LineStrokeThickness="1.5" />        

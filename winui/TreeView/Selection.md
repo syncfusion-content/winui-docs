@@ -22,7 +22,7 @@ The `TreeView` allows selecting the items either programmatically or touch inter
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeView x:Name="treeView" SelectionMode="Multiple"/>
+<treeView:SfTreeView x:Name="treeView" SelectionMode="Multiple"/>
 {% endhighlight %}
 {% highlight c# %}
 treeView.SelectionMode = SelectionMode.Multiple;
