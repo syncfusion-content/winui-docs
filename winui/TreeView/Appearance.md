@@ -262,7 +262,7 @@ The `TreeView` allows you change the position of expander view by setting the [E
 {% tabs %}
 {% highlight xaml %}
 
-<Syncfusion:SfTreeView x:Name="treeView" ExpanderPosition="End">
+<treeView:SfTreeView x:Name="treeView" ExpanderPosition="End">
 
 {% endhighlight %}
 {% highlight c# %}

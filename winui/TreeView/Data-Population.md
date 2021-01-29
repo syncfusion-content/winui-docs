@@ -253,73 +253,72 @@ You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/winu
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:local="using:syncfusion.treeviewdemos.winui"
       xmlns:treeView="using:Syncfusion.UI.Xaml.TreeView"
-      xmlns:node="using:Syncfusion.UI.Xaml.TreeView.Engine"
       mc:Ignorable="d"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
       NavigationCacheMode="Disabled">
     <Grid> 
         <treeView:SfTreeView x:Name="unboundTreeView" Width="400" Height="500"> 
                         <treeView:SfTreeView.Nodes>
-                            <node:TreeViewNode Content="Chairman and CEO"
+                            <treeView:TreeViewNode Content="Chairman and CEO"
                                                IsExpanded="True">
-                                <node:TreeViewNode.ChildNodes>
-                                    <node:TreeViewNode Content="COO and Director">
-                                        <node:TreeViewNode.ChildNodes>
-                                            <node:TreeViewNode Content="Human Resources" />
-                                            <node:TreeViewNode Content="Platform, EMEA" />
-                                            <node:TreeViewNode Content="Mobile" />
-                                            <node:TreeViewNode Content="Mid-Market Sales EMED" />
-                                            <node:TreeViewNode Content="EMEA Regional Director" />
-                                            <node:TreeViewNode Content="Advertising and Global Operations" />
-                                            <node:TreeViewNode Content="Growth, Engagement, and Moblie" />
-                                            <node:TreeViewNode Content="Global Marketing and Solutions" />
-                                        </node:TreeViewNode.ChildNodes>
-                                    </node:TreeViewNode>
-                                    <node:TreeViewNode Content="CIO" />
-                                    <node:TreeViewNode Content="Security">
-                                        <node:TreeViewNode.ChildNodes>
-                                            <node:TreeViewNode Content="Security Services" />
-                                        </node:TreeViewNode.ChildNodes>
-                                    </node:TreeViewNode>
-                                    <node:TreeViewNode Content="Corporate Development" />
-                                    <node:TreeViewNode Content="Product"
+                                <treeView:TreeViewNode.ChildNodes>
+                                    <treeView:TreeViewNode Content="COO and Director">
+                                        <treeView:TreeViewNode.ChildNodes>
+                                            <treeView:TreeViewNode Content="Human Resources" />
+                                            <treeView:TreeViewNode Content="Platform, EMEA" />
+                                            <treeView:TreeViewNode Content="Mobile" />
+                                            <treeView:TreeViewNode Content="Mid-Market Sales EMED" />
+                                            <treeView:TreeViewNode Content="EMEA Regional Director" />
+                                            <treeView:TreeViewNode Content="Advertising and Global Operations" />
+                                            <treeView:TreeViewNode Content="Growth, Engagement, and Moblie" />
+                                            <treeView:TreeViewNode Content="Global Marketing and Solutions" />
+                                        </treeView:TreeViewNode.ChildNodes>
+                                    </treeView:TreeViewNode>
+                                    <treeView:TreeViewNode Content="CIO" />
+                                    <treeView:TreeViewNode Content="Security">
+                                        <treeView:TreeViewNode.ChildNodes>
+                                            <treeView:TreeViewNode Content="Security Services" />
+                                        </treeView:TreeViewNode.ChildNodes>
+                                    </treeView:TreeViewNode>
+                                    <treeView:TreeViewNode Content="Corporate Development" />
+                                    <treeView:TreeViewNode Content="Product"
                                                        IsExpanded="True">
-                                        <node:TreeViewNode.ChildNodes>
-                                            <node:TreeViewNode Content="Product Advertising" />
-                                        </node:TreeViewNode.ChildNodes>
-                                    </node:TreeViewNode>
-                                    <node:TreeViewNode Content="Communication and Marketing"
+                                        <treeView:TreeViewNode.ChildNodes>
+                                            <treeView:TreeViewNode Content="Product Advertising" />
+                                        </treeView:TreeViewNode.ChildNodes>
+                                    </treeView:TreeViewNode>
+                                    <treeView:TreeViewNode Content="Communication and Marketing"
                                                        IsExpanded="True">
-                                        <node:TreeViewNode.ChildNodes>
-                                            <node:TreeViewNode Content="Consumer Marketing" />
-                                            <node:TreeViewNode Content="Platforms, Partners, and PR" />
-                                        </node:TreeViewNode.ChildNodes>
-                                    </node:TreeViewNode>
-                                    <node:TreeViewNode Content="Legal"
+                                        <treeView:TreeViewNode.ChildNodes>
+                                            <treeView:TreeViewNode Content="Consumer Marketing" />
+                                            <treeView:TreeViewNode Content="Platforms, Partners, and PR" />
+                                        </treeView:TreeViewNode.ChildNodes>
+                                    </treeView:TreeViewNode>
+                                    <treeView:TreeViewNode Content="Legal"
                                                        IsExpanded="True">
-                                        <node:TreeViewNode.ChildNodes>
-                                            <node:TreeViewNode Content="Public Policy" />
-                                        </node:TreeViewNode.ChildNodes>
-                                    </node:TreeViewNode>
-                                    <node:TreeViewNode Content="Patnership and Marketing" />
-                                    <node:TreeViewNode Content="Engineering"
+                                        <treeView:TreeViewNode.ChildNodes>
+                                            <treeView:TreeViewNode Content="Public Policy" />
+                                        </treeView:TreeViewNode.ChildNodes>
+                                    </treeView:TreeViewNode>
+                                    <treeView:TreeViewNode Content="Patnership and Marketing" />
+                                    <treeView:TreeViewNode Content="Engineering"
                                                        IsExpanded="True">
-                                        <node:TreeViewNode.ChildNodes>
-                                            <node:TreeViewNode Content="Engineering" />
-                                            <node:TreeViewNode Content="Software Development" />
-                                            <node:TreeViewNode Content="Engineering and Products" />
-                                            <node:TreeViewNode Content="Infrastructure Engineering" />
-                                        </node:TreeViewNode.ChildNodes>
-                                    </node:TreeViewNode>
-                                    <node:TreeViewNode Content="CFO"
+                                        <treeView:TreeViewNode.ChildNodes>
+                                            <treeView:TreeViewNode Content="Engineering" />
+                                            <treeView:TreeViewNode Content="Software Development" />
+                                            <treeView:TreeViewNode Content="Engineering and Products" />
+                                            <treeView:TreeViewNode Content="Infrastructure Engineering" />
+                                        </treeView:TreeViewNode.ChildNodes>
+                                    </treeView:TreeViewNode>
+                                    <treeView:TreeViewNode Content="CFO"
                                                        IsExpanded="True">
-                                        <node:TreeViewNode.ChildNodes>
-                                            <node:TreeViewNode Content="Treasurer" />
-                                        </node:TreeViewNode.ChildNodes>
-                                    </node:TreeViewNode>
-                                    <node:TreeViewNode Content="Brand Design" />
-                                </node:TreeViewNode.ChildNodes>
-                            </node:TreeViewNode>
+                                        <treeView:TreeViewNode.ChildNodes>
+                                            <treeView:TreeViewNode Content="Treasurer" />
+                                        </treeView:TreeViewNode.ChildNodes>
+                                    </treeView:TreeViewNode>
+                                    <treeView:TreeViewNode Content="Brand Design" />
+                                </treeView:TreeViewNode.ChildNodes>
+                            </treeView:TreeViewNode>
                         </treeView:SfTreeView.Nodes>
         </treeView:SfTreeView>    
     </Grid>

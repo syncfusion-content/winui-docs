@@ -15,7 +15,7 @@ It is necessary to define [EditTemplate](https://help.syncfusion.com/cr/winui/Sy
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeView x:Name="treeView"
+<treeView:SfTreeView x:Name="treeView"
                         Width="400"
                         Height="500"
                         AutoExpandMode="AllNodes"
@@ -25,7 +25,7 @@ It is necessary to define [EditTemplate](https://help.syncfusion.com/cr/winui/Sy
                         IsAnimationEnabled="True"
                         ChildPropertyName="Files"
                         ItemsSource="{Binding Folders}">
-    <syncfusion:SfTreeView.ItemTemplate>
+    <treeView:SfTreeView.ItemTemplate>
         <DataTemplate>
             <StackPanel Orientation="Horizontal">
                 <ContentPresenter Width="20"
@@ -38,16 +38,16 @@ It is necessary to define [EditTemplate](https://help.syncfusion.com/cr/winui/Sy
                             Text="{Binding FileName}" />
             </StackPanel>
         </DataTemplate>
-    </syncfusion:SfTreeView.ItemTemplate>
-    <syncfusion:SfTreeView.EditTemplate>
+    </treeView:SfTreeView.ItemTemplate>
+    <treeView:SfTreeView.EditTemplate>
         <DataTemplate>
             <TextBox Text="{Binding Name}" 
 				VerticalContentAlignment="Center" 
                 Margin="-4,0,-4,0"
                 Height="{Binding ItemHeight,ElementName=treeView}" />
         </DataTemplate>
-    </syncfusion:SfTreeView.EditTemplate>
-</syncfusion:SfTreeView>
+    </treeView:SfTreeView.EditTemplate>
+</treeView:SfTreeView>
 {% endhighlight %}
 {% highlight c# %}
 treeView.AllowEditing = true;

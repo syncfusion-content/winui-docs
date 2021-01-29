@@ -351,7 +351,6 @@ You can directly set the checkbox state by setting the [TreeViewNode.IsChecked](
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:local="using:syncfusion.treeviewdemos.winui"
       xmlns:treeView="using:Syncfusion.UI.Xaml.TreeView"
-      xmlns:Engine="using:Syncfusion.UI.Xaml.TreeView.Engine"
       mc:Ignorable="d"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
       NavigationCacheMode="Disabled">
@@ -365,56 +364,56 @@ You can directly set the checkbox state by setting the [TreeViewNode.IsChecked](
                            ItemTemplateDataContextType="Node"
                            CheckBoxMode="Recursive">
                     <treeView:SfTreeView.Nodes>
-                        <Engine:TreeViewNode Content="Grains"
+                        <treeView:TreeViewNode Content="Grains"
                                              IsExpanded="True"
                                              IsChecked="True">
-                            <Engine:TreeViewNode.ChildNodes>
-                                <Engine:TreeViewNode Content="Cereals"
+                            <treeView:TreeViewNode.ChildNodes>
+                                <treeView:TreeViewNode Content="Cereals"
                                                      IsExpanded="True">
-                                    <Engine:TreeViewNode.ChildNodes>
-                                        <Engine:TreeViewNode Content="Rice"
+                                    <treeView:TreeViewNode.ChildNodes>
+                                        <treeView:TreeViewNode Content="Rice"
                                                              IsChecked="True" />
-                                        <Engine:TreeViewNode Content="Barley" />
-                                    </Engine:TreeViewNode.ChildNodes>
-                                </Engine:TreeViewNode>
-                                <Engine:TreeViewNode Content="Oilseeds">
-                                    <Engine:TreeViewNode.ChildNodes>
-                                        <Engine:TreeViewNode Content="Safflower"
+                                        <treeView:TreeViewNode Content="Barley" />
+                                    </treeView:TreeViewNode.ChildNodes>
+                                </treeView:TreeViewNode>
+                                <treeView:TreeViewNode Content="Oilseeds">
+                                    <treeView:TreeViewNode.ChildNodes>
+                                        <treeView:TreeViewNode Content="Safflower"
                                                              IsChecked="True" />
-                                    </Engine:TreeViewNode.ChildNodes>
-                                </Engine:TreeViewNode>
-                            </Engine:TreeViewNode.ChildNodes>
-                        </Engine:TreeViewNode>
-                        <Engine:TreeViewNode Content="Fruits"
+                                    </treeView:TreeViewNode.ChildNodes>
+                                </treeView:TreeViewNode>
+                            </treeView:TreeViewNode.ChildNodes>
+                        </treeView:TreeViewNode>
+                        <treeView:TreeViewNode Content="Fruits"
                                              IsExpanded="true">
-                            <Engine:TreeViewNode.ChildNodes>
-                                <Engine:TreeViewNode Content="Orange"
+                            <treeView:TreeViewNode.ChildNodes>
+                                <treeView:TreeViewNode Content="Orange"
                                                      IsChecked="True" />
-                                <Engine:TreeViewNode Content="Apples"
+                                <treeView:TreeViewNode Content="Apples"
                                                      IsExpanded="true" />
-                            </Engine:TreeViewNode.ChildNodes>
-                        </Engine:TreeViewNode>
-                        <Engine:TreeViewNode Content="Vegetables"
+                            </treeView:TreeViewNode.ChildNodes>
+                        </treeView:TreeViewNode>
+                        <treeView:TreeViewNode Content="Vegetables"
                                              IsExpanded="true"
                                              IsChecked="True">
-                            <Engine:TreeViewNode.ChildNodes>
-                                <Engine:TreeViewNode Content="Root Vegetables"
+                            <treeView:TreeViewNode.ChildNodes>
+                                <treeView:TreeViewNode Content="Root Vegetables"
                                                      IsExpanded="true">
-                                    <Engine:TreeViewNode.ChildNodes>
-                                        <Engine:TreeViewNode Content="Potato"
+                                    <treeView:TreeViewNode.ChildNodes>
+                                        <treeView:TreeViewNode Content="Potato"
                                                              IsChecked="True" />
-                                        <Engine:TreeViewNode Content="Carrot" />
-                                    </Engine:TreeViewNode.ChildNodes>
-                                </Engine:TreeViewNode>
-                                <Engine:TreeViewNode Content="Podded">
-                                    <Engine:TreeViewNode.ChildNodes>
-                                        <Engine:TreeViewNode Content="Peanut"
+                                        <treeView:TreeViewNode Content="Carrot" />
+                                    </treeView:TreeViewNode.ChildNodes>
+                                </treeView:TreeViewNode>
+                                <treeView:TreeViewNode Content="Podded">
+                                    <treeView:TreeViewNode.ChildNodes>
+                                        <treeView:TreeViewNode Content="Peanut"
                                                              IsChecked="True" />
-                                        <Engine:TreeViewNode Content="Lentil" />
-                                    </Engine:TreeViewNode.ChildNodes>
-                                </Engine:TreeViewNode>
-                            </Engine:TreeViewNode.ChildNodes>
-                        </Engine:TreeViewNode>
+                                        <treeView:TreeViewNode Content="Lentil" />
+                                    </treeView:TreeViewNode.ChildNodes>
+                                </treeView:TreeViewNode>
+                            </treeView:TreeViewNode.ChildNodes>
+                        </treeView:TreeViewNode>
                     </treeView:SfTreeView.Nodes>
 
                     <treeView:SfTreeView.ItemTemplate>
@@ -530,7 +529,7 @@ The Checkbox contains the following three states:
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeView x:Name="treeView" CheckBoxMode="Recursive" />
+<treeView:SfTreeView x:Name="treeView" CheckBoxMode="Recursive" />
 {% endhighlight %}
 {% highlight c# %}
 treeView.CheckBoxMode = CheckBoxMode.Recursive;
