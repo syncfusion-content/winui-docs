@@ -14,9 +14,9 @@ You can change the header row height by setting [SfDataGrid.HeaderRowHeight](htt
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="sfDataGrid" 
-					   RowHeight="30"
-					   HeaderRowHeight="50"
-					   ItemsSource="{Binding Orders}" />
+                       RowHeight="30"
+                       HeaderRowHeight="50"
+                       ItemsSource="{Binding Orders}" />
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.HeaderRowHeight = 50;
@@ -24,7 +24,7 @@ this.sfDataGrid.RowHeight = 30;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing RowHeight and HeaderRowHeight image in WinUI datagrid](Row-Height-Customization_images/Row-Height-Customization_img8.png)
+![Changing RowHeight and HeaderRowHeight image in WinUI DataGrid](Row-Height-Customization_images/Row-Height-Customization_img8.png)
 
 You can also change the particular row height using [VisualContainer.RowHeights](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.VisualContainer.html#Syncfusion_UI_Xaml_DataGrid_VisualContainer_RowHeights) property.
 
@@ -44,9 +44,9 @@ private void SfDataGrid_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Changing RowHeight of particular Row using visualContainer in WinUI datagrid](Row-Height-Customization_images/Row-Height-Customization_img9.png)
+![Changing RowHeight of particular Row using visualContainer in WinUI DataGrid](Row-Height-Customization_images/Row-Height-Customization_img9.png)
 
-You can also change the row height of particular row using [QueryRowHeight](#_QueryRowHeight) event.
+You can also change the row height of particular row using [QueryRowHeight](https://help.syncfusion.com/winui/datagrid/row-height-customization#queryrowheight-event) event.
 
 
 {% tabs %}
@@ -65,7 +65,7 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Changing RowHeight of particular Row using queryrowheight event in WinUI datagrid](Row-Height-Customization_images/Row-Height-Customization_img1.png)
+![Changing RowHeight of particular Row using queryrowheight event in WinUI DataGrid](Row-Height-Customization_images/Row-Height-Customization_img1.png)
 
 ## QueryRowHeight event
 
@@ -95,7 +95,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![OnDemand Changing of RowHeight image in WinUI datagrid](Row-Height-Customization_images/Row-Height-Customization_img2.png)
+![OnDemand Changing of RowHeight image in WinUI DataGrid](Row-Height-Customization_images/Row-Height-Customization_img2.png)
 
 ### Limitations
 
@@ -148,7 +148,7 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 Here, row heights are customized based on the large text content.
 
-![AutoFit RowHeight based on content Image in WinUI datagrid](Row-Height-Customization_images/Row-Height-Customization_img3.png)
+![AutoFit RowHeight based on content Image in WinUI DataGrid](Row-Height-Customization_images/Row-Height-Customization_img3.png)
 
 #### GridRowSizingOptions
 
@@ -208,7 +208,7 @@ You can reset height of the particular or all rows in View at runtime to get the
 
 sfDataGrid.InvalidateRowHeight(2);
 var visualContainer = this.sfDataGrid.GetType().GetProperty("VisualContainer", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic).GetValue(this.sfDataGrid) as VisualContainer;
-visualContainer.InvalidateMeasure();
+visualContainer.InvalidateMeasureInfo();
 
 {% endhighlight %}
 {% endtabs %}
@@ -316,7 +316,7 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![AutoFit HeaderRowHeight Image in WinUI datagrid](Row-Height-Customization_images/Row-Height-Customization_img5.png)
+![Customized HeaderRowHeight Image in WinUI DataGrid](Row-Height-Customization_images/Row-Height-Customization_img5.png)
 
 ## Change StackedHeaderRow Height based on its content
 
@@ -371,7 +371,7 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![AutoFit StackedHeaderRow Image in WinUI datagrid](Row-Height-Customization_images/Row-Height-Customization_img6.png)
+![Customized StackedHeaderRow height Image in WinUI DataGrid](Row-Height-Customization_images/Row-Height-Customization_img6.png)
 
 ## Change TableSummaryRow Height
 
@@ -394,5 +394,5 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Customized TableSummaryRow height Image in WinUI datagrid](Row-Height-Customization_images/Row-Height-Customization_img7.png)
+![Customized TableSummaryRow height Image in WinUI DataGrid](Row-Height-Customization_images/Row-Height-Customization_img7.png)
 

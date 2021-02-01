@@ -28,14 +28,14 @@ RowHeader is a special column used to indicate the status of row (current row, e
 <syncfusion:SfDataGrid x:Name="sfDataGrid"
                        AddNewRowPosition="Top"
                        ItemsSource="{Binding Orders}"
-                       ShowRowHeader="True">
+                       ShowRowHeader="True" />
 {% endhighlight %}
 {% highlight c# %}
 sfDataGrid.ShowRowHeader = true;
 {% endhighlight %}
 {% endtabs %}
 
-![RowHeader in SfDataGrid](Rows_images/Rows_img1.png)
+![RowHeader in WinUI DataGrid](Rows_images/Rows_img1.png)
 
 ### Row indicators and its description
 
@@ -91,7 +91,7 @@ You can change the width of the row header by setting [SfDataGrid.RowHeaderWidth
 <syncfusion:SfDataGrid x:Name="sfDataGrid"
                        ShowRowHeader="True"
                        RowHeaderWidth="50"
-                       ItemsSource="{Binding Orders}"  />
+                       ItemsSource="{Binding Orders}" />
 {% endhighlight %}
 
 {% highlight c# %}
@@ -129,7 +129,7 @@ You can display the corresponding row index in each row header, by customizing t
 {% endhighlight %}
 {% endtabs %}
 
-![Row index displayed in row header cell of WinUI datagrid](Rows_images/Rows_img11.png)
+![Row index displayed in row header cell of WinUI DataGrid](Rows_images/Rows_img11.png)
 
 
 ### Change the current row indicator
@@ -181,7 +181,7 @@ You can change the CurrentRowIndicator in the row header by customizing the cont
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid current row indicator customization](Rows_images/Rows_img12.png)
+![Current row indicator customization in WinUI DataGrid ](Rows_images/Rows_img12.png)
 
 
 ## Header Row
@@ -201,11 +201,11 @@ You can hide the header row by setting `SfDataGrid.HeaderRowHeight` as `0` (zero
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="sfDataGrid"
                        HeaderRowHeight="0"
-                       ItemsSource="{Binding Orders}">
+                       ItemsSource="{Binding Orders}" />
 {% endhighlight %}
 {% endtabs %}
 
-![Hiding the row header in datagrid](Rows_images/Rows_img13.png)
+![Hiding the row header in WinUI DataGrid](Rows_images/Rows_img13.png)
 
 You can also hide the header row of DetailsViewDataGrid by setting `HeaderRowHeight` as `0` (zero) to [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid).
 
@@ -220,11 +220,11 @@ You can also hide the header row of DetailsViewDataGrid by setting `HeaderRowHei
             </syncfusion:GridViewDefinition.DataGrid>
         </syncfusion:GridViewDefinition>
     </syncfusion:SfDataGrid.DetailsViewDefinition>
-</ syncfusion:SfDataGrid>
+</syncfusion:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
-![Hiding the row header in details view datagrid](Rows_images/Rows_img8.png)
+![Hiding the row header in details view for WinUI DataGrid](Rows_images/Rows_img8.png)
 
 ## Freeze panes
 
@@ -281,7 +281,7 @@ Set the frozen columns in <kbd>right side</kbd> of the SfDataGrid.
                        FrozenColumnCount="1"
                        FrozenRowsCount="2"                       
                        FrozenFooterRowsCount="3"
-                       ItemsSource="{Binding Orders}">
+                       ItemsSource="{Binding Orders}" />
 {% endhighlight %}
 {% highlight c# %}
 sfDataGrid.FrozenFooterColumnCount = 1;
@@ -291,7 +291,7 @@ sfDataGrid.FrozenFooterRowsCount = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![Shown the Frozen footer column, Frozen column, Frozen rows , Frozen footer rows in SfDataGrid](Rows_images/Rows_img9.png)
+![Shown the Frozen footer column, Frozen column, Frozen rows , Frozen footer rows in WinUI DataGrid](Rows_images/Rows_img9.png)
 
 ### Differentiate frozen rows from normal rows
 
@@ -382,7 +382,7 @@ You can differentiate the frozen rows and footer rows from normal rows by writin
 {% endhighlight %}
 {% endtabs %}
 
-![Show the differentiation of Frozen Rows and Footer Rows from normal rows](Rows_images/Rows_img10.png)
+![Show the differentiation of Frozen Rows and Footer Rows from normal rows in WinUI DataGrid](Rows_images/Rows_img10.png)
 
 ### Disable drag and drop between frozen and non-frozen columns
 
