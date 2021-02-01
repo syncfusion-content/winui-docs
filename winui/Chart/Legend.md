@@ -39,7 +39,7 @@ chart.Legend = new ChartLegend();
 
 Each legend composed of the following parts:
 
-![Legend composed support in WinUI Chart](Legend_images/legend_overview_elements_pie.png)
+![Legend composed support in WinUI Chart](Legend_images/legend_elements_pie.png)
 
 
 ## Legend Icon
