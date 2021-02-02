@@ -26,26 +26,6 @@ this.sfDataGrid.RowHeight = 30;
 
 ![Changing RowHeight and HeaderRowHeight image in WinUI DataGrid](Row-Height-Customization_images/Row-Height-Customization_img8.png)
 
-You can also change the particular row height using [VisualContainer.RowHeights](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.VisualContainer.html#Syncfusion_UI_Xaml_DataGrid_VisualContainer_RowHeights) property.
-
-
-{% tabs %}
-{% highlight c# %}
-this.sfDataGrid.Loaded += SfDataGrid_Loaded;
-
-private void SfDataGrid_Loaded(object sender, RoutedEventArgs e)
-{
-    var visualContainer = this.sfDataGrid.GetType().GetProperty("VisualContainer", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic).GetValue(this.sfDataGrid) as VisualContainer; 
-
-    //Set RowHeight to 2'nd row
-    visualContainer.RowHeights[2] = 50;
-    visualContainer.InvalidateMeasure();
-}
-{% endhighlight %}
-{% endtabs %}
-
-![Changing RowHeight of particular Row using visualContainer in WinUI DataGrid](Row-Height-Customization_images/Row-Height-Customization_img9.png)
-
 You can also change the row height of particular row using [QueryRowHeight](https://help.syncfusion.com/winui/datagrid/row-height-customization#queryrowheight-event) event.
 
 
@@ -195,37 +175,6 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 Here `CustomerID` and `Country` columns are excluded from height calculation and the row height is calculated based on `CustomerName` column only.
  
 ![AutoFit RowHeight for specific columns Image in WinUI DataGrid](Row-Height-Customization_images/Row-Height-Customization_img4.png)
-
-## Reset row height at runtime
-
-You can reset height of the particular or all rows in View at runtime to get the updated height from `QueryRowHeight` event handler using below methods. You have to call [InvalidateMeasureInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.VisualContainer.html#Syncfusion_UI_Xaml_DataGrid_VisualContainer_InvalidateMeasureInfo) method of `VisualContainer` to refresh the View.
- 
-* [InvalidateRowHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_InvalidateRowHeight_System_Int32_) – Resets the height of particular row.
-
-
-{% tabs %}
-{% highlight c# %}
-
-sfDataGrid.InvalidateRowHeight(2);
-var visualContainer = this.sfDataGrid.GetType().GetProperty("VisualContainer", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic).GetValue(this.sfDataGrid) as VisualContainer;
-visualContainer.InvalidateMeasureInfo();
-
-{% endhighlight %}
-{% endtabs %}
-
-
-* [RowHeightManager.Reset](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.RowHeightManager.html#Syncfusion_UI_Xaml_DataGrid_RowHeightManager_Reset) – Resets the height for all rows in View.
-
-
-{% tabs %}
-{% highlight c# %}
-
-var visualContainer = this.sfDataGrid.GetType().GetProperty("VisualContainer", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic).GetValue(this.sfDataGrid) as VisualContainer;
-visualContainer.RowHeightManager.Reset();
-visualContainer.InvalidateMeasureInfo();
-
-{% endhighlight %}
-{% endtabs %}
 
 ## Changes header row height based on its Content
 
