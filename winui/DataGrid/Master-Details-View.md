@@ -812,7 +812,7 @@ void FirstLevelNestedGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEd
 {% endtabs %}
 
 
-### Programmatic Selection in DetailsViewDataGrid
+### Programmatic selection in DetailsViewDataGrid
 
 In `DetailsViewDataGrid`, you can add or remove the selection programmatically like parent DataGrid. You can get particular `DetailsViewDataGrid` by using [DetailsViewLoading](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_DetailsViewLoading) event.
 
@@ -837,7 +837,7 @@ Here, the record in first position is selected in `DetailsViewDataGrid`.
 You can select multiple records by using [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectedItems) property.
 
 
-### Customizing Selection for DetailsViewDataGrid
+### Customizing selection for DetailsViewDataGrid
 
 You can also customize the selection behavior of `DetailsViewDataGrid` like the parent DataGrid. You can refer selection for more information about customizing selection behavior.
 Follow the steps mentioned in selection customization section to customize selection behavior of `DetailsViewDataGrid` and set the customized selection controller to [DetailsViewDataGrid.SelectionController](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectionController) in [DetailsViewLoading](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_DetailsViewLoading) event. 
@@ -864,7 +864,7 @@ void dataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEv
 
 N> For customizing selection in second level nested grid, you can refer [here](#defining-properties-for-detailsViewDataGrid).
  
-### Changing Header appearance of DetailsViewDataGrid
+### Changing header appearance of DetailsViewDataGrid
 
 You can customize the header appearance of [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDataGrid.html) , through `HeaderStyle` property of `DetailsViewDataGrid`.
 
@@ -935,20 +935,21 @@ The padding of [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfu
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="dataGrid"
-                        AutoGenerateColumns="True"
-                        AutoGenerateRelations="False"
-                        DetailsViewPadding="15"
-                        ItemsSource="{Binding Orders}">
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       AutoGenerateRelations="False"
+                       DetailsViewPadding="15"
+                       ItemsSource="{Binding Employees}" >
     <syncfusion:SfDataGrid.DetailsViewDefinition>
-        <syncfusion:GridViewDefinition RelationalColumn="ProductDetails">
+        <syncfusion:GridViewDefinition RelationalColumn="Sales">
             <syncfusion:GridViewDefinition.DataGrid>
-                <syncfusion:SfDataGrid  x:Name="FirstLevelNestedGrid" 
-                                        AutoGenerateColumns="True" />
+                <syncfusion:SfDataGrid  x:Name="FirstLevelNestedGrid"
+                                AutoGenerateColumns="True"
+                                HeaderRowHeight="0" />
             </syncfusion:GridViewDefinition.DataGrid>
         </syncfusion:GridViewDefinition>
     </syncfusion:SfDataGrid.DetailsViewDefinition>
-</syncfusion:SfDataGrid>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -956,7 +957,7 @@ The padding of [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfu
 
 N> For customizing appearance for second level nested grid, you can refer [here](#defining-properties).
 
-### Customize ExpanderColumn width 
+### Customize expander column width 
 
 You can customize the width of ExpanderColumn in SfDataGrid by using [ExpanderColumnWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ExpanderColumnWidth) property as like below.
 
@@ -1121,7 +1122,6 @@ this.dataGrid.DetailsViewLoading += dataGrid_DetailsViewLoading;
 
 void dataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEventArgs e)
 {
-
      if (!(e.DetailsViewDataGrid.SelectionController is CustomSelectionController))
         e.DetailsViewDataGrid.SelectionController = new   CustomSelectionController(e.DetailsViewDataGrid);
 }
