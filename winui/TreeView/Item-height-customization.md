@@ -17,7 +17,7 @@ The TreeView allows customizing the height of items by setting the [ItemHeight](
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeView x:Name="treeView" ItemHeight="50" />
+<treeView:SfTreeView x:Name="treeView" ItemHeight="50" />
 {% endhighlight %}
 {% highlight c# %}
 treeView.ItemHeight = 50;
@@ -39,7 +39,7 @@ The TreeView allows customizing the height of the specific item by setting the c
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeView x:Name="treeView"
+<treeView:SfTreeView x:Name="treeView"
                        QueryNodeSize="treeView_QueryNodeSize"    />
 {% endhighlight %}
 {% highlight c# %}

@@ -19,7 +19,7 @@ The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeView"
+      xmlns:treeView="using:Syncfusion.UI.Xaml.TreeView"
       xmlns:local="using:syncfusion.treeviewdemos.winui"
       mc:Ignorable="d"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
@@ -30,7 +30,7 @@ The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.
 </Page.DataContext>
 
 <Grid>
-    <syncfusion:SfTreeView x:Name="treeView"
+    <treeView:SfTreeView x:Name="treeView"
                            BorderBrush="LightGray"
                            BorderThickness="1"
                            SelectionMode="Multiple"
@@ -38,13 +38,13 @@ The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.
                            IsAnimationEnabled="True"
                            LoadOnDemandCommand="{Binding TreeViewOnDemandCommand}"
                            ItemsSource="{Binding Menu}">
-                    <syncfusion:SfTreeView.ItemTemplate>
+                    <treeView:SfTreeView.ItemTemplate>
                         <DataTemplate>
                             <TextBlock VerticalAlignment="Center"
                                        Text="{Binding ItemName}" />
                         </DataTemplate>
-                    </syncfusion:SfTreeView.ItemTemplate>
-    </syncfusion:SfTreeView>
+                    </treeView:SfTreeView.ItemTemplate>
+    </treeView:SfTreeView>
 </Grid>
 </Page>
 

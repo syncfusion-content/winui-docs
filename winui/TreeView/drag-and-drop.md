@@ -13,7 +13,7 @@ TreeView allows drag and drop the items within the treeview control by setting t
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeView x:Name="treeView"
+<treeView:SfTreeView x:Name="treeView"
                         Width="400"
                         Height="500"
                         CanDrag="True"
@@ -23,7 +23,7 @@ TreeView allows drag and drop the items within the treeview control by setting t
                         IsAnimationEnabled="True"
                         ChildPropertyName="Files"
                         ItemsSource="{Binding Folders}">
-    <syncfusion:SfTreeView.ItemTemplate>
+    <treeView:SfTreeView.ItemTemplate>
         <DataTemplate>
             <StackPanel Orientation="Horizontal">
                 <ContentPresenter Width="20"
@@ -36,8 +36,8 @@ TreeView allows drag and drop the items within the treeview control by setting t
                             Text="{Binding FileName}" />
             </StackPanel>
         </DataTemplate>
-    </syncfusion:SfTreeView.ItemTemplate>
-</syncfusion:SfTreeView>
+    </treeView:SfTreeView.ItemTemplate>
+</treeView:SfTreeView>
 {% endhighlight %}
 {% highlight c# %}
 treeView.CanDrag = true;

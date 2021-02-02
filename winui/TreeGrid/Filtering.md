@@ -231,13 +231,13 @@ Filter UI view can be changed for all the columns in grid by changing the [Filte
 {% tabs %}
 {% highlight xaml %}
 
-xmlns:filtering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
+xmlns:treeGridFiltering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
 
-<Style x:Key="filterControlStyle" TargetType="filtering:TreeGridFilterControl">
+<Style x:Key="filterControlStyle" TargetType="treeGridFiltering:TreeGridFilterControl">
     <Setter Property="FilterMode" Value="AdvancedFilter" />
 </Style>
 
-<syncfusion:SfTreeGrid Name="sfTreeGrid"
+<treeGrid:SfTreeGrid Name="sfTreeGrid"
                            FilterPopupStyle="{StaticResource filterControlStyle}"
                            AllowFiltering="True”
                            ItemsSource="{Binding EmployeeDetails}" />
@@ -252,13 +252,13 @@ Filter UI view can be changed for a specific column by changing the [FilterMode]
 {% tabs %}
 {% highlight xaml %}
 
-xmlns:filtering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
+xmlns:treeGridFiltering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
 
-<Style x:Key="filterControlStyle" TargetType="filtering:TreeGridFilterControl">
+<Style x:Key="filterControlStyle" TargetType="treeGridFiltering:TreeGridFilterControl">
     <Setter Property="FilterMode" Value="AdvancedFilter" />
 </Style>
 
-<syncfusion:TreeGridTextColumn MappingName="FirstName"
+<treeGrid:TreeGridTextColumn MappingName="FirstName"
                                FilterPopupStyle="{StaticResource filterControlStyle}"/>
 
 {% endhighlight %}
@@ -271,18 +271,18 @@ You can skip the [TreeGridFilterControl](https://help.syncfusion.com/cr/winui/Sy
 {% tabs %}
 {% highlight xaml %}
 
-xmlns:filtering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
+xmlns:treeGridFiltering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
 
-<Style x:Key="filterControlStyle" TargetType="filtering:TreeGridFilterControl">
+<Style x:Key="filterControlStyle" TargetType="treeGridFiltering:TreeGridFilterControl">
     <Setter Property="FilterMode" Value="AdvancedFilter" />
 </Style>
 
-<syncfusion:SfTreeGrid Name="sfTreeGrid"
+<treeGrid:SfTreeGrid Name="sfTreeGrid"
                            FilterPopupStyle="{StaticResource filterControlStyle}"
                            AllowFiltering="True”
                            ItemsSource="{Binding EmployeeDetails}" />
 
-<syncfusion:TreeGridTextColumn MappingName="LastName" FilterPopupStyle="{x:Null}"/>
+<treeGrid:TreeGridTextColumn MappingName="LastName" FilterPopupStyle="{x:Null}"/>
 
 {% endhighlight %}
 {% endtabs %}
@@ -394,7 +394,7 @@ By default, filters are applied to the columns when OK button is clicked in UI f
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:TreeGridTextColumn MappingName="EmployeeID" 
+<treeGrid:TreeGridTextColumn MappingName="EmployeeID" 
                                ImmediateUpdateColumnFilter="True"/>
 
 {% endhighlight %}
@@ -427,7 +427,7 @@ To filter the null values, the [TreeGridColumn.AllowBlankFilters](https://help.s
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:TreeGridTextColumn MappingName="FirstName" AllowBlankFilters="True"/>
+<treeGrid:TreeGridTextColumn MappingName="FirstName" AllowBlankFilters="True"/>
 
 {% endhighlight %}
 {% endtabs %}
@@ -579,13 +579,13 @@ Sort options can be collapsed by setting the [SortOptionVisibility](https://help
 {% tabs %}
 {% highlight xaml %}
 
-xmlns:filtering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
+xmlns:treeGridFiltering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
 
-<Style TargetType="filtering:TreeGridFilterControl" x:Key="filterControlStyle">
+<Style TargetType="treeGridFiltering:TreeGridFilterControl" x:Key="filterControlStyle">
     <Setter Property="SortOptionVisibility" Value="Collapsed"/>
 </Style>
 
-<syncfusion:SfTreeGrid Name="sfTreeGrid"
+<treeGrid:SfTreeGrid Name="sfTreeGrid"
                            FilterPopupStyle="{StaticResource filterControlStyle}"
                            AllowFiltering="True”
                            ItemsSource="{Binding EmployeeDetails}" />
@@ -602,10 +602,10 @@ The size of the filter popup can be changed using the [FilterPopupHeight](https:
 {% tabs %}
 {% highlight xaml %}
 
-xmlns:filtering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
+xmlns:treeGridFiltering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
 
 <Page.Resources>
-    <Style TargetType="filtering:TreeGridFilterControl">
+    <Style TargetType="treeGridFiltering:TreeGridFilterControl">
         <Setter Property="FilterPopupHeight" Value="530"/>
         <Setter Property="FilterPopupWidth" Value="500"/>
     </Style>

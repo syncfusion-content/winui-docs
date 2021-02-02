@@ -198,7 +198,7 @@ sfDataGrid.Print();
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-    <Style TargetType="syncfusion:GridHeaderCellControl">
+    <Style TargetType="dataGrid:GridHeaderCellControl">
         <Setter Property="Background" Value="LightPink"/>
     </Style>
 </Page.Resources>

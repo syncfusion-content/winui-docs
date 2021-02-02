@@ -18,7 +18,7 @@ The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTreeView x:Name="treeView"  ExpandActionTrigger="Node" />
+<treeView:SfTreeView x:Name="treeView"  ExpandActionTrigger="Node" />
 
 {% endhighlight %}
 {% highlight c# %}

@@ -214,7 +214,7 @@ Custom type properties will be auto-generated through [AutoGenerateColumnsModeFo
 
 {% tabs %}
 {% highlight xaml %}
- <syncfusion:SfDataGrid x:Name="sfDataGrid"                                
+ <dataGrid:SfDataGrid x:Name="sfDataGrid"                                
                         AutoGenerateColumnsForCustomType="True"
                         AutoGenerateColumnsModeForCustomType="Both"   
                         AllowEditing="True"
@@ -483,16 +483,16 @@ SfDataGrid control allows you to define the columns manually by adding desired c
  
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                         AutoGenerateColumns="False"
                         ItemsSource="{Binding OrdersDetails}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn HeaderText="Order ID" MappingName="OrderID"/>
-        <syncfusion:GridTextColumn HeaderText="Quantity" MappingName="Quantity" />
-        <syncfusion:GridTextColumn HeaderText="Ship City" MappingName="ShipCity" />
-        <syncfusion:GridTextColumn HeaderText="Ship Address" MappingName="ShipAddress" />        
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn HeaderText="Order ID" MappingName="OrderID"/>
+        <dataGrid:GridTextColumn HeaderText="Quantity" MappingName="Quantity" />
+        <dataGrid:GridTextColumn HeaderText="Ship City" MappingName="ShipCity" />
+        <dataGrid:GridTextColumn HeaderText="Ship Address" MappingName="ShipAddress" />        
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Order ID", MappingName = "OrderID" });
@@ -572,7 +572,7 @@ N> Resizing considers MinWidth and MaxWidth of column.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="sfDataGrid"
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AutoGenerateColumns="True"                               
                         AllowResizingColumns="True" 
                         ItemsSource="{Binding OrdersDetails}"/>
@@ -632,7 +632,7 @@ You can allow end-users to rearrange the columns by drag and drop the column hea
 
 {% tabs %}
 {% highlight xaml %}
- <syncfusion:SfDataGrid x:Name="sfDataGrid"
+ <dataGrid:SfDataGrid x:Name="sfDataGrid"
                         AutoGenerateColumns="True" 
                         AllowDraggingColumns="True"
                         ItemsSource="{Binding OrdersDetails}"/>
@@ -777,7 +777,7 @@ You can freeze the columns in view at the left and right side like in excel by s
  
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="dataGrid"
+<dataGrid:SfDataGrid  x:Name="dataGrid"
                         AutoGenerateColumns="True"
                         FrozenColumnCount="2"
                         ItemsSource="{Binding Orders}"/>
@@ -817,7 +817,7 @@ Below code, binds the `ViewModel.AllowFiltering` property to `GridColumn.AllowFi
     <local:ViewModel x:Key="viewModel" />
 </Page.Resources>
 
-<syncfusion:GridTextColumn  AllowFiltering="{Binding AllowFiltering,
+<dataGrid:GridTextColumn  AllowFiltering="{Binding AllowFiltering,
                                                     Source={StaticResource viewModel}}"
                             HeaderText="Order ID"
                             MappingName="OrderID" /> 

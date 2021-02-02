@@ -31,14 +31,14 @@ This section explains the steps required to add the TreeGrid control and binding
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeGrid"
+    xmlns:treeGrid="using:Syncfusion.UI.Xaml.TreeGrid"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.DataContext>
         <local:ViewModel/>
     </Page.DataContext>
     <Grid x:Name="rootGrid">
-        <syncfusion:SfTreeGrid x:Name="sfTreeGrid" />
+        <treeGrid:SfTreeGrid x:Name="sfTreeGrid" />
     </Grid>
 </Page>
 
@@ -217,14 +217,14 @@ Bind the self-relations collection created in the previous step to `SfTreeGrid.I
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeGrid"
+    xmlns:treeGrid="using:Syncfusion.UI.Xaml.TreeGrid"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.DataContext>
         <local:ViewModel/>
     </Page.DataContext>
     <Grid x:Name="Root_Grid">
-        <syncfusion:SfTreeGrid Name="sfTreeGrid"
+        <treeGrid:SfTreeGrid Name="sfTreeGrid"
                                ChildPropertyName="ReportsTo"
                                ItemsSource="{Binding Employees}"
                                ParentPropertyName="ID"
@@ -372,7 +372,7 @@ Bind the nested collection created in the previous step to [SfTreeGrid.ItemsSour
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeGrid"
+    xmlns:treeGrid="using:Syncfusion.UI.Xaml.TreeGrid"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -382,7 +382,7 @@ Bind the nested collection created in the previous step to [SfTreeGrid.ItemsSour
 
     <Grid x:Name="Root_Grid">
 
-        <syncfusion:SfTreeGrid Name="sfTreeGrid" 
+        <treeGrid:SfTreeGrid Name="sfTreeGrid" 
                                ChildPropertyName="Children"
                                ItemsSource="{Binding PersonDetails}"/>
     </Grid>
@@ -457,22 +457,22 @@ You can prevent the automatic column generation by setting [SfTreeGrid.AutoGener
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid x:Name="sfTreeGrid" 
+<treeGrid:SfTreeGrid x:Name="sfTreeGrid" 
                         ChildPropertyName="ReportsTo"
                         AllowEditing="True"
                         ColumnWidthMode="Auto"
                         ItemsSource="{Binding Employees}"
                         ParentPropertyName="ID"
                         SelfRelationRootValue="-1">
-    <syncfusion:SfTreeGrid.Columns>
-        <syncfusion:TreeGridTextColumn HeaderText="First Name"    MappingName="FirstName" />
-        <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <syncfusion:TreeGridTextColumn HeaderText="ID"  MappingName="ID"/>
-        <syncfusion:TreeGridTextColumn HeaderText="Title" MappingName="Title" />
-        <syncfusion:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
-        <syncfusion:TreeGridTextColumn MappingName="Salary"/>
-    </syncfusion:SfTreeGrid.Columns>
-</syncfusion:SfTreeGrid>
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn HeaderText="First Name"    MappingName="FirstName" />
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridTextColumn HeaderText="ID"  MappingName="ID"/>
+        <treeGrid:TreeGridTextColumn HeaderText="Title" MappingName="Title" />
+        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+        <treeGrid:TreeGridTextColumn MappingName="Salary"/>
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
 
 {% endhighlight %}
 {% endtabs %}

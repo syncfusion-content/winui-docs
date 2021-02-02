@@ -31,7 +31,7 @@ TreeView provides built-in support to delete the selected nodes in user interfac
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeView  
+<treeView:SfTreeView  
                 x:Name="sfTreeView" 
 				AllowDeleting="True"
 				ChildPropertyName="Files"

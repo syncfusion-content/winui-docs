@@ -30,11 +30,11 @@ This section explains the steps required to add the DataGrid control and binding
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.DataGrid"
+    xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid x:Name="rootGrid">
-    <syncfusion:SfDataGrid x:Name="sfDataGrid" />
+    <dataGrid:SfDataGrid x:Name="sfDataGrid" />
     </Grid>
 </Page>
 
@@ -176,14 +176,14 @@ Bind the collection created in previous step to `SfDataGrid.ItemsSource` propert
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.DataGrid"
+    xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.DataContext>
         <local:ViewModel/>
     </Page.DataContext>
     <Grid>
-        <syncfusion:SfDataGrid x:Name="sfDataGrid"
+        <dataGrid:SfDataGrid x:Name="sfDataGrid"
                                AutoGenerateColumns="True"
                                ItemsSource="{Binding Orders}"/>
     </Grid>
@@ -239,17 +239,17 @@ You can prevent the automatic column generation by setting SfDataGrid.AutoGenera
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"  
+<dataGrid:SfDataGrid x:Name="sfDataGrid"  
                        ItemsSource="{Binding Orders}" 
                        AutoGenerateColumns="False">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn  MappingName="OrderID" />
-        <syncfusion:GridTextColumn  MappingName="CustomerID"/>
-        <syncfusion:GridTextColumn  MappingName="CustomerName"/>
-        <syncfusion:GridTextColumn  MappingName="ShipCity"/>
-        <syncfusion:GridTextColumn  MappingName="Country"/>
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn  MappingName="OrderID" />
+        <dataGrid:GridTextColumn  MappingName="CustomerID"/>
+        <dataGrid:GridTextColumn  MappingName="CustomerName"/>
+        <dataGrid:GridTextColumn  MappingName="ShipCity"/>
+        <dataGrid:GridTextColumn  MappingName="Country"/>
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 SfDataGrid sfDataGrid = new SfDataGrid();
@@ -343,12 +343,12 @@ By default, you can sort columns in a SfDataGrid by clicking the column header. 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"  
+<dataGrid:SfDataGrid x:Name="sfDataGrid"  
                        ItemsSource="{Binding Orders}" >
-    <syncfusion:SfDataGrid.SortColumnDescriptions>
-        <syncfusion:SortColumnDescription ColumnName="CustomerName"/>
-    </syncfusion:SfDataGrid.SortColumnDescriptions>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.SortColumnDescriptions>
+        <dataGrid:SortColumnDescription ColumnName="CustomerName"/>
+    </dataGrid:SfDataGrid.SortColumnDescriptions>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -375,12 +375,12 @@ Grouping can be enabled by setting [SfDataGrid.ShowGroupDropArea](https://help.s
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"  
+<dataGrid:SfDataGrid x:Name="sfDataGrid"  
                        ItemsSource="{Binding Orders}" >
-    <syncfusion:SfDataGrid.GroupColumnDescriptions>
-        <syncfusion:GroupColumnDescription ColumnName="CustomerName"/>
-    </syncfusion:SfDataGrid.GroupColumnDescriptions>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.GroupColumnDescriptions>
+        <dataGrid:GroupColumnDescription ColumnName="CustomerName"/>
+    </dataGrid:SfDataGrid.GroupColumnDescriptions>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
