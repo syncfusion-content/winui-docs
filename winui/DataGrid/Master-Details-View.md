@@ -878,7 +878,7 @@ You can customize the header appearance of [DetailsViewDataGrid](https://help.sy
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AllowResizingColumns="True"
                        AutoGenerateColumns="True"
-                       AutoGenerateRelations="True"
+                       AutoGenerateRelations="False"
                        ItemsSource="{Binding Employees}" >
     <syncfusion:SfDataGrid.DetailsViewDefinition>
         <syncfusion:GridViewDefinition RelationalColumn="Sales">
@@ -903,20 +903,21 @@ You can hide the header row of `DetailsViewDataGrid` by setting [HeaderRowHeight
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="dataGrid"
-                        AutoGenerateColumns="True"
-                        AutoGenerateRelations="False"
-                        ItemsSource="{Binding Orders}">
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       AutoGenerateRelations="True"
+                       ItemsSource="{Binding Employees}" >
     <syncfusion:SfDataGrid.DetailsViewDefinition>
-        <syncfusion:GridViewDefinition RelationalColumn="ProductDetails">
+        <syncfusion:GridViewDefinition RelationalColumn="Sales">
             <syncfusion:GridViewDefinition.DataGrid>
                 <syncfusion:SfDataGrid  x:Name="FirstLevelNestedGrid"
-                                        AutoGenerateColumns="True"
-                                        HeaderRowHeight="0" />
+                                AutoGenerateColumns="True"
+                                HeaderRowHeight="0" />
             </syncfusion:GridViewDefinition.DataGrid>
         </syncfusion:GridViewDefinition>
     </syncfusion:SfDataGrid.DetailsViewDefinition>
 </syncfusion:SfDataGrid>
+
 {% endhighlight %}
 {% endtabs %}
 
