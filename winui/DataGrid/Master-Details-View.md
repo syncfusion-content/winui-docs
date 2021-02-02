@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Master-Details View in WinUI DataGrid (SfDataGrid) | Syncfusion
-description: Master-Details View in WinUI DataGrid (SfDataGrid).
+description: Learn about master-details view (nested grid view) support in Syncfusion WinUI DataGrid (SfDataGrid) control and more details.
 platform: winui
 control: SfDataGrid
 documentation: ug
