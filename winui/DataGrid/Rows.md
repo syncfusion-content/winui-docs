@@ -134,7 +134,7 @@ You can display the corresponding row index in each row header, by customizing t
 
 ### Change the current row indicator
 
-You can change the CurrentRowIndicator in the row header by customizing the control template of `GridRowHeaderCell`.
+You can change the current row indicator in the row header by customizing the control template of `GridRowHeaderCell`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -188,11 +188,11 @@ You can change the CurrentRowIndicator in the row header by customizing the cont
 
 Header row is present in top of the DataGrid which has column headers in it. Column header describes the caption to identify the column content.
 
-![Show the column header in Header row](Rows_images/Rows_img7.png)
+![Show the column header in Header row for WinUI DataGrid](Rows_images/Rows_img7.png)
 
 You can change the header row height by setting [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_HeaderRowHeight) property.
 
-### Hiding Header row
+### Hiding header row
 
 You can hide the header row by setting `SfDataGrid.HeaderRowHeight` as `0` (zero).
 
@@ -279,7 +279,7 @@ Set the frozen columns in <kbd>right side</kbd> of the SfDataGrid.
 <syncfusion:SfDataGrid x:Name="sfDataGrid"
                        FrozenFooterColumnCount="1"
                        FrozenColumnCount="1"
-                       FrozenRowsCount="2"                       
+                       FrozenRowsCount="2"
                        FrozenFooterRowsCount="3"
                        ItemsSource="{Binding Orders}" />
 {% endhighlight %}
