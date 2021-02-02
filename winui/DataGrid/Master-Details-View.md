@@ -11,7 +11,7 @@ documentation: ug
 
 SfDataGrid provides support to represent the hierarchical data in the form of nested tables using Master-Details View. You can expand or collapse the nested tables ([DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDataGrid.html)) by using an expander in a row or programmatically.  The number of tables nested with relations is unlimited.
 
-![WinUI DataGrid shows master details view](Master-Details-View_images/Master-Details-View_img1.png)
+![WinUI DataGrid shows master details view](Master-Details-View-Images/Master-Details-View_img1.png)
 
 ## Generating Master-Details view from IEnumerable
 
@@ -290,7 +290,7 @@ dataGrid.AutoGenerateRelations = true;
 When relations are auto-generated, you can handle the [SfDataGrid.AutoGeneratingRelations](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_AutoGenerateRelations) event to customize or cancel the [GridViewDefinition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html) before they are added to the [SfDataGrid.DetailsViewDefinition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDefinition.html). 
 Here, two relations are created from `Sales` and `Orders` collection property.
 
-![WinUI DataGrid shows auto-generated relations](Master-Details-View_images/Master-Details-View_img2.png)
+![WinUI DataGrid shows auto-generated relations](Master-Details-View-Images/Master-Details-View_img2.png)
 
 #### Manually defining Relations
 
@@ -338,7 +338,7 @@ dataGrid.DetailsViewDefinition.Add(gridViewDefinition2);
 {% endhighlight %}
 {% endtabs %}
 
-![Manually defined relations in WinUI DataGrid](Master-Details-View_images/Master-Details-View_img3.png)
+![Manually defined relations in WinUI DataGrid](Master-Details-View-Images/Master-Details-View_img3.png)
 
 In the same way, you can define relations for first level nested grids by defining relations to the [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid) of first level nested grid.
 
@@ -389,7 +389,7 @@ dataGrid.DetailsViewDefinition.Add(gridViewDefinition1);
 {% endhighlight %}
 {% endtabs %}
 
-![Manually defined relations for master details view DataGrid in WinUI](Master-Details-View_images/Master-Details-View_img4.png)
+![Manually defined relations for master details view DataGrid in WinUI](Master-Details-View-Images/Master-Details-View_img4.png)
 
 ## Populating Master-Details view through events
 
@@ -896,7 +896,7 @@ You can customize the header appearance of [DetailsViewDataGrid](https://help.sy
 {% endhighlight %}
 {% endtabs %}
 
-![header appearance customization in master details view of WinUI DataGrid](Master-Details-View_images/Master-Details-View_img7.png)
+![header appearance customization in master details view of WinUI DataGrid](Master-Details-View-Images/Master-Details-View_img7.png)
 
 ### Hiding header row of Master-Details View
 You can hide the header row of `DetailsViewDataGrid` by setting [HeaderRowHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_HeaderRowHeight) property.
@@ -926,7 +926,7 @@ FirstLevelNestedGrid.HeaderRowHeight = 0;
 {% endhighlight %}
 {% endtabs %}
 
-![hiding header row of master details view DataGrid in WinUI](Master-Details-View_images/Master-Details-View_img8.png)
+![hiding header row of master details view DataGrid in WinUI](Master-Details-View-Images/Master-Details-View_img8.png)
 
 ### Customizing padding of the DetailsViewDataGrid
 
@@ -951,7 +951,7 @@ The padding of [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfu
 {% endhighlight %}
 {% endtabs %}
 
-![Padding customization of master details view in WinUI DataGrid](Master-Details-View_images/Master-Details-View_img9.png)
+![Padding customization of master details view in WinUI DataGrid](Master-Details-View-Images/Master-Details-View_img9.png)
 
 N> For customizing appearance for second level nested grid, you can refer [here](#defining-properties).
 
@@ -1024,13 +1024,13 @@ By default, the expander will be visible for all the data rows in parent DataGri
 {% endhighlight %}
 {% endtabs %}
 
-![Hiding expander icon for empty details view in WinUI DataGrid](Master-Details-View_images/Master-Details-View_img10.png)
+![Hiding expander icon for empty details view in WinUI DataGrid](Master-Details-View-Images/Master-Details-View_img10.png)
 
 ## Hiding GridDetailsViewIndentCell
 
 [GridDetailsViewIndentCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDetailsViewIndentCell.html) is used to indicate the space between the expander and first column of the [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDataGrid.html). You can hide the [GridDetailsViewIndentCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDetailsViewIndentCell.html) by setting [SfDataGrid.ShowDetailsViewIndentCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ShowDetailsViewIndentCell) property to `False` for the respective parent grid.
 
-![Indent cells of master details view in WinUI DataGrid](Master-Details-View_images/Master-Details-View_img11.png)
+![Indent cells of master details view in WinUI DataGrid](Master-Details-View-Images/Master-Details-View_img11.png)
 
 {% tabs %}
 {% highlight xaml %}
@@ -1045,7 +1045,7 @@ dataGrid.ShowDetailsViewIndentCell= False;
 {% endhighlight %}
 {% endtabs %}
 
-![hiding indent cells of master details view in WinUI DataGrid](Master-Details-View_images/Master-Details-View_img12.png)
+![hiding indent cells of master details view in WinUI DataGrid](Master-Details-View-Images/Master-Details-View_img12.png)
 
 ## Hiding the details view expander icon based on child items count
 
@@ -1084,7 +1084,7 @@ private void DataGrid_QueryDetailsViewExpanderState(object sender, QueryDetailsV
 {% endtabs %} 
 
 The following screenshot illustrates hiding expander icon state based on child items count.
-![expander icon is hidden state in WinUI DataGrid](Master-Details-View_images/Master-Details-View_img13.png)
+![expander icon is hidden state in WinUI DataGrid](Master-Details-View-Images/Master-Details-View_img13.png)
 You can download the sample from the following link: [Sample](https://github.com/SyncfusionExamples/How-to-hide-the-detailsview-expander-icon-based-on-child-records-count-in-winui-datagrid).
 
 ## Change DetailsViewDataGrid ItemsSource at runtime using LiveDataUpdateMode property
