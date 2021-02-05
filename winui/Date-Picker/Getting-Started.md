@@ -359,6 +359,8 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 By default, user entering each input numbers are automatically validated with the `FormatString`'s formats and assigned the proper value for current field, then it will move to next input field of the date format.
 
+![SfDatePicker enables mask editing mode to edit the date](Getting-Started_images/Mask_editing.gif)
+
 If you want to perform the validation after the user completely entering their date inputs, use the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_EditMode) property value as `Normal`. Then the entered date value is validated with the `FormatString` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the previously selected date value sets to `SelectedDate` property.
 
 {% tabs %}
@@ -376,6 +378,6 @@ sfDatePicker.EditMode = DateTimeEditingMode.Normal;
 {% endhighlight  %}
 {% endtabs %}
 
-![SfDatePicker enables free form editing to select date](Getting-Started_images/EditModeNormal.png)
+![SfDatePicker enables free form editing to select date](Getting-Started_images/EditModeNormal.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)

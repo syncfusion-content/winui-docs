@@ -212,10 +212,10 @@ You can handle the event as follows,
 
 private void SfDatePicker_DateFieldPrepared(object sender, DateTimeFieldPreparedEventArgs e)
 {
-    if (e.Column != null)
+    if (e.Column != null && e.Column.Field == DateTimeField.DayName)
     {
         e.Column.Format = "ddd dd";
-        e.Column.Header = "Choose Date";
+        e.Column.Header = "Select Date";
         e.Column.ShowHeader = true;
         e.Column.ItemHeight = 60;
         e.Column.ItemWidth = 100;
