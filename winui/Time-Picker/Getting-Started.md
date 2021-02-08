@@ -298,6 +298,8 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 By default, the user entering each input numbers are automatically validated with the `FormatString`'s formats and assigned the proper value for current field, then it will move to next input field of the time format.
 
+![SfTimePicker enables mask editing mode to select time](Getting-Started_images/Mask_Editingmode.gif)
+
 If you want to perform the validation after the user completely entering their time inputs, use the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_EditMode) property value as `Normal`. Then the entered time value is validated with the `FormatString` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the previously selected time value sets to `SelectedTime` property.
 
 {% tabs %}
@@ -315,7 +317,7 @@ sfTimePicker.EditMode = DateTimeEditingMode.Normal;
 {% endhighlight  %}
 {% endtabs %}
 
-![SfTimePicker enables free form editing to select time](Getting-Started_images/editmode_Normal.png)
+![SfTimePicker enables free form editing to select time](Getting-Started_images/editmode_Normal.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
