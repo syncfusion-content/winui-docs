@@ -394,12 +394,12 @@ chart.Legend = new ChartLegend()
 
 The [`series`](https://help.syncfusion.com/winui/chart/seriestypes/series) can be collapsed, by clicking on the respective legend item,
 
-![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/Toggling_1.png)
+![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/legend_toggle_series_visibility.png)
 
 
 We can also view the associated [`series`](https://help.syncfusion.com/winui/chart/seriestypes/series), by clicking on its disabled legend item,
 
-![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/legend_toggle_series_visibility.png)
+![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/Toggling_1.png)
 
 
 ## Positioning the Legend
