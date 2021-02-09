@@ -34,12 +34,12 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %}
 
-![Legend support in WinUI Chart](Legend_images/legend_overview_pie.png)
+![Legend support in WinUI Chart](Legend_images/legend1.png)
 
 
 Each legend composed of the following parts:
 
-![Legend composed support in WinUI Chart](Legend_images/legend_elements_pie.png)
+![Legend composed support in WinUI Chart](Legend_images/legend2.png)
 
 
 ## Legend Icon
@@ -92,7 +92,7 @@ chart.Series.Add(splineSeries);
 
 {% endtabs %}
 
-![Legend icon in WinUI Chart](Legend_images/legendicon_1.png)
+![Legend icon in WinUI Chart](Legend_images/legend_icon.png)
 
 
 The following properties are used to customize the legend icons.
@@ -169,7 +169,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend icon in WinUI Chart](Legend_images/legendicon_2.png)
+![Legend icon in WinUI Chart](Legend_images/legend_customize_icon.png)
 
 
 The visibility of the legend icon can be changed by setting [`IconVisibility`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_IconVisibility) property in ChartLegend. 
@@ -206,7 +206,72 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend icon in WinUI Chart](Legend_images/legendicon_3.png)
+![Legend icon in WinUI Chart](Legend_images/legend_icon_visibility.png)
+
+**Custom** **Legend** **Icon**
+
+We can add custom icon for the legend using [`LegendIconTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_IconTemplate) property in ChartSeries as in below example.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart x:Name="chart">
+
+    <syncfusion:SfChart.Resources>
+
+        <DataTemplate x:Key="iconTemplate">
+
+            <Ellipse Height="15" Width="15" Fill="White" 
+			                   
+                     Stroke="#4a4a4a" StrokeThickness="2"/>
+
+        </DataTemplate>
+
+    </syncfusion:SfChart.Resources>
+
+    <syncfusion:SfChart.Legend>
+
+        <syncfusion:ChartLegend/>
+
+     </syncfusion:SfChart.Legend>
+
+    <syncfusion:SplineSeries XBindingPath="Year"  Label="Gold" 
+  
+	                         ItemsSource="{Binding List}" 
+                                     
+                             YBindingPath="India" 
+                                     
+                             IconTemplate="{StaticResource iconTemplate}">
+
+    </syncfusion:SplineSeries>
+        
+</syncfusion:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SplineSeries series = new SplineSeries()
+{
+
+    ItemsSource = new ViewModel().List,
+
+    XBindingPath = "Year",
+
+    YBindingPath = "India",
+
+    IconTemplate = chart.Resources["iconTemplate"] as DataTemplate
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Customizing legend icons in WPF Chart](Legend_images/legend_custom_icon.png)
 
 ## Label
 
@@ -253,7 +318,7 @@ chart.Series.Add(splineSeries);
 
 {% endtabs %}
 
-![Labels for legend in WinUI Chart](Legend_images/label_1.png)
+![Labels for legend in WinUI Chart](Legend_images/legend_label.png)
 
 
 ## Checkbox 
@@ -287,12 +352,12 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![CheckBox support for legend in WinUI Chart](Legend_images/chkbox_1.png)
+![CheckBox support for legend in WinUI Chart](Legend_images/legend_checkbox1.png)
 
 
 The series can be collapsed by unchecking the CheckBox as below:
 
-![CheckBox support for legend in WinUI Chart](Legend_images/chkbox_2.png)
+![CheckBox support for legend in WinUI Chart](Legend_images/legend_checkbox2.png)
 
 
 ## ToggleSeriesVisibility 
@@ -334,7 +399,7 @@ The [`series`](https://help.syncfusion.com/winui/chart/seriestypes/series) can b
 
 We can also view the associated [`series`](https://help.syncfusion.com/winui/chart/seriestypes/series), by clicking on its disabled legend item,
 
-![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/Toggling_2.png)
+![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/legend_toggle_series_visibility.png)
 
 
 ## Positioning the Legend
@@ -369,7 +434,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Positioning the legend in WinUI Chart](Legend_images/legendpos_1.png)
+![Positioning the legend in WinUI Chart](Legend_images/legend_position_inside.png)
 
 
 **Docking**
@@ -404,7 +469,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Positioning the legend in WinUI Chart](Legend_images/legendpos_2.png)
+![Positioning the legend in WinUI Chart](Legend_images/legend_position_bottom.png)
 
 
 **Floating** **Legends**
@@ -442,7 +507,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Positioning the legend in WinUI Chart](Legend_images/legendpos_3.png)
+![Positioning the legend in WinUI Chart](Legend_images/legend_position_floating.png)
 
 
 ## Legend Header
@@ -500,7 +565,7 @@ chart.Legend = legend;
 
 {% endtabs %}
 
-![Header for legend in WinUI Chart](Legend_images/legendpos_4.png)
+![Header for legend in WinUI Chart](Legend_images/legend_Header.png)
 
 
 ## Multiple Legends
@@ -653,7 +718,7 @@ chart.Series.Add(pieSeries);
 
 {% endtabs %}
 
-![Legends for accumulation series in WinUI Chart](Legend_images/legend_pie.png)
+![Legends for accumulation series in WinUI Chart](Legend_images/legend_accumulation_series.png)
 
 
 N> Here Legend ‘Label’ will be the x value of the Pie chart.
@@ -768,7 +833,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend orientation support in WinUI Chart](Legend_images/legendorientation.png)
+![Legend orientation support in WinUI Chart](Legend_images/legend_orientation.png)
 
 
 ## Customization
