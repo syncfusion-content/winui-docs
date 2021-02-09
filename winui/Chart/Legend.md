@@ -125,7 +125,7 @@ The following code example illustrates the customization of legend icon.
 
                         BorderBrush="Black" BorderThickness="1"
 
-                        IconVisibility="Visible" CornerRadius="5" 
+                        IconVisibility="Visible" 
 
                         ItemMargin="10">                   
 
@@ -154,8 +154,6 @@ chart.Legend = new ChartLegend()
     DockPosition = ChartDock.Top,
 
     IconVisibility = Visibility.Visible,
-
-    CornerRadius = new CornerRadius(5),
 
     ItemMargin = new Thickness(10),
 
@@ -394,12 +392,12 @@ chart.Legend = new ChartLegend()
 
 The [`series`](https://help.syncfusion.com/winui/chart/seriestypes/series) can be collapsed, by clicking on the respective legend item,
 
-![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/legend_toggle_series_visibility.png)
+![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/legend_toggle_series_visibility1.png)
 
 
 We can also view the associated [`series`](https://help.syncfusion.com/winui/chart/seriestypes/series), by clicking on its disabled legend item,
 
-![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/Toggling_1.png)
+![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/legend_toggle_series_visibility2.png)
 
 
 ## Positioning the Legend
@@ -566,114 +564,6 @@ chart.Legend = legend;
 {% endtabs %}
 
 ![Header for legend in WinUI Chart](Legend_images/legend_Header.png)
-
-
-## Multiple Legends
-
-Chart control supports showing the legend in multiple panels, to view the legend clearly when multiple areas and greater numbers of chart series are present. 
-
-The following code example shows how to create multiple legends in a single chart.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfChart.Legend>
-
-   <chart:ChartLegendCollection>
-
-       <chart:ChartLegend chart:SfChart.Column="0"/>
-
-       <chart:ChartLegend chart:SfChart.Column="1" />
-
-    </chart:ChartLegendCollection>
-
-</chart:SfChart.Legend>
-
-<chart:ColumnSeries Interior="#4a4a4a" Label="Legend1"
-
-                    ItemsSource="{Binding SneakersDetail}" XBindingPath="Brand" 
-					
-					          YBindingPath="ItemsCount1" />
-
-<chart:SplineSeries Label="Legend2" ItemsSource="{Binding SneakersDetail}"  
-
-                    XBindingPath="Brand" YBindingPath="ItemsCount" >
-
-    <chart:SplineSeries.XAxis>
-
-          <chart:CategoryAxis chart:SfChart.Column="1">
-
-          </chart:CategoryAxis>
-
-     </chart:SplineSeries.XAxis>
-
-</chart:SplineSeries>
-
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-ChartLegendCollection legendCollection = new ChartLegendCollection();
-
-ChartLegend legend1 = new ChartLegend();
-
-SfChart.SetColumn(legend1, 0);
-
-ChartLegend legend2 = new ChartLegend();
-
-SfChart.SetColumn(legend2, 1);
-
-legendCollection.Add(legend1);
-
-legendCollection.Add(legend2);
-
-chart.Legend = legendCollection;
-
-ColumnSeries columnSeries = new ColumnSeries()
-{
-    Label = "Legend1",
-
-    ItemsSource = new ViewModel().SneakersDetail,
-
-    XBindingPath = "Brand",
-
-    YBindingPath = "ItemsCount1",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x4a, 0x4a, 0x4a)),
-
-};
-
-CategoryAxis axis = new CategoryAxis();
-
-SfChart.SetColumn(axis, 1);
-
-SplineSeries splineSeries = new SplineSeries()
-{
-
-    Label = "Legend1",
-
-    ItemsSource = new ViewModel().SneakersDetail,
-
-    XBindingPath = "Brand",
-
-    YBindingPath = "ItemsCount",
-
-    XAxis = axis
-
-};
-
-chart.Series.Add(columnSeries);
-
-chart.Series.Add(splineSeries);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Multiple legends support in WinUI Chart](Legend_images/mullegends.png)
-
 
 ## Legends for Accumulation Series
 
