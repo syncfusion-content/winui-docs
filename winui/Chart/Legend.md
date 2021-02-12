@@ -125,7 +125,7 @@ The following code example illustrates the customization of legend icon.
 
                         BorderBrush="Black" BorderThickness="1"
 
-                        IconVisibility="Visible" 
+                        IconVisibility="Visible" CornerRadius="5"
 
                         ItemMargin="10">                   
 
@@ -155,6 +155,8 @@ chart.Legend = new ChartLegend()
 
     IconVisibility = Visibility.Visible,
 
+    CornerRadius = CornerRadiusHelper.FromUniformRadius(5),
+
     ItemMargin = new Thickness(10),
 
     BorderThickness = new Thickness(1),
@@ -167,7 +169,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend icon in WinUI Chart](Legend_images/legend_customize_icon.png)
+![Legend icon in WinUI Chart](Legend_images/legend_customize_icon_.png)
 
 
 The visibility of the legend icon can be changed by setting [`IconVisibility`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_IconVisibility) property in ChartLegend. 
@@ -397,7 +399,7 @@ The [`series`](https://help.syncfusion.com/winui/chart/seriestypes/series) can b
 
 We can also view the associated [`series`](https://help.syncfusion.com/winui/chart/seriestypes/series), by clicking on its disabled legend item,
 
-![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/legend_toggle_series_visibility2.png)
+![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/legend_toggle_series_visibility_2.png)
 
 
 ## Positioning the Legend
@@ -691,7 +693,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![Series visibility of legend in WinUI Chart](Legend_images/seriesvisibile.png)
+![Series visibility of legend in WinUI Chart](Legend_images/VisibilityOnLegend_img.png)
 
 
 ## Legend Orientation
@@ -845,7 +847,7 @@ When there is more number of legends, the legend exceeds the chart will be cropp
 
         <ItemsPanelTemplate x:Key="itemPanelTemplate">
 
-             <WrapPanel/>
+             <ItemsWrapGrid Orientation="Horizontal"/>
 
         </ItemsPanelTemplate>
                 
@@ -876,7 +878,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Customizing legend items layout in WinUI Chart](Legend_images/customization_2.png)
+![Customizing legend items layout in WinUI Chart](Legend_images/Item_Layout.png)
 
 ## Troubleshooting
 
