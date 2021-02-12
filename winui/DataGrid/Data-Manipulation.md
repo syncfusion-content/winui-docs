@@ -710,7 +710,7 @@ public class GridSelectionControllerExt : GridSelectionController
     {
     }
 
-    protected override void ProcessKeyDown(KeyEventArgs args)
+    protected override void ProcessKeyDown(KeyRoutedEventArgs args)
     {
         //Customizes the Delete key operation.
         if (args.Key == VirtualKey.Delete)
