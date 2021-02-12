@@ -271,7 +271,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Customizing legend icons in WPF Chart](Legend_images/legend_custom_icon.png)
+![Customizing legend icons in WinUI Chart](Legend_images/legend_custom_icon.png)
 
 ## Label
 
