@@ -335,7 +335,7 @@ public class GridColumnSizerExt : GridColumnSizer
 Below code uses the `ColumnRatio` to apply the defined star width for each column.
 
 {% tabs %}
-{% highlight c# %}
+{% highlight xaml %}
 <dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AllowSorting="True"
                         AllowEditing="True"

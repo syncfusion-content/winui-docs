@@ -64,7 +64,7 @@ N> It is mandatory to set the [NavigationMode](https://help.syncfusion.com/cr/wi
 
 ### Entering into edit mode
 
-You can enter into edit mode by pressing &lt;kbd&gt;F2&lt;/kbd&gt; key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTab) by setting [SfTreeGrid.EditTrigger](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_EditTrigger) property.
+You can enter into edit mode by pressing <kbd>F2</kbd> key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTab) by setting [SfTreeGrid.EditTrigger](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_EditTrigger) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -90,9 +90,9 @@ this.treeGrid.EditTrigger = EditTrigger.OnTap;
 
 When the cell enters into edit mode, cursor is placed based on [SfTreeGrid.EditorSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_EditorSelectionBehavior) property.
 
-SelectAll ֠selects the text of edit element loaded inside cell.
+[SelectAll](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.EditorSelectionBehavior.html#Syncfusion_UI_Xaml_Grids_EditorSelectionBehavior_SelectAll) - selects the text of edit element loaded inside cell.
 
-MoveLast ֠places the cursor at the last of edit element loaded inside cell.  
+[MoveLast](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.EditorSelectionBehavior.html#Syncfusion_UI_Xaml_Grids_EditorSelectionBehavior_MoveLast) - ֠places the cursor at the last of edit element loaded inside cell.
 
 {% tabs %}
 {% highlight xaml %}
@@ -119,15 +119,15 @@ this.treeGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll;
 
 SfTreeGrid supports to commit and roll back the changes in row level when underlying data object implements [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx) interface.
 
-The editing changes in a row will be committed only when user move to next row or pressing enter key in [EndEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.endedit.aspx). Also when user press &lt;kbd&gt; Esc &lt;/kbd&gt; key, then the changes made in a row will be reverted in [CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx). 
+The editing changes in a row will be committed only when user move to next row or pressing enter key in [EndEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.endedit.aspx). Also when user press <kbd>Esc</kbd> key, then the changes made in a row will be reverted in [CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx). 
 
 `IEditableObject` has the following methods to capture editing,
 
 [BeginEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.beginedit.aspx) - Gets called to begin edit on underlying data object when cell in a row get into edit mode. 
 
-[CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx) - Gets called when user press the &lt;kbd&gt;Esc&lt;/kbd&gt; key to discard the changes in a row since last `BeginEdit` call. 
+[CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx) - Gets called when user press the <kbd>Esc</kbd> key to discard the changes in a row since last `BeginEdit` call. 
 
-[EndEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.endedit.aspx) - Gets called when user move to the next row or press Enter key  to commit changes in underlying data object since last `BeginEdit` call. 
+[EndEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.endedit.aspx) - Gets called when user move to the next row or press <kbd>Enter</kbd> key  to commit changes in underlying data object since last `BeginEdit` call. 
 
 The below code snippet explains the simple implementation of IEditableObject.
 

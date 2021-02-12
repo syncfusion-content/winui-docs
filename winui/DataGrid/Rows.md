@@ -386,16 +386,16 @@ You can differentiate the frozen rows and footer rows from normal rows by writin
 
 ### Disable drag and drop between frozen and non-frozen columns
 
-You can disable the drag and drop between frozen and non-frozen columns by handling [QueryColumnDragging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ColumnDragging) event.
+You can disable the drag and drop between frozen and non-frozen columns by handling [ColumnDragging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ColumnDragging) event.
 Using [Reason](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.QueryColumnDraggingEventArgs.html#Syncfusion_UI_Xaml_DataGrid_QueryColumnDraggingEventArgs_Reason) property in [QueryColumnDraggingEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.QueryColumnDraggingEventArgs.html), you can cancel the column dropping operation. 
 
 In the below code, if the Reason is [QueryColumnDraggingReason.Dropping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.QueryColumnDraggingReason.html#Syncfusion_UI_Xaml_Grids_QueryColumnDraggingReason_Dropping) and the column is dragged from frozen region to non-frozen region or vice versa, you can cancel the dropping action by setting `e.Cancel` as `true` in the event.
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.QueryColumnDragging += SfDataGrid_QueryColumnDragging;
+this.sfDataGrid.ColumnDragging += SfDataGrid_ColumnDragging;
 
-void SfDataGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
+void SfDataGrid_ColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 {
     if (e.Reason == QueryColumnDraggingReason.Dropping)
     {
