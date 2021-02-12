@@ -199,7 +199,7 @@ class ItemTemplateSelector : DataTemplateSelector
 
     protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
     {
-        var treeviewNode = item as Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode;
+        var treeviewNode = item as Syncfusion.UI.Xaml.TreeView.TreeViewNode;
         if (treeviewNode == null)
             return null;
         if (treeviewNode.Level == 0)
