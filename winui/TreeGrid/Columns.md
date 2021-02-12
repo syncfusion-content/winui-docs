@@ -498,15 +498,17 @@ this.treeGrid.Columns.Clear();
 {% endtabs %}
 
 You can remove a column using Remove and RemoveAt methods.
-<table>
-<th>
-<td>
+
+{% tabs %}
+{% highlight c# %}
+
 treeGrid.Columns.Remove(column);
+
 //OR
 treeGrid.Columns.RemoveAt(1);
-</td>
-</th>
-</table>
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Resizing Columns
 
@@ -746,30 +748,6 @@ foreach (var stackedColumnName in removingColumns.ToList())
         childColumns = childColumns + stackedColumnName + ",";
     }
     this.treeGrid.StackedHeaderRows[0].StackedColumns[0].ChildColumns = childColumns;
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-### Changing Stacked Header Row Height
-
-You can change the height of StackedHeaderRows by using [GetTreePanel.RowHeights](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridPanel.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridPanel_RowHeights) property.
-
-{% tabs %}
-{% highlight c# %}
-
-this.treeGrid.Loaded += TreeGrid_Loaded;
-
-private void TreeGrid_Loaded(object sender, RoutedEventArgs e)
-{
-    var getTreePanel = this.treeGrid.GetTreePanel();
-    int count = this.treeGrid.StackedHeaderRows.Count;
-
-    for (int i = 0; i < count; i++)
-    {
-        getTreePanel.RowHeights[i] = 50;
-    }
-    getTreePanel.InvalidateMeasure();
 }
 
 {% endhighlight %}
