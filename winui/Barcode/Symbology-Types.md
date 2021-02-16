@@ -133,10 +133,10 @@ ASCII 00-99(encodes each two digit with one code)
 </tr>
 <tr>
 <td>
-UpcBarcode
+UPCBarcode
 </td>
 <td>
-[UpcBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.UpcBarcode.html)
+[UPCBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.UpcBarcode.html)
 </td>
 <td>
 [0-9]
