@@ -8,25 +8,152 @@ documentation: ug
 ---
 
 # Types of Barcode Symbology
-Barcode Symbology supports 11 variants of 1D and 2 variants of 2D barcodes.
+Barcode Symbology supports 12 variants of one dimensional and 3 variants of two dimensional barcodes.
 
-## 1D Barcodes
-1D barcode is also called as linear barcode. The bars and spaces for each symbol in 1D barcodes are grouped in such a way to represent a specific ASCII character.
+## One Dimensional Barcodes
+One Dimensional barcode is also called as linear barcode. The bars and spaces for each symbol in one dimensional barcodes are grouped in such a way to represent a specific ASCII character.
 
-The supported 1D barcode symbologies
+The following table represents supported one dimensional barcode symbologies
 
-* Codabar
-* Code 11
-* Code 32
-* Code 39
-* Code 39 Extended
-* Code 93
-* Code 93 Extended
-* Code 128A
-* Code 128B
-* Code 128C
-* UPC
-* GS1Code128Barcode
+<table>
+<tr>
+<th>Symbology</th>
+<th>Class</th>
+<th>Supported characters</th>
+</tr>
+<tr>
+<td>
+Codabar
+</td>
+<td>
+[Codabar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.CodabarBarcode.html)
+</td>
+<td>
+[0-9]; [- $ : / . +]
+</td>
+</tr>
+<tr>
+<td>
+Code11
+</td>
+<td>
+[Code 11](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code11Barcode.html)
+</td>
+<td>
+[0-9]; [-]
+</td>
+</tr>
+<tr>
+<td>
+Code32
+</td>
+<td>
+[Code 32](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code32Barcode.html)
+</td>
+<td>
+[0-9]
+</td>
+</tr>
+<tr>
+<td>
+Code39
+</td>
+<td>
+[Code 39](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code39Barcode.html)
+</td>
+<td>
+[0-9]; [A-Z]; [- . $ / + % SPACE]
+</td>
+</tr>
+<tr>
+<td>
+Code39Extended
+</td>
+<td>
+[Code 39 Extended](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code39ExtendedBarcode.html)
+</td>
+<td>
+[0-9]; [A-Z]; [a-z]
+</td>
+</tr>
+<tr>
+<td>
+Code93
+</td>
+<td>
+[Code 93](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code93Barcode.html)
+</td>
+<td>
+[0-9]; [A-Z]; [- . $ / + % SPACE]
+</td>
+</tr>
+<tr>
+<td>
+Code93Extended
+</td>
+<td>
+[Code 93 Extended](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code93ExtendedBarcode.html)
+</td>
+<td>
+All 128 ASCII characters
+</td>
+</tr>
+<tr>
+<td>
+Code128A
+</td>
+<td>
+[Code128A](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code128ABarcode.html)
+</td>
+<td>
+[0-9]; [A-Z]; [NUL (0x00) SOH (0x01) STX (0x02) ETX (0x03) EOT(0x04) ENQ (0x05) ACK (0x06) BEL (0x07) BS (0x08) HT (0x09) LF (0x0A) VT(0x0B) FF (0x0C) CR (0x0D) SO (0x0E) SI (0x0F) DLE (0x10) DC1 (0x11) DC2(0x12) DC3 (0x13) DC4 (0x14) NAK (0x15) SYN (0x16) ETB (0x17) CAN(0x18) EM (0x19) SUB (0x1A) ESC (0x1B) FS (0x1C) GS (0x1D) RS (0x1E) US(0x1F) SPACE (0x20)]; [" ! # $ % & ' ( ) * + , - . / ; &lt; = &gt; ? @ [ / ]^ _ ]
+</td>
+</tr>
+<tr>
+<td>
+Code128B
+</td>
+<td>
+[Code 128B](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code128BBarcode.html)
+</td>
+<td>
+[0-9]; [A-Z]; [a-z]; [SPACE (0x20) ! " # $ % & ' ( ) * + , - . / :; &lt; = &gt; ? @ [ / ]^ _ `  { | } ~ DEL (•) ]
+</td>
+</tr>
+<tr>
+<td>
+Code128C
+</td>
+<td>
+[Code 128C](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code128CBarcode.html)
+</td>
+<td>
+ASCII 00-99(encodes each two digit with one code)
+</td>
+</tr>
+<tr>
+<td>
+UPCBarcode
+</td>
+<td>
+[UPCBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.UpcBarcode.html)
+</td>
+<td>
+[0-9]
+</td>
+</tr>
+<tr>
+<td>
+GS1Code128Barcode
+</td>
+<td>
+[GS1Code128Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.GS1Code128Barcode.html)
+</td>
+<td>
+ASCII 00-99(encodes each two digit with one code)
+</td>
+</tr>
+</table>
 
 ### Codabar
 The [CodabarBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.CodabarBarcode.html) is a discrete numerical symbology that is used in libraries, blood banks and a variety of other information processing applications.
@@ -230,17 +357,54 @@ The [GS1Code128Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 ![GS1Code128Barcode](Symbology_Images/GS1Code128Barcode.png)
 
-## 2D Barcodes
-2D Barcode is a way to represent information via two-dimensional approach. It is similar to 1D Barcode, but can represent more data per unit area.
+## Two Dimensional Barcodes
+Two Dimensional Barcode is a way to represent information via two-dimensional approach. It is similar to One Dimensional Barcode, but can represent more data per unit area.
 
-The supported 2D barcode symbologies
+The following table represents the supported two dimensional barcode symbologies
 
-* QR Code
-* Data Matrix
-* Pdf417Barcode
+<table>
+<tr>
+<th>Symbology</th>
+<th>Class</th>
+<th>Supported characters</th>
+</tr>
+<tr>
+<td>
+QRBarcode
+</td>
+<td>
+[QR Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcode.html)
+</td>
+<td>
+[0–9]; [A–Z (upper-case only)]; [space $ % * + - . / , :]; [Shift JIS characters]
+</td>
+</tr>
+<tr>
+<td>
+DataMatrixBarcode
+</td>
+<td>
+[DataMatrixBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixBarcode.html)
+</td>
+<td>
+All ASCII characters
+</td>
+</tr>
+<tr>
+<td>
+Pdf417Barcode
+</td>
+<td>
+[Pdf417Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Pdf417Barcode.html)
+</td>
+<td>
+All ASCII characters
+</td>
+</tr>
+</table>
 
 ### QR Code
-The [QRBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcode.html) is a 2D barcode symbology that is popularly used in automotive industry. It is known for fast readability and greater storage capacity.
+The [QRBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcode.html) is a two dimensional barcode symbology that is popularly used in automotive industry. It is known for fast readability and greater storage capacity.
 
 {% tabs %}
 {% highlight xaml %}
