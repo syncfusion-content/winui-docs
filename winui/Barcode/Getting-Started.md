@@ -21,22 +21,22 @@ This section provides a quick overview for getting started with the [Barcode](ht
 {% tabs %}
 {% highlight xaml %}
 
-<Page x:Class="syncfusion.barcodedemos.winui.GettingStartedPage "
-                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-                xmlns:syncfusion="using:Syncfusion.UI.Xaml.Barcode"
-                xmlns:local="using:syncfusion.barcodedemos.winui"
-                Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
-                NavigationCacheMode="Disabled">
-                <Grid>
-                        <syncfusion:SfBarcode x:Name="barcode" Value="48625310">
-                        <syncfusion:SfBarcode.Symbology>  
-                        <syncfusion:CodabarBarcode />  
-                        </syncfusion:SfBarcode.Symbology>  
-                        </syncfusion:SfBarcode>
-                </Grid>
+<Page x:Class="syncfusion.barcodedemos.winui.GettingStartedPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:syncfusion="using:Syncfusion.UI.Xaml.Barcode"
+        xmlns:local="using:syncfusion.barcodedemos.winui"
+        Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+        NavigationCacheMode="Disabled">
+<Grid>
+         <syncfusion:SfBarcode x:Name="barcode" Value="48625310">
+                <syncfusion:SfBarcode.Symbology>  
+                         <syncfusion:CodabarBarcode />  
+                 </syncfusion:SfBarcode.Symbology>  
+        </syncfusion:SfBarcode>
+</Grid>
 
 </Page>
 
@@ -77,13 +77,13 @@ You can set the required symbology to the barcode based on input value by initia
 
 <Page xmlns:syncfusion="using:Syncfusion.UI.Xaml.Barcode">
 
-        <Grid>
-                <syncfusion:SfBarcode x:Name="barcode" Value="http://www.syncfusion.com">
-                        <syncfusion:SfBarcode.Symbology>
-                                <syncfusion:QRBarcode />
-                        </syncfusion:SfBarcode.Symbology>
-                </syncfusion:SfBarcode>
-        </Grid>
+<Grid>
+        <syncfusion:SfBarcode x:Name="barcode" Value="http://www.syncfusion.com">
+                <syncfusion:SfBarcode.Symbology>
+                        <syncfusion:QRBarcode />
+                </syncfusion:SfBarcode.Symbology>
+        </syncfusion:SfBarcode>
+</Grid>
 
 </Page>
 
@@ -91,6 +91,8 @@ You can set the required symbology to the barcode based on input value by initia
 {% endtabs %}
 
 ![OR Barcode](Getting_Started_Images/QRBarcode.png)
+
+N> [View Types of Symbology](https://help.syncfusion.com/winui/barcode/symbology-types)
 
 ## Text customization
 
@@ -104,9 +106,9 @@ The text to be encoded can be set using the [Value](https://help.syncfusion.com/
 {% highlight xaml %}
 
 <syncfusion:SfBarcode x:Name="barcode" Value="48625310" Height="150">
-<syncfusion:SfBarcode.Symbology>  
-<syncfusion:CodabarBarcode />  
-</syncfusion:SfBarcode.Symbology>  
+        <syncfusion:SfBarcode.Symbology>  
+                <syncfusion:CodabarBarcode />  
+        </syncfusion:SfBarcode.Symbology>  
 </syncfusion:SfBarcode>
 
 {% endhighlight %}
@@ -122,9 +124,9 @@ The space between barcode and text can be increased/decreased by using [TextSpac
 {% highlight xaml %}
 
 <syncfusion:SfBarcode x:Name="barcode" Value="10110111" Height="150" TextSpacing="7">  
-<syncfusion:SfBarcode.Symbology>  
-<syncfusion:CodabarBarcode />  
-</syncfusion:SfBarcode.Symbology>  
+        <syncfusion:SfBarcode.Symbology>  
+                <syncfusion:CodabarBarcode />  
+        </syncfusion:SfBarcode.Symbology>  
 </syncfusion:SfBarcode>
 
 {% endhighlight %}
@@ -140,9 +142,9 @@ The visibility of the Barcode text can be changed using [ShowValue](https://help
 {% highlight xaml %}
 
 <syncfusion:SfBarcode x:Name="barcode" Value="10110111" Height="150" ShowValue="False">  
-<syncfusion:SfBarcode.Symbology>  
-<syncfusion:CodabarBarcode />  
-</syncfusion:SfBarcode.Symbology>  
+        <syncfusion:SfBarcode.Symbology>  
+                <syncfusion:CodabarBarcode />  
+        </syncfusion:SfBarcode.Symbology>  
 </syncfusion:SfBarcode>
 
 {% endhighlight %}
@@ -158,9 +160,9 @@ The horizontal alignment of the Barcode text can be changed using [HorizontalTex
 {% highlight xaml %}
 
 <syncfusion:SfBarcode x:Name="barcode" Value="10110111" Height="150" HorizontalTextAlignment="Right">  
-<syncfusion:SfBarcode.Symbology>  
-<syncfusion:CodabarBarcode />  
-</syncfusion:SfBarcode.Symbology>  
+        <syncfusion:SfBarcode.Symbology>  
+                <syncfusion:CodabarBarcode />  
+        </syncfusion:SfBarcode.Symbology>  
 </syncfusion:SfBarcode>
 
 {% endhighlight %}
@@ -176,14 +178,85 @@ The vertical alignment of the Barcode text can be changed using [VerticalTextAli
 {% highlight xaml %}
 
 <syncfusion:SfBarcode x:Name="barcode" Value="10110111" Height="150" VerticalTextAlignment="Top">  
-<syncfusion:SfBarcode.Symbology>  
-<syncfusion:CodabarBarcode />  
-</syncfusion:SfBarcode.Symbology>  
+        <syncfusion:SfBarcode.Symbology>  
+                <syncfusion:CodabarBarcode />  
+        </syncfusion:SfBarcode.Symbology>  
 </syncfusion:SfBarcode>
 
 {% endhighlight %}
 {% endtabs %}
 
 ![VerticalTextAlignment set to Top](Getting_Started_Images/VerticalTextAlignment.png)
+
+## Barcode customization
+
+Barcode can be customized using below properties,
+
+### Background
+The Barcode background can be changed using [Background](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.background?view=netcore-3.1#System_Windows_Controls_Control_Background) property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfBarcode x:Name="barcode" Background="Orange" Value="1010111011" Height="150" Width="250">  
+        <syncfusion:SfBarcode.Symbology>  
+                <syncfusion:CodabarBarcode />  
+        </syncfusion:SfBarcode.Symbology>  
+</syncfusion:SfBarcode>
+
+{% endhighlight %}
+{% endtabs %} 
+
+### Foreground
+The Barcode foreground can be changed using [Foreground](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netcore-3.1#System_Windows_Controls_Control_Foreground) property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfBarcode x:Name="barcode" Foreground="White" Value="1010111011" Height="150" Width="250">  
+        <syncfusion:SfBarcode.Symbology>  
+                <syncfusion:CodabarBarcode />  
+        </syncfusion:SfBarcode.Symbology>  
+</syncfusion:SfBarcode>
+
+{% endhighlight %}
+{% endtabs %} 
+
+![Barcode_Customization](Customization_Images/Barcode_Customization.png)
+
+### Module
+ The barcode width can be changed using [Module](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_Module) property. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfBarcode x:Name="barcode" Module="1" Value="48625310" ShowValue="False" Height="150">  
+        <syncfusion:SfBarcode.Symbology>  
+                <syncfusion:CodabarBarcode />  
+        </syncfusion:SfBarcode.Symbology>  
+</syncfusion:SfBarcode>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Module](Customization_Images/BarWidth.png)
+
+### AutoModule
+The size of [QRBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcode.html) and [DataMatrixBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixBarcode.html) can be changed using [AutoModule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_AutoModule) Property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfBarcode x:Name="barcode" Width="400" Height="400"
+AutoModule="True" ShowValue="False" Value="QRBarcode">
+        <syncfusion:SfBarcode.Symbology>   
+                <syncfusion:QRBarcode />   
+        </syncfusion:SfBarcode.Symbology>   
+</syncfusion:SfBarcode>                      
+
+{% endhighlight %}
+{% endtabs %}
+
+![AutoModule](Customization_Images/AutoModule.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-barcode-examples)
