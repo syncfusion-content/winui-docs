@@ -10,10 +10,10 @@ documentation: ug
 # Symbology customization
 Each Barcode symbology can be associated with optional settings that may affect the specific bar code. 
 
-## 1D Barcode settings
+## One Dimensional Barcode settings
 
 ### EnableCheckSum
- The [EnableCheckSum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.UnidimensionalBarcode.html#Syncfusion_UI_Xaml_Barcode_UnidimensionalBarcode_EnableCheckSum) property enables the redundancy check using a check digit, the decimal equivalent of a binary parity bit. It consists of a single digit computed from the other digits in the message.
+The [EnableCheckSum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.UnidimensionalBarcode.html#Syncfusion_UI_Xaml_Barcode_UnidimensionalBarcode_EnableCheckSum) property enables the redundancy check using a check digit, the decimal equivalent of a binary parity bit. It consists of a single digit computed from the other digits in the message.
 
 {% tabs %}
 {% highlight xaml %}
@@ -26,7 +26,7 @@ Each Barcode symbology can be associated with optional settings that may affect 
 {% endtabs %}
  
 ### ShowCheckSum
- The check digit can be shown in the barcode or kept hidden by using the [ShowCheckSum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.UnidimensionalBarcode.html#Syncfusion_UI_Xaml_Barcode_UnidimensionalBarcode_ShowCheckSum) property.
+The check digit can be shown in the barcode or kept hidden by using the [ShowCheckSum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.UnidimensionalBarcode.html#Syncfusion_UI_Xaml_Barcode_UnidimensionalBarcode_ShowCheckSum) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -51,7 +51,7 @@ The [EncodeStartStopSymbols](https://help.syncfusion.com/cr/winui/Syncfusion.UI.
 {% endhighlight %}
 {% endtabs %}
 
-## 2D Barcode settings
+## Two Dimensional Barcode settings
 
 ### DataMatrix Barcode settings
 The [DataMatrix](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixBarcode.html) barcode can be customized using the properties [Encoding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixBarcode.html#Syncfusion_UI_Xaml_Barcode_DataMatrixBarcode_Encoding) and [MatrixSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixBarcode.html#Syncfusion_UI_Xaml_Barcode_DataMatrixBarcode_MatrixSize).
@@ -61,10 +61,10 @@ The encoding format of the DataMatrix barcode can be modified using [Encoding](h
 
 The [DataMatrixEncoding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixEncoding.html) enumeration has the following four encoding,
 
-* ASCII
-* ASCIINumeric
-* Auto
-* Base256
+* ASCII         - Supports character values between U+0000 and U+007F.
+* ASCIINumeric  - Supports only single digit numeric characters [0-9].
+* Auto          - Supports symbols and all kind of characters [^A-Za-z0-9].
+* Base256       - Supports all characters and symbols [^A-Za-z0-9].
 
 {% tabs %}
 {% highlight xaml %}
