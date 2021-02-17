@@ -18,15 +18,11 @@ The following table represents supported one dimensional barcode symbologies
 <table>
 <tr>
 <th>Symbology</th>
-<th>Class</th>
 <th>Supported characters</th>
 </tr>
 <tr>
 <td>
-Codabar
-</td>
-<td>
-[Codabar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.CodabarBarcode.html)
+{{'[Codabar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.CodabarBarcode.html)'| markdownify }}
 </td>
 <td>
 [0-9]; [- $ : / . +]
@@ -34,10 +30,7 @@ Codabar
 </tr>
 <tr>
 <td>
-Code11
-</td>
-<td>
-[Code 11](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code11Barcode.html)
+{{'[Code 11](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code11Barcode.html)'| markdownify }}
 </td>
 <td>
 [0-9]; [-]
@@ -45,10 +38,7 @@ Code11
 </tr>
 <tr>
 <td>
-Code32
-</td>
-<td>
-[Code 32](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code32Barcode.html)
+{{'[Code 32](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code32Barcode.html)'| markdownify }}
 </td>
 <td>
 [0-9]
@@ -56,10 +46,7 @@ Code32
 </tr>
 <tr>
 <td>
-Code39
-</td>
-<td>
-[Code 39](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code39Barcode.html)
+{{'[Code 39](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code39Barcode.html)'| markdownify }}
 </td>
 <td>
 [0-9]; [A-Z]; [- . $ / + % SPACE]
@@ -67,10 +54,7 @@ Code39
 </tr>
 <tr>
 <td>
-Code39Extended
-</td>
-<td>
-[Code 39 Extended](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code39ExtendedBarcode.html)
+{{'[Code 39 Extended](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code39ExtendedBarcode.html)'| markdownify }}
 </td>
 <td>
 [0-9]; [A-Z]; [a-z]
@@ -78,10 +62,7 @@ Code39Extended
 </tr>
 <tr>
 <td>
-Code93
-</td>
-<td>
-[Code 93](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code93Barcode.html)
+{{'[Code 93](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code93Barcode.html)'| markdownify }}
 </td>
 <td>
 [0-9]; [A-Z]; [- . $ / + % SPACE]
@@ -89,10 +70,7 @@ Code93
 </tr>
 <tr>
 <td>
-Code93Extended
-</td>
-<td>
-[Code 93 Extended](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code93ExtendedBarcode.html)
+{{'[Code 93 Extended](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code93ExtendedBarcode.html)'| markdownify }}
 </td>
 <td>
 All 128 ASCII characters
@@ -100,10 +78,7 @@ All 128 ASCII characters
 </tr>
 <tr>
 <td>
-Code128A
-</td>
-<td>
-[Code128A](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code128ABarcode.html)
+{{'[Code128A](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code128ABarcode.html)'| markdownify }}
 </td>
 <td>
 [0-9]; [A-Z]; [NUL (0x00) SOH (0x01) STX (0x02) ETX (0x03) EOT(0x04) ENQ (0x05) ACK (0x06) BEL (0x07) BS (0x08) HT (0x09) LF (0x0A) VT(0x0B) FF (0x0C) CR (0x0D) SO (0x0E) SI (0x0F) DLE (0x10) DC1 (0x11) DC2(0x12) DC3 (0x13) DC4 (0x14) NAK (0x15) SYN (0x16) ETB (0x17) CAN(0x18) EM (0x19) SUB (0x1A) ESC (0x1B) FS (0x1C) GS (0x1D) RS (0x1E) US(0x1F) SPACE (0x20)]; [" ! # $ % & ' ( ) * + , - . / ; &lt; = &gt; ? @ [ / ]^ _ ]
@@ -111,10 +86,7 @@ Code128A
 </tr>
 <tr>
 <td>
-Code128B
-</td>
-<td>
-[Code 128B](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code128BBarcode.html)
+{{'[Code 128B](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code128BBarcode.html)'| markdownify }}
 </td>
 <td>
 [0-9]; [A-Z]; [a-z]; [SPACE (0x20) ! " # $ % & ' ( ) * + , - . / :; &lt; = &gt; ? @ [ / ]^ _ `  { | } ~ DEL (•) ]
@@ -122,10 +94,7 @@ Code128B
 </tr>
 <tr>
 <td>
-Code128C
-</td>
-<td>
-[Code 128C](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code128CBarcode.html)
+{{'[Code 128C](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code128CBarcode.html)'| markdownify }}
 </td>
 <td>
 ASCII 00-99(encodes each two digit with one code)
@@ -133,10 +102,7 @@ ASCII 00-99(encodes each two digit with one code)
 </tr>
 <tr>
 <td>
-UPCBarcode
-</td>
-<td>
-[UPCBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.UpcBarcode.html)
+{{'[UPCBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.UpcBarcode.html)'| markdownify }}
 </td>
 <td>
 [0-9]
@@ -144,16 +110,15 @@ UPCBarcode
 </tr>
 <tr>
 <td>
-GS1Code128Barcode
-</td>
-<td>
-[GS1Code128Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.GS1Code128Barcode.html)
+{{'[GS1Code128Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.GS1Code128Barcode.html)'| markdownify }}
 </td>
 <td>
 ASCII 00-99(encodes each two digit with one code)
 </td>
 </tr>
 </table>
+
+N> [One dimensional Symbology Customization](https://help.syncfusion.com/winui/barcode/symbology-customization#one-dimensional-barcode-settings)
 
 ### Codabar
 The [CodabarBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.CodabarBarcode.html) is a discrete numerical symbology that is used in libraries, blood banks and a variety of other information processing applications.
@@ -365,15 +330,11 @@ The following table represents the supported two dimensional barcode symbologies
 <table>
 <tr>
 <th>Symbology</th>
-<th>Class</th>
 <th>Supported characters</th>
 </tr>
 <tr>
 <td>
-QRBarcode
-</td>
-<td>
-[QR Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcode.html)
+{{'[QR Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcode.html)'| markdownify }}
 </td>
 <td>
 [0–9]; [A–Z (upper-case only)]; [space $ % * + - . / , :]; [Shift JIS characters]
@@ -381,10 +342,7 @@ QRBarcode
 </tr>
 <tr>
 <td>
-DataMatrixBarcode
-</td>
-<td>
-[DataMatrixBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixBarcode.html)
+{{'[DataMatrixBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixBarcode.html)'| markdownify }}
 </td>
 <td>
 All ASCII characters
@@ -392,16 +350,15 @@ All ASCII characters
 </tr>
 <tr>
 <td>
-Pdf417Barcode
-</td>
-<td>
-[Pdf417Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Pdf417Barcode.html)
+{{'[Pdf417Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Pdf417Barcode.html)'| markdownify }}
 </td>
 <td>
 All ASCII characters
 </td>
 </tr>
 </table>
+
+N> [Two dimensional Symbology Customization](https://help.syncfusion.com/winui/barcode/symbology-customization#two-dimensional-barcode-settings)
 
 ### QR Code
 The [QRBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcode.html) is a two dimensional barcode symbology that is popularly used in automotive industry. It is known for fast readability and greater storage capacity.
