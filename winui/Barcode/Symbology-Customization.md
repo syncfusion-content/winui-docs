@@ -13,7 +13,7 @@ Each Barcode symbology can be associated with optional settings that may affect 
 ## One Dimensional Barcode settings
 
 ### EnableCheckSum
- The [EnableCheckSum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.UnidimensionalBarcode.html#Syncfusion_UI_Xaml_Barcode_UnidimensionalBarcode_EnableCheckSum) property enables the redundancy check using a check digit, the decimal equivalent of a binary parity bit. It consists of a single digit computed from the other digits in the message.
+The [EnableCheckSum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.UnidimensionalBarcode.html#Syncfusion_UI_Xaml_Barcode_UnidimensionalBarcode_EnableCheckSum) property enables the redundancy check using a check digit, the decimal equivalent of a binary parity bit. It consists of a single digit computed from the other digits in the message.
 
 {% tabs %}
 {% highlight xaml %}
@@ -26,7 +26,7 @@ Each Barcode symbology can be associated with optional settings that may affect 
 {% endtabs %}
  
 ### ShowCheckSum
- The check digit can be shown in the barcode or kept hidden by using the [ShowCheckSum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.UnidimensionalBarcode.html#Syncfusion_UI_Xaml_Barcode_UnidimensionalBarcode_ShowCheckSum) property.
+The check digit can be shown in the barcode or kept hidden by using the [ShowCheckSum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.UnidimensionalBarcode.html#Syncfusion_UI_Xaml_Barcode_UnidimensionalBarcode_ShowCheckSum) property.
 
 {% tabs %}
 {% highlight xaml %}

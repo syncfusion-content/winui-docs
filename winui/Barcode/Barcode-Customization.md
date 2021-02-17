@@ -16,9 +16,9 @@ The Barcode background color can be changed using [Background](https://docs.micr
 {% highlight xaml %}
 
 <syncfusion:SfBarcode x:Name="barcode" Background="Orange" Value="1010111011" Height="150" Width="250">  
-<syncfusion:SfBarcode.Symbology>  
-    <syncfusion:CodabarBarcode />  
-</syncfusion:SfBarcode.Symbology>  
+    <syncfusion:SfBarcode.Symbology>  
+        <syncfusion:CodabarBarcode />  
+    </syncfusion:SfBarcode.Symbology>  
 </syncfusion:SfBarcode>
 
 {% endhighlight %}
@@ -31,9 +31,9 @@ The Barcode foreground color can be changed using [Foreground](https://docs.micr
 {% highlight xaml %}
 
 <syncfusion:SfBarcode x:Name="barcode" Foreground="White" Value="1010111011" Height="150" Width="250">  
-<syncfusion:SfBarcode.Symbology>  
-    <syncfusion:CodabarBarcode />  
-</syncfusion:SfBarcode.Symbology>  
+    <syncfusion:SfBarcode.Symbology>  
+        <syncfusion:CodabarBarcode />  
+    </syncfusion:SfBarcode.Symbology>  
 </syncfusion:SfBarcode>
 
 {% endhighlight %}
@@ -44,15 +44,15 @@ The Barcode foreground color can be changed using [Foreground](https://docs.micr
 N> In order for a barcode symbol to be recognized by a scanner, there must be an adequate contrast between the dark bars and the light spaces and not all the barcode scanners have support for colored barcodes.
 
 ## Module
- The width ratio of the wide and narrow bars can be customized using [Module](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_Module) property. 
+The width ratio of the wide and narrow bars can be customized using [Module](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_Module) property. 
 
 {% tabs %}
 {% highlight xaml %}
 
 <syncfusion:SfBarcode x:Name="barcode" Module="1" Value="48625310" ShowValue="False" Height="150">  
-<syncfusion:SfBarcode.Symbology>  
-    <syncfusion:CodabarBarcode />  
-</syncfusion:SfBarcode.Symbology>  
+    <syncfusion:SfBarcode.Symbology>  
+        <syncfusion:CodabarBarcode />  
+    </syncfusion:SfBarcode.Symbology>  
 </syncfusion:SfBarcode>
 
 {% endhighlight %}
@@ -68,9 +68,9 @@ The [QRBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.
 
 <syncfusion:SfBarcode x:Name="barcode" Width="400" Height="400"
 AutoModule="True" ShowValue="False" Value="QRBarcode">
-<syncfusion:SfBarcode.Symbology>   
-    <syncfusion:QRBarcode />   
-</syncfusion:SfBarcode.Symbology>   
+    <syncfusion:SfBarcode.Symbology>   
+        <syncfusion:QRBarcode />   
+    </syncfusion:SfBarcode.Symbology>   
 </syncfusion:SfBarcode>                      
 
 {% endhighlight %}
