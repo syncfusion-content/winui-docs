@@ -185,9 +185,26 @@ The vertical alignment of the Barcode text can be changed using [VerticalTextAli
 
 ![VerticalTextAlignment set to Top](Getting_Started_Images/VerticalTextAlignment.png)
 
-## Barcode customization
+## Customization
 
 The Barcode can be customized using below properties,
+
+### Rotation Angle
+The Barcode can be rotated in different angles by using [RotationAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_RotationAngle) property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfBarcode x:Name="barcode" RotationAngle="Angle90" Value="1010111011" Height="150" Width="250">  
+    <syncfusion:SfBarcode.Symbology>  
+        <syncfusion:CodabarBarcode />  
+    </syncfusion:SfBarcode.Symbology>  
+</syncfusion:SfBarcode>
+
+{% endhighlight %}
+{% endtabs %}
+
+![RotationAngle](Customization_Images/RotationAngle.png)
 
 ### Background
 The Barcode background can be changed using [Background](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.background?view=netcore-3.1#System_Windows_Controls_Control_Background) property.
