@@ -96,7 +96,7 @@ this.sfDataGrid.RecordContextFlyout.Items.Add(new MenuFlyoutItem() { Text = "Del
 {% endhighlight %}
 {% endtabs %}
 
-![ContextFlyout Added for Data Rows in WinUI DataGrid](Context-Flyout_Images/ContextFlyout Added-for-Data-Rows-in-WinUI-DataGrid.png)
+![ContextFlyout Added for Data Rows in WinUI DataGrid](Context-Flyout_Images/ContextFlyout-Added-for-Data-Rows-in-WinUI-DataGrid.png)
 
 
 While binding the flyout item using CommandBinding you can get the command parameter as `GridRecordContextFlyoutInfo` which contains the record of the corresponding row.
@@ -120,7 +120,7 @@ private void OnCopyClicked(object param)
     if (param is GridRecordContextFlyoutInfo)
     {
         var grid = (param as GridRecordContextFlyoutInfo).DataGrid;        
-        grid.GridCopyPaste.Copy();
+        grid.ClipboardController.Copy();
     }
 }
 
@@ -283,7 +283,7 @@ this.sfDataGrid.GroupCaptionContextFlyout.Items.Add(new MenuFlyoutItem() { Text 
 {% endhighlight %}
 {% endtabs %}
 
-![ContextMenu Added for Group Caption Rows in WinUI DataGrid](Context-Menu_Images/ContextMenu-Added-for-Group-Caption-Rows-in-WinUI-DataGrid.png)
+![ContextFlyout Added for Group Caption Rows in WinUI DataGrid](Context-Flyout_Images/ContextFlyout-Added-for-Group-Caption-Rows-in-WinUI-DataGrid.png)
 
 
 While binding the flyout item using CommandBinding you can get the command parameter as `GridRecordContextFlyoutInfo` which contains the record of the corresponding row.
@@ -348,7 +348,7 @@ While binding the flyout item using CommandBinding you can get the command param
 
 <dataGrid:SfDataGrid.GroupSummaryContextFlyout>
     <MenuFlyout>
-        <MenuFlyoutItem Text="Clear Summary"  Command="{Binding Path=DataGrid.DataContext.ClearSummaryCommand}"
+        <MenuFlyoutItem Text="Clear Summary" Command="{Binding Path=DataGrid.DataContext.ClearSummaryCommand}"
                         CommandParameter="{Binding}" />
     </MenuFlyout>
 </dataGrid:SfDataGrid.GroupSummaryContextFlyout>
@@ -411,7 +411,7 @@ While binding the flyout item using CommandBinding you can get the command param
 
 <dataGrid:SfDataGrid.TableSummaryContextFlyout>
     <MenuFlyout>
-        <MenuFlyoutItem Text="Count"  Command="{Binding Path=DataGrid.DataContext.TotalSummaryCountCommand}"
+        <MenuFlyoutItem Text="Count" Command="{Binding Path=DataGrid.DataContext.TotalSummaryCountCommand}"
                         CommandParameter="{Binding}" />
     </MenuFlyout>
 </dataGrid:SfDataGrid.TableSummaryContextFlyout>
@@ -468,7 +468,7 @@ You can use the `GridContextFlyoutOpening` event to change the flyout item when 
 
 <dataGrid:SfDataGrid.RecordContextFlyout>
     <MenuFlyout MenuFlyoutPresenterStyle>
-        <MenuFlyoutItem Command="{Binding Path=DataGrid.DataContext.GridCopyCommand}" CommandParameter="{Binding}" Text="Copy"  />
+        <MenuFlyoutItem Command="{Binding Path=DataGrid.DataContext.GridCopyCommand}" CommandParameter="{Binding}" Text="Copy" />
         <MenuFlyoutItem Command="{Binding Path=DataGrid.DataContext.GridCutCommand}" CommandParameter="{Binding}" Text="Cut" />
         <MenuFlyoutItem Command="{Binding Path=DataGrid.DataContext.GridPasteCommand}" CommandParameter="{Binding}" Text="Paste" />
         <MenuFlyoutItem Command="{Binding Path=DataGrid.DataContext.DeleteCommand}" CommandParameter="{Binding}" Text="Delete" />
@@ -495,10 +495,10 @@ private void SfDataGrid_GridContextFlyoutOpening(object sender, GridContextFlyou
 {% endhighlight %}
 {% endtabs %}
        
-![ContextFlyout Changed for Record Cell while Opening in WinUI DataGrid](ContextFlyout-Changed-for-Record-Cell-while-Opening-in-WinUI-DataGrid.png)
+![ContextFlyout Changed for Record Cell while Opening in WinUI DataGrid](Context-Flyout_Images/ContextFlyout-Changed-for-Record-Cell-while-Opening-in-WinUI-DataGrid.png)
 
 
-### Changing background of Context flyout
+### Changing background of context flyout
 
 You can change the appearance of the context flyout by customizing the style with TargetType as MenuFlyoutPresenter.
 
