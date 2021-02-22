@@ -7,7 +7,7 @@ control: DataGrid
 documentation: ug
 ---
 
-# Context Flyout in WinUI DataGrid (SfDataGrid)
+# Context flyout in WinUI DataGrid (SfDataGrid)
 
 DataGrid provides an entirely customizable context flyout to expose the functionality on user interface. You can create context flyout for different rows in an efficient manner. 
 
@@ -57,8 +57,8 @@ public class OrderInfoViewModel
     {
         if (param is GridRecordContextFlyoutInfo)
         {	
-            var grid = (param as GridRecordContextFlyoutInfo).DataGrid;
-            grid.ClipboardController.Copy();
+            var dataGrid = (param as GridRecordContextFlyoutInfo).DataGrid;
+            dataGrid.ClipboardController.Copy();
         }
     }
 }
@@ -96,7 +96,7 @@ this.sfDataGrid.RecordContextFlyout.Items.Add(new MenuFlyoutItem() { Text = "Del
 {% endhighlight %}
 {% endtabs %}
 
-![ContextFlyout Added for Data Rows in WinUI DataGrid](Context-Flyout_Images/ContextFlyout-Added-for-Data-Rows-in-WinUI-DataGrid.png)
+![Context flyout added for data rows in WinUI DataGrid](Context-Flyout_Images/Context-flyout-added-for-data-rows-in-WinUI-DataGrid.png)
 
 
 While binding the flyout item using CommandBinding you can get the command parameter as `GridRecordContextFlyoutInfo` which contains the record of the corresponding row.
@@ -119,8 +119,8 @@ private void OnCopyClicked(object param)
 {
     if (param is GridRecordContextFlyoutInfo)
     {
-        var grid = (param as GridRecordContextFlyoutInfo).DataGrid;        
-        grid.ClipboardController.Copy();
+        var dataGrid = (param as GridRecordContextFlyoutInfo).DataGrid;        
+        dataGrid.ClipboardController.Copy();
     }
 }
 
@@ -162,7 +162,7 @@ this.sfDataGrid.HeaderContextFlyout.Items.Add(new MenuFlyoutItem() { Text = "Bes
 {% endhighlight %}
 {% endtabs %}
 
-![ContextFlyout Added for Header Row in WinUI DataGrid](Context-Flyout_Images/ContextFlyout-Added-for-Header-Row-in-WinUI-DataGrid.png)
+![Context flyout added for header row in WinUI DataGrid](Context-Flyout_Images/Context-flyout-added-for-header-row-in-WinUI-DataGrid.png)
 
 
 While binding the flyout item using CommandBinding you can get the parameter as `GridColumnContextFlyoutInfo` which contains the particular GridColumn.
@@ -184,10 +184,10 @@ private void OnSortAscendingClicked(object param)
 {
     if (param is GridColumnContextFlyoutInfo)
     {
-        var grid = (param as GridContextFlyoutInfo).DataGrid;
+        var dataGrid = (param as GridContextFlyoutInfo).DataGrid;
         var column = (param as GridColumnContextFlyoutInfo).Column;
-        grid.SortColumnDescriptions.Clear();
-        grid.SortColumnDescriptions.Add(new SortColumnDescription() { ColumnName = column.MappingName, SortDirection = ListSortDirection.Ascending });
+        dataGrid.SortColumnDescriptions.Clear();
+        dataGrid.SortColumnDescriptions.Add(new SortColumnDescription() { ColumnName = column.MappingName, SortDirection = ListSortDirection.Ascending });
     }
 }
 
@@ -196,7 +196,7 @@ private void OnSortAscendingClicked(object param)
 
 ## Context flyout for group item
 
-You can set the context flyout for the group drop item by using [SfDataGrid.GroupDropItemContextMenu](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_GroupDropItemContextFlyout) property. 
+You can set the context flyout for the group drop item by using [SfDataGrid.GroupDropItemContextFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_GroupDropItemContextFlyout) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -227,7 +227,7 @@ this.sfDataGrid.GroupDropItemContextFlyout.Items.Add(new MenuFlyoutItem() { Text
 {% endhighlight %}
 {% endtabs %}
 
-![ContextFlyout Added for GroupDropItem in WinUI DataGrid](Context-Flyout_Images/ContextFlyout-Added-for-GroupDropItem-in-WinUI-DataGrid.png)
+![Context flyout added for GroupDropItem in WinUI DataGrid](Context-Flyout_Images/Context-flyout-added-for-GroupDropItem-in-WinUI-DataGrid.png)
 
 
 While binding the flyout item using CommandBinding you can get the parameter as `GridColumnContextFlyoutInfo` which contains the particular GridColumn.
@@ -250,8 +250,8 @@ private void OnCollapseAllClicked(object param)
 {
     if (param is GridContextFlyoutInfo)
     {
-        var grid = (param as GridContextFlyoutInfo).DataGrid;
-        grid.CollapseAllGroup();
+        var dataGrid = (param as GridContextFlyoutInfo).DataGrid;
+        dataGrid.CollapseAllGroup();
     }    
 }
 
@@ -260,7 +260,7 @@ private void OnCollapseAllClicked(object param)
 
 ## Context flyout for caption summary wow
 
-You can set the context flyout for the group caption by using [SfDataGrid.GroupCaptionContextMenu](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_GroupCaptionContextFlyout) property. 
+You can set the context flyout for the group caption by using [SfDataGrid.GroupCaptionContextFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_GroupCaptionContextFlyout) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -283,7 +283,7 @@ this.sfDataGrid.GroupCaptionContextFlyout.Items.Add(new MenuFlyoutItem() { Text 
 {% endhighlight %}
 {% endtabs %}
 
-![ContextFlyout Added for Group Caption Rows in WinUI DataGrid](Context-Flyout_Images/ContextFlyout-Added-for-Group-Caption-Rows-in-WinUI-DataGrid.png)
+![Context flyout added for group caption rows in WinUI DataGrid](Context-Flyout_Images/Context-flyout-added-for-group-caption-rows-in-WinUI-DataGrid.png)
 
 
 While binding the flyout item using CommandBinding you can get the command parameter as `GridRecordContextFlyoutInfo` which contains the record of the corresponding row.
@@ -306,9 +306,9 @@ private void OnExpandClicked(object param)
 {
     if (param is GridRecordContextFlyoutInfo)
     {
-        var grid = (param as GridRecordContextFlyoutInfo).DataGrid;
+        var dataGrid = (param as GridRecordContextFlyoutInfo).DataGrid;
         var group = (param as GridRecordContextFlyoutInfo).Record as Group;
-        grid.ExpandGroup(group);
+        dataGrid.ExpandGroup(group);
     } 
 }
 
@@ -338,7 +338,7 @@ this.sfDataGrid.GroupSummaryContextFlyout.Items.Add(new MenuFlyoutItem() { Text 
 {% endhighlight %}
 {% endtabs %}
 
-![ContextFlyout Added for Group Summary Rows in WinUI DataGrid](Context-Flyout_Images/ContextFlyout-Added-for-Group-Summary-Rows-in-WinUI-DataGrid.png)
+![Context flyout added for group summary rows in WinUI DataGrid](Context-Flyout_Images/Context-flyout-added-for-group-summary-rows-in-WinUI-DataGrid.png)
 
 
 While binding the flyout item using CommandBinding you can get the command parameter as `GridRecordContextFlyoutInfo` which contains the record of the corresponding row.
@@ -361,9 +361,9 @@ private void OnClearSummaryClicked(object param)
 { 
     if (param is GridRecordContextFlyoutInfo)
     {
-        var grid = (param as GridRecordContextFlyoutInfo).DataGrid;
-        if (grid.GroupSummaryRows.Any())
-            grid.GroupSummaryRows.Clear();
+        var dataGrid = (param as GridRecordContextFlyoutInfo).DataGrid;
+        if (dataGrid.GroupSummaryRows.Any())
+            dataGrid.GroupSummaryRows.Clear();
     }
 }
 
@@ -372,7 +372,7 @@ private void OnClearSummaryClicked(object param)
 
 ## Context flyout for table summary row
 
-You can set the context flyout for the table summary by using [SfDataGrid.TableSummaryContextMenu](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_TableSummaryContextFlyout) property. 
+You can set the context flyout for the table summary by using [SfDataGrid.TableSummaryContextFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_TableSummaryContextFlyout) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -401,7 +401,7 @@ this.sfDataGrid.TableSummaryContextFlyout.Items.Add(new MenuFlyoutItem() { Text 
 {% endhighlight %}
 {% endtabs %}
 
-![ContextFlyout Added for Table Summary Rows in WinUI DataGrid](Context-Flyout_Images/ContextFlyout-Added-for-Table-Summary-Rows-in-WinUI-DataGrid.png)
+![Context flyout added for table summary rows in WinUI DataGrid](Context-Flyout_Images/Context-flyout-added-for-table-summary-rows-in-WinUI-DataGrid.png)
 
 
 While binding the flyout item using CommandBinding you can get the command parameter as `GridRecordContextFlyoutInfo` which contains the record of the corresponding row.
@@ -424,14 +424,14 @@ private void OnTotalSummaryCountClicked(object param)
 {
     if (param is GridRecordContextFlyoutInfo)
     {
-        var grid = (param as GridRecordContextFlyoutInfo).DataGrid;
-        var record = (param as GridRecordContextFlyoutInfo).Record as SummaryRecordEntry;
-        if (record != null)
+        var dataGrid = (param as GridRecordContextFlyoutInfo).DataGrid;
+        var summaryRecord = (param as GridRecordContextFlyoutInfo).Record as SummaryRecordEntry;
+        if (summaryRecord != null)
         {
-            var summaryrow = new GridSummaryRow() { Name = "totalgroupsummaryrow", Title = "{totalSummary}", ShowSummaryInRow = true };
-            summaryrow.SummaryColumns.Add(new GridSummaryColumn() { Name = "totalSummary", MappingName = "OrderID", SummaryType = SummaryType.CountAggregate, Format = "Total OrderID Count : {Count}" });
-            grid.TableSummaryRows.Clear();
-            grid.TableSummaryRows.Add(summaryrow);
+            var summaryRow = new GridSummaryRow() { Name = "totalGroupSummaryRow", Title = "{totalSummary}", ShowSummaryInRow = true };
+            summaryRow.SummaryColumns.Add(new GridSummaryColumn() { Name = "totalSummary", MappingName = "OrderID", SummaryType = SummaryType.CountAggregate, Format = "Total OrderID Count : {Count}" });
+            dataGrid.TableSummaryRows.Clear();
+            dataGrid.TableSummaryRows.Add(summaryRow);
         }
     }    
 }
@@ -467,7 +467,7 @@ You can use the `GridContextFlyoutOpening` event to change the flyout item when 
 {% highlight xaml %}
 
 <dataGrid:SfDataGrid.RecordContextFlyout>
-    <MenuFlyout MenuFlyoutPresenterStyle>
+    <MenuFlyout>
         <MenuFlyoutItem Command="{Binding Path=DataGrid.DataContext.GridCopyCommand}" CommandParameter="{Binding}" Text="Copy" />
         <MenuFlyoutItem Command="{Binding Path=DataGrid.DataContext.GridCutCommand}" CommandParameter="{Binding}" Text="Cut" />
         <MenuFlyoutItem Command="{Binding Path=DataGrid.DataContext.GridPasteCommand}" CommandParameter="{Binding}" Text="Paste" />
@@ -495,7 +495,7 @@ private void SfDataGrid_GridContextFlyoutOpening(object sender, GridContextFlyou
 {% endhighlight %}
 {% endtabs %}
        
-![ContextFlyout Changed for Record Cell while Opening in WinUI DataGrid](Context-Flyout_Images/ContextFlyout-Changed-for-Record-Cell-while-Opening-in-WinUI-DataGrid.png)
+![Context flyout of record cell changed while opening in WinUI DataGrid](Context-Flyout_Images/Context-flyout-of-record-cell-changed-while-opening-in-WinUI-DataGrid.png)
 
 
 ### Changing background of context flyout
@@ -521,4 +521,4 @@ You can change the appearance of the context flyout by customizing the style wit
 {% endhighlight %}
 {% endtabs %}
 
-![ContextFlyout Background Changed in WinUI DataGrid](Context-Flyout_Images/ContextFlyout-Background-Changed-in-WinUI-DataGrid.png)
+![Context flyout background changed in WinUI DataGrid](Context-Flyout_Images/Context-flyout-background-changed-in-WinUI-DataGrid.png)
