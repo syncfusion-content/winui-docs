@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Unbound column | DataGrid | WinUI | Syncfusion
+title: Unbound Column | DataGrid | WinUI | Syncfusion
 description: Learn about unbound column support in Syncfusion WinUI DataGrid (SfDataGrid) control and more details.
 platform: winui
 control: DataGrid
 documentation: ug
 ---
 
-# Unbound Column in WinUI DataGrid (SfDataGrid)
+# Unbound column in WinUI DataGrid (SfDataGrid)
 
 SfDataGrid allows you to add **additional columns** which are **not bound with data object** from underlying data source. You can add unbound column using [GridUnboundColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundColumn.html) class. Unbound columns supports for sorting, filtering, grouping, exporting and printing as normal columns.
 
@@ -28,7 +28,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 {% endhighlight %}
 {% highlight c# %}
 
-this.sfDataGrid.Columns.Add(new GridUnboundColumn() { HeaderText = "Discount Price", MappingName = "DiscountPrice",TextAlignment = TextAlignment.Right, Expression = "UnitPrice*Discount/100" });
+this.sfDataGrid.Columns.Add(new GridUnboundColumn() { HeaderText = "Discount Price", MappingName = "DiscountPrice", TextAlignment = TextAlignment.Right, Expression = "UnitPrice*Discount/100" });
 
 {% endhighlight %}
 {% endtabs %}
@@ -277,7 +277,7 @@ void SfDataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArg
 {% endhighlight %}
 {% endtabs %}
 
-### Saving edited value of unbound column using QueryUnboundColumnValue.
+### Saving edited value of unbound column using QueryUnboundColumnValue event
 
 You can get the edited value of unbound column from `GridUnboundColumnEventsArgs.Value` property of `QueryUnboundColumnValue` event when UnBoundAction is `CommitData`.
 
@@ -314,7 +314,7 @@ void SfDataGrid_CurrentCellValueChanged(object sender, CurrentCellValueChangedEv
 {% endhighlight %}
 {% endtabs %}
 
-## Customize the Unbound column behavior
+## Customize the unbound column behavior
 
 SfDataGrid allows you to customize the operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the unbound column.  
 Below table lists the available cell types for unbound column.
@@ -349,7 +349,7 @@ UnboundTextColumn
 If the [GridUnboundColumn.EditTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridTemplateColumn.html#Syncfusion_UI_Xaml_DataGrid_GridTemplateColumn_EditTemplate) not defined then the `UnboundTextColumn` set as default cell type of `GridUnboundColumn`. 
 If `GridUnboundColumn.EditTemplate` property defined then `UnboundTemplateColumn` set as cell type of `GridUnboundColumn`.
 
-### Overriding Existing CellType
+### Overriding existing celltype
 
 You can customize the unbound row cell behavior by overriding existing renderer and replace the default one in [SfDataGrid.CellRenderers](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CellRenderers).
 
@@ -390,7 +390,7 @@ public class GridUnboundCellTextBoxRendererExt : GridUnboundCellTextBoxRenderer
 
 ![Displaying Unbound column behavior customization in WinUI DataGrid](Unbound-Column_images/Displaying-Unbound-column-behavior-customization-in-WinUI-DataGrid.png)
 
-### Custom Renderer
+### Custom renderer
 
 You can change the renderer of unbound column by removing the predefined cell type value from [CellRenderers](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CellRenderers) collection and add the newly derived renderer from [GridVirtualizingCellRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Renderers.GridVirtualizingCellRenderer-2.html).
 
