@@ -349,7 +349,7 @@ UnboundTextColumn
 If the [GridUnboundColumn.EditTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridTemplateColumn.html#Syncfusion_UI_Xaml_DataGrid_GridTemplateColumn_EditTemplate) not defined then the `UnboundTextColumn` set as default cell type of `GridUnboundColumn`. 
 If `GridUnboundColumn.EditTemplate` property defined then `UnboundTemplateColumn` set as cell type of `GridUnboundColumn`.
 
-### Overriding existing celltype
+### Overriding existing cell type
 
 You can customize the unbound row cell behavior by overriding existing renderer and replace the default one in [SfDataGrid.CellRenderers](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CellRenderers).
 
