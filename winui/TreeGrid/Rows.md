@@ -80,7 +80,7 @@ You can display the row index value in row header by customizing the `Tr
 {% highlight xaml %}
 <Style TargetType="syncfusion:TreeGridRowHeaderCell">
     <Setter Property="Background" Value="Transparent" />
-    <Setter Property="BorderBrush" Value="Gray" />
+    <Setter Property="BorderBrush" Value="#FFE5E5E5" />
     <Setter Property="BorderThickness" Value="0,0,1,1" />
     <Setter Property="Padding" Value="0" />
     <Setter Property="IsTabStop" Value="False" />
@@ -88,16 +88,16 @@ You can display the row index value in row header by customizing the `Tr
         <Setter.Value>
             <ControlTemplate TargetType="syncfusion:TreeGridRowHeaderCell">
                 <Border x:Name="PART_RowHeaderCellBorder"
-                    Background="{TemplateBinding Background}"
-                    BorderBrush="{TemplateBinding BorderBrush}"
-                    BorderThickness="{TemplateBinding BorderThickness}">
+            Background="{TemplateBinding Background}"
+            BorderBrush="{TemplateBinding BorderBrush}"
+            BorderThickness="{TemplateBinding BorderThickness}">
                     <Grid>
                         <!--RowIndex is displayed here -->
                         <TextBlock HorizontalAlignment="Center"
-                                VerticalAlignment="Center"
-                                Text="{Binding RowIndex,
-                                                  RelativeSource={RelativeSource TemplatedParent}}"
-                                TextAlignment="Center" />
+                        VerticalAlignment="Center"
+                        Text="{Binding RowIndex,
+                                          RelativeSource={RelativeSource TemplatedParent}}"
+                        TextAlignment="Center" />
                     </Grid>
                 </Border>
             </ControlTemplate>
