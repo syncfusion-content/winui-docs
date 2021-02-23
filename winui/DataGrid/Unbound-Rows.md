@@ -9,7 +9,7 @@ documentation: ug
 
 # Unbound Rows in WinUI DataGrid (SfDataGrid)
 
-SfDataGrid allows you to add **additional rows** at top and also bottom of the SfDataGrid which are **not bound with data object** from underlying data source. You can add unbound rows using [SfDataGrid.UnboundRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_UnboundRows) collection property. You can add any no of unbound rows to SfDataGrid.
+SfDataGrid allows you to add **additional rows** at top and also bottom of the SfDataGrid which are **not bound with data object** from underlying data source. You can add unbound rows using [SfDataGrid.UnboundRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_UnboundRows) collection property. You can add any no of unbound rows to SfDataGrid. Unbound rows can be printed.
 
 {% tabs %}
 {% highlight xaml %}
