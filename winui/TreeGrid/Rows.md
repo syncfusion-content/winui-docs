@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains about various row types in treegrid and its customization.
 
-# Rowheader
+# Row header
 
 RowHeader is a special column used to indicate the status of row (current row, editing status, errors in row, etc.) which is placed as first cell of each row. You can show or hide the row header by setting [SfTreeGrid.ShowRowHeader](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_ShowRowHeader) property.
 
@@ -109,7 +109,7 @@ You can display the row index value in row header by customizing the `Tr
 {% endtabs %}
 ![RowHeader shows the index nuber in WinUI Treegrid](Rows_images/Rows_img5.png)
 
-# Headerrow
+# Header row
 
 Header row is present in top of the treegrid which has column headers in it. Column header describes the caption to identify the column content.
 
