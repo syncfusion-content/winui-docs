@@ -7,7 +7,6 @@ control: DataGrid
 documentation: ug
 ---
 
-
 # Unbound Rows in WinUI DataGrid (SfDataGrid)
 
 SfDataGrid allows you to add **additional rows** at top and also bottom of the SfDataGrid which are **not bound with data object** from underlying data source. You can add unbound rows using [SfDataGrid.UnboundRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_UnboundRows) collection property. You can add any no of unbound rows to SfDataGrid.
@@ -29,7 +28,6 @@ this.sfDataGrid.UnboundRows.Add(new GridUnboundRow() {Position = UnboundRowsPosi
 {% endtabs %}
 
 ![Displaying Unbound rows in WinUI DataGrid](Unbound-Rows_images/Displaying-Unbound-rows-in-WinUI-DataGrid.png)
-
 
 N> [AllowFrozenGroupHeaders](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_AllowFrozenGroupHeaders) is not supported with unbound rows.
 
@@ -163,7 +161,6 @@ You can add or remove unbound rows using [SfDataGrid.UnboundRows](https://help.s
 
 You can cancel the editing of unbound row cell by handling the [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentCellBeginEdit) event with the help of [SfDataGrid.GetUnboundRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridIndexResolver.html#Syncfusion_UI_Xaml_DataGrid_GridIndexResolver_GetUnboundRow_Syncfusion_UI_Xaml_DataGrid_SfDataGrid_System_Int32_) method and row index.
 
-
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.DataGrid;
@@ -234,7 +231,7 @@ UnboundTextColumn
 
 The renderer of unbound row cell defined by [GridUnboundRowEventsArgs.CellType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundRowEventsArgs.html#Syncfusion_UI_Xaml_DataGrid_GridUnboundRowEventsArgs_CellType) property in the [QueryUnboundRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_QueryUnboundRow) event. If the `GridUnboundRowEventsArgs.CellType` not defined then the `UnboundTextColumn` set as default cell type of [GridUnboundRowCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundRowCell.html).
  
-If [GridUnboundRowEventsArgs.CellTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundRowEventsArgs.html#Syncfusion_UI_Xaml_DataGrid_GridUnboundRowEventsArgs_CellTemplate) and [GridUnboundRowEventsArgs.EditTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundRowEventsArgs.html#Syncfusion_UI_Xaml_DataGrid_GridUnboundRowEventsArgs_EditTemplate) properties defined then `UnboundTemplateColumn` set as cell type of  `GridUnboundRowCell`.
+If [GridUnboundRowEventsArgs.CellTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundRowEventsArgs.html#Syncfusion_UI_Xaml_DataGrid_GridUnboundRowEventsArgs_CellTemplate) and [GridUnboundRowEventsArgs.EditTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundRowEventsArgs.html#Syncfusion_UI_Xaml_DataGrid_GridUnboundRowEventsArgs_EditTemplate) properties defined then `UnboundTemplateColumn` set as cell type of `GridUnboundRowCell`.
 
 ### Overriding existing cell type
 
@@ -287,7 +284,6 @@ this.sfDataGrid.UnboundRowCellRenderers.Add("UnboundTextColumn", new GridUnbound
 
 You can customize the unbound row cells using [GridUnboundRowEventsArgs.CellTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundRowEventsArgs.html#Syncfusion_UI_Xaml_DataGrid_GridUnboundRowEventsArgs_CellTemplate) property.
 
-
 {% tabs %}
 {% highlight xaml %}
 <DataTemplate x:Key="unboundRowCellTemplate">
@@ -301,7 +297,7 @@ You can customize the unbound row cells using [GridUnboundRowEventsArgs.CellTemp
                    TextWrapping="Wrap"  
                    VerticalAlignment="Center"  
                    HorizontalAlignment="Right" />
-        <Image Source="\Images\thumb_yes.png" HorizontalAlignment="Left"/>
+        <Image Source="\Images\thumb_yes.png" HorizontalAlignment="Left" />
     </Grid>
 </DataTemplate>
 {% endhighlight %}
@@ -340,12 +336,19 @@ private void SfDataGrid_QueryUnboundRow(object sender, GridUnboundRowEventsArgs 
 
 You can change the height of unbound row using [SfDataGrid.QueryRowHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_QueryRowHeight) event.
 
-
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.DataGrid;
 this.sfDataGrid.QueryRowHeight += SfDataGrid_QueryRowHeight;
 
+private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
+{
+    if (sfDataGrid.IsUnboundRow(e.RowIndex))
+    {
+        e.Height = 40;
+        e.Handled = true;
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -429,7 +432,7 @@ You can get the DetailsViewDataGrid using [GridUnboundRowEventsArgs.OriginalSend
                 <dataGrid:SfDataGrid x:Name="firstDetailsViewGrid"                                             AutoGenerateColumns="True">
                     <dataGrid:SfDataGrid.UnboundRows>
                         <dataGrid:GridUnboundRow Position="Top" 
-                                                 ShowBelowSummary="True"/>
+                                                 ShowBelowSummary="True" />
                     </dataGrid:SfDataGrid.UnboundRows>
                 </dataGrid:SfDataGrid>
             </dataGrid:GridViewDefinition.DataGrid>
