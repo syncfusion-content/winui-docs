@@ -31,7 +31,7 @@ this.sfDataGrid.UnboundRows.Add(new GridUnboundRow() {Position = UnboundRowsPosi
 
 N> [AllowFrozenGroupHeaders](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_AllowFrozenGroupHeaders) is not supported with unbound rows.
 
-## Positioning unbound rows
+## Positioning Unbound rows
 
 Unbound row can be placed in top or bottom of the SfDataGrid. Unbound row positioned based on [GridUnboundRow.Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundRow.html#Syncfusion_UI_Xaml_DataGrid_GridUnboundRow_Position) and [GridUnboundRow.ShowBelowSummary](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundRow.html#Syncfusion_UI_Xaml_DataGrid_GridUnboundRow_ShowBelowSummary) properties.
 
@@ -99,7 +99,7 @@ Below screen shot shows different unbound rows placed in all possible positions.
 
 ![Displaying different Unbound rows placed in all possible positions in WinUI DataGrid](Unbound-Rows_images/Displaying-different-Unbound-rows-placed-in-all-possible-positions-in-WinUI-DataGrid.png)
 
-## Populating data for unbound rows
+## Populating data for Unbound rows
 
 You can populate data for the unbound row by handling [QueryUnboundRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_QueryUnboundRow) event of SfDataGrid. This event occurs for each cell in unbound row whenever the row gets refreshed. 
 [GridUnboundRowEventsArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundRowEventsArgs.html) of the `QueryUnboundRow` event provides information about the cell triggered this event. [GridUnboundRowEventsArgs.OriginalSender](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridEventArgs.html#Syncfusion_UI_Xaml_Grids_GridEventArgs_OriginalSender) returns the DataGrid fired this event for DetailsView. 
@@ -154,7 +154,7 @@ private void SfDataGrid_QueryUnboundRow(object sender, GridUnboundRowEventsArgs 
 
 You can add or remove unbound rows using [SfDataGrid.UnboundRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_UnboundRows) property which reflects in UI immediately.
 
-## Editing in unbound rows
+## Editing in Unbound rows
 
 ### Cancel the editing for unbound row cell
 
@@ -194,7 +194,7 @@ private void SfDataGrid_QueryUnboundRow(object sender, GridUnboundRowEventsArgs 
 {% endhighlight %}
 {% endtabs %}
 
-## Customize the unbound row’s behavior
+## Customize the Unbound row’s behavior
 
 SfDataGrid allows you to customize the operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the unbound row cell. Each renderer have set of virtual methods for handling the behaviors. Creating new renderers also supported.
 
@@ -278,7 +278,7 @@ this.sfDataGrid.UnboundRowCellRenderers.Add("UnboundTextColumn", new GridUnbound
 
 ![Displaying Unbound rows behavior customization for existing cell type in WinUI DataGrid](Unbound-Rows_images/Displaying-Unbound-rows-behavior-customization-for-existing-cell-type-in-WinUI-DataGrid.png)
 
-## Templating unbound row cells
+## Templating Unbound row cells
 
 You can customize the unbound row cells using [GridUnboundRowEventsArgs.CellTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundRowEventsArgs.html#Syncfusion_UI_Xaml_DataGrid_GridUnboundRowEventsArgs_CellTemplate) property.
 
@@ -330,7 +330,7 @@ private void SfDataGrid_QueryUnboundRow(object sender, GridUnboundRowEventsArgs 
 
 ![Displaying-Unbound-rows-cell-customization-with-templates-in-WinUI-DataGrid](Unbound-Rows_images/Displaying-Unbound-rows-cell-customization-with-templates-in-WinUI-DataGrid.png)
 
-## Changing unbound row height
+## Changing Unbound row height
 
 You can change the height of unbound row using [SfDataGrid.QueryRowHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_QueryRowHeight) event.
 
@@ -353,26 +353,22 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 ![Displaying Unbound rows height customization in WinUI DataGrid](Unbound-Rows_images/Displaying-Unbound-rows-height-customization-in-WinUI-DataGrid.png)
 
-## Get unbound rows
+## Get Unbound rows
 
 You can get the unbound row of specified row index using [GetUnboundRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridIndexResolver.html#Syncfusion_UI_Xaml_DataGrid_GridIndexResolver_GetUnboundRow_Syncfusion_UI_Xaml_DataGrid_SfDataGrid_System_Int32_) method.
 
 {% tabs %}
 {% highlight c# %}
-using Syncfusion.UI.Xaml.DataGrid;
-
 var unboundRow = sfDataGrid.GetUnboundRow(1);
-
 {% endhighlight %}
 {% endtabs %}
 
-## Merging with unbound rows
+## Merging with Unbound rows
 
 You can merge the unbound row cell by setting the Left, Right, Top and Bottom properties of [CoveredCellInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.CoveredCellInfo.html) with the help of `GetUnboundRow` method and row index.
 
 {% tabs %}
 {% highlight c# %}
-using Syncfusion.UI.Xaml.DataGrid;
 this.sfDataGrid.QueryCoveredRange += SfDataGrid_QueryCoveredRange;
 
 private void SfDataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
