@@ -55,7 +55,7 @@ this.treeGrid.Columns["LastName"].ShowToolTip = true;
 
 N> It has higher priority than [SfTreeGrid.ShowToolTip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_ShowToolTip).
 
-![WinUI TreeGrid with ToolTip support](Tooltip_images/Tooltip_images.png)
+![WinUI TreeGrid with ToolTip support](Tooltip_images/Tooltip_img1.png)
 
 ## Header tooltip
 
@@ -84,7 +84,7 @@ You can customize the template of ToolTip by using the [TreeGridColumn.ToolTipTe
 
 #### Customize the tooltip using ToolTipTemplate
 
-You can customize appearance of the tooltip of a particular column by setting the TreeGridColumn.ToolTipTemplate. You can also customize appearance of the header tooltip of a particular column by using the [TreeGridColumn.HeaderToolTipTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_HeaderToolTipTemplate)property.
+You can customize appearance of the tooltip of a particular column by setting the TreeGridColumn.ToolTipTemplate. You can also customize appearance of the header tooltip of a particular column by using the [TreeGridColumn.HeaderToolTipTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_HeaderToolTipTemplate) property.
 
 {% tabs %}
 {% highlight xaml %}
