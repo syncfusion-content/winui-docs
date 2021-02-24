@@ -97,7 +97,7 @@ Unbound row placed at bottom, right below record rows. In this position, unbound
 
 Below screen shot shows different unbound rows placed in all possible positions.
 
-![Displaying Unbound rows at different positions in WinUI DataGrid](Unbound-Rows_images/Displaying-Unbound-rows-at-different-positions-in-WinUI-DataGrid.png)
+![Displaying different Unbound rows placed in all possible positions in WinUI DataGrid](Unbound-Rows_images/Displaying-different-Unbound-rows-placed-in-all-possible-positions-in-WinUI-DataGrid.png)
 
 ## Populating data for unbound rows
 
@@ -136,7 +136,6 @@ private void SfDataGrid_QueryUnboundRow(object sender, GridUnboundRowEventsArgs 
             e.Value = (sfDataGrid.SelectedItems.OrderBy(item => (item as OrderInfo).OrderID).Last() as OrderInfo).OrderID;
             e.Handled = true;
         }
-
         else if (e.RowColumnIndex.ColumnIndex == 2)
         {
             e.Value = (sfDataGrid.SelectedItems.First(item => (item as OrderInfo).CustomerName.Contains("g")) as OrderInfo).CustomerName;
@@ -147,9 +146,9 @@ private void SfDataGrid_QueryUnboundRow(object sender, GridUnboundRowEventsArgs 
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Unbound rows data population using QueryUnboundRow event in WinUI DataGrid](Unbound-Rows_images/Displaying-Unbound-rows-data-population-using-QueryUnboundRow-event-in-WinUI-DataGrid.png)
+![Unbound rows populated with data using QueryUnboundRow event in WinUI DataGrid](Unbound-Rows_images/Unbound-rows-populated-with-data-using-QueryUnboundRow-event-in-WinUI-DataGrid.png)
 
-## Refreshing the unbound Rows at runtime
+## Refreshing the Unbound Rows at runtime
 
 ### Add/Remove unbound rows
 
@@ -163,7 +162,6 @@ You can cancel the editing of unbound row cell by handling the [SfDataGrid.Curre
 
 {% tabs %}
 {% highlight c# %}
-using Syncfusion.UI.Xaml.DataGrid;
 this.sfDataGrid.CurrentCellBeginEdit += SfDataGrid_CurrentCellBeginEdit;
 
 private void SfDataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArgs e)
