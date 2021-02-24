@@ -17,7 +17,7 @@ This section explains about various row types in SfDataGrid.
 
 [SummaryRow](https://help.syncfusion.com/winui/datagrid/summaries)
 
-`UnboundRow`
+[UnboundRow](https://help.syncfusion.com/winui/datagrid/unbound-rows)
 
 ## Row Header
 
