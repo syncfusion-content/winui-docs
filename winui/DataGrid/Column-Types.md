@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Column Types
+# Column Types in WinUI DataGrid (SfDataGrid)
 
 SfDataGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data.
  
