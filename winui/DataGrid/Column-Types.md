@@ -197,7 +197,6 @@ In the below code snippet, `GridTextColumn` is loaded with `ProgressBar` and `Te
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AllowEditing="True"
                        AutoGenerateColumns="False"
-                       AutoGenerateRelations="False"
                        ItemsSource="{Binding Orders}"
                        ColumnWidthMode="SizeToHeader">
     <syncfusion:SfDataGrid.Columns>
@@ -254,7 +253,6 @@ You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/win
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AllowEditing="True"
                        AutoGenerateColumns="False"
-                       AutoGenerateRelations="False"
                        ItemsSource="{Binding Orders}"
                        ColumnWidthMode="SizeToHeader">
     <syncfusion:SfDataGrid.Columns>
@@ -1069,7 +1067,6 @@ class StringToImageConverter : IValueConverter
     <syncfusion:SfDataGrid x:Name="dataGrid"
                            AllowEditing="True"
                            AutoGenerateColumns="False"
-                           AutoGenerateRelations="False"
                            ItemsSource="{Binding Orders}"
                            ColumnWidthMode="SizeToHeader">
         <syncfusion:SfDataGrid.Columns>
