@@ -449,7 +449,6 @@ private void FirstDetailsViewGrid_QueryUnboundRow(object sender, GridUnboundRowE
             e.Value = "Total Items  ";
             e.Handled = true;
         }
-
         else if (e.RowColumnIndex.ColumnIndex == 1)
         {
             e.Value = (e.OriginalSender as SfDataGrid).View.Records.Count();
