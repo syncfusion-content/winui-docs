@@ -620,7 +620,7 @@ GridColumn allows you to change the alignment of `GridCell` and `GridHeaderCellC
 {% endtabs %}
 
 
-![TextTrimming & TextWrapping applied to CustomerName column in WinUI DataGrid](Column-Types_images/Column-Types_img8.png)
+![TextTrimming and TextWrapping applied to CustomerName column in WinUI DataGrid](Column-Types_images/Column-Types_img8.png)
 
 ## GridTextColumn
 
