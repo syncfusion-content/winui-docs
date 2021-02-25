@@ -173,7 +173,7 @@ public class DisplayBindingConverter : IValueConverter
                                             Converter={StaticResource converter}}"
                    HeaderText="Unit Price"
                    MappingName="UnitPrice"
-                   ValueBinding="{Binding Path=Quantity}" />
+                   ValueBinding="{Binding Path=UnitPrice}" />
         <syncfusion:GridTextColumn MappingName="Quantity" />
     </syncfusion:SfDataGrid.Columns>
 </syncfusion:SfDataGrid>
@@ -182,11 +182,11 @@ public class DisplayBindingConverter : IValueConverter
 
 In the below screenshot, Unit Price column display value is formatted to currency by setting `DisplayBinding` property.
 
-![Displaying the currency value in WinUI SfDataGrid](Column-Types_images/Column-Types_img1.png)
+![Displaying the currency values in column in WinUI DataGrid](Column-Types_images/Column-Types_img1.png)
 
 By default, Columns handling the data operations (sorting and grouping) based on `MappingName` property. You can perform data operations based on `ValueBinding` by setting [GridColumn.UseBindingValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_UseBindingValue) to `true`, when the standard reflection not works or binding column with complex or indexer properties.
 
-### CellTemplate in GridColumn
+## CellTemplate in GridColumn
 
 You can load any WinUI control in the display mode for all columns by setting [GridColumn.CellTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_CellTemplate) property. In edit mode, corresponding editor will be loaded based on column type.
  
@@ -230,11 +230,11 @@ In the below code snippet, `GridTextColumn` is loaded with `ProgressBar` and `Te
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the column with progressBar in WinUI SfDataGrid](Column-Types_images/Column-Types_img2.png)
+![Displaying progress bar in the column as cell template in WinUI DataGrid](Column-Types_images/Column-Types_img2.png)
 
 `CellTemplate` is not support by `GridHyperlinkColumn`, `GridCheckboxColumn` and `GridImageColumn` columns.
 
-#### Reusing same DataTemplate for multiple columns
+### Reusing same DataTemplate for multiple columns
 
 By default, underlying record is `DataContext` for CellTemplate. So you have to define, template for each column to display values based on `MappingName`.
  
@@ -268,9 +268,9 @@ You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/win
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the column with CellTemplate in WinUI SfDataGrid](Column-Types_images/Column-Types_img3.png)
+![Displaying the column with CellTemplate in WinUI DataGrid](Column-Types_images/Column-Types_img3.png)
 
-#### Setting CellTemplate based on custom logic using TemplateSelector
+### Setting CellTemplate based on custom logic using TemplateSelector
 
 `GridColumn` provides support to choose different [DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) based on underlying data object using [GridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_CellTemplateSelector) property.
   
@@ -339,13 +339,13 @@ In the below code, the custom template selector set to `GridColumn.CellTemplateS
 N> Non-Editable columns does not support `CellTemplate`.
 
 
-![Displaying the column with CellTemplateSelector in WinUI SfDataGrid](Column-Types_images/Column-Types_img4.png)
+![Displaying cell template for the column using CellTemplateSelector in WinUI DataGrid](Column-Types_images/Column-Types_img4.png)
 
-### Data Formatting
+## Data Formatting
 
 `GridColumn` supports to format the data using [Converter](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.data.binding.converter.aspx) properties, by defining `GridColumn.DisplayBinding` and `GridColumn.ValueBinding`. `GridColumn.DisplayBinding` formats the data in display mode. `GridColumn.ValueBinding` formats the data in edit mode.
 
-#### Format column using Converter
+### Format column using Converter
 
 You can format the column using `Converter` property by defining `DisplayBinding`.
  
@@ -411,13 +411,13 @@ private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Gri
 {% endtabs %}
 
 
-![Displaying column  formatting with converter in WinUI SfDataGrid](Column-Types_images/Column-Types_img5.png)
+![Data in the column are formatted using converter in WinUI DataGrid](Column-Types_images/Column-Types_img5.png)
 
-### Styling GridColumn
+## Styling GridColumn
 
 `GridColumn` support to customize the style of particular column using [GridColumn.CellStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_CellStyle) property.
 
-#### Change the font setting
+### Change the font setting
 
 You can change the font settings such as `FontSize`, `FontFamily`, `FontWeight` etc. by writing style of TargetType `GridCell` or `GridColumn.CellStyle` property.
 
@@ -475,9 +475,9 @@ private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Gri
 {% endtabs %}
 
 
-![Applying cell style to the columns in WinUI SfDataGrid](Column-Types_images/Column-Types_img6.png)
+![Cell style applied to the CustomerName column in WinUI DataGrid](Column-Types_images/Column-Types_img6.png)
 
-#### Styles based on custom logic
+### Styles based on custom logic
 
 You can apply the styles to columns based on certain condition using [GridColumn.CellStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_CellStyleSelector) property.
 
@@ -562,15 +562,15 @@ private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Gri
 {% endhighlight %}
 {% endtabs %}
 
-![Applying cell style to the columns by using CellStyleSelector in WinUI SfDataGrid](Column-Types_images/Column-Types_img7.png)
+![Cell style applied to the OrderID column using StyleSelector in WinUI DataGrid](Column-Types_images/Column-Types_img7.png)
 
-### UI Interaction
+## End-user Interaction
 
-#### Hide Column
+### Hide Column
 
 You can hide or unhide the particular column programmatically by setting [GridColumn.IsHidden](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_IsHidden) property. For allowing end-user to hide or unhide column in UI refer [Resizing Columns](https://help.syncfusion.com/winui/datagrid/columns#resizing-columns) section.
 
-#### Disable column
+### Disable column
 
 You can disable column by setting [GridColumn.AllowFocus](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_AllowFocus) property. Therefore, that column can’t be selected or edited.
  
@@ -620,7 +620,7 @@ GridColumn allows you to change the alignment of `GridCell` and `GridHeaderCellC
 {% endtabs %}
 
 
-![Applying TextTrimming,TextDecorations,TextAlignment,TextWrapping to columns in WinUI SfDataGrid](Column-Types_images/Column-Types_img8.png)
+![TextTrimming & TextWrapping applied to CustomerName column in WinUI DataGrid](Column-Types_images/Column-Types_img8.png)
 
 ## GridTextColumn
 
@@ -660,7 +660,7 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Ship City", Mappi
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the spell check in SfDataGrid WinUI](Column-Types_images/Column-Types_img9.png)
+![Showing error in the edited value using spell check in WinUI DataGrid](Column-Types_images/Column-Types_img9.png)
 
 ## GridCheckBoxColumn
 
@@ -682,7 +682,7 @@ this.dataGrid.Columns.Add(new GridCheckBoxColumn() { HeaderText = "Is Delivered"
 {% endtabs %}
 
 
-![Displaying GridCheckBoxColumn in WinUI SfDataGrid](Column-Types_images/Column-Types_img10.png)
+![Displaying GridCheckBoxColumn in WinUI DataGrid](Column-Types_images/Column-Types_img10.png)
 
 `GridCheckBoxColumn` allows you to customize check box state and its alignment.
 
@@ -854,7 +854,7 @@ In the below code, custom template selector set to `GridTemplateColumn.EditTempl
 {% endtabs %}
 
 
-![Displaying CellTemplateSelector and EditTemplateSelector with GridTemplateColumn in WinUI SfDataGrid](Column-Types_images/Column-Types_img11.png)
+![Cell template and edit template for OrderID column loaded using TemplateSelector in WinUI DataGrid](Column-Types_images/Column-Types_img11.png)
 
 ## GridComboBoxColumn
 
@@ -885,7 +885,7 @@ SfDataGrid triggers, [CurrentCellDropDownSelectionChanged](https://help.syncfusi
 `SelectedIndex` property returns the index of selected item.
 `SelectedItem` property returns the selected item from drop down list.
 
-![Displaying GridComboBoxColumn with SelectedItem in WinUI SfDataGrid](Column-Types_images/Column-Types_img12.png)
+![Displaying combobox with dropdowm in column of WinUI DataGrid](Column-Types_images/Column-Types_img12.png)
 
 ### Improving dropdown opening time
 
@@ -952,7 +952,7 @@ this.dataGrid.Columns.Add(new GridHyperlinkColumn() { HeaderText = "Country", Ma
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying GridHyperlinkColumn in WinUI SfDataGrid](Column-Types_images/Column-Types_img13.png)
+![Displaying GridHyperlinkColumn in WinUI DataGrid](Column-Types_images/Column-Types_img13.png)
 
 You can allow end-user to navigate the `Uri` when the cell value contains valid `Uri` address or using [CurrentCellRequestNavigate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentCellRequestNavigate) event. The `CurrentCellRequestNavigate` occurs when the current cell in `GridHyperlinkColumn` is clicked for navigation.
   
@@ -985,13 +985,13 @@ void dataGrid_CurrentCellRequestNavigate(object sender, CurrentCellRequestNaviga
 {% endhighlight %}
 {% endtabs %}
 
-### Customize Hyperlink
+## Customize Hyperlink
 
-#### Change the alignment
+### Change the alignment
 
 You can change the horizontal alignment of `GridHyperlinkColumn` using [HorizontalAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridHyperlinkColumn.html#Syncfusion_UI_Xaml_DataGrid_GridHyperlinkColumn_HorizontalAlignment) property.
 
-#### Change the foreground color
+### Change the foreground color
 
 You can change the foreground color of `GridHyperlinkColumn` by writing the style with target type `HyperlinkButton`.
 
@@ -1026,7 +1026,7 @@ this.dataGrid.Columns.Add(new GridImageColumn() { HeaderText = "Flag", MappingNa
 {% endtabs %}
 
 
-![Displaying GridImageColumn in WinUI SfDataGrid](Column-Types_images/Column-Types_img14.png)
+![Displaying GridImageColumn in WinUI DataGrid](Column-Types_images/Column-Types_img14.png)
 
 ### Read image from path using ValueBinding
 
@@ -1120,7 +1120,7 @@ this.sfDataGrid.Columns.Add(new GridToggleSwitchColumn() { MappingName = "IsDeli
 
 GridToggleSwitchColumn provides support to display the text, while ToggleSwitch is in `ON`/`OFF` state based on [OnContent]https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridToggleSwitchColumn.html#Syncfusion_UI_Xaml_DataGrid_GridToggleSwitchColumn_OnContent) and [OffContent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridToggleSwitchColumn.html#Syncfusion_UI_Xaml_DataGrid_GridToggleSwitchColumn_OffContent) properties.
 
-![Displaying GridToggleSwitchColumn in WinUI SfDataGrid](Column-Types_images/Column-Types_img15.png)
+![Displaying GridToggleSwitchColumn in WinUI DataGrid](Column-Types_images/Column-Types_img15.png)
 
 ## GridCheckBoxSelectorColumn
 
@@ -1655,7 +1655,7 @@ public class GridCellTextBoxRendererExt: GridCellTextBoxRenderer
 {% endtabs %}
 
 
-![Displaying foreground customization of column by customizing the renderer in WinUI SfDataGrid](Column-Types_images/Column-Types_img19.png)
+![Displaying foreground customization of column by customizing the renderer in WinUI DataGrid](Column-Types_images/Column-Types_img19.png)
 
 
 ### Creating new column and renderer
