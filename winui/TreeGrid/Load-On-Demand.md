@@ -581,6 +581,7 @@ public class ViewModel : NotificationObject
 {% endtabs %}
 
 You can let SfTreeGrid to populate the data at runtime by calling [SfTreeGrid.RepopulateTree](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RepopulateTree) method.
+
 ![Populating SfTreeGrid](Load-On-Demand-images/Load-On-Demand-gif1.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/How-to-load-data-on-demand-using-events-in-winui-treegrid).
