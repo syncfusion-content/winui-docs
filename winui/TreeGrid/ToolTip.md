@@ -130,7 +130,7 @@ public class StringToImageConverter : IValueConverter
 
 ![WinUI treeGrid with Customized ToolTip Support](ToolTip_images/ToolTip_img3.png)
 
-You can get the sample [here](https://github.com/SyncfusionExamples/How-to-customize-the-tooltip-using-DataTemplate-in-winui-datagrid).
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-customize-the-tooltip-using-DataTemplate-in-winui-datagrid).
 
 ## Events
 
