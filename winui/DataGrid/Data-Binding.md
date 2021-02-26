@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data binding in WinUI DataGrid control | Syncfusion
-description: Learn about data binding (List, ObservableCollection, DataTable and so on) support in Syncfusion WinUI DataGrid (SfDataGrid) control and more details. 
+description: Learn about data binding (List, ObservableCollection) support in Syncfusion WinUI DataGrid (SfDataGrid) control and more details. 
 platform: winui
 control: SfDataGrid
 documentation: ug
