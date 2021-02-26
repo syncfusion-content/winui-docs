@@ -111,7 +111,7 @@ private void SfDataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEv
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying merged range of cells in WinUI DataGrid](Merge-Cells_images/Displaying-merged-range-of-cells-in-WinU-DataGrid.png)
+![Displaying merged range of cells in WinUI DataGrid](Merge-Cells_images/Displaying-merged-range-of-cells-in-WinUI-DataGrid.png)
 
 ## Merging cells based on the content
 
@@ -311,7 +311,7 @@ private CoveredCellInfo GetRange(GridColumn column, int rowIndex, int columnInde
 
 ## Merge cells in Master-Details View
 
-Master- details view allows you to merge the range of cells using the `QueryCoveredRange` event of [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid). You can get the **DetailsViewDataGrid** which triggered the event from `GridQueryCoveredRangeEventArgs.OriginalSender` of the `QueryCoveredRange` event. 
+Master-details view allows you to merge the range of cells using the `QueryCoveredRange` event of [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid). You can get the **DetailsViewDataGrid** which triggered the event from `GridQueryCoveredRangeEventArgs.OriginalSender` of the `QueryCoveredRange` event. 
 
 {% tabs %}
 {% highlight xaml %}
