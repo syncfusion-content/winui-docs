@@ -69,14 +69,12 @@ You can merge the entire column parent node using `TreeGridCoveredCellInfo`.
 
 {% tabs %}
 {% highlight xaml %}
-
 <treeGrid:SfTreeGrid Name="sfTreeGrid"
                                 ItemsSource="{Binding EmployeeDetails}"
                                 ChildPropertyName="Children"
                                 QueryCoveredRange="SfTreeGrid_QueryCoveredRange"
                                 SelectionMode="Single"
-                                NavigationMode="Cell">
-							
+                                NavigationMode="Cell" />							
 {% endhighlight %}
 {% highlight c# %}
 this.sfTreeGrid.QueryCoveredRange += SfTreeGrid_QueryCoveredRange;
