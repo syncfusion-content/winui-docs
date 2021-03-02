@@ -55,7 +55,7 @@ You can set the context menu to header using the [SfTreeGrid.HeaderContextFlyout
 ![ContextFlyout for header in treegrid WinUI ](Context-flyout_images/ContextFlyout_image2.png)
 
 
-### Context flyout for expander
+## Context flyout for expander
 
 You can set the context menu to expander using the [SfTreeGrid.ExpanderContextFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ExpanderContextFlyout) property.
 
