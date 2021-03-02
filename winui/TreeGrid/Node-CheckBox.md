@@ -89,7 +89,7 @@ You can collapse node CheckBox for certain nodes by editing the control template
         <Style TargetType="syncfusion:TreeGridExpanderCell">
             <Setter Property="Background" Value="Transparent" />
             <Setter Property="BorderThickness" Value="0,0,1,1" />
-            <Setter Property="BorderBrush" Value="Gray" />
+            <Setter Property="BorderBrush" Value="#CECECE" />
             <Setter Property="Padding" Value="0" />
             <Setter Property="Template">
                 <Setter.Value>
