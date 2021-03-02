@@ -41,10 +41,10 @@ You can set the context menu to header using the [SfTreeGrid.HeaderContextFlyout
 
 <syncfusion:SfTreeGrid.HeaderContextFlyout>
     <MenuFlyout>
-        <MenuFlyoutItem  x:Name="SortAscending" Text="SortAscending" />
-        <MenuFlyoutItem  x:Name="SortDescending" Text="SortDescending"  />
-        <MenuFlyoutItem  x:Name="ClearSorting" Text="ClearSorting" />
-        <MenuFlyoutItem  x:Name="ClearFiltering" Text="ClearFiltering" />
+        <MenuFlyoutItem  x:Name="SortAscending" Text="Sort Ascending" />
+        <MenuFlyoutItem  x:Name="SortDescending" Text="Sort Descending"  />
+        <MenuFlyoutItem  x:Name="ClearSorting" Text="Clear Sorting" />
+        <MenuFlyoutItem  x:Name="ClearFiltering" Text="Clear Filtering" />
     </MenuFlyout>
 </syncfusion:SfTreeGrid.HeaderContextFlyout>
 
