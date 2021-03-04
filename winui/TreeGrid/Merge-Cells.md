@@ -41,7 +41,7 @@ private void SfTreeGrid_QueryCoveredRange(object sender, TreeGridQueryCoveredRan
 
 ## Column wise merging cells by fixed range
 
-You can merge the columns by setting the range using the Left and Right properties of [TreeGridCoveredCellInfo(https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCoveredCellInfo.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCoveredCellInfo__ctor_System_Int32_System_Int32_System_Int32_).
+You can merge the columns by setting the range using the Left and Right properties of [TreeGridCoveredCellInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCoveredCellInfo.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCoveredCellInfo__ctor_System_Int32_System_Int32_System_Int32_).
 
 {% tabs %}
 {% highlight c# %}

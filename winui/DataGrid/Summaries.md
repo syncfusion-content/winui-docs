@@ -123,7 +123,7 @@ Refer [Formatting Summary](#formatting-summary) section to know more about how t
         </dataGrid:GridTableSummaryRow>
     </dataGrid:SfDataGrid.TableSummaryRows>
     
-</syncfusion:SfDataGrid>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
@@ -208,7 +208,7 @@ In the below code snippet, `GridSummaryRow.TitleColumnCount` is set as 2 and `Gr
        </dataGrid:GridTableSummaryRow>
     </dataGrid:SfDataGrid.TableSummaryRows>  
 	
-</syncfusion:SfDataGrid>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
