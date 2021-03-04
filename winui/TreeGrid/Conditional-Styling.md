@@ -34,9 +34,9 @@ It affects scrolling performance while styling more number of columns based on n
 </tr>
 </table>
 
-# Cells
+## Cells
 
-## Style cells using style selector
+### Style cells using style selector
 
 The record cells ([TreeGridCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCell.html)) can be customized conditionally based on data by setting [SfTreeGrid.CellStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CellStyleSelector) property and the particular column record cells can be customized by setting [GridColumn.CellStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_CellStyleSelector) property and you can get the container as TreeGridCell in the StyleSelector.
 
@@ -81,7 +81,7 @@ public class SelectorClass : StyleSelector
 
 ![Styling cells using style selector in WinUI treegrid](Conditional-Styling_images/Conditional-Styling_img1.jpeg)
 
-## Add image to cell
+### Add image to cell
 
 You can add the image to tree gird cell by using TreeGridTemplateColumn,
 
