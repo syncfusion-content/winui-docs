@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Getting started with WinUI CalendarDateRangePicker control | Syncfusion
+title: Getting started with WinUI CalendarDateRangePicker control|Syncfusion
 description: This section describes about how to add the CalendarDateRangePicker (SfCalendarDateRangePicker) control into WinUI application and its basic features.
 platform: WinUI
 control: SfCalendarDateRangePicker
 documentation: ug
 ---
 
-# Getting Started with WinUI Calendar DatePicker
+# Getting Started with WinUI CalendarDateRangePicker
 
 This section explains the steps required to add the `CalendarDateRangePicker` control and its date range selection options. 
 ## Structure of CalendarDateRangePicker control
 
-![Structure of WinUI CalendarDateRangePicker control](Getting-Started_images/Structure.png)
+![Structure of WinUI CalendarDateRangePicker control](Getting-Started_images/OriginalStructure.png)
 
 ## Creating an application with WinUI CalendarDateRangePicker
 
