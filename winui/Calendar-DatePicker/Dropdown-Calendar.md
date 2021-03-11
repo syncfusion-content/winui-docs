@@ -317,21 +317,21 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Today and selected date highlighting
 
-You can highlight the today and selected date with different shapes such as rectangle, filled rectangle, circle and filled circle. You can use the [TodayHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_TodayHighlightMode) property to highlight the today date and use the [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectionHighlightMode) property to highlight the selected date. The default value of `TodayHighlightMode` property is `FilledRectangle` and `SelectionHighlightMode` property is `Rectangle`.
+You can highlight the today and selected date with rectangle and circle shapes. You can customize the selected date cell shape using `SelectionShape` property and use the [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectionHighlightMode) property to update the backgorund of the selected date. The default value of `SelectionShape` property is `Circle` and `SelectionHighlightMode` property is `Outline`.
 
 {% tabs %}
 {% highlight XAML %}
 
-<calendar:SfCalendarDatePicker SelectionHighlightMode="FilledCircle"
-                     TodayHighlightMode="Circle"
+<calendar:SfCalendarDatePicker SelectionHighlightMode="Filled"
+                     SelectionShape="Circle"
                      x:Name="sfCalendarDatePicker"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
-sfCalendarDatePicker.SelectionHighlightMode = CalendarItemHighlightMode.FilledCircle;
-sfCalendarDatePicker.TodayHighlightMode = CalendarItemHighlightMode.Circle;
+sfCalendarDatePicker.SelectionHighlightMode = CalendarItemHighlightMode.Filled;
+sfCalendarDatePicker.SelectionShape = CalendarItemHighlightMode.Circle;
 
 {% endhighlight %}
 {% endtabs %}
