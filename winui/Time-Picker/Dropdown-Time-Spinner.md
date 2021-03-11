@@ -482,3 +482,27 @@ sfTimePicker.FlowDirection = FlowDirection.RightToLeft;
 ![TimePicker flow direction changed to right to left](Dropdown-Time-Spinner_images/FlowDirection.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+
+## DropDown value types
+
+The `TimePicker` control supports 12HourClock and 24HourClock formats. You can change the time format by using `ClockIdentifier` property. The default value of `ClockIdentifier` property is `12HourClock`.
+
+N> Refer [ClockIdentifiers](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.clockidentifiers?view=winrt-19041) page to get more time format types.
+
+{% tabs %}
+{% highlight xaml %}
+
+<calendar:SfTimePicker ClockIdentifier="24HourClock"
+                               x:Name="sfTimePicker"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfTimePicker sfTimePicker = new SfTimePicker();
+sfTimePicker.CalendarIdentifier = "24HourClock";
+
+{% endhighlight %}
+{% endtabs %}
+
+![DatePicker calendar type changed to Hebrew](Dropdown-Time-Spinner_images/ClockIdentifier.png)
+
