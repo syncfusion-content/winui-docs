@@ -61,7 +61,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Custom UI for specific cell in dropdown Calendar
 
-You can change the UI of specific cells in `CalendarDatePicker` by using the [DropDownContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownContentTemplate)[CalendarItem.ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItem.html) property. The `DataContext` of `CalendarItem.ContentTemplate` and `DropDownContentTemplate` is `CalendarDatePicker`. 
+You can change the UI of specific cells in `CalendarDatePicker` by using the [AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties. The `DataContext` of `CalendarItem.ContentTemplate` and `DropDownLayout` is `CalendarDatePicker`. 
 
 {% tabs %}
 {% highlight C# %}
@@ -168,51 +168,47 @@ public class CustomCalendarItemTemplateSelector : DataTemplateSelector
         </DataTemplate>
     </Page.Resources>
     <Grid>
-        <calendar:SfCalendarDatePicker>
-            <calendar:SfCalendarDatePicker.DropDownContentTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <calendar:SfCalendar>
-                            <calendar:SfCalendar.Resources>
-                                <local:CustomCalendarItemTemplateSelector
-                                                x:Key="selector"
-                                                AwardTemplate="{StaticResource awardTemplate}"
-                                                BirthdayTemplate="{StaticResource birthdayTemplate}"
-                                                DefaultTemplate="{StaticResource defaultTemplate}"
-                                                GiftTemplate="{StaticResource giftTemplate}" />
-                                <Style TargetType="calendar:CalendarItem">
-                                    <Setter Property="CornerRadius" Value="5" />
-                                    <Setter Property="Margin" Value="3" />
-                                    <Setter Property="BorderThickness" Value="1" />
-                                    <Setter Property="BorderBrush" Value="LightGray" />
-                                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-                                    <Setter Property="VerticalContentAlignment" Value="Stretch" />
-                                    <Setter Property="ContentTemplate">
-                                        <Setter.Value>
-                                            <DataTemplate>
-                                                <Grid MinWidth="50" MinHeight="40">
-                                                    <ContentControl
-                                                                    Margin="3"
-                                                                    HorizontalAlignment="Left"
-                                                                    VerticalAlignment="Top"
-                                                                    Content="{Binding DisplayText}"
-                                                                    FontSize="10" />
-                                                    <ContentControl
-                                                                    Margin="10"
-                                                                    HorizontalAlignment="Right"
-                                                                    VerticalAlignment="Bottom"
-                                                                    Content="{Binding Date}"
-                                                                    ContentTemplateSelector="{StaticResource selector}" />
-                                                </Grid>
-                                            </DataTemplate>
-                                        </Setter.Value>
-                                    </Setter>
-                                </Style>
-                            </calendar:SfCalendar.Resources>
-                        </calendar:SfCalendar>
-                    </Grid>
-                </DataTemplate>
-            </calendar:SfCalendarDatePicker.DropDownContentTemplate>
+        <calendar:SfCalendarDatePicker Height="35" Width="150" >
+            <FlyoutBase.AttachedFlyout>
+                <editors:DropDownFlyout>
+                    <calendar:SfCalendar BorderThickness="0">
+                        <calendar:SfCalendar.Resources>
+                            <local:CustomCalendarItemTemplateSelector x:Key="selector"
+                    BirthdayTemplate="{StaticResource birthdayTemplate}"
+                    GiftTemplate="{StaticResource giftTemplate}"
+                    AwardTemplate="{StaticResource awardTemplate}"
+                    DefaultTemplate="{StaticResource defaultTemplate}"/>
+                            <Style TargetType="calendar:CalendarItem">
+                                <Setter Property="CornerRadius" Value="5"/>
+                                <Setter Property="Margin" Value="5"/>
+                                <Setter Property="BorderThickness" Value="1"/>
+                                <Setter Property="BorderBrush" Value="LightGray"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+                                <Setter Property="ContentTemplate">
+                                    <Setter.Value>
+                                        <DataTemplate>
+                                            <Grid MinWidth="60" MinHeight="40">
+                                                <ContentControl
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Top"
+                                        Margin="3"
+                                        Content="{Binding DisplayText}"/>
+                                                <ContentControl
+                                        HorizontalAlignment="Right"
+                                        VerticalAlignment="Bottom"
+                                        Margin="10"
+                                        Content="{Binding Date}"
+                                        ContentTemplateSelector="{StaticResource selector}"/>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </calendar:SfCalendar.Resources>
+                    </calendar:SfCalendar>
+                </editors:DropDownFlyout>
+            </FlyoutBase.AttachedFlyout>
         </calendar:SfCalendarDatePicker>
     </Grid>
 

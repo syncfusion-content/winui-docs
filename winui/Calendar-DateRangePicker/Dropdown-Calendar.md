@@ -211,7 +211,7 @@ class ViewModel
 
 ## Change dropdown size
 
-You can change the size of dropdown calendar by using  `DropDownHeight` property. The default value of `DropDownHeight` property is `NaN`.
+You can change the size of dropdown calendar by using `DropDownHeight` property. The default value of `DropDownHeight` property is `NaN`.
 
 {% tabs %}
 {% highlight XAML %}
