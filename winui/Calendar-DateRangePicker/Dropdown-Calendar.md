@@ -97,27 +97,6 @@ sfCalendarDateRangePicker.FirstDayOfWeek = DayOfWeek.Monday;
 
 ![WinUI CalendarDateRangePicker weekdays start from Monday](Dropdown-Calendar_images/FirstDayOfWeek.png)
 
-## Hide days that is out of scope
-
-By default, out of scope days are hidden in drop-down spinner. If you want to show and select the days that are out of the scope of current view, use the `OutOfScopeVisibility` property value as `Enabled` or if you want to only show but not select the days that are out of the scope of current view, set `Disabled`. The default value of `OutOfScopeVisibility` property is `Hidden`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<calendar:SfCalendarDateRangePicker OutOfScopeVisibility="Hidden"
-                               x:Name="sfCalendarDateRangePicker"/>
-
-{% endhighlight %}
-{% highlight C# %}
-
-SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
-sfCalendarDateRangePicker.OutOfScopeVisibility = OutOfScopeVisibility.Hidden;
-
-{% endhighlight %}
-{% endtabs %}
-
-![Display only the current month dates in WinUI CalendarDateRangePicker.](Dropdown-Calendar_images/OutOfScope.png)
-
 ## Showing preset items in dropdown
 
 You can show collection of preset items in dropdown of `SfCalendarDateRangePicker` control using `Preset` property and `PresetTemplate` template. Bind the collection of preset items to be displayed in `Preset` property and set the required template in `PresetTemplate`.
