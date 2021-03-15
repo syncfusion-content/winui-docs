@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles and Templates in SfTreeGrid.
+title: Styles and Templates in | Syncfusion.
 description: Learn How to apply styles and templates in Syncfusion WinUI TreeGrid (SfTreeGrid) control and more details.| Syncfusion | SfTreeGrid 
 platform: winui
 control: SfTreeGrid
