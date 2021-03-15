@@ -152,7 +152,7 @@ Public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-### LoadMore using ISupportIncrementalLoading
+### Load data using ISupportIncrementalLoading
 
 You can fetch the data in some user action instead of scrolling using [IncrementalList.LoadItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.IncrementalList-1.html#Syncfusion_UI_Xaml_Grid_IncrementalList_1_LoadItems_System_Collections_Generic_IEnumerable__0__) method.
 
