@@ -18,7 +18,7 @@ N> `TreeGridColumn.HeaderStyle` takes higher priority than `SfTreeGrid.HeaderSty
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-    <Style TargetType="syncfusion:TreeGridHeaderCell" x:Key="headerStyle">
+    <Style TargetType="treeGrid:TreeGridHeaderCell" x:Key="headerStyle">
         <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Background" Value="LightPink"/>
@@ -46,7 +46,7 @@ N> `TreeGridColumn.HeaderStyle` takes higher priority than `SfTreeGrid.HeaderSty
 {% endhighlight %}
 {% endtabs %}
 
-![Style applied for WinUI Treagrid Headers](Styles-and-Templates_images/Styles-and-Templates_img1.png)
+![Style applied for headers of WinUI TreeGrid](Styles-and-Templates_images/Styles-and-Templates_img1.png)
 
 ### Styling Stacked Headers
 
@@ -55,7 +55,7 @@ The appearance of stacked header can be customized by writing style of TargetTyp
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-    <Style TargetType="syncfusion:TreeGridStackedHeaderCell">
+    <Style TargetType="treeGrid:TreeGridStackedHeaderCell">
         <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Foreground" Value="DarkBlue"/>
@@ -74,13 +74,13 @@ You can apply the different style to stacked header by overriding the [default r
 {% tabs %}
 {% highlight xaml %}
 <Application.Resources>
-    <Style x:Key="style1" TargetType="syncfusion:TreeGridStackedHeaderCell">
+    <Style x:Key="style1" TargetType="treeGrid:TreeGridStackedHeaderCell">
         <Setter Property="Background" Value="LightBlue" />
         <Setter Property="FontFamily" Value="Segoe UI" />
         <Setter Property="FontStyle" Value="Italic" />
         <Setter Property="FontWeight" Value="Bold"/>
     </Style>
-    <Style x:Key="style2" TargetType="syncfusion:TreeGridStackedHeaderCell">
+    <Style x:Key="style2" TargetType="treeGrid:TreeGridStackedHeaderCell">
         <Setter Property="Background" Value="Bisque" />
         <Setter Property="FontFamily" Value="Courier New" />
         <Setter Property="FontStyle" Value="Oblique" />
