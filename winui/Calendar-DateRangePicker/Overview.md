@@ -26,6 +26,4 @@ The WinUI [CalendarDateRangePicker](https://help.syncfusion.com/cr/winui/Syncfus
 * The Control displays the selected date range value in a various formats.
 * Options to change the direction of month while navigation.
 * Drop-down display area in `CalendarDateRangePicker` control is limited using abbreviated days and months.
-* UI customization support for a drop-down each cells.
-* Supports highlighting special dates with icons.
 * Supports blocking a certain dates from selection and user interaction.

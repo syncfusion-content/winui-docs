@@ -207,7 +207,7 @@ sfCalendarDateRangePicker.DropDownHeight = 500;
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDateRangePicker with customized dropdown height and width](Dropdown-Calendar_images/DropDownHeight.png)
+![CalendarDateRangePicker with customized dropdown height](Dropdown-Calendar_images/DropDownHeight.png)
 
 ## Change flow direction
 

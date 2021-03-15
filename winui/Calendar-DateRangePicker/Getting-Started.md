@@ -320,10 +320,10 @@ N> Refer [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.gl
 {% highlight xaml %}
 
 <calendar:SfCalendarDateRangePicker DateFormat="{}{day.integer(2)}"
-                               MonthFormat="{}{month.full}"
-                               DayOfWeekFormat="{}{dayofweek.abbreviated(3)}"
-                               MonthHeaderFormat="{}{month.abbreviated} {year.abbreviated}‎"
-                               x:Name="sfCalendarDateRangePicker"/>
+                                    MonthFormat="{}{month.full}"
+                                    DayOfWeekFormat="{}{dayofweek.abbreviated(3)}"
+                                    MonthHeaderFormat="{}{month.abbreviated} {year.abbreviated}‎"
+                                    x:Name="sfCalendarDateRangePicker"/>
 
 {% endhighlight %}
 {% highlight C# %}
