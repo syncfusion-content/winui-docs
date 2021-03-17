@@ -69,8 +69,8 @@ You can set the context menu to expander using the [SfTreeGrid.ExpanderContextFl
     </MenuFlyout>
 </syncfusion:SfTreeGrid.ExpanderContextFlyout>
 
-{% tabs %}
-{% highlight xaml %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Events
 
