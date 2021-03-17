@@ -18,7 +18,7 @@ Below application culture changed to German.
 {% highlight c# %}
 public MainPage()
 {
-    CultureInfo.CurrentCulture = new CultureInfo("de");
+    CultureInfo.CurrentUICulture = new CultureInfo("de");
 
     InitializeComponent();
 }    
@@ -36,11 +36,11 @@ N> You can get the default resource files of all Syncfusion WinUI libraries from
 
 3) Add [default resource files](https://github.com/syncfusion/winui-controls-localization-resource-files) in the following structure.
 
-![WinUI DataGrid resw file](Localization_images/WinUI-DataGrid-resw-file.png)
+![Resw file in WinUI DataGrid](Localization_images/Resw-file-in-WinUI-DataGrid.png)
  
 4) Now, you can define the key names from default resource files and assign value based on the culture.
 
-![WinUI DataGrid Localization](Localization-images/WinUI-DataGrid-Localization.png)
+![Localization in WinUI DataGrid](Localization_images/Localization-in-WinUI-DataGrid.png)
 
 ![Shows the localized in German for WinUI DataGrid](Localization_images/Shows-the-localized-in-German-for-WinUI-DataGrid.png)
 
@@ -48,7 +48,7 @@ N> You can get the default resource files of all Syncfusion WinUI libraries from
 
     a)Add resource name in .resx file
 	
-![Localize application text in WinUI DataGrid](Localization-images/Localize-application-text-in-WinUI-DataGrid.png)
+![Localize application text in WinUI DataGrid](Localization_images/Localize-application-text-in-WinUI-DataGrid.png)
 
     b)Refer the mentioned resource name in XAML like below.
 	
