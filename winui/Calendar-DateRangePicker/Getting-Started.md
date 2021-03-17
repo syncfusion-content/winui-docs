@@ -129,7 +129,7 @@ sfCalendarDateRangePicker.SelectedRange = null;
 
 You can allow the users to select a date range within the particular range by specifying `MinDate` and `MaxDate` properties. The default value of `MinDate` property is `1/1/1920 12:00:00 AM +00:00` and `MaxDate` property is `12/31/2120 11:59:59 PM +00:00`.
 
-N> Dates not within the minimum and maximum date range is updated with blackout dates appearence.
+N> Dates not within the minimum and maximum date range is updated with blackout dates appearance.
 
 {% tabs %}
 {% highlight xaml %}

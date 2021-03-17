@@ -115,7 +115,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can restrict the users from selecting a date within the particular range by specifying [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MinDate) and [MaxDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MaxDate) properties. The default value of `MinDate` property is `1/1/1920 12:00:00 AM +00:00` and `MaxDate` property is `12/31/2120 11:59:59 PM +00:00`.
 
-N> Dates not within the minimum and maximum date range is updated with blackout dates appearence.
+N> Dates not within the minimum and maximum date range is updated with blackout dates appearance.
 
 {% tabs %}
 {% highlight C# %}
