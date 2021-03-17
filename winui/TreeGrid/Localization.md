@@ -6,7 +6,8 @@ platform: winui
 control: TreeGrid
 documentation: ug
 ---
-# Localization
+
+# Localization in WinUI TreeGrid (SfTreeGrid)
 
 Localization is the process of translating the application resources into different language for the specific cultures. You can localize the treegrid by [adding resource file](https://msdn.microsoft.com/library/aa992030.aspx). Application culture can be changed by setting [CurrentUICulture](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.currentuiculture.aspx) before InitializeComponent method.
 
@@ -16,7 +17,7 @@ Below application culture changed to German.
 {% highlight c# %}
 public MainPage()
 {
-    CultureInfo.CurrentCulture = new CultureInfo("de");
+    CultureInfo.CurrentUICulture = new CultureInfo("de");
 	
     InitializeComponent();
 }
@@ -33,11 +34,11 @@ N> You can get the default resource files of all Syncfusion WinUI libraries from
 
 3) Add [default resource files](https://github.com/syncfusion/winui-controls-localization-resource-files) in the following structure.
 
-![WinUI TreeGrid resw file](Localization_images/WinUI-TreeGrid-resw-file.png)
+![Resw file in WinUI TreeGrid](Localization_images/Resw-file-in-WinUI-TreeGrid.png)
  
 4) Now, you can define the key names from default resource files and assign value based on the culture.
 
-![WinUI TreeGrid Localization](Localization-images/WinUI-TreeGrid-Localization.png)
+![Localization in WinUI TreeGrid](Localization_images/Localization-in-WinUI-TreeGrid.png)
 
 ![Shows the localized in German for WinUI TreeGrid](Localization_images/Shows-the-localized-in-German-for-WinUI-TreeGrid.png)
 
@@ -45,7 +46,7 @@ N> You can get the default resource files of all Syncfusion WinUI libraries from
 
     a)Add resource name in .resx file
 	
-![Localize application text in WinUI TreeGrid](Localization-images/Localize-application-text-in-WinUI-TreeGrid.png)
+![Localize application text in WinUI TreeGrid](Localization_images/Localize-application-text-in-WinUI-TreeGrid.png)
 
     b)Refer the mentioned resource name in XAML like below.
 	
