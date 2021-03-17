@@ -129,6 +129,8 @@ sfCalendarDateRangePicker.SelectedRange = null;
 
 You can allow the users to select a date range within the particular range by specifying `MinDate` and `MaxDate` properties. The default value of `MinDate` property is `1/1/1920 12:00:00 AM +00:00` and `MaxDate` property is `12/31/2120 11:59:59 PM +00:00`.
 
+N> Dates not within the minimum and maximum date range is updated with blackout dates appearence.
+
 {% tabs %}
 {% highlight xaml %}
 
@@ -385,7 +387,16 @@ sfCalendarDateRangePicker.MaxDisplayMode = CalendarDisplayMode.Year;
 
 The `CalendarDateRangePicker` control supports different type of calendars such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using [CalendarIdentifier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_CalendarIdentifier) property. The default value of `CalendarIdentifier` property is `GregorianCalendar`.
 
-N> Refer [CalendarIdentifiers](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.calendaridentifiers?view=winrt-19041) page to get more calendar types.
+You can select the required `CalendarIdentifier` value from below types.
+ * JulianCalendar
+ * GregorianCalendar
+ * HebrewCalendar
+ * HijriCalendar
+ * KoreanCalendar
+ * TaiwanCalendar
+ * ThaiCalendar
+ * UmAlQuraCalendar
+ * PersianCalendar
 
 {% tabs %}
 {% highlight xaml %}

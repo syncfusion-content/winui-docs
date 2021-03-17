@@ -431,7 +431,16 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 The `CalendarDatePicker` control supports different type of calendars such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using [CalendarIdentifier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_CalendarIdentifier) property. The default value of `CalendarIdentifier` property is `GregorianCalendar`.
 
-N> Refer [CalendarIdentifiers](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.calendaridentifiers?view=winrt-19041) page to get more calendar types.
+You can select the required `CalendarIdentifier` value from below types.
+ * JulianCalendar
+ * GregorianCalendar
+ * HebrewCalendar
+ * HijriCalendar
+ * KoreanCalendar
+ * TaiwanCalendar
+ * ThaiCalendar
+ * UmAlQuraCalendar
+ * PersianCalendar
 
 {% tabs %}
 {% highlight xaml %}
@@ -474,3 +483,46 @@ sfCalendarDatePicker.Language = "ar";
 ![Displaying arabic cultured WinUI CalendarDatePicker.](Getting-Started_images/Language.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Formatting)
+
+## Selected date changing notification
+
+You will be notified when selected date is changing in `CalendarDatePicker` by using `DateChanging` event. The `DateChanging` event contains the old and newly selected date in the `OldDate`, `NewDate` properties along with `Cancel` property to cancel the selected date value change.
+
+* `OldDate` - Gets a date which is previously selected.
+* `NewDate` - Gets a date which is currently selected.
+* `Cancel` - Gets or sets whether to cancel the selected date value change.
+
+N> `DateChanging` event is called before the `SelectedDateChanged` event when a date is selected.
+
+{% tabs %}
+{% highlight XAML %}
+
+<calendar:SfCalendarDatePicker Height="30" Width="250" 
+                               x:Name="SfCalendarDatePicker"
+                               DateChanging="SfCalendarDatePicker_DateChanging" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
+sfCalendarDatePicker.DateChanging += SfCalendarDatePicker_DateChanging;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows:
+
+{% tabs %}
+{% highlight C# %}
+
+ private void SfCalendarDatePicker_DateChanging(object sender, Syncfusion.UI.Xaml.Editors.DateChangingEventArgs e)
+{
+    var OldDate = e.OldDate;
+    var NewDate = e.NewDate;
+
+    //Cancel Selected date update
+    e.Cancel = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
