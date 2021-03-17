@@ -40,6 +40,8 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can hide the dropdown button in `CalendarDatePicker` by setting the [ShowDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as `false`. The default value of `ShowDropDownButton` property is `true`.
 
+N> When the dropdown button is hidden, you can still open the dropdown calendar use `ALT + down` keyboard shortcut.
+
 {% tabs %}
 {% highlight XAML %}
 
@@ -292,6 +294,8 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 If you want to select the date from drop down calendar only by clicking the `Ok` button, use the [ShowSubmitButtons](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as `true`. The default value of `ShowSubmitButtons` property is `false`.
 
+N> When the submit buttons are hidden, you can change the `SelectedDate` property value by simply selecting the date.
+
 {% tabs %}
 {% highlight XAML %}
 
@@ -313,7 +317,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Today and selected date highlighting
 
-You can highlight the today and selected date with rectangle and circle shapes. You can customize the selected date cell shape using `SelectionShape` property and use the [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectionHighlightMode) property to update the background of the selected date. The default value of `SelectionShape` property is `Circle` and `SelectionHighlightMode` property is `Outline`.
+You can highlight the today and selected date with rectangle and circle shapes. You can customize the selected date cell shape using `SelectionShape` property and use the [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectionHighlightMode) property to update the background of the selected date. The default value of `SelectionShape` property is `Rectangle` and `SelectionHighlightMode` property is `Outline`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -363,7 +367,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change flow direction
 
-You can change the flow direction of the `Calendar` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
+By default, `SfCalendarDatePicker` control flow direction is updated based on `CalendarIndentifier` property value. You can change the flow direction  of `SfCalendarDatePicker` control and the dropdown calendar layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
 
 {% tabs %}
 {% highlight XAML %}

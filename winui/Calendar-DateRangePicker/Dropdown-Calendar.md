@@ -13,9 +13,9 @@ This section describes how to select a date from dropdown Calendar and its custo
 
 ## Change dropdown alignment
 
-You can change the alignment of the dropdown spinner as full, center, left, right, top or bottom edge by using the `DropDownPlacement` property. The default value of `DropDownPlacement` property is `Auto`.
+You can change the alignment of the dropdown calendar as full, center, left, right, top or bottom edge by using the `DropDownPlacement` property. The default value of `DropDownPlacement` property is `Auto`.
 
-N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then `CalendarDateRangePicker` smartly shifts the spinner alignment.
+N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then `CalendarDateRangePicker` smartly shifts the dropdown calendar alignment.
 
 {% tabs %}
 {% highlight XAML %}
@@ -38,6 +38,8 @@ sfCalendarDateRangePicker.DropDownPlacement = FlyoutPlacementMode.Right;
 
 You can hide the dropdown button in `CalendarDateRangePicker` by setting the `ShowDropDownButton` property value as `false`. The default value of `ShowDropDownButton` property is `true`.
 
+N> When the dropdown button is hidden, you can still open the dropdown calendar use `ALT + down` keyboard shortcut.
+
 {% tabs %}
 {% highlight XAML %}
 
@@ -59,6 +61,8 @@ sfCalendarDateRangePicker.ShowDropDownButton = false;
 
 You can show the submit button in `CalendarDateRangePicker` by setting the `ShowSubmitButtons` property value as `true`. The default value of `ShowSubmitButtons` property is `false`.
 
+N> When the submit buttons are hidden, you can change the `SelectedDate` property value by simply selecting the date.
+
 {% tabs %}
 {% highlight XAML %}
 
@@ -78,7 +82,7 @@ sfCalendarDateRangePicker.ShowSubmitButtons = true;
 
 ## First day of week
 
-By default, Sunday is shown as the first day of the week in a drop-down spinner. If you want to change the first day of week, use the `FirstDayOfWeek` property value. The default value of `FirstDayOfWeek` property is `Sunday`.
+By default, Sunday is shown as the first day of the week in a dropdown calendar. If you want to change the first day of week, use the `FirstDayOfWeek` property value. The default value of `FirstDayOfWeek` property is `Sunday`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -149,6 +153,8 @@ class ViewModel
     </Grid>
 </Page>
 
+Add the `Syncfusion.UI.Xaml.Calendar` namespace reference in code behind.
+
 {% endhighlight %}
 {% highlight c# %}
 
@@ -159,22 +165,22 @@ class ViewModel
     if (listBox.SelectedItem.ToString() == "This Week")
     {
         DateTimeOffset startdate = DateTimeOffset.Now.AddDays(-(DateTimeOffset.Now.DayOfWeek - sfCalendarDateRangePicker.FirstDayOfWeek));
-        this.sfCalendarDateRangePicker.SelectedRange = new Syncfusion.UI.Xaml.Calendar.DateTimeOffsetRange(startdate, startdate.AddDays(6));
+        this.sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(startdate, startdate.AddDays(6));
     }
     else if (listBox.SelectedItem.ToString() == "This Month")
     {
         DateTimeOffset startdate = DateTimeOffset.Now.AddDays(-(DateTimeOffset.Now.Date.Day - 1));
-        this.sfCalendarDateRangePicker.SelectedRange = new Syncfusion.UI.Xaml.Calendar.DateTimeOffsetRange(startdate, startdate.AddDays(DateTime.DaysInMonth(startdate.Year, startdate.Month) - 1));
+        this.sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(startdate, startdate.AddDays(DateTime.DaysInMonth(startdate.Year, startdate.Month) - 1));
     }
     else if (listBox.SelectedItem.ToString() == "Last Month")
     {
         DateTimeOffset startdate = DateTimeOffset.Now.AddMonths(1).AddDays(-(DateTimeOffset.Now.Date.Day - 1));
-        this.sfCalendarDateRangePicker.SelectedRange = new Syncfusion.UI.Xaml.Calendar.DateTimeOffsetRange(startdate, startdate.AddDays(DateTime.DaysInMonth(startdate.Year, startdate.Month) - 1));
+        this.sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(startdate, startdate.AddDays(DateTime.DaysInMonth(startdate.Year, startdate.Month) - 1));
     }
     else if (listBox.SelectedItem.ToString() == "This Year")
     {
         DateTimeOffset startdate = DateTimeOffset.Now.AddMonths(-(DateTimeOffset.Now.Month - 1)).AddDays(-(DateTimeOffset.Now.Date.Day - 1));
-        this.sfCalendarDateRangePicker.SelectedRange = new Syncfusion.UI.Xaml.Calendar.DateTimeOffsetRange(startdate, startdate.AddMonths(11).AddDays(DateTime.DaysInMonth(startdate.Year, startdate.Month) - 1));
+        this.sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(startdate, startdate.AddMonths(11).AddDays(DateTime.DaysInMonth(startdate.Year, startdate.Month) - 1));
     }
     else
     {
@@ -191,6 +197,8 @@ class ViewModel
 ## Change dropdown size
 
 You can change the size of dropdown calendar by using `DropDownHeight` property. The default value of `DropDownHeight` property is `NaN`.
+
+N> The dropdown size will be automatically resized based on the calendar and preset items hosted in it.
 
 {% tabs %}
 {% highlight XAML %}
@@ -211,7 +219,7 @@ sfCalendarDateRangePicker.DropDownHeight = 500;
 
 ## Change flow direction
 
-You can change the flow direction of the `Calendar` layout in dropdown from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
+By default, `SfCalendarDateRangePicker` control flow direction is updated based on `CalendarIndentifier` property value. You can change the flow direction  of `SfCalendarDateRangePicker` control and the dropdown calendar layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
 
 {% tabs %}
 {% highlight XAML %}
