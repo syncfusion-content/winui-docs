@@ -485,9 +485,12 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## DropDown value types
 
-The `TimePicker` control supports 12HourClock and 24HourClock formats. You can change the time format by using `ClockIdentifier` property. The default value of `ClockIdentifier` property is `12HourClock`.
+The `TimePicker` control supports 12 hours and 24 hours formats. You can change the time format by using `ClockIdentifier` property. The default value of `ClockIdentifier` property is `12HourClock`.
 
-N> Refer [ClockIdentifiers](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.clockidentifiers?view=winrt-19041) page to get more time format types.
+You can select the required `ClockIdentifier` value from below formats.
+
+* 12HourClock
+* 24HourClock 
 
 {% tabs %}
 {% highlight xaml %}

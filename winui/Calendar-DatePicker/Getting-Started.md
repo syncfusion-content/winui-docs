@@ -434,6 +434,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 The `CalendarDatePicker` control supports different type of calendars such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using [CalendarIdentifier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_CalendarIdentifier) property. The default value of `CalendarIdentifier` property is `GregorianCalendar`.
 
 You can select the required `CalendarIdentifier` value from below types.
+
  * JulianCalendar
  * GregorianCalendar
  * HebrewCalendar
@@ -443,6 +444,8 @@ You can select the required `CalendarIdentifier` value from below types.
  * ThaiCalendar
  * UmAlQuraCalendar
  * PersianCalendar
+
+N> The value in `CalendarDatePicker` control textbox is updated based on `CalendarIdentifier` property calendar type.
 
 {% tabs %}
 {% highlight xaml %}
