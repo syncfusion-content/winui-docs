@@ -435,35 +435,3 @@ sfCalendarDateRangePicker.Language = "ar";
 {% endtabs %}
 
 ![Displaying arabic cultured WinUI CalendarDateRangePicker.](Getting-Started_images/LanguageView.png)
-
-## Customize the dropdown button
-
-If you want to customize the dropdown button appearance in `SfCalendarDateRangePicker`, you can use the `DropDownButtonTemplate` property to customize as per requirement. 
-
-{% tabs %}
-{% highlight xaml %}
-
-<calendar:SfCalendarDateRangePicker  x:Name="sfCalendarDateRangePicker" Height="35" Width="200"
-                                            HorizontalAlignment="Center" VerticalAlignment="Center" >
-    <calendar:SfCalendarDateRangePicker.DropDownButtonTemplate>
-        <DataTemplate>
-            <Grid>
-                <Button Height="35" Width="35" Background="Transparent">
-                    <Path Stroke="Black" Height="20" Width="20" Stretch="Uniform"
-                                  Data="M19.613996,25.554001L19.613996,29.508995 25.65998,29.508995 25.65998,25.554001z M10.704001,25.554001L10.704001,29.508995 17.393996,29.508995 17.393996,
-                                  25.554001z M2.4899878,25.554001L2.4899878,29.508995 8.4840013,29.508995 8.4840013,25.554001z M19.613996,19.332001L19.613996,23.332001 25.65998,23.332001 25.65998,
-                                  19.332001z M10.704001,19.332001L10.704001,23.332001 17.393996,23.332001 17.393996,19.332001z M2.4899878,19.332001L2.4899878,23.332001 8.4840013,23.332001 8.4840013,
-                                  19.332001z M19.613996,13.155998L19.613996,17.111 25.65998,17.111 25.65998,13.155998z M10.704001,13.155998L10.704001,17.111 17.393996,17.111 17.393996,13.155998z M2.4899878,
-                                  13.155998L2.4899878,17.111 8.4840013,17.111 8.4840013,13.155998z M0,10.666L28.148961,10.666 28.148961,31.999001 0,31.999001z M0,2.961998L5.1260025,2.961998 5.1260025,
-                                  6.5039978 9.394004,6.5039978 9.394004,2.961998 18.828994,2.961998 18.828994,6.5039978 23.097972,6.5039978 23.097972,2.961998 28.149999,2.961998 28.149999,8.4430008 0,
-                                  8.4430008z M20.074994,0L21.852977,0 21.852977,5.2579994 20.074994,5.2579994z M6.3709966,0L8.1490099,0 8.1490099,5.2579994 6.3709966,5.2579994z" />
-                </Button>
-            </Grid>
-        </DataTemplate>    
-    </calendar:SfCalendarDateRangePicker.DropDownButtonTemplate>
-</calendar:SfCalendarDateRangePicker>
-
-{% endhighlight %}
-{% endtabs %}
-
-![Customized dropdown button of SfCalendarDateRangePicker](Getting-Started_images/DropDownCustomized.png)

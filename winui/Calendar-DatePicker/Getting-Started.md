@@ -165,7 +165,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can restrict the users from selecting a date within the particular range by specifying [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_MinDate) and [MaxDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_MaxDate) properties. The default value of `MinDate` property is `1/1/1920 12:00:00 AM +00:00` and `MaxDate` property is `12/31/2120 11:59:59 PM +00:00`.
 
-N> Dates not within the minimum and maximum date range is updated with blackout dates appearance.
+N> Dates that appears outside the minimum and maximum date range will be disabled (blackout).
 
 {% tabs %}
 {% highlight xaml %}
@@ -491,11 +491,11 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Selected date changing notification
 
-You will be notified when selected date is changing in `CalendarDatePicker` by using `DateChanging` event. The `DateChanging` event contains the old and newly selected date in the `OldDate`, `NewDate` properties along with `Cancel` property to cancel the selected date value change.
+The `DateChanging` event will be triggered, after date selection and before `SelectedDate` property update. If the change is considered invalid, it can be canceled. The `DateChanging` event contains the following properties.
 
 * `OldDate` - Gets a date which is previously selected.
 * `NewDate` - Gets a date which is currently selected.
-* `Cancel` - Gets or sets whether to cancel the selected date value change.
+* `Cancel` - Gets or sets whether to cancel the selected date value update.
 
 N> `DateChanging` event is called before the `SelectedDateChanged` event when a date is selected.
 
