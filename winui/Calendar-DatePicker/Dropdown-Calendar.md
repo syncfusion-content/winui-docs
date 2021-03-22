@@ -272,7 +272,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 If you want to select the date from drop down calendar only by clicking the `Ok` button, use the [ShowSubmitButtons](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as `true`. The default value of `ShowSubmitButtons` property is `false`.
 
-N> When the submit buttons are hidden, you can change the `SelectedDate` property value by simply selecting the date.
+N> When the submit buttons are hidden, `SelectedDate` property will be updated as soon you choose start and end date from dropdown.
 
 {% tabs %}
 {% highlight XAML %}
@@ -296,6 +296,8 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 ## Today and selected date highlighting
 
 You can highlight the today and selected date with rectangle and circle shapes. You can customize the selected date cell shape using `SelectionShape` property and use the [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectionHighlightMode) property to update the background of the selected date. The default value of `SelectionShape` property is `Rectangle` and `SelectionHighlightMode` property is `Outline`.
+
+The appearance of today's date is highlighted background when `SelectionHighlightMode` value is `Outline` by default and upon selection. The appearance of today's date is highlighted background when `SelectionHighlightMode` value is `Filled` upon selection and highlighted foreground by default. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -346,6 +348,8 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 ## Change flow direction
 
 By default, `SfCalendarDatePicker` control flow direction is updated based on `CalendarIdentifier` property value. You can change the flow direction  of `SfCalendarDatePicker` control and the dropdown calendar layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
+
+N> When `CalendarIdentifier` and `FlowDirection` properties value are changed, `FlowDirection` property is given precendence.
 
 {% tabs %}
 {% highlight XAML %}
