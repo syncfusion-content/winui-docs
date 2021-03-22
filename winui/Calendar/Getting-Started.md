@@ -92,6 +92,13 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 By default, `Calendar` control allows you to select single date at a time. If you want to select multiple dates from different month, year or decade or from century, use the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionMode) property value as `Multiple`. You can gets the selected dates from the [SelectedDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDates) collection.
 
+You can select required value for `SelectionMode` property from below values.
+
+* **None** - Prevents from selecting a date.
+* **Single** - Allows to select a single date.
+* **Multiple** - Allows to select multiple dates.
+* **Range** -  Allows to select range of dates.
+
 {% tabs %}
 {% highlight xaml %}
 
@@ -115,12 +122,14 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can restrict the users from selecting a date within the particular range by specifying [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MinDate) and [MaxDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MaxDate) properties. The default value of `MinDate` property is `1/1/1920 12:00:00 AM +00:00` and `MaxDate` property is `12/31/2120 11:59:59 PM +00:00`.
 
+N> Dates not within the minimum and maximum date range is updated with blackout dates appearance.
+
 {% tabs %}
 {% highlight C# %}
 
 SfCalendar sfCalendar = new SfCalendar();
-sfCalendar.MinDate = new DateTimeOffset(new DateTime(2021, 01, 5));
-sfCalendar.MaxDate = new DateTimeOffset(new DateTime(2021, 01, 27));
+sfCalendar.MinDate = new DateTimeOffset(new DateTime(2021, 03, 9));
+sfCalendar.MaxDate = new DateTimeOffset(new DateTime(2021, 01, 23));
 
 {% endhighlight  %}
 {% endtabs %}
@@ -549,7 +558,16 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 The `Calendar` control supports different type of calendars, such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using [CalendarIdentifier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_CalendarIdentifier) property. The default value of `CalendarIdentifier` property is `GregorianCalendar`.
 
-N> Refer [CalendarIdentifiers](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.calendaridentifiers?view=winrt-19041) page to get more calendar types.
+You can select the required `CalendarIdentifier` value from below types.
+ * JulianCalendar
+ * GregorianCalendar
+ * HebrewCalendar
+ * HijriCalendar
+ * KoreanCalendar
+ * TaiwanCalendar
+ * ThaiCalendar
+ * UmAlQuraCalendar
+ * PersianCalendar
 
 {% tabs %}
 {% highlight xaml %}
@@ -595,21 +613,21 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Today and selected date highlighting
 
-You can highlight the today and selected date with different shapes such as rectangle, filled rectangle, circle and filled circle. You can use the [TodayHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_TodayHighlightMode) property to highlight the today date and use the [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionHighlightMode) property to highlight the selected date. The default value of `TodayHighlightMode` property is `FilledRectangle` and `SelectionHighlightMode` property is `Rectangle`.
+You can highlight the today and selected date with rectangle and circle shapes. You can customize the selected date cell shape using `SelectionShape` property and use the [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionHighlightMode) property to update the background of the selected date. The default value of `SelectionShape` property is `Rectangle` and `SelectionHighlightMode` property is `Outline`.
 
 {% tabs %}
 {% highlight XAML %}
 
-<calendar:SfCalendar SelectionHighlightMode="FilledCircle"
-                     TodayHighlightMode="Circle"
+<calendar:SfCalendar SelectionHighlightMode="Filled"
+                     SelectionShape="Circle"
                      x:Name="sfCalendar"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfCalendar sfCalendar = new SfCalendar();
-sfCalendar.SelectionHighlightMode = CalendarItemHighlightMode.FilledCircle;
-sfCalendar.TodayHighlightMode = CalendarItemHighlightMode.Circle;
+sfCalendar.SelectionHighlightMode = SelectionHighlightMode.FilledCircle;
+sfCalendar.SelectionShape = SelectionShape.Circle;
 
 {% endhighlight %}
 {% endtabs %}
