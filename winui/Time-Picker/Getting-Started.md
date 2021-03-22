@@ -196,7 +196,7 @@ private void SfTimePicker_TimeChanged(DependencyObject d, DependencyPropertyChan
 {% endhighlight %}
 {% endtabs %}
 
-## Cancel a date that is being changed
+## Cancel a time that is being changed
 
 The `TimeChanging` event will be triggered after time selection and before `SelectedTime` property is updated. If the change is considered invalid, it can be canceled. The `TimeChanging` event contains the following properties.
 
