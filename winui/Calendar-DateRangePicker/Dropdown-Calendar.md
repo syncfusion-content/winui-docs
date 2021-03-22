@@ -221,7 +221,7 @@ sfCalendarDateRangePicker.DropDownHeight = 500;
 
 By default, `SfCalendarDateRangePicker` control flow direction is updated based on `CalendarIdentifier` property value. You can change the flow direction of dropdown calendar layout in `SfCalendarDateRangePicker` from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
 
-N> When `CalendarIdentifier` and `FlowDirection` properties value are changed, `FlowDirection` property is given precendence.
+N> When `CalendarIdentifier` and `FlowDirection` properties value are changed, `FlowDirection` property is given precedence.
 
 {% tabs %}
 {% highlight XAML %}
