@@ -343,14 +343,14 @@ sfCalendarDateRangePicker.MonthHeaderFormat = "{month.abbreviated} {year.abbrevi
 
 ## Restrict the end range value selection
 
-You can restrict the end range value selection of `SelectedRange` property value by using `MinDayCount` and `MaxDayCount` properties.
+You can restrict the end range value selection of `SelectedRange` property value by using `MinDatesCountInRange` and `MaxDatesCountInRange` properties.
 
 {% tabs %}
 {% highlight C# %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
-sfCalendarDateRangePicker.MaxDayCount = 10;
-sfCalendarDateRangePicker.MaxDayCount = 5;
+sfCalendarDateRangePicker.MaxDatesCountInRange = 10;
+sfCalendarDateRangePicker.MinDatesCountInRange = 5;
 
 {% endhighlight  %}
 {% endtabs %}

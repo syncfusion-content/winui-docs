@@ -196,6 +196,48 @@ private void SfTimePicker_TimeChanged(DependencyObject d, DependencyPropertyChan
 {% endhighlight %}
 {% endtabs %}
 
+## Cancel a date that is being changed
+
+The `TimeChanging` event will be triggered after time selection and before `SelectedTime` property is updated. If the change is considered invalid, it can be canceled. The `TimeChanging` event contains the following properties.
+
+* `OldTime` - Gets a time which is previously selected.
+* `NewTime` - Gets a time which is currently selected.
+* `Cancel` - Gets or sets whether to cancel the selected time value update.
+
+N> `TimeChanging` event is called before the `TimeChanged` event when a time is selected.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editor:SfTimePicker Height="35" Width="150" TImeChanging="SfTimePicker_TimeChanging" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfTimePicker sfTimePicker = new SfTimePicker();
+sfTimePicker.TimeChanging += SfTimePicker_TimeChanging;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows:
+
+{% tabs %}
+{% highlight C# %}
+
+ private void SfTimePicker_TimeChanging(object sender, Syncfusion.UI.Xaml.Editors.TimeChangingEventArgs e)
+{
+    var OldTime = e.OldTime;
+    var NewTime = e.NewTime;
+
+    //Cancel Selected time update
+    e.Cancel = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+
 ## Change time display format
 
  You can edit and display the selected time with various formatting like hour, minutes, seconds and meridiem formats by using the [FormatString](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_FormatString) property. The default value of `FormatString` property is `hh:mm tt`.
