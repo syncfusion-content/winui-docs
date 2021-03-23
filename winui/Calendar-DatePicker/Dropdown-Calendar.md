@@ -297,7 +297,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can highlight the today and selected date with rectangle and circle shapes. You can customize the selected date cell shape using `SelectionShape` property and use the [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectionHighlightMode) property to update the background of the selected date. The default value of `SelectionShape` property is `Rectangle` and `SelectionHighlightMode` property is `Outline`.
 
-The appearance of today's date is highlighted background when `SelectionHighlightMode` value is `Outline` by default and upon selection. The appearance of today's date is highlighted background when `SelectionHighlightMode` value is `Filled` upon selection and highlighted foreground by default. 
+When `SelectionHighlightMode` value is `Outline`, today's date will have highlighted background as default and on selection. When `SelectionHighlightMode` value is `Filled`, today's date will have highlighted foreground as default and highlighted background when selected. 
 
 {% tabs %}
 {% highlight XAML %}
