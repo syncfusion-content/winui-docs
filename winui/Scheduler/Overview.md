@@ -11,6 +11,8 @@ documentation: ug
 
 The Syncfusion WinUI Scheduler displays appointments in different views and allows user to create and manage appointments. Its rich feature set includes functionalities like viewing daily/all day/spanned appointments, complete customization using custom Templates, efficient performance, Data binding to different sources.
 
+![WinUI scheduler WeekView](Overview_Images/WeekView.png)
+
 ## Key features
 
 * **Built-in Views** - The Scheduler provides eight different types of views such as Day, Week, WorkWeek, TimelineDay, TimelineWeek, TimelineWorkWeek, TimelineMonth, and Month.
@@ -19,9 +21,13 @@ The Syncfusion WinUI Scheduler displays appointments in different views and allo
 
 * **Recurrence Events** - Easily configure recurring events on a daily, weekly, monthly, or yearly basis. You can also skip or change the occurrence of a recurring appointment.
 
+![Recurring Events with exceptions in WinUI scheduler](Overview_Images/RecurringException.png)
+
 * **Appointment Mapping** - SfScheduler control supports to map any collection that implements the IEnumerable interface to populate appointments.
 
 * **Appointment Editor** - You can easily create, edit, or delete appointments using the built-in appointment editor.
+
+![Appointment editor in WinUI scheduler](Overview_Images/AppointmentEditor.png)
 
 * **Timezone** - Display appointments created in various time zones in the system time zone. Appointment start and end times are also automatically adjusted and displayed based on the daylight savings time.
 
