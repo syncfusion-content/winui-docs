@@ -579,7 +579,7 @@ You can add the recurrence exception appointments and recurrence exception dates
 ### Delete occurrence from the recurrence pattern appointment or adding exception dates to recurrence pattern appointment
 
 You can delete any occurrence which is an exception from the recurrence pattern appointment by using the `RecurrenceExceptionDates` property of `AppointmentMapping` class which is used to map the exception dates to the schedule recurrence appointment. The deleted occurrence date will be considered as recurrence exception date.
-To add the exception dates in the recurrence series of custom appointment, add the `RecurrenceExceptionDates,` `EventName,` `From,` `To,` `Color,` `RecurrenceRuleproperties` to the custom class `Meeting.`
+To add the exception dates in the recurrence series of custom appointment, add the `RecurrenceExceptionDates,` `EventName,` `From,` `To,` `Color,` `RecurrenceRule` properties to the custom class `Meeting.`
 
 {% tabs %}
 {% highlight c# %}
