@@ -399,3 +399,5 @@ The `Scheduler` supports to show the busy indicator by using the `ShowBusyIndica
 this.Schedule.ShowBusyIndicator = true;   
 {% endhighlight %}  
 {% endtabs %}  
+
+![WinUI scheduler BusyIndicator](GettingStarted_Images/BusyIndicator.png)
