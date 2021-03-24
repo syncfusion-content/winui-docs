@@ -400,8 +400,8 @@ SfRadialGauge sfRadialGauge = new SfRadialGauge();
 
 RadialAxis radialAxis = new RadialAxis();
 radialAxis.ShowAxisLine = false;
-radialAxis.TickPosition = TickElementsPosition.Outside;
-radialAxis.LabelPosition = LabelsPosition.Outside;
+radialAxis.TickPosition = GaugeElementPosition.Outside;
+radialAxis.LabelPosition = GaugeLabelsPosition.Outside;
 radialAxis.StartAngle = 270;
 radialAxis.EndAngle = 270;
 radialAxis.UseRangeColorForAxis = true;

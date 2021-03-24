@@ -530,7 +530,7 @@ this.Content = sfRadialGauge;
 
 **Background Content Support**
 
-[`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) allows you to add any `FrameworkElement` as its background using the [`BackgroundContent`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html#Syncfusion_UI_Xaml_Gauges_RadialAxis_BackgroundContent) property.
+[`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) allows you to add any element as its background using the [`BackgroundContent`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html#Syncfusion_UI_Xaml_Gauges_RadialAxis_BackgroundContent) property.
 
 {% tabs %}
 
@@ -875,7 +875,7 @@ The radial axis allows to position the labels either inside or outside of the ax
 SfRadialGauge sfRadialGauge = new SfRadialGauge();
 
 RadialAxis radialAxis = new RadialAxis();
-radialAxis.LabelPosition = LabelsPosition.Outside;
+radialAxis.LabelPosition = GaugeLabelsPosition.Outside;
 sfRadialGauge.Axes.Add(radialAxis);
 
 this.Content = sfRadialGauge;
@@ -1271,7 +1271,7 @@ The [`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gaug
 SfRadialGauge sfRadialGauge = new SfRadialGauge();
 
 RadialAxis radialAxis = new RadialAxis();
-radialAxis.TickPosition = TickElementsPosition.Outside;
+radialAxis.TickPosition = GaugeElementPosition.Outside;
 sfRadialGauge.Axes.Add(radialAxis);
 
 this.Content = sfRadialGauge;
