@@ -230,7 +230,7 @@ The `SpecialTimeRegion` can be customized in a Date basis by setting the value o
 
 ## Full screen scheduler
 
-Scheduler time interval height can be adjusted based on screen height by changing the value of `TimeIntervalSize` property of `DaysViewSettings` to -1. It will auto-fit to the screen height and width.
+Scheduler time interval size can be adjusted based on screen height by changing the value of `TimeIntervalSize` property of `DaysViewSettings` to -1. It will auto-fit to the screen height and width.
 
 {% tabs %}
 {% highlight xaml %}
@@ -246,3 +246,156 @@ this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.DaysViewSettings.TimeIntervalSize = -1;
 {% endhighlight %}
 {% endtabs %}
+
+![WinUI scheduler Full Screen Scheduler](DayandWeekViews_Images/FullScreenScheduler.png)
+
+## Change time ruler size
+
+You can customize the size of the time ruler view where the labels mentioning the time are placed by using the `TimeRulerSize` property of `DayViewSettings`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" >
+    <syncfusion:SfScheduler.DaysViewSettings>
+        <syncfusion:DaysViewSettings   
+            TimeRulerSize="100">
+        </syncfusion:DaysViewSettings>
+    </syncfusion:SfScheduler.DaysViewSettings>
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% highlight c# %}
+this.Schedule.ViewType = SchedulerViewType.Week;
+this.Schedule.DaysViewSettings.TimeRulerSize = 100;
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI scheduler Change Time Ruler Size](DayandWeekViews_Images/ChangeTimeRulerSize.png)
+
+## Minimum appointment duration
+
+The `MinimumAppointmentDuration` property in `DayViewSettings` is to set an arbitrary height to appointments when it has minimum duration,in day, week, work week views, so that the subject can be readable.
+
+{% tabs %}
+{% highlight c# %}
+this.Schedule.ViewType = SchedulerViewType.Week;
+this.Schedule.DaysViewSettings.MinimumAppointmentDuration = new System.TimeSpan(0, 120, 0);
+{% endhighlight %}
+{% endtabs %}
+
+N>
+* The `MinimumAppointmentDuration` value will be set, when an appointment duration value lesser than `MinimumAppointmentDuration`.
+* Appointment duration value will be set, when the appointment duration value greater than `MinimumAppointmentDuration`.
+* `TimeInterval` value will be set, when `MinimumAppointmentDuration` greater than `TimeInterval` with lesser appointment duration.
+* All day Appointment does not support `MinimumAppointmentDuration`.
+
+## Time text formatting
+
+You can customize the format for the labels mentioning the time, by setting the `TimeRulerFormat` property of `DayViewSettings` in Scheduler.
+
+{% tabs %}
+{% highlight c# %}
+this.Schedule.ViewType = SchedulerViewType.Week;
+this.Schedule.DaysViewSettings.TimeRulerFormat = "hh mm";
+this.Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI scheduler Time Text Formatting](DayandWeekViews_Images/TimeTextFormatting.png)
+
+## View header
+
+You can customize the default appearance of view header in day, week, work week views by setting `ViewHeaderDateFormat`, `ViewHeaderHeight`, `ViewHeaderDayFormat` and `ViewHeaderTemplate` of `DaysViewSettings`.
+
+### View header text formatting
+
+You can customize the date and day format of ViewHeader by using the `ViewHeaderDateFormat` and `ViewHeaderDayFormat` properties of `DaysViewSettings`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+    <syncfusion:SfScheduler.DaysViewSettings>
+        <syncfusion:DaysViewSettings 
+            ViewHeaderDayFormat="ddd"
+            ViewHeaderDateFormat="dd"/>
+    </syncfusion:SfScheduler.DaysViewSettings>
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% highlight c# %}
+this.Schedule.ViewType = SchedulerViewType.Week;
+this.Schedule.DaysViewSettings.ViewHeaderDateFormat = "dd";
+this.Schedule.DaysViewSettings.ViewHeaderDayFormat = "ddd";
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI scheduler View header text formatting](DayandWeekViews_Images/ViewHeaderTextFormatting.png)
+
+### View header height
+
+You can customize the height of the ViewHeader in day , week , work week views by setting `ViewHeaderHeight` property of `DaysViewSettings` in SfScheduler.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+    <syncfusion:SfScheduler.DaysViewSettings>
+        <syncfusion:DaysViewSettings
+            ViewHeaderHeight="100"/>
+    </syncfusion:SfScheduler.DaysViewSettings>
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% highlight c# %}
+this.Schedule.ViewType = SchedulerViewType.Week;
+this.Schedule.DaysViewSettings.ViewHeaderHeight = 100;
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI scheduler View header text formatting](DayandWeekViews_Images/ViewHeaderHeight.png)
+
+### View header appearance customization
+
+You can customize the default appearance of view header by setting `ViewHeaderTemplate` property of `DaysViewSettings` in SfScheduler.
+
+{% tabs %}
+{% highlight xaml %}
+<Page.Resources>
+    <DataTemplate x:Key="viewHeaderTemplate">
+        <StackPanel Background="Transparent"  
+            Width="Auto"
+            VerticalAlignment="Center" 
+            HorizontalAlignment="Stretch"
+            Orientation="Vertical">
+        <TextBlock 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Center" 
+            Foreground="#8551F2"
+            FontFamily="Arial"
+            Text="{Binding DateText}"
+            FontSize="25"
+            TextTrimming="CharacterEllipsis"
+            TextWrapping="Wrap" />
+        <TextBlock 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Center" 
+            Foreground="#8551F2"
+            FontFamily="Arial"
+            Text="{Binding DayText}"
+            FontSize="10"
+            TextTrimming="CharacterEllipsis"
+            TextWrapping="Wrap" />
+        </StackPanel>
+    </DataTemplate>
+</Page.Resources>
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+    <syncfusion:SfScheduler.DaysViewSettings>
+        <syncfusion:DaysViewSettings 
+            ViewHeaderTemplate="{StaticResource viewHeaderTemplate}" />
+    </syncfusion:SfScheduler.DaysViewSettings>
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI scheduler View header appearance customization](DayandWeekViews_Images/ViewHeaderAppearanceCustomization.png)
