@@ -357,4 +357,4 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WinUI-Linear-Gauge-Getting-Started-)
