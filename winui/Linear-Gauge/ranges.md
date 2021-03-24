@@ -7,7 +7,7 @@ control: SfLinearGauge
 documentation: ug
 ---
 
-# Range Feature in WinUI Linear Gauge (SfLinearGauge)
+# Linear Range in the  WinUI Linear Gauge (SfLinearGauge)
 
 Linear gauge range is a visual element that helps to quickly visualize where a value falls on the axis.
 
@@ -310,9 +310,9 @@ this.Content = sfLinearGauge;
 
 ![range color to axis element](images/range/range_axislabels.png)
 
-## Range Child support
+## Range child content support
 
-Range allows you to add any element as its child using the [`Child`]() property
+Range allows you to add any content as its child using the [`Child`]() property
 
 {% tabs %}
 
