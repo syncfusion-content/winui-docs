@@ -9,13 +9,13 @@ documentation: ug
 
 # Linear axis Feature in WinUI Linear Gauge (SfLinearGauge)
 
-The `Linear axis` is a linear arc in which a set of values are displayed along a linear or custom scale based on the design requirements. Axis elements such as  labels, ticks and axis line can be easily customized with built-in properties.
+The `Linear axis` is a linear scale, where a set of values can be plotted along a linear or custom scale based on the design requirements. Axis elements such as  labels, ticks and axis line can be easily customized with built-in properties.
 
 ## Axis customization
 
 **Setting axis minimum and maximum value** 
 
-The `Minimum` and `Maximum` properties of an axis can be used to customize the axis value range.The default value of `Minimum` is 0 and the default value of `Maximum` is 100.
+The `Minimum` and `Maximum` properties of an axis can be used to customize the axis value range. The default value of [`Minimum`]() is 0 and the default value of `Maximum` is 100.
 
 {% tabs %}
 
@@ -207,9 +207,9 @@ this.Content = sfLinearGauge;
 
 ![axis line width](images/axis/axis_strokeThickness.png)
 
-**Setting axis line stroke brush**
+**Setting axis line stroke color**
 
-To fill the brush to axis line using the `AxisLineStroke` property of linear axis. 
+To apply the color to the axis line using the `AxisLineStroke` property of linear axis. 
 
 {% tabs %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # WinUI Linear Gauge Overview
 
-The WinUI Linear Gauge is a data visualization control that can be used to display data on a linear scale in either horizontal or vertical orientation.
+The WinUI Linear Gauge control is a multipurpose data visualization control that displays numerical values on a linear scale horizontally or vertically. 
 
 ![Overview WinUI linear gauge](images/overview/gauge_overview.png)
 
