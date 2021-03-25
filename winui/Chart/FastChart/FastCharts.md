@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fast Series | SfChart | WinUI | Syncfusion
-description: This section explains the different types of fast charts, including FastLine, FastLineBitmap, FastColumnBitmap, FastScatterBitmap and its properties.
+description: This section explains the different types of fast charts, including FastLine, FastLineBitmap, FastColumnBitmap, FastScatterBitmap, FastStepLineBitmap and its properties.
 platform: WinUI
 control: SfChart
 documentation: ug
