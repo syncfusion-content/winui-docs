@@ -11,7 +11,7 @@ documentation: ug
 
 A fast series is a special kind of series that can render a collection with huge number of data points. Fast series is rendered using a polyline segment.
 
-## Fast Line
+## FastLine Chart
 
 The [`FastLineSeries`]() is a special kind of line series that can render a collection with huge number of datapoints. Fast line is rendered using polyline segment. 
 

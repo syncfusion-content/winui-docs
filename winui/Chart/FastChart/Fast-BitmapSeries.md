@@ -11,7 +11,7 @@ documentation: ug
 
 A fast bitmap series is a special kind of series that can render a collection with huge number of data points. A fast bitmap series displays a series of segments rendered using WritableBitmap. 
 
-## Fast Line Bitmap 
+## FastLineBitmap Chart
 
 [`FastLineBitmapSeries`]() displays a series of line segments rendered using WritableBitmap. The advantage of FastLineBitmapSeries is, its renders a million data point in a fraction of seconds.
 
@@ -84,7 +84,7 @@ chart.Series.Add(series);
 ![AntiAliasing support for fast line bitmap chart in WinUI](FastChart_images/fastlinebitmap_chart_antialiasing.png)
 
 
-## Fast Column Bitmap
+## FastColumnBitmap Chart
 
 [`FastColumnBitmapSeries`]() is used to boost up the performance of the column series.
 
@@ -120,7 +120,7 @@ chart.Series.Add(series);
 ![FastColumnBitmap chart type in WinUI](FastChart_images/fastcolumnbitmap_chart.png)
 
 
-## Fast Bar Bitmap
+## FastBarBitmap Chart
 
 [`FastBarBitmapSeries`]() is used to boost up the performance of the bar series.
 
@@ -156,7 +156,7 @@ chart.Series.Add(series);
 ![FastBarBitmap chart type in WinUI](FastChart_images/fastbarbitmap_chart.png)
 
 
-## Fast Scatter Bitmap
+## FastScatterBitmap Chart
 
 [`FastScatterBitmapSeries`]() used to render high number scatter points. The [`ScatterHeight`]() and [`ScatterWidth`]() also available as in ScatterSeries. [`ShapeType`]() is used to change the rendering shape of fast scatter bitmap series. The available shapes are [`Cross`](), [`Diamond`](), [`Ellipse`](), [`Hexagon`](), [`InvertedTriangle`](), [`Pentagon`](), [`Plus`](), [`Rectangle`]() and [`Triangle`]().
 
@@ -198,7 +198,7 @@ chart.Series.Add(series);
 ![FastScatterBitmap chart type in WinUI](FastChart_images/fastscatterbitmap_chart.png)
 
 
-## Fast Step Line Bitmap
+## FastStepLineBitmap Chart
 
 [`FastStepLineBitmapSeries`]() is the high performance version of step line series.
 
