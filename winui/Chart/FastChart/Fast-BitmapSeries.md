@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fast Chart | SfChart | WinUI | Syncfusion
-description: Fast Chart support which render collection of data points using WritableBitmap in WinUI Charts (SfChart)
+description: Fast chart support which render collection of data points using WritableBitmap in WinUI Charts (SfChart)
 platform: WinUI
 control: SfChart
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Fast Bitmap Series in WinUI Charts (SfChart)
 
-A fast bitmap chart displays a series of segments rendered using WritableBitmap. 
+A fast bitmap series is a special kind of series that can render a collection with huge number of data points. A fast bitmap series displays a series of segments rendered using WritableBitmap. 
 
 ## Fast Line Bitmap 
 
-[`FastLineBitmapSeries`]() displays a series of line segments rendered using WritableBitmap. The advantage of FastLineBitmapSeries renders a million data point in a fraction of seconds.
+[`FastLineBitmapSeries`]() displays a series of line segments rendered using WritableBitmap. The advantage of FastLineBitmapSeries is, its renders a million data point in a fraction of seconds.
 
 The following code example shows how to use the fast line bitmap series:
 
@@ -36,7 +36,7 @@ FastLineBitmapSeries series = new FastLineBitmapSeries()
 
     XBindingPath = "XValue",
 
-    YBindingPath = "YValue",
+    YBindingPath = "YValue"
 
 };
 
@@ -46,19 +46,17 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastLineBitmap chart type in WinUI]()
+![FastLineBitmap chart type in WinUI](FastChart_images/fastlinebitmap_chart.png)
 
-N> As it was rendered using bitmap, there might be some jagged lines at edges. This is can be reduced using [`EnableAntiAliasing`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastLineBitmapSeries_EnableAntiAliasing) property.
+N> As it was rendered using bitmap, there might be some jagged lines at edges. This is can be reduced using [`EnableAntiAliasing`]() property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:FastLineBitmapSeries ItemsSource="{Binding Data}"
+<chart:FastLineBitmapSeries EnableAntiAliasing="True" ItemsSource="{Binding Data}"
 
-XBindingPath="XValue" YBindingPath="YValue" 
-
-StrokeDashArray="5,5" EnableAntiAliasing="True"/>
+XBindingPath="XValue" YBindingPath="YValue"/>
 
 {% endhighlight %}
 
@@ -73,9 +71,7 @@ FastLineBitmapSeries series = new FastLineBitmapSeries()
 
     YBindingPath = "YValue",
 
-    EnableAntiAliasing = true,
-
-    StrokeDashArray =new DoubleCollection() { 5,5},
+    EnableAntiAliasing = true
 
 };
 
@@ -85,12 +81,12 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![AntiAliasing support for FastLine Chart in WinUI]()
+![AntiAliasing support for fast line bitmap chart in WinUI](FastChart_images/fastlinebitmap_chart_antialiasing.png)
 
 
 ## Fast Column Bitmap
 
-[`FastColumnBitmapSeries`]() is used to boost up the performance of the ColumnSeries.
+[`FastColumnBitmapSeries`]() is used to boost up the performance of the column series.
 
 {% tabs %}
 
@@ -111,7 +107,7 @@ FastColumnBitmapSeries series = new FastColumnBitmapSeries()
 
     XBindingPath = "XValue",
 
-    YBindingPath = "YValue",
+    YBindingPath = "YValue"
 
 };
 
@@ -121,12 +117,12 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastColumnBitmap chart type in WinUI]()
+![FastColumnBitmap chart type in WinUI](FastChart_images/fastcolumnbitmap_chart.png)
 
 
 ## Fast Bar Bitmap
 
-[`FastBarBitmapSeries`]() is used to boost up the performance of the series.
+[`FastBarBitmapSeries`]() is used to boost up the performance of the bar series.
 
 {% tabs %}
 
@@ -147,7 +143,7 @@ FastBarBitmapSeries series = new FastBarBitmapSeries()
 
     XBindingPath = "XValue",
 
-    YBindingPath = "YValue",
+    YBindingPath = "YValue"
 
 };
 
@@ -157,7 +153,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastBarBitmap chart type in WinUI]()
+![FastBarBitmap chart type in WinUI](FastChart_images/fastbarbitmap_chart.png)
 
 
 ## Fast Scatter Bitmap
@@ -172,7 +168,7 @@ chart.Series.Add(series);
 
 XBindingPath="XValue" YBindingPath="YValue" 
 
-ScatterHeight="4" ScatterWidth="4"/>
+ScatterHeight="7" ScatterWidth="7"/>
 
 {% endhighlight %}
 
@@ -187,9 +183,9 @@ FastScatterBitmapSeries series = new FastScatterBitmapSeries()
 
     YBindingPath = "YValue",
 
-    ScatterHeight = 4,
+    ScatterHeight = 7,
 
-    ScatterWidth = 4,
+    ScatterWidth = 7
 
 };
 
@@ -199,12 +195,12 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastScatterBitmap chart type in WinUI]()
+![FastScatterBitmap chart type in WinUI](FastChart_images/fastscatterbitmap_chart.png)
 
 
 ## Fast Step Line Bitmap
 
-[`FastStepLineBitmapSeries`]() is the high performance version of StepLineSeries.
+[`FastStepLineBitmapSeries`]() is the high performance version of step line series.
 
 {% tabs %}
 
@@ -225,7 +221,7 @@ FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
 
     XBindingPath = "XValue",
 
-    YBindingPath = "YValue",
+    YBindingPath = "YValue"
 
 };
 
@@ -235,7 +231,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastStepLineBitmap chart type in WinUI]()
+![FastStepLineBitmap chart type in WinUI](FastChart_images/faststeplinebitmap_chart.png)
 
 The anti aliasing mode can be enabled using [`EnableAntiAliasing`]() property of FastStepLineBitmapSeries as in below code snippet:
 
@@ -260,7 +256,7 @@ FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
 
     YBindingPath = "YValue",
 
-    EnableAntiAliasing = true ,
+    EnableAntiAliasing = true
 
 };
 
@@ -270,4 +266,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![AntiAliasing support for FastStepLineBitmap chart type in WinUI]()
+![AntiAliasing support for FastStepLineBitmap chart type in WinUI](FastChart_images/faststeplinebitmap_chart_antialiasing.png)
