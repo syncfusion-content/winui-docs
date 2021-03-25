@@ -43,7 +43,7 @@ this.Content = sfLinearGauge;
 
 ![default shape pointer](images/shape-pointer/pointer_default.png)
 
-Gauge supports the following types of shape poitner:
+Gauge supports the following types of shape pointer:
 
 * Circle
 * Diamond

@@ -9,7 +9,7 @@ documentation: ug
 
 # Content Pointer in WinUI Linear Gauge (SfLinearGauge)
 
-Highlight values using an image, icon, text, or any other custom view. You can set the custome views using the `Content` property.
+Highlight values using an image, icon, text, or any other custom view. You can set the custom views using the `Content` property.
 
 {% tabs %}
 

@@ -187,4 +187,4 @@ private void ShapePointer_ValueChanged(object sender, ValueChangedEventArgs e)
 
 {% endtabs %}
 
-N> `ValueChanged` event is exist for all pointers, other events availble only for `ShapePointer`
+N> `ValueChanged` event is exist for all pointers, other events available only for `ShapePointer`
