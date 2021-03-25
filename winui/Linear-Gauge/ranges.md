@@ -13,7 +13,7 @@ Linear gauge range is a visual element that helps to quickly visualize where a v
 
 **Setting start and end value**
 
-The start and end values of ranges are set using the [`StartValue`]() and [`EndValue`]() properties.
+The start and end values of ranges are set using the `StartValue` and `EndValue` properties.
 
 {% tabs %}
 
@@ -53,17 +53,17 @@ The following properties are used for the range customization:
 
 * `Background` – Specifies the color for the range.
 
-* [`StartWidth`]() – Specifies the start width of the range.
+* `StartWidth` – Specifies the start width of the range.
 
-* [`MidWidth`]() – Specifies the start width of the range.
+* `MidWidth` – Specifies the start width of the range.
 
-* [`EndWidth`]() – Specifies the end width of the range.
+* `EndWidth` – Specifies the end width of the range.
 
-* [`GradientStops`]() - Specifies the gradient for the range.
+* `GradientStops` - Specifies the gradient for the range.
 
 **Equal range width**
 
-Range width can be controlled by [`StartWidth`](), [`MidWidth`]() and [`EndWidth`]() properties of range.
+Range width can be controlled by `StartWidth`, `MidWidth` and `EndWidth` properties of range.
 
 {% tabs %}
 
@@ -105,7 +105,7 @@ N> The MidWidth is not considered until change its default value.
 
 **Different range width**
 
-By setting different values to [`StartWidth`](), [`MidWidth`]() and [`EndWidth`]() property can create different width ranges. 
+By setting different values to `StartWidth`, `MidWidth` and `EndWidth` property can create different width ranges. 
 
 {% tabs %}
 
@@ -147,7 +147,7 @@ this.Content = sfLinearGauge;
 
 **Setting gradient brush to the range**
 
- The [`GradientStops`]() property of [`range`]() allows to specify the smooth color transition to pointer by specifying the different colors based on provided axis value.
+ The `GradientStops` property of `range` allows to specify the smooth color transition to pointer by specifying the different colors based on provided axis value.
 
 {% tabs %}
 
@@ -201,7 +201,7 @@ this.Content = sfLinearGauge;
 
 **Range placement**
 
-The linear axis allows to position the labels either inside or outside or center of the axis line using the [`RangePlacement`]() property. By default, range positioned outside the axis line.
+The linear axis allows to position the labels either inside or outside or center of the axis line using the `RangePlacement` property. By default, range positioned outside the axis line.
 
 {% tabs %}
 
@@ -239,7 +239,7 @@ this.Content = sfLinearGauge;
 
 ## Setting range color to axis elements
 
-You can set range color to axis labels and ticks using the [`UseRangeColorForAxis`]() property of axis,
+You can set range color to axis labels and ticks using the `UseRangeColorForAxis` property of axis,
 
 {% tabs %}
 
@@ -312,7 +312,7 @@ this.Content = sfLinearGauge;
 
 ## Range Child support
 
-Range allows you to add any element as its child using the [`Child`]() property
+Range allows you to add any visual contents as its child using the `Child` property
 
 {% tabs %}
 

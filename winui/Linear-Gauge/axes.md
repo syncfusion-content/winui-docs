@@ -9,13 +9,13 @@ documentation: ug
 
 # Linear axis Feature in WinUI Linear Gauge (SfLinearGauge)
 
-The [`Linear axis`]() is a linear arc in which a set of values are displayed along a linear or custom scale based on the design requirements. Axis elements such as  labels, ticks and axis line can be easily customized with built-in properties.
+The `Linear axis` is a linear arc in which a set of values are displayed along a linear or custom scale based on the design requirements. Axis elements such as  labels, ticks and axis line can be easily customized with built-in properties.
 
 ## Axis customization
 
 **Setting axis minimum and maximum value** 
 
-The [`Minimum`]() and [`Maximum`]() properties of an axis can be used to customize the axis value range.The default value of [`Minimum`]() is 0 and the default value of [`Maximum`]() is 100.
+The `Minimum` and `Maximum` properties of an axis can be used to customize the axis value range.The default value of `Minimum` is 0 and the default value of `Maximum` is 100.
 
 {% tabs %}
 
@@ -45,7 +45,7 @@ this.Content = sfLinearGauge;
 
 **Interval**
 
-The interval between labels can be customized using the [`Interval`]() property of axis.
+The interval between labels can be customized using the `Interval` property of axis.
 
 {% tabs %}
 
@@ -73,9 +73,9 @@ this.Content = sfLinearGauge;
 
 **Axis direction customization**
 
-The direction of [`Linear axis`]() can be customized by its [`IsInversed`]() property. 
+The direction of `Linear axis` can be customized by the `IsInversed` property of `Linear gauge`. 
 
-When the [`IsInversed`]() property is true, the axis can be placed in right-to-left direction. When the  [`IsInversed`]() property is set to false, the axis will be positioned in left-to-right direction.
+When the `IsInversed` property is true, the axis can be placed in right-to-left direction. When the  `IsInversed` property is set to false, the axis will be positioned in left-to-right direction.
 
 {% tabs %}
 
@@ -87,8 +87,7 @@ When the [`IsInversed`]() property is true, the axis can be placed in right-to-l
 
 {% highlight c# %}
 
-SfLinearGauge sfLinearGauge = new SfLinearGauge { IsInversed = true };
-this.Content = sfLinearGauge;
+this.Content = new SfLinearGauge { IsInversed = true };
 
 {% endhighlight %}
 
@@ -96,9 +95,57 @@ this.Content = sfLinearGauge;
 
 ![axis direction](images/axis/axis_inversed.png)
 
+**Mirrored Axis support**
+
+`Linear axis` can be displayed as mirrored by using `IsMirrored` property of `Linear gauge`.
+
+When the `IsMirrored` property is true, the axis can be rendered in mirrored/opposite direction.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<gauge:SfLinearGauge IsMirrored="True" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+this.Content = new SfLinearGauge { IsMirrored = true };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![mirrored axis](images/axis/axis_isMirrored.png)
+
+**Axis orientation support**
+
+The orientation of `Linear axis` can be customized by the `Orientation` property of `Linear gauge`. 
+
+When the `Orientation` property is `Vertical`, the axis will be rendered in bottom-to-top direction.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<gauge:SfLinearGauge Orientation="Vertical" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+this.Content = new SfLinearGauge { Orientation = Orientation.Vertical };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![vertical axis](images/axis/axis_orientation.png)
+
 **Maximum number of labels per 100 logical pixels**
 
-By default, a maximum of three labels are displayed for each 100 logical pixels in an axis. The maximum number of labels that should present within 100 logical pixels length can be customized using the [`MaximumLabelsCount`]() property of the axis. This property is applicable only for automatic range calculation and will not work if you set value for interval property of an axis.
+By default, a maximum of three labels are displayed for each 100 logical pixels in an axis. The maximum number of labels that should present within 100 logical pixels length can be customized using the `MaximumLabelsCount` property of the axis. This property is applicable only for automatic range calculation and will not work if you set value for interval property of an axis.
 
 {% tabs %}
 
@@ -128,13 +175,13 @@ this.Content = sfLinearGauge;
 
 The linear axis line can be customized using the following properties.
 
-* [`AxisLineStrokeThickness`]() – Customizes the thickness of axis line.
-* [`AxisLineStroke`]() – Customizes the color of the axis line.
-* [`AxisLineStyle`]() – Customizes the style of the axis line.
+* `AxisLineStrokeThickness` – Customizes the thickness of axis line.
+* `AxisLineStroke` – Customizes the color of the axis line.
+* `AxisLineStyle` – Customizes the style of the axis line.
 
 **Axis line Stroke Thickness**
 
-The axis line will be rendered based on the pixel value given in [`AxisLineStrokeThickness`]().
+The axis line will be rendered based on the pixel value given in `AxisLineStrokeThickness`.
 
 {% tabs %}
 
@@ -162,7 +209,7 @@ this.Content = sfLinearGauge;
 
 **Setting axis line stroke brush**
 
-To fill the brush to axis line using the [`AxisLineStroke`]() property of linear axis. 
+To fill the brush to axis line using the `AxisLineStroke` property of linear axis. 
 
 {% tabs %}
 
@@ -190,7 +237,7 @@ this.Content = sfLinearGauge;
 
 **Axis line visibility**
 
-The visibility of the axis line can be customized using the [`ShowAxis`]() property of axis. By default, this property is set to true.
+The visibility of the axis line can be customized using the `ShowAxis` property of axis. By default, this property is set to true.
 
 {% tabs %}
 
@@ -260,9 +307,7 @@ this.Content = sfLinearGauge;
 
 **Formatting axis label**
 
-The following property of the axis allows to customize the axis label text.
-
-* [`LabelFormat`]() - Allows to customize the axis label with the globalized label format.
+The `LabelFormat` allows to customize the axis label with the globalized label format.
 
 {% tabs %}
 
@@ -290,7 +335,7 @@ this.Content = sfLinearGauge;
 
 **Template support for axis label**
 
-The [`LabelTemplate`]() property allows you to define the data template for the axis label's like the following code example.
+The `LabelTemplate` property allows you to define the customized style for the axis label like the below code example.
 
 {% tabs %}
 
@@ -331,7 +376,7 @@ this.Content = sfLinearGauge;
 
 **Label visibility**
 
-The [`ShowLabels`]() property of axis allows to enable or disable the visibility of labels. The default value of the property is true.
+The `ShowLabels` property of axis allows to enable or disable the visibility of labels. The default value of the property is true.
 
 {% tabs %}
 
@@ -359,7 +404,7 @@ this.Content = sfLinearGauge;
 
 **Label placement**
 
-The linear axis allows to position the labels either inside or outside of the axis line using the [`LabelPosition`]() property. By default, labels are positioned inside the axis line.
+The linear axis allows to position the labels either inside or outside of the axis line using the `LabelPosition` property. By default, labels are positioned inside the axis line.
 
 {% tabs %}
 
@@ -387,7 +432,7 @@ this.Content = sfLinearGauge;
 
 **Label position customization**
 
-The [`LabelOffset`]() property allows to adjust the distance between the axis line and the labels. By default, the value of the label offset is 5.
+The `LabelOffset` property allows to adjust the distance between the axis line and the labels. By default, the value of the label offset is 5.
 
 {% tabs %}
 
@@ -417,17 +462,17 @@ this.Content = sfLinearGauge;
 
 The major and minor tick lines of an axis can be customized using the below properties.
 
-* [`MajorTickLength`]() – Specifics the major length of ticks.
+* `MajorTickLength` – Specifics the major length of ticks.
 
-* [`MinorTickLength`]() – Specifics the minor length of ticks.
+* `MinorTickLength` – Specifics the minor length of ticks.
 
-* [`MajorTickStyle`]() – Allows to specify the style for major tick line.
+* `MajorTickStyle` – Allows to specify the style for major tick line.
 
-* [`MinorTickStyle`]() – Allows to specify the style for minor tick line.
+* `MinorTickStyle` – Allows to specify the style for minor tick line.
 
 **Tick length**
 
-The major and minor tick lines will be rendered based on the pixel values given in [`MajorTickLength`]() and [`MinorTickLength`]().
+The major and minor tick lines will be rendered based on the pixel values given in `MajorTickLength` and `MinorTickLength`.
 
 {% tabs %}
 
@@ -457,7 +502,7 @@ this.Content = sfLinearGauge;
 
 **Setting style for major ticks**
 
-The [`MajorTickStyle`]() property allows you to define the style for the major tick's as shown in the following code example.
+The `MajorTickStyle` property allows you to define the style for the major tick's as shown in the following code example.
 
 {% tabs %}
 
@@ -495,7 +540,7 @@ this.Content = sfLinearGauge;
 
 **Setting style for minor ticks**
 
-The [`MinorTickStyle`]() property allows you to define the style for the minor tick's as shown in the following code example.
+The `MinorTickStyle` property allows you to define the style for the minor tick's as shown in the following code example.
 
 {% tabs %}
 
@@ -585,7 +630,7 @@ this.Content = sfLinearGauge;
 
 **Setting minor ticks count**
 
-The major ticks are generated based on the [`Interval`]() property. Like major ticks, the minor ticks are generated using the [`MinorTicksPerInterval`]() property of axis. By default, the count value of this property is 1.
+The major ticks are generated based on the `Interval` property. Like major ticks, the minor ticks are generated using the `MinorTicksPerInterval` property of axis. By default, the count value of this property is 1.
 
 {% tabs %}
 
@@ -613,7 +658,7 @@ this.Content = sfLinearGauge;
 
 **Tick line visibility**
 
-The [`ShowTicks`]() property of the axis is used to enable or disable the visibility of both the major and the minor ticks of axis. The default value of this property is true.
+The `ShowTicks` property of the axis is used to enable or disable the visibility of both the major and the minor ticks of axis. The default value of this property is true.
 
 {% tabs %}
 
@@ -641,7 +686,7 @@ this.Content = sfLinearGauge;
 
 **Tick placement**
 
-The [`Linear axis`]() allows to position the ticks either inside or outside or center of the axis line using the [`TickPosition`]() property. By default, ticks are positioned inside the axis line.
+The `Linear axis` allows to position the ticks either inside or outside or center of the axis line using the `TickPosition` property. By default, ticks are positioned inside the axis line.
 
 {% tabs %}
 
@@ -669,7 +714,7 @@ this.Content = sfLinearGauge;
 
 **Tick position customization**
 
-The ticks can be moved near or far to the axis line using the [`TickOffset`]() property. The default value of [`TickOffset`]() is 0.
+The ticks can be moved near or far to the axis line using the `TickOffset` property. The default value of `TickOffset` is 0.
 
 {% tabs %}
 
@@ -697,7 +742,7 @@ this.Content = sfLinearGauge;
 
 ## Custom scale range
 
-[`linear gauge`]() allows you to define a custom scale range by extending the axis based on your business logic.
+`linear gauge` allows you to define a custom scale range by extending the axis based on your business logic.
 
 {% tabs %}
 

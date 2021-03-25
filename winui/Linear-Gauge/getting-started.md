@@ -40,9 +40,11 @@ this.Content = sfLinearGauge;
 
 ![Initialize linear gauge](images/getting-started/gauge.png)
 
+N> Default axis will be added when initializing the linear gauge control.
+
 ## Add axis to the linear gauge
 
-You can set a linear axis for the gauge using Axis property of SfLinearGauge. You can specify the minimum and maximum values of axis using the [`Minimum`]() and [`Maximum`]() properties as demonstrated in the following code snippet.
+You can set a linear axis for the gauge using Axis property of SfLinearGauge. You can specify the minimum and maximum values of axis using the `Minimum` and `Maximum` properties as demonstrated in the following code snippet.
 
 {% tabs %}
 
@@ -74,7 +76,7 @@ this.Content = sfLinearGauge;
 
 ## Add range to the linear gauge
 
-Ranges contain a list of range elements, where you can add any number of ranges inside the axis. You can specify the start value, mid value, end value and background color for range using the [`StartValue`](), ['MidValue'](), [`EndValue`]() and `Background` properties as demonstrated in the following code.   
+Ranges contain a list of range elements, where you can add any number of ranges inside the axis. You can specify the start value, mid value, end value and background color for range using the `StartValue`, `MidValue`, `EndValue` and `Background` properties as demonstrated in the following code.   
 
 {% tabs %}
 
@@ -175,9 +177,11 @@ this.Content = sfLinearGauge;
 
 ## Add marker pointer to the linear gauge
 
-MarkerPointers contains a list of pointer elements, where you can add any number of gauge pointers such as [`ShapePointer`](), and [`ContentPointer`]() inside the axis to indicate the value.
+MarkerPointers contains a list of pointer elements, where you can add any number of gauge pointers such as `ShapePointer`, and `ContentPointer` inside the axis to indicate the value.
 
 **Add shape pointer to the linear gauge**
+
+Shape pointer is to highlight current values by using different types of shape pointers.
 
 {% tabs %}
 
@@ -220,6 +224,8 @@ this.Content = sfLinearGauge;
 ![gauge shape pointer to linear gauge](images/getting-started/gauge_shapePointer.png)
 
 **Add content pointer to the linear gauge**
+
+Content pointer is to highlight values using an image, icon, text, or any other custom view.
 
 {% tabs %}
 
