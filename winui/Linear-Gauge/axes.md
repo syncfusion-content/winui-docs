@@ -15,7 +15,7 @@ The `Linear axis` is a linear scale, where a set of values can be plotted along 
 
 **Setting axis minimum and maximum value** 
 
-The `Minimum` and `Maximum` properties of an axis can be used to customize the axis value range. The default value of [`Minimum`]() is 0 and the default value of `Maximum` is 100.
+The `Minimum` and `Maximum` properties of an axis can be used to customize the axis value range. The default value of `Minimum` is 0 and the default value of `Maximum` is 100.
 
 {% tabs %}
 
