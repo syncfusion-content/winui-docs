@@ -204,6 +204,8 @@ The `TimeChanging` event will be triggered after time selection and before `Sele
 * `NewTime` - Gets a time which is currently selected.
 * `Cancel` - Gets or sets whether to cancel the selected time value update.
 
+Users are restricted to select a blackout time from dropdown, but it can be set through editor. As selecting a blackout time leads to crash, we can cancel the change using `TimeChanging` event.
+
 N> `TimeChanging` event is called before the `TimeChanged` event when a time is selected.
 
 {% tabs %}

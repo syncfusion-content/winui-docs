@@ -204,7 +204,7 @@ The `DateChanging` event will be triggered after date selection and before `Sele
 * `NewDate` - Gets a date which is currently selected.
 * `Cancel` - Gets or sets whether to cancel the selected date value update.
 
-When today's date is added in `BlackOutDates` collection and if you enter any value in editor, by default today's date will be set as selected date resulting in application crash. You can prevent this by canceling the selected date change in `DateChanging` event.
+Users are restricted to select a blackout date from dropdown, but can be set through editor. As selecting a blackout date leads to crash, we can cancel the change using `DateChanging` event.
 
 N> `DateChanging` event is called before the `DateChanged` event when a date is selected.
 
