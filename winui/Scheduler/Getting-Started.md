@@ -74,7 +74,7 @@ this.Schedule.ViewType = SchedulerViewType.Month;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI scheduler Month view](GettingStarted_Images/MonthView.png)
+![month-view-in-scheduler-winui](GettingStarted_Images/month-view.png)
 
 ## Appointments
 
@@ -385,7 +385,7 @@ Schedule.FirstDayOfWeek = DayOfWeek.Monday;
 {% endhighlight %}  
 {% endtabs %}  
 
-![WinUI scheduler FirstDayOfWeek](GettingStarted_Images/FirstDayOfWeek.png)
+![first-day-of-week-in-scheduler-winui](GettingStarted_Images/first-day-of-week.png)
 
 ## Show busy indicator
 
@@ -400,4 +400,4 @@ this.Schedule.ShowBusyIndicator = true;
 {% endhighlight %}  
 {% endtabs %}  
 
-![WinUI scheduler BusyIndicator](GettingStarted_Images/BusyIndicator.png)
+![busy-indicator-in-scheduler-winui](GettingStarted_Images/busy-indicator.png)
