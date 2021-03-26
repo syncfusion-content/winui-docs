@@ -25,7 +25,7 @@ In addition to the default pointer, you can add n number of pointers to an axis 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -69,7 +69,7 @@ Pointers can be dragged over the scale value. It can be achieved by clicking and
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -125,7 +125,7 @@ this.Content = sfRadialGauge;
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
