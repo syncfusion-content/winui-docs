@@ -23,7 +23,7 @@ This section explains the steps required to add the Radial Gauge control and its
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge />
 
@@ -44,7 +44,7 @@ Axes contain a list of axis elements, where you can add any number of radial axe
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -76,7 +76,7 @@ Ranges contain a list of range elements, where you can add any number of ranges 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -139,7 +139,7 @@ Pointers contains a list of pointer elements, where you can add any number of ga
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -180,7 +180,7 @@ You can add any number of control such as text or image as an annotation inside 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -231,7 +231,7 @@ The following code example gives you the complete code of above configurations.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>

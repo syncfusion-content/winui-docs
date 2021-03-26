@@ -13,7 +13,7 @@ documentation: ug
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -69,7 +69,7 @@ If the [`NeedleLengthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -112,7 +112,7 @@ The width of the needle pointer can be customized using the [`NeedleStartWidth`]
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -161,7 +161,7 @@ this.Content = sfRadialGauge;
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -248,7 +248,7 @@ The radius of the knob can be customized using the [`knobRadius`](https://help.s
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -295,7 +295,7 @@ Like knob radius, the [`KnobStrokeThickness`](https://help.syncfusion.com/cr/win
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -362,7 +362,7 @@ If the [`TailLengthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -405,7 +405,7 @@ If the [`TailLengthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -448,7 +448,7 @@ The width of the tail can be customized using the [`TailWidth`](https://help.syn
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -491,7 +491,7 @@ The following code shows how to apply the gradient for the tail.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Resources>
