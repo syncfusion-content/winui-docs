@@ -1454,8 +1454,8 @@ innerRadialAxis.MajorTickStyle = this.Resources["InnerAxisMajorTickStyle"] as St
 sfRadialGauge.Axes.Add(innerRadialAxis);
 
 RadialAxis outerRadialAxis = new RadialAxis();
-outerRadialAxis.LabelPosition = LabelsPosition.Outside;
-outerRadialAxis.TickPosition = TickElementsPosition.Outside;
+outerRadialAxis.LabelPosition = GaugeLabelsPosition.Outside;
+outerRadialAxis.TickPosition = GaugeElementPosition.Outside;
 outerRadialAxis.Minimum = 0;
 outerRadialAxis.Maximum = 100;
 outerRadialAxis.Interval = 10;

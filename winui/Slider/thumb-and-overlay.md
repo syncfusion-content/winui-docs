@@ -101,15 +101,18 @@ this.Content = sfSlider;
 
 ## Thumb Hover Background
 
-You can change the thumb hover background of the slider using the [`ThumbHoverBackground`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbHoverBackground) property.
+You can change the thumb hover background of the slider using the `SyncfusionSliderThumbBackgroundPointerOver` resource key.
 
 {% tabs %}
 
 {% highlight xml %}
 
+<Page.Resources>
+    <SolidColorBrush x:Key="SyncfusionSliderThumbBackgroundPointerOver">#009688</SolidColorBrush>
+</Page.Resources>
+
 <slider:SfSlider Value="50"
-                 ThumbBackground="#33b35c"
-                 ThumbHoverBackground="#009688" />
+                 ThumbBackground="#33b35c" />
 
 {% endhighlight %}
 
@@ -118,7 +121,6 @@ You can change the thumb hover background of the slider using the [`ThumbHoverBa
 SfSlider sfSlider = new SfSlider();
 sfSlider.Value = 50;
 sfSlider.ThumbBackground = new SolidColorBrush(ColorHelper.FromArgb(255, 42, 147, 77));
-sfSlider.ThumbHoverBackground = new SolidColorBrush(ColorHelper.FromArgb(255, 51, 179, 92));
 this.Content = sfSlider;
 
 {% endhighlight %}
@@ -129,16 +131,19 @@ this.Content = sfSlider;
 
 ## Thumb Pressed Background
 
-You can change the thumb pressed background of the slider using the [`ThumbPressedBackground`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbPressedBackground) property.
+You can change the thumb pressed background of the slider using the `SyncfusionSliderThumbBackgroundPressed` resource key.
 
 {% tabs %}
 
 {% highlight xml %}
 
+<Page.Resources>
+    <SolidColorBrush x:Key="SyncfusionSliderThumbBackgroundPointerOver">#009688</SolidColorBrush>
+    <SolidColorBrush x:Key="SyncfusionSliderThumbBackgroundPressed">#288e49</SolidColorBrush>
+</Page.Resources>
+
 <slider:SfSlider Value="50"
-                 ThumbBackground="#33b35c"
-                 ThumbHoverBackground="#009688"
-                 ThumbPressedBackground="#288e49" />
+                 ThumbBackground="#33b35c" />
 
 {% endhighlight %}
 
@@ -147,8 +152,6 @@ You can change the thumb pressed background of the slider using the [`ThumbPress
 SfSlider sfSlider = new SfSlider();
 sfSlider.Value = 50;
 sfSlider.ThumbBackground = new SolidColorBrush(ColorHelper.FromArgb(255, 42, 147, 77));
-sfSlider.ThumbHoverBackground = new SolidColorBrush(ColorHelper.FromArgb(255, 51, 179, 92));
-sfSlider.ThumbPressedBackground = new SolidColorBrush(ColorHelper.FromArgb(255, 40, 142, 73));
 this.Content = sfSlider;
 
 {% endhighlight %}
