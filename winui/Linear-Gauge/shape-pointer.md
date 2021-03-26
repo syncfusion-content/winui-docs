@@ -13,7 +13,7 @@ Indicate current values by using different types of shape pointers. You can chan
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -58,7 +58,7 @@ You can add customized shapes to denote the current pointer value instead of in-
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <DataTemplate x:Key="CustomShapePointer">
@@ -116,7 +116,7 @@ The shape pointer can be customized using the following properties:
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -168,7 +168,7 @@ To move the pointer outside of the axis, provide negative values.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -206,7 +206,7 @@ You can change the horizontal or vertical position of the shape pointer either S
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>

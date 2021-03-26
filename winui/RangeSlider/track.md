@@ -21,7 +21,7 @@ The InactiveTrack of the RangeSlider visible between the [`Minimum`](https://hel
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -51,7 +51,7 @@ You can change the active and inactive track hover color of the range slider usi
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFillPointerOver">#009688</SolidColorBrush>
@@ -86,7 +86,7 @@ You can change the active and inactive track pressed color of the range slider u
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFillPointerOver">#009688</SolidColorBrush>
@@ -124,7 +124,7 @@ You can change the track height of the range slider using the [`ActiveTrackHeigh
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -154,7 +154,7 @@ You can change the track style of the range slider using the [`ActiveTrackStyle`
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <Style x:Key="ActiveTrackStyle"

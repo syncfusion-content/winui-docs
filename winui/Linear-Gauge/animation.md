@@ -15,7 +15,7 @@ The `EnableAnimation` property of pointer allows to enable or disable animation 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -89,7 +89,7 @@ The `AnimationDuration` property of pointer allows to control the animation dura
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -169,7 +169,7 @@ The `AnimationEasingFunction` property of pointer allows you to change the easin
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>

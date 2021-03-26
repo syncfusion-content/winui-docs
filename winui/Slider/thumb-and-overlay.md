@@ -21,7 +21,7 @@ You can change the thumb type using the [`ThumbType`](https://help.syncfusion.co
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  ThumbType="Oval" />
@@ -47,7 +47,7 @@ You can change the thumb height and width of the slider using the [`ThumbHeight`
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  ThumbHeight="30"
@@ -79,7 +79,7 @@ You can change the thumb background of the slider using the [`ThumbBackground`](
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  ThumbBackground="#2A934D" />
@@ -105,7 +105,7 @@ You can change the thumb hover background of the slider using the `SyncfusionSli
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <SolidColorBrush x:Key="SyncfusionSliderThumbBackgroundPointerOver">#009688</SolidColorBrush>
@@ -135,7 +135,7 @@ You can change the thumb pressed background of the slider using the `SyncfusionS
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <SolidColorBrush x:Key="SyncfusionSliderThumbBackgroundPointerOver">#009688</SolidColorBrush>
@@ -166,7 +166,7 @@ The [`ThumbStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Slide
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <coreconverters:FormatStringConverter x:Key="FormatStringConverter" />
 
@@ -227,7 +227,7 @@ The [`ThumbOverlayRadius`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  ShowToolTip="False"
@@ -255,7 +255,7 @@ The [`ThumbOverlayFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  ThumbOverlayFill="Red" />
@@ -286,7 +286,7 @@ The [`ThumbDragStarted`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  ThumbDragStarted="SfSlider_ThumbDragStarted" />
@@ -310,7 +310,7 @@ The [`ThumbDragCompleted`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="70"
                  ThumbDragCompleted="SfSlider_ThumbDragCompleted" />

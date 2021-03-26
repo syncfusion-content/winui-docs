@@ -17,7 +17,7 @@ The start and end values of ranges are set using the `StartValue` and `EndValue`
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -67,7 +67,7 @@ Range width can be controlled by `StartWidth`, `MidWidth` and `EndWidth` propert
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -109,7 +109,7 @@ By setting different values to `StartWidth`, `MidWidth` and `EndWidth` property 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -151,7 +151,7 @@ this.Content = sfLinearGauge;
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -205,7 +205,7 @@ The linear axis allows to position the labels either inside or outside or center
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -243,7 +243,7 @@ You can set range color to axis labels and ticks using the `UseRangeColorForAxis
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -316,7 +316,7 @@ Range allows you to add any content as its child using the `Child` property
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>

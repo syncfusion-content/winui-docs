@@ -13,7 +13,7 @@ Highlight values using an image, icon, text, or any other custom view. You can s
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -77,7 +77,7 @@ To move the pointer outside of the axis, provide negative values.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -154,7 +154,7 @@ You can change the horizontal or vertical position of the content pointer either
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>

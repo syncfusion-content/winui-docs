@@ -19,7 +19,7 @@ The `Minimum` and `Maximum` properties of an axis can be used to customize the a
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -49,7 +49,7 @@ The interval between labels can be customized using the `Interval` property of a
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -79,7 +79,7 @@ When the `IsInversed` property is true, the axis can be placed in right-to-left 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge IsInversed="True" />
 
@@ -103,7 +103,7 @@ When the `IsMirrored` property is true, the axis can be rendered in mirrored/opp
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge IsMirrored="True" />
 
@@ -127,7 +127,7 @@ When the `Orientation` property is `Vertical`, the axis will be rendered in bott
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge Orientation="Vertical" />
 
@@ -149,7 +149,7 @@ By default, a maximum of three labels are displayed for each 100 logical pixels 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -185,7 +185,7 @@ The axis line will be rendered based on the pixel value given in `AxisLineStroke
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -213,7 +213,7 @@ To apply the color to the axis line using the `AxisLineStroke` property of linea
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -241,7 +241,7 @@ The visibility of the axis line can be customized using the `ShowAxis` property 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -275,7 +275,7 @@ The axis labels can be customized using the following properties
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -311,7 +311,7 @@ The `LabelFormat` allows to customize the axis label with the globalized label f
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -339,7 +339,7 @@ The `LabelTemplate` property allows you to define the customized style for the a
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <DataTemplate x:Key="labelTemplate">
@@ -380,7 +380,7 @@ The `ShowLabels` property of axis allows to enable or disable the visibility of 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -408,7 +408,7 @@ The linear axis allows to position the labels either inside or outside of the ax
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -436,7 +436,7 @@ The `LabelOffset` property allows to adjust the distance between the axis line a
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -476,7 +476,7 @@ The major and minor tick lines will be rendered based on the pixel values given 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -506,7 +506,7 @@ The `MajorTickStyle` property allows you to define the style for the major tick'
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <Style x:Key="MajorTickLineStyle"
@@ -544,7 +544,7 @@ The `MinorTickStyle` property allows you to define the style for the minor tick'
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <Style x:Key="MinorTickLineStyle"
@@ -582,7 +582,7 @@ By defining `StrokeDashArray` property in both [`MajorTickStyle`](https://help.s
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <Style x:Key="MajorTickLineStyle"
@@ -634,7 +634,7 @@ The major ticks are generated based on the `Interval` property. Like major ticks
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -662,7 +662,7 @@ The `ShowTicks` property of the axis is used to enable or disable the visibility
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -690,7 +690,7 @@ The `Linear axis` allows to position the ticks either inside or outside or cente
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -718,7 +718,7 @@ The ticks can be moved near or far to the axis line using the `TickOffset` prope
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -746,7 +746,7 @@ this.Content = sfLinearGauge;
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>

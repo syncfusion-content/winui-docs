@@ -17,7 +17,7 @@ The [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider Minimum="-20"
                       Maximum="20"
@@ -51,7 +51,7 @@ For example, if [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Minimum="0"
                  Maximum="10"
@@ -92,7 +92,7 @@ You can move the thumb in discrete manner for numeric values using the [`StepFre
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Minimum="0"
                  Maximum="10"
@@ -128,7 +128,7 @@ You can show values in the range slider by setting double values to the [`RangeS
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -156,7 +156,7 @@ You can drag the active range in the range slider by setting [`CanDragActiveRang
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="40"
                       RangeEnd="60"
@@ -190,7 +190,7 @@ When the [`IsInversed`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider ShowTicks="True"
                       ShowLabels="True"
@@ -231,7 +231,7 @@ The [`RangeValueChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"

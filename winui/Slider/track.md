@@ -21,7 +21,7 @@ The inactive side of the slider is between the thumb and the [`Maximum`](https:/
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  ActiveTrackFill="#009688"
@@ -49,7 +49,7 @@ You can change the active and inactive track hover color of the slider using the
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFillPointerOver">#009688</SolidColorBrush>
@@ -82,7 +82,7 @@ You can change the active and inactive track pressed color of the slider using t
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFillPointerOver">#009688</SolidColorBrush>
@@ -118,7 +118,7 @@ You can change the track height of the slider using the [`ActiveTrackHeight`](ht
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  ActiveTrackHeight="8"
@@ -146,7 +146,7 @@ You can change the track style of the slider using the [`ActiveTrackStyle`](http
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <Style x:Key="ActiveTrackStyle"

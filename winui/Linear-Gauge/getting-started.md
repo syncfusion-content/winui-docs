@@ -23,7 +23,7 @@ This section explains the steps required to add the Linear Gauge control and its
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge />
 
@@ -48,7 +48,7 @@ You can set a linear axis for the gauge using Axis property of SfLinearGauge. Yo
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -80,7 +80,7 @@ Ranges contain a list of range elements, where you can add any number of ranges 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -141,7 +141,7 @@ Bar pointers contains a list of bar pointer elements, where you can add any numb
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -185,7 +185,7 @@ Shape pointer is to highlight current values by using different types of shape p
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -229,7 +229,7 @@ Content pointer is to highlight values using an image, icon, text, or any other 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
@@ -274,7 +274,7 @@ The following code example gives you the complete code of above configurations.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfLinearGauge>
     <gauge:SfLinearGauge.Axis>
