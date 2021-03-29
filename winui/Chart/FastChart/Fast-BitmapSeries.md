@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fast Chart | SfChart | WinUI | Syncfusion
-description: This section explains the fast bitmap chart supports and how to create a high performance chart in WinUI Charts (SfChart).
+description: This section explains about the types of fast bitmap charts and its properties to create a high performance chart in WinUI Charts (SfChart).
 platform: WinUI
 control: SfChart
 documentation: ug
@@ -13,7 +13,7 @@ A fast bitmap series is a special kind of series that can render a collection wi
 
 ## FastLineBitmap Chart
 
-[`FastLineBitmapSeries`]() displays a series of line segments, rendered using WritableBitmap. The advantage of FastLineBitmapSeries is, it renders a million data point in a fraction of seconds.
+[`FastLineBitmapSeries`]() displays a series of line segments, rendered using `WritableBitmap`. The advantage of FastLineBitmapSeries is, it renders a million data point in a fraction of seconds.
 
 The following code example shows how to use the fast line bitmap series.
 
