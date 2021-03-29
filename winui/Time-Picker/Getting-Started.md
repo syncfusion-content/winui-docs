@@ -198,13 +198,13 @@ private void SfTimePicker_TimeChanged(DependencyObject d, DependencyPropertyChan
 
 ## Cancel a time that is being changed
 
-The `TimeChanging` event will be triggered after time selection and before `SelectedTime` property is updated. If the change is considered invalid, it can be canceled. The `TimeChanging` event contains the following properties.
+The `TimeChanging` event will be triggered as soon as a date is selected but before `SelectedTime` property is updated. If the change is considered invalid, it can be canceled. The `TimeChanging` event contains the following properties.
 
 * `OldTime` - Gets a time which is previously selected.
 * `NewTime` - Gets a time which is currently selected.
 * `Cancel` - Gets or sets whether to cancel the selected time value update.
 
-Users are restricted to select a blackout time from dropdown, but it can be set through editor. As selecting a blackout time leads to crash, we can cancel the change using `TimeChanging` event.
+Users are restricted to select a blackout time from dropdown, however user can give text input through editor. As selecting a blackout time leads to crash, we can cancel the change using `TimeChanging` event.
 
 N> `TimeChanging` event is called before the `TimeChanged` event when a time is selected.
 
