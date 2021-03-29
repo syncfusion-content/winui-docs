@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fast Chart | SfChart | WinUI | Syncfusion
-description: This section explains the fast line chart support and how to create a high performance chart in WinUI Charts (SfChart).
+description: This section explains about the fast line chart and its properties to create a high performance chart in WinUI Charts (SfChart).
 platform: WinUI
 control: SfChart
 documentation: ug
