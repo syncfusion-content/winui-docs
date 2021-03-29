@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion WinUI Gauge Animation
-description: This article describes how to add and customizes the appearence gauge annotation of linear gauge control in WinUI platform
+description: This article describes how to add and customize the appearance of gauge annotation of LinearGauge control in WinUI platform
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Pointer animation
 
-The `EnableAnimation` property of pointer allows to enable or disable animation for pointer.
+The `EnableAnimation` property of pointer allows to enable or disable animation for the pointer.
 
 {% tabs %}
 
@@ -163,9 +163,9 @@ this.Content = sfLinearGauge;
 
 ![pointer animation](images/animation/animation_duration.gif)
 
-## Animation Easing Function
+## Animation easing function
 
-The `AnimationEasingFunction` property of pointer allows you to change the easing function. The default value `AnimationEasingFunction` property is null.
+The `AnimationEasingFunction` property of pointer allows you to change the easing function. The default value of `AnimationEasingFunction` property is null.
 
 {% tabs %}
 
@@ -257,4 +257,4 @@ this.Content = sfLinearGauge;
 
 ![animation easing function](images/animation/animation_easingFunction.gif)
 
-N> Refer to the [EasingFunctionBase](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.animation.easingfunctionbase), to learn about available easing functions in WinUI.
+N> Refer to this [EasingFunctionBase](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.animation.easingfunctionbase), to learn more about available easing functions in WinUI.
