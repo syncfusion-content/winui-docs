@@ -497,7 +497,7 @@ The `DateChanging` event will be triggered, as soon as a date is selected but be
 * `NewDate` - Gets a date which is currently selected.
 * `Cancel` - Gets or sets whether to cancel the selected date value update.
 
-Users are restricted to select a blackout date from dropdown, but can be set through editor. As selecting a blackout date leads to crash, we can cancel the change using `DateChanging` event.
+Users are restricted to select a blackout date from dropdown, however user can give text input through editor. As selecting a blackout date leads to crash, we can cancel the change using `DateChanging` event.
 
 N> `DateChanging` event is called before the `SelectedDateChanged` event when a date is selected.
 
