@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Linear gauge range of Syncfusion WinUI Gauge
-description: This article describes how to add and customizes the appearence of ranges of linear gauge control in WinUI platform
+description: This article describes how to add and customize the appearence of ranges of linear gauge control in WinUI platform
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
@@ -63,7 +63,7 @@ The following properties are used for the range customization:
 
 **Equal range width**
 
-Range width can be controlled by `StartWidth`, `MidWidth` and `EndWidth` properties of range.
+Range width can be controlled by `StartWidth`, `MidWidth` and `EndWidth` properties of the range.
 
 {% tabs %}
 
@@ -101,11 +101,11 @@ this.Content = sfLinearGauge;
 
 ![equal range width](images/range/range_equalWidth.png)
 
-N> The MidWidth is not considered until change its default value.
+N> The `MidWidth` is not considered until change its default value.
 
 **Different range width**
 
-By setting different values to `StartWidth`, `MidWidth` and `EndWidth` property can create different width ranges. 
+By setting different values to `StartWidth`, `MidWidth` and `EndWidth` property, you can create different width ranges. 
 
 {% tabs %}
 
@@ -147,7 +147,7 @@ this.Content = sfLinearGauge;
 
 **Setting gradient brush to the range**
 
- The `GradientStops` property of `range` allows to specify the smooth color transition to pointer by specifying the different colors based on provided axis value.
+ The `GradientStops` property of `range` allows you to specify the smooth color transition to the pointer by specifying the different colors based on provided axis value.
 
 {% tabs %}
 
@@ -239,7 +239,7 @@ this.Content = sfLinearGauge;
 
 ## Setting range color to axis elements
 
-You can set range color to axis labels and ticks using the `UseRangeColorForAxis` property of axis,
+You can set range color to axis labels and ticks using the `UseRangeColorForAxis` property of axis.
 
 {% tabs %}
 
@@ -312,7 +312,7 @@ this.Content = sfLinearGauge;
 
 ## Range child content support
 
-Range allows you to add any content as its child using the `Child` property
+Range allows you to add any content as its child using the `Child` property.
 
 {% tabs %}
 
