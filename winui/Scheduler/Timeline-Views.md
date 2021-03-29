@@ -7,7 +7,7 @@ control: Scheduler
 documentation: ug
 ---
 
-# Timeline Views in WPF Scheduler (SfScheduler)
+# Timeline Views in WinUI Scheduler (SfScheduler)
 
 The TimelineView displays the dates in horizontal time axis with the desired day’s count. Scheduler supports to display the `TimelineDay`,`TimelineWeek`, `TimelineWorkWeek`, and `TimelineMonth` views. You can see the past or future dates by scrolling to the right or left. Each view displays the events accurately across the time slots with an intuitive drag-and-drop feature. It provides the support to highlight the selected region of time slots and handle the interaction.
 

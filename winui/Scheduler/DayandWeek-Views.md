@@ -7,7 +7,7 @@ control: Scheduler
 documentation: ug
 ---
 
-# Day View in WPF Scheduler (SfSchedule)
+# Day View in WinUI Scheduler (SfSchedule)
 
 The Scheduler supports to display the day, week, work week views and current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration.
 
