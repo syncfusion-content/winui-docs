@@ -491,7 +491,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Cancel a date that is being changed
 
-The `DateChanging` event will be triggered, after date selection and before `SelectedDate` property is updated. If the change is considered invalid, it can be canceled. The `DateChanging` event contains the following properties.
+The `DateChanging` event will be triggered, as soon as a date is selected but before `SelectedDate` property is updated. If the change is considered invalid, it can be canceled. The `DateChanging` event contains the following properties.
 
 * `OldDate` - Gets a date which is previously selected.
 * `NewDate` - Gets a date which is currently selected.
