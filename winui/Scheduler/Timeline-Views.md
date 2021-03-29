@@ -22,7 +22,7 @@ this.Schedule.TimelineViewSettings.TimeInterval = new System.TimeSpan(0, 120, 0)
 {% endhighlight %}
 {% endtabs %}
 
-![change-time-interval-in-scheduler-winui](TimelineViews_Images/change-time-interval.png)
+![change-time-interval-in-scheduler-winui](TimelineViews_Images/adding-change-time-interval-in-scheduler-winui.png)
 
 N>
 If you modify the timeInterval value (in minutes), you need to change the time labels format by setting the timeFormat value to hh:mm.
@@ -46,7 +46,7 @@ this.Schedule.TimelineViewSettings.TimeIntervalSize = 120;
 {% endhighlight %}
 {% endtabs %}
 
-![change-time-interval-size-in-scheduler-winui](TimelineViews_Images/change-time-interval-size.png)
+![change-time-interval-size-in-scheduler-winui](TimelineViews_Images/adding-change-time-interval-size-in-scheduler-winui.png)
 
 ## Flexible working days and working hours
 
@@ -69,7 +69,7 @@ this.Schedule.TimelineViewSettings.EndHour = 16;
 {% endhighlight %}
 {% endtabs %}
 
-![flexible-working-hours-in-scheduler-winui](TimelineViews_Images/flexible-working-hours.png)
+![flexible-working-hours-in-scheduler-winui](TimelineViews_Images/adding-flexible-working-hours-in-scheduler-winui.png)
 
 N>
 * The NonWorkingDays property will applicable only for `workWeek` and `TimelineWorkWeek` views only, and not applicable for the remaining views.
@@ -126,7 +126,7 @@ private ObservableCollection<DateTime> GetBlackoutDates()
 {% endhighlight %}
 {% endtabs %}
 
-![black-out-dates-in-scheduler-winui](TimelineViews_Images/black-out-dates.png)
+![black-out-dates-in-scheduler-winui](TimelineViews_Images/adding-black-out-dates-in-scheduler-winui.png)
 
 ## Special time regions
 
@@ -151,7 +151,7 @@ this.Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {% endhighlight %}
 {% endtabs %}
 
-![selection-restriction-in-timeslots-in-scheduler-winui](TimelineViews_Images/selection-restriction-in-timeslots.png)
+![selection-restriction-in-timeslots-in-scheduler-winui](TimelineViews_Images/adding-selection-restriction-in-timeslots-in-scheduler-winui.png)
 
 N> This property only restricts the interaction on region and it does not restrict the following:
 * Programmatic selection (if the user updates the selected date value dynamically)
@@ -249,7 +249,7 @@ this.Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {% endhighlight %}
 {% endtabs %}
 
-![special-time-region-customization-in-scheduler-winui](TimelineViews_Images/special-time-region-customization.png)
+![special-time-region-customization-in-scheduler-winui](TimelineViews_Images/adding-special-time-region-customization-in-scheduler-winui.png)
 
 ## Full screen scheduler
 
@@ -270,7 +270,7 @@ this.Schedule.TimelineViewSettings.TimeIntervalSize = -1;
 {% endhighlight %}
 {% endtabs %}
 
-![full-screen-scheduler-in-scheduler-winui](TimelineViews_Images/full-screen-scheduler.png)
+![full-screen-scheduler-in-scheduler-winui](TimelineViews_Images/adding-full-screen-scheduler-in-scheduler-winui.png)
 
 ## Change time ruler size
 
@@ -292,7 +292,7 @@ this.Schedule.TimelineViewSettings.TimeRulerSize = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![change-time-ruler-size-in-scheduler-winui](TimelineViews_Images/change-time-ruler-size.png)
+![change-time-ruler-size-in-scheduler-winui](TimelineViews_Images/adding-change-time-ruler-size-in-scheduler-winui.png)
 
 ## Minimum appointment duration
 
@@ -323,7 +323,7 @@ this.Schedule.TimelineViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 {% endhighlight %}
 {% endtabs %}
 
-![time-text-formatting-in-scheduler-winui](TimelineViews_Images/time-text-formatting.png)
+![time-text-formatting-in-scheduler-winui](TimelineViews_Images/adding-time-text-formatting-in-scheduler-winui.png)
 
 ## View header
 
@@ -349,7 +349,7 @@ this.Schedule.TimelineViewSettings.ViewHeaderDateFormat = "dd-MMMM";
 {% endhighlight %}
 {% endtabs %}
 
-![view-header-text-formatting-in-scheduler-winui](TimelineViews_Images/view-header-text-formatting.png)
+![view-header-text-formatting-in-scheduler-winui](TimelineViews_Images/adding-view-header-text-formatting-in-scheduler-winui.png)
 
 ### View header height
 
@@ -370,7 +370,7 @@ this.Schedule.TimelineViewSettings.ViewHeaderHeight = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![view-header-height-in-scheduler-winui](TimelineViews_Images/view-header-height.png)
+![view-header-height-in-scheduler-winui](TimelineViews_Images/view-header-height-in-scheduler-winui.png)
 
 ### View header appearance customization
 
@@ -440,4 +440,4 @@ this.Schedule.TimelineViewSettings.TimelineAppointmentHeight = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![appointment-height-in-scheduler-winui](TimelineViews_Images/appointment-height.png)
+![appointment-height-in-scheduler-winui](TimelineViews_Images/adding-appointment-height-in-scheduler-winui.png)

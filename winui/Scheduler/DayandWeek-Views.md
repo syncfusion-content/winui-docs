@@ -22,7 +22,7 @@ this.Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 120, 0);
 {% endhighlight %}
 {% endtabs %}
 
-![change-time-interval-in-scheduler-winui](DayandWeekViews_Images/change-time-interval.png)
+![change-time-interval-in-scheduler-winui](DayandWeekViews_Images/adding-change-time-interval-in-scheduler-winui.png)
 
 N> If you modify the timeInterval value (in minutes), you need to change the time labels format by setting the timeFormat value to hh:mm.
 
@@ -45,7 +45,7 @@ this.Schedule.DaysViewSettings.TimeIntervalSize = 120;
 {% endhighlight %}
 {% endtabs %}
 
-![change-time-interval-size-in-scheduler-winui](DayandWeekViews_Images/change-time-interval-size.png)
+![change-time-interval-size-in-scheduler-winui](DayandWeekViews_Images/adding-change-time-interval-size-in-scheduler-winui.png)
 
 ## Flexible working days and working hours
 
@@ -68,7 +68,7 @@ this.Schedule.DaysViewSettings.EndHour = 13;
 {% endhighlight %}
 {% endtabs %}
 
-![flexible-working-hours-in-scheduler-winui](DayandWeekViews_Images/flexible-working-hours.png)
+![flexible-working-hours-in-scheduler-winui](DayandWeekViews_Images/adding-flexible-working-hours-in-scheduler-winui.png)
 
 N>
 * The `NonWorkingDays` property will applicable only for `workWeek` and `TimelineWorkWeek` views only, and not applicable for the remaining views.
@@ -103,7 +103,7 @@ this.Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {% endhighlight %}
 {% endtabs %}
 
-![selection-restriction-in-timeslots-in-scheduler-winui](DayandWeekViews_Images/selection-restriction-in-timeslots.png)
+![selection-restriction-in-timeslots-in-scheduler-winui](DayandWeekViews_Images/adding-selection-restriction-in-timeslots-in-scheduler-winui.png)
 
 N> This property only restricts the interaction on region and it does not restrict the following:
 * Programmatic selection (if the user updates the selected date value dynamically)
@@ -136,11 +136,11 @@ this.Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {% endhighlight %}
 {% endtabs %}
 
-![recurring-time-region-in-timebasis-in-scheduler-winui](DayandWeekViews_Images/recurring-time-region-in-timebasis.png)
+![recurring-time-region-in-timebasis-in-scheduler-winui](DayandWeekViews_Images/adding-recurring-time-region-in-timebasis-in-scheduler-winui.png)
 
 If the `CanMergeAdjacentRegions` of `SpecialTimeRegion` is set to false. The SpecialTimeRegion will be rendering on Date basis.
 
-![recurring-time-region-in-datebasis-in-scheduler-winui](DayandWeekViews_Images/recurring-time-region-in-datebasis.png)
+![recurring-time-region-in-datebasis-in-scheduler-winui](DayandWeekViews_Images/adding-recurring-time-region-in-datebasis-in-scheduler-winui.png)
 
 ### Recurrence exception dates
 
@@ -171,12 +171,12 @@ this.Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {% endhighlight %}
 {% endtabs %}
 
-![recurrence-exception-dates-in-timebasis-in-scheduler-winui](DayandWeekViews_Images/recurrence-exception-dates-in-timebasis.png)
+![recurrence-exception-dates-in-timebasis-in-scheduler-winui](DayandWeekViews_Images/adding-recurrence-exception-dates-in-timebasis-in-scheduler-winui.png)
 
 
 The `SpecialTimeRegion` in Date basis by setting the value of `CanMergeAdjacentRegions` is false.
 
-![recurrence-exception-dates-in-datebasis-in-scheduler-winui](DayandWeekViews_Images/recurrence-exception-dates-in-datebasis.png)
+![recurrence-exception-dates-in-datebasis-in-scheduler-winui](DayandWeekViews_Images/adding-recurrence-exception-dates-in-datebasis-in-scheduler-winui.png)
 
 ### Special time region customization
 
@@ -221,12 +221,12 @@ this.Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {% endhighlight %}
 {% endtabs %}
 
-![special-time-region-customization-in-timebasis-in-scheduler-winui](DayandWeekViews_Images/special-time-region-customization-in-timebasis.png)
+![special-time-region-customization-in-timebasis-in-scheduler-winui](DayandWeekViews_Images/adding-special-time-region-customization-in-timebasis-in-scheduler-winui.png)
 
 
 The `SpecialTimeRegion` can be customized in a Date basis by setting the value of `CanMergeAdjacentRegions` is false.
 
-![special-time-region-customization-in-datebasis-in-scheduler-winui](DayandWeekViews_Images/special-time-region-customization-in-datebasis.png)
+![special-time-region-customization-in-datebasis-in-scheduler-winui](DayandWeekViews_Images/adding-special-time-region-customization-in-datebasis-in-scheduler-winui.png)
 
 ## Full screen scheduler
 
@@ -247,7 +247,7 @@ this.Schedule.DaysViewSettings.TimeIntervalSize = -1;
 {% endhighlight %}
 {% endtabs %}
 
-![full-screen-scheduler-in-scheduler-winui](DayandWeekViews_Images/full-screen-scheduler.png)
+![full-screen-scheduler-in-scheduler-winui](DayandWeekViews_Images/adding-full-screen-scheduler-in-scheduler-winui.png)
 
 ## Change time ruler size
 
@@ -269,7 +269,7 @@ this.Schedule.DaysViewSettings.TimeRulerSize = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![change-time-ruler-size-in-scheduler-winui](DayandWeekViews_Images/change-time-ruler-size.png)
+![change-time-ruler-size-in-scheduler-winui](DayandWeekViews_Images/adding-change-time-ruler-size-in-scheduler-winui.png)
 
 ## Minimum appointment duration
 
@@ -300,7 +300,7 @@ this.Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 {% endhighlight %}
 {% endtabs %}
 
-![time-text-formatting-in-scheduler-winui](DayandWeekViews_Images/time-text-formatting.png)
+![time-text-formatting-in-scheduler-winui](DayandWeekViews_Images/adding-time-text-formatting-in-scheduler-winui.png)
 
 ## View header
 
@@ -327,7 +327,7 @@ this.Schedule.DaysViewSettings.ViewHeaderDayFormat = "ddd";
 {% endhighlight %}
 {% endtabs %}
 
-![view-header-text-formatting-in-scheduler-winui](DayandWeekViews_Images/view-header-text-formatting.png)
+![view-header-text-formatting-in-scheduler-winui](DayandWeekViews_Images/adding-view-header-text-formatting-in-scheduler-winui.png)
 
 ### View header height
 
@@ -348,7 +348,7 @@ this.Schedule.DaysViewSettings.ViewHeaderHeight = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![view-header-height-in-scheduler-winui](DayandWeekViews_Images/view-header-height.png)
+![view-header-height-in-scheduler-winui](DayandWeekViews_Images/addingview-header-height-in-scheduler-winui..png)
 
 ### View header appearance customization
 
@@ -398,4 +398,4 @@ You can customize the default appearance of view header by setting `ViewHeaderTe
 {% endhighlight %}
 {% endtabs %}
 
-![view-header-appearance-customization-in-scheduler-winui](DayandWeekViews_Images/view-header-appearance-customization.png)
+![view-header-appearance-customization-in-scheduler-winui](DayandWeekViews_Images/adding-view-header-appearance-customization-in-scheduler-winui.png)
