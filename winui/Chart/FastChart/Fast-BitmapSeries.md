@@ -9,11 +9,11 @@ documentation: ug
 
 # Fast Bitmap Series in WinUI Charts (SfChart)
 
-A fast bitmap series is a special kind of series that can render a collection with huge number of data points using WritableBitmap. 
+A fast bitmap series is a special kind of series that can render a collection with huge number of data points using `WriteableBitmap`. 
 
 ## FastLineBitmap Chart
 
-[`FastLineBitmapSeries`]() displays a series of line segments, rendered using `WritableBitmap`. The advantage of FastLineBitmapSeries is, it renders a million data point in a fraction of seconds.
+[`FastLineBitmapSeries`]() displays a series of line segments, rendered using `WriteableBitmap`. The advantage of FastLineBitmapSeries is, it renders a million data point in a fraction of seconds.
 
 The following code example shows how to use the fast line bitmap series.
 
