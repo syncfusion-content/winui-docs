@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fast Chart | SfChart | WinUI | Syncfusion
-description: Fast chart supports render collection of data points using WritableBitmap in WinUI Charts (SfChart)
+description: Fast chart supports render collection of data points using WritableBitmap in WinUI Charts (SfChart).
 platform: WinUI
 control: SfChart
 documentation: ug
