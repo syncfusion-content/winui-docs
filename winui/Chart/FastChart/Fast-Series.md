@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fast Chart | SfChart | WinUI | Syncfusion
-description: Fast chart support which render collection of data points using polyline segment in WinUI Charts (SfChart).
+description: This section explains the fast line chart support and how to create a high performance chart in WinUI Charts (SfChart).
 platform: WinUI
 control: SfChart
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 ## FastLine Chart
 
-The [`FastLineSeries`]() is a special kind of line series that can render a collection with huge number of datapoints. Fast line is rendered using the polyline segment. 
+The [`FastLineSeries`]() is a special kind of line series that can render a collection with huge number of datapoints using the polyline segment. 
 
 {% tabs %}
 
