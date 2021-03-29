@@ -11,7 +11,7 @@ documentation: ug
 
 ## FastLine Chart
 
-The [`FastLineSeries`]() is a special kind of line series that can render a collection with huge number of datapoints. Fast line is rendered using polyline segment. 
+The [`FastLineSeries`]() is a special kind of line series that can render a collection with huge number of datapoints. Fast line is rendered using the polyline segment. 
 
 {% tabs %}
 

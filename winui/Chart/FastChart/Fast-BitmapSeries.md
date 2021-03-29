@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fast Chart | SfChart | WinUI | Syncfusion
-description: Fast chart support which render collection of data points using WritableBitmap in WinUI Charts (SfChart)
+description: Fast chart supports render collection of data points using WritableBitmap in WinUI Charts (SfChart)
 platform: WinUI
 control: SfChart
 documentation: ug
@@ -13,9 +13,9 @@ A fast bitmap series is a special kind of series that can render a collection wi
 
 ## FastLineBitmap Chart
 
-[`FastLineBitmapSeries`]() displays a series of line segments rendered using WritableBitmap. The advantage of FastLineBitmapSeries is, its renders a million data point in a fraction of seconds.
+[`FastLineBitmapSeries`]() displays a series of line segments, rendered using WritableBitmap. The advantage of FastLineBitmapSeries is, it renders a million data point in a fraction of seconds.
 
-The following code example shows how to use the fast line bitmap series:
+The following code example shows how to use the fast line bitmap series.
 
 {% tabs %}
 
@@ -48,7 +48,7 @@ chart.Series.Add(series);
 
 ![FastLineBitmap chart type in WinUI](FastChart_images/fastlinebitmap_chart.png)
 
-N> As it was rendered using bitmap, there might be some jagged lines at edges. This is can be reduced using [`EnableAntiAliasing`]() property.
+N> As it was rendered using bitmap, there might be some jagged lines at the edges. This is can be reduced using the [`EnableAntiAliasing`]() property.
 
 {% tabs %}
 
@@ -158,7 +158,7 @@ chart.Series.Add(series);
 
 ## FastScatterBitmap Chart
 
-[`FastScatterBitmapSeries`]() used to render high number scatter points. The [`ScatterHeight`]() and [`ScatterWidth`]() also available as in [`ScatterSeries`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ScatterSeries.html). [`ShapeType`]() is used to change the rendering shape of fast scatter bitmap series. The available shapes are [`Cross`](), [`Diamond`](), [`Ellipse`](), [`Hexagon`](), [`InvertedTriangle`](), [`Pentagon`](), [`Plus`](), [`Rectangle`]() and [`Triangle`]().
+[`FastScatterBitmapSeries`]() is used to render high number scatter points. The [`ScatterHeight`]() and [`ScatterWidth`]() are also available as in [`ScatterSeries`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ScatterSeries.html). [`ShapeType`]() is used to change the rendering shape of fast scatter bitmap series. The available shapes are [`Cross`](), [`Diamond`](), [`Ellipse`](), [`Hexagon`](), [`InvertedTriangle`](), [`Pentagon`](), [`Plus`](), [`Rectangle`]() and [`Triangle`]().
 
 {% tabs %}
 
@@ -233,7 +233,7 @@ chart.Series.Add(series);
 
 ![FastStepLineBitmap chart type in WinUI](FastChart_images/faststeplinebitmap_chart.png)
 
-The anti aliasing mode can be enabled using [`EnableAntiAliasing`]() property of FastStepLineBitmapSeries as in below code snippet:
+The anti aliasing mode can be enabled using the [`EnableAntiAliasing`]() property of FastStepLineBitmapSeries as shown in the following code sample.
 
 {% tabs %}
 
