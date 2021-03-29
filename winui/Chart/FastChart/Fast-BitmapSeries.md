@@ -9,7 +9,7 @@ documentation: ug
 
 # Fast Bitmap Series in WinUI Charts (SfChart)
 
-A fast bitmap series is a special kind of series that can render a collection with huge number of data points. A fast bitmap series displays a series of segments rendered using WritableBitmap. 
+A fast bitmap series is a special kind of series that can render a collection with huge number of data points. A fast bitmap series is rendered using WritableBitmap. 
 
 ## FastLineBitmap Chart
 
@@ -158,7 +158,7 @@ chart.Series.Add(series);
 
 ## FastScatterBitmap Chart
 
-[`FastScatterBitmapSeries`]() used to render high number scatter points. The [`ScatterHeight`]() and [`ScatterWidth`]() also available as in ScatterSeries. [`ShapeType`]() is used to change the rendering shape of fast scatter bitmap series. The available shapes are [`Cross`](), [`Diamond`](), [`Ellipse`](), [`Hexagon`](), [`InvertedTriangle`](), [`Pentagon`](), [`Plus`](), [`Rectangle`]() and [`Triangle`]().
+[`FastScatterBitmapSeries`]() used to render high number scatter points. The [`ScatterHeight`]() and [`ScatterWidth`]() also available as in [`ScatterSeries`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ScatterSeries.html). [`ShapeType`]() is used to change the rendering shape of fast scatter bitmap series. The available shapes are [`Cross`](), [`Diamond`](), [`Ellipse`](), [`Hexagon`](), [`InvertedTriangle`](), [`Pentagon`](), [`Plus`](), [`Rectangle`]() and [`Triangle`]().
 
 {% tabs %}
 

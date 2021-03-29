@@ -7,9 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Fast Series in WinUI Charts (SfChart)
-
-A fast series is a special kind of series that can render a collection with huge number of data points. Fast series is rendered using a polyline segment.
+# FastLine Series in WinUI Charts (SfChart)
 
 ## FastLine Chart
 
