@@ -341,16 +341,16 @@ sfCalendarDateRangePicker.MonthHeaderFormat = "{month.abbreviated} {year.abbrevi
 
 ![Displaying full month and abbreviated year format in WinUI CalendarDateRangePicker.](Getting-Started_images/dateformat.gif)
 
-## Restrict the end range value selection
+## Limit duration of selected range
 
-You can restrict the end range value selection of `SelectedRange` property value by using `MinDayCount` and `MaxDayCount` properties.
+You can limit the duration of selected range in `CalendarDateRangePicker` control value by using `MinDatesCountInRange` and `MaxDatesCountInRange` properties.
 
 {% tabs %}
 {% highlight C# %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
-sfCalendarDateRangePicker.MaxDayCount = 10;
-sfCalendarDateRangePicker.MaxDayCount = 5;
+sfCalendarDateRangePicker.MaxDatesCountInRange = 10;
+sfCalendarDateRangePicker.MinDatesCountInRange = 5;
 
 {% endhighlight  %}
 {% endtabs %}
@@ -385,7 +385,7 @@ sfCalendarDateRangePicker.MaxDisplayMode = CalendarDisplayMode.Year;
 
 ## Calendar types
 
-The `CalendarDateRangePicker` control supports different type of calendars such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using [CalendarIdentifier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_CalendarIdentifier) property. The default value of `CalendarIdentifier` property is `GregorianCalendar`.
+The `CalendarDateRangePicker` control supports different type of calendars such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using `CalendarIdentifier` property. The default value of `CalendarIdentifier` property is `GregorianCalendar`.
 
 You can select the required `CalendarIdentifier` value from below types.
  * JulianCalendar

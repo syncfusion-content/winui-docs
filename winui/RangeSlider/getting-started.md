@@ -25,7 +25,7 @@ The default value of the [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfu
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider />
 
@@ -46,7 +46,7 @@ You can show values in the range slider by setting double values to the [`RangeS
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70" />
@@ -72,7 +72,7 @@ You can enable ticks in the range slider using the [`ShowTicks`](https://help.sy
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -100,7 +100,7 @@ You can enable labels in the range slider using the [`ShowLabels`](https://help.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -128,7 +128,7 @@ You can enable divisors in the range slider using the [`ShowDivisors`](https://h
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"

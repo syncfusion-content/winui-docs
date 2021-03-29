@@ -25,7 +25,7 @@ The default value of the [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfu
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider />
 
@@ -46,7 +46,7 @@ You can show value in the slider by setting double value to the [`Value`](https:
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50" />
 
@@ -70,7 +70,7 @@ You can enable ticks in the slider using the [`ShowTicks`](https://help.syncfusi
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  ShowTicks="True" />
@@ -96,7 +96,7 @@ You can enable labels in the slider using the [`ShowLabels`](https://help.syncfu
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  ShowLabels="True" />
@@ -122,7 +122,7 @@ You can enable divisors in the slider using the [`ShowDivisors`](https://help.sy
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  ShowDivisors="True"
