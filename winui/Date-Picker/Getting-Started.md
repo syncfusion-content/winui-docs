@@ -196,6 +196,49 @@ private void SfDatePicker_DateChanged(DependencyObject d, DependencyPropertyChan
 {% endhighlight %}
 {% endtabs %}
 
+## Cancel a date that is being changed
+
+The `DateChanging` event will be triggered, as soon as a date is selected but before `SelectedDate` property is updated. If the change is considered invalid, it can be canceled. The `DateChanging` event contains the following properties.
+
+* `OldDate` - Gets a date which is previously selected.
+* `NewDate` - Gets a date which is currently selected.
+* `Cancel` - Gets or sets whether to cancel the selected date value update.
+
+Users are restricted to select a blackout date from dropdown, however user can give text input through editor. As selecting a blackout date leads to crash, we can cancel the change using `DateChanging` event.
+
+N> `DateChanging` event is called before the `DateChanged` event when a date is selected.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editor:SfDatePicker Height="35" Width="150" DateChanging="SfDatePicker_DateChanging" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfDatePicker sfDatePicker = new SfDatePicker();
+sfDatePicker.DateChanging += SfDatePicker_DateChanging;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows:
+
+{% tabs %}
+{% highlight C# %}
+
+ private void SfDatePicker_DateChanging(object sender, Syncfusion.UI.Xaml.Editors.DateChangingEventArgs e)
+{
+    var OldDate = e.OldDate;
+    var NewDate = e.NewDate;
+
+    //Cancel Selected date update
+    e.Cancel = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Change date display format
 
  You can edit and display the selected date with various formatting like date, month and year formats by using the [FormatString](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_FormatString) property. The default value of `FormatString` property is `d`.
