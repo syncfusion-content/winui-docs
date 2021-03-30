@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Axis of Syncfusion WinUI Gauge
-description: This article describes how to add and customizes the appearence of linear axis and its element of linear gauge in WinUI platform
+description: This article describes how to add and customize the appearence of linear axis and its element of linear gauge in WinUI platform
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 # Linear axis Feature in WinUI Linear Gauge (SfLinearGauge)
 
-The `Linear axis` is a linear scale, where a set of values can be plotted along a linear or custom scale based on the design requirements. Axis elements such as  labels, ticks and axis line can be easily customized with built-in properties.
+The `Linear axis` is a linear scale, where a set of values can be plotted along with a linear or custom scale, based on the design requirements. Axis elements such as labels, ticks, and axis line can be easily customized with built-in properties.
 
 ## Axis customization
 
 **Setting axis minimum and maximum value** 
 
-The `Minimum` and `Maximum` properties of an axis can be used to customize the axis value range. The default value of `Minimum` is 0 and the default value of `Maximum` is 100.
+The `Minimum` and `Maximum` properties of an axis can be used to customize the axis value range. The default value of `Minimum` is 0 and  `Maximum` is 100.
 
 {% tabs %}
 
@@ -95,11 +95,11 @@ this.Content = new SfLinearGauge { IsInversed = true };
 
 ![axis direction](images/axis/axis_inversed.png)
 
-**Mirrored Axis support**
+**Mirrored axis support**
 
-`Linear axis` can be displayed as mirrored by using `IsMirrored` property of `Linear gauge`.
+`Linear axis` can be displayed as mirrored by using the `IsMirrored` property of `Linear gauge`.
 
-When the `IsMirrored` property is true, the axis can be rendered in mirrored/opposite direction.
+When the `IsMirrored` property is true, the axis can be rendered in mirrored or opposite direction.
 
 {% tabs %}
 
@@ -121,7 +121,7 @@ this.Content = new SfLinearGauge { IsMirrored = true };
 
 **Axis orientation support**
 
-The orientation of `Linear axis` can be customized by the `Orientation` property of `Linear gauge`. 
+The orientation of `Linear axis` can be customized by using the `Orientation` property of `Linear gauge`. 
 
 When the `Orientation` property is `Vertical`, the axis will be rendered in bottom-to-top direction.
 
@@ -145,7 +145,7 @@ this.Content = new SfLinearGauge { Orientation = Orientation.Vertical };
 
 **Maximum number of labels per 100 logical pixels**
 
-By default, a maximum of three labels are displayed for each 100 logical pixels in an axis. The maximum number of labels that should present within 100 logical pixels length can be customized using the `MaximumLabelsCount` property of the axis. This property is applicable only for automatic range calculation and will not work if you set value for interval property of an axis.
+The maximum number of labels that should be present within 100 logical pixels length can be customized using the `MaximumLabelsCount` property of the axis. This property is applicable only for automatic range calculation and will not work, if you set value for interval property of an axis.
 
 {% tabs %}
 
@@ -173,13 +173,13 @@ this.Content = sfLinearGauge;
 
 ## Axis line customization
 
-The linear axis line can be customized using the following properties.
+The linear axis line can be customized using the following properties:
 
-* `AxisLineStrokeThickness` – Customizes the thickness of axis line.
+* `AxisLineStrokeThickness` – Customizes the thickness of the axis line.
 * `AxisLineStroke` – Customizes the color of the axis line.
 * `AxisLineStyle` – Customizes the style of the axis line.
 
-**Axis line Stroke Thickness**
+**Axis line stroke thickness**
 
 The axis line will be rendered based on the pixel value given in `AxisLineStrokeThickness`.
 
@@ -265,7 +265,7 @@ this.Content = sfLinearGauge;
 
 ## Axis label customization
 
-The axis labels can be customized using the following properties
+The axis labels can be customized using the following properties:
 
 * `Foreground` – Allows to customize the color of the labels.
 * `FontFamily` – Allows to specify the font family for labels.
@@ -335,7 +335,7 @@ this.Content = sfLinearGauge;
 
 **Template support for axis label**
 
-The `LabelTemplate` property allows you to define the customized style for the axis label like the below code example.
+The `LabelTemplate` property allows you to define the customized style for the axis label as shown in the following code sample.
 
 {% tabs %}
 
@@ -376,7 +376,7 @@ this.Content = sfLinearGauge;
 
 **Label visibility**
 
-The `ShowLabels` property of axis allows to enable or disable the visibility of labels. The default value of the property is true.
+The `ShowLabels` property of axis allows to enable or disable the visibility of labels. The default value of this property is true.
 
 {% tabs %}
 
@@ -460,7 +460,7 @@ this.Content = sfLinearGauge;
 
 ## Tick customization
 
-The major and minor tick lines of an axis can be customized using the below properties.
+The major and minor tick lines of an axis can be customized using the following properties:
 
 * `MajorTickLength` – Specifics the major length of ticks.
 
@@ -578,7 +578,7 @@ this.Content = sfLinearGauge;
 
 **Setting dashed tick lines**
 
-By defining `StrokeDashArray` property in both [`MajorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_MajorTickStyle) and [`MinorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_MinorTickStyle) to draw the dashed tick line.
+By defining `StrokeDashArray` property in both the [`MajorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_MajorTickStyle) and [`MinorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_MinorTickStyle), you can draw the dashed tick line.
 
 {% tabs %}
 
@@ -630,7 +630,7 @@ this.Content = sfLinearGauge;
 
 **Setting minor ticks count**
 
-The major ticks are generated based on the `Interval` property. Like major ticks, the minor ticks are generated using the `MinorTicksPerInterval` property of axis. By default, the count value of this property is 1.
+The major ticks are generated based on the `Interval` property. Similarly, the minor ticks are generated using the `MinorTicksPerInterval` property of axis. By default, the count value of this property is 1.
 
 {% tabs %}
 
@@ -658,7 +658,7 @@ this.Content = sfLinearGauge;
 
 **Tick line visibility**
 
-The `ShowTicks` property of the axis is used to enable or disable the visibility of both the major and the minor ticks of axis. The default value of this property is true.
+The `ShowTicks` property of the axis can be used to enable or disable the visibility of both the major and the minor ticks of axis.
 
 {% tabs %}
 
@@ -742,7 +742,7 @@ this.Content = sfLinearGauge;
 
 ## Custom scale range
 
-`linear gauge` allows you to define a custom scale range by extending the axis based on your business logic.
+`Linear gauge` allows you to define a custom scale range by extending the axis based on your business logic.
 
 {% tabs %}
 
