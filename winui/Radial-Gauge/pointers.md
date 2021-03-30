@@ -12,7 +12,7 @@ documentation: ug
  Pointer is used to indicate values on an axis. The radial gauge control has three types of pointers: 
 
 [`Marker pointer`](https://help.syncfusion.com/winui/radial-gauge/marker-pointer)
-[`Needle Pointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.NeedlePointer.html)
+[`Needle Pointer`](https://help.syncfusion.com/winui/radial-gauge/needle-pointer)
 [`Range pointer`](https://help.syncfusion.com/winui/radial-gauge/range-pointer)
 
 All the pointers can be customized as needed. You can add multiple pointers to the gauge to point multiple values on the same scale. The value of the pointer is set using the [`Value`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_Value) property.
