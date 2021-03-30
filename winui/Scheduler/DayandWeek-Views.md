@@ -226,27 +226,6 @@ The `SpecialTimeRegion` can be customized on a date basis by setting the value o
 
 ![special-time-region-customization-in-datebasis-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-special-time-region-customization-in-datebasis-in-winui-scheduler.png)
 
-## Full screen scheduler
-
-The Scheduler time interval size can be adjusted based on screen height by changing the value of `TimeIntervalSize` property of `DaysViewSettings` to -1. It will auto-fit to the screen height and width.
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
-    <syncfusion:SfScheduler.DaysViewSettings>
-        <syncfusion:DaysViewSettings 
-            TimeIntervalSize="-1"/>
-        </syncfusion:SfScheduler.DaysViewSettings>
-</syncfusion:SfScheduler>
-{% endhighlight %}
-{% highlight c# %}
-this.Schedule.ViewType = SchedulerViewType.Week;
-this.Schedule.DaysViewSettings.TimeIntervalSize = -1;
-{% endhighlight %}
-{% endtabs %}
-
-![full-screen-scheduler-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-full-screen-scheduler-in-winui-scheduler.png)
-
 ## Change time ruler size
 
 You can customize the size of the time ruler view where the labels mentioning the time are placed by using the `TimeRulerSize` property of `DayViewSettings`.
