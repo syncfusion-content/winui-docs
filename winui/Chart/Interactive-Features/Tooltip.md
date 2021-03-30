@@ -72,7 +72,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip support in WinUI Chart](Interactive-Features_images/Interactive-Features_img1.png)
+![Tooltip support in WinUI Chart](Interactive-Features_images/Interactive-Features_img1.jpeg)
 
 ## Customizing tooltip using ChartTooltipBehavior
 
@@ -153,8 +153,6 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip background style customization in WPF Chart](Interactive-Features_images/Interactive-Features_img2.png)
-
 ### Customizing the tooltip label style
 
 The tooltip label style can be customized using the `LabelStyle` property. To define a `Style` for the tooltip label, specify the style of `TargetType` as `TextBlock.`
@@ -192,8 +190,6 @@ chart.Behaviors.Add(tooltipBehavior);
 {% endhighlight %}
 
 {% endtabs %}
-
-![Tooltip label style customization in WPF Chart](Interactive-Features_images/Interactive-Features_img3.png)
 
 ## Customizing tooltip using ChartTooltip attached properties
 
@@ -263,7 +259,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip alignment support in WinUI Chart](Interactive-Features_images/Interactive-Features_img4.png)
+![Tooltip alignment support in WinUI Chart](Interactive-Features_images/Interactive-Features_img2.jpeg)
 
 N> By default the horizontal alignment is center for the tooltip.
 
@@ -329,7 +325,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip alignment support in WinUI Char](Interactive-Features_images/Interactive-Features_img5.png)
+![Tooltip alignment support in WinUI Char](Interactive-Features_images/Interactive-Features_img3.jpeg)
 
 
 **TooltipMargin**
@@ -400,7 +396,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Margin for tooltip in WinUI Char](Interactive-Features_images/Interactive-Features_img6.png)
+![Margin for tooltip in WinUI Char](Interactive-Features_images/Interactive-Features_img4.jpeg)
 
 
 N>By default, the VerticalAlignment of the Tooltip is Top.
@@ -481,7 +477,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![VerticalOffset and HorizontalOffset support for tooltip in WinUI Chart](Interactive-Features_images/Interactive-Features_img7.png)
+![VerticalOffset and HorizontalOffset support for tooltip in WinUI Chart](Interactive-Features_images/Interactive-Features_img5.jpeg)
 
 ### Tooltip duration
 
@@ -714,6 +710,6 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip customization support in WinUI Chart](Interactive-Features_images/Interactive-Features_img8.png)
+![Tooltip customization support in WinUI Chart](Interactive-Features_images/Interactive-Features_img6.jpeg)
 
 N> The `ChartTooltipBehavior` is commonly used for all series to customize the tooltip. You can use the attached `ChartTooltip` properties in a series if you need to customize the appearance of the tooltip based on a particular series. Series attached properties are considered as a high precedence.
