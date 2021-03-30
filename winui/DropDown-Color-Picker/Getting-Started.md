@@ -402,3 +402,24 @@ private void SfDropDownColorPicker_DropDownClosed(object sender, EventArgs e) {
 
 {% endhighlight %}
 {% endtabs %}
+
+## Customizing control in drop down
+
+You can customize the control displayed in drop down of `DropDownColorPicker` by using [AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfDropDownColorPicker Height="35" Width="75">
+    <FlyoutBase.AttachedFlyout>
+        <editors:DropDownFlyout>
+            <editors:SfColorPicker BrushTypeOptions="LinearGradientBrush" BorderThickness="0" >
+            </editors:SfColorPicker>
+        </editors:DropDownFlyout>
+    </FlyoutBase.AttachedFlyout>
+</editors:SfDropDownColorPicker>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Customizing the DropDownColorPicker dropdown UI](Getting-Started_images/CustomizedDropDown.png)

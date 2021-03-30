@@ -165,6 +165,8 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can restrict the users from selecting a date within the particular range by specifying [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_MinDate) and [MaxDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_MaxDate) properties. The default value of `MinDate` property is `1/1/1920 12:00:00 AM +00:00` and `MaxDate` property is `12/31/2120 11:59:59 PM +00:00`.
 
+N> Dates that appears outside the minimum and maximum date range will be disabled (blackout).
+
 {% tabs %}
 {% highlight xaml %}
 
@@ -431,7 +433,19 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 The `CalendarDatePicker` control supports different type of calendars such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using [CalendarIdentifier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_CalendarIdentifier) property. The default value of `CalendarIdentifier` property is `GregorianCalendar`.
 
-N> Refer [CalendarIdentifiers](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.calendaridentifiers?view=winrt-19041) page to get more calendar types.
+You can select the required `CalendarIdentifier` value from below types.
+
+ * JulianCalendar
+ * GregorianCalendar
+ * HebrewCalendar
+ * HijriCalendar
+ * KoreanCalendar
+ * TaiwanCalendar
+ * ThaiCalendar
+ * UmAlQuraCalendar
+ * PersianCalendar
+
+N> The value in `CalendarDatePicker` control textbox is updated based on `CalendarIdentifier` property calendar type.
 
 {% tabs %}
 {% highlight xaml %}
@@ -474,3 +488,48 @@ sfCalendarDatePicker.Language = "ar";
 ![Displaying arabic cultured WinUI CalendarDatePicker.](Getting-Started_images/Language.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Formatting)
+
+## Cancel a date that is being changed
+
+The `DateChanging` event will be triggered, as soon as a date is selected but before `SelectedDate` property is updated. If the change is considered invalid, it can be canceled. The `DateChanging` event contains the following properties.
+
+* `OldDate` - Gets a date which is previously selected.
+* `NewDate` - Gets a date which is currently selected.
+* `Cancel` - Gets or sets whether to cancel the selected date value update.
+
+Users are restricted to select a blackout date from dropdown, however user can give text input through editor. As selecting a blackout date leads to crash, we can cancel the change using `DateChanging` event.
+
+N> `DateChanging` event is called before the `SelectedDateChanged` event when a date is selected.
+
+{% tabs %}
+{% highlight XAML %}
+
+<calendar:SfCalendarDatePicker Height="30" Width="250" 
+                               x:Name="SfCalendarDatePicker"
+                               DateChanging="SfCalendarDatePicker_DateChanging" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
+sfCalendarDatePicker.DateChanging += SfCalendarDatePicker_DateChanging;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows:
+
+{% tabs %}
+{% highlight C# %}
+
+ private void SfCalendarDatePicker_DateChanging(object sender, Syncfusion.UI.Xaml.Editors.DateChangingEventArgs e)
+{
+    var OldDate = e.OldDate;
+    var NewDate = e.NewDate;
+
+    //Cancel Selected date update
+    e.Cancel = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
