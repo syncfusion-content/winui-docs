@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started for Syncfusion WinUI Linear Gauge
-description: A quick tour to initial users about Syncfusion Linear Gauge control for the WinUI platform. It provide overview on SfLinearGauge. 
+description: A quick guide to initial users about Syncfusion Linear Gauge control for the WinUI platform. It provides overview on SfLinearGauge.
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
@@ -9,17 +9,17 @@ documentation: ug
 
 # Getting Started with WinUI Linear Gauge (SfLinearGauge)
 
-This section explains the steps required to add the Linear Gauge control and its elements such as axis, range, and pointer. This section covers only basic features needed to get started with Syncfusion linear gauge control.
+This section explains the steps required to add the Linear Gauge control and its elements such as axis, range, and pointer. This section covers only basic features needed to get started with Syncfusion Linear Gauge control.
 
 ## Creating an application with WinUI Linear Gauge
 
-1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
+1. Create a simple project using the instructions given in this [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
 
 2. Add reference to [Syncfusion.Gauge.WinUI](https://www.nuget.org/packages/Syncfusion.Gauge.WinUI) NuGet.
 
-3. Import the control namespace `Syncfusion.UI.Xaml.Gauges`  in XAML or C# code.
+3. Import the control namespace `Syncfusion.UI.Xaml.Gauges` in XAML or C# code.
 
-4. Initialize the SfLinearGauge control
+4. Initialize the `SfLinearGauge` control.
 
 {% tabs %}
 
@@ -40,11 +40,11 @@ this.Content = sfLinearGauge;
 
 ![Initialize linear gauge](images/getting-started/gauge.png)
 
-N> Default axis will be added when initializing the linear gauge control.
+N> Default axis will be added when initializing the Linear Gauge control.
 
 ## Add axis to the linear gauge
 
-You can set a linear axis for the gauge using Axis property of SfLinearGauge. You can specify the minimum and maximum values of axis using the `Minimum` and `Maximum` properties as demonstrated in the following code snippet.
+You can set a linear axis for the gauge using the `Axis` property of `SfLinearGauge` and also you can specify the minimum and maximum values of axis using the `Minimum` and `Maximum` properties as demonstrated in the following code sample.
 
 {% tabs %}
 
@@ -76,7 +76,7 @@ this.Content = sfLinearGauge;
 
 ## Add range to the linear gauge
 
-Ranges contain a list of range elements, where you can add any number of ranges inside the axis. You can specify the start value, mid value, end value and background color for range using the `StartValue`, `MidValue`, `EndValue` and `Background` properties as demonstrated in the following code.   
+Ranges contains a list of range elements, where you can add any number of ranges inside the axis. You can specify the start value, mid value, end value, and background color for the range using the `StartValue`, `MidValue`, `EndValue` and `Background` properties as demonstrated in the following code sample.
 
 {% tabs %}
 
@@ -177,11 +177,11 @@ this.Content = sfLinearGauge;
 
 ## Add marker pointer to the linear gauge
 
-MarkerPointers contains a list of pointer elements, where you can add any number of gauge pointers such as `ShapePointer`, and `ContentPointer` inside the axis to indicate the value.
+MarkerPointers contains a list of pointer elements, where you can add any number of gauge pointers such as `ShapePointer`, and `ContentPointer`, inside the axis to indicate the value.
 
 **Add shape pointer to the linear gauge**
 
-Shape pointer is to highlight current values by using different types of shape pointers.
+Shape pointer is to highlight current values by using the different types of shape pointers.
 
 {% tabs %}
 
@@ -225,7 +225,7 @@ this.Content = sfLinearGauge;
 
 **Add content pointer to the linear gauge**
 
-Content pointer is to highlight values using an image, icon, text, or any other custom view.
+Content pointer is used to highlight values using an image, icon, text, or any other custom view.
 
 {% tabs %}
 

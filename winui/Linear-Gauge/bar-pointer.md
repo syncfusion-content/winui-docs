@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion WinUI Gauge Pointers
-description: This article describes how to add and customizes the appearence of pointers of linear gauge control in WinUI platform
+description: This article describes how to add and customize the appearence of pointers of linear gauge control in WinUI platform
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
@@ -82,7 +82,7 @@ this.Content = sfLinearGauge;
 
 **Setting background brush to the pointer**
 
-By using `Background` property you can change the color of the bar pointer.
+By using `Background` property, you can change the color of the bar pointer.
 
 {% tabs %}
 
@@ -165,7 +165,7 @@ this.Content = sfLinearGauge;
 
 **Corner style customization**
 
- The `CornerStyle` property of `bar pointer` specifies the corner type for pointer. The corners can be customized using the [`BothFlat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_BothFlat), [`BothCurve`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_BothCurve), [`StartCurve`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_StartCurve) and [`EndCurve`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_EndCurve) options. The default value of this property is [`BothFlat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_BothFlat).
+ The `CornerStyle` property of `bar pointer` specifies the corner type for the pointer. The corners can be customized using the [`BothFlat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_BothFlat), [`BothCurve`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_BothCurve), [`StartCurve`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_StartCurve) and [`EndCurve`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_EndCurve) options. The default value of this property is [`BothFlat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_BothFlat).
 
 {% tabs %}
 
@@ -210,7 +210,7 @@ this.Content = sfLinearGauge;
 
 ## Position customization
 
-The bar pointer pointer can be moved far or near to the axis line using the `Offset` property. The default value of offset is 0.
+The bar pointer can be moved far or near to the axis line using the `Offset` property. The default value of offset is 0.
 
 To move the pointer inside of the axis, provide positive values.
 
@@ -252,7 +252,7 @@ this.Content = sfLinearGauge;
 
 **Child support**
 
-By using `Child` property of `bar pointer`, you can provide child for bar pointer. The child content is used to add any visual content like text or images inside the bar pointer to improve readability.
+By using `Child` property of `bar pointer`, you can provide a child for bar pointer. The child content is used to add any visual content like text or images, inside the bar pointer to improve readability.
 
 {% tabs %}
 

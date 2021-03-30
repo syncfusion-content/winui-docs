@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion WinUI Gauge Pointers
-description: This article describes how to add and customizes the appearence of pointers of linear gauge control in WinUI platform
+description: This article describes how to add and customize the appearence of pointers of linear gauge control in WinUI platform
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Shape Pointer in WinUI Linear Gauge (SfLinearGauge)
 
-Indicate current values by using different types of shape pointers. You can change the shape type using the `ShapeType` property.
+Indicate current values by using the different types of shape pointers. You can change the shape type using the `ShapeType` property.
 
 {% tabs %}
 
@@ -202,7 +202,7 @@ this.Content = sfLinearGauge;
 
 **Shape pointer alignment**
 
-You can change the horizontal or vertical position of the shape pointer either Start, End or Center by using the `HorizontalAnchor` and `VerticalAnchor` properties. The default value of `HorizontalAnchor` and `VerticalAnchor` properties are Center.
+You can change the horizontal or vertical position of the shape pointer either start, end or center by using the `HorizontalAnchor` and `VerticalAnchor` properties. The default value of `HorizontalAnchor` and `VerticalAnchor` properties are center.
 
 {% tabs %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion WinUI Gauge Pointers
-description: This article describes how to add and customizes the appearence of pointers of linear gauge control in WinUI platform
+description: This article describes how to add and customize the appearence of pointers of linear gauge control in WinUI platform
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
@@ -150,7 +150,7 @@ this.Content = sfLinearGauge;
 
 **Content pointer alignment**
 
-You can change the horizontal or vertical position of the content pointer either Start, End or Center by using the `HorizontalAnchor` and `VerticalAnchor` properties. The default value of `HorizontalAnchor` and `VerticalAnchor` properties are Center.
+You can change the horizontal or vertical position of the content pointer either start, end or center by using the `HorizontalAnchor` and `VerticalAnchor` properties. The default value of `HorizontalAnchor` and `VerticalAnchor` properties are Center.
 
 {% tabs %}
 

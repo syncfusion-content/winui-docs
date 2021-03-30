@@ -63,7 +63,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Customize individual items in Calendar
 
-You can change the UI of specific cells in `CalendarDatePicker` by using the [AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
+You can change the UI of specific cells in `CalendarDatePicker` dropdown calendar by using the [AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
 
 {% tabs %}
 {% highlight C# %}
@@ -248,6 +248,9 @@ public class CustomCalendarItemTemplateSelector : DataTemplateSelector
     </calendar:SfCalendarDatePicker>
 </Grid>
 
+{% endhighlight %}
+{% endtabs %}
+
 ![Custom UI of specific date cells in CalendarDatePicker](Getting-Started_images/ItemTemplateSelector.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/CustomUI)
@@ -402,7 +405,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 By default, `SfCalendarDatePicker` control flow direction is updated based on `CalendarIdentifier` property value. You can change the flow direction  of `SfCalendarDatePicker` control and the dropdown calendar layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
 
-N> When both `CalendarIdentifier` and `FlowDirection` properties are set, `FlowDirection` property is given precedence.
+N> When `CalendarIdentifier` and `FlowDirection` properties value are changed, `FlowDirection` property is given precedence.
 
 {% tabs %}
 {% highlight XAML %}
