@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started | WinUI | Scheduler | Syncfusion
-description: Learn here about getting started with Syncfusion WinUI Scheduler (SfScheduler) control and more details. 
+description: Learn here about getting started with the Syncfusion WinUI Scheduler (SfScheduler) control and more details. 
 platform: winui
 control: Scheduler
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 # Getting started with WinUI Scheduler (SfScheduler)
 
-This section provides you an overview for working with SfScheduler for WinUI and also provides a walk through to configure SfScheduler control in real time scenario.
+This section provides you an overview of working with SfScheduler for WinUI and also provides a walk-through to configure the SfScheduler control in a real-time scenario.
 
 ## Creating an application with WinUI Scheduler
 
 1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
 
-2. Add reference to [Syncfusion.Scheduler.WinUI](https://www.nuget.org/packages/Syncfusion.Scheduler.WinUI) NuGet. 
+2. Add reference to the [Syncfusion.Scheduler.WinUI](https://www.nuget.org/packages/Syncfusion.Scheduler.WinUI) NuGet. 
 
 3. Import the control namespace `Syncfusion.UI.Xaml.Scheduler` in XAML or C# code.
 
@@ -30,12 +30,12 @@ This section provides you an overview for working with SfScheduler for WinUI and
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:schedule="using:Syncfusion.UI.Xaml.Scheduler"
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <schedule:SfScheduler x:Name="Schedule" ViewType="Month" />
+        <scheduler:SfScheduler x:Name="Schedule" ViewType="Month" />
     </Grid>
 </Page>
 
@@ -53,8 +53,8 @@ namespace GettingStarted
         public MainPage()
         {
             this.InitializeComponent();
-            SfScheduler schedule = new SfScheduler();
-            this.Content = schedule;
+            SfScheduler scheduler = new SfScheduler();
+            this.Content = scheduler;
         }
     }
 }
@@ -63,11 +63,11 @@ namespace GettingStarted
 
 ## Change different SfScheduler Views
 
-`SfScheduler` control provides eight different types of views to display dates and it can be assigned to the control by using `ViewType` property. By default the control is assigned with `Month` View. Current date will be displayed initially for all the Schedule views.
+The `SfScheduler` control provides eight different types of views to display dates and it can be assigned to the control by using the `ViewType` property. By default, the control is assigned with the `Month` view. The current date will be displayed initially for all the Schedule views.
 
 {% tabs %}
 {% highlight xaml %}
- <schedule:SfScheduler x:Name="Schedule" ViewType="Month" />
+ <scheduler:SfScheduler x:Name="Schedule" ViewType="Month" />
 {% endhighlight %}
 {% highlight c# %}
 this.Schedule.ViewType = SchedulerViewType.Month;
@@ -78,7 +78,7 @@ this.Schedule.ViewType = SchedulerViewType.Month;
 
 ## Appointments
 
-`SfScheduler` has a built-in capability to handle the appointment arrangement internally based on the `ScheduleAppointment` collections. You need to allocate the collection generated to Appointments property.
+The `SfScheduler` has a built-in capability to handle the appointment arrangement internally based on the `ScheduleAppointment` collections. You need to allocate the collection generated to the Appointments property.
 
 ### Adding Appointments
 
@@ -86,10 +86,10 @@ The `ScheduleAppointment` is a class that includes the specific scheduled appoin
 
 {% tabs %}
 {% highlight c# %}
-// Creating an instance for schedule appointment collection
+// Creating an instance for the schedule appointment collection.
 var scheduleAppointmentCollection = new ScheduleAppointmentCollection();
 
-//Adding schedule appointment in the schedule appointment collection 
+//Adding schedule appointment in the schedule appointment collection. 
 scheduleAppointmentCollection.Add(new ScheduleAppointment()
 {
     StartTime = new DateTime(2021, 03, 16, 10, 0, 0),
@@ -98,7 +98,7 @@ scheduleAppointmentCollection.Add(new ScheduleAppointment()
     Location = "Hutchison road",
 });
 
-//Adding schedule appointment collection to the ItemSource of SfScheduler
+//Adding the schedule appointment collection to the ItemSource of SfScheduler.
 Schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
@@ -109,9 +109,9 @@ N> [View sample in GitHub]()
 
 You can also map custom appointments data to our scheduler.
 
-N> CustomAppointment class should contain two DateTime fields and a string field as mandatory.
+N> The CustomAppointment class should contain two DateTime fields and a string field as mandatory.
 
-Here steps to render meetings using `SfScheduler` control with respective custom data properties created in a class `Meeting`.
+Here steps to render meetings using the `SfScheduler` control with respective custom data properties created in a class `Meeting.`
 
 * [Creating custom class to map that objects with ScheduleAppointment](#creating-custom-class-to-map-that-objects-with-ScheduleAppointment)
 * [Create view model](#create-view-model)
@@ -119,12 +119,12 @@ Here steps to render meetings using `SfScheduler` control with respective custom
 * [Bind item source for Scheduler](#binding-item-source-for-Scheduler-control)
 
 ### Creating custom class to map that object with appointment
-You can create a custom class `Meeting` with mandatory fields `From`, `To` and `EventName`.
+You can create a custom class `Meeting` with mandatory fields `From,` `To,` and `EventName`.
 
 {% tabs %}
 {% highlight c# %}  
     /// <summary>    
-    /// Represents custom data properties.    
+    /// Represents the custom data properties.    
     /// </summary>    
     public class Meeting 
     { 
@@ -140,11 +140,11 @@ You can create a custom class `Meeting` with mandatory fields `From`, `To` and `
 {% endhighlight %}
 {% endtabs %}
 
-N> You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
+N> You can inherit this class from the `INotifyPropertyChanged` for dynamic changes in custom data.
 
 ### Create view model
 
-By setting `From` and `To` of Meeting class, you can schedule meetings for a specific day. You can also change the `Subject` and `color` of appointment using `EventName` and `Color` property. You may define the list of custom appointments in a separate class of `ViewModel`.
+By setting `From` and `To` of Meeting class, you can schedule meetings for a specific day. You can also change the `Subject` and `color` of the appointment using the `EventName` and `Color` properties. You may define the list of custom appointments in a separate class of `ViewModel`.
 
 {% tabs %}
 {% highlight c# %}
@@ -177,7 +177,7 @@ public class SchedulerViewModel
     }
 
     /// <summary>
-    /// Gets or sets appointments
+    /// Gets or sets appointments.
     /// </summary>
     public ObservableCollection<SchedulerModel> Appointments
     {
@@ -234,7 +234,7 @@ public class SchedulerViewModel
     }
 
     /// <summary>
-    /// Initialize appointments
+    /// Initialize appointments.
     /// </summary>
     /// <param name="count">count value</param>
     private void IntializeAppoitments()
@@ -284,7 +284,7 @@ public class SchedulerViewModel
                 }
             }
 
-        // Minimum Height Meetings
+        // Minimum Height Meetings.
         DateTime minDate;
         DateTime minDateFrom = DateTime.Now.AddDays(-2);
         DateTime minDateTo = DateTime.Now.AddDays(2);
@@ -305,7 +305,7 @@ public class SchedulerViewModel
     }
 
     /// <summary>
-    /// Method to get foreground color based on background.
+    /// Method to get the foreground color based on background.
     /// </summary>
     /// <param name="backgroundColor"></param>
     /// <returns></returns>
@@ -325,9 +325,9 @@ You can map those properties of the `Meeting` class with our `SfScheduler` contr
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule">
-    <syncfusion:SfScheduler.AppointmentMapping>
-        <syncfusion:AppointmentMapping
+<scheduler:SfScheduler x:Name="Schedule">
+    <scheduler:SfScheduler.AppointmentMapping>
+        <scheduler:AppointmentMapping
             Subject="EventName"
             StartTime="From"
             EndTime="To"
@@ -336,8 +336,8 @@ You can map those properties of the `Meeting` class with our `SfScheduler` contr
             IsAllDay="IsAllDay"
             StartTimeZone="StartTimeZone"
             EndTimeZone="EndTimeZone"/>
-    </syncfusion:SfScheduler.AppointmentMapping>
-</syncfusion:SfScheduler>
+    </scheduler:SfScheduler.AppointmentMapping>
+</scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# %} 
 using Syncfusion.UI.Xaml.Scheduler;
@@ -365,7 +365,7 @@ Create meetings of type `ObservableCollection<Appointments>` and assign those ap
 </Page.DataContext>
 
 <Grid>
-    <syncfusion:SfScheduler x:Name="Schedule" ItemsSource="{Binding Appointments}" ViewType="Month"/>
+    <scheduler:SfScheduler x:Name="Schedule" ItemsSource="{Binding Appointments}" ViewType="Month"/>
 </Grid>
 {% endhighlight %}
 {% highlight c# %}
@@ -378,14 +378,14 @@ N> [View sample in GitHub]()
 
 ## Change first day of week
 
-SfScheduler control will be rendered with `Sunday` as the first day of the week, but you can customize to any day by using `FirstDayOfWeek` property of `SfScheduler`.
+The SfScheduler control will be rendered with `Sunday` as the first day of the week but you can customize it to any day by using the `FirstDayOfWeek` property of `SfScheduler`.
 
 {% tabs %}  
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"  FirstDayOfWeek="Monday"/>
+<scheduler:SfScheduler x:Name="Schedule"  FirstDayOfWeek="Monday"/>
 {% endhighlight %}
 {% highlight c# %}
-//setting first day of the week    
+//setting first day of the week.    
 Schedule.FirstDayOfWeek = DayOfWeek.Monday;   
 {% endhighlight %}  
 {% endtabs %}  
@@ -394,11 +394,11 @@ Schedule.FirstDayOfWeek = DayOfWeek.Monday;
 
 ## Show busy indicator
 
-The `Scheduler` supports to show the busy indicator by using the `ShowBusyIndicator` property. The default value is set to `false`, If the value will be set to `true` then the busy indicator will be load on view or visible date changed.
+The `Scheduler` supports showing the busy indicator by using the `ShowBusyIndicator` property. The default value is set to `false.` If the value will be set to `true` then the busy indicator will be load on view or the visible date changed.
 
 {% tabs %}  
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ShowBusyIndicator="True">/> 
+<scheduler:SfScheduler x:Name="Schedule" ShowBusyIndicator="True">/> 
 {% endhighlight %}   
 {% highlight c# %}
 this.Schedule.ShowBusyIndicator = true;   
