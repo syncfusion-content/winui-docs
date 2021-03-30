@@ -39,6 +39,25 @@ The `AutoExpandMode` property is only applicable for bound mode. For Unbound mod
 * RootNodes : Expands only the root item when loaded.
 * AllNodes : Expands all the items when loaded.
 
+## Expand/Collapse a node based on mapping property
+
+TreeView supports to expand/collapse the nodes based on the value of a boolean mapping property in the underlying data object by using `IsExpandedPropertyName` property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<treeView:SfTreeView x:Name="treeView"
+         ItemsSource="{Binding Folders}">
+    <treeView:SfTreeView.HierarchyPropertyDescriptors>        
+        <treeView:HierarchyPropertyDescriptor IsExpandedPropertyName="IsExpanded" ChildPropertyName="Cities" TargetType="{x:Type local:State}" />
+    </treeView:SfTreeView.HierarchyPropertyDescriptors>
+</treeView:SfTreeView>
+
+{% endhighlight %}
+{% endtabs %}
+
+N> `IsExpandedPropertyName` property is not supported for unbound mode and it accepts only boolean type property.
+
 ## Programmatic Expand and Collapse
 
 The TreeView allows programmatic expand and collapse based on the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) and level by using following methods.
