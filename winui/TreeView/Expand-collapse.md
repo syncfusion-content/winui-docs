@@ -49,7 +49,7 @@ TreeView supports to expand/collapse the nodes based on the value of a boolean m
 <treeView:SfTreeView x:Name="treeView"
          ItemsSource="{Binding Folders}">
     <treeView:SfTreeView.HierarchyPropertyDescriptors>        
-        <treeView:HierarchyPropertyDescriptor IsExpandedPropertyName="IsExpanded" ChildPropertyName="Cities" TargetType="{x:Type local:State}" />
+        <treeView:HierarchyPropertyDescriptor IsExpandedPropertyName="IsExpanded" ChildPropertyName="Cities" TargetType="local:State" />
     </treeView:SfTreeView.HierarchyPropertyDescriptors>
 </treeView:SfTreeView>
 
