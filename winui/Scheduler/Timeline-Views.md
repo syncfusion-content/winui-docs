@@ -251,27 +251,6 @@ this.Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 
 ![special-time-region-customization-in-winui-scheduler](TimelineViews_Images/adding-special-time-region-customization-in-winui-scheduler.png)
 
-## Full screen scheduler
-
-The Scheduler time interval height can be adjusted based on screen height by changing the value of `TimeIntervalSize` property of `TimelineViewSettings` to -1. It will auto-fit to the screen height and width.
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
-    <syncfusion:SfScheduler.TimelineViewSettings>
-        <syncfusion:TimelineViewSettings 
-            TimeIntervalSize="-1"/>
-    </syncfusion:SfScheduler.TimelineViewSettings>
-</syncfusion:SfScheduler>
-{% endhighlight %}
-{% highlight c# %}
-this.Schedule.ViewType = SchedulerViewType.TimelineWeek;
-this.Schedule.TimelineViewSettings.TimeIntervalSize = -1;
-{% endhighlight %}
-{% endtabs %}
-
-![full-screen-scheduler-in-winui-scheduler](TimelineViews_Images/adding-full-screen-scheduler-in-winui-scheduler.png)
-
 ## Change time ruler size
 
 You can customize the size of the time ruler view where the labels mentioning the time are placed by using the `TimeRulerSize` property of `TimelineViewSettings`. This property will be applicable to `TimelineDay`, `TimelineWeek`, and `TimelineWorkWeek` views.

@@ -121,6 +121,7 @@ Here steps to render meetings using `SfScheduler` control with respective custom
 ### Creating custom class to map that object with appointment
 You can create a custom class `Meeting` with mandatory fields `From`, `To` and `EventName`.
 
+{% tabs %}
 {% highlight c# %}  
     /// <summary>    
     /// Represents custom data properties.    
@@ -137,6 +138,7 @@ You can create a custom class `Meeting` with mandatory fields `From`, `To` and `
         public string EndTimeZone { get; set; } 
     }
 {% endhighlight %}
+{% endtabs %}
 
 N> You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
 
@@ -144,6 +146,7 @@ N> You can inherit this class from `INotifyPropertyChanged` for dynamic changes 
 
 By setting `From` and `To` of Meeting class, you can schedule meetings for a specific day. You can also change the `Subject` and `color` of appointment using `EventName` and `Color` property. You may define the list of custom appointments in a separate class of `ViewModel`.
 
+{% tabs %}
 {% highlight c# %}
 public class SchedulerViewModel
 {
@@ -315,6 +318,7 @@ public class SchedulerViewModel
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
 ### Mapping the data object to ScheduleAppointment
 You can map those properties of the `Meeting` class with our `SfScheduler` control by using the `AppointmentMapping` property.
@@ -379,6 +383,7 @@ SfScheduler control will be rendered with `Sunday` as the first day of the week,
 {% tabs %}  
 {% highlight xaml %}
 <syncfusion:SfScheduler x:Name="Schedule"  FirstDayOfWeek="Monday"/>
+{% endhighlight %}
 {% highlight c# %}
 //setting first day of the week    
 Schedule.FirstDayOfWeek = DayOfWeek.Monday;   
