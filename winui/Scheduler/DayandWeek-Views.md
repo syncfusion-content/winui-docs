@@ -32,12 +32,12 @@ You can customize the interval size of timeslots in a day, week, and workweek vi
 
 {% tabs %}
 {% highlight xaml %}
- <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
-    <syncfusion:SfScheduler.DaysViewSettings>
-        <syncfusion:DaysViewSettings 
+ <scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+    <scheduler:SfScheduler.DaysViewSettings>
+        <scheduler:DaysViewSettings 
             TimeIntervalSize="120"/>
-        </syncfusion:SfScheduler.DaysViewSettings>
-</syncfusion:SfScheduler>
+        </scheduler:SfScheduler.DaysViewSettings>
+</scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
 this.Schedule.ViewType = SchedulerViewType.Week;
@@ -53,13 +53,13 @@ The default values for `StartHour` and `EndHour` are 0 and 24 to show all the ti
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
-    <syncfusion:SfScheduler.DaysViewSettings>
-        <syncfusion:DaysViewSettings 
+<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+    <scheduler:SfScheduler.DaysViewSettings>
+        <scheduler:DaysViewSettings 
             StartHour="8"
             EndHour="13"/>
-        </syncfusion:SfScheduler.DaysViewSettings>
-</syncfusion:SfScheduler>
+        </scheduler:SfScheduler.DaysViewSettings>
+</scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
 this.Schedule.ViewType = SchedulerViewType.Week;
@@ -197,12 +197,12 @@ The `SpecialTimeRegion` background color can be customized by using the `Backgro
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
-    <syncfusion:SfScheduler.DaysViewSettings>
-        <syncfusion:DaysViewSettings  SpecialTimeRegionTemplate="{StaticResource specialRegionTemplate}">
-        </syncfusion:DaysViewSettings>
-    </syncfusion:SfScheduler.DaysViewSettings>
-</syncfusion:SfScheduler>
+<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+    <scheduler:SfScheduler.DaysViewSettings>
+        <scheduler:DaysViewSettings  SpecialTimeRegionTemplate="{StaticResource specialRegionTemplate}">
+        </scheduler:DaysViewSettings>
+    </scheduler:SfScheduler.DaysViewSettings>
+</scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
 this.Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
@@ -232,13 +232,13 @@ You can customize the size of the time ruler view where the labels mentioning th
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" >
-    <syncfusion:SfScheduler.DaysViewSettings>
-        <syncfusion:DaysViewSettings   
+<scheduler:SfScheduler x:Name="Schedule" ViewType="Week" >
+    <scheduler:SfScheduler.DaysViewSettings>
+        <scheduler:DaysViewSettings   
             TimeRulerSize="100">
-        </syncfusion:DaysViewSettings>
-    </syncfusion:SfScheduler.DaysViewSettings>
-</syncfusion:SfScheduler>
+        </scheduler:DaysViewSettings>
+    </scheduler:SfScheduler.DaysViewSettings>
+</scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
 this.Schedule.ViewType = SchedulerViewType.Week;
@@ -289,13 +289,13 @@ You can customize the date and day format of ViewHeader by using the `ViewHeader
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
-    <syncfusion:SfScheduler.DaysViewSettings>
-        <syncfusion:DaysViewSettings 
+<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+    <scheduler:SfScheduler.DaysViewSettings>
+        <scheduler:DaysViewSettings 
             ViewHeaderDayFormat="ddd"
             ViewHeaderDateFormat="dd"/>
-    </syncfusion:SfScheduler.DaysViewSettings>
-</syncfusion:SfScheduler>
+    </scheduler:SfScheduler.DaysViewSettings>
+</scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
 this.Schedule.ViewType = SchedulerViewType.Week;
@@ -312,12 +312,12 @@ You can customize the height of the ViewHeader in a day, week, and workweek view
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
-    <syncfusion:SfScheduler.DaysViewSettings>
-        <syncfusion:DaysViewSettings
+<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+    <scheduler:SfScheduler.DaysViewSettings>
+        <scheduler:DaysViewSettings
             ViewHeaderHeight="100"/>
-    </syncfusion:SfScheduler.DaysViewSettings>
-</syncfusion:SfScheduler>
+    </scheduler:SfScheduler.DaysViewSettings>
+</scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
 this.Schedule.ViewType = SchedulerViewType.Week;
@@ -366,12 +366,12 @@ You can customize the default appearance of view header by setting the `ViewHead
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
-    <syncfusion:SfScheduler.DaysViewSettings>
-        <syncfusion:DaysViewSettings 
+<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+    <scheduler:SfScheduler.DaysViewSettings>
+        <scheduler:DaysViewSettings 
             ViewHeaderTemplate="{StaticResource viewHeaderTemplate}" />
-    </syncfusion:SfScheduler.DaysViewSettings>
-</syncfusion:SfScheduler>
+    </scheduler:SfScheduler.DaysViewSettings>
+</scheduler:SfScheduler>
 {% endhighlight %}
 {% endtabs %}
 
