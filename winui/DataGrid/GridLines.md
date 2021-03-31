@@ -21,7 +21,7 @@ The following are the list of options available to customize grid lines visibili
 * Horizontal
 * None
 
-## DataRow Lines
+## Record rows
 
 ### Both
 
@@ -106,7 +106,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 
 ![None GridLinesVisibility in WinUI DataGrid](GridLines_images/GridLines_image4.png)
 
-## HeaderRow Lines
+## Header rows
 
 You can customize the DataGrid header lines visibility by using the SfDataGrid.HeaderLinesVisibility property. You can also customize the header lines visibility to horizontal, vertical, none or both. By default HeaderLinesVisibility value set as Both.
 
