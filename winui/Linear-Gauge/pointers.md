@@ -12,7 +12,7 @@ documentation: ug
  The pointer is used to indicate values on an axis. The Linear Gauge control has three types of pointers:
 
 [`Bar pointer`](https://help.syncfusion.com/winui/linear-gauge/bar-pointer)
-[`Shape Pointer`](https://help.syncfusion.com/cr/winui/linear-gauge/shape-pointer)
+[`Shape Pointer`](https://help.syncfusion.com/winui/linear-gauge/shape-pointer)
 [`Content pointer`](https://help.syncfusion.com/winui/linear-gauge/content-pointer)
 
 All the pointers can be customized as needed. You can add multiple pointers to the gauge to point multiple values on the same scale. The value of the pointer is set using the `Value` property.
