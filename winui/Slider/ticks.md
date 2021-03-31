@@ -19,7 +19,7 @@ For example, if [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Minimum="0"
                  Maximum="10"
@@ -57,7 +57,7 @@ For example, if [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Minimum="0"
                  Maximum="10"
@@ -93,7 +93,7 @@ You can change the major and minor ticks length of the slider using the [`MajorT
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Minimum="0"
                  Maximum="10"
@@ -133,7 +133,7 @@ The [`TickPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sl
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider ShowTicks="True"
                  TickPlacement="Before"
@@ -161,7 +161,7 @@ You can adjust the space between track and ticks of the slider using the [`TickO
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Minimum="0"
                  Maximum="10"
@@ -201,7 +201,7 @@ The [`MajorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.S
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Style x:Key="MajorTickStyle"
        TargetType="Line">
@@ -252,7 +252,7 @@ The [`ActiveMajorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Style x:Key="ActiveMajorTickStyle"
        TargetType="Line">

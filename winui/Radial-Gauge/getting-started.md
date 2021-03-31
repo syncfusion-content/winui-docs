@@ -13,7 +13,7 @@ This section explains the steps required to add the Radial Gauge control and its
 
 ## Creating an application with WinUI Radial Gauge
 
-1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 
 2. Add reference to [Syncfusion.Gauge.WinUI](https://www.nuget.org/packages/Syncfusion.Gauge.WinUI) NuGet.
 
@@ -23,7 +23,7 @@ This section explains the steps required to add the Radial Gauge control and its
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge />
 
@@ -44,7 +44,7 @@ Axes contain a list of axis elements, where you can add any number of radial axe
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -76,7 +76,7 @@ Ranges contain a list of range elements, where you can add any number of ranges 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -139,7 +139,7 @@ Pointers contains a list of pointer elements, where you can add any number of ga
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -180,7 +180,7 @@ You can add any number of control such as text or image as an annotation inside 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -231,7 +231,7 @@ The following code example gives you the complete code of above configurations.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>

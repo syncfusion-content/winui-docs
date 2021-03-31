@@ -13,7 +13,7 @@ RangeSlider allows you to define a custom scale range by extending the RangeSlid
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <local:LogarithmicRangeSlider Minimum="1"
                               Maximum="10000"
