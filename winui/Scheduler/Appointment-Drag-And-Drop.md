@@ -7,7 +7,7 @@ control: Scheduler
 documentation: ug
 ---
 
-# Appointment drag and drop in WPF Scheduler (SfScheduler)
+# Appointment drag and drop in WinUI Scheduler (SfScheduler)
 
 The Scheduler supports to reschedule the appointment by performing the drag and drop operation.
 
