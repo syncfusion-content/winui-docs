@@ -7,7 +7,7 @@ control: DataGrid
 documentation: ug
 ---
 
-# Grid Lines
+# Grid Lines customization in WinUI DataGrid (SfDataGrid)
 
 SfDataGrid allows you to customize the grid lines visibility to vertical, horizontal, both or none. To achieve this, use the following properties.
 
