@@ -37,7 +37,7 @@ There are two ways to download our 30-day trial.
 4. After you started the trial, you can download the latest version trial installer using the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page. 
 5. In [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page, you can find your current active trial products. Trials, which you done in both Free Trial Page and Start trial pages are listed here.
 6. Use the Download (element 1 in below screenshot) button to download the installer of respective product.
-7. Online installer can be downloaded from this page.
+7. Online installer can be downloaded from [this](https://www.syncfusion.com/account/manage-trials/downloads) page.
 8. No need of unlock key to unlock the online installer.
 9. You can unlock the installer using the Syncfusion registered login credential.
 
