@@ -60,7 +60,6 @@ There are two ways to download our 30-day trial.
 
     ![License and downloads of Syncfusion Essential Studio](download-images/license-download.png)
 
-    N> You can generate the license key for your licensed products from [License & Downloads](https://www.syncfusion.com/account/downloads) page. This license key will be required only from release version 16.2. To know more about License key, refer this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key). 
 
   
 
