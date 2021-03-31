@@ -19,7 +19,7 @@ For example, if [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  Interval="10"
@@ -47,7 +47,7 @@ You can change the divisor height and width of the RangeSlider using the [`Divis
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  Interval="10"
@@ -79,7 +79,7 @@ You can change the divisor stroke thickness of the slider using the [`DivisorStr
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  Interval="10"
@@ -115,7 +115,7 @@ You can change the divisor fill of the slider using the [`DivisorFill`](https://
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  Interval="10"
@@ -151,7 +151,7 @@ The [`DivisorTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <DataTemplate x:Key="DivisorTemplate">
     <Rectangle Height="{Binding DivisorHeight}"
@@ -197,7 +197,7 @@ The [`ActiveDivisorTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <DataTemplate x:Key="ActiveDivisorTemplate">
     <Rectangle Height="6"

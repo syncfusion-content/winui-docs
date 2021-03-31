@@ -17,7 +17,7 @@ You can enable tooltip for the thumb using the [`ShowToolTip`](https://help.sync
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  ShowToolTip="True" />
@@ -43,7 +43,7 @@ The [`ToolTipFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sl
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  ShowToolTip="True"
@@ -71,7 +71,7 @@ The [`ToolTipPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  ShowToolTip="True"
@@ -99,7 +99,7 @@ The [`ToolTipStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sli
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Style x:Name="ToolTipStyle"
        TargetType="slider:SliderToolTip">
@@ -135,7 +135,7 @@ The [`ToolTipTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <DataTemplate x:Name="ToolTipTemplate">
     <StackPanel Orientation="Horizontal">
