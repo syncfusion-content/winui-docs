@@ -10,7 +10,7 @@ documentation: ug
 
 # Tooltip in WinUI Charts (SfChart)
 
-The Tooltip feature allows you to display any information over a [`ChartSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). It is used in conjunction with the pointer. It appears when the mouse hovers over any chart segment. It is set to display the metadata of the particular segment or data point.
+The Tooltip feature allows you to display any information over a [`ChartSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). It appears at the data point position when the mouse hovers over any chart segment. It is set to display the metadata of the particular segment or data point.
 
 ## Define Tooltip
 
@@ -72,10 +72,132 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip support in WinUI Chart](Interactive-Features_images/Interactive-Features_img1.jpeg)
+![Tooltip support in WinUI Chart](Interactive-Features_images/Interactive-Features_img1.png)
+
+## Customizing tooltip using ChartTooltipBehavior
+
+The `ChartTooltipBehavior` is commonly used for all series to customize the tooltip. For customizing the tooltip, you can create an instance `ChartTooltipBehavior` and add it to the SfChart Behaviors collection.
+
+The following properties are used to customize and configure tooltip which is available in the `ChartTooltipBehavior.`
+
+* `EnableAnimation` - Used to enable the animation when showing the tooltip.
+* `Style` - Used to customize the fill and stroke of the tooltip.
+* `LabelStyle` - Used to customize the tooltip label.
+* `HorizontalOffset` - Used to position the tooltip at a distance from the data point or cursor position horizontally.
+* `VerticalOffset` - Used to position the tooltip at a distance from the data point or cursor position vertically.
+* `HorizontalAlignment` - Used to align the tooltip label at left, right and center of the data point position or cursor position horizontally.
+* `VerticalAlignment` - Used to align the tooltip label at top, center and bottom of the data point position or cursor position vertically.
+* `ShowDuration` - Used to set the amount of time that the tooltip remains visible in milliseconds.
+* `InitialShowDelay` - Used to delay in milliseconds to show the tooltip once the user interacts with series.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<chart:SfChart.Behaviors>
+
+<chart:ChartTooltipBehavior/>                                                  
+
+</chart:SfChart.Behaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+ChartTooltipBehavior behavior = new ChartTooltipBehavior();
+
+chart.Behaviors.Add(behavior);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
-## Aligning the Tooltip
+### Customizing the tooltip background
+
+The tooltip's fill and stroke color can be customized using the `Style` property. To define a `Style` for tooltip, specify the style of `TargetType` as `Path.`
+
+The following code example explains applying the style for tooltip.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<chart:SfChart.Resources>
+    <Style TargetType="Path" x:Key="style">
+       <Setter Property="Stroke" Value="Gray"/>
+       <Setter Property="Fill" Value="Black"/>
+    </Style>
+</chart:SfChart.Resources>
+...
+<chart:SfChart.Behaviors>
+    <chart:ChartTooltipBehavior LabelStyle = {StaticResource style}/>
+</chart:SfChart.Behaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+Style style = new Style(typeof(Path));
+style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Gray)));
+style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Black)));
+...
+ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
+tooltipBehavior.Style = style;
+chart.Behaviors.Add(tooltipBehavior);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Tooltip background style customization in WPF Chart](Interactive-Features_images/Interactive-Features_img2.png)
+
+### Customizing the tooltip label style
+
+The tooltip label style can be customized using the `LabelStyle` property. To define a `Style` for the tooltip label, specify the style of `TargetType` as `TextBlock.`
+
+The following code example explains applying the style for a tooltip label.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<chart:SfChart.Resources>
+    <Style TargetType="TextBlock" x:Key="labelStyle">
+       <Setter Property="FontSize" Value="14"/>
+       <Setter Property="Foreground" Value="Red"/>
+    </Style>
+</chart:SfChart.Resources>
+...
+<chart:SfChart.Behaviors>
+   <chart:ChartTooltipBehavior LabelStyle = {StaticResource labelStyle}/>
+</chart:SfChart.Behaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+Style labelStyle = new Style(typeof(TextBlock));
+labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
+labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red)));
+...
+ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
+tooltipBehavior.LabelStyle = labelStyle;
+chart.Behaviors.Add(tooltipBehavior);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Tooltip label style customization in WPF Chart](Interactive-Features_images/Interactive-Features_img3.png)
+
+## Customizing tooltip using ChartTooltip attached properties
+
+### Aligning the Tooltip
 
 The tooltip can be aligned with respect to the cursor position using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) and [`VerticalAlignment`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) properties.
 
@@ -141,7 +263,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip alignment support in WinUI Chart](Interactive-Features_images/Interactive-Features_img2.jpeg)
+![Tooltip alignment support in WinUI Chart](Interactive-Features_images/Interactive-Features_img4.png)
 
 N> By default the horizontal alignment is center for the tooltip.
 
@@ -207,12 +329,12 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip alignment support in WinUI Char](Interactive-Features_images/Interactive-Features_img3.jpeg)
+![Tooltip alignment support in WinUI Char](Interactive-Features_images/Interactive-Features_img5.png)
 
 
 **TooltipMargin**
 
-You can also set the distance for the margin to be positioned from the cursor using the TooltipMargin property as in the following code snippet.
+You can also set the distance for the margin to be positioned from the cursor using the TooltipMargin property as in the following code sample.
 
 {% tabs %}
 
@@ -278,7 +400,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Margin for tooltip in WinUI Char](Interactive-Features_images/Interactive-Features_img4.jpeg)
+![Margin for tooltip in WinUI Char](Interactive-Features_images/Interactive-Features_img6.png)
 
 
 N>By default, the VerticalAlignment of the Tooltip is Top.
@@ -359,9 +481,9 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![VerticalOffset and HorizontalOffset support for tooltip in WinUI Chart](Interactive-Features_images/Interactive-Features_img5.jpeg)
+![VerticalOffset and HorizontalOffset support for tooltip in WinUI Chart](Interactive-Features_images/Interactive-Features_img7.png)
 
-## Tooltip duration
+### Tooltip duration
 
 The attached property [`ShowDuration`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetShowDuration_System_Windows_DependencyObject_System_Int32_) in [`ChartTooltip`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) sets the duration time for tooltip to be displayed in milliseconds.
 
@@ -455,7 +577,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-## Animation for Tooltip
+### Animation for Tooltip
 
 You can also provide animation effects for tooltip by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetEnableAnimation_System_Windows_UIElement_System_Boolean_) property to true as shown in the following code snippet.
 
@@ -500,83 +622,98 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-## Customizing the Appearance
+### Customizing the Appearance
 
 The [`TooltipTemplate`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TooltipTemplate) property allows you to customize the default appearance of the tooltip as explained in the following code snippet.
 
 {% tabs %}
 
 {% highlight xaml %}
-        <syncfusion:SfChart.Resources>
-                ...
-                <DataTemplate x:Key="tooltipTemplate1">
-                    <Border   Background="DarkGreen" CornerRadius="5" BorderThickness="2" BorderBrush="Black" Width="50" Height="30">
-                        <TextBlock Text="{Binding Item.Year2010}"
-                               Foreground="White" FontWeight="Bold"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </DataTemplate>
 
-                <DataTemplate x:Key="tooltipTemplate2">
-                    <Border   Background="DarkGreen" CornerRadius="5" BorderThickness="2" BorderBrush="Black" Width="50" Height="30">
-                        <TextBlock Text="{Binding Item.Year2011}"
-                               Foreground="White" FontWeight="Bold"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </DataTemplate>
-                ...
-            </syncfusion:SfChart.Resources>
-        ...
+...
+<chart:SfChart.Resources>
+    <DataTemplate x:Key="tooltipTemplate1">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding Item.Demand}"
+                Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text=" : " Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="{Binding Item.Year2010}"
+                Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </StackPanel>
+    </DataTemplate>
 
-        <syncfusion:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Demands}"
-            syncfusion:ChartTooltip.VerticalAlignment="Top" 
-            XBindingPath="Demand" YBindingPath="Year2010" 
-            TooltipTemplate="{StaticResource tooltipTemplate1}">
-        </syncfusion:ColumnSeries>
+    <DataTemplate x:Key="tooltipTemplate2">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding Item.Demand}"
+                Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text=" : " Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="{Binding Item.Year2011}"
+                Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </StackPanel>
+    </DataTemplate>
 
-        <syncfusion:ColumnSeries  ItemsSource="{Binding Demands}"
-            syncfusion:ChartTooltip.VerticalAlignment="Top"
-            ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011"
-            TooltipTemplate="{StaticResource tooltipTemplate2}">
-        </syncfusion:ColumnSeries>
+    <Style TargetType="Path" x:Key="style">
+        <Setter Property="Stroke" Value="Black"/>
+        <Setter Property="Fill" Value="LightGreen"/>
+        <Setter Property="StrokeThickness" Value="2"/>
+    </Style>
+</chart:SfChart.Resources>
+...
 
-        ...
+<chart:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Demands}"
+    XBindingPath="Demand" YBindingPath="Year2010" 
+    TooltipTemplate="{StaticResource tooltipTemplate1}">
+</chart:ColumnSeries>
+
+<chart:ColumnSeries  ItemsSource="{Binding Demands}"
+    ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011"
+    TooltipTemplate="{StaticResource tooltipTemplate2}">
+</chart:ColumnSeries>
+...
+<chart:SfChart.Behaviors>
+    <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
+</chart:SfChart.Behaviors>
+...
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-         ...
+...
 
-            ColumnSeries series1 = new ColumnSeries()
-            {
+ColumnSeries series1 = new ColumnSeries()
+{
 
-                ItemsSource = Demands,
-                XBindingPath = "Demand",
-                YBindingPath = "Year2010",
-                Label = "2010",
-                ShowTooltip = true,
-                TooltipTemplate = chart.Resources["tooltipTemplate1"] as DataTemplate,
+    ItemsSource = Demands,
+    XBindingPath = "Demand",
+    YBindingPath = "Year2010",
+    Label = "2010",
+    ShowTooltip = true,
+    TooltipTemplate = chart.Resources["tooltipTemplate1"] as DataTemplate,
 
-            };
+};
 
-            ColumnSeries series2 = new ColumnSeries()
-            {
+ColumnSeries series2 = new ColumnSeries()
+{
 
-                ItemsSource = Demands,
-                XBindingPath = "Demand",
-                YBindingPath = "Year2011",
-                Label = "2011",
-                ShowTooltip = true,
-                TooltipTemplate = chart.Resources["tooltipTemplate2"] as DataTemplate,
+    ItemsSource = Demands,
+    XBindingPath = "Demand",
+    YBindingPath = "Year2011",
+    Label = "2011",
+    ShowTooltip = true,
+    TooltipTemplate = chart.Resources["tooltipTemplate2"] as DataTemplate,
 
-            };
+};
 
-            chart.Series.Add(series1);
-            chart.Series.Add(series2);
+chart.Series.Add(series1);
+chart.Series.Add(series2);
 
-        ...
+...
         
 {% endhighlight %}
 
 {% endtabs %}
 
-![Tooltip customization support in WinUI Chart](Interactive-Features_images/Interactive-Features_img6.jpeg)
+![Tooltip customization support in WinUI Chart](Interactive-Features_images/Interactive-Features_img8.png)
+
+N> The `ChartTooltipBehavior` is commonly used for all series to customize the tooltip. You can use the attached `ChartTooltip` properties in a series if you need to customize the appearance of the tooltip based on a particular series. Series attached properties are considered as a high precedence.
