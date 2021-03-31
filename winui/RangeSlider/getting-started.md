@@ -13,7 +13,7 @@ This section explains the steps required to add the RangeSlider control and its 
 
 ## Creating an application with WinUI Range Slider
 
-1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 
 2. Add reference to [Syncfusion.Sliders.WinUI](https://www.nuget.org/packages/Syncfusion.Sliders.WinUI) NuGet.
 
@@ -25,7 +25,7 @@ The default value of the [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfu
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider />
 
@@ -46,7 +46,7 @@ You can show values in the range slider by setting double values to the [`RangeS
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70" />
@@ -72,7 +72,7 @@ You can enable ticks in the range slider using the [`ShowTicks`](https://help.sy
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -100,7 +100,7 @@ You can enable labels in the range slider using the [`ShowLabels`](https://help.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -128,7 +128,7 @@ You can enable divisors in the range slider using the [`ShowDivisors`](https://h
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"

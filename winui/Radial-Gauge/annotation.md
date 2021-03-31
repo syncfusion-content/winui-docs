@@ -25,7 +25,7 @@ The following properties are available in [`Annotation`](https://help.syncfusion
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -77,7 +77,7 @@ The following example shows how to position the annotation using angle.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
  <gauge:SfRadialGauge>
      <gauge:SfRadialGauge.Axes>
@@ -132,7 +132,7 @@ The following example shows how to position the annotation using axis value.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -186,7 +186,7 @@ Annotations provide options to add any image over the gauge control with respect
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -296,7 +296,7 @@ The following code example demonstrates how to set the `HorizontalAlignment` for
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -345,7 +345,7 @@ The following code example demonstrates how to set `VerticalAlignment` for annot
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
