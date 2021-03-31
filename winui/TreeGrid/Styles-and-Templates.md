@@ -9,7 +9,7 @@ documentation: ug
 
 # Styles and Templates in WinUI TreeGrid (SfTreeGrid)
 
-## Styling Column Header
+## Styling column header
 
 The header cell can be customized by writing style of TargetType [TreeGridHeaderCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridHeaderCell.html). You can set to particular SfTreeGrid by setting [SfTreeGrid.HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_HeaderStyle) property and the particular column can be styled by setting [TreeGridColumn.HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_HeaderStyle) property.
 
@@ -48,7 +48,7 @@ N> `TreeGridColumn.HeaderStyle` takes higher priority than `SfTreeGrid.HeaderSty
 
 ![Style applied for headers of WinUI TreeGrid](Styles-and-Templates_images/Styles-and-Templates_img1.png)
 
-### Styling Stacked Headers
+### Styling stacked headers
 
 The appearance of stacked header can be customized by writing style of TargetType [TreeGridStackedHeaderCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridStackedHeaderCell.html).
 
@@ -67,7 +67,7 @@ The appearance of stacked header can be customized by writing style of TargetTyp
 
 ![Style applied for WinUI TreeGrid StackedHeader](Styles-and-Templates_images/Styles-and-Templates_img2.png)
 
-### Setting Different Style for Each Stacked Header
+### Setting different style for each stacked header
 
 You can apply the different style to stacked header by overriding the [default renderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellRendererBase.html) of StackedHeader.
 
