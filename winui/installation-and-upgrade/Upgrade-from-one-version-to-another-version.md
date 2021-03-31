@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Upgrade from one version to another version| WinUI | Syncfusion
-description: Upgrading from one Syncfusion version to another Syncfusion version in development machines
+description: This section helps for upgrading from one Syncfusion version to another Syncfusion version in development machines
 platform: winui
 control: Installation and Deployment
 documentation: ug
