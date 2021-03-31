@@ -43,8 +43,6 @@ There are two ways to download our 30-day trial.
 
     ![License and downloads of Syncfusion Essential Studio](download-images/license-installer.png)
 
-    N> You can generate the license key for your active trial products from [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page. This license key will be mandatory to use our trial products in your application. To know more about License key, refer this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key). 
-
 
 ## Download the License Version
 
@@ -55,9 +53,6 @@ There are two ways to download our 30-day trial.
 5. Latest version installer will be downloaded from this page.
 6. You can navigate to [Downloads Older Versions](https://www.syncfusion.com/account/downloads/studio) (element 2 in below screenshot) to download older version installers.
 7. From 16.2 version online installer will be downloaded by default, and earlier versions offline installer will be downloaded.
-
-    N> Online Installer have been introduced from the release version 16.2.
-
 8. You can navigate to More Downloads Options (element 3 in below screenshot) to download other installers.
 9. EXE and Zip format available to download for Windows OS. Both are Offline Installer. 
 10. No need of unlock key to unlock the online installer.
