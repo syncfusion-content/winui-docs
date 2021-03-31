@@ -7,7 +7,7 @@ control: Essential Studio
 documentation: ug
 ---
 
-# Installation Errors
+# Essential Studio Installation Errors
 
 This article lists the common Installation errors, reasons and solution for those errors.
 
