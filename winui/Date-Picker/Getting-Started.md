@@ -17,7 +17,7 @@ This section explains the steps required to add the [DatePicker](https://help.sy
 
 ## Creating an application with WinUI DatePicker
 
-1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 4. Initialize the `SfDatePicker` control.
@@ -191,6 +191,49 @@ You can handle the event as follows:
 private void SfDatePicker_DateChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {          
     Console.WriteLine("The previously selected Date: " + e.OldDateTime.ToString());
     Console.WriteLine("The newly selected Date: " + e.NewDateTime.ToString());            
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Cancel a date that is being changed
+
+The `DateChanging` event will be triggered, as soon as a date is selected but before `SelectedDate` property is updated. If the change is considered invalid, it can be canceled. The `DateChanging` event contains the following properties.
+
+* `OldDate` - Gets a date which is previously selected.
+* `NewDate` - Gets a date which is currently selected.
+* `Cancel` - Gets or sets whether to cancel the selected date value update.
+
+Users are restricted to select a blackout date from dropdown, however user can give text input through editor. As selecting a blackout date leads to crash, we can cancel the change using `DateChanging` event.
+
+N> `DateChanging` event is called before the `DateChanged` event when a date is selected.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editor:SfDatePicker Height="35" Width="150" DateChanging="SfDatePicker_DateChanging" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfDatePicker sfDatePicker = new SfDatePicker();
+sfDatePicker.DateChanging += SfDatePicker_DateChanging;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows:
+
+{% tabs %}
+{% highlight C# %}
+
+ private void SfDatePicker_DateChanging(object sender, Syncfusion.UI.Xaml.Editors.DateChangingEventArgs e)
+{
+    var OldDate = e.OldDate;
+    var NewDate = e.NewDate;
+
+    //Cancel Selected date update
+    e.Cancel = true;
 }
 
 {% endhighlight %}

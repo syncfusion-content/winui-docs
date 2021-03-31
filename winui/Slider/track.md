@@ -21,7 +21,7 @@ The inactive side of the slider is between the thumb and the [`Maximum`](https:/
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  ActiveTrackFill="#009688"
@@ -45,17 +45,20 @@ this.Content = sfSlider;
 
 ## Track Hover Color
 
-You can change the active and inactive track hover color of the slider using the [`ActiveTrackHoverFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveTrackHoverFill) and [`InactiveTrackHoverFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_InactiveTrackHoverFill) properties respectively. This color will be applied when hovering the cursor on the Slider control.
+You can change the active and inactive track hover color of the slider using the `SyncfusionSliderActiveTrackFillPointerOver` and `SyncfusionSliderInactiveTrackFillPointerOver` resource keys respectively. This color will be applied when hovering the cursor on the Slider control.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
+
+<Page.Resources>
+    <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFillPointerOver">#009688</SolidColorBrush>
+    <SolidColorBrush x:Key="SyncfusionSliderInactiveTrackFillPointerOver">#C2E6E3</SolidColorBrush>
+</Page.Resources>
 
 <slider:SfSlider Value="50"
                  ActiveTrackFill="#009688"
-                 InactiveTrackFill="#C2E6E3"
-                 ActiveTrackHoverFill="#009688"
-                 InactiveTrackHoverFill="#C2E6E3" />
+                 InactiveTrackFill="#C2E6E3" />
 
 {% endhighlight %}
 
@@ -65,8 +68,6 @@ SfSlider sfSlider = new SfSlider();
 sfSlider.Value = 50;
 sfSlider.ActiveTrackFill = new SolidColorBrush(ColorHelper.FromArgb(255, 0, 150, 136));
 sfSlider.InactiveTrackFill = new SolidColorBrush(ColorHelper.FromArgb(255, 194, 230, 227));
-sfSlider.ActiveTrackHoverFill = new SolidColorBrush(ColorHelper.FromArgb(255, 41, 186, 173));
-sfSlider.InactiveTrackHoverFill = new SolidColorBrush(ColorHelper.FromArgb(255, 197, 222, 218));
 this.Content = sfSlider;
 
 {% endhighlight %}
@@ -77,19 +78,23 @@ this.Content = sfSlider;
 
 ## Track Pressed Color
 
-You can change the active and inactive track pressed color of the slider using the [`ActiveTrackPressedFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveTrackPressedFill) and [`InactiveTrackPressedFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_InactiveTrackPressedFill) properties respectively. This color will be applied when pressed the cursor on the slider control.
+You can change the active and inactive track pressed color of the slider using the `SyncfusionSliderActiveTrackFillPressed` and `SyncfusionSliderInactiveTrackFillPressed` resource keys respectively. This color will be applied when pressed the cursor on the slider control.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
+
+<Page.Resources>
+    <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFillPointerOver">#009688</SolidColorBrush>
+    <SolidColorBrush x:Key="SyncfusionSliderInactiveTrackFillPointerOver">#C2E6E3</SolidColorBrush>
+    
+    <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFillPressed">#018A7D</SolidColorBrush>
+    <SolidColorBrush x:Key="SyncfusionSliderInactiveTrackFillPressed">#98B8B5</SolidColorBrush>
+</Page.Resources>
 
 <slider:SfSlider Value="50"
                  ActiveTrackFill="#009688"
-                 InactiveTrackFill="#C2E6E3"
-                 ActiveTrackHoverFill="#009688"
-                 InactiveTrackHoverFill="#C2E6E3"
-                 ActiveTrackPressedFill="#018A7D"
-                 InactiveTrackPressedFill="#98B8B5"  />
+                 InactiveTrackFill="#C2E6E3"  />
 
 {% endhighlight %}
 
@@ -99,10 +104,6 @@ SfSlider sfSlider = new SfSlider();
 sfSlider.Value = 50;
 sfSlider.ActiveTrackFill = new SolidColorBrush(ColorHelper.FromArgb(255, 0, 150, 136));
 sfSlider.InactiveTrackFill = new SolidColorBrush(ColorHelper.FromArgb(255, 194, 230, 227));
-sfSlider.ActiveTrackHoverFill = new SolidColorBrush(ColorHelper.FromArgb(255, 41, 186, 173));
-sfSlider.InactiveTrackHoverFill = new SolidColorBrush(ColorHelper.FromArgb(255, 197, 222, 218));
-sfSlider.ActiveTrackPressedFill = new SolidColorBrush(ColorHelper.FromArgb(255, 1, 138, 125));
-sfSlider.InactiveTrackPressedFill = new SolidColorBrush(ColorHelper.FromArgb(255, 152, 184, 181));
 this.Content = sfSlider;
 
 {% endhighlight %}
@@ -117,7 +118,7 @@ You can change the track height of the slider using the [`ActiveTrackHeight`](ht
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  ActiveTrackHeight="8"
@@ -145,7 +146,7 @@ You can change the track style of the slider using the [`ActiveTrackStyle`](http
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <Style x:Key="ActiveTrackStyle"
