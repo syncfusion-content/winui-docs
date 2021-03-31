@@ -14,7 +14,6 @@ documentation: ug
 
 Starting with version 16.2 (2018 Vol 2), Syncfusion provides Web Installer for Essential Studio platforms. This installer reduces the burden of downloading the installer of larger size. You can just download and launch the online installer which will be of smaller size and it will downloads and installs the Essential Studio products you have selected. The Essential Studio Web Installer includes the following platforms. You can download the latest version Essential Studio Web Installer [here](https://www.syncfusion.com/downloads/latest-version) . 
 
-Starting with the version 17.3 (2019 Vol 3), Syncfusion provides updated version of Web Installer which allows both installation and uninstallation of the platforms for that specific version.
 
 **Web (Essential JS 2)**
 
@@ -87,14 +86,6 @@ The following procedure illustrates how to install Essential Studio Platform Onl
 
     ![Install and samples location for install](WebInstaller/Step-by-Step-Installation_img8.png)
 	
-	I> From version 17.3 (2019 Vol 3), Syncfusion provides option to provide custom download location.
-	
- 
-    N> From the 2018 Volume 2 release, Syncfusion has changed the install and samples location 
-	   **Default Install location:** {ProgramFilesFolder}\Syncfusion\{Platform}\{version}
-	   **Default Samples location:** C:\Users\Public\Documents\Syncfusion\{platform}\{version}
-	   However, you can change the locations by clicking browse button.
-
 	
 
     * Select the **Install Demos** check box to install Syncfusion samples, or leave the check box clear, when you do not want to install Syncfusion samples.
@@ -187,8 +178,6 @@ The following procedure illustrates how to install/uninstall Essential Studio Pl
 5.  Configuration wizard will be displayed. Here you can change the Download, Install and samples location. Also, you can change the Additional settings by platform basis. To install using the default configuration, click Next.
 
     ![Install and samples location install/uninstall](WebInstaller/Step-by-Step-Installation_img8.png)
-	
-	I> From version 17.3 (2019 Vol 3), Syncfusion provides option to provide custom download location.
 	
 6.  After reading the License Terms and Conditions, check the **I agree to the License Terms and Privacy Policy** check box. Click Next.
 
