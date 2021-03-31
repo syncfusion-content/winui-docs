@@ -487,6 +487,27 @@ sfCalendar.HeaderFormatInMonthView = "{month.abbreviated} {year.abbreviated}‎"
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Formatting)
 
+## Change navigation direction
+
+You can change the direction for navigating between views in `SfCalendar` by using `NavigationDirection` property. By default, the value of `NavigationDirection` property is `Vertical`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<calendar:SfCalendar x:Name="sfCalendar"
+                     NavigationDirection="Horizontal" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfCalendar sfCalendar = new SfCalendar();
+sfCalendar.NavigationDirection = Orientation.Horizontal;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Change navigation direction of calendar view scrolling in SfCalendar](Getting-Started_images/Navigation_Direction.gif)
+
 ## Navigate between views
 
 You can easily navigate to the month, year, decade, or century views to select different dates by repeatedly clicking the header button. Initially month view is loaded. If you want to change the initial view, use [DisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_DisplayMode) property.
