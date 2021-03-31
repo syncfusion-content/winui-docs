@@ -17,7 +17,7 @@ This section explains the steps required to add the [DropDownColorPicker](https:
 
 ## Creating an application with WinUI DropDown Color Picker
 
-1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 4. Initialize the `SfDropDownColorPicker` control.
@@ -402,3 +402,24 @@ private void SfDropDownColorPicker_DropDownClosed(object sender, EventArgs e) {
 
 {% endhighlight %}
 {% endtabs %}
+
+## Customizing control in drop down
+
+You can customize the control displayed in drop down of `DropDownColorPicker` by using [AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfDropDownColorPicker Height="35" Width="75">
+    <FlyoutBase.AttachedFlyout>
+        <editors:DropDownFlyout>
+            <editors:SfColorPicker BrushTypeOptions="LinearGradientBrush" BorderThickness="0" >
+            </editors:SfColorPicker>
+        </editors:DropDownFlyout>
+    </FlyoutBase.AttachedFlyout>
+</editors:SfDropDownColorPicker>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Customizing the DropDownColorPicker dropdown UI](Getting-Started_images/CustomizedDropDown.png)

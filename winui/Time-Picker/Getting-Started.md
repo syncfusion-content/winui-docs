@@ -17,7 +17,7 @@ This section explains the steps required to add the [TimePicker](https://help.sy
 
 ## Creating an application with WinUI TimePicker
 
-1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 4. Initialize the `SfTimePicker` control.
@@ -195,6 +195,50 @@ private void SfTimePicker_TimeChanged(DependencyObject d, DependencyPropertyChan
 
 {% endhighlight %}
 {% endtabs %}
+
+## Cancel a time that is being changed
+
+The `TimeChanging` event will be triggered as soon as a date is selected but before `SelectedTime` property is updated. If the change is considered invalid, it can be canceled. The `TimeChanging` event contains the following properties.
+
+* `OldTime` - Gets a time which is previously selected.
+* `NewTime` - Gets a time which is currently selected.
+* `Cancel` - Gets or sets whether to cancel the selected time value update.
+
+Users are restricted to select a blackout time from dropdown, however user can give text input through editor. As selecting a blackout time leads to crash, we can cancel the change using `TimeChanging` event.
+
+N> `TimeChanging` event is called before the `TimeChanged` event when a time is selected.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editor:SfTimePicker Height="35" Width="150" TImeChanging="SfTimePicker_TimeChanging" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfTimePicker sfTimePicker = new SfTimePicker();
+sfTimePicker.TimeChanging += SfTimePicker_TimeChanging;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows:
+
+{% tabs %}
+{% highlight C# %}
+
+ private void SfTimePicker_TimeChanging(object sender, Syncfusion.UI.Xaml.Editors.TimeChangingEventArgs e)
+{
+    var OldTime = e.OldTime;
+    var NewTime = e.NewTime;
+
+    //Cancel Selected time update
+    e.Cancel = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 
 ## Change time display format
 

@@ -441,3 +441,36 @@ sfDatePicker.FlowDirection = FlowDirection.RightToLeft;
 ![DatePicker flow direction changed to right to left](Dropdown-Date-Spinner_images/FlowDirection.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+
+## DropDown value types
+
+The `DatePicker` control supports different type of calendar such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using `CalendarIdentifier` property. The default value of `CalendarIdentifier` property is `GregorianCalendar`.
+
+You can select the required `CalendarIdentifier` value from below types.
+
+ * JulianCalendar
+ * GregorianCalendar
+ * HebrewCalendar
+ * HijriCalendar
+ * KoreanCalendar
+ * TaiwanCalendar
+ * ThaiCalendar
+ * UmAlQuraCalendar
+ * PersianCalendar
+
+{% tabs %}
+{% highlight xaml %}
+
+<calendar:SfDatePicker CalendarIdentifier="HebrewCalendar"
+                               x:Name="sfDatePicker"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfDatePicker sfDatePicker = new SfDatePicker();
+sfDatePicker.CalendarIdentifier = "HebrewCalendar";
+
+{% endhighlight %}
+{% endtabs %}
+
+![DatePicker calendar type changed to Hebrew](Dropdown-Date-Spinner_images/CalendarIdentifier.png)

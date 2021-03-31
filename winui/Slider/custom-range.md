@@ -13,7 +13,7 @@ Slider allows you to define a custom scale range by extending the Slider based o
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <local:LogarithmicSlider Minimum="1"
                          Maximum="10000"
