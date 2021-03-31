@@ -54,11 +54,6 @@ The following procedure illustrates how to install Essential Studio WinUI platfo
     ![Advanced options](Platform_images/Step-by-Step-Installation_img4.png)
 
 
-    N> From the 2018 Volume 2 release, Syncfusion has changed the install and samples location 
-	   **Default Install location:** {ProgramFilesFolder}\Syncfusion\{Platform}\{version}
-	   **Default Samples location:** C:\Users\Public\Documents\Syncfusion\{platform}\{version}
-	   However, you can change the locations by clicking browse button.
-
     * Select the **Install Demos** check box to install Syncfusion samples, or leave the check box clear, when you do not want to install Syncfusion samples.
     * Select the **Create Desktop Shortcut** checkbox to create the desktop shortcut for Syncfusion Control Panel.
 	* Select the **Create Start Menu Shortcut** checkbox to create the start menu shortcut for Syncfusion Control Panel.
@@ -95,12 +90,12 @@ Follow the steps below to install through Command Line in Silent mode.
 6. Open the Command Prompt in administrator mode and pass the following arguments.
 
    
-   **Arguments:** “installer file path\SyncfusionEssentialStudio(platform)_(version).exe” /Install silent /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}] [/InstallSamples:{true/false}] [/InstallAssemblies:{true/false}] [/UninstallExistAssemblies:{true/false}] [/InstallToolbox:{true/false}]
+   **Arguments:** “installer file path\SyncfusionEssentialStudio(platform)_(version).exe” /Install silent /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}] [/InstallSamples:{true/false}] [/CreateShortcut:{true/false}] [/CreateStartMenuShortcut:{true/false}]
 
 
    N> [..] – Arguments inside the square brackets are optional.
 
-   **Example:** “D:\Temp\syncfusionessentialwinui_x.x.x.x.exe” /Install silent /PIDKEY:“product unlock key” /log “C:\Temp\EssentialStudio_Platform.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
+   **Example:** “D:\Temp\syncfusionessentialwinui_x.x.x.x.exe” /Install silent /PIDKEY:“product unlock key” /log “C:\Temp\EssentialStudio_Platform.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /CreateShortcut:true /CreateStartMenuShortcut:true
 
 	
 7. Essential Studio for WinUI is installed.
