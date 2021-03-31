@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment process related questions for Syncfusion Essential Studio WinUI products
-description: Learn how to install and deploy the Syncfusion WinUI component for developing and deployments
+title: Questions for Syncfusion Essential Studio WinUI products
+description: This section helps to Learn how to install  the Syncfusion WinUI component for developments and deployments
 platform: wpf
 control: Installation and Deployment
 documentation: ug
