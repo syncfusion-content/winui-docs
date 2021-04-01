@@ -10,7 +10,7 @@ documentation: ug
 
 # Localization in WinUI DataGrid (SfDataGrid)
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the SfDataGrid by adding [resource](https://msdn.microsoft.com/library/aa992030.aspx) file. Application culture can be changed by setting [CurrentUICulture] (https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.currentuiculture.aspx) before `InitializeComponent()` method. 
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the SfDataGrid by adding [resource](https://msdn.microsoft.com/library/aa992030.aspx) file. Application culture can be changed by setting [CurrentUICulture](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.currentuiculture.aspx) before `InitializeComponent()` method. 
 
 Below application culture changed to German.
 
@@ -25,6 +25,7 @@ public MainPage()
 {% endhighlight %}
 {% endtabs %}
 
+## Creating .resw files
 
 To localize the SfDataGrid based on `CurrentUICulture` using resource files, follow the below steps. 
 
@@ -46,11 +47,11 @@ N> You can get the default resource files of all Syncfusion WinUI libraries from
 
 5) Also, localize application text in XAML using below steps
 
-    a)Add resource name in .resx file
+5a) Add resource name in .resx file
 	
 ![Localize application text in WinUI DataGrid](Localization_images/Localize-application-text-in-WinUI-DataGrid.png)
 
-    b)Refer the mentioned resource name in XAML like below.
+5b) Refer the mentioned resource name in XAML like below.
 	
 {% tabs %}
 {% highlight xaml %}
