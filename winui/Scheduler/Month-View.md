@@ -468,7 +468,7 @@ You can customize the default appearance of the month cell by using the `MonthCe
 ### Using the DataTemplateSelector
 
 You can customize the default appearance of the month cell by using the `MonthCellTemplateSelector` property of `MonthViewSettings`.
-The `DataTemplateSelecto`r can choose a `DataTemplate` at runtime based on the value of a data-bound to Scheduler month cell using the `MonthCellTemplate`. It lets you choose a different data template for each month’s cell, customizing the appearance of a particular month cell based on certain conditions.
+The `DataTemplateSelector` can choose a `DataTemplate` at runtime based on the value of a data-bound to Scheduler month cell using the `MonthCellTemplate`. It lets you choose a different data template for each month’s cell, customizing the appearance of a particular month cell based on certain conditions.
 
 {% tabs %}
 {% highlight xaml %}
