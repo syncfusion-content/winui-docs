@@ -11,7 +11,7 @@ documentation: ug
 
 The scheduler supports to loading appointment on demand with loading indicator and it improves the loading performance when you have appointments range for multiple years.
 
-![load-on-demand-from-visible-date-ranges-in-winui-scheduler](LoadOnDemand_Images/load-on-demand-from-visible-date-ranges-in-winui-scheduler.gif)
+![load-on-demand-from-visible-date-ranges-in-winui-scheduler](LoadOnDemand_Image/load-on-demand-from-visible-date-ranges-in-winui-scheduler.gif)
 
 ## QueryAppointments event
 
@@ -117,7 +117,7 @@ The Scheduler notifies by `LoadOnDemandCommand` when the user changes the visibl
 You can define a ViewModel class that implements command and handle it by the `CanExecute` and `Execute` methods to check and execute on-demand loading. In execute method, you can perform the following operations,
 
 * You can start and stop the loading indicator animation before and after the appointments loaded using the `ShowBusyIndicator`.
-* Once got appointment collection, you can load into the scheduler `Itemsource`.
+* Once got appointment collection, you can load into the scheduler `ItemsSource`.
 
 {%tabs %}
 {% highlight xaml %}
