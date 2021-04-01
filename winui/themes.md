@@ -80,6 +80,34 @@ Themes can also be applied for each framework element individually irrespective 
 
 N> When the RequestedTheme value is set on a FrameworkElement, it will inherit to any elements that are nested within the element.
 
+## Theme resource
+
+Syncfusion provides a theme resource file containing the resources for Syncfusion WinUI controls. These theme resource files allow you to change the appearance of the controls at the application level.
+
+The theme resource files for Syncfusion WinUI controls can be downloaded from this [link](https://github.com/MuthusamyPonraj/winui-controls-theme-resource-files/blob/master/).
+
+## Modify Theme Resource in application level
+
+You can modify the Syncfusion WinUI controls appearance using themeresources file.
+
+1. Download the theme resource from the github link.
+2. Include the file in your project.
+3. Merge the resource file in your application.
+4. This file can be used to modify the control appearance.
+
+The following examples demonstrate how to customize the Ribbon control using the ribbon's themeresources file.
+
+{% tabs %}
+{% highlight xaml %}
+<ResourceDictionary>
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="themeresources.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
+{% endhighlight %}
+{% endtabs %}
+
+
 
 
 
