@@ -93,7 +93,7 @@ You can modify the Syncfusion WinUI controls appearance using theme resources fi
 1. Download the theme resource from the github link.
 2. Include the file in your project.
 3. Merge the resource file in your application.
-4. This file can be used to modify the control appearance.
+4. Change the control appearance as you like.
 
 The following examples demonstrate how to customize the Ribbon control using the ribbon's theme resources file.
 
