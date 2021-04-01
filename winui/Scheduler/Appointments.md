@@ -359,7 +359,7 @@ meeting.EventName = "Meeting";
 meeting.BackgroundColor = new SolidColorBrush(Colors.Green);
 //Setting the foreground color for an event.
 meeting.ForegroundColor = new SolidColorBrush(Colors.White);
-//Creating recurrence rule
+//Creating a recurrence rule.
 meeting.RecurrenceRule = "FREQ=DAILY;INTERVAL=2;COUNT=10";
 // Setting the Id of an event.
 meeting.Id = 1;
