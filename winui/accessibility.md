@@ -7,7 +7,7 @@ control: Accessibility
 documentation: ug
 ---
 
-# Accessibility
+# Accessibility for Syncfusion WinUI Controls
 
 Accessibility is about making your windows application usable in a wide range of environments by people who use technology and approach your UI with a wide range of experiences. There are many different types of disabilities in the world, including mobility, vision, color perception, hearing, speech, cognition, and literacy. However, These requirements can be met by utilizing the accessibility features of Syncfusion UI WinUI controls. The controls support assistive technologies such as screen readers, which take advantage of accessibility frameworks.
 
@@ -21,7 +21,7 @@ A user can use a tool like screen readers to obtain the necessary information ab
 
 ## Keyboard Support
 
-The basic xaml control proivdes built-in keyboard support including tab navigation, text input, and control-specific support. Syncfusion WinUI controls also have the same features in it. For example, If you use `SfTreeView` controls to display the data, it provides arrow-key navigation.
+The basic xaml control provides built-in keyboard support including tab navigation, text input, and control-specific support. Syncfusion WinUI controls also have the same features in it. For example, If you use `SfTreeView` controls to display the data, it provides arrow-key navigation.
 
 ## High Contrast Themes
 
