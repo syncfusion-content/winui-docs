@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appointments | events | WinUI | Scheduler | Syncfusion
-description: Learn how to plan, configure and manage all day, recurrence and spanning appointments in Syncfusion WinUI Scheduler (SfScheduler)
+description: Learn how to plan, configure and manage all day, recurrence, and spanning appointments in the Syncfusion WinUI Scheduler (SfScheduler)
 platform: winui
 control: Scheduler
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Appointments in WinUI Scheduler (SfScheduler)
 
-The SfScheduler control has a built-in capability to handle the appointment arrangement internally based on the `ScheduleAppointmentCollection.` The scheduler supports to render normal, all-day appointments, spanned appointment, recurring appointments and recurrence exception dates appointments.
+The SfScheduler control has a built-in capability to handle the appointment arrangement internally based on the `ScheduleAppointmentCollection.` The scheduler supports rendering normal, all-day appointments, spanned appointments, recurring appointments, and recurrence exception dates appointments.
 The `ScheduleAppointment` is a class that includes the specific scheduled appointment. It has some basic properties such as `StartTime,` `EndTime,` `Subject,` and some additional information about the appointment can be added with `Notes,` `Location,` and `IsAllDay` properties.
 
 {%tabs %}
@@ -18,9 +18,9 @@ The `ScheduleAppointment` is a class that includes the specific scheduled appoin
 </scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-// Creating an instance for schedule appointment collection.
+// Creating an instance for the schedule appointment collection.
 var scheduleAppointmentCollection = new ScheduleAppointmentCollection();
-//Adding schedule appointment in the schedule appointment collection.
+//Adding the schedule appointment in the schedule appointment collection.
 scheduleAppointmentCollection.Add(new ScheduleAppointment
 {
     StartTime = DateTime.Now.Date.AddHours(10),
@@ -28,7 +28,7 @@ scheduleAppointmentCollection.Add(new ScheduleAppointment
     Subject = "Client Meeting"
 });
 
-//Adding schedule appointment collection to the ItemSource of SfScheduler
+//Adding the schedule appointment collection to the ItemSource of SfScheduler.
 Schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
@@ -36,12 +36,12 @@ Schedule.ItemsSource = scheduleAppointmentCollection;
 ![schedule-appointment-in-winui-scheduler](Appointment_Images/adding-schedule-appointment-in-winui-scheduler.png)
 
 N> 
-* The Scheduler supports functionality to arrange appointments according to their start time and duration for normal appointments in day, week and work week views.
-* In Timeline views, all the appointments (span, all day and normal) are ordered and rendered based on start date time of appointment, followed by time duration of appointment, followed by `IsSpanned`, followed by `IsAllDay` and normal appointments.
+* The Scheduler supports functionality to arrange appointments according to their start time and duration for normal appointments in a day, week, and workweek views.
+*  In Timeline views, all the appointments (span, all day, and normal) are ordered and rendered based on the start date-time of appointment, followed by the time duration of the appointment, `IsSpanned,` `IsAllDay,` and normal appointments.
 
 ## Scheduler item source and Mapping
 
-The Scheduler supports to bind any collection that implements the `IEnumerable` interface to populate appointments. You can map properties in business object to `ScheduleAppointment` by configuring the `AppointmentMapping` property. The following table that property shows mapping property details to `ScheduleAppointment`.
+The Scheduler supports to bind any collection that implements the `IEnumerable` interface to populate appointments. You can map properties in the business object to `ScheduleAppointment` by configuring the `AppointmentMapping` property. The following table that property shows mapping property details to `ScheduleAppointment.`
 
 <table>
 <tr><th>Property Name</th><th>Description</th></tr>
@@ -77,11 +77,11 @@ The Scheduler supports to bind any collection that implements the `IEnumerable` 
 <td>Maps the property name of a custom class, which is equivalent to the ResourceIdCollection of ScheduleAppointment.</td></tr>
 </table>
 
-N>The CustomAppointment class should contain event start and end date time fields as mandatory.
+N> The CustomAppointment class should contain event start and end date-time fields as mandatory.
 
 ## Creating business objects
 
-You can create a custom class `Meeting` with mandatory fields `From`, `To` and `EventName`.
+You can create a custom class `Meeting` with mandatory fields `From,` `To,` and `EventName.`
 
 {% tabs %}
 {% highlight c# %}
@@ -115,7 +115,7 @@ N> You can map those properties of the `Meeting` class to schedule appointment b
 </scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-//Schedule data mapping for custom appointments
+//Schedule data mapping for custom appointments.
 AppointmentMapping dataMapping = new AppointmentMapping();
 dataMapping.Subject = "EventName";
 dataMapping.StartTime = "From";
@@ -126,27 +126,27 @@ Schedule.AppointmentMapping = dataMapping;
 {% endhighlight %}
 {% endtabs %}
 
-You can schedule meetings for a day by setting `From` and `To` of Meeting class. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection Meetings to the `ItemsSource` property which is of `IEnumerable` type.
+You can schedule meetings for a day by setting the `From` and `To` of Meeting class. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection Meetings to the `ItemsSource` property which is of `IEnumerable` type.
 
 {% tabs %}
 {% highlight c# %}
-//Creating an instance for the custom appointment class
+//Creating an instance for the custom appointment class.
 Meeting meeting = new Meeting();
-//Setting the start time of an event
+//Setting the start time of an event.
 meeting.From = new DateTime(2021, 03, 23, 10, 0, 0);
-//Setting the end time of an event
+//Setting the end time of an event.
 meeting.To = meeting.From.AddHours(2);
-//Setting the subject for an event
+//Setting the subject for an event.
 meeting.EventName = "Meeting";
-//Setting the background color for an event
+//Setting the background color for an event.
 meeting.BackgroundColor = new SolidColorBrush(Colors.Green);
-//Setting the foreground color for an event
+//Setting the foreground color for an event.
 meeting.ForegroundColor = new SolidColorBrush(Colors.White);
-//Creating an instance for the collection of custom appointments
+//Creating an instance for the collection of custom appointments.
 var Meetings = new ObservableCollection<Meeting>();
-//Adding a custom appointment in the CustomAppointmentCollection
+//Adding a custom appointment in the CustomAppointmentCollection.
 Meetings.Add(meeting);
-//Adding custom appointments in the ItemsSource of SfScheduler
+//Adding custom appointments in the ItemsSource of SfScheduler.
 Schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {% endtabs%}
@@ -155,7 +155,7 @@ Schedule.ItemsSource = Meetings;
 
 ## Spanned appointments
 
-Spanned Appointment is an appointment that lasts more than 24 hours. It doesn’t block out time slots in the SfScheduler, it will render in `AllDayAppointmentPanel` exclusively.
+Spanned Appointment is an appointment that lasts more than 24 hours. It does not block out time slots in the SfScheduler it will render in `AllDayAppointmentPanel` exclusively.
 
 {%tabs %}
 {% highlight xaml %}
@@ -171,23 +171,23 @@ Spanned Appointment is an appointment that lasts more than 24 hours. It doesn’
 </scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-// Creating an instance for the collection of custom appointments
+// Creating an instance for the collection of custom appointments.
 var Meetings = new ObservableCollection<Meeting>();
-// Creating an instance for the custom appointment class
+// Creating an instance for the custom appointment class.
 Meeting meeting = new Meeting();
-// Setting the start time of an event
+// Setting the start time of an event.
 meeting.From = new DateTime(2021, 03, 23, 10, 0, 0);
-// Setting the end time of an event
+// Setting the end time of an event.
 meeting.To = meeting.From.AddDays(2).AddHours(1);
-// Setting the subject for an event
+// Setting the subject for an event.
 meeting.EventName = "Meeting";
-// Setting the background color for an event
+// Setting the background color for an event.
 meeting.BackgroundColor = new SolidColorBrush(Colors.MediumPurple);
-// Setting the foreground color for an event
+// Setting the foreground color for an event.
 meeting.ForegroundColor = new SolidColorBrush(Colors.White);
-// Adding a custom appointment in the CustomAppointmentCollection
+// Adding a custom appointment in the CustomAppointmentCollection.
 Meetings.Add(meeting);
-//Adding schedule appointment collection to the ItemsSource of SfSchedule
+//Adding schedule appointment collection to the ItemsSource of SfSchedule.
 Schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {% endtabs%}
@@ -196,18 +196,18 @@ Schedule.ItemsSource = Meetings;
 
 ## All day appointments
 
-The all-Day appointment is an appointment that is scheduled for a whole day. It can be set by using the `IsAllDay` property in the `ScheduleAppointment`.
+The all-Day appointment is an appointment that is scheduled for a whole day. It can be set by using the `IsAllDay` property in the `ScheduleAppointment.`
 
 {%tabs %}
 {% highlight xaml %}
 <scheduler:SfScheduler x:Name="Schedule" 
-                        ViewType="Week" >
+                       ViewType="Week" >
 </scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-// Creating an instance for schedule appointment collection
+// Creating an instance for the schedule appointment collection.
 var scheduleAppointmentCollection = new ScheduleAppointmentCollection();
-//Adding schedule appointment in the schedule appointment collection 
+//Adding schedule appointment in the schedule appointment collection. 
 scheduleAppointmentCollection.Add(new ScheduleAppointment()
 {
     StartTime = new DateTime(2021, 03, 23, 10, 0, 0),
@@ -218,7 +218,7 @@ scheduleAppointmentCollection.Add(new ScheduleAppointment()
     Foreground = new SolidColorBrush(Colors.White),
     IsAllDay = true,
 });
-//Adding the schedule appointment collection to the ItemsSource of SfScheduler
+//Adding the schedule appointment collection to the ItemsSource of SfScheduler.
 Schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs%}
@@ -229,11 +229,11 @@ N> Appointment that lasts for an entire day (exact 24 hours) will be considered 
 
 ## Recurrence Appointment
 
-The recurring appointment on a daily, weekly, monthly, or yearly interval. Recurring appointments can be created by setting the `RecurrenceRule` property in `ScheduleAppointment`.
+The recurring appointment on a daily, weekly, monthly, or yearly interval. Recurring appointments can be created by setting the `RecurrenceRule` property in `ScheduleAppointment.`
 
 ### Recurrence rule
 
-The `RecurrenceRule` is a string value (RRULE) that contains the details of the recurrence appointments such as repeat type - daily or weekly or monthly or yearly, how many times it needs to be repeated, the interval duration, also the time period to render the appointment, and more. The `RecurrenceRule` has the following properties and based on this property value, the recurrence appointments are rendered in the SfScheduler with its respective time period.
+The `RecurrenceRule` is a string value (RRULE) that contains the details of the recurrence appointments such as repeat type, daily, weekly, monthly, or yearly. And how many times it needs to be repeated, the interval duration, also the time period to render the appointment, and more. The `RecurrenceRule` has the following properties and based on this property value, the recurrence appointments are rendered in the SfScheduler with its respective time period.
 
 <table>
 <tr><th>PropertyName</th>
@@ -241,7 +241,7 @@ The `RecurrenceRule` is a string value (RRULE) that contains the details of the 
 <tr><td>FREQ</td>
 <td>Maintains the Repeat type value of the appointment. (Example: Daily, Weekly, Monthly, Yearly, Every week day) Example:FREQ=DAILY;INTERVAL=1</td></tr>
 <tr><td>INTERVAL</td>
-<td>Maintains the interval value of the appointments. For example, when you create the daily appointment at an interval of 2, the appointments are rendered on the days Monday, Wednesday and Friday. (creates the appointment on all days by leaving the interval of one day gap) Example:FREQ=DAILY;INTERVAL=1</td></tr>
+<td>Maintains the interval value of the appointments. For example, when you create the daily appointment at an interval of 2, the appointments are rendered on the days Monday, Wednesday, and Friday. (creates the appointment on all days by leaving the interval of one day gap) Example:FREQ=DAILY;INTERVAL=1</td></tr>
 <tr><td>COUNT</td>
 <td>It holds the appointment’s count value. For example, when the recurrence appointment count value is 10, it means 10 appointments are created in the recurrence series. Example:FREQ=DAILY;INTERVAL=1;COUNT=10</td></tr>
 <tr><td>UNTIL</td>
@@ -258,7 +258,7 @@ The `RecurrenceRule` is a string value (RRULE) that contains the details of the 
 
 ### Adding recurrence appointment
 
-The SfScheduler appointment recurrenceRule is used to populate the required recurring appointment collection in a specific pattern. The RRULE can be directly set to the `RecurrenceRule` property of `ScheduleAppointment`.
+The SfScheduler appointment recurrenceRule is used to populate the required recurring appointment collection in a specific pattern. The RRULE can be directly set to the `RecurrenceRule` property of `ScheduleAppointment.`
 
 {%tabs %}
 {% highlight xaml %}
@@ -267,9 +267,9 @@ The SfScheduler appointment recurrenceRule is used to populate the required recu
 </scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-// Creating an instance for schedule appointment collection
+// Creating an instance for schedule appointment collection.
 var scheduleAppointmentCollection = new ScheduleAppointmentCollection();
-//Adding schedule appointment in the schedule appointment collection 
+//Adding schedule appointment in the schedule appointment collection. 
 var scheduleAppointment = new ScheduleAppointment()
 {
     Id = 1,
@@ -279,11 +279,11 @@ var scheduleAppointment = new ScheduleAppointment()
     AppointmentBackground = new SolidColorBrush(Colors.RoyalBlue),
     Foreground = new SolidColorBrush(Colors.White),
 };
-//Creating recurrence rule
+//Creating a recurrence rule
 scheduleAppointment.RecurrenceRule = "FREQ=DAILY;INTERVAL=2;COUNT=10";
-//Adding schedule appointment to the schedule appointment collection
+//Adding the schedule appointment to the schedule appointment collection.
 scheduleAppointmentCollection.Add(scheduleAppointment);
-//Adding the schedule appointment collection to the ItemsSource of SfScheduler
+//Adding the schedule appointment collection to the ItemsSource of SfScheduler.
 Schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs%}
@@ -292,7 +292,7 @@ Schedule.ItemsSource = scheduleAppointmentCollection;
 
 ### Creating the custom recurrence appointment
 
-For creating the custom recurrence appointment, you need to create a custom class Meeting with mandatory fields `from`, `to`, and `recurrenceRule`.
+For creating the custom recurrence appointment, you need to create a custom class Meeting with mandatory fields `from,` `to,` and `recurrenceRule.`
 
 {% tabs %}
 {% highlight c# %}
@@ -312,7 +312,7 @@ public class Meeting
 {% endhighlight %}
 {% endtabs %}
 
-N> You can map those properties of the `Meeting` class to schedule appointment by using the `AppointmentMapping` properties.
+N> You can map those properties of the `Meeting` class to schedule appointments by using the `AppointmentMapping` properties.
 
 {%tabs %}
 {% highlight xaml %}
@@ -330,7 +330,7 @@ N> You can map those properties of the `Meeting` class to schedule appointment b
 </scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-//Schedule data mapping for custom appointments
+//Schedule data mapping for custom appointments.
 AppointmentMapping dataMapping = new AppointmentMapping();
 dataMapping.Subject = "EventName";
 dataMapping.StartTime = "From";
@@ -343,30 +343,30 @@ Schedule.AppointmentMapping = dataMapping;
 {% endhighlight %}
 {% endtabs %}
 
-You can schedule the recurring meetings for daily, weekly, monthly, or yearly interval by setting the `RecurrenceRule` of Meeting class. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection Meetings to the `ItemsSource` property which is of IEnumerable type.
+You can schedule the recurring meetings for daily, weekly, monthly, or yearly intervals by setting the `RecurrenceRule` of Meeting class. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection Meetings to the `ItemsSource` property which is of IEnumerable type.
 
 {% tabs %}
 {% highlight c# %}
-//Creating an instance for the custom appointment class
+//Creating an instance for the custom appointment class.
 Meeting meeting = new Meeting();
-//Setting the start time of an event
+//Setting the start time of an event.
 meeting.From = new DateTime(2021, 03, 28, 10, 0, 0);
-//Setting the end time of an event
+//Setting the end time of an event.
 meeting.To = meeting.From.AddHours(2);
-//Setting the subject for an event
+//Setting the subject for an event.
 meeting.EventName = "Meeting";
-//Setting the background color for an event
+//Setting the background color for an event.
 meeting.BackgroundColor = new SolidColorBrush(Colors.Green);
-//Setting the foreground color for an event
+//Setting the foreground color for an event.
 meeting.ForegroundColor = new SolidColorBrush(Colors.White);
 //Creating recurrence rule
 meeting.RecurrenceRule = "FREQ=DAILY;INTERVAL=2;COUNT=10";
-// Setting the Id of an event
+// Setting the Id of an event.
 meeting.Id = 1;
 var Meetings = new ObservableCollection<Meeting>();
-//Adding a custom appointment in the CustomAppointmentCollection
+//Adding a custom appointment in the CustomAppointmentCollection.
 Meetings.Add(meeting);
-//Adding custom appointments in the ItemsSource of SfScheduler
+//Adding custom appointments in the ItemsSource of SfScheduler.
 Schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {% endtabs%}
@@ -408,7 +408,7 @@ var date2 = 30-03-2021 09:00:00;
 
 Gets the pattern appointment for the specified occurrence.
 
-To get the pattern appointment by using the following event and passing a parameter as Scheduler and Specified `Appointment`.
+To get the pattern appointment by using the following event and passing a parameter as Scheduler and Specified `Appointment.`
 
 {% tabs %}
 {% highlight c# %}
@@ -425,14 +425,14 @@ private void Schedule_AppointmentTapped(object sender, AppointmentTappedArgs e)
 {% endtabs%}
 
 N>
-* For custom appointment, You can pass e.Appointment.Data as a param, you can get the custom appointment details from the `Data` property of `ScheduleAppointment.`
+* For a custom appointment, you can pass e.Appointment.Data as a param, you can get the custom appointment details from the `Data` property of `ScheduleAppointment.`
 * If a specified occurrence is changed, the `GetPatternAppointment` method returns the pattern appointment of exception appointment.
 
 ### How to get occurrence appointment at the specified date?
 
 Gets an occurrence at the specified date within a series of recurring appointments.
 
-To get a specific appointment by using the following event and passing a parameter as Scheduler, Specified `Appointment` and specified `DateTime`.
+To get a specific appointment by using the following event and passing a parameter as Scheduler, Specified `Appointment,` and specified `DateTime.`
 
 {% tabs %}
 {% highlight c# %}
@@ -448,7 +448,7 @@ private void Schedule_AppointmentTapped(object sender, AppointmentTappedArgs e)
 {% endhighlight %}
 {% endtabs%}
 
-N> If an occurrence at the specified date is deleted or not present,then the `GetOccurrenceAppointment` method returns null.
+N> If an occurrence at the specified date is deleted or not present, then the `GetOccurrenceAppointment` method returns null.
 
 ## Recurrence pattern exceptions
 
@@ -468,7 +468,7 @@ You can add the recurrence exception appointments and recurrence exception dates
 
 ### Delete occurrence from recurrence pattern appointment or adding exception dates to recurrence pattern appointment
 
-You can delete any of occurrence which is exception from recurrence pattern appointment by using the `RecurrenceExceptionDates` property of `ScheduleAppointment`. The deleted occurrence date will be considered as recurrence exception date.
+You can delete any of occurrence which is an exception from recurrence pattern appointment by using the `RecurrenceExceptionDates` property of `ScheduleAppointment.` The deleted occurrence date will be considered as recurrence exception date.
 
 {%tabs %}
 {% highlight xaml %}
@@ -477,10 +477,10 @@ You can delete any of occurrence which is exception from recurrence pattern appo
 </scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-// Creating an instance for the schedule appointment collection
+// Creating an instance for the schedule appointment collection.
 var scheduleAppointmentCollection = new ScheduleAppointmentCollection();
 
-// Recurrence and exception appointment
+// Recurrence and exception appointment.
 var scheduleAppointment = new ScheduleAppointment
 {
     Id = 1,
@@ -512,7 +512,7 @@ N> Exception dates should be Universal Time Coordinates (UTC) time zone.
 
 ### Add exception appointment to the recurrence pattern
 
-You can also add an exception appointment which is changed or modified occurrence of the recurrence pattern appointment to the `ItemsSource` of Scheduler. To add a changed occurrence, ensure to set the `RecurrenceId` of that occurrence and add the date of that occurrence to the `RecurrenceExceptionDates` of recurrence pattern appointment. The `RecurrenceId` of changed occurrence should holds the exact recurrence pattern appointment `Id`.
+You can also add an exception appointment which is changed or modified occurrence of the recurrence pattern appointment to the `ItemsSource` of Scheduler. To add a changed occurrence, ensure to set the `RecurrenceId` of that occurrence and add the date of that occurrence to the `RecurrenceExceptionDates` of recurrence pattern appointment. The `RecurrenceId` of changed occurrence should hold the exact recurrence pattern appointment `Id.`
 
 {%tabs %}
 {% highlight xaml %}
@@ -521,9 +521,9 @@ You can also add an exception appointment which is changed or modified occurrenc
 </scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-// Creating an instance for schedule appointment collection
+// Creating an instance for schedule appointment collection.
 var appointmentCollection = new ScheduleAppointmentCollection();
-// Recurrence and exception appointment
+// Recurrence and exception appointment.
 var scheduleAppointment = new ScheduleAppointment
 {
     Id = 1,
@@ -567,9 +567,9 @@ this.Schedule.ItemsSource = appointmentCollection;
 
 N>
 * The `RecurrenceId` of an exception appointment and the Id of its pattern appointment should have the same value.
-* The Exception recurrence appointment does not have the `RecurrenceRule`, so for an exception appointment, it will be reset to `empty`.
-* The exception appointment should have different Id with original pattern appointment `Id`.
-* The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence is from recurrence pattern.
+* The Exception recurrence appointment does not have the `RecurrenceRule,` so for an exception appointment, it will be reset to `empty.`
+* The exception appointment should have a different Id with original pattern appointment `Id.`
+* The exception appointment should be a normal appointment and should not be created as a recurring appointment, since its occurrence is from a recurrence pattern.
 * The `RecurrenceExceptionDates` should be in a Universal Time Coordinates (UTC) time zone.
 
 ### Create recurrence exceptions for custom appointment
@@ -578,7 +578,7 @@ You can add the recurrence exception appointments and recurrence exception dates
 
 ### Delete occurrence from the recurrence pattern appointment or adding exception dates to recurrence pattern appointment
 
-You can delete any occurrence which is an exception from the recurrence pattern appointment by using the `RecurrenceExceptionDates` property of `AppointmentMapping` class which is used to map the exception dates to the schedule recurrence appointment. The deleted occurrence date will be considered as recurrence exception date.
+You can delete any occurrence which is an exception from the recurrence pattern appointment by using the `RecurrenceExceptionDates` property of the `AppointmentMapping` class which is used to map the exception dates to the schedule recurrence appointment. The deleted occurrence date will be considered as a recurrence exception date.
 To add the exception dates in the recurrence series of custom appointment, add the `RecurrenceExceptionDates,` `EventName,` `From,` `To,` `Color,` `RecurrenceRule` properties to the custom class `Meeting.`
 
 {% tabs %}
@@ -622,10 +622,10 @@ You should map this custom property `RecurrenceExceptionDates` of custom class w
 </scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-// Creating an instance for custom appointment collection
+// Creating an instance for custom appointment collection.
 ObservableCollection<Meeting> customAppointmentCollection = new ObservableCollection<Meeting>();
 var exceptionDate = new DateTime(2021, 04, 01);
-//Adding custom appointment in the custom appointment collection 
+//Adding custom appointment in the custom appointment collection. 
 var recurrenceAppointment = new Meeting()
 {
     From = new DateTime(2021, 03, 28, 10, 0, 0),
@@ -635,16 +635,16 @@ var recurrenceAppointment = new Meeting()
     ForegroundColor = new SolidColorBrush(Colors.White),
     Id = 1
 };
-// Creating recurrence rule
+// Creating a recurrence rule.
 recurrenceAppointment.RecurrenceRule = "FREQ=DAILY;COUNT=20";
 // Add RecurrenceExceptionDates to appointment.
 recurrenceAppointment.RecurrenceExceptions = new ObservableCollection<DateTime>()
 {
     exceptionDate
 };
-//Adding custom appointment in the custom appointment collection
+//Adding custom appointment in the custom appointment collection.
 customAppointmentCollection.Add(recurrenceAppointment);
-//Adding custom appointment collection to the ItemsSource of SfScheduler
+//Adding custom appointment collection to the ItemsSource of SfScheduler.
 this.Schedule.ItemsSource = customAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
@@ -655,14 +655,14 @@ N> Exception dates should be Universal Time Coordinates (UTC) time zone.
 
 ## Add an exception appointment to the recurrence pattern
 
-You can also add an exception appointment which is changed or modified occurrence of the recurrence pattern appointment to the `ItemsSource` of Scheduler. To add the changed occurrence, ensure to set the `RecurrenceId` of that occurrence and add the date of that occurrence to `RecurrenceExceptionDates` of recurrence pattern appointment. The RecurrenceId of changed occurrence should holds the exact recurrence pattern appointment `Id`.
-You should map the equivalent properties of `Id,` `RecurrenceId` and `RecurrenceExceptionDates` properties from the business object to the `Id` and `RecurrenceExceptionDates` properties of `AppointmentMapping.`
+You can also add an exception appointment which is changed or modified occurrence of the recurrence pattern appointment to the `ItemsSource` of Scheduler. To add the changed occurrence, ensure to set the `RecurrenceId` of that occurrence and add the date of that occurrence to `RecurrenceExceptionDates` of recurrence pattern appointment. The RecurrenceId of changed occurrence should hold the exact recurrence pattern appointment `Id`.
+You should map the equivalent properties of `Id,` `RecurrenceId,` and `RecurrenceExceptionDates` properties from the business object to the `Id` and `RecurrenceExceptionDates` properties of `AppointmentMapping.`
 
-You should add the created exception recurrence appointment to the SfScheduler `ItemsSource`.
+You should add the created exception recurrence appointment to the SfScheduler `ItemsSource.`
 
 {%tabs %}
 {% highlight c# %}
-//// Creating an instance for schedule appointment collection
+//// Creating an instance for schedule appointment collection.
 public ObservableCollection<Meeting> RecursiveAppointmentCollection
 {
     get;
@@ -694,7 +694,7 @@ public ObservableCollection<Meeting> RecursiveAppointmentCollection
 {% endhighlight %}
 {% highlight c# %}
 this.RecursiveAppointmentCollection = new ObservableCollection<Meeting>();
-//Adding custom appointment in the custom appointment collection 
+//Adding custom appointment in the custom appointment collection. 
 Meeting dailyEvent = new Meeting
 {
     EventName = "Daily scrum meeting",
@@ -705,7 +705,7 @@ Meeting dailyEvent = new Meeting
     RecurrenceRule = "FREQ=DAILY;INTERVAL=1;COUNT=10",
     Id = 1
 };
-//Adding custom appointment in the custom appointment collection
+//Adding custom appointment in the custom appointment collection.
 RecursiveAppointmentCollection.Add(dailyEvent);
 
 //Add ExceptionDates to avoid occurrence on specific dates.
@@ -727,7 +727,7 @@ Meeting changedEvent = new Meeting
     RecurrenceId = 1
 };
 RecursiveAppointmentCollection.Add(changedEvent);
-//Adding custom appointment collection to the ItemsSource of SfScheduler
+//Adding custom appointment collection to the ItemsSource of SfScheduler.
 this.Schedule.ItemsSource = RecursiveAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
@@ -743,7 +743,7 @@ N>
 
 ## Appearance customization
 
-The default appearance of schedule appointment can be customized in all views by using the `AppointmentTemplate` and `AppointmentTemplateSelector` properties of `ViewSettingsBase.` You can use the `AllDayAppointmentTemplate` property of `DaysViewSettings` to customize the appearance of all-day appointments in day, week and workweek views.
+The default appearance of schedule appointment can be customized in all views by using the `AppointmentTemplate` and `AppointmentTemplateSelector` properties of `ViewSettingsBase.` You can use the `AllDayAppointmentTemplate` property of `DaysViewSettings` to customize the appearance of all-day appointments in day, week, and workweek views.
 
 {%tabs %}
 {% highlight xaml %}

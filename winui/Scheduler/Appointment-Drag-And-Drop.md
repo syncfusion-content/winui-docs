@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appointment Drag and Drop | WinUI | Scheduler | Syncfusion
-description: This section explains how to handle an appointment drag and drop in Syncfusion WinUI Scheduler. Also, explain about events in which used in drag and drop.
+description: This section explains how to handle an appointment drag and drop in the Syncfusion WinUI Scheduler. Also, explain about the events in which used in drag and drop.
 platform: winui
 control: Scheduler
 documentation: ug
@@ -13,7 +13,7 @@ The Scheduler supports to reschedule the appointment by performing the drag and 
 
 ## Disable drag and drop
 
-The Scheduler supports to disable the appointment drag and drop by setting `AppointmentEditFlag` property except `DragDrop.` In this case,you will not be able to perform appointment drag & drop.
+The Scheduler supports disabling the appointment drag and drop by setting the `AppointmentEditFlag` property except `DragDrop.` In this case, you will not be able to perform appointment drag & drop.
 
 {% tabs %}
 {% highlight xaml %}
@@ -40,8 +40,8 @@ this.Schedule.DragDropSettings.ShowTimeIndicator = true;
 ![show-appointment-dragging-time-indicator-in-winui-scheduler](Appointment-Drag-And-Drop_Images/adding-show-appointment-dragging-time-indicator-in-winui-scheduler.png)
 
 N>
-* Not applicable for Month and Timeline Month views. 
-* If the TimeRulerSize property value is zero to collapse the time ruler labels, then drag time indicator will not be shown.
+* Not applicable for the Month and Timeline Month views. 
+* If the TimeRulerSize property value is zero to collapse the time ruler labels, then drag the time indicator will not be shown.
 
 ## Appointment dragging time indicator text formatting
 
@@ -58,17 +58,18 @@ this.Schedule.DragDropSettings.TimeIndicatorFormat = "HH mm tt";
 
 ## AppointmentDragOver event
 
-The Scheduler notifies by `AppointmentDragOver` when drag the appointment. The `AppointmentDragOverEventArgs` has following members which provides information for `AppointmentDragOver` event.
+The Scheduler notifies by `AppointmentDragOver` when dragging the appointment. The `AppointmentDragOverEventArgs` has following members which provides information for the `AppointmentDragOver` event.
 
-`Appointment` - Gets the Appointment that is dragging.
+`Appointment`: Gets the Appointment that is dragging.
 
-`DraggingPoint` - Gets the dragging point of schedule appointment UI.
+`DraggingPoint`: Gets the dragging point of the schedule appointment UI.
 
-`DraggingTime` - Gets the dragging time of the dragging appointment object.
+`DraggingTime`: Gets the dragging time of the dragging appointment object.
 
-`SourceResource` - Gets the SchedulerResource where the appointment was located before starting the dragging.
+`SourceResource`: Gets the SchedulerResource where the appointment was located before starting the dragging.
 
-`TargetResource` - Gets the SchedulerResource where the appointment is currently being dragged over.
+`TargetResource`: Gets the SchedulerResource where the appointment is currently being dragged over.
+
 
 {% tabs %}
 {% highlight c# %}
@@ -83,13 +84,13 @@ private void Schedule_AppointmentDragOver(object sender, AppointmentDragOverEven
 
 ## AppointmentDragStarting event
 
-The Scheduler notifies by `AppointmentDragStarting` when start to drag the appointment. The `AppointmentDragStartingEventArgs` has following members which provides information for `AppointmentDragStarting` event.
+The Scheduler notifies by the `AppointmentDragStarting` when starting to drag the appointment. The `AppointmentDragStartingEventArgs` has following members which provides information for the `AppointmentDragStarting` event.
 
-`Appointment` - Get the selected appointment.
+`Appointment`: Get the selected appointment.
 
-`Cancel` - To avoid appointment dragging by enabling this property.
+`Cancel`: To avoid appointment dragging by enabling this property.
 
-`Resource` - gets the resource of an appointment under which the appointment is located.
+`Resource`: Gets the resource of an appointment under which the appointment is located.
 
 {% tabs %}
 {% highlight c# %}
@@ -106,15 +107,15 @@ private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStar
 
 The Scheduler notifies by `AppointmentDropping` when you drop the appointment. The `AppointmentDroppingEventArgs` has following members which provides information for `AppointmentDropping` event.
 
-`Appointment` - Gets the selected appointment that is dragged and dropped.
+`Appointment`: Gets the selected appointment that is dragged and dropped.
 
-`Cancel` - To avoid appointment dropping by enabling this property.
+`Cancel`: To avoid the appointment dropping by enabling this property.
 
-`DropTime` - Gets the dropped time of the dragged appointment.
+`DropTime`: Gets the dropped time of the dragged appointment.
 
-`SourceResource` - Gets the SchedulerResource where the appointment was located before starting the dragging.
+`SourceResource`: Gets the SchedulerResource where the appointment was located before starting the dragging.
 
-`TargetResource` - Gets the SchedulerResource where the appointment is currently being dragged over.
+`TargetResource`: Gets the SchedulerResource where the appointment is currently being dragged over.
 
 {% tabs %}
 {% highlight c# %}
