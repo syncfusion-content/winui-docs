@@ -24,6 +24,8 @@ public MainPage()
 {% endhighlight %}
 {% endtabs %}
 
+## Creating .resw files
+
 To localize the SfTreeGrid based on `CurrentUICulture` using resource files, follow the below steps. 
 
 N> You can get the default resource files of all Syncfusion WinUI libraries from [GitHub](https://github.com/syncfusion/winui-controls-localization-resource-files).
@@ -44,11 +46,11 @@ N> You can get the default resource files of all Syncfusion WinUI libraries from
 
 5) Also, localize application text in XAML using below steps
 
-    a)Add resource name in .resx file
+5a) Add resource name in .resx file
 	
 ![Localize application text in WinUI TreeGrid](Localization_images/Localize-application-text-in-WinUI-TreeGrid.png)
 
-    b)Refer the mentioned resource name in XAML like below.
+5b) Refer the mentioned resource name in XAML like below.
 	
 {% tabs %}
 {% highlight xaml %}
@@ -86,6 +88,6 @@ xmlns:coreconverter="using:Syncfusion.UI.Xaml.Core"
 
 ![Shows the localized application text in German for WinUI TreeGrid](Localization_images/Shows-the-localized-application-text-in-German-for-WinUI-TreeGrid.png)
 
-## Edit default culture resource 
+## Editing default culture resource 
 
 You can change the default string of datagrid control by adding the default .resw files ([from GitHub](https://github.com/syncfusion/winui-controls-localization-resource-files)) to Resources folder of your application. Syncfusion WinUI controls reads the default string from the .resw files of application if its added.
