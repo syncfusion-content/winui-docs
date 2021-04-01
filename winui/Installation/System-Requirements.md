@@ -18,7 +18,7 @@ Windows 10, version 1809 (build 17763) or later.
 ## Development Environment
 
 [Visual Studio 2019, version 16.10 Preview](https://visualstudio.microsoft.com/vs/preview/) (or later) with following components. 
- * <b>Universal Windows Platform development</b> of the <b>Workloads</b> tba of the installation dialog.  
+ * <b>Universal Windows Platform development</b> of the <b>Workloads</b> tab of the installation dialog.  
  * <b>Windows 10 SDK (10.0.19041.0)</b> on <b>Individual components</b> tab of the installation dialog. 
  * [Project Reunion 0.5 extension](https://marketplace.visualstudio.com/items?itemName=ProjectReunion.MicrosoftProjectReunion)
 
