@@ -52,6 +52,13 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
         </td>
     </tr>
     <tr>
+        <td>
+            <p><a href="https://help.syncfusion.com/winui/linear-gauge/getting-started">Linear Gauge</a></p>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
         <td colspan="3">
             <b>NAVIGATION</b>
         </td>
@@ -89,16 +96,20 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
         <td>
             <p><a href="https://help.syncfusion.com/winui/calendar-datepicker/getting-started">Calendar Date Picker</a></p>
         </td>
-         <td>
-            <p><a href="https://help.syncfusion.com/winui/datepicker/getting-started">Date Picker</a></p>
+        <td>
+            <p><a href="https://help.syncfusion.com/winui/calendar-daterangepicker/getting-started">Calendar DateRange Picker</a></p>
         </td>
     </tr>
     <tr>
         <td>
+            <p><a href="https://help.syncfusion.com/winui/datepicker/getting-started">Date Picker</a></p>
+        </td>
+        <td>
             <p><a href="https://help.syncfusion.com/winui/timepicker/getting-started">Time Picker</a></p>
         </td>
-        <td></td>
-        <td></td>
+        <td>
+            <p><a href="https://help.syncfusion.com/winui/scheduler/getting-started">Scheduler</a></p>
+        </td>
     </tr>
     <tr>
         <td colspan="3">
