@@ -125,7 +125,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Unbound rows in WinUI DataGrid](GridLines_images/GridLines_image5.png)
+![Horizontal HeaderLinesVisibility in WinUI DataGrid](GridLines_images/GridLines_image5.png)
 
 ## Limitations
 
