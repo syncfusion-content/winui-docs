@@ -118,7 +118,7 @@ The month view of a Scheduler can be oriented in both horizontal and vertical di
 <scheduler:SfScheduler x:Name="Schedule"
                        ViewType="Month" >
      <scheduler:SfScheduler.MonthViewSettings>
-          <scheduler:MonthViewSettings                              MonthNavigationDirection="Vertical"/>
+          <scheduler:MonthViewSettings MonthNavigationDirection="Vertical"/>
      </scheduler:SfScheduler.MonthViewSettings>
 </scheduler:SfScheduler>
 {% endhighlight %}
@@ -164,7 +164,7 @@ You can customize the day format of the Scheduler view header by using the `View
 <scheduler:SfScheduler x:Name="Schedule"
                        ViewType="Month" >
      <scheduler:SfScheduler.MonthViewSettings>
-          <scheduler:MonthViewSettings                              ViewHeaderDayFormat="ddd"/>
+          <scheduler:MonthViewSettings  ViewHeaderDayFormat="ddd"/>
      </scheduler:SfScheduler.MonthViewSettings>
 </scheduler:SfScheduler>
 {% endhighlight %}
@@ -286,7 +286,7 @@ You can customize the blacked out dates (trailing, leading, normal days, and cur
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-     <local:MonthCellTemplateSelector                               x:Key="appointmentTemplateSelector" 
+     <local:MonthCellTemplateSelector   x:Key="appointmentTemplateSelector" 
           LeadingDayTemplate="{StaticResource leadingDayTemplate}" TrailingDayTemplate="{StaticResource trailingDayTemplate}" BlackOutDateTemplate="{StaticResource blackOutDateTemplate}" CurrentDayTemplate="{StaticResource currentDayTemplate}"  NormalDayTemplate="{StaticResource normalDayTemplate}"/>
         
         <DataTemplate x:Key="leadingDayTemplate">
@@ -321,7 +321,7 @@ You can customize the blacked out dates (trailing, leading, normal days, and cur
  <scheduler:SfScheduler x:Name="Schedule"
                         ViewType="Month" >
      <scheduler:SfScheduler.MonthViewSettings>
-          <scheduler:MonthViewSettings                                MonthCellTemplateSelector="{StaticResource appointmentTemplateSelector}">
+          <scheduler:MonthViewSettings  MonthCellTemplateSelector="{StaticResource appointmentTemplateSelector}">
           </scheduler:MonthViewSettings>
      </scheduler:SfScheduler.MonthViewSettings>
 </scheduler:SfScheduler>    
