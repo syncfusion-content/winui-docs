@@ -193,6 +193,8 @@ private void Schedule_AppointmentDeleting(object sender, AppointmentDeletingEven
 
 The Scheduler has support to resize the selected appointment. This support is available for all views except `Month` view.
 
+N>  Applicable only for WinUI UWP.
+
 ### Disable appointment resize
 
 The Scheduler supports to disable the appointment resizing by setting `AppointmentEditFlag` property except `Resize.` In this case, you will not be able to perform appointment resizing.
