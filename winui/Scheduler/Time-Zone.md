@@ -1162,7 +1162,7 @@ UTC + 14:00
 
 You can create appointments at different time zones using the `StartTimeZone` and `EndTimeZone` properties of `ScheduleAppointment`. An appointment’s start time and end time are calculated based on the given time zone information for the start time and end time. You can set different time zones to the `StartTimeZone` and `EndTimeZone` properties.
 
-You can use the `StartTime` and `EndTime` properties of `ScheduleAppointmen`t to get the exact start time and end time of an appointment. By using the `ActualStartTime` and `ActualEndTime` properties, you can get exact appointment rendering time.
+You can use the `StartTime` and `EndTime` properties of `ScheduleAppointment` to get the exact start time and end time of an appointment. By using the `ActualStartTime` and `ActualEndTime` properties, you can get exact appointment rendering time.
 
 {% tabs %}	
 {% highlight c# %}
