@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Month view | WinUI | Scheduler | Syncfusion
-description: This section explains how to customize the appearance and change the date format for Month view in Syncfusion WinUI Scheduler (SfScheduler)
+description: This section explains how to customize the appearance and change the date format for Month view in the Syncfusion WinUI Scheduler (SfScheduler).
 platform: winui
 control: Scheduler
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Month View in WinUI Scheduler (SfScheduler)
 
-The month view of the scheduler displays the days of a specific month and current month, by default initially. The current date color is differentiated from other dates of the current month.
+By default, the month view of the scheduler displays the days of a specific month and current month initially. The current date color is differentiated from other dates of the current month.
 
 ## Month agenda view
 
-The scheduler month view displays a divided agenda view that is used to show the selected date’s appointments below the month. You can show the agenda view by setting the `ShowAgendaView` property to true in the `MonthViewSettings`.
+The scheduler month view displays a divided agenda view that is used to show the selected date’s appointments below the month. You can show the agenda view by setting the `ShowAgendaView` property to true in the `MonthViewSettings.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -33,12 +33,12 @@ this.Schedule.MonthViewSettings.ShowAgendaView = true;
 ![month-show-agenda-view-in-winui-scheduler-month-view](Month-View_Imges/adding-month-show-agenda-view-in-winui-scheduler.png)
 
 N>
-* An agenda view displays text as No Selected Date until a date is selected
+* An agenda view displays the text as No Selected Date until a date is selected.
 * If there is no appointment on a selected day, the agenda view displays the text as No Events.
 
 ### Agenda view height
 
-You can customize the month agenda view height from the Scheduler by using the `AgendaViewHeight` property of `MonthViewSettings`. By default, the agenda view will occupy 30% of the Scheduler height.
+You can customize the month agenda view height from the Scheduler by using the `AgendaViewHeight` property of `MonthViewSettings.` By default, the agenda view will occupy 30% of the Scheduler height.
 
 {% tabs %}
 {% highlight xaml %}
@@ -64,7 +64,7 @@ this.Schedule.MonthViewSettings.AgendaViewHeight = 300;
 
 ## Appointment display mode
 
-You can handle the Scheduler month view appointment display by using the `AppointmentDisplayMode` property of `MonthViewSettings`. By default, the AppointmentDisplayMode is set to Appointment. By using the AppointmentDisplayMode, you can set the month view appointments display as follows.
+You can handle the Scheduler month view appointment display by using the `AppointmentDisplayMode` property of `MonthViewSettings.` By default, the AppointmentDisplayMode is set to Appointment. By using the AppointmentDisplayMode, you can set the month view appointments display as follows.
 
 * `None`:  Appointment will not be displayed.
 * `Indicator`:  Appointment will be denoted as the circle.
@@ -111,7 +111,7 @@ this.Schedule.MonthViewSettings.AppointmentDisplayCount = 4;
 
 ## Month navigation direction
 
-The month view of a Scheduler can be oriented in both horizontal and vertical directions. You can change the direction of navigation using the `MonthNavigationDirection` property of `MonthViewSettings`. By default, the month navigation direction is set to Horizontal.
+The month view of a Scheduler can be oriented in both horizontal and vertical directions. You can change the direction of navigation using the `MonthNavigationDirection` property of `MonthViewSettings.` By default, the month navigation direction is set to Horizontal.
 
 {% tabs %}
 {% highlight xaml %}
@@ -132,7 +132,7 @@ this.Schedule.MonthViewSettings.MonthNavigationDirection = Orientation.Vertical;
 
 ## Date format
 
-You can customize the date format of the scheduler month view by using the `DateFormat` property of `MonthViewSettings`. By default, the month date format is d.
+You can customize the date format of the scheduler month view by using the `DateFormat` property of `MonthViewSettings.` By default, the month date format is `d.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -153,11 +153,11 @@ this.Schedule.MonthViewSettings.DateFormat = "dd";
 
 ## View header
 
-You can customize the default appearance of view header in month view by setting `ViewHeaderDayFormat,` `DateFormat ,` `ViewHeaderHeight` and `ViewHeaderTemplate` of `TimelineViewSettings.`
+You can customize the default appearance of view header in a month view by setting the  `ViewHeaderDayFormat,` `DateFormat,` `ViewHeaderHeight,` and `ViewHeaderTemplate` of `TimelineViewSettings.`
 
 ### View header text formatting
 
-You can customize the day format of the Scheduler view header by using the `ViewHeaderDayFormat` property of `MonthViewSettings`. By default, the month view header day format is `dddd`.
+You can customize the day format of the Scheduler view header by using the `ViewHeaderDayFormat` property of `MonthViewSettings.` By default, the month view header day format is `dddd.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -178,7 +178,7 @@ this.Schedule.MonthViewSettings.ViewHeaderDayFormat = "ddd";
 
 ### View header height
 
-You can customize the view header height by using the `ViewHeaderHeight` property of `MonthViewSettings`. By default,the `ViewHeaderHeight` is `50`.
+You can customize the view header height by using the `ViewHeaderHeight` property of `MonthViewSettings.` By default, the `ViewHeaderHeight` is `50.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -281,7 +281,7 @@ private ObservableCollection<DateTime> GetBlackoutDates()
 
 ## Show week number
 
-You can display the week number of a year in the scheduler month view by setting the `ShowWeekNumber` property of `MonthViewSettings` is set to true. By default, it is false.
+You can display the week number of a year in the scheduler month view by setting the `ShowWeekNumber` property of `MonthViewSettings` is set to true. By default, it is set to false.
 
 {% tabs %}
 {% highlight xaml %}
@@ -300,7 +300,7 @@ this.Schedule.MonthViewSettings.ShowWeekNumber = true;
 
 ## Customize week number template
 
-You can customize the default appearance of a week number template in month view by using the `WeekNumberTemplate` property of `MonthViewSettings`.
+You can customize the default appearance of a week number template in the month view by using the `WeekNumberTemplate` property of `MonthViewSettings.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -332,7 +332,7 @@ You can customize the default appearance of a week number template in month view
 
 ### Using the DataTemplate
 
-You can customize the default appearance of the month cell by using the `MonthCellTemplate` property of `MonthViewSettings`.
+You can customize the default appearance of the month cell by using the `MonthCellTemplate` property of `MonthViewSettings.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -360,8 +360,8 @@ You can customize the default appearance of the month cell by using the `MonthCe
 
 ### Using the DataTemplateSelector
 
-You can customize the default appearance of the month cell by using the `MonthCellTemplateSelector` property of `MonthViewSettings`.
-The `DataTemplateSelector` can choose a `DataTemplate` at runtime based on the value of a data-bound to Scheduler month cell using the `MonthCellTemplate`. It lets you choose a different data template for each month’s cell, customizing the appearance of a particular month cell based on certain conditions.
+You can customize the default appearance of the month cell by using the `MonthCellTemplateSelector` property of `MonthViewSettings.`
+The `DataTemplateSelector` can choose a `DataTemplate` at runtime based on the value of a data-bound to Scheduler month cell using the `MonthCellTemplate.` It lets you choose a different data template for each month’s cell, customizing the appearance of a particular month cell based on certain conditions.
 
 {% tabs %}
 {% highlight xaml %}
@@ -436,7 +436,7 @@ public class MonthCellTemplateSelector : DataTemplateSelector
 
 ### Using the DataTemplate
 
-You can customize the default appearance of the month cell appointment by using the `AppointmentTemplate` property of `MonthViewSettings`.
+You can customize the default appearance of the month cell appointment by using the `AppointmentTemplate` property of `MonthViewSettings.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -470,7 +470,7 @@ You can customize the default appearance of the month cell appointment by using 
 
 ### Using the DataTemplateSelector
 
-You can customize the default appearance of the month view appointments by using the `AppointmentTemplateSelector` property of `MonthViewSetting`s.
+You can customize the default appearance of the month view appointments by using the `AppointmentTemplateSelector` property of `MonthViewSetting`.
 The `DataTemplateSelector` can choose a `DataTemplate` at runtime based on the value of a data-bound to Scheduler month appointments using the `AppointmentTemplate`. It lets you choose a different data template for each month’s cell, customizing the appearance of a particular appointment based on certain conditions.
 
 {% tabs %}
