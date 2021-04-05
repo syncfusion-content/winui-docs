@@ -27,4 +27,4 @@ Syncfusion WinUI Range Slider is a highly interactive UI control, allowing users
 
 * **Highly customizable:** Supports a wide range of options to customize the control completely.
 
-N> You can get the samples in the [GitHub](https://github.com/syncfusion/winui-demos/tree/master/rangeslider) link. 
+N> You can get the samples in the [GitHub](https://github.com/SyncfusionExamples/WinUI_Sliders_Getting_Started/tree/main/RangeSlider) link. 
