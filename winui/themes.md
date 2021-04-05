@@ -95,7 +95,7 @@ You can modify the Syncfusion WinUI controls appearance using theme resources fi
 3. Merge the resource file in your application.
 4. Change the control appearance as you like.
 
-The following examples demonstrate how to customize the Ribbon control using the ribbon's theme resources file.
+The examples below show how to customize a Ribbon control by using the keys listed below from the ribbon's theme resources file.
 
 {% tabs %}
 {% highlight xaml %}
@@ -104,9 +104,14 @@ The following examples demonstrate how to customize the Ribbon control using the
         <ResourceDictionary Source="themeresources.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
+
+<SolidColorBrush x:Key="SyncfusionRibbonTabBackgroundPointerOver" Color="White" />
+<SolidColorBrush x:Key="SyncfusionRibbonTabBorderBrushSelected" Color="Green" />
+
 {% endhighlight %}
 {% endtabs %}
 
+![Modify theme resource in application level](Common-images/Common-image2.png)
 
 
 

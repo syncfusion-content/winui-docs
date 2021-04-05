@@ -27,6 +27,7 @@ The basic xaml control provides built-in keyboard support including tab navigati
 
 The Windows operating system and applications support all of the high contrast themes that users can enable and these themes make the controls more efficient to see and are especially useful for people with limited vision.
 
+![HighContrast theme support in Syncfusion WinUI controls](Common-images/Common-image1.png)
 
 
 
