@@ -11,7 +11,7 @@ documentation: ug
 
 The scheduler supports to loading appointment on demand with loading indicator and it improves the loading performance when you have appointments range for multiple years.
 
-![load-on-demand-from-visible-date-ranges-in-winui-scheduler](LoadOnDemand_Image/load-appointments-on-demand-from-visible-date-ranges-in-winui-scheduler.gif)
+![load-appointments-on-demand-from-visible-date-ranges-in-winui-scheduler](LoadOnDemand_Image/load-appointments-on-demand-from-visible-date-ranges-in-winui-scheduler.gif)
 
 ## QueryAppointments event
 
