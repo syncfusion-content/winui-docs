@@ -27,4 +27,4 @@ Syncfusion WinUI Slider is a highly interactive UI control, allowing users to se
 
 * **Highly customizable:** Supports a wide range of options to customize the control completely.
 
-N> You can get the samples in the [GitHub](https://github.com/syncfusion/winui-demos/tree/master/slider) link. 
+N> You can get the samples in the [GitHub](https://github.com/syncfusion/winui-demos/tree/master/sliders) link. 
