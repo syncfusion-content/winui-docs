@@ -48,7 +48,7 @@ chart.Series.Add(series);
 
 ![FastLineBitmap chart type in WinUI](FastChart_images/fastlinebitmap_chart.png)
 
-N> As it was rendered using bitmap, there might be some jagged lines at the edges. This is can be reduced using the [`EnableAntiAliasing`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastLineBitmapSeries_EnableAntiAliasingProperty) property.
+N> As it was rendered using bitmap, there might be some jagged lines at the edges. This is can be reduced using the [`EnableAntiAliasing`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastLineBitmapSeries_EnableAntiAliasing) property.
 
 {% tabs %}
 
