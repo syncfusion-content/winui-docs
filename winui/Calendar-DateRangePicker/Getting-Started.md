@@ -312,9 +312,9 @@ sfCalendarDateRangePicker.FormatString= "{0:D}-{1:D}";
 
 ![CalendarDateRangePicker selected date with month format](Getting-Started_images/FormatString.png)
 
-## Change date format for Spinner
+## Change date format for drop down calendar
 
-You can use different date formats such as abbreviated or full name for a day, month, week names or header name of month and year in drop-down spinner by using the `DateFormat`, `MonthFormat`, `DayOfWeekFormat` and `MonthHeaderFormat` properties.
+You can use different date formats such as abbreviated or full name for a day, month, week names or header name of month and year in drop-down calendar by using the `DateFormat`, `MonthFormat`, `DayOfWeekFormat` and `MonthHeaderFormat` properties.
 
 N> Refer [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.datetimeformatting.datetimeformatter?view=winrt-19041) page to get more date formatting.
 
