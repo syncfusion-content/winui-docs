@@ -11,7 +11,7 @@ documentation: ug
 
 ## FastLine Chart
 
-The [`FastLineSeries`]() is a special kind of line series that can render a collection with huge number of datapoints using the polyline segment. 
+The [`FastLineSeries`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineSeries.html) is a special kind of line series that can render a collection with huge number of datapoints using the polyline segment. 
 
 {% tabs %}
 
