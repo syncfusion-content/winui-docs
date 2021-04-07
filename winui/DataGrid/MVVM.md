@@ -34,19 +34,19 @@ public class ViewModel : NotificationObject
 {
     public ViewModel()
     {
-        DataGridSelectedItem = Orders[1];
+        _selectedItem = Orders[1];
     }
 
-    private object selectedItem;
+    private object _selectedItem;
     public object SelectedItem
     {
         get
         { 
-            return selectedItem;
+            return _selectedItem;
         }
         set
         {
-            selectedItem = value;
+            _selectedItem = value;
             RaisePropertyChanged("SelectedItem");
         }
     }
