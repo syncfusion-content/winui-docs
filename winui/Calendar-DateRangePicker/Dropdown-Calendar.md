@@ -9,7 +9,7 @@ documentation: ug
 
 # Dropdown Calendar in WinI CalendarDateRangePicker
 
-This section describes how to select a date from dropdown Calendar and its customization options in `SfCalendarDateRangePicker` control.
+This section describes how to select a date range from dropdown calendar and customization options available in `CalendarDateRangePicker` control.
 
 ## Change dropdown alignment
 
@@ -57,9 +57,9 @@ sfCalendarDateRangePicker.ShowDropDownButton = false;
 
 ![CalendarDateRangePicker hides the dropdown button](Dropdown-Calendar_images/ShowDropDownButton.png)
 
-## Show the submit button
+## Show the submit buttons
 
-You can show the submit button in `CalendarDateRangePicker` by setting the `ShowSubmitButtons` property value as `true`. The default value of `ShowSubmitButtons` property is `false`.
+You can show the submit buttons in `CalendarDateRangePicker` by setting the `ShowSubmitButtons` property value as `true`. The default value of `ShowSubmitButtons` property is `false`.
 
 N> When the submit buttons are hidden, you can change the `SelectedDate` property value by simply selecting the date.
 
@@ -82,7 +82,7 @@ sfCalendarDateRangePicker.ShowSubmitButtons = true;
 
 ## First day of week
 
-By default, Sunday is shown as the first day of the week in a dropdown calendar. If you want to change the first day of week, use the `FirstDayOfWeek` property value. The default value of `FirstDayOfWeek` property is `Sunday`.
+By default, Sunday is shown as the first day of the week in a dropdown calendar of `CalendarDateRangePicker` control. You can change the first day of week, by changing the `FirstDayOfWeek` property value. The default value of `FirstDayOfWeek` property is `Sunday`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -103,7 +103,7 @@ sfCalendarDateRangePicker.FirstDayOfWeek = DayOfWeek.Monday;
 
 ## Showing preset items in dropdown
 
-You can show collection of preset items in dropdown of `SfCalendarDateRangePicker` control using `Preset` property and `PresetTemplate` template. Bind the collection of preset items to be displayed in `Preset` property and set the required template in `PresetTemplate`.
+You can show collection of preset items in dropdown of `CalendarDateRangePicker` control using `Preset` and `PresetTemplate` properties. Bind the collection of preset items to be displayed in `Preset` property and set the required template in `PresetTemplate` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -196,7 +196,7 @@ Add the `Syncfusion.UI.Xaml.Calendar` namespace reference in code behind.
 
 ## Change dropdown size
 
-You can change the size of dropdown calendar by using `DropDownHeight` property. The default value of `DropDownHeight` property is `NaN`.
+You can change the size of dropdown calendar in `CalendarDateRangePicker` by using `DropDownHeight` property. The default value of `DropDownHeight` property is `NaN`.
 
 N> The dropdown size will be automatically resized based on the calendar and preset items hosted in it.
 
@@ -219,7 +219,7 @@ sfCalendarDateRangePicker.DropDownHeight = 500;
 
 ## Change flow direction
 
-By default, flow direction is changed automatically based on selected `CalendarIdentifier` value in `SfCalendarDateRangePicker` control. However you can override it by explicitly specifying the `FlowDirection` property value. The default value of `FlowDirection` property is `LeftToRight`.
+By default, flow direction is changed automatically based on selected `CalendarIdentifier` value in `CalendarDateRangePicker` control. However you can override it by explicitly specifying the `FlowDirection` property value. The default value of `FlowDirection` property is `LeftToRight`.
 
 N> When `CalendarIdentifier` and `FlowDirection` properties are set, `FlowDirection` property is given higher precedence.
 
