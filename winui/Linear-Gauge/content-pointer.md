@@ -9,7 +9,7 @@ documentation: ug
 
 # Content Pointer in WinUI Linear Gauge (SfLinearGauge)
 
-Highlight values using an image, icon, text, or any other custom view. You can set the custom views using the `Content` property.
+Highlight values using an image, icon, text, or any other custom view. You can set the custom views using the [`Content`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ContentPointer.html#Syncfusion_UI_Xaml_Gauges_ContentPointer_Content) property.
 
 {% tabs %}
 
@@ -69,7 +69,7 @@ this.Content = sfLinearGauge;
 
 ## Position customization
 
-The content pointer can be moved near or far from its actual position in X or Y direction using the `OffsetPoint` property. 
+The content pointer can be moved near or far from its actual position in X or Y direction using the [`OffsetPoint`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearMarkerPointer.html#Syncfusion_UI_Xaml_Gauges_LinearMarkerPointer_OffsetPoint) property. 
 
 To move the pointer inside of the axis, provide positive values.
 
@@ -150,7 +150,7 @@ this.Content = sfLinearGauge;
 
 **Content pointer alignment**
 
-You can change the horizontal or vertical position of the content pointer either start, end or center by using the `HorizontalAnchor` and `VerticalAnchor` properties. The default value of `HorizontalAnchor` and `VerticalAnchor` properties are Center.
+You can change the horizontal or vertical position of the content pointer either start, end or center by using the [`HorizontalAnchor`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearMarkerPointer.html#Syncfusion_UI_Xaml_Gauges_LinearMarkerPointer_HorizontalAnchor) and [`VerticalAnchor`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearMarkerPointer.html#Syncfusion_UI_Xaml_Gauges_LinearMarkerPointer_VerticalAnchor) properties. The default value of [`HorizontalAnchor`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearMarkerPointer.html#Syncfusion_UI_Xaml_Gauges_LinearMarkerPointer_HorizontalAnchor) and [`VerticalAnchor`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearMarkerPointer.html#Syncfusion_UI_Xaml_Gauges_LinearMarkerPointer_VerticalAnchor) properties are Center.
 
 {% tabs %}
 
