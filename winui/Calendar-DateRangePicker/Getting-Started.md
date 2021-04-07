@@ -10,6 +10,7 @@ documentation: ug
 # Getting Started with WinUI CalendarDateRangePicker
 
 This section explains the steps required to add the `CalendarDateRangePicker` control and its date range selection options. 
+
 ## Structure of CalendarDateRangePicker control
 
 ![Structure of WinUI CalendarDateRangePicker control](Getting-Started_images/OriginalStructure.png)
@@ -316,7 +317,7 @@ sfCalendarDateRangePicker.FormatString= "{0:D}-{1:D}";
 
 You can use different date formats such as abbreviated or full name for a day, month, week names or header name of month and year in drop-down calendar by using the `DateFormat`, `MonthFormat`, `DayOfWeekFormat` and `MonthHeaderFormat` properties.
 
-N> Refer [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.datetimeformatting.datetimeformatter?view=winrt-19041) page to get more date formatting.
+N> Refer [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.datetimeformatting.datetimeformatter?view=winrt-19041) page to get more date formats.
 
 {% tabs %}
 {% highlight xaml %}
