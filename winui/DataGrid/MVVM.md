@@ -33,10 +33,10 @@ Whenever the `SelectedItem` is changed, the `ViewModel` property will get 
 public class ViewModel : NotificationObject
 {
     public ViewModel()
-	{
-	    DataGridSelectedItem = Orders[1];
-	}
-	
+    {
+        DataGridSelectedItem = Orders[1];
+    }
+
     private object selectedItem;
     public object SelectedItem
     {
@@ -78,13 +78,13 @@ You can bind the `SelectedItems` from the `ViewModel` property.
 public class ViewModel : NotificationObject
 {
     public ViewModel()
-	{
+    {
         _selectedItems = new ObservableCollection<object>();
         _selectedItems.Add(Orders[3]);
         _selectedItems.Add(Orders[6]);
         _selectedItems.Add(Orders[9]);
         _selectedItems.Add(Orders[12]);
-	}
+    }
 	
     private ObservableCollection<object> _selectedItems; 
     public ObservableCollection<object> SelectedItems
