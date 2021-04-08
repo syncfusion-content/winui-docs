@@ -23,13 +23,13 @@ You can edit the appointments in appointment editor dialog. This changes will be
 
 ### Edit recurring appointment
 
-The Scheduler supports to edit the recurrence appointment. The following window will appear when you edit the recurrence appointment to select whether to edit only the particular occurrence or appointment series.
+The Scheduler supports to edit the recurrence appointment. The following editor dialog will appear when you edit the recurrence appointment to select whether to edit only the particular occurrence or appointment series.
 
-You can also handle the opening of recurrence popup window using `RecurringAppointmentEditMode` property in `AppointmentEditorOpeningEventArgs` by handling `AppointmentEditorOpening` event.
+You can also handle the opening of recurrence popup editor dialog using `RecurringAppointmentEditMode` property in `AppointmentEditorOpeningEventArgs` by handling `AppointmentEditorOpening` event.
 
 ### AppointmentEditorOpening event
 
-When you opens the appointment editor UI window to add or update appointment, then Scheduler notifies by `AppointmentEditorOpening` event.
+When you opens the appointment editor UI dialog to add or update appointment, then Scheduler notifies by `AppointmentEditorOpening` event.
 
 The `AppointmentEditorOpeningEventArgs` has following members which provides the information for `AppointmentEditorOpening` event.
 
@@ -41,11 +41,11 @@ The `AppointmentEditorOpeningEventArgs` has following members which provides the
 
 `RecurrenceEditMode` : Get or Sets the edit mode to perform the edit option to edit the occurrence or series for recurrence appointment. The default value of `RecurrenceEditMode` is `User.`
 
-* User - Default window dialog will appear when editing a recurrence appointment to select the edit option from the end-user itself.
-* Occurrence - Edit the particular occurrence alone in recurrence appointment. Default window dialog will not appear.
-* Series - Edit the entire series in recurrence appointment. Default window dialog will not appear.
+* User - Default editor content dialog will appear when editing a recurrence appointment to select the edit option from the end-user itself.
+* Occurrence - Edit the particular occurrence alone in recurrence appointment. Default editor content dialog will not appear.
+* Series - Edit the entire series in recurrence appointment. Default editor content dialog will not appear.
 
-For example, To use custom appointment editor window instead of default appointment editor window you can handle `AppointmentEditorOpening` event.
+For example, To use custom appointment editor dialog instead of default appointment editor content dialog you can handle `AppointmentEditorOpening` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -53,16 +53,16 @@ this.Schedule.AppointmentEditorOpening += Schedule_AppointmentEditorOpening;
 
 private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorOpeningEventArgs e)
 {
-    //To handle the default appointment editior window by setting the e.Cancel value as true.
+    //To handle the default appointment editor content dialog by setting the e.Cancel value as true.
     e.Cancel = true;
 
     if (e.Appointment != null)
     {
-        //Display the custom appointment editor window to edit the appointment.
+        //Display the custom appointment editor content dialog to edit the appointment.
     }
     else
     {
-        //Display the custom appointment editor window to add new appointment.
+        //Display the custom appointment editor content dialog to add new appointment.
     }
 }
 {% endhighlight %}
@@ -70,9 +70,9 @@ private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorO
 
 * `Resource` : Gets the resource of an appointment under which the appointment is located.
 
-## Visible/Collapse the built-in editors in appointment editor window
+## Visible/Collapse the built-in editors in appointment editor dialog
 
-You can programmatically visible or collapse the editors by setting the `AppointmentEditorOptions` property in `SchedulerAppointmentEditorWindow`. By default, the value of `AppointmentEditorOptions` is set to `AppointmentEditorOptions.All` in the `SchedulerAppointmentEditorWindow` that displays all the appointment editors. The following code shows how to collapse the `Recurrence` editor by handling the `AppointmentEditorOpening` event.
+You can programmatically visible or collapse the editors by setting the `AppointmentEditorOptions` property in `SchedulerAppointmentEditorView`. By default, the value of `AppointmentEditorOptions` is set to `AppointmentEditorOptions.All` in the `SchedulerAppointmentEditorView` that displays all the appointment editors. The following code shows how to collapse the `Recurrence` editor by handling the `AppointmentEditorOpening` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -90,7 +90,7 @@ N>
 
 ### AppointmentEditorClosing event
 
-When you close the appointment editor window after added or edited the schedule appointment, Scheduler notifies by `AppointmentEditorClosing` event.
+When you close the appointment editor content dialog after added or edited the schedule appointment, Scheduler notifies by `AppointmentEditorClosing` event.
 
 The `AppointmentEditorClosingEventArgs` has following members which provides the information for `AppointmentEditorClosing` event.
 
@@ -145,11 +145,11 @@ To disable appointment editing functionality, Set `AppointmentEditFlag` property
 The Scheduler supports two ways to remove the selected appointment.
 
 1. Pressing <kbd>delete</kbd> key.
-2. Using appointment editor window.
+2. Using appointment editor dialog.
 
 ### Delete recurring appointment
 
-The Scheduler supports to delete the recurrence appointment. The following window will appear when user deletes the recurrence appointment. You can select the delete option to make the changes for occurrence or appointment series.
+The Scheduler supports to delete the recurrence appointment. The following editor dialog will appear when user deletes the recurrence appointment. You can select the delete option to make the changes for occurrence or appointment series.
 
 ### AppointmentDeleting event
 
@@ -163,9 +163,9 @@ The `AppointmentDeletingEventArgs` has following members which provides informat
 
 `RecurrenceEditMode` : Gets or sets whether to delete series or occurrence when delete a recurrence appointment. The default value of `RecurrenceEditMode` is `User`
 
-* User - Default window dialog will appear when deleting a recurrence appointment to select the edit option from the end-user itself.
-* Occurrence - Delete the particular occurrence alone in recurrence appointment. Default window dialog will not appear.
-* Series - Delete the entire series in recurrence appointment. Default window dialog will not appear.
+* User - Default editor dialog will appear when deleting a recurrence appointment to select the edit option from the end-user itself.
+* Occurrence - Delete the particular occurrence alone in recurrence appointment. Default editor dialog will not appear.
+* Series - Delete the entire series in recurrence appointment. Default editor dialog will not appear.
 
 {% tabs %}
 {% highlight c# %}
