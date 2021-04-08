@@ -72,7 +72,7 @@ You can use the `Forward` method of SfScheduler for viewing the next immediate v
 </scheduler:SfScheduler>
 
 <Button x:Name="Forward"
-        Content="fwd"
+        Content="Forward"
         Click="Forward_Click">
 </Button>
 {% endhighlight %}
@@ -95,7 +95,7 @@ You can use the `Backward` method of SfScheduler for viewing the previous immedi
 </scheduler:SfScheduler>
 
 <Button x:Name="Backward"
-        Content="bwd"
+        Content="Backward"
         Click="Backward_Click">
 </Button>
 {% endhighlight %}

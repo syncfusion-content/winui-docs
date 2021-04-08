@@ -13,13 +13,13 @@ This section explains how to handle appointment editing in WinUI scheduler and a
 
 ## Adding appointments
 
-The Scheduler supports to add new appointment by using `Appointment Editor` UI window. You can open this window by double clicking on a time cell.
+The Scheduler supports to add new appointment by using `Appointment Editor` UI dialog. You can open this editor dialog by double clicking on a time cell.
 
 ## Editing appointment
 
-The Scheduler supports to edit the appointment by using `Appointment Editor` UI window. You can open this window by double clicking on the appointment.
+The Scheduler supports to edit the appointment by using `Appointment Editor` UI dialog. You can open this dialog by double clicking on the appointment.
 
-You can edit the appointments in appointment editor window. This changes will be saved back in appointment and mapped data object when using data binding.
+You can edit the appointments in appointment editor dialog. This changes will be saved back in appointment and mapped data object when using data binding.
 
 ### Edit recurring appointment
 
