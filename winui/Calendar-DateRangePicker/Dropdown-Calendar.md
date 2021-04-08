@@ -1,21 +1,21 @@
 ---
 layout: post
-title: DropDown Calendar in CalendarDateRangePicker control | Syncfusion
-description: This page explain about how to Customization the Drop Down of the WinUI CalendarDateRangePicker (SfCalendarDateRangePicker) control and items features.
+title: DropDown Calendar in Calendar DateRangePicker control | Syncfusion
+description: This page explain about how to Customization the Drop Down of the WinUI Calendar DateRangePicker (SfCalendarDateRangePicker) control and items features.
 platform: winui
 control:  SfCalendarDateRangePicker
 documentation: ug
 ---
 
-# Dropdown Calendar in WinI CalendarDateRangePicker
+# Dropdown Calendar in WinI Calendar DateRangePicker
 
-This section describes how to select a date range from dropdown calendar and customization options available in `CalendarDateRangePicker` control.
+This section describes how to select a date range from dropdown calendar and customization options available in `Calendar DateRangePicker` control.
 
 ## Change dropdown alignment
 
 You can change the alignment of the dropdown calendar as full, center, left, right, top or bottom edge by using the `DropDownPlacement` property. The default value of `DropDownPlacement` property is `Auto`.
 
-N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then `CalendarDateRangePicker` smartly shifts the dropdown calendar alignment.
+N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then `Calendar DateRangePicker` smartly shifts the dropdown calendar alignment.
 
 {% tabs %}
 {% highlight XAML %}
@@ -36,7 +36,7 @@ sfCalendarDateRangePicker.DropDownPlacement = FlyoutPlacementMode.Right;
 
 ## Hide the dropdown button
 
-You can hide the dropdown button in `CalendarDateRangePicker` by setting the `ShowDropDownButton` property value as `false`. The default value of `ShowDropDownButton` property is `true`.
+You can hide the dropdown button in `Calendar DateRangePicker` by setting the `ShowDropDownButton` property value as `false`. The default value of `ShowDropDownButton` property is `true`.
 
 N> When the dropdown button is hidden, you can still open the dropdown calendar use `ALT + down` keyboard shortcut.
 
@@ -55,11 +55,11 @@ sfCalendarDateRangePicker.ShowDropDownButton = false;
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDateRangePicker hides the dropdown button](Dropdown-Calendar_images/ShowDropDownButton.png)
+![Calendar DateRangePicker hides the dropdown button](Dropdown-Calendar_images/ShowDropDownButton.png)
 
 ## Show the submit buttons
 
-You can show the submit buttons in `CalendarDateRangePicker` by setting the `ShowSubmitButtons` property value as `true`. The default value of `ShowSubmitButtons` property is `false`.
+You can show the submit buttons in `Calendar DateRangePicker` by setting the `ShowSubmitButtons` property value as `true`. The default value of `ShowSubmitButtons` property is `false`.
 
 N> When the submit buttons are hidden, you can change the `SelectedDate` property value by simply selecting the date.
 
@@ -78,11 +78,11 @@ sfCalendarDateRangePicker.ShowSubmitButtons = true;
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDateRangePicker shows the submit button](Dropdown-Calendar_images/CalendarDateRangePicker-Show_SpinButton.png)
+![Calendar DateRangePicker shows the submit button](Dropdown-Calendar_images/CalendarDateRangePicker-Show_SpinButton.png)
 
 ## First day of week
 
-By default, Sunday is shown as the first day of the week in a dropdown calendar of `CalendarDateRangePicker` control. You can change the first day of week, by changing the `FirstDayOfWeek` property value. The default value of `FirstDayOfWeek` property is `Sunday`.
+By default, Sunday is shown as the first day of the week in a dropdown calendar of `Calendar DateRangePicker` control. You can change the first day of week, by changing the `FirstDayOfWeek` property value. The default value of `FirstDayOfWeek` property is `Sunday`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -99,11 +99,11 @@ sfCalendarDateRangePicker.FirstDayOfWeek = DayOfWeek.Monday;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI CalendarDateRangePicker weekdays start from Monday](Dropdown-Calendar_images/FirstDayOfWeek.png)
+![WinUI Calendar DateRangePicker weekdays start from Monday](Dropdown-Calendar_images/FirstDayOfWeek.png)
 
 ## Showing preset items in dropdown
 
-You can show collection of preset items in dropdown of `CalendarDateRangePicker` control using `Preset` and `PresetTemplate` properties. Bind the collection of preset items to be displayed in `Preset` property and set the required template in `PresetTemplate` property.
+You can show collection of preset items in dropdown of `Calendar DateRangePicker` control using `Preset` and `PresetTemplate` properties. Bind the collection of preset items to be displayed in `Preset` property and set the required template in `PresetTemplate` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -125,6 +125,8 @@ class ViewModel
 
 {% endhighlight %}
 {% endtabs %}
+
+Add the `Syncfusion.UI.Xaml.Calendar` namespace reference in code-behind.
 
 {% tabs %}
 {% highlight XAML %}
@@ -153,7 +155,7 @@ class ViewModel
     </Grid>
 </Page>
 
-Add the `Syncfusion.UI.Xaml.Calendar` namespace reference in code behind.
+
 
 {% endhighlight %}
 {% highlight c# %}
@@ -192,11 +194,11 @@ Add the `Syncfusion.UI.Xaml.Calendar` namespace reference in code behind.
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDateRangePicker dropdown with preset collection](Dropdown-Calendar_images/PresetCollection.png)
+![Calendar DateRangePicker dropdown with preset collection](Dropdown-Calendar_images/PresetCollection.png)
 
 ## Change dropdown size
 
-You can change the size of dropdown calendar in `CalendarDateRangePicker` by using `DropDownHeight` property. The default value of `DropDownHeight` property is `NaN`.
+You can change the size of dropdown calendar in `Calendar DateRangePicker` by using `DropDownHeight` property. The default value of `DropDownHeight` property is `NaN`.
 
 N> The dropdown size will be automatically resized based on the calendar and preset items hosted in it.
 
@@ -215,11 +217,11 @@ sfCalendarDateRangePicker.DropDownHeight = 500;
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDateRangePicker with customized dropdown height](Dropdown-Calendar_images/DropDownHeight.png)
+![Calendar DateRangePicker with customized dropdown height](Dropdown-Calendar_images/DropDownHeight.png)
 
 ## Change flow direction
 
-By default, flow direction is changed automatically based on selected `CalendarIdentifier` value in `CalendarDateRangePicker` control. However you can override it by explicitly specifying the `FlowDirection` property value. The default value of `FlowDirection` property is `LeftToRight`.
+By default, flow direction is changed automatically based on selected `CalendarIdentifier` value in `Calendar DateRangePicker` control. However you can override it by explicitly specifying the `FlowDirection` property value. The default value of `FlowDirection` property is `LeftToRight`.
 
 N> When `CalendarIdentifier` and `FlowDirection` properties are set, `FlowDirection` property is given higher precedence.
 
@@ -242,7 +244,7 @@ sfCalendarDateRangePicker.FlowDirection = FlowDirection.RightToLeft;
 
 ## Customize individual items in Calendar
 
-You can change the UI of specific cells in `CalendarDateRangePicker` dropdown calendar by using the [AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
+You can change the UI of specific cells in `Calendar DateRangePicker` dropdown calendar by using the [AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
 
 {% tabs %}
 {% highlight C# %}
@@ -425,10 +427,10 @@ public class CustomCalendarItemTemplateSelector : DataTemplateSelector
                     </calendar:SfCalendar>
             </editor:DropDownFlyout>
         </FlyoutBase.AttachedFlyout>
-    </calendar:SfCalendarDatePicker>
+    </calendar:SfCalendarDateRangePicker>
 </Grid>
 
 {% endhighlight %}
 {% endtabs %}
 
-![Custom UI of specific date cells in CalendarDatePicker](DropDown-Calendar_images/Customization.png)
+![Custom UI of specific date cells in Calendar DateRangePicker](DropDown-Calendar_images/Customization.png)
