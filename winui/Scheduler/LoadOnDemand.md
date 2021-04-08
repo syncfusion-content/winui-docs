@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Load appointments on demand | WinUI | Scheduler | Syncfusion
-description: This section explains how to load appointments on demand from visible date ranges in the Syncfusion WinUI Scheduler (SfScheduler)
+description: This section explains how to load appointments on-demand from visible date ranges in the Syncfusion WinUI Scheduler (SfScheduler)
 platform: winui
 control: Scheduler
 documentation: ug
@@ -9,16 +9,16 @@ documentation: ug
 
 # Load On Demand in WinUI Scheduler (SfScheduler)
 
-The scheduler supports to loading appointment on demand with loading indicator and it improves the loading performance when you have appointments range for multiple years.
+The scheduler supports loading appointments on-demand with loading indicator and it improves the loading performance when you have appointments range for multiple years.
 
 ![load-appointments-on-demand-from-visible-date-ranges-in-winui-scheduler](LoadOnDemand_Image/load-appointments-on-demand-from-visible-date-ranges-in-winui-scheduler.gif)
 
 ## QueryAppointments event
 
-The `QueryAppointments` event is used to load appointments in on-demand for the visible date range. You might start and stop the loading indicator animation before and after the appointments loaded using the `ShowBusyIndicator`.
+The `QueryAppointments` event is used to load appointments on-demand for the visible date range. You might start and stop the loading indicator animation before and after the appointments loaded using the `ShowBusyIndicator.`
 The `QueryAppointmentsEventArgs` has the following members which provide information for the `QueryAppointments` event.
 
-`VisibleDateRange` : Gets the current visible date range of scheduler that is used to load the appointments.
+`VisibleDateRange`: Gets the current visible date range of scheduler that is used to load the appointments.
 
 {%tabs %}
 {% highlight xaml %}
@@ -100,11 +100,11 @@ private void InitializeDataForBookings()
 {% endhighlight %}
 {% endtabs %}
 
-The `QueryAppointments` will be raised once any one of the following action will be taken.
+The `QueryAppointments` will be raised if any one of the following action will be taken.
 
 Once the `ViewChanged` event is raised, the `QueryAppointments` will be raised.
 
-If the appointment has been added, removed, or changed (Resize,drag, and drop) in the current time visible date range, then the `QueryAppointments` event will not be triggered. Since the appointments for that visible date range have been loaded already.
+IIf the appointment has been added, removed, or changed (Resize, drag, and drop) in the current time visible date range, then the `QueryAppointments` event will not be triggered. Since the appointments for that visible date range have been loaded already.
 
 The `QueryAppointments` event is triggered when the Schedule `ResourceCollection` is updated to load appointments based on the changed resource collection.
 
@@ -112,12 +112,12 @@ The `QueryAppointments` event will be triggered when the `ResourceGroupType` is 
 
 ## Load On Demand command
 
-The Scheduler notifies by `LoadOnDemandCommand` when the user changes the visible date range. You can get a visible date range from the `QueryAppointmentsEventArgs`. The default value for this `ICommand` is null. The `QueryAppointmentsEventArgs` passed as a command parameter.
+The Scheduler notifies the `LoadOnDemandCommand` when the user changes the visible date range. You can get a visible date range from the `QueryAppointmentsEventArgs.` The default value for this `ICommand` is null. The `QueryAppointmentsEventArgs` passed as a command parameter.
 
-You can define a ViewModel class that implements command and handle it by the `CanExecute` and `Execute` methods to check and execute on-demand loading. In execute method, you can perform the following operations,
+You can define a ViewModel class that implements command and handle it by the `CanExecute` and `Execute` methods to check and execute on-demand loading. In execute method, you can perform the following operations.
 
-* You can start and stop the loading indicator animation before and after the appointments loaded using the `ShowBusyIndicator`.
-* Once got appointment collection, you can load into the scheduler `ItemsSource`.
+* You can start and stop the loading indicator animation before and after the appointments loaded using the `ShowBusyIndicator.`
+* Once got appointment collection, you can load into the scheduler `ItemsSource.`
 
 {%tabs %}
 {% highlight xaml %}
@@ -234,7 +234,7 @@ public class LoadOnDemandViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-The `LoadOnDemandCommand` will be invoked once any one of the following actions will be taken.
+The `LoadOnDemandCommand` will be invoked if any one of the following actions will be taken.
 
 * Once the ViewChanged event is raised, the `LoadOnDemandCommand` will also be raised.
 
@@ -246,10 +246,10 @@ The `LoadOnDemandCommand` will be invoked once any one of the following actions 
 
 ## Load On Demand for recurring appointment
 
-The scheduler will add the occurrences of recurrence series based on the visible date range, you can use the `RecurrenceHelper.GetRecurrenceDateTimeCollection` to compare and load the recurrence appointment on demand in the `ItemsSource`.
+The scheduler will add the occurrences of recurrence series based on the visible date range, you can use the `RecurrenceHelper.GetRecurrenceDateTimeCollection` to compare and load the recurrence appointment on-demand in the `ItemsSource.`
 
 The recurrence appointment should be added to the Scheduler `ItemsSource` until the date of recurrence ends.
 
-If `RecurrenceRule` added with count or end date, you can use the `RecurrenceHelper.GetRecurrenceDateTimeCollection` method to get the recurrence date collection and compare recursive dates in the current visible date range. Then add the recurrence appointment in the scheduler `ItemsSource`.  If the recursive dates are in the current visible date range.
+If `RecurrenceRule` added with count or end date, you can use the `RecurrenceHelper.GetRecurrenceDateTimeCollection` method to get the recurrence date collection and compare recursive dates in the current visible date range. Then, add the recurrence appointment in the scheduler `ItemsSource.` If the recursive dates are in the current visible date range.
 
 If the `RecurrenceRule` is added without an end date, then the recurrence appointment should be added in the scheduler `ItemsSource` when all the visible dates changed from the recurrence start date.
