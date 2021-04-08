@@ -19,11 +19,15 @@ The Scheduler supports to add new appointment by using `Appointment Editor` UI d
 
 The Scheduler supports to edit the appointment by using `Appointment Editor` UI dialog. You can open this dialog by double clicking on the appointment.
 
+![edit-an-appointment-using-appointment-editor-dialog-in-winui-scheduler](Appointment-Editing_Images/edit-an-appointment-using-appointment-editor-dialog-in-winui-scheduler.png)
+
 You can edit the appointments in appointment editor dialog. This changes will be saved back in appointment and mapped data object when using data binding.
 
 ### Edit recurring appointment
 
 The Scheduler supports to edit the recurrence appointment. The following editor dialog will appear when you edit the recurrence appointment to select whether to edit only the particular occurrence or appointment series.
+
+![edit-an-recurring-appointment-using-recurring-appointment-editor-dialog-in-winui-scheduler](Appointment-Editing_Images/edit-an-recurring-appointment-using-recurring-appointment-editor-dialog-in-winui-scheduler.png)
 
 You can also handle the opening of recurrence popup editor dialog using `RecurringAppointmentEditMode` property in `AppointmentEditorOpeningEventArgs` by handling `AppointmentEditorOpening` event.
 
@@ -84,6 +88,8 @@ private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorO
 }
 {% endhighlight %}
 {% endtabs%}
+
+![collapse-build-in-editors-of-appointment-editor-dialog-in-winui-scheduler](Appointment-Editing_Images/collapse-build-in-editors-of-appointment-editor-dialog-in-winui-scheduler.png)
 
 N>
 * The basic editors such that `Subject`, `Location`, `Start Hour` and `End Hour` of the scheduler appointment editor will not be collapsed.
@@ -150,6 +156,8 @@ The Scheduler supports two ways to remove the selected appointment.
 ### Delete recurring appointment
 
 The Scheduler supports to delete the recurrence appointment. The following editor dialog will appear when user deletes the recurrence appointment. You can select the delete option to make the changes for occurrence or appointment series.
+
+![delete-an-appointment-using-recurring-appointment-editor-dialog-in-winui-scheduler](Appointment-Editing_Images/delete-an-appointment-using-recurring-appointment-editor-dialog-in-winui-scheduler.png)
 
 ### AppointmentDeleting event
 

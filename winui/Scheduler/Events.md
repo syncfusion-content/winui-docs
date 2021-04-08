@@ -24,7 +24,7 @@ The `CellTappedEventArgs` object contains the following properties:
 * `Appointments` : returns Tapped Month cell appointments values if `AppointmentDisplayMode` as `indicator.` Tapped Month Cell has a Recurrence appointment it will return the parent recurrence appointment values. It will be null for Day or Week or WorkWeek views.   * `IsMoreAppointments` : specifies whether more appointments are tapped or not in month view.It will be applicable only for Month view has AppointmentDisplaymode as Appointment. 
 * `CancelNavigation` : specifies whether day view navigation should be disabled when clicking more appointments in month view. It will be applicable for month view has AppointmentDisplaymode as Appointment. and click the More appointments in month cell.
 * `DateTime` : gets the date-time of the tapped cell.
-* `PointerDeviceType` : gets the pointer devive type of the tapped cell.
+* `PointerDeviceType` : gets the pointer device type of the tapped cell.
 * `Resource` : gets the resource associated with the timeslot cell where user tapped.
 
 {% tabs %}
