@@ -195,6 +195,8 @@ public class Country : INotifyPropertyChanged, IEditableObject
 {% endhighlight %}
 {% endtabs %}
 
+N> View sample in [GitHub](https://github.com/syncfusion/winui-demos/blob/master/datagrid/Views/Editing.xaml)
+
 ## Events
 
 ### ItemBeginEdit Event
