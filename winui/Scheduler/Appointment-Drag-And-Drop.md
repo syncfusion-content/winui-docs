@@ -60,7 +60,7 @@ this.Schedule.DragDropSettings.TimeIndicatorFormat = "HH mm tt";
 
 ## AppointmentDragOver event
 
-The Scheduler notifies by `AppointmentDragOver` when dragging the appointment. The `AppointmentDragOverEventArgs` has following members which provides information for the `AppointmentDragOver` event.
+The Scheduler notifies by `AppointmentDragOver` when dragging the appointment. The `AppointmentDragOverEventArgs` has following members which provides the information for the `AppointmentDragOver` event.
 
 `Appointment`: Gets the Appointment that is dragging.
 
@@ -86,7 +86,7 @@ private void Schedule_AppointmentDragOver(object sender, AppointmentDragOverEven
 
 ## AppointmentDragStarting event
 
-The Scheduler notifies by the `AppointmentDragStarting` when starting to drag the appointment. The `AppointmentDragStartingEventArgs` has following members which provides information for the `AppointmentDragStarting` event.
+The Scheduler notifies by the `AppointmentDragStarting` when starting to drag the appointment. The `AppointmentDragStartingEventArgs` has the following members who provide information for the `AppointmentDragStarting` event.
 
 `Appointment`: Get the selected appointment.
 
@@ -107,7 +107,7 @@ private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStar
 
 ## AppointmentDropping event
 
-The Scheduler notifies by `AppointmentDropping` when you drop the appointment. The `AppointmentDroppingEventArgs` has following members which provides information for `AppointmentDropping` event.
+The Scheduler notifies by `AppointmentDropping` when you drop the appointment. The `AppointmentDroppingEventArgs` has the following members who provide information for the `AppointmentDropping` event.
 
 `Appointment`: Gets the selected appointment that is dragged and dropped.
 
