@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TimeZone support | WinUI | Scheduler | Syncfusion
-description: This topic explains how to Use various TimeZones for Appointments and other functionalities in Syncfusion WinUI Scheduler (SfScheduler)
+description: This topic explains how to use various TimeZones for Appointments and other functionalities in the Syncfusion WinUI Scheduler (SfScheduler)
 platform: winui
 control: Scheduler
 documentation: ug
@@ -9,14 +9,14 @@ documentation: ug
 
 # Time Zone in WinUI Scheduler (SfSchedule)
 
-The Scheduler allows you create appointments in various time zones and display them in yours time zone or any other time zone. You can use  time zone in the following four different ways:
+The Scheduler allows you to create appointments in various time zones and display them in your time zone or any other time zone. You can use the time zone in the following four different ways:
 
-* Create appointments in different  time zones
-* Display appointments based on the client’s  time zone
-* Display appointments based on scheduler  time zone
-* Display appointments at the same time everywhere regardless of client’s time zone
+* Create appointments in the different time zones.
+* Display appointments based on the client’s time zone.
+* Display appointments based on the scheduler's time zone.
+* Display appointments at the same time everywhere regardless of the client’s time zone.
 
-We have added the following Time Zone's for the respective countries to cover all the time zone regions, You can use any of the time zone's from the following list for scheduler time zone.
+We have added the following Time Zone's for the respective countries to cover all the time zone regions, you can use any of the time zone's from the following list for scheduler time zone.
 <table>
 <tr>
 <th>Time Zone</th>
@@ -1160,15 +1160,15 @@ UTC + 14:00
 
 ## Create appointments in different time zones
 
-You can create appointments at different time zones using the `StartTimeZone` and `EndTimeZone` properties of `ScheduleAppointment`. An appointment’s start time and end time are calculated based on the given time zone information for the start time and end time. You can set different time zones to the `StartTimeZone` and `EndTimeZone` properties.
+You can create appointments at different time zones using the `StartTimeZone` and `EndTimeZone` properties of `ScheduleAppointment.` An appointment’s start time and end time are calculated based on the given time zone information for the start time and end time. You can set different time zones to the `StartTimeZone` and `EndTimeZone` properties.
 
-You can use the `StartTime` and `EndTime` properties of `ScheduleAppointment` to get the exact start time and end time of an appointment. By using the `ActualStartTime` and `ActualEndTime` properties, you can get exact appointment rendering time.
+You can use the `StartTime` and `EndTime` properties of `ScheduleAppointment` to get the exact start time and end time of an appointment. By using the `ActualStartTime` and `ActualEndTime` properties, you can get the exact appointment rendering time.
 
 {% tabs %}	
 {% highlight c# %}
 // Creating an instance for schedule appointment collection.
 var appointment = new ScheduleAppointmentCollection();
-//Adding schedule appointment in the schedule appointment collection. 
+//Adding the schedule appointment in the schedule appointment collection. 
 appointment.Add(new ScheduleAppointment()
 {
     // Setting the subject for an event.
@@ -1182,25 +1182,25 @@ appointment.Add(new ScheduleAppointment()
     // Setting the EndTimeZone for an event.
     EndTimeZone = "India Standard Time"
 });
-//Adding schedule appointment collection to the ItemsSource of SfSchedule.
+//Adding the schedule appointment collection to the ItemsSource of SfSchedule.
 this.Schedule.ItemsSource = appointment;
 {% endhighlight %}
 {% endtabs %}
 
 N>
 * If the recurring appointment is converted to another time zone, then the whole sequence will be recalculated according to the new time zone information.
-* If you create an all-day appointment, its start time and end time will be set to 12 A.M. and 12 A.M. by default, So time zone is not applicable for all-day appointments.
+* If you create an all-day appointment, its start time and end time will be set to 12 A.M. and 12 A.M. by default. So, the time zone is not applicable for all-day appointments.
 * The Scheduler supports daylight saving time.
-* The time zone support is applicable for custom appointments too, so you need to map the corresponding property.
+* The time zone support is applicable for the custom appointments too. So, you need to map the corresponding property.
 * You can use TimeZone for custom appointments by mapping the `StartTimeZone` and `EndTimeZone` custom properties of `AppointmentMapping.`
 
 ## Display Appointments based on client’s time zone
 
-You can display the appointments based on the client’s local time zone in scheduler. For example, consider a scenario that you are in North Carolina and you want to set up a meeting at 10 A.M. on North Carolina time. You have colleagues in London and Chennai, and they also need to participate. The time for this meeting will be 3 P.M. (15:00) in London and 5.30 A.M. in Chennai. When you each view your Scheduler, you need to see the appointment displayed relative to your local time zones 5.30 A.M., 10 A.M., and 3 P.M., respectively. It can be achieved by setting schedule time zone to default (it will consider your device’s local time zone as schedule time zone) and appointment’s time zone to `Eastern Standard Time (North Carolina)` [as you are in North Carolina and its time zone is Eastern Standard Time].
+You can display the appointments based on the client’s local time zone in the scheduler. For example, consider a scenario that you are in North Carolina and you want to set up a meeting at 10 A.M. on North Carolina time. You have colleagues in London and Chennai, and they also need to participate. The time for this meeting will be 3 P.M. (15:00) in London and 5.30 A.M. in Chennai. When you each view your Scheduler, you need to see the appointment displayed relative to your local time zones 5.30 A.M., 10 A.M., and 3 P.M., respectively. It can be achieved by setting schedule time zone to default (it will consider your device’s local time zone as schedule time zone) and appointment’s time zone to `Eastern Standard Time (North Carolina)` [as you are in North Carolina and its time zone is Eastern Standard Time].
 
 ## Display appointments based on Scheduler time zone
 
-You can set specific time zone to schedule using the `TimeZone` property of scheduler. On this scenario, the appointments will be displayed in UTC time when the `StartTimeZone` and `EndTimeZone` properties of `ScheduleAppointment` are set to null. The appointments will be displayed in UTC time based on the given scheduler time zone.
+You can set the specific time zone to schedule using the `TimeZone` property of scheduler. In this scenario, the appointments will be displayed in UTC time when the `StartTimeZone` and `EndTimeZone` properties of `ScheduleAppointment` are set to null. The appointments will be displayed in UTC time based on the given scheduler time zone.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1216,13 +1216,13 @@ this.Schedule.TimeZone = "Central America Standard Time";
 
 ## Display appointments at same time everywhere regardless of client’s time zone
 
-You can display appointments at the same time everywhere without considering the time zone when you set the `TimeZone` property of scheduler, the `StartTimeZone` and `EndTimeZone` properties of `ScheduleAppointment` to null. The appointments will be displayed based on the given `StartTime` and `EndTime` of appointment everywhere without considering the time zone.
+You can display appointments at the same time everywhere without considering the time zone when you set the `TimeZone` property of scheduler, the `StartTimeZone,` and `EndTimeZone` properties of `ScheduleAppointment` to null. The appointments will be displayed based on the given `StartTime` and `EndTime` of appointments everywhere without considering the time zone.
 
 ## Updating StartTime and EndTime after drag and drop appointment based on time zone.
 
-After rescheduling an appointment using drag and drop, appointment’s start and end time value will be updated based on scheduler time zone and appointment’s time zone.
+After rescheduling an appointment using drag and drop, the appointment’s start and end time value will be updated based on scheduler time zone and appointment’s time zone.
 
-For an example, consider, your local time zone is `India Standard Time,` if you drag an appointment from 9 AM and drop this on 1 PM and the scheduler’s `TimeZone` is not set and the appointment’s `StartTimeZone` and `EndTimeZone` has set as `AUS Central Standard Time (Darwin)` then appointment’s start time and end time value will be converted from Local time zone to appointment time zone and the appointment’s start time will be saved at 9 AM,
+For an example, consider your local time zone is `India Standard Time,` if you drag an appointment from 9 AM and drop this on 1 PM and the scheduler’s `TimeZone` is not set and the appointment’s `StartTimeZone` and `EndTimeZone` has set as `AUS Central Standard Time (Darwin),` then appointment’s start time and end time value will be converted from Local time zone to appointment time zone and the appointment’s start time will be saved at 9 AM,
 
-if you set scheduler’s TimeZone as `AUS Central Standard Time (Darwin)` and the appointment’s `StartTimeZone` and `EndTimeZone` as `Central Standard Time (Mexico)` then the appointment’s start time and end time value has converted from scheduler’s time zone to appointment time zone and the appointment’s start time will be saved at 3.30 AM of next day,
-if you set scheduler’s `TimeZone` as `AUS Central Standard Time (Darwin)` and appointment’s time zone was not set then the appointment’s start time and end time value converted from scheduler time zone to `UTC time zone` and the appointment’s start time will be saved at 10.30 PM.
+If you set scheduler’s TimeZone as `AUS Central Standard Time (Darwin)` and the appointment’s `StartTimeZone` and `EndTimeZone` as `Central Standard Time (Mexico)` then the appointment’s start time and end time value has converted from scheduler’s time zone to appointment time zone and the appointment’s start time will be saved at 3.30 AM of next day.
+If you set scheduler’s `TimeZone` as `AUS Central Standard Time (Darwin)` and appointment’s time zone was not set then the appointment’s start time and end time value converted from the scheduler time zone to `UTC time zone` and the appointment’s start time will be saved at 10.30 PM.
