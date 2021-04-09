@@ -11,7 +11,7 @@ documentation: ug
 
 ## Pointer animation
 
-The `EnableAnimation` property of pointer allows to enable or disable animation for the pointer.
+The [`EnableAnimation`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugePointer.html#Syncfusion_UI_Xaml_Gauges_LinearGaugePointer_EnableAnimation) property of pointer allows to enable or disable animation for the pointer.
 
 {% tabs %}
 
@@ -85,7 +85,7 @@ this.Content = sfLinearGauge;
 
 ## Animation duration
 
-The `AnimationDuration` property of pointer allows to control the animation duration (in milliseconds). The default value of animation duration is 1500ms.
+The [`AnimationDuration`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugePointer.html#Syncfusion_UI_Xaml_Gauges_LinearGaugePointer_AnimationDuration) property of pointer allows to control the animation duration (in milliseconds). The default value of animation duration is 1500ms.
 
 {% tabs %}
 
@@ -165,7 +165,7 @@ this.Content = sfLinearGauge;
 
 ## Animation easing function
 
-The `AnimationEasingFunction` property of pointer allows you to change the easing function. The default value of `AnimationEasingFunction` property is null.
+The [`AnimationDuration`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugePointer.html#Syncfusion_UI_Xaml_Gauges_LinearGaugePointer_AnimationDuration) property of pointer allows you to change the easing function. The default value of [`AnimationDuration`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugePointer.html#Syncfusion_UI_Xaml_Gauges_LinearGaugePointer_AnimationDuration) property is null.
 
 {% tabs %}
 

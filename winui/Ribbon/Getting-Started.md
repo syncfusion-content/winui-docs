@@ -380,6 +380,41 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ![Add built-in RibbonSplitButton in SfRibbon](Getting-Started-images/Getting-Started-image5.png)
 
+N> You can also use other icons types such as   [BitmapIcon](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.bitmapicon?view=winui-3.0-preview), [FontIcon](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.fonticon?view=winui-3.0-preview), [PathIcon](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.pathicon?view=winui-3.0-preview) and [SymbolIcon](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.symbolicon?view=winui-3.0-preview) to the Ribbon items such as RibbonButton, RibbonDropDownButton, RibbonSplitButton and Ribbon Item host controls.
+
+## Add RibbonGallery
+
+The example below shows how to include the RibbonGallery control within a RibbonGroup.
+
+{% tabs %}
+{% highlight xaml %}
+<Grid x:Name="rootGalleryGrid">
+    <ribbon:SfRibbon>
+        <ribbon:SfRibbon.Tabs>
+            <ribbon:RibbonTab Header="Home">
+                <ribbon:RibbonGroup Header="Styles">
+                    <ribbon:RibbonGallery />
+                </ribbon:RibbonGroup>
+            </ribbon:RibbonTab>
+            <ribbon:RibbonTab Header="Insert" />
+        </ribbon:SfRibbon.Tabs>
+    </ribbon:SfRibbon>
+</Grid>
+{% endhighlight %}
+{% highlight c# %}
+SfRibbon sfRibbon = new SfRibbon();
+RibbonTab homeTab = new RibbonTab() { Header = "Home" };
+RibbonGroup stylesGroup = new RibbonGroup() { Header = "Styles" };
+RibbonGallery ribbonGallery = new RibbonGallery();
+stylesGroup.Items.Add(ribbonGallery);
+homeTab.Items.Add(stylesGroup);
+sfRibbon.Tabs.Add(homeTab);
+rootGalleryGrid.Children.Add(sfRibbon);
+{% endhighlight %}
+{% endtabs %}
+
+![Adding RibbonGallery in SfRibbon](Getting-Started-images/Getting-Started-image10.png)
+
 ## Host a custom ribbon items to the group ##
 
 You can host other controls such as checkbox, radio button and combobox etc., to a ribbon group using the `ItemTemplate` property of [RibbonItemHost](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonItemHost.html).
