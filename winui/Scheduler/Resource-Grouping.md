@@ -1,0 +1,588 @@
+---
+layout: post
+title: Resource Grouping | WinUI | Scheduler | Syncfusion
+description:  WinUI scheduler resource grouping allows you to define resources that can be assigned to appointments in a day, week, workweek, and timeline views.
+platform: winui
+control: Scheduler
+documentation: ug
+---
+
+# Resource Grouping in WinUI Scheduler (SfScheduler)
+
+The scheduler resource view will allow you to group appointments based on the resources or dates, arranged by the column or row in the day, week, workweek, timeline day, timeline week, timeline workweek and timeline month views. It also allows you to share the events or appointments to the multiple resources and resource appointment details can be edited by using a built-in appointment editor dialog.
+
+## Grouping by Resources
+
+Resources can be added to the scheduler by setting the `ResourceGroupType` property as Resource in SfScheduler. You need to set the `Id,` `Name,` `Foreground` and `Background` properties of `SchedulerResource` to create a resource. You can add the resource to the scheduler by using the `ResourceCollection` property of SfScheduler and you can also add or remove the scheduler resources dynamically.
+
+N> No resource view will be displayed, even a resource added using the `ResourceCollection` property when the `ResourceGroupType` property value is set to `None.`
+
+{% tabs %}
+{% highlight xaml %}
+<scheduler:SfScheduler x:Name="Schedule"  
+                       ViewType="Week"
+                       ResourceGroupType="Resource"
+                       ResourceCollection="{Binding ResourceCollection}">
+</scheduler:SfScheduler>
+{% endhighlight %}
+{% highlight c# %}
+// Adding schedule resource in the scheduler resource collection.
+var ResourceCollection = new ObservableCollection<SchedulerResource>()
+{
+   new SchedulerResource() { Name = "Sophia", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush((Color.FromArgb(255, 157, 101, 201))), Id = "1000" },
+   new SchedulerResource() { Name = "Zoey Addison", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255, 240, 138, 93)), Id = "1001" },
+   new SchedulerResource() { Name = "James William", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255,103, 155, 155)), Id = "1002" },
+};
+
+// Adding the scheduler resource collection to the schedule resources of SfSchedule.
+this.Schedule.ResourceCollection = ResourceCollection;
+{% endhighlight %}
+{% endtabs %}
+
+## Resource Grouping types
+
+You can group the resource order by `Date` or order by `Resource` using the `ResourceGroupType` property of SfScheduler.
+
+N> You can group the resource order in the day, week, work week, timeline day, timeline week, timeline workweek and timeline month views.
+
+### Resource
+
+The `ResourceGroupType` is set to `Resource` to group the number of dates under each resource.
+
+{% tabs %}
+{% highlight xaml %}
+<scheduler:SfScheduler x:Name="Schedule"  
+                       ViewType="Week"
+                       ResourceGroupType="Resource">
+</scheduler:SfScheduler>
+{% endhighlight %}
+{% highlight c# %}
+this.Schedule.ViewType = SchedulerViewType.Week;
+this.Schedule.ResourceGroupType = ResourceGroupType.Resource;
+
+// Adding schedule resource in the scheduler resource collection.
+var ResourceCollection = new ObservableCollection<SchedulerResource>()
+{
+   new SchedulerResource() { Name = "Sophia", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush((Color.FromArgb(255, 157, 101, 201))), Id = "1000" },
+   new SchedulerResource() { Name = "Zoey Addison", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255, 240, 138, 93)), Id = "1001" },
+   new SchedulerResource() { Name = "James William", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255,103, 155, 155)), Id = "1002" },
+};
+
+// Adding the scheduler resource collection to the schedule resources of SfSchedule.
+this.Schedule.ResourceCollection = ResourceCollection;
+{% endhighlight %}
+{% endtabs %}
+
+![resource-grouping-as-resource-in-winui-scheduler](Resource_Images/adding-resource-grouping-as-resource-in-winui-scheduler.png)
+
+### Date
+
+The `ResourceGroupType` is set to Date to group the number of resources under each date.
+
+{% tabs %}
+{% highlight xaml %}
+<scheduler:SfScheduler x:Name="Schedule"  
+                       ViewType="Week"
+                       ResourceGroupType="Date">
+</scheduler:SfScheduler>
+{% endhighlight %}
+{% highlight c# %}
+this.Schedule.ViewType = SchedulerViewType.Week;
+this.Schedule.ResourceGroupType = ResourceGroupType.Date;
+
+// Adding schedule resource in the scheduler resource collection.
+var ResourceCollection = new ObservableCollection<SchedulerResource>()
+{
+   new SchedulerResource() { Name = "Sophia", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush((Color.FromArgb(255, 157, 101, 201))), Id = "1000" },
+   new SchedulerResource() { Name = "Zoey Addison", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255, 240, 138, 93)), Id = "1001" },
+   new SchedulerResource() { Name = "James William", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255,103, 155, 155)), Id = "1002" },
+};
+
+// Adding the scheduler resource collection to the schedule resources of SfSchedule.
+this.Schedule.ResourceCollection = ResourceCollection;
+{% endhighlight %}
+{% endtabs %}
+
+![resource-grouping-as-date-in-winui-scheduler](Resource_Images/adding-resource-grouping-as-date-in-winui-scheduler.png)
+
+## Assigning resources to appointments
+
+Appointments associated with scheduler `ResourceCollection ` will be displayed when set schedule resource Id in the `ScheduleAppointment` by using the `ResourceIdCollection` for `ResourceGroupType` set as `Resource` or `Date`. You can also assign resources to `recurrence appointments`.
+
+{% tabs %}
+{% highlight c# %}
+// Creating an instance for schedule appointment collection.
+var scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+//Adding schedule appointment in the schedule appointment collection. 
+var appointments = new ScheduleAppointment()
+{
+    StartTime = DateTime.Now,
+    EndTime = DateTime.Now.AddHours(2),
+    Subject = "General Meeting",
+    ResourceIdCollection = new ObservableCollection<object>() { "1000", "1001" }
+};
+//Adding the schedule appointment to the schedule appointment collection.
+scheduleAppointmentCollection.Add(appointments);
+//Adding the schedule appointment collection to the ItemsSource of SfScheduler.
+this.Schedule.ItemsSource = scheduleAppointmentCollection;
+{% endhighlight %}
+{% endtabs %}
+
+N>
+* When `ResourceIdCollection` not added to `ScheduleAppointment` then the appointment will not be displayed in when `ResourceGroupType` set as `Resource` or `Date.`
+* When `ResourceGroupType` set as `None`, resource view will be collapsed and all scheduler DataSource events will be displayed.
+• You can also add or remove the appointment resources dynamically.
+
+### Multiple resource sharing
+
+Multiple resources can share the same events or appointments. If the appointment details edited or updated, then the changes will reflect on all other shared instances simultaneously.
+
+{% tabs %}
+{% highlight c# %}
+// Creating an instance for schedule appointment collection.
+var scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+//Adding schedule appointment in the schedule appointment collection. 
+var appointments = new ScheduleAppointment()
+{
+   StartTime = DateTime.Now,
+   EndTime = DateTime.Now.AddHours(2),
+   Subject = "General Meeting",
+   ResourceIdCollection = new ObservableCollection<object>() { "1000", "1001","1002" },
+   AppointmentBackground = new SolidColorBrush(Color.FromArgb(255, 133, 81, 242)),
+};
+//Adding the schedule appointment to the schedule appointment collection.
+scheduleAppointmentCollection.Add(appointments);
+//Adding the schedule appointment collection to the ItemsSource of SfScheduler.
+this.Schedule.ItemsSource = scheduleAppointmentCollection;
+{% endhighlight %}
+{% endtabs %}
+
+![multiple-resource-sharing-resourcegroup-as-resource-week-view-in-winui-scheduler](Resource_Images/adding-multiple-resource-sharing-resourcegroup-as-resource-week-view-in-winui-scheduler.png)
+
+![multiple-resource-sharing-resourcegroup-as-resource-timelineweek-view-in-winui-scheduler](Resource_Images/adding-multiple-resource-sharing-resourcegroup-as-resource-timelineweek-view-in-winui-scheduler.png)
+
+## Scheduler Resource Mapping
+
+The Schedule supports full data binding to `ResourceCollection`. Specify the `ResourceMapping` attribute to map the properties in the underlying data source to the schedule resource.
+
+| Property Name | Description |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| Name | Maps the property name of custom class, which is equivalent to Name in ScheduleResource. |
+| Id | Maps the property name of custom class, which is equivalent to Id in ScheduleResource. |
+| Background | Maps the property name of custom class, which is equivalent to Background in ScheduleResource. |
+| Foreground | Maps the property name of custom class, which is equivalent to Foreground in ScheduleResource. |
+
+N> Custom resource class should contain a mandatory field for resource `Id`.
+
+## Create business object for Resource
+
+You can create a custom class Employee with mandatory fields `Name,` `Id,` `ForegroundColor` and `BackgroundColor.` You can also assign resources to `recurrence appointments.`
+
+{% tabs %}
+{% highlight c# %}
+public class Employee
+{
+   public string Name {get; set;}
+
+   public string Id {get; set;}
+
+   public Brush BackgroundColor {get; set; }
+
+   public Brush ForegroundColor {get; set; }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N> 
+* You can inherit this class from `NotificationObject` for dynamic changes in custom data.
+* `SchedulerResource.Data` property is used to get the deatils of custom data.
+
+You can map the properties of `Employee` class with SfScheduler control using Scheduler `ResourceMapping.`
+
+{% tabs %}
+{% highlight xaml %}
+<scheduler:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Resource">
+    <scheduler:SfScheduler.ResourceMapping>
+       <scheduler:ResourceMapping Id="Id" Name="Name" Background="BackgroundColor" Foreground="ForegroundColor"/>
+    </scheduler:SfScheduler.ResourceMapping>
+</scheduler:SfScheduler>
+{% endhighlight %}
+{% highlight c# %}
+ // Schedule data mapping for custom resource.
+ResourceMapping resourceMapping = new ResourceMapping();
+resourceMapping.Name = "Name";
+resourceMapping.Id = "Id";
+resourceMapping.Background = "BackgroundColor";
+resourceMapping.Foreground = "ForegroundColor";
+this.Schedule.ResourceMapping = resourceMapping;
+{% endhighlight %}
+{% endtabs %}
+
+### Assign resource object collection
+
+You can add resources of `Employee` collection that can be assigned to scheduler using the `ResourceCollection` property which is of `IEnumerable` type. You can also add or remove scheduler resources dynamically.
+
+{% tabs %}
+{% highlight c# %}
+// Creating and Adding custom resource in scheduler resource collection.
+var ResourceCollection = new ObservableCollection<Employee>()
+{
+   new Employee () {Name = "Sophia", BackgroundColor = new SolidColorBrush((Color.FromArgb(255, 157, 101, 201))), Id = "1000", ForegroundColor = new SolidColorBrush(Colors.White) },
+   new Employee () {Name = "Zoey Addison", BackgroundColor = new SolidColorBrush(Color.FromArgb(255, 240, 138, 93)), Id = "1001" , ForegroundColor = new SolidColorBrush(Colors.White)},
+   new Employee () {Name = "James William", BackgroundColor = new SolidColorBrush(Color.FromArgb(255,103, 155, 155)), Id = "1002" , ForegroundColor = new SolidColorBrush(Colors.White)},
+};
+
+// Adding the scheduler resource collection to the schedule resources of SfSchedule.
+this.Schedule.ResourceCollection = ResourceCollection;
+{% endhighlight %}
+{% endtabs %}
+
+### Assign the resource objects to appointment business object
+
+You can associate scheduler `ResourceMapping` to the custom appointment by mapping resource `Id` in the `ResourceIdCollection` property of `AppointmentMapping.` Custom appointments associated with the scheduler resources will be displayed when `ResourceGroupType` set as `Resource` or `Date.` You can also assign resources to recurrence appointments.
+
+{% tabs %}
+{% highlight c# %}
+/// <summary>   
+/// Represents the custom data properties.   
+/// </summary> 
+public class Meeting
+{
+	public string EventName {get; set;}
+	public DateTime From {get; set;}
+	public DateTime To {get; set;}
+   public ObservableCollection<object> Resources {get; set;}
+}
+{% endhighlight %}
+{% endtabs %}
+
+N>You can inherit this class from the `NotificationObject` for dynamic changes in custom data.
+
+You can map those properties of `Meeting` class to schedule appointment by using `AppointmentMapping` properties.
+
+{%tabs %}
+{% highlight xaml %}
+<scheduler:SfScheduler x:Name="Schedule" ItemsSource="{Binding Appointments}" ViewType="Week">
+         <scheduler:SfScheduler.AppointmentMapping>
+            <scheduler:AppointmentMapping
+            Subject="EventName"
+            StartTime="From"
+            EndTime="To"
+            ResourceIdCollection ="Resources"/>
+        </scheduler:SfScheduler.AppointmentMapping>
+</scheduler:SfScheduler>
+{% endhighlight %}
+{% highlight c# %}
+//Schedule data mapping for custom appointments
+AppointmentMapping dataMapping = new AppointmentMapping();
+dataMapping.Subject = "EventName";
+dataMapping.StartTime = "From";
+dataMapping.EndTime = "To";
+dataMapping.AppointmentBackground = "Color";
+dataMapping.ResourceIdCollection= "Resources";
+this.Schedule.AppointmentMapping = dataMapping;
+{% endhighlight %}
+{% endtabs %}
+
+You can schedule meetings for a Resource by setting `From,` `To` and `Resources` of Meeting class.
+
+{%tabs %}
+{% highlight c# %}
+Meeting meeting = new Meeting ();
+meeting.From = new DateTime(2020, 07, 01, 10, 0, 0);
+meeting.To = meeting.From.AddHours(1);
+meeting.EventName = "Meeting";
+meeting.Resources = new ObservableCollection<object> { (Resources[0] as Employee).Id, (Resources[1] as Employee).Id };
+var Meetings = new ObservableCollection<Meeting> ();
+Meetings.Add(meeting);
+this.Schedule.ItemsSource = Meetings;
+{% endhighlight %}
+{% endtabs %}
+
+## Resource header size
+
+You can customize the resource header size in the day, week, workweek, timeline day, timeline week, timeline workweek and timeline month views by using the `ResourceHeaderSize` property of `DaysViewSettings` or `TimelineViewSettings` in SfScheduler.
+
+### Resource header height in days view
+
+`DaysViewSettings` applicable for `Day,` `Week` and `WorkWeek` views. By default, value of this property is set to `50.`
+
+{% tabs %}
+{% highlight xaml %}
+<scheduler:SfScheduler x:Name="Schedule"  
+                       ViewType="Week"
+                       ResourceGroupType="Resource">
+   <scheduler:SfScheduler.DaysViewSettings>
+      <scheduler:DaysViewSettings ResourceHeaderSize="100"/>
+   </scheduler:SfScheduler.DaysViewSettings>
+</scheduler:SfScheduler>
+{% endhighlight %}
+{% highlight c# %}
+this.Schedule.ViewType = SchedulerViewType.Week;
+this.Schedule.DaysViewSettings.ResourceHeaderSize = 100;
+{% endhighlight %}
+{% endtabs %}
+
+### Resource header width in timeline view
+
+`TimelineViewSettings` applicable for timeline day, timeline week, timeline workweek and timeline month views. By default, value of this property is set to 50.
+
+{% tabs %}
+{% highlight xaml %}
+<scheduler:SfScheduler x:Name="Schedule"  
+                       ViewType="TimelineWeek"
+                       ResourceGroupType="Resource">
+   <scheduler:SfScheduler.TimelineViewSettings>
+         <scheduler:TimelineViewSettings ResourceHeaderSize="100"/>
+   </scheduler:SfScheduler.TimelineViewSettings>
+</scheduler:SfScheduler>
+{% endhighlight %}
+{% highlight c# %}
+this.Schedule.ViewType = SchedulerViewType.TimelineWeek;
+this.Schedule.TimelineViewSettings.ResourceHeaderSize = 100;
+{% endhighlight %}
+{% endtabs %}
+
+### Visible resource count
+
+You can customize the number of visible resources in day, week, workweek, timeline day, timeline week, timeline workweek and timeline month views by using the `VisibleResourceCount` property of `DaysViewSettings` or `TimelineViewSettings` in SfScheduler.
+
+N> Visible resource count exceed count of schedule `ResourceCollection` count then schedule `ResourceCollection` count will be displayed.
+
+### Visible resource count in days view
+
+`DaysViewSettings` applicable for Day, Week and WorkWeek views. By default, value of this property is set to `3.`
+
+{% tabs %}
+{% highlight xaml %}
+<scheduler:SfScheduler x:Name="Schedule"  
+                       ViewType="Week"
+                       ResourceGroupType="Resource">
+   <scheduler:SfScheduler.DaysViewSettings>
+      <scheduler:DaysViewSettings VisibleResourceCount="2"/>
+   </scheduler:SfScheduler.DaysViewSettings>
+</scheduler:SfScheduler>
+{% endhighlight %}
+{% highlight c# %}
+this.Schedule.ViewType = SchedulerViewType.Week;
+this.Schedule.DaysViewSettings.VisibleResourceCount = 2;
+{% endhighlight %}
+{% endtabs %}
+
+![resourcegroup-as-resource-visible-resource-count-week-view-in-winui-scheduler](Resource_Images/adding-resourcegroup-as-resource-visible-resource-count-week-view-in-winui-scheduler.png)
+
+### Visible resource count in timeline views
+
+`TimelineViewSettings` applicable for timeline day, timeline week, timeline workweek and timeline month views. By default, value of this property is set to `3.`
+
+{% tabs %}
+{% highlight xaml %}
+<scheduler:SfScheduler x:Name="Schedule"  
+                       ViewType="TimelineWeek"
+                       ResourceGroupType="Resource">
+   <scheduler:SfScheduler.TimelineViewSettings>
+      <scheduler:TimelineViewSettings VisibleResourceCount="2"/>
+   </scheduler:SfScheduler.TimelineViewSettings>
+</scheduler:SfScheduler>
+{% endhighlight %}
+{% highlight c# %}
+this.Schedule.ViewType = SchedulerViewType.TimelineWeek;
+this.Schedule.TimelineViewSettings.VisibleResourceCount = 2;
+{% endhighlight %}
+{% endtabs %}
+
+![resourcegroup-as-resource-visible-resource-count-timelineweek-view-in-winui-scheduler](Resource_Images/adding-resourcegroup-as-resource-visible-resource-count-timelineweek-view-in-winui-scheduler.png)
+
+## Assign resources to special time regions
+
+Special time region can be created based on the resources in day, week,workweek, timeline day, timeline week, timeline workweek and timeline month views.
+
+{% tabs %}
+{% highlight c# %}
+this.Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
+{
+   StartTime = new System.DateTime(2021, 04, 04, 13, 0, 0),
+   EndTime = new System.DateTime(2021, 04, 04, 14, 0, 0),
+   Text = "Lunch",
+   CanEdit = false,
+   RecurrenceRule = "FREQ=DAILY;INTERVAL=1",
+   CanMergeAdjacentRegions = false,
+   ResourceIdCollection = new ObservableCollection<object>() { "1000", "1001", "1002" }
+});
+{% endhighlight %}
+{% endtabs %}
+
+![assign-resources-to-special-time-regions-date-basis-in-winui-scheduler](Resource_Images/adding-resources-to-special-time-regions-date-basis-in-winui-scheduler.png)
+
+N> The `SpecialTimeRegion` in a `Time basis` by setting the value of `CanMergeAdjacentRegions` to `True.`
+
+![assign-resources-to-special-time-regions-time-basis-in-winui-scheduler](Resource_Images/adding-resources-to-special-time-regions-time-basis-in-winui-scheduler.png)
+
+### Assign resources to special time regions in timeline view
+{% tabs %}
+{% highlight c# %}
+this.Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
+{
+   StartTime = new System.DateTime(2021, 04, 04, 13, 0, 0),
+   EndTime = new System.DateTime(2021, 04, 04, 14, 0, 0),
+   Text = "Lunch",
+   CanEdit = false,
+   RecurrenceRule = "FREQ=DAILY;INTERVAL=1",
+   CanMergeAdjacentRegions = false,
+   ResourceIdCollection = new ObservableCollection<object>() { "1000", "1001", "1002" }
+});
+{% endhighlight %}
+{% endtabs %}
+
+![assign-resources-to-special-time-regions-timeline-view-in-winui-scheduler](Resource_Images/adding-resources-to-special-time-regions-timeline-view-in-winui-scheduler.png)
+
+## Appearance customization
+
+Resource UI customization using a template and template selectors support.
+
+### Customize resource appearance using ResourceHeaderTemplate
+
+{% tabs %}
+{% highlight xaml %}
+<Page.Resources>
+   <DataTemplate  x:Key="DayViewResourceTemplate">
+      <Grid Background="Transparent">
+         <Border Background="Transparent" >
+            <StackPanel VerticalAlignment="Center" Orientation="Vertical">
+               <Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="{Binding Data.BackgroundBrush}">
+                     <Border CornerRadius="36" Height="64" Width="64" BorderThickness="4" BorderBrush="White">
+                     <Image HorizontalAlignment="Center" VerticalAlignment="Center" Width="55"
+                          Height="55" Source="{Binding Data.ImageSource}" />
+                     </Border>
+               </Border>
+               <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"
+                Foreground="Black" Text="{Binding Data.Name}" />
+            </StackPanel>
+         </Border>
+      </Grid>
+</DataTemplate>
+</Page.Resources>
+
+<!--used to find Image Source and Name properties.-->
+<Page.DataContext>
+<local:Employee />
+</Page.DataContext>
+
+<Grid>
+   <scheduler:SfScheduler x:Name="Schedule"  
+                          ViewType="Week"
+                          ResourceGroupType="Resource" 
+                          ResourceCollection="{Binding ResourceCollection}"
+                          ResourceHeaderTemplate="{StaticResource DayViewResourceTemplate}">
+      <scheduler:SfScheduler.ResourceMapping>
+         <scheduler:ResourceMapping Id="Id" Name="Name" Background="BackgroundBrush" Foreground="ForegroundBrush"/>
+      </scheduler:SfScheduler.ResourceMapping>
+</scheduler:SfScheduler>
+{% endhighlight %}
+{% endtabs %}
+
+N> 
+* By default, the `SchedulerResource` is set as the `DataContext` for the `ResourceHeaderTemplate` for both `SchedulerResource` and custom data object in the `ResourceCollection.`
+* The custom data object can be bound in the `ResourceHeaderTemplate` by using the property of `SchedulerResource.Data.`
+
+![customize-resource-appearance-using-resource-header-template-in-winui-scheduler](Resource_Images/adding-customize-resource-appearance-using-resource-header-template-in-winui-scheduler.png)
+
+### Customize resource appearance using ResourceHeaderTemplateSelector
+
+{%tabs %}
+{% highlight xaml %}
+<Page.Resources>
+        <DataTemplate  x:Key="DayViewResourceTemplate">
+            <Grid Background="Transparent">
+                <Border Background="Transparent" >
+                    <StackPanel VerticalAlignment="Center" Orientation="Vertical">
+                        <Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="{Binding Data.BackgroundBrush}">
+                            <Border CornerRadius="36" Height="64" Width="64" BorderThickness="4" BorderBrush="White">
+                                <Image HorizontalAlignment="Center" VerticalAlignment="Center" Width="55"
+                          Height="55" Source="{Binding Data.ImageSource}" />
+                            </Border>
+                        </Border>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"
+                   Foreground="Black" Text="{Binding Data.Name}" />
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="TimelineViewResourceTemplate">
+            <Grid Background="Transparent">
+                <StackPanel VerticalAlignment="Center" Orientation="Vertical">
+                    <Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="{Binding Data.BackgroundBrush}">
+                        <Border CornerRadius="36" Height="64" Width="64" BorderThickness="4" BorderBrush="Transparent">
+                            <Image HorizontalAlignment="Center" VerticalAlignment="Center"
+                                   Width="55"
+                                   Height="55"
+                                   Source="{Binding Data.ImageSource}" />
+                        </Border>
+                    </Border>
+                    <TextBlock HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               FontSize="15"
+                               Text="{Binding Data.Name}"/>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+    <Page.Resources>
+
+    <Grid>
+        <Grid.DataContext>
+            <local:BindingViewModel/>
+        </Grid.DataContext>
+        <Grid.Resources>
+            <local:ResourceTemplateSelector x:Key="resourceTemplateSelector" DayViewResourceTemplate="{StaticResource DaysViewResourceTemplate}" TimelineViewResourceTemplate="{StaticResource TimelineResourceTemplate}"/>
+        </Grid.Resources>
+
+        <scheduler:SfScheduler x:Name="Schedule"
+                                ViewType="Week"
+                                ResourceGroupType="Resource}"
+                                ResourceCollection="{Binding Resources}"
+                                ItemsSource="{Binding ResourceAppointments}" HeaderHeight="32"
+                                DisplayDate="{Binding DisplayDate}" ResourceHeaderTemplateSelector="{StaticResource resourceTemplateSelector}"/>
+    
+    </Grid>
+{% endhighlight %}
+{% highlight c# %}
+public class ResourceTemplateSelector : DataTemplateSelector
+{
+   /// <summary>
+   /// Initializes a new instance of the <see cref="ResourceTemplateSelector" /> class.
+   /// </summary>
+   public ResourceTemplateSelector()
+   {
+   }
+
+   public DataTemplate DayViewResourceTemplate {get; set;}
+
+   public DataTemplate TimelineViewResourceTemplate {get; set;}
+
+   /// <summary>
+   /// Template selection method
+   /// </summary>
+   /// <param name="item">return the object</param>
+   /// <param name="container">return the bindable object</param>
+   /// <returns>return the template</returns>
+   public override DataTemplate SelectTemplateCore(object item, DependencyObject container)
+   {
+      var schedule = container as SfScheduler;
+	   if (schedule == null)
+            return null;
+		if (schedule.ViewType == SchedulerViewType.Day || schedule.ViewType == SchedulerViewType.Week || schedule.ViewType == SchedulerViewType.WorkWeek)
+            return DayViewResourceTemplate;
+      else
+            return TimelineViewResourceTemplate;
+   }
+}
+{% endhighlight %}
+{% endtabs %}
+
+N>
+* By default, the SchedulerResource is set as the DataContext for the `ResourceHeaderTemplateSelector` for both `SchedulerResource` and custom data object in the `ResourceCollection.`
+* The custom data object can be bound in the `ResourceHeaderTemplateSelector` by using the property of `SchedulerResource.Data.`
+
+![customize-resource-appearance-using-resource-header-template-selector-in-winui-scheduler](Resource_Images/adding-customize-resource-appearance-using-resource-header-template-selector-in-winui-scheduler.png)
