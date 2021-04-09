@@ -20,9 +20,9 @@ You can bind the [SelectedItem ](https://help.syncfusion.com/cr/winui/Syncfusi
 <treeGrid:SfTreeGrid x:Name="sfTreeGrid"                                   
                                    ColumnWidthMode="Star"
                                    AllowEditing="True"
-								   AllowFiltering="True"
-								   SelectedItem="{Binding SelectedItem, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-								   ChildPropertyName="Children"
+                                   AllowFiltering="True"
+                                   SelectedItem="{Binding SelectedItem, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                   ChildPropertyName="Children"
                                    AutoGenerateColumns="False"
                                    ItemsSource="{Binding Employees}" />
 {% endhighlight %}
@@ -67,8 +67,8 @@ In the following example, the command receives the underlying data object as com
 <treeGrid:SfTreeGrid x:Name="sfTreeGrid"                                   
                                    ColumnWidthMode="Star"
                                    AllowEditing="True"
-								   AllowFiltering="True"
-								   ChildPropertyName="Children"
+                                   AllowFiltering="True"
+                                   ChildPropertyName="Children"
                                    AutoGenerateColumns="False"
                                    ItemsSource="{Binding Employees}">
     <treeGrid:SfTreeGrid.Columns>
@@ -83,7 +83,7 @@ In the following example, the command receives the underlying data object as com
                 </DataTemplate>
             </treeGrid:TreeGridTemplateColumn.CellTemplate>
         </treeGrid:TreeGridTemplateColumn>
-	</treeGrid:SfTreeGrid.Columns>
+    </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% highlight c# %}
@@ -137,15 +137,15 @@ public class ViewModel
 
 ## Binding ComboBoxColumn ItemsSource from view model
 
-You can bind the `ItemsSource` from ViewModel to [TreeGridComboBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html) or using `ElementName` binding.
+You can bind the `ItemsSource` from `ViewModel` to [TreeGridComboBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html) by using the `ElementName` binding.
 
 {% tabs %}
 {% highlight xaml %}
 <treeGrid:SfTreeGrid x:Name="sfTreeGrid"                                   
                                    ColumnWidthMode="Star"
-								   AllowFiltering="True"
+                                   AllowFiltering="True"
                                    AllowEditing="True"
-								   ChildPropertyName="Children"
+                                   ChildPropertyName="Children"
                                    AutoGenerateColumns="False"
                                    ItemsSource="{Binding Employees}">
     <treeGrid:SfTreeGrid.Columns>
@@ -153,7 +153,7 @@ You can bind the `ItemsSource` from ViewModel to [TreeGridComboBoxColumn](https
         <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
         <treeGrid:TreeGridTextColumn HeaderText="Employee ID" MappingName="EmployeeID" TextAlignment="Right" />
         <treeGrid:TreeGridComboBoxColumn MappingName="Title" ItemsSource="{Binding Path=DataContext.TitleList, ElementName=sfTreeGrid}"/>
-	</treeGrid:SfTreeGrid.Columns>
+    </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% highlight c# %}
@@ -194,15 +194,15 @@ public class ViewModel : NotificationObject
 
 ## Binding ItemsSource from view model to ComboBox inside data template
 
-You can load a ComboBox inside [TreeGridTemplateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html) and bind the ItemsSource from ViewModel to ComboBox using `ElementName` binding.
+You can load a ComboBox inside [TreeGridTemplateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html) and bind the `ItemsSource` from `ViewModel` to ComboBox using `ElementName` binding.
 
 {% tabs %}
 {% highlight xaml %}
 <treeGrid:SfTreeGrid x:Name="sfTreeGrid"                                   
                                    ColumnWidthMode="Star"
-								   AllowFiltering="True"
+                                   AllowFiltering="True"
                                    AllowEditing="True"
-								   ChildPropertyName="Children"
+                                   ChildPropertyName="Children"
                                    AutoGenerateColumns="False"
                                    ItemsSource="{Binding Employees}">
     <treeGrid:SfTreeGrid.Columns>
@@ -210,18 +210,18 @@ You can load a ComboBox inside [TreeGridTemplateColumn](https://help.syncfusio
         <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
         <treeGrid:TreeGridTextColumn HeaderText="Employee ID" MappingName="EmployeeID" TextAlignment="Right" />
         <treeGrid:TreeGridTemplateColumn MappingName="Title">
-		    <treeGrid:TreeGridTemplateColumn.CellTemplate>
-			    <DataTemplate>
-				    <TextBlock Text="{Binding Title}"/>
-				</DataTemplate>
+            <treeGrid:TreeGridTemplateColumn.CellTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Title}"/>
+                </DataTemplate>
             </treeGrid:TreeGridTemplateColumn.CellTemplate>
             <treeGrid:TreeGridTemplateColumn.EditTemplate>
                	<DataTemplate>
                     <ComboBox ItemsSource="{Binding Path=DataContext.TitleList, ElementName=sfTreeGrid}" DisplayMemberPath="{Binding TitleList}" Width="160"/>
-				</DataTemplate>
+                </DataTemplate>
             </treeGrid:TreeGridTemplateColumn.EditTemplate>
         </treeGrid:TreeGridTemplateColumn>			
-	</treeGrid:SfTreeGrid.Columns>
+    </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 
 {% endhighlight %}
@@ -263,23 +263,23 @@ public class ViewModel : NotificationObject
 
 ## Binding TreeGrid columns from view model
 
-You can bind the [SfTreeGrid.Columns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Columns) property in ViewModel by having the binding property of `Syncfusion.UI.Xaml.TreeGrid.TreeGridColumns` type. Thus, you can set binding to the `SfTreeGrid.Columns` property that provides DataContext of treegrid in ViewModel.
+You can bind the [SfTreeGrid.Columns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Columns) property in `ViewModel` by having the binding property of `Syncfusion.UI.Xaml.TreeGrid.TreeGridColumns` type. Thus, you can set binding to the `SfTreeGrid.Columns` property that provides `DataContext` of treegrid in `ViewModel`.
 
 {% tabs %}
 {% highlight xaml %}
 <treeGrid:SfTreeGrid x:Name="sfTreeGrid"                                   
                                    ColumnWidthMode="Star"
-								   AllowFiltering="True"
+                                   AllowFiltering="True"
                                    AllowEditing="True"
-								   ChildPropertyName="Children"
-								   Columns="{Binding SfTreeGridColumns, Mode=TwoWay}"
+                                   ChildPropertyName="Children"
+                                   Columns="{Binding SfTreeGridColumns, Mode=TwoWay}"
                                    AutoGenerateColumns="False"
                                    ItemsSource="{Binding Employees}">        
 </treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
 
-Refer to the following code example in which the treegrid column is populated with some [TreeGridTextColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumn.html) when creating the ViewModel instance.
+Refer to the following code example in which the treegrid column is populated with some [TreeGridTextColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumn.html) when creating the `ViewModel` instance.
 
 {% tabs %}
 {% highlight c# %}
