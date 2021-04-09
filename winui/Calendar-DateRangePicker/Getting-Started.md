@@ -1,25 +1,26 @@
 ---
 layout: post
-title: Getting started with WinUI CalendarDateRangePicker control|Syncfusion
-description: This section describes about how to add the CalendarDateRangePicker (SfCalendarDateRangePicker) control into WinUI application and its basic features.
+title: Getting started with WinUI Calendar DateRangePicker control|Syncfusion
+description: This section describes about how to add the Calendar DateRangePicker (SfCalendarDateRangePicker) control into WinUI application and its basic features.
 platform: WinUI
 control: SfCalendarDateRangePicker
 documentation: ug
 ---
 
-# Getting Started with WinUI CalendarDateRangePicker
+# Getting Started with WinUI Calendar DateRangePicker
 
-This section explains the steps required to add the `CalendarDateRangePicker` control and its date range selection options. 
-## Structure of CalendarDateRangePicker control
+This section explains the steps required to add the `Calendar DateRangePicker` control and its date range selection options. 
 
-![Structure of WinUI CalendarDateRangePicker control](Getting-Started_images/OriginalStructure.png)
+## Structure of Calendar DateRangePicker control
 
-## Creating an application with WinUI CalendarDateRangePicker
+![Structure of WinUI Calendar DateRangePicker control](Getting-Started_images/OriginalStructure.png)
+
+## Creating an application with WinUI Calendar DateRangePicker
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 2. Add reference to [Syncfusion.Calendar.WinUI](https://www.nuget.org/packages/Syncfusion.Calendar.WinUI) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Calendar` in XAML or C# code.
-4. Initialize the `SfCalendarDateRangePicker` control.
+4. Initialize the `Calendar DateRangePicker` control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -66,11 +67,11 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDateRangePicker control added in the application](Getting-Started_images/Overview_img1.png)
+![Calendar DateRangePicker control added in the application](Getting-Started_images/Overview_img1.png)
 
 ## Select the date range programmatically
 
-You can set or change the selected date range programmatically by using SelectedRange property. If you not assign any value for the `SelectedDate` property, `CalendarDateRangePicker` will automatically assign the current system date as `SelectedDate`.
+You can set or change the selected date range programmatically by using `SelectedRange` property. By default, the `SelectedRange` property value is `null`.
 
 {% tabs %}
 {% highlight C# %}
@@ -81,11 +82,11 @@ sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(new DateTimeOf
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDateRangePicker displaying the selected range dates](Getting-Started_images/SelectedRange.png)
+![Calendar DateRangePicker displaying the selected range dates](Getting-Started_images/SelectedRange.png)
 
 ## Select date range interactively
 
-You can change the selected date range interactively by selecting from drop down calendar spinner. You can get the selected date range from the `SelectedRange` property.
+You can change the selected date range interactively by selecting from drop down calendar. You can get the selected date range from the `SelectedRange` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -100,11 +101,11 @@ SfCalendarDateRangePicker sfCalendarDateRangePicker= new SfCalendarDateRangePick
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDateRangePicker displaying selected date range](Getting-Started_images/CalendarDateRangePicker_Interactive.gif)
+![Calendar DateRangePicker displaying selected date range](Getting-Started_images/CalendarDateRangePicker_Interactive.gif)
 
 ## Setting watermark text
 
-You can prompt the user with some information by using the PlaceHolderText property. This watermark text will be displayed only when the `SelectedRange` property value is `null`. 
+You can prompt the user with any information by using the `PlaceHolderText` property. This watermark text will be displayed only when the `SelectedRange` property value is `null`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -123,7 +124,7 @@ sfCalendarDateRangePicker.SelectedRange = null;
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDateRangePicker displaying watermark text](Getting-Started_images/PlaceHolderText.png)
+![Calendar DateRangePicker displaying watermark text](Getting-Started_images/PlaceHolderText.png)
 
 ## Restrict date range selection
 
@@ -146,13 +147,13 @@ sfCalendarDateRangePicker.MaxDate = new DateTimeOffset(new DateTime(2021, 03, 24
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDateRangePicker restrict the date selection with particular range](Getting-Started_images/MinMaxdate.png)
+![Calendar DateRangePicker restrict the date selection with particular range](Getting-Started_images/MinMaxdate.png)
 
 N> The `MinDate` property value should not be greater than the `MaxDate` property value.
 
 ## Block dates using BlackoutDates
 
-If you want to block particular dates from the date selection, add that dates into the `BlackoutDates` collection. You can add more block out dates to the `BlackoutDates` collection. The default value of `BlackoutDates` property is `null`.
+If you want to block particular dates from the date selection, add those dates into the `BlackoutDates` collection. You can add more block out dates to the `BlackoutDates` collection. The default value of `BlackoutDates` property is `null`.
 
 {% tabs %}
 {% highlight c# %}
@@ -204,11 +205,11 @@ sfCalendarDateRangePicker.BlackoutDates = (sfCalendarDateRangePicker.DataContext
 {% endhighlight  %}
 {% endtabs %}
 
-![CalendarDateRangePicker blocks the particular dates in dropdown calendar](Getting-Started_images/BlackoutDates.png)
+![Calendar DateRangePicker blocks the particular dates in dropdown calendar](Getting-Started_images/BlackoutDates.png)
 
 ## Disable/block all weekends
 
-You can prevent the users from selecting weekend days or any other dates by handling the `ItemPrepared` event and setting `ItemInfo.IsBlackout` property value as `true` for that specific dates.
+You can prevent the users from selecting weekend days or any other dates by handling the `ItemPrepared` event and setting `ItemInfo.IsBlackout` property value as `true` for those specific dates.
 
 {% tabs %}
 {% highlight xaml %}
@@ -244,13 +245,13 @@ private void SfCalendarDateRangePicker_ItemPrepared(object sender, ItemPreparedE
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDateRangePicker restrict the weekend dates from selection](Getting-Started_images/blockweekend.png)
+![Calendar DateRangePicker restrict the weekend dates from selection](Getting-Started_images/blockweekend.png)
 
 N> Blackout dates will not be added in `SelectedRange` property if blackout dates is highlighted in dropdown selected range.
 
 ## Selected range changed notification
 
-You will be notified when selected range changed in `CalendarDateRangePicker` by using `SelectedDateRangeChanged` event. The `SelectedDateRangeChanged` event contains the old and new start value of range in `RangeStartNewValue` and `RangeStartOldValue` properties and old and new end value of range in `RangeEndNewValue` and `RangeEndOldValue` properties.
+You will be notified when selected range changed in `Calendar DateRangePicker` by using `SelectedDateRangeChanged` event. The `SelectedDateRangeChanged` event contains the old and new start value of range in `RangeStartNewValue` and `RangeStartOldValue` properties and old and new end value of range in `RangeEndNewValue` and `RangeEndOldValue` properties.
 
 * `RangeStartOldValue` - Gets a date which is previously selected as start value in range.
 * `RangeStartNewValue` - Gets a date which is currently selected as start value in range.
@@ -272,7 +273,7 @@ sfCalendarDateRangePicker.SelectedDateChanged += SfCalendarDateRangePicker_Selec
 {% endhighlight %}
 {% endtabs %}
 
-You can handle the event as follows:
+You can handle the event as shown below.
 
 {% tabs %}
 {% highlight C# %}
@@ -290,7 +291,7 @@ private void SfCalendarDateRangePicker_SelectedDateChanged(object sender, Select
 
 ## Change date display format
 
- You can modify and display the selected date range with various formatting like date, month and year formats by using the FormatString property. The default value of `FormatString` property is `{0:d}-{1:d}`.
+ You can modify and display the selected date range with various formatting like date, month and year formats by using the `FormatString` property. The default value of `FormatString` property is `{0:d}-{1:d}`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -310,13 +311,13 @@ sfCalendarDateRangePicker.FormatString= "{0:D}-{1:D}";
 {% endhighlight  %}
 {% endtabs %}
 
-![CalendarDateRangePicker selected date with month format](Getting-Started_images/FormatString.png)
+![Calendar DateRangePicker selected date with month format](Getting-Started_images/FormatString.png)
 
-## Change date format for Spinner
+## Change date format for drop down calendar
 
-You can use different date formats such as abbreviated or full name for a day, month, week names or header name of month and year in drop-down spinner by using the `DateFormat`, `MonthFormat`, `DayOfWeekFormat` and `MonthHeaderFormat` properties.
+You can use different date formats such as abbreviated or full name for a day, month, week names or header name of month and year in drop-down calendar by using the `DateFormat`, `MonthFormat`, `DayOfWeekFormat` and `MonthHeaderFormat` properties.
 
-N> Refer [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.datetimeformatting.datetimeformatter?view=winrt-19041) page to get more date formatting.
+N> Refer [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.datetimeformatting.datetimeformatter?view=winrt-19041) page to get more date formats.
 
 {% tabs %}
 {% highlight xaml %}
@@ -339,11 +340,11 @@ sfCalendarDateRangePicker.MonthHeaderFormat = "{month.abbreviated} {year.abbrevi
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying full month and abbreviated year format in WinUI CalendarDateRangePicker.](Getting-Started_images/dateformat.gif)
+![Displaying full month and abbreviated year format in WinUI Calendar DateRangePicker.](Getting-Started_images/dateformat.gif)
 
 ## Limit duration of selected range
 
-You can limit the duration of selected range in `CalendarDateRangePicker` control value by using `MinDatesCountInRange` and `MaxDatesCountInRange` properties.
+You can limit the duration of selected range in `Calendar DateRangePicker` value by using `MinDatesCountInRange` and `MaxDatesCountInRange` properties.
 
 {% tabs %}
 {% highlight C# %}
@@ -355,11 +356,11 @@ sfCalendarDateRangePicker.MinDatesCountInRange = 5;
 {% endhighlight  %}
 {% endtabs %}
 
-![CalendarDateRangePicker with end range value restriction](Getting-Started_images/Selection-By-DayCount.png)
+![Calendar DateRangePicker with end range value restriction](Getting-Started_images/Selection-By-DayCount.png)
 
 ## Navigate between views
 
-You can easily navigate to the month, year, decade, or century views to select different date ranges in the drop-down spinner by repeatedly clicking the header button. Initially month view is loaded.
+You can easily navigate to the month, year, decade, or century views to select different date ranges in the dropdown calendar by repeatedly clicking the header button. Initially, month view is loaded on dropdown calendar.
 
 You can restrict navigation within a minimum and maximum views by using `MinDisplayMode` and `MaxDisplayMode` properties. This will be useful when your date range is smaller and you don’t want to show century, decade and year view.
 
@@ -381,11 +382,11 @@ sfCalendarDateRangePicker.MaxDisplayMode = CalendarDisplayMode.Year;
 {% endhighlight %}
 {% endtabs %}
 
-![Navigation between month and century view in WinUI CalendarDateRangePicker](Getting-Started_images/Restrict_View_Navigation.gif)
+![Navigation between month and century view in WinUI Calendar DateRangePicker](Getting-Started_images/Restrict_View_Navigation.gif)
 
 ## Calendar types
 
-The `CalendarDateRangePicker` control supports different type of calendars such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using `CalendarIdentifier` property. The default value of `CalendarIdentifier` property is `GregorianCalendar`.
+The `Calendar DateRangePicker` control supports different type of calendars such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using `CalendarIdentifier` property. The default value of `CalendarIdentifier` property is `GregorianCalendar`.
 
 You can select the required `CalendarIdentifier` value from below types.
  * JulianCalendar
@@ -413,25 +414,25 @@ sfCalendarDateRangePicker.CalendarIdentifier = "HebrewCalendar";
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Hebrew-type WinUI CalendarDateRangePicker.](Getting-Started_images/Hebrew-calendarIdentifier.png)
+![Displaying Hebrew-type WinUI Calendar DateRangePicker.](Getting-Started_images/Hebrew-calendarIdentifier.png)
 
 ## Culture support
 
-If you want to localize the drop-down spinner calendar, use the `Language` property. The default value of `Language` property is `en-US`.
+If you want to localize the drop-down calendar, use the `Language` property. The default value of `Language` property is `en-US`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<calendar:SfCalendarDateRangePicker Language="ar"
+<calendar:SfCalendarDateRangePicker Language="ar-AR"
                                x:Name="sfCalendarDateRangePicker"/>
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
-sfCalendarDateRangePicker.Language = "ar";
+sfCalendarDateRangePicker.Language = "ar-AR";
 
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying arabic cultured WinUI CalendarDateRangePicker.](Getting-Started_images/LanguageView.png)
+![Displaying arabic cultured WinUI Calendar DateRangePicker.](Getting-Started_images/LanguageView.png)

@@ -78,7 +78,7 @@ this.sfTreeGrid.Columns.Add(new TreeGridTextColumn() {MappingName="ShippersInfo[
 {% endhighlight %}
 {% endtabs %}
 
-**Limitations when binding complex property:**
+**Limitations when binding Indexer property:**
 
 SfTreeGrid doesn’t support `LiveNodeUpdateMode` - `AllowDataShaping`.
 
