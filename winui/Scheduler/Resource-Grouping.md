@@ -304,7 +304,7 @@ this.Schedule.ItemsSource = Meetings;
 
 You can customize the resource header size in the day, week, workweek, timeline day, timeline week, timeline workweek and timeline month views by using the `ResourceHeaderSize` property of `DaysViewSettings` or `TimelineViewSettings` in SfScheduler.
 
-### Resource header size in days view
+### Resource header height in days view
 
 `DaysViewSettings` applicable for `Day,` `Week` and `WorkWeek` views. By default, value of this property is set to `50.`
 
@@ -324,7 +324,7 @@ this.Schedule.DaysViewSettings.ResourceHeaderSize = 100;
 {% endhighlight %}
 {% endtabs %}
 
-### Resource header size in timeline view
+### Resource header width in timeline view
 
 `TimelineViewSettings` applicable for timeline day, timeline week, timeline workweek and timeline month views. By default, value of this property is set to 50.
 
