@@ -9,7 +9,7 @@ documentation: ug
 
 # MVVM in WinUI DataGrid (SfDataGrid)
 
-## DataGrid SelectedItem Binding
+## DataGrid SelectedItem binding
 
 You can bind the [SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectedItem) property directly to the DataGrid by setting the `SfDataGrid.SelectedItem` property.
 
@@ -20,13 +20,13 @@ You can bind the [SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion
                         SelectedItem="{Binding SelectedItem, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                         ItemsSource="{Binding Orders}"
                         NavigationMode="Cell"
-                        ColumnSizer="Star"
+                        ColumnWidthMode="Star"
                         SelectionMode="Extended"
                         ShowRowHeader="True" />
 {% endhighlight %}
 {% endtabs %}
 
-Whenever the `SelectedItem` is changed, the `ViewModel` property will get notified.
+Whenever the `SelectedItem` is changed, the property in the view model will get notified.
 
 {% tabs %}
 {% highlight c# %}
@@ -37,24 +37,24 @@ public class ViewModel : NotificationObject
         _selectedItem = Orders[1];
     }
 
+    private ObservableCollection<OrderInfo> _orders;
+    public ObservableCollection<OrderInfo> Orders
+    {
+        get { return _orders; }
+        set { _orders = value; RaisePropertyChanged("Orders"); }
+    }
+
     private object _selectedItem;
     public object SelectedItem
     {
-        get
-        { 
-            return _selectedItem;
-        }
-        set
-        {
-            _selectedItem = value;
-            RaisePropertyChanged("SelectedItem");
-        }
+        get { return _selectedItem; }
+        set { _selectedItem = value; RaisePropertyChanged("SelectedItem"); }      
     }
 }
 {% endhighlight %}
 {% endtabs %}
 
-## DataGrid SelectedItems Binding
+## DataGrid SelectedItems binding
 
 You can bind the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectedItems) property directly to the DataGrid by setting the `SfDataGrid.SelectedItems` property.
 
@@ -65,13 +65,13 @@ You can bind the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusio
                                 SelectedItems="{Binding SelectedItems,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
                                 ItemsSource="{Binding Orders}"
                                 NavigationMode="Cell"
-                                ColumnSizer="Star"
+                                ColumnWidthMode="Star"
                                 SelectionMode="Extended"
                                 ShowRowHeader="True" />
 {% endhighlight %}
 {% endtabs %}
 
-You can bind the `SelectedItems` from the `ViewModel` property.
+You can bind the `SelectedItems` from the property included in the view model.
 
 {% tabs %}
 {% highlight c# %}
@@ -86,46 +86,45 @@ public class ViewModel : NotificationObject
         _selectedItems.Add(Orders[12]);
     }
 	
+	private ObservableCollection<OrderInfo> _orders;
+    public ObservableCollection<OrderInfo> Orders
+    {
+        get { return _orders; }
+        set { _orders = value; RaisePropertyChanged("Orders"); }
+    }
+
     private ObservableCollection<object> _selectedItems; 
     public ObservableCollection<object> SelectedItems
     {
-        get
-        {
-            return _selectedItems;
-        }
-        set
-        {
-           _selectedItems = value;
-            RaisePropertyChanged("SelectedItems");
-        }
+        get { return _selectedItems; }
+        set { _selectedItems = value; RaisePropertyChanged("SelectedItems"); }      
     }
 }
 {% endhighlight %}
 {% endtabs %}
 
-## Button command binding to ViewModel
+## Button command binding to view model
 
-You can load a button for the columns in the DataGrid by using [GridTemplateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridTemplateColumn.html). When loading the buttons, you can bind command in `ViewModel` by using `ElementName` binding.
+You can load a button for the columns in the DataGrid by using [GridTemplateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridTemplateColumn.html). When loading the buttons, you can bind command included in view model by using `ElementName` binding.
 
-In the following example, `ViewModel` command receives the underlying data object as command parameter since the `DataContext` is binding as command parameter.
+In the following example, the command receives the underlying data object as command parameter since the `DataContext` is binding as command parameter.
 
 {% tabs %}
 {% highlight xaml %}
 <dataGrid:SfDataGrid x:Name="sfDataGrid"                                   
-                                   ColumnSizer="Star"
+                                   ColumnWidthMode="Star"
                                    AllowEditing="True"
                                    AutoGenerateColumns="False"
                                    ItemsSource="{Binding Orders}">
 <dataGrid:SfDataGrid.Columns>
-    <dataGrid:GridTextColumn HeaderText="Order ID" MappingName="OrderID" TextAlignment="Right"/>
-    <dataGrid:GridTextColumn HeaderText="Customer ID"  MappingName="CustomerID"  />
-    <dataGrid:GridTextColumn  MappingName="CustomerName" HeaderText="Customer Name" />
+    <dataGrid:GridTextColumn HeaderText="Order ID" MappingName="OrderID" TextAlignment="Right" />
+    <dataGrid:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID"  />
+    <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
     <dataGrid:GridTextColumn MappingName="Country" />
     <dataGrid:GridTemplateColumn MappingName="ShipCity" HeaderText="Ship City">
         <dataGrid:GridTemplateColumn.CellTemplate>
             <DataTemplate>
-                <Button  Content="Click" Width="160" Height="30"
-                Command="{Binding Path=DataContext.RowDataCommand,ElementName=sfGrid}" CommandParameter="{Binding}"/>
+                <Button  Content="Click" Width="160" Height="30" Command="{Binding Path=DataContext.RowDataCommand,ElementName=sfDataGrid}" CommandParameter="{Binding}"/>
             </DataTemplate>
         </dataGrid:GridTemplateColumn.CellTemplate>
     </dataGrid:GridTemplateColumn>
@@ -165,14 +164,14 @@ public class ViewModel
     /// </summary>   
     public async void ChangeCanExecute(object obj)
     {
-        var rowdataContent = (obj as OrderInfo);
+        var rowDataContent = (obj as OrderInfo);
 
         MessageDialog showDialog = new MessageDialog("SelectedRow Details:\n" +
-            "OrderID - " + rowdataContent.OrderID +
-            "\nCustomerID - " + rowdataContent.CustomerID +
-            "\nCustomerName - " + rowdataContent.CustomerName +
-            "\nCountry - " + rowdataContent.Country +
-            "\nShipCity - " + rowdataContent.ShipCity);                
+            "OrderID - " + rowDataContent.OrderID +
+            "\nCustomerID - " + rowDataContent.CustomerID +
+            "\nCustomerName - " + rowDataContent.CustomerName +
+            "\nCountry - " + rowDataContent.Country +
+            "\nShipCity - " + rowDataContent.ShipCity);                
         await showDialog.ShowAsync();
     }
 }
@@ -182,23 +181,23 @@ public class ViewModel
 
 ![Shown button command binding to viewmodel in WinUI DataGrid](MVVM_images/Shown-button-command-binding-to-viewmodel-in-WinUI-DataGrid.png)
 
-## Binding ComboBoxColumn ItemsSource from ViewModel
+## Binding ComboBoxColumn ItemsSource from view model
 
 You can bind the `ItemsSource` from `ViewModel` to [GridComboBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridComboBoxColumn.html) by using the `ElementName` binding.
 
 {% tabs %}
 {% highlight xaml %}
 <dataGrid:SfDataGrid x:Name="sfDataGrid"                                   
-                                   ColumnSizer="Star"
+                                   ColumnWidthMode="Star"
                                    AllowEditing="True"
                                    AutoGenerateColumns="False"
                                    ItemsSource="{Binding Orders}">
     <dataGrid:SfDataGrid.Columns>
         <dataGrid:GridTextColumn HeaderText="Order ID" MappingName="OrderID" TextAlignment="Right"/>
-        <dataGrid:GridTextColumn HeaderText="Customer ID"  MappingName="CustomerID"  />
-        <dataGrid:GridTextColumn  MappingName="CustomerName" HeaderText="Customer Name" />    
+        <dataGrid:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID"  />
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />    
         <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-        <dataGrid:GridComboBoxColumn AllowEditing="True" MappingName="Country" ItemsSource="{Binding Path=DataContext.CountryList, ElementName=sfDataGrid}"/>
+        <dataGrid:GridComboBoxColumn MappingName="Country" ItemsSource="{Binding Path=DataContext.CountryList, ElementName=sfDataGrid}" />
     </dataGrid:SfDataGrid.Columns>
 </dataGrid:SfDataGrid>
 
@@ -240,21 +239,21 @@ public class ViewModel : NotificationObject
 
 ![Shown binding comboboxcolumn ItemsSource from ViewModel in WinUI DataGrid](MVVM_images/Shown-binding-comboboxcolumn-ItemsSource-from-ViewModel-in-WinUI-DataGrid.png)
 
-## Binding ViewModel ItemsSource to ComboBox inside data template
+## Binding ItemsSource from view model to ComboBox inside data template
 
 You can load the `ComboBox` inside the `GridTemplateColumn` and bind the `ItemsSource` from `ViewModel` to `ComboBox` by using the `ElementName` binding.
 
 {% tabs %}
 {% highlight xaml %}
 <dataGrid:SfDataGrid x:Name="sfDataGrid"                                   
-                                   ColumnSizer="Star"
+                                   ColumnWidthMode="Star"
                                    AllowEditing="True"
                                    AutoGenerateColumns="False"
                                    ItemsSource="{Binding Orders}">
     <dataGrid:SfDataGrid.Columns>
         <dataGrid:GridTextColumn HeaderText="Order ID" MappingName="OrderID" TextAlignment="Right" />
-        <dataGrid:GridTextColumn HeaderText="Customer ID"  MappingName="CustomerID"  />
-        <dataGrid:GridTextColumn  MappingName="CustomerName" HeaderText="Customer Name" />    
+        <dataGrid:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID"  />
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />    
         <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
         <dataGrid:GridTemplateColumn MappingName="Country">
             <dataGrid:GridTemplateColumn.CellTemplate>
@@ -308,7 +307,7 @@ public class ViewModel : NotificationObject
 
 ![Shown combobox inside data template binding MVVM in WinUI DataGrid](MVVM_images/Shown-combobox-inside-data-template-binding-MVVM-in-WinUI-DataGrid.png)
 
-## Binding DataGrid Columns from ViewModel
+## Binding DataGrid columns from view model
 
 You can bind the [SfDataGrid.Columns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Columns) to a property in the `ViewModel` by having the `binding` property of type `Syncfusion.UI.Xaml.DataGrid.Columns`. Thus, you can set binding to the `SfDataGrid.Columns` property that provides `DataContext` of the DataGrid is `ViewModel`. 
 
@@ -321,7 +320,7 @@ You can bind the [SfDataGrid.Columns](https://help.syncfusion.com/cr/winui/Syncf
 {% endhighlight %}
 {% endtabs %}
 
-Refer to the following code example in which the `SfDataGridColumns` is populated with some `GridTextColumn` when creating the `ViewModel` instance.
+Refer to the following code example in which the `SfDataGridColumns` is populated with some [GridTextColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridTextColumn.html) when creating the `ViewModel` instance.
 
 {% tabs %}
 {% highlight c# %}
