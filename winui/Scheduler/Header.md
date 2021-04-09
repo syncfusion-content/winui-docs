@@ -13,7 +13,7 @@ You can change the header height, date format, and appearance of SfScheduler.
 
 ## Header height
 
-You can change the scheduler header height by using the `HeaderHeight` property of SfScheduler. By default, the header height is `50.`
+You can change the scheduler header height by using the [HeaderHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_HeaderHeight) property of SfScheduler. By default, the header height is `50.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -30,11 +30,11 @@ this.Schedule.HeaderHeight = 100;
 
 ## Header date format
 
-You can change the Scheduler header date format of scheduler by using the `HeaderDateFormat` property of SfScheduler. By default, the header date format is `MMMM yyyy.`
+You can change the Scheduler header date format of scheduler by using the [HeaderDateFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_HeaderDateFormat) property of SfScheduler. By default, the header date format is `MMMM yyyy.`
 
 {% tabs %}
 {% highlight xaml %}
-<scheduler:SfScheduler x:Name="Schedule"                                           HeaderDateFormat="MMM-yyyy">
+<scheduler:SfScheduler x:Name="Schedule" HeaderDateFormat="MMM-yyyy">
 </scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c#%}
@@ -71,7 +71,7 @@ You can style Scheduler header appearance using the `SchedulerHeaderControl` in 
 
 ### Customize header appearance using DataTemplate
 
-You can customize the header appearance of scheduler by using the `HeaderTemplate` property of SfScheduler.
+You can customize the header appearance of scheduler by using the [HeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_HeaderTemplate) property of SfScheduler.
 
 {% tabs %}
 {% highlight xaml %}
