@@ -9,7 +9,7 @@ documentation: ug
 
 # Shape Pointer in WinUI Linear Gauge (SfLinearGauge)
 
-Indicate current values by using the different types of shape pointers. You can change the shape type using the `ShapeType` property.
+Indicate current values by using the different types of shape pointers. You can change the shape type using the [`ShapeType`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeShapeType.html) property.
 
 {% tabs %}
 
@@ -54,7 +54,7 @@ Gauge supports the following types of shape pointer:
 
 ## Custom shape pointer
 
-You can add customized shapes to denote the current pointer value instead of in-built shape. It can be achieved by providing required shape in `ShapeTemplate` property.
+You can add customized shapes to denote the current pointer value instead of in-built shape. It can be achieved by providing required shape in [`ShapeTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html#Syncfusion_UI_Xaml_Gauges_ShapePointer_ShapeTemplate) property.
 
 {% tabs %}
 
@@ -108,11 +108,11 @@ this.Content = sfLinearGauge;
 
 The shape pointer can be customized using the following properties:
 
-* `Fill` – Allows to customize the shape color.
-* `Stroke` – Allows to specify the border color for the shape.
-* `StrokeThickness` –  Allows to specify the border width of the shape.
-* `ShapeHeight` – Allows to specify the shape height.
-* `ShapeWidth` – Allows to specify the shape width.
+* [`Fill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html#Syncfusion_UI_Xaml_Gauges_ShapePointer_Fill) – Allows to customize the shape color.
+* [`Stroke`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html#Syncfusion_UI_Xaml_Gauges_ShapePointer_Stroke) – Allows to specify the border color for the shape.
+* [`StrokeThickness`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html#Syncfusion_UI_Xaml_Gauges_ShapePointer_StrokeThickness) –  Allows to specify the border width of the shape.
+* [`ShapeHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html#Syncfusion_UI_Xaml_Gauges_ShapePointer_ShapeHeight) – Allows to specify the shape height.
+* [`ShapeWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html#Syncfusion_UI_Xaml_Gauges_ShapePointer_ShapeWidth) – Allows to specify the shape width.
 
 {% tabs %}
 
@@ -160,7 +160,7 @@ this.Content = sfLinearGauge;
 
 ## Shape position customization
 
-The shape pointer can be moved near or far from its actual position in X or Y direction using the `OffsetPoint` property. 
+The shape pointer can be moved near or far from its actual position in X or Y direction using the [`OffsetPoint`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearMarkerPointer.html#Syncfusion_UI_Xaml_Gauges_LinearMarkerPointer_OffsetPoint) property. 
 
 To move the pointer inside of the axis, provide positive values.
 
@@ -202,7 +202,7 @@ this.Content = sfLinearGauge;
 
 **Shape pointer alignment**
 
-You can change the horizontal or vertical position of the shape pointer either start, end or center by using the `HorizontalAnchor` and `VerticalAnchor` properties. The default value of `HorizontalAnchor` and `VerticalAnchor` properties are center.
+You can change the horizontal or vertical position of the shape pointer either start, end or center by using the [`HorizontalAnchor`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearMarkerPointer.html#Syncfusion_UI_Xaml_Gauges_LinearMarkerPointer_HorizontalAnchor) and [`VerticalAnchor`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearMarkerPointer.html#Syncfusion_UI_Xaml_Gauges_LinearMarkerPointer_VerticalAnchor) properties. The default value of [`HorizontalAnchor`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearMarkerPointer.html#Syncfusion_UI_Xaml_Gauges_LinearMarkerPointer_HorizontalAnchor) and [`VerticalAnchor`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearMarkerPointer.html#Syncfusion_UI_Xaml_Gauges_LinearMarkerPointer_VerticalAnchor) properties are center.
 
 {% tabs %}
 

@@ -44,7 +44,7 @@ N> Default axis will be added when initializing the Linear Gauge control.
 
 ## Add axis to the linear gauge
 
-You can set a linear axis for the gauge using the `Axis` property of `SfLinearGauge` and also you can specify the minimum and maximum values of axis using the `Minimum` and `Maximum` properties as demonstrated in the following code sample.
+You can set a linear axis for the gauge using the `Axis` property of `SfLinearGauge` and also you can specify the minimum and maximum values of axis using the [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_LinearAxis_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_Maximum) properties as demonstrated in the following code sample.
 
 {% tabs %}
 

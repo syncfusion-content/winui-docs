@@ -11,8 +11,8 @@ documentation: ug
 
 SfDataGrid allows you to customize the grid lines visibility to vertical, horizontal, both or none. To achieve this, use the following properties.
 
-`SfDataGrid.GridLinesVisibility`: To set the border lines for the cells other than header and stacked header cells.
-`SfDataGrid.HeaderLinesVisibility`: To set the border lines only for header and stacked header cells.
+[SfDataGrid.GridLinesVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_GridLinesVisibility): To set the border lines for the cells other than header and stacked header cells.
+[SfDataGrid.HeaderLinesVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_HeaderLinesVisibility): To set the border lines only for header and stacked header cells.
 
 The following are the list of options available to customize grid lines visibility,
 
@@ -25,7 +25,7 @@ The following are the list of options available to customize grid lines visibili
 
 ### Both
 
-The GridLinesVisibility.Both displays the DataGrid with both horizontal and vertical grid lines. By default GridLinesVisibility value set as Both.
+The [GridLinesVisibility.Both](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_Both) displays the DataGrid with both horizontal and vertical grid lines. By default GridLinesVisibility value set as Both.
 
 {% tabs %}
 {% highlight xaml %}
@@ -46,7 +46,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 
 ### Horizontal
 
-The GridLinesVisibility.Horizontal displays the DataGrid with horizontal grid lines only.
+The [GridLinesVisibility.Horizontal]https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_Horizontal) displays the DataGrid with horizontal grid lines only.
 
 {% tabs %}
 {% highlight xaml %}
@@ -67,7 +67,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 
 ### Vertical
 
-The GridLinesVisibility.Vertical displays the DataGrid with vertical grid lines only.
+The [GridLinesVisibility.Vertical](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_Vertical) displays the DataGrid with vertical grid lines only.
 
 {% tabs %}
 {% highlight xaml %}
@@ -87,7 +87,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 ![Vertical GridLinesVisibility in WinUI DataGrid](GridLines_images/GridLines_image3.png)
 
 ### None
-GridLinesVisibility.None displays the DataGrid without grid lines.
+[GridLinesVisibility.None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_None) displays the DataGrid without grid lines.
 
 {% tabs %}
 {% highlight xaml %}
@@ -108,7 +108,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 
 ## Header rows
 
-You can customize the DataGrid header lines visibility by using the SfDataGrid.HeaderLinesVisibility property. You can also customize the header lines visibility to horizontal, vertical, none or both. By default HeaderLinesVisibility value set as Both.
+You can customize the DataGrid header lines visibility by using the [SfDataGrid.HeaderLinesVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_HeaderLinesVisibility) property. You can also customize the header lines visibility to horizontal, vertical, none or both. By default HeaderLinesVisibility value set as Both.
 
 {% tabs %}
 {% highlight xaml %}
@@ -125,7 +125,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Unbound rows in WinUI DataGrid](GridLines_images/GridLines_image5.png)
+![Horizontal HeaderLinesVisibility in WinUI DataGrid](GridLines_images/GridLines_image5.png)
 
 ## Limitations
 
