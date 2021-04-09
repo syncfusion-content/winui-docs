@@ -86,7 +86,7 @@ public class ViewModel : NotificationObject
         _selectedItems.Add(Orders[12]);
     }
 	
-	private ObservableCollection<OrderInfo> _orders;
+    private ObservableCollection<OrderInfo> _orders;
     public ObservableCollection<OrderInfo> Orders
     {
         get { return _orders; }
