@@ -91,7 +91,7 @@ The following are possible causes of this error:
 
 ### Suggested solution.
 
-Please check your subscription status [here](https://www.syncfusion.com/sales/products), or contact <salessupport@syncfusion.com>. You can also continue the 30-day trial periodx
+Please check your subscription status [here](https://www.syncfusion.com/sales/products), or contact <salessupport@syncfusion.com>. You can also continue the 30-day trial period.
 
 ## Unable to install because of another installation?
 

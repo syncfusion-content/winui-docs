@@ -37,7 +37,7 @@ Our 30-day trial can be downloaded in two ways.
 ### Start Trial Page
 1. You can also evaluate our 30-day free trial from the [Start Trial](https://www.syncfusion.com/account/manage-trials/start-trials) page.
    
-   ![Trial and downloads of Syncfusion Essential Studio](start-trial-download.png)
+   ![Trial and downloads of Syncfusion Essential Studio](download-images/start-trial-download.png)
    
 2. To access this page, you must log in with your Syncfusion account.
 3. Begin your trial by selecting the WinUI product. 
