@@ -13,7 +13,7 @@ documentation: ug
 
 You can allow the users to select a date range within the particular range by specifying `MinDate` and `MaxDate` properties. The default value of `MinDate` property is `1/1/1920 12:00:00 AM +00:00` and `MaxDate` property is `12/31/2120 11:59:59 PM +00:00`.
 
-N> Dates that appear outside minimum and maximum date rage will be disabled (blackout).
+N> Dates that appear outside minimum and maximum date range will be disabled (blackout).
 
 {% tabs %}
 {% highlight xaml %}
@@ -36,7 +36,7 @@ N> The `MinDate` property value should not be greater than the `MaxDate` propert
 
 ## Block dates using BlackoutDates
 
-If you want to block particular dates from the date selection, add those dates into the `BlackoutDates` collection. You can add more block out dates to the `BlackoutDates` collection. The default value of `BlackoutDates` property is `null`.
+If you want to block particular dates from the date selection, add those dates in the `BlackoutDates` collection. You can add more block out dates to the `BlackoutDates` collection. The default value of `BlackoutDates` property is `null`.
 
 {% tabs %}
 {% highlight c# %}
@@ -93,6 +93,8 @@ sfCalendarDateRangePicker.BlackoutDates = (sfCalendarDateRangePicker.DataContext
 ## Disable/block all weekends
 
 You can prevent the users from selecting weekend days or any other dates by handling the `ItemPrepared` event and setting `ItemInfo.IsBlackout` property value as `true` for those specific dates.
+
+N> You can also change the text to be displayed for specific days or dates in dropdown calendar using `ItemInfo.DisplayText` property.  
 
 {% tabs %}
 {% highlight xaml %}
