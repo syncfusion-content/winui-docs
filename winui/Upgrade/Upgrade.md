@@ -7,7 +7,7 @@ control: Essential Studio
 documentation: ug
 ---
 
-# Upgrade
+# Upgrading Syncfusion Essential WinUI
 
 Syncfusion releases new volumes once every three months, with exciting new features. There may be one or two Service Pack releases for this volume releases. Service Pack releases are provided to address major bug fixes in the volume releases.
 
