@@ -57,9 +57,10 @@ The steps below show how to install the Essential Studio WinUI platform.
 
     **Additional Settings**
     
-	* Select the **Install Demos** check box to install Syncfusion samples, or leave the check box clear, when you do not want to install Syncfusion samples.
-    * Select the **Create Desktop Shortcut** checkbox to create the desktop shortcut for Syncfusion Control Panel.
-	* Select the **Create Start Menu Shortcut** checkbox to create the start menu shortcut for Syncfusion Control Panel.
+	* Select the **Install Demos** check box to install Syncfusion samples, or leave the check box unchecked, if you do not want to install Syncfusion samples.
+    * Check the **Create Desktop Shortcut** checkbox to add a desktop shortcut for Syncfusion Control Panel.
+    * Check the **Create Start Menu Shortcut** checkbox to add a shortcut to the start menu for Syncfusion Control Panel.
+
 
 
 
@@ -113,17 +114,17 @@ To install through the Command Line in Silent mode, follow the steps below.
 6.	Run Command Prompt in administrator mode and enter the following arguments.
 
 
-   **Arguments:** “installer file path\SyncfusionEssentialStudio(platform)_(version).exe” /Install silent /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}] [/InstallSamples:{true/false}] [/CreateShortcut:{true/false}] [/CreateStartMenuShortcut:{true/false}]
+    **Arguments:** “installer file path\SyncfusionEssentialStudio(platform)_(version).exe” /Install silent /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}] [/InstallSamples:{true/false}] [/CreateShortcut:{true/false}] [/CreateStartMenuShortcut:{true/false}]
 
 
-   N> [..] – Arguments inside the square brackets are optional.
+    N> [..] – Arguments inside the square brackets are optional.
 
-   **Example:** “D:\Temp\syncfusionessentialwinui_x.x.x.x.exe” /Install silent /PIDKEY:“product unlock key” /log “C:\Temp\EssentialStudio_Platform.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /CreateShortcut:true /CreateStartMenuShortcut:true
+    **Example:** “D:\Temp\syncfusionessentialwinui_x.x.x.x.exe” /Install silent /PIDKEY:“product unlock key” /log “C:\Temp\EssentialStudio_Platform.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /CreateShortcut:true /CreateStartMenuShortcut:true
 
 	
-7. Essential Studio for WinUI is installed.
+7.  Essential Studio for WinUI is installed.
 
-   N> x.x.x.x should be replaced with the Essential Studio version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
+    N> x.x.x.x should be replaced with the Essential Studio version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
    
 
 ### Command Line Uninstallation
@@ -138,12 +139,12 @@ Syncfusion Essential WinUI can be uninstalled silently using the Command Line. T
 6.	Run Command Prompt in administrator mode and enter the following arguments.
 
    
-   **Arguments:** “Copied installer file path\syncfusionessentialwinui_(version).exe” /uninstall silent 
+    **Arguments:** “Copied installer file path\syncfusionessentialwinui_(version).exe” /uninstall silent 
 
-   **Example:** “D:\Temp\syncfusionessentialwinui_x.x.x.x.exe" /uninstall silent
+    **Example:** “D:\Temp\syncfusionessentialwinui_x.x.x.x.exe" /uninstall silent
 
 
-8. Essential Studio for WinUI is uninstalled.
+7.  Essential Studio for WinUI is uninstalled.
 
    
    
