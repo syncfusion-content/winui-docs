@@ -83,7 +83,7 @@ sfCalendar.BlackoutDates = (sfCalendar.DataContext as ViewModel).BlockedDates;
 
 ![Calendar blocks the particular dates from selection](Getting-Started_images/BlackoutDates.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/BlockedDates)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/BlackoutDates)
 
 ## Disable/block all weekends
 

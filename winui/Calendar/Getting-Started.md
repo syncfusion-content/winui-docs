@@ -69,7 +69,7 @@ namespace GettingStarted
 
 ![Calendar control added in the application](Getting-Started_images/Calendar_Added.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Getting_started)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/GettingStarted)
 
 ## Select the date programmatically
 
