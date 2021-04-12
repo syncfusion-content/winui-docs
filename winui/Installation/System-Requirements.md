@@ -10,7 +10,7 @@ documentation: ug
 
 # System Requirements for WinUI
 
-The following topic describes the system requirements for Syncfusion WinUI platform.
+The system requirements for using our Syncfusion WinUI platform are as follows.
 
 ## Operating Systems
 Windows 10, version 1809 (build 17763) or later.
@@ -22,11 +22,12 @@ Windows 10, version 1809 (build 17763) or later.
  * <b>Windows 10 SDK (10.0.19041.0)</b> on <b>Individual components</b> tab of the installation dialog. 
  * [Project Reunion 0.5 extension](https://marketplace.visualstudio.com/items?itemName=ProjectReunion.MicrosoftProjectReunion)
 
-N> Visual Studio 2019, version 16.9 also supports Project Reunion and it does not support all WinUI 3 tooling features such as Hot Reload, Live Visual Tree, etc. Refer [Windows UI Library 3 - Project Reunion 0.5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/) to know more about WinUI 3 tooling support.
+N> * Visual Studio 2019, version 16.9, also supports Project Reunion and but not all WinUI 3 tooling features like Hot Reload, Live Visual Tree, and so on. 
+* For more information on WinUI 3 tooling support, see [Windows UI Library 3 - Project Reunion 0.5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/)
 
 
 {% seealso %}
 
-[Set up your development environment](https://docs.microsoft.com/en-us/windows/apps/project-reunion/get-started-with-project-reunion#set-up-your-development-environment) for Project Reunion from Microsoft Docs.
+Set up your [Project Reunion development environment](https://docs.microsoft.com/en-us/windows/apps/project-reunion/get-started-with-project-reunion#set-up-your-development-environment) using Microsoft Docs.
 
 {% endseealso %}

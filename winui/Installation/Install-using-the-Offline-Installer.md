@@ -12,69 +12,72 @@ documentation: ug
 
 ## Installing with UI   
 
-The following procedure illustrates how to install Essential Studio WinUI platform.
+The steps below show how to install the Essential Studio WinUI platform.
 
-1. Close all the running Visual Studio instances.
+1.	Open the Syncfusion WinUI platform offline installer file by double-clicking it. The Installer Wizard automatically opens and extracts the package
 
-2. Double-click the Syncfusion WinUI platform installer file. The Installer Wizard opens and extracts the package automatically.
+    ![Installer extraction wizard](Platform_images/Step-by-Step-Installation_img1.png)
 
-   ![Installer extraction wizard](Platform_images/Step-by-Step-Installation_img1.png)
+    N> The Installer wizard extracts the syncfusionessentialwinui_(version).exe dialog, which displays the package's unzip operation.
 
-   N> The Installer wizard extracts the syncfusionessentialwinui_(version).exe dialog, displaying the unzip operation of the package.
-
-3. You have two options to unlock the Syncfusion installer:
+2.	To unlock the Syncfusion offline installer, you have two options:
 
    
-* *Login To Install*
+    * *Login To Install*
    
-* *Use Unlock Key*
+    * *Use Unlock Key*
    
    
    
-   **Login To Install**
+    **Login To Install**
    
-   You should enter your Syncfusion Direct-Trac login credentials. If you don't have Syncfusion Direct-Trac login credentials, then you can click on Sign Up to a create new account. Else if you forgot your password, click on Reset Password to create new password. Here Email address and Password is validated and the Platform Selection window opens.
+    You must enter your Syncfusion email address and password. If you don't already have a Syncfusion account, you can sign up for one by clicking **"Create an account"**. If you have forgotten your password, click on **"Forgot Password"** to create a new one. Once you've entered your Syncfusion email and password, click Next.
 
-   ![Login credentials](Platform_images/Step-by-Step-Installation_img2.png)   
+    ![Login credentials](Platform_images/Step-by-Step-Installation_img2.png)   
 
 
-   **Use Unlock Key**
+    **Use Unlock Key**
    
-   You should use the Syncfusion License/Trial key. Trial key is valid for 30 days and the installer won't accept the expired trial key. Licensed customer can generate key from [here](https://www.syncfusion.com/kb/2326).
+    Unlock keys are used to unlock the Syncfusion offline installer, and they are platform and version specific. You should use either Syncfusion licensed or trial Unlock key to unlock Syncfusion WinUI installer.
+   
+    The trial unlock key is only valid for 30 days, and the installer will not accept an expired trial key. 
+   
+    To learn how to generate an unlock key for both trial and licensed products, see [this](https://www.syncfusion.com/kb/2326) Knowledge Base article.
 
-   ![Product key](Platform_images/Step-by-Step-Installation_img3.png)   
+    ![Product key](Platform_images/Step-by-Step-Installation_img3.png)   
 
 
-4. After reading the License Terms and Conditions, check the **I agree to the License Terms and Conditions** check box.
+3.	After reading the License Terms and Privacy Policy, check the **“I agree to the License Terms and Privacy Policy”** check box. Click the Next button.
 
 
-5. Click Next. Select the Installation, Samples Folder and Advanced Options screen opens. If there is no previous version installed for current platform, click Install to install in the displayed default location.
+4.	Change the install and sample locations here. You can also change the Additional settings. Click Install to install with the default settings.
 
 
     ![Advanced options](Platform_images/Step-by-Step-Installation_img4.png)
 
-
-    * Select the **Install Demos** check box to install Syncfusion samples, or leave the check box clear, when you do not want to install Syncfusion samples.
+    **Additional Settings**
+    
+	* Select the **Install Demos** check box to install Syncfusion samples, or leave the check box clear, when you do not want to install Syncfusion samples.
     * Select the **Create Desktop Shortcut** checkbox to create the desktop shortcut for Syncfusion Control Panel.
 	* Select the **Create Start Menu Shortcut** checkbox to create the start menu shortcut for Syncfusion Control Panel.
 
 
 
-6.  If any previous version installed for current platform, Click Next in the same Advanced Options screen to select the versions to be uninstalled.
+5.	If any previous versions of the current platform is installed, in the same Advanced Options screen, click Next to select the versions to be uninstalled, then click Proceed
 
 
     ![Advanced options](Platform_images/Step-by-Step-Installation_img7.png)
 	
 	
-	N> From the 2021 Volume 1 release, Syncfusion has provided option to uninstall the previous versions from 18.1 while installing the new version.
+	N> From the 2021 Volume 1 release, Syncfusion has added the option to uninstall previous versions from 18.1 while installing the new version.
 	
 
-7.	Click Proceed.
+6.	Click Proceed. A confirmation window will appear to confirm the removal of the selected products. Continue by clicking the Continue button
 
 	![Uninstalling wizard](Platform_images/Step-by-Step-Installation_img10.png)
 	
 	
-	N> If any version is selected to uninstall, pop up screen will appear for confirmation, if continue is selected, the Progress screen will display the uninstall progress and install progress respectively. If none of the version is selected to uninstall, install progress alone will be progressed.
+	N> If any version is selected to uninstall, a confirmation screen will appear; if continue is selected, the Progress screen will display the uninstall and install progress, respectively. If none of the versions are chosen to be uninstalled, only the installation progress will be displayed.
 	
 	
 	![Uninstalling wizard](Platform_images/Step-by-Step-Installation_img8.png)
@@ -83,33 +86,33 @@ The following procedure illustrates how to install Essential Studio WinUI platfo
 	![Installing wizard](Platform_images/Step-by-Step-Installation_img5.png)
 	
 	
-	N> The Completed screen is displayed once the WinUI platform is installed. If any version is selected to uninstall, The completed screen will display both install and uninstall status.
+	N> When the package is installed, the Completed screen appears. If a version is chosen to be uninstalled, the completed screen will show both the install and uninstall status.
 
     
 	![Installation completed](Platform_images/Step-by-Step-Installation_img9.png)
 
 
-8. Click the **Launcher Control Panel** link to launch the [Syncfusion Control Panel](https://help.syncfusion.com/common/essential-studio/utilities#dashboard ) after installing.
+7.  After installing, click the **Launch Control Panel** link to open the Syncfusion Control Panel.
 
 
-9. Click Finish. Syncfusion WinUI platform is installed in your system.
+8.  Click the Finish button. Your system has been installed with the Syncfusion Essential Studio WinUI platform.
 
 ## Installing in silent mode
 
-The Syncfusion Essential Studio Platform Installer supports installing/uninstalling through Command Line. The following sections illustrate this ability. 
+The Syncfusion Essential Studio WinUI Installer supports installation and uninstallation via the command line. The sections that follow demonstrate this ability.
 
 ### Command Line Installation
 
-Follow the steps below to install through Command Line in Silent mode.
+To install through the Command Line in Silent mode, follow the steps below.
 
-1. Double-click the Syncfusion Essential Studio platform installer file. The Installer Wizard opens and extracts the package automatically. 
-2. The syncfusionessentialwinui_(version).exe file is extracted into the Temp folder.
-3. Run %temp%. The Temp folder will open. The syncfusionessentialwinui_(version).exe file is available in one of the folders.
-4. Copy the extracted syncfusionessentialwinui_(version).exe file in local drive.
-5. Cancel the Wizard.
-6. Open the Command Prompt in administrator mode and pass the following arguments.
+1.	Run the Syncfusion WinUI installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
+2.	The file syncfusionessentialwinui_(version).exe file will be extracted into the Temp directory.
+3.	Run %temp%. The Temp folder will be opened. The syncfusionessentialwinui_(version).exe file will be located in one of the folders.
+4.	Copy the extracted syncfusionessentialwinui_(version).exe file in local drive.
+5.	Exit the Wizard.
+6.	Run Command Prompt in administrator mode and enter the following arguments.
 
-   
+
    **Arguments:** “installer file path\SyncfusionEssentialStudio(platform)_(version).exe” /Install silent /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}] [/InstallSamples:{true/false}] [/CreateShortcut:{true/false}] [/CreateStartMenuShortcut:{true/false}]
 
 
@@ -120,20 +123,20 @@ Follow the steps below to install through Command Line in Silent mode.
 	
 7. Essential Studio for WinUI is installed.
 
-   N> x.x.x.x needs to be replaced with the Essential Studio version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
+   N> x.x.x.x should be replaced with the Essential Studio version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
    
 
 ### Command Line Uninstallation
 
-Syncfusion Essential Studio supports uninstalling through Command Line in Silent mode. The following steps illustrate this. 
+Syncfusion Essential WinUI can be uninstalled silently using the Command Line. The steps below demonstrate this.
 
-1. When you do not have the extracted installer (syncfusionessentialwinui_(version).exe) then follow the steps from 2 to 7.
-2. Double-click the Syncfusion Essential Studio platform installer file. The Installer Wizard opens and extracts the package automatically.
-3. The syncfusionessentialwinui_(version).exe file is extracted into the Temp folder.
-4. Run %temp%. The Temp folder will open. The syncfusionessentialwinui_(version).exe file is available in one of the folders.
-5. Copy the syncfusionessentialwinui_(version).exe file in local drive. 
-6. Cancel the Wizard.
-7. Open the Command Prompt in administrator mode and pass the following arguments.
+1.	Run the Syncfusion WinUI installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
+2.	The file syncfusionessentialwinui_(version).exe file will be extracted into the Temp directory.
+3.	Run %temp%. The Temp folder will be opened. The syncfusionessentialwinui_(version).exe file will be located in one of the folders.
+4.	Copy the extracted syncfusionessentialwinui_(version).exe file in local drive.
+5.	Exit the Wizard.
+6.	Run Command Prompt in administrator mode and enter the following arguments.
+
    
    **Arguments:** “Copied installer file path\syncfusionessentialwinui_(version).exe” /uninstall silent 
 
@@ -142,6 +145,5 @@ Syncfusion Essential Studio supports uninstalling through Command Line in Silent
 
 8. Essential Studio for WinUI is uninstalled.
 
-   N> x.x.x.x needs to be replaced with the Essential Studio version installed in your machine.
    
    
