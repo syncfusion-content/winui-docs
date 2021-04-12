@@ -7,138 +7,137 @@ control: Essential Studio
 documentation: ug
 ---
 
-# Essential Studio Installation Errors
+# Common Installation Errors
 
-This article lists the common Installation errors, reasons and solution for those errors.
+This article describes the most common installation errors, as well as the causes and solutions to those errors.
 
-* [Could not unlock Licensed installer with Trial key?](https://help.syncfusion.com/common/essential-studio/installation/installation-errors#could-not-unlock-the-licensed-installer-with-trial-key)
-* [Licensed Expired! What to do?](https://help.syncfusion.com/common/essential-studio/installation/installation-errors#licensed-expired-what-to-do)
-* [Not a Valid license holder?](https://help.syncfusion.com/common/essential-studio/installation/installation-errors#not-a-valid-license-holder)
-* [Unable to find a license or trial?](https://help.syncfusion.com/common/essential-studio/installation/installation-errors#unable-to-find-a-license-or-trial)
-* [Could not install due to another installation?](https://help.syncfusion.com/common/essential-studio/installation/installation-errors#could-not-install-due-to-another-installation)
-* [Could not install due to controlled folder access?](http://help.syncfusion.com/common/essential-studio/installation/installation-errors#could-not-install-due-to-controlled-folder-access)
+* [Couldn't use the Trial key to unlock the Licensed installer?](https://help.syncfusion.com/winui/installation/installation-errors#couldnt-use-the-trial-key-to-unlock-the-licensed-installer)
+* [The license has expired! What should I do?](https://help.syncfusion.com/winui/installation/installation-errors#the-license-has-expired-what-should-i-do)
+* [Not a Valid license holder?](https://help.syncfusion.com/winui/installation/installation-errors#not-a-valid-license-holder)
+* [Can't find a license or a trial?](https://help.syncfusion.com/winui/installation/installation-errors#cant-find-a-license-or-a-trial)
+* [Unable to install because of another installation?](https://help.syncfusion.com/winui/installation/installation-errors#unable-to-install-because-of-another-installation)
+* [Unable to install due to restricted folder access?](http://help.syncfusion.com/winui/installation/installation-errors#unable-to-install-due-to-restricted-folder-access)
 
-### Could not unlock Licensed installer with Trial key?
+## Couldn't use the Trial key to unlock the Licensed installer?
 
-#### Problem
+### Problem
 
-**Error Message:** Sorry, the provided unlock key is a trial key and cannot be used to unlock the licensed version of our Essential Studio for {platform} installer
+**Error Message:** Sorry, the provided unlock key is a trial unlock key and cannot be used to unlock the licensed version of our Essential Studio for WinUI installer.
 
 ![Alert Message](Errors/Installation_Errors_img1.png)
 
-#### Reason
+### Reason
 
-You are trying to unlock the licensed installer with a Trial key. 
+You are attempting to use a Trial unlock key to unlock the licensed installer.
 
-#### Suggested solution
+### Suggested solution
 
-Licensed installer can be unlocked only by License key. So, use the License key to unlock the Licensed installer. Refer [this](http://syncfusion.com/kb/2326) topic to generate the license key.
+Only a licensed unlock key can unlock a licensed installer. So, to unlock the Licensed installer, use the Licensed unlock key. To generate the licensed unlock key, refer to [this](http://syncfusion.com/kb/2326) article.
 
 
-### Licensed Expired! What to do?
+## The license has expired! What should I do?
 
-#### Problem
+### Problem
 
-**Error Message:** Your license for Syncfusion Essential Studio for {platform} has been expired since {date}. Please renew your subscription and try again
+**Error Message:** Your license for Syncfusion Essential Studio for WinUI has been expired since {date}. Please renew your subscription and try again.
 
 **Online Installer**
 
 ![Warning Message](Errors/Installation_Errors_img2.png)
 
-#### Reason
+### Reason
 
-This error message will be shown when your license has been expired.
+This error message will appear if your license has expired.
 
-#### Suggested solution.
-
-Renew the subscription [here](https://www.syncfusion.com/sales/products) or contact our sales team at <salessupport@syncfusion.com>. Also, you can continue the 30 days trial after your license has been expired.
+### Suggested solution.
 
 
-### Not a Valid license holder?
+You can renew your subscription [here](https://www.syncfusion.com/sales/products), or you can contact our sales team at <salessupport@syncfusion.com>. You can also extend the 30-day trial period after your license has expired.
 
-#### Problem
 
-**Error Message:** Sorry, we are unable to find a valid license for Essential Studio for {platform} under your account.
+## Not a Valid license holder?
+
+### Problem
+
+**Error Message:** Sorry, we are unable to find a valid license for Essential Studio for WinUI under your account.
 
 ![Alert Message](Errors/Installation_Errors_img3.PNG)
 
-#### Reason
+### Reason
 
-The possible reasons for this error are:
+The following are possible causes of this error:
 
-* When your trial expired
-* When you don't have License or trial
+* When your trial period expired
+* When you don't have a license or an active trial
 
-#### Suggested solution.
+### Suggested solution.
 
-Renew the subscription [here](https://www.syncfusion.com/sales/products) or contact our sales team at <salessupport@syncfusion.com>.
+You can renew your subscription [here](https://www.syncfusion.com/sales/products), or you can contact our sales team at <salessupport@syncfusion.com>.
 
-### Unable to find a license or trial?
+## Can't find a license or a trial?
 
-#### Problem
+### Problem
 
-**Error Message:** Sorry, we are unable to find a license or trial for Essential Studio for {platform} under your account.
+**Error Message:** Sorry, we are unable to find a license or trial for Essential Studio for WinUI under your account.
 
 ![Warning Message](Errors/Installation_Errors_img6.PNG)
 
-#### Reason
+### Reason
 
-This is due to one of the following reasons:
+The following are possible causes of this error:
 
-* You are not the license holder of your license. 
-* Your account administrator has not assigned a license to your account yet. Please contact your account administrator to have a license assigned to you or contact us via email at <clientrelations@syncfusion.com>.
+* You are not the license holder of your license.
+* Your account administrator has not yet assigned you a license. Please contact your account administrator or send an email to <clientrelations@syncfusion.com> to have a license assigned to you.
 
-#### Suggested solution.
+### Suggested solution.
 
-Please check your subscription [here](https://www.syncfusion.com/sales/products) or contact our sales team at <salessupport@syncfusion.com>. Also, you can continue the 30 days trial.
+Please check your subscription status [here](https://www.syncfusion.com/sales/products), or contact <salessupport@syncfusion.com>. You can also continue the 30-day trial period.
 
-### Could not install the installer due to another installation?
+## Unable to install because of another installation?
 
-#### Problem
+### Problem
 
-**Error Message:** Another installation is in progress. You cannot complete this installation without completing all other currently active installations. Click cancel to end this installer, or retry to attempt to install again.
+**Error Message:** Another installation is in progress. You cannot start this installation without completing all other currently active installations. Click cancel to end this installer or retry to attempt after currently active installation completed to install again.
 
 ![Warning Message](Errors/Installation_Errors_img4.png)
 
-#### Reason
+### Reason
 
-You are trying to install when another installation is already running in your machine. 
+You are trying to install when another installation is already running in your machine.
 
-#### Suggested solution.
+### Suggested solution.
 
-Open the Task Manager and kill the msiexec process and then continue the Syncfusion installation. If still the problem persists, restart the machine and try installing Syncfusion installer.
+Open and kill the msiexec process in the task manager and then continue to install Syncfusion. If the problem is still present, restart the computer and try Syncfusion installer. 
 
 1. Open the Windows Task Manager.
 
-2. Navigate to the Details tab.
+2. Browse the Details tab.
 
 3. Select the msiexec.exe and click **End task**.
 
 ![Task Manager](Errors/Installation_Errors_img5.png)
 
-### Could not install due to controlled folder access?
+## Unable to install due to restricted folder access?
 
-#### Problem
+### Problem
 
-##### Offline:
+#### Offline:
 
 **Error Message:** Controlled folder access seems to be enabled in your machine. The provided install or samples location (e.g., Public Documents) is protected by the controlled folder access settings.
 
 ![Warning Message](Errors/Installation_Errors_img7.png)
 
-##### Online:
+#### Online:
 
 **Error Message:** Controlled folder access seems to be enabled in your machine. The provided install, samples, or download location (e.g., Public Documents) is protected by the controlled folder access settings.
 
 ![Warning Message](Errors/Installation_Errors_img8.png)
 
-#### Reason
+### Reason
 
-Controlled folder access settings has been enabled in your machine. 
+You have enabled controlled folder access settings on your computer.
 
-#### Suggested solution.
+### Suggested solution.
 
-Choose some other location to install or disable the controlled folder access in your machine and then try installing.
-
-
+Select a different location to install or deactivate your machine's controlled folder access settings, and then try installing.
 
