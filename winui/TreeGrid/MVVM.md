@@ -36,6 +36,7 @@ public class ViewModel : NotificationObject
 {
     public ViewModel()
     {
+        this.Employees = this.GetEmployees();
         _selectedItem = Employees[1];
     }
 
@@ -51,6 +52,39 @@ public class ViewModel : NotificationObject
     {
         get { return _selectedItem; }
         set { _selectedItem = value; RaisePropertyChanged("SelectedItem"); }       
+    }
+	
+    public static ObservableCollection<Employee> GetEmployees()
+    {
+        ObservableCollection<Employee> childCollection1 = new ObservableCollection<Employee>();
+        ObservableCollection<Employee> childCollection2 = new ObservableCollection<Employee>();
+        ObservableCollection<Employee> childCollection3 = new ObservableCollection<Employee>();
+        ObservableCollection<Employee> employeeList = new ObservableCollection<Employee>();    
+
+        //Management
+        childCollection1.Add(new Employee() { FirstName = "Andrew", LastName = "Fuller", EmployeeID = 1001, Title = "Vice President" });
+        childCollection1.Add(new Employee() { FirstName = "Janet", LastName = "Leverling", EmployeeID = 1002, Title = "GM" });
+        childCollection1.Add(new Employee() { FirstName = "Steven", LastName = "Buchanan", EmployeeID = 1003, Title = "Manager" });
+
+        //Accounts
+        childCollection2.Add(new Employee() { FirstName = "Nancy", LastName = "Davolio", EmployeeID = 1004, Title = "Accounts Manager" });
+        childCollection2.Add(new Employee() { FirstName = "Margaret", LastName = "Peacock", EmployeeID = 1008, Title = "Accountant" });
+        childCollection2.Add(new Employee() { FirstName = "Michael", LastName = "Suyama", EmployeeID = 1009, Title = "Accountant" });
+        childCollection2.Add(new Employee() { FirstName = "Robert", LastName = "King", EmployeeID = 1010, Title = "Accountant" });
+
+        //Purchasing
+        childCollection3.Add(new Employee() { FirstName = "Pamela", LastName = "Ansman-Wolfe", EmployeeID = 1018, Title = "Purchase Manager" });
+        childCollection3.Add(new Employee() { FirstName = "Michael", LastName = "Blythe", EmployeeID = 1019, Title = "Store Keeper" });
+        childCollection3.Add(new Employee() { FirstName = "DavId", LastName = "Campbell", EmployeeID = 1020, Title = "Store Keeper" });
+
+        //Sales
+        employeeList.Add(new Employee() { FirstName = "Laura", LastName = "Callahan", EmployeeID = 1005, Title = "Sales Manager", Children = childCollection1 });
+        employeeList.Add(new Employee() { FirstName = "Anne", LastName = "Dodsworth", EmployeeID = 1011, Title = "Sales Representative", Children = childCollection2 });
+
+        //Purchasing
+        employeeList.Add(new Employee() { FirstName = "Pamela", LastName = "Ansman-Wolfe", EmployeeID = 1018, Title = "Purchase Manager", Children= childCollection3 });
+
+        return employeeList;
     }
 }
 {% endhighlight %}
@@ -94,6 +128,7 @@ public class ViewModel
 {
     public ViewModel()
     {
+        this.Employees = this.GetEmployees();
         rowDataCommand = new DelegateCommand(ChangeCanExecute);
     }
         
@@ -114,6 +149,13 @@ public class ViewModel
         }
     }
 
+    private ObservableCollection<Employee> _employees;
+    public ObservableCollection<Employee> Employees
+    {
+        get { return _employees; }
+        set { _employees = value; RaisePropertyChanged("Employees"); }
+    }
+
     /// <summary>
     /// Shown the selected record.
     /// </summary>   
@@ -127,6 +169,39 @@ public class ViewModel
             "\nEmployeeID - " + rowDataContent.EmployeeID +
             "\nTitle - " + rowDataContent.Title);
         await showDialog.ShowAsync();
+    }
+	
+    public static ObservableCollection<Employee> GetEmployees()
+    {
+        ObservableCollection<Employee> childCollection1 = new ObservableCollection<Employee>();
+        ObservableCollection<Employee> childCollection2 = new ObservableCollection<Employee>();
+        ObservableCollection<Employee> childCollection3 = new ObservableCollection<Employee>();
+        ObservableCollection<Employee> employeeList = new ObservableCollection<Employee>();    
+
+        //Management
+        childCollection1.Add(new Employee() { FirstName = "Andrew", LastName = "Fuller", EmployeeID = 1001, Title = "Vice President" });
+        childCollection1.Add(new Employee() { FirstName = "Janet", LastName = "Leverling", EmployeeID = 1002, Title = "GM" });
+        childCollection1.Add(new Employee() { FirstName = "Steven", LastName = "Buchanan", EmployeeID = 1003, Title = "Manager" });
+
+        //Accounts
+        childCollection2.Add(new Employee() { FirstName = "Nancy", LastName = "Davolio", EmployeeID = 1004, Title = "Accounts Manager" });
+        childCollection2.Add(new Employee() { FirstName = "Margaret", LastName = "Peacock", EmployeeID = 1008, Title = "Accountant" });
+        childCollection2.Add(new Employee() { FirstName = "Michael", LastName = "Suyama", EmployeeID = 1009, Title = "Accountant" });
+        childCollection2.Add(new Employee() { FirstName = "Robert", LastName = "King", EmployeeID = 1010, Title = "Accountant" });
+
+        //Purchasing
+        childCollection3.Add(new Employee() { FirstName = "Pamela", LastName = "Ansman-Wolfe", EmployeeID = 1018, Title = "Purchase Manager" });
+        childCollection3.Add(new Employee() { FirstName = "Michael", LastName = "Blythe", EmployeeID = 1019, Title = "Store Keeper" });
+        childCollection3.Add(new Employee() { FirstName = "DavId", LastName = "Campbell", EmployeeID = 1020, Title = "Store Keeper" });
+
+        //Sales
+        employeeList.Add(new Employee() { FirstName = "Laura", LastName = "Callahan", EmployeeID = 1005, Title = "Sales Manager", Children = childCollection1 });
+        employeeList.Add(new Employee() { FirstName = "Anne", LastName = "Dodsworth", EmployeeID = 1011, Title = "Sales Representative", Children = childCollection2 });
+
+        //Purchasing
+        employeeList.Add(new Employee() { FirstName = "Pamela", LastName = "Ansman-Wolfe", EmployeeID = 1018, Title = "Purchase Manager", Children= childCollection3 });
+
+        return employeeList;
     }
 }
 
@@ -162,6 +237,7 @@ public class ViewModel : NotificationObject
 {
     public ViewModel()
     {
+        this.Employees = this.GetEmployees();
         titleList = new ObservableCollection<string>();
         titleList.Add("Store Keeper");
         titleList.Add("Purchase Manager");
@@ -184,6 +260,46 @@ public class ViewModel : NotificationObject
             titleList = value;
             RaisePropertyChanged("TitleList");
         }
+    }
+
+    private ObservableCollection<Employee> _employees;
+    public ObservableCollection<Employee> Employees
+    {
+        get { return _employees; }
+        set { _employees = value; RaisePropertyChanged("Employees"); }
+    }
+
+    public static ObservableCollection<Employee> GetEmployees()
+    {
+        ObservableCollection<Employee> childCollection1 = new ObservableCollection<Employee>();
+        ObservableCollection<Employee> childCollection2 = new ObservableCollection<Employee>();
+        ObservableCollection<Employee> childCollection3 = new ObservableCollection<Employee>();
+        ObservableCollection<Employee> employeeList = new ObservableCollection<Employee>();    
+
+        //Management
+        childCollection1.Add(new Employee() { FirstName = "Andrew", LastName = "Fuller", EmployeeID = 1001, Title = "Vice President" });
+        childCollection1.Add(new Employee() { FirstName = "Janet", LastName = "Leverling", EmployeeID = 1002, Title = "GM" });
+        childCollection1.Add(new Employee() { FirstName = "Steven", LastName = "Buchanan", EmployeeID = 1003, Title = "Manager" });
+
+        //Accounts
+        childCollection2.Add(new Employee() { FirstName = "Nancy", LastName = "Davolio", EmployeeID = 1004, Title = "Accounts Manager" });
+        childCollection2.Add(new Employee() { FirstName = "Margaret", LastName = "Peacock", EmployeeID = 1008, Title = "Accountant" });
+        childCollection2.Add(new Employee() { FirstName = "Michael", LastName = "Suyama", EmployeeID = 1009, Title = "Accountant" });
+        childCollection2.Add(new Employee() { FirstName = "Robert", LastName = "King", EmployeeID = 1010, Title = "Accountant" });
+
+        //Purchasing
+        childCollection3.Add(new Employee() { FirstName = "Pamela", LastName = "Ansman-Wolfe", EmployeeID = 1018, Title = "Purchase Manager" });
+        childCollection3.Add(new Employee() { FirstName = "Michael", LastName = "Blythe", EmployeeID = 1019, Title = "Store Keeper" });
+        childCollection3.Add(new Employee() { FirstName = "DavId", LastName = "Campbell", EmployeeID = 1020, Title = "Store Keeper" });
+
+        //Sales
+        employeeList.Add(new Employee() { FirstName = "Laura", LastName = "Callahan", EmployeeID = 1005, Title = "Sales Manager", Children = childCollection1 });
+        employeeList.Add(new Employee() { FirstName = "Anne", LastName = "Dodsworth", EmployeeID = 1011, Title = "Sales Representative", Children = childCollection2 });
+
+        //Purchasing
+        employeeList.Add(new Employee() { FirstName = "Pamela", LastName = "Ansman-Wolfe", EmployeeID = 1018, Title = "Purchase Manager", Children= childCollection3 });
+
+        return employeeList;
     }
 }
 
@@ -231,6 +347,7 @@ public class ViewModel : NotificationObject
 {
     public ViewModel()
     {
+        this.Employees = this.GetEmployees();
         titleList = new ObservableCollection<string>();
         titleList.Add("Store Keeper");
         titleList.Add("Purchase Manager");
@@ -253,6 +370,46 @@ public class ViewModel : NotificationObject
             titleList = value;
             RaisePropertyChanged("TitleList");
         }
+    }
+
+    private ObservableCollection<Employee> _employees;
+    public ObservableCollection<Employee> Employees
+    {
+        get { return _employees; }
+        set { _employees = value; RaisePropertyChanged("Employees"); }
+    }
+
+    public static ObservableCollection<Employee> GetEmployees()
+    {
+        ObservableCollection<Employee> childCollection1 = new ObservableCollection<Employee>();
+        ObservableCollection<Employee> childCollection2 = new ObservableCollection<Employee>();
+        ObservableCollection<Employee> childCollection3 = new ObservableCollection<Employee>();
+        ObservableCollection<Employee> employeeList = new ObservableCollection<Employee>();    
+
+        //Management
+        childCollection1.Add(new Employee() { FirstName = "Andrew", LastName = "Fuller", EmployeeID = 1001, Title = "Vice President" });
+        childCollection1.Add(new Employee() { FirstName = "Janet", LastName = "Leverling", EmployeeID = 1002, Title = "GM" });
+        childCollection1.Add(new Employee() { FirstName = "Steven", LastName = "Buchanan", EmployeeID = 1003, Title = "Manager" });
+
+        //Accounts
+        childCollection2.Add(new Employee() { FirstName = "Nancy", LastName = "Davolio", EmployeeID = 1004, Title = "Accounts Manager" });
+        childCollection2.Add(new Employee() { FirstName = "Margaret", LastName = "Peacock", EmployeeID = 1008, Title = "Accountant" });
+        childCollection2.Add(new Employee() { FirstName = "Michael", LastName = "Suyama", EmployeeID = 1009, Title = "Accountant" });
+        childCollection2.Add(new Employee() { FirstName = "Robert", LastName = "King", EmployeeID = 1010, Title = "Accountant" });
+
+        //Purchasing
+        childCollection3.Add(new Employee() { FirstName = "Pamela", LastName = "Ansman-Wolfe", EmployeeID = 1018, Title = "Purchase Manager" });
+        childCollection3.Add(new Employee() { FirstName = "Michael", LastName = "Blythe", EmployeeID = 1019, Title = "Store Keeper" });
+        childCollection3.Add(new Employee() { FirstName = "DavId", LastName = "Campbell", EmployeeID = 1020, Title = "Store Keeper" });
+
+        //Sales
+        employeeList.Add(new Employee() { FirstName = "Laura", LastName = "Callahan", EmployeeID = 1005, Title = "Sales Manager", Children = childCollection1 });
+        employeeList.Add(new Employee() { FirstName = "Anne", LastName = "Dodsworth", EmployeeID = 1011, Title = "Sales Representative", Children = childCollection2 });
+
+        //Purchasing
+        employeeList.Add(new Employee() { FirstName = "Pamela", LastName = "Ansman-Wolfe", EmployeeID = 1018, Title = "Purchase Manager", Children= childCollection3 });
+
+        return employeeList;
     }
 }
 
@@ -289,13 +446,21 @@ public class ViewModel
 
     public ViewModel()
     {
-        SetSfTreeGridColumns();        	
+        SetSfTreeGridColumns();
+        this.Employees = this.GetEmployees();
     }
 
     public TreeGridColumns SfTreeGridColumns
     {
        get { return sfTreeGridColumns; }
        set { this.sfTreeGridColumns = value; }
+    }
+
+    private ObservableCollection<Employee> _employees;
+    public ObservableCollection<Employee> Employees
+    {
+        get { return _employees; }
+        set { _employees = value; RaisePropertyChanged("Employees"); }
     }
 
     /// <summary>
@@ -308,6 +473,39 @@ public class ViewModel
         sfTreeGridColumns.Add(new TreeGridTextColumn() { MappingName = "LastName", HeaderText = "Last Name" });
         sfTreeGridColumns.Add(new TreeGridTextColumn() { MappingName = "EmployeeID", HeaderText = "Employee ID", TextAlignment = TextAlignment.Right });
         sfTreeGridColumns.Add(new TreeGridTextColumn() { MappingName = "Title", HeaderText = "Title" });        
+    }
+
+    public static ObservableCollection<Employee> GetEmployees()
+    {
+        ObservableCollection<Employee> childCollection1 = new ObservableCollection<Employee>();
+        ObservableCollection<Employee> childCollection2 = new ObservableCollection<Employee>();
+        ObservableCollection<Employee> childCollection3 = new ObservableCollection<Employee>();
+        ObservableCollection<Employee> employeeList = new ObservableCollection<Employee>();
+
+        //Management
+        childCollection1.Add(new Employee() { FirstName = "Andrew", LastName = "Fuller", EmployeeID = 1001, Title = "Vice President" });
+        childCollection1.Add(new Employee() { FirstName = "Janet", LastName = "Leverling", EmployeeID = 1002, Title = "GM" });
+        childCollection1.Add(new Employee() { FirstName = "Steven", LastName = "Buchanan", EmployeeID = 1003, Title = "Manager" });
+
+        //Accounts
+        childCollection2.Add(new Employee() { FirstName = "Nancy", LastName = "Davolio", EmployeeID = 1004, Title = "Accounts Manager" });
+        childCollection2.Add(new Employee() { FirstName = "Margaret", LastName = "Peacock", EmployeeID = 1008, Title = "Accountant" });
+        childCollection2.Add(new Employee() { FirstName = "Michael", LastName = "Suyama", EmployeeID = 1009, Title = "Accountant" });
+        childCollection2.Add(new Employee() { FirstName = "Robert", LastName = "King", EmployeeID = 1010, Title = "Accountant" });
+
+        //Purchasing
+        childCollection3.Add(new Employee() { FirstName = "Pamela", LastName = "Ansman-Wolfe", EmployeeID = 1018, Title = "Purchase Manager" });
+        childCollection3.Add(new Employee() { FirstName = "Michael", LastName = "Blythe", EmployeeID = 1019, Title = "Store Keeper" });
+        childCollection3.Add(new Employee() { FirstName = "DavId", LastName = "Campbell", EmployeeID = 1020, Title = "Store Keeper" });
+
+        //Sales
+        employeeList.Add(new Employee() { FirstName = "Laura", LastName = "Callahan", EmployeeID = 1005, Title = "Sales Manager", Children = childCollection1 });
+        employeeList.Add(new Employee() { FirstName = "Anne", LastName = "Dodsworth", EmployeeID = 1011, Title = "Sales Representative", Children = childCollection2 });
+
+        //Purchasing
+        employeeList.Add(new Employee() { FirstName = "Pamela", LastName = "Ansman-Wolfe", EmployeeID = 1018, Title = "Purchase Manager", Children= childCollection3 });
+
+        return employeeList;
     }
 }
 
