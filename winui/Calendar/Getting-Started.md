@@ -304,6 +304,28 @@ sfCalendar.DisplayMode = CalendarDisplayMode.Month;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction)
 
+## Change navigation direction
+
+You can change the direction of navigation between months, years, decades and centuries views using the [`NavigationDirection`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_NavigationDirection) property. The default value of `NavigationDirection` property is `Vertical`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<calendar:SfCalendar x:Name="sfCalendar"
+                     NavigationDirection="Horizontal"
+                     />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfCalendar sfCalendar = new SfCalendar();
+sfCalendar.NavigationDirection = Orientation.Horizontal;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Navigation between views in horizontal direction in WinUI Calendar](Getting-Started_images/navigation-direction.gif)
+
 ## First day of week
 
 By default, Sunday is shown as the first day of the week. If you want to change the first day of week, use the [FirstDayOfWeek](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_FirstDayOfWeek) property value. The default value of `FirstDayOfWeek` property is `Sunday`.
