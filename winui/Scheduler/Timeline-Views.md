@@ -27,7 +27,7 @@ this.Schedule.TimelineViewSettings.TimeInterval = new System.TimeSpan(0, 120, 0)
 N>
 If you modify the timeInterval value (in minutes), you need to change the time labels format by setting the timeFormat value to hh:mm.
 
-## Change time interval size
+## Change time interval width
 
 You can customize the interval width of timeslots in the Timeline views by setting the [TimeIntervalSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html). This property will be applicable to all timeline views. By default, its value is 50 for the `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views and 150 for `TimelineMonth` view.
 
@@ -46,7 +46,7 @@ this.Schedule.TimelineViewSettings.TimeIntervalSize = 120;
 {% endhighlight %}
 {% endtabs %}
 
-![change-time-interval-size-in-winui-scheduler](TimelineViews_Images/adding-change-time-interval-size-in-winui-scheduler.png)
+![change-time-interval-width-in-winui-scheduler](TimelineViews_Images/adding-change-time-interval-width-in-winui-scheduler.png)
 
 ## Flexible working days and working hours
 
@@ -291,7 +291,7 @@ N>
 * The `TimeInterval` value will be set when the `MinimumAppointmentDuration` is greater than `TimeInterval` with lesser appointment duration.
 * All-day Appointment does not support `MinimumAppointmentDuration`.
 
-## Time text formatting
+## Time ruler text formatting
 
 You can customize the format for the labels mentioning the time by setting the [TimeRulerFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerFormat) property of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html) in the Scheduler. This property will not apply to the `TimelineMonth` view.
 
@@ -303,7 +303,7 @@ this.Schedule.TimelineViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 {% endhighlight %}
 {% endtabs %}
 
-![time-text-formatting-in-winui-scheduler](TimelineViews_Images/adding-time-text-formatting-in-winui-scheduler.png)
+![time-ruler-text-formatting-in-winui-scheduler](TimelineViews_Images/adding-time-ruler-text-formatting-in-winui-scheduler.png)
 
 ## View header
 

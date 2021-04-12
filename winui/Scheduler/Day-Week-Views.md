@@ -26,9 +26,9 @@ this.Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 120, 0);
 
 N> If you modify the timeInterval value (in minutes), you need to change the time labels format by setting the timeFormat value to hh:mm.
 
-## Change time interval size
+## Change time interval height
 
-You can customize the interval size of timeslots in a day, week, and workweek views by setting [TimeIntervalSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property of [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html).
+You can customize the interval height of timeslots in a day, week, and workweek views by setting [TimeIntervalSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property of [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -45,7 +45,7 @@ this.Schedule.DaysViewSettings.TimeIntervalSize = 120;
 {% endhighlight %}
 {% endtabs %}
 
-![change-time-interval-size-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-change-time-interval-size-in-winui-scheduler.png)
+![change-time-interval-height-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-change-time-interval-height-in-winui-scheduler.png)
 
 ## Flexible working days and working hours
 
@@ -265,7 +265,7 @@ N>
 *  The `TimeInterval` value will be set when the `MinimumAppointmentDuration` is greater than the `TimeInterval` with lesser appointment duration.
 * All-day Appointment does not support `MinimumAppointmentDuration`.
 
-## Time text formatting
+## Time ruler text formatting
 
 You can customize the format for the labels mentioning the time by setting the [TimeRulerFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerFormat) property of [DayViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) in Scheduler.
 
@@ -277,7 +277,7 @@ this.Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 {% endhighlight %}
 {% endtabs %}
 
-![time-text-formatting-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-time-text-formatting-in-winui-scheduler.png)
+![time-ruler-text-formatting-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-time-ruler-text-formatting-in-winui-scheduler.png)
 
 ## View header
 
