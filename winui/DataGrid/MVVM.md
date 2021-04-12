@@ -435,7 +435,7 @@ Refer to the following code example in which the `SfDataGridColumns` is popula
 
 {% tabs %}
 {% highlight c# %}
-public class ViewModel
+public class ViewModel : NotificationObject
 {
     private Columns sfDataGridColumns;
 
@@ -443,7 +443,7 @@ public class ViewModel
     {
         SetSfGridColumns();	
         _orders = new ObservableCollection<OrderInfo>();
-		this.GenerateOrders();        
+        this.GenerateOrders();        
     }
 
     private ObservableCollection<OrderInfo> _orders;
