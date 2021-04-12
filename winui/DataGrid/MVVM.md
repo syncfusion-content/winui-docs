@@ -34,6 +34,8 @@ public class ViewModel : NotificationObject
 {
     public ViewModel()
     {
+        _orders = new ObservableCollection<OrderInfo>();
+        this.GenerateOrders();
         _selectedItem = Orders[1];
     }
 
@@ -49,6 +51,22 @@ public class ViewModel : NotificationObject
     {
         get { return _selectedItem; }
         set { _selectedItem = value; RaisePropertyChanged("SelectedItem"); }      
+    }
+
+    private void GenerateOrders()
+    {
+        _orders.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
+        _orders.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "Mexico D.F."));
+        _orders.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "Mexico D.F."));
+        _orders.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));
+        _orders.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Lula"));
+        _orders.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
+        _orders.Add(new OrderInfo(1007, "Frederique Citeaux", "France", "BLONP", "Strasbourg"));
+        _orders.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"));
+        _orders.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"));
+        _orders.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"));
+        _orders.Add(new OrderInfo(1011, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
+        _orders.Add(new OrderInfo(1012, "Frederique Citeaux", "France", "BLONP", "Strasbourg"));
     }
 }
 {% endhighlight %}
@@ -79,13 +97,15 @@ public class ViewModel : NotificationObject
 {
     public ViewModel()
     {
+        _orders = new ObservableCollection<OrderInfo>();
+        this.GenerateOrders();
         _selectedItems = new ObservableCollection<object>();
         _selectedItems.Add(Orders[3]);
         _selectedItems.Add(Orders[6]);
         _selectedItems.Add(Orders[9]);
         _selectedItems.Add(Orders[12]);
     }
-	
+
     private ObservableCollection<OrderInfo> _orders;
     public ObservableCollection<OrderInfo> Orders
     {
@@ -98,6 +118,22 @@ public class ViewModel : NotificationObject
     {
         get { return _selectedItems; }
         set { _selectedItems = value; RaisePropertyChanged("SelectedItems"); }      
+    }
+
+    private void GenerateOrders()
+    {
+        _orders.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
+        _orders.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "Mexico D.F."));
+        _orders.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "Mexico D.F."));
+        _orders.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));
+        _orders.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Lula"));
+        _orders.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
+        _orders.Add(new OrderInfo(1007, "Frederique Citeaux", "France", "BLONP", "Strasbourg"));
+        _orders.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"));
+        _orders.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"));
+        _orders.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"));
+        _orders.Add(new OrderInfo(1011, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
+        _orders.Add(new OrderInfo(1012, "Frederique Citeaux", "France", "BLONP", "Strasbourg"));
     }
 }
 {% endhighlight %}
@@ -139,6 +175,8 @@ public class ViewModel
 {
     public ViewModel()
     {
+        _orders = new ObservableCollection<OrderInfo>();
+        this.GenerateOrders();
         rowDataCommand = new DelegateCommand(ChangeCanExecute);
     }
         
@@ -159,6 +197,13 @@ public class ViewModel
         }
     }
 
+    private ObservableCollection<OrderInfo> _orders;
+    public ObservableCollection<OrderInfo> Orders
+    {
+        get { return _orders; }
+        set { _orders = value; RaisePropertyChanged("Orders"); }
+    }
+
     /// <summary>
     /// Shown the selected record.
     /// </summary>   
@@ -173,6 +218,22 @@ public class ViewModel
             "\nCountry - " + rowDataContent.Country +
             "\nShipCity - " + rowDataContent.ShipCity);                
         await showDialog.ShowAsync();
+    }
+
+    private void GenerateOrders()
+    {
+        _orders.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
+        _orders.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "Mexico D.F."));
+        _orders.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "Mexico D.F."));
+        _orders.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));
+        _orders.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Lula"));
+        _orders.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
+        _orders.Add(new OrderInfo(1007, "Frederique Citeaux", "France", "BLONP", "Strasbourg"));
+        _orders.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"));
+        _orders.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"));
+        _orders.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"));
+        _orders.Add(new OrderInfo(1011, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
+        _orders.Add(new OrderInfo(1012, "Frederique Citeaux", "France", "BLONP", "Strasbourg"));
     }
 }
 
@@ -208,6 +269,8 @@ public class ViewModel : NotificationObject
 {
     public ViewModel()
     {
+        _orders = new ObservableCollection<OrderInfo>();
+        this.GenerateOrders();
         countryList = new ObservableCollection<string>();
         countryList.Add("UK");
         countryList.Add("Sweden");
@@ -217,6 +280,13 @@ public class ViewModel : NotificationObject
         countryList.Add("France");
         countryList.Add("German");
         countryList.Add("Mexico");
+    }
+
+    private ObservableCollection<OrderInfo> _orders;
+    public ObservableCollection<OrderInfo> Orders
+    {
+        get { return _orders; }
+        set { _orders = value; RaisePropertyChanged("Orders"); }
     }
 
     private ObservableCollection<string> countryList; 
@@ -231,6 +301,22 @@ public class ViewModel : NotificationObject
             countryList = value;
             RaisePropertyChanged("CountryList");
         }
+    }
+
+    private void GenerateOrders()
+    {
+        _orders.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
+        _orders.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "Mexico D.F."));
+        _orders.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "Mexico D.F."));
+        _orders.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));
+        _orders.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Lula"));
+        _orders.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
+        _orders.Add(new OrderInfo(1007, "Frederique Citeaux", "France", "BLONP", "Strasbourg"));
+        _orders.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"));
+        _orders.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"));
+        _orders.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"));
+        _orders.Add(new OrderInfo(1011, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
+        _orders.Add(new OrderInfo(1012, "Frederique Citeaux", "France", "BLONP", "Strasbourg"));
     }
 }
 
@@ -276,6 +362,8 @@ public class ViewModel : NotificationObject
 {
     public ViewModel()
     {
+        _orders = new ObservableCollection<OrderInfo>();
+        this.GenerateOrders();
         countryList = new ObservableCollection<string>();
         countryList.Add("UK");
         countryList.Add("Sweden");
@@ -285,6 +373,13 @@ public class ViewModel : NotificationObject
         countryList.Add("France");
         countryList.Add("German");
         countryList.Add("Mexico");
+    }
+
+    private ObservableCollection<OrderInfo> _orders;
+    public ObservableCollection<OrderInfo> Orders
+    {
+        get { return _orders; }
+        set { _orders = value; RaisePropertyChanged("Orders"); }
     }
 
     private ObservableCollection<string> countryList; 
@@ -299,6 +394,22 @@ public class ViewModel : NotificationObject
             countryList = value;
             RaisePropertyChanged("CountryList");
         }
+    }
+
+    private void GenerateOrders()
+    {
+        _orders.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
+        _orders.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "Mexico D.F."));
+        _orders.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "Mexico D.F."));
+        _orders.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));
+        _orders.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Lula"));
+        _orders.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
+        _orders.Add(new OrderInfo(1007, "Frederique Citeaux", "France", "BLONP", "Strasbourg"));
+        _orders.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"));
+        _orders.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"));
+        _orders.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"));
+        _orders.Add(new OrderInfo(1011, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
+        _orders.Add(new OrderInfo(1012, "Frederique Citeaux", "France", "BLONP", "Strasbourg"));
     }
 }
 
@@ -330,7 +441,16 @@ public class ViewModel
 
     public ViewModel()
     {
-        SetSfGridColumns();        	
+        SetSfGridColumns();	
+        _orders = new ObservableCollection<OrderInfo>();
+		this.GenerateOrders();        
+    }
+
+    private ObservableCollection<OrderInfo> _orders;
+    public ObservableCollection<OrderInfo> Orders
+    {
+        get { return _orders; }
+        set { _orders = value; RaisePropertyChanged("Orders"); }
     }
 
     public Columns SfDataGridColumns
@@ -350,6 +470,22 @@ public class ViewModel
         sfDataGridColumns.Add(new GridTextColumn() { MappingName = "CustomerName", HeaderText = "Customer Name" });
         sfDataGridColumns.Add(new GridTextColumn() { MappingName = "ShipCity", HeaderText = "Ship City" });
         sfDataGridColumns.Add(new GridTextColumn() { MappingName = "Country" });
+    }
+
+    private void GenerateOrders()
+    {
+        _orders.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
+        _orders.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "Mexico D.F."));
+        _orders.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "Mexico D.F."));
+        _orders.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));
+        _orders.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Lula"));
+        _orders.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
+        _orders.Add(new OrderInfo(1007, "Frederique Citeaux", "France", "BLONP", "Strasbourg"));
+        _orders.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"));
+        _orders.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"));
+        _orders.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"));
+        _orders.Add(new OrderInfo(1011, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
+        _orders.Add(new OrderInfo(1012, "Frederique Citeaux", "France", "BLONP", "Strasbourg"));
     }
 }
 {% endhighlight %}
