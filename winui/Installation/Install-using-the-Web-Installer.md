@@ -12,7 +12,7 @@ documentation: ug
 
 ## Overview
 
-For the Essential Studio WinUI platform, Syncfusion offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer here. The platforms listed below are included in the Essential Studio Web Installer. 
+For the Essential Studio WinUI platform, Syncfusion offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer [here](https://www.syncfusion.com/downloads/latest-version). The platforms listed below are included in the Essential Studio Web Installer. 
 
 
 **Web (Essential JS 2)**
@@ -61,7 +61,7 @@ The steps below show how to install Essential Studio WinUI Web Installer.
     
 2. 	The Syncfusion WinUI Web Installer's welcome wizard will be displayed. Click the Next button.
 
-   ![Welcome wizard](WebInstaller/Step-by-Step-Installation_img2.png)
+    ![Welcome wizard](WebInstaller/Step-by-Step-Installation_img2.png)
 
   
 3.  The Platform Selection Wizard will appear. From the **Available** tab, select the platforms to be installed. Select the **Install All** checkbox to install all platforms. Click the Next button.
@@ -101,9 +101,10 @@ The steps below show how to install Essential Studio WinUI Web Installer.
 	
 	**Additional settings**
 	
-    * Select the **Install Demos** check box to install Syncfusion samples, or leave the check box clear, when you do not want to install Syncfusion samples.
-    * Select the **Create Desktop Shortcut** checkbox to create the desktop shortcut for Syncfusion Control Panel.
-	* Select the **Create Start Menu Shortcut** checkbox to create the start menu shortcut for Syncfusion Control Panel.
+    * Select the **Install Demos** check box to install Syncfusion samples, or leave the check box unchecked, if you do not want to install Syncfusion samples.
+    * Check the **Create Desktop Shortcut** checkbox to add a desktop shortcut for Syncfusion Control Panel.
+    * Check the **Create Start Menu Shortcut** checkbox to add a shortcut to the start menu for Syncfusion Control Panel.
+
 
 
 8.  After reading the License Terms and Conditions, check the **I agree to the License Terms and Privacy Policy** check box. Click the Next button.

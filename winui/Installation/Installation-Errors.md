@@ -16,7 +16,7 @@ This article describes the most common installation errors, as well as the cause
 * [Not a Valid license holder?](https://help.syncfusion.com/winui/installation/installation-errors#not-a-valid-license-holder)
 * [Can't find a license or a trial?](https://help.syncfusion.com/winui/installation/installation-errors#cant-find-a-license-or-a-trial)
 * [Unable to install because of another installation?](https://help.syncfusion.com/winui/installation/installation-errors#unable-to-install-because-of-another-installation)
-* [Unable to install due to restricted folder access?](http://help.syncfusion.com/winui/installation/installation-errors#unable-to-install-due-to-restricted-folder-access)
+* [Unable to install due to controlled folder access](http://help.syncfusion.com/winui/installation/installation-errors#unable-to-install-due-to-controlled-folder-access)
 
 ## Couldn't use the Trial key to unlock the Licensed installer?
 
@@ -49,8 +49,7 @@ Only a licensed unlock key can unlock a licensed installer. So, to unlock the Li
 
 This error message will appear if your license has expired.
 
-### Suggested solution.
-
+### Suggested solution
 
 You can renew your subscription [here](https://www.syncfusion.com/sales/products), or you can contact our sales team at <salessupport@syncfusion.com>. You can also extend the 30-day trial period after your license has expired.
 
@@ -70,7 +69,7 @@ The following are possible causes of this error:
 * When your trial period expired
 * When you don't have a license or an active trial
 
-### Suggested solution.
+### Suggested solution
 
 You can renew your subscription [here](https://www.syncfusion.com/sales/products), or you can contact our sales team at <salessupport@syncfusion.com>.
 
@@ -89,7 +88,7 @@ The following are possible causes of this error:
 * You are not the license holder of your license.
 * Your account administrator has not yet assigned you a license. Please contact your account administrator or send an email to <clientrelations@syncfusion.com> to have a license assigned to you.
 
-### Suggested solution.
+### Suggested solution
 
 Please check your subscription status [here](https://www.syncfusion.com/sales/products), or contact <salessupport@syncfusion.com>. You can also continue the 30-day trial period.
 
@@ -105,7 +104,7 @@ Please check your subscription status [here](https://www.syncfusion.com/sales/pr
 
 You are trying to install when another installation is already running in your machine.
 
-### Suggested solution.
+### Suggested solution
 
 Open and kill the msiexec process in the task manager and then continue to install Syncfusion. If the problem is still present, restart the computer and try Syncfusion installer. 
 
@@ -117,7 +116,7 @@ Open and kill the msiexec process in the task manager and then continue to insta
 
 ![Task Manager](Errors/Installation_Errors_img5.png)
 
-## Unable to install due to restricted folder access?
+## Unable to install due to controlled folder access
 
 ### Problem
 
@@ -137,7 +136,7 @@ Open and kill the msiexec process in the task manager and then continue to insta
 
 You have enabled controlled folder access settings on your computer.
 
-### Suggested solution.
+### Suggested solution
 
 Select a different location to install or deactivate your machine's controlled folder access settings, and then try installing.
 
