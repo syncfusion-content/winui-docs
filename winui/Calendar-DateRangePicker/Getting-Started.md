@@ -167,7 +167,7 @@ private void SfCalendarDateRangePicker_SelectedDateChanged(object sender, Select
 {% endtabs %}
 
 ## Restrict date range selection
-You can restrict users to select date range within specified minimum and maximum dates, or disable dates by setting blackoutdates or by setting selection range duration.
+You can restrict users to select date range within specified minimum and maximum dates, or disable dates by setting blackout dates or by setting selection range duration.
 
 ## Navigate in dropdown calendar
-You can navigate between month, year, decade and century views in dropdown calendar fo `Calendar DateRangePicker` control and even restrict navigation and range selection within specific views.
+You can navigate between month, year, decade and century views in dropdown calendar of `Calendar DateRangePicker` control and even restrict navigation and range selection within specific views.
