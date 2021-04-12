@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localize the WinUI Calendar control | Syncfusion
-description: This section describes about how to localize the Calendar (SfCalendar) control.
+description: This section describes about how to localize the Calendar (SfCalendar) control into WinUI application.
 platform: WinUI
 control: SfCalendar
 documentation: ug
