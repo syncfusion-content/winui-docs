@@ -59,3 +59,5 @@ sfCalendar.NavigationDirection = Orientation.Horizontal;
 {% endtabs %}
 
 ![Navigation between views in horizontal direction in WinUI Calendar](Getting-Started_images/navigation-direction.gif)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction)
