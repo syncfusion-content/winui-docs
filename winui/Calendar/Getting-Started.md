@@ -306,7 +306,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change navigation direction
 
-You can change the direction of navigation between months, years, decades and centuries views using the [`NavigationDirection`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_NavigationDirection) property. The default value of `NavigationDirection` property is `Vertical`.
+You can change the direction of navigation animation between months, years, decades and centuries views using the [`NavigationDirection`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_NavigationDirection) property. The default value of `NavigationDirection` property is `Vertical`.
 
 {% tabs %}
 {% highlight xaml %}
