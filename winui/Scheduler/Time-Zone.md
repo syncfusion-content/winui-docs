@@ -1160,9 +1160,9 @@ UTC + 14:00
 
 ## Create appointments in different time zones
 
-You can create appointments at different time zones using the `StartTimeZone` and `EndTimeZone` properties of `ScheduleAppointment.` An appointment’s start time and end time are calculated based on the given time zone information for the start time and end time. You can set different time zones to the `StartTimeZone` and `EndTimeZone` properties.
+You can create appointments at different time zones using the [StartTimeZone](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_StartTimeZone) and [EndTimeZone](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_EndTimeZone) properties of [ScheduleAppointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html). An appointment’s start time and end time are calculated based on the given time zone information for the start time and end time. You can set different time zones to the `StartTimeZone` and `EndTimeZone` properties.
 
-You can use the `StartTime` and `EndTime` properties of `ScheduleAppointment` to get the exact start time and end time of an appointment. By using the `ActualStartTime` and `ActualEndTime` properties, you can get the exact appointment rendering time.
+You can use the [StartTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_StartTime) and [EndTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_EndTime) properties of [ScheduleAppointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) to get the exact start time and end time of an appointment. By using the [ActualStartTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_ActualStartTime) and [ActualEndTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_ActualEndTime) properties, you can get the exact appointment rendering time.
 
 {% tabs %}	
 {% highlight c# %}
@@ -1200,7 +1200,7 @@ You can display the appointments based on the client’s local time zone in the 
 
 ## Display appointments based on Scheduler time zone
 
-You can set the specific time zone to schedule using the `TimeZone` property of scheduler. In this scenario, the appointments will be displayed in UTC time when the `StartTimeZone` and `EndTimeZone` properties of `ScheduleAppointment` are set to null. The appointments will be displayed in UTC time based on the given scheduler time zone.
+You can set the specific time zone to schedule using the [TimeZone](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_TimeZone) property of scheduler. In this scenario, the appointments will be displayed in UTC time when the [StartTimeZone](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_StartTimeZone) and [EndTimeZone](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_EndTimeZone) properties of [ScheduleAppointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) are set to null. The appointments will be displayed in UTC time based on the given scheduler time zone.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1216,7 +1216,7 @@ this.Schedule.TimeZone = "Central America Standard Time";
 
 ## Display appointments at same time everywhere regardless of client’s time zone
 
-You can display appointments at the same time everywhere without considering the time zone when you set the `TimeZone` property of scheduler, the `StartTimeZone,` and `EndTimeZone` properties of `ScheduleAppointment` to null. The appointments will be displayed based on the given `StartTime` and `EndTime` of appointments everywhere without considering the time zone.
+You can display appointments at the same time everywhere without considering the time zone when you set the [TimeZone](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_TimeZone) property of scheduler, the [StartTimeZone](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_StartTimeZone), and [EndTimeZone](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_EndTimeZone) properties of [ScheduleAppointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) to null. The appointments will be displayed based on the given `StartTime` and `EndTime` of appointments everywhere without considering the time zone.
 
 ## Updating StartTime and EndTime after drag and drop appointment based on time zone.
 
