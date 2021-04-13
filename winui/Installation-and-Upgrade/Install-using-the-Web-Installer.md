@@ -9,6 +9,7 @@ documentation: ug
 
 # Installation using Web Installer
 
+You can refer to the [**Download**](https://help.syncfusion.com/winui/installation-and-upgrade/download) section to learn how to get the WinUI trial or licensed installer.
 
 ## Overview
 
@@ -52,7 +53,7 @@ For the Essential Studio WinUI platform, Syncfusion offers a Web Installer. This
 
 The steps below show how to install Essential Studio WinUI Web Installer.
 
-1.  Open the Syncfusion Essential Studio WinUI Web Installer file by double-clicking it. The Installer Wizard automatically opens and extracts the package.
+1.  Open the Syncfusion Essential Studio WinUI Web Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 
     ![Installer Extraction Wizard](WebInstaller/Step-by-Step-Installation_img1.png)
 
@@ -64,9 +65,17 @@ The steps below show how to install Essential Studio WinUI Web Installer.
     ![Welcome wizard](WebInstaller/Step-by-Step-Installation_img2.png)
 
   
-3.  The Platform Selection Wizard will appear. From the **Available** tab, select the platforms to be installed. Select the **Install All** checkbox to install all platforms. Click the Next button.
+3.  The Platform Selection Wizard will appear. From the **Available** tab, select the platforms to be installed. Select the **Install All** checkbox to install all platforms. 
     
+	**Available**
+	
 	![Platform Selection wizard Available](WebInstaller/Step-by-Step-Installation_img3.png)
+	
+	From the **Installed** tab, you can also choose which platforms to uninstall in the same version. Click the Next button.
+	
+	**Installed**
+	
+    ![Platform Selection wizard Installed](WebInstaller/Step-by-Step-Installation_img4.png)
 	
 	I> If the required software for the selected platform isn't already installed, the **Additional Software Required** alert will appear. You can, however, continue the installation and install the necessary software later.
 	
@@ -75,7 +84,7 @@ The steps below show how to install Essential Studio WinUI Web Installer.
 	![Additional Software Alert](WebInstaller/Step-by-Step-Installation_img5.png)
 		
 	
-4.	If previous version(s) installed for the selected platforms, then Uninstall previous version wizard will be displayed. Here you can view the list of installed previous versions for the selected platforms. Select **Uninstall All** checkbox to select all the versions. Click Next.
+4.	If previous version(s) for the selected platforms are installed, the Uninstall previous version wizard will be displayed. You can see the list of previously installed versions for the platforms you've chosen here. To remove all versions, check the **Uninstall All** checkbox. Click the Next button.
 
 	![Existing Version for install](WebInstaller/Step-by-Step-Installation_img20.png)
 	
@@ -87,13 +96,12 @@ The steps below show how to install Essential Studio WinUI Web Installer.
 	![Existing Version for install](WebInstaller/Step-by-Step-Installation_img21.png)
 	
 	
-6. 	The Confirmation Wizard will appear. You can view and modify the list of platforms that will be installed from this page.
+6. 	The Confirmation Wizard will appear with the list of products to be installed/uninstalled. You can view and modify the list of platforms that will be installed and uninstalled from this page.
 
-    ![Confirmation for install/uninstall](WebInstaller/Step-by-Step-Installation_img15.png)
+    ![Downaload and Installation size install/uninstall](WebInstaller/Step-by-Step-Installation_img16.png)
 	
 	N> By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation
 	
-	![Downaload and Installation size install/uninstall](WebInstaller/Step-by-Step-Installation_img16.png)
 
 7.  The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a platform-by-platform basis. Click Next to install with the default settings.
 
@@ -129,76 +137,68 @@ The steps below show how to install Essential Studio WinUI Web Installer.
 
     ![Control Panel](WebInstaller/Step-by-Step-Installation_img19.png)
 	
-	N> Starting with the version v18.1 (2020 Volume 1 release), Syncfusion started providing separate entry in windows control panel for Essential Studio. 
 	
 	
 ## Uninstallation
 
-Syncfusion provides the option to uninstall platforms of the same version directly from the Web Installer application. Select the platforms to be uninstalled from the list, and Web Installer will uninstall them one by one.
+Syncfusion WinUI installer can be uninstalled in two ways
 
-The steps below show how to uninstall Essential Studio Platform using Web Installer.
+    -  Uninstall the WinUI using the Syncfusion WinUI web installer
+    -  Uninstall the WinUI from Windows Control Panel
 
-1.  Open the Syncfusion Essential Studio Platform WinUI Online Installer file by double-clicking it. The Installer Wizard automatically opens and extracts the package
+1.  Follow either one of the option below to uninstall Syncfusion Essential Studio WinUI installer.
+  
+    **Option 1: Uninstall the WinUI using the Syncfusion WinUI web installer**
+
+    Syncfusion provides the option to uninstall platforms of the same version directly from the Web Installer application. Select the platforms to be uninstalled from the list, and Web Installer will uninstall them one by one.
+
+    Open the Syncfusion Essential Studio Platform WinUI Online Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
 
     ![Installer Extraction Wizard uninstall](WebInstaller/Step-by-Step-Installation_img1.png)
 	
-2.  The Syncfusion WinUI Web Installer's welcome wizard will be displayed. Click the Next button
-
+    The Syncfusion WinUI Web Installer's welcome wizard will be displayed. Click the Next button
+	
     ![Welcome wizard uninstall](WebInstaller/Step-by-Step-Installation_img2.png)
-   
-3.  The Platform Selection Wizard will appear. From the Installed tab, select the platforms to be uninstalled. To select all platforms, check the **Uninstall All** checkbox. Click the Next button.
+	
+	
+    **Option 2: Uninstall the WinUI from Windows Control Panel**  
+	
+	You can uninstall all the installed platforms by selecting the **Syncfusion Essential Studio {version}** entry (element 1 in the below screenshot) from the Windows control panel, or you can uninstall WinUI alone by selecting the **Syncfusion Essential Studio for WinUI {version}** entry (element 2 in the below screenshot) from the Windows control panel.
+
+    ![Control Panel](WebInstaller/Step-by-Step-Installation_img22.png)
+	
+	N> If the **Syncfusion Essential Studio for WinUI {version}** entry is selected from the Windows control panel, the Syncfusion Essential Studio WinUI alone will be removed and the below default MSI uninstallation window will be displayed.
+	
+	**Uninstalling WinUI alone**
+	
+	![MSI entry](WebInstaller/Step-by-Step-Installation_img23.png)
+
+2.  The Platform Selection Wizard will appear. From the **Installed** tab, select the platforms to be uninstalled. To select all platforms, check the **Uninstall All** checkbox. Click the Next button.
     
+	**Installed**
+	
 	![Platform Selection wizard Installed](WebInstaller/Step-by-Step-Installation_img4.png)
 	
-4. 	The Confirmation Wizard will appear. You can view and modify the list of platforms that will be uninstalled from this page. Uninstall by clicking the Uninstall button
-
-    ![Confirmation for uninstall](WebInstaller/Step-by-Step-Installation_img12.png)
+	You can also select the platforms to be installed from the **Available** tab.Click the Next button.
 	
-5.  The uninstallation progress will be shown.
-  
-    ![Progress for uninstall](WebInstaller/Step-by-Step-Installation_img13.png)
+	**Available**
 	
-6.  When the uninstallation is finished, the **Summary** wizard will appear. Here you can see the list of platforms that have been successfully and unsuccessfully uninstalled. To close the Summary wizard, click Finish
-
-    ![Uninstallation Summary](WebInstaller/Step-by-Step-Installation_img14.png)
+	![Platform Selection wizard Available](WebInstaller/Step-by-Step-Installation_img3.png)
 	
-	
-## Installation and Uninstallation
-
-From the Web Installer application, Syncfusion allows you to install and uninstall platforms of the same version.
-
-The steps below show how to install and uninstall Essential Studio WinUI and other platforms from Web Installer.
-
-1.  Open the Syncfusion Essential Studio WinUI Web Installer file by double-clicking it. The Installer Wizard automatically opens and extracts the package.
-
-    ![Installer Extraction Wizard Install/Uninstall](WebInstaller/Step-by-Step-Installation_img1.png)
-	
-2.	The Syncfusion WinUI Web Installer's welcome wizard will be displayed. Click the Next button.
-
-    ![Welcome wizard for Install/Uninstall](WebInstaller/Step-by-Step-Installation_img2.png)
-   
-3.	The Platform Selection Wizard will appear. Choose the platforms to install from the **Available** tab and the platforms to uninstall from the **Installed** tab. Click the Next button.
-
-    **Available**
-	
-    ![Platform Selection wizard Available Install/Uninstall](WebInstaller/Step-by-Step-Installation_img3.png)
-	
-    **Installed**
-	
-    ![Platform Selection wizard Installed](WebInstaller/Step-by-Step-Installation_img4.png)
-	
-4.	The Confirmation Wizard will appear. You can view and modify the list of platforms that will be installed/uninstalled from this page.
+3.  If any other platforms selected for installation, Uninstall previous version wizard will be displayed with previous version(s) installed for the selected platforms. Here you can view the list of installed previous versions for the selected platforms. Select **Uninstall All** checkbox to select all the versions. Click Next.
 
 	![Existing Version for install](WebInstaller/Step-by-Step-Installation_img20.png)
 	
-	N> By clicking the **Download Size and Installation Size** links, you can determine the approximate size of the download and installation.
-	
-	![Downaload and Installation size install/uninstall](WebInstaller/Step-by-Step-Installation_img16.png)
-	
-5.	Pop up screen will be displayed to get the confirmation to uninstall selected previous versions.
+4.	Pop up screen will be displayed to get the confirmation to uninstall selected previous versions.
 
 	![Existing Version for install](WebInstaller/Step-by-Step-Installation_img21.png)	
+	
+5.  The Confirmation Wizard will appear with the list of products to be installed/uninstalled. Here you can view and modify the list of platforms that will be installed/uninstalled.
 
+    ![Confirmation for install/uninstall](WebInstaller/Step-by-Step-Installation_img15.png)
+	
+	N> You can check the Estimated size of the Download and Installation by clicking the **Download Size and Installation Size** link.
+	
 6.	The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a platform-by-platform basis. Click Next to install with the default settings.
 
     ![Install and samples location install/uninstall](WebInstaller/Step-by-Step-Installation_img8.png)
@@ -219,5 +219,5 @@ The steps below show how to install and uninstall Essential Studio WinUI and oth
 
     ![Summary install/uninstall](WebInstaller/Step-by-Step-Installation_img18.png)
 	
-	* To open the Syncfusion Control Panel, click **Launch Control Panel**.
-
+	* To open the Syncfusion Control Panel, click **Launch Control Panel**.	
+	
