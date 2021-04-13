@@ -63,7 +63,7 @@ The Scheduler supports to bind any collection that implements the `IEnumerable` 
 <td>Maps the property name of a custom class, which is equivalent to the  Foreground of ScheduleAppointment.</td></tr>
 <tr><td>{{'[IsAllDay](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_IsAllDay)'| markdownify }}</td>
 <td>Maps the property name of a custom class, which is equivalent to the IsAllDay of ScheduleAppointment.</td></tr>
-<tr><td>{{'[RecurrenceRule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceRule)'| markdownify }}<</td>
+<tr><td>{{'[RecurrenceRule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceRule)'| markdownify }}</td>
 <td>Maps the property name of a custom class, which is equivalent to the RecurrenceRule of ScheduleAppointment.</td></tr>
 <tr><td>{{'[RecurrenceId](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceId)'| markdownify }}</td>
 <td>Maps the property name of a custom class, which is equivalent to the RecurrenceId of ScheduleAppointment.</td></tr>
@@ -73,7 +73,7 @@ The Scheduler supports to bind any collection that implements the `IEnumerable` 
 <td>Maps the property name of a custom class, which is equivalent to the Location of ScheduleAppointment.</td></tr>
 <tr><td>{{'[RecurrenceExceptionDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceExceptionDates)'| markdownify }}</td>
 <td>Maps the property name of a custom class, which is equivalent to the RecurrenceExceptionDates of ScheduleAppointment.</td></tr>
-<tr><td>{{'[ResourceIdCollection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_ResourceIdCollection)'| markdownify }}<</td>
+<tr><td>{{'[ResourceIdCollection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_ResourceIdCollection)'| markdownify }}</td>
 <td>Maps the property name of a custom class, which is equivalent to the ResourceIdCollection of ScheduleAppointment.</td></tr>
 </table>
 
