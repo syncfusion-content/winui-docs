@@ -11,7 +11,7 @@ documentation: ug
 
 ## IndexResolver
 
-SfDataGrid has [GridIndexResolver](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridIndexResolver.html) static class present in [Syncfusion.UI.Xaml.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.html) namespace that has some extension methods used to Resolve from row or column index to record or visible column index and `vice versa`. 
+SfDataGrid has [GridIndexResolver](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridIndexResolver.html) static class present in [Syncfusion.UI.Xaml.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.html) namespace that has some extension methods used to resolve from row or column index to record or visible column index and `vice versa`. 
 
 ## Example: You can find the record index from row index using ResolveToRecordIndex method.
 
@@ -25,7 +25,7 @@ Description</th></tr>
 <tr>
 <td>
 ResolveToRecordIndex(int rowIndex)</td><td>
-Resolves Record index from the RowIndex. When RowIndex does not find any records it returns -1. RecordIndex denotes the index of Record in <code>SfDataGrid.View.Records</code></td></tr>
+Resolves record index from the RowIndex. When RowIndex does not find any records it returns -1. RecordIndex denotes the index of record in <code>SfDataGrid.View.Records</code></td></tr>
 <tr>
 <td>
 ResolveToRowIndex(int recordIndex)</td><td>
