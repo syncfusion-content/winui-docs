@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Expand and Collapse in WinUI TreeView | Syncfusion
-description: Learn here about expanding and collapsing treeview nodes in WinUI and also explains about events associated with expanding and collapsing.
+title: Expand and Collapse in WinUI TreeView control | Syncfusion
+description: Learn about Expand and Collapse support in Syncfusion WinUI TreeView control and more details.
 platform: WinUI
 control: TreeView
 documentation: ug

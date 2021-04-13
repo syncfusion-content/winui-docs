@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Label features in Syncfusion WinUI Range Slider
-description: This section explains about how to show labels and how to customize it in the Syncfusion WinUI range slider.
+title: Labels in WinUI RangeSlider control | Syncfusion
+description: Learn about Labels support in Syncfusion WinUI RangeSlider (Range Slider) control and more details.
 platform: WinUI
 control: SfRangeSlider
 documentation: ug
 ---
 
-# Labels in the Range Slider
+# Labels in WinUI RangeSlider (Range Slider)
 
 This section explains about how to show the labels in the range slider.
 

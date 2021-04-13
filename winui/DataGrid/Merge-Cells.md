@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Merge Cells | DataGrid | WinUI | Syncfusion
-description: Learn about merge cells support (horizontally or vertically) in Syncfusion WinUI DataGrid (SfDataGrid) control and more details.
+title: Merge Cells in WinUI DataGrid control | Syncfusion
+description: Learn about Merge Cells support in Syncfusion WinUI DataGrid control and more details.
 platform: winui
 control: DataGrid
 documentation: ug
 ---	
 
-# Merge Cells in WinUI DataGrid (SfDataGrid)
+# Merge Cells in WinUI DataGrid
 	
 DataGrid allows you to merge the range of adjacent cells using [QueryCoveredRange](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_QueryCoveredRange) event. Merged cells can be printed.
 

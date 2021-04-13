@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Track features in Syncfusion WinUI Range Slider
-description: This section explains about how to customize the appearance of the track in Syncfusion WinUI Range Slider.
+title: Track in WinUI RangeSlider control | Syncfusion
+description: Learn about Track support in Syncfusion WinUI RangeSlider (Range Slider) control and more details.
 platform: WinUI
 control: SfRangeSlider
 documentation: ug
 ---
 
-# Track Features in Syncfusion WinUI Range Slider
+# Track in WinUI RangeSlider (Range Slider)
 
 This section explains how to customize the track in the slider.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Line and Step Line Charts| SfChart | WinUI | Syncfusion
-description: This section explains Line and Area Charts and its properties for customization in WinUI Charts (SfChart)
+title: Line and StepLine in WinUI Chart control | Syncfusion
+description: Learn about Line and StepLine support in Syncfusion WinUI Chart control and more details.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Line and Step Line Charts in WinUI Chart (SfChart)
+# Line and StepLine in WinUI Chart
 
 ## Line
 

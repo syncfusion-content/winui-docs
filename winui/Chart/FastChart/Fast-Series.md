@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Fast Chart | SfChart | WinUI | Syncfusion
-description: This section explains about the fast line chart and its properties to create a high performance chart in WinUI Charts (SfChart).
+title: Fast Series in WinUI Chart control | Syncfusion
+description: Learn about Fast Series support in Syncfusion WinUI Chart control and more details.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# FastLine Series in WinUI Charts (SfChart)
+# Fast Series in WinUI Chart
 
 ## FastLine Chart
 

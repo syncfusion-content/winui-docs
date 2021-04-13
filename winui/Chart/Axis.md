@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Axis | SfChart | WinUI | Syncfusion 
-description: This scetion explains the types of axis, it's behavior and customization options in WinUI Chart (SfChart)
+title: Axis in WinUI Chart control | Syncfusion
+description: Learn about Axis support in Syncfusion WinUI Chart control and more details.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
 
-# Axis in WinUI Chart (SfChart)
+# Axis in WinUI Chart
 
 [`ChartAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#) is used to locate a data point inside the chart area. Charts typically have two axes that are used to measure and categorize data: a vertical (Y) axis, and a horizontal (X) axis.
 

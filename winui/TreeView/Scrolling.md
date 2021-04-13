@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scrolling in WinUI TreeView | Syncfusion
-description: Learn here about how to achieve programmatic scrolling in Syncfusion WinUI TreeView and more details.
+title: Scrolling in WinUI TreeView control | Syncfusion
+description: Learn about Scrolling support in Syncfusion WinUI TreeView control and more details.
 platform: WinUI
 control: TreeView
 documentation: ug
 ---
 
-# Scrolling in in WinUI TreeView
+# Scrolling in WinUI TreeView
 The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) provides various options to achieve programmatic scrolling. Please walkthrough the below section in detail to achieve the same.
 
 ## Bring Into View

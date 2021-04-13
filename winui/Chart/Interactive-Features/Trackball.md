@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Trackball feature in Syncfusion SfChart WinUI
-description: This section describles how to customize the Trackball behavior, label in Essential WinUI Chart (SfChart).
+title: Trackball in WinUI Chart control | Syncfusion
+description: Learn about Trackball support in Syncfusion WinUI Chart control and more details.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Trackball in WinUI Charts (SfChart)
+# Trackball in WinUI Chart
 
 The [`ChartTrackballBehavior`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#) allows you to track a data point closer to the cursor position. The x values are determined from the position of the vertical line in the axis and y values are determined from the points touching the vertical line in the series.
 

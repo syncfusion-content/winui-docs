@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pie and Doughnut Charts | SfChart | WinUI | Syncfusion
-description: This section explains Pie and Doughnut Charts and its properties for customization in WinUI Charts (SfChart)
+title: Pie and Doughnut in WinUI Chart control | Syncfusion
+description: Learn about Pie and Doughnut support in Syncfusion WinUI Chart control and more details.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Pie and Doughnut Charts in WinUI Chart (SfChart)
+# Pie and Doughnut in WinUI Chart
 
 ## Pie
 

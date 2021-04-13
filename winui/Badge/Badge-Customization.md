@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization of WinUI Badge control | Syncfusion
-description: This section describes about how to customize the Badge control in WinUI application and its basic features.
+title: Customization in WinUI Badge control | Syncfusion
+description: Learn about Customization support in Syncfusion WinUI Badge control and more details.
 platform: WinUI
 control: SfBadge
 documentation: ug
 ---
 
-# Customization of WinUI Badge (SfBadge)
+# Customization in WinUI Badge
 
 This section explains the customization features available in the WinUI [Badge](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html) control.
 

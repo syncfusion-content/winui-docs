@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Load appointments on demand | WinUI | Scheduler | Syncfusion
-description: This section explains how to load appointments on-demand from visible date ranges in the Syncfusion WinUI Scheduler (SfScheduler)
+title: Load On Demand in WinUI Scheduler control | Syncfusion
+description: Learn about Load On Demand support in Syncfusion WinUI Scheduler control and more details.
 platform: winui
 control: Scheduler
 documentation: ug
 ---
 
-# Load On Demand in WinUI Scheduler (SfScheduler)
+# Load On Demand in WinUI Scheduler
 
 The scheduler supports loading appointments on-demand with loading indicator and it improves the loading performance when you have appointments range for multiple years.
 

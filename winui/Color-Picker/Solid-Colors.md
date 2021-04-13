@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Solid Colors in WinUI SfColorPicker control | Syncfusion
-description: This section describes about how to select the solid color brush in the SfColorPicker control and its features.
+title: Solid Colors in WinUI Color Picker control | Syncfusion
+description: Learn about Solid Colors support in Syncfusion WinUI Color Picker control and more details.
 platform: WinUI
 control: SfColorPicker
 documentation: ug
 ---
 
-# Solid Colors in WinUI ColorPicker (SfColorPicker)
+# Solid Colors in WinUI Color Picker
 
 This section explains how to select a solid color from different color models, how to modify their individual properties in [ColorPicker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html).
 

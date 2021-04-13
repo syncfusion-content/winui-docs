@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sorting | WinUI | DataGrid | Syncfusion
-description: Learn here about column sorting support and its events with Syncfusion WinUI DataGrid (SfDataGrid) control and more details. 
+title: Sorting in WinUI DataGrid control | Syncfusion
+description: Learn about Sorting support in Syncfusion WinUI DataGrid control and more details.
 platform: winui
 control: DataGrid
 documentation: ug
 ---
 
 
-# Sorting with WinUI DataGrid (SfDataGrid)
+# Sorting in WinUI DataGrid
 
 DataGrid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfDataGrid.AllowSorting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowSorting) property to `true`.
 

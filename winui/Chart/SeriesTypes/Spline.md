@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Spline and Spline Area Charts| SfChart | WinUI | Syncfusion
-description: This section explains Spline and Spline Area Charts and its properties for customization in WinUI Charts (SfChart)
+title: Spline in WinUI Chart control | Syncfusion
+description: Learn about Spline support in Syncfusion WinUI Chart control and more details.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Spline and Spline Area Charts in WinUI Chart (SfChart)
+# Spline in WinUI Chart
 
 ## Spline
 

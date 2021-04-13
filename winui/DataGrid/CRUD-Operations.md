@@ -1,13 +1,13 @@
 ---
 layout: post
-title: CRUD Operations | DataGrid | WinUI | Syncfusion
-description: Learn about CRUD operations to manipulate the data in Syncfusion WinUI DataGrid (SfDataGrid) control and more details.
+title: CRUD Operations in WinUI DataGrid control | Syncfusion
+description: Learn about CRUD Operations support in Syncfusion WinUI DataGrid control and more details.
 platform: winui
 control: DataGrid
 documentation: ug
 ---
 
-# CRUD operations in WinUI DataGrid (SfDataGrid)
+# CRUD Operations in WinUI DataGrid
 
 DataGrid listens and responds to the CRUD operations such as add, delete and data update (property change) at runtime. Also, it supports [editing](https://help.syncfusion.com/winui/datagrid/editing), [add new row](https://help.syncfusion.com/winui/datagrid/data-manipulation#add-new-rows), [delete row](https://help.syncfusion.com/winui/datagrid/data-manipulation#delete-row) by pressing <kbd>Delete</kbd> key.
 

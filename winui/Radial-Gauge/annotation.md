@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion WinUI Gauge Annotation
-description: This article describes how to add and customizes the appearence gauge annotation of radial gauge control in WinUI platform
+title: Annotation in WinUI Radial Gauge control | Syncfusion
+description: Learn about Annotation support in Syncfusion WinUI Radial Gauge control and more details.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug
 ---
 
-# Annotation in WinUI Radial Gauge (SfRadialGauge)
+# Annotation in WinUI Radial Gauge
 
 [`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) allows you to add multiple controls such as text, icon and image etc., as an annotation to a specific point of interest in the radial gauge.
 

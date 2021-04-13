@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid Lines | TreeGrid | WinUI | Syncfusion
-description: Learn about customization of grid lines for GridCells and HeaderCells in Syncfusion WinUI TreeGrid (SfTreeGrid) control and more details.
+title: Grid Lines Customization in WinUI TreeGrid control | Syncfusion
+description: Learn about Grid Lines Customization support in Syncfusion WinUI TreeGrid control and more details.
 platform: winui
 control: TreeGrid
 documentation: ug
 ---
 
-# Grid Lines customization in WinUI TreeGrid (SfTreeGrid)
+# Grid Lines Customization in WinUI TreeGrid
 
 SfTreeGrid allows you to customize the grid lines visibility to vertical, horizontal, both or none. To achieve this, use the following properties.
 

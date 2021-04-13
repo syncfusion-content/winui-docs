@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WinUI SfColorPalette control | Syncfusion
-description: Learn here about getting started with Syncfusion WinUI SfColorPalette control and more details about the control features.
+title: Getting Started with WinUI Color Palette control | Syncfusion
+description: Learn here about getting started with Syncfusion WinUI Color Palette control and more details.
 platform: WinUI
 control: SfColorPalette
 documentation: ug
 ---
 
-# Getting Started with WinUI ColorPalette (SfColorPalette)
+# Getting Started with WinUI Color Palette
 
 This section explains the steps required to add the [ColorPalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html) control and its various color options. This section covers only basic features needed to get started with Syncfusion `ColorPalette` control.
 

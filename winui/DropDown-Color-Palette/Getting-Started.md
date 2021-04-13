@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WinUI SfDropDownColorPalette control | Syncfusion
-description: Learn here about getting started with Syncfusion WinUI SfDropDownColorPalette control and more details about the control features.
+title: Getting Started with WinUI DropDown Color Palette control | Syncfusion
+description: Learn here about getting started with Syncfusion WinUI DropDown Color Palette control and more details.
 platform: WinUI
 control: SfDropDownColorPalette
 documentation: ug
 ---
 
-# Getting Started with WinUI DropDown ColorPalette
+# Getting Started with WinUI DropDown Color Palette
 
 This section explains the steps required to add the [DropDownColorPalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.DropDownColorPalette.html) control and its color options such as theme, standard and more custom colors.
 

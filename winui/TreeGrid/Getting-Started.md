@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started | WinUI | TreeGrid | Syncfusion
-description: Learn here about getting started with Syncfusion WinUI TreeGrid (SfTreeGrid) control and more details. 
+title: Getting Started with WinUI TreeGrid control | Syncfusion
+description: Learn here about getting started with Syncfusion WinUI TreeGrid control and more details.
 platform: winui
 control: TreeGrid
 documentation: ug
 ---
 
-# Getting started with WinUI TreeGrid (SfTreeGrid)
+# Getting Started with WinUI TreeGrid
 
 This section explains the steps required to add the TreeGrid control and binding data in treegrid control. This section covers only basic features needed to get started with Syncfusion treegrid control.
 

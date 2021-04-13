@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion WinUI Gauge Pointers
-description: This article describes how to add and customize the appearence of pointers of linear gauge control in WinUI platform
+title: Pointers in WinUI Linear Gauge control | Syncfusion
+description: Learn about Pointers support in Syncfusion WinUI Linear Gauge control and more details.
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Pointers in WinUI Linear Gauge (SfLinearGauge)
+# Pointers in WinUI Linear Gauge
 
  The pointer is used to indicate values on an axis. The Linear Gauge control has three types of pointers:
 

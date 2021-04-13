@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Side By Side Placement | SfChart | WinUI | Syncfusion
-description: This section explains about placement pattern of bar type series like Column, Bar and RangeColumn in WinUI Charts (SfChart)
+title: Side By Side Placement in WinUI Chart control | Syncfusion
+description: Learn about Side By Side Placement support in Syncfusion WinUI Chart control and more details.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Side By Side Placement in WinUI Chart (SfChart) 
+# Side By Side Placement in WinUI Chart
 
 It defines the placement pattern of bar type series like Column, Bar, StackedColumn, etc. 
 

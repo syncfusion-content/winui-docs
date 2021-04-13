@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Label features in Syncfusion WinUI Slider
-description: This section explains about how to show divisors and how to customize it in the Syncfusion WinUI slider.
+title: Divisors in WinUI Slider control | Syncfusion
+description: Learn about Divisors support in Syncfusion WinUI Slider control and more details.
 platform: WinUI
 control: SfSlider
 documentation: ug
 ---
 
-# Divisors in the Slider
+# Divisors in WinUI Slider
 
 This section explains about how to show the divisors in the slider.
 

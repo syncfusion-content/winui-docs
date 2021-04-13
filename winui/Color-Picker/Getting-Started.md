@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WinUI SfColorPicker control | Syncfusion
-description: This section describes about how to add the SfColorPicker control into WinUI application and its basic features.
+title: Getting Started with WinUI Color Picker control | Syncfusion
+description: Learn here about getting started with Syncfusion WinUI Color Picker control and more details.
 platform: WinUI
 control: SfColorPicker
 documentation: ug
 ---
 
-# Getting Started with WinUI ColorPicker (SfColorPicker)
+# Getting Started with WinUI Color Picker
 
 This section describes how to create a [ColorPicker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html) control in a WinUI application and overview of its basic functionalities.
 

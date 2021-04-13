@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drag and drop with WinUI TreeView control | Syncfusion
-description: Learn here about drag and drop between the TreeViewNodes with Syncfusion WinUI TreeView (SfTreeView) control and  drag and drop related events. 
+title: Drag and Drop in WinUI TreeView control | Syncfusion
+description: Learn about Drag and Drop support in Syncfusion WinUI TreeView control and more details.
 platform: winui
 control: SfTreeView
 documentation: ug
 ---
 
-# Drag and drop in WinUI TreeView (SfTreeView)
+# Drag and Drop in WinUI TreeView
 
 TreeView allows drag and drop the items within the treeview control by setting the [CanDrag](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.uielement.candrag?view=winrt-19041) property as `true`. It is also possible to drag and drop the items between treeview and other controls such as `ListView` and `SfDataGrid`. 
 

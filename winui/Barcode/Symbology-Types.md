@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Types of Symbology in Syncfusion Barcode control for Winui
-description: Shows different types of Symbology in one-dimensional and two-dimensional barcodes in Barcode Control
+title: Symbology Types in WinUI Barcode control | Syncfusion
+description: Learn about Symbology Types support in Syncfusion WinUI Barcode control and more details.
 platform: WinUI
 control: Barcode
 documentation: ug
 ---
 
-# Types of Barcode Symbology
+# Symbology Types in WinUI Barcode
 Barcode Symbology supports 12 variants of one dimensional and 3 variants of two dimensional barcodes.
 
 ## One Dimensional Barcodes

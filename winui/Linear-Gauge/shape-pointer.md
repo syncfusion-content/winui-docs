@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion WinUI Gauge Pointers
-description: This article describes how to add and customize the appearence of pointers of linear gauge control in WinUI platform
+title: Shape Pointer in WinUI Linear Gauge control | Syncfusion
+description: Learn about Shape Pointer support in Syncfusion WinUI Linear Gauge control and more details.
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Shape Pointer in WinUI Linear Gauge (SfLinearGauge)
+# Shape Pointer in WinUI Linear Gauge
 
 Indicate current values by using the different types of shape pointers. You can change the shape type using the [`ShapeType`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeShapeType.html) property.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon backstage | WinUI | Ribbon | Syncfusion 
-description: Learn about Ribbon backstage and its features in the Syncfusion WinUI Ribbon (SfRibbon) control and more details.
+title: Backstage in WinUI Ribbon control | Syncfusion
+description: Learn about Backstage support in Syncfusion WinUI Ribbon control and more details.
 platform: winui
 control: Ribbon
 documentation: ug
 ---
 
-# Ribbon backstage with WinUI Ribbon (SfRibbon)
+# Backstage in WinUI Ribbon
 
 The [RibbonBackstage](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonBackstage.html) allows you to host any controls to create a custom view based on the requirements of the application and it can be added by using the `Backstage` property. Backstage appears as the first tab in the top left corner named File and opens a backstage view when you click the `File` menu button. 
 

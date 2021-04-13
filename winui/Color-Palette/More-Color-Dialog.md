@@ -1,7 +1,7 @@
 ---
 layout: post
-title: More Colors dialog in WinUI SfColorPalette control | Syncfusion
-description: Learn about selecting a different colors from more color dialog in Syncfusion WinUI SfColorPalette control and more details about the control features.
+title: More Colors in WinUI Color Palette control | Syncfusion
+description: Learn about More Colors support in Syncfusion WinUI Color Palette control and more details.
 platform: WinUI
 control: SfColorPalette
 documentation: ug

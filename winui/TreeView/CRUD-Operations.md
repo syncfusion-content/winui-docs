@@ -1,13 +1,13 @@
 ---
 layout: post
-title: CRUD Operations with WinUI TreeView control | Syncfusion
-description: Learn about CRUD operations to manipulate the data in Syncfusion WinUI TreeView (SfTreeView) control and more details.
+title: CRUD Operations in WinUI TreeView control | Syncfusion
+description: Learn about CRUD Operations support in Syncfusion WinUI TreeView control and more details.
 platform: WinUI
 control: SfTreeView
 documentation: ug
 ---
 
-# CRUD operations in WinUI TreeView (SfTreeView)
+# CRUD Operations in WinUI TreeView
 
 TreeView listens and responds to the CRUD operations such as add, delete and data update (property change) at runtime. Also, it supports `editing`, `delete` by pressing <kbd>Delete</kbd> key.
 

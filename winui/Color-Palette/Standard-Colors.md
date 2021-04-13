@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Standard colors in WinUI SfColorPalette control | Syncfusion
-description: Learn about selecting a different standard colors in Syncfusion WinUI SfColorPalette control and more details about the control features.
+title: Standard Colors in WinUI Color Palette control | Syncfusion
+description: Learn about Standard Colors support in Syncfusion WinUI Color Palette control and more details.
 platform: WinUI
 control: SfColorPalette
 documentation: ug
 ---
 
-# Standard colors in WinUI ColorPalette (SfColorPalette)
+# Standard Colors in WinUI Color Palette
 
 This section explains the different standard colors available in the [ColorPalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html) and  how to choose the colors and its panel customizations.
 

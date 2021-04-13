@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | Chart | WinUI | Syncfusion
-description: Overview and the highlighting features (Chart elements and interactive features) of the WinUI Chart control.
+title: About WinUI Chart control | Syncfusion
+description: Learn about introduction of Syncfusion WinUI Chart control and more details.
 platform: WinUI
 control: Chart
 documentation: ug
 ---
 
-# WinUI Charts Overview
+# WinUI Chart Overview
 
 [`Chart`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html) provides a perfect way to visualize data with a high level of user interactivity that focus on development, productivity and simplicity of use. Chart also provides a wide variety of charting features that can be used to visualize large quantities of data, flexibility of binding data and user customization. 
 

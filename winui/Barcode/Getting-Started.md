@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | Barcode | WinUI | Syncfusion
-description: This section explains how to add Syncfusion Barcode control and how it can be customized in WinUI platform.
+title: Getting Started with WinUI Barcode control | Syncfusion
+description: Learn here about getting started with Syncfusion WinUI Barcode control and more details.
 platform: WinUI
 control: Barcode
 documentation: ug

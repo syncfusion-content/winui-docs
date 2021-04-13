@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Checkbox in WinUI TreeView | Syncfusion
-description: The WinUI TreeView provides support for loading CheckBox in each node and allows users to check/uncheck the corresponding node.
+title: Checkbox in WinUI TreeView control | Syncfusion
+description: Learn about Checkbox support in Syncfusion WinUI TreeView control and more details.
 platform: WinUI
 control: TreeView
 documentation: ug
 ---
 
-# Checkbox in WinUI TreeView 
+# Checkbox in WinUI TreeView
 
 The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) provides support for loading `CheckBox` in each node, and allows users to check/uncheck the corresponding node. So, you should add checkbox in the [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplate) of the `TreeView` and bind the [IsChecked](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html#Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_IsChecked) property of the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html).
 

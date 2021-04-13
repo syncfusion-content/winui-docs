@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion WinUI Gauge Pointers
-description: This article describes how to add and customize the appearence of pointers of linear gauge control in WinUI platform
+title: Bar Pointer in WinUI Linear Gauge control | Syncfusion
+description: Learn about Bar Pointer support in Syncfusion WinUI Linear Gauge control and more details.
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Bar Pointer in WinUI Linear Gauge (SfLinearGauge)
+# Bar Pointer in WinUI Linear Gauge
 
 A bar pointer is an accenting line or shaded background range that can be placed on a gauge to mark the current value.
 

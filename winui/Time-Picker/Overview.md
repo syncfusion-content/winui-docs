@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WinUI TimePicker control | Syncfusion
-description: This page explains about overview of the WinUI TimePicker  (SfTimePicker) control and its overall customization features.
+title: About WinUI Time Picker control | Syncfusion
+description: Learn about introduction of Syncfusion WinUI Time Picker control and more details.
 platform: winui
 control: SfTimePicker
 documentation: ug
 ---
 
-# WinUI TimePicker Overview
+# WinUI Time Picker Overview
 
 The WinUI [TimePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) control provides an intuitive, touch-friendly interface to select a time from a drop-down spinner quickly. It supports different time formats. Time selection can be restricted by specifying minimum and maximum times. Times can also be hidden or disabled from selection. In addition, it supports editing with validation and built-in watermark text display.
 

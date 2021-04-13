@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started for Syncfusion WinUI Linear Gauge
-description: A quick guide to initial users about Syncfusion Linear Gauge control for the WinUI platform. It provides overview on SfLinearGauge.
+title: Getting Started with WinUI Linear Gauge control | Syncfusion
+description: Learn here about getting started with Syncfusion WinUI Linear Gauge control and more details.
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Getting Started with WinUI Linear Gauge (SfLinearGauge)
+# Getting Started with WinUI Linear Gauge
 
 This section explains the steps required to add the Linear Gauge control and its elements such as axis, range, and pointer. This section covers only basic features needed to get started with Syncfusion Linear Gauge control.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Axis of Syncfusion WinUI Gauge
-description: This article describes how to add and customizes the appearence of radial axis and its element of radial gauge in WinUI platform
+title: Axis in WinUI Radial Gauge control | Syncfusion
+description: Learn about Axis support in Syncfusion WinUI Radial Gauge control and more details.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug
 ---
 
-# Radial axis Feature in WinUI Radial Gauge (SfRadialGauge)
+# Axis in WinUI Radial Gauge
 
 The [`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) is a circular arc in which a set of values are displayed along a linear or custom scale based on the design requirements. Axis elements such as  labels, ticks and axis line can be easily customized with built-in properties.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appointment editing | WinUI | Scheduler | Syncfusion
-description: This section explains how to handle appointment editing and appointment resizing operations in the WinUI scheduler.
+title: Appointment Editing in WinUI Scheduler control | Syncfusion
+description: Learn about Appointment Editing support in Syncfusion WinUI Scheduler control and more details.
 platform: winui
 control: Scheduler
 documentation: ug
 ---
 
-# Appointment Editing in WinUI Scheduler (SfScheduler)
+# Appointment Editing in WinUI Scheduler
 
 This section explains how to handle appointment editing in WinUI scheduler and also explains about the appointment resizing.
 

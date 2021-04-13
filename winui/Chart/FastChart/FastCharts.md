@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Fast Series | SfChart | WinUI | Syncfusion
-description: This section explains the different types of fast charts, including FastLine, FastColumnBitmap, FastScatterBitmap, FastStepLineBitmap and its properties.
+title: Fast Chart in WinUI Chart control | Syncfusion
+description: Learn about Fast Chart support in Syncfusion WinUI Chart control and more details.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Fast Charts in WinUI Charts (SfChart)
+# Fast Chart in WinUI Chart
 
 `Chart` includes functionality for rendering the large data points with fast plotting and it has more than 5 fast chart types. Each chart type is easily configurable with built-in support for creating high performance charts.
 

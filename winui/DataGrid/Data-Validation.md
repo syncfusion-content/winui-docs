@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Validation | WinUI | DataGrid | Syncfusion
-description: Learn about cell or row validation support in Syncfusion WinUI DataGrid (SfDataGrid) control and more details.
+title: Data Validation in WinUI DataGrid control | Syncfusion
+description: Learn about Data Validation support in Syncfusion WinUI DataGrid control and more details.
 platform: winui
 control: DataGrid
 documentation: ug
 ---
 
-# Validation in WinUI DataGrid (SfDataGrid)
+# Data Validation in WinUI DataGrid
 
 SfDataGrid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [GridCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCell.html). When mouse over the error icon, error information will be displayed in tooltip.
  

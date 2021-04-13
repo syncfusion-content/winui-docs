@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tooltip feature in Syncfusion SfChart WinUI
-description: How to enable, customize the tooltip position, duration and appearance in Essential WinUI Chart (SfChart)
+title: Tooltip in WinUI Chart control | Syncfusion
+description: Learn about Tooltip support in Syncfusion WinUI Chart control and more details.
 platform: WinUI
 control: SfChart
 documentation: ug
 
 ---
 
-# Tooltip in WinUI Charts (SfChart)
+# Tooltip in WinUI Chart
 
 The Tooltip feature allows you to display any information over a [`ChartSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). It appears at the data point position when the mouse hovers over any chart segment. It is set to display the metadata of the particular segment or data point.
 

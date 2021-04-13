@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Gauge range of Syncfusion WinUI Gauge
-description: This article describes how to add and customizes the appearence of ranges of radial gauge control in WinUI platform
+title: Range in WinUI Radial Gauge control | Syncfusion
+description: Learn about Range support in Syncfusion WinUI Radial Gauge control and more details.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug
 ---
 
-# Range Feature in WinUI Radial Gauge (SfRadialGauge)
+# Range in WinUI Radial Gauge
 
 Gauge range is a visual element that helps to quickly visualize where a value falls on the axis.
 

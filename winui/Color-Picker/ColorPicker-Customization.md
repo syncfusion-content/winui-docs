@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization in WinUI SfColorPicker control | Syncfusion
-description: This section describes about how to customize the elements in the SfColorPicker control and its features.
+title: Customization of ColorPicker in WinUI Color Picker control | Syncfusion
+description: Learn about Customization of ColorPicker support in Syncfusion WinUI Color Picker control and more details.
 platform: WinUI
 control: SfColorPicker
 documentation: ug
 ---
 
-# Customization of WinUI ColorPicker (SfColorPicker)
+# Customization of ColorPicker in WinUI Color Picker
 
 This section explains how to customize the color spectrum and switch to different modes in [ColorPicker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html).
 

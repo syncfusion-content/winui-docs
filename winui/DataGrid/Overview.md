@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WinUI | DataGrid | Syncfusion 
-description: Learn about introduction of Syncfusion WinUI DataGrid (SfDataGrid) control, its feature and more details.
+title: About WinUI DataGrid control | Syncfusion
+description: Learn about introduction of Syncfusion WinUI DataGrid control and more details.
 platform: winui
 control: DataGrid
 documentation: ug

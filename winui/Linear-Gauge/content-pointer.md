@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion WinUI Gauge Pointers
-description: This article describes how to add and customize the appearence of pointers of linear gauge control in WinUI platform
+title: Content Pointer in WinUI Linear Gauge control | Syncfusion
+description: Learn about Content Pointer support in Syncfusion WinUI Linear Gauge control and more details.
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Content Pointer in WinUI Linear Gauge (SfLinearGauge)
+# Content Pointer in WinUI Linear Gauge
 
 Highlight values using an image, icon, text, or any other custom view. You can set the custom views using the [`Content`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ContentPointer.html#Syncfusion_UI_Xaml_Gauges_ContentPointer_Content) property.
 

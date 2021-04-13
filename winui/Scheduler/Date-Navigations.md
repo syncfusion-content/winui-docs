@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Date navigations | WinUI | Scheduler | Syncfusion
-description: This section explain about how to use Date Navigations of Syncfusion WinUI Scheduler control and more details. 
+title: Date Navigations in WinUI Scheduler control | Syncfusion
+description: Learn about Date Navigations support in Syncfusion WinUI Scheduler control and more details.
 platform: winui
 control: Scheduler
 documentation: ug
 ---
 
-# Date Navigations in WinUI Scheduler (SfScheduler)
+# Date Navigations in WinUI Scheduler
 
 ## Range for visible dates
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Population in WinUI TreeView control | Syncfusion
-description: This section displays about the population of the data in syncfusion WinUI TreeView control and more details.
+description: Learn about Data Population support in Syncfusion WinUI TreeView control and more details.
 platform: WinUI
 control: TreeView
 documentation: ug

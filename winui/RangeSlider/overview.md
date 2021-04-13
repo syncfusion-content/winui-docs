@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion WinUI Range Slider
-description: To Learn about introduction of Syncfusion WinUI Range Slider (SfRangeSlider) control and its available features.
+title: About WinUI RangeSlider control | Syncfusion
+description: Learn about Overview support in Syncfusion WinUI RangeSlider (Range Slider) control and more details.
 platform: WinUI
 control: SfRangeSlider
 documentation: ug
 ---
 
-# WinUI RangeSlider Overview
+# WinUI RangeSlider (Range Slider) Overview
 
 Syncfusion WinUI Range Slider is a highly interactive UI control, allowing users to select a smaller range from a larger data set. The range can be selected by moving the thumb along the track. It provides rich features such as labels, ticks, divisors, thumb styles, and tooltips.
 

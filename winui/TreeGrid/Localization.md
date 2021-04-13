@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization | TreeGrid | WinUI | Syncfusion
-description: Learn about localization support to customize the default strings in Syncfusion WinUI TreeGrid (SfTreeGrid) control and more details.
+title: Localization in WinUI TreeGrid control | Syncfusion
+description: Learn about Localization support in Syncfusion WinUI TreeGrid control and more details.
 platform: winui
 control: TreeGrid
 documentation: ug
 ---
 
-# Localization in WinUI TreeGrid (SfTreeGrid)
+# Localization in WinUI TreeGrid
 
 Localization is the process of translating the application resources into different language for the specific cultures. You can localize the treegrid by [adding resource file](https://msdn.microsoft.com/library/aa992030.aspx). Application culture can be changed by setting [CurrentUICulture](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.currentuiculture.aspx) before InitializeComponent method.
 

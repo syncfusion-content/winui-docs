@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WinUI Calendar control | Syncfusion
-description: This page explains about overview of the WinUI Calendar (SfCalendar) control and its overall customization features.
+description: Learn about introduction of Syncfusion WinUI Calendar control and more details.
 platform: winui
 control: SfCalendar
 documentation: ug
