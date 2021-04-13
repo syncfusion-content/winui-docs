@@ -67,7 +67,7 @@ Our 30-day trial can be downloaded in two ways.
 6. You can download other platform\add-on installers by going to More Downloads Options (element 3 in the screenshot below).
 7. For Windows OS, EXE and Zip formats are available for download. They are both Offline Installers.
 
-    ![License and downloads of Syncfusion Essential Studio](download-images/license-download.png)
+   ![License and downloads of Syncfusion Essential Studio](download-images/license-download.png)
 	
 
 You can also refer to the [**Online installer**](https://help.syncfusion.com/winui/installation-and-upgrade/install-using-the-web-installer) and [**Offline installer**](https://help.syncfusion.com/winui/installation-and-upgrade/install-using-the-offline-installer) links for step-by-step installation guidelines.	
