@@ -10,7 +10,7 @@ documentation: ug
 
 # Installation using Offline Installer
 
-You can refer to the [Download](https://help.syncfusion.com/winui/installation-and-upgrade/download) section to download trial or licensed WinUI installer.
+You can also refer to the [**Download**](https://help.syncfusion.com/winui/installation-and-upgrade/download) section to learn how to get the WinUI trial or licensed installer.
 
 ## Installing with UI   
 
