@@ -71,9 +71,16 @@ namespace GettingStarted
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/GettingStarted)
 
-## Select the date programmatically
+## Select a date
 
-You can set or change the selected date programmatically by using [SelectedDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDate) property. You can also change the selected date interactively from calendar. 
+You can change the selected date interactively by clicking on the specific date or you can select programmatically by using [SelectedDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDate) property. By default, `Calendar` control allows you to select single date at a time. 
+
+If you want to change the selection mode, select required value for `SelectionMode` property from below values.
+
+* **None** - Prevents from selecting a date.
+* **Single** - Allows to select a single date.
+* **Multiple** - Allows to select multiple dates.
+* **Range** -  Allows to select range of dates.
 
 {% tabs %}
 {% highlight C# %}
@@ -90,16 +97,9 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Select multiple dates
 
-By default, `Calendar` control allows you to select single date at a time. You can select multiple dates from different month, year or decade or century, by changing the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionMode) property value to `Multiple`. You can get the selected dates collection from the [SelectedDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDates) property.
+You can select multiple dates from different month, year or decade or century, by changing the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionMode) property value to `Multiple`. You can get the selected dates collection from the [SelectedDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDates) property.
 
-You can select required value for `SelectionMode` property from below values.
-
-* **None** - Prevents from selecting a date.
-* **Single** - Allows to select a single date.
-* **Multiple** - Allows to select multiple dates.
-* **Range** -  Allows to select range of dates.
-
-N> `SelectedDates` property collection will be empty if the `SelectionMode` value is *None* or *Single*. 
+N> `SelectedDates` property collection will be empty if the `SelectionMode` value is *None* or *Single* and the dates are selected interactively. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -120,7 +120,30 @@ sfCalendar.SelectionMode = CalendarSelectionMode.Multiple;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Selection)
 
-## Selected date changed notification
+## Select a date range
+
+You can select a range of dates in `Calendar` control by changing the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionMode) property value to `Range`. You can get the selected dates collection from the [SelectedDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDates) property.
+
+N> `SelectedDates` property collection will be empty if the `SelectionMode` value is *None* or *Single*. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<calendar:SfCalendar Name="sfCalendar" 
+                     SelectionMode="Range" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfCalendar sfCalendar= new SfCalendar();
+sfCalendar.SelectionMode = CalendarSelectionMode.Range;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Date range selection in WinUI Calendar](Getting-Started_images/date-range-selection.png)
+
+## Selection changed notification
 
 You will be notified when selected date changed in `Calendar` by using [SelectedDateChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDateChanged) event. The [SelectedDateChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SelectedDateChangedEventArgs.html) event contains the old and newly selected date in the [OldDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SelectedDateChangedEventArgs.html#Syncfusion_UI_Xaml_Calendar_SelectedDateChangedEventArgs_OldDate), [NewDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SelectedDateChangedEventArgs.html#Syncfusion_UI_Xaml_Calendar_SelectedDateChangedEventArgs_NewDate) properties.
 
@@ -156,48 +179,12 @@ private void SfCalendar_SelectedDateChanged(object sender, SelectedDateChangedEv
 {% endhighlight %}
 {% endtabs %}
 
-## First day of week
+## Restrict selection
 
-By default, Sunday is shown as the first day of the week. If you want to change the first day of week, use the [FirstDayOfWeek](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_FirstDayOfWeek) property value. The default value of `FirstDayOfWeek` property is `Sunday`.
+You can restrict users from selecting single or multiple dates within a specific minimum and maximum range or by blocking unwanted dates using blackout dates or by blocking specific set of dates (blocking weekend dates).
 
-{% tabs %}
-{% highlight xaml %}
+## Navigation between views
 
-<calendar:SfCalendar x:Name="sfCalendar" 
-                     FirstDayOfWeek="Monday"/>
+You can navigate between month, year, decade and century views in `Calendar` control. You can also restrict the users to navigate between specific views only (month and year selection for credit card).
 
-{% endhighlight %}
-{% highlight C# %}
-
-SfCalendar sfCalendar = new SfCalendar();
-sfCalendar.FirstDayOfWeek = DayOfWeek.Monday;
-
-{% endhighlight %}
-{% endtabs %}
-
-![WinUI Calendar weekdays start from Monday](Getting-Started_images/first-day-of-week.png)
-
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Selection)
-
-## Hide days that is out of scope
-
-By default, out of scope days are disabled. If you want to hide the days that are out of the scope of current view, use the [OutOfScopeVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_OutOfScopeVisibility) property value as `Hidden`. The default value of `OutOfScopeVisibility` property is `Disabled`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<calendar:SfCalendar OutOfScopeVisibility="Hidden"
-                     x:Name="sfCalendar"/>
-
-{% endhighlight %}
-{% highlight C# %}
-
-SfCalendar sfCalendar = new SfCalendar();
-sfCalendar.OutOfScopeVisibility = OutOfScopeVisibility.Hidden;
-
-{% endhighlight %}
-{% endtabs %}
-
-![Display only the current month dates in WinUI Calendar.](Getting-Started_images/disableoutofscope.png)
-
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction)
+You can navigate within a view horizontally or veritically. By default, navigation direction is vertical within a view either by mouse scrolling or by navigation buttons.

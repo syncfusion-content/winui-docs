@@ -9,7 +9,7 @@ documentation: ug
 
 # Restrict Date selection in WinUI Calendar
 
-## Limit date selection
+## Restrict selection
 
 You can restrict the users from selecting a date within the particular range by specifying [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MinDate) and [MaxDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MaxDate) properties. The default value of `MinDate` property is `1/1/1920 12:00:00 AM +00:00` and `MaxDate` property is `12/31/2120 11:59:59 PM +00:00`.
 
@@ -29,7 +29,7 @@ sfCalendar.MaxDate = new DateTimeOffset(new DateTime(2021, 03, 23));
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction)
 
-## Block dates using BlackoutDates
+## Disable dates using BlackoutDates
 
 If you want to block particular dates from the date selection, add those dates in the [BlackoutDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_BlackoutDates) collection. You can add more blackout dates to the `BlackoutDates` collection. The default value of `BlackoutDates` property is `null`.
 
@@ -85,11 +85,11 @@ sfCalendar.BlackoutDates = (sfCalendar.DataContext as ViewModel).BlockedDates;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/BlackoutDates)
 
-## Disable/block all weekends
+## Disable dates dynamically
 
-You can prevent the users from selecting weekend days or any other dates or days by handling the [ItemPrepared](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_ItemPrepared) event and setting [ItemInfo.IsBlackout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemPreparedEventArgs.html#Syncfusion_UI_Xaml_Calendar_CalendarItemPreparedEventArgs_ItemInfo) property value as `true` for that specific dates.
+You can prevent the users from selecting dates or days(example: all weekend days) by handling the [ItemPrepared](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_ItemPrepared) event and setting [ItemInfo.IsBlackout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemPreparedEventArgs.html#Syncfusion_UI_Xaml_Calendar_CalendarItemPreparedEventArgs_ItemInfo) property value as `true` for that specific days or dates.
 
-You can also change the text to be displayed for specific days or dates in `Calendar` using [ItemInfo.DisplayText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_DisplayText) property. 
+
 
 {% tabs %}
 {% highlight xaml %}
@@ -125,6 +125,28 @@ private void SfCalendar_ItemPrepared(object sender, CalendarItemPreparedEventArg
 {% endtabs %}
 
 ![Calendar restrict the weekend dates from selection](Getting-Started_images/blockweekend.png)
+
+You can also change the text to be displayed for specific days or dates in `Calendar` using [ItemInfo.DisplayText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_DisplayText) property. 
+
+{% tabs %}
+{% highlight C# %}
+
+private void SfCalendar_ItemPrepared(object sender, CalendarItemPreparedEventArgs e)
+{
+    //Block all weekend days
+    if (e.ItemInfo.ItemType == CalendarItemType.Day &&
+        (e.ItemInfo.Date.DayOfWeek == DayOfWeek.Saturday ||
+        e.ItemInfo.Date.DayOfWeek == DayOfWeek.Sunday))
+    {
+        e.ItemInfo.IsBlackout = true;
+        e.ItemInfo.DisplayText = "X";
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Calendar restrict the weekend dates from selection and sets display text](Restrict-Date-Selection-images/display-text-change.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Formatting)
 
