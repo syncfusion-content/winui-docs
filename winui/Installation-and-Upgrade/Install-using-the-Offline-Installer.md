@@ -10,7 +10,7 @@ documentation: ug
 
 # Installation using Offline Installer
 
-You can also refer to the [**Download**](https://help.syncfusion.com/winui/installation-and-upgrade/download) section to learn how to get the WinUI trial or licensed installer.
+You can refer to the [**Download**](https://help.syncfusion.com/winui/installation-and-upgrade/download) section to learn how to get the WinUI trial or licensed installer.
 
 ## Installing with UI   
 
@@ -52,7 +52,7 @@ The steps below show how to install the Essential Studio WinUI platform.
 3.	After reading the License Terms and Privacy Policy, check the **“I agree to the License Terms and Privacy Policy”** check box. Click the Next button.
 
 
-4.	Change the install and sample locations here. You can also change the Additional settings. Click Install to install with the default settings.
+4.	Change the install and sample locations here. You can also change the Additional settings. Click Next\Install to install with the default settings.
 
 
     ![Advanced options](Platform_images/Step-by-Step-Installation_img4.png)
@@ -66,7 +66,7 @@ The steps below show how to install the Essential Studio WinUI platform.
 
 
 
-5.	If any previous versions of the current platform is installed, the same Advanced Options screen. Select **Uninstall** checkbox to uninstall the previous versions. Click Proceed.
+5.	If any previous versions of the current platform is installed, the Uninstall Previous Version(s) wizard will be opened. Select **Uninstall** checkbox to uninstall the previous versions and then click the Proceed button.
 
 
     ![Advanced options](Platform_images/Step-by-Step-Installation_img7.png)
@@ -77,7 +77,7 @@ The steps below show how to install the Essential Studio WinUI platform.
 	
 	N> If any version is selected to uninstall, a confirmation screen will appear; if continue is selected, the Progress screen will display the uninstall and install progress, respectively. If none of the versions are chosen to be uninstalled, only the installation progress will be displayed.
 	
-	** Confirmation Alert**
+	**Confirmation Alert**
 	
 	![Confirmation wizard](Platform_images/Step-by-Step-Installation_img8.png)
 	

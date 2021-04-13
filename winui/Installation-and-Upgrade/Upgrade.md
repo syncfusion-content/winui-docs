@@ -18,7 +18,7 @@ See our "[**Upgrade Guide**](https://help.syncfusion.com/upgrade-guide/winui-con
 
 ## Upgrading to the latest version
 
-You can download and upgrade the Syncfusion Essential Studio WinUI to the most recent version by clicking the "Latest Version: {version}" link at the top of Syncfusion WinUI Control Panel.
+The most recent version of Syncfusion WinUI can be downloaded and installed by clicking on the "Latest Version: {Version}" link at the top of the Syncfusion WinUI Control Panel.
 
 ![Control Panel](Upgrade-images/upgrade-control-panel.png)
 
