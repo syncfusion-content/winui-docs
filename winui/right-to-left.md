@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Right-to-left in WinUI controls | Syncfusion
-description: Learn here about Right-to-left FlowDirection support in Syncfusion WinUI control and more details. 
+description: Learn here about Right-to-left FlowDirection support in Syncfusion WinUI Project Reunion controls and more details. 
 platform: WinUI
-control: TreeView
+control: RightToLeft
 documentation: ug
 ---
 
