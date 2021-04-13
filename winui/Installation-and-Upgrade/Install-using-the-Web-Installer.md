@@ -141,7 +141,7 @@ The steps below show how to install Essential Studio WinUI Web Installer.
 	
 ## Uninstallation
 
-Syncfusion WinUI installer can be uninstalled in two ways
+Syncfusion WinUI installer can be uninstalled in two ways.
 
     * Uninstall the WinUI using the Syncfusion WinUI web installer
     * Uninstall the WinUI from Windows Control Panel
