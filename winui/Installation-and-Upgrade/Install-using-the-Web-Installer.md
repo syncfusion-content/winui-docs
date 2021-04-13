@@ -158,7 +158,7 @@ The steps below show how to uninstall Essential Studio Platform using Web Instal
 	
 	Or you can select the Syncfusion Essential Studio for WinUI {version} entry from Windows control panel to uninstall WinUI alone.
 	
-	![Control Panel](WebInstaller/Step-by-Step-Installation_img21.png)
+	![Control Panel](WebInstaller/Step-by-Step-Installation_img22.png)
 	
    
 3.  The Platform Selection Wizard will appear. From the **Installed** tab, select the platforms to be uninstalled. To select all platforms, check the **Uninstall All** checkbox. Click the Next button.
