@@ -11,9 +11,7 @@ documentation: ug
 
 This section explains about how to work with MVVM pattern in [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html).
 
-## Binding properties in MVVM pattern
-
-### Binding SelectedItem
+## Binding SelectedItem
 
 The `TreeView` provides support to select the items through binding the [SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItem) property from view model by implementing the `INotifyPropertyChanged` interface that gives the call back notification to UI.
 
@@ -192,7 +190,7 @@ public class SelectionModel : NotificationObject
 
 ![WinUI TreeView with MVVM selection](MVVM_images/SelectedItem_image.jpg)
 
-### Binding SelectedItems
+## Binding SelectedItems
 
 The `TreeView` supports to select multiple items through binding the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItems) property from view model with `ObservableCollection<object>` type. 
 
@@ -378,4 +376,7 @@ public class SelectionModel : NotificationObject
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/MVVM-with-Selection)
 
+## Built-in commands
+
+The TreeView provides support for the built-in commands. You can refer more information click [here](https://help.syncfusion.com/winui/treeview/contextflyout#built-in-commands).
 
