@@ -13,7 +13,7 @@ documentation: ug
 
 SfTreeGrid has [TreeGridIndexResolver](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridIndexResolver.html) static class present in the [Syncfusion.UI.Xaml.TreeGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.html) namespace has some extension methods to resolve from row or column index to node or visible column index and vice-versa.
 
-For example, you can get a node from its row index using the [GetNodeAtRowIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridIndexResolver.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridIndexResolver_GetNodeAtRowIndex_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_System_Int32_) method.
+For example, you can get a node from its row index using the [GetNodeAtRowIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridIndexResolver.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridIndexResolver_GetNodeAtRowIndex_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_System_Int32_) method.
 
 {% tabs %}
 {% highlight c# %}
