@@ -146,7 +146,7 @@ Syncfusion WinUI installer can be uninstalled in two ways.
    * Uninstall the WinUI using the Syncfusion WinUI web installer
    * Uninstall the WinUI from Windows Control Panel
 
-1.  Follow either one of the option below to uninstall Syncfusion Essential Studio WinUI installer.
+1. Follow either one of the option below to uninstall Syncfusion Essential Studio WinUI installer.
   
     **Option 1: Uninstall the WinUI using the Syncfusion WinUI web installer**
 
