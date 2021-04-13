@@ -10,11 +10,13 @@ documentation: ug
 
 # Installation using Offline Installer
 
+You can refer to the [Download](https://help.syncfusion.com/winui/installation-and-upgrade/download) section to download trial or licensed WinUI installer.
+
 ## Installing with UI   
 
 The steps below show how to install the Essential Studio WinUI platform.
 
-1.	Open the Syncfusion WinUI platform offline installer file by double-clicking it. The Installer Wizard automatically opens and extracts the package
+1.	Open the Syncfusion WinUI platform offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
 
     ![Installer extraction wizard](Platform_images/Step-by-Step-Installation_img1.png)
 
@@ -64,7 +66,7 @@ The steps below show how to install the Essential Studio WinUI platform.
 
 
 
-5.	If any previous versions of the current platform is installed, in the same Advanced Options screen, click Next to select the versions to be uninstalled, then click Proceed
+5.	If any previous versions of the current platform is installed, in the same Advanced Options screen. select **Uninstall** checkbox to uninstall the previous versions. Click Proceed.
 
 
     ![Advanced options](Platform_images/Step-by-Step-Installation_img7.png)
@@ -72,27 +74,20 @@ The steps below show how to install the Essential Studio WinUI platform.
 	
 	N> From the 2021 Volume 1 release, Syncfusion has added the option to uninstall previous versions from 18.1 while installing the new version.
 	
-
-6.	Click Proceed. A confirmation window will appear to confirm the removal of the selected products. Continue by clicking the Continue button
-
-	![Uninstalling wizard](Platform_images/Step-by-Step-Installation_img10.png)
-	
 	
 	N> If any version is selected to uninstall, a confirmation screen will appear; if continue is selected, the Progress screen will display the uninstall and install progress, respectively. If none of the versions are chosen to be uninstalled, only the installation progress will be displayed.
 	
 	
-	![Uninstalling wizard](Platform_images/Step-by-Step-Installation_img8.png)
-
-
+	![Confirmation wizard](Platform_images/Step-by-Step-Installation_img8.png)
+	
+	![Uninstalling wizard](Platform_images/Step-by-Step-Installation_img9.png)
+	
 	![Installing wizard](Platform_images/Step-by-Step-Installation_img5.png)
+
+    N> The Completed screen is displayed once the WinUI platform is installed. If any version is selected to uninstall, The completed screen will display both install and uninstall status.
 	
+	![Completed wizard](Platform_images/Step-by-Step-Installation_img10.png)
 	
-	N> When the package is installed, the Completed screen appears. If a version is chosen to be uninstalled, the completed screen will show both the install and uninstall status.
-
-    
-	![Installation completed](Platform_images/Step-by-Step-Installation_img9.png)
-
-
 7.  After installing, click the **Launch Control Panel** link to open the Syncfusion Control Panel.
 
 
