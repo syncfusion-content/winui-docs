@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Data Population in WinUI TreeView control | Syncfusion
-description: Learn about Data Population support in Syncfusion WinUI TreeView control and more details.
+title: Data Binding in WinUI TreeView control | Syncfusion
+description: This section displays about the binding of the data in syncfusion WinUI TreeView control and more details.
 platform: WinUI
 control: TreeView
 documentation: ug
 ---
-# Data Population in WinUI TreeView
+# Data Binding in WinUI TreeView
 
 The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) can be populated either with the data source by using a [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) property or by creating and adding the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) in hierarchical structure to [Nodes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) property.
 
@@ -235,7 +235,7 @@ To create a TreeView using data binding, set a hierarchical data collection to t
 {% endhighlight %}
 {% endtabs %}
 
-![Populating Nodes by data binding](DataPopulation_images/Bound_mode.jpg)
+![Populating Nodes by data binding](Data-Binding_images/Bound_mode.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Populating-Nodes-with-Bound-mode)
 
@@ -327,6 +327,6 @@ You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/winu
 {% endhighlight %}
 {% endtabs %}
 
-![Populating nodes without datasource in TreeView ](DataPopulation_images/Unbound_mode.jpg)
+![Populating nodes without datasource in TreeView ](Data-Binding_images/Unbound_mode.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Populating-Nodes-with-Unbound-mode)
