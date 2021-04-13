@@ -1194,7 +1194,7 @@ N>
 * The time zone support is applicable for the custom appointments too. So, you need to map the corresponding property.
 * You can use TimeZone for custom appointments by mapping the `StartTimeZone` and `EndTimeZone` custom properties of `AppointmentMapping.`
 
-## Display Appointments based on client’s time zone
+## Display appointments based on client’s time zone
 
 You can display the appointments based on the client’s local time zone in the scheduler. For example, consider a scenario that you are in North Carolina and you want to set up a meeting at 10 A.M. on North Carolina time. You have colleagues in London and Chennai, and they also need to participate. The time for this meeting will be 3 P.M. (15:00) in London and 5.30 A.M. in Chennai. When you each view your Scheduler, you need to see the appointment displayed relative to your local time zones 5.30 A.M., 10 A.M., and 3 P.M., respectively. It can be achieved by setting schedule time zone to default (it will consider your device’s local time zone as schedule time zone) and appointment’s time zone to `Eastern Standard Time (North Carolina)` [as you are in North Carolina and its time zone is Eastern Standard Time].
 
@@ -1218,7 +1218,7 @@ this.Schedule.TimeZone = "Central America Standard Time";
 
 You can display appointments at the same time everywhere without considering the time zone when you set the [TimeZone](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_TimeZone) property of scheduler, the [StartTimeZone](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_StartTimeZone), and [EndTimeZone](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_EndTimeZone) properties of [ScheduleAppointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) to null. The appointments will be displayed based on the given `StartTime` and `EndTime` of appointments everywhere without considering the time zone.
 
-## Updating StartTime and EndTime after drag and drop appointment based on time zone.
+## Updating start and end time after drag and drop appointment based on time zone.
 
 After rescheduling an appointment using drag and drop, the appointment’s start and end time value will be updated based on scheduler time zone and appointment’s time zone.
 
