@@ -181,10 +181,12 @@ private void SfCalendar_SelectedDateChanged(object sender, SelectedDateChangedEv
 
 ## Restrict selection
 
-You can restrict users from selecting single or multiple dates within a specific minimum and maximum range or by blocking unwanted dates using blackout dates or by blocking specific set of dates (blocking weekend dates).
+You can restrict users from selecting single or multiple dates within a specific minimum and maximum range or by blocking unwanted dates using blackout dates or by blocking specific set of dates (blocking weekend dates). 
+
+For brief explanation of selection restriction in `Calendar` control [click here](Selection.md).
 
 ## Navigation between views
 
 You can navigate between month, year, decade and century views in `Calendar` control. You can also restrict the users to navigate between specific views only (month and year selection for credit card).
 
-You can navigate within a view horizontally or vertically. By default, navigation direction is vertical within a view either by mouse scrolling or by navigation buttons.
+You can navigate within a view horizontally or vertically. By default, navigation direction is vertical within a view either by mouse scrolling or by navigation buttons. For brief explanation of navigation between views in `Calendar` control [click here](Navigation.md).
