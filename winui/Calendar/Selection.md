@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Navigation between views in WinUI Calendar control | Syncfusion
-description: This section describes how to navigate between views in the Calendar (SfCalendar) control in WinUI applications.
+title: Selection in WinUI Calendar control | Syncfusion
+description: This section describes about selection of a date or multiple dates in the Calendar (SfCalendar) control in WinUI applications.
 platform: WinUI
 control: SfCalendar
 documentation: ug
