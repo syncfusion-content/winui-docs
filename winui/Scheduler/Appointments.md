@@ -46,47 +46,46 @@ The Scheduler supports to bind any collection that implements the `IEnumerable` 
 <table>
 <tr><th>Property Name</th><th>Description</th></tr>
 <tr><td>{{'[StartTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_StartTime)'| markdownify }}</td>
-<td>Maps the property name of a custom class, which is equivalent to the StartTime of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the StartTime of ScheduleAppointment.</td></tr>
 <tr><td>{{'[EndTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_EndTime)'| markdownify }}</td>
-<td>Maps the property name of a custom class, which is equivalent to the EndTime of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the EndTime of ScheduleAppointment.</td></tr>
 <tr><td>{{'[StartTimeZone](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_StartTimeZone)'| markdownify }}</td>
-<td>Maps the property name of a custom class, which is equivalent to the StartTimeZone of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the StartTimeZone of ScheduleAppointment.</td></tr>
 <tr><td>{{'[EndTimeZone](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_EndTimeZone)'| markdownify }}</td>
-<td>Maps the property name of a custom class, which is equivalent to the EndTimeZone of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the EndTimeZone of ScheduleAppointment.</td></tr>
 <tr><td>{{'[Subject](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Subject)'| markdownify }}</td>
-<td>Maps the property name of a custom class, which is equivalent to the Subject of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the Subject of ScheduleAppointment.</td></tr>
 <tr><td>{{'[Id](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Id)'| markdownify }}</td>
-<td>Maps the property name of a custom class, which is equivalent to the Id of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the Id of ScheduleAppointment.</td></tr>
 <tr><td>{{'[AppointmentBackground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_AppointmentBackground)'| markdownify }}</td>
-<td>Maps the property name of a custom class, which is equivalent to the AppointmentBackground of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the AppointmentBackground of ScheduleAppointment.</td></tr>
 <tr><td>{{'[Foreground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Foreground)'| markdownify }}</td>
-<td>Maps the property name of a custom class, which is equivalent to the  Foreground of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the  Foreground of ScheduleAppointment.</td></tr>
 <tr><td>{{'[IsAllDay](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_IsAllDay)'| markdownify }}</td>
-<td>Maps the property name of a custom class, which is equivalent to the IsAllDay of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the IsAllDay of ScheduleAppointment.</td></tr>
 <tr><td>{{'[RecurrenceRule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceRule)'| markdownify }}</td>
-<td>Maps the property name of a custom class, which is equivalent to the RecurrenceRule of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the RecurrenceRule of ScheduleAppointment.</td></tr>
 <tr><td>{{'[RecurrenceId](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceId)'| markdownify }}</td>
-<td>Maps the property name of a custom class, which is equivalent to the RecurrenceId of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the RecurrenceId of ScheduleAppointment.</td></tr>
 <tr><td>{{'[Notes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Notes)'| markdownify }}</td>
-<td>Maps the property name of a custom class, which is equivalent to the Notes of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the Notes of ScheduleAppointment.</td></tr>
 <tr><td>{{'[Location](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Location)'| markdownify }}</td>
-<td>Maps the property name of a custom class, which is equivalent to the Location of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the Location of ScheduleAppointment.</td></tr>
 <tr><td>{{'[RecurrenceExceptionDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceExceptionDates)'| markdownify }}</td>
-<td>Maps the property name of a custom class, which is equivalent to the RecurrenceExceptionDates of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the RecurrenceExceptionDates of ScheduleAppointment.</td></tr>
 <tr><td>{{'[ResourceIdCollection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_ResourceIdCollection)'| markdownify }}</td>
-<td>Maps the property name of a custom class, which is equivalent to the ResourceIdCollection of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the ResourceIdCollection of ScheduleAppointment.</td></tr>
 </table>
 
-N> The CustomAppointment class should contain event start and end date-time fields as mandatory.
+N> The business object class should contain event start and end DateTime fields as mandatory.
 
 ## Creating business objects
-
-You can create a custom class `Meeting` with mandatory fields `From,` `To,` and `EventName.`
+You can create a business object class `Meeting` with mandatory fields `From,` `To,` and `EventName.`
 
 {% tabs %}
 {% highlight c# %}
 /// <summary>   
-/// Represents the custom data properties.   
+/// Represents the business object data properties.   
 /// </summary> 
 public class Meeting
 {
@@ -99,7 +98,7 @@ public class Meeting
 {% endhighlight %}
 {% endtabs %}
 
-N> You can map those properties of the `Meeting` class to schedule appointment by using the `AppointmentMapping` properties.
+You can map those properties of the `Meeting` class to schedule appointment by using the `AppointmentMapping` properties.
 
 {%tabs %}
 {% highlight xaml %}
@@ -115,7 +114,7 @@ N> You can map those properties of the `Meeting` class to schedule appointment b
 </scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-//Schedule data mapping for custom appointments.
+//Schedule data mapping for business objects.
 AppointmentMapping dataMapping = new AppointmentMapping();
 dataMapping.Subject = "EventName";
 dataMapping.StartTime = "From";
@@ -126,11 +125,11 @@ Schedule.AppointmentMapping = dataMapping;
 {% endhighlight %}
 {% endtabs %}
 
-You can schedule meetings for a day by setting the `From` and `To` of Meeting class. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection Meetings to the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ItemsSource) property which is of `IEnumerable` type.
+You can schedule meetings for a day by setting the `From` and `To` of `Meeting` class. Create meetings of type `ObservableCollection<Meeting>` and assign those appointments collection `Meetings` to the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ItemsSource) property which is of `IEnumerable` type.
 
 {% tabs %}
 {% highlight c# %}
-//Creating an instance for the custom appointment class.
+//Creating an instance for the business object class.
 Meeting meeting = new Meeting();
 //Setting the start time of an event.
 meeting.From = new DateTime(2021, 03, 23, 10, 0, 0);
@@ -142,16 +141,16 @@ meeting.EventName = "Meeting";
 meeting.BackgroundColor = new SolidColorBrush(Colors.Green);
 //Setting the foreground color for an event.
 meeting.ForegroundColor = new SolidColorBrush(Colors.White);
-//Creating an instance for the collection of custom appointments.
+//Creating an instance for the collection of business objects.
 var Meetings = new ObservableCollection<Meeting>();
-//Adding a custom appointment in the CustomAppointmentCollection.
+//Adding a business object to the business object Collection.
 Meetings.Add(meeting);
-//Adding custom appointments in the ItemsSource of SfScheduler.
+//Adding business object in the ItemsSource of SfScheduler.
 Schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {% endtabs%}
 
-![custom-appointment-in-winui-scheduler](Appointment_Images/adding-custom-appointment-in-winui-scheduler.png)
+![business-objects-in-winui-scheduler](Appointment_Images/adding-custom-appointment-in-winui-scheduler.png)
 
 ## Spanned appointments
 
@@ -171,9 +170,9 @@ Spanned Appointment is an appointment that lasts more than 24 hours. It does not
 </scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-// Creating an instance for the collection of custom appointments.
+// Creating an instance for the collection of business objects.
 var Meetings = new ObservableCollection<Meeting>();
-// Creating an instance for the custom appointment class.
+// Creating an instance for the business object class.
 Meeting meeting = new Meeting();
 // Setting the start time of an event.
 meeting.From = new DateTime(2021, 03, 23, 10, 0, 0);
@@ -185,7 +184,7 @@ meeting.EventName = "Meeting";
 meeting.BackgroundColor = new SolidColorBrush(Colors.MediumPurple);
 // Setting the foreground color for an event.
 meeting.ForegroundColor = new SolidColorBrush(Colors.White);
-// Adding a custom appointment in the CustomAppointmentCollection.
+// Adding a business object in the business object collection.
 Meetings.Add(meeting);
 //Adding schedule appointment collection to the ItemsSource of SfSchedule.
 Schedule.ItemsSource = Meetings;
@@ -290,14 +289,14 @@ Schedule.ItemsSource = scheduleAppointmentCollection;
 
 ![recurrence-appointment-in-winui-scheduler](Appointment_Images/adding-recurrence-appointment-in-winui-scheduler.png)
 
-### Creating the custom recurrence appointment
+### Creating the business object recurrence appointment
 
-For creating the custom recurrence appointment, you need to create a custom class Meeting with mandatory fields `from,` `to,` and `recurrenceRule.`
+For creating the business object recurrence appointment, you need to create a business object class Meeting with mandatory fields `from,` `to,` and `recurrenceRule.`
 
 {% tabs %}
 {% highlight c# %}
 /// <summary>   
-/// Represents the custom data properties.   
+/// Represents the business object data properties.   
 /// </summary> 
 public class Meeting
 {
@@ -312,7 +311,7 @@ public class Meeting
 {% endhighlight %}
 {% endtabs %}
 
-N> You can map those properties of the `Meeting` class to schedule appointments by using the `AppointmentMapping` properties.
+You can map those properties of the `Meeting` class to schedule appointments by using the `AppointmentMapping` properties.
 
 {%tabs %}
 {% highlight xaml %}
@@ -330,7 +329,7 @@ N> You can map those properties of the `Meeting` class to schedule appointments 
 </scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-//Schedule data mapping for custom appointments.
+//Schedule data mapping for business objects.
 AppointmentMapping dataMapping = new AppointmentMapping();
 dataMapping.Subject = "EventName";
 dataMapping.StartTime = "From";
@@ -343,11 +342,11 @@ Schedule.AppointmentMapping = dataMapping;
 {% endhighlight %}
 {% endtabs %}
 
-You can schedule the recurring meetings for daily, weekly, monthly, or yearly intervals by setting the [RecurrenceRule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceRule) of Meeting class. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection Meetings to the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ItemsSource) property which is of IEnumerable type.
+You can schedule the recurring meetings for daily, weekly, monthly, or yearly intervals by setting the [RecurrenceRule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceRule) of `Meeting` class. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection `Meetings` to the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ItemsSource) property which is of IEnumerable type.
 
 {% tabs %}
 {% highlight c# %}
-//Creating an instance for the custom appointment class.
+//Creating an instance for the business object class.
 Meeting meeting = new Meeting();
 //Setting the start time of an event.
 meeting.From = new DateTime(2021, 03, 28, 10, 0, 0);
@@ -364,14 +363,14 @@ meeting.RecurrenceRule = "FREQ=DAILY;INTERVAL=2;COUNT=10";
 // Setting the Id of an event.
 meeting.Id = 1;
 var Meetings = new ObservableCollection<Meeting>();
-//Adding a custom appointment in the CustomAppointmentCollection.
+//Adding a business object in the business object collection.
 Meetings.Add(meeting);
-//Adding custom appointments in the ItemsSource of SfScheduler.
+//Adding business objects in the ItemsSource of SfScheduler.
 Schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {% endtabs%}
 
-### How to get the Recurrence editor field values from RRULE?
+### How to get the recurrence editor field values from RRULE?
 
 You can get the Recurrence properties from the [RRULE](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.RecurrenceHelper.html#Syncfusion_UI_Xaml_Scheduler_RecurrenceHelper_CreateRRule_Syncfusion_UI_Xaml_Scheduler_RecurrenceProperties_System_DateTime_System_DateTime_) using the [RRuleParser](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.RecurrenceHelper.html#Syncfusion_UI_Xaml_Scheduler_RecurrenceHelper_RRuleParser_System_String_System_DateTime_) method of SfScheduler.
 
@@ -406,7 +405,7 @@ var date2 = 30-03-2021 09:00:00;
 
 ### How to get pattern appointment for the specified occurrence?
 
-Gets the pattern appointment for the specified occurrence.
+Gets the [pattern appointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.RecurrenceHelper.html#Syncfusion_UI_Xaml_Scheduler_RecurrenceHelper_GetPatternAppointment_Syncfusion_UI_Xaml_Scheduler_SfScheduler_System_Object_) for the specified occurrence.
 
 To get the pattern appointment by using the following event and passing a parameter as Scheduler and Specified `Appointment.`
 
@@ -425,12 +424,12 @@ private void Schedule_AppointmentTapped(object sender, AppointmentTappedArgs e)
 {% endtabs%}
 
 N>
-* For a custom appointment, you can pass e.Appointment.Data as a param, you can get the custom appointment details from the `Data` property of `ScheduleAppointment.`
-* If a specified occurrence is changed, the `GetPatternAppointment` method returns the pattern appointment of exception appointment.
+* For a business object, you can pass `e.Appointment.Data` as a param, you can get the business object details from the `Data` property of `ScheduleAppointment.`
+* If a specified occurrence is changed, the [GetPatternAppointment()](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.RecurrenceHelper.html#Syncfusion_UI_Xaml_Scheduler_RecurrenceHelper_GetPatternAppointment_Syncfusion_UI_Xaml_Scheduler_SfScheduler_System_Object_) returns the pattern appointment of exception appointment.
 
 ### How to get occurrence appointment at the specified date?
 
-Gets an occurrence at the specified date within a series of recurring appointments.
+Gets an [occurrence appointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.RecurrenceHelper.html#Syncfusion_UI_Xaml_Scheduler_RecurrenceHelper_GetOccurrenceAppointment_Syncfusion_UI_Xaml_Scheduler_SfScheduler_System_Object_System_DateTime_) at the specified date within a series of recurring appointments.
 
 To get a specific appointment by using the following event and passing a parameter as Scheduler, Specified `Appointment,` and specified `DateTime.`
 
@@ -448,7 +447,7 @@ private void Schedule_AppointmentTapped(object sender, AppointmentTappedArgs e)
 {% endhighlight %}
 {% endtabs%}
 
-N> If an occurrence at the specified date is deleted or not present, then the [GetOccurrenceAppointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.RecurrenceHelper.html#Syncfusion_UI_Xaml_Scheduler_RecurrenceHelper_GetOccurrenceAppointment_Syncfusion_UI_Xaml_Scheduler_SfScheduler_System_Object_System_DateTime_) method returns null.
+N> If an occurrence at the specified date is deleted or not present, then the [GetOccurrenceAppointment()](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.RecurrenceHelper.html#Syncfusion_UI_Xaml_Scheduler_RecurrenceHelper_GetOccurrenceAppointment_Syncfusion_UI_Xaml_Scheduler_SfScheduler_System_Object_System_DateTime_) returns null.
 
 ## Recurrence pattern exceptions
 
@@ -572,14 +571,14 @@ N>
 * The exception appointment should be a normal appointment and should not be created as a recurring appointment, since its occurrence is from a recurrence pattern.
 * The `RecurrenceExceptionDates` should be in a Universal Time Coordinates (UTC) time zone.
 
-### Create recurrence exceptions for custom appointment
+### Create recurrence exceptions for business object
 
-You can add the recurrence exception appointments and recurrence exception dates to the CustomAppointment or remove them from CustomAppointment, you can create a custom class `Meeting` with mandatory fields [RecurrenceExceptionDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceExceptionDates) and [RecurrenceId](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceId).
+You can add the recurrence exception appointments and recurrence exception dates to the business object or remove them from business object, you can create a business object class `Meeting` with mandatory fields [RecurrenceExceptionDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceExceptionDates) and [RecurrenceId](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceId).
 
 ### Delete occurrence from the recurrence pattern appointment or adding exception dates to recurrence pattern appointment
 
 You can delete any occurrence which is an exception from the recurrence pattern appointment by using the [RecurrenceExceptionDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html#Syncfusion_UI_Xaml_Scheduler_AppointmentMapping_RecurrenceExceptionDates) property of the [AppointmentMapping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) class which is used to map the exception dates to the schedule recurrence appointment. The deleted occurrence date will be considered as a recurrence exception date.
-To add the exception dates in the recurrence series of custom appointment, add the `RecurrenceExceptionDates,` `EventName,` `From,` `To,` `Color,` `RecurrenceRule` properties to the custom class `Meeting.`
+To add the exception dates in the recurrence series of business object, add the `RecurrenceExceptionDates,` `EventName,` `From,` `To,` `Color,` `RecurrenceRule` properties to the business object class `Meeting.`
 
 {% tabs %}
 {% highlight c# %}
@@ -598,7 +597,7 @@ public class Meeting
 {% endhighlight %}
 {% endtabs %}
 
-You should map this custom property `RecurrenceExceptionDates` of custom class with the `RecurrenceExceptionDates` property of `AppointmentMapping` class to map the exception dates to the scheduled appointment.
+You should map property `RecurrenceExceptionDates` of business object class with the `RecurrenceExceptionDates` property of `AppointmentMapping` class to map the exception dates to the scheduled appointment.
 
 {%tabs %}
 {% highlight xaml %}
@@ -622,10 +621,10 @@ You should map this custom property `RecurrenceExceptionDates` of custom class w
 </scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-// Creating an instance for custom appointment collection.
+// Creating an instance for business object collection.
 ObservableCollection<Meeting> customAppointmentCollection = new ObservableCollection<Meeting>();
 var exceptionDate = new DateTime(2021, 04, 01);
-//Adding custom appointment in the custom appointment collection. 
+//Adding business object in the business object collection. 
 var recurrenceAppointment = new Meeting()
 {
     From = new DateTime(2021, 03, 28, 10, 0, 0),
@@ -642,9 +641,9 @@ recurrenceAppointment.RecurrenceExceptions = new ObservableCollection<DateTime>(
 {
     exceptionDate
 };
-//Adding custom appointment in the custom appointment collection.
+//Adding business object in the business object collection.
 customAppointmentCollection.Add(recurrenceAppointment);
-//Adding custom appointment collection to the ItemsSource of SfScheduler.
+//Adding business object collection to the ItemsSource of SfScheduler.
 this.Schedule.ItemsSource = customAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
@@ -694,7 +693,7 @@ public ObservableCollection<Meeting> RecursiveAppointmentCollection
 {% endhighlight %}
 {% highlight c# %}
 this.RecursiveAppointmentCollection = new ObservableCollection<Meeting>();
-//Adding custom appointment in the custom appointment collection. 
+//Adding business object in the business object collection. 
 Meeting dailyEvent = new Meeting
 {
     EventName = "Daily scrum meeting",
@@ -705,7 +704,7 @@ Meeting dailyEvent = new Meeting
     RecurrenceRule = "FREQ=DAILY;INTERVAL=1;COUNT=10",
     Id = 1
 };
-//Adding custom appointment in the custom appointment collection.
+//Adding business object in the business object collection.
 RecursiveAppointmentCollection.Add(dailyEvent);
 
 //Add ExceptionDates to avoid occurrence on specific dates.
@@ -727,7 +726,7 @@ Meeting changedEvent = new Meeting
     RecurrenceId = 1
 };
 RecursiveAppointmentCollection.Add(changedEvent);
-//Adding custom appointment collection to the ItemsSource of SfScheduler.
+//Adding business object collection to the ItemsSource of SfScheduler.
 this.Schedule.ItemsSource = RecursiveAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
@@ -777,5 +776,5 @@ The default appearance of schedule appointment can be customized in all views by
 ![appearance-customization-in-winui-scheduler](Appointment_Images/adding-appearance-customization-in-winui-scheduler.png)
 
 N>  
-* By default, the `ScheduleAppointment` is set as the `DataContext` for the `AppointmentTemplate` and `AppointmentTemplateSelector` for both `ScheduleAppointment` and custom data object in the `ItemsSource` of SfScheduler.
-* The custom data object can be bound in the `AppointmentTemplate` and `AppointmentTemplateSelector` by using the property of `ScheduleAppointment.Data.`
+* By default, the `ScheduleAppointment` is set as the `DataContext` for the `AppointmentTemplate` and `AppointmentTemplateSelector` for both `ScheduleAppointment` and business object in the `ItemsSource` of SfScheduler.
+* The business object can be bound in the `AppointmentTemplate` and `AppointmentTemplateSelector` by using the property of `ScheduleAppointment.Data.`

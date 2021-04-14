@@ -21,7 +21,7 @@ This section explains the steps required to add the [TreeView](https://help.sync
 {% tabs %} 
 {% highlight xaml %} 
 
-<Page x:Class="syncfusion.treeviewdemos.winui.GettingStartedPage "
+<Page x:Class="syncfusion.treeviewdemos.winui.GettingStartedPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"

@@ -1,18 +1,16 @@
 ---
 layout: post
-title: Day and Week Views in WinUI Scheduler control | Syncfusion
-description: Learn here all about Day and Week Views support in Syncfusion WinUI Scheduler control and more details.
+title: Day, Week, Work Week views | WinUI | Scheduler | Syncfusion
+description: Learn how to customize the Scheduler Day, Week, Workweek views settings and its appearance in the WinUI Calendar (SfScheduler)
 platform: winui
 control: Scheduler
 documentation: ug
 ---
 
 # Day and Week Views in WinUI Scheduler
-
 The [Scheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) supports to display the day, week, workweek views, and the current day will be visible by default. The appointments on a specific day will be arranged in the respective timeslots based on their duration.
 
-## Change time interval
-
+## Change time duration
 You can customize the interval of timeslots in all the day, week, workweek views by using the [TimeInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeInterval) property of [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html).
 
 {% tabs %}
@@ -24,7 +22,7 @@ this.Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 120, 0);
 
 ![change-time-interval-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-change-time-interval-in-winui-scheduler.png)
 
-N> If you modify the timeInterval value (in minutes), you need to change the time labels format by setting the timeFormat value to hh:mm.
+N> If you modify the [TimeInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeInterval) value (in minutes), you need to change the time labels format by setting the [TimeRulerFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerFormat) value to hh:mm.
 
 ## Change time interval height
 
@@ -226,7 +224,7 @@ The [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 ![special-time-region-customization-in-datebasis-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-special-time-region-customization-in-datebasis-in-winui-scheduler.png)
 
-## Change time ruler size
+## Change time ruler width
 
 You can customize the size of the time ruler view where the labels mentioning the time are placed by using the [TimeRulerSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerSize) property of [DayViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html).
 

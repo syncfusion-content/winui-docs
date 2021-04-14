@@ -9,30 +9,7 @@ documentation: ug
 
 # Conditional styling in WinUIF DataGrid (SfDataGrid)
 
-You can style the DataGrid and its inner elements (cells, rows and columns) conditionally based on data Using StyleSelector 
-
-<table>
-<tr>
-<td>
-<th>
-Approach
-</th>
-</td>
-<td>
-<th>
-Performance
-</th>
-</td>
-</tr>
-<tr>
-<td>
-<code>Using StyleSelector</code>
-</td>
-<td>
-It affects scrolling performance while styling more number of columns based on number of columns visible.
-</td>
-</tr>
-</table>
+You can style the DataGrid and its inner elements (cells, rows and columns) conditionally based on data Using StyleSelector.
 
 ## Cell style
 

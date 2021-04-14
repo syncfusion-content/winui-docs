@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Load On Demand in WinUI Scheduler control | Syncfusion
-description: Learn here all about Load On Demand feature of Syncfusion WinUI Scheduler(SfScheduler) control and more.
+title: Load appointments on demand | WinUI | Scheduler | Syncfusion
+description: This section explains how to load appointments on-demand from visible date ranges in the Syncfusion WinUI Scheduler (SfScheduler)
 platform: winui
 control: Scheduler
 documentation: ug
 ---
 
-# Load On Demand in WinUI Scheduler
+# Load On Demand in WinUI Scheduler (SfScheduler)
 
 The scheduler supports loading appointments on-demand with loading indicator and it improves the loading performance when you have appointments range for multiple years.
 
-![load-appointments-on-demand-from-visible-date-ranges-in-winui-scheduler](LoadOnDemand_Image/load-appointments-on-demand-from-visible-date-ranges-in-winui-scheduler.gif)
+![load-appointments-on-demand-from-visible-date-ranges-in-winui-scheduler](LoadOnDemand_Images/load-appointments-on-demand-from-visible-date-ranges-in-winui-scheduler.gif)
 
 ## QueryAppointments event
 
@@ -253,3 +253,18 @@ The recurrence appointment should be added to the Scheduler `ItemsSource` until 
 If [RecurrenceRule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceRule) added with count or end date, you can use the [RecurrenceHelper.GetRecurrenceDateTimeCollection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.RecurrenceHelper.html#Syncfusion_UI_Xaml_Scheduler_RecurrenceHelper_GetRecurrenceDateTimeCollection_System_String_System_DateTime_System_Nullable_System_DateTime__System_Nullable_System_DateTime__) method to get the recurrence date collection and compare recursive dates in the current visible date range. Then, add the recurrence appointment in the scheduler [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ItemsSource). If the recursive dates are in the current visible date range.
 
 If the `RecurrenceRule` is added without an end date, then the recurrence appointment should be added in the scheduler `ItemsSource` when all the visible dates changed from the recurrence start date.
+
+## Show busy indicator
+
+The `Scheduler` supports showing the busy indicator by using the [ShowBusyIndicator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ShowBusyIndicator) property. The default value is set to `false.` If the value will be set to `true` then the busy indicator will be load on view or the visible date changed.
+
+{% tabs %}  
+{% highlight xaml %}
+<scheduler:SfScheduler x:Name="Schedule" ShowBusyIndicator="True">/> 
+{% endhighlight %}   
+{% highlight c# %}
+this.Schedule.ShowBusyIndicator = true;   
+{% endhighlight %}  
+{% endtabs %}  
+
+![busy-indicator-in-winui-scheduler](LoadOnDemand_Images/adding-busy-indicator-in-winui-scheduler.png)
