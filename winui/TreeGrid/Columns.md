@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Columns in WinUI TreeGrid control | Syncfusion
-description: Learn here all about Columns support in Syncfusion WinUI TreeGrid control and more details.
+description: Learn here all about Columns support in Syncfusion WinUI TreeGrid(SfTreeGrid) control and more details.
 platform: winui
 control: SfTreeGrid
 documentation: ug

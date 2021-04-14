@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in WinUI TreeGrid control | Syncfusion
-description: Learn here all about Data Binding support in Syncfusion WinUI TreeGrid control and more details.
+description: Learn here all about Data Binding support in Syncfusion WinUI TreeGrid(SfTreeGrid) control and more.
 platform: winui
 control: TreeGrid
 documentation: ug

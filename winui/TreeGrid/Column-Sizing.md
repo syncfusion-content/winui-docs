@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Sizing in WinUI TreeGrid control | Syncfusion
-description: Learn here all about Column Sizing support in Syncfusion WinUI TreeGrid control and more details.
+description: Learn here all about Column Sizing support in Syncfusion WinUI TreeGrid(SfTreeGrid) control and more.
 platform: winui
 control: SfTreeGrid
 documentation: ug
