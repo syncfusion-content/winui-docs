@@ -245,7 +245,7 @@ public class Folder : NotificationObject
 {% endhighlight %}
 {% endtabs %} 
 
-![Populating Nodes by data binding](DataPopulation_images/Bound_mode.jpg)
+![Populating Nodes by data binding](Data-Binding_images/Bound_mode.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Populating-Nodes-with-Bound-mode)
 
