@@ -146,7 +146,7 @@ Syncfusion WinUI installer can be uninstalled in two ways.
    * Uninstall the WinUI using the Syncfusion WinUI web installer
    * Uninstall the WinUI from Windows Control Panel
 
-1. Follow either one of the option below to uninstall Syncfusion Essential Studio WinUI installer.
+Follow either one of the option below to uninstall Syncfusion Essential Studio WinUI installer.
   
     **Option 1: Uninstall the WinUI using the Syncfusion WinUI web installer**
 
@@ -173,7 +173,7 @@ Syncfusion WinUI installer can be uninstalled in two ways.
 	
 	![MSI entry](WebInstaller/Step-by-Step-Installation_img23.png)
 
-2.  The Platform Selection Wizard will appear. From the **Installed** tab, select the platforms to be uninstalled. To select all platforms, check the **Uninstall All** checkbox. Click the Next button.
+1.  The Platform Selection Wizard will appear. From the **Installed** tab, select the platforms to be uninstalled. To select all platforms, check the **Uninstall All** checkbox. Click the Next button.
     
 	**Installed**
 	
@@ -185,37 +185,37 @@ Syncfusion WinUI installer can be uninstalled in two ways.
 	
 	![Platform Selection wizard Available](WebInstaller/Step-by-Step-Installation_img25.png)
 	
-3.  If any other platforms selected for installation, Uninstall previous version wizard will be displayed with previous version(s) installed for the selected platforms. Here you can view the list of installed previous versions for the selected platforms. Select **Uninstall All** checkbox to select all the versions. Click Next.
+2.  If any other platforms selected for installation, Uninstall previous version wizard will be displayed with previous version(s) installed for the selected platforms. Here you can view the list of installed previous versions for the selected platforms. Select **Uninstall All** checkbox to select all the versions. Click Next.
 
 	![Existing Version for install](WebInstaller/Step-by-Step-Installation_img20.png)
 	
-4.	Pop up screen will be displayed to get the confirmation to uninstall selected previous versions.
+3.	Pop up screen will be displayed to get the confirmation to uninstall selected previous versions.
 
 	![Existing Version for install](WebInstaller/Step-by-Step-Installation_img21.png)	
 	
-5.  The Confirmation Wizard will appear with the list of products to be installed/uninstalled. Here you can view and modify the list of platforms that will be installed/uninstalled.
+4.  The Confirmation Wizard will appear with the list of products to be installed/uninstalled. Here you can view and modify the list of platforms that will be installed/uninstalled.
 
     ![Confirmation for install/uninstall](WebInstaller/Step-by-Step-Installation_img15.png)
 	
 	N> You can check the Estimated size of the Download and Installation by clicking the **Download Size and Installation Size** link.
 	
-6.	The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a platform-by-platform basis. Click Next to install with the default settings.
+5.	The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a platform-by-platform basis. Click Next to install with the default settings.
 
     ![Install and samples location install/uninstall](WebInstaller/Step-by-Step-Installation_img8.png)
 	
-7.	After reading the License Terms and Conditions, check the **I agree to the License Terms and Privacy Policy** check box. Click the Next button.
+6.	After reading the License Terms and Conditions, check the **I agree to the License Terms and Privacy Policy** check box. Click the Next button.
 
-8.	The login wizard will appear. You must enter your Syncfusion email address and password. If you do not already have a Syncfusion account, you can create one by clicking on **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the Install button.
+7.	The login wizard will appear. You must enter your Syncfusion email address and password. If you do not already have a Syncfusion account, you can create one by clicking on **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the Install button.
 
     ![Login wizard install/uninstall](WebInstaller/Step-by-Step-Installation_img9.png)
 	
 	I> The platforms you have chosen will be installed based on your Syncfusion License (Trial or Licensed).
 
-9.	The download, installation, and uninstallation progresses will be shown.
+8.	The download, installation, and uninstallation progresses will be shown.
 
     ![Download and Installation progress install/uninstall](WebInstaller/Step-by-Step-Installation_img17.png)
 
-10.	When the installation is finished, the **Summary** wizard will appear. Here you can see the list of platforms that have been successfully and unsuccessfully installed/uninstalled. To close the Summary wizard, click Finish.
+9.	When the installation is finished, the **Summary** wizard will appear. Here you can see the list of platforms that have been successfully and unsuccessfully installed/uninstalled. To close the Summary wizard, click Finish.
 
     ![Summary install/uninstall](WebInstaller/Step-by-Step-Installation_img18.png)
 	
