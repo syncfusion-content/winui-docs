@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Restrict selection in WinUI CalendarDateRangePicker control|Syncfusion
-description: This section describes about how to restrict the date range selection in Calendar DateRangePicker control.
+description: This section describes about how to restrict the date range selection in WinUI Calendar DateRangePicker control.
 platform: WinUI
 control: SfCalendarDateRangePicker
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Restrict or limit date range selection in Calendar DateRangePicker
 
-## Limit date range
+## Limit available dates
 
-You can allow the users to select a date range within the particular range by specifying `MinDate` and `MaxDate` properties. The default value of `MinDate` property is `1/1/1920 12:00:00 AM +00:00` and `MaxDate` property is `12/31/2120 11:59:59 PM +00:00`.
+You can allow the users to select a date range within the particular range by specifying [`MinDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MinDate) and [`MaxDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MaxDate) properties. The default value of `MinDate` property is `1/1/1920 12:00:00 AM +00:00` and `MaxDate` property is `12/31/2120 11:59:59 PM +00:00`.
 
 N> Dates that appear outside minimum and maximum date range will be disabled (blackout).
 
@@ -34,9 +34,9 @@ sfCalendarDateRangePicker.MaxDate = new DateTimeOffset(new DateTime(2021, 03, 24
 
 N> The `MinDate` property value should not be greater than the `MaxDate` property value.
 
-## Block dates using BlackoutDates
+## Disable dates using BlackoutDates
 
-If you want to block particular dates from the date selection, add those dates in the `BlackoutDates` collection. You can add more block out dates to the `BlackoutDates` collection. The default value of `BlackoutDates` property is `null`.
+If you want to block particular dates from the date selection, add those dates in the [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_BlackoutDates) collection. You can add more block out dates to the `BlackoutDates` collection. The default value of `BlackoutDates` property is `null`.
 
 {% tabs %}
 {% highlight c# %}
@@ -90,9 +90,9 @@ sfCalendarDateRangePicker.BlackoutDates = (sfCalendarDateRangePicker.DataContext
 
 ![Calendar DateRangePicker blocks the particular dates in dropdown calendar](Getting-Started_images/BlackoutDates.png)
 
-## Disable/block all weekends
+## Disable dates dynamically
 
-You can prevent the users from selecting weekend days or any other dates by handling the `ItemPrepared` event and setting `ItemInfo.IsBlackout` property value as `true` for those specific dates.
+You can prevent the users from selecting any dates or days (example: all weekend days) by handling the [`ItemPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_ItemPrepared) event and setting [`ItemInfo.IsBlackout`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_IsBlackout) property value as `true` for those specific dates.
 
 N> You can also change the text to be displayed for specific days or dates in dropdown calendar using `ItemInfo.DisplayText` property.  
 
@@ -132,11 +132,31 @@ private void SfCalendarDateRangePicker_ItemPrepared(object sender, ItemPreparedE
 
 ![Calendar DateRangePicker restrict the weekend dates from selection](Getting-Started_images/blockweekend.png)
 
-N> Blackout dates will not be added in `SelectedRange` property if blackout dates is highlighted in dropdown selected range.
+You can also change the text to be displayed for specific days or dates in `Calendar DateRangePicker` using [ItemInfo.DisplayText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_DisplayText) property. 
+
+{% tabs %}
+{% highlight C# %}
+
+private void SfCalendarDateRangePicker_ItemPrepared(object sender, ItemPreparedEventArgs e)
+{
+    //Block all weekend days
+    if (e.ItemInfo.ItemType == CalendarItemType.Day &&
+        (e.ItemInfo.Date.DayOfWeek == DayOfWeek.Saturday ||
+        e.ItemInfo.Date.DayOfWeek == DayOfWeek.Sunday))
+    {
+        e.ItemInfo.IsBlackout = true;
+        e.ItemInfo.DisplayText = "X";
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N> Blackout dates will not be added in `SelectedRange` property even though it is highlighted in dropdown calendar.
 
 ## Limit duration of selected range
 
-You can limit the duration of selected range in `Calendar DateRangePicker` value by using `MinDatesCountInRange` and `MaxDatesCountInRange` properties.
+You can limit the duration of selected range in `Calendar DateRangePicker` value by using [`MinDatesCountInRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MinDatesCountInRange) and [`MaxDatesCountInRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MaxDatesCountInRange) properties. By default, the value of `MinDatesCountInRange` value is `0` and `MaxDatesCountInRange` value is `null`.
 
 {% tabs %}
 {% highlight C# %}

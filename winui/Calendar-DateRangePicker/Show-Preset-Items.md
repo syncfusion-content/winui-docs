@@ -61,44 +61,46 @@ Add the `Syncfusion.UI.Xaml.Calendar` namespace reference in code-behind.
     </Grid>
 </Page>
 
-
-
 {% endhighlight %}
 {% highlight c# %}
 
- private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
- {
-    ListBox listBox = sender as ListBox;
-    this.sfCalendarDateRangePicker.ShowCalendar = false;
-    if (listBox.SelectedItem.ToString() == "This Week")
-    {
-        DateTimeOffset startdate = DateTimeOffset.Now.AddDays(-(DateTimeOffset.Now.DayOfWeek - sfCalendarDateRangePicker.FirstDayOfWeek));
-        this.sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(startdate, startdate.AddDays(6));
-    }
-    else if (listBox.SelectedItem.ToString() == "This Month")
-    {
-        DateTimeOffset startdate = DateTimeOffset.Now.AddDays(-(DateTimeOffset.Now.Date.Day - 1));
-        this.sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(startdate, startdate.AddDays(DateTime.DaysInMonth(startdate.Year, startdate.Month) - 1));
-    }
-    else if (listBox.SelectedItem.ToString() == "Last Month")
-    {
-        DateTimeOffset startdate = DateTimeOffset.Now.AddMonths(1).AddDays(-(DateTimeOffset.Now.Date.Day - 1));
-        this.sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(startdate, startdate.AddDays(DateTime.DaysInMonth(startdate.Year, startdate.Month) - 1));
-    }
-    else if (listBox.SelectedItem.ToString() == "This Year")
-    {
-        DateTimeOffset startdate = DateTimeOffset.Now.AddMonths(-(DateTimeOffset.Now.Month - 1)).AddDays(-(DateTimeOffset.Now.Date.Day - 1));
-        this.sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(startdate, startdate.AddMonths(11).AddDays(DateTime.DaysInMonth(startdate.Year, startdate.Month) - 1));
-    }
-    else
-    {
-        this.sfCalendarDateRangePicker.SelectedRange = null;
-        this.sfCalendarDateRangePicker.ShowCalendar = true;
-    }
- }
+private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+{
+   ListBox listBox = sender as ListBox;
+   this.sfCalendarDateRangePicker.ShowCalendar = false;
+   if (listBox.SelectedItem.ToString() == "This Week")
+   {
+       DateTimeOffset startdate = DateTimeOffset.Now.AddDays(-(DateTimeOffset.Now.DayOfWeek - sfCalendarDateRangePicker.FirstDayOfWeek));
+       this.sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(startdate, startdate.AddDays(6));
+   }
+   else if (listBox.SelectedItem.ToString() == "This Month")
+   {
+       DateTimeOffset startdate = DateTimeOffset.Now.AddDays(-(DateTimeOffset.Now.Date.Day - 1));
+       this.sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(startdate, startdate.AddDays(DateTime.DaysInMonth(startdate.Year, startdate.Month) - 1));
+   }
+   else if (listBox.SelectedItem.ToString() == "Last Month")
+   {
+       DateTimeOffset startdate = DateTimeOffset.Now.AddMonths(1).AddDays(-(DateTimeOffset.Now.Date.Day - 1));
+       this.sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(startdate, startdate.AddDays(DateTime.DaysInMonth(startdate.Year, startdate.Month) - 1));
+   }
+   else if (listBox.SelectedItem.ToString() == "This Year")
+   {
+       DateTimeOffset startdate = DateTimeOffset.Now.AddMonths(-(DateTimeOffset.Now.Month - 1)).AddDays(-(DateTimeOffset.Now.Date.Day - 1));
+       this.sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(startdate, startdate.AddMonths(11).AddDays(DateTime.DaysInMonth(startdate.Year, startdate.Month) - 1));
+   }
+   else
+   {
+       this.sfCalendarDateRangePicker.SelectedRange = null;
+       this.sfCalendarDateRangePicker.ShowCalendar = true;
+   }
+}
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Calendar DateRangePicker dropdown with preset collection](Dropdown-Calendar_images/PresetCollection.png)
+
+You can hide calendar in the dropdown when user selects any preset items in dropdown other than `CustomRange`. When user wants to selects a custom range of dates, upon selection of `CustomRange` preset item, calendar is added in dropdown of `Calendar DateRangePicker` control.
+
+![Custom range selection in WinUI Calendar DateRangePicker](Preset-Items_images/preset-items-collection.gif)
 

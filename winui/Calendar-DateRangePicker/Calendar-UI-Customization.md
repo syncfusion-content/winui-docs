@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Dropdown Calendar in Calendar DateRangePicker control | Syncfusion
+title: UI Customization in Calendar DateRangePicker control | Syncfusion
 description: This page explain how to customize the dropdown calendar of the WinUI Calendar DateRangePicker (SfCalendarDateRangePicker) control.
 platform: winui
 control:  SfCalendarDateRangePicker
 documentation: ug
 ---
 
-# Dropdown Calendar in WinI Calendar DateRangePicker
+# Calendar UI Customization in WinI Calendar DateRangePicker
 
 This section describes how to select a date range from dropdown calendar and customization options available in `Calendar DateRangePicker` control.
 
 ## Change dropdown alignment
 
-You can change the alignment of the dropdown calendar as full, center, left, right, top or bottom edge by using the `DropDownPlacement` property. The default value of `DropDownPlacement` property is `Auto`.
+You can change the alignment of the dropdown calendar as full, center, left, right, top or bottom edge by using the `DropDownPlacement` property. The default value of `DropDownPlacement` property is `Bottom`.
 
 N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then `Calendar DateRangePicker` smartly shifts the dropdown calendar alignment.
 
@@ -34,76 +34,9 @@ sfCalendarDateRangePicker.DropDownPlacement = FlyoutPlacementMode.Right;
 
 ![Alignment of dropdown calendar is changed to BottomEdgeAlignedLeft](Dropdown-Calendar_images/DropDownPlacement.png)
 
-## Hide the dropdown button
-
-You can hide the dropdown button in `Calendar DateRangePicker` by setting the `ShowDropDownButton` property value as `false`. The default value of `ShowDropDownButton` property is `true`.
-
-N> When the dropdown button is hidden, you can still open the dropdown calendar use `ALT + down` keyboard shortcut.
-
-{% tabs %}
-{% highlight XAML %}
-
-<calendar:SfCalendarDateRangePicker ShowDropDownButton="False" 
-                               x:Name="sfCalendarDateRangePicker"/>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
-sfCalendarDateRangePicker.ShowDropDownButton = false;
-
-{% endhighlight %}
-{% endtabs %}
-
-![Calendar DateRangePicker hides the dropdown button](Dropdown-Calendar_images/ShowDropDownButton.png)
-
-## Show the submit buttons
-
-You can show the submit buttons in `Calendar DateRangePicker` by setting the `ShowSubmitButtons` property value as `true`. The default value of `ShowSubmitButtons` property is `false`.
-
-N> When the submit buttons are hidden, you can change the `SelectedDate` property value by simply selecting the date.
-
-{% tabs %}
-{% highlight XAML %}
-
-<calendar:SfCalendarDateRangePicker ShowSubmitButtons="True" 
-                               x:Name="sfCalendarDateRangePicker"/>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
-sfCalendarDateRangePicker.ShowSubmitButtons = true;
-
-{% endhighlight %}
-{% endtabs %}
-
-![Calendar DateRangePicker shows the submit button](Dropdown-Calendar_images/CalendarDateRangePicker-Show_SpinButton.png)
-
-## First day of week
-
-By default, Sunday is shown as the first day of the week in a dropdown calendar of `Calendar DateRangePicker` control. You can change the first day of week, by changing the `FirstDayOfWeek` property value. The default value of `FirstDayOfWeek` property is `Sunday`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker" 
-                               FirstDayOfWeek="Monday"/>
-
-{% endhighlight %}
-{% highlight C# %}
-
-SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
-sfCalendarDateRangePicker.FirstDayOfWeek = DayOfWeek.Monday;
-
-{% endhighlight %}
-{% endtabs %}
-
-![WinUI Calendar DateRangePicker weekdays start from Monday](Dropdown-Calendar_images/FirstDayOfWeek.png)
-
 ## Change dropdown size
 
-You can change the size of dropdown calendar in `Calendar DateRangePicker` by using `DropDownHeight` property. The default value of `DropDownHeight` property is `NaN`.
+You can change the size of dropdown calendar in `Calendar DateRangePicker` by using `DropDownHeight` property. The default value of `DropDownHeight` property is `Auto`.
 
 N> The dropdown size will be automatically resized based on the calendar and preset items hosted in it.
 
@@ -123,29 +56,6 @@ sfCalendarDateRangePicker.DropDownHeight = 500;
 {% endtabs %}
 
 ![Calendar DateRangePicker with customized dropdown height](Dropdown-Calendar_images/DropDownHeight.png)
-
-## Change flow direction
-
-By default, flow direction is changed automatically based on selected `CalendarIdentifier` value in `Calendar DateRangePicker` control. However you can override it by explicitly specifying the `FlowDirection` property value. The default value of `FlowDirection` property is `LeftToRight`.
-
-N> When `CalendarIdentifier` and `FlowDirection` properties are set, `FlowDirection` property is given higher precedence.
-
-{% tabs %}
-{% highlight XAML %}
-
-<calendar:SfCalendarDateRangePicker FlowDirection="RightToLeft" 
-                               x:Name="sfCalendarDateRangePicker"/>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
-sfCalendarDateRangePicker.FlowDirection = FlowDirection.RightToLeft;
-
-{% endhighlight %}
-{% endtabs %}
-
-![CalendarDateRangePicker flow direction changed to right to left](Dropdown-Calendar_images/FlowDirection.png)
 
 ## Customize individual items in Calendar
 
@@ -339,3 +249,123 @@ public class CustomCalendarItemTemplateSelector : DataTemplateSelector
 {% endtabs %}
 
 ![Custom UI of specific date cells in Calendar DateRangePicker](DropDown-Calendar_images/Customization.png)
+
+## Customize using theme keys
+
+You can customize the colors of day names and headers of month, year, decade and century by changing the theme keys values in a ResourceDictionary used in the `Calendar` control and by using the [`AttachedFlyout`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
+
+<table>
+<tr>
+<td>
+Name of the key<br/><br/></td><td>
+Description<br/><br/></td></tr>
+<tr>
+<td>
+SyncfusionCalendarNavigationButtonForeground<br/><br/></td><td>
+Key to change the color of calendar navigation button foreground color.<br/><br/></td></tr>
+<tr>
+<td>
+SyncfusionCalendarWeekItemForeground<br/><br/></td><td>
+Key to change the color of calendar week days name foreground color.<br/><br/></td></tr>
+<tr>
+<td>
+SyncfusionCalendarTodayItemForeground<br/><br/></td><td>
+Key to change the color of calendar today date foreground color.<br/><br/></td></tr>
+<tr>
+<td>
+SyncfusionCalendarItemBackground<br/><br/></td><td>
+Key to change the color of calendar date cells background color except today date cell.<br/><br/></td></tr>
+<tr>
+<td>
+SyncfusionCalendarItemBorderBrush<br/><br/></td><td>
+Key to change the color of calendar date cells border brush.<br/><br/></td></tr>
+<tr>
+<td>
+SyncfusionCalendarTodayItemBackground<br/><br/></td><td>
+Key to change the color of calendar today date cell background color.<br/><br/></td></tr>
+<tr>
+<td>
+SyncfusionCalendarTodayItemBorderBrush<br/><br/></td><td>
+Key to change the color of calendar today date cell border brush.<br/><br/></td></tr>
+<tr>
+<td>
+SyncfusionCalendarItemOutOfScopeForeground<br/><br/></td><td>
+Key to change the color of calendar date cells foreground color which are out of scope.<br/><br/></td></tr>
+<td>
+SyncfusionCalendarItemMargin<br/><br/></td><td>
+Key to change the margin of calendar item.<br/><br/></td></tr>
+<td>
+SyncfusionSubtitleAltFontSize<br/><br/></td><td>
+Key to change the font size of calendar header region.<br/><br/></td></tr>
+<td>
+SyncfusionBodyFontSize<br/><br/></td><td>
+Key to change the font size of calendar items region.<br/><br/></td></tr>
+<table/>
+
+{% tabs %}
+{% highlight xaml %}
+
+<calendar:SfCalendarDateRangePicker
+                    x:Name="calendarDateRangePicker"
+                    MinWidth="180"
+                    SelectedRange="{x:Bind calendar.SelectedRange, Mode=TwoWay}"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top">
+    <FlyoutBase.AttachedFlyout>
+        <editor:DropDownFlyout>
+            <calendar:SfCalendar
+                            x:Name="calendar"
+                            SelectionMode="Range"
+                            >
+                <calendar:SfCalendar.Resources>
+                    <ResourceDictionary
+                        <!--Theme Key customization-->
+                        <SolidColorBrusx:Key="SyncfusionCalendarNavigationButtonForeground"
+                                                     Color="#FF248D92" />
+                        <SolidColorBrusx:Key="SyncfusionCalendarWeekItemForeground"
+                                                     Color="#FF248D92" />
+                        <SolidColorBrusx:Key="SyncfusionCalendarTodayItemForeground"
+                                                     Color="{ThemeResourcSystemBaseHighColor}" />
+                        <SolidColorBrusx:Key="SyncfusionCalendarItemBackground"
+                                                     Color="{ThemeResourcSystemListLowColor}" />
+                        <SolidColorBrusx:Key="SyncfusionCalendarItemBorderBrush"
+                                                     Color="{ThemeResourcSystemListLowColor}"/>
+                        <SolidColorBrusx:Key="SyncfusionCalendarTodayItemBackground"
+                                                     Color="#FF9BC5ED" />
+                        <SolidColorBrusx:Key="SyncfusionCalendarTodayItemBorderBrush"
+                                                     Color="#FF9BC5ED" />
+                        <SolidColorBrusx:Key="SyncfusionCalendarItemOutOfScopeForeground"
+                                                     Color="SlateGrayOpacity="0.5" />
+                        <Thickness x:Key="SyncfusionCalendarItemMargin">1Thickness>
+                        <x:Double x:Key="SyncfusionBodyFontSize">13</x:Double>
+                        <FontFamilx:Key="SyncfusionControlThemeFontFamily">SimSunFontFamily>
+                        <x:Double x:Key="SyncfusionSubtitleAltFontSize">16x:Double
+                        <Style TargetType="calendar:CalendarItem">
+                            <Setter Property="CornerRadius" Value="5"/>
+                            <Setter Property="HorizontalContentAlignmentValue="Stretch"/>
+                            <Setter Property="VerticalContentAlignmentValue="Stretch"/>
+                            <Setter Property="ContentTemplate">
+                                <Setter.Value>
+                                    <DataTemplate>
+                                        <Grid MinWidth="40" MinHeight="40">
+                                            <ContentControl
+                                                            HorizontalAlignmt="Center"
+                                                            VerticalAlignmen"Center"
+                                                            Margin="3"
+                                                            Content="{BindinDisplayText}"/>
+                                        </Grid>
+                                    </DataTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ResourceDictionary>
+                </calendar:SfCalendar.Resources>
+            </calendar:SfCalendar>
+        </editor:DropDownFlyout>
+    </FlyoutBase.AttachedFlyout>
+</calendar:SfCalendarDateRangePicker>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Customize calendar by theme keys in WinUI Calendar DateRangePicker](Calendar-UI-Customization_images/customize-theme-keys.png)

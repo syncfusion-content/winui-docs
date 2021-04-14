@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Calendar DateRangePicker
 
-This section explains the steps required to add the `Calendar DateRangePicker` control and its date range selection options. 
+This section explains the steps required to add the [`Calendar DateRangePicker`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html) control and its date range selection options. 
 
 ## Structure of Calendar DateRangePicker control
 
@@ -71,7 +71,7 @@ namespace GettingStarted
 
 ## Select the date range programmatically
 
-You can set or change the selected date range programmatically by using `SelectedRange` property. By default, the `SelectedRange` property value is `null`.
+You can set or change the selected date range programmatically by using[ `SelectedRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_SelectedRange) property. By default, the `SelectedRange` property value is `null`.
 
 {% tabs %}
 {% highlight C# %}
@@ -105,7 +105,7 @@ SfCalendarDateRangePicker sfCalendarDateRangePicker= new SfCalendarDateRangePick
 
 ## Setting watermark text
 
-You can prompt the user with any information by using the `PlaceHolderText` property. This watermark text will be displayed only when the `SelectedRange` property value is `null`. 
+You can prompt the user with any information by using the [`PlaceHolderText`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_PlaceHolderText) property. This watermark text will be displayed only when the `SelectedRange` property value is `null`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -126,9 +126,9 @@ sfCalendarDateRangePicker.SelectedRange = null;
 
 ![Calendar DateRangePicker displaying watermark text](Getting-Started_images/PlaceHolderText.png)
 
-## Selected range changed notification
+## Selection changed notification
 
-You will be notified when selected range changed in `Calendar DateRangePicker` by using `SelectedDateRangeChanged` event. The `SelectedDateRangeChanged` event contains the old and new start value of range in `RangeStartNewValue` and `RangeStartOldValue` properties and old and new end value of range in `RangeEndNewValue` and `RangeEndOldValue` properties.
+You will be notified when selected range changed in `Calendar DateRangePicker` by using [`SelectedDateRangeChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_SelectedDateRangeChanged) event. The `SelectedDateRangeChanged` event contains the old and new start value of range in `RangeStartNewValue` and `RangeStartOldValue` properties and old and new end value of range in `RangeEndNewValue` and `RangeEndOldValue` properties.
 
 * `RangeStartOldValue` - Gets a date which is previously selected as start value in range.
 * `RangeStartNewValue` - Gets a date which is currently selected as start value in range.
@@ -166,8 +166,62 @@ private void SfCalendarDateRangePicker_SelectedDateChanged(object sender, Select
 {% endhighlight %}
 {% endtabs %}
 
+
+## Hide the dropdown button
+
+You can hide the dropdown button in `Calendar DateRangePicker` by setting the `ShowDropDownButton` property value as `false`. The default value of `ShowDropDownButton` property is `true`.
+
+N> When the dropdown button is hidden, you can still open the dropdown calendar use `ALT + down` keyboard shortcut.
+
+{% tabs %}
+{% highlight XAML %}
+
+<calendar:SfCalendarDateRangePicker ShowDropDownButton="False" 
+                               x:Name="sfCalendarDateRangePicker"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
+sfCalendarDateRangePicker.ShowDropDownButton = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Calendar DateRangePicker hides the dropdown button](Dropdown-Calendar_images/ShowDropDownButton.png)
+
+## Show the submit buttons
+
+You can show the submit buttons in `Calendar DateRangePicker` by setting the `ShowSubmitButtons` property value as `true`. The default value of `ShowSubmitButtons` property is `false`.
+
+N> When the submit buttons are hidden, you can change the `SelectedDate` property value by simply selecting the date.
+
+{% tabs %}
+{% highlight XAML %}
+
+<calendar:SfCalendarDateRangePicker ShowSubmitButtons="True" 
+                               x:Name="sfCalendarDateRangePicker"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
+sfCalendarDateRangePicker.ShowSubmitButtons = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Calendar DateRangePicker shows the submit button](Dropdown-Calendar_images/CalendarDateRangePicker-Show_SpinButton.png)
+
+
 ## Restrict date range selection
-You can restrict users to select date range within specified minimum and maximum dates, or disable dates by setting blackout dates or by setting selection range duration.
+
+You can restrict users from selecting date range within a specific minimum and maximum range or by blocking unwanted dates using blackout dates or by blocking specific set of dates (blocking weekend dates). 
+
+For brief explanation of selection restriction in `Calendar DateRangePicker` control [click here](Selection.md).
 
 ## Navigate in dropdown calendar
-You can navigate between month, year, decade and century views in dropdown calendar of `Calendar DateRangePicker` control and even restrict navigation and range selection within specific views.
+
+You can navigate between month, year, decade and century views in `Calendar DateRangePicker` control. You can also restrict the users to navigate between specific views only (month and year selection for credit card).
+
+For brief explanation of navigation between views in `Calendar DateRangePicker` control [click here](Navigation.md).
