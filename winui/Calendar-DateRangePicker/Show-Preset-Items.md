@@ -9,7 +9,7 @@ documentation: ug
 
 # Showing preset items in dropdown calendar of Calendar DateRangePicker
 
-You can show collection of preset items in dropdown of `Calendar DateRangePicker` control using `Preset` and `PresetTemplate` properties. Bind the collection of preset items to be displayed in `Preset` property and set the required template in `PresetTemplate` property.
+You can show collection of preset items in dropdown of `Calendar DateRangePicker` control using [`Preset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_Preset) and [`PresetTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_PresetTemplate) properties. Bind the collection of preset items to be displayed in `Preset` property and set the required template in `PresetTemplate` property.
 
 {% tabs %}
 {% highlight c# %}
