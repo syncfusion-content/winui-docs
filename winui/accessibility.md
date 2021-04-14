@@ -15,7 +15,7 @@ The sections below explain the accessibility features.
 
 ## UI automation
 
-The Syncfuion WinUI control provides accessibility for the UI automation framework as well as support provided by base classes derived from `FrameworkElementAutomationPeer`. The control class uses the UI automation concepts of automation peers and automation patterns that report the control's role and content to UI automation clients.
+The Syncfusion WinUI control provides accessibility for the UI automation framework as well as support provided by base classes derived from `FrameworkElementAutomationPeer`. The control class uses the UI automation concepts of automation peers and automation patterns that report the control's role and content to UI automation clients.
 
 A user can use a tool like screen readers to obtain the necessary information about the controls from UI Automation. When a control receives focus, the screen reader reads the text associated with that control. 
 

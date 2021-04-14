@@ -9,7 +9,7 @@ documentation: ug
 
 # Featured Samples for Syncfusion WinUI Controls
 
-## Syncfusion winui control panel
+## Syncfusion WinUI control panel
 
 To explore Syncfusion WinUI controls and components, Open `Syncfusion WinUI Controls Panel` by searching it from start and open. 
 
