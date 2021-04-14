@@ -193,7 +193,7 @@ private void Schedule_AppointmentDeleting(object sender, AppointmentDeletingEven
 
 The Scheduler has support to resize the selected appointment. This support is available for all views except  the `Month` view.
 
-N>  Due to WinUI [framwork issue](https://github.com/microsoft/microsoft-ui-xaml/issues/2715), we didnt include this feature in WinUI desktop applications and this is applicable only for WinUI UWP applications.
+N>  Due to WinUI [framework issue](https://github.com/microsoft/microsoft-ui-xaml/issues/2715), we didn't include this feature in WinUI desktop applications and this is applicable only for WinUI UWP applications.
 
 ### Disable appointment resize
 
