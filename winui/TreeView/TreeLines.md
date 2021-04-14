@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tree Lines in WinUI TreeView control | Syncfusion
-description: Learn here all about Tree Lines support in Syncfusion WinUI TreeView control and more details.
+description: Learn here all about Tree Lines support in Syncfusion WinUI TreeView(SfTreeView) control with customization support and more.
 platform: WinUI
 control: TreeView
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interactivity in WinUI TreeView control | Syncfusion
-description: Learn here all about Interactivity support in Syncfusion WinUI TreeView control and more details.
+description: Learn here all about Interactivity support in Syncfusion WinUI TreeView(SfTreeView) control and more.
 platform: WinUI
 control: TreeView
 documentation: ug

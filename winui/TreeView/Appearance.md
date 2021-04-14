@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in WinUI TreeView control | Syncfusion
-description: Learn here all about Appearance support in Syncfusion WinUI TreeView control and more details.
+description: Learn here all about Appearance support in Syncfusion WinUI TreeView(SfTreeView) control and more details.
 platform: Winui
 control: TreeView
 documentation: ug

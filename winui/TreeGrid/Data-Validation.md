@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Validation in WinUI TreeGrid control | Syncfusion
-description: Learn here all about Data Validation support in Syncfusion WinUI TreeGrid control and more details.
+description: Learn here all about Data Validation support in Syncfusion WinUI TreeGrid(SfTreeGrid) control and more.
 platform: winui
 control: SfTreeGrid
 documentation: ug

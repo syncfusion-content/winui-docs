@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Checkbox in WinUI TreeView control | Syncfusion
-description: Learn here all about Checkbox support in Syncfusion WinUI TreeView control and more details.
+description: Learn here all about Checkbox support in Syncfusion WinUI TreeView(SfTreeView) control and more details.
 platform: WinUI
 control: TreeView
 documentation: ug
