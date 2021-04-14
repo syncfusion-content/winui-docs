@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WinUI Barcode control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Barcode control and more details of the entire process of creating a real world of this control.
+description: Learn here all about getting started with Syncfusion WinUI Barcode(SfBarCode) control, its elements, and more.
 platform: WinUI
 control: Barcode
 documentation: ug

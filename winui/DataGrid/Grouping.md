@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping in WinUI DataGrid control | Syncfusion
-description: Learn here all about Grouping support in Syncfusion WinUI DataGrid(SfDataGrid) control and more details.
+description: Learn here all about Grouping support in Syncfusion WinUI DataGrid(SfDataGrid) control with UI grouping and more.
 platform: winui
 control: SfDataGrid
 documentation: ug

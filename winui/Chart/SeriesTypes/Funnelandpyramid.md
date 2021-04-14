@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Funnel and Pyramid in WinUI Chart control | Syncfusion
-description: Learn here all about Funnel and Pyramid features of Syncfusion WinUI Chart control and more details.
+description: Learn here all about Funnel and Pyramid features of Syncfusion WinUI Chart(SfChart) control and more.
 platform: WinUI
 control: SfChart
 documentation: ug

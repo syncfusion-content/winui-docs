@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Control Customization in WinUI Color Palette control | Syncfusion
-description: Learn here all about Control Customization support in Syncfusion WinUI Color Palette control and more details.
+description: Learn here all about Control Customization support in Syncfusion WinUI Color Palette(SfColorPalette) control and more.
 platform: WinUI
 control: SfColorPalette
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WinUI Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Chart(SfChart) control, its elements,  and more.
+description: Learn here all about getting started with Syncfusion WinUI Chart(SfChart) control, its elements, and more.
 platform: WinUI
 control: Chart
 documentation: ug

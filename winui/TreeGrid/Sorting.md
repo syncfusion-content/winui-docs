@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting in WinUI TreeGrid control | Syncfusion
-description: Learn here all about Sorting support in Syncfusion WinUI TreeGrid(SfTreeGrid) control and more details.
+description: Learn here all about Sorting support in Syncfusion WinUI TreeGrid(SfTreeGrid) control with sort column, order support and more.
 platform: winui
 control: TreeGrid
 documentation: ug

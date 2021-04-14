@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in WinUI DataGrid control | Syncfusion
-description: Learn here all about Data Binding support in Syncfusion WinUI DataGrid(SfDataGrid) control and more details.
+description: Learn here all about Data Binding support in Syncfusion WinUI DataGrid(SfDataGrid) control with many binding opion support.
 platform: winui
 control: SfDataGrid
 documentation: ug

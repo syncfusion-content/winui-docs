@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in WinUI TreeGrid control | Syncfusion
-description: Learn here all about Selection support in Syncfusion WinUI TreeGrid(SfTreeGrid) control and more details.
+description: Learn here all about Selection support in Syncfusion WinUI TreeGrid(SfTreeGrid) control with cell navigation and more.
 platform: winui
 control: TreeGrid
 documentation: ug

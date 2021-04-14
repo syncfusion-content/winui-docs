@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scrolling in WinUI TreeView control | Syncfusion
-description: Learn here all about Scrolling support in Syncfusion WinUI TreeView(SfTreeView) control and more details.
+description: Learn here all about Scrolling support in Syncfusion WinUI TreeView(SfTreeView) control, its elements, and more.
 platform: WinUI
 control: TreeView
 documentation: ug

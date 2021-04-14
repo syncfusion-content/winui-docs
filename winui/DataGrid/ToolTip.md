@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ToolTip in WinUI DataGrid control | Syncfusion
-description: Learn here all about ToolTip support in Syncfusion WinUI DataGrid(SfDataGrid) control and more details.
+description: Learn here all about ToolTip support in Syncfusion WinUI DataGrid(SfDataGrid) control with customization support and more.
 platform: winui
 control: DataGrid
 documentation: ug

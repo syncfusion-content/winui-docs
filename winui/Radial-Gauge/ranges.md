@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Range in WinUI Radial Gauge control | Syncfusion
-description: Learn here all about Range feature of Syncfusion WinUI Radial Gauge control with customization support
+description: Learn here all about Range feature of Syncfusion WinUI Radial Gauge control with customization support and more.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug

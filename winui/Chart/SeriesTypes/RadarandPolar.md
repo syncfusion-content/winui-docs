@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Radar and Polar in WinUI Chart control | Syncfusion
-description: Learn here all about Radar and Polar support in Syncfusion WinUI Chart(SfChart) control and more details.
+description: Learn here all about Radar and Polar support in Syncfusion WinUI Chart(SfChart) control with draw type polar and more.
 platform: WinUI
 control: SfChart
 documentation: ug

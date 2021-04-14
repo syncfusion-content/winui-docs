@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dropdown Calendar in WinUI Calendar DateRangePicker | Syncfusion
-description: Learn about Dropdown Calendar feature of Syncfusion WinUI Calendar DateRangePicker control and more details.
+description: Learn here all about Dropdown Calendar feature of Syncfusion WinUI Calendar DateRangePicker control and more.
 platform: winui
 control:  SfCalendarDateRangePicker
 documentation: ug

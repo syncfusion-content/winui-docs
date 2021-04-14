@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WinUI Color Picker control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Color Picker(SfColorPicker) control and more details.
+description: Learn here all about getting started with Syncfusion WinUI Color Picker(SfColorPicker) control, its elements and more.
 platform: WinUI
 control: SfColorPicker
 documentation: ug
