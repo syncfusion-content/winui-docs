@@ -391,18 +391,3 @@ Schedule.FirstDayOfWeek = DayOfWeek.Monday;
 {% endtabs %}  
 
 ![first-day-of-week-in-winui-scheduler](GettingStarted_Images/adding-first-day-of-week-in-winui-scheduler.png)
-
-## Show busy indicator
-
-The `Scheduler` supports showing the busy indicator by using the [ShowBusyIndicator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ShowBusyIndicator) property. The default value is set to `false.` If the value will be set to `true` then the busy indicator will be load on view or the visible date changed.
-
-{% tabs %}  
-{% highlight xaml %}
-<scheduler:SfScheduler x:Name="Schedule" ShowBusyIndicator="True">/> 
-{% endhighlight %}   
-{% highlight c# %}
-this.Schedule.ShowBusyIndicator = true;   
-{% endhighlight %}  
-{% endtabs %}  
-
-![busy-indicator-in-winui-scheduler](GettingStarted_Images/adding-busy-indicator-in-winui-scheduler.png)
