@@ -148,30 +148,30 @@ Syncfusion WinUI installer can be uninstalled in two ways.
 
 Follow either one of the option below to uninstall Syncfusion Essential Studio WinUI installer.
   
-    **Option 1: Uninstall the WinUI using the Syncfusion WinUI web installer**
+**Option 1: Uninstall the WinUI using the Syncfusion WinUI web installer**
 
-    Syncfusion provides the option to uninstall platforms of the same version directly from the Web Installer application. Select the platforms to be uninstalled from the list, and Web Installer will uninstall them one by one.
+Syncfusion provides the option to uninstall platforms of the same version directly from the Web Installer application. Select the platforms to be uninstalled from the list, and Web Installer will uninstall them one by one.
 
-    Open the Syncfusion Essential Studio Platform WinUI Online Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
+Open the Syncfusion Essential Studio Platform WinUI Online Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
 
-    ![Installer Extraction Wizard uninstall](WebInstaller/Step-by-Step-Installation_img1.png)
+![Installer Extraction Wizard uninstall](WebInstaller/Step-by-Step-Installation_img1.png)
 	
-    The Syncfusion WinUI Web Installer's welcome wizard will be displayed. Click the Next button
+The Syncfusion WinUI Web Installer's welcome wizard will be displayed. Click the Next button
 	
-    ![Welcome wizard uninstall](WebInstaller/Step-by-Step-Installation_img2.png)
+![Welcome wizard uninstall](WebInstaller/Step-by-Step-Installation_img2.png)
 	
 	
-    **Option 2: Uninstall the WinUI from Windows Control Panel**  
+**Option 2: Uninstall the WinUI from Windows Control Panel**  
 	
-	You can uninstall all the installed platforms by selecting the **Syncfusion Essential Studio {version}** entry (element 1 in the below screenshot) from the Windows control panel, or you can uninstall WinUI alone by selecting the **Syncfusion Essential Studio for WinUI {version}** entry (element 2 in the below screenshot) from the Windows control panel.
+You can uninstall all the installed platforms by selecting the **Syncfusion Essential Studio {version}** entry (element 1 in the below screenshot) from the Windows control panel, or you can uninstall WinUI alone by selecting the **Syncfusion Essential Studio for WinUI {version}** entry (element 2 in the below screenshot) from the Windows control panel.
 
-    ![Control Panel](WebInstaller/Step-by-Step-Installation_img22.png)
+![Control Panel](WebInstaller/Step-by-Step-Installation_img22.png)
 	
-	N> If the **Syncfusion Essential Studio for WinUI {version}** entry is selected from the Windows control panel, the Syncfusion Essential Studio WinUI alone will be removed and the below default MSI uninstallation window will be displayed.
+N> If the **Syncfusion Essential Studio for WinUI {version}** entry is selected from the Windows control panel, the Syncfusion Essential Studio WinUI alone will be removed and the below default MSI uninstallation window will be displayed.
 	
-	**Uninstalling WinUI alone**
+**Uninstalling WinUI alone**
 	
-	![MSI entry](WebInstaller/Step-by-Step-Installation_img23.png)
+![MSI entry](WebInstaller/Step-by-Step-Installation_img23.png)
 
 1.  The Platform Selection Wizard will appear. From the **Installed** tab, select the platforms to be uninstalled. To select all platforms, check the **Uninstall All** checkbox. Click the Next button.
     
