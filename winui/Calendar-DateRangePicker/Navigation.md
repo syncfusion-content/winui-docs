@@ -48,17 +48,19 @@ You can restrict users to select date range within specific views (example : cho
 {% tabs %}
 {% highlight xaml %}
 
-<calendar:SfCalendar x:Name="sfCalendar" FormatString="{}{0:MM/yyyy} - {1:MM/yyyy}"
-                             MinDisplayMode="Year"
-                             MaxDisplayMode="Decade"
-                             />
+<calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker"
+                                    FormatString="{}{0:MM/yyyy} - {1:MM/yyyy}"
+                                    MinDisplayMode="Month"
+                                    MaxDisplayMode="Year"
+                               />
 
 {% endhighlight %}
 {% highlight C# %}
 
-SfCalendar sfCalendar = new SfCalendar();
-sfCalendar.MinDisplayMode = CalendarDisplayMode.Year;
-sfCalendar.MaxDisplayMode = CalendarDisplayMode.Decade;
+SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
+sfCalendarDateRangePicker.MinDisplayMode = CalendarDisplayMode.Year;
+sfCalendarDateRangePicker.MaxDisplayMode = CalendarDisplayMode.Decade;
+sfCalendarDateRangePicker.FormatString = "{0:MM/yyyy}-{1:MM/yyyy}";
 
 {% endhighlight %}
 {% endtabs %}
