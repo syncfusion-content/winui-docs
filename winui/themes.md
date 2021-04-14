@@ -138,19 +138,21 @@ Now add the customized value in application root element's resources
 
 {% tabs %}
 {% highlight xaml %}
-
-    <Page.Resources>
-        <SolidColorBrush x:Key="SyncfusionRibbonTabMenuButtonBackground"
-                     Color="Green" />
-        <SolidColorBrush x:Key="SyncfusionRibbonTabMenuButtonForeground"
-                     Color="White" />
-        <SolidColorBrush x:Key="SyncfusionRibbonTabBorderBrushSelected"
-                     Color="Green" />
+    
+    <Page>
+        <Page.Resources>
+            <SolidColorBrush x:Key="SyncfusionRibbonTabMenuButtonBackground"
+                                    Color="Green" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabMenuButtonForeground"
+                                    Color="White" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabBorderBrushSelected"
+                                    Color="Green" />        
+        </Page.Resources>
 
         <ribbon:SfRibbon>
         ...
         </ribbon:SfRibbon>
-    </Page.Resources>
+    </Page>
 
 {% endhighlight %}
 {% endtabs %}
