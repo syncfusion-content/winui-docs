@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unbound Rows in WinUI DataGrid control | Syncfusion
-description: Learn here all about Unbound Rows support in Syncfusion WinUI DataGrid control and more details.
+description: Learn here all about Unbound Rows support in Syncfusion WinUI DataGrid(SfDataGrid) control and more details.
 platform: winui
 control: DataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering in WinUI DataGrid control | Syncfusion
-description: Learn here all about Filtering support in Syncfusion WinUI DataGrid control and more details.
+description: Learn here all about Filtering support in Syncfusion WinUI DataGrid(SfDataGrid) control with programmatic filter and more.
 platform: winui
 control: DataGrid
 documentation: ug
