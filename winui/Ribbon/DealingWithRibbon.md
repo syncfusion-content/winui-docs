@@ -41,7 +41,7 @@ The `SelectedTab` property returns the value of the currently selected [RibbonTa
 {% endhighlight %} 
 {% endtabs %}
 
-![RibbonTab selection with Selected tab and Selected index](Dealing-With-Ribbon-imgaes/ribbon-tab-selection-by-index-selected-tab-binding.png)
+![RibbonTab selection with Selected tab and Selected index](Dealing-With-Ribbon-imgaes/ribbon-tab-selection-by-index-and-selected-tab-binding.png)
 
 N> The selected index value should not exceed the child count of the `Tabs` collection in the [Ribbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html).
 
