@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appointment editing | CRUD operations | WinUI | Scheduler | Syncfusion
-description: How to create, read, update and delete appointments and resizing appointments in the WinUI scheduler.
+description: How to create, read, update and delete appointments and resizing appointments in the WinUI Calendar.
 platform: winui
 control: Scheduler
 documentation: ug
