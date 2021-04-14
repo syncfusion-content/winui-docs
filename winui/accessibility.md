@@ -15,13 +15,13 @@ The sections below explain the accessibility features.
 
 ## UI automation
 
-All controls have built-in accessibility for the UI automation framework and support provided by base classes which derived from FrameworkElementAutomationPeer. Syncfusion WinUI control class also uses the UI automation concepts of automation peers and automation patterns that report the control's role and content to UI automation clients.
+The Syncfuion WinUI control provides accessibility for the UI automation framework as well as support provided by base classes derived from `FrameworkElementAutomationPeer`. The control class uses the UI automation concepts of automation peers and automation patterns that report the control's role and content to UI automation clients.
 
 A user can use a tool like screen readers to obtain the necessary information about the controls from UI Automation. When a control receives focus, the screen reader reads the text associated with that control. 
 
 ## Keyboard support
 
-The basic xaml control provides built-in keyboard support including tab navigation, text input, and control-specific support. Syncfusion WinUI controls also have the same features in it. For example, the `SfTreeView` control supports arrow-key navigation for item selection.
+Syncfusion WinUI controls provides keyboard support including tab navigation, text input, and control-specific support. For example, the `SfTreeView` control supports arrow-key navigation for item selection.
 
 ## High contrast themes
 

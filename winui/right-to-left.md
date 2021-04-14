@@ -7,9 +7,11 @@ control: RightToLeft
 documentation: ug
 ---
 
-# Right to left(RTL) in WinUI controls 
+# Right to Left(RTL) in WinUI Controls 
 
-Syncfusion WinUI controls support to changing the text flow to the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.frameworkelement.flowdirection?view=winrt-19041) to `RightToLeft`. 
+Right to left (RTL) support allows to change the direction of text and other UI elements flow within the controls layout. 
+ 
+Syncfusion WinUI controls support to change the flow direction and are suitable for all applications that are localized in right-to-left languages. The layout of control direction can be changed by setting the [FlowDirection](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.frameworkelement.flowdirection?view=winrt-19041) to `RightToLeft`. 
 
 The example below shows a treeview control with RTL direction.
 
@@ -26,4 +28,4 @@ treeView.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeView with right to left](Common-images/winui-control-right-to-left-direction.png)
+![WinUI TreeView with right-to-left flow direction](Common-images/winui-control-right-to-left-direction.png)

@@ -9,7 +9,7 @@ documentation: ug
 
 # Featured Samples for Syncfusion WinUI Controls
 
-## Syncfusion WinUI Controls Panel
+## Syncfusion winui control panel
 
 To explore Syncfusion WinUI controls and components, Open `Syncfusion WinUI Controls Panel` by searching it from start and open. 
 
@@ -23,13 +23,13 @@ N> In above section, Latest Essential Studio version details has been provided. 
 
 ![Syncfusion WinUI Controls Panel](Guide-to-run-the-samples-images/syncfusion-winui-control-panel.png)
 
-## WinUI Sample Browser
+## WinUI sample browser
 
 To explore the locally installed demos, click `Run Local Demos` and open the `WinUI Sample Browser`.
 
 ![Syncfusion WinUI Sample Browser](Guide-to-run-the-samples-images/syncfusion-winui-sample-browser.png)
 
-## Offline Samples
+## Offline samples
 
 ![Exploring Syncfusion WinUI Samples from Syncfusion WinUI Sample Browser](Guide-to-run-the-samples-images/exploring-syncfusion-winui-samples-from-sb.png)
 
@@ -47,10 +47,10 @@ For example, below, we demonstrated how to run an individual `Chart` control pro
 
 ![Running an individual control project](Guide-to-run-the-samples-images/run-induvidual-control-project.png)  
 
-## Online Samples
+## Online samples
 
 * Download and install `WinUI` demos from [App Center](https://install.appcenter.ms/orgs/syncfusion-demos/apps/winui-demos/distribution_groups/release).
 
-## Download demos from online (Clone from github repository)
+## Download demos from online (clone from github repository)
 
 You can explore Syncfusion WinUI controls using [GitHub WinUI demos](https://github.com/syncfusion/winui-demos) where all WinUI demos are configured using `NuGet` to run without installing Syncfusion WinUI Studio.
