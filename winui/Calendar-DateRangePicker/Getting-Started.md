@@ -71,7 +71,7 @@ namespace GettingStarted
 
 ## Select the date range programmatically
 
-You can set or change the selected date range programmatically by using[ `SelectedRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_SelectedRange) property. By default, the `SelectedRange` property value is `null`.
+You can set or change the selected date range programmatically by using [`SelectedRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_SelectedRange) property. By default, the `SelectedRange` property value is `null`.
 
 {% tabs %}
 {% highlight C# %}
@@ -169,7 +169,7 @@ private void SfCalendarDateRangePicker_SelectedDateChanged(object sender, Select
 
 ## Hide the dropdown button
 
-You can hide the dropdown button in `Calendar DateRangePicker` by setting the `ShowDropDownButton` property value as `false`. The default value of `ShowDropDownButton` property is `true`.
+You can hide the dropdown button in `Calendar DateRangePicker` by setting the [`ShowDropDownButton`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as `false`. The default value of `ShowDropDownButton` property is `true`.
 
 N> When the dropdown button is hidden, you can still open the dropdown calendar use `ALT + down` keyboard shortcut.
 
@@ -192,7 +192,7 @@ sfCalendarDateRangePicker.ShowDropDownButton = false;
 
 ## Show the submit buttons
 
-You can show the submit buttons in `Calendar DateRangePicker` by setting the `ShowSubmitButtons` property value as `true`. The default value of `ShowSubmitButtons` property is `false`.
+You can show the submit buttons in `Calendar DateRangePicker` by setting the [`ShowSubmitButtons`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as `true`. The default value of `ShowSubmitButtons` property is `false`.
 
 N> When the submit buttons are hidden, you can change the `SelectedDate` property value by simply selecting the date.
 

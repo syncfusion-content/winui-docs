@@ -13,7 +13,7 @@ This section describes how to select a date range from dropdown calendar and cus
 
 ## Change dropdown alignment
 
-You can change the alignment of the dropdown calendar as full, center, left, right, top or bottom edge by using the `DropDownPlacement` property. The default value of `DropDownPlacement` property is `Bottom`.
+You can change the alignment of the dropdown calendar as full, center, left, right, top or bottom edge by using the [`DropDownPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Bottom`.
 
 N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then `Calendar DateRangePicker` smartly shifts the dropdown calendar alignment.
 
@@ -36,7 +36,7 @@ sfCalendarDateRangePicker.DropDownPlacement = FlyoutPlacementMode.Right;
 
 ## Change dropdown size
 
-You can change the size of dropdown calendar in `Calendar DateRangePicker` by using `DropDownHeight` property. The default value of `DropDownHeight` property is `Auto`.
+You can change the size of dropdown calendar in `Calendar DateRangePicker` by using [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownHeight` property is `Auto`.
 
 N> The dropdown size will be automatically resized based on the calendar and preset items hosted in it.
 
