@@ -13,16 +13,12 @@ You can style the treegrid and its inner elements conditionally based on data Us
 
 <table>
 <tr>
-<td>
 <th>
 Approach
 </th>
-</td>
-<td>
 <th>
 Performance
 </th>
-</td>
 </tr>
 <tr>
 <td>
