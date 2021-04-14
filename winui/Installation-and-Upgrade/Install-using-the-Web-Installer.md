@@ -187,7 +187,7 @@ Follow either one of the option below to uninstall Syncfusion Essential Studio W
 	
 2.  If any other platforms selected for installation, Uninstall previous version wizard will be displayed with previous version(s) installed for the selected platforms. Here you can view the list of installed previous versions for the selected platforms. Select **Uninstall All** checkbox to select all the versions. Click Next.
 
-	![Existing Version for install](WebInstaller/Step-by-Step-Installation_img20.png)
+	![Existing Version for install](WebInstaller/Step-by-Step-Installation_img26.png)
 	
 3.	Pop up screen will be displayed to get the confirmation to uninstall selected previous versions.
 
