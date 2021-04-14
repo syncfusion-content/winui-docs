@@ -357,7 +357,7 @@ The [BackstageViewItemSeparator](https://help.syncfusion.com/cr/winui/Syncfusion
 
 ![Add backstage separator item to the backstage view](Backstage-images/add-backstage-separator-item.png)
 
-## FooterItems in backstage view
+## Footer items in backstage view
 
 The [BackstageView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageView.html) allows you to add footer items using `FooterItems` property and the backstage items can be added to the footer of backstage view for the following code snippet.
 

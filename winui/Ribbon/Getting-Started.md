@@ -384,7 +384,7 @@ N> You can also use other icons types such as   [BitmapIcon](https://docs.micros
 
 ## Add ribbon gallery
 
-The example below shows how to include the RibbonGallery control within a RibbonGroup.
+The example below shows how to include the [RibbonGallery](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGallery.html) control within a RibbonGroup.
 
 {% tabs %}
 {% highlight xaml %}
@@ -417,7 +417,7 @@ rootGalleryGrid.Children.Add(sfRibbon);
 
 ## Host a custom control
 
-You can host other controls such as checkbox, radio button and combobox etc., to a ribbon group using the `ItemTemplate` property of [RibbonItemHost](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonItemHost.html).
+Ribbon allows to host other controls such as checkbox, radio button and combobox etc., in a ribbon group using the `ItemTemplate` property of [RibbonItemHost](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonItemHost.html).
 
 {% tabs %}
 {% highlight xaml %}

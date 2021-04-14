@@ -7,11 +7,11 @@ control: Ribbon
 documentation: ug
 ---
 
-# Simplified layout in WinUI Ribbon Control
+# Simplified Layout in WinUI Ribbon Control
 
 The Syncfusion Ribbon provides a compact and simplified layout by arranging the most-used commands in a single line, occupying less space. We can also quickly navigate to other commonly used commands in the overflow menu, and switch to normal mode using the built-in toggle button. This section explains in detail about the simplified layout.
 
-## Enabling Simplified layout
+## Enabling simplified layout
 
 The `LayoutModeOptions` enumeration property provides an option to enable Simplified layout in Ribbon control. The `LayoutModeOptions` is of flag enumeration type that contains the following values.
 
@@ -57,7 +57,7 @@ To load the Ribbon control in simplified layout, `ActiveLayoutMode` enumeration 
 {% endhighlight %}
 {% endtabs %}
 
-![Enable Simplified layout in SfRibbon](Simplified-Layout-images/Simplified-Layout-image1.png)
+![Enable Simplified layout in Ribbon control](Simplified-Layout-images/Simplified-Layout-Ribbon.png)
 
 ## Switching between normal and simplified layouts
 
@@ -91,9 +91,9 @@ The Ribbon control allows to switch between simplified and normal layouts at run
 {% endhighlight %}
 {% endtabs %}}
 
-![Switch between normal and simplified layout using toggle button in SfRibbon](Simplified-Layout-images/Simplified-Layout-image2.gif)
+![Switch between normal and simplified layout using toggle button in Ribbon control](Simplified-Layout-images/Switch-Normal-Simplified-With-Ribbon-Control.gif)
 
-## Visibility of Ribbon items between normal and simplified layouts
+## Visibility of ribbon items between normal and simplified layouts
 
 The Ribbon items can be set common between different layouts or can be made visible only in a particular layout using the `DisplayOptions` property. By default, items will be displayed in both normal and simplified layout. The DisplayMode is of flag enumeration type that contains the following values.
 
@@ -175,9 +175,9 @@ Also, the DisplayMode property allows the following value combinations as well.
 {% endhighlight %}
 {% endtabs %}}
 
-![Visibility of items in different layout in SfRibbon](Simplified-Layout-images/Simplified-Layout-image3.gif)
+![Visibility of items in different layout in Ribbon control](Simplified-Layout-images/Simplified-Layout-With-Overflow-Menu.gif)
 
-## Customizing Overflow menu
+## Customizing overflow menu
 
 Overflow menu can be enabled either at the end of each `RibbonGroup` or placed at the end of content area. This can be customized using `OverflowItemDisplayMode` property. It contains two values,
 
@@ -203,7 +203,7 @@ Overflow menu can be enabled either at the end of each `RibbonGroup` or placed a
 {% endhighlight %}
 {% endtabs %}
 
-![Group level overflow menu in SfRibbon](Simplified-Layout-images/Simplified-Layout-image4.png)
+![Group level overflow menu in Ribbon control](Simplified-Layout-images/Overflow-Menu-In-Ribbon-Group.png)
 
 
 ## Display mode  
@@ -243,9 +243,9 @@ The Ribbon control allows to switch between normal and minimized state at runtim
 
 >N When simplified mode is enabled, toggle button is used to switch between normal and simplified layout. In that case, we can use the `RibbonTab` double click option to enter in minimized state. 
 
-![Shows the Ribbon control in minimized and adorner state](Simplified-Layout-images/Simplified-Layout-image5.gif)
+![Shows the Ribbon control in minimized and adorner state](Simplified-Layout-images/Minimized-Adorner-State-Ribbon.gif)
 
-### Loading in Minimized state
+### Loading in minimized state
 
 The Ribbon control allows to load in minimized state by using `IsMinimized` property. By enabling this property, we can load the Ribbon in minimized state. 
 
@@ -278,4 +278,4 @@ The Ribbon control allows to load in minimized state by using `IsMinimized` prop
 {% endhighlight %}
 {% endtabs %}
 
-![Loading the Ribbon control in minimized state](Simplified-Layout-images/Simplified-Layout-image6.png)
+![Loading the Ribbon control in minimized state](Simplified-Layout-images/Ribbon-In-Minimized-State.png)

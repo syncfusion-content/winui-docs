@@ -11,7 +11,7 @@ documentation: ug
 
 The Syncfusion Ribbon for WinUI is a command bar that organizes an applicationâ€™s commands and tools into a series of tabs. It also supports a backstage view as like in Microsoft Office products.
 
-## Key Features ##
+## Key features 
 
 * **Tab and Group:** Group and categorize the commands for your application using Ribbon Tabs and Ribbon Groups.
 * **Backstage:** An additional view for user application to create custom views.
@@ -21,9 +21,9 @@ The Syncfusion Ribbon for WinUI is a command bar that organizes an applicationâ€
 * **RibbonGallery:** A simple and flexible ribbon gallery feature displays a collection of related commands similar to the gallery feature used in Microsoft Office.
 
 
- ![Overview of WinUI SfRibbon control](Overview-images/Overview-image1.png)
+ ![Overview of WinUI SfRibbon control](Overview-images/syncfusion-winui-ribbon.png)
 
- ![Overview of WinUI SfRibbon Backstage](Overview-images/Overview-image2.gif)
+ ![Overview of WinUI SfRibbon Backstage](Overview-images/ribbon-backstage.gif)
 
 
 

@@ -11,7 +11,7 @@ documentation: ug
 
 The below section describes more information about Ribbon items and its features.
 
-## Changing size of the Ribbon items
+## Changing size of the ribbon items
 
 The size of the Ribbon items such as [RibbonButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonButton.html), [RibbonDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonDropDownButton.html), [RibbonSplitButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonSplitButton.html), RibbonGallery and [RibbonItemHost](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonItemHost.html) controls can be changed using `SizeMode` property.
 
@@ -145,13 +145,13 @@ The size of the Ribbon items such as [RibbonButton](https://help.syncfusion.com/
 {% endhighlight %} 
 {% endtabs %}
 
-![SizeMode setting with Ribbon items](RibbonItems-images/RibbonItems-image1.png)
+![SizeMode changing for Ribbon items](RibbonItems-images/Size-mode-change-for-ribbon-items.png)
 
-## Launcher button in RibbonGroup 
+## Ribbon group launcher button
 
 The Launcher button is like a normal button, and you can also use it to add additional features and options in that section of the RibbonGroup.
 
-![Launcher button in RibbonGroup](RibbonItems-images/RibbonItems-image2.png)
+![Launcher button in RibbonGroup](RibbonItems-images/ribbon-group-launcher-button.png)
 
 ### Launcher button click event
 
@@ -189,7 +189,7 @@ private async void RibbonGroup_LauncherButtonClick(RibbonGroup sender, object ar
 {% endhighlight %}
 {% endtabs %}
 
-### Add command to Ribbon Launcher button
+### Launcher button command
 
 The command for the Launcher button in a [RibbonGroup](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGroup.html) can be set using the `LauncherButtonCommand` property. The following example of the code is the same.
 
@@ -232,7 +232,7 @@ private bool CanExecuteCommand(object parameter)
 {% endhighlight %}
 {% endtabs %}
 
-### Hide Launcher button
+## Launcher button visibility
 
 The [RibbonGroup](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGroup.html) allows you to show or hide the launcher button by using `ShowLauncherButton` property. By default, visibility of the launcher button is enabled as true.
 
@@ -260,7 +260,7 @@ The [RibbonGroup](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon
 {% endhighlight %} 
 {% endtabs %}
 
-![Hide Launcher button in RibbonGroup](RibbonItems-images/RibbonItems-image3.png)
+![Launcher button visibility in ribbon group](RibbonItems-images/launcher-button-visibility.png)
 
 
 

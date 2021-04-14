@@ -9,13 +9,13 @@ documentation: ug
 
 # RibbonGallery with WinUI Ribbon (SfRibbon)
 
-The RibbonGallery displays a list of scrollable gallery items or commands in a visually rich format that can be organized as multiple subsets of categorized items in a Ribbon control.
+The [RibbonGallery](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGallery.html) displays a list of scrollable gallery items or commands in a visually rich format that can be organized as multiple subsets of categorized items in a Ribbon control.
 
-![Structure of RibbonGallery](RibbonGallery-images/RibbonGallery-image1.png)
+![Structure of RibbonGallery](RibbonGallery-images/ribbon-gallery-elements.png)
 
-## Add Gallery Item to RibbonGallery
+## Add gallery item
 
-The RibbonGalleryItem can be added by using the `Items` property of the RibbonGallery control. The RibbonGallery allows you to view all gallery items in a Popup by clicking the expand button in a control.
+The [RibbonGalleryItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGalleryItem.html) can be added by using the `Items` property of the RibbonGallery control. The RibbonGallery allows you to view all gallery items in a Popup by clicking the expand button in a control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -88,11 +88,11 @@ The RibbonGalleryItem can be added by using the `Items` property of the RibbonGa
 {% endhighlight %}
 {% endtabs %}
 
-![Adding RibbonGallery items to the RibbonGallery](RibbonGallery-images/RibbonGallery-image2.png)
+![Adding RibbonGallery items to the RibbonGallery](RibbonGallery-images/add-ribbon-gallery-items.png)
 
 ## Group Gallery Item
 
-The RibbonGallery includes built-in grouping support, allowing you to organize gallery items in a gallery popup based on the `GroupName` property value. By clicking the expand button in a RibbonGallery, you can view the entire gallery (either grouped or non-grouped) items in a resizable popup view. You can view all of the gallery items in a RibbonGallery view by using the scroll up and down buttons.
+The [RibbonGallery](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGallery.html) includes built-in grouping support, allowing you to organize gallery items in a gallery popup based on the `GroupName` property value. By clicking the expand button in a RibbonGallery, you can view the entire gallery (either grouped or non-grouped) items in a resizable popup view. You can view all of the gallery items in a RibbonGallery view by using the scroll up and down buttons.
 
 {% tabs %}
 {% highlight xaml %}
@@ -231,7 +231,7 @@ The RibbonGallery includes built-in grouping support, allowing you to organize g
 {% endhighlight %}
 {% endtabs %}
 
-![RibbonGallery with built-in Grouping](RibbonGallery-images/RibbonGallery-image7.png)
+![RibbonGallery with built-in Grouping](RibbonGallery-images/ribbon-gallery-grouping.png)
 
 ## Selection
 
@@ -257,7 +257,7 @@ private void RibbonGallery_SelectionChanged(object sender, SelectionChangedEvent
 {% endhighlight %}
 {% endtabs %}
 
-![Detecting selection changes in RibbonGallery](RibbonGallery-images/RibbonGallery-image5.png)
+![Detecting selection changes in RibbonGallery](RibbonGallery-images/selected-ribbon-gallery-item.png)
 
 The `IsSelected` property returns true or false to the gallery item, indicating whether or not an item is currently selected. The property value associated with an item can be obtained from the `SelectionChanged` event.
 
@@ -273,7 +273,7 @@ private void RibbonGallery_SelectionChanged(object sender, SelectionChangedEvent
 {% endhighlight %}
 {% endtabs %}
 
-![Indication of currently selected gallery item](RibbonGallery-images/RibbonGallery-image5.png)
+![Indicating selection of gallery item](RibbonGallery-images/Indicate-selection-of-gallery-item.png)
 
 The `SelectsOnInvoked` property indicates whether or not a gallery item is selected when it is invoked. You cannot interact with any gallery item if `SelectsOnInvoked` is set to false.
 
@@ -295,16 +295,16 @@ The `SelectsOnInvoked` property indicates whether or not a gallery item is selec
 {% endhighlight %}
 {% endtabs %}
 
-![Handle the interaction on Gallery Item](RibbonGallery-images/RibbonGallery-image8.gif)
+![Handle the interaction on Gallery Item](RibbonGallery-images/handle-interaction-on-gallery-item.gif)
 
-### Detecting selection changes in RibbonGallery
+### Detecting selection changes in ribbon gallery
 
 The `SelectionChanged` event occurs when a gallery item is clicked or the selected item changes in a RibbonGallery.The SelectionChanged event handler receives two arguments:
 
 * The sender argument contains the `RibbonGallery`. This argument is of type object but can be cast to the RibbonGallery type.
 * The second argument is a `SelectionChangedEventArgs` that receives the old and newly selected gallery items in an argument.
 
-## Customize the Gallery Item
+## Customize the gallery item
 
 Gallery items width and height can be changed using the `ItemWidth` and `ItemHeight` properties of RibbonGallery.
 
@@ -319,7 +319,7 @@ Gallery items width and height can be changed using the `ItemWidth` and `ItemHei
 {% endhighlight %}
 {% endtabs %}
 
-![Setting of ItemWidth and ItemHeight in RibbonGallery](RibbonGallery-images/RibbonGallery-image3.png)
+![Setting of ItemWidth and ItemHeight in RibbonGallery](RibbonGallery-images/ribbon-gallery-item-customization.png)
 
 The `MaxColumnCount` in a RibbonGallery allows you to wrap the maximum number of gallery items in a column view. The default value is 5, which is a special value that indicates maximum.
 
@@ -335,10 +335,10 @@ The `MaxColumnCount` in a RibbonGallery allows you to wrap the maximum number of
 {% endhighlight %}
 {% endtabs %}
 
-![Setting of MaxColumnCount in RibbonGallery](RibbonGallery-images/RibbonGallery-image4.png)
+![Setting of MaxColumnCount in RibbonGallery](RibbonGallery-images/ribbon-gallery-item-column-count-customization.png)
 
 
-## RibbonGalley in simplified layout
+## Ribbon galley in simplified layout
 
 The `DisplayOptions` property in a RibbonGallery is an Enum type property that allows you to display a RibbonGallery in a specific layout based on `LayoutModeOptions` such as Normal, Simplified state of Ribbon. The `DisplayOptions` property are set to Normal and Simplified mode by default.
 
@@ -357,9 +357,9 @@ The image below shows how the RibbonGallery can be displayed in a Simplified mod
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying RibbonGallery with Simplified Ribbon layout](RibbonGallery-images/RibbonGallery-image10.png)
+![Displaying RibbonGallery with Simplified Ribbon layout](RibbonGallery-images/ribbon-gallery-in-simplified-diplaymode.png)
 
-## Populate RibbonGallery with MVVM
+## Populate ribbon gallery with MVVM
 
 The RibbonGallery provides MVVM that supports data binding and manual data populating.
 
@@ -432,7 +432,7 @@ private List<FontStyleInfo> GetFontStyleCollection()
 {% endhighlight %}
 {% endtabs %}
 
-![RibbonGallery with MVVM](RibbonGallery-images/RibbonGallery-image6.png)
+![RibbonGallery with MVVM](RibbonGallery-images/ribbon-gallery-with-mvvm.png)
 
 
 
