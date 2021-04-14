@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appointment Drag and Drop | WinUI | Scheduler | Syncfusion
-description: This section explains how to handle the drag and drop appointments and its events in the WinUI Scheduler. 
+description: This section explains how to handle the drag and drop appointments and its events in the WinUI Calendar. 
 platform: winui
 control: Scheduler
 documentation: ug
