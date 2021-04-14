@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in WinUI Barcode control | Syncfusion
-description: Learn about Customization support in Syncfusion WinUI Barcode control and more details.
+description: Learn here all about Customization feature in Syncfusion WinUI Barcode control with more background, foreground, Module custom support etc.
 platform: WinUI
 control: Barcode
 documentation: ug

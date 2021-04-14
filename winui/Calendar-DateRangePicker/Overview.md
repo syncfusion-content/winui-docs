@@ -1,13 +1,13 @@
 ---
 layout: post
 title: About WinUI Calendar DateRangePicker control | Syncfusion
-description: Learn about Overview support in Syncfusion WinUI Calendar DateRangePicker (Calendar Date Range Picker) control and more details.
+description: Learn here all about introduction of Syncfusion WinUI Calendar DateRangePicker control and more details.
 platform: winui
 control: SfCalendar DateRangePicker
 documentation: ug
 ---
 
-# WinUI Calendar DateRangePicker (Calendar Date Range Picker) Overview
+# WinUI Calendar DateRangePicker Overview
 
 The WinUI [Calendar DateRangePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html) control provides an intuitive, touch-friendly interface to quickly select a date from a drop-down calendar. It supports different date formats. Date selection can be restricted by specifying minimum and maximum dates. Specific dates can also disabled from selection. In addition, it supports editing with validation and built-in watermark text display.
 

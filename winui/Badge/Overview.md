@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WinUI Badge control | Syncfusion
-description: Learn about introduction of Syncfusion WinUI Badge control and more details.
+description: Learn hera all about introduction of Syncfusion WinUI Badge control which is used to notify users of new or unread messages, notifications and more.
 platform: WinUI
 control: SfBadge
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WinUI Barcode control | Syncfusion
-description: Learn about introduction of Syncfusion WinUI Barcode control and more details.
+description: Learn about introduction of Syncfusion WinUI Barcode control and more details of generate and display data in a machine-readable format. 
 platform: WinUI
 control: Barcode
 documentation: ug

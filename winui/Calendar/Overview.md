@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WinUI Calendar control | Syncfusion
-description: Learn about introduction of Syncfusion WinUI Calendar control and more details.
+description: Learn about introduction of Syncfusion WinUI Calendar control and more details of month, year, decade navigation support.
 platform: winui
 control: SfCalendar
 documentation: ug

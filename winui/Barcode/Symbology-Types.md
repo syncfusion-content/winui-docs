@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Symbology Types in WinUI Barcode control | Syncfusion
-description: Learn about Symbology Types support in Syncfusion WinUI Barcode control and more details.
+description: Learn here all about Symbology Types feature in Syncfusion WinUI Barcode control and it supports many variants of one and two dimensional barcodes.
 platform: WinUI
 control: Barcode
 documentation: ug

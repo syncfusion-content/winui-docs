@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Dropdown Calendar in WinUI Calendar DatePicker control | Syncfusion
-description: Learn about Dropdown Calendar support in Syncfusion WinUI Calendar DatePicker (Calendar Date Picker) control and more details.
+description: Learn about Dropdown Calendar feature of Syncfusion WinUI Calendar DatePicker control and more details.
 platform: winui
 control:  SfCalendarDatePicker
 documentation: ug
 ---
 
-# Dropdown Calendar in WinUI Calendar DatePicker (Calendar Date Picker)
+# Dropdown Calendar in WinUI Calendar DatePicker
 
 This section describes how to select a date from dropdown Calendar and its customization options in [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) control.
 

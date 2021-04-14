@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Alignment and positioning in WinUI Badge control | Syncfusion
-description: Learn about Alignment and positioning support in Syncfusion WinUI Badge control and more details.
+description: Learn here all about the alignment and positioning feature of Syncfusion WinUI Badge control and more.
 platform: WinUI
 control: SfBadge
 documentation: ug
