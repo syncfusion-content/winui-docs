@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fast Chart in WinUI Chart control | Syncfusion
-description: Learn about Fast Chart support in Syncfusion WinUI Chart control and more details.
+description: Learn here all about Fast Chart feature of Syncfusion WinUI Chart control and easily configurable with built-in support for creating high performance charts.
 platform: WinUI
 control: SfChart
 documentation: ug

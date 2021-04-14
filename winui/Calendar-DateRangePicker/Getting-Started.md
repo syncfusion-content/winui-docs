@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with WinUI Calendar DateRangePicker control | Syncfusion
+title: Getting Started with WinUI Calendar DateRangePicker | Syncfusion
 description: Learn here about getting started with Syncfusion WinUI Calendar DateRangePicker control and more details.
 platform: WinUI
 control: SfCalendarDateRangePicker

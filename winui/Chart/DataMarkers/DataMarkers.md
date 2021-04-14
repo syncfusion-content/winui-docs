@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Markers in WinUI Chart control | Syncfusion
-description: Learn about Data Markers support in Syncfusion WinUI Chart control and more details.
+description: Learn hera all about Data Markers feature of Syncfusion WinUI Chart control and more. It is used to display values related to a chart segment element.
 platform: WinUI
 control: Chart
 documentation: ug

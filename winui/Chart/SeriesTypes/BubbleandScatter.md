@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bubble and Scatter in WinUI Chart control | Syncfusion
-description: Learn about Bubble and Scatter support in Syncfusion WinUI Chart control and more details.
+description: Learn here all about Bubble and Scatter feature of Syncfusion WinUI Chart control and more details.
 platform: WinUI
 control: SfChart
 documentation: ug

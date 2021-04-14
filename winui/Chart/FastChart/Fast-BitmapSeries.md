@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fast Bitmap Series in WinUI Chart control | Syncfusion
-description: Learn about Fast Bitmap Series support in Syncfusion WinUI Chart control and more details.
+description: Learn here all about Fast Bitmap Series feature of Syncfusion WinUI Chart control,it can render a collection with huge number of data points.
 platform: WinUI
 control: SfChart
 documentation: ug

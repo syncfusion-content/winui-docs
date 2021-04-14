@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Positioning Data Markers in WinUI Chart control | Syncfusion
-description: Learn about Positioning Data Markers support in Syncfusion WinUI Chart control and more details.
+description: Learn here all about Positioning Data Markers feature in Syncfusion WinUI Chart control and more details.
 platform: WinUI
 control: Chart
 documentation: ug

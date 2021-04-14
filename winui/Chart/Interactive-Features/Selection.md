@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in WinUI Chart control | Syncfusion
-description: Learn about Selection support in Syncfusion WinUI Chart control and more details.
+description: Learn here all about Selection feature of Syncfusion WinUI Chart control with segment, series selection support and more.
 platform: WinUI
 control: SfChart
 documentation: ug

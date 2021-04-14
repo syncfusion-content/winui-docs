@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column and Bar in WinUI Chart control | Syncfusion
-description: Learn about Column and Bar support in Syncfusion WinUI Chart control and more details.
+description: Learn hera all about Column and Bar support in Syncfusion WinUI Chart control and more details.
 platform: WinUI
 control: SfChart
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Label in WinUI Chart control | Syncfusion
-description: Learn about Data Label support in Syncfusion WinUI Chart control and more details.
+description: Learn here all about Data Label feature of Syncfusion WinUI Chart control and more easily annotated with labels support.
 platform: WinUI
 control: Chart
 documentation: ug

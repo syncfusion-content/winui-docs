@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WinUI Calendar DatePicker control | Syncfusion
-description: Learn about introduction of Syncfusion WinUI Calendar DatePicker control and more details.
+description: Learn about introduction of Syncfusion WinUI Calendar DatePicker control with intuitive, touch-friendly support. 
 platform: winui
 control: SfCalendarDatePicker
 documentation: ug

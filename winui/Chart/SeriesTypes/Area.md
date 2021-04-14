@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Area in WinUI Chart control | Syncfusion
-description: Learn about Area support in Syncfusion WinUI Chart control and more details.
+description: Learn here all about Area support in Syncfusion WinUI Chart control.It is rendered using a collection of line segments connected to form a closed loop area.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Area in WinUI Chart
+# Area support in WinUI Chart
 
 ## Area 
 [`AreaSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.AreaSeries.html#) is rendered using a collection of line segments connected to form a closed loop area, filled with the specified color.

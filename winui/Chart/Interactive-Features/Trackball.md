@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Trackball in WinUI Chart control | Syncfusion
-description: Learn about Trackball support in Syncfusion WinUI Chart control and more details.
+description: Learn here all about Trackball feature of Syncfusion WinUI Chart control with vertical line support.
 platform: WinUI
 control: SfChart
 documentation: ug

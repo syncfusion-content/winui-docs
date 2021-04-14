@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Crosshair in WinUI Chart control | Syncfusion
-description: Learn about Crosshair support in Syncfusion WinUI Chart control and more details.
+description: Learn here all about Crosshair feature of Syncfusion WinUI Chart control and view the values at mouse point or touch contact point support.
 platform: WinUI
 control: SfChart
 documentation: ug

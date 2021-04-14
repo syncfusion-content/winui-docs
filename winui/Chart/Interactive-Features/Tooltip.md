@@ -1,11 +1,10 @@
 ---
 layout: post
 title: Tooltip in WinUI Chart control | Syncfusion
-description: Learn about Tooltip support in Syncfusion WinUI Chart control and more details.
+description: Learn here all about Tooltip feature of Syncfusion WinUI Chart control. It is set to display the metadata of the particular segment or data point.
 platform: WinUI
 control: SfChart
 documentation: ug
-
 ---
 
 # Tooltip in WinUI Chart
