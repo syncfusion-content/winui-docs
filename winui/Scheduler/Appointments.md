@@ -50,29 +50,29 @@ The Scheduler supports to bind any collection that implements the `IEnumerable` 
 <tr><td>{{'[EndTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_EndTime)'| markdownify }}</td>
 <td>Maps the property name of a business object class, which is equivalent to the EndTime of ScheduleAppointment.</td></tr>
 <tr><td>{{'[StartTimeZone](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_StartTimeZone)'| markdownify }}</td>
-<td>Maps the property name of a business objectbusiness objectbusiness objectbusiness objectbusiness objectbusiness object class, which is equivalent to the StartTimeZone of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the StartTimeZone of ScheduleAppointment.</td></tr>
 <tr><td>{{'[EndTimeZone](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_EndTimeZone)'| markdownify }}</td>
-<td>Maps the property name of a business objectbusiness objectbusiness objectbusiness objectbusiness object class, which is equivalent to the EndTimeZone of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the EndTimeZone of ScheduleAppointment.</td></tr>
 <tr><td>{{'[Subject](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Subject)'| markdownify }}</td>
-<td>Maps the property name of a business objectbusiness objectbusiness objectbusiness object class, which is equivalent to the Subject of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the Subject of ScheduleAppointment.</td></tr>
 <tr><td>{{'[Id](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Id)'| markdownify }}</td>
-<td>Maps the property name of a business objectbusiness objectbusiness object class, which is equivalent to the Id of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the Id of ScheduleAppointment.</td></tr>
 <tr><td>{{'[AppointmentBackground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_AppointmentBackground)'| markdownify }}</td>
-<td>Maps the property name of a business objectbusiness object class, which is equivalent to the AppointmentBackground of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the AppointmentBackground of ScheduleAppointment.</td></tr>
 <tr><td>{{'[Foreground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Foreground)'| markdownify }}</td>
 <td>Maps the property name of a business object class, which is equivalent to the  Foreground of ScheduleAppointment.</td></tr>
 <tr><td>{{'[IsAllDay](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_IsAllDay)'| markdownify }}</td>
-<td>Maps the property name of a business objectbusiness objectbusiness objectbusiness objectbusiness objectbusiness objectbusiness object class, which is equivalent to the IsAllDay of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the IsAllDay of ScheduleAppointment.</td></tr>
 <tr><td>{{'[RecurrenceRule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceRule)'| markdownify }}</td>
-<td>Maps the property name of a business objectbusiness objectbusiness objectbusiness objectbusiness objectbusiness object class, which is equivalent to the RecurrenceRule of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the RecurrenceRule of ScheduleAppointment.</td></tr>
 <tr><td>{{'[RecurrenceId](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceId)'| markdownify }}</td>
-<td>Maps the property name of a business objectbusiness objectbusiness objectbusiness objectbusiness object class, which is equivalent to the RecurrenceId of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the RecurrenceId of ScheduleAppointment.</td></tr>
 <tr><td>{{'[Notes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Notes)'| markdownify }}</td>
-<td>Maps the property name of a business objectbusiness objectbusiness objectbusiness object class, which is equivalent to the Notes of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the Notes of ScheduleAppointment.</td></tr>
 <tr><td>{{'[Location](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Location)'| markdownify }}</td>
-<td>Maps the property name of a business objectbusiness objectbusiness object class, which is equivalent to the Location of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the Location of ScheduleAppointment.</td></tr>
 <tr><td>{{'[RecurrenceExceptionDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceExceptionDates)'| markdownify }}</td>
-<td>Maps the property name of a business objectbusiness object class, which is equivalent to the RecurrenceExceptionDates of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a business object class, which is equivalent to the RecurrenceExceptionDates of ScheduleAppointment.</td></tr>
 <tr><td>{{'[ResourceIdCollection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_ResourceIdCollection)'| markdownify }}</td>
 <td>Maps the property name of a business object class, which is equivalent to the ResourceIdCollection of ScheduleAppointment.</td></tr>
 </table>
