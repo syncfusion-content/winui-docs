@@ -71,11 +71,11 @@ The steps below show how to install Essential Studio WinUI Web Installer.
 	
 	![Platform Selection wizard Available](WebInstaller/Step-by-Step-Installation_img3.png)
 	
-	From the **Installed** tab, you can also choose which platforms to uninstall in the same version. Click the Next button.
+	If you have multiple platforms installed in the same version, they will be listed under the **Installed** tab. You can also select which platforms to uninstall from the same version. Click the Next button.
 	
 	**Installed**
 	
-    ![Platform Selection wizard Installed](WebInstaller/Step-by-Step-Installation_img4.png)
+    ![Platform Selection wizard Installed](WebInstaller/Step-by-Step-Installation_img24.png)
 	
 	I> If the required software for the selected platform isn't already installed, the **Additional Software Required** alert will appear. You can, however, continue the installation and install the necessary software later.
 	
@@ -123,7 +123,7 @@ The steps below show how to install Essential Studio WinUI Web Installer.
 	
 	I> The platforms you have chosen will be installed based on your Syncfusion License (Trial or Licensed).
 
-10. The download and installation progress will be shown.
+10. The download and installation\uninstallation progress will be displayed as shown below.
 
     ![Download and Installation progress install](WebInstaller/Step-by-Step-Installation_img10.png)
 
@@ -133,7 +133,7 @@ The steps below show how to install Essential Studio WinUI Web Installer.
 	
 	* To open the Syncfusion Control Panel, click **Launch Control Panel**.
 
-12. You can find the Essential Studio installed information from the windows control panel.
+12. After installation, there will be two Syncfusion control panel entries, as shown below. The Essential Studio entry will manage all Syncfusion platforms installed in the same version, while the Platform entry will only uninstall the specific platform setup.
 
     ![Control Panel](WebInstaller/Step-by-Step-Installation_img19.png)
 	
@@ -183,7 +183,7 @@ Syncfusion WinUI installer can be uninstalled in two ways.
 	
 	**Available**
 	
-	![Platform Selection wizard Available](WebInstaller/Step-by-Step-Installation_img3.png)
+	![Platform Selection wizard Available](WebInstaller/Step-by-Step-Installation_img25.png)
 	
 3.  If any other platforms selected for installation, Uninstall previous version wizard will be displayed with previous version(s) installed for the selected platforms. Here you can view the list of installed previous versions for the selected platforms. Select **Uninstall All** checkbox to select all the versions. Click Next.
 
