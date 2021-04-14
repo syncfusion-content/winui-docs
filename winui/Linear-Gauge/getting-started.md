@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WinUI Linear Gauge control | Syncfusion
-description: Learn here about getting started with Syncfusion WinUI Linear Gauge control and more details.
+description: Learn here all about getting started with Syncfusion WinUI Linear Gauge(sfLinearGauge) control and more details.
 platform: WinUI
 control: SfLinearGauge
 documentation: ug

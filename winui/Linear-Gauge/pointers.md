@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pointers in WinUI Linear Gauge control | Syncfusion
-description: Learn about Pointers support in Syncfusion WinUI Linear Gauge control and more details.
+description: Learn here all about Pointers feature of Syncfusion WinUI Linear Gauge control with multiple pointer support and more.
 platform: WinUI
 control: SfLinearGauge
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: More Colors in WinUI Color Palette control | Syncfusion
-description: Learn about More Colors support in Syncfusion WinUI Color Palette control and more details.
+description: Learn here all about More Colors features of Syncfusion WinUI Color Palette control and more details.
 platform: WinUI
 control: SfColorPalette
 documentation: ug

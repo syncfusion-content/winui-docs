@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Content Pointer in WinUI Linear Gauge control | Syncfusion
-description: Learn about Content Pointer support in Syncfusion WinUI Linear Gauge control and more details.
+description: Learn here all about Content Pointer feature of Syncfusion WinUI Linear Gauge control and more details.
 platform: WinUI
 control: SfLinearGauge
 documentation: ug

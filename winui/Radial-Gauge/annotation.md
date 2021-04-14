@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Annotation in WinUI Radial Gauge control | Syncfusion
-description: Learn about Annotation support in Syncfusion WinUI Radial Gauge control and more details.
+description: Learn here all about Annotation feature of Syncfusion WinUI Radial Gauge control with positioning support and more.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug

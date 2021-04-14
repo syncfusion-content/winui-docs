@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WinUI Date Picker control | Syncfusion
-description: Learn here about getting started with Syncfusion WinUI Date Picker control and more details.
+description: Learn here all about getting started with Syncfusion WinUI Date Picker(sfDatePicker) control and more.
 platform: WinUI
 control: SfDatePicker
 documentation: ug

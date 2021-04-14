@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Marker in WinUI Chart control | Syncfusion
-description: Learn here all about Data Marker feature of Syncfusion WinUI Chart control and more details.Data Marker is used to mark the data points.
+description: Learn here all about Data Marker feature of Syncfusion WinUI Chart control with customizing marker support.
 platform: WinUI
 control: Chart
 documentation: ug

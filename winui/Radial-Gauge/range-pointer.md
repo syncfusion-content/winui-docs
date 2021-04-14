@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Range Pointer in WinUI Radial Gauge control | Syncfusion
-description: Learn about Range Pointer support in Syncfusion WinUI Radial Gauge control and more details.
+description: Learn here all about Range Pointer feature of Syncfusion WinUI Radial Gauge control with customization support.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug

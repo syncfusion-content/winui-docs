@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dropdown Date Spinner in WinUI Date Picker control | Syncfusion
-description: Learn about Dropdown Date Spinner support in Syncfusion WinUI Date Picker control and more details.
+description: Learn here all about Dropdown Date Spinner features of Syncfusion WinUI Date Picker control and more.
 platform: winui
 control:  SfDatePicker
 documentation: ug

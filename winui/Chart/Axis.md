@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Axis in WinUI Chart control | Syncfusion
-description: Learn here all about Axis feature of Syncfusion WinUI Chart control, it is used to locate a data point inside the chart area.
+description: Learn here all about Axis feature of Syncfusion WinUI Chart control with axis labels, grid lines support and more.
 platform: WinUI
 control: SfChart
 documentation: ug

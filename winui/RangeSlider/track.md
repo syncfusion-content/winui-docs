@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Track in WinUI RangeSlider control | Syncfusion
-description: Learn about Track support in Syncfusion WinUI RangeSlider (Range Slider) control and more details.
+description: Learn here all about Track feature of Syncfusion WinUI RangeSlider(sfRangeSlider) control with color, hover and more.
 platform: WinUI
 control: SfRangeSlider
 documentation: ug

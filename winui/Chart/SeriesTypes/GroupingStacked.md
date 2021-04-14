@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping Stacked in WinUI Chart control | Syncfusion
-description: Learn about Grouping Stacked support in Syncfusion WinUI Chart control and more details.
+description: Learn here all about Grouping Stacked feature of Syncfusion WinUI Chart control and more details.
 platform: WinUI
 control: SfChart
 documentation: ug

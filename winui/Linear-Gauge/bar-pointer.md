@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bar Pointer in WinUI Linear Gauge control | Syncfusion
-description: Learn about Bar Pointer support in Syncfusion WinUI Linear Gauge control and more details.
+description: Learn here all about Bar Pointer support in Syncfusion WinUI Linear Gauge control with size and style custom support.
 platform: WinUI
 control: SfLinearGauge
 documentation: ug

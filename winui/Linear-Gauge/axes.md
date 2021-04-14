@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Axis in WinUI Linear Gauge control | Syncfusion
-description: Learn about Axis support in Syncfusion WinUI Linear Gauge control and more details.
+description: Learn here all about Axis feature of Syncfusion WinUI Linear Gauge control with customization support.
 platform: WinUI
 control: SfLinearGauge
 documentation: ug

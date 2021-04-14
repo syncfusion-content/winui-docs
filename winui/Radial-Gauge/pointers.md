@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pointers in WinUI Radial Gauge control | Syncfusion
-description: Learn about Pointers support in Syncfusion WinUI Radial Gauge control and more details.
+description: Learn here all about Pointers feature of Syncfusion WinUI Radial Gauge control with multiple pointer support and more.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Solid Colors in WinUI Color Picker control | Syncfusion
-description: Learn about Solid Colors support in Syncfusion WinUI Color Picker control and more details.
+description: Learn here all about Solid Colors feature of Syncfusion WinUI Color Picker control with changing opacity support.
 platform: WinUI
 control: SfColorPicker
 documentation: ug

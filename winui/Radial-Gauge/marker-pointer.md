@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Marker Pointer in WinUI Radial Gauge control | Syncfusion
-description: Learn about Marker Pointer support in Syncfusion WinUI Radial Gauge control and more details.
+description: Learn here all about Marker Pointer feature of Syncfusion WinUI Radial Gauge control with image, text pointer support and more.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug
