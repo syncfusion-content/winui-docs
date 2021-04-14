@@ -11,14 +11,14 @@ documentation: ug
 
 The scheduler supports loading appointments on-demand with loading indicator and it improves the loading performance when you have appointments range for multiple years.
 
-![load-appointments-on-demand-from-visible-date-ranges-in-winui-scheduler](LoadOnDemand_Image/load-appointments-on-demand-from-visible-date-ranges-in-winui-scheduler.gif)
+![load-appointments-on-demand-from-visible-date-ranges-in-winui-scheduler](LoadOnDemand_Images/load-appointments-on-demand-from-visible-date-ranges-in-winui-scheduler.gif)
 
 ## QueryAppointments event
 
-The `QueryAppointments` event is used to load appointments on-demand for the visible date range. You might start and stop the loading indicator animation before and after the appointments loaded using the `ShowBusyIndicator.`
-The `QueryAppointmentsEventArgs` has the following members which provide information for the `QueryAppointments` event.
+The [QueryAppointments](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_QueryAppointments) event is used to load appointments on-demand for the visible date range. You might start and stop the loading indicator animation before and after the appointments loaded using the [ShowBusyIndicator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ShowBusyIndicator).
+The [QueryAppointmentsEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.QueryAppointmentsEventArgs.html) has the following members which provide information for the `QueryAppointments` event.
 
-`VisibleDateRange`: Gets the current visible date range of scheduler that is used to load the appointments.
+[VisibleDateRange](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DateRange.html): Gets the current visible date range of scheduler that is used to load the appointments.
 
 {%tabs %}
 {% highlight xaml %}
@@ -100,23 +100,23 @@ private void InitializeDataForBookings()
 {% endhighlight %}
 {% endtabs %}
 
-The `QueryAppointments` will be raised if any one of the following action will be taken.
+The [QueryAppointments](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_QueryAppointments) will be raised if any one of the following action will be taken.
 
-Once the `ViewChanged` event is raised, the `QueryAppointments` will be raised.
+Once the [ViewChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ViewChanged) event is raised, the `QueryAppointments` will be raised.
 
 IIf the appointment has been added, removed, or changed (Resize, drag, and drop) in the current time visible date range, then the `QueryAppointments` event will not be triggered. Since the appointments for that visible date range have been loaded already.
 
-The `QueryAppointments` event is triggered when the Schedule `ResourceCollection` is updated to load appointments based on the changed resource collection.
+The `QueryAppointments` event is triggered when the Schedule [ResourceCollection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceCollection) is updated to load appointments based on the changed resource collection.
 
-The `QueryAppointments` event will be triggered when the `ResourceGroupType` is changed.
+The `QueryAppointments` event will be triggered when the [ResourceGroupType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceGroupType) is changed.
 
 ## Load On Demand command
 
-The Scheduler notifies the `LoadOnDemandCommand` when the user changes the visible date range. You can get a visible date range from the `QueryAppointmentsEventArgs.` The default value for this `ICommand` is null. The `QueryAppointmentsEventArgs` passed as a command parameter.
+The Scheduler notifies the [LoadOnDemandCommand](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_LoadOnDemandCommand) when the user changes the visible date range. You can get a visible date range from the [QueryAppointmentsEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.QueryAppointmentsEventArgs.html). The default value for this `ICommand` is null. The `QueryAppointmentsEventArgs` passed as a command parameter.
 
 You can define a ViewModel class that implements command and handle it by the `CanExecute` and `Execute` methods to check and execute on-demand loading. In execute method, you can perform the following operations.
 
-* You can start and stop the loading indicator animation before and after the appointments loaded using the `ShowBusyIndicator.`
+* You can start and stop the loading indicator animation before and after the appointments loaded using the [ShowBusyIndicator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ShowBusyIndicator).
 * Once got appointment collection, you can load into the scheduler `ItemsSource.`
 
 {%tabs %}
@@ -234,7 +234,7 @@ public class LoadOnDemandViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-The `LoadOnDemandCommand` will be invoked if any one of the following actions will be taken.
+The [LoadOnDemandCommand](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_LoadOnDemandCommand) will be invoked if any one of the following actions will be taken.
 
 * Once the ViewChanged event is raised, the `LoadOnDemandCommand` will also be raised.
 
@@ -246,10 +246,25 @@ The `LoadOnDemandCommand` will be invoked if any one of the following actions wi
 
 ## Load On Demand for recurring appointment
 
-The scheduler will add the occurrences of recurrence series based on the visible date range, you can use the `RecurrenceHelper.GetRecurrenceDateTimeCollection` to compare and load the recurrence appointment on-demand in the `ItemsSource.`
+The scheduler will add the occurrences of recurrence series based on the visible date range, you can use the [RecurrenceHelper.GetRecurrenceDateTimeCollection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.RecurrenceHelper.html#Syncfusion_UI_Xaml_Scheduler_RecurrenceHelper_GetRecurrenceDateTimeCollection_System_String_System_DateTime_System_Nullable_System_DateTime__System_Nullable_System_DateTime__) to compare and load the recurrence appointment on-demand in the `ItemsSource.`
 
 The recurrence appointment should be added to the Scheduler `ItemsSource` until the date of recurrence ends.
 
-If `RecurrenceRule` added with count or end date, you can use the `RecurrenceHelper.GetRecurrenceDateTimeCollection` method to get the recurrence date collection and compare recursive dates in the current visible date range. Then, add the recurrence appointment in the scheduler `ItemsSource.` If the recursive dates are in the current visible date range.
+If [RecurrenceRule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceRule) added with count or end date, you can use the [RecurrenceHelper.GetRecurrenceDateTimeCollection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.RecurrenceHelper.html#Syncfusion_UI_Xaml_Scheduler_RecurrenceHelper_GetRecurrenceDateTimeCollection_System_String_System_DateTime_System_Nullable_System_DateTime__System_Nullable_System_DateTime__) method to get the recurrence date collection and compare recursive dates in the current visible date range. Then, add the recurrence appointment in the scheduler [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ItemsSource). If the recursive dates are in the current visible date range.
 
 If the `RecurrenceRule` is added without an end date, then the recurrence appointment should be added in the scheduler `ItemsSource` when all the visible dates changed from the recurrence start date.
+
+## Show busy indicator
+
+The `Scheduler` supports showing the busy indicator by using the [ShowBusyIndicator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ShowBusyIndicator) property. The default value is set to `false.` If the value will be set to `true` then the busy indicator will be load on view or the visible date changed.
+
+{% tabs %}  
+{% highlight xaml %}
+<scheduler:SfScheduler x:Name="Schedule" ShowBusyIndicator="True">/> 
+{% endhighlight %}   
+{% highlight c# %}
+this.Schedule.ShowBusyIndicator = true;   
+{% endhighlight %}  
+{% endtabs %}  
+
+![busy-indicator-in-winui-scheduler](LoadOnDemand_Images/adding-busy-indicator-in-winui-scheduler.png)

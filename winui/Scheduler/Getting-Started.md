@@ -61,9 +61,9 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-## Change different SfScheduler Views
+## Change different Scheduler Views
 
-The `SfScheduler` control provides eight different types of views to display dates and it can be assigned to the control by using the `ViewType` property. By default, the control is assigned with the `Month` view. The current date will be displayed initially for all the Schedule views.
+The [SfScheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.html) control provides eight different types of views to display dates and it can be assigned to the control by using the [ViewType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ViewType) property. By default, the control is assigned with the `Month` view. The current date will be displayed initially for all the Schedule views.
 
 {% tabs %}
 {% highlight xaml %}
@@ -78,11 +78,11 @@ this.Schedule.ViewType = SchedulerViewType.Month;
 
 ## Appointments
 
-The `SfScheduler` has a built-in capability to handle the appointment arrangement internally based on the `ScheduleAppointment` collections. You need to allocate the collection generated to the Appointments property.
+The [SfScheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.html) has a built-in capability to handle the appointment arrangement internally based on the [ScheduleAppointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) collections. You need to allocate the collection generated to the Appointments property.
 
 ### Adding Appointments
 
-The `ScheduleAppointment` is a class that includes the specific scheduled appointment. It has some basic properties such as `StartTime`, `EndTime`, `Subject`, and some additional information about the appointment can be added with `Notes`, `Location`, and `IsAllDay` properties.
+The [ScheduleAppointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) is a class that includes the specific scheduled appointment. It has some basic properties such as [StartTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_StartTime), [EndTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_EndTime), [Subject](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Subject), and some additional information about the appointment can be added with [Notes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Notes), [Location](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Location), and [IsAllDay](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_IsAllDay) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -111,7 +111,7 @@ You can also map custom appointments data to our scheduler.
 
 N> The CustomAppointment class should contain two DateTime fields and a string field as mandatory.
 
-Here steps to render meetings using the `SfScheduler` control with respective custom data properties created in a class `Meeting.`
+Here steps to render meetings using the [SfScheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) control with respective custom data properties created in a class `Meeting.`
 
 * [Creating custom class to map that objects with ScheduleAppointment](#creating-custom-class-to-map-that-objects-with-ScheduleAppointment)
 * [Create view model](#create-view-model)
@@ -321,7 +321,7 @@ public class SchedulerViewModel
 {% endtabs %}
 
 ### Mapping the data object to ScheduleAppointment
-You can map those properties of the `Meeting` class with our `SfScheduler` control by using the `AppointmentMapping` property.
+You can map those properties of the `Meeting` class with our `SfScheduler` control by using the [AppointmentMapping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -356,7 +356,7 @@ Schedule.AppointmentMapping = appointmentMapping;
 {% endtabs %}
 
 ### Bind item source for Scheduler
-Create meetings of type `ObservableCollection<Appointments>` and assign those appointments collection `Appointments` to the `ItemsSource` property of `SfScheduler`.
+Create meetings of type `ObservableCollection<Appointments>` and assign those appointments collection `Appointments` to the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ItemsSource) property of `SfScheduler`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -378,7 +378,7 @@ N> [View sample in GitHub]()
 
 ## Change first day of week
 
-The SfScheduler control will be rendered with `Sunday` as the first day of the week but you can customize it to any day by using the `FirstDayOfWeek` property of `SfScheduler`.
+The SfScheduler control will be rendered with `Sunday` as the first day of the week but you can customize it to any day by using the [FirstDayOfWeek](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_FirstDayOfWeek) property of `SfScheduler`.
 
 {% tabs %}  
 {% highlight xaml %}
@@ -391,18 +391,3 @@ Schedule.FirstDayOfWeek = DayOfWeek.Monday;
 {% endtabs %}  
 
 ![first-day-of-week-in-winui-scheduler](GettingStarted_Images/adding-first-day-of-week-in-winui-scheduler.png)
-
-## Show busy indicator
-
-The `Scheduler` supports showing the busy indicator by using the `ShowBusyIndicator` property. The default value is set to `false.` If the value will be set to `true` then the busy indicator will be load on view or the visible date changed.
-
-{% tabs %}  
-{% highlight xaml %}
-<scheduler:SfScheduler x:Name="Schedule" ShowBusyIndicator="True">/> 
-{% endhighlight %}   
-{% highlight c# %}
-this.Schedule.ShowBusyIndicator = true;   
-{% endhighlight %}  
-{% endtabs %}  
-
-![busy-indicator-in-winui-scheduler](GettingStarted_Images/adding-busy-indicator-in-winui-scheduler.png)
