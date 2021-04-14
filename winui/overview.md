@@ -18,7 +18,7 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
 * After integrated the component into application using one of the code examples as a starting point, it is likely that you may want additional information on specific features and API. The best option is to search the specific topic using the search box that is available at the top of the user guide.
 * Another valuable resource is the API reference that provides detailed information on the object hierarchy as well as the settings available on every object.
 
-## Controls List
+## Controls list
 
 <table>
     <tr>
