@@ -167,11 +167,7 @@ You can uninstall all the installed platforms by selecting the **Syncfusion Esse
 
 ![Control Panel](WebInstaller/Step-by-Step-Installation_img22.png)
 	
-N> If the **Syncfusion Essential Studio for WinUI {version}** entry is selected from the Windows control panel, the Syncfusion Essential Studio WinUI alone will be removed and the below default MSI uninstallation window will be displayed.
-	
-**Uninstalling WinUI alone**
-	
-![MSI entry](WebInstaller/Step-by-Step-Installation_img23.png)
+N> If the **Syncfusion Essential Studio for WinUI {version}** entry is selected from the Windows control panel, the Syncfusion Essential Studio WinUI alone will be removed and the below default MSI uninstallation window will be displayed.	
 
 1.  The Platform Selection Wizard will appear. From the **Installed** tab, select the platforms to be uninstalled. To select all platforms, check the **Uninstall All** checkbox. Click the Next button.
     
@@ -197,7 +193,7 @@ N> If the **Syncfusion Essential Studio for WinUI {version}** entry is selected 
 
     ![Confirmation for install/uninstall](WebInstaller/Step-by-Step-Installation_img15.png)
 	
-	N> You can check the Estimated size of the Download and Installation by clicking the **Download Size and Installation Size** link.
+	N> By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation
 	
 5.	The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a platform-by-platform basis. Click Next to install with the default settings.
 
