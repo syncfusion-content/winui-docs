@@ -102,10 +102,10 @@ The Syncfusion WinUI Controls are the suite you ever need to create state of art
     </tr>
     <tr>
         <td>
-            <p><a href="https://help.syncfusion.com/winui/datepicker/getting-started">Date Picker</a></p>
+            <p><a href="https://help.syncfusion.com/winui/date-picker/getting-started">Date Picker</a></p>
         </td>
         <td>
-            <p><a href="https://help.syncfusion.com/winui/timepicker/getting-started">Time Picker</a></p>
+            <p><a href="https://help.syncfusion.com/winui/time-picker/getting-started">Time Picker</a></p>
         </td>
         <td>
             <p><a href="https://help.syncfusion.com/winui/scheduler/getting-started">Scheduler</a></p>
