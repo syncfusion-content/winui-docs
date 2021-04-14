@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Series in WinUI Chart control | Syncfusion
-description: Learn about Series support in Syncfusion WinUI Chart control and more details.
+description: Learn here all about Series support in Syncfusion WinUI Chart control and more details.
 platform: WinUI
 control: SfChart
 documentation: ug

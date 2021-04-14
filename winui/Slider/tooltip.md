@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ToolTip in WinUI Slider control | Syncfusion
-description: Learn about ToolTip support in Syncfusion WinUI Slider control and more details.
+description: Learn here all about ToolTip feature of Syncfusion WinUI Slider(SfSlider) control with style, placement support and more.
 platform: WinUI
 control: SfSlider
 documentation: ug

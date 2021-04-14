@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WinUI DataGrid control | Syncfusion
-description: Learn about introduction of Syncfusion WinUI DataGrid control and more details.
+description: Learn here all about introduction of Syncfusion WinUI DataGrid control and more details.
 platform: winui
 control: DataGrid
 documentation: ug

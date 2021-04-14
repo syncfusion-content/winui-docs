@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Context Flyout in WinUI TreeGrid control | Syncfusion
-description: Learn about Context Flyout support in Syncfusion WinUI TreeGrid control and more details.
+description: Learn here all about Context Flyout support in Syncfusion WinUI TreeGrid control and more details.
 platform: winUI
 control: SfTreeGrid
 documentation: ug

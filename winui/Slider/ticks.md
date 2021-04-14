@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ticks in WinUI Slider control | Syncfusion
-description: Learn about Ticks support in Syncfusion WinUI Slider control and more details.
+description: Learn here all about Ticks feature of Syncfusion WinUI Slider(SfSlider) control with length, placement support and more.
 platform: WinUI
 control: SfSlider
 documentation: ug

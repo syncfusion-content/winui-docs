@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Types in WinUI DataGrid control | Syncfusion
-description: Learn about Column Types support in Syncfusion WinUI DataGrid control and more details.
+description: Learn here all about Column Types support in Syncfusion WinUI DataGrid control and more details.
 platform: winui
 control: SfDataGrid
 documentation: ug

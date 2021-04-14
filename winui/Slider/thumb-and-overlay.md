@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Thumb and Thumb Overlay in WinUI Slider control | Syncfusion
-description: Learn about Thumb and Thumb Overlay support in Syncfusion WinUI Slider control and more details.
+description: Learn here all about Thumb and Thumb Overlay feature of Syncfusion WinUI Slider(SfSlider) control and more.
 platform: WinUI
 control: SfSlider
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unbound Column in WinUI DataGrid control | Syncfusion
-description: Learn about Unbound Column support in Syncfusion WinUI DataGrid control and more details.
+description: Learn here all about Unbound Column support in Syncfusion WinUI DataGrid control and more details.
 platform: winui
 control: DataGrid
 documentation: ug

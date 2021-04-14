@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WinUI Ribbon control | Syncfusion
-description: Learn here about getting started with Syncfusion WinUI Ribbon control and more details.
+description: Learn here all about getting started with Syncfusion WinUI Ribbon(SfRibbon) control, its elements, and more.
 platform: winui
 control: Ribbon
 documentation: ug

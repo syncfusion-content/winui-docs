@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Month View in WinUI Scheduler control | Syncfusion
-description: Learn about Month View support in Syncfusion WinUI Scheduler control and more details.
+description: Learn here all about Month View support in Syncfusion WinUI Scheduler(SfScheduler) control and more.
 platform: winui
 control: Scheduler
 documentation: ug

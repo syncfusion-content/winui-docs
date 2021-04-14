@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in WinUI TreeGrid control | Syncfusion
-description: Learn about Localization support in Syncfusion WinUI TreeGrid control and more details.
+description: Learn here all about Localization support in Syncfusion WinUI TreeGrid control and more details.
 platform: winui
 control: TreeGrid
 documentation: ug

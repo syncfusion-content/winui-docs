@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Track in WinUI Slider control | Syncfusion
-description: Learn about Track support in Syncfusion WinUI Slider control and more details.
+description: Learn here all about Track feature of Syncfusion WinUI Slider(SfSlider) control with hover color support and more.
 platform: WinUI
 control: SfSlider
 documentation: ug

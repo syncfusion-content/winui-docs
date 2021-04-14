@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Side By Side Placement in WinUI Chart control | Syncfusion
-description: Learn about Side By Side Placement support in Syncfusion WinUI Chart control and more details.
+description: Learn here all about Side By Side Placement support in Syncfusion WinUI Chart control and more details.
 platform: WinUI
 control: SfChart
 documentation: ug

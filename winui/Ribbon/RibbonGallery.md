@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RibbonGallery in WinUI Ribbon control | Syncfusion
-description: Learn about RibbonGallery support in Syncfusion WinUI Ribbon control and more details.
+description: Learn here all about RibbonGallery feature of Syncfusion WinUI Ribbon(SfRibbon) control with custom support.
 platform: winui
 control: Ribbon
 documentation: ug

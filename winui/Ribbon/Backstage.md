@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Backstage in WinUI Ribbon control | Syncfusion
-description: Learn about Backstage support in Syncfusion WinUI Ribbon control and more details.
+description: Learn here all about Backstage support in Syncfusion WinUI Ribbon control with visibility support and more.
 platform: winui
 control: Ribbon
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Day and Week Views in WinUI Scheduler control | Syncfusion
-description: Learn about Day and Week Views support in Syncfusion WinUI Scheduler control and more details.
+description: Learn here all about Day and Week Views support in Syncfusion WinUI Scheduler control and more details.
 platform: winui
 control: Scheduler
 documentation: ug

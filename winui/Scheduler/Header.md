@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Header in WinUI Scheduler control | Syncfusion
-description: Learn about Header support in Syncfusion WinUI Scheduler control and more details.
+description: Learn here all about Header support in Syncfusion WinUI Scheduler(SfScheduler) control with customization support and more.
 platform: winui
 control: Scheduler
 documentation: ug

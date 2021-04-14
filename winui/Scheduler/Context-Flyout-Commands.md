@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Context Flyout and Commands in WinUI Scheduler control | Syncfusion
-description: Learn about Context Flyout and Commands support in Syncfusion WinUI Scheduler control and more details.
+description: Learn here all about Context Flyout and Commands support in Syncfusion WinUI Scheduler(SfScheduler) control and more.
 platform: winui
 control: Scheduler
 documentation: ug

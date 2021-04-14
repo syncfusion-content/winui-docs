@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom Range in WinUI Slider control | Syncfusion
-description: Learn about Custom Range support in Syncfusion WinUI Slider control and more details.
+description: Learn here all about Custom Range support in Syncfusion WinUI Slider(SfSlider) control and more.
 platform: WinUI
 control: SfSlider
 documentation: ug

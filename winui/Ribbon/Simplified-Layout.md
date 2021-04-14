@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Simplified layout in WinUI Ribbon control | Syncfusion
-description: Learn about Simplified layout support in Syncfusion WinUI Ribbon control and more details.
+description: Learn here all about Simplified layout feature of Syncfusion WinUI Ribbon(SfRibbon) control and more.
 platform: winui
 control: Ribbon
 documentation: ug

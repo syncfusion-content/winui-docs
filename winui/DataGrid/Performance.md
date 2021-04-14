@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Performance in WinUI DataGrid control | Syncfusion
-description: Learn about Performance support in Syncfusion WinUI DataGrid control and more details.
+description: Learn here all about Performance support in Syncfusion WinUI DataGrid control and more details.
 platform: winui
 control: DataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Right to left(RTL) in WinUI TreeView control | Syncfusion
-description: Learn about Right to left(RTL) support in Syncfusion WinUI TreeView control and more details.
+description: Learn here all about Right to left(RTL) support in Syncfusion WinUI TreeView control and more details.
 platform: WinUI
 control: TreeView
 documentation: ug

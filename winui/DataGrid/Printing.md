@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Printing in WinUI DataGrid control | Syncfusion
-description: Learn about Printing support in Syncfusion WinUI DataGrid control and more details.
+description: Learn here all about Printing support in Syncfusion WinUI DataGrid control and more details.
 platform: winui
 control: DataGrid
 documentation: ug

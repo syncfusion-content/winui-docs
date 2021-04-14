@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stacked in WinUI Chart control | Syncfusion
-description: Learn about Stacked support in Syncfusion WinUI Chart control and more details.
+description: Learn here all about Stacked support in Syncfusion WinUI Chart control and more details.
 platform: WinUI
 control: SfChart
 documentation: ug

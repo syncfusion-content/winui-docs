@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Load On Demand in WinUI Scheduler control | Syncfusion
-description: Learn about Load On Demand support in Syncfusion WinUI Scheduler control and more details.
+description: Learn here all about Load On Demand feature of Syncfusion WinUI Scheduler(SfScheduler) control and more.
 platform: winui
 control: Scheduler
 documentation: ug

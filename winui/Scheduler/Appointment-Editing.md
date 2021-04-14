@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appointment Editing in WinUI Scheduler control | Syncfusion
-description: Learn about Appointment Editing support in Syncfusion WinUI Scheduler control and more details.
+description: Learn here all about Appointment Editing support in Syncfusion WinUI Scheduler control and more details.
 platform: winui
 control: Scheduler
 documentation: ug

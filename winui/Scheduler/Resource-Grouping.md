@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resource Grouping | WinUI | Scheduler | Syncfusion
-description:  WinUI scheduler resource grouping allows you to define resources that can be assigned to appointments in a day, week, workweek, and timeline views.
+description:  Learn here all about Resource Grouping feature of Syncfusion WinUI Scheduler(SfScheduler) control and more.
 platform: winui
 control: Scheduler
 documentation: ug

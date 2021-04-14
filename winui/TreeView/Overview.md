@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WinUI TreeView control | Syncfusion
-description: Learn about introduction of Syncfusion WinUI TreeView control and more details.
+description: Learn here all about introduction of Syncfusion WinUI TreeView control and more details.
 platform: WinUI
 control: TreeView
 documentation: ug

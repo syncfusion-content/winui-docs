@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Time Zone in WinUI Scheduler control | Syncfusion
-description: Learn about Time Zone support in Syncfusion WinUI Scheduler control and more details.
+description: Learn here all about Time Zone feature of Syncfusion WinUI Scheduler(SfScheduler) control with display appointment support and more.
 platform: winui
 control: Scheduler
 documentation: ug

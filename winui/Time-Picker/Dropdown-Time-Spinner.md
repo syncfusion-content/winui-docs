@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dropdown Time Spinner in WinUI Time Picker control | Syncfusion
-description: Learn about Dropdown Time Spinner support in Syncfusion WinUI Time Picker control and more details.
+description: Learn here all about Dropdown Time Spinner feature of Syncfusion WinUI Time Picker(SfTimePicker) control and more.
 platform: winui
 control:  SfTimePicker
 documentation: ug

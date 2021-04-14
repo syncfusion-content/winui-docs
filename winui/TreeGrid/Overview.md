@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WinUI TreeGrid control | Syncfusion
-description: Learn about introduction of Syncfusion WinUI TreeGrid control and more details.
+description: Learn here all about introduction of Syncfusion WinUI TreeGrid control and more details.
 platform: winui
 control: TreeGrid
 documentation: ug

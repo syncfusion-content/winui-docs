@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Types in WinUI TreeGrid control | Syncfusion
-description: Learn about Column Types support in Syncfusion WinUI TreeGrid control and more details.
+description: Learn here all about Column Types support in Syncfusion WinUI TreeGrid control and more details.
 platform: winui
 control: SfTreeGrid
 documentation: ug

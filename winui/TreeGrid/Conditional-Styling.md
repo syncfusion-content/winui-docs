@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Conditional Styling | TreeGrid | WinUI | Syncfusion
-description: Learn about conditional styling support in Syncfusion WinUI TreeGrid (SfTreeGrid) control and more details.
+description: Learn here all about conditional styling support in Syncfusion WinUI TreeGrid (SfTreeGrid) control and more details.
 platform: winUI
 control: SfTreeGrid
 documentation: ug

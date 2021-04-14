@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appointments in WinUI Scheduler control | Syncfusion
-description: Learn about Appointments support in Syncfusion WinUI Scheduler control and more details.
+description: Learn here all about Appointments feature of Syncfusion WinUI Scheduler(SfScheduler) control and more.
 platform: winui
 control: Scheduler
 documentation: ug

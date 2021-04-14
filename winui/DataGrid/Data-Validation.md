@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Validation in WinUI DataGrid control | Syncfusion
-description: Learn about Data Validation support in Syncfusion WinUI DataGrid control and more details.
+description: Learn here all about Data Validation support in Syncfusion WinUI DataGrid control and more details.
 platform: winui
 control: DataGrid
 documentation: ug

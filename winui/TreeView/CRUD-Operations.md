@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CRUD Operations in WinUI TreeView control | Syncfusion
-description: Learn about CRUD Operations support in Syncfusion WinUI TreeView control and more details.
+description: Learn here all about CRUD Operations support in Syncfusion WinUI TreeView control and more details.
 platform: WinUI
 control: SfTreeView
 documentation: ug

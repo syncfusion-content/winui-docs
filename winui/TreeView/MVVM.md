@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MVVM in WinUI TreeView control | Syncfusion
-description: Learn about MVVM support in Syncfusion WinUI TreeView control and more details.
+description: Learn here all about MVVM support in Syncfusion WinUI TreeView control and more details.
 platform: WinUI
 control: TreeView
 documentation: ug

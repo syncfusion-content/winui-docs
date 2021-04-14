@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grid Lines Customization in WinUI DataGrid control | Syncfusion
-description: Learn about Grid Lines Customization support in Syncfusion WinUI DataGrid control and more details.
+description: Learn here all about Grid Lines Customization support in Syncfusion WinUI DataGrid control and more details.
 platform: winui
 control: DataGrid
 documentation: ug

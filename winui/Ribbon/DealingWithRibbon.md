@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dealing with Ribbon in WinUI Ribbon control | Syncfusion
-description: Learn about Dealing with Ribbon support in Syncfusion WinUI Ribbon control and more details.
+description: Learn here all about Dealing with Ribbon feature of Syncfusion WinUI Ribbon(sfRibbon) control and more.
 platform: winui
 control: Ribbon
 documentation: ug
