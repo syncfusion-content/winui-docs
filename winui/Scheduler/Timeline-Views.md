@@ -13,7 +13,7 @@ The TimelineView displays the dates in the horizontal time axis with the desired
 
 ## Change time interval
 
-You can customize the interval of timeslots in the timeline views by using the `TimeInterval` property of `TimelineViewSettings.` This property will be applicable to `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views.
+You can customize the interval of timeslots in the timeline views by using the [TimeInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeInterval) property of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html). This property will be applicable to `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views.
 
 {% tabs %}
 {% highlight c# %}
@@ -27,9 +27,9 @@ this.Schedule.TimelineViewSettings.TimeInterval = new System.TimeSpan(0, 120, 0)
 N>
 If you modify the timeInterval value (in minutes), you need to change the time labels format by setting the timeFormat value to hh:mm.
 
-## Change time interval size
+## Change time interval width
 
-You can customize the interval width of timeslots in the Timeline views by setting the `TimeIntervalSize` property of `TimelineViewSettings.` This property will be applicable to all timeline views. By default, its value is 50 for the `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views and 150 for `TimelineMonth` view.
+You can customize the interval width of timeslots in the Timeline views by setting the [TimeIntervalSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html). This property will be applicable to all timeline views. By default, its value is 50 for the `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views and 150 for `TimelineMonth` view.
 
 {% tabs %}
 {% highlight xaml %}
@@ -46,11 +46,11 @@ this.Schedule.TimelineViewSettings.TimeIntervalSize = 120;
 {% endhighlight %}
 {% endtabs %}
 
-![change-time-interval-size-in-winui-scheduler](TimelineViews_Images/adding-change-time-interval-size-in-winui-scheduler.png)
+![change-time-interval-width-in-winui-scheduler](TimelineViews_Images/adding-change-time-interval-width-in-winui-scheduler.png)
 
 ## Flexible working days and working hours
 
-The default values for the `StartHour` and `EndHour` are 0 and 24 to show all the time slots in a timeline view. You can set the `StartHour` and `EndHour` properties of `TimelineViewSettings` to show only the required time duration for users. You can set the StartHour and EndHour in time duration to show the required time duration in minutes. The `StartHour` and `EndHour` properties do not apply to the `TimelineMonth` view.
+The default values for the `StartHour` and `EndHour` are 0 and 24 to show all the time slots in a timeline view. You can set the [StartHour](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_StartHour) and [EndHour](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_EndHour) properties of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html) to show only the required time duration for users. You can set the StartHour and EndHour in time duration to show the required time duration in minutes. The `StartHour` and `EndHour` properties do not apply to the `TimelineMonth` view.
 
 {% tabs %}
 {% highlight xaml %}
@@ -72,7 +72,7 @@ this.Schedule.TimelineViewSettings.EndHour = 16;
 ![flexible-working-hours-in-winui-scheduler](TimelineViews_Images/adding-flexible-working-hours-in-winui-scheduler.png)
 
 N>
-* The NonWorkingDays property will applicable only for `workWeek` and `TimelineWorkWeek` views only, and not applicable for the remaining views.
+* The [NonWorkingDays](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_NonWorkingDays) property will applicable only for `workWeek` and `TimelineWorkWeek` views only, and not applicable for the remaining views.
 * The Scheduler Appointments UI, which does not fall within the `StartHour` and `EndHour` will not be visible and if it falls partially, it will be clipped.
 * No need to specify the decimal point values for `StartHour` and `EndHour` if you do not want to set the minutes.
 * The number of time slots will be calculated based on total minutes of a day and time interval (total minutes of a day ((start hour - end hour) * 60) / time interval).
@@ -81,7 +81,7 @@ If the custom timeInterval is given, then the number of time slots calculated ba
 
 ## Change days count
 
-You can change the day’s count of timeslots in the timeline view by setting the `DaysCount` property of `TimelineViewSettings.` This property is only applicable for the `TimelineDay` view. By default, its value is set to `1.`
+You can change the day’s count of timeslots in the timeline view by setting the [DaysCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_DaysCount) property of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html). This property is only applicable for the `TimelineDay` view. By default, its value is set to `1.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -100,7 +100,7 @@ this.Schedule.TimelineViewSettings.DaysCount = 2;
 
 ## Blackout dates
 
-You can disable the interaction for certain dates in the scheduler `TimelineMonth` view by adding those specific dates to the `BlackoutDates` collection property of SfScheduler. Using this, you can allocate or restrict the specific dates for predefined events. This property does not apply to the `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views.
+You can disable the interaction for certain dates in the scheduler `TimelineMonth` view by adding those specific dates to the [BlackoutDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_BlackoutDates) collection property of SfScheduler. Using this, you can allocate or restrict the specific dates for predefined events. This property does not apply to the `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views.
 
 {% tabs %}
 {% highlight c# %}
@@ -130,11 +130,11 @@ private ObservableCollection<DateTime> GetBlackoutDates()
 
 ## Special time regions
 
-You can restrict the user interaction such as selection and highlights specific regions of time in the timeline views by adding the `SpecialTimeRegions` property of SfScheduler. You need to set the `StartTime` and `EndTime` properties of `SpecialTimeRegion` to create a SpecialTimeRegion, you can use the timeZone property to set the specific timezone for the start and end time of the `SpecialTimeRegion.` The `SpecialTimeRegion` will display the text or image on it that set to the text or icon property of `SpecialTimeRegion.` This property will be applicable to the `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views.
+You can restrict the user interaction such as selection and highlights specific regions of time in the timeline views by adding the [SpecialTimeRegions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_SpecialTimeRegions) property of SfScheduler. You need to set the [StartTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_StartTime) and [EndTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_EndTime) properties of [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) to create a SpecialTimeRegion, you can use the timeZone property to set the specific timezone for the start and end time of the `SpecialTimeRegion.` The `SpecialTimeRegion` will display the text or image on it that set to the text or icon property of `SpecialTimeRegion.` This property will be applicable to the `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views.
 
 ### Selection restriction in timeslots
 
-You can enable or disable the touch interaction of SpecialTimeRegion using the `CanEdit` property of `SpecialTimeRegion.` By default, its value is set to `true.`
+You can enable or disable the touch interaction of SpecialTimeRegion using the [CanEdit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanEdit) property of [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html). By default, its value is set to `true.`
 
 {% tabs %}
 {% highlight c# %}
@@ -155,14 +155,14 @@ this.Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 
 N> This property only restricts the interaction on region and it does not restrict the following:
 * Programmatic selection (if the user updates the selected date value dynamically).
-* Does not clear the selection when the user selects the region and dynamically changes the `CanEdit` property to false.
+* Does not clear the selection when the user selects the region and dynamically changes the [CanEdit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanEdit) property to false.
 * It does not restrict the appointment interaction when the appointment is placed in the region.
 * It does not restrict the appointment rendering on a region when the appointments are loaded from data services or adding programmatically.
 
 
 ### Recurring time region
 
-The recurring time region on a daily, weekly, monthly, or yearly interval. The recurring special time regions can be created by setting the `RecurrenceRule` property in `SpecialTimeRegion`.
+The recurring time region on a daily, weekly, monthly, or yearly interval. The recurring special time regions can be created by setting the [RecurrenceRule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_RecurrenceRule) property in [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -182,7 +182,7 @@ this.Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 
 ### Recurrence exception dates
 
-You can delete any of occurrence that is an exception from the recurrence pattern time region by using the `RecurrenceExceptionDates` property of `SpecialTimeRegion.` The deleted occurrence date will be considered as a recurrence exception date.
+You can delete any of occurrence that is an exception from the recurrence pattern time region by using the [RecurrenceExceptionDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_RecurrenceExceptionDates) property of [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html). The deleted occurrence date will be considered as a recurrence exception date.
 
 {% tabs %}
 {% highlight c# %}
@@ -209,7 +209,7 @@ this.Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 
 ### Special time region customization
 
-The `SpecialTimeRegion` background color can be customized by using the `Background` and `SpecialTimeRegionTemplate` properties of `SpecialTimeRegion` that is used to customize the text style for the image of the `SpecialTimeRegion`.
+The `SpecialTimeRegion` background color can be customized by using the [Background](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_Background) and [SpecialTimeRegionTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_SpecialTimeRegionTemplate) properties of [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) that is used to customize the text style for the image of the `SpecialTimeRegion`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -254,7 +254,7 @@ this.Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 
 ## Change time ruler size
 
-You can customize the size of the time ruler view where the labels mentioning the time are placed by using the `TimeRulerSize` property of `TimelineViewSettings.` This property will be applicable to `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views.
+You can customize the size of the time ruler view where the labels mentioning the time are placed by using the [TimeRulerSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html). This property will be applicable to `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views.
 
 {% tabs %}
 {% highlight xaml %}
@@ -276,7 +276,7 @@ this.Schedule.TimelineViewSettings.TimeRulerSize = 100;
 
 ## Minimum appointment duration
 
-The `MinimumAppointmentDuration` property in the `TimelineViewSettings` is to set an arbitrary height to appointments when it has a minimum duration in timeline view so that the subject can be readable. This property will not apply to the `TimelineMonth` view.
+The [MinimumAppointmentDuration](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_MinimumAppointmentDuration) property in the [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html) is to set an arbitrary height to appointments when it has a minimum duration in timeline view so that the subject can be readable. This property will not apply to the `TimelineMonth` view.
 
 {% tabs %}
 {% highlight c# %}
@@ -291,9 +291,9 @@ N>
 * The `TimeInterval` value will be set when the `MinimumAppointmentDuration` is greater than `TimeInterval` with lesser appointment duration.
 * All-day Appointment does not support `MinimumAppointmentDuration`.
 
-## Time text formatting
+## Time ruler text formatting
 
-You can customize the format for the labels mentioning the time by setting the `TimeRulerFormat` property of `TimelineViewSettings` in the Scheduler. This property will not apply to the `TimelineMonth` view.
+You can customize the format for the labels mentioning the time by setting the [TimeRulerFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerFormat) property of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html) in the Scheduler. This property will not apply to the `TimelineMonth` view.
 
 {% tabs %}
 {% highlight c# %}
@@ -303,15 +303,15 @@ this.Schedule.TimelineViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 {% endhighlight %}
 {% endtabs %}
 
-![time-text-formatting-in-winui-scheduler](TimelineViews_Images/adding-time-text-formatting-in-winui-scheduler.png)
+![time-ruler-text-formatting-in-winui-scheduler](TimelineViews_Images/adding-time-ruler-text-formatting-in-winui-scheduler.png)
 
 ## View header
 
-You can customize the default appearance of view header in the timeline views by setting the `ViewHeaderDateFormat,` `ViewHeaderHeight,` `ViewHeaderDayFormat,` and `ViewHeaderTemplate` of `TimelineViewSettings`.
+You can customize the default appearance of view header in the timeline views by setting the `ViewHeaderDateFormat,` `ViewHeaderHeight,` `ViewHeaderDayFormat,` and `ViewHeaderTemplate` of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html).
 
 ### View header text formatting
 
-You can customize the date and day format of ViewHeader by using the `ViewHeaderDateFormat` and `ViewHeaderDayFormat` properties of `TimelineViewSettings`.
+You can customize the date and day format of ViewHeader by using the [ViewHeaderDateFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_ViewHeaderDateFormat) and [ViewHeaderDayFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderDayFormat) properties of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -333,7 +333,7 @@ this.Schedule.TimelineViewSettings.ViewHeaderDateFormat = "dd-MMMM";
 
 ### View header height
 
-You can customize the height of the ViewHeader in timeline views by setting the `ViewHeaderHeight` property of `TimelineViewSettings` in SfScheduler.
+You can customize the height of the ViewHeader in timeline views by setting the [ViewHeaderHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderHeight) property of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html) in SfScheduler.
 
 {% tabs %}
 {% highlight xaml %}
@@ -354,7 +354,7 @@ this.Schedule.TimelineViewSettings.ViewHeaderHeight = 100;
 
 ### View header appearance customization
 
-You can customize the default appearance of view header by setting the `ViewHeaderTemplate` property of `TimelineViewSettings` in SfScheduler.
+You can customize the default appearance of view header by setting the [ViewHeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate) property of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html) in SfScheduler.
 
 {% tabs %}
 {% highlight xaml %}
@@ -402,7 +402,7 @@ You can customize the default appearance of view header by setting the `ViewHead
 
 ## Appointment height
 
-You can customize the height of the appointment in `TimelineViews` using the `TimelineAppointmentHeight` property of the `TimelineViewSettings.` By default, its value is fifty for the `TimelineWeek,` `TimelineWorkWeek,` and `TimelineDay` views and twenty for the `TimelineMonth` view.
+You can customize the height of the appointment in `TimelineViews` using the [TimelineAppointmentHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimelineViewSettings_TimelineAppointmentHeight) property of the [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html). By default, its value is fifty for the `TimelineWeek,` `TimelineWorkWeek,` and `TimelineDay` views and twenty for the `TimelineMonth` view.
 
 {% tabs %}
 {% highlight xaml %}
