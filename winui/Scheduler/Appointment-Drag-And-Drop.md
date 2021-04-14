@@ -11,7 +11,7 @@ documentation: ug
 
 The Scheduler supports to reschedule the appointment by performing the drag and drop operation.
 
-N> Due to WinUI [framwork issue](https://github.com/microsoft/microsoft-ui-xaml/issues/2715), we didnt include this feature in WinUI desktop applications and this is applicable only for WinUI UWP applications.
+N> Due to WinUI [framework issue](https://github.com/microsoft/microsoft-ui-xaml/issues/2715), we didn't include this feature in WinUI desktop applications and this is applicable only for WinUI UWP applications.
 
 ## Disable drag and drop
 
