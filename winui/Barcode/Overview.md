@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WinUI Barcode control | Syncfusion
-description: Learn about introduction of Syncfusion WinUI Barcode(SfBarcode) control, its elements, and more. 
+description: Learn here all about introduction of Syncfusion WinUI Barcode(SfBarcode) control, its elements, and more. 
 platform: WinUI
 control: Barcode
 documentation: ug
