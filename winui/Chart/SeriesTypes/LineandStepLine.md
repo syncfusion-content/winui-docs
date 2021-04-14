@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Line and StepLine in WinUI Chart control | Syncfusion
-description: Learn here all about Line and StepLine support in Syncfusion WinUI Chart control and more details.
+description: Learn here all about Line and StepLine support in Syncfusion WinUI Chart(SfChart) control and more details.
 platform: WinUI
 control: SfChart
 documentation: ug

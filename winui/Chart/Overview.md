@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WinUI Chart control | Syncfusion
-description: Learn about introduction of Syncfusion WinUI Chart control and more details.
+description: Learn here all about introduction of Syncfusion WinUI Chart(SfChart) control with key features and more.
 platform: WinUI
 control: Chart
 documentation: ug

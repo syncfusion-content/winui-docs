@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Markers in WinUI Chart control | Syncfusion
-description: Learn hera all about Data Markers feature of Syncfusion WinUI Chart control with .
+description: Learn hera all about Data Markers feature of Syncfusion WinUI Chart control with chart segment element and more.
 platform: WinUI
 control: Chart
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spline in WinUI Chart control | Syncfusion
-description: Learn here all about Spline support in Syncfusion WinUI Chart control and more details.
+description: Learn here all about Spline support in Syncfusion WinUI Chart(SfChart) control with Area, Type support and more.
 platform: WinUI
 control: SfChart
 documentation: ug
