@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Linear Gauge (SfLinearGauge)
 
-This section explains the steps required to add the Linear Gauge control and its elements such as axis, range, and pointer. This section covers only basic features needed to get started with Syncfusion Linear Gauge control.
+This section explains the steps required to add the [WinUI Linear Gauge](https://www.syncfusion.com/winui-controls/linear-gauge) control and its elements such as axis, range, and pointer. This section covers only basic features needed to get started with Syncfusion Linear Gauge control.
 
 ## Creating an application with WinUI Linear Gauge
 
@@ -19,7 +19,7 @@ This section explains the steps required to add the Linear Gauge control and its
 
 3. Import the control namespace `Syncfusion.UI.Xaml.Gauges` in XAML or C# code.
 
-4. Initialize the `SfLinearGauge` control.
+4. Initialize the [`SfLinearGauge`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) control.
 
 {% tabs %}
 
@@ -44,7 +44,7 @@ N> Default axis will be added when initializing the Linear Gauge control.
 
 ## Add axis to the linear gauge
 
-You can set a linear axis for the gauge using the `Axis` property of `SfLinearGauge` and also you can specify the minimum and maximum values of axis using the [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_LinearAxis_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_Maximum) properties as demonstrated in the following code sample.
+You can set a linear axis for the gauge using the [`Axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html#Syncfusion_UI_Xaml_Gauges_SfLinearGauge_Axis) property of [`SfLinearGauge`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) and also you can specify the minimum and maximum values of axis using the [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_LinearAxis_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_Maximum) properties as demonstrated in the following code sample.
 
 {% tabs %}
 
@@ -76,7 +76,7 @@ this.Content = sfLinearGauge;
 
 ## Add range to the linear gauge
 
-Ranges contains a list of range elements, where you can add any number of ranges inside the axis. You can specify the start value, mid value, end value, and background color for the range using the `StartValue`, `MidValue`, `EndValue` and `Background` properties as demonstrated in the following code sample.
+Ranges contains a list of range elements, where you can add any number of ranges inside the axis. You can specify the start value, mid value, end value, and background color for the range using the [`StartValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugeRange.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeRange_StartValue), [`EndValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugeRange.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeRange_EndValue) and `Background` properties as demonstrated in the following code sample.
 
 {% tabs %}
 
@@ -177,7 +177,7 @@ this.Content = sfLinearGauge;
 
 ## Add marker pointer to the linear gauge
 
-MarkerPointers contains a list of pointer elements, where you can add any number of gauge pointers such as `ShapePointer`, and `ContentPointer`, inside the axis to indicate the value.
+MarkerPointers contains a list of pointer elements, where you can add any number of gauge pointers such as [`ShapePointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html), and [`ContentPointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ContentPointer.html), inside the axis to indicate the value.
 
 **Add shape pointer to the linear gauge**
 

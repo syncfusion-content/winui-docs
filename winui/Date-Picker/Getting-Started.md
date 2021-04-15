@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI DatePicker
 
-This section explains the steps required to add the [DatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html) control and its date selection options. This section covers only basic features needed to get started with Syncfusion `DatePicker` control.
+This section explains the steps required to add the [WinUI DatePicker](https://www.syncfusion.com/winui-controls/DatePicker) control and its date selection options. This section covers only basic features needed to get started with Syncfusion `DatePicker` control.
 
 ## Structure of DatePicker control
 

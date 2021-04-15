@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Range Slider (SfRangeSlider)
 
-This section explains the steps required to add the RangeSlider control and its elements such as values, ticks, divisors, labels, and tooltip. This section covers only basic features needed to get started with Syncfusion RangeSlider.
+This section explains the steps required to add the [WinUI RangeSlider](https://www.syncfusion.com/winui-controls/range-slider) control and its elements such as values, ticks, divisors, labels, and tooltip. This section covers only basic features needed to get started with Syncfusion RangeSlider.
 
 ## Creating an application with WinUI Range Slider
 

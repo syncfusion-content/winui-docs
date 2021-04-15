@@ -378,5 +378,5 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winu
 
 ## Built-in commands
 
-The TreeView provides support for the built-in commands. You can refer more information click [here](https://help.syncfusion.com/winui/treeview/contextflyout#built-in-commands).
+The TreeView provides support for built-in commands to show context flyout. You can refer more information about binding the built-in commands [here](https://help.syncfusion.com/winui/treeview/contextflyout#built-in-commands).
 
