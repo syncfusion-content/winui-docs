@@ -27,7 +27,7 @@ The Syncfusion `WinUI Sample Browser` is available for both the WinUI `UWP` and 
 
 ### WinUI UWP
 
-The WinUI UWP projet can be explored in Visual Studio by clicking `Run Local Demos` and selecting `UWP` to open the `WinUI Sample Browser`.
+The WinUI UWP project can be explored in Visual Studio by clicking `Run Local Demos` and selecting `UWP` to open the `WinUI Sample Browser`.
 
 ![Explore Syncfusion WinUI Demos with UWP Project](Guide-to-run-the-samples-images/exploring-winui-uwp-sample-browser.png)
 
@@ -35,7 +35,7 @@ The WinUI UWP projet can be explored in Visual Studio by clicking `Run Local Dem
 
 ### WinUI Desktop
 
-The WinUI desktop projet can be explored in Visual Studio by clicking `Run Local Demos` and selecting `Desktop` to open the `WinUI Sample Browser`.
+The WinUI desktop project can be explored in Visual Studio by clicking `Run Local Demos` and selecting `Desktop` to open the `WinUI Sample Browser`.
  
  ![Explore Syncfusion WinUI Demos with Desktop Project](Guide-to-run-the-samples-images/exploring-winui-desktop-sample-browser.png)
 
