@@ -14,6 +14,8 @@ The WinUI scheduler has support to define a context flyout for appointments, tim
 * [CellContextFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CellContextFlyout)
 * [AppointmentContextFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentContextFlyout)
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/SchedulerContextFlyout)
+
 ## Cell context flyout
 
 You can set the context flyout for time slot and month cells by using the `SfScheduler.CellContextFlyout` property. The [CellContextFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CellContextFlyout) will appear only when the time slot or month cells are right-clicked.

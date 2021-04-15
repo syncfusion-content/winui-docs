@@ -39,6 +39,8 @@ N>
 * The Scheduler supports functionality to arrange appointments according to their start time and duration for normal appointments in a day, week, and workweek views.
 *  In Timeline views, all the appointments (span, all day, and normal) are ordered and rendered based on the start date-time of appointment, followed by the time duration of the appointment, `IsSpanned,` `IsAllDay,` and normal appointments.
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/ScheduleAppointment)
+
 ## Scheduler item source and Mapping
 
 The Scheduler supports to bind any collection that implements the `IEnumerable` interface to populate appointments. You can map properties in the business object to [ScheduleAppointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) by configuring the [AppointmentMapping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) property. The following table that property shows mapping property details to `ScheduleAppointment.`
@@ -151,6 +153,8 @@ Schedule.ItemsSource = Meetings;
 {% endtabs%}
 
 ![business-objects-in-winui-scheduler](Appointment_Images/adding-custom-appointment-in-winui-scheduler.png)
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/CustomAppointment)
 
 ## Spanned appointments
 

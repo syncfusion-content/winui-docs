@@ -103,7 +103,7 @@ Schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
-N> [View sample in GitHub]()
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/GettingStarted)
 
 ### Events/Appointments data mapping
 
