@@ -1,0 +1,172 @@
+---
+layout: post
+title: Restrict selection in WinUI CalendarDateRangePicker control|Syncfusion
+description: This section describes about how to restrict the date range selection in WinUI Calendar DateRangePicker control.
+platform: WinUI
+control: SfCalendarDateRangePicker
+documentation: ug
+---
+
+# Restrict or limit date range selection in Calendar DateRangePicker
+
+## Limit available dates
+
+You can allow the users to select a date range within the particular range by specifying [`MinDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MinDate) and [`MaxDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MaxDate) properties. The default value of `MinDate` property is `1/1/1920 12:00:00 AM +00:00` and `MaxDate` property is `12/31/2120 11:59:59 PM +00:00`.
+
+N> Dates that appear outside minimum and maximum date range will be disabled (blackout).
+
+{% tabs %}
+{% highlight xaml %}
+
+<calendar:Calendar x:Name="sfCalendarDateRangePicker"/>
+
+{% endhighlight  %}
+{% highlight C# %}
+
+SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
+sfCalendarDateRangePicker.MinDate = new DateTimeOffset(new DateTime(2021, 03, 06));
+sfCalendarDateRangePicker.MaxDate = new DateTimeOffset(new DateTime(2021, 03, 24));
+
+{% endhighlight %}
+{% endtabs %}
+
+![Calendar DateRangePicker restrict the date selection with particular range](Getting-Started_images/MinMaxdate.png)
+
+N> The `MinDate` property value should not be greater than the `MaxDate` property value.
+
+## Disable dates using BlackoutDates
+
+If you want to block particular dates from the date selection, add those dates in the [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_BlackoutDates) collection. You can add more block out dates to the `BlackoutDates` collection. The default value of `BlackoutDates` property is `null`.
+
+{% tabs %}
+{% highlight c# %}
+
+public class ViewModel
+{       
+    public DateTimeOffsetCollection BlockedDates { get; set; }
+    public ViewModel()
+    {
+        BlockedDates = new DateTimeOffsetCollection();
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 1, 17)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 1, 4)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 2, 5)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 2, 6)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 1, 9)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 3, 11)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 3, 12)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 3, 23)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 3, 26)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 4, 14)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 1, 18)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 5, 19)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 1, 26)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 6, 29)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 1, 31)));
+        BlockedDates.Add(new DateTimeOffset(new DateTime(2021, 1, 27)));
+    }
+}
+
+{% endhighlight  %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+
+<calendar:SfCalendarDateRangePicker BlackoutDates="{Binding BlockedDates}" 
+                     x:Name="sfCalendarDateRangePicker">
+    <calendar:SfCalendarDateRangePicker.DataContext>
+        <local:ViewModel/>
+    </calendar:SfCalendarDateRangePicker.DataContext>
+</calendar:SfCalendarDateRangePicker>
+
+{% endhighlight  %}
+{% highlight C# %}
+
+sfCalendarDateRangePicker.DataContext = new ViewModel();
+sfCalendarDateRangePicker.BlackoutDates = (sfCalendarDateRangePicker.DataContext as ViewModel).BlockedDates;
+
+{% endhighlight  %}
+{% endtabs %}
+
+![Calendar DateRangePicker blocks the particular dates in dropdown calendar](Getting-Started_images/BlackoutDates.png)
+
+## Disable dates dynamically
+
+You can prevent the users from selecting any dates or days (example: all weekend days) by handling the [`ItemPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_ItemPrepared) event and setting [`ItemInfo.IsBlackout`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_IsBlackout) property value as `true` for those specific dates.
+
+N> You can also change the text to be displayed for specific days or dates in dropdown calendar using `ItemInfo.DisplayText` property.  
+
+{% tabs %}
+{% highlight xaml %}
+
+<calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker"
+                                    ItemPrepared="SfCalendarDateRangePicker_ItemPrepared"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
+sfCalendarDateRangePicker.ItemPrepared += SfCalendarDateRangePicker_ItemPrepared;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows:
+
+{% tabs %}
+{% highlight C# %}
+
+private void SfCalendarDateRangePicker_ItemPrepared(object sender, ItemPreparedEventArgs e)
+{
+    //Block all weekend days
+    if (e.ItemInfo.ItemType == CalendarItemType.Day &&
+        (e.ItemInfo.Date.DayOfWeek == DayOfWeek.Saturday ||
+        e.ItemInfo.Date.DayOfWeek == DayOfWeek.Sunday))
+    {
+        e.ItemInfo.IsBlackout = true;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Calendar DateRangePicker restrict the weekend dates from selection](Getting-Started_images/blockweekend.png)
+
+You can also change the text to be displayed for specific days or dates in `Calendar DateRangePicker` using [ItemInfo.DisplayText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_DisplayText) property. 
+
+{% tabs %}
+{% highlight C# %}
+
+private void SfCalendarDateRangePicker_ItemPrepared(object sender, ItemPreparedEventArgs e)
+{
+    //Block all weekend days
+    if (e.ItemInfo.ItemType == CalendarItemType.Day &&
+        (e.ItemInfo.Date.DayOfWeek == DayOfWeek.Saturday ||
+        e.ItemInfo.Date.DayOfWeek == DayOfWeek.Sunday))
+    {
+        e.ItemInfo.IsBlackout = true;
+        e.ItemInfo.DisplayText = "X";
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N> Blackout dates will not be added in `SelectedRange` property even though it is highlighted in dropdown calendar.
+
+## Limit duration of selected range
+
+You can limit the duration of selected range in `Calendar DateRangePicker` value by using [`MinDatesCountInRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MinDatesCountInRange) and [`MaxDatesCountInRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MaxDatesCountInRange) properties. By default, the value of `MinDatesCountInRange` value is `0` and `MaxDatesCountInRange` value is `null`.
+
+{% tabs %}
+{% highlight C# %}
+
+SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
+sfCalendarDateRangePicker.MaxDatesCountInRange = 10;
+sfCalendarDateRangePicker.MinDatesCountInRange = 5;
+
+{% endhighlight  %}
+{% endtabs %}
+
+![Calendar DateRangePicker with end range value restriction](Getting-Started_images/Selection-By-DayCount.png)
+

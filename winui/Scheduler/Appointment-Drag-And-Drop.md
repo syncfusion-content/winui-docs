@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appointment Drag and Drop | WinUI | Scheduler | Syncfusion
-description: This section explains how to handle an appointment drag and drop and events in the Syncfusion WinUI Scheduler. 
+description: This section explains how to handle the drag and drop appointments and its events in the WinUI Calendar. 
 platform: winui
 control: Scheduler
 documentation: ug
@@ -11,11 +11,11 @@ documentation: ug
 
 The Scheduler supports to reschedule the appointment by performing the drag and drop operation.
 
-N> Applicable only for WinUI UWP platform.
+N> Due to WinUI [framework issue](https://github.com/microsoft/microsoft-ui-xaml/issues/2715), we didn't include this feature in WinUI desktop applications and this is applicable only for WinUI UWP applications.
 
 ## Disable drag and drop
 
-The Scheduler supports disabling the appointment drag and drop by setting the [AppointmentEditFlag](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditFlag.html) property except [DragDrop](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditFlag.html#Syncfusion_UI_Xaml_Scheduler_AppointmentEditFlag_DragDrop). In this case, you will not be able to perform appointment drag & drop.
+The Scheduler supports disabling the appointment drag and drop by setting the [AppointmentEditFlag](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditFlag.html) property except [DragDrop](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditFlag.html#Syncfusion_UI_Xaml_Scheduler_AppointmentEditFlag_DragDrop). In this case, you will not be able to perform appointment drag and drop.
 
 {% tabs %}
 {% highlight xaml %}
@@ -43,7 +43,7 @@ this.Schedule.DragDropSettings.ShowTimeIndicator = true;
 
 N>
 * Not applicable for the `Month` and `Timeline Month` views. 
-* If the `TimeRulerSize` property value is zero to collapse the time ruler labels, then drag the time indicator will not be shown.
+* If the [TimeRulerSize](https://help.syncfusion.com/winui/scheduler/day-week-views#change-time-ruler-size) property value is zero to collapse the time ruler labels, then drag the time indicator will not be shown.
 
 ## Appointment dragging time indicator text formatting
 

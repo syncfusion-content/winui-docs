@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Appointment editing | WinUI | Scheduler | Syncfusion
-description: This section explains how to handle appointment editing and appointment resizing operations in the WinUI scheduler.
+title: Appointment editing | CRUD operations | WinUI | Scheduler | Syncfusion
+description: How to create, read, update and delete appointments and resizing appointments in the WinUI Calendar.
 platform: winui
 control: Scheduler
 documentation: ug
 ---
 
-# Appointment Editing in WinUI Scheduler (SfScheduler)
+# Appointment Editing | CRUD operations in WinUI Scheduler (SfScheduler)
 
 This section explains how to handle appointment editing in WinUI scheduler and also explains about the appointment resizing.
 
-## Adding appointments
+## Creating appointments
 
 The Scheduler supports adding new appointment by using [Appointment Editor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerAppointmentEditorView.html) UI dialog. You can open this editor dialog by double-clicking on a time cell.
 
 ## Editing appointment
 
-The Scheduler supports editing the appointment by using the [Appointment Editor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerAppointmentEditorView.html) UI dialog. You can open this dialog by double-clicking on the appointment.
+The Scheduler supports editing the existing appointments by using the [Appointment Editor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerAppointmentEditorView.html) UI dialog. You can open this dialog by double-clicking on the appointment.
 
 ![edit-an-appointment-using-appointment-editor-dialog-in-winui-scheduler](Appointment-Editing_Images/edit-an-appointment-using-appointment-editor-dialog-in-winui-scheduler.png)
 
@@ -25,7 +25,7 @@ You can edit the appointments in the appointment editor dialog. These changes wi
 
 ### Edit recurring appointment
 
-The Scheduler supports editing the recurrence appointment. The following editor dialog will appear when you edit the recurrence appointment to select whether to edit only the particular occurrence or appointment series.
+The Scheduler supports editing the recurrence appointment. The following editor dialog will appear when you edit the recurrence appointment to select whether to edit only the particular occurrence or recurrence series.
 
 ![edit-an-recurring-appointment-using-recurring-appointment-editor-dialog-in-winui-scheduler](Appointment-Editing_Images/edit-an-recurring-appointment-using-recurring-appointment-editor-dialog-in-winui-scheduler.png)
 
@@ -94,7 +94,7 @@ private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorO
 ![collapse-build-in-editors-of-appointment-editor-dialog-in-winui-scheduler](Appointment-Editing_Images/collapse-build-in-editors-of-appointment-editor-dialog-in-winui-scheduler.png)
 
 N>
-* The basic editors such that `Subject,` `Location,` `Start Hour,` and `End Hour` of the scheduler appointment editor will not be collapsed.
+* The basic editors such that `Subject`, `Location`, `Start`, and `End` of the scheduler appointment editor cannot be collapsed.
 
 ### AppointmentEditorClosing event
 
@@ -193,7 +193,7 @@ private void Schedule_AppointmentDeleting(object sender, AppointmentDeletingEven
 
 The Scheduler has support to resize the selected appointment. This support is available for all views except  the `Month` view.
 
-N>  Applicable only for WinUI UWP.
+N>  Due to WinUI [framework issue](https://github.com/microsoft/microsoft-ui-xaml/issues/2715), we didn't include this feature in WinUI desktop applications and this is applicable only for WinUI UWP applications.
 
 ### Disable appointment resize
 
