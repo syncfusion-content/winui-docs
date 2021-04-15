@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Divisors in WinUI RangeSlider control | Syncfusion
-description: Learn about Divisors support in Syncfusion WinUI RangeSlider (Range Slider) control and more details.
+description: Learn here all about Divisors support in Syncfusion WinUI RangeSlider(SfRangeSlider) control and more.
 platform: WinUI
 control: SfRangeSlider
 documentation: ug

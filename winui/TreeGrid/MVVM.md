@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MVVM | TreeGrid | WinUI | Syncfusion
-description: Learn here all about MVVM support to cutomize the Syncfusion WinUI TreeGrid (SfTreeGrid) control and more details.
+description: Learn here all about MVVM support to cutomize the Syncfusion WinUI TreeGrid(SfTreeGrid) control and more.
 platform: winui
 control: TreeGrid
 documentation: ug

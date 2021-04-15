@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Conditional styling in WinUI DataGrid control | Syncfusion
-description: Learn here all about conditional styling support in Syncfusion WinUI DataGrid (SfDataGrid) control and more details.
+description: Learn here all about conditional styling support in Syncfusion WinUI DataGrid(SfDataGrid) control and more.
 platform: winui
 control: SfDataGrid
 documentation: ug

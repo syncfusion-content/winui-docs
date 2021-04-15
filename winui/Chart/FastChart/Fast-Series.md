@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fast Series in WinUI Chart control | Syncfusion
-description: Learn here all about Fast Series feature of Syncfusion WinUI Chart control.It can render a collection with huge number of datapoints using the polyline segment
+description: Learn here all about Fast Series feature of Syncfusion WinUI Chart control that can render a collection with huge number of datapoints using the polyline segment
 platform: WinUI
 control: SfChart
 documentation: ug

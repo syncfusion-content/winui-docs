@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WinUI RangeSlider control | Syncfusion
-description: Learn about Overview support in Syncfusion WinUI RangeSlider (Range Slider) control and more details.
+description: Learn about Overview support in Syncfusion WinUI RangeSlider(SfRangeSlider) control with key features and more.
 platform: WinUI
 control: SfRangeSlider
 documentation: ug
