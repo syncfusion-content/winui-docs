@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Radial Gauge
 
-This section explains the steps required to add the Radial Gauge control and its elements such as axis, range, pointer and annotation. This section covers only basic features needed to get started with Syncfusion radial gauge control.
+This section explains the steps required to add the [WinUI Radial Gauge](https://www.syncfusion.com/winui-controls/radial-gauge) control and its elements such as axis, range, pointer and annotation. This section covers only basic features needed to get started with Syncfusion radial gauge control.
 
 ## Creating an application with WinUI Radial Gauge
 

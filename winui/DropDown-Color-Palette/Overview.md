@@ -9,7 +9,7 @@ documentation: ug
 
 # WinUI DropDown Color Palette Overview
 
-The [DropDownColorPalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownColorPalette.html) control provides a rich visual interface for color selection. The structure of the `DropDownColorPalette` control represents a palette which is displayed as a Drop-down with selected color highlighted at the top. Its provides standard colors and the various theme colors to choose.  The control also has a `ToolTip` support which bears the name of the color. More color options are embedded with the control that provides you with a wide range of color options.
+The [WinUI DropDownColorPalette](https://www.syncfusion.com/winui-controls/dropdown-color-palette) control provides a rich visual interface for color selection. The structure of the `DropDownColorPalette` control represents a palette which is displayed as a Drop-down with selected color highlighted at the top. Its provides standard colors and the various theme colors to choose.  The control also has a `ToolTip` support which bears the name of the color. More color options are embedded with the control that provides you with a wide range of color options.
 
 ![ColorPalette control structure](Getting-Started_images/Overview.png)
 

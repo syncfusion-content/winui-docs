@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Color Picker
 
-This section describes how to create a [ColorPicker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html) control in a WinUI application and overview of its basic functionalities.
+This section describes how to create a [WinUI ColorPicker](https://www.syncfusion.com/winui-controls/color-picker) control in a WinUI application and overview of its basic functionalities.
 
 ## Structure of ColorPicker control
 

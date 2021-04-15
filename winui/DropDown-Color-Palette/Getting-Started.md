@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI DropDown Color Palette
 
-This section explains the steps required to add the [DropDownColorPalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.DropDownColorPalette.html) control and its color options such as theme, standard and more custom colors.
+This section explains the steps required to add the [WinUI DropDownColorPalette](https://www.syncfusion.com/winui-controls/dropdown-color-palette) control and its color options such as theme, standard and more custom colors.
 
 ## Control Structure
 

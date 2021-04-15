@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Time Picker
 
-This section explains the steps required to add the [TimePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) control and its time selection options. This section covers only basic features needed to get started with Syncfusion `TimePicker` control.
+This section explains the steps required to add the [WinUI TimePicker](https://www.syncfusion.com/winui-controls/timepicker) control and its time selection options. This section covers only basic features needed to get started with Syncfusion `TimePicker` control.
 
 ## Structure of TimePicker control
 

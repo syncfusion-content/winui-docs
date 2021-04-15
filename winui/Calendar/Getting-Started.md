@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Calendar
 
-This section explains the steps required to add the [Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control and its date selection options. This section covers only basic features needed to get started with Syncfusion `Calendar` control.
+This section explains the steps required to add the [WinUI Calendar](https://www.syncfusion.com/winui-controls/calendar) control and its date selection options. This section covers only basic features needed to get started with Syncfusion `Calendar` control.
 
 ## Structure of Calendar control
 

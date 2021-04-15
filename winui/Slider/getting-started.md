@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Slider
 
-This section explains the steps required to add the Slider control and its elements such as values, ticks, divisors, labels, and tooltip. This section covers only basic features needed to get started with Syncfusion Slider.
+This section explains the steps required to add the [WinUI Slider](https://www.syncfusion.com/winui-controls/slider) control and its elements such as values, ticks, divisors, labels, and tooltip. This section covers only basic features needed to get started with Syncfusion Slider.
 
 ## Creating an application with WinUI Slider
 

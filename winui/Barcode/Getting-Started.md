@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Barcode
 
-This section provides a quick overview for getting started with the [Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html) for WinUI. Walk through the entire process of creating a real world of this control.
+This section provides a quick overview for getting started with the [WinUI Barcode](https://www.syncfusion.com/winui-controls/barcode) . Walk through the entire process of creating a real world of this control.
 
 ## Creating an application with WinUI Barcode
 
