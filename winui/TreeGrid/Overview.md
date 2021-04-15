@@ -9,7 +9,7 @@ documentation: ug
 
 # WinUI TreeGrid Overview
 
-The Syncfusion WinUI TreeGrid is a data-oriented control that displays self-relational data in a tree-structure user interface like a multicolumn tree view. The data can be loaded on demand. The control's rich feature set includes editing with different column types, selection, and node selection with check boxes, sorting, and filtering. 
+The Syncfusion [WinUI TreeGrid](https://www.syncfusion.com/winui-controls/treegrid) is a data-oriented control that displays self-relational data in a tree-structure user interface like a multicolumn tree view. The data can be loaded on demand. The control's rich feature set includes editing with different column types, selection, and node selection with check boxes, sorting, and filtering. 
 
 * **Data binding** – Supports to bind different types of data sources.
 * **Columns** – Support for various column types including unbound columns.

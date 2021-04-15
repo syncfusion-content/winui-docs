@@ -9,7 +9,7 @@ documentation: ug
 
 # WinUI Scheduler Overview
 
-The Syncfusion WinUI Scheduler displays appointments in different views and allows users to create and manage appointments. Its rich feature set includes functionalities like viewing daily/all day/spanned appointments, complete customization using the custom Templates, efficient performance, and Data binding to different sources.
+The Syncfusion [WinUI Scheduler](https://www.syncfusion.com/winui-controls/scheduler) displays appointments in different views and allows users to create and manage appointments. Its rich feature set includes functionalities like viewing daily/all day/spanned appointments, complete customization using the custom Templates, efficient performance, and Data binding to different sources.
 
 ![week-view-in-winui-scheduler](Overview_Images/adding-week-view-in-winui-scheduler.png)
 
