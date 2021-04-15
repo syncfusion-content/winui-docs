@@ -9,7 +9,7 @@ documentation: ug
 
 # WinUI Badge Overview
 
-The [WinUi Badge](https://www.syncfusion.com/winui-controls/badge) control used to notify users of new or unread messages, notifications, or the status of something. 
+The [WinUI Badge](https://www.syncfusion.com/winui-controls/badge) control used to notify users of new or unread messages, notifications, or the status of something. 
 
 ## Badge control
 
