@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started with WinUI TreeGrid (SfTreeGrid)
 
-This section explains the steps required to add the TreeGrid control and binding data in treegrid control. This section covers only basic features needed to get started with Syncfusion treegrid control.
+This section explains the steps required to add the [WinUI TreeGrid](https://www.syncfusion.com/winui-controls/treegrid) control and binding data in treegrid control. This section covers only basic features needed to get started with Syncfusion treegrid control.
 
 ## Creating an application with WinUI TreeGrid
 

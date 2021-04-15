@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Linear Gauge (SfLinearGauge)
 
-This section explains the steps required to add the Linear Gauge control and its elements such as axis, range, and pointer. This section covers only basic features needed to get started with Syncfusion Linear Gauge control.
+This section explains the steps required to add the [WinUI Linear Gauge](https://www.syncfusion.com/winui-controls/linear-gauge) control and its elements such as axis, range, and pointer. This section covers only basic features needed to get started with Syncfusion Linear Gauge control.
 
 ## Creating an application with WinUI Linear Gauge
 
