@@ -23,11 +23,23 @@ N> In above section, latest Essential Studio version details has been provided. 
 
 ## WinUI sample browser
 
-To explore the locally installed demos, click `Run Local Demos` and select either UWP or desktop project to open the `WinUI Sample Browser`.
+The Syncfusion `WinUI Sample Browser` is available for both the WinUI `UWP` and `Desktop` environments.
 
-![Syncfusion WinUI Controls Panel](Guide-to-run-the-samples-images/syncfusion-winui-control-panel.png)
+### WinUI UWP
 
-![Syncfusion WinUI Sample Browser](Guide-to-run-the-samples-images/syncfusion-winui-sample-browser.png)
+The WinUI UWP projet can be explored in Visual Studio by clicking `Run Local Demos` and selecting `UWP` to open the `WinUI Sample Browser`.
+
+![Explore Syncfusion WinUI Demos with UWP Project](Guide-to-run-the-samples-images/exploring-winui-uwp-sample-browser.png)
+
+![Syncfusion WinUI Sample Browser with UWP Project](Guide-to-run-the-samples-images/syncfusion-winui-uwp-sample-browser.png)
+
+### WinUI Desktop
+
+The WinUI desktop projet can be explored in Visual Studio by clicking `Run Local Demos` and selecting `Desktop` to open the `WinUI Sample Browser`.
+ 
+ ![Explore Syncfusion WinUI Demos with Desktop Project](Guide-to-run-the-samples-images/exploring-winui-desktop-sample-browser.png)
+
+![Syncfusion WinUI Sample Browser with Desktop Project](Guide-to-run-the-samples-images/syncfusion-winui-desktop-sample-browser.png)
 
 ## Offline samples
 
