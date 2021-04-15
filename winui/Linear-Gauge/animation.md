@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion WinUI Gauge Animation
-description: This article describes how to add and customize the appearance of gauge annotation of LinearGauge control in WinUI platform
+title: Animation in WinUI linear Gauge control | Syncfusion
+description: Learn here all about Animation support in Syncfusion WinUI linear Gauge (SfLinearGauge) control and more.
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Animation Support in WinUI Linear Gauge (SfLinearGauge)
+# Animation in WinUI linear Gauge (Linear Gauge)
 
 ## Pointer animation
 

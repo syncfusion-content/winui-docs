@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip features in Syncfusion WinUI Range Slider
-description: This article describes about how to show tooltip, and customize its appearance of syncfusion Range Slider control in WinUI platform.
+title: ToolTip in WinUI RangeSlider control | Syncfusion
+description: Learn about ToolTip support in Syncfusion WinUI RangeSlider(SfRangeSlider) control with placement and more.
 platform: WinUI
 control: SfRangeSlider
 documentation: ug
 ---
 
-# Tooltip Features in WinUI Range Slider
+# ToolTip in WinUI RangeSlider (Range Slider)
 
 This section explains how to add the tooltip in the RangeSlider.
 

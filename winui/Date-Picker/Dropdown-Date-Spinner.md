@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DropDown date spinner in DatePicker control | Syncfusion
-description: This page explain about how to Customization the Drop Down of the WinUI DatePicker (SfDatePicker) control and items features.
+title: Dropdown Date Spinner in WinUI Date Picker control | Syncfusion
+description: Learn here all about Dropdown Date Spinner features of Syncfusion WinUI Date Picker control and more.
 platform: winui
 control:  SfDatePicker
 documentation: ug
 ---
 
-# Dropdown date spinner in WinUI DatePicker
+# Dropdown Date Spinner in WinUI Date Picker
 
 This section describes how to select a date from drop down date spinner and its customization options in [DatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html) control.
 

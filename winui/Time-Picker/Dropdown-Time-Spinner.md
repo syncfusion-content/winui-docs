@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DropDown time spinner in TimePicker control | Syncfusion
-description: This page explain about how to Customization the Drop Down of the WinUI TimePicker  (SfTimePicker) control and items features.
+title: Dropdown Time Spinner in WinUI Time Picker control | Syncfusion
+description: Learn here all about Dropdown Time Spinner feature of Syncfusion WinUI Time Picker(SfTimePicker) control and more.
 platform: winui
 control:  SfTimePicker
 documentation: ug
 ---
 
-# Dropdown time spinner in WPF TimePicker
+# Dropdown Time Spinner in WinUI Time Picker
 
 This section describes how to select a time from drop down time spinner and its customization options in [SfTimePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) control.
 

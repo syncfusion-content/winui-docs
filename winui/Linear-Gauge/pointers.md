@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion WinUI Gauge Pointers
-description: This article describes how to add and customize the appearence of pointers of linear gauge control in WinUI platform
+title: Pointers in WinUI Linear Gauge control | Syncfusion
+description: Learn here all about Pointers feature of Syncfusion WinUI Linear Gauge control with multiple pointer support and more.
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Pointers in WinUI Linear Gauge (SfLinearGauge)
+# Pointers in WinUI Linear Gauge
 
  The pointer is used to indicate values on an axis. The Linear Gauge control has three types of pointers:
 
@@ -187,4 +187,5 @@ private void ShapePointer_ValueChanged(object sender, ValueChangedEventArgs e)
 
 {% endtabs %}
 
-N> [`ValueChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugePointer.html#Syncfusion_UI_Xaml_Gauges_LinearGaugePointer_ValueChanged) event is exist for all pointers, other events available only for [`ShapePointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html).
+N> `ValueChanged` event is exist for all pointers, other events available only for `ShapePointer`.
+

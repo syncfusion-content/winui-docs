@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Load On-demand in WinUI TreeView | Syncfusion
-description: Learn here about loading nodes on demand on Syncfusion WinUI TreeView control and also explains about the handling expander visibility in TreeView.
+title: Load On Demand in WinUI TreeView control | Syncfusion
+description: Learn here all about Load On Demand support in Syncfusion WinUI TreeView(SfTreeView) control and more.
 platform: WinUI
 control: TreeView
 documentation: ug
 ---
 
-# Load on demand in WinUI TreeView
+# Load On Demand in WinUI TreeView
 
 The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) allows you to load child items only when they are requested using Load on-demand(Lazy load). It helps to load the child items from services when end-user expands the node. Initially populate the root [Nodes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) by assigning [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) and then when any node is expanded, child items can be loaded using [LoadOnDemandCommand](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LoadOnDemandCommand). The Load on-demand is applicable for bound mode only.
 

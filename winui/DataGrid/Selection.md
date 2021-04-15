@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection | WinUI DataGrid | Syncfusion
-description: Learn about cell or row selection support in Syncfusion WinUI DataGrid (SfDataGrid) control and more details. 
+title: Selection in WinUI DataGrid control | Syncfusion
+description: Learn here all about Selection support in Syncfusion WinUI DataGrid(SfDataGrid) control with cell navigation support and more.
 platform: winui
 control: DataGrid
 documentation: ug
 ---
 
-# Selection in WinUI DataGrid (SfDataGrid)
+# Selection in WinUI DataGrid
 
 SfDataGrid allows you to select one or more rows or cells. For selecting specific row or group of rows you have to set [SelectionUnit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectionUnit) as [Row](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionUnit.html#Syncfusion_UI_Xaml_Grids_GridSelectionUnit_Row) and for selecting a specific cell or group of cells you have to set  `SelectionUnit` as [Cell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionUnit.html#Syncfusion_UI_Xaml_Grids_GridSelectionUnit_Cell) or [Any](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionUnit.html#Syncfusion_UI_Xaml_Grids_GridSelectionUnit_Any). In `Any` option you can select the row by clicking on row header.
 

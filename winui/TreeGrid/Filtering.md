@@ -1,13 +1,13 @@
 ---
 layout: post
-title: WinUI TreeGrid Filter | UI Filtering like Excel | Syncfusion
-description: Describes various ways of filtering data in WinUI TreeGrid such as program filtering, excel-like UI filtering, advanced UI filtering, and so on.
+title: Filtering in WinUI TreeGrid control | Syncfusion
+description: Learn here all about Filtering support in Syncfusion WinUI TreeGrid(SfTreeGrid) control with programmatic support and more.
 platform: winui
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Filtering in WinUI TreeGrid(SfTreeGrid)
+# Filtering in WinUI TreeGrid
 
 Filtering is the process of retrieving the values from a collection that satisfies the specified condition. In SfTreeGrid, filtering can be applied through the UI as well as the programmatic filters.
 

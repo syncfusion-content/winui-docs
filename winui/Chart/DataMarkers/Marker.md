@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DataMarker in Chart | Chart | Syncfusion | WinUI
-description: This section describes how to define the data marker and its properties for customization in WinUI Charts.
+title: Data Marker in WinUI Chart control | Syncfusion
+description: Learn here all about Data Marker feature of Syncfusion WinUI Chart control with customizing marker support.
 platform: WinUI
 control: Chart
 documentation: ug
 ---
 
-# Data Marker in WinUI Charts (SfChart)
+# Data Marker in WinUI Chart
 
 Data Marker is used to mark the data points with built-in available shapes.
 

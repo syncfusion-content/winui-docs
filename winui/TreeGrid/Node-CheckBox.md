@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Node CheckBox in WinUI TreeGrid Control | Syncfusion
-description: Learn about Node CheckBox support in Syncfusion WinUI TreeGid (SfTreeGrid) control and more details | Syncfusion.
+title: Node CheckBox in WinUI TreeGrid control | Syncfusion
+description: Learn here all about Node CheckBox support in Syncfusion WinUI TreeGrid(SfTreeGrid) control and more.
 platform: winui
 control: SfTreeGrid
 documentation: ug
 ---
-# Node Checkbox in WinUI TreeGrid
+# Node CheckBox in WinUI TreeGrid
 
 SfTreeGrid provides support for loading `CheckBox` in the expander cell of each node, which allows the user to check/uncheck the corresponding node. You can display check box in each node by setting [SfTreeGrid.ShowCheckBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ShowCheckBox) property as `true`. It also provides support to process the selection in the context of state of the checkbox based on [SfTreeGrid.CheckBoxSelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CheckBoxSelectionMode) property.
 

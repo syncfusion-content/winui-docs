@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of WinUI SfColorPalette control | Syncfusion
-description: WinUI SfColorPalette control is a rich visual interface with different types of color items for color selection.
+title: About WinUI Color Palette control | Syncfusion
+description: Learn here all about introduction of Syncfusion WinUI Color Palette control with rich visual interface support.
 platform: WinUI
 control: SfColorPalette
 documentation: ug
 ---
 
-# WinUI ColorPalette Overview
+# WinUI Color Palette Overview
 
 The [WinUI ColorPalette](https://www.syncfusion.com/winui-controls/color-palette) control provides a rich visual interface for color selection. Its provides standard colors and the various theme colors to choose.  The control also has a `ToolTip` support which bears the name of the color. More color options are embedded with the control that provides you with a wide range of color options.
 

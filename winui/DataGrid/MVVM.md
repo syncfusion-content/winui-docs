@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MVVM | DataGrid | WinUI | Syncfusion
-description: Learn about MVVM support to cutomize the Syncfusion WinUI DataGrid (SfDataGrid) control and more details.
+title: MVVM in WinUI DataGrid control | Syncfusion
+description: Learn here all about MVVM support to cutomize the Syncfusion WinUI DataGrid(SfDataGrid) control and more.
 platform: winui
 control: DataGrid
 documentation: ug

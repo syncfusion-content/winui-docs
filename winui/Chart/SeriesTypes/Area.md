@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Area and Step Area Charts| SfChart | WinUI | Syncfusion
-description: This section explains Area and Step Area Charts and its properties for customization in WinUI Charts (SfChart)
+title: Area in WinUI Chart control | Syncfusion
+description: Learn here all about Area support in Syncfusion WinUI Chart(SfChart) control with step area, closed area and more.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Area Charts in WinUI Chart (SfChart)
+# Area support in WinUI Chart
 
 ## Area 
 [`AreaSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.AreaSeries.html#) is rendered using a collection of line segments connected to form a closed loop area, filled with the specified color.

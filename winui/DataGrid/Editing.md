@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing| WinUI | DataGrid | Syncfusion
-description: Learn about editing support to edit the cell values with an intuitive editors in Syncfusion WinUI DataGrid (SfDataGrid) control and more details.
+title: Editing in WinUI DataGrid control | Syncfusion
+description: Learn here all about Editing support in Syncfusion WinUI DataGrid(SfDataGrid) control with cursor placement and more.
 platform: winui
 control: DataGrid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-# Editing in WinUI DataGrid (SfDataGrid)
+# Editing in WinUI DataGrid
 
 SfDataGrid provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowEditing) property.
 

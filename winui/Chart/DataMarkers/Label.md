@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DataMarker label in Chart | Syncfusion | WinUI
-description: This section describes how to define the data marker label and its properties for customization in WinUI Charts.
+title: Data Label in WinUI Chart control | Syncfusion
+description: Learn here all about Data Label feature of Syncfusion WinUI Chart control and more easily annotated with labels support.
 platform: WinUI
 control: Chart
 documentation: ug
 ---
 
-# Data Label in WinUI Charts (SfChart)
+# Data Label in WinUI Chart
 
 Data points can be easily annotated with labels to help improve the readability of data. 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Zooming and Panning support in Syncfusion SfChart WinUI
-description: This section explains how to add ZoomPanBehavior to the chart and its features such as zooming types, zooming modes, events, and methods.
+title: Zooming and Panning in WinUI Chart control | Syncfusion
+description: Learn here all about Zooming and Panning feature of Syncfusion WinUI Chart(SfChart) control and more.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Zooming and Panning in WinUI Charts (SfChart)
+# Zooming and Panning in WinUI Chart
 
 SfChart allows you to zoom the chart area with the help of the zoom feature. This behavior is mostly used to view the data point in the specific area, when there are a number of data points inside the chart.
 

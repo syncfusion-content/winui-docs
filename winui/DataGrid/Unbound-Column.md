@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Unbound Column | DataGrid | WinUI | Syncfusion
-description: Learn about unbound column support in Syncfusion WinUI DataGrid (SfDataGrid) control and more details.
+title: Unbound Column in WinUI DataGrid control | Syncfusion
+description: Learn here all about Unbound Column support in Syncfusion WinUI DataGrid(SfDataGrid) control sorting, filtering, and more.
 platform: winui
 control: DataGrid
 documentation: ug
 ---
 
-# Unbound column in WinUI DataGrid (SfDataGrid)
+# Unbound Column in WinUI DataGrid
 
 SfDataGrid allows you to add **additional columns** which are **not bound with data object** from underlying data source. You can add unbound column using [GridUnboundColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundColumn.html) class. Unbound columns supports for sorting, filtering, grouping, exporting and printing as normal columns.
 

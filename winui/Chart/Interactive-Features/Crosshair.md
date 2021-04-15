@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Crosshair support in Syncfusion Chart WinUI.
-description: Essential WinUI Chart (SfChart) supports Crosshair to view the values at mouse point or touch contact point.
+title: Crosshair in WinUI Chart control | Syncfusion
+description: Learn here all about Crosshair feature of Syncfusion WinUI Chart control and view the values at mouse point or touch contact point support.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Crosshair in WinUI Charts (SfChart)
+# Crosshair in WinUI Chart
 
 [`ChartCrosshairBehavior`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#) is used to view the values at mouse point or touch contact point. By moving these lines horizontally, you can get the X values and by moving these lines vertically, you can get the Y values.
 

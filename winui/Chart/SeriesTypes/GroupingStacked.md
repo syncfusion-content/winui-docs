@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grouping Stacked charts | SfChart | WinUI | Syncfusion
-description: This section explains Grouping Stacked charts and its properties for customization in WinUI Charts (SfChart)
+title: Grouping Stacked in WinUI Chart control | Syncfusion
+description: Learn here all about Grouping Stacked features of Syncfusion WinUI Chart (SfChart) control and more.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Grouping Stacked Series in WinUI Chart (SfChart)
+# Grouping Stacked in WinUI Chart
 
 You can group the stacked similar series using [`GroupName`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedSeriesBase.html#Syncfusion_UI_Xaml_Charts_StackedSeriesBase_GroupName) property of stacked series. The stacked series which contains the same [`GroupName`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedSeriesBase.html#Syncfusion_UI_Xaml_Charts_StackedSeriesBase_GroupName) will be stacked in a single group.
 

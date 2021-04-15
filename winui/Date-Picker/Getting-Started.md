@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WinUI DatePicker control | Syncfusion
-description: This section describes about how to add the DatePicker (SfDatePicker) control into WinUI application and its basic features.
+title: Getting Started with WinUI Date Picker control | Syncfusion
+description: Learn here all about getting started with Syncfusion WinUI Date Picker(sfDatePicker) control and more.
 platform: WinUI
 control: SfDatePicker
 documentation: ug
 ---
 
-# Getting Started with WinUI DatePicker
+# Getting Started with WinUI Date Picker
 
 This section explains the steps required to add the [WinUI DatePicker](https://www.syncfusion.com/winui-controls/DatePicker) control and its date selection options. This section covers only basic features needed to get started with Syncfusion `DatePicker` control.
 

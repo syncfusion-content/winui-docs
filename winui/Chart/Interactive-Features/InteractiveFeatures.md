@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive Features | Chart | WinUI | Syncfusion
-description: How to show the functionality of WinUI Chart with available interaction options such as zooming, selecting, and tracking the data points.
+title: Interactive Features in WinUI Chart control | Syncfusion
+description: Learn here all about Interactive Features support in Syncfusion WinUI Chart control with tootip, trackball support etc.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Interactive features
+# Interactive Features in WinUI Chart
 
 SfChart supports the following interactive features to interact with chart.
 
