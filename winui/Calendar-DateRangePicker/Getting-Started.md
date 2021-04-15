@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Calendar DateRangePicker
 
-This section explains the steps required to add the [`Calendar DateRangePicker`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html) control and its date range selection options. 
+This section explains the steps required to add the [WinUI Calendar DateRangePicker](https://www.syncfusion.com/winui-controls/calendar-daterangepicker) control and its date range selection options. 
 
 ## Structure of Calendar DateRangePicker control
 
