@@ -15,17 +15,17 @@ To explore Syncfusion WinUI controls and components, Open `Syncfusion WinUI Cont
 
 ![WinUI Control Panel Search](Guide-to-run-the-samples-images/winui-control-panel-search.png)
 
-In another way, Open the Control Panel from the following installed location,
+In another way, open the control panel from the following installed location,
 
 C:\Program Files (x86)\Syncfusion\Essential Studio\WinUI\{{ site.releaseversion }}\Infrastructure\Launcher\Syncfusion WinUI Control Panel.exe 
 
-N> In above section, Latest Essential Studio version details has been provided. You can refer installed Essential Studio version instead of mentioned version.
-
-![Syncfusion WinUI Controls Panel](Guide-to-run-the-samples-images/syncfusion-winui-control-panel.png)
+N> In above section, latest essential studio version details has been provided. You can refer installed essential studio version instead of mentioned version.
 
 ## WinUI sample browser
 
-To explore the locally installed demos, click `Run Local Demos` and open the `WinUI Sample Browser`.
+To explore the locally installed demos, click `Run Local Demos` and select either UWP or desktop project to open the `WinUI Sample Browser`.
+
+![Syncfusion WinUI Controls Panel](Guide-to-run-the-samples-images/syncfusion-winui-control-panel.png)
 
 ![Syncfusion WinUI Sample Browser](Guide-to-run-the-samples-images/syncfusion-winui-sample-browser.png)
 
@@ -39,7 +39,7 @@ For example, below, we demonstrated how to run an individual `Chart` control pro
 
 ![Exploring the Syncfusion WinUI individual control project](Guide-to-run-the-samples-images/exploring-individual-control-project.png)
 
-* You can also open a standalone executable project (not a lib project) in the Visual Studio which is available under the category name.
+* You can also open a standalone executable project either UWP or desktop (not a lib project) in the Visual Studio which is available under the category name.
 
  ![Open the standalone WinUI project in Visual Studio](Guide-to-run-the-samples-images/open-standalone-winui-project-in-visual-studio.png)
 
