@@ -237,12 +237,15 @@ Key to change the color of calendar today date cell border brush.<br/><br/></td>
 <td>
 SyncfusionCalendarItemOutOfScopeForeground<br/><br/></td><td>
 Key to change the color of calendar date cells foreground color which are out of scope.<br/><br/></td></tr>
+<tr>
 <td>
 SyncfusionCalendarItemMargin<br/><br/></td><td>
 Key to change the margin of calendar item.<br/><br/></td></tr>
+<tr>
 <td>
 SyncfusionSubtitleAltFontSize<br/><br/></td><td>
 Key to change the font size of calendar header region.<br/><br/></td></tr>
+<tr>
 <td>
 SyncfusionBodyFontSize<br/><br/></td><td>
 Key to change the font size of calendar items region.<br/><br/></td></tr>
@@ -301,6 +304,7 @@ Key to change the font size of calendar items region.<br/><br/></td></tr>
 {% endtabs %}
 
 ![Customize calendar using theme keys](UI-Customization_images/customize-theme-keys.png)
+
 
 ## Hide days that is out of scope
 
