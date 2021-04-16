@@ -154,7 +154,7 @@ Schedule.ItemsSource = Meetings;
 
 ![business-objects-in-winui-scheduler](Appointment_Images/adding-custom-appointment-in-winui-scheduler.png)
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/CustomAppointment)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/BusinessObject)
 
 ## Spanned appointments
 
