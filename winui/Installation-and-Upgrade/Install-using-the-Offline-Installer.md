@@ -14,7 +14,7 @@ You can refer to the [**Download**](https://help.syncfusion.com/winui/installati
 
 ## Installing with UI   
 
-The steps below show how to install the Essential Studio WinUI product.
+The steps below show how to install the Essential Studio WinUI installer.
 
 1.	Open the Syncfusion WinUI offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
 
