@@ -39,6 +39,8 @@ this.Schedule.ResourceCollection = ResourceCollection;
 {% endhighlight %}
 {% endtabs %}
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/ResourceGrouping)
+
 ## Resource grouping types
 
 You can group the resource order by [Date](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ResourceGroupType.html#Syncfusion_UI_Xaml_Scheduler_ResourceGroupType_Date) or order by [Resource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ResourceGroupType.html#Syncfusion_UI_Xaml_Scheduler_ResourceGroupType_Resource) using the [ResourceGroupType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ResourceGroupType.html) property of SfScheduler.
@@ -487,6 +489,8 @@ N>
 * The custom data object can be bound in the `ResourceHeaderTemplate` by using the property of `SchedulerResource.Data.`
 
 ![customize-resource-appearance-using-resource-header-template-in-winui-scheduler](Resource_Images/adding-customize-resource-appearance-using-resource-header-template-in-winui-scheduler.png)
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/ResourceHeaderTemplate)
 
 ### Customize resource appearance using ResourceHeaderTemplateSelector
 
