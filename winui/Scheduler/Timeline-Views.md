@@ -252,6 +252,8 @@ this.Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 
 ![special-time-region-customization-in-winui-scheduler](TimelineViews_Images/adding-special-time-region-customization-in-winui-scheduler.png)
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/SpecialTimeRegionCustomization)
+
 ## Change time ruler size
 
 You can customize the size of the time ruler view where the labels mentioning the time are placed by using the [TimeRulerSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html). This property will be applicable to `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views.
