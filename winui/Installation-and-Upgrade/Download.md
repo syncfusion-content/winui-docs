@@ -12,8 +12,8 @@ documentation: ug
 
 The Syncfusion WinUI installer can be downloaded from the [Syncfusion](https://www.syncfusion.com/winui-controls) website. You can either download the licensed installer or try our trial installer depending on your license. 
 
-   -	Trial Installer for evaluation customers,
-   -	Licensed Installer for paid customers.
+   -	Trial Installer
+   -	Licensed Installer
 
 
 ## Download the Trial Version
@@ -33,7 +33,7 @@ Our 30-day trial can be downloaded in two ways.
 5. The trial installer can be downloaded at any time from your registered account's [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page before the trial expires. (See the screenshot below.)
  
    ![Trial and downloads of Syncfusion Essential Studio](download-images/trial-download.png)
-
+   
 ### Start Trial Page
 1. You can also evaluate our 30-day free trial from the [Start Trial](https://www.syncfusion.com/account/manage-trials/start-trials) page.
    
