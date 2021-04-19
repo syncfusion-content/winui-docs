@@ -11,12 +11,12 @@ documentation: ug
 
 This article describes the most common installation errors, as well as the causes and solutions to those errors.
 
-* [Couldn't use the Trial key to unlock the Licensed installer?](https://help.syncfusion.com/winui/installation/installation-errors#couldnt-use-the-trial-key-to-unlock-the-licensed-installer)
-* [The license has expired! What should I do?](https://help.syncfusion.com/winui/installation/installation-errors#the-license-has-expired-what-should-i-do)
-* [Not a Valid license holder?](https://help.syncfusion.com/winui/installation/installation-errors#not-a-valid-license-holder)
-* [Can't find a license or a trial?](https://help.syncfusion.com/winui/installation/installation-errors#cant-find-a-license-or-a-trial)
-* [Unable to install because of another installation?](https://help.syncfusion.com/winui/installation/installation-errors#unable-to-install-because-of-another-installation)
-* [Unable to install due to controlled folder access](http://help.syncfusion.com/winui/installation/installation-errors#unable-to-install-due-to-controlled-folder-access)
+* [Unlocking the license installer using the trial key?](https://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#unlocking-the-license-installer-using-the-trial-key)
+* [license has expired](https://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#license-has-expired)
+* [Unable to find a valid license](https://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#unable-to-find-a-valid-license)
+* [Unable to find a valid license or trial](https://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#unable-to-find-a-valid-license-or-trial)
+* [Unable to install because of another installation?](https://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#unable-to-install-because-of-another-installation)
+* [Unable to install due to controlled folder access](http://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#unable-to-install-due-to-controlled-folder-access)
 
 ## Couldn't use the Trial key to unlock the Licensed installer?
 

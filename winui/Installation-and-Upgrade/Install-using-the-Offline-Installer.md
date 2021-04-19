@@ -59,9 +59,9 @@ The steps below show how to install the Essential Studio WinUI platform.
 
     **Additional Settings**
     
-	* Select the **Install Demos** check box to install Syncfusion samples, or leave the check box unchecked, if you do not want to install Syncfusion samples.
-    * Check the **Create Desktop Shortcut** checkbox to add a desktop shortcut for Syncfusion Control Panel.
-    * Check the **Create Start Menu Shortcut** checkbox to add a shortcut to the start menu for Syncfusion Control Panel.
+	* Select the **Install Demos** check box to install Syncfusion samples, or leave the check box unchecked, if you do not want to install Syncfusion samples
+    * Check the **Create Desktop Shortcut** checkbox to add a desktop shortcut for Syncfusion Control Panel
+    * Check the **Create Start Menu Shortcut** checkbox to add a shortcut to the start menu for Syncfusion Control Panel
 
 
 
@@ -100,7 +100,7 @@ The steps below show how to install the Essential Studio WinUI platform.
 
 ## Installing in silent mode
 
-The Syncfusion Essential Studio WinUI Installer supports installation and uninstallation via the command line. The sections that follow demonstrate this ability.
+The Syncfusion Essential Studio WinUI Installer supports installation and uninstallation via the command line.
 
 ### Command Line Installation
 
@@ -129,7 +129,7 @@ To install through the Command Line in Silent mode, follow the steps below.
 
 ### Command Line Uninstallation
 
-Syncfusion Essential WinUI can be uninstalled silently using the Command Line. The steps below demonstrate this.
+Syncfusion Essential WinUI can be uninstalled silently using the Command Line.
 
 1.	Run the Syncfusion WinUI installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 2.	The file syncfusionessentialwinui_(version).exe file will be extracted into the Temp directory.
