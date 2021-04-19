@@ -119,7 +119,7 @@ Follow either one of the option below to uninstall Syncfusion Essential Studio W
 
 Syncfusion provides the option to uninstall products of the same version directly from the Web Installer application. Select the products to be uninstalled from the list, and Web Installer will uninstall them one by one.
 
-Open the Syncfusion Essential Studio Product WinUI Online Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
+Open the Syncfusion Essential Studio WinUI Online Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
 
 ![Installer Extraction Wizard uninstall](WebInstaller/Step-by-Step-Installation_img1.png)
 	

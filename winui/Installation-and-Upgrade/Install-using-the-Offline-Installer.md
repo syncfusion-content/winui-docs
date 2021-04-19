@@ -16,7 +16,7 @@ You can refer to the [**Download**](https://help.syncfusion.com/winui/installati
 
 The steps below show how to install the Essential Studio WinUI product.
 
-1.	Open the Syncfusion WinUI product offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
+1.	Open the Syncfusion WinUI offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
 
     ![Installer extraction wizard](Platform_images/Step-by-Step-Installation_img1.png)
 
@@ -40,7 +40,7 @@ The steps below show how to install the Essential Studio WinUI product.
 
     **Use Unlock Key**
    
-    Unlock keys are used to unlock the Syncfusion offline installer, and they are product and version specific. You should use either Syncfusion licensed or trial Unlock key to unlock Syncfusion WinUI installer.
+    Unlock keys are used to unlock the Syncfusion offline installer, and they are platform and version specific. You should use either Syncfusion licensed or trial Unlock key to unlock Syncfusion WinUI installer.
    
     The trial unlock key is only valid for 30 days, and the installer will not accept an expired trial key. 
    
