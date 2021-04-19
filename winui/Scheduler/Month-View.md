@@ -432,6 +432,8 @@ public class MonthCellTemplateSelector : DataTemplateSelector
 
 ![customize-month-cell-appearance-using-data-template-selector-in-winui-scheduler-month-view](Month-View_Imges/adding-customize-month-cell-appearance-using-data-template-selector-in-winui-scheduler.png)
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/MonthCellCustomization)
+
 ## Customize month view appointments
 
 ### Using the DataTemplate
