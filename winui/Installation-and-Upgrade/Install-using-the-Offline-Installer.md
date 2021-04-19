@@ -14,9 +14,9 @@ You can refer to the [**Download**](https://help.syncfusion.com/winui/installati
 
 ## Installing with UI   
 
-The steps below show how to install the Essential Studio WinUI platform.
+The steps below show how to install the Essential Studio WinUI product.
 
-1.	Open the Syncfusion WinUI platform offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
+1.	Open the Syncfusion WinUI product offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
 
     ![Installer extraction wizard](Platform_images/Step-by-Step-Installation_img1.png)
 
@@ -40,7 +40,7 @@ The steps below show how to install the Essential Studio WinUI platform.
 
     **Use Unlock Key**
    
-    Unlock keys are used to unlock the Syncfusion offline installer, and they are platform and version specific. You should use either Syncfusion licensed or trial Unlock key to unlock Syncfusion WinUI installer.
+    Unlock keys are used to unlock the Syncfusion offline installer, and they are product and version specific. You should use either Syncfusion licensed or trial Unlock key to unlock Syncfusion WinUI installer.
    
     The trial unlock key is only valid for 30 days, and the installer will not accept an expired trial key. 
    
@@ -66,7 +66,7 @@ The steps below show how to install the Essential Studio WinUI platform.
 
 
 
-5.	If any previous versions of the current platform is installed, the Uninstall Previous Version(s) wizard will be opened. Select **Uninstall** checkbox to uninstall the previous versions and then click the Proceed button.
+5.	If any previous versions of the current product is installed, the Uninstall Previous Version(s) wizard will be opened. Select **Uninstall** checkbox to uninstall the previous versions and then click the Proceed button.
 
 
     ![Advanced options](Platform_images/Step-by-Step-Installation_img7.png)
@@ -89,14 +89,14 @@ The steps below show how to install the Essential Studio WinUI platform.
 	
 	![Installing wizard](Platform_images/Step-by-Step-Installation_img5.png)
 
-    N> The Completed screen is displayed once the WinUI platform is installed. If any version is selected to uninstall, The completed screen will display both install and uninstall status.
+    N> The Completed screen is displayed once the WinUI product is installed. If any version is selected to uninstall, The completed screen will display both install and uninstall status.
 	
 	![Completed wizard](Platform_images/Step-by-Step-Installation_img10.png)
 	
 7.  After installing, click the **Launch Control Panel** link to open the Syncfusion Control Panel.
 
 
-8.  Click the Finish button. Your system has been installed with the Syncfusion Essential Studio WinUI platform.
+8.  Click the Finish button. Your system has been installed with the Syncfusion Essential Studio WinUI product.
 
 ## Installing in silent mode
 
@@ -114,12 +114,12 @@ To install through the Command Line in Silent mode, follow the steps below.
 6.	Run Command Prompt in administrator mode and enter the following arguments.
 
 
-    **Arguments:** “installer file path\SyncfusionEssentialStudio(platform)_(version).exe” /Install silent /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}] [/InstallSamples:{true/false}] [/CreateShortcut:{true/false}] [/CreateStartMenuShortcut:{true/false}]
+    **Arguments:** “installer file path\SyncfusionEssentialStudio(product)_(version).exe” /Install silent /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}] [/InstallSamples:{true/false}] [/CreateShortcut:{true/false}] [/CreateStartMenuShortcut:{true/false}]
 
 
     N> [..] – Arguments inside the square brackets are optional.
 
-    **Example:** “D:\Temp\syncfusionessentialwinui_x.x.x.x.exe” /Install silent /PIDKEY:“product unlock key” /log “C:\Temp\EssentialStudio_Platform.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /CreateShortcut:true /CreateStartMenuShortcut:true
+    **Example:** “D:\Temp\syncfusionessentialwinui_x.x.x.x.exe” /Install silent /PIDKEY:“product unlock key” /log “C:\Temp\EssentialStudio_Product.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /CreateShortcut:true /CreateStartMenuShortcut:true
 
 	
 7.  Essential Studio for WinUI is installed.
