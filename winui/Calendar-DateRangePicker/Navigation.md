@@ -19,7 +19,7 @@ You can easily navigate to the month, year, decade, or century views to select d
 
 You can restrict navigation within a minimum and maximum views by using [`MinDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MinDisplayMode) and [`MaxDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MaxDisplayMode) properties. This will be useful when your date range is smaller and you don’t want to show century, decade and year view.
 
-By default, the value of `MinDisplayMode` property is `Month` and `MaxDisplayMode` property is `Century`.
+By default, the value of `MinDisplayMode` property is **Month** and `MaxDisplayMode` property is **Century**.
 
 {% tabs %}
 {% highlight xaml %}

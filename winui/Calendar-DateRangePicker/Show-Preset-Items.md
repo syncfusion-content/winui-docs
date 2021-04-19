@@ -100,7 +100,7 @@ private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e
 
 ![Calendar DateRangePicker dropdown with preset collection](Dropdown-Calendar_images/PresetCollection.png)
 
-You can hide calendar in the dropdown when user selects any preset items in dropdown other than `CustomRange`. When user wants to selects a custom range of dates, upon selection of `CustomRange` preset item, calendar is added in dropdown of `Calendar DateRangePicker` control.
+You can hide calendar in the dropdown when user selects any preset items in dropdown other than **CustomRange**. When user wants to selects a custom range of dates, upon selection of **CustomRange** preset item, calendar is added in dropdown of `Calendar DateRangePicker` control.
 
 ![Custom range selection in WinUI Calendar DateRangePicker](Preset-Items_images/preset-items-collection.gif)
 

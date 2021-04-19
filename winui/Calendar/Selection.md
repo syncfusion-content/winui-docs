@@ -20,7 +20,7 @@ You can change the selection mode by setting the `SelectionMode` property with b
 
 ## Single selection
 
-You can select a single date interactively by clicking on specific date or by programmatically using `SelectedDate` property. The default value of `SelectedDate` property is `null`.
+You can select a single date interactively by clicking on specific date or by programmatically using [`SelectedDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDate) property. The default value of `SelectedDate` property is **null**.
 
 {% tabs %}
 {% highlight C# %}
@@ -33,7 +33,7 @@ sfCalendar.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06));
 
 ![Calendar displaying the selected date](Getting-Started_images/Selecteddate.png)
 
-If `SelectedDates` collection is used instead of `SelectedDate` property, the first date value in `SelectedDates` collection will be set as selected date and the same value changes upon selection by interaction.
+If [`SelectedDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDates) collection is used instead of `SelectedDate` property, the first date value in `SelectedDates` collection will be set as selected date and the same value changes upon selection by interaction.
 
 {% tabs %}
 {% highlight xaml %}
@@ -81,11 +81,9 @@ N> Based on the `MinDisplayMode` property value, the first date of selected mont
 
 ## Multiple Selection
 
-You can select one or multiple dates from different month, year or decade or century, by changing the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionMode) property value to `Multiple`.
+You can select one or multiple dates from different month or year or decade or century, by changing the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionMode) property value to `Multiple`. You can get the selected dates collection from the [SelectedDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDates) property. The value of `SelectedDate` property is **null**.
 
- You can get the selected dates collection from the [SelectedDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDates) property. The value of `SelectedDate` property is `null`.
-
-N> `SelectedDates` property collection will be empty, if the `SelectionMode` value is *None* or *Single* and the dates are selected interactively. 
+N> `SelectedDates` property collection will be empty, if the `SelectionMode` value is **None** and the dates are selected interactively. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -108,11 +106,9 @@ N> Based on the `MinDisplayMode` property value, the first date of selected mont
 
 ## Select a date range
 
-You can select a range of dates in `Calendar` control by changing the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionMode) property value to `Range`. 
+You can select a range of dates in `Calendar` control by changing the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionMode) property value to `Range`. You can get the selected dates collection from the [SelectedDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDates) property. The value of `SelectedDate` property is **null**.
 
-You can get the selected dates collection from the [SelectedDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDates) property. The value of `SelectedDate` property is `null`.
-
-N> `SelectedDates` property collection will be empty, if the `SelectionMode` value is *None* or *Single* and the dates are selected interactively. 
+N> `SelectedDates` property collection will be empty, if the `SelectionMode` value is **None** and the dates are selected interactively. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -135,7 +131,7 @@ N> Based on the `MinDisplayMode` property value, the first date of months or yea
 
 ## Today and selected date highlighting
 
-You can highlight the today and selected date with rectangle and circle shapes. You can customize the selected date cell shape using [SelectionShape](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionShape) property and use the [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionHighlightMode) property to update the background of the selected date. The default value of `SelectionShape` property is `Rectangle` and `SelectionHighlightMode` property is `Outline`.
+You can highlight the today and selected date with rectangle and circle shapes. You can also customize the selected date cell shape using [SelectionShape](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionShape) property and use the [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionHighlightMode) property to update the background of the selected date. The default value of `SelectionShape` property is **Rectangle** and `SelectionHighlightMode` property is **Outline**.
 
 {% tabs %}
 {% highlight XAML %}
