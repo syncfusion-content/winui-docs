@@ -77,7 +77,7 @@ You can set or change the selected date range programmatically by using [`Select
 {% highlight C# %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker= new SfCalendarDateRangePicker();
-sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(new DateTimeOffset(new DateTime(2021, 03,10)), new DateTimeOffset(new DateTime(2021, 03, 22)));
+sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(new DateTimeOffset(new DateTime(2021, 03,17)), new DateTimeOffset(new DateTime(2021, 03, 24)));
 
 {% endhighlight %}
 {% endtabs %}
@@ -86,7 +86,7 @@ sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(new DateTimeOf
 
 ## Select date range interactively
 
-You can change the selected date range interactively by selecting from drop down calendar. You can get the selected date range from the `SelectedRange` property.
+You can change the selected date range interactively by selecting from dropdown calendar. You can get the selected date range from the `SelectedRange` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -171,7 +171,7 @@ private void SfCalendarDateRangePicker_SelectedDateChanged(object sender, Select
 
 You can hide the dropdown button in `Calendar DateRangePicker` by setting the [`ShowDropDownButton`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as `false`. The default value of `ShowDropDownButton` property is `true`.
 
-N> When the dropdown button is hidden, you can still open the dropdown calendar use `ALT + down` keyboard shortcut.
+N> When the dropdown button is hidden, you can still open the dropdown calendar using `ALT + down` keyboard shortcut.
 
 {% tabs %}
 {% highlight XAML %}
@@ -218,10 +218,10 @@ sfCalendarDateRangePicker.ShowSubmitButtons = true;
 
 You can restrict users from selecting date range within a specific minimum and maximum range or by blocking unwanted dates using blackout dates or by blocking specific set of dates (blocking weekend dates). 
 
-For brief explanation of selection restriction in `Calendar DateRangePicker` control [click here](Selection.md).
+For brief explanation of selection restriction in `Calendar DateRangePicker` control [click here](https://help.syncfusion.com/winui/calendar-daterangepicker/restrict-daterange-selection).
 
-## Navigate in dropdown calendar
+## Navigation in dropdown
 
 You can navigate between month, year, decade and century views in `Calendar DateRangePicker` control. You can also restrict the users to navigate between specific views only (month and year selection for credit card).
 
-For brief explanation of navigation between views in `Calendar DateRangePicker` control [click here](Navigation.md).
+For brief explanation of navigation between views in `Calendar DateRangePicker` control [click here](https://help.syncfusion.com/winui/calendar-daterangepicker/navigation).

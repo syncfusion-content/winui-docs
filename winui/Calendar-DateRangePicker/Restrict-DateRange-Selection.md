@@ -36,7 +36,7 @@ N> The `MinDate` property value should not be greater than the `MaxDate` propert
 
 ## Disable dates using BlackoutDates
 
-If you want to block particular dates from the date selection, add those dates in the [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_BlackoutDates) collection. You can add more block out dates to the `BlackoutDates` collection. The default value of `BlackoutDates` property is `null`.
+You can block particular dates from the date selection, using the [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_BlackoutDates) collection property. You can add more dates to the `BlackoutDates` collection. The default value of `BlackoutDates` property is `null`.
 
 {% tabs %}
 {% highlight c# %}

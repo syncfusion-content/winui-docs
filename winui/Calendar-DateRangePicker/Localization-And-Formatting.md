@@ -24,6 +24,8 @@ You can select the required `CalendarIdentifier` value from below types.
  * UmAlQuraCalendar
  * PersianCalendar
 
+N> When `CalendarIdentifier` and `FlowDirection` properties are set, `FlowDirection` property is given higher precedence.
+
 {% tabs %}
 {% highlight xaml %}
 
@@ -43,7 +45,7 @@ sfCalendarDateRangePicker.CalendarIdentifier = "HebrewCalendar";
 
 ## Change the language
 
-If you want to localize the drop-down calendar, use the `Language` property. The default value of `Language` property is `en-US`.
+If you want to localize the dropdown calendar, use the `Language` property. The default value of `Language` property is `en-US`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -84,7 +86,7 @@ sfCalendarDateRangePicker.FormatString= "{0:D}-{1:D}";
 
 ## Change calendar display format
 
-You can use different date formats such as abbreviated or full name for a day, month, week names or header name of month and year in drop-down calendar by using the [`DateFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_DateFormat), [`MonthFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MonthFormat), [`DayOfWeekFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_DayOfWeekFormat) and [`MonthHeaderFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MonthHeaderFormat) properties.
+You can use different date formats such as abbreviated or full name for a day, month, week names or header name of month and year in dropdown calendar by using the [`DateFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_DateFormat), [`MonthFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MonthFormat), [`DayOfWeekFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_DayOfWeekFormat) and [`MonthHeaderFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MonthHeaderFormat) properties.
 
 N> Refer [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.datetimeformatting.datetimeformatter?view=winrt-19041) page to get more date formats.
 
@@ -114,7 +116,7 @@ sfCalendarDateRangePicker.MonthHeaderFormat = "{month.abbreviated} {year.abbrevi
 
 ## First day of week
 
-By default, Sunday is shown as the first day of the week in a dropdown calendar of `Calendar DateRangePicker` control. You can change the first day of week, by changing the [`FirstDayOfWeek`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_FirstDayOfWeek) property value. The default value of `FirstDayOfWeek` property is `Sunday`.
+By default, `Sunday` is shown as the first day of the week in a dropdown calendar of `Calendar DateRangePicker` control. You can change the first day of week, by changing the [`FirstDayOfWeek`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_FirstDayOfWeek) property value. 
 
 {% tabs %}
 {% highlight xaml %}
