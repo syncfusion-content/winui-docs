@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with WinUI Calendar DateRangePicker control|Syncfusion
-description: This section describes about how to add the Calendar DateRangePicker (SfCalendarDateRangePicker) control into WinUI application and its basic features.
+title: Getting Started with WinUI Calendar DateRangePicker | Syncfusion
+description: Learn here about getting started with Syncfusion WinUI Calendar DateRangePicker control, its elements, and more.
 platform: WinUI
 control: SfCalendarDateRangePicker
 documentation: ug
@@ -71,13 +71,13 @@ namespace GettingStarted
 
 ## Select the date range programmatically
 
-You can set or change the selected date range programmatically by using [`SelectedRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_SelectedRange) property. By default, the `SelectedRange` property value is `null`.
+You can set or change the selected date range programmatically by using [`SelectedRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_SelectedRange) property. By default, the `SelectedRange` property value is **null**.
 
 {% tabs %}
 {% highlight C# %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker= new SfCalendarDateRangePicker();
-sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(new DateTimeOffset(new DateTime(2021, 03,10)), new DateTimeOffset(new DateTime(2021, 03, 22)));
+sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(new DateTimeOffset(new DateTime(2021, 03,17)), new DateTimeOffset(new DateTime(2021, 03, 24)));
 
 {% endhighlight %}
 {% endtabs %}
@@ -86,7 +86,7 @@ sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(new DateTimeOf
 
 ## Select date range interactively
 
-You can change the selected date range interactively by selecting from drop down calendar. You can get the selected date range from the `SelectedRange` property.
+You can change the selected date range interactively by selecting from dropdown calendar. You can get the selected date range from the `SelectedRange` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -105,7 +105,7 @@ SfCalendarDateRangePicker sfCalendarDateRangePicker= new SfCalendarDateRangePick
 
 ## Setting watermark text
 
-You can prompt the user with any information by using the [`PlaceHolderText`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_PlaceHolderText) property. This watermark text will be displayed only when the `SelectedRange` property value is `null`. 
+You can prompt the user with any information by using the [`PlaceHolderText`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_PlaceHolderText) property. This watermark text will be displayed only when the `SelectedRange` property value is **null**. The default value of `PlaceHolderText` property is **Select a date range**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -169,9 +169,9 @@ private void SfCalendarDateRangePicker_SelectedDateChanged(object sender, Select
 
 ## Hide the dropdown button
 
-You can hide the dropdown button in `Calendar DateRangePicker` by setting the [`ShowDropDownButton`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as `false`. The default value of `ShowDropDownButton` property is `true`.
+You can hide the dropdown button in `Calendar DateRangePicker` by setting the [`ShowDropDownButton`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as false. The default value of `ShowDropDownButton` property is **true**.
 
-N> When the dropdown button is hidden, you can still open the dropdown calendar use `ALT + down` keyboard shortcut.
+N> When the dropdown button is hidden, you can still open the dropdown calendar using **ALT + down** keyboard shortcut.
 
 {% tabs %}
 {% highlight XAML %}
@@ -192,7 +192,7 @@ sfCalendarDateRangePicker.ShowDropDownButton = false;
 
 ## Show the submit buttons
 
-You can show the submit buttons in `Calendar DateRangePicker` by setting the [`ShowSubmitButtons`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as `true`. The default value of `ShowSubmitButtons` property is `false`.
+You can show the submit buttons in `Calendar DateRangePicker` by setting the [`ShowSubmitButtons`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as true. The default value of `ShowSubmitButtons` property is **false**.
 
 N> When the submit buttons are hidden, you can change the `SelectedDate` property value by simply selecting the date.
 
@@ -218,10 +218,10 @@ sfCalendarDateRangePicker.ShowSubmitButtons = true;
 
 You can restrict users from selecting date range within a specific minimum and maximum range or by blocking unwanted dates using blackout dates or by blocking specific set of dates (blocking weekend dates). 
 
-For brief explanation of selection restriction in `Calendar DateRangePicker` control [click here](Selection.md).
+For brief explanation of selection restriction in `Calendar DateRangePicker` control [click here](restrict-daterange-selection).
 
-## Navigate in dropdown calendar
+## Navigation in dropdown
 
 You can navigate between month, year, decade and century views in `Calendar DateRangePicker` control. You can also restrict the users to navigate between specific views only (month and year selection for credit card).
 
-For brief explanation of navigation between views in `Calendar DateRangePicker` control [click here](Navigation.md).
+For brief explanation of navigation between views in `Calendar DateRangePicker` control [click here](navigation).

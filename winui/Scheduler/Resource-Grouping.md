@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resource Grouping | WinUI | Scheduler | Syncfusion
-description:  WinUI scheduler resource grouping allows you to define resources that can be assigned to appointments in a day, week, workweek, and timeline views.
+description:  Learn here all about Resource Grouping feature of Syncfusion WinUI Scheduler(SfScheduler) control and more.
 platform: winui
 control: Scheduler
 documentation: ug
@@ -38,6 +38,8 @@ var ResourceCollection = new ObservableCollection<SchedulerResource>()
 this.Schedule.ResourceCollection = ResourceCollection;
 {% endhighlight %}
 {% endtabs %}
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/ResourceGrouping)
 
 ## Resource grouping types
 
@@ -487,6 +489,8 @@ N>
 * The custom data object can be bound in the `ResourceHeaderTemplate` by using the property of `SchedulerResource.Data.`
 
 ![customize-resource-appearance-using-resource-header-template-in-winui-scheduler](Resource_Images/adding-customize-resource-appearance-using-resource-header-template-in-winui-scheduler.png)
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/ResourceHeaderTemplate)
 
 ### Customize resource appearance using ResourceHeaderTemplateSelector
 

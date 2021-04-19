@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Control Customization of WinUI SfColorPalette control | Syncfusion
-description: Learn about selecting a different types of colors in Syncfusion WinUI SfColorPalette control and more details about the control features.
+title: Control Customization in WinUI Color Palette control | Syncfusion
+description: Learn here all about Control Customization support in Syncfusion WinUI Color Palette(SfColorPalette) control and more.
 platform: WinUI
 control: SfColorPalette
 documentation: ug
 ---
 
-# Control Customization in WinUI ColorPalette (SfColorPalette)
+# Control Customization in WinUI Color Palette
 
 This section explains the different types of colors available in the [ColorPalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html) and  how to choose the colors and its panel customizations.
 

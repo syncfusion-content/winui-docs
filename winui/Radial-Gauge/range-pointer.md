@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion WinUI Gauge Pointers
-description: This article describes how to add and customizes the appearence of pointers of radial gauge control in WinUI platform
+title: Range Pointer in WinUI Radial Gauge control | Syncfusion
+description: Learn here all about Range Pointer feature of Syncfusion WinUI Radial Gauge control with customization support.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug
 ---
 
-# Range Pointer in WinUI Radial Gauge (SfRadialGauge)
+# Range Pointer in WinUI Radial Gauge
 
 A range pointer is an accenting line or shaded background range that can be placed on a gauge to mark the current value.
 

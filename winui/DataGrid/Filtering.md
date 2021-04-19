@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Filtering | DataGrid | WinUI | Syncfusion
-description: Learn about filtering the data (Excel-like filter) support in Syncfusion WinUI DataGrid (SfDataGrid) control and more details.
+title: Filtering in WinUI DataGrid control | Syncfusion
+description: Learn here all about Filtering support in Syncfusion WinUI DataGrid(SfDataGrid) control with programmatic filter and more.
 platform: winui
 control: DataGrid
 documentation: ug
 ---
-# Filtering in WinUI DataGrid (SfDataGrid)
+# Filtering in WinUI DataGrid
 Filtering is the process of retrieving the values from the collection which satisfy the specified condition. In the SfDataGrid the filtering can be applied though the UI as well as the programmatic filters. 
 
 ## Programmatic filtering

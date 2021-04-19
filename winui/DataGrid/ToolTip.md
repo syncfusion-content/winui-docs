@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTip | DataGrid | WinUI | Syncfusion
-description: Learn about ToolTip support and its customization in Syncfusion WinUI DataGrid (SfDataGrid) control and more details.
+title: ToolTip in WinUI DataGrid control | Syncfusion
+description: Learn here all about ToolTip support in Syncfusion WinUI DataGrid(SfDataGrid) control with customization support and more.
 platform: winui
 control: DataGrid
 documentation: ug
 ---
 
-# ToolTip in WinUI DataGrid (SfDataGrid)
+# ToolTip in WinUI DataGrid
 
 ToolTip provides the support to show the pop-up window that displays the information when the mouse hovers in cells of SfDataGrid. 
 

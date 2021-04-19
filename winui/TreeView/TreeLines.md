@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TreeLines in WinUI TreeView control | Syncfusion
-description: Learn here about how to show the tree lines for TreeViewNodes in Syncfusion WinUI TreeView control and more details.
+title: Tree Lines in WinUI TreeView control | Syncfusion
+description: Learn here all about Tree Lines support in Syncfusion WinUI TreeView(SfTreeView) control with customization support and more.
 platform: WinUI
 control: TreeView
 documentation: ug
 ---
 
-# Tree line for WinUI TreeView
+# Tree Lines in WinUI TreeView
 
 The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) allows to show the tree lines for treeview nodes by enabling the [ShowLines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ShowLines) property as `true`. The default value is `false`.
 

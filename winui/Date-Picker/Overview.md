@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WinUI DatePicker control | Syncfusion
-description: This page explains about overview of the WinUI DatePicker (SfDatePicker) control and its overall customazation features.
+title: About WinUI Date Picker control | Syncfusion
+description: Learn here all about introduction of Syncfusion WinUI Date Picker control with an intuitive, touch-friendly support.
 platform: winui
 control: SfDatePicker
 documentation: ug
 ---
 
-# WinUI DatePicker Overview
+# WinUI Date Picker Overview
 
 The [WinUI DatePicker](https://www.syncfusion.com/winui-controls/DatePicker) control provides an intuitive, touch-friendly interface to quickly select a date from a dropdown spinner. It supports different date formats. Date selection can be restricted by specifying minimum and maximum dates. Dates can also be hidden or disable some from selection. In addition, it supports editing with validation and built-in watermark text display.
 

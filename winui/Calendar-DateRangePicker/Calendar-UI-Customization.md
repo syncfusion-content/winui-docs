@@ -1,19 +1,19 @@
 ---
 layout: post
-title: UI Customization in Calendar DateRangePicker control | Syncfusion
-description: This page explain how to customize the dropdown calendar of the WinUI Calendar DateRangePicker (SfCalendarDateRangePicker) control.
+title: Dropdown Calendar in WinUI Calendar DateRangePicker | Syncfusion
+description: Learn here all about Dropdown Calendar feature of Syncfusion WinUI Calendar DateRangePicker control and more.
 platform: winui
 control:  SfCalendarDateRangePicker
 documentation: ug
 ---
 
-# Calendar UI Customization in WinI Calendar DateRangePicker
+# Dropdown Calendar in WinUI Calendar DateRangePicker
 
 This section describes how to select a date range from dropdown calendar and customization options available in `Calendar DateRangePicker` control.
 
 ## Change dropdown alignment
 
-You can change the alignment of the dropdown calendar as full, center, left, right, top or bottom edge by using the [`DropDownPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Bottom`.
+You can change the alignment of the dropdown calendar as full, center, left, right, top or bottom edge by using the [`DropDownPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is **Bottom**.
 
 N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then `Calendar DateRangePicker` smartly shifts the dropdown calendar alignment.
 
@@ -36,7 +36,7 @@ sfCalendarDateRangePicker.DropDownPlacement = FlyoutPlacementMode.Right;
 
 ## Change dropdown size
 
-You can change the size of dropdown calendar in `Calendar DateRangePicker` by using [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownHeight` property is `Auto`.
+You can change the size of dropdown calendar in `Calendar DateRangePicker` by using [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownHeight` property is **Auto**.
 
 N> The dropdown size will be automatically resized based on the calendar and preset items hosted in it.
 
@@ -256,50 +256,54 @@ You can customize the colors of day names and headers of month, year, decade and
 
 <table>
 <tr>
-<td>
-Name of the key<br/><br/></td><td>
-Description<br/><br/></td></tr>
+<th> Name of the key</th>
+<th> Description </th>
+</tr>
 <tr>
-<td>
-SyncfusionCalendarNavigationButtonForeground<br/><br/></td><td>
-Key to change the color of calendar navigation button foreground color.<br/><br/></td></tr>
+<td>SyncfusionCalendarNavigationButtonForeground</td>
+<td>Key to change the color of calendar navigation button foreground color.</td>
+</tr>
 <tr>
-<td>
-SyncfusionCalendarWeekItemForeground<br/><br/></td><td>
-Key to change the color of calendar week days name foreground color.<br/><br/></td></tr>
+<td>SyncfusionCalendarWeekItemForeground</td>
+<td>Key to change the color of calendar week days name foreground color.</td>
+</tr>
 <tr>
-<td>
-SyncfusionCalendarTodayItemForeground<br/><br/></td><td>
-Key to change the color of calendar today date foreground color.<br/><br/></td></tr>
+<td>SyncfusionCalendarTodayItemForeground</td>
+<td>Key to change the color of calendar today date foreground color.</td>
+</tr>
 <tr>
-<td>
-SyncfusionCalendarItemBackground<br/><br/></td><td>
-Key to change the color of calendar date cells background color except today date cell.<br/><br/></td></tr>
+<td>SyncfusionCalendarItemBackground<br/><br/></td>
+<td>Key to change the color of calendar date cells background color except today date cell.</td>
+</tr>
 <tr>
-<td>
-SyncfusionCalendarItemBorderBrush<br/><br/></td><td>
-Key to change the color of calendar date cells border brush.<br/><br/></td></tr>
+<td>SyncfusionCalendarItemBorderBrush<br/><br/></td>
+<td>Key to change the color of calendar date cells border brush.<br/><br/></td>
+</tr>
 <tr>
-<td>
-SyncfusionCalendarTodayItemBackground<br/><br/></td><td>
-Key to change the color of calendar today date cell background color.<br/><br/></td></tr>
+<td>SyncfusionCalendarTodayItemBackground<br/><br/></td>
+<td>Key to change the color of calendar today date cell background color.<br/><br/></td>
+</tr>
 <tr>
-<td>
-SyncfusionCalendarTodayItemBorderBrush<br/><br/></td><td>
-Key to change the color of calendar today date cell border brush.<br/><br/></td></tr>
+<td>SyncfusionCalendarTodayItemBorderBrush<br/><br/></td>
+<td>Key to change the color of calendar today date cell border brush.<br/><br/></td>
+</tr>
 <tr>
-<td>
-SyncfusionCalendarItemOutOfScopeForeground<br/><br/></td><td>
-Key to change the color of calendar date cells foreground color which are out of scope.<br/><br/></td></tr>
-<td>
-SyncfusionCalendarItemMargin<br/><br/></td><td>
-Key to change the margin of calendar item.<br/><br/></td></tr>
-<td>
-SyncfusionSubtitleAltFontSize<br/><br/></td><td>
-Key to change the font size of calendar header region.<br/><br/></td></tr>
-<td>
-SyncfusionBodyFontSize<br/><br/></td><td>
-Key to change the font size of calendar items region.<br/><br/></td></tr>
+<td>SyncfusionCalendarItemOutOfScopeForeground<br/><br/></td>
+<td>Key to change the color of calendar date cells foreground color which are out of scope.<br/><br/></td>
+</tr>
+<tr>
+<td>SyncfusionCalendarItemMargin<br/><br/></td>
+<td>Key to change the margin of calendar item.<br/><br/></td>
+</tr>
+<tr>
+<td>SyncfusionSubtitleAltFontSize<br/><br/></td>
+<td>Key to change the font size of calendar header region.<br/><br/></td>
+</tr>
+<tr>
+<td>SyncfusionBodyFontSize<br/><br/></td>
+<td>Key to change the font size of calendar items region.<br/><br/></td>
+</tr>
+</tr>
 <table/>
 
 {% tabs %}

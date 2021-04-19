@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WinUI | Scheduler | Syncfusion 
-description: Learn about introduction of Syncfusion WinUI Scheduler (SfScheduler) control, its features, and more details.
+title: About WinUI Scheduler control | Syncfusion
+description: Learn here all about introduction of Syncfusion WinUI Scheduler(SfScheduler) control with key features and more.
 platform: winui
 control: Scheduler
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Syncfusion WinUI Range Slider
-description: A guide to initial users about Syncfusion RangeSlider control in the WinUI platform. It provide an overview of SfRangeSlider. 
+title: Getting Started with WinUI RangeSlider control | Syncfusion
+description: Learn here all about getting started with Syncfusion WinUI RangeSlider(SfRangeSlider) control and more.
 platform: WinUI
 control: SfRangeSlider
 documentation: ug
 ---
 
-# Getting Started with WinUI Range Slider (SfRangeSlider)
+# Getting Started with WinUI RangeSlider (Range Slider)
 
 This section explains the steps required to add the [WinUI RangeSlider](https://www.syncfusion.com/winui-controls/range-slider) control and its elements such as values, ticks, divisors, labels, and tooltip. This section covers only basic features needed to get started with Syncfusion RangeSlider.
 

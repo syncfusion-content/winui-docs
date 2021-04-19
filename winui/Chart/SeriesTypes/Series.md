@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Series | SfChart | WinUI | Syncfusion
-description: This section explains the different types of charts, including Cartesian, Accumulation, PolarRadar and its properties.
+title: Series in WinUI Chart control | Syncfusion
+description: Learn here all about Series support in Syncfusion WinUI Chart(SfChart) control with series types and more.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Series in WinUI Chart (SfChart)
+# Series in WinUI Chart
 
 ChartSeries is the visual representation of the data. SfChart offers many types of series ranging from LineSeries to StackedSeries like StackedColumn and StackedBar. Based on your requirements and specifications, any type of Series can be added for data visualization. 
 

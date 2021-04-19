@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Basic features of Syncfusion WinUI Slider
-description: This article describes about the basic features  of the Syncfusion Slider control in WinUI platform.
+title: Basic Features in WinUI Slider control | Syncfusion
+description: Learn here all about Basic Features support in Syncfusion WinUI Slider(SfSlider) control with setting min, max values and more.
 platform: WinUI
 control: SfSlider
 documentation: ug
 ---
 
-# Basic Features of Slider
+# Basic Features in WinUI Slider
 
 This section explains about how to add the WinUI slider with basic features.
 

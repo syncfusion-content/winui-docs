@@ -198,54 +198,58 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Customize using theme keys
 
-You can customize the colors of day names and headers of month, year, decade and century by changing the theme keys values in a ResourceDictionary used in the `Calendar` control.
+You can customize the colors of day names and headers of month, year, decade and century by changing the theme keys values in a `ResourceDictionary` used in the `Calendar` control.
 
 <table>
 <tr>
-<td>
-Name of the key<br/><br/></td><td>
-Description<br/><br/></td></tr>
+<th> Name of the key</th>
+<th> Description </th>
+</tr>
 <tr>
-<td>
-SyncfusionCalendarNavigationButtonForeground<br/><br/></td><td>
-Key to change the color of calendar navigation button foreground color.<br/><br/></td></tr>
+<td>SyncfusionCalendarNavigationButtonForeground</td>
+<td>Key to change the color of calendar navigation button foreground color.</td>
+</tr>
 <tr>
-<td>
-SyncfusionCalendarWeekItemForeground<br/><br/></td><td>
-Key to change the color of calendar week days name foreground color.<br/><br/></td></tr>
+<td>SyncfusionCalendarWeekItemForeground</td>
+<td>Key to change the color of calendar week days name foreground color.</td>
+</tr>
 <tr>
-<td>
-SyncfusionCalendarTodayItemForeground<br/><br/></td><td>
-Key to change the color of calendar today date foreground color.<br/><br/></td></tr>
+<td>SyncfusionCalendarTodayItemForeground</td>
+<td>Key to change the color of calendar today date foreground color.</td>
+</tr>
 <tr>
-<td>
-SyncfusionCalendarItemBackground<br/><br/></td><td>
-Key to change the color of calendar date cells background color except today date cell.<br/><br/></td></tr>
+<td>SyncfusionCalendarItemBackground<br/><br/></td>
+<td>Key to change the color of calendar date cells background color except today date cell.</td>
+</tr>
 <tr>
-<td>
-SyncfusionCalendarItemBorderBrush<br/><br/></td><td>
-Key to change the color of calendar date cells border brush.<br/><br/></td></tr>
+<td>SyncfusionCalendarItemBorderBrush<br/><br/></td>
+<td>Key to change the color of calendar date cells border brush.<br/><br/></td>
+</tr>
 <tr>
-<td>
-SyncfusionCalendarTodayItemBackground<br/><br/></td><td>
-Key to change the color of calendar today date cell background color.<br/><br/></td></tr>
+<td>SyncfusionCalendarTodayItemBackground<br/><br/></td>
+<td>Key to change the color of calendar today date cell background color.<br/><br/></td>
+</tr>
 <tr>
-<td>
-SyncfusionCalendarTodayItemBorderBrush<br/><br/></td><td>
-Key to change the color of calendar today date cell border brush.<br/><br/></td></tr>
+<td>SyncfusionCalendarTodayItemBorderBrush<br/><br/></td>
+<td>Key to change the color of calendar today date cell border brush.<br/><br/></td>
+</tr>
 <tr>
-<td>
-SyncfusionCalendarItemOutOfScopeForeground<br/><br/></td><td>
-Key to change the color of calendar date cells foreground color which are out of scope.<br/><br/></td></tr>
-<td>
-SyncfusionCalendarItemMargin<br/><br/></td><td>
-Key to change the margin of calendar item.<br/><br/></td></tr>
-<td>
-SyncfusionSubtitleAltFontSize<br/><br/></td><td>
-Key to change the font size of calendar header region.<br/><br/></td></tr>
-<td>
-SyncfusionBodyFontSize<br/><br/></td><td>
-Key to change the font size of calendar items region.<br/><br/></td></tr>
+<td>SyncfusionCalendarItemOutOfScopeForeground<br/><br/></td>
+<td>Key to change the color of calendar date cells foreground color which are out of scope.<br/><br/></td>
+</tr>
+<tr>
+<td>SyncfusionCalendarItemMargin<br/><br/></td>
+<td>Key to change the margin of calendar item.<br/><br/></td>
+</tr>
+<tr>
+<td>SyncfusionSubtitleAltFontSize<br/><br/></td>
+<td>Key to change the font size of calendar header region.<br/><br/></td>
+</tr>
+<tr>
+<td>SyncfusionBodyFontSize<br/><br/></td>
+<td>Key to change the font size of calendar items region.<br/><br/></td>
+</tr>
+</tr>
 <table/>
 
 {% tabs %}
@@ -304,7 +308,7 @@ Key to change the font size of calendar items region.<br/><br/></td></tr>
 
 ## Hide days that is out of scope
 
-By default, out of scope days are disabled. If you want to hide the days that are out of the scope of current view, use the [OutOfScopeVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_OutOfScopeVisibility) property value as `Hidden`. The default value of `OutOfScopeVisibility` property is `Disabled`.
+You can hide the days that are out of the scope of current view by setting the [OutOfScopeVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_OutOfScopeVisibility) property value as **Hidden**. The default value of `OutOfScopeVisibility` property is **Disabled**.
 
 {% tabs %}
 {% highlight xaml %}

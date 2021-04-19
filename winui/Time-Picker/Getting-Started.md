@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with WinUI TimePicker control | Syncfusion
-description: This section describes about how to add the TimePicker (SfTimePicker) control into WinUI application and its basic features.
+title: Getting Started with WinUI Time Picker control | Syncfusion
+description: Learn here all about getting started with Syncfusion WinUI Time Picker control, its elements, and more.
 platform: WinUI
 control: SfTimePicker
 documentation: ug
 ---
 
-# Getting Started with WinUI TimePicker
+# Getting Started with WinUI Time Picker
 
 This section explains the steps required to add the [WinUI TimePicker](https://www.syncfusion.com/winui-controls/timepicker) control and its time selection options. This section covers only basic features needed to get started with Syncfusion `TimePicker` control.
 

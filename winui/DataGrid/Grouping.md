@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grouping | DataGrid | WinUI | Syncfusion
-description: Learn about column grouping support in Syncfusion WinUI DataGrid (SfDataGrid) control and more details.
+title: Grouping in WinUI DataGrid control | Syncfusion
+description: Learn here all about Grouping support in Syncfusion WinUI DataGrid(SfDataGrid) control with UI grouping and more.
 platform: winui
 control: SfDataGrid
 documentation: ug
 ---
 
-# Grouping in WinUI DataGrid (SfDataGrid)
+# Grouping in WinUI DataGrid
 
 DataGrid allows you to group the data against one or more columns. When grouping is applied, the data is organized into a hierarchical structure based on matching column values and it is sorted by ascending order.
  

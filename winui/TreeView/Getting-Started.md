@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinUI TreeView | Syncfusion
-description: This section describes about how to add the TreeView control into WinUI application and its basic features.
+title: Getting Started with WinUI TreeView control | Syncfusion
+description: Learn here all about getting started with Syncfusion WinUI TreeView control, its elements, and more.
 platform: WinUI
 control: TreeView
 documentation: ug
@@ -21,7 +21,7 @@ This section explains the steps required to add the [TreeView](https://help.sync
 {% tabs %} 
 {% highlight xaml %} 
 
-<Page x:Class="syncfusion.treeviewdemos.winui.GettingStartedPage "
+<Page x:Class="syncfusion.treeviewdemos.winui.GettingStartedPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"

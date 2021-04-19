@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | TreeView | WinUI | Syncfusion
-description: WinUI TreeView control displays hierarchical data with rich features like binding, load-on-demand, editing, checkbox selection, drag-and-drop, and more.
+title: About WinUI TreeView control | Syncfusion
+description: Learn here all about introduction of Syncfusion WinUI TreeView(SfTreeView) control with key features and more.
 platform: WinUI
 control: TreeView
 documentation: ug
