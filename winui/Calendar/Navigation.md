@@ -37,7 +37,7 @@ private void calendar_Loaded(object sender, RoutedEventArgs e)
 
 ## Restrict navigation between views
 
-You can restrict navigation within a minimum and maximum views by using [MinDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MinDisplayMode) and [MaxDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MaxDisplayMode) properties. This will be useful when your date range is smaller and you don’t want to show century view.
+You can restrict navigation within a minimum and maximum views by using [MinDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MinDisplayMode) and [MaxDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MaxDisplayMode) properties. This will be useful when your date range is smaller and you don’t want to show century view. By default, the value of `MinDisplayMode` is **Month** and `MaxDisplayMode` is **Century**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -88,7 +88,7 @@ sfCalendar.MaxDisplayMode = CalendarDisplayMode.Decade;
 
 ## Scrolling within a view
 
-You can navigate within a view using mouse scroll or by navigation button in `Calendar` control. The navigation direction animation can be changed by using the [`NavigationDirection`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_NavigationDirection) property value. By default, the value of `NavigationDirection` property is `vertical`.
+You can navigate within a view using mouse scroll or by navigation button in `Calendar` control. The navigation direction animation can be changed by using the [`NavigationDirection`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_NavigationDirection) property value. By default, the value of `NavigationDirection` property is **Vertical**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -108,7 +108,7 @@ sfCalendar.NavigationDirection = Orientation.Horizontal;
 
 ![Credit card valid date selection in WinUI Calendar](Navigation_images/navigation-buttons-horizontal.png)
 
-When the `NavigationDirection` property is `vertical`, you can navigate within views by mouse scroll or by navigation buttons. When the `NavigationDirection` property is `Horizontal`, you can navigate by navigation buttons only.
+When the `NavigationDirection` property is **Vertical**, you can navigate within views by mouse scroll or by navigation buttons. When the `NavigationDirection` property is **Horizontal**, you can navigate by navigation buttons only.
 
 ![Navigation between views in horizontal direction in WinUI Calendar](Getting-Started_images/navigation-direction.gif)
 
