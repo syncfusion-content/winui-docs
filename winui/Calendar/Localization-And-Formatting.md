@@ -9,7 +9,7 @@ documentation: ug
 
 # Localize and change format in WinUI Calendar
 
-This section describes how to localize [Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control using `CalendarIdentifier` and `Language` properties and to change the display formats.
+This section describes how to localize [Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control using [`CalendarIdentifier`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_CalendarIdentifier) and `Language` properties and to change the display formats.
 
 ## Types of Calendar
 
@@ -25,6 +25,8 @@ You can select the required `CalendarIdentifier` value from below types.
  * ThaiCalendar
  * UmAlQuraCalendar
  * PersianCalendar
+
+ N> When `CalendarIdentifier` and `FlowDirection` properties are set, FlowDirection property is given higher precedence.
 
 {% tabs %}
 {% highlight xaml %}
@@ -94,6 +96,8 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 ## Change flow direction
 
 You can change the flow direction of the `Calendar` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
+
+N> When `CalendarIdentifier` and `FlowDirection` properties are set, FlowDirection property is given higher precedence.
 
 {% tabs %}
 {% highlight XAML %}

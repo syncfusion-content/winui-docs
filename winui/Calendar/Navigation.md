@@ -13,7 +13,7 @@ You can easily navigate to the month, year, decade, or century views to select d
 
 ## Bring a date into view
 
-You can navigate to the month containing required date using `SetDisplayDate` method. To navigate to the required date of any month or year, pass the **DateTime** value in `SetDisplayDate` method argument.
+You can navigate to the month containing required date using [`SetDisplayDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SetDisplayDate_System_DateTimeOffset_) method. To navigate to the required date of any month or year, pass the **DateTime** value in `SetDisplayDate` method argument.
 
 N> `SetDisplayDate` method should be used after `Calendar` control is loaded.
 
@@ -44,7 +44,7 @@ You can restrict navigation within a minimum and maximum views by using [MinDisp
 
 <calendar:SfCalendar x:Name="sfCalendar"
                      MinDisplayMode="Month"
-                     MaxDisplayMode="Century"
+                     MaxDisplayMode="Decade"
                      DisplayMode="Month"/>
 
 {% endhighlight %}
@@ -52,13 +52,13 @@ You can restrict navigation within a minimum and maximum views by using [MinDisp
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.MinDisplayMode = CalendarDisplayMode.Month;
-sfCalendar.MaxDisplayMode = CalendarDisplayMode.Century;
+sfCalendar.MaxDisplayMode = CalendarDisplayMode.Decade;
 sfCalendar.DisplayMode = CalendarDisplayMode.Month;
 
 {% endhighlight %}
 {% endtabs %}
 
-![Navigation between month and century view in WinUI Calendar](Getting-Started_images/view-navigation.gif)
+![Navigation between month and century view in WinUI Calendar](Navigation_images/navigation-restriction.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction)
 

@@ -198,7 +198,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Customize using theme keys
 
-You can customize the colors of day names and headers of month, year, decade and century by changing the theme keys values in a ResourceDictionary used in the `Calendar` control.
+You can customize the colors of day names and headers of month, year, decade and century by changing the theme keys values in a `ResourceDictionary` used in the `Calendar` control.
 
 <table>
 <tr>
@@ -305,10 +305,9 @@ Key to change the font size of calendar items region.<br/><br/></td></tr>
 
 ![Customize calendar using theme keys](UI-Customization_images/customize-theme-keys.png)
 
-
 ## Hide days that is out of scope
 
-By default, out of scope days are disabled. If you want to hide the days that are out of the scope of current view, use the [OutOfScopeVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_OutOfScopeVisibility) property value as `Hidden`. The default value of `OutOfScopeVisibility` property is `Disabled`.
+You can hide the days that are out of the scope of current view by setting the [OutOfScopeVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_OutOfScopeVisibility) property value as `Hidden`. The default value of `OutOfScopeVisibility` property is `Disabled`.
 
 {% tabs %}
 {% highlight xaml %}
