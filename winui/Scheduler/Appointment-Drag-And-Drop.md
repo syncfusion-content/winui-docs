@@ -39,7 +39,7 @@ this.Schedule.DragDropSettings.ShowTimeIndicator = true;
 {% endhighlight %}
 {% endtabs %}
 
-![show-appointment-dragging-time-indicator-in-winui-scheduler](Appointment-Drag-And-Drop_Images/adding-show-appointment-dragging-time-indicator-in-winui-scheduler.png)
+![show-appointment-dragging-time-indicator-in-winui-scheduler](Appointment-Drag-And-Drop_Images/appointment-dragging-time-indicator-in-winui-scheduler.png)
 
 N>
 * Not applicable for the `Month` and `Timeline Month` views. 
@@ -56,7 +56,7 @@ this.Schedule.DragDropSettings.TimeIndicatorFormat = "HH mm tt";
 {% endhighlight %}
 {% endtabs %}
 
-![customize-appointment-dragging-time-indicator-format-in-winui-scheduler](Appointment-Drag-And-Drop_Images/adding-customize-appointment-dragging-time-indicator-format-in-winui-scheduler.png)
+![customize-appointment-dragging-time-indicator-format-in-winui-scheduler](Appointment-Drag-And-Drop_Images/customize-appointment-dragging-time-indicator-format-in-winui-scheduler.png)
 
 ## AppointmentDragOver event
 

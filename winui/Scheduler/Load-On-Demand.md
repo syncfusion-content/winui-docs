@@ -269,4 +269,4 @@ this.Schedule.ShowBusyIndicator = true;
 {% endhighlight %}  
 {% endtabs %}  
 
-![busy-indicator-in-winui-scheduler](LoadOnDemand_Images/adding-busy-indicator-in-winui-scheduler.png)
+![show-busy-indicator-in-winui-scheduler](LoadOnDemand_Images/busy-indicator-in-winui-scheduler.png)

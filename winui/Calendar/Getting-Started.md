@@ -16,10 +16,18 @@ This section explains the steps required to add the [WinUI Calendar](https://www
 ![Structure of WinUI Calendar control](Getting-Started_images/Structure.png)
 
 ## Creating an application with WinUI Calendar
+In this walkthrough, you will create a WinUI application that contains the `Calendar` control.
+
+## Adding control manually in XAML
+
+To add `Calendar` control manually in XAML , follow the below steps.
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
-2. Add reference to [Syncfusion.Calendar.WinUI](https://www.nuget.org/packages/Syncfusion.Calendar.WinUI) NuGet. 
-3. Import the control namespace `Syncfusion.UI.Xaml.Calendar` in XAML or C# code.
+2. Download and refer the following NuGet in the project.
+
+    * [Syncfusion.Calendar.WinUI](https://www.nuget.org/packages/Syncfusion.Calendar.WinUI)
+
+3. Import the control namespace `Syncfusion.UI.Xaml.Calendar` in XAML page.
 4. Initialize the `Calendar` control.
 
 {% tabs %}
@@ -42,6 +50,21 @@ This section explains the steps required to add the [WinUI Calendar](https://www
 </Page>
 
 {% endhighlight %}
+{% endtabs %}
+
+## Adding control manually in C#
+
+To add the `Calendar` control manually in C#, follow the below steps.
+
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
+2. Download and refer the following NuGet in the project.
+
+    * [Syncfusion.Calendar.WinUI](https://www.nuget.org/packages/Syncfusion.Calendar.WinUI)
+
+3. Import the `Calendar` namespace `Syncfusion.UI.Xaml.Calendar` in C# page.
+4. Initialize the `Calendar` control.
+
+{% tabs %}
 {% highlight C# %}
 
 using Syncfusion.UI.Xaml.Calendar;
@@ -73,9 +96,9 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Select a date
 
-You can change the selected date interactively by clicking on the specific date or you can select programmatically by using [SelectedDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDate) property. By default, `Calendar` control allows you to select single date at a time. 
+You can change the selected date interactively by clicking on the specific date or you can select programmatically by using [SelectedDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDate) property. By default, `SelectedDate` property value is `null` and  `Calendar` control allows you to select single date at a time. 
 
-If you want to change the selection mode, select required value for [`SelectionMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionMode) property from below values.
+If you want to restrict date selection or select multiple dates, set [`SelectionMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionMode) property value from below values.
 
 * **None** - Prevents from selecting a date.
 * **Single** - Allows to select a single date.
@@ -97,7 +120,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Select multiple dates
 
-You can select one or multiple dates from different month, year or decade or century, by changing the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionMode) property value to **Multiple**. You can get the selected dates collection from the [SelectedDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDates) property.
+You can select one or multiple dates from different month, year or decade or century, by changing the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionMode) property value to **Multiple**. You can get the selected dates collection from the [SelectedDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDates) property. By default, `SelectedDates` collection will be empty.
 
 N> `SelectedDates` property collection will be empty if the `SelectionMode` value is **None**. 
 
@@ -122,7 +145,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Select a date range
 
-You can select a range of dates in `Calendar` control by changing the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionMode) property value to **Range**. You can get the selected dates collection from the [SelectedDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDates) property.
+You can select a range of dates in `Calendar` control by changing the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionMode) property value to **Range**. You can get the selected dates collection from the [SelectedDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDates) property. By default, `SelectedDates` collection will be empty.
 
 N> `SelectedDates` property collection will be empty if the `SelectionMode` value is  **None**. 
 
@@ -181,12 +204,20 @@ private void SfCalendar_SelectedDateChanged(object sender, SelectedDateChangedEv
 
 ## Restrict selection
 
-You can restrict users from selecting single or multiple dates within a specific minimum and maximum range or by blocking unwanted dates using blackout dates or by blocking specific set of dates (blocking weekend dates). 
+You can restrict users from:
+* Selecting single or multiple dates within a specific minimum and maximum range using [`MinDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MinDate) and [`MaxDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MaxDate) properties.
+* Selecting a date or dates from blocked dates using [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_BlackoutDates) property.
+* Selecting a date or dates from specifically blocked set of dates (example : blocking weekend dates) using [`ItemPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_ItemPrepared) event. 
 
-For brief explanation of selection restriction in `Calendar` control [click here](restrict-date-selection).
+For further reference [click here](restrict-date-selection).
 
 ## Navigation between views
 
-You can navigate between month, year, decade and century views in `Calendar` control. You can also restrict the users to navigate between specific views only (month and year selection for credit card).
+* You can navigate between month, year, decade and century views in `Calendar` control.
+* You can also restrict the users to navigate between specific views only (month and year selection for credit card) using [`MinDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MinDisplayMode) and [`MaxDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MaxDisplayMode) properties.
 
-You can navigate within a view horizontally or vertically. By default, navigation direction is vertical within a view either by mouse scrolling or by navigation buttons. For brief explanation of navigation between views in `Calendar` control [click here](navigation).
+    ![Navigation between views](Getting-Started_images/View-Navigation.gif)
+
+* You can navigate within a view horizontally or vertically using [`NavigationDirection`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_NavigationDirection) property. By default, navigation direction is vertical within a view either by mouse scrolling or by navigation buttons. 
+
+For further reference [click here](navigation).

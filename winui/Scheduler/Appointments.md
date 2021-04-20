@@ -33,7 +33,7 @@ Schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
-![schedule-appointment-in-winui-scheduler](Appointment_Images/adding-schedule-appointment-in-winui-scheduler.png)
+![schedule-appointment-in-winui-scheduler](Appointment_Images/schedule-appointment-in-winui-scheduler.png)
 
 N> 
 * The Scheduler supports functionality to arrange appointments according to their start time and duration for normal appointments in a day, week, and workweek views.
@@ -152,7 +152,7 @@ Schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {% endtabs%}
 
-![business-objects-in-winui-scheduler](Appointment_Images/adding-custom-appointment-in-winui-scheduler.png)
+![business-objects-in-winui-scheduler](Appointment_Images/custom-appointment-in-winui-scheduler.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/BusinessObject)
 
@@ -195,7 +195,7 @@ Schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {% endtabs%}
 
-![spanned-appointment-in-winui-scheduler](Appointment_Images/adding-spanned-appointment-in-winui-scheduler.png)
+![spanned-appointment-in-winui-scheduler](Appointment_Images/spanned-appointment-in-winui-scheduler.png)
 
 ## All day appointments
 
@@ -226,7 +226,7 @@ Schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs%}
 
-![all-day-appointment-in-winui-scheduler](Appointment_Images/adding-all-day-appointment-in-winui-scheduler.png)
+![all-day-appointment-in-winui-scheduler](Appointment_Images/all-day-appointment-in-winui-scheduler.png)
 
 N> Appointment that lasts for an entire day (exact 24 hours) will be considered as an all-day appointment without setting the [IsAllDay](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_IsAllDay) property. For example: From 06/29/2020 12:00AM to 06/30/2020 12:00AM.
 
@@ -291,7 +291,7 @@ Schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs%}
 
-![recurrence-appointment-in-winui-scheduler](Appointment_Images/adding-recurrence-appointment-in-winui-scheduler.png)
+![recurrence-appointment-in-winui-scheduler](Appointment_Images/recurrence-appointment-in-winui-scheduler.png)
 
 ### Creating the business object recurrence appointment
 
@@ -511,7 +511,7 @@ this.Schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
-![adding-exception-dates-to-recurrence-pattern-appointment-in-winui-scheduler](Appointment_Images/adding-exception-dates-to-recurrence-pattern-appointment-in-winui-scheduler.png)
+![exception-dates-to-recurrence-pattern-appointment-in-winui-scheduler](Appointment_Images/exception-dates-to-recurrence-pattern-appointment-in-winui-scheduler.png)
 
 N> Exception dates should be Universal Time Coordinates (UTC) time zone.
 
@@ -568,7 +568,7 @@ this.Schedule.ItemsSource = appointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
-![adding-exception-appointment-to-the-recurrence-pattern-in-winui-scheduler](Appointment_Images/adding-exception-appointment-to-the-recurrence-pattern-in-winui-scheduler.png)
+![exception-appointment-to-the-recurrence-pattern-in-winui-scheduler](Appointment_Images/exception-appointment-to-the-recurrence-pattern-in-winui-scheduler.png)
 
 N>
 * The `RecurrenceId` of an exception appointment and the Id of its pattern appointment should have the same value.
@@ -654,7 +654,7 @@ this.Schedule.ItemsSource = customAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
-![adding-custom-exception-dates-to-the-recurrence-pattern-in-winui-scheduler](Appointment_Images/adding-custom-exception-dates-to-the-recurrence-pattern-in-winui-scheduler.png)
+![custom-exception-dates-to-the-recurrence-pattern-in-winui-scheduler](Appointment_Images/custom-exception-dates-to-the-recurrence-pattern-in-winui-scheduler.png)
 
 N> Exception dates should be Universal Time Coordinates (UTC) time zone.
 
@@ -739,7 +739,7 @@ this.Schedule.ItemsSource = RecursiveAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
-![adding-exception-custom-appointment-to-the-recurrence-pattern-in-winui-scheduler](Appointment_Images/adding-exception-custom-appointment-to-the-recurrence-pattern-in-winui-scheduler.png)
+![exception-custom-appointment-to-the-recurrence-pattern-in-winui-scheduler](Appointment_Images/exception-custom-appointment-to-the-recurrence-pattern-in-winui-scheduler.png)
 
 N>
 * The `RecurrenceId` of exception appointment and the ``Id of its pattern appointment should have same value.
@@ -783,7 +783,7 @@ The default appearance of schedule appointment can be customized in all views by
 {% endhighlight %}
 {% endtabs %}
 
-![appearance-customization-in-winui-scheduler](Appointment_Images/adding-appearance-customization-in-winui-scheduler.png)
+![appearance-customization-in-winui-scheduler](Appointment_Images/appearance-customization-in-winui-scheduler.png)
 
 N>  
 * By default, the `ScheduleAppointment` is set as the `DataContext` for the `AppointmentTemplate` and `AppointmentTemplateSelector` for both `ScheduleAppointment` and business object in the `ItemsSource` of SfScheduler.

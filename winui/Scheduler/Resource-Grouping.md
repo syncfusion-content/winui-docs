@@ -75,7 +75,7 @@ this.Schedule.ResourceCollection = ResourceCollection;
 {% endhighlight %}
 {% endtabs %}
 
-![resource-grouping-as-resource-in-winui-scheduler](Resource_Images/adding-resource-grouping-as-resource-in-winui-scheduler.png)
+![resource-grouping-as-resource-in-winui-scheduler](Resource_Images/resource-grouping-as-resource-in-winui-scheduler.png)
 
 ### Date
 
@@ -105,7 +105,7 @@ this.Schedule.ResourceCollection = ResourceCollection;
 {% endhighlight %}
 {% endtabs %}
 
-![resource-grouping-as-date-in-winui-scheduler](Resource_Images/adding-resource-grouping-as-date-in-winui-scheduler.png)
+![resource-grouping-as-date-in-winui-scheduler](Resource_Images/resource-grouping-as-date-in-winui-scheduler.png)
 
 ## Assigning resources to appointments
 
@@ -159,9 +159,9 @@ this.Schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
-![multiple-resource-sharing-resourcegroup-as-resource-week-view-in-winui-scheduler](Resource_Images/adding-multiple-resource-sharing-resourcegroup-as-resource-week-view-in-winui-scheduler.png)
+![multiple-resource-sharing-resourcegroup-as-resource-week-view-in-winui-scheduler](Resource_Images/multiple-resource-sharing-resourcegroup-as-resource-week-view-in-winui-scheduler.png)
 
-![multiple-resource-sharing-resourcegroup-as-resource-timelineweek-view-in-winui-scheduler](Resource_Images/adding-multiple-resource-sharing-resourcegroup-as-resource-timelineweek-view-in-winui-scheduler.png)
+![multiple-resource-sharing-resourcegroup-as-resource-timelineweek-view-in-winui-scheduler](Resource_Images/multiple-resource-sharing-resourcegroup-as-resource-timelineweek-view-in-winui-scheduler.png)
 
 ## Scheduler resource mapping
 
@@ -372,7 +372,7 @@ this.Schedule.DaysViewSettings.VisibleResourceCount = 2;
 {% endhighlight %}
 {% endtabs %}
 
-![resourcegroup-as-resource-visible-resource-count-week-view-in-winui-scheduler](Resource_Images/adding-resourcegroup-as-resource-visible-resource-count-week-view-in-winui-scheduler.png)
+![resourcegroup-as-resource-visible-resource-count-week-view-in-winui-scheduler](Resource_Images/resourcegroup-as-resource-visible-resource-count-week-view-in-winui-scheduler.png)
 
 ### Visible resource count in timeline views
 
@@ -394,7 +394,7 @@ this.Schedule.TimelineViewSettings.VisibleResourceCount = 2;
 {% endhighlight %}
 {% endtabs %}
 
-![resourcegroup-as-resource-visible-resource-count-timelineweek-view-in-winui-scheduler](Resource_Images/adding-resourcegroup-as-resource-visible-resource-count-timelineweek-view-in-winui-scheduler.png)
+![resourcegroup-as-resource-visible-resource-count-timelineweek-view-in-winui-scheduler](Resource_Images/resourcegroup-as-resource-visible-resource-count-timelineweek-view-in-winui-scheduler.png)
 
 ## Assign resources to special time regions
 
@@ -415,11 +415,11 @@ this.Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {% endhighlight %}
 {% endtabs %}
 
-![assign-resources-to-special-time-regions-date-basis-in-winui-scheduler](Resource_Images/adding-resources-to-special-time-regions-date-basis-in-winui-scheduler.png)
+![assign-resources-to-special-time-regions-date-basis-in-winui-scheduler](Resource_Images/resources-to-special-time-regions-date-basis-in-winui-scheduler.png)
 
 N> The [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) in a `Time basis` can be displayed by setting the value of [CanMergeAdjacentRegions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanMergeAdjacentRegions) to `True.`
 
-![assign-resources-to-special-time-regions-time-basis-in-winui-scheduler](Resource_Images/adding-resources-to-special-time-regions-time-basis-in-winui-scheduler.png)
+![assign-resources-to-special-time-regions-time-basis-in-winui-scheduler](Resource_Images/resources-to-special-time-regions-time-basis-in-winui-scheduler.png)
 
 ### Assign resources to special time regions in timeline view
 {% tabs %}
@@ -437,7 +437,7 @@ this.Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {% endhighlight %}
 {% endtabs %}
 
-![assign-resources-to-special-time-regions-timeline-view-in-winui-scheduler](Resource_Images/adding-resources-to-special-time-regions-timeline-view-in-winui-scheduler.png)
+![assign-resources-to-special-time-regions-timeline-view-in-winui-scheduler](Resource_Images/resources-to-special-time-regions-timeline-view-in-winui-scheduler.png)
 
 ## Appearance customization
 
@@ -488,7 +488,7 @@ N>
 * By default, the `SchedulerResource` is set as the `DataContext` for the `ResourceHeaderTemplate` for both `SchedulerResource` and custom data object in the `ResourceCollection.`
 * The custom data object can be bound in the `ResourceHeaderTemplate` by using the property of `SchedulerResource.Data.`
 
-![customize-resource-appearance-using-resource-header-template-in-winui-scheduler](Resource_Images/adding-customize-resource-appearance-using-resource-header-template-in-winui-scheduler.png)
+![customize-resource-appearance-using-resource-header-template-in-winui-scheduler](Resource_Images/customize-resource-appearance-using-resource-header-template-in-winui-scheduler.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/ResourceHeaderTemplate)
 
@@ -589,4 +589,4 @@ N>
 * By default, the [SchedulerResource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html) is set as the DataContext for the `ResourceHeaderTemplateSelector` for both [SchedulerResource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html) and custom data object in the `ResourceCollection.`
 * The custom data object can be bound in the `ResourceHeaderTemplateSelector` by using the property of [SchedulerResource.Data](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Data).
 
-![customize-resource-appearance-using-resource-header-template-selector-in-winui-scheduler](Resource_Images/adding-customize-resource-appearance-using-resource-header-template-selector-in-winui-scheduler.png)
+![customize-resource-appearance-using-resource-header-template-selector-in-winui-scheduler](Resource_Images/customize-resource-appearance-using-resource-header-template-selector-in-winui-scheduler.png)
