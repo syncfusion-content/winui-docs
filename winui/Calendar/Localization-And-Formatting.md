@@ -27,7 +27,11 @@ You can select the required `CalendarIdentifier` value from below types.
  * UmAlQuraCalendar
  * PersianCalendar
 
- N> When `CalendarIdentifier` and `FlowDirection` properties are set, `FlowDirection` property is given higher precedence.
+N> Japanese and Lunar type calendars are not supported in `Calendar` control.
+
+N> When `CalendarIdentifier` and `FlowDirection` properties are set, `FlowDirection` property is given higher precedence.
+
+N> `Calendar` control updates the flow direction visually based on the `CalendarIdentifier` property value.
 
 {% tabs %}
 {% highlight xaml %}
@@ -45,7 +49,7 @@ sfCalendar.CalendarIdentifier = "HebrewCalendar";
 {% endtabs %}
 
 ![Displaying Hebrew-type WinUI Calendar.](Getting-Started_images/CalendarIdentifier.png)
-
+ 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Formatting)
 
 ## Change the language
@@ -96,7 +100,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change flow direction
 
-You can change the flow direction of the `Calendar` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is **LeftToRight**.
+You can change the flow direction of the `Calendar` layout from right to left by setting the `FlowDirection` property value as **RightToLeft**. The default value of `FlowDirection` property is **LeftToRight**.
 
 N> When `CalendarIdentifier` and `FlowDirection` properties are set, FlowDirection property is given higher precedence.
 
