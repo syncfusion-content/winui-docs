@@ -27,7 +27,7 @@ You can select the required `CalendarIdentifier` value from below types.
  * UmAlQuraCalendar
  * PersianCalendar
 
-N> Japansese and Lunar type calendars are not supported in `Calendar` control.
+N> Japanese and Lunar type calendars are not supported in `Calendar` control.
 
 N> When `CalendarIdentifier` and `FlowDirection` properties are set, `FlowDirection` property is given higher precedence.
 
