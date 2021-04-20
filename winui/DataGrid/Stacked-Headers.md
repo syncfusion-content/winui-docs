@@ -49,7 +49,7 @@ sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow2);
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI datagrid shown with stacked header rows](Stacked-Headers-images/Stacked-Headers-image1.png)
+![WinUI DataGrid with Stacked Header Rows](Stacked-Headers-images/winui-datagrid-stacked-header-rows.png)
 
 ## Stacked Headers using Data Annotation
 
