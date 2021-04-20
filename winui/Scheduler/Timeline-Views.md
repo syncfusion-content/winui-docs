@@ -52,7 +52,7 @@ this.Schedule.TimelineViewSettings.TimeIntervalSize = 120;
 
 By default, the `WinUI Scheduler` considers the week days from Monday to Friday as Working days. The days which are defined in this non-working days collection are considered as [non-working days](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_NonWorkingDays). Therefore, when the weekend days are set to hide from Scheduler.
 
-The `Timelineworkweek` view displays exactly the defined working days on Scheduler control, whereas other views displays all the days.
+The `Timeline workweek` view displays exactly the defined working days on Scheduler control, whereas other views displays all the days.
 
 {% tabs %}
 {% highlight c# %}
