@@ -48,7 +48,7 @@ N>
 {% endhighlight %}
 {% endtabs %}
 
-![cell-context-flyout-for-timeslots-in-winui-scheduler](Context-Flyout-Commands_Images/adding-cell-context-flyout-for-timeslots-in-winui-scheduler.png)
+![cell-context-flyout-for-timeslots-in-winui-scheduler](Context-Flyout-Commands_Images/cell-context-flyout-for-timeslots-in-winui-scheduler.png)
 
 ## Appointment context flyout
 
@@ -82,7 +82,7 @@ N>
 {% endhighlight %}
 {% endtabs %}
 
-![appointment-context-flyout-for-appointments-in-winui-scheduler](Context-Flyout-Commands_Images/adding-appointment-context-flyout-for-appointments-in-winui-scheduler.png)
+![appointment-context-flyout-for-appointments-in-winui-scheduler](Context-Flyout-Commands_Images/appointment-context-flyout-for-appointments-in-winui-scheduler.png)
 
 ## ContextFlyoutOpening event
 
