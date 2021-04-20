@@ -22,7 +22,7 @@ this.Schedule.TimelineViewSettings.TimeInterval = new System.TimeSpan(0, 120, 0)
 {% endhighlight %}
 {% endtabs %}
 
-![change-time-interval-in-winui-scheduler](TimelineViews_Images/adding-change-time-interval-in-winui-scheduler.png)
+![change-time-interval-in-winui-scheduler](TimelineViews_Images/change-time-interval-in-winui-scheduler.png)
 
 N>
 If you modify the timeInterval value (in minutes), you need to change the time labels format by setting the timeFormat value to hh:mm.
@@ -46,9 +46,24 @@ this.Schedule.TimelineViewSettings.TimeIntervalSize = 120;
 {% endhighlight %}
 {% endtabs %}
 
-![change-time-interval-width-in-winui-scheduler](TimelineViews_Images/adding-change-time-interval-width-in-winui-scheduler.png)
+![change-time-interval-width-in-winui-scheduler](TimelineViews_Images/change-time-interval-width-in-winui-scheduler.png)
 
-## Flexible working days and working hours
+## Flexible working days
+
+By default, the `WinUI Scheduler` considers the week days from Monday to Friday as Working days. The days which are defined in this non-working days collection are considered as [non-working days](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_NonWorkingDays). Therefore, when the weekend days are set to hide from Scheduler.
+
+The `Timeline workweek` view displays exactly the defined working days on Scheduler control, whereas other views displays all the days.
+
+{% tabs %}
+{% highlight c# %}
+this.Schedule.ViewType = SchedulerViewType.TimelineWorkWeek;
+this.Schedule.TimelineViewSettings.NonWorkingDays = new ObservableCollection<DayOfWeek>() { DayOfWeek.Monday, DayOfWeek.Tuesday };
+{% endhighlight %}
+{% endtabs %}
+
+![flexible-working-days-in-winui-scheduler](TimelineViews_Images/flexible-working-days-in-winui-scheduler.png)
+
+## Flexible working hours
 
 The default values for the `StartHour` and `EndHour` are 0 and 24 to show all the time slots in a timeline view. You can set the [StartHour](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_StartHour) and [EndHour](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_EndHour) properties of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html) to show only the required time duration for users. You can set the StartHour and EndHour in time duration to show the required time duration in minutes. The `StartHour` and `EndHour` properties do not apply to the `TimelineMonth` view.
 
@@ -69,7 +84,7 @@ this.Schedule.TimelineViewSettings.EndHour = 16;
 {% endhighlight %}
 {% endtabs %}
 
-![flexible-working-hours-in-winui-scheduler](TimelineViews_Images/adding-flexible-working-hours-in-winui-scheduler.png)
+![flexible-working-hours-in-winui-scheduler](TimelineViews_Images/flexible-working-hours-in-winui-scheduler.png)
 
 N>
 * The [NonWorkingDays](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_NonWorkingDays) property will applicable only for `workWeek` and `TimelineWorkWeek` views only, and not applicable for the remaining views.
@@ -126,7 +141,7 @@ private ObservableCollection<DateTime> GetBlackoutDates()
 {% endhighlight %}
 {% endtabs %}
 
-![black-out-dates-in-winui-scheduler](TimelineViews_Images/adding-black-out-dates-in-winui-scheduler.png)
+![black-out-dates-in-winui-scheduler](TimelineViews_Images/black-out-dates-in-winui-scheduler.png)
 
 ## Special time regions
 
@@ -151,7 +166,7 @@ this.Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {% endhighlight %}
 {% endtabs %}
 
-![selection-restriction-in-timeslots-in-winui-scheduler](TimelineViews_Images/adding-selection-restriction-in-timeslots-in-winui-scheduler.png)
+![selection-restriction-in-timeslots-in-winui-scheduler](TimelineViews_Images/selection-restriction-in-timeslots-in-winui-scheduler.png)
 
 N> This property only restricts the interaction on region and it does not restrict the following:
 * Programmatic selection (if the user updates the selected date value dynamically).
@@ -250,7 +265,7 @@ this.Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {% endhighlight %}
 {% endtabs %}
 
-![special-time-region-customization-in-winui-scheduler](TimelineViews_Images/adding-special-time-region-customization-in-winui-scheduler.png)
+![special-time-region-customization-in-winui-scheduler](TimelineViews_Images/special-time-region-customization-in-winui-scheduler.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/SpecialTimeRegionCustomization)
 
@@ -295,7 +310,7 @@ this.Schedule.TimelineViewSettings.TimeRulerSize = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![change-time-ruler-size-in-winui-scheduler](TimelineViews_Images/adding-change-time-ruler-size-in-winui-scheduler.png)
+![change-time-ruler-size-in-winui-scheduler](TimelineViews_Images/change-time-ruler-size-in-winui-scheduler.png)
 
 ## Minimum appointment duration
 
@@ -326,7 +341,7 @@ this.Schedule.TimelineViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 {% endhighlight %}
 {% endtabs %}
 
-![time-ruler-text-formatting-in-winui-scheduler](TimelineViews_Images/adding-time-ruler-text-formatting-in-winui-scheduler.png)
+![time-ruler-text-formatting-in-winui-scheduler](TimelineViews_Images/time-ruler-text-formatting-in-winui-scheduler.png)
 
 ## View header
 
@@ -352,7 +367,7 @@ this.Schedule.TimelineViewSettings.ViewHeaderDateFormat = "dd-MMMM";
 {% endhighlight %}
 {% endtabs %}
 
-![view-header-text-formatting-in-winui-scheduler](TimelineViews_Images/adding-view-header-text-formatting-in-winui-scheduler.png)
+![view-header-text-formatting-in-winui-scheduler](TimelineViews_Images/view-header-text-formatting-in-winui-scheduler.png)
 
 ### View header height
 
@@ -443,4 +458,4 @@ this.Schedule.TimelineViewSettings.TimelineAppointmentHeight = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![appointment-height-in-winui-scheduler](TimelineViews_Images/adding-appointment-height-in-winui-scheduler.png)
+![appointment-height-in-winui-scheduler](TimelineViews_Images/appointment-height-in-winui-scheduler.png)
