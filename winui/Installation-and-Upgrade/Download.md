@@ -21,7 +21,7 @@ The Syncfusion WinUI installer can be downloaded from the [Syncfusion](https://w
 Our 30-day trial can be downloaded in two ways.
 
    * Download Free Trial Setup
-   * Start Trials if using components through Nuget.org
+   * Start Trials if using components through [Nuget.org](https://www.nuget.org/packages?q=syncfusion)
 
 
 ### Download Free Trial Setup
