@@ -198,7 +198,7 @@ sfDataGrid.ItemsSource = viewModel.Orders;
 
 Now, run the application and you can expect the below output,
 
-![Displaying WinUI SfDataGrid](Getting-Started-images/Getting-Started-image1.png)
+![WinUi DataGrid](Getting-Started-images/winui-datagrid-getting-started.png)
 
 ## Defining Columns
 
@@ -352,7 +352,7 @@ By default, you can sort columns in a SfDataGrid by clicking the column header. 
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying sorting in WinUI SfDataGrid](Getting-Started-images/Getting-Started-image2.png)
+![WinUI DataGrid Sorting](Getting-Started-images/winui-datagrid-sorting.png)
 
 You can customize sorting by handling the [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SortColumnsChanging) and [SfDataGrid.SortColumnsChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SortColumnsChanged) events. To cancel the default sort, set the `Cancel` property to `true` in `SfDataGrid.SortColumnsChanging` event. 
 
@@ -384,7 +384,7 @@ Grouping can be enabled by setting [SfDataGrid.ShowGroupDropArea](https://help.s
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying grouping in WinUI SfDataGrid](Getting-Started-images/Getting-Started-image3.png)
+![WinUI DataGrid Grouping](Getting-Started-images/winui-datagrid-grouping.png)
 
 ## Editing
 
@@ -395,7 +395,7 @@ You can customize the editing operations by handling [SfDataGrid.CurrentCellBegi
 
 Filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_AllowFiltering) property to `true`, where you can open advanced filter UI by clicking the Filter icon in column header and filter the SfDataGrid. You can customize the filtering operations by handling [SfDataGrid.FilterChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_FilterChanging) and [SfDataGrid.FilterChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_FilterChanged) events.
 
-![Displaying Filtering in WinUI SfDataGrid](Getting-Started-images/Getting-Started-image4.png)
+![WinUI DataGrid Filtering](Getting-Started-images/winui-datagrid-filtering.png)
 
 
 
