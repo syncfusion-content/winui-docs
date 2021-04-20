@@ -106,7 +106,7 @@ N> The `SelectedDate` property value will be same as the first date value in `Se
 
 You can select a range of dates in `Calendar` control by changing the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionMode) property value to `Range`. You can get the selected range of dates from the [SelectedRange](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDates) property. By default, the value of `SelectedDate` property is **null** and `SelectedDates` collection is empty.
 
-N> `SelectedDates` property collection will be empty, if the `SelectionMode` value is **None**. 
+N> The `SelectedDates` collection will be empty and `SelectedDate` property value will be `null` when a date range is selected.
 
 {% tabs %}
 {% highlight xaml %}
@@ -122,8 +122,6 @@ sfCalendar.SelectionMode = CalendarSelectionMode.Range;
 
 {% endhighlight %}
 {% endtabs %}
-
-N> The `SelectedDates` collection will be empty and `SelectedDate` property value will be `null` when a date range is selected.
 
 ![Date range selection in WinUI Calendar](Getting-Started_images/date-range-selection.png)
 
