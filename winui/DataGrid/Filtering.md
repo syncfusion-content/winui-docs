@@ -167,11 +167,11 @@ By default, both [CheckboxFilter](https://help.syncfusion.com/cr/winui/Syncfusio
 
 SfDataGrid with Checkbox Filter View:
       
-![DataGrid with Checkbox Filter View in WinUI](Filtering_images/Filtering_img1.png)
+![WinUI DataGrid with Filter like Excel](Filtering_images/winui-datagrid-filter-like-excel.png)
         
 SfDataGrid with Advanced Filter View:
     
-![DataGrid with Advanced Filter View in WinUI](Filtering_images/Filtering_img2.png)
+![WinUI DataGrid with advanced filter](Filtering_images/winui-datagrid-advanced-filter.png)
 
 ## Choose between built-in UI Views
 
@@ -296,13 +296,13 @@ When the DateTime type value is bound to the {{ '[GridColumn](https://help.syncf
 </tr>
 <tr>
 <td>
-<img src="Filtering_images/Filtering_img3.png" alt="Displays text filter"/>
+<img src="Filtering_images/winui-datagrid-text-filter.png" alt="Displays text filter in WinUI DataGrid"/>
 </td>
 <td>
-<img src="Filtering_images/Filtering_img4.png" alt="Displays number filter"/>
+<img src="Filtering_images/winui-datagrid-number-filter.png" alt="Displays number filter in WinUI DataGrid"/>
 </td>
 <td>
-<img src="Filtering_images/Filtering_img5.png" alt="Displays date filter"/>
+<img src="Filtering_images/winui-datagrid-date-filter.png" alt="Displays date filter in WinUI DataGrid"/>
 </td>
 </tr>
 <tr>
@@ -420,7 +420,7 @@ By default, casing is not considered while filtering. Because, filter predicates
 {% endhighlight %}
 {% endtabs %}
 
-![Improve the performance while applying the filter in SfDataGrid WinUI](Filtering_images/Filtering_img6.png)
+![Improve the performance while applying filter in WPF DataGrid](Filtering_images/winui-datagrid-filtering-performance.png)
 
 By default, `CanGenerateUniqueItems` is `True`. So all the unique items in the column are loaded in the AdvancedFilter ComboBox that allows you to select the value easily from the combo box and filter it.
 
@@ -439,11 +439,11 @@ sfDataGrid.Columns["Country"].AllowBlankFilters = true;
 
 Checkbox Filter with `AllowBlankFilters` as `True`
 
-![Filter the NULL values by using the CheckBox Filter view in SfDataGrid WinUI](Filtering_images/Filtering_img7.png)
+![Filter the null values using checkbox filter in WinUI DataGrid](Filtering_images/winui-datagrid-filter-null-values.png)
 
 Advanced Filter with `AllowBlankFilters` as `True`
 
-![Filter the NULL values by using the Advanced Filter view in SfDataGrid WinUI](Filtering_images/Filtering_img8.png)
+![Filter the null values using advanced filter in WinUI DataGrid](Filtering_images/winui-datagrid-null-values.png)
 
 ## Instant Filtering
 
@@ -462,11 +462,11 @@ Here, the OK and Cancel buttons are unavailable and Done button is available to 
 
 Checkbox Filter with `ImmediateUpdateColumnFilter` is `True`
 
-![Apply the immediate filter in CheckBox Filter view](Filtering_images/Filtering_img9.png)
+![CheckBox filter with immediate filter in WinUI DataGrid](Filtering_images/winui-datagrid-immediate-checkbox-filter.png)
 
 Advanced Filter with `ImmediateUpdateColumnFilter` is `True`
 
-![Apply the immediate filter in Advanced Filter view](Filtering_images/Filtering_img10.png)
+![Advanced filter with immediate filter in WinUI DataGrid](Filtering_images/winui-datagrid-immediate-advanced-filter.png)
 
 N> In Checkbox Filter, the `SelectAll` option is not reflected in the filter updates if `ImmediateUpdateColumnFilter` is `True`.
 
@@ -493,19 +493,19 @@ sfDataGrid.Columns["OrderDate"].ColumnFilter = ColumnFilter.DisplayText;
 
 Consider in the following dataGrid, first and second records have same display value for OrderDate column but both have different actual value (E.g. 2/10/2010 12:00:00 AM and 2/10/2010 6:30:00 PM).
 
-![Apply the filter based on the underlying value in SfDataGrid WinUI](Filtering_images/Filtering_img11.png)
+![Filter WinUI DataGrid using Actual Value instead of Formatted String](Filtering_images/winui-datagrid-value-instead-of-formatting-string.png)
 
 By default, based on the actual value only filter will be applied. So it will consider both values as different. And while opening filter popup, both values will be displayed like below.
 
-![Apply the filter based on the display text in SfDataGrid WinUI](Filtering_images/Filtering_img12.png)
+![Filtering WinUI DataGrid based on formatted string](Filtering_images/winui-datagrid-filtering-format-string.png)
 
 If you set `ColumnFilter` as `DisplayText`, display value only will be considered for filtering. So filter popup will be shown like below.
 
-![Apply the filter based on the actual value in SfDataGrid WinUI](Filtering_images/Filtering_img13.png)
+![Apply filter based on actual value in WinUI DataGrid](Filtering_images/winui-datagrid-actual-value.png)
 
 After filtering, both records having the same OrderDate display value will be displayed in view.
 
-![Filter the same values records in SfDataGrid WinUI](Filtering_images/Filtering_img14.png)
+![Filtered same record values in WinUI DataGrid](Filtering_images/winui-datagrid-same-record-values.png)
 
 ## Events
 
@@ -658,7 +658,7 @@ public class StringToImageConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Apply the column filter for image in winui datagrid](Filtering_images/Filtering_img16.png)
+![Column filter with image in WinUI DataGrid](Filtering_images/winui-datagrid-image-column-filter.png)
 
 
 ## Functionality Customization
@@ -773,7 +773,7 @@ Sort Options can be collapsed by setting [SortOptionVisibility](https://help.syn
 {% endhighlight %}
 {% endtabs %}
 
-![Hide the SortOptions from Filter popup in SfDataGrid WinUI](Filtering_images/Filtering_img15.png)
+![Collapse sort option from filter popup in WinUI DataGrid](Filtering_images/winui-datagrid-collapse-filter-popup.png)
 
 ### Customizing Sort Options text
 
@@ -794,7 +794,7 @@ void sfDataGrid_FilterItemsPopulating(object sender, GridFilterItemsPopulatingEv
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing SortOptions text from Filter popup in SfDataGrid WinUI](Filtering_images/Filtering_img18.png)
+![Customized sort option text from filter popup in WinUI DataGrid](Filtering_images/winui-datagrid-sorting-customization.png)
 
 ### Customize the FilterPopup size using GridFilterControl style
 
@@ -812,7 +812,7 @@ You can customize the FilterPopup size using [FilterPopupHeight](https://help.sy
 {% endhighlight %}
 {% endtabs %}
 
-![Customize the FilterPopup in SfDataGrid WinUI](Filtering_images/Filtering_img17.png)
+![Customize the filter popup in WinUI DataGrid](Filtering_images/winui-datagrid-filter-popup-customization.png)
 
 ### Changing filter icon style after applying filters
 

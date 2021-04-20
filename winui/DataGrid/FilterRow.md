@@ -30,7 +30,7 @@ this.sfDataGrid.FilterRowPosition = FilterRowPosition.FixedTop;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid with filter row](FilterRow_images/FilterRow_img1.png)
+![WinUI DataGrid with filter row](FilterRow_images/winui-datagrid-filter-row.png)
 
 You can get the row index of FilterRow by using the [SfDataGrid.GetFilterRowIndex ](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridIndexResolver.html#Syncfusion_UI_Xaml_DataGrid_GridIndexResolver_GetFilterRowIndex_Syncfusion_UI_Xaml_DataGrid_SfDataGrid_)method.
 
@@ -127,7 +127,7 @@ this.sfDataGrid.Columns[0].FilterRowOptionsVisibility = Visibility.Collapsed;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid filter row](FilterRow_images/FilterRow_img4.png)
+![WinUI DataGrid with filter row](FilterRow_images/winui-datagrid-filter-rows.png)
 
 Below are the filter conditions supported by different filter row editors in SfDataGrid.
 
@@ -206,7 +206,7 @@ this.sfDataGrid.Columns[0].FilterRowCondition = FilterRowCondition.LessThanOrEqu
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid shows filter row with numeric editor](FilterRow_images/FilterRow_img3.png)
+![Filter row with numeric editor in WinUI DataGrid](FilterRow_images/winui-datagrid-numeric-filter-row.png)
 
 ## Filtering null values
 
@@ -224,7 +224,7 @@ this.sfDataGrid.Columns[0].AllowBlankFilters = false;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid loads numeric in filter row cell](FilterRow_images/FilterRow_img5.png)
+![Filter row without null option in WinUI DataGrid](FilterRow_images/winui-datagrid-filter-row-without-null-option.png)
 
 {% tabs %}
 {% highlight xaml %}
@@ -237,7 +237,7 @@ this.sfDataGrid.Columns[0].AllowBlankFilters = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid filter row handles null value](FilterRow_images/FilterRow_img6.png)
+![Filter row with null option in WinUI DataGrid](FilterRow_images/winui-datagrid-filter-row-null-option.png)
 
 ## Instant Filtering
 
@@ -254,7 +254,7 @@ this.sfDataGrid.Columns[2].ImmediateUpdateColumnFilter = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid Filter Row with immediateupdatecolumnfilter](FilterRow_images/FilterRow_img7.png)
+![Immediate column filter with filter row in WinUI DataGrid](FilterRow_images/winui-datagrid-filter-row-immediate-filter.png)
 
 ## Disable filtering for a particular FilterRowCell
 
@@ -297,7 +297,7 @@ You can customize the style of filter row by writing style of TargetType [Filte
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid filter row style](FilterRow_images/FilterRow_img8.png)
+![Customize the filter row style in WinUI DataGrid](FilterRow_images/winui-datagrid-filter-row-customization.png)
 
 ## Customizing filter row cell
 
