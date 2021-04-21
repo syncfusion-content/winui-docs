@@ -13,7 +13,6 @@ This article describes the most common installation errors, as well as the cause
 
 * [Unlocking the license installer using the trial key](https://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#unlocking-the-license-installer-using-the-trial-key)
 * [License has expired](https://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#license-has-expired)
-* [Unable to find a valid license](https://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#unable-to-find-a-valid-license)
 * [Unable to find a valid license or trial](https://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#unable-to-find-a-valid-license-or-trial)
 * [Unable to install because of another installation](https://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#unable-to-install-because-of-another-installation)
 * [Unable to install due to controlled folder access](http://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#unable-to-install-due-to-controlled-folder-access)
