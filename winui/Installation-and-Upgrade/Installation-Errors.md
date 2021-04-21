@@ -51,7 +51,9 @@ This error message will appear if your license has expired.
 
 ### Suggested solution
 
-You can renew your subscription [here](https://www.syncfusion.com/account/my-renewals), or if you want to buy a new license, go [here](https://www.syncfusion.com/sales/products), or you can contact our sales team at <salessupport@syncfusion.com>. You can also extend the 30-day trial period after your license has expired.
+You can renew your subscription [here](https://www.syncfusion.com/account/my-renewals), or you can contact our sales team at <salessupport@syncfusion.com>. You can also extend the 30-day trial period after your license has expired.
+
+If you want to purchase a new license, go [here](https://www.syncfusion.com/sales/products).
 
 
 ## Unable to find a valid license or trial
@@ -78,9 +80,11 @@ The following are possible causes of this error:
 
 ### Suggested solution
 
-You can renew your subscription [here](https://www.syncfusion.com/account/my-renewals), or if you want to buy a new license, go [here](https://www.syncfusion.com/sales/products), or you can contact our sales team at <salessupport@syncfusion.com>, or you can contact our sales team at <salessupport@syncfusion.com>.
+You can renew your subscription [here](https://www.syncfusion.com/account/my-renewals), or you can contact our sales team at <salessupport@syncfusion.com>. You can also continue the 30-day trial period.
 
-Else, please contact your account administrator or send an email to <clientrelations@syncfusion.com> to have a license assigned to you.
+If you want to purchase a new license, go [here](https://www.syncfusion.com/sales/products).
+
+To have a license assigned to you, please contact your account administrator or send an email to <clientrelations@syncfusion.com>.
 
 ## Unable to install because of another installation
 
