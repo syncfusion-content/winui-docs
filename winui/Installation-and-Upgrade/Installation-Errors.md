@@ -62,11 +62,11 @@ You can renew your subscription [here](https://www.syncfusion.com/account/my-ren
 
 <em>**Offline installer**</em>
 
-![Alert Message](Errors/Installation_Errors_img3.PNG)
+![Alert Message](Errors/Installation_Errors_img3.png)
 
 <em>**Online installer**</em>
 
-![Warning Message](Errors/Installation_Errors_img6.PNG)
+![Warning Message](Errors/Installation_Errors_img6.png)
 
 ### Reason
 
