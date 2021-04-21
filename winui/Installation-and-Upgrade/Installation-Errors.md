@@ -78,7 +78,7 @@ The following are possible causes of this error:
 
 ### Suggested solution
 
-You can purchase a new license [here](https://www.syncfusion.com/sales/products), or please contact your account administrator or send an email to <clientrelations@syncfusion.com>, or you can contact our sales team at <salessupport@syncfusion.com>.
+You can purchase a new license [here](https://www.syncfusion.com/sales/products), or please contact your account administrator or send an email to <clientrelations@syncfusion.com> to have a license assigned to you, or you can contact our sales team at <salessupport@syncfusion.com>.
 
 ## Unable to install because of another installation
 
