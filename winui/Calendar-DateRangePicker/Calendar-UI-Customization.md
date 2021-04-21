@@ -61,7 +61,7 @@ sfCalendarDateRangePicker.DropDownHeight = 500;
 
 You can change the UI of specific cells in `Calendar DateRangePicker` dropdown calendar by using the [FlyoutBase.AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) property and `DropDownFlyout` control.
 
-1. Create a **EventDataConverter** class and set the specialdates for specific events. 
+1. Create a **EventDataConverter** class and set the special dates for specific events. 
 
 {% tabs %}
 {% highlight C# %}
@@ -123,7 +123,7 @@ public class EventDataConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-2. Create a **DataTemplate** to customize the date cells of Celendar. Now add the `Calendar` control inside the `FlyoutBase.AttachedFlyout` property and `DropDownFlyout` control.
+2. Create a **DataTemplate** to customize the date cells of Calendar. Now add the `Calendar` control inside the `FlyoutBase.AttachedFlyout` property and `DropDownFlyout` control.
 
 {% tabs %}
 {% highlight XAML %}

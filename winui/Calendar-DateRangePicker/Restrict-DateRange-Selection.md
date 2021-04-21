@@ -172,7 +172,7 @@ sfCalendarDateRangePicker.MinDatesCountInRange = 5;
 
 ![Calendar DateRangePicker with end range value restriction](Getting-Started_images/Selection-By-DayCount.png)
 
-When `MinDisplayMode` value is **Year** then `MinDaysCountInRange` value should be atmost **28** to select a date range in year view. The `MinDaysCountInRange` value should be updated based on `MinDisplayMode` property value for range selection in respective views. 
+When `MinDisplayMode` value is **Year** then `MinDaysCountInRange` value should be at most **28** to select a date range in year view. The `MinDaysCountInRange` value should be updated based on `MinDisplayMode` property value for range selection in respective views. 
 
 {% tabs %}
 {% highlight xaml %}
