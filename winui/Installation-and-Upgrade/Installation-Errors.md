@@ -13,7 +13,6 @@ This article describes the most common installation errors, as well as the cause
 
 * [Unlocking the license installer using the trial key](https://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#unlocking-the-license-installer-using-the-trial-key)
 * [License has expired](https://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#license-has-expired)
-* [Unable to find a valid license](https://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#unable-to-find-a-valid-license)
 * [Unable to find a valid license or trial](https://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#unable-to-find-a-valid-license-or-trial)
 * [Unable to install because of another installation](https://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#unable-to-install-because-of-another-installation)
 * [Unable to install due to controlled folder access](http://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#unable-to-install-due-to-controlled-folder-access)
@@ -51,16 +50,21 @@ This error message will appear if your license has expired.
 
 ### Suggested solution
 
-You can renew your subscription [here](https://www.syncfusion.com/sales/products), or you can contact our sales team at <salessupport@syncfusion.com>. You can also extend the 30-day trial period after your license has expired.
+You can renew your subscription [here](https://www.syncfusion.com/account/my-renewals), or you can purchase a new license [here](https://www.syncfusion.com/sales/products), or you can contact our sales team at <salessupport@syncfusion.com>. You can also extend the 30-day trial period after your license has expired.
 
-
-## Unable to find a valid license
+## Unable to find a valid license or trial
 
 ### Problem
 
-**Error Message:** Sorry, we are unable to find a valid license for Essential Studio for WinUI under your account.
+**Error Message:** Sorry, we are unable to find a valid license or trial for Essential Studio for WinUI under your account.
 
-![Alert Message](Errors/Installation_Errors_img3.PNG)
+<em>**Offline installer**</em>
+
+![Alert Message](Errors/Installation_Errors_img3.png)
+
+<em>**Online installer**</em>
+
+![Warning Message](Errors/Installation_Errors_img6.png)
 
 ### Reason
 
@@ -68,29 +72,12 @@ The following are possible causes of this error:
 
 * When your trial period expired
 * When you don't have a license or an active trial
+* You are not the license holder of your license 
+* Your account administrator has not yet assigned you a license.
 
 ### Suggested solution
 
-You can renew your subscription [here](https://www.syncfusion.com/sales/products), or you can contact our sales team at <salessupport@syncfusion.com>.
-
-## Unable to find a valid license or trial
-
-### Problem
-
-**Error Message:** Sorry, we are unable to find a license or trial for Essential Studio for WinUI under your account.
-
-![Warning Message](Errors/Installation_Errors_img6.PNG)
-
-### Reason
-
-The following are possible causes of this error:
-
-* You are not the license holder of your license.
-* Your account administrator has not yet assigned you a license. Please contact your account administrator or send an email to <clientrelations@syncfusion.com> to have a license assigned to you.
-
-### Suggested solution
-
-Please check your subscription status [here](https://www.syncfusion.com/sales/products), or contact <salessupport@syncfusion.com>. You can also continue the 30-day trial period.
+You can purchase a new license [here](https://www.syncfusion.com/sales/products), or please contact your account administrator or send an email to <clientrelations@syncfusion.com> to have a license assigned to you, or you can contact our sales team at <salessupport@syncfusion.com>.
 
 ## Unable to install because of another installation
 
