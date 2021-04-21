@@ -51,33 +51,20 @@ This error message will appear if your license has expired.
 
 ### Suggested solution
 
-You can renew your subscription [here](https://www.syncfusion.com/sales/products), or you can contact our sales team at <salessupport@syncfusion.com>. You can also extend the 30-day trial period after your license has expired.
+You can renew your subscription [here](https://www.syncfusion.com/account/my-renewals), or if you want to buy a new licence, go [here](https://www.syncfusion.com/sales/products), or you can contact our sales team at <salessupport@syncfusion.com>. You can also extend the 30-day trial period after your license has expired.
 
-
-## Unable to find a valid license
-
-### Problem
-
-**Error Message:** Sorry, we are unable to find a valid license for Essential Studio for WinUI under your account.
-
-![Alert Message](Errors/Installation_Errors_img3.PNG)
-
-### Reason
-
-The following are possible causes of this error:
-
-* When your trial period expired
-* When you don't have a license or an active trial
-
-### Suggested solution
-
-You can renew your subscription [here](https://www.syncfusion.com/sales/products), or you can contact our sales team at <salessupport@syncfusion.com>.
 
 ## Unable to find a valid license or trial
 
 ### Problem
 
-**Error Message:** Sorry, we are unable to find a license or trial for Essential Studio for WinUI under your account.
+**Error Message:** Sorry, we are unable to find a valid license or trial for Essential Studio for WinUI under your account.
+
+<em>**Offline installer**</em>
+
+![Alert Message](Errors/Installation_Errors_img3.PNG)
+
+<em>**Online installer**</em>
 
 ![Warning Message](Errors/Installation_Errors_img6.PNG)
 
@@ -85,12 +72,15 @@ You can renew your subscription [here](https://www.syncfusion.com/sales/products
 
 The following are possible causes of this error:
 
-* You are not the license holder of your license.
-* Your account administrator has not yet assigned you a license. Please contact your account administrator or send an email to <clientrelations@syncfusion.com> to have a license assigned to you.
+* When your trial period expired
+* When you don't have a license or an active trial
+* When you are not the license holder of your license or your account administrator has not yet assigned you a license.
 
 ### Suggested solution
 
-Please check your subscription status [here](https://www.syncfusion.com/sales/products), or contact <salessupport@syncfusion.com>. You can also continue the 30-day trial period.
+You can renew your subscription [here](https://www.syncfusion.com/account/my-renewals), or if you want to buy a new licence, go [here](https://www.syncfusion.com/sales/products), or you can contact our sales team at <salessupport@syncfusion.com>, or you can contact our sales team at <salessupport@syncfusion.com>.
+
+Else, please contact your account administrator or send an email to <clientrelations@syncfusion.com> to have a license assigned to you.
 
 ## Unable to install because of another installation
 
