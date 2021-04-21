@@ -169,37 +169,36 @@ You can customize the colors of day names and headers of month, year, decade and
 <td>Key to change the color of calendar today date foreground color.</td>
 </tr>
 <tr>
-<td>SyncfusionCalendarItemBackground<br/><br/></td>
+<td>SyncfusionCalendarItemBackground</td>
 <td>Key to change the color of calendar date cells background color except today date cell.</td>
 </tr>
 <tr>
-<td>SyncfusionCalendarItemBorderBrush<br/><br/></td>
-<td>Key to change the color of calendar date cells border brush.<br/><br/></td>
+<td>SyncfusionCalendarItemBorderBrush</td>
+<td>Key to change the color of calendar date cells border brush.</td>
 </tr>
 <tr>
-<td>SyncfusionCalendarTodayItemBackground<br/><br/></td>
-<td>Key to change the color of calendar today date cell background color.<br/><br/></td>
+<td>SyncfusionCalendarTodayItemBackground</td>
+<td>Key to change the color of calendar today date cell background color</td>
 </tr>
 <tr>
-<td>SyncfusionCalendarTodayItemBorderBrush<br/><br/></td>
-<td>Key to change the color of calendar today date cell border brush.<br/><br/></td>
+<td>SyncfusionCalendarTodayItemBorderBrush</td>
+<td>Key to change the color of calendar today date cell border brush.</td>
 </tr>
 <tr>
-<td>SyncfusionCalendarItemOutOfScopeForeground<br/><br/></td>
-<td>Key to change the color of calendar date cells foreground color which are out of scope.<br/><br/></td>
+<td>SyncfusionCalendarItemOutOfScopeForeground</td>
+<td>Key to change the color of calendar date cells foreground color which are out of scope.</td>
 </tr>
 <tr>
-<td>SyncfusionCalendarItemMargin<br/><br/></td>
-<td>Key to change the margin of calendar item.<br/><br/></td>
+<td>SyncfusionCalendarItemMargin</td>
+<td>Key to change the margin of calendar item.</td>
 </tr>
 <tr>
-<td>SyncfusionSubtitleAltFontSize<br/><br/></td>
-<td>Key to change the font size of calendar header region.<br/><br/></td>
+<td>SyncfusionSubtitleAltFontSize</td>
+<td>Key to change the font size of calendar header region.</td>
 </tr>
 <tr>
-<td>SyncfusionBodyFontSize<br/><br/></td>
-<td>Key to change the font size of calendar items region.<br/><br/></td>
-</tr>
+<td>SyncfusionBodyFontSize</td>
+<td>Key to change the font size of calendar items region.</td>
 </tr>
 <table/>
 

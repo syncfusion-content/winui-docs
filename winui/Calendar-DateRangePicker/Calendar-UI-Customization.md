@@ -59,128 +59,90 @@ sfCalendarDateRangePicker.DropDownHeight = 500;
 
 ## Customize individual items in Calendar
 
-You can change the UI of specific cells in `Calendar DateRangePicker` dropdown calendar by using the [AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
+You can change the UI of specific cells in `Calendar DateRangePicker` dropdown calendar by using the [FlyoutBase.AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) property and `DropDownFlyout` control.
+
+1. Create a **EventDataConverter** class and set the specialdates for specific events. 
 
 {% tabs %}
 {% highlight C# %}
 
-public class CustomCalendarItemTemplateSelector : DataTemplateSelector
+public class EventDataConverter : IValueConverter
 {
-     public CustomCalendarItemTemplateSelector()
+    Dictionary<DateTimeOffset, string> SpecialDates;
+    public EventDataConverter()
     {
-            SpecialDates = new Dictionary<DateTimeOffset, string>();
-            SpecialDates.Add(DateTimeOffset.Now.AddMonths(-1).AddDays(1), "SingleEvent_1");
-            SpecialDates.Add(DateTimeOffset.Now.AddMonths(-1).AddDays(5), "DoubleEvent_1");
-            SpecialDates.Add(DateTimeOffset.Now.AddMonths(-1).AddDays(-2), "TripleEvent_2");
-            SpecialDates.Add(DateTimeOffset.Now.AddDays(1), "TripleEvent_1");
-            SpecialDates.Add(DateTimeOffset.Now.AddDays(5), "SingleEvent_2");
-            SpecialDates.Add(DateTimeOffset.Now.AddDays(7), "DoubleEvent_2");
-            SpecialDates.Add(DateTimeOffset.Now.AddDays(9), "SingleEvent_1");
-            SpecialDates.Add(DateTimeOffset.Now.AddDays(12), "TripleEvent_2");
-            SpecialDates.Add(DateTimeOffset.Now.AddDays(-4), "DoubleEvent_1");
-            SpecialDates.Add(DateTimeOffset.Now.AddMonths(1).AddDays(1), "DoubleEvent_3");
-            SpecialDates.Add(DateTimeOffset.Now.AddMonths(1).AddDays(3), "SingleEvent_2");
-            SpecialDates.Add(DateTimeOffset.Now.AddMonths(1).AddDays(-5), "DoubleEvent_2");
+        SpecialDates = new Dictionary<DateTimeOffset, string>();
+        SpecialDates.Add(DateTimeOffset.Now.AddMonths(-1).AddDays(1), "SingleEvent_1");
+        SpecialDates.Add(DateTimeOffset.Now.AddMonths(-1).AddDays(5), "DoubleEvent_1");
+        SpecialDates.Add(DateTimeOffset.Now.AddMonths(-1).AddDays(-2), "TripleEvent_2");
+        SpecialDates.Add(DateTimeOffset.Now.AddDays(1), "TripleEvent_1");
+        SpecialDates.Add(DateTimeOffset.Now.AddDays(5), "SingleEvent_2");
+        SpecialDates.Add(DateTimeOffset.Now.AddDays(7), "DoubleEvent_2");
+        SpecialDates.Add(DateTimeOffset.Now.AddDays(9), "SingleEvent_1");
+        SpecialDates.Add(DateTimeOffset.Now.AddDays(12), "TripleEvent_2");
+        SpecialDates.Add(DateTimeOffset.Now.AddDays(-4), "DoubleEvent_1");
+        SpecialDates.Add(DateTimeOffset.Now.AddMonths(1).AddDays(1), "DoubleEvent_3");
+        SpecialDates.Add(DateTimeOffset.Now.AddMonths(1).AddDays(3), "SingleEvent_2");
+        SpecialDates.Add(DateTimeOffset.Now.AddMonths(1).AddDays(-5), "DoubleEvent_2");
+    }
+    public object Convert(object value, Type targetType, object parameter, string language)
+    {
+        DateTimeOffset dateTimeOffset = SpecialDates.Keys.FirstOrDefault(x => x.Date == (DateTime)value);
+
+        if (dateTimeOffset != DateTimeOffset.MinValue)
+        {
+            string template = SpecialDates[dateTimeOffset];
+            StackPanel stackPanel;
+            switch (template)
+            {
+                case "SingleEvent_1":
+                    return new List<Brush>() { new SolidColorBrush(Colors.DeepPink) };
+                case "SingleEvent_2":
+                    return new List<Brush>() { new SolidColorBrush(Colors.Cyan) };
+                case "DoubleEvent_1":
+                    return new List<Brush>() { new SolidColorBrush(Colors.Violet), new SolidColorBrush(Colors.Orange) };
+                case "DoubleEvent_2":
+                    return new List<Brush>() { new SolidColorBrush(Colors.Gold), new SolidColorBrush(Colors.Green) };
+                case "DoubleEvent_3":
+                    return new List<Brush>() { new SolidColorBrush(Colors.Brown), new SolidColorBrush(Colors.Blue) };
+                case "TripleEvent_1":
+                    return new List<Brush>() { new SolidColorBrush(Colors.Green), new SolidColorBrush(Colors.DeepSkyBlue), new SolidColorBrush(Colors.Orange) };
+                case "TripleEvent_2":
+                    return new List<Brush>() { new SolidColorBrush(Colors.Red), new SolidColorBrush(Colors.Green), new SolidColorBrush(Colors.Gold) };
+            }
+        }
+        return null;
     }
 
-    private Dictionary<DateTimeOffset, string> SpecialDates { get; set; }
-
-    public DataTemplate DefaultTemplate { get; set; }
-    public DataTemplate SingleEventTemplate_1 { get; set; }
-    public DataTemplate SingleEventTemplate_2 { get; set; }
-    public DataTemplate DoubleEventTemplate_1 { get; set; }
-    public DataTemplate DoubleEventTemplate_2 { get; set; }
-    public DataTemplate DoubleEventTemplate_3 { get; set; }
-    public DataTemplate TripleEventTemplate_1 { get; set; }
-    public DataTemplate TripleEventTemplate_2 { get; set; }
-
-    protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
+    public object ConvertBack(object value, Type targetType, object parameter, string language)
     {
-        if (item != null)
-        {
-            DateTimeOffset calendarItem = (DateTimeOffset)item;
-            DateTimeOffset dateTimeOffset = SpecialDates.Keys.FirstOrDefault(x => x.Date == calendarItem.Date);
-
-            if (dateTimeOffset != DateTimeOffset.MinValue)
-            {
-                string template = this.SpecialDates[dateTimeOffset];
-
-                switch (template)
-                {
-                    case "SingleEvent_1":
-                        return SingleEventTemplate_1;
-                    case "SingleEvent_2":
-                        return SingleEventTemplate_2;
-                    case "DoubleEvent_1":
-                        return DoubleEventTemplate_1;
-                    case "DoubleEvent_2":
-                        return DoubleEventTemplate_2;
-                    case "DoubleEvent_3":
-                        return DoubleEventTemplate_3;
-                    case "TripleEvent_1":
-                        return TripleEventTemplate_1;
-                    case "TripleEvent_2":
-                        return TripleEventTemplate_2;
-                }
-            }
-
-            return DefaultTemplate;
-        }
-
-        return base.SelectTemplateCore(item, container);
+        return null;
     }
 }
 
 {% endhighlight %}
 {% endtabs %}
 
+2. Create a **DataTemplate** to customize the date cells of Celendar. Now add the `Calendar` control inside the `FlyoutBase.AttachedFlyout` property and `DropDownFlyout` control.
+
 {% tabs %}
 {% highlight XAML %}
 
 <Page.Resources>
-    <DataTemplate x:Key="defaultTemplate">
-    </DataTemplate>
-    <DataTemplate x:Key="singleEventTemplate_1">
-        <StackPanel Orientation="Horizontal">
-            <Ellipse MinWidth="4" MinHeight="4" Fill="DeepPink" Margin="2"/>
-        </StackPanel>
-    </DataTemplate>
-    <DataTemplate x:Key="singleEventTemplate_2">
-        <StackPanel Orientation="Horizontal">
-            <Ellipse MinWidth="4" MinHeight="4" Fill="Cyan" Margin="2"/>
-        </StackPanel>
-    </DataTemplate>
-    <DataTemplate x:Key="doubleEventTemplate_1">
-        <StackPanel Orientation="Horizontal">
-            <Ellipse MinWidth="4" MinHeight="4" Fill="Violet" Margin="2"/>
-            <Ellipse MinWidth="4" MinHeight="4" Fill="Orange" Margin="2"/>
-        </StackPanel>
-    </DataTemplate>
-    <DataTemplate x:Key="doubleEventTemplate_2">
-        <StackPanel Orientation="Horizontal">
-            <Ellipse MinWidth="4" MinHeight="4" Fill="Gold" Margin="2"/>
-            <Ellipse MinWidth="4" MinHeight="4" Fill="Green" Margin="2"/>
-        </StackPanel>
-    </DataTemplate>
-    <DataTemplate x:Key="doubleEventTemplate_3">
-        <StackPanel Orientation="Horizontal">
-            <Ellipse MinWidth="4" MinHeight="4" Fill="Brown" Margin="2"/>
-            <Ellipse MinWidth="4" MinHeight="4" Fill="Blue" Margin="2"/>
-        </StackPanel>
-    </DataTemplate>
-    <DataTemplate x:Key="tripleEventTemplate_1">
-        <StackPanel Orientation="Horizontal">
-            <Ellipse MinWidth="4" MinHeight="4" Fill="Green" Margin="2"/>
-            <Ellipse MinWidth="4" MinHeight="4" Fill="DeepSkyBlue" Margin="2"/>
-            <Ellipse MinWidth="4" MinHeight="4" Fill="Orange" Margin="2"/>
-        </StackPanel>
-    </DataTemplate>
-     <DataTemplate x:Key="tripleEventTemplate_2">
-        <StackPanel Orientation="Horizontal">
-            <Ellipse MinWidth="4" MinHeight="4" Fill="Red" Margin="2"/>
-            <Ellipse MinWidth="4" MinHeight="4" Fill="Green" Margin="2"/>
-            <Ellipse MinWidth="4" MinHeight="4" Fill="Gold" Margin="2"/>
-        </StackPanel>
+    <local:EventDataConverter x:Key="EventDataConverterKey" />
+    <DataTemplate x:Key="customTemplate">
+        <ItemsControl ItemsSource="{Binding Path=Date, Converter={StaticResource EventDataConverterKey}}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate >
+                    <Ellipse MinHeight="4" MinWidth="4" Margin="2" Fill="{Binding}"/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
     </DataTemplate>
 </Page.Resources>
 <Grid>
@@ -191,55 +153,47 @@ public class CustomCalendarItemTemplateSelector : DataTemplateSelector
                         VerticalAlignment="Center">
         <FlyoutBase.AttachedFlyout>
             <editor:DropDownFlyout>
-                    <calendar:SfCalendar SelectionMode="Range" 
+                <calendar:SfCalendar SelectionMode="Range"
                                          SelectedRange="{x:Bind calendarDateRangePicker.SelectedRange, Mode=TwoWay}" >
-                        <calendar:SfCalendar.Resources>
-                            <ResourceDictionary>
-                                <!--  Resources and color keys for Calendar Control  -->
-                                <SolidColorBrush x:Key="SyncfusionCalendarItemOutOfScopeForeground"
+                    <calendar:SfCalendar.Resources>
+                        <ResourceDictionary>
+                            <!--  Resources and color keys for Calendar Control  -->
+                            <SolidColorBrush x:Key="SyncfusionCalendarItemOutOfScopeForeground"
                                                  Color="SlateGray" Opacity="0.5" />
-                                <SolidColorBrush x:Key="SyncfusionCalendarWeekItemForeground"
+                            <SolidColorBrush x:Key="SyncfusionCalendarWeekItemForeground"
                                                  Color="{ThemeResource SystemBaseMediumLowColor}" />
-                                <x:Double x:Key="SyncfusionSubtitleAltFontSize">16</x:Double>
-                                <Thickness x:Key="SyncfusionCalendarItemMargin">1</Thickness>
-                                <x:Double x:Key="SyncfusionBodyFontSize">13</x:Double>
+                            <x:Double x:Key="SyncfusionSubtitleAltFontSize">16</x:Double>
+                            <Thickness x:Key="SyncfusionCalendarItemMargin">1</Thickness>
+                            <x:Double x:Key="SyncfusionBodyFontSize">13</x:Double>
 
-                                <local:CustomCalendarItemTemplateSelector x:Key="selector"
-                                    SingleEventTemplate_1="{StaticResource singleEventTemplate_1}"
-                                    SingleEventTemplate_2="{StaticResource singleEventTemplate_2}"
-                                    DoubleEventTemplate_1="{StaticResource doubleEventTemplate_1}"
-                                    DoubleEventTemplate_2="{StaticResource doubleEventTemplate_2}"                                                                     
-                                    DoubleEventTemplate_3="{StaticResource doubleEventTemplate_3}"
-                                    TripleEventTemplate_1="{StaticResource tripleEventTemplate_1}"
-                                    TripleEventTemplate_2="{StaticResource tripleEventTemplate_2}"
-                                    DefaultTemplate="{StaticResource defaultTemplate}"/>
-                                <Style TargetType="calendar:CalendarItem">
-                                    <Setter Property="CornerRadius" Value="14"/>
-                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-                                    <Setter Property="VerticalContentAlignment" Value="Stretch"/>
-                                    <Setter Property="ContentTemplate">
-                                        <Setter.Value>
-                                            <DataTemplate>
-                                                <Grid MinWidth="40" MinHeight="40">
-                                                    <ContentControl
+                            <Style TargetType="calendar:CalendarItem">
+                                <Setter Property="CornerRadius" Value="14"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+                                <Setter Property="ContentTemplate">
+                                    <Setter.Value>
+                                        <DataTemplate>
+                                            <Grid MinWidth="40" MinHeight="40">
+                                                <ContentControl
                                                         HorizontalAlignment="Center"
                                                         VerticalAlignment="Center"
                                                         Margin="2"
                                                         Content="{Binding DisplayText}"/>
-                                                    <ContentControl
+                                                <ContentControl
                                                         Margin="3"
                                                         HorizontalAlignment="Center"
                                                         VerticalAlignment="Bottom"
                                                         Content="{Binding Date}"
-                                                        ContentTemplateSelector="{StaticResource selector}"/>
-                                                </Grid>
-                                            </DataTemplate>
-                                        </Setter.Value>
-                                    </Setter>
-                                </Style>
-                            </ResourceDictionary>
-                        </calendar:SfCalendar.Resources>
-                    </calendar:SfCalendar>
+                                                        ContentTemplate="{StaticResource customTemplate}"
+                                                       />
+                                            </Grid>
+                                        </DataTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ResourceDictionary>
+                    </calendar:SfCalendar.Resources>
+                </calendar:SfCalendar>
             </editor:DropDownFlyout>
         </FlyoutBase.AttachedFlyout>
     </calendar:SfCalendarDateRangePicker>
@@ -272,37 +226,36 @@ You can customize the colors of day names and headers of month, year, decade and
 <td>Key to change the color of calendar today date foreground color.</td>
 </tr>
 <tr>
-<td>SyncfusionCalendarItemBackground<br/><br/></td>
+<td>SyncfusionCalendarItemBackground</td>
 <td>Key to change the color of calendar date cells background color except today date cell.</td>
 </tr>
 <tr>
-<td>SyncfusionCalendarItemBorderBrush<br/><br/></td>
-<td>Key to change the color of calendar date cells border brush.<br/><br/></td>
+<td>SyncfusionCalendarItemBorderBrush</td>
+<td>Key to change the color of calendar date cells border brush.</td>
 </tr>
 <tr>
-<td>SyncfusionCalendarTodayItemBackground<br/><br/></td>
-<td>Key to change the color of calendar today date cell background color.<br/><br/></td>
+<td>SyncfusionCalendarTodayItemBackground</td>
+<td>Key to change the color of calendar today date cell background color</td>
 </tr>
 <tr>
-<td>SyncfusionCalendarTodayItemBorderBrush<br/><br/></td>
-<td>Key to change the color of calendar today date cell border brush.<br/><br/></td>
+<td>SyncfusionCalendarTodayItemBorderBrush</td>
+<td>Key to change the color of calendar today date cell border brush.</td>
 </tr>
 <tr>
-<td>SyncfusionCalendarItemOutOfScopeForeground<br/><br/></td>
-<td>Key to change the color of calendar date cells foreground color which are out of scope.<br/><br/></td>
+<td>SyncfusionCalendarItemOutOfScopeForeground</td>
+<td>Key to change the color of calendar date cells foreground color which are out of scope.</td>
 </tr>
 <tr>
-<td>SyncfusionCalendarItemMargin<br/><br/></td>
-<td>Key to change the margin of calendar item.<br/><br/></td>
+<td>SyncfusionCalendarItemMargin</td>
+<td>Key to change the margin of calendar item.</td>
 </tr>
 <tr>
-<td>SyncfusionSubtitleAltFontSize<br/><br/></td>
-<td>Key to change the font size of calendar header region.<br/><br/></td>
+<td>SyncfusionSubtitleAltFontSize</td>
+<td>Key to change the font size of calendar header region.</td>
 </tr>
 <tr>
-<td>SyncfusionBodyFontSize<br/><br/></td>
-<td>Key to change the font size of calendar items region.<br/><br/></td>
-</tr>
+<td>SyncfusionBodyFontSize</td>
+<td>Key to change the font size of calendar items region.</td>
 </tr>
 <table/>
 
