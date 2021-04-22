@@ -50,7 +50,7 @@ Description
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img2.png"/>
+<img src="Rows_images/Rows_img2.png" alt="RowHeader in WinUI DataGrid Image2"/>
 </td>
 <td>
 Denotes the row which has current cell or selected item.
@@ -58,7 +58,7 @@ Denotes the row which has current cell or selected item.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img3.png"/>
+<img src="Rows_images/Rows_img3.png" alt="RowHeader in WinUI DataGrid Image3"/>
 </td>
 <td>
 Denotes row is being edited. 
@@ -66,7 +66,7 @@ Denotes row is being edited.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img4.png"/>
+<img src="Rows_images/Rows_img4.png" alt="RowHeader in WinUI DataGrid Image4"/>
 </td>
 <td>
 Denotes row is AddNewRow.
@@ -74,7 +74,7 @@ Denotes row is AddNewRow.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img5.png"/>
+<img src="Rows_images/Rows_img5.png" alt="RowHeader in WinUI DataGrid Image5"/>
 </td>
 <td>
 Denotes the row has errors or current row which has errors. 
