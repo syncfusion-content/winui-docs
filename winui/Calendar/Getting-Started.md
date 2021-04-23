@@ -16,6 +16,7 @@ This section explains the steps required to add the [WinUI Calendar](https://www
 ![Structure of WinUI Calendar control](Getting-Started_images/Structure.png)
 
 ## Creating an application with WinUI Calendar
+
 In this walkthrough, you will create a WinUI application that contains the `Calendar` control.
 
 ## Adding control manually in XAML

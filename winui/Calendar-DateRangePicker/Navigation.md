@@ -11,13 +11,13 @@ documentation: ug
 
 ## Navigate between views
 
-You can easily navigate to the month, year, decade, or century views to select different date ranges in the dropdown calendar by repeatedly clicking the header button. Initially, month view is loaded in dropdown calendar.
+You can easily navigate to the month, year, decade, or century views to select different date ranges in the dropdown calendar by clicking the header button. Initially, month view is loaded in the dropdown calendar.
 
 ![Navigation between views in WinUI Calendar DateRangePicker](Navigate-Between-Views_images/View-navigation.gif)
 
 ## Restrict navigation between views
 
-You can restrict navigation within a minimum and maximum views by using [`MinDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MinDisplayMode) and [`MaxDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MaxDisplayMode) properties. This will be useful when your date range is smaller and you don’t want to show century, decade and year view.
+You can restrict navigation within a minimum and maximum views by using [`MinDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MinDisplayMode) and [`MaxDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MaxDisplayMode) properties. This will be useful when your date range is smaller and you don’t want to show decade and century views.
 
 By default, the value of `MinDisplayMode` property is **Month** and `MaxDisplayMode` property is **Century**.
 
@@ -39,6 +39,8 @@ sfCalendarDateRangePicker.MaxDisplayMode = CalendarDisplayMode.Year;
 {% endhighlight %}
 {% endtabs %}
 
+N> When `MinDisplayMode` property value is **Year** and `MinDate` value is **15/01/2021**, selecting the month of minimum date will set the starting date value from the minimum date i.e.. from *January 15, 2021*.
+
 ![Navigation between month and century view in WinUI Calendar DateRangePicker](Getting-Started_images/Restrict_View_Navigation.gif)
 
 ## Selection based on view restriction
@@ -50,8 +52,8 @@ You can restrict users to select date range within specific views (example : cho
 
 <calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker"
                                     FormatString="{}{0:MM/yyyy} - {1:MM/yyyy}"
-                                    MinDisplayMode="Month"
-                                    MaxDisplayMode="Year"
+                                    MinDisplayMode="Year"
+                                    MaxDisplayMode="Decade"
                                />
 
 {% endhighlight %}
