@@ -9,7 +9,7 @@ documentation: ug
 
 # WinUI Calendar DateRangePicker Overview
 
-The [WinUI Calendar DateRangePicker](https://www.syncfusion.com/winui-controls/calendar-daterangepicker) control provides an intuitive, touch-friendly interface to quickly select a date from a drop-down calendar. It supports different date formats. Date selection can be restricted by specifying minimum and maximum dates. Specific dates can also disabled from selection. In addition, it supports editing with validation and built-in watermark text display.
+The [WinUI Calendar DateRangePicker](https://www.syncfusion.com/winui-controls/calendar-daterangepicker) control provides an intuitive, touch-friendly interface to quickly select a date range from a dropdown calendar. It supports different date formats. Date selection can be restricted by specifying minimum and maximum dates. Specific dates can also disabled from selection. In addition, it supports built-in watermark text display.
 
 ### Normal view:
 
@@ -21,9 +21,9 @@ The [WinUI Calendar DateRangePicker](https://www.syncfusion.com/winui-controls/c
 
 ## Key Features
 
-* `CalendarDateRangePicker` supports different Culture and Language types.
-* The drop-down portion used for selecting the date range and it can be customized.
-* The Control displays the selected date range value in a various formats.
-* Options to change the direction of month while navigation.
-* Drop-down display area in `CalendarDateRangePicker` control is limited using abbreviated days and months.
+* `CalendarDateRangePicker` supports different culture and language types.
+* The dropdown region used for selecting the date range can be customized.
+* Displays the selected date range value in a various formats.
+* Dropdown display area in `CalendarDateRangePicker` control is limited using abbreviated days and months.
 * Supports blocking a certain dates from selection and user interaction.
+* Supports showing preset items containing predefined date range values in dropdown.
