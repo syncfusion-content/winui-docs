@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Show preset items in WinUI CalendarDateRangePicker control|Syncfusion
-description: This page explain how to show preset items in dropdown calendar of the WinUI CalendarDateRangePicker (SfCalendarDateRangePicker) control.
+description: This page explain how to show preset items in dropdown calendar of the WinUI Calendar DateRange Picker (SfCalendarDateRangePicker) control.
 platform: winui
 control:  SfCalendarDateRangePicker
 documentation: ug
 ---
 
-# Showing preset items in dropdown calendar of Calendar DateRangePicker
+# Showing preset items in dropdown calendar of Calendar DateRange Picker
 
-You can show collection of preset items in dropdown of `Calendar DateRangePicker` control using [`Preset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_Preset) and [`PresetTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_PresetTemplate) properties. Bind the collection of preset items to be displayed in `Preset` property and set the required template in `PresetTemplate` property.
+You can show collection of preset items in dropdown of `Calendar DateRange Picker` control using [`Preset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_Preset) and [`PresetTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_PresetTemplate) properties. Bind the collection of preset items to be displayed in `Preset` property and set the required template in `PresetTemplate` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -104,9 +104,9 @@ private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar DateRangePicker dropdown with preset collection](Preset-Items_images/week-selection.png)
+![Calendar DateRange Picker dropdown with preset collection](Preset-Items_images/week-selection.png)
 
-You can hide calendar in the dropdown when user selects any preset items in dropdown other than **CustomRange** using `ShowCalendar` property. When user wants to selects a custom range of dates, upon selection of **CustomRange** preset item, calendar is added in dropdown of `Calendar DateRangePicker` control. By default, the value of `ShowCalendar` property is `true`.
+You can hide calendar in the dropdown when user selects any preset items in dropdown other than **CustomRange** using `ShowCalendar` property. When user wants to selects a custom range of dates, upon selection of **CustomRange** preset item, calendar is added in dropdown of `Calendar DateRange Picker` control. By default, the value of `ShowCalendar` property is `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -153,5 +153,5 @@ privateprivate void ListBox_SelectionChanged(object sender, SelectionChangedEven
 {% endhighlight %}
 {% endtabs %}
 
-![Custom range selection in WinUI Calendar DateRangePicker](Preset-Items_images/preset-items-collection.gif)
+![Custom range selection in WinUI Calendar DateRange Picker](Preset-Items_images/preset-items-collection.gif)
 

@@ -1,19 +1,19 @@
 ---
 layout: post
-title: View navigation in WinUI Calendar DateRangePicker control|Syncfusion
-description: This section describes how to navigate between views the Calendar DateRangePicker (SfCalendarDateRangePicker) control.
+title: View navigation in WinUI CalendarDateRangePicker control|Syncfusion
+description: This section describes how to navigate between views the Calendar DateRange Picker (SfCalendarDateRangePicker) control.
 platform: WinUI
 control: SfCalendarDateRangePicker
 documentation: ug
 ---
 
-# View navigation in dropdown calendar of Calendar DateRangePicker
+# View navigation in dropdown calendar of Calendar DateRange Picker
 
 ## Navigate between views
 
 You can easily navigate to the month, year, decade, or century views to select different date ranges in the dropdown calendar by clicking the header button. Initially, month view is loaded in the dropdown calendar.
 
-![Navigation between views in WinUI Calendar DateRangePicker](Navigate-Between-Views_images/View-navigation.gif)
+![Navigation between views in WinUI Calendar DateRange Picker](Navigate-Between-Views_images/View-navigation.gif)
 
 ## Restrict navigation between views
 
@@ -41,11 +41,11 @@ sfCalendarDateRangePicker.MaxDisplayMode = CalendarDisplayMode.Year;
 
 N> When `MinDisplayMode` property value is **Year** and `MinDate` value is **15/01/2021**, selecting the month of minimum date will set the starting date value from the minimum date i.e.. from *January 15, 2021*.
 
-![Navigation between month and century view in WinUI Calendar DateRangePicker](Getting-Started_images/Restrict_View_Navigation.gif)
+![Navigation between month and century view in WinUI Calendar DateRange Picker](Getting-Started_images/Restrict_View_Navigation.gif)
 
 ## Selection based on view restriction
 
-You can restrict users to select date range within specific views (example : choosing manufactured and expiry date of product) in `Calendar DateRangePicker` control using the `MinDisplayMode` and `MaxDisplayMode` properties.
+You can restrict users to select date range within specific views (example : choosing manufactured and expiry date of product) in `Calendar DateRange Picker` control using the `MinDisplayMode` and `MaxDisplayMode` properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -67,4 +67,4 @@ sfCalendarDateRangePicker.FormatString = "{0:MM/yyyy}-{1:MM/yyyy}";
 {% endhighlight %}
 {% endtabs %}
 
-![Selection within restriction in WinUI Calendar DateRangePicker](Navigate-Between-Views_images/product-manufacture-expiry-date.gif)
+![Selection within restriction in WinUI Calendar DateRange Picker](Navigate-Between-Views_images/product-manufacture-expiry-date.gif)
