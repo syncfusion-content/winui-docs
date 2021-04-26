@@ -415,7 +415,7 @@ SfDataGrid enables you to customize the watermark text of AddNewRow by changing 
 
 To customize the AddNewRowText, add the default [Syncfusion.Grid.WinUI.resw](https://github.com/syncfusion/winui-controls-localization-resource-files) file in **Resources** folder and then customize the value of AddNewRowText. Refer [here](https://help.syncfusion.com/winui/localization) to learn more about localization. 
 
-![WinUI DataGrid – Add New Text Customization using Resource File](CRUD-Operations_images/winui-datagrid-add-new-text-customization-using-resx.png)
+![Add New Text Customization using Resx File in WinUI DataGrid](CRUD-Operations_images/winui-datagrid-add-new-text-customization-using-resx.png)
 
 ![Localized Add New Row Text in WinUI DataGrid](CRUD-Operations_images/winui-datagrid-localized-add-new-row-text.png)
 
