@@ -240,7 +240,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![Shown button command binding to viewmodel in WinUI DataGrid](MVVM_images/Shown-button-command-binding-to-viewmodel-in-WinUI-DataGrid.png)
+![Binding Button Command to ViewModel in WinUI DataGrid](MVVM_images/winui-datagrid-binding-button-command.png)
 
 ## Binding ComboBoxColumn ItemsSource from view model
 
@@ -323,7 +323,7 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![Shown binding comboboxcolumn ItemsSource from ViewModel in WinUI DataGrid](MVVM_images/Shown-binding-comboboxcolumn-ItemsSource-from-ViewModel-in-WinUI-DataGrid.png)
+![Binding ComboBoxColumn ItemsSource from ViewModel in WinUI DataGrid](MVVM_images/winui-datagrid-binding-comboboxcolumn-itemssource.png)
 
 ## Binding ItemsSource from view model to ComboBox inside data template
 
@@ -416,7 +416,7 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![Shown combobox inside data template binding MVVM in WinUI DataGrid](MVVM_images/Shown-combobox-inside-data-template-binding-MVVM-in-WinUI-DataGrid.png)
+![WinUI DataGrid displays ComboBox with MVVM Data Template Binding](MVVM_images/winui-datagrid-combobox-with-mvvm-data-template-binding.png)
 
 ## Binding DataGrid columns from view model
 
