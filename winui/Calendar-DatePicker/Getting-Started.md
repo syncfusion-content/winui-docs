@@ -105,7 +105,7 @@ SfCalendarDatePicker sfCalendarDatePicker= new SfCalendarDatePicker();
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar Date Picker displaying selected value](Getting-Started_images/Calendar Date Picker.gif)
+![Calendar Date Picker displaying selected value](Getting-Started_images/CalendarDatePicker.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Getting_started)
 

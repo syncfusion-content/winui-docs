@@ -233,7 +233,7 @@ sfCalendarDateRangePicker.ShowSubmitButtons = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar DateRange Picker shows the submit button](Dropdown-Calendar_images/Calendar DateRange Picker-Show_SpinButton.png)
+![Calendar DateRange Picker shows the submit button](Dropdown-Calendar_images/CalendarDateRangePicker-Show_SpinButton.png)
 
 
 ## Restrict date range selection
