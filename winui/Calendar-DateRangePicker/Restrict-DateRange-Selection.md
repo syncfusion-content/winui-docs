@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Restrict selection in WinUI CalendarDateRangePicker control|Syncfusion
-description: This section describes about how to restrict the date range selection in WinUI Calendar DateRangePicker control.
+description: This section describes about how to restrict the date range selection in WinUI Calendar DateRange Picker control.
 platform: WinUI
 control: SfCalendarDateRangePicker
 documentation: ug
 ---
 
-# Restrict or limit date range selection in Calendar DateRangePicker
+# Restrict or limit date range selection in Calendar DateRange Picker
 
 ## Limit available dates
 
@@ -30,7 +30,7 @@ sfCalendarDateRangePicker.MaxDate = new DateTimeOffset(new DateTime(2021, 03, 24
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar DateRangePicker restrict the date selection with particular range](Getting-Started_images/MinMaxdate.png)
+![Calendar DateRange Picker restrict the date selection with particular range](Getting-Started_images/MinMaxdate.png)
 
 N> When `MinDisplayMode` property value is **Year** and `MinDate` value is **15/01/2021**, selecting the month of minimum date will set the starting date value from the minimum date i.e.. from *January 15, 2021*.
 
@@ -90,7 +90,7 @@ sfCalendarDateRangePicker.BlackoutDates = (sfCalendarDateRangePicker.DataContext
 {% endhighlight  %}
 {% endtabs %}
 
-![Calendar DateRangePicker blocks the particular dates in dropdown calendar](Getting-Started_images/BlackoutDates.png)
+![Calendar DateRange Picker blocks the particular dates in dropdown calendar](Getting-Started_images/BlackoutDates.png)
 
 ## Disable dates dynamically (All weekend days)
 
@@ -132,9 +132,9 @@ private void SfCalendarDateRangePicker_ItemPrepared(object sender, ItemPreparedE
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar DateRangePicker restrict the weekend dates from selection](Getting-Started_images/blockweekend.png)
+![Calendar DateRange Picker restrict the weekend dates from selection](Getting-Started_images/blockweekend.png)
 
-You can also change the text to be displayed for specific days or dates in `Calendar DateRangePicker` using [ItemInfo.DisplayText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_DisplayText) property. 
+You can also change the text to be displayed for specific days or dates in `Calendar DateRange Picker` using [ItemInfo.DisplayText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_DisplayText) property. 
 
 {% tabs %}
 {% highlight C# %}
@@ -158,7 +158,7 @@ N> Blackout dates will not be added in `SelectedRange` property even though it i
 
 ## Limit duration of selected range
 
-You can limit the duration of selected range in `Calendar DateRangePicker` value by using [`MinDatesCountInRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MinDatesCountInRange) and [`MaxDatesCountInRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MaxDatesCountInRange) properties. By default, the value of `MinDatesCountInRange` value is **0** and `MaxDatesCountInRange` value is **null**.
+You can limit the duration of selected range in `Calendar DateRange Picker` value by using [`MinDatesCountInRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MinDatesCountInRange) and [`MaxDatesCountInRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MaxDatesCountInRange) properties. By default, the value of `MinDatesCountInRange` value is **0** and `MaxDatesCountInRange` value is **null**.
 
 {% tabs %}
 {% highlight C# %}
@@ -170,7 +170,7 @@ sfCalendarDateRangePicker.MinDatesCountInRange = 5;
 {% endhighlight  %}
 {% endtabs %}
 
-![Calendar DateRangePicker with end range value restriction](Getting-Started_images/Selection-By-DayCount.png)
+![Calendar DateRange Picker with end range value restriction](Getting-Started_images/Selection-By-DayCount.png)
 
 When `MinDisplayMode` value is **Year** then `MinDaysCountInRange` value should be at most **28** to select a date range in year view. The `MinDaysCountInRange` value should be updated based on `MinDisplayMode` property value for range selection in respective views. 
 
