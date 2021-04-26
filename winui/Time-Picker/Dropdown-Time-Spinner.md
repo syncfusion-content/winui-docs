@@ -9,13 +9,13 @@ documentation: ug
 
 # Dropdown Time Spinner in WinUI Time Picker
 
-This section describes how to select a time from drop down time spinner and its customization options in [SfTimePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) control.
+This section describes how to select a time from drop down time spinner and its customization options in [Time Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) control.
 
 ## Change dropdown alignment
 
-You can change the alignment of the dropdown time spinner as full, center, left, right, top or bottom edge of the `TimePicker` by using the [DropDownPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
+You can change the alignment of the dropdown time spinner as full, center, left, right, top or bottom edge of the `Time Picker` by using the [DropDownPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
 
-N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then `DatePicker` smartly shifts the spinner alignment.
+N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then `Time Picker` smartly shifts the spinner alignment.
 
 {% tabs %}
 {% highlight XAML %}
@@ -38,7 +38,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Hide the dropdown button
 
-You can hide the dropdown button in `TimePicker` by setting the [ShowDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as `false`. The default value of `ShowDropDownButton` property is `true`.
+You can hide the dropdown button in `Time Picker` by setting the [ShowDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as `false`. The default value of `ShowDropDownButton` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -55,7 +55,7 @@ sfTimePicker.ShowDropDownButton = false;
 {% endhighlight %}
 {% endtabs %}
 
-![TimePicker hides the dropdown button](Dropdown-Time-Spinner_images/ShowDropDownButton.png)
+![Time Picker hides the dropdown button](Dropdown-Time-Spinner_images/ShowDropDownButton.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -174,7 +174,7 @@ public class TimeItemTemplateSelector : DataTemplateSelector
     </Page.Resources>
 
     <editors:SfTimePicker ItemTemplateSelector="{StaticResource selector}"
-                      x:Name="sfTimePicker"/>
+                          x:Name="sfTimePicker"/>
 
 {% endhighlight %}
 {% endtabs %}
@@ -292,7 +292,7 @@ sfTimePicker.ShowDropDownHeader = true;
 {% endhighlight %}
 {% endtabs %}
 
-![TimePicker displays the drop down time spinner header](Dropdown-Time-Spinner_images/DropDownHeader.png)
+![Time Picker displays the drop down time spinner header](Dropdown-Time-Spinner_images/DropDownHeader.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -331,7 +331,7 @@ You can customize the header of dropdown time spinner by using the [DropDownHead
 {% endhighlight %}
 {% endtabs %}
 
-![TimePicker with customized drop down time spinner header](Dropdown-Time-Spinner_images/DropDownHeaderTemplate.png)
+![Time Picker with customized drop down time spinner header](Dropdown-Time-Spinner_images/DropDownHeaderTemplate.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/CustomUI)
 
@@ -354,7 +354,7 @@ sfTimePicker.ShowColumnHeaders = false;
 {% endhighlight %}
 {% endtabs %}
 
-![TimePicker hides the drop down time spinner column headers](Dropdown-Time-Spinner_images/ShowColumnHeaders.png)
+![Time Picker hides the drop down time spinner column headers](Dropdown-Time-Spinner_images/ShowColumnHeaders.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -377,7 +377,7 @@ sfTimePicker.ShowSubmitButtons = false;
 {% endhighlight %}
 {% endtabs %}
 
-![TimePicker hides the dropdown time spinner submit and cancel buttons](Getting-Started_images/ShowSubmitButtons.gif)
+![Time Picker hides the dropdown time spinner submit and cancel buttons](Getting-Started_images/ShowSubmitButtons.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -456,13 +456,13 @@ sfTimePicker.DropDownHeight = 500;
 {% endhighlight %}
 {% endtabs %}
 
-![TimePicker with customized dropdown height](Dropdown-Time-Spinner_images/DropDownHeight.png)
+![Time Picker with customized dropdown height](Dropdown-Time-Spinner_images/DropDownHeight.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
 ## Change flow direction
 
-You can change the flow direction of the `TimePicker` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
+You can change the flow direction of the `Time Picker` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -479,13 +479,13 @@ sfTimePicker.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![TimePicker flow direction changed to right to left](Dropdown-Time-Spinner_images/FlowDirection.png)
+![Time Picker flow direction changed to right to left](Dropdown-Time-Spinner_images/FlowDirection.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
 ## DropDown value types
 
-The `TimePicker` control supports 12 hours and 24 hours formats. You can change the time format by using `ClockIdentifier` property. The default value of `ClockIdentifier` property is `12HourClock`.
+The `Time Picker` control supports 12 hours and 24 hours formats. You can change the time format by using `ClockIdentifier` property. The default value of `ClockIdentifier` property is `12HourClock`.
 
 You can select the required `ClockIdentifier` value from below formats.
 
@@ -495,7 +495,7 @@ You can select the required `ClockIdentifier` value from below formats.
 {% tabs %}
 {% highlight xaml %}
 
-<calendar:SfTimePicker ClockIdentifier="24HourClock"
+<editors:SfTimePicker ClockIdentifier="24HourClock"
                                x:Name="sfTimePicker"/>
 
 {% endhighlight %}
@@ -507,5 +507,5 @@ sfTimePicker.CalendarIdentifier = "24HourClock";
 {% endhighlight %}
 {% endtabs %}
 
-![DatePicker calendar type changed to Hebrew](Dropdown-Time-Spinner_images/ClockIdentifier.png)
+![Time Picker calendar type changed to Hebrew](Dropdown-Time-Spinner_images/ClockIdentifier.png)
 
