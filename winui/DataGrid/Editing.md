@@ -39,7 +39,7 @@ sfDataGrid.Columns["ID"].AllowEditing = true;
 
 N> [GridColumn.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_AllowEditing) takes higher priority than [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowEditing).
 
-![WinUI DataGrid Cell Editing](Editing_images/Editing_image1.png)
+![WinUI DataGrid Cell Editing](Editing_images/winui-datagrid-cell-editing.png)
 
 N> It is mandatory to set the [NavigationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_NavigationMode) to Cell to enable [CurrentCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCurrentCellManager.html#Syncfusion_UI_Xaml_DataGrid_GridCurrentCellManager_CurrentCell) navigation and editing.
 
@@ -85,7 +85,7 @@ sfDataGrid.EditorSelectionBehavior = EditorSelectionBehavior.MoveLast;
 {% endtabs %}
 
 
-![WinUI DataGrid Cell Editing with EditorSelectionBehavior.SelectAll](Editing_images/Editing_image2.png)
+![Cursor placement while editing in WinUI DataGrid](Editing_images/winui-datagrid-editing-cursor-placement.png)
 
 ## Retain editing on lost focus
 

@@ -89,7 +89,7 @@ this.sfDataGrid.DataValidationMode = GridValidationMode.InView;
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WinUI SfDataGrid using INotifyDataErrorInfo](Data-Validation-images/Data-Validation-image1.png)
+![Data Validation in WinUI DataGrid using INotifyDataErrorInfo](Data-Validation-images/winui-datagrid-data-validation.png)
 
 ## Built-in validation using Data Annotation
 
@@ -143,7 +143,7 @@ public double Salary
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WinUI DataGrid using INotifyDataErrorInfo](Data-Validation-images/Data-Validation-image2.png)
+![Data Validation in WinUI DataGrid using Data Annotations](Data-Validation-images/winui-datagrid-data-validation-using-data-annotation.png)
 
 The string type property can be validated using [Required](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.requiredattribute.aspx), [String Length attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.stringlengthattribute.aspx)
 
@@ -440,7 +440,7 @@ You can change the validation error template shape of the GridCell by changing
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WinUI SfDataGrid Customizing error icon](Data-Validation-images/Data-Validation-image3.png)
+![WinUI DataGrid displays Data Validation Errors with Error Icon](Data-Validation-images/winui-datagrid-data-validation-errors-with-error-icon.png)
 
 ### Change the color of error icon
 
@@ -581,7 +581,7 @@ You can change the validation error template color of the `GridCell` by changi
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WinUI SfDataGrid Changing color of error icon](Data-Validation-images/Data-Validation-image4.png)
+![Data Validation Error Icon with Custom Color in WinUI DataGrid](Data-Validation-images/winui-datagrid-data-validation-error-icon-color.png)
 
 ## Data validation error tip (help tip) customization
 
@@ -675,7 +675,7 @@ You can change the error tip background color by setting `Background` property o
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WinUI SfDataGrid Change the background and foreground color of error tip](Data-Validation-images/Data-Validation-image5.png)
+![WinUI DataGrid - Error Tip Foreground and Background Customization](Data-Validation-images/winui-datagrid-error-tip-customization.png)
 
 ## Showing error details in RowHeader
 
@@ -701,7 +701,7 @@ public bool HasErrors
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WinUI SfDataGrid Showing error information using INotifyDataErrorInfo](Data-Validation-images/Data-Validation-image6.png)
+![WinUI DataGrid displays Error Information of Data Validation using INotifyDataErrorInfo](Data-Validation-images/winui-datagrid-error-information-of-data-validation.png)
 
 ## Data validation with Master-details view
 
@@ -746,7 +746,7 @@ private void SfDataGrid_AutoGeneratingRelations(object sender, AutoGeneratingRel
 {% endhighlight %}
 {% endtabs %}
 
-![Built in Data validation in WinUI SfDataGrid](Data-Validation-images/Data-Validation-image7.png)
+![Data Validation with Master-DetailsView in WinUI SfDataGrid](Data-Validation-images/winui-datagrid-data-validation-with-master-detailsview.png)
 
 ### Custom validation through events
 
