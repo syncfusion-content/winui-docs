@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Show preset items in WinUI Calendar DateRange Picker control|Syncfusion
-description: This page explain how to show preset items in dropdown calendar of the WinUI Calendar DateRange Picker (SfCalendarDateRangePicker) control.
+description: This page explain how to show preset items in dropdown calendar of the WinUI CalendarDateRangePicker (SfCalendarDateRangePicker) control.
 platform: winui
 control:  SfCalendarDateRangePicker
 documentation: ug
