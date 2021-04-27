@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Timeline Views in WinUI Scheduler control | Syncfusion
-description: Learn here all about Timeline Views support in Syncfusion WinUI Scheduler(SfScheduler) control and more.
+description: Learn here all about to customize the Timeline day, week, workweek, month views settings in Syncfusion WinUI Scheduler (SfScheduler) control and more.
 platform: winui
-control: Scheduler
+control: SfScheduler
 documentation: ug
 ---
 
-# Timeline Views in WinUI Scheduler
+# Timeline Views in WinUI Scheduler (SfScheduler)
 
 The TimelineView displays the dates in the horizontal time axis with the desired day’s count. Scheduler supports displaying the `TimelineDay,` `TimelineWeek,` `TimelineWorkWeek,` and `TimelineMonth` views. You can see the past or future dates by scrolling to the right or left. Each view displays the events accurately across the time slots with an intuitive drag-and-drop feature. It provides the support to highlight the selected region of time slots and handle the interaction.
 
