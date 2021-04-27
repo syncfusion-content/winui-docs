@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Scheduler
 
-This section provides you an overview of working with WinUI Scheduler and also provides a walk-through to configure the WinUI Scheduler control in a real-time scenario.
+This section provides you an overview of working with [WinUI Scheduler](https://www.syncfusion.com/winui-controls/Scheduler) and also provides a walk-through to configure the WinUI Scheduler control in a real-time scenario.
 
 ## Creating an application with WinUI Scheduler
 
