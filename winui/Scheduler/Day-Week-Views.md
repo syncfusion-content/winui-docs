@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Day and Week Views in WinUI Scheduler control | Syncfusion
-description: Learn here all about Day and Week Views support in Syncfusion WinUI Scheduler(SfScheduler) control and more.
+title: Day, Week and Work Week views in WinUI Scheduler control | Syncfusion
+description:  Learn here all about to customize the Day, Week, Work Week views settings and its appearance in Syncfusion WinUI Scheduler (SfScheduler) control and more.
 platform: winui
-control: Scheduler
+control: SfScheduler
 documentation: ug
 ---
 
-# Day and Week Views in WinUI Scheduler
+# Day and Week Views in WinUI Scheduler (SfScheduler)
 
 The [WinUI Scheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) supports to display the day, week, workweek views, and the current day will be visible by default. The appointments on a specific day will be arranged in the respective timeslots based on their duration.
 

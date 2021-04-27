@@ -3,11 +3,11 @@ layout: post
 title: Getting Started with WinUI Scheduler control | Syncfusion
 description: Learn here all about getting started with Syncfusion WinUI Scheduler(SfScheduler) control, its elements, and more.
 platform: winui
-control: Scheduler
+control: SfScheduler
 documentation: ug
 ---
 
-# Getting Started with WinUI Scheduler
+# Getting Started with WinUI Scheduler (SfScheduler)
 
 This section provides you an overview of working with [WinUI Scheduler](https://www.syncfusion.com/winui-controls/Scheduler) and also provides a walk-through to configure the WinUI Scheduler control in a real-time scenario.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: About WinUI Scheduler control | Syncfusion
-description: Learn here all about introduction of Syncfusion WinUI Scheduler(SfScheduler) control with key features and more.
+description: Learn here all about introduction of Syncfusion WinUI Scheduler(SfScheduler) control , its features, and more.
 platform: winui
 control: Scheduler
 documentation: ug
 ---
 
-# WinUI Scheduler Overview
+# WinUI Scheduler (SfScheduler) Overview
 
 The Syncfusion [WinUI Scheduler](https://www.syncfusion.com/winui-controls/scheduler) displays appointments in different views and allows users to create and manage appointments. Its rich feature set includes functionalities like viewing daily/all day/spanned appointments, complete customization using the custom Templates, efficient performance, and Data binding to different sources.
 

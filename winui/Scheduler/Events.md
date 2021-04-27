@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Events in WinUI Scheduler control | Syncfusion
-description: Learn here all about Events feature of Syncfusion WinUI Scheduler(SfScheduler) control with celltapped and more.
+description: Learn here all about the Events support in Syncfusion WinUI Scheduler (SfScheduler) control and more details.
 platform: winui
-control: Scheduler
+control: SfScheduler
 documentation: ug
 ---
 
-# Events in WinUI Scheduler
+# Events in WinUI Scheduler (SfScheduler)
 
 ## CellTapped
 
