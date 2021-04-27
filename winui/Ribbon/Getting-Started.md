@@ -19,7 +19,7 @@ This section explains the steps required to add the Ribbon control and its eleme
 
 3.	Import the control namespace `Syncfusion.UI.Xaml.Ribbon` in XAML or C# code.
 
-4.	Initialize the [SfRibbon]((https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html)) control. 
+4.	Initialize the [SfRibbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html) control. 
 
 
 {% tabs %}
