@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Types in WinUI DataGrid | Syncfusion
-description: This section explains about how to make use of different types of built-in columns in WinUI SfDataGrid.
+title: Column Types in WinUI DataGrid control | Syncfusion
+description: Learn here all about Column Types features of Syncfusion WinUI DataGrid(SfDataGrid) control and more.
 platform: winui
 control: SfDataGrid
 documentation: ug
 ---
 
 
-# Column Types in WinUI DataGrid (SfDataGrid)
+# Column Types in WinUI DataGrid
 
 SfDataGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data.
  
@@ -182,7 +182,7 @@ public class DisplayBindingConverter : IValueConverter
 
 In the below screenshot, Unit Price column display value is formatted to currency by setting `DisplayBinding` property.
 
-![Displaying the currency values in column in WinUI DataGrid](Column-Types_images/Column-Types_img1.png)
+![WinUI DataGrid column with currency values](Column-Types_images/winui-datagrid-currency-values.png)
 
 By default, Columns handling the data operations (sorting and grouping) based on `MappingName` property. You can perform data operations based on `ValueBinding` by setting [GridColumn.UseBindingValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_UseBindingValue) to `true`, when the standard reflection not works or binding column with complex or indexer properties.
 
@@ -230,7 +230,7 @@ In the below code snippet, `GridTextColumn` is loaded with `ProgressBar` and `Te
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying progress bar in the column as cell template in WinUI DataGrid](Column-Types_images/Column-Types_img2.png)
+![WinUI DataGrid column with progress bar](Column-Types_images/winui-datagrid-progressbar.png)
 
 `CellTemplate` is not support by `GridHyperlinkColumn`, `GridCheckboxColumn` and `GridImageColumn` columns.
 
@@ -268,7 +268,7 @@ You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/win
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the column with CellTemplate in WinUI DataGrid](Column-Types_images/Column-Types_img3.png)
+![WinUI DataGrid column with cell template](Column-Types_images/winui-datagrid-cell-template.png)
 
 ### Setting CellTemplate based on custom logic using TemplateSelector
 
@@ -339,7 +339,7 @@ In the below code, the custom template selector set to `GridColumn.CellTemplateS
 N> Non-Editable columns does not support `CellTemplate`.
 
 
-![Displaying cell template for the column using CellTemplateSelector in WinUI DataGrid](Column-Types_images/Column-Types_img4.png)
+![WinUI DataGrid column template selector](Column-Types_images/winui-datagrid-template-selection.png)
 
 ## Data Formatting
 
@@ -411,7 +411,7 @@ private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Gri
 {% endtabs %}
 
 
-![Data in the column are formatted using converter in WinUI DataGrid](Column-Types_images/Column-Types_img5.png)
+![WinUI DataGrid column formatting](Column-Types_images/winui-datagrid-column-formatting.png)
 
 ## Styling GridColumn
 
@@ -475,7 +475,7 @@ private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Gri
 {% endtabs %}
 
 
-![Cell style applied to the CustomerName column in WinUI DataGrid](Column-Types_images/Column-Types_img6.png)
+![WinUI DataGrid with Customized Column Style](Column-Types_images/winui-datagrid-column-style.png)
 
 ### Styles based on custom logic
 
@@ -562,7 +562,7 @@ private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Gri
 {% endhighlight %}
 {% endtabs %}
 
-![Cell style applied to the OrderID column using StyleSelector in WinUI DataGrid](Column-Types_images/Column-Types_img7.png)
+![WinUI DataGrid Column with Conditional Formatting](Column-Types_images/winui-datagrid-column-conditional-formatting.png)
 
 ## End-user Interaction
 
@@ -620,7 +620,7 @@ GridColumn allows you to change the alignment of `GridCell` and `GridHeaderCellC
 {% endtabs %}
 
 
-![TextTrimming and TextWrapping applied to CustomerName column in WinUI DataGrid](Column-Types_images/Column-Types_img8.png)
+![WinUI DataGrid Column with Text Trimming and Text Wrapping Settings](Column-Types_images/winui-datagrid-column-text-trimming-and-wrap.png)
 
 ## GridTextColumn
 
@@ -660,7 +660,7 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Ship City", Mappi
 {% endhighlight %}
 {% endtabs %}
 
-![Showing error in the edited value using spell check in WinUI DataGrid](Column-Types_images/Column-Types_img9.png)
+![Enabled spell checker to WinUI DataGrid column](Column-Types_images/winui-datagrid-spellchecker.png)
 
 ## GridCheckBoxColumn
 
@@ -682,7 +682,7 @@ this.dataGrid.Columns.Add(new GridCheckBoxColumn() { HeaderText = "Is Delivered"
 {% endtabs %}
 
 
-![Displaying GridCheckBoxColumn in WinUI DataGrid](Column-Types_images/Column-Types_img10.png)
+![WinUI DataGrid column with CheckBox](Column-Types_images/winui-datagrid-checkbox-column.png)
 
 `GridCheckBoxColumn` allows you to customize check box state and its alignment.
 
@@ -854,7 +854,7 @@ In the below code, custom template selector set to `GridTemplateColumn.EditTempl
 {% endtabs %}
 
 
-![Cell template and edit template for OrderID column loaded using TemplateSelector in WinUI DataGrid](Column-Types_images/Column-Types_img11.png)
+![Cell and Edit template in WinUI DataGrid column](Column-Types_images/winui-datagrid-cell-and-edit-template.png)
 
 ## GridComboBoxColumn
 
@@ -885,7 +885,7 @@ SfDataGrid triggers, [CurrentCellDropDownSelectionChanged](https://help.syncfusi
 `SelectedIndex` property returns the index of selected item.
 `SelectedItem` property returns the selected item from drop down list.
 
-![Displaying combobox with dropdowm in column of WinUI DataGrid](Column-Types_images/Column-Types_img12.png)
+![WinUI DataGrid column with ComboBox](Column-Types_images/winui-datagrid-combobox-column.png)
 
 ### Improving dropdown opening time
 
@@ -952,7 +952,7 @@ this.dataGrid.Columns.Add(new GridHyperlinkColumn() { HeaderText = "Country", Ma
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying GridHyperlinkColumn in WinUI DataGrid](Column-Types_images/Column-Types_img13.png)
+![WinUI DataGrid column with Hyperlink](Column-Types_images/winui-datagrid-hyperlink-column.png)
 
 You can allow end-user to navigate the `Uri` when the cell value contains valid `Uri` address or using [CurrentCellRequestNavigate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentCellRequestNavigate) event. The `CurrentCellRequestNavigate` occurs when the current cell in `GridHyperlinkColumn` is clicked for navigation.
   
@@ -1026,7 +1026,7 @@ this.dataGrid.Columns.Add(new GridImageColumn() { HeaderText = "Flag", MappingNa
 {% endtabs %}
 
 
-![Displaying GridImageColumn in WinUI DataGrid](Column-Types_images/Column-Types_img14.png)
+![WinUI DataGrid column with image](Column-Types_images/winui-datagrid-image-column.png)
 
 ### Read image from path using ValueBinding
 
@@ -1120,7 +1120,7 @@ this.sfDataGrid.Columns.Add(new GridToggleSwitchColumn() { MappingName = "IsDeli
 
 GridToggleSwitchColumn provides support to display the text, while ToggleSwitch is in `ON`/`OFF` state based on [OnContent]https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridToggleSwitchColumn.html#Syncfusion_UI_Xaml_DataGrid_GridToggleSwitchColumn_OnContent) and [OffContent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridToggleSwitchColumn.html#Syncfusion_UI_Xaml_DataGrid_GridToggleSwitchColumn_OffContent) properties.
 
-![Displaying GridToggleSwitchColumn in WinUI DataGrid](Column-Types_images/Column-Types_img15.png)
+![WinUi DataGrid column with Toggle Button](Column-Types_images/winui-datagrid-toggle-button.png)
 
 ## GridCheckBoxSelectorColumn
 
@@ -1148,7 +1148,7 @@ this.dataGrid.Columns.Add(new GridCheckBoxSelectorColumn()
 
 By default, check box is displayed in header of selector column, which is used to select or deselect all the rows in the datagrid.
 
-![WinUI datagrid selector column](Column-Types_images/Column-Types_img16.png)
+![WinUI DataGrid with CheckBox Selector Column](Column-Types_images/winui-datagrid-checkbox-selector-column.png)
 
 ### Text on column header
 
@@ -1178,7 +1178,7 @@ this.dataGrid.Columns.Add(new GridCheckBoxSelectorColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI datagrid selector column with text in column header](Column-Types_images/Column-Types_img17.png)
+![WinUI DataGrid selector column with text in column header](Column-Types_images/winui-datagrid-selector-column.png)
 
 ### Styling selector column
 
@@ -1500,7 +1500,7 @@ The style of check box in record cells and header can be customized by changing 
 {% endhighlight %}
 {% endtabs %}
 
-![winUI datagrid selector column with styled checkbox in both record cells and header](Column-Types_images/Column-Types_img18.png)
+![WinUI DataGrid selector column with checkbox style in cell and header](Column-Types_images/winui-datagrid-cell-and-header.png)
 
 ### Limitations
 
@@ -1655,7 +1655,7 @@ public class GridCellTextBoxRendererExt: GridCellTextBoxRenderer
 {% endtabs %}
 
 
-![Displaying foreground customization of column by customizing the renderer in WinUI DataGrid](Column-Types_images/Column-Types_img19.png)
+![Customize the column in WinUI DataGrid](Column-Types_images/winui-datagrid-customization.png)
 
 
 ### Creating new column and renderer

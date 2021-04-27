@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TimeZone support | WinUI | Scheduler | Syncfusion
-description: This topic explains how to use various TimeZones for Appointments and other functionalities in the Syncfusion WinUI Scheduler (SfScheduler)
+title: Time Zone in WinUI Scheduler control | Syncfusion
+description: Learn here all about Time Zone feature of Syncfusion WinUI Scheduler(SfScheduler) control with display appointment support and more.
 platform: winui
 control: Scheduler
 documentation: ug
 ---
 
-# Time Zone in WinUI Scheduler (SfSchedule)
+# Time Zone in WinUI Scheduler
 
 The Scheduler allows you to create appointments in various time zones and display them in your time zone or any other time zone. You can use the time zone in the following four different ways:
 

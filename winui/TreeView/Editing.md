@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing with WinUI TreeView control | Syncfusion
-description: Learn here about editing of TreeViewNode with Syncfusion WinUI TreeView (SfTreeView) control and editing related events. 
+title: Editing in WinUI TreeView control | Syncfusion
+description: Learn here all about Editing support in Syncfusion WinUI TreeView(SfTreeView) control with programmatic editing and more.
 platform: winui
 control: SfTreeView
 documentation: ug
 ---
 
-# Editing in WinUI TreeView (SfTreeView)
+# Editing in WinUI TreeView
 
 The TreeView provides support for editing and it can be enabled or disabled by using [SfTreeView.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowEditing) property. You can enter edit mode in a node by pressing <kbd>F2</kbd> key only. The editing changes in a node will be committed only when user move to next node or pressing <kbd>Enter</kbd> key.
 

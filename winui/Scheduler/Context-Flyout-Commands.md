@@ -1,18 +1,20 @@
 ---
 layout: post
-title: Context Flyout And commands | WinUI | Scheduler | Syncfusion
-description: Learn about the context flyout support and built-in `DelegateCommand` support for handling the context flyout to add, edit, and delete appointments.
+title: Context Flyout and Commands in WinUI Scheduler control | Syncfusion
+description: Learn here all about Context Flyout and Commands support in Syncfusion WinUI Scheduler(SfScheduler) control and more.
 platform: winui
 control: Scheduler
 documentation: ug
 ---
 
-# Context flyout And commands in WinUI Scheduler (SfScheduler)
+# Context Flyout and Commands in WinUI Scheduler
 
 The WinUI scheduler has support to define a context flyout for appointments, time slots, and month cells are right-clicked. It will also have the built-in `DelegateCommand` support for handling the context flyout to add, edit, and delete appointments. There are two types of `Context Flyout.`
 
 * [CellContextFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CellContextFlyout)
 * [AppointmentContextFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentContextFlyout)
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/SchedulerContextFlyout)
 
 ## Cell context flyout
 
@@ -46,7 +48,7 @@ N>
 {% endhighlight %}
 {% endtabs %}
 
-![cell-context-flyout-for-timeslots-in-winui-scheduler](Context-Flyout-Commands_Images/adding-cell-context-flyout-for-timeslots-in-winui-scheduler.png)
+![cell-context-flyout-for-timeslots-in-winui-scheduler](Context-Flyout-Commands_Images/cell-context-flyout-for-timeslots-in-winui-scheduler.png)
 
 ## Appointment context flyout
 
@@ -80,7 +82,7 @@ N>
 {% endhighlight %}
 {% endtabs %}
 
-![appointment-context-flyout-for-appointments-in-winui-scheduler](Context-Flyout-Commands_Images/adding-appointment-context-flyout-for-appointments-in-winui-scheduler.png)
+![appointment-context-flyout-for-appointments-in-winui-scheduler](Context-Flyout-Commands_Images/appointment-context-flyout-for-appointments-in-winui-scheduler.png)
 
 ## ContextFlyoutOpening event
 

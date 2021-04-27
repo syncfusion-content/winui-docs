@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Header | WinUI | Scheduler | Syncfusion
-description: This section explain about how to customize header height, date format and appearance of Syncfusion WinUI Scheduler (SfScheduler)
+title: Header in WinUI Scheduler control | Syncfusion
+description: Learn here all about Header support in Syncfusion WinUI Scheduler(SfScheduler) control with customization support and more.
 platform: winui
 control: Scheduler
 documentation: ug
 ---
 
-# Header in WinUI scheduler (SfScheduler)
+# Header in WinUI Scheduler
 
 You can change the header height, date format, and appearance of SfScheduler.
 
@@ -26,7 +26,7 @@ this.Schedule.HeaderHeight = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![change-header-height-in-winui-scheduler-timeslot-view](Header_Images/adding-header-height-in-winui-scheduler.png)
+![change-header-height-in-winui-scheduler-timeslot-view](Header_Images/header-height-in-winui-scheduler.png)
 
 ## Header date format
 
@@ -42,7 +42,7 @@ this.Schedule.HeaderDateFormat = "MMM-yyyy";
 {% endhighlight %}
 {% endtabs %}
 
-![customize-header-date-format-in-winui-scheduler-timeslot-view](Header_Images/adding-customize-header-date-format-in-winui-scheduler.png)
+![customize-header-date-format-in-winui-scheduler-timeslot-view](Header_Images/customize-header-date-format-in-winui-scheduler.png)
 
 ## Appearance customization
 
@@ -67,7 +67,7 @@ You can style Scheduler header appearance using the `SchedulerHeaderControl` in 
 {% endhighlight %}
 {% endtabs %}
 
-![customize-the-scheduler-header-appearance-in-winui-scheduler-timeslot-view](Header_Images/adding-customize-the-scheduler-header-appearance-in-winui-scheduler.png)
+![customize-the-scheduler-header-appearance-in-winui-scheduler-timeslot-view](Header_Images/customize-the-scheduler-header-appearance-in-winui-scheduler.png)
 
 ### Customize header appearance using DataTemplate
 
@@ -89,4 +89,4 @@ You can customize the header appearance of scheduler by using the [HeaderTemplat
 {% endtabs %}
 
 
-![customize-the-scheduler-header-appearance-using data-template-in-winui-scheduler-timeslot-view](Header_Images/adding-customize-the-scheduler-header-appearance-using-data-template-in-winui-scheduler.png)
+![customize-the-scheduler-header-appearance-using data-template-in-winui-scheduler-timeslot-view](Header_Images/customize-the-scheduler-header-appearance-using-data-template-in-winui-scheduler.png)

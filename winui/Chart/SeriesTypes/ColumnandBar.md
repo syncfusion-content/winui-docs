@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column and Bar Charts | SfChart | WinUI | Syncfusion
-description: This section explains Column and Bar Charts and its properties for customization in WinUI Charts (SfChart)
+title: Column and Bar in WinUI Chart control | Syncfusion
+description: Learn here all about Column and Bar support in Syncfusion WinUI Chart control with segment spacing and more.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Column and Bar Charts in WinUI Chart (SfChart)
+# Column and Bar in WinUI Chart
 
 ## Column
 

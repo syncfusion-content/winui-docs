@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Appointment Drag and Drop | WinUI | Scheduler | Syncfusion
-description: This section explains how to handle an appointment drag and drop and events in the Syncfusion WinUI Scheduler. 
+title: Appointment Drag and Drop in WinUI Scheduler control | Syncfusion
+description: Learn here all about Appointment Drag and Drop support in Syncfusion WinUI Scheduler(SfScheduler) control and more.
 platform: winui
 control: Scheduler
 documentation: ug
 ---
 
-# Appointment drag and drop in WinUI Scheduler (SfScheduler)
+# Appointment Drag and Drop in WinUI Scheduler
 
 The Scheduler supports to reschedule the appointment by performing the drag and drop operation.
 
-N> Applicable only for WinUI UWP platform.
+N> Due to WinUI [framework issue](https://github.com/microsoft/microsoft-ui-xaml/issues/2715), we didn't include this feature in WinUI desktop applications and this is applicable only for WinUI UWP applications.
 
 ## Disable drag and drop
 
-The Scheduler supports disabling the appointment drag and drop by setting the [AppointmentEditFlag](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditFlag.html) property except [DragDrop](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditFlag.html#Syncfusion_UI_Xaml_Scheduler_AppointmentEditFlag_DragDrop). In this case, you will not be able to perform appointment drag & drop.
+The Scheduler supports disabling the appointment drag and drop by setting the [AppointmentEditFlag](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditFlag.html) property except [DragDrop](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditFlag.html#Syncfusion_UI_Xaml_Scheduler_AppointmentEditFlag_DragDrop). In this case, you will not be able to perform appointment drag and drop.
 
 {% tabs %}
 {% highlight xaml %}
@@ -39,11 +39,11 @@ this.Schedule.DragDropSettings.ShowTimeIndicator = true;
 {% endhighlight %}
 {% endtabs %}
 
-![show-appointment-dragging-time-indicator-in-winui-scheduler](Appointment-Drag-And-Drop_Images/adding-show-appointment-dragging-time-indicator-in-winui-scheduler.png)
+![show-appointment-dragging-time-indicator-in-winui-scheduler](Appointment-Drag-And-Drop_Images/appointment-dragging-time-indicator-in-winui-scheduler.png)
 
 N>
 * Not applicable for the `Month` and `Timeline Month` views. 
-* If the `TimeRulerSize` property value is zero to collapse the time ruler labels, then drag the time indicator will not be shown.
+* If the [TimeRulerSize](https://help.syncfusion.com/winui/scheduler/day-week-views#change-time-ruler-size) property value is zero to collapse the time ruler labels, then drag the time indicator will not be shown.
 
 ## Appointment dragging time indicator text formatting
 
@@ -56,7 +56,7 @@ this.Schedule.DragDropSettings.TimeIndicatorFormat = "HH mm tt";
 {% endhighlight %}
 {% endtabs %}
 
-![customize-appointment-dragging-time-indicator-format-in-winui-scheduler](Appointment-Drag-And-Drop_Images/adding-customize-appointment-dragging-time-indicator-format-in-winui-scheduler.png)
+![customize-appointment-dragging-time-indicator-format-in-winui-scheduler](Appointment-Drag-And-Drop_Images/customize-appointment-dragging-time-indicator-format-in-winui-scheduler.png)
 
 ## AppointmentDragOver event
 

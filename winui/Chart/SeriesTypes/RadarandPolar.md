@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Radar and Polar Charts | SfChart | WinUI | Syncfusion
-description: This section explains Radar and Polar Charts and its properties for customization in WinUI Charts (SfChart)
+title: Radar and Polar in WinUI Chart control | Syncfusion
+description: Learn here all about Radar and Polar support in Syncfusion WinUI Chart(SfChart) control with draw type polar and more.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Radar and Polar Charts in WinUI Chart (SfChart)
+# Radar and Polar in WinUI Chart
 
 ## Radar
 

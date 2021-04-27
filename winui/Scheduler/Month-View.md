@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Month view | WinUI | Scheduler | Syncfusion
-description: This section explains how to customize the appearance and change the date format for Month view in the Syncfusion WinUI Scheduler (SfScheduler).
+title: Month View in WinUI Scheduler control | Syncfusion
+description: Learn here all about Month View support in Syncfusion WinUI Scheduler(SfScheduler) control and more.
 platform: winui
 control: Scheduler
 documentation: ug
 ---
 
-# Month View in WinUI Scheduler (SfScheduler)
+# Month View in WinUI Scheduler
 
 By default, the month view of the scheduler displays the days of a specific month and current month initially. The current date color is differentiated from other dates of the current month.
 
@@ -30,7 +30,7 @@ this.Schedule.MonthViewSettings.ShowAgendaView = true;
 {% endhighlight %}
 {% endtabs %}
 
-![month-show-agenda-view-in-winui-scheduler-month-view](Month-View_Imges/adding-month-show-agenda-view-in-winui-scheduler.png)
+![show-month-agenda-view-in-winui-scheduler-month-view](Month-View_Imges/month-agenda-view-in-winui-scheduler.png)
 
 N>
 * An agenda view displays the text as No Selected Date until a date is selected.
@@ -60,7 +60,7 @@ this.Schedule.MonthViewSettings.AgendaViewHeight = 300;
 {% endhighlight %}
 {% endtabs %}
 
-![customize-show-agenda-view-height-in-winui-scheduler-month-view](Month-View_Imges/adding-customize-show-agenda-view-height-in-winui-scheduler.png)
+![customize-show-month-agenda-view-height-in-winui-scheduler-month-view](Month-View_Imges/customize-month-agenda-view-height-in-winui-scheduler.png)
 
 ## Appointment display mode
 
@@ -85,7 +85,7 @@ this.Schedule.MonthViewSettings.AppointmentDisplayMode = AppointmentDisplayMode.
 {% endhighlight %}
 {% endtabs %}
 
-![appointment-display-mode-in-winui-scheduler-month-view](Month-View_Imges/adding-appointment-display-mode-in-winui-scheduler.png)
+![appointment-display-mode-in-winui-scheduler-month-view](Month-View_Imges/appointment-display-mode-in-winui-scheduler.png)
 
 ## Appointment display count
 
@@ -107,7 +107,7 @@ this.Schedule.MonthViewSettings.AppointmentDisplayCount = 4;
 {% endhighlight %}
 {% endtabs %}
 
-![appointment-display-count-in-winui-scheduler-month-view](Month-View_Imges/adding-appointment-display-count-in-winui-scheduler.png)
+![appointment-display-count-in-winui-scheduler-month-view](Month-View_Imges/appointment-display-count-in-winui-scheduler.png)
 
 ## Month navigation direction
 
@@ -128,7 +128,7 @@ this.Schedule.MonthViewSettings.MonthNavigationDirection = Orientation.Vertical;
 {% endhighlight %}
 {% endtabs %}
 
-![month-navigation-direction-in-winui-scheduler-month-view](Month-View_Imges/adding-month-navigation-direction-in-winui-scheduler.png)
+![month-navigation-direction-in-winui-scheduler-month-view](Month-View_Imges/month-navigation-direction-in-winui-scheduler.png)
 
 ## Date format
 
@@ -149,7 +149,7 @@ this.Schedule.MonthViewSettings.DateFormat = "dd";
 {% endhighlight %}
 {% endtabs %}
 
-![customize-date-format-in-winui-scheduler-month-view](Month-View_Imges/adding-customize-date-format-in-winui-scheduler.png)
+![customize-month-date-format-in-winui-scheduler-month-view](Month-View_Imges/customize-month-date-format-in-winui-scheduler.png)
 
 ## View header
 
@@ -174,7 +174,7 @@ this.Schedule.MonthViewSettings.ViewHeaderDayFormat = "ddd";
 {% endhighlight %}
 {% endtabs %}
 
-![view-header-text-formatting-in-winui-scheduler-month-view](Month-View_Imges/adding-view-header-text-formatting-in-winui-scheduler.png)
+![month-view-header-text-formatting-in-winui-scheduler-month-view](Month-View_Imges/month-view-header-text-formatting-in-winui-scheduler.png)
 
 ### View header height
 
@@ -195,7 +195,7 @@ this.Schedule.MonthViewSettings.ViewHeaderHeight = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![customize-view-header-height-in-winui-scheduler-month-view](Month-View_Imges/adding-customize-view-header-height-in-winui-scheduler.png)
+![customize-month-view-header-height-in-winui-scheduler-month-view](Month-View_Imges/customize-month-view-header-height-in-winui-scheduler.png)
 
 ### View header appearance customization
 
@@ -222,7 +222,7 @@ You can customize the default appearance of the month view header by using the [
 {% endhighlight %}
 {% endtabs %}
 
-![customize-view-header-appearance-in-winui-scheduler-month-view](Month-View_Imges/adding-customize-view-header-appearance-in-winui-scheduler.png)
+![customize-month-view-header-appearance-in-winui-scheduler-month-view](Month-View_Imges/customize-month-view-header-appearance-in-winui-scheduler.png)
 
 ## Leading and Trailing days visibility
 
@@ -246,7 +246,7 @@ this.Schedule.MonthViewSettings.TrailingDaysVisibility = Visibility.Collapsed;
 {% endhighlight %}
 {% endtabs %}
 
-![customize-leading-and-trailing-days-visibility-in-winui-scheduler-month-view](Month-View_Imges/adding-customize-leading-and-trailing-days-visibility-in-winui-scheduler.png)
+![customize-leading-and-trailing-days-visibility-in-winui-scheduler-month-view](Month-View_Imges/customize-leading-and-trailing-days-visibility-in-winui-scheduler.png)
 
 ## Blackout dates
 
@@ -277,7 +277,7 @@ private ObservableCollection<DateTime> GetBlackoutDates()
 {% endhighlight %}
 {% endtabs %}
 
-![blackout-dates-in-winui-scheduler-month-view](Month-View_Imges/adding-blackout-dates-in-winui-scheduler.png)
+![blackout-dates-in-winui-scheduler-month-view](Month-View_Imges/blackout-dates-in-winui-scheduler.png)
 
 ## Show week number
 
@@ -326,7 +326,7 @@ You can customize the default appearance of a week number template in the month 
 {% endhighlight %}
 {% endtabs %}
 
-![customize-week-number-template-in-winui-scheduler-month-view](Month-View_Imges/adding-customize-week-number-template-in-winui-scheduler.png)
+![customize-week-number-template-in-winui-scheduler-month-view](Month-View_Imges/customize-week-number-template-in-winui-scheduler.png)
 
 ## Customize month cell appearance
 
@@ -356,7 +356,7 @@ You can customize the default appearance of the month cell by using the [MonthCe
 {% endhighlight %}
 {% endtabs %}
 
-![customize-month-cell-appearance-using-data-template-in-winui-scheduler-month-view](Month-View_Imges/adding-customize-month-cell-appearance-using-data-template-in-winui-scheduler.png)
+![customize-month-cell-appearance-using-data-template-in-winui-scheduler-month-view](Month-View_Imges/customize-month-cell-appearance-using-data-template-in-winui-scheduler.png)
 
 ### Using the DataTemplateSelector
 
@@ -430,7 +430,9 @@ public class MonthCellTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-![customize-month-cell-appearance-using-data-template-selector-in-winui-scheduler-month-view](Month-View_Imges/adding-customize-month-cell-appearance-using-data-template-selector-in-winui-scheduler.png)
+![customize-month-cell-appearance-using-data-template-selector-in-winui-scheduler-month-view](Month-View_Imges/customize-month-cell-appearance-using-data-template-selector-in-winui-scheduler.png)
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/MonthCellCustomization)
 
 ## Customize month view appointments
 
@@ -466,7 +468,7 @@ You can customize the default appearance of the month cell appointment by using 
 {% endhighlight %}
 {% endtabs %}
 
-![customize-month-cell-appointment-appearance-using-data-template-in-winui-scheduler-month-view](Month-View_Imges/adding-customize-month-cell-appointment-appearance-using-data-template-in-winui-scheduler.png)
+![customize-month-cell-appointment-appearance-using-data-template-in-winui-scheduler-month-view](Month-View_Imges/customize-month-cell-appointment-appearance-using-data-template-in-winui-scheduler.png)
 
 ### Using the DataTemplateSelector
 
@@ -542,4 +544,4 @@ public class AppointmentTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-![customize-month-cell-appointment-appearance-using-data-template-selector-in-winui-scheduler-month-view](Month-View_Imges/adding-customize-month-cell-appointment-appearance-using-data-template-selector-in-winui-scheduler.png)
+![customize-month-cell-appointment-appearance-using-data-template-selector-in-winui-scheduler-month-view](Month-View_Imges/customize-month-cell-appointment-appearance-using-data-template-selector-in-winui-scheduler.png)

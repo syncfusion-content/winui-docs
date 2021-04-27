@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with Ribbon | WinUI | Ribbon | Syncfusion 
-description: Learn about Ribbon elements and it features in Syncfusion WinUI Ribbon (SfRibbon) control and more details. 
+title: Dealing with Ribbon in WinUI Ribbon control | Syncfusion
+description: Learn here all about Dealing with Ribbon feature of Syncfusion WinUI Ribbon(sfRibbon) control and more.
 platform: winui
 control: Ribbon
 documentation: ug
 ---
 
-# Dealing with WinUI Ribbon (SfRibbon)
+# Dealing with Ribbon in WinUI Ribbon
 
 The below section describes more information about [Ribbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html) and its features.
 

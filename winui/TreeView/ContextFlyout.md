@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ContextFlyout with WinUI TreeView control | Syncfusion
-description: Learn about context flyout support and its customization with Syncfusion WinUI TreeView (SfTreeView) control and more details.
+title: Context Flyout in WinUI TreeView control | Syncfusion
+description: Learn here all about Context Flyout support in Syncfusion WinUI TreeView(SfTreeView) control and more.
 platform: WinUI
 control: SfTreeView
 documentation: ug
 ---
 
-# ContextFlyout in WinUI TreeView (SfTreeView)
+# Context Flyout in WinUI TreeView
 
 This section explains how to show ContextFlyout and using built-in commands in the TreeView.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Label features in Syncfusion WinUI Range Slider
-description: This section explains about how to show divisors and how to customize it in the Syncfusion WinUI range slider.
+title: Divisors in WinUI RangeSlider control | Syncfusion
+description: Learn here all about Divisors support in Syncfusion WinUI RangeSlider(SfRangeSlider) control and more.
 platform: WinUI
 control: SfRangeSlider
 documentation: ug
 ---
 
-# How to show the divisors in the RangeSlider
+# Divisors in WinUI RangeSlider (Range Slider)
 
 This section explains about how to show the divisors in the range slider.
 

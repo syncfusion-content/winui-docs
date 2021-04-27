@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion WinUI Gauge Pointers
-description: This article describes how to add and customizes the appearence of pointers of radial gauge control in WinUI platform
+title: Pointers in WinUI Radial Gauge control | Syncfusion
+description: Learn here all about Pointers feature of Syncfusion WinUI Radial Gauge control with multiple pointer support and more.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug
 ---
 
-# Pointers in WinUI Radial Gauge (SfRadialGauge)
+# Pointers in WinUI Radial Gauge
 
  Pointer is used to indicate values on an axis. The radial gauge control has three types of pointers: 
 

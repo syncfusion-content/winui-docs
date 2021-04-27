@@ -9,27 +9,39 @@ documentation: ug
 
 # Featured Samples for Syncfusion WinUI Controls
 
-## Syncfusion WinUI Controls Panel
+## Syncfusion WinUI control panel
 
 To explore Syncfusion WinUI controls and components, Open `Syncfusion WinUI Controls Panel` by searching it from start and open. 
 
 ![WinUI Control Panel Search](Guide-to-run-the-samples-images/winui-control-panel-search.png)
 
-In another way, Open the Control Panel from the following installed location,
+In another way, open the control panel from the following installed location,
 
 C:\Program Files (x86)\Syncfusion\Essential Studio\WinUI\{{ site.releaseversion }}\Infrastructure\Launcher\Syncfusion WinUI Control Panel.exe 
 
-N> In above section, Latest Essential Studio version details has been provided. You can refer installed Essential Studio version instead of mentioned version.
+N> In above section, latest Essential Studio version details has been provided. You can refer installed Essential Studio version instead of mentioned version.
 
-![Syncfusion WinUI Controls Panel](Guide-to-run-the-samples-images/syncfusion-winui-control-panel.png)
+## WinUI sample browser
 
-## WinUI Sample Browser
+The Syncfusion `WinUI Sample Browser` is available for both the WinUI `UWP` and `Desktop` environments.
 
-To explore the locally installed demos, click `Run Local Demos` and open the `WinUI Sample Browser`.
+### WinUI UWP
 
-![Syncfusion WinUI Sample Browser](Guide-to-run-the-samples-images/syncfusion-winui-sample-browser.png)
+The WinUI UWP project can be explored in Visual Studio by clicking `Run Local Demos` and selecting `UWP` to open the `WinUI Sample Browser`.
 
-## Offline Samples
+![Explore Syncfusion WinUI Demos with UWP Project](Guide-to-run-the-samples-images/exploring-winui-uwp-sample-browser.png)
+
+![Syncfusion WinUI Sample Browser with UWP Project](Guide-to-run-the-samples-images/syncfusion-winui-uwp-sample-browser.png)
+
+### WinUI Desktop
+
+The WinUI desktop project can be explored in Visual Studio by clicking `Run Local Demos` and selecting `Desktop` to open the `WinUI Sample Browser`.
+ 
+ ![Explore Syncfusion WinUI Demos with Desktop Project](Guide-to-run-the-samples-images/exploring-winui-desktop-sample-browser.png)
+
+![Syncfusion WinUI Sample Browser with Desktop Project](Guide-to-run-the-samples-images/syncfusion-winui-desktop-sample-browser.png)
+
+## Offline samples
 
 ![Exploring Syncfusion WinUI Samples from Syncfusion WinUI Sample Browser](Guide-to-run-the-samples-images/exploring-syncfusion-winui-samples-from-sb.png)
 
@@ -39,7 +51,7 @@ For example, below, we demonstrated how to run an individual `Chart` control pro
 
 ![Exploring the Syncfusion WinUI individual control project](Guide-to-run-the-samples-images/exploring-individual-control-project.png)
 
-* You can also open a standalone executable project (not a lib project) in the Visual Studio which is available under the category name.
+* You can also open a standalone executable project either UWP or desktop (not a lib project) in the Visual Studio which is available under the category name.
 
  ![Open the standalone WinUI project in Visual Studio](Guide-to-run-the-samples-images/open-standalone-winui-project-in-visual-studio.png)
 
@@ -47,10 +59,10 @@ For example, below, we demonstrated how to run an individual `Chart` control pro
 
 ![Running an individual control project](Guide-to-run-the-samples-images/run-induvidual-control-project.png)  
 
-## Online Samples
+## Online samples
 
 * Download and install `WinUI` demos from [App Center](https://install.appcenter.ms/orgs/syncfusion-demos/apps/winui-demos/distribution_groups/release).
 
-## Download demos from online (Clone from github repository)
+## Download demos from online (clone from github repository)
 
 You can explore Syncfusion WinUI controls using [GitHub WinUI demos](https://github.com/syncfusion/winui-demos) where all WinUI demos are configured using `NuGet` to run without installing Syncfusion WinUI Studio.

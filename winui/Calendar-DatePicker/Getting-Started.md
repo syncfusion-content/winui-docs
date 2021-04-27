@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Getting started with WinUI CalendarDatePicker control | Syncfusion
-description: This section describes about how to add the CalendarDatePicker (SfCalendarDatePicker) control into WinUI application and its basic features.
+title: Getting Started with WinUI Calendar Date Picker control | Syncfusion
+description: Learn here all about getting started with Syncfusion WinUI Calendar Date Picker control, its elements, and more.
 platform: WinUI
 control: SfCalendarDatePicker
 documentation: ug
 ---
 
-# Getting Started with WinUI Calendar DatePicker
+# Getting Started with WinUI Calendar Date Picker
 
-This section explains the steps required to add the [CalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) control and its date selection options. This section covers only basic features needed to get started with Syncfusion `CalendarDatePicker` control.
+This section explains the steps required to add the [WinUI Calendar Date Picker](https://www.syncfusion.com/winui-controls/calendar-datepicker) control and its date selection options. This section covers only basic features needed to get started with Syncfusion `Calendar Date Picker` control.
 
-## Structure of CalendarDatePicker control
+## Structure of Calendar Date Picker control
 
-![Structure of WinUI CalendarDatePicker control](Getting-Started_images/Structure.png)
+![Structure of WinUI Calendar Date Picker control](Getting-Started_images/Structure.png)
 
-## Creating an application with WinUI CalendarDatePicker
+## Creating an application with WinUI Calendar Date Picker
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 2. Add reference to [Syncfusion.Calendar.WinUI](https://www.nuget.org/packages/Syncfusion.Calendar.WinUI) NuGet. 
@@ -36,7 +36,7 @@ This section explains the steps required to add the [CalendarDatePicker](https:/
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid Name="grid">
-        <!--Adding CalendarDatePicker control -->
+        <!--Adding Calendar Date Picker control -->
         <calendar:SfCalendarDatePicker Name="sfCalendarDatePicker"/>
     </Grid>
 </Page>
@@ -67,13 +67,13 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDatePicker control added in the application](Getting-Started_images/Calendardatepicker_Added.png)
+![Calendar Date Picker control added in the application](Getting-Started_images/Calendardatepicker_Added.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Getting_started)
 
 ## Select the date programmatically
 
-You can set or change the selected date programmatically by using [SelectedDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectedDate) property. If you not assign any value for the `SelectedDate` property, `CalendarDatePicker` will automatically assign the current system date as `SelectedDate`.
+You can set or change the selected date programmatically by using [SelectedDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectedDate) property. If you not assign any value for the `SelectedDate` property, `Calendar Date Picker` will automatically assign the current system date as `SelectedDate`.
 
 {% tabs %}
 {% highlight C# %}
@@ -84,7 +84,7 @@ sfCalendarDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDatePicker displaying the selected date](Getting-Started_images/Selecteddate.png)
+![Calendar Date Picker displaying the selected date](Getting-Started_images/Selecteddate.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction)
 
@@ -105,13 +105,13 @@ SfCalendarDatePicker sfCalendarDatePicker= new SfCalendarDatePicker();
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDatePicker displaying selected value](Getting-Started_images/CalendarDatePicker.gif)
+![Calendar Date Picker displaying selected value](Getting-Started_images/CalendarDatePicker.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Getting_started)
 
 ## Setting null value
 
-If you want to set null value for the `CalendarDatePicker`, set the [AllowNullValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_AllowNullValue) property as `true` and set `SelectedDate` property as `null`. If `AllowNullValue` property is `false`, then the current system date is updated in `SelectedDate` property and displayed instead of `null`.
+If you want to set null value for the `Calendar Date Picker`, set the [AllowNullValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_AllowNullValue) property as `true` and set `SelectedDate` property as `null`. If `AllowNullValue` property is `false`, then the current system date is updated in `SelectedDate` property and displayed instead of `null`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -130,13 +130,13 @@ sfCalendarDatePicker.AllowNullValue = true;
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDatePicker displaying null value](Getting-Started_images/AllowNullValue.png)
+![Calendar Date Picker displaying null value](Getting-Started_images/AllowNullValue.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection)
 
 ## Setting watermark text
 
-You can prompt the user with some information by using the [PlaceHolderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_PlaceHolderText) property. This will be displayed only when the `CalendarDatePicker` contains the `SelectedDate` property as `null` and `AllowNullValue` property as `true`. If `AllowNullValue` property is `false`, then the current system date is updated in `SelectedDate` property and displayed instead of `PlaceHolderText`.
+You can prompt the user with some information by using the [PlaceHolderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_PlaceHolderText) property. This will be displayed only when the `Calendar Date Picker` contains the `SelectedDate` property as `null` and `AllowNullValue` property as `true`. If `AllowNullValue` property is `false`, then the current system date is updated in `SelectedDate` property and displayed instead of `PlaceHolderText`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -157,7 +157,7 @@ sfCalendarDatePicker.AllowNullValue = true;
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDatePicker displaying watermark text](Getting-Started_images/PlaceHolderText.png)
+![Calendar Date Picker displaying watermark text](Getting-Started_images/PlaceHolderText.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection)
 
@@ -182,7 +182,7 @@ sfCalendarDatePicker.MaxDate = new DateTimeOffset(new DateTime(2021, 01, 24));
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDatePicker restrict the date selection with particular range](Getting-Started_images/MinMaxdate.png)
+![Calendar Date Picker restrict the date selection with particular range](Getting-Started_images/MinMaxdate.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction)
 
@@ -238,7 +238,7 @@ sfCalendarDatePicker.BlackoutDates = (sfCalendarDatePicker.DataContext as ViewMo
 {% endhighlight  %}
 {% endtabs %}
 
-![CalendarDatePicker blocks the particular dates from selection](Getting-Started_images/BlackoutDates.png)
+![Calendar Date Picker blocks the particular dates from selection](Getting-Started_images/BlackoutDates.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/BlockedDates)
 
@@ -280,13 +280,13 @@ private void SfCalendarDatePicker_CalendarItemPrepared(object sender, CalendarIt
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDatePicker restrict the weekend dates from selection](Getting-Started_images/blockweekend.png)
+![Calendar Date Picker restrict the weekend dates from selection](Getting-Started_images/blockweekend.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/BlockedDates)
 
 ## Selected date changed notification
 
-You will be notified when selected date changed in `CalendarDatePicker` by using [SelectedDateChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectedDateChanged) event. The `SelectedDateChanged` event contains the old and newly selected date in the [OldDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SelectedDateChangedEventArgs.html#Syncfusion_UI_Xaml_Calendar_SelectedDateChangedEventArgs_OldDate), [NewDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SelectedDateChangedEventArgs.html#Syncfusion_UI_Xaml_Calendar_SelectedDateChangedEventArgs_NewDate) properties.
+You will be notified when selected date changed in `Calendar Date Picker` by using [SelectedDateChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectedDateChanged) event. The `SelectedDateChanged` event contains the old and newly selected date in the [OldDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SelectedDateChangedEventArgs.html#Syncfusion_UI_Xaml_Calendar_SelectedDateChangedEventArgs_OldDate), [NewDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SelectedDateChangedEventArgs.html#Syncfusion_UI_Xaml_Calendar_SelectedDateChangedEventArgs_NewDate) properties.
 
 * `OldDate` - Gets a date which is previously selected.
 * `NewDate` - Gets a date which is currently selected.
@@ -339,7 +339,7 @@ sfCalendarDatePicker.FormatString= "M";
 {% endhighlight  %}
 {% endtabs %}
 
-![CalendarDatePicker selected date with month format](Getting-Started_images/FormatString.png)
+![Calendar Date Picker selected date with month format](Getting-Started_images/FormatString.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Formatting)
 
@@ -370,7 +370,7 @@ sfCalendarDatePicker.HeaderFormatInMonthView = "{month.abbreviated} {year.abbrev
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying full month and abbreviated year format in WinUI CalendarDatePicker.](Getting-Started_images/dateformat.gif)
+![Displaying full month and abbreviated year format in WinUI Calendar Date Picker.](Getting-Started_images/dateformat.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Formatting)
 
@@ -395,7 +395,7 @@ sfCalendarDatePicker.EditMode = DateTimeEditingMode.Normal;
 {% endhighlight  %}
 {% endtabs %}
 
-![CalendarDatePicker enables free form editing to select date](Getting-Started_images/EditModeNormal.png)
+![Calendar Date Picker enables free form editing to select date](Getting-Started_images/EditModeNormal.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection)
 
@@ -425,13 +425,13 @@ sfCalendarDatePicker.DisplayMode = CalendarDisplayMode.Month;
 {% endhighlight %}
 {% endtabs %}
 
-![Navigation between month and century view in WinUI CalendarDatePicker](Getting-Started_images/view-navigation.gif)
+![Navigation between month and century view in WinUI Calendar Date Picker](Getting-Started_images/view-navigation.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction)
 
 ## Calendar types
 
-The `CalendarDatePicker` control supports different type of calendars such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using [CalendarIdentifier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_CalendarIdentifier) property. The default value of `CalendarIdentifier` property is `GregorianCalendar`.
+The `Calendar Date Picker` control supports different type of calendars such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using [CalendarIdentifier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_CalendarIdentifier) property. The default value of `CalendarIdentifier` property is `GregorianCalendar`.
 
 You can select the required `CalendarIdentifier` value from below types.
 
@@ -445,7 +445,7 @@ You can select the required `CalendarIdentifier` value from below types.
  * UmAlQuraCalendar
  * PersianCalendar
 
-N> The value in `CalendarDatePicker` control textbox is updated based on `CalendarIdentifier` property calendar type.
+N> The value in `Calendar Date Picker` control textbox is updated based on `CalendarIdentifier` property calendar type.
 
 {% tabs %}
 {% highlight xaml %}
@@ -462,7 +462,7 @@ sfCalendarDatePicker.CalendarIdentifier = "HebrewCalendar";
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Hebrew-type WinUI CalendarDatePicker.](Getting-Started_images/CalendarIdentifier.png)
+![Displaying Hebrew-type WinUI Calendar Date Picker.](Getting-Started_images/CalendarIdentifier.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Formatting)
 
@@ -485,7 +485,7 @@ sfCalendarDatePicker.Language = "ar";
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying arabic cultured WinUI CalendarDatePicker.](Getting-Started_images/Language.png)
+![Displaying arabic cultured WinUI Calendar Date Picker.](Getting-Started_images/Language.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Formatting)
 

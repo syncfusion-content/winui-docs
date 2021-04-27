@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Date navigations | WinUI | Scheduler | Syncfusion
-description: This section explain about how to use Date Navigations of Syncfusion WinUI Scheduler control and more details. 
+title: Date Navigations in WinUI Scheduler control | Syncfusion
+description: Learn here all about Date Navigations feature of Syncfusion WinUI Scheduler(SfScheduler) control and more.
 platform: winui
 control: Scheduler
 documentation: ug
 ---
 
-# Date Navigations in WinUI Scheduler (SfScheduler)
+# Date Navigations in WinUI Scheduler
 
 ## Range for visible dates
 
@@ -63,7 +63,7 @@ By default, the date can be navigated to next and previous views using touch ges
 
 ### Forward
 
-You can use the [Forward](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_Forward) method of SfScheduler for viewing the next immediate visible dates in the scheduler. It will move to next month if the scheduler view is month, similarly it will move to next week for week view and next day for day view.
+You can use the [Forward](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_Forward) method of Scheduler for viewing the next immediate visible dates in the scheduler. It will move to next month if the scheduler view is month, similarly it will move to next week for week view and next day for day view.
 
 {% tabs %}
 {% highlight xaml %}
@@ -86,7 +86,7 @@ private void Forward_Click(object sender, RoutedEventArgs e)
 
 ### Backward
 
-You can use the [Backward](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_Backward) method of SfScheduler for viewing the previous immediate visible dates in the scheduler. It will move to previous month if the scheduler view is month, similarly it will move to previous week for week view and previous day for day view.
+You can use the [Backward](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_Backward) method of Scheduler for viewing the previous immediate visible dates in the scheduler. It will move to previous month if the scheduler view is month, similarly it will move to previous week for week view and previous day for day view.
 
 {% tabs %}
 {% highlight xaml %}

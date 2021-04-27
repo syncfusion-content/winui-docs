@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DropDown Calendar in CalendarDatePicker control | Syncfusion
-description: This page explain about how to Customization the Drop Down of the WinUI CalendarDatePicker (SfCalendarDatePicker) control and items features.
+title: Dropdown Calendar in WinUI Calendar Date Picker control | Syncfusion
+description: Learn about Dropdown Calendar feature of Syncfusion WinUI Calendar Date Picker control with customization support and more.
 platform: winui
 control:  SfCalendarDatePicker
 documentation: ug
 ---
 
-# Dropdown Calendar in WinI Calendar DatePicker
+# Dropdown Calendar in WinUI Calendar Date Picker
 
 This section describes how to select a date from dropdown Calendar and its customization options in [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) control.
 
@@ -15,7 +15,7 @@ This section describes how to select a date from dropdown Calendar and its custo
 
 You can change the alignment of the dropdown spinner as full, center, left, right, top or bottom edge by using the [DropDownPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
 
-N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then `CalendarDatePicker` smartly shifts the spinner alignment.
+N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then `Calendar Date Picker` smartly shifts the spinner alignment.
 
 {% tabs %}
 {% highlight XAML %}
@@ -38,7 +38,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Hide the dropdown button
 
-You can hide the dropdown button in `CalendarDatePicker` by setting the [ShowDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as `false`. The default value of `ShowDropDownButton` property is `true`.
+You can hide the dropdown button in `Calendar Date Picker` by setting the [ShowDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as `false`. The default value of `ShowDropDownButton` property is `true`.
 
 N> When the dropdown button is hidden, you can still open the dropdown calendar using `ALT + down` keyboard shortcut.
 
@@ -57,13 +57,13 @@ sfCalendarDatePicker.ShowDropDownButton = false;
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDatePicker hides the dropdown button](Dropdown-Calendar_images/ShowDropDownButton.png)
+![Calendar Date Picker hides the dropdown button](Dropdown-Calendar_images/ShowDropDownButton.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown)
 
 ## Customize individual items in Calendar
 
-You can change the UI of specific cells in `CalendarDatePicker` dropdown calendar by using the [AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
+You can change the UI of specific cells in `Calendar Date Picker` dropdown calendar by using the [AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
 
 {% tabs %}
 {% highlight C# %}
@@ -251,7 +251,7 @@ public class CustomCalendarItemTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Custom UI of specific date cells in CalendarDatePicker](Getting-Started_images/ItemTemplateSelector.png)
+![Custom UI of specific date cells in Calendar Date Picker](Getting-Started_images/ItemTemplateSelector.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/CustomUI)
 
@@ -274,7 +274,7 @@ sfCalendarDatePicker.FirstDayOfWeek = DayOfWeek.Monday;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI CalendarDatePicker weekdays start from Monday](Getting-Started_images/first-day-of-week.png)
+![WinUI Calendar Date Picker weekdays start from Monday](Getting-Started_images/first-day-of-week.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection)
 
@@ -297,7 +297,7 @@ sfCalendarDatePicker.NumberOfWeeksInView = 4;
 {% endhighlight %}
 {% endtabs %}
 
-![Show particular weeks in WinUI CalendarDatePicker.](Getting-Started_images/weeks-in-view.png)
+![Show particular weeks in WinUI Calendar Date Picker.](Getting-Started_images/weeks-in-view.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection)
 
@@ -320,7 +320,7 @@ sfCalendarDatePicker.OutOfScopeVisibility = OutOfScopeVisibility.Hidden;
 {% endhighlight %}
 {% endtabs %}
 
-![Display only the current month dates in WinUI CalendarDatePicker.](Getting-Started_images/disableoutofscope.png)
+![Display only the current month dates in WinUI Calendar Date Picker.](Getting-Started_images/disableoutofscope.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction)
 
@@ -372,7 +372,7 @@ sfCalendarDatePicker.SelectionShape = CalendarItemHighlightMode.Circle;
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDatePicker highlights the today and selected date](Getting-Started_images/TodayHighlightMode.png)
+![Calendar Date Picker highlights the today and selected date](Getting-Started_images/TodayHighlightMode.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection)
 
@@ -397,7 +397,7 @@ sfCalendarDatePicker.DropDownHeight = 500;
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDatePicker with customized dropdown height and width](Dropdown-Calendar_images/DropDownHeight.png)
+![Calendar Date Picker with customized dropdown height and width](Dropdown-Calendar_images/DropDownHeight.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown)
 
@@ -422,6 +422,6 @@ sfCalendarDatePicker.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDatePicker flow direction changed to right to left](Getting-Started_images/FlowDirection.png)
+![Calendar Date Picker flow direction changed to right to left](Getting-Started_images/FlowDirection.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Formatting)

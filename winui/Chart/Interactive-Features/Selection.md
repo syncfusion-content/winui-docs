@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection support in Syncfusion Chart WinUI
-description: How to select the segment, series, datamarker and customize the appearance of selection in WinUI Chart (SfChart).
+title: Selection in WinUI Chart control | Syncfusion
+description: Learn here all about Selection feature of Syncfusion WinUI Chart control with segment, series selection support and more.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Selection in WinUI Charts (SfChart)
+# Selection in WinUI Chart
 
 SfChart supports selection that allows you to select a segment in a series or series itself by using [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#). 
 

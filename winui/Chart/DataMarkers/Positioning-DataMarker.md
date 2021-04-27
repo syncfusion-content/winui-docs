@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DataMarker label position in Chart | Syncfusion | WinUI
-description: This section describes how to define the data marker label position and its properties for customization in WinUI Charts.
+title: Positioning Data Markers in WinUI Chart control | Syncfusion
+description: Learn here all about Positioning Data Markers feature in Syncfusion WinUI Chart(SfChart) control and more.
 platform: WinUI
 control: Chart
 documentation: ug
 ---
 
-# Positioning the Data Markers in WinUI Charts (SfChart)
+# Positioning Data Markers in WinUI Chart
 
 The positioning of data markers inside the series is defined using [`DataMarkerPosition`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_DataMarkerPosition) property. 
 

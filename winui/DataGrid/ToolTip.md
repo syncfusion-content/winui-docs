@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTip | DataGrid | WinUI | Syncfusion
-description: Learn about ToolTip support and its customization in Syncfusion WinUI DataGrid (SfDataGrid) control and more details.
+title: ToolTip in WinUI DataGrid control | Syncfusion
+description: Learn here all about ToolTip support in Syncfusion WinUI DataGrid(SfDataGrid) control with customization support and more.
 platform: winui
 control: DataGrid
 documentation: ug
 ---
 
-# ToolTip in WinUI DataGrid (SfDataGrid)
+# ToolTip in WinUI DataGrid
 
 ToolTip provides the support to show the pop-up window that displays the information when the mouse hovers in cells of SfDataGrid. 
 
@@ -56,7 +56,7 @@ this.sfDataGrid.Columns["CustomerID"].ShowToolTip = true;
 
 N> `GridColumn.ShowToolTip` takes higher priority than `SfDataGrid.ShowToolTip`.
 
-![Displaying tooltip for record cell in WinUI DataGrid](ToolTip_images/Displaying-tooltip-for-record-cell-in-WinUI-DataGrid.png)
+![Displaying Tooltip for Record Cell in WinUI DataGrid](ToolTip_images/winui-datagrid-record-cell-tooltip.png)
 
 ## Header tooltip
 
@@ -78,7 +78,7 @@ this.sfDataGrid.Columns["OrderID"].ShowHeaderToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying tooltip for header in WinUI DataGrid](ToolTip_images/Displaying-tooltip-for-header-in-WinUI-DataGrid.png)
+![Displaying Tooltip for Header in WinUI DataGrid](ToolTip_images/winui-datagrid-tooltip-for-header.png)
 
 ## ToolTip Customization
 
@@ -122,7 +122,7 @@ public class StringToImageConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying tooltip customization using ToolTipTemplate in WinUI DataGrid](ToolTip_images/Displaying-tooltip-customization-using-ToolTipTemplate-in-WinUI-DataGrid.png)
+![Displaying Tooltip Customization using ToolTipTemplate in WinUI DataGrid](ToolTip_images/winui-datagrid-tooltip-customization-using-tooltiptemplate.png)
 
 ### Customize the ToolTip with ToolTipTemplateSelector
 
@@ -210,11 +210,11 @@ public class ToolTipTemplateSelector : DataTemplateSelector
 
 The below image refers the `DefaultTemplate` which is applied through `ToolTipTemplateSelector`.
 
-![Displaying DefaultTemplate for tooltip using ToolTipTemplateSelector in WinUI DataGrid](ToolTip_images/Displaying-DefaultTemplate-for-tooltip-using-ToolTipTemplateSelector-in-WinUI-DataGrid.png)
+![Displaying DefaultTemplate for Tooltip using ToolTipTemplateSelector in WinUI DataGrid](ToolTip_images/winui-datagrid-default-template-for-tooltip-using-tooltiptemplateselector.png)
 
 The below image refers the `AlternateTemplate` which is applied through `ToolTipTemplateSelector`.
 
-![Displaying AlternateTemplate for tooltip using ToolTipTemplateSelector in WinUI DataGrid](ToolTip_images/Displaying-AlternateTemplate-for-tooltip-using-ToolTipTemplateSelector-in-WinUI-DataGrid.png)
+![Displaying AlternateTemplate for Tooltip using ToolTipTemplateSelector in WinUI DataGrid](ToolTip_images/winui-datagrid-alternate-template-for-tooltip-using-tooltiptemplateselector.png)
 
 ## Events
 

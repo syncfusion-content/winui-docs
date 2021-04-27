@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing support | TreeGrid | WinUI | Syncfusion
-description: Learn how to edit the data in each cell of Syncfusion WinUI TreeGrid (SfTreeGrid) control and more details.
+title: Editing in WinUI TreeGrid control | Syncfusion
+description: Learn here all about Editing feature of Syncfusion WinUI TreeGrid(SfTreeGrid) control with cursor placement support and more.
 platform: winui
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Editing in WinUI TreeGrid (SfTreeGrid)
+# Editing in WinUI TreeGrid
 
 SfTreeGrid provides support for editing and it can be enabled or disabled by setting [SfTreeGrid.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowEditing) property.
 

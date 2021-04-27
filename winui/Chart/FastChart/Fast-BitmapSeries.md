@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Fast Chart | SfChart | WinUI | Syncfusion
-description: This section explains about the types of fast bitmap charts and its properties to create a high performance chart in WinUI Charts (SfChart).
+title: Fast Bitmap Series in WinUI Chart control | Syncfusion
+description: Learn here all about Fast Bitmap Series feature of Syncfusion WinUI Chart(SfChart) control and more.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Fast Bitmap Series in WinUI Charts (SfChart)
+# Fast Bitmap Series in WinUI Chart
 
 A fast bitmap series is a special kind of series that can render a collection with huge number of data points using `WriteableBitmap`. 
 

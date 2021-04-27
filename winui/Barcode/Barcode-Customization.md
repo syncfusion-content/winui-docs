@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization | Barcode | WinUI | Syncfusion
-description: Shows how the Barcode background, foreground and width of the barcode can be changed in Barcode control.
+title: Customization in WinUI Barcode control | Syncfusion
+description: Learn here all about Customization feature in Syncfusion WinUI Barcode control with more background, foreground, Module custom support etc.
 platform: WinUI
 control: Barcode
 documentation: ug
 ---
 
-# Color and size customization
+# Customization in WinUI Barcode
 
 ## Background
 The Barcode background color can be changed using [Background](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.background?view=netcore-3.1#System_Windows_Controls_Control_Background) property.

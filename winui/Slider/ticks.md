@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tick features in Syncfusion WinUI Slider
-description: This section explains about how to show minor and major ticks and also to customize them in the Slider.
+title: Ticks in WinUI Slider control | Syncfusion
+description: Learn here all about Ticks feature of Syncfusion WinUI Slider(SfSlider) control with length, placement support and more.
 platform: WinUI
 control: SfSlider
 documentation: ug
 ---
 
-# Ticks Features in WinUI Slider
+# Ticks in WinUI Slider
 
 This section explains how to add major and minor ticks in the slider.
 

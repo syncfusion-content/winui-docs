@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing| WinUI | DataGrid | Syncfusion
-description: Learn about editing support to edit the cell values with an intuitive editors in Syncfusion WinUI DataGrid (SfDataGrid) control and more details.
+title: Editing in WinUI DataGrid control | Syncfusion
+description: Learn here all about Editing support in Syncfusion WinUI DataGrid(SfDataGrid) control with cursor placement and more.
 platform: winui
 control: DataGrid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-# Editing in WinUI DataGrid (SfDataGrid)
+# Editing in WinUI DataGrid
 
 SfDataGrid provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowEditing) property.
 
@@ -39,7 +39,7 @@ sfDataGrid.Columns["ID"].AllowEditing = true;
 
 N> [GridColumn.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_AllowEditing) takes higher priority than [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowEditing).
 
-![WinUI DataGrid Cell Editing](Editing_images/Editing_image1.png)
+![WinUI DataGrid Cell Editing](Editing_images/winui-datagrid-cell-editing.png)
 
 N> It is mandatory to set the [NavigationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_NavigationMode) to Cell to enable [CurrentCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCurrentCellManager.html#Syncfusion_UI_Xaml_DataGrid_GridCurrentCellManager_CurrentCell) navigation and editing.
 
@@ -85,7 +85,7 @@ sfDataGrid.EditorSelectionBehavior = EditorSelectionBehavior.MoveLast;
 {% endtabs %}
 
 
-![WinUI DataGrid Cell Editing with EditorSelectionBehavior.SelectAll](Editing_images/Editing_image2.png)
+![Cursor placement while editing in WinUI DataGrid](Editing_images/winui-datagrid-editing-cursor-placement.png)
 
 ## Retain editing on lost focus
 
