@@ -19,7 +19,7 @@ This section explains the steps required to add the Ribbon control and its eleme
 
 3.	Import the control namespace `Syncfusion.UI.Xaml.Ribbon` in XAML or C# code.
 
-4.	Initialize the [SfRibbon]((https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html)) control. 
+4.	Initialize the [SfRibbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html) control. 
 
 
 {% tabs %}
@@ -60,7 +60,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-## Add RibbonTab to the ribbon ##
+## Add ribbon tab
 
 We can categorize the command using the [RibbonTab](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonTab.html). Any number of tab elements can be added to the ribbon using the [Tabs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html#Syncfusion_UI_Xaml_Ribbon_SfRibbon_Tabs) property, and you can use the `Header` property to name the tab.
 
@@ -93,10 +93,10 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Add RibbonTab in SfRibbon](Getting-Started-images/Getting-Started-image1.png)
+![Add ribbon tab in ribbon](Getting-Started-images/add-ribbon-tab.png)
 
 
-## Add RibbonGroup ##
+## Add ribbon group
 
 We can group the commands in the ribbon tab using a [RibbonGroup](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGroup.html) and it allows you to add built-in ribbon items such as [RibbonButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonButton.html), [RibbonDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonDropDownButton.html) and [RibbonSplitButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonSplitButton.html), as well as other controls such as checkbox, combobox and radio button etc., can also be added.
 
@@ -151,9 +151,9 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Add RibbonGroup in SfRibbon](Getting-Started-images/Getting-Started-image2.png)
+![Add ribbon group in ribbon tab](Getting-Started-images/add-ribbon-group.png)
 
-## Add RibbonButton ##
+## Add ribbon button
 
 The [RibbonButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonButton.html) represents a normal button and can be added to a ribbon group with different sizes using the `SizeMode` property.You can use the `Content` and `Icon` properties to set the label and icon to the button.
 
@@ -243,9 +243,9 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Add built-in RibbonButton in SfRibbon](Getting-Started-images/Getting-Started-image3.png)
+![Add ribbon button in group](Getting-Started-images/add-ribbon-button.png)
 
-## Add RibbonDropDown ##
+## Add ribbon drop down button
 
 The [RibbonDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonDropDownButton.html) represents a dropdown button that displays the drop-down menu items when clicked. It allows you to arrange a button with different sizes within a ribbon group using the `SizeMode` property. You can use the `Content` and `Icon` properties to set the label and icon to the button, and you can populate the drop-down menu items using using the `Flyout` control in the button.
 
@@ -308,9 +308,9 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Add built-in RibbonDropDownButton in SfRibbon](Getting-Started-images/Getting-Started-image4.png)
+![Add ribbon drop down button in group](Getting-Started-images/add-ribbon-drop-down-button.png)
 
-## Add RibbonSplitButton ##
+## Add ribbon split button
 
 The [RibbonSplitButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonSplitButton.html) represents a combined control that has a primary button that responds to a `Click` event, and a secondary button acts like a drop-down menu with a list of values. It allows you to arrange a button with different sizes within a ribbon group using the `SizeMode` property. You can use the `Content` and `Icon` properties to set the label and icon to the button, and you can populate the drop-down menu items using the `Flyout` control in the button.
 
@@ -378,13 +378,13 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Add built-in RibbonSplitButton in SfRibbon](Getting-Started-images/Getting-Started-image5.png)
+![Add ribbon split button in group](Getting-Started-images/add-ribbon-split-button.png)
 
 N> You can also use other icons types such as   [BitmapIcon](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.bitmapicon?view=winui-3.0-preview), [FontIcon](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.fonticon?view=winui-3.0-preview), [PathIcon](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.pathicon?view=winui-3.0-preview) and [SymbolIcon](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.symbolicon?view=winui-3.0-preview) to the Ribbon items such as RibbonButton, RibbonDropDownButton, RibbonSplitButton and Ribbon Item host controls.
 
-## Add RibbonGallery
+## Add ribbon gallery
 
-The example below shows how to include the RibbonGallery control within a RibbonGroup.
+The example below shows how to include the [RibbonGallery](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGallery.html) control within a RibbonGroup.
 
 {% tabs %}
 {% highlight xaml %}
@@ -413,11 +413,11 @@ rootGalleryGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Adding RibbonGallery in SfRibbon](Getting-Started-images/Getting-Started-image10.png)
+![Add ribbon gallery in group](Getting-Started-images/add-ribbon-gallery.png)
 
-## Host a custom ribbon items to the group ##
+## Host a custom control
 
-You can host other controls such as checkbox, radio button and combobox etc., to a ribbon group using the `ItemTemplate` property of [RibbonItemHost](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonItemHost.html).
+Ribbon allows to host other controls such as checkbox, radio button and combobox etc., in a ribbon group using the `ItemTemplate` property of [RibbonItemHost](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonItemHost.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -491,9 +491,9 @@ You can host other controls such as checkbox, radio button and combobox etc., to
 {% endhighlight %}
 {% endtabs %}
 
-![Host a custom ribbon items to the group](Getting-Started-images/Getting-Started-image6.png)
+![Host a custom controls in ribbon group](Getting-Started-images/host-custom-controls-in-ribbon-group.png)
 
-## Add RibbonBackstage to the ribbon ##
+## Add ribbon backstage
 
 The [RibbonBackstage](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonBackstage.html) provides a separate view to the ribbon and can be added by using the `Backstage` property of ribbon control. You can view the ribbon backstage by clicking the backstage menu button named as `File` by default, which is placed before the ribbon tabs.
 
@@ -578,9 +578,9 @@ The [RibbonBackstage](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ri
 {% endhighlight %}
 {% endtabs %}
 
-![Add RibbonBackstage to the ribbon](Getting-Started-images/Getting-Started-image10.gif)
+![Add ribbon backstage to the ribbon](Getting-Started-images/add-ribbon-backstage.gif)
 
-## Add BackstageView to the ribbon backstage ##
+### Backstage view 
 
 You can host [BackstageView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageView.html) inside the ribbon backstage and use it to manage the settings and options for your application in a separate backstage view.
 
@@ -606,81 +606,9 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %} 
 {% endtabs %}
 
-![Add BackstageView inside the ribbon backstage](Getting-Started-images/Getting-Started-image7.gif)
+![Add backstage view to the ribbon backstage](Getting-Started-images/add-backstage-view.gif)
 
-## Add Backstage items to the BackStageView ##
-
-The backstage items such as [BackstageViewTabItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageViewTabItem.html), [BackstageViewItemSeparator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageViewItemSeparator.html) and [BackstageViewButtonItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageViewButtonItem.html) can be added to the top of the backstage view using the [Items](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageView.html#Syncfusion_UI_Xaml_Ribbon_BackstageView_Items) property. You can also add backstage items to the bottom of the backstage view using the [FooterItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageView.html#Syncfusion_UI_Xaml_Ribbon_BackstageView_FooterItems) property.
-
-{% tabs %}
-{% highlight xaml %}
-<Grid x:Name="rootGrid">
-    <ribbon:SfRibbon x:Name="sfRibbon">
-        <ribbon:SfRibbon.Backstage>
-            <ribbon:RibbonBackstage>
-                <ribbon:BackstageView>
-                    <ribbon:BackstageView.Items>
-                        <ribbon:BackstageViewTabItem Header="New" Icon="NewFolder" />
-                        <ribbon:BackstageViewTabItem Header="Open" Icon="OpenWith" /> 
-                        <ribbon:BackstageViewItemSeparator />
-                        <ribbon:BackstageViewTabItem Header="Info" />
-                        <ribbon:BackstageViewButtonItem Header="Save" />
-                        <ribbon:BackstageViewButtonItem Header="Close" />
-                    </ribbon:BackstageView.Items>
-                    <ribbon:BackstageView.FooterItems>
-                        <ribbon:BackstageViewItemSeparator />
-                        <ribbon:BackstageViewTabItem Header="Account" />
-                        <ribbon:BackstageViewTabItem Header="FeedBack" />
-                        <ribbon:BackstageViewButtonItem  Header="Option" />
-                    </ribbon:BackstageView.FooterItems>
-                </ribbon:BackstageView>
-            </ribbon:RibbonBackstage>
-        </ribbon:SfRibbon.Backstage>
-    </ribbon:SfRibbon>
-</Grid>
-{% endhighlight %}   
-{% highlight c# %}
-SfRibbon sfRibbon = new SfRibbon();
-
-RibbonBackstage ribbonBackstage = new RibbonBackstage();
-BackstageView backstageView = new BackstageView();
-
-BackstageViewButtonItem newTab = new BackstageViewButtonItem() { Content = "New", Icon = new SymbolIcon(Symbol.NewFolder) };
-BackstageViewButtonItem openTab = new BackstageViewButtonItem() { Content = "Open", Icon = new SymbolIcon(Symbol.OpenWith) };
-BackstageViewItemSeparator separator1 = new BackstageViewItemSeparator();
-BackstageViewButtonItem saveButton = new BackstageViewButtonItem() { Content = "Save" };
-BackstageViewButtonItem closeButton = new BackstageViewButtonItem() { Content = "Close" };
-
-//Footer items
-BackstageViewItemSeparator footerseparator = new BackstageViewItemSeparator();
-BackstageViewButtonItem accountTab = new BackstageViewButtonItem() { Content = "New" };
-BackstageViewButtonItem feedbackTab = new BackstageViewButtonItem() { Content = "Open"};
-BackstageViewButtonItem optionButton = new BackstageViewButtonItem() { Content = "Option" };
-
-//Add backstage items to backstage view
-backstageView.Items.Add(newTab);
-backstageView.Items.Add(openTab);
-backstageView.Items.Add(separator1);
-backstageView.Items.Add(saveButton);
-backstageView.Items.Add(closeButton);
-
-//Add backstage items to backstage view
-backstageView.FooterItems.Add(footerseparator);
-backstageView.FooterItems.Add(accountTab);
-backstageView.FooterItems.Add(feedbackTab);
-backstageView.FooterItems.Add(optionButton);
-
-ribbonBackstage.Content = backstageView;
-sfRibbon.Backstage = ribbonBackstage;
-this.rootGrid.Children.Add(sfRibbon);
-
-{% endhighlight %}
-{% endtabs %}
-
-![Add Backstage items to the BackStageView](Getting-Started-images/Getting-Started-image8.png)
-
-
-## Add RightPane to the ribbon ##
+## Add right pane
 
 The Right pane is located at the right side of the ribbon tab. Any controls can be placed inside the pane. The contents in the right pane are shown irrespective of the currently selected tab.
 
@@ -714,4 +642,4 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Add RightPane to the ribbon](Getting-Started-images/Getting-Started-image9.png)
+![Add right pane to the ribbon](Getting-Started-images/add-right-pane.png)
