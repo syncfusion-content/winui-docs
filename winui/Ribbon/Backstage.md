@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon backstage | WinUI | Ribbon | Syncfusion 
-description: Learn about Ribbon backstage and its features in the Syncfusion WinUI Ribbon (SfRibbon) control and more details.
+title: Backstage in WinUI Ribbon control | Syncfusion
+description: Learn here all about Backstage support in Syncfusion WinUI Ribbon control with visibility support and more.
 platform: winui
 control: Ribbon
 documentation: ug
 ---
 
-# Backstage with WinUI Ribbon (SfRibbon)
+# Backstage in WinUI Ribbon
 
 The [RibbonBackstage](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonBackstage.html) allows you to host any controls to create a custom view based on the requirements of the application and it can be added by using the `Backstage` property. Backstage appears as the first tab in the top left corner named File and opens a backstage view when you click the `File` menu button. 
 
@@ -111,9 +111,9 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {% endhighlight %} 
 {% endtabs %}
 
-![Hosting of custom controls in Ribbon backstage](Backstage-images/host-custom-controls-ribbon-backstage.gif)
+![Hosting of custom controls in Ribbon backstage](Backstage-images/Backstage-image9.gif)
 
-## File menu (backstage button) visibility
+### Backstage button visibility
 
 Ribbon allows you to show or hide a backstage menu button using the [ShowBackstageMenuButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html#Syncfusion_UI_Xaml_Ribbon_SfRibbon_ShowBackstageMenuButton) property.
 
@@ -134,46 +134,9 @@ Ribbon allows you to show or hide a backstage menu button using the [ShowBacksta
 {% endhighlight %} 
 {% endtabs %}
 
-![File backstage menu button visibility](Backstage-images/backstage-file-menu-button-visibility.png)
+![Customize the backstage visibility](Backstage-images/Backstage-image8.png)
 
-## File menu (backstage button) text
-
-The [BackstageMenuButtonContent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html#Syncfusion_UI_Xaml_Ribbon_SfRibbon_BackstageMenuButtonContent) property allows you to set a content of the backstage menu button in the [Ribbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html). The content of the property is specified as `File` by default.
-
-## Backstage view
-
-Ribbon provides the [BackstageView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageView.html) as separate view like in MSOutlook, MSWord applications, that can be hosted inside the ribbon backstage. The backstage view contains tabs and buttons, and separators are placed between backstage view items to create groups and it can be added using `Items` property. The view can be placed at the top or bottom of the application.
-
-{% tabs %}
-{% highlight xaml %}
-<ribbon:SfRibbon>
-    <ribbon:SfRibbon.Tabs>
-        <ribbon:RibbonTab Header="Home" />
-        <ribbon:RibbonTab Header="Insert" />
-        <ribbon:RibbonTab Header="View" />
-        <ribbon:RibbonTab Header="Layout" />
-    </ribbon:SfRibbon.Tabs>
-    <ribbon:SfRibbon.Backstage>
-        <ribbon:RibbonBackstage>
-            <ribbon:BackstageView>
-                <ribbon:BackstageView.Items>
-                    <ribbon:BackstageViewTabItem Header="New" />
-                    <ribbon:BackstageViewTabItem Header="Open" />
-                    <ribbon:BackstageViewItemSeparator />
-                    <ribbon:BackstageViewTabItem Header="Info" />
-                    <ribbon:BackstageViewButtonItem Header="Save" />
-                    <ribbon:BackstageViewButtonItem Header="Close" />
-                </ribbon:BackstageView.Items>
-            </ribbon:BackstageView>
-        </ribbon:RibbonBackstage>
-    </ribbon:SfRibbon.Backstage>
-</ribbon:SfRibbon>
-{% endhighlight %} 
-{% endtabs %}
-
-![Add backstage view to the ribbon backstage](Backstage-images/add-backstage-view-in-ribbon-backstage.png)
-
-## Backstage view visibility
+### Backstage view visibility
 
 The Ribbon allows you to show or hide a backstage view visibility using the `IsBackstageOpen` property. 
 
@@ -250,7 +213,41 @@ private void ExecuteButtonCommand(object obj)
 {% endhighlight %} 
 {% endtabs %}
 
-## Back button visibility
+## Host Backstage view to the RibbonBackstage
+
+Ribbon provides the [BackstageView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageView.html) as separate view like in MSOutlook, MSWord applications, that can be hosted inside the ribbon backstage. The backstage view contains tabs and buttons, and separators are placed between backstage view items to create groups and it can be added using `Items` property. The view can be placed at the top or bottom of the application.
+
+{% tabs %}
+{% highlight xaml %}
+<ribbon:SfRibbon>
+    <ribbon:SfRibbon.Tabs>
+        <ribbon:RibbonTab Header="Home" />
+        <ribbon:RibbonTab Header="Insert" />
+        <ribbon:RibbonTab Header="View" />
+        <ribbon:RibbonTab Header="Layout" />
+    </ribbon:SfRibbon.Tabs>
+    <ribbon:SfRibbon.Backstage>
+        <ribbon:RibbonBackstage>
+            <ribbon:BackstageView>
+                <ribbon:BackstageView.Items>
+                    <ribbon:BackstageViewTabItem Header="New" />
+                    <ribbon:BackstageViewTabItem Header="Open" />
+                    <ribbon:BackstageViewItemSeparator />
+                    <ribbon:BackstageViewTabItem Header="Info" />
+                    <ribbon:BackstageViewButtonItem Header="Save" />
+                    <ribbon:BackstageViewButtonItem Header="Close" />
+                </ribbon:BackstageView.Items>
+            </ribbon:BackstageView>
+        </ribbon:RibbonBackstage>
+    </ribbon:SfRibbon.Backstage>
+</ribbon:SfRibbon>
+{% endhighlight %} 
+{% endtabs %}
+
+![Adding BackstageView to the RibbonBackstage](Backstage-images/Backstage-image1.png)
+
+
+### Back button visibility
 
 The [BackstageView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageView.html) allows you to show or hide the back button using `ShowBackButton` property. 
 
@@ -266,13 +263,9 @@ The [BackstageView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribb
 {% endhighlight %} 
 {% endtabs %}
 
-![Backstage back button visibility](Backstage-images/backstage-back-button-visibility.png)
+![Customize the back button visibility](Backstage-images/Backstage-image2.png)
 
-## Backstage items
-
-The backstage items such as [BackstageViewTabItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageViewTabItem.html), [BackstageViewButtonItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageViewButtonItem.html) and  [BackstageViewItemSeparator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageViewItemSeparator.html) can be added to the top of the backstage view using the [Items](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageView.html#Syncfusion_UI_Xaml_Ribbon_BackstageView_Items) property.
-
-## Backstage tab item
+## Add BackstageViewTabItem
 
 The [BackstageViewTabItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageViewTabItem.html) can be added to the backstage view and provide a separate view of the backstage when you click on the tab item. You can use the Header property to provide a name to the tab.
 
@@ -283,8 +276,10 @@ The [BackstageViewTabItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
         <ribbon:RibbonBackstage>
             <ribbon:BackstageView>
                 <ribbon:BackstageView.Items>
-                    <ribbon:BackstageViewTabItem Header="New" />                  
-                    <ribbon:BackstageViewTabItem Header="Open" />                
+                    <ribbon:BackstageViewTabItem Header="New">
+                    </ribbon:BackstageViewTabItem>
+                    <ribbon:BackstageViewTabItem Header="Open">
+                    </ribbon:BackstageViewTabItem>
                 </ribbon:BackstageView.Items>
             </ribbon:BackstageView>
         </ribbon:RibbonBackstage>
@@ -293,9 +288,9 @@ The [BackstageViewTabItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 {% endhighlight %} 
 {% endtabs %}
 
-![Add backstage tab item to the backstage view](Backstage-images/add-backstage-tab-item.png)
+![Adding BackstageViewTabItem to the BackstageView](Backstage-images/Backstage-image3.png)
 
-## Backstage button item
+## Add BackstageViewButtonItem
 
 The [BackstageViewButtonItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageViewButtonItem.html) can be added to the backstage view that performs the actions of the `Click` event. You can also use the Command instead of Click Event, and the buttons with the name Save and Close are added using the `Content` property.
 
@@ -328,9 +323,9 @@ The [BackstageViewButtonItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI
 {% endhighlight %} 
 {% endtabs %}
 
-![Add backstage button item to the backstage view](Backstage-images/add-backstage-button-item.png)
+![Adding BackstageViewButtonItem to the BackstageView](Backstage-images/Backstage-image4.png)
 
-## Backstage separator item
+## Add BackstageViewItemSeparator
 
 The [BackstageViewItemSeparator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageViewItemSeparator.html) displays a line used to separate the backstage view items such as tabs and buttons. The separator can be added to backstage view for the following code snippet.
 
@@ -355,9 +350,9 @@ The [BackstageViewItemSeparator](https://help.syncfusion.com/cr/winui/Syncfusion
 {% endhighlight %} 
 {% endtabs %}
 
-![Add backstage separator item to the backstage view](Backstage-images/add-backstage-separator-item.png)
+![Adding BackstageViewItemSeparator to the BackstageView](Backstage-images/Backstage-image5.png)
 
-## Footer items in backstage view
+## Add FooterItems to the BackstageView
 
 The [BackstageView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageView.html) allows you to add footer items using `FooterItems` property and the backstage items can be added to the footer of backstage view for the following code snippet.
 
@@ -384,9 +379,9 @@ The [BackstageView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribb
 {% endhighlight %} 
 {% endtabs %}
 
-![Add footer items to the backstage view](Backstage-images/add-backstage-view-footer-items.png)
+![Adding FooterItems to the BackstageView](Backstage-images/Backstage-image6.png)
 
-## Icons for backstage view items
+## Setting Icon to the BackstageView Items
 
 BackstageView items such as [BackstageViewTabItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageViewTabItem.html) and [BackstageViewButtonItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageViewButtonItem.html) and tabs can display an icon as graphical content using the `Icon` property
 
@@ -420,6 +415,6 @@ BackstageView items such as [BackstageViewTabItem](https://help.syncfusion.com/c
 {% endhighlight %} 
 {% endtabs %}
 
-![Setting Icon to the backstage view items](Backstage-images/icons-for-backstage-items.png)
+![Setting Icon to the BackstageView items](Backstage-images/Backstage-image7.png)
 
 N> You can also use other icons types such as   [BitmapIcon](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.bitmapicon?view=winui-3.0-preview), [FontIcon](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.fonticon?view=winui-3.0-preview), [PathIcon](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.pathicon?view=winui-3.0-preview) and [SymbolIcon](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.symbolicon?view=winui-3.0-preview) to the backstage view items.
