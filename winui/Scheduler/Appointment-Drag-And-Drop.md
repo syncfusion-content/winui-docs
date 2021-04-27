@@ -3,11 +3,11 @@ layout: post
 title: Appointment Drag and Drop in WinUI Scheduler control | Syncfusion
 description: Learn here all about Appointment Drag and Drop support in Syncfusion WinUI Scheduler(SfScheduler) control and more.
 platform: winui
-control: Scheduler
+control: SfScheduler
 documentation: ug
 ---
 
-# Appointment Drag and Drop in WinUI Scheduler
+# Appointment Drag and Drop in WinUI Scheduler (SfScheduler)
 
 The Scheduler supports to reschedule the appointment by performing the drag and drop operation.
 
