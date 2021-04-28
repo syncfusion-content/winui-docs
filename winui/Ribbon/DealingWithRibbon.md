@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dealing with Ribbon in WinUI Ribbon control | Syncfusion
-description: Learn here all about Dealing with Ribbon feature of Syncfusion WinUI Ribbon(sfRibbon) control and more.
+description:  Learn here all about dealing with Ribbon feature of Syncfusion WinUI Ribbon(sfRibbon) control and more.
 platform: winui
 control: Ribbon
 documentation: ug
@@ -45,11 +45,11 @@ The `SelectedTab` property returns the value of the currently selected [RibbonTa
 
 N> The selected index value should not exceed the child count of the `Tabs` collection in the [Ribbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html).
 
-### Detecting selection changes in ribbon tab
+### Detecting selection changes in the Ribbon tab
 
 The [SelectedTabChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html#Syncfusion_UI_Xaml_Ribbon_SfRibbon_SelectedTabChanged) event triggers when a user attempts to switch the [RibbonTab](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonTab.html) in a Ribbon.
 
-* The sender argument contains the [SfRibbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html). This argument is of type object but can be cast to the SfRibbon type.
+* The sender argument contains the [SfRibbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html). This argument is of type object but can be casted to the SfRibbon type.
 * The second argument is a `SelectionChangedEventArgs` that receives the old and newly selected ribbon tabs in an argument.
 
 {% tabs %}
