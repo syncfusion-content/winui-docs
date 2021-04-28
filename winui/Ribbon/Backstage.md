@@ -143,7 +143,7 @@ The [BackstageMenuButtonContent](https://help.syncfusion.com/cr/winui/Syncfusion
 
 ## Backstage view
 
- Ribbon provides the [BackstageView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageView.html) as separate view like in MS Outlook and MS Word applications, that can be hosted inside the Ribbon backstage.The backstage view contains tabs and buttons. 
+ Ribbon provides the [BackstageView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.BackstageView.html) as separate view like in Microsoft Outlook and Word applications, that can be hosted inside the Ribbon backstage.The backstage view contains tabs and buttons. 
  Separators are placed between backstage view items to create groups and it can be added using `Items` property. The view can be placed at the top or bottom of the application.
 
 {% tabs %}
