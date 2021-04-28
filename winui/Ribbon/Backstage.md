@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ribbon Backstage | WinUI | Ribbon | Syncfusion 
-description: Learn about Ribbon backstage and its features in the Syncfusion WinUI Ribbon (SfRibbon) control and more details.
+title: Backstage in WinUI Ribbon | Syncfusion
+description: Learn here all about Backstage feature, Backstage View of Syncfusion WinUI Ribbon (SfRibbon) control and more.
 platform: winui
 control: Ribbon
 documentation: ug
