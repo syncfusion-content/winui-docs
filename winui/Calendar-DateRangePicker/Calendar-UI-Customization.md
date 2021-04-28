@@ -257,7 +257,7 @@ You can customize the colors of day names and headers of month, year, decade and
 <td>SyncfusionBodyFontSize</td>
 <td>Key to change the font size of calendar items region.</td>
 </tr>
-<table/>
+</table>
 
 {% tabs %}
 {% highlight xaml %}
