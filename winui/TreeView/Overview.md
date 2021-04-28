@@ -20,5 +20,5 @@ The Syncfusion [WinUI TreeView](https://www.syncfusion.com/winui-controls/treevi
 * `Templating`: Provides complete UI customization using the template and template selectors.
 * `Root lines`: Support to show the lines between tree nodes.
 
-![Overview of WinUI TreeView](Overview_images/Overview_image.jpg)
+![Overview of WinUI TreeView](Overview_images/winui-treeview-overview.jpg)
 

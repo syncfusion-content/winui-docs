@@ -212,7 +212,7 @@ class ItemTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-![ItemTemplateSelector in TreeView ](Appearance_images/ItemTemplateSelector_image.jpg)
+![Customize the Appearance of Each Item with Template Based on ItemTemplateSelector in WinUI TreeView](Appearance_images/winui-treeview-item-with-template-based-on-itemtemplateselector.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Item-Template-Selector)
 
@@ -338,7 +338,7 @@ public class FontAttributeConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Level based styling in TreeView ](Appearance_images/LevelBasedStyling_image.jpg)
+![Level Based Styling in WinUI TreeView](Appearance_images/winui-treeview-level-based-styling.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Level-Based-Styling)
 
@@ -360,4 +360,4 @@ treeView.IsAnimationEnabled = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Animation in TreeView ](Appearance_images/Animation.gif)
+![WinUI TreeView Items displays with Expanding or Collapsing in Animation](Appearance_images/winui-treeview-with-expand-or-collapse-in-animation.gif)

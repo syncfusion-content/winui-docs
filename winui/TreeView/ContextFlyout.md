@@ -43,7 +43,7 @@ The TreeView provides support for the following built-in commands
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeView with ContextFlyout using built-in commands](ContextFlyout_images/ContextFlyout_image1.png)
+![WinUI TreeView with ContextFlyout using Built-in Commands](ContextFlyout_images/winui-treeview-context-flyout-using-built-in-command.png)
 
 ## Custom commands
 
@@ -98,7 +98,7 @@ public class FileManagerViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeView with ContextFlyout using custom commands](ContextFlyout_images/ContextFlyout_image2.png)
+![WinUI TreeView with ContextFlyout using Custom Commands](ContextFlyout_images/winui-treeview-context-flyout-using-custom-command.png)
 
 ## Event customization
 
