@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Header in WinUI Scheduler control | Syncfusion
-description: Learn here all about Header support in Syncfusion WinUI Scheduler(SfScheduler) control with customization support and more.
+description: Learn here all about to customize header height, date format and appearance of Syncfusion WinUI Scheduler (SfScheduler) control and more. 
 platform: winui
-control: Scheduler
+control: SfScheduler
 documentation: ug
 ---
 
-# Header in WinUI Scheduler
+# Header in WinUI Scheduler (SfScheduler)
 
 You can change the header height, date format, and appearance of SfScheduler.
 
