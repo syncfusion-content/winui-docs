@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Dropdown Calendar in WinUI Calendar DateRangePicker | Syncfusion
-description: Learn here all about Dropdown Calendar feature of Syncfusion WinUI Calendar DateRangePicker control and more.
+title: Dropdown Calendar in WinUI CalendarDateRangePicker | Syncfusion
+description: Learn here all about Dropdown Calendar feature of Syncfusion WinUI Calendar DateRange Picker control and more.
 platform: winui
 control:  SfCalendarDateRangePicker
 documentation: ug
 ---
 
-# Dropdown Calendar in WinUI Calendar DateRangePicker
+# Dropdown Calendar in WinUI Calendar DateRange Picker
 
-This section describes how to select a date range from dropdown calendar and customization options available in `Calendar DateRangePicker` control.
+This section describes how to select a date range from dropdown calendar and customization options available in `Calendar DateRange Picker` control.
 
 ## Change dropdown alignment
 
 You can change the alignment of the dropdown calendar as full, center, left, right, top or bottom edge by using the [`DropDownPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is **Bottom**.
 
-N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then `Calendar DateRangePicker` smartly shifts the dropdown calendar alignment.
+N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then `Calendar DateRange Picker` smartly shifts the dropdown calendar alignment.
 
 {% tabs %}
 {% highlight XAML %}
@@ -36,7 +36,7 @@ sfCalendarDateRangePicker.DropDownPlacement = FlyoutPlacementMode.Right;
 
 ## Change dropdown size
 
-You can change the size of dropdown calendar in `Calendar DateRangePicker` by using [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownHeight` property is **Auto**.
+You can change the size of dropdown calendar in `Calendar DateRange Picker` by using [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownHeight` property is **Auto**.
 
 N> The dropdown size will be automatically resized based on the calendar and preset items hosted in it.
 
@@ -55,11 +55,11 @@ sfCalendarDateRangePicker.DropDownHeight = 500;
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar DateRangePicker with customized dropdown height](Dropdown-Calendar_images/DropDownHeight.png)
+![Calendar DateRange Picker with customized dropdown height](Dropdown-Calendar_images/DropDownHeight.png)
 
 ## Customize individual items in Calendar
 
-You can change the UI of specific cells in `Calendar DateRangePicker` dropdown calendar by using the [FlyoutBase.AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) property and `DropDownFlyout` control.
+You can change the UI of specific cells in `Calendar DateRange Picker` dropdown calendar by using the [FlyoutBase.AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) property and `DropDownFlyout` control.
 
 1. Create a **EventDataConverter** class and set the special dates for specific events. 
 
@@ -202,7 +202,7 @@ public class EventDataConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Custom UI of specific date cells in Calendar DateRangePicker](DropDown-Calendar_images/Customization.png)
+![Custom UI of specific date cells in Calendar DateRange Picker](DropDown-Calendar_images/Customization.png)
 
 ## Customize using theme keys
 
@@ -325,4 +325,4 @@ You can customize the colors of day names and headers of month, year, decade and
 {% endhighlight %}
 {% endtabs %}
 
-![Customize calendar by theme keys in WinUI Calendar DateRangePicker](Calendar-UI-Customization_images/customize-theme-keys.png)
+![Customize calendar by theme keys in WinUI Calendar DateRange Picker](Calendar-UI-Customization_images/customize-theme-keys.png)
