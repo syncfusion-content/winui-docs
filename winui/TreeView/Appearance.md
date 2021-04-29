@@ -212,7 +212,7 @@ class ItemTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Customize the Appearance of Each Item with Template Based on ItemTemplateSelector in WinUI TreeView](Appearance_images/winui-treeview-item-with-template-based-on-itemtemplateselector.jpg)
+![WinUI TreeView displays Customizing Each Item Based on ItemTemplateSelector](Appearance_images/winui-treeview-item-with-template-based-on-itemtemplateselector.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Item-Template-Selector)
 
@@ -360,4 +360,4 @@ treeView.IsAnimationEnabled = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeView Items displays with Expanding or Collapsing in Animation](Appearance_images/winui-treeview-with-expand-or-collapse-in-animation.gif)
+![WinUI TreeView displays Expanding or Collapsing Items in Animation](Appearance_images/winui-treeview-with-expand-or-collapse-in-animation.gif)
