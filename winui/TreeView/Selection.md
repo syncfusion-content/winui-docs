@@ -29,7 +29,7 @@ treeView.SelectionMode = SelectionMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeView with Selection](Selection_images/Multiple_mode.jpg)
+![WinUI TreeView Selection](Selection_images/winui-treeview-selection.jpg)
 
 ## Programmatic Selection
 
