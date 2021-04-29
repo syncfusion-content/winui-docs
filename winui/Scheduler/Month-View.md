@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Month View in WinUI Scheduler control | Syncfusion
-description: Learn here all about Month View support in Syncfusion WinUI Scheduler(SfScheduler) control and more.
+description: Learn here all about to customize the appearance and change the date format for Month view in Syncfusion WinUI Scheduler (SfScheduler) control and more.
 platform: winui
-control: Scheduler
+control: SfScheduler
 documentation: ug
 ---
 
-# Month View in WinUI Scheduler
+# Month View in WinUI Scheduler (SfScheduler)
 
 By default, the month view of the scheduler displays the days of a specific month and current month initially. The current date color is differentiated from other dates of the current month.
 

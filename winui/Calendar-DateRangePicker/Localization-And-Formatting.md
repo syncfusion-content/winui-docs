@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Localize and format WinUI CalendarDateRangePicker control|Syncfusion
-description: This section describes how to apply localization and changed formats in dropdown calendar of Calendar DateRangePicker (SfCalendarDateRangePicker) control.
+description: This section describes how to apply localization and changed formats in dropdown calendar of Calendar DateRange Picker (SfCalendarDateRangePicker) control.
 platform: WinUI
 control: SfCalendarDateRangePicker
 documentation: ug
 ---
 
-# Localize and change format calendar in WinUI Calendar DateRangePicker
+# Localize and change format calendar in WinUI Calendar DateRange Picker
 
 ## Types of Calendar
 
-The `Calendar DateRangePicker` control supports different type of calendars such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using [`CalendarIdentifier`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_CalendarIdentifier) property. The default value of `CalendarIdentifier` property is **GregorianCalendar**.
+The `Calendar DateRange Picker` control supports different type of calendars such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using [`CalendarIdentifier`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_CalendarIdentifier) property. The default value of `CalendarIdentifier` property is **GregorianCalendar**.
 
 You can select the required `CalendarIdentifier` value from below types.
  * JulianCalendar
@@ -28,7 +28,7 @@ N> Japanese and Lunar type calendars are not supported in `Calendar` control.
 
 N> When `CalendarIdentifier` and `FlowDirection` properties are set, `FlowDirection` property is given higher precedence.
 
-N> `Calendar DateRangePicker` control updates the flow direction visually based on the `CalendarIdentifier` property value.
+N> `Calendar DateRange Picker` control updates the flow direction visually based on the `CalendarIdentifier` property value.
 
 {% tabs %}
 {% highlight xaml %}
@@ -45,7 +45,7 @@ sfCalendarDateRangePicker.CalendarIdentifier = "HebrewCalendar";
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Hebrew-type WinUI Calendar DateRangePicker.](Getting-Started_images/Hebrew-calendarIdentifier.png)
+![Displaying Hebrew-type WinUI Calendar DateRange Picker.](Getting-Started_images/Hebrew-calendarIdentifier.png)
 
 ## Change the language
 
@@ -66,7 +66,7 @@ sfCalendarDateRangePicker.Language = "ar-AR";
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying arabic cultured WinUI Calendar DateRangePicker.](Getting-Started_images/LanguageView.png)
+![Displaying arabic cultured WinUI Calendar DateRange Picker.](Getting-Started_images/LanguageView.png)
 
 ## Change editor display format
 
@@ -86,7 +86,7 @@ sfCalendarDateRangePicker.FormatString= "{0:D}-{1:D}";
 {% endhighlight  %}
 {% endtabs %}
 
-![Calendar DateRangePicker selected date with month format](Getting-Started_images/FormatString.png)
+![Calendar DateRange Picker selected date with month format](Getting-Started_images/FormatString.png)
 
 ## Change calendar display format
 
@@ -115,12 +115,12 @@ sfCalendarDateRangePicker.MonthHeaderFormat = "{month.abbreviated} {year.abbrevi
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying full month and abbreviated year format in WinUI Calendar DateRangePicker.](Getting-Started_images/dateformat.gif)
+![Displaying full month and abbreviated year format in WinUI Calendar DateRange Picker.](Getting-Started_images/dateformat.gif)
 
 
 ## First day of week
 
-By default, **Sunday** is shown as the first day of the week in a dropdown calendar of `Calendar DateRangePicker` control. You can change the first day of week, by changing the [`FirstDayOfWeek`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_FirstDayOfWeek) property value. 
+By default, **Sunday** is shown as the first day of the week in a dropdown calendar of `Calendar DateRange Picker` control. You can change the first day of week, by changing the [`FirstDayOfWeek`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_FirstDayOfWeek) property value. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -137,11 +137,11 @@ sfCalendarDateRangePicker.FirstDayOfWeek = DayOfWeek.Monday;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRangePicker weekdays start from Monday](Dropdown-Calendar_images/FirstDayOfWeek.png)
+![WinUI Calendar DateRange Picker weekdays start from Monday](Dropdown-Calendar_images/FirstDayOfWeek.png)
 
 ## Change flow direction
 
-By default, flow direction is changed automatically based on selected `CalendarIdentifier` value in `Calendar DateRangePicker` control. However you can override it by explicitly specifying the `FlowDirection` property value. The default value of `FlowDirection` property is **LeftToRight**.
+By default, flow direction is changed automatically based on selected `CalendarIdentifier` value in `Calendar DateRange Picker` control. However you can override it by explicitly specifying the `FlowDirection` property value. The default value of `FlowDirection` property is **LeftToRight**.
 
 N> When `CalendarIdentifier` and `FlowDirection` properties are set, `FlowDirection` property is given higher precedence.
 
@@ -160,4 +160,4 @@ sfCalendarDateRangePicker.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarDateRangePicker flow direction changed to right to left](Dropdown-Calendar_images/FlowDirection.png)
+![Calendar DateRange Picker flow direction changed to right to left](Dropdown-Calendar_images/FlowDirection.png)

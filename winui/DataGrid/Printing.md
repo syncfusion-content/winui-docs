@@ -32,7 +32,7 @@ sfDataGrid.Print();
 
 Print method opens the print dialog where user can select the available printer, change the orientation and preview of the DataGrid to be printed will be loaded on print preview panel.
 
-![Print preview window for WinUI DataGrid before printing](Printing-images/Printing-image1.png)
+![WinUI DataGrid Print Preview Window](Printing-images/winui-datagrid-print-preview-window.png)
 
 ### Scaling
 
@@ -77,7 +77,7 @@ sfDataGrid.Print();
 {% endhighlight %}
 {% endtabs %}
 
-![Shows stacked headers printing in WinUI DataGrid](Printing-images/Printing-image2.png)
+![WinUI DataGrid displays Printing with Stacked Headers](Printing-images/winui-datagrid-printing-with-stacked-headers.png)
 
 
 ## Page Settings
@@ -152,7 +152,7 @@ sfDataGrid.Print();
 
 3.Now run the application and you can see page header in all the pages. In the same way, you can set [PrintSettings.FooterTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_FooterTemplate) also.
 
-![Customized HeaderTemplate and HeaderHeight in print preview window for WinUI DataGrid](Printing-images/Printing-image3.png)
+![Customized HeaderTemplate and HeaderHeight in WinUI DataGrid Print Preview Window](Printing-images/winui-datagrid-customized-header-print-preview-window.png)
 
 N> [DataGridPrintManager](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html) is the DataContext for [DataGridPrintPageControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintPageControl.html), where the header and footer templates are loaded.
 
@@ -179,7 +179,7 @@ sfDataGrid.Print();
 {% endhighlight %}
 {% endtabs %}
 
-![Current date time in print preview window for WinUI DataGrid](Printing-images/Printing-image4.png)
+![WinUI DataGrid displays Current DateTime in Print Preview Window](Printing-images/winui-datagrid-current-date-time-in-print-preview-window.png)
 
 ## Printing with styles
 
@@ -205,7 +205,7 @@ sfDataGrid.Print();
 {% endhighlight %}
 {% endtabs %}
 
-![Shows same style as in view for WinUI DataGrid using CanPrintStyles API while printing](Printing-images/Printing-image5.png)
+![WinUI DataGrid displays same style in view using CanPrintStyles property while printing](Printing-images/winui-datagrid-print-with-same-style-in-view.png)
 
 ## Printing Customization 
 
@@ -242,7 +242,7 @@ sfDataGrid.PrintSettings.PrintManager.Print();
 {% endhighlight %}
 {% endtabs %}
 
-![Customization of row height while printing in WinUI DataGrid](Printing-images/Printing-image6.png)
+![WinUI DataGrid displays Customization of Row Height while Printing](Printing-images/winui-datagrid-customization-of-row-height-while-printing.png)
 
 ### Hiding rows while printing
      
@@ -308,7 +308,7 @@ sfDataGrid.PrintSettings.PrintManager.Print();
 {% endhighlight %}
 {% endtabs %}
 
-![Shows removal column while printing in WinUI DataGrid](Printing-images/Printing-image7.png)
+![WinUI DataGrid displays Removed Column while Printing](Printing-images/winui-datagrid-print-removed-column.png)
 
 ### Customize the header text while printing
 
@@ -342,7 +342,7 @@ sfDataGrid.PrintSettings.PrintManager.Print();
 {% endhighlight %}
 {% endtabs %}
 
-![customize the column header text while printing in WinUI DataGrid](Printing-images/Printing-image8.png)
+![WinUI DataGrid displays customizing the column header text while printing](Printing-images/winui-datagrid-customizing-the-column-header-text.png)
 
 ### Styling Rows
 
@@ -440,7 +440,7 @@ Unbound row cells
 </tr>
 </table>
 
-![Row styling while printing in WinUI DataGrid](Printing-images/Printing-image9.png)
+![WinUI DataGrid displays Custom Style in Row while Printing](Printing-images/winui-datagrid-custom-row-style.png)
 
 ### Setup alternate row style
 
@@ -475,7 +475,7 @@ sfDataGrid.PrintSettings.PrintManager.Print();
 {% endhighlight %}
 {% endtabs %}
 
-![Alternate row styling while printing in WinUI DataGrid](Printing-images/Printing-image10.png)
+![WinUI DataGrid displays Custom Style in Alternative Rows while Printing](Printing-images/winui-datagrid-custom-style-in-alternative-row.png)
 
 ### Styling Columns
 
@@ -508,7 +508,7 @@ sfDataGrid.PrintSettings.PrintManager.Print();
 {% endhighlight %}
 {% endtabs %}
 
-![Column styling while printing in WinUI DataGrid](Printing-images/Printing-image11.png)
+![WinUI DataGrid displays custom Style in Column while Printing](Printing-images/winui-datagrid-custom-style-in-column.png)
 
 N> [GetColumnWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintManager_GetColumnWidth_System_String_), [GetColumnTextWrapping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintManager_GetColumnTextWrapping_System_String_) and [GetColumnTextAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintManager.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintManager_GetColumnTextAlignment_System_String_) methods are also used for column customization while printing.
 
@@ -557,7 +557,7 @@ sfDataGrid.PrintSettings.PrintManager.Print();
 {% endhighlight %}
 {% endtabs %}
 
-![Printing Selected rows in WinUI DataGrid](Printing-images/Printing-image12.png)
+![Printing Selected Rows in WinUI DataGrid](Printing-images/winui-datagrid-printing-selected-rows.png)
 
 ### Printing specific pages
 
@@ -595,7 +595,7 @@ private void DataGrid_PrintTaskRequested(object sender, DataGridPrintTaskRequest
 {% endhighlight %}
 {% endtabs %}
 
-![Print the Specific pages in WinUI DataGrid](Printing-images/Printing-image13.png)
+![Printing Specific Pages in WinUI DataGrid](Printing-images/winui-datagrid-printing-specific-pages.png)
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/how-to-print-specific-pages-in-winui-datagrid).
 
@@ -620,7 +620,7 @@ private void DataGrid_PrintTaskRequested(object sender, DataGridPrintTaskRequest
 {% endhighlight %}
 {% endtabs %}
 
-![Disable the print preview in WinUI DataGrid](Printing-images/Printing-image14.png)
+![WinUI DataGrid displays disabled print preview](Printing-images/winui-datagrid-disabled-print-preview.png)
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/how-to-disable-print-preview-in-winui-datagrid).
 
