@@ -20,7 +20,7 @@ treeView.ShowLines = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeView with TreeLines](TreeLines_images/winui-treeview-with-treelines.jpg)
+![WinUI TreeView with TreeLines](TreeLines_images/winui-treeview-treelines.jpg)
 
 ## Enable tree line for root nodes
 

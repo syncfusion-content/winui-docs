@@ -600,6 +600,6 @@ You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/winu
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI TreeView without Data Binding Nodes](GettingStarted_images/winui-treeview-without-binding-nodes.jpg)
+![WinUI TreeView with TreeViewNodes](GettingStarted_images/winui-treeview-with-treeviewnodes.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Populating-Nodes-with-Unbound-mode)

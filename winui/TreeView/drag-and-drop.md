@@ -52,7 +52,7 @@ While dropping, the dragged items can be added above or below to the target item
 
 SfTreeView allows to drag multiple selected items. To enable multiple selection, set the [SfTreeView.SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionMode) as `Multiple` or `Extended`. 
 
-![WinUI TreeView displays Dragging Multiple Items](DragDrop_images/winui-treeview-dragging-multiple-items.png)
+![Reordering Multiple Items in WinUI TreeView](DragDrop_images/winui-treeview-reordering-items.png)
 ## Drag and drop events
 
 SfTreeView triggers the following events when drag and drop:
@@ -277,6 +277,6 @@ AssociatedObject.sfTreeView2.ItemDropped += SfTreeView1_ItemDropped;
 {% endhighlight %}
 {% endtabs %}
 
-![Dragging between two WinUI TreeViews](DragDrop_images/winui-treeview-drag-between-two-treeviews.png)
+![Drag and drop between TreeView Controls in WinUI](DragDrop_images/winui-treeview-drag-drop.png)
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-drag-and-drop-between-two-winui-treeview)
