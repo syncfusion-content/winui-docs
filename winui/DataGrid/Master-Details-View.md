@@ -338,7 +338,7 @@ dataGrid.DetailsViewDefinition.Add(gridViewDefinition2);
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays Manually Defined Relations](Master-Details-View-Images/winui-datagrid-manual-defined-relation.png)
+![WinUI DataGrid displays Manually defined Relations](Master-Details-View-Images/winui-datagrid-manual-defined-relation.png)
 
 In the same way, you can define relations for first level nested grids by defining relations to the [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid) of first level nested grid.
 
@@ -389,7 +389,7 @@ dataGrid.DetailsViewDefinition.Add(gridViewDefinition1);
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Master Details View DataGrid displays Manually Defined Relations](Master-Details-View-Images/winui-datagrid-manual-defined-relations-in-master-details-view.png)
+![WinUI Master Details View DataGrid displays Manually defined Relations](Master-Details-View-Images/winui-datagrid-manual-defined-relations-in-master-details-view.png)
 
 ## Populating Master-Details view through events
 

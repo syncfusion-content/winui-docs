@@ -182,7 +182,7 @@ void sfDataGrid_CopyGridCellContent(object sender, GridCopyPasteCellEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Copy Operation using CopyGridCellContent Event based on Cell Value in WinUI DataGrid](Clipboard-Operations_images/winui-datagrid-copy-operation-based-on-cell-value.png)
+![Displaying Copy Operation based on Cell Value in WinUI DataGrid](Clipboard-Operations_images/winui-datagrid-copy-operation-based-on-cell-value.png)
 
 The below code example handled the copy operation when `MappingName` of a Column is Country.
 
@@ -196,7 +196,7 @@ void sfDataGrid_CopyGridCellContent(object sender, GridCopyPasteCellEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Copy Operation using CopyGridCellContent Event based on Mapping Name in WinUI DataGrid](Clipboard-Operations_images/winui-datagrid-copy-operation-based-on-mapping-name.png)
+![Displaying Copy Operation based on Mapping Name in WinUI DataGrid](Clipboard-Operations_images/winui-datagrid-copy-operation-based-on-mapping-name.png)
 
 ### PasteGridCellContent
 
@@ -235,7 +235,7 @@ void sfDataGrid_PasteGridCellContent(object sender, GridCopyPasteCellEventArgs e
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Paste Operation using PasteGridCellContent Event based on Cell Value in WinUI DataGrid](Clipboard-Operations_images/winui-datagrid-paste-operation-based-on-cell-value.png)
+![Displaying Paste Operation based on Cell Value in WinUI DataGrid](Clipboard-Operations_images/winui-datagrid-paste-operation-based-on-cell-value.png)
 
 The below code example handled the paste operation when `MappingName` of Column is OrderID
 
@@ -249,7 +249,7 @@ void sfDataGrid_PasteGridCellContent(object sender, GridCopyPasteCellEventArgs e
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Paste Operation using PasteGridCellContent Event based on Mapping Name in WinUI DataGrid](Clipboard-Operations_images/winui-datagrid-paste-operation-based-on-mapping-name.png)
+![Displaying Paste Operation based on Mapping Name in WinUI DataGrid](Clipboard-Operations_images/winui-datagrid-paste-operation-based-on-mapping-name.png)
 
 ## Handling Programmatically
 

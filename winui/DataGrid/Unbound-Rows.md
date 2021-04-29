@@ -97,7 +97,7 @@ Unbound row placed at bottom, right below record rows. In this position, unbound
 
 Below screen shot shows different unbound rows placed in all possible positions.
 
-![WinUI DataGrid displays with Unbound Rows at the Top and Bottom](Unbound-Rows_images/winui-datagrid-unbound-rows-at-top-and-bottom.png)
+![WinUI DataGrid displays Unbound Rows at Top and Bottom Position](Unbound-Rows_images/winui-datagrid-unbound-rows-at-top-and-bottom.png)
 
 ## Populating data for Unbound rows
 
@@ -146,7 +146,7 @@ private void SfDataGrid_QueryUnboundRow(object sender, GridUnboundRowEventsArgs 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays Unbound Rows Populated with Data using QueryUnboundRow event](Unbound-Rows_images/winui-datagrid-unbound-rows-poplulated-with-data.png)
+![Populating data with Unbound Row in WinUI DataGrid](Unbound-Rows_images/winui-datagrid-unbound-rows-poplulated-with-data.png)
 
 ## Refreshing the Unbound Rows at runtime
 
@@ -276,7 +276,7 @@ this.sfDataGrid.UnboundRowCellRenderers.Add("UnboundTextColumn", new GridUnbound
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays Customization of Unbound Rows Behavior for Existing Cell Type](Unbound-Rows_images/winui-datagrid-unbound-rows-behavior-customization.png)
+![Customizing Unbound Row behavior in WinUI DataGrid](Unbound-Rows_images/winui-datagrid-unbound-rows-behavior-customization.png)
 
 ## Templating Unbound row cells
 
@@ -328,7 +328,7 @@ private void SfDataGrid_QueryUnboundRow(object sender, GridUnboundRowEventsArgs 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays Unbound Rows Cell Customization with Templates](Unbound-Rows_images/winui-datagrid-unbound-rows-cell-customization.png)
+![Customizing Unbound Row Cell in WinUI DataGrid](Unbound-Rows_images/winui-datagrid-unbound-rows-cell-customization.png)
 
 ## Changing Unbound row height
 
@@ -351,7 +351,7 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays Unbound Rows Height Customization](Unbound-Rows_images/winui-datagrid-unbound-rows-height-customization.png)
+![Customizing Unbound Row height in WinUI DataGrid](Unbound-Rows_images/winui-datagrid-unbound-rows-height-customization.png)
 
 ## Get Unbound rows
 
@@ -406,7 +406,7 @@ private void SfDataGrid_QueryUnboundRow(object sender, GridUnboundRowEventsArgs 
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Unbound Rows Cell Merging in WinUI DataGrid](Unbound-Rows_images/winui-datagrid-unbound-row-cells-merging.png)
+![WinUI DataGrid displays merged Unbound Row Cell](Unbound-Rows_images/winui-datagrid-unbound-row-cells-merging.png)
 
 ## Unbound row for Master-details view
 

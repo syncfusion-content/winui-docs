@@ -256,7 +256,7 @@ void SfDataGrid_QueryUnboundColumnValue(object sender, GridUnboundColumnEventsAr
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid shows unbound column with populated data using QueryUnboundColumnValue event](Unbound-Column_images/winui-datagrid-unbound-column-with-populated-data.png)
+![Populating data with Unbound Column in WinUI DataGrid](Unbound-Column_images/winui-datagrid-unbound-column-with-populated-data.png)
 
 ## Editing unbound column
 
@@ -388,7 +388,7 @@ public class GridUnboundCellTextBoxRendererExt : GridUnboundCellTextBoxRenderer
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays Customization of Unbound Column Behavior](Unbound-Column_images/winui-datagrid-unbound-column-behavior-customization.png)
+![Customizing Unbound Column behavior in WinUI DataGrid](Unbound-Column_images/winui-datagrid-unbound-column-behavior-customization.png)
 
 ### Custom renderer
 
