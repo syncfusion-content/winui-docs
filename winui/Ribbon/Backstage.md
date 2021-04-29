@@ -111,7 +111,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {% endhighlight %} 
 {% endtabs %}
 
-![WinUI Ribbon Backstage with Custom View](Backstage-images/host-custom-controls-ribbon-backstage.gif)
+![WinUI Ribbon Backstage with Custom View](Backstage-images/ winui-ribbon-backstage-custom-view.gif)
 
 ## File menu (backstage button) visibility
 
