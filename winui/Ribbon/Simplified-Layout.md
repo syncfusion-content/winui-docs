@@ -9,11 +9,11 @@ documentation: ug
 
 # Simplified Layout in WinUI Ribbon Control
 
-The Syncfusion Ribbon provides a compact and simplified layout by arranging the most-used commands in a single line, occupying less space. We can also quickly navigate to other commonly used commands in the overflow menu, and switch to normal mode using the built-in toggle button. This section explains in detail about the simplified layout.
+The Syncfusion Ribbon provides a compact and simplified layout by arranging the most-used commands in a single line, occupying less space. Quickly navigate to other commonly used commands in the overflow menu, and then switch to normal mode using the built-in toggle button. This section explains in detail about the simplified layout.
 
 ## Enabling simplified layout
 
-The `LayoutModeOptions` enumeration property provides an option to enable Simplified layout in Ribbon control. The `LayoutModeOptions` is of flag enumeration type that contains the following values.
+The `LayoutModeOptions` enumeration property provides an option to enable Simplified layout in Ribbon control. The `LayoutModeOptions` is of flag enumeration type that contains the following values:
 
 * Normal - The Ribbon items are arranged in the standard layout.
 * Simplified - The Ribbon items are arranged in the single line layout.
@@ -22,7 +22,7 @@ It also contains the following combination like:
 
 * Normal, Simplified - The Ribbon items are arranged both in Normal and Simplified layout. This is the default value.
 
-To load the Ribbon control in simplified layout, `ActiveLayoutMode` enumeration property can be used. It contains the following values.
+To load the Ribbon control in simplified layout, `ActiveLayoutMode` enumeration property can be used. It contains the following values:
 
 * Normal - Display the Ribbon in standard layout at startup. This is the default value.
 * Simplified - Display the Ribbon in single line  layout at startup.
@@ -61,7 +61,7 @@ To load the Ribbon control in simplified layout, `ActiveLayoutMode` enumeration 
 
 ## Switching between normal and simplified layouts
 
-The Ribbon control allows to switch between simplified and normal layouts at runtime using the toggle button located in the lower right corner of the Ribbon. To enable this option, set the `LayoutModeOptions` to "Normal,Simplified" as given in the below layout.
+The Ribbon control allows to switch between simplified and normal layouts at the runtime using the toggle button located in the lower right corner of the Ribbon. To enable this option, set the `LayoutModeOptions` to "Normal,Simplified" as given in the below layout.
 
 {% tabs %}
 {% highlight xaml %}
@@ -95,7 +95,7 @@ The Ribbon control allows to switch between simplified and normal layouts at run
 
 ## Visibility of ribbon items between normal and simplified layouts
 
-The Ribbon items can be set common between different layouts or can be made visible only in a particular layout using the `DisplayOptions` property. By default, items will be displayed in both normal and simplified layout. The DisplayMode is of flag enumeration type that contains the following values.
+The Ribbon items can be set commonly between different layouts or can be made visible only in a particular layout using the `DisplayOptions` property. By default, items will be displayed in both normal and simplified layout. The DisplayMode is of flag enumeration type that contains the following values.
 
 * Normal - The item will be displayed only in the normal layout.
 * Simplified - The item will be displayed only in the simplified layout.
@@ -208,7 +208,7 @@ Overflow menu can be enabled either at the end of each `RibbonGroup` or placed a
 
 ## Display mode  
 
-Syncfusion Ribbon control provides a minimized and adorner state. By enabling `AllowMinimize` property we can toggle between normal and minimized state. 
+Syncfusion Ribbon control provides a minimized and adorner state. Enable the `AllowMinimize` property to toggle between normal and minimized state. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -239,15 +239,15 @@ Syncfusion Ribbon control provides a minimized and adorner state. By enabling `A
 
 ### Switching between normal and minimized state
 
-The Ribbon control allows to switch between normal and minimized state at runtime using the toggle button located in the lower right corner of the Ribbon. We can also switch by double clicking on the `RibbonTab`. By single click on `RibbonTab`, it enters to adorner state.
+The Ribbon control allows to switch between normal and minimized state at the runtime using the toggle button located in the lower right corner of the Ribbon. To Switch, double click on the `RibbonTab`. To enter into the adorner state, single click on `RibbonTab`.
 
->N When simplified mode is enabled, toggle button is used to switch between normal and simplified layout. In that case, we can use the `RibbonTab` double click option to enter in minimized state. 
+>N When simplified mode is enabled, toggle button is used to switch between normal and simplified layout. In that case, use the `RibbonTab` double click option to enter into minimized state. 
 
 ![Shows the Ribbon control in minimized and adorner state](Simplified-Layout-images/Minimized-Adorner-State-Ribbon.gif)
 
 ### Loading in minimized state
 
-The Ribbon control allows to load in minimized state by using `IsMinimized` property. By enabling this property, we can load the Ribbon in minimized state. 
+The Ribbon control allows to load in minimized state by using `IsMinimized` property. By enabling this property, the Ribbon is loaded in minimized state. 
 
 {% tabs %}
 {% highlight xaml %}
