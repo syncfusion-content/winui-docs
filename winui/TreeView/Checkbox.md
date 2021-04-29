@@ -333,7 +333,7 @@ public class CheckBoxModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI BoundMode TreeView with CheckBox](Checkbox_images/Checkbox_bound_mode.jpg)
+![WinUI TreeView with CheckBoxes](Checkbox_images/winui-treeview-checkbox.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Checkbox-with-Bound-mode)
 
@@ -513,7 +513,7 @@ public class NullableTreeCheckbox : DependencyObject
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI UnboundMode TreeView with CheckBox](Checkbox_images/Checkbox_Unbound_mode.jpg)
+![WinUI TreeView Nodes with Checkboxes](Checkbox_images/winui-treeview-nodes-checkboxes.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Checkbox-with-Unbound-mode)
 
