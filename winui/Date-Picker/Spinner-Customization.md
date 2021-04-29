@@ -9,7 +9,7 @@ documentation: ug
 
 # Spinner Customization in WinUI Date Picker
 
-This section describes about the various spinner customization options available in [Date Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html) control.
+This section describes about various spinner customization options available in [Date Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html) control.
 
 ## Change the size of dropdown cells
 

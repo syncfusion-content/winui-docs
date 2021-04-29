@@ -9,7 +9,7 @@ documentation: ug
 
 # Dropdown Customization in WinUI Date Picker
 
-This section describes about the various dropdown customization options available in [Date Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html) control.
+This section describes about various dropdown customization options available in [Date Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html) control.
 
 ## Customize the dropdown button
 
@@ -164,4 +164,4 @@ sfDatePicker.VisibleItemsCount = 5
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
-N> When `DropDownHeight` and `VisibleItemsCount` properties are set, `DropDownHeight` property have higher precedence.
+N> When `DropDownHeight` and `VisibleItemsCount` properties are set, `VisibleItemsCount` property have higher precedence.
