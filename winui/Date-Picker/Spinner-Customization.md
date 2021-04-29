@@ -44,9 +44,9 @@ sfDatePicker.ItemHeight = 50;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
-## Customize the cells in dropdown spinner
+## Customize the cell's style in dropdown spinner
 
-You can customize all the dropdown date spinner cells by using the `ItemContainerStyle` or `ItemTemplate` properties. The `DataContext` of `ItemContainerStyle` or `ItemTemplate` properties is [`SpinnerItem`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SpinnerItem.html).
+You can customize all the dropdown date spinner cells by using the `ItemContainerStyle` properties. The `DataContext` of `ItemContainerStyle` or `ItemTemplate` properties is [`SpinnerItem`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SpinnerItem.html).
 
 {% tabs %}
 {% highlight XAML %}
@@ -67,7 +67,7 @@ You can customize all the dropdown date spinner cells by using the `ItemContaine
 
 ![Date Picker with customized drop down date spinner cells](Dropdown-Date-Spinner_images/ItemContainerStyle.png)
 
-## Customize the specific cell in dropdown spinner
+## Customize the cell's appearance in dropdown spinner
 
 You can change the UI of specific date, month or year cells in dropdown spinner by using the `ItemTemplateSelector` property. The `DataContext` of `ItemTemplateSelector` is `SpinnerItem`.
 
@@ -189,7 +189,7 @@ public class DateItemTemplateSelector : DataTemplateSelector
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/CustomUI)
 
-## Customize the date field in dropdown spinner using event
+## Customize the columns in dropdown spinner
 
 You can change the date format, header text, size of date field cells, customize the UI of date field cells and enables the date looping, etc., by using the [`DateFieldPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateFieldPrepared) event.
 
@@ -219,14 +219,34 @@ You can handle the event as follows,
 
 private void SfDatePicker_DateFieldPrepared(object sender, DateTimeFieldPreparedEventArgs e)
 {
-    if (e.Column != null && e.Column.Field == DateTimeField.Day)
+    if (e.Column != null)
     {
-        e.Column.Format = "ddd dd";
-        e.Column.Header = "Select Date";
-        e.Column.ShowHeader = true;
-        e.Column.ItemHeight = 60;
-        e.Column.ItemWidth = 100;
-        e.Column.ShouldLoop = true;
+        if (e.Column.Field == DateTimeField.Day)
+        {
+            e.Column.Format = "ddd dd";
+            e.Column.ShowHeader = true;
+            e.Column.Header = "Day";
+            e.Column.ItemHeight = 60;
+            e.Column.ItemWidth = 100;
+            e.Column.ShouldLoop = true;
+        }
+        else if (e.Column.Field == DateTimeField.MonthName)
+        {
+            e.Column.ShowHeader = true;
+            e.Column.Header = "Month";
+            e.Column.ItemHeight = 40;
+            e.Column.ItemWidth = 75;
+            e.Column.ShouldLoop = true;
+        }
+        else if (e.Column.Field == DateTimeField.Year)
+        {
+            e.Column.Format = "yy";
+            e.Column.ShowHeader = true;
+            e.Column.Header = "Year";
+            e.Column.ItemHeight = 80;
+            e.Column.ItemWidth = 75;
+            e.Column.ShouldLoop = true;
+        }
     }
 }
 

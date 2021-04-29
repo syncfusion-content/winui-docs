@@ -17,8 +17,15 @@ This section explains the steps required to add the WINUI [Date Picker](https://
 
 ## Creating an application with WinUI Date Picker
 
+In this walkthrough, you will create a WinUI application that contains the `Date Picker` control.
+
+## Adding control manually in XAML
+
+To add `Date Picker` control manually in XAML , follow the below steps.
+
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
-2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
+2. Download and refer the following NuGet in the project.
+    * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 4. Initialize the `SfDatePicker` control.
 
@@ -42,6 +49,19 @@ This section explains the steps required to add the WINUI [Date Picker](https://
 </Page>
 
 {% endhighlight %}
+{% endtabs %}
+
+## Adding control manually in C#
+
+To add the `Date Picker` control manually in C#, follow the below steps.
+
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
+2. Download and refer the following NuGet in the project.
+    * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
+3. Import the `Date Picker` namespace `Syncfusion.UI.Xaml.Editors` in C# page.
+4. Initialize the `Date Picker` control.
+
+{% tabs %}
 {% highlight C# %}
 
 using Syncfusion.UI.Xaml.Editors;
@@ -150,7 +170,7 @@ You can prompt the user with some information by using the [`PlaceHolderText`](h
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfDatePicker PlaceHolderText="Select the Date"
+<editors:SfDatePicker PlaceHolderText="select a journey date"
                       SelectedDate="{x:Null}"
                       AllowNullValue="True"
                       Name="sfDatePicker" />
@@ -159,7 +179,7 @@ You can prompt the user with some information by using the [`PlaceHolderText`](h
 {% highlight C# %}
 
 SfDatePicker sfDatePicker= new SfDatePicker();
-sfDatePicker.PlaceHolderText = "Select the Date";
+sfDatePicker.PlaceHolderText = "select a journey date";
 sfDatePicker.SelectedDate = null;
 sfDatePicker.AllowNullValue = true;
 

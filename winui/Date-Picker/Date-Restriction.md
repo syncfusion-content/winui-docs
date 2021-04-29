@@ -13,19 +13,14 @@ This section explains how to restrict the date selection in WinUI [Date Picker](
 
 ## Limit the available dates
 
-You can restrict the users from selecting a date within the particular range by specifying [`MinDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MinDate) and [`MaxDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MaxDate) properties in `Date Picker` control. The default value of `MinDate` property is `1/1/0001` and `MaxDate` property is `12/31/9999`.
+You can restrict the users from selecting a date within the particular range by specifying [`MinDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MinDate) and [`MaxDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MaxDate) properties in `Date Picker` control. The default value of `MinDate` property is `1/1/1921` and `MaxDate` property is `12/31/2121`.
 
 {% tabs %}
-{% highlight xaml %}
-
-<editors:SfDatePicker x:Name="sfDatePicker" />
-
-{% endhighlight  %}
 {% highlight C# %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
-sfDatePicker.MaxDate = new DateTimeOffset(new DateTime(2020,12,17));
-sfDatePicker.MinDate = new DateTimeOffset(new DateTime(2020,12,20));
+sfDatePicker.MinDate = new DateTimeOffset(new DateTime(2020,12,18));
+sfDatePicker.MaxDate = new DateTimeOffset(new DateTime(2020,12,20));
 
 {% endhighlight  %}
 {% endtabs %}
@@ -82,9 +77,9 @@ sfDatePicker.BlackoutDates = (sfDatePicker.DataContext as ViewModel).BlockedDate
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
-## Disable dates dynamically (All weekend days)
+## Disable weekend dates
 
-If you want to block all weekend dates from the date selection, handle the [`DateFieldItemPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateFieldItemPrepared) event and use the [`DateTimeFieldItemPreparedEventArgs.ItemInfo.IsBlackout`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DateTimeFieldItemPreparedEventArgs.html#Syncfusion_UI_Xaml_Editors_DateTimeFieldItemPreparedEventArgs_ItemInfo) property value as `true`.
+If you want to block all weekend dates or any dates from the date selection, handle the [`DateFieldItemPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateFieldItemPrepared) event and use the [`DateTimeFieldItemPreparedEventArgs.ItemInfo.IsEnabled`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DateTimeFieldItemPreparedEventArgs.html#Syncfusion_UI_Xaml_Editors_DateTimeFieldItemPreparedEventArgs_ItemInfo) property value as `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -111,7 +106,7 @@ private void SfDatePicker_DateFieldItemPrepared(object sender, DateTimeFieldItem
     if (e.ItemInfo.DateTime.Value.DayOfWeek == DayOfWeek.Saturday ||
             e.ItemInfo.DateTime.Value.DayOfWeek == DayOfWeek.Sunday)
     {
-        e.ItemInfo.IsBlackout = true;
+        e.ItemInfo.IsEnabled = true;
     }
 }
 

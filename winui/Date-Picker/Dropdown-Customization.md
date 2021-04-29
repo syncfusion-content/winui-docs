@@ -24,7 +24,7 @@ You can customize the UI of dropdown button by using the [`DropDownButtonTemplat
 
 <editors:SfDatePicker
     x:Name="sfDatePicker"
-    PlaceHolderText="Pick a travel date">
+    PlaceHolderText="pick a travel date">
     <editors:SfDatePicker.DropDownButtonTemplate>
         <DataTemplate>
             <Grid>
@@ -50,6 +50,8 @@ You can customize the UI of dropdown button by using the [`DropDownButtonTemplat
 ## Hide dropdown button
 
 You can hide the dropdown button in `Date Picker` by setting the [`ShowDropDownButton`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as `false`. The default value of `ShowDropDownButton` property is `true`.
+
+N> To open a dropdown date spinner, press the `Alt` + `Down Arrow` keys.
 
 {% tabs %}
 {% highlight XAML %}
@@ -123,19 +125,19 @@ You can change the height of drop down date spinner by using the [`DropDownHeigh
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfDatePicker DropDownHeight="500"
+<editors:SfDatePicker DropDownHeight="200"
                       x:Name="sfDatePicker"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
-sfDatePicker.DropDownHeight = 500;
+sfDatePicker.DropDownHeight = 200;
 
 {% endhighlight %}
 {% endtabs %}
 
-![Date Picker with customized dropdown height](Dropdown-Date-Spinner_images/DropDownHeight.png)
+![Date Picker with customized dropdown height](Dropdown-Date-Spinner_images/DropDownHeight.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -161,3 +163,5 @@ sfDatePicker.VisibleItemsCount = 5
 ![Number of dates to be shown in the dropdown is changed in WinUI Date Picker](Dropdown-Date-Spinner_images/VisibleItemsCount.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
+
+N> When `DropDownHeight` and `VisibleItemsCount` properties are set, `DropDownHeight` property have higher precedence.

@@ -18,7 +18,7 @@ You can add a hints in dropdown header by using the [DropDownHeader](https://hel
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfDatePicker DropDownHeader="Select Date" 
+<editors:SfDatePicker DropDownHeader="Select journey date" 
                       ShowDropDownHeader="True"
                       x:Name="sfDatePicker"/>
 
@@ -26,7 +26,7 @@ You can add a hints in dropdown header by using the [DropDownHeader](https://hel
 {% highlight c# %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
-sfDatePicker.DropDownHeader = "Select Date";
+sfDatePicker.DropDownHeader = "Select journey date";
 sfDatePicker.ShowDropDownHeader = true;
 
 {% endhighlight %}
@@ -78,6 +78,8 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 ## Hide the dropdown column header
 
 If you want to hide the dropdown day, month and year spinner's column headers, use the [ShowColumnHeaders](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_ShowColumnHeaders) property value as `false`. The default value of `ShowColumnHeaders` property is `true`.
+
+N> To customize the column headers, refer the [Customize the columns in dropdown spinner](https://help.syncfusion.com/winui/date-picker/spinner-customization#customize-the-columns-in-dropdown-spinner) topic.
 
 {% tabs %}
 {% highlight XAML %}
