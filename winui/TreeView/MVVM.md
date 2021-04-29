@@ -188,7 +188,7 @@ public class SelectionModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeView with MVVM selection](MVVM_images/SelectedItem_image.jpg)
+![WinUI TreeView Binding Selected Item](MVVM_images/winui-treeview-selected-item-binding.jpg)
 
 ## Binding SelectedItems
 
@@ -372,7 +372,7 @@ public class SelectionModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeView with MVVM selection](MVVM_images/SelectedItems_image.jpg)
+![WinUI TreeView Binding Selected Items](MVVM_images/winui-treeview-selected-items-binding.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/MVVM-with-Selection)
 
