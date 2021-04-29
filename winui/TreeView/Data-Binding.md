@@ -235,7 +235,7 @@ To create a TreeView using data binding, set a hierarchical data collection to t
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeView with Data Binding Nodes](Data-Binding_images/winui-treeview-data-binding-nodes.jpg)
+![WinUI TreeView Data Binding](Data-Binding_images/winui-treeview-data-binding.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Populating-Nodes-with-Bound-mode)
 

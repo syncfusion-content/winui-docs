@@ -38,7 +38,7 @@ treeView.ShowRootLines = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeView displays TreeLines with Root Node](TreeLines_images/winui-treeview-displays-root-lines-with-root-node.jpg)
+![WinUI TreeView displays TreeLines for Root Nodes](TreeLines_images/winui-treeview-rootnode-tree-lines.jpg)
 
 ## Customizing the tree lines
 
@@ -59,7 +59,7 @@ treeView.LineStroke = new SolidColorBrush(Colors.DeepSkyBlue);
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing TreeLines in WinUI TreeView](TreeLines_images/winui-treeview-customizing-treelines.jpg)
+![Customizing TreeLines in WinUI TreeView](TreeLines_images/winui-treeview-treelines-customization.jpg)
 
 ### Customizing the line thickness
 The `TreeView` allows to change the thickness of tree lines by using the [LineStrokeThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LineStrokeThickness) property. The default value is `1`.
