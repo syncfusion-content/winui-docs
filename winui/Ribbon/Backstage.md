@@ -111,7 +111,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {% endhighlight %} 
 {% endtabs %}
 
-![WinUI Ribbon Backstage with Custom View](winui-ribbon-backstage-custom-view.gif)
+![WinUI Ribbon Backstage with Custom View](Backstage-images/winui-ribbon-backstage-custom-view.gif)
 
 ## File menu (backstage button) visibility
 
@@ -134,7 +134,7 @@ Ribbon allows to show or hide a Backstage menu button using the [ShowBackstageMe
 {% endhighlight %} 
 {% endtabs %}
 
-![WinUI Ribbon File Menu Button Visibility](winui-ribbon-file-menu-button.png)
+![WinUI Ribbon File Menu Button Visibility](Backstage-images/winui-ribbon-file-menu-button.png)
 
 ## File menu (Backstage button) text
 
@@ -171,7 +171,7 @@ The [BackstageMenuButtonContent](https://help.syncfusion.com/cr/winui/Syncfusion
 {% endhighlight %} 
 {% endtabs %}
 
-![WinUI Ribbon with Backstage View](winui-ribbon-backstage-view.png)
+![WinUI Ribbon with Backstage View](Backstage-images/winui-ribbon-backstage-view.png)
 
 ## Backstage view visibility
 
@@ -266,7 +266,7 @@ The [BackstageView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribb
 {% endhighlight %} 
 {% endtabs %}
 
-![WinUI Ribbon Backstage Back Button Visibility](winui-ribbon-backstage-back-button.png)
+![WinUI Ribbon Backstage Back Button Visibility](Backstage-images/winui-ribbon-backstage-back-button.png)
 
 ## Backstage items
 
@@ -293,7 +293,7 @@ The [BackstageViewTabItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 {% endhighlight %} 
 {% endtabs %}
 
-![WinUI Ribbon Backstage View with Tab Item](winui-ribbon-backstage-tab-item.png)
+![WinUI Ribbon Backstage View with Tab Item](Backstage-images/winui-ribbon-backstage-tab-item.png)
 
 ## Backstage button item
 
