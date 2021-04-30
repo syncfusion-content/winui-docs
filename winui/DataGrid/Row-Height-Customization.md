@@ -128,7 +128,7 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 Here, row heights are customized based on the large text content.
 
-![Changing RowHeight based on its Content in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-row-height-based-on-its-content.png)
+![Auto Size Row Height in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-auto-size-row-height.png)
 
 #### GridRowSizingOptions
 
@@ -174,7 +174,7 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 Here `CustomerID` and `Country` columns are excluded from height calculation and the row height is calculated based on `CustomerName` column only.
  
-![Changing RowHeight based on Specific Column in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-row-height-based-on-column.png)
+![Auto Fit RowHeight in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-auto-fit-row-height.png)
 
 ## Changes header row height based on its Content
 
@@ -230,7 +230,7 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Changing HeaderRow Height based on its Content in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-header-row-height-based-on-its-content.png)
+![Auto Fit Header Row Height in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-auto-fit-header-row-height.png)
 
 ## Change StackedHeaderRow height based on its content
 
@@ -285,7 +285,7 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Changing StackedHeaderRow Height based on its content in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-stacked-header-row-height.png)
+![Auto Fit StackedHeaderRow Height in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-stacked-header-row-height.png)
 
 ## Change TableSummaryRow height
 

@@ -290,7 +290,7 @@ dataGrid.AutoGenerateRelations = true;
 When relations are auto-generated, you can handle the [SfDataGrid.AutoGeneratingRelations](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_AutoGenerateRelations) event to customize or cancel the [GridViewDefinition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html) before they are added to the [SfDataGrid.DetailsViewDefinition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDefinition.html). 
 Here, two relations are created from `Sales` and `Orders` collection property.
 
-![WinUI DataGrid displays Auto Generated Relations](Master-Details-View-Images/winui-datagrid-auto-generated-relations.png)
+![WinUI DataGrid displays Master Details View based on Auto Generated Relations](Master-Details-View-Images/winui-master-details-view-datagrid-auto-generation.png)
 
 #### Manually defining Relations
 
@@ -338,7 +338,7 @@ dataGrid.DetailsViewDefinition.Add(gridViewDefinition2);
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays Manually defined Relations](Master-Details-View-Images/winui-datagrid-manual-defined-relation.png)
+![WinUI DataGrid displays Master Details View based on Manually defined Relations](Master-Details-View-Images/winui-datagrid-master-details-view-manual-relation.png)
 
 In the same way, you can define relations for first level nested grids by defining relations to the [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid) of first level nested grid.
 
@@ -896,7 +896,7 @@ You can customize the header appearance of [DetailsViewDataGrid](https://help.sy
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Header Appearance in Master Details View of WinUI DataGrid](Master-Details-View-Images/winui-datagrid-header-customization.png)
+![Customizing Header Appearance of Master Details View in WinUI DataGrid](Master-Details-View-Images/winui-datagrid-header-customization.png)
 
 ### Hiding header row of Master-Details View
 You can hide the header row of `DetailsViewDataGrid` by setting [HeaderRowHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_HeaderRowHeight) property.
@@ -953,7 +953,7 @@ The padding of [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfu
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays Padding Customization of Master Details View](Master-Details-View-Images/winui-datagrid-padding-customization.png)
+![WinUI DataGrid displays Padding Customization of Master Details View](Master-Details-View-Images/winui-datagrid-master-details-view-padding-customization.png)
 
 N> For customizing appearance for second level nested grid, you can refer [here](#defining-properties).
 
@@ -1026,7 +1026,7 @@ By default, the expander will be visible for all the data rows in parent DataGri
 {% endhighlight %}
 {% endtabs %}
 
-![Hiding Expander Icon for Empty Details View in WinUI DataGrid](Master-Details-View-Images/winui-datagrid-hiding-expander-icon.png)
+![Hide Expander of Master Details View in WinUI DataGrid](Master-Details-View-Images/winui-datagrid-master-details-view-hide-expander.png)
 
 ## Hiding GridDetailsViewIndentCell
 
