@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize Calendar UI in WinUI Calendar Date Picker control | Syncfusion
+title: Customize calendar UI in WinUI CalendarDatePicker control | Syncfusion
 description: Learn about how to customize dropdown calendar in Syncfusion WinUI Calendar Date Picker control with customization support and more.
 platform: winui
 control:  SfCalendarDatePicker
