@@ -1,7 +1,7 @@
 ---
 layout: post
 title: View navigation in WinUI Calendar Date Picker control | Syncfusion
-description: Learn here all about how navigate within views in Syncfusion WinUI Calendar Date Picker and more.
+description: Learn here all about how to navigate within views in Syncfusion WinUI Calendar Date Picker control and more.
 platform: WinUI
 control: SfCalendarDatePicker
 documentation: ug
