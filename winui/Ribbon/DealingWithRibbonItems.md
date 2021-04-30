@@ -11,7 +11,7 @@ documentation: ug
 
 The below section describes more information about Ribbon items and its features.
 
-## Changing size of the ribbon items
+## Changing the size of the ribbon items
 
 The size of the Ribbon items such as [RibbonButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonButton.html), [RibbonDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonDropDownButton.html), [RibbonSplitButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonSplitButton.html), RibbonGallery and [RibbonItemHost](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonItemHost.html) controls can be changed using `SizeMode` property.
 
@@ -149,13 +149,13 @@ The size of the Ribbon items such as [RibbonButton](https://help.syncfusion.com/
 
 ## Ribbon group launcher button
 
-The Launcher button is like a normal button, and you can also use it to add additional features and options in that section of the RibbonGroup.
+The Launcher button is like a normal button, used to add additional features and options in that section of the RibbonGroup.
 
 ![Launcher button in RibbonGroup](RibbonItems-images/ribbon-group-launcher-button.png)
 
 ### Launcher button click event
 
-The [RibbonGroup](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGroup.html) provides a `LauncherButtonClick` event to notify you when the launcher button is clicked.
+The [RibbonGroup](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGroup.html) provides a `LauncherButtonClick` event to notify, when the launcher button is clicked.
 
 {% tabs %}
 {% highlight xaml %}
