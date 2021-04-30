@@ -265,6 +265,6 @@ private async void ExecuteOnDemandLoading(object obj)
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeView with Load On-Demand](LoadOnDemand_images/load-on-demand.gif)
+![WinUI TreeView loads items in on-demand - TreeView Lazy Loading](LoadOnDemand_images/winui-treeview-on-demand-loading.gif)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Load-On-Demand)

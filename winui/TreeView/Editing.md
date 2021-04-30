@@ -54,7 +54,7 @@ treeView.AllowEditing = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeView in Edit Mode](Editing-images/Editing-image1.png)
+![Editing in WinUI TreeView](Editing-images/winui-treeview-editing.png)
 
 ## Programmatic Editing
 
