@@ -66,7 +66,7 @@ You can localize the calendar using the `Language` property. The default value o
 {% highlight C# %}
 
 SfCalendar sfCalendar = new SfCalendar();
-sfCalendar.Language = "fr";
+sfCalendar.Language = "fr-FR";
 
 {% endhighlight %}
 {% endtabs %}
