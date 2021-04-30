@@ -389,7 +389,7 @@ dataGrid.DetailsViewDefinition.Add(gridViewDefinition1);
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Master Details View DataGrid displays Manually defined Relations](Master-Details-View-Images/winui-datagrid-manual-defined-relations-in-master-details-view.png)
+![WinUI DataGrid displays Master Details View with Manually defined Relations](Master-Details-View-Images/winui-datagrid-master-details-view-manual-defined-relation.png)
 
 ## Populating Master-Details view through events
 
@@ -896,7 +896,7 @@ You can customize the header appearance of [DetailsViewDataGrid](https://help.sy
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Header Appearance in Master Details View of WinUI DataGrid](Master-Details-View-Images/winui-datagrid-customizing-header-appearance.png)
+![Customizing Header Appearance in Master Details View of WinUI DataGrid](Master-Details-View-Images/winui-datagrid-header-customization.png)
 
 ### Hiding header row of Master-Details View
 You can hide the header row of `DetailsViewDataGrid` by setting [HeaderRowHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_HeaderRowHeight) property.
@@ -927,7 +927,7 @@ FirstLevelNestedGrid.HeaderRowHeight = 0;
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Hidden Header Row of Master Details View in WinUI DataGrid](Master-Details-View-Images/winui-datagrid-hidden-header-row.png)
+![WinUI DataGrid displays Master Details View with Hidden Header Row](Master-Details-View-Images/winui-datagrid-hidden-header-row.png)
 
 ### Customizing padding of the DetailsViewDataGrid
 
@@ -1032,7 +1032,7 @@ By default, the expander will be visible for all the data rows in parent DataGri
 
 [GridDetailsViewIndentCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDetailsViewIndentCell.html) is used to indicate the space between the expander and first column of the [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDataGrid.html). You can hide the [GridDetailsViewIndentCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDetailsViewIndentCell.html) by setting [SfDataGrid.ShowDetailsViewIndentCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ShowDetailsViewIndentCell) property to `False` for the respective parent grid.
 
-![WinUI DataGrid displays Indent Cells of Master Details View](Master-Details-View-Images/winui-datagrid-indent-cells.png)
+![WinUI DataGrid displays Master Details View with Indent Cells](Master-Details-View-Images/winui-datagrid-indent-cells.png)
 
 {% tabs %}
 {% highlight xaml %}
@@ -1047,7 +1047,7 @@ dataGrid.ShowDetailsViewIndentCell= False;
 {% endhighlight %}
 {% endtabs %}
 
-![Hiding Indent Cells of Master Details View in WinUI DataGrid](Master-Details-View-Images/winui-datagrid-hiding-indent-cells.png)
+![WinUI DataGrid display Master Details View without Indentation](Master-Details-View-Images/winui-datagrid-master-details-view-without-indentation.png)
 
 ## Hiding the details view expander icon based on child items count
 
@@ -1086,7 +1086,7 @@ private void DataGrid_QueryDetailsViewExpanderState(object sender, QueryDetailsV
 {% endtabs %} 
 
 The following screenshot illustrates hiding expander icon state based on child items count.
-![WinUI DataGrid displays Hidden Expander Icon](Master-Details-View-Images/winui-datagrid-hidden-expander-icon.png)
+![Hide Expander of Master Details in WinUI DataGrid](Master-Details-View-Images/winui-datagrid-master-details-view-expander.png)
 You can download the sample from the following link: [Sample](https://github.com/SyncfusionExamples/How-to-hide-the-detailsview-expander-icon-based-on-child-records-count-in-winui-datagrid).
 
 ## Change DetailsViewDataGrid ItemsSource at runtime using LiveDataUpdateMode property

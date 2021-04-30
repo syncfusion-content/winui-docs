@@ -199,7 +199,7 @@ NOT
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays Unbound Column with Expression](Unbound-Column_images/winui-datagrid-unbound-column-with-expression.png)
+![WinUI DataGrid displays Unbound Column with Expression](Unbound-Column_images/winui-datagrid-expression-column.png)
 
 ### Using Format
 
@@ -227,7 +227,7 @@ this.sfDataGrid.Columns.Add(new GridUnboundColumn() { HeaderText = "Discount Pri
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays Unbound Column with Format Values](Unbound-Column_images/winui-datagrid-unbound-column-with-format-values.png)
+![Formatting Unbound Columns in WinUI DataGrid](Unbound-Column_images/winui-datagrid-unbound-column-formatting.png)
 
 ### Using QueryUnboundColumnValue event
 

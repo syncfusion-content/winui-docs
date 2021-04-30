@@ -146,7 +146,7 @@ private void SfDataGrid_QueryUnboundRow(object sender, GridUnboundRowEventsArgs 
 {% endhighlight %}
 {% endtabs %}
 
-![Populating data with Unbound Row in WinUI DataGrid](Unbound-Rows_images/winui-datagrid-unbound-rows-poplulated-with-data.png)
+![Populating data with Unbound Row in WinUI DataGrid](Unbound-Rows_images/winui-datagrid-unbound-rows-with-poplulated-data.png)
 
 ## Refreshing the Unbound Rows at runtime
 
@@ -406,7 +406,7 @@ private void SfDataGrid_QueryUnboundRow(object sender, GridUnboundRowEventsArgs 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays merged Unbound Row Cell](Unbound-Rows_images/winui-datagrid-unbound-row-cells-merging.png)
+![WinUI DataGrid displays Merged Unbound Row Cell](Unbound-Rows_images/winui-datagrid-unbound-row-cells-merging.png)
 
 ## Unbound row for Master-details view
 
