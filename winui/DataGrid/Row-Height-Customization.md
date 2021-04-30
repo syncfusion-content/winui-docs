@@ -24,7 +24,7 @@ this.sfDataGrid.RowHeight = 30;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing RowHeight and HeaderRowHeight image in WinUI DataGrid](Row-Height-Customization_images/Row-Height-Customization_img8.png)
+![Changing RowHeight and HeaderRowHeight in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-header-row-height.png)
 
 You can also change the row height of particular row using [QueryRowHeight](https://help.syncfusion.com/winui/datagrid/row-height-customization#queryrowheight-event) event.
 
@@ -45,7 +45,7 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Changing RowHeight of particular Row using queryrowheight event in WinUI DataGrid](Row-Height-Customization_images/Row-Height-Customization_img1.png)
+![Changing Specific Row Height in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-row-height.png)
 
 ## QueryRowHeight event
 
@@ -75,7 +75,7 @@ void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![OnDemand Changing of RowHeight image in WinUI DataGrid](Row-Height-Customization_images/Row-Height-Customization_img2.png)
+![Changing RowHeight based on Row Index in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-specfic-row-height.png)
 
 ### Limitations
 
@@ -128,7 +128,7 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 Here, row heights are customized based on the large text content.
 
-![AutoFit RowHeight based on content Image in WinUI DataGrid](Row-Height-Customization_images/Row-Height-Customization_img3.png)
+![Auto Size Row Height in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-auto-size-row-height.png)
 
 #### GridRowSizingOptions
 
@@ -174,7 +174,7 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 Here `CustomerID` and `Country` columns are excluded from height calculation and the row height is calculated based on `CustomerName` column only.
  
-![AutoFit RowHeight for specific columns Image in WinUI DataGrid](Row-Height-Customization_images/Row-Height-Customization_img4.png)
+![Auto Fit RowHeight in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-auto-fit-row-height.png)
 
 ## Changes header row height based on its Content
 
@@ -230,7 +230,7 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Customized HeaderRowHeight Image in WinUI DataGrid](Row-Height-Customization_images/Row-Height-Customization_img5.png)
+![Auto Fit Header Row Height in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-auto-fit-header-row-height.png)
 
 ## Change StackedHeaderRow height based on its content
 
@@ -285,7 +285,7 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Customized StackedHeaderRow height Image in WinUI DataGrid](Row-Height-Customization_images/Row-Height-Customization_img6.png)
+![Auto Fit StackedHeaderRow Height in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-stacked-header-row-height.png)
 
 ## Change TableSummaryRow height
 
@@ -308,5 +308,5 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Customized TableSummaryRow height Image in WinUI DataGrid](Row-Height-Customization_images/Row-Height-Customization_img7.png)
+![Changing TableSummaryRow Height in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-table-summary-row-height.png)
 
