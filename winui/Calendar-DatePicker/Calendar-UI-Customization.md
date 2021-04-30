@@ -7,7 +7,7 @@ control:  SfCalendarDatePicker
 documentation: ug
 ---
 
-# Customize calendar UI in WinUI Calendar Date Picker (SfCalendarDatePicker)
+# UI customization in WinUI Calendar Date Picker (SfCalendarDatePicker)
 
 This section describes how to select a date from dropdown Calendar and its customization options in [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) control.
 
