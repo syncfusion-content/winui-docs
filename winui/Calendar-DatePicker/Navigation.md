@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Navigate within views in WinUI CalendarDatePicker control | Syncfusion
-description: Learn here all about navigate within views in Syncfusion WinUI Calendar Date Picker control dropdown calendar.
+title: View navigation in WinUI Calendar Date Picker control | Syncfusion
+description: Learn here all about how navigate within views in Syncfusion WinUI Calendar Date Picker and more.
 platform: WinUI
 control: SfCalendarDatePicker
 documentation: ug
 ---
 
-# Navigation in WinUI Calendar Date Picker
+# View navigation in WinUI Calendar Date Picker
 
 You can easily navigate to the month, year, decade, or century views to select different dates by clicking the header button in dropdown calendar. Initially month view is loaded when dropdown is opened. You can also change the view programmatically by using [DisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_DisplayMode) property.
 

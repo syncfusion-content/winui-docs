@@ -1,13 +1,13 @@
 ---
 layout: post
-title: date selection with WinUI Calendar Date Picker control | Syncfusion
-description: Learn here all about date selection and restriction in Syncfusion WinUI Calendar Date Picker control, its elements, and more.
+title: Date selection with WinUI Calendar Date Picker control | Syncfusion
+description: Learn here all about date selection and restriction in Syncfusion WinUI Calendar Date Picker control and more.
 platform: WinUI
 control: SfCalendarDatePicker
 documentation: ug
 ---
 
-# Date Selection and Restriction in WinUI Calendar Date Picker
+# Date selection and restriction in WinUI Calendar Date Picker
 
 This section explains about the date selection in [WinUI Calendar Date Picker](https://www.syncfusion.com/winui-controls/calendar-datepicker) control and how to restrict or limit the users to select date within a range.
 
