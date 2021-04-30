@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Customize the WinUI Calendar control | Syncfusion
-description: This section describes about how to customize the Calendar (SfCalendar) control into WinUI application and its basic features.
+title: Customize the UI of WinUI Calendar control | Syncfusion
+description: Learn here all about UI customization feature of the WinUI Calendar (SfCalendar) control and much more.
 platform: WinUI
 control: SfCalendar
 documentation: ug
 ---
 
-# Customize the WinUI Calendar
+# UI customization of the WinUI Calendar (SfCalendar)
 
 This section describes about the various customization options available in [Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control.
 
-## Custom UI for specific cell in Calendar
+## Custom UI for specific cells in Calendar
 
 You can change the UI of specific cells in `Calendar` by using the [CalendarItem.ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItem.html) property. The `DataContext` of `CalendarItem.ContentTemplate` is `Calendar`. 
 

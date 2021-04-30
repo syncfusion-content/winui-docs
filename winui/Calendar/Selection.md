@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Selection in WinUI Calendar control | Syncfusion
-description: This section describes about selection of a date or multiple dates in the Calendar (SfCalendar) control in WinUI applications.
+description: Learn here all about selection of a date or multiple dates in the Calendar (SfCalendar) control and more.
 platform: WinUI
 control: SfCalendar
 documentation: ug
 ---
 
-# Selection in WinUI Calendar
+# Selection in WinUI Calendar (SfCalendar)
 
 You can change the selected date interactively by clicking on the specific date or you can select programmatically. By default, `Calendar` control allows you to select single date at a time. 
 

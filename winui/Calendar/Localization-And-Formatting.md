@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localize the WinUI Calendar control | Syncfusion
-description: This section describes how to localize and customize formats in Calendar (SfCalendar) control into WinUI application.
+title: Localization in WinUI Calendar control | Syncfusion
+description: Learn here all about how to localize and customize formats in Calendar (SfCalendar) control and more.
 platform: WinUI
 control: SfCalendar
 documentation: ug
 ---
 
-# Localize and change format in WinUI Calendar
+# Localize and change format in WinUI Calendar (SfCalendar)
 
 This section describes how to localize [Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control using [`CalendarIdentifier`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_CalendarIdentifier) and `Language` properties and to change the display formats.
 
