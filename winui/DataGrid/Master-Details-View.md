@@ -1032,7 +1032,7 @@ By default, the expander will be visible for all the data rows in parent DataGri
 
 [GridDetailsViewIndentCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDetailsViewIndentCell.html) is used to indicate the space between the expander and first column of the [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDataGrid.html). You can hide the [GridDetailsViewIndentCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDetailsViewIndentCell.html) by setting [SfDataGrid.ShowDetailsViewIndentCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ShowDetailsViewIndentCell) property to `False` for the respective parent grid.
 
-![WinUI DataGrid displays Master Details View with Indent Cells](Master-Details-View-Images/winui-datagrid-indent-cells.png)
+![WinUI DataGrid displays Master Details View with Indent Cells](Master-Details-View-Images/winui-datagrid-master-details-view-indentation.png)
 
 {% tabs %}
 {% highlight xaml %}
