@@ -33,7 +33,7 @@ this.sfDataGrid.Columns.Add(new GridUnboundColumn() { HeaderText = "Discount Pri
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Unbound column in WinUI DataGrid](Unbound-Column_images/Displaying-Unbound-column-in-WinUI-DataGrid.png)
+![WinUI DataGrid Unbound Column](Unbound-Column_images/winui-datagrid-unbound-column.png)
 
 N> It is mandatory to specify the [GridColumn.MappingName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_MappingName) for `GridUnboundColumn` with some name to identify the column. It is not necessary to define name of field in the data object.
 
@@ -199,7 +199,7 @@ NOT
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Unbound column using Expression in WinUI DataGrid](Unbound-Column_images/Displaying-Unbound-column-using-Expression-in-WinUI-DataGrid.png)
+![WinUI DataGrid displays Unbound Column with Expression](Unbound-Column_images/winui-datagrid-expression-column.png)
 
 ### Using Format
 
@@ -227,7 +227,7 @@ this.sfDataGrid.Columns.Add(new GridUnboundColumn() { HeaderText = "Discount Pri
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Unbound column using Format in WinUI DataGrid](Unbound-Column_images/Displaying-Unbound-column-using-Format-in-WinUI-DataGrid.png)
+![Formatting Unbound Columns in WinUI DataGrid](Unbound-Column_images/winui-datagrid-unbound-column-formatting.png)
 
 ### Using QueryUnboundColumnValue event
 
@@ -256,7 +256,7 @@ void SfDataGrid_QueryUnboundColumnValue(object sender, GridUnboundColumnEventsAr
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Unbound column with data populated using QueryUnBoundColumnValue event in WinUI DataGrid](Unbound-Column_images/Displaying-Unbound-column-with-data-populated-using-QueryUnBoundColumnValue-event-in-WinUI-DataGrid.png)
+![Populating data with Unbound Column in WinUI DataGrid](Unbound-Column_images/winui-datagrid-unbound-column-with-populated-data.png)
 
 ## Editing unbound column
 
@@ -388,7 +388,7 @@ public class GridUnboundCellTextBoxRendererExt : GridUnboundCellTextBoxRenderer
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Unbound column behavior customization in WinUI DataGrid](Unbound-Column_images/Displaying-Unbound-column-behavior-customization-in-WinUI-DataGrid.png)
+![Customizing Unbound Column behavior in WinUI DataGrid](Unbound-Column_images/winui-datagrid-unbound-column-behavior-customization.png)
 
 ### Custom renderer
 
