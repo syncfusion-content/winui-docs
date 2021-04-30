@@ -62,6 +62,30 @@ sfCalendarDatePicker.DropDownHeight = 500;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown)
 
+## Hide days that is out of scope
+
+You can hide the days that are out-of-scope of current view in dropdown calendar by setting the [OutOfScopeVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_OutOfScopeVisibility) property value as **Hidden**. The default value of `OutOfScopeVisibility` property is **Enabled**.
+
+{% tabs %}
+{% highlight xaml %}
+
+<calendar:SfCalendarDatePicker OutOfScopeVisibility="Hidden"
+                               x:Name="sfCalendarDatePicker"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
+sfCalendarDatePicker.OutOfScopeVisibility = OutOfScopeVisibility.Hidden;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Display only the current month dates in WinUI Calendar Date Picker.](Getting-Started_images/disableoutofscope.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction)
+
+
 ## Customize individual items in Calendar
 
 You can change the UI of specific cells in `Calendar Date Picker` dropdown calendar by using the [AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.

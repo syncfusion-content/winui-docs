@@ -267,7 +267,6 @@ You can handle the event as follows:
 {% endhighlight %}
 {% endtabs %}
 
-
 ## Hide the dropdown button
 
 You can hide the dropdown button in `Calendar Date Picker` by setting the [ShowDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as `false`. The default value of `ShowDropDownButton` property is `true`.
@@ -292,8 +291,6 @@ sfCalendarDatePicker.ShowDropDownButton = false;
 ![Calendar Date Picker hides the dropdown button](Dropdown-Calendar_images/ShowDropDownButton.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown)
-
-
 
 ## Show submit button
 
