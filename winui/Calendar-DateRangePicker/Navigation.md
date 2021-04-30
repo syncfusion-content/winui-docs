@@ -1,13 +1,13 @@
 ---
 layout: post
-title: View navigation in WinUI CalendarDateRangePicker control|Syncfusion
-description: This section describes how to navigate between views the Calendar DateRange Picker (SfCalendarDateRangePicker) control.
+title: View navigation in WinUI Calendar DateRange Picker control |Syncfusion
+description: Learn here all about how to navigate between views the Calendar DateRange Picker (SfCalendarDateRangePicker) control.
 platform: WinUI
 control: SfCalendarDateRangePicker
 documentation: ug
 ---
 
-# View navigation in dropdown calendar of Calendar DateRange Picker
+# View navigation in WinUI Calendar DateRange Picker
 
 ## Navigate between views
 
