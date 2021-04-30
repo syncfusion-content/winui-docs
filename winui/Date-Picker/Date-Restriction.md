@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Date Restriction in WinUI Date Picker control | Syncfusion
-description: This section describes how to restrict date selection in Date Picker (SfDatePicker) control  in WinUI applications.
+description: This section describes how to restrict date selection in Date Picker (SfDatePicker) control in WinUI applications.
 platform: WinUI
 control: SfDatePicker
 documentation: ug
@@ -77,7 +77,7 @@ sfDatePicker.BlackoutDates = (sfDatePicker.DataContext as ViewModel).BlockedDate
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
-## Disable weekend dates
+## Disable dates dynamically (disable weekends)
 
 If you want to block all weekend dates or any dates from the date selection, handle the [`DateFieldItemPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateFieldItemPrepared) event and use the [`DateTimeFieldItemPreparedEventArgs.ItemInfo.IsEnabled`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DateTimeFieldItemPreparedEventArgs.html#Syncfusion_UI_Xaml_Editors_DateTimeFieldItemPreparedEventArgs_ItemInfo) property value as `true`.
 
@@ -119,7 +119,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Select date as you scroll spinner
 
-If you want to hide the submit button and select the date directly from the drop down date spinner without clicking the `Ok` button, use the [`ShowSubmitButtons`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
+If you want to hide the submit button and select the date directly from the dropdown date spinner without clicking the `Ok` button, use the [`ShowSubmitButtons`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -136,7 +136,7 @@ sfDatePicker.ShowSubmitButtons = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Date Picker hides the drop down date spinner submit and cancel buttons](Getting-Started_images/ShowSubmitButtons.gif)
+![Date Picker hides the dropdown date spinner submit and cancel buttons](Getting-Started_images/ShowSubmitButtons.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 

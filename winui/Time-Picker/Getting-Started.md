@@ -110,7 +110,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Select time interactively
 
-You can change the selected time interactively by enter the time value using keyboard or from the drop down time spinner. You can get the selected time from the `SelectedTime` property.
+You can change the selected time interactively by enter the time value using keyboard or from the dropdown time spinner. You can get the selected time from the `SelectedTime` property.
 
 {% tabs %}
 {% highlight xaml %}

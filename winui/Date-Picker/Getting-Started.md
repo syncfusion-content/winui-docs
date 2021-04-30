@@ -110,7 +110,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Select date interactively
 
-You can change the selected date interactively by enter the date value using keyboard or select from drop down date spinner. You can get the selected date from the `SelectedDate` property.
+You can change the selected date interactively by enter the date value using keyboard or select from dropdown date spinner. You can get the selected date from the `SelectedDate` property.
 
 {% tabs %}
 {% highlight xaml %}

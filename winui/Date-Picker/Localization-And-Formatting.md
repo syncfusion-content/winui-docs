@@ -122,7 +122,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change date format for Spinner
 
-You can allow the user to select the pair of date, month and year spinner or any single spinner cell from the drop down date spinner by using the [`DropDownFormatString`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DropDownFormatString) property. The default value of `DropDownFormatString` property is `d`.
+You can allow the user to select the pair of date, month and year spinner or any single spinner cell from the dropdown date spinner by using the [`DropDownFormatString`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DropDownFormatString) property. The default value of `DropDownFormatString` property is `d`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -141,7 +141,7 @@ sfDatePicker.DropDownFormatString = "dd/MM";
 
 ![Date Picker contains only date and month spinner](Getting-Started_images/DropdownFormatString.png)
 
-Here, you can only able to select the date and month value from the drop down spinner.
+Here, you can only able to select the date and month value from the dropdown spinner.
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 

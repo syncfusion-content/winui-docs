@@ -43,7 +43,7 @@ You can customize the UI of dropdown button by using the [`DropDownButtonTemplat
 {% endhighlight %}
 {% endtabs %}
 
-![Time Picker with customized drop down button](Dropdown-Time-Spinner_images/DropDownButtonTemplate.png)
+![Time Picker with customized dropdown button](Dropdown-Time-Spinner_images/DropDownButtonTemplate.png)
 
 ## Hide dropdown button
 
@@ -91,7 +91,7 @@ sfTimePicker.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAlignedLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![Alignment of drop down time spinner is changed to BottomEdgeAlignedLeft](Dropdown-Time-Spinner_images/DropDownPlacement.png)
+![Alignment of dropdown time spinner is changed to BottomEdgeAlignedLeft](Dropdown-Time-Spinner_images/DropDownPlacement.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -118,7 +118,7 @@ sfTimePicker.IsOpen = true;
 
 ## Change dropdown height
 
-You can change the height of drop down time spinner by using the [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. Based on the value of `DropDownHeight`, `ItemWidth` and `ItemHeight` properties, particular time cells to be visible. The default value of `DropDownHeight` property is `NaN`.
+You can change the height of dropdown time spinner by using the [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. Based on the value of `DropDownHeight`, `ItemWidth` and `ItemHeight` properties, particular time cells to be visible. The default value of `DropDownHeight` property is `NaN`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -141,7 +141,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change the number of time cells to be shown in the dropdown
 
-You can change the number of dropdown cells to be shown in the drop down time spinner by using the [`VisibleItemsCount`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_VisibleItemsCount) property. The default value of `VisibleItemsCount` property is `-1`.
+You can change the number of dropdown cells to be shown in the dropdown time spinner by using the [`VisibleItemsCount`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_VisibleItemsCount) property. The default value of `VisibleItemsCount` property is `-1`.
 
 N> When `DropDownHeight` and `VisibleItemsCount` properties are set, `VisibleItemsCount` property have higher precedence.
 

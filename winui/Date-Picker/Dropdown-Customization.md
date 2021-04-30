@@ -45,7 +45,7 @@ You can customize the UI of dropdown button by using the [`DropDownButtonTemplat
 {% endhighlight %}
 {% endtabs %}
 
-![Date Picker with customized drop down button](Dropdown-Date-Spinner_images/DropDownButtonTemplate.png)
+![Date Picker with customized dropdown button](Dropdown-Date-Spinner_images/DropDownButtonTemplate.png)
 
 ## Hide dropdown button
 
@@ -74,7 +74,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change dropdown alignment
 
-You can change the alignment of the drop down date spinner as full, center, left, right, top or bottom edge by using the [DropDownPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
+You can change the alignment of the dropdown date spinner as full, center, left, right, top or bottom edge by using the [DropDownPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
 
 N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then `Date Picker` smartly shifts the spinner alignment.
 
@@ -93,7 +93,7 @@ sfDatePicker.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAlignedLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![Alignment of drop down date spinner is changed to BottomEdgeAlignedLeft in WinUI Date Picker](Dropdown-Date-Spinner_images/DropDownPlacement.png)
+![Alignment of dropdown date spinner is changed to BottomEdgeAlignedLeft in WinUI Date Picker](Dropdown-Date-Spinner_images/DropDownPlacement.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -120,7 +120,7 @@ sfDatePicker.IsOpen = true;
 
 ## Change dropdown height
 
-You can change the height of drop down date spinner by using the [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. Based on the value of `DropDownHeight`, `ItemWidth` and `ItemHeight` properties, particular date items will be visible. The default value of `DropDownHeight` property is `NaN`.
+You can change the height of dropdown date spinner by using the [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. Based on the value of `DropDownHeight`, `ItemWidth` and `ItemHeight` properties, particular date items will be visible. The default value of `DropDownHeight` property is `NaN`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -143,7 +143,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change the number of dates to be shown in the dropdown
 
-You can change the number of dates to be shown in the drop down date spinner by using the [VisibleItemsCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_VisibleItemsCount) property. The default value of `VisibleItemsCount` property is `-1`.
+You can change the number of dates to be shown in the dropdown date spinner by using the [VisibleItemsCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_VisibleItemsCount) property. The default value of `VisibleItemsCount` property is `-1`.
 
 {% tabs %}
 {% highlight XAML %}

@@ -13,7 +13,7 @@ This section describes about various dropdown header customization options avail
 
 ## Setting hints in dropdown header
 
-You can add a hints in dropdown header by using the [`DropDownHeader`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_DropDownHeader) property. The dropdown hints will be shown only by setting the [`ShowDropDownHeader`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_ShowDropDownHeader) property values as `true`. Otherwise, drop down header will not be shown. The default value of `DropDownHeader` property is `null` and `ShowDropDownHeader` property is `false`.
+You can add a hints in dropdown header by using the [`DropDownHeader`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_DropDownHeader) property. The dropdown hints will be shown only by setting the [`ShowDropDownHeader`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_ShowDropDownHeader) property values as `true`. Otherwise, dropdown header will not be shown. The default value of `DropDownHeader` property is `null` and `ShowDropDownHeader` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -32,7 +32,7 @@ sfTimePicker.ShowDropDownHeader = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Time Picker displays the drop down time spinner header](Dropdown-Time-Spinner_images/DropDownHeader.png)
+![Time Picker displays the dropdown time spinner header](Dropdown-Time-Spinner_images/DropDownHeader.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -71,7 +71,7 @@ You can customize the header of dropdown time spinner by using the [`DropDownHea
 {% endhighlight %}
 {% endtabs %}
 
-![Time Picker with customized drop down time spinner header](Dropdown-Time-Spinner_images/DropDownHeaderTemplate.png)
+![Time Picker with customized dropdown time spinner header](Dropdown-Time-Spinner_images/DropDownHeaderTemplate.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/CustomUI)
 
@@ -96,6 +96,6 @@ sfTimePicker.ShowColumnHeaders = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Time Picker hides the drop down time spinner column headers](Dropdown-Time-Spinner_images/ShowColumnHeaders.png)
+![Time Picker hides the dropdown time spinner column headers](Dropdown-Time-Spinner_images/ShowColumnHeaders.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
