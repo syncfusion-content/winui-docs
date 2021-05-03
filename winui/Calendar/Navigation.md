@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Navigation between views in WinUI Calendar control | Syncfusion
-description: This section describes how to navigate between views in the Calendar (SfCalendar) control in WinUI applications.
+description: Learn here all about how to navigate between views and perform selection in the Calendar (SfCalendar) control and more.
 platform: WinUI
 control: SfCalendar
 documentation: ug
 ---
 
-# Navigate between views in WinUI Calendar
+# Navigate between views in WinUI Calendar (SfCalendar)
 
 You can easily navigate to the month, year, decade, or century views to select different dates by clicking the header button. Initially month view is loaded. You can also change the view programmatically by using [DisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_DisplayMode) property.
 
@@ -111,3 +111,14 @@ When the `NavigationDirection` property is **Vertical**, you can navigate within
 ![Navigation between views in horizontal direction in WinUI Calendar](Getting-Started_images/navigation-direction.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction)
+
+## Navigation by keyboard
+
+You can navigate between elements in `Calendar` control by keyboard keys or by mouse interaction. The keyboard keys to navigate and select are listed below.
+
+* **Tab** or **Shift+Tab** - To navigate between date cell and elements in header.
+* **UpArrow**,**DownArrow**,**LeftArrow** and **RightArrow** - To navigate between calendar date or month or decade cells.
+* **Space** or **Enter** - To select a cell.
+* **Ctrl+UpArrow** and **ctrl+DownArrow** - To navigate between views(Navigate from month to year view).
+* **PageUp** and **PageDown** - To navigate within views(Navigate between months).
+* **Home** or **End** - To navigate to the first cells or last cell of current view.
