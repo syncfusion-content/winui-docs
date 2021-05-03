@@ -63,3 +63,13 @@ sfCalendarDatePicker.FormatString = "MM/yyyy";
 {% endtabs %}
 
 ![Credit card valid date selection in WinUI Calendar](Navigation_images/selectionBasedOnNavigation.gif)
+
+You can navigate between elements in the dropdown calendar of `Calendar Date Picker` control by keyboard keys or by mouse interaction. The keyboard keys to navigate and select are listed below.
+
+* **Tab** or **Shift+Tab** - To navigate between date cell and elements in header.
+* **UpArrow**,**DownArrow**,**LeftArrow** and **RightArrow** - To navigate between calendar date or month or decade cells.
+* **Space** or **Enter** - To select a cell.
+* **Ctrl+UpArrow** and **ctrl+DownArrow** - To navigate between views(Navigate from month to year view).
+* **PageUp** and **PageDown** - To navigate within views(Navigate between months).
+* **Home** or **End** - To navigate to the first cells or last cell of current view.
+* **Alt+DownArrow** - To open the dropdown calendar.
