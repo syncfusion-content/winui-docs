@@ -92,7 +92,7 @@ To apply sorting on multiple columns, user have to click the column header by pr
 
 In the below screen shot, the OrderID column sorted. Then the `CustomerName` column is sorted against the `OrderID` data by clicking column header by pressing <kbd>Ctrl</kbd> key. The sorting state of `OrderID` column is preserved and `CustomerName` column sorted against `OrderID` column.  
 
-![Multi column sorting in WinUI DataGrid](Sorting-images/winui-datagrid-multi-sorting.png)
+![Multi Column Sorting in WinUI DataGrid](Sorting-images/winui-datagrid-multi-sorting.png)
 
 ### Display sort order
 It is also possible to display sorted order of columns in header by setting [SfDataGrid.ShowSortNumbers](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_ShowSortNumbers) property to `true`. 
@@ -108,7 +108,7 @@ this.sfDataGrid.ShowSortNumbers = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Sorting orders in WinUI DataGrid](Sorting-images/winui-datagrid-sorting-orders.png)
+![Sorting Orders in WinUI DataGrid](Sorting-images/winui-datagrid-sorting-orders.png)
 
 ## Programmatic sorting
 
@@ -247,7 +247,7 @@ this.sfDataGrid.SortComparers.Add(new SortComparer() { Comparer = new CustomComp
 
 Sorting `CustomerName` column sorts the data using custom comparer available in `SfDataGrid.SortComparers`.
 
-![Custom sorting in WinUI DataGrid](Sorting-images/winui-datagrid-custom-sorting.png)
+![Custom Sorting in WinUI DataGrid](Sorting-images/winui-datagrid-custom-sorting.png)
 
 ## Sorting the underlying collection 
 
