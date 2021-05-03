@@ -71,7 +71,7 @@ sfCalendarDateRangePicker.FormatString = "{0:MM/yyyy}-{1:MM/yyyy}";
 
 ## Navigation by keyboard
 
-You can navigate between elements in `Calendar` control by keyboard keys or by mouse interaction. The keyboard keys to navigate and select are listed below.
+You can navigate between elements in the dropdown calendar of `Calendar DateRange Picker` control by keyboard keys or by mouse interaction. The keyboard keys to navigate and select are listed below.
 
 * **Tab** or **Shift+Tab** - To navigate between date cell and elements in header.
 * **UpArrow**,**DownArrow**,**LeftArrow** and **RightArrow** - To navigate between calendar date or month or decade cells.
