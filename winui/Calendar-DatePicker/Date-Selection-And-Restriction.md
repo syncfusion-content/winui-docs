@@ -205,7 +205,7 @@ sfCalendarDatePicker.SelectionHighlightMode = SelectionHighlightMode.Filled;
 
 ![Highlight today and selected dates in WinUI Calendar](Selection-And-Restriction_images/selectionHightlightMode.png)
 
-## Change today and selected date shape
+## Change shape of today and selected date
 
  You can customize the today and selected date cell shape in dropdown calendar using [SelectionShape](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectionShape) property to customize the shape of date cells border. The default value of `SelectionShape` property is **Rectangle**.
 
