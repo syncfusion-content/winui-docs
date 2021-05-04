@@ -100,7 +100,7 @@ sfCalendar.SelectionMode = CalendarSelectionMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
 
-N> If `SelectedDate` property is used to select a date when `SelectionMode` property value is **Multiple**. The same date will be added as first item of `SelectedDates` collection property. 
+N> If `SelectedDate` property is used to select a date when `SelectionMode` property value is **Multiple**. The`SelectedDates` collection property will have only `SelectedDate` property value. 
 
 N> The `SelectedDate` property value will be same as the first date value in `SelectedDates` collection and changes with it.
 

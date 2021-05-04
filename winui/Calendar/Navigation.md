@@ -119,6 +119,6 @@ You can navigate between elements in `Calendar` control by keyboard keys or by m
 * **Tab** or **Shift+Tab** - To navigate between date cell and elements in header.
 * **UpArrow**,**DownArrow**,**LeftArrow** and **RightArrow** - To navigate between calendar date or month or decade cells.
 * **Space** or **Enter** - To select a cell.
-* **Ctrl+UpArrow** and **ctrl+DownArrow** - To navigate between views(Navigate from month to year view).
-* **PageUp** and **PageDown** - To navigate within views(Navigate between months).
+* **Ctrl + UpArrow** and **ctrl + DownArrow** - To navigate between views (Example: Navigate from month to year view).
+* **PageUp** and **PageDown** - To navigate within views (Example: Navigate between months).
 * **Home** or **End** - To navigate to the first cells or last cell of current view.
