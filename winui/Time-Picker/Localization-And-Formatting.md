@@ -108,11 +108,41 @@ sfTimePicker.FormatString= "HH:mm";
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
-## Edit time using free form editing
+## Edit time using mask editing
 
-By default, the user entering each input numbers are automatically validated with the `FormatString`'s formats and assigned the proper value for current field, then it will move to next input field of the time format.
+By default ‘Mask’ editing is enabled, which ensure that it contains only valid value. As soon as in input is given, the value is validated and correction is done immediately. Once input is completed for a field, cursor moves to next field automatically.
+
+Based on the `ClockIdentifier` and your input values, hour and minute field values are automatically corrected. 
+
+For example,
+* If you enter values between `13-19` into the `12HourClock` hour field, it will add last input digit(3-9) in the hour field and move the cursor to the next field. If you try to enter input in hour field that is greater than `19`, it will add first digit in hour field and last digit added into next field.
+
+![Time Picker valid and corrects the hour field based on the input using mask editing.](Getting-Started_images/Hour_Mask_editing.png)
+
+* If you try to enter input in minute field that is greater than `59`, it will add first digit in minute field and move the cursor to the next field.
+
+![Time Picker valid and corrects the minute field based on the input using mask editing.](Getting-Started_images/Minute_Mask_editing.png)
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfTimePicker EditMode="Mask"
+                      x:Name="sfTimePicker" />
+
+{% endhighlight  %}
+{% highlight C# %}
+
+SfTimePicker sfTimePicker = new SfTimePicker();
+sfTimePicker.EditMode = DateTimeEditingMode.Mask;
+
+{% endhighlight  %}
+{% endtabs %}
 
 ![Time Picker enables mask editing mode to select time](Getting-Started_images/Mask_Editingmode.gif)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
+
+## Edit time using free form editing
 
 If you want to perform the validation after the user completely entering their time inputs, use the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_EditMode) property value as `Normal`. Then the entered time value is validated with the `FormatString` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the previously selected time value sets to `SelectedTime` property.
 
