@@ -75,7 +75,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-N> When `SelectedDate` property is used to set selected date, the value of `SelectedDates` property will be **null**.
+N> If `SelectedDate` property is used to select a date when `SelectionMode` property value is **Single**. The`SelectedDates` collection property will have only `SelectedDate` property value. 
 
 ![Calendar displaying the selected date from SelectedDates collection](Selection_images/single-selection-by-collection.png)
 
