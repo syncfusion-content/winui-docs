@@ -32,7 +32,7 @@ sfCalendarDateRangePicker.MaxDate = new DateTimeOffset(new DateTime(2021, 03, 24
 
 ![Calendar DateRange Picker restrict the date selection with particular range](Getting-Started_images/MinMaxdate.png)
 
-N> When `MinDisplayMode` property value is **Year** and `MinDate` value is **15/01/2021**, selecting the month of minimum date will set the starting date value from the minimum date i.e.. from *January 15, 2021*.
+N> When `MinDisplayMode` property value is **Year** and `MinDate` value is **15/01/2021**, selecting the month of minimum date will set the starting date value from the minimum date, i.e., from *January 15, 2021*.
 
 N> The `MinDate` property value should not be greater than the `MaxDate` property value.
 
