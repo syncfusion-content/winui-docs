@@ -129,7 +129,7 @@ You can display the corresponding row index in each row header, by customizing t
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatGrid shows row header cells with row index](Rows_images/winui-datagrid-row-header-with-index.png)
+![WinUI DatGrid displays Row Header Cells with Row Index](Rows_images/winui-datagrid-row-header-with-index.png)
 
 
 ### Change the current row indicator
@@ -181,14 +181,14 @@ You can change the current row indicator in the row header by customizing the co
 {% endhighlight %}
 {% endtabs %}
 
-![Current row indicator customization in WinUI DataGrid](Rows_images/winui-datagrid-change-current-row-indicator.png)
+![Customizing Current Row Indicator in WinUI DataGrid](Rows_images/winui-datagrid-current-row-indicator.png)
 
 
 ## Header Row
 
 Header row is present in top of the DataGrid which has column headers in it. Column header describes the caption to identify the column content.
 
-![WinUI DataGrid shows column header in header row](Rows_images/winui-datagrid-column-header-in-header-row.png)
+![WinUI DataGrid Header Row with Column Header](Rows_images/winui-datagrid-header-row-with-column-header.png)
 
 You can change the header row height by setting [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_HeaderRowHeight) property.
 
@@ -205,7 +205,7 @@ You can hide the header row by setting `SfDataGrid.HeaderRowHeight` as `0` (zero
 {% endhighlight %}
 {% endtabs %}
 
-![Hiding the row header in WinUI DataGrid](Rows_images/winui-datagrid-hide-row-header.png)
+![Hide Row Header in WinUI DataGrid](Rows_images/winui-datagrid-hide-row-header.png)
 
 You can also hide the header row of DetailsViewDataGrid by setting `HeaderRowHeight` as `0` (zero) to [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid).
 
@@ -224,7 +224,7 @@ You can also hide the header row of DetailsViewDataGrid by setting `HeaderRowHei
 {% endhighlight %}
 {% endtabs %}
 
-![Hiding the row header in details view for WinUI DataGrid](Rows_images/winui-datagrid-hide-row-header-with-details-view.png)
+![Hide Row Header of Details View in WinUI DataGrid](Rows_images/winui-datagrid-details-view-without-header.png)
 
 ## Freeze panes
 
@@ -291,7 +291,7 @@ sfDataGrid.FrozenFooterRowsCount = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid with frozen the rows and columns at top and bottom](Rows_images/winui-datagrid-frozen-rows-columns-at-top-and-bottom.png)
+![WinUI DataGrid displays Frozen Rows and columns at top and bottom](Rows_images/winui-datagrid-frozen-rows-columns-position.png)
 
 ### Differentiate frozen rows from normal rows
 
