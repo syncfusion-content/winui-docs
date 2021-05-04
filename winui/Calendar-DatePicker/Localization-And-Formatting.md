@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in WinUI Calendar Date Picker control | Syncfusion
+title: Localization and Formatting in Calendar Date Picker | Syncfusion
 description: Learn here all about how to localize and customize format of Syncfusion WinUI Calendar Date Picker (SfCalendarDatePicker) control and more.
 platform: WinUI
 control: SfCalendarDatePicker
