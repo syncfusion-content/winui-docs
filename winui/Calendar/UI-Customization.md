@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize the UI of WinUI Calendar control | Syncfusion
+title: UI Customization in WinUI Calendar control | Syncfusion
 description: Learn here all about UI customization feature of the WinUI Calendar (SfCalendar) control and much more.
 platform: WinUI
 control: SfCalendar

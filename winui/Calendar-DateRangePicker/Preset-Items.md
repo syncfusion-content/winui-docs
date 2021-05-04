@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Preset Items in WinUI Calendar DateRange Picker control|Syncfusion
+title: Rreset items in WinUI Calendar DateRange Picker control|Syncfusion
 description: Learn here all about how to show preset items in WinUI Calendar DateRange Picker (SfCalendarDateRangePicker) control and more.
 platform: winui
 control:  SfCalendarDateRangePicker

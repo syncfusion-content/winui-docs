@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Restrict date selection in WinUI Calendar control | Syncfusion
+title: Restrict Date Selection in WinUI Calendar control | Syncfusion
 description: Learn here all about how to restrict the date selection in WinUI Calendar (SfCalendar) control and more.
 platform: WinUI
 control: SfCalendar
