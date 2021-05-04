@@ -111,3 +111,14 @@ When the `NavigationDirection` property is **Vertical**, you can navigate within
 ![Navigation between views in horizontal direction in WinUI Calendar](Getting-Started_images/navigation-direction.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction)
+
+## Navigation by keyboard
+
+You can navigate between elements in `Calendar` control by keyboard keys or by mouse interaction. The keyboard keys to navigate and select are listed below.
+
+* **Tab** or **Shift+Tab** - To navigate between date cell and elements in header.
+* **UpArrow**,**DownArrow**,**LeftArrow** and **RightArrow** - To navigate between calendar date or month or decade cells.
+* **Space** or **Enter** - To select a cell.
+* **Ctrl + UpArrow** and **ctrl + DownArrow** - To navigate between views (Example: Navigate from month to year view).
+* **PageUp** and **PageDown** - To navigate within views (Example: Navigate between months).
+* **Home** or **End** - To navigate to the first cells or last cell of current view.

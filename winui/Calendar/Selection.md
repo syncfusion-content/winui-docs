@@ -75,6 +75,8 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
+N> If `SelectedDate` property is used to select a date when `SelectionMode` property value is **Single**. The`SelectedDates` collection property will have only `SelectedDate` property value. 
+
 ![Calendar displaying the selected date from SelectedDates collection](Selection_images/single-selection-by-collection.png)
 
 ## Multiple Selection
@@ -98,6 +100,8 @@ sfCalendar.SelectionMode = CalendarSelectionMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
 
+N> If `SelectedDate` property is used to select a date when `SelectionMode` property value is **Multiple**. The`SelectedDates` collection property will have only `SelectedDate` property value. 
+
 N> The `SelectedDate` property value will be same as the first date value in `SelectedDates` collection and changes with it.
 
 ![Calendar allows you to select multiple dates](Getting-Started_images/multipledate_selection.png)
@@ -106,7 +110,7 @@ N> The `SelectedDate` property value will be same as the first date value in `Se
 
 You can select a range of dates in `Calendar` control by changing the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionMode) property value to `Range`. You can get the selected range of dates from the [SelectedRange](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDates) property. By default, the value of `SelectedDate` property is **null** and `SelectedDates` collection is empty.
 
-N> The `SelectedDates` collection will be empty and `SelectedDate` property value will be `null` when a date range is selected.
+N> The `SelectedDates` collection will be empty and `SelectedDate` property value will be **null** when a date range is selected.
 
 {% tabs %}
 {% highlight xaml %}
@@ -168,3 +172,4 @@ sfCalendar.SelectionShape = SelectionShape.Circle;
 ![Calendar highlights the today and selected date](Selection_images/selectionshape.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Selection)
+
