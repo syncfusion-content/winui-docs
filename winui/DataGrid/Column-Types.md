@@ -1178,7 +1178,7 @@ this.dataGrid.Columns.Add(new GridCheckBoxSelectorColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid Selector Column with Text in Column Header](Column-Types_images/winui-datagrid-selector-column.png)
+![Show Text in Column Header of WinUI DataGrid](Column-Types_images/winui-datagrid-column-header-text.png)
 
 ### Styling selector column
 
@@ -1500,7 +1500,7 @@ The style of check box in record cells and header can be customized by changing 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid Selector Column with CheckBox Style in Cell and Header](Column-Types_images/winui-datagrid-checkbox-cell-and-header.png)
+![Styling WinUI DataGrid CheckBox Selector Column](Column-Types_images/winui-datagrid-checkbox-column-style.png)
 
 ### Limitations
 

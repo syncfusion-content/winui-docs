@@ -475,7 +475,7 @@ public string ShipCity
 
 The OrderID and CustomerID column rearranged based on specified order.
 
-![WinUI DataGrid displays changing Order of Columns](Columns-images/winui-datagrid-column-order.png)
+![Changing order of columns in WinUI DataGrid](Columns-images/winui-datagrid-column-order.png)
 
 ### Manually defining columns
 
@@ -825,5 +825,5 @@ Below code, binds the `ViewModel.AllowFiltering` property to `GridColumn.AllowFi
 {% endtabs %}
 
 
-![Data Binding in WinUI DataGrid](Columns-images/winui-datagrid-binding-column.png)
+![Data Binding of Column in WinUI DataGrid](Columns-images/winui-datagrid-binding-column.png)
 
