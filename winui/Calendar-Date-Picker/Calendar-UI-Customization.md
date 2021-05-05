@@ -13,9 +13,9 @@ This section describes how to select a date from dropdown Calendar and its custo
 
 ## Change dropdown alignment
 
-You can change the alignment of the dropdown spinner as full, center, left, right, top or bottom edge by using the [DropDownPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
+You can change the alignment of the dropdown calendar as full, center, left, right, top or bottom edge by using the [DropDownPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
 
-N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then `Calendar Date Picker` smartly shifts the spinner alignment.
+N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then `Calendar Date Picker` smartly shifts the dropdown calendar alignment.
 
 {% tabs %}
 {% highlight XAML %}
@@ -39,7 +39,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change dropdown size
 
-You can change the size of dropdown calendar by using [DropDownWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_DropDownWidth) and [DropDownHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. The default value of `DropDownHeight`  properties is `NaN`.
+You can change the size of dropdown calendar by using [DropDownWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_DropDownWidth) and [DropDownHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. The default value of `DropDownHeight` and `DropDownWidth` properties is `NaN`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -233,7 +233,6 @@ public class EventDataConverter : IValueConverter
 ![Custom UI of specific date cells in Calendar Date Picker](Getting-Started_images/ItemTemplateSelector.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/CustomUI)
-
 
 ## Customize using theme keys
 

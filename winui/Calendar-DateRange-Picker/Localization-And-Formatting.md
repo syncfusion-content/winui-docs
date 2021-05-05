@@ -7,7 +7,7 @@ control: SfCalendarDateRangePicker
 documentation: ug
 ---
 
-# Localization in WinUI Calendar DateRange Picker
+# Localization and Formatting in WinUI Calendar DateRange Picker
 
 ## Types of Calendar
 

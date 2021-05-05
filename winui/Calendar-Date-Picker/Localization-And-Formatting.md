@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Localization and Formatting in Calendar Date Picker | Syncfusion
+title: Localization and Formatting in WinUI Calendar Date Picker | Syncfusion
 description: Learn here all about how to localize and customize format of Syncfusion WinUI Calendar Date Picker (SfCalendarDatePicker) control and more.
 platform: WinUI
 control: SfCalendarDatePicker
 documentation: ug
 ---
 
-# Localization in WinUI Calendar Date Picker (SfCalendarDatePicker)
+# Localization and Formatting in WinUI Calendar Date Picker
 
-This section describes how to localize [Calendar Date Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control using [`CalendarIdentifier`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_CalendarIdentifier) and `Language` properties and to change the display formats.
+This section describes how to change the display formats and to localize [Calendar Date Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control using [`CalendarIdentifier`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_CalendarIdentifier) and `Language` properties.
 
 ## Types of calendar
 

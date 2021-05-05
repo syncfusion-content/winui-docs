@@ -30,7 +30,6 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can also change the selected date interactively by selecting a date from dropdown calendar or by entering the date value in editor of `Calendar Date Picker`. You can get the selected date from the `SelectedDate` property.
 
-
 ![Calendar Date Picker displaying selected value](Getting-Started_images/CalendarDatePicker.gif)
 
 ## Limit available dates

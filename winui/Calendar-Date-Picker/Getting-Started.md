@@ -199,7 +199,7 @@ private void SfCalendarDatePicker_SelectedDateChanged(object sender, SelectedDat
 
 ## Edit date using free form editing
 
-By default, user entering each input numbers are automatically validated with the `FormatString`'s formats and assigns the proper value for current field, then it will move to next input field of the date format.
+Since the default value of `EditMode` property is **Mask**, each input numbers entered in editor are automatically validated with the `FormatString`'s formats and the proper value is assigned in current field. Then focus will move to next input field of the date format.
 
 If you want to perform the validation after the user completely entered their date inputs, set the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_EditMode) property value as **Normal**. Then the entered date value is validated with the `FormatString` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the previously selected date value sets to `SelectedDate` property.
 
@@ -269,9 +269,9 @@ You can handle the event as follows:
 
 ## Hide the dropdown button
 
-You can hide the dropdown button in `Calendar Date Picker` by setting the [ShowDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as `false`. The default value of `ShowDropDownButton` property is `true`.
+You can hide the dropdown button in `Calendar Date Picker` by setting the [ShowDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as **false**. The default value of `ShowDropDownButton` property is **true**.
 
-N> When the dropdown button is hidden, you can still open the dropdown calendar using `ALT + down` keyboard shortcut.
+N> When the dropdown button is hidden, you can still open the dropdown calendar using **ALT + DownArrow** keyboard shortcut.
 
 {% tabs %}
 {% highlight XAML %}
@@ -294,7 +294,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Show submit button
 
-If you want to select the date from drop down calendar only by clicking the `Ok` button, use the [ShowSubmitButtons](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as `true`. The default value of `ShowSubmitButtons` property is `false`.
+If you want to select the date from drop down calendar only by clicking the **Ok** button, use the [ShowSubmitButtons](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as **true**. The default value of `ShowSubmitButtons` property is **false**.
 
 N> When the submit buttons are hidden, `SelectedDate` property will be updated as soon you choose start and end date from dropdown.
 
