@@ -1,13 +1,13 @@
 ---
 layout: post
 title: About WinUI Calendar Date Picker control | Syncfusion
-description: Learn about introduction of Syncfusion WinUI Calendar Date Picker control with intuitive, touch-friendly support. 
+description: Learn here all about introduction of Syncfusion WinUI Calendar Date Picker (SfCalendarDatePicker) control, its features, and more. 
 platform: winui
 control: SfCalendarDatePicker
 documentation: ug
 ---
 
-# WinUI Calendar Date Picker Overview
+# WinUI Calendar Date Picker (SfCalendarDatePicker) Overview
 
 The [WinUI Calendar Date Picker](https://www.syncfusion.com/winui-controls/calendar-datepicker) control provides an intuitive, touch-friendly interface to quickly select a date from a drop-down calendar. It supports different date formats. Date selection can be restricted by specifying minimum and maximum dates. Specific dates can also disabled from selection. In addition, it supports editing with validation and built-in watermark text display.
 

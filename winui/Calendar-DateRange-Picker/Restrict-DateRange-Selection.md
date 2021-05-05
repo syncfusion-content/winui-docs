@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Restrict selection in WinUI CalendarDateRangePicker control|Syncfusion
-description: This section describes about how to restrict the date range selection in WinUI Calendar DateRange Picker control.
+title: Restrict DateRange Selection in Calendar DateRange Picker | Syncfusion
+description: Learn here all about how to restrict the date range selection in WinUI Calendar DateRange Picker (SfCalendarDateRangePicker) control and more.
 platform: WinUI
 control: SfCalendarDateRangePicker
 documentation: ug
