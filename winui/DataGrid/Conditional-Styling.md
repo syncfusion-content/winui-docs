@@ -71,7 +71,7 @@ public class SelectorClass : StyleSelector
 
 Here, GridCell’s are customized based on `OrderID` property of underlying record.
 
-![Conditional Styling of WinUI DataGrid Cells using Style Selector](Conditional-Styling_images/winui-datagrid-cells-style-customization.png)
+![WinUI DataGrid Conditional Cell Styling based on Data using Style Selector](Conditional-Styling_images/winui-datagrid-cells-style-customization.png)
 
 ## Row style
 
@@ -178,7 +178,7 @@ public class SelectorClass : StyleSelector
 
 Here, alternating rows are customized based on `OrderID` property of underlying record.
 
-![Customizing Alternative Row Style in WinUI DataGrid](Conditional-Styling_images/winui-datagrid-alternate-row-style-customization.png)
+![Alternative Row Style in WinUI DataGrid](Conditional-Styling_images/winui-datagrid-alternate-row-style.png)
 
 ## Caption summary cell style
 
@@ -240,7 +240,7 @@ public class SelectorClass : StyleSelector
 
 Here, caption summary cells are customized based on `OrderID` summary value.
 
-![Customizing Caption Summary Cells Style in WinUI DataGrid](Conditional-Styling_images/winui-datagrid-caption-summary-cells-customization.png)
+![Conditional Styling of WinUI DataGrid Caption Summary Cells using Style Selector](Conditional-Styling_images/winui-datagrid-caption-summary-cells-customization.png)
 
 ### Conditional styling of caption summary cell based on column
 
@@ -303,7 +303,7 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Caption Summary Cells Style based on Column in WinUI DataGrid](Conditional-Styling_images/winui-datagrid-caption-summary-cell-style-customization.png)
+![Conditional Styling of WinUI DataGrid Caption Summary Cells](Conditional-Styling_images/winui-datagrid-caption-summary-cell-style-customization.png)
 
 ## Group summary cell style
 
@@ -381,7 +381,7 @@ public class SelectorClass : StyleSelector
 
 Here, group summary cells are customized based on `TotalPrice` summary value.
 
-![Customizing Group Summary Cells Style in WinUI DataGrid](Conditional-Styling_images/winui-datagrid-group-summary-cell-customization.png)
+![Conditional Styling of WinUI DataGrid Group Summary Cells](Conditional-Styling_images/winui-datagrid-group-summary-cell-customization.png)
 
 ### Conditional styling of group summary cell based on column
 
@@ -456,7 +456,7 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Group Summary Cells based on Column in WinUI DataGrid](Conditional-Styling_images/winui-datagrid-group-summary-column-customizatiion.png)
+![Conditional Styling of WinUI DataGrid Group Summary Cells](Conditional-Styling_images/winui-datagrid-group-summary-column-customizatiion.png)
 
 ## Group summary row style
 

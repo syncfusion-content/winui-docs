@@ -118,7 +118,7 @@ public class DisplayBindingConverter : IValueConverter
 
 In the below screenshot, `Salary` column display value is formatted to currency by setting `DisplayBinding` property.
 
-![Displaying Currency value in WinUI SfTreeGrid](Column-Type-images/ColumnTypes-img1.png)
+![WinUI TreeGrid Column with Currency Values](Column-Type-images/winui-treegrid-currency-values.png)
 
 By default, Columns handling the data operations (sorting) based on `MappingName` property.
 
@@ -183,7 +183,7 @@ public class DisplayBindingConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying ProgressBar in WinUI SfTreeGrid](Column-Type-images/ColumnTypes-img2.png)
+![WinUI TreeGrid Column with ProgressBar](Column-Type-images/winui-treegrid-column-progressbar.png)
 
 
 `CellTemplate` is not support by [TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html) and [TreeGridCheckboxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html) columns.
@@ -233,7 +233,7 @@ You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/win
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying same DataTemplate for multiple columns in WinUI SfTreeGrid](Column-Type-images/ColumnTypes-img3.png)
+![WinUI TreeGrid Column with Cell Template](Column-Type-images/winui-treegrid-cell-template.png)
 
 #### Setting CellTemplate based on custom logic using TemplateSelector
 
@@ -310,7 +310,7 @@ In the below code, the custom template selector set to `TreeGridColumn.CellTempl
 
 N> Non-Editable columns does not support `CellTemplate`.
 
-![Displaying column with CellTemplate in WinUI SfTreeGrid](Column-Type-images/ColumnTypes-img4.png)
+![WinUI TreeGrid Column Template Selector](Column-Type-images/winui-treegrid-template-selection.png)
 
 ### Data Formatting
 
@@ -379,7 +379,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying data formatting in columns of WinUI SfTreeGrid](Column-Type-images/ColumnTypes-img5.png)
+![WinUI TreeGrid Column Formatting](Column-Type-images/winui-treegrid-column-formatting.png)
 
 
 ### Styling TreeGridColumn
@@ -453,7 +453,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying font styling in WinUI SfTreeGrid](Column-Type-images/ColumnTypes-img6.png)
+![WinUI TreeGrid Customized Column Style](Column-Type-images/winui-treegrid-column-style.png)
 
 #### Styles based on custom logic
 
@@ -538,7 +538,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying cell styling based on conditions in WinUI SfTreeGrid](Column-Type-images/ColumnTypes-img7.png)
+![WinUI TreeGrid Column with Conditional Formatting](Column-Type-images/winui-treegrid-column-conditional-formatting.png)
 
 ### UI Interaction
 
@@ -599,7 +599,7 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying TextTrimming and TextWrapping in columns of WinUI SfTreeGrid](Column-Type-images/ColumnTypes-img8.png)
+![WinUI SfTreeGrid Column with Text Trimming and Text Wrapping Settings](Column-Type-images/winui-treegrid-column-text-trimming-and-wrapping.png)
 
 ## TreeGridTextColumn
 
@@ -643,7 +643,7 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", 
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Spell check error while editing in WinUI SfTreeGrid](Column-Type-images/ColumnTypes-img9.png)
+![Enabled SpellChecker to WinUI TreeGrid Column](Column-Type-images/winui-treegrid-spellchecker.png)
 
 ## TreeGridCheckBoxColumn
 
@@ -680,7 +680,7 @@ treeGrid.Columns.Add(new TreeGridCheckBoxColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying CheckBox column in WinUI SfTreeGrid](Column-Type-images/ColumnTypes-img10.png)
+![WinUI TreeGrid Column with CheckBox](Column-Type-images/winui-treegrid-checkbox-column.png)
 
 `TreeGridCheckBoxColumn` allows you to customize check box state and its alignment.
 
@@ -843,7 +843,7 @@ In the below code, custom template selector set to `TreeGridTemplateColumn.EditT
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Template column in WinUI SfTreeGrid](Column-Type-images/ColumnTypes-img11.png)
+![Cell and Edit Template in WinUI TreeGrid Column](Column-Type-images/winui-treegrid-cell-and-edit-template.png)
 
 
 ## TreeGridComboBoxColumn
@@ -878,7 +878,7 @@ SfTreeGrid triggers, `CurrentCellDropDownSelectionChanged` event, when the Selec
 
 `SelectedItem**`** property returns the selected item from drop down list.
 
-![Displaying ComboBox column in WinUI SfTreeGrid](Column-Type-images/ColumnTypes-img12.png)
+![WinUI TreeGrid Column with ComboBox](Column-Type-images/winui-treegrid-combobox-column.png)
 
 ### Improving dropdown opening time
 
@@ -953,7 +953,7 @@ treeGrid.Columns.Add(new TreeGridHyperlinkColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Hyperlink column in WinUI SfTreeGrid](Column-Type-images/ColumnTypes-img13.png)
+![WinUI TreeGrid Column with Hyperlink](Column-Type-images/winui-treegrid-hyperlink-column.png)
 
 
 
@@ -1006,7 +1006,7 @@ You can change the foreground color of `TreeGridHyperlinkColumn` by writing the 
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying style customization of Hyperlink column WinUI SfTreeGrid](Column-Type-images/ColumnTypes-img14.png)
+![Customized Hyperlink Column in WinUI TreeGrid](Column-Type-images/winui-treegrid-hyperlink-column-customization.png)
 
 ### Customize column renderer
 
@@ -1110,7 +1110,7 @@ public class TreeGridCellTextBoxRendererExt : TreeGridCellTextBoxRenderer
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying custom renderer implementation of column in WinUI SfTreeGrid](Column-Type-images/ColumnTypes-img15.png)
+![Customize the Column in WinUI TreeGrid](Column-Type-images/winui-treegrid-customization.png)
 
 
 ## How To
