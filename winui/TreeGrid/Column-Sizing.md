@@ -123,7 +123,7 @@ public class DisplayBindingConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Columns with Start width in WinUI SfTreeGrid](Column-Sizing-images/Column-Sizing-img1.png)
+![Column Sizing in WinUI TreeGrid](Column-Sizing-images/winui-treegrid-column-sizing.png)
 
 N> The `TreeGridColumn.ColumnSizer` takes higher priority than the `SfTreeGrid.ColumnWidthMode`.
 
@@ -352,4 +352,4 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 {% endhighlight %}
 {% endtabs %}
 
-![Column Sizer customization in SfTreeGrid WinUI](Column-Sizing-images/Column-Sizing-img2.png)
+![WinUI TreeGrid ColumnRatio Column Width](Column-Sizing-images/winui-treegrid-column-ratio.png)
