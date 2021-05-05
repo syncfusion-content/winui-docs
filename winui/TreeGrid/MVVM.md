@@ -208,7 +208,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![Shown button command binding to viewmodel in WinUI TreeGrid](MVVM_images/Shown-button-command-binding-to-viewmodel-in-WinUI-TreeGrid.png)
+![Binding Button Command to ViewModel in WinUI TreeGrid](MVVM_images/winui-treegrid-binding-button-command.png)
 
 ## Binding ComboBoxColumn ItemsSource from view model
 
@@ -306,7 +306,7 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![Shown binding comboboxcolumn ItemsSource from ViewModel in WinUI TreeGrid](MVVM_images/Shown-binding-comboboxcolumn-ItemsSource-from-ViewModel-in-WinUI-TreeGrid.png)
+![Binding ComboBoxColumn ItemsSource from ViewModel in WinUI TreeGrid](MVVM_images/winui-treegrid-binding-comboboxcolumn-itemssource.png)
 
 ## Binding ItemsSource from view model to ComboBox inside data template
 
@@ -416,7 +416,7 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![Shown combobox inside data template binding MVVM in WinUI TreeGrid](MVVM_images/Shown-combobox-inside-data-template-binding-MVVM-in-WinUI-TreeGrid.png)
+![WinUI TreeGrid displays ComboBox with MVVM Data Template Binding](MVVM_images/winui-treegrid-combobox-with-mvvm-data-template-binding.png)
 
 ## Binding TreeGrid columns from view model
 
