@@ -34,19 +34,66 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %}
 
-![Legend support in WinUI Chart](Legend_images/legend1.png)
+![Legend support in WinUI Chart](Legend_images/winui_chart_legend.png)
 
+## Legend Header
 
-Each legend composed of the following parts:
+Chart provides support to add any UIElement as a header for legend items. 
 
-![Legend composed support in WinUI Chart](Legend_images/legend2.png)
+You can define the [`Header`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Header) for legend using the following code example.
 
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.Legend>
+
+      <chart:ChartLegend>
+
+          <chart:ChartLegend.Header>
+
+               <TextBlock Text="Medals" VerticalAlignment="Center"  
+
+                           HorizontalAlignment="Center" Margin="15"/>
+
+            </chart:ChartLegend.Header>
+
+     </chart:ChartLegend>
+
+</chart:SfChart.Legend>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ChartLegend legend = new ChartLegend();
+
+TextBlock textBlock = new TextBlock()
+{
+
+    Text = "Medals",
+
+    HorizontalAlignment = HorizontalAlignment.Center,
+
+    VerticalAlignment = VerticalAlignment.Center,
+
+    Margin = new Thickness(15)
+
+};
+
+legend.Header = textBlock;
+
+chart.Legend = legend;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Legend header in WinUI Chart](Legend_images/winui_chart_legend_header.png)
 
 ## Legend Icon
 
-Represents the symbol associated with each legend item. By default, the legend icon is [`Rectangle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegendIcon.html). 
-
-This can be customized using the [`LegendIcon`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_LegendIcon) property in any series as in below code snippet:
+Represents the symbol associated with each legend item. By default, the legend icon is [`Rectangle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegendIcon.html). This can be customized using the [`LegendIcon`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_LegendIcon) property in any series as in below code snippet:
 
 {% tabs %}
 
@@ -58,12 +105,9 @@ This can be customized using the [`LegendIcon`](https://help.syncfusion.com/cr/w
 
 </chart:ChartLegend>
 
-<chart:SplineSeries XBindingPath="Year" Label="Gold"
-	                  
-                    ItemsSource="{Binding List}" YBindingPath="India"
-                     
-					LegendIcon="Diamond" />
+<chart:SplineSeries XBindingPath="Year" Label="Gold" ItemsSource="{Binding List}" 
 
+YBindingPath="India" LegendIcon="Diamond" />
 
 {% endhighlight %}
 
@@ -92,11 +136,10 @@ chart.Series.Add(splineSeries);
 
 {% endtabs %}
 
-![Legend icon in WinUI Chart](Legend_images/legend_icon.png)
+![Legend icon in WinUI Chart](Legend_images/winui_chart_legend_icon.png)
 
 
-The following properties are used to customize the legend icons.
-
+The following properties are used to customize the legend.
 
 * [`IconWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_IconWidth)-Gets or sets the double value that represents the legend icon(s) width.
 * [`IconHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_IconHeight)-Gets or sets the double value that represents that legend icon(s) height.
@@ -104,7 +147,7 @@ The following properties are used to customize the legend icons.
 * [`ItemMargin`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ItemMargin)-Gets or sets the margin for the legend items.
 * [`CornerRadius`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CornerRadius)-Gets or sets the corner radius of the legend.
 
-The following code example illustrates the customization of legend icon.
+The following code example illustrates the customization of legend.
 
 {% tabs %}
 
@@ -132,7 +175,6 @@ The following code example illustrates the customization of legend icon.
     </chart:ChartLegend>
 
 </chart:SfChart.Legend>       
-
 
 {% endhighlight %}
 
@@ -169,7 +211,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend icon in WinUI Chart](Legend_images/legend_customize_icon_.png)
+![Legend customization in WinUI Chart](Legend_images/winui_chart_legend_customization.png)
 
 
 The visibility of the legend icon can be changed by setting [`IconVisibility`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_IconVisibility) property in ChartLegend. 
@@ -177,7 +219,6 @@ The visibility of the legend icon can be changed by setting [`IconVisibility`](h
 {% tabs %}
 
 {% highlight xaml %}
-
 
 <chart:SfChart.Legend>
 
@@ -206,7 +247,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend icon in WinUI Chart](Legend_images/legend_icon_visibility.png)
+![Legend icon visibility support in WinUI Chart](Legend_images/winui_chart_legend_icon_visibility.png)
 
 **Custom** **Legend** **Icon**
 
@@ -271,9 +312,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Customizing legend icons in WinUI Chart](Legend_images/legend_custom_icon.png)
+![Customizing legend icons in WinUI Chart](Legend_images/winui_chart_custom_legend_icon.png)
 
-## Label
+## Legend Label
 
 This allows us to specify the label for each series which is to be displayed in legend label.
 
@@ -318,10 +359,10 @@ chart.Series.Add(splineSeries);
 
 {% endtabs %}
 
-![Labels for legend in WinUI Chart](Legend_images/legend_label.png)
+![Labels for legend in WinUI Chart](Legend_images/winui_chart_legend_label.png)
 
 
-## Checkbox 
+## Checkbox for legend
 
 Used to view or collapse the associated series. By default, the CheckboxVisibility is *Collapsed*. 
 
@@ -352,12 +393,12 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![CheckBox support for legend in WinUI Chart](Legend_images/legend_checkbox1.png)
+![Checkbox support for legend in WinUI Chart](Legend_images/winui_chart_legend_checkbox_checked.png)
 
 
-The series can be collapsed by unchecking the CheckBox as below:
+The series can be collapsed by unchecking the checkbox as below:
 
-![CheckBox support for legend in WinUI Chart](Legend_images/legend_checkbox2.png)
+![Checkbox support for legend in WinUI Chart](Legend_images/winui_chart_legend_checkbox_unchecked.png)
 
 
 ## ToggleSeriesVisibility 
@@ -394,12 +435,12 @@ chart.Legend = new ChartLegend()
 
 The [`series`](https://help.syncfusion.com/winui/chart/seriestypes/series) can be collapsed, by clicking on the respective legend item,
 
-![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/legend_toggle_series_visibility1.png)
+![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/winui_chart_legend_toggle_series_visibility.png)
 
 
 We can also view the associated [`series`](https://help.syncfusion.com/winui/chart/seriestypes/series), by clicking on its disabled legend item,
 
-![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/legend_toggle_series_visibility_2.png)
+![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/winui_chart_legend_toggle_series_visibility1.png)
 
 
 ## Positioning the Legend
@@ -434,7 +475,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Positioning the legend in WinUI Chart](Legend_images/legend_position_inside.png)
+![Positioning the legend at inside in WinUI Chart](Legend_images/winui_chart_legend_position_inside.png)
 
 
 **Docking**
@@ -469,7 +510,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Positioning the legend in WinUI Chart](Legend_images/legend_position_bottom.png)
+![Positioning the legend at bottom in WinUI Chart](Legend_images/winui_chart_legend_position_bottom.png)
 
 
 **Floating** **Legends**
@@ -507,65 +548,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Positioning the legend in WinUI Chart](Legend_images/legend_position_floating.png)
-
-
-## Legend Header
-
-Chart provides support to add any UIElement as a header for legend items. 
-
-You can define the [`Header`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Header) for legend using the following code example.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-
-<chart:SfChart.Legend>
-
-      <chart:ChartLegend>
-
-          <chart:ChartLegend.Header>
-
-               <TextBlock Text="Medals" VerticalAlignment="Center"  
-
-                           HorizontalAlignment="Center" Margin="15"/>
-
-            </chart:ChartLegend.Header>
-
-     </chart:ChartLegend>
-
-</chart:SfChart.Legend>
-
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-ChartLegend legend = new ChartLegend();
-
-TextBlock textBlock = new TextBlock()
-{
-
-    Text = "Medals",
-
-    HorizontalAlignment = HorizontalAlignment.Center,
-
-    VerticalAlignment = VerticalAlignment.Center,
-
-    Margin = new Thickness(15)
-
-};
-
-legend.Header = textBlock;
-
-chart.Legend = legend;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Header for legend in WinUI Chart](Legend_images/legend_Header.png)
+![Positioning the floating legend support in WinUI Chart](Legend_images/winui_chart_legend_position_floating.png)
 
 ## Legends for Accumulation Series
 
@@ -610,7 +593,7 @@ chart.Series.Add(pieSeries);
 
 {% endtabs %}
 
-![Legends for accumulation series in WinUI Chart](Legend_images/legend_accumulation_series.png)
+![Legends for circular series in WinUI Chart](Legend_images/winui_circular_chart_legend.png)
 
 
 N> Here Legend ‘Label’ will be the x value of the Pie chart.
@@ -693,7 +676,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![Series visibility of legend in WinUI Chart](Legend_images/VisibilityOnLegend_img.png)
+![Series visibility of legend in WinUI Chart](Legend_images/winui_chart_legend_series_visibility.png)
 
 
 ## Legend Orientation
@@ -725,7 +708,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend orientation support in WinUI Chart](Legend_images/legend_orientation.png)
+![Legend orientation support in WinUI Chart](Legend_images/winui_chart_legend_orientation.png)
 
 
 ## Customization
@@ -830,75 +813,4 @@ public class ImageConverter:IValueConverter
 
 {% endtabs %}
 
-![Template support for legend in WinUI Chart](Legend_images/customization_1.png)
-
-
-**Customizing** **Legend** **Items** **Layout**
-
-When there is more number of legends, the legend exceeds the chart will be cropped, as it arranged horizontally. To avoid the cropping we can change the existing arrangement layout (one which arrange each legend items horizontally) using `ItemsPanel` property as in below code snippet:
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<syncfusion:SfChart x:Name="chart">
-
-    <syncfusion:SfChart.Resources>
-
-        <ItemsPanelTemplate x:Key="itemPanelTemplate">
-
-             <ItemsWrapGrid Orientation="Horizontal"/>
-
-        </ItemsPanelTemplate>
-                
-    </syncfusion:SfChart.Resources>
-
-    <syncfusion:SfChart.Legend>
-
-            <syncfusion:ChartLegend ItemsPanel="{StaticResource itemPanelTemplate}"/>
-
-    </syncfusion:SfChart.Legend>
-
- </syncfusion:SfChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfChart chart = new SfChart();
-
-chart.Legend = new ChartLegend()
-{
-
-    ItemsPanel = chart.Resources["itemPanelTemplate"] as ItemsPanelTemplate
-
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Customizing legend items layout in WinUI Chart](Legend_images/Item_Layout.png)
-
-## Troubleshooting
-
-The legend item is not showing because the chart view is running in the background thread with the timespan problem while updating the chart element dynamically. You can resolve this by using the Dispatcher.BeginInvoke() method. Please refer to the following code sample.
-
-{% highlight c# %}
-
-ChartWindow chartWindow = new ChartWindow();
-
-chartWindow.DataContext = measurementChart;
-
-chartWindow.Content = new AutoChart();
-
-chartWindow.Content = new SfChart()
-{    
-	. . .
-}
-
-Action action = chartWindow.Show;
-
-Application.Current.Dispatcher.BeginInvoke(action, Array.Empty<object>()); 
-
-{% endhighlight %}
+![Item template support for legend in WinUI Chart](Legend_images/winui_chart_legend_item_template.png)
