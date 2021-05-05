@@ -108,7 +108,7 @@ private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e
 
 ![Calendar DateRange Picker dropdown with preset collection](Preset-Items_images/week-selection.png)
 
-## Hide calendar on preset item selection
+## Hide calendar on selecting a preset item
 
 You can hide calendar in the dropdown when user selects any preset items in dropdown other than **CustomRange** using `ShowCalendar` property. When user wants to selects a custom range of dates, upon selection of **CustomRange** preset item, calendar is added in dropdown of `Calendar DateRange Picker` control. By default, the value of `ShowCalendar` property is `true`.
 
