@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Performance tips | DataGrid | WinUI | Syncfusion
-description: Learn about optmize the performance in Syncfusion WinUI DataGrid (SfDataGrid) control and more details.
+title: Performance in WinUI DataGrid control | Syncfusion
+description: Learn here all about Performance support in Syncfusion WinUI DataGrid(SfDataGrid) control with virtualization support and more.
 platform: winui
 control: DataGrid
 documentation: ug
 ---
 
-# Performance tips in WinUI DataGrid (SfDataGrid)
+# Performance in WinUI DataGrid
 
 SfDataGrid provides various built-in options to optimize the performance when handling large amount of data or high frequency updates.
                                

@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Syncfusion WinUI Gauge Pointers
-description: This article describes how to add and customizes the appearence of pointers of radial gauge control in WinUI platform
+title: Marker Pointer in WinUI Radial Gauge control | Syncfusion
+description: Learn here all about Marker Pointer feature of Syncfusion WinUI Radial Gauge control with image, text pointer support and more.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug
 ---
 
-# Marker Pointer in WinUI Radial Gauge (SfRadialGauge)
+# Marker Pointer in WinUI Radial Gauge
 
 Indicate current values by using different types of marker pointers. You can change the marker type using the [`MarkerType`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerType) property.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -63,7 +63,7 @@ Gauge supports the following types of marker:
 
 Image is used to denote the current pointer values instead of shape. It can be achieved by specifying the [`MarkerType`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerType) as image and specifying the [`ImageSource`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_ImageSource) property of marker pointer.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -89,7 +89,7 @@ Text is used to denote the current pointer value instead of any marker shape. It
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -142,7 +142,7 @@ You can add customized symbols to denote the current pointer value instead of in
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <DataTemplate x:Key="CustomMarkerPointer">
@@ -205,7 +205,7 @@ The marker pointer can be customized using the following properties:
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -258,7 +258,7 @@ When you set [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>

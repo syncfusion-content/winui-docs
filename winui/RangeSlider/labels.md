@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Label features in Syncfusion WinUI Range Slider
-description: This section explains about how to show labels and how to customize it in the Syncfusion WinUI range slider.
+title: Labels in WinUI RangeSlider control | Syncfusion
+description: Learn here all about Labels feature of Syncfusion WinUI RangeSlider control with label custom support and more.
 platform: WinUI
 control: SfRangeSlider
 documentation: ug
 ---
 
-# Labels in the Range Slider
+# Labels in WinUI RangeSlider
 
 This section explains about how to show the labels in the range slider.
 
@@ -17,7 +17,7 @@ The [`ShowLabels`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Slide
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider ShowLabels="True"
                       RangeStart="30"
@@ -45,7 +45,7 @@ By default, a maximum of three labels are displayed for each 100 logical pixels 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -75,7 +75,7 @@ The [`labelPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.S
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider ShowLabels="True"
                       RangeStart="30"
@@ -105,7 +105,7 @@ You can adjust the space between ticks and labels of the slider using the [`Labe
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider ShowTicks="True"
                       ShowLabels="True"
@@ -139,7 +139,7 @@ The [`LabelTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sl
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <DataTemplate x:Key="TrackLabelTemplate">
     <Grid CornerRadius="5"
@@ -181,7 +181,7 @@ The [`ActiveLabelTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <DataTemplate x:Key="ActiveTrackLabelTemplate">
     <TextBlock Text="{Binding Text}"
@@ -220,7 +220,7 @@ By adding `Converters` in [`LabelTemplate`](https://help.syncfusion.com/cr/winui
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <DataTemplate x:Key="LabelTemplate">
     <TextBlock Text="{Binding Value,

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTip of WinUI TreeGrid (SfTreeGrid). | Syncfusion
-description: This section explains about the ToolTip support for WinUI TreeGrid (SfTreeGrid) | SfTreeGrid | ToolTip. 
+title: ToolTip in WinUI TreeGrid control | Syncfusion
+description: Learn here all about ToolTip support in Syncfusion WinUI TreeGrid(SfTreeGrid) control with customization support and more.
 platform: winui
 control: SfTreeGrid
 documentation: ug
 ---
 
-# ToolTip in WinUI TreeGrid (SfTreeGrid)
+# ToolTip in WinUI TreeGrid
 
 Tooltip supports showing the pop-up window that displays the information when the mouse hovers over a cell of the SfTreeGrid.
 

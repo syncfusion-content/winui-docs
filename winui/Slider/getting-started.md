@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Getting Started with Syncfusion WinUI Slider
-description: A guide to initial users about Syncfusion Slider control in the WinUI platform. It provide an overview of SfSlider.
+title: Getting Started with WinUI Slider control | Syncfusion
+description: Learn here all about getting started with Syncfusion WinUI Slider(SfSlider) control, its elements, and more.
 platform: WinUI
 control: SfSlider
 documentation: ug
 ---
 
-# Getting Started with WinUI Slider (SfSlider)
+# Getting Started with WinUI Slider
 
-This section explains the steps required to add the Slider control and its elements such as values, ticks, divisors, labels, and tooltip. This section covers only basic features needed to get started with Syncfusion Slider.
+This section explains the steps required to add the [WinUI Slider](https://www.syncfusion.com/winui-controls/slider) control and its elements such as values, ticks, divisors, labels, and tooltip. This section covers only basic features needed to get started with Syncfusion Slider.
 
 ## Creating an application with WinUI Slider
 
-1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 
 2. Add reference to [Syncfusion.Sliders.WinUI](https://www.nuget.org/packages/Syncfusion.Sliders.WinUI) NuGet.
 
@@ -25,7 +25,7 @@ The default value of the [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfu
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider />
 
@@ -46,7 +46,7 @@ You can show value in the slider by setting double value to the [`Value`](https:
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50" />
 
@@ -70,7 +70,7 @@ You can enable ticks in the slider using the [`ShowTicks`](https://help.syncfusi
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  ShowTicks="True" />
@@ -96,7 +96,7 @@ You can enable labels in the slider using the [`ShowLabels`](https://help.syncfu
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  ShowLabels="True" />
@@ -122,7 +122,7 @@ You can enable divisors in the slider using the [`ShowDivisors`](https://help.sy
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  ShowDivisors="True"

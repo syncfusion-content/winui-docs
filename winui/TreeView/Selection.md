@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection with WinUI TreeView control | Syncfusion
-description: Learn here about selection of TreeViewNode with Syncfusion WinUI TreeView control and selection related events. 
+title: Selection in WinUI TreeView control | Syncfusion
+description: Learn here all about Selection support in Syncfusion WinUI TreeView(SfTreeView) control with programmatic selection and more.
 platform: WinUI
 control: TreeView
 documentation: ug
 ---
 
-# Selection in WinUI TreeView 
+# Selection in WinUI TreeView
 
 This section explains how to perform selection and its related operations in the [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html).
 
@@ -29,7 +29,7 @@ treeView.SelectionMode = SelectionMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeView with Selection](Selection_images/Multiple_mode.jpg)
+![WinUI TreeView Selection](Selection_images/winui-treeview-selection.jpg)
 
 ## Programmatic Selection
 

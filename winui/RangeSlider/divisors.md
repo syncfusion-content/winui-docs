@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Label features in Syncfusion WinUI Range Slider
-description: This section explains about how to show divisors and how to customize it in the Syncfusion WinUI range slider.
+title: Divisors in WinUI RangeSlider control | Syncfusion
+description: Learn here all about Divisors support in Syncfusion WinUI RangeSlider(SfRangeSlider) control and more.
 platform: WinUI
 control: SfRangeSlider
 documentation: ug
 ---
 
-# How to show the divisors in the RangeSlider
+# Divisors in WinUI RangeSlider (Range Slider)
 
 This section explains about how to show the divisors in the range slider.
 
@@ -19,7 +19,7 @@ For example, if [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -49,7 +49,7 @@ You can change the divisor height and width of the RangeSlider using the [`Divis
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -83,7 +83,7 @@ You can change the divisor stroke thickness of the range slider using the [`Divi
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -121,7 +121,7 @@ You can change the divisor fill of the range slider using the [`DivisorFill`](ht
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -159,7 +159,7 @@ The [`DivisorTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <DataTemplate x:Key="DivisorTemplate">
     <Rectangle Height="{Binding DivisorHeight}"
@@ -207,7 +207,7 @@ The [`DivisorTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <DataTemplate x:Key="ActiveDivisorTemplate">
     <Rectangle Height="6"

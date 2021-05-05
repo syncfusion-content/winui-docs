@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Markers| Chart | WinUI | Syncfusion
-description: Learn how to add markers, data point labels, connector lines, event, formatting label content and configure the custom templates to the Chart Data Markers.
+title: Data Markers in WinUI Chart control | Syncfusion
+description: Learn hera all about Data Markers feature of Syncfusion WinUI Chart control with chart segment element and more.
 platform: WinUI
 control: Chart
 documentation: ug
 ---
 
-# Data Markers in WinUI Charts (SfChart)
+# Data Markers in WinUI Chart
 
 Chart Data Markers are used to display values related to a chart segment element. Values from data point(x, y) or other custom properties from a data source can be displayed. 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Thumb features in Syncfusion WinUI Range Slider
-description: This article describes about how to customize the thumb and thumb overlay of syncfusion Range Slider control in WinUI platform.
+title: Thumb and Thumb Overlay in WinUI RangeSlider control | Syncfusion
+description: Learn about Thumb and Thumb Overlay support in Syncfusion WinUI RangeSlider(SfRangeSlider) control and more.
 platform: WinUI
 control: SfRangeSlider
 documentation: ug
 ---
 
-# Thumb and Thumb Overlay Features in Range Slider
+# Thumb and Thumb Overlay in WinUI RangeSlider (Range Slider)
 
 This section explains how to customize the thumb and thumb overlay in the RangeSlider.
 
@@ -21,7 +21,7 @@ You can change the thumb type using the [`ThumbType`](https://help.syncfusion.co
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -49,7 +49,7 @@ You can change the thumb height and width of the range slider using the [`ThumbH
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -83,7 +83,7 @@ You can change the thumb background of the range slider using the [`ThumbBackgro
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -107,16 +107,19 @@ this.Content = sfRangeSlider;
 
 ## Thumb Hover Background
 
-You can change the thumb hover background of the range slider using the [`ThumbHoverBackground`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbHoverBackground) property.
+You can change the thumb hover background of the range slider using the `SyncfusionSliderThumbBackgroundPointerOver` resource key.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
+
+<Page.Resources>
+    <SolidColorBrush x:Key="SyncfusionSliderThumbBackgroundPointerOver">#009688</SolidColorBrush>
+</Page.Resources>
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
-                      ThumbBackground="#33b35c"
-                      ThumbHoverBackground="#009688" />
+                      ThumbBackground="#33b35c" />
 
 {% endhighlight %}
 
@@ -126,7 +129,6 @@ SfRangeSlider sfRangeSlider = new SfRangeSlider();
 sfRangeSlider.RangeStart = 30;
 sfRangeSlider.RangeEnd = 70;
 sfRangeSlider.ThumbBackground = new SolidColorBrush(ColorHelper.FromArgb(255, 42, 147, 77));
-sfRangeSlider.ThumbHoverBackground = new SolidColorBrush(ColorHelper.FromArgb(255, 51, 179, 92));
 this.Content = sfRangeSlider;
 
 {% endhighlight %}
@@ -137,17 +139,20 @@ this.Content = sfRangeSlider;
 
 ## Thumb Pressed Background
 
-You can change the thumb pressed background of the range slider using the [`ThumbPressedBackground`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbPressedBackground) property.
+You can change the thumb pressed background of the range slider using the `SyncfusionSliderThumbBackgroundPressed` resource key.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
+
+<Page.Resources>
+    <SolidColorBrush x:Key="SyncfusionSliderThumbBackgroundPointerOver">#009688</SolidColorBrush>
+    <SolidColorBrush x:Key="SyncfusionSliderThumbBackgroundPressed">#288e49</SolidColorBrush>
+</Page.Resources>
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
-                      ThumbBackground="#33b35c"
-                      ThumbHoverBackground="#009688"
-                      ThumbPressedBackground="#288e49" />
+                      ThumbBackground="#33b35c" />
 
 {% endhighlight %}
 
@@ -157,8 +162,6 @@ SfRangeSlider sfRangeSlider = new SfRangeSlider();
 sfRangeSlider.RangeStart = 30;
 sfRangeSlider.RangeEnd = 70;
 sfRangeSlider.ThumbBackground = new SolidColorBrush(ColorHelper.FromArgb(255, 42, 147, 77));
-sfRangeSlider.ThumbHoverBackground = new SolidColorBrush(ColorHelper.FromArgb(255, 51, 179, 92));
-sfRangeSlider.ThumbPressedBackground = new SolidColorBrush(ColorHelper.FromArgb(255, 40, 142, 73));
 this.Content = sfRangeSlider;
 
 {% endhighlight %}
@@ -173,7 +176,7 @@ The [`ThumbStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Slide
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <coreconverters:FormatStringConverter x:Key="FormatStringConverter" />
 
@@ -236,7 +239,7 @@ The [`ThumbOverlayRadius`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -266,7 +269,7 @@ The [`ThumbOverlayFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -298,7 +301,7 @@ The [`ThumbDragStarted`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -323,7 +326,7 @@ The [`ThumbDragCompleted`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"

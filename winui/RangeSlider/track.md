@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Track features in Syncfusion WinUI Range Slider
-description: This section explains about how to customize the appearance of the track in Syncfusion WinUI Range Slider.
+title: Track in WinUI RangeSlider control | Syncfusion
+description: Learn here all about Track feature of Syncfusion WinUI RangeSlider(sfRangeSlider) control with color, hover and more.
 platform: WinUI
 control: SfRangeSlider
 documentation: ug
 ---
 
-# Track Features in Syncfusion WinUI Range Slider
+# Track in WinUI RangeSlider (Range Slider)
 
 This section explains how to customize the track in the slider.
 
@@ -21,7 +21,7 @@ The InactiveTrack of the RangeSlider visible between the [`Minimum`](https://hel
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -47,18 +47,21 @@ this.Content = sfRangeSlider;
 
 ## Track Hover Color
 
-You can change the active and inactive track hover color of the range slider using the [`ActiveTrackHoverFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveTrackHoverFill) and [`InactiveTrackHoverFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_InactiveTrackHoverFill) properties respectively. This color will be applied when hovering the cursor on the RangeSlider control.
+You can change the active and inactive track hover color of the range slider using the `SyncfusionSliderActiveTrackFillPointerOver` and `SyncfusionSliderInactiveTrackFillPointerOver` resource keys respectively. This color will be applied when hovering the cursor on the RangeSlider control.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
+
+<Page.Resources>
+    <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFillPointerOver">#009688</SolidColorBrush>
+    <SolidColorBrush x:Key="SyncfusionSliderInactiveTrackFillPointerOver">#C2E6E3</SolidColorBrush>
+</Page.Resources>
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
                       ActiveTrackFill="#009688"
-                      InactiveTrackFill="#C2E6E3"
-                      ActiveTrackHoverFill="#009688"
-                      InactiveTrackHoverFill="#C2E6E3" />
+                      InactiveTrackFill="#C2E6E3" />
 
 {% endhighlight %}
 
@@ -69,8 +72,6 @@ sfRangeSlider.RangeStart = 30;
 sfRangeSlider.RangeEnd = 70;
 sfRangeSlider.ActiveTrackFill = new SolidColorBrush(ColorHelper.FromArgb(255, 0, 150, 136));
 sfRangeSlider.InactiveTrackFill = new SolidColorBrush(ColorHelper.FromArgb(255, 194, 230, 227));
-sfRangeSlider.ActiveTrackHoverFill = new SolidColorBrush(ColorHelper.FromArgb(255, 41, 186, 173));
-sfRangeSlider.InactiveTrackHoverFill = new SolidColorBrush(ColorHelper.FromArgb(255, 197, 222, 218));
 this.Content = sfRangeSlider;
 
 {% endhighlight %}
@@ -81,20 +82,24 @@ this.Content = sfRangeSlider;
 
 ## Track Pressed Color
 
-You can change the active and inactive track pressed color of the range slider using the [`ActiveTrackHoverFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveTrackHoverFill) and [`InactiveTrackHoverFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_InactiveTrackHoverFill) properties respectively. This color will be applied when pressed the cursor on the range slider control.
+You can change the active and inactive track pressed color of the range slider using the`SyncfusionSliderActiveTrackFillPressed` and `SyncfusionSliderInactiveTrackFillPressed` resource keys respectively. This color will be applied when pressed the cursor on the range slider control.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
+
+<Page.Resources>
+    <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFillPointerOver">#009688</SolidColorBrush>
+    <SolidColorBrush x:Key="SyncfusionSliderInactiveTrackFillPointerOver">#C2E6E3</SolidColorBrush>
+    
+    <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFillPressed">#018A7D</SolidColorBrush>
+    <SolidColorBrush x:Key="SyncfusionSliderInactiveTrackFillPressed">#98B8B5</SolidColorBrush>
+</Page.Resources>
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
                       ActiveTrackFill="#009688"
-                      InactiveTrackFill="#C2E6E3"
-                      ActiveTrackHoverFill="#009688"
-                      InactiveTrackHoverFill="#C2E6E3"
-                      ActiveTrackPressedFill="#018A7D"
-                      InactiveTrackPressedFill="#98B8B5"  />
+                      InactiveTrackFill="#C2E6E3"  />
 
 {% endhighlight %}
 
@@ -105,10 +110,6 @@ sfRangeSlider.RangeStart = 30;
 sfRangeSlider.RangeEnd = 70;
 sfRangeSlider.ActiveTrackFill = new SolidColorBrush(ColorHelper.FromArgb(255, 0, 150, 136));
 sfRangeSlider.InactiveTrackFill = new SolidColorBrush(ColorHelper.FromArgb(255, 194, 230, 227));
-sfRangeSlider.ActiveTrackHoverFill = new SolidColorBrush(ColorHelper.FromArgb(255, 41, 186, 173));
-sfRangeSlider.InactiveTrackHoverFill = new SolidColorBrush(ColorHelper.FromArgb(255, 197, 222, 218));
-sfRangeSlider.ActiveTrackPressedFill = new SolidColorBrush(ColorHelper.FromArgb(255, 1, 138, 125));
-sfRangeSlider.InactiveTrackPressedFill = new SolidColorBrush(ColorHelper.FromArgb(255, 152, 184, 181));
 this.Content = sfRangeSlider;
 
 {% endhighlight %}
@@ -123,7 +124,7 @@ You can change the track height of the range slider using the [`ActiveTrackHeigh
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -153,7 +154,7 @@ You can change the track style of the range slider using the [`ActiveTrackStyle`
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <Style x:Key="ActiveTrackStyle"

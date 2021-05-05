@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in WinUI TreeView control | Syncfusion
-description: This section describes about the appearance customization in Syncfusion WinUI TreeView control and more details. 
+description: Learn here all about Appearance support in Syncfusion WinUI TreeView(SfTreeView) control with itemTemplate and more.
 platform: Winui
 control: TreeView
 documentation: ug
@@ -212,7 +212,7 @@ class ItemTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-![ItemTemplateSelector in TreeView ](Appearance_images/ItemTemplateSelector_image.jpg)
+![WinUI TreeView Item Customized using ItemTemplateSelector](Appearance_images/winui-treeview-item-template-selector.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Item-Template-Selector)
 
@@ -338,7 +338,7 @@ public class FontAttributeConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Level based styling in TreeView ](Appearance_images/LevelBasedStyling_image.jpg)
+![Level Based Styling in WinUI TreeView](Appearance_images/winui-treeview-level-based-styling.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Level-Based-Styling)
 
@@ -360,4 +360,4 @@ treeView.IsAnimationEnabled = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Animation in TreeView ](Appearance_images/Animation.gif)
+![WinUI TreeView Expand and Collapse Items with Animation](Appearance_images/winui-treeview-expand-collapse-animation.gif)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Axis of Syncfusion WinUI Gauge
-description: This article describes how to add and customizes the appearence of radial axis and its element of radial gauge in WinUI platform
+title: Axis in WinUI Radial Gauge control | Syncfusion
+description: Learn here all about Axis feature of Syncfusion WinUI Radial Gauge(sfRadialGauge) control with custom support.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug
 ---
 
-# Radial axis Feature in WinUI Radial Gauge (SfRadialGauge)
+# Axis in WinUI Radial Gauge
 
 The [`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) is a circular arc in which a set of values are displayed along a linear or custom scale based on the design requirements. Axis elements such as  labels, ticks and axis line can be easily customized with built-in properties.
 
@@ -19,7 +19,7 @@ The [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.G
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -53,7 +53,7 @@ The interval between labels can be customized using the [`Interval`](https://hel
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -85,7 +85,7 @@ The start and end angles of radial axis can be customized using the [`StartAngle
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -119,7 +119,7 @@ The radius of the radial axis can be customized using the [`RadiusFactor`](https
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -155,7 +155,7 @@ The [`CanScaleToFit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ga
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge CanScaleToFit="True">
     <gauge:SfRadialGauge.Axes>
@@ -193,7 +193,7 @@ The axis label can be rotated based on its current angle using the [`CanRotateLa
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -230,7 +230,7 @@ The default value of both the [`ShowFirstLabel`](https://help.syncfusion.com/cr/
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -274,7 +274,7 @@ When the [`IsInversed`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -306,7 +306,7 @@ By default, a maximum of three labels are displayed for each 100 logical pixels 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -347,7 +347,7 @@ If the [`AxisLineWidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -381,7 +381,7 @@ If the [`AxisLineWidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -415,7 +415,7 @@ To fill the brush to axis line using the [`AxisLineFill`](https://help.syncfusio
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -451,7 +451,7 @@ The [`GradientStops`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ga
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -502,7 +502,7 @@ The visibility of the axis line can be customized using the [`ShowAxisLine`](htt
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -530,11 +530,11 @@ this.Content = sfRadialGauge;
 
 **Background Content Support**
 
-[`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) allows you to add any `FrameworkElement` as its background using the [`BackgroundContent`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html#Syncfusion_UI_Xaml_Gauges_RadialAxis_BackgroundContent) property.
+[`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) allows you to add any visual contents as its background using the [`BackgroundContent`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html#Syncfusion_UI_Xaml_Gauges_RadialAxis_BackgroundContent) property.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <Style x:Key="MajorTickStyle"
@@ -709,7 +709,7 @@ The axis labels can be customized using the following properties
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -751,7 +751,7 @@ The following property of the axis allows to customize the axis label text.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -783,7 +783,7 @@ The [`LabelTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ga
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <DataTemplate x:Key="labelTemplate">
@@ -828,7 +828,7 @@ The [`ShowLabels`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauge
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -860,7 +860,7 @@ The radial axis allows to position the labels either inside or outside of the ax
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -875,7 +875,7 @@ The radial axis allows to position the labels either inside or outside of the ax
 SfRadialGauge sfRadialGauge = new SfRadialGauge();
 
 RadialAxis radialAxis = new RadialAxis();
-radialAxis.LabelPosition = LabelsPosition.Outside;
+radialAxis.LabelPosition = GaugeLabelsPosition.Outside;
 sfRadialGauge.Axes.Add(radialAxis);
 
 this.Content = sfRadialGauge;
@@ -896,7 +896,7 @@ If the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ga
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -930,7 +930,7 @@ If the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ga
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -980,7 +980,7 @@ If the [`TickLengthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -1016,7 +1016,7 @@ If the [`TickLengthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -1052,7 +1052,7 @@ The [`MajorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.G
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <Style x:Key="MajorTickLineStyle"
@@ -1094,7 +1094,7 @@ The [`MinorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.G
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <Style x:Key="MinorTickLineStyle"
@@ -1136,7 +1136,7 @@ By defining `StrokeDashArray` property in both [`MajorTickStyle`](https://help.s
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <Style x:Key="MajorTickLineStyle"
@@ -1192,7 +1192,7 @@ The major ticks are generated based on the [`Interval`](https://help.syncfusion.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -1224,7 +1224,7 @@ The [`ShowTicks`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -1256,7 +1256,7 @@ The [`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gaug
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -1271,7 +1271,7 @@ The [`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gaug
 SfRadialGauge sfRadialGauge = new SfRadialGauge();
 
 RadialAxis radialAxis = new RadialAxis();
-radialAxis.TickPosition = TickElementsPosition.Outside;
+radialAxis.TickPosition = GaugeElementPosition.Outside;
 sfRadialGauge.Axes.Add(radialAxis);
 
 this.Content = sfRadialGauge;
@@ -1292,7 +1292,7 @@ If the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ga
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -1324,7 +1324,7 @@ If the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ga
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -1360,7 +1360,7 @@ The [`radial gauge`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gau
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Page.Resources>
     <Style x:Key="InnerAxisMajorTickStyle"
@@ -1454,8 +1454,8 @@ innerRadialAxis.MajorTickStyle = this.Resources["InnerAxisMajorTickStyle"] as St
 sfRadialGauge.Axes.Add(innerRadialAxis);
 
 RadialAxis outerRadialAxis = new RadialAxis();
-outerRadialAxis.LabelPosition = LabelsPosition.Outside;
-outerRadialAxis.TickPosition = TickElementsPosition.Outside;
+outerRadialAxis.LabelPosition = GaugeLabelsPosition.Outside;
+outerRadialAxis.TickPosition = GaugeElementPosition.Outside;
 outerRadialAxis.Minimum = 0;
 outerRadialAxis.Maximum = 100;
 outerRadialAxis.Interval = 10;
@@ -1485,7 +1485,7 @@ this.Content = sfRadialGauge;
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -1614,7 +1614,7 @@ The [`LabelPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ga
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -1643,7 +1643,7 @@ The [`AxisTapped`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauge
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>

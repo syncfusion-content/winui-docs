@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Bubble and Scatter Charts| SfChart | WinUI | Syncfusion
-description: This section explains Bubble and Scatter Charts and its properties for customization in WinUI Charts (SfChart)
+title: Bubble and Scatter in WinUI Chart control | Syncfusion
+description: Learn here all about Bubble and Scatter feature of Syncfusion WinUI Chart control with zero bubble support and more.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Bubble and Scatter Charts in WinUI Chart (SfChart)
+# Bubble and Scatter in WinUI Chart
 
 ## Bubble 
 

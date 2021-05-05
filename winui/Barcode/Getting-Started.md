@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | Barcode | WinUI | Syncfusion
-description: This section explains how to add Syncfusion Barcode control and how it can be customized in WinUI platform.
+title: Getting Started with WinUI Barcode control | Syncfusion
+description: Learn here all about getting started with Syncfusion WinUI Barcode(SfBarCode) control, its elements, and more.
 platform: WinUI
 control: Barcode
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started with WinUI Barcode
 
-This section provides a quick overview for getting started with the [Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html) for WinUI. Walk through the entire process of creating a real world of this control.
+This section provides a quick overview for getting started with the [WinUI Barcode](https://www.syncfusion.com/winui-controls/barcode) . Walk through the entire process of creating a real world of this control.
 
 ## Creating an application with WinUI Barcode
 
-1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 2. Add reference to [Syncfusion.Barcode.WinUI](https://www.nuget.org/packages/Syncfusion.Barcode.WinUI) NuGet. 
 3. Import the control namespace `using Syncfusion.UI.Xaml.Barcode` in XAML or C# code.
 4. Initialize the SfBarCode control.

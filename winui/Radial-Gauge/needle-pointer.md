@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Syncfusion WinUI Gauge Pointers
-description: This article describes how to add and customizes the appearence of pointers of radial gauge control in WinUI platform
+title: Needle Pointer in WinUI Radial Gauge control | Syncfusion
+description: Learn here all about Needle Pointer feature of Syncfusion WinUI Radial Gauge control with customization support.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug
 ---
 
-# Needle Pointer in WinUI Radial Gauge (SfRadialGauge)
+# Needle Pointer in WinUI Radial Gauge
 
 [`Needle Pointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.NeedlePointer.html) contains three parts, namely needle, knob, and tail and that can be placed on a gauge to mark the values.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -69,7 +69,7 @@ If the [`NeedleLengthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -112,7 +112,7 @@ The width of the needle pointer can be customized using the [`NeedleStartWidth`]
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -161,7 +161,7 @@ this.Content = sfRadialGauge;
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -248,7 +248,7 @@ The radius of the knob can be customized using the [`knobRadius`](https://help.s
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -295,7 +295,7 @@ Like knob radius, the [`KnobStrokeThickness`](https://help.syncfusion.com/cr/win
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -362,7 +362,7 @@ If the [`TailLengthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -405,7 +405,7 @@ If the [`TailLengthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -448,7 +448,7 @@ The width of the tail can be customized using the [`TailWidth`](https://help.syn
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -491,7 +491,7 @@ The following code shows how to apply the gradient for the tail.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Resources>

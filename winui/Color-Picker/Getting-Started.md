@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started with WinUI SfColorPicker control | Syncfusion
-description: This section describes about how to add the SfColorPicker control into WinUI application and its basic features.
+title: Getting Started with WinUI Color Picker control | Syncfusion
+description: Learn here all about getting started with Syncfusion WinUI Color Picker(SfColorPicker) control, its elements and more.
 platform: WinUI
 control: SfColorPicker
 documentation: ug
 ---
 
-# Getting Started with WinUI ColorPicker (SfColorPicker)
+# Getting Started with WinUI Color Picker
 
-This section describes how to create a [ColorPicker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html) control in a WinUI application and overview of its basic functionalities.
+This section describes how to create a [WinUI ColorPicker](https://www.syncfusion.com/winui-controls/color-picker) control in a WinUI application and overview of its basic functionalities.
 
 ## Structure of ColorPicker control
 
@@ -17,7 +17,7 @@ This section describes how to create a [ColorPicker](https://help.syncfusion.com
 
 ## Creating an application with WinUI ColorPicker
 
-1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 4. Initialize the `SfColorPicker` control.

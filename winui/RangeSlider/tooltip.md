@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip features in Syncfusion WinUI Range Slider
-description: This article describes about how to show tooltip, and customize its appearance of syncfusion Range Slider control in WinUI platform.
+title: ToolTip in WinUI RangeSlider control | Syncfusion
+description: Learn about ToolTip support in Syncfusion WinUI RangeSlider(SfRangeSlider) control with placement and more.
 platform: WinUI
 control: SfRangeSlider
 documentation: ug
 ---
 
-# Tooltip Features in WinUI Range Slider
+# ToolTip in WinUI RangeSlider (Range Slider)
 
 This section explains how to add the tooltip in the RangeSlider.
 
@@ -17,7 +17,7 @@ You can enable tooltip for the thumb using the [`ShowToolTip`](https://help.sync
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -45,7 +45,7 @@ You can display tooltip for either active thumb or both thumb (RangeStart and Ra
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -73,7 +73,7 @@ The [`ToolTipFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sl
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -103,7 +103,7 @@ The [`ToolTipPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
@@ -133,7 +133,7 @@ The [`ToolTipStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sli
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Style x:Name="ToolTipStyle"
        TargetType="slider:SliderToolTip">
@@ -171,7 +171,7 @@ The [`ToolTipTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <DataTemplate x:Name="ToolTipTemplate">
     <StackPanel Orientation="Horizontal">

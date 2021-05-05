@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tick features in Syncfusion WinUI Range Slider
-description: This section explains about how to show minor and major ticks and also to customize them in the RangeSlider.
+title: Ticks in WinUI RangeSlider control | Syncfusion
+description: Learn here all about Ticks feature of Syncfusion WinUI RangeSlider(sfRangeSlider) control with length support and more.
 platform: WinUI
 control: SfRangeSlider
 documentation: ug
 ---
 
-# Ticks Features in WinUI Range Slider
+# Ticks in WinUI RangeSlider 
 
 This section explains how to add major and minor ticks in the RangeSlider.
 
@@ -19,7 +19,7 @@ For example, if [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider Minimum="0"
                       Maximum="10"
@@ -57,7 +57,7 @@ It is used to represent the number of smaller ticks between two major ticks. For
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider Minimum="0"
                       Maximum="10"
@@ -95,7 +95,7 @@ You can change the major and minor ticks length of the range slider using the [`
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider Minimum="0"
                       Maximum="10"
@@ -137,7 +137,7 @@ The [`TickPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sl
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider ShowTicks="True"
                       TickPlacement="Before"
@@ -167,7 +167,7 @@ You can adjust the space between track and ticks of the range slider using the [
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfRangeSlider Minimum="0"
                       Maximum="10"
@@ -209,7 +209,7 @@ The [`MajorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.S
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Style x:Key="MajorTickStyle"
        TargetType="Line">
@@ -262,7 +262,7 @@ The [`ActiveMajorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Style x:Key="ActiveMajorTickStyle"
        TargetType="Line">

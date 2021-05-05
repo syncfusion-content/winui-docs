@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WinUI | DataGrid | Syncfusion 
-description: Learn about introduction of Syncfusion WinUI DataGrid (SfDataGrid) control, its feature and more details.
+title: About WinUI DataGrid control | Syncfusion
+description: Learn here all about introduction of Syncfusion WinUI DataGrid(SfDataGrid) control with key features and more.
 platform: winui
 control: DataGrid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # WinUI DataGrid Overview
 
-The Syncfusion WinUI DataGrid is used to display and manipulate tabular data. Its rich feature set includes functionalities like data binding, editing, sorting, filtering, and grouping. It has also been optimized to work with millions of records, as well as to handle high-frequency, real-time updates. The following feature highlights will be included:
+The Syncfusion [WinUI DataGrid](https://www.syncfusion.com/winui-controls/datagrid) is used to display and manipulate tabular data. Its rich feature set includes functionalities like data binding, editing, sorting, filtering, and grouping. It has also been optimized to work with millions of records, as well as to handle high-frequency, real-time updates. The following feature highlights will be included:
 
 * **Data binding** – Supports to bind different types of data sources.
 * **Columns** – Support for various column types including unbound columns.
@@ -26,6 +26,6 @@ The Syncfusion WinUI DataGrid is used to display and manipulate tabular data. It
 * **Stacked Headers** – Extensive support to show multiple headers called stacked headers.
 * **Unbound rows** – Support to display unbound rows.
 
- ![Overview of WinUI Sfdatagrid control](Overview-images/Overview-image1.png)
+ ![Overview of WinUI DataGrid](Overview-images/winui-datagrid-overview.png)
 
 

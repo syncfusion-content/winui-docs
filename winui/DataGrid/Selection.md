@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection | WinUI DataGrid | Syncfusion
-description: Learn about cell or row selection support in Syncfusion WinUI DataGrid (SfDataGrid) control and more details. 
+title: Selection in WinUI DataGrid control | Syncfusion
+description: Learn here all about Selection support in Syncfusion WinUI DataGrid(SfDataGrid) control with cell navigation support and more.
 platform: winui
 control: DataGrid
 documentation: ug
 ---
 
-# Selection in WinUI DataGrid (SfDataGrid)
+# Selection in WinUI DataGrid
 
 SfDataGrid allows you to select one or more rows or cells. For selecting specific row or group of rows you have to set [SelectionUnit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectionUnit) as [Row](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionUnit.html#Syncfusion_UI_Xaml_Grids_GridSelectionUnit_Row) and for selecting a specific cell or group of cells you have to set  `SelectionUnit` as [Cell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionUnit.html#Syncfusion_UI_Xaml_Grids_GridSelectionUnit_Cell) or [Any](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionUnit.html#Syncfusion_UI_Xaml_Grids_GridSelectionUnit_Any). In `Any` option you can select the row by clicking on row header.
 
@@ -29,7 +29,7 @@ The `SelectionUnit` and [SelectionMode](https://help.syncfusion.com/cr/winui/Syn
 {% endhighlight %}
 {% endtabs %}
 
-![Single mode row selection in WinUI DataGrid](Selection_images/Selection_img1.png)
+![Single Row Selection in WinUI DataGrid](Selection_images/winui-datagrid-single-row-selection.png)
 
 
 ### Disable selection for rows and columns
@@ -54,7 +54,7 @@ While using `Extended`, you can select multiple rows or cells by pressing the ke
 {% endhighlight %}
 {% endtabs %}
 
-![Extended mode cell selection in WinUI DataGrid](Selection_images/Selection_img2.png)
+![Extended Cell Selection in WinUI DataGrid](Selection_images/winui-datagrid-extended-cell-selection.png)
 
 
 N> When the `SelectionMode` as `Multiple`, you can select or deselect multiple rows and cells by clicking the respective cell or row.  Also in multiple selection pressing navigation keys will move only the current cell and you can select or deselect by pressing <kbd>space</kbd> key.
@@ -69,7 +69,7 @@ N> When the `SelectionMode` as `Multiple`, you can select or deselect multiple r
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple mode cell selection in WinUI DataGrid](Selection_images/Selection_img3.png)
+![Multiple Cell Selection in WinUI DataGrid](Selection_images/winui-datagrid-multiple-cell-selection.png)
 
 ## Get Selected Rows and Cells
 
@@ -149,7 +149,7 @@ foreach(var order in viewModel.Orders)
 {% endhighlight %}
 {% endtabs %}
 
-![Programmatic selection of records using SelectedItems property in WinUI DataGrid](Selection_images/Selection_img4.png)
+![Programmatic Selection of Records in WinUI DataGrid](Selection_images/winui-datagrid-programmatic-selection.png)
 
 
 ### Process selection using methods
@@ -164,7 +164,7 @@ this.sfDataGrid.SelectRows(3, 7);
 {% endhighlight %}
 {% endtabs %}
 
-![Programmatic selection of records using SelectRows method in WinUI DataGrid](Selection_images/Selection_img5.png)
+![Programmatic Selection of Records in WinUI DataGrid](Selection_images/winui-datagrid-programmatic-record-selections.png)
 
 
 You can select a specific cell by using the [SelectCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectCells_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Boolean_) method in cell selection.
@@ -189,7 +189,7 @@ this.sfDataGrid.SelectCell(record, column);
 {% endhighlight %}
 {% endtabs %}
 
-![Programmatic selection of cell using SelectCell method in WinUI DataGrid](Selection_images/Selection_img6.png)
+![Programmatic Selection of Cell in WinUI DataGrid](Selection_images/winui-datagrid-programmatic-cell-selection.png)
 
 
 You can select a range of cells through [SelectCells](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectCells_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Boolean_) method in cell selection.
@@ -235,7 +235,7 @@ private void dataGrid_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Programmatic selection of cells using SelectCells method in WinUI DataGrid](Selection_images/Selection_img7.png)
+![Programmatic Selection of Cells in WinUI DataGrid](Selection_images/winui-datagrid-programmatic-cells-selection.png)
 
 
 You can select all the rows or cells using [SelectAll](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectAll_System_Boolean_) method.
@@ -339,14 +339,14 @@ this.sfDataGrid.UnSelectCell(record, column);
 {% endhighlight %}
 {% endtabs %}
 
-![Programmatic removal of selection for a cell using UnSelectCell method in WinUI DataGrid](Selection_images/Selection_img8.png)
+![Programmatic Removal of Selection for a Cell in WinUI DataGrid](Selection_images/winui-datagrid-progrmmatic-removal-selection.png)
 
 
 ## Selection in Master-Details View
 
 Master-Details View provides support to select one or more rows or cells in [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDataGrid.html). You can’t able to maintain the selection in both ParentDataGrid and `DetailsViewDataGrid`. Selection will be maintained either in ParentDataGrid or in `DetailsViewDataGrid`.
 
-![Selection in Master-Details View in WinUI DataGrid](Selection_images/Selection_img9.png)
+![WinUI DataGrid Selection in Master Details View](Selection_images/winui-datagrid-selection-in-master-details-view.png)
 
 
 ### Getting SelectedDetailsViewDataGrid
@@ -1094,7 +1094,7 @@ You can change the selection background and foreground using [SelectionBackgroun
 {% endhighlight %}
 {% endtabs %}
 
-![Appearance customization of rows in WinUI DataGrid](Selection_images/Selection_img11.png)
+![Customizing Selection in WinUI DataGrid](Selection_images/winui-datagrid-selection-customization.png)
 
 
 ### Changing Current Cell Border Style
@@ -1112,7 +1112,7 @@ You can change the current cell border thickness and border color using [Current
 {% endhighlight %}
 {% endtabs %}
 
-![Appearance customization of current cell in WinUI DataGrid](Selection_images/Selection_img12.png)
+![Customizing Cell Selection Border in WinUI DataGrid](Selection_images/winui-datagrid-cell-selection-customization.png)
 
 
 ### Customizing Row Selection Border
@@ -1175,7 +1175,7 @@ You can customize the row selection by editing the control template of correspon
 {% endhighlight %}
 {% endtabs %}
 
-![Customization of row selection border in WinUI DataGrid](Selection_images/Selection_img13.png)
+![Customizing Row Selection Border in WinUI DataGrid](Selection_images/winui-datagrid-row-selection-customization.png)
 
 
 ### Customizing Cell Selection
@@ -1246,7 +1246,7 @@ You can customize the cell selection by editing the control template of the corr
 {% endhighlight %}
 {% endtabs %}
 
-![Custom cell selection for WinUI SfDataGrid](Selection_images/Selection_img14.png)
+![Custom Cell Selection in WinUI DataGrid](Selection_images/winui-datagrid-custom-cell-selection.png)
 
 
 ## Binding Selection Properties

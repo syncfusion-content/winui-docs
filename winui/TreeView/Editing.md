@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing with WinUI TreeView control | Syncfusion
-description: Learn here about editing of TreeViewNode with Syncfusion WinUI TreeView (SfTreeView) control and editing related events. 
+title: Editing in WinUI TreeView control | Syncfusion
+description: Learn here all about Editing support in Syncfusion WinUI TreeView(SfTreeView) control with programmatic editing and more.
 platform: winui
 control: SfTreeView
 documentation: ug
 ---
 
-# Editing in WinUI TreeView (SfTreeView)
+# Editing in WinUI TreeView
 
 The TreeView provides support for editing and it can be enabled or disabled by using [SfTreeView.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowEditing) property. You can enter edit mode in a node by pressing <kbd>F2</kbd> key only. The editing changes in a node will be committed only when user move to next node or pressing <kbd>Enter</kbd> key.
 
@@ -54,7 +54,7 @@ treeView.AllowEditing = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeView in Edit Mode](Editing-images/Editing-image1.png)
+![Editing in WinUI TreeView](Editing-images/winui-treeview-editing.png)
 
 ## Programmatic Editing
 
@@ -89,6 +89,113 @@ private void TreeView_Loaded(object sender, RoutedEventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}
+
+## Revert the edited changes while pressing Escape key
+
+By default, TreeView does not have support for rollback the changes when pressing the <kbd>ESC</kbd> key while editing the TreeView node. But it supports to rollback the changes when an underlying data object implements the [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx) interface.
+
+The user can take a backup of existing data of a node in the [BeginEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.beginedit.aspx) method and can change the existing data to the current data in the [CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx) method to rollback the changes.
+
+The below code snippet explains the simple implementation of IEditableObject interface to rollback the changes.
+
+{% tabs %}
+{% highlight c# %}
+public class Country : INotifyPropertyChanged, IEditableObject
+{
+    private bool isSelected;
+    internal string name;
+    private ObservableCollection<State> states;
+    internal Country backUpData;
+    private Country currentData;
+
+    public Country()
+    {
+	
+    }
+
+    public Country(string name):base()
+    {
+        this.currentData = new Country();
+        this.currentData.name = name;
+        this.currentData.isSelected = false;
+    }
+
+
+    public ObservableCollection<State> States
+    {
+        get 
+        { 
+            return states; 
+        }
+        set
+        {
+            states = value;
+            RaisedOnPropertyChanged("States");
+        }
+    }
+
+    public string Name
+    {
+        get
+        { 
+            return this.currentData.name; 
+        }
+        set
+        {
+            this.currentData.name = value;
+            RaisedOnPropertyChanged("Name");
+        }
+    }
+
+    public bool IsSelected
+    {
+        get 
+        { 
+            return this.currentData.isSelected; 
+        }
+        set
+        {
+            this.currentData.isSelected = value;
+            RaisedOnPropertyChanged("IsSelected");
+        }
+    }
+
+
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public void RaisedOnPropertyChanged(string _PropertyName)
+    {
+        if (PropertyChanged != null)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(_PropertyName));
+        }
+    }
+
+
+    public void BeginEdit()
+    {
+        Debug.WriteLine("BeginEdit is Called.");
+        backUpData = new Country();
+        backUpData.name = this.currentData.name;
+        backUpData.isSelected = this.currentData.isSelected;
+    }
+
+    public void CancelEdit()
+    {
+        Debug.WriteLine("CancelEdit is Called.");
+        this.currentData = backUpData;
+    }
+
+    public void EndEdit()
+    {
+        Debug.WriteLine("EndEdit is Called.");
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+N> View sample in [GitHub](https://github.com/syncfusion/winui-demos/blob/master/datagrid/Views/Editing.xaml)
 
 ## Events
 

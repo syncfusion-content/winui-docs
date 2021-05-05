@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started with WinUI SfDropDownColorPalette control | Syncfusion
-description: Learn here about getting started with Syncfusion WinUI SfDropDownColorPalette control and more details about the control features.
+title: Getting Started with WinUI DropDown Color Palette control | Syncfusion
+description: Learn here about getting started with Syncfusion WinUI DropDown Color Palette(SfColorPalette) control and more.
 platform: WinUI
 control: SfDropDownColorPalette
 documentation: ug
 ---
 
-# Getting Started with WinUI DropDown ColorPalette
+# Getting Started with WinUI DropDown Color Palette
 
-This section explains the steps required to add the [DropDownColorPalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.DropDownColorPalette.html) control and its color options such as theme, standard and more custom colors.
+This section explains the steps required to add the [WinUI DropDownColorPalette](https://www.syncfusion.com/winui-controls/dropdown-color-palette) control and its color options such as theme, standard and more custom colors.
 
 ## Control Structure
 
@@ -29,7 +29,7 @@ This section explains the steps required to add the [DropDownColorPalette](https
 
 ## Creating an application with WinUI DropDown ColorPalette
 
-1. Create a simple project using the instructions given in the [Getting Started with your first WinUI app](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp) documentation.
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 4. Initialize the `SfDropDownColorPalette` control.

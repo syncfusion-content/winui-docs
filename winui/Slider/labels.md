@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Label features in Syncfusion WinUI Slider
-description: This section explains about how to show labels and how to customize it in the Syncfusion WinUI slider.
+title: Labels in WinUI Slider control | Syncfusion
+description: Learn here all about Labels feature of Syncfusion WinUI Slider(SfSlider) control with label placement and more.
 platform: WinUI
 control: SfSlider
 documentation: ug
 ---
 
-# Labels in the Slider
+# Labels in WinUI Slider
 
 This section explains about how to show the labels in the slider.
 
@@ -17,7 +17,7 @@ The [`ShowLabels`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Slide
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider ShowLabels="True"
                  Value="50" />
@@ -43,7 +43,7 @@ By default, a maximum of three labels are displayed for each 100 logical pixels 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider Value="50"
                  MaximumLabelsCount="1"
@@ -71,7 +71,7 @@ The [`labelPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.S
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider ShowLabels="True"
                  Value="50"
@@ -99,7 +99,7 @@ You can adjust the space between ticks and labels of the slider using the [`Labe
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <slider:SfSlider ShowTicks="True"
                  ShowLabels="True"
@@ -131,7 +131,7 @@ The [`LabelTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sl
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <DataTemplate x:Key="TrackLabelTemplate">
     <Grid CornerRadius="5"
@@ -171,7 +171,7 @@ The [`ActiveLabelTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <DataTemplate x:Key="ActiveTrackLabelTemplate">
     <TextBlock Text="{Binding Text}"
@@ -208,7 +208,7 @@ By adding `Converters` in [`LabelTemplate`](https://help.syncfusion.com/cr/winui
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <DataTemplate x:Key="LabelTemplate">
     <TextBlock Text="{Binding Value,

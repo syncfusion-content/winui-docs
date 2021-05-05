@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TreeLines in WinUI TreeView control | Syncfusion
-description: Learn here about how to show the tree lines for TreeViewNodes in Syncfusion WinUI TreeView control and more details.
+title: Tree Lines in WinUI TreeView control | Syncfusion
+description: Learn here all about Tree Lines support in Syncfusion WinUI TreeView(SfTreeView) control with customization support and more.
 platform: WinUI
 control: TreeView
 documentation: ug
 ---
 
-# Tree line for WinUI TreeView
+# Tree Lines in WinUI TreeView
 
 The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) allows to show the tree lines for treeview nodes by enabling the [ShowLines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ShowLines) property as `true`. The default value is `false`.
 
@@ -20,7 +20,7 @@ treeView.ShowLines = true;
 {% endhighlight %}
 {% endtabs %}
 
-![TreeLines for WinUI TreeView](TreeLines_images/ShowLines_image.jpg)
+![WinUI TreeView with TreeLines](TreeLines_images/winui-treeview-treelines.jpg)
 
 ## Enable tree line for root nodes
 
@@ -38,7 +38,7 @@ treeView.ShowRootLines = true;
 {% endhighlight %}
 {% endtabs %}
 
-![TreeLines for WinUI TreeView](TreeLines_images/ShowRootLines_image.jpg)
+![WinUI TreeView displays TreeLines for Root Nodes](TreeLines_images/winui-treeview-rootnode-tree-lines.jpg)
 
 ## Customizing the tree lines
 
@@ -59,7 +59,7 @@ treeView.LineStroke = new SolidColorBrush(Colors.DeepSkyBlue);
 {% endhighlight %}
 {% endtabs %}
 
-![TreeLines for WinUI TreeView](TreeLines_images/LineStroke_image.jpg)
+![Customizing TreeLines in WinUI TreeView](TreeLines_images/winui-treeview-treelines-customization.jpg)
 
 ### Customizing the line thickness
 The `TreeView` allows to change the thickness of tree lines by using the [LineStrokeThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LineStrokeThickness) property. The default value is `1`.

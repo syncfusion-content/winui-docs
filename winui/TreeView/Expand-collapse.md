@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Expand and Collapse in WinUI TreeView | Syncfusion
-description: Learn here about expanding and collapsing treeview nodes in WinUI and also explains about events associated with expanding and collapsing.
+title: Expand and Collapse in WinUI TreeView control | Syncfusion
+description: Learn here all about Expand and Collapse support in Syncfusion WinUI TreeView(SfTreeView) control and more.
 platform: WinUI
 control: TreeView
 documentation: ug
@@ -38,6 +38,133 @@ The `AutoExpandMode` property is only applicable for bound mode. For Unbound mod
 * None : All items are collapsed when loaded.
 * RootNodes : Expands only the root item when loaded.
 * AllNodes : Expands all the items when loaded.
+
+## Expand or collapse the nodes based on property of underlying data object
+
+You can bind expand state of node to the bool property in underlying data object by using [IsExpandedPropertyName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.HierarchyPropertyDescriptor.html#Syncfusion_UI_Xaml_TreeView_HierarchyPropertyDescriptor_IsExpandedPropertyName) property. TreeView updates the expanded of node when underlying data object property gets changed and vice versa.
+
+{% tabs %}
+{% highlight xaml %}
+
+<treeView:SfTreeView x:Name="treeView"
+         ItemsSource="{Binding Folders}">
+    <treeView:SfTreeView.HierarchyPropertyDescriptors>        
+        <treeView:HierarchyPropertyDescriptor IsExpandedPropertyName="IsExpanded" ChildPropertyName="SubFiles" TargetType="local:FileManager" />
+    </treeView:SfTreeView.HierarchyPropertyDescriptors>
+</treeView:SfTreeView>
+
+{% endhighlight %}
+{% highlight c# %}
+
+public class FileManager : INotifyPropertyChanged
+{
+    private string fileName;        
+    private ObservableCollection<FileManager> subFiles;
+    private bool isExpanded;
+
+    public ObservableCollection<FileManager> SubFiles
+    {
+        get { return subFiles; }
+        set
+        {
+            subFiles = value;
+            RaisedOnPropertyChanged("SubFiles");
+        }
+    }
+
+    public string ItemName
+    {
+        get { return fileName; }
+        set
+        {
+            fileName = value;
+            RaisedOnPropertyChanged("ItemName");
+        }
+    }
+
+    public bool IsExpanded
+    {
+        get { return isExpanded; }
+        set
+        {
+            isExpanded = value;
+            RaisedOnPropertyChanged("IsExpanded");
+        }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public void RaisedOnPropertyChanged(string _PropertyName)
+    {
+        if (PropertyChanged != null)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(_PropertyName));
+        }
+    }
+}
+
+
+public class FileManagerViewModel
+{
+    private ObservableCollection<FileManager> folders;
+
+    public FileManagerViewModel()
+    {
+        GenerateSource();            
+    }
+
+    public ObservableCollection<FileManager> Folders
+    {
+        get { return folders; }
+        set { this.folders = value; }
+    }
+
+    private void GenerateSource()
+    {
+        var fileManager = new ObservableCollection<FileManager>();
+        
+        var doc = new FileManager() { ItemName = "Documents", IsExpanded = true };
+        var download = new FileManager() { ItemName = "Downloads",  IsExpanded = false };
+        
+        var pollution = new FileManager() { ItemName = "Environmental Pollution.docx"};
+        var globalWarming = new FileManager() { ItemName = "Global Warming.ppt" };
+        var sanitation = new FileManager() { ItemName = "Sanitation.docx"};
+        var socialNetwork = new FileManager() { ItemName = "Social Network.pdf" };
+        var youthEmpower = new FileManager() { ItemName = "Youth Empowerment.pdf" };
+
+        var games = new FileManager() { ItemName = "Game.exe" };
+        var tutorials = new FileManager() { ItemName = "Tutorials.zip" };
+        var TypeScript = new FileManager() { ItemName = "TypeScript.7z"};
+        var uiGuide = new FileManager() { ItemName = "UI-Guide.pdf"};
+        
+        doc.SubFiles = new ObservableCollection<FileManager>
+        {
+            pollution,
+            globalWarming,
+            sanitation,
+            socialNetwork,
+            youthEmpower
+        };
+     
+        download.SubFiles = new ObservableCollection<FileManager>
+        {
+            games,
+            tutorials,
+            TypeScript,
+            uiGuide
+        };
+    
+        fileManager.Add(doc);
+        fileManager.Add(download);
+     
+        folders = fileManager;
+    }
+}    
+
+{% endhighlight %}
+{% endtabs %}
+
+N> `IsExpandedPropertyName` property is not supported for unbound mode and it accepts only boolean type property.
 
 ## Programmatic Expand and Collapse
 

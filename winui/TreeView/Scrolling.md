@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scrolling in WinUI TreeView | Syncfusion
-description: Learn here about how to achieve programmatic scrolling in Syncfusion WinUI TreeView and more details.
+title: Scrolling in WinUI TreeView control | Syncfusion
+description: Learn here all about Scrolling support in Syncfusion WinUI TreeView(SfTreeView) control, its elements, and more.
 platform: WinUI
 control: TreeView
 documentation: ug
 ---
 
-# Scrolling in in WinUI TreeView
+# Scrolling in WinUI TreeView
 The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) provides various options to achieve programmatic scrolling. Please walkthrough the below section in detail to achieve the same.
 
 ## Bring Into View
@@ -106,5 +106,5 @@ By default, horizontal scrollbar is not enabled in the TreeView. If you want to 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeView with horizontal scrolling enabled](Scrolling_images/Scrolling_image1.gif)
+![Horizontal Scrollbar in WinUI TreeView](Scrolling_images/winui-treeview-horizontal-scrollbar.gif)
 
