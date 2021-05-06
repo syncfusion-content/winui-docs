@@ -55,7 +55,7 @@ colorPicker.SelectedBrush = linearGradient;
 {% endhighlight %}
 {% endtabs %}
 
-![Assigning a Linear Gradient brush to ColorPicker](Getting-Started_images/ColorPicker_select-a-LinearGradient.png)
+![Linear Gradient Color in WinUI ColorPicker](Getting-Started_images/winui-colorpicker-linear-gradient-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectLinearGradientColors)
 
@@ -77,7 +77,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Selecting a linear gradient color brush at runtime](Getting-Started_images/lineargradient.gif)
+![Selecting Linear Gradient Color at runtime in WinUI ColorPicker](Getting-Started_images/winui-colorpicker-linear-gradient-color-selection.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
@@ -101,7 +101,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Selected linear gradient color brush angle changed](Select_Gradient_Colors_images/linear_angle.png)
+![Changing Angle of Selected Linear Gradient Color in WinUI ColorPicker](Select_Gradient_Colors_images/winui-colorpicker-linear-gradient-angle.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
@@ -125,7 +125,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Change offset of selected linear gradient color brush using X-Y offset value editor](Select_Gradient_Colors_images/lineargradientoffset.jpg)
+![Changing Offset of selected Linear Gradient Color in WinUI ColorPicker](Select_Gradient_Colors_images/winui-colorpicker-linear-gradient-offset.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
@@ -173,7 +173,7 @@ colorPicker.SelectedBrush = radialGradient;
 {% endhighlight %}
 {% endtabs %}
 
-![Assigning a Raidial Gradient brush to ColorPicker](Getting-Started_images/ColorPicker_select-a-RadialGradient.png)
+![Radial Gradient Color in WinUI ColorPicker](Getting-Started_images/winui-colorpicker-radial-gradient-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectRadialGradientColors)
 
@@ -195,7 +195,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.RadialGradientBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Selecting a radial gradient color brush](Getting-Started_images/radialgradient.gif)
+![Select Radial Gradient Color at runtime in WinUI ColorPicker](Getting-Started_images/winui-colorpicker-radial-gradient-color-selection.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
@@ -219,7 +219,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.RadialGradientBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Selected radial gradient color brush angle changed](Select_Gradient_Colors_images/radial_direction.png)
+![Changing Angle of Selected Radial Gradient Color in WinUI ColorPicker](Select_Gradient_Colors_images/winui-colorpicker-radial-gradient-angle.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
@@ -243,7 +243,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.RadialGradientBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Change offset of selected radial gradient color brush using X-Y offset value editor](Select_Gradient_Colors_images/radialrgradientoffset.jpg)
+![Changing Offset of Selected Radial Gradient Color in WinUI ColorPicker](Select_Gradient_Colors_images/winui-colorpicker-radial-gradient-offset.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
@@ -266,7 +266,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush | BrushTypeO
 {% endhighlight %}
 {% endtabs %}
 
-![Changing the opacity of selected gradient color brush](Select_Gradient_Colors_images/gradientOpacity.jpg)
+![Changing Opacity of Selected Gradient Color in WinUI ColorPicker](Select_Gradient_Colors_images/winui-colorpicker-gradient-opacity.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
