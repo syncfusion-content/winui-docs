@@ -34,7 +34,7 @@ colorPicker.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 {% endhighlight %}
 {% endtabs %}
 
-![Solid color selected from ColorPicker](Getting-Started_images/select_Solidcolor.png)
+![Select Solid Color in WinUI ColorPicker](Getting-Started_images/winui-colorpicker-select-solid-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
@@ -56,7 +56,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Solid color brush selected at runtime](Getting-Started_images/Solidcolor.png)
+![Select Solid color at runtime in WinUI ColorPicker](Getting-Started_images/winui-colorpicker-solid-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
@@ -80,7 +80,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Show opacity value editor](Getting-Started_images/AlphaInputOptions.png)
+![WinUI ColorPicker displays Opacity Value Editor](Getting-Started_images/winui-colorpicker-opacity-value-editor.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
@@ -105,7 +105,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Different solid color models in ColorPicker](Select_Solid_Colors_images/ColorChannels.gif)
+![WinUI ColorPicker displays different Solid Color Modes](Select_Solid_Colors_images/winui-colorpicker-solid-color-modes.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
@@ -129,7 +129,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Different input options for solid color channel](Select_Solid_Colors_images/ColorChannelInputOptions.jpg)
+![WinUI ColorPicker displays Solid Color Input Options](Select_Solid_Colors_images/winui-colorpicker-solid-color-options.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
@@ -153,7 +153,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Hide the hexadecimal value editor](Getting-Started_images/IsHexInputVisible.png)
+![Hide Hexadecimal Value Editor in WinUI ColorPicker](Getting-Started_images/winui-colorpicker-hide-hexadecimal-value-editor.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
@@ -177,7 +177,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Expand or collapse the Color Editors visibility](Select_Solid_Colors_images/ColorEditorsVisibilityMode.jpg)
+![Expand or Collapse Color Editors Visibility in WinUI ColorPicker](Select_Solid_Colors_images/winui-colorpicker-expand-or-collpase-color-visibility.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
