@@ -29,7 +29,7 @@ colorPalette.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette programmatically picked the yellow color](Working-with-SfColorPalette_images/Colorprogrammatically.png)
+![Selecting Color Programmatically in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-color-selection.png)
 
 Here, `Yellow` color is selected color in the `ColorPalette`.
 
@@ -53,7 +53,7 @@ colorPalette.SelectedBrush = new SolidColorBrush(Colors.Transparent);
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette with selected transparent color](Working-with-SfColorPalette_images/Nullvalue.png)
+![Setting Null value for Selected Transparent Color in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-null-value.png)
 
 ## Select transparent color 
 
@@ -74,7 +74,7 @@ colorPalette.ShowNoColorButton = true;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette selecting a transparent color](Working-with-SfColorPalette_images/ShowNoColorButton.png)
+![Selecting Transparent Color in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-transparent-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -96,7 +96,7 @@ colorPalette.AutomaticBrush = new SolidColorBrush(Colors.Red);
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette with automatic color](Working-with-SfColorPalette_images/AutomaticBrush.png)
+![WinUI ColorPalette with Default Selected Color](Working-with-SfColorPalette_images/winui-colorpalette-default-color-selection.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
 
@@ -120,7 +120,7 @@ colorPalette.ShowDefaultColorButton = false;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette with automatic color](Working-with-SfColorPalette_images/ShowDefaultColorButton.png)
+![Hide Default Color in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-hide-default-color.png)
 
 ## Selected color changed notification
 
@@ -159,7 +159,7 @@ private void ColorPalette_SelectedBrushChanged(object sender, SelectedBrushChang
 
 Tooltip is used to show the information about the segment, when you mouse over on the segment. `ColorPalette` shows the information about name of the color item using tooltip when hovering the mouse on the specific color item.
 
-![ColorPalette with tooltip support](Working-with-SfColorPalette_images/tooltip.gif)
+![WinUI ColorPalette displays Tooltip for Colors](Working-with-SfColorPalette_images/winui-colorpalette-tooltip.gif)
 
 ## Recently used color items
 
@@ -183,7 +183,7 @@ var recentColors = colorPalette.RecentColors;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette displaying the recently used color items](Getting-Started_images/RecentColors.png)
+![WinUI ColorPalette with Recent Color Items](Getting-Started_images/winui-colorpalette-recent-colors.png)
 
 ## Customize the header text
 
@@ -203,7 +203,7 @@ colorPalette.Foreground = new SolidColorBrush(Colors.Red);
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette foreground color changed](Working-with-SfColorPalette_images/Foreground.png)
+![Customizing Header Text of Colors in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-color-header-text-customization.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
 
@@ -225,6 +225,6 @@ colorPalette.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette with right to left flow direction](Working-with-SfColorPalette_images/rtl.png)
+![WinUI ColorPalette displays Right to Left Flow Direction](Working-with-SfColorPalette_images/winui-colorpalette-rtl.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)

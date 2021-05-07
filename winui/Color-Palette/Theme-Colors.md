@@ -15,7 +15,7 @@ This section explains the different types of theme colors available in the [Colo
 
 You can select a various theme colors by setting the value to the [ActivePalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_ActivePalette) property. Based on the `ActivePalette` value, the respective base theme color items are displayed with its variants. The default value of `ActivePalette` property is `Office`.
 
-![Displaying all theme palettes](Working-with-SfColorPalette_images/themepalette.jpg)
+![WinUI ColorPalette displays Various Theme Palettes](Working-with-SfColorPalette_images/winui-colorpalette-theme-palette.jpg)
 
 {% tabs %}
 {% highlight xaml %}
@@ -31,7 +31,7 @@ colorPalette.ActivePalette = ColorPaletteNames.Yellow;
 {% endhighlight %}
 {% endtabs %}
 
-![SfColorPalette with yellow theme colors](Working-with-SfColorPalette_images/ActivePalatte.png)
+![WinUI ColorPalette with Yellow Theme Color](Working-with-SfColorPalette_images/winui-colorpalette-theme-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -75,7 +75,7 @@ colorPalette.PaletteColors.ShowColorShades = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Own colors added in the theme color palette](Working-with-SfColorPalette_images/CustomThemeColors.png)
+![WinUI ColorPalette with Custom Theme Colors](Working-with-SfColorPalette_images/winui-colorpalette-custom-theme-colors.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
 
@@ -100,7 +100,7 @@ colorPalette.PaletteColors.ShowColors = false;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette hides the base theme color variants](Working-with-SfColorPalette_images/PalatteColors_ShowColors.png)
+![Hide Base Theme Color in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-hide-base-theme-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -125,7 +125,7 @@ colorPalette.PaletteColors.ShowColorShades = false;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette hides the theme color variants](Working-with-SfColorPalette_images/PaletteColors_ShowColorShades.png)
+![Hide Theme Color in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-hide-theme-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -150,7 +150,7 @@ colorPalette.PaletteColors.Header = "My theme colors";
 {% endhighlight %}
 {% endtabs %}
 
-![Header text of theme color palette is changed](Working-with-SfColorPalette_images/PaletteColors_Header.png)
+![Changing Header Text of Theme Color in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-header-text.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
 
@@ -175,7 +175,7 @@ colorPalette.PaletteColors.ShowHeader = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Header of theme color palette is collapsed](Working-with-SfColorPalette_images/PaletteColors_ShowHeader.png)
+![Hide Header of Theme Color in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-hide-header.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -209,7 +209,7 @@ N> The DataContext of `PaletteColors.HeaderTemplate` is `PaletteColors.Header`
 {% endhighlight %}
 {% endtabs %}
 
-![Customized UI for theme color palette header](Working-with-SfColorPalette_images/PaletteColors_HeaderTemplate.png)
+![Customizing Header of Theme Color in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-header-customization.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
 
@@ -234,7 +234,7 @@ colorPalette.PaletteColors.ColorShadesSpacing = 20;
 {% endhighlight %}
 {% endtabs %}
 
-![Changed the spacing between base theme color and its variants](Working-with-SfColorPalette_images/ColorShadesSpacing.png)
+![WinUI ColorPalette displays Spacing between Base Theme Color and its Variants](Working-with-SfColorPalette_images/winui-colorpalette-color-shades-spacing.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -261,7 +261,7 @@ colorPalette.PaletteColors.ShowColorShades = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Theme color palette is hidden from the ColorPalette](Working-with-SfColorPalette_images/HideThemeColor.png)
+![Hide Theme Color in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-hide-theme-colors.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
