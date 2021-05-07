@@ -15,7 +15,7 @@ This section explains how to customize the color spectrum and switch to differen
 
 You can change the color selection mode directly at runtime by clicking on the corresponding `Solid`, `Linear` or `Radial` gradient brush mode drop down options which is placed in the top of the `ColorPicker` control.
 
-![Switch between solid, linear and gradient brush mode](Getting-Started_images/ColorPicker_Switch_brushes.gif)
+![Switch between Solid, Linear and Gradient Color in WinUI ColorPicker](Getting-Started_images/winui-colorpicker-switch-color-option.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
@@ -37,7 +37,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush | BrushTypeOptio
 {% endhighlight %}
 {% endtabs %}
 
-![Allow only the solid and radial gradient brush mode](Getting-Started_images/BrushTypeOptions.jpg)
+![Enable Solid and Radial Gradient Color in WinUI ColorPicker](Getting-Started_images/winui-colorpicker-solid-and-radial-gradient-color.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
@@ -61,7 +61,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Color spectrum shapes changed as ring](Getting-Started_images/ColorSpectrumShape.jpg)
+![Changing Color Spectrum Shape as Ring in WinUI ColorPicker](Getting-Started_images/winui-colorpicker-spectrum-shape.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
@@ -69,7 +69,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can changes the color spectrum components as any combination of hue, saturation or value by using the [ColorSpectrumComponents](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_ColorSpectrumComponents) property. The default value of `ColorSpectrumComponents` property is `SaturationValue`.
 
-![Different Color spectrum combination](Getting-Started_images/ColorSpectrumComponents1.jpg)
+![WinUI ColorPicker displays different Color Spectrum Combination](Getting-Started_images/winui-colorpicker-color-spectrum-components.jpg)
 
 {% tabs %}
 {% highlight XAML %}
@@ -87,6 +87,6 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Color spectrum combination changed as HueSaturation](Getting-Started_images/ColorSpectrumComponents.jpg)
+![Changing Color Spectrum Combination as HueSaturation in WinUI ColorPicker](Getting-Started_images/winui-colorpicker-color-spectrum-component.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
