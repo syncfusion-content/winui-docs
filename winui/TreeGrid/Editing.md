@@ -58,7 +58,7 @@ this.treeGrid.Columns["FirstName"].AllowEditing = true;
 
 N> `TreeGridColumn.AllowEditing` takes higher priority than `SfTreeGrid.AllowEditing`
 
-![Editing in WinUI treegrid](Editing-images/Editing-img1.png)
+![Editing in WinUI TreeGrid](Editing-images/winui-treegrid-editing.png)
 
 N> It is mandatory to set the [NavigationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.NavigationMode.html) to Cell to enable CurrentCell navigation and editing.
 

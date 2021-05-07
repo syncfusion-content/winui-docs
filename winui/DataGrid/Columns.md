@@ -386,7 +386,7 @@ private void SfDataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumn
 
 Below screenshot shows the customized header template loaded on the header of OrderID column.
 
-![WinUI DataGrid loaded with customized header template](Columns-images/winui-datagrid-header-template.png)
+![WinUI DataGrid loaded with Customized Header Template](Columns-images/winui-datagrid-header-template.png)
 
 #### Data Annotations with AutoGenerateColumns
 
@@ -475,7 +475,7 @@ public string ShipCity
 
 The OrderID and CustomerID column rearranged based on specified order.
 
-![WinUI DataGrid shows changing order of columns](Columns-images/winui-datagrid-column-order.png)
+![Changing order of columns in WinUI DataGrid](Columns-images/winui-datagrid-column-order.png)
 
 ### Manually defining columns
 
@@ -581,13 +581,13 @@ N> Resizing considers MinWidth and MaxWidth of column.
 
 You can change the column width by clicking and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line exists between two columns.
  
-![Resizing of columns in WinUI DataGrid](Columns-images/winui-datagrid-resizing-column.png)
+![Resizing of Columns in WinUI DataGrid](Columns-images/winui-datagrid-resizing-column.png)
 
 ### Hidden column resizing
 
 SfDataGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfDataGrid.AllowResizingHiddenColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowResizingHiddenColumns) property to `true`.
 
-![Resizing hidden columns in WinUI DataGrid](Columns-images/winui-datagrid-hidden-column-resizing.png)
+![Resizing Hidden Columns in WinUI DataGrid](Columns-images/winui-datagrid-hidden-column-resizing.png)
 
 ### Disable resizing
 
@@ -640,7 +640,7 @@ You can allow end-users to rearrange the columns by drag and drop the column hea
 {% endtabs %}
 
 
-![Drag and drop the column in WinUI DataGrid](Columns-images/winui-datagrid-drag-and-drop.png)
+![Drag and Drop the Column in WinUI DataGrid](Columns-images/winui-datagrid-drag-and-drop.png)
 
 
 You can enable or disable dragging on particular column using [GridColumn.AllowDragging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_AllowDragging) property.
@@ -785,7 +785,7 @@ You can freeze the columns in view at the left and right side like in excel by s
 {% endtabs %}
 
 
-![Freezing columns in WinUI DataGrid](Columns-images/winui-datagrid-freezing-columns.png)
+![Freezing Columns in WinUI DataGrid](Columns-images/winui-datagrid-freezing-columns.png)
 
 ### Limitations
 
@@ -825,5 +825,5 @@ Below code, binds the `ViewModel.AllowFiltering` property to `GridColumn.AllowFi
 {% endtabs %}
 
 
-![Binding column properties in ViewModel with WinUI DataGrid](Columns-images/winui-datagrid-binding-column.png)
+![Data Binding of Column in WinUI DataGrid](Columns-images/winui-datagrid-binding-column.png)
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Header Customization in WinUI Date Picker control | Syncfusion
+title: Dropdown Header Customization in WinUI DatePicker | Syncfusion
 description: This section describes about how to customize the Date Picker (SfDatePicker) control dropdown header into WinUI application and its basic features.
 platform: WinUI
 control: SfDatePicker
@@ -9,16 +9,16 @@ documentation: ug
 
 # Dropdown Header Customization in WinUI Date Picker
 
-This section describes about the various dropdown header customization options available in [Date Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html) control.
+This section describes about various dropdown header customization options available in [Date Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html) control.
 
 ## Setting hints in dropdown header
 
-You can add a hints in dropdown header by using the [DropDownHeader](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DropDownHeader) property. The dropdown hints will be shown only by setting the [ShowDropDownHeader](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_ShowDropDownHeader) property values as `true`. Otherwise, drop down header will not be shown. The default value of `DropDownHeader` property is `null` and `ShowDropDownHeader` property is `false`.
+You can add a hints in dropdown header by using the [DropDownHeader](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DropDownHeader) property. The dropdown hints will be shown only by setting the [ShowDropDownHeader](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_ShowDropDownHeader) property values as `true`. Otherwise, dropdown header will not be shown. The default value of `DropDownHeader` property is `null` and `ShowDropDownHeader` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfDatePicker DropDownHeader="Select Date" 
+<editors:SfDatePicker DropDownHeader="Select journey date" 
                       ShowDropDownHeader="True"
                       x:Name="sfDatePicker"/>
 
@@ -26,13 +26,13 @@ You can add a hints in dropdown header by using the [DropDownHeader](https://hel
 {% highlight c# %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
-sfDatePicker.DropDownHeader = "Select Date";
+sfDatePicker.DropDownHeader = "Select journey date";
 sfDatePicker.ShowDropDownHeader = true;
 
 {% endhighlight %}
 {% endtabs %}
 
-![Date Picker displays the drop down date spinner header](Dropdown-Date-Spinner_images/DropDownHeader.png)
+![Date Picker displays the dropdown date spinner header](Dropdown-Date-Spinner_images/DropDownHeader.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -71,13 +71,15 @@ You can customize the header of dropdown date spinner by using the [`DropDownHea
 {% endhighlight %}
 {% endtabs %}
 
-![Date Picker with customized drop down date spinner header](Dropdown-Date-Spinner_images/DropDownHeaderTemplate.png)
+![Date Picker with customized dropdown date spinner header](Dropdown-Date-Spinner_images/DropDownHeaderTemplate.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/CustomUI)
 
-## Hide the dropdown column header
+## Hide the dropdown column headers
 
 If you want to hide the dropdown day, month and year spinner's column headers, use the [ShowColumnHeaders](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_ShowColumnHeaders) property value as `false`. The default value of `ShowColumnHeaders` property is `true`.
+
+N> To customize the column headers, refer the [Customize the columns in dropdown spinner](https://help.syncfusion.com/winui/date-picker/spinner-customization#customize-the-columns-in-dropdown-spinner) topic.
 
 {% tabs %}
 {% highlight XAML %}
@@ -94,6 +96,6 @@ sfDatePicker.ShowColumnHeaders = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Date Picker hides the drop down date spinner column headers](Dropdown-Date-Spinner_images/ShowColumnHeaders.png)
+![Date Picker hides the dropdown date spinner column headers](Dropdown-Date-Spinner_images/ShowColumnHeaders.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)

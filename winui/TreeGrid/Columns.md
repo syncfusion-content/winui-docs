@@ -290,7 +290,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 
 Below screenshot shows the customized header template loaded on the header of FirstName column.
 
-![Setting template to auto-generated column](Columns-images/Columns-img1.png)
+![WinUI TreeGrid displays Auto Generated Column](Columns-images/winui-treegrid-column-auto-generation.png)
 
 
 ### Data Annotations with AutoGenerateColumns
@@ -401,7 +401,7 @@ public string LastName
 
 The FirstName and LastName column rearranged based on specified order.
 
-![Change the order of the columns](Columns-images/Columns-img2.png)
+![Changing order of Columns in WinUI TreeGrid](Columns-images/winui-treegrid-column-order.png)
 
 #### Customizing data format 
 
@@ -531,13 +531,13 @@ N> Resizing considers MinWidth and MaxWidth of column.
 {% endtabs %}
 
 You can change the column width by clicking and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line exists between two columns. 
-![Resizing Columns](Columns-images/Columns-img3.png)
+![Resizing Columns in WinUI TreeGrid](Columns-images/winui-treegrid-resizing-column.png)
 
 ### Hidden column resizing
 
 SfTreeGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfTreeGrid.AllowResizingHiddenColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowResizingHiddenColumnsProperty) property to `true`.
 
-![Hidden column resizing](Columns-images/Columns-img4.png)
+![Resizing Hidden Column in WinUI TreeGrid](Columns-images/winui-treegrid-hidden-column-resizing.png)
 
 ### Disable resizing
 
@@ -590,7 +590,7 @@ You can allow end-users to rearrange the columns by drag and drop the column hea
 {% endhighlight %}
 {% endtabs %}
 
-![Column drag and drop](Columns-images/Columns-img5.png)
+![Drag and Drop the Column in WinUI TreeGrid](Columns-images/winui-treegrid-drag-and-drop.png)
 
 You can enable or disable dragging on particular column using [TreeGridColumn.AllowDragging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_AllowDraggingProperty) property.
 
@@ -652,7 +652,7 @@ this.treeGrid.FrozenFooterColumnCount = 2;
 {% endhighlight %}
 {% endtabs %}
 
-![Freezing Columns](Columns-images/Columns-img6.png)
+![Freezing Columns in WinUI TreeGrid](Columns-images/winui-treegrid-freezing-columns.png)
 
 ## Stacked Headers
 
@@ -713,7 +713,7 @@ treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "ReportsTo", Heade
 {% endhighlight %}
 {% endtabs %}
 
-![Stacked Headers](Columns-images/Columns-img7.png)
+![WinUI TreeGrid with Stacked Headers](Columns-images/winui-treegrid-stacked-headers.png)
 
 ### Adding ChildColumns
 

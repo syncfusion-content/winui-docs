@@ -1,15 +1,38 @@
 ---
 layout: post
-title: Customize the WinUI Calendar control | Syncfusion
-description: This section describes about how to customize the Calendar (SfCalendar) control into WinUI application and its basic features.
+title: UI Customization in WinUI Calendar control | Syncfusion
+description: Learn here all about UI customization feature of the WinUI Calendar (SfCalendar) control and much more.
 platform: WinUI
 control: SfCalendar
 documentation: ug
 ---
 
-# Customize the WinUI Calendar
+# UI customization of the WinUI Calendar (SfCalendar)
 
 This section describes about the various customization options available in [Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control.
+
+## Hide days that are out of scope
+
+You can hide the days that are out of the scope of current view by setting the [OutOfScopeVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_OutOfScopeVisibility) property value as **Hidden**. The default value of `OutOfScopeVisibility` property is **Enabled**.
+
+{% tabs %}
+{% highlight xaml %}
+
+<calendar:SfCalendar OutOfScopeVisibility="Hidden"
+                     x:Name="sfCalendar"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfCalendar sfCalendar = new SfCalendar();
+sfCalendar.OutOfScopeVisibility = OutOfScopeVisibility.Hidden;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Display only the current month dates in WinUI Calendar.](Getting-Started_images/disableoutofscope.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction)
 
 ## Custom UI for specific cell in Calendar
 
@@ -200,10 +223,10 @@ You can customize the colors of day names and headers of month, year, decade and
 <td>SyncfusionBodyFontSize</td>
 <td>Key to change the font size of calendar items region.</td>
 </tr>
-<table/>
+</table>
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 <calendar:SfCalendar CornerRadius="6">
      <calendar:SfCalendar.Resources>
@@ -256,26 +279,5 @@ You can customize the colors of day names and headers of month, year, decade and
 
 ![Customize calendar using theme keys](UI-Customization_images/customize-theme-keys.png)
 
-## Hide days that is out of scope
 
-You can hide the days that are out of the scope of current view by setting the [OutOfScopeVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_OutOfScopeVisibility) property value as **Hidden**. The default value of `OutOfScopeVisibility` property is **Disabled**.
-
-{% tabs %}
-{% highlight xaml %}
-
-<calendar:SfCalendar OutOfScopeVisibility="Hidden"
-                     x:Name="sfCalendar"/>
-
-{% endhighlight %}
-{% highlight C# %}
-
-SfCalendar sfCalendar = new SfCalendar();
-sfCalendar.OutOfScopeVisibility = OutOfScopeVisibility.Hidden;
-
-{% endhighlight %}
-{% endtabs %}
-
-![Display only the current month dates in WinUI Calendar.](Getting-Started_images/disableoutofscope.png)
-
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction)
 
