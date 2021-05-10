@@ -37,34 +37,34 @@ table, td, th {
 
 <tr>
 <td>Top</td>
-<td><img src="Getting-Started_images/Left-top.png" alt="Left-Top alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Center-Top.png" alt="Center-Top alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Right-Top.png" alt="Right-Top alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Stretch-Top.png" alt="Stretch-Top alignment of Badge"/></td>
+<td><img src="Getting-Started_images/winui-badge-left-top.png" alt="WinUI Badge displays Left Top Position"/></td>
+<td><img src="Getting-Started_images/winui-badge-center-top.png" alt="WinUI Badge displays Center Top Position"/></td>
+<td><img src="Getting-Started_images/winui-badge-right-top.png" alt="WinUI Badge displays Right Top Position"/></td>
+<td><img src="Getting-Started_images/winui-badge-stretch-top.png" alt="WinUI Badge displays Stretch Top Position"/></td>
 </tr>
 
 <tr>
 <td>Center</td>
-<td><img src="Getting-Started_images/Left-center.png" alt="Left-center alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Center-Center.png" alt="Center-Center alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Right-Center.png" alt="Right-Center alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Stretch-Center.png" alt="Stretch-Center alignment of Badge"/></td>
+<td><img src="Getting-Started_images/winui-badge-left-center.png" alt="WinUI Badge displays Left Center Position"/></td>
+<td><img src="Getting-Started_images/winui-badge-center.png" alt="WinUI Badge displays Center Position"/></td>
+<td><img src="Getting-Started_images/winui-badge-right-center.png" alt="WinUI Badge displays Right Center Position"/></td>
+<td><img src="Getting-Started_images/winui-badge-stretch-center.png" alt="WinUI Badge displays Stretch Center Position"/></td>
 </tr>
 
 <tr>
 <td>Bottom</td>
-<td><img src="Getting-Started_images/Left-Bottom.png" alt="Left-Bottom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Center-Bottom.png" alt="Center-Bottom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Right-Bottom.png" alt="Right-Bottom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Stretch-Bottom.png" alt="Stretch-Bottom alignment of Badge"/></td>
+<td><img src="Getting-Started_images/winui-badge-left-bottom.png" alt="WinUI Badge displays Left Bottom Position"/></td>
+<td><img src="Getting-Started_images/winui-badge-center-bottom.png" alt="WinUI Badge displays Center Bottom Position"/></td>
+<td><img src="Getting-Started_images/winui-badge-right-bottom.png" alt="WinUI Badge displays Right Bottom Position"/></td>
+<td><img src="Getting-Started_images/winui-badge-stretch-bottom.png" alt="WinUI Badge displays Stretch Bottom Position"/></td>
 </tr>
 
 <tr>
 <td>Stretch</td>
-<td><img src="Getting-Started_images/Left-Stretch.png" alt="Left-Stretch alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Center-Stretch.png" alt="Center-Stretch alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Right-Stretch.png" alt="Right-Stretch alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Stretch-Stretch.png" alt="Stretch-Stretch alignment of Badge"/></td>
+<td><img src="Getting-Started_images/winui-badge-left-stretch.png" alt="WinUI Badge displays Left Stretch Position"/></td>
+<td><img src="Getting-Started_images/winui-badge-center-stretch.png" alt="WinUI Badge displays Center Stretch Position"/></td>
+<td><img src="Getting-Started_images/winui-badge-right-stretch.png" alt="WinUI Badge displays Right Stretch Position"/></td>
+<td><img src="Getting-Started_images/winui-badge-stretch.png" alt="WinUI Badge displays Stretch Position"/></td>
 </tr>
 </table>
 
@@ -94,7 +94,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Alignment of the Badge control is changed](Getting-Started_images/Alignment.png)
+![Changing Alignment of WinUI Badge](Getting-Started_images/winui-badge-alignment.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
 
@@ -125,23 +125,23 @@ table, td, th {
 
 <tr>
 <td>Inside</td>
-<td><img src="Getting-Started_images/Positioning_Inside_Inside.png" alt="Inside-Inside positioning of Badge"/></td>
-<td><img src="Getting-Started_images/Positioning_Center_Inside.png" alt="Center-Inside positioning of Badge"/></td>
-<td><img src="Getting-Started_images/Positioning_Outside_Inside.png" alt="Outside-Inside positioning of Badge"/></td>
+<td><img src="Getting-Started_images/winui-badge-inside.png" alt="WinUI Badge displays Inside Position"/></td>
+<td><img src="Getting-Started_images/winui-badge-center-inside.png" alt="WinUI Badge displays Center Inside Position"/></td>
+<td><img src="Getting-Started_images/winui-badge-outside-inside.png" alt="WinUI Badge displays Outside Inside Position"/></td>
 </tr>
 
 <tr>
 <td>Center</td>
-<td><img src="Getting-Started_images/Positioning_Inside_Center.png" alt="Inside-Center positioning of Badge"/></td>
-<td><img src="Getting-Started_images/Positioning_Center_Center.png" alt="Center-Center positioning of Badge"/></td>
-<td><img src="Getting-Started_images/Positioning_Outside_Center.png" alt="Outside-Center positioning of Badge"/></td>
+<td><img src="Getting-Started_images/winui-badge-inside-center.png" alt="WinUI Badge displays Inside Center Position"/></td>
+<td><img src="Getting-Started_images/winui-badge-center-position.png" alt="WinUI Badge displays Center Position"/></td>
+<td><img src="Getting-Started_images/winui-badge-outside-center.png" alt="WinUI Badge displays Outside Center Position"/></td>
 </tr>
 
 <tr>
 <td>Outside</td>
-<td><img src="Getting-Started_images/Positioning_Inside_Outside.png" alt="Inside-Outside positioning of Badge"/></td>
-<td><img src="Getting-Started_images/Positioning_Center_Outside.png" alt="Center-Outside positioning of Badge"/></td>
-<td><img src="Getting-Started_images/Positioning_Outside_Outside.png" alt="Outside-Outside positioning of Badge"/></td>
+<td><img src="Getting-Started_images/winui-badge-inside-outside.png" alt="WinUI Badge displays Inside Outside Position"/></td>
+<td><img src="Getting-Started_images/winui-badge-center-outside.png" alt="WinUI Badge displays Center Outside Position"/></td>
+<td><img src="Getting-Started_images/winui-badge-outside.png" alt="WinUI Badge displays Outside Position"/></td>
 </tr>
 </table>
 
@@ -171,7 +171,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Position of the Badge control is changed](Getting-Started_images/Anchor.png)
+![Changing Position of WinUI Badge](Getting-Started_images/winui-badge-position.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
 
@@ -207,7 +207,7 @@ badge.VerticalPosition = 0.8;
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the customized alignment of the Badge control](Getting-Started_images/Custom_Alignment.png)
+![Customizing WinUI Badge Alignment](Getting-Started_images/winui-badge-custom-alignment.png)
 
 ## Custom alignment and positioning of Badge
 
@@ -238,23 +238,23 @@ table, td, th {
 
 <tr>
 <td>0</td>
-<td><img src="Getting-Started_images/Custom_Left_top.png" alt="Left-Top custom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Custom_Left_center.png" alt="Left-center custom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Custom_Left_Bottom.png" alt="Left-Bottom custom alignment of Badge"/></td>
+<td><img src="Getting-Started_images/winui-badge-custom-left-top.png" alt="Custom Left Top Alignment of WinUI Badge"/></td>
+<td><img src="Getting-Started_images/winui-badge-custom-left-center.png" alt="Custom Left Center Alignment of WinUI Badge"/></td>
+<td><img src="Getting-Started_images/winui-badge-custom-left-bottom.png" alt="Custom Left Bottom Alignment of WinUI Badge"/></td>
 </tr>
 
 <tr>
 <td>0.5</td>
-<td><img src="Getting-Started_images/Custom_Center_Top.png" alt="Center-Top custom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Custom_Center_Center.png" alt="Center-Center custom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Custom_Center_Bottom.png" alt="Center-Bottom custom alignment of Badge"/></td>
+<td><img src="Getting-Started_images/winui-baadge-custom-center-top.png" alt="Custom Center Top Alignment of WinUI Badge"/></td>
+<td><img src="Getting-Started_images/winui-badge-custom-center.png" alt="Custom Center Alignment of WinUI Badge"/></td>
+<td><img src="Getting-Started_images/winui-badge-custom-center-bottom.png" alt="Custom Center Bottom Alignment of WinUI Badge"/></td>
 </tr>
 
 <tr>
 <td>1</td>
-<td><img src="Getting-Started_images/Custom_Right_Top.png" alt="Right-Top custom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Custom_Right_Center.png" alt="Right-Center custom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Custom_Right_Bottom.png" alt="Right-Bottom custom alignment of Badge"/></td>
+<td><img src="Getting-Started_images/winui-badge-custom-right-top.png" alt="Custom Right Top Alignment of WinUI Badge"/></td>
+<td><img src="Getting-Started_images/winui-badge-custom-right-center.png" alt="Custom Right Center Alignment of WinUI Badge"/></td>
+<td><img src="Getting-Started_images/winui-badge-custom-right-bottom.png" alt="Custom Right Bottom Alignment of WinUI Badge"/></td>
 </tr>
 </table>
 
@@ -292,7 +292,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Custom position of the Badge control is changed](Getting-Started_images/Custom_Anchor.png)
+![Changing Custom Position of WinUI Badge](Getting-Started_images/winui-badge-custom-position.png)
 
 ## Badge content alignment
 
@@ -324,7 +324,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Alignment of the Badge content is changed](Getting-Started_images/Content_Alignment.png)
+![Changing Alignment of Badge Content](Getting-Started_images/winui-badge-content-alignment.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
 
@@ -356,7 +356,7 @@ badge.Content = "10";
 {% endhighlight %}
 {% endtabs %}
 
-![Content spacing of Badge](Getting-Started_images/Padding.png)
+![WinUI Badge with Spacing](Getting-Started_images/winui-badge-spacing.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
 
@@ -386,7 +386,7 @@ badge.Content = "10";
 {% endhighlight %}
 {% endtabs %}
 
-![Auto re-positioning support](Getting-Started_images/StablePositioning.gif)
+![Auto Re-positioning Support in WinUI Badge](Getting-Started_images/winui-badge-auto-position-support.gif)
 
 
 
