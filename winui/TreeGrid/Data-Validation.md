@@ -79,7 +79,7 @@ treeGrid.DataValidationMode = GridValidationMode.InView;
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying validation based on conditions in WinUI SfTreeGrid using INotifyDataErrorInfo](Data-Validation_images/Data-Validation_img1.png)
+![Data validation in WinUI TreeGrid using INotifyDataErrorInfo](Data-Validation_images/winui-treegrid-data-validation.png)
 
 ### Built-in validation using Data Annotation
 
@@ -298,7 +298,7 @@ You can change the validation error template shape of the `TreeGridCell` by ch
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying changed validation error icon WinUI SfTreeGrid](Data-Validation_images/Data-Validation_img2.png)
+![WinUI TreeGrid displays Data Validation Errors with Error Icon](Data-Validation_images/winui-treegrid-data-validation-errors-with-error-icon.png)
 
 #### Change the color of error icon
 
@@ -374,7 +374,7 @@ You can change the validation error template color of the `TreeGridCell` by cha
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying changed validation error icon color WinUI SfTreeGrid](Data-Validation_images/Data-Validation_img3.png)
+![Data Validation Error Icon with Custom Color WinUI SfTreeGrid](Data-Validation_images/winui-treegrid-data-validation-error-icon-color.png)
 
 ### Customizing error tip (Help tip)
 
@@ -465,7 +465,7 @@ You can change the error tip background color by setting `Background` property o
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying changed validation error tooltip WinUI SfTreeGrid](Data-Validation_images/Data-Validation_img4.png)
+![WinUI TreeGrid - Error Tip Foreground and Background Customization](Data-Validation_images/winui-treegrid-error-tip-customization.png)
 
 ### Showing error details in RowHeader
 
@@ -493,4 +493,4 @@ public bool HasErrors
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying validation in rowheader WinUI SfTreeGrid](Data-Validation_images/Data-Validation_img5.png)
+![WinUI TreeGrid displays Error Information of Data Validation using INotifyDataErrorInfo](Data-Validation_images/winui-treegrid-error-information-of-data-validation.png)
