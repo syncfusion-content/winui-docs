@@ -352,4 +352,4 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeGrid ColumnRatio Column Width](Column-Sizing-images/winui-treegrid-column-ratio.png)
+![Customizing Column Width in WinUI TreeGrid](Column-Sizing-images/winui-treegrid-column-width-customization.png)

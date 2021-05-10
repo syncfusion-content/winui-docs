@@ -26,7 +26,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.Default;
 {% endhighlight %}
 {% endtabs %}
 
-![Node with CheckBox in WinUI TreeGrid](Node-CheckBox_images/Node-CheckBox_img1.png)
+![Node with CheckBox in WinUI TreeGrid](Node-CheckBox_images/winui-treegrid-node-checkbox.png)
 
 ## Indeterminate State Support
 
@@ -70,7 +70,7 @@ treeGrid.EnableRecursiveChecking = true;
 {% endhighlight %}
 {% endtabs %}
 
-![RecursiveChecking mode demo for WinUI TreeGrid ](Node-CheckBox_images/Node-CheckBox_img2.png)
+![Recursive Checking in WinUI TreeGrid](Node-CheckBox_images/winui-treegrid-recursive-checking.png)
 
 N> Even though [SfTreeGrid.AllowTriStateChecking](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowTriStateChecking) is `false` if [SfTreeGrid.EnableRecursiveChecking](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_EnableRecursiveChecking) is `true`, CheckBox can be in indeterminate state.
 
@@ -219,7 +219,7 @@ public class BoolToVisibilityConverter : IValueConverter
 
 Here, node CheckBox is collapsed for leaf nodes.
 
-![Leaf nodes checkbox visibility collapsed in WinUI TreeGrid](Node-CheckBox_images/Node-CheckBox_img4.png)
+![Collapsing Node CheckBox in WinUI TreeGrid](Node-CheckBox_images/winui-treegrid-collapse-node-checkbox.png)
 
 ## Handling Selection based on CheckBox State
 
@@ -248,7 +248,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.Default;
 {% endhighlight %}
 {% endtabs %}
 
-![CheckBoxSelectionMode as default demo for WinUI TreeGrid](Node-CheckBox_images/Node-CheckBox_img5.png)
+![Default CheckBox Selection in WinUI TreeGrid](Node-CheckBox_images/winui-treegrid-default-checkbox-selection.png)
 
 **SelectOnCheck**
 
@@ -268,7 +268,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.SelectOnCheck;
 {% endhighlight %}
 {% endtabs %}
 
-![CheckBoxSelectionMode as SelectOnCheck demo for WinUi TreeGrid](Node-CheckBox_images/Node-CheckBox_img6.png)
+![Row Selection with CheckBox in WinUI TreeGrid](Node-CheckBox_images/winui-treegrid-row-selection-with-checkbox.png)
 
 **SynchronizeSelection**
 
@@ -287,7 +287,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.SynchronizeSelection;
 {% endhighlight %}
 {% endtabs %}
 
-![CheckBoxSelectionMode as SynchronizeSelection demo for WinUI TreeGrid](Node-CheckBox_images/Node-CheckBox_img7.png)
+![WinUI TreeGrid Synchronize Row Selection with CheckBox](Node-CheckBox_images/winui-treegrid-synchronize-row-selection-checkbox.png)
 
 N>
 * Recursive checking is not supported when selection mode is single.

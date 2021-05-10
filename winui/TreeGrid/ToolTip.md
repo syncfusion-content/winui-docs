@@ -55,7 +55,7 @@ this.treeGrid.Columns["LastName"].ShowToolTip = true;
 
 N> It has higher priority than [SfTreeGrid.ShowToolTip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_ShowToolTip).
 
-![Showing ToolTip for record cell in WinUI TreeGrid](Tooltip_images/Tooltip_img1.png)
+![Displaying ToolTip for Record Cell in WinUI TreeGrid](Tooltip_images/winui-treegrid-record-cell-tooltip.png)
 
 ## Header tooltip
 
@@ -76,7 +76,7 @@ this.treeGrid.Columns["FirstName"].ShowHeaderToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Showing ToolTip for header cell in WinUI TreeGrid](Tooltip_images/ToolTip_img2.png)
+![Displaying ToolTip for Header in WinUI TreeGrid](Tooltip_images/winui-treegrid-tooltip-for-header.png)
 
 ## Tooltip customization
 
@@ -128,7 +128,7 @@ public class StringToImageConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI treeGrid with Customized ToolTip Support](ToolTip_images/ToolTip_img3.png)
+![Displaying ToolTip Customization using ToolTipTemplate in WinUI TreeGrid](ToolTip_images/winui-treegrid-tooltip-customization.png)
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-customize-the-tooltip-using-DataTemplate-in-winui-datagrid).
 

@@ -107,13 +107,13 @@ You can display the row index value in row header by customizing the `Tr
 
 {% endhighlight %}
 {% endtabs %}
-![Row header customized to show the row index in WinUI TreeGrid](Rows_images/Rows_img5.png)
+![WinUI TreeGrid displays Row Header Cells with Row Index](Rows_images/winui-treegrid-row-header-with-index.png)
 
 ## Header row
 
 Header row is present in top of the treegrid which has column headers in it. Column header describes the caption to identify the column content.
 
-![Header row of WinUI TreeGrid](Rows_images/Rows_img6.png)
+![WinUI TreeGrid displays Column Header in Header Row](Rows_images/winui-treegrid-column-header-in-header-row.png)
 
 ### Hiding header row
 
@@ -156,7 +156,7 @@ You can change the header cell background and foreground for specific column or
 {% endhighlight %}
 {% endtabs %}
 
-![Style of the header row changed in WinUI treeGrid](Rows_images/Rows_img7.png)
+![Customizing Row Header in WinUI TreeGrid](Rows_images/winui-treegrid-row-header-customization.png)
 
 You can change the style of the particular column header by using the [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_HeaderStyle) property in column,
 
@@ -166,5 +166,5 @@ You can change the style of the particular column header by using the [HeaderSty
 {% endhighlight %}
 {% endtabs %}
 
-![Style of a single column header changed in WinUI TreeGrid](Rows_images/Rows_img8.png)
+![Customizing Column Header in WinUI TreeGrid](Rows_images/winui-treegrid-column-header-customization.png)
 

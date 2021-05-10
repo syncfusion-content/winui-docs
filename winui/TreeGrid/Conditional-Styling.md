@@ -56,7 +56,7 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Styling cells using style selector in WinUI treegrid](Conditional-Styling_images/Conditional-Styling_img1.png)
+![WinUI TreeGrid Conditional Cell Styling based on Data using Style Selector](Conditional-Styling_images/winui-treegrid-cell-style-customization.png)
 
 ### Add image to cell
 
@@ -135,6 +135,6 @@ class StringToImageConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Adding image to a cell in WinUI treegrid](Conditional-Styling_images/Conditional-Styling_img2.png)
+![WinUI TreeGrid Column with Image](Conditional-Styling_images/winui-treegrid-column-with-image.png)
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-load-images-in-a-cell-in-winui-treegrid).
