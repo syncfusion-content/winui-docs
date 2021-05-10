@@ -30,7 +30,7 @@ You can set the context menu to data rows using the [SfTreeGrid.ContextFlyout](h
 {% endhighlight %}
 {% endtabs %}
 
-![ContextFlyout added for record rows in WinUI TreeGrid](Context-flyout_images/ContextFlyout_image1.png)
+![Context Flyout for Data Rows in WinUI TreeGrid](Context-flyout_images/winui-treegrid-context-flyout-for-data-rows.png)
 
 ## Context flyout for header row
 
@@ -52,7 +52,7 @@ You can set the context menu to header using the [SfTreeGrid.HeaderContextFlyout
 {% endhighlight %}
 {% endtabs %}
 
-![ContextFlyout for header in treegrid WinUI ](Context-flyout_images/ContextFlyout_image2.png)
+![Context Flyout for Header Row in WinUI TreeGrid](Context-flyout_images/winui-treegrid-context-flyout-for-header-row.png)
 
 
 ## Context flyout for expander
@@ -116,4 +116,4 @@ private void TreeGrid_TreeGridContextFlyoutOpening(object sender, TreeGridContex
 {% endhighlight %}
 {% endtabs %}
 
-![ContextFlyout for opening the menu items in WinUI treegrid](Context-flyout_images/ContextFlyout_image3.png)
+![Context Flyout for Opening Menu Items in WinUI TreeGrid](Context-flyout_images/winui-treegrid-context-flyout-for-opening-menu-items.png)

@@ -61,7 +61,7 @@ private void SfTreeGrid_QueryCoveredRange(object sender, TreeGridQueryCoveredRan
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying column wise merged cells in WinUI TreeGrid](Merge-Cells_images/Displaying-column-wise-merged-cells-in-WinUI-TreeGrid.png)
+![Horizontally Merged Cells in WinUI TreeGrid](Merge-Cells_images/winui-treegrid-merged-columns.png)
 
 ## Merge all cells in an entire parent node
 
@@ -94,4 +94,4 @@ private void SfTreeGrid_QueryCoveredRange(object sender, TreeGridQueryCoveredRan
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying entire parent node merged cells in WinUI TreeGrid](Merge-Cells_images/Displaying-entire-parent-node-merged-cells-in-WinUI-TreeGrid.png)
+![Horizontally Merged Cells in WinUI TreeGrid](Merge-Cells_images/winui-treegrid-merged-entire-column.png)

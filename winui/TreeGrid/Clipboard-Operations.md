@@ -51,7 +51,7 @@ this.treeGrid.CopyOption = GridCopyOptions.CopyData | GridCopyOptions.IncludeHea
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI treegrid shows with Copied content pasted in notepad](Clipboard-Operations-images/Clipboard-Operations-img1.png)
+![Copy to Clipboard in WinUI TreeGrid](Clipboard-Operations-images/winui-treegrid-clipboard-copy.png)
 
 ## Paste
 
@@ -93,7 +93,7 @@ this.treeGrid.PasteOption = GridPasteOptions.PasteData | GridPasteOptions.Exclud
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI treegrid shows with Copied record pasted in new record](Clipboard-Operations-images/Clipboard-Operations-img2.png)
+![Paste Clipboard Content in WinUI TreeGrid](Clipboard-Operations-images/winui-treegrid-clipboard-paste.png)
 
 ## Cut
 
@@ -132,7 +132,7 @@ this.treeGrid.CopyOption = GridCopyOptions.CutData | GridCopyOptions.IncludeHead
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI treegrid shows with Data from the record is cut and pasted in notepad](Clipboard-Operations-images/Clipboard-Operations-img3.png)
+![Cut to Clipboard in WinUI TreeGrid](Clipboard-Operations-images/winui-treegrid-clipboard-cut.png)
 
 ## Events
 
@@ -210,7 +210,7 @@ private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventA
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI treegrid shows with Copied data customized through CopyCellContent event](Clipboard-Operations-images/Clipboard-Operations-img4.png)
+![Copy to Clipboard based on Cell Value in WinUI TreeGrid](Clipboard-Operations-images/winui-treegrid-clipboard-copy-based-on-cell-value.png)
 
 The following code example demonstrates how to handle the copy operation when MappingName of a Column is Id.
 
@@ -224,7 +224,7 @@ private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventA
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI treegrid shows with Copy operation for a column handled through CopyCellContent event](Clipboard-Operations-images/Clipboard-Operations-img5.png)
+![Copy to Clipboard based on Mapping Name in WinUI TreeGrid](Clipboard-Operations-images/winui-treegrid-clipboard-copy-based-on-mapping-name.png)
 
 ### PasteCellContent
 
@@ -266,7 +266,7 @@ private void TreeGrid_PasteCellContent(object sender, TreeGridCopyPasteCellEvent
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI treegrid shows with Data of a column customized when pasting through PasteCellContent event](Clipboard-Operations-images/Clipboard-Operations-img6.png)
+![Paste Clipboard Content based on Cell Value in WinUI TreeGrid](Clipboard-Operations-images/winui-treegrid-clipboard-paste-based-on-cell-value.png)
 
 The following code example demonstrates how to handle the paste operation when MappingName of column is Id.
 
@@ -282,7 +282,7 @@ private void TreeGrid_PasteCellContent(object sender, TreeGridCopyPasteCellEvent
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI treegrid shows with Paste operation of a column is handled through PasteCellContent event](Clipboard-Operations-images/Clipboard-Operations-img7.png)
+![Paste Clipboard Content based on Mapping Name in WinUI TreeGrid](Clipboard-Operations-images/winui-treegrid-clipboard-paste-based-on-mapping-name.png)
 
 ## Handle the clipboard operations programmatically
 

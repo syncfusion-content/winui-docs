@@ -643,7 +643,7 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", 
 {% endhighlight %}
 {% endtabs %}
 
-![Enabled SpellChecker to WinUI TreeGrid Column](Column-Type-images/winui-treegrid-spellchecker.png)
+![Enable Spell Check while Editing in WinUI TreeGrid](Column-Type-images/winui-treegrid-editing-spell-check.png)
 
 ## TreeGridCheckBoxColumn
 

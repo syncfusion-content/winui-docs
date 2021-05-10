@@ -34,7 +34,7 @@ The [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grid
 {% endhighlight %}
 {% endtabs %}
 
-![Row selected in WinUI treegrid](Selection_images/Selection_img1.jpeg)
+![Row Selection in WinUI TreeGrid](Selection_images/winui-treegrid-row-selection.jpeg)
 
 ## Disable selection for rows and columns
 
@@ -61,7 +61,7 @@ When using `Extended`, you can select multiple rows by pressing the key modifier
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple rows selected in WinUI treegrid](Selection_images/Selection_img2.jpeg)
+![Multiple Row Selection in WinUI TreeGrid](Selection_images/winui-treegrid-multiple-row-selection.jpeg)
 
 N> When `SelectionMode` is `Multiple`, you can select or deselect multiple rows by clicking the respective row. In multiple selection, pressing the navigation keys moves only the current cell, and you can select or deselect by pressing the `Space` key.
 
@@ -114,7 +114,7 @@ foreach (var order in viewModel.PersonDetails)
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI treegrid shows row with LastName as Buchanan added to SelectedItems collection](Selection_images/Selection_img3.jpeg)
+![Programmatic Selection of Records in WinUI TreeGrid](Selection_images/winui-treegrid-programmatic-selection.jpeg)
 
 ### Process selection using methods
 
@@ -128,7 +128,7 @@ this.sfTreeGrid.SelectRows(3, 7);
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI treegrid shows with rows from 3 to 7 are selected](Selection_images/Selection_img4.jpeg)
+![Programmatic Selection of Records in WinUI TreeGrid](Selection_images/winui-treegrid-programmatic-record-selections.jpeg)
 
 ### Process current cell
 
@@ -657,7 +657,7 @@ You can change the selection background and foreground using the [SelectionBackG
 {% endhighlight %}
 {% endtabs %}
 
-![Background and foreground of the selected rows are changed in WinUI treegrid](Selection_images/Selection_img5.jpeg)
+![Customizing Selection in WinUI TreeGrid](Selection_images/winui-treegrid-selection-customization.jpeg)
 
 ### Change current cell border style
 
@@ -680,7 +680,7 @@ You can change the current cell border thickness and border color using the [Cur
 {% endhighlight %}
 {% endtabs %}
 
-![Style of current cell border is customized in WinUI treegrid](Selection_images/Selection_img6.jpeg)
+![customizing Cell Selection Border in WinUI TreeGrid](Selection_images/winui-treegrid-cell-selection-customization.jpeg)
 
 ### Customize row selection border
 
@@ -753,7 +753,7 @@ You can customize the row selection by editing the control template of [TreeGrid
 {% endhighlight %}
 {% endtabs %}
 
-![Customization of row selection border in WinUI treegrid](Selection_images/Selection_img7.jpeg)
+![customizing Row Selection Border in WinUI TreeGrid](Selection_images/winui-treegrid-row-selection-customization.jpeg)
 
 ## Customize selection behaviors
 
