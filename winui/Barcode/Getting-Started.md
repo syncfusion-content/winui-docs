@@ -65,7 +65,7 @@ public sealed partial class GettingStartedPage : Page
 {% endhighlight %}
 {% endtabs %} 
 
-![CodaBar Barcode](Getting_Started_Images/CodaBar.png)
+![WinUI Codabar Barcode](Getting_Started_Images/winui-codabar-barcode.png)
 
 ## Symbology
 
@@ -89,7 +89,7 @@ N> [Supported Symbology types in SfBarcode](https://help.syncfusion.com/winui/ba
 {% endhighlight %}
 {% endtabs %}
 
-![OR Barcode](Getting_Started_Images/QRBarcode.png)
+![WinUI QR Barcode](Getting_Started_Images/winui-QR-barcode.png)
 
 ## Text customization
 
@@ -111,7 +111,7 @@ The text to be encoded can be set using the [Value](https://help.syncfusion.com/
 {% endhighlight %}
 {% endtabs %}
 
-![CodaBar Barcode with Value](Getting_Started_Images/CodaBar.png)
+![WinUI Barcode with Value](Getting_Started_Images/winui-codabar-barcode.png)
 
 ### Text spacing
 
@@ -129,7 +129,7 @@ The space between barcode and text can be increased/decreased by using [TextSpac
 {% endhighlight %}
 {% endtabs %}
 
-![CodaBar Barcode with Text spacing](Getting_Started_Images/textspacing.png)
+![WinUI Barcode with Text Spacing](Getting_Started_Images/winui-barcode-text-spacing.png)
 
 ### Display value
 
@@ -147,7 +147,7 @@ The visibility of the Barcode text can be changed using [ShowValue](https://help
 {% endhighlight %}
 {% endtabs %}
 
-![CodaBar Barcode with ShowValue set to false](Getting_Started_Images/showvalue.png)
+![WinUI Barcode with Display Value](Getting_Started_Images/winui-barcode-display-value.png)
 
 ### HorizontalTextAlignment
 
@@ -165,7 +165,7 @@ The horizontal alignment of the Barcode text can be changed using [HorizontalTex
 {% endhighlight %}
 {% endtabs %}
 
-![HorizontalTextAlignment set to Right](Getting_Started_Images/HorizontalTextAlignment.png)
+![WinUI Barcode Horizontal Text Alignment](Getting_Started_Images/winui-barcode-horizontal-text-alignment.png)
 
 ### VerticalTextAlignment
 
@@ -183,7 +183,7 @@ The vertical alignment of the Barcode text can be changed using [VerticalTextAli
 {% endhighlight %}
 {% endtabs %}
 
-![VerticalTextAlignment set to Top](Getting_Started_Images/VerticalTextAlignment.png)
+![WinUI Barcode Vertical Text Alignment](Getting_Started_Images/winui-barcode-vertical-text-alignment.png)
 
 ## Customization
 
@@ -219,7 +219,7 @@ The Barcode foreground can be changed using [Foreground](https://docs.microsoft.
 {% endhighlight %}
 {% endtabs %} 
 
-![Barcode_Customization](Customization_Images/Barcode_Customization.png)
+![WinUI Barcode Customization](Customization_Images/winui-barcode-customization.png)
 
 ### Module
 The width ratio of the wide and narrow bars can be changed using [Module](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_Module) property. 
@@ -236,7 +236,7 @@ The width ratio of the wide and narrow bars can be changed using [Module](https:
 {% endhighlight %}
 {% endtabs %}
 
-![Module](Customization_Images/BarWidth.png)
+![WinUI Barcode Module](Customization_Images/winui-barcode-module.png)
 
 ### AutoModule
 The size of [QRBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcode.html) and [DataMatrixBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixBarcode.html) can be changed using [AutoModule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_AutoModule) Property.
@@ -253,7 +253,7 @@ The size of [QRBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 {% endhighlight %}
 {% endtabs %}
 
-![AutoModule](Customization_Images/AutoModule.png)
+![WinUI Barcode Auto Module](Customization_Images/winui-barcode-auto-module.png)
 
 ### Rotation Angle
 The Barcode can be rotated in different angles by using [RotationAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_RotationAngle) property.
@@ -270,6 +270,6 @@ The Barcode can be rotated in different angles by using [RotationAngle](https://
 {% endhighlight %}
 {% endtabs %}
 
-![RotationAngle](Customization_Images/RotationAngle.png)
+![WinUI Barcode Rotation Angle](Customization_Images/winui-barcode-rotation-angle.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-barcode-examples)
