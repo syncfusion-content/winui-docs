@@ -13,7 +13,7 @@ This section explains the steps required to add the [WinUI DropDownColorPalette]
 
 ## Control Structure
 
-![Dropdown ColorPalette control structure](Getting-Started_images/Control_Structure_GS.png)
+![WinUI DropdownColorPalette Control](Getting-Started_images/winui-dropdown-colorpaltette-overview.png)
 
 * The Selected Color represents the color that you select.
 * The Automatic Color represents the color, which can be set by you as default color.
@@ -25,7 +25,7 @@ This section explains the steps required to add the [WinUI DropDownColorPalette]
 
 ### More Color Dialog
 
-![Dropdown ColorPalette more color dialog structure](Getting-Started_images/MoreColorControl_Structure_GS.jpg)
+![WinUI DropdownColorPalette displays More Color Window](Getting-Started_images/winui-dropdown-colorpalette-more-color-window.jpg)
 
 ## Creating an application with WinUI DropDown ColorPalette
 
@@ -75,7 +75,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown ColorPalette added in the winui application](Getting-Started_images/controladded.png)
+![WinUI DropdownColorPalette](Getting-Started_images/winui-dropdown-colorpalette-control.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
 
@@ -97,7 +97,7 @@ colorPalette.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown ColorPalette programmatically picked the yellow color](Getting-Started_images/Colorprogrammatically.png)
+![Selecting Color Programmatically in WinUI DropDownColorPalette](Getting-Started_images/winui-dropdown-colorpalette-color-selection.png)
 
 Here, `Yellow` color is selected color in the `DropDownColorPalette`.
 
@@ -120,7 +120,7 @@ SfDropDownColorPalette sfDropDownColorPalette =  new SfDropDownColorPalette();
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown ColorPalette control with theme and standard color items](Getting-Started_images/ThemeColorPanel.png)
+![WinUI DropdownColorPalette with Theme and Standard Colors](Getting-Started_images/winui-dropdown-colorpalette-color-panels.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
 
@@ -141,7 +141,7 @@ SfDropDownColorPalette sfDropDownColorPalette =  new SfDropDownColorPalette();
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown ColorPalette control with theme and standard color items](Getting-Started_images/automatic_color.png)
+![WinUI DropdownColorPalette with Theme and Standard Colors](Getting-Started_images/winui-dropdown-colorpalette-automatic-color-selection.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
 
@@ -162,7 +162,7 @@ SfDropDownColorPalette sfDropDownColorPalette = new SfDropDownColorPalette();
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown ColorPalette with more color dialog](Getting-Started_images/MoreColorWindow.gif)
+![WinUI DropdownColorPalette with More Color Window](Getting-Started_images/winui-dropdown-colorpalette-more-color-window.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
 
@@ -185,7 +185,7 @@ SfDropDownColorPalette sfDropDownColorPalette = new SfDropDownColorPalette();
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown ColorPalette with recently used color items](Getting-Started_images/Recentcolors.png)
+![WinUI DropdownColorPalette with Recent Color Items](Getting-Started_images/winui-dropdown-colorpalette-recent-colors.png)
 
 ## Color Palette as a command button
 
@@ -237,7 +237,7 @@ public sealed partial class MainPage : Page
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown color palette recent color selected in split mode](Getting-Started_images/Splitbutton.gif)
+![WinUI DropDownColorPalette displays Color Selection in Split Mode](Getting-Started_images/winui-dropdown-colorpalette-color-selection.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDownColorPalette_as_command)
 
@@ -305,7 +305,7 @@ N> You can refer the [ColorPalette](https://help.syncfusion.com/winui/color-pale
 {% endhighlight %}
 {% endtabs %}
 
-![Color palette embedded inside the dropdown color palette](Getting-Started_images/custom_colorpalette.png)
+![Color Palette Embedded with WinUI DropDownColorPalette](Getting-Started_images/winui-dropdown-colorpalette-embed-with-colorpalette.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDownColorPalette_as_command)
 
@@ -362,7 +362,7 @@ N> The `DropDownButtonTemplate` is effective only on when drop down mode is spli
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying custom UI of drop down header in split mode](Getting-Started_images/customUI.png)
+![Customizing the appearance of WinUI DropDownColorPicker Header in Split Mode](Getting-Started_images/winui-dropdown-colorpalette-header-customization.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDownColorPalette_as_command)
 
@@ -386,7 +386,7 @@ sfDropDownColorPalette.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAligned
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown color palette placement changed as BottomEdgeAlignedRight](Getting-Started_images/DropDownPlacement.png)
+![Changing WinUI DropdownColorPalette Position at Right Bottom Edge](Getting-Started_images/winui-dropdown-colorpalette-position.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
 

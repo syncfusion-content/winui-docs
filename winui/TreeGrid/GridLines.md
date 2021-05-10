@@ -47,7 +47,7 @@ this.sfTreeGrid.GridLinesVisibility = GridLinesVisibility.Both;
 {% endhighlight %}
 {% endtabs %}
 
-![GridLinesVisibility in WinUI TreeGrid](GridLines_images/GridLines_image1.png)
+![WinUI TreeGrid with GridLines](GridLines_images/winui-treegrid-gridlines.png)
 
 ### Horizontal
 
@@ -72,7 +72,7 @@ this.sfTreeGrid.GridLinesVisibility = GridLinesVisibility.Horizontal;
 {% endhighlight %}
 {% endtabs %}
 
-![Horizontal GridLinesVisibility in WinUI TreeGrid](GridLines_images/GridLines_image2.png)
+![WinUI TreeGrid with Horizontal GridLines](GridLines_images/winui-treegrid-horizontal-gridlines.png)
 
 ### Vertical
 
@@ -97,7 +97,7 @@ this.sfTreeGrid.GridLinesVisibility = GridLinesVisibility.Vertical;
 {% endhighlight %}
 {% endtabs %}
 
-![Vertical GridLinesVisibility in WinUI TreeGrid](GridLines_images/GridLines_image3.png)
+![WinUI TreeGrid with Vertical GridLines](GridLines_images/winui-treegrid-vertical-gridlines.png)
 
 ### None
 [GridLinesVisibility.None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_None) displays the TreeGrid without grid lines.
@@ -125,7 +125,7 @@ this.sfTreeGrid.GridLinesVisibility = GridLinesVisibility.None;
 {% endhighlight %}
 {% endtabs %}
 
-![None GridLinesVisibility in WinUI TreeGrid](GridLines_images/GridLines_image4.png)
+![WinUI TreeGrid without GridLines](GridLines_images/winui-treegrid-without-gridlines.png)
 
 ## Header rows
 
@@ -150,7 +150,7 @@ this.sfTreeGrid.HeaderLinesVisibility = GridLinesVisibility.Horizontal;
 {% endhighlight %}
 {% endtabs %}
 
-![Horizontal HeaderLinesVisibility in WinUI TreeGrid](GridLines_images/GridLines_image5.png)
+![WinUI TreeGrid displays Horizontal Header Lines](GridLines_images/winui-treegrid-horizontal-header-lines.png)
 
 ## Limitations
 

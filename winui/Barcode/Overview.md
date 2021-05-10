@@ -11,11 +11,11 @@ documentation: ug
 
 The Syncfusion [WinUI Barcode](https://www.syncfusion.com/winui-controls/barcode) control helps to generate and display data in a machine-readable format. It provides a perfect approach to encode the text using the supported barcode types.
 
-![Overview of one dimensional Barcode](Overview_Images/image1.png)
+![WinUI One Dimensional Barcode](Overview_Images/winui-one-dimensional-barcode.png)
 
 Barcode control rendering 1D bar code
 
-![Overview of two dimensional Barcode](Overview_Images/image2.png)
+![WinUI Two Dimensional Barcode](Overview_Images/winui-two-dimensional-barcode.png)
 
 Barcode control rendering 2D bar code
 
