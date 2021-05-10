@@ -137,7 +137,7 @@ The [CodabarBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Bar
 {% endhighlight %}
 {% endtabs %}
 
-![CodabarBarcode](Symbology_Images/CodaBar.png)
+![WinUI Codabar Barcode ](Symbology_Images/winui-codabar-barcode.png)
 
 ### Code 11
 The [Code11Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code11Barcode.html) Symbology is used primarily for labeling the telecommunications equipment and it has the following structure.
@@ -156,7 +156,7 @@ The [Code11Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barc
 {% endhighlight %}
 {% endtabs %}
 
-![Code11Barcode](Symbology_Images/Code11.png)
+![WinUI Code 11 Barcode](Symbology_Images/winui-code11-barcode.png)
 
 ### Code 32
 The [Code32Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code32Barcode.html) is primarily used for coding pharmaceuticals, cosmetics, dietetics and it has the following structure:
@@ -175,7 +175,7 @@ The [Code32Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barc
 {% endhighlight %}
 {% endtabs %}
 
-![Code32Barcode](Symbology_Images/Code32.png)
+![WinUI Code 32 Barcode](Symbology_Images/winui-code32-barcode.png)
 
 ### Code 39
 The [Code39Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code39Barcode.html) is a Barcode Symbology that encodes alphanumeric characters into a series of bars. It may be of any length, although more than 25 characters begin to push the bounds. This Symbology is the only type of the Barcode in common use that does not require a checksum.
@@ -194,7 +194,7 @@ The [Code39Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barc
 {% endhighlight %}
 {% endtabs %}
 
-![Code39Barcode](Symbology_Images/Code39.png)
+![WinUI Code 39 Barcode](Symbology_Images/winui-code39-barcode.png)
 
 ### Code 39 Extended
 The [Code39ExtendedBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code39ExtendedBarcode.html) Symbology is an extended version of [Code39Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code39Barcode.html) which supports the full ASCII character set. It encodes lower case alphabets (a-z) as well as special characters in the keyboard.
@@ -209,7 +209,7 @@ The [Code39ExtendedBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 {% endhighlight %}
 {% endtabs %}
 
-![Code39ExtendedBarcode](Symbology_Images/Code39Extended.png)
+![WinUI Code 39 Extended Barcode](Symbology_Images/winui-code39-extended-barcode.png)
 
 ### Code 93
 The [Code93Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code93Barcode.html) is designed to complement and improve upon [Code39Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code39Barcode.html). It represents the full ASCII character set by using the combination of 2 characters. It is a continuous, variable-length symbology that produces a denser code.
@@ -227,7 +227,7 @@ The [Code93Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barc
 {% endhighlight %}
 {% endtabs %}
 
-![Code93Barcode](Symbology_Images/Code93.png)
+![WinUI Code 93 Barcode](Symbology_Images/winui-code93-barcode.png)
 
 ### Code 93 Extended
 The [Code93ExtendedBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code93ExtendedBarcode.html) is designed to complement and improve upon Code 39. It represents the full ASCII character set by using the combination of 2 characters. It is a continuous, variable-length Symbology that produces a denser code.
@@ -245,7 +245,7 @@ The [Code93ExtendedBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 {% endhighlight %}
 {% endtabs %}
 
-![Code93ExtendedBarcode](Symbology_Images/Code93Extended.png)
+![WinUI Code 93 Extended Barcode](Symbology_Images/winui-code93-extended-barcode.png)
 
 #### Code 128A
 The [Code128ABarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code128ABarcode.html) (or Chars Set A) includes all the standard upper case U.S. alphanumeric keyboard characters and punctuation characters together with the control characters, (characters with ASCII values from 0 to 95 inclusive), and seven special characters.
@@ -260,7 +260,7 @@ The [Code128ABarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ba
 {% endhighlight %}
 {% endtabs %}
 
-![Code128ABarcode](Symbology_Images/Code128A.png)
+![WinUI Code 128A Barcode](Symbology_Images/winui-code-128A-barcode.png)
 
 #### Code128B
 The [Code128BBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code128BBarcode.html) (or Chars Set B) includes all the standard upper case alphanumeric keyboard characters and punctuation characters together with the lower case alphabetic characters (characters with ASCII values from 32 to 127 inclusive), and seven special characters.
@@ -275,7 +275,7 @@ The [Code128BBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ba
 {% endhighlight %}
 {% endtabs %}
 
-![Code128BBarcode](Symbology_Images/Code128B.png)
+![WinUI Code 128B Barcode](Symbology_Images/winui-code-128B-barcode.png)
 
 #### Code128C
 The [Code128CBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code128CBarcode.html) (or Chars Set C) includes a set of 100 digit pairs from 00 to 99 inclusive, as well as three special characters. This allows numeric data to be encoded as two data digits per symbol character effectively twice the density of standard data.
@@ -290,7 +290,7 @@ The [Code128CBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ba
 {% endhighlight %}
 {% endtabs %}
 
-![Code128CBarcode](Symbology_Images/Code128C.png)
+![WinUI Code 128C Barcode](Symbology_Images/winui-code-128C-barcode.png)
 
 ### UPC
 The [UPCBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.UpcBarcode.html)(Universal Product Code), also known as UPC-A. It encodes 12 numeric digits. UPC barcode symbology mostly used in trade items.
@@ -305,7 +305,7 @@ The [UPCBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode
 {% endhighlight %}
 {% endtabs %}
 
-![UPCBarcode](Symbology_Images/UPC_Barcode.png)
+![WinUI UPC Barcode](Symbology_Images/winui-UPC-barcode.png)
 
 ### GS1Code128Barcode
 The [GS1Code128Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.GS1Code128Barcode.html) also known as EAN-128 barcode. It is commonly used in shipping and supply chain entities.
@@ -320,7 +320,7 @@ The [GS1Code128Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 {% endhighlight %}
 {% endtabs %}
 
-![GS1Code128Barcode](Symbology_Images/GS1Code128Barcode.png)
+![WinUI GS1-128 Barcode](Symbology_Images/winui-GS1-128-barcode.png)
 
 ## Two Dimensional Barcodes
 Two Dimensional Barcode is a way to represent information via two-dimensional approach. It is similar to One Dimensional Barcode, but can represent more data per unit area.
@@ -373,7 +373,7 @@ The [QRBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.
 {% endhighlight %}
 {% endtabs %}
 
-![QRBarcode](Symbology_Images/QRBarCode.png)
+![WinUI QR Barcode](Symbology_Images/winui-QR-barcode.png)
 
 ### Data Matrix
 The [DataMatrixBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixBarcode.html) is widely used in printed media such as labels and letters. It can be read easily by a Barcode reader and also by mobile phones. It consists of a grid of dark and light dots or blocks forming square or rectangular symbol. The data encoded in the Barcode can be either number or alphanumeric.
@@ -388,7 +388,7 @@ The [DataMatrixBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 {% endhighlight %}
 {% endtabs %}
 
-![DataMatrixBarcode](Symbology_Images/DataMatrix.png)
+![WinUI DataMatrix Barcode](Symbology_Images/winui-datamatrix-barcode.png)
 
 ### Pdf417Barcode
 The [Pdf417Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Pdf417Barcode.html) is a two dimensional barcode and it can able to encode text, numbers, files and actual data bytes. It is mainly used in a variety of applications such as transport, identification cards, and inventory management.
@@ -403,4 +403,4 @@ The [Pdf417Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barc
 {% endhighlight %}
 {% endtabs %}
 
-![Pdf417Barcode](Symbology_Images/Pdf417Barcode.png)
+![WinUI PDF417 Barcode](Symbology_Images/winui-PDF417-barcode.png)

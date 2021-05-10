@@ -39,7 +39,7 @@ The Barcode foreground color can be changed using [Foreground](https://docs.micr
 {% endhighlight %}
 {% endtabs %} 
 
-![Barcode_Customization](Customization_Images/Barcode_Customization.png)
+![WinUI Barcode Customization](Customization_Images/winui-barcode-customization.png)
 
 N> In order for a barcode symbol to be recognized by a scanner, there must be an adequate contrast between the dark bars and the light spaces and not all the barcode scanners have support for colored barcodes.
 
@@ -58,7 +58,7 @@ The width ratio of the wide and narrow bars can be customized using [Module](htt
 {% endhighlight %}
 {% endtabs %}
 
-![Module](Customization_Images/BarWidth.png)
+![WinUI Barcode Module](Customization_Images/winui-barcode-module.png)
 
 ## AutoModule
 The [QRBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcode.html) and [DataMatrixBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixBarcode.html) can be rendered based on the available control size if [AutoModule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_AutoModule) is set to **True**.
@@ -76,7 +76,7 @@ AutoModule="True" ShowValue="False" Value="QRBarcode">
 {% endhighlight %}
 {% endtabs %}
 
-![AutoModule](Customization_Images/AutoModule.png)
+![WinUI Barcode Auto Module](Customization_Images/winui-barcode-auto-module.png)
 
 ### Rotation Angle
 The [Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html) rotation can be changes by using [RotationAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_RotationAngle) property. The different angles can be set to [Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html) using [BarcodeRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.BarcodeRotation.html) enum values. 
@@ -138,4 +138,4 @@ Barcode can be rotated by 270 degree.
 {% endhighlight %}
 {% endtabs %}
 
-![RotationAngle](Customization_Images/RotationAngle.png)
+![WinUI Barcode Rotation Angle](Customization_Images/winui-barcode-rotation-angle.png)
