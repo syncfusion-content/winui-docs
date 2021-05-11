@@ -39,7 +39,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with divisors](images/divisors/slider-showDivisors.png)
+![WinUI Slider with Divisors](images/divisors/winui-slider-divisors.png)
 
 ## Divisors Height and Width
 
@@ -71,7 +71,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with divisor height and width customization](images/divisors/slider-divisorHeightWidth.png)
+![Changing Divisor Height and Width of WinUI Slider](images/divisors/winui-slider-divisor-height-width.png)
 
 ## Divisor Stroke Thickness and Stroke
 
@@ -107,7 +107,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with divisor stroke customization](images/divisors/slider-divisorstroke.png)
+![Customizing Divisor Stroke Thickness of WinUI Slider](images/divisors/winui-slider-divisor-stroke-thickness.png)
 
 ## Divisor Fill
 
@@ -141,7 +141,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with divisor fill customization](images/divisors/slider-divisorfill.png)
+![Changing Divisor Color of WinUI Slider](images/divisors/winui-slider-divisor-color.png)
 
 ## Divisor Template
 
@@ -187,7 +187,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with divisor template customization](images/divisors/slider-divisorTemplate.png)
+![WinUI Slider with Divisor Template](images/divisors/winui-slider-divisor-template.png)
 
 N> Its DataContext is [`SliderBase`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html?tabs=tabid-1).
 
@@ -231,4 +231,4 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with active divisor template customization](images/divisors/slider-activeDivisorTemplate.png)
+![Customizing Active Divisor Template of WinUI Slider](images/divisors/winui-slider-active-divisor-template.png)

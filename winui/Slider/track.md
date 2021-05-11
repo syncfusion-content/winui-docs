@@ -41,7 +41,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![slider with active and inactive track color](images/track/slider-activeInactiveFill.png)
+![WinUI Slider with Active and Inactive Track Color](images/track/winui-slider-active-inactive-color.png)
 
 ## Track Hover Color
 
@@ -74,7 +74,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![slider with active and inactive track hover color](images/track/slider-activeInactiveHoverFill.png)
+![WinUI Slider with Active and Inactive Track Hover Color](images/track/winui-slider-active-inactive-hover-color.png)
 
 ## Track Pressed Color
 
@@ -110,7 +110,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![slider with active and inactive track pressed color](images/track/slider-activeInactivePressedFill.png)
+![WinUI Slider with Active and Inactive Track Pressed Color](images/track/winui-slider-active-inactive-track-pressed-color.png)
 
 ## Track Height
 
@@ -138,7 +138,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![slider with active and inactive track color](images/track/slider-activeInactiveTrackHeight.png)
+![Changing Track Height of WinUI Slider](images/track/winui-slider-track-height.png)
 
 ## Track Style
 
@@ -188,4 +188,4 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![slider with active and inactive track color](images/track/slider-activeInactiveTrackStyle.png)
+![Changing Track Style of WinUI Slider](images/track/winui-slider-track-style.png)
