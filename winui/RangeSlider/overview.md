@@ -27,4 +27,4 @@ The Syncfusion [WinUI Range Slider](https://www.syncfusion.com/winui-controls/ra
 
 * **Highly customizable:** Supports a wide range of options to customize the control completely.
 
-N> You can get the samples in the [GitHub](https://github.com/SyncfusionExamples/WinUI_Sliders_Getting_Started/tree/main/RangeSlider) link. 
+N> You can get the samples in the [GitHub](https://github.com/SyncfusionExamples/WinUI_Sliders_Getting_Started) link. 

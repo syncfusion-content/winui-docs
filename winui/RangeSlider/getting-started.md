@@ -158,4 +158,4 @@ this.Content = sfRangeSlider;
 
 ![WinUI RangeSlider with Divisors](images/getting-started/winui-range-slider-divisors.png)
 
-N> Download demo application from the [GitHub](https://github.com/SyncfusionExamples/WinUI_Sliders_Getting_Started/tree/main/RangeSlider)
+N> Download demo application from the [GitHub](https://github.com/SyncfusionExamples/WinUI_Sliders_Getting_Started)
