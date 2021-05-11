@@ -13,7 +13,7 @@ The [WinUI Badge](https://www.syncfusion.com/winui-controls/badge) control used 
 
 ## Badge control
 
-![Displaying the Badge control](Getting-Started_images/Overview.gif)
+![WinUI Badge](Getting-Started_images/winui-badge.gif)
 
 ## Key features
 
