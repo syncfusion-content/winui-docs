@@ -64,7 +64,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Setting values to range slider](images/getting-started/slider-value.png)
+![Setting Values to WinUI RangeSlider](images/getting-started/winui-range-slider-value.png)
 
 ## Enable Ticks
 
@@ -92,7 +92,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with ticks](images/getting-started/slider-ticks.png)
+![WinUI RangeSlider with Ticks](images/getting-started/winui-range-slider-ticks.png)
 
 ## Enable Labels
 
@@ -120,7 +120,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with labels](images/getting-started/slider-labels.png)
+![WinUI RangeSlider with Labels](images/getting-started/winui-range-slider-labels.png)
 
 ## Enable Divisors
 
@@ -156,6 +156,6 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with divisors](images/getting-started/slider-divisors.png)
+![WinUI RangeSlider with Divisors](images/getting-started/winui-range-slider-divisors.png)
 
 N> Download demo application from the [GitHub](https://github.com/SyncfusionExamples/WinUI_Sliders_Getting_Started/tree/main/RangeSlider)
