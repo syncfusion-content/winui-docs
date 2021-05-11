@@ -65,7 +65,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![default content pointer](images/content-pointer/pointer_default.png)
+![WinUI Linear Gauge Content Pointer](images/content-pointer/winui-linear-gauge-content-pointer.png)
 
 ## Position customization
 
@@ -146,7 +146,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![pointer offset](images/content-pointer/pointer_offset.png)
+![WinUI Linear Gauge Content Pointer Position Customization](images/content-pointer/winui-linear-gauge-content-pointer-position-customization.png)
 
 **Content pointer alignment**
 
@@ -195,4 +195,4 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![pointer anchor placement customization](images/content-pointer/pointer_anchor.png)
+![WinUI Linear Gauge Content Pointer Alignment](images/content-pointer/winui-linear-gauge-content-pointer-alignment.png)

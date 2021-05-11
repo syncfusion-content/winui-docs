@@ -38,7 +38,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![Initialize linear gauge](images/getting-started/gauge.png)
+![WinUI Linear Gauge Initialization](images/getting-started/winui-linear-gauge-initialization.png)
 
 N> Default axis will be added when initializing the Linear Gauge control.
 
@@ -72,7 +72,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![Initialize linear gauge with axis](images/getting-started/gauge_with_axis.png)
+![WinUI Linear Gauge with Axis](images/getting-started/winui-linear-gauge-with-axis.png)
 
 ## Add range to the linear gauge
 
@@ -133,7 +133,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![range support to linear gauge](images/getting-started/gauge_range.png)
+![WinUI Linear Gauge with Range](images/getting-started/winui-linear-gauge-with-range.png)
 
 ## Add bar pointer to the linear gauge
 
@@ -173,7 +173,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![gauge bar pointer to linear gauge](images/getting-started/gauge_barPointer.png)
+![WinUI Linear Gauge with Bar Pointer](images/getting-started/winui-linear-gauge-with-bar-pointer.png)
 
 ## Add marker pointer to the linear gauge
 
@@ -221,7 +221,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![gauge shape pointer to linear gauge](images/getting-started/gauge_shapePointer.png)
+![WinUI Linear Gauge Pointer Shapes](images/getting-started/winui-linear-gauge-pointer-shapes.png)
 
 **Add content pointer to the linear gauge**
 
@@ -268,7 +268,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![gauge content pointer to linear gauge](images/getting-started/gauge_contentPointer.png)
+![WinUI Linear Gauge Content Pointer](images/getting-started/winui-linear-gauge-content-pointer.png)
 
 The following code example gives you the complete code of above configurations.
 

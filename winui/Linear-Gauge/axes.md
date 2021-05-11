@@ -41,7 +41,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![axis range](images/axis/axis_range.png)
+![WinUI Linear Gauge Axis Range](images/axis/winui-linear-gauge-axis-range.png)
 
 **Interval**
 
@@ -69,7 +69,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![axis label interval](images/axis/axis_interval.png)
+![WinUI Linear Gauge Axis Label Interval](images/axis/winui-linear-gauge-axis-label-interval.png)
 
 **Axis direction customization**
 
@@ -93,7 +93,7 @@ this.Content = new SfLinearGauge { IsInversed = true };
 
 {% endtabs %}
 
-![axis direction](images/axis/axis_inversed.png)
+![WinUI Linear Gauge Axis Direction](images/axis/winui-linear-gauge-axis-direction.png)
 
 **Mirrored axis support**
 
@@ -117,7 +117,7 @@ this.Content = new SfLinearGauge { IsMirrored = true };
 
 {% endtabs %}
 
-![mirrored axis](images/axis/axis_isMirrored.png)
+![WinUI Linear Gauge Mirrored Axis Support](images/axis/winui-linear-gauge-mirrored-axis-support.png)
 
 **Axis orientation support**
 
@@ -141,7 +141,7 @@ this.Content = new SfLinearGauge { Orientation = Orientation.Vertical };
 
 {% endtabs %}
 
-![vertical axis](images/axis/axis_orientation.png)
+![WinUI Linear Gauge Axis Orientation Support](images/axis/winui-linear-gauge-axis-orientation-support.png)
 
 **Maximum number of labels per 100 logical pixels**
 
@@ -169,7 +169,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![axis maximum labels](images/axis/axis_maximumlabels.png)
+![WinUI Linear Gauge Axis Maximum Labels](images/axis/winui-linear-gauge-axis-maximum-labels.png)
 
 ## Axis line customization
 
@@ -205,7 +205,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![axis line width](images/axis/axis_strokeThickness.png)
+![WinUI Linear Gauge Axis Line Stroke Thickness](images/axis/winui-linear-gauge-axis-line-stroke-thickness.png)
 
 **Setting axis line stroke color**
 
@@ -233,7 +233,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![axis line fill customization](images/axis/axis_color.png)
+![WinUI Linear Gauge Axis Line Stroke Color](images/axis/winui-linear-gauge-axis-line-stroke-color.png)
 
 **Axis line visibility**
 
@@ -261,7 +261,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![axis line visibility](images/axis/axis_showline.png)
+![WinUI Linear Gauge Axis Line Visibility](images/axis/winui-linear-gauge-axis-line-visibility.png)
 
 ## Axis label customization
 
@@ -303,7 +303,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![axis label customization](images/axis/axis_label.png)
+![WinUI Linear Gauge Axis Label Customization](images/axis/winui-linear-gauge-axis-label-customization.png)
 
 **Formatting axis label**
 
@@ -331,7 +331,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![axis label format](images/axis/axis_labelFormat.png)
+![WinUI Linear Gauge Axis Label Format](images/axis/winui-linear-gauge-axis-label-format.png)
 
 **Template support for axis label**
 
@@ -372,7 +372,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![axis label format](images/axis/axis_labelTemplate.png)
+![WinUI Linear Gauge Template Support for Axis Label](images/axis/winui-linear-gauge-axis-label-template.png)
 
 **Label visibility**
 
@@ -400,7 +400,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![axis label visibility](images/axis/axis_showLabels.png)
+![WinUI Linear Gauge Axis Label Visibility](images/axis/winui-linear-gauge-axis-label-visibility.png)
 
 **Label placement**
 
@@ -428,7 +428,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![label placement](images/axis/axis_labelOutside.png)
+![WinUI Linear Gauge Axis Label Placement](images/axis/winui-linear-gauge-axis-label-placement.png)
 
 **Label position customization**
 
@@ -456,7 +456,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![axis label offset](images/axis/axis_labelOffset.png)
+![WinUI Linear Gauge Axis Label Offset](images/axis/winui-linear-gauge-axis-label-offset.png)
 
 ## Tick customization
 
@@ -498,7 +498,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![axis tick length](images/axis/axis_tickLength.png)
+![WinUI Linear Gauge Axis Tick Length](images/axis/winui-linear-gauge-axis-tick-length.png)
 
 **Setting style for major ticks**
 
@@ -536,7 +536,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![major tick style](images/axis/axis_majorTickStyle.png)
+![WinUI Linear Gauge Major Tick Style](images/axis/winui-linear-gauge-major-tick-style.png)
 
 **Setting style for minor ticks**
 
@@ -574,7 +574,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![minor tick style](images/axis/axis_minorTickStyle.png)
+![WinUI Linear Gauge Minor Tick Style](images/axis/winui-linear-gauge-minor-tick-style.png)
 
 **Setting dashed tick lines**
 
@@ -626,7 +626,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![dashed tick lines](images/axis/axis_tickdash.png)
+![WinUI Linear Gauge Dashed Tick Lines](images/axis/winui-linear-gauge-dashed-tick-lines.png)
 
 **Setting minor ticks count**
 
@@ -654,7 +654,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![minor tick line](images/axis/axis_minortick.png)
+![WinUI Linear Gauge Minor Ticks Count](images/axis/winui-linear-gauge-minor-ticks-count.png)
 
 **Tick line visibility**
 
@@ -682,7 +682,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![tick line visibilty](images/axis/axis_showticks.png)
+![WinUI Linear Gauge Tick Line Visibility](images/axis/winui-linear-gauge-tick-line-visibility.png)
 
 **Tick placement**
 
@@ -710,7 +710,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![tick placement](images/axis/axis_tickOutside.png)
+![WinUI Linear Gauge Tick Placement](images/axis/winui-linear-gauge-tick-placement.png)
 
 **Tick position customization**
 
@@ -738,7 +738,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![axis tick offset](images/axis/axis_tickOffset.png)
+![WinUI Linear Gauge Axis Tick Offset](images/axis/winui-linear-gauge-axis-tick-offset.png)
 
 ## Custom scale range
 
@@ -803,4 +803,4 @@ public class LogarithmicAxis : LinearAxis
 
 {% endtabs %}
 
-![custom scale](images/axis/custom_scale.png)
+![WinUI Linear Gauge Custom Scale](images/axis/winui-linear-gauge-custom-scale.png)
