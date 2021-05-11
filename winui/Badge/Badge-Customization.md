@@ -43,7 +43,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the Badge with custom colors](Getting-Started_images/Custom_Color.png)
+![WinUI Badge with Custom Color](Getting-Started_images/winui-badge-custom-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Control)
 
@@ -72,7 +72,7 @@ If you want to change the shape of the `Badge` other than the default shapes, us
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the custom shape of Badge](Getting-Started_images/Custom_Shape.png)
+![WinUI Badge with Custom Shape](Getting-Started_images/winui-badge-custom-shape.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
 
@@ -106,7 +106,7 @@ You can change the appearance of `Badge` content by using `ContentTemplate` prop
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the custom UI of Bagde content](Getting-Started_images/ContentTemplate.png)
+![WinUI Badge displays Custom UI](Getting-Started_images/winui-badge-custom-ui.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Content_CustomUI)
 
@@ -192,7 +192,7 @@ public class CustomNumberConverter : IValueConverter {
 {% endhighlight %}
 {% endtabs %}
 
-![Number formatting for the Badge content](Getting-Started_images/number.gif)
+![WinUI Badge with Number Formatting](Getting-Started_images/winui-badge-number-formatting.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Content_CustomUI)
 
@@ -226,7 +226,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the Badge with customized stroke](Getting-Started_images/Stroke.png)
+![Customizing Stroke of WinUI Badge](Getting-Started_images/winui-badge-stroke-customization.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Control)
 
@@ -258,7 +258,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Visibility of the Badge control is restricted](Getting-Started_images/hidden.png)
+![Hide WinUI Badge](Getting-Started_images/winui-hide-badge.png)
 
 ## Change Badge size
 
@@ -290,7 +290,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Size of the Badge control is changed](Getting-Started_images/size.png)
+![Changing WinUI Badge Size](Getting-Started_images/winui-badge-size.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Getting_Started)
 
@@ -326,7 +326,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Badge display content text format changed](Getting-Started_images/Text_formatting.png)
+![Changing WinUI Badge Text Format](Getting-Started_images/winui-badge-text-formatting.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Control)
 
@@ -358,7 +358,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the rotated Badge](Getting-Started_images/Rotation.png)
+![WinUI Badge with Rotation](Getting-Started_images/winui-badge-rotation.png)
 
 ## Change opacity of Badge
 
@@ -388,6 +388,6 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the Badge with reduced opacity](Getting-Started_images/Opacity.png)
+![WinUI Badge with Reduced Opacity](Getting-Started_images/winui-badge-opacity.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Control)

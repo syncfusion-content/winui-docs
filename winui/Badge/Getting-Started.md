@@ -13,7 +13,7 @@ This section explains the steps required to add the [WinUI Badge](https://www.sy
 
 ## Structure of Badge control
 
-![Structure of WinUI Badge control](Getting-Started_images/Structure.png)
+![Overview of WinUI Badge](Getting-Started_images/winui-badge-overview.png)
 
 ## Creating an application with WinUI Badge
 
@@ -107,7 +107,7 @@ badgeContainer.Badge = badge;
 {% endhighlight %}
 {% endtabs %}
 
-![Badge added to the Button control](Getting-Started_images/Adding_Badge.png)
+![Button Control with WinUI Badge](Getting-Started_images/winui-badge-with-button.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Getting_Started)
 
@@ -145,7 +145,7 @@ badgeContainer.Badge = badge;
 {% endhighlight %}
 {% endtabs %}
 
-![Badge display content changed](Getting-Started_images/Change_BadgeContent.png)
+![Changing Content of WinUI Badge](Getting-Started_images/winui-badge-content.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Content_CustomUI)
 
@@ -179,7 +179,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Alignment of the Badge control is changed](Getting-Started_images/Alignment.png)
+![Changing Alignment of WinUI Badge](Getting-Started_images/winui-badge-alignment.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
 
@@ -213,7 +213,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Position of the Badge control is changed](Getting-Started_images/Anchor.png)
+![Changing Position of WinUI Badge](Getting-Started_images/winui-badge-position.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
 
@@ -249,7 +249,7 @@ badge.VerticalPosition = 0.8;
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the customized alignment of the Badge control](Getting-Started_images/Custom_Alignment.png)
+![Customizing WinUI Badge Alignment](Getting-Started_images/winui-badge-custom-alignment.png)
 
 ## Adding badge without BadgeContainer
 
@@ -328,7 +328,7 @@ public class ViewModel {
 {% endhighlight %}
 {% endtabs %}
 
-![Badge added for ListView Items](Getting-Started_images/badge_withoutBadgeContainer.png)
+![WinUI Badge with ListView Items](Getting-Started_images/winui-badge-with-listview-items.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_without_BadgeContainer)
 
@@ -352,7 +352,7 @@ The `Badge` supports the following different essential states :
 
 * Warning - Orange background will be applied
 
-![Displaying the various state colors for Badge](Getting-Started_images/States.png)
+![WinUI Badge displays Various Colors State](Getting-Started_images/winui-badge-various-color-states.png)
 
 {% tabs %}
 {% highlight XAML %}
@@ -378,7 +378,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the Success state of Badge](Getting-Started_images/Information_States.png)
+![WinUI Badge displays Success State](Getting-Started_images/winui-badge-success-state.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
 
@@ -412,7 +412,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the different default Badge shapes](Getting-Started_images/Default_Shape.png)
+![WinUI Badge displays different Default Shapes](Getting-Started_images/winui-badge-default-shape.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
 
@@ -449,11 +449,11 @@ badge.Content = "1";
 
 ### Scaling based animation
 
-![Displaying the Badge with scale based animation](Getting-Started_images/Scale_animation.gif)
+![WinUI Badge displays Animation based on Scale](Getting-Started_images/winui-badge-scale-animation.gif)
 
 ### Opacity based animation
 
-![Displaying the Badge with opacity based animation](Getting-Started_images/Opacity_animation.gif)
+![WinUI Badge displays Animation based on Opacity](Getting-Started_images/winui-badge-opacity-animation.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
 
@@ -539,6 +539,6 @@ public class CustomNumberConverter : IValueConverter {
 {% endhighlight %}
 {% endtabs %}
 
-![Number formatting for the Badge content](Getting-Started_images/number.gif)
+![WinUI Badge with Number Formatting](Getting-Started_images/winui-badge-number-formatting.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Content_CustomUI)
