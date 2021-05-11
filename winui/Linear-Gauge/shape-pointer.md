@@ -41,7 +41,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![default shape pointer](images/shape-pointer/pointer_default.png)
+![WinUI Linear Gauge Shape Pointer](images/shape-pointer/winui-linear-gauge-shape-pointer.png)
 
 Gauge supports the following types of shape pointer:
 
@@ -50,7 +50,7 @@ Gauge supports the following types of shape pointer:
 * Inverted triangle
 * Triangle
 
-![all default shape pointers](images/shape-pointer/pointer_shapes.png)
+![WinUI Linear Gauge Pointer Shapes](images/shape-pointer/winui-linear-gauge-pointer-shapes.png)
 
 ## Custom shape pointer
 
@@ -102,7 +102,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![custom shape pointer](images/shape-pointer/pointer_template.png)
+![WinUI Linear Gauge Custom Shape Pointer](images/shape-pointer/winui-linear-gauge-custom-shape-pointer.png)
 
 ## Shape customization
 
@@ -156,7 +156,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![shape pointer customization](images/shape-pointer/shape_customization.png)
+![WinUI Linear Gauge Shape Pointer Customization](images/shape-pointer/winui-linear-gauge-shape-pointer-customization.png)
 
 ## Shape position customization
 
@@ -198,7 +198,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![pointer offset](images/shape-pointer/pointer_offset.png)
+![WinUI Linear Gauge Shape Position Customization](images/shape-pointer/winui-linear-gauge-shape-position-customization.png)
 
 **Shape pointer alignment**
 
@@ -238,4 +238,4 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![pointer anchor placement customization](images/shape-pointer/pointer_anchor.png)
+![WinUI Linear Gauge Shape Pointer Alignment](images/shape-pointer/winui-linear-gauge-shape-pointer-alignment.png)

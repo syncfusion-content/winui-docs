@@ -17,7 +17,7 @@ documentation: ug
 
 All the pointers can be customized as needed. You can add multiple pointers to the gauge to point multiple values on the same scale. The value of the pointer is set using the [`Value`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_Value) property.
 
-![Pointers](images/pointers/pointers.png)
+![WinUI Linear Gauge Pointers](images/pointers/winui-linear-gauge-pointers.png)
 
 ## Multiple pointers
 
@@ -83,7 +83,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![multiple pointers](images/pointers/multiple_pointer.png)
+![WinUI Linear Gauge with Multiple Pointers](images/pointers/winui-linear-gauge-multiple-pointers.png)
 
 ## Pointer dragging
 
@@ -132,7 +132,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![pointer dragging](images/pointers/pointer-interaction.gif)
+![WinUI Linear Gauge Pointer Dragging](images/pointers/winui-linear-gauge-pointer-dragging.gif)
 
 ## Event
 

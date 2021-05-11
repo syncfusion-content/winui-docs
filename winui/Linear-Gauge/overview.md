@@ -11,7 +11,7 @@ documentation: ug
 
 The [WinUI Linear Gauge](https://www.syncfusion.com/winui-controls/linear-gauge) control is a multipurpose data visualization control that displays numerical values on a linear scale horizontally or vertically. 
 
-![Overview WinUI linear gauge](images/overview/gauge_overview.png)
+![WinUI Linear Gauge Control](images/overview/winui-linear-gauge-control.png)
 
 ## Key Features
 
