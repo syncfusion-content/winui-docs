@@ -37,7 +37,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with tooltip](images/tooltip/slider-tooltip.png)
+![WinUI RangeSlider with Tooltip](images/tooltip/winui-range-slider-tooltip.png)
 
 ## Tooltip Option
 
@@ -65,7 +65,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with tooltip option customization](images/tooltip/slider-tooltipoption.png)
+![Customizing Tooltip Option of WinUI RangeSlider](images/tooltip/winui-range-slider-tooltip-option.png)
 
 ## Tooltip Text Format
 
@@ -95,7 +95,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with tooltip format customization](images/tooltip/slider-tooltipformat.png)
+![Customizing Tooltip Text Format of WinUI RangeSlider](images/tooltip/winui-range-slider-tooltip-text-format.png)
 
 ## Tooltip Placement
 
@@ -125,7 +125,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with tooltip placement customization](images/tooltip/slider-tooltipplacement.png)
+![Customizing Tooltip Position of WinUI RangeSlider](images/tooltip/winui-range-slider-tooltip-position.png)
 
 ## Tooltip Style
 
@@ -163,7 +163,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with tooltip style](images/tooltip/slider-tooltipstyle.png)
+![Changing Tooltip Style of WinUI RangeSlider](images/tooltip/winui-range-slider-tooltip-style.png)
 
 ## Tooltip Template
 
@@ -202,6 +202,6 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with tooltip template](images/tooltip/slider-tooltiptemplate.png)
+![WinUI RangeSlider with Tooltip Template](images/tooltip/winui-range-slider-tooltip-template.png)
 
 N> Its DataContext is [`RangeSliderToolTipInfo`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.RangeSliderToolTipInfo.html).

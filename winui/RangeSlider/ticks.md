@@ -49,7 +49,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with ticks](images/ticks/slider-ticks.png)
+![WinUI RangeSlider with Ticks](images/ticks/winui-range-slider-ticks.png)
 
 ## Show Minor Ticks
 
@@ -87,7 +87,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with ticks](images/ticks/slider-minorTicksPerInterval.png)
+![WinUI RangeSlider with Minor Ticks](images/ticks/winui-range-slider-minor-ticks.png)
 
 ## Tick Length
 
@@ -129,7 +129,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with ticks](images/ticks/slider-majorMinorTickLength.png)
+![Changing Minor and Major Ticks Length of WinUI RangeSlider](images/ticks/winui-range-slider-major-minor-tick-length.png)
 
 ## Tick Placement
 
@@ -159,7 +159,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with tick placement customization](images/ticks/slider-tickPlacement.png)
+![Customizing Tick Position of WinUI RangeSlider](images/ticks/winui-range-slider-tick-position.png)
 
 ## Ticks Offset
 
@@ -199,7 +199,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with ticks](images/ticks/slider-tickOffset.png)
+![WinUI RangeSlider with Tick Offset](images/ticks/winui-range-slider-tick-offset.png)
 
 ## Tick Style
 
@@ -254,7 +254,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with ticks](images/ticks/slider-majorMinorTickStyle.png)
+![Customizing Tick Style of WinUI RangeSlider](images/ticks/winui-range-slider-tick-style.png)
 
 **Setting a Active Style for Major and Minor Ticks**
 
@@ -304,4 +304,4 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with ticks](images/ticks/slider-activeMajorMinorTickStyle.png)
+![Customizing Active Major and Minor Tick Style of WinUI RangeSlider](images/ticks/winui-range-slider-active-tick-style.png)

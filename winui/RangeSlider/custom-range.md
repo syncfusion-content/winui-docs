@@ -69,4 +69,4 @@ public class LogarithmicRangeSlider : SfRangeSlider
 
 {% endtabs %}
 
-![Range slider with custom range](images/custom-range/slider-customrange.png)
+![WinUI RangeSlider with Custom Range](images/custom-range/winui-range-slider-custom-range.png)
