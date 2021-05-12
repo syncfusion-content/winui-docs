@@ -45,7 +45,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![default range](images/range/range_default.png)
+![WinUI Linear Gauge Default Range](images/range/winui-linear-gauge-default-range.png)
 
 ## Range customization
 
@@ -99,7 +99,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![equal range width](images/range/range_equalWidth.png)
+![WinUI Linear Gauge Equal Range Width](images/range/winui-linear-gauge-equal-range-width.png)
 
 N> The [`MidWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugeRange.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeRange_MidWidth) is not considered until change its default value.
 
@@ -143,7 +143,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![range thickness](images/range/range_thickness.png)
+![WinUI Linear Gauge Range Thickness](images/range/winui-linear-gauge-range-thickness.png)
 
 **Setting gradient brush to the range**
 
@@ -197,7 +197,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![range gradient](images/range/range_gradient.png)
+![WinUI Linear Gauge Range Gradient](images/range/winui-linear-gauge-range-gradient.png)
 
 **Range position**
 
@@ -235,7 +235,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![range offset in pixel](images/range/range_position.png)
+![WinUI Linear Gauge Range Position](images/range/winui-linear-gauge-range-position.png)
 
 ## Setting range color to axis elements
 
@@ -308,7 +308,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![range color to axis element](images/range/range_axislabels.png)
+![WinUI Linear Gauge Range Color to Axis Element](images/range/winui-linear-gauge-range-color-to-axis-element.png)
 
 ## Range child content support
 
@@ -433,4 +433,4 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![range child](images/range/range_Child.png)
+![WinUI Linear Gauge Range Child Content](images/range/winui-linear-gauge-range-child-content.png)

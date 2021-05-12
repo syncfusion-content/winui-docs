@@ -35,7 +35,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with tooltip](images/tooltip/slider-tooltip.png)
+![WinUI Slider with Tooltip](images/tooltip/winui-slider-tooltip.png)
 
 ## Tooltip Text Format
 
@@ -63,7 +63,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with tooltip format customization](images/tooltip/slider-tooltipformat.png)
+![Customizing Tooltip Format of WinUI Slider](images/tooltip/winui-slider-tooltip-format.png)
 
 ## Tooltip Placement
 
@@ -91,7 +91,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with tooltip placement customization](images/tooltip/slider-tooltipplacement.png)
+![Customizing Tooltip Position of WinUI Slider](images/tooltip/winui-slider-tooltip-position.png)
 
 ## Tooltip Style
 
@@ -127,7 +127,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with tooltip style](images/tooltip/slider-tooltipstyle.png)
+![Changing Tooltip Style of WinUI Slider](images/tooltip/winui-slider-tooltip-style.png)
 
 ## Tooltip Template
 
@@ -163,6 +163,6 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with tooltip template](images/tooltip/slider-tooltiptemplate.png)
+![WinUI Slider with tooltip Template](images/tooltip/winui-slider-tooltip-template.png)
 
 N> Its DataContext is [`SliderToolTipInfo`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderToolTipInfo.html).

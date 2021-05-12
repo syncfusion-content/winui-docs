@@ -41,7 +41,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with minimum and maximum customization](images/basic-features/slider-min-max.png)
+![WinUI RangeSlider with Minimum and Maximum Value](images/basic-features/winui-range-slider-minimum-and-maximum-value.png)
 
 ## Interval
 
@@ -77,7 +77,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Range slider with interval customization](images/basic-features/slider-interval.png)
+![WinUI RangeSlider with Interval](images/basic-features/winui-range-slider-interval.png)
 
 N> Slider having auto-interval support. So, the auto-interval is calculated by default.
 
@@ -120,7 +120,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Range slider with step frequency](images/basic-features/slider-stepFrequency.gif)
+![WinUI RangeSlider with Step Frequency](images/basic-features/winui-range-slider-step-frequency.gif)
 
 ## Values
 
@@ -148,7 +148,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Setting value to range slider](images/basic-features/slider-value.png)
+![WinUI RangeSlider with Value](images/basic-features/winui-range-slider-value.png)
 
 ## Dragging Active Range
 
@@ -180,7 +180,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with range dragging](images/basic-features/slider-canDragActiveRange.gif)
+![Drag Range in WinUI RangeSlider](images/basic-features/winui-range-slider-drag-range.gif)
 
 ## Flow Direction Customization
 
@@ -216,7 +216,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with is inversed customization](images/basic-features/slider-isInversed.png)
+![Changing Flow Direction of WinUI RangeSlider](images/basic-features/winui-range-slider-flow-direction.png)
 
 ## Events
 

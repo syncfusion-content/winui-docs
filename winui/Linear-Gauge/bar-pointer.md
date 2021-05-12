@@ -41,7 +41,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![default bar pointer](images/bar-pointer/pointer_default.png)
+![WinUI Linear Gauge Bar Pointer](images/bar-pointer/winui-linear-gauge-bar-pointer.png)
 
 **Pointer size**
 
@@ -78,7 +78,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![bar pointer size customization](images/bar-pointer/pointer_size.png)
+![WinUI Linear Gauge Bar Pointer Size](images/bar-pointer/winui-linear-gauge-bar-pointer-size.png)
 
 **Setting background brush to the pointer**
 
@@ -116,7 +116,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![bar pointer background](images/bar-pointer/pointer_background.png)
+![WinUI Linear Gauge Bar Pointer Background](images/bar-pointer/winui-linear-gauge-bar-pointer-background.png)
 
 **Setting gradient brush to the pointer**
 
@@ -161,7 +161,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![bar pointer gradient](images/bar-pointer/pointer_gradient.png)
+![WinUI Linear Gauge Bar Pointer Gradient](images/bar-pointer/winui-linear-gauge-bar-pointer-gradient.png)
 
 **Corner style customization**
 
@@ -206,7 +206,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![bar pointer corner style customization](images/bar-pointer/pointer_cornerStyle.png)
+![WinUI Linear Gauge Bar Pointer Corner Style](images/bar-pointer/winui-linear-gauge-bar-pointer-corner-style.png)
 
 ## Position customization
 
@@ -248,7 +248,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![pointer position customization](images/bar-pointer/pointer_offset.png)
+![WinUI Linear Gauge Bar Pointer Position Customization](images/bar-pointer/winui-linear-gauge-bar-pointer-position-customization.png)
 
 **Child support**
 
@@ -311,4 +311,4 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![bar pointer child customization](images/bar-pointer/pointer_child.png)
+![WinUI Linear Gauge Bar Pointer Child Support](images/bar-pointer/winui-linear-gauge-bar-pointer-child-support.png)

@@ -37,7 +37,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with minimum and maximum customization](images/basic-features/slider-min-max.png)
+![WinUI Slider with Minimum and Maximum Value](images/basic-features/winui-slider-minimum-and-maximum-value.png)
 
 ## Interval
 
@@ -75,7 +75,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with interval customization](images/basic-features/slider-interval.png)
+![WinUI Slider with Interval](images/basic-features/winui-slider-interval.png)
 
 N> Slider having auto-interval support. So, the auto-interval is calculated by default.
 
@@ -120,7 +120,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with step frequency](images/basic-features/slider-stepFrequency.gif)
+![WinUI Slider with Step Frequency](images/basic-features/winui-slider-step-frequency.gif)
 
 ## Value
 
@@ -146,7 +146,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Setting value to slider](images/basic-features/slider-value.png)
+![WinUi Slider with Value](images/basic-features/winui-slider-value.png)
 
 ## Flow Direction Customization
 
@@ -180,7 +180,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with is inversed customization](images/basic-features/slider-isInversed.png)
+![Changing Flow Direction of WinUI Slider](images/basic-features/winui-slider-flow-direction.png)
 
 ## Events
 

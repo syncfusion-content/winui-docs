@@ -47,7 +47,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with ticks](images/ticks/slider-ticks.png)
+![WinUI Slider with Ticks](images/ticks/winui-slider-ticks.png)
 
 ## Show Minor Ticks
 
@@ -85,7 +85,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with ticks](images/ticks/slider-minorTicksPerInterval.png)
+![WinUI Slider with Minor Ticks](images/ticks/winui-slider-minor-ticks.png)
 
 ## Tick Length
 
@@ -125,7 +125,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with ticks](images/ticks/slider-majorMinorTickLength.png)
+![Changing Minor and Major Ticks Length of WinUI Slider](images/ticks/winui-slider-major-minor-tick-length.png)
 
 ## Tick Placement
 
@@ -153,7 +153,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with tick placement customization](images/ticks/slider-tickPlacement.png)
+![Customizing Tick Placement of WinUI Slider](images/ticks/winui-slider-tick-placement.png)
 
 ## Ticks Offset
 
@@ -191,7 +191,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with ticks](images/ticks/slider-tickOffset.png)
+![WinUI Slider with Tick Offset](images/ticks/winui-slider-tick-offset.png)
 
 ## Tick Style
 
@@ -244,7 +244,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with ticks](images/ticks/slider-majorMinorTickStyle.png)
+![Changing Tick Style of WinUI Slider](images/ticks/winui--slider-tick-style.png)
 
 **Setting a Active Style for Major and Minor Ticks**
 
@@ -292,4 +292,4 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with ticks](images/ticks/slider-activeMajorMinorTickStyle.png)
+![Customizing Active Major and Minor Tick Style of WinUI Slider](images/ticks/winui-slider-active-tick-style.png)
