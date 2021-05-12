@@ -324,7 +324,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Alignment of Badge Content](Getting-Started_images/winui-badge-content-alignment.png)
+![Changing Alignment of WinUI Info Badge Content](Getting-Started_images/winui-badge-content-alignment.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
 
