@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Checkbox in WinUI TreeView | Syncfusion
-description: The WinUI TreeView provides support for loading CheckBox in each node and allows users to check/uncheck the corresponding node.
+title: Checkbox in WinUI TreeView control | Syncfusion
+description: Learn here all about Checkbox support in Syncfusion WinUI TreeView(SfTreeView) control with bound, unbound mode support and more.
 platform: WinUI
 control: TreeView
 documentation: ug
 ---
 
-# Checkbox in WinUI TreeView 
+# Checkbox in WinUI TreeView
 
 The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) provides support for loading `CheckBox` in each node, and allows users to check/uncheck the corresponding node. So, you should add checkbox in the [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplate) of the `TreeView` and bind the [IsChecked](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html#Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_IsChecked) property of the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html).
 
@@ -333,7 +333,7 @@ public class CheckBoxModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI BoundMode TreeView with CheckBox](Checkbox_images/Checkbox_bound_mode.jpg)
+![WinUI TreeView with CheckBoxes](Checkbox_images/winui-treeview-checkbox.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Checkbox-with-Bound-mode)
 
@@ -513,7 +513,7 @@ public class NullableTreeCheckbox : DependencyObject
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI UnboundMode TreeView with CheckBox](Checkbox_images/Checkbox_Unbound_mode.jpg)
+![WinUI TreeView Nodes with Checkboxes](Checkbox_images/winui-treeview-nodes-checkboxes.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Checkbox-with-Unbound-mode)
 

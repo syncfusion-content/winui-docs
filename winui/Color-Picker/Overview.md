@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Overview of WinUI SfColorPicker control | Syncfusion
-description: WinUI SfColorPicker control is a rich visual interface with different types of color items for color selection.
+title: About WinUI Color Picker control | Syncfusion
+description: Learn here all about introduction of Syncfusion WinUI Color Picker control with an user interface to select and adjust color values support.
 platform: WinUI
 control: SfColorPicker
 documentation: ug
 ---
 
-# WinUI ColorPicker Overview
+# WinUI Color Picker Overview
 
-The [ColorPicker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html) control is an user interface to select and adjust color values. It supports various color specifications like RGB (Red Green Blue), HSV (Hue Saturation Value), Hex codes, linear and radial gradient color brushes.
+The [WinUI ColorPicker](https://www.syncfusion.com/winui-controls/color-picker) control is an user interface to select and adjust color values. It supports various color specifications like RGB (Red Green Blue), HSV (Hue Saturation Value), Hex codes, linear and radial gradient color brushes.
 
 ## ColorPicker control structure
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column Sizing | TreeGrid | WinUI | Syncfusion
-description: Learn about the Column Sizing support in Syncfusion WinUI TreeGrid (SfTreeGrid) control and more details.
+title: Column Sizing in WinUI TreeGrid control | Syncfusion
+description: Learn here all about Column Sizing support in Syncfusion WinUI TreeGrid(SfTreeGrid) control and more.
 platform: winui
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Column Sizing in WinUi TreeGrid
+# Column Sizing in WinUI TreeGrid
 
 SfTreeGrid allows you to set the column widths based on certain logic using [SfTreeGrid.ColumnWidthMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ColumnWidthMode) or [TreeGridColumn.ColumnSizer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ColumnSizer) property. 
 
@@ -123,7 +123,7 @@ public class DisplayBindingConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Columns with Start width in WinUI SfTreeGrid](Column-Sizing-images/Column-Sizing-img1.png)
+![Column Sizing in WinUI TreeGrid](Column-Sizing-images/winui-treegrid-column-sizing.png)
 
 N> The `TreeGridColumn.ColumnSizer` takes higher priority than the `SfTreeGrid.ColumnWidthMode`.
 
@@ -352,4 +352,4 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 {% endhighlight %}
 {% endtabs %}
 
-![Column Sizer customization in SfTreeGrid WinUI](Column-Sizing-images/Column-Sizing-img2.png)
+![WinUI TreeGrid ColumnRatio Column Width](Column-Sizing-images/winui-treegrid-column-ratio.png)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Axis of Syncfusion WinUI Gauge
-description: This article describes how to add and customize the appearence of linear axis and its element of linear gauge in WinUI platform
+title: Axis in WinUI Linear Gauge control | Syncfusion
+description: Learn here all about Axis feature of Syncfusion WinUI Linear Gauge control with customization support.
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Linear axis Feature in WinUI Linear Gauge (SfLinearGauge)
+# Axis in WinUI Linear Gauge
 
 The [`Linear axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html?tabs=tabid-1) is a linear scale, where a set of values can be plotted along with a linear or custom scale, based on the design requirements. Axis elements such as labels, ticks, and axis line can be easily customized with built-in properties.
 

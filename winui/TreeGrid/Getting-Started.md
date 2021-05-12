@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting started | WinUI | TreeGrid | Syncfusion
-description: Learn here about getting started with Syncfusion WinUI TreeGrid (SfTreeGrid) control and more details. 
+title: Getting Started with WinUI TreeGrid control | Syncfusion
+description: Learn here all about getting started with Syncfusion WinUI TreeGrid control, its elements, and more.
 platform: winui
 control: TreeGrid
 documentation: ug
 ---
 
-# Getting started with WinUI TreeGrid (SfTreeGrid)
+# Getting Started with WinUI TreeGrid
 
-This section explains the steps required to add the TreeGrid control and binding data in treegrid control. This section covers only basic features needed to get started with Syncfusion treegrid control.
+This section explains the steps required to add the [WinUI TreeGrid](https://www.syncfusion.com/winui-controls/treegrid) control and binding data in treegrid control. This section covers only basic features needed to get started with Syncfusion treegrid control.
 
 ## Creating an application with WinUI TreeGrid
 
@@ -261,7 +261,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![Binding self-relational data with SfTreeGrid](Getting-Started-images/Getting-Started-image1.png)
+![WinUI TreeGrid Data Binding](Getting-Started-images/winui-treegrid-data-binding.png)
 
 ### Binding Nested collection with SfTreeGrid
 
@@ -409,7 +409,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 {% endtabs %}
-![Binding nested-collection with SfTreeGrid](Getting-Started-images/Getting-Started-image2.png)
+![Data Binding Nested Collection with WinUI TreeGrid](Getting-Started-images/winui-treegrid-binding-nested-collection.png)
 
 
 ## Defining Columns
@@ -548,7 +548,7 @@ Editing can be enabled by setting [SfTreeGrid.AllowEditing](https://help.syncfus
 
 Filtering can be enabled by setting the [SfTreeGrid.AllowFiltering](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowFiltering) property to true, where advanced filter UI can be opened by clicking the filter icon in column header to filter the nodes in SfTreeGrid. The filtering operations can be customized by handling the [SfTreeGrid.FilterChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterChanging) and [SfTreeGrid.FilterChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterChanged) events.
 
-![Filtering in SfTreeGrid](Getting-Started-images/Getting-Started-image3.png)
+![Filtering in WinUI TreeGrid](Getting-Started-images/winui-treegrid-filtering.png)
 
 
 

@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Day, Week, Work Week views | WinUI | Scheduler | Syncfusion
-description: Learn how to customize the Scheduler Day, Week, Workweek views settings and its appearance in the Syncfusion WinUI Scheduler (SfScheduler)
+title: Day, Week and Work Week views in WinUI Scheduler control | Syncfusion
+description:  Learn here all about to customize the Day, Week, Work Week views settings and its appearance in Syncfusion WinUI Scheduler (SfScheduler) control and more.
 platform: winui
-control: Scheduler
+control: SfScheduler
 documentation: ug
 ---
 
-# Day View in WinUI Scheduler (SfSchedule)
+# Day and Week Views in WinUI Scheduler (SfScheduler)
 
-The Scheduler supports to display the day, week, workweek views, and the current day will be visible by default. The appointments on a specific day will be arranged in the respective timeslots based on their duration.
+The [WinUI Scheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) supports to display the day, week, workweek views, and the current day will be visible by default. The appointments on a specific day will be arranged in the respective timeslots based on their duration.
 
-## Change time interval
-
-You can customize the interval of timeslots in all the day, week, workweek views by using the `TimeInterval` property of `DaysViewSettings`.
+## Change time duration
+You can customize the interval of timeslots in all the day, week, workweek views by using the [TimeInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeInterval) property of [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -22,13 +21,13 @@ this.Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 120, 0);
 {% endhighlight %}
 {% endtabs %}
 
-![change-time-interval-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-change-time-interval-in-winui-scheduler.png)
+![change-time-interval-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/change-time-interval-in-winui-scheduler.png)
 
-N> If you modify the timeInterval value (in minutes), you need to change the time labels format by setting the timeFormat value to hh:mm.
+N> If you modify the [TimeInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeInterval) value (in minutes), you need to change the time labels format by setting the [TimeRulerFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerFormat) value to hh:mm.
 
-## Change time interval size
+## Change time interval height
 
-You can customize the interval size of timeslots in a day, week, and workweek views by setting `TimeIntervalSize` property of `DaysViewSettings'.
+You can customize the interval height of timeslots in a day, week, and workweek views by setting [TimeIntervalSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property of [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -45,11 +44,26 @@ this.Schedule.DaysViewSettings.TimeIntervalSize = 120;
 {% endhighlight %}
 {% endtabs %}
 
-![change-time-interval-size-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-change-time-interval-size-in-winui-scheduler.png)
+![change-time-interval-height-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/change-time-interval-height-in-winui-scheduler.png)
 
-## Flexible working days and working hours
+## Flexible working days 
 
-The default values for `StartHour` and `EndHour` are 0 and 24 to show all the timeslots in a day, week, workweek views. You can set the `StartHour` and `EndHour` properties of `DaysViewSettings` to show only the required time duration for users. You can set the `StartHour` and `EndHour` in time duration to show the required time duration in minutes.
+By default, the `WinUI Scheduler` considers the week days from Monday to Friday as Working days. The days which are defined in this non-working days collection are considered as [non-working days](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_NonWorkingDays). Therefore, when the weekend days are set to hide from Scheduler.
+
+The `workweek` view displays exactly the defined working days on Scheduler control, whereas other views displays all the days.
+
+{% tabs %}
+{% highlight c# %}
+this.scheduler.ViewType = SchedulerViewType.WorkWeek;
+this.scheduler.DaysViewSettings.NonWorkingDays = new ObservableCollection<DayOfWeek>() { DayOfWeek.Monday, DayOfWeek.Tuesday };
+{% endhighlight %}
+{% endtabs %}
+
+![flexible-working-days-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/flexible-working-days-in-winui-scheduler.png)
+
+## Flexible working hours
+
+The default values for `StartHour` and `EndHour` are 0 and 24 to show all the timeslots in a day, week, workweek views. You can set the [StartHour](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_StartHour) and [EndHour](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_EndHour) properties of [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) to show only the required time duration for users. You can set the `StartHour` and `EndHour` in time duration to show the required time duration in minutes.
 
 {% tabs %}
 {% highlight xaml %}
@@ -68,10 +82,10 @@ this.Schedule.DaysViewSettings.EndHour = 13;
 {% endhighlight %}
 {% endtabs %}
 
-![flexible-working-hours-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-flexible-working-hours-in-winui-scheduler.png)
+![flexible-working-hours-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/flexible-working-hours-in-winui-scheduler.png)
 
 N>
-* The `NonWorkingDays` property will applicable only for `workWeek` and `TimelineWorkWeek` views only, and not applicable for the remaining views.
+* The [NonWorkingDays](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_NonWorkingDays) property will applicable only for `workWeek` and `TimelineWorkWeek` views only, and not applicable for the remaining views.
 * Scheduler Appointments UI, which does not fall within the `StartHour` and `EndHour` will not be visible and if it falls partially, it will be clipped.
 * No need to specify the decimal point values for `StartHour` and `EndHour`, if you do not want to set the minutes.
 * The number of time slots will be calculated based on total minutes of a day and time interval (total minutes of a day ((start hour - end hour) * 60) / time interval).
@@ -80,13 +94,13 @@ N>
 
 ## Special time regions
 
-You can restrict the user interaction such as selection and highlight specific regions of time in a day, week, and workweek views by adding the `SpecialTimeRegions` property of SfScheduler. You need to set the `StartTime` and `EndTime` properties of `SpecialTimeRegion` to create a `SpecialTimeRegion,` you can use the timeZone property to set the specific timezone for Start and end time of `SpecialTimeRegion.` The `SpecialTimeRegion` will display the text or image on it, which is set to the text or icon property of `SpecialTimeRegion`.
+You can restrict the user interaction such as selection and highlight specific regions of time in a day, week, and workweek views by adding the [SpecialTimeRegions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_SpecialTimeRegions) property of SfScheduler. You need to set the [StartTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_StartTime) and [EndTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_EndTime) properties of [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) to create a `SpecialTimeRegion,` you can use the timeZone property to set the specific timezone for Start and end time of `SpecialTimeRegion.` The `SpecialTimeRegion` will display the text or image on it, which is set to the text or icon property of `SpecialTimeRegion`.
 
-You can merge the adjacent region of `SpecialTimeRegion` and show them as a single region instead of showing them separately for each day using the `CanMergeAdjacentRegions` property of `SpecialTimeRegion` in the week and workweek views. By default, its value is set to `false`.
+You can merge the adjacent region of `SpecialTimeRegion` and show them as a single region instead of showing them separately for each day using the [CanMergeAdjacentRegions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanMergeAdjacentRegions) property of [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) in the week and workweek views. By default, its value is set to `false`.
 
 ### Selection restriction in timeslots
 
-You can enable or disable the touch interaction of SpecialTimeRegion using the `CanEdit` property of `SpecialTimeRegion`. By default, its value is set to `true`.
+You can enable or disable the touch interaction of SpecialTimeRegion using the [CanEdit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanEdit) property of [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html). By default, its value is set to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -103,19 +117,19 @@ this.Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {% endhighlight %}
 {% endtabs %}
 
-![selection-restriction-in-timeslots-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-selection-restriction-in-timeslots-in-winui-scheduler.png)
+![selection-restriction-in-timeslots-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/selection-restriction-in-timeslots-in-winui-scheduler.png)
 
 N> This property only restricts the interaction on region and it does not restrict the following:
 * Programmatic selection (if the user updates the selected date value dynamically).
-* Does not clear the selection when the user selects the region and dynamically change the `CanEdit` property to false.
+* Does not clear the selection when the user selects the region and dynamically change the [CanEdit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanEdit) property to false.
 * It does not restrict appointment interaction when the appointment placed in the region.
 * It does not restrict the appointment rendering on a region, when appointments are loaded from data services or adding programmatically.
 
 ### Recurring time region
 
-The recurring time region on a daily, weekly, monthly, or yearly interval. The recurring special time regions can be created by setting the `RecurrenceRule` property in `SpecialTimeRegion`.
+The recurring time region on a daily, weekly, monthly, or yearly interval. The recurring special time regions can be created by setting the [RecurrenceRule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_RecurrenceRule) property in [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html).
 
-You can merge the adjacent region of `SpecialTimeRegion` and show them as a single region instead of showing them separately for each day using the `CanMergeAdjacentRegions` property of `SpecialTimeRegion` in the week and workweek views. By default, its value is set to `false`.
+You can merge the adjacent region of `SpecialTimeRegion` and show them as a single region instead of showing them separately for each day using the [CanMergeAdjacentRegions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanMergeAdjacentRegions) property of [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) in the week and workweek views. By default, its value is set to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -134,15 +148,15 @@ this.Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {% endhighlight %}
 {% endtabs %}
 
-![recurring-time-region-in-timebasis-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-recurring-time-region-in-timebasis-in-winui-scheduler.png)
+![recurring-time-region-in-timebasis-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/recurring-time-region-in-timebasis-in-winui-scheduler.png)
 
-If the `CanMergeAdjacentRegions` of `SpecialTimeRegion` is set to false. The SpecialTimeRegion will be rendering on date basis.
+If the [CanMergeAdjacentRegions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanMergeAdjacentRegions) of [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) is set to false. The SpecialTimeRegion will be rendering on date basis.
 
-![recurring-time-region-in-datebasis-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-recurring-time-region-in-datebasis-in-winui-scheduler.png)
+![recurring-time-region-in-datebasis-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/recurring-time-region-in-datebasis-in-winui-scheduler.png)
 
 ### Recurrence exception dates
 
-You can delete any of the occurrence that are an exception from the recurrence pattern time region by using the `RecurrenceExceptionDates` property of `SpecialTimeRegion`. The deleted occurrence date will be considered as a recurrence exception date.
+You can delete any of the occurrence that are an exception from the recurrence pattern time region by using the `[RecurrenceExceptionDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_RecurrenceExceptionDates) property of [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html). The deleted occurrence date will be considered as a recurrence exception date.
 
 {% tabs %}
 {% highlight c# %}
@@ -169,16 +183,16 @@ this.Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {% endhighlight %}
 {% endtabs %}
 
-![recurrence-exception-dates-in-timebasis-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-recurrence-exception-dates-in-timebasis-in-winui-scheduler.png)
+![recurrence-exception-dates-in-timebasis-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/recurrence-exception-dates-in-timebasis-in-winui-scheduler.png)
 
 
-The `SpecialTimeRegion` can be get in date basis by setting the value of `CanMergeAdjacentRegions` to false.
+The [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) can be get in date basis by setting the value of [CanMergeAdjacentRegions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanMergeAdjacentRegions) to false.
 
-![recurrence-exception-dates-in-datebasis-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-recurrence-exception-dates-in-datebasis-in-winui-scheduler.png)
+![recurrence-exception-dates-in-datebasis-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/recurrence-exception-dates-in-datebasis-in-winui-scheduler.png)
 
 ### Special time region customization
 
-The `SpecialTimeRegion` background color can be customized by using the `Background` and `SpecialTimeRegionTemplate` properties of `SpecialTimeRegion` that is used to customize the text style for the image of the SpecialTimeRegion.
+The `SpecialTimeRegion` background color can be customized by using the [Background](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_Background) and [SpecialTimeRegionTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_SpecialTimeRegionTemplate) properties of [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) that is used to customize the text style for the image of the SpecialTimeRegion.
 
 {% tabs %}
 {% highlight xaml %}
@@ -219,16 +233,39 @@ this.Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {% endhighlight %}
 {% endtabs %}
 
-![special-time-region-customization-in-timebasis-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-special-time-region-customization-in-timebasis-in-winui-scheduler.png)
+![special-time-region-customization-in-timebasis-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/special-time-region-customization-in-timebasis-in-winui-scheduler.png)
 
 
-The `SpecialTimeRegion` can be customized on a date basis by setting the value of `CanMergeAdjacentRegions` to false.
+The [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) can be customized on a date basis by setting the value of [CanMergeAdjacentRegions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanMergeAdjacentRegions) to false.
 
-![special-time-region-customization-in-datebasis-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-special-time-region-customization-in-datebasis-in-winui-scheduler.png)
+![special-time-region-customization-in-datebasis-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/special-time-region-customization-in-datebasis-in-winui-scheduler.png)
 
-## Change time ruler size
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/SpecialTimeRegionCustomization)
 
-You can customize the size of the time ruler view where the labels mentioning the time are placed by using the `TimeRulerSize` property of `DayViewSettings`.
+## Full screen scheduler
+
+The WinUI Scheduler time interval height can be adjusted based on screen height by changing the value of [TimeIntervalSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property to `-1.` It will auto-fit to the screen height and width.
+
+{% tabs %}
+{% highlight xaml %}
+<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+    <scheduler:SfScheduler.DaysViewSettings>
+        <scheduler:DaysViewSettings 
+            TimeIntervalSize="-1"/>
+    </scheduler:SfScheduler.DaysViewSettings>
+</scheduler:SfScheduler>
+{% endhighlight %}
+{% highlight c# %}
+this.Schedule.ViewType = SchedulerViewType.Week;
+this.Schedule.DaysViewSettings.TimeIntervalSize = -1;
+{% endhighlight %}
+{% endtabs %}
+
+![full-screen-scheduler-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/full-screen-scheduler-in-winui-scheduler.png)
+
+## Change time ruler width
+
+You can customize the size of the time ruler view where the labels mentioning the time are placed by using the [TimeRulerSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerSize) property of [DayViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -246,11 +283,11 @@ this.Schedule.DaysViewSettings.TimeRulerSize = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![change-time-ruler-size-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-change-time-ruler-size-in-winui-scheduler.png)
+![change-time-ruler-size-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/change-time-ruler-size-in-winui-scheduler.png)
 
 ## Minimum appointment duration
 
-The `MinimumAppointmentDuration` property in `DayViewSettings` is to set an arbitrary height to appointments when it has a minimum duration in a day, week, workweek views so that the subject can be readable.
+The [MinimumAppointmentDuration](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_MinimumAppointmentDuration) property in [DayViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) is to set an arbitrary height to appointments when it has a minimum duration in a day, week, workweek views so that the subject can be readable.
 
 {% tabs %}
 {% highlight c# %}
@@ -265,9 +302,9 @@ N>
 *  The `TimeInterval` value will be set when the `MinimumAppointmentDuration` is greater than the `TimeInterval` with lesser appointment duration.
 * All-day Appointment does not support `MinimumAppointmentDuration`.
 
-## Time text formatting
+## Time ruler text formatting
 
-You can customize the format for the labels mentioning the time by setting the `TimeRulerFormat` property of `DayViewSettings` in Scheduler.
+You can customize the format for the labels mentioning the time by setting the [TimeRulerFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerFormat) property of [DayViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) in Scheduler.
 
 {% tabs %}
 {% highlight c# %}
@@ -277,15 +314,15 @@ this.Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 {% endhighlight %}
 {% endtabs %}
 
-![time-text-formatting-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-time-text-formatting-in-winui-scheduler.png)
+![time-ruler-text-formatting-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/time-ruler-text-formatting-in-winui-scheduler.png)
 
 ## View header
 
-You can customize the default appearance of view header in a day, week, and workweek views by setting the `ViewHeaderDateFormat`, `ViewHeaderHeight`, `ViewHeaderDayFormat` and `ViewHeaderTemplate` of `DaysViewSettings`.
+You can customize the default appearance of view header in a day, week, and workweek views by setting the `ViewHeaderDateFormat`, `ViewHeaderHeight`, `ViewHeaderDayFormat` and `ViewHeaderTemplate` of [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html).
 
 ### View header text formatting
 
-You can customize the date and day format of ViewHeader by using the `ViewHeaderDateFormat` and `ViewHeaderDayFormat` properties of `DaysViewSettings`.
+You can customize the date and day format of ViewHeader by using the [ViewHeaderDateFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_ViewHeaderDateFormat) and [ViewHeaderDayFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderDayFormat) properties of [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -304,11 +341,11 @@ this.Schedule.DaysViewSettings.ViewHeaderDayFormat = "ddd";
 {% endhighlight %}
 {% endtabs %}
 
-![view-header-text-formatting-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-view-header-text-formatting-in-winui-scheduler.png)
+![view-header-text-formatting-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/view-header-text-formatting-in-winui-scheduler.png)
 
 ### View header height
 
-You can customize the height of the ViewHeader in a day, week, and workweek views by setting the `ViewHeaderHeight` property of `DaysViewSettings` in SfScheduler.
+You can customize the height of the ViewHeader in a day, week, and workweek views by setting the [ViewHeaderHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderHeight) property of [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) in SfScheduler.
 
 {% tabs %}
 {% highlight xaml %}
@@ -325,11 +362,11 @@ this.Schedule.DaysViewSettings.ViewHeaderHeight = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![view-header-height-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-view-header-text-formatting-in-winui-scheduler.png)
+![view-header-height-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/view-header-text-formatting-in-winui-scheduler.png)
 
 ### View header appearance customization
 
-You can customize the default appearance of view header by setting the `ViewHeaderTemplate` property of `DaysViewSettings` in SfScheduler.
+You can customize the default appearance of view header by setting the [ViewHeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate) property of [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) in SfScheduler.
 
 {% tabs %}
 {% highlight xaml %}
@@ -375,4 +412,4 @@ You can customize the default appearance of view header by setting the `ViewHead
 {% endhighlight %}
 {% endtabs %}
 
-![view-header-appearance-customization-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/adding-view-header-appearance-customization-in-winui-scheduler.png)
+![view-header-appearance-customization-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/view-header-appearance-customization-in-winui-scheduler.png)

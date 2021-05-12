@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid Lines | DataGrid | WinUI | Syncfusion
-description: Learn about customization of grid lines for GridCells and HeaderCells in Syncfusion WinUI DataGrid (SfDataGrid) control and more details.
+title: Grid Lines Customization in WinUI DataGrid control | Syncfusion
+description: Learn here all about Grid Lines Customization support in Syncfusion WinUI DataGrid(SfDataGrid) control and more.
 platform: winui
 control: DataGrid
 documentation: ug
 ---
 
-# Grid Lines customization in WinUI DataGrid (SfDataGrid)
+# Grid Lines Customization in WinUI DataGrid
 
 SfDataGrid allows you to customize the grid lines visibility to vertical, horizontal, both or none. To achieve this, use the following properties.
 
@@ -42,7 +42,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 {% endhighlight %}
 {% endtabs %}
 
-![GridLinesVisibility in WinUI DataGrid](GridLines_images/GridLines_image1.png)
+![WinUI DataGrid with GridLines](GridLines_images/winui-datagrid-gridlines.png)
 
 ### Horizontal
 
@@ -63,7 +63,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 {% endhighlight %}
 {% endtabs %}
 
-![Horizontal GridLinesVisibility in WinUI DataGrid](GridLines_images/GridLines_image2.png)
+![WinUI DataGrid with Horizontal GridLines](GridLines_images/winui-datagrid-horizontal-gridlines.png)
 
 ### Vertical
 
@@ -84,7 +84,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 {% endhighlight %}
 {% endtabs %}
 
-![Vertical GridLinesVisibility in WinUI DataGrid](GridLines_images/GridLines_image3.png)
+![WinUI DataGrid with Vertical GridLines](GridLines_images/winui-datagrid-vertical-gridlines.png)
 
 ### None
 [GridLinesVisibility.None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_None) displays the DataGrid without grid lines.
@@ -104,7 +104,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 {% endhighlight %}
 {% endtabs %}
 
-![None GridLinesVisibility in WinUI DataGrid](GridLines_images/GridLines_image4.png)
+![WinUI DataGrid without GridLines](GridLines_images/winui-datagrid-without-gridlines.png)
 
 ## Header rows
 
@@ -125,7 +125,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 {% endhighlight %}
 {% endtabs %}
 
-![Horizontal HeaderLinesVisibility in WinUI DataGrid](GridLines_images/GridLines_image5.png)
+![WinUI DataGrid displays Horizontal Header Lines](GridLines_images/winui-datagrid-horizontal-header-lines.png)
 
 ## Limitations
 

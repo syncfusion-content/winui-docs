@@ -1,21 +1,17 @@
 ---
 layout: post
-title: Dealing with Ribbon | WinUI | Ribbon | Syncfusion 
-description: Learn about Ribbon elements and it features in Syncfusion WinUI Ribbon (SfRibbon) control and more details. 
+title: Dealing with Ribbon in WinUI Ribbon control | Syncfusion
+description:  Learn here all about dealing with Ribbon feature of Syncfusion WinUI Ribbon(sfRibbon) control and more.
 platform: winui
 control: Ribbon
 documentation: ug
 ---
 
-# Dealing with WinUI Ribbon (SfRibbon)
+# Dealing with Ribbon in WinUI Ribbon
 
 The below section describes more information about [Ribbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html) and its features.
 
-## Change Backstage button content
-
-The [BackstageMenuButtonContent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html#Syncfusion_UI_Xaml_Ribbon_SfRibbon_BackstageMenuButtonContent) property allows you to set a content of the backstage menu button in the [Ribbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html). The content of the property is specified as `File` by default.
-
-## Ribbon Tab Selection
+## Ribbon tab selection
 
 The `SelectedTab` property returns the value of the currently selected [RibbonTab](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonTab.html) and the `SelectedIndex` property returns the index of the `SelectedTab` in Ribbon.
 
@@ -45,15 +41,15 @@ The `SelectedTab` property returns the value of the currently selected [RibbonTa
 {% endhighlight %} 
 {% endtabs %}
 
-![RibbonTab selection with SelectedTab and SelectedIndex](Dealing-With-Ribbon-imgaes/DealingwithRibbon-image1.png)
+![RibbonTab selection with Selected tab and Selected index](Dealing-With-Ribbon-imgaes/ribbon-tab-selection-by-index-and-selected-tab-binding.png)
 
 N> The selected index value should not exceed the child count of the `Tabs` collection in the [Ribbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html).
 
-### Detecting selection changes in RibbonTab
+### Detecting selection changes in the Ribbon tab
 
 The [SelectedTabChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html#Syncfusion_UI_Xaml_Ribbon_SfRibbon_SelectedTabChanged) event triggers when a user attempts to switch the [RibbonTab](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonTab.html) in a Ribbon.
 
-* The sender argument contains the [SfRibbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html). This argument is of type object but can be cast to the SfRibbon type.
+* The sender argument contains the [SfRibbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html). This argument is of type object but can be casted to the SfRibbon type.
 * The second argument is a `SelectionChangedEventArgs` that receives the old and newly selected ribbon tabs in an argument.
 
 {% tabs %}

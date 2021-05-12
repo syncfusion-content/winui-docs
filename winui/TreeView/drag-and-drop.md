@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drag and drop with WinUI TreeView control | Syncfusion
-description: Learn here about drag and drop between the TreeViewNodes with Syncfusion WinUI TreeView (SfTreeView) control and  drag and drop related events. 
+title: Drag and Drop in WinUI TreeView control | Syncfusion
+description: Learn here all about Drag and Drop support in Syncfusion WinUI TreeView(SfTreeView) control and more.
 platform: winui
 control: SfTreeView
 documentation: ug
 ---
 
-# Drag and drop in WinUI TreeView (SfTreeView)
+# Drag and Drop in WinUI TreeView
 
 TreeView allows drag and drop the items within the treeview control by setting the [CanDrag](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.uielement.candrag?view=winrt-19041) property as `true`. It is also possible to drag and drop the items between treeview and other controls such as `ListView` and `SfDataGrid`. 
 
@@ -46,13 +46,13 @@ treeView.CanDrag = true;
 
 While dropping, the dragged items can be added above or below to the target item based on drag indicator position.
 
-![Drag and drop items in WinUI treeview](DragDrop_images/DragDrop_image1.png)
+![Drag and Drop in WinUI TreeView](DragDrop_images/winui-treeview-drag-and-drop.png)
 
 ## Dragging multiple items
 
 SfTreeView allows to drag multiple selected items. To enable multiple selection, set the [SfTreeView.SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionMode) as `Multiple` or `Extended`. 
 
-![Drag and drop items in WinUI treeview](DragDrop_images/DragDrop_image2.png)
+![Reordering Multiple Items in WinUI TreeView](DragDrop_images/winui-treeview-reordering-items.png)
 ## Drag and drop events
 
 SfTreeView triggers the following events when drag and drop:
@@ -277,6 +277,6 @@ AssociatedObject.sfTreeView2.ItemDropped += SfTreeView1_ItemDropped;
 {% endhighlight %}
 {% endtabs %}
 
-![Drag and drop items in WinUI treeview](DragDrop_images/DragDrop_image3.png)
+![Drag and drop between TreeView Controls in WinUI](DragDrop_images/winui-treeview-drag-drop.png)
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-drag-and-drop-between-two-winui-treeview)

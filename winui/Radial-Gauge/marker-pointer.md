@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion WinUI Gauge Pointers
-description: This article describes how to add and customizes the appearence of pointers of radial gauge control in WinUI platform
+title: Marker Pointer in WinUI Radial Gauge control | Syncfusion
+description: Learn here all about Marker Pointer feature of Syncfusion WinUI Radial Gauge control with image, text pointer support and more.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug
 ---
 
-# Marker Pointer in WinUI Radial Gauge (SfRadialGauge)
+# Marker Pointer in WinUI Radial Gauge
 
 Indicate current values by using different types of marker pointers. You can change the marker type using the [`MarkerType`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerType) property.
 

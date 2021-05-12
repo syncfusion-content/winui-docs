@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WinUI | DataGrid | Syncfusion 
-description: Learn about introduction of Syncfusion WinUI DataGrid (SfDataGrid) control, its feature and more details.
+title: About WinUI DataGrid control | Syncfusion
+description: Learn here all about introduction of Syncfusion WinUI DataGrid(SfDataGrid) control with key features and more.
 platform: winui
 control: DataGrid
 documentation: ug
@@ -26,6 +26,6 @@ The Syncfusion [WinUI DataGrid](https://www.syncfusion.com/winui-controls/datagr
 * **Stacked Headers** – Extensive support to show multiple headers called stacked headers.
 * **Unbound rows** – Support to display unbound rows.
 
- ![Overview of WinUI Sfdatagrid control](Overview-images/Overview-image1.png)
+ ![Overview of WinUI DataGrid](Overview-images/winui-datagrid-overview.png)
 
 

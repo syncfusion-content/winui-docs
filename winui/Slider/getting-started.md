@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started with Syncfusion WinUI Slider
-description: A guide to initial users about Syncfusion Slider control in the WinUI platform. It provide an overview of SfSlider.
+title: Getting Started with WinUI Slider control | Syncfusion
+description: Learn here all about getting started with Syncfusion WinUI Slider(SfSlider) control, its elements, and more.
 platform: WinUI
 control: SfSlider
 documentation: ug
 ---
 
-# Getting Started with WinUI Slider (SfSlider)
+# Getting Started with WinUI Slider
 
-This section explains the steps required to add the Slider control and its elements such as values, ticks, divisors, labels, and tooltip. This section covers only basic features needed to get started with Syncfusion Slider.
+This section explains the steps required to add the [WinUI Slider](https://www.syncfusion.com/winui-controls/slider) control and its elements such as values, ticks, divisors, labels, and tooltip. This section covers only basic features needed to get started with Syncfusion Slider.
 
 ## Creating an application with WinUI Slider
 

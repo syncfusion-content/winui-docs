@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion WinUI Gauge Pointers
-description: This article describes how to add and customizes the appearence of pointers of radial gauge control in WinUI platform
+title: Needle Pointer in WinUI Radial Gauge control | Syncfusion
+description: Learn here all about Needle Pointer feature of Syncfusion WinUI Radial Gauge control with customization support.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug
 ---
 
-# Needle Pointer in WinUI Radial Gauge (SfRadialGauge)
+# Needle Pointer in WinUI Radial Gauge
 
 [`Needle Pointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.NeedlePointer.html) contains three parts, namely needle, knob, and tail and that can be placed on a gauge to mark the values.
 

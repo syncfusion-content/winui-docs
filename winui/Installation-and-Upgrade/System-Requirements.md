@@ -1,7 +1,7 @@
 ---
 layout: post
-title: System Requirements | WinUI | Syncfusion
-description: this section provides the information about the system requirements for WinUI platform with supported browsers
+title: WinUI System Requirements | Syncfusion WinUI Controls
+description: This section provides the information about the system requirements for WinUI - Project Reunion platform.
 platform: winui
 control: Installation and Deployment
 documentation: ug
@@ -29,6 +29,6 @@ N> * Visual Studio 2019, version 16.9, also supports Project Reunion and but not
 
 {% seealso %}
 
-Set up your [Project Reunion development environment](https://docs.microsoft.com/en-us/windows/apps/project-reunion/get-started-with-project-reunion#set-up-your-development-environment) using Microsoft Docs.
+[How to set up your WinUI Project Reunion development environment](https://docs.microsoft.com/en-us/windows/apps/project-reunion/get-started-with-project-reunion#set-up-your-development-environment) in Microsoft Docs.
 
 {% endseealso %}

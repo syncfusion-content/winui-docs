@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WinUI Chart | Syncfusion
-description: This section describes about how to add the Chart control into WinUI application and its basic features.
+title: Getting Started with WinUI Chart control | Syncfusion
+description: Learn here all about getting started with Syncfusion WinUI Chart(SfChart) control, its elements, and more.
 platform: WinUI
 control: Chart
 documentation: ug
 ---
 
-# Getting started with WinUI Chart
+# Getting Started with WinUI Chart
 
 This section explains you the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to learn to get started with the Chart.
 

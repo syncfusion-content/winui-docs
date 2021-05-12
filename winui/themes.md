@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Theme support for Syncfusion WinUI Controls
-description: Explains about the supported themes and learn how to configure themes for Syncfusion WinUI controls.
+description: Explains about the supported themes and guides how to configure themes for Syncfusion WinUI controls.
 platform: winui
 control: Themes
 documentation: ug
@@ -9,7 +9,9 @@ documentation: ug
 
 # Themes for Syncfusion WinUI Controls
 
-Themes provides a sense of visual continuity for the Windows apps. It allows us to customize the appearance of the application. The theme affects the colors of the control's background, foreground, border brush, font etc. 
+Themes provides a sense of visual continuity for the Windows apps. 
+It allows to customize the appearance of the application. 
+The theme affects the colors of the Control's background, foreground, border brush, font etc. 
 
 ## Supported themes
 
@@ -25,7 +27,8 @@ Syncfusion WinUI controls supports Light and Dark themes.
 
 ## Applying themes at application level
 
-We can change theme for the whole application using the `RequestedTheme` property available in App.xaml. Syncfusion control adopts to theme setting, when it is applied through `RequestedTheme` property. 
+Theme for the whole application can be changed using the `RequestedTheme` property available in App.xaml. 
+Syncfusion control adopts to Theme setting, when it is applied through `RequestedTheme` property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -58,7 +61,9 @@ N> When the `RequestedTheme` property is not set, application will use the user'
 
 ## Applying themes for controls
 
-Themes can also be applied for each framework element individually irrespective of the Application level themes. It can be set using the `RequestedTheme` property available in UIElements. When the `RequestedTheme` property is set to `Default` it uses the `Application.RequestedTheme` value for the elements.
+Themes can also be applied for each framework element individually irrespective of the Application level themes. 
+It can be set using the `RequestedTheme` property available in UI Elements. 
+When the `RequestedTheme` property is set to `Default` it uses the `Application.RequestedTheme` value for the elements.
 
 {% tabs %}
 {% highlight xaml %}
@@ -82,39 +87,88 @@ N> When the RequestedTheme value is set on a FrameworkElement, it will inherit t
 
 ## Theme resource
 
-Syncfusion provides a theme resource file containing the resources for Syncfusion WinUI controls. These theme resource files allow you to change the appearance of the controls at the application level.
+Syncfusion provides a theme resource file for all Syncfusion WinUI Project Reunion controls. By referring this file, appearance of the controls can be customized in application level.
 
-The theme resource files for Syncfusion WinUI controls can be downloaded from this [link](https://github.com/MuthusamyPonraj/winui-controls-theme-resource-files/blob/master/).
+Theme resource files for Syncfusion WinUI controls can be referred from this [link](https://github.com/syncfusion/winui-controls-theme-resource-files).
 
-## Modify Theme Resource in application level
+### Modify theme resource in application level
 
-You can modify the Syncfusion WinUI controls appearance using theme resources file.
+Refer the theme resources from the above link to obtain the required keys for customizing the control as desired, and then define the same keys with custom colors in application level.
 
-1. Download the theme resource from the github link.
-2. Include the file in your project.
-3. Merge the resource file in your application.
-4. Change the control appearance as you like.
+The following example shows how to customize the ribbon control at the application level by using a ribbon theme resource file.
 
-The examples below show how to customize a Ribbon control by using the keys listed below from the ribbon's theme resources file.
+**Default theme resource values**
+
+<table>
+    <tr>
+        <td><b>Key</b></td>
+        <td><b>Value</b></td>
+    </tr>
+    <tr>
+        <td>SyncfusionRibbonTabMenuButtonBackground</td>
+        <td>SystemChromeLowColor</td>
+    </tr>
+    <tr>
+        <td>SyncfusionRibbonTabMenuButtonForeground</td>
+        <td>SystemBaseHighColor</td>
+    </tr>
+    <tr>
+        <td>SyncfusionRibbonTabBorderBrushSelected</td>
+        <td>SystemAccentColor</td>
+    </tr>
+</table>
+
+**Customized value**
+
+<table>
+    <tr>
+        <td><b>Key</b></td>
+        <td><b>Value</b></td>
+    </tr>
+    <tr>
+        <td>SyncfusionRibbonTabMenuButtonBackground</td>
+        <td>Green</td>
+    </tr>
+    <tr>
+        <td>SyncfusionRibbonTabMenuButtonForeground</td>
+        <td>White</td>
+    </tr>
+    <tr>
+        <td>SyncfusionRibbonTabBorderBrushSelected</td>
+        <td>Green</td>
+    </tr>
+</table>
+
+Now add the customized value in application root element's resources
 
 {% tabs %}
 {% highlight xaml %}
-<ResourceDictionary>
-    <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="themeresources.xaml" />
-    </ResourceDictionary.MergedDictionaries>
-</ResourceDictionary>
+    
+    <Page>
+        <Page.Resources>
+            <SolidColorBrush x:Key="SyncfusionRibbonTabMenuButtonBackground"
+                                    Color="Green" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabMenuButtonForeground"
+                                    Color="White" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabBorderBrushSelected"
+                                    Color="Green" />        
+        </Page.Resources>
 
-<SolidColorBrush x:Key="SyncfusionRibbonTabBackgroundPointerOver" Color="White" />
-<SolidColorBrush x:Key="SyncfusionRibbonTabBorderBrushSelected" Color="Green" />
+        <ribbon:SfRibbon>
+        ...
+        </ribbon:SfRibbon>
+    </Page>
 
 {% endhighlight %}
 {% endtabs %}
 
-![Modify theme resource in application level](Common-images/Common-image2.png)
+**Control with default theme resource**
 
+![WinUI Ribbon default theme resource](Common-images/winui-ribbon-default-theme-resource.png)
 
+**Control with customized theme resource**
 
+![WinUI Ribbon theme resource customization in application level](Common-images/winui-theme-resource-customization.png)
 
 
 

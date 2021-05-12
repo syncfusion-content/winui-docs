@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Merge Cells | DataGrid | WinUI | Syncfusion
-description: Learn about merge cells support (horizontally or vertically) in Syncfusion WinUI DataGrid (SfDataGrid) control and more details.
+title: Merge Cells in WinUI DataGrid control | Syncfusion
+description: Learn here all about Merge Cells support in Syncfusion WinUI DataGrid (SfDataGrid) control and more.
 platform: winui
 control: DataGrid
 documentation: ug
 ---	
 
-# Merge Cells in WinUI DataGrid (SfDataGrid)
+# Merge Cells in WinUI DataGrid
 	
 DataGrid allows you to merge the range of adjacent cells using [QueryCoveredRange](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_QueryCoveredRange) event. Merged cells can be printed.
 
@@ -64,7 +64,7 @@ private void SfDataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEv
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying horizontally merged cells in WinUI DataGrid](Merge-Cells_images/Displaying-horizontally-merged-cells-in-WinUI-DataGrid.png)
+![Horizontally Merged Cells in WinUI DataGrid](Merge-Cells_images/winui-datagrid-merged-columns.png)
 
 ### Merging cells vertically by fixed range
 
@@ -88,7 +88,7 @@ private void SfDataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEv
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying vertically merged cells in WinUI DataGrid](Merge-Cells_images/Displaying-vertically-merged-cells-in-WinUI-DataGrid.png)
+![Vertically Merged Cells in WinUI DataGrid](Merge-Cells_images/winui-datagrid-merged-columns.png)
 
 ### Merging range of cells
 
@@ -111,7 +111,7 @@ private void SfDataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEv
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying merged range of cells in WinUI DataGrid](Merge-Cells_images/Displaying-merged-range-of-cells-in-WinUI-DataGrid.png)
+![Range of Cells Merged in WinUI DataGrid](Merge-Cells_images/winui-datagrid-merged-cells.png)
 
 ## Merging cells based on the content
 
@@ -350,7 +350,7 @@ private void FirstDetailsViewGrid_QueryCoveredRange(object sender, GridQueryCove
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying merged range of cells for Master-Details View in WinUI DataGrid](Merge-Cells_images/Displaying-merged-range-of-cells-for-Master-Details-View-in-WinUI-DataGrid.png)
+![Range of Cells Merged in Master-Details View of WinUI DataGrid](Merge-Cells_images/winui-datagrid-merged-cells-in-master-details-view.png)
 
 ### Merging range of parent cells
 

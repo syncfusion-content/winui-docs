@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Linear gauge range of Syncfusion WinUI Gauge
-description: This article describes how to add and customize the appearence of ranges of linear gauge control in WinUI platform
+title: Range in WinUI Linear Gauge control | Syncfusion
+description: Learn here all about Range feature of Syncfusion WinUI Linear Gauge control with customization support.
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Linear Range in the  WinUI Linear Gauge (SfLinearGauge)
+# Range in WinUI Linear Gauge
 
 Linear gauge range is a visual element that helps to quickly visualize where a value falls on the axis.
 
