@@ -62,7 +62,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Setting value to slider](images/getting-started/slider-value.png)
+![Setting value to WinUI Slider](images/getting-started/winui-slider-value.png)
 
 ## Enable Ticks
 
@@ -88,7 +88,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with ticks](images/getting-started/slider-ticks.png)
+![WinUI Slider with Ticks](images/getting-started/winui-slider-ticks.png)
 
 ## Enable Labels
 
@@ -114,7 +114,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with labels](images/getting-started/slider-labels.png)
+![WinUI Slider with Labels](images/getting-started/winui-slider-labels.png)
 
 ## Enable Divisors
 
@@ -148,6 +148,6 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with divisors](images/getting-started/slider-divisors.png)
+![WinUI Slider with Divisors](images/getting-started/winui-slider-divisors.png)
 
-N> Download demo application from the [GitHub](https://github.com/SyncfusionExamples/WinUI_Sliders_Getting_Started/tree/main/Slider)
+N> Download demo application from the [GitHub](https://github.com/SyncfusionExamples/WinUI_Sliders_Getting_Started)

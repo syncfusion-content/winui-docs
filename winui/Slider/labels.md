@@ -35,7 +35,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with labels](images/labels/slider-labels.png)
+![WinUI Slider with Labels](images/labels/winui-slider-labels.png)
 
 ## Maximum number of labels per 100 logical pixels
 
@@ -63,7 +63,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with maximum labels count](images/labels/slider-maximumLabelsCount.png)
+![WinUI Slider displays Maximum Labels Count](images/labels/winui-slider-maximum-labels-count.png)
 
 ## Label Placement
 
@@ -91,7 +91,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with labels placement customization](images/labels/slider-labelPlacement.png)
+![Customizing Labels Position of WinUI Slider](images/labels/winui-slider-label-position.png)
 
 ## Label Offset
 
@@ -121,7 +121,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with labels offset customization](images/labels/slider-labelOffset.png)
+![customizing Label offset of WinUI Slider](images/labels/winui-slider-label-offset.png)
 
 ## Label Template
 
@@ -161,7 +161,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with labels template customization](images/labels/slider-labelTemplate.png)
+![Customizing Label Template of WinUI Slider](images/labels/winui-slider-label-template.png)
 
 N> Its DataContext is [`SliderLabelInfo`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderLabelInfo.html?tabs=tabid-1).
 
@@ -198,7 +198,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with active labels template customization](images/labels/slider-activelabelTemplate.png)
+![Customizing Active Label Template of WinUI Slider](images/labels/winui-slider-active-label-template.png)
 
 N> Its DataContext is [`SliderLabelInfo`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderLabelInfo.html?tabs=tabid-1).
 
@@ -239,6 +239,6 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with label format customization](images/labels/slider-labelformat.png)
+![Customizing Label Format of WinUI Slider](images/labels/winui-slider-label-format.png)
 
 N> Its DataContext is [`SliderLabelInfo`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderLabelInfo.html?tabs=tabid-1).
