@@ -18,11 +18,11 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler
 
 ## Cell context flyout
 
-You can set the context flyout for time slot and month cells by using the `SfScheduler.CellContextFlyout` property. The [CellContextFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CellContextFlyout) will appear only when the time slot or month cells are right-clicked.
+Set the context flyout for time slot and month cells by using the `SfScheduler.CellContextFlyout` property. The [CellContextFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CellContextFlyout) will appear only when the time slot or month cells are right-clicked.
 
 N> 
 * The menu flyout items which bind the [SchedulerCommands.Edit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerCommands.html#Syncfusion_UI_Xaml_Scheduler_SchedulerCommands_Edit) and [SchedulerCommands.Delete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerCommands.html#Syncfusion_UI_Xaml_Scheduler_SchedulerCommands_Delete) built-in commands will be disabled in the `CellContextFlyout.`
-* While binding the menu flyout item using the CommandBinding, you can get the command parameter as `SchedulerContextFlyoutInfo` that contains the `Appointment` or `DateTime` of the corresponding cell.
+* While binding the menu flyout item using the CommandBinding, the command parameter is achieved as `SchedulerContextFlyoutInfo` that contains the `Appointment` or `DateTime` of the corresponding cell.
 * By default, the cell context flyout will be opened when holding on any timeslot or month cell. The appointment menu flyout will be opened by holding, only if the appointment’s drag and drop is disabled using the `AppointmentEditFlag` property.
 
 {% tabs %}
@@ -52,13 +52,13 @@ N>
 
 ## Appointment context flyout
 
-You can set the context flyout for schedule appointments by using the `SfScheduler.AppointmentContextFlyout` property. The [AppointmentContextFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentContextFlyout) will be displayed only on appointments that are right-clicked.
+Set the context flyout for schedule appointments by using the `SfScheduler.AppointmentContextFlyout` property. The [AppointmentContextFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentContextFlyout) will be displayed only on appointments that are right-clicked.
 
 N>
-* The menu flyout items which binds the SchedulerCommands.Add command will be disabled in the `SfScheduler.AppointmentContextFlyout.`
-* While binding the menu flyout items using the CommandBinding, you can get the command parameter as [SchedulerContextFlyoutInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerContextFlyoutInfo.html) that contains the `Appointment` or `DateTime` of the corresponding cell.
+* The menu flyout items which binds the SchedulerCommands. Add command will be disabled in the `SfScheduler.AppointmentContextFlyout.`
+* While binding the menu flyout items using the CommandBinding, get the command parameter as [SchedulerContextFlyoutInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerContextFlyoutInfo.html) that contains the `Appointment` or `DateTime` of the corresponding cell.
 * In the month view, the `AppointmentContextFlyout` opens when the `MonthViewSettings.AppointmentDisplayMode` is set to `AppointmentDisplayMode.Appointment.`
-* To enable the touch context flyout for appointments in the scheduler by disabling the appointment drag and drop by setting the `AppointmentEditFlag` property except for `DragDrop.` In this case, you will not be able to perform the appointment drag & drop. The `AppointmentContextFlyout` will be displayed only on appointments and the appointment selection should be performed.
+* To enable the touch context flyout for appointments in the scheduler by disabling the appointment drag and drop by setting the `AppointmentEditFlag` property except for `DragDrop.` In this case, the appointment drag & drop cannot be able performed. The `AppointmentContextFlyout` will be displayed only on appointments and the appointment selection should be performed.
 
 {% tabs %}
 {% highlight xaml %}
