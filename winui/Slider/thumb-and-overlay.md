@@ -39,7 +39,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with thumb type customization](images/thumb-and-overlay/slider-thumbtype.png)
+![WinUI Slider with Oval Thumb](images/thumb-and-overlay/winui-slider-oval-thumb.png)
 
 ## Thumb Height and Width
 
@@ -71,7 +71,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with thumb height and width customization](images/thumb-and-overlay/slider-thumbHeightWidth.png)
+![Changing Thumb Height and Width of WinUI Slider](images/thumb-and-overlay/winui-slider-thumb-height-width.png)
 
 ## Thumb Background
 
@@ -97,7 +97,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with thumb background customization](images/thumb-and-overlay/slider-thumbbackground.png)
+![Changing Thumb Background of WinUI Slider](images/thumb-and-overlay/winui-slider-thumb-background.png)
 
 ## Thumb Hover Background
 
@@ -127,7 +127,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with thumb hover background customization](images/thumb-and-overlay/slider-thumbhoverbackground.png)
+![Changing Hover Background of WinUI Slider Thumb](images/thumb-and-overlay/winui-slider-thumb-hover-background.png)
 
 ## Thumb Pressed Background
 
@@ -158,7 +158,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with thumb pressed background customization](images/thumb-and-overlay/slider-thumbpressedbackground.png)
+![Changing Thumb Pressed Background of WinUI Slider](images/thumb-and-overlay/winui-slider-thumb-pressed-background.png)
 
 ## Thumb Style
 
@@ -217,7 +217,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![slider with thumb style customization](images/thumb-and-overlay/slider-thumbstyle.png)
+![Customizing Thumb Style of WinUI Slider](images/thumb-and-overlay/winui-slider-thumb-style-customization.png)
 
 N> Its DataContext is current value of thumb.
 
@@ -247,7 +247,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![slider with overlay radius customization](images/thumb-and-overlay/slider-thumboverlayradius.png)
+![WinUI Slider with Overlay Radius](images/thumb-and-overlay/winui-slider-thumb-overlay-radius.png)
 
 ## Thumb Overlay Fill
 
@@ -273,7 +273,7 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![slider with overlay fill customization](images/thumb-and-overlay/slider-thumboverlayfill.png)
+![Customizing Overlay Fill of WinUI Slider](images/thumb-and-overlay/winui-slider-thumb-overlay-fill.png)
 
 N> Overlay effects displayed with 0.3 opacity.
 
