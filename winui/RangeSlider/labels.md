@@ -37,7 +37,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with labels](images/labels/slider-labels.png)
+![WinUI RangeSlider with Labels](images/labels/winui-range-slider-labels.png)
 
 ## Maximum number of labels per 100 logical pixels
 
@@ -67,7 +67,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with maximum labels count](images/labels/slider-maximumLabelsCount.png)
+![WinUI RangeSlider displays Maximum Labels Count](images/labels/winui-range-slider-maximum-labels-count.png)
 
 ## Label Placement
 
@@ -97,7 +97,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with labels placement customization](images/labels/slider-labelPlacement.png)
+![Customizing Labels Position of WinUI RangeSlider](images/labels/winui-range-slider-label-position.png)
 
 ## Label Offset
 
@@ -129,7 +129,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with labels offset customization](images/labels/slider-labelOffset.png)
+![customizing Label offset of WinUI RangeSlider](images/labels/winui-range-slider-label-offset.png)
 
 ## Label Template
 
@@ -171,7 +171,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with labels template customization](images/labels/slider-labelTemplate.png)
+![Customizing Label Template of WinUI RangeSlider](images/labels/winui-range-slider-label-template.png)
 
 N> Its DataContext is [`SliderLabelInfo`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderLabelInfo.html?tabs=tabid-1).
 
@@ -210,7 +210,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with active labels template customization](images/labels/slider-activelabelTemplate.png)
+![Customizing Active Label Template of WinUI RangeSlider](images/labels/winui-range-slider-active-label-template.png)
 
 N> Its DataContext is [`SliderLabelInfo`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderLabelInfo.html?tabs=tabid-1).
 
@@ -253,6 +253,6 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with label format customization](images/labels/slider-labelformat.png)
+![Customizing Label Format of WinUI RangeSlider](images/labels/winui-range-slider-label-format.png)
 
 N> Its DataContext is [`SliderLabelInfo`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderLabelInfo.html?tabs=tabid-1).

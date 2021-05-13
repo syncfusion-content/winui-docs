@@ -43,7 +43,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with active and inactive track color](images/track/slider-activeInactiveFill.png)
+![Changing Active and Inactive Track Color of WinUI RangeSlider](images/track/winui-range-slider-active-inactive-color.png)
 
 ## Track Hover Color
 
@@ -78,7 +78,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with active and inactive track hover color](images/track/slider-activeInactiveHoverFill.png)
+![Changing Active and Inactive Track Hover Color of WinUI RangeSlider](images/track/winui-slider-active-inactive-hover-color.png)
 
 ## Track Pressed Color
 
@@ -116,7 +116,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with active and inactive track pressed color](images/track/slider-activeInactivePressedFill.png)
+![Changing Active and Inactive Track Pressed Color of WinUI RangeSlider](images/track/winui-range-slider-active-inactive-pressed-color.png)
 
 ## Track Height
 
@@ -146,7 +146,7 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with active and inactive track color](images/track/slider-activeInactiveTrackHeight.png)
+![Changing Active and Inactive Track Height of WinUI RangeSlider](images/track/winui-range-slider-active-inactive-track-height.png)
 
 ## Track Style
 
@@ -198,4 +198,4 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with active and inactive track color](images/track/slider-activeInactiveTrackStyle.png)
+![Changing Active and Inactive Track Style of WinUI RangeSlider](images/track/winui-range-slider-active-inactive-track-style.png)
