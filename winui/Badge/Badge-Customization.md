@@ -258,7 +258,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Hide WinUI Badge](Getting-Started_images/winui-hide-badge.png)
+![Hide WinUI Info Badge](Getting-Started_images/winui-hide-badge.png)
 
 ## Change Badge size
 
