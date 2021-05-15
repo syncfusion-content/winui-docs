@@ -29,7 +29,7 @@ colorPalette.ShowMoreColorsButton = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ColorPalette with More Color Window](Getting-Started_images/winui-colorpalette-more-color-window.gif)
+![WinUI Color Palette with More Color Window](Getting-Started_images/winui-colorpalette-more-color-window.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -51,6 +51,6 @@ colorPalette.ShowMoreColorsButton = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Hide More Color Option in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-hide-more-color-option.png)
+![Hide More Color Option in WinUI Color Palette](Working-with-SfColorPalette_images/winui-colorpalette-hide-more-color-option.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)

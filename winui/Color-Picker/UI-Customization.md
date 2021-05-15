@@ -15,7 +15,7 @@ This section explains how to customize the color spectrum and switch to differen
 
 You can change the color selection mode directly at runtime by clicking on the corresponding `Solid`, `Linear` or `Radial` gradient brush mode drop down options which is placed in the top of the `Color Picker` control.
 
-![Switch between Solid, Linear and Gradient Color in WinUI ColorPicker](Getting-Started_images/winui-colorpicker-switch-color-option.gif)
+![Switch between Solid, Linear and Gradient Color in WinUI Color Picker](Getting-Started_images/winui-colorpicker-switch-color-option.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
@@ -37,7 +37,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush | BrushTypeOptio
 {% endhighlight %}
 {% endtabs %}
 
-![Enable Solid and Radial Gradient Color in WinUI ColorPicker](Getting-Started_images/winui-colorpicker-solid-and-radial-gradient-color.jpg)
+![Enable Solid and Radial Gradient Color in WinUI Color Picker](Getting-Started_images/winui-colorpicker-solid-and-radial-gradient-color.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
@@ -61,7 +61,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Color Spectrum Shape as Ring in WinUI ColorPicker](Getting-Started_images/winui-colorpicker-spectrum-shape.jpg)
+![Changing Color Spectrum Shape as Ring in WinUI Color Picker](Getting-Started_images/winui-colorpicker-spectrum-shape.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
@@ -87,6 +87,6 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Color Spectrum Combination as HueSaturation in WinUI ColorPicker](Getting-Started_images/winui-colorpicker-color-spectrum-component.jpg)
+![Changing Color Spectrum Combination as HueSaturation in WinUI Color Picker](Getting-Started_images/winui-colorpicker-color-spectrum-component.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)

@@ -28,7 +28,7 @@ SfColorPalette colorPalette= new SfColorPalette();
 {% endhighlight %}
 {% endtabs %}
 
-![Selecting Color from Standard Colors in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-standard-colors.png)
+![Selecting Color from Standard Colors in WinUI Color Palette](Working-with-SfColorPalette_images/winui-colorpalette-standard-colors.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -86,7 +86,7 @@ colorPalette.StandardColors.ShowColorShades = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ColorPalette displays Custom Color wih Standard Color](Working-with-SfColorPalette_images/CustomstandardColors.png)
+![WinUI Color Palette displays Custom Color wih Standard Color](Working-with-SfColorPalette_images/CustomstandardColors.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
 
@@ -111,7 +111,7 @@ colorPalette.StandardColors.ShowColorShades = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ColorPalette displays Standard Colors](Working-with-SfColorPalette_images/winui-colorpalette-with-standard-color.png)
+![WinUI Color Palette displays Standard Colors](Working-with-SfColorPalette_images/winui-colorpalette-with-standard-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -138,7 +138,7 @@ colorPalette.StandardColors.ShowColorShades = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Hide Standard Colors in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-hide-standard-color.png)
+![Hide Standard Colors in WinUI Color Palette](Working-with-SfColorPalette_images/winui-colorpalette-hide-standard-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -163,7 +163,7 @@ colorPalette.StandardColors.Header = "My standard colors";
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Header Text of Standard Color in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-standard-color-header-text.png)
+![Changing Header Text of Standard Color in WinUI Color Palette](Working-with-SfColorPalette_images/winui-colorpalette-standard-color-header-text.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
 
@@ -188,7 +188,7 @@ colorPalette.StandardColors.ShowHeader = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Hide Header of Standard Color in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-hide-standard-color-header.png)
+![Hide Header of Standard Color in WinUI Color Palette](Working-with-SfColorPalette_images/winui-colorpalette-hide-standard-color-header.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -222,7 +222,7 @@ N> The DataContext of `StandardColors.HeaderTemplate` is `StandardColors.Header`
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Standard Color Header in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-standard-color-header-customization.png)
+![Customizing Standard Color Header in WinUI Color Palette](Working-with-SfColorPalette_images/winui-colorpalette-standard-color-header-customization.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
 
@@ -249,6 +249,6 @@ colorPalette.StandardColors.ShowColorShades = false;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ColorPalette displays Spacing between Base Standard Color and its Variants](Working-with-SfColorPalette_images/winui-colorpalette-spacing-between-standard-colors.png)
+![WinUI Color Palette displays Spacing between Base Standard Color and its Variants](Working-with-SfColorPalette_images/winui-colorpalette-spacing-between-standard-colors.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
