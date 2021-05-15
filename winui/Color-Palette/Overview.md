@@ -9,9 +9,9 @@ documentation: ug
 
 # WinUI Color Palette Overview
 
-The [WinUI ColorPalette](https://www.syncfusion.com/winui-controls/color-palette) control provides a rich visual interface for color selection. Its provides standard colors and the various theme colors to choose.  The control also has a `ToolTip` support which bears the name of the color. More color options are embedded with the control that provides you with a wide range of color options.
+The [WinUI Color Palette](https://www.syncfusion.com/winui-controls/color-palette) control provides a rich visual interface for color selection. Its provides standard colors and the various theme colors to choose.  The control also has a `ToolTip` support which bears the name of the color. More color options are embedded with the control that provides you with a wide range of color options.
 
-![ColorPalette control structure](Getting-Started_images/Overview.png)
+![WinUI ColorPalette](Getting-Started_images/winui-colorpalette.png)
 
 ## Key features
 

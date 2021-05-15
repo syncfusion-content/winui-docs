@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started with WinUI Color Palette
 
-This section explains the steps required to add the [WinUI ColorPalette](https://www.syncfusion.com/winui-controls/color-palette) control and its various color options. This section covers only basic features needed to get started with Syncfusion `ColorPalette` control.
+This section explains the steps required to add the [WinUI Color Palette](https://www.syncfusion.com/winui-controls/color-palette) control and its various color options. This section covers only basic features needed to get started with Syncfusion `Color Palette` control.
 
 ## Control Structure
 
-![ColorPalette control structure](Getting-Started_images/Control_Structure_GS.png)
+![WinUI ColorPalette Control](Getting-Started_images/winui-colorpalette-control.png)
 
 * The Selected Color represents the color that you select.
 * The Automatic Color represents the Color, which can be set by you as default color.
@@ -26,7 +26,7 @@ This section explains the steps required to add the [WinUI ColorPalette](https:/
 
 ### More Color Dialog
 
-![ColorPalette more color dialog structure](Getting-Started_images/MoreColorControl_Structure_GS.jpg)
+![WinUI ColorPalette displays More Color Options](Getting-Started_images/winui-colorpalette-more-color-options.jpg)
 
 ## Creating an application with WinUI ColorPalette
 
@@ -48,7 +48,7 @@ This section explains the steps required to add the [WinUI ColorPalette](https:/
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid Name="grid">
-        <!--Adding ColorPalette control -->
+        <!--Adding Color Palette control -->
         <editors:SfColorPalette Name="colorPalette"/>
     </Grid>
 </Page>
@@ -68,7 +68,7 @@ namespace GettingStarted
         public MainPage()
         {
             this.InitializeComponent();
-            // Creating an instance of the ColorPalette control
+            // Creating an instance of the Color Palette control
             SfColorPalette colorPalette = new SfColorPalette();
             grid.Children.Add(colorPalette);
         }
@@ -78,21 +78,21 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette control added by xaml and code](Getting-Started_images/SfColorpalette.png)
+![Overview of WinUI ColorPalette](Getting-Started_images/winui-colorpalette-overview.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
 ## Accessing a Color programmatically
 
-You can set or change the selected color of the `ColorPalette` programmatically by setting the value to [SelectedBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_SelectedBrush) property. You can also get the selected color by using the `SelectedBrush` property. The default value of `SelectedBrush` property is `Transparent(#00FFFFFF)`.
+You can set or change the selected color of the `Color Palette` programmatically by setting the value to [SelectedBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_SelectedBrush) property. You can also get the selected color by using the `SelectedBrush` property. The default value of `SelectedBrush` property is `Transparent(#00FFFFFF)`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<Button Background="{Binding ElementName=colorPalette, Path=SelectedBrush}"></Button>
-
 <editors:SfColorPalette SelectedBrush="Yellow"
                         Name="colorPalette" />
+
+<Button Background="{Binding ElementName=colorPalette, Path=SelectedBrush}"></Button>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -102,7 +102,7 @@ colorPalette.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette programmatically picked the yellow color](Working-with-SfColorPalette_images/Colorprogrammatically.png)
+![Selecting Color Programmatically in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-color-selection.png)
 
 Here, `Yellow` color is selected color in the `ColorPalette`.
 
@@ -133,7 +133,7 @@ colorPalette.StandardColors.ShowColorShades = true;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette control with theme and standard color items](Getting-Started_images/ThemeColorPanel.png)
+![WinUI ColorPalette with Theme and Standard Color Palettes](Getting-Started_images/winui-colorpalette-theme-and-standard-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -141,7 +141,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can select a various theme colors by setting the value to the [ActivePalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_ActivePalette) property. Based on the `ActivePalette` value, the respective base theme color items are displayed with its variants. The default value of `ActivePalette` property is `Office`.
 
-![Displaying all theme palettes](Working-with-SfColorPalette_images/themepalette.jpg)
+![WinUI ColorPalette displays Various Theme Palettes](Working-with-SfColorPalette_images/winui-colorpalette-theme-palette.jpg)
 
 {% tabs %}
 {% highlight xaml %}
@@ -157,7 +157,7 @@ colorPalette.ActivePalette = ColorPaletteNames.Yellow;
 {% endhighlight %}
 {% endtabs %}
 
-![SfColorPalette with yellow theme colors](Working-with-SfColorPalette_images/ActivePalatte.png)
+![WinUI ColorPalette with Yellow Theme Color](Working-with-SfColorPalette_images/winui-colorpalette-theme-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -226,7 +226,7 @@ colorPalette.StandardColors.ShowColorShades = true;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette with own color items](Working-with-SfColorPalette_images/CustomColor.png)
+![WinUI ColorPalette with Custom Colors](Working-with-SfColorPalette_images/winui-colorpalette-custom-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
 
@@ -248,7 +248,7 @@ colorPalette.ShowMoreColorsButton = true;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette with more color dialog](Getting-Started_images/MoreColorWindow.gif)
+![WinUI ColorPalette with More Color Window](Getting-Started_images/winui-colorpalette-more-color-window.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -273,7 +273,7 @@ var recentColors = colorPalette.RecentColors;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette with recently used color items](Getting-Started_images/Recentcolors.png)
+![WinUI ColorPalette with Recent Color Items](Getting-Started_images/winui-colorpalette-recent-colors.png)
 
 ## Select transparent color 
 
@@ -294,13 +294,13 @@ colorPalette.ShowNoColorButton = true;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette selecting a transparent color](Working-with-SfColorPalette_images/ShowNoColorButton.png)
+![Selecting Transparent Color in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-transparent-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
 ## Selected color changed notification
 
-You will be notified when selected color changed in `ColorPalette` by using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_SelectedBrushChanged) event. The `SelectedBrushChanged` event contains the old and newly selected color values in the [OldBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedBrushChangedEventArgs_OldBrush) and [NewBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedBrushChangedEventArgs_NewBrush) properties.
+You will be notified when selected color changed in `Color Palette` by using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_SelectedBrushChanged) event. The `SelectedBrushChanged` event contains the old and newly selected color values in the [OldBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedBrushChangedEventArgs_OldBrush) and [NewBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedBrushChangedEventArgs_NewBrush) properties.
 
 {% tabs %}
 {% highlight xaml %}

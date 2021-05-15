@@ -9,7 +9,7 @@ documentation: ug
 
 # Standard Colors in WinUI Color Palette
 
-This section explains the different standard colors available in the [ColorPalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html) and  how to choose the colors and its panel customizations.
+This section explains the different standard colors available in the [Color Palette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html) and  how to choose the colors and its panel customizations.
 
 ## Select a color from built-in standard colors
 
@@ -28,7 +28,7 @@ SfColorPalette colorPalette= new SfColorPalette();
 {% endhighlight %}
 {% endtabs %}
 
-![Yellow color selected from standard colors palette](Working-with-SfColorPalette_images/StandardPalatte.png)
+![Selecting Color from Standard Colors in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-standard-colors.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -39,7 +39,7 @@ If you want to allow the user to select a color from own standard colors, add th
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfColorPalette Name="ColorPalette">
+<editors:SfColorPalette Name="colorPalette">
     <editors:SfColorPalette.StandardColors>
         <editors:StandardPaletteModel ShowColors="True" 
                                       ShowColorShades="True"
@@ -78,15 +78,15 @@ colors.Add(new ColorModel() { Color = Colors.Yellow, Tooltip = "Custom Yellow" }
 colors.Add(new ColorModel() { Color = Colors.Orange, Tooltip = "Custom Orange" });
 colors.Add(new ColorModel() { Color = Colors.Red, Tooltip = "Custom Red" });
 
-ColorPalette.StandardColors.Colors = colors;
-ColorPalette.StandardColors.Header = "Custom Standard Colors";
-ColorPalette.StandardColors.ShowColors = true;
-ColorPalette.StandardColors.ShowColorShades = true;
+colorPalette.StandardColors.Colors = colors;
+colorPalette.StandardColors.Header = "Custom Standard Colors";
+colorPalette.StandardColors.ShowColors = true;
+colorPalette.StandardColors.ShowColorShades = true;
 
 {% endhighlight %}
 {% endtabs %}
 
-![Own colors added in the standard color palette](Working-with-SfColorPalette_images/CustomstandardColors.png)
+![WinUI ColorPalette displays Custom Color wih Standard Color](Working-with-SfColorPalette_images/CustomstandardColors.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
 
@@ -111,7 +111,7 @@ colorPalette.StandardColors.ShowColorShades = true;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette shows the standard color wih its variants](Working-with-SfColorPalette_images/StandardColors_ShowColorShades.png)
+![WinUI ColorPalette displays Standard Colors](Working-with-SfColorPalette_images/winui-colorpalette-with-standard-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -138,7 +138,7 @@ colorPalette.StandardColors.ShowColorShades = false;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette hides the standard color and its variants](Working-with-SfColorPalette_images/StandardColors_ShowColorShades1.png)
+![Hide Standard Colors in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-hide-standard-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -163,7 +163,7 @@ colorPalette.StandardColors.Header = "My standard colors";
 {% endhighlight %}
 {% endtabs %}
 
-![Header text of standard color palette is changed](Working-with-SfColorPalette_images/StandardColors_Header.png)
+![Changing Header Text of Standard Color in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-standard-color-header-text.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
 
@@ -174,7 +174,7 @@ If you want to hide header of the standard color palette, use the `StandardColor
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfColorPalette Name="ColorPalette">
+<editors:SfColorPalette Name="colorPalette">
     <editors:SfColorPalette.StandardColors>
         <editors:StandardPaletteModel ShowHeader="False"/>
     </editors:SfColorPalette.StandardColors>
@@ -188,7 +188,7 @@ colorPalette.StandardColors.ShowHeader = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Header of standard color palette is collapsed](Working-with-SfColorPalette_images/StandardColors_ShowHeader.png)
+![Hide Header of Standard Color in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-hide-standard-color-header.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -222,7 +222,7 @@ N> The DataContext of `StandardColors.HeaderTemplate` is `StandardColors.Header`
 {% endhighlight %}
 {% endtabs %}
 
-![Customized UI for standard color palette header](Working-with-SfColorPalette_images/StandardColors_HeaderTemplate.png)
+![Customizing Standard Color Header in WinUI ColorPalette](Working-with-SfColorPalette_images/winui-colorpalette-standard-color-header-customization.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
 
@@ -249,6 +249,6 @@ colorPalette.StandardColors.ShowColorShades = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Changed the spacing between base standard color and its variants](Working-with-SfColorPalette_images/ColorShadesSpacing1.png)
+![WinUI ColorPalette displays Spacing between Base Standard Color and its Variants](Working-with-SfColorPalette_images/winui-colorpalette-spacing-between-standard-colors.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
