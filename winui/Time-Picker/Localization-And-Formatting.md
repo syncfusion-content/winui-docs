@@ -37,6 +37,8 @@ sfTimePicker.CalendarIdentifier = "24HourClock";
 
 ![Time Picker calendar type changed to Hebrew](Dropdown-Time-Spinner_images/ClockIdentifier.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/Localization)
+
 ## Change flow direction
 
 You can change the flow direction of the `Time Picker` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
@@ -85,6 +87,8 @@ N> `Time Picker` control updates the flow direction visually based on the `Langu
 
 N> When `Language` and `FlowDirection` properties are set, `FlowDirection` property have higher precedence.
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/Localization)
+
 ## Change time display format
 
  You can edit and display the selected time with various formatting like hour, minutes, seconds and meridiem formats by using the [`FormatString`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_FormatString) property. The default value of `FormatString` property is `hh:mm tt`.
@@ -108,20 +112,19 @@ sfTimePicker.FormatString= "HH:mm";
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
-## Edit time using mask editing
+## Edit time using mask mode
 
 By default ‘Mask’ editing is enabled, which ensure that it contains only valid value. As soon as in input is given, the value is validated and correction is done immediately. Once input is completed for a field, cursor moves to next field automatically.
 
-Based on the `ClockIdentifier` and your input values, hour and minute field values are automatically corrected. 
+Based on the `FormatString` and your input values, hour and minute field values are automatically corrected. 
 
 For example,
-* If you enter values between `13-19` into the `12HourClock` hour field, it will add last input digit(3-9) in the hour field and move the cursor to the next field. If you try to enter input in hour field that is greater than `19`, it will add first digit in hour field and last digit added into next field.
 
-![Time Picker valid and corrects the hour field based on the input using mask editing.](Getting-Started_images/Hour_Mask_editing.png)
-
-* If you try to enter input in minute field that is greater than `59`, it will add first digit in minute field and move the cursor to the next field.
-
-![Time Picker valid and corrects the minute field based on the input using mask editing.](Getting-Started_images/Minute_Mask_editing.png)
+|    Default Masking   |    Input     |     Output      |
+|:---------------------|:-------------|:---------------:|
+| If you try to enter values between `13-19` into the `12HourClock` hour field, it will add last input digit(3-9) in the hour field and move the cursor to the next field. | 15 (in hour field)   | <img src="Getting-Started_images/Hour_Mask_editing.png" alt="Time Picker valid and corrects the hour field based on the input using mask editing"/> |
+| If you try to enter input in hour field that is greater than `19`, it will add first digit in hour field and last digit added into next field. | 48 (in hour field)   | <img src="Getting-Started_images/Hour_Mask_editing_1.png" alt="Time Picker valid and corrects the hour field based on the input using mask editing"/> | 
+| If you try to enter input in minute field that is greater than `59`, it will add first digit in minute field and move the cursor to the next field. |87 (in minute field) | <img src="Getting-Started_images/Minute_Mask_editing.png" alt="Time Picker valid and corrects the minute field based on the input using mask editing."/> | 
 
 {% tabs %}
 {% highlight xaml %}

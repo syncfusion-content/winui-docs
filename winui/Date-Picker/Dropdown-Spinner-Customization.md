@@ -67,6 +67,8 @@ You can customize all the dropdown date spinner cells by using the `ItemContaine
 
 ![Date Picker with customized dropdown date spinner cells](Dropdown-Date-Spinner_images/ItemContainerStyle.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/SpinnerCustomUI)
+
 ## Customize the cell's appearance in dropdown spinner
 
 You can change the UI of specific date, month or year cells in dropdown spinner by using the `ItemTemplateSelector` property. The `DataContext` of `ItemTemplateSelector` is `SpinnerItem`.

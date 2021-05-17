@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Solid Colors in WinUI Color Picker control | Syncfusion
-description: Learn here all about Solid Colors feature of Syncfusion WinUI Color Picker control with changing opacity support.
+title: Solid Color Selection in WinUI Color Picker control | Syncfusion
+description: Learn here all about solid color selection features of Syncfusion WinUI Color Picker control with changing opacity support.
 platform: WinUI
 control: SfColorPicker
 documentation: ug
 ---
 
-# Solid Colors in WinUI Color Picker
+# Solid Color Selection in WinUI Color Picker
 
-This section explains how to select a solid color from different color models, how to modify their individual properties in [ColorPicker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html).
+This section explains how to select a solid color from different color models, how to modify their individual properties in [Color Picker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html).
 
 ## What is solid color?
 
@@ -34,7 +34,7 @@ colorPicker.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 {% endhighlight %}
 {% endtabs %}
 
-![Solid color selected from ColorPicker](Getting-Started_images/select_Solidcolor.png)
+![Select Solid Color in WinUI Color Picker](Getting-Started_images/winui-colorpicker-select-solid-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
@@ -56,13 +56,13 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Solid color brush selected at runtime](Getting-Started_images/Solidcolor.png)
+![Select Solid color at runtime in WinUI Color Picker](Getting-Started_images/winui-colorpicker-solid-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
 ## Change opacity of solid brush
 
-You can change opacity of the selected solid color brush by using the A-Alpha value editor or delicate slider in the `ColorPicker`. You can hide the A-Alpha slider by using the [AlphaInputOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_AlphaInputOptions) property value as `TextInput`. The default value of the `AlphaInputOptions` property is `All`.
+You can change opacity of the selected solid color brush by using the A-Alpha value editor or delicate slider in the `Color Picker`. You can hide the A-Alpha slider by using the [AlphaInputOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_AlphaInputOptions) property value as `TextInput`. The default value of the `AlphaInputOptions` property is `All`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -80,13 +80,13 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Show opacity value editor](Getting-Started_images/AlphaInputOptions.png)
+![WinUI Color Picker displays Opacity Value Editor](Getting-Started_images/winui-colorpicker-opacity-value-editor.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
 ## Switch between color channels
 
-The `ColorPicker` contains different color channels namely `RGB`, `HSV`, `HSL` and `CMYK`. You can select any color model by setting value the [ColorChannelOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_ColorChannelOptions) property or select it from the drop down options. The default value of `ColorChannelOptions` property is `RGB`.
+The `Color Picker` contains different color channels namely `RGB`, `HSV`, `HSL` and `CMYK`. You can select any color model by setting value the [ColorChannelOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_ColorChannelOptions) property or select it from the drop down options. The default value of `ColorChannelOptions` property is `RGB`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -105,7 +105,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Different solid color models in ColorPicker](Select_Solid_Colors_images/ColorChannels.gif)
+![WinUI Color Picker displays different Solid Color Modes](Select_Solid_Colors_images/winui-colorpicker-solid-color-modes.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
@@ -129,7 +129,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Different input options for solid color channel](Select_Solid_Colors_images/ColorChannelInputOptions.jpg)
+![WinUI Color Picker displays Solid Color Input Options](Select_Solid_Colors_images/winui-colorpicker-solid-color-options.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
@@ -153,7 +153,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Hide the hexadecimal value editor](Getting-Started_images/IsHexInputVisible.png)
+![Hide Hexadecimal Value Editor in WinUI Color Picker](Getting-Started_images/winui-colorpicker-hide-hexadecimal-value-editor.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
@@ -177,13 +177,13 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Expand or collapse the Color Editors visibility](Select_Solid_Colors_images/ColorEditorsVisibilityMode.jpg)
+![Expand or Collapse Color Editors Visibility in WinUI Color Picker](Select_Solid_Colors_images/winui-colorpicker-expand-or-collpase-color-visibility.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
 ## Selected brush changed notification
 
-You will be notified when selected solid color brush changed in `ColorPicker` by  using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrushChanged) events. You can get the old and newly selected brush by using the [OldBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) and [NewBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) properties.
+You will be notified when selected solid color brush changed in `Color Picker` by  using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrushChanged) events. You can get the old and newly selected brush by using the [OldBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) and [NewBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) properties.
 
 {% tabs %}
 {% highlight XAML %}

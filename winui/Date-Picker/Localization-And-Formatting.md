@@ -48,6 +48,8 @@ N> `Date Picker` control updates the flow direction visually based on the `Calen
 
 N> When `CalendarIdentifier` and `FlowDirection` properties are set, `FlowDirection` property have higher precedence.
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/Localization)
+
 ## Change flow direction
 
 You can change the flow direction of the `Date Picker` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
@@ -96,6 +98,7 @@ N> `Date Picker` control updates the flow direction visually based on the `Langu
 
 N> When `Language` and `FlowDirection` properties are set, `FlowDirection` property have higher precedence.
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/Localization)
 
 ## Change editor display format
 
@@ -145,21 +148,19 @@ Here, you can only able to select the date and month value from the dropdown spi
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
-## Edit date using mask editing
+## Edit date using mask mode
 
 By default ‘Mask’ editing is enabled, which ensure that it contains only valid value. As soon as in input is given, the value is validated and correction is done immediately. Once input is completed for a field, cursor moves to next field automatically.
 
-Based on your input values, date, month and year field values are automatically corrected. 
+Based on the `FormatString` and your input values, date, month and year field values are automatically corrected. 
 
 For example,
-* If you enter `29` into the date field and `2(Feb)` in the month field, the year field value automatically changed to the upcoming leap year.
 
-![Date Picker valid and corrects the year field based on the date using mask editing.](Getting-Started_images/Leapyear_Mask_editing.png)
-
-* If you enter values between `13-19` the month field, it will add last input digit(3-9) in the month field and move the cursor to the next field. If you try to enter input in month field that is greater than `19`, it will add first digit in month field and last digit added into next field.
-
-![Date Picker valid and corrects the month field based on the input using mask editing.](Getting-Started_images/Month_Mask_editing.png)
-
+|    Default Masking   |    Input     |     Output      |
+|:---------------------|:-------------|:---------------:|
+| If you enter `29` into the date field and `2(Feb)` in the month field, the year field value automatically changed to the upcoming leap year. | 29 (in date field) | <img src="Getting-Started_images/Leapyear_Mask_editing.png" alt="Date Picker valid and corrects the year field based on the date using mask editing."/> |
+| If you try to enter values between `13-19` the month field, it will add last input digit(3-9) in the month field and move the cursor to the next field. | 18 (in month field)  | <img src="Getting-Started_images/Month_Mask_editing.png" alt="Date Picker valid and corrects the month field based on the input using mask editing."/> |
+| If you try to enter input in month field that is greater than `19`, it will add first digit in month field and last digit added into next field. | 58 (in month field) | <img src="Getting-Started_images/Month_Mask_editing_1.png" alt="Date Picker valid and corrects the month field based on the input using mask editing."/> |
 
 {% tabs %}
 {% highlight xaml %}
