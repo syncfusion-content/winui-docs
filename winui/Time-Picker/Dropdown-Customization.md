@@ -45,6 +45,8 @@ You can customize the UI of dropdown button by using the [`DropDownButtonTemplat
 
 ![Time Picker with customized dropdown button](Dropdown-Time-Spinner_images/DropDownButtonTemplate.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/SpinnerCustomUI)
+
 ## Hide dropdown button
 
 You can hide the dropdown button in `Time Picker` by setting the [`ShowDropDownButton`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as `false`. The default value of `ShowDropDownButton` property is `true`.
@@ -115,6 +117,8 @@ sfTimePicker.IsOpen = true;
 {% endtabs %}
 
 ![Time Picker opens the dropdown date spinner programmatically](Dropdown-Time-Spinner_images/IsOpen.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/Localization)
 
 ## Change dropdown height
 

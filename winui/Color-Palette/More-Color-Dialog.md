@@ -7,9 +7,9 @@ control: SfColorPalette
 documentation: ug
 ---
 
-## Choosing a color from MoreColors dialog in WinUI ColorPalette
+## Choosing a color from MoreColors dialog in WinUI Color Palette
 
-In addition to colors in `Theme colors` and `Standard colors`, `MoreColor` feature allows you to select wide range of color options from the WinUI [ColorPalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html). You can select any custom color with various opacity level based on requirement.
+In addition to colors in `Theme colors` and `Standard colors`, `MoreColor` feature allows you to select wide range of color options from the WinUI [Color Palette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html). You can select any custom color with various opacity level based on requirement.
 
 ## Select a color from MoreColor dialog
 
@@ -29,7 +29,7 @@ colorPalette.ShowMoreColorsButton = true;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette with more color dialog](Getting-Started_images/MoreColorWindow.gif)
+![WinUI Color Palette with More Color Window](Getting-Started_images/winui-colorpalette-more-color-window.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -51,6 +51,6 @@ colorPalette.ShowMoreColorsButton = false;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette hides the more color option](Working-with-SfColorPalette_images/ShowMoreColorsButton.png)
+![Hide More Color Option in WinUI Color Palette](Working-with-SfColorPalette_images/winui-colorpalette-hide-more-color-option.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
