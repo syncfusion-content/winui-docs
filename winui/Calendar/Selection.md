@@ -129,6 +129,8 @@ sfCalendar.SelectionMode = CalendarSelectionMode.Range;
 
 ![Date range selection in WinUI Calendar](Getting-Started_images/date-range-selection.png)
 
+N> Download demo application from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/Selection)
+
 ## Highlight today and selected dates
 
 You can highlight the today and selected date using [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionHighlightMode) property to update the background and border of the dates. The default value of `SelectionHighlightMode` property is **Outline**.
@@ -149,6 +151,8 @@ sfCalendar.SelectionHighlightMode = SelectionHighlightMode.Filled;
 {% endtabs %}
 
 ![Highlight today and selected dates in WinUI Calendar](Selection_images/selectionhighlightmode.png)
+
+N> Download demo application from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/Selection)
 
 ## Change shape of today and selected date
 

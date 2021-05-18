@@ -69,7 +69,7 @@ namespace GettingStarted
 
 ![Calendar Date Picker control added in the application](Getting-Started_images/Calendardatepicker_Added.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Getting_started)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/GettingStarted)
 
 ## Select the date programmatically
 
@@ -107,7 +107,7 @@ SfCalendarDatePicker sfCalendarDatePicker= new SfCalendarDatePicker();
 
 ![Calendar Date Picker displaying selected value](Getting-Started_images/CalendarDatePicker.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Getting_started)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/GettingStarted)
 
 ## Setting null value
 

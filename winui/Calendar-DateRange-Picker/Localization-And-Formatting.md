@@ -47,6 +47,8 @@ sfCalendarDateRangePicker.CalendarIdentifier = "HebrewCalendar";
 
 ![Displaying Hebrew-type WinUI Calendar DateRange Picker.](Getting-Started_images/Hebrew-calendarIdentifier.png)
 
+N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting)
+
 ## Change the language
 
 If you want to localize the dropdown calendar, use the `Language` property. The default value of `Language` property is **en-US**.
@@ -68,6 +70,8 @@ sfCalendarDateRangePicker.Language = "ar-AR";
 
 ![Displaying arabic cultured WinUI Calendar DateRange Picker.](Getting-Started_images/LanguageView.png)
 
+N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting)
+
 ## Change editor display format
 
 You can modify and display the selected date range with various formatting like date, month and year formats by using the [`FormatString`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_FormatString) property. The default value of `FormatString` property is **{0:d}-{1:d}**.
@@ -87,6 +91,8 @@ sfCalendarDateRangePicker.FormatString= "{0:D}-{1:D}";
 {% endtabs %}
 
 ![Calendar DateRange Picker selected date with month format](Getting-Started_images/FormatString.png)
+
+N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting)
 
 ## Change calendar display format
 
@@ -117,6 +123,7 @@ sfCalendarDateRangePicker.MonthHeaderFormat = "{month.abbreviated} {year.abbrevi
 
 ![Displaying full month and abbreviated year format in WinUI Calendar DateRange Picker.](Getting-Started_images/dateformat.gif)
 
+N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting)
 
 ## First day of week
 
@@ -161,3 +168,5 @@ sfCalendarDateRangePicker.FlowDirection = FlowDirection.RightToLeft;
 {% endtabs %}
 
 ![Calendar DateRange Picker flow direction changed to right to left](Dropdown-Calendar_images/FlowDirection.png)
+
+N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting)

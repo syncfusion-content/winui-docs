@@ -36,6 +36,8 @@ N> When `MinDisplayMode` property value is **Year** and `MinDate` value is **15/
 
 N> The `MinDate` property value should not be greater than the `MaxDate` property value.
 
+N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Restriction)
+
 ## Disable dates using BlackoutDates
 
 You can block particular dates from the date range selection, using the [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_BlackoutDates) collection property. The default value of `BlackoutDates` property is **null**.
@@ -189,5 +191,6 @@ sfCalendarDateRangePicker.MinDatesCountInRange = 28;
 
 ![Setting MinDaysCountInRange value based on MinDisplayMode](Navigate-Between-Views_images/mindisplaymode-mindayscountinrange.png)
 
+N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/blob/main/Samples/Selection/Selection)
 
 
