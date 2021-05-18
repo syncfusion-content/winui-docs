@@ -191,6 +191,6 @@ sfCalendarDateRangePicker.MinDatesCountInRange = 28;
 
 ![Setting MinDaysCountInRange value based on MinDisplayMode](Navigate-Between-Views_images/mindisplaymode-mindayscountinrange.png)
 
-N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/blob/main/Samples/Selection/Selection)
+N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/blob/main/Samples/Selection)
 
 
