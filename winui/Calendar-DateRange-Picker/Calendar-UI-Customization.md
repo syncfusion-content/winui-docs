@@ -204,6 +204,8 @@ public class EventDataConverter : IValueConverter
 
 ![Custom UI of specific date cells in Calendar DateRange Picker](DropDown-Calendar_images/Customization.png)
 
+N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/CustomUI)
+
 ## Customize using theme keys
 
 You can customize the colors of day names and headers of month, year, decade and century by changing the theme keys values in a ResourceDictionary used in the `Calendar` control and by using the [`AttachedFlyout`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
@@ -321,3 +323,5 @@ You can customize the colors of day names and headers of month, year, decade and
 {% endtabs %}
 
 ![Customize calendar by theme keys in WinUI Calendar DateRange Picker](Calendar-UI-Customization_images/customize-theme-keys.png)
+
+N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/CustomUI)
