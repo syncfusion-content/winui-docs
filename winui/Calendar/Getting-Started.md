@@ -210,7 +210,7 @@ You can restrict users from:
 * Selecting a date or dates from blocked dates using [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_BlackoutDates) property.
 * Selecting a date or dates from specifically blocked set of dates (example : blocking weekend dates) using [`ItemPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_ItemPrepared) event. 
 
-For further reference [click here](restrict-date-selection).
+For further details refer [Restrict Date Selection](restrict-date-selection).
 
 ## Navigation between views
 
@@ -221,4 +221,4 @@ For further reference [click here](restrict-date-selection).
 
 * You can navigate within a view horizontally or vertically using [`NavigationDirection`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_NavigationDirection) property. By default, navigation direction is vertical within a view either by mouse scrolling or by navigation buttons. 
 
-For further reference [click here](navigation).
+For further details refer [Navigation](navigation).

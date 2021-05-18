@@ -69,7 +69,7 @@ namespace GettingStarted
 
 ![Calendar Date Picker control added in the application](Getting-Started_images/Calendardatepicker_Added.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Getting_started)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/GettingStarted)
 
 ## Select the date programmatically
 
@@ -107,7 +107,7 @@ SfCalendarDatePicker sfCalendarDatePicker= new SfCalendarDatePicker();
 
 ![Calendar Date Picker displaying selected value](Getting-Started_images/CalendarDatePicker.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Getting_started)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/GettingStarted)
 
 ## Setting null value
 
@@ -325,7 +325,7 @@ You can restrict users from:
 * Selecting a date from blocked dates using [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_BlackoutDates) property.
 * Selecting a date from specifically blocked set of dates (example : blocking weekend dates) using [`ItemPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_ItemPrepared) event. 
 
-For further reference [click here](date-selection-and-restrict).
+For further details refer [Date Selection and Restriction](date-selection-and-restriction).
 
 ## Navigation between views
 
@@ -334,4 +334,4 @@ For further reference [click here](date-selection-and-restrict).
 
     ![Navigation between views](Getting-Started_images/View-Navigation.gif)
 
-For further reference [click here](navigation).
+For further details refer [Navigation](navigation).

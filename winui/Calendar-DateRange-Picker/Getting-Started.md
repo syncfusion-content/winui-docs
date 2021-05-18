@@ -91,6 +91,8 @@ namespace GettingStarted
 
 ![Calendar DateRange Picker control added in the application](Getting-Started_images/Overview_img1.png)
 
+N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/GettingStarted)
+
 ## Select the date range programmatically
 
 You can set or change the selected date range programmatically by using [`SelectedRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_SelectedRange) property. By default, the `SelectedRange` property value is **null**.
@@ -105,6 +107,8 @@ sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(new DateTimeOf
 {% endtabs %}
 
 ![Calendar DateRange Picker displaying the selected range dates](Getting-Started_images/SelectedRange.png)
+
+N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Selection)
 
 ## Select date range interactively
 
@@ -147,6 +151,8 @@ sfCalendarDateRangePicker.SelectedRange = null;
 {% endtabs %}
 
 ![Calendar DateRange Picker displaying watermark text](Getting-Started_images/PlaceHolderText.png)
+
+N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Selection)
 
 ## Selection changed notification
 
@@ -212,6 +218,8 @@ sfCalendarDateRangePicker.ShowDropDownButton = false;
 
 ![Calendar DateRange Picker hides the dropdown button](Dropdown-Calendar_images/ShowDropDownButton.png)
 
+N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/DropDown)
+
 ## Show the submit buttons
 
 You can show the submit buttons in dropdown of `Calendar DateRange Picker` by setting the [`ShowSubmitButtons`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as true. The default value of `ShowSubmitButtons` property is **false**.
@@ -235,6 +243,7 @@ sfCalendarDateRangePicker.ShowSubmitButtons = true;
 
 ![Calendar DateRange Picker shows the submit button](Dropdown-Calendar_images/CalendarDateRangePicker-Show_SpinButton.png)
 
+N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/DropDown)
 
 ## Restrict date range selection
 
@@ -243,7 +252,7 @@ You can restrict users from:
 * Selecting date range from blocked dates using [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_BlackoutDates) property.
 * Selecting date range from specifically blocked set of dates (example : blocking weekend dates) using [`ItemPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_ItemPrepared) event. 
 
-For further reference [click here](restrict-daterange-selection).
+For further details refer [Restrict DateRange Selection](restrict-daterange-selection).
 
 ## Navigation in dropdown
 
@@ -252,4 +261,4 @@ For further reference [click here](restrict-daterange-selection).
 
     ![Navigation between views](Getting-Started_images/View-Navigation.gif)
 
-For further reference [click here](navigation).
+For further details refer [Navigation](navigation).

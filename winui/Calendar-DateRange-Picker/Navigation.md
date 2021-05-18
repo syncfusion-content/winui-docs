@@ -43,6 +43,8 @@ N> When `MinDisplayMode` property value is **Year** and `MinDate` value is **15/
 
 ![Navigation between month and century view in WinUI Calendar DateRange Picker](Getting-Started_images/Restrict_View_Navigation.gif)
 
+N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Restriction)
+
 ## Selection based on view restriction
 
 You can restrict users to select date range within specific views (example : choosing manufactured and expiry date of product) in `Calendar DateRange Picker` control using the `MinDisplayMode` and `MaxDisplayMode` properties.
@@ -68,6 +70,8 @@ sfCalendarDateRangePicker.FormatString = "{0:MM/yyyy}-{1:MM/yyyy}";
 {% endtabs %}
 
 ![Selection within restriction in WinUI Calendar DateRange Picker](Navigate-Between-Views_images/product-manufacture-expiry-date.gif)
+
+N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Restriction)
 
 ## Navigation by keyboard
 
