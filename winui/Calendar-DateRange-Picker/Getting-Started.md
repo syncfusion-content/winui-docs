@@ -252,7 +252,7 @@ You can restrict users from:
 * Selecting date range from blocked dates using [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_BlackoutDates) property.
 * Selecting date range from specifically blocked set of dates (example : blocking weekend dates) using [`ItemPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_ItemPrepared) event. 
 
-For further reference [click here](/restrict-daterange-selection).
+For further reference go to [Restrict DateRange Selection](restrict-daterange-selection).
 
 ## Navigation in dropdown
 
@@ -261,4 +261,4 @@ For further reference [click here](/restrict-daterange-selection).
 
     ![Navigation between views](Getting-Started_images/View-Navigation.gif)
 
-For further reference [click here](/navigation).
+For further reference go to [Navigation](navigation).
