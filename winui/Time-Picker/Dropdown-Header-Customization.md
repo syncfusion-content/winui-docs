@@ -79,7 +79,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 If you want to hide the dropdown hour, minute and meridiem field spinner's column headers, use the [`ShowColumnHeaders`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_ShowColumnHeaders) property value as `false`. The default value of `ShowColumnHeaders` property is `true`.
 
-N> To customize the column headers, refer the [Customize the columns in dropdown spinner](https://help.syncfusion.com/winui/time-picker/spinner-customization#customize-the-columns-in-dropdown-spinner) topic.
+N> To customize the column headers, refer the [Customize the columns in dropdown spinner](https://help.syncfusion.com/winui/time-picker/dropdown-spinner-customization#customize-the-columns-in-dropdown-spinner) topic.
 
 {% tabs %}
 {% highlight XAML %}
