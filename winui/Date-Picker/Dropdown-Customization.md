@@ -45,7 +45,7 @@ You can customize the UI of dropdown button by using the [`DropDownButtonTemplat
 {% endhighlight %}
 {% endtabs %}
 
-![Date Picker with customized dropdown button](Dropdown-Date-Spinner_images/DropDownButtonTemplate.png)
+![Customizing Dropdown Button in WinUI DatePicker](Dropdown-Date-Spinner_images/winui-datepicker-dropdown-button-customization.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/SpinnerCustomUI)
 
@@ -70,7 +70,7 @@ sfDatePicker.ShowDropDownButton = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Date Picker hides the dropdown button](Dropdown-Date-Spinner_images/ShowDropDownButton.png)
+![Hide Dropdown Button in WinUI DatePicker](Dropdown-Date-Spinner_images/winui-datepicker-hide-dropdown-button.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -95,7 +95,7 @@ sfDatePicker.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAlignedLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![Alignment of dropdown date spinner is changed to BottomEdgeAlignedLeft in WinUI Date Picker](Dropdown-Date-Spinner_images/DropDownPlacement.png)
+![Changing Dropdown Alignment of Dropdown Date Spinner in WinUI DatePicker](Dropdown-Date-Spinner_images/winui-datepicker-dropdown-placement.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -118,7 +118,7 @@ sfDatePicker.IsOpen = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Date Picker opens the dropdown date spinner programmatically](Dropdown-Date-Spinner_images/IsOpen.png)
+![WinUI DatePicker displays Dropdown Date Spinner Programmatically](Dropdown-Date-Spinner_images/winui-datepicker-open-dropdown.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/Localization)
 
@@ -141,7 +141,7 @@ sfDatePicker.DropDownHeight = 200;
 {% endhighlight %}
 {% endtabs %}
 
-![Date Picker with customized dropdown height](Dropdown-Date-Spinner_images/DropDownHeight.gif)
+![Changing Dropdown Height of WinUI DatePicker](Dropdown-Date-Spinner_images/winui-datepicker-dropdown-height.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -164,7 +164,7 @@ sfDatePicker.VisibleItemsCount = 5
 {% endhighlight %}
 {% endtabs %}
 
-![Number of dates to be shown in the dropdown is changed in WinUI Date Picker](Dropdown-Date-Spinner_images/VisibleItemsCount.png)
+![Changing Number of Dates in Dropdown in WinUI DatePicker](Dropdown-Date-Spinner_images/winui-datepicker-visible-count.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 

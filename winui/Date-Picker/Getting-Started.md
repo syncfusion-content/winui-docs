@@ -13,7 +13,7 @@ This section explains the steps required to add the WINUI [Date Picker](https://
 
 ## Structure of Date Picker control
 
-![Structure of WinUI Date Picker control](Getting-Started_images/Structure.png)
+![Structure of WinUI DatePicker](Getting-Started_images/winui-datepicker-structure.png)
 
 ## Creating an application with WinUI Date Picker
 
@@ -87,7 +87,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![Date Picker control added in the application](Getting-Started_images/DatePicker_Added.png)
+![WinUI DatePicker Control](Getting-Started_images/winui-datepicker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/Getting_Started)
 
@@ -104,7 +104,7 @@ sfDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 10, 29));
 {% endhighlight %}
 {% endtabs %}
 
-![Date Picker displaying selected value](Getting-Started_images/selectedDate.png)
+![WinUI DatePicker displays Selected Date](Getting-Started_images/winui-datepicker-with-selected-date.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -125,7 +125,7 @@ SfDatePicker sfDatePicker= new SfDatePicker();
 {% endhighlight %}
 {% endtabs %}
 
-![Date Picker displaying selected value](Getting-Started_images/selectedDateInteract.gif)
+![WinUI DatePicker displays Selected Date](Getting-Started_images/winui-datepicker-selected-date-interact.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/Getting_Started)
 
@@ -159,7 +159,7 @@ sfDatePicker.AllowNullValue = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Date Picker displaying null value](Getting-Started_images/AllowNullValue.png)
+![WinUI DatePicker displays Null Value](Getting-Started_images/winui-datepicker-null-value.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
@@ -186,7 +186,7 @@ sfDatePicker.AllowNullValue = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Date Picker displaying watermark text](Getting-Started_images/PlaceHolderText.png)
+![WinUI DatePicker displays Watermark Text](Getting-Started_images/winui-datepicker-watermark.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
