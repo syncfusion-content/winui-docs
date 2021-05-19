@@ -13,7 +13,7 @@ This section explains the steps required to add the [WinUI Time Picker](https://
 
 ## Structure of Time Picker control
 
-![Structure of WinUI Time Picker control](Getting-Started_images/Structure.png)
+![Structure of WinUI TimePicker](Getting-Started_images/winui-timepicker-structure.png)
 
 ## Creating an application with WinUI Time Picker
 
@@ -87,7 +87,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![Time Picker control added in the application](Getting-Started_images/TimePicker_Added.png)
+![WinUI TimePicker Control](Getting-Started_images/winui-timepicker-control.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/Getting_Started)
 
@@ -104,7 +104,7 @@ sfTimePicker.SelectedTime = new DateTimeOffset(new DateTime(2021, 10, 29, 10, 45
 {% endhighlight %}
 {% endtabs %}
 
-![Time Picker displaying the selected time](Getting-Started_images/SelectedTime.png)
+![WinUI TimePicker displays Selected Time](Getting-Started_images/winui-timepicker-selected-time.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -125,7 +125,7 @@ SfTimePicker sfTimePicker= new SfTimePicker();
 {% endhighlight %}
 {% endtabs %}
 
-![Time Picker displaying selected value](Getting-Started_images/selectedTimeinteratct.gif)
+![Changing Selected Time in WinUI TimePicker](Getting-Started_images/winui-timepicker-selected-time-interact.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/Getting_Started)
 
@@ -158,7 +158,7 @@ sfTimePicker.AllowNullValue = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Time Picker displaying the null value](Getting-Started_images/AllowNullValue.png)
+![WinUI TimePicker displays Null Value](Getting-Started_images/winui-timepicker-null-value.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
@@ -185,7 +185,7 @@ sfTimePicker.AllowNullValue = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Time Picker displaying watermark text](Getting-Started_images/PlaceHolderText.png)
+![WinUI TimePicker displays Watermark Text](Getting-Started_images/winui-timepicker-watermark.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
