@@ -135,7 +135,7 @@ You can restrict users from:
 * Selecting time within a specific minimum and maximum time limit using [`MinTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MinTime) and [`MaxTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MaxTime) properties.
 * Selecting a date from blocked dates using [`BlackoutTimes`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_BlackoutTimes) property.
 
-For further reference [click here](time-restriction).
+For further reference [Time Restriction](time-restriction).
 
 ## Setting null value
 
