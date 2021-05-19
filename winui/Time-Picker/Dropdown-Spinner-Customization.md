@@ -65,6 +65,8 @@ You can customize all the dropdown time spinner cells by using the `ItemContaine
 
 ![Time Picker with customized dropdown time spinner cells](Dropdown-Time-Spinner_images/ItemContainerStyle.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/SpinnerCustomUI)
+
 ## Customize the cell's appearance in dropdown spinner
 
 You can change the UI of specific hour, minutes or seconds cells in dropdown spinner by using the `ItemTemplateSelector` property. The `DataContext` of `ItemTemplateSelector` is `SfTimePicker`. 

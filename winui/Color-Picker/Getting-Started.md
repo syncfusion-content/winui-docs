@@ -9,13 +9,13 @@ documentation: ug
 
 # Getting Started with WinUI Color Picker
 
-This section describes how to create a [WinUI ColorPicker](https://www.syncfusion.com/winui-controls/color-picker) control in a WinUI application and overview of its basic functionalities.
+This section describes how to create a [WinUI Color Picker](https://www.syncfusion.com/winui-controls/color-picker) control in a WinUI application and overview of its basic functionalities.
 
-## Structure of ColorPicker control
+## Structure of Color Picker control
 
-![Structure of WinUI ColorPicker control](Getting-Started_images/Structure.png)
+![WinUI Color Picker](Getting-Started_images/winui-colorpicker.png)
 
-## Creating an application with WinUI ColorPicker
+## Creating an application with WinUI Color Picker
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
@@ -36,7 +36,7 @@ This section describes how to create a [WinUI ColorPicker](https://www.syncfusio
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid Name="grid">
-        <!--Adding ColorPicker control -->
+        <!--Adding Color Picker control -->
         <editors:SfColorPicker Name="colorPicker"/>
     </Grid>
 </Page>
@@ -56,7 +56,7 @@ namespace GettingStarted
         public MainPage()
         {
             this.InitializeComponent();
-            // Creating an instance of the ColorPicker control
+            // Creating an instance of the Color Picker control
             SfColorPicker colorPicker = new SfColorPicker();
 
             // Setting height and width to ColorPicker control
@@ -71,7 +71,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPicker control added in the application](Getting-Started_images/ColorPicker_Added.jpg)
+![WinUI Color Picker Control](Getting-Started_images/winui-colorpicker-control.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
@@ -94,7 +94,7 @@ colorPicker.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 {% endhighlight %}
 {% endtabs %}
 
-![Solid color selected from ColorPicker](Getting-Started_images/select_Solidcolor.png)
+![Selecting Solid Color in WinUI Color Picker](Getting-Started_images/winui-colorpicker-select-solid-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
@@ -117,13 +117,13 @@ colorPicker.ColorChannelOptions = ColorChannelOptions.HSV;
 {% endhighlight %}
 {% endtabs %}
 
-![Different solid color models in ColorPicker](Getting-Started_images/RGB.jpg)
+![WinUI Color Picker displays different Solid Color Modes](Getting-Started_images/winui-colorpicker-solid-color-modes.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
 ### Change opacity of solid brush
 
-You can change opacity of the selected solid color brush by using the A-Alpha value editor or delicate slider in the `ColorPicker`. You can hide the A-Alpha slider by using the [AlphaInputOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_AlphaInputOptions) property value as `TextInput`. The default value of the `AlphaInputOptions` property is `All`.
+You can change opacity of the selected solid color brush by using the A-Alpha value editor or delicate slider in the `Color Picker`. You can hide the A-Alpha slider by using the [AlphaInputOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_AlphaInputOptions) property value as `TextInput`. The default value of the `AlphaInputOptions` property is `All`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -139,7 +139,7 @@ colorPicker.AlphaInputOptions = ColorInputOptions.TextInput;
 {% endhighlight %}
 {% endtabs %}
 
-![Show opacity value editor](Getting-Started_images/AlphaInputOptions.png)
+![WinUI Color Picker displays Opacity Value Editor](Getting-Started_images/winui-colorpicker-opacity-value-editor.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
@@ -161,7 +161,7 @@ colorPicker.IsHexInputVisible = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Hide the hexadecimal value editor](Getting-Started_images/IsHexInputVisible.png)
+![Hide Hexadecimal Value Editor in WinUI Color Picker](Getting-Started_images/winui-colorpicker-hide-hexadecimal-value-editor.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
@@ -199,13 +199,13 @@ linearGradient.GradientStops.Add(
 linearGradient.GradientStops.Add(
     new GradientStop() { Color = Colors.LimeGreen, Offset = 1.0 });
 
-//Assigning a linear gradient brush to ColorPicker
+//Assigning a linear gradient brush to Color Picker
 colorPicker.SelectedBrush = linearGradient;
 
 {% endhighlight %}
 {% endtabs %}
 
-![Assigning a Linear Gradient brush to ColorPicker](Getting-Started_images/ColorPicker_select-a-LinearGradient.png)
+![Linear Gradient Color in WinUI Color Picker](Getting-Started_images/winui-colorpicker-linear-gradient-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectLinearGradientColors)
 
@@ -227,7 +227,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Selecting a linear gradient color brush](Getting-Started_images/lineargradient.gif)
+![Selecting Linear Gradient Color at runtime in WinUI Color Picker](Getting-Started_images/winui-colorpicker-linear-gradient-color-selection.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
@@ -269,13 +269,13 @@ radialGradient.GradientStops.Add(
 radialGradient.GradientStops.Add(
     new GradientStop() {Color=Colors.LimeGreen, Offset = 1.0 });
 
-//Assigning a radial gradient brush to ColorPicker
+//Assigning a radial gradient brush to Color Picker
 colorPicker.SelectedBrush = radialGradient;
 
 {% endhighlight %}
 {% endtabs %}
 
-![Assigning a Raidial Gradient brush to ColorPicker](Getting-Started_images/ColorPicker_select-a-RadialGradient.png)
+![Radial Gradient Color in WinUI Color Picker](Getting-Started_images/winui-colorpicker-radial-gradient-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectRadialGradientColors)
 
@@ -297,7 +297,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.RadialGradientBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Selecting a radial gradient color brush](Getting-Started_images/radialgradient.gif)
+![Select Radial Gradient Color at runtime in WinUI ColorPicker](Getting-Started_images/winui-colorpicker-radial-gradient-color-selection.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
@@ -319,21 +319,21 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush | BrushTypeOptio
 {% endhighlight %}
 {% endtabs %}
 
-![Allow only the solid and radial gradient brush mode](Getting-Started_images/BrushTypeOptions.jpg)
+![Enable Solid and Radial Gradient Color in WinUI Color Picker](Getting-Started_images/winui-colorpicker-solid-and-radial-gradient-color.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
 ### Switch between solid, linear and radial gradient brush mode interactively
 
-You can change the color selection mode directly at runtime by clicking on the corresponding `Solid`, `Linear` or `Radial` gradient brush mode drop down options which is placed in the top of the `ColorPicker` control.
+You can change the color selection mode directly at runtime by clicking on the corresponding `Solid`, `Linear` or `Radial` gradient brush mode drop down options which is placed in the top of the `Color Picker` control.
 
-![Switch between solid, linear and gradient brush mode](Getting-Started_images/ColorPicker_Switch_brushes.gif)
+![Switch between Solid, Linear and Gradient Color in WinUI Color Picker](Getting-Started_images/winui-colorpicker-switch-color-option.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
 ## Selected brush changed notification
 
-You will be notified when selected brush changed in `ColorPicker` by using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrushChanged) events. You can get the old and newly selected brush by using the [OldBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) and [NewBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) properties.
+You will be notified when selected brush changed in `Color Picker` by using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrushChanged) events. You can get the old and newly selected brush by using the [OldBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) and [NewBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) properties.
 
 {% tabs %}
 {% highlight XAML %}

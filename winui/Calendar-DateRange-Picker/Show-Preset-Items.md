@@ -159,3 +159,4 @@ privateprivate void ListBox_SelectionChanged(object sender, SelectionChangedEven
 
 ![Custom range selection in WinUI Calendar DateRange Picker](Preset-Items_images/preset-items-collection.gif)
 
+N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/PresetItems)
