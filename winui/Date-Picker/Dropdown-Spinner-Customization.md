@@ -40,7 +40,7 @@ sfDatePicker.ItemHeight = 50;
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown date spinner cell size changed](Dropdown-Date-Spinner_images/ItemWidth.png)
+![Changing Dropdown Date Spinner Cell Size of WinUI DatePicker](Dropdown-Date-Spinner_images/winui-datepicker-dropdown-size.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -65,7 +65,7 @@ You can customize all the dropdown date spinner cells by using the `ItemContaine
 {% endhighlight %}
 {% endtabs %}
 
-![Date Picker with customized dropdown date spinner cells](Dropdown-Date-Spinner_images/ItemContainerStyle.png)
+![Customizing Dropdown Date Spinner Cells of WinUI DatePicker](Dropdown-Date-Spinner_images/winui-datepicker-cell-style.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/SpinnerCustomUI)
 
@@ -187,7 +187,7 @@ public class DateItemTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Custom UI of specific date cells in dropdown spinner](Dropdown-Date-Spinner_images/ItemTemplateSelector.png)
+![Customizing Specific Date Cells of DropDown Spinner in WinUI DatePicker](Dropdown-Date-Spinner_images/winui-datepicker-cells-customization.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/CustomUI)
 
@@ -255,6 +255,6 @@ private void SfDatePicker_DateFieldPrepared(object sender, DateTimeFieldPrepared
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown spinner date field elements customized using DateFieldPrepared event](Dropdown-Date-Spinner_images/DateFieldPrepared.png)
+![Customizing Column of Dropdown Spinner Date in WinUI DatePicker](Dropdown-Date-Spinner_images/winui-datepicker-column-customization.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateFieldPrepared)

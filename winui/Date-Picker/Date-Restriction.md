@@ -73,7 +73,7 @@ sfDatePicker.BlackoutDates = (sfDatePicker.DataContext as ViewModel).BlockedDate
 {% endhighlight  %}
 {% endtabs %}
 
-![WinUI DatePicker with BlockoutDates](Getting-Started_images/winui-datepicker-blackoutdates.png)
+![WinUI DatePicker with BlackoutDates](Getting-Started_images/winui-datepicker-blackoutdates.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
