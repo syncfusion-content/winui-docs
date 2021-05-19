@@ -106,7 +106,7 @@ private void SfDatePicker_DateFieldItemPrepared(object sender, DateTimeFieldItem
     if (e.ItemInfo.DateTime.Value.DayOfWeek == DayOfWeek.Saturday ||
             e.ItemInfo.DateTime.Value.DayOfWeek == DayOfWeek.Sunday)
     {
-        e.ItemInfo.IsEnabled = true;
+        e.ItemInfo.IsEnabled = false;
     }
 }
 

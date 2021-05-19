@@ -81,6 +81,71 @@ sfTimePicker.BlackoutTimes = (sfTimePicker.DataContext as ViewModel).BlackoutTim
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
+## Custom time interval
+
+You can restrict the users to select the times from specific minute or hour intervals by using the [`TimeFieldPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_TimeFieldPrepared) event.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfTimePicker TimeFieldPrepared="SfTimePicker_TimeFieldPrepared"
+                      x:Name="sfTimePicker"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfTimePicker sfTimePicker = new SfTimePicker();
+sfTimePicker.TimeFieldPrepared = SfTimePicker_TimeFieldPrepared;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows,
+
+{% tabs %}
+{% highlight C# %}
+
+/// <summary>
+/// Get the ItemsSource for minute or second column.
+/// </summary>
+/// <returns>Return the ItemsSource for minute or second column.</returns>
+private static ObservableCollection<string> GetMinutesOrSeconds(string pattern)
+{
+    ObservableCollection<string> minutes = new ObservableCollection<string>();
+    NumberFormatInfo provider = new NumberFormatInfo();
+    for (int i = 0; i < 60; i = i + 5)
+    {
+        if (i > 9 || pattern == "%s" || pattern == "{second.integer}" || pattern == "%m" || pattern == "{minute.integer}")
+        {
+            minutes.Add(i.ToString(provider));
+        }
+        else
+        {
+            minutes.Add("0" + i.ToString(provider));
+        }
+    }
+
+    return minutes;
+}
+
+private void SfTimePicker_TimeFieldPrepared(object sender, DateTimeFieldPreparedEventArgs e)
+{
+    if (e.Column != null)
+    {
+        //Minutes interval changed as 5.
+        if (e.Column.Field == DateTimeField.Minute || e.Column.Field == DateTimeField.Second)
+        {
+            e.Column.ItemsSource = GetMinutesOrSeconds(e.Column.Format);
+        }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Dropdown spinner custom time interval using TimeFieldPrepared event](Dropdown-Time-Spinner_images/winui-date-picker-custom-interval.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeFieldPrepared)
+
 ## Select time as you scroll spinner
 
 If you want to hide the submit button and select the time directly from the dropdown time spinner without clicking the `Ok` button, use the [`ShowSubmitButtons`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
