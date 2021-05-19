@@ -11,20 +11,18 @@ documentation: ug
 
 This section describes about how to customization Color Palette in [WinUI DropDown Color Palette](https://www.syncfusion.com/winui-controls/dropdown-color-palette) control.
 
-## Customize the Color Palette
+## Customizing control in drop down
 
-You can customize the color palette by replacing the default [Color Palette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html) with your own instance using [DropDownContentTemplate](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownContentTemplate) property.
+You can customize the control displayed in drop down of `DropDown Color Palette` by using [AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and [DropDownFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownFlyout.html#properties) properties. 
 
-N> The `DataContext` of `DropDownContentTemplate` property is [SfDropDownColorPalette.DropDownContent](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownContent).
-
-N> You can refer the [Color Palette](https://help.syncfusion.com/winui/color-palette/overview) documentation page to know more about all customization available in the `Color Palette` control.
+N> You can refer the [Color Palette](https://help.syncfusion.com/winui/color-palette/getting-started) documentation page to know more about all customization available in the `Color Palette` control.
 
 {% tabs %}
 {% highlight xaml %}
 
 <editors:SfDropDownColorPalette Name="sfDropDownColorPalette">
-    <editors:SfDropDownColorPalette.DropDownContentTemplate>
-        <DataTemplate>
+    <FlyoutBase.AttachedFlyout>
+        <editors:DropDownFlyout>
             <editors:SfColorPalette ShowMoreColorsButton="False" Width="250" >
                 <editors:SfColorPalette.PaletteColors>
                     <editors:ColorPaletteModel ShowColors="True" 
@@ -68,8 +66,8 @@ N> You can refer the [Color Palette](https://help.syncfusion.com/winui/color-pal
                     </editors:StandardPaletteModel>
                 </editors:SfColorPalette.StandardColors>
             </editors:SfColorPalette>
-        </DataTemplate>
-    </editors:SfDropDownColorPalette.DropDownContentTemplate>
+        </editors:DropDownFlyout>
+    </FlyoutBase.AttachedFlyout>
 </editors:SfDropDownColorPalette>
 
 {% endhighlight %}
@@ -78,32 +76,3 @@ N> You can refer the [Color Palette](https://help.syncfusion.com/winui/color-pal
 ![Color palette embedded inside the dropdown color palette](Getting-Started_images/custom_colorpalette.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDownColorPalette_as_command)
-
-## Customizing control in drop down
-
-You can customize the control displayed in drop down of `DropDown Color Palette` by using [AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and [DropDownFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownFlyout.html#properties) properties. 
-
-{% tabs %}
-{% highlight xaml %}
-
-<editors:SfDropDownColorPalette>
-    <FlyoutBase.AttachedFlyout>
-        <editors:DropDownFlyout>
-            <editors:SfColorPalette ShowDefaultColorButton="False"
-                                    ShowMoreColorsButton="False"
-                                    BorderThickness="0">
-                <editors:SfColorPalette.PaletteColors>
-                    <editors:ColorPaletteModel ShowHeader="False"/>
-                </editors:SfColorPalette.PaletteColors>
-                <editors:SfColorPalette.StandardColors>
-                    <editors:StandardPaletteModel ShowColors="False"/>
-                </editors:SfColorPalette.StandardColors>
-            </editors:SfColorPalette>
-        </editors:DropDownFlyout>
-    </FlyoutBase.AttachedFlyout>
-</editors:SfDropDownColorPalette>
-
-{% endhighlight %}
-{% endtabs %}
-
-![Customizing the DropDown Color Palette dropdown UI](Getting-Started_images/CustomizedDropDown.png)
