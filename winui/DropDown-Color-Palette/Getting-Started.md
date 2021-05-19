@@ -13,7 +13,7 @@ This section explains the steps required to add the [WinUI DropDown Color Palett
 
 ## Control Structure
 
-![Dropdown ColorPalette control structure](Getting-Started_images/Control_Structure_GS.png)
+![Dropdown Color Palette control structure](Getting-Started_images/Control_Structure_GS.png)
 
 * The Selected Color represents the color that you select.
 * The Automatic Color represents the color, which can be set by you as default color.
@@ -25,7 +25,7 @@ This section explains the steps required to add the [WinUI DropDown Color Palett
 
 ### More Color Dialog
 
-![Dropdown ColorPalette more color dialog structure](Getting-Started_images/MoreColorControl_Structure_GS.jpg)
+![Dropdown Color Palette more color dialog structure](Getting-Started_images/MoreColorControl_Structure_GS.jpg)
 
 ## Creating an application with WinUI DropDown Color Palette
 
@@ -95,7 +95,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown ColorPalette added in the winui application](Getting-Started_images/controladded.png)
+![Dropdown Color Palette added in the winui application](Getting-Started_images/controladded.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
 
@@ -117,7 +117,7 @@ colorPalette.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown ColorPalette programmatically picked the yellow color](Getting-Started_images/Colorprogrammatically.png)
+![Dropdown Color Palette programmatically picked the yellow color](Getting-Started_images/Colorprogrammatically.png)
 
 Here, `Yellow` color is selected color in the `DropDown Color Palette`.
 
@@ -140,7 +140,7 @@ SfDropDownColorPalette sfDropDownColorPalette =  new SfDropDownColorPalette();
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown ColorPalette control with theme and standard color items](Getting-Started_images/ThemeColorPanel.png)
+![Dropdown Color Palette control with theme and standard color items](Getting-Started_images/ThemeColorPanel.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
 
@@ -161,51 +161,9 @@ SfDropDownColorPalette sfDropDownColorPalette =  new SfDropDownColorPalette();
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown ColorPalette control with theme and standard color items](Getting-Started_images/automatic_color.png)
+![Dropdown Color Palette control with theme and standard color items](Getting-Started_images/automatic_color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
-
-## Choosing a Color from MoreColor dialog
-
-If you want to choose a color that is not available in theme and standard palette, click the more color button and select the color from color spectrum and click the `Ok` button. 
-
-{% tabs %}
-{% highlight xaml %}
-
-<editors:SfDropDownColorPalette Name="sfDropDownColorPalette"/>
-
-{% endhighlight %}
-{% highlight C# %}
-
-SfDropDownColorPalette sfDropDownColorPalette = new SfDropDownColorPalette();
-
-{% endhighlight %}
-{% endtabs %}
-
-![Dropdown ColorPalette with more color dialog](Getting-Started_images/MoreColorWindow.gif)
-
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
-
-## Recently used Colors
-
- If you want to choose a color brush which are recently selected from the `More Colors` dialog, use the `Recent Colors` panel. 
-
-N> Colors selected from theme and standard colors will not be added in recent colors.
-
-{% tabs %}
-{% highlight xaml %}
-
-<editors:SfDropDownColorPalette Name="sfDropDownColorPalette"/>
-
-{% endhighlight %}
-{% highlight C# %}
-
-SfDropDownColorPalette sfDropDownColorPalette = new SfDropDownColorPalette();
-
-{% endhighlight %}
-{% endtabs %}
-
-![Dropdown ColorPalette with recently used color items](Getting-Started_images/Recentcolors.png)
 
 ## Selected brush changed notification
 

@@ -13,7 +13,7 @@ This section explains the steps required to add the [WinUI DropDown Color Picker
 
 ## Control Structure
 
-![Structure of WinUI DropDown ColorPicker control](Getting-Started_images/Structure1.jpg)
+![Structure of WinUI DropDown Color Picker control](Getting-Started_images/Structure1.jpg)
 
 ## Creating an application with WinUI DropDown Color Picker
 
@@ -83,7 +83,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![DropDown ColorPicker added in the winui application](Getting-Started_images/ColorPicker_Added.jpg)
+![DropDown Color Picker added in the winui application](Getting-Started_images/ColorPicker_Added.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/DropDown_ColorPicker)
 
@@ -106,7 +106,7 @@ colorPicker.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 {% endhighlight %}
 {% endtabs %}
 
-![Solid color programmatically selected from DropDown ColorPicker](Getting-Started_images/select_Solidcolor.jpg)
+![Solid color programmatically selected from DropDown Color Picker](Getting-Started_images/select_Solidcolor.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/DropDown_ColorPicker)
 
@@ -127,7 +127,7 @@ SfDropDownColorPicker sfDropDownColorPicker =  new SfDropDownColorPicker();
 {% endhighlight %}
 {% endtabs %}
 
-![Selecting a color brush from Dropdown ColorPicker at runtime](Getting-Started_images/colorselecting.gif)
+![Selecting a color brush from Dropdown Color Picker at runtime](Getting-Started_images/colorselecting.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/DropDown_ColorPicker)
 
@@ -148,7 +148,7 @@ SfDropDownColorPicker sfDropDownColorPicker = new SfDropDownColorPicker();
 {% endhighlight %}
 {% endtabs %}
 
-![Switch between different solid color channels in Dropdown ColorPicker](Getting-Started_images/RGBSwitch.png)
+![Switch between different solid color channels in Dropdown Color Picker](Getting-Started_images/RGBSwitch.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/DropDown_ColorPicker)
 
@@ -169,7 +169,7 @@ SfDropDownColorPicker sfDropDownColorPicker  new SfDropDownColorPicker();
 {% endhighlight %}
 {% endtabs %}
 
-![Opacity value editor and slider in DropDown ColorPicker](Getting-Started_images/AlphaInputOptions.jpg)
+![Opacity value editor and slider in DropDown Color Picker](Getting-Started_images/AlphaInputOptions.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/DropDown_ColorPicker)
 

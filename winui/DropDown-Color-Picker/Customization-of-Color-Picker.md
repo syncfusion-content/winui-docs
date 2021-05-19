@@ -11,13 +11,13 @@ documentation: ug
 
 This section describes about how to customization Color Picker in [WinUI DropDown Color Picker](https://www.syncfusion.com/winui-controls/dropdown-color-picker) control.
 
-## Customize the ColorPicker
+## Customize the Color Picker
 
-You can customize the color picker by replacing the default [ColorPicker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html) with your own instance using [DropDownContentTemplate](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownContentTemplate) property. You can load color picker with solid, linear gradient or gradient brush editors.
+You can customize the color picker by replacing the default [Color Picker](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html) with your own instance using [DropDownContentTemplate](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownContentTemplate) property. You can load color picker with solid, linear gradient or gradient brush editors.
 
 N> The `DataContext` of `DropDownContentTemplate` property is [SfDropDownColorPicker.DropDownContent](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownContent).
 
-N> You can refer the [ColorPicker](https://help.syncfusion.com/winui/color-picker/overview) documentation page to know more about all customization available in the `ColorPicker` control.
+N> You can refer the [Color Picker](https://help.syncfusion.com/winui/color-picker/overview) documentation page to know more about all customization available in the `Color Picker` control.
 
 {% tabs %}
 {% highlight xaml %}

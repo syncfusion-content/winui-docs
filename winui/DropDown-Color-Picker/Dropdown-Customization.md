@@ -31,7 +31,7 @@ sfDropDownColorPicker.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAlignedR
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown ColorPicker placement changed as BottomEdgeAlignedRight](Getting-Started_images/DropDownPlacement.jpg)
+![Dropdown Color Picker placement changed as BottomEdgeAlignedRight](Getting-Started_images/DropDownPlacement.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/DropDown_ColorPicker)
 
