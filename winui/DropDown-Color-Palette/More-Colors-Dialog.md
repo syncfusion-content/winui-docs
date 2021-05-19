@@ -9,7 +9,7 @@ documentation: ug
 
 # More Colors Dialog in WinUI DropDown Color Palette
 
-This section describes about how to pick a additonal colors from More Color dialog in [WinUI DropDown Color Palette](https://www.syncfusion.com/winui-controls/dropdown-color-palette) control.
+This section describes about how to pick a additional colors from More Color dialog in [WinUI DropDown Color Palette](https://www.syncfusion.com/winui-controls/dropdown-color-palette) control.
 
 ## Choosing a Color from More Colors dialog
 
