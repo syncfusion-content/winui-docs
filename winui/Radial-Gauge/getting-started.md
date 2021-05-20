@@ -68,7 +68,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![Initialize radial gauge with axis](images/getting-started/gauge_with_axis.png)
+![WinUI Radial Gauge with Axis](images/getting-started/winui-radial-gauge-with-axis.png)
 
 ## Add range to the radial gauge
 
@@ -131,7 +131,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![range support to radial gauge](images/getting-started/gauge_range.png)
+![WinUI Radial Gauge with Range](images/getting-started/winui-radial-gauge-with-range.png)
 
 ## Add pointer to the radial gauge
 
@@ -172,7 +172,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![gauge pointers to radial gauge](images/getting-started/gauge_pointer.png)
+![WinUI Radial Gauge with Pointer](images/getting-started/winui-radial-gauge-with-pointer.png)
 
 ## Add annotation to the radial gauge
 
@@ -225,7 +225,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![annotation support to the radial gauge](images/getting-started/gauge_annotation.png)
+![WinUI Radial Gauge with Annotation](images/getting-started/winui-radial-gauge-with-annotation.png)
 
 The following code example gives you the complete code of above configurations.
 

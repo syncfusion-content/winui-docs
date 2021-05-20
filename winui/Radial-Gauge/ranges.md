@@ -50,7 +50,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![default range](images/range/range_default.png)
+![WinUI Radial Gauge Default Range](images/range/winui-radial-gauge-default-range.png)
 
 ## Range customization
 
@@ -109,7 +109,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![equal range width](images/range/range_equalWidth.png)
+![WinUI Radial Gauge Equal Range Width](images/range/winui-radial-gauge-equal-range-width.png)
 
 **Different range width**
 
@@ -154,7 +154,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![range thickness](images/range/range_thickness.png)
+![WinUI Radial Gauge Range Thickness](images/range/winui-radial-gauge-range-thickness.png)
 
 When the [`WidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_WidthUnit) is set as pixels, the range will be rendered based on the provided pixel values in [`StartWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_StartWidth) and [`EndWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_EndWidth)
 
@@ -221,7 +221,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![range gradient](images/range/range_gradient.png)
+![WinUI Radial Gauge Range Gradient](images/range/winui-radial-gauge-range-gradient.png)
 
 **Position customization**
 
@@ -268,7 +268,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![range offset in pixel](images/range/range_offset_pixel.png)
+![WinUI Radial Gauge Range Offset in Pixel](images/range/winui-radial-gauge-range-offset-in-pixel.png)
 
 **Range offset in factor**
 
@@ -313,7 +313,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![range offset in factor](images/range/range_offset_factor.png)
+![WinUI Radial Gauge Range Offset in Factor](images/range/winui-radial-gauge-range-offset-in-factor.png)
 
 ## Setting range color to axis elements
 
@@ -456,7 +456,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![range color to axis element](images/range/range_axislabels.png)
+![WinUI Radial Gauge Range Color to Axis Element](images/range/winui-radial-gauge-range-color-to-axis-element.png)
 
 ## Range label
 
@@ -594,7 +594,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![range label](images/range/range_label.png)
+![WinUI Radial Gauge Range Label](images/range/winui-radial-gauge-range-label.png)
 
 **Template support for range label**
 
@@ -750,4 +750,4 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![range label template](images/range/range_labelTemplate.png)
+![WinUI Radial Gauge Range Label Template](images/range/winui-radial-gauge-range-label-template.png)
