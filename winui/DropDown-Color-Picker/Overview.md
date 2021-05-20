@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WinUI DropDown Color Picker control | Syncfusion
-description: Learn here all about introduction of Syncfusion WinUI DropDown Color Picker(sfDropDownColorPicker) control and more.
+description: Learn here all about introduction of Syncfusion WinUI DropDown Color Picker(SfDropDownColorPicker) control and more.
 platform: WinUI
 control: SfDropDownColorPicker
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # WinUI DropDown Color Picker Overview
 
-The [WinUI DropDownColorPicker](https://www.syncfusion.com/winui-controls/dropdown-color-picker) control is an user interface to select and adjust color values. The structure of the `DropDownColorPicker` control represents a color spectrum which is displayed as a Drop-down with selected color highlighted at the top. It supports various color specifications like RGB, HSV , HSL, CMYK and Hexadecimal color editor.
+The [WinUI DropDown Color Picker](https://www.syncfusion.com/winui-controls/dropdown-color-picker) control is an user interface to select and adjust color values. The structure of the `DropDown Color Picker` control represents a color spectrum which is displayed as a Drop-down with selected color highlighted at the top. It supports various color specifications like RGB, HSV , HSL, CMYK and Hexadecimal color editor.
 
-![Displaying the DropDown ColorPicker control](Getting-Started_images/ControlStructure.png)
+![Displaying the DropDown Color Picker control](Getting-Started_images/ControlStructure.png)
 
 ## Key features
 
