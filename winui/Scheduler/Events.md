@@ -17,13 +17,13 @@ The [CellTappedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 
 * [Appointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_Appointment): Returns the Tapped appointment values.
 
-    1. If `ItemsSource` added with the custom business object then tapped custom Appointment details can get by using the Appointment `Data` property in the Cell tapped arguments.
-    2. The tapped appointment is a Recurrence appointment it will return the parent recurrence appointment values.
-    3. The appointment details get for month view if `AppointmentDisplaymode `as `Appointment,` or else it will be null for month view.
+    1. If `ItemsSource` is added with the custom business object then tapped, custom Appointment details could be got by using the Appointment `Data` property in the Cell tapped arguments.
+    2. The tapped appointment is a Recurrence appointment, it will return the parent recurrence appointment values.
+    3. The appointment details is got for the month view if `AppointmentDisplaymode `as `Appointment,` or else it will be null for month view.
 
 * [Appointments](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_Appointments): Returns the Tapped Month cell appointments values if the `AppointmentDisplayMode` as `indicator.` The Tapped Month Cell has a Recurrence appointment it will return the parent recurrence appointment values. It will be null for Day or Week or Workweek views.   
-* [IsMoreAppointments](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_IsMoreAppointments): Specifies whether more appointments are tapped or not in month view. It will be applicable only for Month view has AppointmentDisplaymode as Appointment. 
-* [CancelNavigation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_CancelNavigation): Specifies whether the day view navigation should be disabled when clicking more appointments in the month view. It will be applicable for month view has AppointmentDisplaymode as Appointment and click the More appointments in month cell.
+* [IsMoreAppointments](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_IsMoreAppointments): Specifies whether more appointments are tapped or not in month view. It will be applicable only for Month view which has AppointmentDisplaymode as Appointment. 
+* [CancelNavigation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_CancelNavigation): Specifies whether the day view navigation should be disabled when clicking more appointments in the month view. It will be applicable for month view which has AppointmentDisplaymode as Appointment and click the More appointments in the month cell.
 * [DateTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_DateTime): Gets the date-time of the tapped cell.
 * [PointerDeviceType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_PointerDeviceType): Gets the pointer device type of the tapped cell.
 * [Resource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_Resource): Gets the resource associated with the timeslot cell where the user tapped.
@@ -47,7 +47,7 @@ private void Schedule_CellTapped(object sender, CellTappedEventArgs e)
 
 ## CellDoubleTapped
 
-The [CellDoubleTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CellDoubleTapped) event occurs when the user double clicks the cell in Scheduler. This event receives two arguments namely this that handles SfScheduler and `CellDoubleTappedEventArgs` as objects. The base class of the [CellDoubleTappedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.CellDoubleTappedEventArgs.html) is [CellTappedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html).
+The [CellDoubleTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CellDoubleTapped) event occurs when the user double clicks the cell in Scheduler. This event receives two arguments namely `this` that handles SfScheduler and `CellDoubleTappedEventArgs` as objects. The base class of the [CellDoubleTappedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.CellDoubleTappedEventArgs.html) is [CellTappedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -194,7 +194,7 @@ private void Schedule_HeaderTapped(object sender, HeaderTappedEventArgs e)
 
 ## AppointmentTapped
 
-The [AppointmentTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentTapped) event occurs when the schedule appointments get tapped in all views. This event receives two arguments namely this that handles SfScheduler and `AppointmentTappedArgs` as objects.
+The [AppointmentTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentTapped) event occurs when the schedule appointments get tapped in all views. This event receives two arguments namely `this` that handles SfScheduler and `AppointmentTappedArgs` as objects.
 
 The [AppointmentTappedArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentTappedArgs.html) object contains the following properties:
 
