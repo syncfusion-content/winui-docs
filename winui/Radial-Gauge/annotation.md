@@ -67,11 +67,11 @@ this.Content = sfRadialGauge;
 
 ![WinUI Radial Gauge Annotation Position](images/annotation/winui-radial-gauge-annotation-position.png)
 
-**Positioning annotation**
+## Positioning annotation
 
 The annotation can be positioned using either the [`Angle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.AnnotationDirection.html#Syncfusion_UI_Xaml_Gauges_AnnotationDirection_Angle) or the [`Axis value`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.AnnotationDirection.html#Syncfusion_UI_Xaml_Gauges_AnnotationDirection_AxisValue). It can be controlled by the [`DirectionUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_DirectionUnit) property of [`Annotation`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html). The default value is [`Angle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.AnnotationDirection.html#Syncfusion_UI_Xaml_Gauges_AnnotationDirection_Angle).
 
-**Positioning annotation using angle**
+### Positioning annotation using angle
 
 The following example shows how to position the annotation using angle.
 
@@ -126,7 +126,7 @@ this.Content = sfRadialGauge;
 
 ![WinUI Radial Gauge Annotation Position with Angle](images/annotation/winui-radial-gauge-annotation-position-with-angle.png)
 
-**Positioning annotation using axis value**
+### Positioning annotation using axis value
 
 The following example shows how to position the annotation using axis value.
 
