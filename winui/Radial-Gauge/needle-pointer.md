@@ -44,7 +44,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![default needle pointer](images/needle-pointer/default_needlePointer.png)
+![WinUI Radial Gauge Default Needle Pointer](images/needle-pointer/winui-radial-gauge-default-needle-pointer.png)
 
 ## Needle customization
 
@@ -104,7 +104,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![needle pointer length](images/needle-pointer/needle_lengthPixel.png)
+![WinUI Radial Gauge Needle Pointer Length](images/needle-pointer/winui-radial-gauge-needle-pointer-length.png)
 
 **Needle width customization**
 
@@ -153,7 +153,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![needle width customization](images/needle-pointer/needle_customization.png)
+![WinUI Radial Gauge Custom Needle Width](images/needle-pointer/winui-radial-gauge-custom-needle-width.png)
 
 **Setting gradient brush to the needle**
 
@@ -226,7 +226,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![needle pointer gradient](images/needle-pointer/needle_gradient.png)
+![WinUI Radial Gauge Needle Pointer Gradient](images/needle-pointer/winui-radial-gauge-needle-pointer-gradient.png)
 
 ## Knob customization
 
@@ -285,7 +285,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![knob radius customization](images/needle-pointer/knob_pixel.png)
+![WinUI Radial Gauge Knob Radius](images/needle-pointer/winui-radial-gauge-knob-radius.png)
 
 If the [`KnobSizeUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.NeedlePointer.html#Syncfusion_UI_Xaml_Gauges_NeedlePointer_KnobSizeUnit) is set to factor, the factor value will be set to knob radius. The factor value ranges from 0 to 1. For example, if the needle length is set to 0.1, 10% of the radius value of axis will be set to knob radius. By default, the value of [`KnobSizeUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.NeedlePointer.html#Syncfusion_UI_Xaml_Gauges_NeedlePointer_KnobSizeUnit) is factor
 
@@ -338,7 +338,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![knob stroke customization](images/needle-pointer/knob_Stroke.png)
+![WinUI Radial Gauge Knob Stroke](images/needle-pointer/winui-radial-gauge-knob-stroke.png)
 
 ## Tail customization
 
@@ -397,7 +397,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![tail length in pixel](images/needle-pointer/needle_tailLength_pixel.png)
+![WinUI Radial Gauge Tail Length in Pixel](images/needle-pointer/winui-radial-gauge-tail-length-in-pixel.png)
 
 **Tail length in factor**
 
@@ -440,7 +440,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![tail length in factor](images/needle-pointer/needle_taillength_factor.png)
+![WinUI Radial Gauge Tail Length in Factor](images/needle-pointer/winui-radial-gauge-tail-length-in-factor.png)
 
 **Tail width customization**
 
@@ -483,7 +483,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![tail width](images/needle-pointer/needle_tailWidth.png)
+![WinUI Radial Gauge Tail Width](images/needle-pointer/winui-radial-gauge-tail-width.png)
 
 **Setting gradient brush to the tail**
 
@@ -552,4 +552,4 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![needle tail gradient](images/needle-pointer/tail_gradient.png)
+![WinUI Radial Gauge Tail Gradient](images/needle-pointer/winui-radial-gauge-tail-gradient.png)
