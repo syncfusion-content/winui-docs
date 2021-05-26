@@ -145,7 +145,7 @@ this.Content = sfSlider;
 
 ## Divisor Template
 
-**Setting a Template for Divisors**
+### Setting a Template for Divisors
 
 The [`DivisorTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_DivisorTemplate) property allows you to define the data template for the divisor's as shown in the following code sample.
 
@@ -191,7 +191,7 @@ this.Content = sfSlider;
 
 N> Its DataContext is [`SliderBase`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html?tabs=tabid-1).
 
-**SSetting a Active Template for Divisors**
+### Setting a Active Template for Divisors
 
 The [`ActiveDivisorTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveDivisorTemplate) property allows you to define the data template for the divisor's as shown in the following code sample.
 
