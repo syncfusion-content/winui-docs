@@ -83,7 +83,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![pointer animation](images/animation/animation.gif)
+![WinUI Radial Gauge Animation](images/animation/winui-radial-gauge-animation.gif)
 
 ## Animation duration
 
@@ -163,7 +163,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![pointer animation](images/animation/animation_duration.gif)
+![WinUI Radial Gauge Animation Duration](images/animation/winui-radial-gauge-animation-duration.gif)
 
 ## Animation Easing Function
 
@@ -253,6 +253,6 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![animation easing function](images/animation/animation_easingFunction.gif)
+![WinUI Radial Gauge Animation Easing Function](images/animation/winui-radial-gauge-animation-easing-function.gif)
 
 N> Refer to the [EasingFunctionBase](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.animation.easingfunctionbase), to learn about available easing functions in WinUI.

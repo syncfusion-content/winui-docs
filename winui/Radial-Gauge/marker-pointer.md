@@ -44,7 +44,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![default marker pointer](images/marker-pointers/marker_default.png)
+![WinUI Radial Gauge Default Marker Pointer](images/marker-pointers/winui-radial-gauge-default-marker-pointer.png)
 
 Gauge supports the following types of marker:
 
@@ -57,7 +57,7 @@ Gauge supports the following types of marker:
 * Triangle
 * Custom
 
-![default marker pointer](images/marker-pointers/markers.png)
+![WinUI Radial Gauge Markers](images/marker-pointers/winui-radial-gauge-markers.png)
 
 ## Image pointer
 
@@ -81,7 +81,7 @@ Image is used to denote the current pointer values instead of shape. It can be a
 
 {% endhighlight %}
 
-![image pointer](images/marker-pointers/image_marker.png)
+![WinUI Radial Gauge Image Pointer](images/marker-pointers/winui-radial-gauge-image-pointer.png)
 
 ## Text pointer
 
@@ -134,7 +134,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![text pointer](images/marker-pointers/text_marker.png)
+![WinUI Radial Gauge Text Pointer](images/marker-pointers/winui-radial-gauge-text-pointer.png)
 
 ## Add customized pointer
 
@@ -191,7 +191,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![text pointer](images/marker-pointers/custom_marker.png)
+![WinUI Radial Gauge Custom Marker](images/marker-pointers/winui-radial-gauge-custom-marker.png)
 
 ## Marker customization
 
@@ -248,7 +248,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![marker pointer customization](images/marker-pointers/marker_customization.png)
+![WinUI Radial Gauge Custom Marker Pointer](images/marker-pointers/winui-radial-gauge-custom-marker-pointer.png)
 
 ## Marker position customization
 
@@ -291,4 +291,4 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![marker offset](images/marker-pointers/marker_offset.png)
+![WinUI Radial Gauge Marker Offset](images/marker-pointers/winui-radial-gauge-marker-offset.png)

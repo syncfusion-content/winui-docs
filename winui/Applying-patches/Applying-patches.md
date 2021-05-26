@@ -73,25 +73,3 @@ In the patch assembly, the **File Version** and **Product Version** will be diff
 ![Patch Assembly](Patches_images/Installing-a-Patch-Setup_img9.png)
 
 
-
-
-   
-## Command Line Installation
-
-The patch can also be installed through Command Line. Follow the given steps to run the Patch Installer via Command Line. 
-
-1. Open Command Prompt with administrative privileges, that is, in the Admin mode.
-2. Navigate to the patch file’s location and pass the following argument:
-   
-   **Argument:** {patch installer.exe} [/silent or /verysilent]
-
-   **Example:**
-   SyncfusionPatch_12.4.0.24_234640_5192015083205629_139538.exe /verysilent  
-   SyncfusionPatch_12.4.0.24_234640_5192015083205629_139538.exe /silent         
-   
-   ![Command Prompt](Patches_images/Command-Line-Installation_img1.png)
-   
-  
-    N> /silent – Displays the progress dialog alone during the patch installation.
-	/verysilent – It will be installed in background.
-

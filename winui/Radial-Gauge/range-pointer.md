@@ -44,7 +44,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![default range pointer](images/range-pointer/pointer_default.png)
+![WinUI Radial Gauge Default Range Pointer](images/range-pointer/winui-radial-gauge-default-range-pointer.png)
 
 The following properties are used to customize the range pointer:
 
@@ -95,7 +95,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![range pointer customization](images/range-pointer/pointer_customization.png)
+![WinUI Radial Gauge Custom Range Pointer](images/range-pointer/winui-radial-gauge-custom-range-pointer.png)
 
  The default value of [`WidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_WidthUnit) and [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_OffsetUnit) is [`SizeUnit.Pixel`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SizeUnit.html#Syncfusion_UI_Xaml_Gauges_SizeUnit_Pixel).
  
@@ -153,7 +153,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![range pointer gradient](images/range-pointer/pointer_gradient.png)
+![WinUI Radial Gauge Range Pointer Gradient](images/range-pointer/winui-radial-gauge-range-pointer-gradient.png)
 
 **Corner style customization**
 
@@ -194,7 +194,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![range pointer customization](images/range-pointer/pointer_corner.png)
+![winUI Radial Gauge Pointer Corner Style](images/range-pointer/winui-radial-gauge-pointer-corner-style.png)
 
 ## Position customization
 
@@ -241,7 +241,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![pointer position customization](images/range-pointer/pointer_offset.png)
+![WinUI Radial Gauge Pointer Position](images/range-pointer/winui-radial-gauge-pointer-position.png)
 
 When you set the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_OffsetUnit) as pixel, the pointer will be moved to the provided pixel value.
 

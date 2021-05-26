@@ -45,7 +45,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis range](images/axis/axis_range.png)
+![WinUI Radial Gauge Axis Range](images/axis/winui-radial-gauge-axis-range.png)
 
 **Interval**
 
@@ -77,7 +77,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis label interval](images/axis/axis_interval.png)
+![WinUI Radial Gauge Axis Label Interval](images/axis/winui-radial-gauge-axis-label-interval.png)
 
 **Angle customization**
 
@@ -111,7 +111,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis angle customization](images/axis/axis_angle.png)
+![WinUI Radial Gauge with Axis Angle](images/axis/winui-radial-gauge-with-axis-angle.png)
 
 **Radius customization**
 
@@ -147,7 +147,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis radius customization](images/axis/axis_radius.png)
+![WinUI Radial Gauge with Axis Radius](images/axis/winui-radial-gauge-with-axis-radius.png)
 
 **Positioning axis based on its angle**
 
@@ -184,7 +184,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis fit to scale](images/axis/axis_fitToScale.png)
+![WinUI Radial Gauge Axis Fit to Scale](images/axis/winui-radial-gauge-with-axis-fit-to-scale.png)
 
 
 **Axis label rotation**
@@ -217,7 +217,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis label rotation](images/axis/axis_rotate.png)
+![WinUI Radial Gauge Axis Label Rotation](images/axis/winui-radial-gauge-axis-label-rotation.png)
 
 **Edge label customization**
 
@@ -264,7 +264,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis edge label](images/axis/axis_showfirstlabel.png)
+![WinUI Radial Gauge Axis Edge Label](images/axis/winui-radial-gauge-axis-edge-label.png)
 
 **Axis direction customization**
 
@@ -298,7 +298,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis direction](images/axis/axis_inversed.png)
+![WinUI Radial Gauge Axis Direction](images/axis/winui-radial-gauge-axis-direction.png)
 
 **Maximum number of labels per 100 logical pixels**
 
@@ -330,7 +330,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis maximum labels](images/axis/axis_maximumlabels.png)
+![WinUI Radial Gauge Axis Maximum Labels](images/axis/winui-radial-gauge-axis-maximum-labels.png)
 
 ## Axis line customization
 
@@ -373,7 +373,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis line width in pixel](images/axis/axis_width_pixel.png)
+![WinUI Radial Gauge Axis Line Width in Pixel](images/axis/winui-radial-gauge-axis-line-width-in-pixel.png)
 
 **Axis line width in factor**
 
@@ -407,7 +407,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis line width in factor](images/axis/axis_width_factor.png)
+![WinUI Radial Gauge Axis Line Width in Factor](images/axis/winui-radial-gauge-axis-line-width-in-factor.png)
 
 **Setting axis line fill brush**
 
@@ -443,7 +443,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis line fill customization](images/axis/axis_color.png)
+![WinUI Radial Gauge Axis Line Stroke Color](images/axis/winui-radial-gauge-axis-line-stroke-color.png)
 
 **Setting gradient brush to axis line**
 
@@ -494,7 +494,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis gradient line](images/axis/axis_gradient.png)
+![WinUI Radial Gauge Axis Gradient Line](images/axis/winui-radial-gauge-axis-gradient-line.png)
 
 **Axis line visibility**
 
@@ -526,7 +526,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis line visibility](images/axis/axis_showline.png)
+![WinUI Radial Gauge Axis Line Visibility](images/axis/winui-radial-gauge-axis-line-visibility.png)
 
 **Background Content Support**
 
@@ -695,7 +695,7 @@ private void RadialAxis_LabelPrepared(object sender, LabelPreparedEventArgs e)
 
 {% endtabs %}
 
-![axis background content](images/axis/axis_background.png)
+![WinUI Radial Gauge Axis Background](images/axis/winui-radial-gauge-axis-background.png)
 
 ## Axis label customization
 
@@ -741,7 +741,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis label customization](images/axis/axis_label.png)
+![WinUI Radial Gauge Axis Label Customization](images/axis/winui-radial-gauge-axis-label-customization.png)
 
 **Formatting axis label**
 
@@ -775,7 +775,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis label format](images/axis/axis_labelFormat.png)
+![WinUI Radial Gauge Axis Label Format](images/axis/winui-radial-gauge-axis-label-format.png)
 
 **Template support for axis label**
 
@@ -820,7 +820,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis label format](images/axis/axis_labelTemplate.png)
+![WinUI Radial Gauge Axis Label Template](images/axis/winui-radial-gauge-axis-label-template.png)
 
 **Label visibility**
 
@@ -852,7 +852,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis label visibility](images/axis/axis_showLabels.png)
+![WinUI Radial Gauge Axis Label Visibility](images/axis/winui-radial-gauge-axis-label-visibility.png)
 
 **Label placement**
 
@@ -884,7 +884,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![label placement](images/axis/axis_labelOutside.png)
+![WinUI Radial Gauge Axis Label Placement](images/axis/winui-radial-gauge-axis-label-placement.png)
 
 **Label position customization**
 
@@ -922,7 +922,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis label offset in pixel](images/axis/axis_labelOffset_Pixel.png)
+![WinUI Radial Gauge Axis Label Offset in Pixel](images/axis/winui-radial-gauge-axis-label-offset-pixel.png)
 
 **Label offset in factor**
 
@@ -956,7 +956,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis label offset in factor](images/axis/axis_labelOffset_factor.png)
+![WinUI Radial Gauge Axis Label Offset factor](images/axis/winui-radial-gauge-axis-label-offset-factor.png)
 
 N> The [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_OffsetUnit) property of axis is common for both the [`TickOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_TickOffset) and [`LabelOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_LabelOffset).
 
@@ -1008,7 +1008,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis tick length in pixel](images/axis/axis_tickLength_pixel.png)
+![WinUI Radial Gauge Axis Tick Length in Pixel](images/axis/winui-radial-gauge-axis-tick-length-in-pixel.png)
 
 **Tick length in factor**
 
@@ -1044,7 +1044,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis tick length in factor](images/axis/axis_tickLength_factor.png)
+![WinUI Radial Gauge Axis Tick Length in Factor](images/axis/winui-radial-gauge-axis-tick-length-in-factor.png)
 
 **Setting style for major ticks**
 
@@ -1086,7 +1086,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![major tick style](images/axis/axis_majorTickStyle.png)
+![WinUI Radial Gauge Major Tick Style](images/axis/winui-radial-gauge-major-tick-style.png)
 
 **Setting style for minor ticks**
 
@@ -1128,7 +1128,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![minor tick style](images/axis/axis_minorTickStyle.png)
+![WinUI Radial Gauge Minor Tick Style](images/axis/winui-radial-gauge-minor-tick-style.png)
 
 **Setting dashed tick lines**
 
@@ -1184,7 +1184,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![dashed tick lines](images/axis/axis_tickdash.png)
+![WinUI Radial Gauge Dashed Tick Lines](images/axis/winui-radial-gauge-dashed-tick-lines.png)
 
 **Setting minor ticks count**
 
@@ -1216,7 +1216,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![minor tick line](images/axis/axis_minortick.png)
+![WinUI Radial Gauge Minor Ticks Count](images/axis/winui-radial-gauge-minor-ticks-count.png)
 
 **Tick line visibility**
 
@@ -1248,7 +1248,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![tick line visibilty](images/axis/axis_showticks.png)
+![WinUI Radial Gauge Tick Line Visibility](images/axis/winui-radial-gauge-tick-line-visibility.png)
 
 **Tick placement**
 
@@ -1280,7 +1280,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![tick placement](images/axis/axis_tickOutside.png)
+![WinUI Radial Gauge Tick Placement](images/axis/winui-radial-gauge-tick-placement.png)
 
 **Tick position customization**
 
@@ -1316,7 +1316,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis tick offset in pixel](images/axis/axis_tickOffset_pixel.png)
+![WinUI Radial Gauge Axis Tick Offset in Pixel](images/axis/winui-radial-gauge-axis-tick-offset-pixel.png)
 
 **Tick offset in factor**
 
@@ -1350,7 +1350,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis tick offset in factor](images/axis/axis_tickOffset_factor.png)
+![WinUI Radial Gauge Axis Tick Offset Factor](images/axis/winui-radial-gauge-axis-tick-offset-factor.png)
 
 N> The [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_OffsetUnit) property of axis is common for both the [`TickOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_TickOffset) and [`LabelOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_LabelOffset).
 
@@ -1477,7 +1477,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis label offset](images/axis/axis_multiplescale.png)
+![WinUI Radial Guage Multiple Axis](images/axis/winui-radial-gauge-multiple-axis.png)
 
 ## Custom scale range
 
@@ -1602,7 +1602,7 @@ public class RadialAxisExt : RadialAxis
 
 {% endtabs %}
 
-![custom scale](images/axis/custom_scale.png)
+![WinUI Radial Gauge Custom Scale](images/axis/winui-radial-gauge-custom-scale.png)
 
 ## Events
 
@@ -1635,7 +1635,7 @@ private void RadialAxis_LabelPrepared(object sender, LabelPreparedEventArgs e)
 
 {% endtabs %}
 
-![axis label prepared event](images/axis/axis_labelPrepared.png)
+![WinUI Radial Gauge Axis Events](images/axis/winui-radial-gauge-axis-events.png)
 
 **AxisTapped**
 

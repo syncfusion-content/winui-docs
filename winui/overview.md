@@ -96,13 +96,13 @@ background-color:transparent!important;
   </tr>
   <tr>
     <td id="title">INPUT CONTROLS</td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/datepicker/getting-started" >Date Picker</a></td>
+    <td><a id="anchor"  href="https://help.syncfusion.com/winui/date-picker/getting-started" >Date Picker</a></td>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/linear-gauge/getting-started" >Linear Gauge</a></td>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/dropdown-color-palette/getting-started" >Dropdown Color Palette</a></td>
   </tr>
   <tr>
      <td><a id="anchor"  href="https://help.syncfusion.com/winui/slider/getting-started">Slider</a></td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/timepicker/getting-started">Time Picker</a></td>
+    <td><a id="anchor"  href="https://help.syncfusion.com/winui/time-picker/getting-started">Time Picker</a></td>
     <td></td>
     <td></td>
   </tr>
