@@ -45,7 +45,7 @@ sfCalendarDateRangePicker.CalendarIdentifier = "HebrewCalendar";
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Hebrew-type WinUI Calendar DateRange Picker.](Getting-Started_images/Hebrew-calendarIdentifier.png)
+![Calendar Types aka Calendar Identifier in WinUI Calendar DateRange Picker](Getting-Started_images/winui-calendar-daterange-picker-calendar-types.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting)
 
@@ -68,7 +68,7 @@ sfCalendarDateRangePicker.Language = "ar-AR";
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying arabic cultured WinUI Calendar DateRange Picker.](Getting-Started_images/LanguageView.png)
+![Arabic Culture in WinUI Calendar DateRange Picker](Getting-Started_images/winui-calendar-daterange-picker-arabic-culture.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting)
 
@@ -90,7 +90,7 @@ sfCalendarDateRangePicker.FormatString= "{0:D}-{1:D}";
 {% endhighlight  %}
 {% endtabs %}
 
-![Calendar DateRange Picker selected date with month format](Getting-Started_images/FormatString.png)
+![WinUI Calendar DateRange Picker String Formatting](Getting-Started_images/winui-calendar-daterange-picker-string-formatting.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting)
 
@@ -121,7 +121,7 @@ sfCalendarDateRangePicker.MonthHeaderFormat = "{month.abbreviated} {year.abbrevi
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying full month and abbreviated year format in WinUI Calendar DateRange Picker.](Getting-Started_images/dateformat.gif)
+![WinUI Calendar DateRange Picker Date Formatting](Getting-Started_images/winui-calendar-daterange-picker-date-formatting.gif)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting)
 
@@ -144,7 +144,7 @@ sfCalendarDateRangePicker.FirstDayOfWeek = DayOfWeek.Monday;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker weekdays start from Monday](Dropdown-Calendar_images/FirstDayOfWeek.png)
+![First Day of Week in WinUI Calendar DateRange Picker](Dropdown-Calendar_images/winui-calendar-daterange-picker-first-day-of-week.png)
 
 ## Change flow direction
 
@@ -167,6 +167,6 @@ sfCalendarDateRangePicker.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar DateRange Picker flow direction changed to right to left](Dropdown-Calendar_images/FlowDirection.png)
+![WinUI Calendar DateRange Picker Right-to-Left](Dropdown-Calendar_images/winui-calendar-daterange-picker-right-to-left.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting)

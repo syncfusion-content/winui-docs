@@ -184,7 +184,7 @@ this.Content = sfSlider;
 
 ## Events
 
-**ValueChanged**
+### ValueChanged
 
 The [`ValueChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfSlider.html#Syncfusion_UI_Xaml_Sliders_SfSlider_ValueChanged) event occurs each time when a [`Value`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfSlider.html#Syncfusion_UI_Xaml_Sliders_SfSlider_Value) gets changed. You can get the following values in this event args:
 

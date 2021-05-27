@@ -25,7 +25,7 @@ sfCalendar.MaxDate = new DateTimeOffset(new DateTime(2021, 03, 23));
 {% endhighlight  %}
 {% endtabs %}
 
-![Calendar restrict the date selection with particular range](Getting-Started_images/MinMaxdate.png)
+![WinUI Calendar Minimum and Maximum Dates](Getting-Started_images/winui-calendar-minimum-and-maximum-dates.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction)
 
@@ -81,7 +81,7 @@ sfCalendar.BlackoutDates = (sfCalendar.DataContext as ViewModel).BlockedDates;
 {% endhighlight  %}
 {% endtabs %}
 
-![Calendar blocks the particular dates from selection](Getting-Started_images/BlackoutDates.png)
+![WinUI Calendar BlackoutDates](Getting-Started_images/winui-calendar-blackoutdates.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/BlockedDates)
 
@@ -122,7 +122,7 @@ private void SfCalendar_ItemPrepared(object sender, CalendarItemPreparedEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar restrict the weekend dates from selection](Getting-Started_images/blockweekend.png)
+![WinUI Calendar Restrict Weekend Dates](Getting-Started_images/winui-calendar-restrict-weekend-dates.png)
 
 You can also change the text to be displayed for specific days or dates in `Calendar` using [ItemInfo.DisplayText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_DisplayText) property. 
 
@@ -144,7 +144,7 @@ private void SfCalendar_ItemPrepared(object sender, CalendarItemPreparedEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar restrict the weekend dates from selection and sets display text](Restrict-Date-Selection-images/display-text-change.png)
+![WinUI Calendar Display Text](Restrict-Date-Selection-images/winui-calendar-display-text.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Formatting)
 
