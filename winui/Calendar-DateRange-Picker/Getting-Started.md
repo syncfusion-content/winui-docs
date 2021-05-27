@@ -13,7 +13,7 @@ This section explains the steps required to add the [WinUI Calendar DateRange Pi
 
 ## Structure of Calendar DateRange Picker control
 
-![Structure of WinUI Calendar DateRange Picker control](Getting-Started_images/OriginalStructure.png)
+![WinUI Calendar DateRange Picker Structure](Getting-Started_images/winui-calendar-daterange-picker-structure.png)
 
 ## Creating an application with WinUI Calendar DateRange Picker
 
@@ -89,7 +89,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar DateRange Picker control added in the application](Getting-Started_images/Overview_img1.png)
+![WinUI Calendar DateRange Picker Application](Getting-Started_images/winui-calendar-daterange-picker-with-normal-view.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/GettingStarted)
 
@@ -106,7 +106,7 @@ sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(new DateTimeOf
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar DateRange Picker displaying the selected range dates](Getting-Started_images/SelectedRange.png)
+![WinUI Calendar DateRange Picker Selected Range](Getting-Started_images/winui-calendar-daterange-picker-selected-range.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Selection)
 
@@ -127,7 +127,7 @@ SfCalendarDateRangePicker sfCalendarDateRangePicker= new SfCalendarDateRangePick
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar DateRange Picker displaying selected date range](Getting-Started_images/CalendarDateRangePicker_Interactive.gif)
+![WinUI Interactive Selected Date Range](Getting-Started_images/winui-interactive-selected-date-range.gif)
 
 ## Setting watermark text
 
@@ -150,7 +150,7 @@ sfCalendarDateRangePicker.SelectedRange = null;
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar DateRange Picker displaying watermark text](Getting-Started_images/PlaceHolderText.png)
+![WinUI Calendar DateRange Picker Watermark Text](Getting-Started_images/winui-calendar-daterange-picker-watermark-text.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Selection)
 
@@ -216,7 +216,7 @@ sfCalendarDateRangePicker.ShowDropDownButton = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar DateRange Picker hides the dropdown button](Dropdown-Calendar_images/ShowDropDownButton.png)
+![WinUI Calendar DateRange Picker Dropdown Button](Dropdown-Calendar_images/winui-calendar-daterange-picker-dropdown-button.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/DropDown)
 
@@ -241,7 +241,7 @@ sfCalendarDateRangePicker.ShowSubmitButtons = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar DateRange Picker shows the submit button](Dropdown-Calendar_images/CalendarDateRangePicker-Show_SpinButton.png)
+![WinUI Calendar DateRange Picker Submit Button](Dropdown-Calendar_images/winui-calendar-daterange-picker-submit-button.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/DropDown)
 
@@ -259,6 +259,6 @@ For further details refer [Restrict DateRange Selection](restrict-daterange-sele
 * You can navigate between month, year, decade and century views in `Calendar DateRange Picker` control.
 * You can also restrict the users to navigate between specific views only (month and year selection for credit card) using [`MinDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MinDisplayMode) and [`MaxDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MaxDisplayMode) properties.
 
-    ![Navigation between views](Getting-Started_images/View-Navigation.gif)
+    ![WinUI Calendar DateRange Picker View Navigation](Getting-Started_images/winui-calendar-daterange-picker-view-navigation.gif)
 
 For further details refer [Navigation](navigation).

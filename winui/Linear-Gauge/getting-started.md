@@ -179,7 +179,7 @@ this.Content = sfLinearGauge;
 
 MarkerPointers contains a list of pointer elements, where you can add any number of gauge pointers such as [`ShapePointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html), and [`ContentPointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ContentPointer.html), inside the axis to indicate the value.
 
-**Add shape pointer to the linear gauge**
+### Add shape pointer to the linear gauge
 
 Shape pointer is to highlight current values by using the different types of shape pointers.
 
@@ -223,7 +223,7 @@ this.Content = sfLinearGauge;
 
 ![gauge shape pointer to linear gauge](images/getting-started/gauge_shapePointer.png)
 
-**Add content pointer to the linear gauge**
+### Add content pointer to the linear gauge
 
 Content pointer is used to highlight values using an image, icon, text, or any other custom view.
 

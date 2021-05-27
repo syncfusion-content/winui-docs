@@ -106,7 +106,7 @@ private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar DateRange Picker dropdown with preset collection](Preset-Items_images/week-selection.png)
+![Preset View Items in WinUI Calendar DateRange Picker](Preset-Items_images/winui-calendar-daterange-picker-preset-items.png)
 
 ## Hide calendar on selecting a preset item
 
@@ -157,6 +157,6 @@ privateprivate void ListBox_SelectionChanged(object sender, SelectionChangedEven
 {% endhighlight %}
 {% endtabs %}
 
-![Custom range selection in WinUI Calendar DateRange Picker](Preset-Items_images/preset-items-collection.gif)
+![WinUI Calendar DateRange Picker Preset Item Selection](Preset-Items_images/winui-calendar-daterange-picker-preset-item-selection.gif)
 
 N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/PresetItems)

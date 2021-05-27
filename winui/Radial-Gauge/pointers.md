@@ -17,7 +17,7 @@ documentation: ug
 
 All the pointers can be customized as needed. You can add multiple pointers to the gauge to point multiple values on the same scale. The value of the pointer is set using the [`Value`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_Value) property.
 
-![multiple pointers](images/pointers/pointers.png)
+![WinUI Radial Gauge with Pointers](images/pointers/winui-radial-gauge-pointers.png)
 
 ## Multiple pointers
 
@@ -61,7 +61,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![multiple pointers](images/pointers/multiple_pointer.png)
+![WinUI Radial Gauge with Multiple Pointers](images/pointers/winui-radial-gauge-multiple-pointers.png)
 
 ## Pointer dragging
 
@@ -111,7 +111,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![pointer dragging](images/pointers/pointer-interaction.gif)
+![WinUI Radial Gauge Pointer Dragging](images/pointers/winui-radial-gauge-pointer-dragging.gif)
 
 ## Event
 
