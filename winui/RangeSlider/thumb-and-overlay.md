@@ -295,7 +295,7 @@ N> Overlay effects displayed with 0.3 opacity.
 
 ## Events
 
-**ThumbDragStarted**
+### ThumbDragStarted
 
 The [`ThumbDragStarted`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbDragStarted) event raised when the thumb drag is started.
 
@@ -320,7 +320,7 @@ private void SfRangeSlider_ThumbDragStarted(object sender, DragStartedEventArgs 
 
 {% endtabs %}
 
-**ThumbDragCompleted**
+### ThumbDragCompleted
 
 The [`ThumbDragCompleted`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbDragCompleted) event raised when the thumb drag is completed.
 

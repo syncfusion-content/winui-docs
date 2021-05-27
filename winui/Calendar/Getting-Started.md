@@ -13,7 +13,7 @@ This section explains the steps required to add the [WinUI Calendar](https://www
 
 ## Structure of Calendar control
 
-![Structure of WinUI Calendar control](Getting-Started_images/Structure.png)
+![WinUI Calendar Structure](Getting-Started_images/winui-calendar-structure.png)
 
 ## Creating an application with WinUI Calendar
 
@@ -91,9 +91,9 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar control added in the application](Getting-Started_images/Calendar_Added.png)
+![WinUI Calendar Application](Getting-Started_images/winui-calendar-application.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/GettingStarted)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/GettingStarted)
 
 ## Select a date
 
@@ -115,7 +115,7 @@ sfCalendar.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06));
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar displaying the selected date](Getting-Started_images/Selecteddate.png)
+![WinUI Calendar Date Selection](Getting-Started_images/winui-calendar-date-selection.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction)
 
@@ -140,7 +140,7 @@ sfCalendar.SelectionMode = CalendarSelectionMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar allows you to select multiple dates](Getting-Started_images/multipledate_selection.png)
+![WinUI Calendar Multiple Date Selection](Getting-Started_images/winui-calendar-multiple-date-selection.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Selection)
 
@@ -165,7 +165,7 @@ sfCalendar.SelectionMode = CalendarSelectionMode.Range;
 {% endhighlight %}
 {% endtabs %}
 
-![Date range selection in WinUI Calendar](Getting-Started_images/date-range-selection.png)
+![WinUI Calendar Date Range Selection](Getting-Started_images/winui-calendar-date-range-selection.png)
 
 ## Selection changed notification
 
@@ -217,7 +217,7 @@ For further details refer [Restrict Date Selection](restrict-date-selection).
 * You can navigate between month, year, decade and century views in `Calendar` control.
 * You can also restrict the users to navigate between specific views only (month and year selection for credit card) using [`MinDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MinDisplayMode) and [`MaxDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MaxDisplayMode) properties.
 
-    ![Navigation between views](Getting-Started_images/View-Navigation.gif)
+    ![WinUI Calendar View Navigation](Getting-Started_images/winui-calendar-view-navigation.gif)
 
 * You can navigate within a view horizontally or vertically using [`NavigationDirection`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_NavigationDirection) property. By default, navigation direction is vertical within a view either by mouse scrolling or by navigation buttons. 
 

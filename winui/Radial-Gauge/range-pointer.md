@@ -44,7 +44,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![default range pointer](images/range-pointer/pointer_default.png)
+![WinUI Radial Gauge Default Range Pointer](images/range-pointer/winui-radial-gauge-default-range-pointer.png)
 
 The following properties are used to customize the range pointer:
 
@@ -95,11 +95,11 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![range pointer customization](images/range-pointer/pointer_customization.png)
+![WinUI Radial Gauge Custom Range Pointer](images/range-pointer/winui-radial-gauge-custom-range-pointer.png)
 
  The default value of [`WidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_WidthUnit) and [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_OffsetUnit) is [`SizeUnit.Pixel`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SizeUnit.html#Syncfusion_UI_Xaml_Gauges_SizeUnit_Pixel).
  
- **Setting gradient brush to the pointer**
+## Setting gradient brush to the pointer
 
  The [`GradientStops`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_GradientStops) property of [`range pointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html) allows to specify the smooth color transition to pointer by specifying the different colors based on provided axis value.
 
@@ -153,9 +153,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![range pointer gradient](images/range-pointer/pointer_gradient.png)
+![WinUI Radial Gauge Range Pointer Gradient](images/range-pointer/winui-radial-gauge-range-pointer-gradient.png)
 
-**Corner style customization**
+## Corner style customization
 
  The [`CornerStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_CornerStyle) property of [`range pointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html) specifies the corner type for pointer. The corners can be customized using the [`BothFlat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_BothFlat), [`BothCurve`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_BothCurve), [`StartCurve`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_StartCurve) and [`EndCurve`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_EndCurve) options. The default value of this property is [`BothFlat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_BothFlat).
 
@@ -194,7 +194,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![range pointer customization](images/range-pointer/pointer_corner.png)
+![winUI Radial Gauge Pointer Corner Style](images/range-pointer/winui-radial-gauge-pointer-corner-style.png)
 
 ## Position customization
 
@@ -241,7 +241,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![pointer position customization](images/range-pointer/pointer_offset.png)
+![WinUI Radial Gauge Pointer Position](images/range-pointer/winui-radial-gauge-pointer-position.png)
 
 When you set the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_OffsetUnit) as pixel, the pointer will be moved to the provided pixel value.
 
