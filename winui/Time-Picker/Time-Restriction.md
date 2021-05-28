@@ -25,7 +25,7 @@ sfTimePicker.MaxTime = new DateTimeOffset(new DateTime(DateTime.Now.Year, DateTi
 {% endhighlight  %}
 {% endtabs %}
 
-![Time Picker restrict the time selection with particular range](Getting-Started_images/MinMaxTime.png)
+![Restrict Time Selection with Specific Range in WinUI TimePicker](Getting-Started_images/winui-timepicker-time-restriction.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
@@ -77,7 +77,7 @@ sfTimePicker.BlackoutTimes = (sfTimePicker.DataContext as ViewModel).BlackoutTim
 {% endhighlight  %}
 {% endtabs %}
 
-![Time Picker blocks the particular times from selection](Getting-Started_images/Blackouttimes.png)
+![WinUI TimePicker with BlackoutTimes](Getting-Started_images/winui-timepicker-blackout-times.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -142,7 +142,7 @@ private void SfTimePicker_TimeFieldPrepared(object sender, DateTimeFieldPrepared
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown spinner custom time interval using TimeFieldPrepared event](Dropdown-Time-Spinner_images/winui-date-picker-custom-interval.png)
+![WinUI TimePicker displays Custom Time Interval in Dropdown Spinner](Dropdown-Time-Spinner_images/winui-time-picker-custom-interval.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeFieldPrepared)
 
@@ -165,7 +165,7 @@ sfTimePicker.ShowSubmitButtons = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Time Picker hides the dropdown time spinner submit and cancel buttons](Getting-Started_images/ShowSubmitButtons.gif)
+![Hide Submit Buttons from Dropdown Time Spinner in WinUI TimePicker](Getting-Started_images/winui-timepicker-hide-submit-button.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 

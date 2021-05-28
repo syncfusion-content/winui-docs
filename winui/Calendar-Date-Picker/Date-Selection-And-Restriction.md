@@ -24,13 +24,13 @@ sfCalendarDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar Date Picker displaying the selected date](Getting-Started_images/Selecteddate.png)
+![Changing Selected Date Programmatically in WinUI CalendarDatePicker](Getting-Started_images/winui-calendar-datepicker-selected-date.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction)
 
 You can also change the selected date interactively by selecting a date from dropdown calendar or by entering the date value in editor of `Calendar Date Picker`. You can get the selected date from the `SelectedDate` property.
 
-![Calendar Date Picker displaying selected value](Getting-Started_images/CalendarDatePicker.gif)
+![Date Selection in WinUI CalendarDatePicker](Getting-Started_images/winui-calendar-datepicker-date-selection.gif)
 
 ## Limit available dates
 
@@ -57,7 +57,7 @@ N> When `MinDisplayMode` property value is **Year** and `MinDate` value is **15/
 
 N> The `MinDate` property value should not be greater than the `MaxDate` property value.
 
-![Calendar Date Picker restrict the date selection with particular range](Getting-Started_images/MinMaxdate.png)
+![Restrict Date Selection with Specific Range in WinUI CalendarDatePicker](Getting-Started_images/winui-calendar-datepicker-restrict-date-selection.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction)
 
@@ -113,7 +113,7 @@ sfCalendarDatePicker.BlackoutDates = (sfCalendarDatePicker.DataContext as ViewMo
 {% endhighlight  %}
 {% endtabs %}
 
-![Calendar Date Picker blocks the particular dates from selection](Getting-Started_images/BlackoutDates.png)
+![WinUI CalendarDatePicker displays BlockoutDates from Selection](Getting-Started_images/winui-calendar-datepicker-blackoutdates.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/BlockedDates)
 
@@ -157,7 +157,7 @@ private void SfCalendarDatePicker_CalendarItemPrepared(object sender, CalendarIt
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar Date Picker restrict the weekend dates from selection](Getting-Started_images/blockweekend.png)
+![Restrict Weekend Dates from Selection in WinUI CalendarDatePicker](Getting-Started_images/winui-calendar-datepicker-block-weekend-dates.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/BlockedDates)
 
@@ -181,7 +181,7 @@ private void SfCalendarDatePicker_CalendarItemPrepared(object sender, CalendarIt
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar Date Picker change display text for dates](Selection-And-Restriction_images/DisplayText_event.png)
+![Changing display Text in WinUI CalendarDatePicker](Selection-And-Restriction_images/winui-calendar-datepicker-display-text.png)
 
 ## Highlight today and selected dates
 
@@ -202,7 +202,7 @@ sfCalendarDatePicker.SelectionHighlightMode = SelectionHighlightMode.Filled;
 {% endhighlight %}
 {% endtabs %}
 
-![Highlight today and selected dates in WinUI Calendar](Selection-And-Restriction_images/selectionHightlightMode.png)
+![Highlight Today and Selected Dates in WinUI CalendarDatePicker](Selection-And-Restriction_images/winui-calendar-datepicker-hightlight-selection.png)
 
 ## Change shape of today and selected date
 
@@ -223,5 +223,5 @@ sfCalendarDatePicker.SelectionShape = SelectionShape.Circle;
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar highlights the today and selected date](Selection-And-Restriction_images/selectionshape.png)
+![Changing Today and Selected Date Shape in WinUI CalendarDatePicker](Selection-And-Restriction_images/winui-calendar-datepicker-selection-shape.png)
 

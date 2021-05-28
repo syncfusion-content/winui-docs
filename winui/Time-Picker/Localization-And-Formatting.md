@@ -35,7 +35,7 @@ sfTimePicker.CalendarIdentifier = "24HourClock";
 {% endhighlight %}
 {% endtabs %}
 
-![Time Picker calendar type changed to Hebrew](Dropdown-Time-Spinner_images/ClockIdentifier.png)
+![Changing Time Format of WinUI TimePicker](Dropdown-Time-Spinner_images/winui-timepicker-time-format.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/Localization)
 
@@ -58,7 +58,7 @@ sfTimePicker.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![Time Picker flow direction changed to right to left](Dropdown-Time-Spinner_images/FlowDirection.png)
+![Chnging Flow Direction of WinUI TimePicker](Dropdown-Time-Spinner_images/winui-timepicker-flow-direction.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -81,7 +81,7 @@ sfTimePicker.Language = "ar";
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying arabic cultured WinUI Time Picker.](Dropdown-Time-Spinner_images/Language.png)
+![WinUI TimePicker with Localization](Dropdown-Time-Spinner_images/winuii-timepicker-localization.png)
 
 N> `Time Picker` control updates the flow direction visually based on the `Language` property value.
 
@@ -108,7 +108,7 @@ sfTimePicker.FormatString= "HH:mm";
 {% endhighlight %}
 {% endtabs %}
 
-![Time Picker selected time with hour and meridiem](Getting-Started_images/FormatString.png)
+![Changing Time Format of WinUI TimePicker](Getting-Started_images/winui-timepicker-time-format.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
@@ -122,9 +122,9 @@ For example,
 
 |    Default Masking   |    Input     |     Output      |
 |:---------------------|:-------------|:---------------:|
-| If you try to enter values between `13-19` into the `12HourClock` hour field, it will add last input digit(3-9) in the hour field and move the cursor to the next field. | 15 (in hour field)   | <img src="Getting-Started_images/Hour_Mask_editing.png" alt="Time Picker valid and corrects the hour field based on the input using mask editing"/> |
-| If you try to enter input in hour field that is greater than `19`, it will add first digit in hour field and last digit added into next field. | 48 (in hour field)   | <img src="Getting-Started_images/Hour_Mask_editing_1.png" alt="Time Picker valid and corrects the hour field based on the input using mask editing"/> | 
-| If you try to enter input in minute field that is greater than `59`, it will add first digit in minute field and move the cursor to the next field. |87 (in minute field) | <img src="Getting-Started_images/Minute_Mask_editing.png" alt="Time Picker valid and corrects the minute field based on the input using mask editing."/> | 
+| If you try to enter values between `13-19` into the `12HourClock` hour field, it will add last input digit(3-9) in the hour field and move the cursor to the next field. | 15 (in hour field)   | <img src="Getting-Started_images/winui-timepicker-hour-editing.png" alt="WinUI TimePicker displays Corrects Hour Field based on Input"/> |
+| If you try to enter input in hour field that is greater than `19`, it will add first digit in hour field and last digit added into next field. | 48 (in hour field)   | <img src="Getting-Started_images/winui-timepicker-editing.png" alt="WinUI TimePicker displays Corrects Hour Field based on Input"/> | 
+| If you try to enter input in minute field that is greater than `59`, it will add first digit in minute field and move the cursor to the next field. |87 (in minute field) | <img src="Getting-Started_images/winui-timepicker-minute-editing.png" alt="WinUI TimePicker displays Corrects Minute Field based on Input"/> | 
 
 {% tabs %}
 {% highlight xaml %}
@@ -141,7 +141,7 @@ sfTimePicker.EditMode = DateTimeEditingMode.Mask;
 {% endhighlight  %}
 {% endtabs %}
 
-![Time Picker enables mask editing mode to select time](Getting-Started_images/Mask_Editingmode.gif)
+![WinUI TimePicker with Editing](Getting-Started_images/winui-timepicker-editing.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
@@ -164,6 +164,6 @@ sfTimePicker.EditMode = DateTimeEditingMode.Normal;
 {% endhighlight  %}
 {% endtabs %}
 
-![Time Picker enables free form editing to select time](Getting-Started_images/editmode_Normal.gif)
+![WinUI TimePicker with Editing](Getting-Started_images/winui-timepicker-normal-edit.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)

@@ -13,11 +13,11 @@ The [WinUI Time Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 ### Normal view:
 
-![Time Picker with normal view](Overview_images/Overview_img1.png)
+![WinUI TimePicker with Normal View](Overview_images/winui-timepicker-normal-view.png)
 
 ### Expanded view:
 
-![Time Picker with dropdown time selector](Overview_images/Overview_img2.png)
+![WinUI TimePicker with Dropdown Time Selector](Overview_images/winui-timepicker-dropdown.png)
 
 ## Key Features
 

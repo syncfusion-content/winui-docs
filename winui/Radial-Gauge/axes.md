@@ -13,7 +13,7 @@ The [`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gaug
 
 ## Axis customization
 
-**Setting axis minimum and maximum value** 
+### Setting axis minimum and maximum value
 
 The [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_Maximum) properties of an axis can be used to customize the axis value range.The default value of [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_Minimum) is 0 and the default value of [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_Maximum) is 100.
 
@@ -45,9 +45,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis range](images/axis/axis_range.png)
+![WinUI Radial Gauge Axis Range](images/axis/winui-radial-gauge-axis-range.png)
 
-**Interval**
+### Interval
 
 The interval between labels can be customized using the [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_Interval) property of axis.
 
@@ -77,9 +77,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis label interval](images/axis/axis_interval.png)
+![WinUI Radial Gauge Axis Label Interval](images/axis/winui-radial-gauge-axis-label-interval.png)
 
-**Angle customization**
+### Angle customization
 
 The start and end angles of radial axis can be customized using the [`StartAngle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html#Syncfusion_UI_Xaml_Gauges_RadialAxis_StartAngle) and [`EndAngle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html#Syncfusion_UI_Xaml_Gauges_RadialAxis_EndAngle) properties.
 
@@ -111,9 +111,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis angle customization](images/axis/axis_angle.png)
+![WinUI Radial Gauge with Axis Angle](images/axis/winui-radial-gauge-with-axis-angle.png)
 
-**Radius customization**
+### Radius customization
 
 The radius of the radial axis can be customized using the [`RadiusFactor`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html#Syncfusion_UI_Xaml_Gauges_RadialAxis_RadiusFactor) property. The default value of the [`RadiusFactor`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html#Syncfusion_UI_Xaml_Gauges_RadialAxis_RadiusFactor) is 0.9. The value of [`RadiusFactor`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html#Syncfusion_UI_Xaml_Gauges_RadialAxis_RadiusFactor) ranges from 0 to 1. For example, When the [`RadiusFactor`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html#Syncfusion_UI_Xaml_Gauges_RadialAxis_RadiusFactor) value is 1, the full radius will be considered for rendering the axis and when the [`RadiusFactor`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html#Syncfusion_UI_Xaml_Gauges_RadialAxis_RadiusFactor) value is 0.5, then half of the radius value will be considered for rendering the circle.
 
@@ -147,9 +147,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis radius customization](images/axis/axis_radius.png)
+![WinUI Radial Gauge with Axis Radius](images/axis/winui-radial-gauge-with-axis-radius.png)
 
-**Positioning axis based on its angle**
+### Positioning axis based on its angle
 
 The [`CanScaleToFit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfRadialGauge.html#Syncfusion_UI_Xaml_Gauges_SfRadialGauge_CanScaleToFit) property of [`radial gauge`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfRadialGauge.html) allows to position the axis and its features based on the provided [`StartAngle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html#Syncfusion_UI_Xaml_Gauges_RadialAxis_StartAngle) and [`EndAngle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html#Syncfusion_UI_Xaml_Gauges_RadialAxis_EndAngle). By default, the [`CanScaleToFit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfRadialGauge.html#Syncfusion_UI_Xaml_Gauges_SfRadialGauge_CanScaleToFit) is true.
 
@@ -184,10 +184,10 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis fit to scale](images/axis/axis_fitToScale.png)
+![WinUI Radial Gauge Axis Fit to Scale](images/axis/winui-radial-gauge-with-axis-fit-to-scale.png)
 
 
-**Axis label rotation**
+### Axis label rotation
 
 The axis label can be rotated based on its current angle using the [`CanRotateLabels`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_CanRotateLabels) property of axis. The default value of [`CanRotateLabels`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_CanRotateLabels) is false.
 
@@ -217,9 +217,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis label rotation](images/axis/axis_rotate.png)
+![WinUI Radial Gauge Axis Label Rotation](images/axis/winui-radial-gauge-axis-label-rotation.png)
 
-**Edge label customization**
+### Edge label customization
 
 The visibility of the first and last labels of an axis can be customized using the [`ShowFirstLabel`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_ShowFirstLabel) and [`ShowLastLabel`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_ShowLastLabel) properties. 
 
@@ -264,9 +264,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis edge label](images/axis/axis_showfirstlabel.png)
+![WinUI Radial Gauge Axis Edge Label](images/axis/winui-radial-gauge-axis-edge-label.png)
 
-**Axis direction customization**
+### Axis direction customization
 
 The direction of [`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) can be customized by its [`IsInversed`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_IsInversed) property. 
 
@@ -298,9 +298,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis direction](images/axis/axis_inversed.png)
+![WinUI Radial Gauge Axis Direction](images/axis/winui-radial-gauge-axis-direction.png)
 
-**Maximum number of labels per 100 logical pixels**
+### Maximum number of labels per 100 logical pixels
 
 By default, a maximum of three labels are displayed for each 100 logical pixels in an axis. The maximum number of labels that should present within 100 logical pixels length can be customized using the [`MaximumLabelsCount`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_MaximumLabelsCount) property of the axis. This property is applicable only for automatic range calculation and will not work if you set value for interval property of an axis.
 
@@ -330,7 +330,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis maximum labels](images/axis/axis_maximumlabels.png)
+![WinUI Radial Gauge Axis Maximum Labels](images/axis/winui-radial-gauge-axis-maximum-labels.png)
 
 ## Axis line customization
 
@@ -341,7 +341,7 @@ The radial axis line can be customized using the following properties.
 * [`AxisLineFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_AxisLineFill) – Customizes the color of the axis line.
 * [`GradientStops`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_GradientStops) - Allows to apply the gradient brush for axis line.
 
-**Axis line width in pixel**
+### Axis line width in pixel
 
 If the [`AxisLineWidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_AxisLineWidthUnit) is set as a pixel, the axis line will be rendered based on the pixel values given in [`AxisLineWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_AxisLineWidth).
 
@@ -373,9 +373,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis line width in pixel](images/axis/axis_width_pixel.png)
+![WinUI Radial Gauge Axis Line Width in Pixel](images/axis/winui-radial-gauge-axis-line-width-in-pixel.png)
 
-**Axis line width in factor**
+### Axis line width in factor
 
 If the [`AxisLineWidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_AxisLineWidthUnit) is set as a factor, the given factor value in the [`AxisLineWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_AxisLineWidth) is multiplied by the axis radius. The value of the factor ranges from 0 to 1.
 
@@ -407,9 +407,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis line width in factor](images/axis/axis_width_factor.png)
+![WinUI Radial Gauge Axis Line Width in Factor](images/axis/winui-radial-gauge-axis-line-width-in-factor.png)
 
-**Setting axis line fill brush**
+### Setting axis line fill brush
 
 To fill the brush to axis line using the [`AxisLineFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_AxisLineFill) property of radial axis. 
 
@@ -443,9 +443,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis line fill customization](images/axis/axis_color.png)
+![WinUI Radial Gauge Axis Line Stroke Color](images/axis/winui-radial-gauge-axis-line-stroke-color.png)
 
-**Setting gradient brush to axis line**
+### Setting gradient brush to axis line
 
 The [`GradientStops`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_GradientStops) property of radial axis allows to specify the gradient brush to the axis line by specifying the different colors based on provided axis value.
 
@@ -494,9 +494,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis gradient line](images/axis/axis_gradient.png)
+![WinUI Radial Gauge Axis Gradient Line](images/axis/winui-radial-gauge-axis-gradient-line.png)
 
-**Axis line visibility**
+### Axis line visibility
 
 The visibility of the axis line can be customized using the [`ShowAxisLine`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_ShowAxisLine) property of axis. By default, this property is set to true.
 
@@ -526,9 +526,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis line visibility](images/axis/axis_showline.png)
+![WinUI Radial Gauge Axis Line Visibility](images/axis/winui-radial-gauge-axis-line-visibility.png)
 
-**Background Content Support**
+### Background Content Support
 
 [`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) allows you to add any visual contents as its background using the [`BackgroundContent`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html#Syncfusion_UI_Xaml_Gauges_RadialAxis_BackgroundContent) property.
 
@@ -695,7 +695,7 @@ private void RadialAxis_LabelPrepared(object sender, LabelPreparedEventArgs e)
 
 {% endtabs %}
 
-![axis background content](images/axis/axis_background.png)
+![WinUI Radial Gauge Axis Background](images/axis/winui-radial-gauge-axis-background.png)
 
 ## Axis label customization
 
@@ -741,9 +741,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis label customization](images/axis/axis_label.png)
+![WinUI Radial Gauge Axis Label Customization](images/axis/winui-radial-gauge-axis-label-customization.png)
 
-**Formatting axis label**
+### Formatting axis label
 
 The following property of the axis allows to customize the axis label text.
 
@@ -775,9 +775,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis label format](images/axis/axis_labelFormat.png)
+![WinUI Radial Gauge Axis Label Format](images/axis/winui-radial-gauge-axis-label-format.png)
 
-**Template support for axis label**
+### Template support for axis label
 
 The [`LabelTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_LabelTemplate) property allows you to define the data template for the axis label's like the following code example.
 
@@ -820,9 +820,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis label format](images/axis/axis_labelTemplate.png)
+![WinUI Radial Gauge Axis Label Template](images/axis/winui-radial-gauge-axis-label-template.png)
 
-**Label visibility**
+### Label visibility
 
 The [`ShowLabels`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_ShowLabels) property of axis allows to enable or disable the visibility of labels. The default value of the property is true.
 
@@ -852,9 +852,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis label visibility](images/axis/axis_showLabels.png)
+![WinUI Radial Gauge Axis Label Visibility](images/axis/winui-radial-gauge-axis-label-visibility.png)
 
-**Label placement**
+### Label placement
 
 The radial axis allows to position the labels either inside or outside of the axis line using the [`LabelPosition`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_LabelPosition) property. By default, labels are positioned inside the axis line.
 
@@ -884,13 +884,13 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![label placement](images/axis/axis_labelOutside.png)
+![WinUI Radial Gauge Axis Label Placement](images/axis/winui-radial-gauge-axis-label-placement.png)
 
-**Label position customization**
+### Label position customization
 
 The [`LabelOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_LabelOffset) property allows to adjust the distance between the axis line and the labels. The [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_OffsetUnit) property of axis allows to specify the label offset either in factor or pixels. By default, the value of the label offset is double.NaN.
 
-**Label offset in pixel**
+### Label offset in pixel
 
 If the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_OffsetUnit) is set as a pixel, the axis labels will be moved based on the pixel values given in [`LabelOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_LabelOffset).
 
@@ -922,9 +922,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis label offset in pixel](images/axis/axis_labelOffset_Pixel.png)
+![WinUI Radial Gauge Axis Label Offset in Pixel](images/axis/winui-radial-gauge-axis-label-offset-pixel.png)
 
-**Label offset in factor**
+### Label offset in factor
 
 If the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_OffsetUnit) is set as a factor, then the provided factor value in the [`LabelOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_LabelOffset) is multiplied by the axis radius. The factor value ranges from 0 to 1.
 
@@ -956,7 +956,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis label offset in factor](images/axis/axis_labelOffset_factor.png)
+![WinUI Radial Gauge Axis Label Offset factor](images/axis/winui-radial-gauge-axis-label-offset-factor.png)
 
 N> The [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_OffsetUnit) property of axis is common for both the [`TickOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_TickOffset) and [`LabelOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_LabelOffset).
 
@@ -974,7 +974,7 @@ The major and minor tick lines of an axis can be customized using the below prop
 
 * [`MinorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_MinorTickStyle) – Allows to specify the style for minor tick line.
 
-**Tick length in pixel**
+### Tick length in pixel
 
 If the [`TickLengthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_TickLengthUnit) is set as a pixel,  the major and minor tick lines will be rendered based on the pixel values given in [`MajorTickLength`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_MajorTickLength) and [`MinorTickLength`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_MinorTickLength).
 
@@ -1008,9 +1008,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis tick length in pixel](images/axis/axis_tickLength_pixel.png)
+![WinUI Radial Gauge Axis Tick Length in Pixel](images/axis/winui-radial-gauge-axis-tick-length-in-pixel.png)
 
-**Tick length in factor**
+### Tick length in factor
 
 If the [`TickLengthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_TickLengthUnit) is set as a factor, the provided factor value in the [`MajorTickLength`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_MajorTickLength) and [`MinorTickLength`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_MinorTickLength) is multiplied by the axis radius, respectively. The factor value ranges from 0 to 1.
 
@@ -1044,9 +1044,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis tick length in factor](images/axis/axis_tickLength_factor.png)
+![WinUI Radial Gauge Axis Tick Length in Factor](images/axis/winui-radial-gauge-axis-tick-length-in-factor.png)
 
-**Setting style for major ticks**
+### Setting style for major ticks
 
 The [`MajorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_MajorTickStyle) property allows you to define the style for the major tick's as shown in the following code example.
 
@@ -1086,9 +1086,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![major tick style](images/axis/axis_majorTickStyle.png)
+![WinUI Radial Gauge Major Tick Style](images/axis/winui-radial-gauge-major-tick-style.png)
 
-**Setting style for minor ticks**
+### Setting style for minor ticks
 
 The [`MinorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_MinorTickStyle) property allows you to define the style for the minor tick's as shown in the following code example.
 
@@ -1128,9 +1128,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![minor tick style](images/axis/axis_minorTickStyle.png)
+![WinUI Radial Gauge Minor Tick Style](images/axis/winui-radial-gauge-minor-tick-style.png)
 
-**Setting dashed tick lines**
+### Setting dashed tick lines
 
 By defining `StrokeDashArray` property in both [`MajorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_MajorTickStyle) and [`MinorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_MinorTickStyle) to draw the dashed tick line.
 
@@ -1184,9 +1184,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![dashed tick lines](images/axis/axis_tickdash.png)
+![WinUI Radial Gauge Dashed Tick Lines](images/axis/winui-radial-gauge-dashed-tick-lines.png)
 
-**Setting minor ticks count**
+### Setting minor ticks count
 
 The major ticks are generated based on the [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_Interval) property. Like major ticks, the minor ticks are generated using the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_MinorTicksPerInterval) property of axis.  By default, the count value of this property is 1.
 
@@ -1216,9 +1216,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![minor tick line](images/axis/axis_minortick.png)
+![WinUI Radial Gauge Minor Ticks Count](images/axis/winui-radial-gauge-minor-ticks-count.png)
 
-**Tick line visibility**
+### Tick line visibility
 
 The [`ShowTicks`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_ShowTicks) property of the axis is used to enable or disable the visibility of both the major and the minor ticks of axis. The default value of this property is true.
 
@@ -1248,9 +1248,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![tick line visibilty](images/axis/axis_showticks.png)
+![WinUI Radial Gauge Tick Line Visibility](images/axis/winui-radial-gauge-tick-line-visibility.png)
 
-**Tick placement**
+### Tick placement
 
 The [`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) allows to position the ticks either inside or outside or center of the axis line using the [`TickPosition`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_TickPosition) property. By default, ticks are positioned inside the axis line.
 
@@ -1280,13 +1280,13 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![tick placement](images/axis/axis_tickOutside.png)
+![WinUI Radial Gauge Tick Placement](images/axis/winui-radial-gauge-tick-placement.png)
 
-**Tick position customization**
+### Tick position customization
 
 The ticks can be moved near or far to the axis line using the [`TickOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_TickOffset) property. The [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_OffsetUnit) property of axis allows to specify the [`TickOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_TickOffset) either in factor or pixels and the default value of [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_OffsetUnit) is Pixel and the default value of [`TickOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_TickOffset) is double.NaN.
 
-**Tick offset in pixel**
+### Tick offset in pixel
 
 If the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_OffsetUnit) is set as a pixel, the axis ticks will be moved based on the pixel values given in [`TickOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_TickOffset).
 
@@ -1316,9 +1316,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis tick offset in pixel](images/axis/axis_tickOffset_pixel.png)
+![WinUI Radial Gauge Axis Tick Offset in Pixel](images/axis/winui-radial-gauge-axis-tick-offset-pixel.png)
 
-**Tick offset in factor**
+### Tick offset in factor
 
 If the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_OffsetUnit) is set as a factor, the provided factor value in the [`TickOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_TickOffset) is multiplied by the axis radius. The factor value ranges from 0 to 1.
 
@@ -1350,7 +1350,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis tick offset in factor](images/axis/axis_tickOffset_factor.png)
+![WinUI Radial Gauge Axis Tick Offset Factor](images/axis/winui-radial-gauge-axis-tick-offset-factor.png)
 
 N> The [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_OffsetUnit) property of axis is common for both the [`TickOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_TickOffset) and [`LabelOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_RadialAxis_LabelOffset).
 
@@ -1477,7 +1477,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![axis label offset](images/axis/axis_multiplescale.png)
+![WinUI Radial Guage Multiple Axis](images/axis/winui-radial-gauge-multiple-axis.png)
 
 ## Custom scale range
 
@@ -1602,11 +1602,11 @@ public class RadialAxisExt : RadialAxis
 
 {% endtabs %}
 
-![custom scale](images/axis/custom_scale.png)
+![WinUI Radial Gauge Custom Scale](images/axis/winui-radial-gauge-custom-scale.png)
 
 ## Events
 
-**LabelPrepared**
+### LabelPrepared
 
 The [`LabelPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_GaugeAxis_LabelPrepared) event occurs each time a label is prepared for use. The following properties can be customized for each label in this event args:
 
@@ -1635,9 +1635,9 @@ private void RadialAxis_LabelPrepared(object sender, LabelPreparedEventArgs e)
 
 {% endtabs %}
 
-![axis label prepared event](images/axis/axis_labelPrepared.png)
+![WinUI Radial Gauge Axis Events](images/axis/winui-radial-gauge-axis-events.png)
 
-**AxisTapped**
+### AxisTapped
 
 The [`AxisTapped`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html#Syncfusion_UI_Xaml_Gauges_RadialAxis_AxisTapped) event is called when an axis is tapped. The corresponding axis value at the tapped position will be got from the event argument.
 
