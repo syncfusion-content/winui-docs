@@ -34,7 +34,7 @@ sfCalendarDatePicker.DisplayMode = CalendarDisplayMode.Month;
 {% endhighlight %}
 {% endtabs %}
 
-![Navigation between month and century view in WinUI Calendar Date Picker](Navigation_images/navigationRestriction.gif)
+![WinUI CalendarDatePicker displays Navigation View](Navigation_images/winui-calendar-datepicker-navigation.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction)
 
@@ -62,7 +62,7 @@ sfCalendarDatePicker.FormatString = "MM/yyyy";
 {% endhighlight %}
 {% endtabs %}
 
-![Credit card valid date selection in WinUI Calendar](Navigation_images/selectionBasedOnNavigation.gif)
+![Restrict Date Selection in WinUI CalendarDatePicker](Navigation_images/winui-calendar-datepicker-restriction.gif)
 
 You can navigate between elements in the dropdown calendar of `Calendar Date Picker` control by keyboard keys or by mouse interaction. The keyboard keys to navigate and select are listed below.
 

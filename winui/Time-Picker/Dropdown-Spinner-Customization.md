@@ -40,7 +40,7 @@ sfTimePicker.ItemHeight = 50;
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown time spinner cell size changed](Dropdown-Time-Spinner_images/ItemWidth.png)
+![Changing Dropdown Time Spinner Cell Size of WinUI TimePicker](Dropdown-Time-Spinner_images/winui-timepicker-cell-size.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -63,7 +63,7 @@ You can customize all the dropdown time spinner cells by using the `ItemContaine
 {% endhighlight %}
 {% endtabs %}
 
-![Time Picker with customized dropdown time spinner cells](Dropdown-Time-Spinner_images/ItemContainerStyle.png)
+![Customizing Dropdown Time Spinner Cells in WinUI TimePicker](Dropdown-Time-Spinner_images/winui-timepicker-cell-style.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/SpinnerCustomUI)
 
@@ -187,7 +187,7 @@ public class TimeItemTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Custom UI of specific time cells in dropdown spinner](Dropdown-Time-Spinner_images/ItemTemplateSelector.png)
+![WinUI TimePicker displays Customizes Specific Time Cells in Dropdown Spinner](Dropdown-Time-Spinner_images/winui-timepicker-cells-customization.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/CustomUI)
 
@@ -275,6 +275,6 @@ private void SfTimePicker_TimeFieldPrepared(object sender, DateTimeFieldPrepared
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown spinner time field elements customized using TimeFieldPrepared event](Dropdown-Time-Spinner_images/TimeFieldPrepared.png)
+![Customizing Column of Dropdown Spinner Time in WinUI TimePicker](Dropdown-Time-Spinner_images/winui-timepicker-column-customization.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeFieldPrepared)

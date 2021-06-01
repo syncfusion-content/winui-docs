@@ -11,7 +11,7 @@ documentation: ug
 
 Linear gauge range is a visual element that helps to quickly visualize where a value falls on the axis.
 
-**Setting start and end value**
+## Setting start and end value
 
 The start and end values of ranges are set using the [`StartValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugeRange.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeRange_StartValue) and [`EndValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugeRange.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeRange_EndValue) properties.
 
@@ -61,7 +61,7 @@ The following properties are used for the range customization:
 
 * [`GradientStops`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugeRange.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeRange_GradientStops) - Specifies the gradient for the range.
 
-**Equal range width**
+### Equal range width
 
 Range width can be controlled by [`StartWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugeRange.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeRange_StartWidth), [`MidWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugeRange.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeRange_MidWidth) and [`EndWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugeRange.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeRange_EndWidth) properties of the range.
 
@@ -103,7 +103,7 @@ this.Content = sfLinearGauge;
 
 N> The [`MidWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugeRange.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeRange_MidWidth) is not considered until change its default value.
 
-**Different range width**
+### Different range width
 
 By setting different values to [`StartWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugeRange.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeRange_StartWidth), [`MidWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugeRange.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeRange_MidWidth) and [`EndWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugeRange.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeRange_EndWidth) property, you can create different width ranges. 
 
@@ -145,7 +145,7 @@ this.Content = sfLinearGauge;
 
 ![range thickness](images/range/range_thickness.png)
 
-**Setting gradient brush to the range**
+### Setting gradient brush to the range
 
  The [`GradientStops`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugeRange.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeRange_GradientStops) property of [`range`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugeRange.html) allows you to specify the smooth color transition to the pointer by specifying the different colors based on provided axis value.
 
@@ -199,7 +199,7 @@ this.Content = sfLinearGauge;
 
 ![range gradient](images/range/range_gradient.png)
 
-**Range position**
+### Range position
 
 The linear axis allows to position the labels either inside or outside or center of the axis line using the [`RangePosition`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugeRange.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeRange_RangePosition) property. By default, range positioned outside the axis line.
 

@@ -25,7 +25,7 @@ sfDatePicker.MaxDate = new DateTimeOffset(new DateTime(2020,12,20));
 {% endhighlight  %}
 {% endtabs %}
 
-![Date Picker restrict the date selection with particular range](Getting-Started_images/MinDate.png)
+![Restrict Date Selection with Specific Range in WinUI DatePicker](Getting-Started_images/winui-datepicker-date-restriction.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
@@ -73,7 +73,7 @@ sfDatePicker.BlackoutDates = (sfDatePicker.DataContext as ViewModel).BlockedDate
 {% endhighlight  %}
 {% endtabs %}
 
-![Date Picker blocks the particular dates from selection](Getting-Started_images/BlackoutDates.png)
+![WinUI DatePicker with BlackoutDates](Getting-Started_images/winui-datepicker-blackoutdates.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -113,7 +113,7 @@ private void SfDatePicker_DateFieldItemPrepared(object sender, DateTimeFieldItem
 {% endhighlight  %}
 {% endtabs %}
 
-![Date Picker blocksweekend dates from selection](Getting-Started_images/blockweekends.png)
+![Restrict Weekend Dates in WinUI DatePicker](Getting-Started_images/winui-datepicker-block-weekends.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
@@ -136,7 +136,7 @@ sfDatePicker.ShowSubmitButtons = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Date Picker hides the dropdown date spinner submit and cancel buttons](Getting-Started_images/ShowSubmitButtons.gif)
+![Hide Submit Buttons from Dropdown Date Spinner in WinUI DatePicker](Getting-Started_images/winui-datepicker-hide-submit-button.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 

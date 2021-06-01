@@ -30,7 +30,7 @@ sfCalendar.OutOfScopeVisibility = OutOfScopeVisibility.Hidden;
 {% endhighlight %}
 {% endtabs %}
 
-![Display only the current month dates in WinUI Calendar.](Getting-Started_images/disableoutofscope.png)
+![WinUI Calendar - Trailing and Leading Days Visibility](Getting-Started_images/winui-calendar-out-of-scope.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction)
 
@@ -166,7 +166,7 @@ public class EventDataConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Custom UI of specific date cells in Calendar](Getting-Started_images/ItemTemplateSelector.png)
+![WinUI Calendar Custom UI for Specific Cell](Getting-Started_images/winui-calendar-custom-ui-for-specific-cell.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/CustomUI)
 
@@ -277,7 +277,7 @@ You can customize the colors of day names and headers of month, year, decade and
 {% endhighlight %}
 {% endtabs %}
 
-![Customize calendar using theme keys](UI-Customization_images/customize-theme-keys.png)
+![WinUI Calendar Themes](UI-Customization_images/winui-calendar-themes.png)
 
 N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/CustomUI)
 

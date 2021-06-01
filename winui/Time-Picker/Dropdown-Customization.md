@@ -43,7 +43,7 @@ You can customize the UI of dropdown button by using the [`DropDownButtonTemplat
 {% endhighlight %}
 {% endtabs %}
 
-![Time Picker with customized dropdown button](Dropdown-Time-Spinner_images/DropDownButtonTemplate.png)
+![Customizing Dropdown Button in WinUI TimePicker](Dropdown-Time-Spinner_images/winui-timepicker-dropdown-customization.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/SpinnerCustomUI)
 
@@ -68,7 +68,7 @@ sfTimePicker.ShowDropDownButton = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Time Picker hides the dropdown button](Dropdown-Time-Spinner_images/ShowDropDownButton.png)
+![Hide Dropdown Button in WinUI TimePicker](Dropdown-Time-Spinner_images/winui-timepicker-hide-dropdown.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -93,7 +93,7 @@ sfTimePicker.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAlignedLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![Alignment of dropdown time spinner is changed to BottomEdgeAlignedLeft](Dropdown-Time-Spinner_images/DropDownPlacement.png)
+![Changing Dropdown Alignment of WinUI TimePicker](Dropdown-Time-Spinner_images/winui-timepicker-dropdown-placement.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -116,7 +116,7 @@ sfTimePicker.IsOpen = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Time Picker opens the dropdown date spinner programmatically](Dropdown-Time-Spinner_images/IsOpen.png)
+![WinUI TimePicker displays Dropdown Date Spinner Programmatically](Dropdown-Time-Spinner_images/winui-timepicker-open-dropdown.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/Localization)
 
@@ -139,7 +139,7 @@ sfTimePicker.DropDownHeight = 200;
 {% endhighlight %}
 {% endtabs %}
 
-![Time Picker with customized dropdown height](Dropdown-Time-Spinner_images/DropDownHeight.gif)
+![Changing Dropdown Height of WinUI TimePicker](Dropdown-Time-Spinner_images/winui-timepicker-dropdown-height.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -164,7 +164,7 @@ sfTimePicker.VisibleItemsCount = 5
 {% endhighlight %}
 {% endtabs %}
 
-![Number of time to be shown in the dropdown is changed](Dropdown-Time-Spinner_images/VisibleItemsCount.png)
+![Changing Number of Times in Dropdown in WinUI TimePicker](Dropdown-Time-Spinner_images/winui-timepicker-visible-count.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
