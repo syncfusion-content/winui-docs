@@ -13,7 +13,7 @@ The [`Linear axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gaug
 
 ## Axis customization
 
-**Setting axis minimum and maximum value** 
+### Setting axis minimum and maximum value
 
 The [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_LinearAxis_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_Maximum) properties of an axis can be used to customize the axis value range. The default value of [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_LinearAxis_Minimum) is 0 and  [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_Maximum) is 100.
 
@@ -43,7 +43,7 @@ this.Content = sfLinearGauge;
 
 ![axis range](images/axis/axis_range.png)
 
-**Interval**
+### Interval
 
 The interval between labels can be customized using the [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_Interval) property of axis.
 
@@ -71,7 +71,7 @@ this.Content = sfLinearGauge;
 
 ![axis label interval](images/axis/axis_interval.png)
 
-**Axis direction customization**
+### Axis direction customization
 
 The direction of [`Linear axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html?tabs=tabid-1) can be customized by the [`IsInversed`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html#Syncfusion_UI_Xaml_Gauges_SfLinearGauge_IsInversed) property of [`Linear gauge`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html). 
 
@@ -95,7 +95,7 @@ this.Content = new SfLinearGauge { IsInversed = true };
 
 ![axis direction](images/axis/axis_inversed.png)
 
-**Mirrored axis support**
+### Mirrored axis support
 
 [`Linear axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html?tabs=tabid-1) can be displayed as mirrored by using the [`IsMirrored`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html#Syncfusion_UI_Xaml_Gauges_SfLinearGauge_IsMirrored) property of [`Linear gauge`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html).
 
@@ -119,7 +119,7 @@ this.Content = new SfLinearGauge { IsMirrored = true };
 
 ![mirrored axis](images/axis/axis_isMirrored.png)
 
-**Axis orientation support**
+### Axis orientation support
 
 The orientation of [`Linear axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html?tabs=tabid-1) can be customized by using the [`Orientation`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html#Syncfusion_UI_Xaml_Gauges_SfLinearGauge_Orientation) property of [`Linear gauge`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html). 
 
@@ -143,7 +143,7 @@ this.Content = new SfLinearGauge { Orientation = Orientation.Vertical };
 
 ![vertical axis](images/axis/axis_orientation.png)
 
-**Maximum number of labels per 100 logical pixels**
+### Maximum number of labels per 100 logical pixels
 
 The maximum number of labels that should be present within 100 logical pixels length can be customized using the [`MaximumLabelsCount`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_MaximumLabelsCount) property of the axis. This property is applicable only for automatic range calculation and will not work, if you set value for interval property of an axis.
 
@@ -179,7 +179,7 @@ The linear axis line can be customized using the following properties:
 * [`AxisLineStroke`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_AxisLineStroke) – Customizes the color of the axis line.
 * [`AxisLineStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_AxisLineStyle) – Customizes the style of the axis line.
 
-**Axis line stroke thickness**
+### Axis line stroke thickness
 
 The axis line will be rendered based on the pixel value given in [`AxisLineStrokeThickness`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_AxisLineStrokeThickness).
 
@@ -207,7 +207,7 @@ this.Content = sfLinearGauge;
 
 ![axis line width](images/axis/axis_strokeThickness.png)
 
-**Setting axis line stroke color**
+### Setting axis line stroke color
 
 To apply the color to the axis line using the [`AxisLineStroke`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_AxisLineStroke) property of linear axis. 
 
@@ -235,7 +235,7 @@ this.Content = sfLinearGauge;
 
 ![axis line fill customization](images/axis/axis_color.png)
 
-**Axis line visibility**
+### Axis line visibility
 
 The visibility of the axis line can be customized using the [`ShowAxisLine`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_ShowAxisLine) property of axis. By default, this property is set to true.
 
@@ -305,7 +305,7 @@ this.Content = sfLinearGauge;
 
 ![axis label customization](images/axis/axis_label.png)
 
-**Formatting axis label**
+### Formatting axis label
 
 The [`LabelFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_LabelFormat) allows to customize the axis label with the globalized label format.
 
@@ -333,7 +333,7 @@ this.Content = sfLinearGauge;
 
 ![axis label format](images/axis/axis_labelFormat.png)
 
-**Template support for axis label**
+### Template support for axis label
 
 The [`LabelTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_LabelTemplate) property allows you to define the customized style for the axis label as shown in the following code sample.
 
@@ -374,7 +374,7 @@ this.Content = sfLinearGauge;
 
 ![axis label format](images/axis/axis_labelTemplate.png)
 
-**Label visibility**
+### Label visibility
 
 The [`ShowLabels`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_ShowLabels) property of axis allows to enable or disable the visibility of labels. The default value of this property is true.
 
@@ -402,7 +402,7 @@ this.Content = sfLinearGauge;
 
 ![axis label visibility](images/axis/axis_showLabels.png)
 
-**Label placement**
+### Label placement
 
 The linear axis allows to position the labels either inside or outside of the axis line using the [`LabelPosition`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_LabelPosition) property. By default, labels are positioned inside the axis line.
 
@@ -430,7 +430,7 @@ this.Content = sfLinearGauge;
 
 ![label placement](images/axis/axis_labelOutside.png)
 
-**Label position customization**
+### Label position customization
 
 The [`LabelOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_LabelOffset) property allows to adjust the distance between the axis line and the labels. By default, the value of the label offset is 5.
 
@@ -470,7 +470,7 @@ The major and minor tick lines of an axis can be customized using the following 
 
 * [`MinorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_MinorTickStyle) – Allows to specify the style for minor tick line.
 
-**Tick length**
+### Tick length
 
 The major and minor tick lines will be rendered based on the pixel values given in [`MajorTickLength`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_MajorTickLength) and [`MinorTickLength`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_MinorTickLength).
 
@@ -500,7 +500,7 @@ this.Content = sfLinearGauge;
 
 ![axis tick length](images/axis/axis_tickLength.png)
 
-**Setting style for major ticks**
+### Setting style for major ticks
 
 The [`MajorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_MajorTickStyle) property allows you to define the style for the major tick's as shown in the following code example.
 
@@ -538,7 +538,7 @@ this.Content = sfLinearGauge;
 
 ![major tick style](images/axis/axis_majorTickStyle.png)
 
-**Setting style for minor ticks**
+### Setting style for minor ticks
 
 The [`MinorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_MinorTickStyle) property allows you to define the style for the minor tick's as shown in the following code example.
 
@@ -576,7 +576,7 @@ this.Content = sfLinearGauge;
 
 ![minor tick style](images/axis/axis_minorTickStyle.png)
 
-**Setting dashed tick lines**
+### Setting dashed tick lines
 
 By defining `StrokeDashArray` property in both the [`MajorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_MajorTickStyle) and [`MinorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_MinorTickStyle), you can draw the dashed tick line.
 
@@ -628,7 +628,7 @@ this.Content = sfLinearGauge;
 
 ![dashed tick lines](images/axis/axis_tickdash.png)
 
-**Setting minor ticks count**
+### Setting minor ticks count
 
 The major ticks are generated based on the [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_Interval) property. Similarly, the minor ticks are generated using the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_MinorTicksPerInterval) property of axis. By default, the count value of this property is 1.
 
@@ -656,7 +656,7 @@ this.Content = sfLinearGauge;
 
 ![minor tick line](images/axis/axis_minortick.png)
 
-**Tick line visibility**
+### Tick line visibility
 
 The [`ShowTicks`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_ShowTicks) property of the axis can be used to enable or disable the visibility of both the major and the minor ticks of axis.
 
@@ -684,7 +684,7 @@ this.Content = sfLinearGauge;
 
 ![tick line visibilty](images/axis/axis_showticks.png)
 
-**Tick placement**
+### Tick placement
 
 The [`Linear axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html?tabs=tabid-1) allows to position the ticks either inside or outside or center of the axis line using the [`TickPosition`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_TickPosition) property. By default, ticks are positioned inside the axis line.
 
@@ -712,7 +712,7 @@ this.Content = sfLinearGauge;
 
 ![tick placement](images/axis/axis_tickOutside.png)
 
-**Tick position customization**
+### Tick position customization
 
 The ticks can be moved near or far to the axis line using the [`TickOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_TickOffset) property. The default value of [`TickOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_TickOffset) is 0.
 

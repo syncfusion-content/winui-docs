@@ -13,7 +13,7 @@ This section explains the steps required to add the [WinUI Calendar Date Picker]
 
 ## Structure of Calendar Date Picker control
 
-![Structure of WinUI Calendar Date Picker control](Getting-Started_images/Structure.png)
+![Overview of WinUI CalendarDatePicker](Getting-Started_images/winui-calendar-datepicker.png)
 
 ## Creating an application with WinUI Calendar Date Picker
 
@@ -67,7 +67,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar Date Picker control added in the application](Getting-Started_images/Calendardatepicker_Added.png)
+![WinUI CalendarDatePicker control](Getting-Started_images/winui-calendar-datepicker-control.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/GettingStarted)
 
@@ -84,7 +84,7 @@ sfCalendarDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar Date Picker displaying the selected date](Getting-Started_images/Selecteddate.png)
+![Changing Selected Date Programmatically in WinUI CalendarDatePicker](Getting-Started_images/winui-calendar-datepicker-selected-date.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction)
 
@@ -105,7 +105,7 @@ SfCalendarDatePicker sfCalendarDatePicker= new SfCalendarDatePicker();
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar Date Picker displaying selected value](Getting-Started_images/CalendarDatePicker.gif)
+![Date Selection in WinUI CalendarDatePicker](Getting-Started_images/winui-calendar-datepicker-date-selection.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/GettingStarted)
 
@@ -130,7 +130,7 @@ sfCalendarDatePicker.AllowNullValue = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar Date Picker displaying null value](Getting-Started_images/AllowNullValue.png)
+![WinUI CalendarDatePicker with Null Value](Getting-Started_images/winui-calendar-datepicker-null-value.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection)
 
@@ -157,7 +157,7 @@ sfCalendarDatePicker.AllowNullValue = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar Date Picker displaying watermark text](Getting-Started_images/PlaceHolderText.png)
+![Calendar Date Picker with Watermark Text](Getting-Started_images/winui-calendar-datepicker-with-watermark.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection)
 
@@ -218,7 +218,7 @@ sfCalendarDatePicker.EditMode = DateTimeEditingMode.Normal;
 {% endhighlight  %}
 {% endtabs %}
 
-![Calendar Date Picker enables free form editing to select date](Getting-Started_images/EditModeNormal.png)
+![Editing in WinUI CalendarDatePicker](Getting-Started_images/winui-calendar-datepicker-editing.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection)
 
@@ -288,7 +288,7 @@ sfCalendarDatePicker.ShowDropDownButton = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar Date Picker hides the dropdown button](Dropdown-Calendar_images/ShowDropDownButton.png)
+![Hide Dropdown Button in WinUI CalendarDatePicker](Dropdown-Calendar_images/winui-calendar-datepicker-hide-dropdown-button.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown)
 
@@ -313,7 +313,7 @@ sfCalendarDatePicker.ShowSubmitButtons = true;
 {% endhighlight %}
 {% endtabs %}
 
-![SfCalendarDatePicker hides the drop down calendar submit and cancel buttons](Dropdown-Calendar_images/ShowSubmitButtons.png)
+![WinUI CalendarDatePicker with Submit and Cancel Buttons](Dropdown-Calendar_images/winui-calendar-dropdown-submit-button.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown)
 
@@ -332,6 +332,6 @@ For further details refer [Date Selection and Restriction](date-selection-and-re
 * You can navigate between month, year, decade and century views in `Calendar Date Picker` control.
 * You can also restrict the users to navigate between specific views only (month and year selection for credit card) using [`MinDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MinDisplayMode) and [`MaxDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MaxDisplayMode) properties.
 
-    ![Navigation between views](Getting-Started_images/View-Navigation.gif)
+![WinUI CalendarDatePicker displays Navigation View](Getting-Started_images/winui-calendar-datepicker-view-navigation.gif)
 
 For further details refer [Navigation](navigation).

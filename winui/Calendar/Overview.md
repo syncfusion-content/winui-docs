@@ -13,7 +13,7 @@ The [WinUI Calendar](https://www.syncfusion.com/winui-controls/calendar) control
 
 ## Control structure
 
-![WinUI Calendar control](Getting-Started_images/overview.png)
+![WinUI Calendar Control](Getting-Started_images/winui-calendar-control.png)
 
 ## Key Features
 

@@ -32,7 +32,7 @@ sfCalendarDatePicker.DropDownPlacement = FlyoutPlacementMode.Right;
 {% endhighlight %}
 {% endtabs %}
 
-![Alignment of dropdown calendar is changed to BottomEdgeAlignedLeft](Dropdown-Calendar_images/DropDownPlacement.png)
+![Changing Dropdown Alignment of WinUI CalendarDatePicker](Dropdown-Calendar_images/winui-calendar-datepicker-dropdown-placement.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown)
 
@@ -58,7 +58,7 @@ sfCalendarDatePicker.DropDownHeight = 500;
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar Date Picker with customized dropdown height and width](Dropdown-Calendar_images/DropDownHeight.png)
+![Changing Dropdown Size in WinUI CalendarDatePicker](Dropdown-Calendar_images/winui-calendar-datepicker-dropdown-size.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown)
 
@@ -81,7 +81,7 @@ sfCalendarDatePicker.OutOfScopeVisibility = OutOfScopeVisibility.Hidden;
 {% endhighlight %}
 {% endtabs %}
 
-![Display only the current month dates in WinUI Calendar Date Picker.](Getting-Started_images/disableoutofscope.png)
+![WinUI CalendarDatePicker displays Current Month Dates](Getting-Started_images/winui-calendar-datepicker-current-month.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction)
 
@@ -230,7 +230,7 @@ public class EventDataConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Custom UI of specific date cells in Calendar Date Picker](Getting-Started_images/ItemTemplateSelector.png)
+![Customizing Specific Date Cells in WinUI CalendarDatePicker](Getting-Started_images/winui-calendar-datepicker-customization.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/CustomUI)
 
@@ -350,6 +350,6 @@ You can customize the colors of day names and headers of month, year, decade and
 {% endhighlight %}
 {% endtabs %}
 
-![Customize calendar by theme keys in WinUI Calendar DateRange Picker](UI-Customization_images/customizationByThemekeys.png)
+![Customizing Theme Keys in WinUI CalendarDatePicker](UI-Customization_images/winui-calendar-datepicker-theme-keys.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/CustomUI)

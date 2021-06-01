@@ -65,13 +65,13 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![default annotation position](images/annotation/annotation_default_position.png)
+![WinUI Radial Gauge Annotation Position](images/annotation/winui-radial-gauge-annotation-position.png)
 
-**Positioning annotation**
+## Positioning annotation
 
 The annotation can be positioned using either the [`Angle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.AnnotationDirection.html#Syncfusion_UI_Xaml_Gauges_AnnotationDirection_Angle) or the [`Axis value`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.AnnotationDirection.html#Syncfusion_UI_Xaml_Gauges_AnnotationDirection_AxisValue). It can be controlled by the [`DirectionUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_DirectionUnit) property of [`Annotation`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html). The default value is [`Angle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.AnnotationDirection.html#Syncfusion_UI_Xaml_Gauges_AnnotationDirection_Angle).
 
-**Positioning annotation using angle**
+### Positioning annotation using angle
 
 The following example shows how to position the annotation using angle.
 
@@ -124,9 +124,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![annotation position with angle](images/annotation/annottaion_angle.png)
+![WinUI Radial Gauge Annotation Position with Angle](images/annotation/winui-radial-gauge-annotation-position-with-angle.png)
 
-**Positioning annotation using axis value**
+### Positioning annotation using axis value
 
 The following example shows how to position the annotation using axis value.
 
@@ -174,7 +174,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![annotation position with axis](images/annotation/annotaion_axis.png)
+![WinUI Radial Gauge Annotation Position with Axis](images/annotation/winui-radial-gauge-annotation-position-with-axis.png)
 
 [`PositionFactor`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_PositionFactor) is used to move the annotation from the center of axis to the edge of the axis. For example, when you specify the [`PositionFactor`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_PositionFactor) as 0.5, the annotation will be moved from the center towards the corresponding direction with the distance of half of the radius value of axis.
 
@@ -286,7 +286,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![image annotation](images/annotation/image_annottaion.png)
+![WinUI Radial Gauge Image Annotation](images/annotation/winui-radial-gauge-image-annotation.png)
 
 ## Alignment of annotation
 
@@ -339,7 +339,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![horizontal alignment](images/annotation/annotation_horizontal.png)
+![WinUI Radial Gauge Annotation Horizontal Alignment](images/annotation/winui-radial-gauge-annotation-horizontal-alignment.png)
 
 The following code example demonstrates how to set `VerticalAlignment` for annotation,
 
@@ -388,4 +388,4 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![vertical alignment](images/annotation/annotation_vertical.png)
+![WinUI Radial Gauge Annotation Vertical Alignment](images/annotation/winui-radial-gauge-annotation-vertical-alignment.png)

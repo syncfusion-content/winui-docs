@@ -203,7 +203,7 @@ this.Content = sfRangeSlider;
 
 ## Tick Style
 
-**Setting a Style for Major and Minor Ticks**
+### Setting a Style for Major and Minor Ticks
 
 The [`MajorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_MajorTickStyle) and [`MinorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_MinorTickStyle) properties allows you to define the style for the major and minor tick’s respectively as shown in the following code example.
 
@@ -256,7 +256,7 @@ this.Content = sfRangeSlider;
 
 ![Range slider with ticks](images/ticks/slider-majorMinorTickStyle.png)
 
-**Setting a Active Style for Major and Minor Ticks**
+### Setting a Active Style for Major and Minor Ticks
 
 The [`ActiveMajorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveMajorTickStyle) and [`ActiveMinorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveMinorTickStyle) properties allows you to define the active style for the major and minor tick’s respectively as shown in the following code example.
 
