@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization and Formatting in WinUI Time Picker control | Syncfusion
-description: This section describes how to localize and formats the Time Picker (SfTimePicker) control into WinUI application.
+description: Learn here about Localization and Formatting in Syncfusion WinUI Time Picker (SfTimePicker) control, its elements, and more.
 platform: WinUI
 control: SfTimePicker
 documentation: ug

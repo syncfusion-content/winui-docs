@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Day, Week and Work Week views in WinUI Scheduler control | Syncfusion
-description:  Learn here all about to customize the Day, Week, Work Week views settings and its appearance in Syncfusion WinUI Scheduler (SfScheduler) control and more.
+description:  Learn here about customize the Day, Week, Work Week views settings and its appearance in Syncfusion WinUI Scheduler (SfScheduler) control, its elements, and more.
 platform: winui
 control: SfScheduler
 documentation: ug
