@@ -21,7 +21,7 @@ The NuGet **Package Manager UI** in Visual Studio allows you to easily install, 
 
     ![Manage NuGet Packages add-in](Upgrade-images/ManageNuGet.png)
 
-   As an alternative, after opening the WinUI application in Visual Studio, go to the **Tools** menu and select **NuGet Package Manager | Manage NuGet Packages for Solution...**
+    As an alternative, after opening the WinUI application in Visual Studio, go to the **Tools** menu and select **NuGet Package Manager | Manage NuGet Packages for Solution...**
 
 2. The Manage NuGet Packages window will open. Navigate to the **Updates** tab, then search for the Syncfusion WinUI NuGet packages using a term like **"Syncfusion"** and select the appropriate Syncfusion WinUI NuGet package for your application.
 
