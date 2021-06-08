@@ -19,17 +19,17 @@ The NuGet **Package Manager UI** in Visual Studio allows you to easily install, 
 
 1. Right-click on the WinUI project or solution in the Solution Explorer tab, and choose **Manage NuGet Packages...**
 
-   ![Manage NuGet Packages add-in](Upgrade-images/ManageNuGet.png)
+    ![Manage NuGet Packages add-in](Upgrade-images/ManageNuGet.png)
 
    As an alternative, after opening the WinUI application in Visual Studio, go to the **Tools** menu and select **NuGet Package Manager | Manage NuGet Packages for Solution...**
 
-2. The Manage NuGet Packages window will open. Navigate to the Updates tab, then search for the Syncfusion WinUI NuGet packages using a term like **"Syncfusion"** and select the appropriate Syncfusion WinUI NuGet package for your application.
+2. The Manage NuGet Packages window will open. Navigate to the **Updates** tab, then search for the Syncfusion WinUI NuGet packages using a term like **"Syncfusion"** and select the appropriate Syncfusion WinUI NuGet package for your application.
 
-   N> The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the Package source drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft documents](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources) to set up the nuget.org feed URL.
+    N> The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the Package source drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft documents](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources) to set up the nuget.org feed URL.
 
 3. By default, the package selected with latest version. You can select the required version and click the **Update** button and accept the license terms. The package will be upgraded to selected version in your WinUI application.
 
-   ![WinUI Upgrade](Upgrade-images/NuGetUpgrade.png)
+    ![WinUI Upgrade](Upgrade-images/NuGetUpgrade.png)
 
 ## Upgrade NuGet packages through Package Manager Console
 
@@ -37,37 +37,39 @@ The **Package Manager Console** saves NuGet packages upgrade time since you don'
 
 1. To show the Package Manager Console, open your WinUI application in Visual Studio and navigate to **Tools** in the Visual Studio menu and after hovering **NuGet Package Manager**, select **Package Manager Console**.
 
-   ![Package Manager Console](Upgrade-images/console.png)
+    ![Package Manager Console](Upgrade-images/console.png)
 
 2. The Package Manager Console will be shown at the bottom of the screen. You can install the Syncfusion WinUI NuGet packages by enter the following NuGet update commands.
 
-   ***Update specified Syncfusion WinUI NuGet package***
+    ***Update specified Syncfusion WinUI NuGet package***
 
-   The below command will update the Syncfusion WinUI NuGet package in the default WinUI project of the application
+    The below command will update the Syncfusion WinUI NuGet package in the default WinUI project of the application
 
-   ~~~
-   Update-Package <Package Name> -prerelease
-   ~~~
+    ```
+    Update-Package <Package Name> -prerelease
+    ```
 
-   **For example:** Update-Package Syncfusion.Grid.WinUI -prerelease
+    **For example:** Update-Package Syncfusion.Grid.WinUI -prerelease
 
-   ***Update specified Syncfusion WinUI NuGet package in specified WinUI project***
+    ***Update specified Syncfusion WinUI NuGet package in specified WinUI project***
 
-   The below command will update the Syncfusion WinUI NuGet package in the given WinUI project alone
+    The below command will update the Syncfusion WinUI NuGet package in the given WinUI project alone
 
-   ~~~
-   Update-Package <Package Name> -prerelease - ProjectName <Project Name>
-   ~~~
+    ```
+    Update-Package <Package Name> -prerelease -ProjectName <Project Name>
+    ```
 
-   **For example:** Update-Package Syncfusion.Grid.WinUI -prerelease -ProjectName WinUIApplication
+    **For example:** Update-Package Syncfusion.Grid.WinUI -prerelease -ProjectName WinUIApplication
 
-   N> We need to use the -prerelease term with the NuGet Update command, because all the Syncfusion WinUI NuGet packages are in beta
+    N> We need to use the -prerelease term with the NuGet Update command, because all the Syncfusion WinUI NuGet packages are in beta
 
 3. By default, the package will be installed with latest version. You can give the required version with the -Version term like below to install the Syncfusion WinUI NuGet packages in the appropriate version.
 
-   Update-Package Syncfusion.Grid.WinUI -Version 19.1.0.65-beta -prerelease
+    ```
+    Update-Package Syncfusion.Grid.WinUI -Version 19.1.0.65-beta -prerelease
+    ```
 
-   ![Package Manager Console Output](Upgrade-images/UpdateConsole.png)
+    ![Package Manager Console Output](Upgrade-images/UpdateConsole.png)
 
 4. The NuGet package manager will update the Syncfusion WinUI NuGet package as well as the dependencies it has.
 
@@ -78,6 +80,6 @@ There is no distinct command for the update procedure in the Dotnet CLI. Unless 
 
 To specify a version, add the -v parameter:
 
-~~~
+```
 dotnet add package Syncfusion.Grid.WinUI –prerelease -v 19.1.0.65-beta.
-~~~
+```
