@@ -47,7 +47,6 @@ text-align: left!important;
 }
 #title
 {
-font-family: CarosMedium!important;
 font-size: 14px!important;
 color: #22252A!important;
 letter-spacing: 0.47px!important;
