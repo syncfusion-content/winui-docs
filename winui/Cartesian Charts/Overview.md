@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About WinUI Chart control | Syncfusion
-description: Learn here all about introduction of Syncfusion WinUI Cartesian Charts(SfCartesianChart) control with key features and more.
+title: About WinUI Cartesian Chart control | Syncfusion
+description: Learn here all about introduction of Syncfusion WinUI Cartesian Chart(SfCartesianChart) control with key features and more.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # WinUI Cartesian Chart Overview
 
-The [WinUI Charts](https://www.syncfusion.com/winui-controls/charts) provides a perfect way to visualize data with a high level of user interactivity that focus on development, productivity and simplicity of use. Chart also provides a wide variety of charting features that can be used to visualize large quantities of data, flexibility of binding data and user customization. 
+The [WinUI Cartesian Chart]() provides a perfect way to visualize data with a high level of user interactivity that focus on development, productivity and simplicity of use. Chart also provides a wide variety of charting features that can be used to visualize large quantities of data, flexibility of binding data and user customization. 
 
 ![Overview of WinUI Chart](Overview_images/chart_overview.png)
 
@@ -23,7 +23,7 @@ The [WinUI Charts](https://www.syncfusion.com/winui-controls/charts) provides a 
 
 * When you need more information about particular segment in a chart, a little mouse over on the series provides much more information by including tooltip and trackball behavior.
 
-* Chart provides support for rendering multiple series at same time, with options to compare and visualize two different chart series simultaneously.
+* Cartesian chart provides support for rendering multiple series at same time, with options to compare and visualize two different series simultaneously.
 
-* User friendly and provides various options for you to customize chart features like axis,legends and data markers.
+* User friendly and provides various options for you to customize chart features like axis, legends and data markers.
 
