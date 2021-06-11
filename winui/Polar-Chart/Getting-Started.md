@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Getting Started with WinUI Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Chart(SfChart) control, its elements, and more.
+title: Getting Started with WinUI Polar Chart control | Syncfusion
+description: Learn here all about getting started with Syncfusion WinUI Chart(SfPolarChart) control, its elements, and more.
 platform: WinUI
-control: Chart
+control: SfPolarChart
 documentation: ug
 ---
 
-# Getting Started with WinUI Chart
+# Getting Started with WinUI Polar Chart
 
-This section explains you the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to learn to get started with the Chart.
 
-## Creating an application with WinUI Chart
+## Creating an application with WinUI Polar Chart
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 2.	Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
 3.	Import the control namespace `Syncfusion.UI.Xaml.Charts`  in XAML or C# to initialize the control.
@@ -20,41 +19,10 @@ This section explains you the steps required to populate the Chart with data, he
 {% tabs %} 
 
 {% highlight xaml %}
-
-<Page
-    x:Class="SfChart_GettingStarted.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:SfChart_GettingStarted"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Charts"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Height="350" Width="525"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">  
-    <Grid>
-        <syncfusion:SfChart />            
-    </Grid>
-</Page>
  
 {% endhighlight %}
 
 {% highlight C# %} 
-
-using Syncfusion.UI.Xaml.Charts;
-
-namespace SfChart_GettingStarted
-{
-    public sealed partial class MainPage : Page
-    {
-        public MainPage()
-        {
-            InitializeComponent();
-            
-            SfChart chart = new SfChart();      
-            Root_Chart.Children.Add(chart);
-        }
-    }   
-}
 
 {% endhighlight %}
 
@@ -471,7 +439,6 @@ namespace SfChart_GettingStarted
 
 The following chart is created as a result of the previous codes.
 
-![Getting Started WinUI Chart](Getting-Started_images/img3.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI)
+N> Download demo application from [GitHub]()
 
