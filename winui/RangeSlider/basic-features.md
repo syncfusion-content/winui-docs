@@ -218,11 +218,11 @@ this.Content = sfRangeSlider;
 
 ![Range slider with is inversed customization](images/basic-features/slider-isInversed.png)
 
-## Flow Direction Customization
+## Vertical Range Slider
 
-The orientation of [`range slider`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html?tabs=tabid-1) can be customized by using the `Orientation` property.
+The orientation of [`range slider`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html?tabs=tabid-1) can be changed by using the `Orientation` property.
 
-When the `Orientation` property is `Vertical`, the [`range slider`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html?tabs=tabid-1) will be rendered in bottom-to-top direction.
+When the `Orientation` property is `Vertical`, the [`range slider`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html?tabs=tabid-1) will be rendered in bottom-to-top vertical direction.
 
 {% tabs %}
 
