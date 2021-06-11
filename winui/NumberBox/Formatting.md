@@ -21,7 +21,7 @@ The following code shows how to change the display format of a value using the `
 {% highlight XAML %}
 
 <editors:SfNumberBox x:Name="sfNumberBox" 
-                     Height="30" Width="200" Value="10" />
+                     HorizontalAlignment="Center" VerticalAlignment="Center" Value="10" />
 
 {% endhighlight %}
 {% highlight c# %}
@@ -42,14 +42,14 @@ The following code shows how to change the display format of a value using the `
 {% highlight XAML %}
 
 <editors:SfNumberBox x:Name="sfNumberBox" CustomFormat="#0.000"
-                     Height="30" Width="200" Value="10" />
+                     HorizontalAlignment="Center" VerticalAlignment="Center" Value="10" />
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfNumberBox sfNumberBox = new SfNumberBox();
-sfNumberBox.Height = 30;
-sfNumberBox.Width = 200;
+sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
+sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 sfNumberBox.CustomFormat ="#0.0000";
 
 {% endhighlight %}
@@ -67,7 +67,7 @@ The following code shows how to change the display format of a value using the `
 {% highlight XAML %}
 
 <editors:SfNumberBox x:Name="sfNumberBox" 
-                     Height="30" Width="200" Value="10" />
+                     HorizontalAlignment="Center" VerticalAlignment="Center" Value="10" />
 
 {% endhighlight %}
 {% highlight c# %}
@@ -89,14 +89,14 @@ The following code shows how to change the display format of a value using the `
 {% highlight XAML %}
 
 <editors:SfNumberBox x:Name="sfNumberBox" CustomFormat="$0.0000"
-                     Height="30" Width="200" Value="10" />
+                     HorizontalAlignment="Center" VerticalAlignment="Center" Value="10" />
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfNumberBox sfNumberBox = new SfNumberBox();
-sfNumberBox.Height = 30;
-sfNumberBox.Width = 200;
+sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
+sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 sfNumberBox.CustomFormat ="$0.0000";
 
 {% endhighlight %}
@@ -114,7 +114,7 @@ The following code shows how to change the display format of a value using the `
 {% highlight XAML %}
 
 <editors:SfNumberBox x:Name="sfNumberBox" 
-                     Height="30" Width="200" Value="0.05" />
+                     HorizontalAlignment="Center" VerticalAlignment="Center" Value="0.05" />
 
 {% endhighlight %}
 {% highlight c# %}
@@ -136,14 +136,14 @@ The following code shows how to change the display format of a value using the `
 {% highlight XAML %}
 
 <editors:SfNumberBox x:Name="sfNumberBox" CustomFormat="0.0000%"
-                     Height="30" Width="200" Value="0.05" />
+                     HorizontalAlignment="Center" VerticalAlignment="Center" Value="0.05" />
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfNumberBox sfNumberBox = new SfNumberBox();
-sfNumberBox.Height = 30;
-sfNumberBox.Width = 200;
+sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
+sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 sfNumberBox.CustomFormat ="0.0000%";
 
 {% endhighlight %}
@@ -159,14 +159,14 @@ Using the `CustomFormat` property, you can apply custom formats to the value of 
 {% highlight XAML %}
 
 <editors:SfNumberBox x:Name="sfNumberBox" CustomFormat="P3"
-                     Height="30" Width="200" Value="0.10" />
+                     HorizontalAlignment="Center" VerticalAlignment="Center" Value="0.10" />
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfNumberBox sfNumberBox = new SfNumberBox();
-sfNumberBox.Height = 30;
-sfNumberBox.Width = 200;
+sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
+sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 sfNumberBox.Value = 0.10;
 sfNumberBox.CustomFormat ="P3";
 
@@ -181,14 +181,14 @@ You can apply various custom formats available in [this page](https://docs.micro
 {% highlight XAML %}
 
 <editors:SfNumberBox x:Name="sfNumberBox" CustomFormat="E3"
-                     Height="30" Width="200" Value="10.5" />
+                     HorizontalAlignment="Center" VerticalAlignment="Center" Value="10.5" />
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfNumberBox sfNumberBox = new SfNumberBox();
-sfNumberBox.Height = 30;
-sfNumberBox.Width = 200;
+sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
+sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 sfNumberBox.Value = 10.5;
 sfNumberBox.CustomFormat ="E3";
 
@@ -204,7 +204,7 @@ You can apply custom format for value in the `NumberBox` control based on the `C
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfNumberBox x:Name="sfNumberBox" Height="30" Width="200" Value="10" />
+<editors:SfNumberBox x:Name="sfNumberBox" HorizontalAlignment="Center" VerticalAlignment="Center" Value="10" />
 
 {% endhighlight %}
 {% highlight c# %}
@@ -224,7 +224,7 @@ You can also apply currency format for value in the `NumberBox` control using `N
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfNumberBox x:Name="sfNumberBox" Height="30" Width="200" Value="10" />
+<editors:SfNumberBox x:Name="sfNumberBox" HorizontalAlignment="Center" VerticalAlignment="Center" Value="10" />
 
 {% endhighlight %}
 {% highlight c# %}

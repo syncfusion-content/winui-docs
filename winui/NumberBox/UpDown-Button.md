@@ -20,15 +20,15 @@ N> The value in `NumberBox` can also be increased or decreased by mouse scrollin
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumberBox Height="33" Width="200" SmallChange="5" Value="10" LargeChange="10" />
+<editors:SfNumberBox HorizontalAlignment="Center" VerticalAlignment="Center" SmallChange="5" Value="10" LargeChange="10" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfNumberBox SfNumberBox= new SfNumberBox();
 SfNumberBox.PlaceHolderText = "Enter input here...";
-SfNumberBox.Height = 33;
-SfNumberBox.Width = 200;
+sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
+sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 
 {% endhighlight %}
 {% endtabs %}
@@ -45,14 +45,14 @@ N> When using the spin button, the `NumberBox` value changes based on the value 
 {% highlight XAML %}
 
 <editors:SfNumberBox x:Name="sfNumberBox" 
-                     Height="30" Width="200" SpinButtonPlacement="Inline" />
+                     HorizontalAlignment="Center" VerticalAlignment="Center" SpinButtonPlacement="Inline" />
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfNumberBox sfNumberBox = new SfNumberBox();
-sfNumberBox.Height = 30;
-sfNumberBox.Width = 200;
+sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
+sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 sfNumberBox.SpinButtonPlacement = NumberBoxSpinButtonPlacementMode.Inline;
 
 {% endhighlight %}

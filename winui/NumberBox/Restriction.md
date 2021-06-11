@@ -19,14 +19,14 @@ You can reset the value to **0** when input is cleared by setting the `AllowNull
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumberBox Height="30" Width="200" Value="10" AllowNull="False" />
+<editors:SfNumberBox HorizontalAlignment="Center" VerticalAlignment="Center" Value="10" AllowNull="False" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfNumberBox sfNumberBox = new SfNumberBox();
-sfNumberBox.Height = 30;
-sfNumberBox.Width = 200;
+sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
+sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 sfNumberBox.Value = 10;
 sfNumberBox.AllowNull = false;
 
@@ -42,14 +42,14 @@ Using the `Minimum` and `Maximum` properties, you can limit the input value of t
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumberBox Height="30" Width="200" Value="50" Minimum="10" Maximum="30" />
+<editors:SfNumberBox HorizontalAlignment="Center" VerticalAlignment="Center" Value="50" Minimum="10" Maximum="30" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfNumberBox sfNumberBox = new SfNumberBox();
-sfNumberBox.Height = 30;
-sfNumberBox.Width = 200;
+sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
+sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 sfNumberBox.Minimum = 10;
 sfNumberBox.Maximum = 30;
 sfNumberBox.Value = 50;
@@ -67,14 +67,14 @@ You can prevent users from editing the numerical value of the `NumberBox` contro
 {% highlight XAML %}
 
 <editors:SfNumberBox x:Name="sfNumberBox" 
-                     Height="30" Width="200" IsReadOnly="True" />
+                     HorizontalAlignment="Center" VerticalAlignment="Center" IsReadOnly="True" />
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfNumberBox sfNumberBox = new SfNumberBox();
-sfNumberBox.Height = 30;
-sfNumberBox.Width = 200;
+sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
+sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 sfNumberBox.IsReadOnly = true;
 
 {% endhighlight %}
