@@ -94,8 +94,6 @@ chart.SecondaryAxis = secondaryAxis;
 
 Run the project and check if you get following output to make sure you have configured your project properly to add chart.
 
-![Initializing WinUI Chart](Getting-Started_Images/img1.png)
-
 ## Initialize view model
 
 Now, let us define a simple data model that represents a data point in chart.
