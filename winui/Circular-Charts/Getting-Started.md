@@ -38,19 +38,12 @@ Now, let us define a simple data model that represents a data point in chart.
 
 {% highlight c# %}
 
-public class Person   
-{   
-    public string Name { get; set; }
-
-    public double Height { get; set; }
-}
-
 {% endhighlight %} 
 
 {% endtabs %} 
 
 
-Next, create a view model class and initialize a list of `Person` objects as follows.
+Next, create a view model class and initialize a list of `Model` objects as follows.
 
 {% tabs %}  
 
@@ -58,17 +51,9 @@ Next, create a view model class and initialize a list of `Person` objects as fol
 
 public class ViewModel  
 {
-      public List<Person> Data { get; set; }      
-
       public ViewModel()       
       {
-            Data = new List<Person>()
-            {
-                new Person { Name = "David", Height = 180 },
-                new Person { Name = "Michael", Height = 170 },
-                new Person { Name = "Steve", Height = 160 },
-                new Person { Name = "Joel", Height = 182 }
-            }; 
+          
        }
  }
 
@@ -242,7 +227,5 @@ using Syncfusion.UI.Xaml.Charts;
 
 The following chart is created as a result of the previous codes.
 
-![Getting Started WinUI Chart](Getting-Started_images/img3.png)
-
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI)
+N> Download demo application from [GitHub]()
 
