@@ -182,6 +182,40 @@ this.Content = sfSlider;
 
 ![Slider with is inversed customization](images/basic-features/slider-isInversed.png)
 
+## Vertical Slider 
+
+The orientation of [`slider`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfSlider.html?tabs=tabid-1) can be changed by using the `Orientation` property.
+
+When the `Orientation` property is `Vertical`, the [`slider`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfSlider.html?tabs=tabid-1) will be rendered in bottom-to-top vertical direction.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<slider:SfSlider Orientation="Vertical"
+                 ShowTicks="True"
+                 ShowLabels="True"
+                 Interval="20"
+                 Value="40" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfSlider sfSlider = new SfSlider();
+sfSlider.Orientation = Orientation.Vertical;
+sfSlider.ShowTicks = true;
+sfSlider.ShowLabels = true;
+sfSlider.Interval = 20;
+sfSlider.Value = 40;
+this.Content = sfSlider;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Slider with orientation customization](images/basic-features/slider-orientation.png)
+
 ## Events
 
 ### ValueChanged

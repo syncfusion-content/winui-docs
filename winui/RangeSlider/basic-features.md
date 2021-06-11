@@ -218,6 +218,42 @@ this.Content = sfRangeSlider;
 
 ![Range slider with is inversed customization](images/basic-features/slider-isInversed.png)
 
+## Vertical Range Slider
+
+The orientation of [`range slider`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html?tabs=tabid-1) can be changed by using the `Orientation` property.
+
+When the `Orientation` property is `Vertical`, the [`range slider`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html?tabs=tabid-1) will be rendered in bottom-to-top vertical direction.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<slider:SfRangeSlider Orientation="Vertical"
+                      ShowTicks="True"
+                      ShowLabels="True"
+                      Interval="20"
+                      RangeStart="40"
+                      RangeEnd="60" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRangeSlider sfRangeSlider = new SfRangeSlider();
+sfRangeSlider.Orientation = Orientation.Vertical;
+sfRangeSlider.ShowTicks = true;
+sfRangeSlider.ShowLabels = true;
+sfRangeSlider.Interval = 20;
+sfRangeSlider.RangeStart = 40;
+sfRangeSlider.RangeEnd = 60;
+this.Content = sfRangeSlider;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Range slider with orientation customization](images/basic-features/slider-orientation.png)
+
 ## Events
 
 ### RangeValueChanged
