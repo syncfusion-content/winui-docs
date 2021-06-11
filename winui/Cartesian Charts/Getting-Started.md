@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Getting Started with WinUI Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Chart(SfChart) control, its elements, and more.
+description: Learn here all about getting started with Syncfusion WinUI Cartesian Chart(SfCartesianChart) control, its elements, and more.
 platform: WinUI
-control: Chart
+control: SfCartesianChart
 documentation: ug
 ---
 
-# Getting Started with WinUI Chart
+# Getting Started with WinUI Cartesian Chart
 
 This section explains you the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to learn to get started with the Chart.
 
-## Creating an application with WinUI Chart
+## Creating an application with WinUI Cartesian Chart
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 2.	Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
 3.	Import the control namespace `Syncfusion.UI.Xaml.Charts`  in XAML or C# to initialize the control.
