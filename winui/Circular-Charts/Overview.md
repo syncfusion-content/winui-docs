@@ -11,8 +11,6 @@ documentation: ug
 
 Syncfusion WinUI Circular Chart (SfCircularChart) is a high-performance Circular chart that can be used to construct high-quality WinUI applications with flexible data binding and user customization.
 
-![Overview of WinUI Circular Chart]()
-
 ## Key features
 
 * Chart types - The circular chart may support two types of series such as pie and doughnut. Each series presents data in a unique way and is designed to be more user-friendly.
