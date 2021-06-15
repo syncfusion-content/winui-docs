@@ -325,3 +325,79 @@ You can customize the colors of day names and headers of month, year, decade and
 ![WinUI Calendar DateRange Picker Themes](Calendar-UI-Customization_images/winui-calendar-daterange-picker-themes.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/CustomUI)
+
+## Customize the week number template
+
+You can show week number in dropdown calendar of `CalendarDateRangePicker` control by setting the `ShowWeekNumbers` property value as **true**.`CalendarDateRangePicker` control also allows you to customize the template of the week numbers using `WeekNumberTemplate` property in `CalendarItemTemplateSelector` class. The default value of `ShowWeekNumbers` property is **true**.
+
+{% tabs %}
+{% highlight XAML %}
+
+<calendar:SfCalendarDateRangePicker x:Name="SfCalendarDateRangePicker"
+                            HorizontalAlignment="Center" VerticalAlignment="Center" ShowWeekNumbers="True"
+                            WeekNumberFormat="W #" WeekNumberRule="FirstFullWeek"
+                            >
+    <FlyoutBase.AttachedFlyout>
+        <editors:DropDownFlyout>
+            <calendar:SfCalendar >
+                <calendar:SfCalendar.Resources>
+                    <Style TargetType="calendar:CalendarItem">
+                        <Setter Property="ContentTemplateSelector">
+                            <Setter.Value>
+                                <calendar:CalendarItemTemplateSelector>
+                                    <calendar:CalendarItemTemplateSelector.WeekNumberTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding DisplayText}" FontWeight="Bold" Foreground="Red"/>
+                                        </DataTemplate>
+                                    </calendar:CalendarItemTemplateSelector.WeekNumberTemplate>
+                                </calendar:CalendarItemTemplateSelector>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </calendar:SfCalendar.Resources>
+            </calendar:SfCalendar>
+        </editors:DropDownFlyout>
+    </FlyoutBase.AttachedFlyout>
+</calendar:SfCalendarDateRangePicker>
+
+
+{% endhighlight %}
+{% endtabs %}
+
+## Customize the week day name template
+
+You can also customize the template of week day names in dropdown calendar of `CalendarDateRangePicker` control using `WeekNameTemplate` property in `CalendarItemTemplateSelector` class. 
+
+{% tabs %}
+{% highlight XAML %}
+
+<calendar:SfCalendarDateRangePicker x:Name="SfCalendarDateRangePicker"
+                            HorizontalAlignment="Center" VerticalAlignment="Center"  
+                            >
+    <FlyoutBase.AttachedFlyout>
+        <editors:DropDownFlyout>
+            <calendar:SfCalendar >
+                <calendar:SfCalendar.Resources>
+                    <Style TargetType="calendar:CalendarItem">
+                        <Setter Property="ContentTemplateSelector">
+                            <Setter.Value>
+                                <calendar:CalendarItemTemplateSelector>
+                                    <calendar:CalendarItemTemplateSelector.WeekNameTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding DisplayText}" FontWeight="Bold" Foreground="Red"/>
+                                        </DataTemplate>
+                                    </calendar:CalendarItemTemplateSelector.WeekNameTemplate>
+                                </calendar:CalendarItemTemplateSelector>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </calendar:SfCalendar.Resources>
+            </calendar:SfCalendar>
+        </editors:DropDownFlyout>
+    </FlyoutBase.AttachedFlyout>
+</calendar:SfCalendarDateRangePicker>
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI CalendarDateRangePicker Themes](Calendar-UI-Customization_images/winui-calendar-daterange-picker-weeknametemplate.png)

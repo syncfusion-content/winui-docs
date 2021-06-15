@@ -317,6 +317,28 @@ sfCalendarDatePicker.ShowSubmitButtons = true;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown)
 
+## Hide clear button in textbox
+
+By default, the clear button `X` will be displayed in the textbox of the `CalendarDatePicker` control, which can be used to clear the input entered. You can hide the clear button in `CalendarDatePicker` control using the `ShowClearButton` property. The default value of `ShowClearButton` property value is **true**.
+
+{% tabs %}
+{% highlight XAML %}
+
+<calendar:SfCalendarDatePicker ShowClearButton="False"
+                      Name="sfCalendarDatePicker"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
+sfCalendarDatePicker.ShowClearButton = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI CalendarDatePicker hide clear button](Getting-Started_images/winui-calendar-datepicker-hideclearbutton.png)
+![WinUI CalendarDatePicker hide clear button](Getting-Started_images/winui-calendar-datepicker-showclearbutton.png)
+
 
 ## Restrict selection
 

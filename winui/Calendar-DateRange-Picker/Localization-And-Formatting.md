@@ -170,3 +170,30 @@ sfCalendarDateRangePicker.FlowDirection = FlowDirection.RightToLeft;
 ![WinUI Calendar DateRange Picker Right-to-Left](Dropdown-Calendar_images/winui-calendar-daterange-picker-right-to-left.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting)
+
+## Show Week numbers in dropdown calendar
+
+You can show week numbers for each week in dropdown calendar of `CalendarDateRangePicker` control by setting the `ShowWeekNumbers` property value as **true**. You can also customize the week number displayed in dropdown calendar by using the`WeekNumberRule` property and `WeekNumberFormat` property. By default, value of `ShowWeekNumber` property is **false**, `WeekNumberRule` is **FirstDay** and `WeekNumberFormat` is **#**.
+
+N> You can change the `WeekNumberRule` property value with the [CalendarWeekRule](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0) and you can also add any prefix or suffix characters to **#** for `WeekNumberFormat` property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<calendar:CalendarDateRangePicker HorizontalAlignment="Center" VerticalAlignment="Center"
+                            ShowWeekNumbers="True" WeekNumberRule="FirstFullWeek"
+                            WeekNumberFormat="W #"
+                     />
+
+{% endhighlight %}
+{% highlight C# %}
+
+CalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
+sfCalendarDateRangePicker.ShowWeekNumbers = true;
+sfCalendarDateRangePicker.WeekNumberRule = CalendarWeekRule.FirstFullWeek;
+sfCalendarDateRangePicker.WeekNumberFormat = "W #";
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI CalendarDateRangePicker Showing Only Limited Weeks in View](Localization-And-Formatting_images/winui-calendar-daterangepicker-weeknumber.png)
