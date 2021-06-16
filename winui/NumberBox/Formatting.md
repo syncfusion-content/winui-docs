@@ -13,7 +13,7 @@ This section explains how to change the value format of the `NumberBox` control 
 
 ## Change the currency value format
 
-You can format the value of a `Numberbox` control by configuring an instance of a formatting class and assigning it to the `NumberFormatter` property. You can also apply custom formats to the `NumberBox` control using the `CustomFormat` property. By default, the value of `NumberFormatter` and `CustomFormat` properties value is **null**.
+You can format the value of a `NumberBox` control by configuring an instance of a formatting class and assigning it to the `NumberFormatter` property. You can also apply custom formats to the `NumberBox` control using the `CustomFormat` property. By default, the value of `NumberFormatter` and `CustomFormat` properties value is **null**.
 
 The following code shows how to change the display format of the value using the `CurrencyFormatter` class. 
 
@@ -60,7 +60,7 @@ sfNumberBox.CustomFormat ="$0.0000";
 
 ## Change the decimal value format
 
-You can apply decimal format the value of a `Numberbox` control by configuring an instance of a `DecimalFormatter` class and assigning it to the `NumberFormatter` property. You can also apply custom formats to the `NumberBox` control using the `CustomFormat` property. By default, the value of `NumberFormatter` and `CustomFormat` properties value is **null**.
+You can apply decimal format the value of a `NumberBox` control by configuring an instance of a `DecimalFormatter` class and assigning it to the `NumberFormatter` property. You can also apply custom formats to the `NumberBox` control using the `CustomFormat` property. By default, the value of `NumberFormatter` and `CustomFormat` properties value is **null**.
 
 {% tabs %}
 {% highlight XAML %}
@@ -104,7 +104,7 @@ sfNumberBox.CustomFormat ="#0.0000";
 
 ## Change the percent value format
 
-You can apply percent format to the value of a `Numberbox` control by configuring an instance of a `PercentFormatter` class and assigning it to the `NumberFormatter` property. You can also apply custom formats to the `NumberBox` control using the `CustomFormat` property. By default, the value of `NumberFormatter` and `CustomFormat` properties value is **null**.
+You can apply percent format to the value of a `NumberBox` control by configuring an instance of a `PercentFormatter` class and assigning it to the `NumberFormatter` property. You can also apply custom formats to the `NumberBox` control using the `CustomFormat` property. By default, the value of `NumberFormatter` and `CustomFormat` properties value is **null**.
 
 {% tabs %}
 {% highlight XAML %}
