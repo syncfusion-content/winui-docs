@@ -11,57 +11,11 @@ documentation: ug
 
 This section explains how to change the value format of the `NumberBox` control using `NumberFormatter` and `CustomFormat` properties.
 
-## Change the decimal value format
-
-You can change the format of the value displayed in `NumberBox` control to decimal format by using the `NumberFormatter` and `CustomFormat` properties. By default, the value of `NumberFormatter` and `CustomFormat` properties value is **null**.
-
-The following code shows how to change the display format of a value using the `DecimalFormatter` class. 
-
-{% tabs %}
-{% highlight XAML %}
-
-<editors:SfNumberBox x:Name="sfNumberBox" 
-                     HorizontalAlignment="Center" VerticalAlignment="Center" Value="10" />
-
-{% endhighlight %}
-{% highlight c# %}
-
-CultureInfo ci = new CultureInfo("en-US");
-sfNumberBox.NumberFormatter = new DecimalFormatter(new[] { ci.Name }, "ZZ")
-{
-    IntegerDigits = 2,
-    FractionDigits = 4
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-The following code shows how to change the display format of a value using the `CustomFormat` class. 
-
-{% tabs %}
-{% highlight XAML %}
-
-<editors:SfNumberBox x:Name="sfNumberBox" CustomFormat="#0.000"
-                     HorizontalAlignment="Center" VerticalAlignment="Center" Value="10" />
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfNumberBox sfNumberBox = new SfNumberBox();
-sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
-sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
-sfNumberBox.CustomFormat ="#0.0000";
-
-{% endhighlight %}
-{% endtabs %}
-
-![Decimal format in WinUI NumberBox](Formatting_images/decimal-format-change.png)
-
 ## Change the currency value format
 
-You can change the format of the value displayed in the `NumberBox` control by using the `NumberFormatter` and `CustomFormat` properties. By default, the value of `NumberFormatter` and `CustomFormat` properties value is **null**.
+You can format the value of a `Numberbox` control by configuring an instance of a formatting class and assigning it to the `NumberFormatter` property. You can also apply custom formats to the `NumberBox` control using the `CustomFormat` property. By default, the value of `NumberFormatter` and `CustomFormat` properties value is **null**.
 
-The following code shows how to change the display format of a value using the `CurrencyFormatter` class. 
+The following code shows how to change the display format of the value using the `CurrencyFormatter` class. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -102,13 +56,55 @@ sfNumberBox.CustomFormat ="$0.0000";
 {% endhighlight %}
 {% endtabs %}
 
-![Currency format in WinUI NumberBox](Formatting_images/currency-format-change.png)
+![WinUI NumberBox apply currency format](Formatting_images/winui-numberbox-apply-currency-format.png)
+
+## Change the decimal value format
+
+You can apply decimal format the value of a `Numberbox` control by configuring an instance of a `DecimalFormatter` class and assigning it to the `NumberFormatter` property. You can also apply custom formats to the `NumberBox` control using the `CustomFormat` property. By default, the value of `NumberFormatter` and `CustomFormat` properties value is **null**.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfNumberBox x:Name="sfNumberBox" 
+                     HorizontalAlignment="Center" VerticalAlignment="Center" Value="10" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+CultureInfo ci = new CultureInfo("en-US");
+sfNumberBox.NumberFormatter = new DecimalFormatter(new[] { ci.Name }, "ZZ")
+{
+    IntegerDigits = 2,
+    FractionDigits = 4
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+The following code shows how to change the display format of a value using the `CustomFormat` class. 
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfNumberBox x:Name="sfNumberBox" CustomFormat="#0.000"
+                     HorizontalAlignment="Center" VerticalAlignment="Center" Value="10" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfNumberBox sfNumberBox = new SfNumberBox();
+sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
+sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
+sfNumberBox.CustomFormat ="#0.0000";
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI NumberBox apply decimal format](Formatting_images/winui-numberbox-apply-decimal-format.png)
 
 ## Change the percent value format
 
-You can change the format of the value displayed in the `NumberBox` control by using the `NumberFormatter` and `CustomFormat` properties. By default, the value of `NumberFormatter` and `CustomFormat` properties value is **null**.
-
-The following code shows how to change the display format of a value using the `PercentFormatter` class. 
+You can apply percent format to the value of a `Numberbox` control by configuring an instance of a `PercentFormatter` class and assigning it to the `NumberFormatter` property. You can also apply custom formats to the `NumberBox` control using the `CustomFormat` property. By default, the value of `NumberFormatter` and `CustomFormat` properties value is **null**.
 
 {% tabs %}
 {% highlight XAML %}
@@ -149,7 +145,7 @@ sfNumberBox.CustomFormat ="0.0000%";
 {% endhighlight %}
 {% endtabs %}
 
-![Currency format in WinUI NumberBox](Formatting_images/percent-format-change.png)
+![WinUI NumberBox apply percent format](Formatting_images/winui-numberbox-apply-percent-format.png)
 
 ## Apply custom value format
 
@@ -173,7 +169,7 @@ sfNumberBox.CustomFormat ="P3";
 {% endhighlight %}
 {% endtabs %}
 
-![Currency format in WinUI NumberBox](Formatting_images/basic_customformats.png)
+![WinUI NumberBox apply custom format](Formatting_images/winui-numberbox-apply-customformat.png)
 
 You can apply various custom formats available in [this page](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) which are supported for `double` type.
 
@@ -195,7 +191,7 @@ sfNumberBox.CustomFormat ="E3";
 {% endhighlight %}
 {% endtabs %}
 
-![Currency format in WinUI NumberBox](Formatting_images/custom_format_E3.png)
+![WinUI NumberBox apply exponential format](Formatting_images/winui-numberbox-apply-exponential-format.png)
 
 ## Change culture
 
@@ -217,7 +213,7 @@ sfNumberBox.CustomFormat = customFormat;
 {% endhighlight %}
 {% endtabs %}
 
-![Currency format in WinUI NumberBox](Formatting_images/culturebased_format.png)
+![WinUI NumberBox culture based custom format](Formatting_images/winui-numberbox-culture-based-custom-format.png)
 
 You can also apply currency format for value in the `NumberBox` control using `NumberFormatter` property based on the `CultureInfo` class.
 
@@ -241,6 +237,6 @@ sfNumberBox.NumberFormatter = new CurrencyFormatter(currencyCode, new string[] {
 {% endhighlight %}
 {% endtabs %}
 
-![Currency format in WinUI NumberBox](Formatting_images/culturebased_currencyFormatter.png)
+![WinUI NumberBox with culture based currency format](Formatting_images/winui-numberbox-culture-based-currency-format.png)
 
 
