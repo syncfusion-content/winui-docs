@@ -65,34 +65,6 @@ this.Content = sfSlider;
 
 ![Slider with tooltip format customization](images/tooltip/slider-tooltipformat.png)
 
-## Tooltip Placement
-
-The [`ToolTipPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ToolTipPlacement) property is used to place the tooltip either before or after the track. The default value of the [`ToolTipPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ToolTipPlacement) property is [`Placement.Before`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.Placement.html#Syncfusion_UI_Xaml_Sliders_Placement_Before).
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<slider:SfSlider Value="50"
-                 ShowToolTip="True"
-                 ToolTipPlacement="After" />
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfSlider sfSlider = new SfSlider();
-sfSlider.Value = 50;
-sfSlider.ShowToolTip = true;
-sfSlider.ToolTipPlacement = Placement.After;
-this.Content = sfSlider;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Slider with tooltip placement customization](images/tooltip/slider-tooltipplacement.png)
-
 ## Tooltip Style
 
 The [`ToolTipStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ToolTipStyle) property allows you to define the style for the slider tooltip as shown in the following code example. The default value of [`ToolTipStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ToolTipStyle) property is null.
