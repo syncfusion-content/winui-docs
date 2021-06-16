@@ -49,27 +49,25 @@ For example, if [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 
 {% highlight xaml %}
 
-<slider:SfRangeSlider Minimum="0"
-                      Maximum="10"
-                      Interval="2"
-                      RangeStart="2"
-                      RangeEnd="8"
-                      ShowTicks="True"
-                      ShowLabels="True" />
+<slider:SfSlider Minimum="0"
+                 Maximum="10"
+                 Interval="2"
+                 Value="4"
+                 ShowTicks="True"
+                 ShowLabels="True" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfRangeSlider sfRangeSlider = new SfRangeSlider();
-sfRangeSlider.Minimum = 0;
-sfRangeSlider.Maximum = 10;
-sfRangeSlider.Interval = 2;
-sfRangeSlider.RangeStart = 2;
-sfRangeSlider.RangeEnd = 8;
-sfRangeSlider.ShowTicks = true;
-sfRangeSlider.ShowLabels = true;
-this.Content = sfRangeSlider;
+SfSlider sfSlider = new SfSlider();
+sfSlider.Minimum = 0;
+sfSlider.Maximum = 10;
+sfSlider.Interval = 2;
+sfSlider.Value = 4;
+sfSlider.ShowTicks = true;
+sfSlider.ShowLabels = true;
+this.Content = sfSlider;
 
 {% endhighlight %}
 
@@ -92,29 +90,27 @@ You can move the thumb in discrete manner for numeric values using the [`StepFre
 
 {% highlight xaml %}
 
-<slider:SfRangeSlider Minimum="0"
-                      Maximum="10"
-                      Interval="2"
-                      RangeStart="2"
-                      RangeEnd="8"
-                      StepFrequency="2"
-                      ShowTicks="True"
-                      ShowLabels="True" />
+<slider:SfSlider Minimum="0"
+                 Maximum="10"
+                 Interval="2"
+                 Value="4"
+                 StepFrequency="2"
+                 ShowTicks="True"
+                 ShowLabels="True" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfSlider sfRangeSlider = new SfRangeSlider();
-sfRangeSlider.Minimum = 0;
-sfRangeSlider.Maximum = 10;
-sfRangeSlider.Interval = 2;
-sfRangeSlider.RangeStart = 2;
-sfRangeSlider.RangeEnd = 8;
-sfRangeSlider.StepFrequency = 2;
-sfRangeSlider.ShowTicks = true;
-sfRangeSlider.ShowLabels = true;
-this.Content = sfRangeSlider;
+SfSlider sfSlider = new SfSlider();
+sfSlider.Minimum = 0;
+sfSlider.Maximum = 10;
+sfSlider.Interval = 2;
+sfSlider.Value = 2;
+sfSlider.StepFrequency = 2;
+sfSlider.ShowTicks = true;
+sfSlider.ShowLabels = true;
+this.Content = sfSlider;
 
 {% endhighlight %}
 
