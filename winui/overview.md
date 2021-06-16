@@ -40,7 +40,6 @@ border:0 !important;
 #anchor
 {
 text-decoration: none!important; 
-font-family: Caros!important; 
 font-size: 14px!important; 
 color: #0079F3!important;
 letter-spacing: 0.47px!important;
@@ -48,7 +47,6 @@ text-align: left!important;
 }
 #title
 {
-font-family: CarosMedium!important;
 font-size: 14px!important;
 color: #22252A!important;
 letter-spacing: 0.47px!important;
