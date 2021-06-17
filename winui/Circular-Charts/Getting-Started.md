@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started with WinUI Circular Charts
 
-This section explains how to populate the Circular chart with data, header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the Circular Chart.
+This section explains how to populate the circular chart with data, header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
 ## Creating an application with WinUI Circular Chart
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
@@ -173,7 +173,7 @@ chart.Series.Add(series);
 
 ## Add title
 
-The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [Header]() property of Circular chart as follows.
+The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [Header]() property of circular chart as follows.
 
 {% tabs %} 
 
@@ -196,7 +196,7 @@ chart.Header = "PRODUCT SALES";
 
 ## Enable Data Labels
 
-The [DataLabelSettings]() property of [CircularSeries]() can be used to enable data labels to improve the readability of the Circular chart. The label Visibility is set to `False` by default.
+The [DataLabelSettings]() property of [CircularSeries]() can be used to enable data labels to improve the readability of the circular chart. The label visibility is set to `False` by default.
 
 {% tabs %} 
 
@@ -222,7 +222,7 @@ series.DataLabelSettings = new CircularChartDataLabelSettings() { Visible = true
 
 ## Enable legend
 
-The legend provides information about the data point displayed in the Circular chart. The [Legend]() property of the chart was used to enable it.
+The legend provides information about the data point displayed in the circular chart. The [Legend]() property of the chart was used to enable it.
 
 {% tabs %} 
 
