@@ -19,14 +19,39 @@ documentation: ug
 
 {% highlight xaml %}
 
+<Window
+    x:Class="ChartDemo.MainWindow"
+
+    . . .
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts">
+    <chart:SfFunnelChart/>
+    
+</Window>
  
 {% endhighlight %}
 
 {% highlight C# %} 
 
+using Syncfusion.UI.Xaml.Charts;
+
+. . .
+
+public sealed partial class MainWindow : Window
+{
+    
+    public MainWindow()
+    {
+        this.InitializeComponent();
+        SfFunnelChart chart = new SfFunnelChart();
+        . . .
+        this.Content = chart;
+    }
+}   
+
 {% endhighlight %}
 
 {% endtabs %}
+
 
 ## Initialize view model
 
@@ -36,80 +61,75 @@ Now, let us define a simple data model that represents a data point in chart.
 
 {% highlight c# %}
 
+public class Model
+{
+    public string Category { get; set; }
+
+    public double Value { get; set; }
+}
 
 {% endhighlight %} 
 
 {% endtabs %} 
 
 
-Next, create a view model class and initialize a list of `Person` objects as follows.
+Next, create a view model class and initialize a list of `Model` objects as follows.
+
 
 {% tabs %}  
 
 {% highlight c# %}
 
-public class ViewModel  
+public class ChartViewModel
 {
+    public List<Model> Data { get; set; }
 
-      public ViewModel()       
-      {
-           
-       }
- }
+    public ChartViewModel()
+    {
+        Data = new List<Model>()
+        {
+            new Model(){Category = "Lava", Value = 50},
+            new Model(){Category = "HP", Value = 30},
+            new Model(){Category = "Moto", Value = 60},
+            new Model(){Category = "Sony", Value = 50},
+            new Model(){Category = "LG", Value = 45},
+            new Model(){Category = "Samsung", Value = 40},
+        };
+    }
+}
 
 {% endhighlight %} 
 
 {% endtabs %} 
 
-Set the `ViewModel` instance as the `DataContext` of your window; this is done to bind properties of `ViewModel` to  the chart.
- 
+Create a `ViewModel` instance and set it as the chart's `DataContext`. This enables property binding from `ViewModel` class.
+
 N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `DataContext` in XAML.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
-<Page
-    x:Class="SfChart_GettingStarted.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:SfChart_GettingStarted"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Charts"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Height="350" Width="525"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+<Window>
+    . . .
 
-    <Page.DataContext>
-        <local:ViewModel></local:ViewModel>
-    </Page.DataContext>
-</Page>
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    xmlns:Model="using:ChartDemo.ViewModel">
+
+    <chart:SfFunnelChart>
+        <chart:SfFunnelChart.DataContext>
+            <Model:ChartViewModel/>
+        </chart:SfFunnelChart.DataContext>
+    </chart:SfFunnelChart>
+
+</Window>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-this.DataContext = new ViewModel();
-
-{% endhighlight %}
-
-{% endtabs %} 
-
-## Populate chart with data
-
-As we are going to visualize the comparison of heights in the data model, add [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html) to [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Series) property of chart, and then bind the `Data` property of the above `ViewModel` to the `ColumnSeries.ItemsSource` as follows.
-
-N> You need to set [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath) and [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.XyDataSeries.html#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties, so that chart would fetch values from the respective properties in the data model to plot the series.
-
-{% tabs %}   
-
-{% highlight xaml %}
-
-
-{% endhighlight %}
-
-{% highlight C# %}
-
+ChartViewModel viewModel = new ChartViewModel();
+chart.DataContext = viewModel;
 
 {% endhighlight %}
 
@@ -117,53 +137,109 @@ N> You need to set [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusio
 
 ## Add title
 
-The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_Header) property of chart as follows.
+The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [Header]() property of Funnel chart as follows.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
+<chart:SfFunnelChart Header="PRODUCT SALES">
+    
+. . .
+
+</chart:SfFunnelChart>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
+SfFunnelChart chart = new SfFunnelChart();
+
+. . .
+
+chart.Header = "PRODUCT SALES";
 
 {% endhighlight %}
 
 {% endtabs %}  
 
+## Enable Data Labels
 
-## Enable data markers
+The [DataLabelSettings]() property of [FunnelChart]() can be used to enable data labels to improve the readability of the Funnel chart. The label Visibility is set to `False` by default.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfFunnelChart>
+. . .
+    <chart:SfFunnelChart.DataLabelSettings>
+        <chart:FunnelDataLabelSettings Visible="True" />
+        </chart:SfFunnelChart.DataLabelSettings>
+</chart:SfFunnelChart>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+SfFunnelChart chart = new SfFunnelChart();
+
+. . .
+
+chart.DataLabelSettings = new FunnelDataLabelSettings() { Visible = true };
+
+{% endhighlight %}
+
+{% endtabs %}  
 
 ## Enable legend
 
-You can enable legend using the [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property as follows.
+The legend provides information about the data point displayed in the Funnel chart. The [Legend]() property of the chart was used to enable it.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
+<chart:SfFunnelChart>
+    . . .
+    <chart:SfFunnelChart.Legend>
+        <chart:ChartLegend/>
+    </chart:SfFunnelChart.Legend>
+</chart:SfFunnelChart>
+
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
+
+SfFunnelChart chart = new SfFunnelChart();
+. . .
+chart.Legend = new ChartLegend();
 
 {% endhighlight %}
 
-{% endtabs %}  
+{% endtabs %} 
+
+{% tabs %} 
 
 ## Enable tooltip
 
-Tooltips are used to show information about the segment, when you click the segment. You can enable tooltip by setting series [ShowTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property to true.
+Tooltips are used to show information about the segment, when mouse over on it. Enable tooltip by setting series [ShowTooltip]() property as true.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
+<chart:SfFunnelChart ShowTooltip="True">
+    . . . 
+</chart:SfFunnelChart>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
+
+SfFunnelChart chart = new SfFunnelChart();
+. . .
+chart.ShowTooltip = true;
 
 {% endhighlight %}
 
@@ -174,16 +250,65 @@ The following code example gives you the complete code of above configurations.
 {% tabs %} 
 
 {% highlight xaml %}
+
+<chart:SfFunnelChart x:Name="chart" Header="PRODUCT SALES" 
+                             ShowTooltip="True"
+                             Height="388" Width="500" 
+                             ItemsSource="{Binding Data}" 
+                             XBindingPath="Category"
+                             YBindingPath="Value">
+
+        <chart:SfFunnelChart.DataContext>
+            <model:ChartViewModel />
+        </chart:SfFunnelChart.DataContext>
+
+        <chart:SfFunnelChart.Legend>
+            <chart:ChartLegend />
+        </chart:SfFunnelChart.Legend>
+
+        <chart:SfFunnelChart.DataLabelSettings>
+            <chart:FunnelDataLabelSettings Visible="True" />
+        </chart:SfFunnelChart.DataLabelSettings>
+            
+</chart:SfFunnelChart>
  
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
+
+using Syncfusion.UI.Xaml.Charts;
+
+. . .
+
+public sealed partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+        SfFunnelChart chart = new SfFunnelChart();
+        ChartViewModel viewModel = new ChartViewModel();
+        chart.DataContext = viewModel;
+        chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+        chart.XBindingPath = "Category";
+        chart.YBindingPath = "Value";
+        chart.Header = "PRODUCT SALES";
+        chart.Height = 388;
+        chart.Width = 500;
+        chart.Legend = new ChartLegend();
+        chart.ShowTooltip = true;
+        chart.DataLabelSettings = new FunnelDataLabelSettings() { Visible = true };
+
+        this.Content = chart;
+    }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
+N> To plot the chart, the [XBindingPath]() and [YBindingPath]() properties must be configured so that the chart may get values from the respective properties in the data model.
+
 The following chart is created as a result of the previous codes.
 
-N> Download demo application from [GitHub]()
+![Getting Started WinUI Chart](Getting-Started_FunnelChart_images.png)
 
+N> Download demo application from [GitHub]()
