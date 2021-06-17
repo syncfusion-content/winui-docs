@@ -216,7 +216,7 @@ The [`ThumbStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Slide
 
 {% highlight c# %}
 
-SfRangeSlider sfSlider = new SfRangeSlider();
+SfRangeSlider sfRangeSlider = new SfRangeSlider();
 sfRangeSlider.RangeStart = 30;
 sfRangeSlider.RangeEnd = 70;
 sfRangeSlider.ShowToolTip = false;

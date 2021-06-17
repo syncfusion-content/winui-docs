@@ -9,7 +9,7 @@ documentation: ug
 
 # WinUI Slider Overview
 
-The Syncfusion [WinUI Slider](https://www.syncfusion.com/winui-controls/slider) is a highly interactive UI control, allowing users to select a single value from a range of values. It provides rich features such as labels, ticks, divisors, thumb styles, and tooltips.
+The Syncfusion [WinUI Slider](https://www.syncfusion.com/winui-controls/slider) is a highly interactive UI control, allowing users to select a single value from a range of values. It provides rich features such as labels, ticks, dividers, thumb styles, and tooltips.
 
 ![Overview WinUI slider](images/overview/slider.jpg)
 
@@ -19,7 +19,7 @@ The Syncfusion [WinUI Slider](https://www.syncfusion.com/winui-controls/slider) 
 
 * **Labels:** Supports adding labels for numeric values with the option to customize their format and style based on your requirements.
 
-* **Ticks and divisors:** Provides the option to show ticks and divisors based on the slider interval. Also, minor ticks can be enabled to indicate the values between each interval. These options present the selected values in a more intuitive way for end users.
+* **Ticks and dividers:** Provides the option to show ticks and dividers based on the slider interval. Also, minor ticks can be enabled to indicate the values between each interval. These options present the selected values in a more intuitive way for end users.
 
 * **Thumb icon:** Provides various built-in thumb icons and options to customize the thumb style.
 
