@@ -65,11 +65,12 @@ You can align the title text content horizontally to the left, center or right o
  <chart:SfFunnelChart x:Name="chart" 
                 HorizontalHeaderAlignment="Right"
                 ShowTooltip="True"
+                Palette="BlueChrome"
                 Height="388" Width="500" 
                 ItemsSource="{Binding Data}" 
                 XBindingPath="Category"
                 YBindingPath="Value">
-
+                
             <chart:SfFunnelChart.Header>
                 <Border BorderThickness="2" BorderBrush="Black" Margin="10" CornerRadius="5">
                     <TextBlock FontSize="14" Text="PRODUCT SALES" Margin="5"/>
@@ -105,6 +106,7 @@ public sealed partial class MainPage : Page
         chart.DataContext = viewModel;
         chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
         chart.HorizontalHeaderAlignment = HorizontalAlignment.Right;
+        chart.Palette = ChartColorPalette.BlueChrome;
         chart.XBindingPath = "Category";
         chart.YBindingPath = "Value";
         chart.Height = 388;
@@ -114,6 +116,7 @@ public sealed partial class MainPage : Page
         {
             BorderThickness = new Thickness(2),
             BorderBrush = new SolidColorBrush(Colors.Black),
+            Background = new SolidColorBrush(Colors.LightBlue),
             Margin = new Thickness(10),
             CornerRadius = new CornerRadius(5)
         };
