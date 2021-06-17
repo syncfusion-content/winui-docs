@@ -9,7 +9,7 @@ documentation: ug
 
 # Header in WinUI Circular Charts (SfCircularChart)
 
-[Header]() property is used to define the title for the chart. This allows you to add any object (.Net object) as content for chart title. 
+[Header]() property is used to define the title for the chart. This allows to add any object (.Net object) as content for chart title. 
 
 {% tabs %}
 
