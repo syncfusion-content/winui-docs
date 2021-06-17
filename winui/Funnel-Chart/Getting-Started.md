@@ -309,6 +309,6 @@ N> To plot the chart, the [XBindingPath]() and [YBindingPath]() properties must 
 
 The following chart is created as a result of the previous codes.
 
-![Getting Started WinUI Chart](Getting-Started_images/WinUI_FunnelChart.png)
+![Getting Started WinUI FunnelChart](Getting-Started_images/WinUI_FunnelChart.png)
 
 N> Download demo application from [GitHub]()
