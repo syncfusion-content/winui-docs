@@ -253,6 +253,7 @@ The following code example gives you the complete code of above configurations.
 
 <chart:SfFunnelChart x:Name="chart" Header="PRODUCT SALES" 
                              ShowTooltip="True"
+                             Palette="BlueChrome"
                              Height="388" Width="500" 
                              ItemsSource="{Binding Data}" 
                              XBindingPath="Category"
