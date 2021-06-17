@@ -25,7 +25,7 @@ documentation: ug
     . . .
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts">
     <chart:SfFunnelChart/>
-    
+
 </Window>
  
 {% endhighlight %}
@@ -309,6 +309,6 @@ N> To plot the chart, the [XBindingPath]() and [YBindingPath]() properties must 
 
 The following chart is created as a result of the previous codes.
 
-![Getting Started WinUI Chart](Getting-Started_FunnelChart_images.png)
+![Getting Started WinUI Chart](Getting-Started_images/Getting-Started_FunnelChart_images.png)
 
 N> Download demo application from [GitHub]()
