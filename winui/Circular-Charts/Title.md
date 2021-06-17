@@ -33,7 +33,7 @@ chart.Header = "Circular Chart Header";
 ![WinUI Circular Chart with Header](Header_Images/WinUI_Circular_chart_Header.png)
 
 
-Header can be positioned left or right side of the chart using [`HorizontalHeaderAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_HorizontalHeaderAlignment) property.
+Header can be positioned left or right side of the chart using [HorizontalHeaderAlignment]() property.
 
 Also you can add more customization for the header as below: 
 
@@ -41,74 +41,42 @@ Also you can add more customization for the header as below:
 
 {% highlight xaml %}
 
-<chart:SfChart.Header>
-
-<Border BorderThickness="0.5" BorderBrush="Black" Margin="10" CornerRadius="5">
-
-<TextBlock FontSize="14" Text="Chart Area Header" Margin="5">
-
-<TextBlock.Effect>
-
-<DropShadowEffect Color="Black" 
-
-Opacity="0.5" />
-
-</TextBlock.Effect>
-
-</TextBlock>
-
-</Border>
-
-</chart:SfChart.Header>
+<chart:SfCircularChart.Header>
+    <Border BorderThickness="0.5" BorderBrush="Black" Margin="10" CornerRadius="5">
+        <TextBlock Text="Circular Chart Header"
+                   Margin="5" 
+                   HorizontalTextAlignment="Center"
+                   FontFamily="Verdana" FontSize="14" 
+                   Foreground="Blue">
+        </TextBlock>
+    </Border>
+</chart:SfCircularChart.Header>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfChart chart = new SfChart();
-
 Border border = new Border()
 {
-
-BorderThickness = new Thickness(0.5),
-
-BorderBrush = new SolidColorBrush(Colors.Black),
-
-Margin = new Thickness(10),
-
-CornerRadius = new CornerRadius(5)
-
+    BorderBrush = new SolidColorBrush(Colors.Black),
+    Margin = new Thickness(10),
+    CornerRadius = new CornerRadius(5)
 };
 
 TextBlock textBlock = new TextBlock()
 {
-
-Text = "Chart Area Header",
-
-Margin = new Thickness(5),
-
-FontSize = 14
-
-};
-
-textBlock.Effect = new DropShadowEffect()
-{
-
-Color = Colors.Black,
-
-Opacity = 0.5
-
+    Text = "Circular Chart Header",
+    HorizontalTextAlignment = TextAlignment.Center,
+    FontFamily = new FontFamily("Verdana"),
+    Foreground = new SolidColorBrush(Colors.Blue),
+    FontSize = 25,
 };
 
 border.Child = textBlock;
-
 chart.Header = border;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Customizing Header of WPF Chart](Area_images/wpf-chart-header-customization.jpeg)
-
-
-N> Here, HorizontalHeaderAlignment is set as ‘Right’.
+![Customizing Header of WinUI Circular Chart](Header_Images/WinUI_Circular_chart_Header_customization.png)
