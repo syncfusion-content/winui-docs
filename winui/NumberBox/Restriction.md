@@ -61,13 +61,13 @@ sfNumberBox.Value = 50;
 
 ## Restrict text editing
 
-You can prevent users from editing the numerical value of the `NumberBox` control using the `IsReadOnly` property. By default, the value of `IsReadOnly` property is **false**. 
+You can prevent users from editing the numerical value of the `NumberBox` control using the `IsEditable` property. By default, the value of `IsEditable` property is **false**. 
 
 {% tabs %}
 {% highlight XAML %}
 
 <editors:SfNumberBox x:Name="sfNumberBox" 
-                     HorizontalAlignment="Center" VerticalAlignment="Center" IsReadOnly="True" />
+                     HorizontalAlignment="Center" VerticalAlignment="Center" IsEditable="True" />
 
 {% endhighlight %}
 {% highlight c# %}
@@ -75,7 +75,7 @@ You can prevent users from editing the numerical value of the `NumberBox` contro
 SfNumberBox sfNumberBox = new SfNumberBox();
 sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
 sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
-sfNumberBox.IsReadOnly = true;
+sfNumberBox.IsEditable = true;
 
 {% endhighlight %}
 {% endtabs %}

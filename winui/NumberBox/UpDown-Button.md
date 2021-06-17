@@ -37,7 +37,7 @@ sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 
 ## UpDown button placement
 
-You can increase or decrease the value of the `NumberBox` control using the spin button. By default, the value of `SpinButtonPlacement` property is **Hidden**. You can change the SpinButton position by setting **Inline** or **Compact** values.
+You can increase or decrease the value of the `NumberBox` control using the updown button. By default, the value of `UpDownPlacementMode` property is **Hidden**. You can change the SpinButton position by setting **Inline** or **Compact** values.
 
 N> When using the spin button, the `NumberBox` value changes based on the value of the `SmallChange` property.
 
@@ -45,7 +45,7 @@ N> When using the spin button, the `NumberBox` value changes based on the value 
 {% highlight XAML %}
 
 <editors:SfNumberBox x:Name="sfNumberBox" 
-                     HorizontalAlignment="Center" VerticalAlignment="Center" SpinButtonPlacement="Inline" />
+                     HorizontalAlignment="Center" VerticalAlignment="Center" UpDownPlacementMode="Inline" />
 
 {% endhighlight %}
 {% highlight c# %}
@@ -53,9 +53,9 @@ N> When using the spin button, the `NumberBox` value changes based on the value 
 SfNumberBox sfNumberBox = new SfNumberBox();
 sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
 sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
-sfNumberBox.SpinButtonPlacement = NumberBoxSpinButtonPlacementMode.Inline;
+sfNumberBox.UpDownPlacementMode = NumberBoxUpDownPlacementMode.Inline;
 
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown Placement in WinUI NumberBox](SpinButton_images/spinbuttonPlacement_img.png)
+![UpDown Placement in WinUI NumberBox](SpinButton_images/spinbuttonPlacement_img.png)
