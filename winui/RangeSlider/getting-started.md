@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI RangeSlider (Range Slider)
 
-This section explains the steps required to add the [WinUI RangeSlider](https://www.syncfusion.com/winui-controls/range-slider) control and its elements such as values, ticks, divisors, labels, and tooltip. This section covers only basic features needed to get started with Syncfusion RangeSlider.
+This section explains the steps required to add the [WinUI RangeSlider](https://www.syncfusion.com/winui-controls/range-slider) control and its elements such as values, ticks, dividers, labels, and tooltip. This section covers only basic features needed to get started with Syncfusion RangeSlider.
 
 ## Creating an application with WinUI Range Slider
 
@@ -122,9 +122,9 @@ this.Content = sfRangeSlider;
 
 ![Range slider with labels](images/getting-started/slider-labels.png)
 
-## Enable Divisors
+## Enable Dividers
 
-You can enable divisors in the range slider using the [`ShowDivisors`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowDivisors) property.
+You can enable dividers in the range slider using the [`ShowDividers`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowDividers) property.
 
 {% tabs %}
 
@@ -132,9 +132,9 @@ You can enable divisors in the range slider using the [`ShowDivisors`](https://h
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
-                      ShowDivisors="True"
-                      DivisorHeight="4"
-                      DivisorWidth="4"
+                      ShowDividers="True"
+                      DividerHeight="4"
+                      DividerWidth="4"
                       ActiveTrackHeight="4"
                       InactiveTrackHeight="4" />
 
@@ -145,9 +145,9 @@ You can enable divisors in the range slider using the [`ShowDivisors`](https://h
 SfRangeSlider sfRangeSlider = new SfRangeSlider();
 sfRangeSlider.RangeStart = 30;
 sfRangeSlider.RangeEnd = 70;
-sfRangeSlider.ShowDivisors = true;
-sfRangeSlider.DivisorHeight = 4;
-sfRangeSlider.DivisorWidth = 4;
+sfRangeSlider.ShowDividers = true;
+sfRangeSlider.DividerHeight = 4;
+sfRangeSlider.DividerWidth = 4;
 sfRangeSlider.ActiveTrackHeight = 4;
 sfRangeSlider.InactiveTrackHeight = 4;
 this.Content = sfRangeSlider;
@@ -156,6 +156,6 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with divisors](images/getting-started/slider-divisors.png)
+![Range slider with dividers](images/getting-started/slider-dividers.png)
 
 N> Download demo application from the [GitHub](https://github.com/SyncfusionExamples/WinUI_Sliders_Getting_Started/tree/main/RangeSliderGettingStartedDesktop)

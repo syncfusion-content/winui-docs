@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Slider
 
-This section explains the steps required to add the [WinUI Slider](https://www.syncfusion.com/winui-controls/slider) control and its elements such as values, ticks, divisors, labels, and tooltip. This section covers only basic features needed to get started with Syncfusion Slider.
+This section explains the steps required to add the [WinUI Slider](https://www.syncfusion.com/winui-controls/slider) control and its elements such as values, ticks, dividers, labels, and tooltip. This section covers only basic features needed to get started with Syncfusion Slider.
 
 ## Creating an application with WinUI Slider
 
@@ -116,18 +116,18 @@ this.Content = sfSlider;
 
 ![Slider with labels](images/getting-started/slider-labels.png)
 
-## Enable Divisors
+## Enable Dividers
 
-You can enable divisors in the slider using the [`ShowDivisors`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowDivisors) property.
+You can enable dividers in the slider using the [`ShowDividers`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowDividers) property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <slider:SfSlider Value="50"
-                 ShowDivisors="True"
-                 DivisorHeight="4"
-                 DivisorWidth="4"
+                 ShowDividers="True"
+                 DividerHeight="4"
+                 DividerWidth="4"
                  ActiveTrackHeight="4"
                  InactiveTrackHeight="4" />
 
@@ -137,9 +137,9 @@ You can enable divisors in the slider using the [`ShowDivisors`](https://help.sy
 
 SfSlider sfSlider = new SfSlider();
 sfSlider.Value = 50;
-sfSlider.ShowDivisors = true;
-sfSlider.DivisorHeight = 4;
-sfSlider.DivisorWidth = 4;
+sfSlider.ShowDividers = true;
+sfSlider.DividerHeight = 4;
+sfSlider.DividerWidth = 4;
 sfSlider.ActiveTrackHeight = 4;
 sfSlider.InactiveTrackHeight = 4;
 this.Content = sfSlider;
@@ -148,6 +148,6 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![Slider with divisors](images/getting-started/slider-divisors.png)
+![Slider with dividers](images/getting-started/slider-dividers.png)
 
 N> Download demo application from the [GitHub](https://github.com/SyncfusionExamples/WinUI_Sliders_Getting_Started/tree/main/SliderGettingStartedDesktop)
