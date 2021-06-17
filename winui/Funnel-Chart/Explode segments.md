@@ -7,5 +7,5 @@ control: SfFunnelChart
 documentation: ug
 ---
 
-Explode Segments in WinUI Funnel Chart (SfFunnelChart)
+# Explode Segments in WinUI Funnel Chart (SfFunnelChart)
 
