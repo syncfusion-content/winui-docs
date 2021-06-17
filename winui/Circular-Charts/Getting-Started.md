@@ -9,13 +9,13 @@ documentation: ug
 
 # Getting started with WinUI Circular Charts
 
-This section explains how to add data, header, data labels, legend and tooltips to the Chart. And its simply covers the essential aspects for getting started with the Circular Chart.
+This section explains how to populate the Circular chart with data, header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the Circular Chart.
 
 ## Creating an application with WinUI Circular Chart
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
-2.	Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
-3.	Import the control namespace `Syncfusion.UI.Xaml.Charts`  in XAML or C# to initialize the control.
-4.	Initialize [SfCircularChart]() control.
+2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
+3. Import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C# to initialize the control.
+4. Initialize [SfCircularChart]() control.
 
 {% tabs %} 
 
@@ -28,11 +28,11 @@ This section explains how to add data, header, data labels, legend and tooltips 
 
     <chart:SfCircularChart/>
 </Window>
-
  
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
+
 using Syncfusion.UI.Xaml.Charts;
 . . .
 public sealed partial class MainWindow : Window
@@ -56,12 +56,14 @@ Now, let us define a simple data model that represents a data point in chart.
 {% tabs %}  
 
 {% highlight c# %}
+
 public class Sales
 {
     public string Product { get; set; }
 
     public double SalesRate { get; set; }
 }
+
 {% endhighlight %} 
 
 {% endtabs %} 
@@ -114,7 +116,6 @@ N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `Da
     </chart:SfCircularChart>
 </Window>
 
-
 {% endhighlight %}
 
 {% highlight C# %} 
@@ -165,13 +166,14 @@ series.SetBinding(
 
 chart.Series.Add(series);
 . . .
+
 {% endhighlight %}
 
 {% endtabs %} 
 
 ## Add title
 
-The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [Header]() property of circular chart as follows.
+The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [Header]() property of Circular chart as follows.
 
 {% tabs %} 
 
@@ -183,7 +185,7 @@ The header of the chart acts as the title to provide quick information to the us
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 chart.Header = "PRODUCT SALES";
 
@@ -209,7 +211,7 @@ The [DataLabelSettings]() property of [CircularSeries]() can be used to enable d
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 series.DataLabelSettings = new CircularChartDataLabelSettings() { Visible = true };
 
@@ -217,11 +219,10 @@ series.DataLabelSettings = new CircularChartDataLabelSettings() { Visible = true
 
 {% endtabs %}  
 
+
 ## Enable legend
 
-The legend provides information about the data point displayed in the Circular chart. 
-
-The [Legend]() property of the Chart was used to enable it.
+The legend provides information about the data point displayed in the Circular chart. The [Legend]() property of the chart was used to enable it.
 
 {% tabs %} 
 
@@ -236,7 +237,7 @@ The [Legend]() property of the Chart was used to enable it.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 SfCircularChart chart = new SfCircularChart();
 . . .
@@ -262,7 +263,7 @@ Tooltips are used to show information about the segment, when mouse over on it. 
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 PieSeries series = new PieSeries();
 . . .
@@ -298,7 +299,8 @@ The following code example gives you the complete code of above configurations.
  
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
+
 using Syncfusion.UI.Xaml.Charts;
 . . .
 public sealed partial class MainWindow : Window
