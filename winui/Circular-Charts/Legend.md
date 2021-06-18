@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Legend in WinUI Circular Chart control | WinUI | Syncfusion
-description: How to configure the chart legend and customize the appearance of the legend title, Icons, labels, and ItemTemplate in WinUI Circular Chart (SfCircularChart)
+description: This sections explains about how to configure the legend and its features title, icons, labels, and template in WinUI Circular Chart (SfCircularChart).
 platform: WinUI
 control: SfCircularChart
 documentation: ug
@@ -9,7 +9,9 @@ documentation: ug
 
 # Legend in WinUI Circular Charts (SfCircularChart)
 
-[Legend]() provides metadata which helps for identifying corresponding data points in chart. 
+The legend contains list of series data points in the chart. The information provided in each legend item helps to identify the corresponding data series in the chart.
+
+The following code example shows how to enable legend in chart.
 
 {% tabs %}
 
@@ -30,15 +32,13 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %}
 
-N> Legend items ‘Label’ will be the x value of the Circular chart.
+N> Legend items ‘Label’ will be the x-value of data points in the Circular chart.
 
 ![Legend support in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend.png)
 
-## Legend Header
+## Legend title
 
-Chart provides support to add any UIElement as a header for legend items. 
-
-Define the [Header]() for legend using the following code example.
+Circular chart provides support to add any `UIElement` as a title for legend. [Header]() property of `ChartLegend` is used to define the title for legend as the following code example.
 
 {% tabs %}
 
@@ -117,13 +117,11 @@ chart.Series.Add(series);
 
 ![Legend icon in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_LegendIcon.png)
 
-The following properties are used to customize the legend.
+Legend icon represents a symbol associated with the each legend item. The appearance of the legend icon can be customized using the below properties.
 
 * [IconWidth]() - Gets or sets the double value that represents the legend icon(s) width.
 * [IconHeight]() - Gets or sets the double value that represents that legend icon(s) height.
 * [IconVisibility]() - Gets or sets the Visibility of the legend icon.
-* [ItemMargin]() - Gets or sets the margin for the legend items.
-* [CornerRadius]() - Gets or sets the corner radius of the legend.
 
 The following code example illustrates the customization of legend.
 
@@ -204,9 +202,37 @@ chart.Series.Add(series);
 
 ![Customizing legend icons in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Custom_Icon.png)
 
+## Legend item spacing
+
+`ItemMargin` property of the `ChartLegend` is used to provide spacing between each legend items.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCircularChart.Legend>
+    <chart:ChartLegend ItemMargin="10"/>
+</chart:SfCircularChart.Legend>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.Legend = new ChartLegend()
+{
+    ItemMargin = new Thickness(10)
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Legend item spacing support in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_Icon_spacing.png)
+
+
 ## Checkbox for legend
 
-Used to view or collapse the associated data points. By default, the [CheckBoxVisibility]() is `Collapsed`. 
+Circular chart provides support to enable the checkbox for each legend item to visible or collapse the associated data points. By default, the value of [CheckBoxVisibility]() property is `Collapsed`.  
 
 {% tabs %}
 
@@ -237,9 +263,9 @@ The data point can be collapsed by unchecking the checkbox as below:
 ![Checkbox support for legend in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_LegendIcon_collapsed.png)
 
 
-## ToggleSeriesVisibility 
+## Toggle series visibility 
 
-[ToggleSeriesVisibility]() is used to view or collapse the associated data point, by clicking on its legend item. By default, [ToggleSeriesVisibility]() property is `False`.
+The visibility of the segment can be control by tapping the legend item by enabling the [ToggleSeriesVisibility]() property. By default, the value of [ToggleSeriesVisibility]() property is `False`.
 
 {% tabs %}
 
@@ -266,12 +292,9 @@ The data point can be collapsed and view it again, by clicking on the respective
 
 ![ToggleSeriesVisibility support for legend in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_ToggleSeriesVisibility.png)
 
-## Positioning the Legend
+## Positioning the legend
 
-**Legend Position**
-
-This allows to position the legends [Inside]() or [Outside]() of the chart area (plotting area). 
-By default, it will be displayed outside and positioned at top (using [DockPosition]()) of the chart area.
+The legends can be placed either inside or outside of the chart area (plotting area). By default, it will be displayed outside and positioned at top (using [DockPosition]()) of the chart area.
 
 {% tabs %}
 
@@ -296,8 +319,7 @@ chart.Legend = new ChartLegend()
 
 **Docking**
 
-Legends can be docked left, right, and top or bottom around the chart area using [DockPosition]() property. 
-By default, the ChartLegend is docked at the top of the chart as mentioned earlier.
+Legends can be docked left, right, and top or bottom around the chart area using [DockPosition]() property. By default, the chart legend is docked at the top of the chart as mentioned earlier.
 
 To display the legend at the bottom, you can set the [DockPosition]() as [Left]() as in below code snippet.
 
@@ -327,7 +349,7 @@ chart.Legend = new ChartLegend()
 
 **Floating Legends**
 
-To position the legend at any arbitrary location inside chart, need to set [DockPosition]() as `Floating` and provide its relative position using [OffsetX]() and [OffsetY]() properties.
+To position the legend at any arbitrary location inside chart, need to set [DockPosition]() as `Floating` and provide its relative position by using [OffsetX]() and [OffsetY]() properties.
  
 Offset specifies x or y distance from origin.
 
@@ -358,7 +380,7 @@ chart.Legend = new ChartLegend()
 
 ## Legend Orientation
 
-Orientation of the Legend can be vertical or horizontal. By default the [Orientation]() is [Horizontal](). 
+Orientation of the legend items can aligned vertically or horizontally by setting [`Orientation`]() property of legend. By default, the value of [Orientation]() property is [Horizontal](). 
 
 {% tabs %}
 
@@ -384,11 +406,47 @@ chart.Legend = new ChartLegend()
 ![Legend orientation support in WinUI Chart](Legend_images/WinUI_Circular_chart_Legend_Orientation.png)
 
 
-## Customization
+## Legend background customization 
 
-**ItemTemplate**
+The legend background appearance can be customized by using the below properties.
 
-Customize each legend item using [ItemTemplate]() property in ChartLegend as in below code snippet:
+[BorderThickness]() - used to change the stroke width of the legend.
+[BorderBrush]() - used to change the stroke color of the legend.
+[Background]() - used to change the background color of legend.
+[Opacity]() - used to control the transparency of the legend icon shape.
+[CornerRadius]() - used to change the corner radius of the legend.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCircularChart.Legend>
+    <chart:ChartLegend Background="Gray" BorderBrush="Black" 
+                       BorderThickness="1" CornerRadius="5" 
+                       Opacity="0.9" >
+    </chart:ChartLegend>
+</chart:SfCircularChart.Legend>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.Legend = new ChartLegend()
+{
+    Background = new SolidColorBrush(Colors.Gray),
+    BorderBrush = new SolidColorBrush(Colors.Black),
+    BorderThickness = new Thickness(1),
+    Opacity = 0.9,
+    CornerRadius = CornerRadiusHelper.FromUniformRadius(5)
+};
+
+{% endtabs %}
+
+![Legend background customization in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_background_customizing.png)
+
+## Legend template customization
+
+Customize each legend item by using [ItemTemplate]() property in ChartLegend as in below code snippet:
 
 {% tabs %}
 
