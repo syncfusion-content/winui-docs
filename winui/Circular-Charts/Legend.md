@@ -227,9 +227,6 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend item spacing support in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_Icon_spacing.png)
-
-
 ## Checkbox for legend
 
 Circular chart provides support to enable the checkbox for each legend item to visible or collapse the associated data points. By default, the value of [CheckBoxVisibility]() property is `Collapsed`.  
@@ -441,8 +438,6 @@ chart.Legend = new ChartLegend()
 };
 
 {% endtabs %}
-
-![Legend background customization in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_background_customizing.png)
 
 ## Legend template customization
 
