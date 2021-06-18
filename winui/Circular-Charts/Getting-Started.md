@@ -7,44 +7,25 @@ control: SfCircularChart
 documentation: ug
 ---
 
-# Getting started with WinUI Circular Charts
+# Getting Started with WinUI Chart
 
-This section explains how to populate the Circular chart with data, header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the Circular Chart.
+This section explains you the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to learn to get started with the Chart.
 
-## Creating an application with WinUI Circular Chart
+## Creating an application with WinUI Chart
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
-2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
-3. Import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C# to initialize the control.
-4. Initialize [SfCircularChart]() control.
+2.	Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
+3.	Import the control namespace `Syncfusion.UI.Xaml.Charts`  in XAML or C# to initialize the control.
+4.	Initialize SfChart control.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-<Window
-    x:Class="ChartDemo.MainWindow"
-    . . .
-    xmlns:chart="using:Syncfusion.UI.Xaml.Charts">
-
-    <chart:SfCircularChart/>
-</Window>
  
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
-using Syncfusion.UI.Xaml.Charts;
-. . .
-public sealed partial class MainWindow : Window
-{
-    public MainWindow()
-    {
-        this.InitializeComponent();
-        SfCircularChart chart = new SfCircularChart();
-        . . .
-        this.Content = chart;
-    }
-}   
 {% endhighlight %}
 
 {% endtabs %}
@@ -57,13 +38,6 @@ Now, let us define a simple data model that represents a data point in chart.
 
 {% highlight c# %}
 
-public class Sales
-{
-    public string Product { get; set; }
-
-    public double SalesRate { get; set; }
-}
-
 {% endhighlight %} 
 
 {% endtabs %} 
@@ -75,53 +49,47 @@ Next, create a view model class and initialize a list of `Model` objects as foll
 
 {% highlight c# %}
 
-public class ChartViewModel
+public class ViewModel  
 {
-    public List<Sales> Data { get; set; }
-
-    public ChartViewModel()
-    {
-        Data = new List<Sales>()
-        {
-            new Sales(){Product = "iPad", SalesRate = 25},
-            new Sales(){Product = "iPhone", SalesRate = 35},
-            new Sales(){Product = "MacBook", SalesRate = 15},
-            new Sales(){Product = "Mac", SalesRate = 5},
-            new Sales(){Product = "Others", SalesRate = 10},
-        };
-    }
-}
+      public ViewModel()       
+      {
+          
+       }
+ }
 
 {% endhighlight %} 
 
 {% endtabs %} 
 
-Create a `ViewModel` instance and set it as the chart's `DataContext`. This enables property binding from `ViewModel` class.
-
+Set the `ViewModel` instance as the `DataContext` of your window; this is done to bind properties of `ViewModel` to  the chart.
+ 
 N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `DataContext` in XAML.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
-<Window
-    . . .
-    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
-    xmlns:Model="using:ChartDemo.ViewModel">
+<Page
+    x:Class="SfChart_GettingStarted.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SfChart_GettingStarted"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Charts"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="350" Width="525"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <chart:SfCircularChart>
-        <chart:SfCircularChart.DataContext>
-            <Model:ChartViewModel/>
-        </chart:SfCircularChart.DataContext>
-    </chart:SfCircularChart>
-</Window>
+    <Page.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </Page.DataContext>
+</Page>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-ChartViewModel viewModel = new ChartViewModel();
-chart.DataContext = viewModel;
+this.DataContext = new ViewModel();
 
 {% endhighlight %}
 
@@ -129,43 +97,19 @@ chart.DataContext = viewModel;
 
 ## Populate chart with data
 
-Adding [PieSeries]() to the chart [Series]() collection and binding `Data` to the series [ItemsSource]() property from its `DataContext` for creating our own Product – Sales Pie chart.
+As we are going to visualize the comparison of heights in the data model, add [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html) to [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Series) property of chart, and then bind the `Data` property of the above `ViewModel` to the `ColumnSeries.ItemsSource` as follows.
 
-N> To plot the series, the [XBindingPath]() and [YBindingPath]() properties must be configured so that the chart may get values from the respective properties in the data model.
+N> You need to set [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath) and [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.XyDataSeries.html#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties, so that chart would fetch values from the respective properties in the data model to plot the series.
 
 {% tabs %}   
 
 {% highlight xaml %}
 
-<chart:SfCircularChart>
-. . .
-    <chart:SfCircularChart.Series>
-        <chart:PieSeries ItemsSource="{Binding Data}" 
-                         XBindingPath="Product" 
-                         YBindingPath="SalesRate"/>
-    </chart:SfCircularChart.Series>
-</chart:SfCircularChart>
+
 
 {% endhighlight %}
 
 {% highlight C# %}
-
-SfCircularChart chart = new SfCircularChart();
-
-ChartViewModel viewModel = new ChartViewModel();
-chart.DataContext = viewModel;
-
-PieSeries series = new PieSeries();
-series.XBindingPath = "Product";
-series.YBindingPath = "SalesRate";
-
-series.SetBinding(
-    PieSeries.ItemsSourceProperty, 
-    new Binding() 
-    { Path = new PropertyPath("Data") });
-
-chart.Series.Add(series);
-. . .
 
 {% endhighlight %}
 
@@ -173,101 +117,90 @@ chart.Series.Add(series);
 
 ## Add title
 
-The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [Header]() property of Circular chart as follows.
+The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_Header) property of chart as follows.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-<chart:SfCircularChart Header="PRODUCT SALES">
-    . . .
-</chart:SfCircularChart>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
-chart.Header = "PRODUCT SALES";
+
 
 {% endhighlight %}
 
 {% endtabs %}  
 
 
-## Enable Data Labels
+## Enable data markers
 
-The [DataLabelSettings]() property of [CircularSeries]() can be used to enable data labels to improve the readability of the Circular chart. The label Visibility is set to `False` by default.
+You can add data labels to improve the readability of the chart and it can be enabled using [DataMarker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataMarkerSeries.html#Syncfusion_UI_Xaml_Charts_DataMarkerSeries_DataMarker) property of [ChartSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataMarkerSeries.html). By default, there is no label displayed, you have to set [ShowLabel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_ShowLabel) property of [ChartDataMarker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataMarker.html) to True.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-<chart:PieSeries>
-. . .
-    <chart:PieSeries.DataLabelSettings>
-        <chart:CircularChartDataLabelSettings Visible="True"/>
-    </chart:PieSeries.DataLabelSettings>
-</chart:PieSeries>
+
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
-series.DataLabelSettings = new CircularChartDataLabelSettings() { Visible = true };
+
 
 {% endhighlight %}
 
 {% endtabs %}  
-
 
 ## Enable legend
 
-The legend provides information about the data point displayed in the Circular chart. The [Legend]() property of the chart was used to enable it.
+You can enable legend using the [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property as follows.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-<chart:SfCircularChart>
-    . . .
-    <chart:SfCircularChart.Legend>
-        <chart:ChartLegend/>
-    </chart:SfCircularChart.Legend>
-</chart:SfCircularChart>
+
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
-SfCircularChart chart = new SfCircularChart();
-. . .
-chart.Legend = new ChartLegend();
 
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}  
+
 
 {% tabs %} 
+
+{% highlight xaml %}
+
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+{% endhighlight %}
+
+{% endtabs %}  
 
 ## Enable tooltip
 
-Tooltips are used to show information about the segment, when mouse over on it. Enable tooltip by setting series [ShowTooltip]() property as true.
+Tooltips are used to show information about the segment, when you click the segment. You can enable tooltip by setting series [ShowTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property to true.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-<chart:PieSeries ShowTooltip="True">
-    . . . 
-</chart:PieSeries>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
-PieSeries series = new PieSeries();
-. . .
-series.ShowTooltip = true;
 
 {% endhighlight %}
 
@@ -279,57 +212,14 @@ The following code example gives you the complete code of above configurations.
 
 {% highlight xaml %}
 
-<chart:SfCircularChart Header="PRODUCT SALES">
-    <chart:SfCircularChart.DataContext>
-        <Model:ChartViewModel/>
-    </chart:SfCircularChart.DataContext>
-    <chart:SfCircularChart.Legend>
-        <chart:ChartLegend/>
-    </chart:SfCircularChart.Legend>
-    <chart:SfCircularChart.Series>
-        <chart:PieSeries ItemsSource="{Binding Data}" 
-                         XBindingPath="Product" ShowTooltip="True"
-                         YBindingPath="SalesRate">
-            <chart:PieSeries.DataLabelSettings>
-                <chart:CircularChartDataLabelSettings Visible="True"/>
-            </chart:PieSeries.DataLabelSettings>
-        </chart:PieSeries>
-    </chart:SfCircularChart.Series>
-</chart:SfCircularChart>
+
  
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
 using Syncfusion.UI.Xaml.Charts;
-. . .
-public sealed partial class MainWindow : Window
-{
-    public MainWindow()
-    {
-        SfCircularChart chart = new SfCircularChart();
 
-        chart.Header = "PRODUCT SALES";
-        chart.Legend = new ChartLegend();
-        ChartViewModel viewModel = new ChartViewModel();
-        chart.DataContext = viewModel;
-
-        PieSeries series = new PieSeries();
-        series.XBindingPath = "Product";
-        series.YBindingPath = "SalesRate";
-        series.ShowTooltip = true;
-
-        series.DataLabelSettings = new CircularChartDataLabelSettings() { Visible = true };
-
-        series.SetBinding(
-            PieSeries.ItemsSourceProperty, 
-            new Binding() 
-            { Path = new PropertyPath("Data") });
-
-        chart.Series.Add(series);
-        this.Content = chart;
-    }
-}
 
 {% endhighlight %}
 
