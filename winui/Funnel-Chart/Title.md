@@ -54,7 +54,7 @@ documentation: ug
 
 {% endtabs %} 
 
-![Title WinUI Chart](Title_images/WinUI_FunnelChart_TitleCustomization.png)
+![Title customization support in WinUI funnel chart](Title_images/WinUI_FunnelChart_TitleCustomization.png)
 
 ## Title Alignment
 
