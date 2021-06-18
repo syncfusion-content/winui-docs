@@ -54,6 +54,8 @@ You can define and customize the Chart title using header property of SfFunnelCh
 
 {% endtabs %} 
 
+![Title WinUI Chart](Title_images/WinUI_FunnelChart_TitleCustomization.png)
+
 ## Title Alignment
 
 You can align the title text content horizontally to the left, center or right of the chart using the [HorizontalHeaderAlignment]() property of the title.
@@ -72,7 +74,7 @@ You can align the title text content horizontally to the left, center or right o
                 YBindingPath="Value">
                 
             <chart:SfFunnelChart.Header>
-                <Border BorderThickness="2" BorderBrush="Black" Margin="10" CornerRadius="5">
+                <Border BorderThickness="2" Background="LightBlue" BorderBrush="Black" Margin="10" CornerRadius="5">
                     <TextBlock FontSize="14" Text="PRODUCT SALES" Margin="5"/>
                 </Border>
             </chart:SfFunnelChart.Header>
