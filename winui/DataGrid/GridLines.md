@@ -127,6 +127,44 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 
 ![WinUI DataGrid displays Horizontal Header Lines](GridLines_images/winui-datagrid-horizontal-header-lines.png)
 
+## DetailsViewDataGrid rows
+
+SfDataGrid allows you to customize the grid lines visibility to DetailsViewDataGrid by setting the GridLinesVisibility and HeaderLinesVisibility properties like parent DataGrid. 
+
+{% tabs %}
+{% highlight xaml %}
+xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
+
+<dataGrid:SfDataGrid  x:Name="sfDataGrid"
+                      AutoGenerateColumns="True"
+                      ItemsSource="{Binding OrdersDetails}"
+                      GridLinesVisibility="Horizontal"
+                      HeaderLinesVisibility="Horizontal">
+        <dataGrid:SfDataGrid.DetailsViewDefinition>
+            <dataGrid:GridViewDefinition RelationalColumn="OrderDetails">
+                <dataGrid:GridViewDefinition.DataGrid>
+                    <dataGrid:SfDataGrid  x:Name="FirstDetailsViewGrid" 
+                                          GridLinesVisibility="Horizontal"
+                                          HeaderLinesVisibility="Horizontal"
+                                          AutoGenerateColumns="True">
+                    </dataGrid:SfDataGrid>
+                </dataGrid:GridViewDefinition.DataGrid>
+            </dataGrid:GridViewDefinition>
+</dataGrid:SfDataGrid>
+
+
+{% endhighlight %}
+{% highlight c# %}
+this.sfDataGrid.GridLinesVisibility = GridLinesVisibility.Horizontal;
+this.sfDataGrid.HeaderLinesVisibility = GridLinesVisibility.Horizontal;
+this.FirstLevelNestedGrid.GridLinesVisibility = GridLinesVisibility.Horizontal;
+this.FirstLevelNestedGrid.HeaderLinesVisibility = GridLinesVisibility.Horizontal;
+
+{% endhighlight %}
+{% endtabs %}
+
+![DetailsViewDataGrid GridLinesVisibility customization in WinUI DataGrid](GridLines_images/winui-detailsviewdatagrid-horizontal-lines.png)
+
 ## Limitations
 
 * Grid lines customization are not supported for RowHeader.
