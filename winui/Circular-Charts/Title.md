@@ -65,11 +65,7 @@ Also you can add more customization for the header as below:
 {% highlight xaml %}
 
 <chart:SfCircularChart x:Name="chart" 
-                HorizontalHeaderAlignment="Right"
-                Palette="BlueChrome"
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
+                HorizontalHeaderAlignment="Right">
 
     <chart:SfCircularChart.Header>
         <Border BorderThickness="0.5" BorderBrush="Black" Margin="10" CornerRadius="5">
