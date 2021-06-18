@@ -31,7 +31,7 @@ chart.Header = "Polar Chart Header";
 
 {% endtabs %}
 
-![WinUI Polar Chart with Header](Header_Images/WinUI_Polar_chart_Header.png)
+![WinUI Polar Chart with Header]()
 
 Header can be positioned left or right side of the chart using [HorizontalHeaderAlignment]() property.
 
@@ -80,5 +80,5 @@ chart.Header = border;
 
 {% endtabs %}
 
-![Customizing Header of WinUI Polar Chart](Header_Images/WinUI_Polarr_chart_Header_customization.png)
+![Customizing Header of WinUI Polar Chart]()
 
