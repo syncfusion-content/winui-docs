@@ -171,6 +171,8 @@ chart.Series.Add(series);
 
 {% endtabs %} 
 
+![Pie series at WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries.png)
+
 ## Add title
 
 The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [Header]() property of circular chart as follows.
@@ -193,32 +195,32 @@ chart.Header = "PRODUCT SALES";
 
 {% endtabs %}  
 
+![Chart header at WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries_Header.png)
 
 ## Enable Data Labels
 
-The [DataLabelSettings]() property of [CircularSeries]() can be used to enable data labels to improve the readability of the circular chart. The label visibility is set to `False` by default.
+The [ShowDataLabels]() property of [CircularSeries]() can be used to enable data labels to improve the readability of the circular chart. The label visibility is set to `False` by default.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-<chart:PieSeries>
-. . .
-    <chart:PieSeries.DataLabelSettings>
-        <chart:CircularChartDataLabelSettings Visible="True"/>
-    </chart:PieSeries.DataLabelSettings>
-</chart:PieSeries>
+<chart:PieSeries ShowDataLabels="True"
+                 ItemsSource="{Binding Data}" 
+                 XBindingPath="Product" 
+                 YBindingPath="SalesRate"/>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-series.DataLabelSettings = new CircularChartDataLabelSettings() { Visible = true };
+series.ShowDataLabels = true;
 
 {% endhighlight %}
 
 {% endtabs %}  
 
+![Chart Data label at WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries_data_label.png)
 
 ## Enable legend
 
@@ -249,6 +251,8 @@ chart.Legend = new ChartLegend();
 
 {% tabs %} 
 
+![Chart Legend at WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries_Legend.png)
+
 ## Enable tooltip
 
 Tooltips are used to show information about the segment, when mouse over on it. Enable tooltip by setting series [ShowTooltip]() property as true.
@@ -272,6 +276,8 @@ series.ShowTooltip = true;
 {% endhighlight %}
 
 {% endtabs %}
+
+![Chart Tooltip at WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries_Tooltip.png)
 
 The following code example gives you the complete code of above configurations.
 
