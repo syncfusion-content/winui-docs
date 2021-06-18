@@ -116,9 +116,9 @@ chart.Legend = new ChartLegend()
 
 ![Legend icon in WinUI Funnel Chart](Legend_images/WinUI_Funnel_chart_Legend_Customize.png)
 
-## Legend Icon spacing
+## Legend item spacing
 
-Funnel chart provides support to ItemMargin for each legend item spacing.
+`ItemMargin` property of the `ChartLegend` is used to provide spacing between each legend items.
 
 {% tabs %}
 
@@ -141,11 +141,11 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend Icon spacing support for legend in WinUI Funnel Chart](Legend_images/WinUI_Funnel_chart_Legend_Icon_spacing.png)
+![Legend item spacing support in WinUI Funnel Chart](Legend_images/WinUI_Funnel_chart_Legend_Icon_spacing.png)
 
 ## Checkbox for legend
 
-Funnel chart provides support to enable the checkbox for each legend item to visbile or collapse the associated data points. By default, the value of [CheckBoxVisibility]() property is `Collapsed`. 
+Funnel chart provides support to enable the checkbox for each legend item to visible or collapse the associated data points. By default, the value of [CheckBoxVisibility]() property is `Collapsed`. 
 
 {% tabs %}
 
@@ -313,7 +313,7 @@ chart.Legend = new ChartLegend()
 
 ## Legend background customization 
 
-The deafult legend background appearance of the label can be customized using the below properties.
+The legend background appearance can be customized by using the below properties.
 
 [BorderThickness]() - used to change the stroke width of the legend.
 [BorderBrush]() - used to change the stroke color of the legend.
@@ -347,7 +347,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend background support for legend in WinUI Funnel Chart](Legend_images/WinUI_Funnel_chart_Legend_background_customizing.png)
+![Legend background customization in WinUI Funnel Chart](Legend_images/WinUI_Funnel_chart_Legend_background_customizing.png)
 
 ## Legend template customization
 
