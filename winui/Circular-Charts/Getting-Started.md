@@ -12,6 +12,7 @@ documentation: ug
 This section explains how to populate the circular chart with data, header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
 ## Creating an application with WinUI Circular Chart
+
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C# to initialize the control.
@@ -67,7 +68,6 @@ public class Sales
 {% endhighlight %} 
 
 {% endtabs %} 
-
 
 Next, create a view model class and initialize a list of `Model` objects as follows.
 
@@ -195,7 +195,7 @@ chart.Header = "PRODUCT SALES";
 
 {% endtabs %}  
 
-![Chart header at WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries_Header.png)
+![Header in WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries_Header.png)
 
 ## Enable Data Labels
 
@@ -220,7 +220,7 @@ series.ShowDataLabels = true;
 
 {% endtabs %}  
 
-![Chart Data label at WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries_data_label.png)
+![Data label in WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries_data_label.png)
 
 ## Enable legend
 
@@ -251,7 +251,7 @@ chart.Legend = new ChartLegend();
 
 {% tabs %} 
 
-![Chart Legend at WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries_Legend.png)
+![Legend in WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries_Legend.png)
 
 ## Enable tooltip
 
@@ -277,7 +277,7 @@ series.ShowTooltip = true;
 
 {% endtabs %}
 
-![Chart Tooltip at WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries_Tooltip.png)
+![Tooltip in WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries_Tooltip.png)
 
 The following code example gives you the complete code of above configurations.
 
