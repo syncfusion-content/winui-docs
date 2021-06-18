@@ -116,6 +116,33 @@ chart.Legend = new ChartLegend()
 
 ![Legend icon in WinUI Funnel Chart](Legend_images/WinUI_Funnel_chart_Legend_Customize.png)
 
+## Legend Icon spacing
+
+Funnel chart provides support to ItemMargin for each legend item spacing.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfFunnelChart.Legend>
+    <chart:ChartLegend ItemMargin="10"/>
+</chart:SfFunnelChart.Legend>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.Legend = new ChartLegend()
+{
+    ItemMargin = new Thickness(10)
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Legend Icon spacing support for legend in WinUI Funnel Chart](Legend_images/WinUI_Funnel_chart_Legend_Icon_spacing.png)
+
 ## Checkbox for legend
 
 Funnel chart provides support to enable the checkbox for each legend item to visbile or collapse the associated data points. By default, the value of [CheckBoxVisibility]() property is `Collapsed`. 
@@ -195,6 +222,8 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
+![Position support for legend in WinUI Funnel Chart](Legend_images/WinUI_Funnel_chart_Legend_Position.png)
+
 **Docking the legend position**
 
 Legends can be docked left, right, and top or bottom around the chart area using [DockPosition]() property. By default, the chart legend is docked at the top of the chart as mentioned earlier.
@@ -215,7 +244,8 @@ To display the legend at the right, you can set the [DockPosition]() as [Right](
 
 chart.Legend = new ChartLegend()
 {
-   DockPosition = ChartDock.Right
+   DockPosition = ChartDock.Right,
+   ItemMargin = new Thickness(10),
 };
 
 {% endhighlight %}
@@ -243,6 +273,7 @@ To position the legend at any arbitrary location inside chart, need to set [Dock
 chart.Legend = new ChartLegend()
 {
     DockPosition = ChartDock.Floating,
+    Orientation = ChartOrientation.Vertical,
     OffsetX = 370,
     OffsetY = 300
 };
@@ -279,6 +310,44 @@ chart.Legend = new ChartLegend()
 {% endtabs %}
 
 ![Legend orientation support in WinUI Funnel Chart](Legend_images/WinUI_Funnel_chart_Legend_Orientation.png)
+
+## Legend background customization 
+
+The deafult legend background appearance of the label can be customized using the below properties.
+
+[BorderThickness]() - used to change the stroke width of the legend.
+[BorderBrush]() - used to change the stroke color of the legend.
+[Background]() - used to change the background color of legend.
+[Opacity]() - used to control the transparency of the legend icon shape.
+[CornerRadius]() - used to change the corner radius of the legend.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfFunnelChart.Legend>
+    <chart:ChartLegend Background="Gray" BorderBrush="Black" 
+                       BorderThickness="1" CornerRadius="5" 
+                       Opacity="0.9" >
+    </chart:ChartLegend>
+</chart:SfFunnelChart.Legend>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.Legend = new ChartLegend()
+{
+    Background = new SolidColorBrush(Colors.Gray),
+    BorderBrush = new SolidColorBrush(Colors.Black),
+    BorderThickness = new Thickness(1),
+    Opacity = 0.9,
+    CornerRadius = CornerRadiusHelper.FromUniformRadius(5)
+};
+
+{% endtabs %}
+
+![Legend background support for legend in WinUI Funnel Chart](Legend_images/WinUI_Funnel_chart_Legend_background_customizing.png)
 
 ## Legend template customization
 
