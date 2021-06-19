@@ -7,7 +7,7 @@ control: SfFunnelChart
 documentation: ug
 ---
 
-# Data Label in WinUI Chart
+# Data Label in WinUI Funnel Chart (SfFunnelChart)
 
 Data points can be easily annotated with labels to help improve the readability of data. 
 
