@@ -1,19 +1,22 @@
 ---
 layout: post
 title: About WinUI Pyramid Chart control | Syncfusion
-description: Learn here all about introduction of Syncfusion WinUI Pyramid Chart(SfPyramidChart) control with key features and more.
+description: Learn here all about introduction of Syncfusion WinUI Pyramid Chart (SfPyramidChart) control with key features and more.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
 ---
 
-# WinUI Pyramid Chart Overview
+# WinUI Pyramid Chart (SfPyramidChart) Overview
+
+Syncfusion WinUI Pyramid Chart (SfPyramidChart) is used to create the beautiful pyramid series to analyze the various stages in a process, which are used in high quality WinUI applications.
 
 ## Key features
 
-* Allows you to map data from the specified path, by achieving data binding concept.
+* It supports pyramid series for more user-friendly data representation and greater UI visualization.
 
-* When you need more information about particular segment in a chart, a little mouse over on the series provides much more information by including tooltip and trackball behavior.
+* User interaction features such as selection, tooltip, and exploding segments are included in the pyramid chart for enhancing end-user experience.
 
-* User friendly and provides various options for you to customize chart features like axis,legends and data markers.
+* Legends provide more information about the segments. The legend can also be used to collapse the segments. If an item exceeds the available bounds, the legends can be wrapped or scrolled.
 
+* Provides various options for customizing and visualizing the chart features, title, data labels, legends, segment spacing, etc.
