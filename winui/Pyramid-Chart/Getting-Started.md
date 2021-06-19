@@ -287,7 +287,7 @@ public sealed partial class MainWindow : Window
         SfPyramidChart chart = new SfPyramidChart();
         ChartViewModel viewModel = new ChartViewModel();
         chart.DataContext = viewModel;
-        chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+        chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
         chart.XBindingPath = "FoodName";
         chart.YBindingPath = "Calories";
         chart.Header = "The Food Comparison Pyramid";
