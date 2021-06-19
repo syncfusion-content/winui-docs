@@ -9,9 +9,9 @@ documentation: ug
 
 # Legend in WinUI Funnel Chart (SfFunnelChart)
 
-The legend contains list of series data points in the chart. The information provided in each legend item helps to identify the corresponding data series in the chart.
+The legend contains a list of series data points in the chart. The information provided in each legend item helps you to identify the corresponding data series in the chart.
 
-The following code example shows how to enable legend in chart.
+The following code example shows how to enable legend in the chart.
 
 {% tabs %}
 
@@ -32,13 +32,13 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %}
 
-N> Legend items ‘Label’ will be the x-value of data points in the funnel chart.
+N> The x-value of data points in the funnel chart will be the Legend items ‘Label’.
 
 ![Legend support in WinUI Funnel Chart](Legend_images/WinUI_Funnel_chart_Legend.png)
 
 ## Legend title
 
-Funnel chart provides support to add any `UIElement` as a title for legend. [Header]() property of `ChartLegend` is used to define the title for legend as the following code example.
+The funnel chart provides support to add any `UIElement` as a title for legend. [Header]() property of `ChartLegend` is used to define the title for the legend as shown in the following code example.
 
 {% tabs %}
 
@@ -81,13 +81,13 @@ chart.Legend = legend;
 
 ## Legend icon
 
-Legend icon represents a symbol associated with the each legend item. The appearance of the legend icon can be customized using the below properties.
+The legend icon represents a symbol associated with each legend item. The appearance of the legend icon can be customized using the following properties:
 
 * [IconWidth]() - Gets or sets the double value that represents the legend icon(s) width.
-* [IconHeight]() - Gets or sets the double value that represents that legend icon(s) height.
+* [IconHeight]() - Gets or sets the double value that represents the legend icon(s) height.
 * [IconVisibility]() - Gets or sets the visibility of the legend icon.
 
-The following code example illustrates the customization of legend icon.
+The following code example illustrates the customization of the legend icon.
 
 {% tabs %}
 
@@ -141,7 +141,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend item spacing support in WinUI Funnel Chart](Legend_images/WinUI_Funnel_chart_Legend_Icon_spacing.png)
+![Legend item spacing support in WinUI Funnel Chart](Legend_images/WinUI_Funnel_chart_Legend_item_spacing.png)
 
 ## Checkbox for legend
 
@@ -172,7 +172,7 @@ chart.Legend = new ChartLegend()
 
 ## Toggle series visibility 
 
-The visibility of the segment can be control by tapping the legend item by enabling the [ToggleSeriesVisibility]() property. By default, the value of [ToggleSeriesVisibility]() property is `False`.
+By enabling the [ToggleSeriesVisibility]() property, the visibility of the segment can be controlled by tapping the legend item. By default, the value of [ToggleSeriesVisibility]() property is `False`.
 
 {% tabs %}
 
@@ -226,9 +226,9 @@ chart.Legend = new ChartLegend()
 
 **Docking the legend position**
 
-Legends can be docked left, right, and top or bottom around the chart area using [DockPosition]() property. By default, the chart legend is docked at the top of the chart as mentioned earlier.
+By using the [DockPosition]() property, legends can be docked to the left, right, and top or bottom of the chart area. By default, the chart legend is docked at the top of the chart as mentioned earlier.
 
-To display the legend at the right, you can set the [DockPosition]() as [Right]() as in below code snippet.
+To display the legend at the right, you can set the [DockPosition]() as [Right]() as shown in the following code sample.
 
 {% tabs %}
 
@@ -256,7 +256,7 @@ chart.Legend = new ChartLegend()
 
 **Floating legends**
 
-To position the legend at any arbitrary location inside chart, need to set [DockPosition]() as `Floating` and provide its relative position by using [OffsetX]() and [OffsetY]() properties.
+To position the legend at any arbitrary location within the chart, you need to set [DockPosition]() as `Floating` and provide its relative position by using the [OffsetX]() and [OffsetY]() properties.
 
 {% tabs %}
 
@@ -284,9 +284,9 @@ chart.Legend = new ChartLegend()
 
 ![Floating legend support in WinUI Funnel Chart](Legend_images/WinUI_Funnel_chart_Legend_floating.png)
 
-## Legend Orientation
+## Legend orientation
 
-Orientation of the legend items can aligned vertically or horizontally by setting [`Orientation`]() property of legend. By default, the value of [Orientation]() property is [Horizontal](). 
+Orientation of the legend items can be aligned vertically or horizontally by setting the [Orientation]() property of legend. By default, the value of [Orientation]() property is [Horizontal]().
 
 {% tabs %}
 
@@ -313,11 +313,11 @@ chart.Legend = new ChartLegend()
 
 ## Legend background customization 
 
-The legend background appearance can be customized by using the below properties.
+The legend background appearance can be customized by using the following properties:
 
 [BorderThickness]() - used to change the stroke width of the legend.
 [BorderBrush]() - used to change the stroke color of the legend.
-[Background]() - used to change the background color of legend.
+[Background]() - used to change the background color of the legend.
 [Opacity]() - used to control the transparency of the legend icon shape.
 [CornerRadius]() - used to change the corner radius of the legend.
 
@@ -351,7 +351,7 @@ chart.Legend = new ChartLegend()
 
 ## Legend template customization
 
-Customize each legend item by using [ItemTemplate]() property in ChartLegend as in below code snippet:
+Customize each legend item by using the [ItemTemplate]() property in ChartLegend, as shown in the following code sample.
 
 {% tabs %}
 
