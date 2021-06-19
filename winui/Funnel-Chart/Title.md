@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart title in WinUI Funnel Chart (SfFunnelChart)
 
-`Header` property of `SfFunnelChart` is used to define and customize the chart title. It supports any object (.Net object) as content for chart header.
+`Header` property of `SfFunnelChart` is used to define and customize the chart title. It accepts any object (.Net object) as content for the chart header.
 
 {% tabs %}   
 
@@ -56,7 +56,7 @@ documentation: ug
 
 ![Title customization support in WinUI funnel chart](Title_images/WinUI_FunnelChart_TitleCustomization.png)
 
-## Title Alignment
+## Title alignment
 
 The title text content can be aligned horizontally to the left, center or right of the chart using the [HorizontalHeaderAlignment]() property of the `SfFunnelChart`.
 
