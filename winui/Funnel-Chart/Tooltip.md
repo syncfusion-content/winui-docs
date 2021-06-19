@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tooltip in WinUI Chart control | Syncfusion
-description: Learn here all about Tooltip feature of Syncfusion WinUI Chart control. It is set to display the metadata of the particular segment or data point.
+description: Learn here all about Tooltip feature of Syncfusion WinUI funnel Chart control. It is set to display the metadata of the particular segment or data point.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
