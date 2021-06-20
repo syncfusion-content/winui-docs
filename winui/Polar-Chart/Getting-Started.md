@@ -60,11 +60,10 @@ Now, let us define a simple data model that represents a data point in chart.
 
 {% highlight c# %}
 
-public class Sales
+public class Model
 {
-    public string Product { get; set; }
-
-    public double SalesRate { get; set; }
+    public string Category { get; set; }
+    public double Value { get; set; }
 }
 
 {% endhighlight %} 
@@ -72,7 +71,7 @@ public class Sales
 {% endtabs %} 
 
 
-Next, create a view model class and initialize a list of `Sales` objects as follows.
+Next, create a view model class and initialize a list of `Model` objects as follows.
 
 {% tabs %}  
 
@@ -80,17 +79,20 @@ Next, create a view model class and initialize a list of `Sales` objects as foll
 
 public class ChartViewModel
 {
-    public List<Sales> Data { get; set; }
+    public ObservableCollection<Model> Data { get; set; }
 
     public ChartViewModel()
     {
-        Data = new List<Sales>()
+        Data = new ObservableCollection<Model>()
         {
-            new Sales(){Product = "iPad", SalesRate = 25},
-            new Sales(){Product = "iPhone", SalesRate = 35},
-            new Sales(){Product = "MacBook", SalesRate = 15},
-            new Sales(){Product = "Mac", SalesRate = 5},
-            new Sales(){Product = "Others", SalesRate = 10},
+            new Model(){ Category = "North", Value = 80 },
+            new Model(){ Category = "NorthWest", Value = 87.5 },
+            new Model(){ Category = "West", Value = 79 },
+            new Model(){ Category = "SouthWest", Value = 83 },
+            new Model(){ Category = "South", Value = 77.5 },
+            new Model(){ Category = "SouthEast", Value = 90 },
+            new Model(){ Category = "East", Value = 77.5 },
+            new Model(){ Category = "NorthEast", Value = 85 },
         };
     }
 }
@@ -99,9 +101,9 @@ public class ChartViewModel
 
 {% endtabs %} 
 
-Create a `ViewModel` instance and set it as the chart's `DataContext`. This enables property binding from `ViewModel` class.
+Create a `ChartViewModel` instance and set it as the chart's `DataContext`. This enables property binding from the `ChartViewModel` class.
  
-N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `DataContext` in XAML.
+N> If you prefer to set `DataContext` in XAML, add the namespace of the `ViewModel` class to your XAML Page.
 
 {% tabs %} 
 
@@ -180,8 +182,8 @@ N> To plot the series, the [XBindingPath]() and [YBindingPath]() properties must
 . . .
     <chart:SfPolarChart.Series>
         <chart:PolarSeries ItemsSource="{Binding Data}" 
-                         XBindingPath="Product" 
-                         YBindingPath="SalesRate"/>
+                         XBindingPath="Category" 
+                         YBindingPath="Value"/>
     </chart:SfPolarChart.Series>
 </chart:SfPolarChart>
  
@@ -196,8 +198,8 @@ ChartViewModel viewModel = new ChartViewModel();
 chart.DataContext = viewModel;
 
 PolarSeries series = new PolarSeries();
-series.XBindingPath = "Product";
-series.YBindingPath = "SalesRate";
+series.XBindingPath = "Category";
+series.YBindingPath = "Value";
 
 series.SetBinding(
     ChartSeriesBase.ItemsSourceProperty, 
@@ -213,13 +215,13 @@ chart.Series.Add(series);
 
 ## Add title
 
-The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [Header]() property of chart as follows.
+The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [Header]() property of the polar chart as follows.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-<chart:SfPolarChart Header="PRODUCT SALES"> 
+<chart:SfPolarChart Header="Polar Chart"> 
 ...
 </chart:SfPolarChart> 
 
@@ -227,7 +229,7 @@ The header of the chart acts as the title to provide quick information to the us
 
 {% highlight C# %} 
 
-chart.Header = "PRODUCT SALES";
+chart.Header = "Polar Chart";
 
 {% endhighlight %}
 
@@ -254,7 +256,7 @@ The [DataLabelSettings]() property of [PolarSeries]() can be used to enable data
 
 {% highlight C# %} 
 
-series.DataLabelSettings = new CircularChartDataLabelSettings() { Visible = true };
+series.DataLabelSettings = new PolarDataLabelSettings() { Visible = true };
 
 {% endhighlight %}
 
@@ -318,30 +320,6 @@ series.Label = "Sales";
 
 {% endtabs %}  
 
-//Polar series tooltip whether need or having support confirm first
-## Enable tooltip
-
-Tooltips are used to show information about the segment, when mouse over on it. Enable tooltip by setting series [ShowTooltip]() property as true.
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-<chart:PolarSeries ShowTooltip="True">
-    . . . 
-</chart:PolarSeries>
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-PolarSeries series = new PolarSeries();
-. . .
-series.ShowTooltip = true;
-
-{% endhighlight %}
-
-{% endtabs %}
 
 The following code example gives you the complete code of above configurations.
 
@@ -349,7 +327,7 @@ The following code example gives you the complete code of above configurations.
 
 {% highlight xaml %}
 
-<chart:SfPolarChart Header="PRODUCT SALES">
+<chart:SfPolarChart Header="Polar Chart">
     <chart:SfPolarChart.DataContext>
         <Model:ChartViewModel/>
     </chart:SfPolarChart.DataContext>
@@ -357,9 +335,10 @@ The following code example gives you the complete code of above configurations.
         <chart:ChartLegend/>
     </chart:SfPolarChart.Legend>
     <chart:SfPolarChart.Series>
-        <chart:PolarSeries ItemsSource="{Binding Data}" Label="Sales"
-                         XBindingPath="Product" ShowTooltip="True"
-                         YBindingPath="SalesRate">
+        <chart:PolarSeries ItemsSource="{Binding Data}" 
+                         XBindingPath="Category"
+                         YBindingPath="Value"
+                         Label="Sales">
             <chart:PolarSeries.DataLabelSettings>
                 <chart:PolarDataLabelSettings Visible="True"/>
             </chart:PolarSeries.DataLabelSettings>
@@ -379,16 +358,15 @@ public sealed partial class MainWindow : Window
     {
         SfPolarChart chart = new SfPolarChart();
 
-        chart.Header = "PRODUCT SALES";
+        chart.Header = "Polar Chart";
         chart.Legend = new ChartLegend();
         ChartViewModel viewModel = new ChartViewModel();
         chart.DataContext = viewModel;
 
         PolarSeries series = new PolarSeries();
-        series.XBindingPath = "Product";
-        series.YBindingPath = "SalesRate";
+        series.XBindingPath = "Category";
+        series.YBindingPath = "Value";
         series.Label = "Sales";
-        series.ShowTooltip = true;
 
         series.DataLabelSettings = new PolarDataLabelSettings() { Visible = true };
 
@@ -408,6 +386,7 @@ public sealed partial class MainWindow : Window
 
 The following chart is created as a result of the previous codes.
 
+![Getting Started WinUI PolarChart](Getting-Started_images/WinUI_PolarChart.png)
 
 N> Download demo application from [GitHub]()
 

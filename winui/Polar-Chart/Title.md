@@ -1,64 +1,43 @@
 ---
 layout: post
-title: Header in WinUI Polar Chart control | Syncfusion
-description: Learn all about Header support in Syncfusion WinUI Polar Chart(SfPolarChart) control, its elements and more details.
+title: Title in WinUI Polar Chart control | Syncfusion
+description: Learn here all about title with Syncfusion WinUI Funnel Chart (SfPolarChart) control and its customization.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
 ---
 
-# Header in WinUI Polar Charts (SfPolarChart)
+# Chart title in WinUI Polar Chart (SfPolarChart)
 
-[Header]() property is used to define the title for the chart. This allows to add any object (.Net object) as content for chart title.
+`Header` property of `SfPolarChart` is used to define and customize the chart title. It accepts any object (.Net object) as content for the chart header.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfPolarChart Header="Polar Chart Header">
-. . .
+
+ <chart:SfPolarChart>
+
+    <chart:SfPolarChart.Header>
+        <Border BorderThickness="2" BorderBrush="Black" Margin="10" CornerRadius="5">
+            <TextBlock FontSize="14" Text="Polar Chart" Margin="5"/>
+        </Border>
+    </chart:SfPolarChart.Header>
+
+    ...
+            
 </chart:SfPolarChart>
+
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-chart.Header = "Polar Chart Header";
-...
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![WinUI Polar Chart with Header]()
-
-Header can be positioned left or right side of the chart using [HorizontalHeaderAlignment]() property.
-
-Also you can add more customization for the header as below: 
-
-% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfPolarChart.Header>
-    <Border BorderThickness="0.5" BorderBrush="Black" Margin="10" CornerRadius="5">
-        <TextBlock Text="Polar Chart Header"
-                   Margin="5" 
-                   HorizontalTextAlignment="Center"
-                   FontFamily="Verdana" FontSize="14" 
-                   Foreground="Blue">
-        </TextBlock>
-    </Border>
-</chart:SfPolarChart.Header>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-...
+. . .
 Border border = new Border()
 {
+    BorderThickness = new Thickness(2),
     BorderBrush = new SolidColorBrush(Colors.Black),
     Margin = new Thickness(10),
     CornerRadius = new CornerRadius(5)
@@ -66,19 +45,74 @@ Border border = new Border()
 
 TextBlock textBlock = new TextBlock()
 {
-    Text = "Polar Chart Header",
-    HorizontalTextAlignment = TextAlignment.Center,
-    FontFamily = new FontFamily("Verdana"),
-    Foreground = new SolidColorBrush(Colors.Blue),
-    FontSize = 25,
+    Text = "Polar Chart",
+    Margin = new Thickness(5),
+    FontSize = 14
 };
 
 border.Child = textBlock;
-chart.Header = border;
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Customizing Header of WinUI Polar Chart]()
+![Title customization support in WinUI polar chart](Title_images/WinUI_PolarChart_TitleCustomization.png)
 
+## Title Alignment
+
+The title text content can be aligned horizontally to the left, center or right of the chart using the [HorizontalHeaderAlignment]() property of the `SfPolarChart`.
+
+% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfPolarChart HorizontalHeaderAlignment="Left">
+    <chart:SfPolarChart.Header>
+        <Border BorderThickness="2" BorderBrush="Black" Background="LightBlue" Margin="10" CornerRadius="5">
+            <TextBlock Text="Polar Chart"
+                    Margin="5" 
+                    HorizontalTextAlignment="Center"
+                    FontSize="14" 
+                    Foreground="Blue">
+            </TextBlock>
+        </Border>
+    </chart:SfPolarChart.Header>
+    ...
+ </chart:SfPolarChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfFunnelChart chart = new SfFunnelChart();
+chart.HorizontalHeaderAlignment = HorizontalAlignment.Left;
+...
+Border border = new Border()
+{
+    BorderThickness = new Thickness(2),
+    BorderBrush = new SolidColorBrush(Colors.Black),
+    Background = new SolidColorBrush(Colors.LightBlue),
+    Margin = new Thickness(10),
+    CornerRadius = new CornerRadius(5)
+};
+
+TextBlock textBlock = new TextBlock()
+{
+    Text = "Polar Chart",
+    HorizontalTextAlignment = TextAlignment.Center,
+    Foreground = new SolidColorBrush(Colors.Blue),
+    FontSize = 14,
+};
+
+border.Child = textBlock;
+chart.Header = border;
+...
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+![Title text alignment support in WinUI polar chart](Title_images/WinUI_PolarChart_TitleAlignment.png)
