@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in WinUI Funnel Chart control | Syncfusion
-description: Learn here all about Appearance of Syncfusion WinUI Funnel Chart(SfFunnelChart) control with key features and more.
+description: This section explains about how to customize the appearance of funnel segments with predefined palettes and gradient in Syncfusion WinUI Funnel Chart(SfFunnelChart) control
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
@@ -9,13 +9,11 @@ documentation: ug
 
 # Appearance in WinUI Funnel Chart (SfFunnelChart)
 
-[SfFunnelChart]() support various customizing and styling options that allows you to enrich the application.
+The appearance of [SfFunnelChart]() can be customize by using the predefined palettes, custome palettes and gradient that allows to enrich the application.
 
 ## Palettes
 
-[SfFunnelChart]() provides options to apply different kinds of themes or palettes to your chart. You can define Palette either for the entire chart or for an individual series.
-
-We have some predefined palette such as
+[SfFunnelChart]() provides options to apply different kinds of palettes. We have some predefined palette such as
 
 * Metro
 * AutumnBrights
@@ -30,9 +28,9 @@ We have some predefined palette such as
 * LightCandy
 * SandyBeach
 
-### Applying Palette
+### Applying palette
 
-Each [palette]() applies a set of predefined brushes to the series in a predefined order. [Metro]() palette is the default palette for both Segment.
+Each palette applies a set of predefined brushes to the funnel series in a predefined order. [Metro]() palette is the default palette.
 
 {% tabs %}
 
@@ -60,7 +58,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Predefined palettes in WinUI Funnel Chart](Appearance_images/WinUI_Funnel_chart_Predefined_palette.png)
+![Predefined palette in WinUI Funnel Chart](Appearance_images/WinUI_Funnel_chart_Predefined_palette.png)
 
 The following code example defined [`Palette`]() as [`GreenChrome`]().
 
@@ -94,9 +92,9 @@ this.Content = chart;
 
 ![defined palettes in WinUI Funnel Chart](Appearance_images/WinUI_Funnel_chart_GreenChrome_palette.png)
 
-## Custom Palette
+## Custom palette
 
-[`SfFunnelChart`]() provides option which enables you to define your own [`CustomBrushes`]() with your preferred order for the Palette, using [`ColorModel`]() as shown in the following code example.
+[`SfFunnelChart`]() provides support to define own brushes for chart with preferred order by using [`CustomBrushes`]() property of [`ChartColorModel`]() and [`Palette`]() value as [`Custom`]() as shown in the following code example.
 
 {% tabs %}
 
@@ -151,11 +149,11 @@ this.Content = chart;
 
 ![Custom palette in WinUI Funnel Chart](Appearance_images/WinUI_Funnel_chart_Custom_palette.png)
 
-## Gradient Colors
+## Applying gradient brushes
 
-Gradient colors for the funnel chart can be set by using the [`ColorModel`]() property of the funnel chart with the help of `LinearGradientBrush` or `RadialGradientBrush`.
+Gradient for the funnel chart can be set by using the [`ColorModel`]() property of the funnel chart with the help of `LinearGradientBrush` or `RadialGradientBrush`.
 
-The following code sample and screenshot illustrates how to apply the custom gradient colors for chart series using the [`ColorModel`]() property.
+The following code sample and screenshot illustrates how to apply the gradient brushes for chart using the [`ColorModel`]() property.
 
 {% tabs %}
 
@@ -229,11 +227,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Gradient color in WinUI Funnel Chart](Appearance_images/WinUI_Funnel_chart_Gradient_color.png)
+![Gradient support in WinUI Funnel Chart](Appearance_images/WinUI_Funnel_chart_Gradient_color.png)
 
-## SegmentColorPath
+## Segment color binding
 
-The color of the chart segments can be updated by binding their corresponding model property from the `ItemsSource` collection to its [`ColorValuePath`]() property of series as follows.
+The color of the each segment can be set by binding their corresponding model property from the `ItemsSource` collection to its [`ColorValuePath`]() property of funnel chart as follows.
 
 {% tabs %}
 
@@ -282,6 +280,5 @@ this.Content = chart;
 
 {% endtabs %}
 
-![SegmentColorPath in WinUI Funnel Chart](Appearance_images/WinUI_Funnel_chart_ColorValuePath.png)
-
+![Segment color binding support in WinUI Funnel Chart](Appearance_images/WinUI_Funnel_chart_ColorValuePath.png)
 
