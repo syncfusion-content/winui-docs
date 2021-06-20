@@ -34,11 +34,11 @@ chart.Legend = new ChartLegend();
 
 N> Legend items ‘Label’ will be the x-value of data points in the polar chart.
 
-![Legend support in WinUI Polar Chart]()
+![Legend support in WinUI Polar Chart](Legend_images/WinUI_PolarChart_Legend.png)
 
 ## Legend title
 
-Polar chart provides support to add any `UIElement` as a title for legend. [Header]() property of `ChartLegend` is used to define the title for legend as the following code example.
+Polar chart provides support to add any `UIElement` as a title for legend. [Header]() property of `ChartLegend` is used to define the title for the legend as shown in the following code example.
 
 {% tabs %}
 
@@ -77,11 +77,10 @@ chart.Legend = legend;
 
 {% endtabs %}
 
-![Legend title in WinUI Polar Chart]()
 
 ## Legend icon
 
-Legend icon represents a symbol associated with the each legend item. The appearance of the legend icon can be customized using the below properties.
+The legend icon represents a symbol associated with each legend item. The appearance of the legend icon can be customized using the following properties:
 
 * [IconWidth]() - Gets or sets the double value that represents the legend icon(s) width.
 * [IconHeight]() - Gets or sets the double value that represents that legend icon(s) height.
@@ -114,8 +113,6 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend icon in WinUI Polar Chart]()
-
 ## Legend item spacing
 
 `ItemMargin` property of the `ChartLegend` is used to provide spacing between each legend items.
@@ -141,7 +138,6 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend item spacing support in WinUI Polar Chart]()
 
 ## Checkbox for legend
 
@@ -168,11 +164,12 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Checkbox support for legend in WinUI Polar Chart]()
 
 ## Toggle series visibility 
 
-The visibility of the segment can be control by tapping the legend item by enabling the [ToggleSeriesVisibility]() property. By default, the value of [ToggleSeriesVisibility]() property is `False`.
+By enabling the [ToggleSeriesVisibility]() property, the visibility of the series can be controlled by tapping the legend item. By default, the value of [ToggleSeriesVisibility]() property is `False`.
+
+We can enable the [ToggleSeriesVisibility]() property as in below code example:
 
 {% tabs %}
 
@@ -194,8 +191,6 @@ chart.Legend = new ChartLegend()
 {% endhighlight %}
 
 {% endtabs %}
-
-![ToggleSeriesVisibility support for legend in WinUI Polar Chart]()
 
 ## Positioning the legend
 
@@ -222,11 +217,9 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Position support for legend in WinUI Polar Chart]()
-
 **Docking the legend position**
 
-Legends can be docked left, right, and top or bottom around the chart area using [DockPosition]() property. By default, the chart legend is docked at the top of the chart as mentioned earlier.
+By using the [DockPosition]() property, legends can be docked to the left, right, and top or bottom of the chart area. By default, the chart legend is docked at the top of the chart as mentioned earlier.
 
 To display the legend at the right, you can set the [DockPosition]() as [Right]() as in below code snippet.
 
@@ -252,11 +245,9 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Positioning the legend at right in WinUI Polar Chart]()
-
 **Floating legends**
 
-To position the legend at any arbitrary location inside chart, need to set [DockPosition]() as `Floating` and provide its relative position by using [OffsetX]() and [OffsetY]() properties.
+To position the legend at any arbitrary location within the chart, you need to set [DockPosition]() as `Floating` and provide its relative position by using the [OffsetX]() and [OffsetY]() properties.
 
 {% tabs %}
 
@@ -281,8 +272,6 @@ chart.Legend = new ChartLegend()
 {% endhighlight %}
 
 {% endtabs %}
-
-![Floating legend support in WinUI Polar Chart]()
 
 ## Legend Orientation
 
@@ -309,11 +298,9 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend orientation support in WinUI Polar Chart]()
-
 ## Legend background customization 
 
-The legend background appearance can be customized by using the below properties.
+The legend background appearance can be customized by using the following properties:
 
 [BorderThickness]() - used to change the stroke width of the legend.
 [BorderBrush]() - used to change the stroke color of the legend.
@@ -347,11 +334,10 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend background customization in WinUI Polar Chart]()
 
 ## Legend template customization
 
-Customize each legend item by using [ItemTemplate]() property in ChartLegend as in below code snippet:
+Customize each legend item by using the [ItemTemplate]() property in `ChartLegend`, as shown in the following code sample.
 
 {% tabs %}
 
@@ -389,5 +375,3 @@ chart.Legend = new ChartLegend()
 {% endhighlight %}
 
 {% endtabs %}
-
-![Legend ItemTemplate support in WinUI Polar Chart]()
