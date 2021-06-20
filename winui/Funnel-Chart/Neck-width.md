@@ -44,7 +44,7 @@ this.Content = chart;
 
 ## Inversed pyramid
 
-The funnel chart can be customised to the Invered pyramid chart by setting the [MinimumWidth]() property to 0.
+The funnel chart can be customized to the Inversed pyramid chart by setting the [MinimumWidth]() property to 0.
 
 {% tabs %} 
 
