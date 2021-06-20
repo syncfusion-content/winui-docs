@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in WinUI Funnel Chart control | Syncfusion
-description: This section explains about how to customize the appearance of funnel segments with predefined palettes and gradient in Syncfusion WinUI Funnel Chart(SfFunnelChart) control
+description: This section explains about how to apply palettes and gradient in the Syncfusion WinUI Funnel Chart (SfFunnelChart) control
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WinUI Funnel Chart (SfFunnelChart)
 
-The appearance of [SfFunnelChart]() can be customize by using the predefined palettes, custome palettes and gradient that allows to enrich the application.
+The appearance of [SfFunnelChart]() can be customize by using the predefined palettes, custom palettes and gradient that allows to enrich the application.
 
 ## Palettes
 
@@ -90,7 +90,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![defined palettes in WinUI Funnel Chart](Appearance_images/WinUI_Funnel_chart_GreenChrome_palette.png)
+![Palette support in WinUI Funnel Chart](Appearance_images/WinUI_Funnel_chart_GreenChrome_palette.png)
 
 ## Custom palette
 
