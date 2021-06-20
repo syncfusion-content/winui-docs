@@ -9,7 +9,7 @@ documentation: ug
 
 # Segment spacing in WinUI Funnel Chart (SfFunnelChart)
 
-The gap between each segment in the funnel chart can be set using the [GapRatio]() property.
+The gap between each segment in the funnel chart can be set using the [GapRatio]() property.The default value of [GapRatio]() property property is 0 and its value ranges from 0 to 1.
 
 {% tabs %} 
 
@@ -40,5 +40,5 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Segment spacing in WinUI Funnel Chart](Segment-spacing_images/WinUI_Funnel_chart_Gap_Ratio.png)
+![Segment spacing in WinUI Funnel Chart](Segment-spacing_images/WinUI_funnel_chart_gap_ratio.png)
 

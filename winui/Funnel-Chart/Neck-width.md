@@ -9,7 +9,7 @@ documentation: ug
 
 # Neck width in WinUI Funnel Chart (SfFunnelChart)
 
-The neck width of funnel chart can be customized by using the [MinimumWidth]() property. The following code example shows how to change the neck width.
+The neck width of funnel chart can be customized by using the [MinimumWidth]() property. The default value of [MinimumWidth]() property is 40. The following code example shows how to change the neck width.
 
 {% tabs %} 
 
@@ -18,7 +18,6 @@ The neck width of funnel chart can be customized by using the [MinimumWidth]() p
 <chart:SfFunnelChart
         Palette="BlueChrome"
         MinimumWidth="20" 
-        Height="388" Width="500" 
         ItemsSource="{Binding Data}" 
         XBindingPath="Category"
         YBindingPath="Value">
@@ -34,8 +33,6 @@ chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new P
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.MinimumWidth = 20;
-chart.Height = 388;
-chart.Width = 500;
 . . . 
 this.Content = chart;
 
@@ -43,5 +40,39 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Neck width support in WinUI Funnel Chart](Neck-width_images/WinUI_Funnel_chart_Neck_width.png)
+![Neck width support in WinUI Funnel Chart](Neck-width_images/WinUI_funnel_chart_neck_width.png)
 
+## Inversed pyramid
+
+The funnel chart can be customised to the Invered pyramid chart by setting the [MinimumWidth]() property to 0.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfFunnelChart
+        Palette="BlueChrome"
+        MinimumWidth="0" 
+        ItemsSource="{Binding Data}" 
+        XBindingPath="Category"
+        YBindingPath="Value">
+</chart:SfFunnelChart>
+ 
+{% endhighlight %}
+
+{% highlight C# %}
+
+SfFunnelChart chart = new SfFunnelChart();
+chart.Palette = ChartColorPalette.BlueChrome;
+chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+chart.XBindingPath = "Category";
+chart.YBindingPath = "Value";
+chart.MinimumWidth = 0;
+. . . 
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Inversed pyramid in WinUI Funnel Chart](Neck-width_images/WinUI_funnel_chart_inversed_pyramid.png)
