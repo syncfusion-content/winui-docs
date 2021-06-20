@@ -169,7 +169,7 @@ The tooltip can be aligned with respect to the cursor position using the [`Horiz
 
 **HorizontalAlignment**
 
-Toolip can be positioned horizontally left, right or center to cursor position. The following code example explains the positioning of tooltip to the left of the cursor.
+Tooltip can be positioned horizontally left, right or center to cursor position. The following code example explains the positioning of tooltip to the left of the cursor.
 
 {% tabs %}
 
@@ -207,7 +207,7 @@ N> By default the horizontal alignment is center for the tooltip.
 
 **VerticalAlignment**
 
-Toolip can be positioned vertically top, bottom or center to cursor position. The following code example explains the positioning of tooltip to the bottom of the cursor.
+Tooltip can be positioned vertically top, bottom or center to cursor position. The following code example explains the positioning of tooltip to the bottom of the cursor.
 
 {% tabs %}
 
@@ -280,7 +280,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 ### Tooltip duration
 
-The [`ShowDuration`]() propety is used to set the duration time for tooltip to be displayed in milliseconds.
+The [`ShowDuration`]() property is used to set the duration time for tooltip to be displayed in milliseconds.
 
 The following code example demonstrates the duration of the tooltip set as 5 seconds.
 
