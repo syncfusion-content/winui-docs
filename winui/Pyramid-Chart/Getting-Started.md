@@ -1,21 +1,22 @@
 ---
 layout: post
-title: Getting Started with WinUI Pyramid Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Pyramid Chart(SfPyramidChart) control, its elements, and more.
+title: Getting started with WinUI Pyramid Chart control | Syncfusion
+description: This section explains about getting started with Syncfusion WinUI Pyramid Chart(SfPyramidChart) control
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
 ---
 
-# Getting Started with WinUI Pyramid Chart
+# Getting started with WinUI Pyramid Chart
 
 This section explains you the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to learn to get started with the Pyramid Chart.
 
 ## Creating an application with WinUI Pyramid Chart
+
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
-2.	Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
-3.	Import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C# to initialize the control.
-4.	Initialize `SfPyramidChart` control.
+2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
+3. Import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C# to initialize the control.
+4. Initialize `SfPyramidChart` control.
 
 {% tabs %} 
 
@@ -136,13 +137,13 @@ chart.DataContext = viewModel;
 
 ## Add title
 
-The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set the title using the [Header]() property of the pyramid chart as follows.
+The title of the chart provide quick information to the user about the data being plotted in the chart. The title cane be set by using the [Header]() property of the pyramid chart as follows.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart Header="The Food Comparison Pyramid">
+<chart:SfPyramidChart Header="Calories in food">
     
 . . .
 
@@ -156,7 +157,7 @@ SfPyramidChart chart = new SfPyramidChart();
 
 . . .
 
-chart.Header = "The Food Comparison Pyramid";
+chart.Header = "Calories in food";
 
 {% endhighlight %}
 
@@ -164,7 +165,7 @@ chart.Header = "The Food Comparison Pyramid";
 
 ## Enable data labels
 
-The [DataLabelSettings]() property of [PyramidChart]() can be used to enable data labels to improve the readability of the Pyramid chart. By default, the label visibility is set to `False`.
+The [DataLabelSettings]() property of [PyramidChart]() can be used to enable data labels to improve the readability of the pyramid chart. By default, the label visibility is set to `False`.
 
 {% tabs %} 
 
@@ -193,7 +194,7 @@ chart.DataLabelSettings = new PyramidDataLabelSettings() { Visible = true };
 
 ## Enable legend
 
-The legend provides information about the data point displayed in the Pyramid chart. The [Legend]() property of the chart was used to enable it.
+The legend provides information about the data point displayed in the pyramid chart. The [Legend]() property of the chart was used to enable it.
 
 {% tabs %} 
 
@@ -222,7 +223,7 @@ chart.Legend = new ChartLegend();
 
 ## Enable tooltip
 
-Tooltips are used to display information about a segment, when the mouse is moved over it. Enable tooltip by setting series [ShowTooltip]() property as true.
+Tooltips are used to display information about a segment, when the mouse is moved over it. Enable tooltip by setting [ShowTooltip]() property as true.
 
 {% tabs %} 
 
@@ -307,6 +308,7 @@ N> To plot the chart, the [XBindingPath]() and [YBindingPath]() properties must 
 
 The following chart is created as a result of the previous codes.
 
-![Getting Started WinUI PyramidChart](Getting-Started_images/WinUI_PyramidChart.png)
+![Getting started for WinUI Pyramid Chart](Getting-Started_images/WinUI_PyramidChart.png)
 
 N> Download demo application from [GitHub]().
+
