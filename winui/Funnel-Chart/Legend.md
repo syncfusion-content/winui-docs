@@ -32,7 +32,7 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %}
 
-N> The x-value of data points in the funnel chart will be the Legend items ‘Label’.
+N> The x-value of data points in the funnel chart will be the legend items ‘Label’.
 
 ![Legend support in WinUI Funnel Chart](Legend_images/WinUI_Funnel_chart_Legend.png)
 
@@ -351,7 +351,7 @@ chart.Legend = new ChartLegend()
 
 ## Legend template customization
 
-Customize each legend item by using the [ItemTemplate]() property in ChartLegend, as shown in the following code sample.
+Customize each legend item by using the [ItemTemplate]() property in `ChartLegend`, as shown in the following code sample.
 
 {% tabs %}
 
