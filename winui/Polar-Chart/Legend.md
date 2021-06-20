@@ -47,7 +47,7 @@ Polar chart provides support to add any `UIElement` as a title for legend. [Head
 <chart:SfPolarChart.Legend>
     <chart:ChartLegend>
         <chart:ChartLegend.Header>
-            <TextBox Text="Products" 
+            <TextBox Text="Plant Details" 
                 HorizontalAlignment="Center"
                 FontWeight="Bold"
                 Foreground="Blue"/>
@@ -64,7 +64,7 @@ ChartLegend legend = new ChartLegend();
 
 TextBlock textBlock = new TextBlock()
 {
-    Text = "Products",
+    Text = "Plant Details",
     HorizontalTextAlignment = TextAlignment.Center,
     Foreground = new SolidColorBrush(Colors.Blue),
     FontWeight = FontWeights.Bold,
@@ -77,6 +77,7 @@ chart.Legend = legend;
 
 {% endtabs %}
 
+![Legend title in WinUI Polar Chart](Legend_images/WinUI_PolarChart_chart_Legend_Header.png)
 
 ## Legend icon
 
@@ -113,6 +114,8 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
+![Legend icon in WinUI Polar Chart](Legend_images/WinUI_PolarChart_chart_Legend_Customize.png)
+
 ## Legend item spacing
 
 `ItemMargin` property of the `ChartLegend` is used to provide spacing between each legend items.
@@ -138,6 +141,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
+![Legend item spacing support in WinUI Polar Chart](Legend_images/WinUI_PolarChart_Legend_item_spacing.png)
 
 ## Checkbox for legend
 
@@ -163,6 +167,8 @@ chart.Legend = new ChartLegend()
 {% endhighlight %}
 
 {% endtabs %}
+
+![Checkbox support for legend in WinUI Polar Chart](Legend_images/WinUI_PolarChart_Legend_CheckBox.png)
 
 
 ## Toggle series visibility 
@@ -192,6 +198,8 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
+![ToggleSeriesVisibility support for legend in WinUI Polar Chart](Legend_images/WinUI_PolarChart_Legend_ToggleSeriesVisibility.png)
+
 ## Positioning the legend
 
 The legends can be placed either inside or outside of the chart area (plotting area). By default, it will be displayed outside and positioned at top (using [DockPosition]()) of the chart area.
@@ -216,6 +224,8 @@ chart.Legend = new ChartLegend()
 {% endhighlight %}
 
 {% endtabs %}
+
+![Position support for legend in WinUI Polar Chart](Legend_images/WinUI_PolarChart_Legend_Position.png)
 
 **Docking the legend position**
 
@@ -245,6 +255,8 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
+![Positioning the legend at right in WinUI Polar Chart](Legend_images/WinUI_PolarChart_Legend_Dock_Right.png)
+
 **Floating legends**
 
 To position the legend at any arbitrary location within the chart, you need to set [DockPosition]() as `Floating` and provide its relative position by using the [OffsetX]() and [OffsetY]() properties.
@@ -254,7 +266,7 @@ To position the legend at any arbitrary location within the chart, you need to s
 {% highlight xaml %}
 
  <chart:SfPolarChart.Legend>
-    <chart:ChartLegend DockPosition="Floating" Orientation="Vertical" OffsetX="370" OffsetY="300"/>
+    <chart:ChartLegend DockPosition="Floating" Orientation="Vertical" OffsetX="330" OffsetY="180"/>
 </chart:SfPolarChart.Legend>
 
 {% endhighlight %}
@@ -265,13 +277,16 @@ chart.Legend = new ChartLegend()
 {
     DockPosition = ChartDock.Floating,
     Orientation = ChartOrientation.Vertical,
-    OffsetX = 370,
-    OffsetY = 300
+    OffsetX = 330,
+    OffsetY = 180
 };
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![Floating legend support in WinUI Polar Chart](Legend_images/WinUI_PolarChart_Legend_floating.png)
+
 
 ## Legend Orientation
 
@@ -298,6 +313,8 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
+![Legend orientation support in WinUI Polar Chart](Legend_images/WinUI_PolarChart_Legend_Orientation.png)
+
 ## Legend background customization 
 
 The legend background appearance can be customized by using the following properties:
@@ -313,9 +330,9 @@ The legend background appearance can be customized by using the following proper
 {% highlight xaml %}
 
 <chart:SfPolarChart.Legend>
-    <chart:ChartLegend Background="Gray" BorderBrush="Black" 
+    <chart:ChartLegend Background="LightGray" BorderBrush="Black" 
                        BorderThickness="1" CornerRadius="5" 
-                       Opacity="0.9" >
+                       Opacity="0.9">
     </chart:ChartLegend>
 </chart:SfPolarChart.Legend>
 
@@ -325,7 +342,7 @@ The legend background appearance can be customized by using the following proper
 
 chart.Legend = new ChartLegend()
 {
-    Background = new SolidColorBrush(Colors.Gray),
+    Background = new SolidColorBrush(Colors.LightGray),
     BorderBrush = new SolidColorBrush(Colors.Black),
     BorderThickness = new Thickness(1),
     Opacity = 0.9,
@@ -334,6 +351,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
+![Legend background customization in WinUI Polar Chart](Legend_images/WinUI_PolarChart_Legend_background_customizing.png)
 
 ## Legend template customization
 
@@ -375,3 +393,5 @@ chart.Legend = new ChartLegend()
 {% endhighlight %}
 
 {% endtabs %}
+
+![Legend ItemTemplate support in WinUI Polar Chart](Legend_images/WinUI_PolarChart_Legend_Item_customizing.png)
