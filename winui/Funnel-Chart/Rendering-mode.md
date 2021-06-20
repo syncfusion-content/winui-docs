@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rendering mode in WinUI Funnel Chart control | Syncfusion
-description: Learn here all about Rendering mode in Syncfusion WinUI Funnel Chart(SfFunnelChart) control with key features and more.
+description: This sections explains about the rendering mode of Syncfusion WinUI Funnel Chart(SfFunnelChart) control
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
@@ -9,9 +9,11 @@ documentation: ug
 
 # Rendering mode in WinUI Funnel Chart (SfFunnelChart)
 
-The FunnelMode defines a rendering mode for the funnel series which define, where to bind your values (to height or width). The following example demonstrates [ValueIsHeight]() and [ValueIsWidth]() funnel mode:
+The [`FunnelMode`]() property defines the rendering mode of funnel chart which define, where to bind your values (to height or width). The default value of [`FunnelMode`]() property is [ValueIsHeight]().  The following example demonstrates [ValueIsHeight]() and [ValueIsWidth]() of funnel mode.
 
 **ValueIsHeight**
+
+[ValueIsHeight]() is used to rendering the funnel chart segments based on height for data point values.
 
 {% tabs %} 
 
@@ -27,7 +29,7 @@ The FunnelMode defines a rendering mode for the funnel series which define, wher
  
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 SfFunnelChart chart = new SfFunnelChart();
 chart.Palette = ChartColorPalette.BlueChrome;
@@ -42,9 +44,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Rendering mode in WinUI Funnel Chart](Rendering-mode_images/WinUI_Funnel_chart_ValueIsHeight_mode.png)
+![Rendering mode with height in WinUI Funnel Chart](Rendering-mode_images/WinUI_Funnel_chart_ValueIsHeight_mode.png)
 
 **ValueIsWidth**
+
+[ValueIsWidth]() is used to rendering the funnel chart segments based on width for data point values.
 
 {% tabs %} 
 
@@ -60,7 +64,7 @@ this.Content = chart;
  
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 SfFunnelChart chart = new SfFunnelChart();
 chart.Palette = ChartColorPalette.BlueChrome;
@@ -75,9 +79,5 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Rendering mode in WinUI Funnel Chart](Rendering-mode_images/WinUI_Funnel_chart_ValueIsWidth_mode.png)
-
-
-
-
+![Rendering mode with width in WinUI Funnel Chart](Rendering-mode_images/WinUI_Funnel_chart_ValueIsWidth_mode.png)
 
