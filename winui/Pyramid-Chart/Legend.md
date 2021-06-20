@@ -9,7 +9,7 @@ documentation: ug
 
 # Legend in WinUI Pyramid Chart (SfPyramidChart)
 
-The legend contains a list of series data points in the chart. The information provided in each legend item helps you to identify the corresponding data series in the chart.
+The legend contains a list of series data points in the chart. The information provided in each legend item helps you to identify the corresponding data in the chart.
 
 The following code example shows how to enable legend in the chart.
 
@@ -32,7 +32,7 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %}
 
-N> The x-value of data points in the pyramid chart will be the Legend items ‘Label’.
+N> The x-value of data points in the pyramid chart will be the legend items ‘Label’.
 
 ![Legend support in WinUI Pyramid Chart](Legend_images/WinUI_pyramid_chart_legend.png)
 
@@ -118,7 +118,7 @@ chart.Legend = new ChartLegend()
 
 ## Legend item spacing
 
-`ItemMargin` property of the `ChartLegend` is used to provide spacing between each legend items.
+[ItemMargin]() property of the `ChartLegend` is used to provide spacing between each legend items.
 
 {% tabs %}
 
@@ -172,7 +172,7 @@ chart.Legend = new ChartLegend()
 
 ## Toggle series visibility 
 
-By enabling the [ToggleSeriesVisibility]() property, the visibility of the segment can be controlled by tapping the legend item. By default, the value of [ToggleSeriesVisibility]() property is `False`.
+By enabling the [ToggleSeriesVisibility]() property, the visibility of the pyramid segment can be controlled by tapping the legend item. By default, the value of [ToggleSeriesVisibility]() property is `False`.
 
 {% tabs %}
 
@@ -350,7 +350,7 @@ chart.Legend = new ChartLegend()
 
 ## Legend template customization
 
-Customize each legend item by using the [ItemTemplate]() property in ChartLegend, as shown in the following code sample.
+Customize each legend item by using the [ItemTemplate]() property in `ChartLegend`, as shown in the following code sample.
 
 {% tabs %}
 
@@ -381,7 +381,6 @@ Customize each legend item by using the [ItemTemplate]() property in ChartLegend
 
 chart.Legend = new ChartLegend()
 {
-
    ItemTemplate = chart.Resources["itemTemplate"] as DataTemplate
 };
 
@@ -390,6 +389,5 @@ chart.Legend = new ChartLegend()
 {% endtabs %}
 
 ![Legend ItemTemplate support in WinUI Pyramid Chart](Legend_images/WinUI_pyramid_chart_legend_itemTemplate.png)
-
 
 
