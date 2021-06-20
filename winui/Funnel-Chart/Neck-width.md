@@ -42,9 +42,9 @@ this.Content = chart;
 
 ![Neck width support in WinUI Funnel Chart](Neck-width_images/WinUI_funnel_chart_neck_width.png)
 
-## Inversed pyramid
+## Inverted pyramid
 
-The funnel chart can be customized to the Inversed pyramid chart by setting the [MinimumWidth]() property to 0.
+The funnel chart can be customized to the inversed pyramid chart by setting the [MinimumWidth]() property to 0.
 
 {% tabs %} 
 
