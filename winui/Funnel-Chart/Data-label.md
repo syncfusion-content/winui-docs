@@ -1,23 +1,21 @@
 ---
 layout: post
-title: Data Label in WinUI Funnel Chart control | Syncfusion
-description: Learn here all about data Label feature of Syncfusion WinUI Funnel Chart(SfFunnelChart) and more easily annotated with labels support.
+title: Data labels in WinUI Funnel Chart control | Syncfusion
+description: This section explains about how to add and customize the data labels in Syncfusion WinUI Funnel Chart (SfFunnelChart) control.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
 ---
 
-# Data Label in WinUI Funnel Chart (SfFunnelChart)
+# Data label in WinUI Funnel Chart (SfFunnelChart)
 
-Data points can be easily annotated with labels to help improve the readability of data. 
+Data points can be easily annotated with data labels to help improve the readability of data in the funnel chart. 
 
-## Define Data Label 
+## Define data label 
 
-To enable the Label in data label you have to set the [`Visible`]() property of [`FunnelDataLabelSettings`](). 
+The [`Visible`]() property of [`FunnelDataLabelSettings`]() is used to enable the data label and the [`Context`]() property specifies which value should be displayed in the data label.
 
-[`Content`]() property allows you to define the value to be displayed as data label.
-
-The following code example demonstrates about define the value to be displayed as data label.
+The following code example demonstrates how define data label and its value.
 
 {% tabs %}
 
@@ -45,7 +43,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-| Content values | Description | Output |
+| Context values | Description | Output |
 |---|--|---|
 | DateTime | Displays LabelContent.DateTime value | ![ DateTime in DataLabel](Data-label_images/WinUI_Funnel_chart_labelcontent_datetime.png) |
 |DataLabelItem | Displays the y value|![ LabelContentPath in DataLabel](Data-label_images/WinUI_Funnel_chart_labelcontent_datalabelitem.png)|
@@ -53,20 +51,20 @@ this.Content = chart;
 | XValue | Displays the X value of series point|![ XValue in DataLabel](Data-label_images/WinUI_Funnel_chart_labelcontent_xvalue.png) |
 | YValue | Displays the Y value of series point| ![ YValue in DataLabel](Data-label_images/WinUI_Funnel_chart_labelcontent_yvalue.png) |
 
-## Customizing Labels
+## Data label customization
 
 The following properties are used to customize the data label.
 
 * [`BorderBrush`]()- used to change the border color.
 * [`BorderThickness`]()- used to change the thickness of the border.
-* [`Margin`]()- used to change the margin size for label.
+* [`Margin`]()- used to change the margin of the label.
 * [`FontStyle`]()-  used to change font style of the label.
 * [`FontSize`]()-  used to change font size of the label.
-* [`Foreground`]()- used to change the color of the label.
+* [`Foreground`]()- used to change the text color of the label.
 * [`FontFamily`]()-  used to change the font family of the label.
 * [`Background`]()- used to change the label background color.
 
-The following code example demonstrates the customization of label using the above properties:
+The following code example demonstrates the customization of data label using the above properties:
 
 {% tabs %}
 
@@ -100,11 +98,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Data label content customization support in WinUI Funnel Chart](Data-label_images/WinUI_Funnel_chart_custom_Label.png)
+![Data label customization support in WinUI Funnel Chart](Data-label_images/WinUI_Funnel_chart_custom_Label.png)
 
-## Label Template
+## Data label template
 
-The default appearance of the label can be customized using [`ContentTemplate`]() property as in the below code example:
+The appearance of the data label can be customized by using [`ContentTemplate`]() property of [`FunnelDataLabelSettings`]() as follows.
 
 {% tabs %}
 
@@ -164,13 +162,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![LabelTemplate support for datamarkers in WinUI Funnel Chart](Data-label_images/WinUI_Funnel_chart_data_labeltemplate.png)
+![Template support for data label in WinUI Funnel Chart](Data-label_images/WinUI_Funnel_chart_data_labeltemplate.png)
 
-## Label Format
+## Label format
 
-[`Format`]() property allows you to provide formatting for the labels.
-
-The following code example demonstrates the y value having three decimal digits.
+The [Format]() property can be used to format the data labels. The following code example demonstrates the how to format data labels with percentage symbol.
 
 {% tabs %}
 
@@ -183,7 +179,7 @@ The following code example demonstrates the y value having three decimal digits.
                 YBindingPath="Value">
 
     <chart:SfFunnelChart.DataLabelSettings>
-        <chart:FunnelDataLabelSettings Visible="True" Format="#$" />
+        <chart:FunnelDataLabelSettings Visible="True" Format="#%" />
     </chart:SfFunnelChart.DataLabelSettings>
 
 </chart:SfFunnelChart>
@@ -197,7 +193,7 @@ SfFunnelChart chart = new SfFunnelChart();
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 { 
     Visible = true, 
-    Format = "#$"
+    Format = "#%"
 };
 
 this.Content = chart;
@@ -206,11 +202,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Data label format support in WinUI Funnel Chart](Data-label_images/WinUI_Funnel_chart_data_labelformat.png)
+![Label format support for data label in WinUI Funnel Chart](Data-label_images/WinUI_Funnel_chart_data_labelformat.png)
 
-## Label Rotation
+## Label rotation
 
-[`Rotation`]() property is used to define the angle to which the label has to rotate. The following code demonstrates the label rotating angle.
+The [`Rotation`]() property is used to rotate the data labels based on the value as angle.
 
 {% tabs %}
 
@@ -249,4 +245,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Data label rotation support in WinUI Funnel Chart](Data-label_images/WinUI_Funnel_chart_data_label_rotation.png)
+![Rotation support for data label in WinUI Funnel Chart](Data-label_images/WinUI_Funnel_chart_data_label_rotation.png)
