@@ -9,11 +9,11 @@ documentation: ug
 
 # Rendering mode in WinUI Pyramid Chart (SfPyramidChart)
 
-The [PyramidMode]() is used to define the rendering mode of pyamid chart such as [Surface]() or [Linear](). The default value of [PyramidMode]() property is `Linear`.
+The [PyramidMode]() is used to define the rendering mode of pyramid chart such as [Surface]() or [Linear](). The default value of [PyramidMode]() property is `Linear`.
 
 ## Pyramid mode as surface
 
-The [Surface]() mode is used to rendering the area of pyrmaid chart segments based on data point values.
+The [Surface]() mode is used to rendering the area of pyramid chart segments based on data point values.
 
 {% tabs %} 
 
@@ -48,7 +48,7 @@ this.Content = chart;
 
 ## Pyramid mode as linear
 
-The [Linear]() mode is used to rendering the height of pyrmaid chart segments based on data point values.
+The [Linear]() mode is used to rendering the height of pyramid chart segments based on data point values.
 
 {% tabs %} 
 
