@@ -45,11 +45,11 @@ this.Content = chart;
 
 | Context values | Description | Output |
 |---|--|---|
-| DateTime | Displays LabelContent.DateTime value | ![ DateTime in DataLabel](Data-label_images/WinUI_Funnel_chart_labelcontent_datetime.png) |
-|DataLabelItem | Displays the y value|![ LabelContentPath in DataLabel](Data-label_images/WinUI_Funnel_chart_labelcontent_datalabelitem.png)|
-| Percentage | Displays the percentage value of series point among other points |![ Percentage in DataLabel](Data-label_images/WinUI_Funnel_chart_labelcontent_percentage.png) |
-| XValue | Displays the X value of series point|![ XValue in DataLabel](Data-label_images/WinUI_Funnel_chart_labelcontent_xvalue.png) |
-| YValue | Displays the Y value of series point| ![ YValue in DataLabel](Data-label_images/WinUI_Funnel_chart_labelcontent_yvalue.png) |
+| DateTime | Displays LabelContent.DateTime value | ![ DateTime in DataLabel](Data-label_images/WinUI_funnel_chart_labelcontent_datetime.png) |
+|DataLabelItem | Displays the y value|![ LabelContentPath in DataLabel](Data-label_images/WinUI_funnel_chart_labelcontent_datalabelitem.png)|
+| Percentage | Displays the percentage value of series point among other points |![ Percentage in DataLabel](Data-label_images/WinUI_funnel_chart_labelcontent_percentage.png) |
+| XValue | Displays the X value of series point|![ XValue in DataLabel](Data-label_images/WinUI_funnel_chart_labelcontent_xvalue.png) |
+| YValue | Displays the Y value of series point| ![ YValue in DataLabel](Data-label_images/WinUI_funnel_chart_labelcontent_yvalue.png) |
 
 ## Data label customization
 
@@ -98,7 +98,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Data label customization support in WinUI Funnel Chart](Data-label_images/WinUI_Funnel_chart_custom_Label.png)
+![Data label customization support in WinUI Funnel Chart](Data-label_images/WinUI_funnel_chart_custom_label.png)
 
 ## Data label template
 
@@ -110,26 +110,21 @@ The appearance of the data label can be customized by using [`ContentTemplate`](
 
 <Page.Resources>
     <DataTemplate x:Key="dataLabelTemplate">
-        <StackPanel Orientation="Vertical">               
-            <Path Grid.Row="0"  Stretch="Uniform" Fill="LightGreen"                              
-                       Width="15" Height="15" Margin="0,0,0,0"                              
-                       RenderTransformOrigin="0.5,0.5"
-                       Data="M22.5,15.8899993896484L37.5,                                
-                       30.8899993896484 7.5,30.8899993896484 22.5,15.8899993896484z">
-                <Path.RenderTransform>
-                    <TransformGroup>
-                        <TransformGroup.Children>
-                            <RotateTransform Angle="0" />
-                            <ScaleTransform ScaleX="1" ScaleY="1" />
-                        </TransformGroup.Children>
-                    </TransformGroup>
-                </Path.RenderTransform>
-            </Path>
-            <TextBlock Grid.Row="1" Text="{Binding}" FontSize="11" Foreground="White"></TextBlock>
+        <StackPanel Orientation="Vertical">
+            <Path Grid.Row="0"  Stretch="Uniform" Fill="LightGreen" Width="15" Height="15" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5" Data="M11.771002,1.993L5.0080013,14.284 10.752002,14.284 6.6450019,22.804 17.900003,11.921 11.655003,11.921 18.472004,1.993z M10.593002,0L22.256004,0 15.440003,9.9280005 22.827004,9.9280005 0,32 7.5790019,16.277 1.637001,16.277z">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <RotateTransform Angle="0" />
+                                <ScaleTransform ScaleX="1" ScaleY="1" />
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+            <TextBlock Grid.Row="1" Text="{Binding}" FontSize="12" Foreground="White"></TextBlock>
         </StackPanel>
     </DataTemplate>
 </Page.Resources>
-
 <Grid>
    <chart:SfFunnelChart x:Name="chart" 
                 Palette="BlueChrome" 
@@ -162,11 +157,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Template support for data label in WinUI Funnel Chart](Data-label_images/WinUI_Funnel_chart_data_labeltemplate.png)
+![Template support for data label in WinUI Funnel Chart](Data-label_images/WinUI_funnel_chart_data_labeltemplate.png)
 
 ## Label format
 
-The [Format]() property can be used to format the data labels. The following code example demonstrates the how to format data labels with percentage symbol.
+The [Format]() property can be used to format the data labels. The following code example demonstrates the how to format data labels with three decimal digits.
 
 {% tabs %}
 
@@ -179,7 +174,7 @@ The [Format]() property can be used to format the data labels. The following cod
                 YBindingPath="Value">
 
     <chart:SfFunnelChart.DataLabelSettings>
-        <chart:FunnelDataLabelSettings Visible="True" Format="#%" />
+        <chart:FunnelDataLabelSettings Visible="True" Format="#.000" Foreground="White" />
     </chart:SfFunnelChart.DataLabelSettings>
 
 </chart:SfFunnelChart>
@@ -193,7 +188,8 @@ SfFunnelChart chart = new SfFunnelChart();
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 { 
     Visible = true, 
-    Format = "#%"
+    Format = "#.000",
+    Foreground = new SolidColorBrush(Colors.White)
 };
 
 this.Content = chart;
@@ -245,4 +241,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Rotation support for data label in WinUI Funnel Chart](Data-label_images/WinUI_Funnel_chart_data_label_rotation.png)
+![Rotation support for data label in WinUI Funnel Chart](Data-label_images/WinUI_funnel_chart_data_label_rotation.png)

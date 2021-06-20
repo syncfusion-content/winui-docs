@@ -58,7 +58,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Predefined palette in WinUI Funnel Chart](Appearance_images/WinUI_Funnel_chart_Predefined_palette.png)
+![Predefined palette in WinUI Funnel Chart](Appearance_images/WinUI_funnel_chart_predefined_palette.png)
 
 The following code example defined [`Palette`]() as [`GreenChrome`]().
 
@@ -90,7 +90,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Palette support in WinUI Funnel Chart](Appearance_images/WinUI_Funnel_chart_GreenChrome_palette.png)
+![Palette support in WinUI Funnel Chart](Appearance_images/WinUI_funnel_chart_greenchrome_palette.png)
 
 ## Custom palette
 
@@ -147,7 +147,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Custom palette in WinUI Funnel Chart](Appearance_images/WinUI_Funnel_chart_Custom_palette.png)
+![Custom palette in WinUI Funnel Chart](Appearance_images/WinUI_funnel_chart_custom_palette.png)
 
 ## Applying gradient brushes
 
@@ -227,7 +227,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Gradient support in WinUI Funnel Chart](Appearance_images/WinUI_Funnel_chart_Gradient_color.png)
+![Gradient support in WinUI Funnel Chart](Appearance_images/WinUI_funnel_chart_gradient_color.png)
 
 ## Segment color binding
 
@@ -280,5 +280,5 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Segment color binding support in WinUI Funnel Chart](Appearance_images/WinUI_Funnel_chart_ColorValuePath.png)
+![Segment color binding support in WinUI Funnel Chart](Appearance_images/WinUI_funnel_chart_colorvaluepath.png)
 

@@ -45,7 +45,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip support in WinUI funnel chart](Tooltip_images/WinUI_FunnelChart_Tooltip.png)
+![Tooltip support in WinUI funnel chart](Tooltip_images/WinUI_funnel_chart_tooltip.png)
 
 ## Customization
 
@@ -121,7 +121,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip background style customization in WinUI funnel chart](Tooltip_images/WinUI_FunnelChart_background_style_customization_Tooltip.png)
+![Tooltip background style customization in WinUI funnel chart](Tooltip_images/WinUI_funnel_chart_background_style_customization_tooltip.png)
 
 ### Label style customization
 
@@ -136,7 +136,8 @@ The following code example explains how to apply the style for a tooltip label.
 <chart:SfFunnelChart.Resources>
     <Style TargetType="TextBlock" x:Key="labelStyle">
         <Setter Property="FontSize" Value="14"/>
-        <Setter Property="Foreground" Value="Yellow"/>
+        <Setter Property="Foreground" Value="Red"/>
+        <Setter Property="FontStyle" Value="Italic"/>
     </Style>
 </chart:SfFunnelChart.Resources>
 
@@ -151,7 +152,8 @@ The following code example explains how to apply the style for a tooltip label.
 SfFunnelChart chart = new SfFunnelChart();
 Style labelStyle = new Style(typeof(TextBlock));
 labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
-labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Yellow)));
+labelStyle.Setters.Add(new Setter(TextBlock.FontStyleProperty, FontStyles.Italic));
+labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red)));
 ...
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.LabelStyle = labelStyle;
@@ -161,7 +163,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip label style customization in WinUI funnel chart](Tooltip_images/WinUI_FunnelChart_Label_style_customization_Tooltip.png)
+![Tooltip label style customization in WinUI funnel chart](Tooltip_images/WinUI_funnelChart_label_style_customization_tooltip.png)
 
 ### Tooltip alignment
 
@@ -201,7 +203,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip horizontal alignment support in WinUI Funnel Chart](Tooltip_images/WinUI_FunnelChart_Tooltip_horizontal_alignment.png)
+![Tooltip horizontal alignment support in WinUI Funnel Chart](Tooltip_images/WinUI_funnel_chart_tooltip_horizontal_alignment.png)
 
 N> By default the horizontal alignment is center for the tooltip.
 
@@ -239,7 +241,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip vertical alignment support in WinUI Funnel Chart](Tooltip_images/WinUI_FunnelChart_Tooltip_vertical_alignment.png)
+![Tooltip vertical alignment support in WinUI Funnel Chart](Tooltip_images/WinUI_funnel_chart_tooltip_vertical_alignment.png)
 
 ### Tooltip offset
 
@@ -276,7 +278,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-![Offset support for tooltip in WinUI Funnel Chart](Tooltip_images/WinUI_FunnelChart_Tooltip_Offset.png)
+![Offset support for tooltip in WinUI Funnel Chart](Tooltip_images/WinUI_funnel_chart_tooltip_offset.png)
 
 ### Tooltip duration
 
@@ -407,5 +409,5 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip template in WinUI Funnel Chart](Tooltip_images/WinUI_FunnelChart_Tooltip_customization.png)
+![Tooltip template in WinUI Funnel Chart](Tooltip_images/WinUI_funnel_chart_tooltip_customization.png)
 
