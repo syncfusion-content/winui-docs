@@ -1,22 +1,20 @@
 ---
 layout: post
 title: Explode segments in WinUI Funnel Chart control | Syncfusion
-description: Learn here all about Explode segments in Syncfusion WinUI Funnel Chart(SfFunnelChart) control with key features and more.
-platform: WinUI
+description: This section explains about how to explode single segment or all segments in Syncfusion WinUI Funnel Chart (SfFunnelChart) control.
+platform: WinUI 
 control: SfFunnelChart
 documentation: ug
 ---
 
 # Explode segments in WinUI Funnel Chart (SfFunnelChart)
 
-You can explode a funnel segment using the explodeIndex property. The explodeOffset property is used to specify the exploded segment’s distance. The following properties are used to explode the individual segments in Funnel.
+Exploding a segment is used to pull attention to a specific area of the funnel. The following properties are used to explode the segments in the funnel chart.
 
-[ExplodeAll]() - Used to explode all the segments of these series.
-[ExplodeIndex]() - Used to explode any specific segment.
-[ExplodeOffset]() - Used to define the explode distance like ExplodeRadius for Pie.
-[ExplodeOnMouseClick]() - Used to explode the segment when segment is clicked.
-
-## Explode Offset
+* [ExplodeAll]() - Used to explode all the segments of these series.
+* [ExplodeIndex]() - Used to explode any specific segment.
+* [ExplodeOffset]() - Used to define the explode distance of segment.
+* [ExplodeOnTap]() - Used to explode the segment when segment is tap/click.
 
 {% tabs %} 
 
@@ -34,7 +32,7 @@ You can explode a funnel segment using the explodeIndex property. The explodeOff
  
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 SfFunnelChart chart = new SfFunnelChart();
 chart.Palette = ChartColorPalette.BlueChrome;
@@ -51,4 +49,3 @@ this.Content = chart;
 {% endtabs %}
 
 ![Explode segments in WinUI Funnel Chart](Explode-segments_images/WinUI_Funnel_chart_Explode_segments.png)
-
