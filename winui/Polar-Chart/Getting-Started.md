@@ -1,20 +1,22 @@
 ---
 layout: post
 title: Getting Started with WinUI Polar Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Chart(SfPolarChart) control, its elements, and more.
+description: Learn here all about how to getting started with Syncfusion WinUI Chart(SfPolarChart) control.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
 ---
 
-# Getting Started with WinUI Polar Chart
+# Getting Started with WinUI Polar Chart (SfPolarChart)
 
+This section explains how to populate the polar chart with data, header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
 ## Creating an application with WinUI Polar Chart
+
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Charts`  in XAML or C# to initialize the control.
-4. Initialize SfPolarChart control.
+4. Initialize [SfPolarChart]() control.
 
 {% tabs %} 
 
@@ -31,7 +33,7 @@ documentation: ug
  
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.UI.Xaml.Charts;
 
@@ -135,9 +137,9 @@ chart.DataContext = viewModel;
 
 ## Initialize chart axis
 
-`Chart`supports default axes, so that these axes ([PrimaryAxis]() and [SecondaryAxis]()) will get generated automatically based upon the data bind to the chart.
+[SfPolarChart]() supports default axes, so that these axes ([PrimaryAxis]() and [SecondaryAxis]()) will get generated automatically based upon the data bind to the chart.
 
-Axes will be explicitly specified for it's customization purpose. The initialization of an empty chart with two axes as shown below,
+Axes will be explicitly specified for it's customization purpose. The initialization of an empty polar chart with two axes as shown below,
 
 {% tabs %} 
 
@@ -166,11 +168,9 @@ chart.SecondaryAxis = secondaryAxis;
 
 {% endtabs %} 
 
-Run the project and check if you get following output to make sure you have configured your project properly to add chart.
-
 ## Populate chart with data
 
-Adding [PolarSeries]() to the chart [Series]() collection and binding `Data` to the series [ItemsSource]() property from its `DataContext` for creating our own Product – Sales Polar chart.
+Adding [PolarAreaSeries]() to the polar chart [Series]() collection and binding `Data` to the series [ItemsSource]() property from its `DataContext` for creating polar chart.
 
 N> To plot the series, the [XBindingPath]() and [YBindingPath]() properties must be configured so that the chart may get values from the respective properties in the data model.
 
@@ -181,7 +181,7 @@ N> To plot the series, the [XBindingPath]() and [YBindingPath]() properties must
 <chart:SfPolarChart>
 . . .
     <chart:SfPolarChart.Series>
-        <chart:PolarSeries ItemsSource="{Binding Data}" 
+        <chart:PolarAreaSeries ItemsSource="{Binding Data}" 
                          XBindingPath="Category" 
                          YBindingPath="Value"/>
     </chart:SfPolarChart.Series>
@@ -197,7 +197,7 @@ SfPolarChart chart = new SfPolarChart();
 ChartViewModel viewModel = new ChartViewModel();
 chart.DataContext = viewModel;
 
-PolarSeries series = new PolarSeries();
+PolarAreaSeries series = new PolarAreaSeries();
 series.XBindingPath = "Category";
 series.YBindingPath = "Value";
 
@@ -215,7 +215,7 @@ chart.Series.Add(series);
 
 ## Add title
 
-The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [Header]() property of the polar chart as follows.
+The title of the chart provide quick information to the user about the data being plotted in the chart. The [Header]() property is used to set title for polar chart as follows.
 
 {% tabs %} 
 
@@ -227,7 +227,7 @@ The header of the chart acts as the title to provide quick information to the us
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 chart.Header = "Polar Chart";
 
@@ -235,26 +235,24 @@ chart.Header = "Polar Chart";
 
 {% endtabs %}  
 
-
 ## Enable data labels
 
-The [DataLabelSettings]() property of [PolarSeries]() can be used to enable data labels to improve the readability of the polar chart. The label visibility is set to `False` by default.
+The [DataLabelSettings]() property of [PolarAreaSeries]() can be used to enable data labels to improve the readability of the polar chart. The label visibility is set to `False` by default.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-<chart:PolarSeries>
+<chart:PolarAreaSeries>
 . . .
-    <chart:PolarSeries.DataLabelSettings>
+    <chart:PolarAreaSeries.DataLabelSettings>
         <chart:PolarDataLabelSettings Visible="True"/>
-    </chart:PolarSeries.DataLabelSettings>
-</chart:PolarSeries>
-
+    </chart:PolarAreaSeries.DataLabelSettings>
+</chart:PolarAreaSeries>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 series.DataLabelSettings = new PolarDataLabelSettings() { Visible = true };
 
@@ -264,7 +262,7 @@ series.DataLabelSettings = new PolarDataLabelSettings() { Visible = true };
 
 ## Enable legend
 
-The legend provides information about the data point displayed in the circular chart. The [Legend]() property of the chart was used to enable it.
+The legend provides information about the data point displayed in the polar chart. The [Legend]() property of the chart was used to enable it.
 
 {% tabs %} 
 
@@ -277,10 +275,9 @@ The legend provides information about the data point displayed in the circular c
     </chart:SfPolarChart.Legend>
 </chart:SfPolarChart>
 
-
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 SfPolarChart chart = new SfPolarChart();
 . . .
@@ -290,7 +287,7 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %}  
 
-N> Additionally, you need to set label for each series using the [Label]() property of ChartSeries, which will be displayed in corresponding legend.
+N> Additionally, set label for each series using the [Label]() property of chart series, which will be displayed in corresponding legend.
 
 {% tabs %} 
 
@@ -298,7 +295,7 @@ N> Additionally, you need to set label for each series using the [Label]() prope
 
 <chart:SfPolarChart>
     . . .
-    <chart:PolarSeries  ItemsSource="{Binding Data}" 
+    <chart:PolarAreaSeries  ItemsSource="{Binding Data}" 
                         XBindingPath="Product" 
                         YBindingPath="SalesRate"
                         Label="Sales"/>
@@ -307,10 +304,10 @@ N> Additionally, you need to set label for each series using the [Label]() prope
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 ...
-PolarSeries series = new PolarSeries();
+PolarAreaSeries series = new PolarAreaSeries();
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
 series.Label = "Sales";
@@ -319,7 +316,6 @@ series.Label = "Sales";
 {% endhighlight %}
 
 {% endtabs %}  
-
 
 The following code example gives you the complete code of above configurations.
 
@@ -335,20 +331,20 @@ The following code example gives you the complete code of above configurations.
         <chart:ChartLegend/>
     </chart:SfPolarChart.Legend>
     <chart:SfPolarChart.Series>
-        <chart:PolarSeries ItemsSource="{Binding Data}" 
+        <chart:PolarAreaSeries ItemsSource="{Binding Data}" 
                          XBindingPath="Category"
                          YBindingPath="Value"
                          Label="Sales">
-            <chart:PolarSeries.DataLabelSettings>
+            <chart:PolarAreaSeries.DataLabelSettings>
                 <chart:PolarDataLabelSettings Visible="True"/>
-            </chart:PolarSeries.DataLabelSettings>
-        </chart:PolarSeries>
+            </chart:PolarAreaSeries.DataLabelSettings>
+        </chart:PolarAreaSeries>
     </chart:SfPolarChart.Series>
 </chart:SfPolarChart>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.UI.Xaml.Charts;
 . . .
@@ -363,7 +359,7 @@ public sealed partial class MainWindow : Window
         ChartViewModel viewModel = new ChartViewModel();
         chart.DataContext = viewModel;
 
-        PolarSeries series = new PolarSeries();
+        PolarAreaSeries series = new PolarAreaSeries();
         series.XBindingPath = "Category";
         series.YBindingPath = "Value";
         series.Label = "Sales";
