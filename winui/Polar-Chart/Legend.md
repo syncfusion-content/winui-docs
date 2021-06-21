@@ -9,9 +9,9 @@ documentation: ug
 
 # Legend in WinUI Polar Chart (SfPolarChart)
 
-The legend contains list of series data points in the chart. The information provided in each legend item helps to identify the corresponding data series in the chart.
+The legend contains list of series in the chart. The information provided in each legend item helps to identify the corresponding series in the chart.
 
-The following code example shows how to enable legend in chart.
+The following code example shows how to enable legend in the chart.
 
 {% tabs %}
 
@@ -31,8 +31,6 @@ chart.Legend = new ChartLegend();
 {% endhighlight %}
 
 {% endtabs %}
-
-N> Legend items ‘Label’ will be the x-value of data points in the polar chart.
 
 ![Legend support in WinUI Polar Chart](Legend_images/WinUI_PolarChart_Legend.png)
 
@@ -145,7 +143,7 @@ chart.Legend = new ChartLegend()
 
 ## Checkbox for legend
 
-Polar chart provides support to enable the checkbox for each legend item to visible or collapse the associated data points. By default, the value of [CheckBoxVisibility]() property is `Collapsed`. 
+Polar chart provides support to enable the checkbox for each legend item to visible or collapse the corresponding series. By default, the value of [CheckBoxVisibility]() property is `Collapsed`. 
 
 {% tabs %}
 
@@ -170,12 +168,9 @@ chart.Legend = new ChartLegend()
 
 ![Checkbox support for legend in WinUI Polar Chart](Legend_images/WinUI_PolarChart_Legend_CheckBox.png)
 
-
 ## Toggle series visibility 
 
 By enabling the [ToggleSeriesVisibility]() property, the visibility of the series can be controlled by tapping the legend item. By default, the value of [ToggleSeriesVisibility]() property is `False`.
-
-We can enable the [ToggleSeriesVisibility]() property as in below code example:
 
 {% tabs %}
 
@@ -287,7 +282,6 @@ chart.Legend = new ChartLegend()
 
 ![Floating legend support in WinUI Polar Chart](Legend_images/WinUI_PolarChart_Legend_floating.png)
 
-
 ## Legend Orientation
 
 Orientation of the legend items can aligned vertically or horizontally by setting [`Orientation`]() property of legend. By default, the value of [Orientation]() property is [Horizontal](). 
@@ -386,7 +380,6 @@ Customize each legend item by using the [ItemTemplate]() property in `ChartLegen
 
 chart.Legend = new ChartLegend()
 {
-
    ItemTemplate = chart.Resources["itemTemplate"] as DataTemplate
 };
 
@@ -395,3 +388,4 @@ chart.Legend = new ChartLegend()
 {% endtabs %}
 
 ![Legend ItemTemplate support in WinUI Polar Chart](Legend_images/WinUI_PolarChart_Legend_Item_customizing.png)
+
