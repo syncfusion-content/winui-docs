@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Start Angle in WinUI Polar Chart control | Syncfusion
-description: This sections explains about the StartAngle in Syncfusion WinUI Polar Chart(SfPolarChart) control .
+description: This sections explains about the polar StartAngle in Syncfusion WinUI Polar Chart(SfPolarChart) control.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
