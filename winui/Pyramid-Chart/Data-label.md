@@ -161,7 +161,7 @@ this.Content = chart;
 
 ## Label format
 
-The [Format]() property can be used to format the data labels. The following code example demonstrates the how to format data labels with three decimal digits.
+The [Format]() property is used to format the data labels. The following code example demonstrates the how to format data labels with three decimal digits.
 
 {% tabs %}
 
@@ -242,3 +242,4 @@ this.Content = chart;
 {% endtabs %}
 
 ![Rotation support for data label in WinUI Pyramid Chart](Data-label_images/WinUI_pyramid_chart_data_label_rotation.png)
+
