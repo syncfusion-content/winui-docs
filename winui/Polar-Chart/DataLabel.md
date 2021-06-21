@@ -167,7 +167,6 @@ series.ShowDataLabels = true;
 
 series.DataLabelSettings = new PolarDataLabelSettings() 
 { 
-    Position = CircularSeriesLabelPosition.Outside,
     Context = LabelContext.DataLabelItem,
     ContentTemplate = chart.Resources["datalabelTemplate"] as DataTemplate,
 };
@@ -271,7 +270,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 {% highlight c# %}
 
-series.DataLabelSettings = new CircularDataLabelSettings()
+series.DataLabelSettings = new PolarDataLabelSettings()
 {
     UseSeriesPalette = true,
 };
