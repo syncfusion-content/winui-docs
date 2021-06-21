@@ -9,36 +9,11 @@ documentation: ug
 
 # Selection in WinUI Funnel Chart (SfFunnelChart)
 
-Funnel Chart supports selection that allows you to select a segment in a series by using [ChartSelectionBehavior](). 
+Funnel chart supports selection that allows you to select a segment in a chart by using [ChartSelectionBehavior](). 
 
-### Adding Selection Behavior to SfFunnelChart
+## Define selection behavior
 
-You can create an instance [ChartSelectionBehavior]() and add it to the Behaviors collection.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<chart:SfFunnelChart.Behaviors>
-    <chart:ChartSelectionBehavior />
-</chart:SfFunnelChart.Behaviors>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfFunnelChart chart = new SfFunnelChart();
-. . .
-ChartSelectionBehavior selection = new ChartSelectionBehavior();
-chart.Behaviors.Add(selection);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-## SegmentSelection
-
-Segment Selection allows you to highlight a segment in a funnel chart series. To Set a segment selection in a funnel chart series, For highlighting a segment the  brush color can be set using [SelectionBrush]() property.
+Create an instance [ChartSelectionBehavior]() and add it to the Behaviors collection of funnel chart. And Need to set the [SelectionBrush]() property in funnel chart.
 
 {% tabs %}
 
@@ -78,9 +53,9 @@ this.Content = chart;
 
 ![Segment selection support in WinUI Funnel Chart](Selection_images/WinUI_funnel_chart_segment_selection.png)
 
-## Customizing the Selection
+## Multi selection
 
- Funnel chart allows you to select single or multiple segment using [Type]() property. By default the SelectionType is [Point]().
+Funnel chart allows you to select multiple segment using [Type]() property set as `MultiPoint` of [ChartSelectionBehavior](). 
 
 The following code snippet demonstrates multiple segment selection.
 
@@ -96,7 +71,7 @@ The following code snippet demonstrates multiple segment selection.
                     YBindingPath="Value">
 
     <chart:SfFunnelChart.Behaviors>
-        <chart:ChartSelectionBehavior Type="Point"/>
+        <chart:ChartSelectionBehavior Type="MultiPoint"/>
     </chart:SfFunnelChart.Behaviors>
 . . .
 </chart:SfFunnelChart>
@@ -111,7 +86,7 @@ chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.SelectionBrush = new SolidColorBrush(Colors.Red);
 ChartSelectionBehavior selection = new ChartSelectionBehavior();
-selection.Type = SelectionType.Point;
+selection.Type = SelectionType.MultiPoint;
 chart.Behaviors.Add(selection);
 . . .
 this.Content = chart;
@@ -120,9 +95,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Selection style support in WinUI Funnel Chart](Selection_images/WinUI_funnel_chart_selection_style.png)
+![Multi selection support in WinUI Funnel Chart](Selection_images/WinUI_funnel_chart_multi_selection.png)
 
-### Changing Cursor while Selection
+N>By default the [Type]() is `Point`. `Series` and `MultiSeries` is not support for funnel chart behavior.
+
+## Changing cursor while selection
 
 [Cursor]() property allows you to define the cursor when mouse is hovered over the segment with segment selection enabled.
 
@@ -168,7 +145,7 @@ this.Content = chart;
 
 ## Events
 
-The following events are available in SfFunnelChart for ChartSelectionBehavior.
+The following events are available in SfFunnelChart for funnel chart.
 
 ### SelectionChanging
 
