@@ -9,13 +9,13 @@ documentation: ug
 
 # Data label in WinUI Pyramid Chart (SfPyramidChart)
 
-Data points can be easily annotated with data labels to help improve the readability of data in the pyramid chart. 
+To improve the readability of data in the funnel chart, data points can be easily annotated with data labels.
 
 ## Define data label 
 
-The [`Visible`]() property of [`PyramidDataLabelSettings`]() is used to enable the data label and the [`Context`]() property specifies which value should be displayed in the data label.
+The [Visible]() property of [FunnelDataLabelSettings]() is used to enable the data label, and the [Context]() property specifies, which value should be displayed in the data label.
 
-The following code example demonstrates how define data label and its value.
+The following code example demonstrates how to define the data label and its value.
 
 {% tabs %}
 
@@ -53,7 +53,7 @@ this.Content = chart;
 
 ## Data label customization
 
-The following properties are used to customize the data label.
+The following properties are used to customize the data label:
 
 * [`BorderBrush`]()- used to change the border color.
 * [`BorderThickness`]()- used to change the thickness of the border.
@@ -102,7 +102,7 @@ this.Content = chart;
 
 ## Data label template
 
-The appearance of the data label can be customized by using [`ContentTemplate`]() property of [`PyramidDataLabelSettings`]() as follows.
+The appearance of the data label can be customized by using the [ContentTemplate]() property of [`PyramidDataLabelSettings`]() as follows.
 
 {% tabs %}
 
@@ -161,7 +161,7 @@ this.Content = chart;
 
 ## Label format
 
-The [Format]() property is used to format the data labels. The following code example demonstrates the how to format data labels with three decimal digits.
+The [Format]() property is used to format the data labels. The following code example demonstrates how to format data labels with three decimal digits.
 
 {% tabs %}
 

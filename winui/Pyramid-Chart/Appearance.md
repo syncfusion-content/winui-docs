@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance in WinUI Pyramid Chart (SfPyramidChart)
 
-The appearance of [SfPyramidChart]() can be customize by using the predefined palettes, custom palettes and gradient that allows to enrich the application.
+The appearance of [SfPyramidChart]() can be customized by using the predefined palettes, custom palettes and gradient, which allows to enrich the application.
 
 ## Palettes
 
-[SfPyramidChart]() provides options to apply different kinds of palettes. We have some predefined palette such as
+[SfPyramidChart]() provides options for applying various kinds of palettes. Some predefined palettes, such as.
 
 * Metro
 * AutumnBrights
@@ -94,7 +94,7 @@ this.Content = chart;
 
 ## Custom palette
 
-[`SfPyramidChart`]() provides support to define own brushes for chart with preferred order by using [`CustomBrushes`]() property of [`ChartColorModel`]() and [`Palette`]() value as [`Custom`]() as shown in the following code example.
+[`SfPyramidChart`]() provides support to define own brushes for the chart with preferred order by using the [CustomBrushes]() property of [ChartColorModel]() and [Palette]() value as `Custom`, as shown in the following code example.
 
 {% tabs %}
 
@@ -153,7 +153,7 @@ this.Content = chart;
 
 Gradient for the pyramid chart can be set by using the [`ColorModel`]() property of the pyramid chart with the help of `LinearGradientBrush` or `RadialGradientBrush`.
 
-The following code sample and screenshot illustrates how to apply the gradient brushes for chart using the [`ColorModel`]() property.
+The following code sample and screenshot illustrates how to apply the gradient brushes for the chart using the [`ColorModel`]() property.
 
 {% tabs %}
 
