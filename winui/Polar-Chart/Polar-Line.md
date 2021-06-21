@@ -112,7 +112,7 @@ chart.Series.Add(series);
 
 ## IsClosed
 
-[PolarLineSeries]() [IsClosed]() property used to draw the polar arew with or without closed area path. The default value of [IsClosed]() is `true`. The following code example of the [IsClosed]() value as `false`.
+[PolarLineSeries]() [IsClosed]() property used to draw the polar line chart with or without closed path. The default value of [IsClosed]() is `true`. The following code example of the [IsClosed]() value as `false`.
 
 {% tabs %}
 
