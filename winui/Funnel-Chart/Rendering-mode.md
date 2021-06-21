@@ -9,11 +9,11 @@ documentation: ug
 
 # Rendering mode in WinUI Funnel Chart (SfFunnelChart)
 
-The [`FunnelMode`]() property defines the rendering mode of funnel chart which define, where to bind your values (to height or width). The default value of [`FunnelMode`]() property is [ValueIsHeight]().  The following example demonstrates [ValueIsHeight]() and [ValueIsWidth]() of funnel mode.
+The [FunnelMode]() property defines the rendering mode of the funnel chart, which define where to bind your values (to height or width).The default value of [`FunnelMode`]() property is [ValueIsHeight]().  The following example demonstrates [ValueIsHeight]() and [ValueIsWidth]() of funnel mode.
 
 **ValueIsHeight**
 
-[ValueIsHeight]() is used to rendering the funnel chart segments based on height for data point values.
+[ValueIsHeight]() is used to render the funnel chart segments based on the height for data point values
 
 {% tabs %} 
 
@@ -48,7 +48,7 @@ this.Content = chart;
 
 **ValueIsWidth**
 
-[ValueIsWidth]() is used to rendering the funnel chart segments based on width for data point values.
+[ValueIsWidth]() is used to render the funnel chart segments based on the width for data point values.
 
 {% tabs %} 
 
