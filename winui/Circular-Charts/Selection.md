@@ -120,7 +120,7 @@ chart.Series.Add(series1);
 
 ## Customizing the Selection
 
-Circcular charts allows to select single or multiple segment\series using [Type]() property. By default the SelectionType is [Point]().
+Circular charts allows to select single or multiple segment\series using [Type]() property. By default the SelectionType is [Point]().
 
 The following code snippet demonstrates multiple segment selection.
 

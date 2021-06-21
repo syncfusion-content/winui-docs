@@ -318,7 +318,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 ### Tooltip template
 
-The funnel chart provides support to customize the appearance of the tooltip by using the [`TooltipTemplate`]() property. 
+The Circular chart provides support to customize the appearance of the tooltip by using the [`TooltipTemplate`]() property. 
 
 The following code example explains how to display both x-value and y-value in tooltip using template.
 
@@ -334,13 +334,13 @@ The following code example explains how to display both x-value and y-value in t
             <TextBlock Text="{Binding Item.SalesRate}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </StackPanel>
     </DataTemplate>
-</chart:SfFunnelChart.Resources>
+</chart:SfCircularChart.Resources>
 
 <chart:SfCircularChart.Behaviors>
     <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
 </chart:SfCircularChart.Behaviors>
 
-</chart:SfFunnelChart>
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
@@ -354,5 +354,5 @@ series.TooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate;
 
 {% endtabs %}
 
-![Tooltip template in WinUI Funnel Chart](Tooltip_images/WinUI_Circular_chart_Tooltip_Template_Customization.png)
+![Tooltip template in WinUI Circular Chart](Tooltip_images/WinUI_Circular_chart_Tooltip_Template_Customization.png)
 
