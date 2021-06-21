@@ -67,17 +67,17 @@ SfPolarChart chart = new SfPolarChart();
 chart.Palette = ChartColorPalette.Metro;
 chart.GridLineType = PolarChartGridLineType.Polygon;
 ...
-PolarAreaSeries series1 = new PolarAreaSeries();
+PolarLineSeries series1 = new PolarLineSeries();
 series1.XBindingPath = "Direction";
 series1.YBindingPath = "Tree";
 series1.ItemsSource = viewModel.PlantDetails;
 
-PolarAreaSeries series2 = new PolarAreaSeries();
+PolarLineSeries series2 = new PolarLineSeries();
 series2.XBindingPath = "Direction";
 series2.YBindingPath = "Weed";
 series2.ItemsSource = viewModel.PlantDetails;
 
-PolarAreaSeries series3 = new PolarAreaSeries();
+PolarLineSeries series3 = new PolarLineSeries();
 series3.XBindingPath = "Direction";
 series3.YBindingPath = "Flower";
 series3.ItemsSource = viewModel.PlantDetails;
