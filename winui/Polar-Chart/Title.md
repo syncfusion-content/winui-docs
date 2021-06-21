@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Title in WinUI Polar Chart control | Syncfusion
-description: Learn here all about title with Syncfusion WinUI Funnel Chart (SfPolarChart) control and its customization.
+description: Learn here all about title in Syncfusion WinUI Polar Chart (SfPolarChart) control and its customization.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart title in WinUI Polar Chart (SfPolarChart)
 
-`Header` property of `SfPolarChart` is used to define and customize the chart title. It accepts any object (.Net object) as content for the chart header.
+`Header` property of `SfPolarChart` is used to define and customize the chart title. It accepts any `UIElement` as content for the chart header.
 
 {% tabs %}
 
@@ -23,11 +23,9 @@ documentation: ug
             <TextBlock FontSize="14" Text="Polar Chart" Margin="5"/>
         </Border>
     </chart:SfPolarChart.Header>
-
     ...
             
 </chart:SfPolarChart>
-
 
 {% endhighlight %}
 
@@ -86,7 +84,7 @@ The title text content can be aligned horizontally to the left, center or right 
 
 {% highlight c# %}
 
-SfFunnelChart chart = new SfFunnelChart();
+SfPolarChart chart = new SfPolarChart();
 chart.HorizontalHeaderAlignment = HorizontalAlignment.Left;
 ...
 Border border = new Border()
@@ -114,5 +112,5 @@ chart.Header = border;
 
 {% endtabs %}
 
-
 ![Title text alignment support in WinUI polar chart](Title_images/WinUI_PolarChart_TitleAlignment.png)
+
