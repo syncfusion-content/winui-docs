@@ -69,7 +69,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![PolarLineSeries in WinUI polar chart](PolarArea_Images/WinUI_PolarChart_PolarLineSeries.png)
+![PolarLineSeries in WinUI polar chart](PolarLine_Images/WinUI_PolarChart_PolarLineSeries.png)
 
 ## PolarChart GridLineType
 
@@ -108,7 +108,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![PolarLineSeries in WinUI polar chart polygon](PolarArea_Images/WinUI_PolarChart_GridlineType_polygon.png)
+![PolarLineSeries in WinUI polar chart polygon](PolarLine_Images/WinUI_PolarChart_GridlineType_polygon.png)
 
 ## IsClosed
 
@@ -149,4 +149,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Closed PolarLineSeries series in WinUI polar chart](PolarArea_Images/WinUI_PolarChart_IsClosed.png)
+![Closed PolarLineSeries series in WinUI polar chart](PolarLine_Images/WinUI_PolarChart_IsClosed.png)
