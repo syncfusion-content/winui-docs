@@ -149,12 +149,24 @@ The appearance of the data label can be customized using the [`ContentTemplate`]
 <chart:SfPolarChart >
     <chart:SfPolarChart.Resources>
         <DataTemplate x:Key="datalabelTemplate">
-            <StackPanel Margin="10" Orientation="Vertical">
-                <Ellipse Height="15" Width="15" Fill="{Binding Interior}" 
-                 Stroke="#4a4a4a" StrokeThickness="2"/>
-                <TextBlock HorizontalAlignment="Center" FontSize="12"
-                           Foreground="Black" 
-                           FontWeight="SemiBold" Text="{Binding Item.Product}"/>
+                    <Grid>
+                        <Ellipse
+                                Width="30"
+                                Height="30"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Top"
+                                Fill="White"
+                                Stroke="#0078DE"
+                                StrokeThickness="2" />
+                        <TextBlock
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontFamily="Segoe UI"
+                                FontSize="12"
+                                Foreground="#FF585858"
+                                Text="{Binding}"
+                                TextWrapping="Wrap" />
+                    </Grid>
             </StackPanel>
         </DataTemplate>
     </chart:SfPolarChart.Resources>
@@ -186,6 +198,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 {% endtabs %}
 
+![Template support for data label in WinUI Polar Chart](DataLabel_Images/WinUI_PolarChart_DataLabel_LabelTemplate.png)
 
 ## Label format
 
@@ -269,7 +282,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 ## Applying series brush
 
-[`UseSeriesPalette`]() property is used to set the interior of the series to the data label background. 
+The [`UseSeriesPalette`]() property is used to set the [Interior]() of the series to the data label background. 
 
 {% tabs %}
 
@@ -313,13 +326,13 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 This feature is used to connect label and data point using a line. [ShowConnectorLine]() property of [PolarDataLabelSettings]() is used to enable the connector line in the polar chart.
 
-The connector line can be customized using the below properies.
+The connector line can be customized using the following properties:
 
-* [ConnectorHeight]()
-* [ConnectorLineStyle]()
-* [ConnectorRotationAngle]()
+* [ConnectorHeight]() - used to set height for connector line.
+* [ConnectorLineStyle]() -  used to customize the style of line.
+* [ConnectorRotation]() - used to rotate the connector line at any angle.
 
-The following code example shows the customization options for connector line:
+The following code example shows the customization of connector line.
 
 {% tabs %}
 
