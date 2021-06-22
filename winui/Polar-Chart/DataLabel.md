@@ -10,12 +10,15 @@ documentation: ug
 # Data label in WinUI Polar Chart (SfPolarChart)
 
 Chart data labels are used to display values related to a chart segment. Values from data point(x, y) or other custom properties from a data source can be displayed. 
+
 Each data label can be represented by the following:
 
-* Label - Displays the segment label content at the (X, Y) point.
-* ConnectorLine - Line used to connect the (X, Y) point and the label element.
+* `Label` - Displays the segment label content at the (X, Y) point.
+* `ConnectorLine` - Line used to connect the (X, Y) point and the label element.
 
-[ShowDataLabels]() property of series used to display the data labels, The following code example illustrates how to achieve this.
+## Define data label
+
+To define the data label in the chart, set the [ShowDataLabels]() property of polar chart series to true. The default value of [ShowDataLabels]() property is `false`.
 
 % tabs %}
 
@@ -25,7 +28,6 @@ Each data label can be represented by the following:
                  ItemsSource="{Binding Data}"  
                  XBindingPath="Product" 
                  YBindingPath="SalesRate"/>
-
 
 {% endhighlight %}
 
@@ -39,14 +41,13 @@ series.ShowDataLabels = true;
 
 {% endtabs %}
 
+![Data label support in WinUI Polar chart](DataLabel_Images/WinUI_PolarChart_data_label.png)
 
-## Define data label
+## Data label context customization
 
-To customize the content of data labels, need to define [DataLabelSettings]() of series.
+The [ShowDataLabels]() property of polar chart series is used to enable the data label, and the [Context]() property specifies, which value should be displayed in the data label in [PolarDataLabelSettings]().
 
-[Context]() property of [DataLabelSettings]() allows to define the value to be displayed as label content.
-
-The following code example demonstrates about define the percentage value to be displayed as label.
+The following code example demonstrates how to define the data label and its percentange value.
 
 {% tabs %}
 
@@ -72,13 +73,15 @@ series.DataLabelSettings = new PolarDataLabelSettings() {Context = LabelContext.
 
 {% endtabs %}
 
+![Data label support in WinUI Polar chart](DataLabel_Images/WinUI_PolarChart_data_label_percentage.png)
+
 | Context values | Description |
 |---|--|
 | DataLabelItem | Displays the y value|
 | Percentage | Displays the percentage value of series point among other points|
 | XValue | Displays the X value of series point|
 | YValue | Displays the Y value of series point|
-
+| DateTime | Displays LabelContent.DateTime value|
 
 ## Data label customization
 
@@ -98,10 +101,16 @@ The following code example demonstrates the customization of data label using th
 {% tabs %}
 
 {% highlight xaml %}
-
-<chart:SfPolarChart.DataLabelSettings>
-    <chart:PolarDataLabelSettings Foreground="White" FontSize="16" FontFamily="Calibri" BorderBrush="White" BorderThickness="1" Margin="1" FontStyle="Italic" Background="#1E88E5" />
-</chart:SfPolarChart.DataLabelSettings>
+ <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
+                             XBindingPath="Direction" 
+                             YBindingPath="Tree" Label="Tree"
+                             ShowDataLabels="True">
+            <chart:PolarLineSeries.DataLabelSettings>
+                <chart:PolarDataLabelSettings Foreground="White" FontSize="12" FontFamily="Calibri" BorderBrush="White"                             BorderThickness="1" Margin="1" FontStyle="Italic" Background="#1E88E5">
+                </chart:PolarDataLabelSettings>
+            </chart:PolarLineSeries.DataLabelSettings>
+</chart:PolarLineSeries>
+...
 
 {% endhighlight %}
 
@@ -119,16 +128,17 @@ series.DataLabelSettings = new PolarDataLabelSettings()
     Margin = new Thickness(1),
     FontStyle = FontStyles.Italic,
     FontFamily = new FontFamily("Calibri"),
-    FontSize = 16
+    FontSize = 12
 };
-
+...
 
 {% endhighlight %}
 
 {% endtabs %}
 
+![Data label customization support in WinUI Polar Chart](DataLabel_Images/WinUI_PolarChart_data_label_customize.png)
 
-## Label Template
+## Label template
 
 The appearance of the data label can be customized by using [`ContentTemplate`]() property of [`PolarDataLabelSettings`]() as follows.
 
@@ -175,7 +185,6 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 {% endhighlight %}
 
 {% endtabs %}
-
 
 
 ## Label format
@@ -225,11 +234,15 @@ The [`Rotation`]() property is used to rotate the data labels based on the value
 
 <chart:SfPolarChart x:Name="chart">
 ...
-    <chart:PolarLineSeries ShowDataLabels="True">
+    <chart:PolarLineSeries ShowDataLabels="True"  
+                            ItemsSource="{Binding PlantDetails}" 
+                            XBindingPath="Direction" 
+                            YBindingPath="Tree">
         <chart:PolarLineSeries.DataLabelSettings>
-            <chart:PolarDataLabelSettings Rotation="45" BorderBrush="White" BorderThickness="1" Background="#1E88E5"/>
-    </chart:PolarLineSeries.DataLabelSettings>
-
+            <chart:PolarDataLabelSettings Rotation="-45"/>
+        </chart:PolarLineSeries.DataLabelSettings>
+    </chart:PolarLineSeries>
+    ...
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -243,10 +256,7 @@ series.ShowDataLabels = true;
 
 series.DataLabelSettings = new PolarDataLabelSettings() 
 { 
-    Rotation = 45,
-    BorderBrush = new SolidColorBrush(Colors.White),
-    Background = "#1E88E5",
-    BorderThickness = new Thickness(1)
+    Rotation = -45,
 };
 ...
 
@@ -254,7 +264,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 {% endtabs %}
 
-## Applying Series Brush
+## Applying series brush
 
 [`UseSeriesPalette`]() property is used to set the interior of the series to the data label background. 
 
@@ -262,21 +272,34 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 {% highlight xaml %}
 
-<chart:PolarLineSeries.DataLabelSettings>
-    <chart:PolarDataLabelSettings UseSeriesPalette="True"/>
-</chart:PolarLineSeries.DataLabelSettings>
+<chart:SfPolarChart x:Name="chart">
+...
+    <chart:PolarLineSeries ShowDataLabels="True"  
+                            ItemsSource="{Binding PlantDetails}" 
+                            XBindingPath="Direction" 
+                            YBindingPath="Tree">
+        <chart:PolarLineSeries.DataLabelSettings>
+            <chart:PolarDataLabelSettings UseSeriesPalette="True"/>
+        </chart:PolarLineSeries.DataLabelSettings>
+    </chart:PolarLineSeries>
+    ...
+</chart:SfPolarChart>
+
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfPolarChart chart = new SfPolarChart();
+. . . 
+PolarLineSeries series = new PolarLineSeries();
+series.ShowDataLabels = true;
 series.DataLabelSettings = new PolarDataLabelSettings()
 {
     UseSeriesPalette = true,
 };
+...
 
 {% endhighlight %}
 
 {% endtabs %}
-
-

@@ -253,8 +253,9 @@ The [DataLabelSettings]() property of [PolarAreaSeries]() can be used to enable 
 
 {% highlight C# %}
 
-PolarLineSeries series = new PolarLineSeries();
+PolarAreaSeries series = new PolarAreaSeries();
 series.ShowDataLabels = true;
+...
 
 {% endhighlight %}
 
