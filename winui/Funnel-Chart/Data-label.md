@@ -49,7 +49,7 @@ this.Content = chart;
 
 ## Data label context
 
-To customize the content of data labels, need to define [DataLabelSettings]() of series and set [Context]() property of [DataLabelSettings]() to change the data label content value.
+To customize the content of data labels, need to define [DataLabelSettings]() of chart and set [Context]() property of [FunnelDataLabelSettings]() to change the data label content value.
 
 The following code example demonstrates about how to set percentage value as data label content.
 
@@ -91,7 +91,7 @@ this.Content = chart;
 
 | Context values | Description | Output |
 |---|--|---|
-| DateTime | Displays LabelContent as DateTime value | ![ DateTime in DataLabel](Data-label_images/WinUI_funnel_chart_labelcontent_datetime.png) |
+| DateTime | Displays the DateTime value | ![ DateTime in DataLabel](Data-label_images/WinUI_funnel_chart_labelcontent_datetime.png) |
 |DataLabelItem | Displays the y value|![ LabelContentPath in DataLabel](Data-label_images/WinUI_funnel_chart_labelcontent_datalabelitem.png)|
 | Percentage | Displays the percentage value of series point among other points |![ Percentage in DataLabel](Data-label_images/WinUI_funnel_chart_labelcontent_percentage.png) |
 | XValue | Displays the X value of series point|![ XValue in DataLabel](Data-label_images/WinUI_funnel_chart_labelcontent_xvalue.png) |
