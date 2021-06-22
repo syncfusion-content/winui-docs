@@ -248,6 +248,7 @@ The following code example gives you the complete code of above configurations.
 
 <chart:SfFunnelChart x:Name="chart" Header="PRODUCT SALES" 
                              ShowTooltip="True"
+                             ShowDataLabels="True"
                              Palette="BlueChrome"
                              Height="388" Width="500" 
                              ItemsSource="{Binding Data}" 
@@ -261,10 +262,6 @@ The following code example gives you the complete code of above configurations.
         <chart:SfFunnelChart.Legend>
             <chart:ChartLegend />
         </chart:SfFunnelChart.Legend>
-
-        <chart:SfFunnelChart.DataLabelSettings>
-            <chart:FunnelDataLabelSettings Visible="True" />
-        </chart:SfFunnelChart.DataLabelSettings>
             
 </chart:SfFunnelChart>
  
@@ -291,7 +288,7 @@ public sealed partial class MainWindow : Window
         chart.Width = 500;
         chart.Legend = new ChartLegend();
         chart.ShowTooltip = true;
-        chart.DataLabelSettings = new FunnelDataLabelSettings() { Visible = true };
+        chart.ShowDataLabels = true;
 
         this.Content = chart;
     }

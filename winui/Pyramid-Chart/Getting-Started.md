@@ -249,6 +249,7 @@ The following code example gives you the complete code of above configurations.
 <chart:SfPyramidChart x:Name="chart" 
                     Header="The Food Comparison Pyramid"
                     ShowTooltip="True"
+                    ShowDataLabels="True"
                     Palette="BlueChrome"
                     ItemsSource="{Binding Data}" 
                     XBindingPath="FoodName"
@@ -261,10 +262,6 @@ The following code example gives you the complete code of above configurations.
     <chart:SfPyramidChart.Legend>
         <chart:ChartLegend />
     </chart:SfPyramidChart.Legend>
-
-    <chart:SfPyramidChart.DataLabelSettings>
-        <chart:PyramidDataLabelSettings Visible="True" />
-    </chart:SfPyramidChart.DataLabelSettings>
 
 </chart:SfPyramidChart>
  
@@ -289,7 +286,7 @@ public sealed partial class MainWindow : Window
         chart.Header = "The Food Comparison Pyramid";
         chart.Legend = new ChartLegend();
         chart.ShowTooltip = true;
-        chart.DataLabelSettings = new PyramidDataLabelSettings() { Visible = true };
+        chart.ShowDataLabels = true;
 
         this.Content = chart;
     }

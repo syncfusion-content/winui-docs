@@ -126,7 +126,7 @@ The following code example demonstrates the customization of data label using th
         <chart:PyramidDataLabelSettings Foreground="White" FontSize="16" FontFamily="Calibri" BorderBrush="White" BorderThickness="1" Margin="1" FontStyle="Italic" Background="#1E88E5" />
     </chart:SfPyramidChart.DataLabelSettings>
 . . .
- </chart:SfPyramidChart>
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
