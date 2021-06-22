@@ -9,32 +9,77 @@ documentation: ug
 
 # Data label in WinUI Pyramid Chart (SfPyramidChart)
 
-Data points can be easily annotated with data labels to help improve the readability of data in the pyramid chart. 
+To improve the readability of data in the pyramid chart, data points can be easily annotated with data labels.
 
 ## Define data label 
 
-The [`Visible`]() property of [`PyramidDataLabelSettings`]() is used to enable the data label and the [`Context`]() property specifies which value should be displayed in the data label.
-
-The following code example demonstrates how define data label and its value.
+To define the data label in the chart, set the [ShowDataLabels]() property to true. The default value of [ShowDataLabels]() property is false.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart.DataLabelSettings>
-    <chart:PyramidDataLabelSettings Visible="True" Context="YValue" />
-</chart:SfPyramidChart.DataLabelSettings>
+<chart:SfPyramidChart x:Name="chart" 
+                ShowDataLabels="True"
+                Palette="BlueChrome" 
+                ItemsSource="{Binding Data}" 
+                XBindingPath="Category"
+                YBindingPath="Value">
+. . .
+ </chart:SfPyramidChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfPyramidChart chart = new SfPyramidChart();
+chart.ShowDataLabels = true;
+chart.Palette = ChartColorPalette.BlueChrome;
+chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+chart.XBindingPath = "Category";
+chart.YBindingPath = "Value";
+. . . 
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Data label support in WinUI Pyramid chart](Data-label_images/WinUI_pyramid_chart_data_label.png)
+
+## Data label context
+
+To customize the content of data labels, need to define [DataLabelSettings]() of chart and set [Context]() property of [PyramidDataLabelSettings]() to change the data label content value.
+
+The following code example demonstrates about how to set percentage value as data label content.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfPyramidChart x:Name="chart" 
+                ShowDataLabels="True"
+                Palette="BlueChrome" 
+                ItemsSource="{Binding Data}" 
+                XBindingPath="Category"
+                YBindingPath="Value">
+. . .
+    <chart:SfPyramidChart.DataLabelSettings>
+        <chart:PyramidDataLabelSettings Context="Percentage" />
+    </chart:SfPyramidChart.DataLabelSettings>
+. . .
+ </chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
         
 SfPyramidChart chart = new SfPyramidChart();
+chart.ShowDataLabels = true;
 . . . 
 chart.DataLabelSettings = new PyramidDataLabelSettings() 
 { 
-    Visible = true, 
-    Context = LabelContext.YValue 
+    Context = LabelContext.Percentage 
 };
 
 this.Content = chart;
@@ -45,7 +90,7 @@ this.Content = chart;
 
 | Context values | Description | Output |
 |---|--|---|
-| DateTime | Displays LabelContent.DateTime value | ![ DateTime in DataLabel](Data-label_images/WinUI_pyramid_chart_labelcontent_datetime.png) |
+| DateTime | Displays the DateTime value | ![ DateTime in DataLabel](Data-label_images/WinUI_pyramid_chart_labelcontent_datetime.png) |
 |DataLabelItem | Displays the y value|![ LabelContentPath in DataLabel](Data-label_images/WinUI_pyramid_chart_labelcontent_datalabelitem.png)|
 | Percentage | Displays the percentage value of series point among other points |![ Percentage in DataLabel](Data-label_images/WinUI_pyramid_chart_labelcontent_percentage.png) |
 | XValue | Displays the X value of series point|![ XValue in DataLabel](Data-label_images/WinUI_pyramid_chart_labelcontent_xvalue.png) |
@@ -53,7 +98,7 @@ this.Content = chart;
 
 ## Data label customization
 
-The following properties are used to customize the data label.
+The following properties are used to customize the data label:
 
 * [`BorderBrush`]()- used to change the border color.
 * [`BorderThickness`]()- used to change the thickness of the border.
@@ -70,18 +115,28 @@ The following code example demonstrates the customization of data label using th
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart.DataLabelSettings>
-    <chart:PyramidDataLabelSettings Visible="True" Foreground="White" FontSize="16" FontFamily="Calibri" BorderBrush="White" BorderThickness="1" Margin="1" FontStyle="Italic" Background="#1E88E5" />
-</chart:SfPyramidChart.DataLabelSettings>
+<chart:SfPyramidChart x:Name="chart" 
+                ShowDataLabels="True"
+                Palette="BlueChrome" 
+                ItemsSource="{Binding Data}" 
+                XBindingPath="Category"
+                YBindingPath="Value">
+. . .
+    <chart:SfPyramidChart.DataLabelSettings>
+        <chart:PyramidDataLabelSettings Foreground="White" FontSize="16" FontFamily="Calibri" BorderBrush="White" BorderThickness="1" Margin="1" FontStyle="Italic" Background="#1E88E5" />
+    </chart:SfPyramidChart.DataLabelSettings>
+. . .
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+chart.ShowDataLabels = true;
+. . .
 chart.DataLabelSettings = new PyramidDataLabelSettings() 
 { 
-    Visible = true, 
     Foreground = new SolidColorBrush(Colors.White),
     BorderBrush = new SolidColorBrush(Colors.White),
     Background = "#1E88E5",
@@ -102,7 +157,7 @@ this.Content = chart;
 
 ## Data label template
 
-The appearance of the data label can be customized by using [`ContentTemplate`]() property of [`PyramidDataLabelSettings`]() as follows.
+The appearance of the data label can be customized by using the [ContentTemplate]() property of [`PyramidDataLabelSettings`]() as follows.
 
 {% tabs %}
 
@@ -127,13 +182,14 @@ The appearance of the data label can be customized by using [`ContentTemplate`](
 </Page.Resources>
 <Grid>
    <chart:SfPyramidChart x:Name="chart" 
+                ShowDataLabels="True"
                 Palette="BlueChrome" 
                 ItemsSource="{Binding Data}" 
                 XBindingPath="Category"
                 YBindingPath="Value">
 
         <chart:SfPyramidChart.DataLabelSettings>
-            <chart:PyramidDataLabelSettings Visible="True" ContentTemplate="{StaticResource dataLabelTemplate}" />
+            <chart:PyramidDataLabelSettings ContentTemplate="{StaticResource dataLabelTemplate}" />
         </chart:SfPyramidChart.DataLabelSettings>
 
     </chart:SfPyramidChart>
@@ -144,10 +200,10 @@ The appearance of the data label can be customized by using [`ContentTemplate`](
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+chart.ShowDataLabels = true;
 . . . 
 chart.DataLabelSettings = new PyramidDataLabelSettings() 
 { 
-    Visible = true, 
     ContentTemplate = this.Resources["dataLabelTemplate"] as DataTemplate
 };
 
@@ -161,20 +217,21 @@ this.Content = chart;
 
 ## Label format
 
-The [Format]() property is used to format the data labels. The following code example demonstrates the how to format data labels with three decimal digits.
+The [Format]() property is used to format the data labels. The following code example demonstrates how to format data labels with three decimal digits.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart" 
+                ShowDataLabels="True"
                 Palette="BlueChrome" 
                 ItemsSource="{Binding Data}" 
                 XBindingPath="Category"
                 YBindingPath="Value">
 
     <chart:SfPyramidChart.DataLabelSettings>
-        <chart:PyramidDataLabelSettings Visible="True" Format="#.000" Foreground="White" />
+        <chart:PyramidDataLabelSettings Format="#.000" Foreground="White" />
     </chart:SfPyramidChart.DataLabelSettings>
 
 </chart:SfPyramidChart>
@@ -184,10 +241,10 @@ The [Format]() property is used to format the data labels. The following code ex
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+chart.ShowDataLabels = true;
 . . . 
 chart.DataLabelSettings = new PyramidDataLabelSettings() 
-{ 
-    Visible = true, 
+{  
     Format = "#.000",
     Foreground = new SolidColorBrush(Colors.White)
 };
@@ -209,13 +266,14 @@ The [`Rotation`]() property is used to rotate the data labels based on the value
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart" 
+                ShowDataLabels="True"
                 Palette="BlueChrome" 
                 ItemsSource="{Binding Data}" 
                 XBindingPath="Category"
                 YBindingPath="Value">
 
     <chart:SfPyramidChart.DataLabelSettings>
-        <chart:PyramidDataLabelSettings Visible="True" Rotation="45" BorderBrush="White" BorderThickness="1" Background="#1E88E5"/>
+        <chart:PyramidDataLabelSettings Rotation="45" BorderBrush="White" BorderThickness="1" Background="#1E88E5"/>
     </chart:SfPyramidChart.DataLabelSettings>
 
 </chart:SfPyramidChart>
@@ -225,10 +283,10 @@ The [`Rotation`]() property is used to rotate the data labels based on the value
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+chart.ShowDataLabels = true;
 . . . 
 chart.DataLabelSettings = new PyramidDataLabelSettings() 
 { 
-    Visible = true, 
     Rotation = 45,
     BorderBrush = new SolidColorBrush(Colors.White),
     Background = "#1E88E5",

@@ -1,0 +1,111 @@
+---
+layout: post
+title: Header in WinUI Circular Chart control | Syncfusion
+description: Learn here all about title with Syncfusion WinUI Circular Chart (SfCircularChart) control and its customization.
+platform: WinUI
+control: SfCircularChart
+documentation: ug
+---
+
+# Header in WinUI Circular Charts (SfCircularChart)
+
+`Header` property of `SfCircularChart` is used to define and customize the chart title. It accepts any object (.Net object) as content for the chart header.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCircularChart.Header>
+    <Border BorderThickness="0.5" BorderBrush="Black" Margin="10" CornerRadius="5">
+        <TextBlock Text="Circular Chart Header"
+                   Margin="5" 
+                   FontFamily="Verdana" FontSize="14" 
+                   Foreground="Blue">
+        </TextBlock>
+    </Border>
+</chart:SfCircularChart.Header>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularChart chart = new SfCircularChart();
+Border border = new Border()
+{
+    BorderBrush = new SolidColorBrush(Colors.Black),
+    Margin = new Thickness(10),
+    CornerRadius = new CornerRadius(5)
+};
+
+TextBlock textBlock = new TextBlock()
+{
+    Text = "Circular Chart Header",
+    FontFamily = new FontFamily("Verdana"),
+    Foreground = new SolidColorBrush(Colors.Blue),
+    FontSize = 25,
+};
+
+border.Child = textBlock;
+chart.Header = border;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Title customization support in WinUI Circular Chart](Header_Images/WinUI_Circular_chart_Header.png)
+
+## Title alignment
+
+The title text content can be aligned horizontally to the left, center or right of the chart using the [HorizontalHeaderAlignment]() property of the `SfCircularChart`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCircularChart x:Name="chart" 
+                HorizontalHeaderAlignment="Right">
+
+    <chart:SfCircularChart.Header>
+        <Border BorderThickness="0.5" BorderBrush="Black" Margin="10" CornerRadius="5">
+            <TextBlock Text="Circular Chart Header"
+                   Margin="5" 
+                   HorizontalTextAlignment="Center"
+                   FontFamily="Verdana" FontSize="14" 
+                   Foreground="Blue"/>
+        </Border>
+    </chart:SfCircularChart.Header>
+
+</chart:SfCircularChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularChart chart = new SfCircularChart();
+chart.HorizontalHeaderAlignment = HorizontalAlignment.Right;
+. . .
+Border border = new Border()
+{
+    BorderBrush = new SolidColorBrush(Colors.Black),
+    Margin = new Thickness(10),
+    CornerRadius = new CornerRadius(5)
+};
+
+TextBlock textBlock = new TextBlock()
+{
+    Text = "Circular Chart Header",
+    HorizontalTextAlignment = TextAlignment.Center,
+    FontFamily = new FontFamily("Verdana"),
+    Foreground = new SolidColorBrush(Colors.Blue),
+    FontSize = 25,
+};
+
+border.Child = textBlock;
+chart.Header = border;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Title alignment in WinUI Circular Chart](Header_Images/WinUI_Circular_chart_Header_customization.png)
+
