@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started with WinUI Pyramid Chart
 
-This section explains you the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to learn to get started with the Pyramid Chart.
+This section explains how to populate the pyramid chart with data, a header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
 ## Creating an application with WinUI Pyramid Chart
 
@@ -165,7 +165,7 @@ chart.Header = "Calories in food";
 
 ## Enable data labels
 
-The [ShowDataLabels]() property of [PyramidChart]() can be used to enable data labels to improve the readability of the pyramid chart. By default, The default value of [ShowDataLabels]() property is `false`.
+The [ShowDataLabels]() property of [PyramidChart]() is used to enable data labels to improve the readability of the pyramid chart. The label visibility is set to `False` by default.
 
 {% tabs %} 
 
