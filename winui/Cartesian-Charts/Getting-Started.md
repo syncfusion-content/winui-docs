@@ -283,7 +283,7 @@ chart.Series.Add(series);
 
 ## Enable legend
 
-The legend provides information about the data point displayed in the cartesian chart. The [Legend]() property of the chart was used to enable it.
+The legend provides information about the data point displayed in the Cartesian chart. The [Legend]() property of the chart was used to enable it.
 
 {% tabs %} 
 

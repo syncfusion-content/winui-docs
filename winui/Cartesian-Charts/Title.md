@@ -36,7 +36,7 @@ this.Content = chart;
 
 ## Title customization
 
-The cartesian chart provides support to add any `UIElement` as a title. The following code example defines `TextBlock` as chart header.
+The Cartesian chart provides support to add any `UIElement` as a title. The following code example defines `TextBlock` as chart header.
 
 {% tabs %}   
 

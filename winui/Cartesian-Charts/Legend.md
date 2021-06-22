@@ -56,7 +56,7 @@ this.Content = chart;
 
 ## Legend title
 
-The cartesian chart provides support to add any `UIElement` as a title for legend. [Header]() property of `ChartLegend` is used to define the title for the legend as shown in the following code example.
+The Cartesian chart provides support to add any `UIElement` as a title for legend. [Header]() property of `ChartLegend` is used to define the title for the legend as shown in the following code example.
 
 {% tabs %}
 
@@ -295,7 +295,7 @@ The series can be collapsed by unchecking the checkbox as below:
 
 ## Toggle series visibility 
 
-By enabling the [ToggleSeriesVisibility]() property, the visibility of the cartesian segment can be controlled by tapping the legend item. By default, the value of [ToggleSeriesVisibility]() property is `False`.
+By enabling the [ToggleSeriesVisibility]() property, the visibility of the Cartesian segment can be controlled by tapping the legend item. By default, the value of [ToggleSeriesVisibility]() property is `False`.
 
 {% tabs %}
 
