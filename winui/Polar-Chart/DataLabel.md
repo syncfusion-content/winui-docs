@@ -9,16 +9,16 @@ documentation: ug
 
 # Data label in WinUI Polar Chart (SfPolarChart)
 
-Chart data labels are used to display values related to a chart segment. Values from data point(x, y) or other custom properties from a data source can be displayed. 
+Data labels are used to display values related to a chart segment. Values from data point(x, y) or other custom properties from a data source can be displayed.
 
 Each data label can be represented by the following:
 
-* `Label` - Displays the segment label content at the (X, Y) point.
-* `ConnectorLine` - Line used to connect the (X, Y) point and the label element.
+* `Label` - displays the segment label content at the (X, Y) point.
+* `ConnectorLine` - used to connect the (X, Y) point and the label element.
 
-## Define data label
+## Enable data label
 
-To define the data label in the chart, set the [ShowDataLabels]() property of polar chart series to true. The default value of [ShowDataLabels]() property is `false`.
+[ShowDataLabels]() property of series is used to enable the data labels. The following code example illustrates how to achieve this.
 
 % tabs %}
 
@@ -41,13 +41,13 @@ series.ShowDataLabels = true;
 
 {% endtabs %}
 
-![Data label support in WinUI Polar chart](DataLabel_Images/WinUI_PolarChart_data_label.png)
+![Data label in WinUI Polar chart](DataLabel_Images/WinUI_PolarChart_data_label.png)
 
-## Data label context customization
+## Data label context
 
-The [ShowDataLabels]() property of polar chart series is used to enable the data label, and the [Context]() property specifies, which value should be displayed in the data label in [PolarDataLabelSettings]().
+To customize the content of data labels, need to define [DataLabelSettings]() of series and set [Context]() property of [DataLabelSettings]() to define the value to be displayed as label content.
 
-The following code example demonstrates how to define the data label and its percentage value.
+The following code example demonstrates how to define the percentage value to be displayed as data label content.
 
 {% tabs %}
 
@@ -89,7 +89,7 @@ The following properties are used to customize the data label.
 
 * [`BorderBrush`]()- used to change the border color.
 * [`BorderThickness`]()- used to change the thickness of the border.
-* [`Margin`]()- used to change the margin of the label.
+* [`Margin`]()- used to change the margin size for label.
 * [`FontStyle`]()-  used to change font style of the label.
 * [`FontSize`]()-  used to change font size of the label.
 * [`Foreground`]()- used to change the text color of the label.
@@ -102,9 +102,9 @@ The following code example demonstrates the customization of data label using th
 
 {% highlight xaml %}
  <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                             XBindingPath="Direction" 
-                             YBindingPath="Tree" Label="Tree"
-                             ShowDataLabels="True">
+                        XBindingPath="Direction" 
+                        YBindingPath="Tree" Label="Tree"
+                        ShowDataLabels="True">
             <chart:PolarAreaSeries.DataLabelSettings>
                 <chart:PolarDataLabelSettings Foreground="White" FontSize="12" FontFamily="Calibri" BorderBrush="White"                             BorderThickness="1" Margin="1" FontStyle="Italic" Background="#1E88E5">
                 </chart:PolarDataLabelSettings>
@@ -140,7 +140,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 ## Label template
 
-The appearance of the data label can be customized by using [`ContentTemplate`]() property of [`PolarDataLabelSettings`]() as follows.
+The appearance of the data label can be customized using the [`ContentTemplate`]() property of [`PolarDataLabelSettings`]() as shown in the following code example.
 
 {% tabs %}
 
@@ -189,7 +189,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 ## Label format
 
-The [Format]() property can be used to format the data labels. The following code example demonstrates the how to format data labels with three decimal digits.
+The [Format]() property can be used to format the data labels. The following code example demonstrates the how to format data labels with single decimal digit.
 
 {% tabs %}
 
@@ -227,7 +227,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 ## Label rotation
 
-The [`Rotation`]() property is used to rotate the data labels based on the value as angle.
+[Rotation]() property is used to define the angle to which the label has to rotate. The following code demonstrates the label rotating angle.
 
 {% tabs %}
 
@@ -311,7 +311,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 ## Connector line
 
-This feature is used to connect label and data point using a line. You can add connector line for the data label using [ShowConnectorLine]() property in [PolarDataLabelSettings]().
+This feature is used to connect label and data point using a line. [ShowConnectorLine]() property of [PolarDataLabelSettings]() is used to enable the connector line in the polar chart.
 
 The connector line can be customized using the below properies.
 
