@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip in WinUI Pyramid Chart (SfPyramidChart)
 
-Tooltip is used to display any information over segments. It appears at the data point position when the mouse hovers over any chart segment. It is set to display the metadata of the selected segment or data point.
+Tooltip is used to display any information over segments. It appears at the data point position when the mouse hovers over any chart segment. It is set to display the metadata of the hovered segment or data point.
 
 ## Define tooltip
 
