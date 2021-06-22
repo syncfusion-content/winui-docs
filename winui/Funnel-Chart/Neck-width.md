@@ -9,7 +9,7 @@ documentation: ug
 
 # Neck width in WinUI Funnel Chart (SfFunnelChart)
 
-The neck width of funnel chart can be customized by using the [MinimumWidth]() property. The default value of [MinimumWidth]() property is 40. The following code example shows how to change the neck width.
+The neck width of funnel chart can be customized by using the [MinimumWidth]() property. The default value of [MinimumWidth]() property is 40. The following code example explains how to change the neck width.
 
 {% tabs %} 
 
