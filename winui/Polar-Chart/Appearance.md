@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in WinUI Polar Chart control | Syncfusion
-description: This section explains about how to apply palettes and gradient in the Syncfusion WinUI Funnel Chart (SfPolarChart) control
+description: This section explains about how to apply palettes and gradient in the Syncfusion WinUI Polar Chart (SfPolarChart) control
 platform: WinUI
 control: SfPolarChart
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance in WinUI Polar Chart (SfPolarChart)
 
-The appearance of [SfPolarChart]() can be customize by using the predefined palettes, custom palettes and gradient that allows to enrich the application.
+The appearance of [SfPolarChart]() can be customized by using the predefined palettes, custom palettes and gradient, which allows to enrich the application.
 
 ## Palettes
 
-[SfPolarChart]() provides options to apply different kinds of palettes. We have some predefined palette such as
+[SfPolarChart]() provides options for applying various kinds of palettes. Some predefined palettes, such as.
 
 * Metro
 * AutumnBrights
@@ -28,9 +28,11 @@ The appearance of [SfPolarChart]() can be customize by using the predefined pale
 * LightCandy
 * SandyBeach
 
-### Applying palette to Series
+### Applying palette
 
-Each palette applies a set of predefined brushes to the series in a predefined order. [Metro]() palette is the default palette. The following code example shows default Metro Palette for the polar chart series.
+Each palette applies a set of predefined brushes to the series in a predefined order. [Metro]() palette is the default palette. 
+
+The following code example shows default metro palette for the polar chart series.
 
 {% tabs %}
 
@@ -121,7 +123,7 @@ this.Content = chart;
 
 ## Custom palette
 
-[`SfPolarChart`]() provides support to define own brushes for chart with preferred order by using [`CustomBrushes`]() property of [`ChartColorModel`]() and [`Palette`]() value as [`Custom`]() as shown in the following code example.
+[`SfPolarChart`]() provides support to define own brushes for the chart with preferred order by using the [`CustomBrushes`]() property of [`ChartColorModel`]() and [`Palette`]() value as [`Custom`](), as shown in the following code example.
 
 {% tabs %}
 
@@ -162,5 +164,115 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Custom palette in WinUI polar Chart](Appearance_images/WinUI_PolarChart_CustomPalette.png)
+![Custom palette in WinUI Polar Chart](Appearance_images/WinUI_PolarChart_CustomPalette.png)
+
+## Applying gradient brushes
+
+Gradient for the polar chart can be set by using the [`ColorModel`]() property of the polar chart with the help of `LinearGradientBrush` or `RadialGradientBrush`.
+
+The following code sample and screenshot illustrates how to apply the gradient brushes for the chart using the [`ColorModel`]() property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfPolarChart Palette="Custom">
+
+    <chart:SfPolarChart.ColorModel>
+        <chart:ChartColorModel>
+            <chart:ChartColorModel.CustomBrushes>
+                <LinearGradientBrush>
+                    <GradientStop Offset="1" Color="#FFE7C7" />
+                    <GradientStop Offset="0" Color="#FCB69F" />
+                </LinearGradientBrush>
+                <LinearGradientBrush>
+                    <GradientStop Offset="1" Color="#fadd7d" />
+                    <GradientStop Offset="0" Color="#fccc2d" />
+                </LinearGradientBrush>
+                <LinearGradientBrush>
+                    <GradientStop Offset="1" Color="#DCFA97" />
+                    <GradientStop Offset="0" Color="#96E6A1" />
+                </LinearGradientBrush>
+            </chart:ChartColorModel.CustomBrushes>
+        </chart:ChartColorModel>
+    </chart:SfPolarChart.ColorModel>
+. . .
+</chart:SfPolarChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfPolarChart chart = new SfPolarChart();
+...
+ChartColorModel colorModel = new ChartColorModel();
+LinearGradientBrush gradientColor1 = new LinearGradientBrush();
+GradientStop stop1 = new GradientStop() { Offset = 1, Color = Color.FromRgb(255, 231, 199) };
+GradientStop stop2 = new GradientStop() { Offset = 0, Color = Color.FromRgb(252, 182, 159) };
+gradientColor1.GradientStops.Add(stop1);
+gradientColor1.GradientStops.Add(stop2);
+LinearGradientBrush gradientColor2 = new LinearGradientBrush();
+stop1 = new GradientStop() { Offset = 1, Color = Color.FromRgb(250, 221, 125) };
+stop2 = new GradientStop() { Offset = 0, Color = Color.FromRgb(252, 204, 45) };
+gradientColor2.GradientStops.Add(stop1);
+gradientColor2.GradientStops.Add(stop2);
+...
+colorModel.CustomBrushes.Add(gradientColor1);
+colorModel.CustomBrushes.Add(gradientColor2);
+...
+chart.ColorModel = colorModel;
+chart.Palette = ChartColorPalette.Custom;
+. . .
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Gradient support in WinUI Polar Chart](Appearance_images/WinUI_PolarChart_Series_Gradient.png)
+
+The following code sample and screenshot illustrates how to apply the gradient color using the [Interior]() property of series with `LinearGradientBrush`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfPolarChart>
+    ...
+    <chart:PolarAreaSeries  ItemsSource="{Binding PlantDetails}" 
+                            XBindingPath="Direction" 
+                            YBindingPath="Tree" Label="Tree">
+
+        <chart:PolarAreaSeries.Interior>
+            <LinearGradientBrush>
+                <GradientStop Offset="1" Color="#A8EAEE" />
+                <GradientStop Offset="0" Color="#7BB0F9" />
+            </LinearGradientBrush>
+        </chart:PolarAreaSeries.Interior>
+                   
+    </chart:PolarAreaSeries>
+...
+</chart:SfPolarChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+
+SfPolarChart chart = new SfPolarChart();
+. . .
+LinearGradientBrush gradientColor = new LinearGradientBrush();
+GradientStop stop1 = new GradientStop() { Offset = 1, Color = Color.FromRgb(168, 234, 238) };
+GradientStop stop2 = new GradientStop() { Offset = 0, Color = Color.FromRgb(123, 176, 249) };
+gradientColor.GradientStops.Add(stop1);
+gradientColor.GradientStops.Add(stop2);
+
+PolarAreaSeries series = new PolarAreaSeries();
+series.Interior = gradientColor;
+...
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Gradient color support in WinUI Polar Chart](Appearance_images/WinUI_PolarChart_Interior_GradientColor.png)
 
