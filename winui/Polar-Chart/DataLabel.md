@@ -24,7 +24,7 @@ To define the data label in the chart, set the [ShowDataLabels]() property of po
 
 {% highlight xaml %}
 
-<chart:PolarLineSeries ShowDataLabels="True"
+<chart:PolarAreaSeries ShowDataLabels="True"
                  ItemsSource="{Binding Data}"  
                  XBindingPath="Product" 
                  YBindingPath="SalesRate"/>
@@ -33,7 +33,7 @@ To define the data label in the chart, set the [ShowDataLabels]() property of po
 
 {% highlight c# %}
 
-PolarLineSeries series = new PolarLineSeries();
+PolarAreaSeries series = new PolarAreaSeries();
 series.ShowDataLabels = true;
 ...
 
@@ -47,24 +47,24 @@ series.ShowDataLabels = true;
 
 The [ShowDataLabels]() property of polar chart series is used to enable the data label, and the [Context]() property specifies, which value should be displayed in the data label in [PolarDataLabelSettings]().
 
-The following code example demonstrates how to define the data label and its percentange value.
+The following code example demonstrates how to define the data label and its percentage value.
 
 {% tabs %}
 
 {% highlight xaml %}
-<chart:PolarLineSeries ShowDataLabels="True">
+<chart:PolarAreaSeries ShowDataLabels="True">
 . . .
-<chart:PolarLineSeries.DataLabelSettings>
+<chart:PolarAreaSeries.DataLabelSettings>
     <chart:PolarDataLabelSettings Context="Percentage"/>
-</chart:PolarLineSeries.DataLabelSettings>
+</chart:PolarAreaSeries.DataLabelSettings>
 
-</chart:PolarLineSeries>
+</chart:PolarAreaSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
         
-PolarLineSeries series = new PolarLineSeries();
+PolarAreaSeries series = new PolarAreaSeries();
 series.ShowDataLabels = true;
 series.DataLabelSettings = new PolarDataLabelSettings() {Context = LabelContext.Percentage };
 ...
@@ -101,15 +101,15 @@ The following code example demonstrates the customization of data label using th
 {% tabs %}
 
 {% highlight xaml %}
- <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
+ <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
                              XBindingPath="Direction" 
                              YBindingPath="Tree" Label="Tree"
                              ShowDataLabels="True">
-            <chart:PolarLineSeries.DataLabelSettings>
+            <chart:PolarAreaSeries.DataLabelSettings>
                 <chart:PolarDataLabelSettings Foreground="White" FontSize="12" FontFamily="Calibri" BorderBrush="White"                             BorderThickness="1" Margin="1" FontStyle="Italic" Background="#1E88E5">
                 </chart:PolarDataLabelSettings>
-            </chart:PolarLineSeries.DataLabelSettings>
-</chart:PolarLineSeries>
+            </chart:PolarAreaSeries.DataLabelSettings>
+</chart:PolarAreaSeries>
 ...
 
 {% endhighlight %}
@@ -117,7 +117,7 @@ The following code example demonstrates the customization of data label using th
 {% highlight c# %}
 
 ...
-PolarLineSeries series = new PolarLineSeries();
+PolarAreaSeries series = new PolarAreaSeries();
 series.ShowDataLabels = true;
 series.DataLabelSettings = new PolarDataLabelSettings() 
 { 
@@ -223,6 +223,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 {% endtabs %}
 
+![Label format support for data label in WinUI Polar Chart](DataLabel_Images/WinUI_PolarChart_data_label_format.png)
 
 ## Label rotation
 
@@ -264,6 +265,8 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 {% endtabs %}
 
+![Rotation support for data label in WinUI Polar Chart](DataLabel_Images/WinUI_PolarChart_data_label_Rotation.png)
+
 ## Applying series brush
 
 [`UseSeriesPalette`]() property is used to set the interior of the series to the data label background. 
@@ -303,3 +306,57 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 {% endhighlight %}
 
 {% endtabs %}
+
+![Applying UseSeriesPalette in WinUI Polar Chart](DataLabel_Images/WinUI_PolarChart_data_label_UseSeriesPalette.png)
+
+## Connector line
+
+This feature is used to connect label and data point using a line. You can add connector line for the data label using [ShowConnectorLine]() property in [PolarDataLabelSettings]().
+
+The connector line can be customized using the below properies.
+
+* [ConnectorHeight]()
+* [ConnectorLineStyle]()
+* [ConnectorRotationAngle]()
+
+The following code example shows the customization options for connector line:
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfPolarChart x:Name="chart">
+...
+    <chart:PolarLineSeries ShowDataLabels="True"  
+                            ItemsSource="{Binding PlantDetails}" 
+                            XBindingPath="Direction" 
+                            YBindingPath="Tree">
+        <chart:PolarLineSeries.DataLabelSettings>
+            <chart:PolarDataLabelSettings ShowConnectorLine="True" ConnectorHeight="25" 
+                                          ConnectorRotation="45"/>
+        </chart:PolarLineSeries.DataLabelSettings>
+    </chart:PolarLineSeries>
+    ...
+</chart:SfPolarChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfPolarChart chart = new SfPolarChart();
+. . . 
+PolarLineSeries series = new PolarLineSeries();
+series.ShowDataLabels = true;
+series.DataLabelSettings = new PolarDataLabelSettings()
+{
+    ShowConnectorLine = true,
+    ConnectorHeight = 25,
+    ConnectorRotation = 45,
+};
+...
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![ConnectorLine in WinUI Polar Chart](DataLabel_Images/WinUI_PolarChart_data_label_ConnectorLine.png)
