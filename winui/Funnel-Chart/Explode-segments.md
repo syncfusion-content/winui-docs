@@ -14,7 +14,7 @@ Exploding a segment is used to pull attention to a specific area of the funnel. 
 * [ExplodeAll]() - Used to explode all the segments of these series.
 * [ExplodeIndex]() - Used to explode any specific segment.
 * [ExplodeOffset]() - Used to define the explode distance of segment.
-* [ExplodeOnTap]() - Used to explode the segment when segment is tap/click.
+* [ExplodeOnTap]() - Used to explode the segment when segment is tapped/clicked.
 
 {% tabs %} 
 
