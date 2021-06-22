@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance in WinUI Circular Chart (SfCircularChart)
 
-The appearance of [SfCircularChart]() can be customize by using the predefined palettes, custom palettes and gradient that allows to enrich the application.
+The appearance of [SfCircularChart]() can be customized by using the predefined palettes, custom palettes and gradient, which allows to enrich the application.
 
 ## Palettes
 
-Circular series provides options to apply different kinds of palettes. We have some predefined palette such as
+Circular series provides options for applying various kinds of palettes. Some predefined palettes, such as.
 
 * Metro
 * AutumnBrights
@@ -30,7 +30,7 @@ Circular series provides options to apply different kinds of palettes. We have s
 
 ### Applying palette
 
-Each palette applies a set of predefined brushes to the pie or doughnut series in a predefined order. [Metro]() palette is the default palette.
+Each palette applies a set of predefined brushes to the series in a predefined order. [Metro]() palette is the default palette.
 
 {% tabs %}
 
@@ -86,7 +86,7 @@ chart.Series.Add(series);
 
 ## Custom palette
 
-[SfCircularChart]() provides support to define own brushes for chart with preferred order by using [CustomBrushes]() property of [ChartColorModel]() and [Palette]() value as [Custom]() as shown in the following code example.
+[SfCircularChart]() provides support to define own brushes for chart with preferred order by using the [CustomBrushes]() property of [ChartColorModel]() and [Palette]() value as [Custom](), as shown in the following code example.
 
 {% tabs %}
 
@@ -132,9 +132,9 @@ series.ColorModel = colorModel;
 
 ## Applying gradient brushes
 
-Gradient for the Circular chart can be set by using the [ColorModel]() property of the Circular series with the help of `LinearGradientBrush` or `RadialGradientBrush`.
+Gradient for the circular chart can be set by using the [ColorModel]() property of the series with the help of `LinearGradientBrush` or `RadialGradientBrush`.
 
-The following code sample and screenshot illustrates how to apply the gradient brushes for chart using the [ColorModel]() property.
+The following code sample and screenshot illustrates how to apply the gradient brushes for the chart using the [ColorModel]() property.
 
 {% tabs %}
 
@@ -193,7 +193,7 @@ series.ColorModel = colorModel;
 
 ## Segment color binding
 
-The color of the each segment can be set by binding their corresponding model property from the `ItemsSource` collection to its [SegmentColorPath]() property of Circular series as follows.
+The color of the each segment can be set by binding their corresponding model property from the `ItemsSource` collection to its [SegmentColorPath]() property of series as follows.
 
 {% tabs %}
 
