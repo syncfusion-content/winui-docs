@@ -13,7 +13,7 @@ Funnel chart supports selection that allows to select a segment in the chart by 
 
 ## Enable selection
 
-To enable the selection in chart, create an instance of [ChartSelectionBehavior]() and add it to the `Behaviors` collection of funnel chart. And also need to set the [SelectionBrush]() property to hightlight the segment in the funnel chart.
+To enable the selection in chart, create an instance of [ChartSelectionBehavior]() and add it to the `Behaviors` collection of funnel chart. And also need to set the [SelectionBrush]() property to highlight the segment in the funnel chart.
 
 {% tabs %}
 
