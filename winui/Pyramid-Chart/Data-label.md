@@ -47,11 +47,11 @@ this.Content = chart;
 
 ![Data label support in WinUI Pyramid chart](Data-label_images/WinUI_pyramid_chart_data_label.png)
 
-## Data label context customization
+## Data label context
 
-The [ShowDataLabels]() property of pyramid chart is used to enable the data label, and the [Context]() property specifies, which value should be displayed in the data label in [PyramidDataLabelSettings]().
+To customize the content of data labels, need to define [DataLabelSettings]() of chart and set [Context]() property of [PyramidDataLabelSettings]() to change the data label content value.
 
-The following code example demonstrates how to define the data label and its value.
+The following code example demonstrates about how to set percentage value as data label content.
 
 {% tabs %}
 
@@ -65,7 +65,7 @@ The following code example demonstrates how to define the data label and its val
                 YBindingPath="Value">
 . . .
     <chart:SfPyramidChart.DataLabelSettings>
-        <chart:PyramidDataLabelSettings Context="YValue" />
+        <chart:PyramidDataLabelSettings Context="Percentage" />
     </chart:SfPyramidChart.DataLabelSettings>
 . . .
  </chart:SfPyramidChart>
@@ -79,7 +79,7 @@ chart.ShowDataLabels = true;
 . . . 
 chart.DataLabelSettings = new PyramidDataLabelSettings() 
 { 
-    Context = LabelContext.YValue 
+    Context = LabelContext.Percentage 
 };
 
 this.Content = chart;
@@ -90,7 +90,7 @@ this.Content = chart;
 
 | Context values | Description | Output |
 |---|--|---|
-| DateTime | Displays LabelContent.DateTime value | ![ DateTime in DataLabel](Data-label_images/WinUI_pyramid_chart_labelcontent_datetime.png) |
+| DateTime | Displays the DateTime value | ![ DateTime in DataLabel](Data-label_images/WinUI_pyramid_chart_labelcontent_datetime.png) |
 |DataLabelItem | Displays the y value|![ LabelContentPath in DataLabel](Data-label_images/WinUI_pyramid_chart_labelcontent_datalabelitem.png)|
 | Percentage | Displays the percentage value of series point among other points |![ Percentage in DataLabel](Data-label_images/WinUI_pyramid_chart_labelcontent_percentage.png) |
 | XValue | Displays the X value of series point|![ XValue in DataLabel](Data-label_images/WinUI_pyramid_chart_labelcontent_xvalue.png) |
