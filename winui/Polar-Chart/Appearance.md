@@ -32,8 +32,6 @@ The appearance of [SfPolarChart]() can be customized by using the predefined pal
 
 Each palette applies a set of predefined brushes to the series in a predefined order. [Metro]() palette is the default palette. 
 
-The following code example shows default metro palette for the polar chart series.
-
 {% tabs %}
 
 {% highlight xaml %}
@@ -123,7 +121,7 @@ this.Content = chart;
 
 ## Custom palette
 
-[`SfPolarChart`]() provides support to define own brushes for the chart with preferred order by using the [`CustomBrushes`]() property of [`ChartColorModel`]() and [`Palette`]() value as [`Custom`](), as shown in the following code example.
+[`SfPolarChart`]() provides support to define own brushes for the chart with preferred order by using the [CustomBrushes]() property of [ChartColorModel]() and [Palette]() value as `Custom`, as shown in the following code example.
 
 {% tabs %}
 
@@ -168,7 +166,7 @@ this.Content = chart;
 
 ## Applying gradient brushes
 
-Gradient for the polar chart can be set by using the [`ColorModel`]() property of the polar chart with the help of `LinearGradientBrush` or `RadialGradientBrush`.
+Gradient for the chart can be set by using the [`ColorModel`]() property of the polar chart with the help of `LinearGradientBrush` or `RadialGradientBrush`.
 
 The following code sample and screenshot illustrates how to apply the gradient brushes for the chart using the [`ColorModel`]() property.
 
