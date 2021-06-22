@@ -9,11 +9,11 @@ documentation: ug
 
 # Data label in WinUI Pyramid Chart (SfPyramidChart)
 
-To improve the readability of data in the funnel chart, data points can be easily annotated with data labels.
+To improve the readability of data in the pyramid chart, data points can be easily annotated with data labels.
 
 ## Define data label 
 
-The [Visible]() property of [FunnelDataLabelSettings]() is used to enable the data label, and the [Context]() property specifies, which value should be displayed in the data label.
+The [Visible]() property of [PyramidDataLabelSettings]() is used to enable the data label, and the [Context]() property specifies, which value should be displayed in the data label.
 
 The following code example demonstrates how to define the data label and its value.
 
