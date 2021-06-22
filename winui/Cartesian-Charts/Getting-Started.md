@@ -92,7 +92,7 @@ chart.SecondaryAxis = secondaryAxis;
 
 Run the project and check if you get following output to make sure you have configured your project properly to add chart.
 
-![Initializing WinUI Chart](Getting-Started_Images/img1.png)
+![Initializing WinUI Cartesian Chart](Getting-Started_Images/WinUI_pyramid_chart_initializied.png)
 
 ## Initialize view model
 
@@ -152,7 +152,7 @@ N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `Da
     x:Class="SfChart_GettingStarted.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:SfChart_GettingStarted"
+    xmlns:model="using:SfChart_GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Charts"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -160,7 +160,7 @@ N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `Da
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Page.DataContext>
-        <local:ViewModel></local:ViewModel>
+        <model:ViewModel></local:ViewModel>
     </Page.DataContext>
 </Page>
 
@@ -176,9 +176,9 @@ this.DataContext = new ViewModel();
 
 ## Populate Cartesian chart with data
 
-As we are going to visualize the comparison of heights in the data model, add [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html) to [Series]() property of chart, and then bind the `Data` property of the above `ViewModel` to the `ColumnSeries.ItemsSource` as follows.
+As we are going to visualize the comparison of heights in the data model, add [ColumnSeries]() to [Series]() property of chart, and then bind the `Data` property of the above `ViewModel` to the `ColumnSeries.ItemsSource` as follows.
 
-N> You need to set [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath) and [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.XyDataSeries.html#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties, so that chart would fetch values from the respective properties in the data model to plot the series.
+N> You need to set [XBindingPath]() and [YBindingPath]() properties, so that chart would fetch values from the respective properties in the data model to plot the series.
 
 {% tabs %}   
 
@@ -254,7 +254,7 @@ chart.Header = "Chart";
 
 ## Enable data Labels
 
-You can add data labels to improve the readability of the chart and it can be enabled using [DataLabel]() property of [ChartSeries](). By default, there is no label displayed, you have to set [ShowLabel]() property of [DataLabel]() to True.
+You can add data labels to improve the readability of the chart and it can be enabled using [DataLabel]() property of [ChartSeries](). By default, there is no label displayed, you have to set [ShowDataLabels]() property of series to True.
 
 {% tabs %} 
 
@@ -262,10 +262,7 @@ You can add data labels to improve the readability of the chart and it can be en
 
 <chart:SfCartesianChart>
     . . . 
-    <chart:ColumnSeries>
-        <chart:ColumnSeries.DataLabel>
-            <chart:CartesianChartDataLabel ShowLabel="True"/>
-        </chart:ColumnSeries.DataLabel>
+    <chart:ColumnSeries ShowDataLabels="True">
     </chart:ColumnSeries>
 
 </chart:SfCartesianChart>
@@ -274,8 +271,11 @@ You can add data labels to improve the readability of the chart and it can be en
 
 {% highlight C# %} 
 
+SfCartesianChart chart = new SfCartesianChart();
+. . .
 ColumnSeries series = new ColumnSeries();
-series.DataLabel = new CartesianChartDataLabel() { ShowLabel = true };
+series.ShowDataLabels = true;
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -283,7 +283,7 @@ series.DataLabel = new CartesianChartDataLabel() { ShowLabel = true };
 
 ## Enable legend
 
-You can enable legend using the [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property as follows.
+The legend provides information about the data point displayed in the cartesian chart. The [Legend]() property of the chart was used to enable it.
 
 {% tabs %} 
 
@@ -301,6 +301,7 @@ You can enable legend using the [Legend](https://help.syncfusion.com/cr/winui/Sy
 
 {% highlight C# %} 
 
+SfCartesianChart chart = new SfCartesianChart();
 chart.Legend = new ChartLegend (); 
 
 {% endhighlight %}
@@ -401,13 +402,10 @@ The following code example gives you the complete code of above configurations.
             
             <!--Initialize the series for SfChart-->
             <chart:ColumnSeries Label="Heights" ShowTooltip="True"
+                                ShowDataLabels="True"
                                 ItemsSource="{Binding Data}"
                                 XBindingPath="Name" 
                                 YBindingPath="Height">
-                <!--Add data label to the series-->
-                <chart:ColumnSeries.DataLabel>
-                    <chart:CartesianChartDataLabel Position="Inner" ShowLabel="True"/>
-                </chart:ColumnSeries.DataLabel>
             </chart:ColumnSeries>
         </chart:SfCartesianChart>
     </Grid>
@@ -451,14 +449,12 @@ namespace SfChart_GettingStarted
             series.XBindingPath = "Name";            
             series.YBindingPath = "Height";
             series.ShowTooltip = true;
-            series.Label = "Heights";      
-
-            //Setting data marker to the chart series
-            series.DataLabel = new CartesianChartDataLabel() { ShowLabel = true };
+            series.Label = "Heights"; 
+            series.ShowDataLabels = true;
 
             //Adding Series to the Chart Series Collection
             chart.Series.Add(series);
-            Root_Chart.Children.Add(chart);    
+            this.Content = chart;
         }
     }   
 }
@@ -469,7 +465,7 @@ namespace SfChart_GettingStarted
 
 The following chart is created as a result of the previous codes.
 
-![Getting Started WinUI Chart](Getting-Started_images/img3.png)
+![Getting Started WinUI Cartesian Chart](Getting-Started_Images/WinUI_pyramid_chart.png)
 
 N> Download demo application from [GitHub]()
 
