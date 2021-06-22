@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in WinUI Funnel Chart control | Syncfusion
-description: Learn here all about Selection feature of Syncfusion WinUI Funnel Chart (SfFunnelChart) control with segment selection support and Events.
+description: Learn here all about selection and multi-selection support in Syncfusion WinUI Funnel Chart (SfFunnelChart) control.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Selection in WinUI Funnel Chart (SfFunnelChart)
 
-Funnel chart supports selection that allows you to select a segment in a chart by using [ChartSelectionBehavior](). 
+Funnel chart supports selection that allows to select a segment in the chart by using [ChartSelectionBehavior](). 
 
-## Define selection behavior
+## Enable selection
 
-Create an instance [ChartSelectionBehavior]() and add it to the Behaviors collection of funnel chart. And Need to set the [SelectionBrush]() property in funnel chart.
+To enable the selection in chart, create an instance of [ChartSelectionBehavior]() and add it to the `Behaviors` collection of funnel chart. And also need to set the [SelectionBrush]() property to hightlight the segment in the funnel chart.
 
 {% tabs %}
 
@@ -51,11 +51,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Segment selection support in WinUI Funnel Chart](Selection_images/WinUI_funnel_chart_segment_selection.png)
+![Selection support in WinUI Funnel Chart](Selection_images/WinUI_funnel_chart_segment_selection.png)
 
 ## Multi selection
 
-Funnel chart allows you to select multiple segment using [Type]() property set as `MultiPoint` of [ChartSelectionBehavior](). 
+Funnel chart provides support to select multiple segments by using [Type]() property as `MultiPoint`. 
 
 The following code snippet demonstrates multiple segment selection.
 
@@ -97,11 +97,11 @@ this.Content = chart;
 
 ![Multi selection support in WinUI Funnel Chart](Selection_images/WinUI_funnel_chart_multi_selection.png)
 
-N>By default the [Type]() is `Point`. `Series` and `MultiSeries` is not support for funnel chart behavior.
+N> By default, the value of [Type]() is `Point`. `Series` and `MultiSeries` is not support for funnel chart.
 
 ## Changing cursor while selection
 
-[Cursor]() property allows you to define the cursor when mouse is hovered over the segment with segment selection enabled.
+[Cursor]() property allows to define the cursor when mouse is hovered over the segment with segment selection enabled.
 
 The following code snippet demonstrates hand cursor in segment selection.
 
@@ -145,7 +145,7 @@ this.Content = chart;
 
 ## Events
 
-The following events are available in SfFunnelChart for funnel chart.
+The following selection events are available in `SfFunnelChart`.
 
 ### SelectionChanging
 
