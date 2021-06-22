@@ -165,17 +165,14 @@ chart.Header = "Calories in food";
 
 ## Enable data labels
 
-The [DataLabelSettings]() property of [PyramidChart]() can be used to enable data labels to improve the readability of the pyramid chart. By default, the label visibility is set to `False`.
+The [ShowDataLabels]() property of [PyramidChart]() can be used to enable data labels to improve the readability of the pyramid chart. By default, The default value of [ShowDataLabels]() property is `false`.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart>
-. . .
-    <chart:SfPyramidChart.DataLabelSettings>
-        <chart:PyramidDataLabelSettings Visible="True" />
-    </chart:SfPyramidChart.DataLabelSettings>
+<chart:SfPyramidChart ShowDataLabels="True">
+    . . . 
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -183,10 +180,8 @@ The [DataLabelSettings]() property of [PyramidChart]() can be used to enable dat
 {% highlight C# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-
 . . .
-
-chart.DataLabelSettings = new PyramidDataLabelSettings() { Visible = true };
+chart.ShowDataLabels = true;
 
 {% endhighlight %}
 

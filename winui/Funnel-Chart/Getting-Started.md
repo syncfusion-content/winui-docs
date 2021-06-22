@@ -163,17 +163,14 @@ chart.Header = "PRODUCT SALES";
 
 ## Enable data labels
 
-The [DataLabelSettings]() property of [FunnelChart]() can be used to enable data labels to improve the readability of the Funnel chart. By default, the label visibility is set to `False`.
+The [ShowDataLabels]() property of [SfFunnelChart]() can be used to enable data labels to improve the readability of the funnel chart. By default, The default value of [ShowDataLabels]() property is `false`.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart>
-. . .
-    <chart:SfFunnelChart.DataLabelSettings>
-        <chart:FunnelDataLabelSettings Visible="True" />
-    </chart:SfFunnelChart.DataLabelSettings>
+<chart:SfFunnelChart ShowDataLabels="True">
+. . . 
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -184,7 +181,7 @@ SfFunnelChart chart = new SfFunnelChart();
 
 . . .
 
-chart.DataLabelSettings = new FunnelDataLabelSettings() { Visible = true };
+chart.ShowDataLabels = true;
 
 {% endhighlight %}
 
