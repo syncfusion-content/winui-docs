@@ -9,7 +9,7 @@ documentation: ug
 
 # Header in WinUI Circular Charts (SfCircularChart)
 
-`Header` property of `SfCircularChart` is used to define and customize the chart title. It supports any object (.Net object) as content for chart header.
+`Header` property of `SfCircularChart` is used to define and customize the chart title. It accepts any object (.Net object) as content for the chart header.
 
 {% tabs %}
 
@@ -54,11 +54,9 @@ chart.Header = border;
 
 ![Title customization support in WinUI Circular Chart](Header_Images/WinUI_Circular_chart_Header.png)
 
-## Title Alignment
+## Title alignment
 
 The title text content can be aligned horizontally to the left, center or right of the chart using the [HorizontalHeaderAlignment]() property of the `SfCircularChart`.
-
-Also you can add more customization for the header as below: 
 
 {% tabs %}
 
@@ -109,4 +107,5 @@ chart.Header = border;
 
 {% endtabs %}
 
-![Customizing Header of WinUI Circular Chart](Header_Images/WinUI_Circular_chart_Header_customization.png)
+![Title alignment in WinUI Circular Chart](Header_Images/WinUI_Circular_chart_Header_customization.png)
+
