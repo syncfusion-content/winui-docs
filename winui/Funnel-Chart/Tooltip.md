@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip in WinUI Funnel Chart (SfFunnelChart)
 
-Tooltip is used to display any information over segments. It appears at the data point position when the mouse hovers over any chart segment. It is set to display the metadata of the selected segment or data point.
+Tooltip is used to display any information over segments. It appears at the data point position when the mouse hovers over any chart segment. It is set to display the metadata of the hovered segment or data point.
 
 ## Define tooltip
 
@@ -204,8 +204,6 @@ chart.Behaviors.Add(tooltipBehavior);
 {% endtabs %}
 
 ![Tooltip horizontal alignment support in WinUI Funnel Chart](Tooltip_images/WinUI_funnel_chart_tooltip_horizontal_alignment.png)
-
-N> By default the horizontal alignment is center for the tooltip.
 
 **VerticalAlignment**
 
