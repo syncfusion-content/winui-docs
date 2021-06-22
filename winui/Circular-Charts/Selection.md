@@ -118,7 +118,7 @@ chart.Behaviors.Add(selection);
 
 ## Events
 
-The following events are available in SfCirculartChart.
+The following events are available in `SfCircularChart`.
 
 ### SelectionChanging
 
