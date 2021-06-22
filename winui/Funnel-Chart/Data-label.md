@@ -9,31 +9,77 @@ documentation: ug
 
 # Data label in WinUI Funnel Chart (SfFunnelChart)
 
-Data points can be easily annotated with data labels to help improve the readability of data in the funnel chart. 
+To improve the readability of data in the funnel chart, data points can be easily annotated with data labels.
 
 ## Define data label 
 
-The [`Visible`]() property of [`FunnelDataLabelSettings`]() is used to enable the data label and the [`Context`]() property specifies which value should be displayed in the data label.
-
-The following code example demonstrates how define data label and its value.
+To define the data label in the chart, set the [ShowDataLabels]() property to true. The default value of [ShowDataLabels]() property is false.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart.DataLabelSettings>
-    <chart:FunnelDataLabelSettings Visible="True" Context="YValue" />
-</chart:SfFunnelChart.DataLabelSettings>
+<chart:SfFunnelChart x:Name="chart" 
+                ShowDataLabels="True"
+                Palette="BlueChrome" 
+                ItemsSource="{Binding Data}" 
+                XBindingPath="Category"
+                YBindingPath="Value">
+. . .
+ </chart:SfFunnelChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfFunnelChart chart = new SfFunnelChart();
+chart.ShowDataLabels = true;
+chart.Palette = ChartColorPalette.BlueChrome;
+chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+chart.XBindingPath = "Category";
+chart.YBindingPath = "Value";
+. . . 
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Data label support in WinUI Funnel chart](Data-label_images/WinUI_funnel_chart_data_label.png)
+
+## Data label context
+
+To customize the content of data labels, need to define [DataLabelSettings]() of chart and set [Context]() property of [FunnelDataLabelSettings]() to change the data label content value.
+
+The following code example demonstrates about how to set percentage value as data label content.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfFunnelChart x:Name="chart" 
+                ShowDataLabels="True"
+                Palette="BlueChrome" 
+                ItemsSource="{Binding Data}" 
+                XBindingPath="Category"
+                YBindingPath="Value">
+. . .
+    <chart:SfFunnelChart.DataLabelSettings>
+        <chart:FunnelDataLabelSettings Context="YValue" />
+    </chart:SfFunnelChart.DataLabelSettings>
+. . .
+ </chart:SfFunnelChart>
+
 
 {% endhighlight %}
 
 {% highlight c# %}
         
 SfFunnelChart chart = new SfFunnelChart();
+chart.ShowDataLabels = true;
 . . . 
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 { 
-    Visible = true, 
     Context = LabelContext.YValue 
 };
 
@@ -45,7 +91,7 @@ this.Content = chart;
 
 | Context values | Description | Output |
 |---|--|---|
-| DateTime | Displays LabelContent.DateTime value | ![ DateTime in DataLabel](Data-label_images/WinUI_funnel_chart_labelcontent_datetime.png) |
+| DateTime | Displays the DateTime value | ![ DateTime in DataLabel](Data-label_images/WinUI_funnel_chart_labelcontent_datetime.png) |
 |DataLabelItem | Displays the y value|![ LabelContentPath in DataLabel](Data-label_images/WinUI_funnel_chart_labelcontent_datalabelitem.png)|
 | Percentage | Displays the percentage value of series point among other points |![ Percentage in DataLabel](Data-label_images/WinUI_funnel_chart_labelcontent_percentage.png) |
 | XValue | Displays the X value of series point|![ XValue in DataLabel](Data-label_images/WinUI_funnel_chart_labelcontent_xvalue.png) |
@@ -53,7 +99,7 @@ this.Content = chart;
 
 ## Data label customization
 
-The following properties are used to customize the data label.
+The following properties are used to customize the data label:
 
 * [`BorderBrush`]()- used to change the border color.
 * [`BorderThickness`]()- used to change the thickness of the border.
@@ -70,18 +116,28 @@ The following code example demonstrates the customization of data label using th
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart.DataLabelSettings>
-    <chart:FunnelDataLabelSettings Visible="True" Foreground="White" FontSize="16" FontFamily="Calibri" BorderBrush="White" BorderThickness="1" Margin="1" FontStyle="Italic" Background="#1E88E5" />
-</chart:SfFunnelChart.DataLabelSettings>
+<chart:SfFunnelChart x:Name="chart" 
+                ShowDataLabels="True"
+                Palette="BlueChrome" 
+                ItemsSource="{Binding Data}" 
+                XBindingPath="Category"
+                YBindingPath="Value">
+. . .
+    <chart:SfFunnelChart.DataLabelSettings>
+        <chart:FunnelDataLabelSettings Foreground="White" FontSize="16" FontFamily="Calibri" BorderBrush="White" BorderThickness="1" Margin="1" FontStyle="Italic" Background="#1E88E5" />
+    </chart:SfFunnelChart.DataLabelSettings>
+. . .
+</chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
+chart.ShowDataLabels = true;
+. . .
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 { 
-    Visible = true, 
     Foreground = new SolidColorBrush(Colors.White),
     BorderBrush = new SolidColorBrush(Colors.White),
     Background = "#1E88E5",
@@ -102,7 +158,7 @@ this.Content = chart;
 
 ## Data label template
 
-The appearance of the data label can be customized by using [`ContentTemplate`]() property of [`FunnelDataLabelSettings`]() as follows.
+The appearance of the data label can be customized by using the [ContentTemplate]() property of [`FunnelDataLabelSettings`]() as follows.
 
 {% tabs %}
 
@@ -127,13 +183,14 @@ The appearance of the data label can be customized by using [`ContentTemplate`](
 </Page.Resources>
 <Grid>
    <chart:SfFunnelChart x:Name="chart" 
+                ShowDataLabels="True"
                 Palette="BlueChrome" 
                 ItemsSource="{Binding Data}" 
                 XBindingPath="Category"
                 YBindingPath="Value">
 
         <chart:SfFunnelChart.DataLabelSettings>
-            <chart:FunnelDataLabelSettings Visible="True" ContentTemplate="{StaticResource dataLabelTemplate}" />
+            <chart:FunnelDataLabelSettings ContentTemplate="{StaticResource dataLabelTemplate}" />
         </chart:SfFunnelChart.DataLabelSettings>
 
     </chart:SfFunnelChart>
@@ -144,10 +201,10 @@ The appearance of the data label can be customized by using [`ContentTemplate`](
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
+chart.ShowDataLabels = true;
 . . . 
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 { 
-    Visible = true, 
     ContentTemplate = this.Resources["dataLabelTemplate"] as DataTemplate
 };
 
@@ -161,20 +218,21 @@ this.Content = chart;
 
 ## Label format
 
-The [Format]() property can be used to format the data labels. The following code example demonstrates the how to format data labels with three decimal digits.
+The [Format]() property can be used to format the data labels. The following code example demonstrates how to format data labels with three decimal digits.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfFunnelChart x:Name="chart" 
+                ShowDataLabels="True"
                 Palette="BlueChrome" 
                 ItemsSource="{Binding Data}" 
                 XBindingPath="Category"
                 YBindingPath="Value">
 
     <chart:SfFunnelChart.DataLabelSettings>
-        <chart:FunnelDataLabelSettings Visible="True" Format="#.000" Foreground="White" />
+        <chart:FunnelDataLabelSettings Format="#.000" Foreground="White" />
     </chart:SfFunnelChart.DataLabelSettings>
 
 </chart:SfFunnelChart>
@@ -184,10 +242,10 @@ The [Format]() property can be used to format the data labels. The following cod
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
+chart.ShowDataLabels = true;
 . . . 
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
-{ 
-    Visible = true, 
+{  
     Format = "#.000",
     Foreground = new SolidColorBrush(Colors.White)
 };
@@ -209,13 +267,14 @@ The [`Rotation`]() property is used to rotate the data labels based on the value
 {% highlight xaml %}
 
 <chart:SfFunnelChart x:Name="chart" 
+                ShowDataLabels="True"
                 Palette="BlueChrome" 
                 ItemsSource="{Binding Data}" 
                 XBindingPath="Category"
                 YBindingPath="Value">
 
     <chart:SfFunnelChart.DataLabelSettings>
-        <chart:FunnelDataLabelSettings Visible="True" Rotation="45" BorderBrush="White" BorderThickness="1" Background="#1E88E5"/>
+        <chart:FunnelDataLabelSettings Rotation="45" BorderBrush="White" BorderThickness="1" Background="#1E88E5"/>
     </chart:SfFunnelChart.DataLabelSettings>
 
 </chart:SfFunnelChart>
@@ -225,10 +284,10 @@ The [`Rotation`]() property is used to rotate the data labels based on the value
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
+chart.ShowDataLabels = true;
 . . . 
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 { 
-    Visible = true, 
     Rotation = 45,
     BorderBrush = new SolidColorBrush(Colors.White),
     Background = "#1E88E5",

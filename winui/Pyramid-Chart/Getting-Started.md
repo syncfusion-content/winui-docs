@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started with WinUI Pyramid Chart
 
-This section explains you the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to learn to get started with the Pyramid Chart.
+This section explains how to populate the pyramid chart with data, a header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
 ## Creating an application with WinUI Pyramid Chart
 
@@ -165,17 +165,14 @@ chart.Header = "Calories in food";
 
 ## Enable data labels
 
-The [DataLabelSettings]() property of [PyramidChart]() can be used to enable data labels to improve the readability of the pyramid chart. By default, the label visibility is set to `False`.
+The [ShowDataLabels]() property of [PyramidChart]() is used to enable data labels to improve the readability of the pyramid chart. The label visibility is set to `False` by default.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart>
-. . .
-    <chart:SfPyramidChart.DataLabelSettings>
-        <chart:PyramidDataLabelSettings Visible="True" />
-    </chart:SfPyramidChart.DataLabelSettings>
+<chart:SfPyramidChart ShowDataLabels="True">
+    . . . 
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -183,10 +180,8 @@ The [DataLabelSettings]() property of [PyramidChart]() can be used to enable dat
 {% highlight C# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-
 . . .
-
-chart.DataLabelSettings = new PyramidDataLabelSettings() { Visible = true };
+chart.ShowDataLabels = true;
 
 {% endhighlight %}
 
@@ -254,6 +249,7 @@ The following code example gives you the complete code of above configurations.
 <chart:SfPyramidChart x:Name="chart" 
                     Header="The Food Comparison Pyramid"
                     ShowTooltip="True"
+                    ShowDataLabels="True"
                     Palette="BlueChrome"
                     ItemsSource="{Binding Data}" 
                     XBindingPath="FoodName"
@@ -266,10 +262,6 @@ The following code example gives you the complete code of above configurations.
     <chart:SfPyramidChart.Legend>
         <chart:ChartLegend />
     </chart:SfPyramidChart.Legend>
-
-    <chart:SfPyramidChart.DataLabelSettings>
-        <chart:PyramidDataLabelSettings Visible="True" />
-    </chart:SfPyramidChart.DataLabelSettings>
 
 </chart:SfPyramidChart>
  
@@ -294,7 +286,7 @@ public sealed partial class MainWindow : Window
         chart.Header = "The Food Comparison Pyramid";
         chart.Legend = new ChartLegend();
         chart.ShowTooltip = true;
-        chart.DataLabelSettings = new PyramidDataLabelSettings() { Visible = true };
+        chart.ShowDataLabels = true;
 
         this.Content = chart;
     }

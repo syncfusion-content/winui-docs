@@ -7,9 +7,11 @@ control: SfFunnelChart
 documentation: ug
 ---
 
-# Getting started with WinUI Chart
+# Getting started with WinUI Funnel Chart
 
-## Creating an application with WinUI Chart
+This section explains how to populate the funnel chart with data, a header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
+
+## Creating an application with WinUI Funnel Chart
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
@@ -135,7 +137,7 @@ chart.DataContext = viewModel;
 
 ## Add title
 
-The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set the title using the [Header]() property of the funnel chart as follows.
+The title of the chart provide quick information to the user about the data being plotted in the chart. You can set the title using the [Header]() property of the funnel chart as follows.
 
 {% tabs %} 
 
@@ -163,17 +165,14 @@ chart.Header = "PRODUCT SALES";
 
 ## Enable data labels
 
-The [DataLabelSettings]() property of [FunnelChart]() can be used to enable data labels to improve the readability of the Funnel chart. By default, the label visibility is set to `False`.
+The [ShowDataLabels]() property of [SfFunnelChart]() can be used to enable data labels to improve the readability of the funnel chart. The label visibility is set to `False` by default.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart>
-. . .
-    <chart:SfFunnelChart.DataLabelSettings>
-        <chart:FunnelDataLabelSettings Visible="True" />
-    </chart:SfFunnelChart.DataLabelSettings>
+<chart:SfFunnelChart ShowDataLabels="True">
+. . . 
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -184,7 +183,7 @@ SfFunnelChart chart = new SfFunnelChart();
 
 . . .
 
-chart.DataLabelSettings = new FunnelDataLabelSettings() { Visible = true };
+chart.ShowDataLabels = true;
 
 {% endhighlight %}
 
@@ -251,6 +250,7 @@ The following code example gives you the complete code of above configurations.
 
 <chart:SfFunnelChart x:Name="chart" Header="PRODUCT SALES" 
                              ShowTooltip="True"
+                             ShowDataLabels="True"
                              Palette="BlueChrome"
                              Height="388" Width="500" 
                              ItemsSource="{Binding Data}" 
@@ -264,10 +264,6 @@ The following code example gives you the complete code of above configurations.
         <chart:SfFunnelChart.Legend>
             <chart:ChartLegend />
         </chart:SfFunnelChart.Legend>
-
-        <chart:SfFunnelChart.DataLabelSettings>
-            <chart:FunnelDataLabelSettings Visible="True" />
-        </chart:SfFunnelChart.DataLabelSettings>
             
 </chart:SfFunnelChart>
  
@@ -294,7 +290,7 @@ public sealed partial class MainWindow : Window
         chart.Width = 500;
         chart.Legend = new ChartLegend();
         chart.ShowTooltip = true;
-        chart.DataLabelSettings = new FunnelDataLabelSettings() { Visible = true };
+        chart.ShowDataLabels = true;
 
         this.Content = chart;
     }
