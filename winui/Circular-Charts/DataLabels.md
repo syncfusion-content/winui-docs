@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data labels in WinUI Circular Chart control | WinUI | Syncfusion
-description: This section explains about how to configure the Data Labels and its features applying in WinUI Circular Chart (SfCircularChart).
+description: This section explains about how to configure the data labels and its features in WinUI Circular Chart (SfCircularChart).
 platform: WinUI
 control: SfCircularChart
 documentation: ug
@@ -13,8 +13,8 @@ Data labels are used to display values related to a chart segment. Values from d
 
 Each data label can be represented by the following:
 
-* Label - Displays the segment label content at the (X, Y) point.
-* ConnectorLine - Line used to connect the (X, Y) point and the label element.
+* Label - displays the segment label content at the (X, Y) point.
+* Connector line - used to connect the (X, Y) point and the label element.
 
 ## Enable data label 
 
