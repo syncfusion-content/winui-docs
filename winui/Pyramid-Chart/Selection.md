@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in WinUI Pyramid Chart control | Syncfusion
-description: Learn here all about Selection feature of Syncfusion WinUI Pyramid Chart (SfPyramidChart) control with segment selection support and Events.
+description: Learn here all about selection and multi-selection support in Syncfusion WinUI Pyramid Chart (SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Selection in WinUI Pyramid Chart (SfPyramidChart)
 
-Pyramid Chart supports selection that allows you to select a segment in a chart by using [ChartSelectionBehavior](). 
+Pyramid chart supports selection that allows to select a segment in the chart by using [ChartSelectionBehavior](). 
 
-## Define selection behavior
+## Enable selection
 
-YCreate an instance [ChartSelectionBehavior]() and add it to the Behaviors collection of pyramid chart. And Need to set the [SelectionBrush]() property in pyramid chart.
+To enable the selection in chart, create an instance of [ChartSelectionBehavior]() and add it to the `Behaviors` collection of pyramid chart. And also need to set the [SelectionBrush]() property to highlight the segment in the pyramid chart.
 
 {% tabs %}
 
@@ -55,7 +55,7 @@ this.Content = chart;
 
 ## Multi selection
 
-Pyramid chart allows you to select multiple segment using [Type]() property set as `MultiPoint` of [ChartSelectionBehavior](). 
+Pyramid chart provides support to select multiple segments by using [Type]() property as `MultiPoint`. 
 
 The following code snippet demonstrates multiple segment selection.
 
@@ -97,11 +97,11 @@ this.Content = chart;
 
 ![Multi selection support in WinUI Pyramid Chart](Selection_images/WinUI_pyramid_chart_multi_selection.png)
 
-N>By default the [Type]() is `Point`. `Series` and `MultiSeries` is not support for pyramid chart behavior.
+N> By default, the value of [Type]() is `Point`. `Series` and `MultiSeries` is not support for funnel chart.
 
-## Changing Cursor while Selection
+## Changing cursor while selection
 
-[Cursor]() property allows you to define the cursor when mouse is hovered over the segment with segment selection enabled.
+[Cursor]() property allows to define the cursor when mouse is hovered over the segment with segment selection enabled.
 
 The following code snippet demonstrates hand cursor in segment selection.
 
@@ -145,7 +145,7 @@ this.Content = chart;
 
 ## Events
 
-The following events are available in SfPyramidChart for pyramid chart.
+The following selection events are available in `SfPyramidChart`.
 
 ### SelectionChanging
 
