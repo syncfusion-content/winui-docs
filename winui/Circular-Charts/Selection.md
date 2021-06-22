@@ -9,40 +9,11 @@ documentation: ug
 
 # Selection in WinUI Circular Chart
 
-SfChart supports selection that allows you to select a segment in a series or series itself by using [ChartSelectionBehavior](). 
+Circular chart supports selection that allows to select a segment in a series or series itself by using [ChartSelectionBehavior](). 
 
-### Adding Selection Behavior to SfChart
+### Enable selection
 
-You can create an instance [ChartSelectionBehavior]() and add it to the Behaviors collection of Circular Chart.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<chart:SfCircularChart >
-    <chart:SfCircularChart.Behaviors>
-        <chart:ChartSelectionBehavior/>
-    </chart:SfCircularChart.Behaviors>
-</chart:SfCircularChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCircularChart chart = new SfCircularChart();
-. . .
-ChartSelectionBehavior selection = new ChartSelectionBehavior();
-chart.Behaviors.Add(selection);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-## SegmentSelection
-
-Segment Selection allows to highlight a segment in a series. By default behavior enables the segment selection it will changed using selection [Type](). For highlighting a segment the brush color can be set using [SelectionBrush]() property of series.
-
-**Segment Selection in ColumnSeries**
+To enable the selection in chart, create an instance of [ChartSelectionBehavior]() and add it to the `Behaviors` collection of circular chart. And also need to set the [SelectionBrush]() property to highlight the segment in the series.
 
 {% tabs %}
 
@@ -50,7 +21,7 @@ Segment Selection allows to highlight a segment in a series. By default behavior
 
 <chart:SfCircularChart>
     <chart:SfCircularChart.Behaviors>
-        <chart:ChartSelectionBehavior Type="Point"/>
+        <chart:ChartSelectionBehavior />
     </chart:SfCircularChart.Behaviors>
 <chart:SfCircularChart.Series>
     <chart:PieSeries SelectionBrush="BlueViolet"/>
@@ -64,7 +35,6 @@ Segment Selection allows to highlight a segment in a series. By default behavior
 SfCircularChart chart = new SfCircularChart();
 
 ChartSelectionBehavior selection = new ChartSelectionBehavior();
-selection.Type = SelectionType.Point;
 chart.Behaviors.Add(selection);
 
 PieSeries series = new PieSeries();
@@ -79,7 +49,7 @@ chart.Series.Add(series);
 
 ## Series Selection
 
-Series selection is used in case of multiple series when you want to highlight a particular series. Series selection can be enabled by setting selection type as [Series](). The [SeriesSelectionBrush]() property is used to set the brush color to highlight the series.
+Series selection is used to highlight a particular series while using multiple series. Series selection is enable by setting [Type]() property value as [Series]() in [ChartSelectionBehavior](). The [SeriesSelectionBrush]() property is used to set the brush color to highlight the series.
 
 The following code example demonstrates highlighting a series.
 
@@ -118,9 +88,9 @@ chart.Series.Add(series1);
 
 ![Series selection support in WinUI Circular Chart](Selection_Images/WinUI_Circular_chart_Series_selection.png)
 
-## Customizing the Selection
+## Multi selection
 
-Circular charts allows to select single or multiple segment\series using [Type]() property. By default the SelectionType is [Point]().
+Circular chart allows to select single or multiple segment\series using [Type]() property. By default the [Type]() value is [Point]().
 
 The following code snippet demonstrates multiple segment selection.
 
@@ -144,11 +114,11 @@ chart.Behaviors.Add(selection);
 
 {% endtabs %}
 
-![Multiple Selection type support in WinUI Circular Chart](Selection_Images/WinUI_Circular_chart_Multiple_segment_selection.png)
+![Multi selection support in WinUI Circular Chart](Selection_Images/WinUI_Circular_chart_Multiple_segment_selection.png)
 
 ## Events
 
-The following events are available in SfChart for ChartSelectionBehavior.
+The following events are available in SfCirculartChart.
 
 ### SelectionChanging
 
@@ -180,3 +150,4 @@ The [SelectionChanged]() event occurs after a data point has been selected. This
 * [IsSelected]() - Gets a value that indicates whether the segment or series is being selected.
 * [IsDataPointSelection]() - Gets a value that indicates whether the selection is segment selection or series selection.
 * [SelectedSeriesCollection]() - Gets the series collection that has been selected through rectangle selection or mouse interaction.
+
