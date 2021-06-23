@@ -7,8 +7,6 @@ control: SfPolarChart
 documentation: ug
 ---
 
-# NumericalAxis
-
 ## NumericalAxis in WinUI Polar Chart (SfPolarChart) 
 
 [`NumericalAxis`]() is used to plot numerical values to the chart. [`NumericalAxis`]() can be defined for both [`PrimaryAxis`]() and [`SecondaryAxis`](). The following code snippet shows how to define the [`NumericalAxis`]().
@@ -42,7 +40,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 {% endtabs %}
 
-![NumericalAxis support in WinUI Chart](Axis_images/Axis_img42.jpeg)
+![NumericalAxis support in WinUI Polar Chart](Axis_images/Axis_img42.jpeg)
 
 
 **Customizing** **the** **NumericalAxis** **Range**
@@ -74,7 +72,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis customization support in WinUI Chart](Axis_images/Axis_img43.jpeg)
+![NumericalAxis customization support in WinUI Polar Chart](Axis_images/Axis_img43.jpeg)
 
 
 N> If  minimum or maximum value is set, the other value is calculated by default internally.
@@ -107,7 +105,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis customization support in WinUI Chart](Axis_images/Axis_img44.jpeg)
+![NumericalAxis customization support in WinUI Polar Chart](Axis_images/Axis_img44.jpeg)
 
 
 N> By default, Range is calculated between the minimum and maximum value of the data points.
