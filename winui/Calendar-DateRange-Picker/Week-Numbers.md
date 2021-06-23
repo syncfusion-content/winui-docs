@@ -7,7 +7,7 @@ control: SfCalendarDateRangePicker
 documentation: ug
 ---
 
-# Week number of the WinUI Calendar DateRange Picker (SfCalendarDateRangePicker)
+# Week number of the WinUI Calendar DateRange Picker
 
 This section describes about the week number in [Calendar DateRange Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html) control.
 
@@ -123,7 +123,6 @@ You can show week number in `Calendar DateRange Picker` control by setting the v
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker change week number template](Calendar-UI-Customization_images/winui-calendar-daterange-picker-weeknumbertemplate.png)
 
 ## Customize the week day name appearance
 
