@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started with WinUI Cartesian Chart
 
-This section explains how to populate the cartesian chart with data, a header, data labels, a legend and tooltips, as well as the essential aspects for getting started with the chart.
+This section explains how to populate the Cartesian chart with data, a header, data labels, a legend and tooltips, as well as the essential aspects for getting started with the chart.
 
 ## Creating an application with WinUI Cartesian Chart
 
@@ -173,7 +173,7 @@ chart.SecondaryAxis = secondaryAxis;
 
 Run the project and check if you get following output to make sure you have configured your project properly to add chart.
 
-![Initializing axis for WinUI Cartesian Chart](Getting-Started_Images/WinUI_pyramid_chart_initializied.png)
+![Initializing axis for WinUI Cartesian Chart](Getting-Started_Images/WinUI_cartesian_chart_initializied.png)
 
 ## Populate chart with data
 
@@ -371,7 +371,7 @@ The following code example gives you the complete code of above configurations.
 {% tabs %} 
 
 {% highlight xaml %}
-<Page
+<Window
     x:Class="SfChart_GettingStarted.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -380,9 +380,9 @@ The following code example gives you the complete code of above configurations.
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" Height="350" Width="525"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Page.DataContext>
+    <Window.DataContext>
         <local:ViewModel></local:ViewModel>
-    </Page.DataContext>
+    </Window.DataContext>
 
     <Grid>
         <chart:SfCartesianChart Header="Chart">
@@ -409,7 +409,7 @@ The following code example gives you the complete code of above configurations.
             </chart:ColumnSeries>
         </chart:SfCartesianChart>
     </Grid>
-</Page>
+</Window>
  
 {% endhighlight %}
 
@@ -419,7 +419,7 @@ using Syncfusion.UI.Xaml.Charts;
 
 namespace SfChart_GettingStarted
 {
-    public sealed partial class MainPage : Page
+    public sealed partial class MainPage : Window
     {
         public MainPage()
         {
@@ -427,19 +427,19 @@ namespace SfChart_GettingStarted
             
             SfCartesianChart chart = new SfCartesianChart() { Header = "Chart", Height = 300, Width = 500 };
 
-            //Adding horizontal axis to the chart 
+            //Adding horizontal axis to the Cartesian chart 
             CategoryAxis primaryAxis = new CategoryAxis();
             primaryAxis.Header = "Name";
             primaryAxis.FontSize = 14;
             chart.PrimaryAxis = primaryAxis;
 
-            //Adding vertical axis to the chart 
+            //Adding vertical axis to the Cartesian chart 
             NumericalAxis secondaryAxis = new NumericalAxis();
             secondaryAxis.Header = "Height(in cm)";
             secondaryAxis.FontSize = 14;
             chart.SecondaryAxis = secondaryAxis;
 
-            //Adding Legends for the chart
+            //Adding Legends for the Cartesian chart
             ChartLegend legend = new ChartLegend();
             chart.Legend = legend;
 
@@ -452,7 +452,7 @@ namespace SfChart_GettingStarted
             series.Label = "Heights"; 
             series.ShowDataLabels = true;
 
-            //Adding Series to the Chart Series Collection
+            //Adding Series to the Cartesian chart Series Collection
             chart.Series.Add(series);
             this.Content = chart;
         }
@@ -462,6 +462,8 @@ namespace SfChart_GettingStarted
 {% endhighlight %}
 
 {% endtabs %}
+
+![Getting started for WinUI Cartesian Chart](Getting-Started_Images/WinUI_cartesian_chart.png)
 
 The following chart is created as a result of the previous codes.
 
