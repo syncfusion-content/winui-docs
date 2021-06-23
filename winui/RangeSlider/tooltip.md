@@ -97,36 +97,6 @@ this.Content = sfRangeSlider;
 
 ![Range slider with tooltip format customization](images/tooltip/slider-tooltipformat.png)
 
-## Tooltip Placement
-
-The [`ToolTipPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ToolTipPlacement) property is used to place the tooltip either before or after the track. The default value of the [`ToolTipPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ToolTipPlacement) property is [`Placement.Before`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.Placement.html#Syncfusion_UI_Xaml_Sliders_Placement_Before).
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<slider:SfRangeSlider RangeStart="30"
-                      RangeEnd="70"
-                      ShowToolTip="True"
-                      ToolTipPlacement="After" />
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfRangeSlider sfRangeSlider = new SfRangeSlider();
-sfRangeSlider.RangeStart = 30;
-sfRangeSlider.RangeEnd = 70;
-sfRangeSlider.ShowToolTip = true;
-sfRangeSlider.ToolTipPlacement = Placement.After;
-this.Content = sfRangeSlider;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Range slider with tooltip placement customization](images/tooltip/slider-tooltipplacement.png)
-
 ## Tooltip Style
 
 The [`ToolTipStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ToolTipStyle) property allows you to define the style for the range slider tooltip as shown in the following code example. The default value of [`ToolTipStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ToolTipStyle) property is null.
