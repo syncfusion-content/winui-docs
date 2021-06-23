@@ -62,7 +62,7 @@ this.Content = chart;
 
 The title text content can be aligned horizontally to the left, center or right of the chart using the [HorizontalHeaderAlignment]() property of the `SfPolarChart`.
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 
