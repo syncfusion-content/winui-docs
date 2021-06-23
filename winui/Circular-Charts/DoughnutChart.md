@@ -46,7 +46,7 @@ chart.Series.Add(series);
 
 ### Doughnut coefficient
 
-The [DoughnutCoefficient]() proeprty of doughnut series is used to define the inner circle. It also has [DoughnutSize]() property, which is used to define the size for this series, similar to [CircularCoefficient]() in `PieSeries`.
+The [DoughnutCoefficient]() property of doughnut series is used to define the inner circle. It also has [DoughnutSize]() property, which is used to define the size for this series, similar to [CircularCoefficient]() in `PieSeries`.
 
 {% tabs %}
 
