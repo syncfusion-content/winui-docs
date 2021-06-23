@@ -1,21 +1,22 @@
 ---
 layout: post
-title: Getting Started with WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Cartesian Chart(SfCartesianChart) control its elements, and more.
+title: Getting started with WinUI Cartesian Chart control | Syncfusion
+description: This section explains about getting started with Syncfusion WinUI Cartesian Chart (SfCartesianChart) control
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Getting Started with WinUI Cartesian Chart
+# Getting started with WinUI Cartesian Chart
 
-This section explains you the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to learn to get started with the Chart.
+This section explains how to populate the cartesian chart with data, a header, data labels, a legend and tooltips, as well as the essential aspects for getting started with the chart.
 
 ## Creating an application with WinUI Cartesian Chart
+
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
-2.	Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
-3.	Import the control namespace `Syncfusion.UI.Xaml.Charts`  in XAML or C# to initialize the control.
-4.	Initialize SfChart control.
+2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
+3. To initialize the control, import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C#.
+4. Initialize `SfCartesianChart` control.
 
 {% tabs %} 
 
@@ -33,7 +34,7 @@ This section explains you the steps required to populate the Chart with data, he
  
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.UI.Xaml.Charts;
 
@@ -55,45 +56,6 @@ namespace SfChart_GettingStarted
 
 {% endtabs %}
 
-## Initialize chart axis
-`Cartesian Chart` supports default axes, so that these axes ([PrimaryAxis]() and [SecondaryAxis]()) will get generated automatically based upon the data bind to the chart.
-
-Axes will be explicitly specified for it's customization purpose. The initialization of an empty chart with two axes as shown below,
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-<chart:SfCartesianChart>
-
-    <chart:SfCartesianChart.PrimaryAxis>
-        <chart:CategoryAxis/>
-    </chart:SfCartesianChart.PrimaryAxis>
-
-    <chart:SfCartesianChart.SecondaryAxis>
-        <chart:NumericalAxis/>
-    </chart:SfCartesianChart.SecondaryAxis>
-    
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-SfCartesianChart chart = new SfCartesianChart();
-CategoryAxis primaryAxis = new CategoryAxis();
-chart.PrimaryAxis = primaryAxis;
-NumericalAxis secondaryAxis = new NumericalAxis();
-chart.SecondaryAxis = secondaryAxis;
-
-{% endhighlight %}
-
-{% endtabs %} 
-
-Run the project and check if you get following output to make sure you have configured your project properly to add chart.
-
-![Initializing WinUI Cartesian Chart](Getting-Started_Images/WinUI_pyramid_chart_initializied.png)
-
 ## Initialize view model
 
 Now, let us define a simple data model that represents a data point in chart.
@@ -112,7 +74,6 @@ public class Person
 {% endhighlight %} 
 
 {% endtabs %} 
-
 
 Next, create a view model class and initialize a list of `Person` objects as follows.
 
@@ -174,7 +135,47 @@ this.DataContext = new ViewModel();
 
 {% endtabs %} 
 
-## Populate Cartesian chart with data
+## Initialize chart axis
+
+`Cartesian Chart` supports default axes, so that these axes ([PrimaryAxis]() and [SecondaryAxis]()) will get generated automatically based upon the data bind to the chart.
+
+Axes will be explicitly specified for it's customization purpose. The initialization of an empty chart with two axes as shown below,
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<chart:SfCartesianChart>
+
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis/>
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.SecondaryAxis>
+    
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+SfCartesianChart chart = new SfCartesianChart();
+CategoryAxis primaryAxis = new CategoryAxis();
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+Run the project and check if you get following output to make sure you have configured your project properly to add chart.
+
+![Initializing axis for WinUI Cartesian Chart](Getting-Started_Images/WinUI_pyramid_chart_initializied.png)
+
+## Populate chart with data
 
 As we are going to visualize the comparison of heights in the data model, add [ColumnSeries]() to [Series]() property of chart, and then bind the `Data` property of the above `ViewModel` to the `ColumnSeries.ItemsSource` as follows.
 
@@ -196,7 +197,6 @@ N> You need to set [XBindingPath]() and [YBindingPath]() properties, so that cha
                         YBindingPath="Height">
     </chart:ColumnSeries>
 </chart:SfCartesianChart>
-
 
 {% endhighlight %}
 
@@ -230,7 +230,7 @@ chart.Series.Add(series);
 
 ## Add title
 
-The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [Header]() property of chart as follows.
+The title of the chart provide quick information to the user about the data being plotted in the chart. The [Header]() property is used to set title for the chart as follows.
 
 {% tabs %} 
 
@@ -243,7 +243,7 @@ The header of the chart acts as the title to provide quick information to the us
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 SfCartesianChart chart = new SfCartesianChart();
 chart.Header = "Chart";
@@ -254,7 +254,7 @@ chart.Header = "Chart";
 
 ## Enable data Labels
 
-You can add data labels to improve the readability of the chart and it can be enabled using [DataLabel]() property of [ChartSeries](). By default, there is no label displayed, you have to set [ShowDataLabels]() property of series to True.
+The [ShowDataLabels]() property of series can be used to enable the data labels to improve the readability of the chart. The label visibility is set to `False` by default.
 
 {% tabs %} 
 
@@ -269,7 +269,7 @@ You can add data labels to improve the readability of the chart and it can be en
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
@@ -283,7 +283,7 @@ chart.Series.Add(series);
 
 ## Enable legend
 
-The legend provides information about the data point displayed in the Cartesian chart. The [Legend]() property of the chart was used to enable it.
+The legend provides information about the data point displayed in the chart. The [Legend]() property of the chart was used to enable it.
 
 {% tabs %} 
 
@@ -299,16 +299,16 @@ The legend provides information about the data point displayed in the Cartesian 
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-chart.Legend = new ChartLegend (); 
+chart.Legend = new ChartLegend (); 
 
 {% endhighlight %}
 
 {% endtabs %}  
 
-Additionally, you need to set label for each series using the [Label]() property of ChartSeries, which will be displayed in corresponding legend.
+N> Additionally, set label for each series using the [Label]() property of chart series, which will be displayed in corresponding legend.
 
 {% tabs %} 
 
@@ -326,7 +326,7 @@ Additionally, you need to set label for each series using the [Label]() property
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 ColumnSeries series = new ColumnSeries (); 
 series.ItemsSource = (new ViewModel()).Data;
@@ -340,7 +340,7 @@ series.Label = "Heights";
 
 ## Enable tooltip
 
-Tooltips are used to show information about the segment, when you click the segment. You can enable tooltip by setting series [ShowTooltip]() property to true.
+Tooltips are used to show information about the segment, when hovers on the segment. Enable tooltip by setting series [ShowTooltip]() property to true.
 
 {% tabs %} 
 
@@ -354,7 +354,7 @@ Tooltips are used to show information about the segment, when you click the segm
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 ColumnSeries series = new ColumnSeries();
 series.ItemsSource = (new ViewModel()).Data;
@@ -413,7 +413,7 @@ The following code example gives you the complete code of above configurations.
  
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.UI.Xaml.Charts;
 
@@ -464,8 +464,6 @@ namespace SfChart_GettingStarted
 {% endtabs %}
 
 The following chart is created as a result of the previous codes.
-
-![Getting Started WinUI Cartesian Chart](Getting-Started_Images/WinUI_pyramid_chart.png)
 
 N> Download demo application from [GitHub]()
 
