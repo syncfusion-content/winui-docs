@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Title in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about title with Syncfusion WinUI Cartesian Chart(SfCartesianChart) control and its customization.
+description: Learn here all about title with Syncfusion WinUI Cartesian Chart (SfCartesianChart) control and its customization.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -36,7 +36,7 @@ this.Content = chart;
 
 ## Title customization
 
-The Cartesian chart provides support to add any `UIElement` as a title. The following code example defines `TextBlock` as chart header.
+The cartesian chart provides support to add any `UIElement` as a title. The following code example defines `TextBlock` as chart header.
 
 {% tabs %}   
 
