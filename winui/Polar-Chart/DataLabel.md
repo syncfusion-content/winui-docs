@@ -20,7 +20,7 @@ Each data label can be represented by the following:
 
 The [ShowDataLabels]() property of a series is used to enable the data labels. The following code example illustrates how to achieve this.
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 
