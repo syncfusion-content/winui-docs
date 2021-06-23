@@ -235,7 +235,6 @@ The following code example shows the customization of connector line:
     ShowConnectorLine="True" ConnectorHeight="40" ConnectorType="StraightLine" ConnectorLineStyle="{StaticResource lineStyle}"/>
 </chart:PieSeries.DataLabelSettings>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
