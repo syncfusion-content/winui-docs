@@ -22,7 +22,7 @@ This section explains how to populate the Cartesian chart with data, a header, d
 
 {% highlight xaml %}
 
-<Page
+<Window
     . . .
     
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts">
@@ -30,7 +30,7 @@ This section explains how to populate the Cartesian chart with data, a header, d
     <Grid>
         <chart:SfCartesianChart/>
     </Grid>
-</Page>
+</Window>
  
 {% endhighlight %}
 
@@ -40,7 +40,7 @@ using Syncfusion.UI.Xaml.Charts;
 
 namespace SfChart_GettingStarted
 {
-    public sealed partial class MainPage : Page
+    public sealed partial class MainPage : Window
     {
         public MainPage()
         {
@@ -109,7 +109,7 @@ N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `Da
 
 {% highlight xaml %} 
 
-<Page
+<Window
     x:Class="SfChart_GettingStarted.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -120,10 +120,10 @@ N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `Da
     mc:Ignorable="d" Height="350" Width="525"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Page.DataContext>
+    <Window.DataContext>
         <model:ViewModel></local:ViewModel>
-    </Page.DataContext>
-</Page>
+    </Window.DataContext>
+</Window>
 
 {% endhighlight %}
 
