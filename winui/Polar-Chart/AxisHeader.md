@@ -19,7 +19,7 @@ The following code example demonstrates the defining header in primary and secon
 
 <chart:SfPolarChart>
     <chart:SfPolarChart.PrimaryAxis>
-        <chart:CategoryAxis Header="Metals"/>
+        <chart:CategoryAxis/>
     </chart:SfPolarChart.PrimaryAxis>
     <chart:SfPolarChart.SecondaryAxis>
         <chart:NumericalAxis  Header="Values(In Tonnes)"/>
@@ -33,12 +33,8 @@ The following code example demonstrates the defining header in primary and secon
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-chart.PrimaryAxis = new CategoryAxis()
-{
-    Header = "Medals"
-};
+chart.PrimaryAxis = new CategoryAxis();
 chart.SecondaryAxis = new NumericalAxis()
-
 {
     Header =  "Values(In Tonnes)" 
 };
@@ -48,7 +44,6 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Header support for chart axis in WinUI polar chart](Axis_image/.PNG)
 
 ## Style for header
 
@@ -59,11 +54,7 @@ chart.SecondaryAxis = new NumericalAxis()
 {% highlight xaml %}
 
 <chart:SfPolarChart.PrimaryAxis>
-    <chart:CategoryAxis  Header="Metals">
-        <chart:CategoryAxis.HeaderStyle>
-            <chart:LabelStyle FontFamily="Algerian" FontSize="13" Foreground="Black"/>
-        </chart:CategoryAxis.HeaderStyle>
-    </chart:CategoryAxis>
+    <chart:CategoryAxis/>
 </chart:SfPolarChart.PrimaryAxis>
 <chart:SfPolarChart.SecondaryAxis>
     <chart:NumericalAxis Header="Values(In Tonnes)">
@@ -87,11 +78,7 @@ LabelStyle style = new LabelStyle()
     Foreground = new SolidColorBrush(Colors.Black)
 };
 
-chart.PrimaryAxis = new CategoryAxis()
-{
-    Header = "Medals",
-    LabelStyle = style
-};
+chart.PrimaryAxis = new CategoryAxis();
 
 chart.SecondaryAxis = new NumericalAxis()
 {
@@ -104,7 +91,6 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Axis header style in WinUI polar chart](Axis_image/.PNG)
 
 ## Customization of header by HeaderTemplate
 
@@ -115,13 +101,6 @@ Default appearance of the axis header can be customized using [`HeaderTemplate`]
 {% highlight xaml %}
 
 <chart:SfPolarChart.Resources>
-    <DataTemplate x:Key="primaryHeaderTemplate">
-        <Border BorderBrush="Black" CornerRadius="5" BorderThickness="1">
-            <TextBlock Text="Demands" FontSize="12"
-                        FontStyle="Italic" FontWeight="Bold" Margin="3"/>
-        </Border>
-    </DataTemplate>
-
     <DataTemplate x:Key="secondaryHeaderTemplate">
         <Border BorderBrush="Black" CornerRadius="5" BorderThickness="1">
             <TextBlock FontSize="12" Margin="3"
@@ -131,8 +110,7 @@ Default appearance of the axis header can be customized using [`HeaderTemplate`]
 </chart:SfPolarChart.Resources>
 
 <chart:SfPolarChart.PrimaryAxis>
-    <chart:CategoryAxis HeaderTemplate="{StaticResource primaryHeaderTemplate}">
-    </chart:CategoryAxis>
+    <chart:CategoryAxis/>
 </chart:SfPolarChart.PrimaryAxis>
 <chart:SfPolarChart.SecondaryAxis>
     <chart:NumericalAxis Header="Values(In Tonnes)" HeaderTemplate="{StaticResource secondaryHeaderTemplate}">
@@ -147,10 +125,7 @@ Default appearance of the axis header can be customized using [`HeaderTemplate`]
 SfPolarChart chart = new SfPolarChart();
 ...
 
-chart.PrimaryAxis = new CategoryAxis()
-{
-    HeaderTemplate = chart.Resources["primaryHeaderTemplate"] as DataTemplate
-};
+chart.PrimaryAxis = new CategoryAxis();
 
 chart.SecondaryAxis = new NumericalAxis()
 {
@@ -162,5 +137,3 @@ chart.SecondaryAxis = new NumericalAxis()
 {% endhighlight %}
 
 {% endtabs %}
-
-![HeaderTemplate support for ChartAxis in WPF](Axis_image/.PNG)
