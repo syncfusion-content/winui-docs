@@ -1,35 +1,38 @@
 ---
 layout: post
-title: Doughnut Series in WinUI Circular Chart control | Syncfusion
-description: Learn here all about doughnut Series support in Syncfusion WinUI Circular Chart(SfCircularChart) control with custom support and more.
+title: Doughnut chart in WinUI Circular Chart control | Syncfusion
+description: Learn here all about doughnut chart and its features in Syncfusion WinUI Circular Chart(SfCircularChart) control.
 platform: WinUI
 control: SfCircularChart
 documentation: ug
 ---
 
-# Doughnut Series in WinUI Circular Chart
+# Doughnut chart in WinUI Circular Chart
 
-[DoughnutSeries]() is similar to PieSeries. It is used to show the relationship between parts of data and whole data. 
+[DoughnutSeries]() is similar to [PieSeries](). It is used to show the relationship between parts of data and whole data. To render a [DoughnutSeries]() in circular chart, create an instance of the [DoughnutSeries]() and add it to the [Series]() collection property of [SfCircularChart]().
 
-The DoughnutSeries can be added to chart as in below code example:
+The following code example demonstrates how to define [DoughnutSeries]().
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:DoughnutSeries XBindingPath="Category" ItemsSource="{Binding Data}" YBindingPath="Value"/>
+<syncfusion:SfCircularChart.Series>
+
+    <syncfusion:DoughnutSeries XBindingPath="Category" ItemsSource="{Binding Data}" YBindingPath="Value"/>
+
+</syncfusion:SfCircularChart.Series>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCircularChart chart = new SfCircularChart();
+
 DoughnutSeries series = new DoughnutSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "Category",
-
     YBindingPath = "Value"
 };
 
@@ -41,27 +44,31 @@ chart.Series.Add(series);
 
 ![Doughnut series type in WinUI Circular chart](Series_images/doughnut_chart.png)
 
-The Doughnut also having coefficient property, [DoughnutCoefficient]() which defines the inner circle. Also it has [DoughnutSize](), used to define the size for this series like [CircularCoefficient]() in PieSeries.
+### Doughnut coefficient
+
+The [DoughnutCoefficient]() proeprty of doughnut series is used to define the inner circle. It also has [DoughnutSize]() property, which is used to define the size for this series, similar to [CircularCoefficient]() in `PieSeries`.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:DoughnutSeries DoughnutCoefficient="0.7" XBindingPath="Category" ItemsSource="{Binding Data}" YBindingPath="Value"/>
+<syncfusion:SfCircularChart.Series>
+
+    <syncfusion:DoughnutSeries DoughnutCoefficient="0.7" XBindingPath="Category" ItemsSource="{Binding Data}" YBindingPath="Value"/>
+
+</syncfusion:SfCircularChart.Series>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCircularChart chart = new SfCircularChart();
+
 DoughnutSeries series = new DoughnutSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "Category",
-
     YBindingPath = "Value",
-
     DoughnutCoefficient = 0.7
 };
 
@@ -71,28 +78,29 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![DoughnutCoefficient support in WinUI Circular Chart](Series_images/doughnut_coefficient.png)
+![Doughnut coefficient support in WinUI Circular Chart](Series_images/doughnut_coefficient.png)
 
-**Size**
+### Doughnut size
 
-The size of doughnut series can be customized by using its [DoughnutSize]() property. The following code illustrates how to use the property in series.
+The size of doughnut series can be customized by using the [DoughnutSize]() property. The following code illustrates how to use this property in series.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:SfChart>
+<syncfusion:SfCircularChart>
 
-<syncfusion:DoughnutSeries DoughnutSize="0.8"/>
+    <syncfusion:DoughnutSeries DoughnutSize="0.8"/>
        
-<syncfusion:DoughnutSeries DoughnutSize="0.8"/>
+    <syncfusion:DoughnutSeries DoughnutSize="0.8"/>
 
-</syncfusion:SfChart>
-
+</syncfusion:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
+
+SfCircularChart chart = new SfCircularChart();
 
 DoughnutSeries doughnut = new DoughnutSeries();
 
@@ -110,62 +118,35 @@ chart.Series.Add(doughnut1);
 
 {% endtabs %}
 
-![DoughnutSize support in WinUI Circular Chart](Series_images/doughnut_size.png)
+![Doughnut size support in WinUI Circular Chart](Series_images/doughnut_size.png)
 
-**Hole Size**
+## Semi doughnut
 
-[DoughnutHoleSize]() is an attachable property. It gets or sets the double value, which is used to customize the doughnut hole size. Its value ranges from 0 to 1, and it can be set as shown in the following code example.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<Chart:SfChart Chart:DoughnutSeries.DoughnutHoleSize="0.2">
-    
-</chart:SfChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfChart chart = new SfChart();
-
-DoughnutSeries.SetDoughnutHoleSize(chart, 0.2);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![DoughnutHoleSize support in WinUI Circular Chart](Series_images/doughnut_holesize.png)
-
-
-## Semi Doughnut
-
-By using custom [StartAngle]() and [EndAngle]() properties,  can draw doughnut series in different shapes such as semicircular or quarter circular series.
+By using the [StartAngle]() and [EndAngle]() properties, you can draw doughnut series in different shapes such as semi-doughnut or quarter doughnut series.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:DoughnutSeries StartAngle="180" EndAngle="360" XBindingPath="Utilization" YBindingPath="ResponseTime" ItemsSource="{Binding Data}"/>
+<syncfusion:SfCircularChart.Series>
+
+    <syncfusion:DoughnutSeries StartAngle="180" EndAngle="360" XBindingPath="Utilization" YBindingPath="ResponseTime" ItemsSource="{Binding Data}"/>
+
+</syncfusion:SfCircularChart.Series>
 
 {% endhighlight %}
 
 {% highlight c# %}
+
+SfCircularChart chart = new SfCircularChart();
 
 DoughnutSeries series = new DoughnutSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "Utilization",
-
     YBindingPath = "ResponseTime",
-
     StartAngle = 180,
-
     EndAngle = 360
-
 };
 
 chart.Series.Add(series);
@@ -180,34 +161,30 @@ chart.Series.Add(series);
 
 Doughnut segments can be separated as individual circles using the [IsStackedDoughnut]() property. The following properties are used to customize the stacked doughnut chart:
 
-* [CapStyle]() - Specifies the shapes of the start and end points of a circular segment. The supported values are [BothFlat](), [BothCurve](), [StartCurve](), and [EndCurve](). The default value of the this property is BothFlat.
-
+* [CapStyle]() - Specifies the shapes of the start and end points of a circular segment. The supported values are [BothFlat](), [BothCurve](), [StartCurve](), and [EndCurve](). The default value of this property is BothFlat.
 * [SegmentSpacing]() - Changes the spacing between two individual segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 represents 100%, and 0 represents 0% of the available space.
-
-* [MaximumValue]() - Represents the entire span of an individual circle. The default value of the this property is double.NaN.
-
+* [MaximumValue]() - Represents the entire span of an individual circle. The default value of this property is double.NaN.
 * [TrackColor]() - Changes the color of the track area.
-
 * [TrackBorderColor]() - Changes the color of the track border.
-
 * [TrackBorderWidth]() - Changes the width of the track border.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfChart>
-    …
-    <chart:DoughnutSeries IsStackedDoughnut="True" CapStyle="BothCurve" SegmentSpacing="0.2" MaximumValue="100" XBindingPath="Category" YBindingPath="Expenditure" ItemsSource="{Binding ExpenditureData}">
-    </chart:DoughnutSeries>
+<syncfusion:SfCircularChart.Series>
 
-</chart:SfChart>
+    <syncfusion:DoughnutSeries IsStackedDoughnut="True" CapStyle="BothCurve" SegmentSpacing="0.2" MaximumValue="100"
+    XBindingPath="Category" YBindingPath="Expenditure" ItemsSource="{Binding ExpenditureData}">
+    </syncfusion:DoughnutSeries>
+    
+<syncfusion:SfCircularChart.Series>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfChart chart = new SfChart();
+SfCircularChart chart = new SfCircularChart();
 
 DoughnutSeries doughnutSeries = new DoughnutSeries()
 {
@@ -226,4 +203,4 @@ chart.Series.Add(doughnutSeries);
 
 {% endtabs %}
 
-![Stacked doughnut Circular chart in WinUI](Series_images/stackeddoughnut_chart.png)
+![Stacked doughnut chart in WinUI](Series_images/stackeddoughnut_chart.png)
