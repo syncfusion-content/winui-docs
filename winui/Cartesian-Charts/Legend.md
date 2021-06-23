@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Legend in WinUI Cartesian Chart control | Syncfusion
-description: This sections explains about how to configure the legend and its features title, icons, labels, and template in WinUI Cartesian Chart(SfCartesianChart) control.
+description: This sections explains about how to configure the legend and its features title, icons, labels, and template in WinUI Cartesian Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -56,7 +56,7 @@ this.Content = chart;
 
 ## Legend title
 
-The Cartesian chart provides support to add any `UIElement` as a title for legend. [Header]() property of `ChartLegend` is used to define the title for the legend as shown in the following code example.
+Cartesian chart provides support to add any `UIElement` as a title for legend. [Header]() property of `ChartLegend` is used to define the title for legend as the following code example.
 
 {% tabs %}
 
@@ -185,9 +185,9 @@ chart.Legend = new ChartLegend()
 
 ![Legend icon in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_legend_customize.png)
 
-### Custom Legend Icon
+### Custom legend icon
 
-We can add custom icon for the legend using [LegendIconTemplate]() property in ChartSeries as in below example.
+Cartesian chart provides support to add custom icon for the legend using [LegendIconTemplate]() property of series as in below example.
 
 {% tabs %}
 
@@ -235,6 +235,64 @@ this.Content = chart;
 
 ![Custom legend icon in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_custom_legend_icon.png)
 
+## Legend icon visibility
+
+The [VisibilityOnLegend]() property of series is used to enable/disable the visibility of legend icon as shown in below example.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart >
+   . . .  
+    <chart:SfCartesianChart.Legend>
+        <chart:ChartLegend />
+    </chart:SfCartesianChart.Legend>
+
+    <chart:SfCartesianChart.Series>
+        <chart:ColumnSeries  ItemsSource="{Binding Data}" Label="Gold" VisibilityOnLegend="Visible"
+        XBindingPath="Year" YBindingPath="India"/>
+
+        <chart:SplineSeries  ItemsSource="{Binding Data}" Label="Silver" VisibilityOnLegend="Collapsed"
+        XBindingPath="Year" YBindingPath="America"/>
+    </chart:SfCartesianChart.Series>
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+ . . .
+chart.Legend = new ChartLegend();
+
+ColumnSeries columnSeries = new ColumnSeries()
+{
+    Label = "Gold",
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "Year",
+    YBindingPath = "India",
+    VisibilityOnLegend = Visibility.Visible
+};
+SplineSeries splineSeries = new SplineSeries()
+{
+    Label = "Silver",
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "Year",
+    YBindingPath = "America",
+    VisibilityOnLegend = Visibility.Collapsed
+};
+
+chart.Series.Add(splineSeries);
+chart.Series.Add(columnSeries);
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Legend icon visibility support in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_series_icon_visibility.png)
+
 ## Legend item spacing
 
 [ItemMargin]() property of the `ChartLegend` is used to provide spacing between each legend items.
@@ -264,7 +322,7 @@ chart.Legend = new ChartLegend()
 
 ## Checkbox for legend
 
-Cartesian chart provides support to enable the checkbox for each legend item to visible or collapse the associated data points. By default, the value of [CheckBoxVisibility]() property is `Collapsed`. 
+Cartesian chart provides support to enable the checkbox for each legend item to visible or collapse the associated series. By default, the value of [CheckBoxVisibility]() property is `Collapsed`. 
 
 {% tabs %}
 
@@ -295,7 +353,7 @@ The series can be collapsed by unchecking the checkbox as below:
 
 ## Toggle series visibility 
 
-By enabling the [ToggleSeriesVisibility]() property, the visibility of the Cartesian segment can be controlled by tapping the legend item. By default, the value of [ToggleSeriesVisibility]() property is `False`.
+The visibility of the series can be control by tapping the legend item by enabling the [ToggleSeriesVisibility]() property. By default, the value of [ToggleSeriesVisibility]() property is `False`.
 
 {% tabs %}
 
@@ -320,7 +378,7 @@ chart.Legend = new ChartLegend()
 
 ![ToggleSeriesVisibility support for legend in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_legend_toggleSeriesVisibility.png)
 
-We can also view the associated `series`, by clicking on its disabled legend item,
+By clicking on disabled legend item, we can view the associated `series`, 
 
 ![ToggleSeriesVisibility support for legend in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_legend_toggleSeriesVisibility1.png)
 
@@ -437,64 +495,6 @@ chart.Legend = new ChartLegend()
 {% endtabs %}
 
 ![Legend orientation support in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_legend_orientation.png)
-
-## Series visibility on legend
-
-We can limit the number of series to be displayed in chart using [VisibilityOnLegend]() property as shown in below example.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart >
-   . . .  
-    <chart:SfCartesianChart.Legend>
-        <chart:ChartLegend />
-    </chart:SfCartesianChart.Legend>
-
-    <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries  ItemsSource="{Binding Data}" Label="Gold" VisibilityOnLegend="Visible"
-        XBindingPath="Year" YBindingPath="India"/>
-
-        <chart:SplineSeries  ItemsSource="{Binding Data}" Label="Silver" VisibilityOnLegend="Collapsed"
-        XBindingPath="Year" YBindingPath="America"/>
-    </chart:SfCartesianChart.Series>
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
- . . .
-chart.Legend = new ChartLegend();
-
-ColumnSeries columnSeries = new ColumnSeries()
-{
-    Label = "Gold",
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "Year",
-    YBindingPath = "India",
-    VisibilityOnLegend = Visibility.Visible
-};
-SplineSeries splineSeries = new SplineSeries()
-{
-    Label = "Silver",
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "Year",
-    YBindingPath = "America",
-    VisibilityOnLegend = Visibility.Collapsed
-};
-
-chart.Series.Add(splineSeries);
-chart.Series.Add(columnSeries);
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Series icon visibility support in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_series_icon_visibility.png)
 
 ## Legend background customization 
 
