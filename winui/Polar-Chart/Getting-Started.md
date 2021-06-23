@@ -72,7 +72,6 @@ public class Model
 
 {% endtabs %} 
 
-
 Next, create a view model class and initialize a list of `Model` objects as follows.
 
 {% tabs %}  
