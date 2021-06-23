@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Legend in WinUI Cartesian Chart control | Syncfusion
-description: This sections explains about how to configure the legend and its features title, icons, labels, and template in WinUI Cartesian Chart (SfCartesianChart) control.
+description: This sections explains about how to configure the legend and its features title, icons, labels, and template in WinUI Cartesian Chart control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
