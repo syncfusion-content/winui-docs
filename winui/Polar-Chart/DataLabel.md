@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data labels in WinUI Polar Chart control | Syncfusion
-description: This section explains about how to add and customize the data labels in Syncfusion WinUI Polar Chart (SfPolarChart) control.
+description: This section explains about how to configure the data labels and its features in Syncfusion WinUI Polar Chart (SfPolarChart) control.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
@@ -9,16 +9,16 @@ documentation: ug
 
 # Data label in WinUI Polar Chart (SfPolarChart)
 
-Data labels are used to display values related to a chart segment. Values from data point(x, y) or other custom properties from a data source can be displayed.
+Data labels are used to display values related to a chart segment. Values from data points(x, y) or other custom properties from a data source can be displayed.
 
 Each data label can be represented by the following:
 
 * `Label` - displays the segment label content at the (X, Y) point.
-* `ConnectorLine` - used to connect the (X, Y) point and the label element.
+* `Connector line` - used to connect the (X, Y) point and the label element.
 
 ## Enable data label
 
-[ShowDataLabels]() property of series is used to enable the data labels. The following code example illustrates how to achieve this.
+The [ShowDataLabels]() property of a series is used to enable the data labels. The following code example illustrates how to achieve this.
 
 % tabs %}
 
@@ -324,7 +324,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 ## Connector line
 
-This feature is used to connect label and data point using a line. [ShowConnectorLine]() property of [PolarDataLabelSettings]() is used to enable the connector line in the polar chart.
+Connector line is used to connect label and data point using a line. [ShowConnectorLine]() property of [PolarDataLabelSettings]() is used to enable the connector line in the polar chart.
 
 The connector line can be customized using the following properties:
 
@@ -373,3 +373,4 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 {% endtabs %}
 
 ![ConnectorLine in WinUI Polar Chart](DataLabel_Images/WinUI_PolarChart_data_label_ConnectorLine.png)
+
