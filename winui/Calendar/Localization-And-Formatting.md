@@ -177,30 +177,3 @@ sfCalendar.NumberOfWeeksInView = 3;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Selection)
 
-## Show Week numbers
-
-You can show week numbers for each week in `Calendar` control by setting the `ShowWeekNumbers` property value as **true**. You can also customize the week number displayed in calendar by using the`WeekNumberRule` property and `WeekNumberFormat` property. By default, value of `ShowWeekNumber` property is **false**, `WeekNumberRule` is **FirstDay** and `WeekNumberFormat` is **#**.
-
-N> You can change the `WeekNumberRule` property value with the [CalendarWeekRule](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0) and you can also add any prefix or suffix characters to **#** for `WeekNumberFormat` property.
-
-{% tabs %}
-{% highlight xaml %}
-
-<calendar:SfCalendar HorizontalAlignment="Center" VerticalAlignment="Center"
-                     ShowWeekNumbers="True" WeekNumberRule="FirstFullWeek"
-                     WeekNumberFormat="W #"
-                     />
-
-{% endhighlight %}
-{% highlight C# %}
-
-SfCalendar sfCalendar = new SfCalendar();
-sfCalendar.ShowWeekNumbers = true;
-sfCalendar.WeekNumberRule = CalendarWeekRule.FirstFullWeek;
-sfCalendar.WeekNumberFormat = "W #";
-
-{% endhighlight %}
-{% endtabs %}
-
-![WinUI Calendar Showing Only Limited Weeks in View](Localization-And-Formatting_images/WinUI-Calendar-weeknumber.png)
-
