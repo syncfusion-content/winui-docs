@@ -1,15 +1,15 @@
 ---
 layout: post
-title: PolarLineSeries in WinUI Polar Chart control | Syncfusion
-description: Learn all about the PolarLineSeries support in Syncfusion WinUI Polar Chart(SfPolarChart) control, its elements and more details.
+title: Polar line chart | SfPolarChart | Syncfusion
+description: Learn here all about the polar line chart and its features in Syncfusion WinUI Polar Chart (SfPolarChart) control.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
 ---
 
-# PolarLineSeries in WinUI Polar Charts (SfPolarChart)
+# Polar Line Chart in WinUI Polar Charts (SfPolarChart)
 
-To render a polar or radar chart with line type, create an instance of the [PolarLineSeries]() and add it to the [PolarChart]() [Series]() collection property. The following code example shows how to use [PolarLineSeries]().
+To render a line series in polar chart, create an instance of the [PolarLineSeries]() and add it to the [Series]() collection property of [SfPolarChart](). The following code example demonstrates how to define [PolarLineSeries]().
 
 {% tabs %}
 
@@ -71,9 +71,9 @@ chart.Series.Add(series3);
 
 ![PolarLineSeries in WinUI polar chart](PolarLine_Images/WinUI_PolarChart_PolarLineSeries.png)
 
-## PolarChart GridLineType
+## Grid line type
 
-The PolarChart [GridLineType]() property used to change the grid line type as `Circle` or `Polygon`. The PolarChart default [GridLineType]() value is `Circle` and type of `PolarChartGridLineType`. The following code example show the `PolarLineSeries` with [GridLineType]() as `Polygon`.
+The [GridLineType]() property is used to change the rendering type of axis grid lines. The default value of [GridLineType]() is `Circle`. By changing the grid line type as `Polygon`, we can shown the polar chart similar like spider chart or web chart. 
 
 {% tabs %}
 
@@ -108,11 +108,11 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![PolarLineSeries in WinUI polar chart polygon](PolarLine_Images/WinUI_PolarChart_GridlineType_polygon.png)
+![Spider/Web chart](PolarLine_Images/WinUI_PolarChart_GridlineType_polygon.png)
 
-## IsClosed
+## Closing path
 
-[PolarLineSeries]() [IsClosed]() property used to draw the polar line chart with or without closed path. The default value of [IsClosed]() is `true`. The following code example of the [IsClosed]() value as `false`.
+[IsClosed]() property is used to render the series with or without closed path. The default value of [IsClosed]() is `true`. 
 
 {% tabs %}
 
@@ -141,7 +141,7 @@ PolarLineSeries series = new PolarLineSeries();
 series.XBindingPath = "Direction";
 series.YBindingPath = "Tree";
 series.ItemsSource = viewModel.PlantDetails;
-series.IsClosed= false;
+series.IsClosed = false;
 ...
 chart.Series.Add(series);
 
@@ -149,4 +149,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Closed PolarLineSeries series in WinUI polar chart](PolarLine_Images/WinUI_PolarChart_IsClosed.png)
+![Closing path in WinUI polar chart](PolarLine_Images/WinUI_PolarChart_IsClosed.png)
