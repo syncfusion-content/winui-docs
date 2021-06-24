@@ -1,16 +1,17 @@
 ---
 layout: post
 title: Axis line in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about the chart axis line of Syncfusion WinUI Cartesian Chart(SfCartesianChart) control.
+description: Learn here all about the chart axis line and its customization in Syncfusion WinUI Cartesian Chart(SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Axis Line in WinUI Cartesian Chart
+# Axis line in WinUI Cartesian Chart
 
-## Line Style
-Cartesian chart axis provides support to customize the style of the axis line by defining the [AxisLineStyle]() property as shown in the below code snippet.
+## Axis line customization
+
+Cartesian chart axis provides support to customize the style of axis line by defining the [AxisLineStyle]() property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -41,11 +42,11 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![AxisLine customization support in WinUI Chart](Axis_images/WinUI_Chart_Axis_line_styles.png)
+![Axis line customization support in WinUI Chart](Axis_images/WinUI_Chart_Axis_line_styles.png)
 
 ## Offset
 
-The padding to the axis line is defined using [AxisLineOffset]() property. The following code example demonstrates the setting [AxisLineOffset]() for x axis.
+The padding to the axis line is defined by using the [AxisLineOffset]() property. The following code example demonstrates the setting [AxisLineOffset]() for x axis.
 
 {% tabs %}
 
@@ -70,5 +71,4 @@ chart.PrimaryAxis = new NumericalAxis()
 {% endtabs %}
 
 ![Padding support for axis line in WinUI](Axis_images/WinUI_Chart_Axis_line_styles_offset.png)
-
 
