@@ -93,22 +93,27 @@ The following code example explains how to apply the style for tooltip backgroun
 
 {% highlight xml %}
 
-<chart:SfFunnelChart.Resources>
-    <Style TargetType="Path" x:Key="style">
-        <Setter Property="Stroke" Value="Black"/>
-        <Setter Property="Fill" Value="Gray"/>
-    </Style>
-</chart:SfFunnelChart.Resources>
+<chart:SfFunnelChart x:Name="chart" ShowTooltip="True">
 
-<chart:SfFunnelChart.Behaviors>
-    <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
-</chart:SfFunnelChart.Behaviors>
+    <chart:SfFunnelChart.Resources>
+        <Style TargetType="Path" x:Key="style">
+            <Setter Property="Stroke" Value="Black"/>
+            <Setter Property="Fill" Value="Gray"/>
+        </Style>
+    </chart:SfFunnelChart.Resources>
+
+    <chart:SfFunnelChart.Behaviors>
+        <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
+    </chart:SfFunnelChart.Behaviors>
+
+</chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
+chart.ShowTooltip = true;
 Style style = new Style(typeof(Path));
 style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Black)));
 style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)));
@@ -133,17 +138,21 @@ The following code example explains how to apply the style for a tooltip label.
 
 {% highlight xml %}
 
-<chart:SfFunnelChart.Resources>
-    <Style TargetType="TextBlock" x:Key="labelStyle">
-        <Setter Property="FontSize" Value="14"/>
-        <Setter Property="Foreground" Value="Red"/>
-        <Setter Property="FontStyle" Value="Italic"/>
-    </Style>
-</chart:SfFunnelChart.Resources>
+<chart:SfFunnelChart x:Name="chart" ShowTooltip="True">
 
-<chart:SfFunnelChart.Behaviors>
-    <chart:ChartTooltipBehavior LabelStyle="{StaticResource labelStyle}"/>
-</chart:SfFunnelChart.Behaviors>
+    <chart:SfFunnelChart.Resources>
+        <Style TargetType="TextBlock" x:Key="labelStyle">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="Red"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+        </Style>
+    </chart:SfFunnelChart.Resources>
+
+    <chart:SfFunnelChart.Behaviors>
+        <chart:ChartTooltipBehavior LabelStyle="{StaticResource labelStyle}"/>
+    </chart:SfFunnelChart.Behaviors>
+
+</chart:SfFunnelChart>
 
 {% endhighlight %}
 

@@ -9,6 +9,33 @@ documentation: ug
 
 # Chart title in WinUI Funnel Chart (SfFunnelChart)
 
+`Header` property is used to define the title for the chart.
+
+{% tabs %}   
+
+{% highlight xaml %}
+
+<chart:SfFunnelChart x:Name="chart" Header="PRODUCT SALES">
+ . . .           
+</chart:SfFunnelChart>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+SfFunnelChart chart = new SfFunnelChart();
+chart.Header = "PRODUCT SALES";
+. . . 
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+![Title support in WinUI Funnel chart](Title_Images/WinUI_FunnelChart_Title.png)
+
+## Title customization
+
 `Header` property of `SfFunnelChart` is used to define and customize the chart title. It accepts any object (.Net object) as content for the chart header.
 
 {% tabs %}   
@@ -47,6 +74,7 @@ documentation: ug
     };
 
     border.Child = textBlock;
+    chart.Header = border;
     . . . 
     this.Content = chart;
 
