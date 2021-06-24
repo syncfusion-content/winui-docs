@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bubble and Scatter in WinUI Cartesian Chart control | Syncfusion
+title: Bubble series in WinUI Cartesian Chart control | Syncfusion
 description: Learn here all about Bubble series feature of Syncfusion WinUI Chart (SfCartesianChart) control with zero bubble support and more.
 platform: WinUI
 control: SfChart
@@ -33,7 +33,7 @@ To render a cartesian chart bubble series, create an instance of [BubbleSeries](
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
+SfCartesianChart chart = new SfCartesianChart();
 ...
 
 BubbleSeries series = new BubbleSeries()
@@ -53,7 +53,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Bubble chart type in WinUI Cartesian Chart](Series_images/bubble_chart.png)
+![Bubble chart type in WinUI Cartesian Chart](Bubble_Images/bubble_chart.png)
 
 **Show Zero Bubbles**
 
@@ -76,7 +76,8 @@ The following code illustrates how to set the value to the property.
 {% endhighlight %}
 
 {% highlight c# %}
-SfPolarChart chart = new SfPolarChart();
+
+SfCartesianChart chart = new SfCartesianChart();
 ...
 
 BubbleSeries series = new BubbleSeries()
@@ -95,7 +96,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![ShowZeroBubbles support in WinUI Cartesian Chart](Series_images/showzerobubble_true.png)
+![ShowZeroBubbles support in WinUI Cartesian Chart](Bubble_Images/showzerobubble_true.png)
 
 The following code example and screenshots describes when [`ShowZeroBubbles`]() value is `false`.
 
@@ -114,7 +115,8 @@ The following code example and screenshots describes when [`ShowZeroBubbles`]() 
 {% endhighlight %}
 
 {% highlight c# %}
-SfPolarChart chart = new SfPolarChart();
+
+SfCartesianChart chart = new SfCartesianChart();
 ...
 
 BubbleSeries series = new BubbleSeries()
@@ -133,4 +135,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![ShowZeroBubbles support in WinUI Cartesian Chart](Series_images/showzerobubble_false.png)
+![ShowZeroBubbles support in WinUI Cartesian Chart](Bubble_Images/showzerobubble_false.png)

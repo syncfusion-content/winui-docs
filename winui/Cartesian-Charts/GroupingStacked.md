@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping Stacked in WinUI Cartesian Chart control | Syncfusion
+title: Grouping Stacked series in WinUI Cartesian Chart control | Syncfusion
 description: Learn here all about Grouping Stacked features of Syncfusion WinUI Cartesian Chart (SfCartesianChart) control and more.
 platform: WinUI
 control: SfChart
