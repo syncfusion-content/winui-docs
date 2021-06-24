@@ -9,40 +9,7 @@ documentation: ug
 
 # Axis labels in WinUI Polar Chart
 
-## Rotation angle
-
-The [`LabelRotationAngle`]() property is used to define the angle for the label content. The following code example illustrates the [`LabelRotationAngle`]().
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfPolarChart>
-    ...
-    <chart:SfPolarChart.SecondaryAxis>
-        <chart:NumericalAxis LabelRotationAngle="30"/>
-    </chart:SfPolarChart.SecondaryAxis>
-    ...
-</chart:SfPolarChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfPolarChart chart = new SfPolarChart();
-...
-chart.PrimaryAxis = new CategoryAxis();
-chart.SecondaryAxis = new NumericalAxis()
-{
-    LabelRotationAngle = 30,
-}
-...
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Chart axis label rotation angle support in WinUI polar chart](Axis_Images/WinUI_PolarChart_LabelRotationAngle.png)
+Axis labels are used to show the units or measures or category values of axis to visualize the data. It will be generated based on the range and values binded to the series in the chart. 
 
 ## Custom axis Labels
 
@@ -161,6 +128,41 @@ public class LabelItem
 {% endhighlight %}
 
 {% endtabs %}
+
+## Rotation angle
+
+The [`LabelRotationAngle`]() property is used to define the angle for the label content. The following code example illustrates the [`LabelRotationAngle`]().
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfPolarChart>
+    ...
+    <chart:SfPolarChart.SecondaryAxis>
+        <chart:NumericalAxis LabelRotationAngle="30"/>
+    </chart:SfPolarChart.SecondaryAxis>
+    ...
+</chart:SfPolarChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfPolarChart chart = new SfPolarChart();
+...
+chart.PrimaryAxis = new CategoryAxis();
+chart.SecondaryAxis = new NumericalAxis()
+{
+    LabelRotationAngle = 30,
+}
+...
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Chart axis label rotation angle support in WinUI polar chart](Axis_Images/WinUI_PolarChart_LabelRotationAngle.png)
 
 ## Formatting axis label
 
