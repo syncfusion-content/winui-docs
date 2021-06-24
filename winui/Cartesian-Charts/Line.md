@@ -1,15 +1,19 @@
 ---
 layout: post
-title: Line in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about Line, Step Line and Spline support in Syncfusion WinUI Cartesian Chart(SfCartesianChart) control and more. 
+title: Line Chart in WinUI Cartesian Chart control | Syncfusion
+description: Learn here all about the line chart and its type in Syncfusion WinUI Cartesian Chart (SfCartesianChart) control. 
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Line Chart in WinUI Cartesian Charts (SfCartesianChart)
+# Line Chart in WinUI Cartesian Chart (SfCartesianChart)
 
-Line series join points on a plot by straight lines, showing data trends at equal intervals. The following code example explains how to create a simple [LineSeries]() using given data.
+## Line Chart
+
+Line chart is used to represent the data trends at equal intervals by connecting points on a plot with straight lines. To render a line chart, create an instance of [LineSeries](), and add it to the [Series]() collection property of [SfCartesianChart]().
+
+The following code sample explains how to create a simple [LineSeries]().
 
 {% tabs %}
 
@@ -54,11 +58,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Line chart type in WinUI Cartesian Chart](Chart-types_images/WinUI_line_chart.png)
+![Line Chart in WinUI](Chart-types_images/WinUI_line_chart.png)
 
 ### Dashed line
 
-The [StrokeDashArray]() property of [LineSeries]() is used to render line series with dashes. Odd value is considered as rendering size and even value is considered as gap.
+The [StrokeDashArray]() property of [LineSeries]() is used to render the line series with dashes. Odd value is considered as rendering size and even value is considered as gap.
 
 {% tabs %}
 
@@ -109,11 +113,13 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Dash Line chart type in WinUI Cartesian Chart](Chart-types_images/WinUI_dash_line_chart.png)
+![Dashed line chart in WinUI](Chart-types_images/WinUI_dash_line_chart.png)
 
 ## Spline Chart 
 
-[SplineSeries]() resembles line series, but the difference between them is that instead of connecting the data points with line segments, the data points are connected by smooth Bezier curves.
+The [SplineSeries]() resembles line series, but instead of connecting the data points with line segments, the data points are connected by smooth bezier curves.
+
+The following code sample explains how to create a simple [SplineSeries]().
 
 {% tabs %}
 
@@ -161,7 +167,7 @@ this.Content = chart;
 
 ## Step line Chart 
 
-[StepLineSeries]() plots horizontal and vertical lines to connect data points resulting in a step line progression. The following code illustrates how to initialize the [StepLineSeries]() in chart.
+The [StepLineSeries]() plots horizontal and vertical lines to connect the data points resulting in a step-like progression. The following code illustrates how to initialize the [StepLineSeries]() in the chart.
 
 {% tabs %}
 
@@ -200,4 +206,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![StepLine Chart type in WinUI Cartesian Chart](Chart-types_images/WinUI_step_line_chart.png)
+![Step line Chart in WinUI](Chart-types_images/WinUI_step_line_chart.png)
