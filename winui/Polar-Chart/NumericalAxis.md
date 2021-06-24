@@ -40,7 +40,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 {% endtabs %}
 
-![NumericalAxis support in WinUI Polar Chart](Axis_Images/Axis_img42.jpeg)
+![NumericalAxis support in WinUI Polar Chart](Axis_Images/WinUI_PolarChart_NumericalAxis.png)
 
 
 **Customizing** **the** **NumericalAxis** **Range**
