@@ -9,12 +9,12 @@ documentation: ug
 
 # Value change restriction in WinUI NumberBox
 
-This section describes how to restrict the value change in the `NumberBox` control using `AllowNull`, `Minimum`, and `Maximum` properties.
+This section describes how to restrict the change in value of the `NumberBox` control using `AllowNull`, `Minimum`, and `Maximum` properties.
 
 ## Restrict null value
 
-By default, when no value is set for `NumberBox` control or when an invalid input is cleared, the textbox will be empty, as the value of `AllowNull` property is **true** and `Value` property is **null**.
-You can reset the value to **0** when input is cleared by setting the `AllowNull` property value as **false**.
+By default, when an empty or null value is set for `NumberBox` control or when input is cleared, the editor will be empty, as the value of the `AllowNull` property is **true**.
+You can retain the **0** value in the editor when input is cleared by setting the `AllowNull` property value as **false**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -37,7 +37,7 @@ sfNumberBox.AllowNull = false;
 
 ## Restrict value within range
 
-Using the `Minimum` and `Maximum` properties, you can limit the input value of the `NumberBox` control to a minimum and maximum value range. The default value of the `Minimum` property is **double.MinValue** and `Maximum` property is **double.MaxValue**.
+Using the `Minimum` and `Maximum` properties, you can limit the input value of the `NumberBox` control within minimum and maximum range. The default value of the `Minimum` property is **double.MinValue** and `Maximum` property is **double.MaxValue**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -61,7 +61,7 @@ sfNumberBox.Value = 50;
 
 ## Restrict text editing
 
-You can prevent users from editing the numerical value of the `NumberBox` control using the `IsEditable` property. By default, the value of `IsEditable` property is **false**. 
+You can prevent users from editing the numerical value in `NumberBox` control using the `IsEditable` property. By default, the value of `IsEditable` property is **false**. 
 
 {% tabs %}
 {% highlight XAML %}

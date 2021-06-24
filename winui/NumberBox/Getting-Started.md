@@ -60,7 +60,7 @@ To add `NumberBox` control manually in C# , follow the below steps.
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 2.  Download and refer the following NuGet in the project.
 
-    * [Syncfusion.Calendar.WinUI](https://www.nuget.org/packages/Syncfusion.Calendar.WinUI)
+    * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
 
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in C# page.
 4. Initialize the `NumberBox` control.
@@ -96,7 +96,7 @@ namespace GettingStarted
 
 ## Editing the value
 
-By default, `NumberBox` control allows you to enter any numerical input and it does not allow inputs like the alphabets. Once `Enter` key is pressed or control focus is lost, the value of the `NumberBox` control is validated and updated based on the format applied.
+By default, the `NumberBox` control allows you to enter numerical input and restricts the alphabetic input. Once `Enter` key is pressed or control focus is lost, the value of the `NumberBox` control is validated and updated based on the format applied.
 
 {% tabs %}
 {% highlight xaml %}
@@ -137,7 +137,7 @@ sfNumberBox.CustomFormat = "C2";
 {% endhighlight %}
 {% endtabs %}
 
-You can also change the format of `NumberBox` control value using `NumberFormatter` property with formatters shown in [this link](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting?view=winrt-20348).
+You can also change the format of the value of `NumberBox` control using `NumberFormatter` property with different formatters available in [this link](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting?view=winrt-20348).
 
 {% tabs %}
 {% highlight xaml %}
@@ -163,11 +163,11 @@ sfNumberBox.NumberFormatter = new CurrencyFormatter(currencyCode, new string[] {
 
 ## Accept null value
 
-By default, you can clear an input and show an empty textbox in the `NumberBox` control using the `AllowNull` property as the value of `AllowNull` property is **true** and by setting the `Value` property as **null**. You can show **0** value when input is cleared by setting the `AllowNull` property value as **false**.
+By default, you can clear the input and show an empty editor in the `NumberBox` control using the `AllowNull` property, as the value of the `AllowNull` property is **true**. By setting the `AllowNull` property value as **false** the editor retains **0** value when input is cleared.
 
-N> When the value of the `Minimum` property is **15** and the `AllowNull` property is **true**, an empty textbox in the `NumberBox` control will be shown upon clearing the input.
+N> When the value of the `Minimum` property is **15** and the `AllowNull` property is **true**, an empty editor will be shown upon clearing the input.
 
-N> When the value of the `Minimum` property is **15** and the `AllowNull` is **false**, the minimum value is retained in `NumberBox` control upon clearing the input.
+N> When the value of the `Minimum` property is **15** and the `AllowNull` property is **false**, the minimum value is retained in `NumberBox` control upon clearing the input.
 
 {% tabs %}
 {% highlight xaml %}
@@ -189,7 +189,7 @@ sfNumberBox.AllowNull = false;
 
 ## Setting watermark text
 
-You can prompt the user with any information by using the `PlaceHolderText` property. This watermark text will be displayed only when the `NumberBox`control has a **null** value and the `AllowNull` property value is **true**. The default value of `PlaceHolderText` property is **string.Empty** (No string will be displayed).
+You can prompt the user with any information by using the `PlaceHolderText` property. Watermark text will be displayed only when the value of the `AllowNull` property is **true** and the value of `NumberBox` control is **null**. The default value of `PlaceHolderText` property is **string.Empty** (No string will be displayed).
 
 {% tabs %}
 {% highlight xaml %}
@@ -211,7 +211,7 @@ sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 
 ## Value changed notification
 
-You will be notified when the value is changed and the validation is performed on the `Enter` keypress or when the focus is lost in `SfNumberBox` control by `ValueChanged` event. The `ValueChanged` contains the following properties.
+You will be notified by the `ValueChanged` event when the value of the `NumberBox` control is changed and the validation is performed on the `Enter` keypress or when the focus is lost in `NumberBox` control. The `ValueChanged` contains the following properties.
 
  * `NewValue` - Contains the new input value.
  * `OldValue` - Contains the previous input value.
