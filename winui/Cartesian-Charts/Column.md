@@ -9,7 +9,7 @@ documentation: ug
 
 # Column Chart in WinUI Cartesian Chart (SfCartesianChart)
 
-Column charts is used to plot discrete rectangles for the given data point values. To render a column chart, create an instance of [ColumnSeries](), and add it to the [Series]() collection property of [SfCartesianChart]().
+Column chart is used to plot discrete rectangles for the given data point values. To render a column chart, create an instance of [ColumnSeries](), and add it to the [Series]() collection property of [SfCartesianChart]().
 
 {% tabs %}
 
