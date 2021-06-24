@@ -34,7 +34,7 @@ N> Elite, SandyBeach and LightCandy palettes are not supported in the bitmap ser
 
 Each palette applies a set of predefined brushes to the series in a predefined order. [Metro]() palette is the default palette.
 
-The following code example shows you how to set the [Metro]() palette for the cartesian chart.
+The following code example shows you how to set the [Metro]() palette for the chart.
 
 {% tabs %}
 
@@ -176,9 +176,9 @@ this.Content = chart;
 
 ## Applying gradient brushes
 
-Gradient for the chart can be set by using the [`ColorModel`]() property of the cartesian chart with the help of `LinearGradientBrush` or `RadialGradientBrush`.
+Gradient for the chart can be set by using the [`ColorModel`]() property with the help of `LinearGradientBrush` or `RadialGradientBrush`.
 
-The following code sample and screenshot illustrates how to apply the gradient brushes for the chart using the [`ColorModel`]() property.
+The following code sample and screenshot illustrates how to apply the gradient brushes for the series using the [`ColorModel`]() property.
 
 {% tabs %}
 
