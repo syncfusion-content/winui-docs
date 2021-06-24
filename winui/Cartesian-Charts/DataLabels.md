@@ -234,7 +234,7 @@ series.DataLabelSettings = new CartesianDataLabelSettings()
 
 The alignment of data labels inside the series is defined by using the [BarLabelAlignment]() property. 
 
-* [Top]() - Positions the data lable at the top edge point of a chart segment.
+* [Top]() - Positions the data label at the top edge point of a chart segment.
 * [Middle]() - Positions the data label at the center point of a chart segment.
 * [Bottom]() - Positions the data label at the bottom edge point of a chart segment.
 
@@ -275,9 +275,9 @@ The [Position]() property is used to position the data labels at `Center`, `Inne
 
 ## Connector line
 
-Connector line is used to connect label and data point using a line. [ShowConnectorLine]() property of [CartesianDataLabelSettings]() is used to enable the connector line in the cartesian chart. 
+Connector line is used to connect label and data point using a line. [ShowConnectorLine]() property of [CartesianDataLabelSettings]() is used to enable the connector line in the chart. 
 
-The connector line can be customized using the below properies.
+The connector line can be customized using the below properties.
 
 * [ConnectorHeight]() - used to set height for connector line.
 * [ConnectorLineStyle]() - used to customize the style of line.
