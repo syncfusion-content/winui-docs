@@ -11,7 +11,7 @@ documentation: ug
 
 Axis labels are used to show the units or measures or category value of axis to visualize the data user friendly. It will be generated based on the range and the values binded to [XBindingPath]() or [YBindingPath]() properties of series.
 
-## Axis labels positioning 
+## Axis labels position 
 
 The [LabelPosition]() property is used to position the axis label either inside or outside of the chart plotting area. By default, [LabelPosition]() is [Outside]().
 
@@ -111,7 +111,7 @@ N> Also directly bind the collection of labels to the [`LabelSource`]() property
 
 ## Formatting the label
 
-Axis labels can be formatted by predefined formatting types by using the [LabelFormat]() proeprty based on the axis types.
+Axis labels can be formatted by predefined formatting types by using the [LabelFormat]() property based on the axis types.
 
 **DateTimeAxis**
 
