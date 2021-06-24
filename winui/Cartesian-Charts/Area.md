@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Area in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about Area, Step area and Spline area support in Syncfusion WinUI Cartesian Chart(SfCartesianChart) control with closed area and more.
+title: Area Chart in WinUI Cartesian Chart control | Syncfusion
+description: Learn here all about the area chart types in Syncfusion WinUI Cartesian Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Area Chart in WinUI Cartesian Charts (SfCartesianChart)
 
-[AreaSeries]() is rendered using a collection of line segments connected to form a closed loop area, filled with the specified color.
+## Area Chart
 
-The following code example initializes the AreaSeries:
+The area chart is rendered by using a collection of line segments connected to form a closed loop area, filled with the specified color. To render a area chart, create an instance of [AreaSeries]() and add it to the [Series]() collection property of the chart.
 
 {% tabs %}
 
@@ -47,9 +47,9 @@ this.Content = chart;
 
 ![Area chart type in WinUI Cartesian Chart](Chart-types_images/WinUI_area_chart.png)
 
-## Spline Area 
+## Spline Area Chart
 
-[SplineAreaSeries]() connects a series of data points using smooth Bezier line curves, with the underlying areas filled.
+The [SplineAreaSeries]() connects a series of data points using smooth bezier line curves, with the underlying areas filled. The following code sample demonstrates how to initialize the [SplineAreaSeries]().
 
 {% tabs %}
 
@@ -83,13 +83,13 @@ this.Content = chart;
 
 {% endtabs %}
 
-![SplineArea chart type in WinUI Cartesian Chart](Chart-types_images/WinUI_spline_area_chart.png)
+![Spline area chart type in WinUI Cartesian Chart](Chart-types_images/WinUI_spline_area_chart.png)
 
-## StepArea 
+## Step Area Chart
 
-[StepAreaSeries]() is similar to AreaSeries but it does not use the shortest distance to connect two data points using Bezier curves. Instead, this ChartSeries uses vertical and horizontal lines to connect the data points in a series forming a step-like progression.
+The [StepAreaSeries]() is similar to [AreaSeries](), but it does not use the shortest distance to connect the two data points using bezier curves. Instead, this series uses vertical and horizontal lines to connect the data points in a series forming a step-like progression.
 
-The following code example initializes the StepAreaSeries:
+The following code example initializes the [StepAreaSeries]().
 
 {% tabs %}
 
@@ -123,5 +123,5 @@ this.Content = chart;
 
 {% endtabs %}
 
-![StepAreaSeries chart type in WinUI](Chart-types_images/WinUI_step_area_chart.png)
+![Step area chart type in WinUI](Chart-types_images/WinUI_step_area_chart.png)
 
