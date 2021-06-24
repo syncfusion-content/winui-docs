@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Keyboard Support in  WinUI Scheduler control | Syncfusion
-description: Learn here about Keyboard support with Syncfusion WinUI Scheduler (SfScheduler), its elements and more.
+title: Accessibility  Support in  WinUI Scheduler control | Syncfusion
+description: Learn here about Accessibility  support with Syncfusion WinUI Scheduler (SfScheduler), its elements and more.
 platform: WinUI
 control: SfScheduler
 documentation: ug

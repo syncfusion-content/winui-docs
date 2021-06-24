@@ -362,7 +362,7 @@ this.Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 
 N>
 * You can customize appointment editor time format based on scheduler time ruler format and culture.
-* By default, the scheduler time ruler format is `hh:mm tt` and appointment editor time picker format `h tt.` 
+* By default, the scheduler time ruler format is `h tt` and the appointment editor time picker format is `hh:mm tt.`
 
 ## View header
 
