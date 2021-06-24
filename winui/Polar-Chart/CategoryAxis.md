@@ -15,22 +15,26 @@ documentation: ug
 
 {% highlight xaml %}
 
-<syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfPolarChart.PrimaryAxis>
+    <syncfusion:CategoryAxis/>
+</syncfusion:SfPolarChart.PrimaryAxis>
 
-<syncfusion:CategoryAxis>
-
-</syncfusion:CategoryAxis>
-
-</syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfPolarChart.SecondaryAxis>
+    <syncfusion:NumericalAxis/>
+</syncfusion:SfPolarChart.SecondaryAxis>
+...
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfPolarChart chart = new SfPolarChart();
 chart.PrimaryAxis = new CategoryAxis();
+chart.SecondaryAxis = new NumericalAxis();
+...
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![CategoryAxis support in WinUI Polar Chart](Axis_images/Axis_img45.jpeg)
+![CategoryAxis support in WinUI Polar Chart](Axis_Images/WinUI_PolarChart_CategoryAxis.png)
