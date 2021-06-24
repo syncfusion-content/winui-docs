@@ -303,6 +303,7 @@ N>
 * All-day Appointment does not support `MinimumAppointmentDuration`.
 
 ## Minimum display appointments count in all day panel
+
 You can customize the number of appointments displayed in a all-day panel using the `MinimumAllDayAppointmentsCount` property of `DaysViewSettings` in Scheduler. By default, the appointment display count is 2 and all-day panel have more than 2 appointments, two appointment will be displayed and remaining appointments will be displayed as appointment counts.
 
 {% tabs %}
@@ -320,6 +321,7 @@ this.Schedule.DaysViewSettings.MinimumAllDayAppointmentsCount = 3;
 {% endtabs %}
 
 ### Customize more appointments indicator in all day panel
+
 You can customize the default appearance of more appointments indicator in all day panel by using the `AllDayMoreAppointmentsIndicatorTemplate` property of `DaysViewSettings`.
 
 {% tabs %}
