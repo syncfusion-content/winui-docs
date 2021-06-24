@@ -1,19 +1,17 @@
 ---
 layout: post
-title: Bubble series in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about Bubble series feature of Syncfusion WinUI Chart (SfCartesianChart) control with zero bubble support and more.
+title: Bubble Chart in WinUI Cartesian Chart control | Syncfusion
+description: Learn here all about the bubble series and its features in Syncfusion WinUI Cartesian Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Bubble in WinUI Cartesian Chart (SfCartesianChart)
+# Bubble Chart in WinUI Cartesian Chart (SfCartesianChart)
 
-## Bubble 
+## Bubble Chart
 
-[`BubbleSeries`]() is represented by closely packed circles, whose areas are proportional to the quantities. 
-
-The size of the bubble series is relative proportional to the value bind with the series using [`Size`]()  property. You can set the constraints on this size using [`MinimumRadius`]() and [`MaximumRadius`]().
+The [`BubbleSeries`]() is represented by closely packed circles, whose areas are proportional to the quantities. The size of the bubble series is relative proportional to the value bind with the series using the [`Size`]()  property. You can set the constraints on this size using the [`MinimumRadius`]() and [`MaximumRadius`]() properties.
 
 To render a bubble series, create an instance of [BubbleSeries]() and add to the [Series]() collection property of [SfCartesianChart]() as shown in the following code.
 
@@ -55,11 +53,9 @@ chart.Series.Add(series);
 
 ![Bubble chart type in WinUI Cartesian Chart](Bubble_Images/bubble_chart.png)
 
-**Show Zero Bubbles**
+## Show zero size bubbles
 
-The zero size bubble segments can be enabled or disabled by using the [`ShowZeroBubbles`]() property. By default, the property value is `True`.
-
-The following code illustrates how to set the value to the property.
+The zero size bubble segments can be enabled or disabled by using the [`ShowZeroBubbles`]() property. The defaule of this property is `True`.
 
 {% tabs %}
 
@@ -96,7 +92,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![ShowZeroBubbles support in WinUI Cartesian Chart](Bubble_Images/showzerobubble_true.png)
+![Show zero size bubbles support in WinUI Cartesian Chart](Bubble_Images/showzerobubble_true.png)
 
 The following code example and screenshots describes when [`ShowZeroBubbles`]() value is `false`.
 
@@ -136,3 +132,4 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![ShowZeroBubbles support in WinUI Cartesian Chart](Bubble_Images/showzerobubble_false.png)
+
