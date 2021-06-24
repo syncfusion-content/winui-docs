@@ -85,67 +85,55 @@ sfCalendar.WeekNumberRule = CalendarWeekRule.FirstFullWeek;
 
 ![WinUI Calendar apply week number format](Week_Numbers_images/winui-calendar-weeknumber-format.png)
 
-## Customize the week number appearance
+## Customize the week number and week dayname appearance
 
 You can show week number in `Calendar` control by setting the value of `ShowWeekNumbers` property  as **true**.
-`Calendar` control also allows you to customize the template of the week numbers using `WeekNumberTemplate` property in `CalendarItemTemplateSelector` class. The default value of `ShowWeekNumbers` property is **false**.
+`Calendar` control also allows you to customize the template of the week numbers using `WeekNumberTemplate` property and template of the week day names using `WeekNameTemplate` property in the `CalendarItemTemplateSelector` class. The default value of `ShowWeekNumbers` property is **false**.
 
 {% tabs %}
 {% highlight XAML %}
 
 <calendar:SfCalendar WeekNumberRule="FirstFourDayWeek"
-                     WeekNumberFormat="#"
                      ShowWeekNumbers="True">
-    <calendar:SfCalendar.Resources>                
-        <Style TargetType="calendar:CalendarItem">
-            <Setter Property="ContentTemplateSelector">
-                <Setter.Value>
-                    <calendar:CalendarItemTemplateSelector>
-                        <calendar:CalendarItemTemplateSelector.WeekNumberTemplate>
-                            <DataTemplate>
-                                <TextBlock Text="{Binding DisplayText}" FontWeight="Bold" Foreground="Red"/>
-                            </DataTemplate>
-                        </calendar:CalendarItemTemplateSelector.WeekNumberTemplate>
-                    </calendar:CalendarItemTemplateSelector>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </calendar:SfCalendar.Resources>
+                    <calendar:SfCalendar.Resources>
+                        <Style TargetType="calendar:CalendarItem">
+                            <Setter Property="ContentTemplateSelector">
+                                <Setter.Value>
+                                    <calendar:CalendarItemTemplateSelector>
+                                        <calendar:CalendarItemTemplateSelector.WeekNumberTemplate>
+                                            <DataTemplate>
+                                            <Viewbox >
+                                                <Grid>
+                                                <Ellipse MinWidth="30" MinHeight="30" Fill="WhiteSmoke"
+                                                            HorizontalAlignment="Center" VerticalAlignment="Center"
+                                                            Margin="1"/>
+                                                <TextBlock Text="{Binding DisplayText}" HorizontalAlignment="Center"
+                                                            VerticalAlignment="Center" Foreground="DeepSkyBlue"/>
+                                                </Grid>
+                                            </Viewbox>
+                                            </DataTemplate>
+                                            </calendar:CalendarItemTemplateSelector.WeekNumberTemplate>
+                                        <calendar:CalendarItemTemplateSelector.WeekNameTemplate>
+                                            <DataTemplate>
+                                                <Viewbox>
+                                                    <Grid>
+                                                        <Ellipse MinWidth="30" MinHeight="30" Fill="WhiteSmoke"
+                                                                HorizontalAlignment="Center" VerticalAlignment="Center"
+                                                                Margin="1"/>
+                                                        <TextBlock Text="{Binding DisplayText}"  HorizontalAlignment="Center"
+                                                                VerticalAlignment="Center" Foreground="DeepSkyBlue"/>
+                                                    </Grid>
+                                                </Viewbox>
+                                            </DataTemplate>
+                                        </calendar:CalendarItemTemplateSelector.WeekNameTemplate>
+                                </calendar:CalendarItemTemplateSelector>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                    </calendar:SfCalendar.Resources>
 </calendar:SfCalendar>
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar change week number template](UI-Customization_images/winui-calendar-weeknumbertemplate.png)
-
-## Customize the week day name appearance
-
-`Calendar` control allows you to customize the template of the week day names using `WeekNameTemplate` property in `CalendarItemTemplateSelector` class. 
-
-{% tabs %}
-{% highlight XAML %}
-
-<calendar:SfCalendar WeekNumberRule="FirstFourDayWeek"
-                     WeekNumberFormat="#"
-                     ShowWeekNumbers="True">
-    <calendar:SfCalendar.Resources>                
-        <Style TargetType="calendar:CalendarItem">
-            <Setter Property="ContentTemplateSelector">
-                <Setter.Value>
-                    <calendar:CalendarItemTemplateSelector>
-                        <calendar:CalendarItemTemplateSelector.WeekNameTemplate>
-                            <DataTemplate>
-                                <TextBlock Text="{Binding DisplayText}" FontWeight="Bold" Foreground="Red"/>
-                            </DataTemplate>
-                        </calendar:CalendarItemTemplateSelector.WeekNumberTemplate>
-                    </calendar:CalendarItemTemplateSelector>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </calendar:SfCalendar.Resources>
-</calendar:SfCalendar>
-
-{% endhighlight %}
-{% endtabs %}
-
-![WinUI Calendar change week dayname template](UI-Customization_images/winui-calendar-weeknametemplate.png)
+![WinUI Calendar change week number template](Week_Numbers_images/winui-calendar-weeknumber-weekname-template.png)

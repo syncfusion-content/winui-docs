@@ -88,76 +88,60 @@ sfCalendarDateRangePicker.WeekNumberRule = CalendarWeekRule.FirstFullWeek;
 ## Customize the week number appearance
 
 You can show week number in `Calendar DateRange Picker` control by setting the value of `ShowWeekNumbers` property  as **true**.
-`Calendar DateRange Picker` control also allows you to customize the template of the week numbers using `WeekNumberTemplate` property in `CalendarItemTemplateSelector` class. The default value of `ShowWeekNumbers` property is **false**.
+`Calendar DateRange Picker` control also allows you to customize the template of the week numbers using `WeekNumberTemplate` property and the template of week day name using `WeekNameTemplate` property in `CalendarItemTemplateSelector` class. The default value of `ShowWeekNumbers` property is **false**.
 
 {% tabs %}
 {% highlight XAML %}
 
 <calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker"
                             HorizontalAlignment="Center" VerticalAlignment="Center" ShowWeekNumbers="True"
-                            WeekNumberFormat="W #" WeekNumberRule="FirstFullWeek"
+                            WeekNumberRule="FirstFullWeek"
                             >
-    <FlyoutBase.AttachedFlyout>
-        <editors:DropDownFlyout>
-            <calendar:SfCalendar >
-                <calendar:SfCalendar.Resources>
-                    <Style TargetType="calendar:CalendarItem">
-                        <Setter Property="ContentTemplateSelector">
-                            <Setter.Value>
-                                <calendar:CalendarItemTemplateSelector>
-                                    <calendar:CalendarItemTemplateSelector.WeekNumberTemplate>
-                                        <DataTemplate>
-                                            <TextBlock Text="{Binding DisplayText}" FontWeight="Bold" Foreground="Red"/>
-                                        </DataTemplate>
-                                    </calendar:CalendarItemTemplateSelector.WeekNumberTemplate>
-                                </calendar:CalendarItemTemplateSelector>
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                </calendar:SfCalendar.Resources>
-            </calendar:SfCalendar>
-        </editors:DropDownFlyout>
-    </FlyoutBase.AttachedFlyout>
+        <FlyoutBase.AttachedFlyout>
+            <editors:DropDownFlyout>
+                <calendar:SfCalendar ShowWeekNumbers="{x:Bind sfCalendarDateRangePicker.ShowWeekNumbers,Mode=TwoWay}" >
+                    <calendar:SfCalendar.Resources>
+                        <Style TargetType="calendar:CalendarItem">
+                            <Setter Property="ContentTemplateSelector">
+                                <Setter.Value>
+                                    <calendar:CalendarItemTemplateSelector>
+                                        <calendar:CalendarItemTemplateSelector.WeekNumberTemplate>
+                                            <DataTemplate>
+                                                <Viewbox >
+                                                    <Grid>
+                                                        <Ellipse MinWidth="30" MinHeight="30" Fill="White"
+                                                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                                                    Margin="1"/>
+                                                        <TextBlock Text="{Binding DisplayText}" HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center" Foreground="DodgerBlue"/>
+                                                    </Grid>
+                                                </Viewbox>
+                                            </DataTemplate>
+                                        </calendar:CalendarItemTemplateSelector.WeekNumberTemplate>
+                                        <calendar:CalendarItemTemplateSelector.WeekNameTemplate>
+                                            <DataTemplate>
+                                                <Viewbox>
+                                                    <Grid>
+                                                        <Ellipse MinWidth="30" MinHeight="30" Fill="White"
+                                                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                                                    Margin="1"/>
+                                                        <TextBlock Text="{Binding DisplayText}"  HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center" Foreground="DodgerBlue"/>
+                                                    </Grid>
+                                                </Viewbox>
+                                            </DataTemplate>
+                                        </calendar:CalendarItemTemplateSelector.WeekNameTemplate>
+                                    </calendar:CalendarItemTemplateSelector>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </calendar:SfCalendar.Resources>
+                </calendar:SfCalendar>
+            </editors:DropDownFlyout>
+        </FlyoutBase.AttachedFlyout>
 </calendar:SfCalendarDateRangePicker>
 
 {% endhighlight %}
 {% endtabs %}
 
-
-## Customize the week day name appearance
-
-`Calendar DateRange Picker` control allows you to customize the template of the week day names using `WeekNameTemplate` property in `CalendarItemTemplateSelector` class. 
-
-{% tabs %}
-{% highlight XAML %}
-
-<calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker"
-                            HorizontalAlignment="Center" VerticalAlignment="Center"  
-                            >
-    <FlyoutBase.AttachedFlyout>
-        <editors:DropDownFlyout>
-            <calendar:SfCalendar >
-                <calendar:SfCalendar.Resources>
-                    <Style TargetType="calendar:CalendarItem">
-                        <Setter Property="ContentTemplateSelector">
-                            <Setter.Value>
-                                <calendar:CalendarItemTemplateSelector>
-                                    <calendar:CalendarItemTemplateSelector.WeekNameTemplate>
-                                        <DataTemplate>
-                                            <TextBlock Text="{Binding DisplayText}" FontWeight="Bold" Foreground="Red"/>
-                                        </DataTemplate>
-                                    </calendar:CalendarItemTemplateSelector.WeekNameTemplate>
-                                </calendar:CalendarItemTemplateSelector>
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                </calendar:SfCalendar.Resources>
-            </calendar:SfCalendar>
-        </editors:DropDownFlyout>
-    </FlyoutBase.AttachedFlyout>
-</calendar:SfCalendarDateRangePicker>
-
-{% endhighlight %}
-{% endtabs %}
-
-![WinUI Calendar DateRange Picker change week dayname template](Calendar-UI-Customization_images/winui-calendar-daterange-picker-weeknametemplate.png)
+![WinUI Calendar DateRange Picker change week dayname template](Week_Numbers_images/winui-calendardaterangepicker-weekname-weeknumber-template.png)
