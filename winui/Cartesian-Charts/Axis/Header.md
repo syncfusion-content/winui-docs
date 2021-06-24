@@ -1,17 +1,19 @@
 ---
 layout: post
 title: Header for axis in WinUI Cartesian Chart control | Syncfusion
-description: This section explains about chart axis header, header style, header template and customization header apperance of chart axis in WPF chart.
+description: This section explains about chart axis header, header style, header template and its customization in WinUI Cartesian chart.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Header in Chart Axis WPF Chart
+# Chart Axis Header in WinUI Cartesian Chart
 
 ## Header
 
-In chart axis you can define any object as header using [Header]() property. The following code example demonstrates the defining header in primary and secondary axis. 
+The [Header]() property is used to set the title for the chart axis. It accepts any `UIElement` as content of axis title. 
+
+The following code example demonstrates how to define header in both primary and secondary axis. 
 
 {% tabs %}
 
@@ -35,11 +37,11 @@ chart.SecondaryAxis = new NumericalAxis() { Header = "Values" };
 
 {% endtabs %}
 
-![Header support for ChartAxis in WinUI](Axis_Images/WinUI_Chart_Axis_Header.png)
+![Header support for ChartAxis in WinUI Chart](Axis_Images/WinUI_Chart_Axis_Header.png)
 
 ## Style for header
 
-[HeaderStyle]() property is used to provide style for the axis header. The following code example explains header style customization.
+The [HeaderStyle]() property is used to provide style for the axis header. The following code example explains header style customization.
 
 {% tabs %}
 
@@ -67,11 +69,11 @@ chart.PrimaryAxis.HeaderStyle = new LabelStyle()
 
 {% endtabs %}
 
-![Axis header style in WinUI Cartesian chart](Axis_Images/WinUI_Chart_Axis_Header_styles.png)
+![Axis header style in WinUI Chart](Axis_Images/WinUI_Chart_Axis_Header_styles.png)
 
 ## Customization of header by HeaderTemplate
 
-Default appearance of the header can be customized using [HeaderTemplate]() property. The following code snippet demonstrates the header customization.
+The appearance of the header can be customized using the [HeaderTemplate]() property. The following code snippet demonstrates the header customization with `Border` and `TextBlock`.
 
 {% tabs %}
 
@@ -103,4 +105,4 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![HeaderTemplate support for ChartAxis in WinUI](Axis_images/WinUI_Chart_Axis_Header_template.png)
+![HeaderTemplate support for ChartAxis in WinUI Chart](Axis_images/WinUI_Chart_Axis_Header_template.png)
