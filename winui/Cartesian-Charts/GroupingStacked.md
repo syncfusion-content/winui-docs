@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Grouping Stacked series in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about Grouping Stacked features of Syncfusion WinUI Cartesian Chart (SfCartesianChart) control and more.
+title: Stacked group chart in WinUI Cartesian Chart control | Syncfusion
+description: Learn here all about the stacked group chart in Syncfusion WinUI Cartesian Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Grouping Stacked in WinUI Cartesian Chart (SfCartesianChart)
+# Stacked Group Chart in WinUI Cartesian Chart (SfCartesianChart)
 
-You can group the stacked similar series using [`GroupName`]() property of stacked series. The stacked series which contains the same [`GroupName`]() will be stacked in a single group.
+Cartesian chart provides support to group the stacked similar series by using the [`GroupName`]() property of stacked series. The stacked series which contains the same [`GroupName`]() will be stacked in a single group.
 
 The following code example shows how to group the stacked series.
 
@@ -38,11 +38,12 @@ The following code example shows how to group the stacked series.
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+ViewModel viewModel = new ViewModel();
 ...
 
 StackedColumnSeries series1 = new StackedColumnSeries()
 {
-    ItemsSource = new ViewModel().AnnualDetails,
+    ItemsSource = viewModel.AnnualDetails,
     XBindingPath = "Year",
     YBindingPath = "Quarter1",
     GroupName = "Group1",
@@ -50,7 +51,7 @@ StackedColumnSeries series1 = new StackedColumnSeries()
 
 StackedColumnSeries series2 = new StackedColumnSeries()
 {
-    ItemsSource = new ViewModel().AnnualDetails,
+    ItemsSource = viewModel.AnnualDetails,
     XBindingPath = "Year",
     YBindingPath = "Quarter2",
     GroupName = "Group1",
@@ -58,7 +59,7 @@ StackedColumnSeries series2 = new StackedColumnSeries()
 
 StackedColumnSeries series3 = new StackedColumnSeries()
 {
-    ItemsSource = new ViewModel().AnnualDetails,
+    ItemsSource = viewModel.AnnualDetails,
     XBindingPath = "Year",
     YBindingPath = "Quarter3",
     GroupName = "Group2",
@@ -66,7 +67,7 @@ StackedColumnSeries series3 = new StackedColumnSeries()
 
 StackedColumnSeries series4 = new StackedColumnSeries()
 {
-    ItemsSource = new ViewModel().AnnualDetails,
+    ItemsSource = viewModel.AnnualDetails,
     XBindingPath = "Year",
     YBindingPath = "Quarter4",
     GroupName = "Group2",
@@ -82,4 +83,5 @@ chart.Series.Add(series4);
 
 {% endtabs %}
 
-![Grouping of stacked series in WinUI Cartesian Chart](Grouped_Stacking_Images/groupingstacked.png)
+![Stacked group chart in WinUI](Grouped_Stacking_Images/groupingstacked.png)
+
