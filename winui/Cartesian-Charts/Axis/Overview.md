@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Axis in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about Axis feature of Syncfusion WinUI Circular Chart control with axis labels, grid lines support and more.
+description: Learn here all about chart axis and its keys features of Syncfusion WinUI Cartesian Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -17,10 +17,12 @@ Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the fo
 * Numeric
 * Date time
 
-## Key Features
+## Key features
 
 * Axis supports different type of axis such as Category, Numeric and Date time.
-* Allow you to customize the chart axis line such as GridLines, TickLines and support to customize the style of the axis line by defining the [AxisLineStyle](). 
+* Allow you to customize the chart axis line such as gridlines, tick lines, and support to customize the style of the axis line by defining the [AxisLineStyle](). 
 * Axis allow you to customize the origin of the chart axis. 
-* Multiple Axes provide a way to arrange multiple series inside the same chart area, gives more space for X and Y axis.
+* Provides options to set padding for axis and axis visible range.
+* Multiple axes support provides a way to arrange multiple series inside the same chart area, gives more space for X and Y axis.
 * Axis can be customized with multiple levels of label by using its [MultiLevelLabels]() property. These labels are placed based on the provided start and end range values. You can add any number of labels to a chart axis.
+
