@@ -226,7 +226,7 @@ chart.Legend = new ChartLegend()
 
 By using the [DockPosition]() property, legends can be docked to the left, right, and top or bottom of the chart area. By default, the chart legend is docked at the top of the chart as mentioned earlier.
 
-To display the legend at the right, you can set the [DockPosition]() as [Right]() as shown in the following code sample.
+To display the legend at the left, you can set the [DockPosition]() as [Left]() as shown in the following code sample.
 
 {% tabs %}
 
