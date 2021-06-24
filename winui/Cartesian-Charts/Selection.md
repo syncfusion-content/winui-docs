@@ -11,9 +11,9 @@ documentation: ug
 
 Cartesian chart supports selection that allows to select a segment or series in the chart by using [ChartSelectionBehavior](). 
 
-## Enable segment selection
+## Enable selection
 
-To enable the selection in chart, create an instance of [ChartSelectionBehavior]() and add it to the `Behaviors` collection of Cartesian chart. And also need to set the [SelectionBrush]() property to highlight the segment in the Cartesian chart.
+To enable the selection in chart, create an instance of [ChartSelectionBehavior]() and add it to the `Behaviors` collection of cartesian chart. And also need to set the [SelectionBrush]() property to highlight the segment in the chart.
 
 {% tabs %}
 
@@ -57,9 +57,9 @@ this.Content = chart;
 
 ![Segment selection support in WinUI Cartesian Chart](Selection_images/WinUI_cartesian_chart_segment_selection.png)
 
-## Segment Selection in SplineSeries
+## Segment selection in linear type series
 
-In Linear type series the segment selection can be viewed by changing the data label interior.
+In linear type series the segment selection can be viewed by changing the data label interior.
 
 The following code example demonstrates the spline series segment selection by changing the data label interior.
 
@@ -109,7 +109,7 @@ this.Content = chart;
 
 ## Enable series selection
 
-To enable the selection in chart, create an instance of [ChartSelectionBehavior]() and add it to the `Behaviors` collection of Cartesian chart. And also need to set the [SeriesSelectionBrush]() property and [Type]() as `Series` to highlight the series in the [ChartSelectionBehavior]().
+Series selection is used to highlight a particular series when using multiple series. Series selection is enabled by setting the [Type]() property value to [Series]() in [ChartSelectionBehavior](). The [SeriesSelectionBrush]() property is used to set the brush color to highlight the series.
 
 The following code example demonstrates highlighting a series.
 
@@ -144,19 +144,9 @@ this.Content = chart;
 
 ![Series selection support in WinUI Cartesian Chart](Selection_images/WinUI_cartesian_chart_series_selection.png)
 
-## Selection Type
+## Multi-selection
 
-The selection features allows you to select segments or series in following selection type using [Type]() property of [ChartSelectionBehavior]().
-
-[Point]() - selects the individual data point.
-[Series]() - selects the entire series.
-[None]() - do not select the series or segment.
-[MultiPoint]() - Select the multiple segment data points.
-[MultiSeries]() - Select the multiple series.
-
-## Multi selection
-
-Cartesian chart provides support to select multiple segments by using [Type]() property as `MultiPoint`. 
+Cartesian chart provides support to select single or multiple segments/series by using the [Type]() property. [Type]() property with [MultiPoint]() value is used to select multiple segments and [MultiSeries]() is used to select multiple series. By default, the [Type]() value is [Point]().
 
 The following code snippet demonstrates multiple segment selection.
 
@@ -240,7 +230,7 @@ this.Content = chart;
 
 ## Selection on initial rendering
 
-Cartesian chart provides support to select a point programmatically on a chart using [SelectedIndex]() property of series.
+Cartesian chart provides support to select a point programmatically on a chart using the [SelectedIndex]() property of series.
 
 {% tabs %}
 
@@ -288,9 +278,9 @@ this.Content = chart;
 
 ![Initial selection rendering support in WinUI Cartesian Chart](Selection_images/WinUI_cartesian_chart_selected_index.png)
 
-Select a series programmatically on a chart using [SelectedSeriesIndex]() property of chart.
+Select a series programmatically on a chart using the [SelectedSeriesIndex]() property of the chart.
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -326,7 +316,7 @@ this.Content = chart;
 
 [Cursor]() property allows to define the cursor when mouse is hovered over the segment with segment selection enabled.
 
-The following code snippet demonstrates hand cursor in segment selection.
+The following code snippet demonstrates hand cursor in the segment selection.
 
 {% tabs %}
 
@@ -376,7 +366,7 @@ this.Content = chart;
 
 ## Events
 
-The following selection events are available in `SfCartesianChart`.
+The following selection events are available in the `SfCartesianChart`.
 
 ### SelectionChanging
 
