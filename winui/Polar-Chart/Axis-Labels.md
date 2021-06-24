@@ -22,12 +22,12 @@ The [`LabelsPosition`]() property is used to position the axis label either insi
 {% highlight xaml %}
 
 <chart:SfPolarChart Palette="BlueChrome">
-    
-<chart:SfPolarChart.SecondaryAxis>
-    <chart:NumericalAxis  LabelPosition="Outside">
-    </chart:NumericalAxis>
-</chart:SfPolarChart.SecondaryAxis>
-...
+    ...
+    <chart:SfPolarChart.SecondaryAxis>
+        <chart:NumericalAxis  LabelPosition="Outside">
+        </chart:NumericalAxis>
+    </chart:SfPolarChart.SecondaryAxis>
+    ...
 </chart:SfPolarChart>
 
 {% endhighlight %}
