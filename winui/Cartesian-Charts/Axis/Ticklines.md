@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Axis Tickline in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about Tickline for chart axis of Syncfusion WinUI Cartesian Chart(SfCartesianChart) control and its features.
+description: Learn here all about chart axis tick line and its customization in Syncfusion WinUI Cartesian Chart(SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Axis Tickline support in WinUI Cartesian Chart
+# Tick lines in WinUI Cartesian Chart
 
-Tick line are the small lines which is drawn on the axis line representing the axis labels. Tick lines will be drawn outside of the axis by default. 
+Tick lines are the small lines which is drawn on the axis line representing the axis labels. Tick lines will be drawn outside of the axis by default. 
 
-And Minor tick lines can be added by defining [SmallTicksPerInterval]() property. This property will add the tick lines to every interval.
+And also minor tick lines can be added to the axis by defining the [SmallTicksPerInterval]() property. This property will add the minor tick lines to every interval based on value.
 
 {% tabs %}
 
@@ -34,11 +34,11 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-N> For category axis, minor tick lines is not applicable since it is rendered based on index positions.
+N> For category axis, minor tick lines are not applicable. Since it is rendered based on index positions.
 
-## Tickline Size
+## Tick line size
 
-Tick lines height can be customized using [TickLineSize]() and [SmallTickLineSize]() property as shown in the below code snippet.
+Both major and minor tick lines height can be customized by using the [TickLineSize]() and [SmallTickLineSize]() properties respectively as shown in the below code snippet.
 
 {% tabs %}
 
@@ -63,18 +63,18 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Ticklines customization support in WinUI Chart](Axis_images/WinUI_Chart_Axis_small_ticklines.png)
+![Axis tick lines height support in WinUI Chart](Axis_images/WinUI_Chart_Axis_small_ticklines.png)
 
-## Position
+## Tick line position
 
 Tick lines can be positioned inside or outside of the chart area. By default the tick lines will positioned outside of the chart area. 
 
 | Property | Description |
 |--|--|
-|TickLinesPosition | Used to position the Major ticklines|
-|SmallTickLinesPosition| Used to position the Minor ticklines|
+|TickLinesPosition | Used to position the major tick lines|
+|SmallTickLinesPosition | Used to position the minor tick lines|
 
-The following code example demonstrates the positioning tick lines inside chart area.
+The following code example demonstrates the positioning of tick lines inside the chart area.
 
 {% tabs %}
 
@@ -98,11 +98,11 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Ticklines positioning support in WinUI Chart](Axis_images/WinUI_Chart_Axis_tickline_position.png)
+![Axis tick lines positioning support in WinUI Chart](Axis_images/WinUI_Chart_Axis_tickline_position.png)
 
 ## Customization
 
-Style can be applied to major tick lines using [MajorTickLineStyle]() and [MinorTickLineStyle]() property. The following code snippet demonstrates the styling of tick lines.
+Both major and minor tick lines can be customized by using the [MajorTickLineStyle]() and [MinorTickLineStyle]() properties respectively. The following code snippet demonstrates the styling of tick lines.
 
 {% tabs %}
 
@@ -134,4 +134,5 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Ticklines customization support in WinUI Chart](Axis_images/WinUI_Chart_Axis_tickline_style.png)
+![Axis tick lines customization support in WinUI Chart](Axis_images/WinUI_Chart_Axis_tickline_style.png)
+
