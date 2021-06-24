@@ -47,7 +47,7 @@ this.Content = chart;
 
 ![Area chart type in WinUI Cartesian Chart](Chart-types_images/WinUI_area_chart.png)
 
-## Spline Area Chart
+## Spline area Chart
 
 The [SplineAreaSeries]() connects a series of data points using smooth bezier line curves, with the underlying areas filled. The following code sample demonstrates how to initialize the [SplineAreaSeries]().
 
@@ -85,7 +85,7 @@ this.Content = chart;
 
 ![Spline area chart type in WinUI Cartesian Chart](Chart-types_images/WinUI_spline_area_chart.png)
 
-## Step Area Chart
+## Step area Chart
 
 The [StepAreaSeries]() is similar to [AreaSeries](), but it does not use the shortest distance to connect the two data points using bezier curves. Instead, this series uses vertical and horizontal lines to connect the data points in a series forming a step-like progression.
 
