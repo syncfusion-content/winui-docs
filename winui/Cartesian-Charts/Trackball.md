@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Trackball in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about trackball feature of Syncfusion WinUI Cartesian Chart(SfCartesianChart) control with vertical line support and more.
+description: Learn here all about trackball and its customziation in Syncfusion WinUI Cartesian Chart(SfCartesianChart) control
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Trackball in WinUI Cartesian Chart (SfCartesianChart)
 
-The [ChartTrackballBehavior]() allows you to track a data point closer to the cursor position. The x values are determined from the position of the vertical line in the axis and y values are determined from the points touching the vertical line in the series.
+The trackball allows you to track a data point closer to the cursor position. The x values are determined from the position of the vertical line in the axis and y values are determined from the points touching the vertical line in the series.
 
 ## Define trackball
 
-You can create an instance [`ChartTrackballBehavior`]() and add it to the [`Behaviors`]() collection.
+To add trackball in the chart, create an instance [`ChartTrackballBehavior`]() and add it to the [`Behaviors`]() collection of the chart.
 
 {% tabs %}
 
@@ -38,7 +38,7 @@ chart.Behaviors.Add(behavior);
 
 ![Trackball support in WinUI Cartesian chart](Trackball_images/WinUI_cartesian_chart_trackball.png)
 
-To view the Trackball in the particular Axis, you have to enable the ShowTrackballInfo property in that axis as in the following code snippet.
+To view the trackball label in the particular axis, you have to enable the [ShowTrackballInfo]() property in that axis as in the following code snippet.
 
 {% tabs %}
 
@@ -74,19 +74,16 @@ The default appearance of the Trackball in primary axis (CategoryAxis).
 
 The Trackball is composed of the following parts:
 
-1. Vertical Line
-
+1. Line
 2. Symbol
+3. Axis label
+4. Series label
 
-3. Axis Label
+## Trackball line
 
-4. Series Label
+The trackball line is visible, when you initialize the [ChartTrackballBehavior](). If you want to collapse the visibility of the trackball line, then you have to set [`ShowLine`]) to false.
 
-## Vertical Line
-
-The vertical line in the trackball is visible when you initialize the TrackballBehavior. If you want to collapse the visibility of the trackball line, then you have to set [`ShowLine`]) to false.
-
-The following code snippet explains how to collapse the visibility of Trackball line.
+The following code snippet explains how to collapse the visibility of line.
 
 {% tabs %}
 
@@ -111,14 +108,13 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Vertical line support in WinUI Cartesian chart](Trackball_images/WinUI_cartesian_chart_trackball_line.png)
+![Trackball line in WinUI Cartesian chart](Trackball_images/WinUI_cartesian_chart_trackball_line.png)
 
+### Customization of trackball line
 
-### Customization of Trackball line
+By using the [`LineStyle`]() property, you can customize the appearance of trackball line.
 
-Cartesian chart allows you to customize the appearance of trackball vertical line using the [`LineStyle`]() property.
-
-The following code snippet explains the customization of Trackball line.
+The following code snippet explains the customization of trackball line.
 
 {% tabs %}
 
@@ -159,7 +155,7 @@ chart.Behaviors.Add(Trackball);
 
 ## Symbol
 
-By default, the Trackball symbol is displayed as ellipse to change the default style of the symbol using [ChartTrackballStyle]() property.
+By default, the trackball symbol is displayed as ellipse. To change the default style of the symbol by using the [ChartTrackballStyle]() property.
 
 {% tabs %}
 
@@ -196,25 +192,20 @@ chart.Behaviors.Add(Trackball);
 
 {% endtabs %}
 
-![Trackball symbol customization in WinUI Cartesian chart](Trackball_images/WinUI_cartesian_chart_trackball_symbol_customization.png)
+![Trackball symbol in WinUI Cartesian chart](Trackball_images/WinUI_cartesian_chart_trackball_symbol_customization.png)
 
 ## Axis label
 
-The axis label will be viewed when the [`ShowTrackballInfo`]() property is set to true. If you want to collapse the visibility of axis label in trackball then you have to set ShowTrackballInfo as false.
-
-N>By default the value of [`ShowTrackballInfo`]() is false.
+The axis label will be viewed when the [`ShowTrackballInfo`]() property is set to true. The default value of [`ShowTrackballInfo`]() is false.
 
 ### Axis label alignment 
 
-The alignment of the axis label while moving Trackball can be defined using [`AxisLabelAlignment`]() property.
+The alignment of the axis label can be defined using the [`AxisLabelAlignment`]() property. By default, the axis label will positioned in center.
 
-`Auto` - Axis label is aligned in Near/Far positions based on the Trackball movement.
-
-`Far` - Axis label is positioned far from the position of Trackball.
-
-`Near` - Axis label is near to the position of Trackball.
-
-`Center` - Axis label is aligned to the center of the Trackball. By default, the axis label will positioned in center.
+* `Auto` - used to align in Near/Far positions based on the trackball movement.
+* `Far` - used to align in far from the position of trackball.
+* `Near` -used to align in near to the position of trackball.
+* `Center` - used to align to the center of the trackball.
 
 **Far**
 
@@ -272,7 +263,7 @@ chart.Behaviors.Add(behavior);
 
 ### Customization of axis label
 
-You can change the default appearance of the axis label in Trackball using [`TrackballLabelTemplate`]() property in `ChartAxis` as in the below code snippet.
+The appearance of the axis label can be customized by using the [`TrackballLabelTemplate`]() property in the chart axis as in the below code snippet.
 
 {% tabs %}
 
@@ -315,11 +306,11 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ### Series label
 
-When the Trackball is hovered over, you can view the label is also displayed over the series in addition the axis label.
+When the mouse hovered in the chart area, you can view the label displayed over the series in addition the axis label.
 
 **ShowTrackballInfo**
 
-The `ShowTrackballInfo` property of [Cartesian Series]() allows user to enable or disable the [Trackball]() label for corresponding series. By default, `ShowTrackballInfo` property is true. The property can be set as shown in the below code example:
+The [ShowTrackballInfo]() property is used to enable or disable the label for corresponding series. By default, [ShowTrackballInfo]() property is true. The property can be set as shown in the below code example:
 
 {% tabs %}
 
@@ -361,9 +352,9 @@ chart.Series.Add(series3);
 
 **Alignment of series label**
 
-The trackball label displayed over the series can be aligned using the [LabelHorizontalAlignment]() and [LabelVerticalAlignment]() properties. By default, the series label will be [LabelHorizontalAlignment]() is `Left` and [LabelVerticalAlignment]() is `Top`.
+The trackball label displayed over the series can be aligned using the [LabelHorizontalAlignment]() and [LabelVerticalAlignment]() properties. By default, the [LabelHorizontalAlignment]() is `Left` and [LabelVerticalAlignment]() is `Top`.
 
-The following code snippet explains how to align the series label to the center of the Trackball.
+The following code snippet explains how to align the series label to the center of the trackball.
 
 {% tabs %}
 
@@ -397,10 +388,9 @@ chart.Behaviors.Add(behavior);
 
 ![Alignment support for Trackball series label in WinUI Cartesian Chart](Trackball_images/WinUI_cartesian_chart_trackball_label_alignment.png)
 
+### Label display mode
 
-### Label Display Mode
-
-When there is a multiple series, by default, the Trackball series label will be displayed only for the nearest point. If you want to display all the y values with respect to the x value then the [LabelDisplayMode]() property is set to [FloatAllPoints]().
+When there is a multiple series, the trackball series label will be displayed only for the nearest point. If you want to display all the y values with respect to the x value then the [LabelDisplayMode]() property is set to [FloatAllPoints]().
 
 **FloatAllPoints**
 
@@ -462,7 +452,7 @@ chart.Behaviors.Add(behavior);
 
 **GroupAllPoints**
 
-[ChartTrackballBehavior]() supports to group the multiple selected Trackball points, and allows to display the Trackball points in a single Trackball label. It can be achieved by setting the [LabelDisplayMode]()) property of [ChartTrackballBehavior]() as GroupAllPoints.
+[ChartTrackballBehavior]() supports to group the multiple trackball points, and allows to display the trackball points in a single trackball label. It can be achieved by setting the [LabelDisplayMode]()) property of [ChartTrackballBehavior]() as [GroupAllPoints]().
 
 {% tabs %}
 
@@ -489,13 +479,13 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-The following screenshot illustrates the Trackball label for multiple series, when the [LabelDisplayMode]() property value is `GroupAllPoints`.
+The following screenshot illustrates the trackball label for multiple series, when the [LabelDisplayMode]() property value is `GroupAllPoints`.
 
 ![LabelDisplayMode support for Trackball in WinUI Cartesian Chart](Trackball_images/WinUI_cartesian_chart_trackball_group_all_points.png)
 
 ### Trackball label template
 
-[TrackballLabelTemplate]() property in [ChartSeries]() allows you to customize the appearance of series label in Trackball.
+[TrackballLabelTemplate]() property is used to customize the appearance of series label in trackball.
 
 {% tabs %}
 
@@ -551,10 +541,9 @@ chart.Series.Add(series);
 
 ![Trackball templte support for Trackball in WinUI Cartesian Chart](Trackball_images/WinUI_cartesian_chart_trackball_label_template.png)
 
+### Applying series interior to the label
 
-### Applying palette to the series label
-
-Palette or interior color of the Series is applied to the series label by setting [UseSeriesPalette]() to True as shown in the following code snippet.
+Interior color of the series is applied to the series label by setting [UseSeriesPalette]() to true as shown in the following code snippet.
 
 {% tabs %}
 
@@ -581,44 +570,5 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Applying palette to the Trackball series label in WinUI Cartesian Chart](Trackball_images/WinUI_cartesian_chart_trackball_label_series_palette.png)
+![Applying interior color to series label in WinUI Cartesian Chart](Trackball_images/WinUI_cartesian_chart_trackball_label_series_palette.png)
 
-## Events
-
-The following events are available in ChartTrackballBehavior:
-
-**PositionChanging**
-
-The [PositionChanging]() event occurs when the [Trackball]() position is changing from current mouse position to new mouse position. This argument contains the following information.
-
-* [Cancel]() - Gets or sets a value that indicates whether to show the Trackball on new mouse pointer position.
-* [PointInfos]() - Gets or sets the current [ChartPointInfo]().
-
-**PositionChanged**
-
-The [PositionChanged]() event occurs when the [Trackball]() position is changed from current mouse position to new mouse position. This argument contains the following information.
-
-* [PreviousPointInfos]() - Gets or sets the previous [ChartPointInfo]().
-* [CurrentPointInfos]() - Gets or sets the current [ChartPointInfo]().
-
-The [ChartPointInfo]() class contains the following properties to customize the appearance of Trackball label:
-
-* [Axis]() - Gets the associated axis in which the Trackball is activated.
-* [BaseX]() - Gets the x-initial coordinate of the Trackball label. 
-* [BaseY]() - Gets the y-initial coordinate of the Trackball label.
-* [BorderBrush]() - Gets or sets the border color of the Trackball label.
-* [Close]() - Gets the close value of the Trackball label when it is applicable.
-* [Foreground]() - Gets or sets the foreground color of the Trackball label.
-* [High]() - Gets the high value of the Trackball label when it is applicable.
-* [Interior]() - Gets or sets the interior color of the Trackball label.
-* [Item]() - Gets the respective underlying object of the data in which the Trackball is activated.
-* [Low]() - Gets the low value of the Trackball label when it is applicable.
-* [Median]() - Gets the median value when it is applicable.
-* [Open]() - Gets the open value of the Trackball label when it is applicable.
-* [PolygonPoints]() - Gets the point collection to render Trackball.
-* [Series]() - Gets the associated series in which the Trackball is activated.
-* [SeriesValues]() - Gets the SeriesValues in which the Trackball is activated.
-* [ValueX]() - Gets the x-value of the Trackball label.
-* [ValueY]() - Gets the y-value of the Trackball label.
-* [X]() - Gets the x-coordinate of the Trackball label.
-* [Y]() - Gets the y-coordinate of the Trackball label.
