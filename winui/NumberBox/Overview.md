@@ -9,7 +9,7 @@ documentation: ug
 
 # WinUI NumberBox Overview
 
-The [WinUI NumberBox](https://www.syncfusion.com/winui-controls/numberbox) control provides an intuitive and advanced text box control that allows you to enter numeric values in various formats such as currency, percent, numeric and much more. It validates the user input independent of the format and number type. It also validates the input when the control focus is lost or the `Enter` key pressed. It supports showing watermark text in the textbox.
+The [WinUI NumberBox](https://www.syncfusion.com/winui-controls/numberbox) control provides an intuitive and advanced editor control that allows you to enter numeric values in various formats such as currency, percent, numeric and much more. It validates the user input independent of the format and number type. It also validates the input when the control focus is lost or the `Enter` key pressed. It supports showing watermark text in the editor.
 
 ## Control Structure
 
@@ -17,9 +17,9 @@ The [WinUI NumberBox](https://www.syncfusion.com/winui-controls/numberbox) contr
 
 ## Key Features
 
-* `NumberBox` supports validation of input when the focus is lost or after pressing the `Enter` key.
+* Supports validation of input when the focus is lost or after pressing the `Enter` key.
 * Supports increasing and decreasing the value by `PageUp`, `PageDown`, `UpArrow`, `DownArrow` keys and mouse scrolling.
-* Supports increasing and decreasing the value using `SpinButton`.
+* Supports increasing and decreasing the value using `UpDown button`.
 * Supports to show values in various custom formats.
-* Supports to show values in formats based on the culture.
-* Supports to show watermark text when `NumberBox` has no value.
+* Supports to show values based on the different culture and regional settings.
+* Supports to show watermark text when `NumberBox` has empty or null value.
