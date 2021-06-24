@@ -13,7 +13,7 @@ This section explains how to change the value format of the `NumberBox` control 
 
 ## Change the currency value format
 
-You can format the value of a `NumberBox` control by configuring an instance of a formatting class and assigning it to the `NumberFormatter` property. You can also apply custom formats to the `NumberBox` control using the `CustomFormat` property. By default, the value of `NumberFormatter` and `CustomFormat` properties value is **null**.
+You can format the value of a `NumberBox` control by configuring an instance of a formatting class and assigning it to the `NumberFormatter` property. You can also apply custom formats to the `NumberBox` control using the `CustomFormat` property. By default, the value of `NumberFormatter` and `CustomFormat` properties are **null**.
 
 The following code shows how to change the display format of the value using the `CurrencyFormatter` class. 
 
@@ -60,7 +60,7 @@ sfNumberBox.CustomFormat ="$0.0000";
 
 ## Change the decimal value format
 
-You can apply decimal format the value of a `NumberBox` control by configuring an instance of a `DecimalFormatter` class and assigning it to the `NumberFormatter` property. You can also apply custom formats to the `NumberBox` control using the `CustomFormat` property. By default, the value of `NumberFormatter` and `CustomFormat` properties value is **null**.
+You can apply decimal format to the value of a `NumberBox` control by configuring an instance of a `DecimalFormatter` class and assigning it to the `NumberFormatter` property. You can also apply custom formats to the `NumberBox` control using the `CustomFormat` property. By default, the value of `NumberFormatter` and `CustomFormat` properties are **null**.
 
 {% tabs %}
 {% highlight XAML %}
@@ -104,7 +104,7 @@ sfNumberBox.CustomFormat ="#0.0000";
 
 ## Change the percent value format
 
-You can apply percent format to the value of a `NumberBox` control by configuring an instance of a `PercentFormatter` class and assigning it to the `NumberFormatter` property. You can also apply custom formats to the `NumberBox` control using the `CustomFormat` property. By default, the value of `NumberFormatter` and `CustomFormat` properties value is **null**.
+You can apply percent format to the value of a `NumberBox` control by configuring an instance of a `PercentFormatter` class and assigning it to the `NumberFormatter` property. You can also apply custom formats to the `NumberBox` control using the `CustomFormat` property. By default, the value of `NumberFormatter` and `CustomFormat` properties are **null**.
 
 {% tabs %}
 {% highlight XAML %}
@@ -149,7 +149,7 @@ sfNumberBox.CustomFormat ="0.0000%";
 
 ## Apply custom value format
 
-Using the `CustomFormat` property, you can apply custom formats to the value of `NumberBox` control. The value of the `CustomFormat` property is **null** by default. Using **N**, **C**, and **P** format values, we can apply numeric, currency, and percent custom formats for value in the `NumberBox` control. You can specify the fractional digits of the value by appending an integer suffix to these format values. 
+Using the `CustomFormat` property, you can apply different custom formats to the value of `NumberBox` control. The value of the `CustomFormat` property is **null** by default. Using **N**, **C**, and **P** format values, we can apply numeric, currency, and percent custom formats for value in the `NumberBox` control. You can specify the fractional digits of the value by appending an integer suffix to these format values. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -195,7 +195,7 @@ sfNumberBox.CustomFormat ="E3";
 
 ## Change culture
 
-You can apply custom format for value in the `NumberBox` control based on the `CultureInfo` class. By default, the culture value is **en-US**. Hence the custom currency format is applied for value with dollar (**$**) sign. You can customize the format to use the currency of `fr-FR` culture as shown below.
+You can apply custom formats to the value of `NumberBox` control based on the cultural and regional settings. By default, the culture value is **en-US**. Hence the custom currency format is applied for value with dollar (**$**) sign. You can customize the format to use the currency of `fr-FR` culture as shown below.
 
 {% tabs %}
 {% highlight XAML %}
