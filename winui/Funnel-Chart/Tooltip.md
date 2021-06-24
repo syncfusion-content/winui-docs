@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Tooltip in WinUI Chart control | Syncfusion
-description: This section explains about how to enable tooltip and its customization in Syncfusion WinUI Funnel Chart (SfFunnelChart) control
+description: This section explains about how to enable tooltip and its customization in Syncfusion WinUI Chart (SfFunnelChart) control
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
 ---
 
-# Tooltip in WinUI Funnel Chart (SfFunnelChart)
+# Tooltip in WinUI Chart (SfFunnelChart)
 
 Tooltip is used to display any information over segments. It appears at the data point position when the mouse hovers over any chart segment. It is set to display the metadata of the hovered segment or data point.
 
@@ -45,9 +45,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip support in WinUI funnel chart](Tooltip_images/WinUI_funnel_chart_tooltip.png)
-
-## Customization
+![Tooltip support in WinUI chart](Tooltip_images/WinUI_chart_tooltip.png)
 
 The [ChartTooltipBehavior]() is used to customize the tooltip. For customizing the tooltip, create an instance [ChartTooltipBehavior]() and add it to the `Behaviors` collection of [`SfFunnelChart`](). The following properties are used to customize the tooltip:
 
@@ -83,7 +81,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-### Background style customization
+## Background style
 
 The tooltip's fill and stroke color can be customized by using the [Style]() property. To define a [Style]() for tooltip, specify the style of `TargetType` as `Path`.
 
@@ -126,9 +124,9 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip background style customization in WinUI funnel chart](Tooltip_images/WinUI_funnel_chart_background_style_customization_tooltip.png)
+![Tooltip background style in WinUI Chart](Tooltip_images/WinUI_chart_tooltip_background.png)
 
-### Label style customization
+## Label style
 
 The tooltip label style can be customized by using the [LabelStyle]() property. To define a [Style]() for the tooltip label, specify the style of `TargetType` as `TextBlock`.
 
@@ -172,194 +170,9 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip label style customization in WinUI funnel chart](Tooltip_images/WinUI_funnelChart_label_style_customization_tooltip.png)
+![Tooltip label style in WinUI Chart](Tooltip_images/WinUI_chart_tooltip_label_style.png)
 
-### Tooltip alignment
-
-The tooltip can be aligned with respect to the cursor position using the [`HorizontalAlignment`]() and [`VerticalAlignment`]() properties.
-
-**HorizontalAlignment**
-
-Tooltip can be positioned horizontally left, right, or center to the cursor position. The following code example explains the positioning of tooltip to the left of the cursor.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfFunnelChart x:Name="chart" 
-                ShowTooltip="True" 
-                Palette="BlueChrome" 
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
-
-    <chart:SfFunnelChart.Behaviors>
-        <chart:ChartTooltipBehavior HorizontalAlignment="Left"/>
-    </chart:SfFunnelChart.Behaviors>
-
-</chart:SfFunnelChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfFunnelChart chart = new SfFunnelChart();
-ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
-tooltipBehavior.HorizontalAlignment = HorizontalAlignment.Left;
-chart.Behaviors.Add(tooltipBehavior);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Tooltip horizontal alignment support in WinUI Funnel Chart](Tooltip_images/WinUI_funnel_chart_tooltip_horizontal_alignment.png)
-
-**VerticalAlignment**
-
-Tooltip can be positioned vertically top, bottom, or center to the cursor position. The following code example explains the positioning of tooltip to the bottom of the cursor.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfFunnelChart x:Name="chart" 
-                ShowTooltip="True" 
-                Palette="BlueChrome" 
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
-
-    <chart:SfFunnelChart.Behaviors>
-        <chart:ChartTooltipBehavior VerticalAlignment="Bottom"/>
-    </chart:SfFunnelChart.Behaviors>
-
-</chart:SfFunnelChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfFunnelChart chart = new SfFunnelChart();
-ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
-tooltipBehavior.VerticalAlignment = VerticalAlignment.Bottom;
-chart.Behaviors.Add(tooltipBehavior);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Tooltip vertical alignment support in WinUI Funnel Chart](Tooltip_images/WinUI_funnel_chart_tooltip_vertical_alignment.png)
-
-### Tooltip offset
-
-The tooltip can be positioned at a particular distance from the cursor by using the [HorizontalOffset]() and [VerticalOffset]() properties.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfFunnelChart x:Name="chart" 
-                ShowTooltip="True" 
-                Palette="BlueChrome" 
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
-
-        <chart:SfFunnelChart.Behaviors>
-            <chart:ChartTooltipBehavior HorizontalOffset="40" VerticalOffset="40"/>
-        </chart:SfFunnelChart.Behaviors>
-
-</chart:SfFunnelChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfFunnelChart chart = new SfFunnelChart();
-ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
-tooltipBehavior.HorizontalOffset = 40;
-tooltipBehavior.VerticalOffset = 40;
-chart.Behaviors.Add(tooltipBehavior);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Offset support for tooltip in WinUI Funnel Chart](Tooltip_images/WinUI_funnel_chart_tooltip_offset.png)
-
-### Tooltip duration
-
-The [ShowDuration]() property is used to specify the duration time in milliseconds for which tooltip will be displayed.
-
-The following code example demonstrates the duration of the tooltip set as 5 seconds.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<chart:SfFunnelChart x:Name="chart" 
-                ShowTooltip="True" 
-                Palette="BlueChrome" 
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
-
-    <chart:SfFunnelChart.Behaviors>
-        <chart:ChartTooltipBehavior ShowDuration="5000"/>
-    </chart:SfFunnelChart.Behaviors>
-
-</chart:SfFunnelChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfFunnelChart chart = new SfFunnelChart();
-ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
-tooltipBehavior.ShowDuration = 5000;
-chart.Behaviors.Add(tooltipBehavior);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-N> By default, the tooltip will be displayed for 1000 milliseconds.
-
-### Tooltip animation
-
-Animation for tooltip can be set by using the [`EnableAnimation`]() property as shown in the following code sample.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<chart:SfFunnelChart x:Name="chart" 
-                ShowTooltip="True" 
-                Palette="BlueChrome" 
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
-
-    <chart:SfFunnelChart.Behaviors>
-        <chart:ChartTooltipBehavior EnableAnimation="True"/>
-    </chart:SfFunnelChart.Behaviors>
-
-</chart:SfFunnelChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfFunnelChart chart = new SfFunnelChart();
-ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
-tooltipBehavior.EnableAnimation = true;
-chart.Behaviors.Add(tooltipBehavior);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### Tooltip template
+## Template
 
 The funnel chart provides support to customize the appearance of the tooltip by using the [`TooltipTemplate`]() property. 
 
@@ -416,5 +229,5 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip template in WinUI Funnel Chart](Tooltip_images/WinUI_funnel_chart_tooltip_customization.png)
+![Tooltip template in WinUI Chart](Tooltip_images/WinUI_chart_tooltip_template.png)
 
