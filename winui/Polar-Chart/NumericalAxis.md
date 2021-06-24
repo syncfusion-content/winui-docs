@@ -40,7 +40,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 {% endtabs %}
 
-![NumericalAxis support in WinUI Polar Chart](Axis_images/Axis_img42.jpeg)
+![NumericalAxis support in WinUI Polar Chart](Axis_Images/Axis_img42.jpeg)
 
 
 **Customizing** **the** **NumericalAxis** **Range**
@@ -52,7 +52,7 @@ chart.SecondaryAxis = new NumericalAxis();
 {% highlight xaml %}
 
 <syncfusion:SfPolarChart.SecondaryAxis>
-    <syncfusion:NumericalAxis Maximum="100" Minimum="0">
+    <syncfusion:NumericalAxis Minimum="10" Maximum="90" Interval="20">
     </syncfusion:NumericalAxis>
 </syncfusion:SfPolarChart.SecondaryAxis>
 
@@ -64,16 +64,16 @@ SfPolarChart chart = new SfPolarChart();
 ...
 chart.SecondaryAxis = new NumericalAxis()
 {
-    Maximum = 100,
-    Minimum = 0,
+    Maximum = 90,
+    Minimum = 10,
+    Interval = 20,
 };
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![NumericalAxis customization support in WinUI Polar Chart](Axis_images/Axis_img43.jpeg)
-
+![NumericalAxis customization support in WinUI Polar Chart](Axis_Images/WinUI_PolarChart_NumericalAxis_AxisRange.png)
 
 N> If  minimum or maximum value is set, the other value is calculated by default internally.
 
@@ -89,6 +89,7 @@ N> If  minimum or maximum value is set, the other value is calculated by default
     <syncfusion:NumericalAxis StartRangeFromZero="True">
     </syncfusion:NumericalAxis>
 </syncfusion:SfPolarChart.SecondaryAxis>
+...
 
 {% endhighlight %}
 
@@ -105,7 +106,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis customization support in WinUI Polar Chart](Axis_images/Axis_img44.jpeg)
+![NumericalAxis customization support in WinUI Polar Chart](Axis_Images/WinUI_PolarChart_NumericalAxis_StartRangeFromZero.png)
 
 
 N> By default, Range is calculated between the minimum and maximum value of the data points.
