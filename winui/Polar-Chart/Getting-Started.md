@@ -72,7 +72,6 @@ public class Model
 
 {% endtabs %} 
 
-
 Next, create a view model class and initialize a list of `Model` objects as follows.
 
 {% tabs %}  
@@ -243,18 +242,19 @@ The [DataLabelSettings]() property of [PolarAreaSeries]() can be used to enable 
 
 {% highlight xaml %}
 
-<chart:PolarAreaSeries>
-. . .
-    <chart:PolarAreaSeries.DataLabelSettings>
-        <chart:PolarDataLabelSettings Visible="True"/>
-    </chart:PolarAreaSeries.DataLabelSettings>
+<chart:PolarAreaSeries ShowDataLabels="True"
+                    ItemsSource="{Binding Data}" 
+                    XBindingPath="Category" 
+                    YBindingPath="Value">
 </chart:PolarAreaSeries>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-series.DataLabelSettings = new PolarDataLabelSettings() { Visible = true };
+PolarAreaSeries series = new PolarAreaSeries();
+series.ShowDataLabels = true;
+...
 
 {% endhighlight %}
 
@@ -334,10 +334,8 @@ The following code example gives you the complete code of above configurations.
         <chart:PolarAreaSeries ItemsSource="{Binding Data}" 
                          XBindingPath="Category"
                          YBindingPath="Value"
-                         Label="Sales">
-            <chart:PolarAreaSeries.DataLabelSettings>
-                <chart:PolarDataLabelSettings Visible="True"/>
-            </chart:PolarAreaSeries.DataLabelSettings>
+                         Label="Sales"
+                         ShowDataLabels = true>
         </chart:PolarAreaSeries>
     </chart:SfPolarChart.Series>
 </chart:SfPolarChart>
@@ -363,8 +361,7 @@ public sealed partial class MainWindow : Window
         series.XBindingPath = "Category";
         series.YBindingPath = "Value";
         series.Label = "Sales";
-
-        series.DataLabelSettings = new PolarDataLabelSettings() { Visible = true };
+        series.ShowDataLabels = true;
 
         series.SetBinding(
             ChartSeriesBase.ItemsSourceProperty, 

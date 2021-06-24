@@ -11,7 +11,7 @@ documentation: ug
 
 `Header` property is used to define the title for the chart.
 
-% tabs %}   
+{% tabs %}   
 
 {% highlight xaml %}
 
