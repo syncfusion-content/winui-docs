@@ -40,7 +40,7 @@ chart.Behaviors.Add(zooming);
 
 ## Zooming the chart area
 
-Zooming the chart area can acheived in different by pinch zooming, mouse wheel zooming, selection zooming and using the properties [ZoomFactor]() and [ZoomPosition]().
+Zooming the chart area can be achieved in different ways by pinch zooming, mouse wheel zooming, selection zooming, and also using the properties [ZoomFactor]() and [ZoomPosition]().
 
 ### Pinch zooming
 
