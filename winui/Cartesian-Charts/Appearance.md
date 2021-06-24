@@ -40,10 +40,7 @@ The following code example shows you how to set the [Metro]() palette for the ch
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart x:Name="chart" Palette="Metro"
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
+<chart:SfCartesianChart x:Name="chart" Palette="Metro">
 
 </chart:SfCartesianChart>
 
@@ -87,7 +84,7 @@ this.Content = chart;
 
 ### Applying palette to segment
 
-Cartesian chart provides support to set the palette to series for applying predefined brushes to the segment. The following code example shows you how to set the [Metro]() palette for the series.
+Cartesian chart provides support to set the palette to series for applying predefined brushes to the segment. The following code example shows you how to set the [GreenChrome]() palette for the series.
 
 {% tabs %}
 

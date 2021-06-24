@@ -114,6 +114,7 @@ The following code example explains how to apply the style for tooltip backgroun
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+chart.ShowTooltip = true;
 Style style = new Style(typeof(Path));
 style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Black)));
 style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)));
