@@ -55,7 +55,7 @@ chart.Series.Add(series);
 
 ## Show zero size bubbles
 
-The zero size bubble segments can be enabled or disabled by using the [`ShowZeroBubbles`]() property. The defaule of this property is `True`.
+The zero size bubble segments can be enabled or disabled by using the [`ShowZeroBubbles`]() property. The default value of this property is `True`.
 
 {% tabs %}
 
