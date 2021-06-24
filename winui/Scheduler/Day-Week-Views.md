@@ -302,6 +302,48 @@ N>
 *  The `TimeInterval` value will be set when the `MinimumAppointmentDuration` is greater than the `TimeInterval` with lesser appointment duration.
 * All-day Appointment does not support `MinimumAppointmentDuration`.
 
+## Minimum display appointments count in all day panel
+You can customize the number of appointments displayed in a all-day panel using the `MinimumAllDayAppointmentsCount` property of `DaysViewSettings` in Scheduler. By default, the appointment display count is 2 and all-day panel have more than 2 appointments, two appointment will be displayed and remaining appointments will be displayed as appointment counts.
+
+{% tabs %}
+{% highlight xaml %}
+<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+    <scheduler:SfScheduler.DaysViewSettings>
+        <scheduler:DaysViewSettings MinimumAllDayAppointmentsCount="3"/>
+    </scheduler:SfScheduler.DaysViewSettings>
+</scheduler:SfScheduler>
+{% endhighlight %}
+{% highlight c# %}
+this.Schedule.ViewType = SchedulerViewType.Week;
+this.Schedule.DaysViewSettings.MinimumAllDayAppointmentsCount = 3;
+{% endhighlight %}
+{% endtabs %}
+
+### Customize more appointments indicator in all day panel
+You can customize the default appearance of more appointments indicator in all day panel by using the `AllDayMoreAppointmentsIndicatorTemplate` property of `DaysViewSettings`.
+
+{% tabs %}
+{% highlight xaml %}
+<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+    <scheduler:SfScheduler.DaysViewSettings>
+        <scheduler:DaysViewSettings>
+            <scheduler:DaysViewSettings.AllDayMoreAppointmentsIndicatorTemplate>
+                <DataTemplate >
+                    <StackPanel Background="#EAEAEA" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <TextBlock Text="{Binding}" Foreground="Black" TextAlignment="Center" VerticalAlignment="Center">
+                        </TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </scheduler:DaysViewSettings.AllDayMoreAppointmentsIndicatorTemplate>
+        </scheduler:DaysViewSettings>
+    </scheduler:SfScheduler.DaysViewSettings>
+</scheduler:SfScheduler>
+{% endhighlight %}
+{% endtabs %}
+
+![all-day-appointment-panel-display-count-appearance-customization-in-WinUI-scheduler-days-week-views](DayandWeekViews_Images/all-day-appointment-panel-display-count-appearance-customization-in-WinUI-scheduler-days-week-views.png)
+
+
 ## Time ruler text formatting
 
 Customize the format for the labels mentioning the time by setting the [TimeRulerFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerFormat) property of [DayViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) in Scheduler.
@@ -315,6 +357,10 @@ this.Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 {% endtabs %}
 
 ![time-ruler-text-formatting-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/time-ruler-text-formatting-in-winui-scheduler.png)
+
+N>
+* You can customize appointment editor time format based on scheduler time ruler format and culture.
+* By default, the scheduler time ruler format is `hh:mm tt` and appointment editor time picker format `h tt.` 
 
 ## View header
 
