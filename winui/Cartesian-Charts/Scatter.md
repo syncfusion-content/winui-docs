@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scatter in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about Scatter feature of Syncfusion WinUI Cartesian Chart(SfCartesianChart) control with key features and more.
+title: Scatter Chart in WinUI Cartesian Chart control | Syncfusion
+description: Learn here all about the scatter chart and its features in Syncfusion WinUI Cartesian Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -9,7 +9,11 @@ documentation: ug
 
 # Scatter Chart in WinUI Cartesian Charts (SfCartesianChart)
 
-ScatterSeries is similar to bubble series, where each point being represented by an ellipse with equal size. To render a scatter chart, create an instance of [ScatterSeries](), and add it to the series collection property of [SfCartesianChart](). This size can be defined by using [ScatterHeight]() and [ScatterWidth]() properties.
+The scatter chart is similar to bubble chart, where each data point being represented by a circle with equal size.
+
+## Scatter Chart
+
+To render a scatter chart, create an instance of [ScatterSeries](), and add it to the [Series]() collection property of [SfCartesianChart](). The segment size can be defined by using the [ScatterHeight]() and [ScatterWidth]() properties.
 
 {% tabs %}
 
