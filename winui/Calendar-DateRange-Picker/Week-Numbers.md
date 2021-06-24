@@ -85,10 +85,10 @@ sfCalendarDateRangePicker.WeekNumberRule = CalendarWeekRule.FirstFullWeek;
 
 ![WinUI Calendar DateRange Picker apply week number format](Week_Numbers_images/winui-calendardaterangepicker-custom-format.png)
 
-## Customize the week number appearance
+## Customize the week number and name of days of the week appearance
 
 You can show week number in `Calendar DateRange Picker` control by setting the value of `ShowWeekNumbers` property  as **true**.
-`Calendar DateRange Picker` control also allows you to customize the template of the week numbers using `WeekNumberTemplate` property and the template of week day name using `WeekNameTemplate` property in `CalendarItemTemplateSelector` class. The default value of `ShowWeekNumbers` property is **false**.
+`Calendar DateRange Picker` control also allows you to customize the template of the week numbers using `WeekNumberTemplate` property and the template of name of days of the week using `WeekNameTemplate` property in `CalendarItemTemplateSelector` class. The default value of `ShowWeekNumbers` property is **false**.
 
 {% tabs %}
 {% highlight XAML %}

@@ -85,10 +85,10 @@ sfCalendar.WeekNumberRule = CalendarWeekRule.FirstFullWeek;
 
 ![WinUI Calendar apply week number format](Week_Numbers_images/winui-calendar-weeknumber-format.png)
 
-## Customize the week number and week dayname appearance
+## Customize the week number and name of days of the week appearance
 
 You can show week number in `Calendar` control by setting the value of `ShowWeekNumbers` property  as **true**.
-`Calendar` control also allows you to customize the template of the week numbers using `WeekNumberTemplate` property and template of the week day names using `WeekNameTemplate` property in the `CalendarItemTemplateSelector` class. The default value of `ShowWeekNumbers` property is **false**.
+`Calendar` control also allows you to customize the template of the week numbers using `WeekNumberTemplate` property and template of name of days of the week using `WeekNameTemplate` property in the `CalendarItemTemplateSelector` class. The default value of `ShowWeekNumbers` property is **false**.
 
 {% tabs %}
 {% highlight XAML %}
