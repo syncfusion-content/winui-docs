@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Zooming and Panning in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about Zooming and Panning feature of Syncfusion WinUI Cartesian Chart(SfCartesianChart) control and Events.
+description: Learn here all about Zooming and Panning feature of Syncfusion WinUI Cartesian Chart(SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 # Zooming and Panning in WinUI Cartesian Chart (SfCartesianChart)
 
-SfCartesianChart allows you to zoom the chart area with the help of the zoom feature. This behavior is mostly used to view the data point in the specific area, when there are a number of data points inside the chart.
+[SfCartesianChart]() allows you to zoom the chart area with the help of the zoom feature. This behavior is mostly used to view the data point in the specific area, when there are large number of data points inside the chart.
 
 Zooming and panning provides you to take a close-up look of the data point plotted in the series
 
-## Define ZoomPanBehavior
+## Enable zooming
 
-To enable the Zooming and Panning in chart, create an instance of [ChartZoomPanBehavior]() and add it to the `Behaviors` collection of Cartesian chart.
+To enable the zooming and panning in the chart, create an instance of [ChartZoomPanBehavior]() and add it to the `Behaviors` collection of [SfCartesianChart]().
 
 {% tabs %}
 
@@ -38,40 +38,38 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-## Zooming the ChartArea
+## Zooming the chart area
 
-### Zooming by setting ZoomFactor and ZoomPosition
+Zooming the chart area can acheived in different by pinch zooming, mouse wheel zooming, selection zooming and using the properties [ZoomFactor]() and [ZoomPosition]().
 
-[ZoomFactor]() defines the percentage of visible range from the total range of axis values. [ZoomPosition]() defines the ranges of values that need to be displayed as a result of [ZoomFactor](). 
+### Pinch zooming
 
-The following code example demonstrates the zooming the chart axis by setting zoom position and zoom factor.
+Pinch zooming is enable by using the [EnablePinchZooming]() property to true as shown in the below code snippet.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
-<chart:SfCartesianChart.PrimaryAxis>
-    <chart:CategoryAxis ShowGridLines="False" ZoomFactor="0.3" ZoomPosition="0.5"/>
-</chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.Behaviors>
+    <chart:ChartZoomPanBehavior EnablePinchZooming="True"/>
+</chart:SfCartesianChart.Behaviors>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-chart.PrimaryAxis = new CategoryAxis()
+ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-    ShowGridLines = false,
-    ZoomFactor = 0.3,
-    ZoomPosition = 0.5
+    EnablePinchZooming = true
 };
+
+chart.Behaviors.Add(zooming);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Zooming support in WinUI Cartesian Chart](Zooming-and-panning_images/WinUI_cartesian_chart_zooming.png)
-
-### Mouse Wheel Zooming
+### Mouse wheel zooming
 
 Zooming can be performed by mouse wheel action by setting [`EnableMouseWheelZooming`]() property to true.
 
@@ -98,65 +96,9 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-### Pinch Zooming
+### Selection zooming
 
-If you want to zoom using fingers by touch, then you have to set [EnablePinchZooming]() property to true as shown in the below code snippet.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<chart:SfCartesianChart.Behaviors>
-    <chart:ChartZoomPanBehavior EnablePinchZooming="True"/>
-</chart:SfCartesianChart.Behaviors>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
-{
-    EnablePinchZooming = true
-};
-
-chart.Behaviors.Add(zooming);
-
-{% endhighlight %}
-
-{% endtabs %}
-
- ### Zooming Relative to Cursor
-
-To enable the zooming relative to cursor position you can set [ZoomRelativeToCursor]() property to true. This support is applicable only for mouse wheel zooming.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<chart:SfCartesianChart.Behaviors>
-    <chart:ChartZoomPanBehavior ZoomRelativeToCursor="True"/>
-</chart:SfCartesianChart.Behaviors>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
-{
-    ZoomRelativeToCursor = true
-};
-
-chart.Behaviors.Add(zooming);
-
-{% endhighlight %}
-
-{% endtabs %}
-
- ### SelectionZooming
-
-SelectionZooming helps us to zoom a particular area by selecting the region using rectangle. To enable the selection, you have to set [EnableSelectionZooming]() property to true.
-
-The following code snippet demonstrated selection zooming.
+Selection zooming is used to zoom a particular area by selecting the region using rectangle. To enable the selection zooming, you have to set [EnableSelectionZooming]() property to true.
 
 {% tabs %}
 
@@ -183,8 +125,7 @@ chart.Behaviors.Add(zooming);
 
 ![Selection zooming support in WinUI Cartesian Chart](Zooming-and-panning_images/WinUI_cartesian_chart_selection_zooming.png)
 
-
-### Customization of Selection Rectangle
+### Customization of selection rectangle
 
 Selection rectangle can be customized by setting the following properties: 
 
@@ -222,12 +163,42 @@ chart.Behaviors.Add(zooming);
 
 ![Customizing selection rectangle support in WinUI Cartesian Chart](Zooming-and-panning_images/WinUI_cartesian_customizing_selection_rectangle_zooming.png)
 
+### Zooming by setting ZoomFactor and ZoomPosition
 
-### Zooming Mode
+[ZoomFactor]() defines the percentage of visible range from the total range of axis values. [ZoomPosition]() defines the position for ranges of values that need to be displayed as a result of [ZoomFactor](). 
 
-The zooming can be done both horizontally and vertically. The zooming direction is defined using [ZoomMode]() property.
+The following code example demonstrates the zooming the chart area by setting zoom position and zoom factor.
 
-Following code example illustrates how to restrict the chart to be zoomed only along horizontal axis,
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart.PrimaryAxis>
+    <chart:CategoryAxis ShowGridLines="False" ZoomFactor="0.3" ZoomPosition="0.5"/>
+</chart:SfCartesianChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+    ShowGridLines = false,
+    ZoomFactor = 0.3,
+    ZoomPosition = 0.5
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Zooming support in WinUI Cartesian Chart](Zooming-and-panning_images/WinUI_cartesian_chart_zooming.png)
+
+## Zooming mode
+
+The zooming can be done both horizontally and vertically. The zooming direction is defined by using the [ZoomMode]() property.
+
+Following code example illustrates how to restrict the chart to be zoomed only along horizontal axis.
 
 {% tabs %}
 
@@ -254,8 +225,7 @@ chart.Behaviors.Add(zooming);
 
 ![Zoom mode support in WinUI Cartesian Chart](Zooming-and-panning_images/WinUI_cartesian_chart_zoom_modeX.png)
 
-
-Following code example illustrates how to restrict the chart to be zoomed only along vertical axis,
+Following code example illustrates how to restrict the chart to be zoomed only along vertical axis.
 
 {% tabs %}
 
@@ -282,9 +252,9 @@ chart.Behaviors.Add(zooming);
 
 ![Zoom mode support in WinUI Cartesian Chart](Zooming-and-panning_images/WinUI_cartesian_chart_zoom_modeY.png)
 
-### Maximum Zoom Level
+## Maximum zoom level
 
-The [MaximumZoomLevel]() property defines the maximum zooming level. Zooming will be stopped after reaching this value.
+The [MaximumZoomLevel]() property defines the maximum zooming level of the chart area. Zooming will be stopped after reaching this value.
 
 {% tabs %}
 
@@ -310,7 +280,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-## Panning the ChartArea
+## Panning the chart area
 
 Panning feature allows moving the visible area of the chart when it is zoomed in. To enable panning, you have to set [EnablePanning]() property to true.
 
@@ -338,30 +308,4 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-## Events
 
-The following events are available in SfCartesianChart for ChartZoomPanBehavior:
-
-### ZoomChanging
-
-The [ZoomChanging]() event occurs when users start zooming the chart. This is a cancelable event. This argument contains the following information.
-
-* [Axis]() - Gets an instance of the axis whose range is changed through zooming. This event is triggered for each axis in the chart.
-* [Cancel]() - Gets or Sets a value that indicates whether the zooming should be canceled.
-* [CurrentFactor]() - Gets the current zoom factor of the axis.
-* [CurrentPosition]() - Gets the current zoom position of the axis.
-* [OldRange]() - Gets the old visible range of the axis.
-* [PreviousFactor]() - Gets the previous zoom factor of the axis.
-* [PreviousPosition]() - Gets the previous zoom position of the axis.
-
-### ZoomChanged
-
-The [`ZoomChanged`]() event occurs after the zooming has been completed. This argument contains the following information.
-
-* [Axis]() - Gets an instance of the axis whose range is changed through zooming. This event is triggered for each axis in the chart.
-* [CurrentFactor]() - Gets the current zoom factor of the axis.
-* [CurrentPosition]() - Gets the current zoom position of the axis.
-* [OldRange]() - Gets the old visible range of the axis.
-* [NewRange]() - Gets the new visible range of the axis.
-* [PreviousFactor]() - Gets the previous zoom factor of the axis.
-* [PreviousPosition]() - Gets the previous zoom position of the axis.
