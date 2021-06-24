@@ -69,7 +69,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ## Custom Labels
 
-Chart axis allows user to define the own axis labels. [Content]() and [Position]() property of [ChartAxisLabel]() used to defines the lable using [CustomLabels]() property as in the below code snippet.
+Chart axis allows user to define the own axis labels. [Content]() and [Position]() property of [ChartAxisLabel]() used to defines the label using [CustomLabels]() property as in the below code snippet.
 
 {% tabs %}
 
