@@ -9,7 +9,7 @@ documentation: ug
 
 # UpDown Button (SpinButton) in WinUI NumberBox
 
-This section describes how to change value in the `NumberBox` control using keys, mouse scroll and the SpinButton.
+This section describes how to change value in the `NumberBox` control using keys, mouse scrolling and the updown button.
 
 ## Increase or decrease value
 
@@ -37,9 +37,9 @@ sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 
 ## UpDown button placement
 
-You can increase or decrease the value of the `NumberBox` control using the updown button. By default, the value of `UpDownPlacementMode` property is **Hidden**. You can change the SpinButton position by setting **Inline** or **Compact** values.
+You can increase or decrease the value of the `NumberBox` control using the updown button. By default, the value of `UpDownPlacementMode` property is **Hidden**. You can change the updown button position by assigning the value `UpDownPlacementMode` property as **Inline** or **Compact**.
 
-N> When using the spin button, the `NumberBox` value changes based on the value of the `SmallChange` property.
+N> When using the updown button, the `NumberBox` control value changes based on the value of the `SmallChange` property.
 
 {% tabs %}
 {% highlight XAML %}
