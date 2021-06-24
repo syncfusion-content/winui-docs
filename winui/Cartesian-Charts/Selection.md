@@ -13,7 +13,7 @@ Cartesian chart supports selection that allows to select a segment or series in 
 
 ## Enable selection
 
-To enable the selection in chart, create an instance of [ChartSelectionBehavior]() and add it to the `Behaviors` collection of cartesian chart. And also need to set the [SelectionBrush]() property to highlight the segment in the chart.
+To enable the selection in chart, create an instance of [ChartSelectionBehavior]() and add it to the `Behaviors` collection of [SfCartesianChart](). And also need to set the [SelectionBrush]() property to highlight the segment in the chart.
 
 {% tabs %}
 
@@ -152,7 +152,7 @@ The following code snippet demonstrates multiple segment selection.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfCartesianChart>
 . . .
@@ -234,7 +234,7 @@ Cartesian chart provides support to select a point programmatically on a chart u
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfCartesianChart>
 . . .
@@ -320,7 +320,7 @@ The following code snippet demonstrates hand cursor in the segment selection.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfCartesianChart>
 . . . 
