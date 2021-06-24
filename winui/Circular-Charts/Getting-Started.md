@@ -249,8 +249,6 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %} 
 
-{% tabs %} 
-
 ![Legend in WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries_Legend.png)
 
 ## Enable tooltip
