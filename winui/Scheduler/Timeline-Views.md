@@ -344,8 +344,8 @@ this.Schedule.TimelineViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 ![time-ruler-text-formatting-in-winui-scheduler](TimelineViews_Images/time-ruler-text-formatting-in-winui-scheduler.png)
 
 N>
-* You can customize appointment editor time format based on scheduler time ruler format and culture.
-* By default, the scheduler time ruler format is `h tt` and the appointment editor time picker format is `hh:mm tt.`
+* You can customize the appointment editor time format based on the scheduler time ruler format and culture.
+* By default, the scheduler time ruler format is `h tt` and the appointment editor time picker format is `hh:mm tt`.
 
 ## View header
 

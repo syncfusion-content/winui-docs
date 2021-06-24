@@ -304,7 +304,7 @@ N>
 
 ## Minimum display appointments count in all day panel
 
-You can customize the number of appointments displayed in a all-day panel using the `MinimumAllDayAppointmentsCount` property of `DaysViewSettings` in Scheduler. By default, the appointment display count is 2 and all-day panel have more than 2 appointments, two appointment will be displayed and remaining appointments will be displayed as appointment counts.
+You can customize the number of appointments displayed in an all-day panel using the `MinimumAllDayAppointmentsCount` property of `DaysViewSettings` in the Scheduler. By default, the appointment display count is 2, and all-day panels have more than 2 appointments, two appointments will be displayed and the remaining appointments will be displayed as appointment counts.
 
 {% tabs %}
 {% highlight xaml %}
@@ -322,7 +322,7 @@ this.Schedule.DaysViewSettings.MinimumAllDayAppointmentsCount = 3;
 
 ### Customize more appointments indicator in all day panel
 
-You can customize the default appearance of more appointments indicator in all day panel by using the `AllDayMoreAppointmentsIndicatorTemplate` property of `DaysViewSettings`.
+You can customize the default appearance of more appointments indicator in an all-day panel by using the `AllDayMoreAppointmentsIndicatorTemplate` property of `DaysViewSettings`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -361,8 +361,8 @@ this.Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 ![time-ruler-text-formatting-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/time-ruler-text-formatting-in-winui-scheduler.png)
 
 N>
-* You can customize appointment editor time format based on scheduler time ruler format and culture.
-* By default, the scheduler time ruler format is `h tt` and the appointment editor time picker format is `hh:mm tt.`
+* ou can customize the appointment editor time format based on the scheduler time ruler format and culture.
+* By default, the scheduler time ruler format is `h tt` and the appointment editor time picker format is `hh:mm tt`.
 
 ## View header
 
