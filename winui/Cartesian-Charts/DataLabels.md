@@ -76,13 +76,6 @@ series.DataLabelSettings = new CartesianDataLabelSettings()
 
 {% endtabs %}
 
-| Context values | Description |
-|---|--|---|
-
-| Percentage | Displays the percentage value of series point among other points |
-| XValue | Displays the X value of series point |
-| YValue | Displays the Y value of series point |
-
 ## Customization
 
 The following properties are used to customize the data label.
