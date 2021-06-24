@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fast Column Bitmap Series in WinUI Chart Cartesian control | Syncfusion
+title: Fast Column Series in WinUI Cartesian Chart control | Syncfusion
 description: Learn here all about Fast Bitmap Series feature of Syncfusion WinUI Chart(SfCartesianChart) control and more.
 platform: WinUI
 control: SfCartesianChart
