@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Column in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about Column and Bar support in Syncfusion WinUI Cartesian Chart(SfCartesianChart) control with segment spacing and more.
+title: Column Chart in WinUI Cartesian Chart control | Syncfusion
+description: Learn here all about column and bar chart support in Syncfusion WinUI Cartesian Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Column Chart in WinUI Cartesian Charts (SfCartesianChart)
+# Column Chart in WinUI Cartesian Chart (SfCartesianChart)
 
-Column charts plot discrete rectangles for the given values. To render a column chart, create an instance of [ColumnSeries](), and add it to the series collection property of [SfCartesianChart](). The following properties can be used to customize the appearance:
+Column charts is used to plot discrete rectangles for the given data point values. To render a column chart, create an instance of [ColumnSeries](), and add it to the [Series]() collection property of [SfCartesianChart]().
 
 {% tabs %}
 
@@ -45,9 +45,11 @@ this.Content = chart;
 
 ![Column chart type in WinUI Cartesian Chart](Chart-Types_images/WinUI_column_chart.png)
 
-## SegmentSpacing
+## Segment spacing
 
-The spacing property is used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively.
+The [SegmentSpacing]() property is used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively.
+
+The following code sample demonstrates how to set segment spacing for column series.
 
 {% tabs %}
 
@@ -82,4 +84,5 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Column spacing chart type in WinUI Cartesian Chart](Chart-Types_images/WinUI_column_chart_segment_spacing.png)
+![Column segment spacing in WinUI Chart](Chart-Types_images/WinUI_column_chart_segment_spacing.png)
+
