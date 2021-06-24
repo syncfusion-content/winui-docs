@@ -82,7 +82,7 @@ The [ChartTooltipBehavior]() is used to customize the tooltip. For customizing t
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfCartesianChart.Behaviors>
     <chart:ChartTooltipBehavior/>
@@ -110,7 +110,7 @@ The following code example explains how to apply the style for tooltip backgroun
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfCartesianChart>
     <chart:SfCartesianChart.Resources>
@@ -186,7 +186,7 @@ The following code example explains how to apply the style for a tooltip label.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfCartesianChart>
     <chart:SfCartesianChart.Resources>
@@ -323,8 +323,6 @@ this.Content = chart;
 {% endtabs %}
 
 ![Tooltip horizontal alignment support in WinUI Cartesian Chart](Tooltip_images/WinUI_cartesian_chart_tooltip_horizontal_alignment.png)
-
-N> By default the horizontal alignment is center for the tooltip.
 
 **VerticalAlignment**
 
@@ -463,7 +461,7 @@ The following code example demonstrates the duration of the tooltip set as 5 sec
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfCartesianChart Height="388"  Width="500" Palette="BlueChrome">
 . . .
@@ -527,7 +525,7 @@ Animation for tooltip can be set by using the [`EnableAnimation`]() property as 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfCartesianChart Height="388"  Width="500" Palette="BlueChrome">
 . . .
@@ -585,7 +583,7 @@ this.Content = chart;
 
 ### Tooltip template
 
-The Cartesian chart provides support to customize the appearance of the tooltip by using the [`TooltipTemplate`]() property. 
+The [SfCartesianChart]() provides support to customize the appearance of the tooltip by using the [`TooltipTemplate`]() property. 
 
 The following code example explains how to display both x-value and y-value in tooltip using a template.
 
@@ -631,7 +629,6 @@ The following code example explains how to display both x-value and y-value in t
 {% endhighlight %}
 
 {% highlight c# %}
-
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
