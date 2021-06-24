@@ -32,9 +32,9 @@ N> Elite, SandyBeach and LightCandy palettes are not supported in the bitmap ser
 
 ### Applying palette
 
-Each palette applies a set of predefined brushes to the Cartesian series in a predefined order. [Metro]() palette is the default palette.
+Each palette applies a set of predefined brushes to the series in a predefined order. [Metro]() palette is the default palette.
 
-The following code example shows you how to set the [Metro]() Palette for the Cartesian chart series.
+The following code example shows you how to set the [Metro]() palette for the cartesian chart.
 
 {% tabs %}
 
@@ -85,9 +85,9 @@ this.Content = chart;
 
 ![Palette support in WinUI Cartesian Chart](Appearance_images/WinUI_cartesian_chart_bluechrome_palette.png)
 
-### Applying Palette to Segment
+### Applying palette to segment
 
-Each palette applies a set of predefined brushes to the series in a predefined order. The following code example shows you how to set the Metro Palette for the chart series.
+Cartesian chart provides support to set the palette to series for applying predefined brushes to the segment. The following code example shows you how to set the [Metro]() palette for the series.
 
 {% tabs %}
 
@@ -114,7 +114,7 @@ ColumnSeries series1 = new ColumnSeries()
 
 {% endtabs %}
 
-![Segment palette support in WinUI Cartesian Chart](Appearance_images/WinUI_cartesian_chart_greenchrome_palette.png)
+![Series palette support in WinUI Cartesian Chart](Appearance_images/WinUI_cartesian_chart_greenchrome_palette.png)
 
 ## Custom palette
 
@@ -176,7 +176,7 @@ this.Content = chart;
 
 ## Applying gradient brushes
 
-Gradient for the Cartesian chart can be set by using the [`ColorModel`]() property of the Cartesian chart with the help of `LinearGradientBrush` or `RadialGradientBrush`.
+Gradient for the chart can be set by using the [`ColorModel`]() property of the cartesian chart with the help of `LinearGradientBrush` or `RadialGradientBrush`.
 
 The following code sample and screenshot illustrates how to apply the gradient brushes for the chart using the [`ColorModel`]() property.
 
@@ -304,7 +304,7 @@ this.Content = chart;
 
 ## Segment color binding
 
-The color of the each segment can be set by binding their corresponding model property from the `ItemsSource` collection to its [`ColorValuePath`]() property of Cartesian chart as follows.
+The color of the each segment can be set by binding their corresponding model property from the `ItemsSource` collection to its [`ColorValuePath`]() property of series as follows.
 
 {% tabs %}
 
