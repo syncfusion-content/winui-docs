@@ -1,17 +1,15 @@
 ---
 layout: post
 title:  Axis title in WinUI Polar Chart control | Syncfusion
-description: Learn here all about the chart axis header of Syncfusion WinUI Polar Chart (SfPolarChart) control and its customization in polar chart.
+description: Learn here all about the chart axis title of Syncfusion WinUI Polar Chart (SfPolarChart) control and its customization.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
 ---
 
-# Chart axis title WinUI Polar Chart (SfPolarChart)
+# Chart axis header in WinUI Polar Chart (SfPolarChart)
 
-`Header` property of chart axis is used to define and customize the chart axis title. It accepts any `UIElement` as content for the chart axis header.
-
-The following code example demonstrates the defining header in primary and secondary axis. 
+The [Header]() property is used to define the title for the chart axis. It accepts any `UIElement` as content for the chart axis header.
 
 {% tabs %}
 
@@ -43,11 +41,13 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Header support for ChartAxis in WinUI Polar Chart](Axis_Images/WinUI_PolarChart_AxisHeader.png)
+![Axis title in WinUI Polar Chart](Axis_Images/WinUI_PolarChart_AxisHeader.png)
+
+N> Polar chart supports title for secondary axis only.
 
 ## Style for header
 
-[`HeaderStyle`]() property is used to provide style for the axis header. The following code example explains header style customization.
+The [`HeaderStyle`]() property is used to provide style for the axis header. The following code example explains header style customization.
 
 {% tabs %}
 
@@ -91,11 +91,11 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Axis header style for chart axis in WinUI Polar Chart](Axis_Images/WinUI_PolarChart_Axis_HeaderStyle.png)
+![Axis header style in WinUI Polar Chart](Axis_Images/WinUI_PolarChart_Axis_HeaderStyle.png)
 
-## Customization of header by HeaderTemplate
+## Customization by HeaderTemplate
 
-Default appearance of the axis header can be customized using [`HeaderTemplate`]() property. The following code snippet demonstrates the header customization.
+The appearance of the header can be customized using the [`HeaderTemplate`]() property. The following code snippet demonstrates the header customization with `Border` and `TextBlock`.
 
 {% tabs %}
 
@@ -139,4 +139,5 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![HeaderTemplate support for chart axis in WinUI Polar Chart](Axis_Images/WinUI_PolarChart_AxisHeader_Template.png)
+![Axis HeaderTemplate support in WinUI Polar Chart](Axis_Images/WinUI_PolarChart_AxisHeader_Template.png)
+
