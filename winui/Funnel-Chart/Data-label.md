@@ -70,7 +70,6 @@ The following code example demonstrates about how to set percentage value as dat
 . . .
  </chart:SfFunnelChart>
 
-
 {% endhighlight %}
 
 {% highlight c# %}

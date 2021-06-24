@@ -345,6 +345,8 @@ chart.Legend = new ChartLegend()
     CornerRadius = CornerRadiusHelper.FromUniformRadius(5)
 };
 
+{% endhighlight %}
+
 {% endtabs %}
 
 ![Legend background customization in WinUI Funnel Chart](Legend_images/WinUI_Funnel_chart_Legend_background_customizing.png)
