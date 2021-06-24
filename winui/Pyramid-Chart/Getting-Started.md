@@ -214,8 +214,6 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %} 
 
-{% tabs %} 
-
 ## Enable tooltip
 
 Tooltips are used to display information about a segment, when the mouse is moved over it. Enable tooltip by setting [ShowTooltip]() property as true.

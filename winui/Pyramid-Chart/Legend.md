@@ -344,6 +344,8 @@ chart.Legend = new ChartLegend()
     CornerRadius = CornerRadiusHelper.FromUniformRadius(5)
 };
 
+{% endhighlight %}
+
 {% endtabs %}
 
 ![Legend background customization in WinUI Pyramid Chart](Legend_images/WinUI_pyramid_chart_legend_background_customization.png)
