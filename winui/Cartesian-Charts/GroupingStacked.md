@@ -37,7 +37,7 @@ The following code example shows how to group the stacked series.
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
+SfCartesianChart chart = new SfCartesianChart();
 ...
 
 StackedColumnSeries series1 = new StackedColumnSeries()
