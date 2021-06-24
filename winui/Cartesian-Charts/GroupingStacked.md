@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Grouping Stacked in WinUI Chart
+# Grouping Stacked in WinUI Cartesian Chart (SfCartesianChart)
 
 You can group the stacked similar series using [`GroupName`]() property of stacked series. The stacked series which contains the same [`GroupName`]() will be stacked in a single group.
 
@@ -17,23 +17,28 @@ The following code example shows how to group the stacked series.
 
 {% highlight xaml %}
 
-<chart:StackedColumnSeries GroupName="Group1" XBindingPath="Year" 
-         YBindingPath="Quarter1" ItemsSource="{Binding AnnualDetails}"/>
+<chart:SfCartesianChart>
+    ...
+    <chart:StackedColumnSeries GroupName="Group1" XBindingPath="Year" 
+            YBindingPath="Quarter1" ItemsSource="{Binding AnnualDetails}"/>
 
-<chart:StackedColumnSeries GroupName="Group1" XBindingPath="Year" 
-          YBindingPath="Quarter2" ItemsSource="{Binding AnnualDetails}"/>
+    <chart:StackedColumnSeries GroupName="Group1" XBindingPath="Year" 
+            YBindingPath="Quarter2" ItemsSource="{Binding AnnualDetails}"/>
 
-<chart:StackedColumnSeries GroupName="Group2" XBindingPath="Year"
-          YBindingPath="Quarter3" ItemsSource="{Binding AnnualDetails}"/>
+    <chart:StackedColumnSeries GroupName="Group2" XBindingPath="Year"
+            YBindingPath="Quarter3" ItemsSource="{Binding AnnualDetails}"/>
 
-<chart:StackedColumnSeries GroupName="Group2" XBindingPath="Year"
-          YBindingPath="Quarter4" ItemsSource="{Binding AnnualDetails}"/>
+    <chart:StackedColumnSeries GroupName="Group2" XBindingPath="Year"
+            YBindingPath="Quarter4" ItemsSource="{Binding AnnualDetails}"/>
+
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfChart chart = new SfChart();
+SfPolarChart chart = new SfPolarChart();
+...
 
 StackedColumnSeries series1 = new StackedColumnSeries()
 {
@@ -71,8 +76,10 @@ chart.Series.Add(series1);
 chart.Series.Add(series2);
 chart.Series.Add(series3);
 chart.Series.Add(series4);
+...
+
 {% endhighlight %}
 
 {% endtabs %}
 
-![Grouping of stacked series in WinUI Chart](Series_images/groupingstacked.png)
+![Grouping of stacked series in WinUI Cartesian Chart](Grouped_Stacking_Images/groupingstacked.png)
