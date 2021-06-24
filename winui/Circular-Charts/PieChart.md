@@ -7,21 +7,21 @@ control: SfCircularChart
 documentation: ug
 ---
 
-# Pie chart in WinUI Circular Chart
+# Pie chart in WinUI Chart (SfCircularChart)
 
 To render a [PieSeries]() in circular chart, create an instance of the [PieSeries]() and add it to the [Series]() collection property of [SfCircularChart]().
-
-The following code example demonstrates how to define [PieSeries]().
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:SfCircularChart.Series>
-
-    <syncfusion:PieSeries XBindingPath="Category" ItemsSource="{Binding Data}" YBindingPath="Value"/>
-
-</syncfusion:SfCircularChart.Series>
+<chart:SfCircularChart>
+    <chart:SfCircularChart.Series>
+        <chart:PieSeries ItemsSource="{Binding Data}" 
+                         XBindingPath="Product" 
+                         YBindingPath="SalesRate"/>
+        </chart:SfCircularChart.Series>
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
@@ -29,12 +29,9 @@ The following code example demonstrates how to define [PieSeries]().
 
 SfCircularChart chart = new SfCircularChart();
 
-PieSeries series = new PieSeries()
-{
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "Category",
-    YBindingPath = "Value"
-};
+PieSeries series = new PieSeries();
+series.XBindingPath = "Product";
+series.YBindingPath = "SalesRate";
 
 chart.Series.Add(series);
 
@@ -42,7 +39,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Pie chart type in WinUI](Series_images/pie_chart.png)
+![Pie series type in WinUI Chart](Series_images/pie_chart.png)
 
 ### Circular coefficient
 
@@ -52,11 +49,13 @@ The rendering size of the [PieSeries]() can be controlled using the [CircularCoe
 
 {% highlight xaml %}
 
-<syncfusion:SfCircularChart.Series>
-
-    <syncfusion:PieSeries CircularCoefficient="0.9" XBindingPath="Category" ItemsSource="{Binding Data}" YBindingPath="Value"/>
-
-</syncfusion:SfCircularChart.Series>
+<chart:SfCircularChart>
+    <chart:SfCircularChart.Series>
+        <chart:PieSeries ItemsSource="{Binding Data}" 
+                         XBindingPath="Product" 
+                         YBindingPath="SalesRate"/>
+        </chart:SfCircularChart.Series>
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
@@ -64,13 +63,10 @@ The rendering size of the [PieSeries]() can be controlled using the [CircularCoe
 
 SfCircularChart chart = new SfCircularChart();
 
-PieSeries series = new PieSeries()
-{
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "Category",
-    YBindingPath = "Value",
-    CircularCoefficient = 0.9
-};
+PieSeries series = new PieSeries();
+series.XBindingPath = "Product";
+series.YBindingPath = "SalesRate";
+series.CircularCoefficient = 0.9;
 
 chart.Series.Add(series);
 
@@ -78,7 +74,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Circular coefficient support in WinUI Circular Chart](Series_images/pie_circularcoefficient.png)
+![Circular coefficient support in WinUI Chart](Series_images/pie_circularcoefficient.png)
 
 ### Group small data points into “others”
 
@@ -99,33 +95,35 @@ The default value of the [GroupTo]() property is `double.NAN`, and the default v
 
 {% highlight xaml %}
 
-<syncfusion:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count" GroupMode="Value" GroupTo="1000">
-    <syncfusion:PieSeries.DataMarker>
-        <syncfusion:ChartDataMarker ShowConnectorLine="True" 
-                                  ConnectorHeight="80" 
-                                  ShowLabel="True" 
-                                  LabelTemplate="{StaticResource DataLabelTemplate}"  
-                                  SegmentLabelContent="LabelContentPath">
-        </syncfusion:ChartDataMarker>
-    </syncfusion:PieSeries.DataMarker>
-</syncfusion:PieSeries>
+<chart:SfCircularChart.Series>
+    <chart:PieSeries ItemsSource="{Binding Data}" 
+                     XBindingPath="Product" 
+                     YBindingPath="SalesRate" ShowDataLabels="True"
+                     GroupTo="1000" GroupMode="Value">
+        <chart:PieSeries.DataLabelSettings>
+            <chart:CircularDataLabelSettings ShowConnectorLine="True"
+                          ConnectorHeight="80" 
+                          Context="DataLabelItem"/>
+        </chart:PieSeries.DataLabelSettings>
+    </chart:PieSeries>
+</chart:SfCircularChart.Series>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-PieSeries pieSeries = new PieSeries();
-pieSeries.GroupMode = PieGroupMode.Value;
-pieSeries.GroupTo = 1000;
-ChartDataMarker datamarker = new ChartDataMarker()
+PieSeries series = new PieSeries();
+series.GroupMode = PieGroupMode.Value;
+series.GroupTo = 1000;
+series.ShowDataLabels = true;
+series.DataLabelSettings = new CircularDataLabelSettings()
 {
     ShowConnectorLine = true,
-    ShowLabel = true,
     ConnectorHeight = 80,
-    LabelTemplate = this.RootGrid.Resources["DataLabelTemplate"] as DataTemplate,
-    SegmentLabelContent = LabelContent.LabelContentPath,
+    Context = LabelContext.DataLabelItem
+};
 
-pieSeries.DataMarker = datamarker;
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -139,24 +137,26 @@ pieSeries.DataMarker = datamarker;
 
 {% highlight xaml %}
 
-<syncfusion:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count" GroupMode="Angle" GroupTo="30">
-    <syncfusion:PieSeries.DataMarker>
-        <syncfusion:ChartDataMarker ShowConnectorLine="True" 
-                                  ConnectorHeight="80" 
-                                  ShowLabel="True" 
-                                  LabelTemplate="{StaticResource DataLabelTemplate}"  
-                                  SegmentLabelContent="LabelContentPath">
-        </syncfusion:ChartDataMarker>
-    </syncfusion:PieSeries.DataMarker>
-</syncfusion:PieSeries>
+<chart:SfCircularChart.Series>
+    <chart:PieSeries ItemsSource="{Binding Data}" 
+                     XBindingPath="Product" 
+                     YBindingPath="SalesRate" ShowDataLabels="True"
+                     GroupTo="80" GroupMode="Angle">
+        <chart:PieSeries.DataLabelSettings>
+            <chart:CircularDataLabelSettings ShowConnectorLine="True"
+                          ConnectorHeight="80" 
+                          Context="DataLabelItem"/>
+        </chart:PieSeries.DataLabelSettings>
+    </chart:PieSeries>
+</chart:SfCircularChart.Series>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 PieSeries pieSeries = new PieSeries();
-pieSeries.GroupMode = PieGroupMode.Angle;
-pieSeries.GroupTo = 30;
+series.GroupMode = PieGroupMode.Angle;
+series.GroupTo = 80;
 
 ChartDataMarker datamarker = new ChartDataMarker()
 {
@@ -167,7 +167,7 @@ ChartDataMarker datamarker = new ChartDataMarker()
         SegmentLabelContent = LabelContent.LabelContentPath,
 };
 
-pieSeries.DataMarker = datamarker;
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -181,24 +181,26 @@ pieSeries.DataMarker = datamarker;
 
 {% highlight xaml %}
 
-<syncfusion:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count" GroupMode="Percentage" GroupTo="10">
-    <syncfusion:PieSeries.DataMarker>
-        <syncfusion:ChartDataMarker ShowConnectorLine="True" 
-                                  ConnectorHeight="80" 
-                                  ShowLabel="True" 
-                                  LabelTemplate="{StaticResource DataLabelTemplate}"  
-                                  SegmentLabelContent="LabelContentPath">
-        </syncfusion:ChartDataMarker>
-    </syncfusion:PieSeries.DataMarker>
-</syncfusion:PieSeries>
+<chart:SfCircularChart.Series>
+    <chart:PieSeries ItemsSource="{Binding Data}" 
+                     XBindingPath="Product" 
+                     YBindingPath="SalesRate" ShowDataLabels="True"
+                     GroupTo="10" GroupMode="Percentage">
+        <chart:PieSeries.DataLabelSettings>
+            <chart:CircularDataLabelSettings ShowConnectorLine="True"
+                          ConnectorHeight="80" 
+                          Context="DataLabelItem"/>
+        </chart:PieSeries.DataLabelSettings>
+    </chart:PieSeries>
+</chart:SfCircularChart.Series>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 PieSeries pieSeries = new PieSeries();
-pieSeries.GroupMode = PieGroupMode.Percentage;
-pieSeries.GroupTo = 10;
+series.GroupMode = PieGroupMode.Percentage;
+series.GroupTo = 10;
 
 ChartDataMarker datamarker = new ChartDataMarker()
 {
@@ -209,7 +211,7 @@ ChartDataMarker datamarker = new ChartDataMarker()
         SegmentLabelContent = LabelContent.LabelContentPath,
 };
 
-pieSeries.DataMarker = datamarker;
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -225,11 +227,11 @@ By using the [StartAngle]() and [EndAngle]() properties, you can draw pie series
 
 {% highlight xaml %}
 
-<syncfusion:SfCircularChart.Series>
-
-    <syncfusion:PieSeries StartAngle="180" EndAngle="360" XBindingPath="Utilization" YBindingPath="ResponseTime" ItemsSource="{Binding Data}"/>
-
-<syncfusion:SfCircularChart.Series>
+<chart:SfCircularChart.Series>
+    <chart:PieSeries StartAngle="180" EndAngle="360" ItemsSource="{Binding Data}"
+                     XBindingPath="Product" 
+                     YBindingPath="SalesRate" ShowDataLabels="True"/>
+</chart:SfCircularChart.Series>
 
 {% endhighlight %}
 
@@ -237,14 +239,11 @@ By using the [StartAngle]() and [EndAngle]() properties, you can draw pie series
 
 SfCircularChart chart = new SfCircularChart();
 
-PieSeries series = new PieSeries()
-{
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "Utilization",
-    YBindingPath = "ResponseTime",
-    StartAngle = 180,
-    EndAngle = 360
-};
+PieSeries series = new PieSeries();
+series.XBindingPath = "Product";
+series.YBindingPath = "SalesRate";
+series.StartAngle = 180;
+series.EndAngle = 360;
 
 chart.Series.Add(series);
 
