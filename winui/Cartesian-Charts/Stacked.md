@@ -9,7 +9,7 @@ documentation: ug
 
 # Stacked Charts in WinUI Cartesian Chart (SfCartesianChart)
 
-## Stacked Column Chart
+## Stacked column Chart
 
 The [`StackedColumnSeries`]() resembles multiple of column series and each series is vertically stacked one above the other. When there is only one series, then it is `ColumnSeries`. 
 
@@ -72,7 +72,7 @@ chart.Series.Add(series3);
 
 ![StackedColumn chart type in WinUI Cartesian Chart](Stacking_Series_Images/stackedcolumn_chart.png)
 
-## Stacked Line Chart
+## Stacked line Chart
 
 The [`StackedLineSeries`]() resembles multiple of line series and each series is vertically stacked one above the other. When there is only one series, then it is [`LineSeries`](). 
 
@@ -143,7 +143,7 @@ chart.Series.Add(series3);
 
 ![StackedLine chart type in WinUI Cartesian Chart](Stacking_Series_Images/stackedline_chart.png)
 
-## Stacked Area Chart
+## Stacked area Chart
 
 The [`StackedAreaSeries`]() is representing the multiple of area series are stacked vertically one above the other. 
 
