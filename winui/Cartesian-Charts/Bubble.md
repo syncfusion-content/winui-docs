@@ -15,7 +15,7 @@ documentation: ug
 
 The size of the bubble series is relative proportional to the value bind with the series using [`Size`]()  property. You can set the constraints on this size using [`MinimumRadius`]() and [`MaximumRadius`]().
 
-To render a cartesian chart bubble series, create an instance of [BubbleSeries]() and add to the Series collection property of SfCartesianChart as shown in the following code.
+To render a bubble series, create an instance of [BubbleSeries]() and add to the [Series]() collection property of [SfCartesianChart]() as shown in the following code.
 
 {% tabs %}
 
