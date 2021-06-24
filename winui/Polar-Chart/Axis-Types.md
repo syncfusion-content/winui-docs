@@ -50,7 +50,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 {% endtabs %}
 
-![Numerical Axis support in WinUI Chart](Axis_Images/WinUI_PolarChart_NumericalAxis.png)
+![Numerical Axis support in WinUI Chart](Axis_Images/WinUI_Chart_NumericalAxis.png)
 
 ### Customizing the range
 
@@ -83,7 +83,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Numerical axis range in WinUI Chart](Axis_Images/WinUI_PolarChart_NumericalAxis_AxisRange.png)
+![Numerical axis range in WinUI Chart](Axis_Images/WinUI_Chart_NumericalAxis_AxisRange.png)
 
 ### Start from zero
 
@@ -114,7 +114,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis support in WinUI Chart](Axis_Images/WinUI_PolarChart_NumericalAxis_StartRangeFromZero.png)
+![NumericalAxis support in WinUI Chart](Axis_Images/WinUI_Chart_NumericalAxis_StartRangeFromZero.png)
 
 ## Category Axis
 
@@ -150,7 +150,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 {% endtabs %}
 
-![CategoryAxis support in WinUI Chart](Axis_Images/WinUI_PolarChart_CategoryAxis.png)
+![CategoryAxis support in WinUI Chart](Axis_Images/WinUI_Chart_CategoryAxis.png)
 
 ## DateTime Axis
 
@@ -193,4 +193,4 @@ chart.SecondaryAxis = new NumericalAxis();
 
 {% endtabs %}
 
-![DateTimeAxis support in WinUI Chart](Axis_Images/WinUI_PolarChart_DateTimeAxis_LabelFormat.png)
+![DateTimeAxis support in WinUI Chart](Axis_Images/WinUI_Chart_DateTimeAxis.png)
