@@ -113,11 +113,11 @@ N> If you prefer to set `DataContext` in XAML, add the namespace of the `ViewMod
 <Window
     ...
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
-    xmlns:Model="using:ChartDemo.ViewModel">
+    xmlns:model="using:ChartDemo.ViewModel">
 
     <chart:SfPolarChart>
         <chart:SfPolarChart.DataContext>
-            <Model:ChartViewModel/>
+            <model:ChartViewModel/>
         </chart:SfPolarChart.DataContext>
     </chart:SfPolarChart>
 
@@ -325,8 +325,14 @@ The following code example gives you the complete code of above configurations.
 
 <chart:SfPolarChart Header="Polar Chart">
     <chart:SfPolarChart.DataContext>
-        <Model:ChartViewModel/>
+        <model:ChartViewModel/>
     </chart:SfPolarChart.DataContext>
+    <chart:SfPolarChart.PrimaryAxis> 
+           <chart:CategoryAxis /> 
+      </chart:SfPolarChart.PrimaryAxis> 
+      <chart:SfPolarChart.SecondaryAxis> 
+           <chart:NumericalAxis/> 
+      </chart:SfPolarChart.SecondaryAxis>
     <chart:SfPolarChart.Legend>
         <chart:ChartLegend/>
     </chart:SfPolarChart.Legend>
@@ -335,7 +341,7 @@ The following code example gives you the complete code of above configurations.
                          XBindingPath="Category"
                          YBindingPath="Value"
                          Label="Sales"
-                         ShowDataLabels = true>
+                         ShowDataLabels ="True">
         </chart:PolarAreaSeries>
     </chart:SfPolarChart.Series>
 </chart:SfPolarChart>
@@ -356,6 +362,11 @@ public sealed partial class MainWindow : Window
         chart.Legend = new ChartLegend();
         ChartViewModel viewModel = new ChartViewModel();
         chart.DataContext = viewModel;
+        
+        CategoryAxis primaryAxis = new CategoryAxis();
+        chart.PrimaryAxis = primaryAxis;    
+        NumericalAxis secondaryAxis = new NumericalAxis();
+        chart.SecondaryAxis = secondaryAxis;
 
         PolarAreaSeries series = new PolarAreaSeries();
         series.XBindingPath = "Category";

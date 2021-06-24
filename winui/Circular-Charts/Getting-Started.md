@@ -107,11 +107,11 @@ N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `Da
 <Window
     . . .
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
-    xmlns:Model="using:ChartDemo.ViewModel">
+    xmlns:model="using:ChartDemo.ViewModel">
 
     <chart:SfCircularChart>
         <chart:SfCircularChart.DataContext>
-            <Model:ChartViewModel/>
+            <model:ChartViewModel/>
         </chart:SfCircularChart.DataContext>
     </chart:SfCircularChart>
 </Window>
@@ -285,7 +285,7 @@ The following code example gives you the complete code of above configurations.
 
 <chart:SfCircularChart Header="PRODUCT SALES">
     <chart:SfCircularChart.DataContext>
-        <Model:ChartViewModel/>
+        <model:ChartViewModel/>
     </chart:SfCircularChart.DataContext>
     <chart:SfCircularChart.Legend>
         <chart:ChartLegend/>
