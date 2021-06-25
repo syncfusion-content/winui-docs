@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Axis gridlines in WinUI Chart control | Syncfusion
-description: Learn here all about the chart axis gridlines and its customization in syncfusion WinUI Chart(SfCartesianChart).
+title: Axis grid lines in WinUI Chart control | Syncfusion
+description: Learn here all about the chart axis grid lines and its customization in syncfusion WinUI Chart(SfCartesianChart).
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Gridlines in WinUI Chart (SfCartesianChart)
+# Grid Lines in WinUI Chart (SfCartesianChart)
 
-## Major Gridlines
+## Major Grid Lines
 
 By default, major gridlines are automatically added to the [ChartAxis]() in its defined intervals. The visibility of the gridlines can be controlled using the [ShowGridLines]() property. The default value of [ShowGridLines]() is true. 
 
@@ -83,7 +83,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ![Gridlines customization support in WinUI Chart](Axis_images/WinUI_Chart_Axis_major_gridlines_styles.png)
 
-## Minor Gridlines
+## Minor Grid Lines
 
 Minor gridlines will be added automatically when the small tick lines is defined using the [SmallTicksPerInterval]() property of chart axis.
 

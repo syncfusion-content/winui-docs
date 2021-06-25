@@ -7,7 +7,7 @@ control: SfCartesianChart
 documentation: ug
 ---
 
-# Chart Axis Header in WinUI Chart (SfCartesianChart)
+# Axis Title in WinUI Chart (SfCartesianChart)
 
 The [Header]() property is used to set the title for the chart axis. It accepts any `UIElement` as content of axis title. 
 
@@ -79,7 +79,7 @@ chart.PrimaryAxis.HeaderStyle = new LabelStyle()
 
 ![Axis header style in WinUI Chart](Axis_Images/WinUI_Chart_Axis_Header_styles.png)
 
-## Customization using Template
+## Template
 
 The appearance of the header can be customized using the [HeaderTemplate]() property.
 

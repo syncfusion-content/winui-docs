@@ -57,7 +57,7 @@ chart.Series.Add(series);
 
 ![Data label in WinUI chart](DataLabel_images/data_label_winui_chart.png) 
 
-## Data label context
+## Context
 
 To customize the content of data labels, need to define [DataLabelSettings]() of series and set [Context]() property of [CartesianDataLabelSettings]() to define the value to be displayed as label content.
 

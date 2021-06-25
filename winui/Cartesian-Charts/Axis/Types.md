@@ -7,7 +7,7 @@ control: SfCartesianChart
 documentation: ug
 ---
 
-# Types of axis in WinUI Chart (SfCartesianChart)
+# Types of Axis in WinUI Chart (SfCartesianChart)
 
 Cartesian chart supports the following types of chart axis.
 
@@ -210,7 +210,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-### DateTime Axis
+## DateTime Axis
 
 [DateTimeAxis]() is used to plot `DateTime` values. The `DateTimeAxis` is widely used to make financial charts in places like the Stock Market, where index plotting is done every day.
 
@@ -321,8 +321,6 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis range customization support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_workdays.png)
-
 ## Inversed
 
 Axis can be inverted by using the [IsInversed]() property. The default value of this property is `False`.
@@ -420,4 +418,4 @@ chart.Series.Add(series2);
 
 ![Multiple axes support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_multipleAxis.png)
 
-In the above image, the Column is plotted based on additional X & Y axes, and SplineSeries (or remaining series) is plotted based on the primary and secondary axes.
+In the above image, the `ColumnSeries` is plotted based on additional X & Y axes, and `SplineSeries` is plotted based on the primary and secondary axes.

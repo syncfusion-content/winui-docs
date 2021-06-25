@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Axis labels in WinUI Chart control | Syncfusion
-description: Learn here all about axis labels and its customization in Syncfusion WinUI Chart(SfCartesianChart) control.
+description: Learn here all about axis labels and its customization in Syncfusion WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -77,9 +77,11 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ![Axis label rotation angle in WinUI Chart](Axis_images/WinUI_Chart_Axis_label_rotation.png)
 
-## Custom Labels
+## Custom Axis Labels
 
 Chart axis allows user to define the own axis labels. [Content]() and [Position]() property of [ChartAxisLabel]() used to defines the label for axis using the [CustomLabels]() property as in the below code sample.
+
+N> Also directly bind the collection of labels to the [`LabelSource`]() property for defining custom labels.
 
 {% tabs %}
 
@@ -125,9 +127,7 @@ chart.PrimaryAxis = axis;
 
 ![Axis label customization support in WinUI](Axis_images/WinUI_Chart_Axis_Custom_labels.png)
 
-N> Also directly bind the collection of labels to the [`LabelSource`]() property for defining custom labels.
-
-## Formatting
+## Format
 
 Axis labels can be formatted by predefined formatting types by using the [LabelFormat]() property based on the axis types.
 
@@ -191,7 +191,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![Axis labels formatting support in WinUI Chart](Axis_images/WinUI_Chart_Axis_label_format.png)
 
-## Customization using Template
+## Template
 
 The appearance of the axis labels can be customized by using the [LabelTemplate]() property of axis.
 
