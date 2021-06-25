@@ -387,7 +387,7 @@ public sealed partial class MainWindow : Window
         PolarAreaSeries series = new PolarAreaSeries();
         series.XBindingPath = "Category";
         series.YBindingPath = "Value";
-        series.ShowDataLabels = true;
+        series.Label = "Sales";
 
         series.SetBinding(
             ChartSeriesBase.ItemsSourceProperty, 

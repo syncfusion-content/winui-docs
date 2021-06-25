@@ -13,7 +13,9 @@ Axis labels are used to show the units or measures or category values of axis to
 
 ## Custom Axis Labels
 
-Chart axis allows user to define the own axis labels. The [`Content`]() and [`Position`]() property of [ChartAxisLabel]() used to define the labels for axis using the [`CustomLabels`]() property as in the below code sample.
+Chart axis allows user to define the own axis labels. The [`Content`]() and [`Position`]() property of [ChartAxisLabel]() used to define the labels for axis using the [`CustomLabels`]() property.
+
+N> Also, directly bind the collection of labels to the [`LabelSource`]() property for defining custom labels.
 
 {% tabs %}
 
@@ -69,8 +71,6 @@ chart.SecondaryAxis = new NumericalAxis();
 {% endtabs %}
 
 ![Custom axis labels in WinUI Chart](Axis_Images/WinUI_Chart_CustomLabels.png)
-
-N> Also, directly bind the collection of labels to the [`LabelSource`]() property for defining custom labels.
 
 The following code sample demonstrates how to bind the collection of labels to the [LabelSource]().
 
