@@ -16,7 +16,7 @@ Each data label can be represented by the following:
 * `Label` - displays the segment label content at the (X, Y) point.
 * `Connector line` - used to connect the (X, Y) point and the label element.
 
-## Enable data label
+## Enable Data Label
 
 The [ShowDataLabels]() property of a series is used to enable the data labels.
 
@@ -288,7 +288,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 ![Rotation support for data label in WinUI Chart](DataLabel_Images/WinUI_PolarChart_data_label_Rotation.png)
 
-## Applying series brush
+## Applying Series Interior
 
 The [`UseSeriesPalette`]() property is used to set the [Interior]() of the series to the data label background. 
 
@@ -329,7 +329,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 ![Applying UseSeriesPalette in WinUI Chart](DataLabel_Images/WinUI_PolarChart_data_label_UseSeriesPalette.png)
 
-## Connector line
+## Connector Line
 
 Connector line is used to connect label and data point using a line. [ShowConnectorLine]() property of [PolarDataLabelSettings]() is used to enable the connector line in the polar chart.
 
