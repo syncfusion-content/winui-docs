@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in WinUI Cartesian Chart control | Syncfusion
-description: This section explains about how to apply palettes and gradient in the Syncfusion WinUI Cartesian Chart(SfCartesianChart) control.
+title: Appearance in WinUI Chart control | Syncfusion
+description: This section explains about how to apply palettes and gradient in the Syncfusion WinUI Chart(SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Appearance in WinUI Cartesian Chart (SfCartesianChart)
+# Appearance in WinUI Chart (SfCartesianChart)
 
 The appearance of [SfCartesianChart]() can be customized by using the predefined palettes, custom palettes and gradient, which allows to enrich the application.
 
@@ -30,7 +30,7 @@ The appearance of [SfCartesianChart]() can be customized by using the predefined
 
 N> Elite, SandyBeach and LightCandy palettes are not supported in the bitmap series types.
 
-### Applying palette
+### Applying Palette
 
 Each palette applies a set of predefined brushes to the series in a predefined order. [Metro]() palette is the default palette.
 
@@ -40,10 +40,7 @@ The following code example shows you how to set the [Metro]() palette for the ch
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart x:Name="chart" Palette="Metro"
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
+<chart:SfCartesianChart x:Name="chart" Palette="Metro">
 
 </chart:SfCartesianChart>
 
@@ -83,11 +80,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Palette support in WinUI Cartesian Chart](Appearance_images/WinUI_cartesian_chart_bluechrome_palette.png)
+![Palette support in WinUI Chart](Appearance_images/WinUI_cartesian_chart_bluechrome_palette.png)
 
-### Applying palette to segment
+### Applying Palette to Segment
 
-Cartesian chart provides support to set the palette to series for applying predefined brushes to the segment. The following code example shows you how to set the [Metro]() palette for the series.
+Cartesian chart provides support to set the palette to series for applying predefined brushes to the segment. The following code example shows you how to set the [GreenChrome]() palette for the series.
 
 {% tabs %}
 
@@ -114,9 +111,9 @@ ColumnSeries series1 = new ColumnSeries()
 
 {% endtabs %}
 
-![Series palette support in WinUI Cartesian Chart](Appearance_images/WinUI_cartesian_chart_greenchrome_palette.png)
+![Series palette support in WinUI Chart](Appearance_images/WinUI_cartesian_chart_greenchrome_palette.png)
 
-## Custom palette
+## Custom Palette
 
 [SfCartesianChart]() provides support to define own brushes for the chart with preferred order by using the [CustomBrushes]() property of [ChartColorModel]() and [Palette]() value as `Custom`, as shown in the following code example.
 
@@ -172,9 +169,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Custom palette in WinUI Cartesian Chart](Appearance_images/WinUI_cartesian_chart_custom_palette.png)
+![Custom palette in WinUI Chart](Appearance_images/WinUI_cartesian_chart_custom_palette.png)
 
-## Applying gradient brushes
+## Applying Gradient
 
 Gradient for the chart can be set by using the [`ColorModel`]() property with the help of `LinearGradientBrush` or `RadialGradientBrush`.
 
@@ -253,7 +250,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Gradient support in WinUI Cartesian Chart](Appearance_images/WinUI_cartesian_chart_gradient_color.png)
+![Gradient support in WinUI Chart](Appearance_images/WinUI_cartesian_chart_gradient_color.png)
 
 The following code sample and screenshot illustrates how to apply the gradient color using the [Interior]() property of series with `LinearGradientBrush`.
 
@@ -300,9 +297,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Interior support in WinUI Cartesian Chart](Appearance_images/WinUI_cartesian_chart_interior_gradient_color.png)
+![Interior support in WinUI Chart](Appearance_images/WinUI_cartesian_chart_interior_gradient_color.png)
 
-## Segment color binding
+## Segment Color Binding
 
 The color of the each segment can be set by binding their corresponding model property from the `ItemsSource` collection to its [`ColorValuePath`]() property of series as follows.
 
@@ -355,5 +352,5 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Segment color binding support in WinUI Cartesian Chart](Appearance_images/WinUI_cartesian_chart_colorvaluepath.png)
+![Segment color binding support in WinUI Chart](Appearance_images/WinUI_cartesian_chart_colorvaluepath.png)
 

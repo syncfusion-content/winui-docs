@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Selection in WinUI Funnel Chart control | Syncfusion
-description: Learn here all about selection and multi-selection support in Syncfusion WinUI Funnel Chart (SfFunnelChart) control.
+title: Selection in WinUI Chart control | Syncfusion
+description: Learn here all about selection and multi-selection support in Syncfusion WinUI Chart (SfFunnelChart) control.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
 ---
 
-# Selection in WinUI Funnel Chart (SfFunnelChart)
+# Selection in WinUI Chart (SfFunnelChart)
 
 Funnel chart supports selection that allows to select a segment in the chart by using [ChartSelectionBehavior](). 
 
-## Enable selection
+## Enable Selection
 
 To enable the selection in chart, create an instance of [ChartSelectionBehavior]() and add it to the `Behaviors` collection of funnel chart. And also need to set the [SelectionBrush]() property to highlight the segment in the funnel chart.
 
@@ -51,13 +51,13 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Selection support in WinUI Funnel Chart](Selection_images/WinUI_funnel_chart_segment_selection.png)
+![Selection support in WinUI Chart](Selection_images/WinUI_chart_segment_selection.png)
 
-## Multi selection
+## Multi-selection
 
-Funnel chart provides support to select multiple segments by using [Type]() property as `MultiPoint`. 
+Funnel chart provides support to select multiple segments by using [Type]() property as `MultiPoint`. By default, the value of [Type]() is `Point` and it is used for single selection.
 
-The following code snippet demonstrates multiple segment selection.
+N> `Series` and `MultiSeries` selection type is not support for funnel chart.
 
 {% tabs %}
 
@@ -95,11 +95,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Multi selection support in WinUI Funnel Chart](Selection_images/WinUI_funnel_chart_multi_selection.png)
+![Multi selection support in WinUI Chart](Selection_images/WinUI_chart_multi_selection.png)
 
-N> By default, the value of [Type]() is `Point`. `Series` and `MultiSeries` is not support for funnel chart.
-
-## Changing cursor while selection
+## Changing Cursor while Selection
 
 [Cursor]() property allows to define the cursor when mouse is hovered over the segment with segment selection enabled.
 
@@ -141,7 +139,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Changing cursor while selection support in WinUI Funnel Chart](Selection_images/WinUI_funnel_chart_cursor.png)
+![Changing cursor while selection support in WinUI Chart](Selection_images/WinUI_chart_cursor.png)
 
 ## Events
 
@@ -154,8 +152,6 @@ The [SelectionChanging]() event occurs before the data point is being selected. 
 * [SelectedSegment]() - Gets the segment of the selected data point.
 * [SelectedIndex]() - Gets the selected data point index.
 * [PreviousSelectedIndex]() - Gets the previous selected data point index.
-* [IsSelected]() - Gets a value that indicates whether the segment or series is selected.
-* [IsDataPointSelection]() - Gets a value that indicates whether the selection is segment selection or series selection.
 * [Cancel]() - Gets or Sets a value that indicates whether the selection should be canceled.
 
 ### SelectionChanged
@@ -166,8 +162,3 @@ The [SelectionChanged]() event occurs after a data point has been selected. This
 * [SelectedIndex]() - Gets the selected data point index.
 * [PreviousSelectedSegment]() - Gets the segment of previous selected data point.
 * [PreviousSelectedIndex]() - Gets the previous selected data point index.
-* [OldPointInfo]() - Gets the previous selected segment item value.
-* [NewPointInfo]() - Gets the selected segment item value.
-* [IsSelected]() - Gets a value that indicates whether the segment or series is being selected.
-* [IsDataPointSelection]() - Gets a value that indicates whether the selection is segment selection or series selection.
-

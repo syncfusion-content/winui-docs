@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Getting started with WinUI Pyramid Chart control | Syncfusion
-description: This section explains about getting started with Syncfusion WinUI Pyramid Chart(SfPyramidChart) control
+title: Getting started with WinUI Chart control | Syncfusion
+description: This section explains about getting started with Syncfusion WinUI Chart(SfPyramidChart) control, its elements, and more.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
 ---
 
-# Getting started with WinUI Pyramid Chart
+# Getting started with WinUI Chart
 
 This section explains how to populate the pyramid chart with data, a header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
-## Creating an application with WinUI Pyramid Chart
+## Creating an application with WinUI Chart
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
@@ -55,7 +55,7 @@ public sealed partial class MainWindow : Window
 
 {% endtabs %}
 
-## Initialize view model
+## Initialize View Model
 
 Now, let us define a simple data model that represents a data point in the chart.
 
@@ -114,11 +114,11 @@ N> If you prefer to set `DataContext` in XAML, add the namespace of the `ViewMod
     . . .
 
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
-    xmlns:Model="using:ChartDemo.ViewModel">
+    xmlns:model="using:ChartDemo.ViewModel">
 
     <chart:SfPyramidChart>
         <chart:SfPyramidChart.DataContext>
-            <Model:ChartViewModel/>
+            <model:ChartViewModel/>
         </chart:SfPyramidChart.DataContext>
     </chart:SfPyramidChart>
 
@@ -135,7 +135,7 @@ chart.DataContext = viewModel;
 
 {% endtabs %} 
 
-## Add title
+## Add Title
 
 The title of the chart provide quick information to the user about the data being plotted in the chart. The title cane be set by using the [Header]() property of the pyramid chart as follows.
 
@@ -163,7 +163,7 @@ chart.Header = "Calories in food";
 
 {% endtabs %}  
 
-## Enable data labels
+## Enable Data Labels
 
 The [ShowDataLabels]() property of [PyramidChart]() is used to enable data labels to improve the readability of the pyramid chart. The label visibility is set to `False` by default.
 
@@ -187,7 +187,7 @@ chart.ShowDataLabels = true;
 
 {% endtabs %}  
 
-## Enable legend
+## Enable Legend
 
 The legend provides information about the data point displayed in the pyramid chart. The [Legend]() property of the chart was used to enable it.
 
@@ -214,7 +214,7 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %} 
 
-## Enable tooltip
+## Enable Tooltip
 
 Tooltips are used to display information about a segment, when the mouse is moved over it. Enable tooltip by setting [ShowTooltip]() property as true.
 
@@ -239,6 +239,8 @@ chart.ShowTooltip = true;
 {% endtabs %}
 
 The following code example gives you the complete code of above configurations.
+
+N> To plot the chart, the [XBindingPath]() and [YBindingPath]() properties must be configured so that the chart may get values from the respective properties in the data model.
 
 {% tabs %} 
 
@@ -294,11 +296,6 @@ public sealed partial class MainWindow : Window
 
 {% endtabs %}
 
-N> To plot the chart, the [XBindingPath]() and [YBindingPath]() properties must be configured so that the chart may get values from the respective properties in the data model.
-
-The following chart is created as a result of the previous codes.
-
-![Getting started for WinUI Pyramid Chart](Getting-Started_images/WinUI_PyramidChart.png)
+![Getting started for WinUI Chart](Getting-Started_images/WinUI_Chart.png)
 
 N> Download demo application from [GitHub]().
-

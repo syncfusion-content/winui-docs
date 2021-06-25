@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in WinUI Polar Chart control | Syncfusion
-description: This section explains about how to apply palettes and gradient in the Syncfusion WinUI Polar Chart (SfPolarChart) control
+title: Appearance in WinUI Chart control | Syncfusion
+description: This section explains about how to apply palettes and gradient in the Syncfusion WinUI Chart (SfPolarChart) control
 platform: WinUI
 control: SfPolarChart
 documentation: ug
 ---
 
-# Appearance in WinUI Polar Chart (SfPolarChart)
+# Appearance in WinUI Chart (SfPolarChart)
 
 The appearance of [SfPolarChart]() can be customized by using the predefined palettes, custom palettes and gradient, which allows to enrich the application.
 
@@ -28,7 +28,7 @@ The appearance of [SfPolarChart]() can be customized by using the predefined pal
 * LightCandy
 * SandyBeach
 
-### Applying palette
+### Applying Palette
 
 Each palette applies a set of predefined brushes to the series in a predefined order. [Metro]() palette is the default palette. 
 
@@ -88,9 +88,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Predefined palette in WinUI Polar Chart](Appearance_images/WinUI_PolarChart_default_metro_palette.png)
+![Predefined palette in WinUI Chart](Appearance_Images/WinUI_Chart_metro_palette.png)
 
-The following code example defined [`Palette`]() as [`BlueChrome`]().
+**BlueChrome** **Palette**
 
 {% tabs %}
 
@@ -117,9 +117,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Palette support in WinUI Polar Chart](Appearance_images/WinUI_PolarChart_BlueChrome.png)
+![Palette support in WinUI Chart](Appearance_Images/WinUI_Chart_BlueChrome.png)
 
-## Custom palette
+## Custom Palette
 
 [`SfPolarChart`]() provides support to define own brushes for the chart with preferred order by using the [CustomBrushes]() property of [ChartColorModel]() and [Palette]() value as `Custom`, as shown in the following code example.
 
@@ -162,13 +162,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Custom palette in WinUI Polar Chart](Appearance_images/WinUI_PolarChart_CustomPalette.png)
+![Custom palette in WinUI Chart](Appearance_Images/WinUI_Chart_CustomPalette.png)
 
-## Applying gradient brushes
+## Applying Gradient
 
 Gradient for the chart can be set by using the [`ColorModel`]() property of the polar chart with the help of `LinearGradientBrush` or `RadialGradientBrush`.
-
-The following code sample and screenshot illustrates how to apply the gradient brushes for the chart using the [`ColorModel`]() property.
 
 {% tabs %}
 
@@ -226,9 +224,9 @@ chart.Palette = ChartColorPalette.Custom;
 
 {% endtabs %}
 
-![Gradient support in WinUI Polar Chart](Appearance_images/WinUI_PolarChart_Series_Gradient.png)
+![Gradient support in WinUI Chart](Appearance_Images/WinUI_Chart_Series_Gradient.png)
 
-The following code sample and screenshot illustrates how to apply the gradient color using the [Interior]() property of series with `LinearGradientBrush`.
+Gradient color using the [Interior]() property of series with `LinearGradientBrush`.
 
 {% tabs %}
 
@@ -255,7 +253,6 @@ The following code sample and screenshot illustrates how to apply the gradient c
 
 {% highlight c# %}
 
-
 SfPolarChart chart = new SfPolarChart();
 . . .
 LinearGradientBrush gradientColor = new LinearGradientBrush();
@@ -272,5 +269,5 @@ series.Interior = gradientColor;
 
 {% endtabs %}
 
-![Gradient color support in WinUI Polar Chart](Appearance_images/WinUI_PolarChart_Interior_GradientColor.png)
+![Gradient color support in WinUI Chart](Appearance_Images/WinUI_Chart_Interior_GradientColor.png)
 

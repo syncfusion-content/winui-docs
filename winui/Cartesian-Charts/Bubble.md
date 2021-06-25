@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Bubble Chart in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about the bubble series and its features in Syncfusion WinUI Cartesian Chart (SfCartesianChart) control.
+title: Bubble Chart in WinUI Chart control | Syncfusion
+description: Learn here all about the bubble series and its features in Syncfusion WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Bubble Chart in WinUI Cartesian Chart (SfCartesianChart)
+# Bubble Chart in WinUI Chart (SfCartesianChart)
 
 ## Bubble Chart
 
@@ -51,7 +51,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Bubble chart type in WinUI Cartesian Chart](Bubble_Images/bubble_chart.png)
+![Bubble chart type in WinUI Chart](Bubble_Images/bubble_chart.png)
 
 ## Show zero size bubbles
 
@@ -92,9 +92,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Show zero size bubbles support in WinUI Cartesian Chart](Bubble_Images/showzerobubble_true.png)
-
-The following code example and screenshots describes when [`ShowZeroBubbles`]() value is `false`.
+![Show zero size bubbles support in WinUI Chart](Bubble_Images/showzerobubble_true.png)
 
 {% tabs %}
 
@@ -131,5 +129,5 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![ShowZeroBubbles support in WinUI Cartesian Chart](Bubble_Images/showzerobubble_false.png)
+![ShowZeroBubbles support in WinUI Chart](Bubble_Images/showzerobubble_false.png)
 
