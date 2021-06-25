@@ -44,7 +44,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Rendering mode with height in WinUI Chart](Rendering-mode_images/winui-chart_value-is-Height.png)
+![Rendering mode with height in WinUI Chart](Rendering-mode_Images/winui-chart_value-is-height.png)
 
 ## Rendering with Width
 
@@ -79,4 +79,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Rendering mode with width in WinUI Chart](Rendering-mode_images/winui-chart_value-is-width.png)
+![Rendering mode with width in WinUI Chart](Rendering-mode_Images/winui-chart_value-is-width.png)
