@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Fast StepLine Chart in WinUI Chart control | Syncfusion
-description: Learn here all about Fast StepLine Chart of Syncfusion WinUI Chart(SfCartesianChart) control and more.
+title: Fast Step Line Chart in WinUI Chart control | Syncfusion
+description: Learn here all about Fast Step Line Chart of Syncfusion WinUI Chart (SfCartesianChart) control and more.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Fast StepLine Chart in WinUI Chart (SfCartesianChart)
+# Fast Step Line Chart in WinUI (SfCartesianChart)
 
 A fast stepline bitmap series is a special kind of series that can render a collection with huge number of data points using `WriteableBitmap`. [FastStepLineBitmapSeries]() is the high performance version of step line series.
 
@@ -42,7 +42,9 @@ chart.Series.Add(series);
 
 ![FastStepLineBitmap chart type in WinUI Chart](FastChart_images/faststeplinebitmap_chart.png)
 
-The anti aliasing mode can be enabled using the [EnableAntiAliasing]() property of FastStepLineBitmapSeries as shown in the following code sample.
+### Anti-aliasing
+
+The anti aliasing mode can be enabled using the [EnableAntiAliasing]() property of `FastStepLineBitmapSeries` as shown in the following code sample.
 
 {% tabs %}
 
@@ -75,4 +77,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![AntiAliasing support for FastStepLineBitmap chart type in WinUI Chart](FastChart_images/faststeplinebitmap_chart_antialiasing.png)
+![Anti-aliasing support for FastStepLineBitmap chart in WinUI](FastChart_images/faststeplinebitmap_chart_antialiasing.png)

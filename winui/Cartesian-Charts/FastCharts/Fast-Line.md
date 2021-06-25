@@ -7,9 +7,9 @@ control: SfCartesianChart
 documentation: ug
 ---
 
-# Fast Line Chart in WinUI Chart (SfCartesianChart)
+# Fast Line Chart in WinUI (SfCartesianChart)
 
-## Fast Line
+## Fast Line Chart
 
 The [FastLineSeries]() is a special kind of line series that can render a collection with huge number of datapoints using the polyline segment. 
 
@@ -43,11 +43,11 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastLine chart type in WinUI Chart](FastChart_images/fastline_chart.png)
+![FastLine chart type in WinUI](FastChart_images/fastline_chart.png)
 
-## Fast Line Bitmap
+## Fast Line Bitmap Chart
 
-[FastLineBitmapSeries]() displays a series of line segments, rendered using `WriteableBitmap`. The advantage of FastLineBitmapSeries is, it renders a million data point in a fraction of seconds.
+The [FastLineBitmapSeries]() displays a series of line segments, rendered using `WriteableBitmap`. The advantage of `FastLineBitmapSeries` is, it renders a million data point in a fraction of seconds.
 
 {% tabs %}
 
@@ -79,7 +79,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastLineBitmap chart type in WinUI Chart](FastChart_images/fastlinebitmap_chart.png)
+![FastLineBitmap chart type in WinUI](FastChart_images/fastlinebitmap_chart.png)
+
+### Anti-aliasing
 
 As it was rendered using bitmap, there might be some jagged lines at the edges. This is can be reduced using the [EnableAntiAliasing]() property.
 
@@ -114,4 +116,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![AntiAliasing support for fast line bitmap chart in WinUI Chart](FastChart_images/fastlinebitmap_chart_antialiasing.png)
+![Anti-aliasing in fast line bitmap chart in WinUI](FastChart_images/fastlinebitmap_chart_antialiasing.png)

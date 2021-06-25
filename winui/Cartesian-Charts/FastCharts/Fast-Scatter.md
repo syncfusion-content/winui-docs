@@ -1,15 +1,17 @@
 ---
 layout: post
 title: Fast Scatter Chart in WinUI Chart control | Syncfusion
-description: Learn here all about Fast Scatter Chart of Syncfusion WinUI Chart(SfCartesianChart) control and more.
+description: Learn here all about Fast Scatter Chart of Syncfusion WinUI Chart (SfCartesianChart) control and more.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Fast Scatter Chart in WinUI Chart (SfCartesianChart)
+# Fast Scatter Chart in WinUI (SfCartesianChart)
 
-A fast scatter chart is a special kind of series that can render a collection with huge number of data points using `WriteableBitmap`. [FastScatterBitmapSeries]() is used to render high number of scatter points. The [ScatterHeight]() and [ScatterWidth]() are also available as in [ScatterSeries](). [ShapeType]() is used to change the rendering shape of fast scatter bitmap series. 
+A fast scatter chart is a special kind of series that can render a collection with huge number of data points using `WriteableBitmap`. [FastScatterBitmapSeries]() is used to render high number of scatter points. 
+
+The [ScatterHeight]() and [ScatterWidth]() properties are used to change the height and width of scatter segments. [ShapeType]() is used to change the rendering shape of fast scatter bitmap series. 
 
 The available shapes are 
 * `Cross` 
@@ -54,4 +56,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastScatterBitmap chart type in WinUI Chart](FastChart_images/fastscatterbitmap_chart.png)
+![FastScatterBitmap chart type in WinUI](FastChart_images/fastscatterbitmap_chart.png)
