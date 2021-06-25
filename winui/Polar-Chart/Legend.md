@@ -397,8 +397,6 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend background customization in WinUI Chart](Legend_images/WinUI_Chart_Legend_background_customizing.png)
-
 ## Template
 
 Customize each legend item by using the [ItemTemplate]() property in `ChartLegend`, as shown in the following code sample.
