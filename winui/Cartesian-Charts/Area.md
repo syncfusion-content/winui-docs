@@ -49,7 +49,7 @@ this.Content = chart;
 
 ## Spline Area Chart
 
-The [SplineAreaSeries]() connects a series of data points using smooth bezier line curves, with the underlying areas filled. The following code sample demonstrates how to initialize the [SplineAreaSeries]().
+The [SplineAreaSeries]() connects a series of data points using smooth bezier line curves, with the underlying areas filled.
 
 {% tabs %}
 
@@ -89,26 +89,24 @@ this.Content = chart;
 
 The [StepAreaSeries]() is similar to [AreaSeries](), but it does not use the shortest distance to connect the two data points using bezier curves. Instead, this series uses vertical and horizontal lines to connect the data points in a series forming a step-like progression.
 
-The following code example initializes the [StepAreaSeries]().
-
 {% tabs %}
 
 {% highlight xaml %}
 
-SfCartesianChart chart = new SfCartesianChart();
-. . .
 <chart:SfCartesianChart>
 . . .            
     <chart:SfCartesianChart.Series>
         <chart:StepAreaSeries XBindingPath="XValue" YBindingPath="YValue" ItemsSource="{Binding Data}"/> 
     </chart:SfCartesianChart.Series>
-
+    ...
 </chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+. . .
 StepAreaSeries series = new StepAreaSeries()
 {
     ItemsSource = new ViewModel().Data,

@@ -13,8 +13,6 @@ documentation: ug
 
 Line chart is used to represent the data trends at equal intervals by connecting points on a plot with straight lines. To render a line chart, create an instance of [LineSeries](), and add it to the [Series]() collection property of [SfCartesianChart]().
 
-The following code sample explains how to create a simple [LineSeries]().
-
 {% tabs %}
 
 {% highlight xaml %}
@@ -119,8 +117,6 @@ this.Content = chart;
 
 The [SplineSeries]() resembles line series, but instead of connecting the data points with line segments, the data points are connected by smooth bezier curves.
 
-The following code sample explains how to create a simple [SplineSeries]().
-
 {% tabs %}
 
 {% highlight xaml %}
@@ -167,7 +163,7 @@ this.Content = chart;
 
 ## Step Line Chart 
 
-The [StepLineSeries]() plots horizontal and vertical lines to connect the data points resulting in a step-like progression. The following code illustrates how to initialize the [StepLineSeries]() in the chart.
+The [StepLineSeries]() plots horizontal and vertical lines to connect the data points resulting in a step-like progression.
 
 {% tabs %}
 
