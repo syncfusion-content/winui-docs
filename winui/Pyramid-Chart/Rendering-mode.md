@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rendering mode in WinUI Pyramid Chart control | Syncfusion
-description: This sections explains about the rendering mode of Syncfusion WinUI Pyramid Chart(SfPyramidChart) control.
+title: Rendering mode in WinUI Chart control | Syncfusion
+description: This sections explains about the rendering mode of Syncfusion WinUI Chart(SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
 ---
 
-# Rendering mode in WinUI Pyramid Chart (SfPyramidChart)
+# Rendering mode in WinUI Chart (SfPyramidChart)
 
 The [PyramidMode]() is used to define the rendering mode of pyramid chart such as [Surface]() or [Linear](). The default value of [PyramidMode]() property is `Linear`.
 
@@ -44,7 +44,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Rendering mode with area in WinUI Pyramid chart](Rendering-mode_images/WinUI_pyramid_chart_surface.png)
+![Rendering mode with area in WinUI chart](Rendering-mode_images/WinUI_pyramid_chart_surface.png)
 
 ## Pyramid mode as linear
 
@@ -79,5 +79,5 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Rendering mode with height in WinUI Pyramid chart](Rendering-mode_images/WinUI_pyramid_chart_linear.png)
+![Rendering mode with height in WinUI chart](Rendering-mode_images/WinUI_pyramid_chart_linear.png)
 

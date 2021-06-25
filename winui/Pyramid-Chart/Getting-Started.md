@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with WinUI Pyramid Chart control | Syncfusion
-description: This section explains about getting started with Syncfusion WinUI Pyramid Chart(SfPyramidChart) control
+title: Getting started with WinUI Chart control | Syncfusion
+description: This section explains about getting started with Syncfusion WinUI Chart(SfPyramidChart) control
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
 ---
 
-# Getting started with WinUI Pyramid Chart
+# Getting started with WinUI Chart
 
 This section explains how to populate the pyramid chart with data, a header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
@@ -296,9 +296,7 @@ public sealed partial class MainWindow : Window
 
 N> To plot the chart, the [XBindingPath]() and [YBindingPath]() properties must be configured so that the chart may get values from the respective properties in the data model.
 
-The following chart is created as a result of the previous codes.
-
-![Getting started for WinUI Pyramid Chart](Getting-Started_images/WinUI_PyramidChart.png)
+![Getting started for WinUI Chart](Getting-Started_images/WinUI_PyramidChart.png)
 
 N> Download demo application from [GitHub]().
 

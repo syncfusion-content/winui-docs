@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Title in WinUI Pyramid Chart control | Syncfusion
-description: Learn here all about title with Syncfusion WinUI Pyramid Chart(SfPyramidChart) control and its customization.
+title: Title in WinUI Chart control | Syncfusion
+description: Learn here all about title with Syncfusion WinUI Chart(SfPyramidChart) control and its customization.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
 ---
 
-# Chart title in WinUI Pyramid Chart (SfPyramidChart)
+# Chart title in WinUI Chart (SfPyramidChart)
 
 `Header` property is used to define the title for the chart.
 
@@ -32,9 +32,9 @@ this.Content = chart;
 
 {% endtabs %} 
 
-![Title support in WinUI Pyramid chart](Title_Images/WinUI_PyramidChart_Title.png)
+![Title support in WinUI chart](Title_Images/WinUI_PyramidChart_Title.png)
 
-## Title customization
+## Customization
 
 The pyramid chart provides support to add any `UIElement` as a title. The following code example defines `TextBlock` as chart header.
 
@@ -82,9 +82,9 @@ The pyramid chart provides support to add any `UIElement` as a title. The follow
 
 {% endtabs %} 
 
-![Title customization support in WinUI Pyramid chart](Title_Images/WinUI_PyramidChart_TitleCustomization.png)
+![Title customization support in WinUI chart](Title_Images/WinUI_PyramidChart_TitleCustomization.png)
 
-## Title alignment
+## Alignment
 
 The title text content can be aligned horizontally to the left, center or right of the chart using the [HorizontalHeaderAlignment]() property of the `SfPyramidChart`.
 
@@ -127,5 +127,5 @@ public sealed partial class MainPage : Page
 
 {% endtabs %} 
 
-![Title text alignment support in WinUI pyramid chart](Title_images/WinUI_PyramidChart_TitleAlignment.png)
+![Title text alignment support in WinUI chart](Title_images/WinUI_PyramidChart_TitleAlignment.png)
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in WinUI Pyramid Chart control | Syncfusion
-description: Learn here all about selection and multi-selection support in Syncfusion WinUI Pyramid Chart (SfPyramidChart) control.
+title: Selection in WinUI Chart control | Syncfusion
+description: Learn here all about selection and multi-selection support in Syncfusion WinUI Chart (SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
 ---
 
-# Selection in WinUI Pyramid Chart (SfPyramidChart)
+# Selection in WinUI Chart (SfPyramidChart)
 
 Pyramid chart supports selection that allows to select a segment in the chart by using [ChartSelectionBehavior](). 
 
@@ -51,13 +51,13 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Segment selection support in WinUI Pyramid Chart](Selection_images/WinUI_pyramid_chart_segment_selection.png)
+![Segment selection support in WinUI Chart](Selection_images/WinUI_pyramid_chart_segment_selection.png)
 
 ## Multi selection
 
 Pyramid chart provides support to select multiple segments by using [Type]() property as `MultiPoint`. 
 
-The following code snippet demonstrates multiple segment selection.
+N> By default, the value of [Type]() is `Point`. `Series` and `MultiSeries` is not support for funnel chart.
 
 {% tabs %}
 
@@ -95,15 +95,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Multi selection support in WinUI Pyramid Chart](Selection_images/WinUI_pyramid_chart_multi_selection.png)
-
-N> By default, the value of [Type]() is `Point`. `Series` and `MultiSeries` is not support for funnel chart.
+![Multi selection support in WinUI Chart](Selection_images/WinUI_pyramid_chart_multi_selection.png)
 
 ## Changing cursor while selection
 
 [Cursor]() property allows to define the cursor when mouse is hovered over the segment with segment selection enabled.
-
-The following code snippet demonstrates hand cursor in segment selection.
 
 {% tabs %}
 
@@ -141,7 +137,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Changing cursor while selection support in WinUI Pyramid Chart](Selection_images/WinUI_pyramid_chart_cursor.png)
+![Changing cursor while selection support in WinUI Chart](Selection_images/WinUI_pyramid_chart_cursor.png)
 
 ## Events
 

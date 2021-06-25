@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Explode segments in WinUI Pyramid Chart control | Syncfusion
-description: This section explains about how to explode single segment or all segments in Syncfusion WinUI Pyramid Chart(SfPyramidChart) control.
+title: Explode segments in WinUI Chart control | Syncfusion
+description: This section explains about how to explode single segment or all segments in Syncfusion WinUI Chart(SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
 ---
 
-# Explode segments in WinUI Pyramid Chart (SfPyramidChart)
+# Explode segments in WinUI Chart (SfPyramidChart)
 
 Exploding a segment is used to pull attention to a specific area of the pyramid. The following properties are used to explode the segments in the pyramid chart.
 
@@ -48,5 +48,5 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Explode segments in WinUI Pyramid Chart](Explode-segments_images/WinUI_pyramid_chart_explode_segments.png)
+![Explode segments in WinUI Chart](Explode-segments_images/WinUI_pyramid_chart_explode_segments.png)
 
