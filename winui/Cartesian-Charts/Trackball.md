@@ -219,6 +219,44 @@ The alignment of the axis label can be defined using the [`AxisLabelAlignment`](
 * `Near` -used to align in near to the position of trackball.
 * `Center` - used to align to the center of the trackball.
 
+{% tabs %}
+
+{% highlight xml %}
+
+<chart:SfCartesianChart>
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis ShowTrackballInfo="True"/>
+    </chart:SfCartesianChart.PrimaryAxis>
+    . . .
+    <chart:SfCartesianChart.Behaviors>
+        <chart:ChartTrackballBehavior AxisLabelAlignment="Center"/>
+    </chart:SfCartesianChart.Behaviors>
+    . . .
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+. . .
+chart.PrimaryAxis = new CategoryAxis()
+{
+    ShowTrackballInfo = true
+};
+...
+ChartTrackballBehavior behavior = new ChartTrackballBehavior();
+behavior.AxisLabelAlignment = ChartAlignment.Center;
+chart.Behaviors.Add(behavior);
+. . .
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Axis Trackball label alignment in WinUI chart](Trackball_images/WinUI_chart_axis_trackball_label_alignment.png)
+
 ### Customization of axis label
 
 The appearance of the axis label can be customized by using the [`TrackballLabelTemplate`]() property in the chart axis as in the below code snippet.
