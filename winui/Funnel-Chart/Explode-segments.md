@@ -48,4 +48,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Explode segments in WinUI Chart](Explode-segments_images/winui-chart_explode_segments.png)
+![Explode segments in WinUI Chart](Explode-segments_Images/winui-chart_explode_segments.png)
