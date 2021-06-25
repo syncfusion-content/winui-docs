@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend in WinUI Pyramid Chart control | Syncfusion
-description: This sections explains about how to configure the legend and its features title, icons, labels, and template in WinUI Pyramid Chart(SfPyramidChart) control.
+title: Legend in WinUI Chart control | Syncfusion
+description: This sections explains about how to configure the legend and its features title, icons, labels, and template in WinUI Chart(SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
 ---
 
-# Legend in WinUI Pyramid Chart (SfPyramidChart)
+# Legend in WinUI Chart (SfPyramidChart)
 
 The legend contains a list of series data points in the chart. The information provided in each legend item helps you to identify the corresponding data in the chart.
 
@@ -17,9 +17,13 @@ The following code example shows how to enable legend in the chart.
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart.Legend>
-    <chart:ChartLegend/>
-</chart:SfPyramidChart.Legend>
+<chart:SfPyramidChart x:Name="chart">
+. . .
+    <chart:SfPyramidChart.Legend>
+        <chart:ChartLegend/>
+    </chart:SfPyramidChart.Legend>
+. . .
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
@@ -27,6 +31,8 @@ The following code example shows how to enable legend in the chart.
 
 SfPyramidChart chart = new SfPyramidChart();
 chart.Legend = new ChartLegend();
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -34,9 +40,9 @@ chart.Legend = new ChartLegend();
 
 N> The x-value of data points in the pyramid chart will be the legend items ‘Label’.
 
-![Legend support in WinUI Pyramid Chart](Legend_images/WinUI_pyramid_chart_legend.png)
+![Legend support in WinUI Chart](Legend_images/WinUI_chart_legend.png)
 
-## Legend title
+## Title
 
 The pyramid chart provides support to add any `UIElement` as a title for legend. [Header]() property of `ChartLegend` is used to define the title for the legend as shown in the following code example.
 
@@ -44,16 +50,20 @@ The pyramid chart provides support to add any `UIElement` as a title for legend.
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart.Legend>
-    <chart:ChartLegend>
-        <chart:ChartLegend.Header>
-            <TextBox Text="Foods" 
-                HorizontalAlignment="Center"
-                FontWeight="Bold"
-                Foreground="Blue"/>
-        </chart:ChartLegend.Header>
-    </chart:ChartLegend>
-</chart:SfPyramidChart.Legend>
+<chart:SfPyramidChart x:Name="chart">
+. . .
+    <chart:SfPyramidChart.Legend>
+        <chart:ChartLegend>
+            <chart:ChartLegend.Header>
+                <TextBox Text="Foods" 
+                    HorizontalAlignment="Center"
+                    FontWeight="Bold"
+                    Foreground="Blue"/>
+            </chart:ChartLegend.Header>
+        </chart:ChartLegend>
+    </chart:SfPyramidChart.Legend>
+. . .
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
@@ -72,14 +82,16 @@ TextBlock textBlock = new TextBlock()
 
 legend.Header = textBlock;
 chart.Legend = legend;
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Legend title in WinUI Pyramid Chart](Legend_images/WinUI_pyramid_chart_legend_header.png)
+![Legend title in WinUI Chart](Legend_images/WinUI_chart_legend_header.png)
 
-## Legend icon
+## Icon
 
 The legend icon represents a symbol associated with each legend item. The appearance of the legend icon can be customized using the following properties:
 
@@ -87,36 +99,41 @@ The legend icon represents a symbol associated with each legend item. The appear
 * [IconHeight]() - Gets or sets the double value that represents the legend icon(s) height.
 * [IconVisibility]() - Gets or sets the visibility of the legend icon.
 
-The following code example illustrates the customization of the legend icon.
-
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart.Legend>
-    <chart:ChartLegend IconWidth="15" IconHeight="15" 
+<chart:SfPyramidChart x:Name="chart">
+. . .
+    <chart:SfPyramidChart.Legend>
+        <chart:ChartLegend IconWidth="15" IconHeight="15" 
                        IconVisibility="Visible">
-    </chart:ChartLegend>
-</chart:SfPyramidChart.Legend>
+        </chart:ChartLegend>
+    </chart:SfPyramidChart.Legend>
+. . .
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfPyramidChart chart = new SfPyramidChart();
 chart.Legend = new ChartLegend()
 {
     IconWidth = 15,
     IconHeight = 15,
     IconVisibility = Visibility.Visible,
 };
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Legend icon in WinUI Pyramid Chart](Legend_images/WinUI_pyramid_chart_legend_customize.png)
+![Legend icon in WinUI Chart](Legend_images/WinUI_chart_legend_customize.png)
 
-## Legend item spacing
+## Item spacing
 
 [ItemMargin]() property of the `ChartLegend` is used to provide spacing between each legend items.
 
@@ -124,26 +141,33 @@ chart.Legend = new ChartLegend()
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart.Legend>
-    <chart:ChartLegend ItemMargin="10"/>
-</chart:SfPyramidChart.Legend>
+<chart:SfPyramidChart x:Name="chart">
+. . .
+    <chart:SfPyramidChart.Legend>
+        <chart:ChartLegend ItemMargin="10"/>
+    </chart:SfPyramidChart.Legend>
+. . .
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfPyramidChart chart = new SfPyramidChart();
 chart.Legend = new ChartLegend()
 {
     ItemMargin = new Thickness(10)
 };
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Legend item spacing support in WinUI Pyramid Chart](Legend_images/WinUI_pyramid_chart_legend_item_spacing.png)
+![Legend item spacing support in WinUI Chart](Legend_images/WinUI_chart_legend_item_spacing.png)
 
-## Checkbox for legend
+## Checkbox for Legend
 
 Pyramid chart provides support to enable the checkbox for each legend item to visible or collapse the associated data points. By default, the value of [CheckBoxVisibility]() property is `Collapsed`. 
 
@@ -151,26 +175,33 @@ Pyramid chart provides support to enable the checkbox for each legend item to vi
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart.Legend>
-    <chart:ChartLegend CheckBoxVisibility="Visible"/>
-</chart:SfPyramidChart.Legend>
+<chart:SfPyramidChart x:Name="chart">
+. . .
+    <chart:SfPyramidChart.Legend>
+        <chart:ChartLegend CheckBoxVisibility="Visible"/>
+    </chart:SfPyramidChart.Legend>
+. . .
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfPyramidChart chart = new SfPyramidChart();
 chart.Legend = new ChartLegend()
 {
    CheckBoxVisibility = Visibility.Visible
 };
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Checkbox support for legend in WinUI Pyramid Chart](Legend_images/WinUI_pyramid_chart_legend_checkBox.png)
+![Checkbox support for legend in WinUI Chart](Legend_images/WinUI_chart_legend_checkBox.png)
 
-## Toggle series visibility 
+## Toggle Series Visibility 
 
 By enabling the [ToggleSeriesVisibility]() property, the visibility of the pyramid segment can be controlled by tapping the legend item. By default, the value of [ToggleSeriesVisibility]() property is `False`.
 
@@ -178,26 +209,33 @@ By enabling the [ToggleSeriesVisibility]() property, the visibility of the pyram
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart.Legend>
-    <chart:ChartLegend ToggleSeriesVisibility="True"/>
-</chart:SfPyramidChart.Legend>
+<chart:SfPyramidChart x:Name="chart">
+. . .
+    <chart:SfPyramidChart.Legend>
+        <chart:ChartLegend ToggleSeriesVisibility="True"/>
+    </chart:SfPyramidChart.Legend>
+. . .
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfPyramidChart chart = new SfPyramidChart();
 chart.Legend = new ChartLegend()
 {
    ToggleSeriesVisibility = true
 };
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![ToggleSeriesVisibility support for legend in WinUI Pyramid Chart](Legend_images/WinUI_pyramid_chart_legend_toggleSeriesVisibility.png)
+![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/WinUI_chart_legend_toggleSeriesVisibility.png)
 
-## Positioning the legend
+## Position
 
 The legends can be placed either inside or outside of the chart area (plotting area). By default, it will be displayed outside and positioned at top (using [DockPosition]()) of the chart area.
 
@@ -205,54 +243,66 @@ The legends can be placed either inside or outside of the chart area (plotting a
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart.Legend>
-    <chart:ChartLegend Position="Inside"/>
-</chart:SfPyramidChart.Legend>
+<chart:SfPyramidChart x:Name="chart">
+. . .
+    <chart:SfPyramidChart.Legend>
+        <chart:ChartLegend Position="Inside"/>
+    </chart:SfPyramidChart.Legend>
+. . .
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfPyramidChart chart = new SfPyramidChart();
 chart.Legend = new ChartLegend()
 {
     Position = LegendPosition.Inside
 };
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-**Docking the legend position**
+### Docking the Legend Position
 
 By using the [DockPosition]() property, legends can be docked to the left, right, and top or bottom of the chart area. By default, the chart legend is docked at the top of the chart as mentioned earlier.
-
-To display the legend at the left, you can set the [DockPosition]() as [Left]() as shown in the following code sample.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart.Legend>
-    <chart:ChartLegend ItemMargin="10" DockPosition="Left"/>
-</chart:SfPyramidChart.Legend>
+<chart:SfPyramidChart x:Name="chart">
+. . .
+    <chart:SfPyramidChart.Legend>
+        <chart:ChartLegend ItemMargin="10" DockPosition="Left"/>
+    </chart:SfPyramidChart.Legend>
+. . .
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfPyramidChart chart = new SfPyramidChart();
 chart.Legend = new ChartLegend()
 {
    DockPosition = ChartDock.Left,
    ItemMargin = new Thickness(10),
 };
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Positioning the legend at right in WinUI Pyramid Chart](Legend_images/WinUI_pyramid_chart_legend_dockPosition.png)
+![Positioning the legend at right in WinUI Chart](Legend_images/WinUI_chart_legend_dockPosition.png)
 
-**Floating legends**
+### Floating Legends
 
 To position the legend at any arbitrary location within the chart, you need to set [DockPosition]() as `Floating` and provide its relative position by using the [OffsetX]() and [OffsetY]() properties.
 
@@ -260,14 +310,19 @@ To position the legend at any arbitrary location within the chart, you need to s
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart.Legend>
-    <chart:ChartLegend DockPosition="Floating" Orientation="Vertical" OffsetX="10" OffsetY="45" ItemMargin="3"/>
-</chart:SfPyramidChart.Legend>
+<chart:SfPyramidChart x:Name="chart">
+. . .
+    <chart:SfPyramidChart.Legend>
+        <chart:ChartLegend DockPosition="Floating" Orientation="Vertical" OffsetX="10" OffsetY="45" ItemMargin="3"/>
+    </chart:SfPyramidChart.Legend>
+. . .
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfPyramidChart chart = new SfPyramidChart();
 chart.Legend = new ChartLegend()
 {
     DockPosition = ChartDock.Floating,
@@ -276,14 +331,16 @@ chart.Legend = new ChartLegend()
     OffsetY = 45,
     ItemMargin = new Thickness(3)
 };
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Floating legend support in WinUI Pyramid Chart](Legend_images/WinUI_pyramid_chart_legend_floating.png)
+![Floating legend support in WinUI Chart](Legend_images/WinUI_chart_legend_floating.png)
 
-## Legend orientation
+## Orientation
 
 Orientation of the legend items can be aligned vertically or horizontally by setting the [Orientation]() property of legend. By default, the value of [Orientation]() property is [Horizontal]().
 
@@ -291,26 +348,33 @@ Orientation of the legend items can be aligned vertically or horizontally by set
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart.Legend>
-    <chart:ChartLegend Orientation="Vertical"/>
-</chart:SfPyramidChart.Legend>
+<chart:SfPyramidChart x:Name="chart">
+. . .
+    <chart:SfPyramidChart.Legend>
+        <chart:ChartLegend Orientation="Vertical"/>
+    </chart:SfPyramidChart.Legend>
+. . .
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfPyramidChart chart = new SfPyramidChart();
 chart.Legend = new ChartLegend()
 {
     Orientation = ChartOrientation.Vertical
 };
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Legend orientation support in WinUI Pyramid Chart](Legend_images/WinUI_pyramid_chart_legend_orientation.png)
+![Legend orientation support in WinUI Chart](Legend_images/WinUI_chart_legend_orientation.png)
 
-## Legend background customization 
+## Background customization 
 
 The legend background appearance can be customized by using the following properties:
 
@@ -324,17 +388,22 @@ The legend background appearance can be customized by using the following proper
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart.Legend>
-    <chart:ChartLegend Background="LightGray" BorderBrush="Black" 
+<chart:SfPyramidChart x:Name="chart">
+. . .
+    <chart:SfPyramidChart.Legend>
+        <chart:ChartLegend Background="LightGray" BorderBrush="Black" 
                        BorderThickness="1" CornerRadius="5" 
                        Opacity="0.9" >
-    </chart:ChartLegend>
-</chart:SfPyramidChart.Legend>
+        </chart:ChartLegend>
+    </chart:SfPyramidChart.Legend>
+. . .
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfPyramidChart chart = new SfPyramidChart();
 chart.Legend = new ChartLegend()
 {
     Background = new SolidColorBrush(Colors.LightGray),
@@ -343,14 +412,16 @@ chart.Legend = new ChartLegend()
     Opacity = 0.9,
     CornerRadius = CornerRadiusHelper.FromUniformRadius(5)
 };
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Legend background customization in WinUI Pyramid Chart](Legend_images/WinUI_pyramid_chart_legend_background_customization.png)
+![Legend background customization in WinUI Chart](Legend_images/WinUI_chart_legend_background_customization.png)
 
-## Legend template customization
+## Template
 
 Customize each legend item by using the [ItemTemplate]() property in `ChartLegend`, as shown in the following code sample.
 
@@ -381,15 +452,18 @@ Customize each legend item by using the [ItemTemplate]() property in `ChartLegen
 
 {% highlight c# %}
 
+SfPyramidChart chart = new SfPyramidChart();
 chart.Legend = new ChartLegend()
 {
    ItemTemplate = chart.Resources["itemTemplate"] as DataTemplate
 };
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Legend ItemTemplate support in WinUI Pyramid Chart](Legend_images/WinUI_pyramid_chart_legend_itemTemplate.png)
+![Legend ItemTemplate support in WinUI Chart](Legend_images/WinUI_chart_legend_itemTemplate.png)
 
 

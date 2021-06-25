@@ -54,7 +54,7 @@ public sealed partial class MainWindow : Window
 
 {% endtabs %}
 
-## Initialize view model
+## Initialize View Model
 
 Now, let us define a simple data model that represents a data point in chart.
 
@@ -135,7 +135,7 @@ chart.DataContext = viewModel;
 
 {% endtabs %} 
 
-## Initialize chart axis
+## Initialize Chart Axis
 
 [ChartAxis]() is used to locate the data points inside the chart area. The [PrimaryAxis]() and [SecondaryAxis]() properties of the chart is used to initialize the axis for the chart.
 
@@ -166,7 +166,7 @@ chart.SecondaryAxis = secondaryAxis;
 
 {% endtabs %} 
 
-## Populate chart with data
+## Populate Chart with Data
 
 Adding [PolarAreaSeries]() to the polar chart [Series]() collection and binding `Data` to the series [ItemsSource]() property from its `DataContext` for creating polar chart.
 
@@ -221,7 +221,7 @@ chart.Series.Add(series);
 
 {% endtabs %} 
 
-## Add title
+## Add Title
 
 The title of the chart provide quick information to the user about the data being plotted in the chart. The [Header]() property is used to set title for polar chart as follows.
 
@@ -245,7 +245,7 @@ chart.Header = "Polar Chart";
 
 {% endtabs %}  
 
-## Enable data labels
+## Enable Data Labels
 
 The [ShowDataLabels]() property of series can be used to enable the data labels to improve the readability of the chart. The label visibility is set to `False` by default.
 
@@ -275,7 +275,7 @@ series.ShowDataLabels = true;
 
 {% endtabs %}  
 
-## Enable legend
+## Enable Legend
 
 The legend provides information about the data point displayed in the polar chart. The [Legend]() property of the chart was used to enable it.
 
@@ -407,7 +407,6 @@ public sealed partial class MainWindow : Window
 
 The following chart is created as a result of the previous codes.
 
-![Getting Started WinUI Chart](Getting-Started_images/WinUI_PolarChart.png)
+![Getting Started WinUI Chart](Getting-Started_images/WinUI_Chart.png)
 
 N> Download demo application from [GitHub]()
-

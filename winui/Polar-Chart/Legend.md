@@ -188,7 +188,7 @@ chart.Legend = new ChartLegend()
 
 ![Checkbox support for legend in WinUI Chart](Legend_images/WinUI_PolarChart_Legend_CheckBox.png)
 
-## Toggle series visibility 
+## Toggle Series Visibility 
 
 By enabling the [ToggleSeriesVisibility]() property, the visibility of the series can be controlled by tapping the legend item. By default, the value of [ToggleSeriesVisibility]() property is `False`.
 

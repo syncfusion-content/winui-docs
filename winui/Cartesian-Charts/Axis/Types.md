@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Axis types in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about axis types and its features in Syncfusion WinUI Cartesian Chart (SfCartesianChart) control and more.
+title: Axis types in WinUI Chart control | Syncfusion
+description: Learn here all about axis types and its features in Syncfusion WinUI Chart (SfCartesianChart) control and more.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Types of axis in WinUI Cartesian Chart
+# Types of Axis in WinUI Chart (SfCartesianChart)
 
 Cartesian chart supports the following types of chart axis.
 
@@ -17,12 +17,14 @@ Cartesian chart supports the following types of chart axis.
 
 ## Numerical Axis
 
-[NumericalAxis]() is used to plot numerical values to the chart. [NumericalAxis]() can be defined for both [PrimaryAxis]() and [SecondaryAxis](). The following code snippet shows how to define the [NumericalAxis]().
+[NumericalAxis]() is used to plot numerical values to the chart. [NumericalAxis]() can be defined for both [PrimaryAxis]() and [SecondaryAxis]().
 
 {% tabs %}
 
 {% highlight xaml %}
 
+<chart:SfCartesianChart>
+. . .
 <chart:SfCartesianChart.PrimaryAxis>
     <chart:NumericalAxis/>
 </chart:SfCartesianChart.PrimaryAxis>
@@ -30,10 +32,14 @@ Cartesian chart supports the following types of chart axis.
     <chart:NumericalAxis/>
 </chart:SfCartesianChart.SecondaryAxis>
 
+</chart:SfCartesianChart>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+. . .
 chart.PrimaryAxis = new NumericalAxis();
 
 chart.SecondaryAxis = new NumericalAxis();
@@ -44,9 +50,11 @@ chart.SecondaryAxis = new NumericalAxis();
 
 ![NumericalAxis support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types.png)
 
-### Customizing the range
+### Customizing the Range
 
 [Maximum]() and [Minimum]() properties of axis is used for setting the maximum and minimum value of the axis range respectively.
+
+N> If  minimum or maximum value is set, the other value is calculated by default internally.
 
 {% tabs %}
 
@@ -73,24 +81,30 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![NumericalAxis range customization in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_Numeric.png)
 
-N> If  minimum or maximum value is set, the other value is calculated by default internally.
-
 ### Start from zero
 
 [NumericalAxis]() will calculate the start range based on the data points binded to the chart. By defining the [StartRangeFromZero]() property to True, numerical axis start the range from zero.
+
+N> By default, Range is calculated between the minimum and maximum value of the data points.
 
 {% tabs %}
 
 {% highlight xaml %}
 
+<chart:SfCartesianChart>
+. . .
 <chart:SfCartesianChart.SecondaryAxis>
     <chart:NumericalAxis StartRangeFromZero="True"/>
 </chart:SfCartesianChart.SecondaryAxis>
+
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+. . .
 chart.SecondaryAxis = new NumericalAxis()
 {
    StartRangeFromZero = true
@@ -102,8 +116,6 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![NumericalAxis customization support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_startZero.png)
 
-N> By default, Range is calculated between the minimum and maximum value of the data points.
-
 ## Category Axis
 
 The [CategoryAxis]() is an indexed based axis that plots values based on the index of the data point collection. The points are equally spaced here.
@@ -112,14 +124,20 @@ The [CategoryAxis]() is an indexed based axis that plots values based on the ind
 
 {% highlight xaml %}
 
+<chart:SfCartesianChart>
+. . .
 <chart:SfCartesianChart.PrimaryAxis>
     <chart:CategoryAxis/>
 </chart:SfCartesianChart.PrimaryAxis>
+
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+. . .
 chart.PrimaryAxis = new CategoryAxis();
 
 {% endhighlight %}
@@ -130,20 +148,26 @@ chart.PrimaryAxis = new CategoryAxis();
 
 ### Label placement
 
-The [LabelPlacement]() property in [CategoryAxis]() is used to placed the axis labels based on ticks and between ticks. The default value of [LabelPlacement]() is `OnTicks`. The following code example demonstrates placing the axis labels between ticks.
+The [LabelPlacement]() property in [CategoryAxis]() is used to placed the axis labels based on ticks and between ticks. The default value of [LabelPlacement]() is `OnTicks`.
 
 {% tabs %}
 
 {% highlight xaml %}
 
+<chart:SfCartesianChart>
+. . .
 <chart:SfCartesianChart.PrimaryAxis>
     <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
 </chart:SfCartesianChart.PrimaryAxis>
+
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+. . .
 chart.PrimaryAxis = new CategoryAxis()
 {
     LabelPlacement = LabelPlacement.BetweenTicks
@@ -157,20 +181,26 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ### IsIndexed
 
-By default, [CategoryAxis]() plots the values based on the index of the data points. However, the [CategoryAxis]() can be made to plot the data points based on its data, instead of index value by disabling the [IsIndexed]() property of `CategoryAxis` as shown in the following code example.
+By default, [CategoryAxis]() plots the values based on the index of the data points. However, the [CategoryAxis]() can be made to plot the data points based on its data, instead of index value by disabling the [IsIndexed]() property of `CategoryAxis`.
 
 {% tabs %}
 
 {% highlight xaml %}
 
+<chart:SfCartesianChart>
+. . .
 <chart:SfCartesianChart.PrimaryAxis>
     <chart:CategoryAxis IsIndexed="False"/>
 </chart:SfCartesianChart.PrimaryAxis>
+
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+. . .
 chart.PrimaryAxis = new CategoryAxis()
 {
     IsIndexed = false,
@@ -180,7 +210,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-### DateTime Axis
+## DateTime Axis
 
 [DateTimeAxis]() is used to plot `DateTime` values. The `DateTimeAxis` is widely used to make financial charts in places like the Stock Market, where index plotting is done every day.
 
@@ -188,14 +218,20 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% highlight xaml %}
 
+<chart:SfCartesianChart>
+. . .
 <chart:SfCartesianChart.PrimaryAxis>
     <chart:DateTimeAxis LabelFormat="MMM-yy"/>
 </chart:SfCartesianChart.PrimaryAxis>
+
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+. . .
 chart.PrimaryAxis = new DateTimeAxis()
 {
     LabelFormat = "MMM-yy"
@@ -207,7 +243,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 ![DateTimeCategoryAxis support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_datetime.png)
 
-### Customizing the range
+### Customizing the Range
 
 [Minimum]() and [Maximum]() properties behavior is same as in `NumericalAxis` instead of setting numerical value, have to set date time values.
 
@@ -215,14 +251,20 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% highlight xaml %}
 
+<chart:SfCartesianChart>
+. . .
 <chart:SfCartesianChart.PrimaryAxis>
     <chart:DateTimeAxis Minimum="2021/05/1" Maximum="2021/11/01"  LabelFormat="MMM-yy"/>
 </chart:SfCartesianChart.PrimaryAxis>
+
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+. . .
 chart.PrimaryAxis = new DateTimeAxis()
 {
     Minimum = new DateTime(2021,05,10),
@@ -236,7 +278,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 ![DateTimeAxis range customization support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_range_datetime.png)
 
-### Enable business hours
+### Enable Business Hours
 
 [SfCartesianChart]() provides support to plot only the business hours in `DateTimeAxis`. This support is enabled by setting [EnableBusinessHours]() property to true.
 
@@ -246,22 +288,26 @@ The following properties are used for business hour range calculation:
 * [CloseTime]()- Represents the close working time of a day.
 * [WorkingDays]()- Represents the working [days]() of a week.
 
-The following code snippet demonstrates the business hours support in `DateTimeAxis`.
-
 {% tabs %}
 
 {% highlight xaml %}
 
+<chart:SfCartesianChart>
+. . .
 <chart:SfCartesianChart.PrimaryAxis>
     <chart:DateTimeAxis LabelFormat="dd-MMM" EnableBusinessHours="True" OpenTime="9" 
                         CloseTime="24" 
                         WorkingDays="Friday,Saturday,Sunday,Monday,Tuesday,Wednesday,Sunday"/>
 </chart:SfCartesianChart.PrimaryAxis>
 
+</chart:SfCartesianChart>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+. . .
 chart.PrimaryAxis = new DateTimeAxis()
 {
     EnableBusinessHours = true,
@@ -275,9 +321,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis range customization support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_workdays.png)
-
-## Inversed axis
+## Inversed
 
 Axis can be inverted by using the [IsInversed]() property. The default value of this property is `False`.
 
@@ -285,14 +329,21 @@ Axis can be inverted by using the [IsInversed]() property. The default value of 
 
 {% highlight xaml %}
 
+<chart:SfCartesianChart>
+. . .
 <chart:SfCartesianChart.SecondaryAxis>
     <chart:NumericalAxis IsInversed="True"/>
 </chart:SfCartesianChart.SecondaryAxis>
+
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+. . .
+this.Chart.SecondaryAxis = new NumericalAxis();
 this.Chart.SecondaryAxis.IsInversed = true;
 
 {% endhighlight %}
@@ -311,6 +362,8 @@ By default, all the series are plotted based on primary and secondary axis.
 
 {% highlight xaml %}
 
+<chart:SfCartesianChart>
+. . .
 <chart:SfCartesianChart.Series>
     <chart:ColumnSeries ItemsSource="{Binding Data1}" 
                      XBindingPath="Date"
@@ -327,9 +380,14 @@ By default, all the series are plotted based on primary and secondary axis.
                      YBindingPath="Value"/>
 </chart:SfCartesianChart.Series>
 
+</chart:SfCartesianChart>
+
 {% endhighlight %}
 
 {% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+. . .
 
 ColumnSeries series1 = new ColumnSeries()
 {
@@ -360,5 +418,4 @@ chart.Series.Add(series2);
 
 ![Multiple axes support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_multipleAxis.png)
 
-In the above screenshot, the Column is plotted based on additional X & Y axes, and SplineSeries (or remaining series) is plotted based on the primary and secondary axes.
-
+In the above image, the `ColumnSeries` is plotted based on additional X & Y axes, and `SplineSeries` is plotted based on the primary and secondary axes.

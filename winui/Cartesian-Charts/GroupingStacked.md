@@ -1,17 +1,15 @@
 ---
 layout: post
-title: Stacked group chart in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about the stacked group chart in Syncfusion WinUI Cartesian Chart (SfCartesianChart) control.
+title: Stacked group chart in WinUI Chart control | Syncfusion
+description: Learn here all about the stacked group chart and its features in Syncfusion WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Stacked Group Chart in WinUI Cartesian Chart (SfCartesianChart)
+# Stacked Group Chart in WinUI Chart (SfCartesianChart)
 
-Cartesian chart provides support to group the stacked similar series by using the [`GroupName`]() property of stacked series. The stacked series which contains the same [`GroupName`]() will be stacked in a single group.
-
-The following code example shows how to group the stacked series.
+Chart provides support to group the stacked similar series by using the [`GroupName`]() property of stacked series. The stacked series which contains the same [`GroupName`]() will be stacked in a single group.
 
 {% tabs %}
 
@@ -83,5 +81,4 @@ chart.Series.Add(series4);
 
 {% endtabs %}
 
-![Stacked group chart in WinUI](Grouped_Stacking_Images/groupingstacked.png)
-
+![Stacked group chart in WinUI Chart](Grouped_Stacking_Images/groupingstacked.png)

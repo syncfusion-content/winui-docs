@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Title in WinUI Funnel Chart control | Syncfusion
-description: Learn here all about title with Syncfusion WinUI Funnel Chart (SfFunnelChart) control and its customization.
+title: Title in WinUI Chart control | Syncfusion
+description: Learn here all about title with Syncfusion WinUI Chart (SfFunnelChart) control and its customization.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
 ---
 
-# Chart title in WinUI Funnel Chart (SfFunnelChart)
+# Chart Title in WinUI Chart (SfFunnelChart)
 
 `Header` property is used to define the title for the chart.
 
@@ -32,9 +32,9 @@ this.Content = chart;
 
 {% endtabs %} 
 
-![Title support in WinUI Funnel chart](Title_Images/WinUI_FunnelChart_Title.png)
+![Title support in WinUI chart](Title_Images/WinUI_FunnelChart_Title.png)
 
-## Title customization
+## Customization
 
 `Header` property of `SfFunnelChart` is used to define and customize the chart title. It accepts any object (.Net object) as content for the chart header.
 
@@ -82,9 +82,9 @@ this.Content = chart;
 
 {% endtabs %} 
 
-![Title customization support in WinUI funnel chart](Title_images/WinUI_FunnelChart_TitleCustomization.png)
+![Title customization support in WinUI chart](Title_images/WinUI_FunnelChart_TitleCustomization.png)
 
-## Title alignment
+## Alignment
 
 The title text content can be aligned horizontally to the left, center or right of the chart using the [HorizontalHeaderAlignment]() property of the `SfFunnelChart`.
 
@@ -172,5 +172,4 @@ public sealed partial class MainPage : Page
 
 {% endtabs %} 
 
-![Title text alignment support in WinUI funnel chart](Title_images/WinUI_FunnelChart_TitleAlignment.png)
-
+![Title text alignment support in WinUI chart](Title_images/WinUI_FunnelChart_TitleAlignment.png)

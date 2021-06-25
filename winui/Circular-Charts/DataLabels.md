@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data labels in WinUI Chart control | WinUI | Syncfusion
+title: Data label in WinUI Chart control | WinUI | Syncfusion
 description: This section explains about how to configure the data labels and its features in WinUI Chart (SfCircularChart).
 platform: WinUI
 control: SfCircularChart
 documentation: ug
 ---
 
-# Data Labels in WinUI Chart (SfCircularChart)
+# Data Label in WinUI Chart (SfCircularChart)
 
 Data labels are used to display values related to a chart segment. Values from data point(x, y) or other custom properties from a data source can be displayed. 
 
@@ -16,7 +16,7 @@ Each data label can be represented by the following:
 * Label - displays the segment label content at the (X, Y) point.
 * Connector line - used to connect the (X, Y) point and the label element.
 
-## Enable data label 
+## Enable Data Label 
 
 [ShowDataLabels]() property of series is used to enable the data labels.
 
@@ -292,7 +292,7 @@ chart.Series.Add(series);
 
 ![Connector line support for datalabels in WinUI chart](DataLabel_Images/WinUI_Circular_chart_data_label_Connector_line.png)
 
-### Connector line type
+### Connector Line Type
 
 [ConnectorType]() property in [CircularDataLabelSettings]() is used to specify the connector line type such as [Line]() or [Bezier]() or [StraightLine]().
 
@@ -344,7 +344,7 @@ chart.Series.Add(series);
 
 ![Connector line with StraightLine type in WinUI Chart](DataLabel_Images/WinUI_Circular_chart_dataLabel_Straight_line.png)
 
-## Applying series brush
+## Applying Series Interior
 
 [`UseSeriesPalette`]() property is used to set the interior of the series to the data label background. 
 
