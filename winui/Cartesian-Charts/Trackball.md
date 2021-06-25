@@ -210,15 +210,6 @@ chart.Behaviors.Add(Trackball);
 
 The axis label will be viewed when the [`ShowTrackballInfo`]() property is set to true. The default value of [`ShowTrackballInfo`]() is `false`.
 
-### Axis label alignment 
-
-The alignment of the axis label can be defined using the [`AxisLabelAlignment`]() property. By default, the axis label will positioned in center.
-
-* `Auto` - used to align in Near/Far positions based on the trackball movement.
-* `Far` - used to align in far from the position of trackball.
-* `Near` -used to align in near to the position of trackball.
-* `Center` - used to align to the center of the trackball.
-
 {% tabs %}
 
 {% highlight xml %}
@@ -229,7 +220,7 @@ The alignment of the axis label can be defined using the [`AxisLabelAlignment`](
     </chart:SfCartesianChart.PrimaryAxis>
     . . .
     <chart:SfCartesianChart.Behaviors>
-        <chart:ChartTrackballBehavior AxisLabelAlignment="Center"/>
+        <chart:ChartTrackballBehavior/>
     </chart:SfCartesianChart.Behaviors>
     . . .
 </chart:SfCartesianChart>
@@ -246,7 +237,6 @@ chart.PrimaryAxis = new CategoryAxis()
 };
 ...
 ChartTrackballBehavior behavior = new ChartTrackballBehavior();
-behavior.AxisLabelAlignment = ChartAlignment.Center;
 chart.Behaviors.Add(behavior);
 . . .
 this.Content = chart;
@@ -256,6 +246,15 @@ this.Content = chart;
 {% endtabs %}
 
 ![Axis Trackball label alignment in WinUI chart](Trackball_images/WinUI_chart_axis_trackball_label_alignment.png)
+
+### Axis label alignment 
+
+The alignment of the axis label can be defined using the [`AxisLabelAlignment`]() property. By default, the axis label will positioned in center.
+
+* `Auto` - used to align in Near/Far positions based on the trackball movement.
+* `Far` - used to align in far from the position of trackball.
+* `Near` -used to align in near to the position of trackball.
+* `Center` - used to align to the center of the trackball.
 
 ### Customization of axis label
 
