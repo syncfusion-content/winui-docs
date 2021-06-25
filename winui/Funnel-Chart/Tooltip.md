@@ -11,7 +11,7 @@ documentation: ug
 
 Tooltip is used to display any information over segments. It appears at the data point position when the mouse hovers over any chart segment. It is set to display the metadata of the hovered segment or data point.
 
-## Define tooltip
+## Define Tooltip
 
 To define the tooltip in the chart, set the [ShowTooltip]() property to true. The default value of [ShowTooltip]() property is false.
 
@@ -81,7 +81,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-## Background style
+## Background Style
 
 The tooltip's fill and stroke color can be customized by using the [Style]() property. To define a [Style]() for tooltip, specify the style of `TargetType` as `Path`.
 
@@ -126,7 +126,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 ![Tooltip background style in WinUI Chart](Tooltip_images/WinUI_chart_tooltip_background.png)
 
-## Label style
+## Label Style
 
 The tooltip label style can be customized by using the [LabelStyle]() property. To define a [Style]() for the tooltip label, specify the style of `TargetType` as `TextBlock`.
 
@@ -230,4 +230,3 @@ this.Content = chart;
 {% endtabs %}
 
 ![Tooltip template in WinUI Chart](Tooltip_images/WinUI_chart_tooltip_template.png)
-

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Explode segments in WinUI Funnel Chart control | Syncfusion
-description: This section explains about how to explode single segment or all segments in Syncfusion WinUI Funnel Chart (SfFunnelChart) control.
+title: Explode segments in WinUI Chart control | Syncfusion
+description: This section explains about how to explode single segment or all segments in Syncfusion WinUI Chart (SfFunnelChart) control.
 platform: WinUI 
 control: SfFunnelChart
 documentation: ug
 ---
 
-# Explode segments in WinUI Funnel Chart (SfFunnelChart)
+# Explode Segments in WinUI Chart (SfFunnelChart)
 
 Exploding a segment is used to pull attention to a specific area of the funnel. The following properties are used to explode the segments in the funnel chart.
 
@@ -48,4 +48,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Explode segments in WinUI Funnel Chart](Explode-segments_images/WinUI_funnel_chart_explode_segments.png)
+![Explode segments in WinUI Chart](Explode-segments_images/WinUI_chart_explode_segments.png)
