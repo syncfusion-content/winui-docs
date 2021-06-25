@@ -32,7 +32,7 @@ this.Content = chart;
 
 {% endtabs %} 
 
-![Title support in WinUI chart](Title_Images/WinUI_FunnelChart_Title.png)
+![Title support in WinUI chart](Title_Images/WinUI_chart_title.png)
 
 ## Customization
 
@@ -82,7 +82,7 @@ this.Content = chart;
 
 {% endtabs %} 
 
-![Title customization support in WinUI chart](Title_images/WinUI_FunnelChart_TitleCustomization.png)
+![Title customization support in WinUI chart](Title_images/WinUI_chart_title_customization.png)
 
 ## Alignment
 
@@ -172,4 +172,4 @@ public sealed partial class MainPage : Page
 
 {% endtabs %} 
 
-![Title text alignment support in WinUI chart](Title_images/WinUI_FunnelChart_TitleAlignment.png)
+![Title text alignment support in WinUI chart](Title_images/WinUI_chart_title_alignment.png)

@@ -17,9 +17,13 @@ N> The x-value of data points in the funnel chart will be the legend items ‘La
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart.Legend>
-    <chart:ChartLegend/>
-</chart:SfFunnelChart.Legend>
+<chart:SfFunnelChart x:Name="chart">
+. . .
+    <chart:SfFunnelChart.Legend>
+        <chart:ChartLegend/>
+    </chart:SfFunnelChart.Legend>
+. . .
+ </chart:SfFunnelChart>
 
 {% endhighlight %}
 
@@ -27,12 +31,14 @@ N> The x-value of data points in the funnel chart will be the legend items ‘La
 
 SfFunnelChart chart = new SfFunnelChart();
 chart.Legend = new ChartLegend();
+. . .
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Legend support in WinUI Chart](Legend_images/WinUI_Funnel_chart_Legend.png)
+![Legend support in WinUI Chart](Legend_images/WinUI_chart_Legend.png)
 
 ## Title
 
@@ -42,16 +48,20 @@ The funnel chart provides support to add any `UIElement` as a title for legend. 
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart.Legend>
-    <chart:ChartLegend>
-        <chart:ChartLegend.Header>
-            <TextBox Text="Products" 
-                HorizontalAlignment="Center"
-                FontWeight="Bold"
-                Foreground="Blue"/>
-        </chart:ChartLegend.Header>
-    </chart:ChartLegend>
-</chart:SfFunnelChart.Legend>
+<chart:SfFunnelChart x:Name="chart">
+. . .
+    <chart:SfFunnelChart.Legend>
+        <chart:ChartLegend>
+            <chart:ChartLegend.Header>
+                <TextBox Text="Products" 
+                    HorizontalAlignment="Center"
+                    FontWeight="Bold"
+                    Foreground="Blue"/>
+            </chart:ChartLegend.Header>
+        </chart:ChartLegend>
+    </chart:SfFunnelChart.Legend>
+. . .
+</chart:SfFunnelChart>
 
 {% endhighlight %}
 
@@ -70,12 +80,14 @@ TextBlock textBlock = new TextBlock()
 
 legend.Header = textBlock;
 chart.Legend = legend;
+. . .
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Legend title in WinUI Chart](Legend_images/WinUI_Funnel_chart_Legend_Header.png)
+![Legend title in WinUI Chart](Legend_images/WinUI_chart_Legend_Header.png)
 
 ## Icon
 
@@ -89,28 +101,35 @@ The legend icon represents a symbol associated with each legend item. The appear
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart.Legend>
-    <chart:ChartLegend IconWidth="15" IconHeight="15" 
+<chart:SfFunnelChart x:Name="chart">
+. . .
+    <chart:SfFunnelChart.Legend>
+        <chart:ChartLegend IconWidth="15" IconHeight="15" 
                        IconVisibility="Visible">
-    </chart:ChartLegend>
-</chart:SfFunnelChart.Legend>
+        </chart:ChartLegend>
+    </chart:SfFunnelChart.Legend>
+. . .
+</chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfFunnelChart chart = new SfFunnelChart();
 chart.Legend = new ChartLegend()
 {
     IconWidth = 15,
     IconHeight = 15,
     IconVisibility = Visibility.Visible,
 };
+. . .
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Legend icon in WinUI Chart](Legend_images/WinUI_Funnel_chart_Legend_Customize.png)
+![Legend icon in WinUI Chart](Legend_images/WinUI_chart_Legend_Customize.png)
 
 ## Item spacing
 
@@ -120,24 +139,31 @@ chart.Legend = new ChartLegend()
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart.Legend>
-    <chart:ChartLegend ItemMargin="10"/>
-</chart:SfFunnelChart.Legend>
+<chart:SfFunnelChart x:Name="chart">
+. . .
+    <chart:SfFunnelChart.Legend>
+        <chart:ChartLegend ItemMargin="10"/>
+    </chart:SfFunnelChart.Legend>
+. . .
+</chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfFunnelChart chart = new SfFunnelChart();
 chart.Legend = new ChartLegend()
 {
     ItemMargin = new Thickness(10)
 };
+. . .
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Legend item spacing support in WinUI Chart](Legend_images/WinUI_Funnel_chart_Legend_item_spacing.png)
+![Legend item spacing support in WinUI Chart](Legend_images/WinUI_chart_Legend_item_spacing.png)
 
 ## Checkbox for Legend
 
@@ -147,24 +173,31 @@ Funnel chart provides support to enable the checkbox for each legend item to vis
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart.Legend>
-    <chart:ChartLegend CheckBoxVisibility="Visible"/>
-</chart:SfFunnelChart.Legend>
+<chart:SfFunnelChart x:Name="chart">
+. . .
+    <chart:SfFunnelChart.Legend>
+        <chart:ChartLegend CheckBoxVisibility="Visible"/>
+    </chart:SfFunnelChart.Legend>
+. . .
+</chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfFunnelChart chart = new SfFunnelChart();
 chart.Legend = new ChartLegend()
 {
    CheckBoxVisibility = Visibility.Visible
 };
+. . .
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Checkbox support for legend in WinUI Chart](Legend_images/WinUI_Funnel_chart_Legend_CheckBox.png)
+![Checkbox support for legend in WinUI Chart](Legend_images/WinUI_chart_Legend_CheckBox.png)
 
 ## Toggle Series Visibility 
 
@@ -174,24 +207,31 @@ By enabling the [ToggleSeriesVisibility]() property, the visibility of the segme
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart.Legend>
-    <chart:ChartLegend ToggleSeriesVisibility="True"/>
-</chart:SfFunnelChart.Legend>
+<chart:SfFunnelChart x:Name="chart">
+. . .
+    <chart:SfFunnelChart.Legend>
+        <chart:ChartLegend ToggleSeriesVisibility="True"/>
+    </chart:SfFunnelChart.Legend>
+. . .
+</chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfFunnelChart chart = new SfFunnelChart();
 chart.Legend = new ChartLegend()
 {
    ToggleSeriesVisibility = true
 };
+. . .
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/WinUI_Funnel_chart_Legend_ToggleSeriesVisibility.png)
+![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/WinUI_chart_Legend_ToggleSeriesVisibility.png)
 
 ## Position
 
@@ -201,24 +241,31 @@ The legends can be placed either inside or outside of the chart area (plotting a
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart.Legend>
-    <chart:ChartLegend Position="Inside"/>
-</chart:SfFunnelChart.Legend>
+<chart:SfFunnelChart x:Name="chart">
+. . .
+    <chart:SfFunnelChart.Legend>
+        <chart:ChartLegend Position="Inside"/>
+    </chart:SfFunnelChart.Legend>
+. . .
+</chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfFunnelChart chart = new SfFunnelChart();
 chart.Legend = new ChartLegend()
 {
     Position = LegendPosition.Inside
 };
+. . .
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Position support for legend in WinUI Chart](Legend_images/WinUI_Funnel_chart_Legend_Position.png)
+![Position support for legend in WinUI Chart](Legend_images/WinUI_chart_Legend_Position.png)
 
 ### Docking the Legend Position
 
@@ -230,27 +277,34 @@ To display the legend at the right, you can set the [DockPosition]() as [Right](
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart.Legend>
-    <chart:ChartLegend ItemMargin="10" DockPosition="Right"/>
-</chart:SfFunnelChart.Legend>
+<chart:SfFunnelChart x:Name="chart">
+. . .
+    <chart:SfFunnelChart.Legend>
+        <chart:ChartLegend ItemMargin="10" DockPosition="Right"/>
+    </chart:SfFunnelChart.Legend>
+. . .
+</chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfFunnelChart chart = new SfFunnelChart();
 chart.Legend = new ChartLegend()
 {
    DockPosition = ChartDock.Right,
    ItemMargin = new Thickness(10),
 };
+. . .
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Positioning the legend at right in WinUI Chart](Legend_images/WinUI_Funnel_chart_Legend_Dock_Right.png)
+![Positioning the legend at right in WinUI Chart](Legend_images/WinUI_chart_Legend_Dock_Right.png)
 
-### Floating Legends
+## Floating Legends
 
 To position the legend at any arbitrary location within the chart, you need to set [DockPosition]() as `Floating` and provide its relative position by using the [OffsetX]() and [OffsetY]() properties.
 
@@ -258,14 +312,19 @@ To position the legend at any arbitrary location within the chart, you need to s
 
 {% highlight xaml %}
 
- <chart:SfFunnelChart.Legend>
-    <chart:ChartLegend DockPosition="Floating" Orientation="Vertical" OffsetX="370" OffsetY="300"/>
-</chart:SfFunnelChart.Legend>
+<chart:SfFunnelChart x:Name="chart">
+. . .
+    <chart:SfFunnelChart.Legend>
+        <chart:ChartLegend DockPosition="Floating" Orientation="Vertical" OffsetX="370" OffsetY="300"/>
+    </chart:SfFunnelChart.Legend>
+. . .
+</chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfFunnelChart chart = new SfFunnelChart();
 chart.Legend = new ChartLegend()
 {
     DockPosition = ChartDock.Floating,
@@ -273,12 +332,14 @@ chart.Legend = new ChartLegend()
     OffsetX = 370,
     OffsetY = 300
 };
+. . .
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Floating legend support in WinUI Chart](Legend_images/WinUI_Funnel_chart_Legend_floating.png)
+![Floating legend support in WinUI Chart](Legend_images/WinUI_chart_Legend_floating.png)
 
 ## Orientation
 
@@ -288,24 +349,31 @@ Orientation of the legend items can be aligned vertically or horizontally by set
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart.Legend>
-    <chart:ChartLegend Orientation="Vertical"/>
-</chart:SfFunnelChart.Legend>
+<chart:SfFunnelChart x:Name="chart">
+. . .
+    <chart:SfFunnelChart.Legend>
+        <chart:ChartLegend Orientation="Vertical"/>
+    </chart:SfFunnelChart.Legend>
+. . .
+</chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfFunnelChart chart = new SfFunnelChart();
 chart.Legend = new ChartLegend()
 {
     Orientation = ChartOrientation.Vertical
 };
+. . .
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Legend orientation support in WinUI Chart](Legend_images/WinUI_Funnel_chart_Legend_Orientation.png)
+![Legend orientation support in WinUI Chart](Legend_images/WinUI_chart_Legend_Orientation.png)
 
 ## Background customization 
 
@@ -321,17 +389,20 @@ The legend background appearance can be customized by using the following proper
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart.Legend>
-    <chart:ChartLegend Background="Gray" BorderBrush="Black" 
-                       BorderThickness="1" CornerRadius="5" 
-                       Opacity="0.9" >
+<chart:SfFunnelChart x:Name="chart">
+. . .
+    <chart:SfFunnelChart.Legend>
+        <chart:ChartLegend Background="Gray" BorderBrush="Black" BorderThickness="1" CornerRadius="5" Opacity="0.9" >
     </chart:ChartLegend>
-</chart:SfFunnelChart.Legend>
+    </chart:SfFunnelChart.Legend>
+. . .
+</chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfFunnelChart chart = new SfFunnelChart();
 chart.Legend = new ChartLegend()
 {
     Background = new SolidColorBrush(Colors.Gray),
@@ -340,12 +411,14 @@ chart.Legend = new ChartLegend()
     Opacity = 0.9,
     CornerRadius = CornerRadiusHelper.FromUniformRadius(5)
 };
+. . .
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Legend background customization in WinUI Chart](Legend_images/WinUI_Funnel_chart_Legend_background_customizing.png)
+![Legend background customization in WinUI Chart](Legend_images/WinUI_chart_Legend_background_customizing.png)
 
 ## Template
 
@@ -378,14 +451,17 @@ Customize each legend item by using the [ItemTemplate]() property in `ChartLegen
 
 {% highlight c# %}
 
+SfFunnelChart chart = new SfFunnelChart();
 chart.Legend = new ChartLegend()
 {
 
    ItemTemplate = chart.Resources["itemTemplate"] as DataTemplate
 };
+. . .
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Legend ItemTemplate support in WinUI Chart](Legend_images/WinUI_Funnel_chart_Legend_Item_customizing.png)
+![Legend ItemTemplate support in WinUI Chart](Legend_images/WinUI_chart_Legend_Item_customizing.png)

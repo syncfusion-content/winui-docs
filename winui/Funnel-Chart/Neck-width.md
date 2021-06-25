@@ -40,7 +40,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Neck width support in WinUI Chart](Neck-width_images/WinUI_funnel_chart_neck_width.png)
+![Neck width support in WinUI Chart](Neck-width_images/WinUI_chart_neck_width.png)
 
 ## Inverted Pyramid
 
@@ -75,4 +75,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Inversed Pyramid Chart in WinUI](Neck-width_images/WinUI_funnel_chart_inversed_pyramid.png)
+![Inversed Pyramid Chart in WinUI](Neck-width_images/WinUI_chart_inversed_pyramid.png)
