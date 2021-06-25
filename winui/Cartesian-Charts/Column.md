@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column Chart in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about column and bar chart support in Syncfusion WinUI Cartesian Chart (SfCartesianChart) control.
+title: Column Chart in WinUI Chart control | Syncfusion
+description: Learn here all about column and bar chart support in Syncfusion WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Column Chart in WinUI Cartesian Chart (SfCartesianChart)
+# Column Chart in WinUI Chart (SfCartesianChart)
 
 Column chart is used to plot discrete rectangles for the given data point values. To render a column chart, create an instance of [ColumnSeries](), and add it to the [Series]() collection property of [SfCartesianChart]().
 
@@ -43,7 +43,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Column chart type in WinUI Cartesian Chart](Chart-Types_images/WinUI_column_chart.png)
+![Column chart type in WinUI Chart](Chart-Types_images/WinUI_column_chart.png)
 
 ## Segment spacing
 
@@ -85,4 +85,3 @@ this.Content = chart;
 {% endtabs %}
 
 ![Column segment spacing in WinUI Chart](Chart-Types_images/WinUI_column_chart_segment_spacing.png)
-
