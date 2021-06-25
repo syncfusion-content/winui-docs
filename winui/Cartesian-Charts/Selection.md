@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in WinUI Chart control | Syncfusion
-description: Learn here all about selection and multi-selection support in Syncfusion WinUI Chart(SfCartesianChart) control.
+description: Learn here all about selection and multi-selection support in Syncfusion WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 Cartesian chart supports selection that allows to select a segment or series in the chart by using [ChartSelectionBehavior](). 
 
-## Enable selection
+## Enable Selection
 
 To enable the selection in chart, create an instance of [ChartSelectionBehavior]() and add it to the `Behaviors` collection of [SfCartesianChart](). And also need to set the [SelectionBrush]() property to highlight the segment in the chart.
 
@@ -57,7 +57,7 @@ this.Content = chart;
 
 ![Segment selection support in WinUI Chart](Selection_images/WinUI_cartesian_chart_segment_selection.png)
 
-## Segment selection in linear type series
+## Segment Selection in Linear Series
 
 In linear type series the segment selection can be viewed by changing the data label interior.
 
@@ -107,7 +107,7 @@ this.Content = chart;
 
 ![Segment selection support in WinUI Chart SplineSeries](Selection_images/WinUI_cartesian_chart_spline_series_segment_selection.png)
 
-## Enable series selection
+## Enable Series Selection
 
 Series selection is used to highlight a particular series when using multiple series. Series selection is enabled by setting the [Type]() property value to [Series]() in [ChartSelectionBehavior](). The [SeriesSelectionBrush]() property is used to set the brush color to highlight the series.
 
@@ -308,7 +308,7 @@ this.Content = chart;
 
 ![Initial series selection rendering support in WinUI Chart](Selection_images/WinUI_cartesian_charts_selected_serie_index.png)
 
-## Changing cursor while selection
+## Changing Cursor while Selection
 
 [Cursor]() property allows to define the cursor when mouse is hovered over the segment with segment selection enabled.
 
@@ -371,7 +371,6 @@ The [SelectionChanging]() event occurs before the data point is being selected. 
 * [SelectedSegment]() - Gets the segment of the selected data point.
 * [SelectedIndex]() - Gets the selected data point index.
 * [PreviousSelectedIndex]() - Gets the previous selected data point index.
-* [IsSelected]() - Gets a value that indicates whether the segment or series is selected.
 * [IsDataPointSelection]() - Gets a value that indicates whether the selection is segment selection or series selection.
 * [Cancel]() - Gets or Sets a value that indicates whether the selection should be canceled.
 
@@ -386,8 +385,4 @@ The [SelectionChanged]() event occurs after a data point has been selected. This
 * [PreviousSelectedSeries]() - Gets the previous selected series.
 * [PreviousSelectedSegment]() - Gets the segment of previous selected data point.
 * [PreviousSelectedIndex]() - Gets the previous selected data point index.
-* [OldPointInfo]() - Gets the previous selected segment item value.
-* [NewPointInfo]() - Gets the selected segment item value.
-* [IsSelected]() - Gets a value that indicates whether the segment or series is being selected.
 * [IsDataPointSelection]() - Gets a value that indicates whether the selection is segment selection or series selection.
-

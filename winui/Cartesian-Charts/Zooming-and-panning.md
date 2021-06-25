@@ -13,7 +13,7 @@ documentation: ug
 
 Zooming and panning provides you to take a close-up look of the data point plotted in the series
 
-## Enable zooming
+## Enable Zooming
 
 To enable the zooming and panning in the chart, create an instance of [ChartZoomPanBehavior]() and add it to the `Behaviors` collection of [SfCartesianChart]().
 
@@ -42,11 +42,11 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-## Zooming the chart area
+## Zooming the Chart Area
 
 Zooming the chart area can be achieved in different ways by pinch zooming, mouse wheel zooming, selection zooming, and also using the properties [ZoomFactor]() and [ZoomPosition]().
 
-### Pinch zooming
+### Pinch Zooming
 
 Pinch zooming is enable by using the [EnablePinchZooming]() property to true as shown in the below code snippet.
 
@@ -79,7 +79,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-### Mouse wheel zooming
+### Mouse Wheel Zooming
 
 Zooming can be performed by mouse wheel action by setting [`EnableMouseWheelZooming`]() property to `true`.
 
@@ -112,7 +112,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-### Selection zooming
+### Selection Zooming
 
 Selection zooming is used to zoom a particular area by selecting the region using rectangle. To enable the selection zooming, you have to set [EnableSelectionZooming]() property to `true`.
 
@@ -146,7 +146,7 @@ chart.Behaviors.Add(zooming);
 
 ![Selection zooming support in WinUI Chart](Zooming-and-panning_images/WinUI_cartesian_chart_selection_zooming.png)
 
-### Customization of selection rectangle
+### Customization of Selection Rectangle
 
 Selection rectangle can be customized by setting the following properties: 
 
@@ -222,7 +222,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ![Zooming support in WinUI Chart](Zooming-and-panning_images/WinUI_cartesian_chart_zooming.png)
 
-## Zooming mode
+## Zooming Mode
 
 The zooming can be done both horizontally and vertically. The zooming direction is defined by using the [ZoomMode]() property.
 
@@ -291,7 +291,7 @@ chart.Behaviors.Add(zooming);
 
 ![Zoom mode support in WinUI Chart](Zooming-and-panning_images/WinUI_cartesian_chart_zoom_modeY.png)
 
-## Maximum zoom level
+## Maximum Zoom level
 
 The [MaximumZoomLevel]() property defines the maximum zooming level of the chart area. Zooming will be stopped after reaching this value.
 
@@ -324,7 +324,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-## Panning the chart area
+## Enable Panning
 
 Panning feature allows moving the visible area of the chart when it is zoomed in. To enable panning, you have to set [EnablePanning]() property to `true`.
 

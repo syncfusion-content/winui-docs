@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Trackball in WinUI Chart control | Syncfusion
-description: Learn here all about trackball and its customziation in Syncfusion WinUI Chart(SfCartesianChart) control
+description: Learn here all about trackball and its customziation in Syncfusion WinUI Chart (SfCartesianChart) control
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 The trackball allows you to track a data point closer to the cursor position. The x values are determined from the position of the vertical line in the axis and y values are determined from the points touching the vertical line in the series.
 
-## Define trackball
+## Define Trackball
 
 To add trackball in the chart, create an instance [`ChartTrackballBehavior`]() and add it to the [`Behaviors`]() collection of the chart.
 
@@ -87,7 +87,7 @@ The Trackball is composed of the following parts:
 3. Axis label
 4. Series label
 
-## Trackball line
+## Trackball Line
 
 The trackball line is visible, when you initialize the [ChartTrackballBehavior](). If you want to collapse the visibility of the trackball line, then you have to set [`ShowLine`]) to `false`.
 
@@ -206,7 +206,7 @@ chart.Behaviors.Add(Trackball);
 
 ![Trackball symbol in WinUI chart](Trackball_images/WinUI_cartesian_chart_trackball_symbol_customization.png)
 
-## Axis label
+## Axis Label
 
 The axis label will be viewed when the [`ShowTrackballInfo`]() property is set to true. The default value of [`ShowTrackballInfo`]() is `false`.
 
@@ -326,7 +326,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ![Customization support for Trackball axis label in WinUI chart](Trackball_images/WinUI_cartesian_chart_trackball_axis_label_customization.png)
 
-### Series label
+## Series Label
 
 When the mouse hovered in the chart area, you can view the label displayed over the series in addition the axis label.
 
@@ -412,7 +412,7 @@ chart.Behaviors.Add(behavior);
 
 ![Alignment support for Trackball series label in WinUI Chart](Trackball_images/WinUI_cartesian_chart_trackball_label_alignment.png)
 
-### Label display mode
+## Label Display Mode
 
 When there is a multiple series, the trackball series label will be displayed only for the nearest point. If you want to display all the y values with respect to the x value then the [LabelDisplayMode]() property is set to [FloatAllPoints]().
 
@@ -518,7 +518,7 @@ The following screenshot illustrates the trackball label for multiple series, wh
 
 ![LabelDisplayMode support for Trackball in WinUI Chart](Trackball_images/WinUI_cartesian_chart_trackball_group_all_points.png)
 
-### Template
+## Template
 
 [TrackballLabelTemplate]() property is used to customize the appearance of series label in trackball.
 
@@ -577,7 +577,7 @@ chart.Series.Add(series);
 
 ![Trackball templte support for Trackball in WinUI Chart](Trackball_images/WinUI_cartesian_chart_trackball_label_template.png)
 
-### Applying series interior to the label
+### Applying Series Interior
 
 Interior color of the series is applied to the series label by setting [UseSeriesPalette]() to true as shown in the following code snippet.
 

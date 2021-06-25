@@ -16,7 +16,7 @@ Each data label can be represented by the following:
 * Label - displays the segment label content at the (X, Y) point.
 * Connector line - used to connect the (X, Y) point and the label element.
 
-## Enable data label 
+## Enable Data Label 
 
 The [ShowDataLabels]() property of series is used to enable the data labels.
 
@@ -338,7 +338,7 @@ Other than the above alignment options, Chart providing additional customization
 
 The [Position]() property is used to position the data labels at `Center`, `Inner` and `Outer` position of the actual data point position. By default, labels are positioned based on the series types for better readability.
 
-## Connector line
+## Connector Line
 
 Connector line is used to connect label and data point using a line. [ShowConnectorLine]() property of [CartesianDataLabelSettings]() is used to enable the connector line in the chart. 
 
@@ -395,7 +395,7 @@ chart.Series.Add(series);
 
 ![Connector line for data label in WinUI chart](DataLabel_images/winui_chart_data_label_connector_line.png)
 
-## Applying series brush
+## Applying Series Interior
 
 [UseSeriesPalette]() property is used to set the interior of the series to the data marker background. 
 

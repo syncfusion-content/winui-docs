@@ -161,7 +161,7 @@ this.Content = chart;
 
 ![Spline chart type in WinUI Chart](Chart-types_images/WinUI_spline_chart.png)
 
-## Step line Chart 
+## Step Line Chart 
 
 The [StepLineSeries]() plots horizontal and vertical lines to connect the data points resulting in a step-like progression.
 

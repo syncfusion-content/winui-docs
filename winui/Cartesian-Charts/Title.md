@@ -34,7 +34,7 @@ this.Content = chart;
 
 ![Title support in WinUI chart](Title_Images/WinUI_cartesian_chart_title.png)
 
-## Title customization
+## Customization
 
 Chart provides support to add any `UIElement` as a title. The following code example defines `TextBlock` as chart header.
 
@@ -135,4 +135,3 @@ this.Content = chart;
 {% endtabs %} 
 
 ![Title text alignment support in WinUI chart](Title_images/WinUI_cartesian_chart_title_alignment.png)
-

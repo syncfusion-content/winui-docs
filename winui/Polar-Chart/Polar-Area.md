@@ -112,7 +112,7 @@ chart.Series.Add(series);
 
 ![Spider/Web chart](PolarArea_Images/WinUI_PolarChart_GridlineType_polygon.png)
 
-## Closing path
+## Closing Path
 
 [IsClosed]() property is used to render the series with or without closed path. The default value of [IsClosed]() is `true`. 
 

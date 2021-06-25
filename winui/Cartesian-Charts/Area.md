@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Area Chart in WinUI Chart control | Syncfusion
-description: Learn here all about the area series chart types in Syncfusion WinUI Chart (SfCartesianChart) control.
+description: Learn here all about the area chart types and its features in Syncfusion WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Area Chart in WinUI Cartesian Charts (SfCartesianChart)
+# Area Chart in WinUI Charts (SfCartesianChart)
 
 ## Area Chart
 
@@ -47,9 +47,9 @@ this.Content = chart;
 
 ![Area chart type in WinUI Chart](Chart-types_images/WinUI_area_chart.png)
 
-## Spline area Chart
+## Spline Area Chart
 
-The [SplineAreaSeries]() connects a series of data points using smooth bezier line curves, with the underlying areas filled.
+The [SplineAreaSeries]() connects a series of data points using smooth bezier line curves, with the underlying areas filled. The following code sample demonstrates how to initialize the [SplineAreaSeries]().
 
 {% tabs %}
 
@@ -85,28 +85,30 @@ this.Content = chart;
 
 ![Spline area chart type in WinUI Chart](Chart-types_images/WinUI_spline_area_chart.png)
 
-## Step area Chart
+## Step Area Chart
 
 The [StepAreaSeries]() is similar to [AreaSeries](), but it does not use the shortest distance to connect the two data points using bezier curves. Instead, this series uses vertical and horizontal lines to connect the data points in a series forming a step-like progression.
+
+The following code example initializes the [StepAreaSeries]().
 
 {% tabs %}
 
 {% highlight xaml %}
 
+SfCartesianChart chart = new SfCartesianChart();
+. . .
 <chart:SfCartesianChart>
 . . .            
     <chart:SfCartesianChart.Series>
         <chart:StepAreaSeries XBindingPath="XValue" YBindingPath="YValue" ItemsSource="{Binding Data}"/> 
     </chart:SfCartesianChart.Series>
-    ...
+
 </chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart();
-. . .
 StepAreaSeries series = new StepAreaSeries()
 {
     ItemsSource = new ViewModel().Data,

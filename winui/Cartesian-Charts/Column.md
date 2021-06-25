@@ -83,4 +83,3 @@ this.Content = chart;
 {% endtabs %}
 
 ![Column segment spacing in WinUI Chart](Chart-Types_images/WinUI_column_chart_segment_spacing.png)
-
