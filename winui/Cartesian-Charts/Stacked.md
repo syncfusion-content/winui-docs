@@ -67,7 +67,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedColumn chart type in WinUI Chart](Stacking_Series_Images/stackedcolumn_chart.png)
+![StackedColumn chart type in WinUI Chart](Stacking_Series_Images/WinUI_Chart_stackedcolumn.png)
 
 ## Stacked Line Chart
 
@@ -136,7 +136,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedLine chart type in WinUI Chart](Stacking_Series_Images/stackedline_chart.png)
+![StackedLine chart type in WinUI Chart](Stacking_Series_Images/WinUI_Chart_stackedline.png)
 
 ## Stacked Area Chart
 
@@ -197,4 +197,4 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedArea chart type in WinUI Chart](Stacking_Series_Images/stackedarea_chart.png)
+![StackedArea chart type in WinUI Chart](Stacking_Series_Images/WinUI_Chart_stackedarea.png)

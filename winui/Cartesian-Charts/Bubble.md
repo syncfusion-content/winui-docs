@@ -51,7 +51,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Bubble chart type in WinUI Chart](Bubble_Images/bubble_chart.png)
+![Bubble chart type in WinUI Chart](Bubble_Images/WinUI_Chart_bubble.png)
 
 ## Show zero size bubbles
 
@@ -92,7 +92,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Show zero size bubbles support in WinUI Chart](Bubble_Images/showzerobubble_true.png)
+![Show zero size bubbles support in WinUI Chart](Bubble_Images/WinUI_Chart_showzerobubble_true.png)
 
 {% tabs %}
 
@@ -129,5 +129,5 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![ShowZeroBubbles support in WinUI Chart](Bubble_Images/showzerobubble_false.png)
+![ShowZeroBubbles support in WinUI Chart](Bubble_Images/WinUI_Chart_showzerobubble_false.png)
 
