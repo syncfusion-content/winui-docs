@@ -50,7 +50,7 @@ chart.Series.Add(series);
 
 ![Data labels in WinUI chart](DataLabel_Images/WinUI_Circular_chart_data_label_overview.png) 
 
-## Data label context
+## Context
 
 To customize the content of data labels, need to define [DataLabelSettings]() of series and set [Context]() property of [DataLabelSettings]() to define the value to be displayed as label content.
 
@@ -83,16 +83,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-| Context values | Description |
-|---|--|
-|DataLabelItem | Displays the y value|
-| Percentage | Displays the percentage value of series point among other points|
-| XValue | Displays the X value of series point|
-| YValue | Displays the Y value of series point|
+![Data labels context in WinUI chart](DataLabel_Images/WinUI_Circular_chart_data_label_Context.png) 
 
-![Data labels context in WinUI Circular chart](DataLabel_Images/WinUI_Circular_chart_data_label_Context.png) 
-
-## Data Label customization
+## Customization
 
 The following properties are used to customize the data label.
 
@@ -151,9 +144,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Data label customization in WinUI Circular Chart](DataLabel_Images/WinUI_Circular_chart_datalabel_custom_Label.png)
+![Data label customization in WinUI Chart](DataLabel_Images/WinUI_Circular_chart_datalabel_custom_Label.png)
 
-## Label template
+## Template
 
 The appearance of the data label can be customized using [`ContentTemplate`]() property of [`CircularDataLabelSettings`]() as in the below code example:
 
@@ -204,9 +197,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Template support for data label in WinUI Circular Chart](DataLabel_Images/WinUI_Circular_chart_dataLabel_Contenttemplate.png)
+![Template support for data label in WinUI Chart](DataLabel_Images/WinUI_Circular_chart_dataLabel_Contenttemplate.png)
 
-## Label rotation
+## Rotation
 
 [Rotation]() property is used to define the angle to which the label has to rotate. The following code demonstrates the label rotating angle.
 
@@ -244,7 +237,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Rotation support for data label in WinUI Circular Chart](Datalabel_Images/WinUI_Circular_chart_dataLabel_Label_Rotation.png)
+![Rotation support for data label in WinUI Chart](Datalabel_Images/WinUI_Circular_chart_dataLabel_Label_Rotation.png)
 
 ## Connector Line
 
@@ -297,9 +290,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Connector line support for datalabels in WinUI circular chart](DataLabel_Images/WinUI_Circular_chart_data_label_Connector_line.png)
+![Connector line support for datalabels in WinUI chart](DataLabel_Images/WinUI_Circular_chart_data_label_Connector_line.png)
 
-### Connector Type
+### Connector line type
 
 [ConnectorType]() property in [CircularDataLabelSettings]() is used to specify the connector line type such as [Line]() or [Bezier]() or [StraightLine]().
 
@@ -389,4 +382,3 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Applying UseSeriesPalette in WinUI Chart](DataLabel_Images/WinUI_Circular_chart_dataLabel_UseSeriesPalette.png)
-
