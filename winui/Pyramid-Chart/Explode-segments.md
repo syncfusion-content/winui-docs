@@ -48,5 +48,5 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Explode segments in WinUI Chart](Explode-segments_images/WinUI_pyramid_chart_explode_segments.png)
+![Explode segments in WinUI Chart](Explode-segments_images/WinUI_chart_explode_segments.png)
 
