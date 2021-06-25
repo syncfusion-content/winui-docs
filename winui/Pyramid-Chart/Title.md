@@ -7,7 +7,7 @@ control: SfPyramidChart
 documentation: ug
 ---
 
-# Chart title in WinUI Chart (SfPyramidChart)
+# Chart Title in WinUI Chart (SfPyramidChart)
 
 `Header` property is used to define the title for the chart.
 
@@ -128,4 +128,3 @@ public sealed partial class MainPage : Page
 {% endtabs %} 
 
 ![Title text alignment support in WinUI chart](Title_images/WinUI_chart_title_alignment.png)
-

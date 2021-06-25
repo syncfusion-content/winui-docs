@@ -169,7 +169,7 @@ chart.SecondaryAxis = secondaryAxis;
 
 Run the project and check if you get following output to make sure you have configured your project properly to add chart.
 
-![Initializing axis for WinUI Cartesian Chart](Getting-Started_Images/WinUI_cartesian_chart_initializied.png)
+![Initializing axis for WinUI Cartesian Chart](Getting-Started_Images/WinUI_chart_initializied.png)
 
 ## Populate Chart with Data
 
@@ -464,4 +464,4 @@ namespace SfChart_GettingStarted
 
 The following chart is created as a result of the previous codes.
 
-![Getting started for WinUI Cartesian Chart](Getting-Started_Images/WinUI_cartesian_chart.png)
+![Getting started for WinUI Chart](Getting-Started_Images/WinUI_chart.png)

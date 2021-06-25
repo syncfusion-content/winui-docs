@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data labels in WinUI Chart control | Syncfusion
-description: This section explains about how to add and customize the data labels in Syncfusion WinUI Chart(SfPyramidChart) control.
+description: This section explains about how to add and customize the data labels in Syncfusion WinUI Chart (SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 To improve the readability of data in the pyramid chart, data points can be easily annotated with data labels.
 
-## Define data label 
+## Define Data Label 
 
 To define the data label in the chart, set the [ShowDataLabels]() property to true. The default value of [ShowDataLabels]() property is false.
 
@@ -85,13 +85,6 @@ this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
-
-| Context values | Description |
-|---|--|
-|DataLabelItem | Displays the y value|
-| Percentage | Displays the percentage value of series point among other points|
-| XValue | Displays the X value of series point|
-| YValue | Displays the Y value of series point|
 
 ![Data labels context in WinUI chart](Data-label_images/WinUI_chart_labelcontent_percentage.png) 
 
@@ -178,6 +171,8 @@ The appearance of the data label can be customized by using the [ContentTemplate
         </StackPanel>
     </DataTemplate>
 </Page.Resources>
+.....
+
 <Grid>
    <chart:SfPyramidChart x:Name="chart" 
                 ShowDataLabels="True"
@@ -213,7 +208,7 @@ this.Content = chart;
 
 ![Template support for data label in WinUI Chart](Data-label_images/WinUI_chart_data_labeltemplate.png)
 
-## Label Format
+## Format
 
 The [Format]() property is used to format the data labels. The following code example demonstrates how to format data labels with three decimal digits.
 
@@ -298,4 +293,3 @@ this.Content = chart;
 {% endtabs %}
 
 ![Rotation support for data label in WinUI Chart](Data-label_images/WinUI_chart_data_label_rotation.png)
-
