@@ -245,7 +245,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Axis Trackball label alignment in WinUI chart](Trackball_images/WinUI_chart_axis_trackball_label_alignment.png)
+![Trackball axis label in WinUI chart](Trackball_images/WinUI_chart_trackball_axis_label.png)
 
 ### Axis label alignment 
 
