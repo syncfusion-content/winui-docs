@@ -7,7 +7,7 @@ control: SfCartesianChart
 documentation: ug
 ---
 
-# Axis support in WinUI Chart (SfCartesianChart)
+# Axis in WinUI Chart (SfCartesianChart)
 
 [ChartAxis]() is used to locate a data point inside the chart area. Charts typically have two axes that are used to measure and categorize data: a vertical (Y) axis, and a horizontal (X) axis.
 
