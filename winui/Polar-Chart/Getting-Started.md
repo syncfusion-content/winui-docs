@@ -357,8 +357,7 @@ The following code example gives you the complete code of above configurations.
         <chart:PolarAreaSeries ItemsSource="{Binding Data}" 
                          XBindingPath="Category"
                          YBindingPath="Value"
-                         Label="Sales"
-                         ShowDataLabels ="True">
+                         Label="Sales">
         </chart:PolarAreaSeries>
     </chart:SfPolarChart.Series>
 </chart:SfPolarChart>
@@ -388,7 +387,6 @@ public sealed partial class MainWindow : Window
         PolarAreaSeries series = new PolarAreaSeries();
         series.XBindingPath = "Category";
         series.YBindingPath = "Value";
-        series.Label = "Sales";
         series.ShowDataLabels = true;
 
         series.SetBinding(
