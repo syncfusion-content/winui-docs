@@ -40,4 +40,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Segment spacing in WinUI Chart](Segment-spacing_images/WinUI_funnel_chart_gap_ratio.png)
+![Segment spacing in WinUI Chart](Segment-spacing_images/WinUI_hart_gap_ratio.png)
