@@ -93,7 +93,6 @@ public class ChartViewModel
             new Model(){Category = "Moto", Value = 60},
             new Model(){Category = "Sony", Value = 50},
             new Model(){Category = "LG", Value = 45},
-            new Model(){Category = "Samsung", Value = 40},
         };
     }
 }
@@ -218,7 +217,7 @@ chart.Legend = new ChartLegend();
 
 ## Enable Tooltip
 
-Tooltips are used to display information about a segment, when the mouse is moved over it. Enable tooltip by setting series [ShowTooltip]() property as true.
+Tooltips are used to display information about a segment, when the mouse is moved over it. Enable tooltip by setting funnel chart [ShowTooltip]() property as true.
 
 {% tabs %} 
 
@@ -300,6 +299,6 @@ public sealed partial class MainWindow : Window
 
 {% endtabs %}
 
-![Getting Started WinUI Chart](Getting-Started_images/WinUI_Chart.png)
+![Getting Started in WinUI Chart](Getting-Started_Images/winui-chart.png)
 
 N> Download demo application from [GitHub]().
