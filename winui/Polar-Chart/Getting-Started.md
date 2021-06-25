@@ -62,10 +62,10 @@ Now, let us define a simple data model that represents a data point in chart.
 
 {% highlight c# %}
 
-public class Model
+public class PlantData
 {
-    public string Category { get; set; }
-    public double Value { get; set; }
+    public string Direction { get; set; }
+    public double Tree { get; set; }
 }
 
 {% endhighlight %} 
@@ -80,20 +80,20 @@ Next, create a view model class and initialize a list of `Model` objects as foll
 
 public class ChartViewModel
 {
-    public ObservableCollection<Model> Data { get; set; }
+    public ObservableCollection<PlantData> PlantDetails { get; set; }
 
     public ChartViewModel()
     {
-        Data = new ObservableCollection<Model>()
+        PlantDetails = new ObservableCollection<PlantData>()
         {
-            new Model(){ Category = "North", Value = 80 },
-            new Model(){ Category = "NorthWest", Value = 87.5 },
-            new Model(){ Category = "West", Value = 79 },
-            new Model(){ Category = "SouthWest", Value = 83 },
-            new Model(){ Category = "South", Value = 77.5 },
-            new Model(){ Category = "SouthEast", Value = 90 },
-            new Model(){ Category = "East", Value = 77.5 },
-            new Model(){ Category = "NorthEast", Value = 85 },
+            new PlantData(){ Direction = "North", Value = 80 },
+            new PlantData(){ Direction = "NorthWest", Value = 87 },
+            new PlantData(){ Direction = "West", Value = 78 },
+            new PlantData(){ Direction = "SouthWest", Value = 85 },
+            new PlantData(){ Direction = "South", Value = 81 },
+            new PlantData(){ Direction = "SouthEast", Value = 88 },
+            new PlantData(){ Direction = "East", Value = 80 },
+            new PlantData(){ Direction = "NorthEast", Value = 85 },
         };
     }
 }
@@ -150,6 +150,7 @@ chart.DataContext = viewModel;
       <chart:SfPolarChart.SecondaryAxis> 
            <chart:NumericalAxis/> 
       </chart:SfPolarChart.SecondaryAxis>
+      ...
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -161,6 +162,7 @@ CategoryAxis primaryAxis = new CategoryAxis();
 chart.PrimaryAxis = primaryAxis;    
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.SecondaryAxis = secondaryAxis;
+...
 
 {% endhighlight %}
 
@@ -184,9 +186,9 @@ N> To plot the series, the [XBindingPath]() and [YBindingPath]() properties must
         <chart:NumericalAxis/> 
     </chart:SfPolarChart.SecondaryAxis>
     <chart:SfPolarChart.Series>
-        <chart:PolarAreaSeries ItemsSource="{Binding Data}" 
-                         XBindingPath="Category" 
-                         YBindingPath="Value"/>
+        <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
+                         XBindingPath="Direction" 
+                         YBindingPath="Tree"/>
     </chart:SfPolarChart.Series>
     ...
 </chart:SfPolarChart>
@@ -206,13 +208,13 @@ NumericalAxis secondaryAxis = new NumericalAxis();
 chart.SecondaryAxis = secondaryAxis;
 
 PolarAreaSeries series = new PolarAreaSeries();
-series.XBindingPath = "Category";
-series.YBindingPath = "Value";
+series.XBindingPath = "Direction";
+series.YBindingPath = "Tree";
 
 series.SetBinding(
     ChartSeriesBase.ItemsSourceProperty, 
     new Binding() 
-    { Path = new PropertyPath("Data") });
+    { Path = new PropertyPath("PlantDetails") });
 
 chart.Series.Add(series);
 . . .
@@ -256,9 +258,9 @@ The [ShowDataLabels]() property of series can be used to enable the data labels 
 <chart:SfPolarChart>
     ...
     <chart:PolarAreaSeries ShowDataLabels="True"
-                        ItemsSource="{Binding Data}" 
-                        XBindingPath="Category" 
-                        YBindingPath="Value">
+                        ItemsSource="{Binding PlantDetails}" 
+                        XBindingPath="Direction" 
+                        YBindingPath="Tree">
     </chart:PolarAreaSeries>
 </chart:SfPolarChart>
 
@@ -298,6 +300,7 @@ The legend provides information about the data point displayed in the polar char
 SfPolarChart chart = new SfPolarChart();
 . . .
 chart.Legend = new ChartLegend();
+...
 
 {% endhighlight %}
 
@@ -311,10 +314,10 @@ N> Additionally, set label for each series using the [Label]() property of chart
 
 <chart:SfPolarChart>
     . . .
-    <chart:PolarAreaSeries  ItemsSource="{Binding Data}" 
-                        XBindingPath="Product" 
-                        YBindingPath="SalesRate"
-                        Label="Sales"/>
+    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
+                        XBindingPath="Direction" 
+                        YBindingPath="Tree"
+                        Label="Tree"/>
     ...
 </chart:SfPolarChart>
 
@@ -325,9 +328,10 @@ N> Additionally, set label for each series using the [Label]() property of chart
 SfPolarChart chart = new SfPolarChart();
 ...
 PolarAreaSeries series = new PolarAreaSeries();
-series.XBindingPath = "Product";
-series.YBindingPath = "SalesRate";
-series.Label = "Sales";
+series.ItemsSource = viewModel.PlantDetails;
+series.XBindingPath = "Direction";
+series.YBindingPath = "Tree";
+series.Label = "Tree";
 ...
 
 {% endhighlight %}
@@ -354,10 +358,15 @@ The following code example gives you the complete code of above configurations.
         <chart:ChartLegend/>
     </chart:SfPolarChart.Legend>
     <chart:SfPolarChart.Series>
-        <chart:PolarAreaSeries ItemsSource="{Binding Data}" 
-                         XBindingPath="Category"
-                         YBindingPath="Value"
-                         Label="Sales">
+        <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
+                         XBindingPath="Direction" YBindingPath="Tree"
+                         Label="Tree" ShowDataLabels="True"
+                         LegendIcon="Pentagon">
+                <chart:PolarAreaSeries.DataLabelSettings>
+                    <chart:PolarDataLabelSettings Foreground="White" FontSize="12" 
+                                            FontFamily="Calibri" BorderBrush="White" 
+                                            BorderThickness="1" Margin="1"/>
+                </chart:PolarAreaSeries.DataLabelSettings>
         </chart:PolarAreaSeries>
     </chart:SfPolarChart.Series>
 </chart:SfPolarChart>
@@ -385,14 +394,25 @@ public sealed partial class MainWindow : Window
         chart.SecondaryAxis = secondaryAxis;
 
         PolarAreaSeries series = new PolarAreaSeries();
-        series.XBindingPath = "Category";
-        series.YBindingPath = "Value";
-        series.Label = "Sales";
+        series.XBindingPath = "Direction";
+        series.YBindingPath = "Tree";
+        series.Label = "Tree";
+        series.LegendIcon = ChartLegendIcon.Pentagon;
+        series.ShowDataLabels = true;
+        series.DataLabelSettings = new PolarDataLabelSettings() 
+        { 
+            Foreground = new SolidColorBrush(Colors.White),
+            BorderBrush = new SolidColorBrush(Colors.White),
+            BorderThickness = new Thickness(1),
+            Margin = new Thickness(1),
+            FontFamily = new FontFamily("Calibri"),
+            FontSize = 12
+        };
 
         series.SetBinding(
             ChartSeriesBase.ItemsSourceProperty, 
             new Binding() 
-            { Path = new PropertyPath("Data") });
+            { Path = new PropertyPath("PlantDetails") });
 
         chart.Series.Add(series);
         this.Content = chart;
