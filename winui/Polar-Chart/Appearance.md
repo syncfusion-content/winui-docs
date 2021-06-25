@@ -88,7 +88,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Predefined palette in WinUI Chart](Appearance_images/WinUI_PolarChart_default_metro_palette.png)
+![Predefined palette in WinUI Chart](Appearance_images/WinUI_Chart_metro_palette.png)
 
 **BlueChrome** **Palette**
 
@@ -117,7 +117,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Palette support in WinUI Chart](Appearance_images/WinUI_PolarChart_BlueChrome.png)
+![Palette support in WinUI Chart](Appearance_images/WinUI_Chart_BlueChrome.png)
 
 ## Custom Palette
 
@@ -162,7 +162,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Custom palette in WinUI Chart](Appearance_images/WinUI_PolarChart_CustomPalette.png)
+![Custom palette in WinUI Chart](Appearance_images/WinUI_Chart_CustomPalette.png)
 
 ## Applying Gradient
 
@@ -224,7 +224,7 @@ chart.Palette = ChartColorPalette.Custom;
 
 {% endtabs %}
 
-![Gradient support in WinUI Chart](Appearance_images/WinUI_PolarChart_Series_Gradient.png)
+![Gradient support in WinUI Chart](Appearance_images/WinUI_Chart_Series_Gradient.png)
 
 Gradient color using the [Interior]() property of series with `LinearGradientBrush`.
 
@@ -269,5 +269,5 @@ series.Interior = gradientColor;
 
 {% endtabs %}
 
-![Gradient color support in WinUI Chart](Appearance_images/WinUI_PolarChart_Interior_GradientColor.png)
+![Gradient color support in WinUI Chart](Appearance_images/WinUI_Chart_Interior_GradientColor.png)
 
