@@ -45,7 +45,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip support in WinUI chart](Tooltip_images/WinUI_chart_tooltip.png)
+![Tooltip support in WinUI chart](Tooltip_images/winui-chart_tooltip.png)
 
 The [ChartTooltipBehavior]() is used to customize the tooltip. For customizing the tooltip, create an instance [ChartTooltipBehavior]() and add it to the `Behaviors` collection of [`SfFunnelChart`](). The following properties are used to customize the tooltip:
 
@@ -124,7 +124,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip background style in WinUI Chart](Tooltip_images/WinUI_chart_tooltip_background.png)
+![Tooltip background style in WinUI Chart](Tooltip_images/winui-chart_tooltip_background.png)
 
 ## Label Style
 
@@ -170,7 +170,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip label style in WinUI Chart](Tooltip_images/WinUI_chart_tooltip_label_style.png)
+![Tooltip label style in WinUI Chart](Tooltip_images/winui-chart_tooltip_label_style.png)
 
 ## Template
 
@@ -229,4 +229,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip template in WinUI Chart](Tooltip_images/WinUI_chart_tooltip_template.png)
+![Tooltip template in WinUI Chart](Tooltip_images/winui-chart_tooltip_template.png)
