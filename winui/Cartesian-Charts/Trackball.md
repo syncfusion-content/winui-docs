@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  Trackball in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about trackball and its customziation in Syncfusion WinUI Cartesian Chart(SfCartesianChart) control
+title:  Trackball in WinUI Chart control | Syncfusion
+description: Learn here all about trackball and its customziation in Syncfusion WinUI Chart (SfCartesianChart) control
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Trackball in WinUI Cartesian Chart (SfCartesianChart)
+# Trackball in WinUI Chart (SfCartesianChart)
 
 The trackball allows you to track a data point closer to the cursor position. The x values are determined from the position of the vertical line in the axis and y values are determined from the points touching the vertical line in the series.
 
-## Define trackball
+## Define Trackball
 
 To add trackball in the chart, create an instance [`ChartTrackballBehavior`]() and add it to the [`Behaviors`]() collection of the chart.
 
@@ -19,9 +19,12 @@ To add trackball in the chart, create an instance [`ChartTrackballBehavior`]() a
 
 {% highlight xml %}
 
-<chart:SfCartesianChart.Behaviors>
-    <chart:ChartTrackballBehavior/>
-</chart:SfCartesianChart.Behaviors>
+<chart:SfCartesianChart>
+    <chart:SfCartesianChart.Behaviors>
+        <chart:ChartTrackballBehavior/>
+    </chart:SfCartesianChart.Behaviors>
+    ...
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
@@ -31,12 +34,13 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 ChartTrackballBehavior behavior = new ChartTrackballBehavior();
 chart.Behaviors.Add(behavior);
+...
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Trackball support in WinUI Cartesian chart](Trackball_images/WinUI_cartesian_chart_trackball.png)
+![Trackball support in WinUI chart](Trackball_images/WinUI_cartesian_chart_trackball.png)
 
 To view the trackball label in the particular axis, you have to enable the [ShowTrackballInfo]() property in that axis as in the following code snippet.
 
@@ -44,18 +48,21 @@ To view the trackball label in the particular axis, you have to enable the [Show
 
 {% highlight xml %}
 
-<chart:SfCartesianChart.PrimaryAxis>
-    <chart:CategoryAxis ShowTrackballInfo="True"/>
-</chart:SfCartesianChart.PrimaryAxis>
-. . .
-<chart:SfCartesianChart.Behaviors>
-    <chart:ChartTrackballBehavior/>
-</chart:SfCartesianChart.Behaviors>
+<chart:SfCartesianChart>
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis ShowTrackballInfo="True"/>
+    </chart:SfCartesianChart.PrimaryAxis>
+    . . .
+    <chart:SfCartesianChart.Behaviors>
+        <chart:ChartTrackballBehavior/>
+    </chart:SfCartesianChart.Behaviors>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
 ChartTrackballBehavior behavior = new ChartTrackballBehavior();
 chart.Behaviors.Add(behavior);
 
@@ -63,6 +70,7 @@ chart.PrimaryAxis = new CategoryAxis()
 {
     ShowTrackballInfo = true
 };
+...
 
 {% endhighlight %}
 
@@ -70,7 +78,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 The default appearance of the Trackball in primary axis (CategoryAxis).
 
-![Axis trackball support in WinUI Cartesian chart](Trackball_images/WinUI_cartesian_chart_axis_trackball.png)
+![Axis trackball support in WinUI chart](Trackball_images/WinUI_cartesian_chart_axis_trackball.png)
 
 The Trackball is composed of the following parts:
 
@@ -79,23 +87,25 @@ The Trackball is composed of the following parts:
 3. Axis label
 4. Series label
 
-## Trackball line
+## Trackball Line
 
-The trackball line is visible, when you initialize the [ChartTrackballBehavior](). If you want to collapse the visibility of the trackball line, then you have to set [`ShowLine`]) to false.
-
-The following code snippet explains how to collapse the visibility of line.
+The trackball line is visible, when you initialize the [ChartTrackballBehavior](). If you want to collapse the visibility of the trackball line, then you have to set [`ShowLine`]) to `false`.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart.Behaviors>
-    <chart:ChartTrackballBehavior ShowLine="False"/>
-</chart:SfCartesianChart.Behaviors>
+<chart:SfCartesianChart>
+    <chart:SfCartesianChart.Behaviors>
+        <chart:ChartTrackballBehavior ShowLine="False"/>
+    </chart:SfCartesianChart.Behaviors>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
 
 ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 {
@@ -103,18 +113,17 @@ ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 };
 
 chart.Behaviors.Add(behavior);
+...
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Trackball line in WinUI Cartesian chart](Trackball_images/WinUI_cartesian_chart_trackball_line.png)
+![Trackball line in WinUI chart](Trackball_images/WinUI_cartesian_chart_trackball_line.png)
 
 ### Customization of trackball line
 
 By using the [`LineStyle`]() property, you can customize the appearance of trackball line.
-
-The following code snippet explains the customization of trackball line.
 
 {% tabs %}
 
@@ -140,18 +149,20 @@ The following code snippet explains the customization of trackball line.
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
 ChartTrackballBehavior Trackball = new ChartTrackballBehavior()
 {
     LineStyle = chart.Resources["lineStyle"] as Style
 };
 
 chart.Behaviors.Add(Trackball);
+...
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Trackball line customization in WinUI Cartesian chart](Trackball_images/WinUI_cartesian_chart_trackball_line_customization.png)
+![Trackball line customization in WinUI chart](Trackball_images/WinUI_cartesian_chart_trackball_line_customization.png)
 
 ## Symbol
 
@@ -187,16 +198,17 @@ ChartTrackballBehavior Trackball = new ChartTrackballBehavior()
 };
 
 chart.Behaviors.Add(Trackball);
+...
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Trackball symbol in WinUI Cartesian chart](Trackball_images/WinUI_cartesian_chart_trackball_symbol_customization.png)
+![Trackball symbol in WinUI chart](Trackball_images/WinUI_cartesian_chart_trackball_symbol_customization.png)
 
-## Axis label
+## Axis Label
 
-The axis label will be viewed when the [`ShowTrackballInfo`]() property is set to true. The default value of [`ShowTrackballInfo`]() is false.
+The axis label will be viewed when the [`ShowTrackballInfo`]() property is set to true. The default value of [`ShowTrackballInfo`]() is `false`.
 
 ### Axis label alignment 
 
@@ -213,26 +225,31 @@ The alignment of the axis label can be defined using the [`AxisLabelAlignment`](
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart.Behaviors>
-    <chart:ChartTrackballBehavior AxisLabelAlignment="Far"/>
-</chart:SfCartesianChart.Behaviors>
+<chart:SfCartesianChart>
+    <chart:SfCartesianChart.Behaviors>
+        <chart:ChartTrackballBehavior AxisLabelAlignment="Far"/>
+    </chart:SfCartesianChart.Behaviors>
+    ...
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
 ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 {
     AxisLabelAlignment = ChartAlignment.Far
 };
 
 chart.Behaviors.Add(behavior);
+...
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Alignment support for Trackball axis label in WinUI Cartesian chart](Trackball_images/WinUI_cartesian_chart_trackball_far_alignment.png)
+![Alignment support for Trackball axis label in WinUI chart](Trackball_images/WinUI_cartesian_chart_trackball_far_alignment.png)
 
 **Near**
 
@@ -240,26 +257,31 @@ chart.Behaviors.Add(behavior);
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart.Behaviors>
-    <chart:ChartTrackballBehavior AxisLabelAlignment="Near"/>
-</chart:SfCartesianChart.Behaviors>
+<chart:SfCartesianChart>
+    <chart:SfCartesianChart.Behaviors>
+        <chart:ChartTrackballBehavior AxisLabelAlignment="Near"/>
+    </chart:SfCartesianChart.Behaviors>
+    ...
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
 ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 {
     AxisLabelAlignment = ChartAlignment.Near
 };
 
 chart.Behaviors.Add(behavior);
+...
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Alignment support for Trackball axis label in WinUI Cartesian chart](Trackball_images/WinUI_cartesian_chart_trackball_near_alignment.png)
+![Alignment support for Trackball axis label in WinUI chart](Trackball_images/WinUI_cartesian_chart_trackball_near_alignment.png)
 
 ### Customization of axis label
 
@@ -302,31 +324,34 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Customization support for Trackball axis label in WinUI Cartesian chart](Trackball_images/WinUI_cartesian_chart_trackball_axis_label_customization.png)
+![Customization support for Trackball axis label in WinUI chart](Trackball_images/WinUI_cartesian_chart_trackball_axis_label_customization.png)
 
-### Series label
+## Series Label
 
 When the mouse hovered in the chart area, you can view the label displayed over the series in addition the axis label.
 
 **ShowTrackballInfo**
 
-The [ShowTrackballInfo]() property is used to enable or disable the label for corresponding series. By default, [ShowTrackballInfo]() property is true. The property can be set as shown in the below code example:
+The [ShowTrackballInfo]() property is used to enable or disable the label for corresponding series. By default, [ShowTrackballInfo]() property is `true`.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart.Series>
-    <chart:SplineSeries ItemsSource="{Binding Data}" 
-                        XBindingPath="Demand" 
-                        YBindingPath="Year2010"/>
-    <chart:SplineSeries ItemsSource="{Binding Data}" 
-                        XBindingPath="Demand" 
-                        YBindingPath="Year2011" ShowTrackballInfo="False"/>
-    <chart:SplineSeries ItemsSource="{Binding Data}" 
-                        XBindingPath="Demand" 
-                        YBindingPath="Year2012">
-</chart:SfCartesianChart.Series>
+<chart:SfCartesianChart>
+    <chart:SfCartesianChart.Series>
+        <chart:SplineSeries ItemsSource="{Binding Data}" 
+                            XBindingPath="Demand" 
+                            YBindingPath="Year2010"/>
+        <chart:SplineSeries ItemsSource="{Binding Data}" 
+                            XBindingPath="Demand" 
+                            YBindingPath="Year2011" ShowTrackballInfo="False"/>
+        <chart:SplineSeries ItemsSource="{Binding Data}" 
+                            XBindingPath="Demand" 
+                            YBindingPath="Year2012">
+    </chart:SfCartesianChart.Series>
+    ...
+</chart:SfCartesianChart>
  
 {% endhighlight %}
 
@@ -343,18 +368,17 @@ SplineSeries series2 = new SplineSeries()
 chart.Series.Add(series2);
 SplineSeries series3 = new SplineSeries();
 chart.Series.Add(series3);
+...
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Trackball series label in WinUI Cartesian chart](Trackball_images/WinUI_cartesian_chart_trackball_series_label.png)
+![Trackball series label in WinUI chart](Trackball_images/WinUI_cartesian_chart_trackball_series_label.png)
 
 **Alignment of series label**
 
 The trackball label displayed over the series can be aligned using the [LabelHorizontalAlignment]() and [LabelVerticalAlignment]() properties. By default, the [LabelHorizontalAlignment]() is `Left` and [LabelVerticalAlignment]() is `Top`.
-
-The following code snippet explains how to align the series label to the center of the trackball.
 
 {% tabs %}
 
@@ -386,9 +410,9 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Alignment support for Trackball series label in WinUI Cartesian Chart](Trackball_images/WinUI_cartesian_chart_trackball_label_alignment.png)
+![Alignment support for Trackball series label in WinUI Chart](Trackball_images/WinUI_cartesian_chart_trackball_label_alignment.png)
 
-### Label display mode
+## Label Display Mode
 
 When there is a multiple series, the trackball series label will be displayed only for the nearest point. If you want to display all the y values with respect to the x value then the [LabelDisplayMode]() property is set to [FloatAllPoints]().
 
@@ -398,9 +422,12 @@ When there is a multiple series, the trackball series label will be displayed on
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart.Behaviors>
-    <chart:ChartTrackballBehavior LabelDisplayMode="FloatAllPoints"/>
-</chart:SfCartesianChart.Behaviors>
+<chart:SfCartesianChart>
+    <chart:SfCartesianChart.Behaviors>
+        <chart:ChartTrackballBehavior LabelDisplayMode="FloatAllPoints"/>
+    </chart:SfCartesianChart.Behaviors>
+    ...
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
@@ -414,12 +441,13 @@ ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 };
 
 chart.Behaviors.Add(behavior);
+...
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![LabelDisplayMode support for Trackball in WinUI Cartesian Chart](Trackball_images/WinUI_cartesian_chart_trackball_float_all_points.png)
+![LabelDisplayMode support for Trackball in WinUI Chart](Trackball_images/WinUI_cartesian_chart_trackball_float_all_points.png)
 
 **NearestPoint**
 
@@ -427,9 +455,11 @@ chart.Behaviors.Add(behavior);
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart.Behaviors>
-    <chart:ChartTrackballBehavior LabelDisplayMode="NearestPoint"/>
-</chart:SfCartesianChart.Behaviors>
+<chart:SfCartesianChart>
+    <chart:SfCartesianChart.Behaviors>
+        <chart:ChartTrackballBehavior LabelDisplayMode="NearestPoint"/>
+    </chart:SfCartesianChart.Behaviors>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
@@ -443,12 +473,13 @@ ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 };
 
 chart.Behaviors.Add(behavior);
+...
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![LabelDisplayMode support for Trackball in WinUI Cartesian Chart](Trackball_images/WinUI_cartesian_chart_trackball_nearest_point.png)
+![LabelDisplayMode support for Trackball in WinUI Chart](Trackball_images/WinUI_cartesian_chart_trackball_nearest_point.png)
 
 **GroupAllPoints**
 
@@ -458,9 +489,12 @@ chart.Behaviors.Add(behavior);
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart.Behaviors>
-    <chart:ChartTrackballBehavior LabelDisplayMode="GroupAllPoints"/>
-</chart:SfCartesianChart.Behaviors>
+<chart:SfCartesianChart>
+    <chart:SfCartesianChart.Behaviors>
+        <chart:ChartTrackballBehavior LabelDisplayMode="GroupAllPoints"/>
+    </chart:SfCartesianChart.Behaviors>
+    ...
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
@@ -474,6 +508,7 @@ ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 };
 
 chart.Behaviors.Add(behavior);
+...
 
 {% endhighlight %}
 
@@ -481,9 +516,9 @@ chart.Behaviors.Add(behavior);
 
 The following screenshot illustrates the trackball label for multiple series, when the [LabelDisplayMode]() property value is `GroupAllPoints`.
 
-![LabelDisplayMode support for Trackball in WinUI Cartesian Chart](Trackball_images/WinUI_cartesian_chart_trackball_group_all_points.png)
+![LabelDisplayMode support for Trackball in WinUI Chart](Trackball_images/WinUI_cartesian_chart_trackball_group_all_points.png)
 
-### Trackball label template
+## Template
 
 [TrackballLabelTemplate]() property is used to customize the appearance of series label in trackball.
 
@@ -513,7 +548,7 @@ The following screenshot illustrates the trackball label for multiple series, wh
                             TrackballLabelTemplate="{StaticResource labelTemplate}">
         </chart:ColumnSeries>
     </chart:SfCartesianChart.Series>
-
+    ...
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -534,14 +569,15 @@ ColumnSeries series = new ColumnSeries()
 };
 
 chart.Series.Add(series);
+...
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Trackball templte support for Trackball in WinUI Cartesian Chart](Trackball_images/WinUI_cartesian_chart_trackball_label_template.png)
+![Trackball templte support for Trackball in WinUI Chart](Trackball_images/WinUI_cartesian_chart_trackball_label_template.png)
 
-### Applying series interior to the label
+### Applying Series Interior
 
 Interior color of the series is applied to the series label by setting [UseSeriesPalette]() to true as shown in the following code snippet.
 
@@ -549,10 +585,12 @@ Interior color of the series is applied to the series label by setting [UseSerie
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart.Behaviors>
-    <chart:ChartTrackballBehavior UseSeriesPalette="True"/>
-</chart:SfCartesianChart.Behaviors>
-
+<chart:SfCartesianChart>
+    <chart:SfCartesianChart.Behaviors>
+        <chart:ChartTrackballBehavior UseSeriesPalette="True"/>
+    </chart:SfCartesianChart.Behaviors>
+    ...
+</chart:SfCartesianChart>
 {% endhighlight %}
 
 {% highlight c# %}
@@ -565,10 +603,11 @@ ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 };
 
 chart.Behaviors.Add(behavior);
+...
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Applying interior color to series label in WinUI Cartesian Chart](Trackball_images/WinUI_cartesian_chart_trackball_label_series_palette.png)
+![Applying interior color to series label in WinUI Chart](Trackball_images/WinUI_cartesian_chart_trackball_label_series_palette.png)
 

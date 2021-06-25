@@ -28,7 +28,7 @@ The appearance of [SfPolarChart]() can be customized by using the predefined pal
 * LightCandy
 * SandyBeach
 
-### Applying palette
+### Applying Palette
 
 Each palette applies a set of predefined brushes to the series in a predefined order. [Metro]() palette is the default palette. 
 
@@ -119,7 +119,7 @@ this.Content = chart;
 
 ![Palette support in WinUI Chart](Appearance_images/WinUI_PolarChart_BlueChrome.png)
 
-## Custom palette
+## Custom Palette
 
 [`SfPolarChart`]() provides support to define own brushes for the chart with preferred order by using the [CustomBrushes]() property of [ChartColorModel]() and [Palette]() value as `Custom`, as shown in the following code example.
 
