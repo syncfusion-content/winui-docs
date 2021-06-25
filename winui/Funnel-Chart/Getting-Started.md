@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with WinUI Funnel Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Funnel Chart(SfFunnelChart) control, its elements, and more.
+title: Getting started with WinUI Chart control | Syncfusion
+description: Learn here all about getting started with Syncfusion WinUI Chart(SfFunnelChart) control, its elements, and more.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
 ---
 
-# Getting started with WinUI Funnel Chart
+# Getting started with WinUI Chart
 
 This section explains how to populate the funnel chart with data, a header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
@@ -242,6 +242,8 @@ chart.ShowTooltip = true;
 
 The following code example gives you the complete code of above configurations.
 
+N> To plot the chart, the [XBindingPath]() and [YBindingPath]() properties must be configured so that the chart may get values from the respective properties in the data model.
+
 {% tabs %} 
 
 {% highlight xaml %}
@@ -298,10 +300,6 @@ public sealed partial class MainWindow : Window
 
 {% endtabs %}
 
-N> To plot the chart, the [XBindingPath]() and [YBindingPath]() properties must be configured so that the chart may get values from the respective properties in the data model.
-
-The following chart is created as a result of the previous codes.
-
-![Getting Started WinUI FunnelChart](Getting-Started_images/WinUI_FunnelChart.png)
+![Getting Started WinUI Chart](Getting-Started_images/WinUI_FunnelChart.png)
 
 N> Download demo application from [GitHub]().

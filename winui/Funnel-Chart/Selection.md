@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in WinUI Funnel Chart control | Syncfusion
-description: Learn here all about selection and multi-selection support in Syncfusion WinUI Funnel Chart (SfFunnelChart) control.
+title: Selection in WinUI Chart control | Syncfusion
+description: Learn here all about selection and multi-selection support in Syncfusion WinUI Chart (SfFunnelChart) control.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
 ---
 
-# Selection in WinUI Funnel Chart (SfFunnelChart)
+# Selection in WinUI Chart (SfFunnelChart)
 
 Funnel chart supports selection that allows to select a segment in the chart by using [ChartSelectionBehavior](). 
 
@@ -51,7 +51,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Selection support in WinUI Funnel Chart](Selection_images/WinUI_funnel_chart_segment_selection.png)
+![Selection support in WinUI Chart](Selection_images/WinUI_funnel_chart_segment_selection.png)
 
 ## Multi selection
 
@@ -95,7 +95,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Multi selection support in WinUI Funnel Chart](Selection_images/WinUI_funnel_chart_multi_selection.png)
+![Multi selection support in WinUI Chart](Selection_images/WinUI_funnel_chart_multi_selection.png)
 
 N> By default, the value of [Type]() is `Point`. `Series` and `MultiSeries` is not support for funnel chart.
 
@@ -141,7 +141,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Changing cursor while selection support in WinUI Funnel Chart](Selection_images/WinUI_funnel_chart_cursor.png)
+![Changing cursor while selection support in WinUI Chart](Selection_images/WinUI_funnel_chart_cursor.png)
 
 ## Events
 

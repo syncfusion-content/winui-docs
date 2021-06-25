@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rendering mode in WinUI Funnel Chart control | Syncfusion
-description: This sections explains about the rendering mode of Syncfusion WinUI Funnel Chart(SfFunnelChart) control
+title: Rendering mode in WinUI Chart control | Syncfusion
+description: This sections explains about the rendering mode types of Syncfusion WinUI Chart(SfFunnelChart) control
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
 ---
 
-# Rendering mode in WinUI Funnel Chart (SfFunnelChart)
+# Rendering mode in WinUI Chart (SfFunnelChart)
 
 The [FunnelMode]() property defines the rendering mode of the funnel chart, which define where to bind your values (to height or width).The default value of [`FunnelMode`]() property is [ValueIsHeight]().  The following example demonstrates [ValueIsHeight]() and [ValueIsWidth]() of funnel mode.
 
@@ -44,7 +44,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Rendering mode with height in WinUI Funnel Chart](Rendering-mode_images/WinUI_funnel_chart_valueIsHeight.png)
+![Rendering mode with height in WinUI Chart](Rendering-mode_images/WinUI_funnel_chart_valueIsHeight.png)
 
 **ValueIsWidth**
 
@@ -79,5 +79,5 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Rendering mode with width in WinUI Funnel Chart](Rendering-mode_images/WinUI_funnel_chart_valueIsWidth.png)
+![Rendering mode with width in WinUI Chart](Rendering-mode_images/WinUI_funnel_chart_valueIsWidth.png)
 
