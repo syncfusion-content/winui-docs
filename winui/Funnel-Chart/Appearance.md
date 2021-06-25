@@ -58,7 +58,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Predefined palette in WinUI Chart](Appearance_images/WinUI_chart_predefined_palette.png)
+![Predefined palette in WinUI Chart](Appearance_images/winui-chart_predefined_palette.png)
 
 The following code example defined [`Palette`]() as [`GreenChrome`]().
 
@@ -90,7 +90,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Palette support in WinUI Chart](Appearance_images/WinUI_chart_greenchrome_palette.png)
+![Palette support in WinUI Chart](Appearance_images/winui-chart_greenchrome_palette.png)
 
 ## Custom Palette
 
@@ -147,7 +147,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Custom palette in WinUI Chart](Appearance_images/WinUI_chart_custom_palette.png)
+![Custom palette in WinUI Chart](Appearance_images/winui-chart_custom_palette.png)
 
 ## Applying Gradient
 
@@ -227,7 +227,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Gradient support in WinUI Chart](Appearance_images/WinUI_chart_gradient_color.png)
+![Gradient support in WinUI Chart](Appearance_images/winui-chart_gradient_color.png)
 
 ## Segment Color Binding
 
@@ -280,4 +280,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Segment color binding support in WinUI Chart](Appearance_images/WinUI_chart_colorvaluepath.png)
+![Segment color binding support in WinUI Chart](Appearance_images/winui-chart_colorvalue-path.png)
