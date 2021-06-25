@@ -114,11 +114,11 @@ N> If you prefer to set `DataContext` in XAML, add the namespace of the `ViewMod
     . . .
 
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
-    xmlns:Model="using:ChartDemo.ViewModel">
+    xmlns:model="using:ChartDemo.ViewModel">
 
     <chart:SfFunnelChart>
         <chart:SfFunnelChart.DataContext>
-            <Model:ChartViewModel/>
+            <model:ChartViewModel/>
         </chart:SfFunnelChart.DataContext>
     </chart:SfFunnelChart>
 

@@ -74,6 +74,7 @@ The pyramid chart provides support to add any `UIElement` as a title. The follow
     };
 
     border.Child = textBlock;
+    chart.Header = border;
     . . . 
     this.Content = chart;
 
