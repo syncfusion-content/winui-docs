@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in WinUI Circular Chart control | Syncfusion
-description: This section explains about how to apply palettes and gradient in the Syncfusion WinUI Circular Chart (SfCircularChart) control
+title: Appearance in WinUI Chart control | Syncfusion
+description: This section explains about how to apply palettes and gradient in the Syncfusion WinUI Chart (SfCircularChart) control
 platform: WinUI
 control: SfCircularChart
 documentation: ug
 ---
 
-# Appearance in WinUI Circular Chart (SfCircularChart)
+# Appearance in WinUI Chart (SfCircularChart)
 
 The appearance of [SfCircularChart]() can be customized by using the predefined palettes, custom palettes and gradient, which allows to enrich the application.
 
@@ -54,7 +54,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Predefined palette in WinUI Circular Chart](Appearance_images/WinUI_Circular_chart_Predefined_palette.png)
+![Predefined palette in WinUI Chart](Appearance_images/WinUI_Circular_chart_Predefined_palette.png)
 
 The following code example defined [`Palette`]() as [`GreenChrome`]().
 
@@ -62,17 +62,21 @@ The following code example defined [`Palette`]() as [`GreenChrome`]().
 
 {% highlight xaml %}
 
-<chart:PieSeries Palette="GreenChrome"
-                 ItemsSource="{Binding Data}" 
-                 XBindingPath="Product" 
-                 YBindingPath="SalesRate">
-
-</chart:PieSeries>
+<chart:SfCircularChart>
+. . .
+    <chart:PieSeries Palette="GreenChrome"
+                     ItemsSource="{Binding Data}" 
+                     XBindingPath="Product" 
+                     YBindingPath="SalesRate">
+    </chart:PieSeries>
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCircularChart chart = new SfCircularChart();
+. . .
 PieSeries series = new PieSeries();
 series.Palette = ChartColorPalette.GreenChrome;
 . . .
@@ -82,16 +86,18 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Palette support in WinUI Circular Chart](Appearance_images/WinUI_Circular_chart_GreenChrome_palette.png)
+![Palette support in WinUI Chart](Appearance_images/WinUI_Circular_chart_GreenChrome_palette.png)
 
-## Custom palette
+## Custom Palette
 
-[SfCircularChart]() provides support to define own brushes for chart with preferred order by using the [CustomBrushes]() property of [ChartColorModel]() and [Palette]() value as [Custom](), as shown in the following code example.
+[SfCircularChart]() provides support to define own brushes for chart with preferred order by using the [CustomBrushes]() property of [ChartColorModel]() and [Palette]() value as [Custom]().
 
 {% tabs %}
 
 {% highlight xaml %}
 
+<chart:SfCircularChart>
+. . .
 <chart:PieSeries Palette="Custom">
     <chart:PieSeries.ColorModel>
         <chart:ChartColorModel>
@@ -106,11 +112,14 @@ chart.Series.Add(series);
         </chart:ChartColorModel>
     </chart:PieSeries.ColorModel>
 </chart:PieSeries>
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCircularChart chart = new SfCircularChart();
+. . .
 PieSeries series = new PieSeries();
 series.Palette = ChartColorPalette.Custom;
 
@@ -123,23 +132,25 @@ colorModel.CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 151, 167
 colorModel.CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 131, 143)));
 
 series.ColorModel = colorModel;
+. . .
+chart.Series.Add(series);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Custom palette in WinUI Circular Chart](Appearance_images/WinUI_Circular_chart_Custom_palette.png)
+![Custom palette in WinUI Chart](Appearance_images/WinUI_Circular_chart_Custom_palette.png)
 
-## Applying gradient brushes
+## Applying Gradient Brushes
 
 Gradient for the circular chart can be set by using the [ColorModel]() property of the series with the help of `LinearGradientBrush` or `RadialGradientBrush`.
-
-The following code sample and screenshot illustrates how to apply the gradient brushes for the chart using the [ColorModel]() property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
+<chart:SfCircularChart>
+. . .
 <chart:PieSeries Palette="Custom">
     <chart:PieSeries.ColorModel>
         <chart:ChartColorModel>
@@ -168,12 +179,14 @@ The following code sample and screenshot illustrates how to apply the gradient b
             </chart:ChartColorModel>
     </chart:PieSeries.ColorModel>
 </chart:PieSeries>
-
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCircularChart chart = new SfCircularChart();
+. . .
 PieSeries series = new PieSeries();
 series.Palette = ChartColorPalette.Custom;
 
@@ -184,14 +197,16 @@ GradientStop stop2 = new GradientStop() { Offset = 0, Color = Color.FromArgb(255
 gradientColor1.GradientStops.Add(stop1);
 gradientColor1.GradientStops.Add(stop2);
 series.ColorModel = colorModel;
+. . .
+chart.Series.Add(series);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Gradient support in WinUI Circular Chart](Appearance_images/WinUI_Circular_Chart_Gradient_color.png)
+![Gradient support in WinUI Chart](Appearance_images/WinUI_Circular_Chart_Gradient_color.png)
 
-## Segment color binding
+## Segment Color Binding
 
 The color of the each segment can be set by binding their corresponding model property from the `ItemsSource` collection to its [SegmentColorPath]() property of series as follows.
 
@@ -199,9 +214,13 @@ The color of the each segment can be set by binding their corresponding model pr
 
 {% highlight xaml %}
 
+<chart:SfCircularChart>
+. . .
 <chart:PieSeries ItemsSource="{Binding Data}" 
                  XBindingPath="Product" SegmentColorPath="SegmentColor"
                  YBindingPath="SalesRate"/>
+. . . 
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
@@ -224,6 +243,8 @@ public class ChartViewModel
     }
 }
 
+SfCircularChart chart = new SfCircularChart();
+. . .
 PieSeries series = new PieSeries();
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
@@ -235,5 +256,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Segment color binding support in WinUI Circular Chart](Appearance_images/WinUI_Circular_chart_ColorValuePath.png)
-
+![Segment color binding support in WinUI Chart](Appearance_images/WinUI_Circular_chart_ColorValuePath.png)
