@@ -56,9 +56,9 @@ chart.Header = border;
 
 {% endtabs %}
 
-![Title customization support in WinUI Circular Chart](Header_Images/WinUI_Circular_chart_Header.png)
+![Title customization support in WinUI Chart](Header_Images/WinUI_Circular_chart_Header.png)
 
-## Title Alignment
+## Alignment
 
 The title text content can be aligned horizontally to the left, center or right of the chart using the [HorizontalHeaderAlignment]() property of the `SfCircularChart`.
 
@@ -111,4 +111,4 @@ chart.Header = border;
 
 {% endtabs %}
 
-![Title alignment in WinUI Circular Chart](Header_Images/WinUI_Circular_chart_Header_customization.png)
+![Title alignment in WinUI Chart](Header_Images/WinUI_Circular_chart_Header_customization.png)
