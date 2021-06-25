@@ -237,7 +237,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Rotation support for data label in WinUI Chart](Datalabel_Images/WinUI_pie_chart_data_label_rotation.png)
+![Rotation support for data label in WinUI Chart](DataLabel_Images/WinUI_pie_chart_data_label_rotation.png)
 
 ## Connector Line
 
