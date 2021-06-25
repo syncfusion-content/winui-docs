@@ -46,7 +46,7 @@ series.ShowDataLabels = true;
 
 {% endtabs %}
 
-![Data label in WinUI chart](DataLabel_Images/WinUI_PolarChart_data_label.png)
+![Data label in WinUI chart](DataLabel_Images/WinUI_Chart_data_label.png)
 
 ## Context
 
@@ -83,7 +83,7 @@ series.DataLabelSettings = new PolarDataLabelSettings() {Context = LabelContext.
 
 {% endtabs %}
 
-![Data label support in WinUI chart](DataLabel_Images/WinUI_PolarChart_data_label_percentage.png)
+![Data label support in WinUI chart](DataLabel_Images/WinUI_Chart_data_label_percentage.png)
 
 ## Customization
 
@@ -141,7 +141,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 {% endtabs %}
 
-![Data label customization support in WinUI Chart](DataLabel_Images/WinUI_PolarChart_data_label_customize.png)
+![Data label customization support in WinUI Chart](DataLabel_Images/WinUI_Chart_data_label_customize.png)
 
 ## Template
 
@@ -205,7 +205,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 {% endtabs %}
 
-![Template support for data label in WinUI Chart](DataLabel_Images/WinUI_PolarChart_DataLabel_LabelTemplate.png)
+![Template support for data label in WinUI Chart](DataLabel_Images/WinUI_Chart_DataLabel_LabelTemplate.png)
 
 ## Format
 
@@ -244,7 +244,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 {% endtabs %}
 
-![Label format support for data label in WinUI Chart](DataLabel_Images/WinUI_PolarChart_data_label_format.png)
+![Label format support for data label in WinUI Chart](DataLabel_Images/WinUI_Chart_data_label_format.png)
 
 ## Rotation
 
@@ -286,7 +286,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 {% endtabs %}
 
-![Rotation support for data label in WinUI Chart](DataLabel_Images/WinUI_PolarChart_data_label_Rotation.png)
+![Rotation support for data label in WinUI Chart](DataLabel_Images/WinUI_Chart_data_label_Rotation.png)
 
 ## Applying Series Interior
 
@@ -327,7 +327,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 {% endtabs %}
 
-![Applying UseSeriesPalette in WinUI Chart](DataLabel_Images/WinUI_PolarChart_data_label_UseSeriesPalette.png)
+![Applying UseSeriesPalette in WinUI Chart](DataLabel_Images/WinUI_Chart_data_label_UseSeriesPalette.png)
 
 ## Connector Line
 
@@ -377,4 +377,4 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 {% endtabs %}
 
-![ConnectorLine in WinUI Chart](DataLabel_Images/WinUI_PolarChart_data_label_ConnectorLine.png)
+![ConnectorLine in WinUI Chart](DataLabel_Images/WinUI_Chart_data_label_ConnectorLine.png)

@@ -494,8 +494,6 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend background customization in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_background_customizing.png)
-
 ## Template
 
 Customize each legend item by using [ItemTemplate]() property in `ChartLegend` as in below code snippet:

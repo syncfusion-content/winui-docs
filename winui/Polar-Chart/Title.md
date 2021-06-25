@@ -53,7 +53,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Title customization support in WinUI chart](Title_images/WinUI_PolarChart_TitleCustomization.png)
+![Title customization support in WinUI chart](Title_images/WinUI_Chart_TitleCustomization.png)
 
 ## Alignment
 
@@ -109,4 +109,4 @@ chart.Header = border;
 
 {% endtabs %}
 
-![Title text alignment support in WinUI chart](Title_images/WinUI_PolarChart_TitleAlignment.png)
+![Title text alignment support in WinUI chart](Title_images/WinUI_Chart_TitleAlignment.png)
