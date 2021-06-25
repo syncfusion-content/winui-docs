@@ -284,7 +284,7 @@ The data point can be collapsed by unchecking the checkbox as below:
 
 ![Checkbox support for legend in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_LegendIcon_collapsed.png)
 
-## Toggle Series Visibility 
+## Toggle series visibility 
 
 The visibility of the segment can be control by tapping the legend item by enabling the [ToggleSeriesVisibility]() property. By default, the value of [ToggleSeriesVisibility]() property is `False`.
 

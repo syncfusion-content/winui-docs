@@ -24,7 +24,7 @@ Exploding a segment is used to pull attention to a specific area of the circular
 
 <chart:SfCircularChart>
 . . .
-    <syncfusion:PieSeries x:Name="PieSeries" ItemsSource="{Binding Data}" ExplodeIndex="2" ExplodeRadius="10" XBindingPath="Utilization" YBindingPath="ResponseTime" />
+    <chart:PieSeries x:Name="PieSeries" ItemsSource="{Binding Data}" ExplodeIndex="2" ExplodeRadius="10" XBindingPath="Utilization" YBindingPath="ResponseTime" />
 
 </chart:SfCircularChart>
 
