@@ -55,7 +55,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Segment selection support in WinUI Chart](Selection_images/WinUI_cartesian_chart_segment_selection.png)
+![Segment selection support in WinUI Chart](Selection_images/WinUI_chart_segment_selection.png)
 
 ## Segment Selection in Linear Series
 
@@ -105,7 +105,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Segment selection support in WinUI Chart SplineSeries](Selection_images/WinUI_cartesian_chart_spline_series_segment_selection.png)
+![Segment selection support in WinUI Chart SplineSeries](Selection_images/WinUI_chart_spline_series_segment_selection.png)
 
 ## Enable Series Selection
 
@@ -140,7 +140,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Series selection support in WinUI Chart](Selection_images/WinUI_cartesian_chart_series_selection.png)
+![Series selection support in WinUI Chart](Selection_images/WinUI_chart_series_selection.png)
 
 ## Multi-selection
 
@@ -189,7 +189,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Multi Segment selection support in WinUI Chart](Selection_images/WinUI_cartesian_chart_multi_segment_selection.png)
+![Multi Segment selection support in WinUI Chart](Selection_images/WinUI_chart_multi_segment_selection.png)
 
 The following code snippet demonstrates multiple series selection.
 
@@ -222,7 +222,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Multi Series selection support in WinUI Chart](Selection_images/WinUI_cartesian_chart_multi_series_selection.png)
+![Multi Series selection support in WinUI Chart](Selection_images/WinUI_chart_multi_series_selection.png)
 
 ## Selection on initial rendering
 
@@ -272,7 +272,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Initial selection rendering support in WinUI Chart](Selection_images/WinUI_cartesian_chart_selected_index.png)
+![Initial selection rendering support in WinUI Chart](Selection_images/WinUI_chart_selected_index.png)
 
 Select a series programmatically on a chart using the [SelectedSeriesIndex]() property of the chart.
 
@@ -306,7 +306,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Initial series selection rendering support in WinUI Chart](Selection_images/WinUI_cartesian_charts_selected_serie_index.png)
+![Initial series selection rendering support in WinUI Chart](Selection_images/WinUI_charts_selected_serie_index.png)
 
 ## Changing Cursor while Selection
 
@@ -356,7 +356,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Changing cursor while selection support in WinUI Chart](Selection_images/WinUI_cartesian_chart_cursor.png)
+![Changing cursor while selection support in WinUI Chart](Selection_images/WinUI_chart_cursor.png)
 
 ## Events
 

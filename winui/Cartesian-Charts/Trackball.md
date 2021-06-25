@@ -40,7 +40,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Trackball support in WinUI chart](Trackball_images/WinUI_cartesian_chart_trackball.png)
+![Trackball support in WinUI chart](Trackball_images/WinUI_chart_trackball.png)
 
 To view the trackball label in the particular axis, you have to enable the [ShowTrackballInfo]() property in that axis as in the following code snippet.
 
@@ -78,7 +78,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 The default appearance of the Trackball in primary axis (CategoryAxis).
 
-![Axis trackball support in WinUI chart](Trackball_images/WinUI_cartesian_chart_axis_trackball.png)
+![Axis trackball support in WinUI chart](Trackball_images/WinUI_chart_axis_trackball.png)
 
 The Trackball is composed of the following parts:
 
@@ -119,7 +119,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Trackball line in WinUI chart](Trackball_images/WinUI_cartesian_chart_trackball_line.png)
+![Trackball line in WinUI chart](Trackball_images/WinUI_chart_trackball_line.png)
 
 ### Customization of trackball line
 
@@ -162,7 +162,7 @@ chart.Behaviors.Add(Trackball);
 
 {% endtabs %}
 
-![Trackball line customization in WinUI chart](Trackball_images/WinUI_cartesian_chart_trackball_line_customization.png)
+![Trackball line customization in WinUI chart](Trackball_images/WinUI_chart_trackball_line_customization.png)
 
 ## Symbol
 
@@ -204,7 +204,7 @@ chart.Behaviors.Add(Trackball);
 
 {% endtabs %}
 
-![Trackball symbol in WinUI chart](Trackball_images/WinUI_cartesian_chart_trackball_symbol_customization.png)
+![Trackball symbol in WinUI chart](Trackball_images/WinUI_chart_trackball_symbol_customization.png)
 
 ## Axis Label
 
@@ -218,70 +218,6 @@ The alignment of the axis label can be defined using the [`AxisLabelAlignment`](
 * `Far` - used to align in far from the position of trackball.
 * `Near` -used to align in near to the position of trackball.
 * `Center` - used to align to the center of the trackball.
-
-**Far**
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart>
-    <chart:SfCartesianChart.Behaviors>
-        <chart:ChartTrackballBehavior AxisLabelAlignment="Far"/>
-    </chart:SfCartesianChart.Behaviors>
-    ...
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-ChartTrackballBehavior behavior = new ChartTrackballBehavior()
-{
-    AxisLabelAlignment = ChartAlignment.Far
-};
-
-chart.Behaviors.Add(behavior);
-...
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Alignment support for Trackball axis label in WinUI chart](Trackball_images/WinUI_cartesian_chart_trackball_far_alignment.png)
-
-**Near**
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart>
-    <chart:SfCartesianChart.Behaviors>
-        <chart:ChartTrackballBehavior AxisLabelAlignment="Near"/>
-    </chart:SfCartesianChart.Behaviors>
-    ...
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-ChartTrackballBehavior behavior = new ChartTrackballBehavior()
-{
-    AxisLabelAlignment = ChartAlignment.Near
-};
-
-chart.Behaviors.Add(behavior);
-...
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Alignment support for Trackball axis label in WinUI chart](Trackball_images/WinUI_cartesian_chart_trackball_near_alignment.png)
 
 ### Customization of axis label
 
@@ -324,7 +260,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Customization support for Trackball axis label in WinUI chart](Trackball_images/WinUI_cartesian_chart_trackball_axis_label_customization.png)
+![Customization support for Trackball axis label in WinUI chart](Trackball_images/WinUI_chart_trackball_axis_label_customization.png)
 
 ## Series Label
 
@@ -374,7 +310,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![Trackball series label in WinUI chart](Trackball_images/WinUI_cartesian_chart_trackball_series_label.png)
+![Trackball series label in WinUI chart](Trackball_images/WinUI_chart_trackball_series_label.png)
 
 **Alignment of series label**
 
@@ -410,7 +346,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Alignment support for Trackball series label in WinUI Chart](Trackball_images/WinUI_cartesian_chart_trackball_label_alignment.png)
+![Alignment support for Trackball series label in WinUI Chart](Trackball_images/WinUI_chart_trackball_label_alignment.png)
 
 ## Label Display Mode
 
@@ -447,7 +383,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![LabelDisplayMode support for Trackball in WinUI Chart](Trackball_images/WinUI_cartesian_chart_trackball_float_all_points.png)
+![LabelDisplayMode support for Trackball in WinUI Chart](Trackball_images/WinUI_chart_trackball_float_all_points.png)
 
 **NearestPoint**
 
@@ -479,7 +415,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![LabelDisplayMode support for Trackball in WinUI Chart](Trackball_images/WinUI_cartesian_chart_trackball_nearest_point.png)
+![LabelDisplayMode support for Trackball in WinUI Chart](Trackball_images/WinUI_chart_trackball_nearest_point.png)
 
 **GroupAllPoints**
 
@@ -516,7 +452,7 @@ chart.Behaviors.Add(behavior);
 
 The following screenshot illustrates the trackball label for multiple series, when the [LabelDisplayMode]() property value is `GroupAllPoints`.
 
-![LabelDisplayMode support for Trackball in WinUI Chart](Trackball_images/WinUI_cartesian_chart_trackball_group_all_points.png)
+![LabelDisplayMode support for Trackball in WinUI Chart](Trackball_images/WinUI_chart_trackball_group_all_points.png)
 
 ## Template
 
@@ -575,7 +511,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Trackball templte support for Trackball in WinUI Chart](Trackball_images/WinUI_cartesian_chart_trackball_label_template.png)
+![Trackball templte support for Trackball in WinUI Chart](Trackball_images/WinUI_chart_trackball_label_template.png)
 
 ### Applying Series Interior
 
@@ -609,5 +545,5 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Applying interior color to series label in WinUI Chart](Trackball_images/WinUI_cartesian_chart_trackball_label_series_palette.png)
+![Applying interior color to series label in WinUI Chart](Trackball_images/WinUI_chart_trackball_label_series_palette.png)
 

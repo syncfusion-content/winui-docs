@@ -48,7 +48,7 @@ Zooming the chart area can be achieved in different ways by pinch zooming, mouse
 
 ### Pinch Zooming
 
-Pinch zooming is enable by using the [EnablePinchZooming]() property to true as shown in the below code snippet.
+Pinch zooming is enable by using the [EnablePinchZooming]() property to `true` as shown in the below code snippet.
 
 {% tabs %}
 
@@ -144,7 +144,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-![Selection zooming support in WinUI Chart](Zooming-and-panning_images/WinUI_cartesian_chart_selection_zooming.png)
+![Selection zooming support in WinUI Chart](Zooming-and-panning_images/WinUI_chart_selection_zooming.png)
 
 ### Customization of Selection Rectangle
 
@@ -186,7 +186,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-![Customizing selection rectangle support in WinUI Chart](Zooming-and-panning_images/WinUI_cartesian_customizing_selection_rectangle_zooming.png)
+![Customizing selection rectangle support in WinUI Chart](Zooming-and-panning_images/WinUI_customizing_selection_rectangle_zooming.png)
 
 ### Zooming by setting ZoomFactor and ZoomPosition
 
@@ -220,7 +220,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![Zooming support in WinUI Chart](Zooming-and-panning_images/WinUI_cartesian_chart_zooming.png)
+![Zooming support in WinUI Chart](Zooming-and-panning_images/WinUI_chart_zooming.png)
 
 ## Zooming Mode
 
@@ -257,7 +257,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-![Zoom mode support in WinUI Chart](Zooming-and-panning_images/WinUI_cartesian_chart_zoom_modeX.png)
+![Zoom mode support in WinUI Chart](Zooming-and-panning_images/WinUI_chart_zoom_modeX.png)
 
 Following code example illustrates how to restrict the chart to be zoomed only along vertical axis.
 
@@ -289,7 +289,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-![Zoom mode support in WinUI Chart](Zooming-and-panning_images/WinUI_cartesian_chart_zoom_modeY.png)
+![Zoom mode support in WinUI Chart](Zooming-and-panning_images/WinUI_chart_zoom_modeY.png)
 
 ## Maximum Zoom level
 

@@ -34,8 +34,6 @@ N> Elite, SandyBeach and LightCandy palettes are not supported in the bitmap ser
 
 Each palette applies a set of predefined brushes to the series in a predefined order. [Metro]() palette is the default palette.
 
-The following code example shows you how to set the [Metro]() palette for the chart.
-
 {% tabs %}
 
 {% highlight xaml %}
@@ -57,7 +55,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Predefined palette in WinUI Cartesian Chart](Appearance_images/WinUI_cartesian_chart_predefined_palette.png)
+![Predefined palette in WinUI Cartesian Chart](Appearance_images/WinUI_chart_predefined_palette.png)
 
 The following code example defined [`Palette`]() as [`BlueChrome`]().
 
@@ -80,7 +78,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Palette support in WinUI Chart](Appearance_images/WinUI_cartesian_chart_bluechrome_palette.png)
+![Palette support in WinUI Chart](Appearance_images/WinUI_chart_bluechrome_palette.png)
 
 ### Applying Palette to Segment
 
@@ -111,7 +109,7 @@ ColumnSeries series1 = new ColumnSeries()
 
 {% endtabs %}
 
-![Series palette support in WinUI Chart](Appearance_images/WinUI_cartesian_chart_greenchrome_palette.png)
+![Series palette support in WinUI Chart](Appearance_images/WinUI_chart_greenchrome_palette.png)
 
 ## Custom Palette
 
@@ -169,7 +167,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Custom palette in WinUI Chart](Appearance_images/WinUI_cartesian_chart_custom_palette.png)
+![Custom palette in WinUI Chart](Appearance_images/WinUI_chart_custom_palette.png)
 
 ## Applying Gradient
 
@@ -250,7 +248,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Gradient support in WinUI Chart](Appearance_images/WinUI_cartesian_chart_gradient_color.png)
+![Gradient support in WinUI Chart](Appearance_images/WinUI_chart_gradient_color.png)
 
 The following code sample and screenshot illustrates how to apply the gradient color using the [Interior]() property of series with `LinearGradientBrush`.
 
@@ -297,7 +295,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Interior support in WinUI Chart](Appearance_images/WinUI_cartesian_chart_interior_gradient_color.png)
+![Interior support in WinUI Chart](Appearance_images/WinUI_chart_interior_gradient_color.png)
 
 ## Segment Color Binding
 
@@ -352,5 +350,5 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Segment color binding support in WinUI Chart](Appearance_images/WinUI_cartesian_chart_colorvaluepath.png)
+![Segment color binding support in WinUI Chart](Appearance_images/WinUI_chart_colorvaluepath.png)
 

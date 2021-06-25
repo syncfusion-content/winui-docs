@@ -81,4 +81,4 @@ chart.Series.Add(series4);
 
 {% endtabs %}
 
-![Stacked group chart in WinUI Chart](Grouped_Stacking_Images/groupingstacked.png)
+![Stacked group chart in WinUI Chart](Grouped_Stacking_Images/WinUI_Chart_GroupingStacked.png)
