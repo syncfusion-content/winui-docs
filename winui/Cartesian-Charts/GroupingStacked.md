@@ -9,7 +9,7 @@ documentation: ug
 
 # Stacked Group Chart in WinUI Chart (SfCartesianChart)
 
-Cartesian chart provides support to group the stacked similar series by using the [`GroupName`]() property of stacked series. The stacked series which contains the same [`GroupName`]() will be stacked in a single group.
+Chart provides support to group the stacked similar series by using the [`GroupName`]() property of stacked series. The stacked series which contains the same [`GroupName`]() will be stacked in a single group.
 
 {% tabs %}
 
@@ -82,4 +82,3 @@ chart.Series.Add(series4);
 {% endtabs %}
 
 ![Stacked group chart in WinUI Chart](Grouped_Stacking_Images/groupingstacked.png)
-
