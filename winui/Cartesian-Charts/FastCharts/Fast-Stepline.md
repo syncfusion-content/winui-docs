@@ -1,30 +1,32 @@
 ---
 layout: post
-title: Fast StepLine Bitmap Series in WinUI Chart control | Syncfusion
-description: Learn here all about Fast StepLine Bitmap Series feature of Syncfusion WinUI Chart(SfCartesianChart) control and more.
+title: Fast StepLine Chart in WinUI Chart control | Syncfusion
+description: Learn here all about Fast StepLine Chart of Syncfusion WinUI Chart(SfCartesianChart) control and more.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Fast StepLine Bitmap Series in WinUI Cartesian Chart
+# Fast StepLine Chart in WinUI Chart (SfCartesianChart)
 
-A fast stepline bitmap series is a special kind of series that can render a collection with huge number of data points using `WriteableBitmap`. 
-
-[FastStepLineBitmapSeries]() is the high performance version of step line series.
+A fast stepline bitmap series is a special kind of series that can render a collection with huge number of data points using `WriteableBitmap`. [FastStepLineBitmapSeries]() is the high performance version of step line series.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart.Series>
-    <chart:FastStepLineBitmapSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" />
-</chart:SfCartesianChart.Series>
+<chart:SfCartesianChart>
+. . .
+    <chart:SfCartesianChart.Series>
+        <chart:FastStepLineBitmapSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" />
+    </chart:SfCartesianChart.Series>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
 FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -38,7 +40,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastStepLineBitmap chart type in WinUI](FastChart_images/faststeplinebitmap_chart.png)
+![FastStepLineBitmap chart type in WinUI Chart](FastChart_images/faststeplinebitmap_chart.png)
 
 The anti aliasing mode can be enabled using the [EnableAntiAliasing]() property of FastStepLineBitmapSeries as shown in the following code sample.
 
@@ -46,14 +48,19 @@ The anti aliasing mode can be enabled using the [EnableAntiAliasing]() property 
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart.Series>
-    <chart:FastStepLineBitmapSeries EnableAntiAliasing="True" ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" />
-</chart:SfCartesianChart.Series>
+<chart:SfCartesianChart>
+. . .
+    <chart:SfCartesianChart.Series>
+        <chart:FastStepLineBitmapSeries EnableAntiAliasing="True" ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" />
+    </chart:SfCartesianChart.Series>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+. . .
 FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -68,4 +75,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![AntiAliasing support for FastStepLineBitmap chart type in WinUI](FastChart_images/faststeplinebitmap_chart_antialiasing.png)
+![AntiAliasing support for FastStepLineBitmap chart type in WinUI Chart](FastChart_images/faststeplinebitmap_chart_antialiasing.png)

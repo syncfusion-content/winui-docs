@@ -1,17 +1,15 @@
 ---
 layout: post
-title: Fast Scatter Bitmap Series in WinUI Chart control | Syncfusion
-description: Learn here all about Fast Scatter Bitmap Series feature of Syncfusion WinUI Chart(SfCartesianChart) control and more.
+title: Fast Scatter Chart in WinUI Chart control | Syncfusion
+description: Learn here all about Fast Scatter Chart of Syncfusion WinUI Chart(SfCartesianChart) control and more.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Fast Scatter Bitmap Series in WinUI Chart
+# Fast Scatter Chart in WinUI Chart (SfCartesianChart)
 
-A fast scatter bitmap series is a special kind of series that can render a collection with huge number of data points using `WriteableBitmap`. 
-
-[FastScatterBitmapSeries]() is used to render high number of scatter points. The [ScatterHeight]() and [ScatterWidth]() are also available as in [ScatterSeries](). [ShapeType]() is used to change the rendering shape of fast scatter bitmap series. 
+A fast scatter chart is a special kind of series that can render a collection with huge number of data points using `WriteableBitmap`. [FastScatterBitmapSeries]() is used to render high number of scatter points. The [ScatterHeight]() and [ScatterWidth]() are also available as in [ScatterSeries](). [ShapeType]() is used to change the rendering shape of fast scatter bitmap series. 
 
 The available shapes are 
 * `Cross` 
@@ -28,14 +26,19 @@ The available shapes are
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart.Series>
-    <chart:FastScatterBitmapSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" ScatterHeight="7" ScatterWidth="7"/>
-</chart:SfCartesianChart.Series>
+<chart:SfCartesianChart>
+. . .
+    <chart:SfCartesianChart.Series>
+        <chart:FastScatterBitmapSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" ScatterHeight="7" ScatterWidth="7"/>
+    </chart:SfCartesianChart.Series>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+. . .
 FastScatterBitmapSeries series = new FastScatterBitmapSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -51,4 +54,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastScatterBitmap chart type in WinUI](FastChart_images/fastscatterbitmap_chart.png)
+![FastScatterBitmap chart type in WinUI Chart](FastChart_images/fastscatterbitmap_chart.png)
