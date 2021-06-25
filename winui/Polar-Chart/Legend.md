@@ -20,6 +20,7 @@ The legend contains list of series in the chart. The information provided in eac
     <chart:SfPolarChart.Legend>
         <chart:ChartLegend/>
     </chart:SfPolarChart.Legend>
+    
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -36,7 +37,7 @@ chart.Legend = new ChartLegend();
 
 ![Legend support in WinUI Chart](Legend_images/WinUI_PolarChart_Legend.png)
 
-## Legend title
+## Title
 
 Polar chart provides support to add any `UIElement` as a title for legend. [Header]() property of `ChartLegend` is used to define the title for the legend.
 
@@ -83,7 +84,7 @@ chart.Legend = legend;
 
 ![Legend title in WinUI Chart](Legend_images/WinUI_PolarChart_chart_Legend_Header.png)
 
-## Legend icon
+## Icon
 
 The legend icon represents a symbol associated with each legend item. The appearance of the legend icon can be customized using the following properties:
 
@@ -123,7 +124,7 @@ chart.Legend = new ChartLegend()
 
 ![Legend icon in WinUI Chart](Legend_images/WinUI_PolarChart_chart_Legend_Customize.png)
 
-## Legend item spacing
+## Item spacing
 
 `ItemMargin` property of the `ChartLegend` is used to provide spacing between each legend items.
 
@@ -220,7 +221,7 @@ chart.Legend = new ChartLegend()
 
 ![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/WinUI_PolarChart_Legend_ToggleSeriesVisibility.png)
 
-## Positioning the legend
+## Position
 
 The legends can be placed either inside or outside of the chart area (plotting area). By default, it will be displayed outside and positioned at top (using [DockPosition]()) of the chart area.
 
@@ -322,7 +323,7 @@ chart.Legend = new ChartLegend()
 
 ![Floating legend support in WinUI Chart](Legend_images/WinUI_PolarChart_Legend_floating.png)
 
-## Legend Orientation
+## Orientation
 
 Orientation of the legend items can aligned vertically or horizontally by setting [`Orientation`]() property of legend. By default, the value of [Orientation]() property is [Horizontal](). 
 
@@ -353,7 +354,7 @@ chart.Legend = new ChartLegend()
 
 ![Legend orientation support in WinUI Chart](Legend_images/WinUI_PolarChart_Legend_Orientation.png)
 
-## Legend background customization 
+## Background customization 
 
 The legend background appearance can be customized by using the following properties:
 
@@ -398,7 +399,7 @@ chart.Legend = new ChartLegend()
 
 ![Legend background customization in WinUI Chart](Legend_images/WinUI_PolarChart_Legend_background_customizing.png)
 
-## Legend template customization
+## Template
 
 Customize each legend item by using the [ItemTemplate]() property in `ChartLegend`, as shown in the following code sample.
 

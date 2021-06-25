@@ -48,7 +48,7 @@ series.ShowDataLabels = true;
 
 ![Data label in WinUI chart](DataLabel_Images/WinUI_PolarChart_data_label.png)
 
-## Data label context
+## Context
 
 To customize the content of data labels, need to define [DataLabelSettings]() of series and set [Context]() property of [DataLabelSettings]() to define the value to be displayed as label content.
 
@@ -85,15 +85,7 @@ series.DataLabelSettings = new PolarDataLabelSettings() {Context = LabelContext.
 
 ![Data label support in WinUI chart](DataLabel_Images/WinUI_PolarChart_data_label_percentage.png)
 
-| Context values | Description |
-|---|--|
-| DataLabelItem | Displays the y value|
-| Percentage | Displays the percentage value of series point among other points|
-| XValue | Displays the X value of series point|
-| YValue | Displays the Y value of series point|
-| DateTime | Displays LabelContent.DateTime value|
-
-## Data label customization
+## Customization
 
 The following properties are used to customize the data label.
 
@@ -215,7 +207,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 ![Template support for data label in WinUI Chart](DataLabel_Images/WinUI_PolarChart_DataLabel_LabelTemplate.png)
 
-## Label format
+## Format
 
 The [Format]() property can be used to format the data labels.
 
@@ -254,7 +246,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 ![Label format support for data label in WinUI Chart](DataLabel_Images/WinUI_PolarChart_data_label_format.png)
 
-## Label rotation
+## Rotation
 
 [Rotation]() property is used to define the angle to which the label has to rotate.
 

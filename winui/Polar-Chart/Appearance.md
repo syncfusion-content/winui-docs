@@ -90,7 +90,7 @@ this.Content = chart;
 
 ![Predefined palette in WinUI Chart](Appearance_images/WinUI_PolarChart_default_metro_palette.png)
 
-**BlueChrome** **palette**
+**BlueChrome** **Palette**
 
 {% tabs %}
 
@@ -164,7 +164,7 @@ this.Content = chart;
 
 ![Custom palette in WinUI Chart](Appearance_images/WinUI_PolarChart_CustomPalette.png)
 
-## Applying gradient brushes
+## Applying Gradient
 
 Gradient for the chart can be set by using the [`ColorModel`]() property of the polar chart with the help of `LinearGradientBrush` or `RadialGradientBrush`.
 

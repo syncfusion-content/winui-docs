@@ -7,7 +7,7 @@ control: SfPolarChart
 documentation: ug
 ---
 
-# Chart title in WinUI Chart (SfPolarChart)
+# Chart Title in WinUI Chart (SfPolarChart)
 
 `Header` property of `SfPolarChart` is used to define and customize the chart title. It accepts any `UIElement` as content for the chart header.
 
@@ -55,7 +55,7 @@ this.Content = chart;
 
 ![Title customization support in WinUI chart](Title_images/WinUI_PolarChart_TitleCustomization.png)
 
-## Title alignment
+## Alignment
 
 The title text content can be aligned horizontally to the left, center or right of the chart using the [HorizontalHeaderAlignment]() property of the `SfPolarChart`.
 

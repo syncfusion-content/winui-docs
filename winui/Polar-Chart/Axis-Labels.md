@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis labels in WinUI Polar control | Syncfusion
+title: Axis labels in WinUI Chart control | Syncfusion
 description: Learn here all about the chart axis lables and its customization in Syncfusion WinUI Chart (SfPolarChart) control.
 platform: WinUI
 control: SfPolarChart
@@ -11,7 +11,7 @@ documentation: ug
 
 Axis labels are used to show the units or measures or category values of axis to visualize the data. It will be generated based on the range and values binded to the series in the chart. 
 
-## Custom axis Labels
+## Custom Axis Labels
 
 Chart axis allows user to define the own axis labels. The [`Content`]() and [`Position`]() property of [ChartAxisLabel]() used to define the labels for axis using the [`CustomLabels`]() property as in the below code sample.
 
@@ -129,7 +129,7 @@ public class LabelItem
 
 {% endtabs %}
 
-## Rotation angle
+## Rotation
 
 The [`LabelRotationAngle`]() property is used to define the angle for the label content.
 
@@ -164,7 +164,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![Chart axis label rotation angle support in WinUI chart](Axis_Images/WinUI_PolarChart_LabelRotationAngle.png)
 
-## Formatting axis label
+## Format
 
 Axis labels can be formatted by predefined formatting types by using the [LabelFormat]() property based on the axis types.
 
@@ -205,7 +205,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![Axis label formart support in WinUI Chart](Axis_Images/WinUI_PolarChart_Numerical_LabelFormat.png)
 
-## Label template
+## Template
 
 The appearance of the axis labels can be customized by using the [`LabelTemplate`]() property of axis.
 
