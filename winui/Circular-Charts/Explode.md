@@ -49,7 +49,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Exploding a segment in WinUI pie chart](Series_images/pie_exploderadius.png)
+![Exploding a segment in WinUI pie chart](Series_images/pie_explode_radius.png)
 
 N> By default [ExplodeRadius]() value is zero. So you need to define [ExplodeRadius]() value, when you set [ExplodeIndex]() or [ExplodeAll]().
 
@@ -86,4 +86,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Exploding all the segments in WinUI pie chart](Series_images/pie_explodeall.png)
+![Exploding all the segments in WinUI pie chart](Series_images/pie_explode_all.png)

@@ -45,7 +45,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Segment selection support in WinUI Pie Chart](Selection_Images/WinUI_Circular_chart_Segment_selection.png)
+![Segment selection support in WinUI Pie Chart](Selection_Images/WinUI_pie_chart_selection.png)
 
 ## Series Selection
 
@@ -86,7 +86,7 @@ chart.Series.Add(series1);
 
 {% endtabs %}
 
-![Series selection support in WinUI Pie Chart](Selection_Images/WinUI_Circular_chart_Series_selection.png)
+![Series selection support in WinUI Pie Chart](Selection_Images/WinUI_pie_chart_series_selection.png)
 
 ## Multi-selection
 
@@ -118,7 +118,7 @@ chart.Behaviors.Add(selection);
 
 {% endtabs %}
 
-![Multi selection support in WinUI Pie Chart](Selection_Images/WinUI_Circular_chart_Multiple_segment_selection.png)
+![Multi-selection support in WinUI Pie Chart](Selection_Images/WinUI_pie_chart_multiple_selection.png)
 
 ## Events
 
