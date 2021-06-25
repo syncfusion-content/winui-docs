@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about introduction of Syncfusion WinUI Cartesian Chart(SfCartesianChart) control with key features and more.
+title: About WinUI Chart control | Syncfusion
+description: Learn here all about introduction of Syncfusion WinUI Chart(SfCartesianChart) control with key features and more.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# WinUI Cartesian Chart Overview
+# WinUI Chart (SfCartesianChart) Overview
 
 The [WinUI Cartesian Chart]() provides a perfect way to visualize data with a high level of user interactivity that focus on development, productivity and simplicity of use. Chart also provides a wide variety of charting features that can be used to visualize large quantities of data, flexibility of binding data and user customization. 
 
