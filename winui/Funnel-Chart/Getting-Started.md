@@ -299,6 +299,6 @@ public sealed partial class MainWindow : Window
 
 {% endtabs %}
 
-![Getting Started WinUI Chart](Getting-Started_images/WinUI_Chart.png)
+![Getting Started WinUI Chart](Getting-Started_images/winui-chart.png)
 
 N> Download demo application from [GitHub]().
