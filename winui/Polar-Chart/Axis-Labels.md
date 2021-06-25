@@ -68,7 +68,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 {% endtabs %}
 
-![Custom axis labels in WinUI Chart](Axis_Images/WinUI_PolarChart_CustomLabels.png)
+![Custom axis labels in WinUI Chart](Axis_Images/WinUI_Chart_CustomLabels.png)
 
 N> Also, directly bind the collection of labels to the [`LabelSource`]() property for defining custom labels.
 
@@ -162,7 +162,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Chart axis label rotation angle support in WinUI chart](Axis_Images/WinUI_PolarChart_LabelRotationAngle.png)
+![Chart axis label rotation angle support in WinUI chart](Axis_Images/WinUI_Chart_LabelRotationAngle.png)
 
 ## Format
 
@@ -203,7 +203,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Axis label formart support in WinUI Chart](Axis_Images/WinUI_PolarChart_Numerical_LabelFormat.png)
+![Axis label formart support in WinUI Chart](Axis_Images/WinUI_Chart_Numerical_LabelFormat.png)
 
 ## Template
 
@@ -252,5 +252,5 @@ chart.SecondaryAxis = new NumericalAxis();
 
 {% endtabs %}
 
-![LabelTemplate support for ChartAxis in WinUI Chart](Axis_Images/WinUI_PolarChart_AxisLabelTemplate.png)
+![LabelTemplate support for ChartAxis in WinUI Chart](Axis_Images/WinUI_Chart_AxisLabelTemplate.png)
 

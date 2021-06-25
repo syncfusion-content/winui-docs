@@ -43,7 +43,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 N> Polar chart supports title for secondary axis only.
 
-![Axis title in WinUI Chart](Axis_Images/WinUI_PolarChart_AxisHeader.png)
+![Axis title in WinUI Chart](Axis_Images/WinUI_Chart_AxisHeader.png)
 
 ## Style
 
@@ -93,7 +93,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Axis header style in WinUI Chart](Axis_Images/WinUI_PolarChart_Axis_HeaderStyle.png)
+![Axis header style in WinUI Chart](Axis_Images/WinUI_Chart_Axis_HeaderStyle.png)
 
 ## Template
 
@@ -143,4 +143,4 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Axis HeaderTemplate support in WinUI Chart](Axis_Images/WinUI_PolarChart_AxisHeader_Template.png)
+![Axis HeaderTemplate support in WinUI Chart](Axis_Images/WinUI_Chart_AxisHeader_Template.png)
