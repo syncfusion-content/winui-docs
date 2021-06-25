@@ -13,13 +13,19 @@ This section describes how to restrict the change in value of the `NumberBox` co
 
 ## Restrict null value
 
-By default, when an empty or null value is set for `NumberBox` control or when input is cleared, the editor will be empty, as the value of the `AllowNull` property is **true**.
-You can retain the **0** value in the editor when input is cleared by setting the `AllowNull` property value as **false**.
+By default, an empty or null value is set in the `NumberBox` control when the input is cleared, as the default value of the `AllowNull` property is **true**. When the `AllowNull` property value is **false**, the `NumberBox` control return the value to **0** in the editor after clearing the input.
+
+N> When the value of the `Minimum` property is **15** and the `AllowNull` property is **true**, **null** value is returned in `NumberBox` control after clearing the input.
+
+N> When the value of the `Minimum` property is **15** and the `AllowNull` property is **false**, the minimum value is returned in `NumberBox` control after clearing the input.
 
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumberBox HorizontalAlignment="Center" VerticalAlignment="Center" Value="10" AllowNull="False" />
+<editors:SfNumberBox HorizontalAlignment="Center"
+                     VerticalAlignment="Center" 
+                     Value="10" 
+                     AllowNull="False" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -37,12 +43,16 @@ sfNumberBox.AllowNull = false;
 
 ## Restrict value within range
 
-Using the `Minimum` and `Maximum` properties, you can limit the input value of the `NumberBox` control within minimum and maximum range. The default value of the `Minimum` property is **double.MinValue** and `Maximum` property is **double.MaxValue**.
+You can restrict the users to enter input within a minimum and maximum range in `NumberBox` control using the `Minimum` and `Maximum` properties. The default value of the `Minimum` property is **double.MinValue** and `Maximum` property is **double.MaxValue**.
 
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumberBox HorizontalAlignment="Center" VerticalAlignment="Center" Value="50" Minimum="10" Maximum="30" />
+<editors:SfNumberBox HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                     Value="50"
+                     Minimum="10"
+                     Maximum="30" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -61,16 +71,18 @@ sfNumberBox.Value = 50;
 
 ## Restrict text editing
 
-You can prevent users from editing the numerical value in `NumberBox` control using the `IsEditable` property. By default, the value of `IsEditable` property is **false**. 
+You can prevent users from editing the numerical value in the editor using the `IsEditable` property. However, you can still change the value by using the up-down buttons, mouse scroll, keyboard arrows, and page keys. By default, the value of `IsEditable` property is **false**. 
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfNumberBox x:Name="sfNumberBox" 
-                     HorizontalAlignment="Center" VerticalAlignment="Center" IsEditable="True" />
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                     IsEditable="True" />
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight C# %}
 
 SfNumberBox sfNumberBox = new SfNumberBox();
 sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
