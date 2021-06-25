@@ -7,7 +7,7 @@ control: SfFunnelChart
 documentation: ug
 ---
 
-# Chart title in WinUI Chart (SfFunnelChart)
+# Chart Title in WinUI Chart (SfFunnelChart)
 
 `Header` property is used to define the title for the chart.
 
@@ -173,4 +173,3 @@ public sealed partial class MainPage : Page
 {% endtabs %} 
 
 ![Title text alignment support in WinUI chart](Title_images/WinUI_FunnelChart_TitleAlignment.png)
-

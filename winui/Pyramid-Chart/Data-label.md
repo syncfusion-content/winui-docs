@@ -7,7 +7,7 @@ control: SfPyramidChart
 documentation: ug
 ---
 
-# Data label in WinUI Chart (SfPyramidChart)
+# Data Label in WinUI Chart (SfPyramidChart)
 
 To improve the readability of data in the pyramid chart, data points can be easily annotated with data labels.
 

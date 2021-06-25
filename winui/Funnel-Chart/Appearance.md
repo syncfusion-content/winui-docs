@@ -28,7 +28,7 @@ The appearance of [SfFunnelChart]() can be customized by using the predefined pa
 * LightCandy
 * SandyBeach
 
-### Applying palette
+### Applying Palette
 
 Each palette applies a set of predefined brushes to the funnel series in a predefined order. [Metro]() palette is the default palette.
 
@@ -92,7 +92,7 @@ this.Content = chart;
 
 ![Palette support in WinUI Chart](Appearance_images/WinUI_chart_greenchrome_palette.png)
 
-## Custom palette
+## Custom Palette
 
 [SfFunnelChart]() provides support to define own brushes for the chart with preferred order by using the [CustomBrushes]() property of [ChartColorModel]() and [Palette]() value as `Custom`, as shown in the following code example.
 
@@ -149,7 +149,7 @@ this.Content = chart;
 
 ![Custom palette in WinUI Chart](Appearance_images/WinUI_chart_custom_palette.png)
 
-## Applying gradient brushes
+## Applying Gradient
 
 Gradient for the funnel chart can be set by using the [`ColorModel`]() property of the funnel chart with the help of `LinearGradientBrush` or `RadialGradientBrush`.
 
@@ -229,7 +229,7 @@ this.Content = chart;
 
 ![Gradient support in WinUI Chart](Appearance_images/WinUI_chart_gradient_color.png)
 
-## Segment color binding
+## Segment Color Binding
 
 The color of the each segment can be set by binding their corresponding model property from the `ItemsSource` collection to its [`ColorValuePath`]() property of funnel chart as follows.
 
@@ -281,4 +281,3 @@ this.Content = chart;
 {% endtabs %}
 
 ![Segment color binding support in WinUI Chart](Appearance_images/WinUI_chart_colorvaluepath.png)
-

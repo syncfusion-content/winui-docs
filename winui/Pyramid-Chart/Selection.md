@@ -57,7 +57,7 @@ this.Content = chart;
 
 Pyramid chart provides support to select multiple segments by using [Type]() property as `MultiPoint`.  By default, the value of [Type]() is `Point` and it is used for single selection.
 
-N> `Series` and `MultiSeries` is not support for funnel chart.
+N> `Series` and `MultiSeries` selection type is not support for pyramid chart.
 
 {% tabs %}
 

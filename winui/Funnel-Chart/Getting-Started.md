@@ -7,11 +7,11 @@ control: SfFunnelChart
 documentation: ug
 ---
 
-# Getting started with WinUI Chart
+# Getting Started with WinUI Chart
 
 This section explains how to populate the funnel chart with data, a header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
-## Creating an application with WinUI Funnel Chart
+## Creating an application with WinUI Chart
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
@@ -55,7 +55,7 @@ public sealed partial class MainWindow : Window
 
 {% endtabs %}
 
-## Initialize view model
+## Initialize View Model
 
 Now, let us define a simple data model that represents a data point in the chart.
 
@@ -135,7 +135,7 @@ chart.DataContext = viewModel;
 
 {% endtabs %} 
 
-## Add title
+## Add Title
 
 The title of the chart provide quick information to the user about the data being plotted in the chart. You can set the title using the [Header]() property of the funnel chart as follows.
 
@@ -163,7 +163,7 @@ chart.Header = "PRODUCT SALES";
 
 {% endtabs %}  
 
-## Enable data labels
+## Enable Data Labels
 
 The [ShowDataLabels]() property of [SfFunnelChart]() can be used to enable data labels to improve the readability of the funnel chart. The label visibility is set to `False` by default.
 
@@ -189,7 +189,7 @@ chart.ShowDataLabels = true;
 
 {% endtabs %}  
 
-## Enable legend
+## Enable Legend
 
 The legend provides information about the data point displayed in the funnel chart. The [Legend]() property of the chart was used to enable it.
 
@@ -216,7 +216,7 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %} 
 
-## Enable tooltip
+## Enable Tooltip
 
 Tooltips are used to display information about a segment, when the mouse is moved over it. Enable tooltip by setting series [ShowTooltip]() property as true.
 
@@ -300,6 +300,6 @@ public sealed partial class MainWindow : Window
 
 {% endtabs %}
 
-![Getting Started WinUI Chart](Getting-Started_images/WinUI_FunnelChart.png)
+![Getting Started WinUI Chart](Getting-Started_images/WinUI_Chart.png)
 
 N> Download demo application from [GitHub]().

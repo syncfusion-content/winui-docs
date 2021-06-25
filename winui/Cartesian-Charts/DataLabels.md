@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data labels in WinUI Chart control | Syncfusion
+title: Data label in WinUI Chart control | Syncfusion
 description: This section explains about how to configure the data labels and its features in WinUI Chart (SfCartesianChart).
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Data labels in WinUI Chart (SfCartesianChart)
+# Data Label in WinUI Chart (SfCartesianChart)
 
 Data labels are used to display values related to a chart segment. Values from data point(x, y) or other custom properties from a data source can be displayed. 
 

@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Data labels in WinUI Chart control | Syncfusion
+title: Data label in WinUI Chart control | Syncfusion
 description: This section explains about how to add and customize the data labels in Syncfusion WinUI Chart (SfFunnelChart) control.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
 ---
 
-# Data label in WinUI Chart (SfFunnelChart)
+# Data Label in WinUI Chart (SfFunnelChart)
 
 To improve the readability of data in the funnel chart, data points can be easily annotated with data labels.
 
-## Define data label 
+## Define Data Label 
 
 To define the data label in the chart, set the [ShowDataLabels]() property to true. The default value of [ShowDataLabels]() property is false.
 
@@ -63,7 +63,7 @@ To customize the content of data labels, need to define [DataLabelSettings]() of
                 YBindingPath="Value">
 . . .
     <chart:SfFunnelChart.DataLabelSettings>
-        <chart:FunnelDataLabelSettings Context="YValue" />
+        <chart:FunnelDataLabelSettings Context="Percentage" />
     </chart:SfFunnelChart.DataLabelSettings>
 . . .
  </chart:SfFunnelChart>
@@ -77,7 +77,7 @@ chart.ShowDataLabels = true;
 . . . 
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 { 
-    Context = LabelContext.YValue 
+    Context = LabelContext.Percentage 
 };
 
 this.Content = chart;
@@ -85,13 +85,6 @@ this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
-
-| Context values | Description |
-|---|--|
-|DataLabelItem | Displays the y value|
-| Percentage | Displays the percentage value of series point among other points|
-| XValue | Displays the X value of series point|
-| YValue | Displays the Y value of series point|
 
 ![Data labels context in WinUI chart](Data-label_images/WinUI_chart_labelcontent_percentage.png) 
 
@@ -212,7 +205,7 @@ this.Content = chart;
 
 ![Template support for data label in WinUI Chart](Data-label_images/WinUI_chart_data_labeltemplate.png)
 
-## Label format
+## Format
 
 The [Format]() property can be used to format the data labels. The following code example demonstrates how to format data labels with three decimal digits.
 
@@ -254,7 +247,7 @@ this.Content = chart;
 
 ![Label format support for data label in WinUI Chart](Data-label_images/WinUI_chart_data_labelformat.png)
 
-## Label rotation
+## Rotation
 
 The [`Rotation`]() property is used to rotate the data labels based on the value as angle.
 

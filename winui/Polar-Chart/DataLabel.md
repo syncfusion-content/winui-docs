@@ -7,7 +7,7 @@ control: SfPolarChart
 documentation: ug
 ---
 
-# Data label in WinUI Chart (SfPolarChart)
+# Data Label in WinUI Chart (SfPolarChart)
 
 Data labels are used to display values related to a chart segment. Values from data points(x, y) or other custom properties from a data source can be displayed.
 

@@ -7,7 +7,7 @@ control: SfFunnelChart
 documentation: ug
 ---
 
-# Neck width in WinUI Chart (SfFunnelChart)
+# Neck Width in WinUI Chart (SfFunnelChart)
 
 The neck width of funnel chart can be customized by using the [MinimumWidth]() property. The default value of [MinimumWidth]() property is 40. The following code example explains how to change the neck width.
 
@@ -42,7 +42,7 @@ this.Content = chart;
 
 ![Neck width support in WinUI Chart](Neck-width_images/WinUI_funnel_chart_neck_width.png)
 
-## Inverted pyramid
+## Inverted Pyramid
 
 The funnel chart can be customized to the inverted pyramid chart by setting the [MinimumWidth]() property to 0.
 
@@ -75,4 +75,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Inversed pyramid in WinUI Chart](Neck-width_images/WinUI_funnel_chart_inversed_pyramid.png)
+![Inversed Pyramid Chart in WinUI](Neck-width_images/WinUI_funnel_chart_inversed_pyramid.png)
