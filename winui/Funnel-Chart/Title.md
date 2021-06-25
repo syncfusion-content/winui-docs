@@ -82,7 +82,7 @@ this.Content = chart;
 
 {% endtabs %} 
 
-![Title customization support in WinUI chart](Title_images/winui-chart_title_customization.png)
+![Title customization support in WinUI chart](Title_Images/winui-chart_title_customization.png)
 
 ## Alignment
 
@@ -172,4 +172,4 @@ public sealed partial class MainPage : Page
 
 {% endtabs %} 
 
-![Title text alignment support in WinUI chart](Title_images/winui-chart_title_alignment.png)
+![Title text alignment support in WinUI chart](Title_Images/winui-chart_title_alignment.png)
