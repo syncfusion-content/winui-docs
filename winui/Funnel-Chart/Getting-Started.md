@@ -217,7 +217,7 @@ chart.Legend = new ChartLegend();
 
 ## Enable Tooltip
 
-Tooltips are used to display information about a segment, when the mouse is moved over it. Enable tooltip by setting series [ShowTooltip]() property as true.
+Tooltips are used to display information about a segment, when the mouse is moved over it. Enable tooltip by setting funnel chart [ShowTooltip]() property as true.
 
 {% tabs %} 
 
