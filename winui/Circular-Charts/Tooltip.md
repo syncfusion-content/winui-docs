@@ -11,7 +11,7 @@ documentation: ug
 
 Tooltip is used to display any information over segments. It appears at center of the segment when the mouse hovers over any chart segment. It is set to display the metadata of the hovered segment or data point.
 
-## Define tooltip
+## Define Tooltip
 
 To define the tooltip in the chart, set the [ShowTooltip]() property of series to true. The default value of [ShowTooltip]() property is false.
 
@@ -19,18 +19,24 @@ To define the tooltip in the chart, set the [ShowTooltip]() property of series t
 
 {% highlight xaml %}
 
-<chart:PieSeries ShowTooltip="True"
-                 ItemsSource="{Binding Data}" 
-                 ShowDataLabels="True" 
-                 Palette="BlueChrome"
-                 XBindingPath="Product" 
-                 YBindingPath="SalesRate">
-</chart:PieSeries>
+<chart:SfCircularChart>
+. . .
+    <chart:PieSeries ShowTooltip="True"
+                     ItemsSource="{Binding Data}" 
+                     ShowDataLabels="True" 
+                     Palette="BlueChrome"
+                     XBindingPath="Product" 
+                     YBindingPath="SalesRate">
+    </chart:PieSeries>
+
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCircularChart chart = new SfCircularChart();
+. . .
 PieSeries series = new PieSeries() { Label = "Continents" };
 series.ShowTooltip = true;
 chart.Series.Add(series);
@@ -57,16 +63,20 @@ The [ChartTooltipBehavior]() is used to customize the tooltip. For customizing t
 
 {% highlight xml %}
 
+<chart:SfCircularChart>
+. . .
 <chart:SfCircularChart.Behaviors>
     <chart:ChartTooltipBehavior/>
 </chart:SfCircularChart.Behaviors>
+
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-
+. . .
 ChartTooltipBehavior tooltip = new ChartTooltipBehavior();
 chart.Behaviors.Add(tooltip);
 
@@ -74,16 +84,16 @@ chart.Behaviors.Add(tooltip);
 
 {% endtabs %}
 
-## Background style
+## Background Style
 
 The tooltip's fill and stroke color can be customized by using the [Style]() property. To define a [Style]() for tooltip, specify the style of `TargetType` as `Path`.
-
-The following code example explains how to apply the style for tooltip background.
 
 {% tabs %}
 
 {% highlight xml %}
 
+<chart:SfCircularChart>
+. . .
 <chart:SfCircularChart.Resources>
     <Style TargetType="Path" x:Key="style">
         <Setter Property="Stroke" Value="Black"/>
@@ -95,17 +105,21 @@ The following code example explains how to apply the style for tooltip backgroun
     <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
 </chart:SfCircularChart.Behaviors>
 
+</chart:SfCircularChart>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
+. . .
 Style style = new Style(typeof(Path));
 style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Black)));
 style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)));
 . . .
 ChartTooltipBehavior tooltip = new ChartTooltipBehavior();
 tooltip.Style = style;
+. . . 
 chart.Behaviors.Add(tooltip);
 
 {% endhighlight %}
@@ -114,16 +128,16 @@ chart.Behaviors.Add(tooltip);
 
 ![Tooltip background style in WinUI Chart](Tooltip_images/WinUI_Circular_chart_Tooltip_Customization.png)
 
-## Label style
+## Label Style
 
 The tooltip label style can be customized by using the [LabelStyle]() property. To define a [Style]() for the tooltip label, specify the style of `TargetType` as `TextBlock`.
-
-The following code example explains how to apply the style for a tooltip label.
 
 {% tabs %}
 
 {% highlight xml %}
 
+<chart:SfCircularChart>
+. . .
 <chart:SfCircularChart.Resources>
     <Style TargetType="TextBlock" x:Key="labelStyle">
         <Setter Property="FontSize" Value="14"/>
@@ -136,11 +150,14 @@ The following code example explains how to apply the style for a tooltip label.
     <chart:ChartTooltipBehavior LabelStyle="{StaticResource labelStyle}"/>
 </chart:SfCircularChart.Behaviors>
 
+</chart:SfCircularChart>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
+. . .
 Style labelStyle = new Style(typeof(TextBlock));
 labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
 labelStyle.Setters.Add(new Setter(TextBlock.FontStyleProperty, FontStyles.Italic));
@@ -148,6 +165,7 @@ labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBr
 ...
 ChartTooltipBehavior tooltip = new ChartTooltipBehavior();
 tooltip.LabelStyle = labelStyle;
+. . .
 chart.Behaviors.Add(tooltip);
 
 {% endhighlight %}
@@ -165,7 +183,7 @@ Circular chart provides support to customize the appearance of the tooltip by us
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-
+. . .
     <chart:SfCircularChart.Resources>
         <DataTemplate x:Key="tooltipTemplate">
             <StackPanel Orientation="Horizontal">
@@ -184,14 +202,15 @@ Circular chart provides support to customize the appearance of the tooltip by us
                  YBindingPath="SalesRate"
                  TooltipTemplate="{StaticResource tooltipTemplate}"/>
     </chart:SfCircularChart.Series>
-    ...
-    
+    . . .
 </chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCircularChart chart = new SfCircularChart();
+. . .
 PieSeries series = new PieSeries();
 series.ShowTooltip = true;
 series.TooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate;

@@ -1,17 +1,15 @@
 ---
 layout: post
-title: Legend in WinUI Circular Chart control | WinUI | Syncfusion
-description: This sections explains about how to configure the legend and its features title, icons, labels, and template in WinUI Circular Chart (SfCircularChart).
+title: Legend in WinUI Chart control | WinUI | Syncfusion
+description: This sections explains about how to configure the legend and its features title, icons, labels, and template in WinUI Chart (SfCircularChart).
 platform: WinUI
 control: SfCircularChart
 documentation: ug
 ---
 
-# Legend in WinUI Circular Charts (SfCircularChart)
+# Legend in WinUI Charts (SfCircularChart)
 
 The legend contains list of series data points in the chart. The information provided in each legend item helps to identify the corresponding data series in the chart.
-
-The following code example shows how to enable legend in chart.
 
 {% tabs %}
 
@@ -36,7 +34,7 @@ N> The x-value of data points in the circular chart will be the legend items ‘
 
 ![Legend support in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend.png)
 
-## Legend title
+## Legend Title
 
 Circular chart provides support to add any `UIElement` as a title for legend. [Header]() property of `ChartLegend` is used to define the title for legend as the following code example.
 
@@ -44,16 +42,19 @@ Circular chart provides support to add any `UIElement` as a title for legend. [H
 
 {% highlight xaml %}
 
-<chart:SfCircularChart.Legend>
-    <chart:ChartLegend>
-        <chart:ChartLegend.Header>
-            <TextBox Text="Products" 
-                     HorizontalAlignment="Center"
-                     FontWeight="Bold"
-                     Foreground="Blue"/>
-        </chart:ChartLegend.Header>
+<chart:SfCircularChart>
+. . .
+    <chart:SfCircularChart.Legend>
+        <chart:ChartLegend>
+            <chart:ChartLegend.Header>
+                <TextBox Text="Products" 
+                         HorizontalAlignment="Center"
+                         FontWeight="Bold"
+                         Foreground="Blue"/>
+            </chart:ChartLegend.Header>
     </chart:ChartLegend>
 </chart:SfCircularChart.Legend>
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
@@ -79,7 +80,7 @@ chart.Legend = legend;
 
 ![Legend header in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_Header.png)
 
-## Legend icon
+## Legend Icon
 
 Legend icon represents a symbol associated with the each legend item. `LegendIcon` property of series is used to set the icon type for legend item. By default, the legend icon is [`SeriesType`]().
 
@@ -87,6 +88,8 @@ Legend icon represents a symbol associated with the each legend item. `LegendIco
 
 {% highlight xaml %}
 
+<chart:SfCircularChart>
+. . .
 <chart:SfCircularChart.Legend>
     <chart:ChartLegend/>
 </chart:SfCircularChart.Legend>
@@ -99,11 +102,16 @@ Legend icon represents a symbol associated with the each legend item. `LegendIco
                      YBindingPath="SalesRate">
     </chart:PieSeries>
 </chart:SfCircularChart.Series>
+. . .
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+
+SfCircularChart chart = new SfCircularChart();
+. . .
 chart.Legend = new ChartLegend();
 
 PieSeries series = new PieSeries();
@@ -123,12 +131,12 @@ The appearance of the legend icon can be customized using the below properties.
 * [IconHeight]() - Gets or sets the double value that represents that legend icon(s) height.
 * [IconVisibility]() - Gets or sets the Visibility of the legend icon.
 
-The following code example illustrates the customization of legend.
-
 {% tabs %}
 
 {% highlight xaml %}
 
+<chart:SfCircularChart>
+. . .
 <chart:SfCircularChart.Legend>
     <chart:ChartLegend IconWidth="10" IconHeight="5" 
                        IconVisibility="Visible"
@@ -139,10 +147,14 @@ The following code example illustrates the customization of legend.
     </chart:ChartLegend>
 </chart:SfCircularChart.Legend>
 
+</chart:SfCircularChart>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCircularChart chart = new SfCircularChart();
+. . .
 chart.Legend = new ChartLegend()
 {
     IconWidth = 10,
@@ -202,7 +214,7 @@ chart.Series.Add(series);
 
 ![Customizing legend icons in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Custom_Icon.png)
 
-## Legend item spacing
+## Legend Item Spacing
 
 `ItemMargin` property of the `ChartLegend` is used to provide spacing between each legend items.
 
@@ -210,14 +222,20 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
+<chart:SfCircularChart>
+. . .
 <chart:SfCircularChart.Legend>
     <chart:ChartLegend ItemMargin="10"/>
 </chart:SfCircularChart.Legend>
+
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCircularChart chart = new SfCircularChart();
+. . .
 chart.Legend = new ChartLegend()
 {
     ItemMargin = new Thickness(10)
@@ -229,7 +247,7 @@ chart.Legend = new ChartLegend()
 
 ![Legend item spacing support in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_Icon_spacing.png)
 
-## Checkbox for legend
+## Checkbox for Legend
 
 Circular chart provides support to enable the checkbox for each legend item to visible or collapse the associated data points. By default, the value of [CheckBoxVisibility]() property is `Collapsed`.  
 
@@ -237,14 +255,20 @@ Circular chart provides support to enable the checkbox for each legend item to v
 
 {% highlight xaml %}
 
-<chart:SfCircularChart.Legend>
-    <chart:ChartLegend CheckBoxVisibility="Visible"/>
-</chart:SfCircularChart.Legend>
+<chart:SfCircularChart>
+. . .
+    <chart:SfCircularChart.Legend>
+        <chart:ChartLegend CheckBoxVisibility="Visible"/>
+    </chart:SfCircularChart.Legend>
+
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCircularChart chart = new SfCircularChart();
+. . .
 chart.Legend = new ChartLegend()
 {
    CheckBoxVisibility = Visibility.Visible
@@ -256,12 +280,11 @@ chart.Legend = new ChartLegend()
 
 ![Checkbox support for legend in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_CheckBox.png)
 
-
 The data point can be collapsed by unchecking the checkbox as below:
 
 ![Checkbox support for legend in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_LegendIcon_collapsed.png)
 
-## Toggle series visibility 
+## Toggle Series Visibility 
 
 The visibility of the segment can be control by tapping the legend item by enabling the [ToggleSeriesVisibility]() property. By default, the value of [ToggleSeriesVisibility]() property is `False`.
 
@@ -269,14 +292,20 @@ The visibility of the segment can be control by tapping the legend item by enabl
 
 {% highlight xaml %}
 
-<chart:SfCircularChart.Legend>
-    <chart:ChartLegend ToggleSeriesVisibility="True"/>
-</chart:SfCircularChart.Legend>
+<chart:SfCircularChart>
+. . .
+    <chart:SfCircularChart.Legend>
+        <chart:ChartLegend ToggleSeriesVisibility="True"/>
+    </chart:SfCircularChart.Legend>
+
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCircularChart chart = new SfCircularChart();
+. . .
 chart.Legend = new ChartLegend()
 {
    ToggleSeriesVisibility = true
@@ -288,7 +317,7 @@ chart.Legend = new ChartLegend()
 
 ![ToggleSeriesVisibility support for legend in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_ToggleSeriesVisibility.png)
 
-## Positioning the legend
+## Positioning the Legend
 
 The legends can be placed either inside or outside of the chart area (plotting area). By default, it will be displayed outside and positioned at top (using [DockPosition]()) of the chart area.
 
@@ -296,14 +325,19 @@ The legends can be placed either inside or outside of the chart area (plotting a
 
 {% highlight xaml %}
 
-<chart:SfCircularChart.Legend>
-    <chart:ChartLegend Position="Inside"/>
-</chart:SfCircularChart.Legend>
+<chart:SfCircularChart>
+. . .
+    <chart:SfCircularChart.Legend>
+        <chart:ChartLegend Position="Inside"/>
+    </chart:SfCircularChart.Legend>
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCircularChart chart = new SfCircularChart();
+. . .
 chart.Legend = new ChartLegend()
 {
     Position = LegendPosition.Inside
@@ -323,14 +357,20 @@ To display the legend at the left, set the [DockPosition]() as [Left]() as in be
 
 {% highlight xaml %}
 
+<chart:SfCircularChart>
+. . .
 <chart:SfCircularChart.Legend>
     <chart:ChartLegend ItemMargin="10" DockPosition="Left"/>
 </chart:SfCircularChart.Legend>
+
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCircularChart chart = new SfCircularChart();
+. . .
 chart.Legend = new ChartLegend()
 {
    DockPosition = ChartDock.Left
@@ -352,14 +392,19 @@ Offset specifies x or y distance from origin.
 
 {% highlight xaml %}
 
-<chart:SfCircularChart.Legend>
-    <chart:ChartLegend DockPosition="Floating" OffsetX="330" OffsetY="160"/>
-</chart:SfCircularChart.Legend>
+<chart:SfCircularChart>
+. . .
+    <chart:SfCircularChart.Legend>
+        <chart:ChartLegend DockPosition="Floating" OffsetX="330" OffsetY="160"/>
+    </chart:SfCircularChart.Legend>
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCircularChart chart = new SfCircularChart();
+. . .
 chart.Legend = new ChartLegend()
 {
     DockPosition = ChartDock.Floating,
@@ -373,7 +418,7 @@ chart.Legend = new ChartLegend()
 
 ![Positioning the legend at floating in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_floating.png)
 
-## Legend orientation
+## Legend Orientation
 
 Orientation of the legend items can aligned vertically or horizontally by setting [`Orientation`]() property of legend. By default, the value of [Orientation]() property is [Horizontal](). 
 
@@ -381,14 +426,20 @@ Orientation of the legend items can aligned vertically or horizontally by settin
 
 {% highlight xaml %}
 
-<chart:SfCircularChart.Legend>
-    <chart:ChartLegend Orientation="Vertical"/>
-</chart:SfCircularChart.Legend>
+<chart:SfCircularChart>
+. . .
+    <chart:SfCircularChart.Legend>
+        <chart:ChartLegend Orientation="Vertical"/>
+    </chart:SfCircularChart.Legend>
+
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCircularChart chart = new SfCircularChart();
+. . .
 chart.Legend = new ChartLegend()
 {
     Orientation = ChartOrientation.Vertical
@@ -400,7 +451,7 @@ chart.Legend = new ChartLegend()
 
 ![Legend orientation support in WinUI Chart](Legend_images/WinUI_Circular_chart_Legend_Orientation.png)
 
-## Legend background customization 
+## Legend Background Customization 
 
 The legend background appearance can be customized by using the below properties.
 
@@ -413,7 +464,8 @@ The legend background appearance can be customized by using the below properties
 {% tabs %}
 
 {% highlight xaml %}
-
+<chart:SfCircularChart>
+. . .
 <chart:SfCircularChart.Legend>
     <chart:ChartLegend Background="Gray" BorderBrush="Black" 
                        BorderThickness="1" CornerRadius="5" 
@@ -421,10 +473,14 @@ The legend background appearance can be customized by using the below properties
     </chart:ChartLegend>
 </chart:SfCircularChart.Legend>
 
+</chart:SfCircularChart>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCircularChart chart = new SfCircularChart();
+. . .
 chart.Legend = new ChartLegend()
 {
     Background = new SolidColorBrush(Colors.Gray),
@@ -440,15 +496,13 @@ chart.Legend = new ChartLegend()
 
 ![Legend background customization in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_background_customizing.png)
 
-## Legend template customization
+## Legend Template Customization
 
 Customize each legend item by using [ItemTemplate]() property in `ChartLegend` as in below code snippet:
 
 {% tabs %}
 
 {% highlight xaml %}
-
-<syncfusion:SfChart x:Name="chart">
 
 <chart:SfCircularChart>
     <chart:SfCircularChart.Resources>
@@ -473,6 +527,8 @@ Customize each legend item by using [ItemTemplate]() property in `ChartLegend` a
 
 {% highlight c# %}
 
+SfCircularChart chart = new SfCircularChart();
+. . .
 chart.Legend = new ChartLegend()
 {
 

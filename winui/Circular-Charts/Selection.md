@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Selection in WinUI Circular Chart control | Syncfusion
-description: This section explains about how to configure the selection support and its features applying in WinUI Circular Chart (SfCircularChart).
+title: Selection in WinUI Chart control | Syncfusion
+description: This section explains about how to configure the selection support and its features applying in WinUI Chart (SfCircularChart).
 platform: WinUI
 control: SfCircularChart
 documentation: ug
 ---
 
-# Selection in WinUI Circular Chart
+# Selection in WinUI Chart (SfCircularChart)
 
 Circular chart supports selection that allows to select a segment in a series or series itself by using [ChartSelectionBehavior](). 
 
-### Enable selection
+## Enable Selection
 
 To enable the selection in chart, create an instance of [ChartSelectionBehavior]() and add it to the `Behaviors` collection of circular chart. And also need to set the [SelectionBrush]() property to highlight the segment in the series.
 
@@ -51,8 +51,6 @@ chart.Series.Add(series);
 
 Series selection is used to highlight a particular series while using multiple series. Series selection is enable by setting [Type]() property value as [Series]() in [ChartSelectionBehavior](). The [SeriesSelectionBrush]() property is used to set the brush color to highlight the series.
 
-The following code example demonstrates highlighting a series.
-
 {% tabs %}
 
 {% highlight xml %}
@@ -71,6 +69,8 @@ The following code example demonstrates highlighting a series.
 
 {% highlight c# %}
 
+SfCircularChart chart = new SfCircularChart();
+
 ChartSelectionBehavior selection = new ChartSelectionBehavior();
 selection.Type = SelectionType.Series;
 selection.SeriesSelectionBrush = new SolidColorBrush(Colors.BlueViolet);
@@ -88,7 +88,7 @@ chart.Series.Add(series1);
 
 ![Series selection support in WinUI Circular Chart](Selection_Images/WinUI_Circular_chart_Series_selection.png)
 
-## Multi selection
+## Multi Selection
 
 Circular chart allows to select single or multiple segment\series using [Type]() property. By default the [Type]() value is [Point]().
 
@@ -98,14 +98,20 @@ The following code snippet demonstrates multiple segment selection.
 
 {% highlight xml %}
 
-<chart:SfCircularChart.Behaviors>
-    <chart:ChartSelectionBehavior Type="MultiPoint"/>
-</chart:SfCircularChart.Behaviors>
+<chart:SfCircularChart>
+. . .
+    <chart:SfCircularChart.Behaviors>
+        <chart:ChartSelectionBehavior Type="MultiPoint"/>
+    </chart:SfCircularChart.Behaviors>
+
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCircularChart chart = new SfCircularChart();
+. . .
 ChartSelectionBehavior selection = new ChartSelectionBehavior();
 selection.Type = SelectionType.MultiPoint;
 chart.Behaviors.Add(selection);
@@ -118,7 +124,7 @@ chart.Behaviors.Add(selection);
 
 ## Events
 
-The following events are available in `SfCircularChart`.
+The following events are available in chart (`SfCircularChart`).
 
 ### SelectionChanging
 
@@ -150,4 +156,3 @@ The [SelectionChanged]() event occurs after a data point has been selected. This
 * [IsSelected]() - Gets a value that indicates whether the segment or series is being selected.
 * [IsDataPointSelection]() - Gets a value that indicates whether the selection is segment selection or series selection.
 * [SelectedSeriesCollection]() - Gets the series collection that has been selected through rectangle selection or mouse interaction.
-
