@@ -49,8 +49,6 @@ this.Content = chart;
 
 The [SegmentSpacing]() property is used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively.
 
-The following code sample demonstrates how to set segment spacing for column series.
-
 {% tabs %}
 
 {% highlight xaml %}

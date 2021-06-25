@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Data labels in WinUI Pyramid Chart control | Syncfusion
-description: This section explains about how to add and customize the data labels in Syncfusion WinUI Pyramid Chart(SfPyramidChart) control.
+title: Data labels in WinUI Chart control | Syncfusion
+description: This section explains about how to add and customize the data labels in Syncfusion WinUI Chart (SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
 ---
 
-# Data label in WinUI Pyramid Chart (SfPyramidChart)
+# Data label in WinUI Chart (SfPyramidChart)
 
 To improve the readability of data in the pyramid chart, data points can be easily annotated with data labels.
 
-## Define data label 
+## Define Data Label 
 
 To define the data label in the chart, set the [ShowDataLabels]() property to true. The default value of [ShowDataLabels]() property is false.
 
@@ -45,13 +45,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Data label support in WinUI Pyramid chart](Data-label_images/WinUI_pyramid_chart_data_label.png)
+![Data label support in WinUI chart](Data-label_images/WinUI_chart_data_label.png)
 
-## Data label context
+## Context
 
 To customize the content of data labels, need to define [DataLabelSettings]() of chart and set [Context]() property of [PyramidDataLabelSettings]() to change the data label content value.
-
-The following code example demonstrates about how to set percentage value as data label content.
 
 {% tabs %}
 
@@ -88,15 +86,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-| Context values | Description | Output |
-|---|--|---|
-| DateTime | Displays the DateTime value | ![ DateTime in DataLabel](Data-label_images/WinUI_pyramid_chart_labelcontent_datetime.png) |
-|DataLabelItem | Displays the y value|![ LabelContentPath in DataLabel](Data-label_images/WinUI_pyramid_chart_labelcontent_datalabelitem.png)|
-| Percentage | Displays the percentage value of series point among other points |![ Percentage in DataLabel](Data-label_images/WinUI_pyramid_chart_labelcontent_percentage.png) |
-| XValue | Displays the X value of series point|![ XValue in DataLabel](Data-label_images/WinUI_pyramid_chart_labelcontent_xvalue.png) |
-| YValue | Displays the Y value of series point| ![ YValue in DataLabel](Data-label_images/WinUI_pyramid_chart_labelcontent_yvalue.png) |
+![Data labels context in WinUI chart](Data-label_images/WinUI_chart_labelcontent_percentage.png) 
 
-## Data label customization
+## Customization
 
 The following properties are used to customize the data label:
 
@@ -109,7 +101,6 @@ The following properties are used to customize the data label:
 * [`FontFamily`]()-  used to change the font family of the label.
 * [`Background`]()- used to change the label background color.
 
-The following code example demonstrates the customization of data label using the above properties:
 
 {% tabs %}
 
@@ -153,9 +144,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Data label customization support in WinUI Pyramid Chart](Data-label_images/WinUI_pyramid_chart_custom_label.png)
+![Data label customization support in WinUI Chart](Data-label_images/WinUI_chart_custom_label.png)
 
-## Data label template
+## Template
 
 The appearance of the data label can be customized by using the [ContentTemplate]() property of [`PyramidDataLabelSettings`]() as follows.
 
@@ -180,6 +171,8 @@ The appearance of the data label can be customized by using the [ContentTemplate
         </StackPanel>
     </DataTemplate>
 </Page.Resources>
+.....
+
 <Grid>
    <chart:SfPyramidChart x:Name="chart" 
                 ShowDataLabels="True"
@@ -213,9 +206,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Template support for data label in WinUI Pyramid Chart](Data-label_images/WinUI_pyramid_chart_data_labeltemplate.png)
+![Template support for data label in WinUI Chart](Data-label_images/WinUI_chart_data_labeltemplate.png)
 
-## Label format
+## Format
 
 The [Format]() property is used to format the data labels. The following code example demonstrates how to format data labels with three decimal digits.
 
@@ -255,9 +248,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Label format support for data label in WinUI Pyramid Chart](Data-label_images/WinUI_pyramid_chart_data_labelformat.png)
+![Label format support for data label in WinUI Chart](Data-label_images/WinUI_chart_data_labelformat.png)
 
-## Label rotation
+## Rotation
 
 The [`Rotation`]() property is used to rotate the data labels based on the value as angle.
 
@@ -299,5 +292,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Rotation support for data label in WinUI Pyramid Chart](Data-label_images/WinUI_pyramid_chart_data_label_rotation.png)
-
+![Rotation support for data label in WinUI Chart](Data-label_images/WinUI_chart_data_label_rotation.png)

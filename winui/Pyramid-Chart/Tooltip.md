@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tooltip in WinUI Chart control | Syncfusion
-description: This section explains about how to enable tooltip and its customization in Syncfusion WinUI Chart (SfPyramidChart) control.
+description: This section explains about how to enable tooltip and its customization in Syncfusion WinUI Chart(SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 Tooltip is used to display any information over segments. It appears at the data point position when the mouse hovers over any chart segment. It is set to display the metadata of the hovered segment or data point.
 
-## Define tooltip
+## Define Tooltip
 
 To define the tooltip in the chart, set the [ShowTooltip]() property to true. The default value of [ShowTooltip]() property is false.
 
@@ -47,6 +47,8 @@ this.Content = chart;
 
 ![Tooltip support in WinUI chart](Tooltip_images/WinUI_chart_tooltip.png)
 
+## Customization
+
 The [ChartTooltipBehavior]() is used to customize the tooltip. For customizing the tooltip, create an instance [ChartTooltipBehavior]() and add it to the `Behaviors` collection of [`SfPyramidChart`](). The following properties are used to customize the tooltip:
 
 * [Style]() - Used to customize the fill and stroke of the tooltip.
@@ -63,29 +65,33 @@ The [ChartTooltipBehavior]() is used to customize the tooltip. For customizing t
 
 {% highlight xml %}
 
-<chart:SfPyramidChart.Behaviors>
-    <chart:ChartTooltipBehavior/>
-</chart:SfPyramidChart.Behaviors>
+<chart:SfPyramidChart x:Name="chart">
+. . .        
+    <chart:SfPyramidChart.Behaviors>
+        <chart:ChartTooltipBehavior/>
+    </chart:SfPyramidChart.Behaviors>
+. . .
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-
+chart.ShowTooltip = true;
 ChartTooltipBehavior behavior = new ChartTooltipBehavior();
 
 chart.Behaviors.Add(behavior);
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Background style
+## Background Style
 
 The tooltip's fill and stroke color can be customized by using the [Style]() property. To define a [Style]() for tooltip, specify the style of `TargetType` as `Path`.
-
-The following code example explains how to apply the style for tooltip background.
 
 {% tabs %}
 
@@ -120,6 +126,8 @@ style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.Style = style;
 chart.Behaviors.Add(tooltipBehavior);
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -127,11 +135,9 @@ chart.Behaviors.Add(tooltipBehavior);
 
 ![Tooltip background style in WinUI chart](Tooltip_images/WinUI_chart_tooltip_background_style.png)
 
-## Label style
+## Label Style
 
 The tooltip label style can be customized by using the [LabelStyle]() property. To define a [Style]() for the tooltip label, specify the style of `TargetType` as `TextBlock`.
-
-The following code example explains how to apply the style for a tooltip label.
 
 {% tabs %}
 
@@ -158,6 +164,7 @@ The following code example explains how to apply the style for a tooltip label.
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+chart.ShowTooltip = true;
 Style labelStyle = new Style(typeof(TextBlock));
 labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
 labelStyle.Setters.Add(new Setter(TextBlock.FontStyleProperty, FontStyles.Italic));
@@ -166,12 +173,14 @@ labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBr
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.LabelStyle = labelStyle;
 chart.Behaviors.Add(tooltipBehavior);
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Tooltip label style in WinUI chart](Tooltip_images/WinUI_chart_tooltip_label_style.png)
+![Tooltip label style customization in WinUI chart](Tooltip_images/WinUI_chart_tooltip_label_style.png)
 
 ## Template
 
@@ -229,4 +238,3 @@ this.Content = chart;
 {% endtabs %}
 
 ![Tooltip template in WinUI Chart](Tooltip_images/WinUI_chart_tooltip_template.png)
-
