@@ -87,7 +87,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Legend title in WinUI Chart](Legend_images/winui-chart_legend_header.png)
+![Legend title in WinUI Chart](Legend_images/winui-chart_Legend_header.png)
 
 ## Icon
 
@@ -129,7 +129,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Legend icon in WinUI Chart](Legend_images/winui-chart_legend_customize.png)
+![Legend icon in WinUI Chart](Legend_images/winui-chart_Legend_customize.png)
 
 ## Item spacing
 
@@ -197,7 +197,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Checkbox support for legend in WinUI Chart](Legend_images/winui-chart_legend_checkbox.png)
+![Checkbox support for legend in WinUI Chart](Legend_images/winui-chart_Legend_checkbox.png)
 
 ## Toggle Series Visibility 
 
@@ -231,7 +231,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/winui-chart_legend_toggle-Series-visibility.png)
+![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/winui-chart_legend_toggle-series-visibility.png)
 
 ## Position
 
@@ -302,7 +302,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Positioning the legend at right in WinUI Chart](Legend_images/winui-chart_legend_dock_right.png)
+![Positioning the legend at right in WinUI Chart](Legend_images/winui-chart_Legend_dock_right.png)
 
 ## Floating Legends
 
