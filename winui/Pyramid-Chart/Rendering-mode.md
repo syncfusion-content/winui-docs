@@ -44,7 +44,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Rendering mode with area in WinUI chart](Rendering-mode_images/WinUI_pyramid_chart_surface.png)
+![Rendering mode with area in WinUI chart](Rendering-mode_images/WinUI_chart_surface.png)
 
 ## Pyramid mode as linear
 
@@ -79,5 +79,5 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Rendering mode with height in WinUI chart](Rendering-mode_images/WinUI_pyramid_chart_linear.png)
+![Rendering mode with height in WinUI chart](Rendering-mode_images/WinUI_chart_linear.png)
 

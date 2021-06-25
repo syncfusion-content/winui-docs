@@ -51,7 +51,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Segment selection support in WinUI Chart](Selection_images/WinUI_pyramid_chart_segment_selection.png)
+![Segment selection support in WinUI Chart](Selection_images/WinUI_chart_segment_selection.png)
 
 ## Multi selection
 
@@ -95,7 +95,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Multi selection support in WinUI Chart](Selection_images/WinUI_pyramid_chart_multi_selection.png)
+![Multi selection support in WinUI Chart](Selection_images/WinUI_chart_multi_selection.png)
 
 ## Changing cursor while selection
 
@@ -137,7 +137,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Changing cursor while selection support in WinUI Chart](Selection_images/WinUI_pyramid_chart_cursor.png)
+![Changing cursor while selection support in WinUI Chart](Selection_images/WinUI_chart_cursor.png)
 
 ## Events
 
