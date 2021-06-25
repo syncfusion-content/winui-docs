@@ -243,7 +243,7 @@ chart.Series.Add(series);
 
 Connector line is used to connect label and data point using a line. [ShowConnectorLine]() property of [CircularDataLabelSettings]() is used to enable the connector line in the circular chart. 
 
-The connector line can be customized using the below properies.
+The connector line can be customized using the below properties.
 
 * [ConnectorHeight]() - used to set height for connector line.
 * [ConnectorLineStyle]() - used to customize the style of line.
