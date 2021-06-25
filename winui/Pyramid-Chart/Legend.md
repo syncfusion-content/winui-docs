@@ -40,7 +40,7 @@ this.Content = chart;
 
 N> The x-value of data points in the pyramid chart will be the legend items ‘Label’.
 
-![Legend support in WinUI Chart](Legend_images/WinUI_chart_legend.png)
+![Legend support in WinUI Chart](Legend_Images/WinUI_chart_legend.png)
 
 ## Title
 
@@ -89,7 +89,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Legend title in WinUI Chart](Legend_images/WinUI_chart_legend_header.png)
+![Legend title in WinUI Chart](Legend_Images/WinUI_chart_legend_header.png)
 
 ## Icon
 
@@ -131,7 +131,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Legend icon in WinUI Chart](Legend_images/WinUI_chart_legend_customize.png)
+![Legend icon in WinUI Chart](Legend_Images/WinUI_chart_legend_customize.png)
 
 ## Item spacing
 
@@ -165,7 +165,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Legend item spacing support in WinUI Chart](Legend_images/WinUI_chart_legend_item_spacing.png)
+![Legend item spacing support in WinUI Chart](Legend_Images/WinUI_chart_legend_item_spacing.png)
 
 ## Checkbox for Legend
 
@@ -199,7 +199,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Checkbox support for legend in WinUI Chart](Legend_images/WinUI_chart_legend_checkBox.png)
+![Checkbox support for legend in WinUI Chart](Legend_Images/WinUI_chart_legend_checkBox.png)
 
 ## Toggle Series Visibility 
 
@@ -233,7 +233,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/WinUI_chart_legend_toggleSeriesVisibility.png)
+![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_Images/WinUI_chart_legend_toggleSeriesVisibility.png)
 
 ## Position
 
@@ -300,7 +300,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Positioning the legend at right in WinUI Chart](Legend_images/WinUI_chart_legend_dockPosition.png)
+![Positioning the legend at right in WinUI Chart](Legend_Images/WinUI_chart_legend_dockPosition.png)
 
 ### Floating Legends
 
@@ -338,7 +338,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Floating legend support in WinUI Chart](Legend_images/WinUI_chart_legend_floating.png)
+![Floating legend support in WinUI Chart](Legend_Images/WinUI_chart_legend_floating.png)
 
 ## Orientation
 
@@ -372,7 +372,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Legend orientation support in WinUI Chart](Legend_images/WinUI_chart_legend_orientation.png)
+![Legend orientation support in WinUI Chart](Legend_Images/WinUI_chart_legend_orientation.png)
 
 ## Background customization 
 
@@ -462,6 +462,6 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Legend ItemTemplate support in WinUI Chart](Legend_images/WinUI_chart_legend_itemTemplate.png)
+![Legend ItemTemplate support in WinUI Chart](Legend_Images/WinUI_chart_legend_itemTemplate.png)
 
 

@@ -210,6 +210,43 @@ chart.Behaviors.Add(Trackball);
 
 The axis label will be viewed when the [`ShowTrackballInfo`]() property is set to true. The default value of [`ShowTrackballInfo`]() is `false`.
 
+{% tabs %}
+
+{% highlight xml %}
+
+<chart:SfCartesianChart>
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis ShowTrackballInfo="True"/>
+    </chart:SfCartesianChart.PrimaryAxis>
+    . . .
+    <chart:SfCartesianChart.Behaviors>
+        <chart:ChartTrackballBehavior/>
+    </chart:SfCartesianChart.Behaviors>
+    . . .
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+. . .
+chart.PrimaryAxis = new CategoryAxis()
+{
+    ShowTrackballInfo = true
+};
+...
+ChartTrackballBehavior behavior = new ChartTrackballBehavior();
+chart.Behaviors.Add(behavior);
+. . .
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Trackball axis label in WinUI chart](Trackball_images/WinUI_chart_trackball_axis_label.png)
+
 ### Axis label alignment 
 
 The alignment of the axis label can be defined using the [`AxisLabelAlignment`]() property. By default, the axis label will positioned in center.

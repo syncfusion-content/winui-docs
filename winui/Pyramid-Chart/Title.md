@@ -127,4 +127,4 @@ public sealed partial class MainPage : Page
 
 {% endtabs %} 
 
-![Title text alignment support in WinUI chart](Title_images/WinUI_chart_title_alignment.png)
+![Title text alignment support in WinUI chart](Title_Images/WinUI_chart_title_alignment.png)
