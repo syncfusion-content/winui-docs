@@ -1,19 +1,17 @@
 ---
 layout: post
-title: Line Chart in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about the line chart and its type in Syncfusion WinUI Cartesian Chart (SfCartesianChart) control. 
+title: Line Chart in WinUI Chart control | Syncfusion
+description: Learn here all about the line chart and its type in Syncfusion WinUI Chart (SfCartesianChart) control. 
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Line Chart in WinUI Cartesian Chart (SfCartesianChart)
+# Line Chart in WinUI Chart (SfCartesianChart)
 
 ## Line Chart
 
 Line chart is used to represent the data trends at equal intervals by connecting points on a plot with straight lines. To render a line chart, create an instance of [LineSeries](), and add it to the [Series]() collection property of [SfCartesianChart]().
-
-The following code sample explains how to create a simple [LineSeries]().
 
 {% tabs %}
 
@@ -119,8 +117,6 @@ this.Content = chart;
 
 The [SplineSeries]() resembles line series, but instead of connecting the data points with line segments, the data points are connected by smooth bezier curves.
 
-The following code sample explains how to create a simple [SplineSeries]().
-
 {% tabs %}
 
 {% highlight xaml %}
@@ -163,11 +159,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Spline chart type in WinUI Cartesian Chart](Chart-types_images/WinUI_spline_chart.png)
+![Spline chart type in WinUI Chart](Chart-types_images/WinUI_spline_chart.png)
 
 ## Step line Chart 
 
-The [StepLineSeries]() plots horizontal and vertical lines to connect the data points resulting in a step-like progression. The following code illustrates how to initialize the [StepLineSeries]() in the chart.
+The [StepLineSeries]() plots horizontal and vertical lines to connect the data points resulting in a step-like progression.
 
 {% tabs %}
 
