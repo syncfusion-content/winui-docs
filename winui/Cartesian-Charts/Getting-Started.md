@@ -460,7 +460,6 @@ namespace SfChart_GettingStarted
 
 {% endtabs %}
 
-![Getting started for WinUI Cartesian Chart](Getting-Started_Images/WinUI_cartesian_chart.png)
-
 The following chart is created as a result of the previous codes.
 
+![Getting started for WinUI Cartesian Chart](Getting-Started_Images/WinUI_cartesian_chart.png)
