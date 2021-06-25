@@ -32,9 +32,9 @@ chart.Legend = new ChartLegend();
 
 N> The x-value of data points in the circular chart will be the legend items ‘Label’.
 
-![Legend support in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend.png)
+![Legend support in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend.png)
 
-## Legend Title
+## Title
 
 Circular chart provides support to add any `UIElement` as a title for legend. [Header]() property of `ChartLegend` is used to define the title for legend as the following code example.
 
@@ -78,9 +78,9 @@ chart.Legend = legend;
 
 {% endtabs %}
 
-![Legend header in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_Header.png)
+![Legend header in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_Header.png)
 
-## Legend Icon
+## Icon
 
 Legend icon represents a symbol associated with the each legend item. `LegendIcon` property of series is used to set the icon type for legend item. By default, the legend icon is [`SeriesType`]().
 
@@ -123,7 +123,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Legend icon in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_LegendIcon.png)
+![Legend icon in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_LegendIcon.png)
 
 The appearance of the legend icon can be customized using the below properties.
 
@@ -170,7 +170,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend customization in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_Customize.png)
+![Legend customization in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_Customize.png)
 
 **Custom legend icon**
 
@@ -212,9 +212,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Customizing legend icons in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Custom_Icon.png)
+![Customizing legend icons in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Custom_Icon.png)
 
-## Legend Item Spacing
+## Item spacing
 
 `ItemMargin` property of the `ChartLegend` is used to provide spacing between each legend items.
 
@@ -245,7 +245,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend item spacing support in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_Icon_spacing.png)
+![Legend item spacing support in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_Icon_spacing.png)
 
 ## Checkbox for Legend
 
@@ -278,11 +278,11 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Checkbox support for legend in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_CheckBox.png)
+![Checkbox support for legend in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_CheckBox.png)
 
 The data point can be collapsed by unchecking the checkbox as below:
 
-![Checkbox support for legend in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_LegendIcon_collapsed.png)
+![Checkbox support for legend in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_LegendIcon_collapsed.png)
 
 ## Toggle Series Visibility 
 
@@ -315,9 +315,9 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![ToggleSeriesVisibility support for legend in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_ToggleSeriesVisibility.png)
+![ToggleSeriesVisibility support for legend in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_ToggleSeriesVisibility.png)
 
-## Positioning the Legend
+## Position
 
 The legends can be placed either inside or outside of the chart area (plotting area). By default, it will be displayed outside and positioned at top (using [DockPosition]()) of the chart area.
 
@@ -380,7 +380,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Positioning the legend at left in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_Dock_Left.png)
+![Positioning the legend at left in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_Dock_Left.png)
 
 **Floating legends**
 
@@ -416,9 +416,9 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Positioning the legend at floating in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_floating.png)
+![Positioning the legend at floating in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_floating.png)
 
-## Legend Orientation
+## Orientation
 
 Orientation of the legend items can aligned vertically or horizontally by setting [`Orientation`]() property of legend. By default, the value of [Orientation]() property is [Horizontal](). 
 
@@ -449,9 +449,9 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend orientation support in WinUI Chart](Legend_images/WinUI_Circular_chart_Legend_Orientation.png)
+![Legend orientation support in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_Orientation.png)
 
-## Legend Background Customization 
+## Background Customization 
 
 The legend background appearance can be customized by using the below properties.
 
@@ -494,9 +494,9 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend background customization in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_background_customizing.png)
+![Legend background customization in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_background_customizing.png)
 
-## Legend Template Customization
+## Template
 
 Customize each legend item by using [ItemTemplate]() property in `ChartLegend` as in below code snippet:
 
@@ -539,5 +539,5 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Item template support for legend in WinUI Circular Chart](Legend_images/WinUI_Circular_chart_Legend_Item_customizing.png)
+![Item template support for legend in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_Item_customizing.png)
 

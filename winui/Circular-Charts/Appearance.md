@@ -54,7 +54,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Predefined palette in WinUI Circular Chart](Appearance_images/WinUI_Circular_chart_Predefined_palette.png)
+![Predefined palette in WinUI Chart](Appearance_images/WinUI_Circular_chart_Predefined_palette.png)
 
 The following code example defined [`Palette`]() as [`GreenChrome`]().
 
@@ -86,7 +86,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Palette support in WinUI Circular Chart](Appearance_images/WinUI_Circular_chart_GreenChrome_palette.png)
+![Palette support in WinUI Chart](Appearance_images/WinUI_Circular_chart_GreenChrome_palette.png)
 
 ## Custom Palette
 
@@ -139,7 +139,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Custom palette in WinUI Circular Chart](Appearance_images/WinUI_Circular_chart_Custom_palette.png)
+![Custom palette in WinUI Chart](Appearance_images/WinUI_Circular_chart_Custom_palette.png)
 
 ## Applying Gradient Brushes
 
@@ -204,7 +204,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Gradient support in WinUI Circular Chart](Appearance_images/WinUI_Circular_Chart_Gradient_color.png)
+![Gradient support in WinUI Chart](Appearance_images/WinUI_Circular_Chart_Gradient_color.png)
 
 ## Segment Color Binding
 
@@ -256,5 +256,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Segment color binding support in WinUI Circular Chart](Appearance_images/WinUI_Circular_chart_ColorValuePath.png)
-
+![Segment color binding support in WinUI Chart](Appearance_images/WinUI_Circular_chart_ColorValuePath.png)
