@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scatter Chart in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about the scatter chart and its features in Syncfusion WinUI Cartesian Chart (SfCartesianChart) control.
+title: Scatter Chart in WinUI Chart control | Syncfusion
+description: Learn here all about the scatter chart and its features in Syncfusion WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Scatter Chart in WinUI Cartesian Charts (SfCartesianChart)
+# Scatter Chart in WinUI Charts (SfCartesianChart)
 
 The scatter chart is similar to bubble chart, where each data point being represented by a circle with equal size.
 
@@ -49,5 +49,5 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Scatter chart type in WinUI Cartesian Chart](Chart-Types_images/WinUI_scatter_chart.png)
+![Scatter chart type in WinUI Chart](Chart-Types_images/WinUI_scatter_chart.png)
 

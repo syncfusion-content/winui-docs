@@ -28,7 +28,7 @@ Circular series provides options for applying various kinds of palettes. Some pr
 * LightCandy
 * SandyBeach
 
-### Applying palette
+### Applying Palette
 
 Each palette applies a set of predefined brushes to the series in a predefined order. [Metro]() palette is the default palette.
 
@@ -141,7 +141,7 @@ chart.Series.Add(series);
 
 ![Custom palette in WinUI Chart](Appearance_images/WinUI_Circular_chart_Custom_palette.png)
 
-## Applying Gradient Brushes
+## Applying Gradient
 
 Gradient for the circular chart can be set by using the [ColorModel]() property of the series with the help of `LinearGradientBrush` or `RadialGradientBrush`.
 

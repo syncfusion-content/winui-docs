@@ -299,7 +299,7 @@ this.Content = chart;
 
 ![Interior support in WinUI Chart](Appearance_images/WinUI_cartesian_chart_interior_gradient_color.png)
 
-## Segment color binding
+## Segment Color Binding
 
 The color of the each segment can be set by binding their corresponding model property from the `ItemsSource` collection to its [`ColorValuePath`]() property of series as follows.
 
