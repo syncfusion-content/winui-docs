@@ -425,6 +425,6 @@ public sealed partial class MainWindow : Window
 
 The following chart is created as a result of the previous codes.
 
-![Getting Started WinUI Chart](Getting-Started_images/WinUI_Chart.png)
+![Getting Started WinUI Chart](Getting-Started_Images/WinUI_Chart.png)
 
 N> Download demo application from [GitHub]()
