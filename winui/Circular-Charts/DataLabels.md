@@ -48,7 +48,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Data labels in WinUI chart](DataLabel_Images/WinUI_Circular_chart_data_label_overview.png) 
+![Data labels in WinUI chart](DataLabel_Images/WinUI_pie_chart_data_label_overview.png) 
 
 ## Context
 
@@ -83,7 +83,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Data labels context in WinUI chart](DataLabel_Images/WinUI_Circular_chart_data_label_Context.png) 
+![Data labels context in WinUI chart](DataLabel_Images/WinUI_pie_chart_data_label_context.png) 
 
 ## Customization
 
@@ -144,7 +144,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Data label customization in WinUI Chart](DataLabel_Images/WinUI_Circular_chart_datalabel_custom_Label.png)
+![Data label customization in WinUI Chart](DataLabel_Images/WinUI_pie_chart_data_label_customization.png)
 
 ## Template
 
@@ -197,7 +197,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Template support for data label in WinUI Chart](DataLabel_Images/WinUI_Circular_chart_dataLabel_Contenttemplate.png)
+![Template support for data label in WinUI Chart](DataLabel_Images/WinUI_pie_chart_data_label_template.png)
 
 ## Rotation
 
@@ -237,7 +237,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Rotation support for data label in WinUI Chart](Datalabel_Images/WinUI_Circular_chart_dataLabel_Label_Rotation.png)
+![Rotation support for data label in WinUI Chart](DataLabel_Images/WinUI_pie_chart_data_label_rotation.png)
 
 ## Connector Line
 
@@ -290,7 +290,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Connector line support for datalabels in WinUI chart](DataLabel_Images/WinUI_Circular_chart_data_label_Connector_line.png)
+![Connector line support for data labels in WinUI chart](DataLabel_Images/WinUI_pie_chart_data_label_connector_line.png)
 
 ### Connector Line Type
 
@@ -334,15 +334,15 @@ chart.Series.Add(series);
 
  **Bezier**
  
-![Connector line with Bezier type in WinUI Chart](DataLabel_Images/WinUI_Circular_chart_dataLabel_Bezier_line.png)
+![Connector line with Bezier type in WinUI Chart](DataLabel_Images/WinUI_piec_chart_data_label_bezier_line.png)
 
  **Line** 
  
- ![Connector line with Line type in WinUI Chart](DataLabel_Images/WinUI_Circular_chart_dataLabel_line.png) 
+ ![Connector line with Line type in WinUI Chart](DataLabel_Images/WinUI_pie_chart_data_label_line.png) 
 
 **Straight Line**
 
-![Connector line with StraightLine type in WinUI Chart](DataLabel_Images/WinUI_Circular_chart_dataLabel_Straight_line.png)
+![Connector line with StraightLine type in WinUI Chart](DataLabel_Images/WinUI_pie_chart_data_label_straight_line.png)
 
 ## Applying Series Interior
 
@@ -381,4 +381,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Applying UseSeriesPalette in WinUI Chart](DataLabel_Images/WinUI_Circular_chart_dataLabel_UseSeriesPalette.png)
+![Applying UseSeriesPalette in WinUI Chart](DataLabel_Images/WinUI_pie_chart_data_label_background.png)
