@@ -1,19 +1,17 @@
 ---
 layout: post
-title: Stacked charts in WinUI Cartesian Chart control | Syncfusion
+title: Stacked charts in WinUI Chart control | Syncfusion
 description: Learn here all about stacked chart types column, line, and area in Syncfusion WinUI Chart(SfChart) control.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Stacked Charts in WinUI Cartesian Chart (SfCartesianChart)
+# Stacked Charts in WinUI Chart (SfCartesianChart)
 
 ## Stacked column Chart
 
 The [`StackedColumnSeries`]() resembles multiple of column series and each series is vertically stacked one above the other. When there is only one series, then it is `ColumnSeries`. 
-
-The following code example demonstrates how to define the `StackedColumnSeries`.
 
 {% tabs %}
 
@@ -37,7 +35,6 @@ The following code example demonstrates how to define the `StackedColumnSeries`.
 
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
-
 ...
 
 StackedColumnSeries series1 = new StackedColumnSeries()
@@ -70,13 +67,11 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedColumn chart type in WinUI Cartesian Chart](Stacking_Series_Images/stackedcolumn_chart.png)
+![StackedColumn chart type in WinUI Chart](Stacking_Series_Images/stackedcolumn_chart.png)
 
 ## Stacked line Chart
 
 The [`StackedLineSeries`]() resembles multiple of line series and each series is vertically stacked one above the other. When there is only one series, then it is [`LineSeries`](). 
-
-The following code example demonstrates how to define the `StackedLineSeries`.
 
 {% tabs %}
 
@@ -141,7 +136,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedLine chart type in WinUI Cartesian Chart](Stacking_Series_Images/stackedline_chart.png)
+![StackedLine chart type in WinUI Chart](Stacking_Series_Images/stackedline_chart.png)
 
 ## Stacked area Chart
 
@@ -170,7 +165,6 @@ The [`StackedAreaSeries`]() is representing the multiple of area series are stac
 
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
-
 ...
 
 StackedAreaSeries series1 = new StackedAreaSeries()
@@ -203,5 +197,5 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedArea chart type in WinUI Cartesian Chart](Stacking_Series_Images/stackedarea_chart.png)
+![StackedArea chart type in WinUI Chart](Stacking_Series_Images/stackedarea_chart.png)
 
