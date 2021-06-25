@@ -165,7 +165,7 @@ this.Content = chart;
 
 ![Legend item spacing support in WinUI Chart](Legend_images/WinUI_chart_Legend_item_spacing.png)
 
-## Checkbox
+## Checkbox for Legend
 
 Funnel chart provides support to enable the checkbox for each legend item to visible or collapse the associated data points. By default, the value of [CheckBoxVisibility]() property is `Collapsed`. 
 
@@ -199,7 +199,7 @@ this.Content = chart;
 
 ![Checkbox support for legend in WinUI Chart](Legend_images/WinUI_chart_Legend_CheckBox.png)
 
-## Toggle series visibility 
+## Toggle Series Visibility 
 
 By enabling the [ToggleSeriesVisibility]() property, the visibility of the segment can be controlled by tapping the legend item. By default, the value of [ToggleSeriesVisibility]() property is `False`.
 
@@ -267,7 +267,7 @@ this.Content = chart;
 
 ![Position support for legend in WinUI Chart](Legend_images/WinUI_chart_Legend_Position.png)
 
-### Docking the legend position
+### Docking the Legend Position
 
 By using the [DockPosition]() property, legends can be docked to the left, right, and top or bottom of the chart area. By default, the chart legend is docked at the top of the chart as mentioned earlier.
 
@@ -304,7 +304,7 @@ this.Content = chart;
 
 ![Positioning the legend at right in WinUI Chart](Legend_images/WinUI_chart_Legend_Dock_Right.png)
 
-## Floating
+## Floating Legends
 
 To position the legend at any arbitrary location within the chart, you need to set [DockPosition]() as `Floating` and provide its relative position by using the [OffsetX]() and [OffsetY]() properties.
 
@@ -341,7 +341,7 @@ this.Content = chart;
 
 ![Floating legend support in WinUI Chart](Legend_images/WinUI_chart_Legend_floating.png)
 
-## Legend
+## Orientation
 
 Orientation of the legend items can be aligned vertically or horizontally by setting the [Orientation]() property of legend. By default, the value of [Orientation]() property is [Horizontal]().
 
@@ -420,7 +420,7 @@ this.Content = chart;
 
 ![Legend background customization in WinUI Chart](Legend_images/WinUI_chart_Legend_background_customizing.png)
 
-## Template customization
+## Template
 
 Customize each legend item by using the [ItemTemplate]() property in `ChartLegend`, as shown in the following code sample.
 
@@ -465,4 +465,3 @@ this.Content = chart;
 {% endtabs %}
 
 ![Legend ItemTemplate support in WinUI Chart](Legend_images/WinUI_chart_Legend_Item_customizing.png)
-
