@@ -7,7 +7,7 @@ control: SfCartesianChart
 documentation: ug
 ---
 
-# Getting Started with WinUI Chart
+# Getting Started with WinUI Chart (SfCartesianChart)
 
 This section explains how to populate the Cartesian chart with data, a header, data labels, a legend and tooltips, as well as the essential aspects for getting started with the chart.
 
@@ -56,7 +56,7 @@ namespace SfChart_GettingStarted
 
 {% endtabs %}
 
-## Initialize view model
+## Initialize View Model
 
 Now, let us define a simple data model that represents a data point in chart.
 
@@ -83,19 +83,17 @@ Next, create a view model class and initialize a list of `Person` objects as fol
 
 public class ViewModel  
 {
-      public List<Person> Data { get; set; }      
+    var date = new DateTime(2021, 06, 01);
 
-      public ViewModel()       
-      {
-            Data = new List<Person>()
-            {
-                new Person { Name = "David", Height = 180 },
-                new Person { Name = "Michael", Height = 170 },
-                new Person { Name = "Steve", Height = 160 },
-                new Person { Name = "Joel", Height = 182 }
-            }; 
-       }
- }
+    Data = new List<Person>()
+    {
+        new Person { Name = "David", Height = 170 },
+        new Person { Name = "Michael", Height = 96 },
+        new Person { Name = "Steve", Height = 65 },
+        new Person { Name = "Joel", Height = 182 },
+        new Person { Name = "Bob", Height = 134 }
+    };
+}
 
 {% endhighlight %} 
 
@@ -135,7 +133,7 @@ this.DataContext = new ViewModel();
 
 {% endtabs %} 
 
-## Initialize chart axis
+## Initialize Chart Axis
 
 [ChartAxis]() is used to locate the data points inside the chart area. The [PrimaryAxis]() and [SecondaryAxis]() properties of the chart is used to initialize the axis for the chart.
 
@@ -173,7 +171,7 @@ Run the project and check if you get following output to make sure you have conf
 
 ![Initializing axis for WinUI Cartesian Chart](Getting-Started_Images/WinUI_cartesian_chart_initializied.png)
 
-## Populate chart with data
+## Populate Chart with Data
 
 As we are going to visualize the comparison of heights in the data model, add [ColumnSeries]() to [Series]() property of chart, and then bind the `Data` property of the above `ViewModel` to the `ColumnSeries.ItemsSource` as follows.
 
@@ -226,7 +224,7 @@ chart.Series.Add(series);
 
 {% endtabs %} 
 
-## Add title
+## Add Title
 
 The title of the chart provide quick information to the user about the data being plotted in the chart. The [Header]() property is used to set title for the chart as follows.
 
@@ -235,7 +233,7 @@ The title of the chart provide quick information to the user about the data bein
 {% highlight xaml %}
 
 <Grid>
-   <chart:SfCartesianChart Header="Chart"> 
+   <chart:SfCartesianChart Header="Height Comparison"> 
    </chart:SfCartesianChart>
 </Grid>
 
@@ -244,13 +242,13 @@ The title of the chart provide quick information to the user about the data bein
 {% highlight C# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-chart.Header = "Chart";
+chart.Header = "Height Comparison";
 
 {% endhighlight %}
 
 {% endtabs %}  
 
-## Enable data Labels
+## Enable Data Labels
 
 The [ShowDataLabels]() property of series can be used to enable the data labels to improve the readability of the chart. The label visibility is set to `False` by default.
 
@@ -279,7 +277,7 @@ chart.Series.Add(series);
 
 {% endtabs %}  
 
-## Enable legend
+## Enable Legend
 
 The legend provides information about the data point displayed in the chart. The [Legend]() property of the chart was used to enable it.
 
@@ -335,7 +333,7 @@ series.Label = "Heights";
 
 {% endtabs %}  
 
-## Enable tooltip
+## Enable Tooltip
 
 Tooltips are used to show information about the segment, when hovers on the segment. Enable tooltip by setting series [ShowTooltip]() property to true.
 
@@ -368,6 +366,7 @@ The following code example gives you the complete code of above configurations.
 {% tabs %} 
 
 {% highlight xaml %}
+
 <Window
     x:Class="SfChart_GettingStarted.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -377,35 +376,34 @@ The following code example gives you the complete code of above configurations.
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" Height="350" Width="525"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Window.DataContext>
-        <local:ViewModel></local:ViewModel>
-    </Window.DataContext>
 
-    <Grid>
-        <chart:SfCartesianChart Header="Chart">
+    <chart:SfCartesianChart Header="Height Comparison">
+        <chart:SfCartesianChart.Legend>
+            <chart:ChartLegend/>
+        </chart:SfCartesianChart.Legend>
+        <chart:SfCartesianChart.DataContext>
+            <Model:ChartViewModel/>
+        </chart:SfCartesianChart.DataContext>
+        
+        <!--Initialize the horizontal axis for SfChart-->
+        <chart:SfCartesianChart.PrimaryAxis>
+            <chart:CategoryAxis Header="Names"/>
+        </chart:SfCartesianChart.PrimaryAxis>
+        <chart:SfCartesianChart.SecondaryAxis>
+            <chart:NumericalAxis Header="Height(in cm)"/>
+        </chart:SfCartesianChart.SecondaryAxis>
 
-            <!--Adding Legend to the SfChart-->
-            <chart:SfCartesianChart.Legend>
-                <chart:ChartLegend DockPosition="Bottom"/>
-            </chart:SfCartesianChart.Legend>
-
-            <!--Initialize the horizontal axis for SfChart-->
-            <chart:SfCartesianChart.PrimaryAxis>
-                <chart:CategoryAxis Header="Name"/>
-            </chart:SfCartesianChart.PrimaryAxis>
-            <chart:SfCartesianChart.SecondaryAxis>
-                <chart:NumericalAxis Header="Height(in cm)"/>
-            </chart:SfCartesianChart.SecondaryAxis>
-            
-            <!--Initialize the series for SfChart-->
-            <chart:ColumnSeries Label="Heights" ShowTooltip="True"
+        <!--Initialize the series for SfChart-->
+        <chart:ColumnSeries Label="Heights" ShowTooltip="True"
                                 ShowDataLabels="True"
                                 ItemsSource="{Binding Data}"
                                 XBindingPath="Name" 
                                 YBindingPath="Height">
-            </chart:ColumnSeries>
-        </chart:SfCartesianChart>
-    </Grid>
+            <chart:ColumnSeries.DataLabelSettings>
+                <chart:CartesianDataLabelSettings Position="Inner"/>
+            </chart:ColumnSeries.DataLabelSettings>
+        </chart:ColumnSeries>
+    </chart:SfCartesianChart>
 </Window>
  
 {% endhighlight %}
@@ -422,7 +420,7 @@ namespace SfChart_GettingStarted
         {
             InitializeComponent();
             
-            SfCartesianChart chart = new SfCartesianChart() { Header = "Chart", Height = 300, Width = 500 };
+            SfCartesianChart chart = new SfCartesianChart() { Header = "Height Comparison", Height = 300, Width = 500 };
 
             //Adding horizontal axis to the Cartesian chart 
             CategoryAxis primaryAxis = new CategoryAxis();
@@ -448,6 +446,10 @@ namespace SfChart_GettingStarted
             series.ShowTooltip = true;
             series.Label = "Heights"; 
             series.ShowDataLabels = true;
+            series.DataLabelSettings = new CartesianDataLabelSettings()
+            {
+                Position = DataLabelPosition.Inner,
+            };
 
             //Adding Series to the Cartesian chart Series Collection
             chart.Series.Add(series);
@@ -460,7 +462,6 @@ namespace SfChart_GettingStarted
 
 {% endtabs %}
 
-![Getting started for WinUI Cartesian Chart](Getting-Started_Images/WinUI_cartesian_chart.png)
-
 The following chart is created as a result of the previous codes.
 
+![Getting started for WinUI Cartesian Chart](Getting-Started_Images/WinUI_cartesian_chart.png)

@@ -1,24 +1,22 @@
 ---
 layout: post
-title: Header for axis in WinUI Cartesian Chart control | Syncfusion
-description: This section explains about chart axis header, header style, header template and its customization in WinUI Cartesian chart.
+title: Header for axis in WinUI Chart control | Syncfusion
+description: This section explains about chart axis header, header style, header template and its customization in WinUI chart (SfCartesianChart).
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Chart Axis Header in WinUI Cartesian Chart
-
-## Header
+# Axis Title in WinUI Chart (SfCartesianChart)
 
 The [Header]() property is used to set the title for the chart axis. It accepts any `UIElement` as content of axis title. 
-
-The following code example demonstrates how to define header in both primary and secondary axis. 
 
 {% tabs %}
 
 {% highlight xaml %}
 
+<chart:SfCartesianChart>
+. . .
 <chart:SfCartesianChart.PrimaryAxis>
     <chart:CategoryAxis Header="Category"/>
 </chart:SfCartesianChart.PrimaryAxis>
@@ -26,10 +24,14 @@ The following code example demonstrates how to define header in both primary and
     <chart:NumericalAxis Header="Values"/>
 </chart:SfCartesianChart.SecondaryAxis>
 
+</chart:SfCartesianChart>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+. . .
 chart.PrimaryAxis = new CategoryAxis() { Header = "Category" };
 chart.SecondaryAxis = new NumericalAxis() { Header = "Values" };
 
@@ -39,24 +41,30 @@ chart.SecondaryAxis = new NumericalAxis() { Header = "Values" };
 
 ![Header support for ChartAxis in WinUI Chart](Axis_Images/WinUI_Chart_Axis_Header.png)
 
-## Style for header
+## Style
 
-The [HeaderStyle]() property is used to provide style for the axis header. The following code example explains header style customization.
+The [HeaderStyle]() property is used to provide style for the axis header.
 
 {% tabs %}
 
 {% highlight xaml %}
 
+<chart:SfCartesianChart>
+. . .
 <chart:CategoryAxis Header="Category">
     <chart:CategoryAxis.HeaderStyle>
         <chart:LabelStyle FontFamily="Algerian" FontSize="13" Foreground="Blue"/>
     </chart:CategoryAxis.HeaderStyle>
 </chart:CategoryAxis>
 
+</chart:SfCartesianChart>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+. . .
 chart.PrimaryAxis = new CategoryAxis() { Header = "Category" };
 chart.PrimaryAxis.HeaderStyle = new LabelStyle()
 {
@@ -71,14 +79,16 @@ chart.PrimaryAxis.HeaderStyle = new LabelStyle()
 
 ![Axis header style in WinUI Chart](Axis_Images/WinUI_Chart_Axis_Header_styles.png)
 
-## Customization of header by HeaderTemplate
+## Template
 
-The appearance of the header can be customized using the [HeaderTemplate]() property. The following code snippet demonstrates the header customization with `Border` and `TextBlock`.
+The appearance of the header can be customized using the [HeaderTemplate]() property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
+<chart:SfCartesianChart>
+. . .
 <chart:SfCartesianChart.Resources>
     <DataTemplate x:Key="headerTemplate">
         <Border BorderBrush="Blue" CornerRadius="5" BorderThickness="1">
@@ -92,10 +102,14 @@ The appearance of the header can be customized using the [HeaderTemplate]() prop
     </chart:CategoryAxis>
 </chart:SfCartesianChart.PrimaryAxis>
 
+</chart:SfCartesianChart>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+. . .
 chart.PrimaryAxis = new CategoryAxis()
 {
     HeaderTemplate = chart.Resources["headerTemplate"] as DataTemplate

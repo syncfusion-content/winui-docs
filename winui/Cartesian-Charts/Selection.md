@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about selection and multi-selection support in Syncfusion WinUI Cartesian Chart(SfCartesianChart) control.
+title: Selection in WinUI Chart control | Syncfusion
+description: Learn here all about selection and multi-selection support in Syncfusion WinUI Chart(SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Selection in WinUI Cartesian Chart (SfCartesianChart)
+# Selection in WinUI Chart (SfCartesianChart)
 
 Cartesian chart supports selection that allows to select a segment or series in the chart by using [ChartSelectionBehavior](). 
 
@@ -25,10 +25,10 @@ To enable the selection in chart, create an instance of [ChartSelectionBehavior]
         <chart:ChartSelectionBehavior />
     </chart:SfCartesianChart.Behaviors>
 
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand"
-                            YBindingPath="Year2010"
-                            SelectionBrush="Green"/>
+    <chart:ColumnSeries ItemsSource="{Binding Data}" 
+                        XBindingPath="Demand"
+                        YBindingPath="Year2010"
+                        SelectionBrush="Green"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -55,7 +55,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Segment selection support in WinUI Cartesian Chart](Selection_images/WinUI_cartesian_chart_segment_selection.png)
+![Segment selection support in WinUI Chart](Selection_images/WinUI_cartesian_chart_segment_selection.png)
 
 ## Segment selection in linear type series
 
@@ -73,11 +73,11 @@ The following code example demonstrates the spline series segment selection by c
         <chart:ChartSelectionBehavior />
     </chart:SfCartesianChart.Behaviors>
 
-        <chart:SplineSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand"
-                            YBindingPath="Year2010"
-                            SelectionBrush="Green"
-                            ShowDataLabels="True"/>
+    <chart:SplineSeries ItemsSource="{Binding Data}" 
+                        XBindingPath="Demand"
+                        YBindingPath="Year2010"
+                        SelectionBrush="Green"
+                        ShowDataLabels="True"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -105,13 +105,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Segment selection support in WinUI Cartesian Chart SplineSeries](Selection_images/WinUI_cartesian_chart_spline_series_segment_selection.png)
+![Segment selection support in WinUI Chart SplineSeries](Selection_images/WinUI_cartesian_chart_spline_series_segment_selection.png)
 
 ## Enable series selection
 
 Series selection is used to highlight a particular series when using multiple series. Series selection is enabled by setting the [Type]() property value to [Series]() in [ChartSelectionBehavior](). The [SeriesSelectionBrush]() property is used to set the brush color to highlight the series.
-
-The following code example demonstrates highlighting a series.
 
 {% tabs %}
 
@@ -142,13 +140,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Series selection support in WinUI Cartesian Chart](Selection_images/WinUI_cartesian_chart_series_selection.png)
+![Series selection support in WinUI Chart](Selection_images/WinUI_cartesian_chart_series_selection.png)
 
 ## Multi-selection
 
 Cartesian chart provides support to select single or multiple segments/series by using the [Type]() property. [Type]() property with [MultiPoint]() value is used to select multiple segments and [MultiSeries]() is used to select multiple series. By default, the [Type]() value is [Point]().
-
-The following code snippet demonstrates multiple segment selection.
 
 {% tabs %}
 
@@ -193,7 +189,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Multi Segment selection support in WinUI Cartesian Chart](Selection_images/WinUI_cartesian_chart_multi_segment_selection.png)
+![Multi Segment selection support in WinUI Chart](Selection_images/WinUI_cartesian_chart_multi_segment_selection.png)
 
 The following code snippet demonstrates multiple series selection.
 
@@ -226,7 +222,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Multi Series selection support in WinUI Cartesian Chart](Selection_images/WinUI_cartesian_chart_multi_series_selection.png)
+![Multi Series selection support in WinUI Chart](Selection_images/WinUI_cartesian_chart_multi_series_selection.png)
 
 ## Selection on initial rendering
 
@@ -276,7 +272,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Initial selection rendering support in WinUI Cartesian Chart](Selection_images/WinUI_cartesian_chart_selected_index.png)
+![Initial selection rendering support in WinUI Chart](Selection_images/WinUI_cartesian_chart_selected_index.png)
 
 Select a series programmatically on a chart using the [SelectedSeriesIndex]() property of the chart.
 
@@ -310,13 +306,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Initial series selection rendering support in WinUI Cartesian Chart](Selection_images/WinUI_cartesian_charts_selected_serie_index.png)
+![Initial series selection rendering support in WinUI Chart](Selection_images/WinUI_cartesian_charts_selected_serie_index.png)
 
 ## Changing cursor while selection
 
 [Cursor]() property allows to define the cursor when mouse is hovered over the segment with segment selection enabled.
-
-The following code snippet demonstrates hand cursor in the segment selection.
 
 {% tabs %}
 
@@ -362,7 +356,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Changing cursor while selection support in WinUI Cartesian Chart](Selection_images/WinUI_cartesian_chart_cursor.png)
+![Changing cursor while selection support in WinUI Chart](Selection_images/WinUI_cartesian_chart_cursor.png)
 
 ## Events
 

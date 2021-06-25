@@ -1,32 +1,36 @@
 ---
 layout: post
-title: Axis gridlines in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about the chart axis gridlines and its customization in syncfusion WinUI Cartesian Chart(SfCartesianChart).
+title: Axis grid lines in WinUI Chart control | Syncfusion
+description: Learn here all about the chart axis grid lines and its customization in syncfusion WinUI Chart(SfCartesianChart).
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Gridlines in WinUI Cartesian Chart
+# Grid Lines in WinUI Chart (SfCartesianChart)
 
-## Major gridlines
+## Major Grid Lines
 
 By default, major gridlines are automatically added to the [ChartAxis]() in its defined intervals. The visibility of the gridlines can be controlled using the [ShowGridLines]() property. The default value of [ShowGridLines]() is true. 
-
-The following code example illustrates the [ShowGridLines]() property as false in the primary axis.
 
 {% tabs %}
 
 {% highlight xaml %}
 
+<chart:SfCartesianChart>
+. . .
 <chart:SfCartesianChart.PrimaryAxis>
     <chart:NumericalAxis ShowGridLines="False"/>
 </chart:SfCartesianChart.PrimaryAxis>
+
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+. . .
 chart.PrimaryAxis = new NumericalAxis()
 {
     ShowGridLines = false
@@ -38,14 +42,16 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ![Gridlines customization support in WinUI Chart](Axis_images/WinUI_Chart_Axis_major_gridlines.png)
 
-### Major gridlines customization
+### Customization
 
-The [MajorGridLineStyle]() property in the chart axis is used to customize the appearance of major gridlines. The following code example illustrates customize appearance of major gridlines in the primary axis.
+The [MajorGridLineStyle]() property in the chart axis is used to customize the appearance of major gridlines.
 
 {% tabs %}
 
 {% highlight xaml %}
 
+<chart:SfCartesianChart>
+. . .
 <chart:SfCartesianChart.Resources>
     <Style TargetType="Line" x:Key="lineStyle">
         <Setter Property="StrokeThickness" Value="2"/>
@@ -58,10 +64,14 @@ The [MajorGridLineStyle]() property in the chart axis is used to customize the a
     <chart:NumericalAxis MajorGridLineStyle="{StaticResource lineStyle}"/>
 </chart:SfCartesianChart.PrimaryAxis>
 
+</chart:SfCartesianChart>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+. . .
 chart.PrimaryAxis = new NumericalAxis()
 {
     MajorGridLineStyle = chart.Resources["lineStyle"] as Style 
@@ -73,7 +83,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ![Gridlines customization support in WinUI Chart](Axis_images/WinUI_Chart_Axis_major_gridlines_styles.png)
 
-## Minor gridlines
+## Minor Grid Lines
 
 Minor gridlines will be added automatically when the small tick lines is defined using the [SmallTicksPerInterval]() property of chart axis.
 
@@ -81,14 +91,20 @@ Minor gridlines will be added automatically when the small tick lines is defined
 
 {% highlight xaml %}
 
+<chart:SfCartesianChart>
+. . .
 <chart:SfCartesianChart.SecondaryAxis>
     <chart:NumericalAxis SmallTicksPerInterval="3" />
 </chart:SfCartesianChart.SecondaryAxis>
+
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+. . .
 chart.SecondaryAxis = new NumericalAxis()
 {
     SmallTicksPerInterval = 3,
@@ -98,14 +114,16 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-### Minor gridlines customization
+### Customization
 
-The [MinorGridLineStyle]() property in the chart axis is used to customize the appearance of minor gridlines. The following code example illustrates customize appearance of minor gridlines in the secondary axis.
+The [MinorGridLineStyle]() property in the chart axis is used to customize the appearance of minor gridlines.
 
 {% tabs %}
 
 {% highlight xaml %}
 
+<chart:SfCartesianChart>
+. . .
 <chart:SfCartesianChart.Resources>
     <Style TargetType="Line" x:Key="lineStyle">
         <Setter Property="StrokeThickness" Value="2"/>
@@ -118,10 +136,14 @@ The [MinorGridLineStyle]() property in the chart axis is used to customize the a
     <chart:NumericalAxis SmallTicksPerInterval="3" MinorGridLineStyle="{StaticResource lineStyle}"/>
 </chart:SfCartesianChart.SecondaryAxis>
 
+</chart:SfCartesianChart>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+. . . 
 chart.SecondaryAxis = new NumericalAxis()
 {
     SmallTicksPerInterval = 3,
