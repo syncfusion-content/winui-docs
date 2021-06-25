@@ -151,7 +151,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 ![Data label customization support in WinUI Chart](DataLabel_Images/WinUI_PolarChart_data_label_customize.png)
 
-## Label template
+## Template
 
 The appearance of the data label can be customized using the [`ContentTemplate`]() property of [`PolarDataLabelSettings`]() as shown in the following code example.
 

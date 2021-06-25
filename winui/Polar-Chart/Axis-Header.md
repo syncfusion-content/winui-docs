@@ -41,9 +41,9 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Axis title in WinUI Chart](Axis_Images/WinUI_PolarChart_AxisHeader.png)
-
 N> Polar chart supports title for secondary axis only.
+
+![Axis title in WinUI Chart](Axis_Images/WinUI_PolarChart_AxisHeader.png)
 
 ## Style for header
 
