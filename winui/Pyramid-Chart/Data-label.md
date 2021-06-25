@@ -45,7 +45,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Data label support in WinUI chart](Data-label_images/WinUI_pyramid_chart_data_label.png)
+![Data label support in WinUI chart](Data-label_images/WinUI_chart_data_label.png)
 
 ## Context
 
@@ -93,7 +93,7 @@ this.Content = chart;
 | XValue | Displays the X value of series point|
 | YValue | Displays the Y value of series point|
 
-![Data labels context in WinUI chart](Data-label_images/WinUI_pyramid_chart_labelcontent_percentage.png) 
+![Data labels context in WinUI chart](Data-label_images/WinUI_chart_labelcontent_percentage.png) 
 
 ## Customization
 
@@ -151,7 +151,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Data label customization support in WinUI Chart](Data-label_images/WinUI_pyramid_chart_custom_label.png)
+![Data label customization support in WinUI Chart](Data-label_images/WinUI_chart_custom_label.png)
 
 ## Template
 
@@ -211,7 +211,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Template support for data label in WinUI Chart](Data-label_images/WinUI_pyramid_chart_data_labeltemplate.png)
+![Template support for data label in WinUI Chart](Data-label_images/WinUI_chart_data_labeltemplate.png)
 
 ## Label Format
 
@@ -253,7 +253,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Label format support for data label in WinUI Chart](Data-label_images/WinUI_pyramid_chart_data_labelformat.png)
+![Label format support for data label in WinUI Chart](Data-label_images/WinUI_chart_data_labelformat.png)
 
 ## Rotation
 
@@ -297,5 +297,5 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Rotation support for data label in WinUI Chart](Data-label_images/WinUI_pyramid_chart_data_label_rotation.png)
+![Rotation support for data label in WinUI Chart](Data-label_images/WinUI_chart_data_label_rotation.png)
 

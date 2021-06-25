@@ -58,7 +58,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Predefined palette in WinUI Chart](Appearance_images/WinUI_pyramid_chart_predefined_palette.png)
+![Predefined palette in WinUI Chart](Appearance_images/WinUI_chart_predefined_palette.png)
 
 The following code example defined [`Palette`]() as [`GreenChrome`]().
 
@@ -90,7 +90,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Palette support in WinUI Chart](Appearance_images/WinUI_pyramid_chart_greenchrome_palette.png)
+![Palette support in WinUI Chart](Appearance_images/WinUI_chart_greenchrome_palette.png)
 
 ## Custom palette
 
@@ -147,7 +147,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Custom palette in WinUI Chart](Appearance_images/WinUI_pyramid_chart_custom_palette.png)
+![Custom palette in WinUI Chart](Appearance_images/WinUI_chart_custom_palette.png)
 
 ## Applying gradient brushes
 
@@ -225,7 +225,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Gradient support in WinUI Chart](Appearance_images/WinUI_pyramid_chart_gradient_color.png)
+![Gradient support in WinUI Chart](Appearance_images/WinUI_chart_gradient_color.png)
 
 ## Segment color binding
 
@@ -278,7 +278,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Segment color binding support in WinUI Chart](Appearance_images/WinUI_pyramid_chart_colorvaluepath.png)
+![Segment color binding support in WinUI Chart](Appearance_images/WinUI_chart_colorvaluepath.png)
 
 
 
