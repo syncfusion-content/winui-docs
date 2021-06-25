@@ -35,7 +35,7 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %}
 
-![Legend support in WinUI Chart](Legend_images/WinUI_PolarChart_Legend.png)
+![Legend support in WinUI Chart](Legend_images/WinUI_Chart_Legend.png)
 
 ## Title
 
@@ -82,7 +82,7 @@ chart.Legend = legend;
 
 {% endtabs %}
 
-![Legend title in WinUI Chart](Legend_images/WinUI_PolarChart_chart_Legend_Header.png)
+![Legend title in WinUI Chart](Legend_images/WinUI_Chart_chart_Legend_Header.png)
 
 ## Icon
 
@@ -122,7 +122,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend icon in WinUI Chart](Legend_images/WinUI_PolarChart_chart_Legend_Customize.png)
+![Legend icon in WinUI Chart](Legend_images/WinUI_Chart_chart_Legend_Customize.png)
 
 ## Item spacing
 
@@ -154,7 +154,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend item spacing support in WinUI Chart](Legend_images/WinUI_PolarChart_Legend_item_spacing.png)
+![Legend item spacing support in WinUI Chart](Legend_images/WinUI_Chart_Legend_item_spacing.png)
 
 ## Checkbox for legend
 
@@ -186,7 +186,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Checkbox support for legend in WinUI Chart](Legend_images/WinUI_PolarChart_Legend_CheckBox.png)
+![Checkbox support for legend in WinUI Chart](Legend_images/WinUI_Chart_Legend_CheckBox.png)
 
 ## Toggle Series Visibility 
 
@@ -219,7 +219,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/WinUI_PolarChart_Legend_ToggleSeriesVisibility.png)
+![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/WinUI_Chart_Legend_ToggleSeriesVisibility.png)
 
 ## Position
 
@@ -251,7 +251,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Position support for legend in WinUI Chart](Legend_images/WinUI_PolarChart_Legend_Position.png)
+![Position support for legend in WinUI Chart](Legend_images/WinUI_Chart_Legend_Position.png)
 
 **Docking the legend position**
 
@@ -286,7 +286,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Positioning the legend at right in WinUI Chart](Legend_images/WinUI_PolarChart_Legend_Dock_Right.png)
+![Positioning the legend at right in WinUI Chart](Legend_images/WinUI_Chart_Legend_Dock_Right.png)
 
 **Floating legends**
 
@@ -321,7 +321,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Floating legend support in WinUI Chart](Legend_images/WinUI_PolarChart_Legend_floating.png)
+![Floating legend support in WinUI Chart](Legend_images/WinUI_Chart_Legend_floating.png)
 
 ## Orientation
 
@@ -352,7 +352,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend orientation support in WinUI Chart](Legend_images/WinUI_PolarChart_Legend_Orientation.png)
+![Legend orientation support in WinUI Chart](Legend_images/WinUI_Chart_Legend_Orientation.png)
 
 ## Background customization 
 
@@ -397,8 +397,6 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend background customization in WinUI Chart](Legend_images/WinUI_PolarChart_Legend_background_customizing.png)
-
 ## Template
 
 Customize each legend item by using the [ItemTemplate]() property in `ChartLegend`, as shown in the following code sample.
@@ -441,5 +439,5 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend ItemTemplate support in WinUI Chart](Legend_images/WinUI_PolarChart_Legend_Item_customizing.png)
+![Legend ItemTemplate support in WinUI Chart](Legend_images/WinUI_Chart_Legend_Item_customizing.png)
 

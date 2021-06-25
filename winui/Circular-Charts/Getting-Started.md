@@ -171,7 +171,7 @@ chart.Series.Add(series);
 
 {% endtabs %} 
 
-![Pie series at WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries.png)
+![Pie series at WinUI Circular Chart](Getting-Started_Images/WinUI_pie_chart.png)
 
 ## Add Title
 
@@ -197,7 +197,7 @@ chart.Header = "PRODUCT SALES";
 
 {% endtabs %}  
 
-![Header in WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries_Header.png)
+![Header in WinUI Circular Chart](Getting-Started_Images/WinUI_pie_chart_header.png)
 
 ## Enable Data Labels
 
@@ -229,7 +229,7 @@ chart.Series.Add(series);
 
 {% endtabs %}  
 
-![Data label in WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries_data_label.png)
+![Data label in WinUI Circular Chart](Getting-Started_Images/WinUI_pie_chart_data_label.png)
 
 ## Enable Legend
 
@@ -258,7 +258,7 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %} 
 
-![Legend in WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries_Legend.png)
+![Legend in WinUI Circular Chart](Getting-Started_Images/WinUI_pie_chart_legend.png)
 
 ## Enable Tooltip
 
@@ -288,7 +288,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Tooltip in WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries_Tooltip.png)
+![Tooltip in WinUI Circular Chart](Getting-Started_Images/WinUI_pie_chart_tooltip.png)
 
 The following code example gives you the complete code of above configurations.
 

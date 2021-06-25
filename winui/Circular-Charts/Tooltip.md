@@ -45,7 +45,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Tooltip support in WinUI chart](Tooltip_images/WinUI_Circular_chart_Tooltip.png)
+![Tooltip support in WinUI chart](Tooltip_Images/WinUI_pie_chart_tooltip.png)
 
 The [ChartTooltipBehavior]() is used to customize the tooltip. For customizing the tooltip, create an instance [ChartTooltipBehavior]() and add it to the `Behaviors` collection of [SfCircularChart](). The following properties are used to customize the tooltip:
 
@@ -126,7 +126,7 @@ chart.Behaviors.Add(tooltip);
 
 {% endtabs %}
 
-![Tooltip background style in WinUI Chart](Tooltip_images/WinUI_Circular_chart_Tooltip_Customization.png)
+![Tooltip background style in WinUI Chart](Tooltip_Images/WinUI_pie_chart_tooltip_background_customization.png)
 
 ## Label Style
 
@@ -172,7 +172,7 @@ chart.Behaviors.Add(tooltip);
 
 {% endtabs %}
 
-![Tooltip label style in WinUI chart](Tooltip_images/WinUI_Circular_chart_Tooltip_LabelStyle_Customization.png)
+![Tooltip label style in WinUI chart](Tooltip_Images/WinUI_pie_chart_tooltip_label_customization.png)
 
 ## Template
 
@@ -219,5 +219,5 @@ series.TooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate;
 
 {% endtabs %}
 
-![Tooltip template in WinUI Circular Chart](Tooltip_images/WinUI_Circular_chart_Tooltip_Template_Customization.png)
+![Tooltip template in WinUI Circular Chart](Tooltip_Images/WinUI_pie_chart_tooltip_template.png)
 

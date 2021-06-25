@@ -69,7 +69,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![PolarLineSeries in WinUI chart](PolarLine_Images/WinUI_PolarChart_PolarLineSeries.png)
+![PolarLineSeries in WinUI chart](PolarLine_Images/WinUI_Chart_PolarLineSeries.png)
 
 ## Grid line type
 
@@ -108,7 +108,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Spider/Web chart](PolarLine_Images/WinUI_PolarChart_GridlineType_polygon.png)
+![Spider/Web chart](PolarLine_Images/WinUI_Chart_GridlineType_polygon.png)
 
 ## Closing Path
 
@@ -149,4 +149,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Closing path in WinUI chart](PolarLine_Images/WinUI_PolarChart_IsClosed.png)
+![Closing path in WinUI chart](PolarLine_Images/WinUI_Chart_IsClosed.png)

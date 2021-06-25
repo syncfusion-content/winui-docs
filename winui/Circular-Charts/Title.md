@@ -56,7 +56,7 @@ chart.Header = border;
 
 {% endtabs %}
 
-![Title customization support in WinUI Chart](Header_Images/WinUI_Circular_chart_Header.png)
+![Title customization support in WinUI Chart](Header_Images/WinUI_pie_chart_title.png)
 
 ## Alignment
 
@@ -111,4 +111,4 @@ chart.Header = border;
 
 {% endtabs %}
 
-![Title alignment in WinUI Chart](Header_Images/WinUI_Circular_chart_Header_customization.png)
+![Title alignment in WinUI Chart](Header_Images/WinUI_pie_chart_title_alignment.png)

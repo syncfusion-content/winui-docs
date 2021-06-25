@@ -32,7 +32,7 @@ chart.Legend = new ChartLegend();
 
 N> The x-value of data points in the circular chart will be the legend items ‘Label’.
 
-![Legend support in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend.png)
+![Legend support in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend.png)
 
 ## Title
 
@@ -78,7 +78,7 @@ chart.Legend = legend;
 
 {% endtabs %}
 
-![Legend header in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_Header.png)
+![Legend header in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_title.png)
 
 ## Icon
 
@@ -123,7 +123,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Legend icon in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_LegendIcon.png)
+![Legend icon in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_icon.png)
 
 The appearance of the legend icon can be customized using the below properties.
 
@@ -139,11 +139,7 @@ The appearance of the legend icon can be customized using the below properties.
 . . .
 <chart:SfCircularChart.Legend>
     <chart:ChartLegend IconWidth="10" IconHeight="5" 
-                       IconVisibility="Visible"
-                       BorderBrush="Blue" 
-                       BorderThickness="1"
-                       ItemMargin="5" 
-                       CornerRadius="5">
+                       IconVisibility="Visible">
     </chart:ChartLegend>
 </chart:SfCircularChart.Legend>
 
@@ -160,17 +156,11 @@ chart.Legend = new ChartLegend()
     IconWidth = 10,
     IconHeight = 5,
     IconVisibility = Visibility.Visible,
-    BorderBrush = new SolidColorBrush(Colors.Blue),
-    BorderThickness = new Thickness(1),
-    ItemMargin = new Thickness(5),
-    CornerRadius = new CornerRadius(5)
 };
 
 {% endhighlight %}
 
 {% endtabs %}
-
-![Legend customization in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_Customize.png)
 
 **Custom legend icon**
 
@@ -212,7 +202,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Customizing legend icons in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Custom_Icon.png)
+![Customizing legend icons in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_custom_icon.png)
 
 ## Item spacing
 
@@ -245,7 +235,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend item spacing support in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_Icon_spacing.png)
+![Legend item spacing support in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_item_spacing.png)
 
 ## Checkbox for Legend
 
@@ -278,11 +268,11 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Checkbox support for legend in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_CheckBox.png)
+![Checkbox support for legend in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_checkbox.png)
 
 The data point can be collapsed by unchecking the checkbox as below:
 
-![Checkbox support for legend in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_LegendIcon_collapsed.png)
+![Checkbox support for legend in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_checkbox_uncheck.png)
 
 ## Toggle series visibility 
 
@@ -315,7 +305,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![ToggleSeriesVisibility support for legend in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_ToggleSeriesVisibility.png)
+![ToggleSeriesVisibility support for legend in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_item_toggle.png)
 
 ## Position
 
@@ -380,7 +370,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Positioning the legend at left in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_Dock_Left.png)
+![Positioning the legend at left in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_dock_left.png)
 
 **Floating legends**
 
@@ -416,7 +406,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Positioning the legend at floating in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_floating.png)
+![Positioning the legend at floating in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_floating.png)
 
 ## Orientation
 
@@ -449,7 +439,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend orientation support in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_Orientation.png)
+![Legend orientation support in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_orientation.png)
 
 ## Background Customization 
 
@@ -494,8 +484,6 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend background customization in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_background_customizing.png)
-
 ## Template
 
 Customize each legend item by using [ItemTemplate]() property in `ChartLegend` as in below code snippet:
@@ -539,5 +527,5 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Item template support for legend in WinUI Pie Chart](Legend_images/WinUI_Circular_chart_Legend_Item_customizing.png)
+![Item template support for legend in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_template.png)
 

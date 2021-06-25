@@ -32,4 +32,4 @@ chart.StartAngle = ChartPolarAngle.Rotate0;
 
 {% endtabs %}
 
-![Rendering position for polar series in WinUI chart](StartAngle_Images/WinUI_PolarChart_Rotate0.png)
+![Rendering position for polar series in WinUI chart](StartAngle_Images/WinUI_Chart_Rotate0.png)
