@@ -9,7 +9,7 @@ documentation: ug
 
 # Stacked 100 Charts in WinUI Chart (SfCartesianChart)
 
-## Stacked column 100 Chart
+## Stacked Column 100 Chart
 
 The [`StackedColumn100Series`]() resembles [StackedColumnSeries]() but the cumulative portion of each stacked element always comes to a total of 100%. 
 
@@ -70,7 +70,7 @@ chart.Series.Add(series3);
 
 ![StackedColumn100 chart type in WinUI Chart](Stacking100_Series_Images/stackedcolumn100_chart.png)
 
-## Stacked line 100 Chart
+## Stacked Line 100 Chart
 
 The [`StackedLine100Series`]() resembles [`StackedLineSeries`]() but the cumulative portion of each stacked element always comes to a total of 100%. 
 
@@ -135,7 +135,7 @@ chart.Series.Add(series3);
 
 ![StackedLine100 chart type in WinUI Chart](Stacking100_Series_Images/stackedline100_chart.png)
 
-## Stacked area 100 Chart
+## Stacked Area 100 Chart
 
 The [StackedArea100Series]() is similar to [StackedAreaSeries](), but the cumulative portion of each stacked element always comes to a total of 100%. 
 
