@@ -180,7 +180,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip label style customization in WinUI chart](Tooltip_images/WinUI_pyramid_chart_label_style_customization_tooltip.png)
+![Tooltip label style customization in WinUI chart](Tooltip_images/WinUI_chart_tooltip_label_style.png)
 
 ## Alignment
 
@@ -225,8 +225,6 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip horizontal alignment support in WinUI Chart](Tooltip_images/WinUI_chart_tooltip_horizontal_alignment.png)
-
 ### VerticalAlignment
 
 Tooltip can be positioned vertically top, bottom, or center to the cursor position. The following code example explains the positioning of tooltip to the bottom of the cursor.
@@ -263,8 +261,6 @@ this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
-
-![Tooltip vertical alignment support in WinUI Chart](Tooltip_images/WinUI_pyramid_chart_tooltip_vertical_alignment.png)
 
 ## Offset
 
@@ -303,8 +299,6 @@ this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
-
-![Offset support for tooltip in WinUI Chart](Tooltip_images/WinUI_chart_tooltip_offset.png)
 
 ## Duration
 
