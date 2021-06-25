@@ -45,7 +45,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip support in WinUI chart](Tooltip_images/WinUI_chart_tooltip.png)
+![Tooltip support in WinUI chart](Tooltip_Images/WinUI_chart_tooltip.png)
 
 ## Customization
 
@@ -133,7 +133,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip background style in WinUI chart](Tooltip_images/WinUI_chart_tooltip_background_style.png)
+![Tooltip background style in WinUI chart](Tooltip_Images/WinUI_chart_tooltip_background_style.png)
 
 ## Label Style
 
@@ -180,7 +180,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip label style customization in WinUI chart](Tooltip_images/WinUI_chart_tooltip_label_style.png)
+![Tooltip label style customization in WinUI chart](Tooltip_Images/WinUI_chart_tooltip_label_style.png)
 
 ## Template
 
@@ -237,4 +237,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip template in WinUI Chart](Tooltip_images/WinUI_chart_tooltip_template.png)
+![Tooltip template in WinUI Chart](Tooltip_Images/WinUI_chart_tooltip_template.png)
