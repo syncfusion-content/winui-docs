@@ -93,7 +93,6 @@ public class ChartViewModel
             new Model(){Category = "Moto", Value = 60},
             new Model(){Category = "Sony", Value = 50},
             new Model(){Category = "LG", Value = 45},
-            new Model(){Category = "Samsung", Value = 40},
         };
     }
 }
