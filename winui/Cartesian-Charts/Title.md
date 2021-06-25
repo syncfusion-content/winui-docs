@@ -32,7 +32,7 @@ this.Content = chart;
 
 {% endtabs %} 
 
-![Title support in WinUI chart](Title_Images/WinUI_chart_title.png)
+![Title support in WinUI chart](Title_images/WinUI_chart_title.png)
 
 ## Customization
 
@@ -82,7 +82,7 @@ this.Content = chart;
 
 {% endtabs %} 
 
-![Title customization support in WinUI chart](Title_Images/WinUI_chart_title_customization.png)
+![Title customization support in WinUI chart](Title_images/WinUI_chart_title_customization.png)
 
 ## Alignment
 
