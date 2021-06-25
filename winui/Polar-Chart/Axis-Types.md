@@ -23,7 +23,7 @@ The [NumericalAxis]() is used to plot the numerical values to the chart. [`Numer
 
 {% highlight xaml %}
 
-<chart:SfPolarChart >
+<chart:SfPolarChart>
 
     <chart:SfPolarChart.PrimaryAxis>
         <chart:NumericalAxis/>
@@ -62,9 +62,12 @@ N> If  minimum or maximum value is set, the other value is calculated by default
 
 {% highlight xaml %}
 
-<chart:SfPolarChart.SecondaryAxis>
-    <chart:NumericalAxis Minimum="10" Maximum="90" Interval="20" />
-</chart:SfPolarChart.SecondaryAxis>
+<chart:SfPolarChart>
+    <chart:SfPolarChart.SecondaryAxis>
+        <chart:NumericalAxis Minimum="10" Maximum="90" Interval="20" />
+    </chart:SfPolarChart.SecondaryAxis>
+    ...
+</chart:SfPolarChart>
 
 {% endhighlight %}
 
@@ -78,6 +81,7 @@ chart.SecondaryAxis = new NumericalAxis()
     Minimum = 10,
     Interval = 20,
 };
+...
 
 {% endhighlight %}
 
@@ -95,14 +99,18 @@ N> By default, axis range is calculated between the minimum and maximum value of
 
 {% highlight xaml %}
 
-<chart:SfPolarChart.SecondaryAxis>
-    <chart:NumericalAxis StartRangeFromZero="True" />
-</chart:SfPolarChart.SecondaryAxis>
+<chart:SfPolarChart>
+    <chart:SfPolarChart.SecondaryAxis>
+        <chart:NumericalAxis StartRangeFromZero="True" />
+    </chart:SfPolarChart.SecondaryAxis>
+    ...
+</chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfPolarChart chart = new SfPolarChart();
 ...
 chart.SecondaryAxis = new NumericalAxis()
 {
