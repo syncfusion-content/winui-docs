@@ -7,7 +7,7 @@ control: SfCircularChart
 documentation: ug
 ---
 
-# Getting started with WinUI Charts (SfCircularChart)
+# Getting Started with WinUI Charts (SfCircularChart)
 
 This section explains how to populate the circular chart with data, header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
@@ -50,7 +50,7 @@ public sealed partial class MainWindow : Window
 
 {% endtabs %}
 
-## Initialize view model
+## Initialize View Model
 
 Now, let us define a simple data model that represents a data point in chart.
 
@@ -127,7 +127,7 @@ chart.DataContext = viewModel;
 
 {% endtabs %} 
 
-## Populate Chart with data
+## Populate Chart with Data
 
 Adding [PieSeries]() to the chart [Series]() collection and binding `Data` to the series [ItemsSource]() property from its `DataContext` for creating our own Product – Sales Pie chart.
 
@@ -353,4 +353,3 @@ public sealed partial class MainWindow : Window
 {% endtabs %}
 
 N> Download demo application from [GitHub]()
-
