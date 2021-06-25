@@ -240,6 +240,8 @@ chart.ShowTooltip = true;
 
 The following code example gives you the complete code of above configurations.
 
+N> To plot the chart, the [XBindingPath]() and [YBindingPath]() properties must be configured so that the chart may get values from the respective properties in the data model.
+
 {% tabs %} 
 
 {% highlight xaml %}
@@ -293,8 +295,6 @@ public sealed partial class MainWindow : Window
 {% endhighlight %}
 
 {% endtabs %}
-
-N> To plot the chart, the [XBindingPath]() and [YBindingPath]() properties must be configured so that the chart may get values from the respective properties in the data model.
 
 ![Getting started for WinUI Chart](Getting-Started_images/WinUI_Chart.png)
 
