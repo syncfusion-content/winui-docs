@@ -32,7 +32,7 @@ this.Content = chart;
 
 {% endtabs %} 
 
-![Title support in WinUI chart](Title_Images/WinUI_PyramidChart_Title.png)
+![Title support in WinUI chart](Title_Images/WinUI_chart_title.png)
 
 ## Customization
 
@@ -82,7 +82,7 @@ The pyramid chart provides support to add any `UIElement` as a title. The follow
 
 {% endtabs %} 
 
-![Title customization support in WinUI chart](Title_Images/WinUI_PyramidChart_TitleCustomization.png)
+![Title customization support in WinUI chart](Title_Images/WinUI_chart_title_customization.png)
 
 ## Alignment
 
@@ -127,5 +127,5 @@ public sealed partial class MainPage : Page
 
 {% endtabs %} 
 
-![Title text alignment support in WinUI chart](Title_images/WinUI_PyramidChart_TitleAlignment.png)
+![Title text alignment support in WinUI chart](Title_images/WinUI_chart_title_alignment.png)
 
