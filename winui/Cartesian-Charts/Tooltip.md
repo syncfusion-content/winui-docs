@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip in WinUI Cartesian Chart control | Syncfusion
-description: This section explains about how to enable tooltip and its customization in Syncfusion WinUI Cartesian Chart(SfCartesianChart) control.
+title: Tooltip in WinUI Chart control | Syncfusion
+description: This section explains about how to enable tooltip and its customization in Syncfusion WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Tooltip in WinUI Cartesian Chart (SfCartesianChart)
+# Tooltip in WinUI Chart (SfCartesianChart)
 
 Tooltip is used to display any information over segments. It appears at the data point position when the mouse hovers over any series segment. It is set to display the metadata of the hovered segment or data point.
 
@@ -64,9 +64,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip support in WinUI Cartesian chart](Tooltip_images/WinUI_cartesian_chart_tooltip.png)
-
-## Customization
+![Tooltip support in WinUI chart](Tooltip_images/WinUI_cartesian_chart_tooltip.png)
 
 The [ChartTooltipBehavior]() is used to customize the tooltip. For customizing the tooltip, create an instance [ChartTooltipBehavior]() and add it to the `Behaviors` collection of [`SfCartesianChart`](). The following properties are used to customize the tooltip:
 
@@ -102,7 +100,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-### Background style customization
+## Background style
 
 The tooltip's fill and stroke color can be customized by using the [Style]() property. To define a [Style]() for tooltip, specify the style of `TargetType` as `Path`.
 
@@ -176,9 +174,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip background style customization in WinUI Cartesian chart](Tooltip_images/WinUI_cartesian_chart_background_style_customization_tooltip.png)
+![Tooltip background style in WinUI Chart](Tooltip_images/WinUI_cartesian_chart_background_style_customization_tooltip.png)
 
-### Label style customization
+## Label style
 
 The tooltip label style can be customized by using the [LabelStyle]() property. To define a [Style]() for the tooltip label, specify the style of `TargetType` as `TextBlock`.
 
@@ -254,9 +252,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip label style customization in WinUI Cartesian chart](Tooltip_images/WinUI_cartesian_chart_label_style_customization_tooltip.png)
+![Tooltip label style in WinUI chart](Tooltip_images/WinUI_cartesian_chart_label_style_customization_tooltip.png)
 
-### Tooltip alignment
+## Alignment
 
 The tooltip can be aligned with respect to the cursor position using the [`HorizontalAlignment`]() and [`VerticalAlignment`]() properties.
 
@@ -322,7 +320,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip horizontal alignment support in WinUI Cartesian Chart](Tooltip_images/WinUI_cartesian_chart_tooltip_horizontal_alignment.png)
+![Tooltip horizontal alignment in WinUI Chart](Tooltip_images/WinUI_cartesian_chart_tooltip_horizontal_alignment.png)
 
 **VerticalAlignment**
 
@@ -386,9 +384,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip vertical alignment support in WinUI Cartesian Chart](Tooltip_images/WinUI_cartesian_chart_tooltip_vertical_alignment.png)
+![Tooltip vertical alignment in WinUI Chart](Tooltip_images/WinUI_cartesian_chart_tooltip_vertical_alignment.png)
 
-### Tooltip offset
+## Offset
 
 The tooltip can be positioned at a particular distance from the cursor by using the [HorizontalOffset]() and [VerticalOffset]() properties.
 
@@ -451,13 +449,13 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Offset support for tooltip in WinUI Cartesian Chart](Tooltip_images/WinUI_cartesian_chart_tooltip_offset.png)
+![Offset support for tooltip in WinUI Chart](Tooltip_images/WinUI_cartesian_chart_tooltip_offset.png)
 
-### Tooltip duration
+## Duration
 
 The [ShowDuration]() property is used to specify the duration time in milliseconds for which tooltip will be displayed.
 
-The following code example demonstrates the duration of the tooltip set as 5 seconds.
+N> By default, the tooltip will be displayed for 1000 milliseconds.
 
 {% tabs %}
 
@@ -517,9 +515,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-N> By default, the tooltip will be displayed for 1000 milliseconds.
-
-### Tooltip animation
+## Animation
 
 Animation for tooltip can be set by using the [`EnableAnimation`]() property as shown in the following code sample.
 
@@ -581,7 +577,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-### Tooltip template
+## Template
 
 The [SfCartesianChart]() provides support to customize the appearance of the tooltip by using the [`TooltipTemplate`]() property. 
 
@@ -658,5 +654,5 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip template in WinUI Cartesian Chart](Tooltip_images/WinUI_cartesian_chart_tooltip_customization.png)
+![Tooltip template in WinUI Chart](Tooltip_images/WinUI_cartesian_chart_tooltip_customization.png)
 

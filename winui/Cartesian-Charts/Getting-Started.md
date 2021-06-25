@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Getting started with WinUI Cartesian Chart control | Syncfusion
-description: This section explains about getting started with Syncfusion WinUI Cartesian Chart (SfCartesianChart) control
+title: Getting started with WinUI Chart control | Syncfusion
+description: This section explains about the getting started with Syncfusion WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Getting started with WinUI Cartesian Chart
+# Getting Started with WinUI Chart
 
 This section explains how to populate the Cartesian chart with data, a header, data labels, a legend and tooltips, as well as the essential aspects for getting started with the chart.
 
-## Creating an application with WinUI Cartesian Chart
+## Creating an application with WinUI Chart
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
@@ -115,7 +115,7 @@ N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `Da
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:model="using:SfChart_GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Charts"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" Height="350" Width="525"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -137,9 +137,7 @@ this.DataContext = new ViewModel();
 
 ## Initialize chart axis
 
-`Cartesian Chart` supports default axes, so that these axes ([PrimaryAxis]() and [SecondaryAxis]()) will get generated automatically based upon the data bind to the chart.
-
-Axes will be explicitly specified for it's customization purpose. The initialization of an empty chart with two axes as shown below,
+[ChartAxis]() is used to locate the data points inside the chart area. The [PrimaryAxis]() and [SecondaryAxis]() properties of the chart is used to initialize the axis for the chart.
 
 {% tabs %} 
 
@@ -323,7 +321,6 @@ N> Additionally, set label for each series using the [Label]() property of chart
     </chart:ColumnSeries>
 </chart:SfCartesianChart>
 
-
 {% endhighlight %}
 
 {% highlight C# %}
@@ -348,7 +345,7 @@ Tooltips are used to show information about the segment, when hovers on the segm
 
 <chart:SfCartesianChart>
 	...
-   <syncfusion:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Height"/>
+   <chart:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Height"/>
 	...
 </chart:SfCartesianChart> 
 
@@ -463,9 +460,6 @@ namespace SfChart_GettingStarted
 
 {% endtabs %}
 
-![Getting started for WinUI Cartesian Chart](Getting-Started_Images/WinUI_cartesian_chart.png)
-
 The following chart is created as a result of the previous codes.
 
-N> Download demo application from [GitHub]()
-
+![Getting started for WinUI Cartesian Chart](Getting-Started_Images/WinUI_cartesian_chart.png)

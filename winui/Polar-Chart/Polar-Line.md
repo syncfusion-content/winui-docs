@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Polar line chart | SfPolarChart | Syncfusion
-description: Learn here all about the polar line chart and its features in Syncfusion WinUI Polar Chart (SfPolarChart) control.
+description: Learn here all about the polar line chart and its features in Syncfusion WinUI Chart (SfPolarChart) control.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
 ---
 
-# Polar Line Chart in WinUI Polar Charts (SfPolarChart)
+# Polar Line Chart in WinUI Charts (SfPolarChart)
 
-To render a line series in polar chart, create an instance of the [PolarLineSeries]() and add it to the [Series]() collection property of [SfPolarChart](). The following code example demonstrates how to define [PolarLineSeries]().
+To render a line series in polar chart, create an instance of the [PolarLineSeries]() and add it to the [Series]() collection property of [SfPolarChart]().
 
 {% tabs %}
 
@@ -69,7 +69,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![PolarLineSeries in WinUI polar chart](PolarLine_Images/WinUI_PolarChart_PolarLineSeries.png)
+![PolarLineSeries in WinUI chart](PolarLine_Images/WinUI_PolarChart_PolarLineSeries.png)
 
 ## Grid line type
 
@@ -149,4 +149,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Closing path in WinUI polar chart](PolarLine_Images/WinUI_PolarChart_IsClosed.png)
+![Closing path in WinUI chart](PolarLine_Images/WinUI_PolarChart_IsClosed.png)

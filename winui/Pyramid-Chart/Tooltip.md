@@ -45,7 +45,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip support in WinUI chart](Tooltip_images/WinUI_pyramid_chart_tooltip.png)
+![Tooltip support in WinUI chart](Tooltip_images/WinUI_chart_tooltip.png)
 
 ## Customization
 
@@ -89,7 +89,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-### Background style customization
+## Background style
 
 The tooltip's fill and stroke color can be customized by using the [Style]() property. To define a [Style]() for tooltip, specify the style of `TargetType` as `Path`.
 
@@ -133,9 +133,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip background style customization in WinUI chart](Tooltip_images/WinUI_pyramid_chart_background_style_customization_tooltip.png)
+![Tooltip background style in WinUI chart](Tooltip_images/WinUI_chart_tooltip_background_style.png)
 
-### Label style customization
+## Label style
 
 The tooltip label style can be customized by using the [LabelStyle]() property. To define a [Style]() for the tooltip label, specify the style of `TargetType` as `TextBlock`.
 
@@ -225,7 +225,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip horizontal alignment support in WinUI Chart](Tooltip_images/WinUI_pyramid_chart_tooltip_horizontal_alignment.png)
+![Tooltip horizontal alignment support in WinUI Chart](Tooltip_images/WinUI_chart_tooltip_horizontal_alignment.png)
 
 ### VerticalAlignment
 
@@ -304,7 +304,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Offset support for tooltip in WinUI Chart](Tooltip_images/WinUI_pyramid_chart_tooltip_offset.png)
+![Offset support for tooltip in WinUI Chart](Tooltip_images/WinUI_chart_tooltip_offset.png)
 
 ## Duration
 
@@ -382,6 +382,8 @@ this.Content = chart;
 
 {% endtabs %}
 
+![Tooltip label style in WinUI chart](Tooltip_images/WinUI_chart_tooltip_label_style.png)
+
 ## Template
 
 The pyramid chart provides support to customize the appearance of the tooltip by using the [`TooltipTemplate`]() property. 
@@ -437,5 +439,5 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip template in WinUI Chart](Tooltip_images/WinUI_pyramid_chart_tooltip_customization.png)
+![Tooltip template in WinUI Chart](Tooltip_images/WinUI_chart_tooltip_template.png)
 

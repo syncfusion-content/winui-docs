@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data labels in WinUI Cartesian Chart control | Syncfusion
-description: This section explains about how to configure the data labels and its features in WinUI Cartesian Chart (SfCartesianChart).
+title: Data labels in WinUI Chart control | Syncfusion
+description: This section explains about how to configure the data labels and its features in WinUI Chart (SfCartesianChart).
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Data labels in WinUI Cartesian Chart
+# Data labels in WinUI Chart (SfCartesianChart)
 
 Data labels are used to display values related to a chart segment. Values from data point(x, y) or other custom properties from a data source can be displayed. 
 
@@ -18,12 +18,14 @@ Each data label can be represented by the following:
 
 ## Enable data label 
 
-The [ShowDataLabels]() property of series is used to enable the data labels. The following code example illustrates how to achieve this.
+The [ShowDataLabels]() property of series is used to enable the data labels.
 
 {% tabs %}
 
 {% highlight xaml %}
 
+<chart:SfCartesianChart>
+. . .
 <chart:SfCartesianChart.Series>
     <chart:ColumnSeries ItemsSource="{Binding Data}" 
                      XBindingPath="Category"
@@ -31,10 +33,14 @@ The [ShowDataLabels]() property of series is used to enable the data labels. The
     </chart:ColumnSeries>
 </chart:SfCartesianChart.Series>
 
+</chart:SfCartesianChart>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+. . .
 ColumnSeries series = new ColumnSeries()
 {
     ItemsSource = viewModel.Data,
@@ -49,44 +55,45 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Data label in WinUI Cartesian chart](DataMarkers_images/datamarker_label_overview.png) 
+![Data label in WinUI chart](DataLabel_images/data_label_winui_chart.png) 
 
-## Data label context
+## Context
 
 To customize the content of data labels, need to define [DataLabelSettings]() of series and set [Context]() property of [CartesianDataLabelSettings]() to define the value to be displayed as label content.
-
-The following code example demonstrates how to define the value to be displayed as data label content.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:ColumnSeries.DataLabelSettings>
-    <chart:CartesianDataLabelSettings Context="YValue"/>
-</chart:ColumnSeries.DataLabelSettings>
+<chart:SfCartesianChart>
+. . .
+<chart:ColumnSeries ShowDataLabels="True">
+    <chart:ColumnSeries.DataLabelSettings>
+        <chart:CartesianDataLabelSettings Context="YValue"/>
+    </chart:ColumnSeries.DataLabelSettings>
+</chart:ColumnSeries>
+
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
-        
+
+SfCartesianChart chart = new SfCartesianChart();
+ColumnSeries series = new ColumnSeries();
+. . .
 series.DataLabelSettings = new CartesianDataLabelSettings()
 {
     Context = LabelContext.YValue
 };
 
+chart.Series.Add(series);
+
 {% endhighlight %}
 
 {% endtabs %}
 
-| Context values | Description | Output |
-|---|--|---|
-| DateTime | Displays LabelContent.DateTime value | ![ DateTime label in WinUI Cartesian chart](DataMarkers_images/labelcontent_datetime.png) |
-|DataLabelItem | Displays the y value|![ LabelContentPath label in WinUI Cartesian chart](DataMarkers_images/labelcontent_labelcontentpath.png)|
-| Percentage | Displays the percentage value of series point among other points |![ Percentage label in WinUI Cartesian chart](DataMarkers_images/labelcontent_percentage.png) |
-| XValue | Displays the X value of series point|![ XValue label in WinUI Cartesian chart](DataMarkers_images/labelcontent_xvalue.png) |
-| YValue | Displays the Y value of series point| ![ YValue label in WinUI Cartesian chart](DataMarkers_images/labelcontent_yvalue.png) |
-
-## Data Label customization
+## Customization
 
 The following properties are used to customize the data label.
 
@@ -99,12 +106,13 @@ The following properties are used to customize the data label.
 * [FontFamily]()-  used to change the font family of the label.
 * [Background]()- used to change the label background color.
 
-The following code example demonstrates the customization of label using the above properties:
-
 {% tabs %}
 
 {% highlight xaml %}
 
+<chart:SfCartesianChart>
+. . .
+<chart:ColumnSeries ShowDataLabels="True">
 <chart:ColumnSeries.DataLabelSettings>
     <chart:CartesianDataLabelSettings Position="Outer" Foreground="White" 
                                       FontSize="11" FontFamily="Calibri" 
@@ -112,10 +120,16 @@ The following code example demonstrates the customization of label using the abo
                                       Margin="1" FontStyle="Italic" Background="#1E88E5" />
 </chart:ColumnSeries.DataLabelSettings>
 
+</chart:ColumnSeries>
+</chart:SfCartesianChart>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+ColumnSeries series = new ColumnSeries();
+. . .
 series.DataLabelSettings = new CartesianDataLabelSettings()
 {
     Position = DataLabelPosition.Outer,
@@ -129,13 +143,15 @@ series.DataLabelSettings = new CartesianDataLabelSettings()
     FontSize = 11
 };
 
+chart.Series.Add(series);
+
 {% endhighlight %}
 
 {% endtabs %}
 
-![Label customization in WinUI Cartesian chart](DataMarkers_images/datamarker_custom_Label.png)
+![Data label customization in WinUI chart](DataLabel_images/winui_chart_data_label_customization.png)
 
-## Label template
+## Template
 
 The appearance of the data label can be customized using the [`ContentTemplate`]() property of [`CartesianDataLabelSettings`]() as in the below code example:
 
@@ -143,8 +159,10 @@ The appearance of the data label can be customized using the [`ContentTemplate`]
 
 {% highlight xaml %}
 
+<chart:SfCartesianChart>
+. . .
 <chart:SfCartesianChart.Resources>
-    <DataTemplate x:Key="dataMarkerTemplate">
+    <DataTemplate x:Key="dataLabelTemplate">
         <StackPanel Orientation="Vertical">
             <Path Grid.Row="0"  Stretch="Uniform" Fill="#1E88E5"                              
                Width="15" Height="15" Margin="0,0,0,0"                              
@@ -165,226 +183,177 @@ The appearance of the data label can be customized using the [`ContentTemplate`]
     </DataTemplate>
 </chart:SfCartesianChart.Resources>
 . . . 
-<chart:ColumnSeries.DataLabelSettings>
-    <chart:CartesianDataLabelSettings Position="Outer" ContentTemplate="{StaticResource dataMarkerTemplate}"/>
-</chart:ColumnSeries.DataLabelSettings>
+<chart:ColumnSeries ShowDataLabels="True">
+    <chart:ColumnSeries.DataLabelSettings>
+        <chart:CartesianDataLabelSettings Position="Outer" ContentTemplate="{StaticResource dataLabelTemplate}"/>
+    </chart:ColumnSeries.DataLabelSettings>
+. . .
+</chart:ColumnSeries>
+
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+ColumnSeries series = new ColumnSeries();
+. . .
 series.DataLabelSettings = new CartesianDataLabelSettings()
 {
     Position = DataLabelPosition.Outer,
-    ContentTemplate = chart.Resources["dataMarkerTemplate"] as DataTemplate
+    ContentTemplate = chart.Resources["dataLabelTemplate"] as DataTemplate
 };
+
+chart.Series.Add(series);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Label template in WinUI Cartesian chart](DataMarkers_images/datamarker_labeltemplate.png)
+![Data label template in WinUI chart](DataLabel_images/winui_chart_data_label_template.png)
 
-## Label format
+## Format
 
-The Format property can be used to format the data labels. The following code example demonstrates the how to format data labels with three decimal digits.
+The [Format]() property can be used to format the data labels.
 
 {% tabs %}
 
 {% highlight xaml %}
+<chart:SfCartesianChart>
+. . .
+<chart:ColumnSeries ShowDataLabels="True">
+    <chart:ColumnSeries.DataLabelSettings>
+        <chart:CartesianDataLabelSettings Format="#.000" />
+    </chart:ColumnSeries.DataLabelSettings>
 
-<chart:ColumnSeries.DataLabelSettings>
-    <chart:CartesianDataLabelSettings Format="#.000" />
-</chart:ColumnSeries.DataLabelSettings>
+</chart:ColumnSeries>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+ColumnSeries series = new ColumnSeries();
+. . .
 series.DataLabelSettings = new CartesianDataLabelSettings()
 {
     Format = "#.000"
 };
 
+chart.Series.Add(series);
+
 {% endhighlight %}
 
 {% endtabs %}
 
-![Label format in WinUI Cartesian chart](DataMarkers_images/datamarker_labelformat.png)
+![Data label format in WinUI chart](DataLabel_images/winui_chart_data_label_format.png)
 
-## Label rotation
+## Rotation
 
-The [Rotation]() property is used to define the angle to which the label has to rotate. The following code demonstrates the label rotating angle.
+The [Rotation]() property is used to define the angle to which the label has to rotate.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:ColumnSeries.DataLabelSettings>
-    <chart:CartesianDataLabelSettings Rotation="45" Position="Outer" />
-</chart:ColumnSeries.DataLabelSettings>
-
+<chart:SfCartesianChart>
+. . .
+<chart:ColumnSeries ShowDataLabels="True">
+    <chart:ColumnSeries.DataLabelSettings>
+        <chart:CartesianDataLabelSettings Rotation="45" Position="Outer" />
+    </chart:ColumnSeries.DataLabelSettings>
+</chart:ColumnSeries>
+</chart:SfCartesianChart>
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+ColumnSeries series = new ColumnSeries();
+. . .
 series.DataLabelSettings = new CartesianDataLabelSettings()
 {
     Rotation = 45,
     Position = DataLabelPosition.Outer,
 };
 
+chart.Series.Add(series);
+
 {% endhighlight %}
 
 {% endtabs %}
 
-![Label rotation in WinUI Cartesian chart](DataMarkers_images/label_rotation.png)
+![Data label rotation in WinUI chart](DataLabel_images/winui_chart_data_label_rotation.png)
 
 ## Alignment
 
 The alignment of data labels inside the series is defined by using the [BarLabelAlignment]() property. 
 
-* [Top]() - Positions the data lable at the top edge point of a chart segment.
+* [Top]() - Positions the data label at the top edge point of a chart segment.
 * [Middle]() - Positions the data label at the center point of a chart segment.
 * [Bottom]() - Positions the data label at the bottom edge point of a chart segment.
 
 N> This behavior varies based on the chart series type.
 
-The following code example explains the positioning of data label in the middle of the segment.
-
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:ColumnSeries.DataLabelSettings>
-    <chart:CartesianDataLabelSettings BarLabelAlignment="Middle"/>
-</chart:ColumnSeries.DataLabelSettings>
+<chart:SfCartesianChart>
+. . .
+<chart:ColumnSeries ShowDataLabels="True">
+    <chart:ColumnSeries.DataLabelSettings>
+        <chart:CartesianDataLabelSettings BarLabelAlignment="Middle"/>
+    </chart:ColumnSeries.DataLabelSettings>
+</chart:ColumnSeries>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+ColumnSeries series = new ColumnSeries();
+. . .
 series.DataLabelSettings = new CartesianDataLabelSettings()
 {
     BarLabelAlignment = BarLabelAlignment.Middle,
 };
 
+chart.Series.Add(series);
+
 {% endhighlight %}
 
 {% endtabs %}
 
-![Label alignment in WinUI Cartesian chart](DataMarkers_images/WinUI_BarAlignment_Middle.png)
+![Data label alignment in WinUI chart](DataLabel_images/winui_chart_data_label_alignment.png)
 
 Also, you can define the label alignment using  [HorizontalAlignment]() and [VerticalAlignment]() properties.
 
 ## Position
 
-Other than the above alignment options, Chart providing additional customization option to position the data labels smartly based on series type using the [Position]() property.
+Other than the above alignment options, Chart providing additional customization option to position the data labels. 
 
-The following are the values for [Position]()  property: 
-
-* [Default]()
-* [Auto]()
-* [Inner]()
-* [Outer]()
-* [Center]()
-
-The following code sample illustrates the center position of data marker labels,
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:ColumnSeries.DataLabelSettings>
-    <chart:CartesianDataLabelSettings Position="Center"/>
-</chart:ColumnSeries.DataLabelSettings>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-series.DataLabelSettings = new CartesianDataLabelSettings()
-{
-    Position = DataLabelPosition.Center,
-};    
-
-{% endhighlight %}
-
-{% endtabs %}
-
-| Column | Spline |
-|--|--|
-|![Data label at center position in Column chart](DataMarkers_images/labelposition_center_column.png)|![Data label at center position in Spline chart](DataMarkers_images/labelposition_center_spline.png)|
-
-The following code sample illustrates the inner position of data marker labels,
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:ColumnSeries.DataLabelSettings>
-    <chart:CartesianDataLabelSettings Position="Inner"/>
-</chart:ColumnSeries.DataLabelSettings>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-series.DataLabelSettings = new CartesianDataLabelSettings()
-{
-    Position = DataLabelPosition.Inner,
-};       
-
-{% endhighlight %}
-
-{% endtabs %}
-
-| Column | Spline |
-|--|--|
-|![Data label at innert position in Column chart](DataMarkers_images/labelposition_inner_column.png)|![Data label at inner position in Spline chart](DataMarkers_images/labelposition_inner_spline.png)|
-
-The following code sample illustrates the outer position of data marker labels,
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:ColumnSeries.DataLabelSettings>
-    <chart:CartesianDataLabelSettings Position="Outer"/>
-</chart:ColumnSeries.DataLabelSettings>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-series.DataLabelSettings = new CartesianDataLabelSettings()
-{
-    Position = DataLabelPosition.Outer,
-};    
-
-{% endhighlight %}
-
-{% endtabs %}
-
-| Column | Spline |
-|--|--|
-|![Data label at outer position in Column chart](DataMarkers_images/labelposition_outer_column.png)|![Data label at outer position in Spline chart](DataMarkers_images/labelposition_outer_spline.png)|
+The [Position]() property is used to position the data labels at `Center`, `Inner` and `Outer` position of the actual data point position. By default, labels are positioned based on the series types for better readability.
 
 ## Connector line
 
-Connector line is used to connect label and data point using a line. [ShowConnectorLine]() property of [CartesianDataLabelSettings]() is used to enable the connector line in the cartesian chart. 
+Connector line is used to connect label and data point using a line. [ShowConnectorLine]() property of [CartesianDataLabelSettings]() is used to enable the connector line in the chart. 
 
-The connector line can be customized using the below properies.
+The connector line can be customized using the below properties.
 
 * [ConnectorHeight]() - used to set height for connector line.
 * [ConnectorLineStyle]() - used to customize the style of line.
 * [ConnectorType]() - used to connector line type.
 
-The following code example shows the customization of connector line:
-
 {% tabs %}
 
 {% highlight xaml %}
+
+<chart:SfCartesianChart>
+. . .
 
 <chart:SfCartesianChart.Resources>
     <Style TargetType="Path" x:Key="lineStyle">
@@ -393,17 +362,24 @@ The following code example shows the customization of connector line:
     </Style>
 </chart:SfCartesianChart.Resources>
 . . .
-<chart:ColumnSeries.DataLabelSettings>
-    <chart:CartesianDataLabelSettings Position="Outer" 
-                                      ConnectorHeight="40"
-                                      ShowConnectorLine="True"
-                                      ConnectorLineStyle="{StaticResource lineStyle}" />
-</chart:ColumnSeries.DataLabelSettings>
+<chart:ColumnSeries ShowDataLabels="True">
+    <chart:ColumnSeries.DataLabelSettings>
+        <chart:CartesianDataLabelSettings Position="Outer" 
+                                          ConnectorHeight="40"
+                                          ShowConnectorLine="True"
+                                          ConnectorLineStyle="{StaticResource lineStyle}" />
+    </chart:ColumnSeries.DataLabelSettings>
+</chart:ColumnSeries>
+
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+ColumnSeries series = new ColumnSeries();
+. . .
 series.DataLabelSettings = new CartesianDataLabelSettings()
 {
     Position = DataLabelPosition.Outer,
@@ -411,11 +387,13 @@ series.DataLabelSettings = new CartesianDataLabelSettings()
     ConnectorLineStyle = chart.Resources["LineStyle"] as Style,
 };
 
+chart.Series.Add(series);
+
 {% endhighlight %}
 
 {% endtabs %}
 
-![Connector line for data label in WinUI Cartesian chart](DataMarkers_images/connectorline.png)
+![Connector line for data label in WinUI chart](DataLabel_images/winui_chart_data_label_connector_line.png)
 
 ## Applying series brush
 
@@ -425,21 +403,32 @@ series.DataLabelSettings = new CartesianDataLabelSettings()
 
 {% highlight xaml %}
 
-<chart:ColumnSeries.DataLabelSettings>
-    <chart:CartesianDataLabelSettings  UseSeriesPalette="True"/>
-</chart:ColumnSeries.DataLabelSettings>
+<chart:SfCartesianChart>
+. . .
+<chart:ColumnSeries ShowDataLabels="True">
+    <chart:ColumnSeries.DataLabelSettings>
+        <chart:CartesianDataLabelSettings  UseSeriesPalette="True"/>
+    </chart:ColumnSeries.DataLabelSettings>
+</chart:ColumnSeries>
+
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCartesianChart chart = new SfCartesianChart();
+ColumnSeries series = new ColumnSeries();
+. . .
 series.DataLabelSettings = new CartesianDataLabelSettings()
 {
     UseSeriesPalette = true,
 };
 
+chart.Series.Add(series);
+
 {% endhighlight %}
 
 {% endtabs %}
 
-![Applying series interior for data Label in WinUI Cartesian chart](DataMarkers_images/useseriespalette_true.png)
+![Applying series interior for data label in WinUI chart](DataLabel_images/series_interior_for_data_label_winui_chart.png)

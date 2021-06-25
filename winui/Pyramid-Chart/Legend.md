@@ -89,7 +89,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Legend title in WinUI Chart](Legend_images/WinUI_chart_legend_header.png)
+![Legend title in WinUI Chart](Legend_images/WinUI_pyramid_chart_legend_header.png)
 
 ## Icon
 

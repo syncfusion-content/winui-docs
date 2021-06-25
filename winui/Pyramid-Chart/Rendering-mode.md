@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rendering mode in WinUI Chart control | Syncfusion
-description: This sections explains about the rendering mode of Syncfusion WinUI Chart(SfPyramidChart) control.
+description: This sections explains about the rendering surface mode and linear mode of Syncfusion WinUI Chart (SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
