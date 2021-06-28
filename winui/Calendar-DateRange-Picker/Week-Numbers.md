@@ -37,9 +37,13 @@ sfCalendarDateRangePicker.ShowWeekNumbers = true;
 
 ## Week rule
 
-You can apply different rules for determining the first week of the year in the dropdown calendar of `Calendar DateRange Picker` control using the `WeekNumberRule` property. The default value of `WeekNumberRule` property is **FirstDay**.
+You can change the rule for determining the first week of the year in the dropdown calendar of the `Calendar DateRange Picker` control using the `WeekNumberRule` property. The default value of the `WeekNumberRule` property is **FirstDay**. You can apply any one of the below rules to the `WeekNumberRule` property.
 
-N> You can change the `WeekNumberRule` property value with the [CalendarWeekRule](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0) 
+* **FirstDay** - Indicates that the first week of the year begins on the first day of the year and ends before the following designated first day of the week.
+
+* **FirstFourDayWeek** - Indicates that the first week of the year is the first week with four or more days before the designated first day of the week.
+
+* **FirstFullWeek** - Indicates that the first week of the year begins on the first occurrence of the designated first day of the week on or after the first day of the year.
 
 {% tabs %}
 {% highlight xaml %}
@@ -70,8 +74,8 @@ N> You can add any prefix or suffix characters to **#** in `WeekNumberFormat` pr
 {% highlight xaml %}
 
 <calendar:SfCalendarDateRangePicker HorizontalAlignment="Center" VerticalAlignment="Center"
-                     ShowWeekNumbers="True" WeekNumberRule="FirstFullWeek"
-                     />
+                                    ShowWeekNumbers="True" WeekNumberRule="FirstFullWeek"
+                                    WeekNumberFormat = "W #" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -79,6 +83,7 @@ N> You can add any prefix or suffix characters to **#** in `WeekNumberFormat` pr
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.ShowWeekNumbers = true;
 sfCalendarDateRangePicker.WeekNumberRule = CalendarWeekRule.FirstFullWeek;
+sfCalendarDateRangePicker.WeekNumberFormat = "W #";
 
 {% endhighlight %}
 {% endtabs %}
@@ -87,16 +92,35 @@ sfCalendarDateRangePicker.WeekNumberRule = CalendarWeekRule.FirstFullWeek;
 
 ## Customize the week number and name of days of the week appearance
 
-You can show week number in `Calendar DateRange Picker` control by setting the value of `ShowWeekNumbers` property  as **true**.
-`Calendar DateRange Picker` control also allows you to customize the template of the week numbers using `WeekNumberTemplate` property and the template of name of days of the week using `WeekNameTemplate` property in `CalendarItemTemplateSelector` class. The default value of `ShowWeekNumbers` property is **false**.
+`Calendar DateRange Picker` control also allows you to customize the template of the week numbers using `WeekNumberTemplate` property and the template of name of days of the week using `WeekNameTemplate` property in the `CalendarItemTemplateSelector` class. 
+
+In below codes we have created a `DataTemplate` for both `WeekNumberTemplate` and `WeekNameTemplate` properties in `CalendarItemTemplateSelector` class.
 
 {% tabs %}
 {% highlight XAML %}
 
-<calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker"
-                            HorizontalAlignment="Center" VerticalAlignment="Center" ShowWeekNumbers="True"
-                            WeekNumberRule="FirstFullWeek"
-                            >
+<Grid>
+    <Grid.Resources>
+        <DataTemplate x:Key="WeekNameAndNumberTemplate">
+            <Viewbox >
+                <Grid>
+                    <Ellipse Width="30" 
+                                Height="30" 
+                                Fill="White"
+                                HorizontalAlignment="Center" VerticalAlignment="Center"
+                                Margin="1" />
+                    <TextBlock Text="{Binding DisplayText}" 
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center" 
+                                Foreground="DeepSkyBlue"/>
+                </Grid>
+            </Viewbox>
+        </DataTemplate>
+    </Grid.Resources>
+    <calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker"
+                                        HorizontalAlignment="Center" VerticalAlignment="Center" ShowWeekNumbers="True"
+                                        WeekNumberRule="FirstFullWeek"
+                                        >
         <FlyoutBase.AttachedFlyout>
             <editors:DropDownFlyout>
                 <calendar:SfCalendar ShowWeekNumbers="{x:Bind sfCalendarDateRangePicker.ShowWeekNumbers,Mode=TwoWay}" >
@@ -104,34 +128,9 @@ You can show week number in `Calendar DateRange Picker` control by setting the v
                         <Style TargetType="calendar:CalendarItem">
                             <Setter Property="ContentTemplateSelector">
                                 <Setter.Value>
-                                    <calendar:CalendarItemTemplateSelector>
-                                        <calendar:CalendarItemTemplateSelector.WeekNumberTemplate>
-                                            <DataTemplate>
-                                                <Viewbox >
-                                                    <Grid>
-                                                        <Ellipse MinWidth="30" MinHeight="30" Fill="White"
-                                                    HorizontalAlignment="Center" VerticalAlignment="Center"
-                                                    Margin="1"/>
-                                                        <TextBlock Text="{Binding DisplayText}" HorizontalAlignment="Center"
-                                                    VerticalAlignment="Center" Foreground="DodgerBlue"/>
-                                                    </Grid>
-                                                </Viewbox>
-                                            </DataTemplate>
-                                        </calendar:CalendarItemTemplateSelector.WeekNumberTemplate>
-                                        <calendar:CalendarItemTemplateSelector.WeekNameTemplate>
-                                            <DataTemplate>
-                                                <Viewbox>
-                                                    <Grid>
-                                                        <Ellipse MinWidth="30" MinHeight="30" Fill="White"
-                                                    HorizontalAlignment="Center" VerticalAlignment="Center"
-                                                    Margin="1"/>
-                                                        <TextBlock Text="{Binding DisplayText}"  HorizontalAlignment="Center"
-                                                    VerticalAlignment="Center" Foreground="DodgerBlue"/>
-                                                    </Grid>
-                                                </Viewbox>
-                                            </DataTemplate>
-                                        </calendar:CalendarItemTemplateSelector.WeekNameTemplate>
-                                    </calendar:CalendarItemTemplateSelector>
+                                    <calendar:CalendarItemTemplateSelector WeekNameTemplate="{StaticResource WeekNameAndNumberTemplate}"
+                                                                           WeekNumberTemplate="{StaticResource WeekNameAndNumberTemplate}"
+                                                                           />
                                 </Setter.Value>
                             </Setter>
                         </Style>
@@ -139,7 +138,8 @@ You can show week number in `Calendar DateRange Picker` control by setting the v
                 </calendar:SfCalendar>
             </editors:DropDownFlyout>
         </FlyoutBase.AttachedFlyout>
-</calendar:SfCalendarDateRangePicker>
+    </calendar:SfCalendarDateRangePicker>
+</Grid>
 
 {% endhighlight %}
 {% endtabs %}

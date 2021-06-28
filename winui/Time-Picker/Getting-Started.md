@@ -223,25 +223,3 @@ private void SfTimePicker_TimeChanged(DependencyObject d, DependencyPropertyChan
 
 {% endhighlight %}
 {% endtabs %}
-
-## Hide clear button in textbox
-
-By default, the clear button `X` will be displayed in the textbox of the `TimePicker` control, which can be used to clear the input entered. You can hide the clear button in `TimePicker` control using the `ShowClearButton` property. The default value of `ShowClearButton` property value is **true**.
-
-{% tabs %}
-{% highlight XAML %}
-
-<editors:SfTimePicker ShowClearButton="False"
-                      Name="sfTimePicker"/>
-
-{% endhighlight %}
-{% highlight C# %}
-
-SfTimePicker sfTimePicker = new SfTimePicker();
-sfTimePicker.ShowClearButton = false;
-
-{% endhighlight %}
-{% endtabs %}
-
-![WinUI TimePicker hide clear button](Getting-Started_images/winui-timePicker-hideclearbutton.png)
-![WinUI TimePicker hide clear button](Getting-Started_images/winui-timePicker-showclearbutton.png)

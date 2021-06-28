@@ -13,7 +13,7 @@ This section describes about the various customization options available in [Cal
 
 ## Enable week numbers
 
-You can show week numbers for each week in `Calendar` control by setting the value of `ShowWeekNumbers` property as **true**. You can also customize the week number displayed in calendar by using the`WeekNumberRule` property and `WeekNumberFormat` property. By default, the value of `ShowWeekNumber` property is **false**, `WeekNumberRule` is **FirstDay** and `WeekNumberFormat` is **#**.
+You can show the week numbers for each week in `Calendar` control by setting the value of `ShowWeekNumbers` property as **true**. You can also customize the week number displayed in calendar by using the `WeekNumberRule` property and `WeekNumberFormat` property. By default, the value of `ShowWeekNumber` property is **false**, `WeekNumberRule` is **FirstDay** and `WeekNumberFormat` is **#**.
 
 N> You can change the `WeekNumberRule` property value with the [CalendarWeekRule](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0) and you can also add any prefix or suffix characters to **#** for `WeekNumberFormat` property.
 
@@ -37,9 +37,13 @@ sfCalendar.ShowWeekNumbers = true;
 
 ## Week rule
 
-You can apply different rules for determining the first week of the year in `Calendar` control using the `WeekNumberRule` property. The default value of `WeekNumberRule` property is **FirstDay**.
+You can change the rule for determining the first week of the year in `Calendar` control using the `WeekNumberRule` property. The default value of the `WeekNumberRule` property is **FirstDay**. You can apply any one of the below rules to `WeekNumberRule` property.
 
-N> You can change the `WeekNumberRule` property value with the [CalendarWeekRule](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0) 
+* **FirstDay** - Indicates that the first week of the year begins on the first day of the year and ends before the following designated first day of the week.
+
+* **FirstFourDayWeek** - Indicates that the first week of the year is the first week with four or more days before the designated first day of the week.
+
+* **FirstFullWeek** - Indicates that the first week of the year begins on the first occurrence of the designated first day of the week on or after the first day of the year.
 
 {% tabs %}
 {% highlight xaml %}
@@ -71,7 +75,7 @@ N> You can add any prefix or suffix characters to **#** in `WeekNumberFormat` pr
 
 <calendar:SfCalendar HorizontalAlignment="Center" VerticalAlignment="Center"
                      ShowWeekNumbers="True" WeekNumberRule="FirstFullWeek"
-                     />
+                     WeekNumberFormat = "W #" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -79,6 +83,7 @@ N> You can add any prefix or suffix characters to **#** in `WeekNumberFormat` pr
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.ShowWeekNumbers = true;
 sfCalendar.WeekNumberRule = CalendarWeekRule.FirstFullWeek;
+sfCalendar.WeekNumberFormat = "W #";
 
 {% endhighlight %}
 {% endtabs %}
@@ -87,51 +92,45 @@ sfCalendar.WeekNumberRule = CalendarWeekRule.FirstFullWeek;
 
 ## Customize the week number and name of days of the week appearance
 
-You can show week number in `Calendar` control by setting the value of `ShowWeekNumbers` property  as **true**.
-`Calendar` control also allows you to customize the template of the week numbers using `WeekNumberTemplate` property and template of name of days of the week using `WeekNameTemplate` property in the `CalendarItemTemplateSelector` class. The default value of `ShowWeekNumbers` property is **false**.
+`Calendar` control also allows you to customize the template of the week numbers using `WeekNumberTemplate` property and the template of name of days of the week using `WeekNameTemplate` property in the `CalendarItemTemplateSelector` class. 
+
+In below codes we have created a `DataTemplate` for both `WeekNumberTemplate` and `WeekNameTemplate` properties in `CalendarItemTemplateSelector` class.
 
 {% tabs %}
 {% highlight XAML %}
 
-<calendar:SfCalendar WeekNumberRule="FirstFourDayWeek"
-                     ShowWeekNumbers="True">
-                    <calendar:SfCalendar.Resources>
-                        <Style TargetType="calendar:CalendarItem">
-                            <Setter Property="ContentTemplateSelector">
-                                <Setter.Value>
-                                    <calendar:CalendarItemTemplateSelector>
-                                        <calendar:CalendarItemTemplateSelector.WeekNumberTemplate>
-                                            <DataTemplate>
-                                            <Viewbox >
-                                                <Grid>
-                                                <Ellipse MinWidth="30" MinHeight="30" Fill="WhiteSmoke"
-                                                            HorizontalAlignment="Center" VerticalAlignment="Center"
-                                                            Margin="1"/>
-                                                <TextBlock Text="{Binding DisplayText}" HorizontalAlignment="Center"
-                                                            VerticalAlignment="Center" Foreground="DeepSkyBlue"/>
-                                                </Grid>
-                                            </Viewbox>
-                                            </DataTemplate>
-                                            </calendar:CalendarItemTemplateSelector.WeekNumberTemplate>
-                                        <calendar:CalendarItemTemplateSelector.WeekNameTemplate>
-                                            <DataTemplate>
-                                                <Viewbox>
-                                                    <Grid>
-                                                        <Ellipse MinWidth="30" MinHeight="30" Fill="WhiteSmoke"
-                                                                HorizontalAlignment="Center" VerticalAlignment="Center"
-                                                                Margin="1"/>
-                                                        <TextBlock Text="{Binding DisplayText}"  HorizontalAlignment="Center"
-                                                                VerticalAlignment="Center" Foreground="DeepSkyBlue"/>
-                                                    </Grid>
-                                                </Viewbox>
-                                            </DataTemplate>
-                                        </calendar:CalendarItemTemplateSelector.WeekNameTemplate>
-                                </calendar:CalendarItemTemplateSelector>
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                    </calendar:SfCalendar.Resources>
-</calendar:SfCalendar>
+<Grid>
+    <Grid.Resources>
+        <DataTemplate x:Key="WeekNameAndNumberTemplate">
+            <Viewbox >
+                <Grid>
+                    <Ellipse Width="30" 
+                                Height="30" 
+                                Fill="WhiteSmoke"
+                                HorizontalAlignment="Center" VerticalAlignment="Center"
+                                Margin="1" />
+                    <TextBlock Text="{Binding DisplayText}" 
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center" 
+                                Foreground="DeepSkyBlue"/>
+                </Grid>
+            </Viewbox>
+        </DataTemplate>
+    </Grid.Resources>
+    <calendar:SfCalendar WeekNumberRule="FirstFourDayWeek"
+                         ShowWeekNumbers="True">
+        <calendar:SfCalendar.Resources>
+            <Style TargetType="calendar:CalendarItem">
+                <Setter Property="ContentTemplateSelector">
+                    <Setter.Value>
+                        <calendar:CalendarItemTemplateSelector WeekNameTemplate="{StaticResource WeekNameAndNumberTemplate}" 
+                                                                WeekNumberTemplate="{StaticResource WeekNameAndNumberTemplate}" />
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </calendar:SfCalendar.Resources>
+    </calendar:SfCalendar>
+</Grid>
 
 {% endhighlight %}
 {% endtabs %}
