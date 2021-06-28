@@ -61,6 +61,17 @@ Use to display the boolean type data.
 </tr>
 <tr>
 <td>
+{{'[GridDateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html)'| markdownify }}
+</td>
+<td>
+{{'[GridCellDateRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Renderers.GridCellDateRenderer.html)'| markdownify }}
+</td>
+<td>
+Use to display the date time value.
+</td>
+</tr>
+<tr>
+<td>
 {{'[GridImageColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridImageColumn.html)'| markdownify }}
 </td>
 <td>
@@ -661,6 +672,78 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Ship City", Mappi
 {% endtabs %}
 
 ![Enabled Spell Checker to WinUI DataGrid Column](Column-Types_images/winui-datagrid-spellchecker.png)
+
+## GridDateColumn
+
+`GridDateColumn` derived from `GridTextColumnBase` and it displays columns data as date time. It hosts [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) element in editing mode.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfuion:SfDataGrid x:Name="dataGrid" 
+                       ItemsSource="{Binding Orders}"
+                       AutoGenerateColumns="False" 
+                       AllowEditing="True" >
+    <syncfuion:SfDataGrid.Columns>
+        <syncfuion:GridTextColumn MappingName="OrderID"  />
+        <syncfuion:GridTextColumn MappingName="CustomerID" />
+        <syncfuion:GridTextColumn MappingName="CustomerName" />
+        <syncfuion:GridTextColumn MappingName="Country" />
+        <syncfuion:GridTextColumn MappingName="ShipCity" />
+        <syncfuion:GridDateColumn MappingName="Date" />
+    </syncfuion:SfDataGrid.Columns>
+</syncfuion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.Columns.Add(new GridDateColumn() { HeaderText = "Date", MappingName = "Date" });
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI DataGrid Column with DateColumn](Column-Types_images/winui-datagrid-DateColumn-column.png)
+
+### Change the Format of date time value
+
+You can edit and display the selected date with various formatting like date, month and year formats by using the `DisplayDateFormat` property. The default value of DisplayDateFormat property is d. For example below image shown the DateColumn with DisplayDateFormat as M.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfuion:SfDataGrid x:Name="dataGrid" 
+                       ItemsSource="{Binding Orders}"
+                       AutoGenerateColumns="False" 
+                      ColumnWidthMode="Auto"
+                       AllowEditing="True" >
+    <syncfuion:SfDataGrid.Columns>
+        <syncfuion:GridDateColumn MappingName="Date" DisplayDateFormat="M" />
+    </syncfuion:SfDataGrid.Columns>
+</syncfuion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.Columns.Add(new GridDateColumn() { HeaderText = "Date", MappingName = "Date" , DisplayDateFormat="M" });
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI DataGrid Column with DateColumn with Month format](Column-Types_images/winui-datagrid-DateColumn_with_M-column.png)
+
+### Null value support
+
+`GridDateColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. Instead of displaying null values, you can display hint text using `PlaceholderText`.
+
+The `PlaceholderText` does not shown, when the `AllowNull` is `false`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
+                       AutoGenerateColumns="False" 
+                       ItemsSource="{Binding Orders}">
+    <syncfusion:SfDataGrid.Columns>
+        <syncfuion:GridDateColumn MappingName="Date" AllowNull="True" PlaceholderText="Select a date" />
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
+
+### Setting date time value range
+
+You can restrict and display the input value within the range using `MinDate` and `MaxDate` properties.
 
 ## GridCheckBoxColumn
 
