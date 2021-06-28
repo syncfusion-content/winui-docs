@@ -29,10 +29,19 @@ The available shapes are
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
+
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis> 
+
     <chart:SfCartesianChart.Series>
         <chart:FastScatterBitmapSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" ScatterHeight="7" ScatterWidth="7"/>
     </chart:SfCartesianChart.Series>
+
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -40,7 +49,11 @@ The available shapes are
 {% highlight C# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+NumericalAxis primaryAxis = new NumericalAxis();
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
+
 FastScatterBitmapSeries series = new FastScatterBitmapSeries()
 {
     ItemsSource = new ViewModel().Data,

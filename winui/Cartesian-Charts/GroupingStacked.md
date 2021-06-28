@@ -16,7 +16,15 @@ Chart provides support to group the stacked similar series by using the [`GroupN
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis />
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>  
+    
     <chart:StackedColumnSeries GroupName="Group1" XBindingPath="Year" 
             YBindingPath="Quarter1" ItemsSource="{Binding AnnualDetails}"/>
 
@@ -37,7 +45,10 @@ Chart provides support to group the stacked similar series by using the [`GroupN
 
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
-...
+CategoryAxis primaryAxis = new CategoryAxis();
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
 
 StackedColumnSeries series1 = new StackedColumnSeries()
 {

@@ -18,7 +18,15 @@ The [`StackedColumnSeries`]() resembles multiple of column series and each serie
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis />
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>  
+
     <chart:StackedColumnSeries XBindingPath="CountryName"    
             YBindingPath="GoldMedals" ItemsSource="{Binding MedalDetails}"/>
 
@@ -35,7 +43,10 @@ The [`StackedColumnSeries`]() resembles multiple of column series and each serie
 
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
-...
+CategoryAxis primaryAxis = new CategoryAxis();
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
 
 StackedColumnSeries series1 = new StackedColumnSeries()
 {
@@ -78,7 +89,14 @@ The [`StackedLineSeries`]() resembles multiple of line series and each series is
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis />
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>  
 
     <chart:StackedLineSeries  
             XBindingPath="MonthlyExpenses"    
@@ -103,8 +121,10 @@ The [`StackedLineSeries`]() resembles multiple of line series and each series is
 
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
-
-...
+CategoryAxis primaryAxis = new CategoryAxis();
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
 
 StackedLineSeries series1 = new StackedLineSeries()
 {
@@ -147,7 +167,15 @@ The [`StackedAreaSeries`]() is representing the multiple of area series are stac
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis />
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>  
+
     <chart:StackedAreaSeries XBindingPath="Month" 
         YBindingPath="Bus" ItemsSource="{Binding Accidents}" />
 
@@ -165,7 +193,10 @@ The [`StackedAreaSeries`]() is representing the multiple of area series are stac
 
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
-...
+CategoryAxis primaryAxis = new CategoryAxis();
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
 
 StackedAreaSeries series1 = new StackedAreaSeries()
 {
