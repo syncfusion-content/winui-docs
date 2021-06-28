@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Title in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about title with Syncfusion WinUI Cartesian Chart (SfCartesianChart) control and its customization.
+title: Title in WinUI Chart control | Syncfusion
+description: Learn here all about title with Syncfusion WinUI Chart (SfCartesianChart) control and its customization.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Chart title in WinUI Cartesian Chart (SfCartesianChart)
+# Chart Title in WinUI Chart (SfCartesianChart)
 
 [Header]() property is used to define the title for the chart.
 
@@ -32,9 +32,9 @@ this.Content = chart;
 
 {% endtabs %} 
 
-![Title support in WinUI Cartesian chart](Title_Images/WinUI_cartesian_chart_title.png)
+![Title support in WinUI chart](Title_images/WinUI_chart_title.png)
 
-## Title customization
+## Customization
 
 Chart provides support to add any `UIElement` as a title. The following code example defines `TextBlock` as chart header.
 
@@ -82,9 +82,9 @@ this.Content = chart;
 
 {% endtabs %} 
 
-![Title customization support in WinUI Cartesian chart](Title_Images/WinUI_cartesian_chart_title_customization.png)
+![Title customization support in WinUI chart](Title_images/WinUI_chart_title_customization.png)
 
-## Title alignment
+## Alignment
 
 The title text content can be aligned horizontally to the left, center or right of the chart using the [HorizontalHeaderAlignment]() property of the `SfCartesianChart`.
 
@@ -134,5 +134,4 @@ this.Content = chart;
 
 {% endtabs %} 
 
-![Title text alignment support in WinUI Cartesian chart](Title_images/WinUI_cartesian_chart_title_alignment.png)
-
+![Title text alignment support in WinUI chart](Title_images/WinUI_chart_title_alignment.png)

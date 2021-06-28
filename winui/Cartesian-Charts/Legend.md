@@ -1,17 +1,15 @@
 ---
 layout: post
-title: Legend in WinUI Cartesian Chart control | Syncfusion
-description: This sections explains about how to configure the legend and its features title, icons, labels, and template in WinUI Cartesian Chart control.
+title: Legend in WinUI Chart control | Syncfusion
+description: This sections explains about how to configure the legend and its features title, icons, labels, and template in WinUI Chart control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Legend in WinUI Cartesian Chart (SfCartesianChart)
+# Legend in WinUI Chart (SfCartesianChart)
 
 The legend contains a list of series data points in the chart. The information provided in each legend item helps you to identify the corresponding series in the chart. This allows us to specify the `Label` for each series which is to be displayed in legend label.
-
-The following code example shows how to enable legend in the chart.
 
 {% tabs %}
 
@@ -52,9 +50,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Legend support in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_legend.png)
+![Legend support in WinUI Chart](Legend_images/WinUI_chart_legend.png)
 
-## Legend title
+## Title
 
 Cartesian chart provides support to add any `UIElement` as a title for legend. [Header]() property of `ChartLegend` is used to define the title for legend as the following code example.
 
@@ -101,9 +99,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Legend title in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_legend_header.png)
+![Legend title in WinUI Chart](Legend_images/WinUI_chart_legend_header.png)
 
-## Legend icon
+## Icon
 
 Legend icon represents a symbol associated with the each legend item. `LegendIcon` property of series is used to set the icon type for legend item. By default, the legend icon is [`SeriesType`]().
 
@@ -148,15 +146,13 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Legend icon in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_legend_icon.png)
+![Legend icon in WinUI Chart](Legend_images/WinUI_chart_legend_icon.png)
 
 The appearance of the legend icon can be customized using the below properties.
 
 * [IconWidth]() - Gets or sets the double value that represents the legend icon(s) width.
 * [IconHeight]() - Gets or sets the double value that represents the legend icon(s) height.
 * [IconVisibility]() - Gets or sets the visibility of the legend icon.
-
-The following code example illustrates the customization of the legend icon.
 
 {% tabs %}
 
@@ -183,9 +179,9 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend icon in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_legend_customize.png)
+![Legend icon in WinUI Chart](Legend_images/WinUI_chart_legend_customize.png)
 
-### Custom legend icon
+### Custom Icon
 
 Cartesian chart provides support to add custom icon for the legend using [LegendIconTemplate]() property of series as in below example.
 
@@ -233,9 +229,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Custom legend icon in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_custom_legend_icon.png)
+![Custom legend icon in WinUI Chart](Legend_images/WinUI_chart_custom_legend_icon.png)
 
-## Legend icon visibility
+## Icon Visibility
 
 The [VisibilityOnLegend]() property of series is used to enable/disable the visibility of legend icon as shown in below example.
 
@@ -291,9 +287,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Legend icon visibility support in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_series_icon_visibility.png)
+![Legend icon visibility support in WinUI Chart](Legend_images/WinUI_chart_series_icon_visibility.png)
 
-## Legend item spacing
+## Item spacing
 
 [ItemMargin]() property of the `ChartLegend` is used to provide spacing between each legend items.
 
@@ -318,9 +314,9 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend item spacing support in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_legend_item_spacing.png)
+![Legend item spacing support in WinUI Chart](Legend_images/WinUI_chart_legend_item_spacing.png)
 
-## Checkbox for legend
+## Checkbox for Legend
 
 Cartesian chart provides support to enable the checkbox for each legend item to visible or collapse the associated series. By default, the value of [CheckBoxVisibility]() property is `Collapsed`. 
 
@@ -345,13 +341,13 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Checkbox support for legend in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_legend_checkBox.png)
+![Checkbox support for legend in WinUI Chart](Legend_images/WinUI_chart_legend_checkBox.png)
 
 The series can be collapsed by unchecking the checkbox as below:
 
-![Checkbox support for legend in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_legend_checkBox_uncheck.png)
+![Checkbox support for legend in WinUI Chart](Legend_images/WinUI_chart_legend_checkBox_uncheck.png)
 
-## Toggle series visibility 
+## Toggle Series Visibility 
 
 The visibility of the series can be control by tapping the legend item by enabling the [ToggleSeriesVisibility]() property. By default, the value of [ToggleSeriesVisibility]() property is `False`.
 
@@ -376,13 +372,13 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![ToggleSeriesVisibility support for legend in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_legend_toggleSeriesVisibility.png)
+![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/WinUI_chart_legend_toggleSeriesVisibility.png)
 
 By clicking on disabled legend item, we can view the associated `series`, 
 
-![ToggleSeriesVisibility support for legend in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_legend_toggleSeriesVisibility1.png)
+![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/WinUI_chart_legend_toggleSeriesVisibility1.png)
 
-## Positioning the legend
+## Position
 
 The legends can be placed either inside or outside of the chart area (plotting area). By default, it will be displayed outside and positioned at top (using [DockPosition]()) of the chart area.
 
@@ -407,9 +403,9 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Positioning support for legend in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_legend_position.png)
+![Positioning support for legend in WinUI Chart](Legend_images/WinUI_chart_legend_position.png)
 
-### Docking the legend position
+### Docking the Legend Position
 
 By using the [DockPosition]() property, legends can be docked to the left, right, and top or bottom of the chart area. By default, the chart legend is docked at the top of the chart as mentioned earlier.
 
@@ -436,9 +432,9 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Positioning the legend at right in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_legend_dockPosition.png)
+![Positioning the legend at right in WinUI Chart](Legend_images/WinUI_chart_legend_dockPosition.png)
 
-### Floating legends
+### Floating Legends
 
 To position the legend at any arbitrary location within the chart, you need to set [DockPosition]() as `Floating` and provide its relative position by using the [OffsetX]() and [OffsetY]() properties.
 
@@ -467,9 +463,9 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Floating legend support in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_legend_floating.png)
+![Floating legend support in WinUI Chart](Legend_images/WinUI_chart_legend_floating.png)
 
-## Legend orientation
+## Orientation
 
 Orientation of the legend items can be aligned vertically or horizontally by setting the [Orientation]() property of legend. By default, the value of [Orientation]() property is [Horizontal]().
 
@@ -494,9 +490,9 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend orientation support in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_legend_orientation.png)
+![Legend orientation support in WinUI Chart](Legend_images/WinUI_chart_legend_orientation.png)
 
-## Legend background customization 
+## Background customization 
 
 The legend background appearance can be customized by using the following properties:
 
@@ -534,9 +530,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend background customization in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_legend_background_customization.png)
-
-## Legend template customization
+## Template
 
 Customize each legend item by using the [ItemTemplate]() property in `ChartLegend`, as shown in the following code sample.
 
@@ -576,6 +570,4 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Legend ItemTemplate support in WinUI Cartesian Chart](Legend_images/WinUI_cartesian_chart_legend_itemTemplate.png)
-
-
+![Legend ItemTemplate support in WinUI Chart](Legend_images/WinUI_chart_legend_itemTemplate.png)
