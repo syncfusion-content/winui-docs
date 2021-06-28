@@ -47,47 +47,6 @@ chart.Series.Add(series);
 
 ![Segment selection support in WinUI Pie Chart](Selection_Images/WinUI_pie_chart_selection.png)
 
-## Series Selection
-
-Series selection is used to highlight a particular series while using multiple series. Series selection is enable by setting [Type]() property value as [Series]() in [ChartSelectionBehavior](). The [SeriesSelectionBrush]() property is used to set the brush color to highlight the series.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<chart:SfCircularChart>
-    <chart:SfCircularChart.Behaviors>
-        <chart:ChartSelectionBehavior SeriesSelectionBrush="BlueViolet" Type="Series"/>
-    </chart:SfCircularChart.Behaviors>
-<chart:SfCircularChart.Series>
-    <chart:PieSeries Label="Continents" />
-    <chart:PieSeries Label="Countries" />
-</chart:SfCircularChart.Series>
-
-</chart:SfCircularChart.Series>
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCircularChart chart = new SfCircularChart();
-
-ChartSelectionBehavior selection = new ChartSelectionBehavior();
-selection.Type = SelectionType.Series;
-selection.SeriesSelectionBrush = new SolidColorBrush(Colors.BlueViolet);
-chart.Behaviors.Add(selection);
-
-PieSeries series = new PieSeries() { Label = "Continents" };
-PieSeries series1 = new PieSeries() { Label = "Countries" };
-. . .
-chart.Series.Add(series);
-chart.Series.Add(series1);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Series selection support in WinUI Pie Chart](Selection_Images/WinUI_pie_chart_series_selection.png)
-
 ## Multi-selection
 
 Circular chart allows to select single or multiple segment\series using [Type]() property. By default the [Type]() value is [Point]().

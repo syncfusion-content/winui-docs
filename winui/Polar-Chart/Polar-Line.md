@@ -73,7 +73,7 @@ chart.Series.Add(series3);
 
 ## Grid line type
 
-The [GridLineType]() property is used to change the rendering type of axis grid lines. The default value of [GridLineType]() is `Circle`. By changing the grid line type as `Polygon`, we can shown the polar chart similar like spider chart or web chart. 
+The [GridLineType]() property is used to change the rendering type of axis grid lines. The default value of [GridLineType]() is `Circle`. By changing the grid line type as `Polygon`, we can shown the polar chart similar like radar chart or spider chart or web chart. 
 
 {% tabs %}
 

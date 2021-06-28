@@ -43,7 +43,7 @@ chart.Series.Add(series);
 
 ![Pie series type in WinUI Chart](Series_images/pie_chart.png)
 
-### Circular coefficient
+## Circular Coefficient
 
 The rendering size of the [PieSeries]() can be controlled using the [CircularCoefficient]() property as shown in the following code sample.
 
@@ -56,7 +56,8 @@ The rendering size of the [PieSeries]() can be controlled using the [CircularCoe
     <chart:SfCircularChart.Series>
         <chart:PieSeries ItemsSource="{Binding Data}" 
                          XBindingPath="Product" 
-                         YBindingPath="SalesRate"/>
+                         YBindingPath="SalesRate"
+                         CircularCoefficient = "0.9"/>
     </chart:SfCircularChart.Series>
         
 </chart:SfCircularChart>
@@ -80,7 +81,7 @@ chart.Series.Add(series);
 
 ![Circular coefficient support in WinUI Chart](Series_images/pie_circularcoefficient.png)
 
-### Group small data points into “others”
+## Group small data points into “others”
 
 The small segments in the pie chart can be grouped into the “others” category using the [GroupTo]() and [GroupMode]() properties of [PieSeries]().
 
@@ -138,7 +139,7 @@ chart.Series.Add(series);
 
 ![Pie series with grouping feature in value mode](Series_images/pie_groupmode_value.png)
 
-## Semi-pie
+## Semi Pie
 
 By using the [StartAngle]() and [EndAngle]() properties, you can draw pie series in different shapes such as semi-pie or quarter pie series.
 
