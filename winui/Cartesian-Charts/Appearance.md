@@ -55,7 +55,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Predefined palette in WinUI Cartesian Chart](Appearance_images/WinUI_chart_predefined_palette.png)
+![Predefined palette in WinUI Chart](Appearance_images/WinUI_chart_predefined_palette.png)
 
 The following code example defined [`Palette`]() as [`BlueChrome`]().
 
