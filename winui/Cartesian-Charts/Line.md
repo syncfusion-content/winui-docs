@@ -204,3 +204,50 @@ this.Content = chart;
 
 ![Spline chart type in WinUI Chart](Chart-types_images/WinUI_spline_chart.png)
 
+### Spline rendering types
+
+The [SplineType]() allows you to change the spline curve in series. By default, the value of [SplineType]() is `Natural`.
+
+The following types are used in SplineSeries:
+
+* `Natural`
+* `Monotonic`
+* `Cardinal`
+* `Clamped`
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart>
+. . .            
+    <chart:SfCartesianChart.Series>
+        <chart:SplineSeries XBindingPath="Demand" ItemsSource="{Binding Data}" YBindingPath="Year2010" SplineType="Cardinal"/>
+    </chart:SfCartesianChart.Series>
+
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+. . .
+SplineSeries series = new SplineSeries()
+{
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "Demand",
+    YBindingPath = "Year2010",
+    SplineType = SplineType.Cardinal
+};
+
+chart.Series.Add(series);
+
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Spline types chart in WinUI Chart](Chart-types_images/WinUI_spline_types_chart.png)
+
