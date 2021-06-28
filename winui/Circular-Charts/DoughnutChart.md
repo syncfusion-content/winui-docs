@@ -41,7 +41,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Doughnut series type in WinUI Circular chart](Series_images/doughnut_chart.png)
+![Doughnut series type in WinUI chart](Series_images/doughnut_chart.png)
 
 ### Doughnut coefficient
 
@@ -78,7 +78,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Doughnut coefficient support in WinUI Circular Chart](Series_images/doughnut_coefficient.png)
+![Doughnut coefficient support in WinUI Chart](Series_images/doughnut_coefficient.png)
 
 ### Doughnut size
 
@@ -116,7 +116,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Doughnut size support in WinUI Circular Chart](Series_images/doughnut_size.png)
+![Doughnut size support in WinUI Chart](Series_images/doughnut_size.png)
 
 ## Multiple Doughnut
 
@@ -172,7 +172,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![Multiple doughnut series support in WinUI Circular Chart](Series_images/winui-multiple-doughnut-serie.png)
+![Multiple doughnut series support in WinUI Chart](Series_images/winui-multiple-doughnut-series.png)
 
 ## Semi Doughnut
 
@@ -211,4 +211,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Semi doughnut support in WinUI Circular Chart](Series_images/semi_doughnut_chart.png)
+![Semi doughnut support in WinUI Chart](Series_images/semi_doughnut_chart.png)

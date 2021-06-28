@@ -156,7 +156,7 @@ ChartViewModel viewModel = new ChartViewModel();
 chart.DataContext = viewModel;
 
 PieSeries series = new PieSeries();
-series.SetBinding(PieSeries.ItemsSourceProperty, new Bindin() { Path = new PropertyPath("Data") });
+series.SetBinding(PieSeries.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
 
@@ -330,6 +330,6 @@ public sealed partial class MainWindow : Window
 
 {% endtabs %}
 
-![Pie chart in WinUI Circular Chart](Getting-Started_Images/WinUI_pie_chart.png)
+![Pie chart in WinUI Chart](Getting-Started_Images/WinUI_pie_chart.png)
 
 N> Download demo application from [GitHub]()
