@@ -336,14 +336,6 @@ chart.Series.Add(series);
  
 ![Connector line with Bezier type in WinUI Chart](DataLabel_Images/WinUI_piec_chart_data_label_bezier_line.png)
 
- **Line** 
- 
- ![Connector line with Line type in WinUI Chart](DataLabel_Images/WinUI_pie_chart_data_label_line.png) 
-
-**Straight Line**
-
-![Connector line with StraightLine type in WinUI Chart](DataLabel_Images/WinUI_pie_chart_data_label_straight_line.png)
-
 ## Applying Series Interior
 
 [`UseSeriesPalette`]() property is used to set the interior of the series to the data label background. 

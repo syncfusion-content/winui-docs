@@ -11,9 +11,45 @@ documentation: ug
 
 Polar chart supports the following types of chart axis.
 
-* NumericalAxis
 * CategoryAxis
+* NumericalAxis
 * DateTimeAxis
+
+## Category Axis
+
+The [CategoryAxis]() is an indexed based axis that plots values based on the index of the data point collection. The points are equally spaced here.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfPolarChart>
+
+    <chart:SfPolarChart.PrimaryAxis>
+        <chart:CategoryAxis/>
+    </chart:SfPolarChart.PrimaryAxis>
+
+    <chart:SfPolarChart.SecondaryAxis>
+        <chart:NumericalAxis/>
+    </chart:SfPolarChart.SecondaryAxis>
+...
+
+</chart:SfPolarChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfPolarChart chart = new SfPolarChart();
+chart.PrimaryAxis = new CategoryAxis();
+chart.SecondaryAxis = new NumericalAxis();
+...
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![CategoryAxis support in WinUI Chart](Axis_Images/WinUI_Chart_CategoryAxis.png)
 
 ## Numerical Axis
 
@@ -123,42 +159,6 @@ chart.SecondaryAxis = new NumericalAxis()
 {% endtabs %}
 
 ![NumericalAxis support in WinUI Chart](Axis_Images/WinUI_Chart_NumericalAxis_StartRangeFromZero.png)
-
-## Category Axis
-
-The [CategoryAxis]() is an indexed based axis that plots values based on the index of the data point collection. The points are equally spaced here.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfPolarChart>
-
-    <chart:SfPolarChart.PrimaryAxis>
-        <chart:CategoryAxis/>
-    </chart:SfPolarChart.PrimaryAxis>
-
-    <chart:SfPolarChart.SecondaryAxis>
-        <chart:NumericalAxis/>
-    </chart:SfPolarChart.SecondaryAxis>
-...
-
-</chart:SfPolarChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfPolarChart chart = new SfPolarChart();
-chart.PrimaryAxis = new CategoryAxis();
-chart.SecondaryAxis = new NumericalAxis();
-...
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![CategoryAxis support in WinUI Chart](Axis_Images/WinUI_Chart_CategoryAxis.png)
 
 ## DateTime Axis
 

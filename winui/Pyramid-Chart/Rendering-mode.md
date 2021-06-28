@@ -9,7 +9,7 @@ documentation: ug
 
 # Rendering Mode in WinUI Chart (SfPyramidChart)
 
-The [PyramidMode]() is used to define the rendering mode of pyramid chart such as [Surface]() or [Linear](). The default value of [PyramidMode]() property is `Linear`.
+The Pyramid [Mode]() is used to define the rendering mode of pyramid chart such as [Surface]() or [Linear](). The default value of [Mode]() property is `Linear`.
 
 ## Surface Type
 

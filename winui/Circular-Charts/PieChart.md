@@ -138,7 +138,7 @@ chart.Series.Add(series);
 
 ![Pie series with grouping feature in value mode](Series_images/pie_groupmode_value.png)
 
-## Semi-pie
+## Semi Pie
 
 By using the [StartAngle]() and [EndAngle]() properties, you can draw pie series in different shapes such as semi-pie or quarter pie series.
 

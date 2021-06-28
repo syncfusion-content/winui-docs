@@ -49,5 +49,5 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Scatter chart type in WinUI Chart](Chart-Types_images/WinUI_scatter_chart.png)
+![Scatter chart type in WinUI Chart](Chart-types_images/WinUI_scatter_chart.png)
 
