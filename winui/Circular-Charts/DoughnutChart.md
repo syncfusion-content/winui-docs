@@ -118,6 +118,62 @@ chart.Series.Add(series2);
 
 ![Doughnut size support in WinUI Circular Chart](Series_images/doughnut_size.png)
 
+## Multiple Doughnut
+
+Added the multiple Doughnut series added in the [SfCircularChart]()
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCircularChart>
+
+    <chart:SfCircularChart.Series>
+         <chart:SfCircularChart.Series>
+                <chart:DoughnutSeries ItemsSource="{Binding Data}" 
+                         XBindingPath="Product" 
+                         YBindingPath="SalesRate1">
+                </chart:DoughnutSeries>
+                <chart:DoughnutSeries ItemsSource="{Binding Data}" 
+                         XBindingPath="Product" 
+                         YBindingPath="SalesRate2">
+                </chart:DoughnutSeries>
+                <chart:DoughnutSeries ItemsSource="{Binding Data}" 
+                         XBindingPath="Product" 
+                         YBindingPath="SalesRate3">
+                </chart:DoughnutSeries>
+            </chart:SfCircularChart.Series>
+    </chart:SfCircularChart.Series>
+
+</chart:SfCircularChart>
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularChart chart = new SfCircularChart();
+
+DoughnutSeries series1 = new DoughnutSeries();
+series1.XBindingPath = "Product";
+series1.YBindingPath = "SalesRate1";
+
+DoughnutSeries series2 = new DoughnutSeries();
+series2.XBindingPath = "Product";
+series2.YBindingPath = "SalesRate2";
+
+DoughnutSeries series3 = new DoughnutSeries();
+series3.XBindingPath = "Product";
+series3.YBindingPath = "SalesRate3";
+
+chart.Series.Add(series1);
+chart.Series.Add(series2);
+chart.Series.Add(series3);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Multiple doughnut series support in WinUI Circular Chart](Series_images/winui-multiple-doughnut-serie.png)
+
 ## Semi Doughnut
 
 By using the [StartAngle]() and [EndAngle]() properties, you can draw doughnut series in different shapes such as semi-doughnut or quarter doughnut series.
