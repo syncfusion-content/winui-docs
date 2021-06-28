@@ -9,6 +9,33 @@ documentation: ug
 
 # Header in WinUI Charts (SfCircularChart)
 
+`Header` property is used to define the title for the chart.
+
+{% tabs %}   
+
+{% highlight xaml %}
+
+<chart:SfCircularChart x:Name="chart" Header="Circular Chart Header">
+ . . .           
+</chart:SfCircularChart>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+SfCircularChart chart = new SfCircularChart();
+chart.Header = "Circular Chart Header";
+. . . 
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+![Title support in WinUI chart](Header_Images/winui_chart_title.png)
+
+## Customization
+
 `Header` property of `SfCircularChart` is used to define and customize the chart title. It accepts any object (.Net object) as content for the chart header.
 
 {% tabs %}
