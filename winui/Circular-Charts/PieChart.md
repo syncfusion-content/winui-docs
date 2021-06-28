@@ -43,7 +43,7 @@ chart.Series.Add(series);
 
 ![Pie series type in WinUI Chart](Series_images/pie_chart.png)
 
-### Circular coefficient
+## Circular Coefficient
 
 The rendering size of the [PieSeries]() can be controlled using the [CircularCoefficient]() property as shown in the following code sample.
 
@@ -56,7 +56,8 @@ The rendering size of the [PieSeries]() can be controlled using the [CircularCoe
     <chart:SfCircularChart.Series>
         <chart:PieSeries ItemsSource="{Binding Data}" 
                          XBindingPath="Product" 
-                         YBindingPath="SalesRate"/>
+                         YBindingPath="SalesRate"
+                         CircularCoefficient = "0.9"/>
     </chart:SfCircularChart.Series>
         
 </chart:SfCircularChart>
@@ -80,7 +81,7 @@ chart.Series.Add(series);
 
 ![Circular coefficient support in WinUI Chart](Series_images/pie_circularcoefficient.png)
 
-### Group small data points into “others”
+## Group small data points into “others”
 
 The small segments in the pie chart can be grouped into the “others” category using the [GroupTo]() and [GroupMode]() properties of [PieSeries]().
 
