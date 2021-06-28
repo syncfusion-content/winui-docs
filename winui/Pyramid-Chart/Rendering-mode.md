@@ -11,7 +11,7 @@ documentation: ug
 
 The [Mode]() property is used to define the rendering mode of pyramid chart such as [Surface]() or [Linear](). The default value of [Mode]() property is `Linear`.
 
-## Surface Type
+## Surface Mode
 
 The [Surface]() mode is used to rendering the area of pyramid chart segments based on data point values.
 
@@ -46,7 +46,7 @@ this.Content = chart;
 
 ![Rendering mode with area in WinUI chart](Rendering-mode_images/WinUI_chart_surface.png)
 
-## Linear Type
+## Linear Mode
 
 The [Linear]() mode is used to rendering the height of pyramid chart segments based on data point values.
 
