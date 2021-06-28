@@ -682,13 +682,14 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Ship City", Mappi
 <syncfuion:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
+                      ColumnWidthMode="Star"
                        AllowEditing="True" >
     <syncfuion:SfDataGrid.Columns>
-        <syncfuion:GridTextColumn MappingName="OrderID"  />
-        <syncfuion:GridTextColumn MappingName="CustomerID" />
-        <syncfuion:GridTextColumn MappingName="CustomerName" />
+        <syncfuion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <syncfuion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfuion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
         <syncfuion:GridTextColumn MappingName="Country" />
-        <syncfuion:GridTextColumn MappingName="ShipCity" />
+        <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
         <syncfuion:GridDateColumn MappingName="Date" />
     </syncfuion:SfDataGrid.Columns>
 </syncfuion:SfDataGrid>
