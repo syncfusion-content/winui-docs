@@ -41,9 +41,65 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Doughnut series type in WinUI Circular chart](Series_images/doughnut_chart.png)
+![Doughnut series type in WinUI chart](Series_images/doughnut_chart.png)
 
-### Doughnut coefficient
+## Multiple Doughnut
+
+Circular chart provides support add the multiple doughnut series in a single chart.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCircularChart>
+
+    <chart:SfCircularChart.Series>
+         <chart:SfCircularChart.Series>
+                <chart:DoughnutSeries ItemsSource="{Binding Data}" 
+                         XBindingPath="Product" 
+                         YBindingPath="SalesRate1">
+                </chart:DoughnutSeries>
+                <chart:DoughnutSeries ItemsSource="{Binding Data}" 
+                         XBindingPath="Product" 
+                         YBindingPath="SalesRate2">
+                </chart:DoughnutSeries>
+                <chart:DoughnutSeries ItemsSource="{Binding Data}" 
+                         XBindingPath="Product" 
+                         YBindingPath="SalesRate3">
+                </chart:DoughnutSeries>
+            </chart:SfCircularChart.Series>
+    </chart:SfCircularChart.Series>
+
+</chart:SfCircularChart>
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularChart chart = new SfCircularChart();
+
+DoughnutSeries series1 = new DoughnutSeries();
+series1.XBindingPath = "Product";
+series1.YBindingPath = "SalesRate1";
+
+DoughnutSeries series2 = new DoughnutSeries();
+series2.XBindingPath = "Product";
+series2.YBindingPath = "SalesRate2";
+
+DoughnutSeries series3 = new DoughnutSeries();
+series3.XBindingPath = "Product";
+series3.YBindingPath = "SalesRate3";
+
+chart.Series.Add(series1);
+chart.Series.Add(series2);
+chart.Series.Add(series3);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Multiple doughnut series support in WinUI Chart](Series_images/winui-multiple-doughnut-series.png)
+
+## Doughnut Coefficient
 
 The [DoughnutCoefficient]() property of doughnut series is used to define the inner circle. It also has [DoughnutSize]() property, which is used to define the size for this series, similar to [CircularCoefficient]() in `PieSeries`.
 
@@ -78,9 +134,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Doughnut coefficient support in WinUI Circular Chart](Series_images/doughnut_coefficient.png)
+![Doughnut coefficient support in WinUI Chart](Series_images/doughnut_coefficient.png)
 
-### Doughnut size
+## Doughnut Size
 
 The size of doughnut series can be customized by using the [DoughnutSize]() property. The following code illustrates how to use this property in series.
 
@@ -116,7 +172,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Doughnut size support in WinUI Circular Chart](Series_images/doughnut_size.png)
+![Doughnut size support in WinUI Chart](Series_images/doughnut_size.png)
 
 ## Semi Doughnut
 
@@ -155,4 +211,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Semi doughnut support in WinUI Circular Chart](Series_images/semi_doughnut_chart.png)
+![Semi doughnut support in WinUI Chart](Series_images/semi_doughnut_chart.png)

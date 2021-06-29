@@ -18,7 +18,15 @@ The [FastLineSeries]() is a special kind of line series that can render a collec
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
+
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:DateTimeAxis />
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>  
+
     <chart:SfCartesianChart.Series>
         <chart:FastLineSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue"/>
     </chart:SfCartesianChart.Series>
@@ -29,7 +37,11 @@ The [FastLineSeries]() is a special kind of line series that can render a collec
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+DateTimeAxis primaryAxis = new DateTimeAxis();
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
+
 FastLineSeries series = new FastLineSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -54,10 +66,19 @@ The [FastLineBitmapSeries]() displays a series of line segments, rendered using 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
+
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:DateTimeAxis />
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>  
+
     <chart:SfCartesianChart.Series>
         <chart:FastLineBitmapSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue"/>
     </chart:SfCartesianChart.Series>
+
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -65,7 +86,11 @@ The [FastLineBitmapSeries]() displays a series of line segments, rendered using 
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+DateTimeAxis primaryAxis = new DateTimeAxis();
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
+
 FastLineBitmapSeries series = new FastLineBitmapSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -90,10 +115,19 @@ As it was rendered using bitmap, there might be some jagged lines at the edges. 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
+
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:DateTimeAxis />
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>  
+
     <chart:SfCartesianChart.Series>
         <chart:FastLineBitmapSeries EnableAntiAliasing="True" ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue"/>
     </chart:SfCartesianChart.Series>
+    
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -101,7 +135,11 @@ As it was rendered using bitmap, there might be some jagged lines at the edges. 
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+DateTimeAxis primaryAxis = new DateTimeAxis();
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
+
 FastLineBitmapSeries series = new FastLineBitmapSeries()
 {
     ItemsSource = new ViewModel().Data,

@@ -9,7 +9,34 @@ documentation: ug
 
 # Chart Title in WinUI Chart (SfPolarChart)
 
-`Header` property of `SfPolarChart` is used to define and customize the chart title. It accepts any `UIElement` as content for the chart header.
+`Header` property is used to define the title for the chart.
+
+{% tabs %}   
+
+{% highlight xaml %}
+
+<chart:SfPolarChart x:Name="chart" Header="Polar Chart">
+ . . .           
+</chart:SfPolarChart>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+SfPolarChart chart = new SfPolarChart();
+chart.Header = "Polar Chart";
+. . . 
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+![Title support in WinUI chart](Title_Images/WinUI_chart_title.png)
+
+## Customization
+
+Chart provides support to add any `UIElement` as a title. The following code example defines `TextBlock` as chart header.
 
 {% tabs %}
 

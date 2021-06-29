@@ -16,7 +16,15 @@ Column chart is used to plot discrete rectangles for the given data point values
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .            
+
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis />
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>   
+
     <chart:SfCartesianChart.Series>
         <chart:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue"/>
     </chart:SfCartesianChart.Series>
@@ -28,7 +36,11 @@ Column chart is used to plot discrete rectangles for the given data point values
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+CategoryAxis primaryAxis = new CategoryAxis();
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
+
 ColumnSeries series = new ColumnSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -54,7 +66,15 @@ The [SegmentSpacing]() property is used to change the spacing between two segmen
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .            
+
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis />
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>  
+
     <chart:SfCartesianChart.Series>
         <chart:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" SegmentSpacing="0.5"/>
     </chart:SfCartesianChart.Series>
@@ -66,7 +86,11 @@ The [SegmentSpacing]() property is used to change the spacing between two segmen
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+CategoryAxis primaryAxis = new CategoryAxis();
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
+
 ColumnSeries series = new ColumnSeries()
 {
     ItemsSource = new ViewModel().Data,
