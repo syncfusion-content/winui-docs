@@ -13,7 +13,7 @@ This section describes about the various customization options available in [Cal
 
 ## Enable week numbers
 
-You can show the week numbers for each week in `Calendar` control by setting the value of `ShowWeekNumbers` property as **true**. You can also customize the week number displayed in calendar by using the `WeekNumberRule` property and `WeekNumberFormat` property. By default, the value of `ShowWeekNumber` property is **false**, `WeekNumberRule` is **FirstDay** and `WeekNumberFormat` is **#**.
+You can show the week numbers for each week in [Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control by setting the value of the `ShowWeekNumbers` property as **true**. By default, the value of the `ShowWeekNumber` property is **false**.
 
 N> You can change the `WeekNumberRule` property value with the [CalendarWeekRule](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0) and you can also add any prefix or suffix characters to **#** for `WeekNumberFormat` property.
 
@@ -37,7 +37,7 @@ sfCalendar.ShowWeekNumbers = true;
 
 ## Week rule
 
-You can change the rule for determining the first week of the year in `Calendar` control using the `WeekNumberRule` property. The default value of the `WeekNumberRule` property is **FirstDay**. You can apply any one of the below rules to `WeekNumberRule` property.
+You can change the rule for determining the first week of the year in [Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control using the `WeekNumberRule` property. The default value of the `WeekNumberRule` property is **FirstDay**. You can apply any one of the below rules to `WeekNumberRule` property.
 
 * **FirstDay** - Indicates that the first week of the year begins on the first day of the year and ends before the following designated first day of the week.
 
@@ -66,7 +66,7 @@ sfCalendar.WeekNumberRule = CalendarWeekRule.FirstFullWeek;
 
 ## Format week numbers
 
-You can customize the format in which week numbers are displayed in `Calendar` control using `WeekNumberFormat` property. The default value of `WeekNumberFormat` property is **#**.
+You can customize the format in which week numbers are displayed in [Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control using `WeekNumberFormat` property. The default value of `WeekNumberFormat` property is **#**.
 
 N> You can add any prefix or suffix characters to **#** in `WeekNumberFormat` property to apply different custom formats.
 
@@ -92,7 +92,7 @@ sfCalendar.WeekNumberFormat = "W #";
 
 ## Customize the week number and name of days of the week appearance
 
-`Calendar` control also allows you to customize the template of the week numbers using `WeekNumberTemplate` property and the template of name of days of the week using `WeekNameTemplate` property in the `CalendarItemTemplateSelector` class. 
+[Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control allows you to customize the template of the week numbers using `WeekNumberTemplate` property and the template of name of days of the week using `WeekNameTemplate` property in the `CalendarItemTemplateSelector` class. 
 
 In below codes we have created a `DataTemplate` for both `WeekNumberTemplate` and `WeekNameTemplate` properties in `CalendarItemTemplateSelector` class.
 
