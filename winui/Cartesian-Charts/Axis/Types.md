@@ -369,10 +369,10 @@ By default, all the series are plotted based on primary and secondary axis.
                      XBindingPath="Date"
                      YBindingPath="Value">
         <chart:ColumnSeries.XAxis>
-            <chart:DateTimeAxis LabelFormat="dd-MMM" OpposedPosition="True"/>
+            <chart:DateTimeAxis LabelFormat="dd-MMM" OpposedPosition="True" ShowGridLines="False"/>
         </chart:ColumnSeries.XAxis>
         <chart:ColumnSeries.YAxis>
-            <chart:NumericalAxis OpposedPosition="True"/>
+            <chart:NumericalAxis OpposedPosition="True" ShowGridLines="False"/>
         </chart:ColumnSeries.YAxis>
     </chart:ColumnSeries>
     <chart:SplineSeries ItemsSource="{Binding Data}" 
@@ -407,10 +407,12 @@ series1.XAxis = new DateTimeAxis()
 {
     LabelFormat = "dd-MMM",
     OpposedPosition = true,
+    ShowGridLines = false
 };
-series2.YAxis = new NumericalAxis()
+series1.YAxis = new NumericalAxis()
 {
     OpposedPosition = true,
+    ShowGridLines = false
 };
 
 chart.Series.Add(series1);
