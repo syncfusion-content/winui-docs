@@ -369,10 +369,10 @@ By default, all the series are plotted based on primary and secondary axis.
                      XBindingPath="Date"
                      YBindingPath="Value">
         <chart:ColumnSeries.XAxis>
-            <chart:DateTimeAxis LabelFormat="dd-MMM"/>
+            <chart:DateTimeAxis LabelFormat="dd-MMM" OpposedPosition="True"/>
         </chart:ColumnSeries.XAxis>
         <chart:ColumnSeries.YAxis>
-            <chart:NumericalAxis/>
+            <chart:NumericalAxis OpposedPosition="True"/>
         </chart:ColumnSeries.YAxis>
     </chart:ColumnSeries>
     <chart:SplineSeries ItemsSource="{Binding Data}" 
@@ -405,9 +405,13 @@ SplineSeries series2 = new SplineSeries()
 
 series1.XAxis = new DateTimeAxis()
 {
-    LabelFormat = "dd-MMM"
+    LabelFormat = "dd-MMM",
+    OpposedPosition = true,
 };
 series2.YAxis = new NumericalAxis();
+{
+    OpposedPosition = true,
+};
 
 chart.Series.Add(series1);
 chart.Series.Add(series2);
@@ -416,6 +420,6 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Multiple axes support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_multipleAxis.png)
+![Multiple axes support in WinUI Chart](Axis_images/winui_chart_axis_types_multipleaxis.png)
 
 In the above image, the `ColumnSeries` is plotted based on additional X & Y axes, and `SplineSeries` is plotted based on the primary and secondary axes.
