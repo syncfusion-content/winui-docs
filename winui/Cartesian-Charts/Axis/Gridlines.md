@@ -46,7 +46,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 {% endtabs %}
 
-![Gridlines customization support in WinUI Chart](Axis_images/winui_chart_axis_major_gridline.png)
+![Gridlines customization support in WinUI Chart](Axis_images/winui_chart_axis_major_gridlines.png)
 
 ### Customization
 
@@ -93,7 +93,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 {% endtabs %}
 
-![Gridlines customization support in WinUI Chart](Axis_images/winui_chart_axis_major_gridlines_style.png)
+![Gridlines customization support in WinUI Chart](Axis_images/winui_chart_axis_major_gridlines_styles.png)
 
 ## Minor Grid Lines
 
