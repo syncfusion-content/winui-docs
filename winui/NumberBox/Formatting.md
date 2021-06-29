@@ -13,7 +13,7 @@ This section explains how to change the value format of the `NumberBox` control 
 
 ## Currency, percentage and decimal format
 
-You can format the value of a `NumberBox` control using the `NumberFormatter` or `CustomFormat` property. By default the value is formatted with decimal numbers based on the culture set in the current application. The default value of `NumberFormatter` and `CustomFormat` properties are **null**.
+You can format the value of a `NumberBox` control using the `NumberFormatter` or `CustomFormat` property. By default, the value is formatted based on the current culture's decimal format. The default value of `NumberFormatter` and `CustomFormat` properties are **null**.
 
 The following example shows how to set `CurrencyFormatter`, `DecimalFormatter` and `PercentFormatter` for `NumberFormatter` property. 
 
@@ -59,7 +59,7 @@ hoursWorked.CustomFormat = "N2";
 
 ![WinUI NumberBox customize format by NumberFormatter](Formatting_images/winui-numberbox-numberformatter.png)
 
-## Change the decimal digits
+## Format the integer digits
 
 You can change the decimal digits of the value in the `NumberBox` control using `NumberFormatter` and `CustomFormat` properties. For the `NumberFormatter` property, you can customize the decimal digits of the value using the `IntegerDigits` property in `CurrencyFormatter`, `PercentFormatter`, and `DecimalFormatter` classes.
 
@@ -95,7 +95,7 @@ hoursWorked.CustomFormat = "00000.00";
 
 ![WinUI NumberBox customize decimal digits](Formatting_images/winui-numberbox-change-decimal-digits.png)
 
-## Change the fractional digits
+## Format the fractional digits
 
 You can change the fractional digits of the value in `NumberBox` control using `NumberFormatter` and `CustomFormat` properties. For the `NumberFormatter` property, you can customize the fractional digits of the value using the `IntegerDigits` property in `CurrencyFormatter`, `PercentFormatter`, and `DecimalFormatter` classes.
 

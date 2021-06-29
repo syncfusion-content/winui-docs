@@ -170,7 +170,7 @@ sfNumberBox.NumberFormatter = new CurrencyFormatter(currencyCode, new string[] {
 
 ## Accept null value
 
-By default, `NumberBox` control allows **null** value. A null value is assigned when the user clicks the clear button or clears the input. You can disable this by setting the value of `AllowNull`property as **false**. When value of the `AllowNull` property is set to **false** and the input is cleared, the `NumberBox` control returns it to **0**. 
+By default, `NumberBox` control allows **null** value. A null value is assigned when the user clicks the clear button or clears the input. You can disable this by setting the value of `AllowNull` property as **false**. When value of the `AllowNull` property is set to **false** and the input is cleared, the `NumberBox` control returns it to **0**. 
 
 {% tabs %}
 {% highlight xaml %}
