@@ -276,10 +276,6 @@ When there are more number of axis labels, they may overlap with each other. Cha
 | MultipleRows | Used to move the labels to next row if it intersects |
 | Auto | Used to rotate the labels if it intersects |
 
-**None**
-
-![Smart axis labels support in WinUI Chart](Axis_images/WinUI_Chart_Axis_label_intersection_none.png)
-
 **Hide**
 
 ![Smart axis labels support in WinUI Chart](Axis_images/WinUI_Chart_Axis_label_intersection_hide.png)

@@ -86,14 +86,14 @@ public class ChartViewModel
     {
         PlantDetails = new ObservableCollection<PlantData>()
         {
-            new PlantData(){ Direction = "North", Value = 80 },
-            new PlantData(){ Direction = "NorthWest", Value = 87 },
-            new PlantData(){ Direction = "West", Value = 78 },
-            new PlantData(){ Direction = "SouthWest", Value = 85 },
-            new PlantData(){ Direction = "South", Value = 81 },
-            new PlantData(){ Direction = "SouthEast", Value = 88 },
-            new PlantData(){ Direction = "East", Value = 80 },
-            new PlantData(){ Direction = "NorthEast", Value = 85 },
+            new PlantData(){ Direction = "North", Tree = 80 },
+            new PlantData(){ Direction = "NorthWest", Tree = 87 },
+            new PlantData(){ Direction = "West", Tree = 78 },
+            new PlantData(){ Direction = "SouthWest", Tree = 85 },
+            new PlantData(){ Direction = "South", Tree = 81 },
+            new PlantData(){ Direction = "SouthEast", Tree = 88 },
+            new PlantData(){ Direction = "East", Tree = 80 },
+            new PlantData(){ Direction = "NorthEast", Tree = 85 },
         };
     }
 }

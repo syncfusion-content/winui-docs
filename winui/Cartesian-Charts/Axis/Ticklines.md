@@ -134,7 +134,7 @@ Both major and minor tick lines can be customized by using the [MajorTickLineSty
 </chart:SfCartesianChart.Resources>
 
 <chart:SfCartesianChart.PrimaryAxis>
-    <chart:NumericalAxis MinorTickLineStyle="{StaticResource lineStyle}"  MajorTickLineStyle="{StaticResource lineStyle}" />
+    <chart:NumericalAxis SmallTicksPerInterval="4" TickLineSize="15" MinorTickLineStyle="{StaticResource lineStyle}"  MajorTickLineStyle="{StaticResource lineStyle}" />
 </chart:SfCartesianChart.PrimaryAxis>
 
 </chart:SfCartesianChart>
@@ -147,7 +147,8 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 chart.PrimaryAxis = new NumericalAxis()
 {
-    TickLineSize = 10,
+    TickLineSize = 15,
+    SmallTicksPerInterval = 4,
     MajorTickLineStyle = chart.Resources["lineStyle"] as Style,
     MinorTickLineStyle = chart.Resources["lineStyle"] as Style 
 };
