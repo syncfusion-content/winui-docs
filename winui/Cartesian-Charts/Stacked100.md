@@ -18,7 +18,15 @@ The [`StackedColumn100Series`]() resembles [StackedColumnSeries]() but the cumul
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>  
+
     <chart:StackedColumn100Series XBindingPath="CountryName" 
             YBindingPath="GoldMedals" ItemsSource="{Binding MedalDetails}"/>
 
@@ -36,7 +44,11 @@ The [`StackedColumn100Series`]() resembles [StackedColumnSeries]() but the cumul
 
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
-...
+CategoryAxis primaryAxis = new CategoryAxis();
+primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
 
 StackedColumn100Series series1 = new StackedColumn100Series()
 {
@@ -79,7 +91,14 @@ The [`StackedLine100Series`]() resembles [`StackedLineSeries`]() but the cumulat
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>  
 
     <chart:StackedLine100Series ItemsSource="{Binding Data}" 
             XBindingPath="MonthlyExpenses" 
@@ -101,7 +120,11 @@ The [`StackedLine100Series`]() resembles [`StackedLineSeries`]() but the cumulat
 
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
-...
+CategoryAxis primaryAxis = new CategoryAxis();
+primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
 
 StackedLine100Series series1 = new StackedLine100Series()
 {
@@ -144,7 +167,15 @@ The [StackedArea100Series]() is similar to [StackedAreaSeries](), but the cumula
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>  
+    
     <chart:StackedArea100Series XBindingPath="Month"         
         YBindingPath="Bus" ItemsSource="{Binding Accidents}" />
 
@@ -161,7 +192,11 @@ The [StackedArea100Series]() is similar to [StackedAreaSeries](), but the cumula
 
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
-...
+CategoryAxis primaryAxis = new CategoryAxis();
+primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
 
 StackedArea100Series series1 = new StackedArea100Series()
 {

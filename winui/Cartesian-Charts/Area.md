@@ -18,7 +18,15 @@ The area chart is rendered by using a collection of line segments connected to f
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .            
+    
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis />
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>   
+
     <chart:SfCartesianChart.Series>
         <chart:AreaSeries ItemsSource="{Binding Data}" XBindingPath="Demand" YBindingPath="Year2010"/>  
     </chart:SfCartesianChart.Series>
@@ -30,7 +38,11 @@ The area chart is rendered by using a collection of line segments connected to f
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+CategoryAxis primaryAxis = new CategoryAxis();
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
+
 AreaSeries series = new AreaSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -56,7 +68,15 @@ The [SplineAreaSeries]() connects a series of data points using smooth bezier li
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .            
+
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis />
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>
+            
     <chart:SfCartesianChart.Series>
         <chart:SplineAreaSeries ItemsSource="{Binding Data}" XBindingPath="Demand" YBindingPath="Year2010"/>  
     </chart:SfCartesianChart.Series>
@@ -68,7 +88,11 @@ The [SplineAreaSeries]() connects a series of data points using smooth bezier li
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+CategoryAxis primaryAxis = new CategoryAxis();
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
+
 SplineAreaSeries series = new SplineAreaSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -94,7 +118,15 @@ The [StepAreaSeries]() is similar to [AreaSeries](), but it does not use the sho
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .            
+
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis />
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis> 
+
     <chart:SfCartesianChart.Series>
         <chart:StepAreaSeries XBindingPath="XValue" YBindingPath="YValue" ItemsSource="{Binding Data}"/> 
     </chart:SfCartesianChart.Series>
@@ -106,7 +138,11 @@ The [StepAreaSeries]() is similar to [AreaSeries](), but it does not use the sho
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+CategoryAxis primaryAxis = new CategoryAxis();
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
+
 StepAreaSeries series = new StepAreaSeries()
 {
     ItemsSource = new ViewModel().Data,

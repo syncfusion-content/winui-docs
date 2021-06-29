@@ -7,14 +7,14 @@ control: SfCircularChart
 documentation: ug
 ---
 
-## Explode segments in WinUI Chart (SfCircularChart)
+# Explode segments in WinUI Chart (SfCircularChart)
 
 Exploding a segment is used to pull attention to a specific area of the circular chart. The following properties are used to explode the segments in the circular chart.
 
 * [ExplodeAll]()  - Used to explode all the segments of these series.
 * [ExplodeIndex]() - Used to explode any specific segment.
 * [ExplodeRadius]() - Used to define the explode distance.
-* [ExplodeOnMouseClick]() - Used to explode the segment when segment is clicked.
+* [ExplodeOnTap]() - Used to explode the segment when segment is clicked.
 
 **Explode Index**
 

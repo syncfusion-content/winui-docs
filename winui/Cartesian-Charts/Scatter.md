@@ -20,7 +20,15 @@ To render a scatter chart, create an instance of [ScatterSeries](), and add it t
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .            
+
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>  
+                
     <chart:SfCartesianChart.Series>
         <chart:ScatterSeries ScatterHeight="7" ScatterWidth="7" ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue"/>
     </chart:SfCartesianChart.Series>
@@ -32,7 +40,11 @@ To render a scatter chart, create an instance of [ScatterSeries](), and add it t
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+NumericalAxis primaryAxis = new NumericalAxis();
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
+
 ScatterSeries series = new ScatterSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -49,5 +61,5 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Scatter chart type in WinUI Chart](Chart-Types_images/WinUI_scatter_chart.png)
+![Scatter chart type in WinUI Chart](Chart-types_images/WinUI_scatter_chart.png)
 

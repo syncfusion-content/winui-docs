@@ -203,3 +203,25 @@ sfDatePicker.EditMode = DateTimeEditingMode.Normal;
 ![WinUI DatePicker with Editing](Getting-Started_images/winui-datepicker-normal-edit.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
+
+## Hide clear button in the editor
+
+By default, the clear button `X` will be displayed in the editor of the `Date Picker` control, which can be used to clear the entered input. You can hide the clear button in `Date Picker` control using the `ShowClearButton` property. The default value of `ShowClearButton` property value is **true**.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfDatePicker ShowClearButton="False"
+                      Name="sfDatePicker"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfDatePicker sfDatePicker = new SfDatePicker();
+sfDatePicker.ShowClearButton = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI DatePicker hide clear button](Getting-Started_images/winui-datepicker-hideclearbutton.png)
+![WinUI DatePicker hide clear button](Getting-Started_images/winui-datepicker-showclearbutton.png)

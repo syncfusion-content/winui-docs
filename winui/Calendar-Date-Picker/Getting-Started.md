@@ -317,7 +317,6 @@ sfCalendarDatePicker.ShowSubmitButtons = true;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown)
 
-
 ## Restrict selection
 
 You can restrict users from:

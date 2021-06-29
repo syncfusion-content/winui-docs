@@ -20,10 +20,16 @@ To render a bubble series, create an instance of [BubbleSeries]() and add to the
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
-    <chart:BubbleSeries ItemsSource="{Binding Data}" XBindingPath="XValue" 
-                        YBindingPath="YValue" Size="Size"
-                        MinimumRadius="5" MaximumRadius="10"/>
+    
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis />
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis> 
+
+    <chart:BubbleSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" Size="Size" MinimumRadius="5" MaximumRadius="10"/>
     ...
 <chart:SfCartesianChart>
 
@@ -32,8 +38,11 @@ To render a bubble series, create an instance of [BubbleSeries]() and add to the
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-...
-
+CategoryAxis primaryAxis = new CategoryAxis();
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
+. . .
 BubbleSeries series = new BubbleSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -62,10 +71,16 @@ The zero size bubble segments can be enabled or disabled by using the [`ShowZero
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
-    <chart:BubbleSeries ItemsSource="{Binding Data}" XBindingPath="XValue" 
-                        YBindingPath="YValue" Size="Size"
-                        ShowZeroBubbles="True"/>
+
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis />
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis> 
+
+    <chart:BubbleSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" Size="Size" ShowZeroBubbles="True"/>
     ...
 <chart:SfCartesianChart>
 
@@ -74,8 +89,11 @@ The zero size bubble segments can be enabled or disabled by using the [`ShowZero
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-...
-
+CategoryAxis primaryAxis = new CategoryAxis();
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
+. . .
 BubbleSeries series = new BubbleSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -99,7 +117,15 @@ chart.Series.Add(series);
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis />
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis> 
+    
     <chart:BubbleSeries ItemsSource="{Binding Data}" XBindingPath="XValue" 
                         YBindingPath="YValue" Size="Size"
                         ShowZeroBubbles="False"/>
@@ -111,8 +137,11 @@ chart.Series.Add(series);
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-...
-
+CategoryAxis primaryAxis = new CategoryAxis();
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
+. . .
 BubbleSeries series = new BubbleSeries()
 {
     ItemsSource = new ViewModel().Data,

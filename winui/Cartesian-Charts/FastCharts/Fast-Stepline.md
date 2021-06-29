@@ -16,7 +16,15 @@ A fast stepline bitmap series is a special kind of series that can render a coll
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
+
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:DateTimeAxis />
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>  
+
     <chart:SfCartesianChart.Series>
         <chart:FastStepLineBitmapSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" />
     </chart:SfCartesianChart.Series>
@@ -27,6 +35,11 @@ A fast stepline bitmap series is a special kind of series that can render a coll
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+DateTimeAxis primaryAxis = new DateTimeAxis();
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
+
 FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -51,7 +64,15 @@ The anti aliasing mode can be enabled using the [EnableAntiAliasing]() property 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
+
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:DateTimeAxis />
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>  
+
     <chart:SfCartesianChart.Series>
         <chart:FastStepLineBitmapSeries EnableAntiAliasing="True" ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" />
     </chart:SfCartesianChart.Series>
@@ -62,6 +83,10 @@ The anti aliasing mode can be enabled using the [EnableAntiAliasing]() property 
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+DateTimeAxis primaryAxis = new DateTimeAxis();
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
 . . .
 FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
 {
