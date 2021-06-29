@@ -18,7 +18,7 @@ Chart provides support to group the stacked similar series by using the [`GroupN
 <chart:SfCartesianChart>
     
     <chart:SfCartesianChart.PrimaryAxis>
-        <chart:CategoryAxis />
+        <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
     </chart:SfCartesianChart.PrimaryAxis>
 
     <chart:SfCartesianChart.SecondaryAxis>
@@ -46,6 +46,7 @@ Chart provides support to group the stacked similar series by using the [`GroupN
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
 CategoryAxis primaryAxis = new CategoryAxis();
+primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
 chart.PrimaryAxis = primaryAxis;
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.SecondaryAxis = secondaryAxis;

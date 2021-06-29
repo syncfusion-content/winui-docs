@@ -20,7 +20,7 @@ The [`StackedColumn100Series`]() resembles [StackedColumnSeries]() but the cumul
 <chart:SfCartesianChart>
     
     <chart:SfCartesianChart.PrimaryAxis>
-        <chart:CategoryAxis />
+        <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
     </chart:SfCartesianChart.PrimaryAxis>
 
     <chart:SfCartesianChart.SecondaryAxis>
@@ -45,6 +45,7 @@ The [`StackedColumn100Series`]() resembles [StackedColumnSeries]() but the cumul
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
 CategoryAxis primaryAxis = new CategoryAxis();
+primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
 chart.PrimaryAxis = primaryAxis;
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.SecondaryAxis = secondaryAxis;
@@ -92,7 +93,7 @@ The [`StackedLine100Series`]() resembles [`StackedLineSeries`]() but the cumulat
 <chart:SfCartesianChart>
     
     <chart:SfCartesianChart.PrimaryAxis>
-        <chart:CategoryAxis />
+        <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
     </chart:SfCartesianChart.PrimaryAxis>
 
     <chart:SfCartesianChart.SecondaryAxis>
@@ -120,6 +121,7 @@ The [`StackedLine100Series`]() resembles [`StackedLineSeries`]() but the cumulat
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
 CategoryAxis primaryAxis = new CategoryAxis();
+primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
 chart.PrimaryAxis = primaryAxis;
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.SecondaryAxis = secondaryAxis;
@@ -167,7 +169,7 @@ The [StackedArea100Series]() is similar to [StackedAreaSeries](), but the cumula
 <chart:SfCartesianChart>
     
     <chart:SfCartesianChart.PrimaryAxis>
-        <chart:CategoryAxis />
+        <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
     </chart:SfCartesianChart.PrimaryAxis>
 
     <chart:SfCartesianChart.SecondaryAxis>
@@ -191,6 +193,7 @@ The [StackedArea100Series]() is similar to [StackedAreaSeries](), but the cumula
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
 CategoryAxis primaryAxis = new CategoryAxis();
+primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
 chart.PrimaryAxis = primaryAxis;
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.SecondaryAxis = secondaryAxis;
