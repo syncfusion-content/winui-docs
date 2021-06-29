@@ -59,7 +59,7 @@ hoursWorked.CustomFormat = "N2";
 
 ![WinUI NumberBox customize format by NumberFormatter](Formatting_images/winui-numberbox-numberformatter.png)
 
-## Change the format decimal digits
+## Format the integer digits
 
 You can change the decimal digits of the value in the `NumberBox` control using `NumberFormatter` and `CustomFormat` properties. For the `NumberFormatter` property, you can customize the decimal digits of the value using the `IntegerDigits` property in `CurrencyFormatter`, `PercentFormatter`, and `DecimalFormatter` classes.
 
@@ -95,7 +95,7 @@ hoursWorked.CustomFormat = "00000.00";
 
 ![WinUI NumberBox customize decimal digits](Formatting_images/winui-numberbox-change-decimal-digits.png)
 
-## Change the format fractional digits
+## Format the fractional digits
 
 You can change the fractional digits of the value in `NumberBox` control using `NumberFormatter` and `CustomFormat` properties. For the `NumberFormatter` property, you can customize the fractional digits of the value using the `IntegerDigits` property in `CurrencyFormatter`, `PercentFormatter`, and `DecimalFormatter` classes.
 
