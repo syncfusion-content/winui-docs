@@ -36,7 +36,7 @@ this.Content = chart;
 
 ## Customization
 
-`Header` property of `SfCircularChart` is used to define and customize the chart title. It accepts any object (.Net object) as content for the chart header.
+Chart provides support to add any `UIElement` as a title. The following code example defines `TextBlock` as chart header.
 
 {% tabs %}
 
