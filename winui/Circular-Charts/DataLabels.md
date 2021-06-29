@@ -156,10 +156,9 @@ The appearance of the data label can be customized using [`ContentTemplate`]() p
 
 <chart:SfCircularChart >
     <chart:SfCircularChart.Resources>
-        <local:ChartValueConverter x:Key="valueconvert"/>
         <DataTemplate x:Key="labelTemplate">
             <StackPanel Margin="10" Orientation="Vertical">
-                <Ellipse Height="15" Width="15" Fill="{Binding Interior}" 
+                <Ellipse Height="15" Width="15" Fill="Cyan" 
                  Stroke="#4a4a4a" StrokeThickness="2"/>
                 <TextBlock HorizontalAlignment="Center" FontSize="12"
                            Foreground="Black" 
@@ -170,7 +169,7 @@ The appearance of the data label can be customized using [`ContentTemplate`]() p
 ...
 <chart:PieSeries ShowDataLabels="True">
     <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings Position="Outside" ContentTemplate="{StaticResource labelTemplate}"
+        <chart:CircularDataLabelSettings Position="Inside" ContentTemplate="{StaticResource labelTemplate}"
                                          Context="DataLabelItem"/>
     </chart:PieSeries.DataLabelSettings>
 </chart:PieSeries>
@@ -186,7 +185,7 @@ PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
 series.DataLabelSettings = new CircularDataLabelSettings()
 {
-    Position = CircularSeriesLabelPosition.Outside,
+    Position = CircularSeriesLabelPosition.Inside,
     Context = LabelContext.DataLabelItem,
     ContentTemplate = chart.Resources["labelTemplate"] as DataTemplate,
 };
@@ -198,6 +197,53 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Template support for data label in WinUI Chart](DataLabel_Images/WinUI_pie_chart_data_label_template.png)
+
+## Position
+
+[SfCircularChart]() providing additional customization option to position the data label smartly based on series types using [Position]() property.
+
+The following are the values for this property:
+
+[Inside]() - Data labels will be  placed inside over the CircularSeries
+[Outside]() - Data labels will be  placed just outside over the CircularSeries.
+[OutsideExtended]() - Data labels will be placed outside over the CircularSeries at a certain distance.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCircularChart>
+. . .
+<chart:PieSeries ShowDataLabels="True">
+    <chart:PieSeries.DataLabelSettings>
+        <chart:CircularDataLabelSettings Position="OutsideExtended" ShowConnectorLine="True" Context="Percentage"/>
+    </chart:PieSeries.DataLabelSettings>
+</chart:PieSeries>
+. . .
+</chart:SfCircularChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularChart chart = new SfCircularChart();
+. . .
+PieSeries series = new PieSeries();
+series.ShowDataLabels = true;
+series.DataLabelSettings = new CircularDataLabelSettings()
+{
+    Position = CircularSeriesLabelPosition.OutsideExtended,
+    ShowConnectorLine = true,
+    Context = LabelContext.Percentage
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Position support for data label in WinUI Chart](DataLabel_Images/WinUI_pie_chart_data_label_position.png)
 
 ## Rotation
 
