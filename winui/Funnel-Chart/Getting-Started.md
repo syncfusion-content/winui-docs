@@ -1,13 +1,15 @@
 ---
 layout: post
-title: Getting started with WinUI Funnel Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Funnel Chart(SfFunnelChart) control, its elements, and more.
+title: Getting started with WinUI Chart control | Syncfusion
+description: Learn here all about getting started with Syncfusion WinUI Chart(SfFunnelChart) control, its elements, and more.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
 ---
 
-# Getting started with WinUI Chart
+# Getting Started with WinUI Chart
+
+This section explains how to populate the funnel chart with data, a header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
 ## Creating an application with WinUI Chart
 
@@ -53,7 +55,7 @@ public sealed partial class MainWindow : Window
 
 {% endtabs %}
 
-## Initialize view model
+## Initialize View Model
 
 Now, let us define a simple data model that represents a data point in the chart.
 
@@ -91,7 +93,6 @@ public class ChartViewModel
             new Model(){Category = "Moto", Value = 60},
             new Model(){Category = "Sony", Value = 50},
             new Model(){Category = "LG", Value = 45},
-            new Model(){Category = "Samsung", Value = 40},
         };
     }
 }
@@ -112,11 +113,11 @@ N> If you prefer to set `DataContext` in XAML, add the namespace of the `ViewMod
     . . .
 
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
-    xmlns:Model="using:ChartDemo.ViewModel">
+    xmlns:model="using:ChartDemo.ViewModel">
 
     <chart:SfFunnelChart>
         <chart:SfFunnelChart.DataContext>
-            <Model:ChartViewModel/>
+            <model:ChartViewModel/>
         </chart:SfFunnelChart.DataContext>
     </chart:SfFunnelChart>
 
@@ -133,9 +134,9 @@ chart.DataContext = viewModel;
 
 {% endtabs %} 
 
-## Add title
+## Add Title
 
-The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set the title using the [Header]() property of the funnel chart as follows.
+The title of the chart provide quick information to the user about the data being plotted in the chart. You can set the title using the [Header]() property of the funnel chart as follows.
 
 {% tabs %} 
 
@@ -161,19 +162,16 @@ chart.Header = "PRODUCT SALES";
 
 {% endtabs %}  
 
-## Enable data labels
+## Enable Data Labels
 
-The [DataLabelSettings]() property of [FunnelChart]() can be used to enable data labels to improve the readability of the Funnel chart. By default, the label visibility is set to `False`.
+The [ShowDataLabels]() property of [SfFunnelChart]() can be used to enable data labels to improve the readability of the funnel chart. The label visibility is set to `False` by default.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart>
-. . .
-    <chart:SfFunnelChart.DataLabelSettings>
-        <chart:FunnelDataLabelSettings Visible="True" />
-    </chart:SfFunnelChart.DataLabelSettings>
+<chart:SfFunnelChart ShowDataLabels="True">
+. . . 
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -184,13 +182,13 @@ SfFunnelChart chart = new SfFunnelChart();
 
 . . .
 
-chart.DataLabelSettings = new FunnelDataLabelSettings() { Visible = true };
+chart.ShowDataLabels = true;
 
 {% endhighlight %}
 
 {% endtabs %}  
 
-## Enable legend
+## Enable Legend
 
 The legend provides information about the data point displayed in the funnel chart. The [Legend]() property of the chart was used to enable it.
 
@@ -217,11 +215,9 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %} 
 
-{% tabs %} 
+## Enable Tooltip
 
-## Enable tooltip
-
-Tooltips are used to display information about a segment, when the mouse is moved over it. Enable tooltip by setting series [ShowTooltip]() property as true.
+Tooltips are used to display information about a segment, when the mouse is moved over it. Enable tooltip by setting funnel chart [ShowTooltip]() property as true.
 
 {% tabs %} 
 
@@ -245,12 +241,15 @@ chart.ShowTooltip = true;
 
 The following code example gives you the complete code of above configurations.
 
+N> To plot the chart, the [XBindingPath]() and [YBindingPath]() properties must be configured so that the chart may get values from the respective properties in the data model.
+
 {% tabs %} 
 
 {% highlight xaml %}
 
 <chart:SfFunnelChart x:Name="chart" Header="PRODUCT SALES" 
                              ShowTooltip="True"
+                             ShowDataLabels="True"
                              Palette="BlueChrome"
                              Height="388" Width="500" 
                              ItemsSource="{Binding Data}" 
@@ -264,10 +263,6 @@ The following code example gives you the complete code of above configurations.
         <chart:SfFunnelChart.Legend>
             <chart:ChartLegend />
         </chart:SfFunnelChart.Legend>
-
-        <chart:SfFunnelChart.DataLabelSettings>
-            <chart:FunnelDataLabelSettings Visible="True" />
-        </chart:SfFunnelChart.DataLabelSettings>
             
 </chart:SfFunnelChart>
  
@@ -294,7 +289,7 @@ public sealed partial class MainWindow : Window
         chart.Width = 500;
         chart.Legend = new ChartLegend();
         chart.ShowTooltip = true;
-        chart.DataLabelSettings = new FunnelDataLabelSettings() { Visible = true };
+        chart.ShowDataLabels = true;
 
         this.Content = chart;
     }
@@ -304,10 +299,6 @@ public sealed partial class MainWindow : Window
 
 {% endtabs %}
 
-N> To plot the chart, the [XBindingPath]() and [YBindingPath]() properties must be configured so that the chart may get values from the respective properties in the data model.
-
-The following chart is created as a result of the previous codes.
-
-![Getting Started WinUI FunnelChart](Getting-Started_images/WinUI_FunnelChart.png)
+![Getting Started in WinUI Chart](Getting-Started_Images/winui-chart.png)
 
 N> Download demo application from [GitHub]().

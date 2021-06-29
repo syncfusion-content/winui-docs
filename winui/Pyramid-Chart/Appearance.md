@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Appearance in WinUI Pyramid Chart control | Syncfusion
-description: This section explains about how to apply palettes and gradient in the Syncfusion WinUI Pyramid Chart(SfPyramidChart) control.
+title: Appearance in WinUI Chart control | Syncfusion
+description: This section explains about how to apply palettes and gradient in the Syncfusion WinUI Chart(SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
 ---
 
-# Appearance in WinUI Pyramid Chart (SfPyramidChart)
+# Appearance in WinUI Chart (SfPyramidChart)
 
-The appearance of [SfPyramidChart]() can be customize by using the predefined palettes, custom palettes and gradient that allows to enrich the application.
+The appearance of [SfPyramidChart]() can be customized by using the predefined palettes, custom palettes and gradient, which allows to enrich the application.
 
 ## Palettes
 
-[SfPyramidChart]() provides options to apply different kinds of palettes. We have some predefined palette such as
+[SfPyramidChart]() provides options for applying various kinds of palettes. Some predefined palettes, such as.
 
 * Metro
 * AutumnBrights
@@ -28,7 +28,7 @@ The appearance of [SfPyramidChart]() can be customize by using the predefined pa
 * LightCandy
 * SandyBeach
 
-### Applying palette
+### Applying Palette
 
 Each palette applies a set of predefined brushes to the pyramid series in a predefined order. [Metro]() palette is the default palette.
 
@@ -58,7 +58,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Predefined palette in WinUI Pyramid Chart](Appearance_images/WinUI_pyramid_chart_predefined_palette.png)
+![Predefined palette in WinUI Chart](Appearance_images/WinUI_chart_predefined_palette.png)
 
 The following code example defined [`Palette`]() as [`GreenChrome`]().
 
@@ -90,11 +90,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Palette support in WinUI Pyramid Chart](Appearance_images/WinUI_pyramid_chart_greenchrome_palette.png)
+![Palette support in WinUI Chart](Appearance_images/WinUI_chart_greenchrome_palette.png)
 
-## Custom palette
+## Custom Palette
 
-[`SfPyramidChart`]() provides support to define own brushes for chart with preferred order by using [`CustomBrushes`]() property of [`ChartColorModel`]() and [`Palette`]() value as [`Custom`]() as shown in the following code example.
+[`SfPyramidChart`]() provides support to define own brushes for the chart with preferred order by using the [CustomBrushes]() property of [ChartColorModel]() and [Palette]() value as `Custom`, as shown in the following code example.
 
 {% tabs %}
 
@@ -147,13 +147,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Custom palette in WinUI Pyramid Chart](Appearance_images/WinUI_pyramid_chart_custom_palette.png)
+![Custom palette in WinUI Chart](Appearance_images/WinUI_chart_custom_palette.png)
 
-## Applying gradient brushes
+## Applying Gradient
 
 Gradient for the pyramid chart can be set by using the [`ColorModel`]() property of the pyramid chart with the help of `LinearGradientBrush` or `RadialGradientBrush`.
-
-The following code sample and screenshot illustrates how to apply the gradient brushes for chart using the [`ColorModel`]() property.
 
 {% tabs %}
 
@@ -227,9 +225,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Gradient support in WinUI Pyramid Chart](Appearance_images/WinUI_pyramid_chart_gradient_color.png)
+![Gradient support in WinUI Chart](Appearance_images/WinUI_chart_gradient_color.png)
 
-## Segment color binding
+## Segment Color Binding
 
 The color of the each segment can be set by binding their corresponding model property from the `ItemsSource` collection to its [`ColorValuePath`]() property of pyramid chart as follows.
 
@@ -280,7 +278,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Segment color binding support in WinUI Pyramid Chart](Appearance_images/WinUI_pyramid_chart_colorvaluepath.png)
-
-
-
+![Segment color binding support in WinUI Chart](Appearance_images/WinUI_chart_colorvaluepath.png)
