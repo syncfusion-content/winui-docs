@@ -45,33 +45,35 @@ this.Content = sfRangeSlider;
 
 ## Interval
 
-Slider elements like labels, ticks and divisors are rendered based on the [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Interval), [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Minimum), and [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Maximum) properties. The default value of [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Interval) is double.NaN.
+Slider elements like labels, ticks and dividers are rendered based on the [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Interval), [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Minimum), and [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Maximum) properties. The default value of [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Interval) is double.NaN.
 
-For example, if [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Minimum) is 0, [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Maximum) is 10, and [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Interval) is 2, the slider will render the labels, major ticks, and divisors at 0, 2, 4 and so on.
+For example, if [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Minimum) is 0, [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Maximum) is 10, and [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Interval) is 2, the slider will render the labels, major ticks, and dividers at 0, 2, 4 and so on.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<slider:SfSlider Minimum="0"
-                 Maximum="10"
-                 Interval="2"
-                 Value="4"
-                 ShowTicks="True"
-                 ShowLabels="True" />
+<slider:SfRangeSlider Minimum="0"
+                      Maximum="10"
+                      Interval="2"
+                      RangeStart="2"
+                      RangeEnd="8"
+                      ShowTicks="True"
+                      ShowLabels="True" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfSlider sfSlider = new SfSlider();
-sfSlider.Minimum = 0;
-sfSlider.Maximum = 10;
-sfSlider.Interval = 2;
-sfSlider.Value = 4;
-sfSlider.ShowTicks = true;
-sfSlider.ShowLabels = true;
-this.Content = sfSlider;
+SfRangeSlider sfRangeSlider = new SfRangeSlider();
+sfRangeSlider.Minimum = 0;
+sfRangeSlider.Maximum = 10;
+sfRangeSlider.Interval = 2;
+sfRangeSlider.RangeStart = 2;
+sfRangeSlider.RangeEnd = 8;
+sfRangeSlider.ShowTicks = true;
+sfRangeSlider.ShowLabels = true;
+this.Content = sfRangeSlider;
 
 {% endhighlight %}
 
@@ -82,7 +84,7 @@ this.Content = sfSlider;
 N> Slider having auto-interval support. So, the auto-interval is calculated by default.
 
 N>
-* Refer the [`ShowDivisors`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowDivisors), to know more about the rendering of divisors at given interval.
+* Refer the [`ShowDividers`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowDividers), to know more about the rendering of dividers at given interval.
 * Refer the [`ShowTicks`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowTicks), to know more about the rendering of major ticks at given interval.
 * Refer the [`ShowLabels`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowLabels), to know more about the rendering of labels at given interval.
 
@@ -94,27 +96,29 @@ You can move the thumb in discrete manner for numeric values using the [`StepFre
 
 {% highlight xaml %}
 
-<slider:SfSlider Minimum="0"
-                 Maximum="10"
-                 Interval="2"
-                 Value="4"
-                 StepFrequency="2"
-                 ShowTicks="True"
-                 ShowLabels="True" />
+<slider:SfRangeSlider Minimum="0"
+                      Maximum="10"
+                      Interval="2"
+                      RangeStart="2"
+                      RangeEnd="8"
+                      StepFrequency="2"
+                      ShowTicks="True"
+                      ShowLabels="True" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfSlider sfSlider = new SfSlider();
-sfSlider.Minimum = 0;
-sfSlider.Maximum = 10;
-sfSlider.Interval = 2;
-sfSlider.Value = 4;
-sfSlider.StepFrequency = 2;
-sfSlider.ShowTicks = true;
-sfSlider.ShowLabels = true;
-this.Content = sfSlider;
+SfRangeSlider sfRangeSlider = new SfRangeSlider();
+sfRangeSlider.Minimum = 0;
+sfRangeSlider.Maximum = 10;
+sfRangeSlider.Interval = 2;
+sfRangeSlider.RangeStart = 2;
+sfRangeSlider.RangeEnd = 8;
+sfRangeSlider.StepFrequency = 2;
+sfRangeSlider.ShowTicks = true;
+sfRangeSlider.ShowLabels = true;
+this.Content = sfRangeSlider;
 
 {% endhighlight %}
 
@@ -217,6 +221,42 @@ this.Content = sfRangeSlider;
 {% endtabs %}
 
 ![Range slider with is inversed customization](images/basic-features/slider-isInversed.png)
+
+## Vertical Range Slider
+
+The orientation of [`range slider`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html?tabs=tabid-1) can be changed by using the `Orientation` property.
+
+When the `Orientation` property is `Vertical`, the [`range slider`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html?tabs=tabid-1) will be rendered in bottom-to-top vertical direction.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<slider:SfRangeSlider Orientation="Vertical"
+                      ShowTicks="True"
+                      ShowLabels="True"
+                      Interval="20"
+                      RangeStart="40"
+                      RangeEnd="60" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRangeSlider sfRangeSlider = new SfRangeSlider();
+sfRangeSlider.Orientation = Orientation.Vertical;
+sfRangeSlider.ShowTicks = true;
+sfRangeSlider.ShowLabels = true;
+sfRangeSlider.Interval = 20;
+sfRangeSlider.RangeStart = 40;
+sfRangeSlider.RangeEnd = 60;
+this.Content = sfRangeSlider;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Range slider with orientation customization](images/basic-features/slider-orientation.png)
 
 ## Events
 

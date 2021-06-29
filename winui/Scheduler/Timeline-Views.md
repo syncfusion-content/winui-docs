@@ -343,6 +343,10 @@ this.Schedule.TimelineViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 
 ![time-ruler-text-formatting-in-winui-scheduler](TimelineViews_Images/time-ruler-text-formatting-in-winui-scheduler.png)
 
+N>
+* You can customize the appointment editor time format based on the scheduler time ruler format and culture.
+* By default, the scheduler time ruler format is `h tt` and the appointment editor time picker format is `hh:mm tt`.
+
 ## View header
 
 Customize the default appearance of view header in the timeline views by setting the `ViewHeaderDateFormat,` `ViewHeaderHeight,` `ViewHeaderDayFormat,` and `ViewHeaderTemplate` of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html).
