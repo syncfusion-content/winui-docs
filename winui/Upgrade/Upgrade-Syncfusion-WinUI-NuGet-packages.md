@@ -7,7 +7,7 @@ control: Essential Studio
 documentation: ug
 ---
 
-# Upgrading Syncfusion WinUI
+# Upgrading Syncfusion WinUI NuGet packages
 
 Every three months, Syncfusion releases new volumes with interesting new features. For this volume, there will be a weekly NuGet release and one service pack. Syncfusion WinUI NuGet packages are released on a weekly basis to address critical issue fixes in volume releases.
 
@@ -46,27 +46,27 @@ The **Package Manager Console** saves NuGet packages upgrade time since you don'
     The below command will update the Syncfusion WinUI NuGet package in the default WinUI project of the application
 
     ```
-    Update-Package <Package Name> -prerelease
+    Update-Package <Package Name>
     ```
 
-    **For example:** Update-Package Syncfusion.Grid.WinUI -prerelease
+    **For example:** Update-Package Syncfusion.Grid.WinUI
 
     ***Update specified Syncfusion WinUI NuGet package in specified WinUI project***
 
     The below command will update the Syncfusion WinUI NuGet package in the given WinUI project alone
 
     ```
-    Update-Package <Package Name> -prerelease -ProjectName <Project Name>
+    Update-Package <Package Name> -ProjectName <Project Name>
     ```
 
-    **For example:** Update-Package Syncfusion.Grid.WinUI -prerelease -ProjectName WinUIApplication
+    **For example:** Update-Package Syncfusion.Grid.WinUI -ProjectName WinUIApplication
 
-    N> We need to use the -prerelease term with the NuGet Update command, because all the Syncfusion WinUI NuGet packages are in beta
+    N> You must use the **-prerelease** term with the NuGet update command (**Update-Package Syncfusion.Grid.WinUI -prerelease**), if you want to update the Syncfusion WinUI beta NuGet packages.
 
 3. By default, the package will be installed with latest version. You can give the required version with the -Version term like below to install the Syncfusion WinUI NuGet packages in the appropriate version.
 
     ```
-    Update-Package Syncfusion.Grid.WinUI -Version 19.1.0.65-beta -prerelease
+    Update-Package Syncfusion.Grid.WinUI -Version 19.2.0.44 
     ```
 
     ![Package Manager Console Output](Upgrade-images/UpdateConsole.png)
@@ -81,5 +81,5 @@ There is no distinct command for the update procedure in the Dotnet CLI. Unless 
 To specify a version, add the -v parameter:
 
 ```
-dotnet add package Syncfusion.Grid.WinUI –prerelease -v 19.1.0.65-beta.
+dotnet add package Syncfusion.Grid.WinUI -v 19.2.0.44.
 ```
