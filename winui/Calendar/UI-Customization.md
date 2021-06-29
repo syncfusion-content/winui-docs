@@ -280,4 +280,3 @@ You can customize the colors of day names and headers of month, year, decade and
 ![WinUI Calendar Themes](UI-Customization_images/winui-calendar-themes.png)
 
 N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/CustomUI)
-
