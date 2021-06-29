@@ -167,3 +167,25 @@ sfTimePicker.EditMode = DateTimeEditingMode.Normal;
 ![WinUI TimePicker with Editing](Getting-Started_images/winui-timepicker-normal-edit.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
+
+## Hide clear button in the editor
+
+By default, the clear button `X` will be displayed in the editor of the `Time Picker` control, which can be used to clear the entered input. You can hide the clear button in `Time Picker` control using the `ShowClearButton` property. The default value of `ShowClearButton` property value is **true**.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfTimePicker ShowClearButton="False"
+                      Name="sfTimePicker"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfTimePicker sfTimePicker = new SfTimePicker();
+sfTimePicker.ShowClearButton = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI TimePicker hide clear button](Getting-Started_images/winui-timePicker-hideclearbutton.png)
+![WinUI TimePicker hide clear button](Getting-Started_images/winui-timePicker-showclearbutton.png)
