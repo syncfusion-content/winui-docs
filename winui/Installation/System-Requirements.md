@@ -30,6 +30,6 @@ N> * Visual Studio 2019, version 16.9, also supports Project Reunion and but not
 
 {% seealso %}
 
-[How to set up your WinUI Project Reunion development environment](https://docs.microsoft.com/en-us/windows/apps/project-reunion/get-started-with-project-reunion#set-up-your-development-environment) in Microsoft Docs.
+[How to set up your WinUI Project Reunion development environment](https://docs.microsoft.com/en-us/windows/apps/windows-app-sdk/set-up-your-development-environment?tabs=visual-studio-2019) in Microsoft Docs.
 
 {% endseealso %}
