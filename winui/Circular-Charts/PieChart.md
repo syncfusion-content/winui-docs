@@ -176,3 +176,48 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Semi-pie support in WinUI Chart](Series_images/semi_pie_chart.png)
+
+## Combination Chart
+
+[SfCircularChart]() allows you to render the combination of pie series and doughnut series.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCircularChart>
+. . .
+    <chart:SfCircularChart.Series>
+        <chart:DoughnutSeries ItemsSource="{Binding Data}"  DoughnutCoefficient="0.5" XBindingPath="Demand" YBindingPath="Year2010"/>
+                    
+        <chart:PieSeries ItemsSource="{Binding Data}" CircularCoefficient="0.5" XBindingPath="Demand"  YBindingPath="Year2011"/>
+    </chart:SfCircularChart.Series>
+
+</chart:SfCircularChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularChart chart = new SfCircularChart();
+. . .
+DoughnutSeries series1 = new DoughnutSeries();
+series1.SetBinding(DoughnutSeries.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+series1.XBindingPath = "Demand";
+series1.YBindingPath = "Year2010";
+series1.DoughnutCoefficient = 0.5;
+
+PieSeries series2 = new PieSeries();
+series2.SetBinding(PieSeries.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+series2.XBindingPath = "Demand";
+series2.YBindingPath = "Year2011";
+series2.CircularCoefficient = 0.5;
+
+chart.Series.Add(series1);
+chart.Series.Add(series2);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Combination Chart of WinUI chart](Series_images/winui_combination_chart.png)
