@@ -408,7 +408,7 @@ series1.XAxis = new DateTimeAxis()
     LabelFormat = "dd-MMM",
     OpposedPosition = true,
 };
-series2.YAxis = new NumericalAxis();
+series2.YAxis = new NumericalAxis()
 {
     OpposedPosition = true,
 };

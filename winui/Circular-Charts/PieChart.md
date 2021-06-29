@@ -79,7 +79,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Circular coefficient support in WinUI Chart](Series_images/pie_circularcoefficient.png)
+![Circular coefficient support in WinUI Chart](Series_images/winui_pie_circularcoefficient.png)
 
 ## Group small data points into “others”
 
