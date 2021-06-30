@@ -10,6 +10,6 @@ documentation: ug
 
 # License Key Registration
 
-The Syncfusion WinUI controls are currently in preview mode. So, there is no need to generate and register any Syncfusion license keys in your WinUI projects.
+There is no need to generate and register any Syncfusion license keys to use Syncfusion WinUI controls in your WinUI projects.
 
 The Syncfusion WinUI controls can be used without registering the license keys.
