@@ -301,4 +301,4 @@ public sealed partial class MainWindow : Window
 
 ![Getting Started in WinUI Chart](Getting-Started_Images/winui-chart.png)
 
-N> Download demo application from [GitHub]().
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/FunnelChartGettingStarted).
