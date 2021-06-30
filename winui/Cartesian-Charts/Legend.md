@@ -54,7 +54,7 @@ this.Content = chart;
 
 ## Title
 
-Cartesian chart provides support to add any `UIElement` as a title for legend. [Header]() property of `ChartLegend` is used to define the title for legend as the following code example.
+Cartesian chart provides support to add any `UIElement` as a title for legend. [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Header) property of [ChartLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) is used to define the title for legend as the following code example.
 
 {% tabs %}
 
@@ -103,7 +103,7 @@ this.Content = chart;
 
 ## Icon
 
-Legend icon represents a symbol associated with the each legend item. `LegendIcon` property of series is used to set the icon type for legend item. By default, the legend icon is [`SeriesType`]().
+Legend icon represents a symbol associated with the each legend item. [`LegendIcon`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_LegendIcon) property of series is used to set the icon type for legend item. By default, the legend icon is [`SeriesType`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegendIcon.html#Syncfusion_UI_Xaml_Charts_ChartLegendIcon_SeriesType).
 
 {% tabs %}
 
@@ -150,9 +150,9 @@ this.Content = chart;
 
 The appearance of the legend icon can be customized using the below properties.
 
-* [IconWidth]() - Gets or sets the double value that represents the legend icon(s) width.
-* [IconHeight]() - Gets or sets the double value that represents the legend icon(s) height.
-* [IconVisibility]() - Gets or sets the visibility of the legend icon.
+* [IconWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_IconWidth) - Gets or sets the double value that represents the legend icon(s) width.
+* [IconHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_IconHeight) - Gets or sets the double value that represents the legend icon(s) height.
+* [IconVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_IconVisibility) - Gets or sets the visibility of the legend icon.
 
 {% tabs %}
 
@@ -233,7 +233,7 @@ this.Content = chart;
 
 ## Icon Visibility
 
-The [VisibilityOnLegend]() property of series is used to enable/disable the visibility of legend icon as shown in below example.
+The [VisibilityOnLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_VisibilityOnLegend) property of series is used to enable/disable the visibility of legend icon as shown in below example.
 
 {% tabs %}
 
@@ -291,7 +291,7 @@ this.Content = chart;
 
 ## Item spacing
 
-[ItemMargin]() property of the `ChartLegend` is used to provide spacing between each legend items.
+[ItemMargin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ItemMargin) property of the `ChartLegend` is used to provide spacing between each legend items.
 
 {% tabs %}
 
@@ -318,7 +318,7 @@ chart.Legend = new ChartLegend()
 
 ## Checkbox for Legend
 
-Cartesian chart provides support to enable the checkbox for each legend item to visible or collapse the associated series. By default, the value of [CheckBoxVisibility]() property is `Collapsed`. 
+Cartesian chart provides support to enable the checkbox for each legend item to visible or collapse the associated series. By default, the value of [CheckBoxVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CheckBoxVisibility) property is `Collapsed`. 
 
 {% tabs %}
 
@@ -349,7 +349,7 @@ The series can be collapsed by unchecking the checkbox as below:
 
 ## Toggle Series Visibility 
 
-The visibility of the series can be control by tapping the legend item by enabling the [ToggleSeriesVisibility]() property. By default, the value of [ToggleSeriesVisibility]() property is `False`.
+The visibility of the series can be control by tapping the legend item by enabling the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) property. By default, the value of [ToggleSeriesVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) property is `False`.
 
 {% tabs %}
 
@@ -380,7 +380,7 @@ By clicking on disabled legend item, we can view the associated `series`,
 
 ## Position
 
-The legends can be placed either inside or outside of the chart area (plotting area). By default, it will be displayed outside and positioned at top (using [DockPosition]()) of the chart area.
+The legends can be placed either inside or outside of the chart area (plotting area). By default, it will be displayed outside and positioned at top (using [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Position)) of the chart area.
 
 {% tabs %}
 
@@ -407,9 +407,9 @@ chart.Legend = new ChartLegend()
 
 ### Docking the Legend Position
 
-By using the [DockPosition]() property, legends can be docked to the left, right, and top or bottom of the chart area. By default, the chart legend is docked at the top of the chart as mentioned earlier.
+By using the [DockPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) property, legends can be docked to the left, right, and top or bottom of the chart area. By default, the chart legend is docked at the top of the chart as mentioned earlier.
 
-To display the legend at the bottom, you can set the [DockPosition]() as [Bottom]() as shown in the following code sample.
+To display the legend at the bottom, you can set the [DockPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) as `Bottom` as shown in the following code sample.
 
 {% tabs %}
 
@@ -436,7 +436,7 @@ chart.Legend = new ChartLegend()
 
 ### Floating Legends
 
-To position the legend at any arbitrary location within the chart, you need to set [DockPosition]() as `Floating` and provide its relative position by using the [OffsetX]() and [OffsetY]() properties.
+To position the legend at any arbitrary location within the chart, you need to set [DockPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) as `Floating` and provide its relative position by using the [OffsetX](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_OffsetX) and [OffsetY](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_OffsetY) properties.
 
 {% tabs %}
 
@@ -467,7 +467,7 @@ chart.Legend = new ChartLegend()
 
 ## Orientation
 
-Orientation of the legend items can be aligned vertically or horizontally by setting the [Orientation]() property of legend. By default, the value of [Orientation]() property is [Horizontal]().
+Orientation of the legend items can be aligned vertically or horizontally by setting the [Orientation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Orientation) property of legend. By default, the value of [Orientation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Orientation) property is [Horizontal](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartOrientation.html#Syncfusion_UI_Xaml_Charts_ChartOrientation_Horizontal).
 
 {% tabs %}
 
@@ -496,11 +496,11 @@ chart.Legend = new ChartLegend()
 
 The legend background appearance can be customized by using the following properties:
 
-[BorderThickness]() - used to change the stroke width of the legend.
-[BorderBrush]() - used to change the stroke color of the legend.
-[Background]() - used to change the background color of the legend.
-[Opacity]() - used to control the transparency of the legend icon shape.
-[CornerRadius]() - used to change the corner radius of the legend.
+`BorderThickness` - used to change the stroke width of the legend.
+`BorderBrush` - used to change the stroke color of the legend.
+`Background` - used to change the background color of the legend.
+`Opacity` - used to control the transparency of the legend icon shape.
+`CornerRadius` - used to change the corner radius of the legend.
 
 {% tabs %}
 
@@ -532,7 +532,7 @@ chart.Legend = new ChartLegend()
 
 ## Template
 
-Customize each legend item by using the [ItemTemplate]() property in `ChartLegend`, as shown in the following code sample.
+Customize each legend item by using the `ItemTemplate` property in `ChartLegend`, as shown in the following code sample.
 
 {% tabs %}
 
