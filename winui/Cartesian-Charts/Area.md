@@ -11,7 +11,7 @@ documentation: ug
 
 ## Area Chart
 
-The area chart is rendered by using a collection of line segments connected to form a closed loop area, filled with the specified color. To render a area chart, create an instance of [AreaSeries]() and add it to the [Series]() collection property of the chart.
+The area chart is rendered by using a collection of line segments connected to form a closed loop area, filled with the specified color. To render a area chart, create an instance of [AreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AreaSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of the chart.
 
 {% tabs %}
 
@@ -61,7 +61,7 @@ this.Content = chart;
 
 ## Spline Area Chart
 
-The [SplineAreaSeries]() connects a series of data points using smooth bezier line curves, with the underlying areas filled.
+The [SplineAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SplineAreaSeries.html) connects a series of data points using smooth bezier line curves, with the underlying areas filled.
 
 {% tabs %}
 
@@ -111,7 +111,7 @@ this.Content = chart;
 
 ## Step Area Chart
 
-The [StepAreaSeries]() is similar to [AreaSeries](), but it does not use the shortest distance to connect the two data points using bezier curves. Instead, this series uses vertical and horizontal lines to connect the data points in a series forming a step-like progression.
+The [StepAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StepAreaSeries.html) is similar to [AreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AreaSeries.html), but it does not use the shortest distance to connect the two data points using bezier curves. Instead, this series uses vertical and horizontal lines to connect the data points in a series forming a step-like progression.
 
 {% tabs %}
 
