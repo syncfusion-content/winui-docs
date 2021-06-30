@@ -18,7 +18,7 @@ Each data label can be represented by the following:
 
 ## Enable Data Label 
 
-The [ShowDataLabels]() property of series is used to enable the data labels.
+The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataMarkerSeries.html#Syncfusion_UI_Xaml_Charts_DataMarkerSeries_ShowDataLabels) property of series is used to enable the data labels.
 
 {% tabs %}
 
@@ -59,7 +59,7 @@ chart.Series.Add(series);
 
 ## Context
 
-To customize the content of data labels, need to define [DataLabelSettings]() of series and set [Context]() property of [CartesianDataLabelSettings]() to define the value to be displayed as label content.
+To customize the content of data labels, need to define [DataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_DataLabelSettings) of series and set [Context](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Context) property of [CartesianDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianDataLabelSettings.html) to define the value to be displayed as label content.
 
 {% tabs %}
 
@@ -97,14 +97,14 @@ chart.Series.Add(series);
 
 The following properties are used to customize the data label.
 
-* [BorderBrush]()- used to change the border color.
-* [BorderThickness]()- used to change the thickness of the border.
-* [Margin]()- used to change the margin size for label.
-* [FontStyle]()-  used to change font style of the label.
-* [FontSize]()-  used to change font size of the label.
-* [Foreground]()- used to change the text color of the label.
-* [FontFamily]()-  used to change the font family of the label.
-* [Background]()- used to change the label background color.
+* [BorderBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_BorderBrush)- used to change the border color.
+* [BorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_BorderThickness)- used to change the thickness of the border.
+* [Margin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Margin)- used to change the margin size for label.
+* [FontStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontStyle)-  used to change font style of the label.
+* [FontSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontSize)-  used to change font size of the label.
+* [Foreground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Foreground)- used to change the text color of the label.
+* [FontFamily](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontFamily)-  used to change the font family of the label.
+* [Background](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Background)- used to change the label background color.
 
 {% tabs %}
 
@@ -153,7 +153,7 @@ chart.Series.Add(series);
 
 ## Template
 
-The appearance of the data label can be customized using the [`ContentTemplate`]() property of [`CartesianDataLabelSettings`]() as in the below code example:
+The appearance of the data label can be customized using the [`ContentTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ContentTemplate) property of [`CartesianDataLabelSettings`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianDataLabelSettings.html) as in the below code example:
 
 {% tabs %}
 
@@ -215,7 +215,7 @@ chart.Series.Add(series);
 
 ## Format
 
-The [Format]() property can be used to format the data labels.
+The [Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Format) property can be used to format the data labels.
 
 {% tabs %}
 
@@ -252,7 +252,7 @@ chart.Series.Add(series);
 
 ## Rotation
 
-The [Rotation]() property is used to define the angle to which the label has to rotate.
+The [Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Rotation) property is used to define the angle to which the label has to rotate.
 
 {% tabs %}
 
@@ -289,11 +289,11 @@ chart.Series.Add(series);
 
 ## Alignment
 
-The alignment of data labels inside the series is defined by using the [BarLabelAlignment]() property. 
+The alignment of data labels inside the series is defined by using the [BarLabelAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_CartesianDataLabelSettings_BarLabelAlignment) property. 
 
-* [Top]() - Positions the data label at the top edge point of a chart segment.
-* [Middle]() - Positions the data label at the center point of a chart segment.
-* [Bottom]() - Positions the data label at the bottom edge point of a chart segment.
+* [Top](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BarLabelAlignment.html#Syncfusion_UI_Xaml_Charts_BarLabelAlignment_Top) - Positions the data label at the top edge point of a chart segment.
+* [Middle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BarLabelAlignment.html#Syncfusion_UI_Xaml_Charts_BarLabelAlignment_Middle) - Positions the data label at the center point of a chart segment.
+* [Bottom](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BarLabelAlignment.html#Syncfusion_UI_Xaml_Charts_BarLabelAlignment_Bottom) - Positions the data label at the bottom edge point of a chart segment.
 
 N> This behavior varies based on the chart series type.
 
@@ -330,23 +330,22 @@ chart.Series.Add(series);
 
 ![Data label alignment in WinUI chart](DataLabel_images/winui_chart_data_label_alignment.png)
 
-Also, you can define the label alignment using  [HorizontalAlignment]() and [VerticalAlignment]() properties.
+Also, you can define the label alignment using  [HorizontalAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_HorizontalAlignment) and [VerticalAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_VerticalAlignment) properties.
 
 ## Position
 
 Other than the above alignment options, Chart providing additional customization option to position the data labels. 
 
-The [Position]() property is used to position the data labels at `Center`, `Inner` and `Outer` position of the actual data point position. By default, labels are positioned based on the series types for better readability.
+The [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_CartesianDataLabelSettings_Position) property is used to position the data labels at `Center`, `Inner` and `Outer` position of the actual data point position. By default, labels are positioned based on the series types for better readability.
 
 ## Connector Line
 
-Connector line is used to connect label and data point using a line. [ShowConnectorLine]() property of [CartesianDataLabelSettings]() is used to enable the connector line in the chart. 
+Connector line is used to connect label and data point using a line. [ShowConnectorLine](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ShowConnectorLine) property of [CartesianDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianDataLabelSettings.html) is used to enable the connector line in the chart. 
 
 The connector line can be customized using the below properties.
 
-* [ConnectorHeight]() - used to set height for connector line.
-* [ConnectorLineStyle]() - used to customize the style of line.
-* [ConnectorType]() - used to connector line type.
+* [ConnectorHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ConnectorHeight) - used to set height for connector line.
+* [ConnectorLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ConnectorLineStyle) - used to customize the style of line.
 
 {% tabs %}
 
@@ -397,7 +396,7 @@ chart.Series.Add(series);
 
 ## Applying Series Interior
 
-[UseSeriesPalette]() property is used to set the interior of the series to the data marker background. 
+[UseSeriesPalette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_UseSeriesPalette) property is used to set the interior of the series to the data marker background. 
 
 {% tabs %}
 
