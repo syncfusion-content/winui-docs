@@ -48,6 +48,14 @@ Use to display the boolean type data
 </tr>
 <tr>
 <td>
+GridDateColumn
+</td>
+<td>
+Use to display the date value.
+</td>
+</tr>
+<tr>
+<td>
 {{'[GridImageColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridImageColumn.html)'| markdownify }}
 </td>
 <td>

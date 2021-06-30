@@ -61,6 +61,17 @@ Use to display the boolean type data.
 </tr>
 <tr>
 <td>
+GridDateColumn
+</td>
+<td>
+GridCellDateRenderer
+</td>
+<td>
+Use to display the date value.
+</td>
+</tr>
+<tr>
+<td>
 {{'[GridImageColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridImageColumn.html)'| markdownify }}
 </td>
 <td>
@@ -664,7 +675,7 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Ship City", Mappi
 
 ## GridDateColumn
 
-`GridDateColumn` derived from `GridTextColumnBase` and it displays columns data as date time. It hosts [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) element in editing mode.
+`GridDateColumn` derived from `GridTextColumnBase` and it displays columns data as date. It hosts [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) element in editing mode.
 
 {% tabs %}
 {% highlight xaml %}
@@ -690,18 +701,23 @@ this.dataGrid.Columns.Add(new GridDateColumn() { HeaderText = "Date", MappingNam
 
 ![WinUI DataGrid Column with DateColumn](Column-Types_images/winui-datagrid-DateColumn-column.png)
 
-### Change the Format of date time value
+### Change the Format of date value
 
-You can edit and display the selected date with various formatting like date, month and year formats by using the `DisplayDateFormat` property. The default value of DisplayDateFormat property is d. For example below image shown the DateColumn with DisplayDateFormat as M.
+You can edit and display the selected date with various formatting like date, month and year formats by using the `DisplayDateFormat` property. The default value of `DisplayDateFormat` property is **d**. For example below image shown the DateColumn with DisplayDateFormat as **M**.
 
 {% tabs %}
 {% highlight xaml %}
 <syncfuion:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
-                      ColumnWidthMode="Auto"
+                       ColumnWidthMode="Star"
                        AllowEditing="True" >
     <syncfuion:SfDataGrid.Columns>
+        <syncfuion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <syncfuion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfuion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <syncfuion:GridTextColumn MappingName="Country" />
+        <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
         <syncfuion:GridDateColumn MappingName="Date" DisplayDateFormat="M" />
     </syncfuion:SfDataGrid.Columns>
 </syncfuion:SfDataGrid>
@@ -721,17 +737,27 @@ The `PlaceholderText` does not shown, when the `AllowNull` is `false`.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
+<syncfuion:SfDataGrid x:Name="dataGrid" 
+                       ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
-                       ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfuion:GridDateColumn MappingName="Date" AllowNull="True" PlaceholderText="Select a date" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+                       ColumnWidthMode="Star"
+                       AllowEditing="True" >
+    <syncfuion:SfDataGrid.Columns>
+        <syncfuion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <syncfuion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfuion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <syncfuion:GridTextColumn MappingName="Country" />
+        <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+        <syncfuion:GridDateColumn MappingName="Date" AllowNull="True" PlaceholderText="Change the date" />
+    </syncfuion:SfDataGrid.Columns>
+</syncfuion:SfDataGrid>
+
 {% endhighlight %}
 {% endtabs %}
 
-### Setting date time value range
+![WinUI DataGrid Column with DateColumn with Month format](Column-Types_images/winui-datagrid-DateColumn_AllowNull-column.png)
+
+### Setting date value range
 
 You can restrict and display the input value within the range using `MinDate` and `MaxDate` properties.
 
@@ -1058,13 +1084,13 @@ void dataGrid_CurrentCellRequestNavigate(object sender, CurrentCellRequestNaviga
 {% endhighlight %}
 {% endtabs %}
 
-## Customize Hyperlink
+### Customize Hyperlink
 
-### Change the alignment
+#### Change the alignment
 
 You can change the horizontal alignment of `GridHyperlinkColumn` using [HorizontalAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridHyperlinkColumn.html#Syncfusion_UI_Xaml_DataGrid_GridHyperlinkColumn_HorizontalAlignment) property.
 
-### Change the foreground color
+#### Change the foreground color
 
 You can change the foreground color of `GridHyperlinkColumn` by writing the style with target type `HyperlinkButton`.
 
