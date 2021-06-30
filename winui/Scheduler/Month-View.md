@@ -89,7 +89,7 @@ this.Schedule.MonthViewSettings.AppointmentDisplayMode = AppointmentDisplayMode.
 
 ## Appointment display count
 
-Customize the number of appointments displayed in a month cell using the [AppointmentDisplayCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_AppointmentDisplayCount) property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html) in Scheduler. By default, the appointment display count is 3.
+Customize the number of appointments displayed in a month cell using the [AppointmentDisplayCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_AppointmentDisplayCount) property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html) in the Scheduler. By default, the appointment display count is 3, and the month cell has more than 3 appointments, a single appointment will be displayed and the remaining appointments in the month cell will be displayed as more appointments.
 
 {% tabs %}
 {% highlight xaml %}
@@ -108,6 +108,9 @@ this.Schedule.MonthViewSettings.AppointmentDisplayCount = 4;
 {% endtabs %}
 
 ![appointment-display-count-in-winui-scheduler-month-view](Month-View_Imges/appointment-display-count-in-winui-scheduler.png)
+
+N> 
+* By clicking more option, the scheduler navigates to the day view.
 
 ## Month navigation direction
 
@@ -545,3 +548,28 @@ public class AppointmentTemplateSelector : DataTemplateSelector
 {% endtabs %}
 
 ![customize-month-cell-appointment-appearance-using-data-template-selector-in-winui-scheduler-month-view](Month-View_Imges/customize-month-cell-appointment-appearance-using-data-template-selector-in-winui-scheduler.png)
+
+## Customize more appointments indicator in month cell
+
+You can customize the default appearance of more appointments indicator in a month cell by using the `MoreAppointmentsIndicatorTemplate` property of `MonthViewSettings.`
+
+{% tabs %}
+{% highlight xaml %}
+<scheduler:SfScheduler x:Name="Schedule" ViewType="Month">
+    <scheduler:SfScheduler.MonthViewSettings>
+          <scheduler:MonthViewSettings>
+               <scheduler:MonthViewSettings.MoreAppointmentsIndicatorTemplate>
+                    <DataTemplate>
+                         <StackPanel Background="#EAEAEA" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                              <TextBlock Text="{Binding}" Foreground="Black" TextAlignment="Center" VerticalAlignment="Center">
+                              </TextBlock>
+                         </StackPanel>
+                    </DataTemplate>
+               </scheduler:MonthViewSettings.MoreAppointmentsIndicatorTemplate>
+          </scheduler:MonthViewSettings>
+     </scheduler:SfScheduler.MonthViewSettings>
+</scheduler:SfScheduler>
+{% endhighlight %}
+{% endtabs %}
+
+![appointment-display-count-appearance-customization-in-WinUI-scheduler-month-view](Month-View_Imges/appointment-display-count-appearance-customization-in-WinUI-scheduler-month-view.png)

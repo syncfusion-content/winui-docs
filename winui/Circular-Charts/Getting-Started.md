@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Getting Started with WinUI Circular Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Circular Chart (SfCircularChart) control, its elements, and more.
+title: Getting Started with WinUI Chart control | Syncfusion
+description: Learn here all about getting started with Syncfusion WinUI Chart (SfCircularChart) control, its elements, and more.
 platform: WinUI
 control: SfCircularChart
 documentation: ug
 ---
 
-# Getting started with WinUI Circular Charts
+# Getting Started with WinUI Charts (SfCircularChart)
 
 This section explains how to populate the circular chart with data, header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
-## Creating an application with WinUI Circular Chart
+## Creating an application with WinUI Chart (SfCircularChart)
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
@@ -50,7 +50,7 @@ public sealed partial class MainWindow : Window
 
 {% endtabs %}
 
-## Initialize view model
+## Initialize View Model
 
 Now, let us define a simple data model that represents a data point in chart.
 
@@ -107,11 +107,11 @@ N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `Da
 <Window
     . . .
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
-    xmlns:Model="using:ChartDemo.ViewModel">
+    xmlns:model="using:ChartDemo.ViewModel">
 
     <chart:SfCircularChart>
         <chart:SfCircularChart.DataContext>
-            <Model:ChartViewModel/>
+            <model:ChartViewModel/>
         </chart:SfCircularChart.DataContext>
     </chart:SfCircularChart>
 </Window>
@@ -127,7 +127,7 @@ chart.DataContext = viewModel;
 
 {% endtabs %} 
 
-## Populate chart with data
+## Populate Chart with Data
 
 Adding [PieSeries]() to the chart [Series]() collection and binding `Data` to the series [ItemsSource]() property from its `DataContext` for creating our own Product – Sales Pie chart.
 
@@ -156,13 +156,9 @@ ChartViewModel viewModel = new ChartViewModel();
 chart.DataContext = viewModel;
 
 PieSeries series = new PieSeries();
+series.SetBinding(PieSeries.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
-
-series.SetBinding(
-    PieSeries.ItemsSourceProperty, 
-    new Binding() 
-    { Path = new PropertyPath("Data") });
 
 chart.Series.Add(series);
 . . .
@@ -171,9 +167,7 @@ chart.Series.Add(series);
 
 {% endtabs %} 
 
-![Pie series at WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries.png)
-
-## Add title
+## Add Title
 
 The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [Header]() property of circular chart as follows.
 
@@ -189,13 +183,13 @@ The header of the chart acts as the title to provide quick information to the us
 
 {% highlight C# %}
 
+SfCircularChart chart = new SfCircularChart();
+. . .
 chart.Header = "PRODUCT SALES";
 
 {% endhighlight %}
 
 {% endtabs %}  
-
-![Header in WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries_Header.png)
 
 ## Enable Data Labels
 
@@ -204,25 +198,30 @@ The [ShowDataLabels]() property of [CircularSeries]() can be used to enable data
 {% tabs %} 
 
 {% highlight xaml %}
-
-<chart:PieSeries ShowDataLabels="True"
-                 ItemsSource="{Binding Data}" 
-                 XBindingPath="Product" 
-                 YBindingPath="SalesRate"/>
+<chart:SfCircularChart>
+. . .
+    <chart:PieSeries ShowDataLabels="True"
+                     ItemsSource="{Binding Data}" 
+                     XBindingPath="Product" 
+                     YBindingPath="SalesRate"/>
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
+SfCircularChart chart = new SfCircularChart();
+. . .
+PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
+
+chart.Series.Add(series);
 
 {% endhighlight %}
 
-{% endtabs %}  
+{% endtabs %} 
 
-![Data label in WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries_data_label.png)
-
-## Enable legend
+## Enable Legend
 
 The legend provides information about the data point displayed in the circular chart. The [Legend]() property of the chart was used to enable it.
 
@@ -249,9 +248,7 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %} 
 
-![Legend in WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries_Legend.png)
-
-## Enable tooltip
+## Enable Tooltip
 
 Tooltips are used to show information about the segment, when mouse over on it. Enable tooltip by setting series [ShowTooltip]() property as true.
 
@@ -259,23 +256,25 @@ Tooltips are used to show information about the segment, when mouse over on it. 
 
 {% highlight xaml %}
 
-<chart:PieSeries ShowTooltip="True">
-    . . . 
-</chart:PieSeries>
+<chart:SfCircularChart>
+. . .
+    <chart:PieSeries ShowTooltip="True"/>
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-PieSeries series = new PieSeries();
+SfCircularChart chart = new SfCircularChart();
 . . .
+PieSeries series = new PieSeries();
 series.ShowTooltip = true;
+
+chart.Series.Add(series);
 
 {% endhighlight %}
 
 {% endtabs %}
-
-![Tooltip in WinUI Circular Chart](Getting-Started_Images/WinUI_Circular_chart_pieSeries_Tooltip.png)
 
 The following code example gives you the complete code of above configurations.
 
@@ -285,18 +284,15 @@ The following code example gives you the complete code of above configurations.
 
 <chart:SfCircularChart Header="PRODUCT SALES">
     <chart:SfCircularChart.DataContext>
-        <Model:ChartViewModel/>
+        <model:ChartViewModel/>
     </chart:SfCircularChart.DataContext>
     <chart:SfCircularChart.Legend>
         <chart:ChartLegend/>
     </chart:SfCircularChart.Legend>
     <chart:SfCircularChart.Series>
-        <chart:PieSeries ItemsSource="{Binding Data}" 
+        <chart:PieSeries ItemsSource="{Binding Data}" ShowDataLabels="True"
                          XBindingPath="Product" ShowTooltip="True"
                          YBindingPath="SalesRate">
-            <chart:PieSeries.DataLabelSettings>
-                <chart:CircularChartDataLabelSettings Visible="True"/>
-            </chart:PieSeries.DataLabelSettings>
         </chart:PieSeries>
     </chart:SfCircularChart.Series>
 </chart:SfCircularChart>
@@ -319,16 +315,11 @@ public sealed partial class MainWindow : Window
         chart.DataContext = viewModel;
 
         PieSeries series = new PieSeries();
+        series.SetBinding(PieSeries.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
         series.XBindingPath = "Product";
         series.YBindingPath = "SalesRate";
         series.ShowTooltip = true;
-
-        series.DataLabelSettings = new CircularChartDataLabelSettings() { Visible = true };
-
-        series.SetBinding(
-            PieSeries.ItemsSourceProperty, 
-            new Binding() 
-            { Path = new PropertyPath("Data") });
+        series.ShowDataLabels = true;
 
         chart.Series.Add(series);
         this.Content = chart;
@@ -339,7 +330,6 @@ public sealed partial class MainWindow : Window
 
 {% endtabs %}
 
-The following chart is created as a result of the previous codes.
+![Pie chart in WinUI Chart](Getting-Started_Images/WinUI_pie_chart.png)
 
 N> Download demo application from [GitHub]()
-

@@ -61,6 +61,17 @@ Use to display the boolean type data.
 </tr>
 <tr>
 <td>
+GridDateColumn
+</td>
+<td>
+GridCellDateRenderer
+</td>
+<td>
+Use to display the date value.
+</td>
+</tr>
+<tr>
+<td>
 {{'[GridImageColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridImageColumn.html)'| markdownify }}
 </td>
 <td>
@@ -238,7 +249,7 @@ In the below code snippet, `GridTextColumn` is loaded with `ProgressBar` and `Te
 
 By default, underlying record is `DataContext` for CellTemplate. So you have to define, template for each column to display values based on `MappingName`.
  
-You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) for all columns to display value based on MappingName by setting [GridColumn.SetCellBoundValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_SetCellBoundValue) property to `true`.
+You can use the same [DataTemplate](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.datatemplate?view=winui-3.0) for all columns to display value based on MappingName by setting [GridColumn.SetCellBoundValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_SetCellBoundValue) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -272,7 +283,7 @@ You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/win
 
 ### Setting CellTemplate based on custom logic using TemplateSelector
 
-`GridColumn` provides support to choose different [DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) based on underlying data object using [GridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_CellTemplateSelector) property.
+`GridColumn` provides support to choose different [DataTemplate](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.datatemplate?view=winui-3.0) based on underlying data object using [GridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_CellTemplateSelector) property.
   
 For example, two different templates loaded alternatively in OrderID column.
  
@@ -343,7 +354,7 @@ N> Non-Editable columns does not support `CellTemplate`.
 
 ## Data Formatting
 
-`GridColumn` supports to format the data using [Converter](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.data.binding.converter.aspx) properties, by defining `GridColumn.DisplayBinding` and `GridColumn.ValueBinding`. `GridColumn.DisplayBinding` formats the data in display mode. `GridColumn.ValueBinding` formats the data in edit mode.
+`GridColumn` supports to format the data using [Converter](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.binding?view=winui-3.0) properties, by defining `GridColumn.DisplayBinding` and `GridColumn.ValueBinding`. `GridColumn.DisplayBinding` formats the data in display mode. `GridColumn.ValueBinding` formats the data in edit mode.
 
 ### Format column using Converter
 
@@ -600,8 +611,8 @@ GridColumn allows you to change the alignment of `GridCell` and `GridHeaderCellC
 
 ### GridTextColumnBase properties
 
-* Text trimming - You can [trim](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.texttrimming.aspx) the column’s data using `TextTrimming` property.
-* Text wrapping - You can [wrap](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.textwrapping.aspx) the column’s data using `TextWrapping` property.
+* Text trimming - You can [trim](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.texttrimming?view=winui-3.0) the column’s data using `TextTrimming` property.
+* Text wrapping - You can [wrap](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.textwrapping?view=winui-3.0) the column’s data using `TextWrapping` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -661,6 +672,94 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Ship City", Mappi
 {% endtabs %}
 
 ![Enabled Spell Checker to WinUI DataGrid Column](Column-Types_images/winui-datagrid-spellchecker.png)
+
+## GridDateColumn
+
+`GridDateColumn` derived from `GridTextColumnBase` and it displays columns data as date. It hosts [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) element in editing mode.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfuion:SfDataGrid x:Name="dataGrid" 
+                       ItemsSource="{Binding Orders}"
+                       AutoGenerateColumns="False" 
+                      ColumnWidthMode="Star"
+                       AllowEditing="True" >
+    <syncfuion:SfDataGrid.Columns>
+        <syncfuion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <syncfuion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfuion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <syncfuion:GridTextColumn MappingName="Country" />
+        <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+        <syncfuion:GridDateColumn MappingName="Date" />
+    </syncfuion:SfDataGrid.Columns>
+</syncfuion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.Columns.Add(new GridDateColumn() { HeaderText = "Date", MappingName = "Date" });
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI DataGrid Column with DateColumn](Column-Types_images/winui-datagrid-DateColumn-column.png)
+
+### Change the Format of date value
+
+You can edit and display the selected date with various formatting like date, month and year formats by using the `DisplayDateFormat` property. The default value of `DisplayDateFormat` property is **d**. For example below image shown the DateColumn with DisplayDateFormat as **M**.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfuion:SfDataGrid x:Name="dataGrid" 
+                       ItemsSource="{Binding Orders}"
+                       AutoGenerateColumns="False" 
+                       ColumnWidthMode="Star"
+                       AllowEditing="True" >
+    <syncfuion:SfDataGrid.Columns>
+        <syncfuion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <syncfuion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfuion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <syncfuion:GridTextColumn MappingName="Country" />
+        <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+        <syncfuion:GridDateColumn MappingName="Date" DisplayDateFormat="M" />
+    </syncfuion:SfDataGrid.Columns>
+</syncfuion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.Columns.Add(new GridDateColumn() { HeaderText = "Date", MappingName = "Date" , DisplayDateFormat="M" });
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI DataGrid Column with DateColumn with Month format](Column-Types_images/winui-datagrid-DateColumn_with_M-column.png)
+
+### Null value support
+
+`GridDateColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. Instead of displaying null values, you can display hint text using `PlaceholderText`.
+
+The `PlaceholderText` does not shown, when the `AllowNull` is `false`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfuion:SfDataGrid x:Name="dataGrid" 
+                       ItemsSource="{Binding Orders}"
+                       AutoGenerateColumns="False" 
+                       ColumnWidthMode="Star"
+                       AllowEditing="True" >
+    <syncfuion:SfDataGrid.Columns>
+        <syncfuion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <syncfuion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfuion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <syncfuion:GridTextColumn MappingName="Country" />
+        <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+        <syncfuion:GridDateColumn MappingName="Date" AllowNull="True" PlaceholderText="Change the date" />
+    </syncfuion:SfDataGrid.Columns>
+</syncfuion:SfDataGrid>
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI DataGrid Column with DateColumn with Month format](Column-Types_images/winui-datagrid-DateColumn_AllowNull-column.png)
+
+### Setting date value range
+
+You can restrict and display the input value within the range using `MinDate` and `MaxDate` properties.
 
 ## GridCheckBoxColumn
 
@@ -736,7 +835,7 @@ this.dataGrid.Columns.Add(new GridTemplateColumn() { MappingName = "IsClosed", C
 
 By default, underlying record is `DataContext` for CellTemplate. So you have to define, template for each column to display values based on `MappingName`.
  
-You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) for all columns to display value based on MappingName by setting [SetCellBoundValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_SetCellBoundValue) property to `true`.
+You can use the same [DataTemplate](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.datatemplate?view=winui-3.0) for all columns to display value based on MappingName by setting [SetCellBoundValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_SetCellBoundValue) property to `true`.
 
 N> EditTemplate support available only for GridTemplateColumn.
 
@@ -889,7 +988,7 @@ SfDataGrid triggers, [CurrentCellDropDownSelectionChanged](https://help.syncfusi
 
 ### Improving dropdown opening time
 
-You can improve the drop-down opening time on loading by setting [VirtualizingStackPanel](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.virtualizingstackpanel.aspx) as [ItemsPanelTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.itemspaneltemplate.aspx) of `ComboBox`, when the large number of items loaded in it.
+You can improve the drop-down opening time on loading by setting [VirtualizingStackPanel](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.virtualizingstackpanel?view=winui-3.0) as [ItemsPanelTemplate](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.itemspaneltemplate?view=winui-3.0) of `ComboBox`, when the large number of items loaded in it.
 
 {% tabs %}
 {% highlight xaml %}
@@ -909,7 +1008,7 @@ You can improve the drop-down opening time on loading by setting [VirtualizingSt
 
 ### Opening dropdown popup in single-click
 
-You can open the drop down within single click by setting [ComboBox.IsDropDownOpen](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.combobox.isdropdownopen.aspx) property to `true` in `OnEditElementLoaded` method by overriding existing renderer.
+You can open the drop down within single click by setting [ComboBox.IsDropDownOpen](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.combobox?view=winui-3.0) property to `true` in `OnEditElementLoaded` method by overriding existing renderer.
 
 Below code, creates `GridCellComboBoxRendererExt` to set `IsDropDownOpen` property. Replace the default renderer with created renderer in `SfDataGrid.CellRenderers` collection.
 
@@ -985,13 +1084,13 @@ void dataGrid_CurrentCellRequestNavigate(object sender, CurrentCellRequestNaviga
 {% endhighlight %}
 {% endtabs %}
 
-## Customize Hyperlink
+### Customize Hyperlink
 
-### Change the alignment
+#### Change the alignment
 
 You can change the horizontal alignment of `GridHyperlinkColumn` using [HorizontalAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridHyperlinkColumn.html#Syncfusion_UI_Xaml_DataGrid_GridHyperlinkColumn_HorizontalAlignment) property.
 
-### Change the foreground color
+#### Change the foreground color
 
 You can change the foreground color of `GridHyperlinkColumn` by writing the style with target type `HyperlinkButton`.
 
@@ -1094,11 +1193,11 @@ this.dataGrid.Columns.Add(new GridImageColumn() { HeaderText = "Flag", MappingNa
 
 * [Stretch](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridImageColumn.html#Syncfusion_UI_Xaml_DataGrid_GridImageColumn_Stretch) - The image can be stretch by setting `Stretch` property.
 
-* [Scale](https://msdn.microsoft.com/en-us/library/system.windows.controls.image.stretchdirection.aspx) - You can scale the image using [StretchDirection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridImageColumn.html#Syncfusion_UI_Xaml_DataGrid_GridImageColumn_StretchDirection) property.
+* [Scale](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.stretchdirection?view=winui-3.0) - You can scale the image using [StretchDirection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridImageColumn.html#Syncfusion_UI_Xaml_DataGrid_GridImageColumn_StretchDirection) property.
 
 ## GridToggleSwitchColumn
 
-[GridToggleSwitchColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridToggleSwitchColumn.html) derived from [GridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html) and it is used to display `Boolean` type data. It hosts [ToggleSwitch](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.toggleswitch) element as [GridCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCell.html) content.
+[GridToggleSwitchColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridToggleSwitchColumn.html) derived from [GridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html) and it is used to display `Boolean` type data. It hosts [ToggleSwitch](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.toggleswitch?view=winui-3.0) element as [GridCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCell.html) content.
 
 {% tabs %}
 {% highlight xaml %}

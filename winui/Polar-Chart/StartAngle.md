@@ -1,17 +1,15 @@
 ---
 layout: post
-title: Start angle in WinUI Polar Chart control | Syncfusion
-description: This sections explains about how to change the angle position of rendering in Syncfusion WinUI Polar Chart (SfPolarChart) control.
+title: Start angle in WinUI Chart control | Syncfusion
+description: This sections explains about how to change the angle position of rendering in Syncfusion WinUI Chart (SfPolarChart) control.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
 ---
 
-# Rendering position in WinUI Polar Chart (SfPolarChart)
+# Rendering Position in WinUI Chart (SfPolarChart)
 
 By using the [StartAngle]() property of polar chart, you can modify the rendering position of the series on four degree values: 0, 90, 180, and 270. The default value of [StartAngle]() property is [Rotate270]().
-
-The below code snippet explains how to change the rendering of series at zero degree.
 
 {% tabs %}
 
@@ -34,5 +32,4 @@ chart.StartAngle = ChartPolarAngle.Rotate0;
 
 {% endtabs %}
 
-![Rotation support for polar series in WinUI polar chart](StartAngle_Images/WinUI_PolarChart_Rotate0.png)
-
+![Rendering position for polar series in WinUI chart](StartAngle_Images/WinUI_Chart_Rotate0.png)

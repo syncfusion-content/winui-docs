@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Stacked 100 Charts in WinUI Cartesian Chart control | Syncfusion
-description: Learn here all about stacked 100 chart types column, line and area in Syncfusion WinUI Cartesian Chart (SfCartesianChart) control.
+title: Stacked 100 Charts in WinUI Chart control | Syncfusion
+description: Learn here all about stacked 100 chart types column, line and area in Syncfusion WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Stacked 100 Charts in WinUI Cartesian Chart (SfCartesianChart)
+# Stacked 100 Charts in WinUI Chart (SfCartesianChart)
 
-## Stacked column 100 Chart
+## Stacked Column 100 Chart
 
 The [`StackedColumn100Series`]() resembles [StackedColumnSeries]() but the cumulative portion of each stacked element always comes to a total of 100%. 
 
@@ -18,7 +18,15 @@ The [`StackedColumn100Series`]() resembles [StackedColumnSeries]() but the cumul
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>  
+
     <chart:StackedColumn100Series XBindingPath="CountryName" 
             YBindingPath="GoldMedals" ItemsSource="{Binding MedalDetails}"/>
 
@@ -29,14 +37,18 @@ The [`StackedColumn100Series`]() resembles [StackedColumnSeries]() but the cumul
             YBindingPath="BronzeMedals" ItemsSource="{Binding MedalDetails}"/>
     ...
 </chart:SfCartesianChart>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
-
-...
+CategoryAxis primaryAxis = new CategoryAxis();
+primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
 
 StackedColumn100Series series1 = new StackedColumn100Series()
 {
@@ -68,9 +80,9 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedColumn100 chart type in WinUI Cartesian Chart](Stacking100_Series_Images/stackedcolumn100_chart.png)
+![StackedColumn100 chart type in WinUI Chart](Stacking100_Series_Images/WinUI_Chart_stackedcolumn100.png)
 
-## Stacked line 100 Chart
+## Stacked Line 100 Chart
 
 The [`StackedLine100Series`]() resembles [`StackedLineSeries`]() but the cumulative portion of each stacked element always comes to a total of 100%. 
 
@@ -79,7 +91,14 @@ The [`StackedLine100Series`]() resembles [`StackedLineSeries`]() but the cumulat
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>  
 
     <chart:StackedLine100Series ItemsSource="{Binding Data}" 
             XBindingPath="MonthlyExpenses" 
@@ -101,8 +120,11 @@ The [`StackedLine100Series`]() resembles [`StackedLineSeries`]() but the cumulat
 
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
-
-...
+CategoryAxis primaryAxis = new CategoryAxis();
+primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
 
 StackedLine100Series series1 = new StackedLine100Series()
 {
@@ -134,9 +156,9 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedLine100 chart type in WinUI Cartesian Chart](Stacking100_Series_Images/stackedline100_chart.png)
+![StackedLine100 chart type in WinUI Chart](Stacking100_Series_Images/WinUI_Chart_Stackedline100.png)
 
-## Stacked area 100 Chart
+## Stacked Area 100 Chart
 
 The [StackedArea100Series]() is similar to [StackedAreaSeries](), but the cumulative portion of each stacked element always comes to a total of 100%. 
 
@@ -145,7 +167,15 @@ The [StackedArea100Series]() is similar to [StackedAreaSeries](), but the cumula
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>  
+    
     <chart:StackedArea100Series XBindingPath="Month"         
         YBindingPath="Bus" ItemsSource="{Binding Accidents}" />
 
@@ -162,8 +192,11 @@ The [StackedArea100Series]() is similar to [StackedAreaSeries](), but the cumula
 
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
-
-...
+CategoryAxis primaryAxis = new CategoryAxis();
+primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
 
 StackedArea100Series series1 = new StackedArea100Series()
 {
@@ -195,4 +228,4 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedArea100 chart type in WinUI Cartesian Chart](Stacking100_Series_Images/stackedarea100_chart.png)
+![StackedArea100 chart type in WinUI Chart](Stacking100_Series_Images/WinUI_Chart_Stackedarea100.png)

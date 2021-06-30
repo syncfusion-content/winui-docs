@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Polar line chart | SfPolarChart | Syncfusion
-description: Learn here all about the polar line chart and its features in Syncfusion WinUI Polar Chart (SfPolarChart) control.
+description: Learn here all about the polar line chart and its features in Syncfusion WinUI Chart (SfPolarChart) control.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
 ---
 
-# Polar Line Chart in WinUI Polar Charts (SfPolarChart)
+# Polar Line Chart in WinUI Charts (SfPolarChart)
 
-To render a line series in polar chart, create an instance of the [PolarLineSeries]() and add it to the [Series]() collection property of [SfPolarChart](). The following code example demonstrates how to define [PolarLineSeries]().
+To render a line series in polar chart, create an instance of the [PolarLineSeries]() and add it to the [Series]() collection property of [SfPolarChart]().
 
 {% tabs %}
 
@@ -69,11 +69,11 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![PolarLineSeries in WinUI polar chart](PolarLine_Images/WinUI_PolarChart_PolarLineSeries.png)
+![PolarLineSeries in WinUI chart](PolarLine_Images/WinUI_Chart_PolarLineSeries.png)
 
 ## Grid line type
 
-The [GridLineType]() property is used to change the rendering type of axis grid lines. The default value of [GridLineType]() is `Circle`. By changing the grid line type as `Polygon`, we can shown the polar chart similar like spider chart or web chart. 
+The [GridLineType]() property is used to change the rendering type of axis grid lines. The default value of [GridLineType]() is `Circle`. By changing the grid line type as `Polygon`, we can shown the polar chart similar like radar chart or spider chart or web chart. 
 
 {% tabs %}
 
@@ -108,9 +108,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Spider/Web chart](PolarLine_Images/WinUI_PolarChart_GridlineType_polygon.png)
+![Spider/Web chart](PolarLine_Images/WinUI_Chart_GridlineType_polygon.png)
 
-## Closing path
+## Closing Path
 
 [IsClosed]() property is used to render the series with or without closed path. The default value of [IsClosed]() is `true`. 
 
@@ -149,4 +149,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Closing path in WinUI polar chart](PolarLine_Images/WinUI_PolarChart_IsClosed.png)
+![Closing path in WinUI chart](PolarLine_Images/WinUI_Chart_IsClosed.png)

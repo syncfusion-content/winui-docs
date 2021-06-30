@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Tooltip in WinUI Pyramid Chart control | Syncfusion
-description: This section explains about how to enable tooltip and its customization in Syncfusion WinUI Pyramid Chart(SfPyramidChart) control.
+title: Tooltip in WinUI Chart control | Syncfusion
+description: This section explains about how to enable tooltip and its customization in Syncfusion WinUI Chart(SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
 ---
 
-# Tooltip in WinUI Pyramid Chart (SfPyramidChart)
+# Tooltip in WinUI Chart (SfPyramidChart)
 
 Tooltip is used to display any information over segments. It appears at the data point position when the mouse hovers over any chart segment. It is set to display the metadata of the hovered segment or data point.
 
-## Define tooltip
+## Define Tooltip
 
 To define the tooltip in the chart, set the [ShowTooltip]() property to true. The default value of [ShowTooltip]() property is false.
 
@@ -45,7 +45,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip support in WinUI Pyramid chart](Tooltip_images/WinUI_pyramid_chart_tooltip.png)
+![Tooltip support in WinUI chart](Tooltip_Images/WinUI_chart_tooltip.png)
 
 ## Customization
 
@@ -65,29 +65,33 @@ The [ChartTooltipBehavior]() is used to customize the tooltip. For customizing t
 
 {% highlight xml %}
 
-<chart:SfPyramidChart.Behaviors>
-    <chart:ChartTooltipBehavior/>
-</chart:SfPyramidChart.Behaviors>
+<chart:SfPyramidChart x:Name="chart">
+. . .        
+    <chart:SfPyramidChart.Behaviors>
+        <chart:ChartTooltipBehavior/>
+    </chart:SfPyramidChart.Behaviors>
+. . .
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-
+chart.ShowTooltip = true;
 ChartTooltipBehavior behavior = new ChartTooltipBehavior();
 
 chart.Behaviors.Add(behavior);
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Background style customization
+## Background Style
 
 The tooltip's fill and stroke color can be customized by using the [Style]() property. To define a [Style]() for tooltip, specify the style of `TargetType` as `Path`.
-
-The following code example explains how to apply the style for tooltip background.
 
 {% tabs %}
 
@@ -114,6 +118,7 @@ The following code example explains how to apply the style for tooltip backgroun
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+chart.ShowTooltip = true;
 Style style = new Style(typeof(Path));
 style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Black)));
 style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)));
@@ -121,18 +126,18 @@ style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.Style = style;
 chart.Behaviors.Add(tooltipBehavior);
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Tooltip background style customization in WinUI Pyramid chart](Tooltip_images/WinUI_pyramid_chart_background_style_customization_tooltip.png)
+![Tooltip background style in WinUI chart](Tooltip_Images/WinUI_chart_tooltip_background_style.png)
 
-### Label style customization
+## Label Style
 
 The tooltip label style can be customized by using the [LabelStyle]() property. To define a [Style]() for the tooltip label, specify the style of `TargetType` as `TextBlock`.
-
-The following code example explains how to apply the style for a tooltip label.
 
 {% tabs %}
 
@@ -159,6 +164,7 @@ The following code example explains how to apply the style for a tooltip label.
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+chart.ShowTooltip = true;
 Style labelStyle = new Style(typeof(TextBlock));
 labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
 labelStyle.Setters.Add(new Setter(TextBlock.FontStyleProperty, FontStyles.Italic));
@@ -167,205 +173,18 @@ labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBr
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.LabelStyle = labelStyle;
 chart.Behaviors.Add(tooltipBehavior);
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Tooltip label style customization in WinUI Pyramid chart](Tooltip_images/WinUI_pyramid_chart_label_style_customization_tooltip.png)
+![Tooltip label style customization in WinUI chart](Tooltip_Images/WinUI_chart_tooltip_label_style.png)
 
-### Tooltip alignment
-
-The tooltip can be aligned with respect to the cursor position using the [`HorizontalAlignment`]() and [`VerticalAlignment`]() properties.
-
-**HorizontalAlignment**
-
-Tooltip can be positioned horizontally left, right, or center to the cursor position. The following code example explains the positioning of tooltip to the left of the cursor.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfPyramidChart x:Name="chart" 
-                ShowTooltip="True" 
-                Palette="BlueChrome" 
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
-
-    <chart:SfPyramidChart.Behaviors>
-        <chart:ChartTooltipBehavior HorizontalAlignment="Left"/>
-    </chart:SfPyramidChart.Behaviors>
-
-</chart:SfPyramidChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfPyramidChart chart = new SfPyramidChart();
-ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
-tooltipBehavior.HorizontalAlignment = HorizontalAlignment.Left;
-chart.Behaviors.Add(tooltipBehavior);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Tooltip horizontal alignment support in WinUI Pyramid Chart](Tooltip_images/WinUI_pyramid_chart_tooltip_horizontal_alignment.png)
-
-N> By default the horizontal alignment is center for the tooltip.
-
-**VerticalAlignment**
-
-Tooltip can be positioned vertically top, bottom, or center to the cursor position. The following code example explains the positioning of tooltip to the bottom of the cursor.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfPyramidChart x:Name="chart" 
-                ShowTooltip="True" 
-                Palette="BlueChrome" 
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
-
-    <chart:SfPyramidChart.Behaviors>
-        <chart:ChartTooltipBehavior VerticalAlignment="Bottom"/>
-    </chart:SfPyramidChart.Behaviors>
-
-</chart:SfPyramidChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfPyramidChart chart = new SfPyramidChart();
-ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
-tooltipBehavior.VerticalAlignment = VerticalAlignment.Bottom;
-chart.Behaviors.Add(tooltipBehavior);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Tooltip vertical alignment support in WinUI Pyramid Chart](Tooltip_images/WinUI_pyramid_chart_tooltip_vertical_alignment.png)
-
-### Tooltip offset
-
-The tooltip can be positioned at a particular distance from the cursor by using the [HorizontalOffset]() and [VerticalOffset]() properties.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfPyramidChart x:Name="chart" 
-                ShowTooltip="True" 
-                Palette="BlueChrome" 
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
-
-        <chart:SfPyramidChart.Behaviors>
-            <chart:ChartTooltipBehavior HorizontalOffset="40" VerticalOffset="40"/>
-        </chart:SfPyramidChart.Behaviors>
-
-</chart:SfPyramidChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfPyramidChart chart = new SfPyramidChart();
-ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
-tooltipBehavior.HorizontalOffset = 40;
-tooltipBehavior.VerticalOffset = 40;
-chart.Behaviors.Add(tooltipBehavior);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Offset support for tooltip in WinUI Pyramid Chart](Tooltip_images/WinUI_pyramid_chart_tooltip_offset.png)
-
-### Tooltip duration
-
-The [ShowDuration]() property is used to specify the duration time in milliseconds for which tooltip will be displayed.
-
-The following code example demonstrates the duration of the tooltip set as 5 seconds.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<chart:SfPyramidChart x:Name="chart" 
-                ShowTooltip="True" 
-                Palette="BlueChrome" 
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
-
-    <chart:SfPyramidChart.Behaviors>
-        <chart:ChartTooltipBehavior ShowDuration="5000"/>
-    </chart:SfPyramidChart.Behaviors>
-
-</chart:SfPyramidChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfPyramidChart chart = new SfPyramidChart();
-ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
-tooltipBehavior.ShowDuration = 5000;
-chart.Behaviors.Add(tooltipBehavior);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-N> By default, the tooltip will be displayed for 1000 milliseconds.
-
-### Tooltip animation
-
-Animation for tooltip can be set by using the [`EnableAnimation`]() property as shown in the following code sample.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<chart:SfPyramidChart x:Name="chart" 
-                ShowTooltip="True" 
-                Palette="BlueChrome" 
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
-
-    <chart:SfPyramidChart.Behaviors>
-        <chart:ChartTooltipBehavior EnableAnimation="True"/>
-    </chart:SfPyramidChart.Behaviors>
-
-</chart:SfPyramidChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfPyramidChart chart = new SfPyramidChart();
-ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
-tooltipBehavior.EnableAnimation = true;
-chart.Behaviors.Add(tooltipBehavior);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### Tooltip template
+## Template
 
 The pyramid chart provides support to customize the appearance of the tooltip by using the [`TooltipTemplate`]() property. 
-
-The following code example explains how to display both x-value and y-value in tooltip using a template.
 
 {% tabs %}
 
@@ -418,5 +237,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tooltip template in WinUI Pyramid Chart](Tooltip_images/WinUI_pyramid_chart_tooltip_customization.png)
-
+![Tooltip template in WinUI Chart](Tooltip_Images/WinUI_chart_tooltip_template.png)

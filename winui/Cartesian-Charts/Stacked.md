@@ -1,26 +1,32 @@
 ---
 layout: post
-title: Stacked charts in WinUI Cartesian Chart control | Syncfusion
+title: Stacked charts in WinUI Chart control | Syncfusion
 description: Learn here all about stacked chart types column, line, and area in Syncfusion WinUI Chart(SfChart) control.
 platform: WinUI
 control: SfChart
 documentation: ug
 ---
 
-# Stacked Charts in WinUI Cartesian Chart (SfCartesianChart)
+# Stacked Charts in WinUI Chart (SfCartesianChart)
 
-## Stacked column Chart
+## Stacked Column Chart
 
 The [`StackedColumnSeries`]() resembles multiple of column series and each series is vertically stacked one above the other. When there is only one series, then it is `ColumnSeries`. 
-
-The following code example demonstrates how to define the `StackedColumnSeries`.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>  
+
     <chart:StackedColumnSeries XBindingPath="CountryName"    
             YBindingPath="GoldMedals" ItemsSource="{Binding MedalDetails}"/>
 
@@ -37,8 +43,11 @@ The following code example demonstrates how to define the `StackedColumnSeries`.
 
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
-
-...
+CategoryAxis primaryAxis = new CategoryAxis();
+primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
 
 StackedColumnSeries series1 = new StackedColumnSeries()
 {
@@ -70,20 +79,25 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedColumn chart type in WinUI Cartesian Chart](Stacking_Series_Images/stackedcolumn_chart.png)
+![StackedColumn chart type in WinUI Chart](Stacking_Series_Images/WinUI_Chart_stackedcolumn.png)
 
-## Stacked line Chart
+## Stacked Line Chart
 
 The [`StackedLineSeries`]() resembles multiple of line series and each series is vertically stacked one above the other. When there is only one series, then it is [`LineSeries`](). 
-
-The following code example demonstrates how to define the `StackedLineSeries`.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>  
 
     <chart:StackedLineSeries  
             XBindingPath="MonthlyExpenses"    
@@ -108,8 +122,11 @@ The following code example demonstrates how to define the `StackedLineSeries`.
 
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
-
-...
+CategoryAxis primaryAxis = new CategoryAxis();
+primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
 
 StackedLineSeries series1 = new StackedLineSeries()
 {
@@ -141,9 +158,9 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedLine chart type in WinUI Cartesian Chart](Stacking_Series_Images/stackedline_chart.png)
+![StackedLine chart type in WinUI Chart](Stacking_Series_Images/WinUI_Chart_stackedline.png)
 
-## Stacked area Chart
+## Stacked Area Chart
 
 The [`StackedAreaSeries`]() is representing the multiple of area series are stacked vertically one above the other. 
 
@@ -152,7 +169,15 @@ The [`StackedAreaSeries`]() is representing the multiple of area series are stac
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>  
+
     <chart:StackedAreaSeries XBindingPath="Month" 
         YBindingPath="Bus" ItemsSource="{Binding Accidents}" />
 
@@ -170,8 +195,11 @@ The [`StackedAreaSeries`]() is representing the multiple of area series are stac
 
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
-
-...
+CategoryAxis primaryAxis = new CategoryAxis();
+primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
+chart.PrimaryAxis = primaryAxis;
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
 
 StackedAreaSeries series1 = new StackedAreaSeries()
 {
@@ -203,5 +231,4 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackedArea chart type in WinUI Cartesian Chart](Stacking_Series_Images/stackedarea_chart.png)
-
+![StackedArea chart type in WinUI Chart](Stacking_Series_Images/WinUI_Chart_stackedarea.png)

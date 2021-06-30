@@ -1,30 +1,54 @@
 ---
 layout: post
-title: Title in WinUI Polar Chart control | Syncfusion
-description: Learn here all about title in Syncfusion WinUI Polar Chart (SfPolarChart) control and its customization.
+title: Title in WinUI Chart control | Syncfusion
+description: Learn here all about the title in Syncfusion WinUI Chart (SfPolarChart) control and its customization.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
 ---
 
-# Chart title in WinUI Polar Chart (SfPolarChart)
+# Chart Title in WinUI Chart (SfPolarChart)
 
-`Header` property of `SfPolarChart` is used to define and customize the chart title. It accepts any `UIElement` as content for the chart header.
+`Header` property is used to define the title for the chart.
+
+{% tabs %}   
+
+{% highlight xaml %}
+
+<chart:SfPolarChart x:Name="chart" Header="Polar Chart">
+ . . .           
+</chart:SfPolarChart>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+SfPolarChart chart = new SfPolarChart();
+chart.Header = "Polar Chart";
+. . . 
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+![Title support in WinUI chart](Title_Images/WinUI_chart_title.png)
+
+## Customization
+
+Chart provides support to add any `UIElement` as a title. The following code example defines `TextBlock` as chart header.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-
  <chart:SfPolarChart>
-
     <chart:SfPolarChart.Header>
         <Border BorderThickness="2" BorderBrush="Black" Margin="10" CornerRadius="5">
             <TextBlock FontSize="14" Text="Polar Chart" Margin="5"/>
         </Border>
     </chart:SfPolarChart.Header>
     ...
-            
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -56,9 +80,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Title customization support in WinUI polar chart](Title_images/WinUI_PolarChart_TitleCustomization.png)
+![Title customization support in WinUI chart](Title_images/WinUI_Chart_TitleCustomization.png)
 
-## Title Alignment
+## Alignment
 
 The title text content can be aligned horizontally to the left, center or right of the chart using the [HorizontalHeaderAlignment]() property of the `SfPolarChart`.
 
@@ -112,5 +136,4 @@ chart.Header = border;
 
 {% endtabs %}
 
-![Title text alignment support in WinUI polar chart](Title_images/WinUI_PolarChart_TitleAlignment.png)
-
+![Title text alignment support in WinUI chart](Title_images/WinUI_Chart_TitleAlignment.png)

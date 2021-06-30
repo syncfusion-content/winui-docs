@@ -1,20 +1,49 @@
 ---
 layout: post
-title: Header in WinUI Circular Chart control | Syncfusion
-description: Learn here all about title with Syncfusion WinUI Circular Chart (SfCircularChart) control and its customization.
+title: Header in WinUI Chart control | Syncfusion
+description: Learn here all about title with Syncfusion WinUI Chart (SfCircularChart) control and its customization.
 platform: WinUI
 control: SfCircularChart
 documentation: ug
 ---
 
-# Header in WinUI Circular Charts (SfCircularChart)
+# Header in WinUI Charts (SfCircularChart)
 
-`Header` property of `SfCircularChart` is used to define and customize the chart title. It accepts any object (.Net object) as content for the chart header.
+`Header` property is used to define the title for the chart.
+
+{% tabs %}   
+
+{% highlight xaml %}
+
+<chart:SfCircularChart x:Name="chart" Header="Circular Chart Header">
+ . . .           
+</chart:SfCircularChart>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+SfCircularChart chart = new SfCircularChart();
+chart.Header = "Circular Chart Header";
+. . . 
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+![Title support in WinUI chart](Header_Images/winui_chart_title.png)
+
+## Customization
+
+Chart provides support to add any `UIElement` as a title. The following code example defines `TextBlock` as chart header.
 
 {% tabs %}
 
 {% highlight xaml %}
 
+<chart:SfCircularChart>
+. . .
 <chart:SfCircularChart.Header>
     <Border BorderThickness="0.5" BorderBrush="Black" Margin="10" CornerRadius="5">
         <TextBlock Text="Circular Chart Header"
@@ -24,6 +53,8 @@ documentation: ug
         </TextBlock>
     </Border>
 </chart:SfCircularChart.Header>
+
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
@@ -52,9 +83,9 @@ chart.Header = border;
 
 {% endtabs %}
 
-![Title customization support in WinUI Circular Chart](Header_Images/WinUI_Circular_chart_Header.png)
+![Title customization support in WinUI Chart](Header_Images/WinUI_pie_chart_title.png)
 
-## Title alignment
+## Alignment
 
 The title text content can be aligned horizontally to the left, center or right of the chart using the [HorizontalHeaderAlignment]() property of the `SfCircularChart`.
 
@@ -107,5 +138,4 @@ chart.Header = border;
 
 {% endtabs %}
 
-![Title alignment in WinUI Circular Chart](Header_Images/WinUI_Circular_chart_Header_customization.png)
-
+![Title alignment in WinUI Chart](Header_Images/WinUI_pie_chart_title_alignment.png)
