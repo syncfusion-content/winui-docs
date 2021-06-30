@@ -61,10 +61,10 @@ Use to display the boolean type data.
 </tr>
 <tr>
 <td>
-GridDateColumn
+{{'[GridDateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html)'| markdownify }}
 </td>
 <td>
-GridCellDateRenderer
+{{'[GridCellDateRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Renderers.GridCellDateRenderer.html)'| markdownify }}
 </td>
 <td>
 Use to display the date value.
