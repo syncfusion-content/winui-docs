@@ -427,4 +427,4 @@ The following chart is created as a result of the previous codes.
 
 ![Getting Started WinUI Chart](Getting-Started_Images/WinUI_Chart.png)
 
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/PolarChartGettingStarted)

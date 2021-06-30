@@ -332,4 +332,4 @@ public sealed partial class MainWindow : Window
 
 ![Pie chart in WinUI Chart](Getting-Started_Images/WinUI_pie_chart.png)
 
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/CircularChartGettingStarted)

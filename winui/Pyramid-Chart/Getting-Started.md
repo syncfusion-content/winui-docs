@@ -298,4 +298,4 @@ public sealed partial class MainWindow : Window
 
 ![Getting started for WinUI Chart](Getting-Started_Images/WinUI_Chart.png)
 
-N> Download demo application from [GitHub]().
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/PyramidChartGettingStarted).
