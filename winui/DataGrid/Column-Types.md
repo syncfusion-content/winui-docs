@@ -1193,7 +1193,7 @@ this.dataGrid.Columns.Add(new GridImageColumn() { HeaderText = "Flag", MappingNa
 
 * [Stretch](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridImageColumn.html#Syncfusion_UI_Xaml_DataGrid_GridImageColumn_Stretch) - The image can be stretch by setting `Stretch` property.
 
-* [Scale](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.image.stretchdirection?redirectedfrom=MSDN&view=net-5.0#System_Windows_Controls_Image_StretchDirection) - You can scale the image using [StretchDirection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridImageColumn.html#Syncfusion_UI_Xaml_DataGrid_GridImageColumn_StretchDirection) property.
+* [Scale](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.stretchdirection?view=winui-3.0) - You can scale the image using [StretchDirection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridImageColumn.html#Syncfusion_UI_Xaml_DataGrid_GridImageColumn_StretchDirection) property.
 
 ## GridToggleSwitchColumn
 

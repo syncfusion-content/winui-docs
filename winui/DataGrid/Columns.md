@@ -398,9 +398,9 @@ Below screenshot shows the customized header template loaded on the header of Or
 
 #### Data Annotations with AutoGenerateColumns
 
-SfDataGrid support to generate the columns based on built-in [Data Annotation Attributes](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel?view=dotnet-uwp-10.0&redirectedfrom=MSDN). 
+SfDataGrid support to generate the columns based on built-in data annotation attributes. 
 
-Data Annotations ignored, when the `AutoGenerateColumns` is set to `False`.
+Data annotations are ignored, when the `AutoGenerateColumns` is set to `False`.
 
 ##### Exclude column
 
