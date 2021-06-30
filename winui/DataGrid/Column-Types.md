@@ -249,7 +249,7 @@ In the below code snippet, `GridTextColumn` is loaded with `ProgressBar` and `Te
 
 By default, underlying record is `DataContext` for CellTemplate. So you have to define, template for each column to display values based on `MappingName`.
  
-You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) for all columns to display value based on MappingName by setting [GridColumn.SetCellBoundValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_SetCellBoundValue) property to `true`.
+You can use the same [DataTemplate](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.datatemplate?view=winui-3.0) for all columns to display value based on MappingName by setting [GridColumn.SetCellBoundValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_SetCellBoundValue) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -283,7 +283,7 @@ You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/win
 
 ### Setting CellTemplate based on custom logic using TemplateSelector
 
-`GridColumn` provides support to choose different [DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) based on underlying data object using [GridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_CellTemplateSelector) property.
+`GridColumn` provides support to choose different [DataTemplate](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.datatemplate?view=winui-3.0) based on underlying data object using [GridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_CellTemplateSelector) property.
   
 For example, two different templates loaded alternatively in OrderID column.
  
@@ -354,7 +354,7 @@ N> Non-Editable columns does not support `CellTemplate`.
 
 ## Data Formatting
 
-`GridColumn` supports to format the data using [Converter](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.data.binding.converter.aspx) properties, by defining `GridColumn.DisplayBinding` and `GridColumn.ValueBinding`. `GridColumn.DisplayBinding` formats the data in display mode. `GridColumn.ValueBinding` formats the data in edit mode.
+`GridColumn` supports to format the data using [Converter](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.binding?view=winui-3.0) properties, by defining `GridColumn.DisplayBinding` and `GridColumn.ValueBinding`. `GridColumn.DisplayBinding` formats the data in display mode. `GridColumn.ValueBinding` formats the data in edit mode.
 
 ### Format column using Converter
 
@@ -611,8 +611,8 @@ GridColumn allows you to change the alignment of `GridCell` and `GridHeaderCellC
 
 ### GridTextColumnBase properties
 
-* Text trimming - You can [trim](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.texttrimming.aspx) the column’s data using `TextTrimming` property.
-* Text wrapping - You can [wrap](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.textwrapping.aspx) the column’s data using `TextWrapping` property.
+* Text trimming - You can [trim](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.texttrimming?view=winui-3.0) the column’s data using `TextTrimming` property.
+* Text wrapping - You can [wrap](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.textwrapping?view=winui-3.0) the column’s data using `TextWrapping` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -835,7 +835,7 @@ this.dataGrid.Columns.Add(new GridTemplateColumn() { MappingName = "IsClosed", C
 
 By default, underlying record is `DataContext` for CellTemplate. So you have to define, template for each column to display values based on `MappingName`.
  
-You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) for all columns to display value based on MappingName by setting [SetCellBoundValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_SetCellBoundValue) property to `true`.
+You can use the same [DataTemplate](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.datatemplate?view=winui-3.0) for all columns to display value based on MappingName by setting [SetCellBoundValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_SetCellBoundValue) property to `true`.
 
 N> EditTemplate support available only for GridTemplateColumn.
 
@@ -988,7 +988,7 @@ SfDataGrid triggers, [CurrentCellDropDownSelectionChanged](https://help.syncfusi
 
 ### Improving dropdown opening time
 
-You can improve the drop-down opening time on loading by setting [VirtualizingStackPanel](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.virtualizingstackpanel.aspx) as [ItemsPanelTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.itemspaneltemplate.aspx) of `ComboBox`, when the large number of items loaded in it.
+You can improve the drop-down opening time on loading by setting [VirtualizingStackPanel](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.virtualizingstackpanel?view=winui-3.0) as [ItemsPanelTemplate](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.itemspaneltemplate?view=winui-3.0) of `ComboBox`, when the large number of items loaded in it.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1008,7 +1008,7 @@ You can improve the drop-down opening time on loading by setting [VirtualizingSt
 
 ### Opening dropdown popup in single-click
 
-You can open the drop down within single click by setting [ComboBox.IsDropDownOpen](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.combobox.isdropdownopen.aspx) property to `true` in `OnEditElementLoaded` method by overriding existing renderer.
+You can open the drop down within single click by setting [ComboBox.IsDropDownOpen](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.combobox?view=winui-3.0) property to `true` in `OnEditElementLoaded` method by overriding existing renderer.
 
 Below code, creates `GridCellComboBoxRendererExt` to set `IsDropDownOpen` property. Replace the default renderer with created renderer in `SfDataGrid.CellRenderers` collection.
 
@@ -1193,11 +1193,11 @@ this.dataGrid.Columns.Add(new GridImageColumn() { HeaderText = "Flag", MappingNa
 
 * [Stretch](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridImageColumn.html#Syncfusion_UI_Xaml_DataGrid_GridImageColumn_Stretch) - The image can be stretch by setting `Stretch` property.
 
-* [Scale](https://msdn.microsoft.com/en-us/library/system.windows.controls.image.stretchdirection.aspx) - You can scale the image using [StretchDirection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridImageColumn.html#Syncfusion_UI_Xaml_DataGrid_GridImageColumn_StretchDirection) property.
+* [Scale](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.image.stretchdirection?redirectedfrom=MSDN&view=net-5.0#System_Windows_Controls_Image_StretchDirection) - You can scale the image using [StretchDirection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridImageColumn.html#Syncfusion_UI_Xaml_DataGrid_GridImageColumn_StretchDirection) property.
 
 ## GridToggleSwitchColumn
 
-[GridToggleSwitchColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridToggleSwitchColumn.html) derived from [GridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html) and it is used to display `Boolean` type data. It hosts [ToggleSwitch](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.toggleswitch) element as [GridCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCell.html) content.
+[GridToggleSwitchColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridToggleSwitchColumn.html) derived from [GridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html) and it is used to display `Boolean` type data. It hosts [ToggleSwitch](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.toggleswitch?view=winui-3.0) element as [GridCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCell.html) content.
 
 {% tabs %}
 {% highlight xaml %}
