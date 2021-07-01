@@ -9,7 +9,7 @@ documentation: ug
 
 # Polar Line Chart in WinUI Charts (SfPolarChart)
 
-To render a line series in polar chart, create an instance of the [PolarLineSeries]() and add it to the [Series]() collection property of [SfPolarChart]().
+To render a line series in polar chart, create an instance of the [PolarLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarLineSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_Series) collection property of [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html).
 
 {% tabs %}
 
@@ -73,7 +73,7 @@ chart.Series.Add(series3);
 
 ## Grid line type
 
-The [GridLineType]() property is used to change the rendering type of axis grid lines. The default value of [GridLineType]() is `Circle`. By changing the grid line type as `Polygon`, we can shown the polar chart similar like radar chart or spider chart or web chart. 
+The [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_GridLineType) property is used to change the rendering type of axis grid lines. The default value of [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_GridLineType) is `Circle`. By changing the grid line type as `Polygon`, we can shown the polar chart similar like radar chart or spider chart or web chart. 
 
 {% tabs %}
 
@@ -112,7 +112,7 @@ chart.Series.Add(series);
 
 ## Closing Path
 
-[IsClosed]() property is used to render the series with or without closed path. The default value of [IsClosed]() is `true`. 
+[IsClosed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase.html#Syncfusion_UI_Xaml_Charts_PolarRadarSeriesBase_IsClosed) property is used to render the series with or without closed path. The default value of [IsClosed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase.html#Syncfusion_UI_Xaml_Charts_PolarRadarSeriesBase_IsClosed) is `true`. 
 
 {% tabs %}
 
