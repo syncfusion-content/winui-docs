@@ -16,7 +16,7 @@ This section explains how to populate the Cartesian chart with data, a header, d
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
 3. To initialize the control, import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C#.
-4. Initialize `SfCartesianChart` control.
+4. Initialize [`SfCartesianChart`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) control.
 
 {% tabs %} 
 
@@ -135,7 +135,7 @@ this.DataContext = new ViewModel();
 
 ## Initialize Chart Axis
 
-[ChartAxis]() is used to locate the data points inside the chart area. The [PrimaryAxis]() and [SecondaryAxis]() properties of the chart is used to initialize the axis for the chart.
+[ChartAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html) is used to locate the data points inside the chart area. The [PrimaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PrimaryAxis) and [SecondaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_SecondaryAxis) properties of the chart is used to initialize the axis for the chart.
 
 {% tabs %} 
 
@@ -173,9 +173,9 @@ Run the project and check if you get following output to make sure you have conf
 
 ## Populate Chart with Data
 
-As we are going to visualize the comparison of heights in the data model, add [ColumnSeries]() to [Series]() property of chart, and then bind the `Data` property of the above `ViewModel` to the `ColumnSeries.ItemsSource` as follows.
+As we are going to visualize the comparison of heights in the data model, add [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html) to [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) property of chart, and then bind the `Data` property of the above `ViewModel` to the `ColumnSeries.ItemsSource` as follows.
 
-N> You need to set [XBindingPath]() and [YBindingPath]() properties, so that chart would fetch values from the respective properties in the data model to plot the series.
+N> You need to set [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath) and [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.XyDataSeries.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties, so that chart would fetch values from the respective properties in the data model to plot the series.
 
 {% tabs %}   
 
@@ -226,7 +226,7 @@ chart.Series.Add(series);
 
 ## Add Title
 
-The title of the chart provide quick information to the user about the data being plotted in the chart. The [Header]() property is used to set title for the chart as follows.
+The title of the chart provide quick information to the user about the data being plotted in the chart. The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to set title for the chart as follows.
 
 {% tabs %} 
 
@@ -250,7 +250,7 @@ chart.Header = "Height Comparison";
 
 ## Enable Data Labels
 
-The [ShowDataLabels]() property of series can be used to enable the data labels to improve the readability of the chart. The label visibility is set to `False` by default.
+The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataMarkerSeries.html#Syncfusion_UI_Xaml_Charts_DataMarkerSeries_ShowDataLabels) property of series can be used to enable the data labels to improve the readability of the chart. The label visibility is set to `False` by default.
 
 {% tabs %} 
 
@@ -279,7 +279,7 @@ chart.Series.Add(series);
 
 ## Enable Legend
 
-The legend provides information about the data point displayed in the chart. The [Legend]() property of the chart was used to enable it.
+The legend provides information about the data point displayed in the chart. The [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property of the chart was used to enable it.
 
 {% tabs %} 
 
@@ -304,7 +304,7 @@ chart.Legend = new ChartLegend ();
 
 {% endtabs %}  
 
-N> Additionally, set label for each series using the [Label]() property of chart series, which will be displayed in corresponding legend.
+N> Additionally, set label for each series using the [Label](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Label) property of chart series, which will be displayed in corresponding legend.
 
 {% tabs %} 
 
@@ -335,7 +335,7 @@ series.Label = "Heights";
 
 ## Enable Tooltip
 
-Tooltips are used to show information about the segment, when hovers on the segment. Enable tooltip by setting series [ShowTooltip]() property to true.
+Tooltips are used to show information about the segment, when hovers on the segment. Enable tooltip by setting series [ShowTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property to true.
 
 {% tabs %} 
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart Title in WinUI Chart (SfFunnelChart)
 
-`Header` property is used to define the title for the chart.
+[Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to define the title for the chart.
 
 {% tabs %}   
 
@@ -36,7 +36,7 @@ this.Content = chart;
 
 ## Customization
 
-`Header` property of `SfFunnelChart` is used to define and customize the chart title. It accepts any object (.Net object) as content for the chart header.
+[Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property of [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) is used to define and customize the chart title. It accepts any object (.Net object) as content for the chart header.
 
 {% tabs %}   
 
@@ -86,7 +86,7 @@ this.Content = chart;
 
 ## Alignment
 
-The title text content can be aligned horizontally to the left, center or right of the chart using the [HorizontalHeaderAlignment]() property of the `SfFunnelChart`.
+The title text content can be aligned horizontally to the left, center or right of the chart using the [HorizontalHeaderAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_HorizontalHeaderAlignment) property of the [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html).
 
 {% tabs %}   
 

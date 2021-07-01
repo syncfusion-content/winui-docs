@@ -9,11 +9,11 @@ documentation: ug
 
 # Rendering Mode in WinUI Chart (SfFunnelChart)
 
-The [FunnelMode]() property defines the rendering mode of the funnel chart, which define where to bind your values (to height or width).The default value of [`FunnelMode`]() property is [ValueIsHeight]().  The following example demonstrates [ValueIsHeight]() and [ValueIsWidth]() of funnel mode.
+The [Mode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_Mode) property defines the rendering mode of the funnel chart, which define where to bind your values (to height or width).The default value of [Mode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_Mode) property is [ValueIsHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html#Syncfusion_UI_Xaml_Charts_ChartFunnelMode_ValueIsHeight).  The following example demonstrates [ValueIsHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html#Syncfusion_UI_Xaml_Charts_ChartFunnelMode_ValueIsHeight) and [ValueIsWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html#Syncfusion_UI_Xaml_Charts_ChartFunnelMode_ValueIsWidth) of funnel mode.
 
 ## Rendering with Height
 
-[ValueIsHeight]() is used to render the funnel chart segments based on the height for data point values
+[ValueIsHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html#Syncfusion_UI_Xaml_Charts_ChartFunnelMode_ValueIsHeight) is used to render the funnel chart segments based on the height for data point values
 
 {% tabs %} 
 
@@ -48,7 +48,7 @@ this.Content = chart;
 
 ## Rendering with Width
 
-[ValueIsWidth]() is used to render the funnel chart segments based on the width for data point values.
+[ValueIsWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html#Syncfusion_UI_Xaml_Charts_ChartFunnelMode_ValueIsWidth) is used to render the funnel chart segments based on the width for data point values.
 
 {% tabs %} 
 
