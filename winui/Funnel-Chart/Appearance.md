@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance in WinUI Chart (SfFunnelChart)
 
-The appearance of [SfFunnelChart]() can be customized by using the predefined palettes, custom palettes and gradient, which allows to enrich the application.
+The appearance of [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) can be customized by using the predefined palettes, custom palettes and gradient, which allows to enrich the application.
 
 ## Palettes
 
-[SfFunnelChart]() provides options for applying various kinds of palettes. Some predefined palettes, such as.
+[SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) provides options for applying various kinds of palettes. Some predefined palettes, such as.
 
 * Metro
 * AutumnBrights
@@ -30,7 +30,7 @@ The appearance of [SfFunnelChart]() can be customized by using the predefined pa
 
 ### Applying Palette
 
-Each palette applies a set of predefined brushes to the funnel series in a predefined order. [Metro]() palette is the default palette.
+Each palette applies a set of predefined brushes to the funnel series in a predefined order. [Metro](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html#Syncfusion_UI_Xaml_Charts_ChartColorPalette_Metro) palette is the default palette.
 
 {% tabs %}
 
@@ -60,7 +60,7 @@ this.Content = chart;
 
 ![Predefined palette in WinUI Chart](Appearance_images/winui-chart_predefined_palette.png)
 
-The following code example defined [`Palette`]() as [`GreenChrome`]().
+The following code example defined [`Palette`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) as [`GreenChrome`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html#Syncfusion_UI_Xaml_Charts_ChartColorPalette_GreenChrome).
 
 {% tabs %}
 
@@ -94,7 +94,7 @@ this.Content = chart;
 
 ## Custom Palette
 
-[SfFunnelChart]() provides support to define own brushes for the chart with preferred order by using the [CustomBrushes]() property of [ChartColorModel]() and [Palette]() value as `Custom`, as shown in the following code example.
+[SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) provides support to define own brushes for the chart with preferred order by using the [CustomBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartColorModel.html#Syncfusion_UI_Xaml_Charts_ChartColorModel_CustomBrushes) property of [ChartColorModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartColorModel.html) and [Palette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) value as `Custom`, as shown in the following code example.
 
 {% tabs %}
 
@@ -151,9 +151,9 @@ this.Content = chart;
 
 ## Applying Gradient
 
-Gradient for the funnel chart can be set by using the [`ColorModel`]() property of the funnel chart with the help of `LinearGradientBrush` or `RadialGradientBrush`.
+Gradient for the funnel chart can be set by using the [`ColorModel`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_ColorModel) property of the funnel chart with the help of `LinearGradientBrush` or `RadialGradientBrush`.
 
-The following code sample and screenshot illustrates how to apply the gradient brushes for the chart using the [`ColorModel`]() property.
+The following code sample and screenshot illustrates how to apply the gradient brushes for the chart using the [`ColorModel`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_ColorModel) property.
 
 {% tabs %}
 
@@ -231,7 +231,7 @@ this.Content = chart;
 
 ## Segment Color Binding
 
-The color of the each segment can be set by binding their corresponding model property from the `ItemsSource` collection to its [`ColorValuePath`]() property of funnel chart as follows.
+The color of the each segment can be set by binding their corresponding model property from the `ItemsSource` collection to its [`ColorValuePath`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_ColorValuePath) property of funnel chart as follows.
 
 {% tabs %}
 
