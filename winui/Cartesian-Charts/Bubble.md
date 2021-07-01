@@ -11,9 +11,9 @@ documentation: ug
 
 ## Bubble Chart
 
-The [`BubbleSeries`]() is represented by closely packed circles, whose areas are proportional to the quantities. The size of the bubble series is relative proportional to the value bind with the series using the [`Size`]()  property. You can set the constraints on this size using the [`MinimumRadius`]() and [`MaximumRadius`]() properties.
+The [BubbleSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BubbleSeries.html) is represented by closely packed circles, whose areas are proportional to the quantities. The size of the bubble series is relative proportional to the value bind with the series using the [Size](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_Size)  property. You can set the constraints on this size using the [MinimumRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_MinimumRadius) and [MaximumRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_MaximumRadius) properties.
 
-To render a bubble series, create an instance of [BubbleSeries]() and add to the [Series]() collection property of [SfCartesianChart]() as shown in the following code.
+To render a bubble series, create an instance of [BubbleSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BubbleSeries.html) and add to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) as shown in the following code.
 
 {% tabs %}
 
@@ -64,7 +64,7 @@ chart.Series.Add(series);
 
 ## Show zero size bubbles
 
-The zero size bubble segments can be enabled or disabled by using the [`ShowZeroBubbles`]() property. The default value of this property is `True`.
+The zero size bubble segments can be enabled or disabled by using the [ShowZeroBubbles](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_ShowZeroBubbles) property. The default value of this property is `True`.
 
 {% tabs %}
 

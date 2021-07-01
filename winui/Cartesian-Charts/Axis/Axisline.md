@@ -11,7 +11,7 @@ documentation: ug
 
 ## Customization
 
-Cartesian chart axis provides support to customize the style of axis line by defining the [AxisLineStyle]() property as shown in the below code snippet.
+Cartesian chart axis provides support to customize the style of axis line by defining the [AxisLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineStyle) property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -52,7 +52,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ## Offset
 
-The padding to the axis line is defined by using the [AxisLineOffset]() property.
+The padding to the axis line is defined by using the [AxisLineOffset](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineOffset) property.
 
 {% tabs %}
 

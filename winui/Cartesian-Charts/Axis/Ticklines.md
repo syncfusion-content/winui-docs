@@ -11,7 +11,7 @@ documentation: ug
 
 Tick lines are the small lines which is drawn on the axis line representing the axis labels. Tick lines will be drawn outside of the axis by default. 
 
-And also minor tick lines can be added to the axis by defining the [SmallTicksPerInterval]() property. This property will add the minor tick lines to every interval based on value.
+And also minor tick lines can be added to the axis by defining the [SmallTicksPerInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTicksPerInterval) property. This property will add the minor tick lines to every interval based on value.
 
 N> For category axis, minor tick lines are not applicable. Since it is rendered based on index positions.
 
@@ -44,7 +44,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ## Size
 
-Both major and minor tick lines height can be customized by using the [TickLineSize]() and [SmallTickLineSize]() properties respectively.
+Both major and minor tick lines height can be customized by using the [TickLineSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TickLineSize) and [SmallTickLineSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTickLineSize) properties respectively.
 
 {% tabs %}
 
@@ -118,7 +118,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ## Customization
 
-Both major and minor tick lines can be customized by using the [MajorTickLineStyle]() and [MinorTickLineStyle]() properties respectively. 
+Both major and minor tick lines can be customized by using the [MajorTickLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorTickLineStyle) and [MinorTickLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorTickLineStyle) properties respectively. 
 
 {% tabs %}
 

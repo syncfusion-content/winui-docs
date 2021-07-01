@@ -11,7 +11,7 @@ documentation: ug
 
 ## Stacked Column Chart
 
-The [`StackedColumnSeries`]() resembles multiple of column series and each series is vertically stacked one above the other. When there is only one series, then it is `ColumnSeries`. 
+The [`StackedColumnSeries`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedColumnSeries.html) resembles multiple of column series and each series is vertically stacked one above the other. When there is only one series, then it is [`ColumnSeries`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html). 
 
 {% tabs %}
 
@@ -83,7 +83,7 @@ chart.Series.Add(series3);
 
 ## Stacked Line Chart
 
-The [`StackedLineSeries`]() resembles multiple of line series and each series is vertically stacked one above the other. When there is only one series, then it is [`LineSeries`](). 
+The [`StackedLineSeries`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedLineSeries.html) resembles multiple of line series and each series is vertically stacked one above the other. When there is only one series, then it is [`LineSeries`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LineSeries.html). 
 
 {% tabs %}
 
@@ -162,7 +162,7 @@ chart.Series.Add(series3);
 
 ## Stacked Area Chart
 
-The [`StackedAreaSeries`]() is representing the multiple of area series are stacked vertically one above the other. 
+The [`StackedAreaSeries`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedAreaSeries.html) is representing the multiple of area series are stacked vertically one above the other. 
 
 {% tabs %}
 
