@@ -9,7 +9,7 @@ documentation: ug
 
 # Segment Spacing in WinUI Chart (SfPyramidChart)
 
-The gap between each segment in the pyramid chart can be set using the [GapRatio]() property. The default value of [GapRatio]() property is 0 and its value ranges from 0 to 1.
+The gap between each segment in the pyramid chart can be set using the [GapRatio](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_GapRatio) property. The default value of [GapRatio](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_GapRatio) property is 0 and its value ranges from 0 to 1.
 
 {% tabs %} 
 
