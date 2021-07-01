@@ -11,7 +11,7 @@ documentation: ug
 
 ## Fast Line Chart
 
-The [FastLineSeries]() is a special kind of line series that can render a collection with huge number of datapoints using the polyline segment. 
+The [FastLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineSeries.html) is a special kind of line series that can render a collection with huge number of datapoints using the polyline segment. 
 
 {% tabs %}
 
@@ -59,7 +59,7 @@ chart.Series.Add(series);
 
 ## Fast Line Bitmap Chart
 
-The [FastLineBitmapSeries]() displays a series of line segments, rendered using `WriteableBitmap`. The advantage of `FastLineBitmapSeries` is, it renders a million data point in a fraction of seconds.
+The [FastLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html) displays a series of line segments, rendered using `WriteableBitmap`. The advantage of [FastLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html) is, it renders a million data point in a fraction of seconds.
 
 {% tabs %}
 
@@ -108,7 +108,7 @@ chart.Series.Add(series);
 
 ### Anti-aliasing
 
-As it was rendered using bitmap, there might be some jagged lines at the edges. This is can be reduced using the [EnableAntiAliasing]() property.
+As it was rendered using bitmap, there might be some jagged lines at the edges. This is can be reduced using the [EnableAntiAliasing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastLineBitmapSeries_EnableAntiAliasing) property.
 
 {% tabs %}
 

@@ -11,7 +11,7 @@ documentation: ug
 
 ## Line Chart
 
-Line chart is used to represent the data trends at equal intervals by connecting points on a plot with straight lines. To render a line chart, create an instance of [LineSeries](), and add it to the [Series]() collection property of [SfCartesianChart]().
+Line chart is used to represent the data trends at equal intervals by connecting points on a plot with straight lines. To render a line chart, create an instance of [LineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LineSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
 
 {% tabs %}
 
@@ -72,7 +72,7 @@ this.Content = chart;
 
 ### Dashed line
 
-The [StrokeDashArray]() property of [LineSeries]() is used to render the line series with dashes. Odd value is considered as rendering size and even value is considered as gap.
+The [StrokeDashArray](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LineSeries.html#Syncfusion_UI_Xaml_Charts_LineSeries_StrokeDashArray) property of [LineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LineSeries.html) is used to render the line series with dashes. Odd value is considered as rendering size and even value is considered as gap.
 
 {% tabs %}
 
@@ -139,7 +139,7 @@ this.Content = chart;
 
 ## Step Line Chart 
 
-The [StepLineSeries]() plots horizontal and vertical lines to connect the data points resulting in a step-like progression.
+The [StepLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StepLineSeries.html) plots horizontal and vertical lines to connect the data points resulting in a step-like progression.
 
 {% tabs %}
 
@@ -194,7 +194,7 @@ this.Content = chart;
 
 ## Spline Chart 
 
-The [SplineSeries]() resembles line series, but instead of connecting the data points with line segments, the data points are connected by smooth bezier curves.
+The [SplineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SplineSeries.html) resembles line series, but instead of connecting the data points with line segments, the data points are connected by smooth bezier curves.
 
 {% tabs %}
 
@@ -254,7 +254,7 @@ this.Content = chart;
 
 ### Spline rendering types
 
-The [SplineType]() allows you to change the spline curve in series. By default, the value of [SplineType]() is `Natural`.
+The [SplineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineType) allows you to change the spline curve in series. By default, the value of [SplineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineType) is `Natural`.
 
 The following types are used in SplineSeries:
 
