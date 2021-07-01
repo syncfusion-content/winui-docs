@@ -13,7 +13,7 @@ The trackball allows you to track a data point closer to the cursor position. Th
 
 ## Define Trackball
 
-To add trackball in the chart, create an instance [`ChartTrackballBehavior`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html) and add it to the [`Behaviors`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBehavior.html) collection of the chart.
+To add trackball in the chart, create an instance [`ChartTrackballBehavior`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html) and add it to the [`Behaviors`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Behaviors) collection of the chart.
 
 {% tabs %}
 
