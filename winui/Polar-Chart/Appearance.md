@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance in WinUI Chart (SfPolarChart)
 
-The appearance of [SfPolarChart]() can be customized by using the predefined palettes, custom palettes and gradient, which allows to enrich the application.
+The appearance of [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) can be customized by using the predefined palettes, custom palettes and gradient, which allows to enrich the application.
 
 ## Palettes
 
-[SfPolarChart]() provides options for applying various kinds of palettes. Some predefined palettes, such as.
+[SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) provides options for applying various kinds of palettes. Some predefined palettes, such as.
 
 * Metro
 * AutumnBrights
@@ -30,7 +30,7 @@ The appearance of [SfPolarChart]() can be customized by using the predefined pal
 
 ### Applying Palette
 
-Each palette applies a set of predefined brushes to the series in a predefined order. [Metro]() palette is the default palette. 
+Each palette applies a set of predefined brushes to the series in a predefined order. [Metro](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html#Syncfusion_UI_Xaml_Charts_ChartColorPalette_Metro) palette is the default palette. 
 
 {% tabs %}
 
@@ -121,7 +121,7 @@ this.Content = chart;
 
 ## Custom Palette
 
-[`SfPolarChart`]() provides support to define own brushes for the chart with preferred order by using the [CustomBrushes]() property of [ChartColorModel]() and [Palette]() value as `Custom`, as shown in the following code example.
+[`SfPolarChart`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) provides support to define own brushes for the chart with preferred order by using the [CustomBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartColorModel.html#Syncfusion_UI_Xaml_Charts_ChartColorModel_CustomBrushes) property of [ChartColorModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartColorModel.html) and [Palette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) value as `Custom`, as shown in the following code example.
 
 {% tabs %}
 
@@ -166,7 +166,7 @@ this.Content = chart;
 
 ## Applying Gradient
 
-Gradient for the chart can be set by using the [`ColorModel`]() property of the polar chart with the help of `LinearGradientBrush` or `RadialGradientBrush`.
+Gradient for the chart can be set by using the [`ColorModel`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_ColorModel) property of the polar chart with the help of `LinearGradientBrush` or `RadialGradientBrush`.
 
 {% tabs %}
 
@@ -226,7 +226,7 @@ chart.Palette = ChartColorPalette.Custom;
 
 ![Gradient support in WinUI Chart](Appearance_Images/WinUI_Chart_Series_Gradient.png)
 
-Gradient color using the [Interior]() property of series with `LinearGradientBrush`.
+Gradient color using the [Interior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Interior) property of series with `LinearGradientBrush`.
 
 {% tabs %}
 
