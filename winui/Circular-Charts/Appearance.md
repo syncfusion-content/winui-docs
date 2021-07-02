@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WinUI Chart (SfCircularChart)
 
-The appearance of [SfCircularChart]() can be customized by using the predefined palettes, custom palettes and gradient, which allows to enrich the application.
+The appearance of [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) can be customized by using the predefined palettes, custom palettes and gradient, which allows to enrich the application.
 
 ## Palettes
 
@@ -30,7 +30,7 @@ Circular series provides options for applying various kinds of palettes. Some pr
 
 ### Applying Palette
 
-Each palette applies a set of predefined brushes to the series in a predefined order. [Metro]() palette is the default palette.
+Each palette applies a set of predefined brushes to the series in a predefined order. [Metro](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html#Syncfusion_UI_Xaml_Charts_ChartColorPalette_Metro) palette is the default palette.
 
 {% tabs %}
 
@@ -56,7 +56,7 @@ chart.Series.Add(series);
 
 ![Predefined palette in WinUI Chart](Appearance_images/winui_pie_chart_predefined_palette.png)
 
-The following code example defined [`Palette`]() as [`GreenChrome`]().
+The following code example defined [`Palette`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) as [`GreenChrome`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html#Syncfusion_UI_Xaml_Charts_ChartColorPalette_GreenChrome).
 
 {% tabs %}
 
@@ -90,7 +90,7 @@ chart.Series.Add(series);
 
 ## Custom Palette
 
-[SfCircularChart]() provides support to define own brushes for chart with preferred order by using the [CustomBrushes]() property of [ChartColorModel]() and [Palette]() value as [Custom]().
+[SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) provides support to define own brushes for chart with preferred order by using the [CustomBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartColorModel.html#Syncfusion_UI_Xaml_Charts_ChartColorModel_CustomBrushes) property of [ChartColorModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartColorModel.html) and [Palette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) value as [Custom](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html#Syncfusion_UI_Xaml_Charts_ChartColorPalette_Custom).
 
 {% tabs %}
 
@@ -143,7 +143,7 @@ chart.Series.Add(series);
 
 ## Applying Gradient
 
-Gradient for the circular chart can be set by using the [ColorModel]() property of the series with the help of `LinearGradientBrush` or `RadialGradientBrush`.
+Gradient for the circular chart can be set by using the [ColorModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_ColorModel) property of the series with the help of `LinearGradientBrush` or `RadialGradientBrush`.
 
 {% tabs %}
 
@@ -208,7 +208,7 @@ chart.Series.Add(series);
 
 ## Segment Color Binding
 
-The color of the each segment can be set by binding their corresponding model property from the `ItemsSource` collection to its [SegmentColorPath]() property of series as follows.
+The color of the each segment can be set by binding their corresponding model property from the `ItemsSource` collection to its [SegmentColorPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SegmentColorPath) property of series as follows.
 
 {% tabs %}
 

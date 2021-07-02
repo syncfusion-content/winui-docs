@@ -9,7 +9,7 @@ documentation: ug
 
 # Axis Title in WinUI Chart (SfPolarChart)
 
-The [Header]() property is used to define the title for the chart axis. It accepts any `UIElement` as content for the chart axis header.
+The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_Header) property is used to define the title for the chart axis. It accepts any `UIElement` as content for the chart axis header.
 
 {% tabs %}
 
@@ -47,7 +47,7 @@ N> Polar chart supports title for secondary axis only.
 
 ## Style
 
-The [`HeaderStyle`]() property is used to provide style for the axis header.
+The [`HeaderStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_HeaderStyle) property is used to provide style for the axis header.
 
 {% tabs %}
 
@@ -97,7 +97,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ## Template
 
-The appearance of the header can be customized using the [`HeaderTemplate`]() property.
+The appearance of the header can be customized using the [`HeaderTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_HeaderTemplate) property.
 
 {% tabs %}
 

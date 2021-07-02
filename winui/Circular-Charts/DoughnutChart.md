@@ -9,7 +9,7 @@ documentation: ug
 
 # Doughnut Chart in WinUI Chart (SfCircularChart)
 
-[DoughnutSeries]() is similar to [PieSeries](). It is used to show the relationship between parts of data and whole data. To render a [DoughnutSeries]() in circular chart, create an instance of the [DoughnutSeries]() and add it to the [Series]() collection property of [SfCircularChart]().
+[DoughnutSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html) is similar to [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html). It is used to show the relationship between parts of data and whole data. To render a [DoughnutSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html) in circular chart, create an instance of the [DoughnutSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html#Syncfusion_UI_Xaml_Charts_SfCircularChart_Series) collection property of [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html).
 
 {% tabs %}
 
@@ -101,7 +101,7 @@ chart.Series.Add(series3);
 
 ## Doughnut Coefficient
 
-The [DoughnutCoefficient]() property of doughnut series is used to define the inner circle. It also has [DoughnutSize]() property, which is used to define the size for this series, similar to [CircularCoefficient]() in `PieSeries`.
+The [DoughnutCoefficient](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_DoughnutCoefficient) property of doughnut series is used to define the inner circle. It also has [DoughnutSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_DoughnutSize) property, which is used to define the size for this series, similar to [CircularCoefficient](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_CircularCoefficient) in [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html).
 
 {% tabs %}
 
@@ -138,7 +138,7 @@ chart.Series.Add(series);
 
 ## Doughnut Size
 
-The size of doughnut series can be customized by using the [DoughnutSize]() property. The following code illustrates how to use this property in series.
+The size of doughnut series can be customized by using the [DoughnutSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_DoughnutSize) property. The following code illustrates how to use this property in series.
 
 {% tabs %}
 
@@ -176,7 +176,7 @@ chart.Series.Add(series2);
 
 ## Semi Doughnut
 
-By using the [StartAngle]() and [EndAngle]() properties, you can draw doughnut series in different shapes such as semi-doughnut or quarter doughnut series.
+By using the [StartAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_StartAngle) and [EndAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_EndAngle) properties, you can draw doughnut series in different shapes such as semi-doughnut or quarter doughnut series.
 
 {% tabs %}
 
