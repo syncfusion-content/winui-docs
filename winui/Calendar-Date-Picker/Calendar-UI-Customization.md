@@ -13,7 +13,7 @@ This section describes how to select a date from dropdown Calendar and its custo
 
 ## Hide clear button in textbox
 
-By default, the clear button `X` will be displayed in the textbox of the `CalendarDatePicker` control, which can be used to clear the input entered. You can hide the clear button in `CalendarDatePicker` control using the `ShowClearButton` property. The default value of `ShowClearButton` property value is **true**.
+By default, the clear button `X` will be displayed in the textbox of the `Calendar Date Picker` control, which can be used to clear the entered input. You can hide the clear button in the `Calendar Date Picker` control using the `ShowClearButton` property. The default value of `ShowClearButton` property value is **true**.
 
 {% tabs %}
 {% highlight XAML %}
