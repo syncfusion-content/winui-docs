@@ -119,7 +119,7 @@ sfNumberBox.CustomFormat = "0.000";
 
 ## Change number format
 
-You can change the format in which the value should be displayed using the `CustomFormat` property and `NumberFormatter` property. By default, value of the `CustomFormat` property and `NumberFormatter` property is **null**. You can apply various custom formats to the `NumberBox` control available in [this link](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) using `CustomFormat` property.
+You can change the format in which the value should be displayed using the `CustomFormat` property and `NumberFormatter` property. By default, value of the `CustomFormat` property and `NumberFormatter` property is **null**. You can apply various custom formats available in [this link](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) to the `NumberBox` control  using `CustomFormat` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -218,7 +218,7 @@ sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 
 ## Value changed notification
 
-The `ValueChanged` event is triggered, when the `Value` property of `NumberBox` control is changed. The value will not be changed when the user enters the input. The value of `NumberBox` control will be changed after validation is performed on `Enter` keypress or when the focus is lost in `NumberBox` control. The `ValueChanged` contains the following properties.
+The `ValueChanged` event is triggered, when the `Value` property of `NumberBox` control is changed. The value will not be changed when the user enters the input. The value of the `NumberBox` control will be changed after validation is performed on the `Enter` keypress or when the focus is lost in the control. The `ValueChanged` contains the following properties.
 
  * `NewValue` - Contains the new input value.
  * `OldValue` - Contains the previous input value.
