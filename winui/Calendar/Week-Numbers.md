@@ -9,13 +9,13 @@ documentation: ug
 
 # Week number of the WinUI Calendar (SfCalendar)
 
-This section describes about the various customization options available in [Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control.
+This section describes about the week numbers and it's customization option available in [Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control.
 
 ## Enable week numbers
 
 You can show the week numbers for each week in [Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control by setting the value of the `ShowWeekNumbers` property as **true**. By default, the value of the `ShowWeekNumber` property is **false**.
 
-N> You can change the `WeekNumberRule` property value with the [CalendarWeekRule](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0) and you can also add any prefix or suffix characters to **#** for `WeekNumberFormat` property.
+N> You can change the value of `WeekNumberRule` property with the [CalendarWeekRule](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0) and you can also add any prefix or suffix characters to **#** for `WeekNumberFormat` property.
 
 {% tabs %}
 {% highlight xaml %}
