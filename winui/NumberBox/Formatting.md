@@ -97,7 +97,7 @@ hoursWorked.CustomFormat = "00000.00";
 
 ## Format the fractional digits
 
-You can change the fractional digits of the value in `NumberBox` control using `NumberFormatter` and `CustomFormat` properties. For the `NumberFormatter` property, you can customize the fractional digits of the value using the `IntegerDigits` property in `CurrencyFormatter`, `PercentFormatter`, and `DecimalFormatter` classes.
+You can change the fractional digits of the value in `NumberBox` control using `NumberFormatter` and `CustomFormat` properties. For the `NumberFormatter` property, you can customize the fractional digits of the value using the `FractionDigits` property in `CurrencyFormatter`, `PercentFormatter`, and `DecimalFormatter` classes.
 
 {% tabs %}
 {% highlight c# %}

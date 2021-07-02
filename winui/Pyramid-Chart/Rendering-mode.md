@@ -9,11 +9,11 @@ documentation: ug
 
 # Rendering Mode in WinUI Chart (SfPyramidChart)
 
-The [Mode]() property is used to define the rendering mode of pyramid chart such as [Surface]() or [Linear](). The default value of [Mode]() property is `Linear`.
+The [Mode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_Mode) property is used to define the rendering mode of pyramid chart such as [Surface](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html#Syncfusion_UI_Xaml_Charts_ChartPyramidMode_Surface) or [Linear](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html#Syncfusion_UI_Xaml_Charts_ChartPyramidMode_Linear). The default value of [Mode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_Mode) property is `Linear`.
 
 ## Surface Mode
 
-The [Surface]() mode is used to rendering the area of pyramid chart segments based on data point values.
+The [Surface](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html#Syncfusion_UI_Xaml_Charts_ChartPyramidMode_Surface) mode is used to rendering the area of pyramid chart segments based on data point values.
 
 {% tabs %} 
 
@@ -48,7 +48,7 @@ this.Content = chart;
 
 ## Linear Mode
 
-The [Linear]() mode is used to rendering the height of pyramid chart segments based on data point values.
+The [Linear](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html#Syncfusion_UI_Xaml_Charts_ChartPyramidMode_Linear) mode is used to rendering the height of pyramid chart segments based on data point values.
 
 {% tabs %} 
 

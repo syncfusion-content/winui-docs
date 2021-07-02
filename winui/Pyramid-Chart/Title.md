@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart Title in WinUI Chart (SfPyramidChart)
 
-`Header` property is used to define the title for the chart.
+[Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to define the title for the chart.
 
 {% tabs %}   
 
@@ -86,7 +86,7 @@ The pyramid chart provides support to add any `UIElement` as a title. The follow
 
 ## Alignment
 
-The title text content can be aligned horizontally to the left, center or right of the chart using the [HorizontalHeaderAlignment]() property of the `SfPyramidChart`.
+The title text content can be aligned horizontally to the left, center or right of the chart using the [HorizontalHeaderAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_HorizontalHeaderAlignment) property of the [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html).
 
 {% tabs %}   
 

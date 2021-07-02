@@ -9,7 +9,7 @@ documentation: ug
 
 # Pie Chart in WinUI Chart (SfCircularChart)
 
-To render a [PieSeries]() in circular chart, create an instance of the [PieSeries]() and add it to the [Series]() collection property of [SfCircularChart]().
+To render a [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html) in circular chart, create an instance of the [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html#Syncfusion_UI_Xaml_Charts_SfCircularChart_Series) collection property of [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html).
 
 {% tabs %}
 
@@ -45,7 +45,7 @@ chart.Series.Add(series);
 
 ## Circular Coefficient
 
-The rendering size of the [PieSeries]() can be controlled using the [CircularCoefficient]() property as shown in the following code sample.
+The rendering size of the [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html) can be controlled using the [CircularCoefficient](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_CircularCoefficient) property as shown in the following code sample.
 
 {% tabs %}
 
@@ -83,12 +83,12 @@ chart.Series.Add(series);
 
 ## Group small data points into “others”
 
-The small segments in the pie chart can be grouped into the “others” category using the [GroupTo]() and [GroupMode]() properties of [PieSeries]().
+The small segments in the pie chart can be grouped into the “others” category using the [GroupTo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_GroupTo) and [GroupMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_GroupMode) properties of [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html).
 
-* [GroupMode]() - used to specify the grouping type based on slice [Angle](), actual data point [Value](), or [Percentage](). 
-* [GroupTo]() - used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as other segment. 
+* [GroupMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_GroupMode) - used to specify the grouping type based on slice [Angle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieGroupMode.html#Syncfusion_UI_Xaml_Charts_PieGroupMode_Angle), actual data point [Value](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieGroupMode.html#Syncfusion_UI_Xaml_Charts_PieGroupMode_Value), or [Percentage](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieGroupMode.html#Syncfusion_UI_Xaml_Charts_PieGroupMode_Percentage). 
+* [GroupTo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_GroupTo) - used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as other segment. 
 
-The default value of the [GroupTo]() property is `double.NAN`, and the default value of the [GroupMode]() property is Value.
+The default value of the [GroupTo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_GroupTo) property is `double.NAN`, and the default value of the [GroupMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_GroupMode) property is Value.
 
 **Pie series without grouping**
 
@@ -141,7 +141,7 @@ chart.Series.Add(series);
 
 ## Semi Pie
 
-By using the [StartAngle]() and [EndAngle]() properties, you can draw pie series in different shapes such as semi-pie or quarter pie series.
+By using the [StartAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_StartAngle) and [EndAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_EndAngle) properties, you can draw pie series in different shapes such as semi-pie or quarter pie series.
 
 {% tabs %}
 
@@ -179,7 +179,7 @@ chart.Series.Add(series);
 
 ## Combination Chart
 
-[SfCircularChart]() allows you to render the combination of pie series and doughnut series.
+[SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) allows you to render the combination of pie series and doughnut series.
 
 {% tabs %}
 

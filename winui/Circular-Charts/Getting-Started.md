@@ -16,7 +16,7 @@ This section explains how to populate the circular chart with data, header, data
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
 2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C# to initialize the control.
-4. Initialize [SfCircularChart]() control.
+4. Initialize [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) control.
 
 {% tabs %} 
 
@@ -129,9 +129,9 @@ chart.DataContext = viewModel;
 
 ## Populate Chart with Data
 
-Adding [PieSeries]() to the chart [Series]() collection and binding `Data` to the series [ItemsSource]() property from its `DataContext` for creating our own Product – Sales Pie chart.
+Adding [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html) to the chart [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html#Syncfusion_UI_Xaml_Charts_SfCircularChart_Series) collection and binding `Data` to the series [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ItemsSource) property from its `DataContext` for creating our own Product – Sales Pie chart.
 
-N> To plot the series, the [XBindingPath]() and [YBindingPath]() properties must be configured so that the chart may get values from the respective properties in the data model.
+N> To plot the series, the [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath) and [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.XyDataSeries.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties must be configured so that the chart may get values from the respective properties in the data model.
 
 {% tabs %}   
 
@@ -169,7 +169,7 @@ chart.Series.Add(series);
 
 ## Add Title
 
-The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [Header]() property of circular chart as follows.
+The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property of circular chart as follows.
 
 {% tabs %} 
 
@@ -193,7 +193,7 @@ chart.Header = "PRODUCT SALES";
 
 ## Enable Data Labels
 
-The [ShowDataLabels]() property of [CircularSeries]() can be used to enable data labels to improve the readability of the circular chart. The label visibility is set to `False` by default.
+The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataMarkerSeries.html#Syncfusion_UI_Xaml_Charts_DataMarkerSeries_ShowDataLabels) property of [CircularSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html) can be used to enable data labels to improve the readability of the circular chart. The label visibility is set to `False` by default.
 
 {% tabs %} 
 
@@ -223,7 +223,7 @@ chart.Series.Add(series);
 
 ## Enable Legend
 
-The legend provides information about the data point displayed in the circular chart. The [Legend]() property of the chart was used to enable it.
+The legend provides information about the data point displayed in the circular chart. The [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property of the chart was used to enable it.
 
 {% tabs %} 
 
@@ -250,7 +250,7 @@ chart.Legend = new ChartLegend();
 
 ## Enable Tooltip
 
-Tooltips are used to show information about the segment, when mouse over on it. Enable tooltip by setting series [ShowTooltip]() property as true.
+Tooltips are used to show information about the segment, when mouse over on it. Enable tooltip by setting series [ShowTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property as true.
 
 {% tabs %} 
 
