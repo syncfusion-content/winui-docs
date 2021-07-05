@@ -25,6 +25,10 @@ N> For category axis, minor tick lines are not applicable. Since it is rendered 
     <chart:NumericalAxis SmallTicksPerInterval="4"/>
 </chart:SfCartesianChart.PrimaryAxis>
 
+<chart:SfCartesianChart.SecondaryAxis>
+    <chart:NumericalAxis />
+</chart:SfCartesianChart.SecondaryAxis>
+
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -37,6 +41,8 @@ chart.PrimaryAxis = new NumericalAxis()
 {
    SmallTicksPerInterval = 4 
 };
+
+chart.SecondaryAxis = new NumericalAxis();
 
 {% endhighlight %}
 
@@ -53,8 +59,12 @@ Both major and minor tick lines height can be customized by using the [TickLineS
 <chart:SfCartesianChart>
 . . .
 <chart:SfCartesianChart.PrimaryAxis>
-    <chart:NumericalAxis SmallTickLineSize="10" SmallTicksPerInterval="4" TickLineSize="10"/>
+    <chart:NumericalAxis SmallTickLineSize="10" SmallTicksPerInterval="4" TickLineSize="15"/>
 </chart:SfCartesianChart.PrimaryAxis>
+
+<chart:SfCartesianChart.SecondaryAxis>
+    <chart:NumericalAxis />
+</chart:SfCartesianChart.SecondaryAxis>
 
 </chart:SfCartesianChart>
 
@@ -66,16 +76,18 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 chart.PrimaryAxis = new NumericalAxis()
 {
-   TickLineSize = 10,
+   TickLineSize = 15,
    SmallTickLineSize = 10,
    SmallTicksPerInterval = 4
 };
+
+chart.SecondaryAxis = new NumericalAxis();
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Axis tick lines height support in WinUI Chart](Axis_images/WinUI_Chart_Axis_small_ticklines.png)
+![Axis tick lines height support in WinUI Chart](Axis_images/winui_chart_axis_small_ticklines.png)
 
 ## Position
 
@@ -96,6 +108,10 @@ Tick lines can be positioned inside or outside of the chart area. By default the
     <chart:NumericalAxis TickLinesPosition="Inside" SmallTickLinesPosition="Inside"/>
 </chart:SfCartesianChart.PrimaryAxis>
 
+<chart:SfCartesianChart.SecondaryAxis>
+    <chart:NumericalAxis />
+</chart:SfCartesianChart.SecondaryAxis>
+
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -109,6 +125,8 @@ chart.PrimaryAxis = new NumericalAxis()
    TickLinesPosition = AxisElementPosition.Inside,
    SmallTickLinesPosition = AxisElementPosition.Inside
 };
+
+chart.SecondaryAxis = new NumericalAxis();
 
 {% endhighlight %}
 
@@ -134,8 +152,12 @@ Both major and minor tick lines can be customized by using the [MajorTickLineSty
 </chart:SfCartesianChart.Resources>
 
 <chart:SfCartesianChart.PrimaryAxis>
-    <chart:NumericalAxis SmallTicksPerInterval="4" TickLineSize="15" MinorTickLineStyle="{StaticResource lineStyle}"  MajorTickLineStyle="{StaticResource lineStyle}" />
+    <chart:NumericalAxis SmallTicksPerInterval="4" MinorTickLineStyle="{StaticResource lineStyle}"  MajorTickLineStyle="{StaticResource lineStyle}" />
 </chart:SfCartesianChart.PrimaryAxis>
+
+<chart:SfCartesianChart.SecondaryAxis>
+    <chart:NumericalAxis />
+</chart:SfCartesianChart.SecondaryAxis>
 
 </chart:SfCartesianChart>
 
@@ -147,14 +169,15 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 chart.PrimaryAxis = new NumericalAxis()
 {
-    TickLineSize = 15,
     SmallTicksPerInterval = 4,
     MajorTickLineStyle = chart.Resources["lineStyle"] as Style,
     MinorTickLineStyle = chart.Resources["lineStyle"] as Style 
 };
 
+chart.SecondaryAxis = new NumericalAxis();
+
 {% endhighlight %}
 
 {% endtabs %}
 
-![Axis tick lines customization support in WinUI Chart](Axis_images/WinUI_Chart_Axis_tickline_style.png)
+![Axis tick lines customization support in WinUI Chart](Axis_images/winui_chart_axis_tickline_style.png)
