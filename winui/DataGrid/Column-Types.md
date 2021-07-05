@@ -595,7 +595,7 @@ N> If the `GridColumn.Width` is defined explicitly takes priority than `GridColu
 
 #### Padding
 
-GridColumn allows you to the change the padding of cell content by setting `[Padding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_Padding) property.
+GridColumn allows you to the change the padding of cell content by setting [Padding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_Padding) property.
  
 #### Alignment
 
@@ -675,7 +675,7 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Ship City", Mappi
 
 ## GridDateColumn
 
-`GridDateColumn` derived from `GridTextColumnBase` and it displays columns data as date. It hosts [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) element in editing mode.
+[GridDateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html) derived from `GridTextColumnBase` and it displays columns data as date. It hosts [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) element in editing mode.
 
 {% tabs %}
 {% highlight xaml %}
@@ -703,7 +703,7 @@ this.dataGrid.Columns.Add(new GridDateColumn() { HeaderText = "Date", MappingNam
 
 ### Change the Format of date value
 
-You can edit and display the selected date with various formatting like date, month and year formats by using the `DisplayDateFormat` property. The default value of `DisplayDateFormat` property is **d**. For example below image shown the DateColumn with DisplayDateFormat as **M**.
+You can edit and display the selected date with various formatting like date, month and year formats by using the [DisplayDateFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html#Syncfusion_UI_Xaml_DataGrid_GridDateColumn_DisplayDateFormat) property. The default value of `DisplayDateFormat` property is **d**. For example below image shown the DateColumn with `DisplayDateFormat` as **M**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -731,7 +731,7 @@ this.dataGrid.Columns.Add(new GridDateColumn() { HeaderText = "Date", MappingNam
 
 ### Null value support
 
-`GridDateColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. Instead of displaying null values, you can display hint text using `PlaceholderText`.
+`GridDateColumn` provides support to restrict or allow null value in columns based on [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html#Syncfusion_UI_Xaml_DataGrid_GridDateColumn_AllowNull) property. Instead of displaying null values, you can display hint text using [PlaceholderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html#Syncfusion_UI_Xaml_DataGrid_GridDateColumn_PlaceholderText) property.
 
 The `PlaceholderText` does not shown, when the `AllowNull` is `false`.
 
@@ -759,7 +759,7 @@ The `PlaceholderText` does not shown, when the `AllowNull` is `false`.
 
 ### Setting date value range
 
-You can restrict and display the input value within the range using `MinDate` and `MaxDate` properties.
+You can restrict and display the input value within the range using [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html#Syncfusion_UI_Xaml_DataGrid_GridDateColumn_MinDate) and [MaxDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html#Syncfusion_UI_Xaml_DataGrid_GridDateColumn_MaxDate) properties.
 
 ## GridCheckBoxColumn
 
@@ -785,7 +785,7 @@ this.dataGrid.Columns.Add(new GridCheckBoxColumn() { HeaderText = "Is Delivered"
 
 `GridCheckBoxColumn` allows you to customize check box state and its alignment.
 
-* [IsThreeState](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCheckBoxColumn.html#Syncfusion_UI_Xaml_DataGrid_GridCheckBoxColumn_IsThreeState) - By default, the `GridCheckBoxColumn` has `Checked` and `Unchecked**`** state. You can enable another `Intermediate` state setting `IsThreeState` property to `true`.
+* [IsThreeState](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCheckBoxColumn.html#Syncfusion_UI_Xaml_DataGrid_GridCheckBoxColumn_IsThreeState) - By default, the `GridCheckBoxColumn` has `Checked` and `Unchecked` state. You can enable another `Intermediate` state setting `IsThreeState` property to `true`.
 
 * [HorizontalAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCheckBoxColumn.html#Syncfusion_UI_Xaml_DataGrid_GridCheckBoxColumn_HorizontalAlignment) - You can change the horizontal alignment of CheckBox using `HorizontalAlignment` property.
 
@@ -1217,7 +1217,7 @@ this.sfDataGrid.Columns.Add(new GridToggleSwitchColumn() { MappingName = "IsDeli
 
 ### ToggleSwitch Content Settings
 
-GridToggleSwitchColumn provides support to display the text, while ToggleSwitch is in `ON`/`OFF` state based on [OnContent]https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridToggleSwitchColumn.html#Syncfusion_UI_Xaml_DataGrid_GridToggleSwitchColumn_OnContent) and [OffContent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridToggleSwitchColumn.html#Syncfusion_UI_Xaml_DataGrid_GridToggleSwitchColumn_OffContent) properties.
+GridToggleSwitchColumn provides support to display the text, while ToggleSwitch is in `ON`/`OFF` state based on [OnContent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridToggleSwitchColumn.html#Syncfusion_UI_Xaml_DataGrid_GridToggleSwitchColumn_OnContent) and [OffContent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridToggleSwitchColumn.html#Syncfusion_UI_Xaml_DataGrid_GridToggleSwitchColumn_OffContent) properties.
 
 ![WinUi DataGrid column with Toggle Button](Column-Types_images/winui-datagrid-toggle-button.png)
 
