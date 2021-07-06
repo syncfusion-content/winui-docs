@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart Area in WinUI Chart (SfCartesianChart)
 
-SfCartesianChart provides the properties like [`PlotAreaBorderBrush`](), [`PlotAreaBorderThickness`]() and [`PlotAreaBackground`]() for customizing the plot area.
+SfCartesianChart provides the properties like [PlotAreaBorderBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBorderBrush), [PlotAreaBorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBorderThickness) and [PlotAreaBackground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBackground) for customizing the plot area.
 
 {% tabs %}
 
