@@ -50,6 +50,146 @@ chart.SecondaryAxis = new NumericalAxis();
 
 ![NumericalAxis support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types.png)
 
+### Customizing numeric interval
+
+Axis interval can be customized using the [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Interval) property of ChartAxis. By default, interval will be calculated based on the minimum and maximum value of the provided data.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart>
+. . .
+<chart:SfCartesianChart.PrimaryAxis>
+    <chart:NumericalAxis Interval="10" />
+</chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.SecondaryAxis>
+    <chart:NumericalAxis/>
+</chart:SfCartesianChart.SecondaryAxis>
+
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+. . .
+chart.PrimaryAxis = new NumericalAxis()
+{
+    Interval = 10, 
+};
+
+chart.SecondaryAxis = new NumericalAxis();
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![NumericalAxis interval support in WinUI Chart](Axis_images/winui_chart_numerical_axis_interval.png)
+
+### Auto interval calculation on zooming
+
+[EnableAutoIntervalOnZooming](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EnableAutoIntervalOnZooming) property is used to maintain the interval even it is in zooming state only if we set the interval to the axis. Default value of this property is true. While zooming based on the auto range padding the interval will be calculated.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart x:Name="chart" Palette="BlueChrome">
+. . .
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:NumericalAxis ShowGridLines="False" ZoomFactor="0.5" ZoomPosition="0.1"/>
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>
+
+    <chart:SfCartesianChart.Behaviors>
+        <chart:ChartZoomPanBehavior />
+    </chart:SfCartesianChart.Behaviors>
+. . .
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+chart.Palette = ChartColorPalette.BlueChrome;
+
+chart.PrimaryAxis = new NumericalAxis()
+{
+    ZoomFactor = 0.5,
+    ZoomPosition = 0.1,
+    ShowGridLines = false,
+};
+
+chart.SecondaryAxis = new NumericalAxis();
+ChartZoomPanBehavior zoomPanBehavior = new ChartZoomPanBehavior();
+chart.Behaviors.Add(zoomPanBehavior);
+. . .
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Auto interval on zooming support in WinUI Chart](Axis_Images/winui_chart_axis_default_enable-auto-interval-on-zooming.png)
+
+If you set [EnableAutoIntervalOnZooming](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EnableAutoIntervalOnZooming) as False, the intervals will be calculated on the interval based on the axis while zooming.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart x:Name="chart" Palette="BlueChrome">
+. . .
+    <chart:SfCartesianChart.PrimaryAxis>
+        <chart:NumericalAxis Interval="1"
+        ShowGridLines="False" ZoomFactor="0.5" ZoomPosition="0.1"
+        EnableAutoIntervalOnZooming="False"/>
+    </chart:SfCartesianChart.PrimaryAxis>
+
+    <chart:SfCartesianChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.SecondaryAxis>
+
+    <chart:SfCartesianChart.Behaviors>
+        <chart:ChartZoomPanBehavior />
+    </chart:SfCartesianChart.Behaviors>
+. . .
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+chart.Palette = ChartColorPalette.BlueChrome;
+
+chart.PrimaryAxis = new NumericalAxis()
+{
+    ZoomFactor = 0.5,
+    ZoomPosition = 0.1,
+    EnableAutoIntervalOnZooming = false,
+    ShowGridLines = false,
+    Interval = 1
+};
+
+chart.SecondaryAxis = new NumericalAxis();
+ChartZoomPanBehavior zoomPanBehavior = new ChartZoomPanBehavior();
+chart.Behaviors.Add(zoomPanBehavior);
+. . .
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Auto interval on zooming support in WinUI Chart](Axis_Images/winui_chart_axis_enable-auto-interval-on-zooming.png)
+
 ### Customizing the Range
 
 [Maximum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Maximum) and [Minimum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Minimum) properties of axis is used for setting the maximum and minimum value of the axis range respectively.
@@ -179,6 +319,44 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ![Axis label placement support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_betweenTicks.png)
 
+### Displaying labels after a fixed interval
+
+To display labels after a fixed interval n, you can set [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_Interval) property of ChartAxis as n. Default value of interval is 1.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart>
+. . .
+<chart:SfCartesianChart.PrimaryAxis>
+    <chart:CategoryAxis Interval="2" />
+</chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.SecondaryAxis>
+    <chart:NumericalAxis/>
+</chart:SfCartesianChart.SecondaryAxis>
+
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+. . .
+chart.PrimaryAxis = new CategoryAxis()
+{
+    Interval = 2, 
+};
+
+chart.SecondaryAxis = new NumericalAxis();
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![CategoryAxis interval support in WinUI Chart](Axis_images/winui_chart_category_axis_interval.png)
+
 ### IsIndexed
 
 By default, [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) plots the values based on the index of the data points. However, the [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) can be made to plot the data points based on its data, instead of index value by disabling the [IsIndexed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_IsIndexed) property of [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html).
@@ -242,6 +420,46 @@ chart.PrimaryAxis = new DateTimeAxis()
 {% endtabs %}
 
 ![DateTimeCategoryAxis support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_datetime.png)
+
+### Date time intervals
+
+Date time intervals can be customized using [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_Interval) and [IntervalType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) properties of the DateTimeAxis. For example, setting Interval as 6 and IntervalType as Months will consider 6 Months as interval.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart>
+. . .
+<chart:SfCartesianChart.PrimaryAxis>
+    <chart:DateTimeAxis Interval="6" IntervalType="Months" LabelFormat="MMM-yy"/>
+</chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.SecondaryAxis>
+    <chart:NumericalAxis/>
+</chart:SfCartesianChart.SecondaryAxis>
+
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+. . .
+chart.PrimaryAxis = new DateTimeAxis()
+{
+    Interval = 6, 
+    IntervalType = DateTimeIntervalType.Months,
+    LabelFormat = "MMM-yy"
+};
+
+chart.SecondaryAxis = new NumericalAxis();
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![DateTimeAxis interval support in WinUI Chart](Axis_images/winui_chart_datetime_axis_interval.png)
 
 ### Customizing the Range
 
