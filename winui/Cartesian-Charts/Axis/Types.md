@@ -50,6 +50,44 @@ chart.SecondaryAxis = new NumericalAxis();
 
 ![NumericalAxis support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types.png)
 
+### Customizing numeric interval
+
+Axis interval can be customized using the [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Interval) property of ChartAxis. By default, interval will be calculated based on the minimum and maximum value of the provided data.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart>
+. . .
+<chart:SfCartesianChart.PrimaryAxis>
+    <chart:NumericalAxis Interval="10" />
+</chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.SecondaryAxis>
+    <chart:NumericalAxis/>
+</chart:SfCartesianChart.SecondaryAxis>
+
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+. . .
+chart.PrimaryAxis = new NumericalAxis()
+{
+    Interval = 10, 
+};
+
+chart.SecondaryAxis = new NumericalAxis();
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![NumericalAxis interval support in WinUI Chart](Axis_images/winui_chart_numerical_axis_interval.png)
+
 ### Customizing the Range
 
 [Maximum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Maximum) and [Minimum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Minimum) properties of axis is used for setting the maximum and minimum value of the axis range respectively.
@@ -179,6 +217,44 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ![Axis label placement support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_betweenTicks.png)
 
+### Displaying labels after a fixed interval
+
+To display labels after a fixed interval n, you can set [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_Interval) property of ChartAxis as n. Default value of interval is 1.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart>
+. . .
+<chart:SfCartesianChart.PrimaryAxis>
+    <chart:CategoryAxis Interval="2" />
+</chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.SecondaryAxis>
+    <chart:NumericalAxis/>
+</chart:SfCartesianChart.SecondaryAxis>
+
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+. . .
+chart.PrimaryAxis = new CategoryAxis()
+{
+    Interval = 2, 
+};
+
+chart.SecondaryAxis = new NumericalAxis();
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![CategoryAxis interval support in WinUI Chart](Axis_images/winui_chart_category_axis_interval.png)
+
 ### IsIndexed
 
 By default, [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) plots the values based on the index of the data points. However, the [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) can be made to plot the data points based on its data, instead of index value by disabling the [IsIndexed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_IsIndexed) property of [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html).
@@ -242,6 +318,46 @@ chart.PrimaryAxis = new DateTimeAxis()
 {% endtabs %}
 
 ![DateTimeCategoryAxis support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_datetime.png)
+
+### Date time intervals
+
+Date time intervals can be customized using [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_Interval) and [IntervalType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) properties of the DateTimeAxis. For example, setting Interval as 6 and IntervalType as Months will consider 6 Months as interval.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart>
+. . .
+<chart:SfCartesianChart.PrimaryAxis>
+    <chart:DateTimeAxis Interval="6" IntervalType="Months" LabelFormat="MMM-yy"/>
+</chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.SecondaryAxis>
+    <chart:NumericalAxis/>
+</chart:SfCartesianChart.SecondaryAxis>
+
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+. . .
+chart.PrimaryAxis = new DateTimeAxis()
+{
+    Interval = 6, 
+    IntervalType = DateTimeIntervalType.Months,
+    LabelFormat = "MMM-yy"
+};
+
+chart.SecondaryAxis = new NumericalAxis();
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![DateTimeAxis interval support in WinUI Chart](Axis_images/winui_chart_datetime_axis_interval.png)
 
 ### Customizing the Range
 
