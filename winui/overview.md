@@ -102,7 +102,7 @@ background-color:transparent!important;
      <td><a id="anchor"  href="https://help.syncfusion.com/winui/slider/getting-started">Slider</a></td>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/time-picker/getting-started">Time Picker</a></td>
     <td></td>
-    <td></td>
+    <td><a id="anchor"  href="https://help.syncfusion.com/winui/numberbox/getting-started" >NumberBox</a></td>
   </tr>
   <tr>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/rangeslider/getting-started">Range Slider</a></td>
