@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart Area in WinUI Chart control | Syncfusion
-description: Learn here all about chart area of Syncfusion WinUI Chart (SfCartesianChart) control with key features and more.
+title: Chart area in WinUI Chart control | Syncfusion
+description: Learn here all about chart area and its customization in Syncfusion WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -9,20 +9,25 @@ documentation: ug
 
 # Chart Area in WinUI Chart (SfCartesianChart)
 
-SfCartesianChart provides the properties like [PlotAreaBorderBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBorderBrush), [PlotAreaBorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBorderThickness) and [PlotAreaBackground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBackground) for customizing the plot area.
+Chart area represents the entire chart and all its elements. It’s a virtual rectangular area that includes all the chart elements like title, axis, legends, series, etc.
+
+## Customization
+
+Chart provides the properties like [PlotAreaBorderBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBorderBrush), [PlotAreaBorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBorderThickness) and [PlotAreaBackground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBackground) for customizing the plot area.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart Header="Chart Area Header"        PlotAreaBackground="LightCyan"  Background="LightBlue"   PlotAreaBorderBrush="Blue"  PlotAreaBorderThickness="3"  Palette="BlueChrome">
+<chart:SfCartesianChart Header="Chart Area Header" PlotAreaBackground="LightCyan" Background="LightBlue"
+                        PlotAreaBorderBrush="Blue" PlotAreaBorderThickness="3"  Palette="BlueChrome">
 . . .
     <chart:SfCartesianChart.PrimaryAxis>
-        <chart:CategoryAxis  />
+        <chart:CategoryAxis/>
     </chart:SfCartesianChart.PrimaryAxis>
 
     <chart:SfCartesianChart.SecondaryAxis>
-        <chart:NumericalAxis />
+        <chart:NumericalAxis/>
     </chart:SfCartesianChart.SecondaryAxis>
 
     <chart:SfCartesianChart.Legend>
@@ -52,7 +57,6 @@ chart.PlotAreaBorderThickness = new Thickness(3);
 chart.Palette = ChartColorPalette.BlueChrome;
 
 chart.PrimaryAxis = new CategoryAxis();
- = primaryAxis;
 chart.SecondaryAxis = new NumericalAxis();
 
 ChartLegend legend = new ChartLegend();
@@ -73,5 +77,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Chart Area support in WinUI chart](Chart-Area_images/WinUI_chart_area.png)
-
+![Chart area customization in WinUI chart](Chart-Area_images/WinUI_chart_area.png)
