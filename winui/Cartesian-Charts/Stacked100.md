@@ -11,7 +11,7 @@ documentation: ug
 
 ## Stacked Column 100 Chart
 
-The [`StackedColumn100Series`]() resembles [StackedColumnSeries]() but the cumulative portion of each stacked element always comes to a total of 100%. 
+The [StackedColumn100Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedColumn100Series.html) resembles [StackedColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedColumnSeries.html) but the cumulative portion of each stacked element always comes to a total of 100%. 
 
 {% tabs %}
 
@@ -84,7 +84,7 @@ chart.Series.Add(series3);
 
 ## Stacked Line 100 Chart
 
-The [`StackedLine100Series`]() resembles [`StackedLineSeries`]() but the cumulative portion of each stacked element always comes to a total of 100%. 
+The [StackedLine100Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedLine100Series.html) resembles [StackedLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedLineSeries.html) but the cumulative portion of each stacked element always comes to a total of 100%. 
 
 {% tabs %}
 
@@ -160,7 +160,7 @@ chart.Series.Add(series3);
 
 ## Stacked Area 100 Chart
 
-The [StackedArea100Series]() is similar to [StackedAreaSeries](), but the cumulative portion of each stacked element always comes to a total of 100%. 
+The [StackedArea100Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedArea100Series.html) is similar to [StackedAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedAreaSeries.html), but the cumulative portion of each stacked element always comes to a total of 100%. 
 
 {% tabs %}
 

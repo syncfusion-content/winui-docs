@@ -360,7 +360,7 @@ this.Content = chart;
 
 ## Events
 
-The following selection events are available in the `SfCartesianChart`.
+The following selection events are available in the [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
 
 ### SelectionChanging
 
