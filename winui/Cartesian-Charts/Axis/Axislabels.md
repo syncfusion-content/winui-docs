@@ -290,7 +290,7 @@ When there are more number of axis labels, they may overlap with each other. Cha
 
 ## Edge Labels Drawing Mode
 
-Chart axis provides support to customize the rendering position of the edge labels using the [EdgeLabelsDrawingMode]() property. [EdgeLabelsDrawingMode]() property default value is `Center`.
+Chart axis provides support to customize the rendering position of the edge labels using the [EdgeLabelsDrawingMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode) property. [EdgeLabelsDrawingMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode) property default value is `Center`.
 
 | Action | Description |
 |--|--|
@@ -334,7 +334,7 @@ The visibility of the edge labels of the axis can be controlled using the [EdgeL
 
 **Always Visible**
 
-`AlwaysVisible` option in [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) is used to view the edge labels even in chart area zoomed state.
+[AlwaysVisible](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode.html#Syncfusion_UI_Xaml_Charts_EdgeLabelsVisibilityMode_AlwaysVisible) option in [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) is used to view the edge labels even in chart area zoomed state.
 
 {% tabs %}
 
@@ -365,7 +365,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **Visible**
 
-`Visible` option is used to display the edge labels irrespective of the auto interval calculation until zooming (i.e., in normal state).
+[Visible](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode.html#Syncfusion_UI_Xaml_Charts_EdgeLabelsVisibilityMode_Visible) option is used to display the edge labels irrespective of the auto interval calculation until zooming (i.e., in normal state).
 
 {% tabs %}
 

@@ -95,8 +95,8 @@ Tick lines can be positioned inside or outside of the chart area. By default the
 
 | Property | Description |
 |--|--|
-|TickLinesPosition | Used to position the major tick lines|
-|SmallTickLinesPosition | Used to position the minor tick lines|
+|[TickLinesPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TickLinesPosition) | Used to position the major tick lines|
+|[SmallTickLinesPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTickLinesPosition) | Used to position the minor tick lines|
 
 {% tabs %}
 
