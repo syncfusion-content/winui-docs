@@ -141,7 +141,7 @@ this.Content = chart;
 
 ## Events
 
-The following selection events are available in `SfPyramidChart`.
+The following selection events are available in [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html).
 
 ### SelectionChanging
 
