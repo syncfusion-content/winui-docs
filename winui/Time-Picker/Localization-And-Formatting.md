@@ -170,7 +170,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Hide clear button in the editor
 
-By default, the clear button `X` will be displayed in the editor of the `Time Picker` control, which can be used to clear the entered input. You can hide the clear button in `Time Picker` control using the `ShowClearButton` property. The default value of `ShowClearButton` property value is **true**.
+By default, the clear button `X` will be displayed in the editor of the `Time Picker` control, which can be used to clear the entered input. You can hide the clear button in `Time Picker` control using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DateTimePickerBase.html#Syncfusion_UI_Xaml_Editors_DateTimePickerBase_ShowClearButton) property. The default value of `ShowClearButton` property value is **true**.
 
 {% tabs %}
 {% highlight XAML %}
