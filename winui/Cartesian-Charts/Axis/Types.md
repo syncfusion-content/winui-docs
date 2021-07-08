@@ -48,7 +48,45 @@ chart.SecondaryAxis = new NumericalAxis();
 
 {% endtabs %}
 
-![NumericalAxis support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types.png)
+![NumericalAxis support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types.png)
+
+### Interval
+
+Axis interval can be customized by using the [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Interval) property. By default, interval will be calculated based on the minimum and maximum value of the provided data.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart>
+. . .
+<chart:SfCartesianChart.PrimaryAxis>
+    <chart:NumericalAxis Interval="10" />
+</chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.SecondaryAxis>
+    <chart:NumericalAxis/>
+</chart:SfCartesianChart.SecondaryAxis>
+
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+. . .
+chart.PrimaryAxis = new NumericalAxis()
+{
+    Interval = 10, 
+};
+
+chart.SecondaryAxis = new NumericalAxis();
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![NumericalAxis interval support in WinUI Chart](Axis_Images/winui_chart_numerical_axis_interval.png)
 
 ### Customizing the Range
 
@@ -79,7 +117,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis range customization in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_Numeric.png)
+![NumericalAxis range customization in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_Numeric.png)
 
 ### Start from zero
 
@@ -114,7 +152,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis customization support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_startZero.png)
+![NumericalAxis customization support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_startZero.png)
 
 ## Category Axis
 
@@ -144,7 +182,7 @@ chart.PrimaryAxis = new CategoryAxis();
 
 {% endtabs %}
 
-![CategoryAxis support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_category.png)
+![CategoryAxis support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_category.png)
 
 ### Label placement
 
@@ -177,7 +215,45 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![Axis label placement support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_betweenTicks.png)
+![Axis label placement support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_betweenTicks.png)
+
+### Interval
+
+By default, the [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) axis labels are display with fixed interval 1. It can customized by using the [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_Interval) property of axis.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart>
+. . .
+<chart:SfCartesianChart.PrimaryAxis>
+    <chart:CategoryAxis Interval="2" />
+</chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.SecondaryAxis>
+    <chart:NumericalAxis/>
+</chart:SfCartesianChart.SecondaryAxis>
+
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+. . .
+chart.PrimaryAxis = new CategoryAxis()
+{
+    Interval = 2, 
+};
+
+chart.SecondaryAxis = new NumericalAxis();
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![CategoryAxis interval support in WinUI Chart](Axis_Images/winui_chart_category_axis_interval.png)
 
 ### IsIndexed
 
@@ -241,7 +317,47 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeCategoryAxis support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_datetime.png)
+![DateTimeCategoryAxis support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_datetime.png)
+
+### Interval
+
+In [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html), intervals can be customized by using the [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_Interval) and [IntervalType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) properties. For example, setting [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_Interval) as 6 and [IntervalType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) as `Months` will consider 6 months as interval.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart>
+. . .
+<chart:SfCartesianChart.PrimaryAxis>
+    <chart:DateTimeAxis Interval="6" IntervalType="Months" LabelFormat="MMM-yy"/>
+</chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.SecondaryAxis>
+    <chart:NumericalAxis/>
+</chart:SfCartesianChart.SecondaryAxis>
+
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+. . .
+chart.PrimaryAxis = new DateTimeAxis()
+{
+    Interval = 6, 
+    IntervalType = DateTimeIntervalType.Months,
+    LabelFormat = "MMM-yy"
+};
+
+chart.SecondaryAxis = new NumericalAxis();
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![DateTimeAxis interval support in WinUI Chart](Axis_Images/winui_chart_datetime_axis_interval.png)
 
 ### Customizing the Range
 
@@ -276,7 +392,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis range customization support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_range_datetime.png)
+![DateTimeAxis range customization support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_range_datetime.png)
 
 ### Enable Business Hours
 
@@ -350,7 +466,7 @@ this.Chart.SecondaryAxis.IsInversed = true;
 
 {% endtabs %}
 
-![Inversed axis support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_inverse.png)
+![Inversed axis support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_inverse.png)
 
 ## Multiple Axes
 
@@ -422,6 +538,6 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Multiple axes support in WinUI Chart](Axis_images/winui_chart_axis_types_multipleaxis.png)
+![Multiple axes support in WinUI Chart](Axis_Images/winui_chart_axis_types_multipleaxis.png)
 
 In the above image, the [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html) is plotted based on additional X & Y axes, and [SplineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SplineSeries.html) is plotted based on the primary and secondary axes.
