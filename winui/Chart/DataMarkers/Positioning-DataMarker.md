@@ -7,13 +7,13 @@ control: Chart
 documentation: ug
 ---
 
-# Alignment of Data Labels in WinUI Chart
+# Positioning Data Markers in WinUI Chart
 
-The alignment of data labels inside the series is defined using [BarLabelAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_CartesianDataLabelSettings_BarLabelAlignment) property.
+The positioning of data markers is defined by using the [BarLabelAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_CartesianDataLabelSettings_BarLabelAlignment) property.
 
-* [Top](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BarLabelAlignment.html#Syncfusion_UI_Xaml_Charts_BarLabelAlignment_Top) - Positions the data label at the top edge point of a chart segment.
-* [Middle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BarLabelAlignment.html#Syncfusion_UI_Xaml_Charts_BarLabelAlignment_Middle) - Positions the data label at the center point of a chart segment.
-* [Bottom](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BarLabelAlignment.html#Syncfusion_UI_Xaml_Charts_BarLabelAlignment_Bottom) - Positions the data label at the bottom edge point of a chart segment.
+* [Top](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BarLabelAlignment.html#Syncfusion_UI_Xaml_Charts_BarLabelAlignment_Top) - Positions the data marker at the top edge point of a chart segment.
+* [Middle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BarLabelAlignment.html#Syncfusion_UI_Xaml_Charts_BarLabelAlignment_Middle) - Positions the data marker at the center point of a chart segment.
+* [Bottom](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BarLabelAlignment.html#Syncfusion_UI_Xaml_Charts_BarLabelAlignment_Bottom) - Positions the data marker at the bottom edge point of a chart segment.
 
 N> This behavior varies based on the chart series type.
 
@@ -54,9 +54,7 @@ Also, you can define the label alignment using  [HorizontalAlignment](https://he
 
 ## Position
 
-Other than the above alignment options, Chart providing additional customization option to position the data labels. 
-
-The [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_CartesianDataLabelSettings_Position) property is used to position the data labels at `Center`, `Inner` and `Outer` position of the actual data point position. By default, labels are positioned based on the series types for better readability.
+Other than the above alignment options, Chart providing additional customization option to position the data markers smartly based on series types using the [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_CartesianDataLabelSettings_Position) property. By default, labels are positioned based on the series types for better readability.
 
 The following are the values for this property: 
 
@@ -89,7 +87,7 @@ CartesianDataLabelSettings dataLabel = new CartesianDataLabelSettings()
 
 | Column | Spline |
 |--|--|
-|![center Column](DataMarkers_images/labelposition_center_column.png)|![center Series](DataMarkers_images/labelposition_center_spline.png)|
+|![Data label center in Column](DataMarkers_images/labelposition_center_column.png)|![Data label center in Spline](DataMarkers_images/labelposition_center_spline.png)|
 
 The following code sample illustrates the inner position of data marker labels,
 
@@ -114,8 +112,7 @@ CartesianDataLabelSettings dataLabel = new CartesianDataLabelSettings()
 
 | Column | Spline |
 |--|--|
-|![Inner Column](DataMarkers_images/labelposition_inner_column.png)|![Inner Series](DataMarkers_images/labelposition_inner_spline.png)|
-
+|![Data label inner in Column](DataMarkers_images/labelposition_inner_column.png)|![Data label inner in Spline](DataMarkers_images/labelposition_inner_spline.png)|
 
 The following code sample illustrates the outer position of data marker labels,
 
@@ -140,4 +137,4 @@ CartesianDataLabelSettings dataLabel = new CartesianDataLabelSettings()
 
 | Column | Spline |
 |--|--|
-|![Outer Column](DataMarkers_images/labelposition_outer_column.png)|![Outer Series](DataMarkers_images/labelposition_outer_spline.png)|
+|![Data label outer in Column](DataMarkers_images/labelposition_outer_column.png)|![Data label outer in Spline](DataMarkers_images/labelposition_outer_spline.png)|

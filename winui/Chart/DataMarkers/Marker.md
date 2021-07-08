@@ -9,11 +9,9 @@ documentation: ug
 
 # Data Marker in WinUI Chart
 
-## Define Data Marker
+To enable the marker symbol, you have to set the [ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ContentTemplate) property of [CartesianDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianDataLabelSettings.html).
 
-To enable the marker you have to set the [ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ContentTemplate) property of [CartesianDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianDataLabelSettings.html) as in the below code example:
-
-The following code example demonstrates how to use ContentTemplate.
+The following code example demonstrates how to define marker symbol using [ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ContentTemplate).
 
 {% tabs %}
 
@@ -83,4 +81,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Template support for marker in WinUI Chart](DataMarkers_images/markertemplate.png)
+![Data marker symbol in WinUI Chart](DataMarkers_images/markertemplate.png)

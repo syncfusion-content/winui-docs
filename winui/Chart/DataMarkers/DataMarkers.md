@@ -7,16 +7,16 @@ control: Chart
 documentation: ug
 ---
 
-# Data Labels in WinUI Chart
+# Data Markers in WinUI Chart
 
-Chart Data Labels are used to display values related to a chart segment element. Values from data point(x, y) or other custom properties from a data source can be displayed. 
+Data markers are used to display values related to a chart segment element. Values from data point(x, y) or other custom properties from a data source can be displayed. 
 
-Each data label can be represented by the following:
+Each data marker can be represented by the following:
 
 * Label - Displays the segment label content at the (X, Y) point.
 * Connector Line - Used to connect the (X, Y) point and the label element.
 
-The following code example illustrates how to initialize the data label.
+The following code example illustrates how to initialize the data marker.
 
 {% tabs %}
 
@@ -46,4 +46,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Data Markers in WinUI](DataMarkers_images/datamarker_label_overview.png) 
+![Data Markers in WinUI Chart](DataMarkers_images/datamarker_label_overview.png) 
