@@ -254,33 +254,34 @@ chart.Header = "Chart";
 {% endtabs %}  
 
 
-## Enable data markers
+## Enable Data Labels
 
-You can add data labels to improve the readability of the chart and it can be enabled using [DataMarker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataMarkerSeries.html#Syncfusion_UI_Xaml_Charts_DataMarkerSeries_DataMarker) property of [ChartSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataMarkerSeries.html). By default, there is no label displayed, you have to set [ShowLabel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_ShowLabel) property of [ChartDataMarker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataMarker.html) to True.
+The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataMarkerSeries.html#Syncfusion_UI_Xaml_Charts_DataMarkerSeries_ShowDataLabels) property of series can be used to enable the data labels to improve the readability of the chart. The label visibility is set to `False` by default.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-<syncfusion:SfChart>
-	...
-  <syncfusion:ColumnSeries > 
-        <syncfusion:ColumnSeries.DataMarker>
-            <syncfusion:ChartDataMarker LabelPosition="Inner" ShowLabel="True" />
-        </syncfusion:ColumnSeries.DataMarker>
-  </syncfusion:ColumnSeries>  
-	...
-</syncfusion:SfChart>
+<chart:SfChart>
+    . . . 
+    <chart:ColumnSeries ShowDataLabels="True">
+    </chart:ColumnSeries>
+
+</chart:SfChart>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
-series.DataMarker = new ChartDataMarker (){ ShowLabel = true }; 
+SfChart chart = new SfChart();
+. . .
+ColumnSeries series = new ColumnSeries();
+series.ShowDataLabels = true;
+chart.Series.Add(series);
 
 {% endhighlight %}
 
-{% endtabs %}  
+{% endtabs %}   
 
 ## Enable legend
 
