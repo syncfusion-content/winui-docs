@@ -47,7 +47,7 @@ N> Polar chart supports title for secondary axis only.
 
 ## Style
 
-The [`HeaderStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_HeaderStyle) property is used to provide style for the axis header.
+The [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_HeaderStyle) property is used to provide style for the axis header.
 
 {% tabs %}
 
@@ -97,7 +97,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ## Template
 
-The appearance of the header can be customized using the [`HeaderTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_HeaderTemplate) property.
+The appearance of the header can be customized using the [HeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_HeaderTemplate) property.
 
 {% tabs %}
 

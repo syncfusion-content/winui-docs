@@ -174,7 +174,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 ## Template
 
-The funnel chart provides support to customize the appearance of the tooltip by using the [`TooltipTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_TooltipTemplate) property. 
+The funnel chart provides support to customize the appearance of the tooltip by using the [TooltipTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_TooltipTemplate) property. 
 
 The following code example explains how to display both x-value and y-value in tooltip using a template.
 

@@ -143,7 +143,7 @@ this.Content = chart;
 
 ## Events
 
-The following selection events are available in `SfFunnelChart`.
+The following selection events are available in [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html).
 
 ### SelectionChanging
 

@@ -176,7 +176,7 @@ chart.Behaviors.Add(tooltip);
 
 ## Template
 
-Circular chart provides support to customize the appearance of the tooltip by using the [`TooltipTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TooltipTemplate) property. 
+Circular chart provides support to customize the appearance of the tooltip by using the [TooltipTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TooltipTemplate) property. 
 
 {% tabs %}
 
