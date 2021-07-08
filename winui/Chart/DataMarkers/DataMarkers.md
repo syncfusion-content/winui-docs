@@ -7,42 +7,39 @@ control: Chart
 documentation: ug
 ---
 
-# Data Markers in WinUI Chart
+# Data Labels in WinUI Chart
 
-Chart Data Markers are used to display values related to a chart segment element. Values from data point(x, y) or other custom properties from a data source can be displayed. 
+Chart Data Labels are used to display values related to a chart segment element. Values from data point(x, y) or other custom properties from a data source can be displayed. 
 
-Each data marker can be represented by the following:
+Each data label can be represented by the following:
 
 * Label - Displays the segment label content at the (X, Y) point.
-* Marker - Displays the desired marker at the (X, Y) point.
-* ConnectorLine - Line used to connect the (X, Y) point and the label element.
+* Connector Line - Used to connect the (X, Y) point and the label element.
 
-The following code example illustrates how to initialize the data marker.
+The following code example illustrates how to initialize the data label.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="Value">
-        <syncfusion:ColumnSeries.DataMarker>
-            <syncfusion:ChartDataMarker ShowLabel="True">
-            </syncfusion:ChartDataMarker>
-        </syncfusion:ColumnSeries.DataMarker>
-</syncfusion:ColumnSeries> 
+<chart:SfChart>
+. . .
+<chart:ColumnSeries ShowDataLabels="True">
+    <chart:ColumnSeries.DataLabelSettings>
+        <chart:CartesianDataLabelSettings />
+    </chart:ColumnSeries.DataLabelSettings>
+</chart:ColumnSeries>
+</chart:SfChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ColumnSeries series = new ColumnSeries()
-{
-    ItemsSource = ViewModel().Demands,
-    XBindingPath = "Category",
-    YBindingPath = "Value",
-};
-ChartDataMarker datamarker = new ChartDataMarker();
-datamarker.ShowLabel = true;
-series.DataMarker = datamarker;
+SfChart chart = new SfChart();
+ColumnSeries series = new ColumnSeries();
+. . .
+series.DataLabelSettings = new CartesianDataLabelSettings();
+
 chart.Series.Add(series);
 
 {% endhighlight %}
