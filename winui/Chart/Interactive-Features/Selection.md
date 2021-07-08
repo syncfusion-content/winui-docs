@@ -11,9 +11,9 @@ documentation: ug
 
 SfChart supports selection that allows you to select a segment in a series or series itself by using [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#). 
 
-### Adding Selection Behavior to SfChart
+### Enable Selection
 
-You can create an instance [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#) and add it to the Behaviors collection.
+To enable selection, create an instance of [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#) and add it to the `Behaviors` collection.
 
 {% tabs %}
 
@@ -39,9 +39,9 @@ chart.Behaviors.Add(selection);
 
 {% endtabs %}
 
-## SegmentSelection
+## Segment Selection
 
-Segment Selection allows you to highlight a segment in a chart series. To enable a segment selection in a chart series, you have to set the [`EnableSegmentSelection`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_EnableSegmentSelection) property to True. For highlighting a segment the  brush color can be set using [`SegmentSelectionBrush`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SegmentSelectionBrush) property.
+Segment Selection allows you to highlight a segment in a chart series. For highlighting a segment the brush color can be set using the [`SelectionBrush`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SelectionBrush) property.
 
 **Segment Selection in ColumnSeries**
 
@@ -49,130 +49,97 @@ Segment Selection allows you to highlight a segment in a chart series. To enable
 
 {% highlight xaml %}
 
-<syncfusion:SfChart.Behaviors>
+<chart:SChart>
+. . .
+    <chart:SfChart.Behaviors>
+        <chart:ChartSelectionBehavior />
+    </chart:SfChart.Behaviors>
 
-<syncfusion:ChartSelectionBehavior   EnableSegmentSelection="True" >
-
-</syncfusion:ChartSelectionBehavior>
-
-</syncfusion:SfChart.Behaviors>
-
-<syncfusion:ColumnSeries Label="2011" SegmentSelectionBrush="Green" 
-
-ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2011"/>
+    <chart:ColumnSeries ItemsSource="{Binding Data}" 
+                        XBindingPath="Demand"
+                        YBindingPath="Year2010"
+                        SelectionBrush="Green"/>
+</chart:SfChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ChartSelectionBehavior selection = new ChartSelectionBehavior()
-{
-
-    EnableSegmentSelection = true
-
-};
-
+SChart chart = new SChart();
+. . .
+ChartSelectionBehavior selection = new ChartSelectionBehavior();
 chart.Behaviors.Add(selection);
 
 ColumnSeries series = new ColumnSeries()
 {
-
-    ItemsSource = new ViewModel().Demands,
-
+    ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
-    Label ="2011",
-
-    SegmentSelectionBrush = new SolidColorBrush(Colors.Green),
-
+    SelectionBrush = new SolidColorBrush(Colors.Green)
 };
 
 chart.Series.Add(series);
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Segment selection support in WinUI Chart](Interactive-Features_images/Interactive-Features_img34.jpeg)
+![Segment selection support in WinUI Chart](Interactive-Features_images/WinUI_chart_segment_selection.png)
 
-**Segment Selection in SplineSeries**
+**Segment Selection in Linear Series**
 
-In Linear type series the segment selection can be viewed by changing the data marker MarkerType interior.
+In linear type series the segment selection can be viewed by changing the data label interior.
 
-The following code example demonstrates the spline series segment selection by changing the data marker interior.
+The following code example demonstrates the spline series segment selection by changing the data label interior.
 
 {% tabs %}
 
 {% highlight xml %}
 
-<syncfusion:SplineSeries SegmentSelectionBrush="Red"
+<chart:SfChart>
+. . .
+    <chart:SfChart.Behaviors>
+        <chart:ChartSelectionBehavior />
+    </chart:SfChart.Behaviors>
 
-ItemsSource="{Binding Demands}"
-
-XBindingPath="Demand"
-
-YBindingPath="Year2010">
-
-<syncfusion:SplineSeries.DataMarker>
-
-<syncfusion:ChartDataMarker ShowMarker="True" MarkerType="Ellipse" HighlightOnSelection="True"></syncfusion:ChartDataMarker>
-
-</syncfusion:SplineSeries.DataMarker>
-
-</syncfusion:SplineSeries>
+    <chart:SplineSeries ItemsSource="{Binding Data}" 
+                        XBindingPath="Demand"
+                        YBindingPath="Year2010"
+                        SelectionBrush="Green"
+                        ShowDataLabels="True"/>
+</chart:SfChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ChartSelectionBehavior selection = new ChartSelectionBehavior()
-{
-
-    EnableSegmentSelection = true
-
-};
-
+SfChart chart = new SfChart();
+. . .
+ChartSelectionBehavior selection = new ChartSelectionBehavior();
 chart.Behaviors.Add(selection);
 
 SplineSeries series = new SplineSeries()
 {
-
-    ItemsSource = new ViewModel().Demands,
-
+    ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
-    SegmentSelectionBrush = new SolidColorBrush(Colors.Red),
-
+    SelectionBrush = new SolidColorBrush(Colors.Green),
+    ShowDataLabels="True" 
 };
-
-ChartDataMarker datamarker = new ChartDataMarker()
-{
-
-    ShowMarker = true,
-
-    HighlightOnSelection = true,
-
-    MarkerType = ChartSymbol.Ellipse
-
-};
-
-series.DataMarker = datamarker;
 
 chart.Series.Add(series);
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Segment selection support in WinUI Chart](Interactive-Features_images/Interactive-Features_img35.jpeg)
+![Segment selection support in WinUI Chart](Interactive-Features_images/WinUI_chart_spline_series_segment_selection.png)
 
 ## Series Selection
 
-Series selection is used in case of multiple series when you want to highlight a particular series. Series selection can be enabled by setting [`EnableSeriesSelection`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_EnableSeriesSelection) property to True. The [`SeriesSelectionBrush`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SeriesSelectionBrush) property is used to set the brush color to highlight the series.
+Series selection is used in case of multiple series when you want to highlight a particular series. Series selection can be enabled by setting [`Type`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) property value to [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) in [ChartSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html). The [`SeriesSelectionBrush`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SeriesSelectionBrush) property is used to set the brush color to highlight the series.
 
 The following code example demonstrates highlighting a series.
 
@@ -180,125 +147,36 @@ The following code example demonstrates highlighting a series.
 
 {% highlight xml %}
 
-<syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartSelectionBehavior EnableSegmentSelection="False" EnableSeriesSelection="True"/>
-
-</syncfusion:SfChart.Behaviors>   
-
-<syncfusion:ScatterSeries Label="2010"  SeriesSelectionBrush="Green"
-
-ItemsSource="{Binding Demands}"
-
-XBindingPath="Demand"
-
-YBindingPath="Year2010">
-
-</syncfusion:ScatterSeries>
-
-<syncfusion:ScatterSeries Label="2011" SeriesSelectionBrush="Green"
-
-ItemsSource="{Binding Demands}" XBindingPath="Demand" 
-
-YBindingPath="Year2011"/>    
+<chart:SfChart>
+. . .
+    <chart:SfChart.Behaviors>
+        <chart:ChartSelectionBehavior SeriesSelectionBrush="Green" Type="Series"/>
+    </chart:SfChart.Behaviors>
+. . .
+</chart:SfChart> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ChartSelectionBehavior selection = new ChartSelectionBehavior()
-{
-
-    EnableSegmentSelection = false,
-
-    EnableSeriesSelection = true
-
-};
-
+SfChart chart = new SfChart();
+. . .
+ChartSelectionBehavior selection = new ChartSelectionBehavior();
+selection.SeriesSelectionBrush = new SolidColorBrush(Colors.Green);
+selection.Type = SelectionType.Series;
 chart.Behaviors.Add(selection);
-
-ScatterSeries series1 = new ScatterSeries()
-{
-
-    ItemsSource = new ViewModel().Demands,
-
-    XBindingPath = "Demand",
-
-    YBindingPath = "Year2010",
-
-    Label = "2010",
-
-    SegmentSelectionBrush = new SolidColorBrush(Colors.Green),
-
-};
-
-ScatterSeries series2 = new ScatterSeries()
-{
-
-    ItemsSource = new ViewModel().Demands,
-
-    XBindingPath = "Demand",
-
-    YBindingPath = "Year2011",
-
-    Label = "2011",
-
-    SegmentSelectionBrush = new SolidColorBrush(Colors.Green),
-
-};
-
-chart.Series.Add(series1);
-
-chart.Series.Add(series2);
+. . .
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Series selection support in WinUI Chart](Interactive-Features_images/Interactive-Features_img36.jpeg)
-
-N>By default the segment selection is true, so for selecting series you have to set the EnableSegmentSelection property to false.
-
-## Selection Mode
-
-SfChart provides support to select using mouse move or mouse click. By default the selection will take place in mouse click. The selection mode can be defined using [`SelectionMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionMode) property for segment and series selection.
-
-The following code snippet demonstrates the selection mode using [`MouseMove`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SelectionMode.html).
-
-{% tabs %}
-
-{% highlight xml %}
-
-<syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartSelectionBehavior SelectionMode="MouseMove" EnableSeriesSelection="True">
-
-</syncfusion:ChartSelectionBehavior>
-
-</syncfusion:SfChart.Behaviors>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-ChartSelectionBehavior selection = new ChartSelectionBehavior()
-{
-
-    SelectionMode = Syncfusion.UI.Xaml.Charts.SelectionMode.MouseMove,
-
-    EnableSeriesSelection = true
-
-};
-
-chart.Behaviors.Add(selection);
-
-{% endhighlight %}
-
-{% endtabs %}
+![Series selection support in WinUI Chart](Interactive-Features_images/WinUI_chart_series_selection.png)
 
 ## Customizing the Selection
 
-SfChart allows you to select single or multiple segment\series using [`SelectionType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionType) property. By default the SelectionType is [`Single`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SelectionType.html).
+SfChart allows you to select single or multiple segment\series using the [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) property. By default, the [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) value is [Point](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SelectionType.html#Syncfusion_UI_Xaml_Charts_SelectionType_Point). The `MultiPoint` and `MultiSeries` values of type property is used to select multiple segments and series respectively.
 
 The following code snippet demonstrates multiple segment selection.
 
@@ -306,74 +184,96 @@ The following code snippet demonstrates multiple segment selection.
 
 {% highlight xml %}
 
-<syncfusion:SfChart.Behaviors>
+<chart:SfChart>
+. . .
+    <chart:SfChart.Behaviors>
+        <chart:ChartSelectionBehavior Type="MultiPoint"/>
+    </chart:SfChart.Behaviors>
 
-<syncfusion:ChartSelectionBehavior SelectionType="Multiple" EnableSegmentSelection="True">
+    <chart:SfChart.Series>
+        <chart:ColumnSeries ItemsSource="{Binding Data}"  
+                            XBindingPath="Demand"
+                            YBindingPath="Year2010" 
+                            SelectionBrush="Green"/>
+    </chart:SfChart.Series>
 
-</syncfusion:ChartSelectionBehavior>
-
-</syncfusion:SfChart.Behaviors>
+</chart:SfChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ChartSelectionBehavior selection = new ChartSelectionBehavior()
-{
-
-    SelectionType = SelectionType.Multiple,
-
-    EnableSegmentSelection = true
-
-};
-
+SfChart chart = new SfChart();
+. . .
+ChartSelectionBehavior selection = new ChartSelectionBehavior();
+selection.Type = SelectionType.MultiPoint;
 chart.Behaviors.Add(selection);
+
+ColumnSeries series = new ColumnSeries()
+{
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "Demand",
+    YBindingPath = "Year2010",
+    SelectionBrush = new SolidColorBrush(Colors.Green)
+};
+chart.Series.Add(series);
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Selection style support in WinUI Chart](Interactive-Features_images/Interactive-Features_img37.jpeg)
-
+![Multiple Selection support in WinUI Chart](Interactive-Features_images/WinUI_charts_selected_serie_index.png)
 
 ### Changing Cursor while Selection
 
-[`SelectionCursor`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionCursor) property allows you to define the cursor when mouse is hovered over the segment with segment or series selection enabled.
-
-The following code snippet demonstrates hand cursor in segment selection.
+The [Cursor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Cursor) property allows to define the cursor when mouse is hovered over the segment with segment selection enabled.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
-<syncfusion:SfChart.Behaviors>
+<chart:SfChart>
+. . . 
+    <chart:SfChart.Behaviors>
+        <chart:ChartSelectionBehavior Cursor="Hand"/>
+    </chart:SfChart.Behaviors>
 
-<syncfusion:ChartSelectionBehavior SelectionCursor="Hand"  EnableSegmentSelection="True">
+    <chart:SfChart.Series>
+        <chart:ColumnSeries ItemsSource="{Binding Data}"  
+                            XBindingPath="Demand" 
+                            YBindingPath="Year2010" 
+                            SelectionBrush="Green"/>
+     </chart:SfChart.Series>
 
-</syncfusion:ChartSelectionBehavior>
-
-</syncfusion:SfChart.Behaviors>
+</chart:SfChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ChartSelectionBehavior selection = new ChartSelectionBehavior()
+SfChart chart = new SfChart();
+. . .
+ChartSelectionBehavior selection = new ChartSelectionBehavior();
+selection.Cursor = Windows.UI.Core.CoreCursorType.Hand;
+chart.Behaviors.Add(selection);
+
+ColumnSeries series = new ColumnSeries()
 {
-
-    SelectionCursor = Cursors.Hand,
-
-    EnableSegmentSelection = true
-
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "Demand",
+    YBindingPath = "Year2010",
+    SelectionBrush = new SolidColorBrush(Colors.Green)
 };
 
-chart.Behaviors.Add(selection);
+chart.Series.Add(series);
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Changing cursor while selection support in WinUI Chart](Interactive-Features_images/Interactive-Features_img38.jpeg)
+![Changing cursor while selection support in WinUI Chart](Interactive-Features_images/WinUI_chart_cursor.png)
 
 ## Events
 
@@ -381,7 +281,7 @@ The following events are available in SfChart for ChartSelectionBehavior.
 
 ### SelectionChanging
 
-The [`SelectionChanging`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartBase.html) event occurs before the data point is being selected. This is a cancelable event. This argument contains the following information.
+The [`SelectionChanging`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SelectionChanging) event occurs before the data point is being selected. This is a cancelable event. This argument contains the following information.
 
 * [`SelectedSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangingEventArgs_SelectedSeries) - Gets the series of the selected data point.
 * [`SelectedSegments`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangingEventArgs_SelectedSegments) - Gets or sets the segments collection of the selected series.
@@ -394,7 +294,7 @@ The [`SelectionChanging`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xam
 
 ### SelectionChanged
 
-The [`SelectionChanged`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartBase.html) event occurs after a data point has been selected. This argument contains the following information.
+The [`SelectionChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SelectionChanged) event occurs after a data point has been selected. This argument contains the following information.
 
 * [`SelectedSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangedEventArgs_SelectedSeries) - Gets the series of the selected data point.
 * [`SelectedSegments`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangedEventArgs_SelectedSegments) - Gets the segments collection of the selected series.
