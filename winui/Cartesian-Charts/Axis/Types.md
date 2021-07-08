@@ -48,9 +48,9 @@ chart.SecondaryAxis = new NumericalAxis();
 
 {% endtabs %}
 
-![NumericalAxis support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types.png)
+![NumericalAxis support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types.png)
 
-### Customizing numeric interval
+### Interval
 
 Axis interval can be customized using the [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Interval) property of ChartAxis. By default, interval will be calculated based on the minimum and maximum value of the provided data.
 
@@ -86,109 +86,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 {% endtabs %}
 
-![NumericalAxis interval support in WinUI Chart](Axis_images/winui_chart_numerical_axis_interval.png)
-
-### Auto interval calculation on zooming
-
-[EnableAutoIntervalOnZooming](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EnableAutoIntervalOnZooming) property is used to maintain the interval even it is in zooming state only if we set the interval to the axis. Default value of this property is true. While zooming based on the auto range padding the interval will be calculated.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart x:Name="chart" Palette="BlueChrome">
-. . .
-    <chart:SfCartesianChart.PrimaryAxis>
-        <chart:NumericalAxis ShowGridLines="False" ZoomFactor="0.5" ZoomPosition="0.1"/>
-    </chart:SfCartesianChart.PrimaryAxis>
-
-    <chart:SfCartesianChart.SecondaryAxis>
-        <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis>
-
-    <chart:SfCartesianChart.Behaviors>
-        <chart:ChartZoomPanBehavior />
-    </chart:SfCartesianChart.Behaviors>
-. . .
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-chart.Palette = ChartColorPalette.BlueChrome;
-
-chart.PrimaryAxis = new NumericalAxis()
-{
-    ZoomFactor = 0.5,
-    ZoomPosition = 0.1,
-    ShowGridLines = false,
-};
-
-chart.SecondaryAxis = new NumericalAxis();
-ChartZoomPanBehavior zoomPanBehavior = new ChartZoomPanBehavior();
-chart.Behaviors.Add(zoomPanBehavior);
-. . .
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Auto interval on zooming support in WinUI Chart](Axis_Images/winui_chart_axis_default_enable-auto-interval-on-zooming.png)
-
-If you set [EnableAutoIntervalOnZooming](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EnableAutoIntervalOnZooming) as False, the intervals will be calculated on the interval based on the axis while zooming.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart x:Name="chart" Palette="BlueChrome">
-. . .
-    <chart:SfCartesianChart.PrimaryAxis>
-        <chart:NumericalAxis Interval="1"
-        ShowGridLines="False" ZoomFactor="0.5" ZoomPosition="0.1"
-        EnableAutoIntervalOnZooming="False"/>
-    </chart:SfCartesianChart.PrimaryAxis>
-
-    <chart:SfCartesianChart.SecondaryAxis>
-        <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis>
-
-    <chart:SfCartesianChart.Behaviors>
-        <chart:ChartZoomPanBehavior />
-    </chart:SfCartesianChart.Behaviors>
-. . .
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-chart.Palette = ChartColorPalette.BlueChrome;
-
-chart.PrimaryAxis = new NumericalAxis()
-{
-    ZoomFactor = 0.5,
-    ZoomPosition = 0.1,
-    EnableAutoIntervalOnZooming = false,
-    ShowGridLines = false,
-    Interval = 1
-};
-
-chart.SecondaryAxis = new NumericalAxis();
-ChartZoomPanBehavior zoomPanBehavior = new ChartZoomPanBehavior();
-chart.Behaviors.Add(zoomPanBehavior);
-. . .
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Auto interval on zooming support in WinUI Chart](Axis_Images/winui_chart_axis_enable-auto-interval-on-zooming.png)
+![NumericalAxis interval support in WinUI Chart](Axis_Images/winui_chart_numerical_axis_interval.png)
 
 ### Customizing the Range
 
@@ -219,7 +117,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis range customization in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_Numeric.png)
+![NumericalAxis range customization in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_Numeric.png)
 
 ### Start from zero
 
@@ -254,7 +152,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis customization support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_startZero.png)
+![NumericalAxis customization support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_startZero.png)
 
 ## Category Axis
 
@@ -284,7 +182,7 @@ chart.PrimaryAxis = new CategoryAxis();
 
 {% endtabs %}
 
-![CategoryAxis support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_category.png)
+![CategoryAxis support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_category.png)
 
 ### Label placement
 
@@ -317,9 +215,9 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![Axis label placement support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_betweenTicks.png)
+![Axis label placement support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_betweenTicks.png)
 
-### Displaying labels after a fixed interval
+### Interval
 
 To display labels after a fixed interval n, you can set [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_Interval) property of ChartAxis as n. Default value of interval is 1.
 
@@ -355,7 +253,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 {% endtabs %}
 
-![CategoryAxis interval support in WinUI Chart](Axis_images/winui_chart_category_axis_interval.png)
+![CategoryAxis interval support in WinUI Chart](Axis_Images/winui_chart_category_axis_interval.png)
 
 ### IsIndexed
 
@@ -419,9 +317,9 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeCategoryAxis support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_datetime.png)
+![DateTimeCategoryAxis support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_datetime.png)
 
-### Date time intervals
+### Interval
 
 Date time intervals can be customized using [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_Interval) and [IntervalType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) properties of the DateTimeAxis. For example, setting Interval as 6 and IntervalType as Months will consider 6 Months as interval.
 
@@ -459,7 +357,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 {% endtabs %}
 
-![DateTimeAxis interval support in WinUI Chart](Axis_images/winui_chart_datetime_axis_interval.png)
+![DateTimeAxis interval support in WinUI Chart](Axis_Images/winui_chart_datetime_axis_interval.png)
 
 ### Customizing the Range
 
@@ -494,7 +392,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis range customization support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_range_datetime.png)
+![DateTimeAxis range customization support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_range_datetime.png)
 
 ### Enable Business Hours
 
@@ -568,7 +466,7 @@ this.Chart.SecondaryAxis.IsInversed = true;
 
 {% endtabs %}
 
-![Inversed axis support in WinUI Chart](Axis_images/WinUI_Chart_Axis_types_inverse.png)
+![Inversed axis support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_inverse.png)
 
 ## Multiple Axes
 
@@ -640,6 +538,6 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Multiple axes support in WinUI Chart](Axis_images/winui_chart_axis_types_multipleaxis.png)
+![Multiple axes support in WinUI Chart](Axis_Images/winui_chart_axis_types_multipleaxis.png)
 
 In the above image, the [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html) is plotted based on additional X & Y axes, and [SplineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SplineSeries.html) is plotted based on the primary and secondary axes.
