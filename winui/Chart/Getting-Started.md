@@ -254,33 +254,34 @@ chart.Header = "Chart";
 {% endtabs %}  
 
 
-## Enable data markers
+## Enable data labels
 
-You can add data labels to improve the readability of the chart and it can be enabled using [DataMarker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataMarkerSeries.html#Syncfusion_UI_Xaml_Charts_DataMarkerSeries_DataMarker) property of [ChartSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataMarkerSeries.html). By default, there is no label displayed, you have to set [ShowLabel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_ShowLabel) property of [ChartDataMarker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataMarker.html) to True.
+The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataMarkerSeries.html#Syncfusion_UI_Xaml_Charts_DataMarkerSeries_ShowDataLabels) property of series can be used to enable the data labels to improve the readability of the chart. The label visibility is set to `False` by default.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
 <syncfusion:SfChart>
-	...
-  <syncfusion:ColumnSeries > 
-        <syncfusion:ColumnSeries.DataMarker>
-            <syncfusion:ChartDataMarker LabelPosition="Inner" ShowLabel="True" />
-        </syncfusion:ColumnSeries.DataMarker>
-  </syncfusion:ColumnSeries>  
-	...
+    . . . 
+    <syncfusion:ColumnSeries ShowDataLabels="True">
+    </syncfusion:ColumnSeries>
+
 </syncfusion:SfChart>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
-series.DataMarker = new ChartDataMarker (){ ShowLabel = true }; 
+SfChart chart = new SfChart();
+. . .
+ColumnSeries series = new ColumnSeries();
+series.ShowDataLabels = true;
+chart.Series.Add(series);
 
 {% endhighlight %}
 
-{% endtabs %}  
+{% endtabs %}   
 
 ## Enable legend
 
@@ -403,11 +404,13 @@ The following code example gives you the complete code of above configurations.
                                       XBindingPath="Name"
                                       YBindingPath="Height"
                                       Label="Heights"
-                                      ShowTooltip="True">
-                   <!--Add data marker to the series-->                
-                    <syncfusion:ColumnSeries.DataMarker>
-                        <syncfusion:ChartDataMarker LabelPosition="Inner" ShowLabel="True" />
-                    </syncfusion:ColumnSeries.DataMarker>               
+                                      ShowTooltip="True"
+                                      ShowDataLabels="True">
+                   <!--Add data label to the series-->     
+                        <syncfusion:ColumnSeries.DataLabelSettings>
+                            <syncfusion:CartesianDataLabelSettings Position="Inner"/>
+                        </syncfusion:ColumnSeries.DataLabelSettings>
+                    </syncfusion:ColumnSeries>               
             </syncfusion:ColumnSeries>          
 
         </syncfusion:SfChart>
@@ -453,10 +456,12 @@ namespace SfChart_GettingStarted
             series.XBindingPath = "Name";            
             series.YBindingPath = "Height";
             series.ShowTooltip = true;
-            series.Label = "Heights";      
-
-            //Setting data marker to the chart series
-            series.DataMarker = new ChartDataMarker() { ShowLabel = true };
+            series.Label = "Heights"; 
+            series.ShowDataLabels = true;
+            series.DataLabelSettings = new CartesianDataLabelSettings()
+            {
+                Position = DataLabelPosition.Inner,
+            };
 
             //Adding Series to the Chart Series Collection
             chart.Series.Add(series);
@@ -474,4 +479,3 @@ The following chart is created as a result of the previous codes.
 ![Getting Started WinUI Chart](Getting-Started_images/img3.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI)
-
