@@ -460,10 +460,12 @@ namespace SfChart_GettingStarted
             series.XBindingPath = "Name";            
             series.YBindingPath = "Height";
             series.ShowTooltip = true;
-            series.Label = "Heights";      
-
-            //Setting data marker to the chart series
-            series.DataMarker = new ChartDataMarker() { ShowLabel = true };
+            series.Label = "Heights"; 
+            series.ShowDataLabels = true;
+            series.DataLabelSettings = new CartesianDataLabelSettings()
+            {
+                Position = DataLabelPosition.Inner,
+            };
 
             //Adding Series to the Chart Series Collection
             chart.Series.Add(series);
