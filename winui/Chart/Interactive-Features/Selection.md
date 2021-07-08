@@ -11,9 +11,9 @@ documentation: ug
 
 SfChart supports selection that allows you to select a segment in a series or series itself by using [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#). 
 
-### Adding Selection Behavior to SfChart
+### Enable Selection
 
-You can create an instance [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#) and add it to the Behaviors collection.
+To enable selection, create an instance of [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#) and add it to the `Behaviors` collection.
 
 {% tabs %}
 
@@ -39,9 +39,9 @@ chart.Behaviors.Add(selection);
 
 {% endtabs %}
 
-## SegmentSelection
+## Segment Selection
 
-Segment Selection allows you to highlight a segment in a chart series. For highlighting a segment the brush color can be set using [`SelectionBrush`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SelectionBrush) property.
+Segment Selection allows you to highlight a segment in a chart series. For highlighting a segment the brush color can be set using the [`SelectionBrush`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SelectionBrush) property.
 
 **Segment Selection in ColumnSeries**
 
@@ -89,7 +89,7 @@ this.Content = chart;
 
 **Segment Selection in Linear Series**
 
-In Linear type series the segment selection can be viewed by changing the data label interior.
+In linear type series the segment selection can be viewed by changing the data label interior.
 
 The following code example demonstrates the spline series segment selection by changing the data label interior.
 
@@ -174,11 +174,9 @@ this.Content = chart;
 
 ![Series selection support in WinUI Chart](Interactive-Features_images/WinUI_chart_series_selection.png)
 
-N>By default the segment selection is true, so for selecting series you have to set the EnableSegmentSelection property to false.
-
 ## Customizing the Selection
 
-SfChart allows you to select single or multiple segment\series using [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) property property. By default, the [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) value is [Point](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SelectionType.html#Syncfusion_UI_Xaml_Charts_SelectionType_Point).
+SfChart allows you to select single or multiple segment\series using the [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) property. By default, the [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) value is [Point](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SelectionType.html#Syncfusion_UI_Xaml_Charts_SelectionType_Point). The `MultiPoint` and `MultiSeries` values of type property is used to select multiple segments and series respectively.
 
 The following code snippet demonstrates multiple segment selection.
 
@@ -189,7 +187,7 @@ The following code snippet demonstrates multiple segment selection.
 <chart:SfChart>
 . . .
     <chart:SfChart.Behaviors>
-        <chart:ChartSelectionBehavior  Type="MultiPoint"/>
+        <chart:ChartSelectionBehavior Type="MultiPoint"/>
     </chart:SfChart.Behaviors>
 
     <chart:SfChart.Series>
@@ -225,11 +223,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Selection style support in WinUI Chart](Interactive-Features_images/WinUI_charts_selected_serie_index.png)
+![Multiple Selection support in WinUI Chart](Interactive-Features_images/WinUI_charts_selected_serie_index.png)
 
 ### Changing Cursor while Selection
 
-[Cursor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Cursor) property allows to define the cursor when mouse is hovered over the segment with segment selection enabled.
+The [Cursor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Cursor) property allows to define the cursor when mouse is hovered over the segment with segment selection enabled.
 
 {% tabs %}
 
@@ -238,7 +236,7 @@ this.Content = chart;
 <chart:SfChart>
 . . . 
     <chart:SfChart.Behaviors>
-        <chart:ChartSelectionBehavior  Cursor="Hand"/>
+        <chart:ChartSelectionBehavior Cursor="Hand"/>
     </chart:SfChart.Behaviors>
 
     <chart:SfChart.Series>
@@ -296,7 +294,7 @@ The [`SelectionChanging`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 
 ### SelectionChanged
 
-The [`SelectionChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangedEventArgs_SelectedSeries) event occurs after a data point has been selected. This argument contains the following information.
+The [`SelectionChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SelectionChanged) event occurs after a data point has been selected. This argument contains the following information.
 
 * [`SelectedSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangedEventArgs_SelectedSeries) - Gets the series of the selected data point.
 * [`SelectedSegments`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangedEventArgs_SelectedSegments) - Gets the segments collection of the selected series.
