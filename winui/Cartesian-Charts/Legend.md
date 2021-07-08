@@ -9,7 +9,7 @@ documentation: ug
 
 # Legend in WinUI Chart (SfCartesianChart)
 
-The legend contains a list of series data points in the chart. The information provided in each legend item helps you to identify the corresponding series in the chart. This allows us to specify the `Label` for each series which is to be displayed in legend label.
+The legend contains a list of series data points in the chart. The information provided in each legend item helps you to identify the corresponding series in the chart. This allows us to specify the [Label](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Label) for each series which is to be displayed in legend label.
 
 {% tabs %}
 
@@ -103,7 +103,7 @@ this.Content = chart;
 
 ## Icon
 
-Legend icon represents a symbol associated with the each legend item. [`LegendIcon`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_LegendIcon) property of series is used to set the icon type for legend item. By default, the legend icon is [`SeriesType`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegendIcon.html#Syncfusion_UI_Xaml_Charts_ChartLegendIcon_SeriesType).
+Legend icon represents a symbol associated with the each legend item. [LegendIcon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_LegendIcon) property of series is used to set the icon type for legend item. By default, the legend icon is [SeriesType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegendIcon.html#Syncfusion_UI_Xaml_Charts_ChartLegendIcon_SeriesType).
 
 {% tabs %}
 
@@ -183,7 +183,7 @@ chart.Legend = new ChartLegend()
 
 ### Custom Icon
 
-Cartesian chart provides support to add custom icon for the legend using [LegendIconTemplate]() property of series as in below example.
+Cartesian chart provides support to add custom icon for the legend using [LegendIconTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_LegendIconTemplate) property of series as in below example.
 
 {% tabs %}
 
@@ -291,7 +291,7 @@ this.Content = chart;
 
 ## Item spacing
 
-[ItemMargin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ItemMargin) property of the `ChartLegend` is used to provide spacing between each legend items.
+[ItemMargin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ItemMargin) property of the [ChartLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) is used to provide spacing between each legend items.
 
 {% tabs %}
 
@@ -532,7 +532,7 @@ chart.Legend = new ChartLegend()
 
 ## Template
 
-Customize each legend item by using the `ItemTemplate` property in `ChartLegend`, as shown in the following code sample.
+Customize each legend item by using the `ItemTemplate` property in [ChartLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend), as shown in the following code sample.
 
 {% tabs %}
 

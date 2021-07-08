@@ -24,4 +24,3 @@ Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the fo
 * Axis allow you to customize the origin of the chart axis. 
 * Provides options to set padding for axis and axis visible range.
 * Multiple axes support provides a way to arrange multiple series inside the same chart area, gives more space for X and Y axis.
-* Axis can be customized with multiple levels of label by using its [MultiLevelLabels]() property. These labels are placed based on the provided start and end range values. You can add any number of labels to a chart axis.
