@@ -262,12 +262,12 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 {% highlight xaml %}
 
-<chart:SfChart>
+<syncfusion:SfChart>
     . . . 
-    <chart:ColumnSeries ShowDataLabels="True">
-    </chart:ColumnSeries>
+    <syncfusion:ColumnSeries ShowDataLabels="True">
+    </syncfusion:ColumnSeries>
 
-</chart:SfChart>
+</syncfusion:SfChart>
 
 {% endhighlight %}
 
@@ -404,13 +404,9 @@ The following code example gives you the complete code of above configurations.
                                       XBindingPath="Name"
                                       YBindingPath="Height"
                                       Label="Heights"
-                                      ShowTooltip="True">
+                                      ShowTooltip="True"
+                                      ShowDataLabels="True">
                    <!--Add data label to the series-->     
-                   <syncfusion:ColumnSeries Label="Heights" ShowTooltip="True"
-                                ShowDataLabels="True"
-                                ItemsSource="{Binding Data}"
-                                XBindingPath="Name" 
-                                YBindingPath="Height">
                         <syncfusion:ColumnSeries.DataLabelSettings>
                             <syncfusion:CartesianDataLabelSettings Position="Inner"/>
                         </syncfusion:ColumnSeries.DataLabelSettings>
@@ -483,4 +479,3 @@ The following chart is created as a result of the previous codes.
 ![Getting Started WinUI Chart](Getting-Started_images/img3.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI)
-
