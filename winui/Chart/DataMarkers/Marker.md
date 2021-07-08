@@ -9,89 +9,18 @@ documentation: ug
 
 # Data Marker in WinUI Chart
 
-Data Marker is used to mark the data points with built-in available shapes.
-
 ## Define Data Marker
 
-To enable the marker in data markers you have to set the [`ShowMarker`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_ShowMarker) property as True. By default, there is no marker displayed, you have to add the desired marker using MarkerType property.
+To enable the marker you have to set the [ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ContentTemplate) property of [CartesianDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianDataLabelSettings.html) as in the below code example:
 
-The following code example demonstrates the column series with [`Diamond`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSymbol.html) marker:
-
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<syncfusion:ColumnSeries.DataMarker>
-    <syncfusion:ChartDataMarker ShowMarker="True" MarkerInterior="#1E88E5" MarkerType="Diamond">
-    </syncfusion:ChartDataMarker>
-</syncfusion:ColumnSeries.DataMarker> 
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-ChartDataMarker datamarker = new ChartDataMarker()
-{
-    ShowMarker = true,
-    MarkerType = ChartSymbol.Diamond,
-    MarkerInterior = "#1E88E5"          
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Marker support in WinUI Chart](DataMarkers_images/marker.png)
-
-
-### Customizing Marker
-
-Chart provides support more customization for markers in data markers. 
-
-* [`MarkerHeight`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_MarkerHeight)- used to change the height of the marker.
-* [`MarkerWidth`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_MarkerWidth)- used to change the width of the marker.
-* [`MarkerInterior`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_MarkerInterior)- used to change the color of marker.
-* [`MarkerStroke`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_MarkerStroke)- used to change the stroke color of marker.
-* [`MarkerTemplate`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_MarkerTemplate)- used to customize the appearance of marker.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<syncfusion:ChartDataMarker ShowMarker="True" MarkerStroke="#0D47A1" MarkerHeight="10" MarkerWidth="10" MarkerInterior="#1E88E5" MarkerType="Ellipse">
-</syncfusion:ChartDataMarker>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-ChartDataMarker datamarker = new ChartDataMarker()
-{
-    ShowMarker = true,
-    MarkerStroke = "#0D47A1",
-    MarkerInterior = "#1E88E5",
-    MarkerHeight = 10,
-    MarkerWidth = 10,
-    MarkerType = ChartSymbol.Ellipse
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Marker customization support in WinUI Chart](DataMarkers_images/custom_marker.png)
-
-**MarkerTemplate**
-
-The following code example demonstrates how to use MarkerTemplate.
+The following code example demonstrates how to use ContentTemplate.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <Page.Resources>
-    <DataTemplate x:Key="markerTemplate">
+    <DataTemplate x:Key="contentTemplate">
         <Grid>
             <Grid Name="backgroundGrid" Width="24" Height="24" Visibility="Visible">
                 <Ellipse Fill="#1E88E5" Name="Fill" Visibility="Visible" />
@@ -124,30 +53,31 @@ The following code example demonstrates how to use MarkerTemplate.
     </DataTemplate>
 </Page.Resources>
 <Grid>
-    <chart:SfChart  Width="400" Height="300">
-    ...
-            
-        <syncfusion:ColumnSeries ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="Value">
-            <syncfusion:ColumnSeries.DataMarker>
-                    <syncfusion:ChartDataMarker ShowMarker="True" DataMarkerPosition="Top" MarkerTemplate="{StaticResource markerTemplate}">
-                    </syncfusion:ChartDataMarker>
-            </syncfusion:ColumnSeries.DataMarker>
-         </syncfusion:ColumnSeries>
+<chart:SfChart>
+. . .
+    <chart:ColumnSeries ShowDataLabels="True">
+       <chart:ColumnSeries.DataLabelSettings>
+           <chart:CartesianDataLabelSettings Position="Default" ContentTemplate="{StaticResource contentTemplate}"/>
+        </chart:ColumnSeries.DataLabelSettings>
+    </chart:ColumnSeries>
+</chart:SfCartesianChart>
 
-    ...
-    </chart:SfChart>
 </Grid>
         
 {% endhighlight %}
 
 {% highlight c# %}
 
-ChartDataMarker datamarker = new ChartDataMarker()
+SfChart chart = new SfChart();
+ColumnSeries series = new ColumnSeries();
+. . .
+series.DataLabelSettings = new CartesianDataLabelSettings()
 {
-    ShowMarker  = true,
-    DataMarkerPosition = DataMarkerPosition.Top,
-    MarkerTemplate = chart.Resources["markerTemplate"] as DataTemplate,
+    Position = DataLabelPosition.Default,
+    ContentTemplate = chart.Resources["contentTemplate"] as DataTemplate
 };
+
+chart.Series.Add(series);
 
 {% endhighlight %}
 
