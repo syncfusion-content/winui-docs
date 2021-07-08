@@ -405,10 +405,16 @@ The following code example gives you the complete code of above configurations.
                                       YBindingPath="Height"
                                       Label="Heights"
                                       ShowTooltip="True">
-                   <!--Add data marker to the series-->                
-                    <syncfusion:ColumnSeries.DataMarker>
-                        <syncfusion:ChartDataMarker LabelPosition="Inner" ShowLabel="True" />
-                    </syncfusion:ColumnSeries.DataMarker>               
+                   <!--Add data label to the series-->     
+                   <syncfusion:ColumnSeries Label="Heights" ShowTooltip="True"
+                                ShowDataLabels="True"
+                                ItemsSource="{Binding Data}"
+                                XBindingPath="Name" 
+                                YBindingPath="Height">
+                        <syncfusion:ColumnSeries.DataLabelSettings>
+                            <syncfusion:CartesianDataLabelSettings Position="Inner"/>
+                        </syncfusion:ColumnSeries.DataLabelSettings>
+                    </syncfusion:ColumnSeries>               
             </syncfusion:ColumnSeries>          
 
         </syncfusion:SfChart>
