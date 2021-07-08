@@ -9,56 +9,58 @@ documentation: ug
 
 # Data Label in WinUI Chart
 
-Data points can be easily annotated with labels to help improve the readability of data. 
+Data points can be easily annotated with labels to improve the readability of data. 
 
 ## Define Data Label 
 
-To enable the Label in data markers you have to set the [`ShowLabel`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_ShowLabel) property of [`ChartDataMarker`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarker.html). 
+To enable the label in data markers you have to set the [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataMarkerSeries.html#Syncfusion_UI_Xaml_Charts_DataMarkerSeries_ShowDataLabels) property of series.
 
-[`SegmentLabelContent`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_SegmentLabelContent) property allows you to define the value to be displayed as data marker label.
-
-The following code example demonstrates about define the value to be displayed as data marker label.
+To customize the content of data labels, need to define [DataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_DataLabelSettings) of series and set [Context](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Context) property of [CartesianDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianDataLabelSettings.html) to define the value to be displayed as label content.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:ChartDataMarker SegmentLabelContent="YValue" ShowLabel="True"/>
+<chart:SfChart>
+. . .
+<chart:ColumnSeries ShowDataLabels="True">
+    <chart:ColumnSeries.DataLabelSettings>
+        <chart:CartesianDataLabelSettings Context="YValue"/>
+    </chart:ColumnSeries.DataLabelSettings>
+</chart:ColumnSeries>
+
+</chart:SfChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
         
-ChartDataMarker datamarker = new ChartDataMarker()
+SfChart chart = new SfChart();
+ColumnSeries series = new ColumnSeries();
+. . .
+series.DataLabelSettings = new CartesianDataLabelSettings()
 {
-   ShowLabel = true,
-   SegmentLabelContent = LabelContent.YValue
+    Context = LabelContext.YValue
 };
+
+chart.Series.Add(series);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-| SegmentLabelContent values | Description | Output |
-|---|--|---|
-| DateTime | Displays LabelContent.DateTime value | ![ DateTime in DataMarker](DataMarkers_images/labelcontent_datetime.png) |
-|LabelContentPath | Displays the y value|![ LabelContentPath in DataMarker](DataMarkers_images/labelcontent_labelcontentpath.png)|
-| Percentage | Displays the percentage value of series point among other points |![ Percentage in DataMarker](DataMarkers_images/labelcontent_percentage.png) |
-| XValue | Displays the X value of series point|![ XValue in DataMarker](DataMarkers_images/labelcontent_xvalue.png) |
-| YValue | Displays the Y value of series point| ![ YValue in DataMarker](DataMarkers_images/labelcontent_yvalue.png) |
+## Customization
 
-## Customizing Labels
+The following properties are used to customize the data label.
 
-The following properties are used to customize the data marker label.
-
-* [`BorderBrush`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_BorderBrush)- used to change the border color.
-* [`BorderThickness`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_BorderThickness)- used to change the thickness of the border.
-* [`Margin`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_Margin)- used to change the margin size for label.
-* [`FontStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_FontStyle)-  used to change font style of the label.
-* [`FontSize`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_FontSize)-  used to change font size of the label.
-* [`Foreground`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_Foreground)- used to change the color of the label.
-* [`FontFamily`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_FontFamily)-  used to change the font family of the label.
-* [`Background`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_Background)- used to change the label background color.
+* [BorderBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_BorderBrush)- used to change the border color.
+* [BorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_BorderThickness)- used to change the thickness of the border.
+* [Margin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Margin)- used to change the margin size for label.
+* [FontStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontStyle)-  used to change font style of the label.
+* [FontSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontSize)-  used to change font size of the label.
+* [Foreground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Foreground)- used to change the color of the label.
+* [FontFamily](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontFamily)-  used to change the font family of the label.
+* [Background](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Background)- used to change the label background color.
 
 The following code example demonstrates the customization of label using the above properties:
 
@@ -66,28 +68,40 @@ The following code example demonstrates the customization of label using the abo
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries.DataMarker>
-    <syncfusion:ChartDataMarker LabelPosition="Outer" Foreground="White" FontSize="11" FontFamily="Calibri" BorderBrush="Black" BorderThickness="1" Margin="1" FontStyle="Italic" Background="#1E88E5" ShowLabel="True">                        
-    </syncfusion:ChartDataMarker>
-</syncfusion:ColumnSeries.DataMarker>
+<chart:SfChart>
+. . .
+<chart:ColumnSeries ShowDataLabels="True">
+<chart:ColumnSeries.DataLabelSettings>
+    <chart:CartesianDataLabelSettings Position="Outer" Foreground="White" 
+                                      FontSize="11" FontFamily="Calibri" 
+                                      BorderBrush="Black" BorderThickness="1" 
+                                      Margin="1" FontStyle="Italic" Background="#1E88E5" />
+</chart:ColumnSeries.DataLabelSettings>
+
+</chart:ColumnSeries>
+</chart:SfChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ChartDataMarker datamarker = new ChartDataMarker()
-
-        ShowLabel = true,
-        LabelPosition = DataMarkerLabelPosition.Outer,
-        Foreground = new SolidColorBrush(Colors.White),
-        BorderBrush = new SolidColorBrush(Colors.Black),
-        Background = "#1E88E5",
-        BorderThickness = new Thickness(1),
-        Margin = new Thickness(1),
-        FontStyle = FontStyles.Italic,
-        FontFamily = new FontFamily("Calibri"),
-        FontSize = 11
+SfChart chart = new SfChart();
+ColumnSeries series = new ColumnSeries();
+. . .
+series.DataLabelSettings = new CartesianDataLabelSettings()
+{
+    Position = DataLabelPosition.Outer,
+    Foreground = new SolidColorBrush(Colors.White),
+    BorderBrush = new SolidColorBrush(Colors.Black),
+    Background = new SolidColorBrush(Colors.LightBlue),
+    BorderThickness = new Thickness(1),
+    Margin = new Thickness(1),
+    FontStyle = FontStyle.Italic,
+    FontFamily = new FontFamily("Calibri"),
+    FontSize = 11
 };
+
+chart.Series.Add(series);
 
 
 {% endhighlight %}
@@ -96,22 +110,24 @@ ChartDataMarker datamarker = new ChartDataMarker()
 
 ![DataMarker label content customization support in WinUI Chart](DataMarkers_images/datamarker_custom_Label.png)
 
-## Label Template
+## Content Template
 
-The default appearance of the label can be customized using [`LabelTemplate`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_LabelTemplate) property as in the below code example:
+The appearance of the label can be customized using [ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ContentTemplate) property of [CartesianDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianDataLabelSettings.html) as in the below code example:
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<Page.Resources>
-    <DataTemplate x:Key="dataMarkerTemplate">
-        <StackPanel Orientation="Vertical">               
+<chart:SfChart>
+. . .
+<chart:SfChart.Resources>
+    <DataTemplate x:Key="dataLabelTemplate">
+        <StackPanel Orientation="Vertical">
             <Path Grid.Row="0"  Stretch="Uniform" Fill="#1E88E5"                              
-                       Width="15" Height="15" Margin="0,0,0,0"                              
-                       RenderTransformOrigin="0.5,0.5"
-                       Data="M22.5,15.8899993896484L37.5,                                
-                       30.8899993896484 7.5,30.8899993896484 22.5,15.8899993896484z">
+               Width="15" Height="15" Margin="0,0,0,0"                              
+               RenderTransformOrigin="0.5,0.5"
+               Data="M22.5,15.8899993896484L37.5,                                
+               30.8899993896484 7.5,30.8899993896484 22.5,15.8899993896484z">
                 <Path.RenderTransform>
                     <TransformGroup>
                         <TransformGroup.Children>
@@ -124,50 +140,41 @@ The default appearance of the label can be customized using [`LabelTemplate`](ht
             <TextBlock Grid.Row="1" Text="{Binding}" FontSize="11" Foreground="Black"></TextBlock>
         </StackPanel>
     </DataTemplate>
-</Page.Resources>
+</chart:SfChart.Resources>
+. . . 
+<chart:ColumnSeries ShowDataLabels="True">
+    <chart:ColumnSeries.DataLabelSettings>
+        <chart:CartesianDataLabelSettings Position="Outer" ContentTemplate="{StaticResource dataLabelTemplate}"/>
+    </chart:ColumnSeries.DataLabelSettings>
+. . .
+</chart:ColumnSeries>
 
-<Grid>
-   <chart:SfChart Width="400" Height="300">
-    ...
-       <syncfusion:ColumnSeries ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="Value">
-           <syncfusion:ColumnSeries.DataMarker>
-               <syncfusion:ChartDataMarker ShowLabel="True" LabelTemplate="{StaticResource dataMarkerTemplate}"
-                   LabelPosition="Outer">
-               </syncfusion:ChartDataMarker>
-           </syncfusion:ColumnSeries.DataMarker>
-       </syncfusion:ColumnSeries>
-   ...
-   </chart:SfChart>
-</Grid>
+</chart:SfChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ColumnSeries series = new ColumnSeries()
+SfChart chart = new SfChart();
+ColumnSeries series = new ColumnSeries();
+. . .
+series.DataLabelSettings = new CartesianDataLabelSettings()
 {
-    ItemsSource = new ViewModel().Demands,
-    XBindingPath = "Category",
-    YBindingPath = "Value",
+    Position = DataLabelPosition.Outer,
+    ContentTemplate = chart.Resources["dataLabelTemplate"] as DataTemplate
 };
 
-ChartDataMarker datamarker = new ChartDataMarker()
-{
-    ShowLabel = true,
-    LabelPosition = DataMarkerLabelPosition.Outer,
-    LabelTemplate = this.Resources["dataMarkerTemplate"] as DataTemplate
-};
-series.DataMarker = datamarker;
+chart.Series.Add(series);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![LabelTemplate support for datamarkers in WinUI Chart](DataMarkers_images/datamarker_labeltemplate.png)
+![ContentTemplate support for datamarkers in WinUI Chart](DataMarkers_images/datamarker_labeltemplate.png)
 
-## Label Format
+## Format
 
-[`SegmentLabelFormat`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_SegmentLabelFormat) property allows you to provide formatting for the labels.
+[Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Format) property allows you to provide formatting for the labels.
 
 The following code example demonstrates the y value having three decimal digits.
 
@@ -175,48 +182,68 @@ The following code example demonstrates the y value having three decimal digits.
 
 {% highlight xaml %}
 
-<syncfusion:ChartDataMarker ShowLabel="True" SegmentLabelFormat="#.000">
-</syncfusion:ChartDataMarker>
+<chart:SfChart>
+. . .
+<chart:ColumnSeries ShowDataLabels="True">
+    <chart:ColumnSeries.DataLabelSettings>
+        <chart:CartesianDataLabelSettings Format="#.000" />
+    </chart:ColumnSeries.DataLabelSettings>
+
+</chart:ColumnSeries>
+</chart:SfChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ChartDataMarker datamarker = new ChartDataMarker()
+SfChart chart = new SfChart();
+ColumnSeries series = new ColumnSeries();
+. . .
+series.DataLabelSettings = new CartesianDataLabelSettings()
 {
-    ShowLabel = true,
-    SegmentLabelFormat = "#.000"
+    Format = "#.000"
 };
+
+chart.Series.Add(series);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-In the following image, you can see the decimal position will be rounded off to two digits by default.
-
 ![DataMarkers label format support in WinUI Chart](DataMarkers_images/datamarker_labelformat.png)
 
-## Label Rotation
+## Rotation
 
-[`LabelRotationAngle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_LabelRotationAngle) property is used to define the angle to which the label has to rotate. The following code demonstrates the label rotating angle.
+[Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Rotation) property is used to define the angle to which the label has to rotate. The following code demonstrates the label rotating angle.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries.DataMarker>
-     <syncfusion:ChartDataMarker LabelPosition="Outer" LabelRotationAngle="45" ShowLabel="True"/>
-</syncfusion:ColumnSeries.DataMarker>
+<chart:SfChart>
+. . .
+<chart:ColumnSeries ShowDataLabels="True">
+    <chart:ColumnSeries.DataLabelSettings>
+        <chart:CartesianDataLabelSettings Rotation="45" Position="Outer" />
+    </chart:ColumnSeries.DataLabelSettings>
+</chart:ColumnSeries>
+</chart:SfChart>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
-ChartDataMarker datamarker = new ChartDataMarker()
+SfChart chart = new SfChart();
+ColumnSeries series = new ColumnSeries();
+. . .
+series.DataLabelSettings = new CartesianDataLabelSettings()
 {
-        ShowLabel = true,
-        LabelRotationAngle = 45,
-        LabelPosition = DataMarkerLabelPosition.Outer          
+    Rotation = 45,
+    Position = DataLabelPosition.Outer,
 };
+
+chart.Series.Add(series);
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -225,13 +252,12 @@ ChartDataMarker datamarker = new ChartDataMarker()
 
 ## Connector Line
 
-This feature is used to connect label and data point using a line. It can be enabled for any chart types but this is often used with Pie and Doughnut chart types. You can add connector line for the data markers using [`ShowConnectorLine`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_ShowConnectorLine) property. 
+This feature is used to connect label and data point using a line. It can be enabled for any chart types but this is often used with Pie and Doughnut chart types. You can add connector line for the data markers using [ShowConnectorLine](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ShowConnectorLine) property. 
 
-The connector line can be customized using the below properies.
+The connector line can be customized using the below properties.
 
-* [`ConnectorHeight`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_ConnectorHeight)
-* [`ConnectorLineStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_ConnectorLineStyle) 
-* [`ConnectorRotationAngle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_ConnectorRotationAngle)
+* [ConnectorHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ConnectorHeight)
+* [ConnectorLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ConnectorLineStyle) 
 
 The following code example shows the customization options for connector line:
 
@@ -239,46 +265,42 @@ The following code example shows the customization options for connector line:
 
 {% highlight xaml %}
 
-<Page.Resources>
+<chart:SfChart>
+. . .
+
+<chart:SfChart.Resources>
     <Style TargetType="Path" x:Key="lineStyle">
         <Setter Property="StrokeDashArray" Value="10,7,5"/>
         <Setter Property="Stroke" Value="Black"/>
     </Style>
-</Page.Resources>
-<Grid>
-    <chart:SfChart Width="400" Height="400">
-     ...
-        <syncfusion:PieSeries ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="FloatValue"  LabelPosition="OutsideExtended">
-            <syncfusion:PieSeries.DataMarker>
-                <syncfusion:ChartDataMarker ShowLabel="True" ConnectorLineStyle="{StaticResource lineStyle}" ShowConnectorLine="True"  LabelPosition="Outer">
-            </syncfusion:ChartDataMarker>
-            </syncfusion:PieSeries.DataMarker>
-        </syncfusion:PieSeries>
-    ...
-    </chart:SfChart>
-</Grid>
+</chart:SfChart.Resources>
+. . .
+<chart:PieSeries ShowDataLabels="True">
+    <chart:PieSeries.DataLabelSettings>
+        <chart:CircularDataLabelSettings Position="Outer" 
+                                         ShowConnectorLine="True"
+                                         ConnectorLineStyle="{StaticResource lineStyle}" />
+    </chart:PieSeries.DataLabelSettings>
+        
+</chart:PieSeries>
+
+</chart:SfChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-PieSeries series = new PieSeries()
+SfChart chart = new SfChart();
+PieSeries series = new PieSeries();
+. . .
+series.DataLabelSettings = new CircularDataLabelSettings()
 {
-        ItemsSource = new ViewModel().Demands,
-        XBindingPath = "Category",
-        YBindingPath = "FloatValue",
-        LabelPosition = CircularSeriesLabelPosition.OutsideExtended,
+    Position = DataLabelPosition.Outer,
+    ShowConnectorLine = true,
+    ConnectorLineStyle = chart.Resources["lineStyle"] as Style,
 };
 
-ChartDataMarker datamarker = new ChartDataMarker()
-{
-        ShowLabel = true,
-        ShowConnectorLine = true,
-        UseSeriesPalette = true,
-        ConnectorLineStyle = this.Resources["lineStyle"] as Style,
-        LabelPosition = DataMarkerLabelPosition.Outer,
-};
-series.DataMarker = datamarker;
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -286,135 +308,40 @@ series.DataMarker = datamarker;
 
 ![Connector line for datamarkers support in WinUI Chart](DataMarkers_images/connectorline.png)
 
-**Connector Type**
-
-[`ConnectorType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_ConnectorType) property in CicularSeriesBase is used to specify the connector line type such as [`Line`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ConnectorMode.html) or [`Bezier`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ConnectorMode.html) or [`StraightLine`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ConnectorMode.html). This property is only for circular series such as [`PieSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.PieSeries.html) and [`DoughnutSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html).
-
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:PieSeries ItemsSource="{Binding Performance}" XBindingPath="ServerLoad"
-    YBindingPath="Server1" EnableSmartLabels="True" ConnectorType="Bezier" LabelPosition="OutsideExtended">
-        <chart:PieSeries.DataMarker>
-            <chart:ChartDataMarker HorizontalAlignment="Center" VerticalAlignment="Center" ShowConnectorLine="True" ConnectorHeight="80" ShowLabel="True"/>
-        </chart:PieSeries.DataMarker>
-</chart:PieSeries>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-PieSeries series = new PieSeries()
-{
-        ItemsSource = new ServerViewModel().Performance,
-        XBindingPath = "ServerLoad",
-        YBindingPath = "Server1",
-        EnableSmartLabels = true,
-        ConnectorType = ConnectorMode.Bezier,
-        LabelPosition = CircularSeriesLabelPosition.OutsideExtended,
-};
-
-ChartDataMarker datamarker = new ChartDataMarker()
-{
-        ShowLabel = true,
-        ShowConnectorLine = true,
-        HorizontalAlignment = HorizontalAlignment.Center,
-        VerticalAlignment = VerticalAlignment.Center,
-        ConnectorHeight = 80
-};
-series.DataMarker = datamarker;
-
-{% endhighlight %}
-
-{% endtabs %}
-
- **Line** 
- 
- ![Connector line with Line type in WinUI Chart](DataMarkers_images/connectortype_line.png) 
-
- **Bezier**
- 
-![Connector line with Bezier type in WinUI Chart](DataMarkers_images/connectortype_bezier.png)
-
-**Straight Line**
-
-![Connector line with StraightLine type in WinUI Chart](DataMarkers_images/connectortype_straightline.png)
-
 ## Applying Series Brush
 
-[`UseSeriesPalette`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_UseSeriesPalette) property is used to set the interior of the series to the data marker background. 
+[UseSeriesPalette](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartDataMarkerBase.html#Syncfusion_UI_Xaml_Charts_ChartDataMarkerBase_UseSeriesPalette) property is used to set the interior of the series to the data marker background. 
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:ChartDataMarker ShowLabel="True" UseSeriesPalette="True">
-</syncfusion:ChartDataMarker>
+<chart:SfChart>
+. . .
+<chart:ColumnSeries ShowDataLabels="True">
+    <chart:ColumnSeries.DataLabelSettings>
+        <chart:CartesianDataLabelSettings UseSeriesPalette="True"/>
+    </chart:ColumnSeries.DataLabelSettings>
+</chart:ColumnSeries>
+
+</chart:SfChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ChartDataMarker datamarker = new ChartDataMarker()
+SfChart chart = new SfChart();
+ColumnSeries series = new ColumnSeries();
+. . .
+series.DataLabelSettings = new CartesianDataLabelSettings()
 {
-    ShowLabel = true,
-    UseSeriesPalette = true
+    UseSeriesPalette = true,
 };
+
+chart.Series.Add(series);
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Applying UseSeriesPalette in WinUI Chart](DataMarkers_images/useseriespalette_true.png)
-
-## Smart Labels
-
-When you have more datapoints in Pie or Doughnut series, the data marker labels might get overlap with each other. Chart provides built-in support to avoid these overlapping by using [`EnableSmartLabels`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_EnableSmartLabels) property.
-
-The following code example demonstrates the EnableSmartLabels property:
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:PieSeries ItemsSource="{Binding CategoricalData}" ConnectorType="Bezier" XBindingPath="Year"
-    YBindingPath="Plastic" EnableSmartLabels="True" LabelPosition="OutsideExtended" ExplodeAll="True" ExplodeRadius="3">
-        <chart:PieSeries.DataMarker>
-            <chart:ChartDataMarker ShowLabel="True" HorizontalAlignment="Center" VerticalAlignment="Center" ShowConnectorLine="True">
-            </chart:ChartDataMarker>
-        </chart:PieSeries.DataMarker>
-</chart:PieSeries>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-PieSeries series = new PieSeries()
-{
-        ItemsSource = new ViewModel().CategoricalData,
-        XBindingPath = "Year",
-        YBindingPath = "Plastic",
-        EnableSmartLabels = true,
-        ExplodeAll = true,
-        ExplodeRadius = 3,
-        LabelPosition = CircularSeriesLabelPosition.OutsideExtended,
-};
-
-ChartDataMarker datamarker = new ChartDataMarker()
-{
-        ShowLabel = true,
-        ShowConnectorLine = true,
-        UseSeriesPalette = true,
-        HorizontalAlignment = HorizontalAlignment.Center,
-        VerticalAlignment = VerticalAlignment.Center
-};
-series.DataMarker = datamarker
-{% endhighlight %}
-
-{% endtabs %}
-
-![Smart labels for datamarkers in WinUI Chart](DataMarkers_images/datamarker_smartlabel.png)
-
-N> For circular series, the data marker position can be changed to [`Inside`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html), [`Outside`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html) or [`OutsideExtended`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html) using the [`LabelPosition`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_LabelPosition) property.
