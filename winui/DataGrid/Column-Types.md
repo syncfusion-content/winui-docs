@@ -384,17 +384,23 @@ public class CurrencyFormatConverter : IValueConverter
     <local:CurrencyFormatConverter x:Key="currencyFormatConverter" />
 </Page.Resources>
 
-<syncfusion:SfDataGrid x:Name="dataGrid"
-                       AllowEditing="True"
-                       AutoGenerateColumns="False"
-                       ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridNumericColumn DisplayBinding="{Binding UnitPrice,
-                                                               Converter={StaticResource currencyFormatConverter}}"
-                                      HeaderText="Unit Price"
-                                      MappingName="UnitPrice" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
+                     AllowEditing="True"
+                     ItemsSource="{Binding Orders}"
+                     AutoGenerateColumns="False">
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn  MappingName="OrderID" HeaderText="Order ID" />
+        <dataGrid:GridTextColumn  MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridTextColumn  MappingName="CustomerName" HeaderText="Customer Name" />
+        <dataGrid:GridTextColumn  MappingName="ShipCity" HeaderText="Ship City" />
+        <dataGrid:GridTextColumn  MappingName="Country"/>
+        <dataGrid:GridTextColumn DisplayBinding="{Binding UnitPrice,
+                                                           Converter={StaticResource currencyFormatConverter}}"
+                                  HeaderText="Unit Price"
+                                  MappingName="UnitPrice" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -403,15 +409,14 @@ When column is auto-generated, you can set the `Converter` by handling `AutoGene
 
 {% tabs %}
 {% highlight c# %}
-this.dataGrid.AutoGeneratingColumn += DataGrid_AutoGeneratingColumn;
+this.sfDataGrid.AutoGeneratingColumn += SfDataGrid_AutoGeneratingColumn;
 
-private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Grid.AutoGeneratingColumnArgs e)
+private void sfDataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {
-
     if (e.Column.MappingName == "UnitPrice")
     {
 
-        if (e.Column is GridNumericColumn)
+        if (e.Column is GridTextColumn)
         {
             e.Column = new GridTextColumn() { MappingName = "UnitPrice", HeaderText = "Unit Price" };
         }
