@@ -385,7 +385,7 @@ The following code example gives you the complete code of above configurations.
             <Model:ChartViewModel/>
         </chart:SfCartesianChart.DataContext>
         
-        <!--Initialize the horizontal axis for SfChart-->
+        <!--Initialize the axis for chart-->
         <chart:SfCartesianChart.PrimaryAxis>
             <chart:CategoryAxis Header="Names"/>
         </chart:SfCartesianChart.PrimaryAxis>
@@ -393,7 +393,7 @@ The following code example gives you the complete code of above configurations.
             <chart:NumericalAxis Header="Height(in cm)"/>
         </chart:SfCartesianChart.SecondaryAxis>
 
-        <!--Initialize the series for SfChart-->
+        <!--Initialize the series for chart-->
         <chart:ColumnSeries Label="Heights" ShowTooltip="True"
                                 ShowDataLabels="True"
                                 ItemsSource="{Binding Data}"
@@ -422,19 +422,19 @@ namespace SfChart_GettingStarted
             
             SfCartesianChart chart = new SfCartesianChart() { Header = "Height Comparison", Height = 300, Width = 500 };
 
-            //Adding horizontal axis to the Cartesian chart 
+            //Adding horizontal axis to the chart 
             CategoryAxis primaryAxis = new CategoryAxis();
             primaryAxis.Header = "Name";
             primaryAxis.FontSize = 14;
             chart.PrimaryAxis = primaryAxis;
 
-            //Adding vertical axis to the Cartesian chart 
+            //Adding vertical axis to the chart 
             NumericalAxis secondaryAxis = new NumericalAxis();
             secondaryAxis.Header = "Height(in cm)";
             secondaryAxis.FontSize = 14;
             chart.SecondaryAxis = secondaryAxis;
 
-            //Adding Legends for the Cartesian chart
+            //Adding legend for the chart
             ChartLegend legend = new ChartLegend();
             chart.Legend = legend;
 
@@ -451,7 +451,7 @@ namespace SfChart_GettingStarted
                 Position = DataLabelPosition.Inner,
             };
 
-            //Adding Series to the Cartesian chart Series Collection
+            //Adding series to the chart series collection
             chart.Series.Add(series);
             this.Content = chart;
         }
