@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization and Formatting in WinUI Calendar control | Syncfusion
+title: Localization and Formatting in WinUI Calendar | Syncfusion
 description: Learn here all about how to localize and customize formats in Calendar (SfCalendar) control, its elements, and more.
 platform: WinUI
 control: SfCalendar
