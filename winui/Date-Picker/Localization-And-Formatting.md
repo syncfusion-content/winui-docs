@@ -131,7 +131,7 @@ You can customize the format of the date, month and year fields in the spinner o
 {% highlight xaml %}
 
 <editor:SfDatePicker HorizontalAlignment="Center"
-                    VerticalAlignment="Top"
+                    VerticalAlignment="Center"
                     DayFormat="{}{day.integer}"
                     MonthFormat="{}{month.full}"
                     YearFormat="{}{year.abbreviated}"
