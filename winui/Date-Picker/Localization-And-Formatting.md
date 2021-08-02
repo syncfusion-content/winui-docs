@@ -102,19 +102,19 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change editor display format
 
- You can edit and display the selected date with various formatting like date, month and year formats by using the [`FormatString`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_FormatString) property. The default value of `FormatString` property is `d`.
+ You can edit and display the selected date with various formatting like date, month and year formats by using the [`DisplayDateFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DisplayDateFormat) property. The default value of `DisplayDateFormat` property is `d`.
 
 {% tabs %}
 {% highlight xaml %}
 
 <editors:SfDatePicker x:Name="sfDatePicker" 
-                      FormatString="M"/>
+                      DisplayDateFormat="M"/>
 
 {% endhighlight  %}
 {% highlight C# %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
-sfDatePicker.FormatString= "M";
+sfDatePicker.DisplayDateFormat= "M";
 
 {% endhighlight  %}
 {% endtabs %}
@@ -152,7 +152,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 By default ‘Mask’ editing is enabled, which ensure that it contains only valid value. As soon as in input is given, the value is validated and correction is done immediately. Once input is completed for a field, cursor moves to next field automatically.
 
-Based on the `FormatString` and your input values, date, month and year field values are automatically corrected. 
+Based on the `DisplayDateFormat` and your input values, date, month and year field values are automatically corrected. 
 
 For example,
 
@@ -183,7 +183,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Edit date using free form editing
 
-If you want to perform the validation after the user completely entering their date inputs, use the [`EditMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_EditMode) property value as `Normal`. Then the entered date value is validated with the `FormatString` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the previously selected date value sets to `SelectedDate` property.
+If you want to perform the validation after the user completely entering their date inputs, use the [`EditMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_EditMode) property value as `Normal`. Then the entered date value is validated with the `DisplayDateFormat` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `DisplayDateFormat` property, the previously selected date value sets to `SelectedDate` property.
 
 {% tabs %}
 {% highlight xaml %}

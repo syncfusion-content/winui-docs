@@ -171,15 +171,15 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Cancel a time that is being changed
 
-The [`TimeChanging`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_TimeChanging) event will be triggered as soon as a date is selected but before [`SelectedTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_SelectedTime) property is updated. If the change is considered invalid, it can be canceled. The `TimeChanging` event contains the following properties.
+The [`SelectedTimeChanging`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_SelectedTimeChanging) event will be triggered as soon as a date is selected but before [`SelectedTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_SelectedTime) property is updated. If the change is considered invalid, it can be canceled. The `SelectedTimeChanging` event contains the following properties.
 
 * `OldTime` - Gets a time which is previously selected.
 * `NewTime` - Gets a time which is currently selected.
 * `Cancel` - Gets or sets whether to cancel the selected time value update.
 
-Users are restricted to select a blackout time from dropdown, however user can give text input through editor. As selecting a blackout time leads to crash, we can cancel the change using `TimeChanging` event.
+Users are restricted to select a blackout time from dropdown, however user can give text input through editor. As selecting a blackout time leads to crash, we can cancel the change using `SelectedTimeChanging` event.
 
-N> `TimeChanging` event is called before the [`TimeChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_TimeChanged) event when a time is selected.
+N> `SelectedTimeChanging` event is called before the [`SelectedTimeChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_SelectedTimeChanged) event when a time is selected.
 
 {% tabs %}
 {% highlight XAML %}
@@ -190,7 +190,7 @@ N> `TimeChanging` event is called before the [`TimeChanged`](https://help.syncfu
 {% highlight C# %}
 
 SfTimePicker sfTimePicker = new SfTimePicker();
-sfTimePicker.TimeChanging += SfTimePicker_TimeChanging;
+sfTimePicker.SelectedTimeChanging += SfTimePicker_TimeChanging;
 
 {% endhighlight %}
 {% endtabs %}

@@ -125,14 +125,14 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change date display format
 
-You can use different date formats such as abbreviated or full name for a day, month, week names or header name of month and year by using the [DateFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_DateFormat), [MonthFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MonthFormat), [DayOfWeekFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_DayOfWeekFormat) and [MonthHeaderFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MonthHeaderFormat) properties.
+You can use different date formats such as abbreviated or full name for a day, month, week names or header name of month and year by using the [DayFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_DayFormat), [MonthFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MonthFormat), [DayOfWeekFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_DayOfWeekFormat) and [MonthHeaderFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MonthHeaderFormat) properties.
 
 N> Refer [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.datetimeformatting.datetimeformatter?view=winrt-19041) page to get more date formatting.
 
 {% tabs %}
 {% highlight xaml %}
 
-<calendar:SfCalendar DateFormat="{}{day.integer(2)}"
+<calendar:SfCalendar DayFormat="{}{day.integer(2)}"
                      MonthFormat="{}{month.full}"
                      DayOfWeekFormat="{}{dayofweek.abbreviated(3)}"
                      MonthHeaderFormat="{}{month.abbreviated} {year.abbreviated}‎"
@@ -142,7 +142,7 @@ N> Refer [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.gl
 {% highlight C# %}
 
 SfCalendar sfCalendar = new SfCalendar();
-sfCalendar.DateFormat = "{day.integer(2)}";
+sfCalendar.DayFormat = "{day.integer(2)}";
 sfCalendar.MonthFormat = "{month.full}";
 sfCalendar.DayOfWeekFormat = "{dayofweek.abbreviated(3)}";
 sfCalendar.MonthHeaderFormat = "{month.abbreviated} {year.abbreviated}‎";

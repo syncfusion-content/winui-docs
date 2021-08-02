@@ -24,7 +24,7 @@ You can customize the UI of dropdown button by using the [`DropDownButtonTemplat
 
 <editors:SfTimePicker
     x:Name="sfTimePicker"
-    PlaceHolderText="pick a travel time">
+    PlaceholderText="pick a travel time">
     <editors:SfTimePicker.DropDownButtonTemplate>
         <DataTemplate>
             <Grid>
