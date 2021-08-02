@@ -102,51 +102,55 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change editor display format
 
- You can edit and display the selected date with various formatting like date, month and year formats by using the [`DisplayDateFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DisplayDateFormat) property. The default value of `DisplayDateFormat` property is `d`.
+You can edit and display the selected date with various formatting like date, month and year formats by using the [`DisplayDateFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DisplayDateFormat) property. The default value of `DisplayDateFormat` property is `d`.
 
 {% tabs %}
 {% highlight xaml %}
 
 <editors:SfDatePicker x:Name="sfDatePicker" 
-                      DisplayDateFormat="M"/>
+                      DisplayDateFormat="MM/dd" />
 
 {% endhighlight  %}
 {% highlight C# %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
-sfDatePicker.DisplayDateFormat= "M";
+sfDatePicker.DisplayDateFormat= "MM/dd";
 
 {% endhighlight  %}
 {% endtabs %}
 
-![Changing Month Format in WinUI DatePicker](Getting-Started_images/winui-datepicker-month-format.png)
+![Applying only date and month format in WinUI DatePicker](Getting-Started_images/winui-datepicker-displaydateformat.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
-## Change date format for Spinner
+## Change the field value format in Spinner
 
-You can allow the user to select the pair of date, month and year spinner or any single spinner cell from the dropdown date spinner by using the [`DropDownFormatString`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DropDownFormatString) property. The default value of `DropDownFormatString` property is `d`.
+You can customize the format of the date, month and year fields in the spinner of the `DatePicker` control by using the [`DayFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DayFormat), [`MonthFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MonthFormat) and [`YearFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_YearFormat) properties. By default, the value of `DayFormat` property is `{}{day.integer}`, the value `MonthFormat` property is `{}{month.abbreviated}` and the value of `YearFormat` property is `{}{year.full}`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfDatePicker x:Name="sfDatePicker" 
-                      DropDownFormatString="dd/MM"/>
+<editor:SfDatePicker HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    DayFormat="{}{day.integer}"
+                    MonthFormat="{}{month.full}"
+                    YearFormat="{}{year.abbreviated}"
+                    />
 
 {% endhighlight  %}
 {% highlight C# %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
-sfDatePicker.DropDownFormatString = "dd/MM";
+sfDatePicker.DayFormat = "{day.integer}";
+sfDatePicker.MonthFormat = "{month.full}";
+sfDatePicker.YearFormat = "{year.abbreviated}";
+sfDatePicker.HorizontalAlignment = HorizontalAlignment.Center;
+sfDatePicker.VerticalAlignment = VerticalAlignment.Center;
 
 {% endhighlight  %}
 {% endtabs %}
 
-![WinUI DatePicker displays Date and Month Spinner](Getting-Started_images/winui-datepicker-spinner.png)
-
-Here, you can only able to select the date and month value from the dropdown spinner.
-
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
+![WinUI DatePicker displays Date and Month Spinner](Getting-Started_images/winui-datepicker-customformats.png)
 
 ## Edit date using mask mode
 
