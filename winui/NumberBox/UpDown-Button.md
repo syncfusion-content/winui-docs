@@ -64,4 +64,4 @@ sfNumberBox.UpDownPlacementMode = NumberBoxUpDownPlacementMode.Inline;
 {% endhighlight %}
 {% endtabs %}
 
-![UpDown Placement in WinUI NumberBox](SpinButton_images/spinbuttonPlacement_img.png)
+![UpDown Placement in WinUI NumberBox](SpinButton_images/spinbuttonPlacement_img.gif)
