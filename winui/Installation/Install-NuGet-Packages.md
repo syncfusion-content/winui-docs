@@ -13,7 +13,7 @@ documentation: ug
 
 **NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion publishing all WinUI NuGet packages in [nuget.org](https://www.nuget.org/packages?q=syncfusion+winui). The Syncfusion WinUI NuGet packages can be used without installing the Syncfusion installation. You can simply exploit the Syncfusion WinUI NuGet packages in your WinUI application to develop with the Syncfusion WinUI controls.
 
-N> Syncfusion NuGet packages are available from v18.3.0.35 (Essential Studio 2020 Volume 3).
+N> Syncfusion WinUI NuGet packages are available from v18.3.0.35 (Essential Studio 2020 Volume 3).
 
 ## Installation using Package Manager UI
 
@@ -25,13 +25,13 @@ The NuGet **Package Manager UI** allows you to search, install, uninstall, and u
 
     As an alternative, after opening the WinUI application in Visual Studio, go to the **Tools** menu and after hovering **NuGet Package Manager**, select **Manage NuGet Packages for Solution...**
 
-2. The Manage NuGet Packages window will open. Navigate to the Browse tab, then search for the Syncfusion WinUI NuGet packages using a term like **"Syncfusion WinUI"** and select the appropriate Syncfusion WinUI NuGet package for your development.
+2. The Manage NuGet Packages window will open. Navigate to the **Browse** tab, then search for the Syncfusion WinUI NuGet packages using a term like **"Syncfusion WinUI"** and select the appropriate Syncfusion WinUI NuGet package for your development.
 
-    N> The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the Package source drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft documents](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources) to set up the nuget.org feed URL.
-
-    N> Please check the **Include prerelease** checkbox before searching because all Syncfusion WinUI NuGet packages are in beta.
+    N> The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the Package source drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft documents](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources) to set up the nuget.org feed URL.    
 
     ![WinUI NuGet Packages Search](Install-NuGet/NuGetsearch.png)
+
+    N> Please check the **Include prerelease** checkbox, if you want to search and install the Syncfusion WinUI beta NuGet packages.
 
 3. When you select a WinUI package, the right panel will provide more information about it.
 
@@ -56,10 +56,10 @@ The **Package Manager Console** saves NuGet packages installation time since you
     The below command will install the Syncfusion WinUI NuGet package in the default WinUI project of the application.
 
     ```
-    Install-Package <Package Name> -prerelease
+    Install-Package <Package Name>
     ```
 
-    **For example:** Install-Package Syncfusion.Grid.WinUI -prerelease
+    **For example:** Install-Package Syncfusion.Grid.WinUI
 
     N> You can find the list of Syncfusion WinUI NuGet packages which are published in nuget.org from [here](https://www.nuget.org/packages?q=Tags%3A%22winui%22+syncfusion)
 
@@ -68,17 +68,17 @@ The **Package Manager Console** saves NuGet packages installation time since you
     The below command will install the Syncfusion WinUI NuGet package in the given WinUI project of the application.
 
     ``` 
-    Install-Package <Package Name> -prerelease - ProjectName <Project Name>
+    Install-Package <Package Name> - ProjectName <Project Name>
     ```
 
-    **For example:** Install-Package Syncfusion.Grid.WinUI -prerelease -ProjectName SyncfusionWinUIApp
+    **For example:** Install-Package Syncfusion.Grid.WinUI -ProjectName SyncfusionWinUIApp
 
-    N> We need to use the **-prerelease** term with the NuGet installation command, because all the Syncfusion WinUI NuGet packages are in beta
+    N> You must use the **-prerelease** term with the NuGet installation command (**Install-Package Syncfusion.Grid.WinUI -prerelease**), if you want to install the Syncfusion WinUI beta NuGet packages.
 
 3. By default, the package will be installed with latest version. You can give the required version with the -Version term like below to install the Syncfusion WinUI NuGet packages in the appropriate version.
 
     ```
-    Install-Package Syncfusion.Grid.WinUI -Version 19.1.0.65-beta -prerelease
+    Install-Package Syncfusion.Grid.WinUI -Version 19.2.0.44
     ```
 
     ![Package Manager Console Output ](Install-NuGet/ConsoleOutput.png)
@@ -97,13 +97,15 @@ Follow the below instructions to use the dotnet CLI command to install the Syncf
 2. To install a NuGet package, run the following command.
 
     ```
-     dotnet add package <Package name> --prerelease
+     dotnet add package <Package name>
    ```
 
     **For Example:**
-    dotnet add package Syncfusion.Grid.WinUI --prerelease
+    dotnet add package Syncfusion.Grid.WinUI
 
-    N> If you don’t provide a version flag, this command will be upgrading to the latest version by default. To specify a version, add the -v parameter: dotnet add package Syncfusion.Grid.WinUI –prerelease -v 19.1.0.65-beta
+    N> You must use the **--prerelease** term with the NuGet installation command (**dotnet add package Syncfusion.Grid.WinUI --prerelease**), if you want to install the Syncfusion WinUI beta NuGet packages.
+
+    N> If you don’t provide a version flag, this command will be upgrading to the latest version by default. To specify a version, add the -v parameter: dotnet add package Syncfusion.Grid.WinUI -v 19.2.0.44.
 
 3. Examine the WinUI project file after the command has completed to ensure that the Syncfusion WinUI package was installed. To see the added reference, open the .csproj file.
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Fast Column Chart in WinUI (SfCartesianChart)
 
-A fast column chart is a special kind of series that can render a collection with huge number of data points using `WriteableBitmap`. [FastColumnBitmapSeries]() is used to boost up the performance of the column series.
+A fast column chart is a special kind of series that can render a collection with huge number of data points using `WriteableBitmap`. [FastColumnBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastColumnBitmapSeries.html) is used to boost up the performance of the column series.
 
 {% tabs %}
 

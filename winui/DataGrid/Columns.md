@@ -48,7 +48,7 @@ Use to display the boolean type data
 </tr>
 <tr>
 <td>
-GridDateColumn
+{{'[GridDateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the date value.
@@ -316,7 +316,7 @@ private void SfDataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumn
 
 ##### Changing column type
 
-You can change the type of column adding to SfDataGrid by setting the instance of column you want to add in ` AutoGeneratingColumn` event.
+You can change the type of column adding to SfDataGrid by setting the instance of column you want to add in `AutoGeneratingColumn` event.
  
 In the below code, column type for `IsShipped` property is changed to `GridTextColumn` by setting instance of GridTextColumn to `Column` property.
  

@@ -142,26 +142,26 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Cancel a date that is being changed
 
-The [`DateChanging`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateChanging) event will be triggered, as soon as a date is selected but before `SelectedDate` property is updated. If the change is considered invalid, it can be canceled. The `DateChanging` event contains the following properties.
+The [`SelectedDateChanging`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_SelectedDateChanging) event will be triggered, as soon as a date is selected but before `SelectedDate` property is updated. If the change is considered invalid, it can be canceled. The `SelectedDateChanging` event contains the following properties.
 
 * `OldDate` - Gets a date which is previously selected.
 * `NewDate` - Gets a date which is currently selected.
 * `Cancel` - Gets or sets whether to cancel the selected date value update.
 
-Users are restricted to select a blackout date from dropdown, however user can give text input through editor. As selecting a blackout date leads to crash, we can cancel the change using `DateChanging` event.
+Users are restricted to select a blackout date from dropdown, however user can give text input through editor. As selecting a blackout date leads to crash, we can cancel the change using `SelectedDateChanging` event.
 
-N> `DateChanging` event is called before the `DateChanged` event when a date is selected.
+N> `SelectedDateChanging` event is called before the `SelectedDateChanged` event when a date is selected.
 
 {% tabs %}
 {% highlight XAML %}
 
-<editor:SfDatePicker Height="35" Width="150" DateChanging="SfDatePicker_DateChanging" />
+<editor:SfDatePicker Height="35" Width="150" SelectedDateChanging="SfDatePicker_DateChanging" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
-sfDatePicker.DateChanging += SfDatePicker_DateChanging;
+sfDatePicker.SelectedDateChanging += SfDatePicker_DateChanging;
 
 {% endhighlight %}
 {% endtabs %}

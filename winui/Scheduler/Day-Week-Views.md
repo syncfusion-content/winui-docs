@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Day, Week and Work Week views in WinUI Scheduler control | Syncfusion
-description:  Learn here all about to customize the Day, Week, Work Week views settings and its appearance in Syncfusion WinUI Scheduler (SfScheduler) control and more.
+title: Day and Week views in WinUI Scheduler Control | Syncfusion
+description: Learn here all about to customize the Day, Week, Work Week views settings and its appearance in Syncfusion WinUI Scheduler (SfScheduler) control and more.
 platform: winui
 control: SfScheduler
 documentation: ug
@@ -304,7 +304,7 @@ N>
 
 ## Minimum display appointments count in all day panel
 
-You can customize the number of appointments displayed in an all-day panel using the `MinimumAllDayAppointmentsCount` property of `DaysViewSettings` in the Scheduler. By default, the appointment display count is 2, and all-day panels have more than 2 appointments, two appointments will be displayed and the remaining appointments will be displayed as appointment counts.
+You can customize the number of appointments displayed in an all-day panel using the [MinimumAllDayAppointmentsCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html#Syncfusion_UI_Xaml_Scheduler_DaysViewSettings_MinimumAllDayAppointmentsCount) property of `DaysViewSettings` in the Scheduler. By default, the appointment display count is 2, and all-day panels have more than 2 appointments, two appointments will be displayed and the remaining appointments will be displayed as appointment counts.
 
 {% tabs %}
 {% highlight xaml %}
@@ -322,7 +322,7 @@ this.Schedule.DaysViewSettings.MinimumAllDayAppointmentsCount = 3;
 
 ### Customize more appointments indicator in all day panel
 
-You can customize the default appearance of more appointments indicator in an all-day panel by using the `AllDayMoreAppointmentsIndicatorTemplate` property of `DaysViewSettings`.
+You can customize the default appearance of more appointments indicator in an all-day panel by using the [AllDayMoreAppointmentsIndicatorTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html#Syncfusion_UI_Xaml_Scheduler_DaysViewSettings_AllDayMoreAppointmentsIndicatorTemplate) property of `DaysViewSettings`.
 
 {% tabs %}
 {% highlight xaml %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization and Formatting in WinUI Time Picker control | Syncfusion
+title: Localization and Formatting in WinUI Time Picker| Syncfusion
 description: Learn here about Localization and Formatting in Syncfusion WinUI Time Picker (SfTimePicker) control, its elements, and more.
 platform: WinUI
 control: SfTimePicker
@@ -91,19 +91,19 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change time display format
 
- You can edit and display the selected time with various formatting like hour, minutes, seconds and meridiem formats by using the [`FormatString`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_FormatString) property. The default value of `FormatString` property is `hh:mm tt`.
+ You can edit and display the selected time with various formatting like hour, minutes, seconds and meridiem formats by using the [`DisplayTimeFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_DisplayTimeFormat) property. The default value of `DisplayTimeFormat` property is `hh:mm tt`.
 
 {% tabs %}
 {% highlight xaml %}
 
 <editors:SfTimePicker x:Name="sfTimePicker" 
-                      FormatString="HH:mm"/>
+                      DisplayTimeFormat="HH:mm"/>
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfTimePicker sfTimePicker = new SfTimePicker();
-sfTimePicker.FormatString= "HH:mm";
+sfTimePicker.DisplayTimeFormat= "HH:mm";
 
 {% endhighlight %}
 {% endtabs %}
@@ -116,7 +116,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 By default ‘Mask’ editing is enabled, which ensure that it contains only valid value. As soon as in input is given, the value is validated and correction is done immediately. Once input is completed for a field, cursor moves to next field automatically.
 
-Based on the `FormatString` and your input values, hour and minute field values are automatically corrected. 
+Based on the `DisplayTimeFormat` and your input values, hour and minute field values are automatically corrected. 
 
 For example,
 
@@ -147,7 +147,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Edit time using free form editing
 
-If you want to perform the validation after the user completely entering their time inputs, use the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_EditMode) property value as `Normal`. Then the entered time value is validated with the `FormatString` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the previously selected time value sets to `SelectedTime` property.
+If you want to perform the validation after the user completely entering their time inputs, use the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_EditMode) property value as `Normal`. Then the entered time value is validated with the `DisplayTimeFormat` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `DisplayTimeFormat` property, the previously selected time value sets to `SelectedTime` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -170,7 +170,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Hide clear button in the editor
 
-By default, the clear button `X` will be displayed in the editor of the `Time Picker` control, which can be used to clear the entered input. You can hide the clear button in `Time Picker` control using the `ShowClearButton` property. The default value of `ShowClearButton` property value is **true**.
+By default, the clear button `X` will be displayed in the editor of the `Time Picker` control, which can be used to clear the entered input. You can hide the clear button in `Time Picker` control using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DateTimePickerBase.html#Syncfusion_UI_Xaml_Editors_DateTimePickerBase_ShowClearButton) property. The default value of `ShowClearButton` property value is **true**.
 
 {% tabs %}
 {% highlight XAML %}

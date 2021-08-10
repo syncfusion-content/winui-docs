@@ -80,19 +80,19 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change editor display format
 
- You can edit and display the selected date with various formatting like date, month and year formats by using the [FormatString](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_FormatString) property. The default value of `FormatString` property is **d**.
+ You can edit and display the selected date with various formatting like date, month and year formats by using the [DisplayDateFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_DisplayDateFormat) property. The default value of `DisplayDateFormat` property is **d**.
 
 {% tabs %}
 {% highlight xaml %}
 
 <calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker" 
-                               FormatString="M"/>
+                               DisplayDateFormat="M"/>
 
 {% endhighlight  %}
 {% highlight C# %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
-sfCalendarDatePicker.FormatString= "M";
+sfCalendarDatePicker.DisplayDateFormat= "M";
 
 {% endhighlight  %}
 {% endtabs %}
@@ -103,14 +103,14 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change calendar display format
 
-You can use different date formats such as abbreviated or full name for a day, month, week names or header name of month and year in dropdown calendar by using the [DateFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_DateFormat), [MonthFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_MonthFormat), [DayOfWeekFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_DayOfWeekFormat) and [HeaderFormatInMonthView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_HeaderFormatInMonthView) properties.
+You can use different date formats such as abbreviated or full name for a day, month, week names or header name of month and year in dropdown calendar by using the [DayFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_DayFormat), [MonthFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_MonthFormat), [DayOfWeekFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_DayOfWeekFormat) and [HeaderFormatInMonthView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_HeaderFormatInMonthView) properties.
 
 N> Refer [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.datetimeformatting.datetimeformatter?view=winrt-19041) page to get more date formatting.
 
 {% tabs %}
 {% highlight xaml %}
 
-<calendar:SfCalendarDatePicker DateFormat="{}{day.integer(2)}"
+<calendar:SfCalendarDatePicker DayFormat="{}{day.integer(2)}"
                                MonthFormat="{}{month.full}"
                                DayOfWeekFormat="{}{dayofweek.abbreviated(3)}"
                                HeaderFormatInMonthView="{}{month.abbreviated} {year.abbreviated}‎"
@@ -120,7 +120,7 @@ N> Refer [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.gl
 {% highlight C# %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
-sfCalendarDatePicker.DateFormat = "{day.integer(2)}";
+sfCalendarDatePicker.DayFormat = "{day.integer(2)}";
 sfCalendarDatePicker.MonthFormat = "{month.full}";
 sfCalendarDatePicker.DayOfWeekFormat = "{dayofweek.abbreviated(3)}";
 sfCalendarDatePicker.HeaderFormatInMonthView = "{month.abbreviated} {year.abbreviated}‎";

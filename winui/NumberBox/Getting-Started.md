@@ -17,7 +17,7 @@ This section explains the steps required to add the [WinUI NumberBox](https://ww
 
 ## Creating an application with WinUI NumberBox
 
-In this walkthrough, you will create a WinUI application that contains the `NumberBox` control.
+In this walkthrough, you will create a WinUI application that contains the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox) control.
 
 ## Adding control manually in XAML
 
@@ -95,7 +95,7 @@ namespace GettingStarted
 
 ## Editing the value
 
-By default, the `NumberBox` control allows you to enter numeric input and restricts the alphabetic input. Once `Enter` key is pressed or control focus is lost, the value of the `NumberBox` control is validated and updated based on the format applied.
+By default, the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox) control allows you to enter numeric input and restricts the alphabetic input. Once `Enter` key is pressed or control focus is lost, the value of the `NumberBox` control is validated and updated based on the format applied.
 
 {% tabs %}
 {% highlight xaml %}
@@ -119,7 +119,7 @@ sfNumberBox.CustomFormat = "0.000";
 
 ## Change number format
 
-You can change the format in which the value should be displayed using the `CustomFormat` property and `NumberFormatter` property. By default, value of the `CustomFormat` property and `NumberFormatter` property is **null**. You can apply various custom formats to the `NumberBox` control available in [this link](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) using `CustomFormat` property.
+You can change the format in which the value should be displayed using the [CustomFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_CustomFormat) property and [NumberFormatter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_NumberFormatter) property. By default, value of the `CustomFormat` property and `NumberFormatter` property is **null**. You can apply various custom formats available in [this link](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) to the `NumberBox` control  using `CustomFormat` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -141,7 +141,7 @@ sfNumberBox.CustomFormat = "C2";
 {% endhighlight %}
 {% endtabs %}
 
-You can also change the format of the value of `NumberBox` control using `NumberFormatter` property with different formatters available in [this link](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting?view=winrt-20348).
+You can also change the format of the value of `NumberBox` control using `NumberFormatter` property with [different formatters](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting?view=winrt-20348) available.
 
 {% tabs %}
 {% highlight xaml %}
@@ -170,7 +170,7 @@ sfNumberBox.NumberFormatter = new CurrencyFormatter(currencyCode, new string[] {
 
 ## Accept null value
 
-By default, `NumberBox` control allows **null** value. A null value is assigned when the user clicks the clear button or clears the input. You can disable this by setting the value of `AllowNull` property as **false**. When value of the `AllowNull` property is set to **false** and the input is cleared, the `NumberBox` control returns it to **0**. 
+By default, `NumberBox` control allows **null** value. A null value is assigned when the user clicks the clear button or clears the input. You can disable this by setting the value of [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_AllowNull) property as **false**. When value of the `AllowNull` property is set to **false** and the input is cleared, the `NumberBox` control returns it to **0**. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -194,7 +194,7 @@ sfNumberBox.AllowNull = false;
 
 ## Setting watermark text
 
-You can prompt the user with any information by using the `PlaceHolderText` property. Watermark text will be displayed only when the value of the `AllowNull` property is **true** and the value of `NumberBox` control is **null**. The default value of `PlaceHolderText` property is **string.Empty** (No string will be displayed).
+You can prompt the user with any information by using the [PlaceholderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_PlaceholderText) property. Watermark text will be displayed only when the value of the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_AllowNull) property is **true** and the value of `NumberBox` control is **null**. The default value of `PlaceholderText` property is **string.Empty** (No string will be displayed).
 
 {% tabs %}
 {% highlight xaml %}
@@ -207,7 +207,7 @@ You can prompt the user with any information by using the `PlaceHolderText` prop
 {% highlight C# %}
 
 SfNumberBox SfNumberBox= new SfNumberBox();
-SfNumberBox.PlaceHolderText = "Enter input here...";
+SfNumberBox.PlaceholderText = "Enter input here...";
 sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
 sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 
@@ -218,7 +218,7 @@ sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 
 ## Value changed notification
 
-The `ValueChanged` event is triggered, when the `Value` property of `NumberBox` control is changed. The value will not be changed when the user enters the input. The value of `NumberBox` control will be changed after validation is performed on `Enter` keypress or when the focus is lost in `NumberBox` control. The `ValueChanged` contains the following properties.
+The [ValueChanged]( [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_AllowNull)) event is triggered, when the [Value](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_Value) property of `NumberBox` control is changed. The value will not be changed when the user enters the input. The value of the `NumberBox` control will be changed after validation is performed on the `Enter` keypress or when the focus is lost in the control. The `ValueChanged` contains the following properties.
 
  * `NewValue` - Contains the new input value.
  * `OldValue` - Contains the previous input value.

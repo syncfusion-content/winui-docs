@@ -118,7 +118,7 @@ Based on the editor type, FilterRowCell displays the filter conditions in dropdo
 
 {% tabs %}
 {% highlight xaml %}
-<dataGrid:GridNumericColumn MappingName="OrderID" 
+<dataGrid:GridTextColumn MappingName="OrderID" 
                               FilterRowOptionsVisibility="Collapsed"
                               FilterRowEditorType="Numeric"/>
 {% endhighlight %}
@@ -197,7 +197,7 @@ You can change the default FilterRow condition for a corresponding column by usi
 
 {% tabs %}
 {% highlight xaml %}
-<dataGrid:GridNumericColumn MappingName="OrderID" 
+<dataGrid:GridTextColumn MappingName="OrderID" 
                               FilterRowCondition="LessThanOrEqual"
                               FilterRowEditorType="Numeric"/>
 {% endhighlight %}

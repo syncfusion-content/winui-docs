@@ -11,7 +11,7 @@ documentation: ug
 
 Tick lines are the small lines which is drawn on the axis line representing the axis labels. Tick lines will be drawn outside of the axis by default. 
 
-And also minor tick lines can be added to the axis by defining the [SmallTicksPerInterval]() property. This property will add the minor tick lines to every interval based on value.
+And also minor tick lines can be added to the axis by defining the [SmallTicksPerInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTicksPerInterval) property. This property will add the minor tick lines to every interval based on value.
 
 N> For category axis, minor tick lines are not applicable. Since it is rendered based on index positions.
 
@@ -24,6 +24,10 @@ N> For category axis, minor tick lines are not applicable. Since it is rendered 
 <chart:SfCartesianChart.PrimaryAxis>
     <chart:NumericalAxis SmallTicksPerInterval="4"/>
 </chart:SfCartesianChart.PrimaryAxis>
+
+<chart:SfCartesianChart.SecondaryAxis>
+    <chart:NumericalAxis />
+</chart:SfCartesianChart.SecondaryAxis>
 
 </chart:SfCartesianChart>
 
@@ -38,13 +42,15 @@ chart.PrimaryAxis = new NumericalAxis()
    SmallTicksPerInterval = 4 
 };
 
+chart.SecondaryAxis = new NumericalAxis();
+
 {% endhighlight %}
 
 {% endtabs %}
 
 ## Size
 
-Both major and minor tick lines height can be customized by using the [TickLineSize]() and [SmallTickLineSize]() properties respectively.
+Both major and minor tick lines height can be customized by using the [TickLineSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TickLineSize) and [SmallTickLineSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTickLineSize) properties respectively.
 
 {% tabs %}
 
@@ -53,8 +59,12 @@ Both major and minor tick lines height can be customized by using the [TickLineS
 <chart:SfCartesianChart>
 . . .
 <chart:SfCartesianChart.PrimaryAxis>
-    <chart:NumericalAxis SmallTickLineSize="10" SmallTicksPerInterval="4" TickLineSize="10"/>
+    <chart:NumericalAxis SmallTickLineSize="10" SmallTicksPerInterval="4" TickLineSize="15"/>
 </chart:SfCartesianChart.PrimaryAxis>
+
+<chart:SfCartesianChart.SecondaryAxis>
+    <chart:NumericalAxis />
+</chart:SfCartesianChart.SecondaryAxis>
 
 </chart:SfCartesianChart>
 
@@ -66,16 +76,18 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 chart.PrimaryAxis = new NumericalAxis()
 {
-   TickLineSize = 10,
+   TickLineSize = 15,
    SmallTickLineSize = 10,
    SmallTicksPerInterval = 4
 };
+
+chart.SecondaryAxis = new NumericalAxis();
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Axis tick lines height support in WinUI Chart](Axis_images/WinUI_Chart_Axis_small_ticklines.png)
+![Axis tick lines height support in WinUI Chart](Axis_images/winui_chart_axis_small_ticklines.png)
 
 ## Position
 
@@ -83,8 +95,8 @@ Tick lines can be positioned inside or outside of the chart area. By default the
 
 | Property | Description |
 |--|--|
-|TickLinesPosition | Used to position the major tick lines|
-|SmallTickLinesPosition | Used to position the minor tick lines|
+|[TickLinesPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TickLinesPosition) | Used to position the major tick lines|
+|[SmallTickLinesPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTickLinesPosition) | Used to position the minor tick lines|
 
 {% tabs %}
 
@@ -95,6 +107,10 @@ Tick lines can be positioned inside or outside of the chart area. By default the
 <chart:SfCartesianChart.PrimaryAxis>
     <chart:NumericalAxis TickLinesPosition="Inside" SmallTickLinesPosition="Inside"/>
 </chart:SfCartesianChart.PrimaryAxis>
+
+<chart:SfCartesianChart.SecondaryAxis>
+    <chart:NumericalAxis />
+</chart:SfCartesianChart.SecondaryAxis>
 
 </chart:SfCartesianChart>
 
@@ -110,6 +126,8 @@ chart.PrimaryAxis = new NumericalAxis()
    SmallTickLinesPosition = AxisElementPosition.Inside
 };
 
+chart.SecondaryAxis = new NumericalAxis();
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -118,7 +136,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ## Customization
 
-Both major and minor tick lines can be customized by using the [MajorTickLineStyle]() and [MinorTickLineStyle]() properties respectively. 
+Both major and minor tick lines can be customized by using the [MajorTickLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorTickLineStyle) and [MinorTickLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorTickLineStyle) properties respectively. 
 
 {% tabs %}
 
@@ -134,8 +152,12 @@ Both major and minor tick lines can be customized by using the [MajorTickLineSty
 </chart:SfCartesianChart.Resources>
 
 <chart:SfCartesianChart.PrimaryAxis>
-    <chart:NumericalAxis SmallTicksPerInterval="4" TickLineSize="15" MinorTickLineStyle="{StaticResource lineStyle}"  MajorTickLineStyle="{StaticResource lineStyle}" />
+    <chart:NumericalAxis SmallTicksPerInterval="4" MinorTickLineStyle="{StaticResource lineStyle}"  MajorTickLineStyle="{StaticResource lineStyle}" />
 </chart:SfCartesianChart.PrimaryAxis>
+
+<chart:SfCartesianChart.SecondaryAxis>
+    <chart:NumericalAxis />
+</chart:SfCartesianChart.SecondaryAxis>
 
 </chart:SfCartesianChart>
 
@@ -147,14 +169,15 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 chart.PrimaryAxis = new NumericalAxis()
 {
-    TickLineSize = 15,
     SmallTicksPerInterval = 4,
     MajorTickLineStyle = chart.Resources["lineStyle"] as Style,
     MinorTickLineStyle = chart.Resources["lineStyle"] as Style 
 };
 
+chart.SecondaryAxis = new NumericalAxis();
+
 {% endhighlight %}
 
 {% endtabs %}
 
-![Axis tick lines customization support in WinUI Chart](Axis_images/WinUI_Chart_Axis_tickline_style.png)
+![Axis tick lines customization support in WinUI Chart](Axis_images/winui_chart_axis_tickline_style.png)
