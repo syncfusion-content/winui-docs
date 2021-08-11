@@ -30,7 +30,7 @@ N> The value in `NumberBox` can also be changed by mouse scrolling. The mouse sc
 {% highlight C# %}
 
 SfNumberBox SfNumberBox= new SfNumberBox();
-SfNumberBox.PlaceHolderText = "Enter input here...";
+SfNumberBox.PlaceholderText = "Enter input here...";
 sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
 sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 
@@ -64,4 +64,4 @@ sfNumberBox.UpDownPlacementMode = NumberBoxUpDownPlacementMode.Inline;
 {% endhighlight %}
 {% endtabs %}
 
-![UpDown Placement in WinUI NumberBox](SpinButton_images/spinbuttonPlacement_img.png)
+![UpDown Placement in WinUI NumberBox](SpinButton_images/spinbuttonPlacement_img.gif)

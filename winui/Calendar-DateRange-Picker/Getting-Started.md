@@ -23,7 +23,7 @@ In this walkthrough, you will create a WinUI application that contains the `Cale
 
 To add `Calendar DateRange Picker` control manually in XAML , follow the below steps.
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2.  Download and refer the following NuGet in the project.
 
     * [Syncfusion.Calendar.WinUI](https://www.nuget.org/packages/Syncfusion.Calendar.WinUI)
@@ -131,12 +131,12 @@ SfCalendarDateRangePicker sfCalendarDateRangePicker= new SfCalendarDateRangePick
 
 ## Setting watermark text
 
-You can prompt the user with any information by using the [`PlaceHolderText`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_PlaceHolderText) property. This watermark text will be displayed only when the `SelectedRange` property value is **null**. The default value of `PlaceHolderText` property is **Select a date range**.
+You can prompt the user with any information by using the [`PlaceholderText`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_PlaceholderText) property. This watermark text will be displayed only when the `SelectedRange` property value is **null**. The default value of `PlaceholderText` property is **Select a date range**.
 
 {% tabs %}
 {% highlight xaml %}
 
-<calendar:SfCalendarDateRangePicker PlaceHolderText="Select the Date"
+<calendar:SfCalendarDateRangePicker PlaceholderText="Select the Date"
                                SelectedRange="{x:Null}"
                                Name="sfCalendarDateRangePicker" />
 
@@ -144,7 +144,7 @@ You can prompt the user with any information by using the [`PlaceHolderText`](ht
 {% highlight C# %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker= new SfCalendarDateRangePicker();
-sfCalendarDateRangePicker.PlaceHolderText = "Select the Date";
+sfCalendarDateRangePicker.PlaceholderText = "Select the Date";
 sfCalendarDateRangePicker.SelectedRange = null;
 
 {% endhighlight %}

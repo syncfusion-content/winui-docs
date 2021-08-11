@@ -23,7 +23,7 @@ In this walkthrough, you will create a WinUI application that contains the `Date
 
 To add `Date Picker` control manually in XAML , follow the below steps.
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Download and refer the following NuGet in the project.
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
@@ -140,13 +140,13 @@ For further reference [click_here](date-restriction).
 
 ## Setting null value
 
-If you want to set null value for the `Date Picker`, set the [`AllowNullValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_AllowNullValue) property as `true` and set `SelectedDate` property as `null`. If `AllowNullValue` property is `false`, then the current system date is updated in `SelectedDate` property and displayed instead of `null`.
+If you want to set null value for the `Date Picker`, set the [`AllowNull`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_AllowNull) property as `true` and set `SelectedDate` property as `null`. If `AllowNull` property is `false`, then the current system date is updated in `SelectedDate` property and displayed instead of `null`.
 
 {% tabs %}
 {% highlight xaml %}
 
 <editors:SfDatePicker SelectedDate="{x:Null}"
-                      AllowNullValue="True"
+                      AllowNull="True"
                       Name="sfDatePicker" />
 
 {% endhighlight %}
@@ -154,7 +154,7 @@ If you want to set null value for the `Date Picker`, set the [`AllowNullValue`](
 
 SfDatePicker sfDatePicker= new SfDatePicker();
 sfDatePicker.SelectedDate = null;
-sfDatePicker.AllowNullValue = true;
+sfDatePicker.AllowNull = true;
 
 {% endhighlight %}
 {% endtabs %}
@@ -165,23 +165,23 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Setting watermark text
 
-You can prompt the user with some information by using the [`PlaceHolderText`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_PlaceHolderText) property. This will be displayed only when the `TimePicker` contains the `SelectedDate` property as `null` and `AllowNullValue` property as `true`. If `AllowNullValue` property is `false`, then the current system time is updated in `SelectedDate` property and displayed instead of `PlaceHolderText`.
+You can prompt the user with some information by using the [`PlaceholderText`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_PlaceholderText) property. This will be displayed only when the `TimePicker` contains the `SelectedDate` property as `null` and `AllowNull` property as `true`. If `AllowNull` property is `false`, then the current system time is updated in `SelectedDate` property and displayed instead of `PlaceholderText`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfDatePicker PlaceHolderText="select a journey date"
+<editors:SfDatePicker PlaceholderText="select a journey date"
                       SelectedDate="{x:Null}"
-                      AllowNullValue="True"
+                      AllowNull="True"
                       Name="sfDatePicker" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfDatePicker sfDatePicker= new SfDatePicker();
-sfDatePicker.PlaceHolderText = "select a journey date";
+sfDatePicker.PlaceholderText = "select a journey date";
 sfDatePicker.SelectedDate = null;
-sfDatePicker.AllowNullValue = true;
+sfDatePicker.AllowNull = true;
 
 {% endhighlight %}
 {% endtabs %}
@@ -192,7 +192,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Date changed notification
 
-You will be notified when selected date changed in `Date Picker` by using [`DateChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateChanged) event. The `DateChanged` event contains the old and newly selected date in the [`OldDateTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedDateTimeChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedDateTimeChangedEventArgs_OldDateTime), [`NewDateTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedDateTimeChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedDateTimeChangedEventArgs_NewDateTime) properties.
+You will be notified when selected date changed in `Date Picker` by using [`SelectedDateChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateChanged) event. The `SelectedDateChanged` event contains the old and newly selected date in the [`OldDateTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedDateTimeChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedDateTimeChangedEventArgs_OldDateTime), [`NewDateTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedDateTimeChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedDateTimeChangedEventArgs_NewDateTime) properties.
 
 * `OldDateTime` - Gets a date which is previously selected.
 * `NewDateTime` - Gets a date which is currently selected.
@@ -200,14 +200,14 @@ You will be notified when selected date changed in `Date Picker` by using [`Date
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfDatePicker DateChanged="SfDatePicker_DateChanged" 
+<editors:SfDatePicker SelectedDateChanged="SfDatePicker_DateChanged" 
                       Name="sfDatePicker"/>
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
-sfDatePicker.DateChanged += SfDatePicker_DateChanged;
+sfDatePicker.SelectedDateChanged += SfDatePicker_DateChanged;
 
 {% endhighlight %}
 {% endtabs %}
