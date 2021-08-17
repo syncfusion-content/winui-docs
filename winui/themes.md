@@ -83,7 +83,7 @@ When the `RequestedTheme` property is set to `Default`, it uses the `Application
 {% endhighlight %}
 {% endtabs %}
 
-N> When the `RequestedTheme` value is set on a FrameworkElement, it is inherited by any elements nested within the element.
+N> When the RequestedTheme value is set on a FrameworkElement, it is inherited by any elements nested within the element.
 
 ## Theme resource
 
