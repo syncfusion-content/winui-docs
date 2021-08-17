@@ -10,7 +10,7 @@ documentation: ug
 # Localization of Syncfusion WinUI controls
 
 Localization is the process of making an application multilingual by formatting the content according to the cultures. This involves configuring the application for a specific language. Culture is the combination of language and location. For example, 
- `en-US` is the culture for English spoken in the United States; `en-GB` is the culture for English spoken in Great Britain. Syncfusion WinUI controls can be localized by adding resource files for each language.
+ `en-US` is the culture for English spoken in the United States; `en-GB` is the culture for English spoken in Great Britain. Syncfusion WinUI controls can be localized by adding the resource files for each language.
 
 ## Changing application culture
 
