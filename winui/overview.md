@@ -82,13 +82,13 @@ background-color:transparent!important;
   </tr>
   <tr>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/treegrid/getting-started">Tree Grid</a></td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/calendar-datepicker/getting-started">Calendar Date Picker</a></td>
+    <td><a id="anchor"  href="https://help.syncfusion.com/winui/calendar-date-picker/getting-started">Calendar Date Picker</a></td>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/radial-gauge/getting-started">Radial Gauge</a></td>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/dropdown-color-picker/getting-started">Dropdown Color Picker</a></td>
   </tr>
   <tr>
     <td></td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/calendar-daterangepicker/getting-started">Calendar DateRange Picker</a></td>
+    <td><a id="anchor"  href="https://help.syncfusion.com/winui/calendar-daterange-picker/getting-started">Calendar DateRange Picker</a></td>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/barcode/getting-started" >Barcode</a></td>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/color-palette/getting-started" >Color Palette</a></td>
   </tr>
