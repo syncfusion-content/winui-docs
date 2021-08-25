@@ -795,3 +795,18 @@ N>
 * The business object can be bound in the `AppointmentTemplate` and `AppointmentTemplateSelector` by using the property of `ScheduleAppointment.Data.`
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/AppointmentCustomization)
+
+### Appointment selection border brush
+You can customize the appointment selection border brush by using `SelectionBorderBrush` property in `AppointmentControl`. If the `AppointmentControl` has default style, The appointment selection border color will be updated based on selected appointment background color.
+
+{% tabs %}
+{% highlight xaml %}
+    <Style TargetType="syncfusion:AppointmentControl">
+        <Setter Property="BorderBrush" Value="Blue" />
+        <Setter Property="SelectionBorderBrush" Value="Red"/>
+        <Setter Property="BorderThickness" Value="2"/>
+    </Style>
+{% endhighlight %}
+{% endtabs %}
+
+![Selection border brush in WPF Scheduler](Appointment_Images/SelectionBorderBrush.png)
