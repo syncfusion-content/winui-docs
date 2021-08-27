@@ -1,16 +1,16 @@
 ---
 layout: post
 title: Reminder in WinUI Scheduler control | Syncfusion
-description: Learn here all about Reminder support in Syncfusion WinUI Scheduler (SfScheduler) control, its elements and more.
+description: Learn here all about the Reminder support in the Syncfusion WinUI Scheduler (SfScheduler) control, its elements and more.
 platform: winui
 control: SfScheduler
 documentation: ug
 ---
 # Reminder in WinUI Scheduler (SfScheduler)
-WinUI scheduler alerts you for a particular appointment when enabling the `EnableReminder` property. By default, it is set to `true`.
+The WinUI scheduler alerts you for a particular appointment when enabling the `EnableReminder` property. By default, it is set to `true.`
 
 ## Enable reminder
-Reminder can be set by setting the `EnableReminder` property to `true.` The reminder time can be set by using the `Reminders` property of `ScheduleAppointment`.
+Reminder can be set by setting the `EnableReminder` property to `true.` The reminder time can be set by using the `Reminders` property of `ScheduleAppointment.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -22,7 +22,7 @@ Reminder can be set by setting the `EnableReminder` property to `true.` The remi
 {% endtabs %}
 
 ## Adding reminders
-Configure the appointment reminders with `SchedulerReminder`. The `SchedulerReminder` has the following properties for reminder alert,
+Configure the appointment reminders with `SchedulerReminder.` The `SchedulerReminder` has the following properties for reminder alert.
 
 <table>
 <tr>
@@ -115,9 +115,9 @@ Configure the appointment reminders with `SchedulerReminder`. The `SchedulerRemi
 
 The `ReminderMapping` provides the mapping information about the `SchedulerReminder` properties to the `Data` object. ReminderMapping has the following properties for reminder alert,
 
-* `ReminderTimeInterval` - Maps the property name of custom class, which is equivalent for the `SchedulerReminder.ReminderTimeInterval.`
-* `IsDismissed` - Maps the property name of custom class, which is equivalent for the `SchedulerReminder.IsDismissed.`
-* `ReminderAlertTime` - Maps the property name of custom class, which is equivalent for the `SchedulerReminder.ReminderAlertTime.`
+* `ReminderTimeInterval`: Maps the property name of a custom class, which is equivalent for the `SchedulerReminder.ReminderTimeInterval.`
+* `IsDismissed`: Maps the property name of a custom class, which is equivalent for the `SchedulerReminder.IsDismissed.`
+* `ReminderAlertTime`: Maps the property name of a custom class, which is equivalent for the `SchedulerReminder.ReminderAlertTime.`
 
 {% tabs %}
 {% highlight c#%}
@@ -141,7 +141,7 @@ public class Reminder
 {% endhighlight %}
 {% endtabs %}
 
-Map those properties of the `Meeting` class with the `SfScheduler` control by using the `AppointmentMapping` and map `CustomReminder` properties with `SchedulerReminder` by using the `ReminderMapping.`
+Map those properties of the `Meeting` class with the `SfScheduler` control by using the `AppointmentMapping` and map `CustomReminder` properties with the `SchedulerReminder` by using the `ReminderMapping.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -191,8 +191,8 @@ public class ReminderViewModel
 
 ## ReminderAlertOpening event
 Scheduler alerts appointment by the `ReminderAlertOpening` event before the reminder alert time. The `ReminderAlertOpeningEventArgs` has the following properties,
-* `Reminders`  - Gets a list of reminders that are used to display the appointment reminders.
-* `Cancel` - To avoid the reminder alerts by enabling this property.
+* `Reminders`: Gets a list of reminders that are used to display the appointment reminders.
+* `Cancel`: To avoid the reminder alerts by enabling this property.
 
 {% tabs %}
 {% highlight c#%}

@@ -797,7 +797,7 @@ N>
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/AppointmentCustomization)
 
 ### Appointment selection border brush
-You can customize the appointment selection border brush by using `SelectionBorderBrush` property in `AppointmentControl`. If the `AppointmentControl` has default style, The appointment selection border color will be updated based on selected appointment background color.
+You can customize the appointment selection border brush by using the `SelectionBorderBrush` property in the `AppointmentControl.` If the `AppointmentControl` has a default style, The appointment selection border color will be updated based on the selected appointment background color.
 
 {% tabs %}
 {% highlight xaml %}
