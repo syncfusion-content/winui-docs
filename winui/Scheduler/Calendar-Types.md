@@ -41,7 +41,14 @@ this.Schedule.CalendarIdentifier = "HebrewCalendar";
 
 ![Hebrew Calendar](Calendar-Types_Images/CalendarTypes.png)
 
-## DateTime values in Calendar types
+## DateTime Formats and Language in Calendar Types
+The scheduler uses the `CalendarIdentifier` to determine which calendar to use to  localize and format the string content of header DatePicker, view header day and date, time ruler and DatePicker and TimePicker in appointment editor.
+
+N> 
+* By default scheduler uses the `GregorianCalendar` for the app’s preferred language.
+* If the scheduler is localized with `CalendarIdentifier`, it will display in the app’s preferred language. For example, if you specify a `KoreanCalendar` and the app language is "en-us", the DatePicker will display in English because there are translations for the Korean calendar.
+
+## DateTime values in Calendar Types
 You can give all the DateTime values such as `DisplayDate,` `SelectedDate,` `BlackoutDates,` Appointment `StartTime,` and `EndTime,` `SpecialTimeRegion` Start and End time values in two ways when the calendar identifier is specified other than `GregorianCalendar.`
 
 * A `DateTime` instance without specifying calendar type. A scheduler will handle the `DateTime` value for the specified calendar type.
