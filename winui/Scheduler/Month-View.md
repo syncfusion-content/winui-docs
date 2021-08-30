@@ -111,7 +111,7 @@ this.Schedule.MonthViewSettings.AppointmentDisplayCount = 4;
 
 N> 
 * By clicking more option, the scheduler navigates to the day view.
-* Appointment height will be increased when the appointment display count is 1.
+* Appointment height will be changed based on the `AppointmentDisplayCount` property.
 
 ## Month navigation direction
 

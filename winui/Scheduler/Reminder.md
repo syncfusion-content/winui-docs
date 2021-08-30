@@ -7,10 +7,10 @@ control: SfScheduler
 documentation: ug
 ---
 # Reminder in WinUI Scheduler (SfScheduler)
-The WinUI scheduler alerts you for a particular appointment when enabling the `EnableReminder` property. By default, it is set to `true.`
+The WinUI scheduler notify a particular appointment to enable the `ReminderAlertOpening` event to the `Reminders`. An appointment can have one or more reminders. 
 
 ## Enable reminder
-Reminder can be set by setting the `EnableReminder` property to `true.` The reminder time can be set by using the `Reminders` property of `ScheduleAppointment.`
+Reminder can be set by setting the `EnableReminder` property to `true.` By default, it is set to `true.` The reminder time can be set by using the `Reminders` property of `ScheduleAppointment.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -22,7 +22,7 @@ Reminder can be set by setting the `EnableReminder` property to `true.` The remi
 {% endtabs %}
 
 ## Adding reminders
-Configure the appointment reminders with `SchedulerReminder.` The `SchedulerReminder` has the following properties for reminder alert.
+Configure the appointment reminders with `SchedulerReminder.` The `SchedulerReminder` has the following properties.
 
 <table>
 <tr>
@@ -31,12 +31,12 @@ Configure the appointment reminders with `SchedulerReminder.` The `SchedulerRemi
 </tr>
 <tr>
 <td>{{'ReminderTimeInterval'| markdownify }}</td>
-<td>Gets or sets the time interval that decides alert reminders before the appointment’s start time.
+<td>Gets or sets the time interval that decides to notify the reminder before the appointment’s start time.
 </td>
 </tr>
 <tr>
 <td>{{'ReminderAlertTime'| markdownify }}</td>
-<td>Gets the reminder time that decides when to show a reminder alert of the appointment.</td>
+<td>Gets the reminder time that decides when to enable `ReminderAlertOpening` event to the reminder of the appointment.</td>
 </tr>
 <tr>
 <td>{{'Appointment'| markdownify }}</td>
@@ -113,7 +113,7 @@ Configure the appointment reminders with `SchedulerReminder.` The `SchedulerRemi
 {% endhighlight %}
 {% endtabs %}
 
-The `ReminderMapping` provides the mapping information about the `SchedulerReminder` properties to the `Data` object. ReminderMapping has the following properties for reminder alert,
+The `ReminderMapping` provides the mapping information about the `SchedulerReminder` properties to the `Data` object. ReminderMapping has the following properties,
 
 * `ReminderTimeInterval`: Maps the property name of a custom class, which is equivalent for the `SchedulerReminder.ReminderTimeInterval.`
 * `IsDismissed`: Maps the property name of a custom class, which is equivalent for the `SchedulerReminder.IsDismissed.`
@@ -132,7 +132,7 @@ public class Reminder
     public bool Dismissed { get; set; }
 
     /// <summary>
-    /// Gets or sets the value to display reminder alert before appointment start time.
+    /// Gets or sets a value that decides to notify the reminder before the appointment’s start time.
     /// </summary>
     public TimeSpan TimeInterval { get; set; }
 
@@ -190,9 +190,9 @@ public class ReminderViewModel
 {% endtabs %}
 
 ## ReminderAlertOpening event
-Scheduler alerts appointment by the `ReminderAlertOpening` event before the reminder alert time. The `ReminderAlertOpeningEventArgs` has the following properties,
-* `Reminders`: Gets a list of reminders that are used to display the appointment reminders.
-* `Cancel`: To avoid the reminder alerts by enabling this property.
+Scheduler notify the appointment's reminder by the `ReminderAlertOpening` event before the appointment's start time. The `ReminderAlertOpeningEventArgs` has the following properties,
+* `Reminders`: Gets a list of reminders that are used to notify the appointment reminders.
+* `Cancel`: To avoid the reminder notify by enabling this property.
 
 {% tabs %}
 {% highlight c#%}

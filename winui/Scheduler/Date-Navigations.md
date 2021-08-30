@@ -128,8 +128,8 @@ N>
 * The `AllowViewNavigation` is not applicable for the day and timeline day views.
 * If the [ShowAgendaView](https://help.syncfusion.com/winui/scheduler/month-view#month-agenda-view) is true in a month view, the month view should navigate to the day view by single-clicking on the agenda date view header, otherwise, the month view should navigate to the day view by single-clicking on the date in a month cell.
 
-## Allow date navigation
-You can quickly navigate to the respective date by clicking the date picker in the scheduler header. You can show the date picker in the header by setting the `ShowDatePickerButton` property to `true` in the scheduler and the default value is true. Its also allowed today's navigation button on the header.
+## Show date picker
+You can enable the date picker for the calendar by using the `ShowDatePickerButton` property in the scheduler, which displays the date picker and `Today` button in the header view. It allows you to quickly navigate to today and different calendar views.
 
 {% tabs %}
 {% highlight xaml %}
@@ -145,3 +145,18 @@ this.Schedule.ShowDatePickerButton = true;
 {% endtabs %}
 
 N> The header `DatePicker` uses the calendar for your app's default language, or you can set the `CalendarIdentifier` property to a scheduler to use a specific calendar system. If the `CalendarIdentifier` is not set the scheduler uses the default calendar for the application’s preferred language.
+
+## Allowed views
+You can quickly navigate to the different scheduler views by using the `AllowedViewTypes` property in the `SfScheduler.` The views set to this property will display as a view button in the scheduler header view. This UI will be responsive as showing more icons and will be updated based on the window size change.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule" 
+                        AllowedViewTypes="Month,Week,WorkWeek,Day,TimelineDay,TimelineWeek,TimelineWorkWeek,TimelineMonth" >
+{% endhighlight %}
+{% highlight c#%}
+this.Schedule.AllowedViewTypes = AllowedSchedulerViewTypes.Week | AllowedSchedulerViewTypes.WorkWeek | AllowedSchedulerViewTypes.Day | AllowedSchedulerViewTypes.Month | AllowedSchedulerViewTypes.TimelineDay | AllowedSchedulerViewTypes.TimelineMonth | AllowedSchedulerViewTypes.TimelineWeek | AllowedSchedulerViewTypes.TimelineWorkWeek;
+{% endhighlight %}
+{% endtabs %}
+
+![Allowed Views](Date-Navigation_Images/AllowedViews.Png)
