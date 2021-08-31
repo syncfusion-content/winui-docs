@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Calendar Types in WinUI Scheduler control | Syncfusion
-description: Learn here all about how to change the calendar types in the scheduler (SfScheduler) control, its elements, and more.
+title: Localization in WinUI Scheduler control | Syncfusion
+description: Learn here all about how to localize the scheduler (SfScheduler) control, its elements, and more.
 platform: winui
 control: SfScheduler
 documentation: ug
 ---
 
 # Calendar Types in WinUI Scheduler (SfScheduler)
-This section describes how to change the calendar types of scheduler control using the `CalendarIdentifier.`
+This section describes how to localize the scheduler control by using `Language` and `CalendarIdentifier` properties in `SfScheduler.`
 
 ## Types of Calendar
 The Scheduler control supports different types of calendars such as Gregorian, Korean, Hebrew, and more. You can change the calendar types by using the `CalendarIdentifier` property in Scheduler. The default value of the `CalendarIdentifier` property is `GregorianCalendar.`
@@ -54,7 +54,14 @@ this.Schedule.CalendarIdentifier = "HijriCalendar";
 {% endhighlight %}
 {% endtabs %}
 
-![Hijri Calendar](Calendar-Types_Images/CalendarTypes.png)
+![Hijri Calendar](Localization_Images/CalendarTypes.png)
+
+### DateTime values in Calendar Types
+You can give all the DateTime values such as `DisplayDate,` `SelectedDate,` `BlackoutDates,` Appointment `StartTime,` and `EndTime,` `SpecialTimeRegion` Start and End time values in two ways when the calendar identifier is specified other than `GregorianCalendar.`
+
+* A `DateTime` instance without specifying calendar type. A scheduler will handle the `DateTime` value for the specified calendar type.
+
+* A `DateTime` instance with specified calendar type. If calendar type is mentioned then the date should be respective to that calendar so that the date value will be converted to Gregorian DateTime and the scheduler will handle that DateTime.
 
 ## Change the language
 You can localize the scheduler using the `Language` property. The default value of Language property is `en-US`.
@@ -69,11 +76,4 @@ this.Schedule..Language = "fr-FR";
 {% endhighlight %}
 {% endtabs %}
 
-![Hijri Calendar](Calendar-Types_Images/Language.png)
-
-## DateTime values in Calendar Types
-You can give all the DateTime values such as `DisplayDate,` `SelectedDate,` `BlackoutDates,` Appointment `StartTime,` and `EndTime,` `SpecialTimeRegion` Start and End time values in two ways when the calendar identifier is specified other than `GregorianCalendar.`
-
-* A `DateTime` instance without specifying calendar type. A scheduler will handle the `DateTime` value for the specified calendar type.
-
-* A `DateTime` instance with specified calendar type. If calendar type is mentioned then the date should be respective to that calendar so that the date value will be converted to Gregorian DateTime and the scheduler will handle that DateTime.
+![Hijri Calendar](Localization_Images/Language.png)
