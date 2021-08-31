@@ -47,14 +47,29 @@ N>
 {% tabs %}
 {% highlight xaml %}
 <scheduler:SfScheduler x:Name="Schedule"
-                       CalendarIdentifier="HebrewCalendar" />
+                       CalendarIdentifier="HijriCalendar" />
 {% endhighlight %}
 {% highlight c# %}
-this.Schedule.CalendarIdentifier = "HebrewCalendar";
+this.Schedule.CalendarIdentifier = "HijriCalendar";
 {% endhighlight %}
 {% endtabs %}
 
-![Hebrew Calendar](Calendar-Types_Images/CalendarTypes.png)
+![Hijri Calendar](Calendar-Types_Images/CalendarTypes.png)
+
+## Change the language
+You can localize the scheduler using the `Language` property. The default value of Language property is `en-US`.
+
+{% tabs %}
+{% highlight xaml %}
+<scheduler:SfScheduler x:Name="Schedule"
+                       Language="fr-FR" />
+{% endhighlight %}
+{% highlight c# %}
+this.Schedule..Language = "fr-FR";
+{% endhighlight %}
+{% endtabs %}
+
+![Hijri Calendar](Calendar-Types_Images/Language.png)
 
 ## DateTime values in Calendar Types
 You can give all the DateTime values such as `DisplayDate,` `SelectedDate,` `BlackoutDates,` Appointment `StartTime,` and `EndTime,` `SpecialTimeRegion` Start and End time values in two ways when the calendar identifier is specified other than `GregorianCalendar.`
