@@ -9,7 +9,7 @@ documentation: ug
 
 # UpDown Button (SpinButton) in WinUI NumberBox
 
-This section describes how to change value in the [NumberBox]([NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html)) control using keys, mouse scrolling and the up-down button.
+This section describes how to change value in the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) control using keys, mouse scrolling and the up-down button.
 
 ## Increase or decrease value
 
