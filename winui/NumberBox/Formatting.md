@@ -9,7 +9,7 @@ documentation: ug
 
 # Value formatting with WinUI NumberBox
 
-This section explains how to change the value format of the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox) control using `NumberFormatter` and `CustomFormat` properties.
+This section explains how to change the value format of the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) control using `NumberFormatter` and `CustomFormat` properties.
 
 ## Currency, percentage and decimal format
 
