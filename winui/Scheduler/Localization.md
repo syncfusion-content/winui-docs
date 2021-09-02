@@ -54,8 +54,6 @@ this.Schedule.CalendarIdentifier = "HijriCalendar";
 {% endhighlight %}
 {% endtabs %}
 
-![Hijri Calendar](Localization_Images/CalendarTypes.png)
-
 ### DateTime values in Calendar Types
 You can give all the DateTime values such as `DisplayDate,` `SelectedDate,` `BlackoutDates,` Appointment `StartTime,` and `EndTime,` `SpecialTimeRegion` Start and End time values in two ways when the calendar identifier is specified other than `GregorianCalendar.`
 
@@ -75,5 +73,3 @@ You can localize the scheduler using the `Language` property. The default value 
 this.Schedule..Language = "fr-FR";
 {% endhighlight %}
 {% endtabs %}
-
-![Hijri Calendar](Localization_Images/Language.png)
