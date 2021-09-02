@@ -7,10 +7,10 @@ control: SfScheduler
 documentation: ug
 ---
 # Reminder in WinUI Scheduler (SfScheduler)
-The WinUI scheduler notify a particular appointment to enable the `ReminderAlertOpening` event to the `Reminders`. An appointment can have one or more reminders. 
+The WinUI scheduler notify an appointment reminder by using the `ReminderAlertOpening` event. An appointment can have one or more reminders. 
 
 ## Enable reminder
-Reminder can be set by setting the `EnableReminder` property to `true.` By default, it is set to `true.` The reminder time can be set by using the `Reminders` property of `ScheduleAppointment.`
+Reminder can be enable by setting the `EnableReminder` property to `true` which is used to trigger the `ReminderAlertOpening` event to notify appointment reminder. The reminder can be set by using the `Reminders` property of `ScheduleAppointment.`
 
 {% tabs %}
 {% highlight xaml %}
