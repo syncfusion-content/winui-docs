@@ -354,7 +354,7 @@ N> Non-Editable columns does not support `CellTemplate`.
 
 ## Data Formatting
 
-`GridColumn` supports to format the data using [Converter](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.binding?view=winui-3.0) properties, by defining `GridColumn.DisplayBinding` and `GridColumn.ValueBinding`. `GridColumn.DisplayBinding` formats the data in display mode. `GridColumn.ValueBinding` formats the data in edit mode.
+`GridColumn` supports to format the data using [Converter](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.binding.converter?view=winui-3.0) properties, by defining `GridColumn.DisplayBinding` and `GridColumn.ValueBinding`. `GridColumn.DisplayBinding` formats the data in display mode. `GridColumn.ValueBinding` formats the data in edit mode.
 
 ### Format column using Converter
 
@@ -1729,7 +1729,7 @@ Selector
 </tr>
 </table>
 
-Below code, creates the `GridCellTextBoxRendererExt` to change the fore ground of CustomerID column and replacing created renderer to `CellRenderers`.
+Below code, creates the `GridCellTextBoxRendererExt` to change the foreground of CustomerID column and replacing created renderer to `CellRenderers`.
 
 {% tabs %}
 {% highlight c# %}
