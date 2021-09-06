@@ -9,7 +9,7 @@ documentation: ug
 
 # Column Sizing in WinUI TreeGrid
 
-SfTreeGrid allows you to set the column widths based on certain logic using [SfTreeGrid.ColumnWidthMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ColumnWidthMode) or [TreeGridColumn.ColumnSizer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ColumnSizer) property. 
+SfTreeGrid allows you to set the column widths based on certain logic using [SfTreeGrid.ColumnWidthMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ColumnWidthMode) or [TreeGridColumn.ColumnWidthMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ColumnWidthMode) property. 
 
 Below is the list of predefined column sizing options available.
 
@@ -125,14 +125,14 @@ public class DisplayBindingConverter : IValueConverter
 
 ![Column Sizing in WinUI TreeGrid](Column-Sizing-images/winui-treegrid-column-sizing.png)
 
-N> The `TreeGridColumn.ColumnSizer` takes higher priority than the `SfTreeGrid.ColumnWidthMode`.
+N> The `TreeGridColumn.ColumnWidthMode` takes higher priority than the `SfTreeGrid.ColumnWidthMode`.
 
 ### Refreshing ColumnSizer at runtime
 
-You can refresh the `ColumnSizer` at runtime by calling [SfTreeGrid.TreeGridColumnSizer.Refresh](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnSizer.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumnSizer_Refresh) method.
-SfTreeGrid support to recalculates the column auto width by calling reset methods of `TreeGridColumnSizer`. [TreeGridColumnSizer.ResetAutoCalculationforAllColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_ResetAutoCalculationforAllColumns) method reset widths to all columns. [TreeGridColumnSizer.ResetAutoCalculation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_ResetAutoCalculation_Syncfusion_UI_Xaml_Grids_GridColumnBase_) method reset the width to particular column.
+You can refresh the `ColumnSizer` at runtime by calling [SfTreeGrid.ColumnSizer.Refresh](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnSizer.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumnSizer_Refresh) method.
+SfTreeGrid support to recalculates the column auto width by calling reset methods of `ColumnSizer`. [ColumnSizer.ResetAutoCalculationforAllColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_ResetAutoCalculationforAllColumns) method reset widths to all columns. [ColumnSizer.ResetAutoCalculation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_ResetAutoCalculation_Syncfusion_UI_Xaml_Grids_GridColumnBase_) method reset the width to particular column.
 
-N> The `TreeGridColumnSizer.ResetAutoCalculationforAllColumns` or `TreeGridColumnSizer.ResetAutoCalculation` methods applicable for Auto, FillColumn, AutoFillColumn, SizeToCells types.
+N> The `ColumnSizer.ResetAutoCalculationforAllColumns` or `ColumnSizer.ResetAutoCalculation` methods applicable for Auto, FillColumn, AutoFillColumn, SizeToCells types.
 
 For example, you can refresh all the column&#39;s width based on the cell contents of newly added records at runtime. 
 
@@ -140,8 +140,8 @@ For example, you can refresh all the column&#39;s width based on the cell conten
 {% highlight c# %}
 var viewModel = this.treeGrid.DataContext as ViewModel;
 viewModel.PersonDetails.Add(new PersonInfo("Smith", "Anders","Red", new DateTime(2008, 10, 26), null));
-this.treeGrid.TreeGridColumnSizer.ResetAutoCalculationforAllColumns();
-this.treeGrid.TreeGridColumnSizer.Refresh();   
+this.treeGrid.ColumnSizer.ResetAutoCalculationforAllColumns();
+this.treeGrid.ColumnSizer.Refresh();   
 {% endhighlight %}
 {% endtabs %}
 
@@ -163,11 +163,11 @@ this.treeGrid.TreeGridColumnSizer.Refresh();
 
 ### Customizing built-in column sizing logic
 
-SfTreeGrid process column sizing operations in [TreeGridColumnSizer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnSizer.html) class. You can customize the column sizing operations by overriding `GridColumnSizer` and set it to `SfTreeGrid.TreeGridColumnSizer`.
+SfTreeGrid process column sizing operations in [TreeGridColumnSizer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnSizer.html) class. You can customize the column sizing operations by overriding `TreeGridColumnSizer` and set it to `SfTreeGrid.ColumnSizer`.
 
 {% tabs %}
 {% highlight c# %}
-this.treeGrid.TreeGridColumnSizer = new TreeGridColumnSizerExt(treeGrid);
+this.treeGrid.ColumnSizer = new TreeGridColumnSizerExt(treeGrid);
 
 public class TreeGridColumnSizerExt:TreeGridColumnSizer
 {
@@ -200,23 +200,23 @@ By default, the ColumnSizer calculates column&#39;s width based on fixed `FontSi
 
 #### Changing SortIcon width
 
-You can change the filter icon and sort icon widths for column width calculation by setting [TreeGridColumnSizer.SortIconWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_SortIconWidth) properties.
+You can change the filter icon and sort icon widths for column width calculation by setting [ColumnSizer.SortIconWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_SortIconWidth) properties.
 
 {% tabs %}
 {% highlight c# %}
-this.treeGrid.TreeGridColumnSizer.SortIconWidth = 20;
+this.treeGrid.ColumnSizer.SortIconWidth = 20;
 {% endhighlight %}
 {% endtabs %}
 
 #### Changing Font settings for SfTreeGrid
 
-You can change the `font settings` for column width calculation by setting [TreeGridColumnSizer.FontSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_FontSize), [TreeGridColumnSizer.FontFamily](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_FontFamily) and [TreeGridColumnSizer.Margin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_Margin) properties.  This settings will be considered for all columns.
+You can change the `font settings` for column width calculation by setting [ColumnSizer.FontSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_FontSize), [ColumnSizer.FontFamily](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_FontFamily) and [ColumnSizer.Margin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_Margin) properties.  This settings will be considered for all columns.
 
 {% tabs %}
 {% highlight c# %}
-this.treeGrid.TreeGridColumnSizer.FontSize = 10.0;
-this.treeGrid.TreeGridColumnSizer.FontFamily = new FontFamily("TimesNewRoman");
-this.treeGrid.TreeGridColumnSizer.Margin = new Thickness(9, 3, 1, 3);
+this.treeGrid.ColumnSizer.FontSize = 10.0;
+this.treeGrid.ColumnSizer.FontFamily = new FontFamily("TimesNewRoman");
+this.treeGrid.ColumnSizer.Margin = ThicknessHelper.FromLenghts(9, 3, 1, 3);
 {% endhighlight %}
 {% endtabs %}
 

@@ -362,7 +362,7 @@ void TreeGrid_CurrentCellValueChanged(object sender, TreeGridCurrentCellValueCha
 {% endhighlight %}
 {% endtabs %}
 
-N> For TreeGridComboBoxColumn, you have to use the 'CurrentCellDropDownSelectionChanged' event.
+N> For TreeGridComboBoxColumn, you have to use the `CurrentCellDropDownSelectionChanged` event.
 
 ### CurrentCellDropDownSelectionChanged Event
 

@@ -477,7 +477,7 @@ You can prevent the automatic column generation by setting [SfTreeGrid.AutoGener
 {% endhighlight %}
 {% endtabs %}
 
-Below are the list of column types provided in SfDataGrid.
+Below are the list of column types provided in SfTreeGrid.
 
 <table>
 <tr>
@@ -493,7 +493,7 @@ Comments
 GridTextColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts textual content in its cells.
+Represents SfTreeGrid column that hosts textual content in its cells.
 </td>
 </tr>
 <tr>
@@ -501,7 +501,7 @@ Represents SfDataGrid column that hosts textual content in its cells.
 GridComboBoxColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts <code>ComboBox</code> controls in its cells.
+Represents SfTreeGrid column that hosts <code>ComboBox</code> controls in its cells.
 </td>
 </tr>
 <tr>
@@ -509,7 +509,7 @@ Represents SfDataGrid column that hosts <code>ComboBox</code> controls in its ce
 GridCheckBoxColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts <code>CheckBox</code> controls in its cells.
+Represents SfTreeGrid column that hosts <code>CheckBox</code> controls in its cells.
 </td>
 </tr>
 <tr>
@@ -517,7 +517,7 @@ Represents SfDataGrid column that hosts <code>CheckBox</code> controls in its ce
 GridHyperlinkColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts <code>HyperlinkButton</code> controls in its cells.
+Represents SfTreeGrid column that hosts <code>HyperlinkButton</code> controls in its cells.
 </td>
 </tr>
 <tr>
@@ -525,7 +525,7 @@ Represents SfDataGrid column that hosts <code>HyperlinkButton</code> controls in
 GridTemplateColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts template-specified content in its cells
+Represents SfTreeGrid column that hosts template-specified content in its cells
 </td>
 </tr>
 </table>

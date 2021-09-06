@@ -17,8 +17,8 @@ Built-in validations through `INotifyDataErrorInfo` and Data annotation attribut
 
  `GridColumn.DataValidationMode` takes priority than `SfDataGrid.DataValidationMode`.
 
-* `GridValidationMode .InView` - displays error icons and tips alone.
-* `GridValidationMode .None` - disables built-in validation support.
+* `GridValidationMode.InView` - displays error icons and tips alone.
+* `GridValidationMode.None` - disables built-in validation support.
 
 ## Built-in validation using INotifyDataErrorInfo
 
@@ -75,7 +75,7 @@ public class Employee : INotifyDataErrorInfo
 {% endhighlight %}
 {% endtabs %}
 
-Enable built-in validation support by setting [SfDataGrid.DataValidationMode]((https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_DataValidationMode) or [GridColumn.DataValidationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_DataValidationMode) property to `InView`.
+Enable built-in validation support by setting [SfDataGrid.DataValidationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_DataValidationMode) or [GridColumn.DataValidationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_DataValidationMode) property to `InView`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -93,7 +93,7 @@ this.sfDataGrid.DataValidationMode = GridValidationMode.InView;
 
 ## Built-in validation using Data Annotation
 
-You can validate the data using **data annotation attributes** by setting [SfDataGrid.DataValidationMode]((https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_DataValidationMode) or [GridColumn.DataValidationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_DataValidationMode) property to `InView`.
+You can validate the data using **data annotation attributes** by setting [SfDataGrid.DataValidationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_DataValidationMode) or [GridColumn.DataValidationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_DataValidationMode) property to `InView`.
 
 ### Using different annotations
 
@@ -710,7 +710,7 @@ You can do both built-in and custom validation of data in `DetailsViewDataGrid`.
 
 ### Built-in validations
 
-You can validate the bound data based on [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.inotifydataerrorinfo?view=winui-3.0-preview) or [Data Annotation](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.aspx) attributes by setting [DataValidationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataValidation.html) property of [GridViewDefinition.DataGrid]https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid).
+You can validate the bound data based on [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.inotifydataerrorinfo?view=winui-3.0-preview) or [Data Annotation](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.aspx) attributes by setting [DataValidationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataValidation.html) property of [GridViewDefinition.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid).
 
 {% tabs %}
 {% highlight xaml %}

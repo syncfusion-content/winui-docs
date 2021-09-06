@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection in WinUI TreeGrid
 
-SfTreeGrid allows you select one or more rows. 
+SfTreeGrid allows you to select one or more rows. 
 
 ## Current cell navigation
 

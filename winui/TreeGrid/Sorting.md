@@ -98,8 +98,8 @@ Following are the sequence of sorting orders when clicking column header,
 
 ## Multi column sorting
 
-SfTreeGrid control allows you to sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the &lt;kbd&gt;Ctrl&lt;/kbd&gt; key.
-In the below screen shot, the `First Name` column sorted. Then the `Employee ID` column is sorted against the `First Name` data by clicking column header by pressing &lt;kbd&gt;Ctrl&lt;/kbd&gt; key. The sorting state of `First Name` column is preserved and `Employee ID` column sorted against `First Name` column.
+SfTreeGrid control allows you to sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the <kbd>Ctrl</kbd> key.
+In the below screen shot, the `First Name` column sorted. Then the `Employee ID` column is sorted against the `First Name` data by clicking column header by pressing <kbd>Ctrl</kbd> key. The sorting state of `First Name` column is preserved and `Employee ID` column sorted against `First Name` column.
 
 ![Multi Column Sorting in WinUI TreeGrid](Sorting-images/winui-treegrid-multi-sorting.png)
 

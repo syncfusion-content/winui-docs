@@ -228,7 +228,7 @@ private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventA
 
 ### PasteCellContent
 
-The [PasteGridCellContent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_PasteCellContent) event occurs when a cell is being pasted. [TreeGridCopyPasteCellEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCopyPasteCellEventArgs_ClipBoardValue) provides information to the `PasteGridCellContent` event, which has the following members:
+The [PasteCellContent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_PasteCellContent) event occurs when a cell is being pasted. [TreeGridCopyPasteCellEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCopyPasteCellEventArgs_ClipBoardValue) provides information to the `PasteGridCellContent` event, which has the following members:
 
 * [ClipBoardValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCopyPasteCellEventArgs_ClipBoardValue): Returns cell value.
 

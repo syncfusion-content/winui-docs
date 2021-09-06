@@ -640,7 +640,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 
 ## Handling events for DetailsViewDataGrid
 
-You can handle [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDataGrid.html) events by wiring events to [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid) where sender is ViewDefinition.DataGrid. In another way, you can handle DetailsViewDataGrid events also through ParentDataGrid events by setting [NotifyEventsToParentDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_NotifyEventsToParentDataGrid) property of ViewDefinition.DataGrid.
+You can handle [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDataGrid.html) events by wiring events to [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid) where sender is  [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid). In another way, you can handle DetailsViewDataGrid events also through ParentDataGrid events by setting [NotifyEventsToParentDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_NotifyEventsToParentDataGrid) property of ViewDefinition.DataGrid.
 
 ### When AutoGenerateRelations is false
 
@@ -862,7 +862,7 @@ void dataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEv
 {% endhighlight %}
 {% endtabs %}
 
-N> For customizing selection in second level nested grid, you can refer [here](#defining-properties-for-detailsViewDataGrid).
+N> For customizing selection in second level nested grid, you can refer [here](#defining-properties-for-detailsviewdatagrid).
  
 ### Changing header appearance of DetailsViewDataGrid
 
@@ -1003,7 +1003,7 @@ Here, all the DetailsViewDataGrids up to second level will be expanded.
 
 ### Expand or collapse Details View based on record index	
 
-You can expand or collapse `DetailsViewDataGrid` based on the record index by using [ExpandDetailsViewAt](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ExpandAllDetailsView_System_Int32_) and [CollapseDetailsViewAt](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CollapseDetailsViewAt_System_Int32_) methods.
+You can expand or collapse `DetailsViewDataGrid` based on the record index by using [ExpandDetailsViewAt](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ExpandDetailsViewAt_System_Int32_) and [CollapseDetailsViewAt](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CollapseDetailsViewAt_System_Int32_) methods.
 
 {% tabs %}
 {% highlight c# %}

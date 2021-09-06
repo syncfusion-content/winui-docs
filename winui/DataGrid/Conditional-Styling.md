@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Conditional styling in WinUIF DataGrid (SfDataGrid)
+# Conditional styling in WinUI DataGrid (SfDataGrid)
 
 You can style the DataGrid and its inner elements (cells, rows and columns) conditionally based on data Using StyleSelector.
 
@@ -244,7 +244,7 @@ Here, caption summary cells are customized based on `OrderID` summary value.
 
 ### Conditional styling of caption summary cell based on column
 
-The caption summary cells can be conditionally customized summary column. 
+The caption summary cells can be conditionally customized based on summary column. 
 
 Here, caption summary cells are customized based on `OrderID` summary column.
 
@@ -307,7 +307,7 @@ public class SelectorClass : StyleSelector
 
 ## Group summary cell style
 
-Group summary cells can be customized conditionally by getting particular summary value from [SummaryValues](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.SummaryRecordEntry.html#Syncfusion_UI_Xaml_Data_SummaryRecordEntry_SummaryValues) through converter or style selector. Likewise, you can also customize the group summary cell based on various properties exposed in [GridSummaryRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html) (example: [ShowSummaryInRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_ShowSummaryInRow) property).
+Group summary cells can be customized conditionally by getting particular summary value from [SummaryValues](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.SummaryRecordEntry.html#Syncfusion_UI_Xaml_Data_SummaryRecordEntry_SummaryValues) through converter or style selector. Likewise, you can also customize the group summary cell based on various properties exposed in [GridSummaryRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html) (example: [ShowSummaryInRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_ShowSummaryInRow) property).
 
 ### Conditional styling of group summary cell using style selector
 
@@ -537,7 +537,7 @@ Here, group summary rows are customized based on `TotalPrice` summary value whet
 
 ## Table summary cell
 
-Table summary cells can be customized conditionally by getting particular summary value from [SummaryValues](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.SummaryRecordEntry.html#Syncfusion_UI_Xaml_Data_SummaryRecordEntry_SummaryValues) through `converter` or `style selector`. Likewise, you can also customize the table summary cell based on various properties exposed in [GridSummaryRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.htm) (example: [ShowSummaryInRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_ShowSummaryInRow) property).
+Table summary cells can be customized conditionally by getting particular summary value from [SummaryValues](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.SummaryRecordEntry.html#Syncfusion_UI_Xaml_Data_SummaryRecordEntry_SummaryValues) through `converter` or `style selector`. Likewise, you can also customize the table summary cell based on various properties exposed in [GridSummaryRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html) (example: [ShowSummaryInRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_ShowSummaryInRow) property).
 
 ### Conditional styling of table summary cell using style selector
 

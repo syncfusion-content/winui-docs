@@ -168,10 +168,10 @@ N> `IsExpandedPropertyName` property is not supported for unbound mode and it ac
 
 ## Programmatic Expand and Collapse
 
-The TreeView allows programmatic expand and collapse based on the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) and level by using following methods.
+The TreeView allows programmatic expand and collapse based on the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html) and level by using following methods.
 
-* [ExpandNode(TreeViewNode item)](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpandNode_Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_) - Method to expand the particular `TreeViewNode` passed to it.
-* [CollapseNode(TreeViewNode item)](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CollapseNode_Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_) - Method to collapse the particular `TreeViewNode` passed to it.
+* [ExpandNode(TreeViewNode item)](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpandNode_Syncfusion_UI_Xaml_TreeView_TreeViewNode_) - Method to expand the particular `TreeViewNode` passed to it.
+* [CollapseNode(TreeViewNode item)](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CollapseNode_Syncfusion_UI_Xaml_TreeView_TreeViewNode_) - Method to collapse the particular `TreeViewNode` passed to it.
 * [ExpandNodes(int level)](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpandNodes_System_Int32_) - Method to expand all the items in specific level passed to it.
 * [CollapseNodes(int level)](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CollapseNodes_System_Int32_) - Method to expand all the items in specific level passed to it.
 
@@ -194,7 +194,7 @@ treeView.CollapseNode(node);
 
 ### Expand and Collapse all the nodes
 
-Expand and collapse all the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) programmatically at runtime by using the `TreeView.ExpandAll` method and `TreeView.CollapseAll` method.
+Expand and collapse all the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html) programmatically at runtime by using the `TreeView.ExpandAll` method and `TreeView.CollapseAll` method.
 
 {% tabs %}
 {% highlight c# %}
