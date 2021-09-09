@@ -691,7 +691,7 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Ship City", Mappi
 
 ## GridNumericColumn
 
-`GridNumericColumn` derived from `GridTextColumnBase` which hosts `NumberBox` in edit mode.
+`GridNumericColumn` derived from `GridTextColumnBase` which hosts [NumberBox](https://https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) in edit mode.
 
 {% tabs %}
 {% highlight xaml %}
@@ -795,10 +795,9 @@ The `PlaceHolderText` does not shown, when the `AllowNull` is `false`.
 
 ![WinUI DataGrid Column with NumericColumn](Column-Types_images/winui-datagrid-NumericColumn_AllowNullValue-column.png)
 
+## Restrict value within range
 
-# Restrict value within range
-
-You can restrict the users to enter input within a minimum and maximum range in `GridNumericColumn` using the [MinValue] and[MaxValue]properties. The default value of the `MinValue` property is **double.MinValue** and `MaxValue` property is **double.MaxValue**.
+You can restrict the users to enter input within a minimum and maximum range in `GridNumericColumn` using the [MinValue] and [MaxValue]properties. The default value of the `MinValue` property is **double.MinValue** and `MaxValue` property is **double.MaxValue**.
 
 {% tabs %}
 {% highlight XAML %}
