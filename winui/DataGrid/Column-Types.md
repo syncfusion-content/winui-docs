@@ -691,7 +691,7 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Ship City", Mappi
 
 ## GridNumericColumn
 
-`GridNumericColumn` derived from `GridTextColumnBase` which hosts [NumberBox](https://https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) in edit mode.
+`GridNumericColumn` derived from `GridTextColumnBase` which hosts [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) in edit mode.
 
 {% tabs %}
 {% highlight xaml %}
@@ -707,7 +707,6 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Ship City", Mappi
         <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
     </syncfuion:SfDataGrid.Columns>
 </syncfuion:SfDataGrid>
-
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridNumericColumn()
@@ -730,10 +729,8 @@ N> [Refer here](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.n
 
 {% tabs %}
 {% highlight c# %}
-
 // Format numericColumn in percent
 numericColumn.NumberFormatter = new PercentFormatter();
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -757,13 +754,10 @@ N> When using both the `DisplayNumberFormat` and the `NumberFormatter` propertie
         <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
     </syncfusion:SfDataGrid.Columns>
 </syncfusion:SfDataGrid>
-
 {% endhighlight %}
 {% highlight c# %}
-
 // Format numericColumn in percent
 numericColumn.DisplayNumberFormat = "P2";
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -789,7 +783,6 @@ The `PlaceHolderText` does not shown, when the `AllowNull` is `false`.
         <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
     </syncfuion:SfDataGrid.Columns>
 </syncfuion:SfDataGrid>
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -801,7 +794,6 @@ You can restrict the users to enter input within a minimum and maximum range in 
 
 {% tabs %}
 {% highlight XAML %}
-
 <syncfuion:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
@@ -810,7 +802,6 @@ You can restrict the users to enter input within a minimum and maximum range in 
         <syncfuion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" MinValue="30" MaxValue="200"/>
     </syncfuion:SfDataGrid.Columns>
 </syncfuion:SfDataGrid>
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -820,7 +811,6 @@ You can increase or decrease the value of the `GridNumericColumn` using the up-d
 
 {% tabs %}
 {% highlight XAML %}
-
 <syncfuion:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
@@ -829,7 +819,6 @@ You can increase or decrease the value of the `GridNumericColumn` using the up-d
         <syncfuion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" UpDownPlacementMode="InLine"/>
     </syncfuion:SfDataGrid.Columns>
 </syncfuion:SfDataGrid>
-
 {% endhighlight %}
 {% endtabs %}
 
