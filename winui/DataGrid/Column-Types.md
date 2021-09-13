@@ -623,7 +623,9 @@ GridColumn allows you to change the alignment of `GridCell` and `GridHeaderCellC
 
 1. GridTextColumn
 
-2. GridTemplateColumn
+2. GridNumericColumn
+
+3. GridTemplateColumn
 
 ### GridTextColumnBase properties
 
