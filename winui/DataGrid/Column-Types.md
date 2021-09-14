@@ -706,9 +706,9 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Ship City", Mappi
                        AutoGenerateColumns="False" 
                        AllowEditing="True" >
     <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID"/>
-        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name"/>
-        <syncfusion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity"/>
+        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <syncfusion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" />
         <syncfusion:GridTextColumn MappingName="Country" />
         <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
     </syncfusion:SfDataGrid.Columns>
@@ -750,12 +750,13 @@ N> When using both the `DisplayNumberFormat` and the `NumberFormatter` propertie
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
-                       ItemsSource="{Binding Orders}">
+                       ItemsSource="{Binding Orders}"
+                       AllowEditing="True" >
     <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID"/>
+        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
         <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
         <syncfusion:GridNumericColumn x:Name="numericColumn" HeaderText="Quantity"
-                                      MappingName="Quantity" DisplayNumberFormat="P2"/>
+                                      MappingName="Quantity" DisplayNumberFormat="P2" />
         <syncfusion:GridTextColumn MappingName="Country" />
         <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
     </syncfusion:SfDataGrid.Columns>
@@ -779,9 +780,10 @@ The `PlaceholderText` does not shown, when the `AllowNull` is `false`.
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
-                       AutoGenerateColumns="False" >
+                       AutoGenerateColumns="False"
+                       AllowEditing="True" >
     <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID"/>
+        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
         <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
         <syncfusion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" AllowNull="True" 
                                      PlaceholderText="Enter a value" />
@@ -805,7 +807,7 @@ You can restrict the users to enter input within a minimum and maximum range in 
                        AutoGenerateColumns="False" 
                        AllowEditing="True" >
     <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" MinValue="30" MaxValue="200"/>
+        <syncfusion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" MinValue="30" MaxValue="200" />
     </syncfusion:SfDataGrid.Columns>
 </syncfusion:SfDataGrid>
 {% endhighlight %}
@@ -822,7 +824,7 @@ You can increase or decrease the value of the `GridNumericColumn` using the up-d
                        AutoGenerateColumns="False" 
                        AllowEditing="True" >
     <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" UpDownPlacementMode="InLine"/>
+        <syncfusion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" UpDownPlacementMode="InLine" />
     </syncfusion:SfDataGrid.Columns>
 </syncfusion:SfDataGrid>
 {% endhighlight %}
