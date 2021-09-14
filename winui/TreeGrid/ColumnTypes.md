@@ -668,18 +668,18 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid x:Name="treegrid" AutoExpandMode="RootNodesExpanded" 
+<treeGrid:SfTreeGrid x:Name="treegrid" AutoExpandMode="RootNodesExpanded" 
                        AutoGenerateColumns="False" ItemsSource="{Binding EmployeeDetails}"
                        ChildPropertyName="ReportsTo" ParentPropertyName="ID"
                        SelfRelationRootValue="-1"  AllowEditing="True" >
-                <syncfusion:SfTreeGrid.Columns >
-                    <syncfusion:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
-                    <syncfusion:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
-                    <syncfusion:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary" />
-                    <syncfusion:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
-                    <syncfusion:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
-                </syncfusion:SfTreeGrid.Columns>
-</syncfusion:SfTreeGrid>
+                <treeGrid:SfTreeGrid.Columns>
+                    <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
+                    <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
+                    <treeGrid:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary" />
+                    <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
+                    <treeGrid:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
+                </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.treeGrid.Columns.Add(new TreeGridNumericColumn()
@@ -717,19 +717,19 @@ N> When using both the `DisplayNumberFormat` and the `NumberFormatter` propertie
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid x:Name="treegrid" AutoExpandMode="RootNodesExpanded" 
+<treeGrid:SfTreeGrid x:Name="treegrid" AutoExpandMode="RootNodesExpanded" 
                        AutoGenerateColumns="False" ItemsSource="{Binding EmployeeDetails}"
                        ChildPropertyName="ReportsTo" ParentPropertyName="ID"
                        SelfRelationRootValue="-1"  AllowEditing="True" >
-                <syncfusion:SfTreeGrid.Columns >
-                    <syncfusion:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
-                    <syncfusion:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
-                    <syncfusion:TreeGridNumericColumn x:Name="numericColumn" MappingName="Salary" HeaderText="Salary"
+                <treeGrid:SfTreeGrid.Columns>
+                    <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
+                    <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
+                    <treeGrid:TreeGridNumericColumn x:Name="numericColumn" MappingName="Salary" HeaderText="Salary"
                                                       DisplayNumberFormat="C2" />
-                    <syncfusion:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
-                    <syncfusion:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
-                </syncfusion:SfTreeGrid.Columns>
-</syncfusion:SfTreeGrid>
+                    <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
+                    <treeGrid:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
+                </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% highlight c# %}
 // Format numericColumn in currency
@@ -747,19 +747,19 @@ The `PlaceholderText` does not shown, when the `AllowNull` is `false`.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid x:Name="treegrid" AutoExpandMode="RootNodesExpanded" 
+<treeGrid:SfTreeGrid x:Name="treegrid" AutoExpandMode="RootNodesExpanded" 
                        AutoGenerateColumns="False" ItemsSource="{Binding EmployeeDetails}"
                        ChildPropertyName="ReportsTo" ParentPropertyName="ID"
                        SelfRelationRootValue="-1"  AllowEditing="True" >
-                <syncfusion:SfTreeGrid.Columns >
-                    <syncfusion:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
-                    <syncfusion:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
-                    <syncfusion:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary"
+                <treeGrid:SfTreeGrid.Columns>
+                    <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
+                    <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
+                    <treeGrid:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary"
                                                       AllowNull="True" PlaceholderText="Enter a value" />
-                    <syncfusion:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
-                    <syncfusion:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
-                </syncfusion:SfTreeGrid.Columns>
-</syncfusion:SfTreeGrid>
+                    <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
+                    <treeGrid:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
+                </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -771,15 +771,15 @@ You can restrict the users to enter input within a minimum and maximum range in 
 
 {% tabs %}
 {% highlight XAML %}
-<syncfusion:SfTreeGrid x:Name="treegrid" AutoExpandMode="RootNodesExpanded" 
+<treeGrid:SfTreeGrid x:Name="treegrid" AutoExpandMode="RootNodesExpanded" 
                        AutoGenerateColumns="False" ItemsSource="{Binding EmployeeDetails}"
                        ChildPropertyName="ReportsTo" ParentPropertyName="ID"
                        SelfRelationRootValue="-1"  AllowEditing="True" >
-                <syncfusion:SfTreeGrid.Columns >
-                    <syncfusion:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary"
+                <treeGrid:SfTreeGrid.Columns>
+                    <treeGrid:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary"
                                                       MaxValue="100000" MinValue="5000" />
-                </syncfusion:SfTreeGrid.Columns>
-</syncfusion:SfTreeGrid>
+                </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -789,15 +789,15 @@ You can increase or decrease the value of the `TreeGridNumericColumn` using the 
 
 {% tabs %}
 {% highlight XAML %}
-<syncfusion:SfTreeGrid x:Name="treegrid" AutoExpandMode="RootNodesExpanded" 
+<treeGrid:SfTreeGrid x:Name="treegrid" AutoExpandMode="RootNodesExpanded" 
                        AutoGenerateColumns="False" ItemsSource="{Binding EmployeeDetails}"
                        ChildPropertyName="ReportsTo" ParentPropertyName="ID"
                        SelfRelationRootValue="-1"  AllowEditing="True" >
-                <syncfusion:SfTreeGrid.Columns >
-                    <syncfusion:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary"
+                <treeGrid:SfTreeGrid.Columns>
+                    <treeGrid:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary"
                                                       UpDownPlacementMode="InLine" />
-                </syncfusion:SfTreeGrid.Columns>
-</syncfusion:SfTreeGrid>
+                </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
 
