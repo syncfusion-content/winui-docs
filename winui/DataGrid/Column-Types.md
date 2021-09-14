@@ -684,20 +684,20 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Ship City", Mappi
 
 {% tabs %}
 {% highlight xaml %}
-<syncfuion:SfDataGrid x:Name="dataGrid" 
+<syncfusion:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
                       ColumnWidthMode="Star"
                        AllowEditing="True" >
-    <syncfuion:SfDataGrid.Columns>
-        <syncfuion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
-        <syncfuion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfuion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <syncfuion:GridTextColumn MappingName="Country" />
-        <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-        <syncfuion:GridDateColumn MappingName="Date" />
-    </syncfuion:SfDataGrid.Columns>
-</syncfuion:SfDataGrid>
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <syncfusion:GridTextColumn MappingName="Country" />
+        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+        <syncfusion:GridDateColumn MappingName="Date" />
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridDateColumn() { HeaderText = "Date", MappingName = "Date" });
@@ -712,20 +712,20 @@ You can edit and display the selected date with various formatting like date, mo
 
 {% tabs %}
 {% highlight xaml %}
-<syncfuion:SfDataGrid x:Name="dataGrid" 
+<syncfusion:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
                        ColumnWidthMode="Star"
                        AllowEditing="True" >
-    <syncfuion:SfDataGrid.Columns>
-        <syncfuion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
-        <syncfuion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfuion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <syncfuion:GridTextColumn MappingName="Country" />
-        <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-        <syncfuion:GridDateColumn MappingName="Date" DisplayDateFormat="M" />
-    </syncfuion:SfDataGrid.Columns>
-</syncfuion:SfDataGrid>
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <syncfusion:GridTextColumn MappingName="Country" />
+        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+        <syncfusion:GridDateColumn MappingName="Date" DisplayDateFormat="M" />
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridDateColumn() { HeaderText = "Date", MappingName = "Date" , DisplayDateFormat="M" });
@@ -742,20 +742,20 @@ The `PlaceholderText` does not shown, when the `AllowNull` is `false`.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfuion:SfDataGrid x:Name="dataGrid" 
+<syncfusion:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
                        ColumnWidthMode="Star"
                        AllowEditing="True" >
-    <syncfuion:SfDataGrid.Columns>
-        <syncfuion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
-        <syncfuion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfuion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <syncfuion:GridTextColumn MappingName="Country" />
-        <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-        <syncfuion:GridDateColumn MappingName="Date" AllowNull="True" PlaceholderText="Change the date" />
-    </syncfuion:SfDataGrid.Columns>
-</syncfuion:SfDataGrid>
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <syncfusion:GridTextColumn MappingName="Country" />
+        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+        <syncfusion:GridDateColumn MappingName="Date" AllowNull="True" PlaceholderText="Change the date" />
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
 
 {% endhighlight %}
 {% endtabs %}
@@ -1206,19 +1206,19 @@ this.dataGrid.Columns.Add(new GridImageColumn() { HeaderText = "Flag", MappingNa
 
 {% tabs %}
 {% highlight xaml %}
-<syncfuion:SfDataGrid x:Name="dataGrid" 
+<syncfusion:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
                       ColumnWidthMode="Star"
                        AllowEditing="True" >
-    <syncfuion:SfDataGrid.Columns>
-        <syncfuion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
-        <syncfuion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfuion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <syncfuion:GridTimeColumn MappingName="DeliveredTime" HeaderText="Delivered Time" />
-        <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-    </syncfuion:SfDataGrid.Columns>
-</syncfuion:SfDataGrid>
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <syncfusion:GridTimeColumn MappingName="DeliveredTime" HeaderText="Delivered Time" />
+        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", MappingName = "DeliveredTime" });
@@ -1233,19 +1233,19 @@ You can edit and display the selected time with various formatting like hour, mi
 
 {% tabs %}
 {% highlight xaml %}
-<syncfuion:SfDataGrid x:Name="dataGrid" 
+<syncfusion:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
                        ColumnWidthMode="Star"
                        AllowEditing="True" >
-    <syncfuion:SfDataGrid.Columns>
-        <syncfuion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
-        <syncfuion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfuion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />   
-        <syncfuion:GridTimeColumn MappingName="DeliveredTime" HeaderText="Delivered Time" DisplayTimeFormat="HH:mm tt" />
-        <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-    </syncfuion:SfDataGrid.Columns>
-</syncfuion:SfDataGrid>
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />   
+        <syncfusion:GridTimeColumn MappingName="DeliveredTime" HeaderText="Delivered Time" DisplayTimeFormat="HH:mm tt" />
+        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", MappingName = "DeliveredTime" , DisplayTimeFormat="HH:mm tt" });
@@ -1262,19 +1262,19 @@ The `PlaceholderText` does not shown, when the `AllowNull` is `false`.The defaul
 
 {% tabs %}
 {% highlight xaml %}
-<syncfuion:SfDataGrid x:Name="dataGrid" 
+<syncfusion:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
                        ColumnWidthMode="Star"
                        AllowEditing="True" >
-    <syncfuion:SfDataGrid.Columns>
-        <syncfuion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
-        <syncfuion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfuion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />     
-        <syncfuion:GridTimeColumn MappingName="DeliveredTime" HeaderText="Delivered Time" PlaceholderText="Change the Time" />
-        <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-    </syncfuion:SfDataGrid.Columns>
-</syncfuion:SfDataGrid>
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />     
+        <syncfusion:GridTimeColumn MappingName="DeliveredTime" HeaderText="Delivered Time" PlaceholderText="Change the Time" />
+        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -1317,19 +1317,19 @@ If you want to hide the submit button and select the time directly from the drop
 
 {% tabs %}
 {% highlight xaml %}
-<syncfuion:SfDataGrid x:Name="dataGrid" 
+<syncfusion:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
                        ColumnWidthMode="Star"
                        AllowEditing="True" >
-    <syncfuion:SfDataGrid.Columns>
-        <syncfuion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
-        <syncfuion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfuion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />     
-        <syncfuion:GridTimeColumn MappingName="DeliveredTime" HeaderText="Delivered Time" ShowSubmitButtons="False" />
-        <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-    </syncfuion:SfDataGrid.Columns>
-</syncfuion:SfDataGrid>
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />     
+        <syncfusion:GridTimeColumn MappingName="DeliveredTime" HeaderText="Delivered Time" ShowSubmitButtons="False" />
+        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
 
 {% endhighlight %}
 {% highlight c# %}
