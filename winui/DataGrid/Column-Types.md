@@ -625,7 +625,11 @@ GridColumn allows you to change the alignment of `GridCell` and `GridHeaderCellC
 
 2. GridNumericColumn
 
-3. GridTemplateColumn
+3. GridDateColumn
+
+4. GridTimeColumn
+
+5. GridTemplateColumn
 
 ### GridTextColumnBase properties
 
@@ -697,18 +701,18 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Ship City", Mappi
 
 {% tabs %}
 {% highlight xaml %}
-<syncfuion:SfDataGrid x:Name="dataGrid" 
+<syncfusion:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
                        AllowEditing="True" >
-    <syncfuion:SfDataGrid.Columns>
-        <syncfuion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID"/>
-        <syncfuion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name"/>
-        <syncfuion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity"/>
-        <syncfuion:GridTextColumn MappingName="Country" />
-        <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-    </syncfuion:SfDataGrid.Columns>
-</syncfuion:SfDataGrid>
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID"/>
+        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name"/>
+        <syncfusion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity"/>
+        <syncfusion:GridTextColumn MappingName="Country" />
+        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridNumericColumn()
@@ -723,7 +727,7 @@ this.dataGrid.Columns.Add(new GridNumericColumn()
 
 ## Change the format of numeric value
 
-You can format the value of a `GridNumericColumn` using the [DisplayNumberFormat] or [NumberFormatter]property. The default value of `DisplayNumberFormat` and `NumberFormatter` properties are **null**.
+You can format the value of a `GridNumericColumn` using the `DisplayNumberFormat` or `NumberFormatter` property. The default value of `DisplayNumberFormat` and `NumberFormatter` properties are **null**.
 
 The following example shows how to set `PercentFormatter` for `NumberFormatter` property. 
 
@@ -736,7 +740,7 @@ numericColumn.NumberFormatter = new PercentFormatter();
 {% endhighlight %}
 {% endtabs %}
 
-You can also set `CurrencyFormatter` and `DecimalFormatter` for [NumberFormatter]property to format the values in currency and numeric custom formats.   
+You can also set `CurrencyFormatter` and `DecimalFormatter` for `NumberFormatter` property to format the values in currency and numeric custom formats.   
 
 Using **N**, **C**, and **P** format values, we can apply numeric, currency, and percent custom formats in `DisplayNumberFormat` property.
 
@@ -748,12 +752,12 @@ N> When using both the `DisplayNumberFormat` and the `NumberFormatter` propertie
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
     <syncfusion:SfDataGrid.Columns>
-        <syncfuion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID"/>
-        <syncfuion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID"/>
+        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
         <syncfusion:GridNumericColumn x:Name="numericColumn" HeaderText="Quantity"
                                       MappingName="Quantity" DisplayNumberFormat="P2"/>
-        <syncfuion:GridTextColumn MappingName="Country" />
-        <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+        <syncfusion:GridTextColumn MappingName="Country" />
+        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
     </syncfusion:SfDataGrid.Columns>
 </syncfusion:SfDataGrid>
 {% endhighlight %}
@@ -765,26 +769,26 @@ numericColumn.DisplayNumberFormat = "P2";
 
 ![WinUI DataGrid Column with NumericColumn in Percent Format](Column-Types_images/winui-datagrid-NumericColumn_FormatVales-column.png)
 
-## Null Value Support
+## Null value support
 
-`GridNumericColumn` provides support to restrict or allow null value in columns based on [AllowNull] property. Instead of displaying null values, you can display hint text using [PlaceHolderText] property.
+`GridNumericColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. Instead of displaying null values, you can display hint text using `PlaceholderText` property.
 
-The `PlaceHolderText` does not shown, when the `AllowNull` is `false`.
+The `PlaceholderText` does not shown, when the `AllowNull` is `false`.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfuion:SfDataGrid x:Name="dataGrid" 
+<syncfusion:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" >
-    <syncfuion:SfDataGrid.Columns>
-        <syncfuion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID"/>
-        <syncfuion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <syncfuion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" AllowNull="True" 
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID"/>
+        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <syncfusion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" AllowNull="True" 
                                      PlaceholderText="Enter a value" />
-        <syncfuion:GridTextColumn MappingName="Country" />
-        <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-    </syncfuion:SfDataGrid.Columns>
-</syncfuion:SfDataGrid>
+        <syncfusion:GridTextColumn MappingName="Country" />
+        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -792,35 +796,35 @@ The `PlaceHolderText` does not shown, when the `AllowNull` is `false`.
 
 ## Restrict value within range
 
-You can restrict the users to enter input within a minimum and maximum range in `GridNumericColumn` using the [MinValue] and [MaxValue]properties. The default value of the `MinValue` property is **double.MinValue** and `MaxValue` property is **double.MaxValue**.
+You can restrict the users to enter input within a minimum and maximum range in `GridNumericColumn` using the `MinValue` and `MaxValue` properties. The default value of the `MinValue` property is **double.MinValue** and `MaxValue` property is **double.MaxValue**.
 
 {% tabs %}
 {% highlight XAML %}
-<syncfuion:SfDataGrid x:Name="dataGrid" 
+<syncfusion:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
                        AllowEditing="True" >
-    <syncfuion:SfDataGrid.Columns>
-        <syncfuion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" MinValue="30" MaxValue="200"/>
-    </syncfuion:SfDataGrid.Columns>
-</syncfuion:SfDataGrid>
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" MinValue="30" MaxValue="200"/>
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
 ## UpDown button placement
 
-You can increase or decrease the value of the `GridNumericColumn` using the up-down button. By default, the value of [UpDownPlacementMode] property is **Hidden**. You can change the up-down button position by assigning the value `UpDownPlacementMode` property as **Inline** or **Compact**.
+You can increase or decrease the value of the `GridNumericColumn` using the up-down button. By default, the value of `UpDownPlacementMode` property is **Hidden**. You can change the up-down button position by assigning the value `UpDownPlacementMode` property as **Inline** or **Compact**.
 
 {% tabs %}
 {% highlight XAML %}
-<syncfuion:SfDataGrid x:Name="dataGrid" 
+<syncfusion:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
                        AllowEditing="True" >
-    <syncfuion:SfDataGrid.Columns>
-        <syncfuion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" UpDownPlacementMode="InLine"/>
-    </syncfuion:SfDataGrid.Columns>
-</syncfuion:SfDataGrid>
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" UpDownPlacementMode="InLine"/>
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
