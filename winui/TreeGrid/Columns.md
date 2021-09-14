@@ -32,7 +32,7 @@ Use to display the string data.
 </tr>
 <tr>
 <td>
-{{'[TreeGridNumericColumn]'| markdownify }}
+TreeGridNumericColumn
 </td>
 <td>
 Use to display the numeric data. 

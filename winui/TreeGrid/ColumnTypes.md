@@ -38,10 +38,10 @@ Use to display the string data.
 </tr>
 <tr>
 <td>
-{{'[TreeGridNumericColumn]'| markdownify }}
+TreeGridNumericColumn
 </td>
 <td>
-{{'[TreeGridCellNumericRenderer]'| markdownify }}
+TreeGridCellNumericRenderer
 </td>
 <td>
 Use to display the numeric data. 
@@ -668,7 +668,7 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", 
 
 {% tabs %}
 {% highlight xaml %}
-<treeGrid:SfTreeGrid x:Name="treegrid" AutoExpandMode="RootNodesExpanded" 
+<treeGrid:SfTreeGrid x:Name="treeGrid" AutoExpandMode="RootNodesExpanded" 
                        AutoGenerateColumns="False" ItemsSource="{Binding EmployeeDetails}"
                        ChildPropertyName="ReportsTo" ParentPropertyName="ID"
                        SelfRelationRootValue="-1"  AllowEditing="True" >
@@ -717,7 +717,7 @@ N> When using both the `DisplayNumberFormat` and the `NumberFormatter` propertie
 
 {% tabs %}
 {% highlight xaml %}
-<treeGrid:SfTreeGrid x:Name="treegrid" AutoExpandMode="RootNodesExpanded" 
+<treeGrid:SfTreeGrid x:Name="treeGrid" AutoExpandMode="RootNodesExpanded" 
                        AutoGenerateColumns="False" ItemsSource="{Binding EmployeeDetails}"
                        ChildPropertyName="ReportsTo" ParentPropertyName="ID"
                        SelfRelationRootValue="-1"  AllowEditing="True" >
@@ -747,7 +747,7 @@ The `PlaceholderText` does not shown, when the `AllowNull` is `false`.
 
 {% tabs %}
 {% highlight xaml %}
-<treeGrid:SfTreeGrid x:Name="treegrid" AutoExpandMode="RootNodesExpanded" 
+<treeGrid:SfTreeGrid x:Name="treeGrid" AutoExpandMode="RootNodesExpanded" 
                        AutoGenerateColumns="False" ItemsSource="{Binding EmployeeDetails}"
                        ChildPropertyName="ReportsTo" ParentPropertyName="ID"
                        SelfRelationRootValue="-1"  AllowEditing="True" >
@@ -771,7 +771,7 @@ You can restrict the users to enter input within a minimum and maximum range in 
 
 {% tabs %}
 {% highlight XAML %}
-<treeGrid:SfTreeGrid x:Name="treegrid" AutoExpandMode="RootNodesExpanded" 
+<treeGrid:SfTreeGrid x:Name="treeGrid" AutoExpandMode="RootNodesExpanded" 
                        AutoGenerateColumns="False" ItemsSource="{Binding EmployeeDetails}"
                        ChildPropertyName="ReportsTo" ParentPropertyName="ID"
                        SelfRelationRootValue="-1"  AllowEditing="True" >
@@ -789,7 +789,7 @@ You can increase or decrease the value of the `TreeGridNumericColumn` using the 
 
 {% tabs %}
 {% highlight XAML %}
-<treeGrid:SfTreeGrid x:Name="treegrid" AutoExpandMode="RootNodesExpanded" 
+<treeGrid:SfTreeGrid x:Name="treeGrid" AutoExpandMode="RootNodesExpanded" 
                        AutoGenerateColumns="False" ItemsSource="{Binding EmployeeDetails}"
                        ChildPropertyName="ReportsTo" ParentPropertyName="ID"
                        SelfRelationRootValue="-1"  AllowEditing="True" >
