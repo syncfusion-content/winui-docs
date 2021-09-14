@@ -38,6 +38,17 @@ Use to display the string data.
 </tr>
 <tr>
 <td>
+{{'[TreeGridNumericColumn]'| markdownify }}
+</td>
+<td>
+{{'[TreeGridCellNumericRenderer]'| markdownify }}
+</td>
+<td>
+Use to display the numeric data. 
+</td>
+</tr>
+<tr>
+<td>
 {{'[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html#"")'| markdownify }}
 </td>
 <td>
@@ -572,7 +583,13 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
 
 1. TreeGridTextColumn
 
-2. TreeGridTemplateColumn
+2. TreeGridNumericColumn
+
+3. TreeGridDateColumn
+
+4. TreeGridTimeColumn
+
+5. TreeGridTemplateColumn
 
 ### TreeGridTextColumnBase properties
 
@@ -644,6 +661,141 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", 
 {% endtabs %}
 
 ![Enabled SpellChecker to WinUI TreeGrid Column](Column-Type-images/winui-treegrid-spellchecker.png)
+
+## TreeGridNumericColumn
+
+`TreeGridNumericColumn` derived from `TreeGridTextColumnBase` which hosts [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) in edit mode.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeGrid x:Name="treeGrid" 
+                       ItemsSource="{Binding Orders}"
+                       AutoGenerateColumns="False" 
+                       AllowEditing="True" >
+    <syncfusion:SfTreeGrid.Columns>
+        <syncfusion:TreeGridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfusion:TreeGridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <syncfusion:TreeGridNumericColumn MappingName="Quantity" HeaderText="Quantity" />
+        <syncfusion:TreeGridTextColumn MappingName="Country" />
+        <syncfusion:TreeGridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.treeGrid.Columns.Add(new TreeGridNumericColumn()
+{
+    HeaderText = "Quantity",
+    MappingName = "Quantity",                               
+});
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI TreeGrid Column with NumericColumn](Column-Type-images/winui-treegrid-NumericColumn-column.png)
+
+## Change the format of numeric value
+
+You can format the value of a `TreeGridNumericColumn` using the `DisplayNumberFormat` or `NumberFormatter` property. The default value of `DisplayNumberFormat` and `NumberFormatter` properties are **null**.
+
+The following example shows how to set `CurrencyFormatter` for `NumberFormatter` property. 
+
+N> [Refer here](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting?view=winrt-19041#classes) to know more about the formatting classes that can assigned for `NumberFormatter` property.
+
+{% tabs %}
+{% highlight c# %}
+// Format numericColumn in currency
+numericColumn.NumberFormatter = new CurrencyFormatter();
+{% endhighlight %}
+{% endtabs %}
+
+You can also set `PercentFormatter` and `DecimalFormatter` for `NumberFormatter` property to format the values in percent and numeric custom formats.   
+
+Using **N**, **C**, and **P** format values, we can apply numeric, currency, and percent custom formats in `DisplayNumberFormat` property.
+
+N> When using both the `DisplayNumberFormat` and the `NumberFormatter` properties, the `DisplayNumberFormat` property takes high precedence. 
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeGrid x:Name="treeGrid"                                                                       
+                       AutoGenerateColumns="False" 
+                       ItemsSource="{Binding Orders}"
+                       AllowEditing="True" >
+    <syncfusion:SfTreeGrid.Columns>
+        <syncfusion:TreeGridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfusion:TreeGridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <syncfusion:TreeGridNumericColumn x:Name="numericColumn" HeaderText="Quantity"
+                                      MappingName="Quantity" DisplayNumberFormat="C2" />
+        <syncfusion:TreeGridTextColumn MappingName="Country" />
+        <syncfusion:TreeGridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+// Format numericColumn in currency
+numericColumn.DisplayNumberFormat = "C2";
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI TreeGrid Column with NumericColumn in Currency Format](Column-Type-images/winui-treegrid-NumericColumn_FormatVales-column.png)
+
+## Null value support
+
+`TreeGridNumericColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. Instead of displaying null values, you can display hint text using `PlaceholderText` property.
+
+The `PlaceholderText` does not shown, when the `AllowNull` is `false`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeGrid x:Name="treeGrid" 
+                       ItemsSource="{Binding Orders}"
+                       AutoGenerateColumns="False"
+                       AllowEditing="True" >
+    <syncfusion:SfTreeGrid.Columns>
+        <syncfusion:TreeGridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfusion:TreeGridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <syncfusion:TreeGridNumericColumn MappingName="Quantity" HeaderText="Quantity" AllowNull="True" 
+                                     PlaceholderText="Enter a value" />
+        <syncfusion:TreeGridTextColumn MappingName="Country" />
+        <syncfusion:TreeGridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI TreeGrid Column with NumericColumn](Column-Type-images/winui-treegrid-NumericColumn_AllowNullValue-column.png)
+
+## Restrict value within range
+
+You can restrict the users to enter input within a minimum and maximum range in `TreeGridNumericColumn` using the `MinValue` and `MaxValue` properties. The default value of the `MinValue` property is **double.MinValue** and `MaxValue` property is **double.MaxValue**.
+
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:SfTreeGrid x:Name="treeGrid" 
+                       ItemsSource="{Binding Orders}"
+                       AutoGenerateColumns="False" 
+                       AllowEditing="True" >
+    <syncfusion:SfTreeGrid.Columns>
+        <syncfusion:TreeGridNumericColumn MappingName="Quantity" HeaderText="Quantity" MinValue="30" MaxValue="200" />
+    </syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
+{% endhighlight %}
+{% endtabs %}
+
+## UpDown button placement
+
+You can increase or decrease the value of the `TreeGridNumericColumn` using the up-down button. By default, the value of `UpDownPlacementMode` property is **Hidden**. You can change the up-down button position by assigning the value `UpDownPlacementMode` property as **Inline** or **Compact**.
+
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:SfTreeGrid x:Name="treeGrid" 
+                       ItemsSource="{Binding Orders}"
+                       AutoGenerateColumns="False" 
+                       AllowEditing="True" >
+    <syncfusion:SfTreeGrid.Columns>
+        <syncfusion:TreeGridNumericColumn MappingName="Quantity" HeaderText="Quantity" UpDownPlacementMode="InLine" />
+    </syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
+{% endhighlight %}
+{% endtabs %}
 
 ## TreeGridCheckBoxColumn
 
