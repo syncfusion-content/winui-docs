@@ -1200,6 +1200,145 @@ this.dataGrid.Columns.Add(new GridImageColumn() { HeaderText = "Flag", MappingNa
 
 * [Scale](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.stretchdirection?view=winui-3.0) - You can scale the image using [StretchDirection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridImageColumn.html#Syncfusion_UI_Xaml_DataGrid_GridImageColumn_StretchDirection) property.
 
+## GridTimeColumn
+
+`GridTimeColumn` derived from `GridTextColumnBase` and it  displays columns data as time. It hosts [SfTimePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) element in editing mode.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfuion:SfDataGrid x:Name="dataGrid" 
+                       ItemsSource="{Binding Orders}"
+                       AutoGenerateColumns="False" 
+                      ColumnWidthMode="Star"
+                       AllowEditing="True" >
+    <syncfuion:SfDataGrid.Columns>
+        <syncfuion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <syncfuion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfuion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <syncfuion:GridTimeColumn MappingName="DeliveredTime" HeaderText="Delivered Time" />
+        <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </syncfuion:SfDataGrid.Columns>
+</syncfuion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", MappingName = "DeliveredTime" });
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI DataGrid Column with TimeColumn](Column-Types_images/winui-datagrid-TimeColumn-column.png)
+
+### Change the Format of time value
+
+You can edit and display the selected time with various formatting like hour, minutes,seconds,meridiem, 12-Hour and 24-Hour formats by using the `DisplayTimeFormat` property. The default value of `DisplayTimeFormat` property is **hh:mm tt**. For example below image shown the TimeColumn with `DisplayTimeFormat` as **HH:mm tt**.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfuion:SfDataGrid x:Name="dataGrid" 
+                       ItemsSource="{Binding Orders}"
+                       AutoGenerateColumns="False" 
+                       ColumnWidthMode="Star"
+                       AllowEditing="True" >
+    <syncfuion:SfDataGrid.Columns>
+        <syncfuion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <syncfuion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfuion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />   
+        <syncfuion:GridTimeColumn MappingName="DeliveredTime" HeaderText="Delivered Time" DisplayTimeFormat="HH:mm tt" />
+        <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </syncfuion:SfDataGrid.Columns>
+</syncfuion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", MappingName = "DeliveredTime" , DisplayTimeFormat="HH:mm tt" });
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI DataGrid Column with TimeColumn with 24-Hour format](Column-Types_images/winui-datagrid-TimeColumn_with_HH-column.png)
+
+### Null value support
+
+`GridTimeColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. The default value for `AllowNull` property is `True`.Instead of displaying null values, you can display hint text using `PlaceholderText` property.
+
+The `PlaceholderText` does not shown, when the `AllowNull` is `false`.The default value of `PlaceholderText` property is `select a time`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfuion:SfDataGrid x:Name="dataGrid" 
+                       ItemsSource="{Binding Orders}"
+                       AutoGenerateColumns="False" 
+                       ColumnWidthMode="Star"
+                       AllowEditing="True" >
+    <syncfuion:SfDataGrid.Columns>
+        <syncfuion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <syncfuion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfuion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />     
+        <syncfuion:GridTimeColumn MappingName="DeliveredTime" HeaderText="Delivered Time" PlaceholderText="Change the Time" />
+        <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </syncfuion:SfDataGrid.Columns>
+</syncfuion:SfDataGrid>
+
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", MappingName = "DeliveredTime" PlaceholderText="Change the Time" });
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI DataGrid Column with TimeColumn with PlaceholderText](Column-Types_images/winui-datagrid-TimeColumn_AllowNull-column.png)
+
+### Setting time value range
+
+You can restrict and display the input value within the range using `MinTime` and `MaxTime` properties.
+
+### Editing Support
+
+`GridTimeColumn` provides support to edit the time value in different modes.
+* [Normal](#normal)
+* [Mask](#mask)
+* [None](#none)
+
+#### Normal
+
+To allow editing and perform input validation only after editing is completed, set `EditMode` property value as `Normal`.
+
+For more information refer [here](https://help.syncfusion.com/winui/time-picker/localization-and-formatting#edit-time-using-free-form-editing)
+
+#### Mask
+
+To allow editing and perform input validation as user edits the time value, set `EditMode` property value as `Mask`.
+Default value for `EditMode` property is `Mask`.
+
+For more information refer [here](https://help.syncfusion.com/winui/time-picker/localization-and-formatting#edit-time-using-mask-mode)
+ 
+#### None
+You can Disable the editing in edit part by setting `EditMode` Property as `None`.
+
+### Select time as you scroll spinner
+
+If you want to hide the submit button and select the time directly from the dropdown time spinner without clicking the `Ok` button, use the `ShowSubmitButtons` property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfuion:SfDataGrid x:Name="dataGrid" 
+                       ItemsSource="{Binding Orders}"
+                       AutoGenerateColumns="False" 
+                       ColumnWidthMode="Star"
+                       AllowEditing="True" >
+    <syncfuion:SfDataGrid.Columns>
+        <syncfuion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <syncfuion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfuion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />     
+        <syncfuion:GridTimeColumn MappingName="DeliveredTime" HeaderText="Delivered Time" ShowSubmitButtons="False" />
+        <syncfuion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </syncfuion:SfDataGrid.Columns>
+</syncfuion:SfDataGrid>
+
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", MappingName = "DeliveredTime", ShowSubmitButtons="False" });
+{% endhighlight %}
+{% endtabs %}
+
+![Hide Submit Buttons from Dropdown Time Spinner in WinUI TimeColumn](Column-Types_images/winui-datagrid-TimeColumn_ShowSubmitButtons-column.gif)
+
 ## GridToggleSwitchColumn
 
 [GridToggleSwitchColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridToggleSwitchColumn.html) derived from [GridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html) and it is used to display `Boolean` type data. It hosts [ToggleSwitch](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.toggleswitch?view=winui-3.0) element as [GridCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCell.html) content.
