@@ -203,7 +203,7 @@ public class DisplayBindingConverter : IValueConverter
 
 By default, underlying record is `DataContext` for CellTemplate. So you have to define, template for each column to display values based on `MappingName`. 
 
-You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) for all columns to display value based on MappingName by setting [TreeGridColumn.SetCellBoundValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_SetCellBoundValue)  property to `true`. Setting `SetCellBoundValue` to true, changes the DataContext for CellTemplate to `DataContextHelper` which has the following members,
+You can use the same [DataTemplate](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.datatemplate?view=winui-3.0) for all columns to display value based on MappingName by setting [TreeGridColumn.SetCellBoundValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_SetCellBoundValue)  property to `true`. Setting `SetCellBoundValue` to true, changes the DataContext for CellTemplate to `DataContextHelper` which has the following members,
 
 * `Value` - Return the value base on `MappingName`.
 * `Record` - Returns the underlying data object.
@@ -248,7 +248,7 @@ You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/win
 
 #### Setting CellTemplate based on custom logic using TemplateSelector
 
-`TreeGridColumn` provides support to choose different[DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) based on underlying data object using [TreeGridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_CellTemplateSelector) property.  
+`TreeGridColumn` provides support to choose different[DataTemplate](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.datatemplate?view=winui-3.0) based on underlying data object using [TreeGridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_CellTemplateSelector) property.  
 
 For example, two different templates loaded alternatively in `ID` column. 
 
@@ -325,7 +325,7 @@ N> Non-Editable columns does not support `CellTemplate`.
 
 ### Data Formatting
 
-`TreeGridColumn` supports to format the data using [Converter](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.data.binding.converter.aspx#) properties, by defining `TreeGridColumn.DisplayBinding` and `TreeGridColumn.ValueBinding`. `TreeGridColumn.DisplayBinding` formats the data in display mode. `TreeGridColumn.ValueBinding` formats the data in edit mode.
+`TreeGridColumn` supports to format the data using [Converter](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.binding?view=winui-3.0) properties, by defining `TreeGridColumn.DisplayBinding` and `TreeGridColumn.ValueBinding`. `TreeGridColumn.DisplayBinding` formats the data in display mode. `TreeGridColumn.ValueBinding` formats the data in edit mode.
 
 #### Format column using Converter
 
@@ -593,9 +593,9 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
 
 ### TreeGridTextColumnBase properties
 
-* Text trimming - You can [trim](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.texttrimming.aspx) the column’s data using [TextTrimming](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTextColumnBase_TextTrimming) property.
+* Text trimming - You can [trim](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.texttrimming?view=winui-3.0) the column’s data using [TextTrimming](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTextColumnBase_TextTrimming) property.
 
-* Text wrapping - You can [wrap](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.textwrapping.aspx) the column’s data using [TextWrapping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTextColumnBase_TextWrapping) property. 
+* Text wrapping - You can [wrap](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.textwrapping?view=winui-3.0) the column’s data using [TextWrapping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTextColumnBase_TextWrapping) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -668,24 +668,24 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid x:Name="treeGrid" 
-                       ItemsSource="{Binding Orders}"
-                       AutoGenerateColumns="False" 
-                       AllowEditing="True" >
-    <syncfusion:SfTreeGrid.Columns>
-        <syncfusion:TreeGridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfusion:TreeGridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <syncfusion:TreeGridNumericColumn MappingName="Quantity" HeaderText="Quantity" />
-        <syncfusion:TreeGridTextColumn MappingName="Country" />
-        <syncfusion:TreeGridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-    </syncfusion:SfTreeGrid.Columns>
+<syncfusion:SfTreeGrid x:Name="treegrid" AutoExpandMode="RootNodesExpanded" 
+                       AutoGenerateColumns="False" ItemsSource="{Binding EmployeeDetails}"
+                       ChildPropertyName="ReportsTo" ParentPropertyName="ID"
+                       SelfRelationRootValue="-1"  AllowEditing="True" >
+                <syncfusion:SfTreeGrid.Columns >
+                    <syncfusion:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
+                    <syncfusion:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
+                    <syncfusion:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary" />
+                    <syncfusion:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
+                    <syncfusion:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
+                </syncfusion:SfTreeGrid.Columns>
 </syncfusion:SfTreeGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.treeGrid.Columns.Add(new TreeGridNumericColumn()
 {
-    HeaderText = "Quantity",
-    MappingName = "Quantity",                               
+    HeaderText = "Salary",
+    MappingName = "Salary",                               
 });
 {% endhighlight %}
 {% endtabs %}
@@ -702,8 +702,10 @@ N> [Refer here](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.n
 
 {% tabs %}
 {% highlight c# %}
+CultureInfo culture = new CultureInfo("en-US");
+
 // Format numericColumn in currency
-numericColumn.NumberFormatter = new CurrencyFormatter();
+numericColumn.NumberFormatter = new CurrencyFormatter(new RegionInfo(culture.LCID).ISOCurrencySymbol);
 {% endhighlight %}
 {% endtabs %}
 
@@ -715,18 +717,18 @@ N> When using both the `DisplayNumberFormat` and the `NumberFormatter` propertie
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid x:Name="treeGrid"                                                                       
-                       AutoGenerateColumns="False" 
-                       ItemsSource="{Binding Orders}"
-                       AllowEditing="True" >
-    <syncfusion:SfTreeGrid.Columns>
-        <syncfusion:TreeGridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfusion:TreeGridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <syncfusion:TreeGridNumericColumn x:Name="numericColumn" HeaderText="Quantity"
-                                      MappingName="Quantity" DisplayNumberFormat="C2" />
-        <syncfusion:TreeGridTextColumn MappingName="Country" />
-        <syncfusion:TreeGridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-    </syncfusion:SfTreeGrid.Columns>
+<syncfusion:SfTreeGrid x:Name="treegrid" AutoExpandMode="RootNodesExpanded" 
+                       AutoGenerateColumns="False" ItemsSource="{Binding EmployeeDetails}"
+                       ChildPropertyName="ReportsTo" ParentPropertyName="ID"
+                       SelfRelationRootValue="-1"  AllowEditing="True" >
+                <syncfusion:SfTreeGrid.Columns >
+                    <syncfusion:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
+                    <syncfusion:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
+                    <syncfusion:TreeGridNumericColumn x:Name="numericColumn" MappingName="Salary" HeaderText="Salary"
+                                                      DisplayNumberFormat="C2" />
+                    <syncfusion:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
+                    <syncfusion:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
+                </syncfusion:SfTreeGrid.Columns>
 </syncfusion:SfTreeGrid>
 {% endhighlight %}
 {% highlight c# %}
@@ -745,18 +747,18 @@ The `PlaceholderText` does not shown, when the `AllowNull` is `false`.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid x:Name="treeGrid" 
-                       ItemsSource="{Binding Orders}"
-                       AutoGenerateColumns="False"
-                       AllowEditing="True" >
-    <syncfusion:SfTreeGrid.Columns>
-        <syncfusion:TreeGridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfusion:TreeGridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <syncfusion:TreeGridNumericColumn MappingName="Quantity" HeaderText="Quantity" AllowNull="True" 
-                                     PlaceholderText="Enter a value" />
-        <syncfusion:TreeGridTextColumn MappingName="Country" />
-        <syncfusion:TreeGridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-    </syncfusion:SfTreeGrid.Columns>
+<syncfusion:SfTreeGrid x:Name="treegrid" AutoExpandMode="RootNodesExpanded" 
+                       AutoGenerateColumns="False" ItemsSource="{Binding EmployeeDetails}"
+                       ChildPropertyName="ReportsTo" ParentPropertyName="ID"
+                       SelfRelationRootValue="-1"  AllowEditing="True" >
+                <syncfusion:SfTreeGrid.Columns >
+                    <syncfusion:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
+                    <syncfusion:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
+                    <syncfusion:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary"
+                                                      AllowNull="True" PlaceholderText="Enter a value" />
+                    <syncfusion:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
+                    <syncfusion:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
+                </syncfusion:SfTreeGrid.Columns>
 </syncfusion:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
@@ -769,13 +771,14 @@ You can restrict the users to enter input within a minimum and maximum range in 
 
 {% tabs %}
 {% highlight XAML %}
-<syncfusion:SfTreeGrid x:Name="treeGrid" 
-                       ItemsSource="{Binding Orders}"
-                       AutoGenerateColumns="False" 
-                       AllowEditing="True" >
-    <syncfusion:SfTreeGrid.Columns>
-        <syncfusion:TreeGridNumericColumn MappingName="Quantity" HeaderText="Quantity" MinValue="30" MaxValue="200" />
-    </syncfusion:SfTreeGrid.Columns>
+<syncfusion:SfTreeGrid x:Name="treegrid" AutoExpandMode="RootNodesExpanded" 
+                       AutoGenerateColumns="False" ItemsSource="{Binding EmployeeDetails}"
+                       ChildPropertyName="ReportsTo" ParentPropertyName="ID"
+                       SelfRelationRootValue="-1"  AllowEditing="True" >
+                <syncfusion:SfTreeGrid.Columns >
+                    <syncfusion:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary"
+                                                      MaxValue="100000" MinValue="5000" />
+                </syncfusion:SfTreeGrid.Columns>
 </syncfusion:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
@@ -786,13 +789,14 @@ You can increase or decrease the value of the `TreeGridNumericColumn` using the 
 
 {% tabs %}
 {% highlight XAML %}
-<syncfusion:SfTreeGrid x:Name="treeGrid" 
-                       ItemsSource="{Binding Orders}"
-                       AutoGenerateColumns="False" 
-                       AllowEditing="True" >
-    <syncfusion:SfTreeGrid.Columns>
-        <syncfusion:TreeGridNumericColumn MappingName="Quantity" HeaderText="Quantity" UpDownPlacementMode="InLine" />
-    </syncfusion:SfTreeGrid.Columns>
+<syncfusion:SfTreeGrid x:Name="treegrid" AutoExpandMode="RootNodesExpanded" 
+                       AutoGenerateColumns="False" ItemsSource="{Binding EmployeeDetails}"
+                       ChildPropertyName="ReportsTo" ParentPropertyName="ID"
+                       SelfRelationRootValue="-1"  AllowEditing="True" >
+                <syncfusion:SfTreeGrid.Columns >
+                    <syncfusion:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary"
+                                                      UpDownPlacementMode="InLine" />
+                </syncfusion:SfTreeGrid.Columns>
 </syncfusion:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
@@ -1034,7 +1038,7 @@ SfTreeGrid triggers, `CurrentCellDropDownSelectionChanged` event, when the Selec
 
 ### Improving dropdown opening time
 
-You can improve the drop-down opening time on loading by setting [VirtualizingStackPanel](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.virtualizingstackpanel.aspx) as [ItemsPanelTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.itemspaneltemplate.aspx) of `ComboBox`, when the large number of items loaded in it.
+You can improve the drop-down opening time on loading by setting [VirtualizingStackPanel](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.virtualizingstackpanel?view=winui-3.0) as [ItemsPanelTemplate](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.itemspaneltemplate?view=winui-3.0) of `ComboBox`, when the large number of items loaded in it.
 
 {% tabs %}
 {% highlight xaml %}
