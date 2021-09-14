@@ -105,6 +105,17 @@ Use to display the custom template-specified content.
 </tr>
 <tr>
 <td>
+GridTimeColumn
+</td>
+<td>
+GridCellTimeRenderer
+</td>
+<td>
+Use to display the time value.
+</td>
+</tr>
+<tr>
+<td>
 {{'[GridUnboundColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundColumn.html)'| markdownify }}
 </td>
 <td>
@@ -1807,6 +1818,17 @@ GridTemplateColumn
 </td>
 <td>
 Template
+</td>
+</tr>
+<tr>
+<td>
+GridTimeColumn
+</td>
+<td>
+GridCellTimeRenderer
+</td>
+<td>
+Time
 </td>
 </tr>
 <tr>
