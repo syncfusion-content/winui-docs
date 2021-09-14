@@ -60,6 +60,17 @@ Use to display the boolean type data.
 </tr>
 <tr>
 <td>
+TreeGridDateColumn
+</td>
+<td>
+TreeGridCellDateRenderer
+</td>
+<td>
+Use to display the date value.
+</td>
+</tr>
+<tr>
+<td>
 {{'[TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html#"")'| markdownify }}
 </td>
 <td>
@@ -644,6 +655,91 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", 
 {% endtabs %}
 
 ![Enabled SpellChecker to WinUI TreeGrid Column](Column-Type-images/winui-treegrid-spellchecker.png)
+
+## GridDateColumn
+
+`GridDateColumn` derived from `GridTextColumnBase` and it displays columns data as date. It hosts [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) element in editing mode.
+
+{% tabs %}
+{% highlight xaml %}
+<treeGrid:SfTreeGrid x:Name="treeGrid" ChildPropertyName="ReportsTo"
+                     AutoExpandMode="RootNodesExpanded"
+                     ItemsSource="{Binding EmployeeDetails}"
+                     ParentPropertyName="ID" SelfRelationRootValue="-1" 
+                     AllowEditing="True" AutoGenerateColumns="False">
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
+        <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
+        <treeGrid:TreeGridDateColumn MappingName="Date" HeaderText="Date" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
+        <treeGrid:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.treeGrid.Columns.Add(new TreeGridDateColumn() { HeaderText = "Date", MappingName = "Date" });
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI TreeGrid Column with DateColumn](Column-Type-images/winui-treegrid-DateColumn-column.png)
+
+### Change the Format of date value
+
+You can edit and display the selected date with various formatting like date, month and year formats by using the `DisplayDateFormat` property. The default value of `DisplayDateFormat` property is **d**. For example below image shown the DateColumn with `DisplayDateFormat` as **M**.
+
+{% tabs %}
+{% highlight xaml %}
+<treeGrid:SfTreeGrid x:Name="treeGrid" ChildPropertyName="ReportsTo"
+                     AutoExpandMode="RootNodesExpanded"
+                     ItemsSource="{Binding EmployeeDetails}"
+                     ParentPropertyName="ID" SelfRelationRootValue="-1" 
+                     AllowEditing="True" AutoGenerateColumns="False">
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
+        <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
+        <treeGrid:TreeGridDateColumn MappingName="Date" HeaderText="Date" DisplayDateFormat="M" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
+        <treeGrid:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.treeGrid.Columns.Add(new TreeGridDateColumn() { HeaderText = "Date", MappingName = "Date" , DisplayDateFormat="M" });
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI TreeGrid Column with DateColumn with Month format](Column-Type-images/winui-treegrid-DateColumn_FormatDate-column.png)
+
+### Null value support
+
+`GridDateColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. Instead of displaying null values, you can display hint text using `PlaceholderText` property.
+
+The `PlaceholderText` does not shown, when the `AllowNull` is `false`.
+
+{% tabs %}
+{% highlight xaml %}
+<treeGrid:SfTreeGrid x:Name="treeGrid" ChildPropertyName="ReportsTo"
+                     AutoExpandMode="RootNodesExpanded"
+                     ItemsSource="{Binding EmployeeDetails}"
+                     ParentPropertyName="ID" SelfRelationRootValue="-1" 
+                     AllowEditing="True" AutoGenerateColumns="False">
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
+        <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
+        <treeGrid:TreeGridDateColumn MappingName="Date" HeaderText="Date" AllowNull="True" PlaceholderText="Change the date" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
+        <treeGrid:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI TreeGrid Column with DateColumn](Column-Type-images/winui-treegrid-DateColumn_AllowNull-column.png)
+
+### Setting date value range
+
+You can restrict and display the input value within the range using `MinDate` and `MaxDate` properties.
 
 ## TreeGridCheckBoxColumn
 
