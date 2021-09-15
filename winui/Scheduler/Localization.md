@@ -61,6 +61,8 @@ You can give all the DateTime values such as `DisplayDate,` `SelectedDate,` `Bla
 
 * A `DateTime` instance with specified calendar type. If calendar type is mentioned then the date should be respective to that calendar so that the date value will be converted to Gregorian DateTime and the scheduler will handle that DateTime.
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/CalendarTypes)
+
 ## Change the language
 You can localize the scheduler using the `Language` property. The default value of Language property is `en-US`.
 
