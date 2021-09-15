@@ -697,7 +697,7 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Ship City", Mappi
 
 ## GridNumericColumn
 
-`GridNumericColumn` derived from `GridTextColumnBase` which hosts [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) in edit mode.
+`GridNumericColumn` is derived from `GridTextColumnBase` and hosts the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) in edit mode.
 
 {% tabs %}
 {% highlight xaml %}
@@ -731,7 +731,8 @@ You can format the value of a `GridNumericColumn` using the `DisplayNumberFormat
 
 The following example shows how to set `PercentFormatter` for `NumberFormatter` property. 
 
-N> [Refer here](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting?view=winrt-19041#classes) to know more about the formatting classes that can assigned for `NumberFormatter` property.
+N> To learn more about the formatting classes that can be assigned to the `NumberFormatter` property.
+[Refer here](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting?view=winrt-19041#classes)
 
 {% tabs %}
 {% highlight c# %}
@@ -742,7 +743,7 @@ numericColumn.NumberFormatter = new PercentFormatter();
 
 You can also set `CurrencyFormatter` and `DecimalFormatter` for `NumberFormatter` property to format the values in currency and numeric custom formats.   
 
-Using **N**, **C**, and **P** format values, we can apply numeric, currency, and percent custom formats in `DisplayNumberFormat` property.
+Using the **N**, **C**, and **P** format values, you can apply numeric, currency, and percent custom formats in `DisplayNumberFormat` property.
 
 N> When using both the `DisplayNumberFormat` and the `NumberFormatter` properties, the `DisplayNumberFormat` property takes high precedence. 
 
@@ -772,9 +773,9 @@ numericColumn.DisplayNumberFormat = "P2";
 
 ## Null value support
 
-`GridNumericColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. Instead of displaying null values, you can display hint text using `PlaceholderText` property.
+`GridNumericColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. Instead of displaying null values, you can display hint text using the `PlaceholderText` property.
 
-The `PlaceholderText` does not shown, when the `AllowNull` is `false`.
+The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 
 {% tabs %}
 {% highlight xaml %}
