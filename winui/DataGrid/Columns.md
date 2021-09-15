@@ -32,6 +32,14 @@ Use to display the string data.
 </tr>
 <tr>
 <td>
+{{'[GridNumericColumn]'| markdownify }}
+</td>
+<td>
+Use to display the numeric data. 
+</td>
+</tr>
+<tr>
+<td>
 {{'[GridComboBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridComboBoxColumn.html)'| markdownify }}
 </td>
 <td>
@@ -118,6 +126,14 @@ string, object, dynamic
 </td>
 <td>
 GridTextColumn
+</td>
+</tr>
+<tr>
+<td>
+double and it's nullable
+</td>
+<td>
+GridNumericColumn
 </td>
 </tr>
 <tr>
