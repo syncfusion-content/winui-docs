@@ -808,3 +808,5 @@ You can customize the appointment selection border brush by using the `Selection
     </Style>
 {% endhighlight %}
 {% endtabs %}
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/AppointmentSelectionBorderBrush)
