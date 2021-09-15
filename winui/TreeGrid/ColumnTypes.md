@@ -203,7 +203,7 @@ public class DisplayBindingConverter : IValueConverter
 
 By default, underlying record is `DataContext` for CellTemplate. So you have to define, template for each column to display values based on `MappingName`. 
 
-You can use the same [DataTemplate](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.datatemplate?view=winui-3.0) for all columns to display value based on MappingName by setting [TreeGridColumn.SetCellBoundValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_SetCellBoundValue)  property to `true`. Setting `SetCellBoundValue` to true, changes the DataContext for CellTemplate to `DataContextHelper` which has the following members,
+You can use the same [DataTemplate](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.datatemplate?view=winui-3.0) for all columns to display value based on MappingName by setting [TreeGridColumn.SetCellBoundValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_SetCellBoundValue)  property to `true`. When `SetCellBoundValue` is set to true, the DataContext for CellTemplate is changed to `DataContextHelper` which has the following members,
 
 * `Value` - Return the value base on `MappingName`.
 * `Record` - Returns the underlying data object.
@@ -248,7 +248,7 @@ You can use the same [DataTemplate](https://docs.microsoft.com/en-us/windows/win
 
 #### Setting CellTemplate based on custom logic using TemplateSelector
 
-`TreeGridColumn` provides support to choose different[DataTemplate](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.datatemplate?view=winui-3.0) based on underlying data object using [TreeGridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_CellTemplateSelector) property.  
+`TreeGridColumn` allows you to select a different[DataTemplate](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.datatemplate?view=winui-3.0) based on underlying data object by using the [TreeGridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_CellTemplateSelector) property.  
 
 For example, two different templates loaded alternatively in `ID` column. 
 
@@ -325,7 +325,7 @@ N> Non-Editable columns does not support `CellTemplate`.
 
 ### Data Formatting
 
-`TreeGridColumn` supports to format the data using [Converter](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.binding?view=winui-3.0) properties, by defining `TreeGridColumn.DisplayBinding` and `TreeGridColumn.ValueBinding`. `TreeGridColumn.DisplayBinding` formats the data in display mode. `TreeGridColumn.ValueBinding` formats the data in edit mode.
+`TreeGridColumn` supports to format the data using the [Converter](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.binding?view=winui-3.0) property, by defining the `TreeGridColumn.DisplayBinding` and `TreeGridColumn.ValueBinding`. In display mode `TreeGridColumn.DisplayBinding` formats the data. In edit mode, `TreeGridColumn.ValueBinding` formats the data.
 
 #### Format column using Converter
 
@@ -593,9 +593,9 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
 
 ### TreeGridTextColumnBase properties
 
-* Text trimming - You can [trim](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.texttrimming?view=winui-3.0) the column’s data using [TextTrimming](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTextColumnBase_TextTrimming) property.
+* Text trimming - You can [trim](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.texttrimming?view=winui-3.0) the column’s data using the [TextTrimming](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTextColumnBase_TextTrimming) property.
 
-* Text wrapping - You can [wrap](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.textwrapping?view=winui-3.0) the column’s data using [TextWrapping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTextColumnBase_TextWrapping) property. 
+* Text wrapping - You can [wrap](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.textwrapping?view=winui-3.0) the column’s data using the [TextWrapping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTextColumnBase_TextWrapping) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -664,7 +664,7 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", 
 
 ## TreeGridNumericColumn
 
-`TreeGridNumericColumn` derived from `TreeGridTextColumnBase` which hosts [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) in edit mode.
+`TreeGridNumericColumn` is derived from `TreeGridTextColumnBase` and hosts [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) in edit mode.
 
 {% tabs %}
 {% highlight xaml %}
@@ -698,7 +698,7 @@ You can format the value of a `TreeGridNumericColumn` using the `DisplayNumberFo
 
 The following example shows how to set `CurrencyFormatter` for `NumberFormatter` property. 
 
-N> [Refer here](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting?view=winrt-19041#classes) to know more about the formatting classes that can assigned for `NumberFormatter` property.
+N> To learn more about the formatting classes that can assigned for `NumberFormatter` property. [Refer here](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting?view=winrt-19041#classes)
 
 {% tabs %}
 {% highlight c# %}
@@ -709,9 +709,9 @@ numericColumn.NumberFormatter = new CurrencyFormatter(new RegionInfo(culture.LCI
 {% endhighlight %}
 {% endtabs %}
 
-You can also set `PercentFormatter` and `DecimalFormatter` for `NumberFormatter` property to format the values in percent and numeric custom formats.   
+You can also set the `PercentFormatter` and `DecimalFormatter` for `NumberFormatter` property to format the values in percent and numeric custom formats.   
 
-Using **N**, **C**, and **P** format values, we can apply numeric, currency, and percent custom formats in `DisplayNumberFormat` property.
+Using the **N**, **C**, and **P** format values, you can apply numeric, currency, and percent custom formats in `DisplayNumberFormat` property.
 
 N> When using both the `DisplayNumberFormat` and the `NumberFormatter` properties, the `DisplayNumberFormat` property takes high precedence. 
 
@@ -743,7 +743,7 @@ numericColumn.DisplayNumberFormat = "C2";
 
 `TreeGridNumericColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. Instead of displaying null values, you can display hint text using `PlaceholderText` property.
 
-The `PlaceholderText` does not shown, when the `AllowNull` is `false`.
+The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 
 {% tabs %}
 {% highlight xaml %}
