@@ -741,7 +741,7 @@ numericColumn.DisplayNumberFormat = "C2";
 
 ## Null value support
 
-`TreeGridNumericColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. Instead of displaying null values, you can display hint text using `PlaceholderText` property.
+`TreeGridNumericColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. Instead of displaying null values, you can display hint text using the `PlaceholderText` property.
 
 The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 
