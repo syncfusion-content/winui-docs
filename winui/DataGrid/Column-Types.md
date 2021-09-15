@@ -1656,7 +1656,7 @@ GridNumericColumn
 GridCellNumericRenderer
 </td>
 <td>
-TextBox
+Numeric
 </td>
 </tr>
 <tr>
@@ -1667,7 +1667,7 @@ GridDateColumn
 {{'[GridCellDateRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Renderers.GridCellDateRenderer.html)'| markdownify }}
 </td>
 <td>
-TextBox
+DateTimeOffset
 </td>
 </tr>
 <tr>

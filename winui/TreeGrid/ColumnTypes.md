@@ -656,9 +656,9 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", 
 
 ![Enabled SpellChecker to WinUI TreeGrid Column](Column-Type-images/winui-treegrid-spellchecker.png)
 
-## GridDateColumn
+## TreeGridDateColumn
 
-`GridDateColumn` derived from `GridTextColumnBase` and it displays columns data as date. It hosts [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) element in editing mode.
+`TreeGridDateColumn` derived from `GridTextColumnBase` and it displays columns data as date. It hosts [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) element in editing mode.
 
 {% tabs %}
 {% highlight xaml %}
@@ -670,8 +670,8 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", 
     <treeGrid:SfTreeGrid.Columns>
         <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
         <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
-        <treeGrid:TreeGridDateColumn MappingName="Date" HeaderText="Date" />
         <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
+        <treeGrid:TreeGridDateColumn MappingName="Date" HeaderText="Date" />
         <treeGrid:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
@@ -697,8 +697,8 @@ You can edit and display the selected date with various formatting like date, mo
     <treeGrid:SfTreeGrid.Columns>
         <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
         <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
+         <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
         <treeGrid:TreeGridDateColumn MappingName="Date" HeaderText="Date" DisplayDateFormat="M" />
-        <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
         <treeGrid:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
@@ -712,7 +712,7 @@ this.treeGrid.Columns.Add(new TreeGridDateColumn() { HeaderText = "Date", Mappin
 
 ### Null value support
 
-`GridDateColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. Instead of displaying null values, you can display hint text using `PlaceholderText` property.
+`TreeGridDateColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. Instead of displaying null values, you can display hint text using `PlaceholderText` property.
 
 The `PlaceholderText` does not shown, when the `AllowNull` is `false`.
 
@@ -726,8 +726,8 @@ The `PlaceholderText` does not shown, when the `AllowNull` is `false`.
     <treeGrid:SfTreeGrid.Columns>
         <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
         <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
+         <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
         <treeGrid:TreeGridDateColumn MappingName="Date" HeaderText="Date" AllowNull="True" PlaceholderText="Change the date" />
-        <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
         <treeGrid:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
