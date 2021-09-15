@@ -83,7 +83,7 @@ Use to display the custom template-specified content.
 GridTimeColumn
 </td>
 <td>
-Use to display the time value.
+Use to display the <code>DateTimeOffset</code> type data as time value.
 </td>
 </tr>
 <tr>

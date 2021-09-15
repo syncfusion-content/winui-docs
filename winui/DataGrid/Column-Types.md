@@ -111,7 +111,7 @@ GridTimeColumn
 GridCellTimeRenderer
 </td>
 <td>
-Use to display the time value.
+Use to display the <code>DateTimeOffset</code> type data as time value.
 </td>
 </tr>
 <tr>
@@ -1213,7 +1213,7 @@ this.dataGrid.Columns.Add(new GridImageColumn() { HeaderText = "Flag", MappingNa
 
 ## GridTimeColumn
 
-`GridTimeColumn` derived from `GridTextColumnBase` and it  displays columns data as time. It hosts [SfTimePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) element in editing mode.
+`GridTimeColumn` is derived from `GridTextColumnBase` and displays column data as time. In editing mode, it hosts the [SfTimePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) element .
 
 {% tabs %}
 {% highlight xaml %}
@@ -1238,9 +1238,9 @@ this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", 
 
 ![WinUI DataGrid Column with TimeColumn](Column-Types_images/winui-datagrid-TimeColumn-column.png)
 
-### Change the Format of time value
+### Change the format of time value
 
-You can edit and display the selected time with various formatting like hour, minutes,seconds,meridiem, 12-Hour and 24-Hour formats by using the `DisplayTimeFormat` property. The default value of `DisplayTimeFormat` property is **hh:mm tt**. For example below image shown the TimeColumn with `DisplayTimeFormat` as **HH:mm tt**.
+By using the `DisplayTimeFormat` property, you can edit and display the selected time in various formats such as hour, minutes, seconds, meridiem, 12-Hour and 24-Hour format. The default value of `DisplayTimeFormat` property is **hh:mm tt**. For example in the below image, the TimeColumn has the `DisplayTimeFormat` set to **HH:mm tt**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1267,9 +1267,9 @@ this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", 
 
 ### Null value support
 
-`GridTimeColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. The default value for `AllowNull` property is `True`.Instead of displaying null values, you can display hint text using `PlaceholderText` property.
+`GridTimeColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. The default value of `AllowNull` property is `True`. Instead of displaying null values, you can display hint text using the `PlaceholderText` property.
 
-The `PlaceholderText` does not shown, when the `AllowNull` is `false`.The default value of `PlaceholderText` property is `select a time`.
+The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`. The default value of `PlaceholderText` property is `select a time`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1297,9 +1297,9 @@ this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", 
 
 ### Setting time value range
 
-You can restrict and display the input value within the range using `MinTime` and `MaxTime` properties.
+You can restrict and display the input value within the range using the `MinTime` and `MaxTime` properties.
 
-### Editing Support
+### Editing support
 
 `GridTimeColumn` provides support to edit the time value in different modes.
 * [Normal](#normal)
@@ -1308,23 +1308,23 @@ You can restrict and display the input value within the range using `MinTime` an
 
 #### Normal
 
-To allow editing and perform input validation only after editing is completed, set `EditMode` property value as `Normal`.
+To allow editing and perform input validation only after editing is completed, set the `EditMode` property value as `Normal`.
 
-For more information refer [here](https://help.syncfusion.com/winui/time-picker/localization-and-formatting#edit-time-using-free-form-editing)
+For more information refer [here](https://help.syncfusion.com/winui/time-picker/localization-and-formatting#edit-time-using-free-form-editing).
 
 #### Mask
 
 To allow editing and perform input validation as user edits the time value, set `EditMode` property value as `Mask`.
-Default value for `EditMode` property is `Mask`.
+The default value for `EditMode` property is `Mask`.
 
-For more information refer [here](https://help.syncfusion.com/winui/time-picker/localization-and-formatting#edit-time-using-mask-mode)
+For more information refer [here](https://help.syncfusion.com/winui/time-picker/localization-and-formatting#edit-time-using-mask-mode).
  
 #### None
-You can Disable the editing in edit part by setting `EditMode` Property as `None`.
+You can disable the editing in edit part by setting the `EditMode` Property as `None`.
 
 ### Select time as you scroll spinner
 
-If you want to hide the submit button and select the time directly from the dropdown time spinner without clicking the `Ok` button, use the `ShowSubmitButtons` property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
+If you want to hide the submit button and select the time directly from the drop-down time spinner without clicking `Ok`, set the `ShowSubmitButtons` property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
 
 {% tabs %}
 {% highlight xaml %}
