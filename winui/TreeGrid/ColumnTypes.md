@@ -897,7 +897,6 @@ The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 
 You can restrict and display the input value within the range using the `MinDate` and `MaxDate` properties.
 
-
 ## TreeGridCheckBoxColumn
 
 [TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html) derived from `TreeGridColumn` and it used display and edit `Boolean` type data. It hosts `CheckBox` element as `TreeGridCell` content.
