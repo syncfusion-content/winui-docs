@@ -138,6 +138,14 @@ GridNumericColumn
 </tr>
 <tr>
 <td>
+DateTimeOffset and it's nullable
+</td>
+<td>
+GridDateColumn
+</td>
+</tr>
+<tr>
+<td>
 Uri, Uri?
 </td>
 <td>
