@@ -17,7 +17,7 @@ This section explains the steps required to add the [WinUI NumberBox](https://ww
 
 ## Creating an application with WinUI NumberBox
 
-In this walkthrough, you will create a WinUI application that contains the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox) control.
+In this walkthrough, you will create a WinUI application that contains the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) control.
 
 ## Adding control manually in XAML
 
@@ -95,7 +95,7 @@ namespace GettingStarted
 
 ## Editing the value
 
-By default, the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox) control allows you to enter numeric input and restricts the alphabetic input. Once `Enter` key is pressed or control focus is lost, the value of the `NumberBox` control is validated and updated based on the format applied.
+By default, the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) control allows you to enter numeric input and restricts the alphabetic input. Once `Enter` key is pressed or control focus is lost, the value of the `NumberBox` control is validated and updated based on the format applied.
 
 {% tabs %}
 {% highlight xaml %}

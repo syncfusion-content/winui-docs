@@ -9,26 +9,26 @@ documentation: ug
 
 # Themes for Syncfusion WinUI Controls
 
-Themes provides a sense of visual continuity for the Windows apps. 
-It allows to customize the appearance of the application. 
-The theme affects the colors of the Control's background, foreground, border brush, font etc. 
+Themes provide a sense of visual continuity for the Windows apps. 
+It allows you to customize the appearance of the application. 
+The theme affects the colors of the Control's background, foreground, border brush, font, etc. 
 
 ## Supported themes
 
-Syncfusion WinUI controls supports Light and Dark themes. 
+Syncfusion WinUI controls support Light and Dark themes. 
 
 **Light theme**
 
 ![Light theme for WinUI controls](themes-images/light.png)
 
-**Dark Theme**
+**Dark theme**
     
 ![Dark theme for WinUI controls](themes-images/dark.png)
 
-## Applying themes at application level
+## Applying themes at the application level
 
-Theme for the whole application can be changed using the `RequestedTheme` property available in App.xaml. 
-Syncfusion control adopts to Theme setting, when it is applied through `RequestedTheme` property. 
+The theme for the whole application can be changed using the `RequestedTheme` property available in App.xaml. 
+Syncfusion control adopts to Theme settings, when it is applied using the `RequestedTheme` property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -57,13 +57,13 @@ Syncfusion control adopts to Theme setting, when it is applied through `Requeste
 {% endhighlight %}
 {% endtabs %}
 
-N> When the `RequestedTheme` property is not set, application will use the user's system settings.
+N> When the `RequestedTheme` property is not set, the application will use the users' system settings.
 
 ## Applying themes for controls
 
-Themes can also be applied for each framework element individually irrespective of the Application level themes. 
+Themes can also be applied for each framework element individually irrespective of the application level themes. 
 It can be set using the `RequestedTheme` property available in UI Elements. 
-When the `RequestedTheme` property is set to `Default` it uses the `Application.RequestedTheme` value for the elements.
+When the `RequestedTheme` property is set to `Default`, it uses the `Application.RequestedTheme` value for the elements.
 
 {% tabs %}
 {% highlight xaml %}
@@ -83,17 +83,17 @@ When the `RequestedTheme` property is set to `Default` it uses the `Application.
 {% endhighlight %}
 {% endtabs %}
 
-N> When the RequestedTheme value is set on a FrameworkElement, it will inherit to any elements that are nested within the element.
+N> When the RequestedTheme value is set on a FrameworkElement, it is inherited by any elements nested within the element.
 
 ## Theme resource
 
-Syncfusion provides a theme resource file for all Syncfusion WinUI Project Reunion controls. By referring this file, appearance of the controls can be customized in application level.
+Syncfusion provides a theme resource file for all Syncfusion WinUI Project Reunion controls. By referring to this file, the appearance of the controls can be customized at the application level.
 
 Theme resource files for Syncfusion WinUI controls can be referred from this [link](https://github.com/syncfusion/winui-controls-theme-resource-files).
 
-### Modify theme resource in application level
+### Modify theme resource at application level
 
-Refer the theme resources from the above link to obtain the required keys for customizing the control as desired, and then define the same keys with custom colors in application level.
+Refer to the above-mentioned theme resources to obtain the required keys for customizing the control as desired, and then define the same keys with custom colors at the application level.
 
 The following example shows how to customize the ribbon control at the application level by using a ribbon theme resource file.
 
@@ -139,7 +139,7 @@ The following example shows how to customize the ribbon control at the applicati
     </tr>
 </table>
 
-Now add the customized value in application root element's resources
+Now, add the customized value in application root elements' resources.
 
 {% tabs %}
 {% highlight xaml %}
