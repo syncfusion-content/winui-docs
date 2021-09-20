@@ -751,3 +751,64 @@ this.Content = sfRadialGauge;
 {% endtabs %}
 
 ![WinUI Radial Gauge Range Label Template](images/range/winui-radial-gauge-range-label-template.png)
+
+### Range free rotation
+
+The [`GaugeRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html) will always apply from the [`StartValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_StartValue) to the [`EndValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_EndValue) even when the [`StartValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_StartValue) is greater than the [`EndValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_EndValue).
+
+N> This feature is supported when the SweepAngle value of radial axis is 360.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<gauges:SfRadialGauge>
+    <gauges:SfRadialGauge.Axes>
+        <gauges:RadialAxis x:Name="radialAxis"
+                           StartAngle="0"
+                           EndAngle="360"
+                           RadiusFactor="0.8">
+            <gauges:RadialAxis.Pointers>
+                <gauges:MarkerPointer x:Name="startPointer"
+                                      Value="0"
+                                      MarkerType="InvertedTriangle"
+                                      MarkerOffset="-18"
+                                      Background="Green"
+                                      IsInteractive="True"
+                                      ValueChanging="startPointer_ValueChanging" />
+                <gauges:MarkerPointer x:Name="endPointer"
+                                      Value="25"
+                                      MarkerType="InvertedTriangle"
+                                      MarkerOffset="-18"
+                                      Background="Red"
+                                      IsInteractive="True"
+                                      ValueChanging="endPointer_ValueChanging" />
+            </gauges:RadialAxis.Pointers>
+            <gauges:RadialAxis.Ranges>
+                <gauges:GaugeRange x:Name="range"
+                                   StartValue="20"
+                                   EndValue="50" />
+            </gauges:RadialAxis.Ranges>
+        </gauges:RadialAxis>
+    </gauges:SfRadialGauge.Axes>
+</gauges:SfRadialGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+private void startPointer_ValueChanging(object sender, ValueChangingEventArgs e)
+{
+    this.range.StartValue = e.NewValue;
+}
+
+private void endPointer_ValueChanging(object sender, ValueChangingEventArgs e)
+{
+    this.range.EndValue = e.NewValue;
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WinUI Radial Gauge Range Free Rotation](images/range/FreeRotation.gif)
