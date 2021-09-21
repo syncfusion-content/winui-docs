@@ -56,6 +56,14 @@ Use to display the Boolean type data
 </tr>
 <tr>
 <td>
+TreeGridDateColumn
+</td>
+<td>
+Use to display the date value
+</td>
+</tr>
+<tr>
+<td>
 {{'[TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html)'| markdownify }}
 </td>
 <td>
@@ -118,6 +126,14 @@ double and it's nullable
 </td>
 <td>
 TreeGridNumericColumn
+</td>
+</tr>
+<tr>
+<td>
+DateTimeOffset and it's nullable
+</td>
+<td>
+TreeGridDateColumn
 </td>
 </tr>
 <tr>

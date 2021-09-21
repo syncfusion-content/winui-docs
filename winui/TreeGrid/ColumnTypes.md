@@ -71,6 +71,17 @@ Use to display the boolean type data.
 </tr>
 <tr>
 <td>
+TreeGridDateColumn
+</td>
+<td>
+TreeGridCellDateRenderer
+</td>
+<td>
+Use to display the date value.
+</td>
+</tr>
+<tr>
+<td>
 {{'[TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html#"")'| markdownify }}
 </td>
 <td>
@@ -703,7 +714,7 @@ this.treeGrid.Columns.Add(new TreeGridNumericColumn()
 
 ![WinUI TreeGrid Column with NumericColumn](Column-Type-images/winui-treegrid-NumericColumn-column.png)
 
-## Change the format of numeric value
+### Change the format of numeric value
 
 You can format the value of a `TreeGridNumericColumn` using the `DisplayNumberFormat` or `NumberFormatter` property. The default value of `DisplayNumberFormat` and `NumberFormatter` properties are **null**.
 
@@ -750,7 +761,7 @@ numericColumn.DisplayNumberFormat = "C2";
 
 ![WinUI TreeGrid Column with NumericColumn in Currency Format](Column-Type-images/winui-treegrid-NumericColumn_FormatVales-column.png)
 
-## Null value support
+### Null value support
 
 `TreeGridNumericColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. Instead of displaying null values, you can display hint text using the `PlaceholderText` property.
 
@@ -776,7 +787,7 @@ The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 
 ![WinUI TreeGrid Column with NumericColumn](Column-Type-images/winui-treegrid-NumericColumn_AllowNullValue-column.png)
 
-## Restrict value within range
+### Restrict value within range
 
 You can restrict the users to enter input within a minimum and maximum range in `TreeGridNumericColumn` using the `MinValue` and `MaxValue` properties. The default value of the `MinValue` property is **double.MinValue** and `MaxValue` property is **double.MaxValue**.
 
@@ -794,7 +805,7 @@ You can restrict the users to enter input within a minimum and maximum range in 
 {% endhighlight %}
 {% endtabs %}
 
-## UpDown button placement
+### UpDown button placement
 
 You can increase or decrease the value of the `TreeGridNumericColumn` using the up-down button. By default, the value of `UpDownPlacementMode` property is **Hidden**. You can change the up-down button position by assigning the value `UpDownPlacementMode` property as **Inline** or **Compact**.
 
@@ -811,6 +822,91 @@ You can increase or decrease the value of the `TreeGridNumericColumn` using the 
 </treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
+
+## TreeGridDateColumn
+
+`TreeGridDateColumn` is derived from `TreeGridTextColumnBase` and displays columns data as date. It hosts [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) element in editing mode.
+
+{% tabs %}
+{% highlight xaml %}
+<treeGrid:SfTreeGrid x:Name="treeGrid" ChildPropertyName="ReportsTo"
+                     AutoExpandMode="RootNodesExpanded"
+                     ItemsSource="{Binding EmployeeDetails}"
+                     ParentPropertyName="ID" SelfRelationRootValue="-1" 
+                     AllowEditing="True" AutoGenerateColumns="False">
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
+        <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
+        <treeGrid:TreeGridDateColumn MappingName="Date" HeaderText="Date" />
+        <treeGrid:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.treeGrid.Columns.Add(new TreeGridDateColumn() { HeaderText = "Date", MappingName = "Date" });
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI TreeGrid Column with DateColumn](Column-Type-images/winui-treegrid-DateColumn-column.png)
+
+### Change the format of date value
+
+By using the `DisplayDateFormat` property, you can edit and display the selected date in various formats such as date, month and year formats. The default value of `DisplayDateFormat` property is **d**. For example, in the below image, the DateColumn has a `DisplayDateFormat` set to **M**.
+
+{% tabs %}
+{% highlight xaml %}
+<treeGrid:SfTreeGrid x:Name="treeGrid" ChildPropertyName="ReportsTo"
+                     AutoExpandMode="RootNodesExpanded"
+                     ItemsSource="{Binding EmployeeDetails}"
+                     ParentPropertyName="ID" SelfRelationRootValue="-1" 
+                     AllowEditing="True" AutoGenerateColumns="False">
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
+        <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
+         <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
+        <treeGrid:TreeGridDateColumn MappingName="Date" HeaderText="Date" DisplayDateFormat="M" />
+        <treeGrid:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.treeGrid.Columns.Add(new TreeGridDateColumn() { HeaderText = "Date", MappingName = "Date" , DisplayDateFormat="M" });
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI TreeGrid Column with DateColumn with Month format](Column-Type-images/winui-treegrid-DateColumn_FormatDate-column.png)
+
+### Null value support
+
+`TreeGridDateColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. Instead of displaying null values, you can display hint text using the `PlaceholderText` property.
+
+The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
+
+{% tabs %}
+{% highlight xaml %}
+<treeGrid:SfTreeGrid x:Name="treeGrid" ChildPropertyName="ReportsTo"
+                     AutoExpandMode="RootNodesExpanded"
+                     ItemsSource="{Binding EmployeeDetails}"
+                     ParentPropertyName="ID" SelfRelationRootValue="-1" 
+                     AllowEditing="True" AutoGenerateColumns="False">
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
+        <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
+         <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
+        <treeGrid:TreeGridDateColumn MappingName="Date" HeaderText="Date" AllowNull="True" PlaceholderText="Change the date" />
+        <treeGrid:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI TreeGrid Column with DateColumn](Column-Type-images/winui-treegrid-DateColumn_AllowNull-column.png)
+
+### Setting date value range
+
+You can restrict and display the input value within the range using the `MinDate` and `MaxDate` properties.
 
 ## TreeGridCheckBoxColumn
 
