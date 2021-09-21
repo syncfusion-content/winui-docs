@@ -39,6 +39,17 @@ Use to display the string data.
 </tr>
 <tr>
 <td>
+GridNumericColumn
+</td>
+<td>
+GridCellNumericRenderer
+</td>
+<td>
+Use to display the numeric data.
+</td>
+</tr>
+<tr>
+<td>
 {{'[GridComboBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridComboBoxColumn.html)'| markdownify }}
 </td>
 <td>
@@ -612,7 +623,13 @@ GridColumn allows you to change the alignment of `GridCell` and `GridHeaderCellC
 
 1. GridTextColumn
 
-2. GridTemplateColumn
+2. GridNumericColumn
+
+3. GridDateColumn
+
+4. GridTimeColumn
+
+5. GridTemplateColumn
 
 ### GridTextColumnBase properties
 
@@ -677,6 +694,142 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Ship City", Mappi
 {% endtabs %}
 
 ![Enabled Spell Checker to WinUI DataGrid Column](Column-Types_images/winui-datagrid-spellchecker.png)
+
+## GridNumericColumn
+
+`GridNumericColumn` is derived from `GridTextColumnBase` and hosts the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) in edit mode.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid" 
+                       ItemsSource="{Binding Orders}"
+                       AutoGenerateColumns="False" 
+                       AllowEditing="True" >
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <syncfusion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" />
+        <syncfusion:GridTextColumn MappingName="Country" />
+        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.Columns.Add(new GridNumericColumn()
+{
+    HeaderText = "Quantity",
+    MappingName = "Quantity",                               
+});
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI DataGrid Column with NumericColumn](Column-Types_images/winui-datagrid-NumericColumn-column.png)
+
+### Change the format of numeric value
+
+You can format the value of a `GridNumericColumn` using the `DisplayNumberFormat` or `NumberFormatter` property. The default value of `DisplayNumberFormat` and `NumberFormatter` properties are **null**.
+
+The following example shows how to set `PercentFormatter` for `NumberFormatter` property. 
+
+N> To learn more about the formatting classes that can be assigned to the `NumberFormatter` property.
+[Refer here](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting?view=winrt-19041#classes)
+
+{% tabs %}
+{% highlight c# %}
+// Format numericColumn in percent
+numericColumn.NumberFormatter = new PercentFormatter();
+{% endhighlight %}
+{% endtabs %}
+
+You can also set `CurrencyFormatter` and `DecimalFormatter` for `NumberFormatter` property to format the values in currency and numeric custom formats.   
+
+Using the **N**, **C**, and **P** format values, you can apply numeric, currency, and percent custom formats in `DisplayNumberFormat` property.
+
+N> When using both the `DisplayNumberFormat` and the `NumberFormatter` properties, the `DisplayNumberFormat` property takes high precedence. 
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
+                       AutoGenerateColumns="False" 
+                       ItemsSource="{Binding Orders}"
+                       AllowEditing="True" >
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <syncfusion:GridNumericColumn x:Name="numericColumn" HeaderText="Quantity"
+                                      MappingName="Quantity" DisplayNumberFormat="P2" />
+        <syncfusion:GridTextColumn MappingName="Country" />
+        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+// Format numericColumn in percent
+numericColumn.DisplayNumberFormat = "P2";
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI DataGrid Column with NumericColumn in Percent Format](Column-Types_images/winui-datagrid-NumericColumn_FormatVales-column.png)
+
+### Null value support
+
+`GridNumericColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. Instead of displaying null values, you can display hint text using the `PlaceholderText` property.
+
+The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid" 
+                       ItemsSource="{Binding Orders}"
+                       AutoGenerateColumns="False"
+                       AllowEditing="True" >
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <syncfusion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" AllowNull="True" 
+                                     PlaceholderText="Enter a value" />
+        <syncfusion:GridTextColumn MappingName="Country" />
+        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI DataGrid Column with NumericColumn](Column-Types_images/winui-datagrid-NumericColumn_AllowNullValue-column.png)
+
+### Restrict value within range
+
+You can restrict the users to enter input within a minimum and maximum range in `GridNumericColumn` using the `MinValue` and `MaxValue` properties. The default value of the `MinValue` property is **double.MinValue** and `MaxValue` property is **double.MaxValue**.
+
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:SfDataGrid x:Name="dataGrid" 
+                       ItemsSource="{Binding Orders}"
+                       AutoGenerateColumns="False" 
+                       AllowEditing="True" >
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" MinValue="30" MaxValue="200" />
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
+
+### UpDown button placement
+
+You can increase or decrease the value of the `GridNumericColumn` using the up-down button. By default, the value of `UpDownPlacementMode` property is **Hidden**. You can change the up-down button position by assigning the value `UpDownPlacementMode` property as **Inline** or **Compact**.
+
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:SfDataGrid x:Name="dataGrid" 
+                       ItemsSource="{Binding Orders}"
+                       AutoGenerateColumns="False" 
+                       AllowEditing="True" >
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" UpDownPlacementMode="InLine" />
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
 
 ## GridDateColumn
 
@@ -1646,6 +1799,28 @@ GridTextColumn
 </td>
 <td>
 TextBox
+</td>
+</tr>
+<tr>
+<td>
+GridNumericColumn
+</td>
+<td>
+GridCellNumericRenderer
+</td>
+<td>
+Numeric
+</td>
+</tr>
+<tr>
+<td>
+GridDateColumn
+</td>
+<td>
+{{'[GridCellDateRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Renderers.GridCellDateRenderer.html)'| markdownify }}
+</td>
+<td>
+DateTimeOffset
 </td>
 </tr>
 <tr>
