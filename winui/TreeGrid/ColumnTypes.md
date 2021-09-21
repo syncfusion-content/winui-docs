@@ -91,6 +91,17 @@ Use to display the URI data.
 Use to display the custom template-specified content.
 </td>
 </tr>
+<tr>
+<td>
+TreeGridTimeColumn
+</td>
+<td>
+TreeGridCellTimeRenderer
+</td>
+<td>
+Use to display the <code>DateTimeOffset</code> type data as time value.
+</td>
+</tr>
 </table>
 
 ## TreeGridColumn
@@ -1164,6 +1175,189 @@ You can change the foreground color of `TreeGridHyperlinkColumn` by writing the 
 
 ![Customized Hyperlink Column in WinUI TreeGrid](Column-Type-images/winui-treegrid-hyperlink-column-customization.png)
 
+## TreeGridTimeColumn
+
+`TreeGridTimeColumn` is derived from `TreeGridTextColumnBase` and displays column data as time. In editing mode, it hosts the [SfTimePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) element.
+
+{% tabs %}
+{% highlight xaml %}
+
+<treeGrid:SfTreeGrid Name="treeGrid"
+        ColumnWidthMode="Star"
+        AllowEditing="True"
+        AutoExpandMode="AllNodesExpanded"
+        AutoGenerateColumns="False"
+        ChildPropertyName="ReportsTo"
+        ItemsSource="{Binding Employees}"
+        ParentPropertyName="ID"
+        SelfRelationRootValue="-1" >
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn MappingName="ID" />
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridCheckBoxColumn HeaderText="Reporting Time" MappingName="ReportingTime" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" />
+        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+treeGrid.Columns.Add(new TreeGridTimeColumn()
+{
+    MappingName = "ReportingTime",
+    HeaderText = "Reporting Time"
+});
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI TreeGrid Column with TimeColumn](Column-Type-images/winui-treegrid-time-column.png)
+
+### Change the format of time value
+
+By using the `DisplayTimeFormat` property, you can edit and display the selected time in various formats such as hour, minutes, seconds, meridiem, 12-Hour and 24-Hour format. The default value of `DisplayTimeFormat` property is **hh:mm tt**. For example, in the below image the TimeColumn has `DisplayTimeFormat` set to **HH:mm tt**.
+
+{% tabs %}
+{% highlight xaml %}
+
+<treeGrid:SfTreeGrid Name="treeGrid"
+        ColumnWidthMode="Star"
+        AllowEditing="True"
+        AutoExpandMode="AllNodesExpanded"
+        AutoGenerateColumns="False"
+        ChildPropertyName="ReportsTo"
+        ItemsSource="{Binding Employees}"
+        ParentPropertyName="ID"
+        SelfRelationRootValue="-1" >
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn MappingName="ID" />
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridTimeColumn HeaderText="Reporting Time" MappingName="ReportingTime" DisplayTimeFormat="HH:mm tt" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" />
+        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+treeGrid.Columns.Add(new TreeGridTimeColumn()
+{
+    MappingName = "ReportingTime",
+    HeaderText = "Reporting Time"
+    DisplayTimeFormat="HH:mm tt",
+});
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI TreeGrid Column with TimeColumn with 24-Hour format](Column-Type-images/winui-treegrid-time-column_format.png)
+
+### Null value support
+
+`TreeGridTimeColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. The default value of `AllowNull` property is `True`. Instead of displaying null values, you can display hint text using the `PlaceholderText` property.
+
+The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`. The default value of `PlaceholderText` property is `select a time`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<treeGrid:SfTreeGrid Name="treeGrid"
+        ColumnWidthMode="Star"
+        AllowEditing="True"
+        AutoExpandMode="AllNodesExpanded"
+        AutoGenerateColumns="False"
+        ChildPropertyName="ReportsTo"
+        ItemsSource="{Binding Employees}"
+        ParentPropertyName="ID"
+        SelfRelationRootValue="-1" >
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn MappingName="ID" />
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridTimeColumn HeaderText="Reporting Time" MappingName="ReportingTime" PlaceholderText="Change the Time" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" />
+        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+treeGrid.Columns.Add(new TreeGridTimeColumn()
+{
+    MappingName = "ReportingTime",
+    HeaderText = "Reporting Time"
+    PlaceholderText="Change the Time",
+});
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI TreeGrid Column with TimeColumn with PlaceholderText](Column-Type-images/winui-treegrid-time-column_AllowNull.png)
+
+### Setting time value range
+
+You can restrict and display the input value within the range using the `MinTime` and `MaxTime` properties.
+
+### Editing support
+
+`TreeGridTimeColumn` provides support to edit the time value in different modes.
+* [Normal](#normal)
+* [Mask](#mask)
+* [None](#none)
+
+#### Normal
+
+To allow editing and perform input validation only after editing is completed, set the `EditMode` property value as `Normal`.
+
+For more information refer [here](https://help.syncfusion.com/winui/time-picker/localization-and-formatting#edit-time-using-free-form-editing).
+
+#### Mask
+
+To allow editing and perform input validation as user edits the time value, set the `EditMode` property value as `Mask`.
+The default value for `EditMode` property is `Mask`.
+
+For more information refer [here](https://help.syncfusion.com/winui/time-picker/localization-and-formatting#edit-time-using-mask-mode).
+ 
+#### None
+You can disable the editing in edit part by setting the `EditMode` Property as `None`.
+
+### Select time as you scroll spinner
+
+If you want to hide the submit button and select the time directly from the drop-down time spinner without clicking `Ok`, set the `ShowSubmitButtons` property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<treeGrid:SfTreeGrid Name="treeGrid"
+        ColumnWidthMode="Star"
+        AllowEditing="True"
+        AutoExpandMode="AllNodesExpanded"
+        AutoGenerateColumns="False"
+        ChildPropertyName="ReportsTo"
+        ItemsSource="{Binding Employees}"
+        ParentPropertyName="ID"
+        SelfRelationRootValue="-1" >
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn MappingName="ID" />
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridTimeColumn HeaderText="Reporting Time" MappingName="ReportingTime" ShowSubmitButtons="False" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" />
+        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+treeGrid.Columns.Add(new TreeGridTimeColumn()
+{
+    MappingName = "ReportingTime",
+    HeaderText = "Reporting Time"
+    ShowSubmitButtons="False",
+});
+
+{% endhighlight %}
+{% endtabs %}
+
+For more information refer [here](https://help.syncfusion.com/winui/time-picker/time-restriction#select-time-as-you-scroll-spinner).
+
+
 ### Customize column renderer
 
 SfTreeGrid allows you to customize the column related operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the column. Each column has its own renderer with set of virtual methods for handling the column level operations. 
@@ -1233,6 +1427,17 @@ ComboBox
 </td>
 <td>
 HyperlinkButton
+</td>
+</tr>
+<tr>
+<td>
+TreeGridTimeColumn
+</td>
+<td>
+TreeGridCellTimeRenderer
+</td>
+<td>
+Time
 </td>
 </tr>
 </table>

@@ -70,6 +70,14 @@ Use to display the URI data
 Use to display the custom template-specified content.
 </td>
 </tr>
+<tr>
+<td>
+TreeGridTimeColumn
+</td>
+<td>
+Use to display the <code>DateTimeOffSet</Code> type data as time value.
+</td>
+</tr>
 </table>
 
 ## Defining Columns
