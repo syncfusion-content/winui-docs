@@ -39,10 +39,10 @@ Use to display the string data.
 </tr>
 <tr>
 <td>
-{{'[GridNumericColumn]'| markdownify }}
+GridNumericColumn
 </td>
 <td>
-{{'[GridCellNumericRenderer]'| markdownify }}
+GridCellNumericRenderer
 </td>
 <td>
 Use to display the numeric data.
@@ -725,7 +725,7 @@ this.dataGrid.Columns.Add(new GridNumericColumn()
 
 ![WinUI DataGrid Column with NumericColumn](Column-Types_images/winui-datagrid-NumericColumn-column.png)
 
-## Change the format of numeric value
+### Change the format of numeric value
 
 You can format the value of a `GridNumericColumn` using the `DisplayNumberFormat` or `NumberFormatter` property. The default value of `DisplayNumberFormat` and `NumberFormatter` properties are **null**.
 
@@ -771,7 +771,7 @@ numericColumn.DisplayNumberFormat = "P2";
 
 ![WinUI DataGrid Column with NumericColumn in Percent Format](Column-Types_images/winui-datagrid-NumericColumn_FormatVales-column.png)
 
-## Null value support
+### Null value support
 
 `GridNumericColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. Instead of displaying null values, you can display hint text using the `PlaceholderText` property.
 
@@ -797,7 +797,7 @@ The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 
 ![WinUI DataGrid Column with NumericColumn](Column-Types_images/winui-datagrid-NumericColumn_AllowNullValue-column.png)
 
-## Restrict value within range
+### Restrict value within range
 
 You can restrict the users to enter input within a minimum and maximum range in `GridNumericColumn` using the `MinValue` and `MaxValue` properties. The default value of the `MinValue` property is **double.MinValue** and `MaxValue` property is **double.MaxValue**.
 
@@ -814,7 +814,7 @@ You can restrict the users to enter input within a minimum and maximum range in 
 {% endhighlight %}
 {% endtabs %}
 
-## UpDown button placement
+### UpDown button placement
 
 You can increase or decrease the value of the `GridNumericColumn` using the up-down button. By default, the value of `UpDownPlacementMode` property is **Hidden**. You can change the up-down button position by assigning the value `UpDownPlacementMode` property as **Inline** or **Compact**.
 
@@ -1799,6 +1799,28 @@ GridTextColumn
 </td>
 <td>
 TextBox
+</td>
+</tr>
+<tr>
+<td>
+GridNumericColumn
+</td>
+<td>
+GridCellNumericRenderer
+</td>
+<td>
+Numeric
+</td>
+</tr>
+<tr>
+<td>
+GridDateColumn
+</td>
+<td>
+{{'[GridCellDateRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Renderers.GridCellDateRenderer.html)'| markdownify }}
+</td>
+<td>
+DateTimeOffset
 </td>
 </tr>
 <tr>

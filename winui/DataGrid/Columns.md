@@ -32,7 +32,7 @@ Use to display the string data.
 </tr>
 <tr>
 <td>
-{{'[GridNumericColumn]'| markdownify }}
+GridNumericColumn
 </td>
 <td>
 Use to display the numeric data. 
@@ -134,6 +134,14 @@ double and it's nullable
 </td>
 <td>
 GridNumericColumn
+</td>
+</tr>
+<tr>
+<td>
+DateTimeOffset and it's nullable
+</td>
+<td>
+GridDateColumn
 </td>
 </tr>
 <tr>
