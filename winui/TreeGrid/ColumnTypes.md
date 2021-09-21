@@ -703,7 +703,7 @@ this.treeGrid.Columns.Add(new TreeGridNumericColumn()
 
 ![WinUI TreeGrid Column with NumericColumn](Column-Type-images/winui-treegrid-NumericColumn-column.png)
 
-## Change the format of numeric value
+### Change the format of numeric value
 
 You can format the value of a `TreeGridNumericColumn` using the `DisplayNumberFormat` or `NumberFormatter` property. The default value of `DisplayNumberFormat` and `NumberFormatter` properties are **null**.
 
@@ -750,7 +750,7 @@ numericColumn.DisplayNumberFormat = "C2";
 
 ![WinUI TreeGrid Column with NumericColumn in Currency Format](Column-Type-images/winui-treegrid-NumericColumn_FormatVales-column.png)
 
-## Null value support
+### Null value support
 
 `TreeGridNumericColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. Instead of displaying null values, you can display hint text using the `PlaceholderText` property.
 
@@ -776,7 +776,7 @@ The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 
 ![WinUI TreeGrid Column with NumericColumn](Column-Type-images/winui-treegrid-NumericColumn_AllowNullValue-column.png)
 
-## Restrict value within range
+### Restrict value within range
 
 You can restrict the users to enter input within a minimum and maximum range in `TreeGridNumericColumn` using the `MinValue` and `MaxValue` properties. The default value of the `MinValue` property is **double.MinValue** and `MaxValue` property is **double.MaxValue**.
 
@@ -794,7 +794,7 @@ You can restrict the users to enter input within a minimum and maximum range in 
 {% endhighlight %}
 {% endtabs %}
 
-## UpDown button placement
+### UpDown button placement
 
 You can increase or decrease the value of the `TreeGridNumericColumn` using the up-down button. By default, the value of `UpDownPlacementMode` property is **Hidden**. You can change the up-down button position by assigning the value `UpDownPlacementMode` property as **Inline** or **Compact**.
 
