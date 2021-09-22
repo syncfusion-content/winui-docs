@@ -231,6 +231,30 @@ GridCheckBoxColumn
 Property of type Bool
 </td>
 </tr>
+<tr>
+<td>
+GridDateColumn
+</td>
+<td>
+Property of type DateTimeOffset
+</td>
+</tr>
+<tr>
+<td>
+GridHyperLinkColumn
+</td>
+<td>
+Property of type Uri
+</td>
+</tr>
+<tr>
+<td>
+GridNumericColumn
+</td>
+<td>
+Property of type Double
+</td>
+</tr>
 </table>
 
 When columns are auto-generated, you can handle the [SfDataGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_AutoGeneratingColumn) event to customize or cancel the columns before they are added to the SfDataGrid. 
@@ -299,6 +323,22 @@ Represents SfDataGrid column that hosts <code>CheckBox</code> controls in its ce
 </tr>
 <tr>
 <td>
+GridCheckBoxSelectorColumn
+</td>
+<td>
+Represents SfDataGrid column that hosts CheckBox controls to select or deselects rows which are not actually bound with data object of row.
+</td>
+</tr>
+<tr>
+<td>
+GridDateColumn
+</td>
+<td>
+Represents SfDataGrid column that hosts {{'[SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html)'| markdownify }} controls in its cells which is used to display and format Date values.
+</td>
+</tr>
+<tr>
+<td>
 GridImageColumn
 </td>
 <td>
@@ -315,10 +355,34 @@ Represents SfDataGrid column that hosts <code>HyperlinkButton</code> controls in
 </tr>
 <tr>
 <td>
+GridNumericColumn
+</td>
+<td>
+Represents SfDataGrid column that hosts {{'[SfNumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html)'| markdownify }} controls in its cells which is used to format and display Numeric values.
+</td>
+</tr>
+<tr>
+<td>
+GridTimeColumn
+</td>
+<td>
+Represents SfDataGrid column that hosts {{'[SfTimePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html)'| markdownify }} controls in its cells which is used to format and display Time values.
+</td>
+</tr>
+<tr>
+<td>
 GridTemplateColumn
 </td>
 <td>
 Represents SfDataGrid column that hosts template-specified content in its cells
+</td>
+</tr>
+<tr>
+<td>
+GridToggleSwitchColumn
+</td>
+<td>
+Represents SfDataGrid column that hosts <code>ToggleSwitch</code> controls in its cells.
 </td>
 </tr>
 <tr>
