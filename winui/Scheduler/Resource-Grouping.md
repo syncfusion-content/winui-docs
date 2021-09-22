@@ -367,8 +367,8 @@ N>
  * If auto resource row height is enabled then `VisibleResourceCount` will not be applicable and if resources have no appointments, then `RowMinHeight` will be considered as default resource row height.
   * [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/ResourceAutoRowHeight)
 
- ### Minimum row height in timeline view
- You can customize minimum row height of visible resources in timeline day, timeline week, timeline workweek and timeline month views by using the `RowMinHeight` property of `TimelineViewSettings` in `SfScheduler`. By default, value of this property is set to 50.
+### Minimum row height in timeline view
+You can customize minimum row height of visible resources in timeline day, timeline week, timeline workweek and timeline month views by using the `RowMinHeight` property of `TimelineViewSettings` in `SfScheduler`. By default, value of this property is set to 50.
 
 {% tabs %}
 {% highlight xaml %}
