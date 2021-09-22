@@ -2063,6 +2063,17 @@ GridCheckBoxSelectorColumn
 Selector
 </td>
 </tr>
+<tr>
+<td>
+GridToggleSwitchColumn
+</td>
+<td>
+{{'[GridCellCheckBoxSelectorRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Renderers.GridCellToggleSwitchRenderer.html)'| markdownify }}
+</td>
+<td>
+ToggleSwitch
+</td>
+</tr>
 </table>
 
 Below code, creates the `GridCellTextBoxRendererExt` to change the foreground of CustomerID column and replacing created renderer to `CellRenderers`.
