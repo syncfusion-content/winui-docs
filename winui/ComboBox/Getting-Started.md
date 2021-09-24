@@ -132,13 +132,15 @@ public class SocialMediaViewModel
         this.SocialMedias.Add(new SocialMedia() { Name = "Instagram", ID = 2 });
         this.SocialMedias.Add(new SocialMedia() { Name = "LinkedIn", ID = 3 });
         this.SocialMedias.Add(new SocialMedia() { Name = "Skype", ID = 4 });
-        this.SocialMedias.Add(new SocialMedia() { Name = "Tumblr", ID = 5 });
-        this.SocialMedias.Add(new SocialMedia() { Name = "Twitter", ID = 6 });
-        this.SocialMedias.Add(new SocialMedia() { Name = "Telegram", ID = 7 });
-        this.SocialMedias.Add(new SocialMedia() { Name = "Tik Tok", ID = 8 });
-        this.SocialMedias.Add(new SocialMedia() { Name = "Vimeo", ID = 9 });
-        this.SocialMedias.Add(new SocialMedia() { Name = "WhatsApp", ID = 10 });
-        this.SocialMedias.Add(new SocialMedia() { Name = "YouTube", ID = 11 });
+        this.SocialMedias.Add(new SocialMedia() { Name = "Telegram", ID = 5 });
+        this.SocialMedias.Add(new SocialMedia() { Name = "Televzr", ID = 6 });
+        this.SocialMedias.Add(new SocialMedia() { Name = "Tik Tok", ID = 7 });
+        this.SocialMedias.Add(new SocialMedia() { Name = "Tout", ID = 8 });
+        this.SocialMedias.Add(new SocialMedia() { Name = "Tumblr", ID = 9 });
+        this.SocialMedias.Add(new SocialMedia() { Name = "Twitter", ID = 10 });
+        this.SocialMedias.Add(new SocialMedia() { Name = "Vimeo", ID = 11 });
+        this.SocialMedias.Add(new SocialMedia() { Name = "WhatsApp", ID = 12 });
+        this.SocialMedias.Add(new SocialMedia() { Name = "YouTube", ID = 13 });
     }
 }
 
