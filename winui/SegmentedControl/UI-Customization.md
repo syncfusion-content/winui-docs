@@ -391,7 +391,7 @@ Used to set the hover background of the segmented item.
 SyncfusionSegmentedItemSelectedHoverBackground
 </td>
 <td>
-Used to set the selectedhover background of the segmented item.
+Used to set the selected hover background of the segmented item.
 </td>
 </tr>
 <tr>
@@ -423,7 +423,7 @@ Used to set the hover foreground of the segmented item.
 SyncfusionSegmentedItemSelectedHoverForeground
 </td>
 <td>
-Used to set the selectedhover foreground of the segmented item.
+Used to set the selected hover foreground of the segmented item.
 </td>
 </tr>
 <tr>

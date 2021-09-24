@@ -98,7 +98,7 @@ public class SegmentedModel : INotifyPropertyChanged
 
 ![WinUI Segmented Control with selecteditem customization](Selection_Images/selecteditem-customization.png)
 
-N> [Users can't change the selecteditem foreground using SelectedSegmentStyle]()
+N> [Users can't change the selected item foreground using SelectedSegmentStyle]()
 
 
 ## SelectionChanged Event
