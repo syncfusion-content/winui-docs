@@ -264,6 +264,8 @@ sfComboBox.IsEditable = true;
 
 The ComboBox control provides support to highlights the first item which fits the user input in the drop down list based on `TextSearchMode` property. To disable searching functionality, you have to set the `IsTextSearchEnabled` property as `false`. The default value is true.
 
+![WinUI ComboBox search the items based on provided input](GettingStarted_images/winui-combobox-text-searching.gif)
+
 ## Filtering
 
 The ComboBox control provides support to filter the items in the dropdown based on the starting letter or whether they contain a specific letter. To enable filtering functionality, you have to set the `IsFilteringEnabled` property as true. The default value is false.
@@ -288,6 +290,8 @@ sfComboBox.IsFilteringEnabled = true;
 
 {% endhighlight %}
 {% endtabs %}
+
+![WinUI ComboBox filter the items based on starting text](GettingStarted_images/winui-combobox-filtering-start-text.gif)
 
 N> Filtering will be supported only for editable mode.
 
