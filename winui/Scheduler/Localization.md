@@ -19,21 +19,22 @@ The Scheduler control supports different types of calendars such as Gregorian, K
 <th>UnSupported Calendars</th>
 </tr>
 <tr>
-<td>
 
-* GregorianCalendar
-* HebrewCalendar
-* HijriCalendar
-* KoreanCalendar
-* TaiwanCalendar
-* ThaiCalendar
-* UmAlQuraCalendar
-* PersianCalendar
-* JulianCalendar</td>
 <td>
+<br>* GregorianCalendar</br>
+<br>* HebrewCalendar </br>
+<br>* HijriCalendar</br>
+<br>* KoreanCalendar</br>
+<br>* TaiwanCalendar</br>
+<br>* ThaiCalendar</br>
+<br>* UmAlQuraCalendar</br>
+<br>* PersianCalendar</br>
+<br>* JulianCalendar</br>
+</td>
 
-* JapaneseCalendar
-* Lunar type calendars
+<td>
+<br>* JapaneseCalendar</br>
+<br>* Lunar type calendars</br>
 </td>
 </tr>
 </table>
