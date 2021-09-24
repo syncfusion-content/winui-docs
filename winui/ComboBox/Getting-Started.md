@@ -108,7 +108,7 @@ this.Content = sfComboBox;
 
 The ComboBox can bound to an external data source using `ItemsSource` property. Now let us create Model and ViewModel classes to populate ComboBox with SocialMedia details.
 
-**Step 1** Define a simple model class SocialMedia with fields ID and name, and then populate social media data in ViewModel.
+**Step 1:** Define a simple model class SocialMedia with fields ID and name, and then populate social media data in ViewModel.
 
 {% tabs %}
 {% highlight c# %}
@@ -147,7 +147,7 @@ public class SocialMediaViewModel
 {% endhighlight %}
 {% endtabs %}
 
-**Step 2**  Populate data in ComboBox 
+**Step 2:**  Populate data in ComboBox 
 
 Now populate this SocialMediaViewModel data in SfComboBox control by binding with `ItemSource` property. 
 
@@ -189,7 +189,7 @@ sfComboBox.ItemsSource = (sfComboBox.DataContext as SocialMediaViewModel).Social
 
 N> Set the SocialMediaViewModel instance as the DataContext of your control; this is done to bind properties of SocialMediaViewModel to SfComboBox.
 
-**Step 3** Setting TextMemberPath and DisplayMemberPath
+**Step 3:** Setting TextMemberPath and DisplayMemberPath
 
 The combo box control is populated with the list of social medias. But the SocialMedia model contains two properties ID and Name so it is necessary to intimate by which property it should display value in the selection box portion of the ComboBox control, when an item is selected.
 
