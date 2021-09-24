@@ -126,9 +126,9 @@ Users can customize the appearance of each `SfSegmentedItem` by using the `ItemT
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:markup="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
-    markup:Ignorable="d">
+    mc:Ignorable="d">
     <Grid>
         <Grid.DataContext>
             <local:SegmentedViewModel/>
@@ -205,9 +205,9 @@ You can set `DisplayMemberPath` which denotes the path to a value on the source 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:markup="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
-    markup:Ignorable="d">
+    mc:Ignorable="d">
     <Grid>
         <Grid.DataContext>
             <local:SegmentedViewModel/>
