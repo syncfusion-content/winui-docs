@@ -357,6 +357,147 @@ public class SegmentedModel : INotifyPropertyChanged
 
 You can customize the background, foreground of the segmented item using the below table.
 
+This example illustrates how to customize the control using keys.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GettingStarted"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
+    mc:Ignorable="d">
+    <Grid x:Name="Root_Grid">
+        <Grid.DataContext>
+            <local:SegmentedViewModel/>
+        </Grid.DataContext>
+        <Grid.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.ThemeDictionaries>
+                    <ResourceDictionary x:Key="Light">
+                        <SolidColorBrush x:Key="SelectedBackground" Color="#6C58EA"/>
+                    </ResourceDictionary>
+                    <ResourceDictionary x:Key="Dark">
+                        <SolidColorBrush x:Key="SelectedBackground" Color="#08B2A8"/>
+                    </ResourceDictionary>
+                </ResourceDictionary.ThemeDictionaries>
+                <Style TargetType="Border" x:Key="shirtModelStyle">
+                    <Setter Property="CornerRadius" Value="4"/>
+                    <Setter Property="Background" Value="{ThemeResource SelectedBackground}"/>
+                </Style>
+            </ResourceDictionary>
+        </Grid.Resources>
+        <syncfusion:SfSegmentedControl x:Name="segmentedControl"
+                                    Height="40"   
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    SelectedIndex="2"
+                                    CornerRadius="4"
+                                    BorderThickness="2"
+                                    ItemBorderThickness="0"
+                                    SelectedSegmentStyle="{StaticResource shirtModelStyle}"
+                                    ItemsSource="{Binding ShirtModels}">
+            <syncfusion:SfSegmentedControl.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="SyncfusionSegmentedControlBackground" Color="#F2F2F2"/>
+                            <SolidColorBrush x:Key="SyncfusionSegmentedItemBackground" Color="#F2F2F2"/>
+                            <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedBackground" Color="#6C58EA"/>
+                            <SolidColorBrush x:Key="SyncfusionSegmentedItemHoverBackground" Color="#E8E4FF"/>
+                            <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedHoverBackground" Color="#E8E4FF"/>
+                            <SolidColorBrush x:Key="SyncfusionSegmentedItemForeground" Color="Black"/>
+                            <SolidColorBrush x:Key="SyncfusionSegmentedItemHoverForeground" Color="Black"/>
+                            <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedHoverForeground" Color="Black"/>
+                            <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedForeground" Color="White"/>
+                            <SolidColorBrush x:Key="SyncfusionSegmentedControlBorderBrush" Color="#D9D9D9"/>
+                        </ResourceDictionary>
+                        <ResourceDictionary x:Key="Dark">
+                            <SolidColorBrush x:Key="SyncfusionSegmentedControlBackground" Color="#414141"/>
+                            <SolidColorBrush x:Key="SyncfusionSegmentedItemBackground" Color="#414141"/>
+                            <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedBackground" Color="#08B2A8"/>
+                            <SolidColorBrush x:Key="SyncfusionSegmentedItemHoverBackground" Color="#365856"/>
+                            <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedHoverBackground" Color="#365856"/>
+                            <SolidColorBrush x:Key="SyncfusionSegmentedItemForeground" Color="White"/>
+                            <SolidColorBrush x:Key="SyncfusionSegmentedItemHoverForeground" Color="White"/>
+                            <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedHoverForeground" Color="White"/>
+                            <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedForeground" Color="White"/>
+                            <SolidColorBrush x:Key="SyncfusionSegmentedControlBorderBrush" Color="#5F5E5E"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </syncfusion:SfSegmentedControl.Resources>
+            <syncfusion:SfSegmentedControl.ItemContainerStyle>
+                <Style TargetType="syncfusion:SfSegmentedItem">
+                    <Setter Property="Margin" Value="3" />
+                    <Setter Property="CornerRadius" Value="4" />
+                </Style>
+            </syncfusion:SfSegmentedControl.ItemContainerStyle>                   
+            <syncfusion:SfSegmentedControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <TextBlock Text="{Binding Name}"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+                    </Grid>
+                </DataTemplate>
+            </syncfusion:SfSegmentedControl.ItemTemplate>
+        </syncfusion:SfSegmentedControl>
+    </Grid>
+</Window>
+
+{% endhighlight %}
+{% highlight C# %} 
+
+public class SegmentedViewModel
+{
+   public SegmentedViewModel()
+   {
+        ShirtModels = new List<SegmentedModel>();
+        ShirtModels.Add(new SegmentedModel() { Name = "Formals" });
+        ShirtModels.Add(new SegmentedModel() { Name = "Casuals" });
+        ShirtModels.Add(new SegmentedModel() { Name = "Trendy" });
+   }
+
+   public List<SegmentedModel> ShirtModels
+   {
+      get; set;
+   }
+}
+
+public class SegmentedModel : INotifyPropertyChanged
+{
+   private string name;
+
+   public string Name
+   {
+      get { return name; }
+      set { name = value; OnPropertyChanged("Name"); }
+   }
+
+   public event PropertyChangedEventHandler PropertyChanged;
+
+   private void OnPropertyChanged(string parameter)
+   {
+      PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(parameter));
+   }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+**Light Theme:**
+
+![WinUI Segmented Control with lightthemecustomization](UI_Customization_Images/lightthemecustomization.png)
+
+**Dark Theme:**
+
+![WinUI Segmented Control with darkthemecustomization](UI_Customization_Images/darkthemecustomization.png)
+
 <table>
 <tr>
 <th>Key</th>
