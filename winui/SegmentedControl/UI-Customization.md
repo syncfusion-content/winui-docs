@@ -91,7 +91,7 @@ public class SegmentedModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with borderthickness](UI_Customization_Images/borderthickness.png)
+![WinUI Segmented Control with borderthickness](UI_Customization_Images/winui-segmented-control-borderthickness.png)
 
 ### ItemBorderThickness 
 
@@ -178,7 +178,7 @@ public class SegmentedModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with itemborderthickness](UI_Customization_Images/itemborderthickness.png)
+![WinUI Segmented Control with itemborderthickness](UI_Customization_Images/winui-segmented-control-itemborderthickness.png)
 
 ## CornerRadius
 
@@ -259,7 +259,7 @@ public class SegmentedModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with cornerradius](UI_Customization_Images/cornerradius.png)
+![WinUI Segmented Control with cornerradius](UI_Customization_Images/winui-segmented-control-cornerradius.png)
 
 ## Border color
 
@@ -351,7 +351,7 @@ public class SegmentedModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with bordercolor](UI_Customization_Images/bordercolor.png)
+![WinUI Segmented Control with bordercolor](UI_Customization_Images/winui-segmented-control-bordercolor.png)
 
 ## Customization using Keys
 
@@ -492,11 +492,11 @@ public class SegmentedModel : INotifyPropertyChanged
 
 **Light Theme:**
 
-![WinUI Segmented Control with lightthemecustomization](UI_Customization_Images/lightthemecustomization.png)
+![WinUI Segmented Control with light theme customization](UI_Customization_Images/winui-segmented-control-light-theme-customization.png)
 
 **Dark Theme:**
 
-![WinUI Segmented Control with darkthemecustomization](UI_Customization_Images/darkthemecustomization.png)
+![WinUI Segmented Control with dark theme customization](UI_Customization_Images/winui-segmented-control-dark-theme-customization.png)
 
 <table>
 <tr>

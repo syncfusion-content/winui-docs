@@ -272,5 +272,5 @@ public class SegmentedModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with DisplayMemberPath](Getting_Started_Images/gettingstarted.png)
+![WinUI Segmented Control getting started image](Getting_Started_Images/winui-segmented-control-getting-started.png)
 

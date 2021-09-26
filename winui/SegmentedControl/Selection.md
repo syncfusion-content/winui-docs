@@ -96,9 +96,9 @@ public class SegmentedModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with selecteditem customization](Selection_Images/selecteditem-customization.png)
+![WinUI Segmented Control with selecteditem customization](Selection_Images/winui-segmented-control-selected-item-customization.png)
 
-N> [Users can't change the selected item foreground using SelectedSegmentStyle]()
+N> Users can't change the selected item foreground using SelectedSegmentStyle.
 
 
 ## SelectionChanged Event
@@ -199,7 +199,7 @@ public class SegmentedModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with animation](Selection_Images/animation.gif)
+![WinUI Segmented Control with animation](Selection_Images/winui-segmented-control-animation.gif)
 
 
 

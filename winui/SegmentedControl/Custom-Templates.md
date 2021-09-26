@@ -120,7 +120,7 @@ public class SegmentedModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with ellipse](Custom_Templates_Images/ellipse.png)
+![WinUI Segmented Control with ellipse](Custom_Templates_Images/winui-segmented-control-ellipse.png)
 
 ## Circle Style
 
@@ -155,7 +155,7 @@ This example illustrates how to customize the circle style
             </Style>
         </Grid.Resources>
         <syncfusion:SfSegmentedControl x:Name="segmentedControl"
-                            HorizontalAlignment="Left"
+                            HorizontalAlignment="Center"
                             VerticalAlignment="Center" 
                             BorderThickness="0" 
                             SelectedIndex="2"
@@ -225,7 +225,7 @@ public class SegmentedModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with circle style](Custom_Templates_Images/circle.png)
+![WinUI Segmented Control with circle style](Custom_Templates_Images/winui-segmented-control-circle.png)
 
 ## ImageWithText 
 
@@ -360,7 +360,7 @@ public class SegmentedModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with imagewithtext](Custom_Templates_Images/image-with-text.png)
+![WinUI Segmented Control with imagewithtext](Custom_Templates_Images/winui-segmented-control-image-with-text.png)
 
 ## TopIndicator 
 
@@ -520,11 +520,11 @@ public class SegmentedModel : INotifyPropertyChanged
 
 **Light Theme:**
 
-![WinUI Segmented Control with lighttheme topindicator](Custom_Templates_Images/lighttheme-topindicator.png)
+![WinUI Segmented Control with light theme topindicator](Custom_Templates_Images/winui-segmented-control-light-theme-topindicator.png)
 
 **Dark Theme:**
 
-![WinUI Segmented Control with darktheme topindicator](Custom_Templates_Images/darktheme-topindicator.png)
+![WinUI Segmented Control with dark theme topindicator](Custom_Templates_Images/winui-segmented-control-dark-theme-topindicator.png)
 
 
 

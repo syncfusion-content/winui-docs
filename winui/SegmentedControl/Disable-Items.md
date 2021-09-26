@@ -102,5 +102,5 @@ public class SegmentedModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with disable](Disable_Images/disable.png)
+![WinUI Segmented Control with disable](Disable_Images/winui-segmented-control-disable.png)
 
