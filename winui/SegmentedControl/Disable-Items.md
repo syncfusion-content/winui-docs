@@ -13,7 +13,10 @@ The WinUI Segmented control provides options to disable the segmented item.
 
 ## Disable items
 
-You can disable the items using the `SetItemEnabled` Method.
+The Segmented control allows you to disable the items using the `SetItemEnabled` Method. The method has following two parameters:
+
+* `index` - The integer value indicating the index of the item.
+* `isEnabled` - The boolean value indicating whether the item should be enabled or not
 
 {% tabs %}
 {% highlight xaml %}

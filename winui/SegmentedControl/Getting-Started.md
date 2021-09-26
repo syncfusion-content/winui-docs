@@ -60,7 +60,7 @@ public sealed partial class MainWindow : Window
 
 ## Populating items through string collection
 
-The segmented control provides the collection of strings as a data source.
+The Segmented control allows you to set the collection of strings as a data source.
 
 {% tabs %}
 {% highlight xaml %}
@@ -111,11 +111,11 @@ public class SegmentedViewModel
 
 ## Populating items using business objects
 
-You can populate items to the Segmented Control by setting the collection value to the `ItemsSource` property.
+Populating items to the Segmented Control by setting the collection value to the `ItemsSource` property.
 
 ### ItemTemplate
 
-Users can customize the appearance of each `SfSegmentedItem` by using the `ItemTemplate` property.
+By defining the `ItemTemplate` of the segmented control, a custom user interface(UI) can be achieved to display each `SfSegmentedItem`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -194,7 +194,7 @@ public class SegmentedModel : INotifyPropertyChanged
 
 ### DisplayMemberPath
 
-You can set `DisplayMemberPath` which denotes the path to a value on the source object (SfSegmentedControl.ItemsSource) to serve as the visual representation of object. The below code snippet will be used to bind the DataSource to the ComboBoxAdv.
+`DisplayMemberPath` denotes the path to a value on the source object (SfSegmentedControl.ItemsSource) to serve as the visual representation of object. The below code snippet will be used to bind the DataSource to the ComboBoxAdv.
 
 {% tabs %}
 {% highlight xaml %}

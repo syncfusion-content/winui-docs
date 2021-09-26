@@ -9,11 +9,11 @@ documentation: ug
 
 # Selection in WinUI Segmented Control
 
-This section explains how to customize the selected item and its related operations in the Segmented Control.
+This section explains how to customize the selected item and its related operations in the Segmented control.
 
 ## Selected item customization
 
-The Segmented Control allows you to customize the appearance of SelectedItem using the `SelectedSegmentStyle` property. we need to provide style of target type as [Border](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.border).
+The Segmented control allows you to customize the appearance of SelectedItem using the `SelectedSegmentStyle` property. we need to provide style of target type as [Border](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.border).
 
 {% tabs %}
 {% highlight xaml %}
@@ -62,29 +62,12 @@ The Segmented Control allows you to customize the appearance of SelectedItem usi
 
 N> Users can't change the selected item foreground using SelectedSegmentStyle.
 
-
-## SelectionChanged event
-
-The SelectionChanged event will occur once selection process has been completed for the selected item in the Segmented Control. The    `SegmentSelectionChangedEventArgs` has the following values which provides information for SelectionChanged event:
-
-* NewValue: Gets the new value of `SelectedItem` has been assigned to the SegmentedControl.
-* OldValue: Gets the old value of `SelectedItem` has been assigned to the SegmentedControl.
-
-{% highlight C# %} 
-
-segmentedControl.SelectionChanged += SegmentedControl_SelectionChanged;
-
-private void SegmentedControl_SelectionChanged(object sender, SegmentSelectionChangedEventArgs e)
-{
-            
-}
-
-{% endhighlight %}
-
-
 ## Animation
 
-Provided the slide animation support for selecting the item. Also users can enable or disable the selection animation. The default value is `Slide`.
+The Segmented control supports slide animation for selecting the item. Also users can enable or disable the selection animation using `SelectionAnimationType` property. The default value is `Slide`. This property has following two values:
+
+* `Slide` - The slide animation effect applied while selecting the item. 
+* `None` - Disables animation while selecting the item.
 
 {% tabs %}
 {% highlight xaml %}
@@ -124,6 +107,74 @@ Provided the slide animation support for selecting the item. Also users can enab
 {% endtabs %} 
 
 ![WinUI Segmented Control with animation](Selection_Images/winui-segmented-control-animation.gif)
+
+## Keyboard behaviors
+
+<table>
+<tr>
+<th>
+Key or KeyCombinations
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+<kbd>LeftArrow</kbd>
+</td>
+<td>
+Moves to the previous item on the segmented control's left side. It doesn't make any selection and only navigates to the previous item. If the focus border is on the first item, pressing <kbd>LeftArrow</kbd> does nothing.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>RightArrow</kbd>
+</td>
+<td>
+Moves to the next item on the segmented control's right side. It doesn't make any selection and only navigates to the next item. If the focus border is on the last item, pressing <kbd>RightArrow</kbd> does nothing.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>Tab</kbd>
+</td>
+<td>
+The focus border appears on the selected item when users press the <kbd>Tab</kbd> key. The focus border appears on the first item if there is no selected item. It will leave the control after pressing the <kbd>Tab</kbd> key with focus. 
+</td>
+</tr>
+<tr>
+<td>
+<kbd>Enter</kbd>
+</td>
+<td>
+Pressing the <kbd>Enter</kbd> key after moving to the next or previous item makes a selection.
+</td>
+</tr>
+</table>
+
+![WinUI Segmented Control with keyboard behaviors](Selection_Images/winui-segmentedcontrol-keyboard-behaviors.png)
+
+## SelectionChanged event
+
+The SelectionChanged event will occur once selection process has been completed for the selected item in the Segmented Control. The    `SegmentSelectionChangedEventArgs` has the following values which provides information for SelectionChanged event:
+
+* NewValue: Gets the new value of `SelectedItem` has been assigned to the SegmentedControl.
+* OldValue: Gets the old value of `SelectedItem` has been assigned to the SegmentedControl.
+
+{% highlight C# %} 
+
+segmentedControl.SelectionChanged += SegmentedControl_SelectionChanged;
+
+private void SegmentedControl_SelectionChanged(object sender, SegmentSelectionChangedEventArgs e)
+{
+   var newValue = e.NewValue;
+   var oldValue = e.OldValue;         
+}
+
+{% endhighlight %}
+
+
 
 
 

@@ -15,6 +15,8 @@ The Syncfusion [WinUI Segmented Control](https://www.syncfusion.com/winui-contro
 
 ## Key features
 
-* Customize the segment background, text color, selection style, and more using the built-in features to fit your application’s theme.
-* Populate the segment items from a collection of strings and business objects.
-* Completely customize the segments with custom UI.
+* `Data binding`: Supports to bind both collection of strings and business objects.
+* `Selection`: Supports to customize the segment background, text color, selection style, and more.
+* `Animation`: Supports to enable or disable the effects of animation.
+* `Customization`: Supports to customize the segments with custom UI. 
+* `Disable`: Supports to disable the segment items.

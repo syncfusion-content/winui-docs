@@ -9,11 +9,13 @@ documentation: ug
 
 # Custom Templates in WinUI Segmented Control
 
-This section explains how to customize the SfSegmentedItem and its related operations in the Segmented Control.
+This section explains how to customize the SfSegmentedItem and its related operations in the Segmented control.
 
 ## Ellipse style
 
-This example illustrates how to customize the ellipse style
+By changing corner radius of the segmented item using `ItemContainerStyle` property, users can achieve the ellipse style.
+
+This example illustrates how to customize the ellipse style 
 
 {% tabs %}
 {% highlight xaml %}
@@ -88,6 +90,8 @@ This example illustrates how to customize the ellipse style
 
 ## Circle style
 
+By changing corner radius and margin of the segmented item using `ItemContainerStyle` property, users can achieve the circle style.
+
 This example illustrates how to customize the circle style
 
 {% tabs %}
@@ -152,7 +156,9 @@ This example illustrates how to customize the circle style
 
 ## ImageWithText style
 
-This example illustrates how to customize the image with text.
+By adding the image and content to the `ItemTemplate`, users can create an image with text style.
+
+This example illustrates how to customize the image with text style.
 
 {% tabs %}
 {% highlight xaml %}
@@ -206,6 +212,8 @@ This example illustrates how to customize the image with text.
 ![WinUI Segmented Control with imagewithtext](Custom_Templates_Images/winui-segmented-control-image-with-text.png)
 
 ## TopIndicator style
+
+Using the `ItemBorderThickness` and `SelectedSegmentStyle` properties, users can achieve the topindicator style.
 
 This example illustrates how to customize the top indicator style.
 
