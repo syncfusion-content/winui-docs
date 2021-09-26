@@ -213,7 +213,7 @@ This example illustrates how to customize the image with text style.
 
 ## TopIndicator style
 
-Using the `ItemBorderThickness` and `SelectedSegmentStyle` properties, users can achieve the topindicator style.
+Using the `ItemBorderThickness` and `SelectedSegmentStyle` properties, users can achieve the top indicator style.
 
 This example illustrates how to customize the top indicator style.
 
