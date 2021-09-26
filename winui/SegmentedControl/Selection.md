@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection with WinUI Segmented Control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Segmented Control(SfSegmentedControl), its elements, and more.
+description: Learn here all about selection support in Syncfusion WinUI Segmented Control(SfSegmentedControl), its elements, and more.
 platform: WinUI
 control: Segmented Control
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to customize the selected item and its related operations in the Segmented Control.
 
-## Selected Item Customization
+## Selected item customization
 
 The Segmented Control allows you to customize the appearance of SelectedItem using the `SelectedSegmentStyle` property. we need to provide style of target type as [Border](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.border).
 
@@ -56,44 +56,6 @@ The Segmented Control allows you to customize the appearance of SelectedItem usi
 </Window>
 
 {% endhighlight %}
-{% highlight C# %} 
-
-public class SegmentedViewModel
-{
-   public SegmentedViewModel()
-   {
-      Days = new List<SegmentedModel>();
-      Days.Add(new SegmentedModel() { Name = "Day" });
-      Days.Add(new SegmentedModel() { Name = "Week" });
-      Days.Add(new SegmentedModel() { Name = "Month" });
-      Days.Add(new SegmentedModel() { Name = "Year" });
-   }
-
-   public List<SegmentedModel> Days
-   {
-      get; set;
-   }
-}
-
-public class SegmentedModel : INotifyPropertyChanged
-{
-   private string name;
-
-   public string Name
-   {
-      get { return name; }
-      set { name = value; OnPropertyChanged("Name"); }
-   }
-
-   public event PropertyChangedEventHandler PropertyChanged;
-
-   private void OnPropertyChanged(string parameter)
-   {
-      PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(parameter));
-   }
-}
-
-{% endhighlight %}
 {% endtabs %} 
 
 ![WinUI Segmented Control with selecteditem customization](Selection_Images/winui-segmented-control-selected-item-customization.png)
@@ -101,7 +63,7 @@ public class SegmentedModel : INotifyPropertyChanged
 N> Users can't change the selected item foreground using SelectedSegmentStyle.
 
 
-## SelectionChanged Event
+## SelectionChanged event
 
 The SelectionChanged event will occur once selection process has been completed for the selected item in the Segmented Control. The    `SegmentSelectionChangedEventArgs` has the following values which provides information for SelectionChanged event:
 
@@ -157,44 +119,6 @@ Provided the slide animation support for selecting the item. Also users can enab
         </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
-
-{% endhighlight %}
-{% highlight C# %} 
-
-public class SegmentedViewModel
-{
-   public SegmentedViewModel()
-   {
-      Days = new List<SegmentedModel>();
-      Days.Add(new SegmentedModel() { Name = "Day" });
-      Days.Add(new SegmentedModel() { Name = "Week" });
-      Days.Add(new SegmentedModel() { Name = "Month" });
-      Days.Add(new SegmentedModel() { Name = "Year" });
-   }
-
-   public List<SegmentedModel> Days
-   {
-      get; set;
-   }
-}
-
-public class SegmentedModel : INotifyPropertyChanged
-{
-   private string name;
-
-   public string Name
-   {
-      get { return name; }
-      set { name = value; OnPropertyChanged("Name"); }
-   }
-
-   public event PropertyChangedEventHandler PropertyChanged;
-
-   private void OnPropertyChanged(string parameter)
-   {
-      PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(parameter));
-   }
-}
 
 {% endhighlight %}
 {% endtabs %} 

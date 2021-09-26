@@ -1,7 +1,7 @@
 ---
 layout: post
 title: UI Customization with WinUI Segmented Control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Segmented Control(SfSegmentedControl), its elements, and more.
+description: Learn here all about UI customization with Syncfusion WinUI Segmented Control(SfSegmentedControl), its elements, and more.
 platform: WinUI
 control: Segmented Control
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 The WinUI Segmented control provides options to customize the background, text color, selection style, and much more.
 
-## BorderThickness of the Segmented Control
+## BorderThickness
 
 You can customize the thickness of the `SfSegmentedControl` using `BorderThickness` key. The default value is 1.
 
@@ -49,44 +49,6 @@ You can customize the thickness of the `SfSegmentedControl` using `BorderThickne
         </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
-
-{% endhighlight %}
-{% highlight C# %} 
-
-public class SegmentedViewModel
-{
-   public SegmentedViewModel()
-   {
-      Days = new List<SegmentedModel>();
-      Days.Add(new SegmentedModel() { Name = "Day" });
-      Days.Add(new SegmentedModel() { Name = "Week" });
-      Days.Add(new SegmentedModel() { Name = "Month" });
-      Days.Add(new SegmentedModel() { Name = "Year" });
-   }
-
-   public List<SegmentedModel> Days
-   {
-      get; set;
-   }
-}
-
-public class SegmentedModel : INotifyPropertyChanged
-{
-   private string name;
-
-   public string Name
-   {
-      get { return name; }
-      set { name = value; OnPropertyChanged("Name"); }
-   }
-
-   public event PropertyChangedEventHandler PropertyChanged;
-
-   private void OnPropertyChanged(string parameter)
-   {
-      PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(parameter));
-   }
-}
 
 {% endhighlight %}
 {% endtabs %} 
@@ -138,44 +100,6 @@ You can customize the thickness of the `SfSegmentedItem` using `ItemBorderThickn
 </Window>
 
 {% endhighlight %}
-{% highlight C# %} 
-
-public class SegmentedViewModel
-{
-   public SegmentedViewModel()
-   {
-      Days = new List<SegmentedModel>();
-      Days.Add(new SegmentedModel() { Name = "Day" });
-      Days.Add(new SegmentedModel() { Name = "Week" });
-      Days.Add(new SegmentedModel() { Name = "Month" });
-      Days.Add(new SegmentedModel() { Name = "Year" });
-   }
-
-   public List<SegmentedModel> Days
-   {
-      get; set;
-   }
-}
-
-public class SegmentedModel : INotifyPropertyChanged
-{
-   private string name;
-
-   public string Name
-   {
-      get { return name; }
-      set { name = value; OnPropertyChanged("Name"); }
-   }
-
-   public event PropertyChangedEventHandler PropertyChanged;
-
-   private void OnPropertyChanged(string parameter)
-   {
-      PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(parameter));
-   }
-}
-
-{% endhighlight %}
 {% endtabs %} 
 
 ![WinUI Segmented Control with itemborderthickness](UI_Customization_Images/winui-segmented-control-itemborderthickness.png)
@@ -217,44 +141,6 @@ You can customize the thickness of the Segmented control using `CornerRadius` ke
         </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
-
-{% endhighlight %}
-{% highlight C# %} 
-
-public class SegmentedViewModel
-{
-   public SegmentedViewModel()
-   {
-      Days = new List<SegmentedModel>();
-      Days.Add(new SegmentedModel() { Name = "Day" });
-      Days.Add(new SegmentedModel() { Name = "Week" });
-      Days.Add(new SegmentedModel() { Name = "Month" });
-      Days.Add(new SegmentedModel() { Name = "Year" });
-   }
-
-   public List<SegmentedModel> Days
-   {
-      get; set;
-   }
-}
-
-public class SegmentedModel : INotifyPropertyChanged
-{
-   private string name;
-
-   public string Name
-   {
-      get { return name; }
-      set { name = value; OnPropertyChanged("Name"); }
-   }
-
-   public event PropertyChangedEventHandler PropertyChanged;
-
-   private void OnPropertyChanged(string parameter)
-   {
-      PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(parameter));
-   }
-}
 
 {% endhighlight %}
 {% endtabs %} 
@@ -311,49 +197,11 @@ You can customize the border color of the segmented control using `SyncfusionSeg
 </Window>
 
 {% endhighlight %}
-{% highlight C# %} 
-
-public class SegmentedViewModel
-{
-   public SegmentedViewModel()
-   {
-      Days = new List<SegmentedModel>();
-      Days.Add(new SegmentedModel() { Name = "Day" });
-      Days.Add(new SegmentedModel() { Name = "Week" });
-      Days.Add(new SegmentedModel() { Name = "Month" });
-      Days.Add(new SegmentedModel() { Name = "Year" });
-   }
-
-   public List<SegmentedModel> Days
-   {
-      get; set;
-   }
-}
-
-public class SegmentedModel : INotifyPropertyChanged
-{
-   private string name;
-
-   public string Name
-   {
-      get { return name; }
-      set { name = value; OnPropertyChanged("Name"); }
-   }
-
-   public event PropertyChangedEventHandler PropertyChanged;
-
-   private void OnPropertyChanged(string parameter)
-   {
-      PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(parameter));
-   }
-}
-
-{% endhighlight %}
 {% endtabs %} 
 
 ![WinUI Segmented Control with bordercolor](UI_Customization_Images/winui-segmented-control-bordercolor.png)
 
-## Customization using Keys
+## Customization using keys
 
 You can customize the background, foreground of the segmented item using the below table.
 
@@ -449,43 +297,6 @@ This example illustrates how to customize the control using keys.
         </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
-
-{% endhighlight %}
-{% highlight C# %} 
-
-public class SegmentedViewModel
-{
-   public SegmentedViewModel()
-   {
-        ShirtModels = new List<SegmentedModel>();
-        ShirtModels.Add(new SegmentedModel() { Name = "Formals" });
-        ShirtModels.Add(new SegmentedModel() { Name = "Casuals" });
-        ShirtModels.Add(new SegmentedModel() { Name = "Trendy" });
-   }
-
-   public List<SegmentedModel> ShirtModels
-   {
-      get; set;
-   }
-}
-
-public class SegmentedModel : INotifyPropertyChanged
-{
-   private string name;
-
-   public string Name
-   {
-      get { return name; }
-      set { name = value; OnPropertyChanged("Name"); }
-   }
-
-   public event PropertyChangedEventHandler PropertyChanged;
-
-   private void OnPropertyChanged(string parameter)
-   {
-      PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(parameter));
-   }
-}
 
 {% endhighlight %}
 {% endtabs %} 

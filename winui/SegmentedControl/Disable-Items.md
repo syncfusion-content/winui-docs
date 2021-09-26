@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Disable Items with WinUI Segmented Control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Segmented Control(SfSegmentedControl), its elements, and more.
+description: Learn here all about disable items with Syncfusion WinUI Segmented Control(SfSegmentedControl), its elements, and more.
 platform: WinUI
 control: Segmented Control
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 The WinUI Segmented control provides options to disable the segmented item.
 
-## Disable Items
+## Disable items
 
 You can disable the items using the `SetItemEnabled` Method.
 
@@ -62,41 +62,6 @@ public sealed partial class MainWindow : Window
         segmentedControl.SetItemEnabled(0, false);
         segmentedControl.SetItemEnabled(3, false);
     }
-}
-
-public class SegmentedViewModel
-{
-   public SegmentedViewModel()
-   {
-      Days = new List<SegmentedModel>();
-      Days.Add(new SegmentedModel() { Name = "Day" });
-      Days.Add(new SegmentedModel() { Name = "Week" });
-      Days.Add(new SegmentedModel() { Name = "Month" });
-      Days.Add(new SegmentedModel() { Name = "Year" });
-   }
-
-   public List<SegmentedModel> Days
-   {
-      get; set;
-   }
-}
-
-public class SegmentedModel : INotifyPropertyChanged
-{
-   private string name;
-
-   public string Name
-   {
-      get { return name; }
-      set { name = value; OnPropertyChanged("Name"); }
-   }
-
-   public event PropertyChangedEventHandler PropertyChanged;
-
-   private void OnPropertyChanged(string parameter)
-   {
-      PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(parameter));
-   }
 }
 
 {% endhighlight %}

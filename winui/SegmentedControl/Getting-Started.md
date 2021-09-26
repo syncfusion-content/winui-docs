@@ -9,9 +9,9 @@ documentation: ug
 
 # Getting Started with WinUI Segmented Control
 
-This section provides an overview for working with the [WinUI Segmented Control](). Walk through the entire process of creating a real world application with this control.
+This section provides an overview for working with the [WinUI Segmented Control](https://www.syncfusion.com/winui-controls/segmented-control). Walk through the entire process of creating a real world application with this control.
 
-## Creating an application with WinUI Barcode
+## Creating an application with WinUI Segmented Control
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 
