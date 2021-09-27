@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering in WinUI ComboBox control | Syncfusion
-description: Learn here all about ComboBox Filtering Options in Syncfusion WinUI ComboBox (SfComboBox) control and more.
+description: Learn here all about ComboBox Filtering Options in Syncfusion WinUI ComboBox(DropDown List) control and more.
 platform: winui
 control: SfComboBox
 documentation: ug
@@ -12,7 +12,7 @@ The ComboBox has built-in support to filter data items depending on the text ent
 
 ## Enable filtering
 
-To enable filtering functionality, you have to set the `IsFilteringEnabled` and `IsEditable` property as true. The default value is false. The drop down will open automatically as soon as you start typing characters in the ComboBox control.
+To enable filtering functionality in ComboBox control, set the `IsFilteringEnabled` and `IsEditable` properties as true. The default value is false. The drop down will open automatically as soon as you start typing characters in the ComboBox control.
 
 {% tabs %}
 {% highlight XAML %}

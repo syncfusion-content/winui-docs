@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in WinUI ComboBox control | Syncfusion
-description: Learn here all about Selection modes support in Syncfusion WinUI ComboBox(SfComboBox) control and more.
+description: Learn here all about Selection modes support in Syncfusion WinUI ComboBox(DropDown List) control and more.
 platform: winui
 control: SfComboBox
 documentation: ug
@@ -9,15 +9,15 @@ documentation: ug
 
 # Selection in WinUI ComboBox
 
-The SfComboBox allows you to select single or multiple items in the drop-down list. The selection mode can be set by using the `SelectionMode` property. There are two different selection modes: `Single`, `Multiple`.
+The SfComboBox allows user to select single or multiple items in the drop down list. The selection mode can be set by using the `SelectionMode` property. There are two different selection modes: `Single`, `Multiple`.
 
 ## Single selection
 
-The SfComboBox allows you to select a single item from the dropdown list.
+The SfComboBox allows user to select a single item from the drop down list.
 
 ### UI Selection 
 
-The selected item can be changed interactively by selecting from the dropdown list or enter the value using keyboard. The selected item can be retrieved from the `SelectedItem` or `SelectedIndex` properties of ComboBox control.
+The selected item can be changed interactively by selecting from the drop down list or enter the value using keyboard. The selected item can be retrieved from the `SelectedItem` or `SelectedIndex` properties of ComboBox control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -64,11 +64,11 @@ sfComboBox.SelectedIndex = 2;
 
 ## Multiple selection
 
-The SfComboBox allows you to select multiple values from the drop-down list. The multi-select combo box mode can be enabled by setting the `SelectionMode` property as `Multiple`.
+The SfComboBox allows user to select multiple values from the drop down list. The multi-select combo box mode can be enabled by setting the `SelectionMode` property as `Multiple`.
 
 ### UI Selection 
 
-The selected items can be changed interactively by using keyboard or select from dropdown list. The selected items can be retrieved from the `SelectedItems` property of ComboBox control.
+The selected items can be changed interactively by using keyboard or select from drop down list. The selected items can be retrieved from the `SelectedItems` property of ComboBox control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -133,7 +133,7 @@ sfComboBox.DelimiterText = "-";
 
 ### How to hide the check box?
 
-The checkbox that is displayed in a dropdown list can be hide by using the `IsMultiSelectCheckBoxEnabled` property of ComboBox control. The default value of `IsMultiSelectCheckBoxEnabled` property is **true**.
+The checkbox that is displayed in a drop down list can be hide by using the `IsMultiSelectCheckBoxEnabled` property of ComboBox control. The default value of `IsMultiSelectCheckBoxEnabled` property is **true**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -156,11 +156,11 @@ sfComboBox.IsMultiSelectCheckBoxEnabled = false;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox hide the checkbox in dropdown list](Selection_images/winui-combobox-multi-select-checkbox-enabled.png)
+![WinUI ComboBox hide the checkbox in drop down list](Selection_images/winui-combobox-multi-select-checkbox-enabled.png)
 
 ## Selection changed event
 
-When selecting an item from the drop-down list, the `SelectionChanged` event will be called. The `SelectionChanged` event contains the newly selected and removed items in the AddedItems and RemovedItems properties. The `SelectionChanged` contains the following properties.
+When selecting an item from the drop down list, the `SelectionChanged` event will be called. The `SelectionChanged` event contains the newly selected and removed items in the AddedItems and RemovedItems properties. The `SelectionChanged` contains the following properties.
 
  * `AddedItems` - Contains the items that were selected.
  * `RemovedItems` - Contains the items that were unselected.
@@ -183,7 +183,7 @@ sfComboBox.SelectionChanged += OnSfComboBoxSelectionChanged;
 {% endhighlight %}
 {% endtabs %}
 
-You can handle the event as follows.
+The SelectionChanged event can be handled as follows.
 
 {% tabs %}
 {% highlight C# %}

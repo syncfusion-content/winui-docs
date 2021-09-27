@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WinUI ComboBox | Syncfusion
-description: Learn how to get started with Syncfusion WinUI ComboBox (SfComboBox) control, its elements, and more in here.
+description: Learn how to get started with Syncfusion WinUI ComboBox(DropDown List) control, its elements, and more in here.
 platform: WinUI
 control: SfComboBox
 documentation: ug
@@ -194,7 +194,7 @@ N> Set the SocialMediaViewModel instance as the DataContext of your control; thi
 The combo box control is populated with the list of social medias. But the SocialMedia model contains two properties ID and Name so it is necessary to intimate by which property it should display value in the selection box portion of the ComboBox control, when an item is selected.
 
 `TextMemberPath` - This property path is used to get the value for display in the selection box portion of the combo box control, when an item is selected. The default value is `String.Empty`.
-`DisplayMemberPath` - This property path is used to the name or path of the property displayed for each data item in the dropdown list. The default value is `String.Empty`.
+`DisplayMemberPath` - This property path is used to the name or path of the property displayed for each data item in the drop down list. The default value is `String.Empty`.
 
 {% tabs %}
 {% highlight C# %}
@@ -209,9 +209,9 @@ sfComboBox.TextMemberPath = "Name";
 
 ## Multi selection
 
-The ComboBox allows you to select multiple values from the drop-down list. The multi-select combo box mode can be enabled by setting the `SelectionMode` property as `Multiple`. Checkboxes can be used to represent selected items.
+The ComboBox allows user to select multiple values from the drop down list. The multi-select combo box mode can be enabled by setting the `SelectionMode` property as `Multiple`. Checkboxes can be used to represent selected items.
 
-You can handle the selection operations with the help of `SelectionChanged` event of SfComboBox.
+The selection operations can be handled with the help of `SelectionChanged` event of SfComboBox.
 
 {% tabs %}
 {% highlight XAML %}
@@ -268,7 +268,7 @@ The ComboBox control provides support to highlights the first item which fits th
 
 ## Filtering
 
-The ComboBox control provides support to filter the items in the dropdown based on the starting letter or whether they contain a specific letter. To enable filtering functionality, set the `IsFilteringEnabled` property as true. The default value is false.
+The ComboBox control provides support to filter the items in the drop down based on the starting letter or whether they contain a specific letter. To enable filtering functionality, set the `IsFilteringEnabled` property as true. The default value is false.
 
 {% tabs %}
 {% highlight XAML %}

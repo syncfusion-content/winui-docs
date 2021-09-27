@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing in WinUI ComboBox control | Syncfusion
-description: Learn here all about Editable modes support in Syncfusion WinUI ComboBox(SfComboBox) control and more.
+description: Learn here all about Editable modes support in Syncfusion WinUI ComboBox(DropDown List) control and more.
 platform: winui
 control: SfComboBox
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Editing in WinUI ComboBox
 
-The combo box control supports both editable and non-editable text box to choose selected item in given data source. To enable editing functionality, set the `IsEditable` property as `true`. The default value is false.
+The combo box control supports both editable and non-editable text box to choose selected item in given data source. To enable editing functionality, set `IsEditable` property as `true`. The default value is false.
 
 ## Editable combo box
 
-In editable mode, the combo box allows users to edit in the text box that shows the suggestions in drop-down list based on the input.
+In editable mode, the combo box allows users to edit in the text box that shows the suggestions in drop down list based on the input.
 
 {% tabs %}
 {% highlight XAML %}
@@ -39,7 +39,7 @@ sfComboBox.IsEditable = true;
 
 ## Non-editable combo box
 
-Non-editable mode prevents users from typing and allows them to select from drop-down list.
+Non-editable mode prevents users from editing and allows them to select from drop down list.
 
 {% tabs %}
 {% highlight XAML %}
@@ -128,7 +128,7 @@ private void OnEditingComboBoxPreviewKeyDown(object sender, KeyRoutedEventArgs e
 
 ## Handle invalid input 
 
-when submitting some text that does not correspond to an item in the ComboBox dropdown list, the `TextSubmitted` event will be called. Using the following code snippet, a dialogue box will be displayed when submitting input that does not contain in drop down list.
+When submitting some text that does not correspond to an item in the ComboBox drop down list, the `TextSubmitted` event will be called. Using the following code snippet, a dialogue box will be displayed when submitting input that does not contain in drop down list.
 
 {% tabs %}
 {% highlight XAML %}
@@ -151,13 +151,13 @@ sfComboBox.TextSubmitted += OnEditingComboBoxTextSubmitted;
 {% endhighlight %}
 {% endtabs %}
 
-You can handle the event as follows.
+The TextSubmitted event can be handled as follows.
 
 {% tabs %}
 {% highlight C# %}
 
 /// <summary>
-/// Occurs when the user submits some text that does not correspond to an item in the ComboBox dropdown list.
+/// Occurs when the user submits some text that does not correspond to an item in the ComboBox drop down list.
 /// </summary>
 private async void OnEditingComboBoxTextSubmitted(object sender, Syncfusion.UI.Xaml.Editors.ComboBoxInputSubmittedEventArgs e)
 {

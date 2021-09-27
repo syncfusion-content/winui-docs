@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styling in WinUI ComboBox control | Syncfusion
-description: Learn here all about styling support in Syncfusion WinUI ComboBox(SfComboBox) control into WinUI application and its basic features.
+description: Learn here all about styling support in Syncfusion WinUI ComboBox(DropDown List) control into WinUI application and its basic features.
 platform: winui
 control: SfComboBox
 documentation: ug
@@ -196,39 +196,6 @@ The ComboBox control allows to customize the style of `ComboBoxItem` generated i
 ### Style ComboBoxItem based on condition   
 
 The ComboBox control allows to customize the style of `ComboBoxItem` conditionally based on its content by using the `ItemContainerStyleSelector` property. The default value of `ItemContainerStyleSelector` is `null`. 
-
-{% tabs %}
-{% highlight c# %}
-
-//Model.cs
-public class SocialMedia
-{
-    public string Name { get; set; }
-    public int ID { get; set; }
-}
-
-//ViewModel.cs
-public class SocialMediaViewModel
-{
-    public ObservableCollection<SocialMedia> SocialMedias { get; set; }
-    public SocialMediaViewModel()
-    {
-        this.SocialMedias = new ObservableCollection<SocialMedia>();
-        this.SocialMedias.Add(new SocialMedia() { Name = "Facebook", ID = 0 });
-        this.SocialMedias.Add(new SocialMedia() { Name = "Google Plus", ID = 1 });
-        this.SocialMedias.Add(new SocialMedia() { Name = "Instagram", ID = 2 });
-        this.SocialMedias.Add(new SocialMedia() { Name = "LinkedIn", ID = 3 });
-        this.SocialMedias.Add(new SocialMedia() { Name = "Skype", ID = 4 });
-        this.SocialMedias.Add(new SocialMedia() { Name = "Tumblr", ID = 5 });
-        this.SocialMedias.Add(new SocialMedia() { Name = "Twitter", ID = 6 });
-        this.SocialMedias.Add(new SocialMedia() { Name = "Vimeo", ID = 7 });
-        this.SocialMedias.Add(new SocialMedia() { Name = "WhatsApp", ID = 8 });
-        this.SocialMedias.Add(new SocialMedia() { Name = "YouTube", ID = 9 });
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
 
 {% tabs %}
 {% highlight c# %}
@@ -546,7 +513,7 @@ public class EmployeeViewModel
 
 ## How to change DropDown MaxHeight?
 
-The maximum height of the drop down can be changed by using the `MaxDropDownHeight` property of ComboBox control. The default value of `MaxDropDownHeight` property is **Auto**. 
+The maximum height of the drop down can be changed by using the `MaxDropDownHeight` property of ComboBox control. The default value of `MaxDropDownHeight` property is **288**. 
 
  N> If the `MaxDropDownHeight` is too small compared the populated items, scroll viewer will be automatically shown to navigate the hidden items.
 
@@ -570,4 +537,4 @@ sfComboBox.MaxDropDownHeight = 208;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox dropdown height changed.](Styling_images/winui-combobox-maxdropdownheight.png)
+![WinUI ComboBox maximum drop down height changed](Styling_images/winui-combobox-maxdropdownheight.png)
