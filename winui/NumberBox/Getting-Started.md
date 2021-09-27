@@ -192,7 +192,7 @@ sfNumberBox.AllowNull = false;
 
 ![WinUI NumberBox prevent empty textbox](GettingStarted_images/allowNull.gif)
 
-## Header and description text
+## Header and description
 This section explains about header and description property of NumberBox.
 ### Header
 The `Header` property is used to displays the title for the NumberBox Control.

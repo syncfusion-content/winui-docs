@@ -163,7 +163,7 @@ sfDatePicker.AllowNull = true;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
-## Header and description text
+## Header and description
 This section explains about header and description property of DatePicker.
 ### Header
 The `Header` property is used to displays the title for the DatePicker Control

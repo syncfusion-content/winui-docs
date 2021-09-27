@@ -134,7 +134,7 @@ sfCalendarDatePicker.AllowNull = true;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection)
 
-## Header and description text
+## Header and description
 This section explains about header and description property of CalendarDatePicker.
 ### Header
 The `Header` property is used to displays the title for the CalendarDatePicker Control.
@@ -168,7 +168,7 @@ Customize the header appearance of control by using the `HeaderTemplate` propert
             <editors:SfCalendarDatePicker.HeaderTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE7E3;"/>
+                       <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xED55;"/>
                         <TextBlock Text="Birthday Date" FontSize="14" Margin="5"/>
                     </StackPanel>
                 </DataTemplate>
@@ -180,7 +180,7 @@ Customize the header appearance of control by using the `HeaderTemplate` propert
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI CalendarDatePicker with Header Template](Getting-Started_images/winui-calendar-datepicker-headertemplate.png)
+![WinUI CalendarDatePicker with Header Template](Getting-Started_images/winui-calendar-datepicker-header-template.png)
 
 ### Description
 The `Description` support is used to display the content beneath the control and to provide guidance on the input that the control expects.

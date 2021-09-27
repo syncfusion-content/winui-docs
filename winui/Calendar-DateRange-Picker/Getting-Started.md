@@ -129,7 +129,7 @@ SfCalendarDateRangePicker sfCalendarDateRangePicker= new SfCalendarDateRangePick
 
 ![WinUI Interactive Selected Date Range](Getting-Started_images/winui-interactive-selected-date-range.gif)
 
-## Header and description text
+## Header and description
 This section explains about header and description property of CalendarDateRangePicker.
 ### Header
 The `Header` property is used to displays the title for the CalendarDateRangePicker Control.
@@ -164,8 +164,8 @@ Customize the header appearance of control by using the `HeaderTemplate` propert
             <editors:SfCalendarDateRangePicker.HeaderTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                         <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE815;"/>
-                        <TextBlock Text="Date Range Picker" FontSize="14" Margin="5"/>
+                         <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE163;"/>
+                        <TextBlock Text="Training Dates" FontSize="14" Margin="5"/>
                     </StackPanel>
                 </DataTemplate>
             </editors:SfCalendarDateRangePicker.HeaderTemplate>
