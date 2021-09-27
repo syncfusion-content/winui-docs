@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing in WinUI ComboBox control | Syncfusion
-description: Learn here all about Editable modes support in Syncfusion WinUI ComboBox(DropDown List) control and more.
+description: Learn here all about Editable modes support in Syncfusion WinUI ComboBox(multiselect combobox) control and more.
 platform: winui
 control: SfComboBox
 documentation: ug
