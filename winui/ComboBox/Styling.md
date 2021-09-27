@@ -133,7 +133,7 @@ sfComboBox.PlaceholderForeground = new SolidColorBrush(Colors.Red);
 
 ## Customize edit mode TextBox
 
-The appearance of the edting textbox in `ComboBox` control can be customized by using the `TextBoxStyle` property. The default value of `TextBoxStyle` is `null`.
+The appearance of the editing textbox in `ComboBox` control can be customized by using the `TextBoxStyle` property. The default value of `TextBoxStyle` is `null`.
 
 N> `TextBoxStyle` will have effect only in single selection editable mode.
 
@@ -548,7 +548,7 @@ public class EmployeeViewModel
 
 The maximum height of the drop down can be changed by using the `MaxDropDownHeight` property of ComboBox control. The default value of `MaxDropDownHeight` property is **Auto**. 
 
- N> If the `MaxDropDownHeight` is too small compared the populated items, scrollviewer will be automatically shown to navigate the hidden items.
+ N> If the `MaxDropDownHeight` is too small compared the populated items, scroll viewer will be automatically shown to navigate the hidden items.
 
 {% tabs %}
 {% highlight xaml %}
