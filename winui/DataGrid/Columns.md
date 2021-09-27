@@ -32,6 +32,14 @@ Use to display the string data.
 </tr>
 <tr>
 <td>
+GridNumericColumn
+</td>
+<td>
+Use to display the numeric data. 
+</td>
+</tr>
+<tr>
+<td>
 {{'[GridComboBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridComboBoxColumn.html)'| markdownify }}
 </td>
 <td>
@@ -118,6 +126,22 @@ string, object, dynamic
 </td>
 <td>
 GridTextColumn
+</td>
+</tr>
+<tr>
+<td>
+double and it's nullable
+</td>
+<td>
+GridNumericColumn
+</td>
+</tr>
+<tr>
+<td>
+DateTimeOffset and it's nullable
+</td>
+<td>
+GridDateColumn
 </td>
 </tr>
 <tr>
@@ -683,13 +707,13 @@ private void SfDataGrid_ColumnDragging(object sender, QueryColumnDraggingEventAr
 
 ### Drag and drop customization 
 
-The drag-and-drop operations can be changed by overriding the virtual methods of [GridColumnDragDropController](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumnDragDropController.html) class and assigning it to `SfDataGrid.GridColumnDragDropController`.
+The drag-and-drop operations can be changed by overriding the virtual methods of [DataGridColumnDragDropController](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridColumnDragDropController.html) class and assigning it to `SfDataGrid.ColumnDragDropController`.
  
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.GridColumnDragDropController = new CustomDragDropController(sfDataGrid);
+this.sfDataGrid.ColumnDragDropController = new CustomDragDropController(sfDataGrid);
 
-public class CustomDragDropController : GridColumnDragDropController
+public class CustomDragDropController : DataGridColumnDragDropController
 {
     public CustomDragDropController(SfDataGrid dataGrid) : base(dataGrid)
     {
