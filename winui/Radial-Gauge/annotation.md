@@ -306,11 +306,12 @@ The following code example demonstrates how to set the `HorizontalAlignment` for
                                        DirectionValue="50"
                                        PositionFactor="0.4"
                                        HorizontalAlignment="Left">
-                     <gauge:GaugeAnnotation.Content>
-                         <TextBlock Text="50.0"
-                                    FontWeight="SemiBold"
-                                    FontSize="20" />
-                     </gauge:GaugeAnnotation.Content>
+                    <gauge:GaugeAnnotation.Content>
+                        <TextBlock Text="50.0"
+                                   FontWeight="SemiBold"
+                                   FontSize="20" />
+                    </gauge:GaugeAnnotation.Content>
+                </gauge:GaugeAnnotation>
             </gauge:RadialAxis.Annotations>
         </gauge:RadialAxis>
     </gauge:SfRadialGauge.Axes>
