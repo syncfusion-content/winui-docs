@@ -32,6 +32,14 @@ Use to display the string data.
 </tr>
 <tr>
 <td>
+GridNumericColumn
+</td>
+<td>
+Use to display the numeric data. 
+</td>
+</tr>
+<tr>
+<td>
 {{'[GridComboBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridComboBoxColumn.html)'| markdownify }}
 </td>
 <td>
@@ -43,7 +51,15 @@ Use to display the IEnumerable data using ComboBox.
 {{'[GridCheckBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCheckBoxColumn.html)'| markdownify }}
 </td>
 <td>
-Use to display the boolean type data
+Use to display the boolean type data.
+</td>
+</tr>
+<tr>
+<td>
+{{'[GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCheckBoxSelectorColumn.html)'| markdownify }}
+</td>
+<td>
+Selects or deselects rows based on the check box value, which is not bound with data object.
 </td>
 </tr>
 <tr>
@@ -67,7 +83,7 @@ Use to display the image in each row.
 {{'[GridHyperlinkColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridHyperlinkColumn.html)'| markdownify }}
 </td>
 <td>
-Use to display the <code>Uri</code> data
+Use to display the <code>Uri</code> data.
 </td>
 </tr>
 <tr>
@@ -76,6 +92,22 @@ Use to display the <code>Uri</code> data
 </td>
 <td>
 Use to display the custom template-specified content.
+</td>
+</tr>
+<tr>
+<td>
+GridTimeColumn
+</td>
+<td>
+Use to display the <code>DateTimeOffset</code> type data as time value.
+</td>
+</tr>
+<tr>
+<td>
+{{'[GridToggleSwitchColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridToggleSwitchColumn.html)'| markdownify }}
+</td>
+<td>
+Use to display the boolean data using <code>ToggleSwitch</code>.
 </td>
 </tr>
 <tr>
@@ -118,6 +150,22 @@ string, object, dynamic
 </td>
 <td>
 GridTextColumn
+</td>
+</tr>
+<tr>
+<td>
+double, double?
+</td>
+<td>
+GridNumericColumn
+</td>
+</tr>
+<tr>
+<td>
+DateTimeOffset, DateTimeOffset?
+</td>
+<td>
+GridDateColumn
 </td>
 </tr>
 <tr>
@@ -683,13 +731,13 @@ private void SfDataGrid_ColumnDragging(object sender, QueryColumnDraggingEventAr
 
 ### Drag and drop customization 
 
-The drag-and-drop operations can be changed by overriding the virtual methods of [GridColumnDragDropController](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumnDragDropController.html) class and assigning it to `SfDataGrid.GridColumnDragDropController`.
+The drag-and-drop operations can be changed by overriding the virtual methods of [DataGridColumnDragDropController](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridColumnDragDropController.html) class and assigning it to `SfDataGrid.ColumnDragDropController`.
  
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.GridColumnDragDropController = new CustomDragDropController(sfDataGrid);
+this.sfDataGrid.ColumnDragDropController = new CustomDragDropController(sfDataGrid);
 
-public class CustomDragDropController : GridColumnDragDropController
+public class CustomDragDropController : DataGridColumnDragDropController
 {
     public CustomDragDropController(SfDataGrid dataGrid) : base(dataGrid)
     {

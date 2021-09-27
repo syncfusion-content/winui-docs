@@ -19,21 +19,22 @@ The Scheduler control supports different types of calendars such as Gregorian, K
 <th>UnSupported Calendars</th>
 </tr>
 <tr>
-<td>
 
-* GregorianCalendar
-* HebrewCalendar
-* HijriCalendar
-* KoreanCalendar
-* TaiwanCalendar
-* ThaiCalendar
-* UmAlQuraCalendar
-* PersianCalendar
-* JulianCalendar</td>
 <td>
+<br>* GregorianCalendar</br>
+<br>* HebrewCalendar </br>
+<br>* HijriCalendar</br>
+<br>* KoreanCalendar</br>
+<br>* TaiwanCalendar</br>
+<br>* ThaiCalendar</br>
+<br>* UmAlQuraCalendar</br>
+<br>* PersianCalendar</br>
+<br>* JulianCalendar</br>
+</td>
 
-* JapaneseCalendar
-* Lunar type calendars
+<td>
+<br>* JapaneseCalendar</br>
+<br>* Lunar type calendars</br>
 </td>
 </tr>
 </table>
@@ -60,6 +61,8 @@ You can give all the DateTime values such as `DisplayDate,` `SelectedDate,` `Bla
 * A `DateTime` instance without specifying calendar type. A scheduler will handle the `DateTime` value for the specified calendar type.
 
 * A `DateTime` instance with specified calendar type. If calendar type is mentioned then the date should be respective to that calendar so that the date value will be converted to Gregorian DateTime and the scheduler will handle that DateTime.
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/CalendarTypes)
 
 ## Change the language
 You can localize the scheduler using the `Language` property. The default value of Language property is `en-US`.

@@ -346,7 +346,7 @@ this.Schedule.TimelineViewSettings.ResourceHeaderSize = 100;
 {% endhighlight %}
 {% endtabs %}
 
-### Auto row height in timeline view
+## Resource auto height
 The resource row height gets auto-adjusted based on the number of overlapping appointments occupied on the same time range by setting `RowAutoHeight` property as `true` in `TimelineViewSettings.` By default, value of this property is set to `false.` 
 
 {% tabs %}
@@ -365,9 +365,10 @@ The resource row height gets auto-adjusted based on the number of overlapping ap
 N> 
  * This auto row height adjustment is applicable only on all the Timeline views such as timeline day, timeline week, timeline workweek and timeline month views.
  * If auto resource row height is enabled then `VisibleResourceCount` will not be applicable and if resources have no appointments, then `RowMinHeight` will be considered as default resource row height.
+  * [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/ResourceAutoRowHeight)
 
- ### Minimum row height in timeline view
- You can customize minimum row height of visible resources in timeline day, timeline week, timeline workweek and timeline month views by using the `RowMinHeight` property of `TimelineViewSettings` in `SfScheduler`. By default, value of this property is set to 50.
+## Resource minimum height
+You can customize minimum row height of visible resources in timeline day, timeline week, timeline workweek and timeline month views by using the `RowMinHeight` property of `TimelineViewSettings` in `SfScheduler`. By default, value of this property is set to 50.
 
 {% tabs %}
 {% highlight xaml %}
