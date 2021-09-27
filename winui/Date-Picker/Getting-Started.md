@@ -163,6 +163,70 @@ sfDatePicker.AllowNull = true;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
+## Setting Header and description text
+This section explains about header and description property of DatePicker.
+### Header
+The `Header` property is used to displays the title for the DatePicker Control
+     
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfDatePicker x:Name="DatePicker" Height="75" Width="200"
+                   Header="SfDatePicker" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfDatePicker datePicker = new SfDatePicker();
+datePicker.Header = "Date Picker";
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI DatePicker displays Null Value](Getting-Started_images/winui-datepicker-header.png)
+#### Header Customization
+Customize the header appearance of control by using the `HeaderTemplate` property of control. The following code shows how to use a header template to customize the header.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfDatePicker  Grid.Column="3" Width="250" Height="75">
+            <editors:SfDatePicker.HeaderTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets\NumberBox\UnitedStates.png" Height="20" Width="20"/>
+                        <TextBlock Text="United States" FontSize="14" Margin="5"/>
+                    </StackPanel>
+                </DataTemplate>
+            </editors:SfDatePicker.HeaderTemplate>
+        </editors:SfDatePicker>
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI DatePicker displays Null Value](Getting-Started_images/winui-datepicker-headertemplate.png)
+
+### Description
+The `Description` support is used to display the content beneath the control and to provide guidance on the input that the control expects.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfDatePicker x:Name="DatePicker" Height="75" Width="200" Header="SfDatePicker" Description="Select the Date"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfDatePicker datePicker = new SfDatePicker();
+datePicker.Description = "Select the Date";
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI DatePicker displays Null Value](Getting-Started_images/winui-datepicker-description.png)
+
+
 ## Setting watermark text
 
 You can prompt the user with some information by using the [`PlaceholderText`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_PlaceholderText) property. This will be displayed only when the `TimePicker` contains the `SelectedDate` property as `null` and `AllowNull` property as `true`. If `AllowNull` property is `false`, then the current system time is updated in `SelectedDate` property and displayed instead of `PlaceholderText`.

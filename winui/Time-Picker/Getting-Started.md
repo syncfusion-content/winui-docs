@@ -162,6 +162,72 @@ sfTimePicker.AllowNull = true;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
+## Setting Header and description text
+This section explains about header and description property of TimePicker.
+### Header
+The `Header` property is used to displays the title for the TimePicker Control
+     
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfTimePicker x:Name="TimePicker" Height="75" Width="300" HorizontalAlignment="Center" Header="TimePicker" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfTimePicker timePicker = new SfTimePicker();
+timePicker.Header = "Time Picker";
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI TimePicker displays Null Value](Getting-Started_images/winui-timepicker-header.png)
+#### Header Customization
+Customize the header appearance of control by using the `HeaderTemplate` property of control. The following code shows how to use a header template to customize the header.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfTimePicker  Width="250" Height="75">
+            <editors:SfTimePicker.HeaderTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets\NumberBox\UnitedStates.png" Height="20" Width="20"/>
+                        <TextBlock Text="United States" FontSize="14" Margin="5"/>
+                    </StackPanel>
+                </DataTemplate>
+            </editors:SfTimePicker.HeaderTemplate>
+ </editors:SfTimePicker>
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI TimePicker displays Null Value](Getting-Started_images/winui-timepicker-header-template.png)
+
+### Description
+The `Description` support is used to display the content beneath the control and to provide guidance on the input that the control expects.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfTimePicker x:Name="TimePicker" Grid.Column="3" Height="75" Width="200" Header="Time Picker" Description="Select the Time"/>
+
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfTimePicker timePicker = new SfTimePicker();
+timePicker.Description = "Select the Time";
+
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI TimePicker displays Null Value](Getting-Started_images/winui-timepicker-description.png)
+
 ## Setting watermark text
 
 You can prompt the user with some information by using the [`PlaceholderText`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_PlaceholderText) property. This will be displayed only when the `Time Picker` contains the `SelectedTime` property as `null` and `AllowNull` property as `true`. If `AllowNull` property is `false`, then the current system time is updated in `SelectedTime` property and displayed instead of `PlaceholderText`.

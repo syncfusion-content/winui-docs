@@ -129,6 +129,74 @@ SfCalendarDateRangePicker sfCalendarDateRangePicker= new SfCalendarDateRangePick
 
 ![WinUI Interactive Selected Date Range](Getting-Started_images/winui-interactive-selected-date-range.gif)
 
+## Setting Header and description text
+This section explains about header and description property of CalendarDateRangePicker.
+### Header
+The `Header` property is used to displays the title for the CalendarDateRangePicker Control.
+     
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfCalendarDateRangePicker x:Name="CalendarDateRangePicker" Header="CalendarDateRangePicker" Width="300" Height="70" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfCalendarDateRangePicker dateRangePicker = new SfCalendarDateRangePicker();
+dateRangePicker.Header = " CalendarDateRangePicker";
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI Calendar DateRange Picker Selected Range](Getting-Started_images/winui-calendar-daterange-picker-header.png)
+#### Header Customization
+Customize the header appearance of control by using the `HeaderTemplate` property of control. The following code shows how to use a header template to customize the header.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfCalendarDateRangePicker  Grid.Column="4" Width="250" Height="75">
+            <editors:SfCalendarDateRangePicker.HeaderTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets\NumberBox\UnitedStates.png" Height="20" Width="20"/>
+                        <TextBlock Text="United States" FontSize="14" Margin="5"/>
+                    </StackPanel>
+                </DataTemplate>
+            </editors:SfCalendarDateRangePicker.HeaderTemplate>
+        </editors:SfCalendarDateRangePicker>
+
+
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI Calendar DateRange Picker Selected Range](Getting-Started_images/winui-calendar-daterange-picker-headertemplate.png)
+
+
+### Description
+The `Description` support is used to display the content beneath the control and to provide guidance on the input that the control expects.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfCalendarDateRangePicker x:Name="CalendarDateRangePicker" Header="CalendarDateRangePicker" Width="300" Height="70" Description="Select any two dates"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfCalendarDateRangePicker dateRangePicker = new SfCalendarDateRangePicker();
+ dateRangePicker.Description = "Select any two dates";
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI Calendar DateRange Picker Selected Range](Getting-Started_images/winui-calendar-daterange-picker-description.png)
+
+
 ## Setting watermark text
 
 You can prompt the user with any information by using the [`PlaceholderText`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_PlaceholderText) property. This watermark text will be displayed only when the `SelectedRange` property value is **null**. The default value of `PlaceholderText` property is **Select a date range**.

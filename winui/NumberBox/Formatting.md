@@ -171,5 +171,20 @@ sfNumberBox.NumberFormatter = new CurrencyFormatter(new RegionInfo(culture.LCID)
 
 ![WinUI NumberBox culture based custom format](Formatting_images/winui-numberbox-apply-format-by-culture.png)
 
+## Culture support
 
+The culture support allows the control to be configured for a specific language. The code below demonstrates how to use the `culture` property to configure culture for the United States.
+
+{% tabs %}
+{% highlight c# %}
+
+CultureInfo ci = new CultureInfo("en-US");
+NumberBox.Culture = ci;
+NumberBox.CustomFormat = "C";
+         
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI NumberBox culture based custom format](Formatting_images/winui-numberbox-culture_support.png)
 

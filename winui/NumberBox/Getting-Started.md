@@ -192,6 +192,72 @@ sfNumberBox.AllowNull = false;
 
 ![WinUI NumberBox prevent empty textbox](GettingStarted_images/allowNull.gif)
 
+## Setting Header and description text
+This section explains about header and description property of NumberBox.
+### Header
+The `Header` property is used to displays the title for the NumberBox Control.
+     
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumberBox x:Name="numberBox" Height="75" Width="300" HorizontalAlignment="Center" Header="NumberBox" Value="100" />
+
+ 
+{% endhighlight %}
+{% highlight c# %}
+
+SfNumberBox SfNumberBox = new SfNumberBox();
+SfNumberBox.Header = "NumberBox";
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI NumberBox value editing](GettingStarted_images/header_text.png)
+
+#### Header Customization
+Customize the header appearance of control by using the `HeaderTemplate` property of control. The following code shows how to use a header template to customize the header.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumberBox Value="100" CustomFormat="#,0.00"  Grid.Column="3" Width="250" Height="75">
+            <editors:SfNumberBox.HeaderTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets\NumberBox\UnitedStates.png" Height="20" Width="20"/>
+                        <TextBlock Text="United States" FontSize="14" Margin="5"/>
+                    </StackPanel>
+                </DataTemplate>
+            </editors:SfNumberBox.HeaderTemplate>
+  </editors:SfNumberBox>
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI NumberBox value editing](GettingStarted_images/header_template.png)
+
+### Description
+The `Description` support is used to display the content beneath the control and to provide guidance on the input that the control expects.
+
+{% tabs %}
+{% highlight xaml %}
+   
+<editors:SfNumberBox x:Name="numberBox" Height="75" Width="300" HorizontalAlignment="Center" Value="10"
+                       Header="NumberBox"  Description="Enter Numeric Values"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfNumberBox SfNumberBox = new SfNumberBox();
+SfNumberBox.Description = “Enter Numeric Values”;
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI NumberBox value editing](GettingStarted_images/description_text.png)
+
+
 ## Setting watermark text
 
 You can prompt the user with any information by using the [PlaceholderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_PlaceholderText) property. Watermark text will be displayed only when the value of the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_AllowNull) property is **true** and the value of `NumberBox` control is **null**. The default value of `PlaceholderText` property is **string.Empty** (No string will be displayed).
@@ -215,6 +281,42 @@ sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 {% endtabs %}
 
 ![WinUI NumberBox Watermark Text](GettingStarted_images/watermark_text.png)
+
+## Clear button visibility 
+
+The `ShowClearButton` Property is used to show or hide the clear button in `NumberBox`. By default, visibility of the clear button is enabled as **true**.
+
+N> The clear button appears only when the text box is focused and the `IsEditable` property value is set to **true**.
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumberBox x:Name="numberBox" Height="75" Width="300"                   
+           HorizontalAlignment="Center"
+           Header="NumberBox"
+           ShowClearButton="True" 
+           Description="Enter the numeric values" 
+           IsEditable="True" Value="10"/>
+
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumberBox SfNumberBox = new SfNumberBox();
+SfNumberBox.ShowClearButton = true;
+SfNumberBox.IsEditable = true; 
+
+
+{% endhighlight %}
+{% endtabs %}
+
+If IsEditable is true
+
+![WinUI NumberBox Watermark Text](GettingStarted_images/clearbutton_visible.png)
+
+If IsEditable is false
+
+![WinUI NumberBox Watermark Text](GettingStarted_images/clearbutton_collapsed.png)
+
 
 ## Value changed notification
 
