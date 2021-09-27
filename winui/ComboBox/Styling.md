@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styling in WinUI ComboBox control | Syncfusion
-description: Learn here all about styling support in Syncfusion WinUI ComboBox(SfComboBox) control and more.
+description: Learn here all about styling support in Syncfusion WinUI ComboBox(SfComboBox) control into WinUI application and its basic features.
 platform: winui
 control: SfComboBox
 documentation: ug

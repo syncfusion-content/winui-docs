@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Selection in WinUI ComboBox control | Syncfusion
-description: Learn here all about Selection support in Syncfusion WinUI ComboBox(SfComboBox) control.
+description: Learn here all about Selection modes support in Syncfusion WinUI ComboBox(SfComboBox) control and more.
 platform: winui
-control: DataGrid
+control: SfComboBox
 documentation: ug
 ---
 

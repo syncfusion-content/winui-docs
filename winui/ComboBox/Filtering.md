@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering in WinUI ComboBox control | Syncfusion
-description: Learn here all about Filtering support in Syncfusion WinUI ComboBox(SfComboBox) control.
+description: Learn here all about ComboBox Filtering Options in Syncfusion WinUI ComboBox (SfComboBox) control and more.
 platform: winui
 control: SfComboBox
 documentation: ug
