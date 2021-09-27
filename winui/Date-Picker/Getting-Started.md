@@ -163,7 +163,7 @@ sfDatePicker.AllowNull = true;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
-## Setting Header and description text
+## Header and description text
 This section explains about header and description property of DatePicker.
 ### Header
 The `Header` property is used to displays the title for the DatePicker Control
@@ -171,31 +171,33 @@ The `Header` property is used to displays the title for the DatePicker Control
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfDatePicker x:Name="DatePicker" Height="75" Width="200"
-                   Header="SfDatePicker" />
+<editors:SfDatePicker x:Name="DatePicker" 
+                      Height="75" 
+                      Width="200"
+                      Header="Enter your interview date" />
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfDatePicker datePicker = new SfDatePicker();
-datePicker.Header = "Date Picker";
+datePicker.Header = "Enter your interview date";
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker displays Null Value](Getting-Started_images/winui-datepicker-header.png)
+![WinUI DatePicker with Header](Getting-Started_images/winui-datepicker-header.png)
 #### Header Customization
 Customize the header appearance of control by using the `HeaderTemplate` property of control. The following code shows how to use a header template to customize the header.
 
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfDatePicker  Grid.Column="3" Width="250" Height="75">
+<editors:SfDatePicker  Width="250" Height="75">
             <editors:SfDatePicker.HeaderTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Assets\NumberBox\UnitedStates.png" Height="20" Width="20"/>
-                        <TextBlock Text="United States" FontSize="14" Margin="5"/>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE80B;"/>
+                        <TextBlock Text="Interview Date" FontSize="14" Margin="5"/>
                     </StackPanel>
                 </DataTemplate>
             </editors:SfDatePicker.HeaderTemplate>
@@ -205,7 +207,7 @@ Customize the header appearance of control by using the `HeaderTemplate` propert
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker displays Null Value](Getting-Started_images/winui-datepicker-headertemplate.png)
+![WinUI DatePicker with Header Template](Getting-Started_images/winui-datepicker-headertemplate.png)
 
 ### Description
 The `Description` support is used to display the content beneath the control and to provide guidance on the input that the control expects.
@@ -213,18 +215,22 @@ The `Description` support is used to display the content beneath the control and
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfDatePicker x:Name="DatePicker" Height="75" Width="200" Header="SfDatePicker" Description="Select the Date"/>
+<editors:SfDatePicker x:Name="DatePicker" 
+                      Height="75" 
+                      Width="200" 
+                      Header="Enter your interview date" 
+                      Description="The chosen date must be within the next 5 days."/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfDatePicker datePicker = new SfDatePicker();
-datePicker.Description = "Select the Date";
+datePicker.Description = "The chosen date must be within the next 5 days.";
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker displays Null Value](Getting-Started_images/winui-datepicker-description.png)
+![WinUI DatePicker with Description](Getting-Started_images/winui-datepicker-description.png)
 
 
 ## Setting watermark text

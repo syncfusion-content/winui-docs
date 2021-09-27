@@ -162,7 +162,7 @@ sfTimePicker.AllowNull = true;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
-## Setting Header and description text
+## Header and description text
 This section explains about header and description property of TimePicker.
 ### Header
 The `Header` property is used to displays the title for the TimePicker Control
@@ -170,19 +170,22 @@ The `Header` property is used to displays the title for the TimePicker Control
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfTimePicker x:Name="TimePicker" Height="75" Width="300" HorizontalAlignment="Center" Header="TimePicker" />
+<editors:SfTimePicker x:Name="TimePicker" 
+                      Height="75" 
+                      Width="300" 
+                      Header="Select your convenient delivery time" />
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfTimePicker timePicker = new SfTimePicker();
-timePicker.Header = "Time Picker";
+timePicker.Header = "Select your convenient delivery time";
 
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TimePicker displays Null Value](Getting-Started_images/winui-timepicker-header.png)
+![WinUI TimePicker with Header](Getting-Started_images/winui-timepicker-header.png)
 #### Header Customization
 Customize the header appearance of control by using the `HeaderTemplate` property of control. The following code shows how to use a header template to customize the header.
 
@@ -193,8 +196,8 @@ Customize the header appearance of control by using the `HeaderTemplate` propert
             <editors:SfTimePicker.HeaderTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Assets\NumberBox\UnitedStates.png" Height="20" Width="20"/>
-                        <TextBlock Text="United States" FontSize="14" Margin="5"/>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8DF;"/>
+                        <TextBlock Text="Delivery Time" FontSize="14" Margin="5"/>
                     </StackPanel>
                 </DataTemplate>
             </editors:SfTimePicker.HeaderTemplate>
@@ -204,7 +207,7 @@ Customize the header appearance of control by using the `HeaderTemplate` propert
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TimePicker displays Null Value](Getting-Started_images/winui-timepicker-header-template.png)
+![WinUI TimePicker with Header Template](Getting-Started_images/winui-timepicker-header-template.png)
 
 ### Description
 The `Description` support is used to display the content beneath the control and to provide guidance on the input that the control expects.
@@ -212,21 +215,24 @@ The `Description` support is used to display the content beneath the control and
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfTimePicker x:Name="TimePicker" Grid.Column="3" Height="75" Width="200" Header="Time Picker" Description="Select the Time"/>
+<editors:SfTimePicker x:Name="TimePicker" 
+                      Height="75" 
+                      Width="200" 
+                      Description="Your order will be delivered on time."/>
 
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfTimePicker timePicker = new SfTimePicker();
-timePicker.Description = "Select the Time";
+timePicker.Description = "Your order will be delivered on time.";
 
 
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TimePicker displays Null Value](Getting-Started_images/winui-timepicker-description.png)
+![WinUI TimePicker with Description](Getting-Started_images/winui-timepicker-description.png)
 
 ## Setting watermark text
 

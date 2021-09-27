@@ -192,7 +192,7 @@ sfNumberBox.AllowNull = false;
 
 ![WinUI NumberBox prevent empty textbox](GettingStarted_images/allowNull.gif)
 
-## Setting Header and description text
+## Header and description text
 This section explains about header and description property of NumberBox.
 ### Header
 The `Header` property is used to displays the title for the NumberBox Control.
@@ -200,19 +200,23 @@ The `Header` property is used to displays the title for the NumberBox Control.
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumberBox x:Name="numberBox" Height="75" Width="300" HorizontalAlignment="Center" Header="NumberBox" Value="100" />
+<editors:SfNumberBox x:Name="numberBox" 
+                     Height="75" 
+                     Width="300" 
+                     Header="Enter your salary" 
+                     Value="100" />
 
  
 {% endhighlight %}
 {% highlight c# %}
 
 SfNumberBox SfNumberBox = new SfNumberBox();
-SfNumberBox.Header = "NumberBox";
+SfNumberBox.Header = "Enter your salary";
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI NumberBox value editing](GettingStarted_images/header_text.png)
+![WinUI NumberBox with Header](GettingStarted_images/header_text.png)
 
 #### Header Customization
 Customize the header appearance of control by using the `HeaderTemplate` property of control. The following code shows how to use a header template to customize the header.
@@ -220,12 +224,12 @@ Customize the header appearance of control by using the `HeaderTemplate` propert
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumberBox Value="100" CustomFormat="#,0.00"  Grid.Column="3" Width="250" Height="75">
+<editors:SfNumberBox Value="100" CustomFormat="#,0.00" Width="250" Height="75">
             <editors:SfNumberBox.HeaderTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Assets\NumberBox\UnitedStates.png" Height="20" Width="20"/>
-                        <TextBlock Text="United States" FontSize="14" Margin="5"/>
+                       <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE7F0;"/>
+                       <TextBlock Text="Salary" FontSize="14" Margin="5"/>
                     </StackPanel>
                 </DataTemplate>
             </editors:SfNumberBox.HeaderTemplate>
@@ -234,7 +238,7 @@ Customize the header appearance of control by using the `HeaderTemplate` propert
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI NumberBox value editing](GettingStarted_images/header_template.png)
+![WinUI NumberBox with Header Template](GettingStarted_images/header_template.png)
 
 ### Description
 The `Description` support is used to display the content beneath the control and to provide guidance on the input that the control expects.
@@ -242,20 +246,23 @@ The `Description` support is used to display the content beneath the control and
 {% tabs %}
 {% highlight xaml %}
    
-<editors:SfNumberBox x:Name="numberBox" Height="75" Width="300" HorizontalAlignment="Center" Value="10"
-                       Header="NumberBox"  Description="Enter Numeric Values"/>
+<editors:SfNumberBox x:Name="numberBox" 
+                      Height="75"
+                      Width="300" 
+                      Value="10"  
+                      Description="Please enter only positive digits."/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfNumberBox SfNumberBox = new SfNumberBox();
-SfNumberBox.Description = “Enter Numeric Values”;
+SfNumberBox.Description = “Please enter only positive digits.”;
 
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI NumberBox value editing](GettingStarted_images/description_text.png)
+![WinUI NumberBox with Description](GettingStarted_images/description_text.png)
 
 
 ## Setting watermark text
@@ -284,18 +291,18 @@ sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 
 ## Clear button visibility 
 
-The `ShowClearButton` Property is used to show or hide the clear button in `NumberBox`. By default, visibility of the clear button is enabled as **true**.
+The `ShowClearButton` Property is used to show or hide the clear button in `NumberBox`. By default, visibility of the clear button is enabled.
 
 N> The clear button appears only when the text box is focused and the `IsEditable` property value is set to **true**.
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumberBox x:Name="numberBox" Height="75" Width="300"                   
-           HorizontalAlignment="Center"
-           Header="NumberBox"
-           ShowClearButton="True" 
-           Description="Enter the numeric values" 
-           IsEditable="True" Value="10"/>
+<editors:SfNumberBox x:Name="numberBox" 
+            Height="75" 
+            Width="300"                   
+            ShowClearButton="True" 
+            IsEditable="True" 
+            Value="10"/>
 
 
 {% endhighlight %}
@@ -311,11 +318,11 @@ SfNumberBox.IsEditable = true;
 
 If IsEditable is true
 
-![WinUI NumberBox Watermark Text](GettingStarted_images/clearbutton_visible.png)
+![WinUI NumberBox with Clear Button](GettingStarted_images/clearbutton_visible.png)
 
 If IsEditable is false
 
-![WinUI NumberBox Watermark Text](GettingStarted_images/clearbutton_collapsed.png)
+![WinUI NumberBox without Clear Button](GettingStarted_images/clearbutton_collapsed.png)
 
 
 ## Value changed notification

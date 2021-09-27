@@ -134,7 +134,7 @@ sfCalendarDatePicker.AllowNull = true;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection)
 
-## Setting Header and description text
+## Header and description text
 This section explains about header and description property of CalendarDatePicker.
 ### Header
 The `Header` property is used to displays the title for the CalendarDatePicker Control.
@@ -142,18 +142,21 @@ The `Header` property is used to displays the title for the CalendarDatePicker C
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfCalendarDatePicker x:Name="CalendarDatePicker" Header="CalendarDatePicker" Width="300" Height="70"  Margin="20"/>
+<editors:SfCalendarDatePicker x:Name="CalendarDatePicker" 
+                              Header="Enter your date of birth"
+                              Width="300" 
+                              Height="70" />
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfCalendarDatePicker calendarDatePicker = new SfCalendarDatePicker();
-calendarDatePicker.Header = "CalendarDatePicker";
+calendarDatePicker.Header = "Enter your date of birth";
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI CalendarDatePicker with Null Value](Getting-Started_images/winui-calendar-datepicker-header.png)
+![WinUI CalendarDatePicker with Header](Getting-Started_images/winui-calendar-datepicker-header.png)
 
 #### Header Customization
 Customize the header appearance of control by using the `HeaderTemplate` property of control. The following code shows how to use a header template to customize the header.
@@ -161,12 +164,12 @@ Customize the header appearance of control by using the `HeaderTemplate` propert
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfCalendarDatePicker  Width="250" Height="75" Margin="10">
+<editors:SfCalendarDatePicker  Width="250" Height="75" >
             <editors:SfCalendarDatePicker.HeaderTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Assets\NumberBox\UnitedStates.png" Height="20" Width="20"/>
-                        <TextBlock Text="United States" FontSize="14" Margin="5"/>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE7E3;"/>
+                        <TextBlock Text="Birthday Date" FontSize="14" Margin="5"/>
                     </StackPanel>
                 </DataTemplate>
             </editors:SfCalendarDatePicker.HeaderTemplate>
@@ -177,7 +180,7 @@ Customize the header appearance of control by using the `HeaderTemplate` propert
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI CalendarDatePicker with Null Value](Getting-Started_images/winui-calendar-datepicker-headertemplate.png)
+![WinUI CalendarDatePicker with Header Template](Getting-Started_images/winui-calendar-datepicker-headertemplate.png)
 
 ### Description
 The `Description` support is used to display the content beneath the control and to provide guidance on the input that the control expects.
@@ -185,19 +188,24 @@ The `Description` support is used to display the content beneath the control and
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfCalendarDatePicker x:Name="CalendarDatePicker" Header="CalendarDatePicker" Width="300" Height="70" Description="Select the date" Margin="20"/>
+<editors:SfCalendarDatePicker x:Name="CalendarDatePicker" 
+                              Header="Enter your date of birth" 
+                              Width="300" 
+                              Height="70" 
+                              Description="Candidate should born between 1990 to 2010." 
+                              />
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfCalendarDatePicker calendarDatePicker = new SfCalendarDatePicker();
-calendarDatePicker.Description = "Select the date";
+calendarDatePicker.Description = "Candidate should born between 1990 to 2010.";
 
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI CalendarDatePicker with Null Value](Getting-Started_images/winui-calendar-datepicker-description.png)
+![WinUI CalendarDatePicker with Description](Getting-Started_images/winui-calendar-datepicker-description.png)
 
 
 ## Setting watermark text
