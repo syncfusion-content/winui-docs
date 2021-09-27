@@ -15,8 +15,8 @@ The ComboBox control provides rich text searching functionality. The `TextSearch
 
 The `TextMemberPath`and `DisplayMemberPath` properties of ComboBox control specifies the property path, by which the searching has to be done when a custom data is bound to the `ItemsSource` property.
 
-`TextMemberPath` -  Specifies the property path, by which the searching has to be done when recieves user input in the selection box portion of the combo box control. The default value is `String.Empty`.
-`DisplayMemberPath` -  Specifies the property path, by which the searching has to be done when recieves user input in the drop down portion of the combo box control. The default value is `String.Empty`.
+`TextMemberPath` -  Specifies the property path, by which the searching has to be done when receives user input in the selection box portion of the combo box control. The default value is `String.Empty`.
+`DisplayMemberPath` -  Specifies the property path, by which the searching has to be done when receives user input in the drop down portion of the combo box control. The default value is `String.Empty`.
 
 ## Auto appending of text
 
