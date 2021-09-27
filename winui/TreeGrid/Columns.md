@@ -122,7 +122,7 @@ TreeGridTextColumn
 </tr>
 <tr>
 <td>
-double and it's nullable
+double, double?
 </td>
 <td>
 TreeGridNumericColumn
@@ -130,7 +130,7 @@ TreeGridNumericColumn
 </tr>
 <tr>
 <td>
-DateTimeOffset and it's nullable
+DateTimeOffset, DateTimeOffset?
 </td>
 <td>
 TreeGridDateColumn
