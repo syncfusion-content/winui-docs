@@ -162,7 +162,7 @@ N> `TextBoxStyle` will have effect only in single selection editable mode.
 {% endhighlight %}
 {% endtabs %}
 
-![Styling the editing textBox using TextBoxStyle](Styling_images/winui-combobox-textBoxStyle.png)
+![Styling the editing textBox using TextBoxStyle](Styling_images/winui-combobox-textboxstyle.png)
 
 ## Styling ComboBoxItem
 
@@ -191,7 +191,7 @@ The ComboBox control allows to customize the style of `ComboBoxItem` generated i
 {% endhighlight %}
 {% endtabs %}
 
-![Custom UI of ComboBoxItem using ItemContainerStyle](Styling_images/winui-combobox-itemContainerStyle.png)
+![Custom UI of ComboBoxItem using ItemContainerStyle](Styling_images/winui-combobox-itemcontainerstyle.png)
 
 ### Style ComboBoxItem based on condition   
 
@@ -289,7 +289,7 @@ public class SocialMediaStyleSelector : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Different custom UI of ComboBoxItem using ItemContainerStyleSelector](Styling_images/winui-combobox-itemContainerStyleSelector.png)
+![Different custom UI of ComboBoxItem using ItemContainerStyleSelector](Styling_images/winui-combobox-itemcontainerstyleselector.png)
 
 ## Customize ComboBoxItem 
 
@@ -400,7 +400,7 @@ public class EmployeeViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![Custom UI of ComboboxItem using ItemTemplate](Styling_images/winui-combobox-itemTemplate.png)
+![Custom UI of ComboboxItem using ItemTemplate](Styling_images/winui-combobox-itemtemplate.png)
 
 ### Customize ComboBoxItem based on condition
 
@@ -542,7 +542,7 @@ public class EmployeeViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![Different custom UI of ComboBoxItem using ItemTemplateSelector](Styling_images/winui-combobox-itemTemplateSelector.png)
+![Different custom UI of ComboBoxItem using ItemTemplateSelector](Styling_images/winui-combobox-itemtemplateselector.png)
 
 ## How to change DropDown MaxHeight?
 
