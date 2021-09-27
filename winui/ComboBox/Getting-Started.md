@@ -209,7 +209,7 @@ sfComboBox.TextMemberPath = "Name";
 
 ## Multi selection
 
-The SfComboBox allows you to select multiple values from the drop-down list. The multi-select combo box mode can be enabled by setting the `SelectionMode` property as `Multiple`. Checkboxes can be used to represent selected items.
+The ComboBox allows you to select multiple values from the drop-down list. The multi-select combo box mode can be enabled by setting the `SelectionMode` property as `Multiple`. Checkboxes can be used to represent selected items.
 
 You can handle the selection operations with the help of `SelectionChanged` event of SfComboBox.
 
@@ -236,7 +236,7 @@ sfComboBox.SelectionMode = ComboBoxSelectionMode.Multiple;
 
 ## Editing
 
-The ComboBox control supports editable and non-editable modes to choose items. To enable editing functionality, you have to set the `IsEditable` property as `true`. The default value is false.
+The ComboBox control supports editable and non-editable modes to choose items. To enable editing functionality, set the `IsEditable` property as `true`. The default value is false.
 
 {% tabs %}
 {% highlight XAML %}
@@ -262,13 +262,13 @@ sfComboBox.IsEditable = true;
 
 ## Searching
 
-The ComboBox control provides support to highlights the first item which fits the user input in the drop down list based on `TextSearchMode` property. To disable searching functionality, you have to set the `IsTextSearchEnabled` property as `false`. The default value is true.
+The ComboBox control provides support to highlights the first item which fits the user input in the drop down list based on `TextSearchMode` property. To disable searching functionality, set the `IsTextSearchEnabled` property as `false`. The default value is true.
 
 ![WinUI ComboBox search the items based on provided input](GettingStarted_images/winui-combobox-text-searching.gif)
 
 ## Filtering
 
-The ComboBox control provides support to filter the items in the dropdown based on the starting letter or whether they contain a specific letter. To enable filtering functionality, you have to set the `IsFilteringEnabled` property as true. The default value is false.
+The ComboBox control provides support to filter the items in the dropdown based on the starting letter or whether they contain a specific letter. To enable filtering functionality, set the `IsFilteringEnabled` property as true. The default value is false.
 
 {% tabs %}
 {% highlight XAML %}
@@ -297,7 +297,7 @@ N> Filtering will be supported only for editable mode.
 
 ## SelectionBox UI
 
-You can change the selection box appearance by using the `SelectionBoxItemTemplate`. The default value of `SelectionBoxItemTemplate` is `null`.
+The selection box appearance of SfComboBox can be changed by using the `SelectionBoxItemTemplate` property of SfComboBox. The default value of `SelectionBoxItemTemplate` is `null`.
 
 N> `SelectionBoxItemTemplate` does not have effect when `IsEditable` is `true`.
 
