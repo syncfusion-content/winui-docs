@@ -174,6 +174,7 @@ private void SegmentedControl_SelectionChanged(object sender, SegmentSelectionCh
 
 {% endhighlight %}
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/Selection-Style)
 
 
 

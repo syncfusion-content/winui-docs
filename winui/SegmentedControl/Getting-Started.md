@@ -265,3 +265,5 @@ public class SegmentedModel : INotifyPropertyChanged
 
 ![WinUI Segmented Control getting started image](Getting_Started_Images/winui-segmented-control-getting-started.png)
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/Getting-Started)
+

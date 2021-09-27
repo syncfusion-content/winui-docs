@@ -88,6 +88,8 @@ This example illustrates how to customize the ellipse style
 
 ![WinUI Segmented Control with ellipse](Custom_Templates_Images/winui-segmented-control-ellipse.png)
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/Ellipse-Style)
+
 ## Circle style
 
 By changing corner radius and margin of the segmented item using `ItemContainerStyle` property, users can achieve the circle style.
@@ -154,6 +156,8 @@ This example illustrates how to customize the circle style
 
 ![WinUI Segmented Control with circle style](Custom_Templates_Images/winui-segmented-control-circle.png)
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/Circle-Style)
+
 ## ImageWithText style
 
 By adding the image and content to the `ItemTemplate`, users can create an image with text style.
@@ -210,6 +214,8 @@ This example illustrates how to customize the image with text style.
 {% endtabs %} 
 
 ![WinUI Segmented Control with imagewithtext](Custom_Templates_Images/winui-segmented-control-image-with-text.png)
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/Image-with-text)
 
 ## TopIndicator style
 
@@ -322,6 +328,7 @@ This example illustrates how to customize the top indicator style.
 
 ![WinUI Segmented Control with dark theme topindicator](Custom_Templates_Images/winui-segmented-control-dark-theme-topindicator.png)
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/Top-Indicator-Style)
 
 
 

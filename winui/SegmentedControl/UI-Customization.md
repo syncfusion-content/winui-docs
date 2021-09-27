@@ -417,4 +417,4 @@ This example illustrates how to customize the segmented control using keys.
 
 ![WinUI Segmented Control with dark theme customization](UI_Customization_Images/winui-segmented-control-dark-theme-customization.png)
 
-
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/UI-Customization)
