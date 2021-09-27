@@ -69,7 +69,7 @@ sfNumberBox.UpDownPlacementMode = NumberBoxUpDownPlacementMode.Inline;
 ## TextBox visibility
 
 The TextBoxVisibility property can be used to hide or show the visibility of a text box in a number box.
-When the text box visibility is collapsed, only the UpDown buttons are visible. You can change the `Numberbox` values by using the UpDown buttons.
+When the text box visibility is collapsed, only the UpDown buttons are visible. You can change the control values by using the UpDown buttons.
 
 
 
