@@ -203,7 +203,7 @@ The `Header` property is used to displays the title for the NumberBox Control.
 <editors:SfNumberBox x:Name="numberBox" 
                      Height="75" 
                      Width="300" 
-                     Header="Enter your salary" 
+                     Header="Amount to withdraw" 
                      Value="100" />
 
  
@@ -211,7 +211,7 @@ The `Header` property is used to displays the title for the NumberBox Control.
 {% highlight c# %}
 
 SfNumberBox SfNumberBox = new SfNumberBox();
-SfNumberBox.Header = "Enter your salary";
+SfNumberBox.Header = "Amount to withdraw";
 
 {% endhighlight %}
 {% endtabs %}
@@ -228,8 +228,8 @@ Customize the header appearance of control by using the `HeaderTemplate` propert
             <editors:SfNumberBox.HeaderTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                       <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE7F0;"/>
-                       <TextBlock Text="Salary" FontSize="14" Margin="5"/>
+                       <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xEF40;"/>
+                       <TextBlock Text="Amount" FontSize="14" Margin="5"/>
                     </StackPanel>
                 </DataTemplate>
             </editors:SfNumberBox.HeaderTemplate>
