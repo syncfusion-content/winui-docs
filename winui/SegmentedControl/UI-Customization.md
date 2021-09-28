@@ -178,6 +178,11 @@ The Segmented control border color can be customized using `BorderBrush` propert
                                     VerticalAlignment="Center"
                                     BorderBrush="Red"
                                     ItemsSource="{Binding Days}">                     
+            <syncfusion:SfSegmentedControl.ItemContainerStyle>
+                <Style TargetType="syncfusion:SfSegmentedItem">
+                    <Setter Property="BorderBrush" Value="Red" />
+                </Style>
+            </syncfusion:SfSegmentedControl.ItemContainerStyle>                                        
             <syncfusion:SfSegmentedControl.ItemTemplate>
                 <DataTemplate>
                     <Grid>
