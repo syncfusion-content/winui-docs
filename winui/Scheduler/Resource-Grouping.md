@@ -365,7 +365,7 @@ The resource row height gets auto-adjusted based on the number of overlapping ap
 N>
  * [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/ResourceAutoRowHeight)
 
-![Row auto height in timeline view](Resource_Images/row-auto-height-in-timeline-day-view.png)
+![Row auto height in timeline view in WinUI Scheduler](Resource_Images/row-auto-height-in-timeline-view.png)
 
 N> 
  * This auto row height adjustment is applicable only on all the Timeline views such as timeline day, timeline week, timeline workweek and timeline month views.
