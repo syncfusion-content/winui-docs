@@ -44,6 +44,7 @@ N>
 * The scheduler uses the `CalendarIdentifier` property to determine which calendar to use to localize and format the header date, view header day, and date, time ruler, and DatePicker, and TimePicker in the appointment editor.
 * By default, the scheduler uses the `GregorianCalendar` for the app’s preferred language.
 * If the scheduler is localized with the `CalendarIdentifier,` it will display in the app’s preferred language. For example, if you specify a `KoreanCalendar` and the app language is "en-us," the scheduler will display in English because there are translations applied for the Korean calendar.
+* The Scheduler Time mode (12 hour or 24 hour) does not change depending on the calendar type; however, the time format can be changed depending on the calendar type by using [Day view time text formatting](https://help.syncfusion.com/winui/scheduler/day-week-views#time-ruler-text-formatting) and [Timeline view time text formatting](https://help.syncfusion.com/winui/scheduler/timeline-views#time-ruler-text-formatting).
 
 {% tabs %}
 {% highlight xaml %}
@@ -55,12 +56,25 @@ this.Schedule.CalendarIdentifier = "HijriCalendar";
 {% endhighlight %}
 {% endtabs %}
 
+![Calendar types in WinUI scheduer](Localization_Images/Calendar-type.png)
+
 ### DateTime values in Calendar Types
 You can give all the DateTime values such as `DisplayDate,` `SelectedDate,` `BlackoutDates,` Appointment `StartTime,` and `EndTime,` `SpecialTimeRegion` Start and End time values in two ways when the calendar identifier is specified other than `GregorianCalendar.`
 
-* A `DateTime` instance without specifying calendar type. A scheduler will handle the `DateTime` value for the specified calendar type.
+* A `DateTime` instance without specifying calendar type. A scheduler will handle the `DateTime` value for the specified calendar type. For example,  DisplayDate = new DateTime(1442, 12, 2);
 
-* A `DateTime` instance with specified calendar type. If calendar type is mentioned then the date should be respective to that calendar so that the date value will be converted to Gregorian DateTime and the scheduler will handle that DateTime.
+* A `DateTime` instance with specified calendar type. If calendar type is mentioned then the date should be respective to that calendar so that the date value will be converted to Gregorian DateTime and the scheduler will handle that DateTime. For example,  DisplayDate = new DateTime(1442, 12, 2, new HijriCalendar());
+
+{% tabs %}
+{% highlight xaml %}
+<scheduler:SfScheduler x:Name="Schedule"
+                       CalendarIdentifier="HijriCalendar" />
+{% endhighlight %}
+{% highlight c# %}
+this.Schedule.CalendarIdentifier = "HijriCalendar";
+this.Schedule.DisplayDate = new DateTime(1442, 12, 2, new HijriCalendar());
+{% endhighlight %}
+{% endtabs %}
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/CalendarTypes)
 
