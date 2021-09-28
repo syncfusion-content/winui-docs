@@ -144,6 +144,8 @@ this.Schedule.ShowDatePickerButton = true;
 {% endhighlight %}
 {% endtabs %}
 
+![Header date picker in WinUI scheduler](Date-Navigations-Images/Show-Date-Picker.png)
+
 N> The header `DatePicker` uses the calendar for your app's default language, or you can set the `CalendarIdentifier` property to a scheduler to use a specific calendar system. If the `CalendarIdentifier` is not set the scheduler uses the default calendar for the application’s preferred language.
 
 ## Allowed views
