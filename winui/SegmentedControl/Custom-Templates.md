@@ -13,7 +13,7 @@ This section explains how to customize the SfSegmentedItem and its related opera
 
 ## Ellipse style
 
-By changing corner radius of the segmented item using `ItemContainerStyle` property, users can achieve the ellipse style.
+By changing corner radius of the segmented item using `ItemContainerStyle` property and changing `CornerRadius` property in `SelectedSegmentStyle` style property, users can achieve the ellipse style.
 
 This example illustrates how to customize the ellipse style 
 
@@ -92,7 +92,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winu
 
 ## Circle style
 
-By changing corner radius and margin of the segmented item using `ItemContainerStyle` property, users can achieve the circle style.
+By changing corner radius and margin of the segmented item using `ItemContainerStyle` property and also changing similar properties in `SelectedSegmentStyle` style property, users can achieve the circle style.
 
 This example illustrates how to customize the circle style
 
@@ -158,7 +158,7 @@ This example illustrates how to customize the circle style
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/Circle-Style)
 
-## ImageWithText style
+## Image with text style
 
 By adding the image and content to the `ItemTemplate`, users can create an image with text style.
 
@@ -217,9 +217,9 @@ This example illustrates how to customize the image with text style.
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/Image-with-text)
 
-## TopIndicator style
+## Top indicator style
 
-Using the `ItemBorderThickness` and `SelectedSegmentStyle` properties, users can achieve the top indicator style.
+By using the `ItemBorderThickness` property and handling `BorderThickness` in `SelectedSegmentStyle` property helps users to achieve the top indicator style.
 
 This example illustrates how to customize the top indicator style.
 

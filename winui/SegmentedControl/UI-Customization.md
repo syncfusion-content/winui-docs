@@ -13,7 +13,9 @@ The WinUI Segmented control provides options to customize the background, text c
 
 ## BorderThickness
 
-The Segmented control border thickness can be customized using `BorderThickness` property. The default value is 1.
+The Segmented control border thickness can be customized using `BorderThickness` property. 
+
+N> The default value is 1.
 
 {% tabs %}
 {% highlight xaml %}
@@ -57,7 +59,9 @@ The Segmented control border thickness can be customized using `BorderThickness`
 
 ### ItemBorderThickness 
 
-The SfSegmentedItem border thickness can be customized using `ItemBorderThickness` property. The default value is 0,0,1,0. Also item margin can be changed using the `ItemContainerStyle` property.
+The `SfSegmentedItem` border thickness can be customized using `ItemBorderThickness` property. We recommend to set item margin using the `ItemContainerStyle` property to avoid thick border when both control border thickness and segment item border thickness is used simultaneously.
+
+N> The default value is 0,0,1,0.
 
 {% tabs %}
 {% highlight xaml %}
@@ -106,7 +110,9 @@ The SfSegmentedItem border thickness can be customized using `ItemBorderThicknes
 
 ## CornerRadius
 
-The Segmented control corner radius can be customized using `CornerRadius` property. The default value is 0. 
+The Segmented control corner radius can be customized using `CornerRadius` property. Also, we can change the corner radius of segment item using `CornerRadius` property in `SfSegmentedItem` by setting the `ItemContainerStyle` property of Segmented control.
+
+N> The default value is 0.
 
 {% tabs %}
 {% highlight xaml %}
@@ -149,7 +155,7 @@ The Segmented control corner radius can be customized using `CornerRadius` prope
 
 ## Border color
 
-The Segmented control border color can be customized using `SyncfusionSegmentedControlBorderBrush` key.
+The Segmented control border color can be customized using `BorderBrush` property. Also, we can change the border color of segment item using `BorderBrush` property in `SfSegmentedItem` by setting the `ItemContainerStyle` property of Segmented control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -170,19 +176,8 @@ The Segmented control border color can be customized using `SyncfusionSegmentedC
         <syncfusion:SfSegmentedControl x:Name="segmentedControl"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
-                                    ItemsSource="{Binding Days}">
-            <syncfusion:SfSegmentedControl.Resources>
-                <ResourceDictionary>
-                    <ResourceDictionary.ThemeDictionaries>
-                        <ResourceDictionary x:Key="Light">
-                            <SolidColorBrush x:Key="SyncfusionSegmentedControlBorderBrush" Color="Red"/>
-                        </ResourceDictionary>
-                        <ResourceDictionary x:Key="Dark">
-                            <SolidColorBrush x:Key="SyncfusionSegmentedControlBorderBrush" Color="Red"/>
-                        </ResourceDictionary>
-                    </ResourceDictionary.ThemeDictionaries>
-                </ResourceDictionary>
-            </syncfusion:SfSegmentedControl.Resources>                        
+                                    BorderBrush="Red"
+                                    ItemsSource="{Binding Days}">                     
             <syncfusion:SfSegmentedControl.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -203,11 +198,11 @@ The Segmented control border color can be customized using `SyncfusionSegmentedC
 
 ## Customization using keys
 
-The Segmented control can be customized using the keys for below interactions.
+The Segmented control can be customized using the theme keys for below interactions.
 
-* Hover,
-* Selection,
-* Selected hover,
+* Hover.
+* Selection.
+* Selected hover.
 * Disable.
 
 <table>
@@ -220,7 +215,7 @@ The Segmented control can be customized using the keys for below interactions.
 SyncfusionSegmentedControlBackground
 </td>
 <td>
-Used to set the background of the segmented control.
+Used to set the background color of the segmented control.
 </td>
 </tr>
 <tr>
@@ -228,7 +223,7 @@ Used to set the background of the segmented control.
 SyncfusionSegmentedItemBackground
 </td>
 <td>
-Used to set the background of the segmented item.
+Used to set the background control of the segmented item.
 </td>
 </tr>
 <tr>
@@ -236,7 +231,7 @@ Used to set the background of the segmented item.
 SyncfusionSegmentedItemHoverBackground
 </td>
 <td>
-Used to set the hover background of the segmented item.
+Used to set the hover background color of the segmented item.
 </td>
 </tr>
 <tr>
@@ -244,7 +239,7 @@ Used to set the hover background of the segmented item.
 SyncfusionSegmentedItemSelectedHoverBackground
 </td>
 <td>
-Used to set the selected hover background of the segmented item.
+Used to set the selected hover background color of the segmented item.
 </td>
 </tr>
 <tr>
@@ -252,7 +247,7 @@ Used to set the selected hover background of the segmented item.
 SyncfusionSegmentedItemSelectedBackground
 </td>
 <td>
-Used to set the selected background of the segmented item.
+Used to set the selected background color of the segmented item.
 </td>
 </tr>
 <tr>
@@ -260,7 +255,7 @@ Used to set the selected background of the segmented item.
 SyncfusionSegmentedItemForeground
 </td>
 <td>
-Used to set the foreground of the segmented item.
+Used to set the foreground color of the segmented item.
 </td>
 </tr>
 <tr>
@@ -268,7 +263,7 @@ Used to set the foreground of the segmented item.
 SyncfusionSegmentedItemHoverForeground
 </td>
 <td>
-Used to set the hover foreground of the segmented item.
+Used to set the hover foreground color of the segmented item.
 </td>
 </tr>
 <tr>
@@ -276,7 +271,7 @@ Used to set the hover foreground of the segmented item.
 SyncfusionSegmentedItemSelectedHoverForeground
 </td>
 <td>
-Used to set the selected hover foreground of the segmented item.
+Used to set the selected hover foreground color of the segmented item.
 </td>
 </tr>
 <tr>
@@ -284,7 +279,7 @@ Used to set the selected hover foreground of the segmented item.
 SyncfusionSegmentedItemSelectedForeground
 </td>
 <td>
-Used to set the selected foreground of the segmented item.
+Used to set the selected foreground color of the segmented item.
 </td>
 </tr>
 <tr>
@@ -300,7 +295,7 @@ Used to set the border color of the segmented control.
 SyncfusionSegmentedItemDisabledBackground
 </td>
 <td>
-Used to set the background of the disabled item.
+Used to set the background color of the disabled item.
 </td>
 </tr>
 <tr>
@@ -308,7 +303,7 @@ Used to set the background of the disabled item.
 SyncfusionSegmentedItemDisabledForeground
 </td>
 <td>
-Used to set the foreground of the disabled item.
+Used to set the foreground color of the disabled item.
 </td>
 </tr>
 </table>

@@ -19,7 +19,7 @@ This section provides an overview for working with the [WinUI Segmented Control]
 
 3. Import the control namespace `using Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 
-4. Initialize the SfSegmentedControl.
+4. Initialize the `SfSegmentedControl`.
 
 
 {% tabs %}
@@ -60,7 +60,7 @@ public sealed partial class MainWindow : Window
 
 ## Populating items through string collection
 
-The Segmented control allows you to set the collection of strings as a data source.
+The Segmented control allows you to set the collection of strings as a data source using `ItemsSource` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -111,7 +111,7 @@ public class SegmentedViewModel
 
 ## Populating items using business objects
 
-Populating items to the Segmented Control by setting the collection value to the `ItemsSource` property.
+Populating items to the Segmented Control by setting the collection of business objects to the `ItemsSource` property.
 
 ### ItemTemplate
 
@@ -194,7 +194,7 @@ public class SegmentedModel : INotifyPropertyChanged
 
 ### DisplayMemberPath
 
-`DisplayMemberPath` denotes the path to a value on the source object (SfSegmentedControl.ItemsSource) to serve as the visual representation of object. The below code snippet will be used to bind the DataSource to the ComboBoxAdv.
+The `DisplayMemberPath` property denotes the path to a value on the source object (SfSegmentedControl.ItemsSource) to serve as the visual representation of object. The below code snippet will be used to bind the datasource to the Segmented control.
 
 {% tabs %}
 {% highlight xaml %}
