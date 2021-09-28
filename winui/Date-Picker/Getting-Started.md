@@ -164,9 +164,9 @@ sfDatePicker.AllowNull = true;
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
 ## Header and description
-This section explains about header and description property of DatePicker.
+This section explains about `header` and `description` properties of DatePicker.
 ### Header
-The `Header` property is used to displays the title for the DatePicker Control
+The `Header` property is used to display the title for the `DatePicker` Control
      
 {% tabs %}
 {% highlight xaml %}
@@ -186,8 +186,8 @@ datePicker.Header = "Enter your interview date";
 {% endtabs %}
 
 ![WinUI DatePicker with Header](Getting-Started_images/winui-datepicker-header.png)
-#### Header Customization
-Customize the header appearance of control by using the `HeaderTemplate` property of control. The following code shows how to use a header template to customize the header.
+#### Header customization
+By using the controls `HeaderTemplate` property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
 
 {% tabs %}
 {% highlight xaml %}
@@ -210,7 +210,7 @@ Customize the header appearance of control by using the `HeaderTemplate` propert
 ![WinUI DatePicker with Header Template](Getting-Started_images/winui-datepicker-headertemplate.png)
 
 ### Description
-The `Description` support is used to display the content beneath the control and to provide guidance on the input that the control expects.
+The `Description` support is used to display the content beneath the control as well as to provide guidance on the input that the control expects.
 
 {% tabs %}
 {% highlight xaml %}
