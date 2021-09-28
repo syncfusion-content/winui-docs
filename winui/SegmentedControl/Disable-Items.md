@@ -72,3 +72,5 @@ public sealed partial class MainWindow : Window
 
 ![WinUI Segmented Control with disable](Disable_Images/winui-segmented-control-disable.png)
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/Disable-Items)
+
