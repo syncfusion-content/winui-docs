@@ -130,9 +130,9 @@ SfCalendarDateRangePicker sfCalendarDateRangePicker= new SfCalendarDateRangePick
 ![WinUI Interactive Selected Date Range](Getting-Started_images/winui-interactive-selected-date-range.gif)
 
 ## Header and description
-This section explains about header and description property of CalendarDateRangePicker.
+This section explains about `header` and `description` properties of CalendarDateRangePicker.
 ### Header
-The `Header` property is used to displays the title for the CalendarDateRangePicker Control.
+The `Header` property is used to display the title for the `CalendarDateRangePicker` Control.
      
 {% tabs %}
 {% highlight xaml %}
@@ -154,8 +154,9 @@ dateRangePicker.Header = "Select the dates";
 {% endtabs %}
 
 ![WinUI Calendar DateRange Picker with Header](Getting-Started_images/winui-calendar-daterange-picker-header.png)
-#### Header Customization
-Customize the header appearance of control by using the `HeaderTemplate` property of control. The following code shows how to use a header template to customize the header.
+
+#### Header customization
+By using the controls `HeaderTemplate` property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
 
 {% tabs %}
 {% highlight xaml %}
@@ -181,7 +182,7 @@ Customize the header appearance of control by using the `HeaderTemplate` propert
 
 
 ### Description
-The `Description` support is used to display the content beneath the control and to provide guidance on the input that the control expects.
+The `Description` support is used to display the content beneath the control as well as to provide guidance on the input that the control expects.
 
 {% tabs %}
 {% highlight xaml %}

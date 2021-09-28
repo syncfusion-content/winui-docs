@@ -151,7 +151,7 @@ hoursWorked.CustomFormat = "00.00##";
 
 ## Culture support
 
-The culture support allows the control to be configured for a specific language. To configure this, use `culture` property.
+The culture support allows the control to be configured for a specific language. To configure this, use the `culture` property.
 
 {% tabs %}
 {% highlight c# %}
