@@ -129,7 +129,7 @@ N>
 * If the [ShowAgendaView](https://help.syncfusion.com/winui/scheduler/month-view#month-agenda-view) is true in a month view, the month view should navigate to the day view by single-clicking on the agenda date view header, otherwise, the month view should navigate to the day view by single-clicking on the date in a month cell.
 
 ## Show date picker
-You can enable the date picker for the calendar by using the `ShowDatePickerButton` property in the scheduler, which displays the date picker and `Today` button in the header view. It allows you to quickly navigate to today and different calendar views.
+You can enable the date picker for the scheduler by using the `ShowDatePickerButton` property in the scheduler, which displays the date picker and `Today` button in the header view. It allows you to quickly navigate to today and different scheduler views.
 
 {% tabs %}
 {% highlight xaml %}
