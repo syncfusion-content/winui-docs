@@ -323,23 +323,21 @@ You can set range color to axis labels and ticks using the [`UseRangeColorForAxi
 
 {% highlight xaml %}
 
-<Page.Resources>
-    <Style x:Key="AxisMajorTickStyle"
-           TargetType="Line">
-        <Setter Property="Stroke"
-                Value="#999999"></Setter>
-        <Setter Property="StrokeThickness"
-                Value="1"></Setter>
-    </Style>
+<Style x:Key="AxisMajorTickStyle"
+       TargetType="Line">
+    <Setter Property="Stroke"
+            Value="#999999"></Setter>
+    <Setter Property="StrokeThickness"
+            Value="1"></Setter>
+</Style>
 
-    <Style x:Key="AxisMinorTickStyle"
-           TargetType="Line">
-        <Setter Property="Stroke"
-                Value="#C4C4C4"></Setter>
-        <Setter Property="StrokeThickness"
-                Value="1"></Setter>
-    </Style>
-</Page.Resources>
+<Style x:Key="AxisMinorTickStyle"
+       TargetType="Line">
+    <Setter Property="Stroke"
+            Value="#C4C4C4"></Setter>
+    <Setter Property="StrokeThickness"
+            Value="1"></Setter>
+</Style>
 
 <gauge:SfRadialGauge>
     <gauge:SfRadialGauge.Axes>
@@ -357,8 +355,8 @@ You can set range color to axis labels and ticks using the [`UseRangeColorForAxi
                           MajorTickLength="0.15"
                           MinorTickLength="0.04"
                           MinorTicksPerInterval="4"
-                          MajorTickStyle="{StaticResource AxisMajorTickStyle
-                          MinorTickStyle="{StaticResource AxisMinorTickStyle
+                          MajorTickStyle="{StaticResource AxisMajorTickStyle}"
+                          MinorTickStyle="{StaticResource AxisMinorTickStyle}">
             <gauge:RadialAxis.Ranges>
                 <gauge:GaugeRange WidthUnit="Factor"
                                   OffsetUnit="Factor"
