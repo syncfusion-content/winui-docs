@@ -148,28 +148,20 @@ hoursWorked.CustomFormat = "00.00##";
 
 ![WinUI NumberBox customize fractional digits](Formatting_images/winui-numberbox-apply-customformat.png)
 
-## Change culture
 
-By default, the culture value is updated based on the current application culture. Hence `NumberBox` control automatically formats itself based on current culture with a dollar (**$**) sign. You can apply different formats based on the cultural and regional settings using the [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo?view=net-5.0) class.
+## Culture support
+
+The culture support allows the control to be configured for a specific language. To configure this, use `culture` property.
 
 {% tabs %}
-{% highlight XAML %}
-
-<editors:SfNumberBox x:Name="sfNumberBox"
-                     HorizontalAlignment="Center" 
-                     VerticalAlignment="Center" 
-                     Value="10" />
-
-{% endhighlight %}
 {% highlight c# %}
 
-CultureInfo culture = new CultureInfo("fr-FR");
-sfNumberBox.NumberFormatter = new CurrencyFormatter(new RegionInfo(culture.LCID).ISOCurrencySymbol);
+CultureInfo ci = new CultureInfo("en-US");
+NumberBox.Culture = ci;
+         
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI NumberBox culture based custom format](Formatting_images/winui-numberbox-apply-format-by-culture.png)
-
-
+![WinUI NumberBox culture based custom format](Formatting_images/winui-numberbox-culture_support.png)
 
