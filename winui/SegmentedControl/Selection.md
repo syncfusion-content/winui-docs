@@ -9,11 +9,15 @@ documentation: ug
 
 # Selection in WinUI Segmented Control
 
-This section explains how to customize the selected item and its related operations in the Segmented control.
+This section explains about properties which helps in items selection, customize the selected item, and its related operations in the Segmented control.
+
+## Selected index
+
+The Segmented control allows you to select the segment item based on datasource index using `SelectedIndex` property.
 
 ## Selected item customization
 
-The Segmented control allows you to customize the appearance of SelectedItem using the `SelectedSegmentStyle` property. we need to provide style of target type as [Border](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.border).
+The Segmented control allows you to customize the appearance of selected item using the `SelectedSegmentStyle` property. We need to provide style of target type as [Border](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.border).
 
 {% tabs %}
 {% highlight xaml %}
@@ -58,9 +62,9 @@ The Segmented control allows you to customize the appearance of SelectedItem usi
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with selecteditem customization](Selection_Images/winui-segmented-control-selected-item-customization.png)
-
 N> Users can't change the selected item foreground using SelectedSegmentStyle.
+
+![WinUI Segmented Control with selecteditem customization](Selection_Images/winui-segmented-control-selected-item-customization.png)
 
 ## Animation
 
@@ -148,7 +152,7 @@ The focus border appears on the selected item when users press the <kbd>Tab</kbd
 <kbd>Enter</kbd>
 </td>
 <td>
-Pressing the <kbd>Enter</kbd> key after moving to the next or previous item makes a selection.
+Pressing the <kbd>Enter</kbd> key when segment item in focus will make selection.
 </td>
 </tr>
 </table>
@@ -157,10 +161,10 @@ Pressing the <kbd>Enter</kbd> key after moving to the next or previous item make
 
 ## SelectionChanged event
 
-The SelectionChanged event will occur once selection process has been completed for the selected item in the Segmented Control. The    `SegmentSelectionChangedEventArgs` has the following values which provides information for SelectionChanged event:
+The `SelectionChanged` event will occur once selection process has been completed for the selected item in the Segmented Control. The `SegmentSelectionChangedEventArgs` has the following values which provides information for SelectionChanged event:
 
-* NewValue: Gets the new value of `SelectedItem` has been assigned to the SegmentedControl.
-* OldValue: Gets the old value of `SelectedItem` has been assigned to the SegmentedControl.
+* `NewValue`: Gets the new value of `SelectedItem` has been assigned to the SegmentedControl.
+* `OldValue`: Gets the old value of `SelectedItem` has been assigned to the SegmentedControl.
 
 {% highlight C# %} 
 
@@ -174,6 +178,7 @@ private void SegmentedControl_SelectionChanged(object sender, SegmentSelectionCh
 
 {% endhighlight %}
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/Selection-Style)
 
 
 
