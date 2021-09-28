@@ -193,9 +193,9 @@ sfNumberBox.AllowNull = false;
 ![WinUI NumberBox prevent empty textbox](GettingStarted_images/allowNull.gif)
 
 ## Header and description
-This section explains about header and description property of NumberBox.
+This section explains about `header` and `description` properties of NumberBox.
 ### Header
-The `Header` property is used to displays the title for the NumberBox Control.
+The `Header` property is used to display the title for the `NumberBox` Control.
      
 {% tabs %}
 {% highlight xaml %}
@@ -218,8 +218,8 @@ SfNumberBox.Header = "Amount to withdraw";
 
 ![WinUI NumberBox with Header](GettingStarted_images/header_text.png)
 
-#### Header Customization
-Customize the header appearance of control by using the `HeaderTemplate` property of control. The following code shows how to use a header template to customize the header.
+#### Header customization
+By using the controls `HeaderTemplate` property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
 
 {% tabs %}
 {% highlight xaml %}
@@ -241,7 +241,7 @@ Customize the header appearance of control by using the `HeaderTemplate` propert
 ![WinUI NumberBox with Header Template](GettingStarted_images/header_template.png)
 
 ### Description
-The `Description` support is used to display the content beneath the control and to provide guidance on the input that the control expects.
+The `Description` support is used to display the content beneath the control as well as to provide guidance on the input that the control expects.
 
 {% tabs %}
 {% highlight xaml %}
@@ -250,13 +250,13 @@ The `Description` support is used to display the content beneath the control and
                       Height="75"
                       Width="300" 
                       Value="10"  
-                      Description="Please enter only positive digits."/>
+                      Description="Please enter only positive digit."/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfNumberBox SfNumberBox = new SfNumberBox();
-SfNumberBox.Description = “Please enter only positive digits.”;
+SfNumberBox.Description = “Please enter only positive digit.”;
 
 
 {% endhighlight %}
@@ -291,7 +291,7 @@ sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 
 ## Clear button visibility 
 
-The `ShowClearButton` Property is used to show or hide the clear button in `NumberBox`. By default, visibility of the clear button is enabled.
+The `ShowClearButton` property is used to show or hide the clear button in `NumberBox`. By default, visibility of the clear button is enabled.
 
 N> The clear button appears only when the text box is focused and the `IsEditable` property value is set to **true**.
 {% tabs %}
