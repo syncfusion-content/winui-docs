@@ -134,6 +134,80 @@ sfCalendarDatePicker.AllowNull = true;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection)
 
+## Header and description
+This section explains about header and description property of CalendarDatePicker.
+### Header
+The `Header` property is used to displays the title for the CalendarDatePicker Control.
+     
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfCalendarDatePicker x:Name="CalendarDatePicker" 
+                              Header="Enter your date of birth"
+                              Width="300" 
+                              Height="70" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfCalendarDatePicker calendarDatePicker = new SfCalendarDatePicker();
+calendarDatePicker.Header = "Enter your date of birth";
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI CalendarDatePicker with Header](Getting-Started_images/winui-calendar-datepicker-header.png)
+
+#### Header Customization
+Customize the header appearance of control by using the `HeaderTemplate` property of control. The following code shows how to use a header template to customize the header.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfCalendarDatePicker  Width="250" Height="75" >
+            <editors:SfCalendarDatePicker.HeaderTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                       <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xED55;"/>
+                        <TextBlock Text="Birthday Date" FontSize="14" Margin="5"/>
+                    </StackPanel>
+                </DataTemplate>
+            </editors:SfCalendarDatePicker.HeaderTemplate>
+        </editors:SfCalendarDatePicker>
+
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI CalendarDatePicker with Header Template](Getting-Started_images/winui-calendar-datepicker-header-template.png)
+
+### Description
+The `Description` support is used to display the content beneath the control and to provide guidance on the input that the control expects.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfCalendarDatePicker x:Name="CalendarDatePicker" 
+                              Header="Enter your date of birth" 
+                              Width="300" 
+                              Height="70" 
+                              Description="Candidate should born between 1990 to 2010." 
+                              />
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfCalendarDatePicker calendarDatePicker = new SfCalendarDatePicker();
+calendarDatePicker.Description = "Candidate should born between 1990 to 2010.";
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI CalendarDatePicker with Description](Getting-Started_images/winui-calendar-datepicker-description.png)
+
+
 ## Setting watermark text
 
 You can prompt the user with some information by using the [PlaceholderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_PlaceholderText) property. This will be displayed only when the `Calendar Date Picker` contains the `SelectedDate` property as `null` and `AllowNull` property as `true`. If `AllowNull` property is `false`, then the current system date is updated in `SelectedDate` property and displayed instead of `PlaceholderText`.
