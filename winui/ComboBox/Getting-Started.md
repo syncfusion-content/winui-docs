@@ -262,7 +262,7 @@ sfComboBox.IsEditable = true;
 
 ## Searching
 
-Based on the `TextSearchMode` property, the ComboBox control highlights the first item in the drop-down list that matches the user input.. To disable searching functionality, set the `IsTextSearchEnabled` property as `false`. The default value is true.
+Based on the `TextSearchMode` property, the ComboBox control highlights the first item in the drop-down list that matches the user input. To disable searching functionality, set the `IsTextSearchEnabled` property as `false`. The default value is true.
 
 ![WinUI ComboBox search the items based on provided input](GettingStarted_images/winui-combobox-text-searching.gif)
 
@@ -304,15 +304,25 @@ N> `SelectionBoxItemTemplate` has no effect when `IsEditable` is `true`.
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfComboBox x:Name="sfComboBox"
+<Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+   <Grid.DataContext>
+        <local:SocialMediaViewModel/>
+    </Grid.DataContext>
+    <Grid.Resources>
+        <SolidColorBrush x:Key="SyncfusionComboBoxBackgroundFocused" 
+                         Color="LightCyan" />
+    </Grid.Resources>
+
+   <editors:SfComboBox x:Name="sfComboBox"
                     Width="250"
                     SelectionMode="Multiple"
                     ItemsSource="{Binding SocialMedias}"
                     DisplayMemberPath="Name"
+                    Background="LightCyan"
                     TextMemberPath="Name">
-    <editors:SfComboBox.SelectionBoxItemTemplate>
-        <DataTemplate>
-            <StackPanel Orientation="Horizontal">
+      <editors:SfComboBox.SelectionBoxItemTemplate>
+         <DataTemplate>
+            <StackPanel Orientation="Horizontal" Background="LightCyan">
                 <TextBlock Margin="12,5,0,6" 
                            FontFamily="{ThemeResource ContentControlThemeFontFamily}"
                            FontSize="{ThemeResource ControlContentThemeFontSize}"
@@ -322,11 +332,15 @@ N> `SelectionBoxItemTemplate` has no effect when `IsEditable` is `true`.
                            FontSize="{ThemeResource ControlContentThemeFontSize}"
                            Text="{Binding ElementName=sfComboBox, Path=SelectedItems.Count}" />
             </StackPanel>
-        </DataTemplate>
-    </editors:SfComboBox.SelectionBoxItemTemplate>
-</editors:SfComboBox>
+         </DataTemplate>
+      </editors:SfComboBox.SelectionBoxItemTemplate>
+    </editors:SfComboBox>
+
+</Grid>
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Custom UI of Selection Box using SelectionBoxItemTemplate](GettingStarted_images/winui-combobox-selectionBoxItemTemplate.png)
+
+N> You can refer more information about Customization of ComboBox element using theme keys from [this](https://help.syncfusion.com/winui/themes) link.

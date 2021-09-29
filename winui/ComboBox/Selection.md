@@ -62,6 +62,49 @@ sfComboBox.SelectedIndex = 2;
 
 ![Single selection in WinUI ComboBox programmatically](Selection_images/winui-combobox-single-selection-programmatically.png)
 
+### Decide when to update selected item
+
+The `SelectionChangeTrigger` property of the SfComboBox can be used to update the selected item when the user commits a selection or each time the user navigates to a new selection in the ComboBox. The default value is `Committed`. The available SelectionChangeTrigger modes are,
+
+* **Committed** - Selected item gets update when the user commits a selection in the ComboBox.
+* **Always** - Selected item gets update to each time the user navigates to a new selection in the ComboBox.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfComboBox
+    IsEditable="True"
+    Width="250"
+    Margin="0,0,0,250"
+    ItemsSource="{Binding SocialMedias}"
+    SelectionChangeTrigger="Always"
+    DisplayMemberPath="Name"
+    TextMemberPath="Name"
+    SelectionChanged="OnSfComboBoxSelectionChanged"
+    x:Name="sfComboBox" />
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+private async  void OnSfComboBoxSelectionChanged(object sender, ComboBoxSelectionChangedEventArgs e)
+{
+    var cd = new ContentDialog
+    {
+        Content = "Selected item was changed.",
+        CloseButtonText = "Close"
+    };
+
+    cd.XamlRoot = this.Content.XamlRoot;
+    var result = await cd.ShowAsync();
+
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N> You can refer more information about `SelectionChanged` event from [this](https://help.syncfusion.com/winui/combobox/selection#selection-changed-event) link.
+
 ## Multiple selection
 
 The SfComboBox allows user to select multiple values from the drop-down list. The multi-select ComboBox mode can be enabled by setting the `SelectionMode` property as `Multiple`.
