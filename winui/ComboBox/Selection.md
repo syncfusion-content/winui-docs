@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in WinUI ComboBox control | Syncfusion
-description: Learn here all about Selection modes support in Syncfusion WinUI ComboBox(multiselect combobox) control and more.
+description: Learn here all about Selection modes support in Syncfusion WinUI ComboBox (multi-select ComboBox) control and more.
 platform: winui
 control: SfComboBox
 documentation: ug
@@ -9,15 +9,15 @@ documentation: ug
 
 # Selection in WinUI ComboBox
 
-The SfComboBox allows user to select single or multiple items in the drop down list. The selection mode can be set by using the `SelectionMode` property. There are two different selection modes: `Single`, `Multiple`.
+The `SfComboBox` allows user to select single or multiple items from the drop-down list. The selection mode can be set by using the `SelectionMode` property. There are two different selection modes: `Single`, and `Multiple`.
 
 ## Single selection
 
-The SfComboBox allows user to select a single item from the drop down list.
+The `SfComboBox` allows user to select a single item from the drop-down list.
 
 ### UI Selection 
 
-The selected item can be changed interactively by selecting from the drop down list or enter the value using keyboard. The selected item can be retrieved from the `SelectedItem` or `SelectedIndex` properties of ComboBox control.
+The selected item can be changed interactively by selecting from the drop-down list or enter the value using keyboard. The selected item can be retrieved from the `SelectedItem` or `SelectedIndex` property of ComboBox control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -35,9 +35,9 @@ The selected item can be changed interactively by selecting from the drop down l
 
 ![Single selection in WinUI ComboBox](Selection_images/winui-combobox-single-selection.gif)
 
-### Programmatic Selection 
+### Programmatic selection 
 
-The selected item can be changed programmatically by using `SelectedItem` or `SelectedIndex` properties of ComboBox control. 
+The selected item can be changed programmatically by using the `SelectedItem` or `SelectedIndex` property of ComboBox control. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -64,11 +64,11 @@ sfComboBox.SelectedIndex = 2;
 
 ## Multiple selection
 
-The SfComboBox allows user to select multiple values from the drop down list. The multi-select combo box mode can be enabled by setting the `SelectionMode` property as `Multiple`.
+The SfComboBox allows user to select multiple values from the drop-down list. The multi-select ComboBox mode can be enabled by setting the `SelectionMode` property as `Multiple`.
 
-### UI Selection 
+### UI selection 
 
-The selected items can be changed interactively by using keyboard or select from drop down list. The selected items can be retrieved from the `SelectedItems` property of ComboBox control.
+The selected items can be changed interactively by using keyboard or by selecting from a drop-down list. The selected items can be retrieved from the `SelectedItems` property of ComboBox control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -86,9 +86,9 @@ The selected items can be changed interactively by using keyboard or select from
 
 ![Multiple selection in WinUI ComboBox](Selection_images/winui-combobox-multiple-selection.gif)
 
-### Programmatic Selection 
+### Programmatic selection 
 
-The selected items can be changed programmatically by using `SelectedItems` property of ComboBox control.  
+The selected items can be changed programmatically by using the `SelectedItems` property of ComboBox control.  
 
 {% tabs %}
 {% highlight c# %}
@@ -131,9 +131,9 @@ sfComboBox.DelimiterText = "-";
 
 ![WinUI ComboBox seperate the selected items using delimiter text](Selection_images/winui-combobox-delimiter-text.png)
 
-### How to hide the check box?
+### How to hide the check box
 
-The checkbox that is displayed in a drop down list can be hide by using the `IsMultiSelectCheckBoxEnabled` property of ComboBox control. The default value of `IsMultiSelectCheckBoxEnabled` property is **true**.
+The checkbox that is displayed in a drop-down list can be hidden by using the `IsMultiSelectCheckBoxEnabled` property of ComboBox control. The default value of `IsMultiSelectCheckBoxEnabled` property is **true**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -160,7 +160,7 @@ sfComboBox.IsMultiSelectCheckBoxEnabled = false;
 
 ## Selection changed event
 
-When selecting an item from the drop down list, the `SelectionChanged` event will be called. The `SelectionChanged` event contains the newly selected and removed items in the AddedItems and RemovedItems properties. The `SelectionChanged` contains the following properties.
+When selecting an item from the drop-down list, the `SelectionChanged` event is triggered. The `SelectionChanged` event contains the newly selected and removed items in the AddedItems and RemovedItems properties. The `SelectionChanged` contains the following properties:
 
  * `AddedItems` - Contains the items that were selected.
  * `RemovedItems` - Contains the items that were unselected.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Searching in WinUI ComboBox control | Syncfusion
-description: Learn how to perform searching operation in Syncfusion WinUI ComboBox (multiselect combobox) control and more.
+description: Learn how to perform searching operation in Syncfusion WinUI ComboBox (multi-select ComboBox) control and more.
 platform: winui
 control: SfComboBox
 documentation: ug

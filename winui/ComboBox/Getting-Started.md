@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WinUI ComboBox | Syncfusion
-description: Learn how to get started with Syncfusion WinUI ComboBox(multiselect combobox) control, its elements, and more in here.
+description: Learn how to get started with Syncfusion WinUI ComboBox (multi-select ComboBox) control, its elements, and more in here.
 platform: WinUI
 control: SfComboBox
 documentation: ug
@@ -104,11 +104,11 @@ this.Content = sfComboBox;
 
 ![WinUI ComboBox populating the SfComboBoxItem](GettingStarted_images/winui-combobox-populating-comboBoxItem.gif)
 
-## Populating items through data binding
+## Populating items using data binding
 
-The ComboBox can bound to an external data source using `ItemsSource` property. Now let us create Model and ViewModel classes to populate ComboBox with SocialMedia details.
+The ComboBox can be bound to an external data source using the `ItemsSource` property. Now, let us create Model and ViewModel classes to populate ComboBox with SocialMedia details.
 
-**Step 1:** Define a simple model class SocialMedia with fields ID and name, and then populate social media data in ViewModel.
+**Step 1:** Define a simple model class SocialMedia with fields ID and name, and then populate social media data in the ViewModel.
 
 {% tabs %}
 {% highlight c# %}
@@ -147,9 +147,9 @@ public class SocialMediaViewModel
 {% endhighlight %}
 {% endtabs %}
 
-**Step 2:**  Populate data in ComboBox 
+**Step 2:** Populate data in ComboBox. 
 
-Now populate this SocialMediaViewModel data in SfComboBox control by binding with `ItemSource` property. 
+Now, populate this SocialMediaViewModel data in SfComboBox control by binding to the `ItemSource` property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -189,12 +189,12 @@ sfComboBox.ItemsSource = (sfComboBox.DataContext as SocialMediaViewModel).Social
 
 N> Set the SocialMediaViewModel instance as the DataContext of your control; this is done to bind properties of SocialMediaViewModel to SfComboBox.
 
-**Step 3:** Setting TextMemberPath and DisplayMemberPath
+**Step 3:** Setting TextMemberPath and DisplayMemberPath.
 
-The combo box control is populated with the list of social medias. But the SocialMedia model contains two properties ID and Name so it is necessary to intimate by which property it should display value in the selection box portion of the ComboBox control, when an item is selected.
+The combo box control is populated with the list of social medias. But the SocialMedia model contains two properties, ID and Name, so it is necessary to intimate by which property it should display value in the selection box portion of the ComboBox control, when an item is selected.
 
-`TextMemberPath` - This property path is used to get the value for display in the selection box portion of the combo box control, when an item is selected. The default value is `String.Empty`.
-`DisplayMemberPath` - This property path is used to the name or path of the property displayed for each data item in the drop down list. The default value is `String.Empty`.
+`TextMemberPath` - This property path is used to get the value for displaying in the selection box portion of the combo box control when an item is selected. The default value is `String.Empty`.
+`DisplayMemberPath` - This property path is used to the name or path of the property displayed for each data item in the drop-down list. The default value is `String.Empty`.
 
 {% tabs %}
 {% highlight C# %}
@@ -209,9 +209,9 @@ sfComboBox.TextMemberPath = "Name";
 
 ## Multi selection
 
-The ComboBox allows user to select multiple values from the drop down list. The multi-select combo box mode can be enabled by setting the `SelectionMode` property as `Multiple`. Checkboxes can be used to represent selected items.
+The ComboBox allows user to select multiple values from the drop-down list. The multi-select ComboBox mode can be enabled by setting the `SelectionMode` property as `Multiple`. Checkboxes can be used to represent selected items.
 
-The selection operations can be handled with the help of `SelectionChanged` event of SfComboBox.
+The selection operations can be handled using the `SelectionChanged` event of SfComboBox.
 
 {% tabs %}
 {% highlight XAML %}
@@ -262,13 +262,13 @@ sfComboBox.IsEditable = true;
 
 ## Searching
 
-The ComboBox control provides support to highlights the first item which fits the user input in the drop down list based on `TextSearchMode` property. To disable searching functionality, set the `IsTextSearchEnabled` property as `false`. The default value is true.
+Based on the `TextSearchMode` property, the ComboBox control highlights the first item in the drop-down list that matches the user input.. To disable searching functionality, set the `IsTextSearchEnabled` property as `false`. The default value is true.
 
 ![WinUI ComboBox search the items based on provided input](GettingStarted_images/winui-combobox-text-searching.gif)
 
 ## Filtering
 
-The ComboBox control provides support to filter the items in the drop down based on the starting letter or whether they contain a specific letter. To enable filtering functionality, set the `IsFilteringEnabled` property as true. The default value is false.
+The ComboBox control provides support to filter the items in the drop-down based on the starting letter or whether they contain a specific letter. To enable filtering functionality, set the `IsFilteringEnabled` property as true. The default value is false.
 
 {% tabs %}
 {% highlight XAML %}
@@ -299,7 +299,7 @@ N> Filtering will be supported only for editable mode.
 
 The selection box appearance of SfComboBox can be changed by using the `SelectionBoxItemTemplate` property of SfComboBox. The default value of `SelectionBoxItemTemplate` is `null`.
 
-N> `SelectionBoxItemTemplate` does not have effect when `IsEditable` is `true`.
+N> `SelectionBoxItemTemplate` has no effect when `IsEditable` is `true`.
 
 {% tabs %}
 {% highlight XAML %}

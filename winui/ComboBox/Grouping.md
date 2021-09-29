@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping in WinUI ComboBox control | Syncfusion
-description: Learn here all about Grouping support in Syncfusion WinUI ComboBox(multiselect combobox) control with UI grouping and more.
+description: Learn here all about Grouping support in Syncfusion WinUI ComboBox (multi-select ComboBox) control with UI grouping and more.
 platform: winui
 control: SfComboBox
 documentation: ug
@@ -13,11 +13,11 @@ This section explains about the grouping support available in SfComboBox.
 
 ## Enable grouping
 
-To display grouped data in SfComboBox control, you must set the `ItemsSource` property to a [CollectionViewSource](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.collectionviewsource?view=winui-3.0) that has its `IsSourceGrouped` property set to true. The CollectionViewSource acts as a proxy over the collection class to enable grouping support.
+To display grouped data in SfComboBox control, set the `ItemsSource` property to a [CollectionViewSource](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.collectionviewsource?view=winui-3.0) with the `IsSourceGrouped` property set to true. The CollectionViewSource acts as a proxy over the collection class to enable grouping support.
 
-Also, the appearance of groups in drop down list can be defined by using the `GroupStyle` property. The default value of `GroupStyle` is `null`.
+Also, the appearance of groups in a drop-down list can be defined by using the `GroupStyle` property. The default value of `GroupStyle` is `null`.
 
-In the example below, we define a CollectionViewSource that wraps a collection of Vegetable objects and specifies a property to group on (the vegetable category). Then bind the `View` property of CollectionViewSource to the `ItemsSource` property of ComboBox control.
+In the following example, define a CollectionViewSource that wraps a collection of vegetable objects and specifies a property to group on (the vegetable category). Then, bind the `View` property of CollectionViewSource to the `ItemsSource` property of ComboBox control.
 
 {% tabs %}
 {% highlight c# %}

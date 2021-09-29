@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering in WinUI ComboBox control | Syncfusion
-description: Learn here all about ComboBox Filtering Options in Syncfusion WinUI ComboBox(multiselect combobox) control and more.
+description: Learn here all about ComboBox filtering options in Syncfusion WinUI ComboBox (multi-select ComboBox) control and more.
 platform: winui
 control: SfComboBox
 documentation: ug
@@ -12,7 +12,7 @@ The ComboBox has built-in support to filter data items depending on the text ent
 
 ## Enable filtering
 
-To enable filtering functionality in ComboBox control, set the `IsFilteringEnabled` and `IsEditable` properties as true. The default value is false. The drop down will open automatically as soon as you start typing characters in the ComboBox control.
+To enable filtering functionality in ComboBox control, set the `IsFilteringEnabled` and `IsEditable` properties as true. The default value is false. The drop-down will open automatically as soon as you start typing characters in the ComboBox control.
 
 {% tabs %}
 {% highlight XAML %}
@@ -37,7 +37,7 @@ sfComboBox.IsFilteringEnabled = true;
 
 N> Filtering will be supported only for editable mode.
 
-## Filter Mode
+## Filter mode
 
 The string comparison for filtering suggestions can be changed using the `TextSearchMode` property. The default filtering type is `StartsWith`, ignoring accent and it is case insensitive. The available filtering modes are,
 
@@ -46,7 +46,7 @@ The string comparison for filtering suggestions can be changed using the `TextSe
 
 ### Filter with beginning text
 
-Filter the matching items based on the starting text and the first filtered item will be appended to the typed input and highlighted in the drop down. 
+Filter the matching items based on the starting text and the first filtered item will be appended to the typed input and highlighted in the drop-down. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -72,11 +72,11 @@ sfComboBox.TextSearchMode = ComboBoxTextSearchMode.StartsWith;
 
 ![WinUI ComboBox filter the items based on starting text](Filtering_images/winui-combobox-filtering-start-text.gif)
 
-N> To disable the auto appending the text and highlighting behavior, set `IsTextSearchEnabled` property as false.
+N> To disable the auto appending and highlighting feature, set `IsTextSearchEnabled` property as false.
 
 ### Filter with contains text
 
-Filter the matching items containing specific text and first filtered item will be highlighted in the drop down.
+Filter the matching items that contain specific text, and the first filtered item will be highlighted in the drop-down.
 
 {% tabs %}
 {% highlight XAML %}
@@ -102,4 +102,4 @@ sfComboBox.TextSearchMode = ComboBoxTextSearchMode.Contains;
 
 ![WinUI ComboBox filter the items based on contains text](Filtering_images/winui-combobox-filtering-contains-text.gif)
 
-N> Auto appending of first suggested item text to typed input is not supported in this mode.
+N> Auto appending of the first suggested item text to typed input is not supported in this mode.

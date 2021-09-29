@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styling in WinUI ComboBox control | Syncfusion
-description: Learn here all about styling support in Syncfusion WinUI ComboBox(multiselect combobox) control into WinUI application and its basic features.
+description: Learn here all about styling support in Syncfusion WinUI ComboBox (multi-select ComboBox) control into WinUI application and its basic features.
 platform: winui
 control: SfComboBox
 documentation: ug
@@ -105,9 +105,9 @@ sfComboBox.PlaceholderText = "Select a social media";
 
 ![WinUI ComboBox Watermark Text](Styling_images/winui-combobox-watermark_text.png)
 
-### Change foreground of Placeholder Text
+### Change foreground of placeholder text
 
-The placeholder text's foreground can be changed by using the `PlaceholderForeground` property. The default value of `PlaceholderForeground` property is **null**.
+The placeholder texts’ foreground can be changed by using the `PlaceholderForeground` property. The default value of `PlaceholderForeground` property is **null**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -131,11 +131,11 @@ sfComboBox.PlaceholderForeground = new SolidColorBrush(Colors.Red);
 
 ![WinUI ComboBox placeholder text foreground](Styling_images/winui-combobox-placeholder-text-foreground.png)
 
-## Customize edit mode TextBox
+## Customize the edit mode TextBox
 
-The appearance of the editing textbox in `ComboBox` control can be customized by using the `TextBoxStyle` property. The default value of `TextBoxStyle` is `null`.
+The appearance of the edit mode textbox in `ComboBox` control can be customized by using the `TextBoxStyle` property. The default value of `TextBoxStyle` is `null`.
 
-N> `TextBoxStyle` will have effect only in single selection editable mode.
+N> `TextBoxStyle` will only have an effect in single selection editable mode.
 
 {% tabs %}
 {% highlight XAML %}
@@ -166,7 +166,7 @@ N> `TextBoxStyle` will have effect only in single selection editable mode.
 
 ## Styling ComboBoxItem
 
-The ComboBox control allows to customize the style of `ComboBoxItem` generated in drop down by using the `ItemContainerStyle` property. The default value of `ItemContainerStyle` is `null`. 
+The ComboBox control allows you to customize the style of `ComboBoxItem`, generated in drop-down by using the `ItemContainerStyle` property. The default value of `ItemContainerStyle` is `null`. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -195,7 +195,7 @@ The ComboBox control allows to customize the style of `ComboBoxItem` generated i
 
 ### Style ComboBoxItem based on condition   
 
-The ComboBox control allows to customize the style of `ComboBoxItem` conditionally based on its content by using the `ItemContainerStyleSelector` property. The default value of `ItemContainerStyleSelector` is `null`. 
+The ComboBox control allows you to customize the style of `ComboBoxItem` conditionally based on its content by using the `ItemContainerStyleSelector` property. The default value of `ItemContainerStyleSelector` is `null`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -260,7 +260,7 @@ public class SocialMediaStyleSelector : StyleSelector
 
 ## Customize ComboBoxItem 
 
-The `ItemTemplate` property helps to decorate drop down items with custom templates. The default value of `ItemTemplate` is `null`. Below example shows, how to add image or custom control in drop down items using templates.
+The `ItemTemplate` property helps you to decorate drop-down items using the custom templates. The default value of `ItemTemplate` is `null`. The following example shows how to add image or custom control in drop-down items using templates.
 
 {% tabs %}
 {% highlight C# %}
@@ -371,7 +371,7 @@ public class EmployeeViewModel
 
 ### Customize ComboBoxItem based on condition
 
-The `ItemTemplateSelector` property helps to decorate drop down items conditionally based on its content with custom templates. The default value of `ItemTemplateSelector` is `null`.
+The `ItemTemplateSelector` property helps you to decorate drop-down items conditionally based on its content using the custom templates. The default value of `ItemTemplateSelector` is `null`.
 
 {% tabs %}
 {% highlight C# %}
@@ -511,11 +511,11 @@ public class EmployeeViewModel
 
 ![Different custom UI of ComboBoxItem using ItemTemplateSelector](Styling_images/winui-combobox-itemtemplateselector.png)
 
-## How to change DropDown MaxHeight?
+## How to change DropDown MaxHeight
 
-The maximum height of the drop down can be changed by using the `MaxDropDownHeight` property of ComboBox control. The default value of `MaxDropDownHeight` property is **288**. 
+The maximum height of the drop-down can be changed by using the `MaxDropDownHeight` property of ComboBox control. The default value of `MaxDropDownHeight` property is **288**. 
 
- N> If the `MaxDropDownHeight` is too small compared the populated items, scroll viewer will be automatically shown to navigate the hidden items.
+ N> If the `MaxDropDownHeight` is too small compared to the populated items, scroll viewer will be automatically shown to navigate the hidden items.
 
 {% tabs %}
 {% highlight xaml %}
