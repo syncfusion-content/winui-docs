@@ -37,7 +37,7 @@ sfComboBox.IsEditable = true;
 
 ![WinUI ComboBox choose item using editing](Editing_images/winui-combobox-edit-mode.gif)
 
-## Non-editable combo box
+## Non-editable ComboBox
 
 Non-editable mode prevents users from editing and instead allows them to select from drop-down list.
 

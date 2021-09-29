@@ -191,9 +191,9 @@ N> Set the SocialMediaViewModel instance as the DataContext of your control; thi
 
 **Step 3:** Setting TextMemberPath and DisplayMemberPath.
 
-The combo box control is populated with the list of social medias. But the SocialMedia model contains two properties, ID and Name, so it is necessary to intimate by which property it should display value in the selection box portion of the ComboBox control, when an item is selected.
+The ComboBox control is populated with the list of social medias. But the SocialMedia model contains two properties, ID and Name, so it is necessary to intimate by which property it should display value in the selection box portion of the ComboBox control, when an item is selected.
 
-`TextMemberPath` - This property path is used to get the value for displaying in the selection box portion of the combo box control when an item is selected. The default value is `String.Empty`.
+`TextMemberPath` - This property path is used to get the value for displaying in the selection box portion of the ComboBox control when an item is selected. The default value is `String.Empty`.
 `DisplayMemberPath` - This property path is used to the name or path of the property displayed for each data item in the drop-down list. The default value is `String.Empty`.
 
 {% tabs %}

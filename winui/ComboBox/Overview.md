@@ -9,7 +9,7 @@ documentation: ug
 
 # WinUI ComboBox Overview
 
-The `WinUI ComboBox control` (multiselect combobox) is a selection component that allows users to type a value or choose an option from a list of predefined options. It has many features, such as data binding, multiple selection with checkboxes, editing, searching, filtering, UI customization, and custom templates.
+The `WinUI ComboBox control` (multi-select ComboBox) is a selection component that allows users to type a value or choose an option from a list of predefined options. It has many features, such as data binding, multiple selection with checkboxes, editing, searching, filtering, UI customization, and custom templates.
 
 ## Control structure
 
