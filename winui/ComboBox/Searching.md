@@ -9,14 +9,14 @@ documentation: ug
 
 # Searching in WinUI ComboBox
 
-The ComboBox control provides rich text searching functionality. The `TextSearchMode` and `IsTextSearchEnabled` properties of the SfComboBox can be used in order to regulate how the control behaves when it receives user input.
+The ComboBox control provides rich text searching functionality. The `TextSearchMode` and `IsTextSearchEnabled` properties of the SfComboBox can be used to regulate how the control behaves when it receives user input.
 
 ## Search based on member path
 
-The `TextMemberPath`and `DisplayMemberPath` properties of ComboBox control specifies the property path, by which the searching has to be done when a custom data is bound to the `ItemsSource` property.
+The `TextMemberPath`and `DisplayMemberPath` properties of ComboBox control specify the property path, by which the searching must be done when a custom data is bound to the `ItemsSource` property.
 
-`TextMemberPath` -  Specifies the property path, by which the searching has to be done when receives user input in the selection box portion of the combo box control. The default value is `String.Empty`.
-`DisplayMemberPath` -  Specifies the property path, by which the searching has to be done when receives user input in the drop down portion of the combo box control. The default value is `String.Empty`.
+`TextMemberPath` - Specifies the property path, by which the searching must be done when user input is received in the selection box portion of the combo box control. The default value is `String.Empty`.
+`DisplayMemberPath` - Specifies the property path, by which the searching must be done when user input is received in the drop-down portion of the combo box control. The default value is `String.Empty`.
 
 ## Auto appending of text
 
@@ -41,16 +41,16 @@ N> Auto appending of text is supported only in `Editable` mode and `TextSearchMo
 
 ## Search Mode
 
-The `TextSearchMode` property of the SfComboBox can be used in order to regulate how the control behaves when it receives user input. The default text searching type is `StartsWith`, ignoring accent and it is case insensitive. The available text search modes are,
+The `TextSearchMode` property of the SfComboBox can be used to regulate how the control behaves when it receives user input. The default text searching type is `StartsWith`, ignoring accent and it is case insensitive. The available text search modes are,
 
 * StartsWith
 * Contains
 
 ### Search with beginning text
 
-Search the matching items based on the starting text and the first item which fits the user input in the drop down list will be highlighted.
+Search the matching items based on the starting text, and the first item in the drop-down list that matches the user input, will be highlighted.
 
-Below examples shows, text searching functionality in single selection mode.
+The following examples show how to text searching functionality in single selection mode.
 
 {% tabs %}
 {% highlight XAML %}
@@ -74,7 +74,7 @@ sfComboBox.TextSearchMode = ComboBoxTextSearchMode.StartsWith;
 
 ![WinUI ComboBox search the items based on provided input in single selection mode](Searching_images/winui-combobox-searching-start-text-single-selection-mode.gif)
 
-Below examples shows, text searching functionality in multiple selection mode.
+The following examples show how to text searching functionality in multiple selection mode.
 
 {% tabs %}
 {% highlight XAML %}
@@ -101,7 +101,7 @@ sfComboBox.TextSearchMode = ComboBoxTextSearchMode.StartsWith;
 
 ### Search with contains text
 
-Search the matching items containing specific text and the first item which fits the user input in the drop down list will be highlighted.
+Search the matching items containing specific text, and the first item in the drop-down list that matches the user input will be highlighted.
 
 {% tabs %}
 {% highlight xaml %}
@@ -125,7 +125,7 @@ sfComboBox.TextSearchMode = ComboBoxTextSearchMode.Contains;
 
 ![WinUI ComboBox search the items based on provided input in editable mode](Searching_images/winui-combobox-searching-contains-text-editable-mode.gif)
 
-## How to disable searching?
+## How to disable searching
 
 To disable searching and auto appending text functionalities, set the `IsTextSearchEnabled` property as `false`. The default value is true.
 
