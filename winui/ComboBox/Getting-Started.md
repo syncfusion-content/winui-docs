@@ -262,7 +262,7 @@ sfComboBox.IsEditable = true;
 
 ## Searching
 
-Based on the `TextSearchMode` property, the ComboBox control highlights the first item in the drop-down list that matches the user input. To disable searching functionality, set the `IsTextSearchEnabled` property as `false`. The default value is true.
+Based on the `TextSearchMode` property, the ComboBox control highlights the first item which fits the user input in the drop down list. To disable searching functionality, set the `IsTextSearchEnabled` property as `false`. The default value is true.
 
 ![WinUI ComboBox search the items based on provided input](GettingStarted_images/winui-combobox-text-searching.gif)
 
