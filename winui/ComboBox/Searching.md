@@ -48,7 +48,7 @@ The `TextSearchMode` property of the SfComboBox can be used to regulate how the 
 
 ### Search with beginning text
 
-Search the matching items based on the starting text, and the first item which fits the user input in the drop down list, will be highlighted.
+Search the matching items based on the starting text, and the first item which fits the user input in the drop-down list, will be highlighted.
 
 The following examples show how to text searching functionality in single selection mode.
 
@@ -101,7 +101,7 @@ sfComboBox.TextSearchMode = ComboBoxTextSearchMode.StartsWith;
 
 ### Search with contains text
 
-Search the matching items containing specific text, and the first item in the drop-down list that matches the user input will be highlighted.
+Search the matching items containing specific text, and the first item which fits the user input in the drop-down list, will be highlighted.
 
 {% tabs %}
 {% highlight xaml %}
