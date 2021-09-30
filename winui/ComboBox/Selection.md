@@ -105,6 +105,8 @@ private async  void OnSfComboBoxSelectionChanged(object sender, ComboBoxSelectio
 
 ![Updates selected item each time the user navigates to a new selection in ComboBox](Selection_images/winui-combobox-selection-change-trigger-always.gif)
 
+N> You can refer more information about `SelectionChanged` event from [this](https://help.syncfusion.com/winui/combobox/selection#selection-changed-event) link.
+
 ## Multiple selection
 
 The SfComboBox allows user to select multiple values from the drop-down list. The multi-select ComboBox mode can be enabled by setting the `SelectionMode` property as `Multiple`.
