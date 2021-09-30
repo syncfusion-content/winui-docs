@@ -32,6 +32,14 @@ Use to display the string data.
 </tr>
 <tr>
 <td>
+TreeGridNumericColumn
+</td>
+<td>
+Use to display the numeric data. 
+</td>
+</tr>
+<tr>
+<td>
 {{'[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html)'| markdownify }}
 </td>
 <td>
@@ -48,6 +56,14 @@ Use to display the Boolean type data
 </tr>
 <tr>
 <td>
+TreeGridDateColumn
+</td>
+<td>
+Use to display the date value
+</td>
+</tr>
+<tr>
+<td>
 {{'[TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html)'| markdownify }}
 </td>
 <td>
@@ -60,6 +76,14 @@ Use to display the URI data
 </td>
 <td>
 Use to display the custom template-specified content.
+</td>
+</tr>
+<tr>
+<td>
+TreeGridTimeColumn
+</td>
+<td>
+Use to display the <code>DateTimeOffSet</Code> type data as time value.
 </td>
 </tr>
 </table>
@@ -94,6 +118,22 @@ string, object, dynamic
 </td>
 <td>
 TreeGridTextColumn
+</td>
+</tr>
+<tr>
+<td>
+double, double?
+</td>
+<td>
+TreeGridNumericColumn
+</td>
+</tr>
+<tr>
+<td>
+DateTimeOffset, DateTimeOffset?
+</td>
+<td>
+TreeGridDateColumn
 </td>
 </tr>
 <tr>
