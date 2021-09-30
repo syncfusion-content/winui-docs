@@ -9,13 +9,14 @@ documentation: ug
 
 # Searching in WinUI ComboBox
 
-The ComboBox control provides rich text searching functionality. The `TextSearchMode` and `IsTextSearchEnabled` properties of the SfComboBox can be used to regulate how the control behaves when it receives user input.
+The ComboBox control provides rich text searching functionality. The [TextSearchMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_TextSearchMode) and [IsTextSearchEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsTextSearchEnabled) properties of the SfComboBox can be used to regulate how the control behaves when it receives user input.
 
 ## Search based on member path
 
-The `TextMemberPath` and `DisplayMemberPath` properties of ComboBox control specify the property path, by which the searching must be done when a custom data is bound to the `ItemsSource` property.
+The [TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_TextMemberPath) and [DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_DisplayMemberPath) properties of ComboBox control specify the property path, by which the searching must be done when a custom data is bound to the `ItemsSource` property.
 
 `TextMemberPath` - Specifies the property path, by which the searching must be done when user input is received in the selection box portion of the ComboBox control. The default value is `String.Empty`.
+
 `DisplayMemberPath` - Specifies the property path, by which the searching must be done when user input is received in the drop-down portion of the ComboBox control. The default value is `String.Empty`.
 
 ## Auto appending of text

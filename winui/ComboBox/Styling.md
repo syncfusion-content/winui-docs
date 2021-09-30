@@ -13,7 +13,7 @@ This section explains different UI customization available in SfComboBox.
 
 ## Header for ComboBox
 
-The ComboBox control header can be changed by using the `Header` or `HeaderTemplate` properties. The default value of `HeaderTemplate` is `null` and `Header` is `null`.
+The ComboBox control header can be changed by using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_Header) or [HeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_HeaderTemplate) properties. The default value of `HeaderTemplate` is `null` and `Header` is `null`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -44,7 +44,7 @@ The ComboBox control header can be changed by using the `Header` or `HeaderTempl
 
 ## Description for ComboBox
 
-The ComboBox control description can be changed by using the `Description` property. The default value of `Description` is `null`.
+The ComboBox control description can be changed by using the [Description](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_Description) property. The default value of `Description` is `null`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -76,7 +76,7 @@ The ComboBox control description can be changed by using the `Description` prope
 
 ## Placeholder text
 
-You can prompt the user with any information by using the `PlaceholderText` property. This text will be displayed only when no item is selected or edit text is empty. The default value of `PlaceholderText` property is **string.Empty** (No string will be displayed).
+You can prompt the user with any information by using the [PlaceholderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_PlaceholderText) property. This text will be displayed only when no item is selected or edit text is empty. The default value of `PlaceholderText` property is **string.Empty** (No string will be displayed).
 
 {% tabs %}
 {% highlight xaml %}
@@ -101,7 +101,7 @@ sfComboBox.PlaceholderText = "Select a social media";
 
 ### Change foreground of placeholder text
 
-The placeholder texts’ foreground can be changed by using the `PlaceholderForeground` property. The default value of `PlaceholderForeground` property is **null**.
+The placeholder texts’ foreground can be changed by using the [PlaceholderForeground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_PlaceholderForeground) property. The default value of `PlaceholderForeground` property is **null**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -127,7 +127,7 @@ sfComboBox.PlaceholderForeground = new SolidColorBrush(Colors.Red);
 
 ## Customize the edit mode TextBox
 
-The appearance of the edit mode textbox in `ComboBox` control can be customized by using the `TextBoxStyle` property. The default value of `TextBoxStyle` is `null`.
+The appearance of the edit mode textbox in `ComboBox` control can be customized by using the [TextBoxStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_TextBoxStyle) property. The default value of `TextBoxStyle` is `null`.
 
 N> `TextBoxStyle` will only have an effect in single selection editable mode.
 
@@ -160,7 +160,7 @@ N> `TextBoxStyle` will only have an effect in single selection editable mode.
 
 ## Styling ComboBoxItem
 
-The ComboBox control allows you to customize the style of `ComboBoxItem`, generated in drop-down by using the `ItemContainerStyle` property. The default value of `ItemContainerStyle` is `null`. 
+The ComboBox control allows you to customize the style of `ComboBoxItem`, generated in drop-down by using the [ItemContainerStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_ItemContainerStyle) property. The default value of `ItemContainerStyle` is `null`. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -189,7 +189,7 @@ The ComboBox control allows you to customize the style of `ComboBoxItem`, genera
 
 ### Style ComboBoxItem based on condition   
 
-The ComboBox control allows you to customize the style of `ComboBoxItem` conditionally based on its content by using the `ItemContainerStyleSelector` property. The default value of `ItemContainerStyleSelector` is `null`. 
+The ComboBox control allows you to customize the style of `ComboBoxItem` conditionally based on its content by using the [ItemContainerStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_ItemContainerStyleSelector) property. The default value of `ItemContainerStyleSelector` is `null`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -254,7 +254,7 @@ public class SocialMediaStyleSelector : StyleSelector
 
 ## Customize ComboBoxItem 
 
-The `ItemTemplate` property helps you to decorate drop-down items using the custom templates. The default value of `ItemTemplate` is `null`. The following example shows how to add image or custom control in drop-down items using templates.
+The [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_ItemTemplate) property helps you to decorate drop-down items using the custom templates. The default value of `ItemTemplate` is `null`. The following example shows how to add image or custom control in drop-down items using templates.
 
 {% tabs %}
 {% highlight C# %}
@@ -365,7 +365,7 @@ public class EmployeeViewModel
 
 ### Customize ComboBoxItem based on condition
 
-The `ItemTemplateSelector` property helps you to decorate drop-down items conditionally based on its content using the custom templates. The default value of `ItemTemplateSelector` is `null`.
+The [ItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_ItemTemplateSelector) property helps you to decorate drop-down items conditionally based on its content using the custom templates. The default value of `ItemTemplateSelector` is `null`.
 
 {% tabs %}
 {% highlight C# %}
@@ -528,7 +528,7 @@ public class EmployeeTemplateSelector : DataTemplateSelector
 
 ## How to change DropDown MaxHeight
 
-The maximum height of the drop-down can be changed by using the `MaxDropDownHeight` property of ComboBox control. The default value of `MaxDropDownHeight` property is **288**. 
+The maximum height of the drop-down can be changed by using the [MaxDropDownHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_MaxDropDownHeight) property of ComboBox control. The default value of `MaxDropDownHeight` property is **288**. 
 
  N> If the `MaxDropDownHeight` is too small compared to the populated items, scroll viewer will be automatically shown to navigate the hidden items.
 

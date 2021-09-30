@@ -12,7 +12,7 @@ The ComboBox has built-in support to filter data items depending on the text ent
 
 ## Enable filtering
 
-To enable filtering functionality in ComboBox control, set the `IsFilteringEnabled` and `IsEditable` properties as true. The default value is false. The drop-down will open automatically as soon as you start typing characters in the ComboBox control.
+To enable filtering functionality in ComboBox control, set the [IsFilteringEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsFilteringEnabled) and [IsEditable](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsEditable) properties as true. The default value is false. The drop-down will open automatically as soon as you start typing characters in the ComboBox control.
 
 {% tabs %}
 {% highlight XAML %}
@@ -39,7 +39,7 @@ N> Filtering will be supported only for editable mode.
 
 ## Filter mode
 
-The string comparison for filtering suggestions can be changed using the `TextSearchMode` property. The default filtering type is `StartsWith`, ignoring accent and it is case insensitive. The available filtering modes are,
+The string comparison for filtering suggestions can be changed using the [TextSearchMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_TextSearchMode) property. The default filtering type is `StartsWith`, ignoring accent and it is case insensitive. The available filtering modes are,
 
 * StartsWith
 * Contains
@@ -72,7 +72,7 @@ sfComboBox.TextSearchMode = ComboBoxTextSearchMode.StartsWith;
 
 ![WinUI ComboBox filter the items based on starting text](Filtering_images/winui-combobox-filtering-start-text.gif)
 
-N> To disable the auto appending and highlighting feature, set `IsTextSearchEnabled` property as false.
+N> To disable the auto appending and highlighting feature, set [IsTextSearchEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsTextSearchEnabled) property as false.
 
 ### Filter with contains text
 

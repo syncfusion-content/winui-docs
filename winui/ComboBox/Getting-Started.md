@@ -19,7 +19,7 @@ This section explains the steps required to add the ComboBox control and binding
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
 
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
-4. Initialize the `SfComboBox` control.
+4. Initialize the [SfComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html) control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -65,7 +65,7 @@ namespace GettingStarted
 
 ## Populating items using SfComboBoxItem
 
-You can add the items inside the `ComboBox` control using the `SfComboBoxItem`.
+You can add the items inside the `ComboBox` control using the [SfComboBoxItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBoxItem.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -106,7 +106,7 @@ this.Content = sfComboBox;
 
 ## Populating items using data binding
 
-The ComboBox can be bound to an external data source using the `ItemsSource` property. Now, let us create Model and ViewModel classes to populate ComboBox with SocialMedia details.
+The ComboBox can be bound to an external data source using the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_ItemsSource) property. Now, let us create Model and ViewModel classes to populate ComboBox with SocialMedia details.
 
 **Step 1:** Define a simple model class SocialMedia with fields ID and name, and then populate social media data in the ViewModel.
 
@@ -191,8 +191,9 @@ N> Set the SocialMediaViewModel instance as the DataContext of your control; thi
 
 The ComboBox control is populated with the list of social medias. But the SocialMedia model contains two properties, ID and Name, so it is necessary to intimate by which property it should display value in the selection box portion of the ComboBox control, when an item is selected.
 
-`TextMemberPath` - This property path is used to get the value for displaying in the selection box portion of the ComboBox control when an item is selected. The default value is `String.Empty`.
-`DisplayMemberPath` - This property path is used to the name or path of the property displayed for each data item in the drop-down list. The default value is `String.Empty`.
+[TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_TextMemberPath) - This property path is used to get the value for displaying in the selection box portion of the ComboBox control when an item is selected. The default value is `String.Empty`.
+
+[DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_DisplayMemberPath) - This property path is used to the name or path of the property displayed for each data item in the drop-down list. The default value is `String.Empty`.
 
 {% tabs %}
 {% highlight C# %}
@@ -207,9 +208,9 @@ sfComboBox.TextMemberPath = "Name";
 
 ## Multi selection
 
-The ComboBox allows user to select multiple values from the drop-down list. The multi-select ComboBox mode can be enabled by setting the `SelectionMode` property as `Multiple`. Checkboxes can be used to represent selected items.
+The ComboBox allows user to select multiple values from the drop-down list. The multi-select ComboBox mode can be enabled by setting the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectionMode) property as `Multiple`. Checkboxes can be used to represent selected items.
 
-The selection operations can be handled using the `SelectionChanged` event of SfComboBox.
+The selection operations can be handled using the [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectionChanged) event of SfComboBox.
 
 {% tabs %}
 {% highlight XAML %}
@@ -234,7 +235,7 @@ sfComboBox.SelectionMode = ComboBoxSelectionMode.Multiple;
 
 ## Editing
 
-The ComboBox control supports editable and non-editable modes to choose items. To enable editing functionality, set the `IsEditable` property as `true`. The default value is false.
+The ComboBox control supports editable and non-editable modes to choose items. To enable editing functionality, set the [IsEditable](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsEditable) property as `true`. The default value is false.
 
 {% tabs %}
 {% highlight XAML %}
@@ -260,13 +261,13 @@ sfComboBox.IsEditable = true;
 
 ## Searching
 
-Based on the `TextSearchMode` property, the ComboBox control highlights the first item which fits the user input in the drop down list. To disable searching functionality, set the `IsTextSearchEnabled` property as `false`. The default value is true.
+Based on the [TextSearchMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_TextSearchMode) property, the ComboBox control highlights the first item which fits the user input in the drop down list. To disable searching functionality, set the [IsTextSearchEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsTextSearchEnabled) property as `false`. The default value is true.
 
 ![WinUI ComboBox search the items based on provided input](GettingStarted_images/winui-combobox-text-searching.gif)
 
 ## Filtering
 
-The ComboBox control provides support to filter the items in the drop-down based on the starting letter or whether they contain a specific letter. To enable filtering functionality, set the `IsFilteringEnabled` property as true. The default value is false.
+The ComboBox control provides support to filter the items in the drop-down based on the starting letter or whether they contain a specific letter. To enable filtering functionality, set the [IsFilteringEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsFilteringEnabled) property as true. The default value is false.
 
 {% tabs %}
 {% highlight XAML %}
@@ -295,7 +296,7 @@ N> Filtering will be supported only for editable mode.
 
 ## SelectionBox UI
 
-The selection box appearance of SfComboBox can be changed by using the `SelectionBoxItemTemplate` property of SfComboBox. The default value of `SelectionBoxItemTemplate` is `null`.
+The selection box appearance of SfComboBox can be changed by using the [SelectionBoxItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_SelectionBoxItemTemplate) property of SfComboBox. The default value of `SelectionBoxItemTemplate` is `null`.
 
 N> `SelectionBoxItemTemplate` has no effect when `IsEditable` is `true`.
 

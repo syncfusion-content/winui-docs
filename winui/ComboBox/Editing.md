@@ -9,7 +9,7 @@ documentation: ug
 
 # Editing in WinUI ComboBox
 
-The ComboBox control supports both editable and non-editable text boxes for selecting an item from a data source. To enable editing functionality, set `IsEditable` property as `true`. The default value is false.
+The ComboBox control supports both editable and non-editable text boxes for selecting an item from a data source. To enable editing functionality, set [IsEditable](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsEditable) property as `true`. The default value is false.
 
 ## Editable ComboBox
 
@@ -65,7 +65,7 @@ sfComboBox.IsEditable = false;
 
 ## Hide clear button in the editor
 
-By default, the clear button `X` will be displayed in the editor of the `ComboBox` control, which can be used to clear the entered input. Hide the clear button in `ComboBox` control using the `ShowClearButton` property. The default value of `ShowClearButton` property value is **true**.
+By default, the clear button `X` will be displayed in the editor of the `ComboBox` control, which can be used to clear the entered input. Hide the clear button in `ComboBox` control using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_ShowClearButton) property. The default value of `ShowClearButton` property value is **true**.
 
 {% tabs %}
 {% highlight XAML %}
@@ -94,7 +94,7 @@ N> The `ShowClearButton` property has no effect in non-editable mode.
 
 ## Open a drop-down programmatically
 
-In SfComboBox control, the drop-down can be opened or closed programmatically by using the `IsDropDownOpen` property. The default value of `IsDropDownOpen` property is false. The following example shows how to open the drop-down when pressing alphabet keys in SfComboBox control.
+In SfComboBox control, the drop-down can be opened or closed programmatically by using the [IsDropDownOpen](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_IsDropDownOpen) property. The default value of `IsDropDownOpen` property is false. The following example shows how to open the drop-down when pressing alphabet keys in SfComboBox control.
 
 {% tabs %}
 {% highlight XAML %}
@@ -128,7 +128,7 @@ private void OnEditingComboBoxPreviewKeyDown(object sender, KeyRoutedEventArgs e
 
 ## Handle invalid input 
 
-The `TextSubmitted` event is triggered, when some text is submitted that does not correspond to an item in the ComboBox drop-down list. By using the following code sample, a dialogue box will be displayed when submitting input that does not contain in drop-down list.
+The [TextSubmitted](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_TextSubmitted) event is triggered, when some text is submitted that does not correspond to an item in the ComboBox drop-down list. By using the following code sample, a dialogue box will be displayed when submitting input that does not contain in drop-down list.
 
 {% tabs %}
 {% highlight XAML %}
