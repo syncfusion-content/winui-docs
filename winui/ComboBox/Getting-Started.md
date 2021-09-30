@@ -180,8 +180,6 @@ Now, populate this SocialMediaViewModel data in SfComboBox control by binding to
 
 {% highlight C# %}
 
-SfComboBox sfComboBox = new SfComboBox();
-sfComboBox.DataContext = new SocialMediaViewModel();
 sfComboBox.ItemsSource = (sfComboBox.DataContext as SocialMediaViewModel).SocialMedias;
 
 {% endhighlight %}

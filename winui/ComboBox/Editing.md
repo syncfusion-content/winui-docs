@@ -117,7 +117,7 @@ private void OnEditingComboBoxPreviewKeyDown(object sender, KeyRoutedEventArgs e
     // Opening drop down when pressing alphabet keys.
     if (!sfComboBox.IsDropDownOpen && (int)eventArgs.Key >= 65 && (int)eventArgs.Key <= 90)
     {
-        this.sfComboBox.IsDropDownOpen = true;
+        sfComboBox.IsDropDownOpen = true;
     }
 }
 
@@ -163,7 +163,7 @@ private async void OnEditingComboBoxTextSubmitted(object sender, Syncfusion.UI.X
 {
     var cd = new ContentDialog
     {
-        Content = "Enter a game from the list.",
+        Content = "Enter a social media from the list.",
         CloseButtonText = "Close"
     };
 

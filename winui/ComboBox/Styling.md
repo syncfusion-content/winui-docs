@@ -26,9 +26,6 @@ The ComboBox control header can be changed by using the `Header` or `HeaderTempl
     TextMemberPath="Name"
     SelectedIndex="2"
     x:Name="sfComboBox">
-    <editors:SfComboBox.DataContext>
-        <local:SocialMediaViewModel/>
-    </editors:SfComboBox.DataContext>
     <editors:SfComboBox.HeaderTemplate>
         <DataTemplate>
             <TextBlock
@@ -61,9 +58,6 @@ The ComboBox control description can be changed by using the `Description` prope
     SelectedIndex="2"
     Description="Instagram is an online photo sharing service."
     x:Name="sfComboBox">
-    <editors:SfComboBox.DataContext>
-        <local:SocialMediaViewModel/>
-    </editors:SfComboBox.DataContext>
     <editors:SfComboBox.HeaderTemplate>
         <DataTemplate>
             <TextBlock
@@ -425,6 +419,26 @@ public class EmployeeViewModel
     }
 }
 
+public class EmployeeTemplateSelector : DataTemplateSelector
+{
+    public DataTemplate EmployeeTemplate1 { get; set; }
+    public DataTemplate EmployeeTemplate2 { get; set; }
+    
+    protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
+    {
+        var employeeName = (item as Employee).Name;
+        if (employeeName.ToString() == "Anne Dodsworth" || employeeName.ToString() == "Emilia Alvaro" ||
+            employeeName.ToString() == "Laura Callahan")
+        {
+            return EmployeeTemplate1;
+        }
+        else
+        {
+            return EmployeeTemplate2;
+        }
+    }
+}
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -492,6 +506,7 @@ public class EmployeeViewModel
             EmployeeTemplate1="{StaticResource employeeTemplate1}"
             EmployeeTemplate2="{StaticResource employeeTemplate2}"/>
     </Grid.Resources>
+    
     <editors:SfComboBox 
         Width="250" 
         TextMemberPath="Name"
