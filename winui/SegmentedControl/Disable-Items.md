@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Disable Items with WinUI Segmented Control | Syncfusion
-description: Learn here all about disable items with Syncfusion WinUI Segmented Control(SfSegmentedControl), its elements, and more.
+title: Disable Items using WinUI Segmented Control | Syncfusion
+description: Learn here all about disabling items with Syncfusion WinUI Segmented Control (SfSegmentedControl), its elements, and more.
 platform: WinUI
 control: Segmented Control
 documentation: ug
@@ -13,10 +13,10 @@ The WinUI Segmented control provides options to disable the segmented item.
 
 ## Disable items
 
-The Segmented control allows you to disable the items using the `SetItemEnabled` Method. The method has following two parameters:
+The Segmented control allows you to disable the items using the [SetItemEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SetItemEnabled_System_Int32_System_Boolean_) Method. The method has following two parameters:
 
 * `index` - The integer value indicating the index of the item.
-* `isEnabled` - The boolean value indicating whether the item should be enabled or not
+* `isEnabled` - The boolean value indicating whether the item should be enabled or not.
 
 {% tabs %}
 {% highlight xaml %}
