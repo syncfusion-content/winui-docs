@@ -38,10 +38,10 @@ Use to display the string data.
 </tr>
 <tr>
 <td>
-TreeGridNumericColumn
+{{'[TreeGridNumericColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#"")'| markdownify }}
 </td>
 <td>
-TreeGridCellNumericRenderer
+{{'[TreeGridCellNumericRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellNumericRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the numeric data. 
@@ -71,10 +71,10 @@ Use to display the boolean type data.
 </tr>
 <tr>
 <td>
-TreeGridDateColumn
+{{'[TreeGridDateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#"")'| markdownify }}
 </td>
 <td>
-TreeGridCellDateRenderer
+{{'[TreeGridCellDateRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellDateRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the date value.
@@ -686,7 +686,7 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", 
 
 ## TreeGridNumericColumn
 
-`TreeGridNumericColumn` is derived from `TreeGridTextColumnBase` and hosts [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) in edit mode.
+[TreeGridNumericColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html) is derived from `TreeGridTextColumnBase` and hosts [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) in edit mode.
 
 {% tabs %}
 {% highlight xaml %}
@@ -716,7 +716,7 @@ this.treeGrid.Columns.Add(new TreeGridNumericColumn()
 
 ### Change the format of numeric value
 
-You can format the value of a `TreeGridNumericColumn` using the `DisplayNumberFormat` or `NumberFormatter` property. The default value of `DisplayNumberFormat` and `NumberFormatter` properties are **null**.
+You can format the value of a `TreeGridNumericColumn` using the [DisplayNumberFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_DisplayNumberFormat) or [NumberFormatter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_NumberFormatter) property. The default value of `DisplayNumberFormat` and `NumberFormatter` properties are **null**.
 
 The following example shows how to set `CurrencyFormatter` for `NumberFormatter` property. 
 
@@ -763,7 +763,7 @@ numericColumn.DisplayNumberFormat = "C2";
 
 ### Null value support
 
-`TreeGridNumericColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. Instead of displaying null values, you can display hint text using the `PlaceholderText` property.
+`TreeGridNumericColumn` provides support to restrict or allow null value in columns based on [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_AllowNull) property. Instead of displaying null values, you can display hint text using the [PlaceholderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_PlaceholderText) property.
 
 The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 
@@ -789,7 +789,7 @@ The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 
 ### Restrict value within range
 
-You can restrict the users to enter input within a minimum and maximum range in `TreeGridNumericColumn` using the `MinValue` and `MaxValue` properties. The default value of the `MinValue` property is **double.MinValue** and `MaxValue` property is **double.MaxValue**.
+You can restrict the users to enter input within a minimum and maximum range in `TreeGridNumericColumn` using the [MinValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_MinValue) and [MaxValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_MaxValue) properties. The default value of the `MinValue` property is **double.MinValue** and `MaxValue` property is **double.MaxValue**.
 
 {% tabs %}
 {% highlight XAML %}
@@ -807,7 +807,7 @@ You can restrict the users to enter input within a minimum and maximum range in 
 
 ### UpDown button placement
 
-You can increase or decrease the value of the `TreeGridNumericColumn` using the up-down button. By default, the value of `UpDownPlacementMode` property is **Hidden**. You can change the up-down button position by assigning the value `UpDownPlacementMode` property as **Inline** or **Compact**.
+You can increase or decrease the value of the `TreeGridNumericColumn` using the up-down button. By default, the value of [UpDownPlacementMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_UpDownPlacementMode) property is **Hidden**. You can change the up-down button position by assigning the value `UpDownPlacementMode` property as **Inline** or **Compact**.
 
 {% tabs %}
 {% highlight XAML %}
@@ -825,7 +825,7 @@ You can increase or decrease the value of the `TreeGridNumericColumn` using the 
 
 ## TreeGridDateColumn
 
-`TreeGridDateColumn` is derived from `TreeGridTextColumnBase` and displays columns data as date. It hosts [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) element in editing mode.
+[TreeGridDateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html) is derived from `TreeGridTextColumnBase` and displays columns data as date. It hosts [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) element in editing mode.
 
 {% tabs %}
 {% highlight xaml %}
@@ -852,7 +852,7 @@ this.treeGrid.Columns.Add(new TreeGridDateColumn() { HeaderText = "Date", Mappin
 
 ### Change the format of date value
 
-By using the `DisplayDateFormat` property, you can edit and display the selected date in various formats such as date, month and year formats. The default value of `DisplayDateFormat` property is **d**. For example, in the below image, the DateColumn has a `DisplayDateFormat` set to **M**.
+By using the [DisplayDateFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_DisplayDateFormat) property, you can edit and display the selected date in various formats such as date, month and year formats. The default value of `DisplayDateFormat` property is **d**. For example, in the below image, the DateColumn has a `DisplayDateFormat` set to **M**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -879,7 +879,7 @@ this.treeGrid.Columns.Add(new TreeGridDateColumn() { HeaderText = "Date", Mappin
 
 ### Null value support
 
-`TreeGridDateColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. Instead of displaying null values, you can display hint text using the `PlaceholderText` property.
+`TreeGridDateColumn` provides support to restrict or allow null value in columns based on [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_AllowNull) property. Instead of displaying null values, you can display hint text using the [PlaceholderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_PlaceholderText) property.
 
 The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 
@@ -906,7 +906,7 @@ The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 
 ### Setting date value range
 
-You can restrict and display the input value within the range using the `MinDate` and `MaxDate` properties.
+You can restrict and display the input value within the range using the [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MinDate) and [MaxDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MaxDate) properties.
 
 ## TreeGridCheckBoxColumn
 
@@ -1494,10 +1494,10 @@ CheckBox
 </tr>
 <tr>
 <td>
-TreeGridDateColumn
+{{'[TreeGridDateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#"")'| markdownify }}
 </td>
 <td>
-TreeGridCellDateRenderer
+{{'[TreeGridCellDateRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellDateRenderer.html#"")'| markdownify }}
 </td>
 <td>
 DateTimeOffset
@@ -1505,10 +1505,10 @@ DateTimeOffset
 </tr>
 <tr>
 <td>
-TreeGridNumericColumn
+{{'[TreeGridNumericColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#"")'| markdownify }}
 </td>
 <td>
-TreeGridCellNumericRenderer
+{{'[TreeGridCellNumericRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellNumericRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Numeric

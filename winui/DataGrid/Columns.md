@@ -32,7 +32,7 @@ Use to display the string data.
 </tr>
 <tr>
 <td>
-GridNumericColumn
+{{'[GridNumericColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the numeric data. 

@@ -39,10 +39,10 @@ Use to display the string data.
 </tr>
 <tr>
 <td>
-GridNumericColumn
+{{'[GridNumericColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html)'| markdownify }}
 </td>
 <td>
-GridCellNumericRenderer
+{{'[GridCellNumericRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Renderers.GridCellNumericRenderer.html)'| markdownify }}
 </td>
 <td>
 Use to display the numeric data.
@@ -708,7 +708,7 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Ship City", Mappi
 
 ## GridNumericColumn
 
-`GridNumericColumn` is derived from `GridTextColumnBase` and hosts the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) in edit mode.
+[GridNumericColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html) is derived from `GridTextColumnBase` and hosts the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) in edit mode.
 
 {% tabs %}
 {% highlight xaml %}
@@ -738,7 +738,7 @@ this.dataGrid.Columns.Add(new GridNumericColumn()
 
 ### Change the format of numeric value
 
-You can format the value of a `GridNumericColumn` using the `DisplayNumberFormat` or `NumberFormatter` property. The default value of `DisplayNumberFormat` and `NumberFormatter` properties are **null**.
+You can format the value of a [GridNumericColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html) using the [DisplayNumberFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_DisplayNumberFormat) or [NumberFormatter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_NumberFormatter) property. The default value of `DisplayNumberFormat` and `NumberFormatter` properties are **null**.
 
 The following example shows how to set `PercentFormatter` for `NumberFormatter` property. 
 
@@ -784,7 +784,7 @@ numericColumn.DisplayNumberFormat = "P2";
 
 ### Null value support
 
-`GridNumericColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. Instead of displaying null values, you can display hint text using the `PlaceholderText` property.
+`GridNumericColumn` provides support to restrict or allow null value in columns based on [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_AllowNull) property. Instead of displaying null values, you can display hint text using the [PlaceholderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_PlaceholderText) property.
 
 The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 
@@ -810,7 +810,7 @@ The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 
 ### Restrict value within range
 
-You can restrict the users to enter input within a minimum and maximum range in `GridNumericColumn` using the `MinValue` and `MaxValue` properties. The default value of the `MinValue` property is **double.MinValue** and `MaxValue` property is **double.MaxValue**.
+You can restrict the users to enter input within a minimum and maximum range in `GridNumericColumn` using the [MinValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_MinValue) and [MaxValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_MaxValue) properties. The default value of the `MinValue` property is **double.MinValue** and `MaxValue` property is **double.MaxValue**.
 
 {% tabs %}
 {% highlight XAML %}
@@ -827,7 +827,7 @@ You can restrict the users to enter input within a minimum and maximum range in 
 
 ### UpDown button placement
 
-You can increase or decrease the value of the `GridNumericColumn` using the up-down button. By default, the value of `UpDownPlacementMode` property is **Hidden**. You can change the up-down button position by assigning the value `UpDownPlacementMode` property as **Inline** or **Compact**.
+You can increase or decrease the value of the `GridNumericColumn` using the up-down button. By default, the value of [UpDownPlacementMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_UpDownPlacementMode) property is **Hidden**. You can change the up-down button position by assigning the value `UpDownPlacementMode` property as **Inline** or **Compact**.
 
 {% tabs %}
 {% highlight XAML %}
@@ -1956,7 +1956,7 @@ TextBox
 GridNumericColumn
 </td>
 <td>
-GridCellNumericRenderer
+{{'[GridCellNumericRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Renderers.GridCellNumericRenderer.html)'| markdownify }}
 </td>
 <td>
 Numeric
