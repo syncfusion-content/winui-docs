@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection with WinUI Segmented Control | Syncfusion
-description: Learn here all about custom templates with Syncfusion WinUI Segmented Control(SfSegmentedControl), its elements, and more.
+description: Learn here all about custom templates with Syncfusion WinUI Segmented Control (SfSegmentedControl), its elements, and more.
 platform: WinUI
 control: Segmented Control
 documentation: ug
@@ -13,9 +13,9 @@ This section explains how to customize the SfSegmentedItem and its related opera
 
 ## Ellipse style
 
-By changing corner radius of the segmented item using `ItemContainerStyle` property and changing `CornerRadius` property in `SelectedSegmentStyle` style property, users can achieve the ellipse style.
+Users can achieve the ellipse style, by changing corner radius of the segmented item using the `ItemContainerStyle` property and changing `CornerRadius` property in the `SelectedSegmentStyle` style property.
 
-This example illustrates how to customize the ellipse style 
+The following code example illustrates how to customize the ellipse style.
 
 {% tabs %}
 {% highlight xaml %}
@@ -92,9 +92,9 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winu
 
 ## Circle style
 
-By changing corner radius and margin of the segmented item using `ItemContainerStyle` property and also changing similar properties in `SelectedSegmentStyle` style property, users can achieve the circle style.
+Users can achieve the circle style, by changing corner radius and margin of the segmented item using the `ItemContainerStyle` property and changing similar properties in the `SelectedSegmentStyle`.
 
-This example illustrates how to customize the circle style
+The following code example illustrates how to customize the circle style.
 
 {% tabs %}
 {% highlight xaml %}
@@ -160,9 +160,9 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winu
 
 ## Image with text style
 
-By adding the image and content to the `ItemTemplate`, users can create an image with text style.
+Users can create an image with text style, by adding the image and content to the `ItemTemplate`.
 
-This example illustrates how to customize the image with text style.
+The following code example illustrates how to customize the image with text style.
 
 {% tabs %}
 {% highlight xaml %}
@@ -219,9 +219,9 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winu
 
 ## Top indicator style
 
-By using the `ItemBorderThickness` property and handling `BorderThickness` in `SelectedSegmentStyle` property helps users to achieve the top indicator style.
+By using the `ItemBorderThickness` property and handling `BorderThickness` in the `SelectedSegmentStyle` property helps users to achieve the top indicator style.
 
-This example illustrates how to customize the top indicator style.
+The following code example illustrates how to customize the top indicator style.
 
 {% tabs %}
 {% highlight xaml %}
@@ -320,11 +320,11 @@ This example illustrates how to customize the top indicator style.
 {% endhighlight %}
 {% endtabs %} 
 
-**Light Theme:**
+**Light Theme**
 
 ![WinUI Segmented Control with light theme topindicator](Custom_Templates_Images/winui-segmented-control-light-theme-topindicator.png)
 
-**Dark Theme:**
+**Dark Theme**
 
 ![WinUI Segmented Control with dark theme topindicator](Custom_Templates_Images/winui-segmented-control-dark-theme-topindicator.png)
 

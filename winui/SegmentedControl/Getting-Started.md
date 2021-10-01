@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WinUI Segmented Control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Segmented Control(SfSegmentedControl), its elements, and more.
+description: Learn here all about getting started with Syncfusion WinUI Segmented Control (SfSegmentedControl), its elements, and more.
 platform: WinUI
 control: Segmented Control
 documentation: ug
@@ -9,15 +9,15 @@ documentation: ug
 
 # Getting Started with WinUI Segmented Control
 
-This section provides an overview for working with the [WinUI Segmented Control](https://www.syncfusion.com/winui-controls/segmented-control). Walk through the entire process of creating a real world application with this control.
+This section provides an overview of how to use the [WinUI Segmented Control](https://www.syncfusion.com/winui-controls/segmented-control). Walk through the entire process of creating a real-world application with this control.
 
-## Creating an application with WinUI Segmented Control
+## Creating an application using WinUI Segmented Control
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 
 2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
 
-3. Import the control namespace `using Syncfusion.UI.Xaml.Editors` in XAML or C# code.
+3. Import the control namespace using `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 
 4. Initialize the `SfSegmentedControl`.
 
@@ -58,9 +58,9 @@ public sealed partial class MainWindow : Window
 {% endhighlight %}
 {% endtabs %} 
 
-## Populating items through string collection
+## Populating items using string collection
 
-The Segmented control allows you to set the collection of strings as a data source using `ItemsSource` property.
+The Segmented control allows you to set the collection of strings as a data source using the `ItemsSource` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -115,7 +115,7 @@ Populating items to the Segmented Control by setting the collection of business 
 
 ### ItemTemplate
 
-By defining the `ItemTemplate` of the segmented control, a custom user interface(UI) can be achieved to display each `SfSegmentedItem`.
+By defining the `ItemTemplate` of the segmented control, a custom user interface (UI) can be achieved to display each `SfSegmentedItem`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -194,7 +194,7 @@ public class SegmentedModel : INotifyPropertyChanged
 
 ### DisplayMemberPath
 
-The `DisplayMemberPath` property denotes the path to a value on the source object (SfSegmentedControl.ItemsSource) to serve as the visual representation of object. The below code snippet will be used to bind the datasource to the Segmented control.
+The `DisplayMemberPath` property denotes the path to a value on the source object (SfSegmentedControl.ItemsSource) that will be used as the visual representation of object. The following code sample will be used to bind the datasource to the Segmented control.
 
 {% tabs %}
 {% highlight xaml %}

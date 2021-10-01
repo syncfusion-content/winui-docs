@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection with WinUI Segmented Control | Syncfusion
-description: Learn here all about selection support in Syncfusion WinUI Segmented Control(SfSegmentedControl), its elements, and more.
+title: Selection using WinUI Segmented Control | Syncfusion
+description: Learn here all about selection support in Syncfusion WinUI Segmented Control (SfSegmentedControl), its elements, and more.
 platform: WinUI
 control: Segmented Control
 documentation: ug
@@ -9,15 +9,15 @@ documentation: ug
 
 # Selection in WinUI Segmented Control
 
-This section explains about properties which helps in items selection, customize the selected item, and its related operations in the Segmented control.
+This section explains about features that aid in the selection of items, customization of the selected item, and its related operations in the Segmented control.
 
 ## Selected index
 
-The Segmented control allows you to select the segment item based on datasource index using `SelectedIndex` property.
+The Segmented control allows you to select the segment item based on data source index using the `SelectedIndex` property.
 
 ## Selected item customization
 
-The Segmented control allows you to customize the appearance of selected item using the `SelectedSegmentStyle` property. We need to provide style of target type as [Border](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.border).
+The Segmented control allows you to customize the appearance of selected item using the `SelectedSegmentStyle` property. You need to provide the target types' style as [Border](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.border).
 
 {% tabs %}
 {% highlight xaml %}
@@ -62,15 +62,15 @@ The Segmented control allows you to customize the appearance of selected item us
 {% endhighlight %}
 {% endtabs %} 
 
-N> Users can't change the selected item foreground using SelectedSegmentStyle.
+N> Users cannot change the selected item foreground using SelectedSegmentStyle.
 
 ![WinUI Segmented Control with selecteditem customization](Selection_Images/winui-segmented-control-selected-item-customization.png)
 
 ## Animation
 
-The Segmented control supports slide animation for selecting the item. Also users can enable or disable the selection animation using `SelectionAnimationType` property. The default value is `Slide`. This property has following two values:
+The Segmented control supports slide animation for selecting the item. Also, users can enable or disable the selection animation using the `SelectionAnimationType` property. The default value is `Slide`. This property has following two values:
 
-* `Slide` - The slide animation effect applied while selecting the item. 
+* `Slide` - The slide animation effect is applied while selecting the item. 
 * `None` - Disables animation while selecting the item.
 
 {% tabs %}
@@ -128,7 +128,7 @@ Description
 <kbd>LeftArrow</kbd>
 </td>
 <td>
-Moves to the previous item on the segmented control's left side. It doesn't make any selection and only navigates to the previous item. If the focus border is on the first item, pressing <kbd>LeftArrow</kbd> does nothing.
+Moves to the previous item on the segmented control's left side. It does not make any selection and only navigates to the previous item. If the focus border is on the first item, pressing <kbd>LeftArrow</kbd> does nothing.
 </td>
 </tr>
 <tr>
@@ -136,7 +136,7 @@ Moves to the previous item on the segmented control's left side. It doesn't make
 <kbd>RightArrow</kbd>
 </td>
 <td>
-Moves to the next item on the segmented control's right side. It doesn't make any selection and only navigates to the next item. If the focus border is on the last item, pressing <kbd>RightArrow</kbd> does nothing.
+Moves to the next item on the segmented control's right side. It does not make any selection and only navigates to the next item. If the focus border is on the last item, pressing <kbd>RightArrow</kbd> does nothing.
 </td>
 </tr>
 <tr>
@@ -144,7 +144,7 @@ Moves to the next item on the segmented control's right side. It doesn't make an
 <kbd>Tab</kbd>
 </td>
 <td>
-The focus border appears on the selected item when users press the <kbd>Tab</kbd> key. The focus border appears on the first item if there is no selected item. It will leave the control after pressing the <kbd>Tab</kbd> key with focus. 
+The focus border appears on the selected item when users press the <kbd>Tab</kbd> key. The focus border appears on the first item, if there is no selected item. It will leave the control after pressing the <kbd>Tab</kbd> key with focus. 
 </td>
 </tr>
 <tr>
@@ -161,10 +161,10 @@ Pressing the <kbd>Enter</kbd> key when segment item in focus will make selection
 
 ## SelectionChanged event
 
-The `SelectionChanged` event will occur once selection process has been completed for the selected item in the Segmented Control. The `SegmentSelectionChangedEventArgs` has the following values which provides information for SelectionChanged event:
+The `SelectionChanged` event is triggered, once the selection process has been completed for the selected item in the Segmented Control. The `SegmentSelectionChangedEventArgs` has the following values, which provides information for SelectionChanged event:
 
-* `NewValue`: Gets the new value of `SelectedItem` has been assigned to the SegmentedControl.
-* `OldValue`: Gets the old value of `SelectedItem` has been assigned to the SegmentedControl.
+* `NewValue`: Gets the new value of `SelectedItem` that has been assigned to the SegmentedControl.
+* `OldValue`: Gets the old value of `SelectedItem` that has been assigned to the SegmentedControl.
 
 {% highlight C# %} 
 
