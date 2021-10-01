@@ -718,7 +718,7 @@ this.treeGrid.Columns.Add(new TreeGridNumericColumn()
 
 You can format the value of a `TreeGridNumericColumn` using the [DisplayNumberFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_DisplayNumberFormat) or [NumberFormatter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_NumberFormatter) property. The default value of `DisplayNumberFormat` and `NumberFormatter` properties are **null**.
 
-The following example shows how to set `CurrencyFormatter` for `NumberFormatter` property. 
+The following example shows how to set [CurrencyFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting.currencyformatter?view=winrt-19041) for `NumberFormatter` property. 
 
 N> To learn more about the formatting classes that can assigned for `NumberFormatter` property. [Refer here](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting?view=winrt-19041#classes)
 
@@ -731,7 +731,7 @@ numericColumn.NumberFormatter = new CurrencyFormatter(new RegionInfo(culture.LCI
 {% endhighlight %}
 {% endtabs %}
 
-You can also set the `PercentFormatter` and `DecimalFormatter` for `NumberFormatter` property to format the values in percent and numeric custom formats.   
+You can also set the [PercentFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting.percentformatter?view=winrt-19041) and [DecimalFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting.decimalformatter?view=winrt-19041) for `NumberFormatter` property to format the values in percent and numeric custom formats.   
 
 Using the **N**, **C**, and **P** format values, you can apply numeric, currency, and percent custom formats in `DisplayNumberFormat` property.
 
