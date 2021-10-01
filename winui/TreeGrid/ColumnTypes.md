@@ -74,7 +74,7 @@ Use to display the URI data.
 {{'[TreeGridTemplateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCellTemplateRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellTemplateRenderer.html"")'| markdownify }}
+{{'[TreeGridCellTemplateRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellTemplateRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the custom template-specified content.
@@ -82,10 +82,10 @@ Use to display the custom template-specified content.
 </tr>
 <tr>
 <td>
-TreeGridTimeColumn
+{{'[TreeGridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#"")'| markdownify }}
 </td>
 <td>
-TreeGridCellTimeRenderer
+{{'[TreeGridCellTimeRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellTimeRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the <code>DateTimeOffset</code> type data as time value.
@@ -1021,7 +1021,7 @@ You can change the foreground color of `TreeGridHyperlinkColumn` by writing the 
 
 ## TreeGridTimeColumn
 
-`TreeGridTimeColumn` is derived from `TreeGridTextColumnBase` and displays column data as time. In editing mode, it hosts the [SfTimePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) element.
+[TreeGridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html) is derived from `TreeGridTextColumnBase` and displays column data as time. In editing mode, it hosts the [SfTimePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) element.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1058,7 +1058,7 @@ treeGrid.Columns.Add(new TreeGridTimeColumn()
 
 ### Change the format of time value
 
-By using the `DisplayTimeFormat` property, you can edit and display the selected time in various formats such as hour, minutes, seconds, meridiem, 12-Hour and 24-Hour format. The default value of `DisplayTimeFormat` property is **hh:mm tt**. For example, in the below image the TimeColumn has `DisplayTimeFormat` set to **HH:mm tt**.
+By using the [DisplayTimeFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_DisplayTimeFormat) property, you can edit and display the selected time in various formats such as hour, minutes, seconds, meridiem, 12-Hour and 24-Hour format. The default value of `DisplayTimeFormat` property is **hh:mm tt**. For example, in the below image the TimeColumn has `DisplayTimeFormat` set to **HH:mm tt**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1096,7 +1096,7 @@ treeGrid.Columns.Add(new TreeGridTimeColumn()
 
 ### Null value support
 
-`TreeGridTimeColumn` provides support to restrict or allow null value in columns based on `AllowNull` property. The default value of `AllowNull` property is `True`. Instead of displaying null values, you can display hint text using the `PlaceholderText` property.
+`TreeGridTimeColumn` provides support to restrict or allow null value in columns based on [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_AllowNull) property. The default value of `AllowNull` property is `True`. Instead of displaying null values, you can display hint text using the [PlaceholderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_PlaceholderText) property.
 
 The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`. The default value of `PlaceholderText` property is `select a time`.
 
@@ -1137,7 +1137,7 @@ treeGrid.Columns.Add(new TreeGridTimeColumn()
 
 ### Setting time value range
 
-You can restrict and display the input value within the range using the `MinTime` and `MaxTime` properties.
+You can restrict and display the input value within the range using the [MinTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_MinTime) and [MaxTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_MaxTime) properties.
 
 ### Editing support
 
@@ -1148,23 +1148,23 @@ You can restrict and display the input value within the range using the `MinTime
 
 #### Normal
 
-To allow editing and perform input validation only after editing is completed, set the `EditMode` property value as `Normal`.
+To allow editing and perform input validation only after editing is completed, set the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_EditMode) property value as `Normal`.
 
 For more information refer [here](https://help.syncfusion.com/winui/time-picker/localization-and-formatting#edit-time-using-free-form-editing).
 
 #### Mask
 
-To allow editing and perform input validation as user edits the time value, set the `EditMode` property value as `Mask`.
+To allow editing and perform input validation as user edits the time value, set the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_EditMode) property value as `Mask`.
 The default value for `EditMode` property is `Mask`.
 
 For more information refer [here](https://help.syncfusion.com/winui/time-picker/localization-and-formatting#edit-time-using-mask-mode).
  
 #### None
-You can disable the editing in edit part by setting the `EditMode` Property as `None`.
+You can disable the editing in edit part by setting the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_EditMode) Property as `None`.
 
 ### Select time as you scroll spinner
 
-If you want to hide the submit button and select the time directly from the drop-down time spinner without clicking `Ok`, set the `ShowSubmitButtons` property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
+If you want to hide the submit button and select the time directly from the drop-down time spinner without clicking `Ok`, set the [ShowSubmitButtons](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_ShowSubmitButtons) property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1297,10 +1297,10 @@ HyperlinkButton
 </tr>
 <tr>
 <td>
-TreeGridTimeColumn
+{{'[TreeGridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#"")'| markdownify }}
 </td>
 <td>
-TreeGridCellTimeRenderer
+{{'[TreeGridCellTimeRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellTimeRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Time

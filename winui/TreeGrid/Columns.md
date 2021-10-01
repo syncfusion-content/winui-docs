@@ -80,7 +80,7 @@ Use to display the custom template-specified content.
 </tr>
 <tr>
 <td>
-TreeGridTimeColumn
+{{'[TreeGridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the <code>DateTimeOffSet</Code> type data as time value.
