@@ -7,10 +7,10 @@ control: SfScheduler
 documentation: ug
 ---
 # Reminder in WinUI Scheduler (SfScheduler)
-The WinUI scheduler notify an appointment reminder by using the `ReminderAlertOpening` event. An appointment can have one or more reminders. 
+The WinUI scheduler notify an appointment reminder by using the [ReminderAlertOpening](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ReminderAlertOpening) event. An appointment can have one or more reminders. 
 
 ## Enable reminder
-Reminder can be enable by setting the `EnableReminder` property to `true` which is used to trigger the `ReminderAlertOpening` event to notify appointment reminder. The reminder can be set by using the `Reminders` property of `ScheduleAppointment.`
+Reminder can be enable by setting the [EnableReminder](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableReminder) property to `true` which is used to trigger the `ReminderAlertOpening` event to notify appointment reminder. The reminder can be set by using the [Reminders](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Reminders) property of [ScheduleAppointment.](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html)
 
 {% tabs %}
 {% highlight xaml %}
@@ -22,7 +22,7 @@ Reminder can be enable by setting the `EnableReminder` property to `true` which 
 {% endtabs %}
 
 ## Adding reminders
-Configure the appointment reminders with `SchedulerReminder.` The `SchedulerReminder` has the following properties.
+Configure the appointment reminders with [SchedulerReminder.](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html) The `SchedulerReminder` has the following properties.
 
 <table>
 <tr>
@@ -30,24 +30,24 @@ Configure the appointment reminders with `SchedulerReminder.` The `SchedulerRemi
 <th>Description</th>
 </tr>
 <tr>
-<td>{{'ReminderTimeInterval'| markdownify }}</td>
+<td>{{'[ReminderTimeInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html#Syncfusion_UI_Xaml_Scheduler_SchedulerReminder_ReminderTimeInterval)'| markdownify }}</td>
 <td>Gets or sets the time interval that decides to notify the reminder before the appointment’s start time.
 </td>
 </tr>
 <tr>
-<td>{{'ReminderAlertTime'| markdownify }}</td>
+<td>{{'[ReminderAlertTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html#Syncfusion_UI_Xaml_Scheduler_SchedulerReminder_ReminderAlertTime)'| markdownify }}</td>
 <td>Gets the reminder time that decides when to enable `ReminderAlertOpening` event to the reminder of the appointment.</td>
 </tr>
 <tr>
-<td>{{'Appointment'| markdownify }}</td>
+<td>{{'[Appointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html#Syncfusion_UI_Xaml_Scheduler_SchedulerReminder_Appointment)'| markdownify }}</td>
 <td>Gets the appointment details for which the reminder is created.</td>
 </tr>
 <tr>
-<td>{{'Data'| markdownify }}</td>
+<td>{{'[Data](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html#Syncfusion_UI_Xaml_Scheduler_SchedulerReminder_Data)'| markdownify }}</td>
 <td>Gets the reminder data object associated with the `SchedulerReminder.`</td>
 </tr>
 <tr>
-<td>{{'IsDismissed' | markdownify }}</td>
+<td>{{'[IsDismissed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html#Syncfusion_UI_Xaml_Scheduler_SchedulerReminder_IsDismissed)' | markdownify }}</td>
 <td> Gets or sets whether the reminder is dismissed. </td>
 </tr>
 </table>
@@ -83,7 +83,7 @@ Configure the appointment reminders with `SchedulerReminder.` The `SchedulerRemi
 {% endtabs %}
 
 ## Creating business object for reminder  
-`Reminders` supports to map the custom object with the `ScheduleAppointment.Reminders`.
+[Reminders](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html#Syncfusion_UI_Xaml_Scheduler_AppointmentMapping_Reminders) supports to map the custom object with the [ScheduleAppointment.Reminders.](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Reminders)
 
 {% tabs %}
 {% highlight c#%}
@@ -113,11 +113,11 @@ Configure the appointment reminders with `SchedulerReminder.` The `SchedulerRemi
 {% endhighlight %}
 {% endtabs %}
 
-The `ReminderMapping` provides the mapping information about the `SchedulerReminder` properties to the `Data` object. ReminderMapping has the following properties,
+The [ReminderMapping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ResourceMapping.html) provides the mapping information about the [SchedulerReminder](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html) properties to the [Data](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html#Syncfusion_UI_Xaml_Scheduler_SchedulerReminder_Data) object. `ReminderMapping` has the following properties,
 
-* `ReminderTimeInterval`: Maps the property name of a custom class, which is equivalent for the `SchedulerReminder.ReminderTimeInterval.`
-* `IsDismissed`: Maps the property name of a custom class, which is equivalent for the `SchedulerReminder.IsDismissed.`
-* `ReminderAlertTime`: Maps the property name of a custom class, which is equivalent for the `SchedulerReminder.ReminderAlertTime.`
+* [ReminderTimeInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ReminderMapping.html#Syncfusion_UI_Xaml_Scheduler_ReminderMapping_ReminderTimeInterval): Maps the property name of a custom class, which is equivalent for the [SchedulerReminder.ReminderTimeInterval.](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html#Syncfusion_UI_Xaml_Scheduler_SchedulerReminder_ReminderTimeInterval)
+* [IsDismissed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ReminderMapping.html#Syncfusion_UI_Xaml_Scheduler_ReminderMapping_IsDismissed): Maps the property name of a custom class, which is equivalent for the [SchedulerReminder.IsDismissed.](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html#Syncfusion_UI_Xaml_Scheduler_SchedulerReminder_IsDismissed)
+* [ReminderAlertTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ReminderMapping.html#Syncfusion_UI_Xaml_Scheduler_ReminderMapping_ReminderAlertTime): Maps the property name of a custom class, which is equivalent for the [SchedulerReminder.ReminderAlertTime.](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html#Syncfusion_UI_Xaml_Scheduler_SchedulerReminder_ReminderAlertTime)
 
 {% tabs %}
 {% highlight c#%}
@@ -141,7 +141,7 @@ public class Reminder
 {% endhighlight %}
 {% endtabs %}
 
-Map those properties of the `Meeting` class with the `SfScheduler` control by using the `AppointmentMapping` and map `CustomReminder` properties with the `SchedulerReminder` by using the `ReminderMapping.`
+Map those properties of the `Meeting` class with the [SfScheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) control by using the [AppointmentMapping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) and map `CustomReminder` properties with the [SchedulerReminder](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html) by using the [ReminderMapping.](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ReminderMapping.html)
 
 {% tabs %}
 {% highlight xaml %}
@@ -190,8 +190,8 @@ public class ReminderViewModel
 {% endtabs %}
 
 ## ReminderAlertOpening event
-Scheduler notify the appointment's reminder by the `ReminderAlertOpening` event before the appointment's start time. The `ReminderAlertOpeningEventArgs` has the following properties,
-* `Reminders`: Gets a list of reminders that are used to notify the appointment reminders.
+Scheduler notify the appointment's reminder by the [ReminderAlertOpening](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ReminderAlertOpening) event before the appointment's start time. The [ReminderAlertOpeningEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ReminderAlertOpeningEventArgs.html) has the following properties,
+* [Reminders](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ReminderAlertOpeningEventArgs.html#Syncfusion_UI_Xaml_Scheduler_ReminderAlertOpeningEventArgs_Reminders): Gets a list of reminders that are used to notify the appointment reminders.
 * `Cancel`: To avoid the reminder notify by enabling this property.
 
 {% tabs %}
