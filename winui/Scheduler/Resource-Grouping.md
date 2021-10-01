@@ -347,11 +347,13 @@ this.Schedule.TimelineViewSettings.ResourceHeaderSize = 100;
 {% endtabs %}
 
 ## Resource auto height
-The resource row height gets auto-adjusted based on the number of overlapping appointments occupied on the same time range by setting `RowAutoHeight` property as `true` in `TimelineViewSettings.` By default, value of this property is set to `false.` 
+The resource row height gets auto-adjusted based on the number of overlapping appointments occupied on the same time range by setting [RowAutoHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimelineViewSettings_RowAutoHeight) property as `true` in [TimelineViewSettings.](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html) By default, value of this property is set to `false.` 
 
 {% tabs %}
 {% highlight xaml %}
-<Schedule:SfScheduler Name="schedule" ViewType="TimelineWeek" ResourceGroupType="Resource">
+<Schedule:SfScheduler Name="schedule" 
+                      ViewType="TimelineWeek"
+                      ResourceGroupType="Resource">
    <Schedule:SfScheduler.TimelineViewSettings>
       <Schedule:TimelineViewSettings RowAutoHeight="True" />
    </Schedule:SfScheduler.TimelineViewSettings>
@@ -362,21 +364,22 @@ The resource row height gets auto-adjusted based on the number of overlapping ap
 {% endhighlight %}
 {% endtabs %}
 
-N>
- * [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/ResourceAutoRowHeight)
+N> * [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/ResourceAutoRowHeight)
 
 ![Row auto height in timeline view in WinUI Scheduler](Resource_Images/row-auto-height-in-timeline-view.png)
 
 N> 
  * This auto row height adjustment is applicable only on all the Timeline views such as timeline day, timeline week, timeline workweek and timeline month views.
- * If auto resource row height is enabled then `VisibleResourceCount` will not be applicable and if resources have no appointments, then `RowMinHeight` will be considered as default resource row height.
+ * If auto resource row height is enabled then [VisibleResourceCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_VisibleResourceCount) will not be applicable and if resources have no appointments, then [RowMinHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimelineViewSettings_RowMinHeight) will be considered as default resource row height.
 
 ## Resource minimum height
-You can customize minimum row height of visible resources in timeline day, timeline week, timeline workweek and timeline month views by using the `RowMinHeight` property of `TimelineViewSettings` in `SfScheduler`. By default, value of this property is set to 50.
+You can customize minimum row height of visible resources in timeline day, timeline week, timeline workweek and timeline month views by using the [RowMinHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimelineViewSettings_RowMinHeight) property of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html) in [SfScheduler.](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) By default, value of this property is set to 50.
 
 {% tabs %}
 {% highlight xaml %}
-<Schedule:SfScheduler Name="schedule" ViewType="TimelineWeek" ResourceGroupType="Resource">
+<Schedule:SfScheduler Name="schedule" 
+                      ViewType="TimelineWeek" 
+                      ResourceGroupType="Resource">
    <Schedule:SfScheduler.TimelineViewSettings>
       <Schedule:TimelineViewSettings RowMinHeight="100" />
    </Schedule:SfScheduler.TimelineViewSettings>
@@ -387,7 +390,7 @@ You can customize minimum row height of visible resources in timeline day, timel
 {% endhighlight %}
 {% endtabs %} 
 
-N> The minimum resource row height adjusted based on view port size and the `VisibleResourceCount` will not be applicable. 
+N> The minimum resource row height adjusted based on view port size and the [VisibleResourceCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_VisibleResourceCount) will not be applicable. 
 
 ## Visible resource count
 
