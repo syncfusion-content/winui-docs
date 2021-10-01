@@ -64,10 +64,10 @@ sfComboBox.SelectedIndex = 2;
 
 ### Decide when to update selected item
 
-The [SelectionChangeTrigger](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_SelectionChangeTrigger) property of the SfComboBox can be used to update the selected item when the user commits a selection or each time the user navigates to a new selection in the ComboBox. The default value is `Committed`. The available SelectionChangeTrigger modes are,
+The [SelectionChangeTrigger](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_SelectionChangeTrigger) property of the SfComboBox can be used to update the selected item when the user commits a selection or each time the user navigates to a new selection in the ComboBox. The default value is `Committed`. The available SelectionChangeTrigger modes are:
 
-* **Committed** - Selected item gets update when the user commits a selection in the ComboBox.
-* **Always** - Selected item gets update to each time the user navigates to a new selection in the ComboBox.
+* **Committed** - Selected item is updated when the user commits a selection in the ComboBox.
+* **Always** - Selected item is updated to each time the user navigates to a new selection in the ComboBox.
 
 {% tabs %}
 {% highlight xaml %}

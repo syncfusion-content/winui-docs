@@ -9,11 +9,11 @@ documentation: ug
 
 # Keyboard support in WinUI ComboBox
 
-This section explains about the shortcuts keys supported in SfComboBox. 
+This section explains the shortcut keys that supported in SfComboBox. 
 
 ## Keyboard behaviors
 
-The following table explains short cut key for opening and closing drop-down.
+The following table explains shortcut key for opening and closing drop-down.
 
 <table>
 <tr>
@@ -32,10 +32,10 @@ Editable mode
 <kbd>F4</kbd>
 </td>
 <td>
-To open/close the drop-down.
+To open or close the drop-down.
 </td>
 <td>
-To open/close the drop-down.
+To open or close the drop-down.
 </td>
 </tr>
 <tr>
@@ -43,7 +43,7 @@ To open/close the drop-down.
 <kbd>Alt+Down</kbd>
 </td>
 <td>
-To open/close the drop-down.
+To open or close the drop-down.
 </td>
 <td>
 -
@@ -54,12 +54,12 @@ To open/close the drop-down.
 <kbd>Enter</kbd>
 </td>
 <td>
-**Single selection:** To open/close the drop-down. If Drop-down is already opened, when pressing <kbd>Enter</kbd> key selected item will be updated and close the drop-down.
+**Single selection** To open or close the drop-down. If the drop-down is already open, pressing the <kbd>Enter</kbd> key item will update the selected item and close the drop-down.
 <br />
-**Multiple selection:** To open the drop-down when it is closed.
+**Multiple selection** To open the drop-down when it is closed.
 </td>
 <td>
-If Drop-down is already opened, when pressing <kbd>Enter</kbd> key selected item will be updated and close the drop-down.
+If the drop-down is already open, pressing the <kbd>Enter</kbd> key will update the selected item and close the drop-down.
 </td>
 </tr>
 <tr>
@@ -78,12 +78,12 @@ To open the drop-down when it is closed.
 <kbd>Escape</kbd>
 </td>
 <td>
-**Single selection:** If Drop-down is already opened, when pressing <kbd>Escape</kbd> key cancel the selection and close the drop-down.
+**Single selection** If the drop-down is already open, pressing the <kbd>Escape</kbd> key will cancel the selection and close the drop-down.
 <br />
-**Multiple selection:** If Drop-down is already opened, when pressing <kbd>Escape</kbd> key close the drop-down.
+**Multiple selection** If the drop-down is already open, pressing the <kbd>Escape</kbd> key will close the drop-down.
 </td>
 <td>
-If Drop-down is already opened, when pressing <kbd>Escape</kbd> key cancel the selection and close the drop-down.
+If the drop-down is already open, pressing the <kbd>Escape</kbd> key will cancel the selection and close the drop-down.
 </td>
 </tr>
 <tr>
@@ -91,17 +91,17 @@ If Drop-down is already opened, when pressing <kbd>Escape</kbd> key cancel the s
 <kbd>Tab</kbd>, <kbd>Shift+Tab</kbd>
 </td>
 <td>
-**Single selection:** If Drop-down is already opened, when pressing <kbd>Tab</kbd> or <kbd>Shift+Tab</kbd> key selected item will be updated and close the drop-down. 
+**Single selection** If the drop-down is already open, pressing the <kbd>Tab</kbd> or <kbd>Shift+Tab</kbd> key will update the selected item and close the drop-down. 
 <br />
-**Multiple selection:** If Drop-down is already opened, when pressing <kbd>Tab</kbd> or <kbd>Shift+Tab</kbd> key close the drop-down.
+**Multiple selection** If the drop-down is already open, pressing the <kbd>Tab</kbd> or <kbd>Shift+Tab</kbd> key will close the drop-down.
 </td>
 <td>
-If Drop-down is already opened, when pressing <kbd>Tab</kbd> or <kbd>Shift+Tab</kbd> key selected item will be updated and close the drop-down.
+If the drop-down is already open, pressing the <kbd>Tab</kbd> or <kbd>Shift+Tab</kbd> key will update selected item and close the drop-down.
 </td>
 </tr>
 </table>
 
-The following table explains short cut key to navigate and highlight the items in drop-down list.
+The following table explains shortcut key to navigate and highlight the items in drop-down list.
 
 <table>
 <tr>
@@ -120,10 +120,10 @@ Multiple selection mode
 <kbd>Up</kbd>, <kbd>Ctrl+Up</kbd>, <kbd>Shift+Up</kbd>
 </td>
 <td>
-Moves focus & selection to previous item from current focused item.
+Moves the focus and selection to the previous item from the current focused item.
 </td>
 <td>
-Moves focus to previous item from current focused item.
+Moves the focus to the previous item from the current focused item.
 </td>
 </tr>
 <tr>
@@ -131,10 +131,10 @@ Moves focus to previous item from current focused item.
 <kbd>Down</kbd>, <kbd>Ctrl+Down</kbd>, <kbd>Shift+Down</kbd>
 </td>
 <td>
-Moves focus & selection to next item from current focused item.
+Moves the focus and selection to the next item from the current focused item.
 </td>
 <td>
-Moves focus to next item from current focused item.
+Moves the focus to the next item from the current focused item.
 </td>
 </tr>
 <tr>
@@ -142,10 +142,10 @@ Moves focus to next item from current focused item.
 <kbd>Home</kbd>
 </td>
 <td>
-Moves focus & selection to the first item.
+Moves the focus and selection to the first item.
 </td>
 <td>
-Moves focus to the first item.
+Moves the focus to the first item.
 </td>
 </tr>
 <tr>
@@ -153,10 +153,10 @@ Moves focus to the first item.
 <kbd>End</kbd>
 </td>
 <td>
-Moves focus & selection to the last item.
+Moves the focus and selection to the last item.
 </td>
 <td>
-Moves focus to the last item.
+Moves the focus to the last item.
 </td>
 </tr>
 <tr>
