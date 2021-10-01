@@ -13,11 +13,11 @@ This section explains about features that aid in the selection of items, customi
 
 ## Selected index
 
-The Segmented control allows you to select the segment item based on data source index using the `SelectedIndex` property.
+The Segmented control allows you to select the segment item based on data source index using the [SelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedIndex) property.
 
 ## Selected item customization
 
-The Segmented control allows you to customize the appearance of selected item using the `SelectedSegmentStyle` property. You need to provide the target types' style as [Border](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.border).
+The Segmented control allows you to customize the appearance of selected item using the [SelectedSegmentStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedSegmentStyle) property. You need to provide the target types' style as [Border](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.border).
 
 {% tabs %}
 {% highlight xaml %}
@@ -68,7 +68,7 @@ N> Users cannot change the selected item foreground using SelectedSegmentStyle.
 
 ## Animation
 
-The Segmented control supports slide animation for selecting the item. Also, users can enable or disable the selection animation using the `SelectionAnimationType` property. The default value is `Slide`. This property has following two values:
+The Segmented control supports slide animation for selecting the item. Also, users can enable or disable the selection animation using the [SelectionAnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectionAnimationType) property. The default value is [Slide](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SegmentSelectionAnimationType.html#Syncfusion_UI_Xaml_Editors_SegmentSelectionAnimationType_Slide). This property has following two values:
 
 * `Slide` - The slide animation effect is applied while selecting the item. 
 * `None` - Disables animation while selecting the item.
@@ -161,10 +161,10 @@ Pressing the <kbd>Enter</kbd> key when segment item in focus will make selection
 
 ## SelectionChanged event
 
-The `SelectionChanged` event is triggered, once the selection process has been completed for the selected item in the Segmented Control. The `SegmentSelectionChangedEventArgs` has the following values, which provides information for SelectionChanged event:
+The [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectionChanged) event is triggered, once the selection process has been completed for the selected item in the Segmented Control. The [SegmentSelectionChangedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SegmentSelectionChangedEventArgs.html) has the following values, which provides information for SelectionChanged event:
 
-* `NewValue`: Gets the new value of `SelectedItem` that has been assigned to the SegmentedControl.
-* `OldValue`: Gets the old value of `SelectedItem` that has been assigned to the SegmentedControl.
+* `NewValue`: Gets the new value of [SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedItem) that has been assigned to the SegmentedControl.
+* `OldValue`: Gets the old value of [SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedItem) that has been assigned to the SegmentedControl.
 
 {% highlight C# %} 
 

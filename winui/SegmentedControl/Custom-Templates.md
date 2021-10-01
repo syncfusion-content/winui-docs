@@ -13,7 +13,7 @@ This section explains how to customize the SfSegmentedItem and its related opera
 
 ## Ellipse style
 
-Users can achieve the ellipse style, by changing corner radius of the segmented item using the `ItemContainerStyle` property and changing `CornerRadius` property in the `SelectedSegmentStyle` style property.
+Users can achieve the ellipse style, by changing corner radius of the segmented item using the [ItemContainerStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyle) property and changing `CornerRadius` property in the [SelectedSegmentStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedSegmentStyle) style property.
 
 The following code example illustrates how to customize the ellipse style.
 
@@ -92,7 +92,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winu
 
 ## Circle style
 
-Users can achieve the circle style, by changing corner radius and margin of the segmented item using the `ItemContainerStyle` property and changing similar properties in the `SelectedSegmentStyle`.
+Users can achieve the circle style, by changing corner radius and margin of the segmented item using the [ItemContainerStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyle) property and changing similar properties in the [SelectedSegmentStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedSegmentStyle).
 
 The following code example illustrates how to customize the circle style.
 
@@ -160,7 +160,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winu
 
 ## Image with text style
 
-Users can create an image with text style, by adding the image and content to the `ItemTemplate`.
+Users can create an image with text style, by adding the image and content to the [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemTemplate).
 
 The following code example illustrates how to customize the image with text style.
 
@@ -219,7 +219,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winu
 
 ## Top indicator style
 
-By using the `ItemBorderThickness` property and handling `BorderThickness` in the `SelectedSegmentStyle` property helps users to achieve the top indicator style.
+By using the [ItemBorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemBorderThickness) property and handling `BorderThickness` in the [SelectedSegmentStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedSegmentStyle) property helps users to achieve the top indicator style.
 
 The following code example illustrates how to customize the top indicator style.
 

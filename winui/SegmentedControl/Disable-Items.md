@@ -13,7 +13,7 @@ The WinUI Segmented control provides options to disable the segmented item.
 
 ## Disable items
 
-The Segmented control allows you to disable the items using the `SetItemEnabled` Method. The method has following two parameters:
+The Segmented control allows you to disable the items using the [SetItemEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SetItemEnabled_System_Int32_System_Boolean_) Method. The method has following two parameters:
 
 * `index` - The integer value indicating the index of the item.
 * `isEnabled` - The boolean value indicating whether the item should be enabled or not.
