@@ -96,7 +96,7 @@ Use to display the custom template-specified content.
 </tr>
 <tr>
 <td>
-GridTimeColumn
+{{'[GridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridTimeColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the <code>DateTimeOffset</code> type data as time value.
