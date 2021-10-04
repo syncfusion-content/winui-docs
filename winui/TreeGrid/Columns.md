@@ -32,7 +32,7 @@ Use to display the string data.
 </tr>
 <tr>
 <td>
-TreeGridNumericColumn
+{{'[TreeGriNumericColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the numeric data. 
@@ -56,7 +56,7 @@ Use to display the Boolean type data
 </tr>
 <tr>
 <td>
-TreeGridDateColumn
+{{'[TreeGriDateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the date value
@@ -80,7 +80,7 @@ Use to display the custom template-specified content.
 </tr>
 <tr>
 <td>
-TreeGridTimeColumn
+{{'[TreeGridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the <code>DateTimeOffSet</Code> type data as time value.
