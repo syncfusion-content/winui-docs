@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in WinUI ComboBox control | Syncfusion
-description: Learn here all about Selection modes support in Syncfusion WinUI ComboBox(multiselect combobox) control and more.
+description: Learn here all about Selection modes support in Syncfusion WinUI ComboBox (multi-select ComboBox) control and more.
 platform: winui
 control: SfComboBox
 documentation: ug
@@ -9,15 +9,15 @@ documentation: ug
 
 # Selection in WinUI ComboBox
 
-The SfComboBox allows user to select single or multiple items in the drop down list. The selection mode can be set by using the `SelectionMode` property. There are two different selection modes: `Single`, `Multiple`.
+The `SfComboBox` allows user to select single or multiple items from the drop-down list. The selection mode can be set by using the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectionMode) property. There are two different selection modes: `Single`, and `Multiple`.
 
 ## Single selection
 
-The SfComboBox allows user to select a single item from the drop down list.
+The `SfComboBox` allows user to select a single item from the drop-down list.
 
 ### UI Selection 
 
-The selected item can be changed interactively by selecting from the drop down list or enter the value using keyboard. The selected item can be retrieved from the `SelectedItem` or `SelectedIndex` properties of ComboBox control.
+The selected item can be changed interactively by selecting from the drop-down list or enter the value using keyboard. The selected item can be retrieved from the [SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectedItem) or [SelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_SelectedIndex) property of ComboBox control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -35,9 +35,9 @@ The selected item can be changed interactively by selecting from the drop down l
 
 ![Single selection in WinUI ComboBox](Selection_images/winui-combobox-single-selection.gif)
 
-### Programmatic Selection 
+### Programmatic selection 
 
-The selected item can be changed programmatically by using `SelectedItem` or `SelectedIndex` properties of ComboBox control. 
+The selected item can be changed programmatically by using the `SelectedItem` or `SelectedIndex` property of ComboBox control. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -62,13 +62,58 @@ sfComboBox.SelectedIndex = 2;
 
 ![Single selection in WinUI ComboBox programmatically](Selection_images/winui-combobox-single-selection-programmatically.png)
 
+### Decide when to update selected item
+
+The [SelectionChangeTrigger](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_SelectionChangeTrigger) property of the SfComboBox can be used to update the selected item when the user commits a selection or each time the user navigates to a new selection in the ComboBox. The default value is `Committed`. The available SelectionChangeTrigger modes are:
+
+* **Committed** - Selected item is updated when the user commits a selection in the ComboBox.
+* **Always** - Selected item is updated to each time the user navigates to a new selection in the ComboBox.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfComboBox
+    IsEditable="True"
+    Width="250"
+    Margin="0,0,0,250"
+    ItemsSource="{Binding SocialMedias}"
+    SelectionChangeTrigger="Always"
+    DisplayMemberPath="Name"
+    TextMemberPath="Name"
+    SelectionChanged="OnSfComboBoxSelectionChanged"
+    x:Name="sfComboBox" />
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+private async  void OnSfComboBoxSelectionChanged(object sender, ComboBoxSelectionChangedEventArgs e)
+{
+    var cd = new ContentDialog
+    {
+        Content = "Selected item was changed.",
+        CloseButtonText = "Close"
+    };
+
+    cd.XamlRoot = this.Content.XamlRoot;
+    var result = await cd.ShowAsync();
+
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Updates selected item each time the user navigates to a new selection in ComboBox](Selection_images/winui-combobox-selection-change-trigger-always.gif)
+
+N> You can refer more information about `SelectionChanged` event from [this](https://help.syncfusion.com/winui/combobox/selection#selection-changed-event) link.
+
 ## Multiple selection
 
-The SfComboBox allows user to select multiple values from the drop down list. The multi-select combo box mode can be enabled by setting the `SelectionMode` property as `Multiple`.
+The SfComboBox allows user to select multiple values from the drop-down list. The multi-select ComboBox mode can be enabled by setting the `SelectionMode` property as `Multiple`.
 
-### UI Selection 
+### UI selection 
 
-The selected items can be changed interactively by using keyboard or select from drop down list. The selected items can be retrieved from the `SelectedItems` property of ComboBox control.
+The selected items can be changed interactively by using keyboard or by selecting from a drop-down list. The selected items can be retrieved from the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectedItems) property of ComboBox control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -86,9 +131,9 @@ The selected items can be changed interactively by using keyboard or select from
 
 ![Multiple selection in WinUI ComboBox](Selection_images/winui-combobox-multiple-selection.gif)
 
-### Programmatic Selection 
+### Programmatic selection 
 
-The selected items can be changed programmatically by using `SelectedItems` property of ComboBox control.  
+The selected items can be changed programmatically by using the `SelectedItems` property of ComboBox control.  
 
 {% tabs %}
 {% highlight c# %}
@@ -106,7 +151,7 @@ this.sfComboBox.SelectedItems.Add(socialMediasList[7]);
 
 ### Separate items using delimiter
 
-The SfComboBox supports various delimiter characters to separate the selected items displayed in a multi-select ComboBox. The delimiter character can be set by using the `DelimiterText` property. The default delimiter character is **,**.
+The SfComboBox supports various delimiter characters to separate the selected items displayed in a multi-select ComboBox. The delimiter character can be set by using the [DelimiterText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_DelimiterText) property. The default delimiter character is **,**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -131,9 +176,9 @@ sfComboBox.DelimiterText = "-";
 
 ![WinUI ComboBox seperate the selected items using delimiter text](Selection_images/winui-combobox-delimiter-text.png)
 
-### How to hide the check box?
+### How to hide the check box
 
-The checkbox that is displayed in a drop down list can be hide by using the `IsMultiSelectCheckBoxEnabled` property of ComboBox control. The default value of `IsMultiSelectCheckBoxEnabled` property is **true**.
+The checkbox that is displayed in a drop-down list can be hidden by using the [IsMultiSelectCheckBoxEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_IsMultiSelectCheckBoxEnabled) property of ComboBox control. The default value of `IsMultiSelectCheckBoxEnabled` property is **true**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -160,7 +205,7 @@ sfComboBox.IsMultiSelectCheckBoxEnabled = false;
 
 ## Selection changed event
 
-When selecting an item from the drop down list, the `SelectionChanged` event will be called. The `SelectionChanged` event contains the newly selected and removed items in the AddedItems and RemovedItems properties. The `SelectionChanged` contains the following properties.
+When selecting an item from the drop-down list, the [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectionChanged) event is triggered. The `SelectionChanged` event contains the newly selected and removed items in the AddedItems and RemovedItems properties. The `SelectionChanged` contains the following properties:
 
  * `AddedItems` - Contains the items that were selected.
  * `RemovedItems` - Contains the items that were unselected.
