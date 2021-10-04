@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing in WinUI ComboBox control | Syncfusion
-description: Learn here all about Editable modes support in Syncfusion WinUI ComboBox(multiselect combobox) control and more.
+description: Learn here all about Editable modes support in Syncfusion WinUI ComboBox (multi-select ComboBox) control and more.
 platform: winui
 control: SfComboBox
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Editing in WinUI ComboBox
 
-The combo box control supports both editable and non-editable text box to choose selected item in given data source. To enable editing functionality, set `IsEditable` property as `true`. The default value is false.
+The ComboBox control supports both editable and non-editable text boxes for selecting an item from a data source. To enable editing functionality, set [IsEditable](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsEditable) property as `true`. The default value is false.
 
-## Editable combo box
+## Editable ComboBox
 
-In editable mode, the combo box allows users to edit in the text box that shows the suggestions in drop down list based on the input.
+In editable mode, the ComboBox allows users to edit in the text box that shows the suggestions in a drop-down list based on the input.
 
 {% tabs %}
 {% highlight XAML %}
@@ -37,9 +37,9 @@ sfComboBox.IsEditable = true;
 
 ![WinUI ComboBox choose item using editing](Editing_images/winui-combobox-edit-mode.gif)
 
-## Non-editable combo box
+## Non-editable ComboBox
 
-Non-editable mode prevents users from editing and allows them to select from drop down list.
+Non-editable mode prevents users from editing and instead allows them to select from drop-down list.
 
 {% tabs %}
 {% highlight XAML %}
@@ -65,7 +65,7 @@ sfComboBox.IsEditable = false;
 
 ## Hide clear button in the editor
 
-By default, the clear button `X` will be displayed in the editor of the `ComboBox` control, which can be used to clear the entered input. Hide the clear button in `ComboBox` control using the `ShowClearButton` property. The default value of `ShowClearButton` property value is **true**.
+By default, the clear button `X` will be displayed in the editor of the `ComboBox` control, which can be used to clear the entered input. Hide the clear button in `ComboBox` control using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_ShowClearButton) property. The default value of `ShowClearButton` property value is **true**.
 
 {% tabs %}
 {% highlight XAML %}
@@ -90,11 +90,11 @@ sfComboBox.ShowClearButton = false;
 
 ![WinUI ComboBox hide clear button](Editing_images/winui-combobox-hideclearbutton.png)
 
-N> `ShowClearButton` property does not have effect in non-editable mode.
+N> The `ShowClearButton` property has no effect in non-editable mode.
 
-## Open Dropdown programmatically
+## Open a drop-down programmatically
 
-In SfComboBox control, the drop down can be opened or closed programmatically by using the `IsDropDownOpen` property. The default value of `IsDropDownOpen` property is false. Below example shows, opening drop down when pressing alphabet keys in SfComboBox control.
+In SfComboBox control, the drop-down can be opened or closed programmatically by using the [IsDropDownOpen](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_IsDropDownOpen) property. The default value of `IsDropDownOpen` property is false. The following example shows how to open the drop-down when pressing alphabet keys in SfComboBox control.
 
 {% tabs %}
 {% highlight XAML %}
@@ -117,7 +117,7 @@ private void OnEditingComboBoxPreviewKeyDown(object sender, KeyRoutedEventArgs e
     // Opening drop down when pressing alphabet keys.
     if (!sfComboBox.IsDropDownOpen && (int)eventArgs.Key >= 65 && (int)eventArgs.Key <= 90)
     {
-        this.sfComboBox.IsDropDownOpen = true;
+        sfComboBox.IsDropDownOpen = true;
     }
 }
 
@@ -128,7 +128,7 @@ private void OnEditingComboBoxPreviewKeyDown(object sender, KeyRoutedEventArgs e
 
 ## Handle invalid input 
 
-When submitting some text that does not correspond to an item in the ComboBox drop down list, the `TextSubmitted` event will be called. Using the following code snippet, a dialogue box will be displayed when submitting input that does not contain in drop down list.
+The [TextSubmitted](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_TextSubmitted) event is triggered, when some text is submitted that does not correspond to an item in the ComboBox drop-down list. By using the following code sample, a dialogue box will be displayed when submitting input that does not contain in drop-down list.
 
 {% tabs %}
 {% highlight XAML %}
@@ -157,16 +157,15 @@ The TextSubmitted event can be handled as follows.
 {% highlight C# %}
 
 /// <summary>
-/// Occurs when the user submits some text that does not correspond to an item in the ComboBox drop down list.
+/// Occurs when the user submits some text that does not correspond to an item in the ComboBox drop-down list.
 /// </summary>
 private async void OnEditingComboBoxTextSubmitted(object sender, Syncfusion.UI.Xaml.Editors.ComboBoxInputSubmittedEventArgs e)
 {
     var cd = new ContentDialog
     {
-        Content = "Enter a game from the list.",
+        Content = "Enter a social media from the list.",
         CloseButtonText = "Close"
     };
-
 
     cd.XamlRoot = this.Content.XamlRoot;
     var result = await cd.ShowAsync();
