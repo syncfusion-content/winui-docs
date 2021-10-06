@@ -38,7 +38,7 @@ chart.Legend = new ChartLegend();
 
 ## Legend Header
 
-Chart provides support to add any UIElement as a header for legend items. 
+[WinUI Charts](https://www.syncfusion.com/winui-controls/charts) provides support to add any UIElement as a header for legend items. 
 
 You can define the [`Header`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Header) for legend using the following code example.
 
