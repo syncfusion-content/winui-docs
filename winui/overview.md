@@ -77,7 +77,7 @@ background-color:transparent!important;
   <tr>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/datagrid/getting-started" >Data Grid</a> </td>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/calendar/getting-started" >Calendar</a> </td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/chart/getting-started" >Charts</a>         </td>
+    <td><a id="anchor"  href="https://help.syncfusion.com/winui/barcode/getting-started" >BarCode</a></td>
     <td><a id="anchor" href="https://help.syncfusion.com/winui/combobox/getting-started">ComboBox</a></td>
   </tr>
   <tr>
@@ -89,7 +89,7 @@ background-color:transparent!important;
   <tr>
     <td id="title">NAVIGATION</td>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/calendar-daterange-picker/getting-started">Calendar DateRange Picker</a></td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/barcode/getting-started" >BarCode</a></td>
+    <td><a id="anchor"  href="https://help.syncfusion.com/winui/chart/getting-started" >Charts</a> </td>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/dropdown-color-picker/getting-started">Dropdown Color Picker</a></td>
   </tr>
   <tr>
