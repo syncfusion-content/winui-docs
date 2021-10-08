@@ -89,7 +89,7 @@ background-color:transparent!important;
   <tr>
     <td id="title">NAVIGATION</td>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/calendar-daterange-picker/getting-started">Calendar DateRange Picker</a></td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/chart/getting-started" >Charts</a> </td>
+    <td><a id="anchor"  href="https://help.syncfusion.com/winui/linear-gauge/getting-started" >Linear Gauge</a></td>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/dropdown-color-picker/getting-started">Dropdown Color Picker</a></td>
   </tr>
   <tr>
@@ -125,7 +125,7 @@ background-color:transparent!important;
   <tr>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/rangeslider/getting-started">Range Slider</a></td>
     <td></td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/linear-gauge/getting-started" >Linear Gauge</a></td>
+    <td></td>
     <td></td>
   </tr>
 </tbody>
