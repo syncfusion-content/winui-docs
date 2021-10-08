@@ -39,6 +39,8 @@ The Segmented Control provides various themes to be applied by setting the theme
 {% endhighlight %}
 {% endtabs %} 
 
+![WinUI Segmented Control with Dark Theme](Themes_Images/winui-segmented-control-dark-theme.png)
+
 ### Light Theme
 
 {% tabs %}
@@ -62,6 +64,8 @@ The Segmented Control provides various themes to be applied by setting the theme
 
 {% endhighlight %}
 {% endtabs %} 
+
+![WinUI Segmented Control with Dark Theme](Themes_Images/winui-segmented-control-light-theme.png)
 
 ## Customization using keys
 

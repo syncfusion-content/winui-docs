@@ -170,7 +170,7 @@ public class SegmentedModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control using DisplayMemberPath and business object](Getting_Started_Images/winui-segmented-control-getting-started1.png)
+![WinUI Segmented Control using DisplayMemberPath and business object](Getting_Started_Images/winui-segmented-control-displaymemberpath.png)
 
 ### ItemTemplate
 
@@ -305,7 +305,7 @@ public class SegmentedModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control using ItemTemplate and business object](Getting_Started_Images/winui-segmented-control-getting-started2.png)
+![WinUI Segmented Control using ItemTemplate and business object](Getting_Started_Images/winui-segmented-control-itemtemplate.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/Getting-Started)
 

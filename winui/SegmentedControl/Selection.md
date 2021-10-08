@@ -45,7 +45,7 @@ The Segmented control allows you to select the segment item based on data source
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Segmented Control with selected index customization](Selection_Images/winui-segmented-control-selected-item-customization2.png)
+![WinUI Segmented Control with selected index customization](Selection_Images/winui-segmented-control-selected-index-customization.png)
 
 ## Selected item customization
 
@@ -92,10 +92,12 @@ N> Users cannot change the selected item foreground using SelectedSegmentStyle.
 
 ## Animation
 
-The Segmented control supports slide animation for selecting the item. Also, users can enable or disable the selection animation using the [SelectionAnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectionAnimationType) property. The default value is [Slide](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SegmentSelectionAnimationType.html#Syncfusion_UI_Xaml_Editors_SegmentSelectionAnimationType_Slide). This property has following two values:
+The Segmented control supports slide animation for selecting the item. Also, users can enable or disable the selection animation using the [SelectionAnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectionAnimationType) property. This property has following two values:
 
 * `Slide` - The slide animation effect is applied while selecting the item. 
 * `None` - Disables animation while selecting the item.
+
+N>The default value of  [SelectionAnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectionAnimationType) property property is [Slide](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SegmentSelectionAnimationType.html#Syncfusion_UI_Xaml_Editors_SegmentSelectionAnimationType_Slide).Transparent
 
 ### Slide
 
@@ -131,7 +133,7 @@ When setting  [SelectionAnimationType](https://help.syncfusion.com/cr/winui/Sync
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with slide animation](Selection_Images/winui-segmented-control-animation.gif)
+![WinUI Segmented Control with slide animation](Selection_Images/winui-segmented-control-slide-animation.gif)
 
 ### None
 
@@ -167,7 +169,7 @@ The animation effect can be disabled while selecting the item by setting the [Se
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with animation disabled](Selection_Images/winui-segmented-control-animation1.gif)
+![WinUI Segmented Control with animation disabled](Selection_Images/winui-segmented-control-disble-animation.gif)
 
 ## Keyboard behaviors
 

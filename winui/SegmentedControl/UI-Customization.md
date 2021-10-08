@@ -55,7 +55,7 @@ N> The default value is 1.
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with border thickness](UI_Customization_Images/winui-segmented-control-borderthickness.png)
+![WinUI Segmented Control with border thickness](UI_Customization_Images/winui-segmented-control-border-thickness.png)
 
 ## ItemBorderThickness 
 
@@ -106,7 +106,7 @@ N> The default value is 0,0,1,0.
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with item border thickness](UI_Customization_Images/winui-segmented-control-itemborderthickness.png)
+![WinUI Segmented Control with item border thickness](UI_Customization_Images/winui-segmented-control-item-border-thickness.png)
 
 ## CornerRadius
 
@@ -151,7 +151,7 @@ N> The default value is 0.
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with corner radius](UI_Customization_Images/winui-segmented-control-cornerradius.png)
+![WinUI Segmented Control with corner radius](UI_Customization_Images/winui-segmented-control-corner-radius.png)
 
 ## Border color
 
@@ -199,7 +199,7 @@ The Segmented control border color can be customized using the [BorderBrush](htt
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with border color](UI_Customization_Images/winui-segmented-control-bordercolor.png)
+![WinUI Segmented Control with border color](UI_Customization_Images/winui-segmented-control-border-color.png)
 
 ## ItemTemplateSelector
 
