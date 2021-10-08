@@ -7,26 +7,26 @@ control: SfComboBox
 documentation: ug
 ---
 
-# Searching in WinUI ComboBox
+# Searching in WinUI ComboBox (SfComboBox)
 
-The ComboBox control provides rich text searching functionality. The [TextSearchMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_TextSearchMode) and [IsTextSearchEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsTextSearchEnabled) properties of the SfComboBox can be used to regulate how the control behaves when it receives user input.
+The [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html) control provides rich text searching functionality. The [TextSearchMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_TextSearchMode) and [IsTextSearchEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsTextSearchEnabled) properties of the `ComboBox` can be used to regulate how the control behaves when it receives user input.
 
 ## Search based on member path
 
-The [TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_TextMemberPath) and [DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_DisplayMemberPath) properties of ComboBox control specify the property path, by which the searching must be done when a custom data is bound to the `ItemsSource` property.
+The [TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_TextMemberPath) and [DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_DisplayMemberPath) properties of `ComboBox` control specify the property path, by which the searching must be done when a custom data is bound to the `ItemsSource` property.
 
-`TextMemberPath` - Specifies the property path, by which the searching must be done when user input is received in the selection box portion of the ComboBox control. The default value is `String.Empty`.
+`TextMemberPath` - Specifies the property path, by which the searching must be done when user input is received in the selection box portion of the `ComboBox` control. The default value is `String.Empty`.
 
-`DisplayMemberPath` - Specifies the property path, by which the searching must be done when user input is received in the drop-down portion of the ComboBox control. The default value is `String.Empty`.
+`DisplayMemberPath` - Specifies the property path, by which the searching must be done when user input is received in the drop-down portion of the `ComboBox` control. The default value is `String.Empty`.
 
 ## Auto appending of text
 
-The ComboBox control provides support to auto append the text based on data source when end-user edits. If the `IsTextSearchEnabled` property is set as `false`, the matched suitable text will not append with the entered text.
+The `ComboBox` control provides support to auto append the text based on data source when end-user edits. If the `IsTextSearchEnabled` property is set as `false`, the matched suitable text will not append with the entered text.
 
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfComboBox x:Name="sfComboBox"
+<editors:SfComboBox x:Name="comboBox"
     Width="250"
     IsEditable="true"
     ItemsSource="{Binding SocialMedias}"
@@ -42,7 +42,7 @@ N> Auto appending of text is supported only in `Editable` mode and `TextSearchMo
 
 ## Search Mode
 
-The `TextSearchMode` property of the SfComboBox can be used to regulate how the control behaves when it receives user input. The default text searching type is `StartsWith`, ignoring accent and it is case insensitive. The available text search modes are,
+The `TextSearchMode` property of the `ComboBox` can be used to regulate how the control behaves when it receives user input. The default text searching type is `StartsWith`, ignoring accent and it is case insensitive. The available text search modes are,
 
 * StartsWith
 * Contains
@@ -56,7 +56,7 @@ The following examples show how to text searching functionality in single select
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfComboBox x:Name="sfComboBox"
+<editors:SfComboBox x:Name="comboBox"
                     Width="250"
                     TextSearchMode="StartsWith"
                     ItemsSource="{Binding SocialMedias}"
@@ -68,7 +68,7 @@ The following examples show how to text searching functionality in single select
 
 {% highlight C# %}
 
-sfComboBox.TextSearchMode = ComboBoxTextSearchMode.StartsWith;
+comboBox.TextSearchMode = ComboBoxTextSearchMode.StartsWith;
 
 {% endhighlight %}
 {% endtabs %}
@@ -80,7 +80,7 @@ The following examples show how to text searching functionality in multiple sele
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfComboBox x:Name="sfComboBox"
+<editors:SfComboBox x:Name="comboBox"
                     Width="250"
                     SelectionMode="Multiple"
                     TextSearchMode="StartsWith"
@@ -93,7 +93,7 @@ The following examples show how to text searching functionality in multiple sele
 
 {% highlight C# %}
 
-sfComboBox.TextSearchMode = ComboBoxTextSearchMode.StartsWith;
+comboBox.TextSearchMode = ComboBoxTextSearchMode.StartsWith;
 
 {% endhighlight %}
 {% endtabs %}
@@ -107,7 +107,7 @@ Search the matching items containing specific text, and the first item which fit
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfComboBox x:Name="sfComboBox"
+<editors:SfComboBox x:Name="comboBox"
     Width="250"
     IsEditable="True"
     TextSearchMode="Contains"
@@ -119,7 +119,7 @@ Search the matching items containing specific text, and the first item which fit
 
 {% highlight C# %}
 
-sfComboBox.TextSearchMode = ComboBoxTextSearchMode.Contains;
+comboBox.TextSearchMode = ComboBoxTextSearchMode.Contains;
 
 {% endhighlight %}
 {% endtabs %}
@@ -128,12 +128,12 @@ sfComboBox.TextSearchMode = ComboBoxTextSearchMode.Contains;
 
 ## How to disable searching
 
-To disable searching and auto appending text functionalities, set the `IsTextSearchEnabled` property as `false`. The default value is true.
+To disable searching and auto appending text functionalities, set the `IsTextSearchEnabled` property as `false`. The default value is `true`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfComboBox x:Name="sfComboBox"
+<editors:SfComboBox x:Name="comboBox"
     Width="250"
     IsTextSearchEnabled="false"
     IsEditable="true"
@@ -145,7 +145,7 @@ To disable searching and auto appending text functionalities, set the `IsTextSea
 
 {% highlight C# %}
 
-sfComboBox.IsTextSearchEnabled = false;
+comboBox.IsTextSearchEnabled = false;
 
 {% endhighlight %}
 {% endtabs %}
