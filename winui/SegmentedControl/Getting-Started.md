@@ -327,7 +327,7 @@ public class SegmentedViewModel
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/Getting-Started)
 
-## ItemTemplateSelector
+### ItemTemplateSelector
 
 The Segmented control allows the custom logic for choosing a template used to display each item by using the [ItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemTemplateSelector) property.
 
@@ -495,7 +495,7 @@ public class SegmentedViewModel
 ![WinUI Segmented Control with bordercolor](UI_Customization_Images/winui-segmented-control-itemtemplateselector.png)
 
 
-## ItemContainerStyleSelector
+### ItemContainerStyleSelector
 
 The  [ItemContainerStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyleSelector) property is used to specify custom style selection logic for each generated container [SfSegmentedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedItem.html) in the SegmentedControl.
 
