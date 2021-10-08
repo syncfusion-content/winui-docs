@@ -169,7 +169,7 @@ The animation effect can be disabled while selecting the item by setting the [Se
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with animation disabled](Selection_Images/winui-segmented-control-disble-animation.gif)
+![WinUI Segmented Control with animation disabled](Selection_Images/winui-segmented-control-disable-animation.gif)
 
 ## Keyboard behaviors
 
