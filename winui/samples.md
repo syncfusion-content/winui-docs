@@ -45,7 +45,12 @@ For example, below there is a demonstration to run an individual `Chart` control
 
 * Build and deploy the individual control executable project and run the application.
 
-![Running an individual control project](Guide-to-run-the-samples-images/run-induvidual-control-project.png)  
+![Running an individual control project](Guide-to-run-the-samples-images/run-induvidual-control-project.png)
+
+## Online Sample
+
+* Download and install demos from [Microsoft Store](https://www.microsoft.com/en-in/p/syncfusion-winui-controls-gallery/9n0fp16ddc06?activetab=pivot:overviewtab).
+
 
 ## Download demos from online (clone from github repository)
 
