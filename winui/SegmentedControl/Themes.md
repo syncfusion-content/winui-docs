@@ -13,7 +13,7 @@ This section explains SegmentedControl's various themes and how to customize the
 
 ## Set the Themes in Segmented Control
 
-The Segmented Control provides a various themes support by setting the theme name in RequestedTheme property in the App.xaml file.
+The Segmented Control provides a various themes support by setting the theme name in `RequestedTheme` property in the App.xaml file.
 
 
 * Dark Theme
