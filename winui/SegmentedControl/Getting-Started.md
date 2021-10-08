@@ -81,29 +81,21 @@ The Segmented control allows you to set the collection of strings as a data sour
         <syncfusion:SfSegmentedControl x:Name="segmentedControl"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
-                                    SelectedIndex="2"
-                                    ItemsSource="{Binding Days}" />
+                                    SelectedIndex="2"/>
     </Grid>
 </Window>
 
 {% endhighlight %}
 {% highlight C# %}
 
-public class SegmentedViewModel
+public sealed partial class MainWindow : Window
 {
-    public SegmentedViewModel()
+    public MainWindow()
     {
-        Days = new List<string>();
-        Days.Add("Day");
-        Days.Add("Week");
-        Days.Add("Month");
-        Days.Add("Year");
+        this.InitializeComponent();
+        segmentWithString.ItemsSource = new List<string>() { "Day", "Week", "Month", "Year" };
     }
-
-    public List<string> Days
-    {
-        get; set;
-    }
+       
 }
 
 {% endhighlight %}
