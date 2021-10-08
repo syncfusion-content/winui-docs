@@ -55,7 +55,7 @@ N> The default value is 1.
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with borderthickness](UI_Customization_Images/winui-segmented-control-borderthickness.png)
+![WinUI Segmented Control with border thickness](UI_Customization_Images/winui-segmented-control-borderthickness.png)
 
 ## ItemBorderThickness 
 
@@ -106,7 +106,7 @@ N> The default value is 0,0,1,0.
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with itemborderthickness](UI_Customization_Images/winui-segmented-control-itemborderthickness.png)
+![WinUI Segmented Control with item border thickness](UI_Customization_Images/winui-segmented-control-itemborderthickness.png)
 
 ## CornerRadius
 
@@ -151,7 +151,7 @@ N> The default value is 0.
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with cornerradius](UI_Customization_Images/winui-segmented-control-cornerradius.png)
+![WinUI Segmented Control with corner radius](UI_Customization_Images/winui-segmented-control-cornerradius.png)
 
 ## Border color
 
@@ -199,7 +199,7 @@ The Segmented control border color can be customized using the [BorderBrush](htt
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with bordercolor](UI_Customization_Images/winui-segmented-control-bordercolor.png)
+![WinUI Segmented Control with border color](UI_Customization_Images/winui-segmented-control-bordercolor.png)
 
 ## ItemTemplateSelector
 
@@ -264,9 +264,6 @@ The Segmented control allows the custom logic for choosing a template used to di
 </Window>
 
 {% endhighlight %}
-
-The following code sample is used to bind the data source to the Segmented control.
-
 {% highlight C# %}
 
 public class SegmentedViewModel
@@ -311,7 +308,7 @@ public class SegmentedViewModel
     }  
 }
 
- public class SegmentedModel : INotifyPropertyChanged
+public class SegmentedModel : INotifyPropertyChanged
 {
     private string name;
 
@@ -345,28 +342,25 @@ public class SegmentedViewModel
     }
 }
 
-{% endhighlight %}
-
-{% highlight C# %}
-    class ItemTemplateSelector : DataTemplateSelector
+public class ItemTemplateSelector : DataTemplateSelector
+{
+    public DataTemplate SelectedTemplate { get; set; }
+    public DataTemplate ChildTemplate { get; set; }
+    protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
     {
-        public DataTemplate SelectedTemplate { get; set; }
-        public DataTemplate ChildTemplate { get; set; }
-        protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
-        {
-            if (container == null)
-                return null;
+        if (container == null)
+            return null;
         if ((container as SfSegmentedItem).IsSelected)
-                return SelectedTemplate;
-            else
-                return ChildTemplate;
-        }
+            return SelectedTemplate;
+        else
+            return ChildTemplate;
+    }
 }
 
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with bordercolor](UI_Customization_Images/winui-segmented-control-itemtemplateselector.png)
+![WinUI Segmented Control with item template selector](UI_Customization_Images/winui-segmented-control-itemtemplateselector.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/ItemTemplateSelector)
 
@@ -453,13 +447,10 @@ The  [ItemContainerStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusio
 
 
 {% endhighlight %}
-
-The following code sample is used to bind the data source to the Segmented control.
-
 {% highlight C# %} 
 
- public class SegmentedViewModel
- {
+public class SegmentedViewModel
+{
     public SegmentedViewModel()
     {
         Days = new List<SegmentedModel>();
@@ -475,8 +466,8 @@ The following code sample is used to bind the data source to the Segmented contr
     }
 }
 
- public class SegmentedModel : INotifyPropertyChanged
- {
+public class SegmentedModel : INotifyPropertyChanged
+{
     private string name;
 
     public string Name
@@ -501,10 +492,6 @@ The following code sample is used to bind the data source to the Segmented contr
     }
 }
 
-{% endhighlight %}
-
-{% highlight C# %} 
-
 public class RatingStyleSelector : StyleSelector
 {
     public Style AverageRatingStyle { get; set; }
@@ -521,16 +508,13 @@ public class RatingStyleSelector : StyleSelector
 }
 
 {% endhighlight %}
-
 {% endtabs %} 
 
-![WinUI Segmented Control with bordercolor](UI_Customization_Images/winui-segmented-control-itemcontainerstyleselector.png)
+![WinUI Segmented Control with item container style selector](UI_Customization_Images/winui-segmented-control-itemcontainerstyleselector.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/ItemContainerStyleSelector)
 
 ## Custom Templates in WinUI Segmented Control
-
-This section explains how to customize the SfSegmentedItem and its related operations in the Segmented control.
 
 ### Ellipse style
 
@@ -607,7 +591,7 @@ The following code example illustrates how to customize the ellipse style.
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with ellipse](Custom_Templates_Images/winui-segmented-control-ellipse.png)
+![WinUI Segmented Control with ellipse style](Custom_Templates_Images/winui-segmented-control-ellipse.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/Ellipse-Style)
 
@@ -734,7 +718,7 @@ The following code example illustrates how to customize the image with text styl
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with imagewithtext](Custom_Templates_Images/winui-segmented-control-image-with-text.png)
+![WinUI Segmented Control with image and text](Custom_Templates_Images/winui-segmented-control-image-with-text.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/Image-with-text)
 
@@ -843,11 +827,11 @@ The following code example illustrates how to customize the top indicator style.
 
 **Light Theme**
 
-![WinUI Segmented Control with light theme topindicator](Custom_Templates_Images/winui-segmented-control-light-theme-topindicator.png)
+![WinUI Segmented Control with light theme top indicator](Custom_Templates_Images/winui-segmented-control-light-theme-topindicator.png)
 
 **Dark Theme**
 
-![WinUI Segmented Control with dark theme topindicator](Custom_Templates_Images/winui-segmented-control-dark-theme-topindicator.png)
+![WinUI Segmented Control with dark theme top indicator](Custom_Templates_Images/winui-segmented-control-dark-theme-topindicator.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/Top-Indicator-Style)
 

@@ -36,16 +36,8 @@ The Segmented control allows you to select the segment item based on data source
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
                                     SelectedIndex="2"
+                                    DisplayMemberPath="Name"
                                     ItemsSource="{Binding Days}">
-                <syncfusion:SfSegmentedControl.ItemTemplate>
-                    <DataTemplate>
-                        <Grid>
-                            <TextBlock Text="{Binding Name}"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"/>
-                        </Grid>
-                    </DataTemplate>
-                </syncfusion:SfSegmentedControl.ItemTemplate>
             </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
@@ -53,11 +45,11 @@ The Segmented control allows you to select the segment item based on data source
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Segmented Control with selecteditem customization](Selection_Images/winui-segmented-control-selected-item-customization2.png)
+![WinUI Segmented Control with selected index customization](Selection_Images/winui-segmented-control-selected-item-customization2.png)
 
 ## Selected item customization
 
-The Segmented control allows you to customize the appearance of selected item using the [SelectedSegmentStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedSegmentStyle) property. You need to provide the target types' style as [Border](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.border).
+The Segmented control allows you to customize the appearance of selected item using the [SelectedSegmentStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedSegmentStyle) property. You need to provide the style with target type [Border](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.border).
 
 {% tabs %}
 {% highlight xaml %}
@@ -85,16 +77,8 @@ The Segmented control allows you to customize the appearance of selected item us
                                     VerticalAlignment="Center"
                                     SelectedIndex="2" 
                                     SelectedSegmentStyle="{StaticResource selectedItemStyle}"
+                                    DisplayMemberPath="Name"
                                     ItemsSource="{Binding Days}">
-            <syncfusion:SfSegmentedControl.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <TextBlock Text="{Binding Name}"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"/>
-                    </Grid>
-                </DataTemplate>
-            </syncfusion:SfSegmentedControl.ItemTemplate>
         </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
@@ -137,16 +121,9 @@ When setting  [SelectionAnimationType](https://help.syncfusion.com/cr/winui/Sync
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
                                     SelectedIndex="0" 
+                                    SelectionAnimationType="Slide"
+                                    DisplayMemberPath="Name"
                                     ItemsSource="{Binding Days}">
-            <syncfusion:SfSegmentedControl.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <TextBlock Text="{Binding Name}"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"/>
-                    </Grid>
-                </DataTemplate>
-            </syncfusion:SfSegmentedControl.ItemTemplate>
         </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
@@ -154,7 +131,7 @@ When setting  [SelectionAnimationType](https://help.syncfusion.com/cr/winui/Sync
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with animation](Selection_Images/winui-segmented-control-animation.gif)
+![WinUI Segmented Control with slide animation](Selection_Images/winui-segmented-control-animation.gif)
 
 ### None
 
@@ -180,17 +157,9 @@ The animation effect can be disabled while selecting the item by setting the [Se
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
                                     SelectedIndex="0"
-                                    SelectionAnimationType="None" 
+                                    SelectionAnimationType="None"
+                                    DisplayMemberPath="Name" 
                                     ItemsSource="{Binding Days}">
-            <syncfusion:SfSegmentedControl.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <TextBlock Text="{Binding Name}"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"/>
-                    </Grid>
-                </DataTemplate>
-            </syncfusion:SfSegmentedControl.ItemTemplate>
         </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
@@ -198,7 +167,7 @@ The animation effect can be disabled while selecting the item by setting the [Se
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control with animation](Selection_Images/winui-segmented-control-animation1.gif)
+![WinUI Segmented Control with animation disabled](Selection_Images/winui-segmented-control-animation1.gif)
 
 ## Keyboard behaviors
 

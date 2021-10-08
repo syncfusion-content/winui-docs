@@ -9,14 +9,13 @@ documentation: ug
 
 # Theme support in WinUI Segmented Control
 
-This section explains SegmentedControl's various themes and how to customize the appearance with keys.
+This section explains Segmented control's various themes and how to customize the appearance with keys.
 
 ## Set the Themes in Segmented Control
 
-The Segmented Control provides a various themes support by setting the theme name in `RequestedTheme` property in the App.xaml file.
+The Segmented Control provides various themes to be applied by setting the theme name in `RequestedTheme` property in the App.xaml file.
 
-
-* Dark Theme
+### Dark Theme
 
 {% tabs %}
 {% highlight xaml %}
@@ -40,7 +39,7 @@ The Segmented Control provides a various themes support by setting the theme nam
 {% endhighlight %}
 {% endtabs %} 
 
-* Light Theme
+### Light Theme
 
 {% tabs %}
 {% highlight xaml %}
@@ -63,8 +62,6 @@ The Segmented Control provides a various themes support by setting the theme nam
 
 {% endhighlight %}
 {% endtabs %} 
-
-
 
 ## Customization using keys
 

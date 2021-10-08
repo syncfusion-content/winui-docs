@@ -21,7 +21,6 @@ This section provides an overview of how to use the [WinUI Segmented Control](ht
 
 4. Initialize the [SfSegmentedControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html).
 
-
 {% tabs %}
 {% highlight xaml %}
 
@@ -81,32 +80,23 @@ The Segmented control allows you to set the collection of strings as a data sour
         <syncfusion:SfSegmentedControl x:Name="segmentedControl"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
-                                    SelectedIndex="2"/>
+                                    SelectedIndex="2">
+            <x:String>Day</x:String>
+            <x:String>Week</x:String>
+            <x:String>Month</x:String>
+            <x:String>Year</x:String>
+        </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
 
 {% endhighlight %}
-{% highlight C# %}
-
-public sealed partial class MainWindow : Window
-{
-    public MainWindow()
-    {
-        this.InitializeComponent();
-        segmentWithString.ItemsSource = new List<string>() { "Day", "Week", "Month", "Year" };
-    }
-       
-}
-
-{% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control getting started image](Getting_Started_Images/winui-segmented-control-getting-started.png)
+![WinUI Segmented Control getting started using string collection](Getting_Started_Images/winui-segmented-control-getting-started.png)
 
 ## Populating items using business objects
 
 Populating items to the Segmented Control by setting the collection of business objects to the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemsSource) property.
-
 
 ### DisplayMemberPath
 
@@ -180,7 +170,7 @@ public class SegmentedModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control getting started image](Getting_Started_Images/winui-segmented-control-getting-started1.png)
+![WinUI Segmented Control using DisplayMemberPath and business object](Getting_Started_Images/winui-segmented-control-getting-started1.png)
 
 ### ItemTemplate
 
@@ -278,7 +268,7 @@ public class SegmentedViewModel
     }  
 }
 
- public class SegmentedModel : INotifyPropertyChanged
+public class SegmentedModel : INotifyPropertyChanged
 {
     private string name;
 
@@ -315,7 +305,7 @@ public class SegmentedViewModel
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control getting started image](Getting_Started_Images/winui-segmented-control-getting-started2.png)
+![WinUI Segmented Control using ItemTemplate and business object](Getting_Started_Images/winui-segmented-control-getting-started2.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/Getting-Started)
 
