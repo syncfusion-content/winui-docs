@@ -115,6 +115,8 @@ The Segmented control supports slide animation for selecting the item. Also, use
 
 ### Slide
 
+When setting  SelectionAnimationType to Slide, then the slide animation effect is applied while selecting the item.
+
 {% tabs %}
 {% highlight xaml %}
 
@@ -155,6 +157,8 @@ The Segmented control supports slide animation for selecting the item. Also, use
 ![WinUI Segmented Control with animation](Selection_Images/winui-segmented-control-animation.gif)
 
 ### None
+
+The animation effect can be disabled while selecting the item by setting the SelectionAnimationType to None.
 
 {% tabs %}
 {% highlight xaml %}
@@ -263,7 +267,3 @@ private void SegmentedControl_SelectionChanged(object sender, SegmentSelectionCh
 {% endhighlight %}
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/Selection-Style)
-
-
-
-

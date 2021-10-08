@@ -9,11 +9,12 @@ documentation: ug
 
 # Theme support in WinUI Segmented Control
 
-This section explains about features that aid in the Themes of [Segmented](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html) Control, customization of the appearance of Segmented item, and its related operations in the Segmented control.
+This section explains SegmentedControl's various themes and how to customize the appearance with keys.
 
 ## Set the Themes in Segmented Control
 
-The Segmented control provided a theme support and change the appearance of the control can be Set the themes in [RequestedTheme] () property in App.xaml file. The following code sample will be used to set theme in application
+The Segmented Control provides a various themes support by setting the theme name in RequestedTheme property in the App.xaml file.
+
 
 * Dark Theme
 

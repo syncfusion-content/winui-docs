@@ -296,7 +296,7 @@ public class SegmentedViewModel
         set { name = value; OnPropertyChanged("Name"); }
     }
 
-    public string icon;
+    private string icon;
 
     public string Icon
     {
