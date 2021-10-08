@@ -7,9 +7,9 @@ control: SfComboBox
 documentation: ug
 ---
 
-# Keyboard support in WinUI ComboBox
+# Keyboard support in WinUI ComboBox (SfComboBox)
 
-This section explains the shortcut keys that supported in SfComboBox. 
+This section explains the shortcut keys that supported in [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html). 
 
 ## Keyboard behaviors
 
