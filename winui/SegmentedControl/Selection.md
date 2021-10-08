@@ -115,7 +115,7 @@ The Segmented control supports slide animation for selecting the item. Also, use
 
 ### Slide
 
-When setting  SelectionAnimationType to Slide, then the slide animation effect is applied while selecting the item.
+When setting  [SelectionAnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectionAnimationType) to Slide, then the slide animation effect is applied while selecting the item.
 
 {% tabs %}
 {% highlight xaml %}
@@ -158,7 +158,7 @@ When setting  SelectionAnimationType to Slide, then the slide animation effect i
 
 ### None
 
-The animation effect can be disabled while selecting the item by setting the SelectionAnimationType to None.
+The animation effect can be disabled while selecting the item by setting the [SelectionAnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectionAnimationType) to None.
 
 {% tabs %}
 {% highlight xaml %}
