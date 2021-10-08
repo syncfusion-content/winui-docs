@@ -344,4 +344,4 @@ N> `SelectionBoxItemTemplate` has no effect when `IsEditable` is `true`.
 
 ![Custom UI of Selection Box using SelectionBoxItemTemplate](GettingStarted_images/winui-combobox-selectionBoxItemTemplate.png)
 
-N> You can refer more information about Customization of `ComboBox` element using theme keys from [this](https://help.syncfusion.com/winui/themes) link.
+N> You can refer more information about different theme support and Customization of `ComboBox` element using theme keys from [this](https://help.syncfusion.com/winui/themes) link.
