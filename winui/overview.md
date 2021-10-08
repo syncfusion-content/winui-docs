@@ -77,7 +77,7 @@ background-color:transparent!important;
   <tr>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/datagrid/getting-started" >Data Grid</a> </td>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/calendar/getting-started" >Calendar</a> </td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/chart/getting-started" >Charts</a>         </td>
+    <td><a id="anchor"  href="https://help.syncfusion.com/winui/barcode/getting-started" >BarCode</a></td>
     <td><a id="anchor" href="https://help.syncfusion.com/winui/combobox/getting-started">ComboBox</a></td>
   </tr>
   <tr>
@@ -87,34 +87,39 @@ background-color:transparent!important;
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/color-picker/getting-started">Color Picker</a></td>
   </tr>
   <tr>
-    <td></td>
+    <td id="title">NAVIGATION</td>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/calendar-daterange-picker/getting-started">Calendar DateRange Picker</a></td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/barcode/getting-started" >Barcode</a></td>
+    <td><a id="anchor"  href="https://help.syncfusion.com/winui/linear-gauge/getting-started" >Linear Gauge</a></td>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/dropdown-color-picker/getting-started">Dropdown Color Picker</a></td>
   </tr>
   <tr>
-    <td id="title">INPUT CONTROLS</td>
+    <td><a id="anchor"  href="https://help.syncfusion.com/winui/ribbon/getting-started" >Ribbon</a></td>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/date-picker/getting-started" >Date Picker</a></td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/linear-gauge/getting-started" >Linear Gauge</a></td>
+    <td><a id="anchor"  href="https://help.syncfusion.com/winui/cartesian-charts/getting-started">Cartesian Charts</a></td>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/color-palette/getting-started">Color Palette</a></td>
   </tr>
   <tr>
-     <td><a id="anchor"  href="https://help.syncfusion.com/winui/slider/getting-started">Slider</a></td>
+    <td><a id="anchor"  href="https://help.syncfusion.com/winui/treeview/getting-started" >TreeView</a></td>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/time-picker/getting-started">Time Picker</a></td>
-    <td></td>
+    <td><a id="anchor"  href="https://help.syncfusion.com/winui/circular-charts/getting-started">Circular Charts</a></td>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/dropdown-color-palette/getting-started">Dropdown Color Palette</a></td>
   </tr>
   <tr>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/rangeslider/getting-started">Range Slider</a></td>
+    <td id="title">INPUT CONTROLS</td>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/scheduler/getting-started">Scheduler</a></td>
-     <td id="title">NOTIFICATION</td>
-     <td><a id="anchor"  href="https://help.syncfusion.com/winui/numberbox/getting-started" >NumberBox</a></td>
-    <td></td>
+    <td><a id="anchor"  href="https://help.syncfusion.com/winui/funnel-chart/getting-started">Funnel Chart</a></td>
+    <td><a id="anchor"  href="https://help.syncfusion.com/winui/numberbox/getting-started" >NumberBox</a></td>
   </tr>
   <tr>
- <td></td>
-    <td></td>
+    <td><a id="anchor"  href="https://help.syncfusion.com/winui/slider/getting-started">Slider</a></td>
+    <td id="title">NOTIFICATION</td>
+    <td><a id="anchor"  href="https://help.syncfusion.com/winui/polar-chart/getting-started">Polar Charts</a></td>
+    <td><a id="anchor"  href="https://help.syncfusion.com/winui/segmentedcontrol/getting-started" >Segmented Control</a></td>
+  </tr>
+  <tr>
+    <td><a id="anchor"  href="https://help.syncfusion.com/winui/rangeslider/getting-started">Range Slider</a></td>
     <td><a id="anchor"  href="https://help.syncfusion.com/winui/badge/getting-started">Badge</a></td>
+    <td><a id="anchor"  href="https://help.syncfusion.com/winui/pyramid-chart/getting-started">Pyramid Chart</a></td>
     <td></td>
   </tr>
 </tbody>

@@ -21,13 +21,9 @@ C:\Program Files (x86)\Syncfusion\Essential Studio\WinUI\{{ site.releaseversion 
 
 N> In the above section, latest Essential Studio version details has been provided. Refer installed Essential Studio version instead of mentioned version.
 
-## WinUI sample browser
+## Syncfusion Controls Gallery for WinUI Desktop
 
-The Syncfusion `WinUI Sample Browser` is available for the WinUI `Desktop` environments.
-
-### WinUI Desktop
-
-The WinUI desktop project can be explored in the Visual Studio by clicking `Run Local Demos` to open the `WinUI Sample Browser`.
+The Syncfusion WinUI desktop controls can be explored in the Visual Studio by clicking `Run Local Demos`.
  
  ![Explore Syncfusion WinUI Demos with Desktop Project](Guide-to-run-the-samples-images/exploring-winui-desktop-sample-browser-new.png)
 
@@ -49,7 +45,12 @@ For example, below there is a demonstration to run an individual `Chart` control
 
 * Build and deploy the individual control executable project and run the application.
 
-![Running an individual control project](Guide-to-run-the-samples-images/run-induvidual-control-project.png)  
+![Running an individual control project](Guide-to-run-the-samples-images/run-induvidual-control-project.png)
+
+## Online Sample
+
+* Download and install demos from [Microsoft Store](https://www.microsoft.com/en-in/p/syncfusion-winui-controls-gallery/9n0fp16ddc06?activetab=pivot:overviewtab).
+
 
 ## Download demos from online (clone from github repository)
 
