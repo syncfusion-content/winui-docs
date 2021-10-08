@@ -368,6 +368,8 @@ public class SegmentedViewModel
 
 ![WinUI Segmented Control with bordercolor](UI_Customization_Images/winui-segmented-control-itemtemplateselector.png)
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/ItemTemplateSelector)
+
 
 ## ItemContainerStyleSelector
 
@@ -524,6 +526,7 @@ public class RatingStyleSelector : StyleSelector
 
 ![WinUI Segmented Control with bordercolor](UI_Customization_Images/winui-segmented-control-itemcontainerstyleselector.png)
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/ItemContainerStyleSelector)
 
 ## Custom Templates in WinUI Segmented Control
 
