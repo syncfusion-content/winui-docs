@@ -19,6 +19,66 @@ The [TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Edi
 
 `DisplayMemberPath` - Specifies the property path, by which the searching must be done when user input is received in the drop-down portion of the `ComboBox` control. The default value is `String.Empty`.
 
+N> `TextMemberPath` and `DisplayMemberPath` will be effective for the collection item that holds two or more properties in it.
+
+## Edit mode Searching based on TextMemberPath
+
+In edit mode, searching will be performed based on the `TextMemberPath` property while entering the text in selection box. If `TextMemberPath` is `null`, searching will not be take effect. Edit mode searching will not be performed based on `DisplayMemberPath` property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfComboBox x:Name="comboBox"
+    Width="250"
+    IsTextSearchEnabled="true"
+    IsEditable="true"
+    ItemsSource="{Binding SocialMedias}"
+    TextMemberPath="ID"
+    DisplayMemberPath="Name" />
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+comboBox.TextMemberPath = "ID";
+
+{% endhighlight %}
+{% endtabs %}
+
+For e.g. After typing `5` in selection box:
+
+![WinUI ComboBox text searching based on TextMemberPath](Searching_images/winui-combobox-textmemberpath-searching.png)
+
+## Non-Editable mode Searching based on DisplayMemberPath
+
+In non-editable mode, searching will be performed based on the `DisplayMemberPath` property while entering the text in selection box. If `DisplayMemberPath` is `null`, searching will not be take effect. Non-editable mode searching will not be performed based on `TextMemberPath` property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfComboBox x:Name="comboBox"
+    Width="250"
+    IsTextSearchEnabled="true"
+    IsEditable="true"
+    ItemsSource="{Binding SocialMedias}"
+    TextMemberPath="Name"
+    DisplayMemberPath="ID" />
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+comboBox.DisplayMemberPath = "ID";
+
+{% endhighlight %}
+{% endtabs %}
+
+For e.g. After typing `5` in drop-down:
+
+![WinUI ComboBox text searching based on DisplayMemberPath](Searching_images/winui-combobox-displaymemberpath-searching.png)
+
+N> If `TextMemberPath` and `DisplayMemberPath` are `null`, searching will be performed based on the class name with namespace of the item.
+
 ## Auto appending of text
 
 The `ComboBox` control provides support to auto append the text based on data source when end-user edits. If the `IsTextSearchEnabled` property is set as `false`, the matched suitable text will not append with the entered text.
@@ -151,3 +211,4 @@ comboBox.IsTextSearchEnabled = false;
 {% endtabs %}
 
 ![WinUI ComboBox text searching functionality is disabled](Searching_images/winui-combobox-disable-text-searching.png)
+

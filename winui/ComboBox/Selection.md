@@ -17,7 +17,7 @@ The `ComboBox` allows user to select a single item from the drop-down list.
 
 ### UI Selection 
 
-The selected item can be changed interactively by selecting from the drop-down list or enter the value using keyboard. The selected item can be retrieved from the [SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectedItem) or [SelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_SelectedIndex) property of `ComboBox` control.
+The selected item can be changed interactively by selecting from the drop-down list or enter the value using keyboard and clicking the `Enter` key or lose the control focus. The selected item can be retrieved from the [SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectedItem) or [SelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_SelectedIndex) property of `ComboBox` control.
 
 {% tabs %}
 {% highlight xaml %}
