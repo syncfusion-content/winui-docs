@@ -11,7 +11,7 @@ documentation: ug
 
 ## Area Chart
 
-The area chart is rendered by using a collection of line segments connected to form a closed loop area, filled with the specified color. To render a area chart, create an instance of [AreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AreaSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of the chart.
+The [WinUI Area Chart](https://www.syncfusion.com/winui-controls/charts/winui-area-chart) is rendered by using a collection of line segments connected to form a closed loop area, filled with the specified color. To render a area chart, create an instance of [AreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AreaSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of the chart.
 
 {% tabs %}
 
@@ -109,6 +109,8 @@ this.Content = chart;
 
 ![Spline area chart type in WinUI Chart](Chart-types_images/WinUI_spline_area_chart.png)
 
+N> You can refer to our [WinUI Spline Area Chart](https://www.syncfusion.com/winui-controls/charts/winui-spline-area-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Spline Area Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Basic%20Charts/SplineAreaChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+
 ## Step Area Chart
 
 The [StepAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StepAreaSeries.html) is similar to [AreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AreaSeries.html), but it does not use the shortest distance to connect the two data points using bezier curves. Instead, this series uses vertical and horizontal lines to connect the data points in a series forming a step-like progression.
@@ -159,3 +161,4 @@ this.Content = chart;
 
 ![Step area chart type in WinUI](Chart-types_images/WinUI_step_area_chart.png)
 
+N> You can refer to our [WinUI Step Area Chart](https://www.syncfusion.com/winui-controls/charts/winui-step-area-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Step Area Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Basic%20Charts/StepAreaChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.

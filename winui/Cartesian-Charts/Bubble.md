@@ -160,3 +160,4 @@ chart.Series.Add(series);
 
 ![ShowZeroBubbles support in WinUI Chart](Bubble_Images/WinUI_bubble_chart_showzerobubble_false.png)
 
+N> You can refer to our [WinUI Bubble Chart](https://www.syncfusion.com/winui-controls/charts/winui-bubble-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Bubble Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Basic%20Charts/BubbleChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
