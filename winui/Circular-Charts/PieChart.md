@@ -222,4 +222,4 @@ chart.Series.Add(series2);
 
 ![Combination Chart of WinUI chart](Series_images/winui_combination_chart.png)
 
-N> You can refer to our [WinUI Pie Chart](https://www.syncfusion.com/winui-controls/charts/winui-pie-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Pie Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Circular%20Charts/PieChart.xaml)that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can refer to our [WinUI Pie Chart](https://www.syncfusion.com/winui-controls/charts/winui-pie-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Pie Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Circular%20Charts/PieChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
