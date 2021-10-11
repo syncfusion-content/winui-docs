@@ -23,7 +23,7 @@ N> `TextMemberPath` and `DisplayMemberPath` will be effective for the collection
 
 ## Edit mode Searching based on TextMemberPath
 
-In edit mode, searching will be performed based on the `TextMemberPath` property while entering the text in selection box. If `TextMemberPath` is `null`, searching will not be take effect. Edit mode searching will not be performed based on `DisplayMemberPath` property.
+In edit mode, searching will be performed based on the `TextMemberPath` property while entering the text into the selection box. If `TextMemberPath` is set to `null`, searching will be disabled. Edit mode searching will not be performed based on the `DisplayMemberPath` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -45,13 +45,13 @@ comboBox.TextMemberPath = "ID";
 {% endhighlight %}
 {% endtabs %}
 
-For e.g. After typing `5` in selection box:
+For e.g. After typing `5` in selection box.
 
 ![WinUI ComboBox text searching based on TextMemberPath](Searching_images/winui-combobox-textmemberpath-searching.png)
 
 ## Non-Editable mode Searching based on DisplayMemberPath
 
-In non-editable mode, searching will be performed based on the `DisplayMemberPath` property while entering the text in selection box. If `DisplayMemberPath` is `null`, searching will not be take effect. Non-editable mode searching will not be performed based on `TextMemberPath` property.
+In non-editable mode, searching will be performed based on the `DisplayMemberPath` property while entering the text into the selection box. If `DisplayMemberPath` is `null`, searching will be disabled. Non-editable mode searching will not be performed based on the `TextMemberPath` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -73,7 +73,7 @@ comboBox.DisplayMemberPath = "ID";
 {% endhighlight %}
 {% endtabs %}
 
-For e.g. After typing `5` in drop-down:
+For e.g. After typing `5` in drop-down.
 
 ![WinUI ComboBox text searching based on DisplayMemberPath](Searching_images/winui-combobox-displaymemberpath-searching.png)
 

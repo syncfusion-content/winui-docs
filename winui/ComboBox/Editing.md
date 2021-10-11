@@ -13,9 +13,9 @@ The [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.S
 
 ## Editable ComboBox
 
-In editable mode, the `ComboBox` allows users to edit in the text box and it automatically appends the remaining letters with the entered text when it's valid. If the [IsTextSearchEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsTextSearchEnabled) property is set as `false`, the matched suitable text will not append with the entered text and will not automatically show the suggestions in a drop-down list based on the input.
+In editable mode, the `ComboBox` allows users to edit in the text box and it automatically appends the remaining letters to the entered text when it is valid. If the [IsTextSearchEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UIXaml_Editors.Xaml.Editors.SfComboBox.html#Syncfusion_UI__SfComboBox_IsTextSearchEnabled) property is set as `false`, the matched suitable text will not append to the entered text and will not automatically display suggestions in a drop-down list based on the input.
 
-N> `SelectedItem` will be updated once the control lost focus or the `Enter` or `Tab` key is pressed. If edit text is empty, previously `SelectedItem` will not be cleared.
+N> `SelectedItem` will be updated, once the control has lost focus or the `Enter` or `Tab` key is pressed. If the edit text is empty, the previously SelectedItem will not be cleared. If the [SelectionChangeTrigger](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_SelectionChangeTrigger) property is set as `Always`, the `SelectedItem` will be updated immediately during input changing. 
 
 {% tabs %}
 {% highlight XAML %}
