@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Scheduler (SfScheduler)
 
-This section provides an overview of working with [WinUI Scheduler](https://www.syncfusion.com/winui-controls/Scheduler) and also provides a walk-through to configure the WinUI Scheduler control in a real-time scenario.
+This section provides an overview of working with [WinUI Scheduler](https://www.syncfusion.com/winui-controls/scheduler) and also provides a walk-through to configure the WinUI Scheduler control in a real-time scenario.
 
 ## Creating an application with WinUI Scheduler
 
@@ -391,3 +391,5 @@ Schedule.FirstDayOfWeek = DayOfWeek.Monday;
 {% endtabs %}  
 
 ![change-first-day-of-week-in-winui-scheduler](GettingStarted_Images/change-first-day-of-week-in-winui-scheduler.png)
+
+N> You can also explore our [WinUI Scheduler example](https://github.com/syncfusion/winui-demos/tree/master/scheduler) that shows how to easily configure the scheduler in winui.
