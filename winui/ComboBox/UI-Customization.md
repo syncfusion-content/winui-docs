@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Styling in WinUI ComboBox control | Syncfusion
-description: Learn here all about styling support in Syncfusion WinUI ComboBox (multi-select ComboBox) control into WinUI application and its basic features.
+title: UI Customization in WinUI ComboBox control | Syncfusion
+description: Learn here all about UI customization support in Syncfusion WinUI ComboBox (multi-select ComboBox) control into WinUI application and its basic features.
 platform: winui
 control: SfComboBox
 documentation: ug
 ---
 
-# Styling in WinUI ComboBox (SfComboBox)
+# UI Customization in WinUI ComboBox (SfComboBox)
 
 This section explains different UI customization available in [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html).
 
