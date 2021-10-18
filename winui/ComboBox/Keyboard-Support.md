@@ -9,7 +9,7 @@ documentation: ug
 
 # Keyboard support in WinUI ComboBox (SfComboBox)
 
-This section explains the shortcut keys that supported in [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html). 
+This section explains the shortcut keys that are supported in [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html). 
 
 ## Keyboard behaviors
 
