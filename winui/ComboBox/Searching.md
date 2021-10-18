@@ -111,7 +111,7 @@ The `TextSearchMode` property of the `ComboBox` can be used to regulate how the 
 
 Search the matching items based on the starting text, and the first item which fits the user input in the drop-down list, will be highlighted.
 
-The following examples show how to text searching functionality in single selection mode.
+The following examples show how to perform text searching functionality in single selection mode.
 
 {% tabs %}
 {% highlight XAML %}
@@ -135,7 +135,7 @@ comboBox.TextSearchMode = ComboBoxTextSearchMode.StartsWith;
 
 ![WinUI ComboBox search the items based on provided input in single selection mode](Searching_images/winui-combobox-searching-start-text-single-selection-mode.gif)
 
-The following examples show how to text searching functionality in multiple selection mode.
+The following examples show how to perform text searching functionality in multiple selection mode.
 
 {% tabs %}
 {% highlight XAML %}
