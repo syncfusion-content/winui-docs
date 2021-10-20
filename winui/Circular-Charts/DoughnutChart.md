@@ -212,3 +212,5 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Semi doughnut support in WinUI Chart](Series_images/semi_doughnut_chart.png)
+
+N> You can refer to our [WinUI Doughnut Chart](https://www.syncfusion.com/winui-controls/charts/winui-doughnut-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Doughnut Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Circular%20Charts/DoughnutChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
