@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Chart
 
-This section explains how to populate the funnel chart with data, a header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
+This section explains how to populate the [WinUI Funnel Chart](https://www.syncfusion.com/winui-controls/charts/winui-funnel-chart) with data, a header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
 ## Creating an application with WinUI Chart
 
@@ -302,3 +302,5 @@ public sealed partial class MainWindow : Window
 ![Getting Started in WinUI Chart](Getting-Started_Images/winui-chart.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/FunnelChartGettingStarted).
+
+N> You can also explore our [WinUI Funnel Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Funnel%20And%20Pyramid%20Charts/FunnelChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
