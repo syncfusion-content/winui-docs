@@ -20,104 +20,176 @@ The Syncfusion WinUI Controls are the suite, ever needed to create state of art 
 
 ## Controls list
 
-<style>
-#table
-{
-border:0 !important;
-line-height: 2!important;
-}
-
-tr
-{
-border:0 !important;
-}
-
-td
-{
-border:0 !important;
-}
-
-#anchor
-{
-text-decoration: none!important; 
-font-size: 14px!important; 
-color: #0079F3!important;
-letter-spacing: 0.47px!important;
-text-align: left!important;
-}
-#title
-{
-font-size: 14px!important;
-color: #22252A!important;
-letter-spacing: 0.47px!important;
-text-align: left!important;
-font-weight: bold!important;
-border:0 !important;
-background-color:transparent!important;
-}
-
-</style>
-
-
-<table id="table">
-<tbody>
-<colgroup>
-<col style="width: 170px">
-<col style="width: 210px">
-<col style="width: 190px">
-<col style="width: 158px">
-</colgroup>
-
-  <tr>
-    <th id="title">GRIDS</th>
-    <th id="title">CALENDARS</th>
-    <th id="title">DATA VISUALIZATION</th>
-    <th id="title">EDITORS</th>
-  </tr>
-  <tr>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/datagrid/getting-started" >Data Grid</a> </td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/calendar/getting-started" >Calendar</a> </td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/chart/getting-started" >Charts</a>         </td>
-    <td><a id="anchor" href="https://help.syncfusion.com/winui/combobox/getting-started">ComboBox</a></td>
-  </tr>
-  <tr>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/treegrid/getting-started">Tree Grid</a></td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/calendar-date-picker/getting-started">Calendar Date Picker</a></td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/radial-gauge/getting-started">Radial Gauge</a></td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/color-picker/getting-started">Color Picker</a></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/calendar-daterange-picker/getting-started">Calendar DateRange Picker</a></td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/barcode/getting-started" >Barcode</a></td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/dropdown-color-picker/getting-started">Dropdown Color Picker</a></td>
-  </tr>
-  <tr>
-    <td id="title">INPUT CONTROLS</td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/date-picker/getting-started" >Date Picker</a></td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/linear-gauge/getting-started" >Linear Gauge</a></td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/color-palette/getting-started">Color Palette</a></td>
-  </tr>
-  <tr>
-     <td><a id="anchor"  href="https://help.syncfusion.com/winui/slider/getting-started">Slider</a></td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/time-picker/getting-started">Time Picker</a></td>
-    <td></td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/dropdown-color-palette/getting-started">Dropdown Color Palette</a></td>
-  </tr>
-  <tr>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/rangeslider/getting-started">Range Slider</a></td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/scheduler/getting-started">Scheduler</a></td>
-     <td id="title">NOTIFICATION</td>
-     <td><a id="anchor"  href="https://help.syncfusion.com/winui/numberbox/getting-started" >NumberBox</a></td>
-    <td></td>
-  </tr>
-  <tr>
- <td></td>
-    <td></td>
-    <td><a id="anchor"  href="https://help.syncfusion.com/winui/badge/getting-started">Badge</a></td>
-    <td></td>
-  </tr>
-</tbody>
+<table>
+	<tr>
+		<th align="center">
+			Category<br/>
+		</th>
+		<th align="center">
+			Control<br/>
+		</th>
+	</tr>
+	<tr>
+		<td rowspan="2" valign="top">
+			GRID<br/>
+		</td>
+		<td>
+			<a href="https://help.syncfusion.com/winui/datagrid/getting-started">DataGrid </a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/treegrid/getting-started">Tree Grid</a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="8" valign="top">
+			DATA VISUALIZATION<br/>
+		</td>
+		<td>
+			<a href="https://help.syncfusion.com/winui/barcode/getting-started" >BarCode </a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/radial-gauge/getting-started">Radial Gauge </a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/linear-gauge/getting-started" >Linear Gauge </a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/cartesian-charts/getting-started">Cartesian Charts </a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/circular-charts/getting-started">Circular Charts</a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/funnel-chart/getting-started">Funnel Chart</a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/polar-chart/getting-started">Polar Charts</a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/pyramid-chart/getting-started">Pyramid Chart</a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="2" valign="top">
+			NAVIGATION<br/>
+		</td>
+		<td>
+			<a href="https://help.syncfusion.com/winui/ribbon/getting-started">Ribbon </a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/treeview/getting-started">TreeView </a><br/>
+		</td>
+	</tr>
+	<tr>
+	    <td rowspan="7" valign="top">
+			EDITORS<br/>
+		</td>	
+		<td>
+			<a href="https://help.syncfusion.com/winui/combobox/getting-started">ComboBox</a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/color-picker/getting-started">Color Picker</a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/dropdown-color-palette/getting-started">Dropdown Color Palette</a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/dropdown-color-picker/getting-started">Dropdown Color Picker</a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/color-palette/getting-started">Color Palette</a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/numberbox/getting-started" >NumberBox</a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/segmentedcontrol/getting-started" >Segmented Control</a><br/>
+		</td>
+	</tr>
+	<tr>
+	    <td rowspan="6" valign="top">
+		CALENDARS<br/>
+		</td>
+		<td>
+			<a href="https://help.syncfusion.com/winui/calendar/getting-started" >Calendar</a><br/>
+		</td>
+	</tr>	
+    <tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/calendar-date-picker/getting-started">Calendar Date Picker</a><br/>
+		</td>
+	</tr>
+    <tr>
+	    <td>
+			<a href="https://help.syncfusion.com/winui/calendar-daterange-picker/getting-started">Calendar DateRange Picker</a><br/>
+		</td>
+	</tr>
+    <tr>
+	    <td>
+			<a href="https://help.syncfusion.com/winui/date-picker/getting-started" >Date Picker</a><br/>
+		</td>
+	</tr>
+    <tr>
+	    <td>
+			<a href="https://help.syncfusion.com/winui/time-picker/getting-started">Time Picker</a><br/>
+		</td>
+	</tr>
+    <tr>
+	    <td>
+			<a href="https://help.syncfusion.com/winui/scheduler/getting-started">Scheduler</a><br/>
+		</td>
+	</tr>
+    <tr>
+	    <td rowspan="1" valign="top">
+		NOTIFICATION<br/>
+		</td>
+		<td>
+			<a href="https://help.syncfusion.com/winui/badge/getting-started">Badge</a><br/>
+		</td>
+	</tr>	
+    <tr>
+	    <td rowspan="2" valign="top">
+		INPUT CONTROLS<br/>
+		</td>
+		<td>
+			<a href="https://help.syncfusion.com/winui/slider/getting-started">Slider</a><br/>
+		</td>
+	</tr>	
+    <tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/rangeslider/getting-started">Range Slider</a><br/>
+		</td>
+	</tr>	
 </table>
 
 ## Support and feedback

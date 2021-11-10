@@ -9,7 +9,7 @@ documentation: ug
 
 # Column Chart in WinUI Chart (SfCartesianChart)
 
-Column chart is used to plot discrete rectangles for the given data point values. To render a column chart, create an instance of [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
+[WinUI Column Chart](https://www.syncfusion.com/winui-controls/charts/winui-column-chart) is used to plot discrete rectangles for the given data point values. To render a column chart, create an instance of [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
 
 {% tabs %}
 
@@ -107,3 +107,5 @@ this.Content = chart;
 {% endtabs %}
 
 ![Column segment spacing in WinUI Chart](Chart-Types_images/WinUI_column_chart_segment_spacing.png)
+
+N> You can also explore our [WinUI Column Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Basic%20Charts/ColumnChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
