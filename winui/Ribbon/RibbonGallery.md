@@ -337,6 +337,27 @@ The `MaxColumnCount` in a RibbonGallery allows to wrap the maximum number of gal
 
 ![Setting of MaxColumnCount in RibbonGallery](RibbonGallery-images/ribbon-gallery-item-column-count-customization.png)
 
+## Ribbon gallery in simplified layout
+
+The `DisplayOptions` property in a RibbonGallery is an Enum type property that allows to display a RibbonGallery in a specific layout based on `LayoutModeOptions` such as Normal and Simplified state of Ribbon. The `DisplayOptions` property is set to Normal and Simplified mode by default.
+
+The image below shows how the RibbonGallery can be displayed in a Simplified mode of Ribbon's LayoutModeOptions when DisplayOptions is set to `Simplified`.
+
+{% tabs %}
+{% highlight xaml %}
+<ribbon:RibbonGallery ItemHeight="48" 
+                      MaxColumnCount="4"
+                      DisplayOptions="Simplified"
+                      ItemWidth="100">
+    <ribbon:RibbonGallery.Items>
+        //Add gallery items here...                              
+    </ribbon:RibbonGallery.Items>
+</ribbon:RibbonGallery>
+{% endhighlight %}
+{% endtabs %}
+
+![Displaying RibbonGallery with Simplified Ribbon layout](RibbonGallery-images/ribbon-gallery-in-simplified-diplaymode.png)
+
 ## Ribbon gallery preview
 
 Gallery items' width and height can be changed using the `ItemWidth` and `ItemHeight` properties of RibbonGallery.
@@ -426,27 +447,6 @@ private void RibbonGallery_DeactivatePreview(object sender, RibbonRoutedEventArg
 The RibbonGallery preview support is demonstrated in the gif below.
 
 ![Displaying RibbonGallery with preview feature](RibbonGallery-images/ribbon-gallery-preview-support.gif)
-
-## Ribbon gallery in simplified layout
-
-The `DisplayOptions` property in a RibbonGallery is an Enum type property that allows to display a RibbonGallery in a specific layout based on `LayoutModeOptions` such as Normal and Simplified state of Ribbon. The `DisplayOptions` property is set to Normal and Simplified mode by default.
-
-The image below shows how the RibbonGallery can be displayed in a Simplified mode of Ribbon's LayoutModeOptions when DisplayOptions is set to `Simplified`.
-
-{% tabs %}
-{% highlight xaml %}
-<ribbon:RibbonGallery ItemHeight="48" 
-                      MaxColumnCount="4"
-                      DisplayOptions="Simplified"
-                      ItemWidth="100">
-    <ribbon:RibbonGallery.Items>
-        //Add gallery items here...                              
-    </ribbon:RibbonGallery.Items>
-</ribbon:RibbonGallery>
-{% endhighlight %}
-{% endtabs %}
-
-![Displaying RibbonGallery with Simplified Ribbon layout](RibbonGallery-images/ribbon-gallery-in-simplified-diplaymode.png)
 
 ## Populate ribbon gallery with MVVM
 
