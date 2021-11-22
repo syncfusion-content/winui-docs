@@ -71,9 +71,9 @@ N> TreeView process and sets [TreeViewNode.IsChecked](https://help.syncfusion.co
 
 public class CheckBoxView : NotificationObject
 { 
-    public ObservableCollection<object> CheckedItems { get; internal set; }
+    public ObservableCollection<object> CheckedItems { get; set; }
 
-    public ObservableCollection<CheckBoxModel> Items { get; internal set; }
+    public ObservableCollection<CheckBoxModel> Items { get; set; }
 
     public CheckBoxView()
     {
@@ -308,7 +308,7 @@ public class CheckBoxModel : NotificationObject
             return models;
         }
 
-        internal set
+        set
         {
             models = value;
             this.RaisePropertyChanged(nameof(Models));
