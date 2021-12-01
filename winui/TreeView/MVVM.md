@@ -69,9 +69,9 @@ public class SelectionViewModel : NotificationObject
         PopulateCollections();
     }
    
-    public ObservableCollection<SelectionModel> Collections { get; internal set; }
+    public ObservableCollection<SelectionModel> Collections { get; set; }
 
-    public object SelectedNode { get; internal set; }
+    public object SelectedNode { get; set; }
    
     void PopulateCollections()
     {
@@ -177,7 +177,7 @@ public class SelectionModel : NotificationObject
         {
             return childs;
         }
-        internal set
+        set
         {
             childs = value;
             this.RaisePropertyChanged(nameof(Childs));
@@ -249,9 +249,9 @@ public class SelectionViewModel : NotificationObject
         PopulateCollections();
     }
    
-    public ObservableCollection<SelectionModel> Collections { get; internal set; }
+    public ObservableCollection<SelectionModel> Collections { get; set; }
 
-    public ObservableCollection<object> SelectedNodes { get; internal set; }
+    public ObservableCollection<object> SelectedNodes { get; set; }
    
     void PopulateCollections()
     {
@@ -361,7 +361,7 @@ public class SelectionModel : NotificationObject
         {
             return childs;
         }
-        internal set
+        set
         {
             childs = value;
             this.RaisePropertyChanged(nameof(Childs));

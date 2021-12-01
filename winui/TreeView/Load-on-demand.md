@@ -66,7 +66,7 @@ public class LoadOnDemandViewModel
     public ObservableCollection<LoadOnDemandModel> Menu
     {
         get { return menu; }
-        internal set { menu = value; }
+        set { menu = value; }
     }
 
     public DelegateCommand TreeViewOnDemandCommand
