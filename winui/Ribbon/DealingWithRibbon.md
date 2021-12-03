@@ -199,7 +199,7 @@ public class ViewModel : NotificationObject
 
 ![WINUI Ribbon add Item to RibbonGroup using RibbonItemHost](Dealing-With-Ribbon-imgaes/WINUI-ribbon-contextualtabgroup-ribbon-item-host.png)
 
-## ContextaulTabGroups with Simplified Mode
+## ContextualTabGroups with Simplified Mode
 
 When the simplified layout is enabled, the ContextTabGroup can be added and its items will be displayed in a single line as shown below. We could enable the simplified layout by setting `ActiveLayoutMode` and `LayoutModeOptions` as Simplified.
 
@@ -285,7 +285,7 @@ public MainWindow()
 
 ## Multiple RibbonContextualTabGroup
 
-To differentiate one RibbonContextTabGroup with one another. We could use the `Background` or `Forground` Properties in RibbonContextualTabGroup.
+To differentiate one RibbonContextTabGroup with one another. We could use the `Background` or `Foreground` Properties in RibbonContextualTabGroup.
  
 {% tabs %}
 
@@ -316,7 +316,7 @@ To differentiate one RibbonContextTabGroup with one another. We could use the `B
 
 ## RibbonContextualTabGroup with SelectFirstTabOnVisible
 
-When we set the `SelectFirstTabOnVisible` as true, The correponding tab group will be selected when that group get visible.
+When we set the `SelectFirstTabOnVisible` as true, The corresponding tab group will be selected when that group get visible.
 
 {% tabs %}
 
