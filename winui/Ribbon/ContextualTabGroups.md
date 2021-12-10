@@ -219,7 +219,7 @@ By default, when a contextual tab group is activated, the last tab element insid
 
 {% endtabs %}
 
-![WINUI Ribbon displays Multiple RibbonContextualTabGroup](ContextualTabGroup_images/WINUI-ribbon-contextual-tab-group-select-first-tab-on-visible.png)
+![WINUI Ribbon displays Multiple RibbonContextualTabGroup](ContextualTabGroup_images/WINUI-ribbon-contextualtabgroup-select-first-tab-on-visible.png)
 
 ## Appearance of contextual tab group
 
