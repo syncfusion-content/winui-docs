@@ -80,7 +80,7 @@ private void ribbon_SelectedTabChanged(object sender, SelectionChangedEventArgs 
 
 Ribbon contextual tab groups are used to group the ribbon tabs for easier navigation. This contextual tab groups appear when a user enables their context. 
 The `Visibility` property is collapsed by default. The Visibility property becomes visible and the associated contextual tab group opens when you click the Image or Grid view.Any number of 
-contextualtabgroup can be added to the ribbon using the `ContextualTabGroups` property.
+contextual tab group can be added to the ribbon using the `ContextualTabGroups` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -144,7 +144,7 @@ contextualtabgroup can be added to the ribbon using the `ContextualTabGroups` pr
             this.TableOptions.Visibility = Visibility.Collapsed;
             this.ContentGridView.BorderBrush = (SolidColorBrush)this.Resources["TextBoxDisabledBorderThemeBrush"];
         }
-        
+
 {% endhighlight %} 
 {% endtabs %}
 
@@ -178,7 +178,7 @@ If the SelectFirstTabOnVisible property is set to true, the first tab of the con
 
 ## Appearance of Contextual Tab Group
 
-## Backround
+## Background
 The Ribbon Contextual Tab group background color can be changed using `Background` property.
 
 {% tabs %}
@@ -195,7 +195,9 @@ The Ribbon Contextual Tab group background color can be changed using `Backgroun
 
 {% endhighlight %} 
 {% endtabs %}
+
 ![RibbonContextualTabGroup with background color](Dealing-With-Ribbon-imgaes/contextual-tab-group-background.png)
+
 ## Foreground
 The Ribbon Contextual Tab group foreground color can be changed using `Foreground` property.
 
