@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ContextualTabGroups in WinUI Ribbon control | Syncfusion
-description: Learn here all about ContextualTabGroups of Syncfusion WinUI Ribbon(sfribbon) control and more.
+description: Learn here all about Contextual Tab Groups of Syncfusion WinUI Ribbon(sfribbon) control and more.
 platform: winui
 control: Ribbon
 documentation: ug
