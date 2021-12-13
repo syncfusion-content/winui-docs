@@ -450,7 +450,7 @@ The following screenshot illustrates advanced filter when `AllowBlankFilters` is
 
 ## Changing AdvancedFilter type when loading dynamic ItemsSource
 
-By default, the text filters will be loaded for the columns if `ItemsSource` is [dynamic](https://msdn.microsoft.com/en-us/library/dd264741.aspx). The [TreeGridColumn.ColumnMemberType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ColumnMemberType) property loads number filters or date filters based on the column values.
+By default, the text filters will be loaded for the columns if `ItemsSource` is [dynamic](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types#the-dynamic-type). The [TreeGridColumn.ColumnMemberType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ColumnMemberType) property loads number filters or date filters based on the column values.
 
 {% tabs %}
 {% highlight c# %}
