@@ -13,7 +13,7 @@ The [WinUI AutoComplete control] control provides you with the live drop-down hi
 
 ## Control structure
 
-![WinUI AutoComplete structure](Overview_images/winui-autocomplete-control.jpg)
+![WinUI AutoComplete structure](Overview_images/winui-autocomplete-control.png)
 
 ## Key features
 
