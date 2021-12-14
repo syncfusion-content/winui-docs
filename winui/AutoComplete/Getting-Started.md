@@ -145,7 +145,7 @@ N> Set the ViewModel instance as the DataContext of your control; this is done t
 
 **Step 3:** Setting TextMemberPath and DisplayMemberPath.
 
-The `AutoComplete` control is populated with the list of Coutries. But the Country model contains Three properties, ID, Name and Continent, so it is necessary to intimate by which property it should display value in the selection box portion of the `AutoComplete` control, when an item is selected.
+The `AutoComplete` control is populated with the list of Countries. But the Country model contains Three properties, ID, Name and Continent, so it is necessary to intimate by which property it should display value in the selection box portion of the `AutoComplete` control, when an item is selected.
 
 [TextMemberPath] - This property path is used to get the value for displaying in the selection box portion of the `AutoComplete` control when an item is selected. The default value is `String.Empty`.
 
@@ -186,7 +186,7 @@ The [AutoComplete] has built-in support to filter data items depending on the te
 
 ### Filter mode
 
-The string comparison for filtering suggestions can be changed using the [TextSearchMode] property. The default filtering type is `StartsWith`, ignoring accent and it is case insensitive. The available filtering modes are, `StartsWith` and `Contains`. These Filter modes are, Explainded at Searching and Filtering section in detail. 
+The string comparison for filtering suggestions can be changed using the [TextSearchMode] property. The default filtering type is `StartsWith`, ignoring accent and it is case insensitive. The available filtering modes are, `StartsWith` and `Contains`. These Filter modes are, Explained at Searching and Filtering section in detail. 
 
 #### StartsWith
 
