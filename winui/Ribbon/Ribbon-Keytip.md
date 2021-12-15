@@ -27,13 +27,13 @@ When a control's KeyTip is activated, the following control action is executed:
 * A ribbon tab’s KeyTip will select the tab.
 * A ribbon gallery control's KeyTip will open the gallery.
 * A backstage menu button KeyTip will open the ribbon backstage.
-* Using a ribbon button and launcher button keytips will execute the button's command or Click event.
+* Using a ribbon button and launcher button KeyTips will execute the button's command or Click event.
 * Using the KeyTip of a RibbonDropDownButton and RibbonSplitButton will open the button's drop-down content.
 
 
 ## Creating KeyTip for ribbon
 
-The `KeyTipService` in a ribbon represents the service that provides the attached properties to enable and manage the keytips to the ribbon control.
+The `KeyTipService` in a ribbon represents the service that provides the attached properties to enable and manage the KeyTips to the ribbon control.
 
 The KeyTip can be attached to the ribbon elements by using the `KeyTipService.AccessText` attached property. 
 
@@ -139,16 +139,16 @@ KeyTipService.SetLauncherButtonAccessText(clipboardGroup, "FB");
 {% endhighlight %}
 {% endtabs %}
 
-![Ribbon tab ketip](Ribbon-keytip-images/Ribbon-tab-keytip.png)
+![Ribbon tab KeyTip](Ribbon-keytip-images/Ribbon-tab-keytip.png)
 
-![Displaying keytips for ribbon items associated with ribbon tab](Ribbon-keytip-images/Ribbon-items-keytip.png)
+![Displaying KeyTip for ribbon items associated with ribbon tab](Ribbon-keytip-images/Ribbon-items-keytip.png)
 
-![Displaying keytips for drop-down items associated with buttons](Ribbon-keytip-images/Ribbon-dropdown-items-keytip.png)
+![Displaying KeyTip for drop-down items associated with buttons](Ribbon-keytip-images/Ribbon-dropdown-items-keytip.png)
 
 
 ## Backstage KeyTip
 
-The KeyTip for the backstage menu button can be set in RibbonBackstage using the `KeyTipService.AccessText` attached property. The same property can be used to set the keytips of backstage items such as backstage button items and tab items.
+The KeyTip for the backstage menu button can be set in RibbonBackstage using the `KeyTipService.AccessText` attached property. The same property can be used to set the KeyTips of backstage items such as backstage button items and tab items.
 
 {% tabs %}
 {% highlight xaml %}
@@ -215,7 +215,7 @@ KeyTipService.SetAccessText(closeButton, "C");
 {% endtabs %}
 
 
-## Rules for defining keytips
+## Rules for defining KeyTips
 
 *	The KeyTip access text to the ribbon elements can have a maximum of three letters. A deviation from the text count (>3)        results in an exception.
 
