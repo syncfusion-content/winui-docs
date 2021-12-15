@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WinUI Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Chart (SfCircularChart) control, its elements, and more.
+title: Getting Started with WinUI Circular Chart control | Syncfusion
+description: Learn here all about getting started with Syncfusion WinUI Circular Chart (SfCircularChart) control, its elements, and more.
 platform: WinUI
 control: SfCircularChart
 documentation: ug
 ---
 
-# Getting Started with WinUI Charts (SfCircularChart)
+# Getting Started with WinUI Circular Charts (SfCircularChart)
 
 This section explains how to populate the circular chart with data, header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
