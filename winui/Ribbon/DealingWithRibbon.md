@@ -186,7 +186,7 @@ The Ribbon Contextual Tab group background color can be changed using `Backgroun
 
    <ribbon:SfRibbon.ContextualTabGroups>
         <ribbon:RibbonContextualTabGroup x:Name="ImageOptions"
-                                        Background="LightSkyBlue" >
+                                        Background="LightGray">
             <ribbon:RibbonContextualTabGroup.Tabs>
                 <ribbon:RibbonTab Header="Picture Format"/>
             </ribbon:RibbonContextualTabGroup.Tabs>
@@ -206,8 +206,8 @@ The Ribbon Contextual Tab group foreground color can be changed using `Foregroun
 
    <ribbon:SfRibbon.ContextualTabGroups>
         <ribbon:RibbonContextualTabGroup x:Name="TableOptions"
-                                SelectFirstTabOnVisible="True" Foreground="DarkBlue"
-                                Background="{ThemeResource SystemAltLowColor}">
+                                SelectFirstTabOnVisible="True"  
+                                Foreground="MidnightBlue" >
             <ribbon:RibbonContextualTabGroup.Tabs>
                 <ribbon:RibbonTab Header="Item Design"/>
                  <ribbon:RibbonTab Header="Layout"/>
