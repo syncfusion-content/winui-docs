@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Ribbon keytip feature in WinUI Ribbon control | Syncfusion
-description: Learn more about the keytip feature in the Syncfusion WinUI Ribbon (SfRibbon) control.
+title: Ribbon KeyTip feature in WinUI Ribbon control | Syncfusion
+description: Learn more about the keyboard navigation using KeyTips in the Syncfusion WinUI Ribbon (SfRibbon) control.
 platform: winui
 control: Ribbon
 documentation: ug
 ---
 
-# Ribbon Keytip
+# KeyTip in WinUI Ribbon
 
-The Syncfusion WinUI SfRibbon supports the keyboard navigation to activate the Ribbon elements using keytip and it can be enabled by setting the `KeyTipService.EnableKeyTip` attached property as True to the Ribbon control. 
+The Syncfusion WinUI [SfRibbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html) supports the keyboard navigation to activate the ribbon elements using KeyTip and it can be enabled by setting the `KeyTipService.EnableKeyTip` attached property as `True` to the ribbon control. 
 
-The ribbon keytip can be activated through the keyboard by pressing the Alt or F10 keys, and the keytip for the ribbon elements will be displayed.
+The ribbon KeyTip can be activated through the keyboard by pressing the `Alt` or `F10` keys, and the KeyTip for the ribbon elements will be displayed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -22,24 +22,24 @@ The ribbon keytip can be activated through the keyboard by pressing the Alt or F
 {% endhighlight %}
 {% endtabs %}
 
-When a control's keytip is activated, the following control action is executed:
+When a control's KeyTip is activated, the following control action is executed:
 
-* A ribbon tab’s keytip will select the tab.
-* A ribbon gallery control's keytip will open the gallery.
-* A backstage menu button keytip will open the ribbon backstage.
+* A ribbon tab’s KeyTip will select the tab.
+* A ribbon gallery control's KeyTip will open the gallery.
+* A backstage menu button KeyTip will open the ribbon backstage.
 * Using a ribbon button and launcher button keytips will execute the button's command or Click event.
-* Using the keytip of a RibbonDropDownButton and RibbonSplitButton will open the button's drop-down content.
+* Using the KeyTip of a RibbonDropDownButton and RibbonSplitButton will open the button's drop-down content.
 
 
-## Creating keytip for ribbon
+## Creating KeyTip for ribbon
 
-The `KeyTipService` in a Ribbon represents the service that provides the attached properties to enable and manage the keytips to the ribbon control.
+The `KeyTipService` in a ribbon represents the service that provides the attached properties to enable and manage the keytips to the ribbon control.
 
-The keytip can be attached to the ribbon elements by using the `KeyTipService.AccessText` attached property. 
+The KeyTip can be attached to the ribbon elements by using the `KeyTipService.AccessText` attached property. 
 
-### Launcher button keytip
+### Launcher button KeyTip
 
-The Keytip for the launcher button can be attached by using the `KeyTipService.LauncherButtonAccessText` attached property in a ribbon group.
+The KeyTip for the launcher button can be attached by using the `KeyTipService.LauncherButtonAccessText` attached property in a ribbon group.
 
 {% tabs %}
 {% highlight xaml %}
@@ -119,11 +119,22 @@ The Keytip for the launcher button can be attached by using the `KeyTipService.L
 {% highlight C# %}
 using Syncfusion.UI.Xaml.Ribbon;
 
+// Attach access text to the tab
+RibbonTab homeTab = new RibbonTab();
+homeTab.Header = "Home";
+KeyTipService.SetAccessText(homeTab, "H");
+
+// Attach access text to the button
 RibbonButton copyButton = new RibbonButton();
 copyButton.Content = "Copy";
 copyButton.SizeMode = SizeMode.Normal;
 copyButton.Icon = new SymbolIcon(Symbol.Copy);
 KeyTipService.SetAccessText(copyButton, "C");
+
+// Attach access text to the launcher button
+RibbonGroup clipboardGroup = new RibbonGroup();
+clipboardGroup.Header = "Clipboard";
+KeyTipService.SetLauncherButtonAccessText(clipboardGroup, "FB");
 
 {% endhighlight %}
 {% endtabs %}
@@ -135,9 +146,9 @@ KeyTipService.SetAccessText(copyButton, "C");
 ![Displaying keytips for drop-down items associated with buttons](Ribbon-keytip-images/Ribbon-dropdown-items-keytip.png)
 
 
-## Backstage keytip
+## Backstage KeyTip
 
-The keytip for the backstage menu button can be set in RibbonBackstage using the `KeyTipService.AccessText` attached property. The same property can be used to set the keytips of backstage items such as backstage button items and tab items.
+The KeyTip for the backstage menu button can be set in RibbonBackstage using the `KeyTipService.AccessText` attached property. The same property can be used to set the keytips of backstage items such as backstage button items and tab items.
 
 {% tabs %}
 {% highlight xaml %}
@@ -184,30 +195,41 @@ The keytip for the backstage menu button can be set in RibbonBackstage using the
 {% highlight C# %}
 using Syncfusion.UI.Xaml.Ribbon;
 
- BackstageViewButtonItem closeButton = new BackstageViewButtonItem();
- closeButton.Content = "Close";
- closeButton.Icon = new SymbolIcon(Symbol.Clear);
- KeyTipService.SetAccessText(closeButton, "C");
- 
+// Attach access text to the backstage menu button
+RibbonBackstage ribbonBackstage = new RibbonBackstage();
+KeyTipService.SetAccessText(ribbonBackstage, "F");
+
+// Attach access text to the backstage view tab item
+BackstageViewTabItem newTabItem = new BackstageViewTabItem();
+newTabItem.Content = "New";
+newTabItem.Icon = new SymbolIcon(Symbol.NewFolder);
+KeyTipService.SetAccessText(newTabItem, "N");
+
+// Attach access text to the backstage view button
+BackstageViewButtonItem closeButton = new BackstageViewButtonItem();
+closeButton.Content = "Close";
+closeButton.Icon = new SymbolIcon(Symbol.Clear);
+KeyTipService.SetAccessText(closeButton, "C");
+
 {% endhighlight %}
 {% endtabs %}
 
 
 ## Rules for defining keytips
 
-*	The keytip access text to the ribbon elements can have a maximum of three letters. A deviation from the text count (>3)        results in an exception.
+*	The KeyTip access text to the ribbon elements can have a maximum of three letters. A deviation from the text count (>3)        results in an exception.
 
-*	Avoid using the same keytip access text setting on multiple elements. 
+*	Avoid using the same KeyTip access text setting on multiple elements. 
 
-    For example, when you attach the access text H, H or HF, HF in the same layer, the first H keytip associated element in the layer is activated while the other H or HF associated element is ignored.
+    For example, when you attach the access text H, H or HF, HF in the same layer, the first H KeyTip associated element in the layer is activated while the other H or HF associated element is ignored.
 
 *	Furthermore, do not use the same first letter for the single and double access text elements.
 
-    For example, if you attach the access text F, FP and FPF to the two elements and then press the F key, only the F keytip associated element will be activated, while the FP, FPF associated elements will be ignored.
+    For example, if you attach the access text F, FP and FPF to the two elements and then press the F key, only the F KeyTip associated element will be activated, while the FP, FPF associated elements will be ignored.
 
 
-N> The keytip action cannot be activated for ribbon disabled elements, but we can set access text to the disabled elements and have the keytip appear disabled.
+N> The KeyTip action cannot be activated for ribbon disabled elements, but we can set access text to the disabled elements and have the KeyTip appear disabled.
 
-![Keytip for backsteage buttons and tab items](Ribbon-keytip-images/backstage-keytip.png)
+![KeyTip for backsteage buttons and tab items](Ribbon-keytip-images/backstage-keytip.png)
 
 
