@@ -7,7 +7,7 @@ control: Ribbon
 documentation: ug
 ---
 
-# Keyboard Navigation
+# Keyboard Navigation in WinUI Ribbon
 
 The Syncfusion WinUI [SfRibbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html) supports the keyboard navigation to activate the ribbon elements via KeyTipService, which represents the service that provides the attached properties to enable and manage the KeyTips to the ribbon control. 
 
