@@ -103,7 +103,7 @@ private async  void OnComboBoxSelectionChanged(object sender, ComboBoxSelectionC
 {% endhighlight %}
 {% endtabs %}
 
-Below screenshots demonstrates, while typing `i` in ComboBox control `Instagram` will be updated as selected item.
+Below screenshots demonstrates, while typing `f` in ComboBox control `Facebook` will be set as selected item.
 
 ![Updates selected item each time the user navigates to a new selection in ComboBox](Selection_images/winui-combobox-selection-change-trigger-always.png)
 
