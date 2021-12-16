@@ -528,19 +528,16 @@ public class EmployeeTemplateSelector : DataTemplateSelector
 
 ## Styling ComboBoxTokenItem
 
-The `ComboBox` control allows you to customize the style of `ComboBoxTokenItem`, generated in selection area by using the `TokenItemStyle` property. The default value of `TokenItemStyle` is `null`. 
+The ComboBox control allows you to customize the style of `ComboBoxTokenItem`, generated in selection area by using the `TokenItemStyle` property. The default value of `TokenItemStyle` is `null`. 
 
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfComboBox x:Name="comboBox"
-                    Width="360"
-                    SelectionMode="Multiple"
+<editors:SfComboBox SelectionMode="Multiple"
                     MultiSelectionDisplayMode="Token"
                     ItemsSource="{Binding SocialMedias}"
                     DisplayMemberPath="Name"
-                    TextMemberPath="Name"
-                    PlaceholderText="Select a social media">
+                    TextMemberPath="Name">
             <editors:SfComboBox.TokenItemStyle>
                 <Style TargetType="editors:ComboBoxTokenItem">
                     <Setter Property="Foreground" Value="Red"/>
@@ -550,24 +547,13 @@ The `ComboBox` control allows you to customize the style of `ComboBoxTokenItem`,
 </editors:SfComboBox>
 
 {% endhighlight %}
-
-{% highlight C# %}
-
-SocialMediaViewModel socialMediaViewModel = (this.comboBox.DataContext as SocialMediaViewModel);
-ObservableCollection<SocialMedia> socialMediasList = socialMediaViewModel.SocialMedias;
-this.comboBox.SelectedItems.Add(socialMediasList[0]);
-this.comboBox.SelectedItems.Add(socialMediasList[3]);
-this.comboBox.SelectedItems.Add(socialMediasList[4]);
-this.comboBox.SelectedItems.Add(socialMediasList[6]);                                                
-
-{% endhighlight %}
 {% endtabs %}
 
 ![Custom UI of ComboBoxTokenItem using TokenItemStyle](Styling_images/winui-combobox-tokenitemstyle.png)
 
 ### Style ComboBoxTokenItem based on condition   
 
-The `ComboBox` control allows you to customize the style of `ComboBoxTokenItem` conditionally based on its content by using the `TokenItemStyleSelector` property. The default value of `TokenItemStyleSelector` is `null`. 
+The ComboBox control allows you to customize the style of `ComboBoxTokenItem` conditionally based on its content by using the `TokenItemStyleSelector` property. The default value of `TokenItemStyleSelector` is `null`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -614,28 +600,13 @@ public class SocialMediaStyleSelector : StyleSelector
                                         MediaStyle1="{StaticResource MediaStyle1}"
                                         MediaStyle2="{StaticResource MediaStyle2}"/>
     </Grid.Resources>
-    <editors:SfComboBox x:Name="comboBox"
-                        Width="360"
-                        PlaceholderText="Select a social media"
-                        SelectionMode="Multiple"                    
+    <editors:SfComboBox SelectionMode="Multiple"                    
                         MultiSelectionDisplayMode="Token"
                         ItemsSource="{Binding SocialMedias}"
                         TokenItemStyleSelector="{StaticResource socialMediaStyleSelector}"
                         DisplayMemberPath="Name"
-                        TextMemberPath="Name">
-    </editors:SfComboBox>
+                        TextMemberPath="Name" />
 </Grid>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-SocialMediaViewModel socialMediaViewModel = (this.comboBox.DataContext as SocialMediaViewModel);
-ObservableCollection<SocialMedia> socialMediasList = socialMediaViewModel.SocialMedias;
-this.comboBox.SelectedItems.Add(socialMediasList[0]);
-this.comboBox.SelectedItems.Add(socialMediasList[3]);
-this.comboBox.SelectedItems.Add(socialMediasList[4]);
-this.comboBox.SelectedItems.Add(socialMediasList[6]);                                                
 
 {% endhighlight %}
 {% endtabs %}
@@ -644,7 +615,7 @@ this.comboBox.SelectedItems.Add(socialMediasList[6]);
 
 ## Customize ComboBoxTokenItem 
 
-The `TokenItemTemplate` property helps you to decorate drop-down items using the custom templates. The default value of `TokenItemTemplate` is `null`. The following example shows how to add image or custom control in selection area token items using templates.
+The `TokenItemTemplate` property helps you to decorate token items using the custom templates. The default value of `TokenItemTemplate` is `null`. The following example shows how to add image or custom control in token items using templates.
 
 {% tabs %}
 {% highlight C# %}
@@ -719,12 +690,7 @@ public class CountryViewModel
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfComboBox x:Name="comboBox"
-                    Width="425"
-                    Margin="50"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    SelectionMode="Multiple"
+<editors:SfComboBox SelectionMode="Multiple"
                     MultiSelectionDisplayMode="Token"
                     PlaceholderText="Select countries"
                     DisplayMemberPath="CountryName"
@@ -759,23 +725,13 @@ public class CountryViewModel
 </editors:SfComboBox>
 
 {% endhighlight %}
-
-{% highlight C# %}
-
-CountryViewModel countryViewModel = (this.comboBox.DataContext as CountryViewModel);
-ObservableCollection<SocialMedia> countriesList = countryViewModel.Countries;
-this.comboBox.SelectedItems.Add(countriesList[0]);
-this.comboBox.SelectedItems.Add(countriesList[2]);
-this.comboBox.SelectedItems.Add(countriesList[4]);
-
-{% endhighlight %}
 {% endtabs %}
 
 ![Custom UI of ComboBoxTokenItem using TokenItemTemplate](Styling_images/winui-combobox-tokenitemtemplate.png)
 
 ### Customize ComboBoxTokenItem based on condition
 
-The `TokenItemTemplateSelector` property helps you to decorate selection area token items conditionally based on its content using the custom templates. The default value of `TokenItemTemplateSelector` is `null`.
+The `TokenItemTemplateSelector` property helps you to decorate token items conditionally based on its content using the custom templates. The default value of `TokenItemTemplateSelector` is `null`.
 
 {% tabs %}
 {% highlight C# %}
@@ -807,6 +763,9 @@ public class CountryTemplateSelector : DataTemplateSelector
 {% highlight XAML %}
 
 <Grid>
+    <Grid.DataContext>
+        <local:CountryViewModel/>
+    <Grid.DataContext> 
     <Grid.Resources>
         <DataTemplate x:Key="countryTemplate1">
             <Grid HorizontalAlignment="Center"
@@ -864,32 +823,12 @@ public class CountryTemplateSelector : DataTemplateSelector
             CountryTemplate2="{StaticResource countryTemplate2}"/>
     </Grid.Resources>
     
-    <editors:SfComboBox x:Name="comboBox"
-                    Width="425"
-                    Margin="50"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    SelectionMode="Multiple"
-                    MultiSelectionDisplayMode="Token"
-                    PlaceholderText="Select countries"
-                    DisplayMemberPath="CountryName"
-                    TokenItemTemplateSelector="{StaticResource countryTemplateSelector}"
-                    ItemsSource="{Binding Countries}">
-        <editors:SfComboBox.DataContext>
-            <local:CountryViewModel/>
-        </editors:SfComboBox.DataContext>
-   </editors:SfComboBox>
+    <editors:SfComboBox SelectionMode="Multiple"
+                        MultiSelectionDisplayMode="Token"
+                        DisplayMemberPath="CountryName"
+                        TokenItemTemplateSelector="{StaticResource countryTemplateSelector}"
+                        ItemsSource="{Binding Countries}" />
 </Grid>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-CountryViewModel countryViewModel = (this.comboBox.DataContext as CountryViewModel);
-ObservableCollection<SocialMedia> countriesList = countryViewModel.Countries;
-this.comboBox.SelectedItems.Add(countriesList[0]);
-this.comboBox.SelectedItems.Add(countriesList[3]);
-this.comboBox.SelectedItems.Add(countriesList[4]);
 
 {% endhighlight %}
 {% endtabs %}

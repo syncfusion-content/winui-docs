@@ -113,154 +113,23 @@ N> You can refer more information about `SelectionChanged` event from [this](htt
 
 The `ComboBox` allows user to select multiple values from the drop-down list. The multi-select `ComboBox` mode can be enabled by setting the `SelectionMode` property as `Multiple`. 
 
-There are two different display modes to perform multi selection in ComboBox: `Delimiter`, and `Token`. The multi selection display mode can be set by using the `MultiSelectionDisplayMode` property. The default value of `MultiSelectionDisplayMode` property is `Delimiter`.
-
-### Delimiter
-
-When selecting the multiple items, the selected items can be separated from each other with a desired character given for a delimiter. 
-
-N> The `IsEditable` property has no effect when `MultiSelectionDisplayMode` is `Delimiter`.
-
-#### UI selection 
-
-The selected items can be changed interactively by using keyboard or by selecting from a drop-down list. The selected items can be retrieved from the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectedItems) property of `ComboBox` control.
-
-{% tabs %}
-{% highlight xaml %}
-
-<editors:SfComboBox
-    Width="250"
-    ItemsSource="{Binding SocialMedias}"
-    SelectionMode="Multiple"
-    DisplayMemberPath="Name"
-    TextMemberPath="Name"
-    x:Name="comboBox" />
-
-{% endhighlight %}
-{% endtabs %}
-
-![Multiple selection in WinUI ComboBox](Selection_images/winui-combobox-multiple-selection-delimiter.gif)
-
-#### Separate items using delimiter
-
-The `ComboBox` supports various delimiter characters to separate the selected items displayed in a multi-select `ComboBox`. The delimiter character can be set by using the [DelimiterText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_DelimiterText) property. The default delimiter character is `,`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<editors:SfComboBox
-    Width="250"
-    DelimiterText="-"
-    ItemsSource="{Binding SocialMedias}"
-    SelectionMode="Multiple"
-    DisplayMemberPath="Name"
-    TextMemberPath="Name"
-    x:Name="comboBox"/>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-comboBox.DelimiterText = "-";
-
-{% endhighlight %}
-{% endtabs %}
-
-![WinUI ComboBox seperate the selected items using delimiter text](Selection_images/winui-combobox-delimiter-text.png)
-
-### Token
-
-Selected items will be displayed with a customizable token representation and the users can remove each tokenized item with the close button. Token mode supports both editable and non-editable text boxes for selecting items from a data source.
-
-#### UI selection 
-
-The selected items can be changed interactively by using keyboard or by selecting from a drop-down list. The selected items can be retrieved from the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectedItems) property of `ComboBox` control.
-
-{% tabs %}
-{% highlight xaml %}
-
-<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="50">
-    <StackPanel.DataContext>
-        <local:SocialMediaViewModel/>
-    </StackPanel.DataContext>
-    <editors:SfComboBox x:Name="comboBox"
-                        Width="320"
-                        ItemsSource="{Binding SocialMedias}"
-                        SelectionMode="Multiple"
-                        MultiSelectionDisplayMode="Token"
-                        DisplayMemberPath="Name"
-                        PlaceholderText="Select a social media"
-                        TextMemberPath="Name" />
-
-    <CheckBox Margin="20,0,0,0"
-              IsChecked="{Binding ElementName=comboBox, Path=IsEditable, Mode=TwoWay}"
-              Content="IsEditable" />
-
-</StackPanel>
-
-{% endhighlight %}
-{% endtabs %}
-
-![Multiple selection in WinUI ComboBox](Selection_images/winui-combobox-multiple-selection-token.gif)
-
-N> You can refer more information about customization of `ComboBoxTokenItem` from [this](https://help.syncfusion.com/winui/combobox/ui-customization#styling-comboboxtokenitem) link.
-
-#### Handle invalid input 
-
-The `InputSubmitted` event is triggered, when some text is submitted that does not correspond to an item in the `ComboBox` drop-down list. By using the `Item` property of `InputSubmitted` event we can add the invalid input as token.
-The default value of `InputSubmitted.Input` is `null`.
-
-* If no item is assigned, then entered text will be cleared.
-* If item is assigned, then item will be added selected item(s). 
-
-By using the following code sample, input that does not contain in drop-down list will be created as token.
-
-{% tabs %}
-{% highlight XAML %}
-
-<editors:SfComboBox x:Name="comboBox"
-                    Width="250"
-                    IsEditable="true"
-                    SelectionMode="Multiple"
-                    MultiSelectionDisplayMode="Token"
-                    ItemsSource="{Binding SocialMedias}"
-                    InputSubmitted="OnEditingComboBoxInputSubmitted"
-                    DisplayMemberPath="Name"
-                    TextMemberPath="Name">
-</editors:SfComboBox>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-comboBox.InputSubmitted += OnEditingComboBoxInputSubmitted;
-
-{% endhighlight %}
-{% endtabs %}
-
-The InputSubmitted event can be handled as follows.
-
-{% tabs %}
-{% highlight C# %}
-
-/// <summary>
-/// Occurs when the user submits some text that does not correspond to an item in the `ComboBox` drop-down list.
-/// </summary>
-private void OnEditingComboBoxInputSubmitted(object sender, Syncfusion.UI.Xaml.Editors.ComboBoxInputSubmittedEventArgs e)
-{
-   e.Item = new SocialMedia() { Name = e.Text, ID = comboBox.Items.Count };
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-![WinUI ComboBox invalid input submission in token mode](Selection_images/winui-combobox-invalid-input-submission.png)
+There are two different display modes to perform multi selection in ComboBox: `Delimiter`, and `Token`. The MultiSelection display modes will be briefly detailed in the upcoming section.
 
 ### Programmatic selection 
 
-The selected items can be changed programmatically by using the `SelectedItems` property of `ComboBox` control.  
+The selected items can be changed programmatically by using the `SelectedItems` property of ComboBox control.  
 
 {% tabs %}
+{% highlight xaml %}
+
+<editors:SfComboBox x:Name="comboBox"
+                    ItemsSource="{Binding SocialMedias}"
+                    SelectionMode="Multiple"
+                    DisplayMemberPath="Name"
+                    TextMemberPath="Name" />
+
+{% endhighlight %}
+
 {% highlight c# %}
 
 comboBox.DataContext = new SocialMediaViewModel();
@@ -278,19 +147,17 @@ this.comboBox.SelectedItems.Add(socialMediasList[5]);
 
 ### How to hide the check box
 
-The checkbox that is displayed in a drop-down list can be hidden by using the [IsMultiSelectCheckBoxEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_IsMultiSelectCheckBoxEnabled) property of `ComboBox` control. The default value of `IsMultiSelectCheckBoxEnabled` property is `true`.
+The checkbox that is displayed in a drop-down list can be hidden by using the [IsMultiSelectCheckBoxEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_IsMultiSelectCheckBoxEnabled) property of ComboBox control. The default value of `IsMultiSelectCheckBoxEnabled` property is `true`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfComboBox
-    Width="250"
-    IsMultiSelectCheckBoxEnabled="False"
-    ItemsSource="{Binding SocialMedias}"
-    SelectionMode="Multiple"
-    DisplayMemberPath="Name"
-    TextMemberPath="Name"
-    x:Name="comboBox"/>
+<editors:SfComboBox x:Name="comboBox"
+                    IsMultiSelectCheckBoxEnabled="False"
+                    ItemsSource="{Binding SocialMedias}"
+                    SelectionMode="Multiple"
+                    DisplayMemberPath="Name"
+                    TextMemberPath="Name" />
 
 {% endhighlight %}
 
@@ -302,6 +169,90 @@ comboBox.IsMultiSelectCheckBoxEnabled = false;
 {% endtabs %}
 
 ![WinUI ComboBox hide the checkbox in drop down list](Selection_images/winui-combobox-multi-select-checkbox-enabled.png)
+
+### Multiple selection display
+
+Display multiple selected items with token representation or simply divide them with a delimiter text. The multi selection display mode can be set by using the `MultiSelectionDisplayMode` property. The default value of `MultiSelectionDisplayMode` property is `Delimiter`. 
+
+#### Delimiter
+
+When selecting the multiple items, the selected items can be separated from each other with a desired character given for a delimiter. 
+
+N> The `IsEditable` property has no effect when `MultiSelectionDisplayMode` is `Delimiter`.
+
+##### UI selection 
+
+The selected items can be changed interactively by using keyboard or by selecting from a drop-down list. The selected items can be retrieved from the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectedItems) property of ComboBox control.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfComboBox ItemsSource="{Binding SocialMedias}"
+                    SelectionMode="Multiple"
+                    DisplayMemberPath="Name"
+                    TextMemberPath="Name" />
+    
+{% endhighlight %}
+{% endtabs %}
+
+![Multiple selection in WinUI ComboBox](Selection_images/winui-combobox-multiple-selection-delimiter.gif)
+
+##### Separate items using delimiter
+
+The ComboBox supports various delimiter characters to separate the selected items. The delimiter character can be set by using the [DelimiterText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_DelimiterText) property. The default delimiter character is `,`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfComboBox x:Name="comboBox"
+                    DelimiterText="-"
+                    ItemsSource="{Binding SocialMedias}"
+                    SelectionMode="Multiple"
+                    DisplayMemberPath="Name"
+                    TextMemberPath="Name" />
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+comboBox.DelimiterText = "-";
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI ComboBox seperate the selected items using delimiter text](Selection_images/winui-combobox-delimiter-text.png)
+
+#### Token
+
+Selected items will be displayed with a customizable token representation and the users can remove each tokenized item with the close button. Token mode supports both editable and non-editable text boxes for selecting items from a data source.
+
+##### UI selection 
+
+The selected items can be changed interactively by using keyboard or by selecting from a drop-down list. The selected items can be retrieved from the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectedItems) property of ComboBox control.
+
+{% tabs %}
+{% highlight xaml %}
+
+<StackPanel>
+    <editors:SfComboBox x:Name="comboBox"
+                        ItemsSource="{Binding SocialMedias}"
+                        SelectionMode="Multiple"
+                        MultiSelectionDisplayMode="Token"
+                        DisplayMemberPath="Name"
+                        TextMemberPath="Name" />
+
+    <CheckBox Margin="20,0,0,0"
+              IsChecked="{Binding ElementName=comboBox, Path=IsEditable, Mode=TwoWay}"
+              Content="IsEditable" />
+
+</StackPanel>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Multiple selection in WinUI ComboBox](Selection_images/winui-combobox-multiple-selection-token.gif)
+
+N> You can refer more information about customization of `ComboBoxTokenItem` from [this](https://help.syncfusion.com/winui/combobox/ui-customization#styling-comboboxtokenitem) link.
 
 ## Selection changed event
 

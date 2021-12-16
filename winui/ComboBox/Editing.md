@@ -130,7 +130,7 @@ private void OnEditingComboBoxPreviewKeyDown(object sender, KeyRoutedEventArgs e
 
 ## Handle invalid input 
 
-The `InputSubmitted` event is triggered, when some text is submitted that does not correspond to an item in the `ComboBox` drop-down list. By using the following code sample, a dialogue box will be displayed when submitting input that does not contain in drop-down list.
+The `InputSubmitted` event is triggered, when text is submitted that does not correspond to an item in the `ComboBox` drop-down list. By using the following code sample, a dialogue box will be displayed when submitting input that does not contain in drop-down list.
 
 {% tabs %}
 {% highlight XAML %}
