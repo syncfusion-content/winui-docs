@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with WinUI Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Chart(SfFunnelChart) control, its elements, and more.
+title: Getting started with WinUI Funnel Chart control | Syncfusion
+description: Learn here all about getting started with Syncfusion WinUI Funnel Chart (SfFunnelChart) control, its elements, and more.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
 ---
 
-# Getting Started with WinUI Chart
+# Getting Started with WinUI Funnel Chart (SfFunnelChart)
 
 This section explains how to populate the [WinUI Funnel Chart](https://www.syncfusion.com/winui-controls/charts/winui-funnel-chart) with data, a header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
