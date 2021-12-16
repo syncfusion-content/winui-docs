@@ -11,11 +11,11 @@ documentation: ug
 
 This article describes the most common installation errors, as well as the causes and solutions to those errors.
 
-* [Unlocking the license installer using the trial key](https://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#unlocking-the-license-installer-using-the-trial-key)
-* [License has expired](https://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#license-has-expired)
-* [Unable to find a valid license or trial](https://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#unable-to-find-a-valid-license-or-trial)
-* [Unable to install because of another installation](https://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#unable-to-install-because-of-another-installation)
-* [Unable to install due to controlled folder access](http://help.syncfusion.com/winui/installation-and-upgrade/installation-errors#unable-to-install-due-to-controlled-folder-access)
+* [Unlocking the license installer using the trial key](https://help.syncfusion.com/winui/installation/installation-errors#unlocking-the-license-installer-using-the-trial-key)
+* [License has expired](https://help.syncfusion.com/winui/installation/installation-errors#license-has-expired)
+* [Unable to find a valid license or trial](https://help.syncfusion.com/winui/installation/installation-errors#unable-to-find-a-valid-license-or-trial)
+* [Unable to install because of another installation](https://help.syncfusion.com/winui/installation/installation-errors#unable-to-install-because-of-another-installation)
+* [Unable to install due to controlled folder access](https://help.syncfusion.com/winui/installation/installation-errors#unable-to-install-due-to-controlled-folder-access)
 
 ## Unlocking the license installer using the trial key
 
@@ -54,8 +54,8 @@ You can choose from the options listed below.
 
 1. You can renew your subscription [here](https://www.syncfusion.com/account/my-renewals). 
 2. You can get a new license [here](https://www.syncfusion.com/sales/products). 
-3. You can reach out to our sales team by emailing <salessupport@syncfusion.com>. 
-4. You can also extend the 30-day trial period after your license has expired.
+3. You can reach out to our sales team by emailing <sales@syncfusion.com>. 
+4. You can also extend the 30-day trial period after your trial license has expired.
 
 ## Unable to find a valid license or trial
 
@@ -87,7 +87,7 @@ You can choose from the options listed below.
 1. You can get a new license [here](https://www.syncfusion.com/sales/products). 
 2. Contact your account administrator. 
 3. Send an email to  <clientrelations@syncfusion.com> to request a license. 
-4. You can reach out to our sales team by emailing  <salessupport@syncfusion.com>.
+4. You can reach out to our sales team by emailing  <sales@syncfusion.com>.
 
 ## Unable to install because of another installation
 
