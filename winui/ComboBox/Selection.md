@@ -205,6 +205,57 @@ The selected items can be changed interactively by using keyboard or by selectin
 
 N> You can refer more information about customization of `ComboBoxTokenItem` from [this](https://help.syncfusion.com/winui/combobox/ui-customization#styling-comboboxtokenitem) link.
 
+#### Handle invalid input 
+
+The `InputSubmitted` event is triggered, when some text is submitted that does not correspond to an item in the `ComboBox` drop-down list. By using the `Item` property of `InputSubmitted` event we can add the invalid input as token.
+The default value of `InputSubmitted.Input` is `null`.
+
+* If no item is assigned, then entered text will be cleared.
+* If item is assigned, then item will be added selected item(s). 
+
+By using the following code sample, input that does not contain in drop-down list will be created as token.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfComboBox x:Name="comboBox"
+                    Width="250"
+                    IsEditable="true"
+                    SelectionMode="Multiple"
+                    MultiSelectionDisplayMode="Token"
+                    ItemsSource="{Binding SocialMedias}"
+                    InputSubmitted="OnEditingComboBoxInputSubmitted"
+                    DisplayMemberPath="Name"
+                    TextMemberPath="Name">
+</editors:SfComboBox>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+comboBox.InputSubmitted += OnEditingComboBoxInputSubmitted;
+
+{% endhighlight %}
+{% endtabs %}
+
+The InputSubmitted event can be handled as follows.
+
+{% tabs %}
+{% highlight C# %}
+
+/// <summary>
+/// Occurs when the user submits some text that does not correspond to an item in the `ComboBox` drop-down list.
+/// </summary>
+private void OnEditingComboBoxInputSubmitted(object sender, Syncfusion.UI.Xaml.Editors.ComboBoxInputSubmittedEventArgs e)
+{
+   e.Item = new SocialMedia() { Name = e.Text, ID = comboBox.Items.Count };
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI ComboBox invalid input submission in token mode](Selection_images/winui-combobox-invalid-input-submission.png)
+
 ### Programmatic selection 
 
 The selected items can be changed programmatically by using the `SelectedItems` property of `ComboBox` control.  
