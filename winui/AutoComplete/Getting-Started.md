@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WinUI AutoComplete | Syncfusion
-description: Learn how to get started with Syncfusion WinUI AutoComplete control, its elements, and more in here.
+description: Learn how to get started with Syncfusion WinUI AutoComplete control and its suggestion list, and more in here.
 platform: WinUI
 control: SfAutoComplete
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI AutoComplete (SfAutoComplete)
 
-This section explains the steps required to add the [AutoComplete] control and binding data in `AutoComplete` control. This section covers only basic features needed to get started with Syncfusion `AutoComplete` control.
+This section explains the steps required to add the `AutoComplete` control and binding data in it. This section covers only basic features needed to get started with Syncfusion `AutoComplete` control.
 
 ## Creating an application with WinUI AutoComplete
 
@@ -63,9 +63,11 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
+![WinUI AutoComplete populating items using data binding](GettingStarted_images/winui-autocomplete-control.png)
+
 ## Populating items using data binding
 
-The `AutoComplete` can be bound to an external data source using the `ItemsSource` property. Now, let us create Model and ViewModel classes to populate items with Country details in `AutoComplete`.
+The `AutoComplete` can be bound to an external data source using the `ItemsSource` property. Now, let us create Model and ViewModel classes to populate items with social media details in `AutoComplete`.
 
 **Step 1:** Define a simple model class 'SocialMedia' with fields 'ID' and 'Name', and then populate social media data in the 'SocialMediaViewModel'.
 
@@ -108,7 +110,7 @@ public class SocialMediaViewModel
 
 **Step 2:** Populate data in `AutoComplete`. 
 
-Now, populate this 'SocialMediaViewModel' data in `AutoComplete` control by binding to the `ItemSource` property.
+Now, populate this 'SocialMediaViewModel' data in `AutoComplete` control by binding to the `ItemsSource` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -141,7 +143,7 @@ Now, populate this 'SocialMediaViewModel' data in `AutoComplete` control by bind
 
 autoComplete.DataContext = new SocialMediaViewModel();
 SocialMediaViewModel socialMediaViewModel = (autoComplete.DataContext as SocialMediaViewModel);
-autoComplete.ItemsSource = SocialMediaViewModel.Countries;
+autoComplete.ItemsSource = SocialMediaViewModel.SocialMedias;
 
 {% endhighlight %}
 {% endtabs %}
@@ -150,7 +152,7 @@ N> Set the 'SocialMediaViewModel' instance as the `DataContext` of your control;
 
 **Step 3:** Setting `TextMemberPath` and `DisplayMemberPath`.
 
-The `AutoComplete` control is populated with the list of Countries. But the 'Country' model contains three properties such as 'ID', 'Name' and 'Continent', so it is necessary to intimate which property should be a display value in the selection box portion and dropdown of the `AutoComplete` control.
+The `AutoComplete` control is populated with the list of social medias. But the 'SocialMedia' model contains two properties such as 'Name' and 'ID', so it is necessary to intimate which property should be a display value in the selection box portion and dropdown suggestion of the `AutoComplete` control.
 
 `TextMemberPath` - This property path is used to get the value for displaying in the selection box portion of the `AutoComplete` control when an item is selected. The default value is `String.Empty`.
 
@@ -175,9 +177,10 @@ autoComplete.TextMemberPath = "Name";
 
 ![WinUI AutoComplete populating items using data binding](GettingStarted_images/winui-autocomplete-populating-data-binding.png)
 
-## Multiple Selection
+## Selection
 
-The `AutoComplete` allows user to select single or multiple items from the drop-down list by clicking `Enter` key or lost focus from the text box. The multi-select `AutoComplete` mode can be enabled by setting the [SelectionMode] property as `Multiple`.
+The `AutoComplete` allows user to select single or multiple items from the drop-down list by clicking `Enter` key or lost focus from the text box. 
+You can change the selection mode either single or multi-selection by setting the `SelectionMode` property as `Single` or `Multiple`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -198,11 +201,11 @@ autoComplete.TextMemberPath = "Name";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AutoComplete multi-selection mode](GettingStarted_images/winui-autocomplete-multi-selection.png)
+![WinUI AutoComplete with single and multi-selection mode](GettingStarted_images/winui-autocomplete-single-multi-selection.png)
 
 ## Filtering
 
-The AutoComplete control allows you to filter the data items by it's starting letter or contains a specific letter entered in the editing text box. The string comparison for filtering suggestions can be changed using the `TextSearchMode` property. Custom filtering option also available.
+The AutoComplete control allows you to filter the data items by it's starting letter or contains a specific letter entered in the editing text box. The string comparison for filtering suggestions can be changed using the `TextSearchMode` property. It also supports the custom filtering option.
 
 {% tabs %}
 {% highlight xaml %}
@@ -223,12 +226,10 @@ autoComplete.TextMemberPath = "Name";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AutoComplete filters the items based on starting letters and Containing letters.](GettingStarted_images/winui-autocomplete-filtering-startswith-contains.png)
+### TextSearchMode="StartWith"
 
+![WinUI AutoComplete filters the items based on starting letters.](GettingStarted_images/winui-autocomplete-startwith-filtering.gif)
 
-## Grouping
+### TextSearchMode="Contains"
 
-To display grouped data in `AutoComplete` control, set the `ItemsSource` property to a `CollectionViewSource` with the `IsSourceGrouped` property set to `true`. The `CollectionViewSource` acts as a proxy over the collection class to enable grouping support.
-
-![WinUI AutoComplete groups the data items.](GettingStarted_images/winui-autocomplete-grouping.png)
-
+![WinUI AutoComplete filters the items based on starting letters.](GettingStarted_images/winui-autocomplete-contains-filtering.gif)
