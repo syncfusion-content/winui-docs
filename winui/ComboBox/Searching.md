@@ -238,7 +238,7 @@ public class StringLengthSearchingBehavior : IComboBoxSearchBehavior
 {% endhighlight %}
 {% endtabs %}
 
-For e.g. After typing `9` in selection box, instagram (string length is 9) will be highlighted.
+For e.g. After typing `9` in selection box, the first item that fully matches the typed length will be highlighted.
 
 ![WinUI ComboBox highlight the first item that fully matches the typed length](Searching_images/winui-combobox-custom-searching.png)
 
