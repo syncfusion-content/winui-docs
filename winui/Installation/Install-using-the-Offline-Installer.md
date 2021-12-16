@@ -10,13 +10,13 @@ documentation: ug
 
 # Installation using Offline Installer
 
-You can refer to the [**Download**](https://help.syncfusion.com/winui/installation-and-upgrade/download) section to learn how to get the WinUI trial or licensed installer.
+You can refer to the [**Download**](https://help.syncfusion.com/winui/installation/download) section to learn how to get the WinUI trial or licensed installer.
 
 ## Installing with UI   
 
 The steps below show how to install the Essential Studio WinUI installer.
 
-1.	Open the Syncfusion WinUI offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
+1.	Open the Syncfusion WinUI offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 
     ![Installer extraction wizard](Platform_images/Step-by-Step-Installation_img1.png)
 
