@@ -45,7 +45,7 @@ comboBox.TextMemberPath = "ID";
 {% endhighlight %}
 {% endtabs %}
 
-For e.g. After typing `5` in selection box.
+For e.g. After typing `4` in selection box.
 
 ![WinUI ComboBox text searching based on TextMemberPath](Searching_images/winui-combobox-textmemberpath-searching.png)
 
@@ -59,7 +59,6 @@ In non-editable mode, searching will be performed based on the `DisplayMemberPat
 <editors:SfComboBox x:Name="comboBox"
     Width="250"
     IsTextSearchEnabled="true"
-    IsEditable="true"
     ItemsSource="{Binding SocialMedias}"
     TextMemberPath="Name"
     DisplayMemberPath="ID" />
@@ -73,7 +72,7 @@ comboBox.DisplayMemberPath = "ID";
 {% endhighlight %}
 {% endtabs %}
 
-For e.g. After typing `5` in drop-down.
+For e.g. After typing `4` in drop-down.
 
 ![WinUI ComboBox text searching based on DisplayMemberPath](Searching_images/winui-combobox-displaymemberpath-searching.png)
 
@@ -186,6 +185,63 @@ comboBox.TextSearchMode = ComboBoxTextSearchMode.Contains;
 
 ![WinUI ComboBox search the items based on provided input in editable mode](Searching_images/winui-combobox-searching-contains-text-editable-mode.gif)
 
+### Custom searching
+
+The ComboBox control provides support to implement the own custom logic for the searching mechanism by using the `SearchBehavior` property. In order to implement the desired custom searching behavior for ComboBox you need to create a class that derives from the `IComboBoxSearchBehavior` interface. 
+
+`IComboBoxSearchBehavior` contains the following method:
+
+`GetHighlightIndex(SfComboBox source, ComboBoxSearchInfo searchInfo)` – Returns the index of the highlighted item which was calculated from the filtered items based on text entered in ComboBox control. 
+
+The following example demonstrates highlighting the first item that fully matches the typed length entered in the ComboBox control.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfComboBox x:Name="comboBox"
+                    Width="250"
+                    IsEditable="True"
+                    ItemsSource="{Binding SocialMedias}"
+                    TextMemberPath="Name"
+                    DisplayMemberPath="Name">
+        <editors:SfComboBox.SearchBehavior>
+            <local:StringLengthSearchingBehavior/>
+        </editors:SfComboBox.SearchBehavior>
+</editors:SfComboBox>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+/// <summary>
+/// To highlight the first item that fully matches the typed length entered in the ComboBox control.
+/// </summary>
+public class StringLengthSearchingBehavior : IComboBoxSearchBehavior
+{
+    private int charLength;
+
+    public int GetHighlightIndex(SfComboBox source, ComboBoxSearchInfo searchInfo)
+    {
+        if (int.TryParse(searchInfo.Text, out this.charLength)) 
+        {
+           var fullMatch = source.Items.OfType<SocialMedia>().FirstOrDefault(i => i.Name.Length == charLength); 
+           if (fullMatch != null)
+           {
+              return source.Items.IndexOf(fullMatch); 
+           }
+        }
+       
+        return -1;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+For e.g. After typing `9` in selection box, instagram (string length is 9) will be highlighted.
+
+![WinUI ComboBox highlight the first item that fully matches the typed length](Searching_images/winui-combobox-custom-searching.png)
+
 ## How to disable searching
 
 To disable searching and auto appending text functionalities, set the `IsTextSearchEnabled` property as `false`. The default value is `true`.
@@ -199,7 +255,7 @@ To disable searching and auto appending text functionalities, set the `IsTextSea
     IsEditable="true"
     ItemsSource="{Binding SocialMedias}"
     TextMemberPath="Name"
-    DisplayMemberPath="ID" />
+    DisplayMemberPath="Name" />
 
 {% endhighlight %}
 

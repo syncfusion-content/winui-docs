@@ -103,15 +103,25 @@ private async  void OnComboBoxSelectionChanged(object sender, ComboBoxSelectionC
 {% endhighlight %}
 {% endtabs %}
 
-![Updates selected item each time the user navigates to a new selection in ComboBox](Selection_images/winui-combobox-selection-change-trigger-always.gif)
+Below screenshots demonstrates, while typing `i` in ComboBox control `Instagram` will be updated as selected item.
+
+![Updates selected item each time the user navigates to a new selection in ComboBox](Selection_images/winui-combobox-selection-change-trigger-always.png)
 
 N> You can refer more information about `SelectionChanged` event from [this](https://help.syncfusion.com/winui/combobox/selection#selection-changed-event) link.
 
 ## Multiple selection
 
-The `ComboBox` allows user to select multiple values from the drop-down list. The multi-select `ComboBox` mode can be enabled by setting the `SelectionMode` property as `Multiple`.
+The `ComboBox` allows user to select multiple values from the drop-down list. The multi-select `ComboBox` mode can be enabled by setting the `SelectionMode` property as `Multiple`. 
 
-### UI selection 
+There are two different display modes to perform multi selection in ComboBox: `Delimiter`, and `Token`. The multi selection display mode can be set by using the `MultiSelectionDisplayMode` property. The default value of `MultiSelectionDisplayMode` property is `Delimiter`.
+
+### Delimiter
+
+When selecting the multiple items, the selected items can be separated from each other with a desired character given for a delimiter. 
+
+N> The `IsEditable` property has no effect when `MultiSelectionDisplayMode` is `Delimiter`.
+
+#### UI selection 
 
 The selected items can be changed interactively by using keyboard or by selecting from a drop-down list. The selected items can be retrieved from the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectedItems) property of `ComboBox` control.
 
@@ -129,29 +139,9 @@ The selected items can be changed interactively by using keyboard or by selectin
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple selection in WinUI ComboBox](Selection_images/winui-combobox-multiple-selection.gif)
+![Multiple selection in WinUI ComboBox](Selection_images/winui-combobox-multiple-selection-delimiter.gif)
 
-### Programmatic selection 
-
-The selected items can be changed programmatically by using the `SelectedItems` property of `ComboBox` control.  
-
-{% tabs %}
-{% highlight c# %}
-
-comboBox.DataContext = new SocialMediaViewModel();
-SocialMediaViewModel socialMediaViewModel = (this.comboBox.DataContext as SocialMediaViewModel);
-ObservableCollection<SocialMedia> socialMediasList = socialMediaViewModel.SocialMedias;
-this.comboBox.SelectedItems.Add(socialMediasList[0]);
-this.comboBox.SelectedItems.Add(socialMediasList[3]);
-this.comboBox.SelectedItems.Add(socialMediasList[4]);
-this.comboBox.SelectedItems.Add(socialMediasList[7]);
-
-{% endhighlight %}
-{% endtabs %}
-
-![Multiple selection in WinUI ComboBox programmatically](Selection_images/winui-combobox-multiple-selection-programmatically.png)
-
-### Separate items using delimiter
+#### Separate items using delimiter
 
 The `ComboBox` supports various delimiter characters to separate the selected items displayed in a multi-select `ComboBox`. The delimiter character can be set by using the [DelimiterText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_DelimiterText) property. The default delimiter character is `,`.
 
@@ -177,6 +167,63 @@ comboBox.DelimiterText = "-";
 {% endtabs %}
 
 ![WinUI ComboBox seperate the selected items using delimiter text](Selection_images/winui-combobox-delimiter-text.png)
+
+### Token
+
+Selected items will be displayed with a customizable token representation and the users can remove each tokenized item with the close button. Token mode supports both editable and non-editable text boxes for selecting items from a data source.
+
+#### UI selection 
+
+The selected items can be changed interactively by using keyboard or by selecting from a drop-down list. The selected items can be retrieved from the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectedItems) property of `ComboBox` control.
+
+{% tabs %}
+{% highlight xaml %}
+
+<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="50">
+    <StackPanel.DataContext>
+        <local:SocialMediaViewModel/>
+    </StackPanel.DataContext>
+    <editors:SfComboBox x:Name="comboBox"
+                        Width="320"
+                        ItemsSource="{Binding SocialMedias}"
+                        SelectionMode="Multiple"
+                        MultiSelectionDisplayMode="Token"
+                        DisplayMemberPath="Name"
+                        PlaceholderText="Select a social media"
+                        TextMemberPath="Name" />
+
+    <CheckBox Margin="20,0,0,0"
+              IsChecked="{Binding ElementName=comboBox, Path=IsEditable, Mode=TwoWay}"
+              Content="IsEditable" />
+
+</StackPanel>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Multiple selection in WinUI ComboBox](Selection_images/winui-combobox-multiple-selection-token.gif)
+
+N> You can refer more information about customization of `ComboBoxTokenItem` from [this](https://help.syncfusion.com/winui/combobox/ui-customization#styling-comboboxtokenitem) link.
+
+### Programmatic selection 
+
+The selected items can be changed programmatically by using the `SelectedItems` property of `ComboBox` control.  
+
+{% tabs %}
+{% highlight c# %}
+
+comboBox.DataContext = new SocialMediaViewModel();
+SocialMediaViewModel socialMediaViewModel = (this.comboBox.DataContext as SocialMediaViewModel);
+ObservableCollection<SocialMedia> socialMediasList = socialMediaViewModel.SocialMedias;
+this.comboBox.SelectedItems.Add(socialMediasList[0]);
+this.comboBox.SelectedItems.Add(socialMediasList[2]);
+this.comboBox.SelectedItems.Add(socialMediasList[3]);
+this.comboBox.SelectedItems.Add(socialMediasList[5]);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Multiple selection in WinUI ComboBox programmatically](Selection_images/winui-combobox-multiple-selection-programmatically.png)
 
 ### How to hide the check box
 
