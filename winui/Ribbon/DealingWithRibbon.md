@@ -79,30 +79,20 @@ private void ribbon_SelectedTabChanged(object sender, SelectionChangedEventArgs 
 ##  Ribbon Contextual tab group
 
 Ribbon contextual tab groups are used to group the ribbon tabs for easier navigation. This contextual tab groups appear when a user enables their context. 
-The `Visibility` property is collapsed by default. The Visibility property becomes visible and the associated contextual tab group opens when you click the Image or Grid view.Any number of 
-contextual tab group can be added to the ribbon using the `ContextualTabGroups` property.
+The contextual tab groups are closed by default,to make them visible, use the `Visibility` property.Any number of contextual tab group can be added to the ribbon using the `ContextualTabGroups` property.
 
 {% tabs %}
 {% highlight xaml %}
 
-<ribbon:SfRibbon.ContextualTabGroups>
-        <ribbon:RibbonContextualTabGroup x:Name="ImageOptions"
-                                Visibility="Collapsed" 
-                                SelectFirstTabOnVisible="True" >
+ <ribbon:SfRibbon.ContextualTabGroups>
+        <ribbon:RibbonContextualTabGroup x:Name="ImageOptions">
             <ribbon:RibbonContextualTabGroup.Tabs>
                 <ribbon:RibbonTab Header="Picture Format">
                     <ribbon:RibbonGroup Header="Image Stretch">
                         <ribbon:RibbonItemHost>
                             <ribbon:RibbonItemHost.ItemTemplate>
                                 <DataTemplate>
-                                    <Grid>
-                                        <RadioButton x:Name="StretchNone" 
-                                                                Grid.Row="0"
-                                                                Grid.Column="0"
-                                                                Content="None"
-                                                                IsChecked="True"
-                                                               GroupName="ImageStretch"/>
-                                    </Grid>
+                                    <Button Content="Fill"/>
                                 </DataTemplate>
                             </ribbon:RibbonItemHost.ItemTemplate>
                         </ribbon:RibbonItemHost>
@@ -110,39 +100,38 @@ contextual tab group can be added to the ribbon using the `ContextualTabGroups` 
                 </ribbon:RibbonTab>
             </ribbon:RibbonContextualTabGroup.Tabs>
         </ribbon:RibbonContextualTabGroup>
-        <ribbon:RibbonContextualTabGroup x:Name="TableOptions"
-                                Visibility="Collapsed"
-                                Background="{ThemeResource SystemListMediumColor}"
-                                SelectFirstTabOnVisible="True">
+        <ribbon:RibbonContextualTabGroup x:Name="TableOptions">
             <ribbon:RibbonContextualTabGroup.Tabs>
-                <ribbon:RibbonTab Header="Item Design"/>    
+                <ribbon:RibbonTab Header="Item Design"/>
                 <ribbon:RibbonTab Header="Layout"/>
         </ribbon:RibbonContextualTabGroup>
-    </ribbon:SfRibbon.ContextualTabGroups>
+ </ribbon:SfRibbon.ContextualTabGroups>
+ <ToggleButton x:Name="ImageButton" 
+               Click="ImageButton_Click">
+               <Image Source="ms-appx:///Assets/Ribbon/Employees/Employee3.png"/>
+ </ToggleButton>
+ <GridView x:Name="ContentGridView" 
+           ItemsSource="{Binding Employees}"
+           SelectedItem="{Binding SelectedEmployee, Mode=TwoWay}"
+           SelectionChanged="ContentGridView_SelectionChanged"/>
 
 {% endhighlight %} 
 {% highlight c# %}
 
-    private void ContentGridView_SelectionChanged(object sender,                 SelectionChangedEventArgs e)
-        {
-            this.ImageButton.IsChecked = false;
-            this.ImageOptions.Visibility = Visibility.Collapsed;
-            this.TableOptions.Visibility = Visibility.Visible;
-            this.ContentGridView.BorderBrush = (SolidColorBrush)this.Resources["TextBoxBorderThemeBrush"];
-        }
         private void ImageButton_Click(object sender, RoutedEventArgs e)
         {
-            this.TableOptions.Visibility = Visibility.Collapsed;
-            this.ImageButton.IsChecked = true;
             this.ImageOptions.Visibility = Visibility.Visible;
-            this.ContentGridView.BorderBrush = (SolidColorBrush)this.Resources["TextBoxDisabledBorderThemeBrush"];
+            this.TableOptions.Visibility = Visibility.Collapsed;
         }
         private void Grid_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
-            this.ImageButton.IsChecked = false;
             this.ImageOptions.Visibility = Visibility.Collapsed;
-            this.TableOptions.Visibility = Visibility.Collapsed;
-            this.ContentGridView.BorderBrush = (SolidColorBrush)this.Resources["TextBoxDisabledBorderThemeBrush"];
+             this.TableOptions.Visibility = Visibility.Collapsed;
+        }
+        private void ContentGridView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            this.ImageOptions.Visibility = Visibility.Collapsed;
+            this.TableOptions.Visibility = Visibility.Visible;
         }
 
 {% endhighlight %} 
@@ -152,7 +141,7 @@ contextual tab group can be added to the ribbon using the `ContextualTabGroups` 
 
 ##  Select first ribbon tab while group get selected
 
-If the SelectFirstTabOnVisible property is set to true, the first tab of the contextual tab group will be selected, and the Items of the tab will be displayed.
+The `SelectFirstTabOnVisible` property is set to true by default, which means that the first tab group of the contextual tab groups is selected. If you don't need to choose the first tab group, set the value to false.
 
 {% tabs %}
 {% highlight xaml %}
@@ -165,7 +154,7 @@ If the SelectFirstTabOnVisible property is set to true, the first tab of the con
             </ribbon:RibbonContextualTabGroup.Tabs>
         </ribbon:RibbonContextualTabGroup>
         <ribbon:RibbonContextualTabGroup x:Name="TableOptions"
-                                SelectFirstTabOnVisible="True">
+                                SelectFirstTabOnVisible="False">
             <ribbon:RibbonContextualTabGroup.Tabs>
                 <ribbon:RibbonTab Header="Item Design"/>
         </ribbon:RibbonContextualTabGroup>
@@ -174,12 +163,19 @@ If the SelectFirstTabOnVisible property is set to true, the first tab of the con
 {% endhighlight %} 
 {% endtabs %}
 
+SelectFirstTabOnVisible="True" 
+
 ![RibbonContextualTabGroup with first tab selected.](Dealing-With-Ribbon-imgaes/contexual-tab-group-select-first-tab-on-visible.png)
+
+SelectFirstTabOnVisible="False" 
+
+![RibbonContextualTabGroup with first tab selected.](Dealing-With-Ribbon-imgaes/contexual-tab-group-select-first-tab-on-visible_false.png)
 
 ## Appearance of Contextual Tab Group
 
 ## Background
-The Ribbon Contextual Tab group background color can be changed using `Background` property.
+
+The background color of tab groups can be changed using `Background` property.When you change the background of a contextual tab group, it reflected in all tab groups inside that group.
 
 {% tabs %}
 {% highlight xaml %}
@@ -187,9 +183,10 @@ The Ribbon Contextual Tab group background color can be changed using `Backgroun
    <ribbon:SfRibbon.ContextualTabGroups>
         <ribbon:RibbonContextualTabGroup x:Name="ImageOptions"
                                         Background="LightGray">
-            <ribbon:RibbonContextualTabGroup.Tabs>
-                <ribbon:RibbonTab Header="Picture Format"/>
-            </ribbon:RibbonContextualTabGroup.Tabs>
+          <ribbon:RibbonContextualTabGroup.Tabs>
+                <ribbon:RibbonTab Header="Item Design"/>
+                <ribbon:RibbonTab Header="Layout"/>
+          </ribbon:RibbonContextualTabGroup.Tabs>
         </ribbon:RibbonContextualTabGroup>
     </ribbon:SfRibbon.ContextualTabGroups>
 
@@ -199,7 +196,8 @@ The Ribbon Contextual Tab group background color can be changed using `Backgroun
 ![RibbonContextualTabGroup with background color](Dealing-With-Ribbon-imgaes/contextual-tab-group-background.png)
 
 ## Foreground
-The Ribbon Contextual Tab group foreground color can be changed using `Foreground` property.
+
+The foreground color of tab groups can be changed using `Foreground` property.When you change the foreground of a contextual tab group, it reflected in all tab groups inside that group.
 
 {% tabs %}
 {% highlight xaml %}
@@ -211,6 +209,7 @@ The Ribbon Contextual Tab group foreground color can be changed using `Foregroun
             <ribbon:RibbonContextualTabGroup.Tabs>
                 <ribbon:RibbonTab Header="Item Design"/>
                  <ribbon:RibbonTab Header="Layout"/>
+            </ribbon:RibbonContextualTabGroup.Tabs>
         </ribbon:RibbonContextualTabGroup>
     </ribbon:SfRibbon.ContextualTabGroups>
 
