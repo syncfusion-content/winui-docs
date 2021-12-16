@@ -205,7 +205,7 @@ autoComplete.TextMemberPath = "Name";
 
 ## Filtering
 
-The AutoComplete control allows you to filter the data items by it's starting letter or contains a specific letter entered in the editing text box. The string comparison for filtering suggestions can be changed using the `TextSearchMode` property. It also supports the custom filtering option.
+The `AutoComplete` control allows you to filter the data items by it's starting letter or contains a specific letter entered in the editing text box. The string comparison for filtering suggestions can be changed using the `TextSearchMode` property. It also supports the custom filtering option.
 
 {% tabs %}
 {% highlight xaml %}
