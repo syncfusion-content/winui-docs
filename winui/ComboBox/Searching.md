@@ -198,9 +198,7 @@ The following example demonstrates highlighting the first item that fully matche
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfComboBox x:Name="comboBox"
-                    Width="250"
-                    IsEditable="True"
+<editors:SfComboBox IsEditable="True"
                     ItemsSource="{Binding SocialMedias}"
                     TextMemberPath="Name"
                     DisplayMemberPath="Name">

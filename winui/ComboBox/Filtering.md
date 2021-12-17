@@ -69,7 +69,6 @@ public class CityViewModel
 {% highlight XAML %}
 
 <editors:SfComboBox x:Name="comboBox"
-                    Width="250"
                     IsEditable="true"
                     IsFilteringEnabled="true"
                     ItemsSource="{Binding Cities}"
@@ -106,18 +105,13 @@ Filter the matching items based on the starting text and the first filtered item
 {% highlight XAML %}
 
 <editors:SfComboBox x:Name="comboBox"
-                    Width="250"
                     TextSearchMode="StartsWith"
                     IsEditable="true"
                     IsFilteringEnabled="true"
                     ItemsSource="{Binding Cities}"
                     TextMemberPath="CityName"
-                    DisplayMemberPath="CityName">
-        <editors:SfComboBox.DataContext>
-            <local:CityViewModel/>
-        </editors:SfComboBox.DataContext>
-</editors:SfComboBox>
-
+                    DisplayMemberPath="CityName" />
+       
 {% endhighlight %}
 
 {% highlight C# %}
@@ -139,17 +133,12 @@ Filter the matching items that contain specific text, and the first filtered ite
 {% highlight XAML %}
 
 <editors:SfComboBox x:Name="comboBox"
-                    Width="250"
                     TextSearchMode="Contains"
                     IsEditable="true"
                     IsFilteringEnabled="true"
                     ItemsSource="{Binding Cities}"
                     TextMemberPath="CityName"
-                    DisplayMemberPath="CityName">
-        <editors:SfComboBox.DataContext>
-            <local:CityViewModel/>
-        </editors:SfComboBox.DataContext>
-</editors:SfComboBox>
+                    DisplayMemberPath="CityName" />
 
 {% endhighlight %}
 
@@ -170,28 +159,18 @@ The ComboBox control provides support to implement the own custom logic for the 
 
 `IComboBoxFilterBehavior` contains the following method:
 
-`GetMatchingIndexes(SfComboBox source, ComboBoxFilterInfo filterInfo)` â€“ Returns a collection of integer objects representing the indexes of the filtered items using the text entered in ComboBox control.
+`GetMatchingIndexes(SfComboBox source, ComboBoxFilterInfo filterInfo)` – Returns a collection of integer objects representing the indexes of the filtered items using the text entered in ComboBox control.
 
 The following example demonstrates displaying the cities based on the country name entered in the ComboBox control.
 
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfComboBox x:Name="CustomFilterComboBox"
-                    Width="250"
-                    TextMemberPath="CityName"
+<editors:SfComboBox TextMemberPath="CityName"
                     DisplayMemberPath="CityName"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    Header="Type a country name"
-                    PlaceholderText="Select a city"
-                    Description="e.g., USA, India, Canada, England"
                     IsEditable="True"
                     IsFilteringEnabled="True"
                     ItemsSource="{Binding Cities}">
-        <editors:SfComboBox.DataContext>
-            <local:CityViewModel/>
-        </editors:SfComboBox.DataContext>            
         <editors:SfComboBox.FilterBehavior>
             <local:CityFilteringBehavior/>
         </editors:SfComboBox.FilterBehavior>

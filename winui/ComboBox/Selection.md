@@ -113,7 +113,7 @@ N> You can refer more information about `SelectionChanged` event from [this](htt
 
 The `ComboBox` allows user to select multiple values from the drop-down list. The multi-select `ComboBox` mode can be enabled by setting the `SelectionMode` property as `Multiple`. 
 
-There are two different display modes to perform multi selection in ComboBox: `Delimiter`, and `Token`. The MultiSelection display modes will be briefly detailed in the upcoming section.
+There are two different display modes to perform multi selection in ComboBox: `Delimiter`, and `Token`. The MultiSelection display modes will be briefly explained in the upcoming section.
 
 ### Programmatic selection 
 
@@ -132,7 +132,6 @@ The selected items can be changed programmatically by using the `SelectedItems` 
 
 {% highlight c# %}
 
-comboBox.DataContext = new SocialMediaViewModel();
 SocialMediaViewModel socialMediaViewModel = (this.comboBox.DataContext as SocialMediaViewModel);
 ObservableCollection<SocialMedia> socialMediasList = socialMediaViewModel.SocialMedias;
 this.comboBox.SelectedItems.Add(socialMediasList[0]);

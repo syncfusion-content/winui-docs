@@ -130,7 +130,16 @@ private void OnEditingComboBoxPreviewKeyDown(object sender, KeyRoutedEventArgs e
 
 ## Handle invalid input 
 
-The `InputSubmitted` event is triggered, when text is submitted that does not correspond to an item in the `ComboBox` drop-down list. By using the following code sample, a dialogue box will be displayed when submitting input that does not contain in drop-down list.
+The `InputSubmitted` event is triggered, when entered text is submitted that does not correspond to an item in the drop-down list. `ComboBoxInputSubmittedEventArgs` has following members which provides information for InputSubmitted event.
+
+Text: Gets the text entered in ComboBox.
+
+Item: This property can be used to add the item to selected item(s) or set to selected item which gets assigned.
+      If no item is assigned, then in single selection entered text gets assigned to selected item. In multiple selection, no text will be added to selected items.
+
+Handled: When set to `true`, the framework will not automatically update the selected item or selected item(s) of the ComboBox to the new value.
+
+**Example 1:** By using the following code sample, a dialogue box will be displayed when submitting input that does not contain in drop-down list.
 
 {% tabs %}
 {% highlight XAML %}
@@ -177,3 +186,36 @@ private async void OnEditingComboBoxInputSubmitted(object sender, Syncfusion.UI.
 {% endtabs %}
 
 ![WinUI ComboBox invalid input submission](Editing_images/winui-combobox-invalid-input-submission.png)
+
+**Example 2:** The following example demonstrates adding invalid item to selected items in multiple selection mode.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfComboBox IsEditable="true"
+                    SelectionMode="Multiple"
+                    MultiSelectionDisplayMode="Token"  
+                    ItemsSource="{Binding SocialMedias}"
+                    InputSubmitted="OnEditingComboBoxInputSubmitted"
+                    DisplayMemberPath="Name"
+                    TextMemberPath="Name">
+</editors:SfComboBox>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+/// <summary>
+/// Occurs when the user submits some text that does not correspond to an item in the `ComboBox` drop-down list.
+/// </summary>
+private async void OnEditingComboBoxInputSubmitted(object sender, Syncfusion.UI.Xaml.Editors.ComboBoxInputSubmittedEventArgs e)
+{
+    e.Item = new SocialMedia() { Name = e.Text, ID = comboBox.Items.Count };
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI ComboBox invalid input submission in token mode](Editing_images/winui-combobox-invalid-input-submission-in-token-mode.png)
+
+N> You can refer more information about multi selection token mode from [this](https://help.syncfusion.com/winui/combobox/selection#multiple-selection) link.
