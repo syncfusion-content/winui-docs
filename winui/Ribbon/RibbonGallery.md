@@ -361,16 +361,14 @@ The image below shows how the RibbonGallery can be displayed in a Simplified mod
 
 ## Ribbon gallery preview
 
-The RibbonGallery preview feature is used to inspect the items before we select them. User can customize the preview support using `ItemPointerEnter` and `ItemPointerExit` events.
+The RibbonGallery preview feature is used to inspect the items before we select them. Users can activate and deactivate the preview support using `ItemPointerEnter` and `ItemPointerExit` events respectively.
 
 {% tabs %}
 {% highlight xaml %}
 
 
-<ribbon:RibbonGallery  x:Name="fontGallery" 
-                       ItemHeight="70"
+<ribbon:RibbonGallery  ItemHeight="70"
                        ItemWidth="100"
-                       MaxColumnCount="5"
                        SelectedItem="{x:Bind ribbongalitem}"
                        ItemPointerEnter="fontGallery_ItemPointerEnter"
                        ItemPointerExit="fontGallery_ItemPointerExit"
@@ -383,16 +381,16 @@ The RibbonGallery preview feature is used to inspect the items before we select 
 
 private void OnItemPointerEnter(object sender, RibbonRoutedEventArgs e)
 {
-    RibbonGalleryItem selecteditem = e.Source as RibbonGalleryItem;
-    if (selecteditem != null)
-    {
-        FontViewModel.FontSize = (selecteditem.Content as FontStyle).FontSize;
-        FontViewModel.FontWeight = (selecteditem.Content as FontStyle).FontWeight;
-    }
+   FontInfo selecteditem = (FontInfo)(e.Source as RibbonGalleryItem).Content;
+   if (selecteditem != null)
+   {
+      FontViewModel.FontSize = selecteditem.FontSize;
+      FontViewModel.FontWeight = selecteditem.FontWeight;
+   }
 }
 private void OnItemPointerExit(object sender, RibbonRoutedEventArgs e)
 {
-    FontStyle selecteditem = (FontStyle)(sender as RibbonGallery).SelectedItem;
+    FontInfo selecteditem = (FontInfo)(sender as RibbonGallery).SelectedItem;
     if (selecteditem != null)
     {
         FontViewModel.FontSize = selecteditem.FontSize;
