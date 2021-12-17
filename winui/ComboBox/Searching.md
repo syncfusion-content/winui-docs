@@ -231,10 +231,10 @@ public class StringLengthSearchingBehavior : IComboBoxSearchBehavior
     {
         if (int.TryParse(searchInfo.Text, out this.charLength)) 
         {
-           var fullMatch = source.FilteredItems.OfType<SocialMedia>().FirstOrDefault(i => i.Name.Length == charLength); 
+           var fullMatch = searchInfo.FilteredItems.OfType<SocialMedia>().FirstOrDefault(i => i.Name.Length == charLength); 
            if (fullMatch != null)
            {
-              return source.FilteredItems.IndexOf(fullMatch); 
+              return searchInfo.FilteredItems.IndexOf(fullMatch); 
            }
         }
        
