@@ -187,14 +187,65 @@ comboBox.TextSearchMode = ComboBoxTextSearchMode.Contains;
 
 ### Custom searching
 
-The ComboBox control provides support to implement the own custom logic for the searching mechanism by using the `SearchBehavior` property. 
+The ComboBox control provides support to apply your own custom search logic to highlight the item in the drop-down based on your search criteria by using the `SearchBehavior` property. The default value of `SearchBehavior` is `null`.
 
-In order to implement the desired custom searching behavior for ComboBox you need to create a class that derives from the `IComboBoxSearchBehavior` interface. Then, by overriding the `GetHighlightIndex` method of IComboBoxSearchBehavior interface, you can calculate the highlight index depending on the filtered items list and text entered in the ComboBox control that needs to be highlighted in drop-down. The GetHighlightIndex method contains following arguments.
+Now, lets create custom searching class to apply our own search logic to ComboBox control by following steps.
 
-* source - The owner of the search behavior, which holds information about ItemsSource, Items properties, and so on.
-* searchInfo - Contains details about the filtered items list and the text entered in ComboBox control. You may compute the index that has to be highlighted in the drop down list using this details.
+**Step 1:** Create a class that derives from the `IComboBoxSearchBehavior` interface. 
 
-The following example demonstrates highlighting the first item that fully matches the typed length entered in the ComboBox control.
+{% tabs %}
+{% highlight C# %}
+
+/// <summary>
+/// Represents a custom searching behavior for `ComboBox` control. 
+/// </summary>
+public class StringLengthSearchingBehavior : IComboBoxSearchBehavior
+{
+   
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+**Step 2:** Then, implement the `GetHighlightIndex` method of IComboBoxSearchBehavior interface to calculate the highlight index depending on the filtered items list and text entered in the ComboBox control that needs to be highlighted in drop-down. The `GetHighlightIndex` method contains following arguments.
+
+* `source` - The owner of the search behavior, which holds information about ItemsSource, Items properties, and so on.
+* `searchInfo` - Contains details about the filtered items list and the text entered in ComboBox control. You may compute the index that has to be highlighted in the drop down list using this details.
+
+The following example demonstrates how to highlight the first item that fully matches the typed length entered in the ComboBox control.
+
+{% tabs %}
+{% highlight C# %}
+
+/// <summary>
+/// Represents a custom searching behavior for `ComboBox` control. 
+/// </summary>
+public class StringLengthSearchingBehavior : IComboBoxSearchBehavior
+{
+    private int charLength;
+
+    /// <summary>
+    /// Return the highlight index that fully matches the typed length entered in the ComboBox control.
+    /// </summary>
+    public int GetHighlightIndex(SfComboBox source, ComboBoxSearchInfo searchInfo)
+    {
+        if (int.TryParse(searchInfo.Text, out this.charLength)) 
+        {
+           var fullMatch = source.FilteredItems.OfType<SocialMedia>().FirstOrDefault(i => i.Name.Length == charLength); 
+           if (fullMatch != null)
+           {
+              return source.FilteredItems.IndexOf(fullMatch); 
+           }
+        }
+       
+        return -1;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+**Step3:** Applying custom searching to ComboBox control by using the `SearchBehavior` property. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -207,32 +258,6 @@ The following example demonstrates highlighting the first item that fully matche
             <local:StringLengthSearchingBehavior/>
         </editors:SfComboBox.SearchBehavior>
 </editors:SfComboBox>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-/// <summary>
-/// To highlight the first item that fully matches the typed length entered in the ComboBox control.
-/// </summary>
-public class StringLengthSearchingBehavior : IComboBoxSearchBehavior
-{
-    private int charLength;
-
-    public int GetHighlightIndex(SfComboBox source, ComboBoxSearchInfo searchInfo)
-    {
-        if (int.TryParse(searchInfo.Text, out this.charLength)) 
-        {
-           var fullMatch = source.Items.OfType<SocialMedia>().FirstOrDefault(i => i.Name.Length == charLength); 
-           if (fullMatch != null)
-           {
-              return source.Items.IndexOf(fullMatch); 
-           }
-        }
-       
-        return -1;
-    }
-}
 
 {% endhighlight %}
 {% endtabs %}

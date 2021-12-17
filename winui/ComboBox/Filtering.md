@@ -155,37 +155,44 @@ N> Auto appending of the first suggested item text to typed input is not support
 
 ### Custom filtering
 
-The ComboBox control provides support to implement the own custom logic for the filtering mechanism by using the `FilterBehavior` property. 
+The ComboBox control provides support to apply your own custom filter logic to suggests the items based on your filter criteria by using the `FilterBehavior` property. The default value of `FilterBehavior` is `null`.
 
-In order to implement the desired custom filtering behavior for ComboBox you need to create a class that derives from the `IComboBoxFilterBehavior` interface. Then, by overriding the `GetMatchingIndexes` method of IComboBoxFilterBehavior interface, you can create your own suggestion list (containing the indices of the filtered items) depending on the text entered in the ComboBox control that needs to be shown in drop-down. The GetMatchingIndexes method contains following arguments.
+Now, lets create custom filtering class to apply our own filter logic to ComboBox control by following steps.
 
-* source - The owner of the filter behavior, which holds information about ItemsSource, Items properties, and so on.
-* filterInfo - Contains details about the text entered in ComboBox control. Using this text, you can prepare suggestion list which gets displayed in drop down list. 
-
-The following example demonstrates displaying the cities based on the country name entered in the ComboBox control.
+**Step 1:** Create a class that derives from the `IComboBoxFilterBehavior` interface. 
 
 {% tabs %}
-{% highlight XAML %}
-
-<editors:SfComboBox TextMemberPath="CityName"
-                    DisplayMemberPath="CityName"
-                    IsEditable="True"
-                    IsFilteringEnabled="True"
-                    ItemsSource="{Binding Cities}">
-        <editors:SfComboBox.FilterBehavior>
-            <local:CityFilteringBehavior/>
-        </editors:SfComboBox.FilterBehavior>
-</editors:SfComboBox>
-
-{% endhighlight %}
-
 {% highlight C# %}
 
 /// <summary>
-/// To filter the cities based on country name.
+/// Represents a custom filtering behavior for `ComboBox` control. 
 /// </summary>
 public class CityFilteringBehavior : IComboBoxFilterBehavior
 {
+
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+**Step 2:** Then, implement the `GetMatchingIndexes` method of IComboBoxFilterBehavior interface to create your own suggestion list (containing the indices of the filtered items) based on the text entered in the ComboBox control that needs to be shown in drop-down. The `GetMatchingIndexes` method contains following arguments.
+
+* `source` - The owner of the filter behavior, which holds information about ItemsSource, Items properties, and so on.
+* `filterInfo` - Contains details about the text entered in ComboBox control. Using this text, you can prepare suggestion list which gets displayed in drop down list. 
+
+The following code demonstrates how to filter the cities based on the city or country name entered in ComboBox control.
+
+{% tabs %}
+{% highlight C# %}
+
+/// <summary>
+/// Represents a custom filtering behavior for `ComboBox` control. 
+/// </summary>
+public class CityFilteringBehavior : IComboBoxFilterBehavior
+{
+    /// <summary>
+    /// Returned suggestion list based on the city or country name entered in the ComboBox control.
+    /// </summary>
     public List<int> GetMatchingIndexes(SfComboBox source, ComboBoxFilterInfo filterInfo)
     {
         List<int> filteredlist = new List<int>();
@@ -202,5 +209,25 @@ public class CityFilteringBehavior : IComboBoxFilterBehavior
 
 {% endhighlight %}
 {% endtabs %}
+
+**Step3:** Applying custom filtering to ComboBox control by using the `FilterBehavior` property. 
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfComboBox TextMemberPath="CityName"
+                    DisplayMemberPath="CityName"
+                    IsEditable="True"
+                    IsFilteringEnabled="True"
+                    ItemsSource="{Binding Cities}">
+        <editors:SfComboBox.FilterBehavior>
+            <local:CityFilteringBehavior/>
+        </editors:SfComboBox.FilterBehavior>
+</editors:SfComboBox>
+
+{% endhighlight %}
+{% endtabs %}
+
+The following gif demonstrates displaying the cities in drop-down based on the country name entered in the ComboBox control.
 
 ![WinUI ComboBox filter the items based on custom filtering logic](Filtering_images/winui-combobox-custom-filtering.gif)
