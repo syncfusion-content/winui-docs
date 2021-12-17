@@ -187,11 +187,12 @@ comboBox.TextSearchMode = ComboBoxTextSearchMode.Contains;
 
 ### Custom searching
 
-The ComboBox control provides support to implement the own custom logic for the searching mechanism by using the `SearchBehavior` property. In order to implement the desired custom searching behavior for ComboBox you need to create a class that derives from the `IComboBoxSearchBehavior` interface. 
+The ComboBox control provides support to implement the own custom logic for the searching mechanism by using the `SearchBehavior` property. 
 
-`IComboBoxSearchBehavior` contains the following method:
+In order to implement the desired custom searching behavior for ComboBox you need to create a class that derives from the `IComboBoxSearchBehavior` interface. Then, by overriding the `GetHighlightIndex` method of IComboBoxSearchBehavior interface, you can calculate the highlight index depending on the filtered items list and text entered in the ComboBox control that needs to be highlighted in drop-down. The GetHighlightIndex method contains following arguments.
 
-`GetHighlightIndex(SfComboBox source, ComboBoxSearchInfo searchInfo)` – Returns the index of the highlighted item which was calculated from the filtered items based on text entered in ComboBox control. 
+* source - The owner of the search behavior, which holds information about ItemsSource, Items properties, and so on.
+* searchInfo - Contains details about the filtered items list and the text entered in ComboBox control. You may compute the index that has to be highlighted in the drop down list using this details.
 
 The following example demonstrates highlighting the first item that fully matches the typed length entered in the ComboBox control.
 

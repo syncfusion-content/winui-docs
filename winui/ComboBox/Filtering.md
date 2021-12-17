@@ -155,11 +155,12 @@ N> Auto appending of the first suggested item text to typed input is not support
 
 ### Custom filtering
 
-The ComboBox control provides support to implement the own custom logic for the filtering mechanism by using the `FilterBehavior` property. In order to implement the desired custom filtering behavior for ComboBox you need to create a class that derives from the `IComboBoxFilterBehavior` interface. 
+The ComboBox control provides support to implement the own custom logic for the filtering mechanism by using the `FilterBehavior` property. 
 
-`IComboBoxFilterBehavior` contains the following method:
+In order to implement the desired custom filtering behavior for ComboBox you need to create a class that derives from the `IComboBoxFilterBehavior` interface. Then, by overriding the `GetMatchingIndexes` method of IComboBoxFilterBehavior interface, you can create your own suggestion list (containing the indices of the filtered items) depending on the text entered in the ComboBox control that needs to be shown in drop-down. The GetMatchingIndexes method contains following arguments.
 
-`GetMatchingIndexes(SfComboBox source, ComboBoxFilterInfo filterInfo)` – Returns a collection of integer objects representing the indexes of the filtered items using the text entered in ComboBox control.
+* source - The owner of the filter behavior, which holds information about ItemsSource, Items properties, and so on.
+* filterInfo - Contains details about the text entered in ComboBox control. Using this text, you can prepare suggestion list which gets displayed in drop down list. 
 
 The following example demonstrates displaying the cities based on the country name entered in the ComboBox control.
 
@@ -188,12 +189,12 @@ public class CityFilteringBehavior : IComboBoxFilterBehavior
     public List<int> GetMatchingIndexes(SfComboBox source, ComboBoxFilterInfo filterInfo)
     {
         List<int> filteredlist = new List<int>();
-        List<CityInfo> CityItems = source.Items.OfType<CityInfo>().ToList(); 
+        List<CityInfo> cityItems = source.Items.OfType<CityInfo>().ToList(); 
 
-        filteredlist.AddRange(from CityInfo item in CityItems
+        filteredlist.AddRange(from CityInfo item in cityItems
                               where item.CountryName.StartsWith(filterInfo.Text, StringComparison.CurrentCultureIgnoreCase) ||
                                     item.CityName.StartsWith(filterInfo.Text, StringComparison.CurrentCultureIgnoreCase)
-                              select CityItems.IndexOf(item));
+                              select cityItems.IndexOf(item));
 
         return filteredlist;
     }
