@@ -337,8 +337,7 @@ The `MaxColumnCount` in a RibbonGallery allows to wrap the maximum number of gal
 
 ![Setting of MaxColumnCount in RibbonGallery](RibbonGallery-images/ribbon-gallery-item-column-count-customization.png)
 
-
-## Ribbon galley in simplified layout
+## Ribbon gallery in simplified layout
 
 The `DisplayOptions` property in a RibbonGallery is an Enum type property that allows to display a RibbonGallery in a specific layout based on `LayoutModeOptions` such as Normal and Simplified state of Ribbon. The `DisplayOptions` property is set to Normal and Simplified mode by default.
 
@@ -358,6 +357,96 @@ The image below shows how the RibbonGallery can be displayed in a Simplified mod
 {% endtabs %}
 
 ![Displaying RibbonGallery with Simplified Ribbon layout](RibbonGallery-images/ribbon-gallery-in-simplified-diplaymode.png)
+
+## Ribbon gallery preview
+
+Gallery items' width and height can be changed using the `ItemWidth` and `ItemHeight` properties of RibbonGallery.
+The RibbonGallery preview feature is used to inspect the items before we select them. User can customize the preview support using `ActivatePreview` and `DeactivatePreview` events.
+
+{% tabs %}
+{% highlight xaml %}
+<ribbon:RibbonGallery  x:Name="fontGallery" 
+                       ItemHeight="70"
+                       ItemWidth="100"
+                       MaxColumnCount="5"
+                       SelectedItem="{x:Bind ribbongalitem}"
+                       ActivatePreview="RibbonGallery_ActivatePreview"
+                       DeactivatePreview="RibbonGallery_DeactivatePreview">
+                        <ribbon:RibbonGallery.Items>
+                                            <ribbon:RibbonGalleryItem Name="ribbongalitem" HorizontalContentAlignment="Center"
+                                                                          VerticalContentAlignment="Center"
+                                                                          Background="White"
+                                                                          FontWeight="Normal" FontSize="14" >
+                                                <ribbon:RibbonGalleryItem.Content>
+                                                    <StackPanel Orientation="Vertical" >
+                                                        <TextBlock Text="AaBbCcDd" FontWeight="Normal" />
+                                                        <TextBlock Text="Normal" />
+                                                    </StackPanel>
+                                                </ribbon:RibbonGalleryItem.Content>
+                                            </ribbon:RibbonGalleryItem>
+                                            <ribbon:RibbonGalleryItem HorizontalContentAlignment="Center"
+                                                                          VerticalContentAlignment="Center"
+                                                                          Background="White"
+                                                                         FontWeight="Black" FontSize="20" GroupName="Black" 
+                                                                      >
+                                                <ribbon:RibbonGalleryItem.Content>
+                                                    <StackPanel Orientation="Vertical" >
+                                                        <TextBlock Text="AaBbCcDd" FontWeight="Black" FontSize="14" />
+                                                        <TextBlock Text="Black" FontSize="14"/>
+                                                    </StackPanel>
+                                                </ribbon:RibbonGalleryItem.Content>
+                                            </ribbon:RibbonGalleryItem>
+                                            <ribbon:RibbonGalleryItem HorizontalContentAlignment="Center"
+                                                                          VerticalContentAlignment="Center"
+                                                                          Background="White"
+                                                                          FontWeight="ExtraBlack" FontSize="25" GroupName="Black" >
+                                                <ribbon:RibbonGalleryItem.Content>
+                                                    <StackPanel Orientation="Vertical" >
+                                                        <TextBlock Text="AaBbCcDd" FontWeight="ExtraBlack" FontSize="14"/>
+                                                        <TextBlock Text="ExtraBlack" FontSize="14"/>
+                                                    </StackPanel>
+                                                </ribbon:RibbonGalleryItem.Content>
+                                            </ribbon:RibbonGalleryItem>
+                                            <ribbon:RibbonGalleryItem HorizontalContentAlignment="Center"
+                                                                          VerticalContentAlignment="Center"
+                                                                          Background="White"
+                                                                          FontWeight="ExtraBold" 
+                                                                          GroupName="Bold" FontSize="35" >
+                                                <ribbon:RibbonGalleryItem.Content>
+                                                    <StackPanel Orientation="Vertical" >
+                                                        <TextBlock Text="AaBbCcDd" FontWeight="ExtraBold" FontSize="14"/>
+                                                        <TextBlock Text="ExtraBold" FontSize="14"/>
+                                                    </StackPanel>
+                                                </ribbon:RibbonGalleryItem.Content>
+                                            </ribbon:RibbonGalleryItem>
+                  </ribbon:RibbonGallery.Items>
+</ribbon:RibbonGallery>
+
+{% endhighlight %}
+{% highlight c# %}
+private void RibbonGallery_ActivatePreview(object sender, RibbonRoutedEventArgs e)
+        {
+            RibbonGalleryItem selecteditem = (e.source) as RibbonGalleryItem;
+            richTextBlock.FontWeight = ((e.source) as RibbonGalleryItem).FontWeight;
+            richTextBlock.FontSize = ((e.source) as RibbonGalleryItem).FontSize;
+        }
+
+private void RibbonGallery_DeactivatePreview(object sender, RibbonRoutedEventArgs e)
+        {
+            RibbonGalleryItem selecteditem = (RibbonGalleryItem)(sender as RibbonGallery).SelectedItem;
+            if (selecteditem != null)
+            {
+                richTextBlock.FontSize = selecteditem.FontSize;
+                richTextBlock.FontWeight = selecteditem.FontWeight;
+            }
+         }
+
+{% endhighlight %}
+{% endtabs %}
+
+The RibbonGallery preview support is demonstrated in the gif below.
+
+![Displaying RibbonGallery with preview feature](RibbonGallery-images/ribbon-gallery-preview-support.gif)
 
 ## Populate ribbon gallery with MVVM
 
