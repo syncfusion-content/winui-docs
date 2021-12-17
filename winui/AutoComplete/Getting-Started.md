@@ -9,12 +9,12 @@ documentation: ug
 
 # Getting Started with WinUI AutoComplete (SfAutoComplete)
 
-This section explains the steps required to add the `AutoComplete` control and binding data in it. This section covers only basic features needed to get started with Syncfusion `AutoComplete` control.
+This section explains how to add the `AutoComplete` control and bind data to it. This section covers only the basic features needed to get started with the Syncfusion `AutoComplete` control.
 
 ## Creating an application with WinUI AutoComplete
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
-2. Download and refer the following NuGet package in the project.
+2. Download and refer to the following NuGet package in the project.
 
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
 
@@ -110,7 +110,7 @@ public class SocialMediaViewModel
 
 **Step 2:** Populate data in `AutoComplete`. 
 
-Now, populate this 'SocialMediaViewModel' data in `AutoComplete` control by binding to the `ItemsSource` property.
+Now, populate this 'SocialMediaViewModel' data in the `AutoComplete` control by binding to the `ItemsSource` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -152,11 +152,11 @@ N> Set the 'SocialMediaViewModel' instance as the `DataContext` of your control;
 
 **Step 3:** Setting `TextMemberPath` and `DisplayMemberPath`.
 
-The `AutoComplete` control is populated with the list of social medias. But the 'SocialMedia' model contains two properties such as 'Name' and 'ID', so it is necessary to intimate which property should be a display value in the selection box portion and dropdown suggestion of the `AutoComplete` control.
+The `AutoComplete` control is populated with the list of social media. However, because the 'SocialMedia' model contains two properties such as 'Name' and 'ID', it is necessary to intimate, which property should be a display value in the selection box portion and drop-down suggestion of the `AutoComplete` control.
 
 `TextMemberPath` - This property path is used to get the value for displaying in the selection box portion of the `AutoComplete` control when an item is selected. The default value is `String.Empty`.
 
-`DisplayMemberPath` - This property path is used to the name or path of the property displayed for each data item in the drop-down list. The default value is `String.Empty`.
+`DisplayMemberPath` - This property path is used to specify the name or path of the property displayed for each data item in the drop-down list. The default value is `String.Empty`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -179,8 +179,7 @@ autoComplete.TextMemberPath = "Name";
 
 ## Selection
 
-The `AutoComplete` allows user to select single or multiple items from the drop-down list by clicking `Enter` key or lost focus from the text box. 
-You can change the selection mode either single or multi-selection by setting the `SelectionMode` property as `Single` or `Multiple`.
+The `AutoComplete` allows the user to select single or multiple items from the drop-down list by clicking the `Enter` key or losing focus from the text box. To change the selection mode either single or multi-selection, set the `SelectionMode` property as `Single` or `Multiple`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -205,7 +204,7 @@ autoComplete.TextMemberPath = "Name";
 
 ## Filtering
 
-The `AutoComplete` control allows you to filter the data items by it's starting letter or contains a specific letter entered in the editing text box. The string comparison for filtering suggestions can be changed using the `TextSearchMode` property. It also supports the custom filtering option.
+The `AutoComplete` control allows you to filter the data items based on their starting letter or whether they contain a specific letter entered in the editing text box. The string comparison for filtering suggestions can be changed using the `TextSearchMode` property. It also supports the custom filtering option.
 
 {% tabs %}
 {% highlight xaml %}
