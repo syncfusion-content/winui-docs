@@ -92,7 +92,7 @@ N> Users cannot change the selected item foreground using SelectedSegmentStyle.
 
 ## Shadow effect
 
-The Segmented control allows you to enable a shadow effect for selected segment item using the [HasShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedSegmentBorder.html#Syncfusion_UI_Xaml_Editors_SelectedSegmentBorder_HasShadowProperty) property. Appearance of the shadow effect can be customized using the [ShadowColor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedSegmentBorder.html#Syncfusion_UI_Xaml_Editors_SelectedSegmentBorder_ShadowColorProperty) property.
+By setting the [SelectedSegmentStyle]((https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedSegmentStyle)) property on the Segmented control, you can enable a shadow effect for a selected segment item. Set the [HasShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedSegmentBorder.html#Syncfusion_UI_Xaml_Editors_SelectedSegmentBorder_HasShadowProperty) property to true in the style and set it the target type SelectedSegmentBorder. Also, you can enable the appearance of the shadow effect can be customized using the [ShadowColor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedSegmentBorder.html#Syncfusion_UI_Xaml_Editors_SelectedSegmentBorder_ShadowColorProperty) property.
 
 {% tabs %}
 {% highlight xaml %}
