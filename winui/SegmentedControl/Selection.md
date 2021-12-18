@@ -190,8 +190,9 @@ By setting the [SelectedSegmentStyle]((https://help.syncfusion.com/cr/winui/Sync
 {% endhighlight %}
 {% endtabs %} 
 
-
 ![WinUI Segmented Control with shadow effect](Selection_Images/winui-segmented-control-shadow-effect.png)
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/Shadow-effect)
 
 ## Animation
 
