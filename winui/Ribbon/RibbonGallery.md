@@ -359,6 +359,53 @@ The image below shows how the RibbonGallery can be displayed in a Simplified mod
 
 ![Displaying RibbonGallery with Simplified Ribbon layout](RibbonGallery-images/ribbon-gallery-in-simplified-diplaymode.png)
 
+## Ribbon gallery preview
+
+The RibbonGallery preview feature is used to inspect the items before we select them. Users can activate and deactivate the preview support using `ItemPointerEnter` and `ItemPointerExit` events respectively.
+
+{% tabs %}
+{% highlight xaml %}
+
+
+<ribbon:RibbonGallery  ItemHeight="70"
+                       ItemWidth="100"
+                       SelectedItem="{x:Bind ribbongalitem}"
+                       ItemPointerEnter="fontGallery_ItemPointerEnter"
+                       ItemPointerExit="fontGallery_ItemPointerExit"
+                       ItemsSource="{x:Bind FontList}"
+                       ItemTemplate="{StaticResource PreviewTemplate}">
+</ribbon:RibbonGallery>
+
+{% endhighlight %}
+{% highlight c# %}
+
+private void OnItemPointerEnter(object sender, RibbonRoutedEventArgs e)
+{
+   FontInfo selecteditem = (FontInfo)(e.Source as RibbonGalleryItem).Content;
+   if (selecteditem != null)
+   {
+      FontViewModel.FontSize = selecteditem.FontSize;
+      FontViewModel.FontWeight = selecteditem.FontWeight;
+   }
+}
+private void OnItemPointerExit(object sender, RibbonRoutedEventArgs e)
+{
+    FontInfo selecteditem = (FontInfo)(sender as RibbonGallery).SelectedItem;
+    if (selecteditem != null)
+    {
+        FontViewModel.FontSize = selecteditem.FontSize;
+        FontViewModel.FontWeight = selecteditem.FontWeight;
+    }
+}
+
+
+{% endhighlight %}
+{% endtabs %}
+
+The RibbonGallery preview support is demonstrated in the gif below.
+
+![Displaying RibbonGallery with preview feature](RibbonGallery-images/ribbon-gallery-preview-support.gif)
+
 ## Populate ribbon gallery with MVVM
 
 The RibbonGallery provides MVVM that supports data binding and manual data populating.
