@@ -202,8 +202,6 @@ autoComplete.TextMemberPath = "Name";
 
 ![WinUI AutoComplete with single and multi-selection mode](GettingStarted_images/winui-autocomplete-single-multi-selection.png)
 
-N> You can refer more information about selection support from [this](https://help.syncfusion.com/winui/autocomplete/selection) link.
-
 ## Filtering
 
 The `AutoComplete` control allows you to filter the data items based on their starting letter or whether they contain a specific letter entered in the editing text box. The string comparison for filtering suggestions can be changed using the [TextSearchMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_SelectionMode) property. It also supports the custom filtering option.
@@ -234,5 +232,3 @@ autoComplete.TextMemberPath = "Name";
 ### TextSearchMode="Contains"
 
 ![WinUI AutoComplete filters the items based on starting letters.](GettingStarted_images/winui-autocomplete-contains-filtering.gif)
-
-N> You can refer more information about filtering support from [this](https://help.syncfusion.com/winui/autocomplete/searching-filtering) link.
