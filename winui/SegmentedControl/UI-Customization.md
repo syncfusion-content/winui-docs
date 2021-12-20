@@ -38,16 +38,8 @@ N> The default value is 1.
                                     VerticalAlignment="Center"
                                     BorderThickness="3"
                                     ItemBorderThickness="0"
-                                    ItemsSource="{Binding Days}">                                       
-            <syncfusion:SfSegmentedControl.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <TextBlock Text="{Binding Name}"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"/>
-                    </Grid>
-                </DataTemplate>
-            </syncfusion:SfSegmentedControl.ItemTemplate>
+                                    DisplayMemberPath="Name"    
+                                    ItemsSource="{Binding Days}">
         </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
@@ -84,21 +76,14 @@ N> The default value is 0,0,1,0.
                                     VerticalAlignment="Center"
                                     BorderThickness="0"
                                     ItemBorderThickness="1"
+                                    DisplayMemberPath="Name" 
+                                    SelectionAnimationType="None"      
                                     ItemsSource="{Binding Days}">
             <syncfusion:SfSegmentedControl.ItemContainerStyle>
                 <Style TargetType="syncfusion:SfSegmentedItem">
                     <Setter Property="Margin" Value="3" />
                 </Style>
-            </syncfusion:SfSegmentedControl.ItemContainerStyle>                                            
-            <syncfusion:SfSegmentedControl.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <TextBlock Text="{Binding Name}"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"/>
-                    </Grid>
-                </DataTemplate>
-            </syncfusion:SfSegmentedControl.ItemTemplate>
+            </syncfusion:SfSegmentedControl.ItemContainerStyle>
         </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
@@ -134,16 +119,8 @@ N> The default value is 0.
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
                                     CornerRadius="5"
-                                    ItemsSource="{Binding Days}">                                          
-            <syncfusion:SfSegmentedControl.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <TextBlock Text="{Binding Name}"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"/>
-                    </Grid>
-                </DataTemplate>
-            </syncfusion:SfSegmentedControl.ItemTemplate>
+                                    DisplayMemberPath="Name"    
+                                    ItemsSource="{Binding Days}">
         </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
@@ -177,21 +154,13 @@ The Segmented Control border color can be customized using the [BorderBrush](htt
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
                                     BorderBrush="Red"
+                                    DisplayMemberPath="Name"    
                                     ItemsSource="{Binding Days}">                     
             <syncfusion:SfSegmentedControl.ItemContainerStyle>
                 <Style TargetType="syncfusion:SfSegmentedItem">
                     <Setter Property="BorderBrush" Value="Red" />
                 </Style>
-            </syncfusion:SfSegmentedControl.ItemContainerStyle>                                        
-            <syncfusion:SfSegmentedControl.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <TextBlock Text="{Binding Name}"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"/>
-                    </Grid>
-                </DataTemplate>
-            </syncfusion:SfSegmentedControl.ItemTemplate>
+            </syncfusion:SfSegmentedControl.ItemContainerStyle>
         </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
@@ -385,7 +354,7 @@ The  [ItemContainerStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusio
             <local1:SegmentedViewModel/>
         </Grid.DataContext>
         <Grid.Resources>
-            <Style TargetType="Border" x:Key="ellipse" >
+            <Style TargetType="syncfusion:SelectedSegmentBorder" x:Key="ellipse" >
                 <Setter Property = "Background" Value="DarkGreen"/>
             </Style>
             <Style x:Key="averageRatingStyle" TargetType="syncfusion:SfSegmentedItem">
@@ -396,11 +365,9 @@ The  [ItemContainerStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusio
                 <Setter Property = "Margin" Value="5,5,5,5" />
                 <Setter Property = "Background" Value="Yellow" />
             </Style>
-
             <local:RatingStyleSelector x:Key="ratingStyleSelector" 
                         AverageRatingStyle="{StaticResource averageRatingStyle}"
                         DefaultStyle="{StaticResource defaultStyle}"/>
-
         </Grid.Resources>
 
         <syncfusion:SfSegmentedControl
@@ -411,6 +378,7 @@ The  [ItemContainerStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusio
             VerticalAlignment="Center"
             ItemBorderThickness="2"
             BorderThickness="0"
+            DisplayMemberPath="Name" 
             ItemsSource="{Binding Days}" 
             ItemContainerStyleSelector="{StaticResource ratingStyleSelector}"
             SelectedSegmentStyle="{StaticResource ellipse}">
@@ -432,13 +400,6 @@ The  [ItemContainerStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusio
                     </ResourceDictionary.ThemeDictionaries>
                 </ResourceDictionary>
             </syncfusion:SfSegmentedControl.Resources>
-            <syncfusion:SfSegmentedControl.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <TextBlock Text = "{Binding Name}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                    </Grid>
-                </DataTemplate>
-            </syncfusion:SfSegmentedControl.ItemTemplate>
         </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
@@ -537,7 +498,7 @@ The following code example illustrates how to customize the ellipse style.
             <local:SegmentedViewModel/>
         </Grid.DataContext>
          <Grid.Resources>
-            <Style TargetType="Border" x:Key="backLightStyle" >
+            <Style TargetType="syncfusion:SelectedSegmentBorder" x:Key="backLightStyle" >
                <Setter Property="CornerRadius" Value="25" />
                <Setter Property="Background" Value="#ffe521"/>
             </Style>
@@ -548,7 +509,8 @@ The following code example illustrates how to customize the ellipse style.
                             VerticalAlignment="Center"
                             CornerRadius="25"
                             ItemBorderThickness="0"
-                            SelectedIndex="0" 
+                            SelectedIndex="0"
+                            DisplayMemberPath="Name" 
                             SelectedSegmentStyle="{StaticResource backLightStyle}"
                             ItemsSource="{Binding Items}">
             <syncfusion:SfSegmentedControl.Resources>
@@ -573,15 +535,6 @@ The following code example illustrates how to customize the ellipse style.
                     <Setter Property="CornerRadius" Value="25"/>
                 </Style>
             </syncfusion:SfSegmentedControl.ItemContainerStyle>
-            <syncfusion:SfSegmentedControl.ItemTemplate>
-                    <DataTemplate>
-                        <Grid>
-                            <TextBlock Text="{Binding Name}" 
-                                        HorizontalAlignment="Center"
-                                        VerticalAlignment="Center"/>
-                        </Grid>
-                    </DataTemplate>
-            </syncfusion:SfSegmentedControl.ItemTemplate>
          </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
@@ -616,7 +569,7 @@ The following code example illustrates how to customize the circle style.
             <local:SegmentedViewModel/>
         </Grid.DataContext>
        <Grid.Resources>
-            <Style TargetType="Border" x:Key="circleStyle">
+            <Style TargetType="syncfusion:SelectedSegmentBorder" x:Key="circleStyle">
                 <Setter Property="BorderThickness" Value="2" />
                 <Setter Property="BorderBrush" Value="{ThemeResource SystemBaseHighColor}"/>
                 <Setter Property="Width" Value="50"/>
@@ -752,7 +705,7 @@ The following code example illustrates how to customize the top indicator style.
                         <SolidColorBrush x:Key="SelectedBorderBrush" Color="Red"/>
                     </ResourceDictionary>
                 </ResourceDictionary.ThemeDictionaries>
-                <Style TargetType="Border" x:Key="topBorderStyle" >
+                <Style TargetType="syncfusion:SelectedSegmentBorder" x:Key="topBorderStyle" >
                     <Setter Property="Margin" Value="0,-6,0,0" />
                     <Setter Property="BorderThickness" Value="0,4,0,0" />
                     <Setter Property="BorderBrush" Value="{ThemeResource SelectedBorderBrush}" />

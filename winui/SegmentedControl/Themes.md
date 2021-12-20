@@ -42,15 +42,6 @@ The Segmented Control provides various themes to be applied by setting the theme
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:UI_Customization" RequestedTheme="Light">
-    <Application.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
-                <!-- Other merged dictionaries here -->
-            </ResourceDictionary.MergedDictionaries>
-            <!-- Other app resources here -->
-        </ResourceDictionary>
-    </Application.Resources>
 </Application>
 
 {% endhighlight %}

@@ -48,7 +48,7 @@ The Segmented Control allows you to select the segment item based on datasource 
 
 ## Selected item customization
 
-The Segmented Control allows you to customize the appearance of selected item using the [SelectedSegmentStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedSegmentStyle) property. You need to provide the style with target type [Border](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.border).
+The Segmented Control allows you to customize the appearance of selected item using the [SelectedSegmentStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedSegmentStyle) property. You need to provide the style with target type [SelectedSegmentBorder](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedSegmentBorder.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -67,7 +67,7 @@ The Segmented Control allows you to customize the appearance of selected item us
             <local:SegmentedViewModel/>
         </Grid.DataContext>
          <Grid.Resources>
-            <Style TargetType="Border" x:Key="selectedItemStyle">
+            <Style TargetType="syncfusion:SelectedSegmentBorder" x:Key="selectedItemStyle">
                <Setter Property="Background" Value="Olive"/>
             </Style>
         </Grid.Resources>
@@ -134,6 +134,7 @@ By setting the [HasShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
                                     CornerRadius="4"
                                     BorderThickness="2"
                                     ItemBorderThickness="0"
+                                    DisplayMemberPath="Name"        
                                     SelectedSegmentStyle="{StaticResource shirtModelStyle}"
                                     ItemsSource="{Binding ShirtModels}">
                 <syncfusion:SfSegmentedControl.Resources>
@@ -172,15 +173,6 @@ By setting the [HasShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
                         <Setter Property="CornerRadius" Value="4" />
                     </Style>
                 </syncfusion:SfSegmentedControl.ItemContainerStyle>
-                <syncfusion:SfSegmentedControl.ItemTemplate>
-                    <DataTemplate>
-                        <Grid>
-                            <TextBlock Text="{Binding Name}"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"/>
-                        </Grid>
-                    </DataTemplate>
-                </syncfusion:SfSegmentedControl.ItemTemplate>
             </syncfusion:SfSegmentedControl>
         </StackPanel>
     </Grid>

@@ -37,16 +37,8 @@ The Segmented Control allows you to disable the items using the [SetItemEnabled]
         <syncfusion:SfSegmentedControl x:Name="segmentedControl"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
+                                    DisplayMemberPath="Name"   
                                     ItemsSource="{Binding Days}">
-            <syncfusion:SfSegmentedControl.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <TextBlock Text="{Binding Name}"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"/>
-                    </Grid>
-                </DataTemplate>
-            </syncfusion:SfSegmentedControl.ItemTemplate>
         </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
