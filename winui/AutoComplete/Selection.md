@@ -9,11 +9,11 @@ documentation: ug
 
 # Selection in WinUI AutoComplete (SfAutoComplete)
 
-The `AutoComplete` allows user to select single or multiple items. The selection mode can be set by using the `SelectionMode` property. There are two different selection modes: `Single`, and `Multiple`.
+The [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) allows user to select single or multiple items. The selection mode can be set by using the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_SelectionMode) property. There are two different selection modes: `Single`, and `Multiple`.
 
 ## Single selection
 
-The `AutoComplete` allows user to select a single item by entering the value using keyboard then select from the drop-down list and clicking the `Enter` key or clicking the `Tab` key. The selected item can be retrieved from the `SelectedItem` property.
+The `AutoComplete` allows user to select a single item by entering the value using keyboard then select from the drop-down list and clicking the `Enter` key or clicking the `Tab` key. The selected item can be retrieved from the [SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_SelectedItem) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -75,7 +75,7 @@ autoComplete.SelectionMode = AutoCompleteSelectionMode.Single;
 
 ## Multiple selection
 
-The `AutoComplete` allows user to select multiple values by start to entering the input and select items from the drop-down list. The multi-select `AutoComplete` mode can be enabled by setting the `SelectionMode` property as `Multiple`. Selected items will be displayed with a customizable token representation and each tokenized items can be removed by clicking their close button. The selected items can be retrieved from the `SelectedItems` property.
+The `AutoComplete` allows user to select multiple values by start to entering the input and select items from the drop-down list. The multi-select `AutoComplete` mode can be enabled by setting the `SelectionMode` property as `Multiple`. Selected items will be displayed with a customizable token representation and each tokenized items can be removed by clicking their close button. The selected items can be retrieved from the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_SelectedItems) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -100,10 +100,10 @@ autoComplete.SelectionMode = AutoCompleteSelectionMode.Multiple;
 
 ## Selection changed event
 
-When selecting an item from the drop-down list, the `SelectionChanged` event is triggered. The `SelectionChanged` event contains the newly selected and removed items in the `AddedItems` and `RemovedItems` properties. The `SelectionChanged` contains the following properties:
+When selecting an item from the drop-down list, the [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_SelectionChanged) event is triggered. The `SelectionChanged` event contains the newly selected and removed items in the `AddedItems` and `RemovedItems` properties. The `SelectionChanged` contains the following properties:
 
- * `AddedItems` - Contains the items that were selected.
- * `RemovedItems` - Contains the items that were unselected.
+ * [AddedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_AutoCompleteSelectionChangedEventArgs_AddedItems) - Contains the items that were selected.
+ * [RemovedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_AutoCompleteSelectionChangedEventArgs_RemovedItems) - Contains the items that were unselected.
 
 {% tabs %}
 {% highlight xaml %}
@@ -150,16 +150,16 @@ private async void OnSelectionChanged(object sender, AutoCompleteSelectionChange
 
 ## Handle invalid input 
 
-The `InputSubmitted` event is triggered, when entered text is submitted that does not correspond to an item in the drop-down list. `AutoCompleteInputSubmittedEventArgs` has following members which provides information for InputSubmitted event.
+The [InputSubmitted](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_InputSubmitted) event is triggered, when entered text is submitted that does not correspond to an item in the drop-down list. [AutoCompleteInputSubmittedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteInputSubmittedEventArgs.html) has following members which provides information for `InputSubmitted` event.
 
-Text: Gets the text entered in `AutoComplete`.
+[Text](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteInputSubmittedEventArgs.html#Syncfusion_UI_Xaml_Editors_AutoCompleteInputSubmittedEventArgs_Text) - Gets the text entered in `AutoComplete`.
 
-Item: This property can be used to add the item to selected item(s) or set to selected item which gets assigned.
+[Item](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteInputSubmittedEventArgs.html#Syncfusion_UI_Xaml_Editors_AutoCompleteInputSubmittedEventArgs_Item) - This property can be used to add the item to selected item(s) or set to selected item which gets assigned.
       If no item is assigned, then in single selection entered text gets assigned to selected item. In multiple selection, no text will be added to selected items.
 
-Handled: When set to `true`, the framework will not automatically update the selected item or selected item(s) of the `AutoComplete` to the new value.
+[Handled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteInputSubmittedEventArgs.html#Syncfusion_UI_Xaml_Editors_AutoCompleteInputSubmittedEventArgs_Handled) - When set to `true`, the framework will not automatically update the selected item or selected item(s) of the `AutoComplete` to the new value.
 
-**Example 1:** By using the following code sample, a dialogue box will be displayed when submitting input that does not contain in drop-down list.
+By using the following code sample, a dialogue box will be displayed when submitting input that does not contain in drop-down list.
 
 {% tabs %}
 {% highlight XAML %}
@@ -182,7 +182,7 @@ autoComplete.InputSubmitted += OnAutoCompleteInputSubmitted;
 {% endhighlight %}
 {% endtabs %}
 
-The InputSubmitted event can be handled as follows.
+The `InputSubmitted` event can be handled as follows.
 
 {% tabs %}
 {% highlight C# %}
@@ -210,7 +210,7 @@ private async void OnAutoCompleteInputSubmitted(object sender, Syncfusion.UI.Xam
 
 ## Hide clear button in the editor
 
-By default, the clear button `X` will be displayed in the editor of the `AutoComplete` control, which can be used to clear the entered input. Hide the clear button in `AutoComplete` control using the `ShowClearButton` property. The default value of `ShowClearButton` property value is `true`.
+By default, the clear button `X` will be displayed in the editor of the `AutoComplete` control, which can be used to clear the entered input. Hide the clear button in `AutoComplete` control using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_ShowClearButton) property. The default value of `ShowClearButton` property value is `true`.
 
 {% tabs %}
 {% highlight XAML %}

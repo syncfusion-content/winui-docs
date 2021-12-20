@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI AutoComplete (SfAutoComplete)
 
-This section explains how to add the `AutoComplete` control and bind data to it. This section covers only the basic features needed to get started with the Syncfusion `AutoComplete` control.
+This section explains how to add the [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control and bind data to it. This section covers only the basic features needed to get started with the Syncfusion `AutoComplete` control.
 
 ## Creating an application with WinUI AutoComplete
 
@@ -67,7 +67,7 @@ namespace GettingStarted
 
 ## Populating items using data binding
 
-The `AutoComplete` can be bound to an external data source using the `ItemsSource` property. Now, let us create Model and ViewModel classes to populate items with social media details in `AutoComplete`.
+The `AutoComplete` can be bound to an external data source using the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_ItemsSource) property. Now, let us create Model and ViewModel classes to populate items with social media details in `AutoComplete`.
 
 **Step 1:** Define a simple model class 'SocialMedia' with fields 'ID' and 'Name', and then populate social media data in the 'SocialMediaViewModel'.
 
@@ -154,9 +154,9 @@ N> Set the 'SocialMediaViewModel' instance as the `DataContext` of your control;
 
 The `AutoComplete` control is populated with the list of social media. However, because the 'SocialMedia' model contains two properties such as 'Name' and 'ID', it is necessary to intimate, which property should be a display value in the selection box portion and drop-down suggestion of the `AutoComplete` control.
 
-`TextMemberPath` - This property path is used to get the value for displaying in the selection box portion of the `AutoComplete` control when an item is selected. The default value is `String.Empty`.
+[TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_TextMemberPath) - This property path is used to get the value for displaying in the selection box portion of the `AutoComplete` control when an item is selected. The default value is `String.Empty`.
 
-`DisplayMemberPath` - This property path is used to specify the name or path of the property displayed for each data item in the drop-down list. The default value is `String.Empty`.
+[DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_DisplayMemberPath) - This property path is used to specify the name or path of the property displayed for each data item in the drop-down list. The default value is `String.Empty`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -179,7 +179,7 @@ autoComplete.TextMemberPath = "Name";
 
 ## Selection
 
-The `AutoComplete` allows the user to select single or multiple items from the drop-down list by clicking the `Enter` key or losing focus from the text box. To change the selection mode either single or multi-selection, set the `SelectionMode` property as `Single` or `Multiple`.
+The `AutoComplete` allows the user to select single or multiple items from the drop-down list by clicking the `Enter` key or losing focus from the text box. To change the selection mode either single or multi-selection, set the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectionMode) property as `Single` or `Multiple`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -202,9 +202,11 @@ autoComplete.TextMemberPath = "Name";
 
 ![WinUI AutoComplete with single and multi-selection mode](GettingStarted_images/winui-autocomplete-single-multi-selection.png)
 
+N> You can refer more information about selection support from [this](https://help.syncfusion.com/winui/autocomplete/selection) link.
+
 ## Filtering
 
-The `AutoComplete` control allows you to filter the data items based on their starting letter or whether they contain a specific letter entered in the editing text box. The string comparison for filtering suggestions can be changed using the `TextSearchMode` property. It also supports the custom filtering option.
+The `AutoComplete` control allows you to filter the data items based on their starting letter or whether they contain a specific letter entered in the editing text box. The string comparison for filtering suggestions can be changed using the [TextSearchMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_SelectionMode) property. It also supports the custom filtering option.
 
 {% tabs %}
 {% highlight xaml %}
@@ -232,3 +234,5 @@ autoComplete.TextMemberPath = "Name";
 ### TextSearchMode="Contains"
 
 ![WinUI AutoComplete filters the items based on starting letters.](GettingStarted_images/winui-autocomplete-contains-filtering.gif)
+
+N> You can refer more information about filtering support from [this](https://help.syncfusion.com/winui/autocomplete/searching-filtering) link.

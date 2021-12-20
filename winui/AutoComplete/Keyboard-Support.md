@@ -9,7 +9,7 @@ documentation: ug
 
 # Keyboard support in WinUI AutoComplete (SfAutoComplete)
 
-This section explains the shortcut keys that are supported in [AutoComplete]() control. 
+This section explains the shortcut keys that are supported in [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control. 
 
 ## Keyboard behaviors
 

@@ -9,15 +9,15 @@ documentation: ug
 
 # Searching and Filtering in WinUI AutoComplete (SfAutoComplete)
 
-The `AutoComplete` control provides rich text searching and filtering functionality.
+The [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control provides rich text searching and filtering functionality.
 
 ## Search based on member path
 
 The `TextMemberPath` and `DisplayMemberPath` properties of `AutoComplete` control specifies the property path, by which the searching must be done when a custom data is bound to the `ItemsSource` property.
 
-`TextMemberPath` - Specifies the property path, by which searching must be done when user input is received in the selection box portion of the `AutoComplete` control. The default value is `String.Empty`.
+[TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_TextMemberPath) - Specifies the property path, by which searching must be done when user input is received in the selection box portion of the `AutoComplete` control. The default value is `String.Empty`.
 
-`DisplayMemberPath` - Specifies the property path, by which searching must be done when user input is received in the drop-down portion of the `AutoComplete` control. The default value is `String.Empty`.
+[DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_DisplayMemberPath) - Specifies the property path, by which searching must be done when user input is received in the drop-down portion of the `AutoComplete` control. The default value is `String.Empty`.
 
 N> `TextMemberPath` and `DisplayMemberPath` will be effective for the collection item that holds two or more properties in it.
 
@@ -115,7 +115,7 @@ N> If `TextMemberPath` and `DisplayMemberPath` are `null`, searching will be per
 
 ## Filtering Mode
 
-The `TextSearchMode` property of the `AutoComplete` can be used to regulate how the control behaves when it receives user input. The default text filtering type is `StartsWith`, ignoring accent and it is case insensitive. The available text filter modes are,
+The [TextSearchMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_SelectionMode) property of the `AutoComplete` can be used to regulate how the control behaves when it receives user input. The default text filtering type is `StartsWith`, ignoring accent and it is case insensitive. The available text filter modes are,
 
 * StartsWith
 * Contains
@@ -176,11 +176,11 @@ autoComplete.TextSearchMode = AutoCompleteTextSearchMode.Contains;
 
 ### Custom filtering
 
-The `AutoComplete` control provides support to apply your own custom filter logic to suggests the items based on your filter criteria by using the `FilterBehavior` and `SearchBehavior` property. The default value of `FilterBehavior` and `SearchBehavior` is `null`.
+The `AutoComplete` control provides support to apply your own custom filter logic to suggests the items based on your filter criteria by using the [FilterBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_FilterBehavior) and [SearchBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_SearchBehavior) property. The default value of `FilterBehavior` and `SearchBehavior` is `null`. 
 
 Now, lets create custom filtering and searching class to apply our own filter logic to `AutoComplete` control by following steps.
 
-**Step 1:** Create a class that derives from the `IAutoCompleteFilterBehavior` interface.
+**Step 1:** Create a class that derives from the [IAutoCompleteFilterBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteFilterBehavior.html) interface.
 
 {% tabs %}
 {% highlight C# %}
@@ -196,10 +196,10 @@ public class CityFilteringBehavior : IAutoCompleteFilterBehavior
 {% endhighlight %}
 {% endtabs %}
 
-**Step 2:** Then, implement the `GetMatchingIndexes` method of `IAutoCompleteFilterBehavior` interface to create your own suggestion list (containing the indices of the filtered items) based on the text entered in the `AutoComplete` control that needs to be shown in drop-down. The `GetMatchingIndexes` method contains following arguments.
+**Step 2:** Then, implement the [GetMatchingIndexes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteFilterBehavior.html#Syncfusion_UI_Xaml_Editors_AutoCompleteFilterBehavior_GetMatchingItemsAsync_Syncfusion_UI_Xaml_Editors_SfAutoComplete_Syncfusion_UI_Xaml_Editors_AutoCompleteFilterInfo_) method of `IAutoCompleteFilterBehavior` interface to create your own suggestion list (containing the indices of the filtered items) based on the text entered in the `AutoComplete` control that needs to be shown in drop-down. The `GetMatchingIndexes` method contains following arguments.
 
-* `source` - The owner of the filter behavior, which holds information about `ItemsSource`, `Items` properties, and so on.
-* `filterInfo` - Contains details about the text entered in `AutoComplete` control. Using this text, you can prepare suggestion list which gets displayed in drop down list. 
+* [source](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) - The owner of the filter behavior, which holds information about `ItemsSource`, `Items` properties, and so on.
+* [filterInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteFilterInfo.html) - Contains details about the text entered in `AutoComplete` control. Using this text, you can prepare suggestion list which gets displayed in drop down list. 
 
 The following code demonstrates how to filter the cities based on the city or country name entered in `AutoComplete` control.
 
@@ -244,7 +244,7 @@ public class CustomFilter : IAutoCompleteFilterBehavior
 {% endhighlight %}
 {% endtabs %}
 
-**Step 3:** Create a class that derives from the `IAutoCompleteSearchBehavior` interface.
+**Step 3:** Create a class that derives from the [IAutoCompleteSearchBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteSearchBehavior.html) interface.
 
 {% tabs %}
 {% highlight C# %}
@@ -260,10 +260,10 @@ public class CapitalCitySearchingBehavior : IAutoCompleteSearchBehavior
 {% endhighlight %}
 {% endtabs %}
 
-**Step 4:** Then, implement the `GetHighlightIndex` method of `IAutoCompleteSearchBehavior` interface to initially select any item from filtered list in the `AutoComplete` control drop-down. The `GetHighlightIndex` method contains following arguments.
+**Step 4:** Then, implement the [GetHighlightIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteSearchBehavior.html#Syncfusion_UI_Xaml_Editors_AutoCompleteSearchBehavior_GetHighlightIndex_Syncfusion_UI_Xaml_Editors_SfAutoComplete_Syncfusion_UI_Xaml_Editors_AutoCompleteSearchInfo_) method of `IAutoCompleteSearchBehavior` interface to initially select any item from filtered list in the `AutoComplete` control drop-down. The `GetHighlightIndex` method contains following arguments.
 
-* `source` - The owner of the search behavior, which holds information about `ItemsSource`, `Items` properties, and so on.
-* `searchInfo` - Contains details about the filtered items based on the text entered in `AutoComplete` control. Using this list, you can selected item which is displayed in drop down list. 
+* [source](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) - The owner of the search behavior, which holds information about `ItemsSource`, `Items` properties, and so on.
+* [searchInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteSearchInfo.html) - Contains details about the filtered items based on the text entered in `AutoComplete` control. Using this list, you can selected item which is displayed in drop down list. 
 
 The following code demonstrates initially which item to be selected from the filtered list of drop-down in the `AutoComplete` control. Here, the capital cities will be selected while entering its country name.
 
