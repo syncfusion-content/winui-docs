@@ -13,7 +13,7 @@ This section explains about features that aid in the selection of items, customi
 
 ## Selected index
 
-The Segmented Control allows you to select the segment item based on datasource index using the [SelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedIndex) property.
+The Segmented Control allows you to select the segment item based on data source index using the [SelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedIndex) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -27,7 +27,7 @@ The Segmented Control allows you to select the segment item based on datasource 
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
     mc:Ignorable="d">
-    <Grid x:Name="rootGrid">
+    <Grid>
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>
@@ -62,7 +62,7 @@ The Segmented Control allows you to customize the appearance of selected item us
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
     mc:Ignorable="d">
-    <Grid x:Name="rootGrid">
+    <Grid>
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>
@@ -105,7 +105,7 @@ By setting the [HasShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors"
     mc:Ignorable="d">
-    <Grid x:Name="rootGrid">
+    <Grid>
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>
@@ -210,7 +210,7 @@ When setting  [SelectionAnimationType](https://help.syncfusion.com/cr/winui/Sync
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
     mc:Ignorable="d">
-    <Grid x:Name="rootGrid">
+    <Grid>
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>
@@ -246,7 +246,7 @@ The animation effect can be disabled while selecting the item by setting the [Se
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
     mc:Ignorable="d">
-    <Grid x:Name="rootGrid">
+    <Grid>
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>

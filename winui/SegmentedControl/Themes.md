@@ -175,7 +175,7 @@ The following code example illustrates how to customize the segmented control us
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
     mc:Ignorable="d">
-    <Grid x:Name="rootGrid">
+    <Grid>
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>

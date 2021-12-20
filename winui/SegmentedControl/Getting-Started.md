@@ -59,7 +59,7 @@ public sealed partial class MainWindow : Window
 
 ## Populating items using string collection
 
-The Segmented Control allows you to set the collection of strings as a datasource using the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemsSource) property.
+The Segmented Control allows you to set the collection of strings as a data source using the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemsSource) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -97,7 +97,7 @@ Populating items to the Segmented Control by setting the collection of business 
 
 ### DisplayMemberPath
 
-The [DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_DisplayMemberPath) property denotes the path to a value on the source object (SfSegmentedControl.ItemsSource) that will be used as the visual representation of object. The following code sample will be used to bind the datasource to the Segmented Control.
+The [DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_DisplayMemberPath) property denotes the path to a value on the source object (SfSegmentedControl.ItemsSource) that will be used as the visual representation of object. The following code sample will be used to bind the data source to the Segmented Control.
 
 {% tabs %}
 {% highlight xaml %}
