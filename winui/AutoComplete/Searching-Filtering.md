@@ -115,7 +115,7 @@ N> If `TextMemberPath` and `DisplayMemberPath` are `null`, searching will be per
 
 ## Filtering Mode
 
-The `TextSearchMode` property of the `AutoComplete` can be used to regulate how the control behaves when it receives user input. The default text filetring type is `StartsWith`, ignoring accent and it is case insensitive. The available text filter modes are,
+The `TextSearchMode` property of the `AutoComplete` can be used to regulate how the control behaves when it receives user input. The default text filtering type is `StartsWith`, ignoring accent and it is case insensitive. The available text filter modes are,
 
 * StartsWith
 * Contains

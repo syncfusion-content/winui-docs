@@ -21,7 +21,7 @@ The following table explains shortcut key for opening and closing drop-down.
 Key or KeyCombinations
 </th>
 <th>
-Behaviour
+Behavior
 </th>
 </tr>
 <tr>

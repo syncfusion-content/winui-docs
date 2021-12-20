@@ -15,7 +15,7 @@ This section explains about the grouping support available in [AutoComplete]().
 
 To display grouped data in `AutoComplete` control, set the [ItemsSource]() property to a [CollectionViewSource]() with the [IsSourceGrouped]() property set to `true`. The `CollectionViewSource` acts as a proxy over the collection class to enable grouping support. We should use the Custom Filter for customize the grouping of `AutoComplete` control.
 
-Also, the appearance of groups in a drop-down list can be defined by using the [GroupStyle]()property. The default value of `GroupStyle` is `null`.
+Also, the appearance of groups in a drop-down list can be defined by using the [GroupStyle]() property. The default value of `GroupStyle` is `null`.
 
 In the following example, define a `CollectionViewSource` that wraps a collection of vegetable objects and specifies a property to group on (the vegetable category). Then, bind the `View` property of `CollectionViewSource` to the `ItemsSource` property of `AutoComplete` control.
 

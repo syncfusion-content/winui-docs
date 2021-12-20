@@ -1,7 +1,7 @@
 ---
 layout: post
 title: UI Customization in WinUI AutoComplete control | Syncfusion
-description: Learn here all about UI customization support in Syncfusion WinUI AutoComplete (multi-select AutoComplete) control into WinUI application and its basic features.
+description: Learn here all about UI customization support in Syncfusion WinUI AutoComplete (multi-select AutoComplete) control into WinUI application and its features.
 platform: winui
 control: SfAutoComplete
 documentation: ug
