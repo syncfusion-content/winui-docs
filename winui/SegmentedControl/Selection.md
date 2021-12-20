@@ -90,6 +90,110 @@ N> Users cannot change the selected item foreground using SelectedSegmentStyle.
 
 ![WinUI Segmented Control with selecteditem customization](Selection_Images/winui-segmented-control-selected-item-customization.png)
 
+## Shadow effect
+
+By setting the [HasShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedSegmentBorder.html#Syncfusion_UI_Xaml_Editors_SelectedSegmentBorder_HasShadowProperty) property value to `true` in the [SelectedSegmentBorder](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedSegmentBorder.html) style and assign that style to [SelectedSegmentStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedSegmentStyle) property in the Segmented control to enable a shadow effect for a selected segment item. Also, you can customize the appearance of the shadow effect using the [ShadowColor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedSegmentBorder.html#Syncfusion_UI_Xaml_Editors_SelectedSegmentBorder_ShadowColorProperty) property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window
+    x:Class="Shadow_effect.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Shadow_effect"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors"
+    mc:Ignorable="d">
+    <Grid x:Name="rootGrid">
+        <Grid.DataContext>
+            <local:SegmentedViewModel/>
+        </Grid.DataContext>
+        <Grid.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.ThemeDictionaries>
+                    <ResourceDictionary x:Key="Light">
+                        <SolidColorBrush x:Key="SelectedBackground" Color="#00b7c0"/>
+                    </ResourceDictionary>
+                    <ResourceDictionary x:Key="Dark">
+                        <SolidColorBrush x:Key="SelectedBackground" Color="#00b7c0"/>
+                    </ResourceDictionary>
+                </ResourceDictionary.ThemeDictionaries>
+                <Style TargetType="syncfusion:SelectedSegmentBorder" x:Key="shirtModelStyle">
+                    <Setter Property="CornerRadius" Value="4"/>
+                    <Setter Property="HasShadow" Value="True"/>
+                    <Setter Property="ShadowColor" Value="#00b7c0"/>
+                    <Setter Property="Background" Value="{ThemeResource SelectedBackground}"/>
+                </Style>
+            </ResourceDictionary>
+        </Grid.Resources>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <syncfusion:SfSegmentedControl x:Name="segmentWithShadow"
+                                    Height="40"   
+                                    SelectedIndex="1"
+                                    CornerRadius="4"
+                                    BorderThickness="2"
+                                    ItemBorderThickness="0"
+                                    SelectedSegmentStyle="{StaticResource shirtModelStyle}"
+                                    ItemsSource="{Binding ShirtModels}">
+                <syncfusion:SfSegmentedControl.Resources>
+                    <ResourceDictionary>
+                        <ResourceDictionary.ThemeDictionaries>
+                            <ResourceDictionary x:Key="Light">
+                                <SolidColorBrush x:Key="SyncfusionSegmentedControlBackground" Color="#F2F2F2"/>
+                                <SolidColorBrush x:Key="SyncfusionSegmentedItemBackground" Color="#F2F2F2"/>
+                                <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedBackground" Color="#00b7c0"/>
+                                <SolidColorBrush x:Key="SyncfusionSegmentedItemHoverBackground" Color="#5bdae4"/>
+                                <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedHoverBackground" Color="#00b7c0"/>
+                                <SolidColorBrush x:Key="SyncfusionSegmentedItemForeground" Color="Black"/>
+                                <SolidColorBrush x:Key="SyncfusionSegmentedItemHoverForeground" Color="White"/>
+                                <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedHoverForeground" Color="White"/>
+                                <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedForeground" Color="White"/>
+                                <SolidColorBrush x:Key="SyncfusionSegmentedControlBorderBrush" Color="#D9D9D9"/>
+                            </ResourceDictionary>
+                            <ResourceDictionary x:Key="Dark">
+                                <SolidColorBrush x:Key="SyncfusionSegmentedControlBackground" Color="#414141"/>
+                                <SolidColorBrush x:Key="SyncfusionSegmentedItemBackground" Color="#414141"/>
+                                <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedBackground" Color="#00b7c0"/>
+                                <SolidColorBrush x:Key="SyncfusionSegmentedItemHoverBackground" Color="#5bdae4"/>
+                                <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedHoverBackground" Color="#00b7c0"/>
+                                <SolidColorBrush x:Key="SyncfusionSegmentedItemForeground" Color="White"/>
+                                <SolidColorBrush x:Key="SyncfusionSegmentedItemHoverForeground" Color="White"/>
+                                <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedHoverForeground" Color="White"/>
+                                <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedForeground" Color="White"/>
+                                <SolidColorBrush x:Key="SyncfusionSegmentedControlBorderBrush" Color="#5F5E5E"/>
+                            </ResourceDictionary>
+                        </ResourceDictionary.ThemeDictionaries>
+                    </ResourceDictionary>
+                </syncfusion:SfSegmentedControl.Resources>
+                <syncfusion:SfSegmentedControl.ItemContainerStyle>
+                    <Style TargetType="syncfusion:SfSegmentedItem">
+                        <Setter Property="Margin" Value="3" />
+                        <Setter Property="CornerRadius" Value="4" />
+                    </Style>
+                </syncfusion:SfSegmentedControl.ItemContainerStyle>
+                <syncfusion:SfSegmentedControl.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <TextBlock Text="{Binding Name}"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+                        </Grid>
+                    </DataTemplate>
+                </syncfusion:SfSegmentedControl.ItemTemplate>
+            </syncfusion:SfSegmentedControl>
+        </StackPanel>
+    </Grid>
+</Window>
+
+{% endhighlight %}
+{% endtabs %} 
+
+![WinUI Segmented Control with shadow effect](Selection_Images/winui-segmented-control-shadow-effect.png)
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/Shadow-effect)
+
 ## Animation
 
 The Segmented control supports slide animation for selecting the item. Also, users can enable or disable the selection animation using the [SelectionAnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectionAnimationType) property. This property has following two values:
