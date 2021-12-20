@@ -429,6 +429,328 @@ public class EmployeeTemplateSelector : DataTemplateSelector
 
 ![Different custom UI of dropdown items using ItemTemplateSelector](Styling_images/winui-autocomplete-custom-itemtemplate.png)
 
+
+## Styling AutoCompleteTokenItem
+
+The `AutoComplete` control allows you to customize the style of `AutoCompleteTokenItem`, generated in selection area by using the `TokenItemStyle` property. The default value of `TokenItemStyle` is `null`. 
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfAutoComplete 
+    SelectionMode="Multiple"
+    ItemsSource="{Binding SocialMedias}"
+    DisplayMemberPath="Name"
+    TextMemberPath="Name">
+    <editors:SfAutoComplete.TokenItemStyle>
+        <Style TargetType="editors:AutoCompleteTokenItem">
+            <Setter Property="Foreground" Value="Red"/>
+            <Setter Property="Background" Value="LightCyan"/>
+        </Style>
+    </editors:SfAutoComplete.TokenItemStyle>
+</editors:SfAutoComplete>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Custom UI of AutoCompleteTokenItem using TokenItemStyle](Styling_images/winui-autocomplete-tokenitemstyle.png)
+
+### Style AutoCompleteTokenItem based on condition   
+
+The `AutoComplete` control allows you to customize the style of `AutoCompleteTokenItem` conditionally based on its content by using the `TokenItemStyleSelector` property. The default value of `TokenItemStyleSelector` is `null`. 
+
+{% tabs %}
+{% highlight c# %}
+
+public class SocialMediaStyleSelector : StyleSelector
+{
+    public Style MediaStyle1 { get; set; }
+    public Style MediaStyle2 { get; set; }
+    public Style DefaultStyle { get; set; }
+    protected override Style SelectStyleCore(object item, DependencyObject container)
+    {
+        if (item is SocialMedia)
+        {
+            var mediaItem = (item as SocialMedia).Name;
+            if (mediaItem.ToString() == "Facebook" || mediaItem.ToString() == "Instagram" ||
+                mediaItem.ToString() == "Twitter" || mediaItem.ToString() == "WhatsApp" ||
+                mediaItem.ToString() == "Skype")
+            {
+                return MediaStyle1;
+            }
+            else
+            {
+                return MediaStyle2;
+            }
+        }
+        return DefaultStyle;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight XAML %}
+
+<Grid>
+    <Grid.Resources>
+        <Style x:Key="MediaStyle1" TargetType="editors:AutoCompleteTokenItem">
+            <Setter Property="Foreground" Value="Blue"/>
+            <Setter Property="Background" Value="LightCyan"/>
+            <Setter Property="Content" Value="{Binding}"/>
+        </Style>
+        <Style x:Key="MediaStyle2" TargetType="editors:AutoCompleteTokenItem">
+            <Setter Property="Foreground" Value="Red"/>
+            <Setter Property="Background" Value="LightCyan"/>
+            <Setter Property="Content" Value="{Binding}"/>
+        </Style>
+        <local:SocialMediaStyleSelector 
+            x:Key="socialMediaStyleSelector" 
+            MediaStyle1="{StaticResource MediaStyle1}"
+            MediaStyle2="{StaticResource MediaStyle2}"/>
+    </Grid.Resources>
+    <editors:SfAutoComplete 
+        SelectionMode="Multiple"
+        ItemsSource="{Binding SocialMedias}"
+        TokenItemStyleSelector="{StaticResource socialMediaStyleSelector}"
+        DisplayMemberPath="Name"
+        TextMemberPath="Name" />
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Different custom UI of AutoCompleteTokenItem using TokenItemStyleSelector](Styling_images/winui-autocomplete-tokenitemstyleselector.png)
+
+## Customize AutoCompleteTokenItem 
+
+The `TokenItemTemplate` property helps you to decorate token items using the custom templates. The default value of `TokenItemTemplate` is `null`. The following example shows how to add image or custom control in token items using templates.
+
+{% tabs %}
+{% highlight C# %}
+
+//Model.cs
+public class CountryInfo
+{
+    public string CountryName { get; set; }
+    public BitmapImage FlagImage { get; set; }
+}
+
+//ViewModel.cs
+public class CountryViewModel
+{
+    public ObservableCollection<CountryInfo> Countries { get; set; }
+    public EmployeeViewModel()
+    {
+        this.Countries = new ObservableCollection<CountryInfo>();
+        this.Countries.Add(new CountryInfo
+        {
+            FlagImage = new BitmapImage(new Uri(@"ms-appx:///Flags/UnitedStates.png", UriKind.RelativeOrAbsolute)),
+            CountryName = "United States"
+        });       
+
+        this.Countries.Add(new CountryInfo
+        {
+            FlagImage = new BitmapImage(new Uri(@"ms-appx:///Flags/turkey.png", UriKind.RelativeOrAbsolute)),
+            CountryName = "Turkey"
+        });
+
+        this.Countries.Add(new CountryInfo
+        {
+            FlagImage = new BitmapImage(new Uri(@"ms-appx:///Flags/Mexico.png", UriKind.RelativeOrAbsolute)),
+            CountryName = "Mexico"
+        });
+
+        this.Countries.Add(new CountryInfo
+        {
+            FlagImage = new BitmapImage(new Uri(@"ms-appx:///Flags/Basque.png", UriKind.RelativeOrAbsolute)),
+            CountryName = "Basque"
+        });
+
+        this.Countries.Add(new CountryInfo
+        {
+            FlagImage = new BitmapImage(new Uri(@"ms-appx:///Flags/India.png", UriKind.RelativeOrAbsolute)),
+            CountryName = "India"
+        });
+
+        this.Countries.Add(new CountryInfo
+        {
+            FlagImage = new BitmapImage(new Uri(@"ms-appx:///Flags/Portugal.png", UriKind.RelativeOrAbsolute)),
+            CountryName = "Portugal"
+        });
+
+        this.Countries.Add(new CountryInfo
+        {
+            FlagImage = new BitmapImage(new Uri(@"ms-appx:///Flags/UnitedKingdom.png", UriKind.RelativeOrAbsolute)),
+            CountryName = "United Kingdom"
+        });
+
+        this.Countries.Add(new CountryInfo
+        {
+            FlagImage = new BitmapImage(new Uri(@"ms-appx:///Flags/france.png", UriKind.RelativeOrAbsolute)),
+            CountryName = "France"
+        });
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfAutoComplete 
+    SelectionMode="Multiple"
+    PlaceholderText="Select countries"
+    DisplayMemberPath="CountryName"
+    ItemsSource="{Binding Countries}">
+    <editors:SfAutoComplete.DataContext>
+        <local:CountryViewModel/>
+    </editors:SfAutoComplete.DataContext>
+    <editors:SfAutoComplete.TokenItemTemplate>
+        <DataTemplate>
+            <Grid HorizontalAlignment="Center"
+                  VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image 
+                    Grid.Column="0"    
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center" 
+                    Source="{Binding FlagImage}" 
+                    Width="36" Height="20"
+                    Stretch="Uniform"/>
+
+                <TextBlock  
+                    Margin="8,0,0,0"
+                    Grid.Column="1" 
+                    TextAlignment="Center"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center" 
+                    Text="{Binding CountryName}"/>
+                </Grid>
+            </DataTemplate>
+        </editors:SfAutoComplete.TokenItemTemplate>
+</editors:SfAutoComplete>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Custom UI of AutoCompleteTokenItem using TokenItemTemplate](Styling_images/winui-autocomplete-tokenitemtemplate.png)
+
+### Customize AutoCompleteTokenItem based on condition
+
+The `TokenItemTemplateSelector` property helps you to decorate token items conditionally based on its content using the custom templates. The default value of `TokenItemTemplateSelector` is `null`.
+
+{% tabs %}
+{% highlight C# %}
+
+public class CountryTemplateSelector : DataTemplateSelector
+{
+    public DataTemplate CountryTemplate1 { get; set; }
+    public DataTemplate CountryTemplate2 { get; set; }
+    
+    protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
+    {
+        var countryName = (item as CountryInfo).CountryName;
+        if (countryName.ToString() == "United States" || countryName.ToString() == "Basque" ||
+            countryName.ToString() == "India" || countryName.ToString() == "United Kingdom")
+        {
+            return CountryTemplate1;
+        }
+        else
+        {
+            return CountryTemplate2;
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight XAML %}
+
+<Grid>
+    <Grid.DataContext>
+        <local:CountryViewModel/>
+    </Grid.DataContext> 
+    <Grid.Resources>
+        <DataTemplate x:Key="countryTemplate1">
+            <Grid HorizontalAlignment="Center"
+                  VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image 
+                    Grid.Column="0"    
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center" 
+                    Source="{Binding FlagImage}" 
+                    Width="36" Height="20"
+                    Stretch="Uniform"/>
+
+                <TextBlock  
+                    Margin="8,0,0,0"
+                    Grid.Column="1" 
+                    Foreground="DarkBlue"
+                    FontStyle="Italic"
+                    TextAlignment="Center"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center" 
+                    Text="{Binding CountryName}"/>
+            </Grid>
+        </DataTemplate>
+        
+        <DataTemplate x:Key="countryTemplate2">
+            <Grid HorizontalAlignment="Center"
+                  VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image 
+                    Grid.Column="0"    
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center" 
+                    Source="{Binding FlagImage}" 
+                    Width="36" Height="20"
+                    Stretch="Uniform"/>
+
+                <TextBlock 
+                    Margin="8,0,0,0"
+                    Grid.Column="1" 
+                    Foreground="Red"
+                    FontStyle="Italic"
+                    TextAlignment="Center"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center" 
+                    Text="{Binding CountryName}"/>
+            </Grid>
+        </DataTemplate>
+
+        <local:CountryTemplateSelector
+            x:Key="countryTemplateSelector"
+            CountryTemplate1="{StaticResource countryTemplate1}"
+            CountryTemplate2="{StaticResource countryTemplate2}"/>
+    </Grid.Resources>
+    
+    <editors:SfAutoComplete 
+        SelectionMode="Multiple"
+        DisplayMemberPath="CountryName"
+        TokenItemTemplateSelector="{StaticResource countryTemplateSelector}"
+        ItemsSource="{Binding Countries}" />
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Different custom UI of AutoCompleteTokenItem using TokenItemTemplateSelector](Styling_images/winui-autocomplete-tokenitemtemplateselector.png)
+
 ## How to change DropDown MaxHeight
 
 The maximum height of the drop-down can be changed by using the `MaxDropDownHeight` property of `AutoComplete` control. The default value of `MaxDropDownHeight` property is `288`. 

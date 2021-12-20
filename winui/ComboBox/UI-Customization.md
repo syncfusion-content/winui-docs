@@ -765,7 +765,7 @@ public class CountryTemplateSelector : DataTemplateSelector
 <Grid>
     <Grid.DataContext>
         <local:CountryViewModel/>
-    <Grid.DataContext> 
+    </Grid.DataContext> 
     <Grid.Resources>
         <DataTemplate x:Key="countryTemplate1">
             <Grid HorizontalAlignment="Center"
