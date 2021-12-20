@@ -170,7 +170,7 @@ The Segmented Control border color can be customized using the [BorderBrush](htt
 
 ![WinUI Segmented Control with border color](UI_Customization_Images/winui-segmented-control-border-color.png)
 
-## Switching the item templates 
+## Switching segment item templates 
 
 The Segmented Control allows the custom logic for choosing a template used to display each item by using the [ItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemTemplateSelector) property.
 
@@ -333,7 +333,7 @@ public class ItemTemplateSelector : DataTemplateSelector
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/ItemTemplateSelector)
 
 
-##  Switching the various styles
+##  Switching various segment item container styles
 
 The  [ItemContainerStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyleSelector) property is used to specify custom style selection logic for each generated container [SfSegmentedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedItem.html) in the SegmentedControl.
 
