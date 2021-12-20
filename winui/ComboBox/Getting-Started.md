@@ -172,6 +172,7 @@ Now, populate this SocialMediaViewModel data in `ComboBox` control by binding to
         <!--Setting ItemsSource-->
         <editors:SfComboBox x:Name="comboBox" 
                             Width="250"
+                            PlaceholderText="Select a social media"
                             ItemsSource="{Binding SocialMedias}" />
     </Grid>
 </Window>
@@ -265,6 +266,19 @@ comboBox.IsEditable = true;
 
 Based on the [TextSearchMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_TextSearchMode) property, the `ComboBox` control highlights the first item which fits the user input in the drop down list. To disable searching functionality, set the [IsTextSearchEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsTextSearchEnabled) property as `false`. The default value is `true`.
 
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfComboBox x:Name="comboBox"
+                    Width="250"
+                    ItemsSource="{Binding SocialMedias}"
+                    DisplayMemberPath="Name"
+                    TextMemberPath="Name">
+</editors:SfComboBox>
+
+{% endhighlight %}
+{% endtabs %}
+
 ![WinUI ComboBox search the items based on provided input](GettingStarted_images/winui-combobox-text-searching.gif)
 
 ## Filtering
@@ -316,6 +330,7 @@ N> `SelectionBoxItemTemplate` has no effect when `IsEditable` is `true`.
 
    <editors:SfComboBox x:Name="comboBox"
                     Width="250"
+                    Padding="0"
                     SelectionMode="Multiple"
                     ItemsSource="{Binding SocialMedias}"
                     DisplayMemberPath="Name"
