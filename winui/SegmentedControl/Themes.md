@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Theme support using WinUI Segmented Control | Syncfusion
+title: Theme support in WinUI Segmented Control | Syncfusion
 description: Learn here all about Theme support in Syncfusion WinUI Segmented(Segmented Control) control and more.
 platform: WinUI
 control: Segmented Control
@@ -9,7 +9,7 @@ documentation: ug
 
 # Theme support in WinUI Segmented Control
 
-This section explains Segmented control's various themes and how to customize the appearance with keys.
+This section explains Segmented Control's various themes and how to customize the appearance with keys.
 
 ## Set the Themes in Segmented Control
 
@@ -25,15 +25,6 @@ The Segmented Control provides various themes to be applied by setting the theme
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:UI_Customization" RequestedTheme="Dark">
-    <Application.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
-                <!-- Other merged dictionaries here -->
-            </ResourceDictionary.MergedDictionaries>
-            <!-- Other app resources here -->
-        </ResourceDictionary>
-    </Application.Resources>
 </Application>
 
 {% endhighlight %}
@@ -69,7 +60,7 @@ The Segmented Control provides various themes to be applied by setting the theme
 
 ## Customization using keys
 
-The Segmented control can be customized using the theme keys for following interactions.
+The Segmented Control can be customized using the theme keys for following interactions.
 
 * Hover.
 * Selection.
@@ -193,7 +184,7 @@ The following code example illustrates how to customize the segmented control us
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
     mc:Ignorable="d">
-    <Grid x:Name="Root_Grid">
+    <Grid x:Name="rootGrid">
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>

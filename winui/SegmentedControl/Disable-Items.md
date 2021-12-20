@@ -9,11 +9,11 @@ documentation: ug
 
 # Disable in WinUI Segmented Control
 
-The WinUI Segmented control provides options to disable the segmented item.
+The WinUI Segmented Control provides options to disable the segmented item.
 
 ## Disable items
 
-The Segmented control allows you to disable the items using the [SetItemEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SetItemEnabled_System_Int32_System_Boolean_) method. The method has following two parameters:
+The Segmented Control allows you to disable the items using the [SetItemEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SetItemEnabled_System_Int32_System_Boolean_) method. The method has following two parameters:
 
 * `index` - The integer value indicating the index of the item.
 * `isEnabled` - The boolean value indicating whether the item should be enabled or not.
@@ -30,7 +30,7 @@ The Segmented control allows you to disable the items using the [SetItemEnabled]
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
     mc:Ignorable="d">
-    <Grid x:Name="Root_Grid">
+    <Grid x:Name="rootGrid">
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>

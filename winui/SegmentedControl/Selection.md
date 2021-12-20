@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection using WinUI Segmented Control | Syncfusion
+title: Selection in WinUI Segmented Control | Syncfusion
 description: Learn here all about selection support in Syncfusion WinUI Segmented Control (SfSegmentedControl), its elements, and more.
 platform: WinUI
 control: Segmented Control
@@ -9,11 +9,11 @@ documentation: ug
 
 # Selection in WinUI Segmented Control
 
-This section explains about features that aid in the selection of items, customization of the selected item, and its related operations in the Segmented control.
+This section explains about features that aid in the selection of items, customization of the selected item, and its related operations in the Segmented Control.
 
 ## Selected index
 
-The Segmented control allows you to select the segment item based on data source index using the [SelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedIndex) property.
+The Segmented Control allows you to select the segment item based on datasource index using the [SelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedIndex) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -27,7 +27,7 @@ The Segmented control allows you to select the segment item based on data source
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
     mc:Ignorable="d">
-    <Grid x:Name="Root_Grid">
+    <Grid x:Name="rootGrid">
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>
@@ -49,7 +49,7 @@ The Segmented control allows you to select the segment item based on data source
 
 ## Selected item customization
 
-The Segmented control allows you to customize the appearance of selected item using the [SelectedSegmentStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedSegmentStyle) property. You need to provide the style with target type [Border](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.border).
+The Segmented Control allows you to customize the appearance of selected item using the [SelectedSegmentStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedSegmentStyle) property. You need to provide the style with target type [Border](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.border).
 
 {% tabs %}
 {% highlight xaml %}
@@ -63,7 +63,7 @@ The Segmented control allows you to customize the appearance of selected item us
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
     mc:Ignorable="d">
-    <Grid x:Name="Root_Grid">
+    <Grid x:Name="rootGrid">
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>
@@ -92,7 +92,7 @@ N> Users cannot change the selected item foreground using SelectedSegmentStyle.
 
 ## Animation
 
-The Segmented control supports slide animation for selecting the item. Also, users can enable or disable the selection animation using the [SelectionAnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectionAnimationType) property. This property has following two values:
+The Segmented Control supports slide animation for selecting the item. Also, users can enable or disable the selection animation using the [SelectionAnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectionAnimationType) property. This property has following two values:
 
 * `Slide` - The slide animation effect is applied while selecting the item. 
 * `None` - Disables animation while selecting the item.
@@ -115,7 +115,7 @@ When setting  [SelectionAnimationType](https://help.syncfusion.com/cr/winui/Sync
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
     mc:Ignorable="d">
-    <Grid x:Name="Root_Grid">
+    <Grid x:Name="rootGrid">
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>
@@ -137,7 +137,7 @@ When setting  [SelectionAnimationType](https://help.syncfusion.com/cr/winui/Sync
 
 ### None
 
-The animation effect can be disabled while selecting the item by setting the [SelectionAnimationType] to [None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SegmentSelectionAnimationType.html#Syncfusion_UI_Xaml_Editors_SegmentSelectionAnimationType_None).
+The animation effect can be disabled while selecting the item by setting the [SelectionAnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectionAnimationType) to [None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SegmentSelectionAnimationType.html#Syncfusion_UI_Xaml_Editors_SegmentSelectionAnimationType_None).
 
 {% tabs %}
 {% highlight xaml %}
@@ -151,7 +151,7 @@ The animation effect can be disabled while selecting the item by setting the [Se
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
     mc:Ignorable="d">
-    <Grid x:Name="Root_Grid">
+    <Grid x:Name="rootGrid">
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>
@@ -176,7 +176,7 @@ The animation effect can be disabled while selecting the item by setting the [Se
 <table>
 <tr>
 <th>
-Key or KeyCombinations
+Key or Key combinations
 </th>
 <th>
 Description

@@ -33,7 +33,7 @@ This section provides an overview of how to use the [WinUI Segmented Control](ht
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
     mc:Ignorable="d">
-    <Grid x:Name="Root_Grid">
+    <Grid x:Name="rootGrid">
         <syncfusion:SfSegmentedControl x:Name="segmentedControl" />
     </Grid>
 </Window>
@@ -50,7 +50,7 @@ public sealed partial class MainWindow : Window
     {
         this.InitializeComponent();
         SfSegmentedControl segmentedControl = new SfSegmentedControl();
-        Root_Grid.Children.Add(segmentedControl);
+        rootGrid.Children.Add(segmentedControl);
     }
 }
 
@@ -59,7 +59,7 @@ public sealed partial class MainWindow : Window
 
 ## Populating items using string collection
 
-The Segmented control allows you to set the collection of strings as a data source using the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemsSource) property.
+The Segmented Control allows you to set the collection of strings as a datasource using the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemsSource) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -74,9 +74,6 @@ The Segmented control allows you to set the collection of strings as a data sour
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
     mc:Ignorable="d">
     <Grid>
-        <Grid.DataContext>
-            <local:SegmentedViewModel/>
-        </Grid.DataContext>
         <syncfusion:SfSegmentedControl x:Name="segmentedControl"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
@@ -100,7 +97,7 @@ Populating items to the Segmented Control by setting the collection of business 
 
 ### DisplayMemberPath
 
-The [DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_DisplayMemberPath) property denotes the path to a value on the source object (SfSegmentedControl.ItemsSource) that will be used as the visual representation of object. The following code sample will be used to bind the datasource to the Segmented control.
+The [DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_DisplayMemberPath) property denotes the path to a value on the source object (SfSegmentedControl.ItemsSource) that will be used as the visual representation of object. The following code sample will be used to bind the datasource to the Segmented Control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -174,7 +171,7 @@ public class SegmentedModel : INotifyPropertyChanged
 
 ### ItemTemplate
 
-By defining the [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemTemplate) of the segmented control, a custom user interface (UI) can be achieved to display each [SfSegmentedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedItem.html).
+By defining the [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemTemplate) of the Segmented Control, a custom user interface (UI) can be achieved to display each [SfSegmentedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedItem.html).
 
 {% tabs %}
 {% highlight xaml %}
