@@ -188,31 +188,11 @@ The following code example illustrates how to customize the segmented control us
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>
-        <Grid.Resources>
-            <ResourceDictionary>
-                <ResourceDictionary.ThemeDictionaries>
-                    <ResourceDictionary x:Key="Light">
-                        <SolidColorBrush x:Key="SelectedBackground" Color="#6C58EA"/>
-                    </ResourceDictionary>
-                    <ResourceDictionary x:Key="Dark">
-                        <SolidColorBrush x:Key="SelectedBackground" Color="#08B2A8"/>
-                    </ResourceDictionary>
-                </ResourceDictionary.ThemeDictionaries>
-                <Style TargetType="Border" x:Key="shirtModelStyle">
-                    <Setter Property="CornerRadius" Value="4"/>
-                    <Setter Property="Background" Value="{ThemeResource SelectedBackground}"/>
-                </Style>
-            </ResourceDictionary>
-        </Grid.Resources>
         <syncfusion:SfSegmentedControl x:Name="segmentedControl"
-                                    Height="40"   
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
                                     SelectedIndex="2"
-                                    CornerRadius="4"
-                                    BorderThickness="2"
-                                    ItemBorderThickness="0"
-                                    SelectedSegmentStyle="{StaticResource shirtModelStyle}"
+                                    DisplayMemberPath="Name" 
                                     ItemsSource="{Binding ShirtModels}">
             <syncfusion:SfSegmentedControl.Resources>
                 <ResourceDictionary>
@@ -244,21 +224,6 @@ The following code example illustrates how to customize the segmented control us
                     </ResourceDictionary.ThemeDictionaries>
                 </ResourceDictionary>
             </syncfusion:SfSegmentedControl.Resources>
-            <syncfusion:SfSegmentedControl.ItemContainerStyle>
-                <Style TargetType="syncfusion:SfSegmentedItem">
-                    <Setter Property="Margin" Value="3" />
-                    <Setter Property="CornerRadius" Value="4" />
-                </Style>
-            </syncfusion:SfSegmentedControl.ItemContainerStyle>                   
-            <syncfusion:SfSegmentedControl.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <TextBlock Text="{Binding Name}"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"/>
-                    </Grid>
-                </DataTemplate>
-            </syncfusion:SfSegmentedControl.ItemTemplate>
         </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
