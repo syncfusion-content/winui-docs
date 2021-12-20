@@ -192,6 +192,7 @@ The same property can be used to set the access text for backstage items such as
 {% endhighlight %}
 {% endtabs %}
 
+![Key tip for backsteage buttons and tab items](Ribbon-keytip-images/backstage-keytip.png)
 
 ## Rules for defining key tips
 
@@ -207,7 +208,5 @@ The same property can be used to set the access text for backstage items such as
 
 
 N> The key tip action cannot be executed for ribbon disabled elements, but we can set access text to the disabled elements and have the key tip appear disabled.
-
-![Key tip for backsteage buttons and tab items](Ribbon-keytip-images/backstage-keytip.png)
 
 
