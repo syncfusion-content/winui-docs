@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About WinUI Segmented Control | Syncfusion
+title: WinUI Segmented Control Overview | Syncfusion
 description: Learn here all about introduction of Syncfusion WinUI Segmented Control (SfSegmentedControl) with key features and more. 
 platform: WinUI
 control: Segmented Control

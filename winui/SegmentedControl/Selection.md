@@ -32,7 +32,6 @@ The Segmented Control allows you to select the segment item based on datasource 
             <local:SegmentedViewModel/>
         </Grid.DataContext>
         <syncfusion:SfSegmentedControl x:Name="segmentWithSelectedIndex"
-                                    Margin="0,20,0,0"              
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
                                     SelectedIndex="2"

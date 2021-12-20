@@ -11,7 +11,7 @@ documentation: ug
 
 The WinUI Segmented Control allows you to customize the background, text color, selection style, and much more.
 
-## BorderThickness
+## Customizing border thickness
 
 The Segmented Control border thickness can be customized using the [BorderThickness](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.borderthickness?view=winui-3.0) property. 
 
@@ -57,7 +57,7 @@ N> The default value is 1.
 
 ![WinUI Segmented Control with border thickness](UI_Customization_Images/winui-segmented-control-border-thickness.png)
 
-## ItemBorderThickness 
+## Customizing segmented item border thickness 
 
 The [SfSegmentedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedItem.html) border thickness can be customized using the [ItemBorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemBorderThickness) property. You can set item margin using the [ItemContainerStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyle) property to avoid thick border when both control border thickness and segment item border thickness is used simultaneously.
 
@@ -108,7 +108,7 @@ N> The default value is 0,0,1,0.
 
 ![WinUI Segmented Control with item border thickness](UI_Customization_Images/winui-segmented-control-item-border-thickness.png)
 
-## CornerRadius
+## Customizing corner radius
 
 The Segmented Control corner radius can be customized using the [CornerRadius](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.cornerradius?view=winui-3.0) property. Also, by setting the [ItemContainerStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyle) property of Segmented Control, you can change the corner radius of segment item using the [CornerRadius](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.cornerradius?view=winui-3.0) property in [SfSegmentedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedItem.html). 
 
@@ -153,7 +153,7 @@ N> The default value is 0.
 
 ![WinUI Segmented Control with corner radius](UI_Customization_Images/winui-segmented-control-corner-radius.png)
 
-## Border color
+## Customizing border color
 
 The Segmented Control border color can be customized using the [BorderBrush](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.borderbrush?view=winui-3.0) property. Also, by setting the [ItemContainerStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyle) property of Segmented Control, you can change the border color of segment item using the [BorderBrush](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.borderbrush?view=winui-3.0) property in [SfSegmentedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedItem.html).
 
@@ -201,7 +201,7 @@ The Segmented Control border color can be customized using the [BorderBrush](htt
 
 ![WinUI Segmented Control with border color](UI_Customization_Images/winui-segmented-control-border-color.png)
 
-## ItemTemplateSelector
+## Switching the templates in segmented control
 
 The Segmented Control allows the custom logic for choosing a template used to display each item by using the [ItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemTemplateSelector) property.
 
@@ -364,7 +364,7 @@ public class ItemTemplateSelector : DataTemplateSelector
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/ItemTemplateSelector)
 
 
-## ItemContainerStyleSelector
+##  Switching the various styles in segmented control
 
 The  [ItemContainerStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyleSelector) property is used to specify custom style selection logic for each generated container [SfSegmentedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedItem.html) in the SegmentedControl.
 

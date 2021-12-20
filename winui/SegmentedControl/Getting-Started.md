@@ -190,7 +190,6 @@ By defining the [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.U
             <local:SegmentedViewModel/>
         </Grid.DataContext>
         <syncfusion:SfSegmentedControl x:Name="segmentedControl"
-                            Margin="0,20,0,0"
                             HorizontalAlignment="Center"
                             VerticalAlignment="Center" 
                             SelectedIndex="2" 

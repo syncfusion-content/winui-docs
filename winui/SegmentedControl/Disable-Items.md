@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Disable Items using WinUI Segmented Control | Syncfusion
+title: Disable items in WinUI Segmented Control | Syncfusion
 description: Learn here all about disabling items with Syncfusion WinUI Segmented Control (SfSegmentedControl), its elements, and more.
 platform: WinUI
 control: Segmented Control
 documentation: ug
 ---
 
-# Disable in WinUI Segmented Control
+# Disable items in WinUI Segmented Control
 
 The WinUI Segmented Control provides options to disable the segmented item.
 
