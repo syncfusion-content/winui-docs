@@ -15,15 +15,68 @@ The [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.S
 To enable filtering functionality in `ComboBox` control, set the [IsFilteringEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsFilteringEnabled) and [IsEditable](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsEditable) properties as `true`. The default value is `false`. The drop-down will open automatically as soon as you start typing characters in the `ComboBox` control.
 
 {% tabs %}
+{% highlight c# %}
+
+//Model.cs
+ public class CityInfo
+ {
+    public string CityName { get; set; }
+    public string CountryName { get; set; }
+    public bool IsCapital { get; set; }
+}
+
+//ViewModel.cs
+public class CityViewModel
+{
+    public ObservableCollection<CityInfo> Cities { get; set; }
+    public CityViewModel()
+    {
+        this.Cities = new ObservableCollection<CityInfo>();
+        this.Cities.Add(new CityInfo() { CityName= "Chicago", CountryName= "USA" });
+        this.Cities.Add(new CityInfo() { CityName= "Los Angeles", CountryName= "USA" });          
+        this.Cities.Add(new CityInfo() { CityName= "Houston", CountryName= "USA" });
+        this.Cities.Add(new CityInfo() { CityName= "New York", CountryName= "USA" });
+        this.Cities.Add(new CityInfo() { CityName = "Washington", CountryName = "USA", IsCapital = true });
+        this.Cities.Add(new CityInfo() { CityName= "Chennai", CountryName= "India" });
+        this.Cities.Add(new CityInfo() { CityName= "Delhi", CountryName= "India", IsCapital = true });
+        this.Cities.Add(new CityInfo() { CityName= "Kolkata", CountryName= "India" });
+        this.Cities.Add(new CityInfo() { CityName= "Mumbai", CountryName= "India" });
+        this.Cities.Add(new CityInfo() { CityName= "Berlin", CountryName= "Germany", IsCapital = true });
+        this.Cities.Add(new CityInfo() { CityName= "Cologne", CountryName= "Germany" });
+        this.Cities.Add(new CityInfo() { CityName= "Hamburg", CountryName= "Germany" });
+        this.Cities.Add(new CityInfo() { CityName= "Munich", CountryName= "Germany" });
+        this.Cities.Add(new CityInfo() { CityName= "Quebec City", CountryName= "Canada" });
+        this.Cities.Add(new CityInfo() { CityName= "Ottawa", CountryName= "Canada", IsCapital = true });
+        this.Cities.Add(new CityInfo() { CityName= "Toronto", CountryName= "Canada" });
+        this.Cities.Add(new CityInfo() { CityName= "Vancouver", CountryName= "Canada" });
+        this.Cities.Add(new CityInfo() { CityName= "Victoria", CountryName= "Canada" });
+        this.Cities.Add(new CityInfo() { CityName= "London", CountryName= "England", IsCapital = true });
+        this.Cities.Add(new CityInfo() { CityName= "Bath", CountryName= "England" });
+        this.Cities.Add(new CityInfo() { CityName= "Manchester", CountryName= "England" });
+        this.Cities.Add(new CityInfo() { CityName= "Oxford", CountryName= "England" });
+        this.Cities.Add(new CityInfo() { CityName= "Bandung", CountryName= "Indonesia" });
+        this.Cities.Add(new CityInfo() { CityName= "Jakarta", CountryName= "Indonesia", IsCapital = true });
+        this.Cities.Add(new CityInfo() { CityName= "Depok", CountryName= "Indonesia" });
+        this.Cities.Add(new CityInfo() { CityName= "Makassar", CountryName= "Indonesia" });
+        this.Cities.Add(new CityInfo() { CityName= "Surabaya", CountryName= "Indonesia" });
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
 {% highlight XAML %}
 
 <editors:SfComboBox x:Name="comboBox"
-                    Width="250"
                     IsEditable="true"
                     IsFilteringEnabled="true"
-                    ItemsSource="{Binding SocialMedias}"
-                    DisplayMemberPath="Name"
-                    TextMemberPath="Name">
+                    ItemsSource="{Binding Cities}"
+                    TextMemberPath="CityName"
+                    DisplayMemberPath="CityName">
+        <editors:SfComboBox.DataContext>
+            <local:CityViewModel/>
+        </editors:SfComboBox.DataContext>
 </editors:SfComboBox>
 
 {% endhighlight %}
@@ -52,15 +105,13 @@ Filter the matching items based on the starting text and the first filtered item
 {% highlight XAML %}
 
 <editors:SfComboBox x:Name="comboBox"
-                    Width="250"
                     TextSearchMode="StartsWith"
                     IsEditable="true"
                     IsFilteringEnabled="true"
-                    ItemsSource="{Binding SocialMedias}"
-                    DisplayMemberPath="Name"
-                    TextMemberPath="Name">
-</editors:SfComboBox>
-
+                    ItemsSource="{Binding Cities}"
+                    TextMemberPath="CityName"
+                    DisplayMemberPath="CityName" />
+       
 {% endhighlight %}
 
 {% highlight C# %}
@@ -82,14 +133,12 @@ Filter the matching items that contain specific text, and the first filtered ite
 {% highlight XAML %}
 
 <editors:SfComboBox x:Name="comboBox"
-                    Width="250"
                     TextSearchMode="Contains"
                     IsEditable="true"
                     IsFilteringEnabled="true"
-                    ItemsSource="{Binding SocialMedias}"
-                    DisplayMemberPath="Name"
-                    TextMemberPath="Name">
-</editors:SfComboBox>
+                    ItemsSource="{Binding Cities}"
+                    TextMemberPath="CityName"
+                    DisplayMemberPath="CityName" />
 
 {% endhighlight %}
 
@@ -103,3 +152,82 @@ comboBox.TextSearchMode = ComboBoxTextSearchMode.Contains;
 ![WinUI ComboBox filter the items based on contains text](Filtering_images/winui-combobox-filtering-contains-text.gif)
 
 N> Auto appending of the first suggested item text to typed input is not supported in this mode.
+
+### Custom filtering
+
+The ComboBox control provides support to apply your own custom filter logic to suggests the items based on your filter criteria by using the `FilterBehavior` property. The default value of `FilterBehavior` is `null`.
+
+Now, lets create custom filtering class to apply our own filter logic to ComboBox control by following steps.
+
+**Step 1:** Create a class that derives from the `IComboBoxFilterBehavior` interface. 
+
+{% tabs %}
+{% highlight C# %}
+
+/// <summary>
+/// Represents a custom filtering behavior for `ComboBox` control. 
+/// </summary>
+public class CityFilteringBehavior : IComboBoxFilterBehavior
+{
+
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+**Step 2:** Then, implement the `GetMatchingIndexes` method of IComboBoxFilterBehavior interface to create your own suggestion list (containing the indices of the filtered items) based on the text entered in the ComboBox control that needs to be shown in drop-down. The `GetMatchingIndexes` method contains following arguments.
+
+* `source` - The owner of the filter behavior, which holds information about ItemsSource, Items properties, and so on.
+* `filterInfo` - Contains details about the text entered in ComboBox control. Using this text, you can prepare suggestion list which gets displayed in drop down list. 
+
+The following code demonstrates how to filter the cities based on the city or country name entered in ComboBox control.
+
+{% tabs %}
+{% highlight C# %}
+
+/// <summary>
+/// Represents a custom filtering behavior for `ComboBox` control. 
+/// </summary>
+public class CityFilteringBehavior : IComboBoxFilterBehavior
+{
+    /// <summary>
+    /// Returned suggestion list based on the city or country name entered in the ComboBox control.
+    /// </summary>
+    public List<int> GetMatchingIndexes(SfComboBox source, ComboBoxFilterInfo filterInfo)
+    {
+        List<int> filteredlist = new List<int>();
+        List<CityInfo> cityItems = source.Items.OfType<CityInfo>().ToList(); 
+
+        filteredlist.AddRange(from CityInfo item in cityItems
+                              where item.CountryName.StartsWith(filterInfo.Text, StringComparison.CurrentCultureIgnoreCase) ||
+                                    item.CityName.StartsWith(filterInfo.Text, StringComparison.CurrentCultureIgnoreCase)
+                              select cityItems.IndexOf(item));
+
+        return filteredlist;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+**Step3:** Applying custom filtering to ComboBox control by using the `FilterBehavior` property. 
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfComboBox TextMemberPath="CityName"
+                    DisplayMemberPath="CityName"
+                    IsEditable="True"
+                    IsFilteringEnabled="True"
+                    ItemsSource="{Binding Cities}">
+        <editors:SfComboBox.FilterBehavior>
+            <local:CityFilteringBehavior/>
+        </editors:SfComboBox.FilterBehavior>
+</editors:SfComboBox>
+
+{% endhighlight %}
+{% endtabs %}
+
+The following gif demonstrates displaying the cities in drop-down based on the country name entered in the ComboBox control.
+
+![WinUI ComboBox filter the items based on custom filtering logic](Filtering_images/winui-combobox-custom-filtering.gif)
