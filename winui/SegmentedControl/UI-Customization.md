@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WinUI Segmented Control UI Customization | Syncfusion
+title: Customization in WinUI Segmented Control | Syncfusion
 description: Learn here all about UI customization with Syncfusion WinUI Segmented Control (SfSegmentedControl), its elements, and more.
 platform: WinUI
 control: Segmented Control
@@ -9,11 +9,11 @@ documentation: ug
 
 # Customization in WinUI Segmented Control
 
-The WinUI Segmented control allows you to customize the background, text color, selection style, and much more.
+The WinUI Segmented Control allows you to customize the background, text color, selection style, and much more.
 
-## BorderThickness
+## Customizing the border thickness
 
-The Segmented control border thickness can be customized using the [BorderThickness](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.borderthickness?view=winui-3.0) property. 
+The Segmented Control border thickness can be customized using the [BorderThickness](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.borderthickness?view=winui-3.0) property. 
 
 N> The default value is 1.
 
@@ -29,7 +29,7 @@ N> The default value is 1.
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
     mc:Ignorable="d">
-    <Grid x:Name="Root_Grid">
+    <Grid>
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>
@@ -38,16 +38,8 @@ N> The default value is 1.
                                     VerticalAlignment="Center"
                                     BorderThickness="3"
                                     ItemBorderThickness="0"
-                                    ItemsSource="{Binding Days}">                                       
-            <syncfusion:SfSegmentedControl.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <TextBlock Text="{Binding Name}"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"/>
-                    </Grid>
-                </DataTemplate>
-            </syncfusion:SfSegmentedControl.ItemTemplate>
+                                    DisplayMemberPath="Name"    
+                                    ItemsSource="{Binding Days}">
         </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
@@ -57,7 +49,7 @@ N> The default value is 1.
 
 ![WinUI Segmented Control with border thickness](UI_Customization_Images/winui-segmented-control-border-thickness.png)
 
-## ItemBorderThickness 
+## Customizing the item border thickness 
 
 The [SfSegmentedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedItem.html) border thickness can be customized using the [ItemBorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemBorderThickness) property. You can set item margin using the [ItemContainerStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyle) property to avoid thick border when both control border thickness and segment item border thickness is used simultaneously.
 
@@ -75,7 +67,7 @@ N> The default value is 0,0,1,0.
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
     mc:Ignorable="d">
-    <Grid x:Name="Root_Grid">
+    <Grid>
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>
@@ -84,21 +76,14 @@ N> The default value is 0,0,1,0.
                                     VerticalAlignment="Center"
                                     BorderThickness="0"
                                     ItemBorderThickness="1"
+                                    DisplayMemberPath="Name" 
+                                    SelectionAnimationType="None"      
                                     ItemsSource="{Binding Days}">
             <syncfusion:SfSegmentedControl.ItemContainerStyle>
                 <Style TargetType="syncfusion:SfSegmentedItem">
                     <Setter Property="Margin" Value="3" />
                 </Style>
-            </syncfusion:SfSegmentedControl.ItemContainerStyle>                                            
-            <syncfusion:SfSegmentedControl.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <TextBlock Text="{Binding Name}"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"/>
-                    </Grid>
-                </DataTemplate>
-            </syncfusion:SfSegmentedControl.ItemTemplate>
+            </syncfusion:SfSegmentedControl.ItemContainerStyle>
         </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
@@ -108,9 +93,9 @@ N> The default value is 0,0,1,0.
 
 ![WinUI Segmented Control with item border thickness](UI_Customization_Images/winui-segmented-control-item-border-thickness.png)
 
-## CornerRadius
+## Customizing the corner radius
 
-The Segmented control corner radius can be customized using the [CornerRadius](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.cornerradius?view=winui-3.0) property. Also, by setting the [ItemContainerStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyle) property of Segmented control, you can change the corner radius of segment item using the [CornerRadius](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.cornerradius?view=winui-3.0) property in [SfSegmentedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedItem.html). 
+The Segmented Control corner radius can be customized using the [CornerRadius](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.cornerradius?view=winui-3.0) property. Also, by setting the [ItemContainerStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyle) property of Segmented Control, you can change the corner radius of segment item using the [CornerRadius](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.cornerradius?view=winui-3.0) property in [SfSegmentedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedItem.html). 
 
 N> The default value is 0.
 
@@ -126,7 +111,7 @@ N> The default value is 0.
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
     mc:Ignorable="d">
-    <Grid x:Name="Root_Grid">
+    <Grid>
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>
@@ -134,16 +119,8 @@ N> The default value is 0.
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
                                     CornerRadius="5"
-                                    ItemsSource="{Binding Days}">                                          
-            <syncfusion:SfSegmentedControl.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <TextBlock Text="{Binding Name}"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"/>
-                    </Grid>
-                </DataTemplate>
-            </syncfusion:SfSegmentedControl.ItemTemplate>
+                                    DisplayMemberPath="Name"    
+                                    ItemsSource="{Binding Days}">
         </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
@@ -153,9 +130,9 @@ N> The default value is 0.
 
 ![WinUI Segmented Control with corner radius](UI_Customization_Images/winui-segmented-control-corner-radius.png)
 
-## Border color
+## Customizing the border color
 
-The Segmented control border color can be customized using the [BorderBrush](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.borderbrush?view=winui-3.0) property. Also, by setting the [ItemContainerStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyle) property of Segmented control, you can change the border color of segment item using the [BorderBrush](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.borderbrush?view=winui-3.0) property in [SfSegmentedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedItem.html).
+The Segmented Control border color can be customized using the [BorderBrush](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.borderbrush?view=winui-3.0) property. Also, by setting the [ItemContainerStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyle) property of Segmented Control, you can change the border color of segment item using the [BorderBrush](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.borderbrush?view=winui-3.0) property in [SfSegmentedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedItem.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -169,7 +146,7 @@ The Segmented control border color can be customized using the [BorderBrush](htt
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
     mc:Ignorable="d">
-    <Grid x:Name="Root_Grid">
+    <Grid>
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>
@@ -177,21 +154,13 @@ The Segmented control border color can be customized using the [BorderBrush](htt
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
                                     BorderBrush="Red"
+                                    DisplayMemberPath="Name"    
                                     ItemsSource="{Binding Days}">                     
             <syncfusion:SfSegmentedControl.ItemContainerStyle>
                 <Style TargetType="syncfusion:SfSegmentedItem">
                     <Setter Property="BorderBrush" Value="Red" />
                 </Style>
-            </syncfusion:SfSegmentedControl.ItemContainerStyle>                                        
-            <syncfusion:SfSegmentedControl.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <TextBlock Text="{Binding Name}"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"/>
-                    </Grid>
-                </DataTemplate>
-            </syncfusion:SfSegmentedControl.ItemTemplate>
+            </syncfusion:SfSegmentedControl.ItemContainerStyle>
         </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
@@ -201,9 +170,9 @@ The Segmented control border color can be customized using the [BorderBrush](htt
 
 ![WinUI Segmented Control with border color](UI_Customization_Images/winui-segmented-control-border-color.png)
 
-## ItemTemplateSelector
+## Switching segment item templates 
 
-The Segmented control allows the custom logic for choosing a template used to display each item by using the [ItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemTemplateSelector) property.
+The Segmented Control allows the custom logic for choosing a template used to display each item by using the [ItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemTemplateSelector) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -217,13 +186,12 @@ The Segmented control allows the custom logic for choosing a template used to di
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors"
     mc:Ignorable="d">
-
-    <Grid x:Name="Root_Grid">
+    <Grid>
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>
         <Grid.Resources>
-            <DataTemplate x:Key="selectedtemplate">
+            <DataTemplate x:Key="selectedTemplate">
                 <StackPanel Orientation="Horizontal">
                     <Path Data="{Binding Icon}" Stretch="Uniform" 
                                   Fill="{Binding Background}" 
@@ -242,23 +210,23 @@ The Segmented control allows the custom logic for choosing a template used to di
                                        Margin="6,0,0,0"/>
                 </StackPanel>
             </DataTemplate>
-            <DataTemplate x:Key="childTemplate">
+            <DataTemplate x:Key="defaultTemplate">
                 <StackPanel Orientation = "Horizontal" >
                     <TextBlock Margin="5"
                               VerticalAlignment="Center"
                               Text="{Binding Name}" />
                 </StackPanel>
             </DataTemplate>
-            <local:ItemTemplateSelector x:Key="templateselector" 
-                                       SelectedTemplate="{StaticResource selectedtemplate}" 
-                                       ChildTemplate="{StaticResource childTemplate}"/>
+            <local:ItemTemplateSelector x:Key="templateSelector" 
+                                       SelectedTemplate="{StaticResource selectedTemplate}" 
+                                       DefaultTemplate="{StaticResource defaultTemplate}"/>
         </Grid.Resources>
 
         <syncfusion:SfSegmentedControl Name="segmentedControl" 
                             ItemsSource="{Binding Items}"
                             VerticalAlignment="Center"
                             HorizontalAlignment="Center"
-                            ItemTemplateSelector="{StaticResource templateselector}" />
+                            ItemTemplateSelector="{StaticResource templateSelector}" />
 
     </Grid>
 </Window>
@@ -345,7 +313,7 @@ public class SegmentedModel : INotifyPropertyChanged
 public class ItemTemplateSelector : DataTemplateSelector
 {
     public DataTemplate SelectedTemplate { get; set; }
-    public DataTemplate ChildTemplate { get; set; }
+    public DataTemplate DefaultTemplate { get; set; }
     protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
     {
         if (container == null)
@@ -353,7 +321,7 @@ public class ItemTemplateSelector : DataTemplateSelector
         if ((container as SfSegmentedItem).IsSelected)
             return SelectedTemplate;
         else
-            return ChildTemplate;
+            return DefaultTemplate;
     }
 }
 
@@ -365,7 +333,7 @@ public class ItemTemplateSelector : DataTemplateSelector
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/ItemTemplateSelector)
 
 
-## ItemContainerStyleSelector
+## Switching various segment item container styles
 
 The  [ItemContainerStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyleSelector) property is used to specify custom style selection logic for each generated container [SfSegmentedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedItem.html) in the SegmentedControl.
 
@@ -381,13 +349,12 @@ The  [ItemContainerStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusio
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" xmlns:local1="using:SelectionStyle"
     mc:Ignorable="d">
-
-    <Grid x:Name="Root_Grid">
+    <Grid>
         <Grid.DataContext>
             <local1:SegmentedViewModel/>
         </Grid.DataContext>
         <Grid.Resources>
-            <Style TargetType="Border" x:Key="ellipse" >
+            <Style TargetType="syncfusion:SelectedSegmentBorder" x:Key="ellipse" >
                 <Setter Property = "Background" Value="DarkGreen"/>
             </Style>
             <Style x:Key="averageRatingStyle" TargetType="syncfusion:SfSegmentedItem">
@@ -398,11 +365,9 @@ The  [ItemContainerStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusio
                 <Setter Property = "Margin" Value="5,5,5,5" />
                 <Setter Property = "Background" Value="Yellow" />
             </Style>
-
             <local:RatingStyleSelector x:Key="ratingStyleSelector" 
                         AverageRatingStyle="{StaticResource averageRatingStyle}"
                         DefaultStyle="{StaticResource defaultStyle}"/>
-
         </Grid.Resources>
 
         <syncfusion:SfSegmentedControl
@@ -413,6 +378,7 @@ The  [ItemContainerStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusio
             VerticalAlignment="Center"
             ItemBorderThickness="2"
             BorderThickness="0"
+            DisplayMemberPath="Name" 
             ItemsSource="{Binding Days}" 
             ItemContainerStyleSelector="{StaticResource ratingStyleSelector}"
             SelectedSegmentStyle="{StaticResource ellipse}">
@@ -434,13 +400,6 @@ The  [ItemContainerStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusio
                     </ResourceDictionary.ThemeDictionaries>
                 </ResourceDictionary>
             </syncfusion:SfSegmentedControl.Resources>
-            <syncfusion:SfSegmentedControl.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <TextBlock Text = "{Binding Name}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                    </Grid>
-                </DataTemplate>
-            </syncfusion:SfSegmentedControl.ItemTemplate>
         </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
@@ -534,12 +493,12 @@ The following code example illustrates how to customize the ellipse style.
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
     mc:Ignorable="d">
-    <Grid x:Name="Root_Grid">
+    <Grid>
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>
          <Grid.Resources>
-            <Style TargetType="Border" x:Key="backLightStyle" >
+            <Style TargetType="syncfusion:SelectedSegmentBorder" x:Key="backlightStyle" >
                <Setter Property="CornerRadius" Value="25" />
                <Setter Property="Background" Value="#ffe521"/>
             </Style>
@@ -550,9 +509,10 @@ The following code example illustrates how to customize the ellipse style.
                             VerticalAlignment="Center"
                             CornerRadius="25"
                             ItemBorderThickness="0"
-                            SelectedIndex="0" 
-                            SelectedSegmentStyle="{StaticResource backLightStyle}"
-                            ItemsSource="{Binding Backlight}">
+                            SelectedIndex="0"
+                            DisplayMemberPath="Name" 
+                            SelectedSegmentStyle="{StaticResource backlightStyle}"
+                            ItemsSource="{Binding Items}">
             <syncfusion:SfSegmentedControl.Resources>
                 <ResourceDictionary>
                     <ResourceDictionary.ThemeDictionaries>
@@ -575,15 +535,6 @@ The following code example illustrates how to customize the ellipse style.
                     <Setter Property="CornerRadius" Value="25"/>
                 </Style>
             </syncfusion:SfSegmentedControl.ItemContainerStyle>
-            <syncfusion:SfSegmentedControl.ItemTemplate>
-                    <DataTemplate>
-                        <Grid>
-                            <TextBlock Text="{Binding Name}" 
-                                        HorizontalAlignment="Center"
-                                        VerticalAlignment="Center"/>
-                        </Grid>
-                    </DataTemplate>
-            </syncfusion:SfSegmentedControl.ItemTemplate>
          </syncfusion:SfSegmentedControl>
     </Grid>
 </Window>
@@ -613,12 +564,12 @@ The following code example illustrates how to customize the circle style.
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
     mc:Ignorable="d">
-    <Grid x:Name="Root_Grid">
+    <Grid>
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>
        <Grid.Resources>
-            <Style TargetType="Border" x:Key="circleStyle">
+            <Style TargetType="syncfusion:SelectedSegmentBorder" x:Key="circleStyle">
                 <Setter Property="BorderThickness" Value="2" />
                 <Setter Property="BorderBrush" Value="{ThemeResource SystemBaseHighColor}"/>
                 <Setter Property="Width" Value="50"/>
@@ -681,7 +632,7 @@ The following code example illustrates how to customize the image with text styl
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
     mc:Ignorable="d">
-    <Grid x:Name="Root_Grid">
+    <Grid>
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>
@@ -740,7 +691,7 @@ The following code example illustrates how to customize the top indicator style.
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors" 
     mc:Ignorable="d">
-    <Grid x:Name="Root_Grid">
+    <Grid>
         <Grid.DataContext>
             <local:SegmentedViewModel/>
         </Grid.DataContext>
@@ -754,7 +705,7 @@ The following code example illustrates how to customize the top indicator style.
                         <SolidColorBrush x:Key="SelectedBorderBrush" Color="Red"/>
                     </ResourceDictionary>
                 </ResourceDictionary.ThemeDictionaries>
-                <Style TargetType="Border" x:Key="topBorderStyle" >
+                <Style TargetType="syncfusion:SelectedSegmentBorder" x:Key="topBorderStyle" >
                     <Setter Property="Margin" Value="0,-6,0,0" />
                     <Setter Property="BorderThickness" Value="0,4,0,0" />
                     <Setter Property="BorderBrush" Value="{ThemeResource SelectedBorderBrush}" />
