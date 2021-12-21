@@ -528,7 +528,7 @@ public class EmployeeTemplateSelector : DataTemplateSelector
 
 ## Styling ComboBoxTokenItem
 
-The ComboBox control allows you to customize the style of `ComboBoxTokenItem`, generated in selection area by using the `TokenItemStyle` property. The default value of `TokenItemStyle` is `null`. 
+The ComboBox control allows you to customize the style of [ComboBoxTokenItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.ComboBoxTokenItem.html) generated in the selection area by using the [TokenItemStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemStyle) property. The default value of `TokenItemStyle` is `null`. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -553,7 +553,7 @@ The ComboBox control allows you to customize the style of `ComboBoxTokenItem`, g
 
 ### Style ComboBoxTokenItem based on condition   
 
-The ComboBox control allows you to customize the style of `ComboBoxTokenItem` conditionally based on its content by using the `TokenItemStyleSelector` property. The default value of `TokenItemStyleSelector` is `null`. 
+The ComboBox control allows you to customize the style of `ComboBoxTokenItem` conditionally based on its content by using the [TokenItemStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html?tabs=tabid-1#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemStyleSelector) property. The default value of `TokenItemStyleSelector` is `null`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -615,7 +615,7 @@ public class SocialMediaStyleSelector : StyleSelector
 
 ## Customize ComboBoxTokenItem 
 
-The `TokenItemTemplate` property helps you to decorate token items using the custom templates. The default value of `TokenItemTemplate` is `null`. The following example shows how to add image or custom control in token items using templates.
+The [TokenItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html?tabs=tabid-1#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemTemplate) property helps you to decorate token items using the custom templates. The default value of `TokenItemTemplate` is `null`. The following example shows how to add image or custom control in token items using templates.
 
 {% tabs %}
 {% highlight C# %}
@@ -731,7 +731,7 @@ public class CountryViewModel
 
 ### Customize ComboBoxTokenItem based on condition
 
-The `TokenItemTemplateSelector` property helps you to decorate token items conditionally based on its content using the custom templates. The default value of `TokenItemTemplateSelector` is `null`.
+The [TokenItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemTemplateSelector) property helps you to decorate token items conditionally based on its content using the custom templates. The default value of `TokenItemTemplateSelector` is `null`.
 
 {% tabs %}
 {% highlight C# %}

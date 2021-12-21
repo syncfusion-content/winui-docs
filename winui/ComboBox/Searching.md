@@ -187,11 +187,11 @@ comboBox.TextSearchMode = ComboBoxTextSearchMode.Contains;
 
 ### Custom searching
 
-The ComboBox control provides support to apply your own custom search logic to highlight the item in the drop-down based on your search criteria by using the `SearchBehavior` property. The default value of `SearchBehavior` is `null`.
+The ComboBox control provides support to apply your own custom search logic to highlight the item in the drop-down based on your search criteria by using the [SearchBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_SearchBehavior) property. The default value of `SearchBehavior` is `null`.
 
-Now, lets create custom searching class to apply our own search logic to ComboBox control by following steps.
+Now, let us create a custom searching class to apply our own search logic to ComboBox control by the following steps:
 
-**Step 1:** Create a class that derives from the `IComboBoxSearchBehavior` interface. 
+**Step 1:** Create a class that derives from the [IComboBoxSearchBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.IComboBoxSearchBehavior.html) interface. 
 
 {% tabs %}
 {% highlight C# %}
@@ -207,10 +207,10 @@ public class StringLengthSearchingBehavior : IComboBoxSearchBehavior
 {% endhighlight %}
 {% endtabs %}
 
-**Step 2:** Then, implement the `GetHighlightIndex` method of IComboBoxSearchBehavior interface to calculate the highlight index depending on the filtered items list and text entered in the ComboBox control that needs to be highlighted in drop-down. The `GetHighlightIndex` method contains following arguments.
+**Step 2:** Then, implement the [GetHighlightIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.IComboBoxSearchBehavior.html#Syncfusion_UI_Xaml_Editors_IComboBoxSearchBehavior_GetHighlightIndex_Syncfusion_UI_Xaml_Editors_SfComboBox_Syncfusion_UI_Xaml_Editors_ComboBoxSearchInfo_) method of IComboBoxSearchBehavior interface to calculate the highlight index depending on the filtered items list and text entered in the ComboBox control that needs to be highlighted in drop-down. The `GetHighlightIndex` method contains the following arguments:
 
 * `source` - The owner of the search behavior, which holds information about ItemsSource, Items properties, and so on.
-* `searchInfo` - Contains details about the filtered items list and the text entered in ComboBox control. You may compute the index that has to be highlighted in the drop down list using this details.
+* `searchInfo` - Contains details about the filtered items list and the text entered in ComboBox control. You may compute the index that has to be highlighted in the drop-down list using these details.
 
 The following example demonstrates how to highlight the first item that fully matches the typed length entered in the ComboBox control.
 
@@ -245,7 +245,7 @@ public class StringLengthSearchingBehavior : IComboBoxSearchBehavior
 {% endhighlight %}
 {% endtabs %}
 
-**Step3:** Applying custom searching to ComboBox control by using the `SearchBehavior` property. 
+**Step3:** Apply custom searching to the ComboBox control by using the `SearchBehavior` property. 
 
 {% tabs %}
 {% highlight XAML %}
