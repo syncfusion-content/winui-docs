@@ -209,8 +209,8 @@ public class StringLengthSearchingBehavior : IComboBoxSearchBehavior
 
 **Step 2:** Then, implement the [GetHighlightIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.IComboBoxSearchBehavior.html#Syncfusion_UI_Xaml_Editors_IComboBoxSearchBehavior_GetHighlightIndex_Syncfusion_UI_Xaml_Editors_SfComboBox_Syncfusion_UI_Xaml_Editors_ComboBoxSearchInfo_) method of IComboBoxSearchBehavior interface to calculate the highlight index depending on the filtered items list and text entered in the ComboBox control that needs to be highlighted in drop-down. The `GetHighlightIndex` method contains the following arguments:
 
-* `source` - The owner of the search behavior, which holds information about ItemsSource, Items properties, and so on.
-* `searchInfo` - Contains details about the filtered items list and the text entered in ComboBox control. You may compute the index that has to be highlighted in the drop-down list using these details.
+* [source](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html) - The owner of the search behavior, which holds information about ItemsSource, Items properties, and so on.
+* [searchInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.ComboBoxSearchInfo.html) - Contains details about the filtered items list and the text entered in ComboBox control. You may compute the index that has to be highlighted in the drop-down list using these details.
 
 The following example demonstrates how to highlight the first item that fully matches the typed length entered in the ComboBox control.
 

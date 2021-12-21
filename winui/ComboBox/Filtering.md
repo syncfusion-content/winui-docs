@@ -177,8 +177,8 @@ public class CityFilteringBehavior : IComboBoxFilterBehavior
 
 **Step 2:** Then, implement the [GetMatchingIndexes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.IComboBoxFilterBehavior.html#Syncfusion_UI_Xaml_Editors_IComboBoxFilterBehavior_GetMatchingIndexes_Syncfusion_UI_Xaml_Editors_SfComboBox_Syncfusion_UI_Xaml_Editors_ComboBoxFilterInfo_) method of IComboBoxFilterBehavior interface to create your own suggestion list (containing the indices of the filtered items) based on the text entered in the ComboBox control that needs to be shown in drop-down. The `GetMatchingIndexes` method contains following arguments:
 
-* `source` - The owner of the filter behavior, which holds information about ItemsSource, Items properties, and so on.
-* `filterInfo` - Contains details about the text entered in ComboBox control. Using this text, you can prepare a suggestion list, which gets displayed in the drop-down list. 
+* [source](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html) - The owner of the filter behavior, which holds information about ItemsSource, Items properties, and so on.
+* [filterInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.ComboBoxFilterInfo.html) - Contains details about the text entered in ComboBox control. Using this text, you can prepare a suggestion list, which gets displayed in the drop-down list. 
 
 The following code demonstrates how to filter the cities based on the city or country name entered in the ComboBox control.
 
