@@ -243,7 +243,6 @@ The selected items can be changed interactively by using keyboard or by selectin
     <CheckBox Margin="20,0,0,0"
               IsChecked="{Binding ElementName=comboBox, Path=IsEditable, Mode=TwoWay}"
               Content="IsEditable" />
-
 </StackPanel>
 
 {% endhighlight %}

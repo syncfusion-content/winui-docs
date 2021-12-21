@@ -132,12 +132,12 @@ private void OnEditingComboBoxPreviewKeyDown(object sender, KeyRoutedEventArgs e
 
 The [InputSubmitted](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_InputSubmitted) event is triggered, when entered text is submitted that does not correspond to an item in the drop-down list. [ComboBoxInputSubmittedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.ComboBoxInputSubmittedEventArgs.html) has following members, which provide information for InputSubmitted event.
 
-Text: Gets the text entered in ComboBox.
+`Text:` Gets the text entered in ComboBox.
 
-Item: This property can be used to add the item to the selected item(s) or set to the selected item that is assigned.
-      If no item is assigned, then in single selection entered text gets assigned to the selected item. In multiple selection, no text will be added to the selected items.
+`Item:` This property can be used to add the item to the selected item(s) or set to the selected item that is assigned. 
+        If no item is assigned, then in single selection entered text gets assigned to the selected item. In multiple selection, no text will be added to the selected items.
 
-Handled: When set to `true`, the framework will not automatically update the selected item or selected item(s) of the ComboBox to the new value.
+`Handled:` When set to `true`, the framework will not automatically update the selected item or selected item(s) of the ComboBox to the new value.
 
 **Example 1:** By using the following code sample, a dialogue box will be displayed when submitting input that does not contain in the drop-down list.
 
