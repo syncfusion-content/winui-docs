@@ -29,12 +29,12 @@ In edit mode, searching will be performed based on the `TextMemberPath` property
 {% highlight xaml %}
 
 <editors:SfComboBox x:Name="comboBox"
-    Width="250"
-    IsTextSearchEnabled="true"
-    IsEditable="true"
-    ItemsSource="{Binding SocialMedias}"
-    TextMemberPath="ID"
-    DisplayMemberPath="Name" />
+                    Width="250"
+                    IsTextSearchEnabled="true"
+                    IsEditable="true"
+                    ItemsSource="{Binding SocialMedias}"
+                    TextMemberPath="ID"
+                    DisplayMemberPath="Name" />
 
 {% endhighlight %}
 
@@ -57,11 +57,11 @@ In non-editable mode, searching will be performed based on the `DisplayMemberPat
 {% highlight xaml %}
 
 <editors:SfComboBox x:Name="comboBox"
-    Width="250"
-    IsTextSearchEnabled="true"
-    ItemsSource="{Binding SocialMedias}"
-    TextMemberPath="Name"
-    DisplayMemberPath="ID" />
+                    Width="250"
+                    IsTextSearchEnabled="true"
+                    ItemsSource="{Binding SocialMedias}"
+                    TextMemberPath="Name"
+                    DisplayMemberPath="ID" />
 
 {% endhighlight %}
 
@@ -86,11 +86,11 @@ The `ComboBox` control provides support to auto append the text based on data so
 {% highlight xaml %}
 
 <editors:SfComboBox x:Name="comboBox"
-    Width="250"
-    IsEditable="true"
-    ItemsSource="{Binding SocialMedias}"
-    TextMemberPath="Name"
-    DisplayMemberPath="Name" />
+                    Width="250"
+                    IsEditable="true"
+                    ItemsSource="{Binding SocialMedias}"
+                    TextMemberPath="Name"
+                    DisplayMemberPath="Name" />
 
 {% endhighlight %}
 {% endtabs %}
@@ -120,8 +120,7 @@ The following examples show how to perform text searching functionality in singl
                     TextSearchMode="StartsWith"
                     ItemsSource="{Binding SocialMedias}"
                     DisplayMemberPath="Name"
-                    TextMemberPath="Name">
-</editors:SfComboBox>
+                    TextMemberPath="Name" />
 
 {% endhighlight %}
 
@@ -145,8 +144,7 @@ The following examples show how to perform text searching functionality in multi
                     TextSearchMode="StartsWith"
                     ItemsSource="{Binding SocialMedias}"
                     DisplayMemberPath="Name"
-                    TextMemberPath="Name">
-</editors:SfComboBox>
+                    TextMemberPath="Name" />
 
 {% endhighlight %}
 
@@ -167,12 +165,12 @@ Search the matching items containing specific text, and the first item which fit
 {% highlight xaml %}
 
 <editors:SfComboBox x:Name="comboBox"
-    Width="250"
-    IsEditable="True"
-    TextSearchMode="Contains"
-    ItemsSource="{Binding SocialMedias}"
-    TextMemberPath="Name"
-    DisplayMemberPath="Name" />
+                    Width="250"
+                    IsEditable="True"
+                    TextSearchMode="Contains"
+                    ItemsSource="{Binding SocialMedias}"
+                    TextMemberPath="Name"
+                    DisplayMemberPath="Name" />
 
 {% endhighlight %}
 
@@ -274,12 +272,12 @@ To disable searching and auto appending text functionalities, set the `IsTextSea
 {% highlight xaml %}
 
 <editors:SfComboBox x:Name="comboBox"
-    Width="250"
-    IsTextSearchEnabled="false"
-    IsEditable="true"
-    ItemsSource="{Binding SocialMedias}"
-    TextMemberPath="Name"
-    DisplayMemberPath="Name" />
+                    Width="250"
+                    IsTextSearchEnabled="false"
+                    IsEditable="true"
+                    ItemsSource="{Binding SocialMedias}"
+                    TextMemberPath="Name"
+                    DisplayMemberPath="Name" />
 
 {% endhighlight %}
 

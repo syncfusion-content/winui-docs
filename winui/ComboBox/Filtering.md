@@ -18,8 +18,8 @@ To enable filtering functionality in `ComboBox` control, set the [IsFilteringEna
 {% highlight c# %}
 
 //Model.cs
- public class CityInfo
- {
+public class CityInfo
+{
     public string CityName { get; set; }
     public string CountryName { get; set; }
     public bool IsCapital { get; set; }
