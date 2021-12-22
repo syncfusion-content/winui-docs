@@ -351,7 +351,6 @@ N> `SelectionBoxItemTemplate` has no effect when `IsEditable` is `true`.
          </DataTemplate>
       </editors:SfComboBox.SelectionBoxItemTemplate>
     </editors:SfComboBox>
-
 </Grid>
 
 {% endhighlight %}

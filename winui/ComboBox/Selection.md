@@ -67,7 +67,7 @@ comboBox.SelectedIndex = 2;
 The [SelectionChangeTrigger](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_SelectionChangeTrigger) property of the `ComboBox` can be used to update the selected item when the user commits a selection or each time the user navigates to a new selection in the `ComboBox`. The default value is `Committed`. The available SelectionChangeTrigger modes are:
 
 * **Committed** - Selected item is updated when the user commits a selection in the `ComboBox`.
-* **Always** - Selected item is updated each time the user navigates to a new selection in the `ComboBox`.
+* **Always** - Selected item is updated when each time the user navigates to a new selection in the `ComboBox`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -103,7 +103,7 @@ private async  void OnComboBoxSelectionChanged(object sender, ComboBoxSelectionC
 {% endhighlight %}
 {% endtabs %}
 
-Below screenshots demonstrates, while typing `f` in ComboBox control `Facebook` will be set as selected item.
+The following screenshot demonstrates, while typing `f` in ComboBox control `Facebook` will be set as selected item.
 
 ![Updates selected item each time the user navigates to a new selection in ComboBox](Selection_images/winui-combobox-selection-change-trigger-always.png)
 
@@ -113,7 +113,7 @@ N> You can refer more information about `SelectionChanged` event from [this](htt
 
 The `ComboBox` allows user to select multiple values from the drop-down list. The multi-select `ComboBox` mode can be enabled by setting the `SelectionMode` property as `Multiple`. 
 
-There are two different display modes to perform multi selection in ComboBox: `Delimiter`, and `Token`. The MultiSelection display modes will be briefly explained in the upcoming section.
+There are two different display modes to perform multiple selection in ComboBox: `Delimiter`, and `Token`. The multiple selection display modes will be briefly explained in the upcoming section.
 
 ### Programmatic selection 
 
@@ -171,7 +171,7 @@ comboBox.IsMultiSelectCheckBoxEnabled = false;
 
 ### Multiple selection display
 
-Display multiple selected items with token representation or simply divide them with a delimiter text. The multi selection display mode can be set by using the `MultiSelectionDisplayMode` property. The default value of `MultiSelectionDisplayMode` property is `Delimiter`. 
+Display multiple selected items with token representation or simply divide them with a delimiter text. The multiple selection display mode can be set by using the [MultiSelectionDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_MultiSelectionDisplayMode) property. The default value of `MultiSelectionDisplayMode` property is `Delimiter`. 
 
 #### Delimiter
 
@@ -223,7 +223,7 @@ comboBox.DelimiterText = "-";
 
 #### Token
 
-Selected items will be displayed with a customizable token representation and the users can remove each tokenized item with the close button. Token mode supports both editable and non-editable text boxes for selecting items from a data source.
+Selected items will be displayed with a customizable token representation and the users can remove each tokenized item by clicking the close button. Token mode supports both editable and non-editable text boxes for selecting items from a data source.
 
 ##### UI selection 
 
@@ -243,7 +243,6 @@ The selected items can be changed interactively by using keyboard or by selectin
     <CheckBox Margin="20,0,0,0"
               IsChecked="{Binding ElementName=comboBox, Path=IsEditable, Mode=TwoWay}"
               Content="IsEditable" />
-
 </StackPanel>
 
 {% endhighlight %}
