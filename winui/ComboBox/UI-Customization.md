@@ -18,21 +18,19 @@ The `ComboBox` control header can be changed by using the [Header](https://help.
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfComboBox
-    Width="250"
-    Header="Favourite Social Media"
-    ItemsSource="{Binding SocialMedias}"
-    DisplayMemberPath="Name"
-    TextMemberPath="Name"
-    SelectedIndex="2"
-    x:Name="comboBox">
+<editors:SfComboBox x:Name="comboBox"
+                    Width="250"
+                    Header="Favourite Social Media"
+                    ItemsSource="{Binding SocialMedias}"
+                    DisplayMemberPath="Name"
+                    TextMemberPath="Name"
+                    SelectedIndex="2">
     <editors:SfComboBox.HeaderTemplate>
         <DataTemplate>
-            <TextBlock
-                Foreground="Red"
-                FontWeight="SemiBold"
-                FontSize="16"
-                Text="{Binding}" />
+            <TextBlock Foreground="Red"
+                       FontWeight="SemiBold"
+                       FontSize="16"
+                       Text="{Binding}" />
         </DataTemplate>
     </editors:SfComboBox.HeaderTemplate>
 </editors:SfComboBox>
@@ -49,22 +47,20 @@ The `ComboBox` control description can be changed by using the [Description](htt
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfComboBox
-    Width="280"
-    Header="Favourite Social Media"
-    ItemsSource="{Binding SocialMedias}"
-    DisplayMemberPath="Name"
-    TextMemberPath="Name"
-    SelectedIndex="2"
-    Description="Instagram is an online photo sharing service."
-    x:Name="comboBox">
+<editors:SfComboBox x:Name="comboBox"
+                    Width="280"
+                    Header="Favourite Social Media"
+                    ItemsSource="{Binding SocialMedias}"
+                    DisplayMemberPath="Name"
+                    TextMemberPath="Name"
+                    SelectedIndex="2"
+                    Description="Instagram is an online photo sharing service.">
     <editors:SfComboBox.HeaderTemplate>
         <DataTemplate>
-            <TextBlock
-                Foreground="Red"
-                FontWeight="SemiBold"
-                FontSize="16"
-                Text="{Binding}" />
+            <TextBlock Foreground="Red"
+                       FontWeight="SemiBold"
+                       FontSize="16"
+                       Text="{Binding}" />
         </DataTemplate>
     </editors:SfComboBox.HeaderTemplate>
 </editors:SfComboBox>
@@ -81,13 +77,12 @@ You can prompt the user with any information by using the [PlaceholderText](http
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfComboBox
-    Width="250"
-    ItemsSource="{Binding SocialMedias}"
-    DisplayMemberPath="Name"
-    TextMemberPath="Name"
-    PlaceholderText="Select a social media"
-    x:Name="comboBox"/>
+<editors:SfComboBox x:Name="comboBox"
+                    Width="250"
+                    ItemsSource="{Binding SocialMedias}"
+                    DisplayMemberPath="Name"
+                    TextMemberPath="Name"
+                    PlaceholderText="Select a social media" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -106,14 +101,13 @@ The placeholder texts’ foreground can be changed by using the [PlaceholderFore
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfComboBox
-    Width="250"
-    ItemsSource="{Binding SocialMedias}"
-    DisplayMemberPath="Name"
-    TextMemberPath="Name"
-    PlaceholderForeground="Red"
-    PlaceholderText="Select a social media"
-    x:Name="comboBox"/>
+<editors:SfComboBox x:Name="comboBox"
+                    Width="250"
+                    ItemsSource="{Binding SocialMedias}"
+                    DisplayMemberPath="Name"
+                    TextMemberPath="Name"
+                    PlaceholderForeground="Red"
+                    PlaceholderText="Select a social media" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -134,15 +128,14 @@ N> `TextBoxStyle` will only have an effect in single selection editable mode.
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfComboBox
-    Width="250"
-    IsEditable="True"
-    SelectionMode="Single"
-    ItemsSource="{Binding SocialMedias}"
-    DisplayMemberPath="Name"
-    TextMemberPath="Name"
-    ShowClearButton="False"
-    x:Name="comboBox">
+<editors:SfComboBox x:Name="comboBox"
+                    Width="250"
+                    IsEditable="True"
+                    SelectionMode="Single"
+                    ItemsSource="{Binding SocialMedias}"
+                    DisplayMemberPath="Name"
+                    TextMemberPath="Name"
+                    ShowClearButton="False">
     <editors:SfComboBox.TextBoxStyle>
         <Style TargetType="TextBox">                   
             <Style.Setters>              
@@ -165,14 +158,13 @@ The `ComboBox` control allows you to customize the style of [ComboBoxItem](https
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfComboBox
-    Width="250"
-    IsEditable="True"
-    ItemsSource="{Binding SocialMedias}"
-    DisplayMemberPath="Name"
-    TextMemberPath="Name"
-    PlaceholderText="Select a social media"
-    x:Name="comboBox">
+<editors:SfComboBox x:Name="comboBox"
+                    Width="250"
+                    IsEditable="True"
+                    ItemsSource="{Binding SocialMedias}"
+                    DisplayMemberPath="Name"
+                    TextMemberPath="Name"
+                    PlaceholderText="Select a social media">
     <editors:SfComboBox.ItemContainerStyle>
         <Style TargetType="editors:SfComboBoxItem">
             <Setter Property="Foreground" Value="Red"/>
@@ -237,14 +229,13 @@ public class SocialMediaStyleSelector : StyleSelector
                                         MediaStyle2="{StaticResource MediaStyle2}"/>
     </Grid.Resources>
     <editors:SfComboBox x:Name="comboBox"
-        Width="250"
-        PlaceholderText="Select a social media"
-        IsEditable="True" 
-        ItemsSource="{Binding SocialMedias}"
-        ItemContainerStyleSelector="{StaticResource socialMediaStyleSelector}"
-        DisplayMemberPath="Name"
-        TextMemberPath="Name">
-    </editors:SfComboBox>
+                        Width="250"
+                        PlaceholderText="Select a social media"
+                        IsEditable="True" 
+                        ItemsSource="{Binding SocialMedias}"
+                        ItemContainerStyleSelector="{StaticResource socialMediaStyleSelector}"
+                        DisplayMemberPath="Name"
+                        TextMemberPath="Name" />
 </Grid>
 
 {% endhighlight %}
@@ -314,44 +305,38 @@ public class EmployeeViewModel
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfComboBox
-    x:Name="comboBox"
-    Width="250"
-    TextMemberPath="Name"
-    IsEditable="True"
-    ItemsSource="{Binding Employees}">
+<editors:SfComboBox x:Name="comboBox"
+                    Width="250"
+                    TextMemberPath="Name"
+                    IsEditable="True"
+                    ItemsSource="{Binding Employees}">
     <editors:SfComboBox.DataContext>
         <local:EmployeeViewModel/>
     </editors:SfComboBox.DataContext>
     <editors:SfComboBox.ItemTemplate>
         <DataTemplate>
-            <Grid
-                Margin="0,5"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch">
+            <Grid Margin="0,5"
+                  HorizontalAlignment="Stretch"
+                  VerticalAlignment="Stretch">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="48"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Image 
-                    Grid.Column="0"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center" 
-                    Source="{Binding ProfilePicture}" 
-                    Stretch="Uniform"/>
-                <StackPanel
-                    Grid.Column="1"
-                    Margin="15,0,0,0"
-                    HorizontalAlignment="Left"
-                    VerticalAlignment="Center">
-                    <TextBlock 
-                        Opacity="0.87"
-                        FontSize="14"
-                        Text="{Binding Name}"/>
-                    <TextBlock 
-                        Opacity="0.54"
-                        FontSize="12"
-                        Text="{Binding Designation}"/>
+                <Image Grid.Column="0"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center" 
+                       Source="{Binding ProfilePicture}" 
+                       Stretch="Uniform"/>
+                <StackPanel Grid.Column="1"
+                            Margin="15,0,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center">
+                    <TextBlock Opacity="0.87"
+                               FontSize="14"
+                               Text="{Binding Name}"/>
+                    <TextBlock Opacity="0.54"
+                               FontSize="12"
+                               Text="{Binding Designation}"/>
                 </StackPanel>
             </Grid>
         </DataTemplate>
@@ -501,20 +486,18 @@ public class EmployeeTemplateSelector : DataTemplateSelector
             </Grid>
         </DataTemplate>
 
-        <local:EmployeeTemplateSelector
-            x:Key="employeeTemplateSelector"
-            EmployeeTemplate1="{StaticResource employeeTemplate1}"
-            EmployeeTemplate2="{StaticResource employeeTemplate2}"/>
+        <local:EmployeeTemplateSelector x:Key="employeeTemplateSelector"
+                                        EmployeeTemplate1="{StaticResource employeeTemplate1}"
+                                        EmployeeTemplate2="{StaticResource employeeTemplate2}"/>
     </Grid.Resources>
     
-    <editors:SfComboBox 
-        Width="250" 
-        TextMemberPath="Name"
-        ItemsSource="{Binding Employees}"
-        PlaceholderText="Select an employee"
-        IsEditable="True"            
-        ItemTemplateSelector="{StaticResource employeeTemplateSelector}"
-        x:Name="comboBox">
+    <editors:SfComboBox x:Name="comboBox"
+                        Width="250" 
+                        TextMemberPath="Name"
+                        ItemsSource="{Binding Employees}"
+                        PlaceholderText="Select an employee"
+                        IsEditable="True"            
+                        ItemTemplateSelector="{StaticResource employeeTemplateSelector}">
         <editors:SfComboBox.DataContext>
             <local:EmployeeViewModel/>
         </editors:SfComboBox.DataContext>
@@ -817,10 +800,9 @@ public class CountryTemplateSelector : DataTemplateSelector
             </Grid>
         </DataTemplate>
 
-        <local:CountryTemplateSelector
-            x:Key="countryTemplateSelector"
-            CountryTemplate1="{StaticResource countryTemplate1}"
-            CountryTemplate2="{StaticResource countryTemplate2}"/>
+        <local:CountryTemplateSelector x:Key="countryTemplateSelector"
+                                       CountryTemplate1="{StaticResource countryTemplate1}"
+                                       CountryTemplate2="{StaticResource countryTemplate2}"/>
     </Grid.Resources>
     
     <editors:SfComboBox SelectionMode="Multiple"
@@ -850,8 +832,7 @@ The maximum height of the drop-down can be changed by using the [MaxDropDownHeig
                     MaxDropDownHeight="208"
                     ItemsSource="{Binding SocialMedias}"
                     DisplayMemberPath="Name"
-                    TextMemberPath="Name">
-</editors:SfComboBox>
+                    TextMemberPath="Name" />
 
 {% endhighlight %}
 {% highlight C# %}
