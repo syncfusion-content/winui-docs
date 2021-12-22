@@ -22,13 +22,10 @@ The selected item can be changed interactively by selecting from the drop-down l
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfComboBox
-    IsEditable="True"
-    Width="250"
-    ItemsSource="{Binding SocialMedias}"
-    DisplayMemberPath="Name"
-    TextMemberPath="Name"
-    x:Name="comboBox" />
+<editors:SfComboBox IsEditable="True"
+                    ItemsSource="{Binding SocialMedias}"
+                    DisplayMemberPath="Name"
+                    TextMemberPath="Name" />
 
 {% endhighlight %}
 {% endtabs %}
@@ -42,14 +39,12 @@ The selected item can be changed programmatically by using the `SelectedItem` or
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfComboBox
-    Width="250"
-    IsEditable="True"
-    ItemsSource="{Binding SocialMedias}"
-    DisplayMemberPath="Name"
-    TextMemberPath="Name"
-    SelectedIndex="2"
-    x:Name="comboBox" />
+<editors:SfComboBox x:Name="comboBox"
+                    IsEditable="True"
+                    ItemsSource="{Binding SocialMedias}"
+                    DisplayMemberPath="Name"
+                    TextMemberPath="Name"
+                    SelectedIndex="2" />
 
 {% endhighlight %}
 
@@ -72,16 +67,14 @@ The [SelectionChangeTrigger](https://help.syncfusion.com/cr/winui/Syncfusion.UI.
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfComboBox
-    IsEditable="True"
-    Width="250"
-    Margin="0,0,0,250"
-    ItemsSource="{Binding SocialMedias}"
-    SelectionChangeTrigger="Always"
-    DisplayMemberPath="Name"
-    TextMemberPath="Name"
-    SelectionChanged="OnComboBoxSelectionChanged"
-    x:Name="comboBox" />
+<editors:SfComboBox IsEditable="True"
+                    Width="250"
+                    Margin="0,0,0,250"
+                    ItemsSource="{Binding SocialMedias}"
+                    SelectionChangeTrigger="Always"
+                    DisplayMemberPath="Name"
+                    TextMemberPath="Name"
+                    SelectionChanged="OnComboBoxSelectionChanged" />
 
 {% endhighlight %}
 
@@ -97,7 +90,6 @@ private async  void OnComboBoxSelectionChanged(object sender, ComboBoxSelectionC
 
     cd.XamlRoot = this.Content.XamlRoot;
     var result = await cd.ShowAsync();
-
 }
 
 {% endhighlight %}
@@ -293,7 +285,6 @@ private async  void OnComboBoxSelectionChanged(object sender, ComboBoxSelectionC
 
     cd.XamlRoot = this.Content.XamlRoot;
     var result = await cd.ShowAsync();
-
 }
 
 {% endhighlight %}

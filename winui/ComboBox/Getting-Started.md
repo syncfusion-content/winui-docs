@@ -327,29 +327,29 @@ N> `SelectionBoxItemTemplate` has no effect when `IsEditable` is `true`.
         <SolidColorBrush x:Key="SyncfusionComboBoxBackgroundFocused" 
                          Color="LightCyan" />
     </Grid.Resources>
-
-   <editors:SfComboBox x:Name="comboBox"
-                    Width="250"
-                    Padding="0"
-                    SelectionMode="Multiple"
-                    ItemsSource="{Binding SocialMedias}"
-                    DisplayMemberPath="Name"
-                    Background="LightCyan"
-                    TextMemberPath="Name">
-      <editors:SfComboBox.SelectionBoxItemTemplate>
-         <DataTemplate>
-            <StackPanel Orientation="Horizontal" Background="LightCyan">
-                <TextBlock Margin="12,5,0,6" 
-                           FontFamily="{ThemeResource ContentControlThemeFontFamily}"
-                           FontSize="{ThemeResource ControlContentThemeFontSize}"
-                           Text="Selected Social Media Count:" />
-                <TextBlock Margin="2,5,0,0"
-                           FontFamily="{ThemeResource ContentControlThemeFontFamily}"
-                           FontSize="{ThemeResource ControlContentThemeFontSize}"
-                           Text="{Binding ElementName=comboBox, Path=SelectedItems.Count}" />
-            </StackPanel>
-         </DataTemplate>
-      </editors:SfComboBox.SelectionBoxItemTemplate>
+    
+    <editors:SfComboBox x:Name="comboBox"
+                        Width="250"
+                        Padding="0"
+                        SelectionMode="Multiple"
+                        ItemsSource="{Binding SocialMedias}"
+                        DisplayMemberPath="Name"
+                        Background="LightCyan"
+                        TextMemberPath="Name">
+        <editors:SfComboBox.SelectionBoxItemTemplate>
+            <DataTemplate>
+                <StackPanel Orientation="Horizontal" Background="LightCyan">
+                    <TextBlock Margin="12,5,0,6" 
+                               FontFamily="{ThemeResource ContentControlThemeFontFamily}"
+                               FontSize="{ThemeResource ControlContentThemeFontSize}"
+                               Text="Selected Social Media Count:" />
+                    <TextBlock Margin="2,5,0,0"
+                               FontFamily="{ThemeResource ContentControlThemeFontFamily}"
+                               FontSize="{ThemeResource ControlContentThemeFontSize}"
+                               Text="{Binding ElementName=comboBox, Path=SelectedItems.Count}" />
+                </StackPanel>
+            </DataTemplate>
+        </editors:SfComboBox.SelectionBoxItemTemplate>
     </editors:SfComboBox>
 </Grid>
 
