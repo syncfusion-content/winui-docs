@@ -90,20 +90,18 @@ public class VegetablesViewModel
         <local:VegetablesViewModel/>
     </Grid.DataContext>
     <Grid.Resources>
-        <CollectionViewSource 
-            x:Name="VegetablesCollection" 
-            Source="{Binding Vegetables}"
-            IsSourceGrouped="True"/>
+        <CollectionViewSource x:Name="VegetablesCollection"
+                              Source="{Binding Vegetables}"
+                              IsSourceGrouped="True"/>
     </Grid.Resources>
-    <editors:SfComboBox 
-        x:Name="comboBox"
-        Width="250"
-        IsEditable="True"
-        PlaceholderText="Select a vegetable"
-        MaxDropDownHeight="435"
-        TextMemberPath="Name"
-        DisplayMemberPath="Name"
-        ItemsSource="{x:Bind VegetablesCollection.View, Mode=OneWay}">
+    <editors:SfComboBox x:Name="comboBox"
+                        Width="250"
+                        IsEditable="True"
+                        PlaceholderText="Select a vegetable"
+                        MaxDropDownHeight="435"
+                        TextMemberPath="Name"
+                        DisplayMemberPath="Name"
+                        ItemsSource="{x:Bind VegetablesCollection.View, Mode=OneWay}">
         <editors:SfComboBox.GroupStyle>
             <GroupStyle>
                 <GroupStyle.HeaderTemplate>
