@@ -99,9 +99,14 @@ The Syncfusion WinUI Controls are the suite, ever needed to create state of art 
 		</td>
 	</tr>
 	<tr>
-	    <td rowspan="7" valign="top">
+	    <td rowspan="8" valign="top">
 			EDITORS<br/>
 		</td>	
+		<td>
+			<a href="https://help.syncfusion.com/winui/autocomplete/getting-started">AutoComplete</a><br/>
+		</td>
+	</tr>
+	<tr>
 		<td>
 			<a href="https://help.syncfusion.com/winui/combobox/getting-started">ComboBox</a><br/>
 		</td>
@@ -189,7 +194,30 @@ The Syncfusion WinUI Controls are the suite, ever needed to create state of art 
 		<td>
 			<a href="https://help.syncfusion.com/winui/rangeslider/getting-started">Range Slider</a><br/>
 		</td>
+	</tr>
+	<tr>
+		<td rowspan="4" valign="top">
+			FILE FORMATS<br/>
+		</td>
+		<td>
+			<a>Excel</a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a>PDF</a><br/>
+		</td>
 	</tr>	
+	<tr>
+		<td>
+			<a>Word</a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a>PowerPoint</a><br/>
+		</td>
+	</tr>
 </table>
 
 ## Support and feedback
