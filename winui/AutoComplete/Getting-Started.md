@@ -225,10 +225,10 @@ autoComplete.TextMemberPath = "Name";
 {% endhighlight %}
 {% endtabs %}
 
-### TextSearchMode="StartWith"
+**TextSearchMode="StartWith"**
 
 ![WinUI AutoComplete filters the items based on starting letters.](GettingStarted_images/winui-autocomplete-startwith-filtering.gif)
 
-### TextSearchMode="Contains"
+**TextSearchMode="Contains"**
 
 ![WinUI AutoComplete filters the items based on starting letters.](GettingStarted_images/winui-autocomplete-contains-filtering.gif)

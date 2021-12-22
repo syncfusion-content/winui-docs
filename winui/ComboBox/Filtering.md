@@ -123,7 +123,7 @@ comboBox.TextSearchMode = ComboBoxTextSearchMode.StartsWith;
 
 ![WinUI ComboBox filter the items based on starting text](Filtering_images/winui-combobox-filtering-start-text.gif)
 
-N> To disable the auto appending and highlighting feature, set [IsTextSearchEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsTextSearchEnabled) property as `false`.
+N> To disable the auto appending and highlighting feature, set the [IsTextSearchEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsTextSearchEnabled) property as `false`.
 
 ### Filter with contains text
 
@@ -155,11 +155,11 @@ N> Auto appending of the first suggested item text to typed input is not support
 
 ### Custom filtering
 
-The ComboBox control provides support to apply your own custom filter logic to suggests the items based on your filter criteria by using the [FilterBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_FilterBehavior) property. The default value of `FilterBehavior` is `null`.
+The ComboBox control provides support to apply your own custom filter logic to suggest the items based on your filter criteria by using the [FilterBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_FilterBehavior) property. The default value of `FilterBehavior` is `null`.
 
-Now, lets create custom filtering class to apply our own filter logic to ComboBox control by following steps.
+Now, let us create custom filtering class to apply our own filter logic to ComboBox control by the following steps.
 
-**Step 1:** Create a class that derives from the [IComboBoxFilterBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.ComboBoxFilterBehavior.html) interface. 
+**Step 1:** Create a class that derives from the [IComboBoxFilterBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.IComboBoxFilterBehavior.html) interface. 
 
 {% tabs %}
 {% highlight C# %}
@@ -175,12 +175,12 @@ public class CityFilteringBehavior : IComboBoxFilterBehavior
 {% endhighlight %}
 {% endtabs %}
 
-**Step 2:** Then, implement the [GetMatchingIndexes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.ComboBoxFilterBehavior.html#Syncfusion_UI_Xaml_Editors_ComboBoxFilterBehavior_GetMatchingIndexes_Syncfusion_UI_Xaml_Editors_SfComboBox_Syncfusion_UI_Xaml_Editors_ComboBoxFilterInfo_) method of IComboBoxFilterBehavior interface to create your own suggestion list (containing the indices of the filtered items) based on the text entered in the ComboBox control that needs to be shown in drop-down. The `GetMatchingIndexes` method contains following arguments.
+**Step 2:** Then, implement the [GetMatchingIndexes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.IComboBoxFilterBehavior.html#Syncfusion_UI_Xaml_Editors_IComboBoxFilterBehavior_GetMatchingIndexes_Syncfusion_UI_Xaml_Editors_SfComboBox_Syncfusion_UI_Xaml_Editors_ComboBoxFilterInfo_) method of IComboBoxFilterBehavior interface to create your own suggestion list (containing the indices of the filtered items) based on the text entered in the ComboBox control that needs to be shown in drop-down. The `GetMatchingIndexes` method contains following arguments:
 
 * [source](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html) - The owner of the filter behavior, which holds information about ItemsSource, Items properties, and so on.
-* [filterInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.ComboBoxFilterInfo.html) - Contains details about the text entered in ComboBox control. Using this text, you can prepare suggestion list which gets displayed in drop down list. 
+* [filterInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.ComboBoxFilterInfo.html) - Contains details about the text entered in ComboBox control. Using this text, you can prepare a suggestion list, which gets displayed in the drop-down list. 
 
-The following code demonstrates how to filter the cities based on the city or country name entered in ComboBox control.
+The following code demonstrates how to filter the cities based on the city or country name entered in the ComboBox control.
 
 {% tabs %}
 {% highlight C# %}
@@ -210,7 +210,7 @@ public class CityFilteringBehavior : IComboBoxFilterBehavior
 {% endhighlight %}
 {% endtabs %}
 
-**Step3:** Applying custom filtering to ComboBox control by using the `FilterBehavior` property. 
+**Step3:** Apply custom filtering to the ComboBox control by using the `FilterBehavior` property. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -228,6 +228,6 @@ public class CityFilteringBehavior : IComboBoxFilterBehavior
 {% endhighlight %}
 {% endtabs %}
 
-The following gif demonstrates displaying the cities in drop-down based on the country name entered in the ComboBox control.
+The following gif demonstrates how to display the cities in drop-down based on the country name entered in the ComboBox control.
 
 ![WinUI ComboBox filter the items based on custom filtering logic](Filtering_images/winui-combobox-custom-filtering.gif)
