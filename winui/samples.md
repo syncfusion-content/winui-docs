@@ -21,23 +21,11 @@ C:\Program Files (x86)\Syncfusion\Essential Studio\WinUI\{{ site.releaseversion 
 
 N> In the above section, latest Essential Studio version details has been provided. Refer installed Essential Studio version instead of mentioned version.
 
-## WinUI sample browser
+## Syncfusion Controls Gallery for WinUI Desktop
 
-The Syncfusion `WinUI Sample Browser` is available for both the WinUI `UWP` and `Desktop` environments.
-
-### WinUI UWP
-
-The WinUI UWP project can be explored in the Visual Studio by clicking `Run Local Demos` and selecting `UWP` to open the `WinUI Sample Browser`.
-
-![Explore Syncfusion WinUI Demos with UWP Project](Guide-to-run-the-samples-images/exploring-winui-uwp-sample-browser.png)
-
-![Syncfusion WinUI Sample Browser with UWP Project](Guide-to-run-the-samples-images/syncfusion-winui-uwp-sample-browser.png)
-
-### WinUI Desktop
-
-The WinUI desktop project can be explored in the Visual Studio by clicking `Run Local Demos` and selecting `Desktop` to open the `WinUI Sample Browser`.
+The Syncfusion WinUI desktop controls can be explored in the Visual Studio by clicking `Run Local Demos`.
  
- ![Explore Syncfusion WinUI Demos with Desktop Project](Guide-to-run-the-samples-images/exploring-winui-desktop-sample-browser.png)
+ ![Explore Syncfusion WinUI Demos with Desktop Project](Guide-to-run-the-samples-images/exploring-winui-desktop-sample-browser-new.png)
 
 ![Syncfusion WinUI Sample Browser with Desktop Project](Guide-to-run-the-samples-images/syncfusion-winui-desktop-sample-browser.png)
 
@@ -51,17 +39,18 @@ For example, below there is a demonstration to run an individual `Chart` control
 
 ![Exploring the Syncfusion WinUI individual control project](Guide-to-run-the-samples-images/exploring-individual-control-project.png)
 
-* Open a standalone executable project either UWP or desktop (not a lib project) in the Visual Studio which is available under the category name.
+* Open a standalone executable project desktop (not a lib project) in the Visual Studio which is available under the category name.
 
- ![Open the standalone WinUI project in Visual Studio](Guide-to-run-the-samples-images/open-standalone-winui-project-in-visual-studio.png)
+ ![Open the standalone WinUI project in Visual Studio](Guide-to-run-the-samples-images/open-standalone-winui-project-in-visual-studio-new.png)
 
 * Build and deploy the individual control executable project and run the application.
 
-![Running an individual control project](Guide-to-run-the-samples-images/run-induvidual-control-project.png)  
+![Running an individual control project](Guide-to-run-the-samples-images/run-induvidual-control-project.png)
 
-## Online samples
+## Online Sample
 
-* Download and install `WinUI` demos from [App Center](https://install.appcenter.ms/orgs/syncfusion-demos/apps/winui-demos/distribution_groups/release).
+* Download and install demos from [Microsoft Store](https://www.microsoft.com/en-in/p/syncfusion-winui-controls-gallery/9n0fp16ddc06?activetab=pivot:overviewtab).
+
 
 ## Download demos from online (clone from github repository)
 

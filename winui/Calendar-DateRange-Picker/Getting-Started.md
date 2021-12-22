@@ -57,7 +57,7 @@ To add `Calendar DateRange Picker` control manually in XAML , follow the below s
 
 To add `Calendar DateRange Picker` control manually in C# , follow the below steps.
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2.  Download and refer the following NuGet in the project.
 
     * [Syncfusion.Calendar.WinUI](https://www.nuget.org/packages/Syncfusion.Calendar.WinUI)
@@ -128,6 +128,83 @@ SfCalendarDateRangePicker sfCalendarDateRangePicker= new SfCalendarDateRangePick
 {% endtabs %}
 
 ![WinUI Interactive Selected Date Range](Getting-Started_images/winui-interactive-selected-date-range.gif)
+
+## Header and description
+This section explains about `header` and `description` properties of CalendarDateRangePicker.
+### Header
+The `Header` property is used to display the title for the `CalendarDateRangePicker` Control.
+     
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfCalendarDateRangePicker x:Name="CalendarDateRangePicker" 
+                                   Header="Select the dates" 
+                                   Width="300" 
+                                   Height="70" />
+
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfCalendarDateRangePicker dateRangePicker = new SfCalendarDateRangePicker();
+dateRangePicker.Header = "Select the dates";
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI Calendar DateRange Picker with Header](Getting-Started_images/winui-calendar-daterange-picker-header.png)
+
+#### Header customization
+By using the controls `HeaderTemplate` property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfCalendarDateRangePicker  Width="250" Height="75">
+            <editors:SfCalendarDateRangePicker.HeaderTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                         <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE163;"/>
+                        <TextBlock Text="Training Dates" FontSize="14" Margin="5"/>
+                    </StackPanel>
+                </DataTemplate>
+            </editors:SfCalendarDateRangePicker.HeaderTemplate>
+        </editors:SfCalendarDateRangePicker>
+
+
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI Calendar DateRange Picker with Header Template](Getting-Started_images/winui-calendar-daterange-picker-headertemplate.png)
+
+
+### Description
+The `Description` support is used to display the content beneath the control as well as to provide guidance on the input that the control expects.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfCalendarDateRangePicker x:Name="CalendarDateRangePicker" 
+                                   Header="Select the dates" 
+                                   Width="300" 
+                                   Height="70" 
+                                   Description="The range should be greater than 5 days."/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfCalendarDateRangePicker dateRangePicker = new SfCalendarDateRangePicker();
+ dateRangePicker.Description = "The range should be greater than 5 days.";
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI Calendar DateRange Picker with Description](Getting-Started_images/winui-calendar-daterange-picker-description.png)
+
 
 ## Setting watermark text
 

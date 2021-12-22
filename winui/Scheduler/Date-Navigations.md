@@ -126,4 +126,39 @@ this.Schedule.AllowViewNavigation = true;
 
 N>
 * The `AllowViewNavigation` is not applicable for the day and timeline day views.
-* If the [ShowAgendaView](https://help.syncfusion.com/winui/scheduler/month-view#month-agenda-view) is true in a month view, the month view should navigate to the day view by single-clicking on the agenda date view header, otherwise the month view should navigate to the day view by single-clicking on the date in month cell.
+* If the [ShowAgendaView](https://help.syncfusion.com/winui/scheduler/month-view#month-agenda-view) is true in a month view, the month view should navigate to the day view by single-clicking on the agenda date view header, otherwise, the month view should navigate to the day view by single-clicking on the date in a month cell.
+
+## Show date picker
+You can enable the date picker for the scheduler by using the [ShowDatePickerButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ShowDatePickerButton) property in the [scheduler,](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) which displays the date picker and `Today` button in the header view. It allows you to quickly navigate to today and different scheduler views.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule" 
+                        ViewType="Week"
+                        ShowDatePickerButton="True">
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% highlight c#%}
+this.Schedule.ViewType = SchedulerViewType.Week;
+this.Schedule.ShowDatePickerButton = true;
+{% endhighlight %}
+{% endtabs %}
+
+![Show date picker in WinUI scheduler header](Date-Navigations-Images/Show-Date-Picker.png)
+
+N> The header `DatePicker` uses the calendar for your app's default language, or you can set the [CalendarIdentifier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CalendarIdentifier) property to a scheduler to use a specific calendar system. If the `CalendarIdentifier` is not set the scheduler uses the default calendar for the application’s preferred language.
+
+## Allowed views
+You can quickly navigate to the different scheduler views by using the [AllowedViewTypes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AllowedViewTypes) property in the [SfScheduler.](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) The views set to this property will display as a view button in the scheduler header view. This UI will be responsive as showing more icons and will be updated based on the window size change.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule" 
+                        AllowedViewTypes="Month,Week,WorkWeek,Day,TimelineDay,TimelineWeek,TimelineWorkWeek,TimelineMonth" >
+{% endhighlight %}
+{% highlight c#%}
+this.Schedule.AllowedViewTypes = AllowedSchedulerViewTypes.Week | AllowedSchedulerViewTypes.WorkWeek | AllowedSchedulerViewTypes.Day | AllowedSchedulerViewTypes.Month | AllowedSchedulerViewTypes.TimelineDay | AllowedSchedulerViewTypes.TimelineMonth | AllowedSchedulerViewTypes.TimelineWeek | AllowedSchedulerViewTypes.TimelineWorkWeek;
+{% endhighlight %}
+{% endtabs %}
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/AllowedViews)

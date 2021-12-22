@@ -479,3 +479,5 @@ The following chart is created as a result of the previous codes.
 ![Getting Started WinUI Chart](Getting-Started_images/img3.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI)
+
+N> You can refer to our [WinUI Charts](https://www.syncfusion.com/winui-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Charts example](https://github.com/syncfusion/winui-demos/tree/master/chart) that shows how to render various chart types as well as how to easily configure with built-in support for creating stunning visual effects.

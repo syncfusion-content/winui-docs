@@ -9,9 +9,9 @@ documentation: ug
 
 # Installation using Web Installer
 
-You can refer to the [**Download**](https://help.syncfusion.com/winui/installation-and-upgrade/download) section to learn how to get the WinUI trial or licensed installer.
+You can refer to the [**Download**](https://help.syncfusion.com/winui/installation/download) section to learn how to get the WinUI trial or licensed installer.
 
-### Overview
+## Overview
 
 For the Essential Studio WinUI product, Syncfusion offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer [here](https://www.syncfusion.com/downloads/latest-version). 
 

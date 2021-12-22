@@ -107,7 +107,7 @@ You can create a tree view by binding the ItemsSource to a hierarchical data sou
 
 public class NodeWithImageViewModel
 {
-    public ObservableCollection<Folder> Folders { get; internal set; }
+    public ObservableCollection<Folder> Folders { get; set; }
 
     private ResourceDictionary CommonResourceDictionary { get; set; }
 
@@ -218,7 +218,7 @@ public class Folder : NotificationObject
     public ObservableCollection< Folder> Files
     {
         get { return files; }
-        internal set
+        set
         {
             files = value;
             RaisePropertyChanged(nameof(Files));
@@ -309,11 +309,11 @@ public class NodeWithImageViewModel
         this.Folders = GetFiles();
     }
 
-    public ObservableCollection<Folder> Folders { get; internal set; }
+    public ObservableCollection<Folder> Folders { get; set; }
 
-    public ObservableCollection<File> Files { get; internal set; }
+    public ObservableCollection<File> Files { get; set; }
 
-    public ObservableCollection<SubFile> SubFiles { get; internal set; }
+    public ObservableCollection<SubFile> SubFiles { get; set; }
 
     private ResourceDictionary CommonResourceDictionary { get; set; }
         
@@ -417,7 +417,7 @@ public class Folder : NotificationObject
     public ObservableCollection<File> Files
     {
         get { return files; }
-        internal set
+        set
         {
             files = value;
             RaisePropertyChanged(nameof(Files));
@@ -457,7 +457,7 @@ public class File : NotificationObject
     public ObservableCollection<SubFile> SubFiles
     {
         get { return subFiles; }
-        internal set
+        set
         {
             subFiles = value;
             RaisePropertyChanged(nameof(SubFiles));

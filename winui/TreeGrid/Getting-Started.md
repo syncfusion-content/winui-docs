@@ -444,10 +444,26 @@ Property of type Bool
 </tr>
 <tr>
 <td>
+TreeGridDateColumn
+</td>
+<td>
+Property of type DateTimeOffset
+</td>
+</tr>
+<tr>
+<td>
 TreeGridHyperLinkColumn
 </td>
 <td>
 Property of type Uri
+</td>
+</tr>
+<tr>
+<td>
+TreeGridNumericColumn
+</td>
+<td>
+Property of type DateTimeOffset
 </td>
 </tr>
 </table>
@@ -490,7 +506,7 @@ Comments
 </tr>
 <tr>
 <td>
-GridTextColumn
+TreeGridTextColumn
 </td>
 <td>
 Represents SfTreeGrid column that hosts textual content in its cells.
@@ -498,7 +514,7 @@ Represents SfTreeGrid column that hosts textual content in its cells.
 </tr>
 <tr>
 <td>
-GridComboBoxColumn
+TreeGridComboBoxColumn
 </td>
 <td>
 Represents SfTreeGrid column that hosts <code>ComboBox</code> controls in its cells.
@@ -506,7 +522,7 @@ Represents SfTreeGrid column that hosts <code>ComboBox</code> controls in its ce
 </tr>
 <tr>
 <td>
-GridCheckBoxColumn
+TreeGridCheckBoxColumn
 </td>
 <td>
 Represents SfTreeGrid column that hosts <code>CheckBox</code> controls in its cells.
@@ -514,7 +530,15 @@ Represents SfTreeGrid column that hosts <code>CheckBox</code> controls in its ce
 </tr>
 <tr>
 <td>
-GridHyperlinkColumn
+TreeGridDateColumn
+</td>
+<td>
+Represents SfTreeGrid column that hosts {{'[SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html)'| markdownify }} controls in its cells which is used to display and format Date values.
+</td>
+</tr>
+<tr>
+<td>
+TreeGridHyperlinkColumn
 </td>
 <td>
 Represents SfTreeGrid column that hosts <code>HyperlinkButton</code> controls in its cells.
@@ -522,10 +546,26 @@ Represents SfTreeGrid column that hosts <code>HyperlinkButton</code> controls in
 </tr>
 <tr>
 <td>
-GridTemplateColumn
+TreeGridNumericColumn
+</td>
+<td>
+Represents SfTreeGrid column that hosts {{'[SfNumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html)'| markdownify }} controls in its cells which is used to format and display Numeric values.
+</td>
+</tr>
+<tr>
+<td>
+TreeGridTemplateColumn
 </td>
 <td>
 Represents SfTreeGrid column that hosts template-specified content in its cells
+</td>
+</tr>
+<tr>
+<td>
+TreeGridTimeColumn
+</td>
+<td>
+Represents SfTreeGrid column that hosts {{'[SfTimePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html)'| markdownify }} controls in its cells which is used to format and display Time values.
 </td>
 </tr>
 </table>

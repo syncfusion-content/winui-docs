@@ -322,7 +322,7 @@ this.sfDataGrid.IndentColumnWidth = 50;
 
 ### GroupDropArea text
 
-You can change the `GroupDropArea’s` text can by setting [SfDataGrid.GroupDropAreaText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_GroupDropAreaText) property.
+You can change the `GroupDropArea’s` text by setting [SfDataGrid.GroupDropAreaText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_GroupDropAreaText) property.
 
 {% tabs %}
 {% highlight xaml %}

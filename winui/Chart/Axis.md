@@ -18,7 +18,7 @@ Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the fo
 * Numeric
 * Date time
 
-The following are the API’s in ChartAxis:
+The following are the API’s in [ChartAxis](https://www.syncfusion.com/winui-controls/charts/chart-axis):
 
 * [`ArrangeRect`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ArrangeRect) – Represents the bounds of chart axis size. 
 * [`VisibleRange`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleRange) – Represent the axis start and end values.

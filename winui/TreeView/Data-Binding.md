@@ -56,7 +56,7 @@ public class Folder : NotificationObject
     public ObservableCollection< Folder> Files
     {
         get { return files; }
-        internal set
+        set
         {
             files = value;
             RaisePropertyChanged(nameof(Files));
@@ -90,7 +90,7 @@ Create a model repository class with ImageNodeInfo collection property initializ
 
 public class NodeWithImageViewModel
 {
-    public ObservableCollection<Folder> Folders { get; internal set; }
+    public ObservableCollection<Folder> Folders { get; set; }
 
     private ResourceDictionary CommonResourceDictionary { get; set; }
 
