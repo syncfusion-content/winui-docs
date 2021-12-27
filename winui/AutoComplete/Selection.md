@@ -147,6 +147,46 @@ private async void OnSelectionChanged(object sender, AutoCompleteSelectionChange
 
 ![SelectionChanged event triggered while selecteditem changed in WinUI AutoComplete.](Selection_images/winui-AutoComplete-selectionchanged.gif)
 
+## Get the selected value
+
+Value of the `SelectedItem` can be retrieved by using the [SelectedValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_SelectedValue) property. It returns the property value bind to the [SelectedValuePath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_SelectedValuePath) property. If the `SelectedValuePath` is not initialized, it will return the root data item. The default value of `SelectedValue` and `SelectedValuePath` is `null`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfAutoComplete 
+    SelectedValuePath="Name"
+    x:Name="autoComplete"
+    TextMemberPath="Name"   
+    DisplayMemberPath="Name"
+    ItemsSource="{Binding SocialMedias}" 
+    SelectionChanged="OnSelectionChanged"/>
+
+<TextBlock Text="SelectedValue :"/>
+<TextBlock x:Name="selectedValue"/>
+
+{% endhighlight %}
+
+{{% highlight C# %}
+
+autoComplete.SelectionChanged += OnSelectionChanged;
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight C# %}
+
+private void OnSelectionChanged(object sender, AutoCompleteSelectionChangedEventArgs e)
+{
+    selectedValue.Text = autoComplete.SelectedValue.ToString();
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI AutoComplete with selected value](Selection_images/winui-autoComplete-selectedvalue.png)
+
 
 ## Handle invalid input 
 

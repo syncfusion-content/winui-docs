@@ -195,70 +195,7 @@ public class EmployeeViewModel
             ID = "E002",
             Country = "England",
         });
-        this.Employees.Add(new Employee
-        {
-            Name = "Emilio Alvaro",
-            ProfilePicture = new BitmapImage(new Uri(@"ms-appx:///Assets/AutoComplete/Employees/Employee5.png", UriKind.RelativeOrAbsolute)),
-            Designation = "Product Manager",
-            ID = "E003",
-            Country = "England",
-        });
-        this.Employees.Add(new Employee
-        {
-            Name = "Janet Leverling",
-            ProfilePicture = new BitmapImage(new Uri(@"ms-appx:///Assets/AutoComplete/Employees/Employee3.png", UriKind.RelativeOrAbsolute)),
-            Designation = "HR",
-            ID = "E004",
-            Country = "USA",
-        });
-        this.Employees.Add(new Employee
-        {
-            Name = "Laura Callahan",
-            ProfilePicture = new BitmapImage(new Uri(@"ms-appx:///Assets/AutoComplete/Employees/Employee2.png", UriKind.RelativeOrAbsolute)),
-            Designation = "Product Manager",
-            ID = "E005",
-            Country = "USA",
-        });
-        this.Employees.Add(new Employee
-        {
-            Name = "Margaret Peacock",
-            ProfilePicture = new BitmapImage(new Uri(@"ms-appx:///Assets/AutoComplete/Employees/Employee6.png", UriKind.RelativeOrAbsolute)),
-            Designation = "Developer",
-            ID = "E006",
-            Country = "USA",
-        });
-        this.Employees.Add(new Employee
-        {
-            Name = "Michael Suyama",
-            ProfilePicture = new BitmapImage(new Uri(@"ms-appx:///Assets/AutoComplete/Employees/Employee9.png", UriKind.RelativeOrAbsolute)),
-            Designation = "Team Lead",
-            ID = "E007",
-            Country = "USA",
-        });
-        this.Employees.Add(new Employee
-        {
-            Name = "Nancy Davolio",
-            ProfilePicture = new BitmapImage(new Uri(@"ms-appx:///Assets/AutoComplete/Employees/Employee4.png", UriKind.RelativeOrAbsolute)),
-            Designation = "Developer",
-            ID = "E008",
-            Country = "USA",
-        });
-        this.Employees.Add(new Employee
-        {
-            Name = "Robert King",
-            ProfilePicture = new BitmapImage(new Uri(@"ms-appx:///Assets/AutoComplete/Employees/Employee8.png", UriKind.RelativeOrAbsolute)),
-            Designation = "Developer",
-            ID = "E009",
-            Country = "England",
-        });
-        this.Employees.Add(new Employee
-        {
-            Name = "Steven Buchanan",
-            ProfilePicture = new BitmapImage(new Uri(@"ms-appx:///Assets/AutoComplete/Employees/Employee10.png", UriKind.RelativeOrAbsolute)),
-            Designation = "CEO",
-            ID = "E010",
-            Country = "England",
-        });
+        ...
     }
 }
 
@@ -429,7 +366,7 @@ public class EmployeeTemplateSelector : DataTemplateSelector
 
 ![Different custom UI of dropdown items using ItemTemplateSelector](Styling_images/winui-autocomplete-custom-itemtemplate.png)
 
-## Styling AutoCompleteTokenItem
+## Styling token items
 
 The `AutoComplete` control allows you to customize the style of [AutoCompleteTokenItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteTokenItem.html), generated in selection area by using the `TokenItemStyle` property. The default value of [TokenItemStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemStyle) is `null`. 
 
@@ -454,7 +391,7 @@ The `AutoComplete` control allows you to customize the style of [AutoCompleteTok
 
 ![Custom UI of AutoCompleteTokenItem using TokenItemStyle](Styling_images/winui-autocomplete-tokenitemstyle.png)
 
-### Style AutoCompleteTokenItem based on condition   
+### Styling token items based on condition   
 
 The `AutoComplete` control allows you to customize the style of `AutoCompleteTokenItem` conditionally based on its content by using the [TokenItemStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemStyleSelector) property. The default value of `TokenItemStyleSelector` is `null`. 
 
