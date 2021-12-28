@@ -347,3 +347,67 @@ public class CapitalCitySearchingBehavior : IAutoCompleteSearchBehavior
 The following gif demonstrates selecting the capital city in drop-down based on the country name entered in the `AutoComplete` control.
 
 ![WinUI AutoComplete filter the items based on custom filtering and searching logic.](Searching_images/winui-autocomplete-custom-filtering-searching.gif)
+
+## Load asynchronous items
+
+To load data asynchronously at runtime based on typed input, use the `CustomFilter` property in the AutoComplete control.
+
+**Step 1:** Create a class that derives from the `IAutoCompleteFilterBehavior` interface and add yourcustom filter logic in `GetMatchingItemsAsync` method to load the run time items based on typed input.
+
+{% tabs %}
+{% highlight C# %}
+
+public class CustomAsyncFilter : IAutoCompleteFilterBehavior
+{
+    /// <summary>
+    /// Gets the cancellation token source.
+    /// </summary>
+    CancellationTokenSource cancellationTokenSource;
+
+    public async Task<object> GetMatchingItemsAsync(SfAutoComplete source, AutoCompleteFilterInfo filterInfo)
+    {
+        if (this.cancellationTokenSource != null)
+        {
+            this.cancellationTokenSource.Cancel();
+            this.cancellationTokenSource.Dispose();
+        }
+
+        this.cancellationTokenSource = new CancellationTokenSource();
+        CancellationToken token = this.cancellationTokenSource.Token;
+
+        return await Task.Run(() =>
+        {
+            List<string> list = new List<string>();
+            for (int i = 0; i < 100000; i++)
+            {
+                list.Add(filterInfo.Text + i);
+            }
+
+            return list;
+        }, token);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+**Step 2:** Applying custom async filter to `AutoComplete` control by using the `FilterBehavior` property. 
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfAutoComplete
+    TextSearchMode="Contains"
+    SelectionMode="Multiple"
+    x:Name="autoComplete">
+    <editors:SfAutoComplete.FilterBehavior>
+        <local:CustomAsyncFilter/>
+    </editors:SfAutoComplete.FilterBehavior>
+</editors:SfAutoComplete>
+
+{% endhighlight %}
+{% endtabs %}
+
+The following image shows the 1 lakhs data being loaded asynchronously in a drop-down at runtime based on typed input in the `AutoComplete` control.
+
+![WinUI AutoComplete loads asynchronous runtime items using custom filtering logic.](Searching_images/winui-autocomplete-asynchronous-items.png)
