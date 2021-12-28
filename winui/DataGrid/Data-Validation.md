@@ -97,7 +97,7 @@ You can validate the data using **data annotation attributes** by setting [SfDat
 
 ### Using different annotations
 
-The numeric type like int, double, decimal properties can be validated using [Range attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.rangeattribute.aspx).
+The numeric type like int, double, decimal properties can be validated using [Range attributes](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.rangeattribute?view=net-6.0).
 
 {% tabs %}
 {% highlight c# %}
@@ -145,7 +145,7 @@ public double Salary
 
 ![Data Validation in WinUI DataGrid using Data Annotations](Data-Validation-images/winui-datagrid-data-validation-using-data-annotation.png)
 
-The string type property can be validated using [Required](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.requiredattribute.aspx), [String Length attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.stringlengthattribute.aspx)
+The string type property can be validated using [Required](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute?view=net-6.0), [String Length attributes](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.stringlengthattribute?view=net-6.0)
 
 {% tabs %}
 {% highlight c# %}
@@ -190,7 +190,7 @@ public string Title
 {% endhighlight %}
 {% endtabs %}
 
-The data that has heterogeneous type (combination of number, special character) can be validated using [RegularExpressions](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.regularexpressionattribute.aspx).
+The data that has heterogeneous type (combination of number, special character) can be validated using [RegularExpressions](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.regularexpressionattribute?view=net-6.0).
 
 {% tabs %}
 {% highlight c# %}
@@ -679,7 +679,7 @@ You can change the error tip background color by setting `Background` property o
 
 ## Showing error details in RowHeader
 
-SfDataGrid support to show the error icon in [GridRowHeaderCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridRowHeaderCell.html) based on [INotifyDataErrorInfo.HasErrors](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.haserrors.aspx) property.
+SfDataGrid support to show the error icon in [GridRowHeaderCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridRowHeaderCell.html) based on [INotifyDataErrorInfo.HasErrors](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.inotifydataerrorinfo.haserrors?view=winui-3.0-preview) property.
 
 ### Using INotifyDataErrorInfo
 
@@ -710,7 +710,7 @@ You can do both built-in and custom validation of data in `DetailsViewDataGrid`.
 
 ### Built-in validations
 
-You can validate the bound data based on [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.inotifydataerrorinfo?view=winui-3.0-preview) or [Data Annotation](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.aspx) attributes by setting [DataValidationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataValidation.html) property of [GridViewDefinition.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid).
+You can validate the bound data based on [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.inotifydataerrorinfo?view=winui-3.0-preview) or [Data Annotation](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations?view=net-6.0) attributes by setting [DataValidationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataValidation.html) property of [GridViewDefinition.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid).
 
 {% tabs %}
 {% highlight xaml %}
