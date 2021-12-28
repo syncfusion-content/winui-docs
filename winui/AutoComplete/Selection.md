@@ -199,7 +199,7 @@ If no item is assigned, then in single selection, entered text gets assigned to 
 
 [Handled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteInputSubmittedEventArgs.html#Syncfusion_UI_Xaml_Editors_AutoCompleteInputSubmittedEventArgs_Handled) - When set to `true`, the framework will not automatically update the selected item or selected item(s) of the `AutoComplete` to the new value.
 
-By using the following code sample, we will display the dialogue box will be displayed when submitting input (Snapchat) that does not contain in assigned `ItemsSource`.
+By using the following code sample, we will display the dialogue box will be displayed when submitting input (Snap chat) that does not contain in assigned `ItemsSource`.
 
 {% tabs %}
 {% highlight XAML %}
