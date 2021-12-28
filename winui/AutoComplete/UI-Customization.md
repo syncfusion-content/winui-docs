@@ -156,7 +156,7 @@ N> `TextBoxStyle` will only have an effect in single selection mode.
 
 ![Styling the editing textBox using TextBoxStyle.](Styling_images/winui-autocomplete-textboxstyle.png)
 
-## Customize the Dropdown (suggestion) item 
+## Customize the DropDown (suggestion) item 
 
 The [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_ItemTemplate) property helps you to decorate drop-down items using the custom templates. The default value of `ItemTemplate` is `null`. The following example shows how to customize drop-down items using templates.
 
@@ -254,7 +254,7 @@ public class EmployeeViewModel
 
 ![Custom UI of dropdown items using ItemTemplate.](Styling_images/winui-autocomplete-itemtemplate.png)
 
-### Customize Dropdown (suggestion) items based on condition
+### Customize DropDown (suggestion) items based on condition
 
 The [ItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_ItemTemplateSelector) property helps you to decorate drop-down items conditionally based on its content using the custom templates. The default value of `ItemTemplateSelector` is `null`.
 
@@ -459,7 +459,7 @@ public class SocialMediaStyleSelector : StyleSelector
 
 ![Different custom UI of AutoCompleteTokenItem using TokenItemStyleSelector](Styling_images/winui-autocomplete-tokenitemstyleselector.png)
 
-## Customize AutoCompleteTokenItem 
+## Templating AutoComplete tokens
 
 The [TokenItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemTemplate) property helps you to decorate token items using the custom templates. The default value of `TokenItemTemplate` is `null`. The following example shows how to add image or custom control in token items using templates.
 
@@ -577,7 +577,7 @@ public class CountryViewModel
 
 ![Custom UI of AutoCompleteTokenItem using TokenItemTemplate](Styling_images/winui-autocomplete-tokenitemtemplate.png)
 
-### Customize AutoCompleteTokenItem based on condition
+### Templating AutoComplete tokens based on condition
 
 The [TokenItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemTemplateSelector) property helps you to decorate token items conditionally based on its content using the custom templates. The default value of `TokenItemTemplateSelector` is `null`.
 
