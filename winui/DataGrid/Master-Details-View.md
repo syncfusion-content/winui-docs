@@ -15,7 +15,7 @@ SfDataGrid provides support to represent the hierarchical data in the form of ne
 
 ## Generating Master-Details view from IEnumerable
 
-Master-Details View’s relation can be generated for the properties of type [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx) in the underlying data object contain.
+Master-Details View’s relation can be generated for the properties of type [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-6.0) in the underlying data object contain.
 Follow the below steps to generate the Master-Details View for `IEnumerable`.
 
 * Create the data model with relations (Here, relations are `IEnumerable` type properties)
