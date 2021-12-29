@@ -321,7 +321,7 @@ treeNode.SetCheckedState(true);
 {% endhighlight %}
 {% endtabs %}
 
-If you want to restrict the `IsChecked` update of the parent and child nodes (when [SfTreeGrid.EnableRecursiveChecking](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_EnableRecursiveChecking) is `true`), you can pass default parameter values as `false` in [SetCheckedState](ttps://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeNode.html#Syncfusion_UI_Xaml_TreeGrid_TreeNode_SetCheckedState_System_Nullable_System_Boolean__System_Boolean_System_Boolean_) method.
+If you want to restrict the `IsChecked` update of the parent and child nodes (when [SfTreeGrid.EnableRecursiveChecking](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_EnableRecursiveChecking) is `true`), you can pass default parameter values as `false` in [SetCheckedState](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeNode.html#Syncfusion_UI_Xaml_TreeGrid_TreeNode_SetCheckedState_System_Nullable_System_Boolean__System_Boolean_System_Boolean_) method.
 
 {% tabs %}
 {% highlight c# %}

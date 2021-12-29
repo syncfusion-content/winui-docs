@@ -46,7 +46,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 
 ### Horizontal
 
-The [GridLinesVisibility.Horizontal]https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_Horizontal) displays the DataGrid with horizontal grid lines only.
+The [GridLinesVisibility.Horizontal](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_Horizontal) displays the DataGrid with horizontal grid lines only.
 
 {% tabs %}
 {% highlight xaml %}

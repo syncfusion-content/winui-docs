@@ -125,10 +125,10 @@ this.sfDataGrid.Columns["OrderID"].ColumnWidthMode = ColumnWidthMode.AutoLastCol
 
 ## Refreshing autosize calculation at runtime
 
-You can refresh the autosize calculation at runtime by calling [SfDataGrid.GridColumnSizer.Refresh](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumnSizer.html#Syncfusion_UI_Xaml_DataGrid_GridColumnSizer_Refresh) method.
-DataGrid support to recalculates the column auto width by calling reset methods of `GridColumnSizer`. [GridColumnSizer.ResetAutoCalculationforAllColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_ResetAutoCalculationforAllColumns) method reset widths to all columns. [GridColumnSizer.ResetAutoCalculation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_ResetAutoCalculation_Syncfusion_UI_Xaml_Grids_GridColumnBase_) method reset the width to particular column.
+You can refresh the autosize calculation at runtime by calling [SfDataGrid.ColumnSizer.Refresh](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridColumnSizer.html#Syncfusion_UI_Xaml_DataGrid_DataGridColumnSizer_Refresh) method.
+DataGrid support to recalculates the column auto width by calling reset methods of `ColumnSizer`. [ColumnSizer.ResetAutoCalculationforAllColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_ResetAutoCalculationforAllColumns) method reset widths to all columns. [ColumnSizer.ResetAutoCalculation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_ResetAutoCalculation_Syncfusion_UI_Xaml_Grids_GridColumnBase_) method reset the width to particular column.
 
-N> The `GridColumnSizer.ResetAutoCalculationforAllColumns` or `GridColumnSizer.ResetAutoCalculation` methods applicable for Auto, AutoWithLastColumnFill, AutoLastColumnFill, SizeToCells types.
+N> The `ColumnSizer.ResetAutoCalculationforAllColumns` or `ColumnSizer.ResetAutoCalculation` methods applicable for Auto, AutoWithLastColumnFill, AutoLastColumnFill, SizeToCells types.
 
 For example, you can refresh all the column’s width based on the cell contents of newly added records at runtime. 
 
@@ -143,14 +143,14 @@ viewModel.OrdersDetails.Add(new OrderInfo() {
     ShipAddress = "I.de Margarita,Venezuela",
     ShipCity = "Venezuela"
     });
-this.sfDataGrid.GridColumnSizer.ResetAutoCalculationforAllColumns();
-this.sfDataGrid.GridColumnSizer.Refresh();            
+this.sfDataGrid.ColumnSizer.ResetAutoCalculationforAllColumns();
+this.sfDataGrid.ColumnSizer.Refresh();            
 {% endhighlight %}
 {% endtabs %}
 
 ## Resetting column width to apply autosize calculation
 
-When the width of the column is explicitly defined or column is resized, then column width is not changed based on `GridColumnSizer`. You can reset [GridColumn.Width](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_Width) by setting `double.NaN` to apply column width based on column sizer.
+When the width of the column is explicitly defined or column is resized, then column width is not changed based on `ColumnSizer`. You can reset [GridColumn.Width](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_Width) by setting `double.NaN` to apply column width based on column sizer.
 
 {% tabs %}
 {% highlight c# %}
@@ -159,21 +159,21 @@ foreach (var column in sfDataGrid.Columns)
     if (!double.IsNaN(column.Width))
         column.Width = double.NaN;
 }
-this.sfDataGrid.GridColumnSizer.Refresh();            
+this.sfDataGrid.ColumnSizer.Refresh();            
 {% endhighlight %}
 {% endtabs %}
 
 ## Customizing built-in column auto-sizing logic
 
-SfDataGrid process column sizing operations in [GridColumnSizer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumnSizer.html) class. You can customize the column sizing operations by overriding `GridColumnSizer` and set it to `SfDataGrid.GridColumnSizer`.
+SfDataGrid process column sizing operations in [DataGridColumnSizer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridColumnSizer.html) class. You can customize the column sizing operations by overriding `DataGridColumnSizer` and set it to `SfDataGrid.ColumnSizer`.
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.GridColumnSizer = new GridColumnSizerExt(sfDataGrid);
+this.sfDataGrid.ColumnSizer = new ColumnSizerExt(sfDataGrid);
 
-public class GridColumnSizerExt : GridColumnSizer
+public class ColumnSizerExt : DataGridColumnSizer
 {
-    public GridColumnSizerExt(SfDataGrid dataGrid)
+    public ColumnSizerExt(SfDataGrid dataGrid)
         : base(dataGrid)
     {
 
@@ -201,43 +201,43 @@ By default, the ColumnSizer calculates column’s width based on fixed `FontSize
 
 ### Changing sort and filter icon width
 
-You can change the filter icon and sort icon widths for column width calculation by setting [GridColumnSizer.SortIconWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_SortIconWidth) and [GridColumnSizer.FilterIconWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumnSizer.html#Syncfusion_UI_Xaml_DataGrid_GridColumnSizer_FilterIconWidth) properties.
+You can change the filter icon and sort icon widths for column width calculation by setting [ColumnSizer.SortIconWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_SortIconWidth) and [ColumnSizer.FilterIconWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridColumnSizer.html#Syncfusion_UI_Xaml_DataGrid_DataGridColumnSizer_FilterIconWidth) properties.
 
 {% tabs %}
 {% highlight c# %}
-sfDataGrid.GridColumnSizer.SortIconWidth = 20;
-sfDataGrid.GridColumnSizer.FilterIconWidth = 20;
+sfDataGrid.ColumnSizer.SortIconWidth = 20;
+sfDataGrid.ColumnSizer.FilterIconWidth = 20;
 {% endhighlight %}
 {% endtabs %}
 
 ### Changing font settings for DataGrid
 
-You can change the `font settings` for column width calculation by setting [GridColumnSizer.FontSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_FontSize), [GridColumnSizer.FontFamily](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_FontFamily) and [GridColumnSizer.Margin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_Margin) properties.  This settings will be considered for all columns.
+You can change the `font settings` for column width calculation by setting [ColumnSizer.FontSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_FontSize), [ColumnSizer.FontFamily](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_FontFamily) and [ColumnSizer.Margin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_Margin) properties.  This settings will be considered for all columns.
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.GridColumnSizer.FontSize = 10.0;
-this.sfDataGrid.GridColumnSizer.FontFamily = new FontFamily("TimesNewRoman");
-this.sfDataGrid.GridColumnSizer.Margin = ThicknessHelper.FromLengths(9, 3, 1, 3);
+this.sfDataGrid.ColumnSizer.FontSize = 10.0;
+this.sfDataGrid.ColumnSizer.FontFamily = new FontFamily("TimesNewRoman");
+this.sfDataGrid.ColumnSizer.Margin = ThicknessHelper.FromLengths(9, 3, 1, 3);
 {% endhighlight %}
 {% endtabs %}
 
 ### Changing font settings for one column
 
-You can change the `font setting` for one column width calculation using [GridColumnSizer.SetFontFamily](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_SetFontFamily_Syncfusion_UI_Xaml_Grids_GridColumnBase_Microsoft_UI_Xaml_Media_FontFamily_), [GridColumnSizer.SetFontSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_SetFontSize_Syncfusion_UI_Xaml_Grids_GridColumnBase_System_Double_) and [GridColumnSizer.SetMargin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_SetMargin_Syncfusion_UI_Xaml_Grids_GridColumnBase_Microsoft_UI_Xaml_Thickness_) static methods of `GridColumnSizer` to `GridColumn`. 
+You can change the `font setting` for one column width calculation using [DataGridColumnSizer.SetFontFamily](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_SetFontFamily_Syncfusion_UI_Xaml_Grids_GridColumnBase_Microsoft_UI_Xaml_Media_FontFamily_), [DataGridColumnSizer.SetFontSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_SetFontSize_Syncfusion_UI_Xaml_Grids_GridColumnBase_System_Double_) and [DataGridColumnSizer.SetMargin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_SetMargin_Syncfusion_UI_Xaml_Grids_GridColumnBase_Microsoft_UI_Xaml_Thickness_) static methods of `DataGridColumnSizer` to `GridColumn`. 
 
 {% tabs %}
 {% highlight c# %}
 var gridColumn = this.sfDataGrid.Columns[0];
-GridColumnSizer.SetFontFamily(gridColumn, new FontFamily("TimesNewRoman"));
-GridColumnSizer.SetFontSize(gridColumn, 10.0);
-GridColumnSizer.SetMargin(gridColumn, ThicknessHelper.FromLengths(9, 3, 1, 3));
+DataGridColumnSizer.SetFontFamily(gridColumn, new FontFamily("TimesNewRoman"));
+DataGridColumnSizer.SetFontSize(gridColumn, 10.0);
+DataGridColumnSizer.SetMargin(gridColumn, ThicknessHelper.FromLengths(9, 3, 1, 3));
 {% endhighlight %}
 {% endtabs %}
 
 ## Star column sizer ratio support
 
-You can customize the `ColumnWidthMode.Star` width calculation logic by overriding [SetStarWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumnSizer.html#Syncfusion_UI_Xaml_DataGrid_GridColumnSizer_SetStarWidth_System_Double_System_Collections_Generic_IEnumerable_Syncfusion_UI_Xaml_DataGrid_GridColumn__) method of [GridColumnSizer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumnSizer.html).
+You can customize the `ColumnWidthMode.Star` width calculation logic by overriding [SetStarWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridColumnSizer.html#Syncfusion_UI_Xaml_DataGrid_DataGridColumnSizer_SetStarWidth_System_Double_System_Collections_Generic_IEnumerable_Syncfusion_UI_Xaml_DataGrid_GridColumn__) method of [DataGridColumnSizer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridColumnSizer.html).
 
 For example, you can calculate the column width, with specified ratios instead of dividing equal width for all columns in Star calculation using `ColumnRatio` attached property.
 
@@ -265,9 +265,9 @@ Below code to define the star width calculation based on the `ColumnRatio`.
 
 {% tabs %}
 {% highlight c# %}
-//Assign the customized GridColumnSizerExt to SfDataGrid.GridColumnSizer
-this.sfDataGrid.GridColumnSizer = new GridColumnSizerExt(sfDataGrid);
-public class GridColumnSizerExt : GridColumnSizer
+//Assign the customized GridColumnSizerExt to SfDataGrid.ColumnSizer
+this.sfDataGrid.ColumnSizer = new GridColumnSizerExt(sfDataGrid);
+public class GridColumnSizerExt : DataGridColumnSizer
 {
     public GridColumnSizerExt(SfDataGrid dataGrid)
         : base(dataGrid)
@@ -358,15 +358,15 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 
 ## Change the width of DataGrid ComboBoxColumn based on it’s ItemsSource
 
-By default, the `ColumnWidthMode` calculates auto width based on the column content. You can change the auto width calculation for [GridComboBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridComboBoxColumn.html) based on its items source by overriding the [CalculateCellWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumnSizer.html#Syncfusion_UI_Xaml_DataGrid_GridColumnSizer_CalculateCellWidth_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Boolean_) virtual method.
+By default, the `ColumnWidthMode` calculates auto width based on the column content. You can change the auto width calculation for [GridComboBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridComboBoxColumn.html) based on its items source by overriding the [CalculateCellWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridColumnSizer.html#Syncfusion_UI_Xaml_DataGrid_DataGridColumnSizer_CalculateCellWidth_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Boolean_) virtual method.
 
-Below code creates `CustomColumnSizer` to change the width of `GridComboboxColumn` and set to `SfDataGrid.GridColumnSizer`.
+Below code creates `CustomColumnSizer` to change the width of `GridComboboxColumn` and set to `SfDataGrid.ColumnSizer`.
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.GridColumnSizer = new GridColumnSizerExt(sfDataGrid);
+this.sfDataGrid.ColumnSizer = new GridColumnSizerExt(sfDataGrid);
 
-public class GridColumnSizerExt : GridColumnSizer
+public class GridColumnSizerExt : DataGridColumnSizer
 {
     public GridColumnSizerExt(SfDataGrid dataGrid)
     : base(dataGrid)

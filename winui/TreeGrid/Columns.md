@@ -90,7 +90,7 @@ Use to display the <code>DateTimeOffSet</Code> type data as time value.
 
 ## Defining Columns
 
-You can let the SfTreeGrid to create columns or you can manually defined columns to be displayed. Below sections explains both ways, 
+You can let the SfTreeGrid to create columns or you can manually define columns to be displayed. Below sections explains both ways, 
 
 1. Automatically generating columns
 2. Manually define columns

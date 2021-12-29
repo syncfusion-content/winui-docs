@@ -98,8 +98,8 @@ Following are the sequence of sorting orders when clicking column header,
 
 ## Multi column sorting
 
-SfTreeGrid control allows you to sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the &lt;kbd&gt;Ctrl&lt;/kbd&gt; key.
-In the below screen shot, the `First Name` column sorted. Then the `Employee ID` column is sorted against the `First Name` data by clicking column header by pressing &lt;kbd&gt;Ctrl&lt;/kbd&gt; key. The sorting state of `First Name` column is preserved and `Employee ID` column sorted against `First Name` column.
+SfTreeGrid control allows you to sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the <kbd>Ctrl</kbd> key.
+In the below screen shot, the `First Name` column sorted. Then the `Employee ID` column is sorted against the `First Name` data by clicking column header by pressing <kbd>Ctrl</kbd> key. The sorting state of `First Name` column is preserved and `Employee ID` column sorted against `First Name` column.
 
 ![Multi Column Sorting in WinUI TreeGrid](Sorting-images/winui-treegrid-multi-sorting.png)
 
@@ -282,7 +282,7 @@ Sorting `FirstName` column sorts the data using custom sort comparer available i
 
 [Action](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grids_GridSortColumnsChangingEventArgs_Action) - Gets the action triggered this event. 
 
-[Cancel](http://msdn2.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) - Setting value to `true`, cancels the triggered action. 
+[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-6.0) - Setting value to `true`, cancels the triggered action. 
 
 [AddedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grids_GridSortColumnsChangingEventArgs_AddedItems) - Gets the list of new `SortColumnDescriptions` that are added.
 
@@ -290,7 +290,7 @@ Sorting `FirstName` column sorts the data using custom sort comparer available i
 
 [CancelScroll](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grids_GridSortColumnsChangingEventArgs_CancelScroll) - Gets or sets a value that indicates, whether scroll and bring SelectedItem in view after sorting takes place.
 
-You can prevent sorting for the particular column through [GridSortColumnsChangingEventArgs.Cancel](http://msdn2.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) property of `SortColumnChanging` event.
+You can prevent sorting for the particular column through [GridSortColumnsChangingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-6.0) property of `SortColumnChanging` event.
 
 {% tabs %}
 {% highlight c# %} 

@@ -1310,7 +1310,7 @@ class StringToImageConverter : IValueConverter
     {
         if (value != null)
         {
-            string imagename = value as string;
+            string imagename = value as string + ".png";
             return new Uri("ms-appx:///Image/" + imagename, UriKind.Absolute);
         }
         return null;
@@ -1339,12 +1339,11 @@ class StringToImageConverter : IValueConverter
                            ColumnWidthMode="SizeToHeader">
         <syncfusion:SfDataGrid.Columns>
             <syncfusion:GridTextColumn  MappingName="OrderID" HeaderText="Order ID" />
-            <syncfusion:GridComboBoxColumn  HeaderText="Customer ID" MappingName="CustomerID" />
+            <syncfusion:GridTextColumn  HeaderText="Customer ID" MappingName="CustomerID" />
             <syncfusion:GridTextColumn  MappingName="CustomerName" HeaderText="Customer Name"/>
             <syncfusion:GridTextColumn  MappingName="ShipCity" HeaderText="Ship City" />
-            <syncfusion:GridImageColumn MappingName="ImageLink" HeaderText="Flag" TextAlignment="Center" ImageHeight="50" ImageWidth="50"
-                                        ValueBinding="{Binding Path=ImageLink, Converter={StaticResource stringToImageConverter}}" />
-            <syncfusion:GridHyperlinkColumn  MappingName="Country" />
+            <syncfusion:GridImageColumn MappingName="Country" HeaderText="Flag" TextAlignment="Center" ImageHeight="50" ImageWidth="50"
+                                        ValueBinding="{Binding Path=Country, Converter={StaticResource stringToImageConverter}}" />
         </syncfusion:SfDataGrid.Columns>
     </syncfusion:SfDataGrid>
 </Grid>
