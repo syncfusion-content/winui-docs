@@ -348,7 +348,7 @@ The following gif demonstrates selecting the capital city in the drop-down based
 
 ## Load asynchronous items
 
-To load data asynchronously at runtime based on typed input, use the `CustomFilter` property.
+To load the data dynamically at runtime based on typed input, use the `CustomFilter` property.
 
 **Step 1:** Create a class that derives from the `IAutoCompleteFilterBehavior` interface and add your custom filter logic in `GetMatchingItemsAsync` method to load the run time items based on typed input.
 
