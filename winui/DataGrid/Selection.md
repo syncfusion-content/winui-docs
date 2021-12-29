@@ -167,7 +167,7 @@ this.sfDataGrid.SelectRows(3, 7);
 ![Programmatic Selection of Records in WinUI DataGrid](Selection_images/winui-datagrid-programmatic-record-selections.png)
 
 
-You can select a specific cell by using the [SelectCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectCells_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Boolean_) method in cell selection.
+You can select a specific cell by using the [SelectCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectCell_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Boolean_) method in cell selection.
 
 {% tabs %}
 {% highlight c# %}
@@ -283,7 +283,7 @@ this.sfDataGrid.SelectionController.ClearSelections(true);
 {% endhighlight %}
 {% endtabs %}
 
-You can clear selection on group of cells by using the [UnSelectCells](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_UnSelectCells_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_) method in cell selection.
+You can clear selection on group of cells by using the [UnselectCells](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_UnselectCells_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_) method in cell selection.
 
 {% tabs %}
 {% highlight c# %}
@@ -781,7 +781,7 @@ If the {{'[DataGrid.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusio
 <kbd>Esc</kbd>
 </td>
 <td>
-If the current cell is in edit mode, reverts the changes that had been done in the current cell. If the underlying source implements the {{'[IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject#"")'| markdownify }}, on pressing of <kbd>Esc</kbd> key for the second time will cancel the edit mode for entire row.
+If the current cell is in edit mode, reverts the changes that had been done in the current cell. If the underlying source implements the {{'[IEditableObject](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?view=net-6.0)'| markdownify }}, on pressing of <kbd>Esc</kbd> key for the second time will cancel the edit mode for entire row.
 </td>
 </tr>
 <tr>

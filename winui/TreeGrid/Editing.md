@@ -117,17 +117,17 @@ this.treeGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll;
 
 ## Support for IEditableObject
 
-SfTreeGrid supports to commit and roll back the changes in row level when underlying data object implements [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx) interface.
+SfTreeGrid supports to commit and roll back the changes in row level when underlying data object implements [IEditableObject](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?view=net-6.0) interface.
 
-The editing changes in a row will be committed only when user move to next row or pressing enter key in [EndEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.endedit.aspx). Also when user press <kbd>Esc</kbd> key, then the changes made in a row will be reverted in [CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx). 
+The editing changes in a row will be committed only when user move to next row or pressing enter key in [EndEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.endedit?view=net-6.0). Also when user press <kbd>Esc</kbd> key, then the changes made in a row will be reverted in [CancelEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.canceledit?view=net-6.0). 
 
 `IEditableObject` has the following methods to capture editing,
 
-[BeginEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.beginedit.aspx) - Gets called to begin edit on underlying data object when cell in a row get into edit mode. 
+[BeginEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.beginedit?view=net-6.0) - Gets called to begin edit on underlying data object when cell in a row get into edit mode. 
 
-[CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx) - Gets called when user press the <kbd>Esc</kbd> key to discard the changes in a row since last `BeginEdit` call. 
+[CancelEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.canceledit?view=net-6.0https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.canceledit?view=net-6.0) - Gets called when user press the <kbd>Esc</kbd> key to discard the changes in a row since last `BeginEdit` call. 
 
-[EndEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.endedit.aspx) - Gets called when user move to the next row or press <kbd>Enter</kbd> key  to commit changes in underlying data object since last `BeginEdit` call. 
+[EndEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.endedit?view=net-6.0) - Gets called when user move to the next row or press <kbd>Enter</kbd> key  to commit changes in underlying data object since last `BeginEdit` call. 
 
 The below code snippet explains the simple implementation of IEditableObject.
 
@@ -301,7 +301,7 @@ SfTreeGrid triggers the following events during editing.
 
 [CurrentCellBeginEdit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentCellBeginEdit) event occurs when the [CurrentCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellManager_CurrentCell) enter into edit mode. [TreeCurrentCellBeginEditEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellBeginEditEventArgs.html) has following members which provides information for `CurrentCellBeginEdit` event.
 
-* [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) : When set to `true`, the event is canceled and the `CurrentCell` does not enter into the edit mode.
+* [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-6.0) : When set to `true`, the event is canceled and the `CurrentCell` does not enter into the edit mode.
 
 * [RowColumnIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellBeginEditEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellBeginEditEventArgs_RowColumnIndex) : Gets the current row column index of the TreeGrid.
 
@@ -362,7 +362,7 @@ void TreeGrid_CurrentCellValueChanged(object sender, TreeGridCurrentCellValueCha
 {% endhighlight %}
 {% endtabs %}
 
-N> For TreeGridComboBoxColumn, you have to use the 'CurrentCellDropDownSelectionChanged' event.
+N> For TreeGridComboBoxColumn, you have to use the `CurrentCellDropDownSelectionChanged` event.
 
 ### CurrentCellDropDownSelectionChanged Event
 

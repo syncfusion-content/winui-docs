@@ -407,7 +407,7 @@ private void SfDataGrid_RowValidating(object sender, RowValidatingEventArgs e)
 
 ![Data Validation in Add New Row in WinUI DataGrid](CRUD-Operations_images/winui-datagrid-data-validation-in-add-new-row.png)
 
-Similarly, you can validate the cells in AddNewRow by using the [CurrentCellValidating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentCellActivating) event.
+Similarly, you can validate the cells in AddNewRow by using the [CurrentCellValidating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentCellValidating) event.
 
 ### Customizing AddNewRow text using default resource file
 
@@ -538,7 +538,7 @@ You can enable the AddNewRow in `DetailsViewDataGrid` by specifying the position
 this.firstLevelNestedGrid.AddNewRowPosition = AddNewRowPosition.Top;
 {% endhighlight %}
 {% endtabs %}
-Similarly, you can wire [AddNewRowInitiating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event for `ViewDefinition.DataGrid`.
+Similarly, you can wire [AddNewRowInitiating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_AddNewRowInitiating) event for `ViewDefinition.DataGrid`.
 {% tabs %}
 {% highlight c# %}
 this.firstLevelNestedGrid.AddNewRowInitiating += FirstLevelNestedGrid_AddNewRowInitiating;

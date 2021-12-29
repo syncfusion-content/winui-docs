@@ -297,7 +297,7 @@ This filtering operation is performed based on the value of [SfTreeGrid.FilterLe
 
 ## Advanced filtering
 
-Advanced filter UI provides multiple filter options to filter the data easily. Filter menu options are loaded based on advanced filter type by automatically detecting the underlying date type.
+Advanced filter UI provides multiple filter options to filter the data easily. Filter menu options are loaded based on advanced filter type by automatically detecting the underlying data type.
 
 The following built-in filter types are supported in SfTreeGrid:
 
