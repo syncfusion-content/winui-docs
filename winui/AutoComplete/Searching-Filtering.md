@@ -288,6 +288,8 @@ The following gif demonstrates selecting the capital city in the drop-down based
 
 To load the data dynamically at runtime based on typed input, use the `CustomFilter` property.
 
+`Async` method enables the `await Task.Run(()` which is used to run the upcoming threads without blocking the current thread. It will increase the efficiency to loads the large data item in `AutoComplete` control.
+
 **Step 1:** Create a class that derives from the `IAutoCompleteFilterBehavior` interface and add your custom filter logic in `GetMatchingItemsAsync` method to load the run time items based on typed input.
 
 {% tabs %}
