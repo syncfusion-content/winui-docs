@@ -149,13 +149,16 @@ private async void OnSelectionChanged(object sender, AutoCompleteSelectionChange
 
 ## Get the selected value
 
-Value of the `SelectedItem` can be retrieved by using the [SelectedValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_SelectedValue) property. It returns the property value bind to the [SelectedValuePath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_SelectedValuePath) property. If the `SelectedValuePath` is not initialized, it will return the root data item. The default value of `SelectedValue` and `SelectedValuePath` is `null`.
+The [SelectedValuePath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_SelectedValuePath) property allows you to specify a [SelectedValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_SelectedValue) for a `AutoComplete`'s `SelectedItem`. The `SelectedItem` represents an object in the `Items` collection, and the `AutoComplete` displays the value of the selected item's single property. The `SelectedValuePath` property specifies the path to the property used to determine the `SelectedValue` property's value.  The default value of `SelectedValue` and `SelectedValuePath` is `null`.
+
+For example, when you select any `SocialMedia.Name` in the `AutoComplete`, the `SelectedItem` property returns the `SocialMedia` data item that corresponds to the selected `SocialMedia.Name`. However, because the `SelectedValuePath` of this `AutoComplete` is set to `SocialMedia.ID`, the `SelectedValue` is set to the `SocialMedia.ID`.
+
 
 {% tabs %}
 {% highlight XAML %}
 
 <editors:SfAutoComplete 
-    SelectedValuePath="Name"
+    SelectedValuePath="ID"
     x:Name="autoComplete"
     TextMemberPath="Name"   
     DisplayMemberPath="Name"
@@ -166,9 +169,9 @@ Value of the `SelectedItem` can be retrieved by using the [SelectedValue](https:
 <TextBlock x:Name="selectedValue"/>
 
 {% endhighlight %}
+{% highlight C# %}
 
-{{% highlight C# %}
-
+autoComplete.SelectedValuePath = "ID";
 autoComplete.SelectionChanged += OnSelectionChanged;
 
 {% endhighlight %}
@@ -187,7 +190,6 @@ private void OnSelectionChanged(object sender, AutoCompleteSelectionChangedEvent
 
 ![WinUI AutoComplete with selected value](Selection_images/winui-autoComplete-selectedvalue.png)
 
-
 ## Handle invalid input 
 
 When entered text that does not correspond to a drop-down list item is submitted, the [InputSubmitted](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_InputSubmitted) event is triggered. The members of [AutoCompleteInputSubmittedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteInputSubmittedEventArgs.html) provide information for the `InputSubmitted` event.
@@ -199,7 +201,7 @@ If no item is assigned, then in single selection, entered text gets assigned to 
 
 [Handled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteInputSubmittedEventArgs.html#Syncfusion_UI_Xaml_Editors_AutoCompleteInputSubmittedEventArgs_Handled) - When set to `true`, the framework will not automatically update the selected item or selected item(s) of the `AutoComplete` to the new value.
 
-By using the following code sample, we will display the dialogue box will be displayed when submitting input (Snap chat) that does not contain in assigned `ItemsSource`.
+Using the code sample below, we will display a dialogue box when submitting input (Snap chat) that does not match the assigned `ItemsSource`.
 
 {% tabs %}
 {% highlight XAML %}

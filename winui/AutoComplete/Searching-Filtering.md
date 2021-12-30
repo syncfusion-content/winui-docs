@@ -11,21 +11,15 @@ documentation: ug
 
 The [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control provides rich text searching and filtering functionality.
 
-## Search based on member path
+## Searching based on TextMemberPath
 
-The `TextMemberPath` and `DisplayMemberPath` properties of `AutoComplete` control specifies the property path, by which the searching must be done when a custom data is bound to the `ItemsSource` property.
-
-[TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_TextMemberPath) - Specifies the property path whose value is used to perform searching based on user input. The default value is `string.Empty`.
+Searching will be performed based on the `TextMemberPath` property while entering the text into the selection box. If `TextMemberPath` is set to `null` or `string.Empty`, searching will be disabled.
 
 [DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_DisplayMemberPath) - Specifies the property path whose value is displayed as text in the drop-down. The default value is `string.Empty`.
 
-N> `TextMemberPath` and `DisplayMemberPath` will be effective for the collection item that holds two or more properties in it.
+[TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_TextMemberPath) - Specifies the property path whose value is used to perform searching based on user input. The default value is `string.Empty`. When `TextMemberPath` is `string.Empty`, searching will be disabled for the collection item that holds two or more properties in it.
 
-### Searching based on TextMemberPath
-
-Searching will be performed based on the `TextMemberPath` property while entering the text into the selection box. If `TextMemberPath` is set to `null`, searching will be disabled.
-
-N> When `TextMemberPath` is `null`, searching will be performed based on `DisplayMemberPath`. When both the properties have a `null` value, searching will be disabled. 
+N> `DisplayMemberPath` and `TextMemberPath` will be effective for the collection item that holds two or more properties in it.
 
 {% tabs %}
 {% highlight c# %}
@@ -87,35 +81,7 @@ For e.g. After typing `4` in selection box.
 
 ![WinUI AutoComplete text searching based on TextMemberPath](Searching_images/winui-autocomplete-textmemberpath-searching.png)
 
-### Searching based on DisplayMemberPath
-
-Searching will be performed based on the `DisplayMemberPath` property while entering the text into the selection box. If `DisplayMemberPath` is `null`, searching will be disabled. 
-
-N> `DisplayMemberPath` cannot be used when `ItemTemplate` is specified.
-
-{% tabs %}
-{% highlight xaml %}
-
-<editors:SfAutoComplete x:Name="autoComplete"
-    Width="250"
-    ItemsSource="{Binding SocialMedias}"
-    TextMemberPath="Name"
-    DisplayMemberPath="ID" />
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-autoComplete.DisplayMemberPath = "ID";
-
-{% endhighlight %}
-{% endtabs %}
-
-For e.g. After typing `T` in drop-down, social medias which have starting letter `T` will be listed in dropdown.
-
-![WinUI AutoComplete text searching based on DisplayMemberPath](Searching_images/winui-autocomplete-displaymemberpath-searching.png)
-
-N> If `TextMemberPath` and `DisplayMemberPath` are `null`, searching will be performed based on the class name with namespace of the item.
+N> If `TextMemberPath` is `null`, searching will be performed based on the class name with namespace of the item.
 
 ## Filtering Mode
 
@@ -249,7 +215,7 @@ The following gif demonstrates displaying the cities in drop-down based on the c
 
 ### Choose default item to select
 
-The `AutoComplete` control provides support to apply your custom selection logic to select the items based on your search criteria by using the [SearchBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_SearchBehavior) property. The default value of `SearchBehavior` is `null`. 
+When searching, the first item in the drop-down will be highlighted by default. Using the [SearchBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_SearchBehavior) property, you can customize the default highlighting behaviour by using your custom selection logic to select the items based on your search criteria. The default value of `SearchBehavior` is `null`. 
 
 **Step 1:** Create a class that derives from the [IAutoCompleteSearchBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteSearchBehavior.html) interface.
 
@@ -267,7 +233,7 @@ public class CapitalCitySearchingBehavior : IAutoCompleteSearchBehavior
 {% endhighlight %}
 {% endtabs %}
 
-**Step 2:** Then, implement the [GetHighlightIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteSearchBehavior.html#Syncfusion_UI_Xaml_Editors_AutoCompleteSearchBehavior_GetHighlightIndex_Syncfusion_UI_Xaml_Editors_SfAutoComplete_Syncfusion_UI_Xaml_Editors_AutoCompleteSearchInfo_) method method of the `IAutoCompleteSearchBehavior` interface to initially select any item from the filtered list in the `AutoComplete` control drop-down. The `GetHighlightIndex` method contains the following arguments.
+**Step 2:** Then, implement the [GetHighlightIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteSearchBehavior.html#Syncfusion_UI_Xaml_Editors_AutoCompleteSearchBehavior_GetHighlightIndex_Syncfusion_UI_Xaml_Editors_SfAutoComplete_Syncfusion_UI_Xaml_Editors_AutoCompleteSearchInfo_) method of the `IAutoCompleteSearchBehavior` interface to initially select any item from the filtered list in the `AutoComplete` control drop-down. The `GetHighlightIndex` method contains the following arguments.
 
 * [source](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) - The owner of the search behavior, which holds information about `ItemsSource`, `Items` properties, and so on.
 * [searchInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteSearchInfo.html) - Contains details about the filtered items based on the text entered in `AutoComplete` control. Using this list, you can selected item which is displayed in drop down list. 
@@ -281,41 +247,13 @@ public class CapitalCitySearchingBehavior : IAutoCompleteSearchBehavior
 {
     public int GetHighlightIndex(SfAutoComplete source, AutoCompleteSearchInfo searchInfo)
     {
-        List<int> list = new List<int>();
+         var filteredCapitals = from CityInfo cityInfo in searchInfo.FilteredItems
+                where cityInfo.IsCapital
+                select searchInfo.FilteredItems.IndexOf(cityInfo);
+            if (filteredCapitals.Count() > 0)
+                return filteredCapitals.FirstOrDefault();
 
-        CityInfo firstitem = searchInfo.FilteredItems[0] as CityInfo;
-        string capitalCity = string.Empty;
-        if (firstitem.CountryName == "India")
-        {
-            capitalCity = "Delhi";
-        }
-        else if (firstitem.CountryName == "USA")
-        {
-            capitalCity = "Washington";
-        }
-        else if (firstitem.CountryName == "Indonesia")
-        {
-            capitalCity = "Jakarta";
-        }
-        ...
-
-        list.AddRange(from CityInfo item in searchInfo.FilteredItems
-                      let filterItem = this.GetStringFromMemberPath(item, "CityName")
-                      where filterItem == capitalCity
-                      select searchInfo.FilteredItems.IndexOf(item));
-        }
-
-        return list.Count > 0 ? list[0] : 0;
-    }
-
-    private string GetStringFromMemberPath(object item, string path)
-    {
-        string value = item.ToString();
-        if (!string.IsNullOrEmpty(path))
-        {
-            value = item.GetType()?.GetRuntimeProperty(path)?.GetValue(item).ToString();
-        }
-        return value;
+            return 0;
     }
 }
 
