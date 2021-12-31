@@ -215,7 +215,7 @@ The following gif demonstrates displaying the cities in drop-down based on the c
 
 ### Choose default item to select
 
-When searching, the first item in the drop-down will be highlighted by default. Using the [SearchBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_SearchBehavior) property, you can customize the default highlighting behaviour by using your custom selection logic to select the items based on your search criteria. The default value of `SearchBehavior` is `null`. 
+When searching, the first item in the drop-down will be highlighted by default. Using the [SearchBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_SearchBehavior) property, you can customize the default highlighting behavior by using your custom selection logic to select the items based on your search criteria. The default value of `SearchBehavior` is `null`. 
 
 **Step 1:** Create a class that derives from the [IAutoCompleteSearchBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteSearchBehavior.html) interface.
 
