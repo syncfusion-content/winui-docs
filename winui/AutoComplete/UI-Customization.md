@@ -156,7 +156,7 @@ N> `TextBoxStyle` will only have an effect in single selection mode.
 
 ![Styling the editing textBox using TextBoxStyle.](Styling_images/winui-autocomplete-textboxstyle.png)
 
-## Customize the Dropdown (suggestion) item 
+## Customize the DropDown (suggestion) item 
 
 The [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_ItemTemplate) property helps you to decorate drop-down items using the custom templates. The default value of `ItemTemplate` is `null`. The following example shows how to customize drop-down items using templates.
 
@@ -195,70 +195,7 @@ public class EmployeeViewModel
             ID = "E002",
             Country = "England",
         });
-        this.Employees.Add(new Employee
-        {
-            Name = "Emilio Alvaro",
-            ProfilePicture = new BitmapImage(new Uri(@"ms-appx:///Assets/AutoComplete/Employees/Employee5.png", UriKind.RelativeOrAbsolute)),
-            Designation = "Product Manager",
-            ID = "E003",
-            Country = "England",
-        });
-        this.Employees.Add(new Employee
-        {
-            Name = "Janet Leverling",
-            ProfilePicture = new BitmapImage(new Uri(@"ms-appx:///Assets/AutoComplete/Employees/Employee3.png", UriKind.RelativeOrAbsolute)),
-            Designation = "HR",
-            ID = "E004",
-            Country = "USA",
-        });
-        this.Employees.Add(new Employee
-        {
-            Name = "Laura Callahan",
-            ProfilePicture = new BitmapImage(new Uri(@"ms-appx:///Assets/AutoComplete/Employees/Employee2.png", UriKind.RelativeOrAbsolute)),
-            Designation = "Product Manager",
-            ID = "E005",
-            Country = "USA",
-        });
-        this.Employees.Add(new Employee
-        {
-            Name = "Margaret Peacock",
-            ProfilePicture = new BitmapImage(new Uri(@"ms-appx:///Assets/AutoComplete/Employees/Employee6.png", UriKind.RelativeOrAbsolute)),
-            Designation = "Developer",
-            ID = "E006",
-            Country = "USA",
-        });
-        this.Employees.Add(new Employee
-        {
-            Name = "Michael Suyama",
-            ProfilePicture = new BitmapImage(new Uri(@"ms-appx:///Assets/AutoComplete/Employees/Employee9.png", UriKind.RelativeOrAbsolute)),
-            Designation = "Team Lead",
-            ID = "E007",
-            Country = "USA",
-        });
-        this.Employees.Add(new Employee
-        {
-            Name = "Nancy Davolio",
-            ProfilePicture = new BitmapImage(new Uri(@"ms-appx:///Assets/AutoComplete/Employees/Employee4.png", UriKind.RelativeOrAbsolute)),
-            Designation = "Developer",
-            ID = "E008",
-            Country = "USA",
-        });
-        this.Employees.Add(new Employee
-        {
-            Name = "Robert King",
-            ProfilePicture = new BitmapImage(new Uri(@"ms-appx:///Assets/AutoComplete/Employees/Employee8.png", UriKind.RelativeOrAbsolute)),
-            Designation = "Developer",
-            ID = "E009",
-            Country = "England",
-        });
-        this.Employees.Add(new Employee
-        {
-            Name = "Steven Buchanan",
-            ProfilePicture = new BitmapImage(new Uri(@"ms-appx:///Assets/AutoComplete/Employees/Employee10.png", UriKind.RelativeOrAbsolute)),
-            Designation = "CEO",
-            ID = "E010",
-            Country = "England",
-        });
+        ...
     }
 }
 
@@ -317,7 +254,7 @@ public class EmployeeViewModel
 
 ![Custom UI of dropdown items using ItemTemplate.](Styling_images/winui-autocomplete-itemtemplate.png)
 
-### Customize Dropdown (suggestion) items based on condition
+### Customize DropDown (suggestion) items based on condition
 
 The [ItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_ItemTemplateSelector) property helps you to decorate drop-down items conditionally based on its content using the custom templates. The default value of `ItemTemplateSelector` is `null`.
 
@@ -429,7 +366,7 @@ public class EmployeeTemplateSelector : DataTemplateSelector
 
 ![Different custom UI of dropdown items using ItemTemplateSelector](Styling_images/winui-autocomplete-custom-itemtemplate.png)
 
-## Styling AutoCompleteTokenItem
+## Styling token items
 
 The `AutoComplete` control allows you to customize the style of [AutoCompleteTokenItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteTokenItem.html), generated in selection area by using the `TokenItemStyle` property. The default value of [TokenItemStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemStyle) is `null`. 
 
@@ -454,7 +391,7 @@ The `AutoComplete` control allows you to customize the style of [AutoCompleteTok
 
 ![Custom UI of AutoCompleteTokenItem using TokenItemStyle](Styling_images/winui-autocomplete-tokenitemstyle.png)
 
-### Style AutoCompleteTokenItem based on condition   
+### Styling token items based on condition   
 
 The `AutoComplete` control allows you to customize the style of `AutoCompleteTokenItem` conditionally based on its content by using the [TokenItemStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemStyleSelector) property. The default value of `TokenItemStyleSelector` is `null`. 
 
@@ -522,7 +459,7 @@ public class SocialMediaStyleSelector : StyleSelector
 
 ![Different custom UI of AutoCompleteTokenItem using TokenItemStyleSelector](Styling_images/winui-autocomplete-tokenitemstyleselector.png)
 
-## Customize AutoCompleteTokenItem 
+## Templating AutoComplete tokens
 
 The [TokenItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemTemplate) property helps you to decorate token items using the custom templates. The default value of `TokenItemTemplate` is `null`. The following example shows how to add image or custom control in token items using templates.
 
@@ -640,7 +577,7 @@ public class CountryViewModel
 
 ![Custom UI of AutoCompleteTokenItem using TokenItemTemplate](Styling_images/winui-autocomplete-tokenitemtemplate.png)
 
-### Customize AutoCompleteTokenItem based on condition
+### Templating AutoComplete tokens based on condition
 
 The [TokenItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemTemplateSelector) property helps you to decorate token items conditionally based on its content using the custom templates. The default value of `TokenItemTemplateSelector` is `null`.
 
@@ -754,7 +691,7 @@ public class CountryTemplateSelector : DataTemplateSelector
 
 The maximum height of the drop-down can be changed by using the [MaxDropDownHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_MaxDropDownHeight) property of `AutoComplete` control. The default value of `MaxDropDownHeight` property is `288`. 
 
- N> If the `MaxDropDownHeight` is too small compared to the populated items, scroll viewer will be automatically shown to navigate the hidden items.
+N> If the `MaxDropDownHeight` is too small compared to the populated items, scroll viewer will be automatically shown to navigate the hidden items.
 
 {% tabs %}
 {% highlight xaml %}
