@@ -135,7 +135,7 @@ The [InputSubmitted](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Edi
 `Text:` Gets the text entered in ComboBox.
 
 `Item:` This property can be used to add the item to the selected item(s) or set to the selected item that is assigned. 
-        If no item is assigned, then in single selection entered text gets assigned to the selected item. In multiple selection, no text will be added to the selected items.
+If no item is assigned, then in single selection, entered text gets assigned to the selected item. In multiple selection, no text will be added to the selected items.
 
 `Handled:` When set to `true`, the framework will not automatically update the selected item or selected item(s) of the ComboBox to the new value.
 

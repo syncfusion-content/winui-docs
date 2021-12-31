@@ -54,9 +54,9 @@ To open or close the drop-down.
 <kbd>Enter</kbd>
 </td>
 <td>
-**Single selection** To open or close the drop-down. If the drop-down is already open, pressing the <kbd>Enter</kbd> key item will update the selected item and close the drop-down.
+<b>Single selection</b> To open or close the drop-down. If the drop-down is already open, pressing the <kbd>Enter</kbd> key item will update the selected item and close the drop-down.
 <br />
-**Multiple selection** To open the drop-down when it is closed.
+<b>Multiple selection</b> To open the drop-down when it is closed.
 </td>
 <td>
 If the drop-down is already open, pressing the <kbd>Enter</kbd> key will update the selected item and close the drop-down.
@@ -78,9 +78,9 @@ To open the drop-down when it is closed.
 <kbd>Escape</kbd>
 </td>
 <td>
-**Single selection** If the drop-down is already open, pressing the <kbd>Escape</kbd> key will cancel the selection and close the drop-down.
+<b>Single selection</b> If the drop-down is already open, pressing the <kbd>Escape</kbd> key will cancel the selection and close the drop-down.
 <br />
-**Multiple selection** If the drop-down is already open, pressing the <kbd>Escape</kbd> key will close the drop-down.
+<b>Multiple selection</b> If the drop-down is already open, pressing the <kbd>Escape</kbd> key will close the drop-down.
 </td>
 <td>
 If the drop-down is already open, pressing the <kbd>Escape</kbd> key will cancel the selection and close the drop-down.
@@ -91,9 +91,9 @@ If the drop-down is already open, pressing the <kbd>Escape</kbd> key will cancel
 <kbd>Tab</kbd>, <kbd>Shift+Tab</kbd>
 </td>
 <td>
-**Single selection** If the drop-down is already open, pressing the <kbd>Tab</kbd> or <kbd>Shift+Tab</kbd> key will update the selected item and close the drop-down. 
+<b>Single selection</b> If the drop-down is already open, pressing the <kbd>Tab</kbd> or <kbd>Shift+Tab</kbd> key will update the selected item and close the drop-down. 
 <br />
-**Multiple selection** If the drop-down is already open, pressing the <kbd>Tab</kbd> or <kbd>Shift+Tab</kbd> key will close the drop-down.
+<b>Multiple selection</b> If the drop-down is already open, pressing the <kbd>Tab</kbd> or <kbd>Shift+Tab</kbd> key will close the drop-down.
 </td>
 <td>
 If the drop-down is already open, pressing the <kbd>Tab</kbd> or <kbd>Shift+Tab</kbd> key will update selected item and close the drop-down.

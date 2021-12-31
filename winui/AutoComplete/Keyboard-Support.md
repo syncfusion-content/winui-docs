@@ -86,7 +86,7 @@ Moves the focus to the next item from the current focused item.
 - 
 </td>
 <td>
-Move the focus on selected items from right to left. 
+Move the focus on selected items from right to left when the textbox has focus. 
 </td>
 </tr>
 <tr>
@@ -97,7 +97,7 @@ Move the focus on selected items from right to left.
 -
 </td>
 <td>
-Moves the focus on multiple selected items from left to right. 
+Moves the focus on multiple selected items from left to right when the textbox has focus. 
 </td>
 </tr>
 
