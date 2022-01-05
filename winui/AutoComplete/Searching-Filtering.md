@@ -87,7 +87,7 @@ For e.g. After typing `5` in selection box.
 
 ### Searching based on DisplayMemberPath
 
-Searching will be performed based on the `DisplayMemberPath` property while entering the text into the selection box when `TextMemberPath` is `null` or `string.Empty`. If `DisplayMemberPath` is `null`, searching  will be performed based on the class name with namespace of the item.
+Searching will be performed based on the `DisplayMemberPath` property while entering the text into the selection box when `TextMemberPath` is `null` or `string.Empty`. If `DisplayMemberPath` is `null` or `string.Empty`, searching  will be performed based on the class name with namespace of the item.
 
 {% tabs %}
 {% highlight xaml %}

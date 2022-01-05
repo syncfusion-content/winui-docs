@@ -51,7 +51,7 @@ For e.g. After typing `4` in selection box.
 
 ## Non-Editable mode Searching based on DisplayMemberPath
 
-In non-editable mode, searching will be performed based on the `DisplayMemberPath` property when user input is received in drop-down. If `DisplayMemberPath` is `null`,  searching will be performed based on the class name with namespace of the item.
+In non-editable mode, searching will be performed based on the `DisplayMemberPath` property when user input is received in drop-down. If `DisplayMemberPath` is `null` or `string.Empty`,  searching will be performed based on the class name with namespace of the item.
 
 {% tabs %}
 {% highlight xaml %}
@@ -75,8 +75,6 @@ comboBox.DisplayMemberPath = "ID";
 For e.g. After typing `4` in drop-down.
 
 ![WinUI ComboBox text searching based on DisplayMemberPath](Searching_images/winui-combobox-displaymemberpath-searching.png)
-
-N> If `TextMemberPath` and `DisplayMemberPath` are `null`, searching will be performed based on the class name with namespace of the item.
 
 ## Auto appending of text
 
