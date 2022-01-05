@@ -15,7 +15,7 @@ The [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.S
 
 The [TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_TextMemberPath) and [DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_DisplayMemberPath) properties of `ComboBox` control specify the property path, by which the searching must be done when a custom data is bound to the `ItemsSource` property.
 
-`TextMemberPath` - Specifies the property path, by which the searching must be done when user input is received in the selection box portion of the `ComboBox` control. The default value is `String.Empty`.
+`TextMemberPath` - Specifies the property path, by which the searching must be done when user input is received in the selection box portion of the `ComboBox` control. The default value is `String.Empty`. When `TextMemberPath` is `null` or `string.Empty`, searching will be performed based on `DisplayMemberPath`. When both the properties have a `null` or `string.Empty` value, searching will be performed based on the class name with namespace of the item.
 
 `DisplayMemberPath` - Specifies the property path, by which the searching must be done when user input is received in the drop-down portion of the `ComboBox` control. The default value is `String.Empty`.
 
@@ -23,7 +23,7 @@ N> `TextMemberPath` and `DisplayMemberPath` will be effective for the collection
 
 ## Edit mode Searching based on TextMemberPath
 
-In edit mode, searching will be performed based on the `TextMemberPath` property while entering the text into the selection box. If `TextMemberPath` is set to `null`, searching will be disabled. Edit mode searching will not be performed based on the `DisplayMemberPath` property.
+In edit mode, searching will be performed based on the `TextMemberPath` property while entering the text into the selection box. When `TextMemberPath` is `null` or `string.Empty`, searching will be performed based on `DisplayMemberPath`. When both the properties have a `null` or `string.Empty` value, searching will be performed based on the class name with namespace of the item.
 
 {% tabs %}
 {% highlight xaml %}
@@ -51,7 +51,7 @@ For e.g. After typing `4` in selection box.
 
 ## Non-Editable mode Searching based on DisplayMemberPath
 
-In non-editable mode, searching will be performed based on the `DisplayMemberPath` property while entering the text into the selection box. If `DisplayMemberPath` is `null`, searching will be disabled. Non-editable mode searching will not be performed based on the `TextMemberPath` property.
+In non-editable mode, searching will be performed based on the `DisplayMemberPath` property when user input is received in drop-down. If `DisplayMemberPath` is `null`,  searching will be performed based on the class name with namespace of the item.
 
 {% tabs %}
 {% highlight xaml %}
