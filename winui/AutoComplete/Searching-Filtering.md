@@ -15,15 +15,17 @@ The [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Edito
 
 The `TextMemberPath` and `DisplayMemberPath` properties of AutoComplete control specify the property path, by which the searching must be done when a custom data is bound to the `ItemsSource` property.
 
-[TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_TextMemberPath) - Specifies the property path whose value is used to perform searching based on user input received in the selection box portion of the `AutoComplete` control. The default value is `string.Empty`. When `TextMemberPath` is `null` or `string.Empty`, searching will be performed based on `DisplayMemberPath`. When both the properties have a `null` or `string.Empty` value, searching will be performed based on the class name with namespace of the item.
+[TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_TextMemberPath) - Specifies the property path whose value is used to perform searching based on user input received in the selection box portion of the `AutoComplete` control. The default value is `string.Empty`. When `TextMemberPath` is `null` or `string.Empty`, searching will be performed based on `DisplayMemberPath`. 
 
 [DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_DisplayMemberPath) - Specifies the property path whose value is displayed as text in the drop-down. The default value is `string.Empty`.
 
 N> `DisplayMemberPath` and `TextMemberPath` will be effective for the collection item that holds two or more properties in it.
 
+N> When both the `TextMemberPath` and `DisplayMemberPath` properties have a `null` or `string.Empty` value, searching will be performed based on the class name with namespace of the item.
+
 ### Searching based on TextMemberPath
 
-Searching will be performed based on the `TextMemberPath` property while entering the text into the selection box. If `TextMemberPath` is `null` or `string.Empty`, searching will be performed based on `DisplayMemberPath`. When both the properties have a `null` or `string.Empty` value, searching will be performed based on the class name with namespace of the item.
+Searching will be performed based on the `TextMemberPath` property while entering the text into the selection box. If `TextMemberPath` is `null` or `string.Empty`, searching will be performed based on `DisplayMemberPath`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -87,7 +89,7 @@ For e.g. After typing `5` in selection box.
 
 ### Searching based on DisplayMemberPath
 
-Searching will be performed based on the `DisplayMemberPath` property while entering the text into the selection box when `TextMemberPath` is `null` or `string.Empty`. If `DisplayMemberPath` is `null` or `string.Empty`, searching  will be performed based on the class name with namespace of the item.
+Searching will be performed based on the `DisplayMemberPath` property while entering the text into the selection box when `TextMemberPath` is `null` or `string.Empty`. 
 
 {% tabs %}
 {% highlight xaml %}
