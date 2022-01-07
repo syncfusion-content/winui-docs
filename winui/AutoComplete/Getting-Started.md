@@ -67,7 +67,7 @@ namespace GettingStarted
 
 ## Populating items using data binding
 
-The `AutoComplete` can be bound to an external data source using the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_ItemsSource) property. Now, let us create Model and ViewModel classes to populate items with social media details in `AutoComplete`.
+The `AutoComplete` can be bound to an external data source using the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_ItemsSource) property. Now, let us create Model and ViewModel classes to populate items with social media details in `AutoComplete`.
 
 **Step 1:** Define a simple model class 'SocialMedia' with fields 'ID' and 'Name', and then populate social media data in the 'SocialMediaViewModel'.
 
@@ -154,9 +154,9 @@ N> Set the 'SocialMediaViewModel' instance as the `DataContext` of your control;
 
 The `AutoComplete` control is populated with the list of social media. However, because the 'SocialMedia' model contains two properties such as 'Name' and 'ID', it is necessary to intimate, which property should be a display value in the selection box portion and drop-down suggestion of the `AutoComplete` control.
 
-[TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_TextMemberPath) - This property path is used to get the value for displaying in the selection box portion of the `AutoComplete` control when an item is selected. The default value is `String.Empty`.
+[TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TextMemberPath) - This property path is used to get the value for displaying in the selection box portion of the `AutoComplete` control when an item is selected. The default value is `String.Empty`.
 
-[DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_DisplayMemberPath) - This property path is used to specify the name or path of the property displayed for each data item in the drop-down list. The default value is `String.Empty`.
+[DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_DisplayMemberPath) - This property path is used to specify the name or path of the property displayed for each data item in the drop-down list. The default value is `String.Empty`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -179,7 +179,7 @@ autoComplete.TextMemberPath = "Name";
 
 ## Selection
 
-The `AutoComplete` allows the user to select single or multiple items from the drop-down list by clicking the `Enter` key or losing focus from the text box. To change the selection mode either single or multi-selection, set the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectionMode) property as `Single` or `Multiple`.
+The `AutoComplete` allows the user to select single or multiple items from the drop-down list by clicking the `Enter` key or losing focus from the text box. To change the selection mode either single or multi-selection, set the SelectionMode property as `Single` or `Multiple`.
 
 {% tabs %}
 {% highlight xaml %}
