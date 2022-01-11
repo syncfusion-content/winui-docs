@@ -11,15 +11,21 @@ documentation: ug
 
 The [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control provides rich text searching and filtering functionality.
 
-## Searching based on TextMemberPath
+## Searching based on member path
 
-Searching will be performed based on the `TextMemberPath` property while entering the text into the selection box. If `TextMemberPath` is set to `null` or `string.Empty`, searching will be disabled.
+The `TextMemberPath` and `DisplayMemberPath` properties of AutoComplete control specify the property path, by which the searching must be done when a custom data is bound to the `ItemsSource` property.
+
+[TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_TextMemberPath) - Specifies the property path whose value is used to perform searching based on user input received in the selection box portion of the `AutoComplete` control. The default value is `string.Empty`. When `TextMemberPath` is `null` or `string.Empty`, searching will be performed based on `DisplayMemberPath`. 
 
 [DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_DisplayMemberPath) - Specifies the property path whose value is displayed as text in the drop-down. The default value is `string.Empty`.
 
-[TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_TextMemberPath) - Specifies the property path whose value is used to perform searching based on user input. The default value is `string.Empty`. When `TextMemberPath` is `string.Empty`, searching will be disabled for the collection item that holds two or more properties in it.
-
 N> `DisplayMemberPath` and `TextMemberPath` will be effective for the collection item that holds two or more properties in it.
+
+N> When both the `TextMemberPath` and `DisplayMemberPath` properties have a `null` or `string.Empty` value, searching will be performed based on the class name with namespace of the item.
+
+### Searching based on TextMemberPath
+
+Searching will be performed based on the `TextMemberPath` property while entering the text into the selection box. If `TextMemberPath` is `null` or `string.Empty`, searching will be performed based on `DisplayMemberPath`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -77,11 +83,34 @@ autoComplete.TextMemberPath = "ID";
 {% endhighlight %}
 {% endtabs %}
 
-For e.g. After typing `4` in selection box.
+For e.g. After typing `5` in selection box.
 
 ![WinUI AutoComplete text searching based on TextMemberPath](Searching_images/winui-autocomplete-textmemberpath-searching.png)
 
-N> If `TextMemberPath` is `null`, searching will be performed based on the class name with namespace of the item.
+### Searching based on DisplayMemberPath
+
+Searching will be performed based on the `DisplayMemberPath` property while entering the text into the selection box when `TextMemberPath` is `null` or `string.Empty`. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfAutoComplete ItemsSource="{Binding SocialMedias}"
+                        DisplayMemberPath="Name" />
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+autoComplete.DisplayMemberPath = "Name";
+
+{% endhighlight %}
+{% endtabs %}
+
+For e.g. After typing `T` in selection box, social medias which have starting letter `T` will be listed in dropdown.
+
+![WinUI AutoComplete text searching based on DisplayMemberPath](Searching_images/winui-autocomplete-displaymemberpath-searching.png)
+
+N> `DisplayMemberPath` cannot be used when `ItemTemplate` is specified.
 
 ## Filtering Mode
 
