@@ -10,11 +10,11 @@ documentation: ug
 # Localization of Syncfusion WinUI controls
 
 Localization is the process of making an application multilingual by formatting the content according to the cultures. This involves configuring the application for a specific language. Culture is the combination of language and location. For example, 
- `en-US` is the culture for English spoken in the United States; `en-GB` is the culture for English spoken in Great Britain. Syncfusion WinUI controls can be localized by adding resource files for each language.
+ `en-US` is the culture of English spoken in the United States, while `en-GB` is the culture of English spoken in Great Britain. Syncfusion WinUI controls can be localized by adding resource files for each language.
 
 ## Changing application culture
 
-The application culture can be changed by assigning the `CultureInfo.CurrentUICulture` to the desired language in the constructor of the main page. While changing the application culture, localization can be done by creating a .resw file.
+The application culture can be changed by assigning the `CultureInfo.CurrentUICulture` to the desired language in the constructor of the main page. Localization can be done while changing the application culture by creating a.resw file.
 
 {% tabs %}
 
@@ -39,7 +39,7 @@ The following steps can be used to generate .resw files for any language:
 
 N> The default resource files of all Syncfusion WinUI libraries can be obtained from [GitHub](https://github.com/syncfusion/winui-controls-localization-resource-files).
 
-1) Right-click the project and add a New folder named "Resources".
+1) Right-click the project and add a New folder named as "Resources".
 
 2) Add another folder and name the folder with "Culture name". For example, "de" for German culture. Find the supported culture codes from [here](https://docs.microsoft.com/en-us/windows/uwp/app-resources/how-rms-matches-lang-tags). 
 
@@ -47,9 +47,9 @@ N> The default resource files of all Syncfusion WinUI libraries can be obtained 
 
 ![WinUI DataGrid resw file](Localization-images/resources-in-winui-project.png)
 
-N> If the `SfDataGrid` control is used in the application, copy and paste the `Syncfusion.Grid.WinUI.resw` (SfDataGrid present in Syncfusion.Grid.WinUI library) file into the application under Resources folder. So, now you know the key names and values of default strings used in Syncfusion.Grid.WinUI library.
+N> If the `SfDataGrid` control is used in the application, copy and paste the `Syncfusion.Grid.WinUI.resw` (SfDataGrid present in the Syncfusion.Grid.WinUI library) file into the application under Resources folder. So, now you know the key names and values of the default strings in the Syncfusion.Grid.WinUI library.
 
-4) Now, the key names from default resource files can be defined and assigned values based on the culture.
+4) Now, the key names from default resource files can be defined and assigned values based on culture.
 
 ![WinUI DataGrid Localization](Localization-images/winui-datagrid-resource-keys.png)
 

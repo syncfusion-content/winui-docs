@@ -11,11 +11,11 @@ documentation: ug
 
 ## Syncfusion WinUI control panel
 
-To explore Syncfusion WinUI controls and components, open `Syncfusion WinUI Controls Panel` by searching it from Start and Open. 
+To explore Syncfusion WinUI controls and components, open the `Syncfusion WinUI Controls Panel` by searching it from Start and Open. 
 
 ![WinUI Control Panel Search](Guide-to-run-the-samples-images/winui-control-panel-search.png)
 
-In another way, open the Control Panel from the following installed location,
+In another way, open the Control Panel from the following installed location.
 
 C:\Program Files (x86)\Syncfusion\Essential Studio\WinUI\{{ site.releaseversion }}\Infrastructure\Launcher\Syncfusion WinUI Control Panel.exe 
 
@@ -35,15 +35,15 @@ The Syncfusion WinUI desktop controls can be explored in the Visual Studio by cl
 
 * The individual control samples can also be run by exploring the individual control project.
 
-For example, below there is a demonstration to run an individual `Chart` control project in Visual Studio.
+For example, following is a demonstration to run an individual `Chart` control project in Visual Studio.
 
 ![Exploring the Syncfusion WinUI individual control project](Guide-to-run-the-samples-images/exploring-individual-control-project.png)
 
-* Open a standalone executable project desktop (not a lib project) in the Visual Studio which is available under the category name.
+* Open a standalone executable project desktop (not a lib project) in the Visual Studio, which is available under the category name.
 
  ![Open the standalone WinUI project in Visual Studio](Guide-to-run-the-samples-images/open-standalone-winui-project-in-visual-studio-new.png)
 
-* Build and deploy the individual control executable project and run the application.
+* Build and deploy the individual control executable project, then run the application.
 
 ![Running an individual control project](Guide-to-run-the-samples-images/run-induvidual-control-project.png)
 
@@ -54,4 +54,4 @@ For example, below there is a demonstration to run an individual `Chart` control
 
 ## Download demos from online (clone from github repository)
 
-Explore the Syncfusion WinUI controls using [GitHub WinUI demos](https://github.com/syncfusion/winui-demos) where all WinUI demos are configured using `NuGet` to run without installing Syncfusion WinUI Studio.
+Explore the Syncfusion WinUI controls using [GitHub WinUI demos](https://github.com/syncfusion/winui-demos), where all WinUI demos are configured using `NuGet` to run without installing Syncfusion WinUI Studio.
