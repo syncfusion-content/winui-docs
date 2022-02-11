@@ -7,6 +7,7 @@ control: Themes
 documentation: ug
 ---
 
+
 # Themes for Syncfusion WinUI Controls
 
 Themes provide a sense of visual continuity for the Windows apps. 
