@@ -60,7 +60,7 @@ I> Before installing the patch, ensure that the corresponding Essential Studio v
    
 ## Patch Assembly Version Format
    
-In the patch assembly, the **File Version** and **Product Version** will be different. Product Version will be the release version, and file version will be the increment of the release versions' **revision** number. For each patch, the file version will be a different one. You can differentiate between the build and patch assemblies by file version. 
+In the patch assembly, the **File Version** and **Product Version** will be different. Product version will be the release version, and file version will be the increment of the release version **revision** number. For each patch, the file version will be a different one. You can differentiate between the build and patch assemblies by file version. 
    
 **File Version of the assembly shipped in build:**
    

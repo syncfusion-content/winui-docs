@@ -14,7 +14,7 @@ Localization is the process of making an application multilingual by formatting 
 
 ## Changing application culture
 
-The application culture can be changed by assigning the `CultureInfo.CurrentUICulture` to the desired language in the constructor of the main page. Localization can be done while changing the application culture by creating a.resw file.
+The application culture can be changed by assigning the `CultureInfo.CurrentUICulture` to the desired language in the constructor of the main page. Localization can be done while changing the application culture by creating a .resw file.
 
 {% tabs %}
 
