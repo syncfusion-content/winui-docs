@@ -9,7 +9,7 @@ documentation: ug
 
 # Searching and Filtering in WinUI AutoComplete (SfAutoComplete)
 
-The [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control provides rich text searching and filtering functionality.
+The [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control allows for rich text searching and filtering functionality.
 
 ## Searching based on member path
 
@@ -17,7 +17,7 @@ The `TextMemberPath` and `DisplayMemberPath` properties of AutoComplete control 
 
 [TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_TextMemberPath) - Specifies the property path whose value is used to perform searching based on user input received in the selection box portion of the `AutoComplete` control. The default value is `string.Empty`. When `TextMemberPath` is `null` or `string.Empty`, searching will be performed based on `DisplayMemberPath`. 
 
-[DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_DisplayMemberPath) - Specifies the property path whose value is displayed as text in the drop-down. The default value is `string.Empty`.
+[DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_DisplayMemberPath) - Specifies the property path whose value is displayed as text in the drop-down menu. The default value is `string.Empty`.
 
 N> `DisplayMemberPath` and `TextMemberPath` will be effective for the collection item that holds two or more properties in it.
 
@@ -25,7 +25,7 @@ N> When both the `TextMemberPath` and `DisplayMemberPath` properties have a `nul
 
 ### Searching based on TextMemberPath
 
-Searching will be performed based on the `TextMemberPath` property while entering the text into the selection box. If `TextMemberPath` is `null` or `string.Empty`, searching will be performed based on `DisplayMemberPath`. 
+Searching will be performed based on the `TextMemberPath` property, while entering the text into the selection box. If `TextMemberPath` is `null` or `string.Empty`, searching will be performed based on `DisplayMemberPath`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -106,22 +106,21 @@ autoComplete.DisplayMemberPath = "Name";
 {% endhighlight %}
 {% endtabs %}
 
-For e.g. After typing `T` in selection box, social medias which have starting letter `T` will be listed in dropdown.
+For e.g. After typing `T` in selection box, social medias which have starting letter `T` will be listed in drop-down.
 
 ![WinUI AutoComplete text searching based on DisplayMemberPath](Searching_images/winui-autocomplete-displaymemberpath-searching.png)
 
 N> `DisplayMemberPath` cannot be used when `ItemTemplate` is specified.
 
-## Filtering Mode
+## Filtering mode
 
-The [TextSearchMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_SelectionMode) property of the `AutoComplete` can be used to regulate how the control behaves when it receives user input. The default text filtering type is `StartsWith`, ignoring accent and it is case insensitive. The available text filter modes are,
+The [TextSearchMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_SelectionMode) property of the `AutoComplete` can be used to regulate how the control behaves when it receives user input. The default text filtering type is `StartsWith`, which ignores accent and is case insensitive. The text filter modes that are available are as follows,
 
 * StartsWith
 * Contains
 
 ### Filter with beginning text
-
-To filter the matching items based on the starting text, set the `TextSearchMode` property value is `StartWith`. The first item which fits the user input in the drop-down list, will be highlighted. 
+Set the `TextSearchMode` property value to `StartWith` to filter matching items based on the starting text. The first item in the drop-down list that matches the user input will be highlighted. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -148,7 +147,7 @@ autoComplete.TextSearchMode = AutoCompleteTextSearchMode.StartsWith;
 
 ### Filter with contains text
 
-To filter the matching items based on the containing specific text, set the `TextSearchMode` property value is `Contains`. The first item which fits the user input in the drop-down list, will be highlighted. 
+Set the `TextSearchMode` property value to `Contains` to filter the matching items based on the containing specific text. The first item  in the drop-down list that matches the user input will be highlighted. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -175,9 +174,9 @@ autoComplete.TextSearchMode = AutoCompleteTextSearchMode.Contains;
 
 ### Custom filtering
 
-The `AutoComplete` control provides support to apply your own custom filter logic to suggests the items based on your filter criteria by using the [FilterBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_FilterBehavior) and [SearchBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_SearchBehavior) property. The default value of `FilterBehavior` and `SearchBehavior` is `null`. 
+The `AutoComplete` control provides support to apply your own custom filter logic to suggest items based on your filter criteria by using the [FilterBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_FilterBehavior) and [SearchBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_SearchBehavior) properties. The default value of `FilterBehavior` and `SearchBehavior` is `null`. 
 
-Now, let's create a custom filtering class to apply your filter logic to `AutoComplete` control by following steps.
+Now, let us create a custom filtering class to apply your filter logic to `AutoComplete` control by following these steps:
 
 **Step 1:** Create a class that derives from the [IAutoCompleteFilterBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteFilterBehavior.html) interface.
 
@@ -195,10 +194,10 @@ public class CityFilteringBehavior : IAutoCompleteFilterBehavior
 {% endhighlight %}
 {% endtabs %}
 
-**Step 2:** Then, implement the [GetMatchingIndexes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteFilterBehavior.html#Syncfusion_UI_Xaml_Editors_AutoCompleteFilterBehavior_GetMatchingItemsAsync_Syncfusion_UI_Xaml_Editors_SfAutoComplete_Syncfusion_UI_Xaml_Editors_AutoCompleteFilterInfo_) method of `IAutoCompleteFilterBehavior` interface to create your own suggestion list (containing the indices of the filtered items) based on the text entered in the `AutoComplete` control that needs to be shown in drop-down. The `GetMatchingIndexes` method contains following arguments.
+**Step 2:** Then, implement the [GetMatchingIndexes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteFilterBehavior.html#Syncfusion_UI_Xaml_Editors_AutoCompleteFilterBehavior_GetMatchingItemsAsync_Syncfusion_UI_Xaml_Editors_SfAutoComplete_Syncfusion_UI_Xaml_Editors_AutoCompleteFilterInfo_) method of `IAutoCompleteFilterBehavior` interface to create your own suggestion list (containing the indices of the filtered items) based on the text entered in the `AutoComplete` control that needs to be shown in the drop-down. The `GetMatchingIndexes` method contains following arguments:
 
-* [source](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) - The owner of the filter behavior, which holds information about `ItemsSource`, `Items` properties, and so on.
-* [filterInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteFilterInfo.html) - Contains details about the text entered in `AutoComplete` control. Using this text, you can prepare suggestion list which gets displayed in drop down list. 
+* [source](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) - The owner of the filter behavior, which holds information about `ItemsSource,` `Items` properties, and so on.
+* [filterInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteFilterInfo.html) - Contains details about the text entered in `AutoComplete` control. Using this text, you can prepare suggestion list, which gets displayed in the drop-down list. 
 
 The following gif shows how to display cities in a drop-down based on the country name entered in the `AutoComplete` control.
 
@@ -238,7 +237,7 @@ public class CustomFilter : IAutoCompleteFilterBehavior
 {% endhighlight %}
 {% endtabs %}
 
-The following gif demonstrates displaying the cities in drop-down based on the country name entered in the `AutoComplete` control.
+The following gif demonstrates how to display cities in the drop-down based on the country name entered in the `AutoComplete` control.
 
 ![WinUI AutoComplete filter the items based on custom filtering logic.](Searching_images/winui-autocomplete-custom-filtering.png)
 
@@ -264,11 +263,10 @@ public class CapitalCitySearchingBehavior : IAutoCompleteSearchBehavior
 
 **Step 2:** Then, implement the [GetHighlightIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteSearchBehavior.html#Syncfusion_UI_Xaml_Editors_AutoCompleteSearchBehavior_GetHighlightIndex_Syncfusion_UI_Xaml_Editors_SfAutoComplete_Syncfusion_UI_Xaml_Editors_AutoCompleteSearchInfo_) method of the `IAutoCompleteSearchBehavior` interface to initially select any item from the filtered list in the `AutoComplete` control drop-down. The `GetHighlightIndex` method contains the following arguments.
 
-* [source](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) - The owner of the search behavior, which holds information about `ItemsSource`, `Items` properties, and so on.
-* [searchInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteSearchInfo.html) - Contains details about the filtered items based on the text entered in `AutoComplete` control. Using this list, you can selected item which is displayed in drop down list. 
+* [source](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) - The owner of the search behavior, which holds information about `ItemsSource,` `Items` properties, and so on.
+* [searchInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteSearchInfo.html) - Contains information about the filtered items based on the text entered in `AutoComplete` control. You can select item from the drop-down list using this list. 
 
-The following code demonstrates initially which item to be selected from the filtered list of drop-down in the `AutoComplete` control. Here, the capital cities will be selected while entering its country name.
-
+The following code demonstartes initially how to select an item from the filtered list of drop-down in the 'AutoComplete' control. When entering the country's name, the capital cities will be selected.
 {% tabs %}
 {% highlight C# %}
 
@@ -309,15 +307,15 @@ public class CapitalCitySearchingBehavior : IAutoCompleteSearchBehavior
 {% endhighlight %}
 {% endtabs %}
 
-The following gif demonstrates selecting the capital city in the drop-down based on the country name entered in the `AutoComplete` control.
+The following gif demonstrates how to select the capital city from the drop-down based on the country name entered in the `AutoComplete` control.
 
 ![WinUI AutoComplete filter the items based on custom filtering and searching logic.](Searching_images/winui-autocomplete-custom-filtering-searching.gif)
 
 ## Load asynchronous items
 
-Load the data dynamically at runtime based on typed input. This dynamic loading can be done while performing custom filtering using `CustomFilter` property.
+Load the data dynamically at runtime based on typed input. This dynamic loading can be done while performing custom filtering using the `CustomFilter` property.
 
-`GetMatchingItemsAsync` method of `IAutoCompleteFilterBehavior` helps to perform filtering operation on different threads without blocking the current thread by using `await Task.Run()`.
+The `GetMatchingItemsAsync` method of `IAutoCompleteFilterBehavior` helps you to perform filtering operations on different threads without blocking the current thread by using `await Task.Run()`.
 
 **Step 1:** Create a class that derives from the `IAutoCompleteFilterBehavior` interface and add your custom filter logic in `GetMatchingItemsAsync` method to load the run time items based on typed input.
 
@@ -375,6 +373,6 @@ public class CustomAsyncFilter : IAutoCompleteFilterBehavior
 {% endhighlight %}
 {% endtabs %}
 
-The image below shows 1 lakh of data being loaded asynchronously in a drop-down at runtime based on typed input.
+The following image shows 1 lakh of data being loaded asynchronously in a drop-down at runtime based on typed input.
 
 ![WinUI AutoComplete uses custom filtering logic to load asynchronous runtime items.](Searching_images/winui-autocomplete-asynchronous-items.png)
