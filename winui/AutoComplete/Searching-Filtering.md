@@ -266,7 +266,7 @@ public class CapitalCitySearchingBehavior : IAutoCompleteSearchBehavior
 * [source](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) - The owner of the search behavior, which holds information about `ItemsSource,` `Items` properties, and so on.
 * [searchInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteSearchInfo.html) - Contains information about the filtered items based on the text entered in `AutoComplete` control. You can select item from the drop-down list using this list. 
 
-The following code demonstartes initially how to select an item from the filtered list of drop-down in the 'AutoComplete' control. When entering the country's name, the capital cities will be selected.
+The following code demonstrates initially how to select an item from the filtered list of drop-down in the 'AutoComplete' control. When entering the country's name, the capital cities will be selected.
 {% tabs %}
 {% highlight C# %}
 
