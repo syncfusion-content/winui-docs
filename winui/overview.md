@@ -11,11 +11,11 @@ documentation: ug
 
 The Syncfusion WinUI Controls are the suite, ever needed to create state of art WinUI applications.
 
-## How to best read this user guide
+## How to read this user guide most effectively
 
-* The best way to get started would be to read the “Getting Started” section of the documentation for the component that is to be started using first. The “Getting Started” guide gives just enough information to know before starting to write code. This is the only section that is recommended to be read end-to-end before starting to write code, since all other information can be referred when needed.
-* After being familiar with the basics of using the component, the next step would be to start integrating the component into the application. A good starting point is to refer to the code examples in the online or offline sample browser that contains hundreds of code examples, as it is very likely that to find a code example that resembles the intended usage scenario.
-* After integrating the component into application using one of the code examples as a starting point, it is likely to want for additional information on specific features and API. The best option is to search the specific topic using the search box that is available at the top of the user guide.
+* The best way to get started is to read the “Getting Started” section of the documentation for the component that will be used. The “Getting Started” guide gives just enough information to know before starting to write code. This is the only section that is recommended to be read end-to-end before starting to write code, since all other information can be referred when needed.
+* After being familiar with the basics of using the component, the next step would be to start integrating it into the application. A good starting point is to refer to the code examples in the online or offline sample browser, which contains hundreds of code examples, as it is very likely that you will find a code example that resembles the intended usage scenario.
+* After incorporating the component into an application using one of the code examples as a starting point, it is likely that you will want more information on specific features and API. The best option is to use the search box at the top of the user guide to find a specific topic.
 * Another valuable resource is the API reference that provides detailed information on the object hierarchy as well as the settings available on every object.
 
 ## Controls list
@@ -222,6 +222,6 @@ The Syncfusion WinUI Controls are the suite, ever needed to create state of art 
 
 ## Support and feedback
 
-If you are unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://www.syncfusion.com/support/directtrac/incidents).
+If you are unable to find the information you are looking for in the self-help resources listed above, please contact us by creating a [support ticket](https://www.syncfusion.com/support/directtrac/incidents).
 
-Don't see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/winui).
+Do not see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/winui).

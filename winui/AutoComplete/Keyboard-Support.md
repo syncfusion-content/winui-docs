@@ -9,11 +9,11 @@ documentation: ug
 
 # Keyboard support in WinUI AutoComplete (SfAutoComplete)
 
-This section explains the shortcut keys that are supported in [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control. 
+This section explains the shortcut keys that are supported by the [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control. 
 
 ## Keyboard behaviors
 
-The following table explains shortcut key for opening and closing drop-down.
+The following table explains how to use shortcut key for opening and closing drop-down.
 
 <table>
 <tr>
@@ -42,7 +42,7 @@ If the drop-down is already open, pressing the <kbd>Tab</kbd> or <kbd>Shift+Tab<
 </tr>
 </table>
 
-The following table explains shortcut key to navigate and highlight the items in drop-down list.
+The following table explains how to use the shortcut key to navigate and highlight the items in a drop-down list.
 
 <table>
 <tr>
