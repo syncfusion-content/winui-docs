@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Apply the Patch for Major\Service Pack Version | Syncfusion
-description: Learn here about how to apply the patch for major or service pack version of Syncfusion Essential Studio.
+title: Apply the Patch for Major or Service Pack Version | Syncfusion
+description: Learn here about how to apply the patch for major or service pack versions of Syncfusion Essential Studio.
 platform: winui
 control: Essential Studio
 documentation: ug
@@ -9,15 +9,15 @@ documentation: ug
 
 # Applying the Patches
 
-Syncfusion provides patch installer for major version or service pack version, either to add new features or to fix issues. You have to install the patches in the order you have received.
+Syncfusion provides a patch installer for major versions or service pack versions, either to add new features or to fix issues. You must install the patches in the order that they were delivered to you.
 
 
-## Installing the Patch installer
+## Installing the patch installer
 
-The steps below show how to install a patch.
+The following steps show how to install a patch.
 
 
-I> Before installing the patch, ensure that corresponding Essential Studio version platform has been installed in your machine.
+I> Before installing the patch, ensure that the corresponding Essential Studio version platform has been installed on your machine.
 
 
 
@@ -48,7 +48,7 @@ I> Before installing the patch, ensure that corresponding Essential Studio versi
    
    ![Installation Progress](Patches_images/Installing-a-Patch-Setup_img5.png)
 
-   N> The patch is installed on your computer, and a dialog box appears when the installation is complete.
+   N> The patch is installed on your computer, and a dialog box appears when the installation is completed.
 
 
 
@@ -60,7 +60,7 @@ I> Before installing the patch, ensure that corresponding Essential Studio versi
    
 ## Patch Assembly Version Format
    
-In the patch assembly, the **File Version** and **Product Version** will be different. Product Version will be the release version and File Version will be the increment of the release version's **revision** number. For each patch, the File Version will be a different one. You can differentiate between the build and patch assemblies by File Version. 
+In the patch assembly, the **File Version** and **Product Version** will be different. Product version will be the release version, and file version will be the increment of the release version **revision** number. For each patch, the file version will be a different one. You can differentiate between the build and patch assemblies by file version. 
    
 **File Version of the assembly shipped in build:**
    
