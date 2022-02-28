@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WinUI AutoComplete | Syncfusion
-description: Learn how to get started with Syncfusion WinUI AutoComplete control and its suggestion list, and more in here.
+description: Learn how to get started with Syncfusion WinUI AutoComplete control and its suggestion list, as well as other topics, in this section.
 platform: WinUI
 control: SfAutoComplete
 documentation: ug
@@ -69,7 +69,7 @@ namespace GettingStarted
 
 The `AutoComplete` can be bound to an external data source using the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_ItemsSource) property. Now, let us create Model and ViewModel classes to populate items with social media details in `AutoComplete`.
 
-**Step 1:** Define a simple model class 'SocialMedia' with fields 'ID' and 'Name', and then populate social media data in the 'SocialMediaViewModel'.
+**Step 1:** Create a simple model class 'SocialMedia' with fields 'ID' and 'Name', and then populate social media data in the 'SocialMediaViewModel'.
 
 {% tabs %}
 {% highlight c# %}
@@ -150,7 +150,7 @@ autoComplete.ItemsSource = SocialMediaViewModel.SocialMedias;
 
 N> Set the 'SocialMediaViewModel' instance as the `DataContext` of your control; this is done to bind properties of 'SocialMediaViewModel' to `AutoComplete`.
 
-**Step 3:** Setting `TextMemberPath` and `DisplayMemberPath`.
+**Step 3:** Set the `TextMemberPath` and `DisplayMemberPath`.
 
 The `AutoComplete` control is populated with the list of social media. However, because the 'SocialMedia' model contains two properties such as 'Name' and 'ID', it is necessary to intimate, which property should be a display value in the selection box portion and drop-down suggestion of the `AutoComplete` control.
 
@@ -179,7 +179,7 @@ autoComplete.TextMemberPath = "Name";
 
 ## Selection
 
-The `AutoComplete` allows the user to select single or multiple items from the drop-down list by clicking the `Enter` key or losing focus from the text box. To change the selection mode either single or multi-selection, set the SelectionMode property as `Single` or `Multiple`.
+The `AutoComplete` allows the user to select single or multiple items from the drop-down list by clicking the `Enter` key or losing focus from the text box. To change the selection mode either single or multi-selection, set the `SelectionMode` property as `Single` or `Multiple`.
 
 {% tabs %}
 {% highlight xaml %}

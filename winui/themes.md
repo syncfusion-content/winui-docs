@@ -7,11 +7,12 @@ control: Themes
 documentation: ug
 ---
 
+
 # Themes for Syncfusion WinUI Controls
 
 Themes provide a sense of visual continuity for the Windows apps. 
 It allows you to customize the appearance of the application. 
-The theme affects the colors of the Control's background, foreground, border brush, font, etc. 
+The theme affects the colors of the Controls' background, foreground, border brush, font, etc. 
 
 ## Supported themes
 
