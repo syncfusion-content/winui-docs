@@ -140,7 +140,7 @@ The [CodabarBarcode] (https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ba
 ![CodabarBarcode](Symbology_Images/CodaBar.png)
 
 ### Code 11
-The [Code11Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code11Barcode.html) Symbology is used primarily for labelling telecommunications equipment and it has the following structure:
+The [Code11Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code11Barcode.html) Symbology is used primarily for labeling telecommunications equipment and it has the following structure:
 
 * Allows character set of digits (0-9) and dash (-).
 * Each character is encoded with 3 bars and 2 spaces.
