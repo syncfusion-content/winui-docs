@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Symbology Types in WinUI Barcode control | Syncfusion
-description: Learn here all about Symbology Types feature in Syncfusion WinUI Barcode control and it supports many variants of one and two dimensional barcodes.
+description: Learn here all about Symbology Types feature in Syncfusion WinUI Barcode control and it supports many variants of one and two-dimensional barcodes.
 platform: WinUI
 control: Barcode
 documentation: ug
 ---
 
 # Symbology Types in WinUI Barcode
-Barcode Symbology supports 12 variants of one dimensional and 3 variants of two dimensional barcodes.
+Barcode Symbology supports 12 variants of one-dimensional and 3 variants of two-dimensional barcodes.
 
-## One Dimensional Barcodes
-One Dimensional barcode is also called as linear barcode. The bars and spaces for each symbol in one dimensional barcodes are grouped in such a way to represent a specific ASCII character.
+## One-Dimensional Barcodes
+One-Dimensional barcode is also called as linear barcode. The bars and spaces for each symbol in one-dimensional barcodes are grouped in such a way to represent a specific ASCII character.
 
-The following table represents supported one dimensional barcode symbologies
+The following table represents supported one-dimensional barcode symbologies.
 
 <table>
 <tr>
@@ -121,11 +121,11 @@ ASCII 00-99(encodes each two digit with one code)
 N> [One dimensional Symbology Customization](https://help.syncfusion.com/winui/barcode/symbology-customization#one-dimensional-barcode-settings)
 
 ### Codabar
-The [CodabarBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.CodabarBarcode.html) is a discrete numerical symbology that is used in libraries, blood banks and a variety of other information processing applications.
+The [CodabarBarcode] (https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.CodabarBarcode.html) is a discrete numerical symbology used in libraries, blood banks, and other information processing applications.
 
 * Encodes only numeric characters and some special characters like dash (-), colon (:), slash (/), plus (+).
 * Each character has three bars and four spaces.
-* Uses characters of A, B, C, D as start and stop characters.
+* Uses A, B, C, D as start and stop characters.
 
 {% tabs %}
 {% highlight xaml %}
@@ -140,11 +140,11 @@ The [CodabarBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Bar
 ![CodabarBarcode](Symbology_Images/CodaBar.png)
 
 ### Code 11
-The [Code11Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code11Barcode.html) Symbology is used primarily for labeling the telecommunications equipment and it has the following structure.
+The [Code11Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code11Barcode.html) Symbology is used primarily for labelling telecommunications equipment and it has the following structure:
 
-* Allows character set of digits (0-9), dash (-).
+* Allows character set of digits (0-9) and dash (-).
 * Each character is encoded with 3 bars and 2 spaces.
-* Of these five elements, there may be two wide and three narrow elements or one wide and four narrow elements.
+* There may be two wide and three narrow elements or one wide and four narrow elements among these five elements.
 
 {% tabs %}
 {% highlight xaml %}
@@ -159,11 +159,11 @@ The [Code11Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barc
 ![Code11Barcode](Symbology_Images/Code11.png)
 
 ### Code 32
-The [Code32Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code32Barcode.html) is primarily used for coding pharmaceuticals, cosmetics, dietetics and it has the following structure:
+The [Code32Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code32Barcode.html) is primarily used for coding pharmaceuticals, cosmetics, and dietetics, and it has the following structure:
 
 * Starts with ‘A’ character (ASCII 65) that is not really encoded.
 * Encodes only the character set of length 8.
-* One digit for Checksum module 10 that is automatically calculated.
+* Checksum module 10 has one digit that is automatically calculated.
 
 {% tabs %}
 {% highlight xaml %}
@@ -178,11 +178,11 @@ The [Code32Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barc
 ![Code32Barcode](Symbology_Images/Code32.png)
 
 ### Code 39
-The [Code39Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code39Barcode.html) is a Barcode Symbology that encodes alphanumeric characters into a series of bars. It may be of any length, although more than 25 characters begin to push the bounds. This Symbology is the only type of the Barcode in common use that does not require a checksum.
+The [Code39Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code39Barcode.html) is a type of Barcode Symbology that encodes alphanumeric characters into a series of bars. It can be any length, though more than 25 characters begin to push the bounds. This is the only type of Barcode symbology that does not require a checksum.
 
 * Allows character set of digits (0-9), upper case alphabets (A-Z), and symbols like space, minus (-), plus (+), period (.), dollar sign ($), slash (/), and percent (%).
 * Always starts and ends with an asterisk (*) symbol, termed as start and stop character.
-* Each character is encoded with 5 bars and 4 spaces where 3 are wide and 6 are narrow.
+* Each character is encoded with 5 bars and 4 spaces, each of which is 3 are wide and 6 are narrow.
 
 {% tabs %}
 {% highlight xaml %}
@@ -197,7 +197,7 @@ The [Code39Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barc
 ![Code39Barcode](Symbology_Images/Code39.png)
 
 ### Code 39 Extended
-The [Code39ExtendedBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code39ExtendedBarcode.html) Symbology is an extended version of [Code39Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code39Barcode.html) which supports the full ASCII character set. It encodes lower case alphabets (a-z) as well as special characters in the keyboard.
+The [Code39ExtendedBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code39ExtendedBarcode.html) Symbology is an extended version of [Code39Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code39Barcode.html) that supports the full ASCII character set. It encodes lower case alphabets (a-z) as well as special characters in the keyboard.
 
 {% tabs %}
 {% highlight xaml %}
@@ -391,7 +391,7 @@ The [DataMatrixBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 ![DataMatrixBarcode](Symbology_Images/DataMatrix.png)
 
 ### Pdf417Barcode
-The [Pdf417Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Pdf417Barcode.html) is a two dimensional barcode and it can able to encode text, numbers, files and actual data bytes. It is mainly used in a variety of applications such as transport, identification cards, and inventory management.
+The [Pdf417Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Pdf417Barcode.html) is a two dimensional barcode and it can encode text, numbers, files, and actual data bytes. It is mainly used in a variety of applications such as transport, identification cards, and inventory management.
  
 {% tabs %}
 {% highlight xaml %}

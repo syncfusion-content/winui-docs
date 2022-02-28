@@ -1,7 +1,7 @@
 ---
 layout: post
 title: UI Customization in WinUI Calendar Date Picker control | Syncfusion
-description: Learn here all about how to customize dropdown calendar in Syncfusion WinUI Calendar Date Picker (SfCalendarDatePicker) control and more.
+description: Learn here all about how to customize drop-down calendar in Syncfusion WinUI Calendar Date Picker (SfCalendarDatePicker) control and more.
 platform: winui
 control:  SfCalendarDatePicker
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # UI customization in WinUI Calendar Date Picker (SfCalendarDatePicker)
 
-This section describes how to select a date from dropdown Calendar and its customization options in [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) control.
+This section describes how to select a date from drop-down calendar and the customization options in the [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) control.
 
 ## Hide clear button in textbox
 
@@ -33,11 +33,11 @@ sfCalendarDatePicker.ShowClearButton = false;
 ![WinUI CalendarDatePicker hide clear button](Getting-Started_images/winui-calendar-datepicker-hideclearbutton.png)
 ![WinUI CalendarDatePicker hide clear button](Getting-Started_images/winui-calendar-datepicker-showclearbutton.png)
 
-## Change dropdown alignment
+## Change drop-down alignment
 
-You can change the alignment of the dropdown calendar as full, center, left, right, top or bottom edge by using the [DropDownPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
+You can change the alignment of the drop-down calendar as full, center, left, right, top, or bottom edge by using the [DropDownPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
 
-N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then `Calendar Date Picker` smartly shifts the dropdown calendar alignment.
+N> If you change the drop-down alignment by using the `DropDownPlacement` property and there is not sufficient space, then `Calendar Date Picker` smartly shifts the drop-down calendar alignment.
 
 {% tabs %}
 {% highlight XAML %}
@@ -56,12 +56,12 @@ sfCalendarDatePicker.DropDownPlacement = FlyoutPlacementMode.Right;
 
 ![Changing Dropdown Alignment of WinUI CalendarDatePicker](Dropdown-Calendar_images/winui-calendar-datepicker-dropdown-placement.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown).
 
 
-## Change dropdown size
+## Change drop-down size
 
-You can change the size of dropdown calendar by using [DropDownWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_DropDownWidth) and [DropDownHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. The default value of `DropDownHeight` and `DropDownWidth` properties is `NaN`.
+You can change the size of drop-down calendar by using [DropDownWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_DropDownWidth) and [DropDownHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) properties. The default value of `DropDownHeight` and `DropDownWidth` properties is `NaN`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -82,11 +82,11 @@ sfCalendarDatePicker.DropDownHeight = 500;
 
 ![Changing Dropdown Size in WinUI CalendarDatePicker](Dropdown-Calendar_images/winui-calendar-datepicker-dropdown-size.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown).
 
 ## Hide days that is out of scope
 
-You can hide the days that are out-of-scope of current view in dropdown calendar by setting the [OutOfScopeVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_OutOfScopeVisibility) property value as **Hidden**. The default value of `OutOfScopeVisibility` property is **Enabled**.
+You can hide the days that are out of scope of the current view in the drop-down calendar by setting the [OutOfScopeVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_OutOfScopeVisibility) property value as **Hidden**. The default value of `OutOfScopeVisibility` property is set to **Enabled**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -105,12 +105,12 @@ sfCalendarDatePicker.OutOfScopeVisibility = OutOfScopeVisibility.Hidden;
 
 ![WinUI CalendarDatePicker displays Current Month Dates](Getting-Started_images/winui-calendar-datepicker-current-month.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction).
 
 
-## Customize individual items in Calendar
+## Customize individual items in calendar
 
-You can change the UI of specific cells in `Calendar Date Picker` dropdown calendar by using the [AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
+You can change the UI of specific cells in the `Calendar Date Picker` drop-down calendar by using the [AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
 
 1. Create a **EventDataConverter** class and set the special dates for specific events. 
 
@@ -174,7 +174,7 @@ public class EventDataConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-2. Create a **DataTemplate** to customize the date cells of Calendar. Now add the `Calendar` control inside the `FlyoutBase.AttachedFlyout` property and `DropDownFlyout` control.
+2. Create a **DataTemplate** to customize the date cells of calendar. Now, add the `Calendar` control inside the `FlyoutBase.AttachedFlyout` property and `DropDownFlyout` control.
 
 {% tabs %}
 {% highlight XAML %}
@@ -254,11 +254,11 @@ public class EventDataConverter : IValueConverter
 
 ![Customizing Specific Date Cells in WinUI CalendarDatePicker](Getting-Started_images/winui-calendar-datepicker-customization.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/CustomUI)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/CustomUI).
 
 ## Customize using theme keys
 
-You can customize the colors of day names and headers of month, year, decade and century by changing the theme keys values in a ResourceDictionary used in the `Calendar` control and by using the [`AttachedFlyout`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
+You can customize the colors of day names and headers of month, year, decade, and century by changing the theme keys values in a ResourceDictionary used in the `Calendar` control and by using the [`AttachedFlyout`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
 
 <table>
 <tr>
@@ -374,5 +374,5 @@ You can customize the colors of day names and headers of month, year, decade and
 
 ![Customizing Theme Keys in WinUI CalendarDatePicker](UI-Customization_images/winui-calendar-datepicker-theme-keys.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/CustomUI)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/CustomUI).
 

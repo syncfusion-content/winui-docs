@@ -41,10 +41,10 @@ The Barcode foreground color can be changed using [Foreground](https://docs.micr
 
 ![Barcode_Customization](Customization_Images/Barcode_Customization.png)
 
-N> In order for a barcode symbol to be recognized by a scanner, there must be an adequate contrast between the dark bars and the light spaces and not all the barcode scanners have support for colored barcodes.
+N> To be recognized by a scanner, a barcode symbol must have adequate contrast between the dark bars and the light spaces, and not all barcode scanners support colored barcodes.
 
 ## Module
-The width ratio of the wide and narrow bars can be customized using [Module](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_Module) property. 
+The width ratio of the wide and narrow bars can be customized using the [Module](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_Module) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -61,7 +61,7 @@ The width ratio of the wide and narrow bars can be customized using [Module](htt
 ![Module](Customization_Images/BarWidth.png)
 
 ## AutoModule
-The [QRBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcode.html) and [DataMatrixBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixBarcode.html) can be rendered based on the available control size if [AutoModule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_AutoModule) is set to **True**.
+The [QRBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcode.html) and [DataMatrixBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixBarcode.html) can be rendered based on the available control size, if [AutoModule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_AutoModule) is set to **True**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -78,10 +78,10 @@ AutoModule="True" ShowValue="False" Value="QRBarcode">
 
 ![AutoModule](Customization_Images/AutoModule.png)
 
-### Rotation Angle
-The [Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html) rotation can be changes by using [RotationAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_RotationAngle) property. The different angles can be set to [Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html) using [BarcodeRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.BarcodeRotation.html) enum values. 
+### Rotation angle
+The [Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html) rotation can be changed by using the[RotationAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_RotationAngle) property. The various angles can be set to [Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html) using [BarcodeRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.BarcodeRotation.html) enum values. 
 
-The [BarcodeRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.BarcodeRotation.html) enumeration has following four angles,
+The [BarcodeRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.BarcodeRotation.html) enumeration has following four angles:
 
 <table>
 <tr>
@@ -97,7 +97,7 @@ Description
 {{'[Angle 0](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.BarcodeRotation.html#Syncfusion_UI_Xaml_Barcode_BarcodeRotation_Angle0)'| markdownify }}
 </td>
 <td>
-Barcode can be rotated by 0 degree.
+Barcode can be rotated by 0 degrees.
 </td>
 </tr>
 <tr>
@@ -105,7 +105,7 @@ Barcode can be rotated by 0 degree.
 {{'[Angle 90](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.BarcodeRotation.html#Syncfusion_UI_Xaml_Barcode_BarcodeRotation_Angle90)'| markdownify }}
 </td>
 <td>
-Barcode can be rotated by 90 degree.
+Barcode can be rotated by 90 degrees.
 </td>
 </tr>
 <tr>
@@ -113,7 +113,7 @@ Barcode can be rotated by 90 degree.
 {{'[Angle 180](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.BarcodeRotation.html#Syncfusion_UI_Xaml_Barcode_BarcodeRotation_Angle180)'| markdownify }}
 </td>
 <td>
-Barcode can be rotated by 180 degree.
+Barcode can be rotated by 180 degrees.
 </td>
 </tr>
 <tr>
@@ -121,7 +121,7 @@ Barcode can be rotated by 180 degree.
 {{'[Angle 270](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.BarcodeRotation.html#Syncfusion_UI_Xaml_Barcode_BarcodeRotation_Angle270)'| markdownify }}
 </td>
 <td>
-Barcode can be rotated by 270 degree.
+Barcode can be rotated by 270 degrees.
 </td>
 </tr>
 </table>

@@ -13,7 +13,7 @@ This section explains the alignment and positioning functionalities available in
 
 ## Alignment of Badge
 
-you can align the `Badge` either horizontally or vertically by using the `HorizontalAlignment` or `VerticalAlignment` properties. The default value of `HorizontalAlignment` property is `Right` and `VerticalAlignment` property is `Top`.
+You can align the `Badge` either horizontally or vertically by using the `HorizontalAlignment` or `VerticalAlignment` properties. The default value of `HorizontalAlignment` property is `Right` and `VerticalAlignment` property is `Top`.
 
 <style>
 table, td, th { 
@@ -96,13 +96,13 @@ badge.Content = "99+";
 
 ![Alignment of the Badge control is changed](Getting-Started_images/Alignment.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features).
 
 ## Positioning of Badge
 
 You can change the horizontal or vertical position of the `Badge` either inside, outside or in the middle by using the [HorizontalAnchor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalAnchor) and [VerticalAnchor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalAnchor) properties. It will be placed based on the value of `HorizontalAlignment` and `VerticalAlignment` properties. The default value of `HorizontalAnchor` and `VerticalAnchor` properties is `Center`.
 
-For example, you will see how the `HorizontalAnchor` and  `VerticalAnchor` values working based on the `HorizontalAlignment` and `VerticalAlignment` values. Here, the value of `HorizontalAlignment` properties is `Right` and `VerticalAlignment` property is `Top`.
+For example, you will see how the `HorizontalAnchor` and  `VerticalAnchor` values work based on the `HorizontalAlignment` and `VerticalAlignment` values. Here, the value of `HorizontalAlignment` properties is `Right` and `VerticalAlignment` property is `Top`.
 
 <style>
 table, td, th { 
@@ -173,7 +173,7 @@ badge.Content = "99+";
 
 ![Position of the Badge control is changed](Getting-Started_images/Anchor.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features).
 
 ## Place the Badge any where on the container
 
@@ -211,9 +211,9 @@ badge.VerticalPosition = 0.8;
 
 ## Custom alignment and positioning of Badge
 
-By using the `HorizontalAlignment`, `VerticalAlignment`, `HorizontalAnchor` and `VerticalAnchor` properties, you can place `Badge` only at particular position. If you want to place the `Badge` at custom position, use the `HorizontalPosition` & `VerticalPosition` properties and [HorizontalAnchorPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalAnchorPosition) & [VerticalAnchorPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalAnchorPosition) properties. This will effective only on by setting the `HorizontalAnchor` and `VerticalAnchor` properties value as `Custom`.  The value range for `HorizontalAnchorPosition` and `VerticalAnchorPosition` properties is `0` to`1`. The default value of `HorizontalAnchorPosition`and `VerticalAnchorPosition` properties is `0`.
+By using the `HorizontalAlignment`, `VerticalAlignment`, `HorizontalAnchor`, and `VerticalAnchor` properties, you can place `Badge` only at particular position. If you want to place the `Badge` at a custom position, use the `HorizontalPosition` and `VerticalPosition` properties, as well as the [HorizontalAnchorPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalAnchorPosition) and [VerticalAnchorPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalAnchorPosition) properties. This will effective only on by setting the `HorizontalAnchor` and `VerticalAnchor` properties value as `Custom`. The value range for the `HorizontalAnchorPosition` and `VerticalAnchorPosition` properties is `0` to`1`. The default value of `HorizontalAnchorPosition`and `VerticalAnchorPosition` properties is `0`.
 
-For example, you will see how the  `HorizontalPosition` and `HorizontalAnchorPosition` values working based on the `VerticalAnchorPosition` and `VerticalPosition` values. Here,  `VerticalPosition` and `VerticalAnchorPosition` properties value is `0`.
+For example, you will see how the  `HorizontalPosition` and `HorizontalAnchorPosition` values works based on the `VerticalAnchorPosition` and `VerticalPosition` values. Here,  `VerticalPosition` and `VerticalAnchorPosition` properties value is `0`.
 
 <style>
 table, td, th { 
@@ -326,11 +326,11 @@ badge.Content = "99+";
 
 ![Alignment of the Badge content is changed](Getting-Started_images/Content_Alignment.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features).
 
 ## Padding for Badge content
 
-By default, `Badge` control size automatically assigned based on its content. You can change the left, right, top, bottom content spacing of a `Badge` control by using the `Padding` property. The default value of `Padding` property is `0,0,0,0`.
+By default, `Badge` control size automatically assigned based on their content. You can change the left, right, top, and bottom content spacing of a `Badge` control by using the `Padding` property. The default value of `Padding` property is `0,0,0,0`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -358,7 +358,7 @@ badge.Content = "10";
 
 ![Content spacing of Badge](Getting-Started_images/Padding.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features).
 
 ## Auto re-positioning support
 
