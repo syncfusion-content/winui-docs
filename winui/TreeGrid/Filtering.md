@@ -68,9 +68,12 @@ public bool FilerNodes(object o)
 }
 
 private void Button_Click(object sender, RoutedEventArgs e)
-{
-    treeGrid.View.Filter = FilerNodes;
-    treeGrid.View.RefreshFilter();
+{   
+    if (treeGrid.View != null)
+    {
+    	treeGrid.View.Filter = FilerNodes;
+    	treeGrid.View.RefreshFilter();
+    }
 }
 
 {% endhighlight %}
