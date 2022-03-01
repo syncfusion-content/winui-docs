@@ -40,8 +40,11 @@ public bool FilterRecords(object o)
 
 private void Button_Click(object sender, RoutedEventArgs e)
 {
-    sfDataGrid.View.Filter = FilterRecords;
-    sfDataGrid.View.RefreshFilter();
+    if (sfDataGrid != null && sfDataGrid.View != null)
+    {
+    	sfDataGrid.View.Filter = FilterRecords;
+    	sfDataGrid.View.RefreshFilter();
+    }
 }        
 {% endhighlight %}
 {% endtabs %}
