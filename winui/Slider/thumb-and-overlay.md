@@ -24,7 +24,7 @@ You can change the thumb type using the [`ThumbType`](https://help.syncfusion.co
 {% highlight xaml %}
 
 <slider:SfSlider Value="50"
-                 ThumbType="Oval" />
+                 ThumbType="Rectangle" />
 
 {% endhighlight %}
 
@@ -43,7 +43,7 @@ this.Content = sfSlider;
 
 ## Thumb Height and Width
 
-You can change the thumb height and width of the slider using the [`ThumbHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbHeight) and [`ThumbWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbWidth) properties respectively. The default values of both properties are 20.
+You can change the thumb height and width of the slider using the [`ThumbHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbHeight) and [`ThumbWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbWidth) properties respectively. The default values of both properties are 22.
 
 {% tabs %}
 
@@ -172,15 +172,13 @@ The [`ThumbStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Slide
 
 <Style x:Name="thumbStyle"
        TargetType="Thumb">
-    <Setter Property="BorderBrush"
-            Value="WhiteSmoke" />
     <Setter Property="Template">
         <Setter.Value>
             <ControlTemplate TargetType="Thumb">
                 <Grid>
                     <Ellipse Height="{TemplateBinding Height}"
                              Width="{TemplateBinding Width}"
-                             Fill="{TemplateBinding BorderBrush}"
+                             Fill="WhiteSmoke"
                              Stroke="{TemplateBinding Background}"
                              StrokeThickness="2" />
                     <TextBlock Text="{Binding Converter={StaticResource FormatStringConverter},
@@ -223,7 +221,7 @@ N> Its DataContext is current value of thumb.
 
 ## Thumb Overlay Radius
 
-The [`ThumbOverlayRadius`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbOverlayRadius) property allows you to define the radius for the overlay as shown in the following code example. The default value of [`ThumbOverlayRadius`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbOverlayRadius) property is 10.
+The [`ThumbOverlayRadius`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbOverlayRadius) property allows you to define the radius for the overlay as shown in the following code example. The default value of [`ThumbOverlayRadius`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ThumbOverlayRadius) property is 0.
 
 {% tabs %}
 
@@ -258,6 +256,7 @@ The [`ThumbOverlayFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 {% highlight xaml %}
 
 <slider:SfSlider Value="50"
+                 ThumbOverlayRadius="10"
                  ThumbOverlayFill="Red" />
 
 {% endhighlight %}
