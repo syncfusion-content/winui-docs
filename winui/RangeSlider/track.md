@@ -60,8 +60,8 @@ You can change the active and inactive track hover color of the range slider usi
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
-                      ActiveTrackFill="#009688"
-                      InactiveTrackFill="#C2E6E3" />
+                      ActiveTrackFill="#006688"
+                      InactiveTrackFill="#A2E6E3" />
 
 {% endhighlight %}
 
@@ -98,8 +98,8 @@ You can change the active and inactive track pressed color of the range slider u
 
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
-                      ActiveTrackFill="#009688"
-                      InactiveTrackFill="#C2E6E3"  />
+                      ActiveTrackFill="#006688"
+                      InactiveTrackFill="#A2E6E3"  />
 
 {% endhighlight %}
 
