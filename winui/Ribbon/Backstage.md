@@ -187,7 +187,7 @@ The Ribbon allows to show or hide a backstage view visibility using the `IsBacks
                  IsBackstageOpen="True">
     <ribbon:SfRibbon.Backstage>
         <ribbon:RibbonBackstage>
-            </ribbon:BackstageView/>
+            <ribbon:BackstageView/>
         </ribbon:RibbonBackstage>
     </ribbon:SfRibbon.Backstage>
 </ribbon:SfRibbon>
