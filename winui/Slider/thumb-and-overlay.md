@@ -286,7 +286,10 @@ The [`ThumbOverlayFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
                  ThumbOverlayFill="Red"
                  ThumbOverlayRadius="10"
                  ThumbStyle="{StaticResource thumbStyle}" />
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 
 {% endhighlight %}
 
