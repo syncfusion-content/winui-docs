@@ -239,10 +239,24 @@ The [`ThumbOverlayRadius`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 
 {% highlight xaml %}
 
+<Style x:Name="thumbStyle"
+       TargetType="Thumb">
+    <Setter Property="Template">
+        <Setter.Value>
+            <ControlTemplate TargetType="Thumb">
+                <Grid>
+                    <Ellipse Fill="{ThemeResource SystemAccentColorDark1}" />
+                </Grid>
+            </ControlTemplate>
+        </Setter.Value>
+    </Setter>
+</Style>
+
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
                       ShowToolTip="False"
-                      ThumbOverlayRadius="20" />
+                      ThumbOverlayRadius="20" 
+                      ThumbStyle="{StaticResource thumbStyle}" />
 
 {% endhighlight %}
 
@@ -269,10 +283,24 @@ The [`ThumbOverlayFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 
 {% highlight xaml %}
 
+<Style x:Name="thumbStyle"
+       TargetType="Thumb">
+    <Setter Property="Template">
+        <Setter.Value>
+            <ControlTemplate TargetType="Thumb">
+                <Grid>
+                    <Ellipse Fill="{ThemeResource SystemAccentColorDark1}" />
+                </Grid>
+            </ControlTemplate>
+        </Setter.Value>
+    </Setter>
+</Style>
+
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
-                      ThumbOverlayRadius="10"
-                      ThumbOverlayFill="Red" />
+                      ThumbOverlayFill="Red" 
+                      ThumbOverlayRadius="10" 
+                      ThumbStyle="{StaticResource thumbStyle}" />
 
 {% endhighlight %}
 
