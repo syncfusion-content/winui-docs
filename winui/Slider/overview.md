@@ -13,10 +13,7 @@ The Syncfusion [WinUI Slider](https://www.syncfusion.com/winui-controls/slider) 
 
 ![Overview WinUI slider](images/overview/slider1.jpg)
 ![Overview WinUI slider](images/overview/slider2.jpg)
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
 ## Key Features
 
 * **Numeric value support:** Provides functionality for selecting numeric values in any range.
