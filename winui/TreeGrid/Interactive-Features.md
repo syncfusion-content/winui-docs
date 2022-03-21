@@ -52,7 +52,7 @@ SfTreeGrid triggers the following events when drag and drop:
 
 `RowDragStarting`: Occurs when you start to drag the node in treegrid. The `TreeGridRowDragStartingEventArgs` has the following member, which provides information for the `RowDragStarting` event.
 
-`DraggingNodes`: Gets the treenode that contains the data associated when dragging the rows.
+`DraggingNodes`: Gets the TreeNode that contains the data associated when dragging the rows.
 
 `Cancel` :  Gets and sets a value indicating whether the event is canceled or not. 
   
@@ -73,7 +73,7 @@ private void SfTreeGrid_RowDragStarting(object sender, TreeGridRowDragStartingEv
 
 `Data`: Gets or sets a data object that contains data associated when dragging the rows.
 
-`DraggingNodes`: Gets the treenode that contains the data associated when dragging the rows.
+`DraggingNodes`: Gets the TreeNode that contains the data associated when dragging the rows.
 
 `DropPosition`: Gets a value that indicates the drop position based on the dropped location.
 
@@ -100,7 +100,7 @@ private void SfTreeGrid_RowDragOver(object sender, TreeGridRowDragOverEventArgs 
 
 `Data`: Gets or sets a data object that contains data associated when dragging the rows.
 
-`DraggingNodes`: Gets the treenode that contains the data associated when dragging the rows.
+`DraggingNodes`: Gets the TreeNode that contains the data associated when dragging the rows.
 
 `DropPosition`: Gets a value that indicates the drop position based on the dropped location.
 
@@ -123,7 +123,7 @@ private void SfTreeGrid_RowDropping(object sender, TreeGridRowDroppingEventArgs 
 
 `Data`: Gets or sets a data object that contains data associated when dragging the rows.
 
-`DraggingNodes`: Gets the treenode that contains the data associated when dragging the rows.
+`DraggingNodes`: Gets the TreeNode that contains the data associated when dragging the rows.
 
 `DropPosition`: Gets a value that indicates the drop position based on the dropped location.
 
