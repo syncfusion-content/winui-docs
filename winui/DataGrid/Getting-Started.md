@@ -416,7 +416,7 @@ By default, you can sort columns in a SfDataGrid by clicking the column header. 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid Sorting](Getting-Started-images/winui-datagrid-sorting.png)
+<img src="Getting-Started-images/winui-datagrid-sorting.png" alt="WinUI DataGrid Sorting" width="Auto"/>
 
 You can customize sorting by handling the [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SortColumnsChanging) and [SfDataGrid.SortColumnsChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SortColumnsChanged) events. To cancel the default sort, set the `Cancel` property to `true` in `SfDataGrid.SortColumnsChanging` event. 
 
@@ -459,7 +459,7 @@ You can customize the editing operations by handling [SfDataGrid.CurrentCellBegi
 
 Filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_AllowFiltering) property to `true`, where you can open advanced filter UI by clicking the Filter icon in column header and filter the SfDataGrid. You can customize the filtering operations by handling [SfDataGrid.FilterChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_FilterChanging) and [SfDataGrid.FilterChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_FilterChanged) events.
 
-![WinUI DataGrid Filtering](Getting-Started-images/winui-datagrid-filtering.png)
+<img src="Getting-Started-images/winui-datagrid-filtering.png" alt="WinUI DataGrid Filtering" width="Auto" Height="Auto"/>
 
 
 
