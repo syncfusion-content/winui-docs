@@ -30,11 +30,11 @@ sfTreeGrid.AllowDrop = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Drag and Drop the Row in WinUI TreeGrid](Row-Drag-and-Drop_images/draganddrop_img1.jpeg)
+![Drag and Drop the Row in WinUI TreeGrid](Row-Drag-and-Drop_images/draganddrop_img1.png)
 
 When dropping, the dragged node(s) can be added above or below as a child node based on its drop position. For example, if you dropped node at the bottom of the targeted node, it will be added below the targeted node. If you drop over the targeted node, it will be added as a child of that targeted node.
 
-![Drap and Drop the Row in WinUI TreeGrid](Row-Drag-and-Drop_images/draganddrop_img3)
+![Drap and Drop the Row in WinUI TreeGrid](Row-Drag-and-Drop_images/draganddrop_img3.png)
 
 N> Drag indicators will not be shown when drop position is set to “Drop as child”.
 
@@ -42,7 +42,7 @@ N> Drag indicators will not be shown when drop position is set to “Drop as chi
 
 SfTreeGrid allows users to drag multiple selected nodes. You can enable multiple selection by setting the [SfTreeGrid.SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectionMode) property to `Multiple` or `Extended`.
 
-![Dragging Multiple Rows in WinUI TreeGrid](Row-Drag-and-Drop_images/draganddrop_img3)
+![Dragging Multiple Rows in WinUI TreeGrid](Row-Drag-and-Drop_images/draganddrop_img3.png)
 
 ### Events
 
