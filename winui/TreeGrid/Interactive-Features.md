@@ -11,7 +11,7 @@ documentation: ug
 
 ## Row drag and drop 
 
-SfTreeGrid allows drag and drop the rows within and between controls by setting the `AllowDraggingRows` and `AllowDrop` properties to true. It is also possible to drag and drop the rows between treegrid and other controls such as ListView, DataGrid and TreeView. SfTreeGrid allows dropping rows when `AllowDrop` is true and allows dragging when `AllowDraggingRows` is true.
+SfTreeGrid allows drag and drop the rows by setting the `AllowDraggingRows` and `AllowDrop` properties to true. You can also drag and drop the rows between treegrid and other controls such as ListView, DataGrid and TreeView. 
 
 {% tabs %}
 {% highlight xml %}
@@ -32,7 +32,7 @@ sfTreeGrid.AllowDrop = true;
 
 ![Drag and Drop the Row in WinUI TreeGrid](Row-Drag-and-Drop_images/draganddrop_img1.png)
 
-When dropping, the dragged node(s) can be added above or below as a child node based on its drop position. For example, if you dropped node at the bottom of the targeted node, it will be added below the targeted node. If you drop over the targeted node, it will be added as a child of that targeted node.
+When dropping, the dragged node(s) can be added above or below as a child node based on its drop position. For example, if you drop node at the bottom of the target node, it will be added below the target node. If you drop over the target node, it will be added as a child of that target node.
 
 ![Drap and Drop the Row in WinUI TreeGrid](Row-Drag-and-Drop_images/draganddrop_img3.png)
 
@@ -40,7 +40,7 @@ N> Drag indicators will not be shown when drop position is set to “Drop as chi
 
 ### Drag multiple nodes
 
-SfTreeGrid allows users to drag multiple selected nodes. You can enable multiple selection by setting the [SfTreeGrid.SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectionMode) property to `Multiple` or `Extended`.
+SfTreeGrid allows users to to select and drag multiple nodes. You can enable multiple selection by setting the [SfTreeGrid.SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectionMode) property to `Multiple` or `Extended`.
 
 ![Dragging Multiple Rows in WinUI TreeGrid](Row-Drag-and-Drop_images/draganddrop_img3.png)
 
@@ -52,9 +52,9 @@ SfTreeGrid triggers the following events when drag and drop:
 
 `RowDragStarting`: Occurs when you start to drag the node in treegrid. The `TreeGridRowDragStartingEventArgs` has the following member, which provides information for the `RowDragStarting` event.
 
-`DraggingNodes`: Gets the TreeNode that contains the data associated when dragging the rows.
+`DraggingNodes`: Gets the treenode that contains the data associated when dragging the rows.
 
-`Cancel` :  Gets and Sets a value indicating whether the event is Canceled or not. 
+`Cancel` :  Gets and sets a value indicating whether the event is canceled or not. 
   
 {% tabs %}
 {% highlight c# %}
@@ -73,11 +73,11 @@ private void SfTreeGrid_RowDragStarting(object sender, TreeGridRowDragStartingEv
 
 `Data`: Gets or sets a data object that contains data associated when dragging the rows.
 
-`DraggingNodes`: Gets the TreeNode that contains the data associated when dragging the rows.
+`DraggingNodes`: Gets the treenode that contains the data associated when dragging the rows.
 
 `DropPosition`: Gets a value that indicates the drop position based on the dropped location.
 
-`ShowDragUI`: Gets or sets a value that indicates the default Dragging UI.
+`ShowDragUI`: Gets or sets the visibility of Dragging UI.
 
 `TargetNode`: Gets a value that indicates the target node, which is going to be dropped.
 
@@ -96,11 +96,11 @@ private void SfTreeGrid_RowDragOver(object sender, TreeGridRowDragOverEventArgs 
 
 `RowDropping`: Occurs when a record is dropped within the target treegrid. The `TreeGridRowDroppingEventArgs` has the following members, which provide information for the `RowDropping` event:
 
-`Cancel` :  Gets and Sets a value indicating whether the event is Canceled or not. 
+`Cancel` :  Gets and sets a value indicating whether the event is canceled or not. 
 
 `Data`: Gets or sets a data object that contains data associated when dragging the rows.
 
-`DraggingNodes`: Gets the TreeNode that contains the data associated when dragging the rows.
+`DraggingNodes`: Gets the treenode that contains the data associated when dragging the rows.
 
 `DropPosition`: Gets a value that indicates the drop position based on the dropped location.
 
@@ -123,7 +123,7 @@ private void SfTreeGrid_RowDropping(object sender, TreeGridRowDroppingEventArgs 
 
 `Data`: Gets or sets a data object that contains data associated when dragging the rows.
 
-`DraggingNodes`: Gets the TreeNode that contains the data associated when dragging the rows.
+`DraggingNodes`: Gets the treenode that contains the data associated when dragging the rows.
 
 `DropPosition`: Gets a value that indicates the drop position based on the dropped location.
 
@@ -160,7 +160,7 @@ private void SfTreeGrid_RowDragStarting(object sender, TreeGridRowDragStartingEv
 
 ### Disable dropping of certain nodes
 
-You can restrict the dropping for specific nodes in SfTreeGrid by using the `SfTreeGrid.RowDropping` event..
+You can restrict the dropping for specific nodes in SfTreeGrid by using the `SfTreeGrid.RowDropping` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -177,7 +177,7 @@ private void SfTreeGrid_RowDropping(object sender, TreeGridRowDroppingEventArgs 
 
 ### Disable default Drag UI
 
-You can disable the draggable popup by setting the `ShowDragUI` in the `RowDragOver` event of  `SfTreeGrid.RowDragOver` event..
+You can disable the draggable popup by setting the `ShowDragUI` in `SfTreeGrid.RowDragOver` event.
 
 {% tabs %}
 {% highlight c# %}
