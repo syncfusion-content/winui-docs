@@ -50,9 +50,9 @@ SfDataGrid triggers the following events when drag and drop:
 
 ### Row Drag starting event
 
-`RowDragStarting` event occurs when you start to drag the records in datagrid. The `DataGridRowDragStartingEventArgs` has the following member, which provides information for the `RowDragStarting` event.
+`RowDragStarting` event occurs when you start to drag the records in the datagrid. The `DataGridRowDragStartingEventArgs` has the following member, which provides information for the `RowDragStarting` event.
 * `DraggingRows` : Gets the records which contains the data associated while dragging the rows.
-* `Cancel` : Gets and sets a value indicating whether the event is Canceled or not. 
+* `Cancel` : Gets or sets a value indicating whether the event is canceled or not. 
 
 {% tabs %}
 {% highlight c# %}
@@ -67,7 +67,7 @@ private void SfDataGrid_RowDragStarting(object sender, DataGridRowDragStartingEv
 
 ### Row Drag over event
 
-`RowDragOver` event occurs continuously while record is dragged within the target SfDataGrid. The `DataGridRowDragOverEventArgs` has the following members, which provide information for the `RowDragOver` event.
+`RowDragOver` event occurs continuously while record is dragged in the SfDataGrid. The `DataGridRowDragOverEventArgs` has the following members, which provide information for the `RowDragOver` event.
 * `Data` : Gets a data object that contains the data associated while dragging the rows. 
 * `DraggingRows` : Gets the records which contains the data associated while dragging the rows.
 * `DropPosition` : Gets a value indicating the drop position which is based on dropped location 
@@ -87,8 +87,8 @@ private void SfDataGrid_RowDragOver(object sender, DataGridRowDragOverEventArgs 
 
 ### Row Dropping event
 
-`RowDropping` event occurs when a record is dropping within the target SfDataGrid. The `DataGridRowDroppingEventArgs` has the following members, which provide information for the `RowDropping` event.
-* `Cancel` : Gets and sets a value indicating whether the event is Canceled or not. 
+`RowDropping` event occurs when a record is dropping in the SfDataGrid. The `DataGridRowDroppingEventArgs` has the following members, which provide information for the `RowDropping` event.
+* `Cancel` : Gets or sets a value indicating whether the event is canceled or not. 
 * `Data` : Gets a data object that contains the data associated while dragging the rows. 
 * `DraggingRows` : Gets the records which contains the data associated while dragging the rows. 
 * `DropPosition` : Gets a value indicating the drop position which is based on dropped location 
