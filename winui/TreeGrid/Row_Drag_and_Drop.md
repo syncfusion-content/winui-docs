@@ -117,7 +117,7 @@ private void SfTreeGrid_RowDropping(object sender, TreeGridRowDroppingEventArgs 
 
 ### RowDropped
 
-`RowDropped`: Occurs when a record is dropped within the target treegrid. The `TreeGridRowDroppedEventArgs` has the following members, which provide information for the `RowDropped` event:
+`RowDropped`: Occurs after dropped the record. The `TreeGridRowDroppedEventArgs` has the following members, which provide information for the `RowDropped` event:
 
 `Data`: Gets or sets a data object that contains data associated when dragging the rows.
 
