@@ -459,7 +459,7 @@ You can customize the editing operations by handling [SfDataGrid.CurrentCellBegi
 
 Filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_AllowFiltering) property to `true`, where you can open advanced filter UI by clicking the Filter icon in column header and filter the SfDataGrid. You can customize the filtering operations by handling [SfDataGrid.FilterChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_FilterChanging) and [SfDataGrid.FilterChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_FilterChanged) events.
 
-<img src="Getting-Started-images/winui-datagrid-filtering.png" alt="WinUI DataGrid Filtering" width="Auto" Height="Auto"/>
+<img src="Getting-Started-images/winui-datagrid-filtering.png" alt="WinUI DataGrid Filtering" width="100%" Height="Auto"/>
 
 
 
