@@ -1,15 +1,13 @@
 ---
 layout: post
-title: Interactive Features in WinUI TreeGrid control | Syncfusion
-description: Learn here all about Interactive Features support in Syncfusion WinUI TreeGrid (SfTreeGrid) control and more.
+title: Row drag and drop in WinUI TreeGrid control | Syncfusion
+description: Learn here all about row drag and drop support in Syncfusion WinUI TreeGrid (SfTreeGrid) control and more.
 platform: winui
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Interactive Features in WinUI TreeGrid (SfTreeGrid)
-
-## Row drag and drop 
+# Row drag and drop in WinUI TreeGrid (SfTreeGrid)
 
 SfTreeGrid allows drag and drop the rows by setting the `AllowDraggingRows` and `AllowDrop` properties to true. You can also drag and drop the rows between treegrid and other controls such as ListView, DataGrid and TreeView. 
 
@@ -38,13 +36,13 @@ When dropping, the dragged node(s) can be added above or below as a child node b
 
 N> Drag indicators will not be shown when drop position is set to “Drop as child”.
 
-### Drag multiple nodes
+## Drag multiple nodes
 
 SfTreeGrid allows users to to select and drag multiple nodes. You can enable multiple selection by setting the [SfTreeGrid.SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectionMode) property to `Multiple` or `Extended`.
 
 ![Dragging Multiple Rows in WinUI TreeGrid](Row-Drag-and-Drop_images/draganddrop_img3.png)
 
-### Events
+## Drag and drop events
 
 SfTreeGrid triggers the following events when drag and drop:
 
@@ -79,7 +77,7 @@ private void SfTreeGrid_RowDragStarting(object sender, TreeGridRowDragStartingEv
 
 `ShowDragUI`: Gets or sets the visibility of Dragging UI.
 
-`TargetNode`: Gets a value that indicates the target node, which is going to be dropped.
+`TargetNode`: Gets a value that indicates the target node, where is going to be dropped.
 
 {% tabs %}
 {% highlight c# %}
@@ -104,7 +102,7 @@ private void SfTreeGrid_RowDragOver(object sender, TreeGridRowDragOverEventArgs 
 
 `DropPosition`: Gets a value that indicates the drop position based on the dropped location.
 
-`TargetNode`: Gets a value that indicates the target node, which is going to be dropped.
+`TargetNode`: Gets a value that indicates the target node, where is going to be dropped.
 
 {% tabs %}
 {% highlight c# %}
@@ -127,7 +125,7 @@ private void SfTreeGrid_RowDropping(object sender, TreeGridRowDroppingEventArgs 
 
 `DropPosition`: Gets a value that indicates the drop position based on the dropped location.
 
-`TargetNode`: Gets a value that indicates the target node, which is going to be dropped.
+`TargetNode`: Gets a value that indicates the target node, where is going to be dropped.
 
 {% tabs %}
 {% highlight c# %}
@@ -139,6 +137,8 @@ private void SfTreeGrid_RowDropped(object sender, TreeGridRowDroppedEventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}
+
+## Customizing row drag and drop operation
 
 ### Disable dragging of certain nodes
 

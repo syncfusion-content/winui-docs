@@ -30,11 +30,11 @@ While dropping, the dragged rows can be added above or below to the target recor
 
 For example, if you drop record at the bottom of the target record, it will be added below the target record.
 
-<img src="Row_Drag_Drop_Images/RowDragDrop_Img1.png" alt="Drag and Drop Rows in WinUI DataGrid" width="Auto"/>
+![Drag and Drop Rows in WinUI DataGrid](Row_Drag_Drop_Images/RowDragDrop_Img1.png)
 
 If you drop above the target record, it will be added above the target record
 
-<img src="Row_Drag_Drop_Images/RowDragDrop_Img2.png" alt="Drag and Drop Rows in WinUI DataGrid" width="Auto"/>
+![Drag and Drop Rows in WinUI DataGrid](Row_Drag_Drop_Images/RowDragDrop_Img2.png)
 
 ## Dragging multiple rows
 
@@ -42,7 +42,7 @@ WinUI DataGrid (SfDataGrid) allows to select and drag multiple rows. To enable m
 
 N> The drag selection cannot be performed while the `AllowDraggingRows` enabled as `true` in the SfDataGrid.
 
-<img src="Row_Drag_Drop_Images/RowDragDrop_Img3.png" alt="Dragging Multiple Rows in WinUI DataGrid" width="Auto"/>
+![Dragging Multiple Rows in WinUI DataGrid](Row_Drag_Drop_Images/RowDragDrop_Img3.png)
 
 ## Drag and drop events
 
@@ -72,7 +72,7 @@ private void SfDataGrid_RowDragStarting(object sender, DataGridRowDragStartingEv
 * `DraggingRows` : Gets the records which contains the data associated while dragging the rows.
 * `DropPosition` : Gets a value indicating the drop position which is based on dropped location 
 * `ShowDragUI` : Gets or sets the visibility of Dragging UI.  
-* `TargetIndex` : Gets a value indicating the target index which is going to drop.
+* `TargetIndex` : Gets a value indicating the target index where is going to drop.
 
 {% tabs %}
 {% highlight c# %}
@@ -92,7 +92,7 @@ private void SfDataGrid_RowDragOver(object sender, DataGridRowDragOverEventArgs 
 * `Data` : Gets a data object that contains the data associated while dragging the rows. 
 * `DraggingRows` : Gets the records which contains the data associated while dragging the rows. 
 * `DropPosition` : Gets a value indicating the drop position which is based on dropped location 
-* `TargetIndex` : Gets a value indicating the target record which is going to drop.
+* `TargetIndex` : Gets a value indicating the target index where is going to drop.
 
 {% tabs %}
 {% highlight c# %}
@@ -107,11 +107,11 @@ private void SfDataGrid_RowDropping(object sender, DataGridRowDroppingEventArgs 
 
 ### Row Dropped event
 
-`RowDropped` event occurs when a record is dropping within the target SfDataGrid. The `DataGridRowDroppedEventArgs` has the following members, which provide information for the `Dropping` event.
+`RowDropped` event occurs after dropped the record. The `DataGridRowDroppedEventArgs` has the following members, which provide information for the `Dropped` event.
 * `Data` : Gets a data object that contains the data associated while dragging the rows. 
 * `DraggingRows` : Gets the records which contains the data associated while dragging the rows.
 * `DropPosition` : Gets a value indicating the drop position which is based on dropped location 
-* `TargetIndex` : Gets a value indicating the target record which is going to drop.
+* `TargetIndex` : Gets a value indicating the target index where is going to drop.
 
 {% tabs %}
 {% highlight c# %}
@@ -146,7 +146,7 @@ private void SfDataGrid_RowDragStarting(object sender, DataGridRowDragStartingEv
 
 ### Disable dropping over certain rows in WinUI DataGrid
 
-You can restrict the dropping the records in certain rows in SfDataGrid by using the [SfDataGrid.RowDropping] event.
+You can restrict the dropping the records in certain rows in SfDataGrid by using the `SfDataGrid.RowDropping` event.
 
 {% tabs %}
 {% highlight c# %}
