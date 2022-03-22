@@ -72,7 +72,7 @@ private void SfDataGrid_RowDragStarting(object sender, DataGridRowDragStartingEv
 * `DraggingRows` : Gets the records which contains the data associated while dragging the rows.
 * `DropPosition` : Gets a value indicating the drop position which is based on dropped location 
 * `ShowDragUI` : Gets or sets the visibility of Dragging UI.  
-* `TargetIndex` : Gets a value indicating the target index where is going to drop.
+* `TargetIndex` : Gets a value that indicates the target index where the record is going to be drop.
 
 {% tabs %}
 {% highlight c# %}
@@ -92,7 +92,7 @@ private void SfDataGrid_RowDragOver(object sender, DataGridRowDragOverEventArgs 
 * `Data` : Gets a data object that contains the data associated while dragging the rows. 
 * `DraggingRows` : Gets the records which contains the data associated while dragging the rows. 
 * `DropPosition` : Gets a value indicating the drop position which is based on dropped location 
-* `TargetIndex` : Gets a value indicating the target index where is going to drop.
+* `TargetIndex` : Gets a value that indicates the target index where the record is going to be drop.
 
 {% tabs %}
 {% highlight c# %}
@@ -111,7 +111,7 @@ private void SfDataGrid_RowDropping(object sender, DataGridRowDroppingEventArgs 
 * `Data` : Gets a data object that contains the data associated while dragging the rows. 
 * `DraggingRows` : Gets the records which contains the data associated while dragging the rows.
 * `DropPosition` : Gets a value indicating the drop position which is based on dropped location 
-* `TargetIndex` : Gets a value indicating the target index where is going to drop.
+* `TargetIndex` : Gets a value that indicates the target index where the record is going to be drop.
 
 {% tabs %}
 {% highlight c# %}

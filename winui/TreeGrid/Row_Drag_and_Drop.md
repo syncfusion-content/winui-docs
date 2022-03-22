@@ -77,7 +77,7 @@ private void SfTreeGrid_RowDragStarting(object sender, TreeGridRowDragStartingEv
 
 `ShowDragUI`: Gets or sets the visibility of Dragging UI.
 
-`TargetNode`: Gets a value that indicates the target node, where is going to be dropped.
+`TargetNode`: Gets a value that indicates the target node where the record is going to be drop.
 
 {% tabs %}
 {% highlight c# %}
@@ -102,7 +102,7 @@ private void SfTreeGrid_RowDragOver(object sender, TreeGridRowDragOverEventArgs 
 
 `DropPosition`: Gets a value that indicates the drop position based on the dropped location.
 
-`TargetNode`: Gets a value that indicates the target node, where is going to be dropped.
+`TargetNode`: Gets a value that indicates the target node where the record is going to be drop.
 
 {% tabs %}
 {% highlight c# %}
@@ -125,7 +125,7 @@ private void SfTreeGrid_RowDropping(object sender, TreeGridRowDroppingEventArgs 
 
 `DropPosition`: Gets a value that indicates the drop position based on the dropped location.
 
-`TargetNode`: Gets a value that indicates the target node, where is going to be dropped.
+`TargetNode`: Gets a value that indicates the target node where the record is going to be drop.
 
 {% tabs %}
 {% highlight c# %}
