@@ -27,11 +27,11 @@ sfTreeGrid.AllowDrop = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Drag and Drop the Row in WinUI TreeGrid](Row-Drag-and-Drop_images/draganddrop_img1.png)
+![Drag and Drop a Node to the below of the current Node in WinUI TreeGrid](Row-Drag-and-Drop_images/draganddrop_img1.png)
 
 When dropping, the dragged node(s) can be added above or below or as a child node based on its drop position. For example, if you drop node at the bottom of the target node, it will be added below the target node. If you drop over the target node, it will be added as a child of that target node.
 
-![Drap and Drop the Row in WinUI TreeGrid](Row-Drag-and-Drop_images/draganddrop_img3.png)
+![Drag and Drop a Node to the child of the current Node in WinUI TreeGrid](Row-Drag-and-Drop_images/draganddrop_img3.png)
 
 N> Drag indicators will not be shown when drop position is set to “Drop as child”.
 
