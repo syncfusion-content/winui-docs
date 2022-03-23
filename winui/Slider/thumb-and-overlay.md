@@ -49,6 +49,11 @@ You can change the thumb height and width of the slider using the [`ThumbHeight`
 
 {% highlight xaml %}
 
+<Page.Resources>
+    <x:Double x:Key="SyncfusionSliderInnerThumbHeight">18</x:Double>
+    <x:Double x:Key="SyncfusionSliderInnerThumbWidth">18</x:Double>
+</Page.Resources>
+
 <slider:SfSlider Value="50"
                  ThumbHeight="30"
                  ThumbWidth="30"

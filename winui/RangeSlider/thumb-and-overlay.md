@@ -51,6 +51,11 @@ You can change the thumb height and width of the range slider using the [`ThumbH
 
 {% highlight xaml %}
 
+<Page.Resources>
+    <x:Double x:Key="SyncfusionSliderInnerThumbHeight">18</x:Double>
+    <x:Double x:Key="SyncfusionSliderInnerThumbWidth">18</x:Double>
+</Page.Resources>
+
 <slider:SfRangeSlider RangeStart="30"
                       RangeEnd="70"
                       ThumbHeight="30"
