@@ -11,7 +11,7 @@ documentation: ug
 
 The Syncfusion WinUI SfRibbon supports expanding/collapsing the ribbon elements to the available space while resizing the control. It performs expand operation while the control size is increased and performs collapse operation while the control size decreased. It allows resizing ribbon elements for both normal and simplified layouts. By default, the ribbon elements are resized based on group size. Also, we have an option to resize the ribbon elements in the custom order.
 
-We can specify the ribbon elements size using `AllowedSizeModes` property. It is a flaggable enum to arrange the ribbon elements in varied sizes depending on available space. It has values Small, Normal, and Large to specify the size of the ribbon elements. As it is a flaggable enum, we can give the combination of values to the AllowedSizeModes property. The default value is `Small, Normal, Large`.
+We can specify the ribbon elements size using `AllowedSizeModes` property. It is a flagged enum to arrange the ribbon elements in varied sizes depending on available space. It has values Small, Normal, and Large to specify the size of the ribbon elements. As it is a flagged enum, we can give the combination of values to the AllowedSizeModes property. The default value is `Small, Normal, Large`.
 
 ## Default Resizing
 
