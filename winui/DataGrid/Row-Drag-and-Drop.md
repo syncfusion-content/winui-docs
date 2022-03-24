@@ -30,8 +30,8 @@ While dropping, the dragged rows can be added above or below to the target recor
 
 For example, if you drop record at the bottom of the target record, it will be added below the target record.
 
-
 <img src="Row-Drag-Drop-Images/RowDragDrop-Img1.png" alt="Drag and Drop Rows in WinUI DataGrid" width="100%" Height="Auto"/>
+
 
 If you drop above the target record, it will be added above the target record
 
