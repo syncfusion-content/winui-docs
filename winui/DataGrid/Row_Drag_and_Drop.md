@@ -37,10 +37,6 @@ If you drop above the target record, it will be added above the target record
 
 <img src="Row_Drag_Drop_Images/RowDragDrop_Img2.png" alt="Drag and Drop Rows in WinUI DataGrid" width="100%" Height="Auto"/>
 
-If you drop above the target record, it will be added above the target record
-
-<img src="Row_Drag_Drop_Images/RowDragDrop_Img3.png" alt="Dragging Multiple Rows in WinUI DataGrid" width="100%" Height="Auto"/>
-
 ## Dragging multiple rows
 
 WinUI DataGrid (SfDataGrid) allows to select and drag multiple rows. To enable multiple selection, set the [SfDataGrid.SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectionMode) as `Multiple` or `Extended`. 

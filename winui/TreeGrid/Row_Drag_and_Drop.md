@@ -33,10 +33,6 @@ When dropping, the dragged node(s) can be added above or below or as a child nod
 
 <img src="Row-Drag-and-Drop_images/draganddrop_img2.png" alt="Drap and Drop the Row in WinUI TreeGrid" width="100%" Height="Auto"/>
 
-When dropping, the dragged node(s) can be added above or below or as a child node based on its drop position. For example, if you drop node at the bottom of the target node, it will be added below the target node. If you drop over the target node, it will be added as a child of that target node.
-
-<img src="Row-Drag-and-Drop_images/draganddrop_img3.png" alt="Dragging Multiple Rows in WinUI TreeGrid" width="100%" Height="Auto"/>
-
 N> Drag indicators will not be shown when drop position is set to “Drop as child”.
 
 ## Drag multiple nodes
