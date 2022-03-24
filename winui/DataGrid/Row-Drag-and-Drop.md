@@ -31,11 +31,11 @@ While dropping, the dragged rows can be added above or below to the target recor
 For example, if you drop record at the bottom of the target record, it will be added below the target record.
 
 
-<img src="Row_Drag_Drop_Images/RowDragDrop_Img1.png" alt="Drag and Drop Rows in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Row-Drag-Drop-Images/RowDragDrop-Img1.png" alt="Drag and Drop Rows in WinUI DataGrid" width="100%" Height="Auto"/>
 
 If you drop above the target record, it will be added above the target record
 
-<img src="Row_Drag_Drop_Images/RowDragDrop_Img2.png" alt="Drag and Drop Rows in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Row-Drag-Drop-Images/RowDragDrop-Img2.png" alt="Drag and Drop Rows in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Dragging multiple rows
 
@@ -43,7 +43,7 @@ WinUI DataGrid (SfDataGrid) allows to select and drag multiple rows. To enable m
 
 N> The drag selection cannot be performed while the `AllowDraggingRows` enabled as `true` in the SfDataGrid.
 
-<img src="Row_Drag_Drop_Images/RowDragDrop_Img3.png" alt="Dragging Multiple Rows in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Row-Drag-Drop-Images/RowDragDrop-Img3.png" alt="Dragging Multiple Rows in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Drag and drop events
 
