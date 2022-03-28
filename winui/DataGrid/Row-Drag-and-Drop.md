@@ -9,7 +9,7 @@ documentation: ug
 
 # Row drag and drop in WinUI DataGrid (SfDataGrid)
 
-[WinUI DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html) allows drag and drop the rows by setting the `AllowDraggingRows` and [AllowDrop](https://docs.microsoft.com/en-us/dotnet/api/system.windows.uielement.allowdrop) property as `true`. You can also drag and drop the rows between datagrid and other controls such as `ListView` , `SfTreeView` and `SfTreeGrid`. 
+[WinUI DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html) allows you to drag and drop the rows by setting the `AllowDraggingRows` and [AllowDrop](https://docs.microsoft.com/en-us/dotnet/api/system.windows.uielement.allowdrop) property to `true`. You can also drag and drop the rows between DataGrid and other controls such as `ListView` , `SfTreeView` and `SfTreeGrid`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -26,14 +26,14 @@ this.sfDataGrid.AllowDrop = true;
 {% endhighlight %}
 {% endtabs %}
 
-While dropping, the dragged rows can be added above or below to the target record based on its drop position
+While dropping, the dragged rows can be added above or below the target record based on their drop position.
 
 For example, if you drop record at the bottom of the target record, it will be added below the target record.
 
 <img src="Row-Drag-Drop-Images/RowDragDrop-Img1.png" alt="Drag and Drop Rows in WinUI DataGrid" width="100%" Height="Auto"/>
 
 
-If you drop above the target record, it will be added above the target record
+If you drop above the target record, it will be added above the target record.
 
 <img src="Row-Drag-Drop-Images/RowDragDrop-Img2.png" alt="Drag and Drop Rows in WinUI DataGrid" width="100%" Height="Auto"/>
 
@@ -47,11 +47,11 @@ N> The drag selection cannot be performed while the `AllowDraggingRows` enabled 
 
 ## Drag and drop events
 
-SfDataGrid triggers the following events when drag and drop:
+When dragging and dropping the rows `SfDataGrid` triggers the following events:
 
-### Row Drag starting event
+### RowDragStarting event
 
-`RowDragStarting` event occurs when you start to drag the records in the datagrid. The `DataGridRowDragStartingEventArgs` has the following member, which provides information for the `RowDragStarting` event.
+`RowDragStarting` event occurs when you start to drag the records in the DataGrid. The `DataGridRowDragStartingEventArgs` has the following member, which provides information for the `RowDragStarting` event.
 * `DraggingRows` : Gets the records which contains the data associated while dragging the rows.
 * `Cancel` : Gets or sets a value indicating whether the event is canceled or not. 
 
@@ -66,12 +66,12 @@ private void SfDataGrid_RowDragStarting(object sender, DataGridRowDragStartingEv
 {% endhighlight %}
 {% endtabs %}
 
-### Row Drag over event
+### RowDragOver event
 
-`RowDragOver` event occurs continuously while record is dragged in the SfDataGrid. The `DataGridRowDragOverEventArgs` has the following members, which provide information for the `RowDragOver` event.
-* `Data` : Gets a data object that contains the data associated while dragging the rows. 
-* `DraggingRows` : Gets the records which contains the data associated while dragging the rows.
-* `DropPosition` : Gets a value indicating the drop position which is based on dropped location 
+`RowDragOver` event occurs continuously while dragging the record in the SfDataGrid. The `DataGridRowDragOverEventArgs` has the following members, which provide information for the `RowDragOver` event.
+* `Data` : Gets a data object that contains the data associated with dragging the rows. 
+* `DraggingRows` : Gets the records that contains the data associated with dragging the rows.
+* `DropPosition` : Gets a value indicating the drop position which is based on dropped location. 
 * `ShowDragUI` : Gets or sets the visibility of Dragging UI.  
 * `TargetIndex` : Gets a value that indicates the target index where the record is going to be drop.
 
@@ -86,13 +86,13 @@ private void SfDataGrid_RowDragOver(object sender, DataGridRowDragOverEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
-### Row Dropping event
+### RowDropping event
 
 `RowDropping` event occurs when a record is dropping in the SfDataGrid. The `DataGridRowDroppingEventArgs` has the following members, which provide information for the `RowDropping` event.
 * `Cancel` : Gets or sets a value indicating whether the event is canceled or not. 
-* `Data` : Gets a data object that contains the data associated while dragging the rows. 
-* `DraggingRows` : Gets the records which contains the data associated while dragging the rows. 
-* `DropPosition` : Gets a value indicating the drop position which is based on dropped location 
+* `Data` : Gets a data object that contains the data associated with dragging the rows. 
+* `DraggingRows` : Gets the records that contains the data associated with dragging the rows. 
+* `DropPosition` : Gets a value indicating the drop position based on the dropped location. 
 * `TargetIndex` : Gets a value that indicates the target index where the record is going to be drop.
 
 {% tabs %}
@@ -106,12 +106,12 @@ private void SfDataGrid_RowDropping(object sender, DataGridRowDroppingEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
-### Row Dropped event
+### RowDropped event
 
-`RowDropped` event occurs after dropped the record. The `DataGridRowDroppedEventArgs` has the following members, which provide information for the `Dropped` event.
-* `Data` : Gets a data object that contains the data associated while dragging the rows. 
-* `DraggingRows` : Gets the records which contains the data associated while dragging the rows.
-* `DropPosition` : Gets a value indicating the drop position which is based on dropped location 
+`RowDropped` event occurs after dropping the record. The `DataGridRowDroppedEventArgs` has the following members, which provide information for the `Dropped` event.
+* `Data` : Gets a data object that contains the data associated with dragging the rows. 
+* `DraggingRows` : Gets the records that contains the data associated with dragging the rows.
+* `DropPosition` : Gets a value indicating the drop position based on the dropped location.
 * `TargetIndex` : Gets a value that indicates the target index where the record is going to be drop.
 
 {% tabs %}
@@ -163,7 +163,7 @@ private void SfDataGrid_RowDropping(object sender, DataGridRowDroppingEventArgs 
 
 ### Disable the drag UI
 
-You can disable the draggable popup by setting the `ShowDragUI` as `false` in `SfDataGrid.RowDragOver` event.
+You can disable the draggable pop-up by setting the `ShowDragUI` as `false` in `SfDataGrid.RowDragOver` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -176,9 +176,9 @@ private void SfDataGrid_RowDragOver(object sender, DataGridRowDragOverEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
-### Reorder the source collection while drag and drop the rows
+### Reorder the source collection while dragging and dropping the rows
 
-You can reorder the source collection after drag and drop the row by handling `SfDataGrid.RowDropped` event.
+You can reorder the source collection after dragging and dropping the row by handling the  `SfDataGrid.RowDropped` event.
 
 {% tabs %}
 {% highlight c# %}
