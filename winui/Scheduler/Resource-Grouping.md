@@ -29,9 +29,9 @@ N> No resource view will be displayed even the resource added using the [Resourc
 // Adding schedule resource in the scheduler resource collection.
 var ResourceCollection = new ObservableCollection<SchedulerResource>()
 {
-   new SchedulerResource() { Name = "Sophia", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush((Color.FromArgb(255, 157, 101, 201))), Id = "1000" },
-   new SchedulerResource() { Name = "Zoey Addison", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255, 240, 138, 93)), Id = "1001" },
-   new SchedulerResource() { Name = "James William", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255,103, 155, 155)), Id = "1002" },
+   new SchedulerResource() { Name = "Sophia", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255,54, 179, 123)), Id = "1000" },
+   new SchedulerResource() { Name = "Zoey Addison", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255,252,87,29)), Id = "1001" },
+   new SchedulerResource() { Name = "James William", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255, 139,31,169)), Id = "1002" },
 };
 
 // Adding the scheduler resource collection to the schedule resources of SfSchedule.
@@ -65,9 +65,9 @@ this.Schedule.ResourceGroupType = ResourceGroupType.Resource;
 // Adding schedule resource in the scheduler resource collection.
 var ResourceCollection = new ObservableCollection<SchedulerResource>()
 {
-   new SchedulerResource() { Name = "Sophia", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush((Color.FromArgb(255, 157, 101, 201))), Id = "1000" },
-   new SchedulerResource() { Name = "Zoey Addison", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255, 240, 138, 93)), Id = "1001" },
-   new SchedulerResource() { Name = "James William", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255,103, 155, 155)), Id = "1002" },
+   new SchedulerResource() { Name = "Sophia", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255,54, 179, 123)), Id = "1000" },
+   new SchedulerResource() { Name = "Zoey Addison", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255,252,87,29)), Id = "1001" },
+   new SchedulerResource() { Name = "James William", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255, 139,31,169)), Id = "1002" },
 };
 
 // Adding the scheduler resource collection to the schedule resources of SfSchedule.
@@ -95,9 +95,9 @@ this.Schedule.ResourceGroupType = ResourceGroupType.Date;
 // Adding schedule resource in the scheduler resource collection.
 var ResourceCollection = new ObservableCollection<SchedulerResource>()
 {
-   new SchedulerResource() { Name = "Sophia", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush((Color.FromArgb(255, 157, 101, 201))), Id = "1000" },
-   new SchedulerResource() { Name = "Zoey Addison", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255, 240, 138, 93)), Id = "1001" },
-   new SchedulerResource() { Name = "James William", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255,103, 155, 155)), Id = "1002" },
+   new SchedulerResource() { Name = "Sophia", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255,54, 179, 123)), Id = "1000" },
+   new SchedulerResource() { Name = "Zoey Addison", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255,252,87,29)), Id = "1001" },
+   new SchedulerResource() { Name = "James William", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255, 139,31,169)), Id = "1002" },
 };
 
 // Adding the scheduler resource collection to the schedule resources of SfSchedule.
