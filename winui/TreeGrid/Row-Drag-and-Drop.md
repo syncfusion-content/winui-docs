@@ -91,7 +91,7 @@ private void SfTreeGrid_RowDragOver(object sender, TreeGridRowDragOverEventArgs 
 
 ### RowDropping event
 
-`RowDropping` event occurs when a tree node is dropping in the SftreeGrid. The `TreeGridRowDroppingEventArgs` has the following members, which provide information for the `RowDropping` event:
+`RowDropping` event occurs when a tree node is dropping in the SfTreeGrid. The `TreeGridRowDroppingEventArgs` has the following members, which provide information for the `RowDropping` event:
 
 `Cancel` :  Gets and sets a value indicating whether the event is canceled or not. 
 
@@ -116,7 +116,7 @@ private void SfTreeGrid_RowDropping(object sender, TreeGridRowDroppingEventArgs 
 
 ### RowDropped event
 
-`RowDropped` event occurs after dropped the tree nodes in the SftreeGrid. The `TreeGridRowDroppedEventArgs` has the following members, which provide information for the `RowDropped` event:
+`RowDropped` event occurs after dropped the tree nodes in the SfTreeGrid. The `TreeGridRowDroppedEventArgs` has the following members, which provide information for the `RowDropped` event:
 
 `Data`: Gets a data object that contains the data associated with dragging the nodes.
 
