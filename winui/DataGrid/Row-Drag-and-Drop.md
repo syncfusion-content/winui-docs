@@ -9,7 +9,7 @@ documentation: ug
 
 # Row drag and drop in WinUI DataGrid (SfDataGrid)
 
-[WinUI DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html) allows you to drag and drop the rows by setting the `AllowDraggingRows` and [AllowDrop](https://docs.microsoft.com/en-us/dotnet/api/system.windows.uielement.allowdrop) property to `true`. You can also drag and drop the rows between Datagrid and other controls such as `ListView` , `SfTreeView` and `SfTreeGrid`. 
+[WinUI DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html) allows you to drag and drop the rows by setting the `AllowDraggingRows` and [AllowDrop](https://docs.microsoft.com/en-us/dotnet/api/system.windows.uielement.allowdrop) property to `true`. You can also drag and drop the rows between DataGrid and other controls such as `ListView` , `SfTreeView` and `SfTreeGrid`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -51,7 +51,7 @@ When dragging and dropping the rows `SfDataGrid` triggers the following events:
 
 ### RowDragStarting event
 
-`RowDragStarting` event occurs when you start to drag the records in the Datagrid. The `DataGridRowDragStartingEventArgs` has the following member, which provides information for the `RowDragStarting` event.
+`RowDragStarting` event occurs when you start to drag the records in the DataGrid. The `DataGridRowDragStartingEventArgs` has the following member, which provides information for the `RowDragStarting` event.
 * `DraggingRows` : Gets the records which contains the data associated while dragging the rows.
 * `Cancel` : Gets or sets a value indicating whether the event is canceled or not. 
 

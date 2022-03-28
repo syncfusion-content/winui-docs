@@ -47,7 +47,7 @@ When dragging and dropping the nodes `SfTreeGrid` triggers the following events:
 
 ### RowDragStarting event
 
-`RowDragStarting` event occurs when you start to drag the node in the SfTreegrid. The `TreeGridRowDragStartingEventArgs` has the following member, which provides information for the `RowDragStarting` event.
+`RowDragStarting` event occurs when you start to drag the node in the SfTreeGrid. The `TreeGridRowDragStartingEventArgs` has the following member, which provides information for the `RowDragStarting` event.
 
 `DraggingNodes`: Gets the TreeNode that contains the data associated when dragging the rows.
 
@@ -66,7 +66,7 @@ private void SfTreeGrid_RowDragStarting(object sender, TreeGridRowDragStartingEv
 
 ### RowDragOver event
 
-`RowDragOver` event occurs continuously when dragging the tree node in the SfTreegrid. The `TreeGridRowDragOverEventArgs` has the following members, which provide information for the `RowDragOver` event:
+`RowDragOver` event occurs continuously when dragging the tree node in the SfTreeGrid. The `TreeGridRowDragOverEventArgs` has the following members, which provide information for the `RowDragOver` event:
 
 `Data`: Gets a data object that contains the data associated with dragging the nodes.
 
