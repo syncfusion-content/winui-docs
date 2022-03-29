@@ -33,7 +33,7 @@ sfCalendar.ShowWeekNumbers = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar showing week number based on weeknumber rule](Week_Numbers_images/winui-calendar-show-weeknumbers.png)
+![show-week-numbers-in-winui-calendar](Images/week-numbers/show-week-numbers-in-winui-calendar.png)
 
 ## Week rule
 
@@ -62,7 +62,7 @@ sfCalendar.WeekNumberRule = CalendarWeekRule.FirstFullWeek;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar showing week number based on week number rule](Week_Numbers_images/winui-calendar-week-numberrule.png)
+![show-week-numbers-with-rule-in-winui-calendar](Images/week-numbers/show-week-numbers-with-rule-in-winui-calendar.png)
 
 ## Format week numbers
 
@@ -88,7 +88,7 @@ sfCalendar.WeekNumberFormat = "W #";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar apply week number format](Week_Numbers_images/winui-calendar-weeknumber-format.png)
+![customize-week-numbers-format-in-winui-calendar](Images/week-numbers/customize-week-numbers-format-in-winui-calendar.png)
 
 ## Customize the week number and name of days of the week appearance
 

@@ -31,7 +31,7 @@ sfCalendar.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06));
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar Date Selection](Getting-Started_images/winui-calendar-date-selection.png)
+![date-selection-in-winui-calendar](Images/selection/date-selection-in-winui-calendar.png)
 
 If [`SelectedDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDates) collection is used instead of `SelectedDate` property, the first date value in `SelectedDates` collection will be set as selected date and the same value changes upon selection by interaction.
 
@@ -77,7 +77,7 @@ public class ViewModel
 
 N> If `SelectedDate` property is used to select a date when `SelectionMode` property value is **Single**. The`SelectedDates` collection property will have only `SelectedDate` property value. 
 
-![WinUI Calendar Date Selection by Collection](Selection_images/winui-calendar-date-selection-by-collection.png)
+![multiple-dates-selection-in-winui-calendar](Images/selection/multiple-dates-selection-in-winui-calendar.png)
 
 ## Multiple Selection
 
@@ -104,7 +104,7 @@ N> If `SelectedDate` property is used to select a date when `SelectionMode` prop
 
 N> The `SelectedDate` property value will be same as the first date value in `SelectedDates` collection and changes with it.
 
-![WinUI Calendar Multiple Date Selection](Getting-Started_images/winui-calendar-multiple-date-selection.png)
+![multiple-date-selection-in-winui-calendar](Images/getting-started/multiple-date-selection-in-winui-calendar.png)
 
 ## Select a date range
 
@@ -127,7 +127,7 @@ sfCalendar.SelectionMode = CalendarSelectionMode.Range;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar Date Range Selection](Getting-Started_images/winui-calendar-date-range-selection.png)
+![date-range-selection-in-winui-calendar](Images/getting-started/date-range-selection-in-winui-calendar.png)
 
 N> Download demo application from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/Selection)
 
@@ -150,7 +150,7 @@ sfCalendar.SelectionHighlightMode = SelectionHighlightMode.Filled;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar Today and Selected Date Customization](Selection_images/winui-calendar-today-selecteddate-customization.png)
+![today-selecteddate-customization-in-winui-calendar](Images/selection/today-selecteddate-customization-in-winui-calendar.png)
 
 N> Download demo application from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/Selection)
 
@@ -173,7 +173,6 @@ sfCalendar.SelectionShape = SelectionShape.Rectangle;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar Selection Shape](Selection_images/winui-calendar-selection-shape.png)
+![change-shape-of-today-and-selected-date-in-winui-calendar](Images/selection/change-shape-of-today-and-selected-date-in-winui-calendar.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Selection)
-
