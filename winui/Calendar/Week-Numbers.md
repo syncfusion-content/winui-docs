@@ -134,5 +134,3 @@ In below codes we have created a `DataTemplate` for both `WeekNumberTemplate` an
 
 {% endhighlight %}
 {% endtabs %}
-
-![WinUI Calendar change week number template](Week_Numbers_images/winui-calendar-weeknumber-weekname-template.png)

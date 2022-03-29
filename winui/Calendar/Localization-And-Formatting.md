@@ -89,7 +89,7 @@ By default, **Sunday** is shown as the first day of the week. If you want to cha
 {% highlight C# %}
 
 SfCalendar sfCalendar = new SfCalendar();
-sfCalendar.FirstDayOfWeek = DayOfWeek.Monday;
+sfCalendar.FirstDayOfWeek = FirstDayOfWeek.Monday;
 
 {% endhighlight %}
 {% endtabs %}

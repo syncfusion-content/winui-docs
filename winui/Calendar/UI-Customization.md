@@ -101,7 +101,8 @@ public class EventDataConverter : IValueConverter
 {% tabs %}
 {% highlight XAML %}
 
-<Page.Resources>
+<Grid>
+<Grid.Resources>
     <local:EventDataConverter x:Key="EventDataConverterKey" />
     <DataTemplate x:Key="customTemplate">
         <ItemsControl ItemsSource="{Binding Path=Date, Converter={StaticResource EventDataConverterKey}}">
@@ -117,8 +118,7 @@ public class EventDataConverter : IValueConverter
             </ItemsControl.ItemsPanel>
         </ItemsControl>
     </DataTemplate>
-</Page.Resources>
-<Grid>
+</Grid.Resources>
     <calendar:SfCalendar
                         CornerRadius="14"
                         DayOfWeekFormat="{}{dayofweek.abbreviated(3)}">
