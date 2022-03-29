@@ -410,7 +410,7 @@ this.Schedule.DaysViewSettings.ViewHeaderHeight = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![view-header-height-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/view-header-text-formatting-in-winui-scheduler.png)
+![view-header-height-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/view-header-height-in-winui-scheduler..png)
 
 ### View header appearance customization
 
