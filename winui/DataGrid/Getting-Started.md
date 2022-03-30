@@ -198,7 +198,7 @@ sfDataGrid.ItemsSource = viewModel.Orders;
 
 Now, run the application and you can expect the below output,
 
-![WinUi DataGrid](Getting-Started-images/winui-datagrid-getting-started.png)
+<img src="Getting-Started-images/winui-datagrid-getting-started.png" alt="WinUi DataGrid" width="100%" Height="Auto"/>
 
 ## Defining Columns
 
@@ -416,7 +416,7 @@ By default, you can sort columns in a SfDataGrid by clicking the column header. 
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Getting-Started-images/winui-datagrid-sorting.png" alt="WinUI DataGrid Sorting" width="100%"/>
+<img src="Getting-Started-images/winui-datagrid-sorting.png" alt="WinUI DataGrid Sorting" width="100%" Height="Auto/>
 
 You can customize sorting by handling the [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SortColumnsChanging) and [SfDataGrid.SortColumnsChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SortColumnsChanged) events. To cancel the default sort, set the `Cancel` property to `true` in `SfDataGrid.SortColumnsChanging` event. 
 
@@ -448,7 +448,7 @@ Grouping can be enabled by setting [SfDataGrid.ShowGroupDropArea](https://help.s
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid Grouping](Getting-Started-images/winui-datagrid-grouping.png)
+<img src="Getting-Started-images/winui-datagrid-grouping.png" alt="WinUI DataGrid Grouping" width="100%" Height="Auto"/>
 
 ## Editing
 
