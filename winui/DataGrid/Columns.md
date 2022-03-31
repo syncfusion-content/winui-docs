@@ -2,7 +2,7 @@
 layout: post
 title: Columns in WinUI DataGrid control | Syncfusion
 description: Learn here all about Columns support in Syncfusion WinUI DataGrid(SfDataGrid) control with auto generate support and more.
-platform: winui
+platform: WinUI
 control: DataGrid
 documentation: ug
 ---
