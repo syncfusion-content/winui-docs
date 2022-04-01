@@ -30,8 +30,8 @@ sfCalendarDatePicker.ShowClearButton = false;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI CalendarDatePicker hide clear button](Getting-Started_images/winui-calendar-datepicker-hideclearbutton.png)
-![WinUI CalendarDatePicker hide clear button](Getting-Started_images/winui-calendar-datepicker-showclearbutton.png)
+![show-clear-button-in-winui-calendar-date-picker](Getting-Started_images/show-clear-button-in-winui-calendar-date-picker.png)
+![hide-clear-button-in-winui-calendar-date-picker](Getting-Started_images/hide-clear-button-in-winui-calendar-date-picker.png)
 
 ## Change dropdown alignment
 
@@ -54,7 +54,7 @@ sfCalendarDatePicker.DropDownPlacement = FlyoutPlacementMode.Right;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Dropdown Alignment of WinUI CalendarDatePicker](Dropdown-Calendar_images/winui-calendar-datepicker-dropdown-placement.png)
+![change-drop-down-placement-in-winui-calendar-date-picker](Dropdown-Calendar_images/change-drop-down-placement-in-winui-calendar-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown)
 
@@ -80,7 +80,7 @@ sfCalendarDatePicker.DropDownHeight = 500;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Dropdown Size in WinUI CalendarDatePicker](Dropdown-Calendar_images/winui-calendar-datepicker-dropdown-size.png)
+![change-drop-down-height-in-winui-calendar-date-picker](Dropdown-Calendar_images/change-drop-down-height-in-winui-calendar-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown)
 
@@ -103,7 +103,7 @@ sfCalendarDatePicker.OutOfScopeVisibility = OutOfScopeVisibility.Hidden;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI CalendarDatePicker displays Current Month Dates](Getting-Started_images/winui-calendar-datepicker-current-month.png)
+![show-or-hide-leading-trailing-dates-in-winui-calendar-date-picker](Getting-Started_images/show-or-hide-leading-trailing-dates-in-winui-calendar-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction)
 
@@ -252,7 +252,7 @@ public class EventDataConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Specific Date Cells in WinUI CalendarDatePicker](Getting-Started_images/winui-calendar-datepicker-customization.png)
+![change-drop-down-item-template-in-winui-calendar-date-picker](Getting-Started_images/change-drop-down-item-template-in-winui-calendar-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/CustomUI)
 
@@ -372,7 +372,7 @@ You can customize the colors of day names and headers of month, year, decade and
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Theme Keys in WinUI CalendarDatePicker](UI-Customization_images/winui-calendar-datepicker-theme-keys.png)
+![calendar-template-customization-in-winui-calendar-date-picker](UI-Customization_images/calendar-template-customization-in-winui-calendar-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/CustomUI)
 

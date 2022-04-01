@@ -13,7 +13,7 @@ This section explains the steps required to add the [WinUI Calendar Date Picker]
 
 ## Structure of Calendar Date Picker control
 
-![Overview of WinUI CalendarDatePicker](Getting-Started_images/winui-calendar-datepicker.png)
+![date-picker-control-view-winui-calendar-date-picker](Getting-Started_images/date-picker-control-view-winui-calendar-date-picker.png)
 
 ## Creating an application with WinUI Calendar Date Picker
 
@@ -67,7 +67,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI CalendarDatePicker control](Getting-Started_images/winui-calendar-datepicker-control.png)
+![date-picker-with-normal-view-winui-calendar-date-picker](Getting-Started_images/date-picker-with-normal-view-in-winui-calendar-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/GettingStarted)
 
@@ -84,7 +84,7 @@ sfCalendarDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Selected Date Programmatically in WinUI CalendarDatePicker](Getting-Started_images/winui-calendar-datepicker-selected-date.png)
+![programatic-date-selection-in-winui-calendar-date-picker](Getting-Started_images/programatic-date-selection-in-winui-calendar-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction)
 
@@ -105,7 +105,7 @@ SfCalendarDatePicker sfCalendarDatePicker= new SfCalendarDatePicker();
 {% endhighlight %}
 {% endtabs %}
 
-![Date Selection in WinUI CalendarDatePicker](Getting-Started_images/winui-calendar-datepicker-date-selection.gif)
+![date-selection-in-winui-calendar-date-picker](Getting-Started_images/date-selection-in-winui-calendar-date-picker.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/GettingStarted)
 
@@ -130,13 +130,13 @@ sfCalendarDatePicker.AllowNull = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI CalendarDatePicker with Null Value](Getting-Started_images/winui-calendar-datepicker-null-value.png)
+![datepicker-with-null-value-in-winui-calendar-date-picker](Getting-Started_images/datepicker-with-null-value-in-winui-calendar-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection)
 
 ## Header and description
 This section explains about `header` and `description` properties of CalendarDatePicker.
-### Header
+#### Header
 The `Header` property is used to display the title for the `CalendarDatePicker` Control.
      
 {% tabs %}
@@ -156,7 +156,7 @@ calendarDatePicker.Header = "Enter your date of birth";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI CalendarDatePicker with Header](Getting-Started_images/winui-calendar-datepicker-header.png)
+![date-picker-with-header-description-in-winui-calendar-date-picker](Getting-Started_images/date-picker-with-header-description-in-winui-calendar-date-picker.png)
 
 #### Header customization
 By using the controls `HeaderTemplate` property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
@@ -180,9 +180,9 @@ By using the controls `HeaderTemplate` property, you can customize the appearanc
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI CalendarDatePicker with Header Template](Getting-Started_images/winui-calendar-datepicker-header-template.png)
+![date-picker-with-header-template-in-winui-calendar-date-picker](Getting-Started_images/date-picker-with-header-template-in-winui-calendar-date-picker.png)
 
-### Description
+#### Description
 The `Description` support is used to display the content beneath the control as well as to provide guidance on the input that the control expects.
 
 {% tabs %}
@@ -205,7 +205,7 @@ calendarDatePicker.Description = "Candidate should born between 1990 to 2010.";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI CalendarDatePicker with Description](Getting-Started_images/winui-calendar-datepicker-description.png)
+![date-picker-with-description-in-winui-calendar-date-picker](Getting-Started_images/date-picker-with-description-in-winui-calendar-date-picker.png)
 
 
 ## Setting watermark text
@@ -231,7 +231,7 @@ sfCalendarDatePicker.AllowNull = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar Date Picker with Watermark Text](Getting-Started_images/winui-calendar-datepicker-with-watermark.png)
+![date-range-picker-with-water-mark-text-in-winui-calendar-date-range-picker](Getting-Started_images/date-range-picker-with-water-mark-text-in-winui-calendar-date-range-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection)
 
@@ -292,7 +292,7 @@ sfCalendarDatePicker.EditMode = DateTimeEditingMode.Normal;
 {% endhighlight  %}
 {% endtabs %}
 
-![Editing in WinUI CalendarDatePicker](Getting-Started_images/winui-calendar-datepicker-editing.png)
+![date-picker-with-editing-in-winui-calendar-date-picker](Getting-Started_images/date-picker-with-editing-in-winui-calendar-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection)
 
@@ -362,7 +362,7 @@ sfCalendarDatePicker.ShowDropDownButton = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Hide Dropdown Button in WinUI CalendarDatePicker](Dropdown-Calendar_images/winui-calendar-datepicker-hide-dropdown-button.png)
+![show-or-hide-drop-down-button-in-winui-calendar-date-range-picker](Dropdown-Calendar_images/show-or-hide-drop-down-button-in-winui-calendar-date-range-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown)
 
@@ -387,7 +387,7 @@ sfCalendarDatePicker.ShowSubmitButtons = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI CalendarDatePicker with Submit and Cancel Buttons](Dropdown-Calendar_images/winui-calendar-dropdown-submit-button.png)
+![show-or-hide-submit-buttons-in-winui-calendar-date-range-picker](Dropdown-Calendar_images/show-or-hide-submit-buttons-in-winui-calendar-date-range-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown)
 
@@ -405,6 +405,6 @@ For further details refer [Date Selection and Restriction](date-selection-and-re
 * You can navigate between month, year, decade and century views in `Calendar Date Picker` control.
 * You can also restrict the users to navigate between specific views only (month and year selection for credit card) using [`MinDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MinDisplayMode) and [`MaxDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MaxDisplayMode) properties.
 
-![WinUI CalendarDatePicker displays Navigation View](Getting-Started_images/winui-calendar-datepicker-view-navigation.gif)
+![view-navigation-in-winui-calendar-date-range-picker](Getting-Started_images/view-navigation-in-winui-calendar-date-range-picker.gif)
 
 For further details refer [Navigation](navigation).
