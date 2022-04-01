@@ -13,7 +13,7 @@ documentation: ug
 
 You can easily navigate to the month, year, decade, or century views to select different date ranges in the dropdown calendar by clicking the header button. Initially, month view is loaded in the dropdown calendar.
 
-![Navigation between views in WinUI Calendar DateRange Picker](Navigate-Between-Views_images/winui-calendar-daterange-picker-views-navigation.gif)
+![Navigation between views in WinUI Calendar DateRange Picker](Images/navigate-between-views/winui-calendar-daterange-picker-views-navigation.gif)
 
 ## Restrict navigation between views
 
@@ -41,7 +41,7 @@ sfCalendarDateRangePicker.MaxDisplayMode = CalendarDisplayMode.Year;
 
 N> When `MinDisplayMode` property value is **Year** and `MinDate` value is **15/01/2021**, selecting the month of minimum date will set the starting date value from the minimum date i.e.. from *January 15, 2021*.
 
-![WinUI Calendar DateRange Picker Restrict View Navigation](Getting-Started_images/winui-calendar-daterange-picker-restrict-view-navigation.gif)
+![WinUI Calendar DateRange Picker Restrict View Navigation](Images/getting-started/winui-calendar-daterange-picker-restrict-view-navigation.gif)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Restriction)
 
@@ -69,7 +69,7 @@ sfCalendarDateRangePicker.FormatString = "{0:MM/yyyy}-{1:MM/yyyy}";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker Selection based on View Restriction](Navigate-Between-Views_images/winui-calendar-daterange-picker-selection-based-on-view-restriction.gif)
+![WinUI Calendar DateRange Picker Selection based on View Restriction](Images/navigate-between-views/winui-calendar-daterange-picker-selection-based-on-view-restriction.gif)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Restriction)
 

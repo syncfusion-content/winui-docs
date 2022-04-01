@@ -32,7 +32,7 @@ sfCalendarDateRangePicker.DropDownPlacement = FlyoutPlacementMode.Right;
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown Placement in WinUI Calendar DateRange Picker](Dropdown-Calendar_images/winui-calendar-daterange-picker-dropdown-placement.png)
+![change-drop-down-placement-in-winui-calendar-date-range-picker](Images/drop-down-calendar/winui-calendar-daterange-picker-dropdown-placement.png)
 
 ## Change dropdown size
 
@@ -55,7 +55,7 @@ sfCalendarDateRangePicker.DropDownHeight = 500;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker Dropdown Height](Dropdown-Calendar_images/winui-calendar-daterange-picker-dropdown-Height.png)
+![change-drop-down-height-in-winui-calendar-date-range-picker](Images/drop-down-calendar/change-drop-down-height-in-winui-calendar-date-range-picker.png)
 
 ## Customize individual items in Calendar
 
@@ -128,7 +128,8 @@ public class EventDataConverter : IValueConverter
 {% tabs %}
 {% highlight XAML %}
 
-<Page.Resources>
+<Grid>
+<Grid.Resources>
     <local:EventDataConverter x:Key="EventDataConverterKey" />
     <DataTemplate x:Key="customTemplate">
         <ItemsControl ItemsSource="{Binding Path=Date, Converter={StaticResource EventDataConverterKey}}">
@@ -144,8 +145,7 @@ public class EventDataConverter : IValueConverter
             </ItemsControl.ItemsPanel>
         </ItemsControl>
     </DataTemplate>
-</Page.Resources>
-<Grid>
+</Grid.Resources>
     <calendar:SfCalendarDateRangePicker
                         x:Name="calendarDateRangePicker"
                         MinWidth="180"
@@ -202,7 +202,7 @@ public class EventDataConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker Styles](DropDown-Calendar_images/winui-calendar-daterange-picker-styles.png)
+![change-drop-down-item-template-in-winui-calendar-date-range-picker](Images/drop-down-calendar/change-drop-down-item-template-in-winui-calendar-date-range-picker.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/CustomUI)
 
@@ -322,6 +322,6 @@ You can customize the colors of day names and headers of month, year, decade and
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker Themes](Calendar-UI-Customization_images/winui-calendar-daterange-picker-themes.png)
+![calendar-template-customization-in-winui-calendar-date-range-picker](Images/calendar-UI-customization/calendar-template-customization-in-winui-calendar-date-range-picker.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/CustomUI)
