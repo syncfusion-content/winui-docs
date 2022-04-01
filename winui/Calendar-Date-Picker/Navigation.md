@@ -61,7 +61,7 @@ sfCalendarDatePicker.FormatString = "MM/yyyy";
 
 {% endhighlight %}
 {% endtabs %}
-Restrict
+
 ![date-picker-restrict-date-selection-in-winui-calendar-date-picker](Navigation_images/date-picker-restrict-date-selection-in-winui-calendar-date-picker.gif)
 
 You can navigate between elements in the dropdown calendar of `Calendar Date Picker` control by keyboard keys or by mouse interaction. The keyboard keys to navigate and select are listed below.
