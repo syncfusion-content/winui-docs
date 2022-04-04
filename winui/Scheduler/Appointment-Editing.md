@@ -28,7 +28,7 @@ The Scheduler supports editing the existing appointments by using the [Appointme
 
 The appointments in the appointment editor dialog can be edited. These changes will be saved back in the appointment and mapped data object when using data binding.
 
-### Edit recurring appointment
+#### Edit recurring appointment
 
 The Scheduler supports editing the recurrence appointment. The following editor dialog will appear while editing the recurrence appointment to select whether to edit only the particular occurrence or recurrence series.
 
@@ -36,7 +36,7 @@ The Scheduler supports editing the recurrence appointment. The following editor 
 
 The opening of recurrence popup editor dialog can be handled using [RecurringAppointmentEditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.RecurringAppointmentEditMode.html) property in [AppointmentEditorOpeningEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditorOpeningEventArgs.html) by handling [AppointmentEditorOpening](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditorOpening) event.
 
-### AppointmentEditorOpening event
+#### AppointmentEditorOpening event
 
 While opening the appointment editor UI dialog to add or update appointment, the Scheduler notifies the [AppointmentEditorOpening](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditorOpening) event.
 
@@ -101,7 +101,7 @@ private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorO
 N>
 * The basic editors such as `Subject`, `Location`, `Start`, and `End` of the scheduler appointment editor cannot be collapsed.
 
-### AppointmentEditorClosing event
+#### AppointmentEditorClosing event
 
 While closing the appointment editor content dialog after adding or editing the schedule appointment, the Scheduler notifies the [AppointmentEditorClosing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditorClosing) event.
 
@@ -160,13 +160,13 @@ The Scheduler supports two ways to remove the selected appointment.
 1. Pressing the <kbd>delete</kbd> key.
 2. Using the appointment editor dialog.
 
-### Delete recurring appointment
+#### Delete recurring appointment
 
 The Scheduler supports deleting the recurrence appointment. The following editor dialog will appear when user deletes the recurrence appointment. Select the delete option to make the changes for occurrence or appointment series.
 
 ![delete-an-appointment-using-recurring-appointment-editor-dialog-in-winui-scheduler](Appointment-Editing_Images/delete-an-appointment-using-recurring-appointment-editor-dialog-in-winui-scheduler.png)
 
-### AppointmentDeleting event
+#### AppointmentDeleting event
 
 The Scheduler notifies the [AppointmentDeleting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentDeleting) event, when user deletes the appointment.
 
@@ -198,7 +198,7 @@ private void Schedule_AppointmentDeleting(object sender, AppointmentDeletingEven
 
 The Scheduler has support to resize the selected appointment. This support is available for all views except  the `Month` view.
 
-### Disable appointment resize
+#### Disable appointment resize
 
 The Scheduler supports disabling the appointment resizing by setting the [AppointmentEditFlag](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditFlag.html) property except [Resize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditFlag.html#Syncfusion_UI_Xaml_Scheduler_AppointmentEditFlag_Resize). In this case, the appointment resizing cannot be performed.
 
@@ -214,7 +214,7 @@ this.Schedule.AppointmentEditFlag = AppointmentEditFlag.Add | AppointmentEditFla
 {% endhighlight %}
 {% endtabs %}
 
-### AppointmentResizing event
+#### AppointmentResizing event
 
 The Scheduler notifies the `AppointmentResizing` event, when the user resize an appointment.
 
