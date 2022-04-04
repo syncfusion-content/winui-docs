@@ -57,8 +57,8 @@ You can change the active and inactive track hover color of the slider using the
 </Page.Resources>
 
 <slider:SfSlider Value="50"
-                 ActiveTrackFill="#009688"
-                 InactiveTrackFill="#C2E6E3" />
+                 ActiveTrackFill="#006688"
+                 InactiveTrackFill="#A2E6E3" />
 
 {% endhighlight %}
 
@@ -93,8 +93,8 @@ You can change the active and inactive track pressed color of the slider using t
 </Page.Resources>
 
 <slider:SfSlider Value="50"
-                 ActiveTrackFill="#009688"
-                 InactiveTrackFill="#C2E6E3"  />
+                 ActiveTrackFill="#006688"
+                 InactiveTrackFill="#A2E6E3"  />
 
 {% endhighlight %}
 

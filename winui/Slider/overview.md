@@ -11,7 +11,7 @@ documentation: ug
 
 The Syncfusion [WinUI Slider](https://www.syncfusion.com/winui-controls/slider) is a highly interactive UI control, allowing users to select a single value from a range of values. It provides rich features such as labels, ticks, dividers, thumb styles, and tooltips.
 
-![Overview WinUI slider](images/overview/slider.jpg)
+![Overview WinUI slider](images/overview/slider.png)
 
 ## Key Features
 
