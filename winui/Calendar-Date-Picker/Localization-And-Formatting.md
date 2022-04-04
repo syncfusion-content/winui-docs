@@ -113,7 +113,7 @@ N> Refer [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.gl
 <calendar:SfCalendarDatePicker DayFormat="{}{day.integer(2)}"
                                MonthFormat="{}{month.full}"
                                DayOfWeekFormat="{}{dayofweek.abbreviated(3)}"
-                               HeaderFormatInMonthView="{}{month.abbreviated} {year.abbreviated}‎"
+                               MonthHeaderFormat="{}{month.abbreviated} {year.abbreviated}‎"
                                x:Name="sfCalendarDatePicker"/>
 
 {% endhighlight %}
@@ -123,7 +123,7 @@ SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.DayFormat = "{day.integer(2)}";
 sfCalendarDatePicker.MonthFormat = "{month.full}";
 sfCalendarDatePicker.DayOfWeekFormat = "{dayofweek.abbreviated(3)}";
-sfCalendarDatePicker.HeaderFormatInMonthView = "{month.abbreviated} {year.abbreviated}‎";
+sfCalendarDatePicker.MonthHeaderFormat = "{month.abbreviated} {year.abbreviated}‎";
 
 {% endhighlight %}
 {% endtabs %}
@@ -146,7 +146,7 @@ You can change the first day of week in dropdown calendar using the [FirstDayOfW
 {% highlight C# %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
-sfCalendarDatePicker.FirstDayOfWeek = DayOfWeek.Monday;
+sfCalendarDatePicker.FirstDayOfWeek = FirstDayOfWeek.Monday;
 
 {% endhighlight %}
 {% endtabs %}

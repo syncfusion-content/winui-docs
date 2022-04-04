@@ -179,7 +179,8 @@ public class EventDataConverter : IValueConverter
 {% tabs %}
 {% highlight XAML %}
 
-<Page.Resources>
+<Grid>
+<Grid.Resources>
     <local:EventDataConverter x:Key="EventDataConverterKey" />
     <DataTemplate x:Key="customTemplate">
         <ItemsControl ItemsSource="{Binding Path=Date, Converter={StaticResource EventDataConverterKey}}">
@@ -195,13 +196,12 @@ public class EventDataConverter : IValueConverter
             </ItemsControl.ItemsPanel>
         </ItemsControl>
     </DataTemplate>
-</Page.Resources>
-<Grid>
+</Grid.Resources>
     <calendar:SfCalendarDatePicker
                         x:Name="calendarDatePicker"
                         MinWidth="180"
                         HorizontalAlignment="Center"
-                        VerticalAlignment="Center">
+                        VerticalAlignment="Top">
         <FlyoutBase.AttachedFlyout>
             <editors:DropDownFlyout>
                 <calendar:SfCalendar SelectedDate="{x:Bind calendarDatePicker.SelectedDate, Mode=TwoWay}" >
@@ -318,7 +318,7 @@ You can customize the colors of day names and headers of month, year, decade and
                         x:Name="calendarDatePicker"
                         MinWidth="180"
                         HorizontalAlignment="Center"
-                        VerticalAlignment="Center">
+                        VerticalAlignment="Top">
         <FlyoutBase.AttachedFlyout>
             <editors:DropDownFlyout>
                 <calendar:SfCalendar SelectedDate="{x:Bind calendarDatePicker.SelectedDate, Mode=TwoWay}" >

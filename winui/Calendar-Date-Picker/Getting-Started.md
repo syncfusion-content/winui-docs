@@ -144,8 +144,8 @@ The `Header` property is used to display the title for the `CalendarDatePicker` 
 
 <editors:SfCalendarDatePicker x:Name="CalendarDatePicker" 
                               Header="Enter your date of birth"
-                              Width="300" 
-                              Height="70" />
+                              Width="180" 
+                              Height="60" />
 
 {% endhighlight %}
 {% highlight c# %}
@@ -164,7 +164,7 @@ By using the controls `HeaderTemplate` property, you can customize the appearanc
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfCalendarDatePicker  Width="250" Height="75" >
+<editors:SfCalendarDatePicker  Width="180" Height="75" >
             <editors:SfCalendarDatePicker.HeaderTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
@@ -191,7 +191,7 @@ The `Description` support is used to display the content beneath the control as 
 <editors:SfCalendarDatePicker x:Name="CalendarDatePicker" 
                               Header="Enter your date of birth" 
                               Width="300" 
-                              Height="70" 
+                              Height="80" 
                               Description="Candidate should born between 1990 to 2010." 
                               />
 
@@ -287,7 +287,7 @@ If you want to perform the validation after the user completely entered their da
 {% highlight C# %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
-sfCalendarDatePicker.EditMode = DateTimeEditingMode.Normal;
+sfCalendarDatePicker.EditMode = DateTimeEditMode.Normal;
 
 {% endhighlight  %}
 {% endtabs %}

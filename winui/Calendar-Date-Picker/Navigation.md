@@ -48,7 +48,7 @@ You can restrict users to select date within specific views (example : choosing 
 <calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker" 
                              MinDisplayMode="Year"
                              MaxDisplayMode="Decade"
-                             FormatString="MM/yyyy"
+                             DisplayDateFormat="MM/yyyy"
                              />
 
 {% endhighlight %}
@@ -57,7 +57,7 @@ You can restrict users to select date within specific views (example : choosing 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.MinDisplayMode = CalendarDisplayMode.Year;
 sfCalendarDatePicker.MaxDisplayMode = CalendarDisplayMode.Decade;
-sfCalendarDatePicker.FormatString = "MM/yyyy";
+sfCalendarDatePicker.DisplayDateFormat = "MM/yyyy";
 
 {% endhighlight %}
 {% endtabs %}
