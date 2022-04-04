@@ -13,11 +13,11 @@ The [WinUI Calendar DateRange Picker](https://www.syncfusion.com/winui-controls/
 
 ### Normal view:
 
-![WinUI Calendar DateRange Picker with Normal View](Getting-Started_images/winui-calendar-daterange-picker-with-normal-view.png)
+![daterange-picker-with-normal-view-winui-calendar-date-range-picker](Images/getting-started/daterange-picker-with-normal-view-winui-calendar-date-range-picker.png)
 
 ### Expanded view:
 
-![WinUI Calendar DateRange Picker with Expanded View](Getting-Started_images/winui-calendar-daterange-picker-with-expanded-view.png)
+![daterange-picker-with-expanded-view-winui-calendar-date-range-picker](Images/getting-started/daterange-picker-with-expanded-view-winui-calendar-date-range-picker.png)
 
 ## Key Features
 

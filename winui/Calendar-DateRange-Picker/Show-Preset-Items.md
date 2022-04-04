@@ -39,29 +39,19 @@ Add the `Syncfusion.UI.Xaml.Calendar` namespace reference in code-behind.
 {% tabs %}
 {% highlight XAML %}
 
-<Page
-    x:Class="Calendar_WinUI_FT.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Calendar_WinUI_FT"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Page.DataContext>
+<Grid>
+    <Grid.DataContext>
         <local:ViewModel x:Name="viewModel" />
-    </Page.DataContext>
-    <Grid>
-        <calendar:SfCalendarDateRangePicker  x:Name="sfCalendar" Height="35" Width="200"
-                                            Preset="{x:Bind viewModel.PresetCollection, Mode=TwoWay}" >
-            <calendar:SfCalendarDateRangePicker.PresetTemplate>
-                <DataTemplate>
-                    <ListBox ItemsSource="{Binding}" SelectionChanged="ListBox_SelectionChanged" />
-                </DataTemplate>
-            </calendar:SfCalendarDateRangePicker.PresetTemplate>
-        </calendar:SfCalendarDateRangePicker>
-    </Grid>
-</Page>
+    </Grid.DataContext>
+    <calendar:SfCalendarDateRangePicker  x:Name="sfCalendarDateRangePicker" Height="35" Width="200"
+                                        Preset="{x:Bind viewModel.PresetCollection, Mode=TwoWay}" >
+        <calendar:SfCalendarDateRangePicker.PresetTemplate>
+            <DataTemplate>
+                <ListBox ItemsSource="{Binding}" SelectionChanged="ListBox_SelectionChanged" />
+            </DataTemplate>
+        </calendar:SfCalendarDateRangePicker.PresetTemplate>
+    </calendar:SfCalendarDateRangePicker>
+</Grid>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -73,7 +63,7 @@ private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e
 
     if (listBox.SelectedItem.ToString() == "This Week")
     {
-        DateTimeOffset startdate = todayDate.AddDays(-(todayDate.DayOfWeek - sfCalendarDateRangePicker.FirstDayOfWeek));
+        DateTimeOffset startdate = DateTimeOffset startdate = todayDate.AddDays(-(todayDate.DayOfWeek - (DayOfWeek)sfCalendarDateRangePicker.FirstDayOfWeek));
         sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(startdate, startdate.AddDays(6));
     }
     else if (listBox.SelectedItem.ToString() == "This Month")
@@ -106,7 +96,7 @@ private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e
 {% endhighlight %}
 {% endtabs %}
 
-![Preset View Items in WinUI Calendar DateRange Picker](Preset-Items_images/winui-calendar-daterange-picker-preset-items.png)
+![present--item-template-in-winui-calendar-date-range-picker](Images/preset-items/present--item-template-in-winui-calendar-date-range-picker.png)
 
 ## Hide calendar on selecting a preset item
 
@@ -156,7 +146,5 @@ privateprivate void ListBox_SelectionChanged(object sender, SelectionChangedEven
 
 {% endhighlight %}
 {% endtabs %}
-
-![WinUI Calendar DateRange Picker Preset Item Selection](Preset-Items_images/winui-calendar-daterange-picker-preset-item-selection.gif)
 
 N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/PresetItems)
