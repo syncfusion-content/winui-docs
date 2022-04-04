@@ -32,7 +32,7 @@ sfCalendarDateRangePicker.DropDownPlacement = FlyoutPlacementMode.Right;
 {% endhighlight %}
 {% endtabs %}
 
-![change-drop-down-placement-in-winui-calendar-date-range-picker](Images/drop-down-calendar/winui-calendar-daterange-picker-dropdown-placement.png)
+![change-drop-down-placement-in-winui-calendar-date-range-picker](Images/drop-down-calendar/change-drop-down-placement-in-winui-calendar-date-range-picker.png)
 
 ## Change dropdown size
 

@@ -127,7 +127,7 @@ SfCalendarDateRangePicker sfCalendarDateRangePicker= new SfCalendarDateRangePick
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Interactive Selected Date Range](Images/getting-started/winui-interactive-selected-date-range.gif)
+![date-range-selection-in-winui-calendar-date-range-picker](Images/getting-started/date-range-selection-in-winui-calendar-date-range-picker.gif)
 
 ## Header and description
 This section explains about `header` and `description` properties of CalendarDateRangePicker.
@@ -334,6 +334,6 @@ For further details refer [Restrict DateRange Selection](restrict-daterange-sele
 * You can navigate between month, year, decade and century views in `Calendar DateRange Picker` control.
 * You can also restrict the users to navigate between specific views only (month and year selection for credit card) using [`MinDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MinDisplayMode) and [`MaxDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MaxDisplayMode) properties.
 
-![view-navigation-in-winui-calendar-date-range-picker](Images/getting-started/winui-calendar-daterange-picker-view-navigation.gif)
+![view-navigation-in-winui-calendar-date-range-picker](Images/getting-started/view-navigation-in-winui-calendar-date-range-picker.gif)
 
 For further details refer [Navigation](navigation).

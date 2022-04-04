@@ -121,7 +121,7 @@ sfCalendarDateRangePicker.MonthHeaderFormat = "{month.abbreviated} {year.abbrevi
 {% endhighlight %}
 {% endtabs %}
 
-![change-display-date-formatting-in-winui-calendar-date-range-picker](Images/getting-started/winui-calendar-daterange-picker-date-formatting.gif)
+![change-display-date-formatting-in-winui-calendar-date-range-picker](Images/getting-started/change-display-date-formatting-in-winui-calendar-date-range-picker.gif)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting)
 
