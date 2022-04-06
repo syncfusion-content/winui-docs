@@ -9,7 +9,7 @@ documentation: ug
 
 # Row drag and drop in WinUI TreeGrid (SfTreeGrid)
 
-SfTreeGrid allows you to drag and drop the rows by setting the `AllowDraggingRows` and `AllowDrop` properties to true. You can also drag and drop the rows between treegrid and other controls such as ListView, DataGrid and TreeView. 
+`SfTreeGrid` allows you to drag and drop the rows by setting the [AllowDraggingRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowDraggingRows) and [AllowDrop](https://docs.microsoft.com/en-us/dotnet/api/system.windows.uielement.allowdrop) properties to true. You can also drag and drop the rows between treegrid and other controls such as [ListView](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.listview?view=winui-3.0), [DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html) and [SfTreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html). 
 
 {% tabs %}
 {% highlight xml %}
@@ -29,11 +29,11 @@ sfTreeGrid.AllowDrop = true;
 
 <img src="Row-Drag-and-Drop-images/draganddrop-img1.png" alt="Drag and Drop the Row in WinUI TreeGrid" width="100%" Height="Auto"/>
 
-While dropping, the dragging nodes can be added above or below or as a child node based on their drop position. For example, if you drop a node at the bottom of the target node, it will be added below the target node. If you drop over the target node, it will be added as a child of that target node.
+While dropping, the dragging nodes can be added above or below or as a child node based on their [DropPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDropPosition.html). For example, if you drop a node at the bottom of the target node, it will be added below the target node. If you drop over the target node, it will be added as a child of that target node.
 
 <img src="Row-Drag-and-Drop-images/draganddrop-img2.png" alt="Drap and Drop the Row in WinUI TreeGrid" width="100%" Height="Auto"/>
 
-N> Drag indicators will not be shown when drop position is set to “Drop as child”.
+N> Drag indicators will not be shown when [DropPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDropPosition.html) is set to [AsChild](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDropPosition.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowDropPosition_AsChild).
 
 ## Drag multiple nodes
 
@@ -47,12 +47,12 @@ When dragging and dropping the nodes `SfTreeGrid` triggers the following events:
 
 ### RowDragStarting event
 
-`RowDragStarting` event occurs when you start to drag the node in the SfTreeGrid. The `TreeGridRowDragStartingEventArgs` has the following member, which provides information for the `RowDragStarting` event.
+[RowDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RowDragStarting) event occurs when you start to drag the node in the SfTreeGrid. The [TreeGridRowDragStartingEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragStartingEventArgs.html) has the following member, which provides information for the `RowDragStarting` event.
 
 `DraggingNodes`: Gets the TreeNode that contains the data associated when dragging the rows.
 
 `Cancel` :  Gets or sets a value indicating whether the event is canceled or not. 
-  
+
 {% tabs %}
 {% highlight c# %}
 this.sfTreeGrid.RowDragStarting += SfTreeGrid_RowDragStarting;
@@ -66,7 +66,7 @@ private void SfTreeGrid_RowDragStarting(object sender, TreeGridRowDragStartingEv
 
 ### RowDragOver event
 
-`RowDragOver` event occurs continuously when dragging the tree node in the SfTreeGrid. The `TreeGridRowDragOverEventArgs` has the following members, which provide information for the `RowDragOver` event:
+[RowDragOver](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RowDragOver) event occurs continuously when dragging the tree node in the SfTreeGrid. The [TreeGridRowDragOverEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragOverEventArgs.html) has the following members, which provide information for the `RowDragOver` event:
 
 `Data`: Gets a data object that contains the data associated with dragging the nodes.
 
@@ -91,7 +91,7 @@ private void SfTreeGrid_RowDragOver(object sender, TreeGridRowDragOverEventArgs 
 
 ### RowDropping event
 
-`RowDropping` event occurs when a tree node is dropping in the SfTreeGrid. The `TreeGridRowDroppingEventArgs` has the following members, which provide information for the `RowDropping` event:
+[RowDropping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RowDropping) event occurs when a tree node is dropping in the SfTreeGrid. The [TreeGridRowDroppingEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDroppingEventArgs.html) has the following members, which provide information for the `RowDropping` event:
 
 `Cancel` :  Gets and sets a value indicating whether the event is canceled or not. 
 
@@ -116,7 +116,7 @@ private void SfTreeGrid_RowDropping(object sender, TreeGridRowDroppingEventArgs 
 
 ### RowDropped event
 
-`RowDropped` event occurs after dropped the tree nodes in the SfTreeGrid. The `TreeGridRowDroppedEventArgs` has the following members, which provide information for the `RowDropped` event:
+[RowDropped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RowDropped) event occurs after dropped the tree nodes in the SfTreeGrid. The [TreeGridRowDroppedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDroppedEventArgs.html) has the following members, which provide information for the `RowDropped` event:
 
 `Data`: Gets a data object that contains the data associated with dragging the nodes.
 
@@ -141,7 +141,7 @@ private void SfTreeGrid_RowDropped(object sender, TreeGridRowDroppedEventArgs e)
 
 ### Disable dragging of certain nodes
 
-You can restrict the dragging for specific nodes in SfTreeGrid by using the `SfTreeGrid.RowDragStarting` event.
+You can restrict the dragging for specific nodes in SfTreeGrid by using the [SfTreeGrid.RowDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RowDragStarting) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -159,7 +159,7 @@ private void SfTreeGrid_RowDragStarting(object sender, TreeGridRowDragStartingEv
 
 ### Disable dropping of certain nodes
 
-You can restrict the dropping for specific nodes in SfTreeGrid by using the `SfTreeGrid.RowDropping` event.
+You can restrict the dropping for specific nodes in SfTreeGrid by using the [SfTreeGrid.RowDropping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RowDropping) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -176,7 +176,7 @@ private void SfTreeGrid_RowDropping(object sender, TreeGridRowDroppingEventArgs 
 
 ### Disable default Drag UI
 
-You can disable the draggable pop-up by setting the `ShowDragUI` in `SfTreeGrid.RowDragOver` event.
+You can disable the draggable pop-up by setting the [ShowDragUI](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragOverEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowDragOverEventArgs_ShowDragUI) in [SfTreeGrid.RowDragOver](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RowDragOver) event.
 
 {% tabs %}
 {% highlight c# %}
