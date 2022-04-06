@@ -157,7 +157,7 @@ The [`DividerTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
     <Rectangle Height="{Binding DividerHeight}"
                Width="{Binding DividerWidth}"
                Fill="{ThemeResource SystemAltHighColor}"
-               Stroke="{ThemeResource SystemAccentColor}"
+               Stroke="{ThemeResource SystemAccentColorDark1}"
                StrokeThickness="{Binding DividerStrokeThickness}" />
 </DataTemplate>
 
@@ -200,10 +200,10 @@ The [`ActiveDividerTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI
 {% highlight xaml %}
 
 <DataTemplate x:Key="ActiveDividerTemplate">
-    <Rectangle Height="6"
-               Width="6"
+    <Rectangle Height="10"
+               Width="10"
                Fill="{ThemeResource SystemAltHighColor}"
-               Stroke="{ThemeResource SystemAccentColor}"
+               Stroke="{ThemeResource SystemAccentColorDark1}"
                StrokeThickness="2" />
 </DataTemplate>
 

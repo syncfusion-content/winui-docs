@@ -56,7 +56,7 @@ sfCalendar.DisplayMode = CalendarDisplayMode.Month;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar View Navigation](Navigation_images/winui-calendar-view-navigation.gif)
+![restrict-view-navigation-in-winui-calendar](Images/navigation/restrict-view-navigation-in-winui-calendar.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction)
 
@@ -82,7 +82,7 @@ sfCalendar.MaxDisplayMode = CalendarDisplayMode.Decade;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar Selection based on View Restriction](Navigation_images/winui-calendar-selection-based-on-view-restriction.gif)
+![selection-based-on-view-restriction-in-winui-calendar](Images/navigation/selection-based-on-view-restriction-in-winui-calendar.gif)
 
 ## Scrolling within a view
 
@@ -104,11 +104,11 @@ sfCalendar.NavigationDirection = Orientation.Horizontal;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar Horizontal Navigation Buttons](Navigation_images/winui-calendar-horizontal-navigation-buttons.png)
+![change-navigation-buttons-in-winui-calendar](Images/navigation/change-navigation-buttons-in-winui-calendar.png)
 
 When the `NavigationDirection` property is **Vertical**, you can navigate within views by mouse scroll or by navigation buttons. When the `NavigationDirection` property is **Horizontal**, you can navigate by navigation buttons only.
 
-![WinUI Calendar View Navigation in Horizontal Direction](Getting-Started_images/winui-calendar-view-navigation-in-horizontal-direction.gif)
+![change-navigation-buttons-direction-in-winui-calendar](Images/navigation/change-navigation-buttons-direction-in-winui-calendar.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction)
 
