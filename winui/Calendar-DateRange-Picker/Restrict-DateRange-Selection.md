@@ -30,7 +30,7 @@ sfCalendarDateRangePicker.MaxDate = new DateTimeOffset(new DateTime(2021, 03, 24
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker Minimum and Maximum Date](Getting-Started_images/winui-calendar-daterange-picker-minimum-and-maximum-date.png)
+![minimum-and-maximum-date-restriction-in-winui-calendar-date-range-picker](Images/getting-started/minimum-and-maximum-date-restriction-in-winui-calendar-date-range-picker.png)
 
 N> When `MinDisplayMode` property value is **Year** and `MinDate` value is **15/01/2021**, selecting the month of minimum date will set the starting date value from the minimum date, i.e., from *January 15, 2021*.
 
@@ -92,7 +92,7 @@ sfCalendarDateRangePicker.BlackoutDates = (sfCalendarDateRangePicker.DataContext
 {% endhighlight  %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker BlackoutDates](Getting-Started_images/winui-calendar-daterange-picker-blackoutdates.png)
+![black-out-date-restriction-in-winui-calendar-date-range-picker](Images/getting-started/black-out-date-restriction-in-winui-calendar-date-range-picker.png)
 
 ## Disable dates dynamically (All weekend days)
 
@@ -120,7 +120,7 @@ You can handle the event as follows:
 {% tabs %}
 {% highlight C# %}
 
-private void SfCalendarDateRangePicker_ItemPrepared(object sender, ItemPreparedEventArgs e)
+private void SfCalendarDateRangePicker_ItemPrepared(object sender, CalendarItemPreparedEventArgs e)
 {
     //Block all weekend days
     if (e.ItemInfo.ItemType == CalendarItemType.Day &&
@@ -134,14 +134,14 @@ private void SfCalendarDateRangePicker_ItemPrepared(object sender, ItemPreparedE
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker Block Weekend Dates](Getting-Started_images/winui-calendar-daterange-picker-block-weekend-dates.png)
+![black-out-dates-with-week-end-dates-restriction-in-winui-calendar-date-range-picker](Images/getting-started/black-out-dates-with-week-end-dates-restriction-in-winui-calendar-date-range-picker.png)
 
 You can also change the text to be displayed for specific days or dates in `Calendar DateRange Picker` using [ItemInfo.DisplayText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_DisplayText) property. 
 
 {% tabs %}
 {% highlight C# %}
 
-private void SfCalendarDateRangePicker_ItemPrepared(object sender, ItemPreparedEventArgs e)
+private void SfCalendarDateRangePicker_ItemPrepared(object sender, CalendarItemPreparedEventArgs e)
 {
     //Block all weekend days
     if (e.ItemInfo.ItemType == CalendarItemType.Day &&
@@ -172,7 +172,7 @@ sfCalendarDateRangePicker.MinDatesCountInRange = 5;
 {% endhighlight  %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker with Limited Selection Duration](Getting-Started_images/winui-calendar-daterange-picker-limited-selection-duration.png)
+![limited-selection-duration-in-winui-calendar-date-range-picker](Images/getting-started/limited-selection-duration-in-winui-calendar-date-range-picker.png)
 
 When `MinDisplayMode` value is **Year** then `MinDaysCountInRange` value should be at most **28** to select a date range in year view. The `MinDaysCountInRange` value should be updated based on `MinDisplayMode` property value for range selection in respective views. 
 
@@ -184,13 +184,12 @@ When `MinDisplayMode` value is **Year** then `MinDaysCountInRange` value should 
 {% endhighlight  %}
 {% highlight C# %}
 
+sfCalendarDateRangePicker.MinDisplayMode = CalendarDisplayMode.Year;
 sfCalendarDateRangePicker.MinDatesCountInRange = 28;
 
 {% endhighlight  %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker Setting MinDaysCountInRange](Navigate-Between-Views_images/winui-calendar-daterange-picker-setting-mindayscountinrange.png)
+![display-mode-in-winui-calendar-date-range-picker](Images/navigate-between-views/display-mode-in-winui-calendar-date-range-picker.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/blob/main/Samples/Selection)
-
-
