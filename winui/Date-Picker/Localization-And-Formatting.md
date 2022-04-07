@@ -42,7 +42,7 @@ sfDatePicker.CalendarIdentifier = "HebrewCalendar";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker displays Hebrew Calendar](Dropdown-Date-Spinner_images/winui-datepicker-hebrew-calendar.png)
+![calendar-types-hebrew-calendar-in-winui-date-picker](Images/drop-down-date-spinner/calendar-types-hebrew-calendar-in-winui-date-picker.png)
 
 N> `Date Picker` control updates the flow direction visually based on the `CalendarIdentifier` property value.
 
@@ -69,7 +69,7 @@ sfDatePicker.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Flow Direction of WinUI DatePicker](Dropdown-Date-Spinner_images/winui-datepicker-flowdirection.png)
+![change-flow-direction-in-winui-date-picker](Images/drop-down-date-spinner/change-flow-direction-in-winui-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -87,12 +87,12 @@ You can localize the `Date Picker` using the `Language` property. The default va
 {% highlight C# %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
-sfDatePicker.Language = "ar";
+sfDatePicker.Language = "ar-SA";
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker with Localization](Dropdown-Date-Spinner_images/winui-datepicker-localization.png)
+![calendar-types-arabic-calendar-with-localization-in-winui-date-picker](Images/drop-down-date-spinner/calendar-types-arabic-calendar-with-localization-in-winui-date-picker.png)
 
 N> `Date Picker` control updates the flow direction visually based on the `Language` property value.
 
@@ -119,7 +119,7 @@ sfDatePicker.DisplayDateFormat= "MM/dd";
 {% endhighlight  %}
 {% endtabs %}
 
-![Applying only date and month format in WinUI DatePicker](Getting-Started_images/winui-datepicker-displaydateformat.png)
+![change-display-date-formatting-in-winui-date-picker](Images/getting-started/change-display-date-formatting-in-winui-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
@@ -150,7 +150,7 @@ sfDatePicker.VerticalAlignment = VerticalAlignment.Center;
 {% endhighlight  %}
 {% endtabs %}
 
-![WinUI DatePicker displays Date and Month Spinner](Getting-Started_images/winui-datepicker-customformats.png)
+![change-display-date-month-year-formatting-in-winui-date-picker](Images/getting-started/change-display-date-month-year-formatting-in-winui-date-picker.png)
 
 ## Edit date using mask mode
 
@@ -162,9 +162,9 @@ For example,
 
 |    Default Masking   |    Input     |     Output      |
 |:---------------------|:-------------|:---------------:|
-| If you enter `29` into the date field and `2(Feb)` in the month field, the year field value automatically changed to the upcoming leap year. | 29 (in date field) | <img src="Getting-Started_images/winui-datepicker-leapyear.png" alt="WinUI DatePicker displays Corrects Year Field based on Date"/> |
-| If you try to enter values between `13-19` the month field, it will add last input digit(3-9) in the month field and move the cursor to the next field. | 18 (in month field)  | <img src="Getting-Started_images/winui-datepicker-month-editing.png" alt="WinUI DatePicker displays Corrects Month Field based on Input"/> |
-| If you try to enter input in month field that is greater than `19`, it will add first digit in month field and last digit added into next field. | 58 (in month field) | <img src="Getting-Started_images/winui-datepicker-month-edit.png" alt="WinUI DatePicker displays Corrects Month Field based on Input"/> |
+| If you enter `29` into the date field and `2(Feb)` in the month field, the year field value automatically changed to the upcoming leap year. | 29 (in date field) | <img src="Images/getting-started/winui-datepicker-leap-year.png" alt="WinUI DatePicker displays Corrects Year Field based on Date"/> <img src="Images/getting-started/winui-datepicker-leap-year-with-selection.png" alt="WinUI DatePicker displays Corrects Year Field based on Date"/> |
+| If you try to enter values between `13-19` the month field, it will add last input digit(3-9) in the month field and move the cursor to the next field. | 18 (in month field)  | <img src="Images/getting-started/winui-date-picker-month-editing.png" alt="WinUI DatePicker displays Corrects Month Field based on Input"/><img src="Images/getting-started/winui-date-picker-month-editing-with-selection.png" alt="WinUI DatePicker displays Corrects Month Field based on Input"/> |
+| If you try to enter input in month field that is greater than `19`, it will add first digit in month field and last digit added into next field. | 58 (in month field) | <img src="Images/getting-started/winui-date-picker-month-edit.png" alt="WinUI DatePicker displays Corrects Month Field based on Input"/><img src="Images/getting-started/winui-date-picker-month-edit-with-selection.png" alt="WinUI DatePicker displays Corrects Month Field based on Input"/> |
 
 {% tabs %}
 {% highlight xaml %}
@@ -176,12 +176,12 @@ For example,
 {% highlight C# %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
-sfDatePicker.EditMode = DateTimeEditingMode.Mask;
+sfDatePicker.EditMode = DateTimeEditMode.Mask;
 
 {% endhighlight  %}
 {% endtabs %}
 
-![WinUI DatePicker with Editing](Getting-Started_images/winui-datepicker-editing.gif)
+![change-edit-mode-with-mask-in-winui-date-picker](Images/getting-started/change-edit-mode-with-mask-in-winui-date-picker.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
@@ -199,12 +199,12 @@ If you want to perform the validation after the user completely entering their d
 {% highlight C# %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
-sfDatePicker.EditMode = DateTimeEditingMode.Normal;
+sfDatePicker.EditMode = DateTimeEditMode.Normal;
 
 {% endhighlight  %}
 {% endtabs %}
 
-![WinUI DatePicker with Editing](Getting-Started_images/winui-datepicker-normal-edit.gif)
+![change-edit-mode-with-normal-in-winui-date-picker](Images/getting-started/change-edit-mode-with-normal-in-winui-date-picker.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
@@ -227,5 +227,6 @@ sfDatePicker.ShowClearButton = false;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker hide clear button](Getting-Started_images/winui-datepicker-hideclearbutton.png)
-![WinUI DatePicker hide clear button](Getting-Started_images/winui-datepicker-showclearbutton.png)
+![hide-clear-button-in-winui-date-picker](Images/getting-started/hide-clear-button-in-winui-date-picker.png)
+
+![show-clear-button-in-winui-date-picker](Images/getting-started/show-clear-button-in-winui-date-picker.png)
