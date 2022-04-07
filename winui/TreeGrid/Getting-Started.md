@@ -24,7 +24,7 @@ This section explains the steps required to add the [WinUI TreeGrid](https://www
 
 {% tabs %}
 {% highlight xaml %}
-<Page
+<Window
     x:Class="GettingStarted.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -34,13 +34,13 @@ This section explains the steps required to add the [WinUI TreeGrid](https://www
     xmlns:treeGrid="using:Syncfusion.UI.Xaml.TreeGrid"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Page.DataContext>
+    <Window.DataContext>
         <local:ViewModel/>
-    </Page.DataContext>
+    </Window.DataContext>
     <Grid x:Name="rootGrid">
         <treeGrid:SfTreeGrid x:Name="sfTreeGrid" />
     </Grid>
-</Page>
+</Window>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -50,9 +50,9 @@ namespace GettingStarted
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class MainWindow : Window
     {
-        public MainPage()
+        public MainWindow()
         {
             this.InitializeComponent();
             SfTreeGrid sfTreeGrid = new SfTreeGrid();
@@ -210,7 +210,7 @@ Bind the self-relations collection created in the previous step to `SfTreeGrid.I
 
 {% tabs %}
 {% highlight xaml %}
-<Page
+<Window
     x:Class="GettingStarted.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -220,9 +220,9 @@ Bind the self-relations collection created in the previous step to `SfTreeGrid.I
     xmlns:treeGrid="using:Syncfusion.UI.Xaml.TreeGrid"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Page.DataContext>
+    <Window.DataContext>
         <local:ViewModel/>
-    </Page.DataContext>
+    </Window.DataContext>
     <Grid x:Name="Root_Grid">
         <treeGrid:SfTreeGrid Name="sfTreeGrid"
                                ChildPropertyName="ReportsTo"
@@ -230,7 +230,7 @@ Bind the self-relations collection created in the previous step to `SfTreeGrid.I
                                ParentPropertyName="ID"
                                SelfRelationRootValue="-1" />
     </Grid>
-</Page>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -261,7 +261,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeGrid Data Binding](Getting-Started-images/winui-treegrid-data-binding.png)
+<img src="Getting-Started-images/winui-treegrid-data-binding.png" alt="WinUI TreeGrid Data Binding" width="100%" Height="Auto"/>
 
 ### Binding Nested collection with SfTreeGrid
 
@@ -365,7 +365,7 @@ Bind the nested collection created in the previous step to [SfTreeGrid.ItemsSour
 
 {% tabs %}
 {% highlight xaml %}
-<Page
+<Window
     x:Class="GettingStarted.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -376,9 +376,9 @@ Bind the nested collection created in the previous step to [SfTreeGrid.ItemsSour
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Page.DataContext>
+    <Window.DataContext>
         <local:ViewModel />
-    </Page.DataContext>
+    </Window.DataContext>
 
     <Grid x:Name="Root_Grid">
 
@@ -386,7 +386,7 @@ Bind the nested collection created in the previous step to [SfTreeGrid.ItemsSour
                                ChildPropertyName="Children"
                                ItemsSource="{Binding PersonDetails}"/>
     </Grid>
-</Page>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.TreeGrid;
@@ -409,7 +409,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 {% endtabs %}
-![Data Binding Nested Collection with WinUI TreeGrid](Getting-Started-images/winui-treegrid-binding-nested-collection.png)
+<img src="Getting-Started-images/winui-treegrid-binding-nested-collection.png" alt="Data Binding Nested Collection with WinUI TreeGrid" width="100%" Height="Auto"/>
 
 
 ## Defining Columns
@@ -588,7 +588,7 @@ Editing can be enabled by setting [SfTreeGrid.AllowEditing](https://help.syncfus
 
 Filtering can be enabled by setting the [SfTreeGrid.AllowFiltering](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowFiltering) property to true, where advanced filter UI can be opened by clicking the filter icon in column header to filter the nodes in SfTreeGrid. The filtering operations can be customized by handling the [SfTreeGrid.FilterChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterChanging) and [SfTreeGrid.FilterChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterChanged) events.
 
-![Filtering in WinUI TreeGrid](Getting-Started-images/winui-treegrid-filtering.png)
+<img src="Getting-Started-images/winui-treegrid-filtering.png" alt="Filtering in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 
 
