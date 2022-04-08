@@ -307,15 +307,15 @@ You can set [TreeGridColumn.HeaderTemplate](https://help.syncfusion.com/cr/winui
 
 {% tabs %}
 {% highlight xaml %}
-<Grid>
-<Grid.Resources>
+<treeGrid:SfTreeGrid>
+<<treeGrid:SfTreeGrid.Resources>
     <DataTemplate x:Key="headerTemplate">
         <TextBlock FontSize="10"
             Text="Employee Name"
             TextWrapping="Wrap" />
     </DataTemplate>
-</Grid.Resources>
-</Grids>
+</treeGrid:SfTreeGrid.Resources>
+</<treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% highlight c# %}
 treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
