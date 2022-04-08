@@ -703,7 +703,7 @@ You can enable or disable dragging on particular column using [GridColumn.AllowD
 
 {% tabs %}
 {% highlight xaml %}
- <syncfusion:GridTextColumn HeaderText="Order ID" MappingName="OrderID" AllowDragging="False" />
+ <dataGrid:GridTextColumn HeaderText="Order ID" MappingName="OrderID" AllowDragging="False" />
 {% endhighlight %}
 {% endtabs %}
 
