@@ -33,7 +33,7 @@ sfCalendarDateRangePicker.ShowWeekNumbers = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker showing week number based on weeknumber rule](Week_Numbers_images/winui-calendardaterangepicker-show-weeknumber.png)
+![show-week-number-in-winui-calendar-date-range-picker](Images/week_numbers/show-week-number-in-winui-calendar-date-range-picker.png)
 
 ## Week rule
 
@@ -62,7 +62,7 @@ sfCalendarDateRangePicker.WeekNumberRule = CalendarWeekRule.FirstFullWeek;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker showing week number based on weeknumber rule](Week_Numbers_images/winui-calendardaterangepicker-weekrule.png)
+![show-week-number-with-rrule-in-winui-calendar-date-range-picker](Images/week_numbers/show-week-number-with-rrule-in-winui-calendar-date-range-picker.png)
 
 ## Format week numbers
 
@@ -88,7 +88,7 @@ sfCalendarDateRangePicker.WeekNumberFormat = "W #";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker apply week number format](Week_Numbers_images/winui-calendardaterangepicker-custom-format.png)
+![show-week-number-with-format-in-winui-calendar-date-range-picker](Images/week_numbers/show-week-number-with-format-in-winui-calendar-date-range-picker.png)
 
 ## Customize the week number and name of days of the week appearance
 
@@ -143,5 +143,3 @@ In below codes we have created a `DataTemplate` for both `WeekNumberTemplate` an
 
 {% endhighlight %}
 {% endtabs %}
-
-![WinUI Calendar DateRange Picker change week dayname template](Week_Numbers_images/winui-calendardaterangepicker-weekname-weeknumber-template.png)

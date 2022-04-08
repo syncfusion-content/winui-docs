@@ -80,7 +80,7 @@ this.Schedule.ViewType = SchedulerViewType.Month;
 
 The [WinUI Scheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.html) has a built-in capability to handle the appointment arrangement internally based on the [ScheduleAppointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) collections. Allocate the collection generated to the Appointments property.
 
-### Adding Appointments
+### Creating the schedule appointments
 
 The [ScheduleAppointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) is a class that includes the specific scheduled appointment. It has some basic properties such as [StartTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_StartTime), [EndTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_EndTime), [Subject](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Subject), and some additional information about the appointment can be added with [Notes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Notes), [Location](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Location), and [IsAllDay](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_IsAllDay) properties.
 
@@ -105,7 +105,7 @@ Schedule.ItemsSource = scheduleAppointmentCollection;
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/GettingStarted)
 
-### Events/Appointments data mapping
+### Creating the custom Events/Appointments with data mapping
 
 Map the custom appointments data to our scheduler.
 
@@ -118,7 +118,7 @@ Here are the steps to render meetings using the [WinUI Scheduler](https://help.s
 * [Mapping the data object to ScheduleAppointment](#mapping-the-data-object-to-ScheduleAppointment)
 * [Bind item source for Scheduler](#binding-item-source-for-Scheduler-control)
 
-### Creating custom class to map that object with appointment
+#### Creating custom class to map that object with appointment
 Create a custom class `Meeting` with mandatory fields `From,` `To,` and `EventName`.
 
 {% tabs %}
@@ -142,7 +142,7 @@ Create a custom class `Meeting` with mandatory fields `From,` `To,` and `EventNa
 
 N> Inherit this class from the `INotifyPropertyChanged` for dynamic changes in custom data.
 
-### Create view model
+#### Create view model
 
 By setting `From` and `To` of Meeting class, schedule meetings for a specific day. Change the `Subject` and `color` of the appointment using the `EventName` and `Color` properties. Define the list of custom appointments in a separate class of `ViewModel`.
 
@@ -320,7 +320,7 @@ public class SchedulerViewModel
 {% endhighlight %}
 {% endtabs %}
 
-### Mapping the data object to ScheduleAppointment
+#### Mapping the data object to ScheduleAppointment
 Map those properties of the `Meeting` class with our `WinUI Scheduler` control by using the [AppointmentMapping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) property.
 
 {% tabs %}
@@ -355,7 +355,7 @@ Schedule.AppointmentMapping = appointmentMapping;
 {% endhighlight %}
 {% endtabs %}
 
-### Bind item source for Scheduler
+#### Bind item source for Scheduler
 Create meetings of type `ObservableCollection<Appointments>` and assign those appointments collection `Appointments` to the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ItemsSource) property of `SfScheduler`.
 
 {% tabs %}

@@ -13,7 +13,7 @@ This section explains the steps required to add the [WinUI Calendar DateRange Pi
 
 ## Structure of Calendar DateRange Picker control
 
-![WinUI Calendar DateRange Picker Structure](Getting-Started_images/winui-calendar-daterange-picker-structure.png)
+![daterange-picker-control-view-winui-calendar-date-range-picker](Images/getting-started/daterange-picker-control-view-winui-calendar-date-range-picker.png)
 
 ## Creating an application with WinUI Calendar DateRange Picker
 
@@ -89,7 +89,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker Application](Getting-Started_images/winui-calendar-daterange-picker-with-normal-view.png)
+![daterange-picker-with-normal-view-winui-calendar-date-range-picker](Images/getting-started/daterange-picker-with-normal-view-winui-calendar-date-range-picker.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/GettingStarted)
 
@@ -106,7 +106,7 @@ sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(new DateTimeOf
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker Selected Range](Getting-Started_images/winui-calendar-daterange-picker-selected-range.png)
+![programatic-date-range-selection-in-winui-calendar-date-range-picker](Images/getting-started/programatic-date-range-selection-in-winui-calendar-date-range-picker.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Selection)
 
@@ -127,7 +127,7 @@ SfCalendarDateRangePicker sfCalendarDateRangePicker= new SfCalendarDateRangePick
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Interactive Selected Date Range](Getting-Started_images/winui-interactive-selected-date-range.gif)
+![date-range-selection-in-winui-calendar-date-range-picker](Images/getting-started/date-range-selection-in-winui-calendar-date-range-picker.gif)
 
 ## Header and description
 This section explains about `header` and `description` properties of CalendarDateRangePicker.
@@ -153,7 +153,7 @@ dateRangePicker.Header = "Select the dates";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker with Header](Getting-Started_images/winui-calendar-daterange-picker-header.png)
+![date-range-picker-with-header-description-in-winui-calendar-date-range-picker](Images/getting-started/date-range-picker-with-header-description-in-winui-calendar-date-range-picker.png)
 
 #### Header customization
 By using the controls `HeaderTemplate` property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
@@ -162,23 +162,20 @@ By using the controls `HeaderTemplate` property, you can customize the appearanc
 {% highlight xaml %}
 
 <editors:SfCalendarDateRangePicker  Width="250" Height="75">
-            <editors:SfCalendarDateRangePicker.HeaderTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                         <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE163;"/>
-                        <TextBlock Text="Training Dates" FontSize="14" Margin="5"/>
-                    </StackPanel>
-                </DataTemplate>
-            </editors:SfCalendarDateRangePicker.HeaderTemplate>
-        </editors:SfCalendarDateRangePicker>
-
-
-
+    <editors:SfCalendarDateRangePicker.HeaderTemplate>
+        <DataTemplate>
+            <StackPanel Orientation="Horizontal">
+                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE163;"/>
+                <TextBlock Text="Training Dates" FontSize="14" Margin="5"/>
+            </StackPanel>
+        </DataTemplate>
+    </editors:SfCalendarDateRangePicker.HeaderTemplate>
+</editors:SfCalendarDateRangePicker>
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker with Header Template](Getting-Started_images/winui-calendar-daterange-picker-headertemplate.png)
+![date-range-picker-with-header-template-in-winui-calendar-date-range-picker](Images/getting-started/date-range-picker-with-header-template-in-winui-calendar-date-range-picker.png)
 
 
 ### Description
@@ -197,13 +194,13 @@ The `Description` support is used to display the content beneath the control as 
 {% highlight c# %}
 
 SfCalendarDateRangePicker dateRangePicker = new SfCalendarDateRangePicker();
- dateRangePicker.Description = "The range should be greater than 5 days.";
-
+dateRangePicker.Header="Select the dates";
+dateRangePicker.Description = "The range should be greater than 5 days.";
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker with Description](Getting-Started_images/winui-calendar-daterange-picker-description.png)
+![date-range-picker-with-description-in-winui-calendar-date-range-picker](Images/getting-started/date-range-picker-with-description-in-winui-calendar-date-range-picker.png)
 
 
 ## Setting watermark text
@@ -227,7 +224,7 @@ sfCalendarDateRangePicker.SelectedRange = null;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker Watermark Text](Getting-Started_images/winui-calendar-daterange-picker-watermark-text.png)
+![date-range-picker-with-water-mark-text-in-winui-calendar-date-range-picker](Images/getting-started/date-range-picker-with-water-mark-text-in-winui-calendar-date-range-picker.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Selection)
 
@@ -288,12 +285,13 @@ N> When the dropdown button is hidden, you can still open the dropdown calendar 
 {% highlight c# %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
+sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(new DateTimeOffset(new DateTime(2021, 03, 17)), new DateTimeOffset(new DateTime(2021, 03, 24)));
 sfCalendarDateRangePicker.ShowDropDownButton = false;
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker Dropdown Button](Dropdown-Calendar_images/winui-calendar-daterange-picker-dropdown-button.png)
+![show-or-hide-drop-down-button-in-winui-calendar-date-range-picker](Images/drop-down-calendar/show-or-hide-drop-down-button-in-winui-calendar-date-range-picker.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/DropDown)
 
@@ -318,7 +316,7 @@ sfCalendarDateRangePicker.ShowSubmitButtons = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker Submit Button](Dropdown-Calendar_images/winui-calendar-daterange-picker-submit-button.png)
+![show-or-hide-submit-buttons-in-winui-calendar-date-range-picker](Images/drop-down-calendar/show-or-hide-submit-buttons-in-winui-calendar-date-range-picker.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/DropDown)
 
@@ -336,6 +334,6 @@ For further details refer [Restrict DateRange Selection](restrict-daterange-sele
 * You can navigate between month, year, decade and century views in `Calendar DateRange Picker` control.
 * You can also restrict the users to navigate between specific views only (month and year selection for credit card) using [`MinDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MinDisplayMode) and [`MaxDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MaxDisplayMode) properties.
 
-    ![WinUI Calendar DateRange Picker View Navigation](Getting-Started_images/winui-calendar-daterange-picker-view-navigation.gif)
+![view-navigation-in-winui-calendar-date-range-picker](Images/getting-started/view-navigation-in-winui-calendar-date-range-picker.gif)
 
 For further details refer [Navigation](navigation).

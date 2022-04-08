@@ -50,7 +50,7 @@ sfCalendarDatePicker.CalendarIdentifier = "HebrewCalendar";
 
 N> The value in `Calendar Date Picker` control textbox is updated based on `CalendarIdentifier` property calendar type.
 
-![WinUI CalendarDatePicker displays Hebrew Calendar](Getting-Started_images/winui-calendar-datepicker-with-herbew-type.png)
+![calendar-types-hebrew-calendar-in-winui-calendar-date-picker](Getting-Started_images/calendar-types-hebrew-calendar-in-winui-calendar-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Formatting)
 
@@ -73,7 +73,7 @@ sfCalendarDatePicker.Language = "ar-AR";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI CalendarDatePicker with Localization](Getting-Started_images/winui-calendar-datepicker-localization.png)
+![calendar-types-arabic-calendar-in-winui-calendar-picker](Getting-Started_images/calendar-types-arabic-calendar-in-winui-calendar-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Formatting)
 
@@ -97,7 +97,7 @@ sfCalendarDatePicker.DisplayDateFormat= "M";
 {% endhighlight  %}
 {% endtabs %}
 
-![WinUI CalendarDatePicker with Month Format](Getting-Started_images/winui-calendar-datepicker-month-format.png)
+![change-display-date-format-in-winui-calendar-date-picker](Getting-Started_images/change-display-date-format-in-winui-calendar-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Formatting)
 
@@ -113,7 +113,7 @@ N> Refer [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.gl
 <calendar:SfCalendarDatePicker DayFormat="{}{day.integer(2)}"
                                MonthFormat="{}{month.full}"
                                DayOfWeekFormat="{}{dayofweek.abbreviated(3)}"
-                               HeaderFormatInMonthView="{}{month.abbreviated} {year.abbreviated}‎"
+                               MonthHeaderFormat="{}{month.abbreviated} {year.abbreviated}‎"
                                x:Name="sfCalendarDatePicker"/>
 
 {% endhighlight %}
@@ -123,12 +123,12 @@ SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.DayFormat = "{day.integer(2)}";
 sfCalendarDatePicker.MonthFormat = "{month.full}";
 sfCalendarDatePicker.DayOfWeekFormat = "{dayofweek.abbreviated(3)}";
-sfCalendarDatePicker.HeaderFormatInMonthView = "{month.abbreviated} {year.abbreviated}‎";
+sfCalendarDatePicker.MonthHeaderFormat = "{month.abbreviated} {year.abbreviated}‎";
 
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Calendar display Format in WinUI CalendarDatePicker](Getting-Started_images/winui-calendar-datepicker-format.gif)
+![change-display-date-formatting-in-winui-calendar-date-picker](Getting-Started_images/change-display-date-formatting-in-winui-calendar-date-range-picker.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Formatting)
 
@@ -146,12 +146,12 @@ You can change the first day of week in dropdown calendar using the [FirstDayOfW
 {% highlight C# %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
-sfCalendarDatePicker.FirstDayOfWeek = DayOfWeek.Monday;
+sfCalendarDatePicker.FirstDayOfWeek = FirstDayOfWeek.Monday;
 
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Week Day in WinUI CalendarDatePicker](Getting-Started_images/winui-calendar-datepicker-week-day.png)
+![change-first-day-of-week-in-winui-calendar-date-picker](Getting-Started_images/change-first-day-of-week-in-winui-calendar-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection)
 
@@ -174,6 +174,6 @@ sfCalendarDatePicker.NumberOfWeeksInView = 4;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI CalendarDatePicker displays Specific Weeks](Getting-Started_images/winui-calendar-datepicker-weeks.png)
+![change-number-of-weeks-in-a-view-in-winui-calendar-date-picker](Getting-Started_images/change-number-of-weeks-in-a-view-in-winui-calendar-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection)

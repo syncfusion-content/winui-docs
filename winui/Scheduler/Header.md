@@ -46,7 +46,7 @@ this.Schedule.HeaderDateFormat = "MMM-yyyy";
 
 ## Appearance customization
 
-Style the Scheduler header appearance using the `SchedulerHeaderControl` in the scheduler. Change the background color, textStyle, borderBrush, and more by setting the style property for `SchedulerHeaderControl.`
+The scheduler header appearance can be achieved by using the `HeaderTemplate` property or style the header appearance using the `SchedulerHeaderControl` in the scheduler. Change the background color, textStyle, borderBrush, and more by setting the style property for `SchedulerHeaderControl.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -69,7 +69,7 @@ Style the Scheduler header appearance using the `SchedulerHeaderControl` in the 
 
 ![customize-the-scheduler-header-appearance-in-winui-scheduler-timeslot-view](Header_Images/customize-the-scheduler-header-appearance-in-winui-scheduler.png)
 
-### Customize header appearance using DataTemplate
+#### Customize header appearance using DataTemplate
 
 Customize the header appearance of scheduler by using the [HeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_HeaderTemplate) property of SfScheduler.
 
