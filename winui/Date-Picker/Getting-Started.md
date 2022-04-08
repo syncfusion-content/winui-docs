@@ -13,7 +13,7 @@ This section explains the steps required to add the WINUI [Date Picker](https://
 
 ## Structure of Date Picker control
 
-![Structure of WinUI DatePicker](Getting-Started_images/winui-datepicker-structure.png)
+![winui-datepicker-structure](Images/getting-started/winui-datepicker-structure.png)
 
 ## Creating an application with WinUI Date Picker
 
@@ -87,7 +87,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker Control](Getting-Started_images/winui-datepicker.png)
+![winui-datepicker-control](Images/getting-started/winui-datepicker-control.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/Getting_Started)
 
@@ -104,7 +104,7 @@ sfDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 10, 29));
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker displays Selected Date](Getting-Started_images/winui-datepicker-with-selected-date.png)
+![programmatic-date-selection-in-winui-date-picker](Images/getting-started/programmatic-date-selection-in-winui-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -125,7 +125,7 @@ SfDatePicker sfDatePicker= new SfDatePicker();
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker displays Selected Date](Getting-Started_images/winui-datepicker-selected-date-interact.gif)
+![date-selection-in-winui-date-picker](Images/getting-started/date-selection-in-winui-date-picker.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/Getting_Started)
 
@@ -159,7 +159,7 @@ sfDatePicker.AllowNull = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker displays Null Value](Getting-Started_images/winui-datepicker-null-value.png)
+![allow-null-value-in-winui-date-picker](Images/getting-started/allow-null-value-in-winui-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
@@ -171,7 +171,7 @@ The `Header` property is used to display the title for the `DatePicker` Control
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfDatePicker x:Name="DatePicker" 
+<editors:SfDatePicker x:Name="datePicker" 
                       Height="75" 
                       Width="200"
                       Header="Enter your interview date" />
@@ -185,7 +185,8 @@ datePicker.Header = "Enter your interview date";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker with Header](Getting-Started_images/winui-datepicker-header.png)
+![customize-header-text-in-winui-date-picker](Images/getting-started/customize-header-text-in-winui-date-picker.png)
+
 #### Header customization
 By using the controls `HeaderTemplate` property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
 
@@ -193,21 +194,21 @@ By using the controls `HeaderTemplate` property, you can customize the appearanc
 {% highlight xaml %}
 
 <editors:SfDatePicker  Width="250" Height="75">
-            <editors:SfDatePicker.HeaderTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE80B;"/>
-                        <TextBlock Text="Interview Date" FontSize="14" Margin="5"/>
-                    </StackPanel>
-                </DataTemplate>
-            </editors:SfDatePicker.HeaderTemplate>
-        </editors:SfDatePicker>
+    <editors:SfDatePicker.HeaderTemplate>
+        <DataTemplate>
+            <StackPanel Orientation="Horizontal">
+                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE80B;"/>
+                <TextBlock Text="Interview Date" FontSize="14" Margin="5"/>
+            </StackPanel>
+        </DataTemplate>
+    </editors:SfDatePicker.HeaderTemplate>
+</editors:SfDatePicker>
 
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker with Header Template](Getting-Started_images/winui-datepicker-headertemplate.png)
+![customize-header-template-in-winui-date-picker](Images/getting-started/customize-header-template-in-winui-date-picker.png)
 
 ### Description
 The `Description` support is used to display the content beneath the control as well as to provide guidance on the input that the control expects.
@@ -217,7 +218,7 @@ The `Description` support is used to display the content beneath the control as 
 
 <editors:SfDatePicker x:Name="DatePicker" 
                       Height="75" 
-                      Width="200" 
+                      Width="300" 
                       Header="Enter your interview date" 
                       Description="The chosen date must be within the next 5 days."/>
 
@@ -230,7 +231,7 @@ datePicker.Description = "The chosen date must be within the next 5 days.";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker with Description](Getting-Started_images/winui-datepicker-description.png)
+![customize-header-description-text-in-winui-date-picker](Images/getting-started/customize-header-description-text-in-winui-date-picker.png)
 
 
 ## Setting watermark text
@@ -256,7 +257,7 @@ sfDatePicker.AllowNull = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker displays Watermark Text](Getting-Started_images/winui-datepicker-watermark.png)
+![customize-text-with-water-mark-in-winui-date-picker](Images/getting-started/customize-text-with-water-mark-in-winui-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
