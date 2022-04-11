@@ -25,7 +25,7 @@ sfTimePicker.MaxTime = new DateTimeOffset(new DateTime(DateTime.Now.Year, DateTi
 {% endhighlight  %}
 {% endtabs %}
 
-![Restrict Time Selection with Specific Range in WinUI TimePicker](Getting-Started_images/winui-timepicker-time-restriction.png)
+![change-minimum-and-maximum-times-in-winui-time-picker](Getting-Started_images/change-minimum-and-maximum-times-in-winui-time-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
@@ -77,7 +77,7 @@ sfTimePicker.BlackoutTimes = (sfTimePicker.DataContext as ViewModel).BlackoutTim
 {% endhighlight  %}
 {% endtabs %}
 
-![WinUI TimePicker with BlackoutTimes](Getting-Started_images/winui-timepicker-blackout-times.png)
+![change-black-out-times-in-winui-time-picker](Getting-Started_images/change-black-out-times-in-winui-time-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -142,7 +142,7 @@ private void SfTimePicker_TimeFieldPrepared(object sender, DateTimeFieldPrepared
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TimePicker displays Custom Time Interval in Dropdown Spinner](Dropdown-Time-Spinner_images/winui-time-picker-custom-interval.png)
+![change-custom-time-interval-in-winui-time-picker](Dropdown-Time-Spinner_images/change-custom-time-interval-in-winui-time-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeFieldPrepared)
 
@@ -165,7 +165,7 @@ sfTimePicker.ShowSubmitButtons = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Hide Submit Buttons from Dropdown Time Spinner in WinUI TimePicker](Getting-Started_images/winui-timepicker-hide-submit-button.gif)
+![show-or-hide-submit-buttons-in-winui-time-picker](Getting-Started_images/show-or-hide-submit-buttons-in-winui-time-picker.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -211,4 +211,3 @@ You can handle the event as follows:
 
 {% endhighlight %}
 {% endtabs %}
-
