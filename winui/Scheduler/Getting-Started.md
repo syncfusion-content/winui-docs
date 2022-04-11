@@ -24,10 +24,10 @@ This section provides an overview of working with [WinUI Scheduler](https://www.
 {% tabs %}
 {% highlight xaml tabtitle ="MainWindow.xaml" hl_lines="8 12" %}
 <Window
-    x:Class="WinUISchedulerDemo.MainWindow"
+    x:Class="GettingStarted.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:WinUISchedulerDemo"
+    xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler"

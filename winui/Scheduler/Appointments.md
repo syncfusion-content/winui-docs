@@ -85,7 +85,7 @@ N> The business object class should contain event start and end DateTime fields 
 Create a business object class `Meeting` with mandatory fields `From,` `To,` and `EventName.`
 
 {% tabs %}
-{% highlight c# tabtitle= "Meeting.cs" hl_lines="6" %}
+{% highlight c# tabtitle= "Meeting.cs" %}
 /// <summary>   
 /// Represents the business object data properties.   
 /// </summary> 
@@ -300,7 +300,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler
 For creating the business object recurrence appointment, create a business object class Meeting with mandatory fields `from,` `to,` and `recurrenceRule.`
 
 {% tabs %}
-{% highlight c# tabtitle= "Meeting.cs" hl_lines="6" %}
+{% highlight c# tabtitle= "Meeting.cs" %}
 /// <summary>   
 /// Represents the business object data properties.   
 /// </summary> 
@@ -593,7 +593,7 @@ Delete any occurrence which is an exception from the recurrence pattern appointm
 To add the exception dates in the recurrence series of business object, add the `RecurrenceExceptionDates,` `EventName,` `From,` `To,` `Color,` `RecurrenceRule` properties to the business object class `Meeting.`
 
 {% tabs %}
-{% highlight c# tabtitle= "Meeting.cs" hl_lines="6" %}
+{% highlight c# tabtitle= "Meeting.cs" %}
 public class Meeting
 {
     public ObservableCollection<DateTime> RecurrenceExceptions { get; set; } = new ObservableCollection<DateTime>();
@@ -673,7 +673,7 @@ Also add an exception appointment which is changed or modified occurrence of the
 Add the created exception recurrence appointment to the SfScheduler `ItemsSource.`
 
 {%tabs %}
-{% highlight c# %}
+{% highlight c# tabtitle= "MainWindow.xaml.cs" %}
 //// Creating an instance for schedule appointment collection.
 public ObservableCollection<Meeting> RecursiveAppointmentCollection
 {
