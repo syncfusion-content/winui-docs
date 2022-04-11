@@ -13,7 +13,7 @@ This section explains the steps required to add the [WinUI Time Picker](https://
 
 ## Structure of Time Picker control
 
-![Structure of WinUI TimePicker](Getting-Started_images/winui-timepicker-structure.png)
+![winui-time-picker-structure](Getting-Started_images/winui-time-picker-structure.png)
 
 ## Creating an application with WinUI Time Picker
 
@@ -87,7 +87,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TimePicker Control](Getting-Started_images/winui-timepicker-control.png)
+![winui-time-picker-control](Getting-Started_images/winui-time-picker-control.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/Getting_Started)
 
@@ -104,7 +104,7 @@ sfTimePicker.SelectedTime = new DateTimeOffset(new DateTime(2021, 10, 29, 10, 45
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TimePicker displays Selected Time](Getting-Started_images/winui-timepicker-selected-time.png)
+![programmatic-time-selection-in-winui-time-picker](Getting-Started_images/programmatic-time-selection-in-winui-time-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -125,7 +125,7 @@ SfTimePicker sfTimePicker= new SfTimePicker();
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Selected Time in WinUI TimePicker](Getting-Started_images/winui-timepicker-selected-time-interact.gif)
+![time-selection-in-winui-time-picker](Getting-Started_images/time-selection-in-winui-time-picker.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/Getting_Started)
 
@@ -158,13 +158,13 @@ sfTimePicker.AllowNull = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TimePicker displays Null Value](Getting-Started_images/winui-timepicker-null-value.png)
+![allow-null-value-in-winui-time-picker](Getting-Started_images/allow-null-value-in-winui-time-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
 ## Header and description
 This section explains about `header` and `description` properties of TimePicker.
-### Header
+#### Header
 The `Header` property is used to display the title for the `TimePicker` Control
      
 {% tabs %}
@@ -181,11 +181,10 @@ The `Header` property is used to display the title for the `TimePicker` Control
 SfTimePicker timePicker = new SfTimePicker();
 timePicker.Header = "Select your convenient order delivery time";
 
-
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TimePicker with Header](Getting-Started_images/winui-timepicker-header.png)
+![customize-header-text-in-winui-time-picker](Getting-Started_images/customize-header-text-in-winui-time-picker.png)
 #### Header customization
 By using the controls `HeaderTemplate` property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
 
@@ -193,21 +192,21 @@ By using the controls `HeaderTemplate` property, you can customize the appearanc
 {% highlight xaml %}
 
 <editors:SfTimePicker  Width="250" Height="75">
-            <editors:SfTimePicker.HeaderTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8DF;"/>
-                        <TextBlock Text="Delivery Time" FontSize="14" Margin="5"/>
-                    </StackPanel>
-                </DataTemplate>
-            </editors:SfTimePicker.HeaderTemplate>
+    <editors:SfTimePicker.HeaderTemplate>
+        <DataTemplate>
+            <StackPanel Orientation="Horizontal">
+                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8DF;"/>
+                <TextBlock Text="Delivery Time" FontSize="14" Margin="5"/>
+            </StackPanel>
+        </DataTemplate>
+    </editors:SfTimePicker.HeaderTemplate>
  </editors:SfTimePicker>
 
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TimePicker with Header Template](Getting-Started_images/winui-timepicker-header-template.png)
+![customize-header-template-in-winui-time-picker](Getting-Started_images/customize-header-template-in-winui-time-picker.png)
 
 ### Description
 The `Description` support is used to display the content beneath the control as well as to provide guidance on the input that the control expects.
@@ -225,14 +224,13 @@ The `Description` support is used to display the content beneath the control as 
 {% highlight c# %}
 
 SfTimePicker timePicker = new SfTimePicker();
+timePicker.Header = "Select your convenient order delivery time";
 timePicker.Description = "Your order will be delivered on time.";
-
-
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TimePicker with Description](Getting-Started_images/winui-timepicker-description.png)
+![customize-header-description-text-in-winui-time-picker](Getting-Started_images/customize-header-description-text-in-winui-time-picker.png)
 
 ## Setting watermark text
 
@@ -257,7 +255,7 @@ sfTimePicker.AllowNull = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TimePicker displays Watermark Text](Getting-Started_images/winui-timepicker-watermark.png)
+![customize-text-with-water-mark-in-winui-time-picker](Getting-Started_images/customize-text-with-water-mark-in-winui-time-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 

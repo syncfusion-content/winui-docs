@@ -192,30 +192,33 @@ public class DisplayBindingConverter : IValueConverter
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
+
+xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
+
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AllowEditing="True"
                        AutoGenerateColumns="False"
                        ItemsSource="{Binding Orders}"
                        ColumnWidthMode="SizeToHeader">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn  MappingName="OrderID" HeaderText="Order ID" />
-        <syncfusion:GridTextColumn  MappingName="CustomerID" HeaderText="Customer ID"/>
-        <syncfusion:GridTextColumn  MappingName="ShipCity" HeaderText="Ship City"/>
-        <syncfusion:GridTextColumn  MappingName="Country"/>
-        <syncfusion:GridTextColumn DisplayBinding="{Binding Path=UnitPrice,
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn  MappingName="OrderID" HeaderText="Order ID" />
+        <dataGrid:GridTextColumn  MappingName="CustomerID" HeaderText="Customer ID"/>
+        <dataGrid:GridTextColumn  MappingName="ShipCity" HeaderText="Ship City"/>
+        <dataGrid:GridTextColumn  MappingName="Country"/>
+        <dataGrid:GridTextColumn DisplayBinding="{Binding Path=UnitPrice,
                                             Converter={StaticResource converter}}"
                    HeaderText="Unit Price"
                    MappingName="UnitPrice"
                    ValueBinding="{Binding Path=UnitPrice}" />
-        <syncfusion:GridTextColumn MappingName="Quantity" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+        <dataGrid:GridTextColumn MappingName="Quantity" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
 In the below screenshot, Unit Price column display value is formatted to currency by setting `DisplayBinding` property.
 
-![WinUI DataGrid Column with Currency Values](Column-Types_images/winui-datagrid-currency-values.png)
+<img src="Column-Types_images/winui-datagrid-currency-values.png" alt="WinUI DataGrid Column with Currency Values" width="100%" Height="Auto"/>
 
 By default, Columns handling the data operations (sorting and grouping) based on `MappingName` property. You can perform data operations based on `ValueBinding` by setting [GridColumn.UseBindingValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_UseBindingValue) to `true`, when the standard reflection not works or binding column with complex or indexer properties.
 
@@ -227,18 +230,18 @@ In the below code snippet, `GridTextColumn` is loaded with `ProgressBar` and `Te
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AllowEditing="True"
                        AutoGenerateColumns="False"
                        ItemsSource="{Binding Orders}"
                        ColumnWidthMode="SizeToHeader">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn  MappingName="OrderID" HeaderText="Order ID" />
-        <syncfusion:GridTextColumn  MappingName="CustomerID" HeaderText="Customer ID"/>
-        <syncfusion:GridTextColumn  MappingName="ShipCity" HeaderText="Ship City"/>
-        <syncfusion:GridTextColumn  MappingName="Country"/>
-        <syncfusion:GridTextColumn HeaderText="Unit Price" MappingName="UnitPrice" >
-            <syncfusion:GridTextColumn.CellTemplate>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn  MappingName="OrderID" HeaderText="Order ID" />
+        <dataGrid:GridTextColumn  MappingName="CustomerID" HeaderText="Customer ID"/>
+        <dataGrid:GridTextColumn  MappingName="ShipCity" HeaderText="Ship City"/>
+        <dataGrid:GridTextColumn  MappingName="Country"/>
+        <dataGrid:GridTextColumn HeaderText="Unit Price" MappingName="UnitPrice" >
+            <dataGrid:GridTextColumn.CellTemplate>
             <DataTemplate>
                 <Grid>
                     <ProgressBar x:Name="progressBar"
@@ -255,15 +258,15 @@ In the below code snippet, `GridTextColumn` is loaded with `ProgressBar` and `Te
                            TextAlignment="Center" />
                 </Grid>
             </DataTemplate>
-            </syncfusion:GridTextColumn.CellTemplate>
-        </syncfusion:GridTextColumn>
-        <syncfusion:GridTextColumn MappingName="Quantity" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+            </dataGrid:GridTextColumn.CellTemplate>
+        </dataGrid:GridTextColumn>
+        <dataGrid:GridTextColumn MappingName="Quantity" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid Column with ProgressBar](Column-Types_images/winui-datagrid-progressbar.png)
+<img src="Column-Types_images/winui-datagrid-progressbar.png" alt="WinUI DataGrid Column with ProgressBar" width="100%" Height="Auto"/>
 
 `CellTemplate` is not support by `GridHyperlinkColumn`, `GridCheckboxColumn` and `GridImageColumn` columns.
 
@@ -283,25 +286,25 @@ You can use the same [DataTemplate](https://docs.microsoft.com/en-us/windows/win
     </DataTemplate>
 </Page.Resources>
 
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AllowEditing="True"
                        AutoGenerateColumns="False"
                        ItemsSource="{Binding Orders}"
                        ColumnWidthMode="SizeToHeader">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn  MappingName="OrderID" HeaderText="Order ID" CellTemplate="{StaticResource cellTemplate}" SetCellBoundValue="True" />
-        <syncfusion:GridTextColumn  MappingName="CustomerID" HeaderText="Customer ID"/>
-        <syncfusion:GridTextColumn  MappingName="ShipCity" HeaderText="Ship City"/>
-        <syncfusion:GridTextColumn  MappingName="Country" CellTemplate="{StaticResource cellTemplate}" SetCellBoundValue="True" />
-        <syncfusion:GridTextColumn HeaderText="Unit Price" MappingName="UnitPrice" />
-        <syncfusion:GridTextColumn MappingName="Quantity" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn  MappingName="OrderID" HeaderText="Order ID" CellTemplate="{StaticResource cellTemplate}" SetCellBoundValue="True" />
+        <dataGrid:GridTextColumn  MappingName="CustomerID" HeaderText="Customer ID"/>
+        <dataGrid:GridTextColumn  MappingName="ShipCity" HeaderText="Ship City"/>
+        <dataGrid:GridTextColumn  MappingName="Country" CellTemplate="{StaticResource cellTemplate}" SetCellBoundValue="True" />
+        <dataGrid:GridTextColumn HeaderText="Unit Price" MappingName="UnitPrice" />
+        <dataGrid:GridTextColumn MappingName="Quantity" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid Column with Cell Template](Column-Types_images/winui-datagrid-cell-template.png)
+<img src="Column-Types_images/winui-datagrid-cell-template.png" alt="WinUI DataGrid Column with Cell Template" width="100%" Height="Auto"/>
 
 ### Setting CellTemplate based on custom logic using TemplateSelector
 
@@ -356,15 +359,15 @@ In the below code, the custom template selector set to `GridColumn.CellTemplateS
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="dataGrid"
+<dataGrid:SfDataGrid  x:Name="dataGrid"
                         AutoGenerateColumns="False"
                         ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn CellTemplateSelector="{StaticResource cellTemplateSelector}"
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn CellTemplateSelector="{StaticResource cellTemplateSelector}"
                                    HeaderText="Order ID"
                                    MappingName="OrderID" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -372,7 +375,7 @@ In the below code, the custom template selector set to `GridColumn.CellTemplateS
 N> Non-Editable columns does not support `CellTemplate`.
 
 
-![WinUI DataGrid Column Template Selector](Column-Types_images/winui-datagrid-template-selection.png)
+<img src="Column-Types_images/winui-datagrid-template-selection.png" alt="WinUI DataGrid Column Template Selector" width="100%" Height="Auto"/>
 
 ## Data Formatting
 
@@ -449,7 +452,7 @@ private void sfDataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumn
 {% endtabs %}
 
 
-![WinUI DataGrid Column Formatting](Column-Types_images/winui-datagrid-column-formatting.png)
+<img src="Column-Types_images/winui-datagrid-column-formatting.png" alt="WinUI DataGrid Column Formatting" width="100%" Height="Auto"/>
 
 ## Styling GridColumn
 
@@ -461,23 +464,23 @@ You can change the font settings such as `FontSize`, `FontFamily`, `FontWeight` 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
+<dataGrid:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="CustomerName">
-            <syncfusion:GridTextColumn.CellStyle>
-                <Style TargetType="syncfusion:GridCell">
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn MappingName="CustomerName">
+            <dataGrid:GridTextColumn.CellStyle>
+                <Style TargetType="dataGrid:GridCell">
                     <Setter Property="FontSize" Value="12" />
                     <Setter Property="FontFamily" Value="Segoe UI" />
                     <Setter Property="FontWeight" Value="Bold" />
                     <Setter Property="FontStyle" Value="Italic" />
                     <Setter Property="FontStretch" Value="Condensed" />
                 </Style>
-            </syncfusion:GridTextColumn.CellStyle>
-        </syncfusion:GridTextColumn>
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+            </dataGrid:GridTextColumn.CellStyle>
+        </dataGrid:GridTextColumn>
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -486,7 +489,7 @@ When column is auto-generated, you can style the column by handling `AutoGenerat
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-    <Style x:Key="cellStyle" TargetType="syncfusion:GridCell">
+    <Style x:Key="cellStyle" TargetType="dataGrid:GridCell">
         <Setter Property="FontSize" Value="12" />
         <Setter Property="FontFamily" Value="Segoe UI" />
         <Setter Property="FontWeight" Value="Bold" />
@@ -513,7 +516,7 @@ private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Gri
 {% endtabs %}
 
 
-![WinUI DataGrid with Customized Column Style](Column-Types_images/winui-datagrid-column-style.png)
+<img src="Column-Types_images/winui-datagrid-column-style.png" alt="WinUI DataGrid with Customized Column Style" width="100%" Height="Auto"/>
 
 ### Styles based on custom logic
 
@@ -524,11 +527,11 @@ Below code creates two different styles by TargetType `GridCell`.
 {% tabs %}
 {% highlight xaml %}
 <Application.Resources>
-    <Style x:Key="cellStyle1" TargetType="syncfusion:GridCell">
+    <Style x:Key="cellStyle1" TargetType="dataGrid:GridCell">
         <Setter Property="Background" Value="Bisque" />
     </Style>
     
-    <Style x:Key="cellStyle2" TargetType="syncfusion:GridCell">
+    <Style x:Key="cellStyle2" TargetType="dataGrid:GridCell">
         <Setter Property="Background" Value="Aqua" />
     </Style>
     
@@ -573,13 +576,13 @@ Below code, sets the customized style selector to `GridColumn.CellStyleSelector`
     <local:CustomCellStyleSelector x:Key="cellStyleSelector"/>
 </Page.Resources>
 
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        ItemsSource="{Binding Orders}"  
                        AutoGenerateColumns="False" >
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="OrderID" CellStyleSelector="{StaticResource cellStyleSelector}">
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn MappingName="OrderID" CellStyleSelector="{StaticResource cellStyleSelector}">
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -600,7 +603,7 @@ private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Gri
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid Column with Conditional Formatting](Column-Types_images/winui-datagrid-column-conditional-formatting.png)
+<img src="Column-Types_images/winui-datagrid-column-conditional-formatting.png" alt="WinUI DataGrid Column with Conditional Formatting" width="100%" Height="Auto"/>
 
 ## End-user Interaction
 
@@ -649,22 +652,22 @@ GridColumn allows you to change the alignment of `GridCell` and `GridHeaderCellC
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="False"
                        ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn Width="60"
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn Width="60"
                                    HeaderText="Customer Name"
                                    MappingName="CustomerName"
                                    TextTrimming="CharacterEllipsis"
                                    TextWrapping="Wrap" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
 
-![WinUI DataGrid Column with Text Trimming and Text Wrapping Settings](Column-Types_images/winui-datagrid-column-text-trimming-and-wrap.png)
+<img src="Column-Types_images/winui-datagrid-column-text-trimming-and-wrap.png" alt="WinUI DataGrid Column with Text Trimming and Text Wrapping Settings" width="100%" Height="Auto"/>
 
 ## GridTextColumn
 
@@ -672,13 +675,13 @@ GridColumn allows you to change the alignment of `GridCell` and `GridHeaderCellC
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="False"
                        ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn HeaderText="Customer Name" MappingName="CustomerName" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn HeaderText="Customer Name" MappingName="CustomerName" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -695,7 +698,7 @@ this.dataGrid.Columns.Add(new GridTextColumn()
 You can enable spell check in GridTextColumn using [IsSpellCheckEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridTextColumn.html#Syncfusion_UI_Xaml_DataGrid_GridTextColumn_IsSpellCheckEnabled) property.
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:GridTextColumn HeaderText="Ship City"
+<dataGrid:GridTextColumn HeaderText="Ship City"
                            IsSpellCheckEnabled="True"
                            MappingName="ShipCity" />
 {% endhighlight %}
@@ -704,7 +707,7 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Ship City", Mappi
 {% endhighlight %}
 {% endtabs %}
 
-![Enabled Spell Checker to WinUI DataGrid Column](Column-Types_images/winui-datagrid-spellchecker.png)
+<img src="Column-Types_images/winui-datagrid-spellchecker.png" alt="Enabled Spell Checker to WinUI DataGrid Column" width="100%" Height="Auto"/>
 
 ## GridNumericColumn
 
@@ -712,29 +715,29 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Ship City", Mappi
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid" 
+<dataGrid:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
                        AllowEditing="True" >
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <syncfusion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" />
-        <syncfusion:GridTextColumn MappingName="Country" />
-        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <dataGrid:GridNumericColumn HeaderText="Unit Price" MappingName="UnitPrice"/>
+        <dataGrid:GridTextColumn MappingName="Country" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridNumericColumn()
 {
-    HeaderText = "Quantity",
-    MappingName = "Quantity",                               
+    HeaderText = "Unit Price",
+    MappingName = "UnitPrice",                               
 });
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid Column with NumericColumn](Column-Types_images/winui-datagrid-NumericColumn-column.png)
+<img src="Column-Types_images/winui-datagrid-NumericColumn-column.png" alt="WinUI DataGrid Column with NumericColumn" width="100%" Height="Auto"/>
 
 ### Change the format of numeric value
 
@@ -760,19 +763,18 @@ N> When using both the `DisplayNumberFormat` and the `NumberFormatter` propertie
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
+<dataGrid:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}"
                        AllowEditing="True" >
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <syncfusion:GridNumericColumn x:Name="numericColumn" HeaderText="Quantity"
-                                      MappingName="Quantity" DisplayNumberFormat="P2" />
-        <syncfusion:GridTextColumn MappingName="Country" />
-        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <dataGrid:GridNumericColumn x:Name="numericColumn" HeaderText="Discount" MappingName="Discount" DisplayNumberFormat="P2" />
+        <dataGrid:GridTextColumn MappingName="Country" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 // Format numericColumn in percent
@@ -780,7 +782,7 @@ numericColumn.DisplayNumberFormat = "P2";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid Column with NumericColumn in Percent Format](Column-Types_images/winui-datagrid-NumericColumn_FormatVales-column.png)
+<img src="Column-Types_images/winui-datagrid-NumericColumn_FormatVales-column.png" alt="WinUI DataGrid Column with NumericColumn in Percent Format" width="100%" Height="Auto"/>
 
 ### Null value support
 
@@ -790,23 +792,23 @@ The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid" 
+<dataGrid:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False"
                        AllowEditing="True" >
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <syncfusion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" AllowNull="True" 
-                                     PlaceholderText="Enter a value" />
-        <syncfusion:GridTextColumn MappingName="Country" />
-        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <dataGrid:GridNumericColumn MappingName="UnitPrice" HeaderText="Unit Price" AllowNull="True" 
+                                     PlaceholderText="Enter the amount" />
+        <dataGrid:GridTextColumn MappingName="Country" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid Column with NumericColumn](Column-Types_images/winui-datagrid-NumericColumn_AllowNullValue-column.png)
+<img src="Column-Types_images/winui-datagrid-NumericColumn_AllowNullValue-column.png" alt="WinUI DataGrid Column with NumericColumn" width="100%" Height="Auto"/>
 
 ### Restrict value within range
 
@@ -814,14 +816,14 @@ You can restrict the users to enter input within a minimum and maximum range in 
 
 {% tabs %}
 {% highlight XAML %}
-<syncfusion:SfDataGrid x:Name="dataGrid" 
+<dataGrid:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
                        AllowEditing="True" >
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" MinValue="30" MaxValue="200" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" MinValue="30" MaxValue="200" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -831,14 +833,14 @@ You can increase or decrease the value of the `GridNumericColumn` using the up-d
 
 {% tabs %}
 {% highlight XAML %}
-<syncfusion:SfDataGrid x:Name="dataGrid" 
+<dataGrid:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
                        AllowEditing="True" >
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" UpDownPlacementMode="InLine" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" UpDownPlacementMode="InLine" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -848,27 +850,27 @@ You can increase or decrease the value of the `GridNumericColumn` using the up-d
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid" 
+<dataGrid:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
                       ColumnWidthMode="Star"
                        AllowEditing="True" >
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <syncfusion:GridTextColumn MappingName="Country" />
-        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-        <syncfusion:GridDateColumn MappingName="Date" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <dataGrid:GridTextColumn MappingName="Country" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+        <dataGrid:GridDateColumn MappingName="Date" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridDateColumn() { HeaderText = "Date", MappingName = "Date" });
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid Column with DateColumn](Column-Types_images/winui-datagrid-DateColumn-column.png)
+<img src="Column-Types_images/winui-datagrid-DateColumn-column.png" alt="WinUI DataGrid Column with DateColumn" width="100%" Height="Auto"/>
 
 ### Change the Format of date value
 
@@ -876,27 +878,27 @@ You can edit and display the selected date with various formatting like date, mo
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid" 
+<dataGrid:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
                        ColumnWidthMode="Star"
                        AllowEditing="True" >
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <syncfusion:GridTextColumn MappingName="Country" />
-        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-        <syncfusion:GridDateColumn MappingName="Date" DisplayDateFormat="M" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <dataGrid:GridTextColumn MappingName="Country" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+        <dataGrid:GridDateColumn MappingName="Date" DisplayDateFormat="M" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridDateColumn() { HeaderText = "Date", MappingName = "Date" , DisplayDateFormat="M" });
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid Column with DateColumn with Month format](Column-Types_images/winui-datagrid-DateColumn_with_M-column.png)
+<img src="Column-Types_images/winui-datagrid-DateColumn_with_M-column.png" alt="WinUI DataGrid Column with DateColumn with Month format" width="100%" Height="Auto"/>
 
 ### Null value support
 
@@ -906,25 +908,25 @@ The `PlaceholderText` does not shown, when the `AllowNull` is `false`.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid" 
+<dataGrid:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
                        ColumnWidthMode="Star"
                        AllowEditing="True" >
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <syncfusion:GridTextColumn MappingName="Country" />
-        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-        <syncfusion:GridDateColumn MappingName="Date" AllowNull="True" PlaceholderText="Change the date" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <dataGrid:GridTextColumn MappingName="Country" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+        <dataGrid:GridDateColumn MappingName="Date" AllowNull="True" PlaceholderText="Change the date" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid Column with DateColumn with Month format](Column-Types_images/winui-datagrid-DateColumn_AllowNull-column.png)
+<img src="Column-Types_images/winui-datagrid-DateColumn_AllowNull-column.png" alt="WinUI DataGrid DateColumn with PlaceholderText" width="100%" Height="Auto"/>
 
 ### Setting date value range
 
@@ -936,13 +938,13 @@ You can restrict and display the input value within the range using [MinDate](ht
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
+<dataGrid:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridCheckBoxColumn HeaderText="Is Delivered" MappingName="IsDelivered" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridCheckBoxColumn HeaderText="Is Delivered" MappingName="IsDelivered" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridCheckBoxColumn() { HeaderText = "Is Delivered", MappingName = "IsDelivered" });
@@ -950,7 +952,7 @@ this.dataGrid.Columns.Add(new GridCheckBoxColumn() { HeaderText = "Is Delivered"
 {% endtabs %}
 
 
-![WinUI DataGrid Column with CheckBox](Column-Types_images/winui-datagrid-checkbox-column.png)
+<img src="Column-Types_images/winui-datagrid-checkbox-column.png" alt="WinUI DataGrid Column with CheckBox" width="100%" Height="Auto"/>
 
 `GridCheckBoxColumn` allows you to customize check box state and its alignment.
 
@@ -964,24 +966,24 @@ this.dataGrid.Columns.Add(new GridCheckBoxColumn() { HeaderText = "Is Delivered"
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
+<dataGrid:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTemplateColumn MappingName="CustomerID">           
-            <syncfusion:GridTemplateColumn.CellTemplate>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTemplateColumn MappingName="CustomerID">           
+            <dataGrid:GridTemplateColumn.CellTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding CustomerID}" />
                 </DataTemplate>
-            </syncfusion:GridTemplateColumn.CellTemplate>
-            <syncfusion:GridTemplateColumn.EditTemplate>
+            </dataGrid:GridTemplateColumn.CellTemplate>
+            <dataGrid:GridTemplateColumn.EditTemplate>
                 <DataTemplate>
                     <TextBox Text="{Binding CustomerID, Mode=TwoWay}" />
                 </DataTemplate>
-            </syncfusion:GridTemplateColumn.EditTemplate>        
-            </syncfusion:GridTemplateColumn>       
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+            </dataGrid:GridTemplateColumn.EditTemplate>        
+            </dataGrid:GridTemplateColumn>       
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 StringBuilder sb1 = new StringBuilder();
@@ -1010,28 +1012,28 @@ N> EditTemplate support available only for GridTemplateColumn.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
+<dataGrid:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTemplateColumn MappingName="OrderID" SetCellBoundValue="True">
-            <syncfusion:GridTemplateColumn.CellTemplate>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTemplateColumn MappingName="OrderID" SetCellBoundValue="True">
+            <dataGrid:GridTemplateColumn.CellTemplate>
                 <DataTemplate>
                     <Grid>
                         <TextBlock Text="{Binding Value}" />
                     </Grid>
                 </DataTemplate>
-            </syncfusion:GridTemplateColumn.CellTemplate>
-            <syncfusion:GridTemplateColumn.EditTemplate>
+            </dataGrid:GridTemplateColumn.CellTemplate>
+            <dataGrid:GridTemplateColumn.EditTemplate>
                 <DataTemplate>
                     <Grid>
                         <TextBox Text="{Binding Value}" />
                     </Grid>
                 </DataTemplate>
-            </syncfusion:GridTemplateColumn.EditTemplate>
-        </syncfusion:GridTemplateColumn>
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+            </dataGrid:GridTemplateColumn.EditTemplate>
+        </dataGrid:GridTemplateColumn>
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -1109,20 +1111,20 @@ In the below code, custom template selector set to `GridTemplateColumn.EditTempl
     <local:CustomEditTemplateSelector x:Key="editTemplateSelector" />
 </Page.Resources>
 
-<syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
+<dataGrid:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTemplateColumn MappingName="OrderID"
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTemplateColumn MappingName="OrderID"
                                        CellTemplateSelector="{StaticResource cellTemplateSelector}"
                                        EditTemplateSelector="{StaticResource editTemplateSelector}"/>
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
 
-![Cell and Edit Template in WinUI DataGrid Column](Column-Types_images/winui-datagrid-cell-and-edit-template.png)
+<img src="Column-Types_images/winui-datagrid-cell-and-edit-template.png" alt="Cell and Edit Template in WinUI DataGrid Column" width="100%" Height="Auto"/>
 
 ## GridComboBoxColumn
 
@@ -1132,16 +1134,16 @@ By default, `GridComboBoxColumn` displays the value using `MappingName` property
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
+<dataGrid:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
                        
-    <syncfusion:SfDataGrid.Columns> 
-        <syncfusion:GridComboBoxColumn  HeaderText="Customer ID"
+    <dataGrid:SfDataGrid.Columns> 
+        <dataGrid:GridComboBoxColumn  HeaderText="Customer ID"
                                         ItemsSource="{Binding ComboItems, Source={StaticResource viewModel}}"
                                         MappingName=" Customer ID " />
-    </syncfusion:SfDataGrid.Columns> 
-</syncfusion:SfDataGrid>
+    </dataGrid:SfDataGrid.Columns> 
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridComboBoxColumn() { HeaderText = " Customer ID ", MappingName = " Customer ID ", ItemsSource = viewModel.ComboItems });
@@ -1153,7 +1155,7 @@ SfDataGrid triggers, [CurrentCellDropDownSelectionChanged](https://help.syncfusi
 `SelectedIndex` property returns the index of selected item.
 `SelectedItem` property returns the selected item from drop down list.
 
-![WinUI DataGrid column with ComboBox](Column-Types_images/winui-datagrid-combobox-column.png)
+<img src="Column-Types_images/winui-datagrid-combobox-column.png" alt="WinUI DataGrid column with ComboBox" width="100%" Height="Auto"/>
 
 ### Improving dropdown opening time
 
@@ -1207,20 +1209,20 @@ N> This is applicable when the `SfDataGrid.EditTrigger` is set as `OnTap`.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
+<dataGrid:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridHyperlinkColumn HeaderText="Country" MappingName="Country" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridHyperlinkColumn HeaderText="Country" MappingName="Country" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridHyperlinkColumn() { HeaderText = "Country", MappingName = "Country" });
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid column with Hyperlink](Column-Types_images/winui-datagrid-hyperlink-column.png)
+<img src="Column-Types_images/winui-datagrid-hyperlink-column.png" alt="WinUI DataGrid column with Hyperlink" width="100%" Height="Auto"/>
 
 You can allow end-user to navigate the `Uri` when the cell value contains valid `Uri` address or using [CurrentCellRequestNavigate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentCellRequestNavigate) event. The `CurrentCellRequestNavigate` occurs when the current cell in `GridHyperlinkColumn` is clicked for navigation.
   
@@ -1277,16 +1279,16 @@ You can change the foreground color of `GridHyperlinkColumn` by writing the styl
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridImageColumn MappingName="ImageLink"
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridImageColumn MappingName="ImageLink"
                                     HeaderText="Flag"
                                     Stretch="Uniform"
                                     TextAlignment="Center" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridImageColumn() { HeaderText = "Flag", MappingName = "ImageLink", Stretch = Stretch.Uniform });
@@ -1294,7 +1296,7 @@ this.dataGrid.Columns.Add(new GridImageColumn() { HeaderText = "Flag", MappingNa
 {% endtabs %}
 
 
-![WinUI DataGrid Column with Image](Column-Types_images/winui-datagrid-image-column.png)
+<img src="Column-Types_images/winui-datagrid-image-column.png" alt="WinUI DataGrid Column with Image" width="100%" Height="Auto"/>
 
 ### Read image from path using ValueBinding
 
@@ -1332,20 +1334,20 @@ class StringToImageConverter : IValueConverter
 </Page.Resources>
 
 <Grid>
-    <syncfusion:SfDataGrid x:Name="dataGrid"
+    <dataGrid:SfDataGrid x:Name="dataGrid"
                            AllowEditing="True"
                            AutoGenerateColumns="False"
                            ItemsSource="{Binding Orders}"
                            ColumnWidthMode="SizeToHeader">
-        <syncfusion:SfDataGrid.Columns>
-            <syncfusion:GridTextColumn  MappingName="OrderID" HeaderText="Order ID" />
-            <syncfusion:GridTextColumn  HeaderText="Customer ID" MappingName="CustomerID" />
-            <syncfusion:GridTextColumn  MappingName="CustomerName" HeaderText="Customer Name"/>
-            <syncfusion:GridTextColumn  MappingName="ShipCity" HeaderText="Ship City" />
-            <syncfusion:GridImageColumn MappingName="Country" HeaderText="Flag" TextAlignment="Center" ImageHeight="50" ImageWidth="50"
+        <dataGrid:SfDataGrid.Columns>
+            <dataGrid:GridTextColumn  MappingName="OrderID" HeaderText="Order ID" />
+            <dataGrid:GridTextColumn  HeaderText="Customer ID" MappingName="CustomerID" />
+            <dataGrid:GridTextColumn  MappingName="CustomerName" HeaderText="Customer Name"/>
+            <dataGrid:GridTextColumn  MappingName="ShipCity" HeaderText="Ship City" />
+            <dataGrid:GridImageColumn MappingName="Country" HeaderText="Flag" TextAlignment="Center" ImageHeight="50" ImageWidth="50"
                                         ValueBinding="{Binding Path=Country, Converter={StaticResource stringToImageConverter}}" />
-        </syncfusion:SfDataGrid.Columns>
-    </syncfusion:SfDataGrid>
+        </dataGrid:SfDataGrid.Columns>
+    </dataGrid:SfDataGrid>
 </Grid>
 {% endhighlight %}
 {% highlight c# %}
@@ -1369,26 +1371,26 @@ this.dataGrid.Columns.Add(new GridImageColumn() { HeaderText = "Flag", MappingNa
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid" 
+<dataGrid:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
                       ColumnWidthMode="Star"
                        AllowEditing="True" >
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <syncfusion:GridTimeColumn MappingName="DeliveredTime" HeaderText="Delivered Time" />
-        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <dataGrid:GridTimeColumn MappingName="DeliveredTime" HeaderText="Delivered Time" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", MappingName = "DeliveredTime" });
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid Column with TimeColumn](Column-Types_images/winui-datagrid-TimeColumn-column.png)
+<img src="Column-Types_images/winui-datagrid-TimeColumn-column.png" alt="WinUI DataGrid Column with TimeColumn" width="100%" Height="Auto"/>
 
 ### Change the format of time value
 
@@ -1396,26 +1398,26 @@ By using the [DisplayTimeFormat](https://help.syncfusion.com/cr/winui/Syncfusion
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid" 
+<dataGrid:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
                        ColumnWidthMode="Star"
                        AllowEditing="True" >
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />   
-        <syncfusion:GridTimeColumn MappingName="DeliveredTime" HeaderText="Delivered Time" DisplayTimeFormat="HH:mm tt" />
-        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />   
+        <dataGrid:GridTimeColumn MappingName="DeliveredTime" HeaderText="Delivered Time" DisplayTimeFormat="HH:mm tt" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", MappingName = "DeliveredTime" , DisplayTimeFormat="HH:mm tt" });
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid Column with TimeColumn with 24-Hour format](Column-Types_images/winui-datagrid-TimeColumn_with_HH-column.png)
+<img src="Column-Types_images/winui-datagrid-TimeColumn_with_HH-column.png" alt="WinUI DataGrid Column with TimeColumn with 24-Hour format" width="100%" Height="Auto"/>
 
 ### Null value support
 
@@ -1425,19 +1427,19 @@ The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`. 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid" 
+<dataGrid:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
                        ColumnWidthMode="Star"
                        AllowEditing="True" >
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />     
-        <syncfusion:GridTimeColumn MappingName="DeliveredTime" HeaderText="Delivered Time" PlaceholderText="Change the Time" />
-        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />     
+        <dataGrid:GridTimeColumn MappingName="DeliveredTime" HeaderText="Delivered Time" PlaceholderText="Change the Time" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -1445,7 +1447,7 @@ this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid Column with TimeColumn with PlaceholderText](Column-Types_images/winui-datagrid-TimeColumn_AllowNull-column.png)
+<img src="Column-Types_images/winui-datagrid-TimeColumn_AllowNull-column.png" alt="WinUI DataGrid Column with TimeColumn with PlaceholderText" width="100%" Height="Auto"/>
 
 ### Setting time value range
 
@@ -1480,19 +1482,19 @@ If you want to hide the submit button and select the time directly from the drop
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid" 
+<dataGrid:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
                        AutoGenerateColumns="False" 
                        ColumnWidthMode="Star"
                        AllowEditing="True" >
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />     
-        <syncfusion:GridTimeColumn MappingName="DeliveredTime" HeaderText="Delivered Time" ShowSubmitButtons="False" />
-        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />     
+        <dataGrid:GridTimeColumn MappingName="DeliveredTime" HeaderText="Delivered Time" ShowSubmitButtons="False" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -1500,7 +1502,7 @@ this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", 
 {% endhighlight %}
 {% endtabs %}
 
-![Hide Submit Buttons from Dropdown Time Spinner in WinUI TimeColumn](Column-Types_images/winui-datagrid-TimeColumn_ShowSubmitButtons-column.gif)
+<img src="Column-Types_images/winui-datagrid-TimeColumn_ShowSubmitButtons-column.gif" alt="Hide Submit Buttons from Dropdown Time Spinner in WinUI TimeColumn" width="100%" Height="Auto"/>
 
 ## GridToggleSwitchColumn
 
@@ -1508,14 +1510,14 @@ this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AutoGenerateColumns="False"
                        AllowEditing="True"
                        ItemsSource="{Binding OrderInfoCollection}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridToggleSwitchColumn HeaderText="IsDelivered" MappingName="IsDelivered"/>
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridToggleSwitchColumn HeaderText="IsDelivered" MappingName="IsDelivered"/>
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.Columns.Add(new GridToggleSwitchColumn() { MappingName = "IsDelivered", HeaderText = "IsDelivered" });
@@ -1526,7 +1528,7 @@ this.sfDataGrid.Columns.Add(new GridToggleSwitchColumn() { MappingName = "IsDeli
 
 GridToggleSwitchColumn provides support to display the text, while ToggleSwitch is in `ON`/`OFF` state based on [OnContent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridToggleSwitchColumn.html#Syncfusion_UI_Xaml_DataGrid_GridToggleSwitchColumn_OnContent) and [OffContent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridToggleSwitchColumn.html#Syncfusion_UI_Xaml_DataGrid_GridToggleSwitchColumn_OffContent) properties.
 
-![WinUi DataGrid column with Toggle Button](Column-Types_images/winui-datagrid-toggle-button.png)
+<img src="Column-Types_images/winui-datagrid-toggle-button.png" alt="WinUi DataGrid column with Toggle Button" width="100%" Height="Auto"/>
 
 ## GridCheckBoxSelectorColumn
 
@@ -1534,14 +1536,14 @@ GridToggleSwitchColumn provides support to display the text, while ToggleSwitch 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
+<dataGrid:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
-      <syncfusion:SfDataGrid.Columns>
-            <syncfusion:GridCheckBoxSelectorColumn MappingName="SelectorColumn" 
+      <dataGrid:SfDataGrid.Columns>
+            <dataGrid:GridCheckBoxSelectorColumn MappingName="SelectorColumn" 
                                                    Width="50"/>
-      </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+      </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridCheckBoxSelectorColumn() 
@@ -1554,7 +1556,7 @@ this.dataGrid.Columns.Add(new GridCheckBoxSelectorColumn()
 
 By default, check box is displayed in header of selector column, which is used to select or deselect all the rows in the datagrid.
 
-![WinUI DataGrid with CheckBox Selector Column](Column-Types_images/winui-datagrid-checkbox-selector-column.png)
+<img src="Column-Types_images/winui-datagrid-checkbox-selector-column.png" alt="WinUI DataGrid with CheckBox Selector Column" width="100%" Height="Auto"/>
 
 ### Text on column header
 
@@ -1562,16 +1564,16 @@ You can display text instead of check box in header of selector column by settin
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
+<dataGrid:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
-      <syncfusion:SfDataGrid.Columns>
-            <syncfusion:GridCheckBoxSelectorColumn MappingName="SelectorColumn"
+      <dataGrid:SfDataGrid.Columns>
+            <dataGrid:GridCheckBoxSelectorColumn MappingName="SelectorColumn"
                                                    AllowCheckBoxOnHeader="False"
                                                    HeaderText="Selector" 
                                                    Width="70"/>         
-      </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+      </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridCheckBoxSelectorColumn() 
@@ -1584,7 +1586,7 @@ this.dataGrid.Columns.Add(new GridCheckBoxSelectorColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![Show Text in Column Header of WinUI DataGrid](Column-Types_images/winui-datagrid-column-header-text.png)
+<img src="Column-Types_images/winui-datagrid-column-header-text.png" alt="Show Text in Column Header of WinUI DataGrid" width="100%" Height="Auto"/>
 
 ### Styling selector column
 
@@ -1592,13 +1594,13 @@ The style of check box in record cells and header can be customized by changing 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
+<dataGrid:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridCheckBoxSelectorColumn MappingName="SelectorColumn"
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridCheckBoxSelectorColumn MappingName="SelectorColumn"
                                                Width="80"/>
-        </syncfusion:SfDataGrid.Columns>
+        </dataGrid:SfDataGrid.Columns>
      
     <Syncfusion:SfDataGrid.Resources>
         <Style TargetType="CheckBox">
@@ -1901,12 +1903,12 @@ The style of check box in record cells and header can be customized by changing 
                     </Setter>
                 </Style>
             </Syncfusion:SfDataGrid.Resources>
-</syncfusion:SfDataGrid>
+</dataGrid:SfDataGrid>
 
 {% endhighlight %}
 {% endtabs %}
 
-![Styling WinUI DataGrid CheckBox Selector Column](Column-Types_images/winui-datagrid-checkbox-column-style.png)
+<img src="Column-Types_images/winui-datagrid-checkbox-column-style.png" alt="Styling WinUI DataGrid CheckBox Selector Column" width="100%" Height="Auto"/>
 
 ### Limitations
 
@@ -2105,7 +2107,7 @@ public class GridCellTextBoxRendererExt: GridCellTextBoxRenderer
 {% endtabs %}
 
 
-![Customize the column in WinUI DataGrid](Column-Types_images/winui-datagrid-customization.png)
+<img src="Column-Types_images/winui-datagrid-customization.png" alt="Customize the column in WinUI DataGrid" width="100%" Height="Auto"/>
 
 
 ### Creating new column and renderer
@@ -2168,18 +2170,18 @@ public class MaxLengthConverter : IValueConverter
     <local:MaxLengthConverter x:Key="converter" />
 </Page.Resources>
 
-<syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
+<dataGrid:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn  DisplayBinding="{Binding CustomerName,
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn  DisplayBinding="{Binding CustomerName,
                                                              Converter={StaticResource converter}}"
                                     HeaderText="Customer Name"
                                     MappingName="CustomerName"
                                     ValueBinding="{Binding CustomerName,
                                                            Converter={StaticResource converter}}" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -2197,13 +2199,13 @@ N> TextBlock does not have the MaxLength property. Therefore, you can use the co
     </Style>
 </Page.Resources>
 
-<syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
+<dataGrid:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn  MappingName="CustomerName"/>
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn  MappingName="CustomerName"/>
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
