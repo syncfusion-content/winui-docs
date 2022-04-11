@@ -120,12 +120,14 @@ N> [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/winui/Syncfus
 
 {% tabs %}
 {% highlight xaml %}
+xmlns:grids="using:Syncfusion.UI.Xaml.Grids"
+
 <dataGrid:SfDataGrid  x:Name="sfDataGrid"
                         AutoGenerateColumns="True"
                         ItemsSource="{Binding Orders}">
     <dataGrid:SfDataGrid.SortColumnDescriptions>
-        <dataGrid:SortColumnDescription ColumnName="OrderID" SortDirection="Ascending" />
-        <dataGrid:SortColumnDescription ColumnName="CustomerName" SortDirection="Descending" />
+        <grids:SortColumnDescription ColumnName="OrderID" SortDirection="Ascending" />
+        <grids:SortColumnDescription ColumnName="CustomerName" SortDirection="Descending" />
     </dataGrid:SfDataGrid.SortColumnDescriptions>
 
 </dataGrid:SfDataGrid>
@@ -226,6 +228,7 @@ Custom comparer can be added to [SfDataGrid.SortComparers](https://help.syncfusi
 {% tabs %}
 {% highlight xaml %}
 xmlns:data="using:Syncfusion.UI.Xaml.Data"
+xmlns:grids="using:Syncfusion.UI.Xaml.Grids"
 
 <Page.Resources>
     <local:CustomComparer x:Key="comparer" />
@@ -236,7 +239,7 @@ xmlns:data="using:Syncfusion.UI.Xaml.Data"
         <data:SortComparer Comparer="{StaticResource comparer}" PropertyName="CustomerName" />
     </dataGrid:SfDataGrid.SortComparers>
     <dataGrid:SfDataGrid.SortColumnDescriptions>
-        <dataGrid:SortColumnDescription ColumnName="CustomerName" SortDirection="Ascending" />
+        <grids:SortColumnDescription ColumnName="CustomerName" SortDirection="Ascending" />
     </dataGrid:SfDataGrid.SortColumnDescriptions>
 </dataGrid:SfDataGrid>
 {% endhighlight %}
