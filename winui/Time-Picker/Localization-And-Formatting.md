@@ -30,12 +30,12 @@ You can select the required `ClockIdentifier` value from below formats.
 {% highlight C# %}
 
 SfTimePicker sfTimePicker = new SfTimePicker();
-sfTimePicker.CalendarIdentifier = "24HourClock";
+sfTimePicker.ClockIdentifier = "24HourClock";
 
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Time Format of WinUI TimePicker](Dropdown-Time-Spinner_images/winui-timepicker-time-format.png)
+![change-time-format-in-winui-date-picker](Dropdown-Time-Spinner_images/change-time-format-in-winui-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/Localization)
 
@@ -58,7 +58,7 @@ sfTimePicker.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![Chnging Flow Direction of WinUI TimePicker](Dropdown-Time-Spinner_images/winui-timepicker-flow-direction.png)
+![change-flow-direction-in-winui-time-picker](Dropdown-Time-Spinner_images/change-flow-direction-in-winui-time-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -81,7 +81,7 @@ sfTimePicker.Language = "ar";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TimePicker with Localization](Dropdown-Time-Spinner_images/winuii-timepicker-localization.png)
+![calendar-types-arabic-calendar-with-localization-in-winui-time-picker](Dropdown-Time-Spinner_images/calendar-types-arabic-calendar-with-localization-in-winui-time-picker.png)
 
 N> `Time Picker` control updates the flow direction visually based on the `Language` property value.
 
@@ -108,7 +108,7 @@ sfTimePicker.DisplayTimeFormat= "HH:mm";
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Time Format of WinUI TimePicker](Getting-Started_images/winui-timepicker-time-format.png)
+![change-display-time-formatting-in-winui-time-picker](Getting-Started_images/change-display-time-formatting-in-winui-time-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
@@ -122,9 +122,9 @@ For example,
 
 |    Default Masking   |    Input     |     Output      |
 |:---------------------|:-------------|:---------------:|
-| If you try to enter values between `13-19` into the `12HourClock` hour field, it will add last input digit(3-9) in the hour field and move the cursor to the next field. | 15 (in hour field)   | <img src="Getting-Started_images/winui-timepicker-hour-editing.png" alt="WinUI TimePicker displays Corrects Hour Field based on Input"/> |
-| If you try to enter input in hour field that is greater than `19`, it will add first digit in hour field and last digit added into next field. | 48 (in hour field)   | <img src="Getting-Started_images/winui-timepicker-editing.png" alt="WinUI TimePicker displays Corrects Hour Field based on Input"/> | 
-| If you try to enter input in minute field that is greater than `59`, it will add first digit in minute field and move the cursor to the next field. |87 (in minute field) | <img src="Getting-Started_images/winui-timepicker-minute-editing.png" alt="WinUI TimePicker displays Corrects Minute Field based on Input"/> | 
+| If you try to enter values between `13-19` into the `12HourClock` hour field, it will add last input digit(3-9) in the hour field and move the cursor to the next field. | 15 (in hour field)   | <img src="Getting-Started_images/winui-time-picker-hour-editing.png" alt="WinUI TimePicker displays Corrects Hour Field based on Input"/> <img src="Getting-Started_images/winui-time-picker-hour-editing-with-selection.png" alt="WinUI TimePicker displays Corrects Hour Field based on Input"/> |
+| If you try to enter input in hour field that is greater than `19`, it will add first digit in hour field and last digit added into next field. | 48 (in hour field)   | <img src="Getting-Started_images/winui-time-picker-editing.png" alt="WinUI TimePicker displays Corrects Hour Field based on Input"/> <img src="Getting-Started_images/winui-timepicker-editing-with-selection.png" alt="WinUI TimePicker displays Corrects Hour Field based on Input"/> | 
+| If you try to enter input in minute field that is greater than `59`, it will add first digit in minute field and move the cursor to the next field. |87 (in minute field) | <img src="Getting-Started_images/winui-time-picker-minute-editing.png" alt="WinUI TimePicker displays Corrects Minute Field based on Input"/> <img src="Getting-Started_images/winui-time-picker-minute-editing-with-selection.png" alt="WinUI TimePicker displays Corrects Minute Field based on Input"/> | 
 
 {% tabs %}
 {% highlight xaml %}
@@ -136,12 +136,12 @@ For example,
 {% highlight C# %}
 
 SfTimePicker sfTimePicker = new SfTimePicker();
-sfTimePicker.EditMode = DateTimeEditingMode.Mask;
+sfTimePicker.EditMode = DateTimeEditMode.Mask;
 
 {% endhighlight  %}
 {% endtabs %}
 
-![WinUI TimePicker with Editing](Getting-Started_images/winui-timepicker-editing.gif)
+![change-edit-mode-with-mask-in-winui-time-picker](Getting-Started_images/change-edit-mode-with-mask-in-winui-time-picker.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
@@ -164,7 +164,7 @@ sfTimePicker.EditMode = DateTimeEditingMode.Normal;
 {% endhighlight  %}
 {% endtabs %}
 
-![WinUI TimePicker with Editing](Getting-Started_images/winui-timepicker-normal-edit.gif)
+![change-edit-mode-with-normal-in-winui-time-picker](Getting-Started_images/change-edit-mode-with-normal-in-winui-time-picker.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
@@ -187,5 +187,6 @@ sfTimePicker.ShowClearButton = false;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TimePicker hide clear button](Getting-Started_images/winui-timePicker-hideclearbutton.png)
-![WinUI TimePicker hide clear button](Getting-Started_images/winui-timePicker-showclearbutton.png)
+![hide-clear-button-in-winui-time-picker](Getting-Started_images/hide-clear-button-in-winui-time-picker.png)
+
+![show-clear-button-in-winui-time-picker](Getting-Started_images/show-clear-button-in-winui-time-picker.png)
