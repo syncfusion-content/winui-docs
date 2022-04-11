@@ -15,6 +15,8 @@ Each [StackedHeaderRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 {% tabs %}
 {% highlight xaml %}
+xmlns:grid="using:Syncfusion.UI.Xaml.Grids"
+
 <dataGrid:SfDataGrid x:Name="sfDataGrid"
                         AllowSorting="True"
                         AutoGenerateColumns="True"
@@ -23,14 +25,14 @@ Each [StackedHeaderRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
             <dataGrid:SfDataGrid.StackedHeaderRows>
                 <grid:StackedHeaderRow>
                     <grid:StackedHeaderRow.StackedColumns>
-                        <grid:StackedColumn ChildColumns="OrderID,OrderDate,ProductID,Quantity,UnitPrice,ShipCity,ShipAddress" HeaderText="Sales Details" />                       
+                        <grid:StackedColumn ChildColumns="OrderID,OrderDate,Quantity,UnitPrice,ShipCity,Country" HeaderText="Sales Details" />                       
                     </grid:StackedHeaderRow.StackedColumns>
                 </grid:StackedHeaderRow>
                 <grid:StackedHeaderRow>
                     <grid:StackedHeaderRow.StackedColumns>
                         <grid:StackedColumn ChildColumns="OrderID,OrderDate" HeaderText="Order Details" />
                         <grid:StackedColumn ChildColumns="Quantity,UnitPrice" HeaderText="Product Details" />
-                        <grid:StackedColumn ChildColumns="ShipCity,ShipAddress" HeaderText="Shipping Details" />
+                        <grid:StackedColumn ChildColumns="ShipCity,Country" HeaderText="Shipping Details" />
                     </grid:StackedHeaderRow.StackedColumns>
                 </grid:StackedHeaderRow>
             </dataGrid:SfDataGrid.StackedHeaderRows>    
