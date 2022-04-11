@@ -45,7 +45,7 @@ sfCalendarDateRangePicker.CalendarIdentifier = "HebrewCalendar";
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar Types aka Calendar Identifier in WinUI Calendar DateRange Picker](Getting-Started_images/winui-calendar-daterange-picker-calendar-types.png)
+![calendar-types-hebrew-calendar-in-winui-calendar-date-range-picker](Images/getting-started/calendar-types-hebrew-calendar-in-winui-calendar-date-range-picker.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting)
 
@@ -68,7 +68,7 @@ sfCalendarDateRangePicker.Language = "ar-AR";
 {% endhighlight %}
 {% endtabs %}
 
-![Arabic Culture in WinUI Calendar DateRange Picker](Getting-Started_images/winui-calendar-daterange-picker-arabic-culture.png)
+![calendar-types-arabic-calendar-in-winui-calendar-date-range-picker](Images/getting-started/calendar-types-arabic-calendar-in-winui-calendar-date-range-picker.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting)
 
@@ -90,7 +90,7 @@ sfCalendarDateRangePicker.DisplayDateFormat= "{0:D}-{1:D}";
 {% endhighlight  %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker String Formatting](Getting-Started_images/winui-calendar-daterange-picker-string-formatting.png)
+![change-display-date-format-in-winui-calendar-date-range-picker](Images/getting-started/change-display-date-format-in-winui-calendar-date-range-picker.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting)
 
@@ -121,7 +121,7 @@ sfCalendarDateRangePicker.MonthHeaderFormat = "{month.abbreviated} {year.abbrevi
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker Date Formatting](Getting-Started_images/winui-calendar-daterange-picker-date-formatting.gif)
+![change-display-date-formatting-in-winui-calendar-date-range-picker](Images/getting-started/change-display-date-formatting-in-winui-calendar-date-range-picker.gif)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting)
 
@@ -139,12 +139,12 @@ By default, **Sunday** is shown as the first day of the week in a dropdown calen
 {% highlight C# %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
-sfCalendarDateRangePicker.FirstDayOfWeek = DayOfWeek.Monday;
+sfCalendarDateRangePicker.FirstDayOfWeek = FirstDayOfWeek.Monday;
 
 {% endhighlight %}
 {% endtabs %}
 
-![First Day of Week in WinUI Calendar DateRange Picker](Dropdown-Calendar_images/winui-calendar-daterange-picker-first-day-of-week.png)
+![change-first-day-of-week-in-winui-calendar-date-range-picker](Images/drop-down-calendar/change-first-day-of-week-in-winui-calendar-date-range-picker.png)
 
 ## Change flow direction
 
@@ -167,6 +167,6 @@ sfCalendarDateRangePicker.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker Right-to-Left](Dropdown-Calendar_images/winui-calendar-daterange-picker-right-to-left.png)
+![change-flow-direction-in-winui-calendar-date-range-picker](Images/drop-down-calendar/change-flow-direction-in-winui-calendar-date-range-picker.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting)

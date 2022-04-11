@@ -25,7 +25,7 @@ sfDatePicker.MaxDate = new DateTimeOffset(new DateTime(2020,12,20));
 {% endhighlight  %}
 {% endtabs %}
 
-![Restrict Date Selection with Specific Range in WinUI DatePicker](Getting-Started_images/winui-datepicker-date-restriction.png)
+![change-minimum-and-maximum-dates-in-winui-date-picker](Images/getting-started/change-minimum-and-maximum-dates-in-winui-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
@@ -73,7 +73,7 @@ sfDatePicker.BlackoutDates = (sfDatePicker.DataContext as ViewModel).BlockedDate
 {% endhighlight  %}
 {% endtabs %}
 
-![WinUI DatePicker with BlackoutDates](Getting-Started_images/winui-datepicker-blackoutdates.png)
+![change-black-out-dates-disabled-dates-in-winui-date-picker](Images/getting-started/change-black-out-dates-disabled-dates-in-winui-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -113,7 +113,7 @@ private void SfDatePicker_DateFieldItemPrepared(object sender, DateTimeFieldItem
 {% endhighlight  %}
 {% endtabs %}
 
-![Restrict Weekend Dates in WinUI DatePicker](Getting-Started_images/winui-datepicker-block-weekends.png)
+![change-black-out-dates-to-weekend-dates-in-winui-date-picker](Images/getting-started/change-black-out-dates-to-weekend-dates-in-winui-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
@@ -136,7 +136,7 @@ sfDatePicker.ShowSubmitButtons = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Hide Submit Buttons from Dropdown Date Spinner in WinUI DatePicker](Getting-Started_images/winui-datepicker-hide-submit-button.gif)
+![show-or-hide-submit-buttons-in-winui-date-picker](Images/getting-started/show-or-hide-submit-buttons-in-winui-date-picker.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
