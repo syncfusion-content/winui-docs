@@ -32,9 +32,9 @@ To add `Calendar` control manually in XAML , follow the below steps.
 4. Initialize the `Calendar` control.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="9 13" %}
 
-<Page
+<Window
     x:Class="GettingStarted.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -42,13 +42,12 @@ To add `Calendar` control manually in XAML , follow the below steps.
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
     <Grid Name="grid">
         <!--Adding Calendar control -->
         <calendar:SfCalendar Name="sfCalendar"/>
     </Grid>
-</Page>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -66,7 +65,7 @@ To add the `Calendar` control manually in C#, follow the below steps.
 4. Initialize the `Calendar` control.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 15 16" %}
 
 using Syncfusion.UI.Xaml.Calendar;
 
@@ -75,15 +74,14 @@ namespace GettingStarted
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class MainWindow : Window
     {
-        public MainPage()
+        public MainWindow()
         {
             this.InitializeComponent();
             // Creating an instance of the Calendar control
             SfCalendar sfCalendar = new SfCalendar();
-
-            grid.Children.Add(sfCalendar);
+            this.Content = sfCalendar;
         }
     }
 }
@@ -107,7 +105,7 @@ If you want to restrict date selection or select multiple dates, set [`Selection
 * **Range** -  Allows to select range of dates.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 SfCalendar sfCalendar= new SfCalendar();
 sfCalendar.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06));
@@ -126,13 +124,13 @@ You can select one or multiple dates from different month, year or decade or cen
 N> `SelectedDates` property collection will be empty if the `SelectionMode` value is **None**. 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
 
 <calendar:SfCalendar Name="sfCalendar" 
                      SelectionMode="Multiple" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 SfCalendar sfCalendar= new SfCalendar();
 sfCalendar.SelectionMode = CalendarSelectionMode.Multiple;
@@ -151,13 +149,13 @@ You can select a range of dates in `Calendar` control by changing the [Selection
 N> `SelectedDates` property collection will be empty if the `SelectionMode` value is  **None**. 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
 
 <calendar:SfCalendar Name="sfCalendar" 
                      SelectionMode="Range" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 SfCalendar sfCalendar= new SfCalendar();
 sfCalendar.SelectionMode = CalendarSelectionMode.Range;
@@ -175,13 +173,14 @@ You will be notified when selected date is changed in `Calendar` by using [Selec
 * `NewDate` - Gets a date which is currently selected.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
-<calendar:SfCalendar SelectedDateChanged="SfCalendar_SelectedDateChanged" 
-                     Name="sfCalendar"/>
+<calendar:SfCalendar Name="sfCalendar"
+                     SelectedDateChanged="SfCalendar_SelectedDateChanged">
+</calendar:SfCalendar>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.SelectedDateChanged += SfCalendar_SelectedDateChanged;
@@ -192,7 +191,7 @@ sfCalendar.SelectedDateChanged += SfCalendar_SelectedDateChanged;
 You can handle the event as follows:
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
 private void SfCalendar_SelectedDateChanged(object sender, SelectedDateChangedEventArgs e)
 {
