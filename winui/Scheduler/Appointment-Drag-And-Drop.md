@@ -16,12 +16,12 @@ The Scheduler supports to reschedule the appointment by performing the drag and 
 The Scheduler supports disabling the appointment drag and drop by setting the [AppointmentEditFlag](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditFlag.html) property except [DragDrop](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditFlag.html#Syncfusion_UI_Xaml_Scheduler_AppointmentEditFlag_DragDrop). In this case, appointment drag and drop cannot be performed.
 
 {% tabs %}
-{% highlight xaml tabtitle ="MainWindow.xaml" hl_lines="2" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 <scheduler:SfScheduler x:Name="Schedule" 
                        AppointmentEditFlag="Add,Edit,Resize">
 </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# tabtitle= "MainWindow.xaml.cs" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" %}
 this.Schedule.AppointmentEditFlag = AppointmentEditFlag.Add | AppointmentEditFlag.Edit | AppointmentEditFlag.Resize;
 {% endhighlight %}
 {% endtabs %}
@@ -31,7 +31,7 @@ this.Schedule.AppointmentEditFlag = AppointmentEditFlag.Add | AppointmentEditFla
 Show or hide the time indicator at a specific time to drag the appointment, by using the [ShowTimeIndicator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html#Syncfusion_UI_Xaml_Scheduler_DragDropSettings_ShowTimeIndicator) property of [DragDropSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html) by setting it to true. 
 
 {% tabs %}
-{% highlight c# tabtitle= "MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.DragDropSettings.ShowTimeIndicator = true;
 {% endhighlight %}
@@ -48,7 +48,7 @@ N>
 Customize the format for the appointment dragging time indicator format by setting the [TimeIndicatorFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html#Syncfusion_UI_Xaml_Scheduler_DragDropSettings_TimeIndicatorFormat) property of [DragDropSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html) in Scheduler.
 
 {% tabs %}
-{% highlight c# tabtitle= "MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.DragDropSettings.TimeIndicatorFormat = "HH mm tt";
 {% endhighlight %}
@@ -72,7 +72,7 @@ The Scheduler notifies by [AppointmentDragOver](https://help.syncfusion.com/cr/w
 
 
 {% tabs %}
-{% highlight c# tabtitle= "MainWindow.xaml.cs" hl_lines="1" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
 this.Schedule.AppointmentDragOver += Schedule_AppointmentDragOver;
 
 private void Schedule_AppointmentDragOver(object sender, AppointmentDragOverEventArgs e)
@@ -93,7 +93,7 @@ The Scheduler is notified by the [AppointmentDragStarting](https://help.syncfusi
 [Resource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentDragStartingEventArgs.html#Syncfusion_UI_Xaml_Scheduler_AppointmentDragStartingEventArgs_Resource): Gets the resource of an appointment under which the appointment is located.
 
 {% tabs %}
-{% highlight c# tabtitle= "MainWindow.xaml.cs" hl_lines="1" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
 this.Schedule.AppointmentDragStarting += Schedule_AppointmentDragStarting;
 
 private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStartingEventArgs e)
@@ -118,7 +118,7 @@ The Scheduler is notified by `AppointmentDropping` when the appointment is dropp
 [TargetResource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentDroppingEventArgs.html#Syncfusion_UI_Xaml_Scheduler_AppointmentDroppingEventArgs_TargetResource): Gets the SchedulerResource where the appointment is currently being dragged over.
 
 {% tabs %}
-{% highlight c# tabtitle= "MainWindow.xaml.cs" hl_lines="1" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
 this.Schedule.AppointmentDropping += Schedule_AppointmentDropping;
 
 private void Schedule_AppointmentDropping(object sender, AppointmentDroppingEventArgs e)

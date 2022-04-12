@@ -15,11 +15,11 @@ The [WinUI Scheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sc
 Customize the interval of timeslots in all the day, week, workweek views by using the [TimeInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeInterval) property of [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html).
 
 {% tabs %}
-{% highlight xaml tabtitle ="MainWindow.xaml" %}
+{% highlight xaml tabtitle="MainWindow.xaml" %}
 <scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
 </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# tabtitle= "MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 120, 0);
 {% endhighlight %}
@@ -34,7 +34,7 @@ N> To modify the [TimeInterval](https://help.syncfusion.com/cr/winui/Syncfusion.
 Customize the interval height of timeslots in a day, week, and workweek views by setting [TimeIntervalSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property of [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html).
 
 {% tabs %}
-{% highlight xaml tabtitle ="MainWindow.xaml" hl_lines="4" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
  <scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings 
@@ -42,7 +42,7 @@ Customize the interval height of timeslots in a day, week, and workweek views by
         </scheduler:SfScheduler.DaysViewSettings>
 </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# tabtitle= "MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.DaysViewSettings.TimeIntervalSize = 120;
 {% endhighlight %}
@@ -57,7 +57,7 @@ By default, the `WinUI Scheduler` considers the week days from Monday to Friday 
 The `workweek` view displays exactly the defined working days on Scheduler control, whereas other views displays all the days.
 
 {% tabs %}
-{% highlight xaml tabtitle ="MainWindow.xaml" hl_lines="4" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
 <scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings 
@@ -66,7 +66,7 @@ The `workweek` view displays exactly the defined working days on Scheduler contr
     </scheduler:SfScheduler.DaysViewSettings>
 </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# tabtitle= "MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 this.scheduler.ViewType = SchedulerViewType.WorkWeek;
 this.scheduler.DaysViewSettings.NonWorkingDays = new ObservableCollection<DayOfWeek>() { DayOfWeek.Monday, DayOfWeek.Tuesday };
 {% endhighlight %}
@@ -79,7 +79,7 @@ this.scheduler.DaysViewSettings.NonWorkingDays = new ObservableCollection<DayOfW
 The default values for `StartHour` and `EndHour` are 0 and 24 to show all the timeslots in a day, week, workweek views. Set the [StartHour](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_StartHour) and [EndHour](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_EndHour) properties of [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) to show only the required time duration for users. Set the `StartHour` and `EndHour` in time duration to show the required time duration in minutes.
 
 {% tabs %}
-{% highlight xaml tabtitle ="MainWindow.xaml" hl_lines="4 5" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4 5" %}
 <scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings 
@@ -88,7 +88,7 @@ The default values for `StartHour` and `EndHour` are 0 and 24 to show all the ti
         </scheduler:SfScheduler.DaysViewSettings>
 </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# tabtitle= "MainWindow.xaml.cs" hl_lines="2 3" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.DaysViewSettings.StartHour = 8;
 this.Schedule.DaysViewSettings.EndHour = 13;
@@ -116,11 +116,11 @@ Merge the adjacent region of `SpecialTimeRegion` and show them as a single regio
 Enable or disable the touch interaction of SpecialTimeRegion using the [CanEdit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanEdit) property of [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html). By default, it's value is set to `true`.
 
 {% tabs %}
-{% highlight xaml tabtitle ="MainWindow.xaml" %}
+{% highlight xaml tabtitle="MainWindow.xaml" %}
 <scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
 </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# tabtitle= "MainWindow.xaml.cs" hl_lines="7" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="7" %}
 this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {
@@ -149,11 +149,11 @@ The recurring time region on a daily, weekly, monthly, or yearly interval. The r
 Merge the adjacent region of `SpecialTimeRegion` and show them as a single region instead of showing them separately for each day using the [CanMergeAdjacentRegions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanMergeAdjacentRegions) property of [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) in the week and workweek views. By default, it's value is set to `false`.
 
 {% tabs %}
-{% highlight xaml tabtitle ="MainWindow.xaml" %}
+{% highlight xaml tabtitle="MainWindow.xaml" %}
 <scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
 </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# tabtitle= "MainWindow.xaml.cs" hl_lines="10 11" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="10 11" %}
 this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {
@@ -180,11 +180,11 @@ If the [CanMergeAdjacentRegions](https://help.syncfusion.com/cr/winui/Syncfusion
 Delete any of the occurrence that are an exception from the recurrence pattern time region by using the `[RecurrenceExceptionDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_RecurrenceExceptionDates) property of [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html). The deleted occurrence date will be considered as a recurrence exception date.
 
 {% tabs %}
-{% highlight xaml tabtitle ="MainWindow.xaml" %}
+{% highlight xaml tabtitle="MainWindow.xaml" %}
 <scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
 </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# tabtitle= "MainWindow.xaml.cs" hl_lines="15 16 17 18 19" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="15 16 17 18 19" %}
 this.Schedule.ViewType = SchedulerViewType.Week;
            
 DateTime recurrenceExceptionDates = DateTime.Now.Date.AddDays(-1);
@@ -220,7 +220,7 @@ The [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 The `SpecialTimeRegion` background color can be customized by using the [Background](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_Background) and [SpecialTimeRegionTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_SpecialTimeRegionTemplate) properties of [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) that is used to customize the text style for the image of the SpecialTimeRegion.
 
 {% tabs %}
-{% highlight xaml tabtitle ="MainWindow.xaml" hl_lines="15" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="15" %}
 <Grid>
     <Grid.Resources>
         <DataTemplate x:Key="specialRegionTemplate">
@@ -241,7 +241,7 @@ The `SpecialTimeRegion` background color can be customized by using the [Backgro
 </scheduler:SfScheduler>
 </Grid>
 {% endhighlight %}
-{% highlight c# tabtitle= "MainWindow.xaml.cs" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" %}
 this.Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {
     StartTime = new System.DateTime(2021, 03, 21, 13, 0, 0),
@@ -270,7 +270,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler
 The WinUI Scheduler time interval height can be adjusted based on screen height by changing the value of [TimeIntervalSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property to `-1.` It will auto-fit to the screen height and width.
 
 {% tabs %}
-{% highlight xaml tabtitle ="MainWindow.xaml" hl_lines="4" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
 <scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings 
@@ -278,7 +278,7 @@ The WinUI Scheduler time interval height can be adjusted based on screen height 
     </scheduler:SfScheduler.DaysViewSettings>
 </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# tabtitle= "MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.DaysViewSettings.TimeIntervalSize = -1;
 {% endhighlight %}
@@ -291,7 +291,7 @@ this.Schedule.DaysViewSettings.TimeIntervalSize = -1;
 Customize the size of the time ruler view where the labels mentioning the time are placed by using the [TimeRulerSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerSize) property of [DayViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html).
 
 {% tabs %}
-{% highlight xaml tabtitle ="MainWindow.xaml" hl_lines="4" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
 <scheduler:SfScheduler x:Name="Schedule" ViewType="Week" >
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings   
@@ -300,7 +300,7 @@ Customize the size of the time ruler view where the labels mentioning the time a
     </scheduler:SfScheduler.DaysViewSettings>
 </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# tabtitle= "MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.DaysViewSettings.TimeRulerSize = 100;
 {% endhighlight %}
@@ -313,11 +313,11 @@ this.Schedule.DaysViewSettings.TimeRulerSize = 100;
 The [MinimumAppointmentDuration](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_MinimumAppointmentDuration) property in [DayViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) is to set an arbitrary height to appointments when it has a minimum duration in a day, week, workweek views so that the subject can be readable.
 
 {% tabs %}
-{% highlight xaml tabtitle ="MainWindow.xaml" %}
+{% highlight xaml tabtitle="MainWindow.xaml" %}
 <scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
 </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# tabtitle= "MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.DaysViewSettings.MinimumAppointmentDuration = new System.TimeSpan(0, 120, 0);
 {% endhighlight %}
@@ -334,7 +334,7 @@ N>
 You can customize the number of appointments displayed in an all-day panel using the [MinimumAllDayAppointmentsCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html#Syncfusion_UI_Xaml_Scheduler_DaysViewSettings_MinimumAllDayAppointmentsCount) property of `DaysViewSettings` in the Scheduler. By default, the appointment display count is 2, and all-day panels have more than 2 appointments, two appointments will be displayed and the remaining appointments will be displayed as appointment counts.
 
 {% tabs %}
-{% highlight xaml tabtitle ="MainWindow.xaml" hl_lines="4" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
 <scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings 
@@ -342,7 +342,7 @@ You can customize the number of appointments displayed in an all-day panel using
     </scheduler:SfScheduler.DaysViewSettings>
 </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# tabtitle= "MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.DaysViewSettings.MinimumAllDayAppointmentsCount = 3;
 {% endhighlight %}
@@ -353,7 +353,7 @@ this.Schedule.DaysViewSettings.MinimumAllDayAppointmentsCount = 3;
 You can customize the default appearance of more appointments indicator in an all-day panel by using the [AllDayMoreAppointmentsIndicatorTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html#Syncfusion_UI_Xaml_Scheduler_DaysViewSettings_AllDayMoreAppointmentsIndicatorTemplate) property of `DaysViewSettings`.
 
 {% tabs %}
-{% highlight xaml tabtitle ="MainWindow.xaml" hl_lines="4 5 6 7 8 9 10 11" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4 5 6 7 8 9 10 11" %}
 <scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings>
@@ -379,11 +379,11 @@ You can customize the default appearance of more appointments indicator in an al
 Customize the format for the labels mentioning the time by setting the [TimeRulerFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerFormat) property of [DayViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) in Scheduler.
 
 {% tabs %}
-{% highlight xaml tabtitle ="MainWindow.xaml" %}
+{% highlight xaml tabtitle="MainWindow.xaml" %}
 <scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
 </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# tabtitle= "MainWindow.xaml.cs" hl_lines="2 3" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.DaysViewSettings.TimeRulerFormat = "hh mm";
 this.Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
@@ -405,7 +405,7 @@ Customize the default appearance of view header in a day, week, and workweek vie
 Customize the date and day format of ViewHeader by using the [ViewHeaderDateFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_ViewHeaderDateFormat) and [ViewHeaderDayFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderDayFormat) properties of [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html).
 
 {% tabs %}
-{% highlight xaml tabtitle ="MainWindow.xaml" hl_lines="4 5" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4 5" %}
 <scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings 
@@ -414,7 +414,7 @@ Customize the date and day format of ViewHeader by using the [ViewHeaderDateForm
     </scheduler:SfScheduler.DaysViewSettings>
 </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# tabtitle= "MainWindow.xaml.cs" hl_lines="2 3" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.DaysViewSettings.ViewHeaderDateFormat = "dd";
 this.Schedule.DaysViewSettings.ViewHeaderDayFormat = "ddd";
@@ -428,7 +428,7 @@ this.Schedule.DaysViewSettings.ViewHeaderDayFormat = "ddd";
 Customize the height of the ViewHeader in a day, week, and workweek views by setting the [ViewHeaderHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderHeight) property of [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) in SfScheduler.
 
 {% tabs %}
-{% highlight xaml tabtitle ="MainWindow.xaml" hl_lines="4" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
 <scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings
@@ -436,7 +436,7 @@ Customize the height of the ViewHeader in a day, week, and workweek views by set
     </scheduler:SfScheduler.DaysViewSettings>
 </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# tabtitle= "MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.DaysViewSettings.ViewHeaderHeight = 100;
 {% endhighlight %}
@@ -449,7 +449,7 @@ this.Schedule.DaysViewSettings.ViewHeaderHeight = 100;
 Customize the default appearance of view header by setting the [ViewHeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate) property of [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) in SfScheduler.
 
 {% tabs %}
-{% highlight xaml tabtitle ="MainWindow.xaml" hl_lines="32" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="32" %}
 <Grid>
     <Grid.Resources>
         <DataTemplate x:Key="viewHeaderTemplate">
