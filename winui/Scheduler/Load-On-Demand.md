@@ -21,12 +21,13 @@ The [QueryAppointmentsEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion
 [VisibleDateRange](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DateRange.html): Gets the current visible date range of scheduler that is used to load the appointments.
 
 {%tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
 <scheduler:SfScheduler x:Name="Schedule"
-                        ViewType="Month" QueryAppointments="Schedule_QueryAppointments" >
+                       ViewType="Month" 
+                       QueryAppointments="Schedule_QueryAppointments" >
 </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
 this.Schedule.QueryAppointments += Schedule_QueryAppointments;
 
 /// <summary>
@@ -120,15 +121,18 @@ Define a ViewModel class that implements command and handle it by the `CanExecut
 * Once the appointment collection is got, load into the scheduler `ItemsSource.`
 
 {%tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4 5" %}
  <scheduler:SfScheduler x:Name="Schedule"  
                         ViewType="Month"
                         ShowBusyIndicator="{Binding ShowBusyIndicator}"
                         LoadOnDemandCommand="{Binding LoadOnDemandCommand}"
                         ItemsSource="{Binding Events}">
+            <scheduler:SfScheduler.DataContext>
+                <local:LoadOnDemandViewModel />
+            </scheduler:SfScheduler.DataContext>
 </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="LoadOnDemandViewModel.cs" %}
 public class LoadOnDemandViewModel : NotificationObject
 {
     public DelegateCommand LoadOnDemandCommand { get; set; }
@@ -261,10 +265,12 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler
 The `Scheduler` supports showing the busy indicator by using the [ShowBusyIndicator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ShowBusyIndicator) property. The default value is set to `false.` If the value is set to `true` then the busy indicator will be load on view or the visible date changed.
 
 {% tabs %}  
-{% highlight xaml %}
-<scheduler:SfScheduler x:Name="Schedule" ShowBusyIndicator="True">/> 
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
+<scheduler:SfScheduler x:Name="Schedule" 
+                       ShowBusyIndicator="True">
+</scheduler:SfScheduler> 
 {% endhighlight %}   
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" %}
 this.Schedule.ShowBusyIndicator = true;   
 {% endhighlight %}  
 {% endtabs %}  
