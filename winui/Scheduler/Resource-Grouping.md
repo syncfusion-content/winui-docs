@@ -53,10 +53,9 @@ The [ResourceGroupType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler x:Name="Schedule"  
-                       ViewType="Week"
-                       ResourceGroupType="Resource">
-</scheduler:SfScheduler>
+
+{% include_relative code-snippet/resourceview.xaml %}
+
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 13" %}
 this.Schedule.ViewType = SchedulerViewType.Week;
@@ -113,10 +112,9 @@ Appointments associated with the scheduler [ResourceCollection](https://help.syn
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler x:Name="Schedule"  
-                       ViewType="Week"
-                       ResourceGroupType="Resource">
-</scheduler:SfScheduler>
+
+{% include_relative code-snippet/resourceview.xaml %}
+
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="9" %}
 // Creating an instance for the schedule appointment collection.
@@ -147,10 +145,9 @@ Multiple resources can share the same events or appointments. If the appointment
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler x:Name="Schedule"  
-                       ViewType="Week"
-                       ResourceGroupType="Resource">
-</scheduler:SfScheduler>
+
+{% include_relative code-snippet/resourceview.xaml %}
+
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="9" %}
 // Creating an instance for schedule appointment collection.
@@ -473,8 +470,9 @@ Special time region can be created based on the resources in the day, week, work
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
-<scheduler:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Resource">
-</scheduler:SfScheduler>
+
+{% include_relative code-snippet/resourceview.xaml %}
+
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="9" %}
 this.Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
@@ -499,8 +497,9 @@ N> The [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 #### Assign resources to special time regions in timeline view
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
-<scheduler:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Resource">
-</scheduler:SfScheduler>
+
+{% include_relative code-snippet/resourceview.xaml %}
+
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="9" %}
 this.Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion

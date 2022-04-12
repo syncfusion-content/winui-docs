@@ -17,8 +17,9 @@ Customize the interval of timeslots in the timeline views by using the [TimeInte
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
-</scheduler:SfScheduler>
+
+{% include_relative code-snippet/timelineview.xaml %}
+
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 this.Schedule.ViewType = SchedulerViewType.TimelineWeek;
@@ -169,8 +170,9 @@ Enable or disable the touch interaction of SpecialTimeRegion using the [CanEdit]
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
-</scheduler:SfScheduler>
+
+{% include_relative code-snippet/timelineview.xaml %}
+
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="7" %}
 this.Schedule.ViewType = SchedulerViewType.TimelineWeek;
@@ -201,8 +203,9 @@ The recurring time region on a daily, weekly, monthly, or yearly interval. The r
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
-</scheduler:SfScheduler>
+
+{% include_relative code-snippet/timelineview.xaml %}
+
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="10" %}
 this.Schedule.ViewType = SchedulerViewType.TimelineWeek;
@@ -225,8 +228,9 @@ Delete any of occurrence that is an exception from the recurrence pattern time r
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
-</scheduler:SfScheduler>
+
+{% include_relative code-snippet/timelineview.xaml %}
+
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="13 14 15 16 17" %}
 this.Schedule.ViewType = SchedulerViewType.TimelineWeek;
@@ -344,8 +348,9 @@ The [MinimumAppointmentDuration](https://help.syncfusion.com/cr/winui/Syncfusion
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
-</scheduler:SfScheduler>
+
+{% include_relative code-snippet/timelineview.xaml %}
+
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 this.Schedule.ViewType = SchedulerViewType.TimelineWeek;
@@ -365,8 +370,9 @@ Customize the format for the labels mentioning the time by setting the [TimeRule
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
-</scheduler:SfScheduler>
+
+{% include_relative code-snippet/timelineview.xaml %}
+
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 this.Schedule.ViewType = SchedulerViewType.TimelineWeek;

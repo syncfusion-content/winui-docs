@@ -1,0 +1,4 @@
+﻿<scheduler:SfScheduler x:Name="Schedule"  
+                       ViewType="Week"
+                       ResourceGroupType="Resource">
+</scheduler:SfScheduler>
