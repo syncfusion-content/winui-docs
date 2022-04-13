@@ -35,7 +35,7 @@ To add `Calendar` control manually in XAML , follow the below steps.
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="9 13" %}
 
 <Window
-    x:Class="GettingStarted.MainPage"
+    x:Class="GettingStarted.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:GettingStarted"

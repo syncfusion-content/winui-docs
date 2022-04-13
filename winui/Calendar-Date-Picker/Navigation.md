@@ -16,7 +16,7 @@ You can easily navigate to the month, year, decade, or century views to select d
 You can restrict navigation within a minimum and maximum views by using [MinDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_MinDisplayMode) and [MaxDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_MaxDisplayMode) properties. This will be useful when your date range is smaller and you don’t want to show century view. By default, the value of `MinDisplayMode` is **Month** and `MaxDisplayMode` is **Century**.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4 5" %}
 
 <calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker"
                                MinDisplayMode="Month"
@@ -24,7 +24,7 @@ You can restrict navigation within a minimum and maximum views by using [MinDisp
                                DisplayMode="Month"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3 4 5" %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.MinDisplayMode = CalendarDisplayMode.Month;
@@ -43,7 +43,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can restrict users to select date within specific views (example : choosing validity date for credit card) in `Calendar Date Picker` control using the `MinDisplayMode` and `MaxDisplayMode` properties.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4 5" %}
 
 <calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker" 
                              MinDisplayMode="Year"
@@ -52,7 +52,7 @@ You can restrict users to select date within specific views (example : choosing 
                              />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3 4 5" %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.MinDisplayMode = CalendarDisplayMode.Year;
