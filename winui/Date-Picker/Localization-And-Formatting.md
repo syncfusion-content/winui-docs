@@ -28,13 +28,14 @@ You can select the required `CalendarIdentifier` value from below types.
  * PersianCalendar
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
 
-<editors:SfDatePicker CalendarIdentifier="HebrewCalendar"
-                      x:Name="sfDatePicker"/>
+<editors:SfDatePicker 
+                      x:Name="sfDatePicker"
+                      CalendarIdentifier="HebrewCalendar"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.CalendarIdentifier = "HebrewCalendar";
@@ -55,13 +56,14 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can change the flow direction of the `Date Picker` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4" %}
 
-<editors:SfDatePicker FlowDirection="RightToLeft" 
-                      x:Name="sfDatePicker"/>
+<editors:SfDatePicker  
+                      x:Name="sfDatePicker"
+                      FlowDirection="RightToLeft" />
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.FlowDirection = FlowDirection.RightToLeft;
@@ -78,13 +80,14 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can localize the `Date Picker` using the `Language` property. The default value of `Language` property is **en-US**.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
 
-<editors:SfDatePicker Language="ar-SA"
-                      x:Name="sfDatePicker"/>
+<editors:SfDatePicker 
+                      x:Name="sfDatePicker"
+                      Language="ar-SA"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.Language = "ar-SA";
@@ -105,13 +108,13 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can edit and display the selected date with various formatting like date, month and year formats by using the [`DisplayDateFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DisplayDateFormat) property. The default value of `DisplayDateFormat` property is `d`.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
 
 <editors:SfDatePicker x:Name="sfDatePicker" 
                       DisplayDateFormat="MM/dd" />
 
 {% endhighlight  %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.DisplayDateFormat= "MM/dd";
@@ -128,7 +131,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can customize the format of the date, month and year fields in the spinner of the `DatePicker` control by using the [`DayFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DayFormat), [`MonthFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MonthFormat) and [`YearFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_YearFormat) properties. By default, the value of `DayFormat` property is `{}{day.integer}`, the value `MonthFormat` property is `{}{month.abbreviated}` and the value of `YearFormat` property is `{}{year.full}`.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4 5 6" %}
 
 <editor:SfDatePicker HorizontalAlignment="Center"
                     VerticalAlignment="Center"
@@ -138,7 +141,7 @@ You can customize the format of the date, month and year fields in the spinner o
                     />
 
 {% endhighlight  %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3 4 5" %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.DayFormat = "{day.integer}";
@@ -167,13 +170,14 @@ For example,
 | If you try to enter input in month field that is greater than `19`, it will add first digit in month field and last digit added into next field. | 58 (in month field) | <img src="Images/getting-started/winui-date-picker-month-edit.png" alt="WinUI DatePicker displays Corrects Month Field based on Input"/><img src="Images/getting-started/winui-date-picker-month-edit-with-selection.png" alt="WinUI DatePicker displays Corrects Month Field based on Input"/> |
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
 
-<editors:SfDatePicker EditMode="Mask"
-                      x:Name="sfDatePicker" />
+<editors:SfDatePicker 
+                      x:Name="sfDatePicker" 
+                      EditMode="Mask" />
 
 {% endhighlight  %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.EditMode = DateTimeEditMode.Mask;
@@ -190,13 +194,14 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 If you want to perform the validation after the user completely entering their date inputs, use the [`EditMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_EditMode) property value as `Normal`. Then the entered date value is validated with the `DisplayDateFormat` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `DisplayDateFormat` property, the previously selected date value sets to `SelectedDate` property.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
 
-<editors:SfDatePicker EditMode="Normal"
-                      x:Name="sfDatePicker" />
+<editors:SfDatePicker 
+                      x:Name="sfDatePicker"
+                      EditMode="Normal" />
 
 {% endhighlight  %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.EditMode = DateTimeEditMode.Normal;
@@ -213,13 +218,14 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 By default, the clear button `X` will be displayed in the editor of the `Date Picker` control, which can be used to clear the entered input. You can hide the clear button in `Date Picker` control using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DateTimePickerBase.html#Syncfusion_UI_Xaml_Editors_DateTimePickerBase_ShowClearButton) property. The default value of `ShowClearButton` property value is **true**.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4" %}
 
-<editors:SfDatePicker ShowClearButton="False"
-                      Name="sfDatePicker"/>
+<editors:SfDatePicker 
+                      Name="sfDatePicker"
+                      ShowClearButton="False"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.ShowClearButton = false;

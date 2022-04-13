@@ -16,7 +16,7 @@ This section describes about various dropdown customization options available in
 You can customize the UI of dropdown button by using the [`DropDownButtonTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownButtonTemplate) property. The `DataContext` of `DropDownButtonTemplate` property is `SfDatePicker`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4 5 6 7 8 9 10 11 12 13 14" %}
 
 <editors:SfDatePicker
     x:Name="sfDatePicker"
@@ -55,13 +55,14 @@ You can hide the dropdown button in `Date Picker` by setting the [`ShowDropDownB
 N> To open a dropdown date spinner, press the `Alt` + `Down Arrow` keys.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4" %}
 
-<editors:SfDatePicker ShowDropDownButton="False" 
-                      x:Name="sfDatePicker"/>
+<editors:SfDatePicker  
+                      x:Name="sfDatePicker"
+                      ShowDropDownButton="False" />
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.ShowDropDownButton = false;
@@ -80,13 +81,14 @@ You can change the alignment of the dropdown date spinner as full, center, left,
 N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then `Date Picker` smartly shifts the spinner alignment.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4" %}
 
-<editors:SfDatePicker DropDownPlacement="BottomEdgeAlignedLeft" 
-                      x:Name="sfDatePicker"/>
+<editors:SfDatePicker 
+                      x:Name="sfDatePicker"
+                      DropDownPlacement="BottomEdgeAlignedLeft" />
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAlignedLeft;
@@ -103,13 +105,14 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can open or close the dropdown date spinner programmatically by setting [IsOpen](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_SelectedDate) property value as **true** or **false**. The default value of `IsOpen` property is **false**.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
 
-<editors:SfDatePicker IsOpen="True"
-                      x:Name="sfDatePicker"/>
+<editors:SfDatePicker 
+                      x:Name="sfDatePicker"
+                      IsOpen="True"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.IsOpen = true;
@@ -126,13 +129,14 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can change the height of dropdown date spinner by using the [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. Based on the value of `DropDownHeight`, `ItemWidth` and `ItemHeight` properties, particular date items will be visible. The default value of `DropDownHeight` property is `NaN`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4" %}
 
-<editors:SfDatePicker DropDownHeight="200"
-                      x:Name="sfDatePicker"/>
+<editors:SfDatePicker 
+                      x:Name="sfDatePicker"
+                      DropDownHeight="200"/>
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.DropDownHeight = 200;
@@ -149,13 +153,14 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can change the number of dates to be shown in the dropdown date spinner by using the [VisibleItemsCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_VisibleItemsCount) property. The default value of `VisibleItemsCount` property is `-1`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4" %}
 
-<editors:SfDatePicker VisibleItemsCount="5" 
-                      x:Name="sfDatePicker"/>
+<editors:SfDatePicker 
+                      x:Name="sfDatePicker"
+                      VisibleItemsCount="5" />
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.VisibleItemsCount = 5;
