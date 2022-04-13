@@ -32,23 +32,22 @@ To add `Calendar DateRange Picker` control manually in XAML , follow the below s
 4. Initialize the `Calendar DateRange Picker` control.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="9 13" %}
 
-<Page
-    x:Class="GettingStarted.MainPage"
+<Window
+    x:Class="GettingStarted.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
     <Grid Name="grid">
         <!--Adding Calendar DateRange Picker control -->
         <calendar:SfCalendarDateRangePicker Name="sfCalendarDateRangePicker"/>
     </Grid>
-</Page>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -66,22 +65,22 @@ To add `Calendar DateRange Picker` control manually in C# , follow the below ste
 4. Initialize the `Calendar DateRange Picker` control.
 
 {% tabs %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 14 15" %}
 
+using Syncfusion.UI.Xaml.Calendar;
 namespace GettingStarted
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+   public sealed partial class MainWindow : Window
     {
-        public MainPage()
+        public MainWindow()
         {
             this.InitializeComponent();
             // Creating an instance of the Calendar control
             SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
-
-            grid.Children.Add(sfCalendarDateRangePicker);
+            this.Content = sfCalendarDateRangePicker;
         }
     }
 }
@@ -98,7 +97,7 @@ N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-
 You can set or change the selected date range programmatically by using [`SelectedRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_SelectedRange) property. By default, the `SelectedRange` property value is **null**.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker= new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(new DateTimeOffset(new DateTime(2021, 03,17)), new DateTimeOffset(new DateTime(2021, 03, 24)));
@@ -115,12 +114,12 @@ N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-
 You can change the selected date range interactively by selecting from dropdown calendar. You can get the selected date range from the `SelectedRange` property.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" %}
 
 <calendar:SfCalendarDateRangePicker Name="sfCalendarDateRangePicker" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker= new SfCalendarDateRangePicker();
 
@@ -135,7 +134,7 @@ This section explains about `header` and `description` properties of CalendarDat
 The `Header` property is used to display the title for the `CalendarDateRangePicker` Control.
      
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
 
 <editors:SfCalendarDateRangePicker x:Name="CalendarDateRangePicker" 
                                    Header="Select the dates" 
@@ -144,11 +143,10 @@ The `Header` property is used to display the title for the `CalendarDateRangePic
 
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 SfCalendarDateRangePicker dateRangePicker = new SfCalendarDateRangePicker();
 dateRangePicker.Header = "Select the dates";
-
 
 {% endhighlight %}
 {% endtabs %}
@@ -159,7 +157,7 @@ dateRangePicker.Header = "Select the dates";
 By using the controls `HeaderTemplate` property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4 5 6 7 8 9 10" %}
 
 <editors:SfCalendarDateRangePicker  Width="250" Height="75">
     <editors:SfCalendarDateRangePicker.HeaderTemplate>
@@ -182,7 +180,7 @@ By using the controls `HeaderTemplate` property, you can customize the appearanc
 The `Description` support is used to display the content beneath the control as well as to provide guidance on the input that the control expects.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 6" %}
 
 <editors:SfCalendarDateRangePicker x:Name="CalendarDateRangePicker" 
                                    Header="Select the dates" 
@@ -191,7 +189,7 @@ The `Description` support is used to display the content beneath the control as 
                                    Description="The range should be greater than 5 days."/>
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3 4" %}
 
 SfCalendarDateRangePicker dateRangePicker = new SfCalendarDateRangePicker();
 dateRangePicker.Header="Select the dates";
@@ -208,14 +206,15 @@ dateRangePicker.Description = "The range should be greater than 5 days.";
 You can prompt the user with any information by using the [`PlaceholderText`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_PlaceholderText) property. This watermark text will be displayed only when the `SelectedRange` property value is **null**. The default value of `PlaceholderText` property is **Select a date range**.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4" %}
 
-<calendar:SfCalendarDateRangePicker PlaceholderText="Select the Date"
-                               SelectedRange="{x:Null}"
-                               Name="sfCalendarDateRangePicker" />
+<calendar:SfCalendarDateRangePicker Name="sfCalendarDateRangePicker" 
+                                    PlaceholderText="Select the Date"
+                                    SelectedRange="{x:Null}"
+                                />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3 4" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker= new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.PlaceholderText = "Select the Date";
@@ -238,13 +237,13 @@ You will be notified when selected range is changed in `Calendar DateRange Picke
 * `RangeEndNewValue` - Gets a date which is currently selected as end value in range.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
-<calendar:SfCalendarDateRangePicker SelectedDateChanged="SfCalendarDateRangePicker_SelectedDateChanged" 
-                               Name="sfCalendarDateRangePicker"/>
+<calendar:SfCalendarDateRangePicker Name="sfCalendarDateRangePicker"
+                                    SelectedDateChanged="SfCalendarDateRangePicker_SelectedDateChanged" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.SelectedDateChanged += SfCalendarDateRangePicker_SelectedDateChanged;
@@ -255,7 +254,7 @@ sfCalendarDateRangePicker.SelectedDateChanged += SfCalendarDateRangePicker_Selec
 You can handle the event as shown below.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
 private void SfCalendarDateRangePicker_SelectedDateChanged(object sender, SelectedDateChangedEventArgs e)
 {
@@ -276,13 +275,14 @@ You can hide the dropdown button in `Calendar DateRange Picker` by setting the [
 N> When the dropdown button is hidden, you can still open the dropdown calendar using **ALT + down** keyboard shortcut.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4" %}
 
-<calendar:SfCalendarDateRangePicker ShowDropDownButton="False" 
-                               x:Name="sfCalendarDateRangePicker"/>
+<calendar:SfCalendarDateRangePicker 
+                               x:Name="sfCalendarDateRangePicker"
+                               ShowDropDownButton="False" />
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3 4" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(new DateTimeOffset(new DateTime(2021, 03, 17)), new DateTimeOffset(new DateTime(2021, 03, 24)));
@@ -302,13 +302,14 @@ You can show the submit buttons in dropdown of `Calendar DateRange Picker` by se
 N> When the submit buttons are hidden, you can change the `SelectedRange` property value by simply selecting a date range.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4" %}
 
-<calendar:SfCalendarDateRangePicker ShowSubmitButtons="True" 
-                               x:Name="sfCalendarDateRangePicker"/>
+<calendar:SfCalendarDateRangePicker  
+                               x:Name="sfCalendarDateRangePicker"
+                               ShowSubmitButtons="True"/>
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.ShowSubmitButtons = true;

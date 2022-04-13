@@ -14,7 +14,7 @@ documentation: ug
 You can show collection of preset items in dropdown of `Calendar DateRange Picker` control using [`Preset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_Preset) and [`PresetTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_PresetTemplate) properties. Bind the collection of preset items to be displayed in `Preset` property and set the required template in `PresetTemplate` property.
 
 {% tabs %}
-{% highlight c# %}
+{% highlight c# tabtitle="ViewModel.cs" %}
 
 //ViewModel class
 class ViewModel
@@ -37,7 +37,7 @@ class ViewModel
 Add the `Syncfusion.UI.Xaml.Calendar` namespace reference in code-behind.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4 8 9 10 11 12 13" %}
 
 <Grid>
     <Grid.DataContext>
@@ -54,7 +54,7 @@ Add the `Syncfusion.UI.Xaml.Calendar` namespace reference in code-behind.
 </Grid>
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" %}
 
 private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
 {
@@ -103,7 +103,7 @@ private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e
 You can hide calendar in the dropdown when user selects any preset items in dropdown other than **CustomRange** using `ShowCalendar` property. When user wants to selects a custom range of dates, upon selection of **CustomRange** preset item, calendar is added in dropdown of `Calendar DateRange Picker` control. By default, the value of `ShowCalendar` property is `true`.
 
 {% tabs %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" %}
 
 privateprivate void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
 {
