@@ -307,14 +307,14 @@ You can set [TreeGridColumn.HeaderTemplate](https://help.syncfusion.com/cr/winui
 
 {% tabs %}
 {% highlight xaml %}
-<treeGrid:SfTreeGrid>
-<treeGrid:SfTreeGrid.Resources>
-    <DataTemplate x:Key="headerTemplate">
-        <TextBlock FontSize="10"
+<treeGrid:SfTreeGrid Name="treeGrid">
+    <treeGrid:SfTreeGrid.Resources>
+        <DataTemplate x:Key="headerTemplate">
+            <TextBlock FontSize="10"
             Text="Employee Name"
             TextWrapping="Wrap" />
-    </DataTemplate>
-</treeGrid:SfTreeGrid.Resources>
+        </DataTemplate>
+    </treeGrid:SfTreeGrid.Resources>
 </treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% highlight c# %}
@@ -324,7 +324,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 {
     if (e.Column.MappingName == "FirstName")
     {
-        e.Column.HeaderTemplate = this.Resources["headerTemplate"] as DataTemplate;
+        e.Column.HeaderTemplate = this.treeGrid.Resources["headerTemplate"] as DataTemplate;
     }
 }
 {% endhighlight %}
@@ -483,10 +483,10 @@ SfTreeGrid control allows you to define the columns manually by adding desired c
     <treeGrid:SfTreeGrid.Columns>
         <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
         <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <treeGrid:TreeGridTextColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
         <treeGrid:TreeGridTextColumn MappingName="Title" />
-        <treeGrid:TreeGridTextColumn MappingName="Salary" />
-        <treeGrid:TreeGridTextColumn MappingName="ReportsTo" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Salary" MappingName="Salary" DisplayNumberFormat="C2"/>
+        <treeGrid:TreeGridNumericColumn HeaderText="Reports To" MappingName="ReportsTo" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 {% endhighlight %}
@@ -732,9 +732,10 @@ Each [StackedHeaderRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
     <treeGrid:SfTreeGrid.Columns>
             <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
             <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-            <treeGrid:TreeGridTextColumn HeaderText="Employee ID" MappingName="ID" />
+            <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
             <treeGrid:TreeGridTextColumn MappingName="Title" />
-            <treeGrid:TreeGridTextColumn MappingName="ReportsTo" HeaderText = "Reports To" />
+            <treeGrid:TreeGridNumericColumn HeaderText="Salary" MappingName="Salary" DisplayNumberFormat="C2"/>
+            <treeGrid:TreeGridNumericColumn HeaderText="Reports To" MappingName="ReportsTo" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 	
@@ -831,7 +832,7 @@ Below code, binds the `ViewModel.AllowEditing` property to `TreeGridColumn. Allo
                         ChildPropertyName="ReportsTo"
                         ParentPropertyName="ID">
     <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn AllowEditing="{Binding AllowEditing}" MappingName="ID" />
+        <treeGrid:TreeGridNumericColumn AllowEditing="{Binding AllowEditing}" MappingName="ID" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 {% endhighlight %}

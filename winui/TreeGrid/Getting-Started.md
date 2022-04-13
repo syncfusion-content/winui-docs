@@ -483,10 +483,10 @@ You can prevent the automatic column generation by setting [SfTreeGrid.AutoGener
     <treeGrid:SfTreeGrid.Columns>
         <treeGrid:TreeGridTextColumn HeaderText="First Name"    MappingName="FirstName" />
         <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <treeGrid:TreeGridTextColumn HeaderText="ID"  MappingName="ID"/>
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
         <treeGrid:TreeGridTextColumn HeaderText="Title" MappingName="Title" />
-        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
-        <treeGrid:TreeGridTextColumn MappingName="Salary"/>
+        <treeGrid:TreeGridNumericColumn HeaderText="Salary" MappingName="Salary" DisplayNumberFormat="C2"/>
+        <treeGrid:TreeGridNumericColumn HeaderText="Reports To" MappingName="ReportsTo" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 
