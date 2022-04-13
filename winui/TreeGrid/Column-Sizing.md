@@ -87,7 +87,7 @@ Below code, applies `GridLengthUnitType.Star` to equally set width for `SfTreeGr
 {% tabs %}
 {% highlight xaml %}
 <treeGrid:SfTreeGrid Name="treeGrid"
-        AllowEditing="True"
+                AllowEditing="True"
         ColumnWidthMode="Star"
         AutoExpandMode="AllNodesExpanded"
         AutoGenerateColumns="False"
@@ -123,7 +123,7 @@ public class DisplayBindingConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Sizing-images/winui-treegrid-column-sizing.png" alt="Column Sizing in WinUI TreeGrid" width="100%" Height="Auto"/>
+![Column Sizing in WinUI TreeGrid](Column-Sizing-images/winui-treegrid-column-sizing.png)
 
 N> The `TreeGridColumn.ColumnWidthMode` takes higher priority than the `SfTreeGrid.ColumnWidthMode`.
 
@@ -250,8 +250,8 @@ Below code to define the star width calculation based on the `ColumnRatio`.
 
 {% tabs %}
 {% highlight c# %}
-//Assign the customized TreeGridColumnSizerExt to SfTreeGrid.ColumnSizer
-this.treeGrid.ColumnSizer = new TreeGridColumnSizerExt(treeGrid);
+//Assign the customized TreeGridColumnSizerExt to SfTreeGrid.TreeGridColumnSizer
+this.treeGrid.TreeGridColumnSizer = new TreeGridColumnSizerExt(treeGrid);
 
 public class TreeGridColumnSizerExt : TreeGridColumnSizer
 {
@@ -352,4 +352,4 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Sizing-images/winui-treegrid-column-ratio.png" alt="WinUI TreeGrid ColumnRatio Column Width" width="100%" Height="Auto"/>
+![WinUI TreeGrid ColumnRatio Column Width](Column-Sizing-images/winui-treegrid-column-ratio.png)
