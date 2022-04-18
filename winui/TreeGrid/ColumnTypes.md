@@ -185,7 +185,7 @@ In the below code snippet, `TreeGridTextColumn` is loaded with `ProgressBar` and
                 Height="50"
                 Background="Transparent"
                 BorderThickness="0"
-                Maximum="5000000"
+                Maximum="200000"
                 Minimum="0"
                 Visibility="Visible"
                 Value="{Binding Path=Salary}" />
