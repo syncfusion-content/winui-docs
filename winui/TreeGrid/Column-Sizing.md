@@ -87,7 +87,7 @@ Below code, applies `GridLengthUnitType.Star` to equally set width for `SfTreeGr
 {% tabs %}
 {% highlight xaml %}
 <treeGrid:SfTreeGrid Name="treeGrid"
-                AllowEditing="True"
+        AllowEditing="True"
         ColumnWidthMode="Star"
         AutoExpandMode="AllNodesExpanded"
         AutoGenerateColumns="False"
@@ -96,34 +96,16 @@ Below code, applies `GridLengthUnitType.Star` to equally set width for `SfTreeGr
         ParentPropertyName="ID"
         SelfRelationRootValue="-1" >
     <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn HeaderText="Employee ID" MappingName="ID" />
         <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
-        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName"   />
-        <treeGrid:TreeGridCheckBoxColumn HeaderText="Availability" MappingName="AvailabilityStatus" />
-        <treeGrid:TreeGridTextColumn DisplayBinding="{Binding Salary,
-                                        Converter={StaticResource converter}}"
-                                        HeaderText="Salary"
-                                        MappingName="Salary" />
-        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridTextColumn HeaderText="Title" MappingName="Title" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Salary" MappingName="Salary" DisplayNumberFormat="C2"/>
+        <treeGrid:TreeGridNumericColumn HeaderText="Reports To" MappingName="ReportsTo" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
-{% endhighlight %}
-{% highlight c# %}
-public class DisplayBindingConverter : IValueConverter
-{
-    public object Convert(object value, Type targetType, object parameter, string language)
-    {
-        return string.Format("{0:C2}", value);
-    }
-    public object ConvertBack(object value, Type targetType, object parameter, string language)
-    {
-        return value;
-    }
-}
-{% endhighlight %}
-{% endtabs %}
 
-![Column Sizing in WinUI TreeGrid](Column-Sizing-images/winui-treegrid-column-sizing.png)
+<img src="Column-Sizing-images/winui-treegrid-column-sizing.png" alt="Column Sizing in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 N> The `TreeGridColumn.ColumnWidthMode` takes higher priority than the `SfTreeGrid.ColumnWidthMode`.
 
@@ -157,7 +139,7 @@ foreach (var column in treeGrid.Columns)
 	if (!double.IsNaN(column.Width))
 		column.Width = double.NaN;
 }
-this.treeGrid.TreeGridColumnSizer.Refresh();   
+this.treeGrid.ColumnSizer.Refresh();   
 {% endhighlight %}
 {% endtabs %}
 
@@ -250,8 +232,8 @@ Below code to define the star width calculation based on the `ColumnRatio`.
 
 {% tabs %}
 {% highlight c# %}
-//Assign the customized TreeGridColumnSizerExt to SfTreeGrid.TreeGridColumnSizer
-this.treeGrid.TreeGridColumnSizer = new TreeGridColumnSizerExt(treeGrid);
+//Assign the customized TreeGridColumnSizerExt to SfTreeGrid.ColumnSizer
+this.treeGrid.ColumnSizer = new TreeGridColumnSizerExt(treeGrid);
 
 public class TreeGridColumnSizerExt : TreeGridColumnSizer
 {
@@ -324,7 +306,7 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 {% highlight xaml %}
 
 <treeGrid:SfTreeGrid Name="treeGrid"
-                AllowEditing="True"
+        AllowEditing="True"
         ColumnWidthMode="Star"
         AutoExpandMode="AllNodesExpanded"
         AutoGenerateColumns="False"
@@ -333,23 +315,22 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
         ParentPropertyName="ID"
         SelfRelationRootValue="-1" >
     <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn HeaderText="Employee ID" 
-									MappingName="ID" 
-									TextAlignment="Left" 
-									local:StarRatio.ColumnRatio="1" />
         <treeGrid:TreeGridTextColumn HeaderText="First Name" 
 									MappingName="FirstName" 
-									local:StarRatio.ColumnRatio="2" />
+									local:StarRatio.ColumnRatio="3" />
         <treeGrid:TreeGridTextColumn HeaderText="Last Name" 
 									MappingName="LastName" 
-									local:StarRatio.ColumnRatio="3"/>
-        <treeGrid:TreeGridCheckBoxColumn HeaderText="Availability" MappingName="AvailabilityStatus" />
-        <treeGrid:TreeGridTextColumn HeaderText="Salary" MappingName="Salary" />
-        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+									local:StarRatio.ColumnRatio="2"/>
+		<treeGrid:TreeGridNumericColumn HeaderText="Employee ID" 
+									MappingName="ID" 
+									local:StarRatio.ColumnRatio="1" />
+        <treeGrid:TreeGridTextColumn HeaderText="Title" MappingName="Title" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Salary" MappingName="Salary" DisplayNumberFormat="C2"/>
+        <treeGrid:TreeGridNumericColumn HeaderText="Reports To" MappingName="ReportsTo" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 	
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeGrid ColumnRatio Column Width](Column-Sizing-images/winui-treegrid-column-ratio.png)
+<img src="Column-Sizing-images/winui-treegrid-column-ratio.png" alt="WinUI TreeGrid ColumnRatio Column Width" width="100%" Height="Auto"/>

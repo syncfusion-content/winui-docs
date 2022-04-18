@@ -22,19 +22,20 @@ The [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grid
 {% tabs %}
 {% highlight xaml %}
 <treeGrid:SfTreeGrid Name="sfTreeGrid"
-                                       AutoExpandMode="RootNodesExpanded"
-                                       AutoGenerateColumns="False" 
-                                       NavigationMode="Row"
-                                       ChildPropertyName="Children"
-                                       SelectionMode="Single"
-                                       ColumnSizer="Star" 
-                                       ExpanderColumn="FirstName"
-                                       ItemsSource="{Binding PersonDetails}"
-                                       >
+                    AutoExpandMode="RootNodesExpanded"
+                    AutoGenerateColumns="False" 
+                    NavigationMode="Row"
+                    SelectionMode="Single"
+                    ColumnSizer="Star" 
+                    ExpanderColumn="FirstName"
+                    ItemsSource="{Binding Employees}"
+                    ParentPropertyName="ID"                                         
+                    ChildPropertyName="ReportsTo"
+                    SelfRelationRootValue="-1" />
 {% endhighlight %}
 {% endtabs %}
 
-![Row selected in WinUI treegrid](Selection_images/Selection_img1.jpeg)
+<img src="Selection_images/Selection_img1.png" alt="Row selected in WinUI treegrid" width="100%" Height="Auto"/>
 
 ## Disable selection for rows and columns
 
@@ -49,19 +50,20 @@ When using `Extended`, you can select multiple rows by pressing the key modifier
 {% tabs %}
 {% highlight xaml %}
 <treeGrid:SfTreeGrid Name="sfTreeGrid"
-                                       AutoExpandMode="RootNodesExpanded"
-                                       AutoGenerateColumns="False" 
-                                       NavigationMode="Row"
-                                       ChildPropertyName="Children"
-                                       SelectionMode="Extended"
-                                       ColumnSizer="Star" 
-                                       ExpanderColumn="FirstName"
-                                       ItemsSource="{Binding PersonDetails}"
-                                       >
+                    AutoExpandMode="RootNodesExpanded"
+                    AutoGenerateColumns="False" 
+                    NavigationMode="Row"
+                    SelectionMode="Extended"
+                    ColumnSizer="Star" 
+                    ExpanderColumn="FirstName"
+                    ItemsSource="{Binding PersonDetails}"
+                    ParentPropertyName="ID"                                         
+                    ChildPropertyName="ReportsTo"
+                    SelfRelationRootValue="-1" />
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple rows selected in WinUI treegrid](Selection_images/Selection_img2.jpeg)
+<img src="Selection_images/Selection_img2.png" alt="Multiple rows selected in WinUI treegrid" width="100%" Height="Auto"/>
 
 N> When `SelectionMode` is `Multiple`, you can select or deselect multiple rows by clicking the respective row. In multiple selection, pressing the navigation keys moves only the current cell, and you can select or deselect by pressing the `Space` key.
 
@@ -108,13 +110,13 @@ var viewModel = this.sfTreeGrid.DataContext as ViewModel;
 
 foreach (var order in viewModel.PersonDetails)
 {
-    if (order.LastName == "Buchanan")
+    if (order.LastName == "Joseph")
         this.sfTreeGrid.SelectedItems.Add(order);
 }
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI treegrid shows row with LastName as Buchanan added to SelectedItems collection](Selection_images/Selection_img3.jpeg)
+<img src="Selection_images/Selection_img3.png" alt="WinUI treegrid shows row with LastName as Joseph added to SelectedItems collection" width="100%" Height="Auto"/>
 
 ### Process selection using methods
 
@@ -128,7 +130,7 @@ this.sfTreeGrid.SelectRows(3, 7);
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI treegrid shows with rows from 3 to 7 are selected](Selection_images/Selection_img4.jpeg)
+<img src="Selection_images/Selection_img4.png" alt="WinUI treegrid shows with rows from 3 to 7 are selected" width="100%" Height="Auto"/>
 
 ### Process current cell
 
@@ -493,14 +495,16 @@ The [CurrentCellActivating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 {% tabs %}
 {% highlight xaml %}
 <treeGrid:SfTreeGrid Name="sfTreeGrid"                       
-                       AutoExpandMode="RootNodesExpanded"
-                       AutoGenerateColumns="False"      
-                       ChildPropertyName="Children"		
-                       ColumnSizer="Star" 
-                       ExpanderColumn="FirstName"					   
-                       CurrentCellActivating="sfTreeGrid_CurrentCellActivating"                        
-                       ItemsSource="{Binding PersonDetails}"
-                       LiveNodeUpdateMode="AllowDataShaping">
+                    AutoExpandMode="RootNodesExpanded"
+                    AutoGenerateColumns="False"      		
+                    ColumnSizer="Star" 
+                    ExpanderColumn="FirstName"					   
+                    CurrentCellActivating="sfTreeGrid_CurrentCellActivating"                        
+                    ItemsSource="{Binding Employees}"
+                    ParentPropertyName="ID"                                         
+                    ChildPropertyName="ReportsTo"
+                    SelfRelationRootValue="-1"
+                    LiveNodeUpdateMode="AllowDataShaping" />
                                                                                                           
 {% endhighlight %}
 {% highlight c# %}
@@ -549,14 +553,16 @@ The [CurrentCellActivated](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 {% tabs %}
 {% highlight xaml %}
 <treeGrid:SfTreeGrid Name="sfTreeGrid"                       
-                       AutoExpandMode="RootNodesExpanded"
-                       AutoGenerateColumns="False"                       
-                       ChildPropertyName="Children"
-                       ColumnSizer="Star" 
-                       ExpanderColumn="FirstName"			           
-                       CurrentCellActivated="sfTreeGrid_CurrentCellActivated"                                              
-                       ItemsSource="{Binding PersonDetails}"
-                       LiveNodeUpdateMode="AllowDataShaping">
+                    AutoExpandMode="RootNodesExpanded"
+                    AutoGenerateColumns="False"                       
+                    ColumnSizer="Star" 
+                    ExpanderColumn="FirstName"			           
+                    CurrentCellActivated="sfTreeGrid_CurrentCellActivated"                                              
+                    ItemsSource="{Binding Employees}"
+                    ParentPropertyName="ID"                                         
+                    ChildPropertyName="ReportsTo"
+                    SelfRelationRootValue="-1"
+                    LiveNodeUpdateMode="AllowDataShaping" />
 
 {% endhighlight %}
 {% highlight c# %}
@@ -581,14 +587,16 @@ The [SelectionChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 {% tabs %}
 {% highlight xaml %}
 <treeGrid:SfTreeGrid Name="sfTreeGrid"                       
-                       AutoExpandMode="RootNodesExpanded"
-                       AutoGenerateColumns="False"                     
-                       ChildPropertyName="Children"
-                       ColumnSizer="Star" 
-                       ExpanderColumn="FirstName"			           				  
-                       SelectionChanging="sfTreeGrid_SelectionChanging"                       
-                       ItemsSource="{Binding PersonDetails}"	
-                       LiveNodeUpdateMode="AllowDataShaping">
+                    AutoExpandMode="RootNodesExpanded"
+                    AutoGenerateColumns="False"                     
+                    ColumnSizer="Star" 
+                    ExpanderColumn="FirstName"			           				  
+                    SelectionChanging="sfTreeGrid_SelectionChanging"                       
+                    ItemsSource="{Binding Employees}"
+                    ParentPropertyName="ID"                                         
+                    ChildPropertyName="ReportsTo"
+                    SelfRelationRootValue="-1"	
+                    LiveNodeUpdateMode="AllowDataShaping" />
 
 {% endhighlight %}
 {% highlight c# %}
@@ -613,15 +621,16 @@ The [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.T
 {% tabs %}
 {% highlight xaml %}
 <treeGrid:SfTreeGrid Name="sfTreeGrid"
-                       Grid.Row="0"
-                       AutoExpandMode="RootNodesExpanded"
-                       AutoGenerateColumns="False"                   
-                       ChildPropertyName="Children"
-                       ColumnSizer="Star" 
-                       ExpanderColumn="FirstName"			           
-                       SelectionChanged="sfTreeGrid_SelectionChanged"                       
-                       ItemsSource="{Binding PersonDetails}"					   
-                       LiveNodeUpdateMode="AllowDataShaping">
+                    AutoExpandMode="RootNodesExpanded"
+                    AutoGenerateColumns="False"                   
+                    ColumnSizer="Star" 
+                    ExpanderColumn="FirstName"			           
+                    SelectionChanged="sfTreeGrid_SelectionChanged"                       
+                    ItemsSource="{Binding Employees}"
+                    ParentPropertyName="ID"                                         
+                    ChildPropertyName="ReportsTo"
+                    SelfRelationRootValue="-1"					   
+                    LiveNodeUpdateMode="AllowDataShaping" />
 
 {% endhighlight %}
 {% highlight c# %}
@@ -644,20 +653,21 @@ You can change the selection background and foreground using the [SelectionBackG
 {% tabs %}
 {% highlight xaml %}
 <treeGrid:SfTreeGrid Name="sfTreeGrid"                                           
-                                           AutoExpandMode="RootNodesExpanded"
-                                           AutoGenerateColumns="False"
-                                           SelectionMode="Multiple"
-                                           ChildPropertyName="Children"
-                                           ColumnSizer="Star" 
-                                           ExpanderColumn="FirstName"
-                                           ItemsSource="{Binding PersonDetails}"
-                                           SelectionBackground="SkyBlue"                                                    
-                                           SelectionForeground="DarkBlue"
-                                         >
+                    AutoExpandMode="RootNodesExpanded"
+                    AutoGenerateColumns="False"
+                    SelectionMode="Multiple"
+                    ColumnSizer="Star" 
+                    ExpanderColumn="FirstName"
+                    ItemsSource="{Binding Employees}"
+                    ParentPropertyName="ID"                                         
+                    ChildPropertyName="ReportsTo"
+                    SelfRelationRootValue="-1"
+                    SelectionBackground="SkyBlue"                                                    
+                    SelectionForeground="DarkBlue" />
 {% endhighlight %}
 {% endtabs %}
 
-![Background and foreground of the selected rows are changed in WinUI treegrid](Selection_images/Selection_img5.jpeg)
+<img src="Selection_images/Selection_img5.png" alt="Background and foreground of the selected rows are changed in WinUI treegrid" width="100%" Height="Auto"/>
 
 ### Change current cell border style
 
@@ -666,21 +676,22 @@ You can change the current cell border thickness and border color using the [Cur
 {% tabs %}
 {% highlight xaml %}
 <treeGrid:SfTreeGrid Name="sfTreeGrid"                                           
-                                           AutoExpandMode="RootNodesExpanded"
-                                           AutoGenerateColumns="False"
-                                           SelectionMode="Multiple"
-                                           ChildPropertyName="Children"
-                                           ColumnSizer="Star" 
-                                           ExpanderColumn="FirstName"
-                                           ItemsSource="{Binding PersonDetails}"
-                                           LiveNodeUpdateMode="AllowDataShaping"                                           
-                                           CurrentCellBorderBrush="Red"
-                                           CurrentCellBorderThickness="1.6"
-                                         >
+                    AutoExpandMode="RootNodesExpanded"
+                    AutoGenerateColumns="False"
+                    SelectionMode="Multiple"
+                    ColumnSizer="Star" 
+                    ExpanderColumn="FirstName"
+                    ItemsSource="{Binding Employees}"
+                    ParentPropertyName="ID"                                         
+                    ChildPropertyName="ReportsTo"
+                    SelfRelationRootValue="-1"
+                    LiveNodeUpdateMode="AllowDataShaping"                                           
+                    CurrentCellBorderBrush="Red"
+                    CurrentCellBorderThickness="1.6" />
 {% endhighlight %}
 {% endtabs %}
 
-![Style of current cell border is customized in WinUI treegrid](Selection_images/Selection_img6.jpeg)
+<img src="Selection_images/Selection_img6.png" alt="Style of current cell border is customized in WinUI treegrid" width="100%" Height="Auto"/>
 
 ### Customize row selection border
 
@@ -688,72 +699,74 @@ You can customize the row selection by editing the control template of [TreeGrid
 
 {% tabs %}
 {% highlight xaml %}
-<Style TargetType="syncfusion:TreeGridRowControl">
-            <Setter Property="Background" Value="Transparent" />
-            <Setter Property="BorderBrush" Value="#33000000" />
-            <Setter Property="Foreground" Value="#FF000000"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="treeGrid:TreeGridRowControl">
-                        <Grid BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
-                            <VisualStateManager.VisualStateGroups>
-                                <VisualStateGroup x:Name="SelectionStates">
-                                    <VisualState x:Name="Unselected" />
-                                    <VisualState x:Name="Selected">
-                                        <VisualState.Setters>
-                                            <Setter Target="PART_SelectionBorder.Visibility" Value="Visible" />
-                                        </VisualState.Setters>
-                                    </VisualState>
-                                    <VisualState x:Name="SelectedPointerOver">
-                                        <VisualState.Setters>
-                                            <Setter Target="PART_SelectionBorder.Visibility" Value="Visible" />
-                                        </VisualState.Setters>
-                                    </VisualState>
-                                    <VisualState x:Name="SelectedPressed">
-                                        <VisualState.Setters>
-                                            <Setter Target="PART_SelectionBorder.Visibility" Value="Visible" />
-                                        </VisualState.Setters>
-                                    </VisualState>
+<Application.Resources>
+    <Style TargetType="treeGrid:TreeGridRowControl">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="#33000000" />
+        <Setter Property="Foreground" Value="#FF000000"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="treeGrid:TreeGridRowControl">
+                    <Grid BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="SelectionStates">
+                                <VisualState x:Name="Unselected" />
+                                <VisualState x:Name="Selected">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_SelectionBorder.Visibility" Value="Visible" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="SelectedPointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_SelectionBorder.Visibility" Value="Visible" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="SelectedPressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_SelectionBorder.Visibility" Value="Visible" />
+                                    </VisualState.Setters>
+                                </VisualState>
 
-                                    <VisualState x:Name="UnselectedPointerOver" />
-                                    <VisualState x:Name="UnselectedPressed" />
-                                    <VisualState x:Name="Focused">
-                                        <VisualState.Setters>
-                                            <Setter Target="PART_FocusRect.Visibility" Value="Visible" />
-                                        </VisualState.Setters>
-                                    </VisualState>
-                                </VisualStateGroup>
-                            </VisualStateManager.VisualStateGroups>
-                            <Border x:Name="PART_BackgroundBorder"
+                                <VisualState x:Name="UnselectedPointerOver" />
+                                <VisualState x:Name="UnselectedPressed" />
+                                <VisualState x:Name="Focused">
+                                    <VisualState.Setters>
+                                        <Setter Target="PART_FocusRect.Visibility" Value="Visible" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Border x:Name="PART_BackgroundBorder"
                                 Margin="{TemplateBinding IndentMargin}"
                                 Background="Transparent"
                                 Visibility="Visible">
-                                <Rectangle x:Name="PART_FocusRect"
+                            <Rectangle x:Name="PART_FocusRect"
                                        Margin="1,2,2,2"
                                        Fill="Transparent"
                                        Stroke="DarkGray"
                                        StrokeDashArray="2,2"
                                        StrokeThickness="1"
                                        Visibility="Collapsed" />
-                            </Border>
-                             <!--Adding new border to show border for whole selected row--> 
-                            <Border x:Name="PART_SelectionBorder"
+                        </Border>
+                        <!--Adding new border to show border for whole selected row--> 
+                        <Border x:Name="PART_SelectionBorder"
                                 Margin="{TemplateBinding IndentMargin}"
                                 Background="{TemplateBinding SelectionBackground}"
                                 Visibility="Collapsed"                                     
                                 BorderBrush="Red"
                                 BorderThickness="1.5,1.5,1.5,2.5"
                                 Opacity="0.75"/>
-                            <ContentPresenter />
-                        </Grid>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
+                        <ContentPresenter />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</Application.Resources>    
 {% endhighlight %}
 {% endtabs %}
 
-![Customization of row selection border in WinUI treegrid](Selection_images/Selection_img7.jpeg)
+<img src="Selection_images/Selection_img7.png" alt="Customization of row selection border in WinUI treegrid" width="100%" Height="Auto"/>
 
 ## Customize selection behaviors
 
@@ -917,13 +930,15 @@ The `Row`/`Cell` selection border is behind the grid cell content. So, when you 
 
 {% tabs %}
 {% highlight xaml %}
-<Style TargetType="treeGrid:TreeGridCell">
-    <Setter Property="Background">
-        <Setter.Value>
-            <SolidColorBrush Color="Blue" Opacity="0.5"/>
-        </Setter.Value>
-    </Setter>
-</Style>
+<Application.Resources>
+    <Style TargetType="treeGrid:TreeGridCell">
+        <Setter Property="Background">
+            <Setter.Value>
+                <SolidColorBrush Color="Blue" Opacity="0.5"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</Application.Resources>
 {% endhighlight %}
 {% endtabs %}
 
