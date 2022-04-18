@@ -61,11 +61,11 @@ this.sfDataGrid.Columns["CustomerID"].AllowGrouping = false;
 
 N> `GridColumn.AllowGrouping` takes higher priority than `SfDataGrid.AllowGrouping`.
 
-![WinUI DataGrid Grouping](Grouping_images/winui-datagrid-grouping.png)
+<img src="Grouping_images/winui-datagrid-grouping.png" alt="WinUI DataGrid Grouping" width="100%" Height="Auto"/>
 
 The data can be grouped by an unlimited number of columns. To group more than one columns, drag-and-drop the desired columns in to `GroupDropArea`.
 
-![Multiple Grouping in WinUI DataGrid](Grouping_images/winui-datagrid-multi-grouping.png)
+<img src="Grouping_images/winui-datagrid-multi-grouping.png" alt="Multiple Grouping in WinUI DataGrid" width="100%" Height="Auto"/>
 
 Each group is identified by its [CaptionSummaryRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CaptionSummaryRow) and it is used to organize the data into a hierarchical tree structure based on identical values of that column. The underlying records in each caption summary row can be expanded or collapsed by clicking its group caption.
 
@@ -144,7 +144,7 @@ this.sfDataGrid.Columns["OrderID"].GroupMode = DataReflectionMode.Display;
 {% endhighlight %}
 {% endtabs %}
 
-![Grouped Column in WinUI DataGrid based on Display Text](Grouping_images/winui-datagrid-text-group-column.png)
+<img src="Grouping_images/winui-datagrid-text-group-column.png" alt="Grouped Column in WinUI DataGrid based on Display Text" width="100%" Height="Auto"/>
 
 ### Group caption based on DisplayMember when grouping GridComboBoxColumn
 
@@ -167,7 +167,7 @@ this.sfDataGrid.Columns.Add(new GridComboBoxColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![Grouped Column in WinUI DataGrid based on Display Member](Grouping_images/winui-datagrid-member-group-column.png)
+<img src="Grouping_images/winui-datagrid-member-group-column.png" alt="Grouped Column in WinUI DataGrid based on Display Member" width="100%" Height="Auto"/>
 
 ## Clearing or removing group
 
@@ -191,7 +191,7 @@ this.sfDataGrid.View.EndInit();
 
 To ungroup the column in UI, click the close button on column header or drag the column header from the `GroupDropArea` and drop it on the header row.
 
-![WinUI DataGrid Column without Grouping](Grouping_images/winui-datagrid-ungrouping.png)
+<img src="Grouping_images/winui-datagrid-ungrouping.png" alt="WinUI DataGrid Column without Grouping" width="100%" Height="Auto"/>
 
 ## Hiding the column when grouped
 
@@ -213,7 +213,7 @@ this.sfDataGrid.ShowColumnWhenGrouped = false;
 {% endtabs %}
 
 
-![Hide Grouping Column in WinUI DataGrid](Grouping_images/winui-datagrid-hide-grouping-column.png)
+<img src="Grouping_images/winui-datagrid-hide-grouping-column.png" alt="Hide Grouping Column in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Freezing caption rows when scrolling 
 
@@ -234,7 +234,7 @@ this.sfDataGrid.AllowFrozenGroupHeaders = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid with Frozen Caption Summary Rows](Grouping_images/winui-datagrid-frozen-caption.png)
+<img src="Grouping_images/winui-datagrid-frozen-caption.png" alt="WinUI DataGrid with Frozen Caption Summary Rows" width="100%" Height="Auto"/>
 
 ## Expanding or collapsing the groups
 
@@ -334,7 +334,7 @@ You can change the `GroupDropArea’s` text by setting [SfDataGrid.GroupDropArea
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid with Custom Group Drop Area Text](Grouping_images/winui-datagrid-group-drop-area.png)
+<img src="Grouping_images/winui-datagrid-group-drop-area.png" alt="WinUI DataGrid with Custom Group Drop Area Text" width="100%" Height="Auto"/>
 
 ### Expanding GroupDropArea while loading
 
@@ -354,7 +354,7 @@ this.sfDataGrid.IsGroupDropAreaExpanded = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid with Expanded Group Drop Area](Grouping_images/winui-datagrid-expanded-group-drop-area.png)
+<img src="Grouping_images/winui-datagrid-expanded-group-drop-area.png" alt="WinUI DataGrid with Expanded Group Drop Area" width="100%" Height="Auto"/>
 
 ## Custom grouping
 
@@ -435,7 +435,7 @@ Now , assign the `keySelector` into `GroupColumnDescription.KeySelector` and set
 {% endtabs %}
 
 
-![WinUI DataGrid with Custom Grouping](Grouping_images/winui-datagrid-custom-grouping.png)
+<img src="Grouping_images/winui-datagrid-custom-grouping.png" alt="WinUI DataGrid with Custom Grouping" width="100%" Height="Auto"/>
 
 You can refer [here](https://help.syncfusion.com/winui/datagrid/sorting#custom-sorting) to apply custom sorting when grouping is applied.
 
@@ -475,7 +475,7 @@ sfDataGrid.GroupColumnDescriptions.Add(groupColumnDescription);
 
 In the below screenshot custom grouping is applied based on `SickLeaveHours` column and the inner records in each group are sorted based on `SickLeaveHours` value.
 
-![Sorting Records under Group in WinUI DataGrid](Grouping_images/winui-datagrid-sorting-records-under-group.png)
+<img src="Grouping_images/winui-datagrid-sorting-records-under-group.png" alt="Sorting Records under Group in WinUI DataGrid" width="100%" Height="Auto"/>
 
 
 ## Grouping events

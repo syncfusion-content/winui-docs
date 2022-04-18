@@ -18,7 +18,7 @@ SfDataGrid provides support to display the concise information about the data ob
 
 * **Caption Summary** – used to display summary information in the caption of the group.
  
-![WinUI DataGrid with Table and Summaries](Summaries_images/winui-datagrid-summaries.png)
+<img src="Summaries_images/winui-datagrid-summaries.png" alt="WinUI DataGrid with Table and Summaries" width="100%" Height="Auto"/>
 
 Summary rows are represented by using [GridSummaryRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html) and  each `GridSummaryRow` hold summary information of columns in [SummaryColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_SummaryColumns) property. The `SummaryColumns` contains the collection of [GridSummaryColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryColumn.html) which carries the name of column, format and its summary aggregate type.
 
@@ -92,7 +92,7 @@ this.sfDataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 {% endtabs %}
 
 
-![WinUI DataGrid displays Table Summary on Column Basics](Summaries_images/winui-datagrid-table-summary-with-column.png)
+<img src="Summaries_images/winui-datagrid-table-summary-with-column.png" alt="WinUI DataGrid displays Table Summary on Column Basics" width="100%" Height="Auto"/>
 
 ### Displaying summary for Row
 
@@ -153,7 +153,7 @@ this.sfDataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 {% endtabs %}
 
 
-![WinUI DataGrid displays Table Summary on a Row](Summaries_images/winui-datagrid-table-summary-with-row.png)
+<img src="Summaries_images/winui-datagrid-table-summary-with-row.png" alt="WinUI DataGrid displays Table Summary on a Row" width="100%" Height="Auto"/>
 
 
 ### Displaying column summary with title
@@ -284,7 +284,7 @@ this.sfDataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 
 The following screenshot illustrates displaying summary columns with title at same time for `TableSummaryRow`.
 
-![Table Summary Columns with Title in WinUI DataGrid](Summaries_images/winui-datagrid-table-summary-with-title.png)
+<img src="Summaries_images/winui-datagrid-table-summary-with-title.png" alt="Table Summary Columns with Title in WinUI DataGrid" width="100%" Height="Auto"/>
 
 #### Limitations
 
@@ -372,7 +372,7 @@ this.sfDataGrid.TableSummaryRows.Add(tablesummaryrow2);
 {% endtabs %}
 
 
-![WinUI DataGrid Table Summary Position](Summaries_images/winui-datagrid-table-summary-position.png)
+<img src="Summaries_images/winui-datagrid-table-summary-position.png" alt="WinUI DataGrid Table Summary Position" width="100%" Height="Auto"/>
 
 ## Group Summary
 
@@ -448,7 +448,7 @@ this.sfDataGrid.GroupSummaryRows.Add(new GridSummaryRow()
 {% endtabs %}
 
 
-![WinUI DataGrid displays Group Summary on Column Basics](Summaries_images/winui-datagrid-group-summary-with-column.png)
+<img src="Summaries_images/winui-datagrid-group-summary-with-column.png" alt="WinUI DataGrid displays Group Summary on Column Basics" width="100%" Height="Auto"/>
 
 ### Displaying summary for Row
 
@@ -510,7 +510,7 @@ this.sfDataGrid.GroupSummaryRows.Add(new GridSummaryRow()
 {% endtabs %}
 
 
-![WinUI DataGrid displays Group Summary on a Row](Summaries_images/winui-datagrid-group-summary-with-row.png)
+<img src="Summaries_images/winui-datagrid-group-summary-with-row.png" alt="WinUI DataGrid displays Group Summary on a Row" width="100%" Height="Auto"/>
 
 
 ### Displaying column summary with title
@@ -587,7 +587,7 @@ this.sfDataGrid.GroupSummaryRows.Add(new GridSummaryRow()
 
 The following screenshot illustrates displaying summary columns with title at same time for `GroupSummaryRow`.
 
-![Group Summary with Title in WinUI DataGrid](Summaries_images/winui-datagrid-group-summary-with-title.png)
+<img src="Summaries_images/winui-datagrid-group-summary-with-title.png" alt="Group Summary with Title in WinUI DataGrid" width="100%" Height="Auto"/>
 
 #### Limitations
 
@@ -604,7 +604,7 @@ SfDataGrid provides built-in support for caption summaries. The caption summary 
 Below screen shot shows the built-in caption summary of Group.
 
 
-![Caption summary in WinUI DataGrid](Summaries_images/winui-datagrid-caption-summary.png)
+<img src="Summaries_images/winui-datagrid-caption-summary.png" alt="Caption summary in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ### Formatting built-in caption summary
 
@@ -630,7 +630,7 @@ You can change group caption format to display column name and count alone by se
 {% endtabs %}
 
 
-![Caption Summary displays with Group Caption Text Format in WinUI DataGrid](Summaries_images/winui-datagrid-group-caption-text-format.png)
+<img src="Summaries_images/winui-datagrid-group-caption-text-format.png" alt="Caption Summary displays with Group Caption Text Format in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ### Defining summary for column
 
@@ -697,7 +697,7 @@ this.sfDataGrid.CaptionSummaryRow = new GridSummaryRow()
 {% endtabs %}
 
 
-![WinUI DataGrid displays Caption Summary on Column Basics](Summaries_images/winui-datagrid-caption-summary-with-column.png)
+<img src="Summaries_images/winui-datagrid-caption-summary-with-column.png" alt="WinUI DataGrid displays Caption Summary on Column Basics" width="100%" Height="Auto"/>
 
 ### Displaying summary for Row
 
@@ -759,7 +759,7 @@ this.sfDataGrid.CaptionSummaryRow = new GridSummaryRow()
 {% endtabs %}
 
 
-![WinUI DataGrid displays Caption Summary on a Row](Summaries_images/winui-datagrid-caption-summary-with-row.png)
+<img src="Summaries_images/winui-datagrid-caption-summary-with-row.png" alt="WinUI DataGrid displays Caption Summary on a Row" width="100%" Height="Auto"/>
 
 
 ### Displaying column summary with title
@@ -836,7 +836,7 @@ this.sfDataGrid.CaptionSummaryRow = new GridSummaryRow()
 
 The following screenshot illustrates displaying summary columns with title at same time for `CaptionSummaryRow`.
 
-![Caption Summary Columns with Title in WinUI DataGrid](Summaries_images/winui-datagrid-caption-summary-with-title.png)
+<img src="Summaries_images/winui-datagrid-caption-summary-with-title.png" alt="Caption Summary Columns with Title in WinUI DataGrid" width="100%" Height="Auto"/>
 
 #### Limitations
 
@@ -867,7 +867,7 @@ N> [DoubleAggregate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Dat
         <dataGrid:GridTableSummaryRow ShowSummaryInRow="False">
             <dataGrid:GridSummaryRow.SummaryColumns>
                 <dataGrid:GridSummaryColumn Name="PriceAmount"
-                                              Format="'{Sum}'"
+                                              Format="'{Sum:c}'"
                                               MappingName="UnitPrice"
                                               SummaryType="DoubleAggregate" />
             </dataGrid:GridSummaryRow.SummaryColumns>
@@ -878,7 +878,7 @@ N> [DoubleAggregate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Dat
 {% endtabs %}
 
 
-![WinUI DataGrid shows with Sum Function](Summaries_images/winui-datagrid-with-sum-function.png)
+<img src="Summaries_images/winui-datagrid-with-sum-function.png" alt="WinUI DataGrid shows with Sum Function" width="100%" Height="Auto"/>
 
 ### Formatting Summary Value
 
@@ -907,7 +907,7 @@ In the below code snippet `UnitPrice` column summary is formatted using `c` form
 {% endtabs %}
 
 
-![Formatting Summary Value in WinUI DataGrid](Summaries_images/winui-datagrid-summary-value-formatting.png)
+<img src="Summaries_images/winui-datagrid-summary-value-formatting.png" alt="Formatting Summary Value in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ### Displaying additional Content in Summary
 
@@ -937,7 +937,7 @@ In the below code snippet `Total UnitPrice: ` text is appended before summary va
 {% endtabs %}
 
 
-![WinUI DataGrid displays with Additional Summary Content](Summaries_images/winui-datagrid-additional-summary-content.png)
+<img src="Summaries_images/winui-datagrid-additional-summary-content.png" alt="WinUI DataGrid displays with Additional Summary Content" width="100%" Height="Auto"/>
 
 ### Formatting Summary for Row using Title Property
 
@@ -964,7 +964,7 @@ You can format the summary value for row using [GridSummaryRow.Title](https://he
 {% endtabs %}
 
 
-![Formatting Summary Value with Title in WinUI DataGrid](Summaries_images/winui-datagrid-format-summary-using-title.png)
+<img src="Summaries_images/winui-datagrid-format-summary-using-title.png" alt="Formatting Summary Value with Title in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Aggregate Types
 
@@ -1093,7 +1093,7 @@ this.sfDataGrid.TableSummaryRows.Add(tableSummaryRow2);
 {% endhighlight %}
 {% endtabs %}
 
-![Calculate Selected Records Summary in WinUI DataGrid](Summaries_images/winui-datagrid-calculate-records.png)
+<img src="Summaries_images/winui-datagrid-calculate-records.png" alt="Calculate Selected Records Summary in WinUI DataGrid" width="100%" Height="Auto"/>
 
 N> The `GridSummaryRow.CalculationUnit` takes higher priority than the `SfDataGrid.SummaryCalculationUnit`.
 
@@ -1218,7 +1218,7 @@ this.sfDataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 {% endhighlight %}
 {% endtabs %}
 
-![Custom Aggregate Summaries in WinUI SfDataGrid](Summaries_images/winui-datagrid-custom-aggregate-summaries.png)
+<img src="Summaries_images/winui-datagrid-custom-aggregate-summaries.png" alt="Custom Aggregate Summaries in WinUI SfDataGrid" width="100%" Height="Auto"/>
 
 ## Overriding Summary Renderer
 
@@ -1329,7 +1329,7 @@ public class GridTableSummaryCellRendererExt : GridTableSummaryCellRenderer
 {% endtabs %}
 
 
-![Table Summary Formatting using Renderer in WinUI DataGrid](Summaries_images/winui-datagrid-summary-format.png)
+<img src="Summaries_images/winui-datagrid-summary-format.png" alt="Table Summary Formatting using Renderer in WinUI DataGrid" width="100%" Height="Auto"/>
 
 
 ### Customizing GroupCaptionText
@@ -1421,4 +1421,4 @@ public class GridCaptionSummaryCellRendererExt : GridCaptionSummaryCellRenderer
 {% endhighlight %}
 {% endtabs %}
 
-![Customized Group Caption Text Format in WinUI DataGrid](Summaries_images/winui-datagrid-group-caption-text.png)
+<img src="Summaries_images/winui-datagrid-group-caption-text.png" alt="Customized Group Caption Text Format in WinUI DataGrid" width="100%" Height="Auto"/>
