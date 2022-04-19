@@ -51,7 +51,7 @@ this.treeGrid.CopyOption = GridCopyOptions.CopyData | GridCopyOptions.IncludeHea
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI treegrid shows with Copied content pasted in notepad](Clipboard-Operations-images/Clipboard-Operations-img1.png)
+<img src="Clipboard-Operations-images/Clipboard-Operations-img1.png" alt="WinUI treegrid shows with Copied content pasted in notepad" width="100%" Height="Auto"/>
 
 ## Paste
 
@@ -93,7 +93,7 @@ this.treeGrid.PasteOption = GridPasteOptions.PasteData | GridPasteOptions.Exclud
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI treegrid shows with Copied record pasted in new record](Clipboard-Operations-images/Clipboard-Operations-img2.png)
+<img src="Clipboard-Operations-images/Clipboard-Operations-img2.png" alt="WinUI treegrid shows with Copied record pasted in new record" width="100%" Height="Auto"/>
 
 ## Cut
 
@@ -132,7 +132,7 @@ this.treeGrid.CopyOption = GridCopyOptions.CutData | GridCopyOptions.IncludeHead
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI treegrid shows with Data from the record is cut and pasted in notepad](Clipboard-Operations-images/Clipboard-Operations-img3.png)
+<img src="Clipboard-Operations-images/Clipboard-Operations-img3.png" alt="WinUI treegrid shows with Data from the record is cut and pasted in notepad" width="100%" Height="Auto"/>
 
 ## Events
 
@@ -146,7 +146,7 @@ this.treeGrid.CopyContent += TreeGrid_CopyContent;
 
 private void TreeGrid_CopyContent(object sender, GridCopyPasteEventArgs e)
 {
-    if (((e.OriginalSender as SfTreeGrid).SelectedItem as Person).Id == 11110)
+    if (((e.OriginalSender as SfTreeGrid).SelectedItem as Person).ID == 11)
         e.Handled = true;
 }
 
@@ -163,7 +163,7 @@ this.treeGrid.PasteContent += TreeGrid_PasteContent;
 
 private void TreeGrid_PasteContent(object sender, GridCopyPasteEventArgs e)
 {
-    if (((e.OriginalSender as SfTreeGrid).SelectedItem as Person).Id == 11110)
+    if (((e.OriginalSender as SfTreeGrid).SelectedItem as Person).ID == 11)
         e.Handled = true;
 }
 
@@ -204,13 +204,13 @@ The following code example changes the clipboard value to 100 instead of cell va
 {% highlight c# %}
 private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventArgs e)
 {
-    if (e.Column.MappingName == "OrderID" && (e.RowData as OrderDetails).OrderID == 1005)
+    if (e.Column.MappingName == "ID" && (e.RowData as Person).ID == 10)
         e.ClipBoardValue = 100;
 }
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI treegrid shows with Copied data customized through CopyCellContent event](Clipboard-Operations-images/Clipboard-Operations-img4.png)
+<img src="Clipboard-Operations-images/Clipboard-Operations-img4.png" alt="WinUI treegrid shows with Copied data customized through CopyCellContent event" width="100%" Height="Auto"/>
 
 The following code example demonstrates how to handle the copy operation when MappingName of a Column is Id.
 
@@ -218,13 +218,13 @@ The following code example demonstrates how to handle the copy operation when Ma
 {% highlight c# %}
 private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventArgs e)
 {
-    if (e.Column.MappingName == "Id")
+    if (e.Column.MappingName == "ID")
         e.Handled = true;
 }
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI treegrid shows with Copy operation for a column handled through CopyCellContent event](Clipboard-Operations-images/Clipboard-Operations-img5.png)
+<img src="Clipboard-Operations-images/Clipboard-Operations-img5.png" alt="WinUI treegrid shows with Copy operation for a column handled through CopyCellContent event" width="100%" Height="Auto"/>
 
 ### PasteCellContent
 
@@ -258,15 +258,15 @@ The following code example changes the clipboard value to David instead of clipb
 {% highlight c# %}
 private void TreeGrid_PasteCellContent(object sender, TreeGridCopyPasteCellEventArgs e)
 {
-    if (e.Column.MappingName == "FirstName" && (e.RowData as Person).FirstName == "Warner")
-        e.ClipBoardValue = "David";
+    if (e.Column.MappingName == "FirstName" && (e.RowData != null && (e.RowData as Person).FirstName == "Andrew"))
+        e.ClipBoardValue = "Ronald";
 }
 
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI treegrid shows with Data of a column customized when pasting through PasteCellContent event](Clipboard-Operations-images/Clipboard-Operations-img6.png)
+<img src="Clipboard-Operations-images/Clipboard-Operations-img6.png" alt="WinUI treegrid shows with Data of a column customized when pasting through PasteCellContent event" width="100%" Height="Auto"/>
 
 The following code example demonstrates how to handle the paste operation when MappingName of column is Id.
 
@@ -274,7 +274,7 @@ The following code example demonstrates how to handle the paste operation when M
 {% highlight c# %}
 private void TreeGrid_PasteCellContent(object sender, TreeGridCopyPasteCellEventArgs e)
 {
-    if (e.Column.MappingName == "Id")
+    if (e.Column.MappingName == "ID")
         e.Handled = true;
 }
 
@@ -282,7 +282,7 @@ private void TreeGrid_PasteCellContent(object sender, TreeGridCopyPasteCellEvent
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI treegrid shows with Paste operation of a column is handled through PasteCellContent event](Clipboard-Operations-images/Clipboard-Operations-img7.png)
+<img src="Clipboard-Operations-images/Clipboard-Operations-img7.png" alt="WinUI treegrid shows with Paste operation of a column is handled through PasteCellContent event" width="100%" Height="Auto"/>
 
 ## Handle the clipboard operations programmatically
 
@@ -293,7 +293,7 @@ Copy the selected nodes in tree grid using the [Copy](https://help.syncfusion.co
 {% tabs %}
 {% highlight c# %}
 
-this.treeGrid.TreeGridCopyPaste.Copy();
+this.treeGrid.ClipboardController.Copy();
 
 {% endhighlight %}
 {% endtabs %}
