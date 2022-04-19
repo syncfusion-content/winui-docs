@@ -121,7 +121,7 @@ Define a ViewModel class that implements command and handle it by the `CanExecut
 * Once the appointment collection is got, load into the scheduler `ItemsSource.`
 
 {%tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4 5" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4 5 7" %}
  <scheduler:SfScheduler x:Name="Schedule"  
                         ViewType="Month"
                         ShowBusyIndicator="{Binding ShowBusyIndicator}"

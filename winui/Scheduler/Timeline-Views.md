@@ -312,7 +312,7 @@ The WinUI scheduler time interval width can be adjusted based on the screen heig
     </scheduler:SfScheduler.TimelineViewSettings>
 </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 this.Schedule.ViewType = SchedulerViewType.TimelineWeek;
 this.Schedule.TimelineViewSettings.TimeIntervalSize = -1;
 {% endhighlight %}

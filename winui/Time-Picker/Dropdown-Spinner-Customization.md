@@ -20,7 +20,7 @@ You can also restrict the width of dropdown time spinner cells with particular p
 N> `ItemWidth` values must be within the `MinItemWidth` and `MaxItemWidth`values. Otherwise, `ItemWidth` will take the closest value from `MinItemWidth` or `MaxItemWidth` value.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3 4 5 6" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2 3 4 5" %}
 
 <editors:SfTimePicker x:Name="sfTimePicker"
                       MinItemWidth="70" 
@@ -30,7 +30,7 @@ N> `ItemWidth` values must be within the `MinItemWidth` and `MaxItemWidth`values
                       />
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3 4 5 6" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4 5" %}
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.MinItemWidth = 70;
@@ -50,7 +50,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can customize all the dropdown time spinner cells by using the `ItemContainerStyle` or `ItemTemplate` properties. The `DataContext` of `ItemContainerStyle` or `ItemTemplate` properties is [`SpinnerItem`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SpinnerItem.html).
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3 4 5 6 7 8" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2 3 4 5 6 7" %}
 
 <editors:SfTimePicker x:Name="sfTimePicker">
     <editors:SfTimePicker.ItemContainerStyle>
@@ -201,14 +201,14 @@ You can change the time interval, header text, size of time field cells and cust
 Here, time interval, header and cell size of the dropdown time fields is customized by using `TimeFieldPrepared` event.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
 <editors:SfTimePicker 
                       x:Name="sfTimePicker"
                       TimeFieldPrepared="SfTimePicker_TimeFieldPrepared"/>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.TimeFieldPrepared = SfTimePicker_TimeFieldPrepared;

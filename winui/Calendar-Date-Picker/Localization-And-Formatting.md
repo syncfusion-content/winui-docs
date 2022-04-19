@@ -34,13 +34,13 @@ N> When `CalendarIdentifier` and `FlowDirection` properties are set, `FlowDirect
 N> `Calendar Date Picker` control updates the flow direction visually based on the `CalendarIdentifier` property value.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker"
                                CalendarIdentifier="HebrewCalendar"/>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.CalendarIdentifier = "HebrewCalendar";
@@ -59,13 +59,13 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 If you want to localize the dropdown calendar, use the `Language` property. The default value of `Language` property is **en-US**.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker"
                                Language="ar-AR"/>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.Language = "ar-AR";
@@ -83,13 +83,13 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
  You can edit and display the selected date with various formatting like date, month and year formats by using the [DisplayDateFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_DisplayDateFormat) property. The default value of `DisplayDateFormat` property is **d**.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker" 
                                DisplayDateFormat="M"/>
 
 {% endhighlight  %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.DisplayDateFormat= "M";
@@ -108,7 +108,7 @@ You can use different date formats such as abbreviated or full name for a day, m
 N> Refer [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.datetimeformatting.datetimeformatter?view=winrt-19041) page to get more date formatting.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4 5 6" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5" %}
 
 <calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker"
                                DayFormat="{}{day.integer(2)}"
@@ -117,7 +117,7 @@ N> Refer [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.gl
                                MonthHeaderFormat="{}{month.abbreviated} {year.abbreviated}‎" />
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3 4 5 6" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4 5" %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.DayFormat = "{day.integer(2)}";
@@ -137,13 +137,13 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can change the first day of week in dropdown calendar using the [FirstDayOfWeek](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_FirstDayOfWeek) property value. The default value of `FirstDayOfWeek` property is **Sunday**.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker" 
                                FirstDayOfWeek="Monday"/>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.FirstDayOfWeek = FirstDayOfWeek.Monday;
@@ -160,13 +160,13 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 If you want to increase or decrease the number of weeks shown in a month view in dropdown calendar, use the [NumberOfWeeksInView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_NumberOfWeeksInView) property. The default value of `NumberOfWeeksInView` property is `6`.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker"
                                NumberOfWeeksInView="4"/>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.NumberOfWeeksInView = 4;

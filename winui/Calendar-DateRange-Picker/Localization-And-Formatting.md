@@ -31,13 +31,13 @@ N> When `CalendarIdentifier` and `FlowDirection` properties are set, `FlowDirect
 N> `Calendar DateRange Picker` control updates the flow direction visually based on the `CalendarIdentifier` property value.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker"
                                     CalendarIdentifier="HebrewCalendar"/>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.CalendarIdentifier = "HebrewCalendar";
@@ -54,14 +54,14 @@ N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-
 If you want to localize the dropdown calendar, use the `Language` property. The default value of `Language` property is **en-US**.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
 
 <calendar:SfCalendarDateRangePicker 
                                x:Name="sfCalendarDateRangePicker"
                                Language="ar-AR"/>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.Language = "ar-AR";
@@ -78,13 +78,13 @@ N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-
 You can modify and display the selected date range with various formatting like date, month and year formats by using the [`DisplayDateFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_DisplayDateFormat) property. The default value of `DisplayDateFormat` property is **{0:d}-{1:d}**.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker" 
                                     DisplayDateFormat="{}{0:D} - {1:D}" />
    
 {% endhighlight  %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.DisplayDateFormat= "{0:D}-{1:D}";
@@ -103,7 +103,7 @@ You can use different date formats such as abbreviated or full name for a day, m
 N> Refer [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.datetimeformatting.datetimeformatter?view=winrt-19041) page to get more date formats.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4 5 6" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5" %}
 
 <calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker" 
                                     DayFormat="{}{day.integer(2)}"
@@ -113,7 +113,7 @@ N> Refer [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.gl
                                     />
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3 4 5 6" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4 5" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.DayFormat = "{day.integer(2)}";
@@ -133,13 +133,13 @@ N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-
 By default, **Sunday** is shown as the first day of the week in a dropdown calendar of `Calendar DateRange Picker` control. You can change the first day of week, by changing the [`FirstDayOfWeek`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_FirstDayOfWeek) property value. 
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker" 
                                     FirstDayOfWeek="Monday"/>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.FirstDayOfWeek = FirstDayOfWeek.Monday;
@@ -156,14 +156,14 @@ By default, flow direction is changed automatically based on selected `CalendarI
 N> When `CalendarIdentifier` and `FlowDirection` properties are set, `FlowDirection` property is given higher precedence.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
 <calendar:SfCalendarDateRangePicker 
                                x:Name="sfCalendarDateRangePicker"
                                FlowDirection="RightToLeft" />
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.FlowDirection = FlowDirection.RightToLeft;

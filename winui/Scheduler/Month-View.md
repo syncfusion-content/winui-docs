@@ -94,7 +94,7 @@ this.Schedule.MonthViewSettings.AppointmentDisplayMode = AppointmentDisplayMode.
 Customize the number of appointments displayed in a month cell using the [AppointmentDisplayCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_AppointmentDisplayCount) property of the [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html) in the Scheduler. By default, the appointment display count is 3, and the month cell has more than 3 appointments, 3 appointments will be displayed and the remaining appointments in the month cell will be displayed as more appointments.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
  <scheduler:SfScheduler x:Name="Schedule"
                         ViewType="Month" >
      <scheduler:SfScheduler.MonthViewSettings>
@@ -385,7 +385,7 @@ Customize the default appearance of the month cell by using the [MonthCellTempla
 The `DataTemplateSelector` can choose a `DataTemplate` at runtime based on the value of a data-bound to Scheduler month cell using the [MonthCellTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_MonthCellTemplate). It lets to choose a different data template for each month’s cell, customizing the appearance of a particular month cell based on certain conditions.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="29" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="28" %}
 <Grid>
      <Grid.Resources>
           <local:MonthCellTemplateSelector x:Key="monthCellTemplateSelector" 
@@ -498,7 +498,7 @@ Customize the default appearance of the month view appointments by using the [Ap
 The `DataTemplateSelector` can choose a `DataTemplate` at runtime based on the value of a data-bound to Scheduler month appointments using the `AppointmentTemplate`. It lets to choose a different data template for each month’s cell, customizing the appearance of a particular appointment based on certain conditions.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="34" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="33" %}
 <Grid>
      <Grid.Resources>
           <local:AppointmentTemplateSelector x:Key="appointmentTemplateSelector" 
