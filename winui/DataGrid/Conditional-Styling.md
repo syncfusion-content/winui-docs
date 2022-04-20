@@ -23,27 +23,27 @@ N> `GridColumn.CellStyleSelector` takes higher priority than `SfDataGrid.CellSty
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="styleSelector"/>
-    <Style x:Key="redCellStyle" TargetType="syncfusion:GridCell">
+    <Style x:Key="redCellStyle" TargetType="dataGrid:GridCell">
         <Setter Property="Foreground" Value="Red" />
     </Style>
-    <Style x:Key="blueCellStyle" TargetType="syncfusion:GridCell">
+    <Style x:Key="blueCellStyle" TargetType="dataGrid:GridCell">
         <Setter Property="Foreground" Value="DarkBlue" />
     </Style>
 </Application.Resources>
 
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="False"
                        CellStyleSelector="{StaticResource styleSelector}"
                        ItemsSource="{Binding Orders}"
                        ColumnWidthMode="Star">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-        <syncfusion:GridTextColumn MappingName="Country" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+        <dataGrid:GridTextColumn MappingName="Country" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -60,8 +60,8 @@ public class SelectorClass : StyleSelector
             //custom condition is checked based on data.
 
             if (data.OrderID < 1005)
-                return App.Current.Resources["redCellStyle"] as Style;
-            return App.Current.Resources["blueCellStyle"] as Style;
+                return Application.Current.Resources["redCellStyle"] as Style;
+            return Application.Current.Resources["blueCellStyle"] as Style;
         }
         return base.SelectStyleCore(item, container);
     }
@@ -71,7 +71,7 @@ public class SelectorClass : StyleSelector
 
 Here, GridCell’s are customized based on `OrderID` property of underlying record.
 
-![WinUI DataGrid Conditional Cell Styling based on Data using Style Selector](Conditional-Styling_images/winui-datagrid-cells-style-customization.png)
+<img src="Conditional-Styling_images/winui-datagrid-cells-style-customization.png" alt="WinUI DataGrid Conditional Cell Styling based on Data using Style Selector" width="100%" Height="Auto"/>
 
 ## Row style
 
@@ -83,27 +83,27 @@ The record rows ([DataGridRowControl](https://help.syncfusion.com/cr/winui/Syncf
 {% highlight xaml %}
 <Application.Resources>
     <local:CustomRowStyleSelector x:Key="rowStyleSelector" />
-    <Style x:Key="rowStyle1" TargetType="syncfusion:DataGridRowControl">
+    <Style x:Key="rowStyle1" TargetType="dataGrid:DataGridRowControl">
         <Setter Property="Background" Value="Bisque" />
     </Style>
-    <Style x:Key="rowStyle2" TargetType="syncfusion:DataGridRowControl">
+    <Style x:Key="rowStyle2" TargetType="dataGrid:DataGridRowControl">
         <Setter Property="Background" Value="Aqua" />
     </Style>
 </Application.Resources>
 
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="False"
                        RowStyleSelector="{StaticResource rowStyleSelector}"
                        ItemsSource="{Binding Orders}"
                        ColumnWidthMode="Star">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-        <syncfusion:GridTextColumn MappingName="Country" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+        <dataGrid:GridTextColumn MappingName="Country" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -115,8 +115,8 @@ public class CustomRowStyleSelector : StyleSelector
         var data = row as OrderInfo;
 
         if (data.OrderID < 1004)
-            return App.Current.Resources["rowStyle1"] as Style;
-        return App.Current.Resources["rowStyle2"] as Style;
+            return Application.Current.Resources["rowStyle1"] as Style;
+        return Application.Current.Resources["rowStyle2"] as Style;
     }
 }
 
@@ -125,7 +125,7 @@ public class CustomRowStyleSelector : StyleSelector
 
 Here, rows are customized based on `OrderID` property of underlying record.
 
-![Conditional Styling of WinUI DataGrid Rows using Style Selector](Conditional-Styling_images/winui-datagrid-rows-style-customization.png)
+<img src="Conditional-Styling_images/winui-datagrid-rows-style-customization.png" alt="Conditional Styling of WinUI DataGrid Rows using Style Selector" width="100%" Height="Auto"/>
 
 ## Alternate row style
 
@@ -135,27 +135,27 @@ The appearance of alternating rows can be customized conditionally based on data
 {% highlight xaml %}
 <Application.Resources>
     <local:StyleSelector x:Key="alternatingRowStyleSelector" />
-    <Style x:Key="rowStyle1" TargetType="syncfusion:DataGridRowControl">
+    <Style x:Key="rowStyle1" TargetType="dataGrid:DataGridRowControl">
         <Setter Property="Background" Value="Bisque" />
     </Style>
-    <Style x:Key="rowStyle2" TargetType="syncfusion:DataGridRowControl">
+    <Style x:Key="rowStyle2" TargetType="dataGrid:DataGridRowControl">
         <Setter Property="Background" Value="Aqua" />
     </Style>
 </Application.Resources>
 
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="False"
                        ItemsSource="{Binding Orders}"
                        AlternatingRowStyleSelector="{StaticResource alternatingRowStyleSelector}"
                        ColumnWidthMode="Star">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-        <syncfusion:GridTextColumn MappingName="Country" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+        <dataGrid:GridTextColumn MappingName="Country" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -168,8 +168,8 @@ public class SelectorClass : StyleSelector
         var data = row as OrderInfo;
 
         if (data.OrderID < 1006)
-            return App.Current.Resources["rowStyle1"] as Style;
-        return App.Current.Resources["rowStyle2"] as Style;
+            return Application.Current.Resources["rowStyle1"] as Style;
+        return Application.Current.Resources["rowStyle2"] as Style;
     }
 }
 
@@ -178,7 +178,7 @@ public class SelectorClass : StyleSelector
 
 Here, alternating rows are customized based on `OrderID` property of underlying record.
 
-![Alternative Row Style in WinUI DataGrid](Conditional-Styling_images/winui-datagrid-alternate-row-style.png)
+<img src="Conditional-Styling_images/winui-datagrid-alternate-row-style.png" alt="Alternative Row Style in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Caption summary cell style
 
@@ -190,34 +190,34 @@ The appearance of caption summary cell can be customized conditionally based on 
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="selector"/>
-    <Style TargetType="syncfusion:GridCaptionSummaryCell" x:Key="captionSummaryStyle">
+    <Style TargetType="dataGrid:GridCaptionSummaryCell" x:Key="captionSummaryStyle">
         <Setter Property="Foreground" Value="Red"/>
     </Style>
 </Application.Resources>
 
 
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
                        AllowGrouping="True"
                        ShowGroupDropArea="True"
                        CaptionSummaryCellStyleSelector="{StaticResource selector}"
                        ItemsSource="{Binding Orders}"
                        ColumnWidthMode="Star">
-    <syncfusion:SfDataGrid.CaptionSummaryRow>
-        <syncfusion:GridSummaryRow ShowSummaryInRow="False">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
+    <dataGrid:SfDataGrid.CaptionSummaryRow>
+        <dataGrid:GridSummaryRow ShowSummaryInRow="False">
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="PriceAmount"
                                         Format="'{Sum:c}'"
-                                        MappingName="OrderID"
+                                        MappingName="UnitPrice"
                                         SummaryType="DoubleAggregate" />
-                <syncfusion:GridSummaryColumn Name="CustomertCount"
-                                        Format="'{Count:c}'"
-                                        MappingName="CustomerName"
+                <dataGrid:GridSummaryColumn Name="ProductCount"
+                                        Format="'{Count}'"
+                                        MappingName="ProductName"
                                         SummaryType="CountAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridSummaryRow>
-    </syncfusion:SfDataGrid.CaptionSummaryRow>
-</syncfusion:SfDataGrid>
+            </dataGrid:GridSummaryRow.SummaryColumns>
+        </dataGrid:GridSummaryRow>
+    </dataGrid:SfDataGrid.CaptionSummaryRow>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 public class SelectorClass : StyleSelector
@@ -230,8 +230,8 @@ public class SelectorClass : StyleSelector
         var calculatedValue = aggregateValue.Value;
 
         //custom condition is checked.
-        if ((double)calculatedValue > 1005)
-            return App.Current.Resources["captionSummaryStyle"] as Style;
+        if ((double)calculatedValue > 50)
+            return Application.Current.Resources["captionSummaryStyle"] as Style;
         return base.SelectStyleCore(item, container);
     }
 }
@@ -240,7 +240,7 @@ public class SelectorClass : StyleSelector
 
 Here, caption summary cells are customized based on `OrderID` summary value.
 
-![Conditional Styling of WinUI DataGrid Caption Summary Cells using Style Selector](Conditional-Styling_images/winui-datagrid-caption-summary-cells-customization.png)
+<img src="Conditional-Styling_images/winui-datagrid-caption-summary-cells-customization.png" alt="Conditional Styling of WinUI DataGrid Caption Summary Cells using Style Selector" width="100%" Height="Auto"/>
 
 ### Conditional styling of caption summary cell based on column
 
@@ -252,33 +252,33 @@ Here, caption summary cells are customized based on `OrderID` summary column.
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="selector"/>
-    <Style TargetType="syncfusion:GridCaptionSummaryCell" x:Key="captionSummaryStyle">
+    <Style TargetType="dataGrid:GridCaptionSummaryCell" x:Key="captionSummaryStyle">
         <Setter Property="Foreground" Value="Red"/>
     </Style>
 </Application.Resources>
 
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
                        AllowGrouping="True"
                        ShowGroupDropArea="True"
                        CaptionSummaryCellStyleSelector="{StaticResource selector}"
                        ItemsSource="{Binding Orders}"
                        ColumnWidthMode="Star">
-    <syncfusion:SfDataGrid.CaptionSummaryRow>
-        <syncfusion:GridSummaryRow ShowSummaryInRow="False">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
+    <dataGrid:SfDataGrid.CaptionSummaryRow>
+        <dataGrid:GridSummaryRow ShowSummaryInRow="False">
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="PriceAmount"
                                         Format="'{Sum:c}'"
-                                        MappingName="OrderID"
+                                        MappingName="UnitPrice"
                                         SummaryType="DoubleAggregate" />
-                <syncfusion:GridSummaryColumn Name="CustomertCount"
-                                        Format="'{Count:c}'"
-                                        MappingName="CustomerName"
+                <dataGrid:GridSummaryColumn Name="ProductCount"
+                                        Format="'{Count}'"
+                                        MappingName="ProductName"
                                         SummaryType="CountAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridSummaryRow>
-    </syncfusion:SfDataGrid.CaptionSummaryRow>
-</syncfusion:SfDataGrid>
+            </dataGrid:GridSummaryRow.SummaryColumns>
+        </dataGrid:GridSummaryRow>
+    </dataGrid:SfDataGrid.CaptionSummaryRow>
+</dataGrid:SfDataGrid>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -289,13 +289,13 @@ public class SelectorClass : StyleSelector
     {
         var cell = container as GridCaptionSummaryCell;
 
-        if (cell.ColumnBase.GridColumn.MappingName == "OrderID")
+        if (cell.ColumnBase.GridColumn.MappingName == "UnitPrice")
         {
-            var groupKey = (int)(item as Group).Key;
+            var groupKey = (double)(item as Group).Key;
 
             //custom condition is checked.
-            if (groupKey < 1005)
-                return App.Current.Resources["captionSummaryStyle"] as Style;
+            if (groupKey < 50)
+                return Application.Current.Resources["captionSummaryStyle"] as Style;
         }
         return null;
     }
@@ -303,7 +303,7 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Conditional Styling of WinUI DataGrid Caption Summary Cells](Conditional-Styling_images/winui-datagrid-caption-summary-cell-style-customization.png)
+<img src="Conditional-Styling_images/winui-datagrid-caption-summary-cell-style-customization.png" alt="Conditional Styling of WinUI DataGrid Caption Summary Cells" width="100%" Height="Auto"/>
 
 ## Group summary cell style
 
@@ -319,44 +319,44 @@ Here, group summary cells are customized based on summary values whether it’s 
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="styleSelector"/>
-    <Style TargetType="syncfusion:GridGroupSummaryCell" x:Key="customGroupSummary">
+    <Style TargetType="dataGrid:GridGroupSummaryCell" x:Key="customGroupSummary">
         <Setter Property="Foreground" Value="DarkBlue"/>
     </Style>
-    <Style TargetType="syncfusion:GridGroupSummaryCell" x:Key="customGroupSummary1">
+    <Style TargetType="dataGrid:GridGroupSummaryCell" x:Key="customGroupSummary1">
         <Setter Property="Background" Value="Red"/>
     </Style>
 </Application.Resources>
 
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
                        AllowGrouping="True"
                        ShowGroupDropArea="True"
                        GroupSummaryCellStyleSelector="{StaticResource styleSelector}"
                        ItemsSource="{Binding Orders}"
                        ColumnWidthMode="Star">
-    <syncfusion:SfDataGrid.GroupSummaryRows>
-        <syncfusion:GridSummaryRow ShowSummaryInRow="False">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
-                                      Format="'Amount - {Sum:c}'"
-                                      MappingName="OrderID"
-                                      SummaryType="DoubleAggregate" />
-                <syncfusion:GridSummaryColumn Name="CustomerCount"
-                                      Format="'Count - {Count:d}'"
-                                      MappingName="CustomerName"
-                                      SummaryType="CountAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridSummaryRow>
-        <syncfusion:GridSummaryRow Title="TotalPrice:  {totalPrice}" ShowSummaryInRow="True">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="totalPrice"
-                                        Format="'{Sum:c}'"
-                                        MappingName="OrderID"
-                                        SummaryType="DoubleAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridSummaryRow>
-    </syncfusion:SfDataGrid.GroupSummaryRows>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.GroupSummaryRows>
+            <dataGrid:GridSummaryRow ShowSummaryInRow="False">
+                <dataGrid:GridSummaryRow.SummaryColumns>
+                    <dataGrid:GridSummaryColumn Name="PriceAmount"
+                                    Format="'Amount - {Sum:c}'"
+                                    MappingName="UnitPrice"
+                                    SummaryType="DoubleAggregate" />
+                    <dataGrid:GridSummaryColumn Name="ProductCount"
+                                    Format="'Count - {Count:d}'"
+                                    MappingName="ProductName"
+                                    SummaryType="CountAggregate" />
+                </dataGrid:GridSummaryRow.SummaryColumns>
+            </dataGrid:GridSummaryRow>
+            <dataGrid:GridSummaryRow Title="TotalPrice:  {totalPrice}" ShowSummaryInRow="True">
+                <dataGrid:GridSummaryRow.SummaryColumns>
+                    <dataGrid:GridSummaryColumn Name="totalPrice"
+                                    Format="'{Sum:c}'"
+                                    MappingName="UnitPrice"
+                                    SummaryType="DoubleAggregate" />
+                </dataGrid:GridSummaryRow.SummaryColumns>
+            </dataGrid:GridSummaryRow>
+    </dataGrid:SfDataGrid.GroupSummaryRows>
+</dataGrid:SfDataGrid>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -370,9 +370,9 @@ public class SelectorClass : StyleSelector
         var calculatedValue = aggregateValue.Value;
 
         //custom condition is checked.
-        if ((double)calculatedValue < 1005)
-            return App.Current.Resources["customGroupSummary1"] as Style;
-        return App.Current.Resources["customGroupSummary"] as Style;
+        if ((double)calculatedValue < 50)
+            return Application.Current.Resources["customGroupSummary1"] as Style;
+        return Application.Current.Resources["customGroupSummary"] as Style;
     }
 }
 
@@ -381,7 +381,7 @@ public class SelectorClass : StyleSelector
 
 Here, group summary cells are customized based on `TotalPrice` summary value.
 
-![Conditional Styling of WinUI DataGrid Group Summary Cells](Conditional-Styling_images/winui-datagrid-group-summary-cell-customization.png)
+<img src="Conditional-Styling_images/winui-datagrid-group-summary-cell-customization.png" alt="Conditional Styling of WinUI DataGrid Group Summary Cells" width="100%" Height="Auto"/>
 
 ### Conditional styling of group summary cell based on column
 
@@ -393,44 +393,44 @@ Here, group summary cells are customized based on `TotalPrice` summary column.
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="styleSelector"/>
-    <Style TargetType="syncfusion:GridGroupSummaryCell" x:Key="customGroupSummary">
+    <Style TargetType="dataGrid:GridGroupSummaryCell" x:Key="customGroupSummary">
         <Setter Property="Foreground" Value="DarkBlue"/>
     </Style>
-    <Style TargetType="syncfusion:GridGroupSummaryCell" x:Key="customGroupSummary1">
+    <Style TargetType="dataGrid:GridGroupSummaryCell" x:Key="customGroupSummary1">
         <Setter Property="Background" Value="Red"/>
     </Style>
 </Application.Resources>
 
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
                        AllowGrouping="True"
                        ShowGroupDropArea="True"
                        GroupSummaryCellStyleSelector="{StaticResource styleSelector}"
                        ItemsSource="{Binding Orders}"
                        ColumnWidthMode="Star">
-    <syncfusion:SfDataGrid.GroupSummaryRows>
-        <syncfusion:GridSummaryRow ShowSummaryInRow="False">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
-                                      Format="'Amount - {Sum:c}'"
-                                      MappingName="OrderID"
-                                      SummaryType="DoubleAggregate" />
-                <syncfusion:GridSummaryColumn Name="CustomerCount"
-                                      Format="'Count - {Count:d}'"
-                                      MappingName="CustomerName"
-                                      SummaryType="CountAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridSummaryRow>
-        <syncfusion:GridSummaryRow Title="TotalPrice:  {totalPrice}" ShowSummaryInRow="True">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="totalPrice"
-                                        Format="'{Sum:c}'"
-                                        MappingName="OrderID"
-                                        SummaryType="DoubleAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridSummaryRow>
-    </syncfusion:SfDataGrid.GroupSummaryRows>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.GroupSummaryRows>
+            <dataGrid:GridSummaryRow ShowSummaryInRow="False">
+                <dataGrid:GridSummaryRow.SummaryColumns>
+                    <dataGrid:GridSummaryColumn Name="PriceAmount"
+                                    Format="'Amount - {Sum:c}'"
+                                    MappingName="UnitPrice"
+                                    SummaryType="DoubleAggregate" />
+                    <dataGrid:GridSummaryColumn Name="ProductCount"
+                                    Format="'Count - {Count:d}'"
+                                    MappingName="ProductName"
+                                    SummaryType="CountAggregate" />
+                </dataGrid:GridSummaryRow.SummaryColumns>
+            </dataGrid:GridSummaryRow>
+            <dataGrid:GridSummaryRow Title="TotalPrice:  {totalPrice}" ShowSummaryInRow="True">
+                <dataGrid:GridSummaryRow.SummaryColumns>
+                    <dataGrid:GridSummaryColumn Name="totalPrice"
+                                    Format="'{Sum:c}'"
+                                    MappingName="UnitPrice"
+                                    SummaryType="DoubleAggregate" />
+                </dataGrid:GridSummaryRow.SummaryColumns>
+            </dataGrid:GridSummaryRow>
+    </dataGrid:SfDataGrid.GroupSummaryRows>
+</dataGrid:SfDataGrid>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -440,23 +440,23 @@ public class SelectorClass : StyleSelector
     {
         var cell = container as GridGroupSummaryCell;
 
-        if (cell.ColumnBase.GridColumn.MappingName == "OrderID")
+        if (cell.ColumnBase.GridColumn.MappingName == "UnitPrice")
         {
             var summaryValue = (item as SummaryRecordEntry).SummaryValues[0];
             var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
             var calculatedValue = aggregateValue.Value;
 
             //custom condition is checked.
-            if (aggregateValue.Key != "Count" && (double)calculatedValue < 1005)
-                return App.Current.Resources["customGroupSummary1"] as Style;
+            if (aggregateValue.Key != "Count" && (double)calculatedValue < 50)
+                return Application.Current.Resources["customGroupSummary1"] as Style;
         }
-        return App.Current.Resources["customGroupSummary"] as Style;
+        return Application.Current.Resources["customGroupSummary"] as Style;
     }
 }
 {% endhighlight %}
 {% endtabs %}
 
-![Conditional Styling of WinUI DataGrid Group Summary Cells](Conditional-Styling_images/winui-datagrid-group-summary-column-customizatiion.png)
+<img src="Conditional-Styling_images/winui-datagrid-group-summary-column-customizatiion.png" alt="Conditional Styling of WinUI DataGrid Group Summary Cellss" width="100%" Height="Auto"/>
 
 ## Group summary row style
 
@@ -470,15 +470,15 @@ The appearance of group summary row can be customized conditionally based on sum
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="styleSelector"/>
-    <Style TargetType="syncfusion:GroupSummaryRowControl" x:Key="customGroupSummary">
+    <Style TargetType="dataGrid:GroupSummaryRowControl" x:Key="customGroupSummary">
         <Setter Property="Background" Value="LightBlue"/>
     </Style>
-    <Style TargetType="syncfusion:GroupSummaryRowControl" x:Key="customGroupSummary1">
+    <Style TargetType="dataGrid:GroupSummaryRowControl" x:Key="customGroupSummary1">
         <Setter Property="Background" Value="Yellow"/>
     </Style>
 </Application.Resources>
 
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
                        AllowEditing="True"
                        AllowGrouping="True"
@@ -486,29 +486,29 @@ The appearance of group summary row can be customized conditionally based on sum
                        GroupSummaryRowStyleSelector="{StaticResource styleSelector}"
                        ItemsSource="{Binding Orders}"
                        ColumnWidthMode="Star">
-    <syncfusion:SfDataGrid.GroupSummaryRows>
-        <syncfusion:GridSummaryRow ShowSummaryInRow="False">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
-                                      Format="'Amount - {Sum:c}'"
-                                      MappingName="OrderID"
-                                      SummaryType="DoubleAggregate" />
-                <syncfusion:GridSummaryColumn Name="CustomerCount"
-                                      Format="'Count - {Count:d}'"
-                                      MappingName="CustomerName"
-                                      SummaryType="CountAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridSummaryRow>
-        <syncfusion:GridSummaryRow Title="TotalPrice:  {totalPrice}" ShowSummaryInRow="True">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="totalPrice"
-                                        Format="'{Sum:c}'"
-                                        MappingName="OrderID"
-                                        SummaryType="DoubleAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridSummaryRow>
-    </syncfusion:SfDataGrid.GroupSummaryRows>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.GroupSummaryRows>
+            <dataGrid:GridSummaryRow ShowSummaryInRow="False">
+                <dataGrid:GridSummaryRow.SummaryColumns>
+                    <dataGrid:GridSummaryColumn Name="PriceAmount"
+                                    Format="'Amount - {Sum:c}'"
+                                    MappingName="UnitPrice"
+                                    SummaryType="DoubleAggregate" />
+                    <dataGrid:GridSummaryColumn Name="ProductCount"
+                                    Format="'Count - {Count:d}'"
+                                    MappingName="ProductName"
+                                    SummaryType="CountAggregate" />
+                </dataGrid:GridSummaryRow.SummaryColumns>
+            </dataGrid:GridSummaryRow>
+            <dataGrid:GridSummaryRow Title="TotalPrice:  {totalPrice}" ShowSummaryInRow="True">
+                <dataGrid:GridSummaryRow.SummaryColumns>
+                    <dataGrid:GridSummaryColumn Name="totalPrice"
+                                    Format="'{Sum:c}'"
+                                    MappingName="UnitPrice"
+                                    SummaryType="DoubleAggregate" />
+                </dataGrid:GridSummaryRow.SummaryColumns>
+            </dataGrid:GridSummaryRow>
+    </dataGrid:SfDataGrid.GroupSummaryRows>
+</dataGrid:SfDataGrid>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -523,8 +523,8 @@ public class SelectorClass : StyleSelector
 
         //custom condition is checked.
         if ((double)calculatedValue % 2 == 0)
-            return App.Current.Resources["customGroupSummary1"] as Style;
-        return App.Current.Resources["customGroupSummary"] as Style;
+            return Application.Current.Resources["customGroupSummary1"] as Style;
+        return Application.Current.Resources["customGroupSummary"] as Style;
     }
 }
 
@@ -533,7 +533,7 @@ public class SelectorClass : StyleSelector
 
 Here, group summary rows are customized based on `TotalPrice` summary value whether it’s positive or negative.
 
-![Customizing Group Summary Row Style in WinUI DataGrid](Conditional-Styling_images/winui-datagrid-group-summary-row-style-customization.png)
+<img src="Conditional-Styling_images/winui-datagrid-group-summary-row-style-customization.png" alt="Customizing Group Summary Row Style in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Table summary cell
 
@@ -547,47 +547,46 @@ The appearance of table summary cell can be customized conditionally based on su
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="styleSelector"/>
-    <Style TargetType="syncfusion:GridTableSummaryCell" x:Key="customTableSummary">
+    <Style TargetType="dataGrid:GridTableSummaryCell" x:Key="customTableSummary">
         <Setter Property="Foreground" Value="Red"/>
     </Style>
-    <Style TargetType="syncfusion:GridTableSummaryCell" x:Key="customTableSummary1">
+    <Style TargetType="dataGrid:GridTableSummaryCell" x:Key="customTableSummary1">
         <Setter Property="Foreground" Value="DarkBlue"/>
     </Style>
 </Application.Resources>
 
 
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
                        AllowEditing="True"
                        AllowGrouping="True"
-                       AutoGeneratingColumn="dataGrid_AutoGeneratingColumn"
                        ShowGroupDropArea="True"
                        TableSummaryCellStyleSelector="{StaticResource styleSelector}"
                        ItemsSource="{Binding Orders}"
                        ColumnWidthMode="Star">
-    <syncfusion:SfDataGrid.TableSummaryRows>
-        <syncfusion:GridTableSummaryRow ShowSummaryInRow="False">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
-                                      Format="'Total UnitPrice : {Sum:c}'"
-                                      MappingName="OrderID"
-                                      SummaryType="DoubleAggregate" />
-                <syncfusion:GridSummaryColumn Name="CustomerCount"
-                                      Format="'Total Customer Count : {Count:d}'"
-                                      MappingName="CustomerID"
-                                      SummaryType="CountAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridTableSummaryRow>
-        <syncfusion:GridSummaryRow Title="Total Price :  {totalPrice}" ShowSummaryInRow="True">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="totalPrice"
-                                              Format="'{Sum:c}'"
-                                              MappingName="OrderID"
-                                              SummaryType="DoubleAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridSummaryRow>
-    </syncfusion:SfDataGrid.TableSummaryRows>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.TableSummaryRows>
+        <dataGrid:GridTableSummaryRow ShowSummaryInRow="False">
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="PriceAmount"
+                                Format="'Total UnitPrice : {Sum:c}'"
+                                MappingName="UnitPrice"
+                                SummaryType="DoubleAggregate" />
+                <dataGrid:GridSummaryColumn Name="ProductCount"
+                                Format="'Total Product Count : {Count:d}'"
+                                MappingName="ProductName"
+                                SummaryType="CountAggregate" />
+            </dataGrid:GridSummaryRow.SummaryColumns>
+        </dataGrid:GridTableSummaryRow>
+        <dataGrid:GridSummaryRow Title="Total Price :  {totalPrice}" ShowSummaryInRow="True">
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="totalPrice"
+                                        Format="'{Sum:c}'"
+                                        MappingName="UnitPrice"
+                                        SummaryType="DoubleAggregate" />
+            </dataGrid:GridSummaryRow.SummaryColumns>
+        </dataGrid:GridSummaryRow>
+    </dataGrid:SfDataGrid.TableSummaryRows>
+</dataGrid:SfDataGrid>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -601,9 +600,9 @@ public class SelectorClass : StyleSelector
         var cell = container as GridTableSummaryCell;
 
         //custom condition is checked.
-        if ((double)calculatedValue > 8500 && cell.ColumnBase.GridColumn.MappingName == "OrderID")
-            return App.Current.Resources["customTableSummary"] as Style;
-        return App.Current.Resources["customTableSummary1"] as Style;
+        if ((double)calculatedValue > 10 && cell.ColumnBase.GridColumn.MappingName == "UnitPrice")
+            return Application.Current.Resources["customTableSummary"] as Style;
+        return Application.Current.Resources["customTableSummary1"] as Style;
     }
 }
 
@@ -612,7 +611,7 @@ public class SelectorClass : StyleSelector
 
 Here, table summary cells are customized based on `TotalPrice` summary value.
 
-![Customizing Table Summary Cell Style in WinUI DataGrid](Conditional-Styling_images/winui-datagrid-table-summary-cell-customization.png)
+<img src="Conditional-Styling_images/winui-datagrid-table-summary-cell-customization.png" alt="Customizing Table Summary Cell Style in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ### Conditional styling of table summary cell based on column
 
@@ -624,47 +623,46 @@ Here, table summary cells are customized based on `TotalPrice` summary column.
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="styleSelector"/>
-    <Style TargetType="syncfusion:GridTableSummaryCell" x:Key="customTableSummary">
+    <Style TargetType="dataGrid:GridTableSummaryCell" x:Key="customTableSummary">
         <Setter Property="Foreground" Value="Red"/>
     </Style>
-    <Style TargetType="syncfusion:GridTableSummaryCell" x:Key="customTableSummary1">
+    <Style TargetType="dataGrid:GridTableSummaryCell" x:Key="customTableSummary1">
         <Setter Property="Foreground" Value="DarkBlue"/>
     </Style>
 </Application.Resources>
 
 
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
                        AllowEditing="True"
                        AllowGrouping="True"
-                       AutoGeneratingColumn="dataGrid_AutoGeneratingColumn"
                        ShowGroupDropArea="True"
                        TableSummaryCellStyleSelector="{StaticResource styleSelector}"
                        ItemsSource="{Binding Orders}"
                        ColumnWidthMode="Star">
-    <syncfusion:SfDataGrid.TableSummaryRows>
-        <syncfusion:GridTableSummaryRow ShowSummaryInRow="False">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="PriceAmount"
-                                      Format="'Total UnitPrice : {Sum:c}'"
-                                      MappingName="OrderID"
-                                      SummaryType="DoubleAggregate" />
-                <syncfusion:GridSummaryColumn Name="CustomerCount"
-                                      Format="'Total Customer Count : {Count:d}'"
-                                      MappingName="CustomerID"
-                                      SummaryType="CountAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridTableSummaryRow>
-        <syncfusion:GridSummaryRow Title="Total Price :  {totalPrice}" ShowSummaryInRow="True">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="totalPrice"
-                                              Format="'{Sum:c}'"
-                                              MappingName="OrderID"
-                                              SummaryType="DoubleAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridSummaryRow>
-    </syncfusion:SfDataGrid.TableSummaryRows>
-</syncfusion:SfDataGrid>{% endhighlight %}
+    <dataGrid:SfDataGrid.TableSummaryRows>
+        <dataGrid:GridTableSummaryRow ShowSummaryInRow="False">
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="PriceAmount"
+                                Format="'Total UnitPrice : {Sum:c}'"
+                                MappingName="UnitPrice"
+                                SummaryType="DoubleAggregate" />
+                <dataGrid:GridSummaryColumn Name="ProductCount"
+                                Format="'Total Product Count : {Count:d}'"
+                                MappingName="ProductName"
+                                SummaryType="CountAggregate" />
+            </dataGrid:GridSummaryRow.SummaryColumns>
+        </dataGrid:GridTableSummaryRow>
+        <dataGrid:GridSummaryRow Title="Total Price :  {totalPrice}" ShowSummaryInRow="True">
+            <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="totalPrice"
+                                        Format="'{Sum:c}'"
+                                        MappingName="UnitPrice"
+                                        SummaryType="DoubleAggregate" />
+            </dataGrid:GridSummaryRow.SummaryColumns>
+        </dataGrid:GridSummaryRow>
+    </dataGrid:SfDataGrid.TableSummaryRows>
+</dataGrid:SfDataGrid>{% endhighlight %}
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
@@ -673,16 +671,16 @@ public class SelectorClass : StyleSelector
         var cell = container as GridTableSummaryCell;
 
         // column name is checked.
-        if (cell.ColumnBase.GridColumn.MappingName == "OrderID")
-            return App.Current.Resources["customTableSummary"] as Style;
-        return App.Current.Resources["customTableSummary1"] as Style;
+        if (cell.ColumnBase.GridColumn.MappingName == "UnitPrice")
+            return Application.Current.Resources["customTableSummary"] as Style;
+        return Application.Current.Resources["customTableSummary1"] as Style;
     }
 }
 
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Table Summary Cell based on Column in WinUI DataGrid](Conditional-Styling_images/winui-datagrid-table-summary-column-customization.png)
+<img src="Conditional-Styling_images/winui-datagrid-table-summary-column-customization.png" alt="Customizing Table Summary Cell based on Column in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Table summary row style
 
@@ -696,15 +694,15 @@ The appearance of table summary row can be customized conditionally based on sum
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="styleSelector"/>
-    <Style TargetType="syncfusion:TableSummaryRowControl" x:Key="tableSummaryRowStyle">
+    <Style TargetType="dataGrid:TableSummaryRowControl" x:Key="tableSummaryRowStyle">
         <Setter Property="Background" Value="Bisque"/>
     </Style>
-    <Style TargetType="syncfusion:TableSummaryRowControl" x:Key="tableSummaryRowStyle1">
+    <Style TargetType="dataGrid:TableSummaryRowControl" x:Key="tableSummaryRowStyle1">
         <Setter Property="Background" Value="LightBlue"/>
     </Style>
 </Application.Resources>
 
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                         AutoGenerateColumns="True"
                         AllowEditing="True"
                         AllowGrouping="True"
@@ -712,33 +710,33 @@ The appearance of table summary row can be customized conditionally based on sum
                         TableSummaryRowStyleSelector="{StaticResource styleSelector}"
                         ItemsSource="{Binding Orders}"
                         ColumnWidthMode="Star">
-    <syncfusion:SfDataGrid.TableSummaryRows>
-        <syncfusion:GridTableSummaryRow Position="Top" ShowSummaryInRow="False">
-            <syncfusion:GridTableSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="price"
-                                        Format="'{Sum:c}'"
-                                        MappingName="OrderID"
-                                        SummaryType="DoubleAggregate" />
-                <syncfusion:GridSummaryColumn Name="customerID"
-                                        Format="'{Count:n0}'"
-                                        MappingName="CustomerID"
-                                        SummaryType="CountAggregate" />
-            </syncfusion:GridTableSummaryRow.SummaryColumns>
-        </syncfusion:GridTableSummaryRow>
-        <syncfusion:GridSummaryRow Title="Count : {count}, Total Price :  {totalPrice}" ShowSummaryInRow="True">
-            <syncfusion:GridSummaryRow.SummaryColumns>
-                <syncfusion:GridSummaryColumn Name="count"
-                                                Format="'{Count:n0}'"
-                                                MappingName="CustomerID"
-                                                SummaryType="DoubleAggregate" />
-                <syncfusion:GridSummaryColumn Name="totalPrice"
-                                        Format="'{Sum:c}'"
-                                        MappingName="OrderID"
-                                        SummaryType="DoubleAggregate" />
-            </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridSummaryRow>
-    </syncfusion:SfDataGrid.TableSummaryRows>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.TableSummaryRows>
+            <dataGrid:GridTableSummaryRow Position="Top" ShowSummaryInRow="False">
+                <dataGrid:GridTableSummaryRow.SummaryColumns>
+                    <dataGrid:GridSummaryColumn Name="price"
+                                    Format="'{Sum:c}'"
+                                    MappingName="UnitPrice"
+                                    SummaryType="DoubleAggregate" />
+                    <dataGrid:GridSummaryColumn Name="ProductCount"
+                                    Format="'{Count:n0}'"
+                                    MappingName="ProductName"
+                                    SummaryType="CountAggregate" />
+                </dataGrid:GridTableSummaryRow.SummaryColumns>
+            </dataGrid:GridTableSummaryRow>
+            <dataGrid:GridSummaryRow Title="Total Price :  {totalPrice} , Product Count : {count}" ShowSummaryInRow="True">
+                <dataGrid:GridSummaryRow.SummaryColumns>
+                    <dataGrid:GridSummaryColumn Name="count"
+                                            Format="'{Count:n0}'"
+                                            MappingName="ProductName"
+                                            SummaryType="DoubleAggregate" />
+                    <dataGrid:GridSummaryColumn Name="totalPrice"
+                                    Format="'{Sum:c}'"
+                                    MappingName="UnitPrice"
+                                    SummaryType="DoubleAggregate" />
+                </dataGrid:GridSummaryRow.SummaryColumns>
+            </dataGrid:GridSummaryRow>
+    </dataGrid:SfDataGrid.TableSummaryRows>
+</dataGrid:SfDataGrid>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -752,9 +750,9 @@ public class SelectorClass : StyleSelector
         var calculatedValue = aggregateValue.Value;
 
         //custom condition is checked.
-        if (aggregateValue.Key != "Count" && (double)calculatedValue < 0)
-            return App.Current.Resources["tableSummaryRowStyle"] as Style;
-        return App.Current.Resources["tableSummaryRowStyle1"] as Style;
+        if (aggregateValue.Key != "Count")
+            return Application.Current.Resources["tableSummaryRowStyle"] as Style;
+        return Application.Current.Resources["tableSummaryRowStyle1"] as Style;
     }
 }
 
@@ -763,7 +761,7 @@ public class SelectorClass : StyleSelector
 
 Here, table summary rows are customized based on `TotalPrice` summary value.
 
-![Customizing Table Summary Row Style in WinUI DataGrid](Conditional-Styling_images/winui-datagrid-table-summary-row-customization.png)
+<img src="Conditional-Styling_images/winui-datagrid-table-summary-row-customization.png" alt="Customizing Table Summary Cell based on Column in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Table summary cell alignment based on column
 
@@ -775,15 +773,15 @@ Here, horizontal alignment of table summary cells are changed based on column na
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="styleSelector"/>
-    <Style TargetType="syncfusion:GridTableSummaryCell" x:Key="customTableSummary">
+    <Style TargetType="dataGrid:GridTableSummaryCell" x:Key="customTableSummary">
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
     </Style>
-    <Style TargetType="syncfusion:GridTableSummaryCell" x:Key="customTableSummary1">
+    <Style TargetType="dataGrid:GridTableSummaryCell" x:Key="customTableSummary1">
         <Setter Property="HorizontalContentAlignment" Value="Right"/>
     </Style>
 </Application.Resources>
 
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                                AutoGenerateColumns="True"
                                AllowEditing="True"
                                AllowGrouping="True"
@@ -791,33 +789,33 @@ Here, horizontal alignment of table summary cells are changed based on column na
                                TableSummaryCellStyleSelector="{StaticResource styleSelector}"
                                ItemsSource="{Binding Orders}"
                                ColumnWidthMode="Star">
-            <syncfusion:SfDataGrid.TableSummaryRows>
-                <syncfusion:GridTableSummaryRow Position="Top" ShowSummaryInRow="False">
-                    <syncfusion:GridTableSummaryRow.SummaryColumns>
-                        <syncfusion:GridSummaryColumn Name="price"
-                                                Format="'{Sum:c}'"
-                                                MappingName="OrderID"
-                                                SummaryType="DoubleAggregate" />
-                        <syncfusion:GridSummaryColumn Name="customerID"
+            <dataGrid:SfDataGrid.TableSummaryRows>
+                <dataGrid:GridTableSummaryRow Position="Top" ShowSummaryInRow="False">
+                    <dataGrid:GridTableSummaryRow.SummaryColumns>
+                        <dataGrid:GridSummaryColumn Name="price"
+                                        Format="'{Sum:c}'"
+                                        MappingName="UnitPrice"
+                                        SummaryType="DoubleAggregate" />
+                        <dataGrid:GridSummaryColumn Name="ProductCount"
+                                        Format="'{Count:n0}'"
+                                        MappingName="ProductName"
+                                        SummaryType="CountAggregate" />
+                    </dataGrid:GridTableSummaryRow.SummaryColumns>
+                </dataGrid:GridTableSummaryRow>
+                <dataGrid:GridSummaryRow Title="Total Price :  {totalPrice} , Product Count : {count}" ShowSummaryInRow="True">
+                    <dataGrid:GridSummaryRow.SummaryColumns>
+                        <dataGrid:GridSummaryColumn Name="count"
                                                 Format="'{Count:n0}'"
-                                                MappingName="CustomerID"
-                                                SummaryType="CountAggregate" />
-                    </syncfusion:GridTableSummaryRow.SummaryColumns>
-                </syncfusion:GridTableSummaryRow>
-                <syncfusion:GridSummaryRow Title="Count : {count}, Total Price :  {totalPrice}" ShowSummaryInRow="True">
-                    <syncfusion:GridSummaryRow.SummaryColumns>
-                        <syncfusion:GridSummaryColumn Name="count"
-                                                Format="'{Count:n0}'"
-                                                MappingName="CustomerID"
+                                                MappingName="ProductName"
                                                 SummaryType="DoubleAggregate" />
-                        <syncfusion:GridSummaryColumn Name="totalPrice"
-                                                Format="'{Sum:c}'"
-                                                MappingName="OrderID"
-                                                SummaryType="DoubleAggregate" />
-                    </syncfusion:GridSummaryRow.SummaryColumns>
-                </syncfusion:GridSummaryRow>
-            </syncfusion:SfDataGrid.TableSummaryRows>
-        </syncfusion:SfDataGrid>
+                        <dataGrid:GridSummaryColumn Name="totalPrice"
+                                        Format="'{Sum:c}'"
+                                        MappingName="UnitPrice"
+                                        SummaryType="DoubleAggregate" />
+                    </dataGrid:GridSummaryRow.SummaryColumns>
+                </dataGrid:GridSummaryRow>
+            </dataGrid:SfDataGrid.TableSummaryRows>
+        </dataGrid:SfDataGrid>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -828,16 +826,16 @@ public class SelectorClass : StyleSelector
         var cell = container as GridTableSummaryCell;
 
         // column name is checked.
-        if (cell.ColumnBase.GridColumn.MappingName == "OrderID")
-            return App.Current.Resources["customTableSummary"] as Style;
-        return App.Current.Resources["customTableSummary1"] as Style;
+        if (cell.ColumnBase.GridColumn.MappingName == "UnitPrice")
+            return Application.Current.Resources["customTableSummary"] as Style;
+        return Application.Current.Resources["customTableSummary1"] as Style;
     }
 }
 
 {% endhighlight %}
 {% endtabs %}
 
-Here, horizontal alignment of `OrderID` column alone left, other column horizontal alignment are changed into right.
+Here, horizontal alignment of `UnitPrice` column alone center, other column horizontal alignment are changed into right.
 
-![WinUI DataGrid Summary Column Alignment](Conditional-Styling_images/winui-datagrid-summary-column-alignment.png)
+<img src="Conditional-Styling_images/winui-datagrid-summary-column-alignment.png" alt="WinUI DataGrid Summary Column Alignment" width="100%" Height="Auto"/>
 

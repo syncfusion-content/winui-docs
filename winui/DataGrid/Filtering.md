@@ -170,11 +170,11 @@ By default, both [CheckboxFilter](https://help.syncfusion.com/cr/winui/Syncfusio
 
 SfDataGrid with Checkbox Filter View:
       
-![WinUI DataGrid with Filter like Excel](Filtering_images/winui-datagrid-filter-like-excel.png)
+<img src="Filtering_images/winui-datagrid-filter-like-excel.png" alt="WinUI DataGrid with Filter like Excel" width="100%" Height="Auto"/>
         
 SfDataGrid with Advanced Filter View:
     
-![WinUI DataGrid with Advanced Filter](Filtering_images/winui-datagrid-advanced-filter.png)
+<img src="Filtering_images/winui-datagrid-advanced-filter.png" alt="WinUI DataGrid with Advanced Filter" width="100%" Height="Auto"/>
 
 ## Choose between built-in UI Views
 
@@ -243,7 +243,7 @@ You can skip the `GridFilterControl` styling for particular column from `SfDataG
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-    <Style x:Key="filterControlStyle" TargetType="syncfusion:GridFilterControl">
+    <Style x:Key="filterControlStyle" TargetType="dataGrid:GridFilterControl">
         <Setter Property="FilterMode" Value="AdvancedFilter" />
     </Style>
 </Page.Resources> 
@@ -407,12 +407,12 @@ By default, casing is not considered while filtering. Because, filter predicates
 
 {% tabs %}
 {% highlight xaml %}
-<Style TargetType="syncfusion:AdvancedFilterControl">
+<Style x:Key="advancedFilterControlStyle" TargetType="dataGrid:AdvancedFilterControl">
     <Setter Property="CanGenerateUniqueItems" Value="False" />
 </Style>
-
-<Style x:Key="filterControlStyle" TargetType="syncfusion:GridFilterControl">
+<Style x:Key="filterControlStyle" TargetType="dataGrid:GridFilterControl">
     <Setter Property="FilterMode" Value="AdvancedFilter" />
+    <Setter Property="AdvancedFilterStyle" Value="{StaticResource advancedFilterControlStyle}" />
 </Style>
 
 <dataGrid:SfDataGrid x:Name="sfDataGrid"
@@ -433,7 +433,7 @@ To filter the null values, you need to set `AllowBlankFilters` property as `True
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:GridTextColumn AllowBlankFilters="True" MappingName="Country" />
+<dataGrid:GridTextColumn AllowBlankFilters="True" MappingName="Country" />
 {% endhighlight %}
 {% highlight c# %}
 sfDataGrid.Columns["Country"].AllowBlankFilters = true;
@@ -454,7 +454,7 @@ By default, filters are applied to the columns when OK button is clicked in UI f
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:GridTextColumn ImmediateUpdateColumnFilter="True" MappingName="OrderID" />
+<dataGrid:GridTextColumn ImmediateUpdateColumnFilter="True" MappingName="OrderID" />
 {% endhighlight %}
 {% highlight c# %}
 sfDataGrid.Columns["OrderID"].ImmediateUpdateColumnFilter = true;
@@ -465,11 +465,11 @@ Here, the OK and Cancel buttons are unavailable and Done button is available to 
 
 Checkbox Filter with `ImmediateUpdateColumnFilter` is `True`
 
-![CheckBox Filter with Immediate Filter in WinUI DataGrid](Filtering_images/winui-datagrid-immediate-checkbox-filter.png)
+<img src="Filtering_images/winui-datagrid-immediate-checkbox-filter.png" alt="CheckBox Filter with Immediate Filter in WinUI DataGrid" width="100%" Height="Auto"/>
 
 Advanced Filter with `ImmediateUpdateColumnFilter` is `True`
 
-![Advanced Filter with Immediate Filter in WinUI DataGrid](Filtering_images/winui-datagrid-immediate-advanced-filter.png)
+<img src="Filtering_images/winui-datagrid-immediate-advanced-filter.png" alt="Advanced Filter with Immediate Filter in WinUI DataGrid" width="100%" Height="Auto"/>
 
 N> In Checkbox Filter, the `SelectAll` option is not reflected in the filter updates if `ImmediateUpdateColumnFilter` is `True`.
 
@@ -480,23 +480,17 @@ In UI filtering, records are filtered based on actual value by default. If you w
 {% tabs %}
 {% highlight xaml %}
 
-xmlns:core="using:Syncfusion.UI.Xaml.Core"
+<dataGrid:GridDateColumn  MappingName="OrderDate" HeaderText="Order Date" ColumnFilter="DisplayText"/>
 
-<Page.Resources>
-    <core:StringFormatConverter x:Key="stringFormatConverter" />
-</Page.Resources>
-
-<dataGrid:GridTextColumn DisplayBinding="{Binding OrderDate, Converter={StaticResource stringFormatConverter}, ConverterParameter=\{0:dd/MM/yyyy\}}"
-                           HeaderText="Order Date" MappingName="OrderDate"  ColumnFilter="DisplayText" />
 {% endhighlight %}
 {% highlight c# %}
 sfDataGrid.Columns["OrderDate"].ColumnFilter = ColumnFilter.DisplayText;
 {% endhighlight %}
 {% endtabs %}
 
-Consider in the following dataGrid, first and second records have same display value for OrderDate column but both have different actual value (E.g. 2/10/2010 12:00:00 AM and 2/10/2010 6:30:00 PM).
+Consider in the following dataGrid, first and second records have same display value for OrderDate column but both have different actual value (E.g. 10/2/2010 12:00:00 AM and 10/2/2010 6:30:00 PM).
 
-![Filter WinUI DataGrid using Actual Value instead of Formatted String](Filtering_images/winui-datagrid-value-instead-of-formatting-string.png)
+<img src="Filtering_images/winui-datagrid-value-instead-of-formatting-string.png" alt="Filter WinUI DataGrid using Actual Value instead of Formatted String" width="100%" Height="Auto"/>
 
 By default, based on the actual value only filter will be applied. So it will consider both values as different. And while opening filter popup, both values will be displayed like below.
 
@@ -508,7 +502,7 @@ If you set `ColumnFilter` as `DisplayText`, display value only will be considere
 
 After filtering, both records having the same OrderDate display value will be displayed in view.
 
-![Filtered same Record Values in WinUI DataGrid](Filtering_images/winui-datagrid-same-record-values.png)
+<img src="Filtering_images/winui-datagrid-same-record-values.png" alt="Filtered same Record Values in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Events
 
@@ -598,17 +592,13 @@ By default, in SfDataGrid image path is shown inside the [CheckBoxFilterControl]
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
-    <local:StringToImageConverter x:Key="stringToImageConverter" />
-</Page.Resources>
-
-<dataGrid:GridTextColumn MappingName="Country">
-    <dataGrid:GridTextColumn.FilterPopupStyle>
+<dataGrid:GridImageColumn  MappingName="Flag" HeaderText="Country" ImageHeight="50" ImageWidth="50" TextAlignment="Center">
+    <dataGrid:GridImageColumn.FilterPopupStyle>
             <Style TargetType="dataGrid:GridFilterControl">
                 <Setter Property="CheckboxFilterStyle">
                     <Setter.Value>
                         <Style TargetType="dataGrid:CheckboxFilterControl">
-                            <Setter Property="Background" Value="LightGray"/>
+                            <Setter Property="Background" Value="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}"/>
                             <Setter Property="ItemTemplate">
                                 <Setter.Value>
                                     <DataTemplate>
@@ -621,9 +611,7 @@ By default, in SfDataGrid image path is shown inside the [CheckBoxFilterControl]
                                                   IsChecked="{Binding IsSelected, Mode=TwoWay}">
                                             <CheckBox.ContentTemplate>
                                                 <DataTemplate>
-                                                    <Image Source="{Binding Path=ActualValue, Converter={StaticResource stringToImageConverter}}"
-                                                       HorizontalAlignment="Left"
-                                                       Height="25"/>
+                                                    <Image Source="{Binding Path=ActualValue}" HorizontalAlignment="Left" Height="25"/>
                                                 </DataTemplate>
                                             </CheckBox.ContentTemplate>
                                         </CheckBox>
@@ -634,34 +622,13 @@ By default, in SfDataGrid image path is shown inside the [CheckBoxFilterControl]
                     </Setter.Value>
                 </Setter>
             </Style>
-        </dataGrid:GridTextColumn.FilterPopupStyle>
-        <dataGrid:GridTextColumn.CellTemplate>
-            <DataTemplate>
-                <Grid>
-                    <Image Source="{Binding Path=Country, Converter={StaticResource stringToImageConverter}}"/>
-                </Grid>
-            </DataTemplate>
-        </dataGrid:GridTextColumn.CellTemplate>
-</dataGrid:GridTextColumn>
-{% endhighlight %}
-{% highlight c# %}
-public class StringToImageConverter : IValueConverter
-{     
-    public object Convert(object value, Type targetType, object parameter, string language)
-    {
-        string imagename = value as string;
-        return new BitmapImage(new Uri("ms-appx:///Images/" + imagename, UriKind.Absolute));
-    }
-        
-    public object ConvertBack(object value, Type targetType, object parameter, string language)
-    {
-        return null;
-    }
-}
+    </dataGrid:GridImageColumn.FilterPopupStyle>
+</dataGrid:GridImageColumn>
+
 {% endhighlight %}
 {% endtabs %}
 
-![Column Filter with Image in WinUI DataGrid](Filtering_images/winui-datagrid-image-column-filter.png)
+<img src="Filtering_images/winui-datagrid-image-column-filter.png" alt="Column Filter with Image in WinUI DataGrid" width="100%" Height="Auto"/>
 
 
 ## Functionality Customization
@@ -764,7 +731,7 @@ Sort Options can be collapsed by setting [SortOptionVisibility](https://help.syn
 
 {% tabs %}
 {% highlight xaml %}
-<Style TargetType="syncfusion:GridFilterControl" x:Key="gridFilterControlStyle">
+<Style TargetType="dataGrid:GridFilterControl" x:Key="gridFilterControlStyle">
     <Setter Property="SortOptionVisibility" Value="Collapsed"/>
 </Style>
 
@@ -806,7 +773,7 @@ You can customize the FilterPopup size using [FilterPopupHeight](https://help.sy
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-    <Style TargetType="Syncfusion:GridFilterControl">
+    <Style TargetType="dataGrid:GridFilterControl">
         <Setter Property="FontSize" Value="14" />
         <Setter Property="FontWeight" Value="Normal" />
         <Setter Property="FilterPopupHeight" Value="620" />
@@ -815,7 +782,7 @@ You can customize the FilterPopup size using [FilterPopupHeight](https://help.sy
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Filter Popup in WinUI DataGrid](Filtering_images/winui-datagrid-filter-popup-customization.png)
+<img src="Filtering_images/winui-datagrid-filter-popup-customization.png" alt="Customizing Filter Popup in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ### Changing filter icon style after applying filters
 
