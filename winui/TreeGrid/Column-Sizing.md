@@ -198,7 +198,7 @@ You can change the `font settings` for column width calculation by setting [Colu
 {% highlight c# %}
 this.treeGrid.ColumnSizer.FontSize = 10.0;
 this.treeGrid.ColumnSizer.FontFamily = new FontFamily("TimesNewRoman");
-this.treeGrid.ColumnSizer.Margin = ThicknessHelper.FromLenghts(9, 3, 1, 3);
+this.treeGrid.ColumnSizer.Margin = new Thickness(9, 3, 1, 3);
 {% endhighlight %}
 {% endtabs %}
 
