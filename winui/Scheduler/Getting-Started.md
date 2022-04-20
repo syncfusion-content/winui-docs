@@ -123,7 +123,7 @@ Here are the steps to render meetings using the [WinUI Scheduler](https://help.s
 Create a custom class `Meeting` with mandatory fields `From,` `To,` and `EventName`.
 
 {% tabs %}
-{% highlight c# tabtitle="Meeting.cs" hl_lines="6" %}  
+{% highlight c# tabtitle="Meeting.cs" %}  
     /// <summary>    
     /// Represents the custom data properties.    
     /// </summary>    
@@ -148,7 +148,7 @@ N> Inherit this class from the `INotifyPropertyChanged` for dynamic changes in c
 By setting `From` and `To` of Meeting class, schedule meetings for a specific day. Change the `Subject` and `color` of the appointment using the `EventName` and `Color` properties. Define the list of custom appointments in a separate class of `ViewModel`.
 
 {% tabs %}
-{% highlight c# tabtitle="SchedulerViewModel.cs" hl_lines="6" %}
+{% highlight c# tabtitle="SchedulerViewModel.cs" %}
 public class SchedulerViewModel
 {
     /// <summary>
@@ -360,7 +360,7 @@ Schedule.AppointmentMapping = appointmentMapping;
 Create meetings of type `ObservableCollection<Appointments>` and assign those appointments collection `Appointments` to the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ItemsSource) property of `SfScheduler`.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4 8" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 6" %}
 
 <Grid>
     <Grid.DataContext>

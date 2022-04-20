@@ -20,7 +20,7 @@ You can also restrict the width of dropdown date spinner cells with particular p
 N> `ItemWidth` values must be within the `MinItemWidth` and `MaxItemWidth`values. Otherwise, `ItemWidth` will take the closest value from `MinItemWidth` or `MaxItemWidth` value.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3 4 5 6" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2 3 4 5" %}
 
 <editors:SfDatePicker x:Name="sfDatePicker" 
                       MinItemWidth="70" 
@@ -30,7 +30,7 @@ N> `ItemWidth` values must be within the `MinItemWidth` and `MaxItemWidth`values
                       />
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3 4 5 6" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4 5" %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.MinItemWidth = 70;
@@ -50,7 +50,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can customize all the dropdown date spinner cells by using the `ItemContainerStyle` properties. The `DataContext` of `ItemContainerStyle` or `ItemTemplate` properties is [`SpinnerItem`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SpinnerItem.html).
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4 5 6 7 8 9" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3 4 5 6 7 8" %}
 
 <editors:SfDatePicker
     x:Name="sfDatePicker">
@@ -202,14 +202,14 @@ Here, date format, header and cell size of the dropdown date field is customized
 N> This will effective only for the date field cells.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
 <editors:SfDatePicker 
                       x:Name="sfDatePicker"
                       DateFieldPrepared="SfDatePicker_DateFieldPrepared"/>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.DateFieldPrepared += SfDatePicker_DateFieldPrepared;

@@ -32,7 +32,7 @@ To add `Calendar` control manually in XAML , follow the below steps.
 4. Initialize the `Calendar` control.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="9 13" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8 12" %}
 
 <Window
     x:Class="GettingStarted.MainWindow"
@@ -65,7 +65,7 @@ To add the `Calendar` control manually in C#, follow the below steps.
 4. Initialize the `Calendar` control.
 
 {% tabs %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 15 16" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="1 14 15" %}
 
 using Syncfusion.UI.Xaml.Calendar;
 
@@ -105,7 +105,7 @@ If you want to restrict date selection or select multiple dates, set [`Selection
 * **Range** -  Allows to select range of dates.
 
 {% tabs %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendar sfCalendar= new SfCalendar();
 sfCalendar.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06));
@@ -124,13 +124,13 @@ You can select one or multiple dates from different month, year or decade or cen
 N> `SelectedDates` property collection will be empty if the `SelectionMode` value is **None**. 
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <calendar:SfCalendar Name="sfCalendar" 
                      SelectionMode="Multiple" />
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendar sfCalendar= new SfCalendar();
 sfCalendar.SelectionMode = CalendarSelectionMode.Multiple;
@@ -149,13 +149,13 @@ You can select a range of dates in `Calendar` control by changing the [Selection
 N> `SelectedDates` property collection will be empty if the `SelectionMode` value is  **None**. 
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <calendar:SfCalendar Name="sfCalendar" 
                      SelectionMode="Range" />
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendar sfCalendar= new SfCalendar();
 sfCalendar.SelectionMode = CalendarSelectionMode.Range;
@@ -173,14 +173,14 @@ You will be notified when selected date is changed in `Calendar` by using [Selec
 * `NewDate` - Gets a date which is currently selected.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <calendar:SfCalendar Name="sfCalendar"
                      SelectedDateChanged="SfCalendar_SelectedDateChanged">
 </calendar:SfCalendar>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.SelectedDateChanged += SfCalendar_SelectedDateChanged;

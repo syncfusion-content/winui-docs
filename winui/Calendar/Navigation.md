@@ -16,14 +16,14 @@ You can easily navigate to the month, year, decade, or century views to select d
 You can navigate to the month containing required date using [`SetDisplayDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SetDisplayDate_System_DateTimeOffset_) method. To navigate to the required date of any month or year, pass the **DateTime** value in `SetDisplayDate` method argument.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <calendar:SfCalendar x:Name="calendar" 
                      Loaded="calendar_Loaded">
 </calendar:SfCalendar>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 private void calendar_Loaded(object sender, RoutedEventArgs e)
 {
@@ -38,7 +38,7 @@ private void calendar_Loaded(object sender, RoutedEventArgs e)
 You can restrict navigation within a minimum and maximum views by using [MinDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MinDisplayMode) and [MaxDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MaxDisplayMode) properties. This will be useful when your date range is smaller and you don’t want to show century view. By default, the value of `MinDisplayMode` is **Month** and `MaxDisplayMode` is **Century**.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4 5" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4" %}
 
 <calendar:SfCalendar x:Name="sfCalendar"
                      MinDisplayMode="Month"
@@ -46,7 +46,7 @@ You can restrict navigation within a minimum and maximum views by using [MinDisp
                      DisplayMode="Month"/>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3 4 5" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4" %}
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.MinDisplayMode = CalendarDisplayMode.Month;
@@ -65,7 +65,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can restrict users to select date or dates within specific views (example : choosing valid date for credit card) in `Calendar` control using the `MinDisplayMode` and `MaxDisplayMode` properties.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3" %}
 
 <calendar:SfCalendar x:Name="sfCalendar" 
                              MinDisplayMode="Year"
@@ -73,7 +73,7 @@ You can restrict users to select date or dates within specific views (example : 
                              />
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3 4" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.MinDisplayMode = CalendarDisplayMode.Year;
@@ -89,14 +89,14 @@ sfCalendar.MaxDisplayMode = CalendarDisplayMode.Decade;
 You can navigate within a view using mouse scroll or by navigation button in `Calendar` control. The navigation direction animation can be changed by using the [`NavigationDirection`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_NavigationDirection) property value. By default, the value of `NavigationDirection` property is **Vertical**.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <calendar:SfCalendar x:Name="sfCalendar"
                      NavigationDirection="Horizontal"
                      />
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.NavigationDirection = Orientation.Horizontal;

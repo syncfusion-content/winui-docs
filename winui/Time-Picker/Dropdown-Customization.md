@@ -55,14 +55,14 @@ You can hide the dropdown button in `Time Picker` by setting the [`ShowDropDownB
 N> To open a dropdown time spinner, press the `Alt` + `Down Arrow` keys.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
 <editors:SfTimePicker  
                       x:Name="sfTimePicker"
                       ShowDropDownButton="False"/>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.ShowDropDownButton = false;
@@ -81,14 +81,14 @@ You can change the alignment of the dropdown time spinner as full, center, left,
 N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then `Time Picker` smartly shifts the spinner alignment.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
 <editors:SfTimePicker 
                       x:Name="sfTimePicker"
                       DropDownPlacement="BottomEdgeAlignedLeft" />
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAlignedLeft;
@@ -105,14 +105,14 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can open or close the dropdown time spinner programmatically by setting [`IsOpen`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_IsOpen) property value as **true** or **false**. The default value of `IsOpen` property is **false**.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
 
 <editors:SfTimePicker 
                       x:Name="sfTimePicker"
                       IsOpen="True"/>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.IsOpen = true;
@@ -129,14 +129,14 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can change the height of dropdown time spinner by using the [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. Based on the value of `DropDownHeight`, `ItemWidth` and `ItemHeight` properties, particular time cells to be visible. The default value of `DropDownHeight` property is `NaN`.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
 <editors:SfTimePicker 
                       x:Name="sfTimePicker"
                       DropDownHeight="200" />
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.DropDownHeight = 200;
@@ -155,14 +155,14 @@ You can change the number of dropdown cells to be shown in the dropdown time spi
 N> When `DropDownHeight` and `VisibleItemsCount` properties are set, `VisibleItemsCount` property have higher precedence.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
 <editors:SfTimePicker  
                       x:Name="sfTimePicker"
                       VisibleItemsCount="5" />
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.VisibleItemsCount = 5;

@@ -455,7 +455,7 @@ this.Schedule.DaysViewSettings.ViewHeaderHeight = 100;
 Customize the default appearance of view header by setting the [ViewHeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate) property of [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) in SfScheduler.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="32" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="33" %}
 <Grid>
     <Grid.Resources>
         <DataTemplate x:Key="viewHeaderTemplate">

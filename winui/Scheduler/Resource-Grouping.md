@@ -261,7 +261,7 @@ this.Schedule.ResourceCollection = ResourceCollection;
 Associate the scheduler [ResourceMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ResourceMapping.html) to the custom appointment by mapping resource [Id](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Id) in the [ResourceIdCollection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_ResourceIdCollection) property of [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html). The custom appointments associated with the scheduler resources will be displayed when the `ResourceGroupType` is set to `Resource` or `Date.` Also assign the resources to recurrence appointments.
 
 {% tabs %}
-{% highlight c# tabtitle="Meeting.cs" hl_lines="6" %}
+{% highlight c# tabtitle="Meeting.cs" %}
 /// <summary>   
 /// Represents the custom data properties.   
 /// </summary> 
@@ -572,7 +572,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler
 #### Customize resource appearance using ResourceHeaderTemplateSelector
 
 {%tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="49" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="48" %}
 <Grid>
    <Grid.Resources>
         <DataTemplate  x:Key="DayViewResourceTemplate">
@@ -624,7 +624,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler
     
 </Grid>
 {% endhighlight %}
-{% highlight c# tabtitle="ResourceTemplateSelector.cs" hl_lines="6" %}
+{% highlight c# tabtitle="ResourceTemplateSelector.cs" %}
 public class ResourceTemplateSelector : DataTemplateSelector
 {
    /// <summary>

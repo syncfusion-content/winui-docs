@@ -37,7 +37,7 @@ class ViewModel
 Add the `Syncfusion.UI.Xaml.Calendar` namespace reference in code-behind.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4 8 9 10 11 12 13" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3 7 8 9 10 11 12" %}
 
 <Grid>
     <Grid.DataContext>

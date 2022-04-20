@@ -16,7 +16,7 @@ This section describes about various dropdown header customization options avail
 You can add a hints in dropdown header by using the [`DropDownHeader`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_DropDownHeader) property. The dropdown hints will be shown only by setting the [`ShowDropDownHeader`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_ShowDropDownHeader) property values as `true`. Otherwise, dropdown header will not be shown. The default value of `DropDownHeader` property is `null` and `ShowDropDownHeader` property is `false`.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3 4" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2 3" %}
 
 <editors:SfTimePicker x:Name="sfTimePicker"
                       DropDownHeader="Select the Time" 
@@ -24,7 +24,7 @@ You can add a hints in dropdown header by using the [`DropDownHeader`](https://h
                       />
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3 4" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.DropDownHeader = "Select the Time";
@@ -83,14 +83,14 @@ If you want to hide the dropdown hour, minute and meridiem field spinner's colum
 N> To customize the column headers, refer the [Customize the columns in dropdown spinner](https://help.syncfusion.com/winui/time-picker/dropdown-spinner-customization#customize-the-columns-in-dropdown-spinner) topic.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
 <editors:SfTimePicker 
                       x:Name="sfTimePicker"
                       ShowColumnHeaders="False"/>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.ShowColumnHeaders = false;

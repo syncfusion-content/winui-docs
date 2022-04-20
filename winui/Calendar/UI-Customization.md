@@ -16,14 +16,14 @@ This section describes about the various customization options available in [Cal
 You can hide the days that are out of the scope of current view by setting the [OutOfScopeVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_OutOfScopeVisibility) property value as **Hidden**. The default value of `OutOfScopeVisibility` property is **Enabled**.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <calendar:SfCalendar x:Name="sfCalendar"
                      OutOfScopeVisibility="Hidden" 
                      />
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.OutOfScopeVisibility = OutOfScopeVisibility.Hidden;
