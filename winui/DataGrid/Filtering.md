@@ -423,7 +423,7 @@ By default, casing is not considered while filtering. Because, filter predicates
 {% endhighlight %}
 {% endtabs %}
 
-![Improve the performance while applying filter in WPF DataGrid](Filtering_images/winui-datagrid-filtering-performance.png)
+<img src="Filtering_images/winui-datagrid-filtering-performance.png" alt="Improve the performance while applying filter in WPF DataGrid" width="Auto" Height="Auto"/>
 
 By default, `CanGenerateUniqueItems` is `True`. So all the unique items in the column are loaded in the AdvancedFilter ComboBox that allows you to select the value easily from the combo box and filter it.
 
@@ -442,11 +442,11 @@ sfDataGrid.Columns["Country"].AllowBlankFilters = true;
 
 Checkbox Filter with `AllowBlankFilters` as `True`
 
-![Filter Null Values using CheckBox Filter in WinUI DataGrid](Filtering_images/winui-datagrid-filter-null-values.png)
+<img src="Filtering_images/winui-datagrid-filter-null-values.png" alt="Filter Null Values using CheckBox Filter in WinUI DataGrid" width="Auto" Height="Auto"/>
 
 Advanced Filter with `AllowBlankFilters` as `True`
 
-![Filter Null Values using Advanced Filter in WinUI DataGrid](Filtering_images/winui-datagrid-null-values.png)
+<img src="Filtering_images/winui-datagrid-null-values.png" alt="Filter Null Values using Advanced Filter in WinUI DataGrid" width="Auto" Height="Auto"/>
 
 ## Instant Filtering
 
@@ -494,7 +494,7 @@ Consider in the following dataGrid, first and second records have same display v
 
 By default, based on the actual value only filter will be applied. So it will consider both values as different. And while opening filter popup, both values will be displayed like below.
 
-![Filtering WinUI DataGrid based on Formatted String](Filtering_images/winui-datagrid-filtering-format-string.png)
+<img src="Filtering_images/winui-datagrid-filtering-format-string.png" alt="Filtering WinUI DataGrid based on Formatted String" width="Auto" Height="Auto"/>
 
 If you set `ColumnFilter` as `DisplayText`, display value only will be considered for filtering. So filter popup will be shown like below.
 
@@ -743,7 +743,7 @@ Sort Options can be collapsed by setting [SortOptionVisibility](https://help.syn
 {% endhighlight %}
 {% endtabs %}
 
-![Collapse sort option from filter popup in WinUI DataGrid](Filtering_images/winui-datagrid-collapse-filter-popup.png)
+<img src="Filtering_images/winui-datagrid-collapse-filter-popup.png" alt="Collapse sort option from filter popup in WinUI DataGrid" width="Auto" Height="Auto"/>
 
 ### Customizing Sort Options text
 
@@ -764,7 +764,7 @@ void sfDataGrid_FilterItemsPopulating(object sender, GridFilterItemsPopulatingEv
 {% endhighlight %}
 {% endtabs %}
 
-![Customized Sort Option Text from Filter Popup in WinUI DataGrid](Filtering_images/winui-datagrid-sorting-customization.png)
+<img src="Filtering_images/winui-datagrid-sorting-customization.png" alt="Customized Sort Option Text from Filter Popup in WinUI DataGrid" width="Auto" Height="Auto"/>
 
 ### Customize the FilterPopup size using GridFilterControl style
 
