@@ -498,7 +498,7 @@ By default, based on the actual value only filter will be applied. So it will co
 
 If you set `ColumnFilter` as `DisplayText`, display value only will be considered for filtering. So filter popup will be shown like below.
 
-![Filter based on actual value in WinUI DataGrid](Filtering_images/winui-datagrid-filter-actual-value.png)
+<img src="Filtering_images/winui-datagrid-filter-actual-value.png" alt="Filter based on actual value in WinUI DataGrid" width="Auto" Height="Auto"/>
 
 After filtering, both records having the same OrderDate display value will be displayed in view.
 
