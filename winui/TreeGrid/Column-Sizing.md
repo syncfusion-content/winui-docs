@@ -324,7 +324,6 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 		<treeGrid:TreeGridNumericColumn HeaderText="Employee ID" 
 									MappingName="ID" 
 									local:StarRatio.ColumnRatio="1" />
-        <treeGrid:TreeGridTextColumn HeaderText="Title" MappingName="Title" />
         <treeGrid:TreeGridNumericColumn HeaderText="Salary" MappingName="Salary" DisplayNumberFormat="C2"/>
         <treeGrid:TreeGridNumericColumn HeaderText="Reports To" MappingName="ReportsTo" />
     </treeGrid:SfTreeGrid.Columns>

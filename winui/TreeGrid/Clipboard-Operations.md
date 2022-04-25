@@ -36,7 +36,6 @@ You can use the IncludeHeaders, IncludeFormat, and IncludeHiddenColumn options a
 <treeGrid:SfTreeGrid
                 Name="treeGrid"
                 CopyOption="CopyData,IncludeHeaders"
-                AllowFiltering="True"
                 AutoExpandMode="RootNodesExpanded"
                 AutoGenerateColumns="False"
                 ChildPropertyName="Children"
@@ -75,7 +74,6 @@ You can use the ExcludeFirstLine and IncludeHiddenColumn options along with the 
                 Name="treeGrid"
                 CopyOption="CopyData,IncludeHeaders"
                 PasteOption="PasteData,ExcludeFirstLine"
-                AllowFiltering="True"
                 AutoExpandMode="RootNodesExpanded"
                 AutoGenerateColumns="False"
                 ChildPropertyName="Children"
@@ -118,7 +116,6 @@ You can use the IncludeHeaders, IncludeFormat, and IncludeHiddenColumn options a
 <treeGrid:SfTreeGrid
                 Name="treeGrid"
                 CopyOption="CutData,IncludeHeaders" 
-                AllowFiltering="True"
                 AutoExpandMode="RootNodesExpanded"
                 AutoGenerateColumns="False"
                 ChildPropertyName="Children"
