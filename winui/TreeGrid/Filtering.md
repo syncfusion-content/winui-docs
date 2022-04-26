@@ -647,58 +647,51 @@ The filter icon style can be changed by writing style with TargetType as [Filter
                             <VisualState x:Name="Filtered">
                                 <Storyboard BeginTime="0">
                                     <ObjectAnimationUsingKeyFrames BeginTime="0"
-                                                       Duration="1"
-                                                       Storyboard.TargetName="PART_FilterToggleButtonIndicator"
-                                                       Storyboard.TargetProperty="Data">
-                                        <DiscreteObjectKeyFrame KeyTime="0" Value="M2.1299944,9.9798575L55.945994,9.9798575 35.197562,
-										                                           34.081179 35.197562,62.672859 23.428433,
-                                                                                   55.942383 23.428433,33.52121z M1.3001332,0L56.635813,
-																				   0C57.355887,0,57.935946,0.5891428,57.935946,
-                                                                                   1.3080959L57.935946,2.8258877C57.935946,3.5448422,57.355887,
-                                                                                   4.133985,56.635813,4.133985L1.3001332,4.133985C0.58005941,
-																				   4.133985,-2.3841858E-07,3.5448422,0,2.8258877L0,1.3080959C-2.3841858E-07,
-																				   0.5891428,0.58005941,0,1.3001332,0z" />
+                                                    Duration="1"
+                                                    Storyboard.TargetName="PART_FilterToggleButtonIndicator"
+                                                    Storyboard.TargetProperty="FontFamily">
+                                        <DiscreteObjectKeyFrame KeyTime="0" Value="ms-appx:///Syncfusion.Grid.WinUI/Themes/Assets/ControlIcons.ttf#font" />
                                     </ObjectAnimationUsingKeyFrames>
-                                    <ColorAnimation BeginTime="0"
-                                        Duration="00:00:01"
-                                        Storyboard.TargetName="PathFillColor"
-                                        Storyboard.TargetProperty="Color"
-                                        To="Red" />
+                                    <ObjectAnimationUsingKeyFrames BeginTime="0"
+                                                    Duration="1"
+                                                    Storyboard.TargetName="PART_FilterToggleButtonIndicator"
+                                                    Storyboard.TargetProperty="Glyph">
+                                        <DiscreteObjectKeyFrame KeyTime="0" Value="&#xE723;" />
+                                    </ObjectAnimationUsingKeyFrames>
+                                    <ObjectAnimationUsingKeyFrames BeginTime="0"
+                                                    Duration="1"
+                                                    Storyboard.TargetName="PART_FilterToggleButtonIndicator"
+                                                    Storyboard.TargetProperty="Foreground">
+                                        <DiscreteObjectKeyFrame KeyTime="0" Value="Red" />
+                                    </ObjectAnimationUsingKeyFrames>
                                 </Storyboard>
                             </VisualState>
-
                             <VisualState x:Name="UnFiltered">
                                 <Storyboard BeginTime="0">
                                     <ObjectAnimationUsingKeyFrames BeginTime="0"
-                                                       Duration="1"
-                                                       Storyboard.TargetName="PART_FilterToggleButtonIndicator"
-                                                       Storyboard.TargetProperty="Data">
-                                        <DiscreteObjectKeyFrame KeyTime="0" Value="M0,0 L118.49799,0 L72.811813,53.068943 L72.811813,116.02525 L46.897243,
-										                                           101.20534 L46.897243,51.835941 z" />
+                                                Duration="1"
+                                                Storyboard.TargetName="PART_FilterToggleButtonIndicator"
+                                                Storyboard.TargetProperty="Glyph">
+                                        <DiscreteObjectKeyFrame KeyTime="0" Value="&#xE71C;" />
                                     </ObjectAnimationUsingKeyFrames>
-                                    <ColorAnimation BeginTime="0"
-                                        Duration="00:00:01"
-                                        Storyboard.TargetName="PathFillColor"
-                                        Storyboard.TargetProperty="Color"
-                                        To="Gray" />
                                 </Storyboard>
                             </VisualState>
                         </VisualStateGroup>
                     </VisualStateManager.VisualStateGroups>
-                    <Border Width="{TemplateBinding Width}"
-                        Height="{TemplateBinding Height}"
-                        Background="Transparent">
-
-                        <Path Name="PART_FilterToggleButtonIndicator"
-                          Margin="{TemplateBinding Margin}"
-                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                          Data="M0,0 L118.49799,0 L72.811813,53.068943 L72.811813,116.02525 L46.897243,101.20534 L46.897243,51.835941 z"
-                          Stretch="Fill">
-                            <Path.Fill>
-                                <SolidColorBrush x:Name="PathFillColor" Color="Gray" />
-                            </Path.Fill>
-                        </Path>
+                    <Border HorizontalAlignment="{TemplateBinding HorizontalAlignment}">
+                        <FontIcon Name="PART_FilterToggleButtonIndicator"
+                                    FontSize="14"
+                                    Glyph="&#xE71C;"
+                                    Foreground="{StaticResource TextFillColorSecondary}">
+                            <FontIcon.RenderTransform>
+                                <TransformGroup>
+                                    <TransformGroup.Children>
+                                        <RotateTransform Angle="0" />
+                                        <ScaleTransform ScaleX="1" ScaleY="1" />
+                                    </TransformGroup.Children>
+                                </TransformGroup>
+                            </FontIcon.RenderTransform>
+                        </FontIcon>
                     </Border>
                 </Grid>
             </ControlTemplate>
