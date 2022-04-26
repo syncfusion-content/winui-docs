@@ -1077,7 +1077,7 @@ void sfDataGrid_SelectionChanged(object sender, GridSelectionChangedEventArgs e)
 
 ### Changing Selection Background and Foreground
 
-You can change the selection background and foreground using [SelectionBackground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectionBackground), [GroupRowSelectionBackground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_GroupRowSelectionBackground) and [SelectionForeground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectionForeground) properties. The `SelectionBackground` is only applied to the rows other than summary rows and the `GroupRowSelectionBackground` is applied for caption summary and group summary rows.
+You can change the selection background and foreground for all rows by using the [SelectionBackground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectionBackground) and [SelectionForeground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectionForeground) properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1086,8 +1086,7 @@ You can change the selection background and foreground using [SelectionBackgroun
                        AllowGrouping="True"
                        ShowGroupDropArea="True"
                        SelectionBackground="#FFDFF3F4"
-                       GroupRowSelectionBackground="#FFC8E3E3"
-                       SelectionForegroundBrush="DarkBlue"
+                       SelectionForeground="DarkBlue"
                        SelectionMode="Extended"
                        ItemsSource="{Binding Orders}">
 

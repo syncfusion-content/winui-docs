@@ -83,10 +83,10 @@ The record rows ([DataGridRowControl](https://help.syncfusion.com/cr/winui/Syncf
 {% highlight xaml %}
 <Application.Resources>
     <local:CustomRowStyleSelector x:Key="rowStyleSelector" />
-    <Style x:Key="rowStyle1" TargetType="dataGrid:DataGridRowControl">
+    <Style x:Key="bisqueRowStyle" TargetType="dataGrid:DataGridRowControl">
         <Setter Property="Background" Value="Bisque" />
     </Style>
-    <Style x:Key="rowStyle2" TargetType="dataGrid:DataGridRowControl">
+    <Style x:Key="aquaRowStyle" TargetType="dataGrid:DataGridRowControl">
         <Setter Property="Background" Value="Aqua" />
     </Style>
 </Application.Resources>
@@ -115,8 +115,8 @@ public class CustomRowStyleSelector : StyleSelector
         var data = row as OrderInfo;
 
         if (data.OrderID < 1004)
-            return Application.Current.Resources["rowStyle1"] as Style;
-        return Application.Current.Resources["rowStyle2"] as Style;
+            return Application.Current.Resources["bisqueRowStyle"] as Style;
+        return Application.Current.Resources["aquaRowStyle"] as Style;
     }
 }
 
@@ -135,10 +135,10 @@ The appearance of alternating rows can be customized conditionally based on data
 {% highlight xaml %}
 <Application.Resources>
     <local:StyleSelector x:Key="alternatingRowStyleSelector" />
-    <Style x:Key="rowStyle1" TargetType="dataGrid:DataGridRowControl">
+    <Style x:Key="bisqueRowStyle" TargetType="dataGrid:DataGridRowControl">
         <Setter Property="Background" Value="Bisque" />
     </Style>
-    <Style x:Key="rowStyle2" TargetType="dataGrid:DataGridRowControl">
+    <Style x:Key="aquaRowStyle" TargetType="dataGrid:DataGridRowControl">
         <Setter Property="Background" Value="Aqua" />
     </Style>
 </Application.Resources>
@@ -168,8 +168,8 @@ public class SelectorClass : StyleSelector
         var data = row as OrderInfo;
 
         if (data.OrderID < 1006)
-            return Application.Current.Resources["rowStyle1"] as Style;
-        return Application.Current.Resources["rowStyle2"] as Style;
+            return Application.Current.Resources["bisqueRowStyle"] as Style;
+        return Application.Current.Resources["aquaRowStyle"] as Style;
     }
 }
 
@@ -190,7 +190,7 @@ The appearance of caption summary cell can be customized conditionally based on 
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="selector"/>
-    <Style TargetType="dataGrid:GridCaptionSummaryCell" x:Key="captionSummaryStyle">
+    <Style TargetType="dataGrid:GridCaptionSummaryCell" x:Key="captionSummaryCellStyle">
         <Setter Property="Foreground" Value="Red"/>
     </Style>
 </Application.Resources>
@@ -231,7 +231,7 @@ public class SelectorClass : StyleSelector
 
         //custom condition is checked.
         if ((double)calculatedValue > 50)
-            return Application.Current.Resources["captionSummaryStyle"] as Style;
+            return Application.Current.Resources["captionSummaryCellStyle"] as Style;
         return base.SelectStyleCore(item, container);
     }
 }
@@ -252,7 +252,7 @@ Here, caption summary cells are customized based on `OrderID` summary column.
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="selector"/>
-    <Style TargetType="dataGrid:GridCaptionSummaryCell" x:Key="captionSummaryStyle">
+    <Style TargetType="dataGrid:GridCaptionSummaryCell" x:Key="captionSummaryCellStyle">
         <Setter Property="Foreground" Value="Red"/>
     </Style>
 </Application.Resources>
@@ -295,7 +295,7 @@ public class SelectorClass : StyleSelector
 
             //custom condition is checked.
             if (groupKey < 50)
-                return Application.Current.Resources["captionSummaryStyle"] as Style;
+                return Application.Current.Resources["captionSummaryCellStyle"] as Style;
         }
         return null;
     }
@@ -319,10 +319,10 @@ Here, group summary cells are customized based on summary values whether it’s 
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="styleSelector"/>
-    <Style TargetType="dataGrid:GridGroupSummaryCell" x:Key="customGroupSummary">
+    <Style TargetType="dataGrid:GridGroupSummaryCell" x:Key="darkBlueGroupSummaryCellStyle">
         <Setter Property="Foreground" Value="DarkBlue"/>
     </Style>
-    <Style TargetType="dataGrid:GridGroupSummaryCell" x:Key="customGroupSummary1">
+    <Style TargetType="dataGrid:GridGroupSummaryCell" x:Key="bisqueGroupSummaryCellStyle">
         <Setter Property="Background" Value="Bisque"/>
     </Style>
 </Application.Resources>
@@ -371,8 +371,8 @@ public class SelectorClass : StyleSelector
 
         //custom condition is checked.
         if ((double)calculatedValue < 50)
-            return Application.Current.Resources["customGroupSummary1"] as Style;
-        return Application.Current.Resources["customGroupSummary"] as Style;
+            return Application.Current.Resources["bisqueGroupSummaryCellStyle"] as Style;
+        return Application.Current.Resources["darkBlueGroupSummaryCellStyle"] as Style;
     }
 }
 
@@ -393,13 +393,13 @@ Here, group summary cells are customized based on `TotalPrice` summary column.
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="styleSelector"/>
-     <Style TargetType="dataGrid:GridGroupSummaryCell" x:Key="customGroupSummary">
+     <Style TargetType="dataGrid:GridGroupSummaryCell" x:Key="darkBlueGroupSummaryCellStyle">
         <Setter Property="Foreground" Value="DarkBlue"/>
     </Style>
-    <Style TargetType="dataGrid:GridGroupSummaryCell" x:Key="customGroupSummary1">
+    <Style TargetType="dataGrid:GridGroupSummaryCell" x:Key="deepPinkGroupSummaryCellStyle">
         <Setter Property="Foreground" Value="DeepPink"/>
     </Style>
-    <Style TargetType="dataGrid:GridGroupSummaryCell" x:Key="customGroupSummary2">
+    <Style TargetType="dataGrid:GridGroupSummaryCell" x:Key="bisqueGroupSummaryCellStyle">
         <Setter Property="Background" Value="Bisque"/>
     </Style>
 </Application.Resources>
@@ -454,12 +454,12 @@ public class SelectorClass : StyleSelector
 
                 //custom condition is checked.
                 if (aggregateValue.Key != "Count" && (double)calculatedValue < 50)
-                    return App.Current.Resources["customGroupSummary1"] as Style;
+                    return App.Current.Resources["deepPinkGroupSummaryCellStyle"] as Style;
             }
             else
-                return App.Current.Resources["customGroupSummary"] as Style;
+                return App.Current.Resources["darkBlueGroupSummaryCellStyle"] as Style;
         }
-        return App.Current.Resources["customGroupSummary2"] as Style;
+        return App.Current.Resources["bisqueGroupSummaryCellStyle"] as Style;
     }
 }
 {% endhighlight %}
@@ -479,10 +479,10 @@ The appearance of group summary row can be customized conditionally based on sum
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="styleSelector"/>
-    <Style TargetType="dataGrid:GroupSummaryRowControl" x:Key="customGroupSummary">
+    <Style TargetType="dataGrid:GroupSummaryRowControl" x:Key="aquamarineGroupSummaryRowStyle">
         <Setter Property="Background" Value="Aquamarine"/>
     </Style>
-    <Style TargetType="dataGrid:GroupSummaryRowControl" x:Key="customGroupSummary1">
+    <Style TargetType="dataGrid:GroupSummaryRowControl" x:Key="bisqueGroupSummaryRowStyle">
         <Setter Property="Background" Value="Bisque"/>
     </Style>
 </Application.Resources>
@@ -532,8 +532,8 @@ public class SelectorClass : StyleSelector
 
         //custom condition is checked.
         if ((double)calculatedValue % 2 == 0)
-            return Application.Current.Resources["customGroupSummary1"] as Style;
-        return Application.Current.Resources["customGroupSummary"] as Style;
+            return Application.Current.Resources["bisqueGroupSummaryRowStyle"] as Style;
+        return Application.Current.Resources["aquamarineGroupSummaryRowStyle"] as Style;
     }
 }
 
@@ -556,10 +556,10 @@ The appearance of table summary cell can be customized conditionally based on su
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="styleSelector"/>
-    <Style TargetType="dataGrid:GridTableSummaryCell" x:Key="customTableSummary">
+    <Style TargetType="dataGrid:GridTableSummaryCell" x:Key="redTableSummaryCellStyle">
         <Setter Property="Foreground" Value="Red"/>
     </Style>
-    <Style TargetType="dataGrid:GridTableSummaryCell" x:Key="customTableSummary1">
+    <Style TargetType="dataGrid:GridTableSummaryCell" x:Key="darkBlueTableSummaryCellStyle">
         <Setter Property="Foreground" Value="DarkBlue"/>
     </Style>
 </Application.Resources>
@@ -610,8 +610,8 @@ public class SelectorClass : StyleSelector
 
         //custom condition is checked.
         if ((double)calculatedValue > 10 && cell.ColumnBase.GridColumn.MappingName == "UnitPrice")
-            return Application.Current.Resources["customTableSummary"] as Style;
-        return Application.Current.Resources["customTableSummary1"] as Style;
+            return Application.Current.Resources["redTableSummaryCellStyle"] as Style;
+        return Application.Current.Resources["darkBlueTableSummaryCellStyle"] as Style;
     }
 }
 
@@ -632,10 +632,10 @@ Here, table summary cells are customized based on `TotalPrice` summary column.
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="styleSelector"/>
-    <Style TargetType="dataGrid:GridTableSummaryCell" x:Key="customTableSummary">
+    <Style TargetType="dataGrid:GridTableSummaryCell" x:Key="redTableSummaryCellStyle">
         <Setter Property="Foreground" Value="Red"/>
     </Style>
-    <Style TargetType="dataGrid:GridTableSummaryCell" x:Key="customTableSummary1">
+    <Style TargetType="dataGrid:GridTableSummaryCell" x:Key="darkBlueTableSummaryCellStyle">
         <Setter Property="Foreground" Value="DarkBlue"/>
     </Style>
 </Application.Resources>
@@ -681,8 +681,8 @@ public class SelectorClass : StyleSelector
 
         // column name is checked.
         if (cell.ColumnBase.GridColumn.MappingName == "UnitPrice")
-            return Application.Current.Resources["customTableSummary"] as Style;
-        return Application.Current.Resources["customTableSummary1"] as Style;
+            return Application.Current.Resources["redTableSummaryCellStyle"] as Style;
+        return Application.Current.Resources["darkBlueTableSummaryCellStyle"] as Style;
     }
 }
 
@@ -703,10 +703,10 @@ The appearance of table summary row can be customized conditionally based on sum
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="styleSelector"/>
-    <Style TargetType="dataGrid:TableSummaryRowControl" x:Key="tableSummaryRowStyle">
+    <Style TargetType="dataGrid:TableSummaryRowControl" x:Key="bisquetableSummaryRowStyle">
         <Setter Property="Background" Value="Bisque"/>
     </Style>
-    <Style TargetType="dataGrid:TableSummaryRowControl" x:Key="tableSummaryRowStyle1">
+    <Style TargetType="dataGrid:TableSummaryRowControl" x:Key="lightBluetableSummaryRowStyle">
         <Setter Property="Background" Value="LightBlue"/>
     </Style>
 </Application.Resources>
@@ -760,8 +760,8 @@ public class SelectorClass : StyleSelector
 
         //custom condition is checked.
         if (aggregateValue.Key != "Count")
-            return Application.Current.Resources["tableSummaryRowStyle"] as Style;
-        return Application.Current.Resources["tableSummaryRowStyle1"] as Style;
+            return Application.Current.Resources["bisquetableSummaryRowStyle"] as Style;
+        return Application.Current.Resources["lightBluetableSummaryRowStyle"] as Style;
     }
 }
 
@@ -782,10 +782,10 @@ Here, horizontal alignment of table summary cells are changed based on column na
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="styleSelector"/>
-    <Style TargetType="dataGrid:GridTableSummaryCell" x:Key="customTableSummary">
+    <Style TargetType="dataGrid:GridTableSummaryCell" x:Key="centerAlignmentTableSummaryCellStyle">
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
     </Style>
-    <Style TargetType="dataGrid:GridTableSummaryCell" x:Key="customTableSummary1">
+    <Style TargetType="dataGrid:GridTableSummaryCell" x:Key="rightAlignmentTableSummaryCellStyle">
         <Setter Property="HorizontalContentAlignment" Value="Right"/>
     </Style>
 </Application.Resources>
@@ -836,8 +836,8 @@ public class SelectorClass : StyleSelector
 
         // column name is checked.
         if (cell.ColumnBase.GridColumn.MappingName == "UnitPrice")
-            return Application.Current.Resources["customTableSummary"] as Style;
-        return Application.Current.Resources["customTableSummary1"] as Style;
+            return Application.Current.Resources["centerAlignmentTableSummaryCellStyle"] as Style;
+        return Application.Current.Resources["rightAlignmentTableSummaryCellStyle"] as Style;
     }
 }
 
