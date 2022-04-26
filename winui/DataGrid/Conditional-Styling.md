@@ -323,7 +323,7 @@ Here, group summary cells are customized based on summary values whether it’s 
         <Setter Property="Foreground" Value="DarkBlue"/>
     </Style>
     <Style TargetType="dataGrid:GridGroupSummaryCell" x:Key="customGroupSummary1">
-        <Setter Property="Background" Value="Red"/>
+        <Setter Property="Background" Value="Bisque"/>
     </Style>
 </Application.Resources>
 
@@ -393,11 +393,14 @@ Here, group summary cells are customized based on `TotalPrice` summary column.
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="styleSelector"/>
-    <Style TargetType="dataGrid:GridGroupSummaryCell" x:Key="customGroupSummary">
+     <Style TargetType="dataGrid:GridGroupSummaryCell" x:Key="customGroupSummary">
         <Setter Property="Foreground" Value="DarkBlue"/>
     </Style>
     <Style TargetType="dataGrid:GridGroupSummaryCell" x:Key="customGroupSummary1">
-        <Setter Property="Background" Value="Red"/>
+        <Setter Property="Foreground" Value="DeepPink"/>
+    </Style>
+    <Style TargetType="dataGrid:GridGroupSummaryCell" x:Key="customGroupSummary2">
+        <Setter Property="Background" Value="Bisque"/>
     </Style>
 </Application.Resources>
 
@@ -440,17 +443,23 @@ public class SelectorClass : StyleSelector
     {
         var cell = container as GridGroupSummaryCell;
 
-        if (cell.ColumnBase.GridColumn.MappingName == "UnitPrice")
+        var dataContext = item as SummaryRecordEntry;
+        if (!dataContext.SummaryRow.ShowSummaryInRow)
         {
-            var summaryValue = (item as SummaryRecordEntry).SummaryValues[0];
-            var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
-            var calculatedValue = aggregateValue.Value;
+            if (cell.ColumnBase.GridColumn.MappingName == "UnitPrice")
+            {
+                var summaryValue = dataContext.SummaryValues[0];
+                var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
+                var calculatedValue = aggregateValue.Value;
 
-            //custom condition is checked.
-            if (aggregateValue.Key != "Count" && (double)calculatedValue < 50)
-                return Application.Current.Resources["customGroupSummary1"] as Style;
+                //custom condition is checked.
+                if (aggregateValue.Key != "Count" && (double)calculatedValue < 50)
+                    return App.Current.Resources["customGroupSummary1"] as Style;
+            }
+            else
+                return App.Current.Resources["customGroupSummary"] as Style;
         }
-        return Application.Current.Resources["customGroupSummary"] as Style;
+        return App.Current.Resources["customGroupSummary2"] as Style;
     }
 }
 {% endhighlight %}
@@ -471,10 +480,10 @@ The appearance of group summary row can be customized conditionally based on sum
 <Application.Resources>
     <local:SelectorClass x:Key="styleSelector"/>
     <Style TargetType="dataGrid:GroupSummaryRowControl" x:Key="customGroupSummary">
-        <Setter Property="Background" Value="LightBlue"/>
+        <Setter Property="Background" Value="Aquamarine"/>
     </Style>
     <Style TargetType="dataGrid:GroupSummaryRowControl" x:Key="customGroupSummary1">
-        <Setter Property="Background" Value="Yellow"/>
+        <Setter Property="Background" Value="Bisque"/>
     </Style>
 </Application.Resources>
 
