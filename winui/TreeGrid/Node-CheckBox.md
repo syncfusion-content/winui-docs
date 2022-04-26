@@ -12,7 +12,7 @@ SfTreeGrid provides support for loading `CheckBox` in the expander cell of each 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                        ChildPropertyName="ReportsTo"
                        ItemsSource="{Binding Employees}"
                        CheckBoxSelectionMode="Default"
@@ -34,7 +34,7 @@ You can enable or disable the indeterminate state for node CheckBox using [SfTre
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                        ChildPropertyName="ReportsTo"
                        ItemsSource="{Binding Employees}"
                        AllowTriStateChecking="True"
@@ -57,7 +57,7 @@ SfTreeGrid provides support for recursive checking where the checked state of pa
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                        ChildPropertyName="ReportsTo"
                        ItemsSource="{Binding Employees}"
                        EnableRecursiveChecking="True"
@@ -223,7 +223,7 @@ If you don’t want to affect the selection while checking/unchecking the node C
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                        CheckBoxSelectionMode="Default"
                        ItemsSource="{Binding PersonDetails}"
                        ShowCheckBox="True"/>
@@ -245,7 +245,7 @@ Navigation, editing and programmatic selection are not supported in this mode.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                        CheckBoxSelectionMode="SelectOnCheck"
                        ItemsSource="{Binding PersonDetails}"
                        ShowCheckBox="True"/>
@@ -264,7 +264,7 @@ If you want to synchronize the selection with node CheckBox’s IsChecked state,
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                        CheckBoxSelectionMode="SynchronizeSelection"
                        ItemsSource="{Binding PersonDetails}"
                        ShowCheckBox="True"/>
