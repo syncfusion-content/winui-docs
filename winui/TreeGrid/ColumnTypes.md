@@ -49,13 +49,24 @@ Use to display the numeric data.
 </tr>
 <tr>
 <td>
-{{'[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html#"")'| markdownify }}
+{{'[TreeGridDateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCellComboBoxRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellComboBoxRenderer.html#"")'| markdownify }}
+{{'[TreeGridCellDateRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellDateRenderer.html#"")'| markdownify }}
 </td>
 <td>
-Use to display the IEnumerable data using ComboBox.
+Use to display the date value.
+</td>
+</tr>
+<tr>
+<td>
+{{'[TreeGridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#"")'| markdownify }}
+</td>
+<td>
+{{'[TreeGridCellTimeRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellTimeRenderer.html#"")'| markdownify }}
+</td>
+<td>
+Use to display the <code>DateTimeOffset</code> type data as time value.
 </td>
 </tr>
 <tr>
@@ -71,28 +82,6 @@ Use to display the boolean type data.
 </tr>
 <tr>
 <td>
-{{'[TreeGridDateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#"")'| markdownify }}
-</td>
-<td>
-{{'[TreeGridCellDateRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellDateRenderer.html#"")'| markdownify }}
-</td>
-<td>
-Use to display the date value.
-</td>
-</tr>
-<tr>
-<td>
-{{'[TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html#"")'| markdownify }}
-</td>
-<td>
-{{'[TreeGridCellHyperLinkRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellHyperlinkRenderer.html#"")'| markdownify }}
-</td>
-<td>
-Use to display the URI data.
-</td>
-</tr>
-<tr>
-<td>
 {{'[TreeGridTemplateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html#"")'| markdownify }}
 </td>
 <td>
@@ -104,13 +93,24 @@ Use to display the custom template-specified content.
 </tr>
 <tr>
 <td>
-{{'[TreeGridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#"")'| markdownify }}
+{{'[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCellTimeRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellTimeRenderer.html#"")'| markdownify }}
+{{'[TreeGridCellComboBoxRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellComboBoxRenderer.html#"")'| markdownify }}
 </td>
 <td>
-Use to display the <code>DateTimeOffset</code> type data as time value.
+Use to display the IEnumerable data using ComboBox.
+</td>
+</tr>
+<tr>
+<td>
+{{'[TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html#"")'| markdownify }}
+</td>
+<td>
+{{'[TreeGridCellHyperLinkRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellHyperlinkRenderer.html#"")'| markdownify }}
+</td>
+<td>
+Use to display the URI data.
 </td>
 </tr>
 </table>
@@ -939,6 +939,188 @@ The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 
 You can restrict and display the input value within the range using the [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MinDate) and [MaxDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MaxDate) properties.
 
+## TreeGridTimeColumn
+
+[TreeGridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html) is derived from `TreeGridTextColumnBase` and displays column data as time. In editing mode, it hosts the [SfTimePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) element.
+
+{% tabs %}
+{% highlight xaml %}
+
+<treeGrid:SfTreeGrid Name="treeGrid"
+        ColumnWidthMode="Star"
+        AllowEditing="True"
+        AutoExpandMode="AllNodesExpanded"
+        AutoGenerateColumns="False"
+        ChildPropertyName="ReportsTo"
+        ItemsSource="{Binding Employees}"
+        ParentPropertyName="ID"
+        SelfRelationRootValue="-1" >
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridTimeColumn HeaderText="Reporting Time" MappingName="ReportingTime" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" />
+        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+treeGrid.Columns.Add(new TreeGridTimeColumn()
+{
+    MappingName = "ReportingTime",
+    HeaderText = "Reporting Time"
+});
+{% endhighlight %}
+{% endtabs %}
+
+<img src="Column-Type-images/winui-treegrid-time-column.png" alt="WinUI TreeGrid Column with TimeColumn" width="100%" Height="Auto"/>
+
+### Change the format of time value
+
+By using the [DisplayTimeFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_DisplayTimeFormat) property, you can edit and display the selected time in various formats such as hour, minutes, seconds, meridiem, 12-Hour and 24-Hour format. The default value of `DisplayTimeFormat` property is **hh:mm tt**. For example, in the below image the TimeColumn has `DisplayTimeFormat` set to **HH:mm tt**.
+
+{% tabs %}
+{% highlight xaml %}
+
+<treeGrid:SfTreeGrid Name="treeGrid"
+        ColumnWidthMode="Star"
+        AllowEditing="True"
+        AutoExpandMode="AllNodesExpanded"
+        AutoGenerateColumns="False"
+        ChildPropertyName="ReportsTo"
+        ItemsSource="{Binding Employees}"
+        ParentPropertyName="ID"
+        SelfRelationRootValue="-1" >
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridTimeColumn HeaderText="Reporting Time" MappingName="ReportingTime" DisplayTimeFormat="HH:mm tt" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" />
+        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+treeGrid.Columns.Add(new TreeGridTimeColumn()
+{
+    MappingName = "ReportingTime",
+    HeaderText = "Reporting Time"
+    DisplayTimeFormat="HH:mm tt",
+});
+{% endhighlight %}
+{% endtabs %}
+
+<img src="Column-Type-images/winui-treegrid-time-column_format.png" alt="WinUI TreeGrid Column with TimeColumn with 24-Hour format" width="100%" Height="Auto"/>
+
+### Null value support
+
+`TreeGridTimeColumn` provides support to restrict or allow null value in columns based on [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_AllowNull) property. The default value of `AllowNull` property is `True`. Instead of displaying null values, you can display hint text using the [PlaceholderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_PlaceholderText) property.
+
+The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`. The default value of `PlaceholderText` property is `select a time`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<treeGrid:SfTreeGrid Name="treeGrid"
+        ColumnWidthMode="Star"
+        AllowEditing="True"
+        AutoExpandMode="AllNodesExpanded"
+        AutoGenerateColumns="False"
+        ChildPropertyName="ReportsTo"
+        ItemsSource="{Binding Employees}"
+        ParentPropertyName="ID"
+        SelfRelationRootValue="-1" >
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridTimeColumn HeaderText="Reporting Time" MappingName="ReportingTime" PlaceholderText="Change the time" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" />
+        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+treeGrid.Columns.Add(new TreeGridTimeColumn()
+{
+    MappingName = "ReportingTime",
+    HeaderText = "Reporting Time"
+    PlaceholderText="Change the Time",
+});
+
+{% endhighlight %}
+{% endtabs %}
+
+<img src="Column-Type-images/winui-treegrid-time-column_AllowNull.png" alt="WinUI TreeGrid Column with TimeColumn with PlaceholderText" width="100%" Height="Auto"/>
+
+### Setting time value range
+
+You can restrict and display the input value within the range using the [MinTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_MinTime) and [MaxTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_MaxTime) properties.
+
+### Editing support
+
+`TreeGridTimeColumn` provides support to edit the time value in different modes.
+* [Normal](#normal)
+* [Mask](#mask)
+* [None](#none)
+
+#### Normal
+
+To allow editing and perform input validation only after editing is completed, set the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_EditMode) property value as `Normal`.
+
+For more information refer [here](https://help.syncfusion.com/winui/time-picker/localization-and-formatting#edit-time-using-free-form-editing).
+
+#### Mask
+
+To allow editing and perform input validation as user edits the time value, set the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_EditMode) property value as `Mask`.
+The default value for `EditMode` property is `Mask`.
+
+For more information refer [here](https://help.syncfusion.com/winui/time-picker/localization-and-formatting#edit-time-using-mask-mode).
+ 
+#### None
+You can disable the editing in edit part by setting the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_EditMode) Property as `None`.
+
+### Select time as you scroll spinner
+
+If you want to hide the submit button and select the time directly from the drop-down time spinner without clicking `Ok`, set the [ShowSubmitButtons](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_ShowSubmitButtons) property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<treeGrid:SfTreeGrid Name="treeGrid"
+        ColumnWidthMode="Star"
+        AllowEditing="True"
+        AutoExpandMode="AllNodesExpanded"
+        AutoGenerateColumns="False"
+        ChildPropertyName="ReportsTo"
+        ItemsSource="{Binding Employees}"
+        ParentPropertyName="ID"
+        SelfRelationRootValue="-1" >
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridTimeColumn HeaderText="Reporting Time" MappingName="ReportingTime" ShowSubmitButtons="False" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" />
+        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+treeGrid.Columns.Add(new TreeGridTimeColumn()
+{
+    MappingName = "ReportingTime",
+    HeaderText = "Reporting Time"
+    ShowSubmitButtons="False",
+});
+
+{% endhighlight %}
+{% endtabs %}
+
+For more information refer [here](https://help.syncfusion.com/winui/time-picker/time-restriction#select-time-as-you-scroll-spinner).
+
 ## TreeGridCheckBoxColumn
 
 [TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html) derived from `TreeGridColumn` and it used display and edit `Boolean` type data. It hosts `CheckBox` element as `TreeGridCell` content.
@@ -1305,190 +1487,7 @@ You can change the foreground color of `TreeGridHyperlinkColumn` by writing the 
 
 <img src="Column-Type-images/winui-treegrid-hyperlink-column-customization.png" alt="Customized Hyperlink Column in WinUI TreeGrid" width="100%" Height="Auto"/>
 
-## TreeGridTimeColumn
-
-[TreeGridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html) is derived from `TreeGridTextColumnBase` and displays column data as time. In editing mode, it hosts the [SfTimePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) element.
-
-{% tabs %}
-{% highlight xaml %}
-
-<treeGrid:SfTreeGrid Name="treeGrid"
-        ColumnWidthMode="Star"
-        AllowEditing="True"
-        AutoExpandMode="AllNodesExpanded"
-        AutoGenerateColumns="False"
-        ChildPropertyName="ReportsTo"
-        ItemsSource="{Binding Employees}"
-        ParentPropertyName="ID"
-        SelfRelationRootValue="-1" >
-    <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
-        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
-        <treeGrid:TreeGridTimeColumn HeaderText="Reporting Time" MappingName="ReportingTime" />
-        <treeGrid:TreeGridTextColumn MappingName="Title" />
-        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
-    </treeGrid:SfTreeGrid.Columns>
-</treeGrid:SfTreeGrid>
-{% endhighlight %}
-{% highlight c# %}
-treeGrid.Columns.Add(new TreeGridTimeColumn()
-{
-    MappingName = "ReportingTime",
-    HeaderText = "Reporting Time"
-});
-{% endhighlight %}
-{% endtabs %}
-
-<img src="Column-Type-images/winui-treegrid-time-column.png" alt="WinUI TreeGrid Column with TimeColumn" width="100%" Height="Auto"/>
-
-### Change the format of time value
-
-By using the [DisplayTimeFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_DisplayTimeFormat) property, you can edit and display the selected time in various formats such as hour, minutes, seconds, meridiem, 12-Hour and 24-Hour format. The default value of `DisplayTimeFormat` property is **hh:mm tt**. For example, in the below image the TimeColumn has `DisplayTimeFormat` set to **HH:mm tt**.
-
-{% tabs %}
-{% highlight xaml %}
-
-<treeGrid:SfTreeGrid Name="treeGrid"
-        ColumnWidthMode="Star"
-        AllowEditing="True"
-        AutoExpandMode="AllNodesExpanded"
-        AutoGenerateColumns="False"
-        ChildPropertyName="ReportsTo"
-        ItemsSource="{Binding Employees}"
-        ParentPropertyName="ID"
-        SelfRelationRootValue="-1" >
-    <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
-        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
-        <treeGrid:TreeGridTimeColumn HeaderText="Reporting Time" MappingName="ReportingTime" DisplayTimeFormat="HH:mm tt" />
-        <treeGrid:TreeGridTextColumn MappingName="Title" />
-        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
-    </treeGrid:SfTreeGrid.Columns>
-</treeGrid:SfTreeGrid>
-{% endhighlight %}
-{% highlight c# %}
-treeGrid.Columns.Add(new TreeGridTimeColumn()
-{
-    MappingName = "ReportingTime",
-    HeaderText = "Reporting Time"
-    DisplayTimeFormat="HH:mm tt",
-});
-{% endhighlight %}
-{% endtabs %}
-
-<img src="Column-Type-images/winui-treegrid-time-column_format.png" alt="WinUI TreeGrid Column with TimeColumn with 24-Hour format" width="100%" Height="Auto"/>
-
-### Null value support
-
-`TreeGridTimeColumn` provides support to restrict or allow null value in columns based on [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_AllowNull) property. The default value of `AllowNull` property is `True`. Instead of displaying null values, you can display hint text using the [PlaceholderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_PlaceholderText) property.
-
-The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`. The default value of `PlaceholderText` property is `select a time`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<treeGrid:SfTreeGrid Name="treeGrid"
-        ColumnWidthMode="Star"
-        AllowEditing="True"
-        AutoExpandMode="AllNodesExpanded"
-        AutoGenerateColumns="False"
-        ChildPropertyName="ReportsTo"
-        ItemsSource="{Binding Employees}"
-        ParentPropertyName="ID"
-        SelfRelationRootValue="-1" >
-    <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
-        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
-        <treeGrid:TreeGridTimeColumn HeaderText="Reporting Time" MappingName="ReportingTime" PlaceholderText="Change the time" />
-        <treeGrid:TreeGridTextColumn MappingName="Title" />
-        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
-    </treeGrid:SfTreeGrid.Columns>
-</treeGrid:SfTreeGrid>
-{% endhighlight %}
-{% highlight c# %}
-treeGrid.Columns.Add(new TreeGridTimeColumn()
-{
-    MappingName = "ReportingTime",
-    HeaderText = "Reporting Time"
-    PlaceholderText="Change the Time",
-});
-
-{% endhighlight %}
-{% endtabs %}
-
-<img src="Column-Type-images/winui-treegrid-time-column_AllowNull.png" alt="WinUI TreeGrid Column with TimeColumn with PlaceholderText" width="100%" Height="Auto"/>
-
-### Setting time value range
-
-You can restrict and display the input value within the range using the [MinTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_MinTime) and [MaxTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_MaxTime) properties.
-
-### Editing support
-
-`TreeGridTimeColumn` provides support to edit the time value in different modes.
-* [Normal](#normal)
-* [Mask](#mask)
-* [None](#none)
-
-#### Normal
-
-To allow editing and perform input validation only after editing is completed, set the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_EditMode) property value as `Normal`.
-
-For more information refer [here](https://help.syncfusion.com/winui/time-picker/localization-and-formatting#edit-time-using-free-form-editing).
-
-#### Mask
-
-To allow editing and perform input validation as user edits the time value, set the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_EditMode) property value as `Mask`.
-The default value for `EditMode` property is `Mask`.
-
-For more information refer [here](https://help.syncfusion.com/winui/time-picker/localization-and-formatting#edit-time-using-mask-mode).
- 
-#### None
-You can disable the editing in edit part by setting the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_EditMode) Property as `None`.
-
-### Select time as you scroll spinner
-
-If you want to hide the submit button and select the time directly from the drop-down time spinner without clicking `Ok`, set the [ShowSubmitButtons](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_ShowSubmitButtons) property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<treeGrid:SfTreeGrid Name="treeGrid"
-        ColumnWidthMode="Star"
-        AllowEditing="True"
-        AutoExpandMode="AllNodesExpanded"
-        AutoGenerateColumns="False"
-        ChildPropertyName="ReportsTo"
-        ItemsSource="{Binding Employees}"
-        ParentPropertyName="ID"
-        SelfRelationRootValue="-1" >
-    <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
-        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
-        <treeGrid:TreeGridTimeColumn HeaderText="Reporting Time" MappingName="ReportingTime" ShowSubmitButtons="False" />
-        <treeGrid:TreeGridTextColumn MappingName="Title" />
-        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
-    </treeGrid:SfTreeGrid.Columns>
-</treeGrid:SfTreeGrid>
-{% endhighlight %}
-{% highlight c# %}
-treeGrid.Columns.Add(new TreeGridTimeColumn()
-{
-    MappingName = "ReportingTime",
-    HeaderText = "Reporting Time"
-    ShowSubmitButtons="False",
-});
-
-{% endhighlight %}
-{% endtabs %}
-
-For more information refer [here](https://help.syncfusion.com/winui/time-picker/time-restriction#select-time-as-you-scroll-spinner).
-
-
-### Customize column renderer
+## Customize column renderer
 
 SfTreeGrid allows you to customize the column related operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the column. Each column has its own renderer with set of virtual methods for handling the column level operations. 
 Below table lists the available cell types for unbound row and its renderers.
@@ -1517,13 +1516,13 @@ TextBox
 </tr>
 <tr>
 <td>
-{{'[TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html#"")'| markdownify }}
+{{'[TreeGridNumericColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCheckBoxCellRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellCheckBoxRenderer.html#"")'| markdownify }}
+{{'[TreeGridCellNumericRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellNumericRenderer.html#"")'| markdownify }}
 </td>
 <td>
-CheckBox
+Numeric
 </td>
 </tr>
 <tr>
@@ -1539,13 +1538,24 @@ DateTimeOffset
 </tr>
 <tr>
 <td>
-{{'[TreeGridNumericColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#"")'| markdownify }}
+{{'[TreeGridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCellNumericRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellNumericRenderer.html#"")'| markdownify }}
+{{'[TreeGridCellTimeRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellTimeRenderer.html#"")'| markdownify }}
 </td>
 <td>
-Numeric
+Time
+</td>
+</tr>
+<tr>
+<td>
+{{'[TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html#"")'| markdownify }}
+</td>
+<td>
+{{'[TreeGridCheckBoxCellRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellCheckBoxRenderer.html#"")'| markdownify }}
+</td>
+<td>
+CheckBox
 </td>
 </tr>
 <tr>
@@ -1579,17 +1589,6 @@ ComboBox
 </td>
 <td>
 HyperlinkButton
-</td>
-</tr>
-<tr>
-<td>
-{{'[TreeGridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#"")'| markdownify }}
-</td>
-<td>
-{{'[TreeGridCellTimeRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellTimeRenderer.html#"")'| markdownify }}
-</td>
-<td>
-Time
 </td>
 </tr>
 </table>
