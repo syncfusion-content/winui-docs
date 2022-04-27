@@ -18,19 +18,19 @@ You can set the context menu to data rows using the [SfTreeGrid.ContextFlyout](h
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTreeGrid.ContextFlyout>
+<treeGrid:SfTreeGrid.ContextFlyout>
     <MenuFlyout>
         <MenuFlyoutItem  x:Name="Cut" Text="Cut" />
         <MenuFlyoutItem  x:Name="Copy" Text="Copy"  />
         <MenuFlyoutItem  x:Name="Paste" Text="Paste" />
         <MenuFlyoutItem  x:Name="Delete" Text="Delete" />
     </MenuFlyout>
-</syncfusion:SfTreeGrid.ContextFlyout>
+</treeGrid:SfTreeGrid.ContextFlyout>
 
 {% endhighlight %}
 {% endtabs %}
 
-![ContextFlyout added for record rows in WinUI TreeGrid](Context-flyout_images/ContextFlyout_image1.png)
+<img src="Context-flyout_images/ContextFlyout_image1.png" alt="ContextFlyout added for record rows in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ## Context flyout for header row
 
@@ -39,20 +39,20 @@ You can set the context menu to header using the [SfTreeGrid.HeaderContextFlyout
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTreeGrid.HeaderContextFlyout>
+<treeGrid:SfTreeGrid.HeaderContextFlyout>
     <MenuFlyout>
         <MenuFlyoutItem  x:Name="SortAscending" Text="Sort Ascending" />
         <MenuFlyoutItem  x:Name="SortDescending" Text="Sort Descending"  />
         <MenuFlyoutItem  x:Name="ClearSorting" Text="Clear Sorting" />
         <MenuFlyoutItem  x:Name="ClearFiltering" Text="Clear Filtering" />
     </MenuFlyout>
-</syncfusion:SfTreeGrid.HeaderContextFlyout>
+</treeGrid:SfTreeGrid.HeaderContextFlyout>
 
 
 {% endhighlight %}
 {% endtabs %}
 
-![ContextFlyout for header in treegrid WinUI ](Context-flyout_images/ContextFlyout_image2.png)
+<img src="Context-flyout_images/ContextFlyout_image2.png" alt="ContextFlyout for header in treegrid WinUI" width="100%" Height="Auto"/>
 
 
 ## Context flyout for expander
@@ -62,12 +62,12 @@ You can set the context menu to expander using the [SfTreeGrid.ExpanderContextFl
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTreeGrid.ExpanderContextFlyout>
+<treeGrid:SfTreeGrid.ExpanderContextFlyout>
     <MenuFlyout>
         <MenuFlyoutItem x:Name="Expand" Text="Expand" />
         <MenuFlyoutItem x:Name="Collapse" Text="Collapse" />
     </MenuFlyout>
-</syncfusion:SfTreeGrid.ExpanderContextFlyout>
+</treeGrid:SfTreeGrid.ExpanderContextFlyout>
 
 {% endhighlight %}
 {% endtabs %}
@@ -89,13 +89,13 @@ You can use the [TreeGridContextFlyoutOpening](https://help.syncfusion.com/cr/wi
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTreeGrid.RecordContextFlyout>
+<treeGrid:SfTreeGrid.RecordContextFlyout>
     <MenuFlyout>
         <MenuFlyoutItem  x:Name="Cut" Text="Cut" />
         <MenuFlyoutItem  x:Name="Copy" Text="Copy"  />
         <MenuFlyoutItem  x:Name="Paste" Text="Paste" />
     </MenuFlyout>
-</syncfusion:SfTreeGrid.RecordContextFlyout>
+</treeGrid:SfTreeGrid.RecordContextFlyout>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -116,4 +116,4 @@ private void TreeGrid_TreeGridContextFlyoutOpening(object sender, TreeGridContex
 {% endhighlight %}
 {% endtabs %}
 
-![ContextFlyout for opening the menu items in WinUI treegrid](Context-flyout_images/ContextFlyout_image3.png)
+<img src="Context-flyout_images/ContextFlyout_image3.png" alt="ContextFlyout for opening the menu items in WinUI treegrid" width="100%" Height="Auto"/>
