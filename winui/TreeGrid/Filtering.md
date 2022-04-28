@@ -62,7 +62,7 @@ public bool FilerNodes(object o)
 {
     var data = o as Employee;
 
-    if (data.Salary > 70000)
+    if (data.Salary > 12000)
         return true;
     return false;
 }
@@ -81,7 +81,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 
 Here, `FilterNodes` delegate filters the data based on Salary. `FilterNodes` delegate is assigned to [SfTreeGrid.View.Filter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridView_Filter) method is called to refresh the nodes. If the node satisfies the filter conditions, true will be returned. Else false will be returned.
 
-![View Filtering in WinUI TreeGrid](Filtering-images/winui-treegrid-view-filtering.png)
+<img src="Filtering-images/winui-treegrid-view-filtering.png" alt="View Filtering in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 While filtering, if the node satisfies filter condition, [IsFiltered](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeNode.html#Syncfusion_UI_Xaml_TreeGrid_TreeNode_IsFiltered) property of [TreeNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeNode.html) will be set as false. Else, it will be true. If `IsFiltered` value is True, the node will not be displayed in view, else it will be displayed in view.
 
@@ -166,6 +166,8 @@ The [PredicateType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data
 {% tabs %}
 {% highlight c# %}
 
+this.treeGrid.FilterLevel = FilterLevel.Root;
+
 this.treeGrid.Columns["FirstName"].FilterPredicates.Add(
     new FilterPredicate()
     {
@@ -185,7 +187,7 @@ this.treeGrid.Columns["FirstName"].FilterPredicates.Add(
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple Filter in WinUI TreeGrid Column](Filtering-images/winui-treegrid-multiple-filter.png)
+<img src="Filtering-images/winui-treegrid-multiple-filter.png" alt="Multiple Filter in WinUI TreeGrid Column" width="100%" Height="Auto"/>
 
 ## UI filtering
 
@@ -221,11 +223,11 @@ By default, the filter pop-up mode of the column is set to Both. The check box a
 
 #### Checkbox filtering UI
 
-![Checkbox Filter in WinUI TreeGrid](Filtering-images/winui-treegrid-checkbox-filter.png)
+<img src="Filtering-images/winui-treegrid-checkbox-filter.png" alt="Checkbox Filter in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 #### Advanced filtering UI
 
-![Advanced Filter in WinUI TreeGrid](Filtering-images/winui-treegrid-advanced-filter.png)
+<img src="Filtering-images/winui-treegrid-advanced-filter.png" alt="Advanced Filter in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ## Changing filter UI for grid
 
@@ -236,9 +238,17 @@ Filter UI view can be changed for all the columns in grid by changing the [Filte
 
 xmlns:treeGridFiltering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
 
-<Style x:Key="filterControlStyle" TargetType="treeGridFiltering:TreeGridFilterControl">
-    <Setter Property="FilterMode" Value="AdvancedFilter" />
-</Style>
+<Application.Resources>
+    <Style x:Key="filterControlStyle" TargetType="treeGridFiltering:TreeGridFilterControl">
+        <Setter Property="FilterMode" Value="AdvancedFilter" />
+    </Style>
+</Application.Resources>    
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
 
 <treeGrid:SfTreeGrid Name="sfTreeGrid"
                            FilterPopupStyle="{StaticResource filterControlStyle}"
@@ -257,9 +267,17 @@ Filter UI view can be changed for a specific column by changing the [FilterMode]
 
 xmlns:treeGridFiltering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
 
-<Style x:Key="filterControlStyle" TargetType="treeGridFiltering:TreeGridFilterControl">
-    <Setter Property="FilterMode" Value="AdvancedFilter" />
-</Style>
+<Application.Resources>
+    <Style x:Key="filterControlStyle" TargetType="treeGridFiltering:TreeGridFilterControl">
+        <Setter Property="FilterMode" Value="AdvancedFilter" />
+    </Style>
+</Application.Resources>    
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
 
 <treeGrid:TreeGridTextColumn MappingName="FirstName"
                                FilterPopupStyle="{StaticResource filterControlStyle}"/>
@@ -276,17 +294,24 @@ You can skip the [TreeGridFilterControl](https://help.syncfusion.com/cr/winui/Sy
 
 xmlns:treeGridFiltering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
 
-<Style x:Key="filterControlStyle" TargetType="treeGridFiltering:TreeGridFilterControl">
-    <Setter Property="FilterMode" Value="AdvancedFilter" />
-</Style>
+<Application.Resources>
+    <Style x:Key="filterControlStyle" TargetType="treeGridFiltering:TreeGridFilterControl">
+        <Setter Property="FilterMode" Value="AdvancedFilter" />
+    </Style>
+</Application.Resources>    
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
 
 <treeGrid:SfTreeGrid Name="sfTreeGrid"
-                           FilterPopupStyle="{StaticResource filterControlStyle}"
-                           AllowFiltering="True”
-                           ItemsSource="{Binding EmployeeDetails}" />
-
-<treeGrid:TreeGridTextColumn MappingName="LastName" FilterPopupStyle="{x:Null}"/>
-
+                    FilterPopupStyle="{StaticResource filterControlStyle}"
+                    AllowFiltering="True”
+                    ItemsSource="{Binding EmployeeDetails}" >
+    <treeGrid:TreeGridTextColumn MappingName="LastName" FilterPopupStyle="{x:Null}"/>
+</treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -316,9 +341,6 @@ Text filters
 <th>
 Number filters
 </th>
-<th>
-Date filters
-</th>
 </tr>
 <tr>
 <td>
@@ -327,19 +349,13 @@ When the string value is bound to the {{'[TreeGridColumn](https://help.syncfusio
 <td>
 When integer, double, short, decimal, byte, or long are bound to the {{'[TreeGridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html)'|markdownify}}, then `Number Filters` are loaded in {{'[TreeGridAdvancedFilterControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridAdvancedFilterControl.html)'|markdownify}}.
 </td>
-<td>
-When the DateTime type value is bound to the {{'[TreeGridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html)'|markdownify}}, then `Date Filters` are loaded in {{'[TreeGridAdvancedFilterControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridAdvancedFilterControl.html)'|markdownify}}.
-</td>
 </tr>
 <tr>
 <td>
-<img src="Filtering-images/winui-treegrid-text-filter.png" alt="Displays Text Filter in WinUI TreeGrid"/>
+<img src="Filtering-images/winui-treegrid-text-filter.png" alt="Displays Text Filter in WinUI TreeGrid" width="100%" Height="Auto"/>
 </td>
 <td>
-<img src="Filtering-images/winui-treegrid-number-filter.png" alt="Displays Number Filter in WinUI TreeGrid"/>
-</td>
-<td>
-<img src="Filtering-images/winui-treegrid-date-filter.png" alt="Displays Date Filter in WinUI TreeGrid"/>
+<img src="Filtering-images/winui-treegrid-number-filter.png" alt="Displays Number Filter in WinUI TreeGrid" width="100%" Height="Auto"/>
 </td>
 </tr>
 <tr>
@@ -372,19 +388,6 @@ When the DateTime type value is bound to the {{'[TreeGridColumn](https://help.sy
 <li>Greater Than or Equal</li>
 </ol>
 </td>
-<td>
-<b>Filter menu options</b>
-<ol>
-<li>Equals</li>
-<li>Does Not Equal</li>
-<li>Before</li>
-<li>Before Or Equal</li>
-<li>After</li>
-<li>After Or Equal</li>
-<li>Null</li>
-<li>Not Null</li>
-</ol>
-</td>
 </tr>
 </table>
 
@@ -415,11 +418,11 @@ Here, the OK and Cancel buttons are unavailable and Done button is available to 
 
 The following screenshot illustrates the check box filter when `ImmediateUpdateColumnFilter` is set to `true`.
 
-![CheckBox Filter with Immediate Filter in WinUI TreeGrid](Filtering-images/winui-treegrid-immediate-checkbox-filter.png)
+<img src="Filtering-images/winui-treegrid-immediate-checkbox-filter.png" alt="CheckBox Filter with Immediate Filter in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 The following screenshot illustrates the advanced filter when `ImmediateUpdateColumnFilter` is set to `true`.
 
-![Advanced Filter with Immediate Filter in WinUI TreeGrid](Filtering-images/winui-treegrid-immediate-advanced-filter.png)
+<img src="Filtering-images/winui-treegrid-immediate-advanced-filter.png" alt="Advanced Filter with Immediate Filter in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 N> In check box filter, the `SelectAll` option is not reflected in the filter updates if [ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ImmediateUpdateColumnFilter) is true.
 
@@ -445,11 +448,11 @@ this.sfTreeGrid.Columns["FirstName"].AllowBlankFilters = true;
 
 The following screenshot illustrates the check box filter when `AllowBlankFilters` is set to `true`.
 
-![Filter Null Values using CheckBox Filter in WinUI TreeGrid](Filtering-images/winui-treegrid-filter-null-values.png)
+<img src="Filtering-images/winui-treegrid-filter-null-values.png" alt="Filter Null Values using CheckBox Filter in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 The following screenshot illustrates advanced filter when `AllowBlankFilters` is set to `true`.
 
-![Filter Null Values using Advanced Filter in WinUI TreeGrid](Filtering-images/winui-treegrid-null-values.png)
+<img src="Filtering-images/winui-treegrid-null-values.png" alt="Filter Null Values using Advanced Filter in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ## Changing AdvancedFilter type when loading dynamic ItemsSource
 
@@ -571,7 +574,7 @@ private void OnSfTreeGridFilterItemsPopulating(object sender, TreeGridFilterItem
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Sort Option Text in WinUI TreeGrid](Filtering-images/winui-treegrid-sort-option-customization.png)
+<img src="Filtering-images/winui-treegrid-sort-option-customization.png" alt="Customizing Sort Option Text in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ## Appearance
 
@@ -584,11 +587,19 @@ Sort options can be collapsed by setting the [SortOptionVisibility](https://help
 
 xmlns:treeGridFiltering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
 
-<Style TargetType="treeGridFiltering:TreeGridFilterControl" x:Key="filterControlStyle">
-    <Setter Property="SortOptionVisibility" Value="Collapsed"/>
-</Style>
+<Application.Resources>
+    <Style TargetType="treeGridFiltering:TreeGridFilterControl" x:Key="filterControlStyle">
+        <Setter Property="SortOptionVisibility" Value="Collapsed"/>
+    </Style>
+</Application.Resources>    
 
-<treeGrid:SfTreeGrid Name="sfTreeGrid"
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+
+<treeGrid:SfTreeGrid Name="treeGrid"
                            FilterPopupStyle="{StaticResource filterControlStyle}"
                            AllowFiltering="True”
                            ItemsSource="{Binding EmployeeDetails}" />
@@ -596,7 +607,7 @@ xmlns:treeGridFiltering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
 {% endhighlight %}
 {% endtabs %}
 
-![Hide Sort options in WinUI TreeGrid](Filtering-images/winui-treegrid-hide-sort-option.png)
+<img src="Filtering-images/winui-treegrid-hide-sort-option.png" alt="Hide Sort options in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ### Customizing the filter popup size 
 
@@ -607,17 +618,17 @@ The size of the filter popup can be changed using the [FilterPopupHeight](https:
 
 xmlns:treeGridFiltering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
 
-<Page.Resources>
+<Application.Resources>
     <Style TargetType="treeGridFiltering:TreeGridFilterControl">
         <Setter Property="FilterPopupHeight" Value="530"/>
-        <Setter Property="FilterPopupWidth" Value="500"/>
+        <Setter Property="FilterPopupWidth" Value="450"/>
     </Style>
-</Page.Resources>
+</Application.Resources>
 
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Filter Popup Size in WinUI TreeGrid](Filtering-images/winui-treegrid-filter-popup-size-customization.png)
+<img src="Filtering-images/winui-treegrid-filter-popup-size-customization.png" alt="Customizing Filter Popup Size in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ### Changing filter icon style after applying filters
 
@@ -636,58 +647,51 @@ The filter icon style can be changed by writing style with TargetType as [Filter
                             <VisualState x:Name="Filtered">
                                 <Storyboard BeginTime="0">
                                     <ObjectAnimationUsingKeyFrames BeginTime="0"
-                                                       Duration="1"
-                                                       Storyboard.TargetName="PART_FilterToggleButtonIndicator"
-                                                       Storyboard.TargetProperty="Data">
-                                        <DiscreteObjectKeyFrame KeyTime="0" Value="M2.1299944,9.9798575L55.945994,9.9798575 35.197562,
-										                                           34.081179 35.197562,62.672859 23.428433,
-                                                                                   55.942383 23.428433,33.52121z M1.3001332,0L56.635813,
-																				   0C57.355887,0,57.935946,0.5891428,57.935946,
-                                                                                   1.3080959L57.935946,2.8258877C57.935946,3.5448422,57.355887,
-                                                                                   4.133985,56.635813,4.133985L1.3001332,4.133985C0.58005941,
-																				   4.133985,-2.3841858E-07,3.5448422,0,2.8258877L0,1.3080959C-2.3841858E-07,
-																				   0.5891428,0.58005941,0,1.3001332,0z" />
+                                                    Duration="1"
+                                                    Storyboard.TargetName="PART_FilterToggleButtonIndicator"
+                                                    Storyboard.TargetProperty="FontFamily">
+                                        <DiscreteObjectKeyFrame KeyTime="0" Value="ms-appx:///Syncfusion.Grid.WinUI/Themes/Assets/ControlIcons.ttf#font" />
                                     </ObjectAnimationUsingKeyFrames>
-                                    <ColorAnimation BeginTime="0"
-                                        Duration="00:00:01"
-                                        Storyboard.TargetName="PathFillColor"
-                                        Storyboard.TargetProperty="Color"
-                                        To="Red" />
+                                    <ObjectAnimationUsingKeyFrames BeginTime="0"
+                                                    Duration="1"
+                                                    Storyboard.TargetName="PART_FilterToggleButtonIndicator"
+                                                    Storyboard.TargetProperty="Glyph">
+                                        <DiscreteObjectKeyFrame KeyTime="0" Value="&#xE723;" />
+                                    </ObjectAnimationUsingKeyFrames>
+                                    <ObjectAnimationUsingKeyFrames BeginTime="0"
+                                                    Duration="1"
+                                                    Storyboard.TargetName="PART_FilterToggleButtonIndicator"
+                                                    Storyboard.TargetProperty="Foreground">
+                                        <DiscreteObjectKeyFrame KeyTime="0" Value="Red" />
+                                    </ObjectAnimationUsingKeyFrames>
                                 </Storyboard>
                             </VisualState>
-
                             <VisualState x:Name="UnFiltered">
                                 <Storyboard BeginTime="0">
                                     <ObjectAnimationUsingKeyFrames BeginTime="0"
-                                                       Duration="1"
-                                                       Storyboard.TargetName="PART_FilterToggleButtonIndicator"
-                                                       Storyboard.TargetProperty="Data">
-                                        <DiscreteObjectKeyFrame KeyTime="0" Value="M0,0 L118.49799,0 L72.811813,53.068943 L72.811813,116.02525 L46.897243,
-										                                           101.20534 L46.897243,51.835941 z" />
+                                                Duration="1"
+                                                Storyboard.TargetName="PART_FilterToggleButtonIndicator"
+                                                Storyboard.TargetProperty="Glyph">
+                                        <DiscreteObjectKeyFrame KeyTime="0" Value="&#xE71C;" />
                                     </ObjectAnimationUsingKeyFrames>
-                                    <ColorAnimation BeginTime="0"
-                                        Duration="00:00:01"
-                                        Storyboard.TargetName="PathFillColor"
-                                        Storyboard.TargetProperty="Color"
-                                        To="Gray" />
                                 </Storyboard>
                             </VisualState>
                         </VisualStateGroup>
                     </VisualStateManager.VisualStateGroups>
-                    <Border Width="{TemplateBinding Width}"
-                        Height="{TemplateBinding Height}"
-                        Background="Transparent">
-
-                        <Path Name="PART_FilterToggleButtonIndicator"
-                          Margin="{TemplateBinding Margin}"
-                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                          Data="M0,0 L118.49799,0 L72.811813,53.068943 L72.811813,116.02525 L46.897243,101.20534 L46.897243,51.835941 z"
-                          Stretch="Fill">
-                            <Path.Fill>
-                                <SolidColorBrush x:Name="PathFillColor" Color="Gray" />
-                            </Path.Fill>
-                        </Path>
+                    <Border HorizontalAlignment="{TemplateBinding HorizontalAlignment}">
+                        <FontIcon Name="PART_FilterToggleButtonIndicator"
+                                    FontSize="14"
+                                    Glyph="&#xE71C;"
+                                    Foreground="{StaticResource TextFillColorSecondary}">
+                            <FontIcon.RenderTransform>
+                                <TransformGroup>
+                                    <TransformGroup.Children>
+                                        <RotateTransform Angle="0" />
+                                        <ScaleTransform ScaleX="1" ScaleY="1" />
+                                    </TransformGroup.Children>
+                                </TransformGroup>
+                            </FontIcon.RenderTransform>
+                        </FontIcon>
                     </Border>
                 </Grid>
             </ControlTemplate>
@@ -698,4 +702,4 @@ The filter icon style can be changed by writing style with TargetType as [Filter
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Filter Icon in WinUI TreeGrid](Filtering-images/winui-treegrid-filter-icon-customization.png)
+<img src="Filtering-images/winui-treegrid-filter-icon-customization.png" alt="Customizing Filter Icon in WinUI TreeGrid" width="100%" Height="Auto"/>

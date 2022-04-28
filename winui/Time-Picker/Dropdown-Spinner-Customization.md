@@ -20,16 +20,17 @@ You can also restrict the width of dropdown time spinner cells with particular p
 N> `ItemWidth` values must be within the `MinItemWidth` and `MaxItemWidth`values. Otherwise, `ItemWidth` will take the closest value from `MinItemWidth` or `MaxItemWidth` value.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2 3 4 5" %}
 
-<editors:SfTimePicker MinItemWidth="70" 
+<editors:SfTimePicker x:Name="sfTimePicker"
+                      MinItemWidth="70" 
                       MaxItemWidth="120" 
                       ItemWidth="100"
                       ItemHeight="50"
-                      x:Name="sfTimePicker"/>
+                      />
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4 5" %}
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.MinItemWidth = 70;
@@ -49,7 +50,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can customize all the dropdown time spinner cells by using the `ItemContainerStyle` or `ItemTemplate` properties. The `DataContext` of `ItemContainerStyle` or `ItemTemplate` properties is [`SpinnerItem`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SpinnerItem.html).
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2 3 4 5 6 7" %}
 
 <editors:SfTimePicker x:Name="sfTimePicker">
     <editors:SfTimePicker.ItemContainerStyle>
@@ -72,7 +73,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can change the UI of specific hour, minutes or seconds cells in dropdown spinner by using the `ItemTemplateSelector` property. The `DataContext` of `ItemTemplateSelector` is `SfTimePicker`. 
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="TimeItemTemplateSelector.cs" %}
 
 public class TimeItemTemplateSelector : DataTemplateSelector
 {
@@ -111,7 +112,7 @@ public class TimeItemTemplateSelector : DataTemplateSelector
 {% endtabs %}
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" %}
 
   <Grid>
     <Grid.Resources>
@@ -200,13 +201,14 @@ You can change the time interval, header text, size of time field cells and cust
 Here, time interval, header and cell size of the dropdown time fields is customized by using `TimeFieldPrepared` event.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
-<editors:SfTimePicker TimeFieldPrepared="SfTimePicker_TimeFieldPrepared"
-                      x:Name="sfTimePicker"/>
+<editors:SfTimePicker 
+                      x:Name="sfTimePicker"
+                      TimeFieldPrepared="SfTimePicker_TimeFieldPrepared"/>
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.TimeFieldPrepared = SfTimePicker_TimeFieldPrepared;
@@ -217,7 +219,7 @@ sfTimePicker.TimeFieldPrepared = SfTimePicker_TimeFieldPrepared;
 You can handle the event as follows,
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
 /// <summary>
 /// Get the ItemsSource for minute or second column.

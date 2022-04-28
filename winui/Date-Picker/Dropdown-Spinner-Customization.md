@@ -20,16 +20,17 @@ You can also restrict the width of dropdown date spinner cells with particular p
 N> `ItemWidth` values must be within the `MinItemWidth` and `MaxItemWidth`values. Otherwise, `ItemWidth` will take the closest value from `MinItemWidth` or `MaxItemWidth` value.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2 3 4 5" %}
 
-<editors:SfDatePicker MinItemWidth="70" 
+<editors:SfDatePicker x:Name="sfDatePicker" 
+                      MinItemWidth="70" 
                       MaxItemWidth="120"
                       ItemWidth="100"
                       ItemHeight="50"
-                      x:Name="sfDatePicker"/>
+                      />
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4 5" %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.MinItemWidth = 70;
@@ -49,7 +50,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can customize all the dropdown date spinner cells by using the `ItemContainerStyle` properties. The `DataContext` of `ItemContainerStyle` or `ItemTemplate` properties is [`SpinnerItem`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SpinnerItem.html).
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3 4 5 6 7 8" %}
 
 <editors:SfDatePicker
     x:Name="sfDatePicker">
@@ -74,7 +75,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can change the UI of specific date, month or year cells in dropdown spinner by using the `ItemTemplateSelector` property. The `DataContext` of `ItemTemplateSelector` is `SpinnerItem`.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="DateItemTemplateSelector.cs" %}
 
 public class DateItemTemplateSelector : DataTemplateSelector
 {
@@ -112,7 +113,7 @@ public class DateItemTemplateSelector : DataTemplateSelector
 {% endtabs %}
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" %}
 
  <Grid>
     <Grid.Resources>
@@ -201,13 +202,14 @@ Here, date format, header and cell size of the dropdown date field is customized
 N> This will effective only for the date field cells.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
-<editors:SfDatePicker DateFieldPrepared="SfDatePicker_DateFieldPrepared"
-                      x:Name="sfDatePicker"/>
+<editors:SfDatePicker 
+                      x:Name="sfDatePicker"
+                      DateFieldPrepared="SfDatePicker_DateFieldPrepared"/>
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.DateFieldPrepared += SfDatePicker_DateFieldPrepared;
@@ -218,7 +220,7 @@ sfDatePicker.DateFieldPrepared += SfDatePicker_DateFieldPrepared;
 You can handle the event as follows,
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
 private void SfDatePicker_DateFieldPrepared(object sender, DateTimeFieldPreparedEventArgs e)
 {

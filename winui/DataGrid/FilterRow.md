@@ -30,7 +30,7 @@ this.sfDataGrid.FilterRowPosition = FilterRowPosition.FixedTop;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid with Filter Row](FilterRow_images/winui-datagrid-filter-row.png)
+<img src="FilterRow_images/winui-datagrid-filter-row.png" alt="WinUI DataGrid with Filter Row" width="100%" Height="Auto"/>
 
 You can get the row index of FilterRow by using the [SfDataGrid.GetFilterRowIndex ](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridIndexResolver.html#Syncfusion_UI_Xaml_DataGrid_GridIndexResolver_GetFilterRowIndex_Syncfusion_UI_Xaml_DataGrid_SfDataGrid_)method.
 
@@ -127,7 +127,7 @@ this.sfDataGrid.Columns[0].FilterRowOptionsVisibility = Visibility.Collapsed;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid with Filter Row](FilterRow_images/winui-datagrid-filter-rows.png)
+<img src="FilterRow_images/winui-datagrid-filter-rows.png" alt="WinUI DataGrid with Filter Row" width="100%" Height="Auto"/>
 
 Below are the filter conditions supported by different filter row editors in SfDataGrid.
 
@@ -206,7 +206,8 @@ this.sfDataGrid.Columns[0].FilterRowCondition = FilterRowCondition.LessThanOrEqu
 {% endhighlight %}
 {% endtabs %}
 
-![Filter Row with Numeric Editor in WinUI DataGrid](FilterRow_images/winui-datagrid-numeric-filter-row.png)
+<img src="FilterRow_images/winui-datagrid-numeric-filter-row.png" alt="Filter Row with Numeric Editor in WinUI DataGrid" width="100%" Height="Auto"/>
+
 
 ## Filtering null values
 
@@ -224,7 +225,7 @@ this.sfDataGrid.Columns[0].AllowBlankFilters = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Filter Row without Null option in WinUI DataGrid](FilterRow_images/winui-datagrid-filter-row-without-null-option.png)
+<img src="FilterRow_images/winui-datagrid-filter-row-without-null-option.png" alt="Filter Row without Null option in WinUI DataGrid" width="100%" Height="Auto"/>
 
 {% tabs %}
 {% highlight xaml %}
@@ -237,7 +238,8 @@ this.sfDataGrid.Columns[0].AllowBlankFilters = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Filter Row with Null option in WinUI DataGrid](FilterRow_images/winui-datagrid-filter-row-null-option.png)
+<img src="FilterRow_images/winui-datagrid-filter-row-null-option.png" alt="Filter Row with Null option in WinUI DataGrid" width="100%" Height="Auto"/>
+
 
 ## Instant Filtering
 
@@ -245,7 +247,7 @@ By default, filters are applied to the columns when moving to other cells or pre
 
 {% tabs %}
 {% highlight xaml %}
-<dataGrid:GridTextColumn MappingName="CustomerName"
+<dataGrid:GridTextColumn MappingName="CustomerID"
                            FilterRowEditorType="TextBox"
                            ImmediateUpdateColumnFilter="True"/>
 {% endhighlight %}
@@ -254,7 +256,7 @@ this.sfDataGrid.Columns[2].ImmediateUpdateColumnFilter = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Immediate Column Filter with Filter Row in WinUI DataGrid](FilterRow_images/winui-datagrid-filter-row-immediate-filter.png)
+<img src="FilterRow_images/winui-datagrid-filter-row-immediate-filter.png" alt="Immediate Column Filter with Filter Row in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Disable filtering for a particular FilterRowCell
 
@@ -290,14 +292,17 @@ You can customize the style of filter row by writing style of TargetType [Filte
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-    <Style TargetType="dataGrid:FilterRowControl">
+    xmlns:dataGridRowFilter="using:Syncfusion.UI.Xaml.DataGrid.RowFilter"
+
+    <Style TargetType="dataGridRowFilter:FilterRowControl">
         <Setter Property="Background" Value="BlanchedAlmond"/>
     </Style>
 </Page.Resources>
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Filter Row Style in WinUI DataGrid](FilterRow_images/winui-datagrid-filter-row-customization.png)
+<img src="FilterRow_images/winui-datagrid-filter-row-customization.png" alt="Customizing Filter Row Style in WinUI DataGrid" width="100%" Height="Auto"/>
+
 
 ## Customizing filter row cell
 
