@@ -104,6 +104,8 @@ Below code, applies `GridLengthUnitType.Star` to equally set width for `SfTreeGr
         <treeGrid:TreeGridNumericColumn HeaderText="Reports To" MappingName="ReportsTo" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% endtabs %}
 
 <img src="Column-Sizing-images/winui-treegrid-column-sizing.png" alt="Column Sizing in WinUI TreeGrid" width="100%" Height="Auto"/>
 
