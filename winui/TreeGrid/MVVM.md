@@ -108,7 +108,7 @@ In the following example, the command receives the underlying data object as com
     <treeGrid:SfTreeGrid.Columns>
         <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
         <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <treeGrid:TreeGridTextColumn HeaderText="Employee ID" MappingName="EmployeeID" TextAlignment="Right" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="EmployeeID" />
         <treeGrid:TreeGridTextColumn HeaderText="Title" MappingName="Title" />
         <treeGrid:TreeGridTemplateColumn HeaderText="City" MappingName="City" >
             <treeGrid:TreeGridTemplateColumn.CellTemplate>		    
@@ -225,7 +225,7 @@ You can bind the `ItemsSource` from `ViewModel` to [TreeGridComboBoxColumn](htt
     <treeGrid:SfTreeGrid.Columns>
         <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
         <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <treeGrid:TreeGridTextColumn HeaderText="Employee ID" MappingName="EmployeeID" TextAlignment="Right" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="EmployeeID" />
         <treeGrid:TreeGridComboBoxColumn MappingName="Title" ItemsSource="{Binding Path=DataContext.TitleList, ElementName=sfTreeGrid}"/>
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
@@ -323,7 +323,7 @@ You can load a ComboBox inside [TreeGridTemplateColumn](https://help.syncfusio
     <treeGrid:SfTreeGrid.Columns>
         <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
         <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <treeGrid:TreeGridTextColumn HeaderText="Employee ID" MappingName="EmployeeID" TextAlignment="Right" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="EmployeeID" />
         <treeGrid:TreeGridTemplateColumn MappingName="Title">
             <treeGrid:TreeGridTemplateColumn.CellTemplate>
                 <DataTemplate>
