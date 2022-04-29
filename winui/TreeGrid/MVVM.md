@@ -208,7 +208,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![Shown button command binding to viewmodel in WinUI TreeGrid](MVVM_images/Shown-button-command-binding-to-viewmodel-in-WinUI-TreeGrid.png)
+<img src="MVVM_images/Shown-button-command-binding-to-viewmodel-in-WinUI-TreeGrid.png" alt="Shown button command binding to viewmodel in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ## Binding ComboBoxColumn ItemsSource from view model
 
@@ -218,7 +218,6 @@ You can bind the `ItemsSource` from `ViewModel` to [TreeGridComboBoxColumn](htt
 {% highlight xaml %}
 <treeGrid:SfTreeGrid x:Name="sfTreeGrid"                                   
                                    ColumnWidthMode="Star"
-                                   AllowFiltering="True"
                                    AllowEditing="True"
                                    ChildPropertyName="Children"
                                    AutoGenerateColumns="False"
@@ -306,7 +305,7 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![Shown binding comboboxcolumn ItemsSource from ViewModel in WinUI TreeGrid](MVVM_images/Shown-binding-comboboxcolumn-ItemsSource-from-ViewModel-in-WinUI-TreeGrid.png)
+<img src="MVVM_images/Shown-binding-comboboxcolumn-ItemsSource-from-ViewModel-in-WinUI-TreeGrid.png" alt="Shown binding comboboxcolumn ItemsSource from ViewModel in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ## Binding ItemsSource from view model to ComboBox inside data template
 
@@ -328,7 +327,7 @@ You can load a ComboBox inside [TreeGridTemplateColumn](https://help.syncfusio
         <treeGrid:TreeGridTemplateColumn MappingName="Title">
             <treeGrid:TreeGridTemplateColumn.CellTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding Title}"/>
+                    <TextBlock Text="{Binding Title}" VerticalAlignment="Center" />
                 </DataTemplate>
             </treeGrid:TreeGridTemplateColumn.CellTemplate>
             <treeGrid:TreeGridTemplateColumn.EditTemplate>
@@ -416,7 +415,7 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![Shown combobox inside data template binding MVVM in WinUI TreeGrid](MVVM_images/Shown-combobox-inside-data-template-binding-MVVM-in-WinUI-TreeGrid.png)
+<img src="MVVM_images/Shown-combobox-inside-data-template-binding-MVVM-in-WinUI-TreeGrid.png" alt="Shown combobox inside data template binding MVVM in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ## Binding TreeGrid columns from view model
 
