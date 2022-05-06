@@ -18,15 +18,15 @@ SfTreeGrid allows you to load child items only when they are requested to load o
 
 {% tabs %}
 {% highlight xaml %}
-<Page.DataContext>
-    <local:ViewModel />
-</Page.DataContext>
 
-<syncfusion:SfTreeGrid Name="treeGrid"
-                       LoadOnDemandCommand="{Binding CommandLoad}"
-                       AutoGenerateColumns="True"
-                       ItemsSource="{Binding EmployeeDetails}" >
-</syncfusion:SfTreeGrid>
+<treeGrid:SfTreeGrid Name="treeGrid"
+                    LoadOnDemandCommand="{Binding CommandLoad}"
+                    AutoGenerateColumns="True"
+                    ItemsSource="{Binding EmployeeDetails}" >
+    <treeGrid:SfTreeGrid.DataContext>
+        <local:ViewModel />
+    </treeGrid:SfTreeGrid.DataContext>
+</treeGrid:SfTreeGrid>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -290,7 +290,7 @@ private void TreeGrid_RequestTreeItems(object sender, TreeGridRequestTreeItemsEv
     if (e.ParentItem == null)
     {
         //get the root list - get all employees who have no boss 
-        e.ChildItems = (this.DataContext as ViewModel).EmployeeDetails.Where(x => x.ReportsTo == -1); //get all employees whose boss's id is -1 (no boss)
+        e.ChildItems = (this.treeGrid.DataContext as ViewModel).EmployeeDetails.Where(x => x.ReportsTo == -1); //get all employees whose boss's id is -1 (no boss)
     }
     else //if ParentItem not null, then set args.ChildList to the child items for the given ParentItem.
     {   //get the children of the parent object
@@ -298,7 +298,7 @@ private void TreeGrid_RequestTreeItems(object sender, TreeGridRequestTreeItemsEv
         if (emp != null)
         {
             //get all employees that report to the parent employee
-            e.ChildItems = (this.DataContext as ViewModel).GetReportees(emp.ID);
+            e.ChildItems = (this.treeGrid.DataContext as ViewModel).GetReportees(emp.ID);
         }
     }
 }
