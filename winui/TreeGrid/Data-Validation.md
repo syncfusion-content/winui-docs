@@ -38,7 +38,7 @@ public class EmployeeInfo : INotifyDataErrorInfo
 
     private List<string> errors = new List<string>();
 
-    public IEnumerable<object> GetErrors(string propertyName)
+    IEnumerable INotifyDataErrorInfo.GetErrors(string propertyName)
     {
         if (!propertyName.Equals("Title"))
             return null;

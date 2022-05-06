@@ -15,10 +15,12 @@ SfTreeGrid allows you to sort the data against one or more columns either in asc
 {% highlight xaml %}
 
 <treeGrid:SfTreeGrid Name="treeGrid"
-                       AllowSorting="True"					   
-                       AutoExpandMode="RootNodesExpanded"					   
-                       ChildPropertyName="Children"					   
-                       ItemsSource="{Binding EmployeeDetails}">					   
+                    AllowSorting="True"					   
+                    AutoExpandMode="RootNodesExpanded"					   
+                    ItemsSource="{Binding Employees}"
+                    ParentPropertyName="ID"
+                    ChildPropertyName="ReportsTo"
+                    SelfRelationRootValue="-1">					   
 </treeGrid:SfTreeGrid>					   
 					   	   
 {% endhighlight %}
@@ -35,15 +37,19 @@ In another way, you can enable or disable the sorting for particular column by s
 {% highlight xaml %}
 
 <treeGrid:SfTreeGrid Name="treeGrid"
-                       AllowSorting="True"
-                       AutoExpandMode="RootNodesExpanded"
-                       ChildPropertyName="Children"
-                       ItemsSource="{Binding EmployeeDetails}">
+                    AllowSorting="True"
+                    AutoExpandMode="RootNodesExpanded"
+                    ItemsSource="{Binding Employees}"
+                    ParentPropertyName="ID"
+                    ChildPropertyName="ReportsTo"
+                    SelfRelationRootValue="-1">
     <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn HeaderText="First Name" AllowSorting="True" MappingName="FirstName" />
-        <treeGrid:TreeGridTextColumn HeaderText="Last Name" AllowSorting="False" MappingName="LastName" />
-        <treeGrid:TreeGridTextColumn HeaderText="Employee ID" MappingName="EmployeeID" TextAlignment="Right" />
-        <treeGrid:TreeGridTextColumn HeaderText="City" MappingName="City" />
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" AllowSorting="True" />
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" AllowSorting="False" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridTextColumn HeaderText="Title" MappingName="Title" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Salary" MappingName="Salary" DisplayNumberFormat="C2"/>
+        <treeGrid:TreeGridNumericColumn HeaderText="Reports To" MappingName="ReportsTo" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 	
@@ -60,7 +66,7 @@ N> The[TreeGridColumn.AllowSorting](https://help.syncfusion.com/cr/winui/Syncfus
 
 End users can sort the column by clicking column header cell. Once the columns get sorted, the sort indicator will be displayed on the right side of the column header.
 
-![WinUI TreeGrid Sorting](Sorting-images/winui-treegrid-sorting.png)
+<img src="Sorting-images/winui-treegrid-sorting.png" alt="WinUI TreeGrid Sorting" width="100%" Height="Auto"/>
 
 ## Sort column in double click
 
@@ -70,11 +76,13 @@ By default, column gets sorted when column header clicked. You can change this b
 {% highlight xaml %}
 
 <treeGrid:SfTreeGrid Name="treeGrid"
-                       AllowSorting="True"
-                       AutoExpandMode="RootNodesExpanded"
-                       SortClickAction="DoubleClick"					   
-                       ChildPropertyName="Children"					   
-                       ItemsSource="{Binding EmployeeDetails}">					   
+                    AllowSorting="True"
+                    AutoExpandMode="RootNodesExpanded"
+                    SortClickAction="DoubleClick"					   
+                    ItemsSource="{Binding Employees}"
+                    ParentPropertyName="ID"
+                    ChildPropertyName="ReportsTo"
+                    SelfRelationRootValue="-1">					   
 </treeGrid:SfTreeGrid>					   
 					   							   
 {% endhighlight %}
@@ -101,7 +109,7 @@ Following are the sequence of sorting orders when clicking column header,
 SfTreeGrid control allows you to sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the <kbd>Ctrl</kbd> key.
 In the below screen shot, the `First Name` column sorted. Then the `Employee ID` column is sorted against the `First Name` data by clicking column header by pressing <kbd>Ctrl</kbd> key. The sorting state of `First Name` column is preserved and `Employee ID` column sorted against `First Name` column.
 
-![Multi Column Sorting in WinUI TreeGrid](Sorting-images/winui-treegrid-multi-sorting.png)
+<img src="Sorting-images/winui-treegrid-multi-sorting.png" alt="Multi Column Sorting in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ### Display sort order
 
@@ -111,11 +119,13 @@ It is also possible to display sorted order of columns in header by setting [SfT
 {% highlight xaml %}
 
 <treeGrid:SfTreeGrid Name="treeGrid"
-                       AllowSorting="True"
-                       AutoExpandMode="RootNodesExpanded"
-                       ShowSortNumbers="True"
-                       ChildPropertyName="Children"
-                       ItemsSource="{Binding EmployeeDetails}">
+                    AllowSorting="True"
+                    AutoExpandMode="RootNodesExpanded"
+                    ShowSortNumbers="True"
+                    ItemsSource="{Binding Employees}"
+                    ParentPropertyName="ID"
+                    ChildPropertyName="ReportsTo"
+                    SelfRelationRootValue="-1">
 </treeGrid:SfTreeGrid>
 						
 {% endhighlight %}
@@ -126,7 +136,7 @@ this.treeGrid.ShowSortNumbers = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Sorting orders in WinUI TreeGrid](Sorting-images/winui-treegrid-sorting-orders.png)
+<img src="Sorting-images/winui-treegrid-sorting-orders.png" alt="Sorting orders in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ## Programmatic Sorting
 
@@ -140,10 +150,12 @@ N> [SfTreeGrid.SortColumnChanging](https://help.syncfusion.com/cr/winui/Syncfusi
 {% highlight xaml %}
 
 <treeGrid:SfTreeGrid Name="treeGrid"
-                       AllowSorting="True"
-                       AutoExpandMode="RootNodesExpanded"
-                       ChildPropertyName="Children"
-                       ItemsSource="{Binding EmployeeDetails}">
+                    AllowSorting="True"
+                    AutoExpandMode="RootNodesExpanded"
+                    ItemsSource="{Binding Employees}"
+                    ParentPropertyName="ID"
+                    ChildPropertyName="ReportsTo"
+                    SelfRelationRootValue="-1">>
     <treeGrid:SfTreeGrid.SortColumnDescriptions>
         <grid:SortColumnDescription ColumnName="FirstName" SortDirection="Ascending" />
         <grid:SortColumnDescription ColumnName="EmployeeID" SortDirection="Descending"/>
@@ -272,7 +284,7 @@ this.treeGrid.SortComparers.Add(new SortComparer() { Comparer = new CustomSortCo
 
 Sorting `FirstName` column sorts the data using custom sort comparer available in `SfTreeGrid.SortComparers`.
 
-![Custom Sorting in WinUI TreeGrid](Sorting-images/winui-treegrid-custom-sorting.png)
+<img src="Sorting-images/winui-treegrid-custom-sorting.png" alt="Custom Sorting in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ## Handling events
 

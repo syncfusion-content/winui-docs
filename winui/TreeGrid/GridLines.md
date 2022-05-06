@@ -25,7 +25,7 @@ The following are the list of options available to customize grid lines visibili
 
 ### Both
 
-The [GridLinesVisibility.Both](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_Both) displays the TreeGrid with both horizontal and vertical grid lines. By default GridLinesVisibility value set as Both.
+The [GridLinesVisibility.Both](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_Both) displays the TreeGrid with both horizontal and vertical grid lines.
 
 {% tabs %}
 {% highlight xaml %}
@@ -47,7 +47,7 @@ this.sfTreeGrid.GridLinesVisibility = GridLinesVisibility.Both;
 {% endhighlight %}
 {% endtabs %}
 
-![GridLinesVisibility in WinUI TreeGrid](GridLines_images/GridLines_image1.png)
+<img src="GridLines_images/GridLines_image1.png" alt="GridLinesVisibility in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ### Horizontal
 
@@ -72,7 +72,7 @@ this.sfTreeGrid.GridLinesVisibility = GridLinesVisibility.Horizontal;
 {% endhighlight %}
 {% endtabs %}
 
-![Horizontal GridLinesVisibility in WinUI TreeGrid](GridLines_images/GridLines_image2.png)
+<img src="GridLines_images/GridLines_image2.png" alt="Horizontal GridLinesVisibility in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ### Vertical
 
@@ -97,10 +97,10 @@ this.sfTreeGrid.GridLinesVisibility = GridLinesVisibility.Vertical;
 {% endhighlight %}
 {% endtabs %}
 
-![Vertical GridLinesVisibility in WinUI TreeGrid](GridLines_images/GridLines_image3.png)
+<img src="GridLines_images/GridLines_image3.png" alt="Vertical GridLinesVisibility in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ### None
-[GridLinesVisibility.None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_None) displays the TreeGrid without grid lines.
+[GridLinesVisibility.None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_None) displays the TreeGrid without grid lines. By default GridLinesVisibility value set as None.
 
 {% tabs %}
 {% highlight xaml %}
@@ -125,7 +125,7 @@ this.sfTreeGrid.GridLinesVisibility = GridLinesVisibility.None;
 {% endhighlight %}
 {% endtabs %}
 
-![None GridLinesVisibility in WinUI TreeGrid](GridLines_images/GridLines_image4.png)
+<img src="GridLines_images/GridLines_image4.png" alt="None GridLinesVisibility in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ## Header rows
 
@@ -150,7 +150,7 @@ this.sfTreeGrid.HeaderLinesVisibility = GridLinesVisibility.Horizontal;
 {% endhighlight %}
 {% endtabs %}
 
-![Horizontal HeaderLinesVisibility in WinUI TreeGrid](GridLines_images/GridLines_image5.png)
+<img src="GridLines_images/GridLines_image5.png" alt="Horizontal HeaderLinesVisibility in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ## Limitations
 

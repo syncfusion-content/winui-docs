@@ -23,12 +23,12 @@ SfTreeGrid provides support for editing and it can be enabled or disabled by set
                         ParentPropertyName="ID"
                         SelfRelationRootValue="-1" >
     <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
         <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <treeGrid:TreeGridTextColumn HeaderText="Employee ID" MappingName="ID" />
-        <treeGrid:TreeGridTextColumn MappingName="Title" />
-        <treeGrid:TreeGridTextColumn HeaderText="Salary" MappingName="Salary" />
-        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridTextColumn HeaderText="Title" MappingName="Title" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Salary" MappingName="Salary" DisplayNumberFormat="C2"/>
+        <treeGrid:TreeGridNumericColumn HeaderText="Reports To" MappingName="ReportsTo" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 
@@ -58,7 +58,7 @@ this.treeGrid.Columns["FirstName"].AllowEditing = true;
 
 N> `TreeGridColumn.AllowEditing` takes higher priority than `SfTreeGrid.AllowEditing`
 
-![Editing in WinUI TreeGrid](Editing-images/winui-treegrid-editing.png)
+<img src="Editing-images/winui-treegrid-editing.png" alt="Editing in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 N> It is mandatory to set the [NavigationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.NavigationMode.html) to Cell to enable CurrentCell navigation and editing.
 

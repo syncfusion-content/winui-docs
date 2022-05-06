@@ -17,13 +17,13 @@ RowHeader is a special column used to indicate the status of row (current row, e
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                        ColumnWidthMode="Star"
                        AutoExpandMode="AllNodesExpanded"
                        ShowRowHeader="True" 
                        AutoGenerateColumns="False"
                        ChildPropertyName="Children"
-                       ItemsSource="{Binding EmployeeDetails}" >
+                       ItemsSource="{Binding EmployeeDetails}" />
 {% endhighlight %}
 {% endtabs %}
 
@@ -40,7 +40,7 @@ Description
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img1.jpeg"/>
+<img src="Rows_images/Rows_img1.png"/>
 </td>
 <td>
 Denotes the row which has current cell or selected item.
@@ -48,7 +48,7 @@ Denotes the row which has current cell or selected item.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img2.jpeg"/>
+<img src="Rows_images/Rows_img2.png"/>
 </td>
 <td>
 Denotes row is being edited. 
@@ -56,18 +56,10 @@ Denotes row is being edited.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img3.jpeg"/>
+<img src="Rows_images/Rows_img3.png"/>
 </td>
 <td>
 Denotes the row has errors. 
-</td>
-</tr>
-<tr>
-<td>
-<img src="Rows_images/Rows_img4.jpeg"/>
-</td>
-<td>
-Denotes that the current row which has errors.
 </td>
 </tr>
 </table>
@@ -78,7 +70,7 @@ You can display the row index value in row header by customizing the `Tr
 
 {% tabs %}
 {% highlight xaml %}
-<Style TargetType="syncfusion:TreeGridRowHeaderCell">
+<Style TargetType="treeGrid:TreeGridRowHeaderCell">
     <Setter Property="Background" Value="Transparent" />
     <Setter Property="BorderBrush" Value="#FFE5E5E5" />
     <Setter Property="BorderThickness" Value="0,0,1,1" />
@@ -86,7 +78,7 @@ You can display the row index value in row header by customizing the `Tr
     <Setter Property="IsTabStop" Value="False" />
     <Setter Property="Template">
         <Setter.Value>
-            <ControlTemplate TargetType="syncfusion:TreeGridRowHeaderCell">
+            <ControlTemplate TargetType="treeGrid:TreeGridRowHeaderCell">
                 <Border x:Name="PART_RowHeaderCellBorder"
             Background="{TemplateBinding Background}"
             BorderBrush="{TemplateBinding BorderBrush}"
@@ -107,13 +99,13 @@ You can display the row index value in row header by customizing the `Tr
 
 {% endhighlight %}
 {% endtabs %}
-![Row header customized to show the row index in WinUI TreeGrid](Rows_images/Rows_img5.png)
+<img src="Rows_images/Rows_img5.png" alt="Row header customized to show the row index in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ## Header row
 
 Header row is present in top of the treegrid which has column headers in it. Column header describes the caption to identify the column content.
 
-![Header row of WinUI TreeGrid](Rows_images/Rows_img6.png)
+<img src="Rows_images/Rows_img6.png" alt="Header row of WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ### Hiding header row
 
@@ -121,14 +113,14 @@ You can hide the header row by setting [SfTreeGrid.HeaderRowHeight](https://hel
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                        ColumnWidthMode="Star"
                        AutoExpandMode="AllNodesExpanded"
                        ShowRowHeader="True" 
                        HeaderRowHeight="0"
                        AutoGenerateColumns="False"
                        ChildPropertyName="Children"
-                       ItemsSource="{Binding EmployeeDetails}" >
+                       ItemsSource="{Binding EmployeeDetails}" />
 
 {% endhighlight %}
 {% endtabs %}
@@ -139,24 +131,25 @@ You can change the header cell background and foreground for specific column or
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:Window.Resources>
-        <Style TargetType="syncfusion:TreeGridHeaderCell" x:Key="headerStyle">
+<Grid>
+    <Grid.Resources>
+        <Style TargetType="treeGrid:TreeGridHeaderCell" x:Key="headerStyle">
             <Setter Property="Background" Value="#FF7AA732"/>
             <Setter Property="Foreground" Value="Red"/>
         </Style>
-</syncfusion:Window.Resources>
-
-<syncfusion:SfTreeGrid Name="treeGrid"
+    </Grid.Resources>
+<treeGrid:SfTreeGrid Name="treeGrid"
                        ColumnWidthMode="Star"
                        AutoExpandMode="AllNodesExpanded"
                        HeaderStyle="{StaticResource headerStyle}"
                        AutoGenerateColumns="False"
                        ChildPropertyName="Children"
-                       ItemsSource="{Binding EmployeeDetails}" > 
+                       ItemsSource="{Binding EmployeeDetails}" />
+</Grid>
 {% endhighlight %}
 {% endtabs %}
 
-![Style of the header row changed in WinUI treeGrid](Rows_images/Rows_img7.png)
+<img src="Rows_images/Rows_img7.png" alt="Style of the header row changed in WinUI treeGrid" width="100%" Height="Auto"/>
 
 You can change the style of the particular column header by using the [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_HeaderStyle) property in column,
 
@@ -166,5 +159,5 @@ You can change the style of the particular column header by using the [HeaderSty
 {% endhighlight %}
 {% endtabs %}
 
-![Style of a single column header changed in WinUI TreeGrid](Rows_images/Rows_img8.png)
+<img src="Rows_images/Rows_img8.png" alt="Style of a single column header changed in WinUI TreeGrid" width="100%" Height="Auto"/>
 

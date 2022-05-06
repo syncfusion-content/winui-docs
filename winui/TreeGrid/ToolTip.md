@@ -18,7 +18,7 @@ You can enable tooltip for the TreeGridCell by setting the [SfTreeGrid.ShowToolT
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                        ColumnWidthMode="Star"
                        ShowToolTip="True"
                        AutoExpandMode="RootNodesExpanded"
@@ -26,7 +26,7 @@ You can enable tooltip for the TreeGridCell by setting the [SfTreeGrid.ShowToolT
                        ChildPropertyName="ReportsTo"
                        ItemsSource="{Binding Employees}"
                        ParentPropertyName="ID"
-                       SelfRelationRootValue="-1" >	
+                       SelfRelationRootValue="-1" />	
 
 {% endhighlight %}
 {% highlight c# %}
@@ -41,8 +41,8 @@ You can enable the tooltip of a particular column by setting the [TreeGridColumn
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" ShowToolTip="True" />
-<syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" ShowToolTip="True" />
+<treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" ShowToolTip="True" />
+<treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" ShowToolTip="True" />
 
 {% endhighlight %}
 {% highlight c# %}
@@ -55,7 +55,7 @@ this.treeGrid.Columns["LastName"].ShowToolTip = true;
 
 N> It has higher priority than [SfTreeGrid.ShowToolTip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_ShowToolTip).
 
-![Showing ToolTip for record cell in WinUI TreeGrid](Tooltip_images/Tooltip_img1.png)
+<img src="Tooltip_images/Tooltip_img1.png" alt="Showing ToolTip for record cell in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ## Header tooltip
 
@@ -64,9 +64,9 @@ You can enable the tooltip of a header cell by setting the [TreeGridColumn.ShowH
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTreeGrid.Columns>
-    <syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" ShowHeaderToolTip="True" />
-</syncfusion:SfTreeGrid.Columns>
+<treeGrid:SfTreeGrid.Columns>
+    <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" ShowHeaderToolTip="True" />
+</treeGrid:SfTreeGrid.Columns>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -76,7 +76,7 @@ this.treeGrid.Columns["FirstName"].ShowHeaderToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Showing ToolTip for header cell in WinUI TreeGrid](Tooltip_images/ToolTip_img2.png)
+<img src="Tooltip_images/ToolTip_img2.png" alt="Showing ToolTip for header cell in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ## Tooltip customization
 
@@ -89,24 +89,24 @@ You can customize appearance of the tooltip of a particular column by setting th
 {% tabs %}
 {% highlight xaml %}
 
-<Page.Resources>
-    <local:StringToImageConverter x:Key="ImageConverter" />
-    <DataTemplate x:Key="TemplateToolTip">
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Image Height="100" Width="100" Source="{Binding LastName,Converter={StaticResource ImageConverter}}" />
-            <TextBlock Grid.Row="1" Text="{Binding LastName}" HorizontalAlignment="Center"/>
-        </Grid>
-    </DataTemplate>
-</Page.Resources>
-
-
-<syncfusion:SfTreeGrid.Columns>    
-    <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" ToolTipTemplate="{StaticResource TemplateToolTip}" ShowToolTip="True" />
-</syncfusion:SfTreeGrid.Columns>
+<treeGrid:SfTreeGrid>
+    <treeGrid:SfTreeGrid.Resources>
+        <local:StringToImageConverter x:Key="ImageConverter" />
+        <DataTemplate x:Key="TemplateToolTip">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image Height="100" Width="100" Source="{Binding LastName,Converter={StaticResource ImageConverter}}" />
+                <TextBlock Grid.Row="1" Text="{Binding LastName}" HorizontalAlignment="Center"/>
+            </Grid>
+        </DataTemplate>
+    </treeGrid:SfTreeGrid.Resources>
+    <treeGrid:SfTreeGrid.Columns>    
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" ToolTipTemplate="{StaticResource TemplateToolTip}" ShowToolTip="True" />   
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -128,7 +128,7 @@ public class StringToImageConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI treeGrid with Customized ToolTip Support](ToolTip_images/ToolTip_img3.png)
+<img src="ToolTip_images/ToolTip_img3.png" alt="WinUI treeGrid with Customized ToolTip Support" width="100%" Height="Auto"/>
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-customize-the-tooltip-using-DataTemplate-in-winui-datagrid).
 
@@ -148,13 +148,15 @@ The [CellToolTipOpening](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                        ColumnWidthMode="Star"
                        AutoExpandMode="RootNodesExpanded"
                        AutoGenerateColumns="False"
-                       ChildPropertyName="Children"
                        CellToolTipOpening="treeGrid_CellToolTipOpening"
-                       ItemsSource="{Binding EmployeeDetails}" >
+                       ChildPropertyName="ReportsTo"
+                       ItemsSource="{Binding Employees}"
+                       ParentPropertyName="ID"
+                       SelfRelationRootValue="-1"/>
 {% endhighlight %}
 {% highlight c# %}
 this.treeGrid.CellToolTipOpening += TreeGrid_CellToolTipOpening;

@@ -21,20 +21,22 @@ The record cells ([TreeGridCell](https://help.syncfusion.com/cr/winui/Syncfusion
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="styleSelector" />
-    <Style x:Key="redCellStyle" TargetType="syncfusion:TreeGridCell">
+    <Style x:Key="redCellStyle" TargetType="treeGrid:TreeGridCell">
         <Setter Property="Foreground" Value="Red" />
     </Style>
-    <Style x:Key="blueCellStyle" TargetType="syncfusion:TreeGridCell">
+    <Style x:Key="blueCellStyle" TargetType="treeGrid:TreeGridCell">
         <Setter Property="Foreground" Value="DarkBlue" />
     </Style>
 </Application.Resources>
 
-<syncfusion:SfTreeGrid Margin="5" Name="treeGrid"
-                               ChildPropertyName="Children"
-                               AutoGenerateColumns="False"
-                               ColumnWidthMode="Star"         
-                               CellStyleSelector="{StaticResource styleSelector}"
-                               ItemsSource="{Binding PersonDetails}" />
+<treeGrid:SfTreeGrid Name="treeGrid"
+                    AutoGenerateColumns="False"
+                    ColumnWidthMode="Star"         
+                    CellStyleSelector="{StaticResource styleSelector}"
+                    ItemsSource="{Binding Employees}"
+                    ParentPropertyName="ID" 
+                    ChildPropertyName="ReportsTo"
+                    SelfRelationRootValue="-1" />
 {% endhighlight %}
 {% highlight c# %}
 public class SelectorClass : StyleSelector
@@ -42,10 +44,10 @@ public class SelectorClass : StyleSelector
     protected override Style SelectStyleCore(object item, DependencyObject container)
     {
         var data = item as PersonInfo;
-        if (data != null && ((container as TreeGridCell).ColumnBase.TreeGridColumn.MappingName == "Id"))
+        if (data != null && ((container as TreeGridCell).ColumnBase.TreeGridColumn.MappingName == "ID"))
         {
             //custom condition is checked based on data.
-            if (data.Id < 10)
+            if (data.ID < 10)
                 return App.Current.Resources["redCellStyle"] as Style;
             return App.Current.Resources["blueCellStyle"] as Style;
         }
@@ -56,7 +58,7 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Styling cells using style selector in WinUI treegrid](Conditional-Styling_images/Conditional-Styling_img1.png)
+<img src="Conditional-Styling_images/Conditional-Styling_img1.png" alt="Styling cells using style selector in WinUI treegrid" width="100%" Height="Auto"/>
 
 ### Add image to cell
 
@@ -64,26 +66,23 @@ You can add the image to tree gird cell by using TreeGridTemplateColumn,
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Margin="5" Name="treeGrid"
-                    Grid.Row="0"                   
+<treeGrid:SfTreeGrid Name="treeGrid"                 
                     AutoGenerateColumns="False"
-                    CheckBoxSelectionMode="Default"
                     AutoExpandMode="RootNodesExpanded"
                     ChildPropertyName="ReportsTo"
-                    ExpanderColumn="ID" 
                     AllowResizingColumns="True"
-                    NavigationMode="Cell" AllowEditing="True"
-                    ParentPropertyName="ID"
+                    NavigationMode="Cell" 
+                    AllowEditing="True"
                     SelfRelationRootValue="-1"
                     SelectionMode="Single" 
                     ItemsSource="{Binding EmployeeDetails}" >
-    <syncfusion:SfTreeGrid.Columns>
-        <syncfusion:TreeGridTextColumn MappingName="FirstName"/>
-        <syncfusion:TreeGridTextColumn MappingName="LastName"/>
-        <syncfusion:TreeGridTextColumn MappingName="Department"/>
-        <syncfusion:TreeGridTextColumn MappingName="Title"/>
-        <syncfusion:TreeGridTemplateColumn HeaderText="Country" MappingName="ImageLink">
-            <syncfusion:TreeGridTemplateColumn.CellTemplate>
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn MappingName="FirstName"/>
+        <treeGrid:TreeGridTextColumn MappingName="LastName"/>
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridTextColumn MappingName="Title"/>
+        <treeGrid:TreeGridTemplateColumn HeaderText="Country" MappingName="ImageLink">
+            <treeGrid:TreeGridTemplateColumn.CellTemplate>
                 <DataTemplate>
                     <Grid>
                         <Image Width="30"
@@ -92,10 +91,10 @@ You can add the image to tree gird cell by using TreeGridTemplateColumn,
                                                 Converter={StaticResource converter}}" />
                     </Grid>
                 </DataTemplate>
-            </syncfusion:TreeGridTemplateColumn.CellTemplate>
-        </syncfusion:TreeGridTemplateColumn>
-    </syncfusion:SfTreeGrid.Columns>
-</syncfusion:SfTreeGrid>
+            </treeGrid:TreeGridTemplateColumn.CellTemplate>
+        </treeGrid:TreeGridTemplateColumn>
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -135,6 +134,6 @@ class StringToImageConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Adding image to a cell in WinUI treegrid](Conditional-Styling_images/Conditional-Styling_img2.png)
+<img src="Conditional-Styling_images/Conditional-Styling_img2.png" alt="Adding image to a cell in WinUI treegrid" width="100%" Height="Auto"/>
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-load-images-in-a-cell-in-winui-treegrid).
