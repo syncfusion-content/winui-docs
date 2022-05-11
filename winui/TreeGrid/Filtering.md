@@ -352,10 +352,10 @@ When integer, double, short, decimal, byte, or long are bound to the {{'[TreeGri
 </tr>
 <tr>
 <td>
-<img src="Filtering-images/winui-treegrid-text-filter.png" alt="Displays Text Filter in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Filtering-images/winui-treegrid-text-filter.png" alt="Displays Text Filter in WinUI TreeGrid" />
 </td>
 <td>
-<img src="Filtering-images/winui-treegrid-number-filter.png" alt="Displays Number Filter in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Filtering-images/winui-treegrid-number-filter.png" alt="Displays Number Filter in WinUI TreeGrid" />
 </td>
 </tr>
 <tr>
@@ -418,11 +418,11 @@ Here, the OK and Cancel buttons are unavailable and Done button is available to 
 
 The following screenshot illustrates the check box filter when `ImmediateUpdateColumnFilter` is set to `true`.
 
-<img src="Filtering-images/winui-treegrid-immediate-checkbox-filter.png" alt="CheckBox Filter with Immediate Filter in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Filtering-images/winui-treegrid-immediate-checkbox-filter.png" alt="CheckBox Filter with Immediate Filter in WinUI TreeGrid" />
 
 The following screenshot illustrates the advanced filter when `ImmediateUpdateColumnFilter` is set to `true`.
 
-<img src="Filtering-images/winui-treegrid-immediate-advanced-filter.png" alt="Advanced Filter with Immediate Filter in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Filtering-images/winui-treegrid-immediate-advanced-filter.png" alt="Advanced Filter with Immediate Filter in WinUI TreeGrid" />
 
 N> In check box filter, the `SelectAll` option is not reflected in the filter updates if [ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ImmediateUpdateColumnFilter) is true.
 
@@ -448,11 +448,11 @@ this.sfTreeGrid.Columns["FirstName"].AllowBlankFilters = true;
 
 The following screenshot illustrates the check box filter when `AllowBlankFilters` is set to `true`.
 
-<img src="Filtering-images/winui-treegrid-filter-null-values.png" alt="Filter Null Values using CheckBox Filter in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Filtering-images/winui-treegrid-filter-null-values.png" alt="Filter Null Values using CheckBox Filter in WinUI TreeGrid" />
 
 The following screenshot illustrates advanced filter when `AllowBlankFilters` is set to `true`.
 
-<img src="Filtering-images/winui-treegrid-null-values.png" alt="Filter Null Values using Advanced Filter in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Filtering-images/winui-treegrid-null-values.png" alt="Filter Null Values using Advanced Filter in WinUI TreeGrid" />
 
 ## Changing AdvancedFilter type when loading dynamic ItemsSource
 
@@ -574,7 +574,7 @@ private void OnSfTreeGridFilterItemsPopulating(object sender, TreeGridFilterItem
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Filtering-images/winui-treegrid-sort-option-customization.png" alt="Customizing Sort Option Text in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Filtering-images/winui-treegrid-sort-option-customization.png" alt="Customizing Sort Option Text in WinUI TreeGrid" />
 
 ## Appearance
 
@@ -607,7 +607,7 @@ xmlns:treeGridFiltering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Filtering-images/winui-treegrid-hide-sort-option.png" alt="Hide Sort options in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Filtering-images/winui-treegrid-hide-sort-option.png" alt="Hide Sort options in WinUI TreeGrid" />
 
 ### Customizing the filter popup size 
 

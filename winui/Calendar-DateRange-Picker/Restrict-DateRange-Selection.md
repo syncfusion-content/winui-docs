@@ -16,12 +16,12 @@ You can allow the users to select a date range within the particular range by sp
 N> Dates that appear outside minimum and maximum date range will be disabled (blackout).
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" %}
 
 <calendar:Calendar x:Name="sfCalendarDateRangePicker"/>
 
 {% endhighlight  %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.MinDate = new DateTimeOffset(new DateTime(2021, 03, 06));
@@ -43,7 +43,7 @@ N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-
 You can block particular dates from the date range selection, using the [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_BlackoutDates) collection property. The default value of `BlackoutDates` property is **null**.
 
 {% tabs %}
-{% highlight c# %}
+{% highlight c# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {       
@@ -74,9 +74,10 @@ public class ViewModel
 {% endtabs %}
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 5" %}
 
-<calendar:SfCalendarDateRangePicker BlackoutDates="{Binding BlockedDates}" 
+<calendar:SfCalendarDateRangePicker 
+                     BlackoutDates="{Binding BlockedDates}" 
                      x:Name="sfCalendarDateRangePicker">
     <calendar:SfCalendarDateRangePicker.DataContext>
         <local:ViewModel/>
@@ -84,7 +85,7 @@ public class ViewModel
 </calendar:SfCalendarDateRangePicker>
 
 {% endhighlight  %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 sfCalendarDateRangePicker.DataContext = new ViewModel();
 sfCalendarDateRangePicker.BlackoutDates = (sfCalendarDateRangePicker.DataContext as ViewModel).BlockedDates;
@@ -101,13 +102,13 @@ You can prevent the users from selecting any dates or days (example: all weekend
 N> You can also change the text to be displayed for specific days or dates in dropdown calendar using `ItemInfo.DisplayText` property.  
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker"
                                     ItemPrepared="SfCalendarDateRangePicker_ItemPrepared"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.ItemPrepared += SfCalendarDateRangePicker_ItemPrepared;
@@ -118,7 +119,7 @@ sfCalendarDateRangePicker.ItemPrepared += SfCalendarDateRangePicker_ItemPrepared
 You can handle the event as follows:
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="8" %}
 
 private void SfCalendarDateRangePicker_ItemPrepared(object sender, CalendarItemPreparedEventArgs e)
 {
@@ -139,7 +140,7 @@ private void SfCalendarDateRangePicker_ItemPrepared(object sender, CalendarItemP
 You can also change the text to be displayed for specific days or dates in `Calendar DateRange Picker` using [ItemInfo.DisplayText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_DisplayText) property. 
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="8 9" %}
 
 private void SfCalendarDateRangePicker_ItemPrepared(object sender, CalendarItemPreparedEventArgs e)
 {
@@ -163,7 +164,7 @@ N> Blackout dates will not be added in `SelectedRange` property even though it i
 You can limit the duration of selected range in `Calendar DateRange Picker` value by using [`MinDatesCountInRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MinDatesCountInRange) and [`MaxDatesCountInRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MaxDatesCountInRange) properties. By default, the value of `MinDatesCountInRange` value is **0** and `MaxDatesCountInRange` value is **null**.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.MaxDatesCountInRange = 10;
@@ -177,12 +178,13 @@ sfCalendarDateRangePicker.MinDatesCountInRange = 5;
 When `MinDisplayMode` value is **Year** then `MinDaysCountInRange` value should be at most **28** to select a date range in year view. The `MinDaysCountInRange` value should be updated based on `MinDisplayMode` property value for range selection in respective views. 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
-<calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker" MinDisplayMode="Year" />
+<calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker" 
+                                    MinDisplayMode="Year" />
 
 {% endhighlight  %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 sfCalendarDateRangePicker.MinDisplayMode = CalendarDisplayMode.Year;
 sfCalendarDateRangePicker.MinDatesCountInRange = 28;

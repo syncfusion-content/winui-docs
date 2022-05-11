@@ -40,10 +40,18 @@ Use to display the numeric data.
 </tr>
 <tr>
 <td>
-{{'[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html)'| markdownify }}
+{{'[TreeGriDateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html)'| markdownify }}
 </td>
 <td>
-Use to display the IEnumerable data using Combo Box.
+Use to display the date value
+</td>
+</tr>
+<tr>
+<td>
+{{'[TreeGridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html)'| markdownify }}
+</td>
+<td>
+Use to display the <code>DateTimeOffSet</Code> type data as time value.
 </td>
 </tr>
 <tr>
@@ -56,22 +64,6 @@ Use to display the Boolean type data
 </tr>
 <tr>
 <td>
-{{'[TreeGriDateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html)'| markdownify }}
-</td>
-<td>
-Use to display the date value
-</td>
-</tr>
-<tr>
-<td>
-{{'[TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html)'| markdownify }}
-</td>
-<td>
-Use to display the URI data
-</td>
-</tr>
-<tr>
-<td>
 {{'[TreeGridTemplateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html)'| markdownify }}
 </td>
 <td>
@@ -80,10 +72,18 @@ Use to display the custom template-specified content.
 </tr>
 <tr>
 <td>
-{{'[TreeGridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html)'| markdownify }}
+{{'[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html)'| markdownify }}
 </td>
 <td>
-Use to display the <code>DateTimeOffSet</Code> type data as time value.
+Use to display the IEnumerable data using Combo Box.
+</td>
+</tr>
+<tr>
+<td>
+{{'[TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html)'| markdownify }}
+</td>
+<td>
+Use to display the URI data
 </td>
 </tr>
 </table>

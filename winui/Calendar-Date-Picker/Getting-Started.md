@@ -23,26 +23,25 @@ This section explains the steps required to add the [WinUI Calendar Date Picker]
 4. Initialize the `SfCalendarDatePicker` control.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8 12" %}
 
-<Page
-    x:Class="GettingStarted.MainPage"
+<Window
+    x:Class="GettingStarted.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
     <Grid Name="grid">
         <!--Adding Calendar Date Picker control -->
         <calendar:SfCalendarDatePicker Name="sfCalendarDatePicker"/>
     </Grid>
-</Page>
+</Window>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="1 14 15" %}
 
 using Syncfusion.UI.Xaml.Calendar;
 
@@ -51,15 +50,14 @@ namespace GettingStarted
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class MainWindow : Window
     {
-        public MainPage()
+        public MainWindow()
         {
             this.InitializeComponent();
             // Creating an instance of the Calendar control
             SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
-
-            grid.Children.Add(sfCalendarDatePicker);
+            this.Content = sfCalendarDatePicker;
         }
     }
 }
@@ -76,7 +74,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can set or change the selected date programmatically by using [SelectedDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectedDate) property. If you not assign any value for the `SelectedDate` property, `Calendar Date Picker` will automatically assign the current system date as `SelectedDate`.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDatePicker sfCalendarDatePicker= new SfCalendarDatePicker();
 sfCalendarDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06));
@@ -93,12 +91,12 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can change the selected date interactively by enter the date value using keyboard or select from drop down calendar spinner. You can get the selected date from the `SelectedDate` property.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" %}
 
 <calendar:SfCalendarDatePicker Name="sfCalendarDatePicker" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
 SfCalendarDatePicker sfCalendarDatePicker= new SfCalendarDatePicker();
 
@@ -114,14 +112,15 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 If you want to set null value for the `Calendar Date Picker`, set the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_AllowNull) property as `true` and set `SelectedDate` property as `null`. If `AllowNull` property is `false`, then the current system date is updated in `SelectedDate` property and displayed instead of `null`.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3" %}
 
-<calendar:SfCalendarDatePicker SelectedDate="{x:Null}"
+<calendar:SfCalendarDatePicker Name="sfCalendarDatePicker"
+                               SelectedDate="{x:Null}"
                                AllowNull="True"
-                               Name="sfCalendarDatePicker" />
+                                />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 
 SfCalendarDatePicker sfCalendarDatePicker= new SfCalendarDatePicker();
 sfCalendarDatePicker.SelectedDate = null;
@@ -140,7 +139,7 @@ This section explains about `header` and `description` properties of CalendarDat
 The `Header` property is used to display the title for the `CalendarDatePicker` Control.
      
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4" %}
 
 <editors:SfCalendarDatePicker x:Name="CalendarDatePicker" 
                               Header="Enter your date of birth"
@@ -148,7 +147,7 @@ The `Header` property is used to display the title for the `CalendarDatePicker` 
                               Height="60" />
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDatePicker calendarDatePicker = new SfCalendarDatePicker();
 calendarDatePicker.Header = "Enter your date of birth";
@@ -162,7 +161,7 @@ calendarDatePicker.Header = "Enter your date of birth";
 By using the controls `HeaderTemplate` property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5 6 7 8 9" %}
 
 <editors:SfCalendarDatePicker  Width="180" Height="75" >
             <editors:SfCalendarDatePicker.HeaderTemplate>
@@ -173,9 +172,7 @@ By using the controls `HeaderTemplate` property, you can customize the appearanc
                     </StackPanel>
                 </DataTemplate>
             </editors:SfCalendarDatePicker.HeaderTemplate>
-        </editors:SfCalendarDatePicker>
-
-
+</editors:SfCalendarDatePicker>
 
 {% endhighlight %}
 {% endtabs %}
@@ -186,7 +183,7 @@ By using the controls `HeaderTemplate` property, you can customize the appearanc
 The `Description` support is used to display the content beneath the control as well as to provide guidance on the input that the control expects.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 5" %}
 
 <editors:SfCalendarDatePicker x:Name="CalendarDatePicker" 
                               Header="Enter your date of birth" 
@@ -196,7 +193,7 @@ The `Description` support is used to display the content beneath the control as 
                               />
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDatePicker calendarDatePicker = new SfCalendarDatePicker();
 calendarDatePicker.Description = "Candidate should born between 1990 to 2010.";
@@ -213,15 +210,16 @@ calendarDatePicker.Description = "Candidate should born between 1990 to 2010.";
 You can prompt the user with some information by using the [PlaceholderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_PlaceholderText) property. This will be displayed only when the `Calendar Date Picker` contains the `SelectedDate` property as `null` and `AllowNull` property as `true`. If `AllowNull` property is `false`, then the current system date is updated in `SelectedDate` property and displayed instead of `PlaceholderText`.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4" %}
 
-<calendar:SfCalendarDatePicker PlaceholderText="Select the Date"
+<calendar:SfCalendarDatePicker Name="sfCalendarDatePicker" 
+                               PlaceholderText="Select the Date"
                                SelectedDate="{x:Null}"
                                AllowNull="True"
-                               Name="sfCalendarDatePicker" />
+                                />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4" %}
 
 SfCalendarDatePicker sfCalendarDatePicker= new SfCalendarDatePicker();
 sfCalendarDatePicker.PlaceholderText = "Select the Date";
@@ -243,13 +241,14 @@ You will be notified when selected date is changed in `Calendar Date Picker` by 
 * `NewDate` - Gets a date which is currently selected.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
 
-<calendar:SfCalendarDatePicker SelectedDateChanged="SfCalendarDatePicker_SelectedDateChanged" 
-                               Name="sfCalendarDatePicker"/>
+<calendar:SfCalendarDatePicker Name="sfCalendarDatePicker" 
+                               SelectedDateChanged="SfCalendarDatePicker_SelectedDateChanged" 
+                               />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.SelectedDateChanged += SfCalendarDatePicker_SelectedDateChanged;
@@ -260,7 +259,7 @@ sfCalendarDatePicker.SelectedDateChanged += SfCalendarDatePicker_SelectedDateCha
 You can handle the event as follows:
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
 private void SfCalendarDatePicker_SelectedDateChanged(object sender, SelectedDateChangedEventArgs e)
 {
@@ -278,13 +277,14 @@ Since the default value of `EditMode` property is **Mask**, each input numbers e
 If you want to perform the validation after the user completely entered their date inputs, set the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_EditMode) property value as **Normal**. Then the entered date value is validated with the `DisplayDateFormat` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `DisplayDateFormat` property, the previously selected date value sets to `SelectedDate` property.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
-<calendar:SfCalendarDatePicker EditMode="Normal"
-                               x:Name="sfCalendarDatePicker" />
+<calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker" 
+                               EditMode="Normal"
+                               />
 
 {% endhighlight  %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.EditMode = DateTimeEditMode.Normal;
@@ -309,14 +309,14 @@ Users are restricted to select a blackout date from dropdown, however user can g
 N> `SelectedDateChanging` event is called before the `SelectedDateChanged` event when a date is selected.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
 <calendar:SfCalendarDatePicker Height="30" Width="250" 
                                x:Name="SfCalendarDatePicker"
                                SelectedDateChanging="SfCalendarDatePicker_DateChanging" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.SelectedDateChanging += SfCalendarDatePicker_DateChanging;
@@ -327,7 +327,7 @@ sfCalendarDatePicker.SelectedDateChanging += SfCalendarDatePicker_DateChanging;
 You can handle the event as follows:
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
  private void SfCalendarDatePicker_DateChanging(object sender, Syncfusion.UI.Xaml.Editors.DateChangingEventArgs e)
 {
@@ -348,13 +348,14 @@ You can hide the dropdown button in `Calendar Date Picker` by setting the [ShowD
 N> When the dropdown button is hidden, you can still open the dropdown calendar using **ALT + DownArrow** keyboard shortcut.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
-<calendar:SfCalendarDatePicker ShowDropDownButton="False" 
-                               x:Name="sfCalendarDatePicker"/>
+<calendar:SfCalendarDatePicker 
+                               x:Name="sfCalendarDatePicker"
+                               ShowDropDownButton="False"  />
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.ShowDropDownButton = false;
@@ -373,13 +374,14 @@ If you want to select the date from drop down calendar only by clicking the **Ok
 N> When the submit buttons are hidden, `SelectedDate` property will be updated as soon you choose start and end date from dropdown.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
-<calendar:SfCalendarDatePicker ShowSubmitButtons="true"
-                               x:Name="sfCalendarDatePicker"/>
+<calendar:SfCalendarDatePicker 
+                               x:Name="sfCalendarDatePicker"
+                               ShowSubmitButtons="true" />
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.ShowSubmitButtons = true;

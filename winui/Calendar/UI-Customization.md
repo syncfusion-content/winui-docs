@@ -16,13 +16,14 @@ This section describes about the various customization options available in [Cal
 You can hide the days that are out of the scope of current view by setting the [OutOfScopeVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_OutOfScopeVisibility) property value as **Hidden**. The default value of `OutOfScopeVisibility` property is **Enabled**.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
-<calendar:SfCalendar OutOfScopeVisibility="Hidden"
-                     x:Name="sfCalendar"/>
+<calendar:SfCalendar x:Name="sfCalendar"
+                     OutOfScopeVisibility="Hidden" 
+                     />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.OutOfScopeVisibility = OutOfScopeVisibility.Hidden;
@@ -39,7 +40,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can change the UI of specific cells in `Calendar` by using the [CalendarItem.ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItem.html) property. The `DataContext` of `CalendarItem.ContentTemplate` is `Calendar`. 
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="EventDataConverter.cs" %}
 
 public class EventDataConverter : IValueConverter
 {
@@ -99,7 +100,7 @@ public class EventDataConverter : IValueConverter
 {% endtabs %}
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" %}
 
 <Grid>
 <Grid.Resources>
@@ -226,7 +227,7 @@ You can customize the colors of day names and headers of month, year, decade and
 </table>
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" %}
 
 <calendar:SfCalendar CornerRadius="6">
      <calendar:SfCalendar.Resources>

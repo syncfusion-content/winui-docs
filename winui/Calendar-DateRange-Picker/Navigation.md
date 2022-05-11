@@ -22,15 +22,15 @@ You can restrict navigation within a minimum and maximum views by using [`MinDis
 By default, the value of `MinDisplayMode` property is **Month** and `MaxDisplayMode` property is **Century**.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3" %}
 
 <calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker"
-                               MinDisplayMode="Month"
-                               MaxDisplayMode="Year"
-                               />
+                                    MinDisplayMode="Month"
+                                    MaxDisplayMode="Year"
+                                    />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.MinDisplayMode = CalendarDisplayMode.Month;
@@ -50,16 +50,15 @@ N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-
 You can restrict users to select date range within specific views (example : choosing manufactured and expiry date of product) in `Calendar DateRange Picker` control using the `MinDisplayMode` and `MaxDisplayMode` properties.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4" %}
 
 <calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker"
                                     FormatString="{}{0:MM/yyyy} - {1:MM/yyyy}"
                                     MinDisplayMode="Year"
-                                    MaxDisplayMode="Decade"
-                               />
+                                    MaxDisplayMode="Decade" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.MinDisplayMode = CalendarDisplayMode.Year;
