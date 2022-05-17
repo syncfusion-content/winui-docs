@@ -281,7 +281,7 @@ this.sfDataGrid.AddNewRowPosition = AddNewRowPosition.Top;
 {% endtabs %}
 
 
-![WinUI DataGrid with Add New Row](CRUD-Operations_images/winui-datagrid-add-new-row.png)
+<img src="CRUD-Operations_images/winui-datagrid-add-new-row.png" alt="WinUI DataGrid with Add New Row" width="100%" Height="Auto"/>
 
 You can get the row row index of AddNewRow using [SfDataGrid.GetAddNewRowIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridIndexResolver.html#Syncfusion_UI_Xaml_DataGrid_GridIndexResolver_GetAddNewRowIndex_Syncfusion_UI_Xaml_DataGrid_SfDataGrid_) method.
 
@@ -316,7 +316,7 @@ this.sfDataGrid.AddNewRowText = "Click here to add new row in datagrid";
 {% endhighlight %}
 {% endtabs %}
 
-![Changing the Add New Row Text in WinUI DataGrid](CRUD-Operations_images/winui-datagrid-add-new-row-text.png)
+<img src="CRUD-Operations_images/winui-datagrid-add-new-row-text.png" alt="Changing the Add New Row Text in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ### Customize the newly added row position
 
@@ -351,7 +351,7 @@ void SfDataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
-![Add New Row with Default Values in WinUI DataGrid](CRUD-Operations_images/winui-datagrid-add-new-row-with-default-values.png)
+<img src="CRUD-Operations_images/winui-datagrid-add-new-row-with-default-values.png" alt="Add New Row with Default Values in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ### Working with complex properties in AddNewRow
 
@@ -405,7 +405,7 @@ private void SfDataGrid_RowValidating(object sender, RowValidatingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Data Validation in Add New Row in WinUI DataGrid](CRUD-Operations_images/winui-datagrid-data-validation-in-add-new-row.png)
+<img src="CRUD-Operations_images/winui-datagrid-data-validation-in-add-new-row.png" alt="Data Validation in Add New Row in WinUI DataGrid" width="100%" Height="Auto"/>
 
 Similarly, you can validate the cells in AddNewRow by using the [CurrentCellValidating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentCellValidating) event.
 
@@ -415,9 +415,9 @@ SfDataGrid enables you to customize the watermark text of AddNewRow by changing 
 
 To customize the AddNewRowText, add the default [Syncfusion.Grid.WinUI.resw](https://github.com/syncfusion/winui-controls-localization-resource-files) file in **Resources** folder and then customize the value of AddNewRowText. Refer [here](https://help.syncfusion.com/winui/localization) to learn more about localization. 
 
-![Add New Text Customization using Resx File in WinUI DataGrid](CRUD-Operations_images/winui-datagrid-add-new-text-customization-using-resx.png)
+<img src="CRUD-Operations_images/winui-datagrid-add-new-text-customization-using-resx.png" alt="Add New Text Customization using Resx File in WinUI DataGrid" width="100%" Height="Auto"/>
 
-![Localized Add New Row Text in WinUI DataGrid](CRUD-Operations_images/winui-datagrid-localized-add-new-row-text.png)
+<img src="CRUD-Operations_images/winui-datagrid-localized-add-new-row-text.png" alt="Localized Add New Row Text in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ### Customizing AddNewRow text using style
 
@@ -498,8 +498,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
                                       BorderBrush="Gray"
                                       FontWeight="Light"
                                       Foreground="Red" />
-                        </Border>
-                    
+                        </Border>                    
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>
@@ -509,7 +508,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 {% endhighlight %}
 {% endtabs %}
 
-![Displays Add New Row Text as Watermark in WinUI DataGrid](CRUD-Operations_images/winui-datagrid-add-row-text-as-watermark.png)
+<img src="CRUD-Operations_images/winui-datagrid-add-row-text-as-watermark.png" alt="Displays Add New Row Text as Watermark in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ### AddNewRow support in Master-Details View
 
@@ -611,7 +610,7 @@ this.firstLevelNestedGrid.AddNewRowText = "Click here to add new row in child gr
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Add New Row Text in WinUI DetailsView DataGrid](CRUD-Operations_images/winui-detailsview-datagrid-add-new-row-text.png)
+<img src="CRUD-Operations_images/winui-detailsview-datagrid-add-new-row-text.png" alt="Changing Add New Row Text in WinUI DetailsView DataGrid" width="100%" Height="Auto"/>
 
 ## Delete row
 

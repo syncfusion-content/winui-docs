@@ -11,7 +11,7 @@ documentation: ug
 
 SfDataGrid provides support to represent the hierarchical data in the form of nested tables using Master-Details View. You can expand or collapse the nested tables ([DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDataGrid.html)) by using an expander in a row or programmatically.  The number of tables nested with relations is unlimited.
 
-![WinUI DataGrid with Master Details View](Master-Details-View-Images/winui-datagrid-master-details-view.png)
+<img src="Master-Details-View-Images/winui-datagrid-master-details-view.png" alt="WinUI DataGrid with Master Details View" width="100%" Height="Auto"/>
 
 ## Generating Master-Details view from IEnumerable
 
@@ -276,21 +276,28 @@ Bind the collection created in the previous step to [SfDataGrid.ItemsSource](htt
  
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="dataGrid"
+<dataGrid:SfDataGrid  x:Name="dataGrid"
                         ColumnWidthMode="Star"
+                        GridLinesVisibility="Both"
                         AutoGenerateColumns="True"
                         AutoGenerateRelations="True"
                         ItemsSource="{Binding Employees}" />
 {% endhighlight %}
 {% highlight c# %}
 dataGrid.AutoGenerateRelations = true;
+dataGrid.AutoGeneratingRelations += dataGrid_AutoGeneratingRelations;
+
+    private void dataGrid_AutoGeneratingRelations(object sender, AutoGeneratingRelationsArgs e)
+    {
+        e.GridViewDefinition.DataGrid.GridLinesVisibility = Syncfusion.UI.Xaml.Grids.GridLinesVisibility.Both;
+    }
 {% endhighlight %}
 {% endtabs %}
 
 When relations are auto-generated, you can handle the [SfDataGrid.AutoGeneratingRelations](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_AutoGenerateRelations) event to customize or cancel the [GridViewDefinition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html) before they are added to the [SfDataGrid.DetailsViewDefinition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDefinition.html). 
 Here, two relations are created from `Sales` and `Orders` collection property.
 
-![WinUI DataGrid displays Master Details View based on Auto Generated Relations](Master-Details-View-Images/winui-master-details-view-datagrid-auto-generation.png)
+<img src="Master-Details-View-Images/winui-master-details-view-datagrid-auto-generation.png" alt="WinUI DataGrid displays Master Details View based on Auto Generated Relations" width="100%" Height="Auto"/>
 
 #### Manually defining Relations
 
@@ -299,89 +306,95 @@ To define Master-Details View relations, create [GridViewDefinition](https://hel
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                 AutoGenerateColumns="True"
                 ColumnWidthMode="Star"
+                GridLinesVisibility="Both"
                 AutoGenerateRelations="False"
                 ItemsSource="{Binding Employees}">
-    <syncfusion:SfDataGrid.DetailsViewDefinition>
+    <dataGrid:SfDataGrid.DetailsViewDefinition>
         <!--  FirstLevelNestedGrid1 is created here  -->
-        <syncfusion:GridViewDefinition RelationalColumn="Sales">
-            <syncfusion:GridViewDefinition.DataGrid>
-                <syncfusion:SfDataGrid x:Name="FirstLevelNestedGrid1"
+        <dataGrid:GridViewDefinition RelationalColumn="Sales">
+            <dataGrid:GridViewDefinition.DataGrid>
+                <dataGrid:SfDataGrid x:Name="FirstLevelNestedGrid1"
+                                GridLinesVisibility="Both"
                                 AutoGenerateColumns="True"/>
-            </syncfusion:GridViewDefinition.DataGrid>
-        </syncfusion:GridViewDefinition>
+            </dataGrid:GridViewDefinition.DataGrid>
+        </dataGrid:GridViewDefinition>
         <!--  FirstLevelNestedGrid2 is created here  -->
-        <syncfusion:GridViewDefinition RelationalColumn="Orders">
-            <syncfusion:GridViewDefinition.DataGrid>
-                <syncfusion:SfDataGrid x:Name="FirstLevelNestedGrid2"
+        <dataGrid:GridViewDefinition RelationalColumn="Orders">
+            <dataGrid:GridViewDefinition.DataGrid>
+                <dataGrid:SfDataGrid x:Name="FirstLevelNestedGrid2"
+                                GridLinesVisibility="Both"
                                 AutoGenerateColumns="True"/>
-            </syncfusion:GridViewDefinition.DataGrid>
-        </syncfusion:GridViewDefinition>
-    </syncfusion:SfDataGrid.DetailsViewDefinition>
-</syncfusion:SfDataGrid>
+            </dataGrid:GridViewDefinition.DataGrid>
+        </dataGrid:GridViewDefinition>
+    </dataGrid:SfDataGrid.DetailsViewDefinition>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 dataGrid.AutoGenerateRelations = false;
 
 var gridViewDefinition1 = new GridViewDefinition();
 gridViewDefinition1.RelationalColumn = "Sales";
-gridViewDefinition1.DataGrid = new SfDataGrid() { Name = "FirstLevelNestedGrid1", AutoGenerateColumns = true };
+gridViewDefinition1.DataGrid = new SfDataGrid() { Name = "FirstLevelNestedGrid1", AutoGenerateColumns = true, GridLinesVisibility = Syncfusion.UI.Xaml.Grids.GridLinesVisibility.Both };
 
 var gridViewDefinition2 = new GridViewDefinition();
 gridViewDefinition2.RelationalColumn = "Orders";
-gridViewDefinition2.DataGrid = new SfDataGrid() { Name = "FirstLevelNestedGrid2", AutoGenerateColumns = true };
+gridViewDefinition2.DataGrid = new SfDataGrid() { Name = "FirstLevelNestedGrid2", AutoGenerateColumns = true, GridLinesVisibility = Syncfusion.UI.Xaml.Grids.GridLinesVisibility.Both };
 
 dataGrid.DetailsViewDefinition.Add(gridViewDefinition1);
 dataGrid.DetailsViewDefinition.Add(gridViewDefinition2);
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays Master Details View based on Manually defined Relations](Master-Details-View-Images/winui-datagrid-master-details-view-manual-relation.png)
+<img src="Master-Details-View-Images/winui-datagrid-master-details-view-manual-relation.png" alt="WinUI DataGrid displays Master Details View based on Manually defined Relations" width="100%" Height="Auto"/>
 
 In the same way, you can define relations for first level nested grids by defining relations to the [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid) of first level nested grid.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                                 AutoGenerateColumns="True"
                                 ItemsSource="{Binding Path=Source,Mode=TwoWay}"
+                                GridLinesVisibility="Both"
                                 ColumnWidthMode="Star">
-    <syncfusion:SfDataGrid.DetailsViewDefinition >
-        <syncfusion:GridViewDefinition RelationalColumn="OrderDetails"  >
-            <syncfusion:GridViewDefinition.DataGrid >
-                <syncfusion:SfDataGrid x:Name="FirstDetailsViewGrid" 
+    <dataGrid:SfDataGrid.DetailsViewDefinition >
+        <dataGrid:GridViewDefinition RelationalColumn="Sales"  >
+            <dataGrid:GridViewDefinition.DataGrid >
+                <dataGrid:SfDataGrid x:Name="FirstDetailsViewGrid" 
                                         AutoGenerateColumns="True"
-                                        AutoGenerateRelations="False">
-                    <syncfusion:SfDataGrid.DetailsViewDefinition>
-                        <syncfusion:GridViewDefinition RelationalColumn="SalesDetails">
-                            <syncfusion:GridViewDefinition.DataGrid>
-                                <syncfusion:SfDataGrid x:Name="SecondDetailsViewGrid" 
-                                                        AutoGenerateColumns="True" >
-                                </syncfusion:SfDataGrid>
-                            </syncfusion:GridViewDefinition.DataGrid>
-                        </syncfusion:GridViewDefinition>
-                    </syncfusion:SfDataGrid.DetailsViewDefinition>
-                </syncfusion:SfDataGrid>
-            </syncfusion:GridViewDefinition.DataGrid>
-        </syncfusion:GridViewDefinition>
-    </syncfusion:SfDataGrid.DetailsViewDefinition>
-</syncfusion:SfDataGrid>
+                                        AutoGenerateRelations="False"
+                                        GridLinesVisibility="Both">
+                    <dataGrid:SfDataGrid.DetailsViewDefinition>
+                        <dataGrid:GridViewDefinition RelationalColumn="Orders">
+                            <dataGrid:GridViewDefinition.DataGrid>
+                                <dataGrid:SfDataGrid x:Name="SecondDetailsViewGrid"
+                                        GridLinesVisibility="Both"     
+                                        AutoGenerateColumns="True" >
+                                </dataGrid:SfDataGrid>
+                            </dataGrid:GridViewDefinition.DataGrid>
+                        </dataGrid:GridViewDefinition>
+                    </dataGrid:SfDataGrid.DetailsViewDefinition>
+                </dataGrid:SfDataGrid>
+            </dataGrid:GridViewDefinition.DataGrid>
+        </dataGrid:GridViewDefinition>
+    </dataGrid:SfDataGrid.DetailsViewDefinition>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 dataGrid.AutoGenerateRelations = false;
 
 // GridViewDefinition for parent DataGrid
 var gridViewDefinition1 = new GridViewDefinition();
-gridViewDefinition1.RelationalColumn = "OrderDetails";
-var firstLevelNestedGrid = new SfDataGrid() { Name = "FirstLevelNestedGrid", AutoGenerateColumns = true };
+gridViewDefinition1.RelationalColumn = "Sales";
+var firstLevelNestedGrid = new SfDataGrid() { Name = "FirstLevelNestedGrid", AutoGenerateColumns = true, GridLinesVisibility = Syncfusion.UI.Xaml.Grids.GridLinesVisibility.Both };
 firstLevelNestedGrid.AutoGenerateRelations = false;
 
 // GridViewDefinition for FirstLevelNestedGrid
 var gridViewDefinition = new GridViewDefinition();
-gridViewDefinition.RelationalColumn = "SalesDetails";
-gridViewDefinition.DataGrid = new SfDataGrid() { Name = "SecondLevelNestedGrid", AutoGenerateColumns = true };
+gridViewDefinition.RelationalColumn = "Orders";
+gridViewDefinition.DataGrid = new SfDataGrid() { Name = "SecondLevelNestedGrid", AutoGenerateColumns = true, GridLinesVisibility = Syncfusion.UI.Xaml.Grids.GridLinesVisibility.Both };
 firstLevelNestedGrid.DetailsViewDefinition.Add(gridViewDefinition);
 gridViewDefinition1.DataGrid = firstLevelNestedGrid;
 
@@ -389,7 +402,7 @@ dataGrid.DetailsViewDefinition.Add(gridViewDefinition1);
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays Master Details View with Manually defined Relations](Master-Details-View-Images/winui-datagrid-master-details-view-manual-defined-relation.png)
+<img src="Master-Details-View-Images/winui-datagrid-master-details-view-manual-defined-relation.png" alt="WinUI DataGrid displays Master Details View with Manually defined Relations" width="100%" Height="Auto"/>
 
 ## Populating Master-Details view through events
 
@@ -397,8 +410,9 @@ You can load `ItemsSource` for [DetailsViewDataGrid](https://help.syncfusion.com
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="dataGrid"
+<dataGrid:SfDataGrid  x:Name="dataGrid"
                         ColumnWidthMode="Star"
+                        GridLinesVisibility="Both"
                         AutoGenerateColumns="True"
                         AutoGenerateRelations="True"
                         DetailsViewExpanding="dataGrid_DetailsViewExpanding"
@@ -429,21 +443,23 @@ In the below code snippet, `AutoGenerateRelations` set to false and also relatio
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="dataGrid"
+<dataGrid:SfDataGrid  x:Name="dataGrid"
                         ColumnWidthMode="Star"
+                        GridLinesVisibility="Both"
                         AutoGenerateColumns="True"
                         AutoGenerateRelations="True"
                         DetailsViewExpanding="dataGrid_DetailsViewExpanding"
                         ItemsSource="{Binding Employees}" >
-    <syncfusion:SfDataGrid.DetailsViewDefinition>
-        <syncfusion:GridViewDefinition RelationalColumn="ProductDetails">
-            <syncfusion:GridViewDefinition.DataGrid>
-                <syncfusion:SfDataGrid x:Name="FirstLevelNestedGrid"  
+    <dataGrid:SfDataGrid.DetailsViewDefinition>
+        <dataGrid:GridViewDefinition RelationalColumn="ProductDetails">
+            <dataGrid:GridViewDefinition.DataGrid>
+                <dataGrid:SfDataGrid x:Name="FirstLevelNestedGrid"
+                                        GridLinesVisibility="Both"  
                                         AutoGenerateColumns="True" />
-            </syncfusion:GridViewDefinition.DataGrid>
-        </syncfusion:GridViewDefinition>
-    </syncfusion:SfDataGrid.DetailsViewDefinition>
-</syncfusion:SfDataGrid>
+            </dataGrid:GridViewDefinition.DataGrid>
+        </dataGrid:GridViewDefinition>
+    </dataGrid:SfDataGrid.DetailsViewDefinition>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -459,30 +475,33 @@ For manually defined relation, the properties can be directly set to the [ViewDe
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                         AutoGenerateColumns="True"
                         AutoGenerateRelations="False"
+                        GridLinesVisibility="Both"
                         ItemsSource="{Binding Path=Source,Mode=TwoWay}"
                         ColumnWidthMode="Star">
-    <syncfusion:SfDataGrid.DetailsViewDefinition>
-        <syncfusion:GridViewDefinition RelationalColumn="OrderDetails">
-            <syncfusion:GridViewDefinition.DataGrid>
-                <syncfusion:SfDataGrid x:Name="FirstLevelNestedGrid"
+    <dataGrid:SfDataGrid.DetailsViewDefinition>
+        <dataGrid:GridViewDefinition RelationalColumn="OrderDetails">
+            <dataGrid:GridViewDefinition.DataGrid>
+                <dataGrid:SfDataGrid x:Name="FirstLevelNestedGrid"
                                         AllowEditing="True"
                                         AllowFiltering="True"
                                         AllowResizingColumns="True"
                                         AllowSorting="True"
+                                        GridLinesVisibility="Both"
                                         AutoGenerateColumns="False" />
-            </syncfusion:GridViewDefinition.DataGrid>
-        </syncfusion:GridViewDefinition>
-    </syncfusion:SfDataGrid.DetailsViewDefinition>
-</syncfusion:SfDataGrid>
+            </dataGrid:GridViewDefinition.DataGrid>
+        </dataGrid:GridViewDefinition>
+    </dataGrid:SfDataGrid.DetailsViewDefinition>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 FirstLevelNestedGrid.AllowEditing = true;
 FirstLevelNestedGrid.AllowFiltering = true;
 FirstLevelNestedGrid.AllowResizingColumns = true;
 FirstLevelNestedGrid.AllowSorting = true;
+FirstLevelNestedGrid.GridLinesVisibility = Syncfusion.UI.Xaml.Grids.GridLinesVisibility.Both;
 {% endhighlight %}
 {% endtabs %}
 
@@ -490,37 +509,41 @@ For two levels of nesting,
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                         AutoGenerateColumns="True"
                         AutoGenerateRelations="False"
+                        v
                         ItemsSource="{Binding Path=Source,Mode=TwoWay}"
                         ColumnWidthMode="Star">
-    <syncfusion:SfDataGrid.DetailsViewDefinition >
-        <syncfusion:GridViewDefinition RelationalColumn="OrderDetails"  >
-            <syncfusion:GridViewDefinition.DataGrid >
-                <syncfusion:SfDataGrid x:Name="FirstDetailsViewGrid" 
+    <dataGrid:SfDataGrid.DetailsViewDefinition >
+        <dataGrid:GridViewDefinition RelationalColumn="OrderDetails"  >
+            <dataGrid:GridViewDefinition.DataGrid >
+                <dataGrid:SfDataGrid x:Name="FirstDetailsViewGrid" 
                                         AutoGenerateColumns="True"
+                                        GridLinesVisibility="Both"
                                         AutoGenerateRelations="False">
-                    <syncfusion:SfDataGrid.DetailsViewDefinition>
-                        <syncfusion:GridViewDefinition RelationalColumn="SalesDetails">
-                            <syncfusion:GridViewDefinition.DataGrid>
-                                <syncfusion:SfDataGrid x:Name="SecondDetailsViewGrid" 
-                                                        AllowEditing="True"
-                                                        AllowFiltering="True"
-                                                        AutoGenerateColumns="True" >
-                                </syncfusion:SfDataGrid>
-                            </syncfusion:GridViewDefinition.DataGrid>
-                        </syncfusion:GridViewDefinition>
-                    </syncfusion:SfDataGrid.DetailsViewDefinition>
-                </syncfusion:SfDataGrid>
-            </syncfusion:GridViewDefinition.DataGrid>
-        </syncfusion:GridViewDefinition>
-    </syncfusion:SfDataGrid.DetailsViewDefinition>
-</syncfusion:SfDataGrid>
+                    <dataGrid:SfDataGrid.DetailsViewDefinition>
+                        <dataGrid:GridViewDefinition RelationalColumn="SalesDetails">
+                            <dataGrid:GridViewDefinition.DataGrid>
+                                <dataGrid:SfDataGrid x:Name="SecondDetailsViewGrid" 
+                                        AllowEditing="True"
+                                        AllowFiltering="True"
+                                        GridLinesVisibility="Both"
+                                        AutoGenerateColumns="True" >
+                                </dataGrid:SfDataGrid>
+                            </dataGrid:GridViewDefinition.DataGrid>
+                        </dataGrid:GridViewDefinition>
+                    </dataGrid:SfDataGrid.DetailsViewDefinition>
+                </dataGrid:SfDataGrid>
+            </dataGrid:GridViewDefinition.DataGrid>
+        </dataGrid:GridViewDefinition>
+    </dataGrid:SfDataGrid.DetailsViewDefinition>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 SecondDetailsViewGrid.AllowEditing = true;
 SecondDetailsViewGrid.AllowFiltering = true;
+SecondDetailsViewGrid.GridLinesVisibility = Syncfusion.UI.Xaml.Grids.GridLinesVisibility.Both;
 {% endhighlight %}
 {% endtabs %}
 
@@ -530,12 +553,13 @@ When the relation is auto-generated, you can get the [GridViewDefinition.DataGri
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                         AutoGenerateColumns="True"
                         AutoGenerateRelations="True"
+                        GridLinesVisibility="Both"
                         ItemsSource="{Binding Path=Source,Mode=TwoWay}"
                         ColumnWidthMode="Star">
-</syncfusion:SfDataGrid>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 dataGrid.AutoGeneratingRelations += DataGrid_AutoGeneratingRelations;
@@ -546,6 +570,7 @@ private void DataGrid_AutoGeneratingRelations(object sender, AutoGeneratingRelat
     e.GridViewDefinition.DataGrid.AllowFiltering = true;
     e.GridViewDefinition.DataGrid.AllowSorting = true;
     e.GridViewDefinition.DataGrid.AllowResizingColumns = true;
+    e.GridViewDefinition.DataGrid.GridLinesVisibility = Syncfusion.UI.Xaml.Grids.GridLinesVisibility.Both;
 }
 {% endhighlight %}
 {% endtabs %}
@@ -565,20 +590,22 @@ You can auto-generate the ViewDefinition.DataGrid’s columns by setting the [Gr
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                 AutoGenerateColumns="True"
-                AutoGenerateRelations="True"
+                AutoGenerateRelations="False"
+                GridLinesVisibility="Both"
                 ItemsSource="{Binding Employees}">
-    <syncfusion:SfDataGrid.DetailsViewDefinition>
-        <syncfusion:GridViewDefinition RelationalColumn="Sales">
-            <syncfusion:GridViewDefinition.DataGrid>
-                <syncfusion:SfDataGrid x:Name="FirstLevelNestedGrid"
-                                AutoGenerateColumns="True"                                        
+    <dataGrid:SfDataGrid.DetailsViewDefinition>
+        <dataGrid:GridViewDefinition RelationalColumn="Sales">
+            <dataGrid:GridViewDefinition.DataGrid>
+                <dataGrid:SfDataGrid x:Name="FirstLevelNestedGrid"
+                                AutoGenerateColumns="True"
+                                GridLinesVisibility="Both"                                        
                                 AutoGeneratingColumn="FirstLevelNestedGrid_AutoGeneratingColumn" />
-            </syncfusion:GridViewDefinition.DataGrid>
-        </syncfusion:GridViewDefinition>
-    </syncfusion:SfDataGrid.DetailsViewDefinition>
-</syncfusion:SfDataGrid>
+            </dataGrid:GridViewDefinition.DataGrid>
+        </dataGrid:GridViewDefinition>
+    </dataGrid:SfDataGrid.DetailsViewDefinition>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 FirstLevelNestedGrid.AutoGeneratingColumn += FirstLevelNestedGrid_AutoGeneratingColumn1;
@@ -592,7 +619,7 @@ When relation is auto generated, you can set properties and wire [GridViewDefini
 void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.AutoGeneratingRelationsArgs e)
 {    
      e.GridViewDefinition.DataGrid.AutoGenerateColumns = true;       
-     e.GridViewDefinition.DataGrid += FirstLevelNestedGrid_AutoGeneratingColumn;
+     e.GridViewDefinition.DataGrid.AutoGeneratingColumn += FirstLevelNestedGrid_AutoGeneratingColumn;
 }
 {% endhighlight %}
 {% endtabs %}
@@ -603,23 +630,26 @@ You can directly define the columns to [ViewDefinition.DataGrid](https://help.sy
  
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
-                        AutoGenerateColumns="True"
+<dataGrid:SfDataGrid x:Name="dataGrid"
+                        AutoGenerateColumns="False"
                         AutoGenerateRelations="False"
+                        GridLinesVisibility="Both"
                         ItemsSource="{Binding Employees}">
-    <syncfusion:SfDataGrid.DetailsViewDefinition>
-        <syncfusion:GridViewDefinition RelationalColumn="Sales">
-            <syncfusion:GridViewDefinition.DataGrid>
-                <syncfusion:SfDataGrid x:Name="FirstLevelNestedGrid"   AutoGenerateColumns="False">
-                    <syncfusion:SfDataGrid.Columns>
-                        <syncfusion:GridTextColumn MappingName="OrderID" />
-                        <syncfusion:GridTextColumn MappingName="ProductName" />
-                    </syncfusion:SfDataGrid.Columns>
-                </syncfusion:SfDataGrid>
-            </syncfusion:GridViewDefinition.DataGrid>
-        </syncfusion:GridViewDefinition>
-    </syncfusion:SfDataGrid.DetailsViewDefinition>
-</syncfusion:SfDataGrid>
+    <dataGrid:SfDataGrid.DetailsViewDefinition>
+        <dataGrid:GridViewDefinition RelationalColumn="Sales">
+            <dataGrid:GridViewDefinition.DataGrid>
+                <dataGrid:SfDataGrid x:Name="FirstLevelNestedGrid"   
+                            AutoGenerateColumns="False"
+                            GridLinesVisibility="Both">
+                    <dataGrid:SfDataGrid.Columns>
+                        <dataGrid:GridTextColumn MappingName="OrderID" />
+                        <dataGrid:GridTextColumn MappingName="ProductName" />
+                    </dataGrid:SfDataGrid.Columns>
+                </dataGrid:SfDataGrid>
+            </dataGrid:GridViewDefinition.DataGrid>
+        </dataGrid:GridViewDefinition>
+    </dataGrid:SfDataGrid.DetailsViewDefinition>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -632,6 +662,7 @@ this.dataGrid.AutoGeneratingRelations += dataGrid_AutoGeneratingRelations;
 void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.AutoGeneratingRelationsArgs e)
 {
     e.GridViewDefinition.DataGrid.AutoGenerateColumns = false;
+    e.GridViewDefinition.DataGrid.GridLinesVisibility = Syncfusion.UI.Xaml.Grids.GridLinesVisibility.Both;
     e.GridViewDefinition.DataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID" });
     e.GridViewDefinition.DataGrid.Columns.Add(new GridTextColumn() { MappingName = "ProductName" });
 }
@@ -648,22 +679,24 @@ For manually defined relation, the events can be wired from [ViewDefinition.Data
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                         AutoGenerateColumns="True"
                         AutoGenerateRelations="False"
+                        GridLinesVisibility="Both"
                         ItemsSource="{Binding Employees}">
-    <syncfusion:SfDataGrid.DetailsViewDefinition>
-        <syncfusion:GridViewDefinition RelationalColumn="ProductDetails">
-            <syncfusion:GridViewDefinition.DataGrid>
-                <syncfusion:SfDataGrid x:Name="FirstLevelNestedGrid"
-                                AutoGenerateColumns="True"                                               
+    <dataGrid:SfDataGrid.DetailsViewDefinition>
+        <dataGrid:GridViewDefinition RelationalColumn="ProductDetails">
+            <dataGrid:GridViewDefinition.DataGrid>
+                <dataGrid:SfDataGrid x:Name="FirstLevelNestedGrid"
+                                AutoGenerateColumns="True"  
+                                GridLinesVisibility="Both"                                             
                                 CurrentCellBeginEdit="FirstLevelNestedGrid_CurrentCellBeginEdit"     
                                 FilterChanging="FirstLevelNestedGrid_FilterChanging"                                               
                                 SortColumnsChanging="FirstLevelNestedGrid_SortColumnsChanging" />
-            </syncfusion:GridViewDefinition.DataGrid>
-        </syncfusion:GridViewDefinition>
-    </syncfusion:SfDataGrid.DetailsViewDefinition>
-</syncfusion:SfDataGrid>
+            </dataGrid:GridViewDefinition.DataGrid>
+        </dataGrid:GridViewDefinition>
+    </dataGrid:SfDataGrid.DetailsViewDefinition>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 FirstLevelNestedGrid.CurrentCellBeginEdit += FirstLevelNestedGrid_CurrentCellBeginEdit;
@@ -676,33 +709,36 @@ For second level nested grid,
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                         AutoGenerateColumns="True"
                         AutoGenerateRelations="False"
+                        GridLinesVisibility="Both"
                         ItemsSource="{Binding Path=Source,Mode=TwoWay}"
                         ColumnWidthMode="Star">
-    <syncfusion:SfDataGrid.DetailsViewDefinition >
-        <syncfusion:GridViewDefinition RelationalColumn="OrderDetails"  >
-            <syncfusion:GridViewDefinition.DataGrid >
-                <syncfusion:SfDataGrid x:Name="FirstDetailsViewGrid" 
+    <dataGrid:SfDataGrid.DetailsViewDefinition >
+        <dataGrid:GridViewDefinition RelationalColumn="OrderDetails"  >
+            <dataGrid:GridViewDefinition.DataGrid >
+                <dataGrid:SfDataGrid x:Name="FirstDetailsViewGrid" 
                                         AutoGenerateColumns="True"
+                                        GridLinesVisibility="Both"
                                         AutoGenerateRelations="False">
-                    <syncfusion:SfDataGrid.DetailsViewDefinition>
-                        <syncfusion:GridViewDefinition RelationalColumn="SalesDetails">
-                            <syncfusion:GridViewDefinition.DataGrid>
-                                <syncfusion:SfDataGrid x:Name="SecondDetailsViewGrid" 
-                                                        CurrentCellBeginEdit="SecondDetailsViewGrid_CurrentCellBeginEdit"
-                                                        FilterChanging="SecondDetailsViewGrid_FilterChanging"
-                                                        AutoGenerateColumns="True" >
-                                </syncfusion:SfDataGrid>
-                            </syncfusion:GridViewDefinition.DataGrid>
-                        </syncfusion:GridViewDefinition>
-                    </syncfusion:SfDataGrid.DetailsViewDefinition>
-                </syncfusion:SfDataGrid>
-            </syncfusion:GridViewDefinition.DataGrid>
-        </syncfusion:GridViewDefinition>
-    </syncfusion:SfDataGrid.DetailsViewDefinition>
-</syncfusion:SfDataGrid>
+                    <dataGrid:SfDataGrid.DetailsViewDefinition>
+                        <dataGrid:GridViewDefinition RelationalColumn="SalesDetails">
+                            <dataGrid:GridViewDefinition.DataGrid>
+                                <dataGrid:SfDataGrid x:Name="SecondDetailsViewGrid"
+                                        GridLinesVisibility="Both" 
+                                        CurrentCellBeginEdit="SecondDetailsViewGrid_CurrentCellBeginEdit"
+                                        FilterChanging="SecondDetailsViewGrid_FilterChanging"
+                                        AutoGenerateColumns="True" >
+                                </dataGrid:SfDataGrid>
+                            </dataGrid:GridViewDefinition.DataGrid>
+                        </dataGrid:GridViewDefinition>
+                    </dataGrid:SfDataGrid.DetailsViewDefinition>
+                </dataGrid:SfDataGrid>
+            </dataGrid:GridViewDefinition.DataGrid>
+        </dataGrid:GridViewDefinition>
+    </dataGrid:SfDataGrid.DetailsViewDefinition>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 SecondDetailsViewGrid.FilterChanging += SecondDetailsViewGrid_FilterChanging;
@@ -725,16 +761,18 @@ When the relation is auto-generated, you can get the [GridViewDefinition.DataGri
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
                        AutoGenerateRelations="True"
+                       GridLinesVisibility="Both"
                        ItemsSource="{Binding Employees}">
-</syncfusion:SfDataGrid>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.AutoGeneratingRelations += dataGrid_AutoGeneratingRelations;
 private void dataGrid_AutoGeneratingRelations(object sender, AutoGeneratingRelationsArgs e)
 {
+    e.GridViewDefinition.DataGrid.GridLinesVisibility = Syncfusion.UI.Xaml.Grids.GridLinesVisibility.Both;
     e.GridViewDefinition.DataGrid.SortColumnsChanging += FirstLevelNestedGrid_SortColumnsChanging;
     e.GridViewDefinition.DataGrid.CurrentCellBeginEdit += FirstLevelNestedGrid_CurrentCellBeginEdit;
     e.GridViewDefinition.DataGrid.FilterChanging += FirstLevelNestedGrid_FilterChanging;
@@ -870,53 +908,58 @@ You can customize the header appearance of [DetailsViewDataGrid](https://help.sy
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
+ <Application.Resources>
     <Style x:Key="headerStyle" TargetType="syncfusion:GridHeaderCellControl">
         <Setter Property="Background" Value="Red"/>
     </Style>
-</Page.Resources>
-<syncfusion:SfDataGrid x:Name="dataGrid"
+ </Application.Resources>
+
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AllowResizingColumns="True"
                        AutoGenerateColumns="True"
                        AutoGenerateRelations="False"
+                       GridLinesVisibility="Both"
                        ItemsSource="{Binding Employees}" >
-    <syncfusion:SfDataGrid.DetailsViewDefinition>
-        <syncfusion:GridViewDefinition RelationalColumn="Sales">
-            <syncfusion:GridViewDefinition.DataGrid>
-                <syncfusion:SfDataGrid x:Name="FirstDetailsViewGrid"
+    <dataGrid:SfDataGrid.DetailsViewDefinition>
+        <dataGrid:GridViewDefinition RelationalColumn="Sales">
+            <dataGrid:GridViewDefinition.DataGrid>
+                <dataGrid:SfDataGrid x:Name="FirstDetailsViewGrid"
                             AllowEditing="True"
                             AutoGenerateColumns="True"
+                            GridLinesVisibility="Both"
                             HeaderStyle="{StaticResource headerStyle}" >
-                </syncfusion:SfDataGrid>
-            </syncfusion:GridViewDefinition.DataGrid>
-        </syncfusion:GridViewDefinition>
-    </syncfusion:SfDataGrid.DetailsViewDefinition>
-</syncfusion:SfDataGrid>
+                </dataGrid:SfDataGrid>
+            </dataGrid:GridViewDefinition.DataGrid>
+        </dataGrid:GridViewDefinition>
+    </dataGrid:SfDataGrid.DetailsViewDefinition>
+</dataGrid:SfDataGrid>
 
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Header Appearance of Master Details View in WinUI DataGrid](Master-Details-View-Images/winui-datagrid-header-customization.png)
+<img src="Master-Details-View-Images/winui-datagrid-header-customization.png" alt="Customizing Header Appearance of Master Details View in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ### Hiding header row of Master-Details View
 You can hide the header row of `DetailsViewDataGrid` by setting [HeaderRowHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_HeaderRowHeight) property.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
                        AutoGenerateRelations="True"
+                       GridLinesVisibility="Both"
                        ItemsSource="{Binding Employees}" >
-    <syncfusion:SfDataGrid.DetailsViewDefinition>
-        <syncfusion:GridViewDefinition RelationalColumn="Sales">
-            <syncfusion:GridViewDefinition.DataGrid>
-                <syncfusion:SfDataGrid  x:Name="FirstLevelNestedGrid"
+    <dataGrid:SfDataGrid.DetailsViewDefinition>
+        <dataGrid:GridViewDefinition RelationalColumn="Sales">
+            <dataGrid:GridViewDefinition.DataGrid>
+                <dataGrid:SfDataGrid  x:Name="FirstLevelNestedGrid"
                                 AutoGenerateColumns="True"
+                                GridLinesVisibility="Both"
                                 HeaderRowHeight="0" />
-            </syncfusion:GridViewDefinition.DataGrid>
-        </syncfusion:GridViewDefinition>
-    </syncfusion:SfDataGrid.DetailsViewDefinition>
-</syncfusion:SfDataGrid>
+            </dataGrid:GridViewDefinition.DataGrid>
+        </dataGrid:GridViewDefinition>
+    </dataGrid:SfDataGrid.DetailsViewDefinition>
+</dataGrid:SfDataGrid>
 
 {% endhighlight %}
 {% endtabs %}
@@ -927,7 +970,7 @@ FirstLevelNestedGrid.HeaderRowHeight = 0;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays Master Details View with Hidden Header Row](Master-Details-View-Images/winui-datagrid-hidden-header-row.png)
+<img src="Master-Details-View-Images/winui-datagrid-hidden-header-row.png" alt="WinUI DataGrid displays Master Details View with Hidden Header Row" width="100%" Height="Auto"/>
 
 ### Customizing padding of the DetailsViewDataGrid
 
@@ -935,25 +978,26 @@ The padding of [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfu
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
                        AutoGenerateRelations="False"
+                    GridLinesVisibility="Both"
                        DetailsViewPadding="15"
                        ItemsSource="{Binding Employees}" >
-    <syncfusion:SfDataGrid.DetailsViewDefinition>
-        <syncfusion:GridViewDefinition RelationalColumn="Sales">
-            <syncfusion:GridViewDefinition.DataGrid>
-                <syncfusion:SfDataGrid  x:Name="FirstLevelNestedGrid"
+    <dataGrid:SfDataGrid.DetailsViewDefinition>
+        <dataGrid:GridViewDefinition RelationalColumn="Sales">
+            <dataGrid:GridViewDefinition.DataGrid>
+                <dataGrid:SfDataGrid  x:Name="FirstLevelNestedGrid"
                                 AutoGenerateColumns="True"
-                                HeaderRowHeight="0" />
-            </syncfusion:GridViewDefinition.DataGrid>
-        </syncfusion:GridViewDefinition>
-    </syncfusion:SfDataGrid.DetailsViewDefinition>
+                                GridLinesVisibility="Both"/>
+            </dataGrid:GridViewDefinition.DataGrid>
+        </dataGrid:GridViewDefinition>
+    </dataGrid:SfDataGrid.DetailsViewDefinition>
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays Padding Customization of Master Details View](Master-Details-View-Images/winui-datagrid-master-details-view-padding-customization.png)
+<img src="Master-Details-View-Images/winui-datagrid-master-details-view-padding-customization.png" alt="WinUI DataGrid displays Padding Customization of Master Details View" width="100%" Height="Auto"/>
 
 N> For customizing appearance for second level nested grid, you can refer [here](#defining-properties).
 
@@ -963,7 +1007,8 @@ You can customize the width of ExpanderColumn in SfDataGrid by using [ExpanderCo
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
+                       GridLinesVisibility="Both"
                        ExpanderColumnWidth="50"
                        AutoGenerateColumns="True"
                        AutoGenerateRelations="True"
@@ -1018,27 +1063,29 @@ By default, the expander will be visible for all the data rows in parent DataGri
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
                        AutoGenerateRelations="True"
+                       GridLinesVisibility="Both"
                        HideEmptyGridViewDefinition="True"
                        ItemsSource="{Binding Employees}" />
 {% endhighlight %}
 {% endtabs %}
 
-![Hide Expander of Master Details View in WinUI DataGrid](Master-Details-View-Images/winui-datagrid-master-details-view-hide-expander.png)
+<img src="Master-Details-View-Images/winui-datagrid-master-details-view-hide-expander.png" alt="Hide Expander of Master Details View in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Hiding GridDetailsViewIndentCell
 
 [GridDetailsViewIndentCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDetailsViewIndentCell.html) is used to indicate the space between the expander and first column of the [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDataGrid.html). You can hide the [GridDetailsViewIndentCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDetailsViewIndentCell.html) by setting [SfDataGrid.ShowDetailsViewIndentCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ShowDetailsViewIndentCell) property to `False` for the respective parent grid.
 
-![WinUI DataGrid displays Master Details View with Indent Cells](Master-Details-View-Images/winui-datagrid-master-details-view-indentation.png)
+<img src="Master-Details-View-Images/winui-datagrid-master-details-view-indentation.png" alt="WinUI DataGrid displays Master Details View with Indent Cells" width="100%" Height="Auto"/>
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
+<dataGrid:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
                        AutoGenerateRelations="True"
+                       GridLinesVisibility="Both"
                        ShowDetailsViewIndentCell="False"
                        ItemsSource="{Binding Employees}" />
 {% endhighlight %}
@@ -1047,7 +1094,7 @@ dataGrid.ShowDetailsViewIndentCell= False;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid display Master Details View without Indentation](Master-Details-View-Images/winui-datagrid-master-details-view-without-indentation.png)
+<img src="Master-Details-View-Images/winui-datagrid-master-details-view-without-indentation.png" alt="WinUI DataGrid display Master Details View without Indentation" width="100%" Height="Auto"/>
 
 ## Hiding the details view expander icon based on child items count
 
@@ -1086,7 +1133,7 @@ private void DataGrid_QueryDetailsViewExpanderState(object sender, QueryDetailsV
 {% endtabs %} 
 
 The following screenshot illustrates hiding expander icon state based on child items count.
-![Hide Expander of Master Details in WinUI DataGrid](Master-Details-View-Images/winui-datagrid-master-details-view-expander.png)
+<img src="Master-Details-View-Images/winui-datagrid-master-details-view-expander.png" alt="Hide Expander of Master Details in WinUI DataGrid" width="100%" Height="Auto"/>
 You can download the sample from the following link: [Sample](https://github.com/SyncfusionExamples/How-to-hide-the-detailsview-expander-icon-based-on-child-records-count-in-winui-datagrid).
 
 ## Change DetailsViewDataGrid ItemsSource at runtime using LiveDataUpdateMode property
@@ -1095,9 +1142,10 @@ ItemsSource for DetailsViewDataGrid is populated from the DataContext of parent 
 
 {% tabs %}
 {% highlight xaml %}
-<Syncfusion:SfDataGrid Name="dataGrid"  
+<dataGrid:SfDataGrid Name="dataGrid"  
                        AutoGenerateColumns="True"
                        AutoGenerateRelations="True"
+                       GridLinesVisibility="Both"
                        ItemsSource="{Binding Source}"                              
                        LiveDataUpdateMode="AllowChildViewUpdate,AllowDataShaping">
 {% endhighlight %}
