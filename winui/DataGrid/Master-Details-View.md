@@ -909,7 +909,7 @@ You can customize the header appearance of [DetailsViewDataGrid](https://help.sy
 {% tabs %}
 {% highlight xaml %}
  <Application.Resources>
-    <Style x:Key="headerStyle" TargetType="syncfusion:GridHeaderCellControl">
+    <Style x:Key="headerStyle" TargetType="dataGrid:GridHeaderCellControl">
         <Setter Property="Background" Value="Red"/>
     </Style>
  </Application.Resources>
@@ -983,16 +983,7 @@ The padding of [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfu
                        AutoGenerateRelations="False"
                     GridLinesVisibility="Both"
                        DetailsViewPadding="15"
-                       ItemsSource="{Binding Employees}" >
-    <dataGrid:SfDataGrid.DetailsViewDefinition>
-        <dataGrid:GridViewDefinition RelationalColumn="Sales">
-            <dataGrid:GridViewDefinition.DataGrid>
-                <dataGrid:SfDataGrid  x:Name="FirstLevelNestedGrid"
-                                AutoGenerateColumns="True"
-                                GridLinesVisibility="Both"/>
-            </dataGrid:GridViewDefinition.DataGrid>
-        </dataGrid:GridViewDefinition>
-    </dataGrid:SfDataGrid.DetailsViewDefinition>
+                       ItemsSource="{Binding Employees}" />
 
 {% endhighlight %}
 {% endtabs %}
