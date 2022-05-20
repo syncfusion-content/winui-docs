@@ -176,12 +176,16 @@ The group summary cells can be customized by using `SyncfusionGroupSummaryRowCon
     <dataGrid:SfDataGrid.GroupSummaryRows>
         <dataGrid:GridSummaryRow ShowSummaryInRow="False">
             <dataGrid:GridSummaryRow.SummaryColumns>
+                <dataGrid:GridSummaryColumn Name="PriceAmount"
+                            Format="'Amount - {Sum:c}'"
+                            MappingName="UnitPrice"
+                            SummaryType="DoubleAggregate" />
                 <dataGrid:GridSummaryColumn Name="CustomerCount"
-                                          Format="'Count - {Count:d}'"
-                                          MappingName="CustomerName"
-                                          SummaryType="CountAggregate" />
+                            Format="'Count - {Count:d}'"
+                            MappingName="CustomerName"
+                            SummaryType="CountAggregate" />
             </dataGrid:GridSummaryRow.SummaryColumns>
-        </dataGrid:GridSummaryRow>
+         </dataGrid:GridSummaryRow>
     </dataGrid:SfDataGrid.GroupSummaryRows>
     <dataGrid:SfDataGrid.Columns>
         <dataGrid:GridNumericColumn MappingName="OrderID" HeaderText="Order ID" />
@@ -189,6 +193,7 @@ The group summary cells can be customized by using `SyncfusionGroupSummaryRowCon
         <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
         <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
         <dataGrid:GridTextColumn MappingName="Country" />
+        <dataGrid:GridNumericColumn MappingName="UnitPrice" HeaderText="Unit Price" DisplayNumberFormat="C2"/>
     </dataGrid:SfDataGrid.Columns>
     <dataGrid:SfDataGrid.GroupColumnDescriptions>
         <dataGrid:GroupColumnDescription ColumnName="CustomerID" />
