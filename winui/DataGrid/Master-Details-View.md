@@ -512,7 +512,6 @@ For two levels of nesting,
 <dataGrid:SfDataGrid x:Name="dataGrid"
                         AutoGenerateColumns="True"
                         AutoGenerateRelations="False"
-                        v
                         ItemsSource="{Binding Path=Source,Mode=TwoWay}"
                         ColumnWidthMode="Star">
     <dataGrid:SfDataGrid.DetailsViewDefinition >
