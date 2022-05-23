@@ -226,11 +226,11 @@ chart.Behaviors.Add(zooming);
 
 Selection rectangle can be customized by setting the following properties: 
 
-* [`Fill`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_Fill)- Represents the brush filled in selection rectangle. 
-* [`Stroke`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_Stroke)- Represents the outer line color of selection rectangle.
-* [`StrokeThickness`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_StrokeThickness)- Represents the selection rectangle outer line thickness. 
+* [`Fill`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_Fill) - Represents the brush filled in selection rectangle. 
+* [`Stroke`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_Stroke) - Represents the outer line color of selection rectangle.
+* [`StrokeThickness`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_StrokeThickness) - Represents the selection rectangle outer line thickness. 
 
-The following code example demonstrates the customization of selection rectangle
+The following code example demonstrates the customization of selection rectangle.
 
 {% tabs %}
 
