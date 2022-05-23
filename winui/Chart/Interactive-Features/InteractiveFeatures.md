@@ -9,7 +9,7 @@ documentation: ug
 
 # Interactive Features in WinUI Chart
 
-SfChart supports the following [interactive features](https://www.syncfusion.com/winui-controls/charts/interactive-features) to interact with chart.
+`SfChart` supports the following [interactive features](https://www.syncfusion.com/winui-controls/charts/interactive-features) to interact with the chart:
 
 * Crosshair
 * Tooltip

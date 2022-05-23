@@ -13,9 +13,9 @@ The Tooltip feature allows you to display any information over a [`ChartSeries`]
 
 ## Define Tooltip
 
-By default, a small box containing the data points y values are displayed as the Tooltip. The y values vary depending on the [`ChartSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). For example, a single y value is usually displayed in [`Column`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#) and [`BarSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.BarSeries.html#). 
+By default, a small box containing the data points' y values is displayed as the tooltip. The y values vary depending on the [`ChartSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). For example, a single y value is usually displayed in [`Column`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#) and [`BarSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.BarSeries.html#). 
 
-The tooltip will be visible if you enable [`ShowTooltip`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property as in the below code snippet.
+The tooltip will be visible if you enable [`ShowTooltip`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property, as shown in the following code sample.
 
 {% tabs %}
 
@@ -75,17 +75,17 @@ chart.Series.Add(series2);
 
 ## Customizing tooltip using ChartTooltipBehavior
 
-The `ChartTooltipBehavior` is commonly used for all series to customize the tooltip. For customizing the tooltip, you can create an instance `ChartTooltipBehavior` and add it to the SfChart Behaviors collection.
+The `ChartTooltipBehavior` is commonly used for all series to customize the tooltip. For customizing the tooltip, you can create an instance `ChartTooltipBehavior` and add it to the `SfChart` Behaviors collection.
 
-The following properties are used to customize and configure tooltip which is available in the `ChartTooltipBehavior.`
+The following properties are used to customize and configure tooltip, which is available in the `ChartTooltipBehavior.`
 
 * `EnableAnimation` - Used to enable the animation when showing the tooltip.
 * `Style` - Used to customize the fill and stroke of the tooltip.
 * `LabelStyle` - Used to customize the tooltip label.
 * `HorizontalOffset` - Used to position the tooltip at a distance from the data point or cursor position horizontally.
 * `VerticalOffset` - Used to position the tooltip at a distance from the data point or cursor position vertically.
-* `HorizontalAlignment` - Used to align the tooltip label at left, right and center of the data point position or cursor position horizontally.
-* `VerticalAlignment` - Used to align the tooltip label at top, center and bottom of the data point position or cursor position vertically.
+* `HorizontalAlignment` - Used to align the tooltip label at left, right, and center of the data point position or cursor position horizontally.
+* `VerticalAlignment` - Used to align the tooltip label at top, center, and bottom of the data point position or cursor position vertically.
 * `ShowDuration` - Used to set the amount of time that the tooltip remains visible in milliseconds.
 * `InitialShowDelay` - Used to delay in milliseconds to show the tooltip once the user interacts with series.
 
@@ -118,7 +118,7 @@ chart.Behaviors.Add(behavior);
 
 The tooltip's fill and stroke color can be customized using the `Style` property. To define a `Style` for tooltip, specify the style of `TargetType` as `Path.`
 
-The following code example explains applying the style for tooltip.
+The following code example explains how to apply the style for tooltip.
 
 {% tabs %}
 
@@ -158,7 +158,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 The tooltip label style can be customized using the `LabelStyle` property. To define a `Style` for the tooltip label, specify the style of `TargetType` as `TextBlock.`
 
-The following code example explains applying the style for a tooltip label.
+The following code example explains how to apply the style for a tooltip label.
 
 {% tabs %}
 
@@ -196,7 +196,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 ## Customizing tooltip using ChartTooltip attached properties
 
-### Aligning the Tooltip
+### Aligning the tooltip
 
 The tooltip can be aligned with respect to the cursor position using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) and [`VerticalAlignment`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) properties.
 
@@ -264,7 +264,7 @@ chart.Series.Add(series2);
 
 ![Tooltip alignment support in WinUI Chart](Interactive-Features_images/Interactive-Features_img4.png)
 
-N> By default the horizontal alignment is center for the tooltip.
+N> By default, the horizontal alignment is center for the tooltip.
 
 **VerticalAlignment**
 
@@ -333,7 +333,7 @@ chart.Series.Add(series2);
 
 **TooltipMargin**
 
-You can also set the distance for the margin to be positioned from the cursor using the TooltipMargin property as in the following code sample.
+You can also set the distance for the margin to be positioned from the cursor using the `TooltipMargin` property, as shown in the following code sample.
 
 {% tabs %}
 
@@ -402,11 +402,11 @@ chart.Series.Add(series2);
 ![Margin for tooltip in WinUI Char](Interactive-Features_images/Interactive-Features_img6.png)
 
 
-N>By default, the VerticalAlignment of the Tooltip is Top.
+N> By default, the VerticalAlignment of the tooltip is Top.
 
 **VerticalOffset and HorizontalOffset**
 
-The tooltip can be positioned at a particular distance from the cursor horizontally using the [`HorizontalOffset`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetHorizontalOffset_System_Windows_DependencyObject_System_Double_) and vertically using [`VerticalOffset`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetVerticalOffset_System_Windows_DependencyObject_System_Double_) properties.
+The tooltip can be positioned at a particular distance from the cursor horizontally and vertically using the [`HorizontalOffset`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetHorizontalOffset_System_Windows_DependencyObject_System_Double_) and [`VerticalOffset`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetVerticalOffset_System_Windows_DependencyObject_System_Double_) properties.
 
 {% tabs %}
 
@@ -529,13 +529,13 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-N> The tooltip by default will be displayed for 1000 milliseconds.
+N> By default, the tooltip will be displayed for 1000 milliseconds.
 
 **Show delay**
 
-Tooltip also has support to delay the time to display by setting the [`SetInitialShowDelay`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetInitialShowDelay_System_Windows_DependencyObject_System_Int32_) property in milliseconds.
+The tooltip also has support to delay the time to display by setting the [`SetInitialShowDelay`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetInitialShowDelay_System_Windows_DependencyObject_System_Int32_) property in milliseconds.
 
-The following code example demonstrates the tooltip will be delayed for 1 second at the before display.
+The following code example demonstrates how the tooltip will be delayed for one second before being displayed.
 
 {% tabs %}
 
@@ -576,9 +576,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-### Animation for Tooltip
+### Animation for tooltip
 
-You can also provide animation effects for tooltip by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetEnableAnimation_System_Windows_UIElement_System_Boolean_) property to true as shown in the following code snippet.
+You can also provide animation effects for tooltip by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetEnableAnimation_System_Windows_UIElement_System_Boolean_) property to true, as shown in the following code sample.
 
 {% tabs %}
 
@@ -621,9 +621,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-### Customizing the Appearance
+### Customizing the appearance
 
-The [`TooltipTemplate`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TooltipTemplate) property allows you to customize the default appearance of the tooltip as explained in the following code snippet.
+The [`TooltipTemplate`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TooltipTemplate) property allows you to customize the default appearance of the tooltip, as shown in the following code sample.
 
 {% tabs %}
 
@@ -715,4 +715,4 @@ chart.Series.Add(series2);
 
 ![Tooltip customization support in WinUI Chart](Interactive-Features_images/Interactive-Features_img8.png)
 
-N> The `ChartTooltipBehavior` is commonly used for all series to customize the tooltip. You can use the attached `ChartTooltip` properties in a series if you need to customize the appearance of the tooltip based on a particular series. Series attached properties are considered as a high precedence.
+N> The `ChartTooltipBehavior` is commonly used for all series to customize the tooltip. If you need to customize the appearance of the tooltip based on a particular series, you can use the attached `ChartTooltip` properties in a series. Series attached properties are considered as a high precedence.
