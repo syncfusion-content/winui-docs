@@ -9,7 +9,7 @@ documentation: ug
 
 # Fast Chart in WinUI Chart
 
-`Chart` includes functionality for rendering the large data points with fast plotting and it has more than 5 [fast chart types](https://www.syncfusion.com/winui-controls/charts/fast-charts). Each chart type is easily configurable with built-in support for creating high performance charts.
+`Chart` includes functionality for rendering large data points with fast plotting, and it has more than five [fast chart types](https://www.syncfusion.com/winui-controls/charts/fast-charts). Each chart type is easily configurable with built-in support for creating high-performance charts.
 
-* FastLine Series - Segments of the series is rendered using a polyline segment.
-* Fast Bitmap Series - Segments of the series is rendered using WriteableBitmap.
+* FastLine Series - Segments of the series are rendered using a polyline segment.
+* Fast Bitmap Series - Segments of the series are rendered using WriteableBitmap.
