@@ -26,6 +26,6 @@ The Syncfusion [WinUI DataGrid](https://www.syncfusion.com/winui-controls/datagr
 * **Stacked Headers** – Extensive support to show multiple headers called stacked headers.
 * **Unbound rows** – Support to display unbound rows.
 
-<img src="Overview-images/winui-datagrid-overview.png" alt="Overview of WinUI DataGrid" width="100%" Height="Auto/>
+<img src="Overview-images/winui-datagrid-overview.png" alt="Overview of WinUI DataGrid" width="100%" Height="Auto"/>
 
 
