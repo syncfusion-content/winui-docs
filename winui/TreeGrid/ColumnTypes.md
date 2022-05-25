@@ -49,13 +49,24 @@ Use to display the numeric data.
 </tr>
 <tr>
 <td>
-{{'[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html#"")'| markdownify }}
+{{'[TreeGridDateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCellComboBoxRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellComboBoxRenderer.html#"")'| markdownify }}
+{{'[TreeGridCellDateRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellDateRenderer.html#"")'| markdownify }}
 </td>
 <td>
-Use to display the IEnumerable data using ComboBox.
+Use to display the date value.
+</td>
+</tr>
+<tr>
+<td>
+{{'[TreeGridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#"")'| markdownify }}
+</td>
+<td>
+{{'[TreeGridCellTimeRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellTimeRenderer.html#"")'| markdownify }}
+</td>
+<td>
+Use to display the <code>DateTimeOffset</code> type data as time value.
 </td>
 </tr>
 <tr>
@@ -71,28 +82,6 @@ Use to display the boolean type data.
 </tr>
 <tr>
 <td>
-{{'[TreeGridDateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#"")'| markdownify }}
-</td>
-<td>
-{{'[TreeGridCellDateRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellDateRenderer.html#"")'| markdownify }}
-</td>
-<td>
-Use to display the date value.
-</td>
-</tr>
-<tr>
-<td>
-{{'[TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html#"")'| markdownify }}
-</td>
-<td>
-{{'[TreeGridCellHyperLinkRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellHyperlinkRenderer.html#"")'| markdownify }}
-</td>
-<td>
-Use to display the URI data.
-</td>
-</tr>
-<tr>
-<td>
 {{'[TreeGridTemplateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html#"")'| markdownify }}
 </td>
 <td>
@@ -104,13 +93,24 @@ Use to display the custom template-specified content.
 </tr>
 <tr>
 <td>
-{{'[TreeGridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#"")'| markdownify }}
+{{'[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCellTimeRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellTimeRenderer.html#"")'| markdownify }}
+{{'[TreeGridCellComboBoxRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellComboBoxRenderer.html#"")'| markdownify }}
 </td>
 <td>
-Use to display the <code>DateTimeOffset</code> type data as time value.
+Use to display the IEnumerable data using ComboBox.
+</td>
+</tr>
+<tr>
+<td>
+{{'[TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html#"")'| markdownify }}
+</td>
+<td>
+{{'[TreeGridCellHyperLinkRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellHyperlinkRenderer.html#"")'| markdownify }}
+</td>
+<td>
+Use to display the URI data.
 </td>
 </tr>
 </table>
@@ -129,17 +129,17 @@ You can use `DisplayBinding` property to format the column in display, by settin
 
 {% tabs %}
 {% highlight xaml %}
-<treeGrid:TreeGridTextColumn DisplayBinding="{Binding Salary,
+<treeGrid:TreeGridTextColumn DisplayBinding="{Binding Hike,
                                                         Converter={StaticResource converter}}"
-                                HeaderText="Salary"
-                                MappingName="Salary" />
+                                HeaderText="Hike"
+                                MappingName="Hike" />
 {% endhighlight %}
 {% highlight c# %}
 public class DisplayBindingConverter : IValueConverter
 {
     public object Convert(object value, Type targetType, object parameter, string language)
     {
-        return string.Format("{0:C2}", value);
+        return String.Format("{0:P2}", (value as double?)/100);
     }
     public object ConvertBack(object value, Type targetType, object parameter, string language)
     {
@@ -149,9 +149,9 @@ public class DisplayBindingConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-In the below screenshot, `Salary` column display value is formatted to currency by setting `DisplayBinding` property.
+In the below screenshot, `Hike` column display value is formatted to percentage by setting `DisplayBinding` property.
 
-![WinUI TreeGrid Column with Currency Values](Column-Type-images/winui-treegrid-currency-values.png)
+<img src="Column-Type-images/winui-treegrid-currency-values.png" alt="WinUI TreeGrid Column with Currency Values" width="100%" Height="Auto"/>
 
 By default, Columns handling the data operations (sorting) based on `MappingName` property.
 
@@ -173,10 +173,10 @@ In the below code snippet, `TreeGridTextColumn` is loaded with `ProgressBar` and
         ParentPropertyName="ID"
         SelfRelationRootValue="-1" >
     <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn HeaderText="Employee ID" MappingName="ID" />
         <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
-        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName"   />
-        <treeGrid:TreeGridCheckBoxColumn HeaderText="Availability" MappingName="AvailabilityStatus" />
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID"  MappingName="ID"/>
+        <treeGrid:TreeGridTextColumn HeaderText="Title" MappingName="Title" />
         <treeGrid:TreeGridTextColumn MappingName="Salary">
             <treeGrid:TreeGridTextColumn.CellTemplate>
                 <DataTemplate>
@@ -185,7 +185,7 @@ In the below code snippet, `TreeGridTextColumn` is loaded with `ProgressBar` and
                 Height="50"
                 Background="Transparent"
                 BorderThickness="0"
-                Maximum="5000000"
+                Maximum="200000"
                 Minimum="0"
                 Visibility="Visible"
                 Value="{Binding Path=Salary}" />
@@ -216,7 +216,7 @@ public class DisplayBindingConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeGrid Column with ProgressBar](Column-Type-images/winui-treegrid-column-progressbar.png)
+<img src="Column-Type-images/winui-treegrid-column-progressbar.png" alt="WinUI TreeGrid Column with ProgressBar" width="100%" Height="Auto"/>
 
 
 `CellTemplate` is not support by [TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html) and [TreeGridCheckboxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html) columns.
@@ -232,13 +232,6 @@ You can use the same [DataTemplate](https://docs.microsoft.com/en-us/windows/win
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
-    <DataTemplate x:Key="cellTemplate">
-        <TextBlock Margin="3,0,0,0"
-                    Foreground="Red"
-                    Text="{Binding Path=Value}" />
-    </DataTemplate>
-</Page.Resources>
 <treeGrid:SfTreeGrid Name="treeGrid"
                 ColumnWidthMode="Star"
                 AutoExpandMode="AllNodesExpanded"
@@ -247,26 +240,33 @@ You can use the same [DataTemplate](https://docs.microsoft.com/en-us/windows/win
                 ItemsSource="{Binding Employees}"
                 ParentPropertyName="ID"
                 SelfRelationRootValue="-1" >
+    <treeGrid:SfTreeGrid.Resources>
+        <DataTemplate x:Key="cellTemplate">
+            <TextBlock Margin="3,0,0,0"
+                    Foreground="Red"
+                    TextAlignment="Center"
+                    Text="{Binding Path=Value}" />
+        </DataTemplate>                    
+    </treeGrid:SfTreeGrid.Resources>            
     <treeGrid:SfTreeGrid.Columns>
         <treeGrid:TreeGridTextColumn CellTemplate="{StaticResource cellTemplate}"
-                                HeaderText="ID"
+                                HeaderText="First Name" 
+                                MappingName="FirstName"
+                                SetCellBoundValue="True" />
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridNumericColumn CellTemplate="{StaticResource cellTemplate}"
+                                HeaderText="Employee ID"
                                 MappingName="ID"
-                                SetCellBoundValue="True"
-                                TextAlignment="Left" />
-        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
-        <treeGrid:TreeGridTextColumn CellTemplate="{StaticResource cellTemplate}"
-                                HeaderText="Last Name"
-                                MappingName="LastName"
                                 SetCellBoundValue="True" />
         <treeGrid:TreeGridTextColumn MappingName="Title" />
-        <treeGrid:TreeGridTextColumn MappingName="Salary"/>
-        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+        <treeGrid:TreeGridNumericColumn MappingName="Salary" DisplayNumberFormat="C2"/>
+        <treeGrid:TreeGridNumericColumn HeaderText="Reports To" MappingName="ReportsTo" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeGrid Column with Cell Template](Column-Type-images/winui-treegrid-cell-template.png)
+<img src="Column-Type-images/winui-treegrid-cell-template.png" alt="WinUI TreeGrid Column with Cell Template" width="100%" Height="Auto"/>
 
 #### Setting CellTemplate based on custom logic using TemplateSelector
 
@@ -329,13 +329,13 @@ In the below code, the custom template selector set to `TreeGridColumn.CellTempl
         ParentPropertyName="ID"
         SelfRelationRootValue="-1" >
     <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn  CellTemplateSelector="{StaticResource cellTemplateSelector}"
-                                        HeaderText="ID"
-                                        MappingName="ID" />
         <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
         <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <treeGrid:TreeGridTextColumn MappingName="Title" />
-        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+        <treeGrid:TreeGridNumericColumn CellTemplateSelector="{StaticResource cellTemplateSelector}"
+                                HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridTextColumn HeaderText="Title" MappingName="Title" />
+        <treeGrid:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary" DisplayNumberFormat="C2"/>
+        <treeGrid:TreeGridNumericColumn HeaderText="Reports To" MappingName="ReportsTo" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 {% endhighlight %}
@@ -343,7 +343,7 @@ In the below code, the custom template selector set to `TreeGridColumn.CellTempl
 
 N> Non-Editable columns does not support `CellTemplate`.
 
-![WinUI TreeGrid Column Template Selector](Column-Type-images/winui-treegrid-template-selection.png)
+<img src="Column-Type-images/winui-treegrid-template-selection.png" alt="WinUI TreeGrid Column Template Selector" width="100%" Height="Auto"/>
 
 ### Data Formatting
 
@@ -355,21 +355,19 @@ You can format the column using `Converter` property by defining `DisplayBinding
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
-    <local:CurrencyFormatConverter x:Key="converter" />
-</Page.Resources>
-
 <treeGrid:SfTreeGrid Name="treeGrid"
                 AutoExpandMode="AllNodesExpanded"
                 ChildPropertyName="ReportsTo"
                 ItemsSource="{Binding Employees}"
                 ParentPropertyName="ID">
+    <treeGrid:SfTreeGrid.Resources>
+        <local:CurrencyFormatConverter x:Key="converter" />   
+    </treeGrid:SfTreeGrid.Resources>            
     <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn DisplayBinding="{Binding Salary,
-                                                                Converter={StaticResource converter}}"
-                                        HeaderText="Salary"
-                                        MappingName="Salary" />
-    </treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn HeaderText="Salary"
+                                    DisplayBinding="{Binding Salary,Converter={StaticResource converter}}"
+                                    MappingName="Salary" />
+    </treeGrid:SfTreeGrid.Columns>    
 </treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
@@ -412,7 +410,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeGrid Column Formatting](Column-Type-images/winui-treegrid-column-formatting.png)
+<img src="Column-Type-images/winui-treegrid-column-formatting.png" alt="WinUI TreeGrid Column Formatting" width="100%" Height="Auto"/>
 
 
 ### Styling TreeGridColumn
@@ -434,10 +432,10 @@ You can change the font settings such as `FontSize`, `FontFamily`, `FontWeight` 
                 ParentPropertyName="ID"
                 SelfRelationRootValue="-1" >
     <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn HeaderText="ID" MappingName="ID"/>
-        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName">
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName">
             <treeGrid:TreeGridTextColumn.CellStyle>
-                <Style TargetType="syncfusion:TreeGridCell">
+                <Style TargetType="treeGrid:TreeGridCell">
                     <Setter Property="FontSize" Value="12" />
                     <Setter Property="FontFamily" Value="Segoe UI" />
                     <Setter Property="FontWeight" Value="Bold" />
@@ -446,10 +444,10 @@ You can change the font settings such as `FontSize`, `FontFamily`, `FontWeight` 
                 </Style>
             </treeGrid:TreeGridTextColumn.CellStyle>
         </treeGrid:TreeGridTextColumn>
-        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName"   />
-        <treeGrid:TreeGridTextColumn MappingName="Title" />
-        <treeGrid:TreeGridTextColumn HeaderText="Salary" MappingName="Salary" />
-        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridTextColumn HeaderText="Title" MappingName="Title" />
+        <treeGrid:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary" DisplayNumberFormat="C2"/>
+        <treeGrid:TreeGridNumericColumn HeaderText="Reports To" MappingName="ReportsTo" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 {% endhighlight %}
@@ -459,15 +457,15 @@ When column is auto-generated, you can style the column by handling `AutoGenerat
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>       
-    <Style x:Key="cellStyle" TargetType="syncfusion:TreeGridCell">
+<Application.Resources>       
+    <Style x:Key="cellStyle" TargetType="treeGrid:TreeGridCell">
         <Setter Property="FontSize" Value="12" />
         <Setter Property="FontFamily" Value="Segoe UI" />
         <Setter Property="FontWeight" Value="Bold" />
         <Setter Property="FontStyle" Value="Italic" />
         <Setter Property="FontStretch" Value="Condensed" />
     </Style>        
-</Page.Resources>
+</Application.Resources>
 {% endhighlight %}
 {% endtabs %}
 
@@ -480,13 +478,13 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 
     if (e.Column.MappingName == "FirstName")
     {
-         e.Column.CellStyle=this.Resources["cellStyle"] as Style;
+         e.Column.CellStyle=App.Current.Resources["cellStyle"] as Style;
     }
 }
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeGrid Customized Column Style](Column-Type-images/winui-treegrid-column-style.png)
+<img src="Column-Type-images/winui-treegrid-column-style.png" alt="WinUI TreeGrid Customized Column Style" width="100%" Height="Auto"/>
 
 #### Styles based on custom logic
 
@@ -497,10 +495,10 @@ Below code creates two different styles by TargetType `TreeGridCell`.
 {% tabs %}
 {% highlight xaml %}
 <Application.Resources>
-    <Style x:Key="cellStyle1" TargetType="syncfusion:TreeGridCell">
+    <Style x:Key="cellStyle1" TargetType="treeGrid:TreeGridCell">
         <Setter Property="Background" Value="Bisque" />
     </Style>
-    <Style x:Key="cellStyle2" TargetType="syncfusion:TreeGridCell">
+    <Style x:Key="cellStyle2" TargetType="treeGrid:TreeGridCell">
         <Setter Property="Background" Value="Aqua" />
     </Style>
 </Application.Resources>
@@ -539,19 +537,20 @@ Below code, sets the customized style selector to `TreeGridColumn.CellStyleSelec
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
-    <local:CustomCellStyleSelector x:Key="cellStyleSelector" />
-</Page.Resources>
 <treeGrid:SfTreeGrid Name="treeGrid"
                         AutoExpandMode="AllNodesExpanded"
                         AutoGenerateColumns="True"
                         ChildPropertyName="ReportsTo"
                         ItemsSource="{Binding Employees}"
                         ParentPropertyName="ID">
+    <treeGrid:SfTreeGrid.Resources>
+        <local:CustomCellStyleSelector x:Key="cellStyleSelector" />                
+    </treeGrid:SfTreeGrid.Resources>
     <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn MappingName="ID" 
-                                       CellStyleSelector="{StaticResource cellStyleSelector}" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID"  
+                                        CellStyleSelector="{StaticResource cellStyleSelector}" />
     </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -571,7 +570,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeGrid Column with Conditional Formatting](Column-Type-images/winui-treegrid-column-conditional-formatting.png)
+<img src="Column-Type-images/winui-treegrid-column-conditional-formatting.png" alt="WinUI TreeGrid Column with Conditional Formatting" width="100%" Height="Auto"/>
 
 ### UI Interaction
 
@@ -628,8 +627,8 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
                 ItemsSource="{Binding Employees}"
                 ParentPropertyName="ID">
     <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn HeaderText="First Name" 
-                                       MappingName="FirstName"  
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" 
+                                       MappingName="LastName"  
                                        Width="60" 
                                        TextTrimming="CharacterEllipsis" 
                                        TextWrapping="Wrap"/>
@@ -638,7 +637,7 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI SfTreeGrid Column with Text Trimming and Text Wrapping Settings](Column-Type-images/winui-treegrid-column-text-trimming-and-wrapping.png)
+<img src="Column-Type-images/winui-treegrid-column-text-trimming-and-wrapping.png" alt="WinUI SfTreeGrid Column with Text Trimming and Text Wrapping Settings" width="100%" Height="Auto"/>
 
 ## TreeGridTextColumn
 
@@ -682,7 +681,7 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", 
 {% endhighlight %}
 {% endtabs %}
 
-![Enabled SpellChecker to WinUI TreeGrid Column](Column-Type-images/winui-treegrid-spellchecker.png)
+<img src="Column-Type-images/winui-treegrid-spellchecker.png" alt="Enabled SpellChecker to WinUI TreeGrid Column" width="100%" Height="Auto"/>
 
 ## TreeGridNumericColumn
 
@@ -690,17 +689,22 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", 
 
 {% tabs %}
 {% highlight xaml %}
-<treeGrid:SfTreeGrid x:Name="treeGrid" AutoExpandMode="RootNodesExpanded" 
-                       AutoGenerateColumns="False" ItemsSource="{Binding EmployeeDetails}"
-                       ChildPropertyName="ReportsTo" ParentPropertyName="ID"
-                       SelfRelationRootValue="-1"  AllowEditing="True" >
-                <treeGrid:SfTreeGrid.Columns>
-                    <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
-                    <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
-                    <treeGrid:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary" />
-                    <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
-                    <treeGrid:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
-                </treeGrid:SfTreeGrid.Columns>
+<treeGrid:SfTreeGrid x:Name="treeGrid"
+                AutoExpandMode="RootNodesExpanded" 
+                AutoGenerateColumns="False" 
+                AllowEditing="True" 
+                ItemsSource="{Binding EmployeeDetails}"
+                ChildPropertyName="ReportsTo"
+                ParentPropertyName="ID"
+                SelfRelationRootValue="-1" >
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
+        <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
+        <treeGrid:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary" />        
+        <treeGrid:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
+    </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% highlight c# %}
@@ -712,7 +716,7 @@ this.treeGrid.Columns.Add(new TreeGridNumericColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeGrid Column with NumericColumn](Column-Type-images/winui-treegrid-NumericColumn-column.png)
+<img src="Column-Type-images/winui-treegrid-NumericColumn-column.png" alt="WinUI TreeGrid Column with NumericColumn" width="100%" Height="Auto"/>
 
 ### Change the format of numeric value
 
@@ -739,18 +743,22 @@ N> When using both the `DisplayNumberFormat` and the `NumberFormatter` propertie
 
 {% tabs %}
 {% highlight xaml %}
-<treeGrid:SfTreeGrid x:Name="treeGrid" AutoExpandMode="RootNodesExpanded" 
-                       AutoGenerateColumns="False" ItemsSource="{Binding EmployeeDetails}"
-                       ChildPropertyName="ReportsTo" ParentPropertyName="ID"
-                       SelfRelationRootValue="-1"  AllowEditing="True" >
-                <treeGrid:SfTreeGrid.Columns>
-                    <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
-                    <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
-                    <treeGrid:TreeGridNumericColumn x:Name="numericColumn" MappingName="Salary" HeaderText="Salary"
-                                                      DisplayNumberFormat="C2" />
-                    <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
-                    <treeGrid:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
-                </treeGrid:SfTreeGrid.Columns>
+<treeGrid:SfTreeGrid x:Name="treeGrid" 
+                AutoExpandMode="RootNodesExpanded" 
+                AutoGenerateColumns="False" 
+                AllowEditing="True"
+                ItemsSource="{Binding EmployeeDetails}"
+                ChildPropertyName="ReportsTo"
+                ParentPropertyName="ID"
+                SelfRelationRootValue="-1" >
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
+        <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
+        <treeGrid:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary" DisplayNumberFormat="C2" />
+        <treeGrid:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
+    </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% highlight c# %}
@@ -759,7 +767,7 @@ numericColumn.DisplayNumberFormat = "C2";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeGrid Column with NumericColumn in Currency Format](Column-Type-images/winui-treegrid-NumericColumn_FormatVales-column.png)
+<img src="Column-Type-images/winui-treegrid-NumericColumn_FormatVales-column.png" alt="WinUI TreeGrid Column with NumericColumn in Currency Format" width="100%" Height="Auto"/>
 
 ### Null value support
 
@@ -769,23 +777,28 @@ The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 
 {% tabs %}
 {% highlight xaml %}
-<treeGrid:SfTreeGrid x:Name="treeGrid" AutoExpandMode="RootNodesExpanded" 
-                       AutoGenerateColumns="False" ItemsSource="{Binding EmployeeDetails}"
-                       ChildPropertyName="ReportsTo" ParentPropertyName="ID"
-                       SelfRelationRootValue="-1"  AllowEditing="True" >
-                <treeGrid:SfTreeGrid.Columns>
-                    <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
-                    <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
-                    <treeGrid:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary"
-                                                      AllowNull="True" PlaceholderText="Enter a value" />
-                    <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
-                    <treeGrid:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
-                </treeGrid:SfTreeGrid.Columns>
+<treeGrid:SfTreeGrid x:Name="treeGrid"
+                AutoExpandMode="RootNodesExpanded" 
+                AutoGenerateColumns="False" 
+                AllowEditing="True"
+                ItemsSource="{Binding EmployeeDetails}"
+                ChildPropertyName="ReportsTo" 
+                ParentPropertyName="ID"
+                SelfRelationRootValue="-1"  >
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
+        <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
+        <treeGrid:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary" DisplayNumberFormat="C2"
+                                        AllowNull="True" PlaceholderText="Enter the amount" />
+        <treeGrid:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
+    </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeGrid Column with NumericColumn](Column-Type-images/winui-treegrid-NumericColumn_AllowNullValue-column.png)
+<img src="Column-Type-images/winui-treegrid-NumericColumn_AllowNullValue-column.png" alt="WinUI TreeGrid Column with NumericColumn" width="100%" Height="Auto"/>
 
 ### Restrict value within range
 
@@ -793,14 +806,17 @@ You can restrict the users to enter input within a minimum and maximum range in 
 
 {% tabs %}
 {% highlight XAML %}
-<treeGrid:SfTreeGrid x:Name="treeGrid" AutoExpandMode="RootNodesExpanded" 
-                       AutoGenerateColumns="False" ItemsSource="{Binding EmployeeDetails}"
-                       ChildPropertyName="ReportsTo" ParentPropertyName="ID"
-                       SelfRelationRootValue="-1"  AllowEditing="True" >
-                <treeGrid:SfTreeGrid.Columns>
-                    <treeGrid:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary"
-                                                      MaxValue="100000" MinValue="5000" />
-                </treeGrid:SfTreeGrid.Columns>
+<treeGrid:SfTreeGrid x:Name="treeGrid" 
+                AutoExpandMode="RootNodesExpanded" 
+                AutoGenerateColumns="False"
+                AllowEditing="True"
+                ItemsSource="{Binding EmployeeDetails}"
+                ChildPropertyName="ReportsTo"
+                ParentPropertyName="ID"
+                SelfRelationRootValue="-1"   >
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary" MaxValue="100000" MinValue="5000" />
+    </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
@@ -811,14 +827,17 @@ You can increase or decrease the value of the `TreeGridNumericColumn` using the 
 
 {% tabs %}
 {% highlight XAML %}
-<treeGrid:SfTreeGrid x:Name="treeGrid" AutoExpandMode="RootNodesExpanded" 
-                       AutoGenerateColumns="False" ItemsSource="{Binding EmployeeDetails}"
-                       ChildPropertyName="ReportsTo" ParentPropertyName="ID"
-                       SelfRelationRootValue="-1"  AllowEditing="True" >
-                <treeGrid:SfTreeGrid.Columns>
-                    <treeGrid:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary"
-                                                      UpDownPlacementMode="InLine" />
-                </treeGrid:SfTreeGrid.Columns>
+<treeGrid:SfTreeGrid x:Name="treeGrid"
+                AutoExpandMode="RootNodesExpanded" 
+                AutoGenerateColumns="False"
+                AllowEditing="True"
+                ItemsSource="{Binding EmployeeDetails}"
+                ChildPropertyName="ReportsTo"
+                ParentPropertyName="ID"
+                SelfRelationRootValue="-1"   >
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridNumericColumn MappingName="Salary" HeaderText="Salary" UpDownPlacementMode="InLine" />
+    </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
@@ -829,16 +848,20 @@ You can increase or decrease the value of the `TreeGridNumericColumn` using the 
 
 {% tabs %}
 {% highlight xaml %}
-<treeGrid:SfTreeGrid x:Name="treeGrid" ChildPropertyName="ReportsTo"
-                     AutoExpandMode="RootNodesExpanded"
-                     ItemsSource="{Binding EmployeeDetails}"
-                     ParentPropertyName="ID" SelfRelationRootValue="-1" 
-                     AllowEditing="True" AutoGenerateColumns="False">
+<treeGrid:SfTreeGrid x:Name="treeGrid" 
+                ChildPropertyName="ReportsTo"
+                AutoExpandMode="RootNodesExpanded"
+                ItemsSource="{Binding EmployeeDetails}"
+                ParentPropertyName="ID" 
+                SelfRelationRootValue="-1" 
+                AllowEditing="True" 
+                AutoGenerateColumns="False">
     <treeGrid:SfTreeGrid.Columns>
         <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
         <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
-        <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
         <treeGrid:TreeGridDateColumn MappingName="Date" HeaderText="Date" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
         <treeGrid:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
@@ -848,7 +871,7 @@ this.treeGrid.Columns.Add(new TreeGridDateColumn() { HeaderText = "Date", Mappin
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeGrid Column with DateColumn](Column-Type-images/winui-treegrid-DateColumn-column.png)
+<img src="Column-Type-images/winui-treegrid-DateColumn-column.png" alt="WinUI TreeGrid Column with DateColumn" width="100%" Height="Auto"/>
 
 ### Change the format of date value
 
@@ -856,16 +879,20 @@ By using the [DisplayDateFormat](https://help.syncfusion.com/cr/winui/Syncfusion
 
 {% tabs %}
 {% highlight xaml %}
-<treeGrid:SfTreeGrid x:Name="treeGrid" ChildPropertyName="ReportsTo"
-                     AutoExpandMode="RootNodesExpanded"
-                     ItemsSource="{Binding EmployeeDetails}"
-                     ParentPropertyName="ID" SelfRelationRootValue="-1" 
-                     AllowEditing="True" AutoGenerateColumns="False">
+<treeGrid:SfTreeGrid x:Name="treeGrid" 
+                ChildPropertyName="ReportsTo"
+                AutoExpandMode="RootNodesExpanded"
+                ItemsSource="{Binding EmployeeDetails}"
+                ParentPropertyName="ID" 
+                SelfRelationRootValue="-1" 
+                AllowEditing="True" 
+                AutoGenerateColumns="False">
     <treeGrid:SfTreeGrid.Columns>
         <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
         <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
-         <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
         <treeGrid:TreeGridDateColumn MappingName="Date" HeaderText="Date" DisplayDateFormat="M" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
         <treeGrid:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
@@ -875,7 +902,7 @@ this.treeGrid.Columns.Add(new TreeGridDateColumn() { HeaderText = "Date", Mappin
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeGrid Column with DateColumn with Month format](Column-Type-images/winui-treegrid-DateColumn_FormatDate-column.png)
+<img src="Column-Type-images/winui-treegrid-DateColumn_FormatDate-column.png" alt="WinUI TreeGrid Column with DateColumn with Month format" width="100%" Height="Auto"/>
 
 ### Null value support
 
@@ -885,16 +912,20 @@ The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 
 {% tabs %}
 {% highlight xaml %}
-<treeGrid:SfTreeGrid x:Name="treeGrid" ChildPropertyName="ReportsTo"
-                     AutoExpandMode="RootNodesExpanded"
-                     ItemsSource="{Binding EmployeeDetails}"
-                     ParentPropertyName="ID" SelfRelationRootValue="-1" 
-                     AllowEditing="True" AutoGenerateColumns="False">
+<treeGrid:SfTreeGrid x:Name="treeGrid" 
+                ChildPropertyName="ReportsTo"
+                AutoExpandMode="RootNodesExpanded"
+                ItemsSource="{Binding EmployeeDetails}"
+                ParentPropertyName="ID" 
+                SelfRelationRootValue="-1" 
+                AllowEditing="True"
+                AutoGenerateColumns="False">
     <treeGrid:SfTreeGrid.Columns>
         <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
         <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
-         <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
         <treeGrid:TreeGridDateColumn MappingName="Date" HeaderText="Date" AllowNull="True" PlaceholderText="Change the date" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
         <treeGrid:TreeGridNumericColumn MappingName="ReportsTo" HeaderText="Reports To" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
@@ -902,11 +933,193 @@ The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeGrid Column with DateColumn](Column-Type-images/winui-treegrid-DateColumn_AllowNull-column.png)
+<img src="Column-Type-images/winui-treegrid-DateColumn_AllowNull-column.png" alt="WinUI TreeGrid Column with DateColumn" width="100%" Height="Auto"/>
 
 ### Setting date value range
 
 You can restrict and display the input value within the range using the [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MinDate) and [MaxDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MaxDate) properties.
+
+## TreeGridTimeColumn
+
+[TreeGridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html) is derived from `TreeGridTextColumnBase` and displays column data as time. In editing mode, it hosts the [SfTimePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) element.
+
+{% tabs %}
+{% highlight xaml %}
+
+<treeGrid:SfTreeGrid Name="treeGrid"
+        ColumnWidthMode="Star"
+        AllowEditing="True"
+        AutoExpandMode="AllNodesExpanded"
+        AutoGenerateColumns="False"
+        ChildPropertyName="ReportsTo"
+        ItemsSource="{Binding Employees}"
+        ParentPropertyName="ID"
+        SelfRelationRootValue="-1" >
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridTimeColumn HeaderText="Reporting Time" MappingName="ReportingTime" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" />
+        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+treeGrid.Columns.Add(new TreeGridTimeColumn()
+{
+    MappingName = "ReportingTime",
+    HeaderText = "Reporting Time"
+});
+{% endhighlight %}
+{% endtabs %}
+
+<img src="Column-Type-images/winui-treegrid-time-column.png" alt="WinUI TreeGrid Column with TimeColumn" width="100%" Height="Auto"/>
+
+### Change the format of time value
+
+By using the [DisplayTimeFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_DisplayTimeFormat) property, you can edit and display the selected time in various formats such as hour, minutes, seconds, meridiem, 12-Hour and 24-Hour format. The default value of `DisplayTimeFormat` property is **hh:mm tt**. For example, in the below image the TimeColumn has `DisplayTimeFormat` set to **HH:mm tt**.
+
+{% tabs %}
+{% highlight xaml %}
+
+<treeGrid:SfTreeGrid Name="treeGrid"
+        ColumnWidthMode="Star"
+        AllowEditing="True"
+        AutoExpandMode="AllNodesExpanded"
+        AutoGenerateColumns="False"
+        ChildPropertyName="ReportsTo"
+        ItemsSource="{Binding Employees}"
+        ParentPropertyName="ID"
+        SelfRelationRootValue="-1" >
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridTimeColumn HeaderText="Reporting Time" MappingName="ReportingTime" DisplayTimeFormat="HH:mm tt" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" />
+        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+treeGrid.Columns.Add(new TreeGridTimeColumn()
+{
+    MappingName = "ReportingTime",
+    HeaderText = "Reporting Time"
+    DisplayTimeFormat="HH:mm tt",
+});
+{% endhighlight %}
+{% endtabs %}
+
+<img src="Column-Type-images/winui-treegrid-time-column_format.png" alt="WinUI TreeGrid Column with TimeColumn with 24-Hour format" width="100%" Height="Auto"/>
+
+### Null value support
+
+`TreeGridTimeColumn` provides support to restrict or allow null value in columns based on [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_AllowNull) property. The default value of `AllowNull` property is `True`. Instead of displaying null values, you can display hint text using the [PlaceholderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_PlaceholderText) property.
+
+The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`. The default value of `PlaceholderText` property is `select a time`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<treeGrid:SfTreeGrid Name="treeGrid"
+        ColumnWidthMode="Star"
+        AllowEditing="True"
+        AutoExpandMode="AllNodesExpanded"
+        AutoGenerateColumns="False"
+        ChildPropertyName="ReportsTo"
+        ItemsSource="{Binding Employees}"
+        ParentPropertyName="ID"
+        SelfRelationRootValue="-1" >
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridTimeColumn HeaderText="Reporting Time" MappingName="ReportingTime" PlaceholderText="Change the time" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" />
+        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+treeGrid.Columns.Add(new TreeGridTimeColumn()
+{
+    MappingName = "ReportingTime",
+    HeaderText = "Reporting Time"
+    PlaceholderText="Change the Time",
+});
+
+{% endhighlight %}
+{% endtabs %}
+
+<img src="Column-Type-images/winui-treegrid-time-column_AllowNull.png" alt="WinUI TreeGrid Column with TimeColumn with PlaceholderText" width="100%" Height="Auto"/>
+
+### Setting time value range
+
+You can restrict and display the input value within the range using the [MinTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_MinTime) and [MaxTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_MaxTime) properties.
+
+### Editing support
+
+`TreeGridTimeColumn` provides support to edit the time value in different modes.
+* [Normal](#normal)
+* [Mask](#mask)
+* [None](#none)
+
+#### Normal
+
+To allow editing and perform input validation only after editing is completed, set the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_EditMode) property value as `Normal`.
+
+For more information refer [here](https://help.syncfusion.com/winui/time-picker/localization-and-formatting#edit-time-using-free-form-editing).
+
+#### Mask
+
+To allow editing and perform input validation as user edits the time value, set the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_EditMode) property value as `Mask`.
+The default value for `EditMode` property is `Mask`.
+
+For more information refer [here](https://help.syncfusion.com/winui/time-picker/localization-and-formatting#edit-time-using-mask-mode).
+ 
+#### None
+You can disable the editing in edit part by setting the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_EditMode) Property as `None`.
+
+### Select time as you scroll spinner
+
+If you want to hide the submit button and select the time directly from the drop-down time spinner without clicking `Ok`, set the [ShowSubmitButtons](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_ShowSubmitButtons) property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<treeGrid:SfTreeGrid Name="treeGrid"
+        ColumnWidthMode="Star"
+        AllowEditing="True"
+        AutoExpandMode="AllNodesExpanded"
+        AutoGenerateColumns="False"
+        ChildPropertyName="ReportsTo"
+        ItemsSource="{Binding Employees}"
+        ParentPropertyName="ID"
+        SelfRelationRootValue="-1" >
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridTimeColumn HeaderText="Reporting Time" MappingName="ReportingTime" ShowSubmitButtons="False" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" />
+        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+treeGrid.Columns.Add(new TreeGridTimeColumn()
+{
+    MappingName = "ReportingTime",
+    HeaderText = "Reporting Time"
+    ShowSubmitButtons="False",
+});
+
+{% endhighlight %}
+{% endtabs %}
+
+For more information refer [here](https://help.syncfusion.com/winui/time-picker/time-restriction#select-time-as-you-scroll-spinner).
 
 ## TreeGridCheckBoxColumn
 
@@ -917,7 +1130,7 @@ You can restrict and display the input value within the range using the [MinDate
 
 <treeGrid:SfTreeGrid Name="treeGrid"
         ColumnWidthMode="Star"
-                        AllowEditing="True"
+        AllowEditing="True"
         AutoExpandMode="AllNodesExpanded"
         AutoGenerateColumns="False"
         ChildPropertyName="ReportsTo"
@@ -925,11 +1138,11 @@ You can restrict and display the input value within the range using the [MinDate
         ParentPropertyName="ID"
         SelfRelationRootValue="-1" >
     <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn MappingName="ID" />
         <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
         <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <treeGrid:TreeGridCheckBoxColumn HeaderText="Availability" MappingName="AvailabilityStatus" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
         <treeGrid:TreeGridTextColumn MappingName="Title" />
+        <treeGrid:TreeGridCheckBoxColumn HeaderText="Availability" MappingName="AvailabilityStatus" />
         <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
@@ -943,7 +1156,7 @@ treeGrid.Columns.Add(new TreeGridCheckBoxColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeGrid Column with CheckBox](Column-Type-images/winui-treegrid-checkbox-column.png)
+<img src="Column-Type-images/winui-treegrid-checkbox-column.png" alt="WinUI TreeGrid Column with CheckBox" width="100%" Height="Auto"/>
 
 `TreeGridCheckBoxColumn` allows you to customize check box state and its alignment.
 
@@ -1009,35 +1222,37 @@ Below code returns the `DefaultTemplate` and `AlternateTemplate` based on ID’s
 
 {% tabs %}
 {% highlight xaml %}
-<DataTemplate x:Key="DefaultCellTemplate">
-    <TextBlock VerticalAlignment="Center"
+<Application.Resources>
+    <DataTemplate x:Key="DefaultCellTemplate">
+        <TextBlock VerticalAlignment="Center"
                Foreground="Red"
                Text="{Binding Path=ID}"
                TextAlignment="Center" />
-</DataTemplate>
+    </DataTemplate>
 
-<DataTemplate x:Key="AlternateCellTemplate">
-    <TextBlock VerticalAlignment="Center"
+    <DataTemplate x:Key="AlternateCellTemplate">
+        <TextBlock VerticalAlignment="Center"
                Foreground="Green"
                Text="{Binding Path=ID}"
                TextAlignment="Center" />
-</DataTemplate>
+    </DataTemplate>
 
-<DataTemplate x:Key="DefaultEditTemplate">
-    <TextBox Height="45"
+    <DataTemplate x:Key="DefaultEditTemplate">
+        <TextBox Height="45"
              VerticalAlignment="Center"
              Foreground="Red"
              Text="{Binding Path=ID}"
              TextAlignment="Center" />
-</DataTemplate>
+    </DataTemplate>
 
-<DataTemplate x:Key="AlternateEditTemplate">
-    <TextBox Height="45"
+    <DataTemplate x:Key="AlternateEditTemplate">
+        <TextBox Height="45"
              VerticalAlignment="Center"
              Foreground="Green"
              Text="{Binding Path=ID}"
              TextAlignment="Center" />
-</DataTemplate>
+    </DataTemplate>
+</Application.Resources>
 {% endhighlight %}
 {% highlight c# %}
 public class CustomCellTemplateSelector : DataTemplateSelector
@@ -1083,12 +1298,6 @@ In the below code, custom template selector set to `TreeGridTemplateColumn.EditT
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
-    <local:ViewModel x:Key="viewModel" />
-    <local:CustomCellTemplateSelector x:Key="cellTemplateSelector" />
-    <local:CustomEditTemplateSelector x:Key="editTemplateSelector" />
-</Page.Resources>
-
 <treeGrid:SfTreeGrid Name="treeGrid"
             AllowEditing="True"
             AutoExpandMode="RootNodesExpanded"
@@ -1096,17 +1305,19 @@ In the below code, custom template selector set to `TreeGridTemplateColumn.EditT
             ChildPropertyName="ReportsTo"
             ItemsSource="{Binding Employees}"
             ParentPropertyName="ID">
+    <treeGrid:SfTreeGrid.Resources>
+        <local:CustomCellTemplateSelector x:Key="cellTemplateSelector" />
+        <local:CustomEditTemplateSelector x:Key="editTemplateSelector" />
+    </treeGrid:SfTreeGrid.Resources>
     <treeGrid:SfTreeGrid.Columns>
         <treeGrid:TreeGridTemplateColumn CellTemplateSelector="{StaticResource cellTemplateSelector}"
-                                EditTemplateSelector="{StaticResource editTemplateSelector}"
-                                HeaderText="Employee ID"
-                                MappingName="ID" />
+            EditTemplateSelector="{StaticResource editTemplateSelector}" HeaderText="Employee ID" MappingName="ID" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
 
-![Cell and Edit Template in WinUI TreeGrid Column](Column-Type-images/winui-treegrid-cell-and-edit-template.png)
+<img src="Column-Type-images/winui-treegrid-cell-and-edit-template.png" alt="Cell and Edit Template in WinUI TreeGrid Column" width="100%" Height="Auto"/>
 
 
 ## TreeGridComboBoxColumn
@@ -1118,9 +1329,12 @@ By default, `TreeGridComboBoxColumn` displays the value using `MappingName` prop
 {% tabs %}
 {% highlight xaml %}
 <treeGrid:SfTreeGrid x:Name="treeGrid"                              
-                        AutoGenerateColumns="False"
-                        ChildPropertyName="Children"                             
-                        ItemsSource="{Binding Persons}">
+                    AllowEditing="True"
+                    AutoExpandMode="RootNodesExpanded"
+                    AutoGenerateColumns="False"
+                    ChildPropertyName="ReportsTo"
+                    ItemsSource="{Binding Employees}"
+                    ParentPropertyName="ID">
     <treeGrid:SfTreeGrid.Columns>
         <treeGrid:TreeGridComboBoxColumn ItemsSource="{Binding CityCollection, Source={StaticResource viewModel}}"  MappingName="City" />
     </treeGrid:SfTreeGrid.Columns>
@@ -1141,7 +1355,7 @@ SfTreeGrid triggers, `CurrentCellDropDownSelectionChanged` event, when the Selec
 
 `SelectedItem` property returns the selected item from drop down list.
 
-![WinUI TreeGrid Column with ComboBox](Column-Type-images/winui-treegrid-combobox-column.png)
+<img src="Column-Type-images/winui-treegrid-combobox-column.png" alt="WinUI TreeGrid Column with ComboBox" width="100%" Height="Auto"/>
 
 ### Improving dropdown opening time
 
@@ -1149,7 +1363,7 @@ You can improve the drop-down opening time on loading by setting [VirtualizingSt
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
+<Application.Resources>
     <Style TargetType="ComboBox">
         <Setter Property="ItemsPanel">
             <Setter.Value>
@@ -1159,7 +1373,7 @@ You can improve the drop-down opening time on loading by setting [VirtualizingSt
             </Setter.Value>
         </Setter>
     </Style>
-</Page.Resources>
+</Application.Resources>
 {% endhighlight %}
 {% endtabs %}
 
@@ -1216,7 +1430,7 @@ treeGrid.Columns.Add(new TreeGridHyperlinkColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeGrid Column with Hyperlink](Column-Type-images/winui-treegrid-hyperlink-column.png)
+<img src="Column-Type-images/winui-treegrid-hyperlink-column.png" alt="WinUI TreeGrid Column with Hyperlink" width="100%" Height="Auto"/>
 
 
 
@@ -1263,198 +1477,17 @@ You can change the foreground color of `TreeGridHyperlinkColumn` by writing the 
 
 {% tabs %}
 {% highlight xaml %}
-<Style TargetType="HyperlinkButton">
-    <Setter Property="Foreground" Value="Green" />
-</Style>
+<Application.Resources>
+    <Style TargetType="HyperlinkButton">
+        <Setter Property="Foreground" Value="Green" />
+    </Style>
+</Application.Resources>
 {% endhighlight %}
 {% endtabs %}
 
-![Customized Hyperlink Column in WinUI TreeGrid](Column-Type-images/winui-treegrid-hyperlink-column-customization.png)
+<img src="Column-Type-images/winui-treegrid-hyperlink-column-customization.png" alt="Customized Hyperlink Column in WinUI TreeGrid" width="100%" Height="Auto"/>
 
-## TreeGridTimeColumn
-
-[TreeGridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html) is derived from `TreeGridTextColumnBase` and displays column data as time. In editing mode, it hosts the [SfTimePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) element.
-
-{% tabs %}
-{% highlight xaml %}
-
-<treeGrid:SfTreeGrid Name="treeGrid"
-        ColumnWidthMode="Star"
-        AllowEditing="True"
-        AutoExpandMode="AllNodesExpanded"
-        AutoGenerateColumns="False"
-        ChildPropertyName="ReportsTo"
-        ItemsSource="{Binding Employees}"
-        ParentPropertyName="ID"
-        SelfRelationRootValue="-1" >
-    <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn MappingName="ID" />
-        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
-        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <treeGrid:TreeGridCheckBoxColumn HeaderText="Reporting Time" MappingName="ReportingTime" />
-        <treeGrid:TreeGridTextColumn MappingName="Title" />
-        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
-    </treeGrid:SfTreeGrid.Columns>
-</treeGrid:SfTreeGrid>
-{% endhighlight %}
-{% highlight c# %}
-treeGrid.Columns.Add(new TreeGridTimeColumn()
-{
-    MappingName = "ReportingTime",
-    HeaderText = "Reporting Time"
-});
-{% endhighlight %}
-{% endtabs %}
-
-![WinUI TreeGrid Column with TimeColumn](Column-Type-images/winui-treegrid-time-column.png)
-
-### Change the format of time value
-
-By using the [DisplayTimeFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_DisplayTimeFormat) property, you can edit and display the selected time in various formats such as hour, minutes, seconds, meridiem, 12-Hour and 24-Hour format. The default value of `DisplayTimeFormat` property is **hh:mm tt**. For example, in the below image the TimeColumn has `DisplayTimeFormat` set to **HH:mm tt**.
-
-{% tabs %}
-{% highlight xaml %}
-
-<treeGrid:SfTreeGrid Name="treeGrid"
-        ColumnWidthMode="Star"
-        AllowEditing="True"
-        AutoExpandMode="AllNodesExpanded"
-        AutoGenerateColumns="False"
-        ChildPropertyName="ReportsTo"
-        ItemsSource="{Binding Employees}"
-        ParentPropertyName="ID"
-        SelfRelationRootValue="-1" >
-    <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn MappingName="ID" />
-        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
-        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <treeGrid:TreeGridTimeColumn HeaderText="Reporting Time" MappingName="ReportingTime" DisplayTimeFormat="HH:mm tt" />
-        <treeGrid:TreeGridTextColumn MappingName="Title" />
-        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
-    </treeGrid:SfTreeGrid.Columns>
-</treeGrid:SfTreeGrid>
-{% endhighlight %}
-{% highlight c# %}
-treeGrid.Columns.Add(new TreeGridTimeColumn()
-{
-    MappingName = "ReportingTime",
-    HeaderText = "Reporting Time"
-    DisplayTimeFormat="HH:mm tt",
-});
-{% endhighlight %}
-{% endtabs %}
-
-![WinUI TreeGrid Column with TimeColumn with 24-Hour format](Column-Type-images/winui-treegrid-time-column_format.png)
-
-### Null value support
-
-`TreeGridTimeColumn` provides support to restrict or allow null value in columns based on [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_AllowNull) property. The default value of `AllowNull` property is `True`. Instead of displaying null values, you can display hint text using the [PlaceholderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_PlaceholderText) property.
-
-The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`. The default value of `PlaceholderText` property is `select a time`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<treeGrid:SfTreeGrid Name="treeGrid"
-        ColumnWidthMode="Star"
-        AllowEditing="True"
-        AutoExpandMode="AllNodesExpanded"
-        AutoGenerateColumns="False"
-        ChildPropertyName="ReportsTo"
-        ItemsSource="{Binding Employees}"
-        ParentPropertyName="ID"
-        SelfRelationRootValue="-1" >
-    <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn MappingName="ID" />
-        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
-        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <treeGrid:TreeGridTimeColumn HeaderText="Reporting Time" MappingName="ReportingTime" PlaceholderText="Change the Time" />
-        <treeGrid:TreeGridTextColumn MappingName="Title" />
-        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
-    </treeGrid:SfTreeGrid.Columns>
-</treeGrid:SfTreeGrid>
-{% endhighlight %}
-{% highlight c# %}
-treeGrid.Columns.Add(new TreeGridTimeColumn()
-{
-    MappingName = "ReportingTime",
-    HeaderText = "Reporting Time"
-    PlaceholderText="Change the Time",
-});
-
-{% endhighlight %}
-{% endtabs %}
-
-![WinUI TreeGrid Column with TimeColumn with PlaceholderText](Column-Type-images/winui-treegrid-time-column_AllowNull.png)
-
-### Setting time value range
-
-You can restrict and display the input value within the range using the [MinTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_MinTime) and [MaxTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_MaxTime) properties.
-
-### Editing support
-
-`TreeGridTimeColumn` provides support to edit the time value in different modes.
-* [Normal](#normal)
-* [Mask](#mask)
-* [None](#none)
-
-#### Normal
-
-To allow editing and perform input validation only after editing is completed, set the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_EditMode) property value as `Normal`.
-
-For more information refer [here](https://help.syncfusion.com/winui/time-picker/localization-and-formatting#edit-time-using-free-form-editing).
-
-#### Mask
-
-To allow editing and perform input validation as user edits the time value, set the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_EditMode) property value as `Mask`.
-The default value for `EditMode` property is `Mask`.
-
-For more information refer [here](https://help.syncfusion.com/winui/time-picker/localization-and-formatting#edit-time-using-mask-mode).
- 
-#### None
-You can disable the editing in edit part by setting the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_EditMode) Property as `None`.
-
-### Select time as you scroll spinner
-
-If you want to hide the submit button and select the time directly from the drop-down time spinner without clicking `Ok`, set the [ShowSubmitButtons](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_ShowSubmitButtons) property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<treeGrid:SfTreeGrid Name="treeGrid"
-        ColumnWidthMode="Star"
-        AllowEditing="True"
-        AutoExpandMode="AllNodesExpanded"
-        AutoGenerateColumns="False"
-        ChildPropertyName="ReportsTo"
-        ItemsSource="{Binding Employees}"
-        ParentPropertyName="ID"
-        SelfRelationRootValue="-1" >
-    <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn MappingName="ID" />
-        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
-        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <treeGrid:TreeGridTimeColumn HeaderText="Reporting Time" MappingName="ReportingTime" ShowSubmitButtons="False" />
-        <treeGrid:TreeGridTextColumn MappingName="Title" />
-        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
-    </treeGrid:SfTreeGrid.Columns>
-</treeGrid:SfTreeGrid>
-{% endhighlight %}
-{% highlight c# %}
-treeGrid.Columns.Add(new TreeGridTimeColumn()
-{
-    MappingName = "ReportingTime",
-    HeaderText = "Reporting Time"
-    ShowSubmitButtons="False",
-});
-
-{% endhighlight %}
-{% endtabs %}
-
-For more information refer [here](https://help.syncfusion.com/winui/time-picker/time-restriction#select-time-as-you-scroll-spinner).
-
-
-### Customize column renderer
+## Customize column renderer
 
 SfTreeGrid allows you to customize the column related operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the column. Each column has its own renderer with set of virtual methods for handling the column level operations. 
 Below table lists the available cell types for unbound row and its renderers.
@@ -1483,13 +1516,13 @@ TextBox
 </tr>
 <tr>
 <td>
-{{'[TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html#"")'| markdownify }}
+{{'[TreeGridNumericColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCheckBoxCellRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellCheckBoxRenderer.html#"")'| markdownify }}
+{{'[TreeGridCellNumericRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellNumericRenderer.html#"")'| markdownify }}
 </td>
 <td>
-CheckBox
+Numeric
 </td>
 </tr>
 <tr>
@@ -1505,13 +1538,24 @@ DateTimeOffset
 </tr>
 <tr>
 <td>
-{{'[TreeGridNumericColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#"")'| markdownify }}
+{{'[TreeGridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCellNumericRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellNumericRenderer.html#"")'| markdownify }}
+{{'[TreeGridCellTimeRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellTimeRenderer.html#"")'| markdownify }}
 </td>
 <td>
-Numeric
+Time
+</td>
+</tr>
+<tr>
+<td>
+{{'[TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html#"")'| markdownify }}
+</td>
+<td>
+{{'[TreeGridCheckBoxCellRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellCheckBoxRenderer.html#"")'| markdownify }}
+</td>
+<td>
+CheckBox
 </td>
 </tr>
 <tr>
@@ -1547,17 +1591,6 @@ ComboBox
 HyperlinkButton
 </td>
 </tr>
-<tr>
-<td>
-{{'[TreeGridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#"")'| markdownify }}
-</td>
-<td>
-{{'[TreeGridCellTimeRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Renderers.TreeGridCellTimeRenderer.html#"")'| markdownify }}
-</td>
-<td>
-Time
-</td>
-</tr>
 </table>
 
 Below code, creates the `TreeGridCellTextBoxRendererExt` to change the fore ground of `FirstName` column and replacing created renderer to `CellRenderers`.
@@ -1589,7 +1622,7 @@ public class TreeGridCellTextBoxRendererExt : TreeGridCellTextBoxRenderer
 {% endhighlight %}
 {% endtabs %}
 
-![Customize the Column in WinUI TreeGrid](Column-Type-images/winui-treegrid-customization.png)
+<img src="Column-Type-images/winui-treegrid-customization.png" alt="Customize the Column in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 
 ## How To
@@ -1610,21 +1643,20 @@ You can restrict the length of user input in both display and edit element using
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
-    <local:MaxLengthConverter x:Key="maxLengthConverter"/>
-</Page.Resources>
-
 <treeGrid:SfTreeGrid x:Name="treeGrid"
                 AutoExpandMode="RootNodesExpanded"
                 AllowEditing="True"
                 AutoGenerateColumns="False"
                 ChildPropertyName="Children"
                 ItemsSource="{Binding EmployeeDetails}">
+    <treeGrid:SfTreeGrid.Resources>
+        <local:MaxLengthConverter x:Key="maxLengthConverter"/>
+    </treeGrid:SfTreeGrid.Resources>
     <treeGrid:SfTreeGrid.Columns>
         <treeGrid:TreeGridTextColumn HeaderText="First Name" 
-                                        MappingName="FirstName"
-                                        DisplayBinding="{Binding FirstName,Converter={StaticResource maxLengthConverter}}" 
-                                        ValueBinding="{Binding FirstName,Converter={StaticResource maxLengthConverter}}" />
+                                    MappingName="FirstName"
+                                    DisplayBinding="{Binding FirstName,Converter={StaticResource maxLengthConverter}}" 
+                                    ValueBinding="{Binding FirstName,Converter={StaticResource maxLengthConverter}}" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 {% endhighlight %}
@@ -1664,18 +1696,17 @@ N> TextBlock does not have the MaxLength property. Therefore, you can use the co
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
-    <Style TargetType="TextBox">
-        <Setter Property="MaxLength" Value="7" />
-    </Style>
-</Page.Resources>
-
 <treeGrid:SfTreeGrid x:Name="treeGrid"
         AutoExpandMode="RootNodesExpanded"
         AllowEditing="True"
         AutoGenerateColumns="False"
         ChildPropertyName="Children"
         ItemsSource="{Binding EmployeeDetails}">
+    <treeGrid:SfTreeGrid.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="MaxLength" Value="7" />
+        </Style>
+    </treeGrid:SfTreeGrid.Resources>
     <treeGrid:SfTreeGrid.Columns>
         <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
     </treeGrid:SfTreeGrid.Columns>

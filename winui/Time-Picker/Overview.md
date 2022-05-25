@@ -13,14 +13,14 @@ The [WinUI Time Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 ### Normal view:
 
-![WinUI TimePicker with Normal View](Overview_images/winui-timepicker-normal-view.png)
+![time-picker-with-normal-view-in-winui-time-picker](Overview_images/time-picker-with-normal-view-in-winui-time-picker.png)
 
 ### Expanded view:
 
-![WinUI TimePicker with Dropdown Time Selector](Overview_images/winui-timepicker-dropdown.png)
+![time-picker-with-expand-view-in-winui-time-picker](Overview_images/time-picker-with-expand-view-in-winui-time-picker.png)
 
 ## Key Features
 
 * Formatting – The Control displays  the selected time value in a various formats.
 * Time spinner – The drop-down portion used for selecting the time and it can be customized.
-* Spinner customization - Allow to customize the drop-down spinner header and each cells
+* Spinner customization - Allow to customize the drop-down spinner header and each cells.

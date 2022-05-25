@@ -31,13 +31,13 @@ N> When both the `CalendarIdentifier` and the `FlowDirection` properties are set
 N> The `Calendar DateRange Picker` control visually updates the flow direction based on the `CalendarIdentifier` property value.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
-<calendar:SfCalendarDateRangePicker CalendarIdentifier="HebrewCalendar"
-                               x:Name="sfCalendarDateRangePicker"/>
+<calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker"
+                                    CalendarIdentifier="HebrewCalendar"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.CalendarIdentifier = "HebrewCalendar";
@@ -45,7 +45,7 @@ sfCalendarDateRangePicker.CalendarIdentifier = "HebrewCalendar";
 {% endhighlight %}
 {% endtabs %}
 
-![Calendar Types aka Calendar Identifier in WinUI Calendar DateRange Picker](Getting-Started_images/winui-calendar-daterange-picker-calendar-types.png)
+![calendar-types-hebrew-calendar-in-winui-calendar-date-range-picker](Images/getting-started/calendar-types-hebrew-calendar-in-winui-calendar-date-range-picker.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting).
 
@@ -54,13 +54,14 @@ N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-
 If you want to localize the drop-down calendar, use the `Language` property. The default value of `Language` property is **en-US**.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
 
-<calendar:SfCalendarDateRangePicker Language="ar-AR"
-                               x:Name="sfCalendarDateRangePicker"/>
+<calendar:SfCalendarDateRangePicker 
+                               x:Name="sfCalendarDateRangePicker"
+                               Language="ar-AR"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.Language = "ar-AR";
@@ -68,7 +69,7 @@ sfCalendarDateRangePicker.Language = "ar-AR";
 {% endhighlight %}
 {% endtabs %}
 
-![Arabic Culture in WinUI Calendar DateRange Picker](Getting-Started_images/winui-calendar-daterange-picker-arabic-culture.png)
+![calendar-types-arabic-calendar-in-winui-calendar-date-range-picker](Images/getting-started/calendar-types-arabic-calendar-in-winui-calendar-date-range-picker.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting).
 
@@ -77,12 +78,13 @@ N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-
 You can modify and display the selected date range with various formatting like date, month, and year formats by using the [`DisplayDateFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_DisplayDateFormat) property. The default value of `DisplayDateFormat` property is **{0:d}-{1:d}**.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
-<calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker" DisplayDateFormat="{}{0:D} - {1:D}" />
+<calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker" 
+                                    DisplayDateFormat="{}{0:D} - {1:D}" />
    
 {% endhighlight  %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.DisplayDateFormat= "{0:D}-{1:D}";
@@ -90,7 +92,7 @@ sfCalendarDateRangePicker.DisplayDateFormat= "{0:D}-{1:D}";
 {% endhighlight  %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker String Formatting](Getting-Started_images/winui-calendar-daterange-picker-string-formatting.png)
+![change-display-date-format-in-winui-calendar-date-range-picker](Images/getting-started/change-display-date-format-in-winui-calendar-date-range-picker.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting).
 
@@ -101,16 +103,17 @@ You can use different date formats such as abbreviated or full name for a day, m
 N> Refer to this [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.datetimeformatting.datetimeformatter?view=winrt-19041) page to get more date formats.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5" %}
 
-<calendar:SfCalendarDateRangePicker DayFormat="{}{day.integer(2)}"
+<calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker" 
+                                    DayFormat="{}{day.integer(2)}"
                                     MonthFormat="{}{month.full}"
                                     DayOfWeekFormat="{}{dayofweek.abbreviated(3)}"
                                     MonthHeaderFormat="{}{month.abbreviated} {year.abbreviated}‎"
-                                    x:Name="sfCalendarDateRangePicker"/>
+                                    />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4 5" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.DayFormat = "{day.integer(2)}";
@@ -121,7 +124,7 @@ sfCalendarDateRangePicker.MonthHeaderFormat = "{month.abbreviated} {year.abbrevi
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker Date Formatting](Getting-Started_images/winui-calendar-daterange-picker-date-formatting.gif)
+![change-display-date-formatting-in-winui-calendar-date-range-picker](Images/getting-started/change-display-date-formatting-in-winui-calendar-date-range-picker.gif)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting).
 
@@ -130,21 +133,21 @@ N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-
 By default, **Sunday** is shown as the first day of the week in the `Calendar DateRange Picker` controls' drop-down calendar. You can change the first day of week by changing the [`FirstDayOfWeek`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_FirstDayOfWeek) property value. 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker" 
-                               FirstDayOfWeek="Monday"/>
+                                    FirstDayOfWeek="Monday"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
-sfCalendarDateRangePicker.FirstDayOfWeek = DayOfWeek.Monday;
+sfCalendarDateRangePicker.FirstDayOfWeek = FirstDayOfWeek.Monday;
 
 {% endhighlight %}
 {% endtabs %}
 
-![First Day of Week in WinUI Calendar DateRange Picker](Dropdown-Calendar_images/winui-calendar-daterange-picker-first-day-of-week.png)
+![change-first-day-of-week-in-winui-calendar-date-range-picker](Images/drop-down-calendar/change-first-day-of-week-in-winui-calendar-date-range-picker.png)
 
 ## Change flow direction
 
@@ -153,13 +156,14 @@ By default, flow direction is changed automatically based on selected `CalendarI
 N> When `CalendarIdentifier` and `FlowDirection` properties are set, `FlowDirection` property is given higher precedence.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
-<calendar:SfCalendarDateRangePicker FlowDirection="RightToLeft" 
-                               x:Name="sfCalendarDateRangePicker"/>
+<calendar:SfCalendarDateRangePicker 
+                               x:Name="sfCalendarDateRangePicker"
+                               FlowDirection="RightToLeft" />
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.FlowDirection = FlowDirection.RightToLeft;
@@ -167,6 +171,6 @@ sfCalendarDateRangePicker.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker Right-to-Left](Dropdown-Calendar_images/winui-calendar-daterange-picker-right-to-left.png)
+![change-flow-direction-in-winui-calendar-date-range-picker](Images/drop-down-calendar/change-flow-direction-in-winui-calendar-date-range-picker.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Formatting).

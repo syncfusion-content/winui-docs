@@ -18,14 +18,15 @@ You can show the week numbers for each week in [Calendar](https://help.syncfusio
 N> You can change the value of the [WeekNumberRule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_WeekNumberRule) property with the [CalendarWeekRule](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0), and you can also add any prefix or suffix characters to **#** for the `WeekNumberFormat` property.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
 
-<calendar:SfCalendar HorizontalAlignment="Center" VerticalAlignment="Center"
+<calendar:SfCalendar HorizontalAlignment="Center" 
+                     VerticalAlignment="Center"
                      ShowWeekNumbers="True"
                      />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.ShowWeekNumbers = true;
@@ -33,7 +34,7 @@ sfCalendar.ShowWeekNumbers = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar showing week number based on weeknumber rule](Week_Numbers_images/winui-calendar-show-weeknumbers.png)
+![show-week-numbers-in-winui-calendar](Images/week-numbers/show-week-numbers-in-winui-calendar.png)
 
 ## Week rule
 
@@ -46,14 +47,16 @@ You can change the rule for determining the first week of the year in [Calendar]
 * **FirstFullWeek** - Indicates that the first week of the year begins on the first occurrence of the designated first day of the week on or after the first day of the year.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4" %}
 
-<calendar:SfCalendar HorizontalAlignment="Center" VerticalAlignment="Center"
-                     ShowWeekNumbers="True" WeekNumberRule="FirstFullWeek"
+<calendar:SfCalendar HorizontalAlignment="Center" 
+                     VerticalAlignment="Center"
+                     ShowWeekNumbers="True" 
+                     WeekNumberRule="FirstFullWeek"
                      />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.ShowWeekNumbers = true;
@@ -62,7 +65,7 @@ sfCalendar.WeekNumberRule = CalendarWeekRule.FirstFullWeek;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar showing week number based on week number rule](Week_Numbers_images/winui-calendar-week-numberrule.png)
+![show-week-numbers-with-rule-in-winui-calendar](Images/week-numbers/show-week-numbers-with-rule-in-winui-calendar.png)
 
 ## Format week numbers
 
@@ -71,14 +74,16 @@ You can customize the format, in which week numbers are displayed in the [Calend
 N> You can add any prefix or suffix characters to **#** in `WeekNumberFormat` property to apply different custom formats.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4 5" %}
 
-<calendar:SfCalendar HorizontalAlignment="Center" VerticalAlignment="Center"
-                     ShowWeekNumbers="True" WeekNumberRule="FirstFullWeek"
+<calendar:SfCalendar HorizontalAlignment="Center" 
+                     VerticalAlignment="Center"
+                     ShowWeekNumbers="True" 
+                     WeekNumberRule="FirstFullWeek"
                      WeekNumberFormat = "W #" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4" %}
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.ShowWeekNumbers = true;
@@ -88,7 +93,7 @@ sfCalendar.WeekNumberFormat = "W #";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar apply week number format](Week_Numbers_images/winui-calendar-weeknumber-format.png)
+![customize-week-numbers-format-in-winui-calendar](Images/week-numbers/customize-week-numbers-format-in-winui-calendar.png)
 
 ## Customize the week number and name of days of the week appearance
 
@@ -97,7 +102,7 @@ sfCalendar.WeekNumberFormat = "W #";
 In the following codes, created a `DataTemplate` for both `WeekNumberTemplate` and `WeekNameTemplate` properties in the `CalendarItemTemplateSelector` class.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" %}
 
 <Grid>
     <Grid.Resources>
@@ -134,5 +139,3 @@ In the following codes, created a `DataTemplate` for both `WeekNumberTemplate` a
 
 {% endhighlight %}
 {% endtabs %}
-
-![WinUI Calendar change week number template](Week_Numbers_images/winui-calendar-weeknumber-weekname-template.png)

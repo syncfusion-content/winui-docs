@@ -16,7 +16,7 @@ You can easily navigate to the month, year, decade, or century views to select d
 You can restrict navigation within a minimum and maximum views by using the [MinDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_MinDisplayMode) and [MaxDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_MaxDisplayMode) properties. This will be useful when your date range is smaller and you do not want to show century view. By default, the value of `MinDisplayMode` is **Month** and `MaxDisplayMode` is **Century**.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4" %}
 
 <calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker"
                                MinDisplayMode="Month"
@@ -24,7 +24,7 @@ You can restrict navigation within a minimum and maximum views by using the [Min
                                DisplayMode="Month"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4" %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.MinDisplayMode = CalendarDisplayMode.Month;
@@ -34,7 +34,7 @@ sfCalendarDatePicker.DisplayMode = CalendarDisplayMode.Month;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI CalendarDatePicker displays Navigation View](Navigation_images/winui-calendar-datepicker-navigation.gif)
+![date-picker-view-navigation-in-winui-calendar-date-picker](Navigation_images/date-picker-view-navigation-in-winui-calendar-date-picker.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction).
 
@@ -43,26 +43,26 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can restrict users to select date within specific views (example : choosing validity date for credit card) in `Calendar Date Picker` control using the `MinDisplayMode` and `MaxDisplayMode` properties.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4" %}
 
 <calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker" 
                              MinDisplayMode="Year"
                              MaxDisplayMode="Decade"
-                             FormatString="MM/yyyy"
+                             DisplayDateFormat="MM/yyyy"
                              />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4" %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.MinDisplayMode = CalendarDisplayMode.Year;
 sfCalendarDatePicker.MaxDisplayMode = CalendarDisplayMode.Decade;
-sfCalendarDatePicker.FormatString = "MM/yyyy";
+sfCalendarDatePicker.DisplayDateFormat = "MM/yyyy";
 
 {% endhighlight %}
 {% endtabs %}
 
-![Restrict Date Selection in WinUI CalendarDatePicker](Navigation_images/winui-calendar-datepicker-restriction.gif)
+![date-picker-restrict-date-selection-in-winui-calendar-date-picker](Navigation_images/date-picker-restrict-date-selection-in-winui-calendar-date-picker.gif)
 
 You can navigate between elements in the drop-down calendar of `Calendar Date Picker` control using keyboard shortcuts or mouse interaction. The following are the list of keyboard shortcuts to navigate and select.
 

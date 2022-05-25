@@ -18,14 +18,15 @@ You can show week numbers for each week in the drop-down calendar of [Calendar D
 N> You can change the value of the [WeekNumberRule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_WeekNumberRule) property with the [CalendarWeekRule](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0) and you can also add any prefix or suffix characters to **#** for the `WeekNumberFormat` property.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
 
-<calendar:SfCalendarDateRangePicker HorizontalAlignment="Center" VerticalAlignment="Center"
-                     ShowWeekNumbers="True"
-                     />
+<calendar:SfCalendarDateRangePicker HorizontalAlignment="Center" 
+                                    VerticalAlignment="Center"
+                                    ShowWeekNumbers="True"
+                                    />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.ShowWeekNumbers = true;
@@ -33,7 +34,7 @@ sfCalendarDateRangePicker.ShowWeekNumbers = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker showing week number based on weeknumber rule](Week_Numbers_images/winui-calendardaterangepicker-show-weeknumber.png)
+![show-week-number-in-winui-calendar-date-range-picker](Images/week_numbers/show-week-number-in-winui-calendar-date-range-picker.png)
 
 ## Week rule
 
@@ -46,14 +47,15 @@ You can change the rule for determining the first week of the year in the dropdo
 * **FirstFullWeek** - Indicates that the first week of the year begins on the first occurrence of the designated first day of the week on or after the first day of the year.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4" %}
 
-<calendar:SfCalendarDateRangePicker HorizontalAlignment="Center" VerticalAlignment="Center"
-                     ShowWeekNumbers="True" WeekNumberRule="FirstFullWeek"
-                     />
+<calendar:SfCalendarDateRangePicker HorizontalAlignment="Center" 
+                                    VerticalAlignment="Center"
+                                    ShowWeekNumbers="True" 
+                                    WeekNumberRule="FirstFullWeek" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.ShowWeekNumbers = true;
@@ -62,7 +64,7 @@ sfCalendarDateRangePicker.WeekNumberRule = CalendarWeekRule.FirstFullWeek;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker showing week number based on weeknumber rule](Week_Numbers_images/winui-calendardaterangepicker-weekrule.png)
+![show-week-number-with-rrule-in-winui-calendar-date-range-picker](Images/week_numbers/show-week-number-with-rrule-in-winui-calendar-date-range-picker.png)
 
 ## Format week numbers
 
@@ -71,14 +73,16 @@ You can customize the format, in which week numbers are displayed in the drop-do
 N> You can add any prefix or suffix characters to **#** in `WeekNumberFormat` property to apply different custom formats.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4 5" %}
 
-<calendar:SfCalendarDateRangePicker HorizontalAlignment="Center" VerticalAlignment="Center"
-                                    ShowWeekNumbers="True" WeekNumberRule="FirstFullWeek"
+<calendar:SfCalendarDateRangePicker HorizontalAlignment="Center" 
+                                    VerticalAlignment="Center"
+                                    ShowWeekNumbers="True" 
+                                    WeekNumberRule="FirstFullWeek"
                                     WeekNumberFormat = "W #" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.ShowWeekNumbers = true;
@@ -88,7 +92,7 @@ sfCalendarDateRangePicker.WeekNumberFormat = "W #";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker apply week number format](Week_Numbers_images/winui-calendardaterangepicker-custom-format.png)
+![show-week-number-with-format-in-winui-calendar-date-range-picker](Images/week_numbers/show-week-number-with-format-in-winui-calendar-date-range-picker.png)
 
 ## Customize the week numbers and name of days of the week appearance
 
@@ -97,7 +101,7 @@ The [Calendar DateRange Picker](https://help.syncfusion.com/cr/winui/Syncfusion.
 In following codes, created a `DataTemplate` for both `WeekNumberTemplate` and `WeekNameTemplate` properties in `CalendarItemTemplateSelector` class.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" %}
 
 <Grid>
     <Grid.Resources>
@@ -143,5 +147,3 @@ In following codes, created a `DataTemplate` for both `WeekNumberTemplate` and `
 
 {% endhighlight %}
 {% endtabs %}
-
-![WinUI Calendar DateRange Picker change week dayname template](Week_Numbers_images/winui-calendardaterangepicker-weekname-weeknumber-template.png)

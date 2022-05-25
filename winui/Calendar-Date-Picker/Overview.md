@@ -13,11 +13,11 @@ The [WinUI Calendar Date Picker](https://www.syncfusion.com/winui-controls/calen
 
 ### Normal view
 
-![WinUI CalendarDatePicker with Normal View](Getting-Started_images/winui-calendar-datepicker-normal-view.png)
+![date-picker-with-normal-view-in-winui-calendar-date-picker](Getting-Started_images/date-picker-with-normal-view-in-winui-calendar-date-picker.png)
 
 ### Expanded view
 
-![WinUI CalendarDatePicker with Dropdown View](Getting-Started_images/winui-calendar-datepicker-dropdown-view.png)
+![date-picker-with-expand-view-in-winui-calendar-date-picker](Getting-Started_images/date-picker-with-expand-view-in-winui-calendar-date-picker.png)
 
 ## Key Features
 

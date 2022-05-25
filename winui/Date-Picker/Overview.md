@@ -13,15 +13,14 @@ The WinUI [Date Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 ### Normal view:
 
-![WinUI DatePicker with Normal View](Overview_images/winui-datepicker-normal-view.png)
+![date-picker-with-normal-view-in-winui-date-picker](Images/over-view/date-picker-with-normal-view-in-winui-date-picker.png)
 
 ### Expanded view:
 
-![WinUI DatePicker with Dropdown Date Spinner](Overview_images/winui-datepicker-dropdown.png)
+![date-picker-with-expand-view-in-winui-date-picker](Images/over-view/date-picker-with-expand-view-in-winui-date-picker.png)
 
 ### Key Features
 
 * Formatting – The Control displays the selected date value in a various formats.
 * Date Spinner – The drop-down portion used for selecting the date and it can be customized.
 * Restrict dates – Restrict the user to select specific dates.
-

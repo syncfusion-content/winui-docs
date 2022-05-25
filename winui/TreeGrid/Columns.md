@@ -40,10 +40,18 @@ Use to display the numeric data.
 </tr>
 <tr>
 <td>
-{{'[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html)'| markdownify }}
+{{'[TreeGriDateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html)'| markdownify }}
 </td>
 <td>
-Use to display the IEnumerable data using Combo Box.
+Use to display the date value
+</td>
+</tr>
+<tr>
+<td>
+{{'[TreeGridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html)'| markdownify }}
+</td>
+<td>
+Use to display the <code>DateTimeOffSet</Code> type data as time value.
 </td>
 </tr>
 <tr>
@@ -56,22 +64,6 @@ Use to display the Boolean type data
 </tr>
 <tr>
 <td>
-{{'[TreeGriDateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html)'| markdownify }}
-</td>
-<td>
-Use to display the date value
-</td>
-</tr>
-<tr>
-<td>
-{{'[TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html)'| markdownify }}
-</td>
-<td>
-Use to display the URI data
-</td>
-</tr>
-<tr>
-<td>
 {{'[TreeGridTemplateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html)'| markdownify }}
 </td>
 <td>
@@ -80,10 +72,18 @@ Use to display the custom template-specified content.
 </tr>
 <tr>
 <td>
-{{'[TreeGridTimeColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html)'| markdownify }}
+{{'[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html)'| markdownify }}
 </td>
 <td>
-Use to display the <code>DateTimeOffSet</Code> type data as time value.
+Use to display the IEnumerable data using Combo Box.
+</td>
+</tr>
+<tr>
+<td>
+{{'[TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html)'| markdownify }}
+</td>
+<td>
+Use to display the URI data
 </td>
 </tr>
 </table>
@@ -307,13 +307,15 @@ You can set [TreeGridColumn.HeaderTemplate](https://help.syncfusion.com/cr/winui
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
-    <DataTemplate x:Key="headerTemplate">
-        <TextBlock FontSize="10"
+<treeGrid:SfTreeGrid Name="treeGrid">
+    <treeGrid:SfTreeGrid.Resources>
+        <DataTemplate x:Key="headerTemplate">
+            <TextBlock FontSize="10"
             Text="Employee Name"
             TextWrapping="Wrap" />
-    </DataTemplate>
-</Page.Resources>
+        </DataTemplate>
+    </treeGrid:SfTreeGrid.Resources>
+</treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% highlight c# %}
 treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
@@ -322,7 +324,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 {
     if (e.Column.MappingName == "FirstName")
     {
-        e.Column.HeaderTemplate = this.Resources["headerTemplate"] as DataTemplate;
+        e.Column.HeaderTemplate = this.treeGrid.Resources["headerTemplate"] as DataTemplate;
     }
 }
 {% endhighlight %}
@@ -330,7 +332,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 
 Below screenshot shows the customized header template loaded on the header of FirstName column.
 
-![WinUI TreeGrid displays Auto Generated Column](Columns-images/winui-treegrid-column-auto-generation.png)
+<img src="Columns-images/winui-treegrid-column-auto-generation.png" alt="WinUI TreeGrid displays Auto Generated Column" width="100%" Height="Auto"/>
 
 
 ### Data Annotations with AutoGenerateColumns
@@ -441,7 +443,7 @@ public string LastName
 
 The FirstName and LastName column rearranged based on specified order.
 
-![Changing order of Columns in WinUI TreeGrid](Columns-images/winui-treegrid-column-order.png)
+<img src="Columns-images/winui-treegrid-column-order.png" alt="Changing order of Columns in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 #### Customizing data format 
 
@@ -481,10 +483,10 @@ SfTreeGrid control allows you to define the columns manually by adding desired c
     <treeGrid:SfTreeGrid.Columns>
         <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
         <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <treeGrid:TreeGridTextColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
         <treeGrid:TreeGridTextColumn MappingName="Title" />
-        <treeGrid:TreeGridTextColumn MappingName="Salary" />
-        <treeGrid:TreeGridTextColumn MappingName="ReportsTo" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Salary" MappingName="Salary" DisplayNumberFormat="C2"/>
+        <treeGrid:TreeGridNumericColumn HeaderText="Reports To" MappingName="ReportsTo" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 {% endhighlight %}
@@ -571,13 +573,13 @@ N> Resizing considers MinWidth and MaxWidth of column.
 {% endtabs %}
 
 You can change the column width by clicking and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line exists between two columns. 
-![Resizing Columns in WinUI TreeGrid](Columns-images/winui-treegrid-resizing-column.png)
+<img src="Columns-images/winui-treegrid-resizing-column.png" alt="Resizing Columns in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ### Hidden column resizing
 
 SfTreeGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfTreeGrid.AllowResizingHiddenColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowResizingHiddenColumnsProperty) property to `true`.
 
-![Resizing Hidden Column in WinUI TreeGrid](Columns-images/winui-treegrid-hidden-column-resizing.png)
+<img src="Columns-images/winui-treegrid-hidden-column-resizing.png" alt="Resizing Hidden Column in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ### Disable resizing
 
@@ -630,7 +632,7 @@ You can allow end-users to rearrange the columns by drag and drop the column hea
 {% endhighlight %}
 {% endtabs %}
 
-![Drag and Drop the Column in WinUI TreeGrid](Columns-images/winui-treegrid-drag-and-drop.png)
+<img src="Columns-images/winui-treegrid-drag-and-drop.png" alt="Drag and Drop the Column in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 You can enable or disable dragging on particular column using [TreeGridColumn.AllowDragging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_AllowDraggingProperty) property.
 
@@ -678,10 +680,12 @@ You can freeze the columns in view at the left and right side like in excel by s
 
 <treeGrid:SfTreeGrid Name="treeGrid" 
                         AutoExpandMode="RootNodesExpanded"
-                        ChildPropertyName="Children"
+                        ChildPropertyName="ReportsTo"
                         FrozenColumnCount="2"
                         FrozenFooterColumnCount="2"
-                        ItemsSource="{Binding EmployeeDetails}">
+                        ItemsSource="{Binding Employees}"
+                        ParentPropertyName="ID"
+                        SelfRelationRootValue="-1">
 
 {% endhighlight %}
 {% highlight c# %}
@@ -692,7 +696,7 @@ this.treeGrid.FrozenFooterColumnCount = 2;
 {% endhighlight %}
 {% endtabs %}
 
-![Freezing Columns in WinUI TreeGrid](Columns-images/winui-treegrid-freezing-columns.png)
+<img src="Columns-images/winui-treegrid-freezing-columns.png" alt="Freezing Columns in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ## Stacked Headers
 
@@ -703,7 +707,7 @@ Each [StackedHeaderRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 {% tabs %}
 {% highlight xaml %}
 
-<Page
+<Window
     x:Class="StackedHeaderDemo.MainPage"
     xmlns:local="using:StackedHeaderDemo"
     xmlns:treeGrid="using:Syncfusion.UI.Xaml.TreeGrid"
@@ -728,13 +732,14 @@ Each [StackedHeaderRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
     <treeGrid:SfTreeGrid.Columns>
             <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
             <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-            <treeGrid:TreeGridTextColumn HeaderText="Employee ID" MappingName="ID" />
+            <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
             <treeGrid:TreeGridTextColumn MappingName="Title" />
-            <treeGrid:TreeGridTextColumn MappingName="ReportsTo" HeaderText = "Reports To" />
+            <treeGrid:TreeGridNumericColumn HeaderText="Salary" MappingName="Salary" DisplayNumberFormat="C2"/>
+            <treeGrid:TreeGridNumericColumn HeaderText="Reports To" MappingName="ReportsTo" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 	
-</Page>
+</Window>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -753,7 +758,7 @@ treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "ReportsTo", Heade
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TreeGrid with Stacked Headers](Columns-images/winui-treegrid-stacked-headers.png)
+<img src="Columns-images/winui-treegrid-stacked-headers.png" alt="WinUI TreeGrid with Stacked Headers" width="100%" Height="Auto"/>
 
 ### Adding ChildColumns
 
@@ -816,9 +821,9 @@ public class ViewModel
 Below code, binds the `ViewModel.AllowEditing` property to `TreeGridColumn. AllowEditing` property.
 {% tabs %}
 {% highlight xaml %}
-<Page.DataContext>
+<Window.DataContext>
     <local:ViewModel/>
-</Page.DataContext>
+</Window.DataContext>
 
 <treeGrid:SfTreeGrid Name="treeGrid"
                         AllowEditing="False"
@@ -827,7 +832,7 @@ Below code, binds the `ViewModel.AllowEditing` property to `TreeGridColumn. Allo
                         ChildPropertyName="ReportsTo"
                         ParentPropertyName="ID">
     <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn AllowEditing="{Binding AllowEditing}" MappingName="ID" />
+        <treeGrid:TreeGridNumericColumn AllowEditing="{Binding AllowEditing}" MappingName="ID" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 {% endhighlight %}

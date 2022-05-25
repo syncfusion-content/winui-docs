@@ -29,7 +29,7 @@ xmlns:treeGrid="using:Syncfusion.UI.Xaml.TreeGrid"
 {% highlight c# %}
 
 this.sfTreeGrid.NavigationMode = Syncfusion.UI.Xaml.Grids.NavigationMode.Cell;
-this.sfTreeGrid.SelectionMode = Syncfusion.UI.Xaml.Grids.GridSelectionMode.Multiple;
+this.sfTreeGrid.SelectionMode = Syncfusion.UI.Xaml.Grids.GridSelectionMode.Single;
 this.sfTreeGrid.QueryCoveredRange += SfTreeGrid_QueryCoveredRange;
 
 private void SfTreeGrid_QueryCoveredRange(object sender, TreeGridQueryCoveredRangeEventArgs e)
@@ -61,7 +61,7 @@ private void SfTreeGrid_QueryCoveredRange(object sender, TreeGridQueryCoveredRan
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying column wise merged cells in WinUI TreeGrid](Merge-Cells_images/Displaying-column-wise-merged-cells-in-WinUI-TreeGrid.png)
+<img src="Merge-Cells_images/Displaying-column-wise-merged-cells-in-WinUI-TreeGrid.png" alt="Displaying column wise merged cells in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ## Merge all cells in an entire parent node
 
@@ -94,4 +94,4 @@ private void SfTreeGrid_QueryCoveredRange(object sender, TreeGridQueryCoveredRan
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying entire parent node merged cells in WinUI TreeGrid](Merge-Cells_images/Displaying-entire-parent-node-merged-cells-in-WinUI-TreeGrid.png)
+<img src="Merge-Cells_images/Displaying-entire-parent-node-merged-cells-in-WinUI-TreeGrid.png" alt="Displaying entire parent node merged cells in WinUI TreeGrid" width="100%" Height="Auto"/>

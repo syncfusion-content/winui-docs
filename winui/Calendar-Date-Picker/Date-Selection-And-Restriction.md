@@ -16,7 +16,7 @@ This section explains about the date selection in [WinUI Calendar Date Picker](h
 You can set or change the selected date programmatically by using [SelectedDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectedDate) property. By default, `SelectedDate` property value is `null`.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDatePicker sfCalendarDatePicker= new SfCalendarDatePicker();
 sfCalendarDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06));
@@ -24,13 +24,13 @@ sfCalendarDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Selected Date Programmatically in WinUI CalendarDatePicker](Getting-Started_images/winui-calendar-datepicker-selected-date.png)
+![programatic-date-selection-in-winui-calendar-date-picker](Getting-Started_images/programatic-date-selection-in-winui-calendar-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction).
 
 You can also change the selected date interactively by selecting a date from drop-down calendar or by entering the date value in editor of `Calendar Date Picker`. Now, you can get the selected date from the `SelectedDate` property.
 
-![Date Selection in WinUI CalendarDatePicker](Getting-Started_images/winui-calendar-datepicker-date-selection.gif)
+![date-selection-in-winui-calendar-date-picker](Getting-Started_images/date-selection-in-winui-calendar-date-picker.gif)
 
 ## Limit available dates
 
@@ -39,12 +39,12 @@ You can restrict the users from selecting a date within the particular range by 
 N> Dates that appears outside the minimum and maximum date range will be disabled (blackout).
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" %}
 
 <calendar:Calendar x:Name="sfCalendarDatePicker"/>
 
 {% endhighlight  %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.MinDate = new DateTimeOffset(new DateTime(2021, 01, 5));
@@ -57,7 +57,7 @@ N> When `MinDisplayMode` property value is set to **Year** and `MinDate` value i
 
 N> The `MinDate` property value should not be greater than the `MaxDate` property value.
 
-![Restrict Date Selection with Specific Range in WinUI CalendarDatePicker](Getting-Started_images/winui-calendar-datepicker-restrict-date-selection.png)
+![change-minimum-and-maximum-dates-in-winui-calendar-date-picker](Getting-Started_images/change-minimum-and-maximum-dates-in-winui-calendar.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction).
 
@@ -66,7 +66,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can block particular dates from the date selection by adding respective dates in the [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_BlackoutDates) collection property. The default value of `BlackoutDates` property is **null**.
 
 {% tabs %}
-{% highlight c# %}
+{% highlight c# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {       
@@ -95,17 +95,18 @@ public class ViewModel
 {% endtabs %}
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 5" %}
 
-<calendar:SfCalendarDatePicker BlackoutDates="{Binding BlockedDates}" 
-                     x:Name="sfCalendarDatePicker">
+<calendar:SfCalendarDatePicker  
+                     x:Name="sfCalendarDatePicker"
+                     BlackoutDates="{Binding BlockedDates}">
     <calendar:SfCalendarDatePicker.DataContext>
         <local:ViewModel/>
     </calendar:SfCalendarDatePicker.DataContext>
 </calendar:SfCalendarDatePicker>
 
 {% endhighlight  %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 sfCalendarDatePicker.DataContext = new ViewModel();
 sfCalendarDatePicker.BlackoutDates = (sfCalendarDatePicker.DataContext as ViewModel).BlockedDates;
@@ -113,7 +114,7 @@ sfCalendarDatePicker.BlackoutDates = (sfCalendarDatePicker.DataContext as ViewMo
 {% endhighlight  %}
 {% endtabs %}
 
-![WinUI CalendarDatePicker displays BlockoutDates from Selection](Getting-Started_images/winui-calendar-datepicker-blackoutdates.png)
+![change-black-out-dates-disabled-dates-in-winui-calendar-date-picker](Getting-Started_images/change-black-out-dates-disabled-dates-in-winui-calendar-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/BlockedDates).
 
@@ -124,13 +125,13 @@ You can prevent the users from selecting any dates or days (example: all weekend
 N> You can also change the text displayed for specific days or dates in the drop-down calendar by using the `ItemInfo.DisplayText` property.  
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker"
                                CalendarItemPrepared="SfCalendarDatePicker_CalendarItemPrepared"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.CalendarItemPrepared += SfCalendarDatePicker_CalendarItemPrepared;
@@ -141,7 +142,7 @@ sfCalendarDatePicker.CalendarItemPrepared += SfCalendarDatePicker_CalendarItemPr
 You can handle the event as follows:
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="8" %}
 
 private void SfCalendarDatePicker_CalendarItemPrepared(object sender, CalendarItemPreparedEventArgs e)
 {
@@ -157,14 +158,14 @@ private void SfCalendarDatePicker_CalendarItemPrepared(object sender, CalendarIt
 {% endhighlight %}
 {% endtabs %}
 
-![Restrict Weekend Dates from Selection in WinUI CalendarDatePicker](Getting-Started_images/winui-calendar-datepicker-block-weekend-dates.png)
+![change-black-out-dates-to-weekend-dates-in-winui-calendar-date-picker](Getting-Started_images/change-black-out-dates-to-weekend-dates-in-winui-calendar-date-picker.png)
 
 N> Download demo application. from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/BlockedDates)
 
 You can also change the text displayed for specific days or dates in `Calendar Date Picker` using the [ItemInfo.DisplayText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_DisplayText) property. 
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="8 9" %}
 
 private void SfCalendarDatePicker_CalendarItemPrepared(object sender, CalendarItemPreparedEventArgs e)
 {
@@ -181,20 +182,18 @@ private void SfCalendarDatePicker_CalendarItemPrepared(object sender, CalendarIt
 {% endhighlight %}
 {% endtabs %}
 
-![Changing display Text in WinUI CalendarDatePicker](Selection-And-Restriction_images/winui-calendar-datepicker-display-text.png)
-
 ## Highlight today and selected dates
 
 You can use the [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectionHighlightMode) property to update the background and border of the dates in a drop-down calendar by highlighting today and a selected date. The default value of `SelectionHighlightMode` property is **Outline**.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
 
-<calendar:SfCalendarDatePicker SelectionHighlightMode="Filled"
-                     x:Name="sfCalendarDatePicker"/>
+<calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker" 
+                               SelectionHighlightMode="Filled" />
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.SelectionHighlightMode = SelectionHighlightMode.Filled;
@@ -202,26 +201,26 @@ sfCalendarDatePicker.SelectionHighlightMode = SelectionHighlightMode.Filled;
 {% endhighlight %}
 {% endtabs %}
 
-![Highlight Today and Selected Dates in WinUI CalendarDatePicker](Selection-And-Restriction_images/winui-calendar-datepicker-hightlight-selection.png)
+![date-picker-with-highlight-today-selected-dates-in-winui-calendar-date-picker](Selection-And-Restriction_images/date-picker-with-highlight-today-selected-dates-in-winui-calendar-date-picker.png)
 
 ## Change shape of today and selected date
 
- You can customize the today and selected date cell shape in drop-down calendar using the [SelectionShape](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectionShape) property to customize the shape of date cells border. The default value of `SelectionShape` property is **Rectangle**.
+ You can customize the today and selected date cell shape in dropdown calendar using [SelectionShape](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectionShape) property to customize the shape of date cells border. The default value of `SelectionShape` property is **Circle**.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
-<calendar:SfCalendarDatePicker SelectionShape="Circle"
-                     x:Name="sfCalendarDatePicker"/>
+<calendar:SfCalendarDatePicker 
+                     x:Name="sfCalendarDatePicker"
+                     SelectionShape="Rectangle" />
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
-sfCalendarDatePicker.SelectionShape = SelectionShape.Circle;
+sfCalendarDatePicker.SelectionShape = SelectionShape.Rectangle;
 
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Today and Selected Date Shape in WinUI CalendarDatePicker](Selection-And-Restriction_images/winui-calendar-datepicker-selection-shape.png)
-
+![change-shape-of-today-and-selected-date-in-winui-calendar-date-picker](Selection-And-Restriction_images/change-shape-of-today-and-selected-date-in-winui-calendar-date-picker.png)

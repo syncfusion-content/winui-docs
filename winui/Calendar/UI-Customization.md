@@ -16,13 +16,14 @@ This section describes about the various customization options available in the 
 You can hide the days that are out of scope of the current view by setting the [OutOfScopeVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_OutOfScopeVisibility) property value as **Hidden**. The default value of `OutOfScopeVisibility` property is **Enabled**.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
-<calendar:SfCalendar OutOfScopeVisibility="Hidden"
-                     x:Name="sfCalendar"/>
+<calendar:SfCalendar x:Name="sfCalendar"
+                     OutOfScopeVisibility="Hidden" 
+                     />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.OutOfScopeVisibility = OutOfScopeVisibility.Hidden;
@@ -30,7 +31,7 @@ sfCalendar.OutOfScopeVisibility = OutOfScopeVisibility.Hidden;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar - Trailing and Leading Days Visibility](Getting-Started_images/winui-calendar-out-of-scope.png)
+![hide-leading-trailing-days-in-winui-calendar](Images/UI-customization/hide-leading-trailing-days-in-winui-calendar.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction).
 
@@ -39,7 +40,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can change the UI of specific cells in `Calendar` by using the [CalendarItem.ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItem.html) property. The `DataContext` of `CalendarItem.ContentTemplate` is `Calendar`. 
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="EventDataConverter.cs" %}
 
 public class EventDataConverter : IValueConverter
 {
@@ -99,9 +100,10 @@ public class EventDataConverter : IValueConverter
 {% endtabs %}
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" %}
 
-<Page.Resources>
+<Grid>
+<Grid.Resources>
     <local:EventDataConverter x:Key="EventDataConverterKey" />
     <DataTemplate x:Key="customTemplate">
         <ItemsControl ItemsSource="{Binding Path=Date, Converter={StaticResource EventDataConverterKey}}">
@@ -117,8 +119,7 @@ public class EventDataConverter : IValueConverter
             </ItemsControl.ItemsPanel>
         </ItemsControl>
     </DataTemplate>
-</Page.Resources>
-<Grid>
+</Grid.Resources>
     <calendar:SfCalendar
                         CornerRadius="14"
                         DayOfWeekFormat="{}{dayofweek.abbreviated(3)}">
@@ -166,7 +167,7 @@ public class EventDataConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar Custom UI for Specific Cell](Getting-Started_images/winui-calendar-custom-ui-for-specific-cell.png)
+![ui-customation-for-specific-cell-in-winui-calendar](Images/UI-customization/ui-customation-for-specific-cell-in-winui-calendar.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/CustomUI).
 
@@ -226,7 +227,7 @@ You can customize the colors of day names and headers of month, year, decade and
 </table>
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" %}
 
 <calendar:SfCalendar CornerRadius="6">
      <calendar:SfCalendar.Resources>
@@ -277,6 +278,6 @@ You can customize the colors of day names and headers of month, year, decade and
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar Themes](UI-Customization_images/winui-calendar-themes.png)
+![customize-ui-using-theme-keys-in-winui-calendar](Images/UI-customization/customize-ui-using-theme-keys-in-winui-calendar.png)
 
 N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/CustomUI).

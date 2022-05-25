@@ -13,7 +13,7 @@ SfDataGrid control is designed to display the bounded data in a tabular format. 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="dataGrid"
+<dataGrid:SfDataGrid  x:Name="dataGrid"
                         AutoGenerateColumns="True"
                         ItemsSource="{Binding Orders}" />
 {% endhighlight %}
@@ -40,13 +40,13 @@ SfDataGrid control provides support to bind complex property to its columns. 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid AutoGenerateColumns="False" ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="OrderID" />
-        <syncfusion:GridTextColumn MappingName="Customer.CustomerID" />
-        <syncfusion:GridTextColumn MappingName="ShipCity" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+<dataGrid:SfDataGrid AutoGenerateColumns="False" ItemsSource="{Binding Orders}">
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn MappingName="OrderID" />
+        <dataGrid:GridTextColumn MappingName="Customer.CustomerID" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -62,13 +62,13 @@ SfDataGrid control provides support to bind an indexer property to its columns. 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid" ItemsSource="{Binding Students}" AutoGenerateColumns="False">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="RollNo"/>
-        <syncfusion:GridTextColumn MappingName="Name"/>
-        <syncfusion:GridTextColumn MappingName="Marks[0]"/>
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+<dataGrid:SfDataGrid x:Name="dataGrid" ItemsSource="{Binding Students}" AutoGenerateColumns="False">
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn MappingName="RollNo"/>
+        <dataGrid:GridTextColumn MappingName="Name"/>
+        <dataGrid:GridTextColumn MappingName="Marks[0]"/>
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridTextColumn() {MappingName="Marks[0]"});
@@ -87,7 +87,7 @@ Based on type of data item bound to SfDataGrid, the data operations and column a
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid" ItemsSource="{Binding Orders}" SourceType="{x:Type local:OrderInfo}"/>
+<dataGrid:SfDataGrid x:Name="dataGrid" ItemsSource="{Binding Orders}" SourceType="{x:Type local:OrderInfo}"/>
 {% endhighlight %}
 {% highlight c# %}
 dataGrid.SourceType = typeof(OrderInfo);
@@ -254,7 +254,7 @@ By default, the scrollbar position is not maintained and gets reset when changin
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="dataGrid"
+<dataGrid:SfDataGrid  x:Name="dataGrid"
                         CanMaintainScrollPosition="True"
                         ItemsSource="{Binding Orders}"/>
 {% endhighlight %}

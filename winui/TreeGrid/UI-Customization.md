@@ -15,25 +15,26 @@ The header cell can be customized by using `SyncfusionTreeGridHeaderCellBackgrou
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
-    <SolidColorBrush x:Key="SyncfusionTreeGridHeaderCellBackground" Color="LightPink"/>
-    <SolidColorBrush x:Key="SyncfusionTreeGridHeaderCellForeground" Color="DarkBlue"/>
-</Page.Resources>
 
-<syncfusion:SfTreeGrid Name="sfTreeGrid"
+<treeGrid:SfTreeGrid Name="sfTreeGrid"
                        AutoGenerateColumns="False"
                        ChildPropertyName="ReportsTo"
                        ItemsSource="{Binding Employees}"
                        ParentPropertyName="ID"                             
                        SelfRelationRootValue="-1" >
-    <syncfusion:SfTreeGrid.Columns>
-        <syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
-        <syncfusion:TreeGridTextColumn HeaderText="Employee ID" MappingName="ID" TextAlignment="Right" />
-        <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <syncfusion:TreeGridTextColumn HeaderText="Title" MappingName="Title" />
-        <syncfusion:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" TextAlignment="Right" />
-    </syncfusion:SfTreeGrid.Columns>
-</syncfusion:SfTreeGrid>
+    <treeGrid:SfTreeGrid.Resources>
+        <SolidColorBrush x:Key="SyncfusionTreeGridHeaderCellBackground" Color="LightPink"/>
+        <SolidColorBrush x:Key="SyncfusionTreeGridHeaderCellForeground" Color="DarkBlue"/>
+    </treeGrid:SfTreeGrid.Resources>
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
+        <treeGrid:TreeGridTextColumn HeaderText="Title" MappingName="Title" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Salary" MappingName="Salary" DisplayNumberFormat="C2"/>
+        <treeGrid:TreeGridNumericColumn HeaderText="Reports To" MappingName="ReportsTo"  />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
 
 {% endhighlight %}
 {% endtabs %}

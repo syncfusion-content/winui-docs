@@ -91,7 +91,7 @@ Below code, applies `ColumnWidthMode.Star` to equally set width for `SfDataGrid.
 {% endhighlight %}
 {% endtabs %}
 
-![Auto Size Columns in WinUI DataGrid](Autosize-Columns-images/winui-datagrid-auto-size-column.png)
+<img src="Autosize-Columns-images/winui-datagrid-auto-size-column.png" alt="Auto Size Columns in WinUI DataGrid" width="100%" Height="Auto"/>
 
 N> The `GridColumn.ColumnWidthMode` takes higher priority than the `SfDataGrid.ColumnWidthMode`.
 
@@ -107,11 +107,11 @@ In SfDataGrid while setting `SfDataGrid.ColumnWidthMode` as `AutoLastColumnFill`
                         ItemsSource="{Binding OrdersDetails}">            
             <dataGrid:SfDataGrid.Columns>
                 <dataGrid:GridTextColumn HeaderText="Order ID" MappingName="OrderID" ColumnWidthMode="AutoLastColumnFill" />
+                <dataGrid:GridTextColumn HeaderText="Customer ID" MappingName="Customer ID" />               
                 <dataGrid:GridTextColumn HeaderText="Order Date" MappingName="OrderDate" />
                 <dataGrid:GridTextColumn HeaderText="Unit Price" MappingName="UnitPrice" />
-                <dataGrid:GridTextColumn HeaderText="Quantity" MappingName="Quantity" />               
                 <dataGrid:GridTextColumn HeaderText="Ship City" MappingName="ShipCity" />
-                <dataGrid:GridTextColumn HeaderText="Ship Address" MappingName="ShipAddress" />
+                <dataGrid:GridTextColumn MappingName="Country" />
             </dataGrid:SfDataGrid.Columns>
 </dataGrid:SfDataGrid>
 {% endhighlight %}
@@ -121,7 +121,7 @@ this.sfDataGrid.Columns["OrderID"].ColumnWidthMode = ColumnWidthMode.AutoLastCol
 {% endhighlight %}
 {% endtabs %}
 
-![Specific Column in WinUI DataGrid Fills Remaining Width](Autosize-Columns-images/winui-datagrid-column-filling.png)
+<img src="Autosize-Columns-images/winui-datagrid-column-filling.png" alt="Specific Column in WinUI DataGrid Fills Remaining Width" width="100%" Height="Auto"/>
 
 ## Refreshing autosize calculation at runtime
 
@@ -344,17 +344,17 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
                         ItemsSource="{Binding OrdersDetails}">
     <dataGrid:SfDataGrid.Columns>
         <dataGrid:GridTextColumn HeaderText="Order ID" MappingName="OrderID" local:StarRatio.ColumnRatio="1"/>
+        <dataGrid:GridTextColumn HeaderText="Customer ID" MappingName="Customer ID" local:StarRatio.ColumnRatio="1"/>
         <dataGrid:GridTextColumn HeaderText="Order Date" MappingName="OrderDate" local:StarRatio.ColumnRatio="1"/>
         <dataGrid:GridTextColumn   HeaderText="Unit Price" MappingName="Unit Price" local:StarRatio.ColumnRatio="1"/>
-        <dataGrid:GridTextColumn HeaderText="Quantity" MappingName="Quantity" local:StarRatio.ColumnRatio="1" TextAlignment="Right"/>
         <dataGrid:GridTextColumn   HeaderText="Ship City" MappingName="ShipCity" local:StarRatio.ColumnRatio="2" />
-        <dataGrid:GridTextColumn HeaderText="Ship Address" MappingName="ShipAddress" local:StarRatio.ColumnRatio="2"/>
+        <dataGrid:GridTextColumn MappingName="Country" local:StarRatio.ColumnRatio="2"/>
     </dataGrid:SfDataGrid.Columns>
 </dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays ColumnRatio Column Width](Autosize-Columns-images/winui-datagrid-column-ratio.png)
+<img src="Autosize-Columns-images/winui-datagrid-column-ratio.png" alt="WinUI DataGrid displays ColumnRatio Column Width" width="100%" Height="Auto"/>
 
 ## Change the width of DataGrid ComboBoxColumn based on it’s ItemsSource
 

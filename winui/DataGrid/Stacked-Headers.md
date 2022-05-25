@@ -15,6 +15,8 @@ Each [StackedHeaderRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 {% tabs %}
 {% highlight xaml %}
+xmlns:grid="using:Syncfusion.UI.Xaml.Grids"
+
 <dataGrid:SfDataGrid x:Name="sfDataGrid"
                         AllowSorting="True"
                         AutoGenerateColumns="True"
@@ -23,14 +25,14 @@ Each [StackedHeaderRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
             <dataGrid:SfDataGrid.StackedHeaderRows>
                 <grid:StackedHeaderRow>
                     <grid:StackedHeaderRow.StackedColumns>
-                        <grid:StackedColumn ChildColumns="OrderID,OrderDate,ProductID,Quantity,UnitPrice,ShipCity,ShipAddress" HeaderText="Sales Details" />                       
+                        <grid:StackedColumn ChildColumns="OrderID,OrderDate,Quantity,UnitPrice,ShipCity,Country" HeaderText="Sales Details" />                       
                     </grid:StackedHeaderRow.StackedColumns>
                 </grid:StackedHeaderRow>
                 <grid:StackedHeaderRow>
                     <grid:StackedHeaderRow.StackedColumns>
                         <grid:StackedColumn ChildColumns="OrderID,OrderDate" HeaderText="Order Details" />
                         <grid:StackedColumn ChildColumns="Quantity,UnitPrice" HeaderText="Product Details" />
-                        <grid:StackedColumn ChildColumns="ShipCity,ShipAddress" HeaderText="Shipping Details" />
+                        <grid:StackedColumn ChildColumns="ShipCity,Country" HeaderText="Shipping Details" />
                     </grid:StackedHeaderRow.StackedColumns>
                 </grid:StackedHeaderRow>
             </dataGrid:SfDataGrid.StackedHeaderRows>    
@@ -38,18 +40,18 @@ Each [StackedHeaderRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 {% endhighlight %}
 {% highlight c# %}
 var stackedHeaderRow1 = new StackedHeaderRow();
-stackedHeaderRow1.StackedColumns.Add(new StackedColumn() { ChildColumns = "OrderID,OrderDate,Quantity,UnitPrice,ShipCity,ShipAddress" , HeaderText = "Sales Details", MappingName = "SalesDetails" });
+stackedHeaderRow1.StackedColumns.Add(new StackedColumn() { ChildColumns = "OrderID,OrderDate,Quantity,UnitPrice,ShipCity,Country" , HeaderText = "Sales Details", MappingName = "SalesDetails" });
 sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 
 var stackedHeaderRow2 = new StackedHeaderRow();
 stackedHeaderRow2.StackedColumns.Add(new StackedColumn() { ChildColumns = "OrderID,OrderDate", HeaderText = "Order Details", MappingName = "OrderDetails" });
 stackedHeaderRow2.StackedColumns.Add(new StackedColumn() { ChildColumns = "Quantity,UnitPrice", HeaderText = "Product Details", MappingName = "ProductrDetails" });
-stackedHeaderRow2.StackedColumns.Add(new StackedColumn() { ChildColumns = "ShipCity,ShipAddress", HeaderText = "Shipping Details", MappingName = "ShippingDetails" });
+stackedHeaderRow2.StackedColumns.Add(new StackedColumn() { ChildColumns = "ShipCity,Country", HeaderText = "Shipping Details", MappingName = "ShippingDetails" });
 sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow2);
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid with Stacked Header Rows](Stacked-Headers-images/winui-datagrid-stacked-header-rows.png)
+<img src="Grouping_images/winui-datagrid-stacked-header-rows.png" alt="WinUI DataGrid with Stacked Header Rows" width="100%" Height="Auto"/>
 
 ## Stacked Headers using Data Annotation
 

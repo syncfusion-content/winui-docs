@@ -18,13 +18,13 @@ You can change the alignment of the drop-down calendar as full, center, left, ri
 N> If you change the drop-down alignment by using the `DropDownPlacement` property and there is not sufficient space, then `Calendar DateRange Picker` smartly shifts the drop-down calendar alignment.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
 
-<calendar:SfCalendarDateRangePicker DropDownPlacement="Right" 
-                             x:Name="sfCalendarDateRangePicker"/>
+<calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker" 
+                                    DropDownPlacement="Right" />
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.DropDownPlacement = FlyoutPlacementMode.Right;
@@ -32,7 +32,7 @@ sfCalendarDateRangePicker.DropDownPlacement = FlyoutPlacementMode.Right;
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown Placement in WinUI Calendar DateRange Picker](Dropdown-Calendar_images/winui-calendar-daterange-picker-dropdown-placement.png)
+![change-drop-down-placement-in-winui-calendar-date-range-picker](Images/drop-down-calendar/change-drop-down-placement-in-winui-calendar-date-range-picker.png)
 
 ## Change drop-down size
 
@@ -41,13 +41,13 @@ You can change the size of drop-down calendar in `Calendar DateRange Picker` by 
 N> The drop-down size will be automatically resized based on the calendar and preset items hosted in it.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
 
-<calendar:SfCalendarDateRangePicker DropDownHeight="500"
-                               x:Name="sfCalendarDateRangePicker"/>
+<calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker" 
+                                    DropDownHeight="500" />
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.DropDownHeight = 500;
@@ -55,7 +55,7 @@ sfCalendarDateRangePicker.DropDownHeight = 500;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker Dropdown Height](Dropdown-Calendar_images/winui-calendar-daterange-picker-dropdown-Height.png)
+![change-drop-down-height-in-winui-calendar-date-range-picker](Images/drop-down-calendar/change-drop-down-height-in-winui-calendar-date-range-picker.png)
 
 ## Customize individual items in Calendar
 
@@ -64,7 +64,7 @@ You can change the UI of specific cells in `Calendar DateRange Picker` drop-down
 1. Create a **EventDataConverter** class and set the special dates for specific events. 
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="EventDataConverter.cs" %}
 
 public class EventDataConverter : IValueConverter
 {
@@ -126,9 +126,10 @@ public class EventDataConverter : IValueConverter
 2. Create a **DataTemplate** to customize the date cells of the calendar. Now, add the `Calendar` control inside the `FlyoutBase.AttachedFlyout` property and the `DropDownFlyout` control.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" %}
 
-<Page.Resources>
+<Grid>
+<Grid.Resources>
     <local:EventDataConverter x:Key="EventDataConverterKey" />
     <DataTemplate x:Key="customTemplate">
         <ItemsControl ItemsSource="{Binding Path=Date, Converter={StaticResource EventDataConverterKey}}">
@@ -144,8 +145,7 @@ public class EventDataConverter : IValueConverter
             </ItemsControl.ItemsPanel>
         </ItemsControl>
     </DataTemplate>
-</Page.Resources>
-<Grid>
+</Grid.Resources>
     <calendar:SfCalendarDateRangePicker
                         x:Name="calendarDateRangePicker"
                         MinWidth="180"
@@ -202,7 +202,7 @@ public class EventDataConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker Styles](DropDown-Calendar_images/winui-calendar-daterange-picker-styles.png)
+![change-drop-down-item-template-in-winui-calendar-date-range-picker](Images/drop-down-calendar/change-drop-down-item-template-in-winui-calendar-date-range-picker.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/CustomUI).
 
@@ -262,7 +262,7 @@ You can customize the colors of day names and headers of month, year, decade, an
 </table>
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" %}
 
 <calendar:SfCalendarDateRangePicker
                         x:Name="calendarDateRangePicker"
@@ -322,6 +322,6 @@ You can customize the colors of day names and headers of month, year, decade, an
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Calendar DateRange Picker Themes](Calendar-UI-Customization_images/winui-calendar-daterange-picker-themes.png)
+![calendar-template-customization-in-winui-calendar-date-range-picker](Images/calendar-UI-customization/calendar-template-customization-in-winui-calendar-date-range-picker.png)
 
 N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/CustomUI).

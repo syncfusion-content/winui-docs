@@ -13,7 +13,7 @@ This section explains the steps required to add the WINUI [Date Picker](https://
 
 ## Structure of Date Picker control
 
-![Structure of WinUI DatePicker](Getting-Started_images/winui-datepicker-structure.png)
+![winui-datepicker-structure](Images/getting-started/winui-datepicker-structure.png)
 
 ## Creating an application with WinUI Date Picker
 
@@ -30,23 +30,22 @@ To add `Date Picker` control manually in XAML , follow the below steps.
 4. Initialize the `SfDatePicker` control.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8 12" %}
 
-<Page
-    x:Class="GettingStarted.MainPage"
+<Window
+    x:Class="GettingStarted.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:editors="using:Syncfusion.UI.Xaml.Editors"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
     <Grid Name="grid">
         <!--Adding Date Picker control -->
         <editors:SfDatePicker Name="sfDatePicker"/>
     </Grid>
-</Page>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -62,7 +61,7 @@ To add the `Date Picker` control manually in C#, follow the below steps.
 4. Initialize the `Date Picker` control.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="1 14 15" %}
 
 using Syncfusion.UI.Xaml.Editors;
 
@@ -78,8 +77,7 @@ namespace GettingStarted
             this.InitializeComponent();
             // Creating an instance of the Date Picker control
             SfDatePicker sfDatePicker = new SfDatePicker();
-
-            grid.Children.Add(sfDatePicker);
+            this.Content = sfDatePicker;
         }
     }
 }
@@ -87,7 +85,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker Control](Getting-Started_images/winui-datepicker.png)
+![winui-datepicker-control](Images/getting-started/winui-datepicker-control.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/Getting_Started)
 
@@ -96,7 +94,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can set or change the selected date programmatically by using [`SelectedDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_SelectedDate) property. If you not assign any value for the `SelectedDate` property, `Date Picker` will automatically assign the current system date as `SelectedDate`.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfDatePicker sfDatePicker= new SfDatePicker();
 sfDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 10, 29));
@@ -104,7 +102,7 @@ sfDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 10, 29));
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker displays Selected Date](Getting-Started_images/winui-datepicker-with-selected-date.png)
+![programmatic-date-selection-in-winui-date-picker](Images/getting-started/programmatic-date-selection-in-winui-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -113,19 +111,19 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can change the selected date interactively by enter the date value using keyboard or select from dropdown date spinner. You can get the selected date from the `SelectedDate` property.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" %}
 
 <editors:SfDatePicker Name="sfDatePicker" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
 SfDatePicker sfDatePicker= new SfDatePicker();
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker displays Selected Date](Getting-Started_images/winui-datepicker-selected-date-interact.gif)
+![date-selection-in-winui-date-picker](Images/getting-started/date-selection-in-winui-date-picker.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/Getting_Started)
 
@@ -143,14 +141,15 @@ For further reference [click_here](date-restriction).
 If you want to set null value for the `Date Picker`, set the [`AllowNull`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_AllowNull) property as `true` and set `SelectedDate` property as `null`. If `AllowNull` property is `false`, then the current system date is updated in `SelectedDate` property and displayed instead of `null`.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3" %}
 
-<editors:SfDatePicker SelectedDate="{x:Null}"
+<editors:SfDatePicker Name="sfDatePicker"
+                      SelectedDate="{x:Null}"
                       AllowNull="True"
-                      Name="sfDatePicker" />
+                       />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 
 SfDatePicker sfDatePicker= new SfDatePicker();
 sfDatePicker.SelectedDate = null;
@@ -159,7 +158,7 @@ sfDatePicker.AllowNull = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker displays Null Value](Getting-Started_images/winui-datepicker-null-value.png)
+![allow-null-value-in-winui-date-picker](Images/getting-started/allow-null-value-in-winui-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
@@ -169,15 +168,15 @@ This section explains about `header` and `description` properties of DatePicker.
 The `Header` property is used to display the title for the `DatePicker` Control
      
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
 
-<editors:SfDatePicker x:Name="DatePicker" 
+<editors:SfDatePicker x:Name="datePicker" 
                       Height="75" 
                       Width="200"
                       Header="Enter your interview date" />
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfDatePicker datePicker = new SfDatePicker();
 datePicker.Header = "Enter your interview date";
@@ -185,44 +184,45 @@ datePicker.Header = "Enter your interview date";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker with Header](Getting-Started_images/winui-datepicker-header.png)
+![customize-header-text-in-winui-date-picker](Images/getting-started/customize-header-text-in-winui-date-picker.png)
+
 #### Header customization
 By using the controls `HeaderTemplate` property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5 6 7 8 9" %}
 
 <editors:SfDatePicker  Width="250" Height="75">
-            <editors:SfDatePicker.HeaderTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE80B;"/>
-                        <TextBlock Text="Interview Date" FontSize="14" Margin="5"/>
-                    </StackPanel>
-                </DataTemplate>
-            </editors:SfDatePicker.HeaderTemplate>
-        </editors:SfDatePicker>
+    <editors:SfDatePicker.HeaderTemplate>
+        <DataTemplate>
+            <StackPanel Orientation="Horizontal">
+                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE80B;"/>
+                <TextBlock Text="Interview Date" FontSize="14" Margin="5"/>
+            </StackPanel>
+        </DataTemplate>
+    </editors:SfDatePicker.HeaderTemplate>
+</editors:SfDatePicker>
 
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker with Header Template](Getting-Started_images/winui-datepicker-headertemplate.png)
+![customize-header-template-in-winui-date-picker](Images/getting-started/customize-header-template-in-winui-date-picker.png)
 
 ### Description
 The `Description` support is used to display the content beneath the control as well as to provide guidance on the input that the control expects.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4 5" %}
 
 <editors:SfDatePicker x:Name="DatePicker" 
                       Height="75" 
-                      Width="200" 
+                      Width="300" 
                       Header="Enter your interview date" 
                       Description="The chosen date must be within the next 5 days."/>
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfDatePicker datePicker = new SfDatePicker();
 datePicker.Description = "The chosen date must be within the next 5 days.";
@@ -230,7 +230,7 @@ datePicker.Description = "The chosen date must be within the next 5 days.";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker with Description](Getting-Started_images/winui-datepicker-description.png)
+![customize-header-description-text-in-winui-date-picker](Images/getting-started/customize-header-description-text-in-winui-date-picker.png)
 
 
 ## Setting watermark text
@@ -238,15 +238,16 @@ datePicker.Description = "The chosen date must be within the next 5 days.";
 You can prompt the user with some information by using the [`PlaceholderText`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_PlaceholderText) property. This will be displayed only when the `TimePicker` contains the `SelectedDate` property as `null` and `AllowNull` property as `true`. If `AllowNull` property is `false`, then the current system time is updated in `SelectedDate` property and displayed instead of `PlaceholderText`.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4" %}
 
-<editors:SfDatePicker PlaceholderText="select a journey date"
+<editors:SfDatePicker Name="sfDatePicker"
+                      PlaceholderText="select a journey date"
                       SelectedDate="{x:Null}"
                       AllowNull="True"
-                      Name="sfDatePicker" />
+                       />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4" %}
 
 SfDatePicker sfDatePicker= new SfDatePicker();
 sfDatePicker.PlaceholderText = "select a journey date";
@@ -256,7 +257,7 @@ sfDatePicker.AllowNull = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatePicker displays Watermark Text](Getting-Started_images/winui-datepicker-watermark.png)
+![customize-text-with-water-mark-in-winui-date-picker](Images/getting-started/customize-text-with-water-mark-in-winui-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
@@ -268,13 +269,14 @@ You will be notified when selected date changed in `Date Picker` by using [`Sele
 * `NewDateTime` - Gets a date which is currently selected.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
-<editors:SfDatePicker SelectedDateChanged="SfDatePicker_DateChanged" 
-                      Name="sfDatePicker"/>
+<editors:SfDatePicker 
+                      Name="sfDatePicker"
+                      SelectedDateChanged="SfDatePicker_DateChanged" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.SelectedDateChanged += SfDatePicker_DateChanged;
@@ -285,7 +287,7 @@ sfDatePicker.SelectedDateChanged += SfDatePicker_DateChanged;
 You can handle the event as follows:
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
 private void SfDatePicker_DateChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {          
     Console.WriteLine("The previously selected Date: " + e.OldDateTime.ToString());

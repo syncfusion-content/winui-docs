@@ -14,7 +14,7 @@ documentation: ug
 You can show a collection of preset items in dropdown of `Calendar DateRange Picker` control using the [`Preset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_Preset) and [`PresetTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_PresetTemplate) properties. Bind the collection of preset items to be displayed in the `Preset` property and set the required template in the `PresetTemplate` property.
 
 {% tabs %}
-{% highlight c# %}
+{% highlight c# tabtitle="ViewModel.cs" %}
 
 //ViewModel class
 class ViewModel
@@ -37,34 +37,24 @@ class ViewModel
 Add the `Syncfusion.UI.Xaml.Calendar` namespace reference in code-behind.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3 7 8 9 10 11 12" %}
 
-<Page
-    x:Class="Calendar_WinUI_FT.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Calendar_WinUI_FT"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Page.DataContext>
+<Grid>
+    <Grid.DataContext>
         <local:ViewModel x:Name="viewModel" />
-    </Page.DataContext>
-    <Grid>
-        <calendar:SfCalendarDateRangePicker  x:Name="sfCalendar" Height="35" Width="200"
-                                            Preset="{x:Bind viewModel.PresetCollection, Mode=TwoWay}" >
-            <calendar:SfCalendarDateRangePicker.PresetTemplate>
-                <DataTemplate>
-                    <ListBox ItemsSource="{Binding}" SelectionChanged="ListBox_SelectionChanged" />
-                </DataTemplate>
-            </calendar:SfCalendarDateRangePicker.PresetTemplate>
-        </calendar:SfCalendarDateRangePicker>
-    </Grid>
-</Page>
+    </Grid.DataContext>
+    <calendar:SfCalendarDateRangePicker  x:Name="sfCalendarDateRangePicker" Height="35" Width="200"
+                                        Preset="{x:Bind viewModel.PresetCollection, Mode=TwoWay}" >
+        <calendar:SfCalendarDateRangePicker.PresetTemplate>
+            <DataTemplate>
+                <ListBox ItemsSource="{Binding}" SelectionChanged="ListBox_SelectionChanged" />
+            </DataTemplate>
+        </calendar:SfCalendarDateRangePicker.PresetTemplate>
+    </calendar:SfCalendarDateRangePicker>
+</Grid>
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" %}
 
 private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
 {
@@ -73,7 +63,7 @@ private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e
 
     if (listBox.SelectedItem.ToString() == "This Week")
     {
-        DateTimeOffset startdate = todayDate.AddDays(-(todayDate.DayOfWeek - sfCalendarDateRangePicker.FirstDayOfWeek));
+        DateTimeOffset startdate = DateTimeOffset startdate = todayDate.AddDays(-(todayDate.DayOfWeek - (DayOfWeek)sfCalendarDateRangePicker.FirstDayOfWeek));
         sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(startdate, startdate.AddDays(6));
     }
     else if (listBox.SelectedItem.ToString() == "This Month")
@@ -106,13 +96,13 @@ private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e
 {% endhighlight %}
 {% endtabs %}
 
-![Preset View Items in WinUI Calendar DateRange Picker](Preset-Items_images/winui-calendar-daterange-picker-preset-items.png)
+![present--item-template-in-winui-calendar-date-range-picker](Images/preset-items/present--item-template-in-winui-calendar-date-range-picker.png)
 
 ## Hide calendar on selecting a preset item
 
 You can hide the calendar in the drop-down when user selects any preset items in drop-down other than **CustomRange** using the `ShowCalendar` property. When a user wants to select a custom range of dates, the calendar is added to the drop-down of the 'Calendar DateRange Picker' control after selecting the **CustomRange** preset item.
 {% tabs %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" %}
 
 privateprivate void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
 {
@@ -155,7 +145,5 @@ privateprivate void ListBox_SelectionChanged(object sender, SelectionChangedEven
 
 {% endhighlight %}
 {% endtabs %}
-
-![WinUI Calendar DateRange Picker Preset Item Selection](Preset-Items_images/winui-calendar-daterange-picker-preset-item-selection.gif)
 
 N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/PresetItems).

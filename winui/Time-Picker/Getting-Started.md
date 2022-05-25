@@ -13,7 +13,7 @@ This section explains the steps required to add the [WinUI Time Picker](https://
 
 ## Structure of Time Picker control
 
-![Structure of WinUI TimePicker](Getting-Started_images/winui-timepicker-structure.png)
+![winui-time-picker-structure](Getting-Started_images/winui-time-picker-structure.png)
 
 ## Creating an application with WinUI Time Picker
 
@@ -30,23 +30,22 @@ To add `Time Picker` control manually in XAML , follow the below steps.
 4. Initialize the `SfTimePicker` control.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8 12" %}
 
-<Page
-    x:Class="GettingStarted.MainPage"
+<Window
+    x:Class="GettingStarted.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:editors="using:Syncfusion.UI.Xaml.Editors"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
     <Grid Name="grid">
         <!--Adding Time Picker control -->
         <editors:SfTimePicker Name="sfTimePicker"/>
     </Grid>
-</Page>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -62,7 +61,7 @@ To add the `Time Picker` control manually in C#, follow the below steps.
 4. Initialize the `SfTimePicker` control.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="1 14 15" %}
 
 using Syncfusion.UI.Xaml.Editors;
 
@@ -71,15 +70,14 @@ namespace GettingStarted
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class MainWindow : Window
     {
-        public MainPage()
+        public MainWindow()
         {
             this.InitializeComponent();
             // Creating an instance of the Time Picker control
             SfTimePicker sfTimePicker = new SfTimePicker();
-
-            grid.Children.Add(sfTimePicker);
+            this.Content = sfTimePicker;
         }
     }
 }
@@ -87,7 +85,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TimePicker Control](Getting-Started_images/winui-timepicker-control.png)
+![winui-time-picker-control](Getting-Started_images/winui-time-picker-control.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/Getting_Started)
 
@@ -96,7 +94,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can set or change the selected time programmatically by using [`SelectedTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_SelectedTime) property. If you not assign any value for the `SelectedTime` property, `Time Picker` will automatically assign the current system time as `SelectedTime`.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfTimePicker sfTimePicker= new SfTimePicker();
 sfTimePicker.SelectedTime = new DateTimeOffset(new DateTime(2021, 10, 29, 10, 45, 10));
@@ -104,7 +102,7 @@ sfTimePicker.SelectedTime = new DateTimeOffset(new DateTime(2021, 10, 29, 10, 45
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TimePicker displays Selected Time](Getting-Started_images/winui-timepicker-selected-time.png)
+![programmatic-time-selection-in-winui-time-picker](Getting-Started_images/programmatic-time-selection-in-winui-time-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -113,19 +111,19 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can change the selected time interactively by enter the time value using keyboard or from the dropdown time spinner. You can get the selected time from the `SelectedTime` property.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" %}
 
 <editors:SfTimePicker Name="sfTimePicker" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
 SfTimePicker sfTimePicker= new SfTimePicker();
 
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Selected Time in WinUI TimePicker](Getting-Started_images/winui-timepicker-selected-time-interact.gif)
+![time-selection-in-winui-time-picker](Getting-Started_images/time-selection-in-winui-time-picker.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/Getting_Started)
 
@@ -142,14 +140,15 @@ For further reference [Time Restriction](time-restriction).
 If you want to set null value for the `Time Picker`, set the [`AllowNull`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_AllowNull) property as `true` and set `SelectedTime` property as `null`. If `AllowNull` property is `false`, then the current system time is updated in `SelectedTime` property and displayed instead of `null`.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3" %}
 
-<editors:SfTimePicker SelectedTime="{x:Null}"
+<editors:SfTimePicker Name="sfTimePicker" 
+                      SelectedTime="{x:Null}"
                       AllowNull="True"
-                      Name="sfTimePicker" />
+                      />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 
 SfTimePicker sfTimePicker= new SfTimePicker();
 sfTimePicker.SelectedTime = null;
@@ -158,17 +157,17 @@ sfTimePicker.AllowNull = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TimePicker displays Null Value](Getting-Started_images/winui-timepicker-null-value.png)
+![allow-null-value-in-winui-time-picker](Getting-Started_images/allow-null-value-in-winui-time-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
 ## Header and description
 This section explains about `header` and `description` properties of TimePicker.
-### Header
+#### Header
 The `Header` property is used to display the title for the `TimePicker` Control
      
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
 
 <editors:SfTimePicker x:Name="TimePicker" 
                       Height="75" 
@@ -176,44 +175,43 @@ The `Header` property is used to display the title for the `TimePicker` Control
                       Header="Select your convenient order delivery time" />
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfTimePicker timePicker = new SfTimePicker();
 timePicker.Header = "Select your convenient order delivery time";
 
-
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TimePicker with Header](Getting-Started_images/winui-timepicker-header.png)
+![customize-header-text-in-winui-time-picker](Getting-Started_images/customize-header-text-in-winui-time-picker.png)
 #### Header customization
 By using the controls `HeaderTemplate` property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5 6 7 8 9" %}
 
 <editors:SfTimePicker  Width="250" Height="75">
-            <editors:SfTimePicker.HeaderTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8DF;"/>
-                        <TextBlock Text="Delivery Time" FontSize="14" Margin="5"/>
-                    </StackPanel>
-                </DataTemplate>
-            </editors:SfTimePicker.HeaderTemplate>
+    <editors:SfTimePicker.HeaderTemplate>
+        <DataTemplate>
+            <StackPanel Orientation="Horizontal">
+                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8DF;"/>
+                <TextBlock Text="Delivery Time" FontSize="14" Margin="5"/>
+            </StackPanel>
+        </DataTemplate>
+    </editors:SfTimePicker.HeaderTemplate>
  </editors:SfTimePicker>
 
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TimePicker with Header Template](Getting-Started_images/winui-timepicker-header-template.png)
+![customize-header-template-in-winui-time-picker](Getting-Started_images/customize-header-template-in-winui-time-picker.png)
 
 ### Description
 The `Description` support is used to display the content beneath the control as well as to provide guidance on the input that the control expects.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
 
 <editors:SfTimePicker x:Name="TimePicker" 
                       Height="75" 
@@ -222,24 +220,23 @@ The `Description` support is used to display the content beneath the control as 
 
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 
 SfTimePicker timePicker = new SfTimePicker();
+timePicker.Header = "Select your convenient order delivery time";
 timePicker.Description = "Your order will be delivered on time.";
-
-
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TimePicker with Description](Getting-Started_images/winui-timepicker-description.png)
+![customize-header-description-text-in-winui-time-picker](Getting-Started_images/customize-header-description-text-in-winui-time-picker.png)
 
 ## Setting watermark text
 
 You can prompt the user with some information by using the [`PlaceholderText`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_PlaceholderText) property. This will be displayed only when the `Time Picker` contains the `SelectedTime` property as `null` and `AllowNull` property as `true`. If `AllowNull` property is `false`, then the current system time is updated in `SelectedTime` property and displayed instead of `PlaceholderText`.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3" %}
 
 <editors:SfTimePicker PlaceholderText="pick a travel time"
                       SelectedTime="{x:Null}"
@@ -247,7 +244,7 @@ You can prompt the user with some information by using the [`PlaceholderText`](h
                       Name="sfTimePicker" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4" %}
 
 SfTimePicker sfTimePicker= new SfTimePicker();
 sfTimePicker.PlaceholderText = "pick a travel time";
@@ -257,7 +254,7 @@ sfTimePicker.AllowNull = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI TimePicker displays Watermark Text](Getting-Started_images/winui-timepicker-watermark.png)
+![customize-text-with-water-mark-in-winui-time-picker](Getting-Started_images/customize-text-with-water-mark-in-winui-time-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
@@ -269,13 +266,14 @@ You will be notified when selected time changed in `Time Picker` by using [`Sele
 * `NewDateTime` - Gets a time which is currently selected.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
-<editors:SfTimePicker SelectedTimeChanged="SfTimePicker_TimeChanged" 
-                      Name="sfTimePicker"/>
+<editors:SfTimePicker  
+                      Name="sfTimePicker"
+                      SelectedTimeChanged="SfTimePicker_TimeChanged"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.SelectedTimeChanged += SfTimePicker_TimeChanged;
@@ -286,7 +284,7 @@ sfTimePicker.SelectedTimeChanged += SfTimePicker_TimeChanged;
 You can handle the event as follows:
 
 {% tabs %}
-{% highlight C# %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
 private void SfTimePicker_TimeChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {          
     Console.WriteLine("The previously selected Time: " + e.OldDateTime.ToString());

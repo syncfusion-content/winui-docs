@@ -29,7 +29,7 @@ The `SelectionUnit` and [SelectionMode](https://help.syncfusion.com/cr/winui/Syn
 {% endhighlight %}
 {% endtabs %}
 
-![Single Row Selection in WinUI DataGrid](Selection_images/winui-datagrid-single-row-selection.png)
+<img src="Selection_images/winui-datagrid-single-row-selection.png" alt="Single Row Selection in WinUI DataGrid" width="100%" Height="Auto"/>
 
 
 ### Disable selection for rows and columns
@@ -54,7 +54,7 @@ While using `Extended`, you can select multiple rows or cells by pressing the ke
 {% endhighlight %}
 {% endtabs %}
 
-![Extended Cell Selection in WinUI DataGrid](Selection_images/winui-datagrid-extended-cell-selection.png)
+<img src="Selection_images/winui-datagrid-extended-cell-selection.png" alt="Extended Cell Selection in WinUI DataGrid" width="100%" Height="Auto"/>
 
 
 N> When the `SelectionMode` as `Multiple`, you can select or deselect multiple rows and cells by clicking the respective cell or row.  Also in multiple selection pressing navigation keys will move only the current cell and you can select or deselect by pressing <kbd>space</kbd> key.
@@ -69,7 +69,7 @@ N> When the `SelectionMode` as `Multiple`, you can select or deselect multiple r
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple Cell Selection in WinUI DataGrid](Selection_images/winui-datagrid-multiple-cell-selection.png)
+<img src="Selection_images/winui-datagrid-multiple-cell-selection.png" alt="Multiple Cell Selection in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Get Selected Rows and Cells
 
@@ -149,7 +149,7 @@ foreach(var order in viewModel.Orders)
 {% endhighlight %}
 {% endtabs %}
 
-![Programmatic Selection of Records in WinUI DataGrid](Selection_images/winui-datagrid-programmatic-selection.png)
+<img src="Selection_images/winui-datagrid-programmatic-selection.png" alt="Programmatic Selection of Records in WinUI DataGrid" width="100%" Height="Auto"/>
 
 
 ### Process selection using methods
@@ -164,7 +164,7 @@ this.sfDataGrid.SelectRows(3, 7);
 {% endhighlight %}
 {% endtabs %}
 
-![Programmatic Selection of Records in WinUI DataGrid](Selection_images/winui-datagrid-programmatic-record-selections.png)
+<img src="Selection_images/winui-datagrid-programmatic-record-selections.png" alt="Programmatic Selection of Records in WinUI DataGrid" width="100%" Height="Auto"/>
 
 
 You can select a specific cell by using the [SelectCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectCell_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Boolean_) method in cell selection.
@@ -189,7 +189,7 @@ this.sfDataGrid.SelectCell(record, column);
 {% endhighlight %}
 {% endtabs %}
 
-![Programmatic Selection of Cell in WinUI DataGrid](Selection_images/winui-datagrid-programmatic-cell-selection.png)
+<img src="Selection_images/winui-datagrid-programmatic-cell-selection.png" alt="Programmatic Selection of Cell in WinUI DataGrid" width="100%" Height="Auto"/>
 
 
 You can select a range of cells through [SelectCells](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectCells_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Boolean_) method in cell selection.
@@ -235,7 +235,7 @@ private void dataGrid_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Programmatic Selection of Cells in WinUI DataGrid](Selection_images/winui-datagrid-programmatic-cells-selection.png)
+<img src="Selection_images/winui-datagrid-programmatic-cells-selection.png" alt="Programmatic Selection of Cells in WinUI DataGrid" width="100%" Height="Auto"/>
 
 
 You can select all the rows or cells using [SelectAll](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectAll_System_Boolean_) method.
@@ -311,7 +311,7 @@ else
 
 var firstColumn = this.sfDataGrid.Columns[1];
 var lastColumn = this.sfDataGrid.Columns[3];
-this.sfDataGrid.UnSelectCells(firstRecord, firstColumn, lastRecord, lastColumn);
+this.sfDataGrid.UnselectCells(firstRecord, firstColumn, lastRecord, lastColumn);
 
 {% endhighlight %}
 {% endtabs %}
@@ -322,7 +322,7 @@ You can clear the selection on particular cell by using the [UnSelectCell](https
 {% highlight c# %}
 
 object record = null;
-var recordIndex = this.sfDataGrid.ResolveToRecordIndex(3);
+var recordIndex = this.sfDataGrid.ResolveToRecordIndex(5);
 
 if (this.sfDataGrid.View.GroupDescriptions.Count > 0)
 {
@@ -333,20 +333,20 @@ if (this.sfDataGrid.View.GroupDescriptions.Count > 0)
 else
     record = this.sfDataGrid.View.Records[recordIndex].Data;
 
-var column = this.sfDataGrid.Columns[1];
-this.sfDataGrid.UnSelectCell(record, column);
+var column = this.sfDataGrid.Columns[2];
+this.sfDataGrid.UnselectCell(record, column);
 
 {% endhighlight %}
 {% endtabs %}
 
-![Programmatic Removal of Selection for a Cell in WinUI DataGrid](Selection_images/winui-datagrid-progrmmatic-removal-selection.png)
+<img src="Selection_images/winui-datagrid-progrmmatic-removal-selection.png" alt="Programmatic Removal of Selection for a Cell in WinUI DataGrid" width="100%" Height="Auto"/>
 
 
 ## Selection in Master-Details View
 
 Master-Details View provides support to select one or more rows or cells in [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDataGrid.html). You can’t able to maintain the selection in both ParentDataGrid and `DetailsViewDataGrid`. Selection will be maintained either in ParentDataGrid or in `DetailsViewDataGrid`.
 
-![WinUI DataGrid Selection in Master Details View](Selection_images/winui-datagrid-selection-in-master-details-view.png)
+<img src="Selection_images/winui-datagrid-selection-in-master-details-view.png" alt="WinUI DataGrid Selection in Master Details View" width="100%" Height="Auto"/>
 
 
 ### Getting SelectedDetailsViewDataGrid
@@ -1077,24 +1077,23 @@ void sfDataGrid_SelectionChanged(object sender, GridSelectionChangedEventArgs e)
 
 ### Changing Selection Background and Foreground
 
-You can change the selection background and foreground using [SelectionBackground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectionBackground), [GroupRowSelectionBackground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_GroupRowSelectionBackground) and [SelectionForeground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectionForeground) properties. The `SelectionBackground` is only applied to the rows other than summary rows and the `GroupRowSelectionBackground` is applied for caption summary and group summary rows.
+You can change the selection background and foreground for all rows by using the [SelectionBackground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectionBackground) and [SelectionForeground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectionForeground) properties.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGridSfDataGrid x:Name="sfDataGrid"
                        AllowGrouping="True"
                        ShowGroupDropArea="True"
                        SelectionBackground="#FFDFF3F4"
-                       GroupRowSelectionBackground="#FFC8E3E3"
-                       SelectionForegroundBrush="DarkBlue"
+                       SelectionForeground="DarkBlue"
                        SelectionMode="Extended"
                        ItemsSource="{Binding Orders}">
 
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Selection in WinUI DataGrid](Selection_images/winui-datagrid-selection-customization.png)
+<img src="Selection_images/winui-datagrid-selection-customization.png" alt="Customizing Selection in WinUI DataGrid" width="100%" Height="Auto"/>
 
 
 ### Changing Current Cell Border Style
@@ -1112,7 +1111,7 @@ You can change the current cell border thickness and border color using [Current
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Cell Selection Border in WinUI DataGrid](Selection_images/winui-datagrid-cell-selection-customization.png)
+<img src="Selection_images/winui-datagrid-cell-selection-customization.png" alt="Customizing Cell Selection Border in WinUI DataGrid" width="100%" Height="Auto"/>
 
 
 ### Customizing Row Selection Border
@@ -1132,50 +1131,90 @@ You can customize the row selection by editing the control template of correspon
 {% tabs %}
 {% highlight xaml %}
 
-<Style TargetType="syncfusion:DataGridRowControl">
-    <Setter Property="Background" Value="Transparent" />
-    <Setter Property="BorderBrush" Value="#33000000" />
-    <Setter Property="Foreground" Value="#FF000000"/>
-    <Setter Property="BorderThickness" Value="0" />
-    <Setter Property="Template">
-        <Setter.Value>
-            <ControlTemplate TargetType="syncfusion:DataGridRowControl">
-                <Grid>
-                    <Border x:Name="PART_RowBorder"
-                            BorderBrush="{TemplateBinding BorderBrush}"
-                            BorderThickness="{TemplateBinding BorderThickness}" />
-                    <Rectangle x:Name="PART_CurrentFocusRow"
-                               Margin="{TemplateBinding CurrentFocusBorderMargin}"
-                               Stroke="DarkGray"
-                               StrokeDashArray="2,2"
-                               StrokeThickness="1"
-                               Visibility="{TemplateBinding CurrentFocusRowVisibility}" />
-                    <Rectangle x:Name="PART_RowBackgroundClipRect" Fill="{TemplateBinding Background}" />
-					<!--Adding new border to show border for whole selected row--> 
-                    <Border x:Name="PART_RowSelectionBorder"
-                            BorderBrush="Red"
-                            BorderThickness="1.5"
-                            Opacity="0.75"                            
-                            Background="{TemplateBinding SelectionBackground}"
-                            Visibility="{TemplateBinding SelectionBorderVisibility}" />
-                    <Border x:Name="PART_RowHighlightBorder"                                
-                            Background="{TemplateBinding RowHoverBackground}"
-                            BorderBrush="{TemplateBinding RowHoverBackground}"
-                            BorderThickness="{TemplateBinding BorderThickness}"
-                            Visibility="{TemplateBinding HighlightSelectionBorderVisibility}" />
-                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
-                        <ContentPresenter />
-                    </Border>
-                </Grid>
-            </ControlTemplate>
-        </Setter.Value>
-    </Setter>
-</Style>
+<ResourceDictionary>
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="ms-appx:///Syncfusion.Core.WinUI/Themes/Common.xaml" />
+		<ResourceDictionary Source="ms-appx:///Syncfusion.Grid.WinUI/Themes/themeresources.xaml" />
+		<!-- Other merged dictionaries here -->
+	</ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
+
+<Style TargetType="dataGrid:DataGridRowControl">
+	<Setter Property="Background" Value="{ThemeResource SyncfusionDataGridRowControlBackground}" />
+	<Setter Property="BorderBrush" Value="{ThemeResource SyncfusionDataGridLineStroke}" />
+	<Setter Property="Foreground" Value="{ThemeResource SyncfusionDataGridRowControlForeground}"/>
+	<Setter Property="RowHoverForeground" Value="{ThemeResource SyncfusionDataGridRowForegroundPointerOver}"/>
+	<Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="dataGrid:DataGridRowControl">
+                    <Grid>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="BorderStates">
+                                <VisualState x:Name="NormalRow" />
+                                    <VisualState x:Name="FrozenRow">
+                                        <Storyboard BeginTime="0">
+                                            <ObjectAnimationUsingKeyFrames BeginTime="0"
+												   Duration="1"
+												   Storyboard.TargetName="PART_RowBorder"
+												   Storyboard.TargetProperty="BorderThickness">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="0, 0, 0, 1" />
+                                             </ObjectAnimationUsingKeyFrames>
+                                        /Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="FooterRow">
+                                        <Storyboard BeginTime="0">
+                                            <ObjectAnimationUsingKeyFrames BeginTime="0"
+												   Duration="1"
+												   Storyboard.TargetName="PART_RowBorder"
+												   Storyboard.TargetProperty="BorderThickness">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="0, 1, 0, 0" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames BeginTime="0"
+												   Duration="1"
+												   Storyboard.TargetName="PART_RowBorder"
+												   Storyboard.TargetProperty="Margin">
+											    <DiscreteObjectKeyFrame KeyTime="0" Value="0, -1, 0, 0" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Border x:Name="PART_RowBorder"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}" />
+							<Rectangle x:Name="PART_CurrentFocusRow"
+							   Margin="{TemplateBinding CurrentFocusBorderMargin}"
+							   Stroke="{ThemeResource SyncfusionDataGridRowBorderFocused}"
+							   StrokeDashArray="3,3"
+							   StrokeThickness="1"
+							   Visibility="{TemplateBinding CurrentFocusRowVisibility}" />
+                            <Rectangle x:Name="PART_RowBackgroundClipRect" Fill="{TemplateBinding Background}" />
+                                <!--Adding new border to show border for whole selected row-->
+                            <Border x:Name="PART_RowSelectionBorder"
+								BorderBrush="Red"
+								BorderThickness="1.5"
+								Opacity="0.75"                            
+								Background="{TemplateBinding SelectionBackground}"
+								Visibility="{TemplateBinding SelectionBorderVisibility}" />
+                            <Border x:Name="PART_RowHighlightBorder"                                
+								Background="{ThemeResource SyncfusionDataGridRowBackgroundPointerOver}"
+								BorderBrush="{ThemeResource SyncfusionDataGridRowBackgroundPointerOver}"
+								BorderThickness="{ThemeResource SyncfusionDataGridRowBorderThickessPointerOver}"
+								Visibility="{TemplateBinding HighlightSelectionBorderVisibility}" />
+                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                                <ContentPresenter />
+                            </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+ </Style>
 
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Row Selection Border in WinUI DataGrid](Selection_images/winui-datagrid-row-selection-customization.png)
+<img src="Selection_images/winui-datagrid-row-selection-customization.png" alt="Customizing Row Selection Border in WinUI DataGrid" width="100%" Height="Auto"/>
 
 
 ### Customizing Cell Selection
@@ -1191,62 +1230,243 @@ You can customize the cell selection by editing the control template of the corr
 {% tabs %}
 {% highlight xaml %}
 
-<Style TargetType="syncfusion:GridCell">
-    <Setter Property="Background" Value="Transparent" />
-    <Setter Property="BorderBrush" Value="#33000000" />
-    <Setter Property="FontFamily" Value="Segoe UI"/>
-    <Setter Property="FontSize" Value="14"/>
-    <Setter Property="FontWeight" Value="Normal"/>
-    <Setter Property="BorderThickness" Value="0,0,1,1" />
-    <Setter Property="Padding" Value="0,0,0,0" />
-    <Setter Property="VerticalContentAlignment" Value="Center" />
-    <Setter Property="Template">
+<ResourceDictionary>
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="ms-appx:///Syncfusion.Core.WinUI/Themes/Common.xaml" />
+		<ResourceDictionary Source="ms-appx:///Syncfusion.Grid.WinUI/Themes/themeresources.xaml" />
+		<!-- Other merged dictionaries here -->
+	</ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
+
+<ControlTemplate x:Key="DataGridCellValidationToolTipTemplate">
+    <Grid x:Name="PART_ToolTipPresenter"
+          Margin="5,0"
+          Opacity="0"
+          RenderTransformOrigin="0,0">
+		<Grid.RenderTransform>
+			<TranslateTransform x:Name="Transform" X="-25" />
+		</Grid.RenderTransform>
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="OpenStates">
+				<VisualStateGroup.Transitions>
+					<VisualTransition GeneratedDuration="0" />
+					<VisualTransition GeneratedDuration="0:0:0.2" To="Opened">
+						<Storyboard>
+							<DoubleAnimation Duration="0:0:0.2"
+									 Storyboard.TargetName="Transform"
+									 Storyboard.TargetProperty="X"
+									 To="0">
+								<DoubleAnimation.EasingFunction>
+									<BackEase Amplitude=".3" EasingMode="EaseOut" />
+								</DoubleAnimation.EasingFunction>
+							</DoubleAnimation>
+							<DoubleAnimation Duration="0:0:0.2"
+									 Storyboard.TargetName="PART_ToolTipPresenter"
+									 Storyboard.TargetProperty="Opacity"
+									 To="1" />
+						</Storyboard>
+					</VisualTransition>
+				</VisualStateGroup.Transitions>
+				<VisualState x:Name="Closed">
+					<Storyboard>
+						<DoubleAnimation Duration="0"
+								 Storyboard.TargetName="PART_ToolTipPresenter"
+								 Storyboard.TargetProperty="Opacity"
+								 To="0" />
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="Opened">
+					<Storyboard>
+						<DoubleAnimation Duration="0"
+								 Storyboard.TargetName="Transform"
+								 Storyboard.TargetProperty="X"
+								 To="0" />
+						<DoubleAnimation Duration="0"
+								 Storyboard.TargetName="PART_ToolTipPresenter"
+								 Storyboard.TargetProperty="Opacity"
+								 To="1" />
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+
+		<Border Margin="4,4,-4,-4"
+			Background="Transparent"
+			CornerRadius="5" />
+		<Border Margin="3,3,-3,-3"
+			Background="Transparent"
+			CornerRadius="4" />
+		<Border Margin="2,2,-2,-2"
+			Background="Transparent"
+			CornerRadius="3" />
+		<Border Margin="1,1,-1,-1"
+			Background="Transparent"
+			CornerRadius="2" />
+
+		<Border Background="{ThemeResource SystemFillColorCritical}" CornerRadius="2" />
+		<Border CornerRadius="2" BorderBrush="{ThemeResource SystemFillColorCritical}">
+			<TextBlock MaxWidth="250"
+			   Margin="8,4,8,4"
+			   FontFamily="{ThemeResource SyncfusionDataGridFontFamily}"
+			   FontSize="{ThemeResource SyncfusionBodyFontSize}"
+			   FontWeight="{ThemeResource SyncfusionDataGridFontWeight}"
+			   Foreground="{ThemeResource SyncfusionDataGridCellValidationToolTipErrorForeground}"
+			   Text="{TemplateBinding Tag}"
+			   TextWrapping="Wrap"
+			   HighContrastAdjustment="None"
+			   UseLayoutRounding="false" />
+		</Border>
+    </Grid>
+</ControlTemplate>
+
+
+<Style TargetType="dataGrid:GridCell">
+	<Setter Property="Background" Value="Transparent" />
+	<Setter Property="BorderBrush" Value="{ThemeResource SyncfusionDataGridLineStroke}" />
+	<Setter Property="FontFamily" Value="{ThemeResource SyncfusionDataGridFontFamily}"/>
+	<Setter Property="FontSize" Value="{ThemeResource SyncfusionBodyFontSize}"/>
+	<Setter Property="FontWeight" Value="{ThemeResource SyncfusionDataGridFontWeight}"/>
+	<Setter Property="BorderThickness" Value="0,0,1,1" />
+	<Setter Property="Padding" Value="0,0,0,0" />
+	<Setter Property="VerticalContentAlignment" Value="Center" />
+	<Setter Property="Template">
         <Setter.Value>
-            <ControlTemplate TargetType="syncfusion:GridCell">
+            <ControlTemplate TargetType="dataGrid:GridCell">
                 <Grid>
-                    <Border x:Name="PART_SelectionCellBorder" Background="{TemplateBinding SelectionBackground}" Visibility="{TemplateBinding SelectionBorderVisibility}" />
-                    <Border x:Name="PART_GridCellBorder"
-                        Background="{TemplateBinding Background}"
-                        BorderBrush="{TemplateBinding BorderBrush}"
-                        BorderThickness="{TemplateBinding BorderThickness}">
-                        <ContentPresenter Margin="{TemplateBinding Padding}"
-                                          FontFamily="{TemplateBinding FontFamily}"
-                                          FontWeight="{TemplateBinding FontWeight}"
-                                          FontSize="{TemplateBinding FontSize}" />
-                    </Border>
-                    <Border Background="Transparent"
-                            BorderBrush="Red"
-                            BorderThickness="0.5"
-                            IsHitTestVisible="False"
-                            Margin="0,0,1,1"
-                            Visibility="{TemplateBinding SelectionBorderVisibility}" />
-                    <!--Adding new border to show inner border to the CurrentCellBorder-->
-                    <Border Margin="2,2,3,3"
-                            Background="Transparent"
-                            BorderBrush="Red"
-                            BorderThickness="0.5"
-                            IsHitTestVisible="False"
-                            Visibility="{TemplateBinding SelectionBorderVisibility}" />
-                    <Border x:Name="PART_InValidCellBorder"
-                            Width="10"
-                            Height="10"
-                            HorizontalAlignment="Right"
-                            VerticalAlignment="Top"
-                            Visibility="Collapsed" >                                
-                        <Path Data="M0.5,0.5 L12.652698,0.5 12.652698,12.068006 z"
-                              Fill="Red"                                      
-                              Stretch="Fill" />
-                    </Border>
-                </Grid>
-            </ControlTemplate>
-        </Setter.Value>
-    </Setter>
+                    <VisualStateManager.VisualStateGroups>
+                        <VisualStateGroup x:Name="IndicationStates">
+                            <VisualState x:Name="NoError">
+                            </VisualState>
+							<VisualState x:Name="HasError">
+								<Storyboard>
+									<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_InValidCellBorder" Storyboard.TargetProperty="(UIElement.Visibility)">
+										<DiscreteObjectKeyFrame KeyTime="0">
+											<DiscreteObjectKeyFrame.Value>
+												<Visibility>Visible</Visibility>
+											</DiscreteObjectKeyFrame.Value>
+										</DiscreteObjectKeyFrame>
+									</ObjectAnimationUsingKeyFrames>
+								</Storyboard>
+							</VisualState>
+                         </VisualStateGroup>
+						<VisualStateGroup x:Name="BorderStates">
+							<VisualState x:Name="NormalCell" />
+							<VisualState x:Name="FrozenColumnCell">
+								<Storyboard BeginTime="0">
+									<ObjectAnimationUsingKeyFrames BeginTime="0"
+														   Duration="1"
+														   Storyboard.TargetName="PART_FrozenCellBorder"
+														   Storyboard.TargetProperty="BorderThickness">
+										<DiscreteObjectKeyFrame KeyTime="0" Value="0,0,1,0" />
+									</ObjectAnimationUsingKeyFrames>
+								</Storyboard>
+							</VisualState>
+							<VisualState x:Name="FooterColumnCell">
+								<Storyboard BeginTime="0">
+									<ObjectAnimationUsingKeyFrames BeginTime="0"
+														   Duration="1"
+														   Storyboard.TargetName="PART_FooterCellBorder"
+														   Storyboard.TargetProperty="BorderThickness">
+										<DiscreteObjectKeyFrame KeyTime="0" Value="1,0,0,0" />
+									</ObjectAnimationUsingKeyFrames>
+								</Storyboard>
+							</VisualState>
+							<VisualState x:Name="BeforeFooterColumnCell">
+								<Storyboard BeginTime="0">
+									<ObjectAnimationUsingKeyFrames BeginTime="0"
+														   Duration="1"
+														   Storyboard.TargetName="PART_GridCellBorder"
+														   Storyboard.TargetProperty="Margin">
+										<DiscreteObjectKeyFrame KeyTime="0" Value="0,0,-1,0" />
+									</ObjectAnimationUsingKeyFrames>
+								</Storyboard>
+							</VisualState>
+							<VisualState x:Name="CurrentCell">
+								<Storyboard>
+									<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_CurrentCellBorder" Storyboard.TargetProperty="(UIElement.Visibility)">
+										<DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+									</ObjectAnimationUsingKeyFrames>
+								</Storyboard>
+							</VisualState>
+							<VisualState x:Name="SelectedCell">
+								<Storyboard>
+									<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_SelectionCellBorder" Storyboard.TargetProperty="(UIElement.Visibility)">
+										<DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+									</ObjectAnimationUsingKeyFrames>
+								</Storyboard>
+							</VisualState>
+							<VisualState x:Name="SelectedCurrentCell">
+								<Storyboard>
+									<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_SelectionCellBorder" Storyboard.TargetProperty="(UIElement.Visibility)">
+										<DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+									</ObjectAnimationUsingKeyFrames>
+									<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_CurrentCellBorder" Storyboard.TargetProperty="(UIElement.Visibility)">
+										<DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+									</ObjectAnimationUsingKeyFrames>
+								</Storyboard>
+							</VisualState>
+						</VisualStateGroup>
+                    </VisualStateManager.VisualStateGroups>
+                    <Border x:Name="PART_SelectionCellBorder" Background="{TemplateBinding SelectionBackground}" Visibility="Collapsed" />
+                        <Border x:Name="PART_FooterCellBorder"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"/>
+                        <Border x:Name="PART_FrozenCellBorder"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"/>
+                        <Border x:Name="PART_GridCellBorder"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding GridCellBorderThickness}">
+
+                                <ContentPresenter Margin="{TemplateBinding Padding}"
+                                              FontFamily="{TemplateBinding FontFamily}"
+                                              FontWeight="{TemplateBinding FontWeight}"
+                                              FontSize="{TemplateBinding FontSize}" />
+
+                        </Border>
+                        <Border x:Name="PART_CurrentCellBorder"  
+						        Background="Transparent"
+                                BorderBrush="Red"
+                                BorderThickness="0.5"
+                                IsHitTestVisible="False"
+                                Margin="0,0,1,1"
+                                Visibility="{TemplateBinding SelectionBorderVisibility}" />
+								<!--Adding new border to show inner border to the CurrentCellBorder-->
+                        <Border x:Name="PART_CurrentCellInnerBorder" 
+                                Margin="2,2,3,3"
+                                Background="Transparent"
+                                BorderBrush="Red"
+                                BorderThickness="0.5"
+                                IsHitTestVisible="False"
+                                Visibility="{TemplateBinding SelectionBorderVisibility}"/>
+                        <Border x:Name="PART_InValidCellBorder"
+                                Width="10"
+                                Height="10"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Top"
+                                Visibility="Collapsed">
+                                    <ToolTipService.ToolTip>
+
+                                        <ToolTip Placement="Right"
+                                         Tag="{TemplateBinding ErrorMessage}"
+                                         Template="{StaticResource DataGridCellValidationToolTipTemplate}" />
+
+                                    </ToolTipService.ToolTip>
+                                    <Path Data="M0.5,0.5 L12.652698,0.5 12.652698,12.068006 z"
+                                  Fill="{ThemeResource SystemFillColorCritical}"
+                                  Stretch="Fill" />
+                        </Border>
+                     </Grid>
+                 </ControlTemplate>
+            </Setter.Value>
+        </Setter>
 </Style>
 
 {% endhighlight %}
 {% endtabs %}
 
-![Custom Cell Selection in WinUI DataGrid](Selection_images/winui-datagrid-custom-cell-selection.png)
+<img src="Selection_images/winui-datagrid-custom-cell-selection.png" alt="Custom Cell Selection in WinUI DataGrid" width="100%" Height="Auto"/>
 
 
 ## Binding Selection Properties

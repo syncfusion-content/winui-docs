@@ -12,7 +12,7 @@ SfTreeGrid provides support for loading `CheckBox` in the expander cell of each 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                        ChildPropertyName="ReportsTo"
                        ItemsSource="{Binding Employees}"
                        CheckBoxSelectionMode="Default"
@@ -26,7 +26,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.Default;
 {% endhighlight %}
 {% endtabs %}
 
-![Node with CheckBox in WinUI TreeGrid](Node-CheckBox_images/Node-CheckBox_img1.png)
+<img src="Node-CheckBox_images/Node-CheckBox_img1.png" alt="Node with CheckBox in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ## Indeterminate State Support
 
@@ -34,7 +34,7 @@ You can enable or disable the indeterminate state for node CheckBox using [SfTre
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                        ChildPropertyName="ReportsTo"
                        ItemsSource="{Binding Employees}"
                        AllowTriStateChecking="True"
@@ -57,7 +57,7 @@ SfTreeGrid provides support for recursive checking where the checked state of pa
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                        ChildPropertyName="ReportsTo"
                        ItemsSource="{Binding Employees}"
                        EnableRecursiveChecking="True"
@@ -70,7 +70,7 @@ treeGrid.EnableRecursiveChecking = true;
 {% endhighlight %}
 {% endtabs %}
 
-![RecursiveChecking mode demo for WinUI TreeGrid ](Node-CheckBox_images/Node-CheckBox_img2.png)
+<img src="Node-CheckBox_images/Node-CheckBox_img2.png" alt="RecursiveChecking mode demo for WinUI TreeGrid" width="100%" Height="Auto"/>
 
 N> Even though [SfTreeGrid.AllowTriStateChecking](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowTriStateChecking) is `false` if [SfTreeGrid.EnableRecursiveChecking](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_EnableRecursiveChecking) is `true`, CheckBox can be in indeterminate state.
 
@@ -80,91 +80,79 @@ You can collapse node CheckBox for certain nodes by editing the control template
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
+<Application.Resources>
     <ResourceDictionary>
-        <ResourceDictionary.MergedDictionaries>
-            <ResourceDictionary Source="ms-appx:///Syncfusion.Grid.WinUI/Control/Themes/Generic.xaml" />
-        </ResourceDictionary.MergedDictionaries>
         <local:BoolToVisibilityConverter x:Key="VisibilityConverter" />
-        <Style TargetType="syncfusion:TreeGridExpanderCell">
+        <Style TargetType="treeGrid:TreeGridExpanderCell">
             <Setter Property="Background" Value="Transparent" />
             <Setter Property="BorderThickness" Value="0,0,1,1" />
-            <Setter Property="BorderBrush" Value="#CECECE" />
+            <Setter Property="BorderBrush" Value="DividerStrokeColorDefault" />
             <Setter Property="Padding" Value="0" />
             <Setter Property="Template">
                 <Setter.Value>
-                    <ControlTemplate TargetType="syncfusion:TreeGridExpanderCell">
+                    <ControlTemplate TargetType="treeGrid:TreeGridExpanderCell">
                         <Grid x:Name="Root"
-                        BorderBrush="{TemplateBinding BorderBrush}"
-                        BorderThickness="{TemplateBinding BorderThickness}">
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
                             <Grid Margin="{TemplateBinding IndentMargin}">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="18" />
                                     <ColumnDefinition Width="Auto" />
                                     <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
-                                <syncfusion:TreeGridExpander x:Name="PART_ExpanderCell"
-                                                        Grid.Column="0"
-                                                        Width="16"
-                                                        Height="16"
-                                                        Margin="2,1,0,1"
-                                                         HorizontalAlignment="Center"
-                                                        VerticalAlignment="Center"
-                                                        IsExpanded="{Binding RelativeSource={RelativeSource TemplatedParent},
-                                                                            Path=IsExpanded,
-                                                                            Mode=TwoWay,
-                                                                            UpdateSourceTrigger=PropertyChanged}"
-                                                        Visibility="{Binding RelativeSource={RelativeSource TemplatedParent},
+                                <treeGrid:TreeGridExpander x:Name="PART_ExpanderCell"
+                                                    Grid.Column="0"
+                                                    Width="16"
+                                                    Height="16"
+                                                    Margin="2,1,0,1"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    IsExpanded="{Binding RelativeSource={RelativeSource TemplatedParent},
+                                                                         Path=IsExpanded,
+                                                                         Mode=TwoWay,
+                                                                         UpdateSourceTrigger=PropertyChanged}"
+                                                    Visibility="{Binding RelativeSource={RelativeSource TemplatedParent},
                                                                             Path=HasChildNodes,
                                                                             Converter={StaticResource VisibilityConverter},
-                                                                            Mode=TwoWay}" />
+                                                                            Mode=TwoWay}"  />
 
                                 <CheckBox Name="PART_SelectCheckBox"
-                                    Grid.Column="1"
-                                    Width="18"
-                                    Height="18"
-                                    MinWidth="22"
-                                    Margin="2,0,0,0"
-                                    HorizontalAlignment="Center"
-                                    VerticalAlignment="Center"
-                                    IsEnabled="{Binding RelativeSource={RelativeSource TemplatedParent},
-                                                        Path=IsCheckBoxEnabled,
-                                                        Mode=TwoWay,
-                                                        UpdateSourceTrigger=PropertyChanged}"
-                                    IsTabStop="False"
-                                    IsThreeState="True"
-                                    Visibility="{Binding Path=HasChildNodes,
+                                        Grid.Column="1"
+                                        Width="18"
+                                        Height="18"
+                                        MinWidth="22"
+                                        Margin="2,0,0,0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        IsEnabled="{Binding RelativeSource={RelativeSource TemplatedParent},
+                                                          Path=IsCheckBoxEnabled,
+                                                          Mode=TwoWay,
+                                                          UpdateSourceTrigger=PropertyChanged}"
+                                        IsTabStop="False"
+                                        IsThreeState="True"
+                                        Visibility="{Binding Path=HasChildNodes,
                                                         RelativeSource={RelativeSource Mode=TemplatedParent},
                                                         Converter={StaticResource VisibilityConverter},
                                                         Mode=TwoWay}" />
                                 <Grid Grid.Column="2"
-                                Margin="2,0,0,0"
-                                Background="{TemplateBinding Background}">
+                                        Margin="2,0,0,0">
                                     <ContentPresenter />
                                     <Border x:Name="PART_CurrentCellBorder"
-                                    Margin="1,0,0,0"
-                                    Background="Transparent"
-                                    BorderBrush="{TemplateBinding CurrentCellBorderBrush}"
-                                    BorderThickness="{TemplateBinding CurrentCellBorderThickness}"
-                                    IsHitTestVisible="False"
-                                    Visibility="Collapsed" />
-                                    <Border x:Name="PART_InValidCellBorder"
-                                    Width="10"
-                                    Height="10"
-                                    HorizontalAlignment="Right"
-                                    VerticalAlignment="Top"
-                                    Visibility="Collapsed">
-                                        <ToolTipService.ToolTip>
-
-                                            <ToolTip Background="#FFDB000C"
-                                                Placement="Right"
-                                                Tag="{TemplateBinding ErrorMessage}"
-                                                Template="{StaticResource ValidationToolTipTemplate}" />
-
-                                        </ToolTipService.ToolTip>
-                                        <Path Data="M0.5,0.5 L12.652698,0.5 12.652698,12.068006 z"
-                                        Fill="Red"
-                                        Stretch="Fill" />
+                                        Margin="1,0,0,0"
+                                        Background="Transparent"
+                                        BorderBrush="{TemplateBinding CurrentCellBorderBrush}"
+                                        BorderThickness="{TemplateBinding CurrentCellBorderThickness}"
+                                        IsHitTestVisible="False"
+                                        Visibility="Collapsed" />
+                                        <Border x:Name="PART_InValidCellBorder"
+                                        Width="10"
+                                        Height="10"
+                                        HorizontalAlignment="Right"
+                                        VerticalAlignment="Top"
+                                        Visibility="Collapsed">
+                                            <Path Data="M0.5,0.5 L12.652698,0.5 12.652698,12.068006 z"
+                                          Fill="{ThemeResource SystemFillColorCritical}"
+                                          Stretch="Fill" />
                                     </Border>
                                 </Grid>
                             </Grid>
@@ -192,13 +180,13 @@ You can collapse node CheckBox for certain nodes by editing the control template
             </Setter>
         </Style>
     </ResourceDictionary>
-</Page.Resources>
+</Application.Resources>
 {% endhighlight %}
 {% highlight c# %}
 public class BoolToVisibilityConverter : IValueConverter
 {
 
-    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+    public object Convert(object value, Type targetType, object parameter, string language)
     {
 
         if ((bool)value)
@@ -206,7 +194,7 @@ public class BoolToVisibilityConverter : IValueConverter
         return Visibility.Collapsed;
     }
 
-    public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+    public object ConvertBack(object value, Type targetType, object parameter, string language)
     {
 
         if ((Visibility)value == Visibility.Visible)
@@ -219,7 +207,7 @@ public class BoolToVisibilityConverter : IValueConverter
 
 Here, node CheckBox is collapsed for leaf nodes.
 
-![Leaf nodes checkbox visibility collapsed in WinUI TreeGrid](Node-CheckBox_images/Node-CheckBox_img4.png)
+<img src="Node-CheckBox_images/Node-CheckBox_img4.png" alt="Leaf nodes checkbox visibility collapsed in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 ## Handling Selection based on CheckBox State
 
@@ -235,7 +223,7 @@ If you don’t want to affect the selection while checking/unchecking the node C
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                        CheckBoxSelectionMode="Default"
                        ItemsSource="{Binding PersonDetails}"
                        ShowCheckBox="True"/>
@@ -248,7 +236,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.Default;
 {% endhighlight %}
 {% endtabs %}
 
-![CheckBoxSelectionMode as default demo for WinUI TreeGrid](Node-CheckBox_images/Node-CheckBox_img5.png)
+<img src="Node-CheckBox_images/Node-CheckBox_img5.png" alt="CheckBoxSelectionMode as default demo for WinUI TreeGrid" width="100%" Height="Auto"/>
 
 **SelectOnCheck**
 
@@ -257,7 +245,7 @@ Navigation, editing and programmatic selection are not supported in this mode.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                        CheckBoxSelectionMode="SelectOnCheck"
                        ItemsSource="{Binding PersonDetails}"
                        ShowCheckBox="True"/>
@@ -268,7 +256,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.SelectOnCheck;
 {% endhighlight %}
 {% endtabs %}
 
-![CheckBoxSelectionMode as SelectOnCheck demo for WinUi TreeGrid](Node-CheckBox_images/Node-CheckBox_img6.png)
+<img src="Node-CheckBox_images/Node-CheckBox_img6.png" alt="CheckBoxSelectionMode as SelectOnCheck demo for WinUi TreeGrid" width="100%" Height="Auto"/>
 
 **SynchronizeSelection**
 
@@ -276,7 +264,7 @@ If you want to synchronize the selection with node CheckBox’s IsChecked state,
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"
+<treeGrid:SfTreeGrid Name="treeGrid"
                        CheckBoxSelectionMode="SynchronizeSelection"
                        ItemsSource="{Binding PersonDetails}"
                        ShowCheckBox="True"/>
@@ -287,7 +275,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.SynchronizeSelection;
 {% endhighlight %}
 {% endtabs %}
 
-![CheckBoxSelectionMode as SynchronizeSelection demo for WinUI TreeGrid](Node-CheckBox_images/Node-CheckBox_img7.png)
+<img src="Node-CheckBox_images/Node-CheckBox_img7.png" alt="CheckBoxSelectionMode as SynchronizeSelection demo for WinUI TreeGrid" width="100%" Height="Auto"/>
 
 N>
 * Recursive checking is not supported when selection mode is single.
