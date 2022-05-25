@@ -86,7 +86,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 <img src="GridLines_images/winui-datagrid-vertical-gridlines.png" alt="WinUI DataGrid with Vertical GridLines" width="100%" Height="Auto"/>
 
 ### None
-[GridLinesVisibility.None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_None) displays the DataGrid without grid lines. By default GridLinesVisibility value set as Both.
+[GridLinesVisibility.None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_None) displays the DataGrid without grid lines. By default GridLinesVisibility value set as None.
 
 {% tabs %}
 {% highlight xaml %}
