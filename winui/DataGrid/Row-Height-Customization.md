@@ -163,7 +163,7 @@ By default, auto height is supported for the headers is `QueryRowHeight` event. 
 {% tabs %}
 {% highlight xaml %}
 
-<Application.Resources>>
+<Application.Resources>
     <DataTemplate x:Key="headerTemplate">
         <TextBlock Height="50"
                     FontWeight="Bold"
