@@ -258,7 +258,7 @@ private void OnCollapseAllClicked(object param)
 {% endhighlight %}
 {% endtabs %}
 
-## Context flyout for caption summary wow
+## Context flyout for caption summary Row
 
 You can set the context flyout for the group caption by using [SfDataGrid.GroupCaptionContextFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_GroupCaptionContextFlyout) property. 
 
