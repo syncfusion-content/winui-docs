@@ -9,11 +9,11 @@ documentation: ug
 
 # Crosshair in WinUI Chart
 
-[`ChartCrosshairBehavior`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#) is used to view the values at mouse point or touch contact point. By moving these lines horizontally, you can get the X values and by moving these lines vertically, you can get the Y values.
+[`ChartCrosshairBehavior`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#) is used to view the values at mouse point or touch contact point. You can get the X values by moving these lines horizontally, and the Y values by moving these lines vertically.
 
 ## Adding CrosshairBehavior to SfChart
 
-You can create an instance [`ChartCrosshairBehavior`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#) and add it to the Behaviors collection.
+You can create a [`ChartCrosshairBehavior`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#) instance and add it to the Behaviors collection.
 
 {% tabs %}
 
@@ -37,7 +37,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-To view the axis labels then set the [`ShowTrackballInfo`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballInfo) property to true as in the below code snippet.
+To view the axis labels, set the [`ShowTrackballInfo`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballInfo) property to true, as shown in the following code sample.
 
 {% tabs %}
 
@@ -92,11 +92,11 @@ Crosshair is composed of the following parts:
 
 ## Vertical and Horizontal Line
 
-If you add [`ChartCrosshairBehavior`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#) to chart you can see horizontal and vertical lines.The horizontal and vertical lines can be customized using [`HorizontalLineStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#Syncfusion_UI_Xaml_Charts_ChartCrosshairBehavior_HorizontalLineStyle) and [`VerticalLineStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#Syncfusion_UI_Xaml_Charts_ChartCrosshairBehavior_VerticalLineStyle) properties.
+You can see horizontal and vertical lines by adding [`ChartCrosshairBehavior`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#) to the chart. The horizontal and vertical lines can be customized using the [`HorizontalLineStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#Syncfusion_UI_Xaml_Charts_ChartCrosshairBehavior_HorizontalLineStyle) and [`VerticalLineStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#Syncfusion_UI_Xaml_Charts_ChartCrosshairBehavior_VerticalLineStyle) properties.
 
 **HorizontalLineStyle**
 
-The following code snippet demonstrates the line style for horizontal line in cross hair.
+The following code sample demonstrates the line style for horizontal line in cross hair.
 
 {% tabs %}
 
@@ -196,9 +196,9 @@ chart.Behaviors.Add(Crosshair);
 
 ## Horizontal axis label
 
-The vertical line in contact with the x axes shows axis label. The horizontal axis label can be aligned using [`HorizontalAxisLabelAlignment`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#Syncfusion_UI_Xaml_Charts_ChartCrosshairBehavior_HorizontalAxisLabelAlignment) property.
+The vertical line in contact with the x-axes shows the axis label. The horizontal axis label can be aligned using the [`HorizontalAxisLabelAlignment`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#Syncfusion_UI_Xaml_Charts_ChartCrosshairBehavior_HorizontalAxisLabelAlignment) property.
 
-Axis Label can be aligned by Near, Far, Center, and Auto options.
+Axis label can be aligned by Near, Far, Center, and Auto options.
 
 * [`Auto`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAlignment.html) – Axis label is aligned in Near/Far positions based on the movement of vertical line.
 
@@ -206,7 +206,7 @@ Axis Label can be aligned by Near, Far, Center, and Auto options.
 
 * [`Near`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAlignment.html) - Axis label is near to the position of trackball.
 
-* [`Center`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAlignment.html) - Axis label is aligned to the center of the vertical line. By default the axis label will positioned in center.
+* [`Center`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAlignment.html) - Axis label is aligned to the center of the vertical line. By default, the axis label will be positioned in center.
 
 The following image demonstrates the horizontal axis label positioned center to the vertical line.
 
@@ -283,9 +283,9 @@ chart.Behaviors.Add(behavior);
 
 ## Vertical axis label
 
-Vertical axis label is displayed when the horizontal line in contact with x axis. The label can be aligned using [`VerticalAxisLabelAlignment`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#Syncfusion_UI_Xaml_Charts_ChartCrosshairBehavior_VerticalAxisLabelAlignment) property.
+A vertical axis label is displayed when the horizontal line is in contact with x-axis. The label can be aligned using the [`VerticalAxisLabelAlignment`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#Syncfusion_UI_Xaml_Charts_ChartCrosshairBehavior_VerticalAxisLabelAlignment) property.
 
-Axis Label can be aligned by Near, Far, Center, and Auto options.
+Axis label can be aligned by Near, Far, Center, and Auto options.
 
 The following image demonstrates the horizontal axis label positioned center to the vertical line.
 
