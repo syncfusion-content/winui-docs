@@ -135,21 +135,20 @@ public class LoadOnDemandViewModel
             return false;
     }
 
-    private async void ExecuteOnDemandLoading(object obj)
-    {
-        var node = obj as TreeViewNode;
-        node.ShowExpanderAnimation = true;
-        LoadOnDemandModel loadOnDemandModel = node.Content as LoadOnDemandModel;
-        await Application.Current.Resources.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, async () => 
+      private void ExecuteOnDemandLoading(object obj)
         {
-            await Task.Delay(2000).ConfigureAwait(true);
-            var items = GetSubMenu(loadOnDemandModel.ID);
-            node.PopulateChildNodes(items);
-            if (items.Any())
-                node.IsExpanded = true;
-            node.ShowExpanderAnimation = false;
-        });
-    }
+            var node = obj as TreeViewNode;
+            node.ShowExpanderAnimation = true;
+            LoadOnDemandModel loadOnDemandModel = node.Content as LoadOnDemandModel;
+            Application.Current.Resources.DispatcherQueue.TryEnqueue(() =>
+            {
+                var items = GetSubMenu(loadOnDemandModel.ID);
+                node.PopulateChildNodes(items);
+                if (items.Any())
+                    node.IsExpanded = true;
+                node.ShowExpanderAnimation = false;
+            });
+        }
 
     private static ObservableCollection<LoadOnDemandModel> GetMenuItems()
     {
