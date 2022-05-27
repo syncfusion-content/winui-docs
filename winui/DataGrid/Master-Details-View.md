@@ -630,7 +630,7 @@ You can directly define the columns to [ViewDefinition.DataGrid](https://help.sy
 {% tabs %}
 {% highlight xaml %}
 <dataGrid:SfDataGrid x:Name="dataGrid"
-                        AutoGenerateColumns="False"
+                        AutoGenerateColumns="True"
                         AutoGenerateRelations="False"
                         GridLinesVisibility="Both"
                         ItemsSource="{Binding Employees}">
@@ -979,8 +979,8 @@ The padding of [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfu
 {% highlight xaml %}
 <dataGrid:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
-                       AutoGenerateRelations="False"
-                    GridLinesVisibility="Both"
+                       AutoGenerateRelations="True"
+                       GridLinesVisibility="Both"
                        DetailsViewPadding="15"
                        ItemsSource="{Binding Employees}" />
 
