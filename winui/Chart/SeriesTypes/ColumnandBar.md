@@ -44,7 +44,7 @@ chart.Series.Add(series);
 
 ## Bar
 
-Bar series is similar to column series, except for their orientation. The following code example shows how to use [`BarSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.BarSeries.html#).
+Bar series is similar to column series, except the orientation. The following code example shows how to use [`BarSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.BarSeries.html#).
 
 {% tabs %}
 

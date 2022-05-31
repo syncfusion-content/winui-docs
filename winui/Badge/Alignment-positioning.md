@@ -211,9 +211,9 @@ badge.VerticalPosition = 0.8;
 
 ## Custom alignment and positioning of Badge
 
-By using the `HorizontalAlignment`, `VerticalAlignment`, `HorizontalAnchor`, and `VerticalAnchor` properties, you can place `Badge` only at particular position. If you want to place the `Badge` at a custom position, use the `HorizontalPosition` and `VerticalPosition` properties, as well as the [HorizontalAnchorPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalAnchorPosition) and [VerticalAnchorPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalAnchorPosition) properties. This will effective only on by setting the `HorizontalAnchor` and `VerticalAnchor` properties value as `Custom`. The value range for the `HorizontalAnchorPosition` and `VerticalAnchorPosition` properties is `0` to`1`. The default value of `HorizontalAnchorPosition`and `VerticalAnchorPosition` properties is `0`.
+By using the `HorizontalAlignment`, `VerticalAlignment`, `HorizontalAnchor`, and `VerticalAnchor` properties, you can place `Badge` only at particular position. If you want to place the `Badge` at a custom position, use the `HorizontalPosition` and `VerticalPosition` properties, as well as the [HorizontalAnchorPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalAnchorPosition) and [VerticalAnchorPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalAnchorPosition) properties. This will be effective only on by setting the `HorizontalAnchor` and `VerticalAnchor` properties value as `Custom`. The value range for the `HorizontalAnchorPosition` and `VerticalAnchorPosition` properties is `0` to`1`. The default value of `HorizontalAnchorPosition`and `VerticalAnchorPosition` properties is `0`.
 
-For example, you will see how the  `HorizontalPosition` and `HorizontalAnchorPosition` values works based on the `VerticalAnchorPosition` and `VerticalPosition` values. Here,  `VerticalPosition` and `VerticalAnchorPosition` properties value is `0`.
+For example, you will see how the  `HorizontalPosition` and `HorizontalAnchorPosition` values work based on the `VerticalAnchorPosition` and `VerticalPosition` values. Here,  `VerticalPosition` and `VerticalAnchorPosition` properties value is `0`.
 
 <style>
 table, td, th { 
@@ -330,7 +330,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Padding for Badge content
 
-By default, `Badge` control size automatically assigned based on their content. You can change the left, right, top, and bottom content spacing of a `Badge` control by using the `Padding` property. The default value of `Padding` property is `0,0,0,0`.
+By default, `Badge` control size automatically assigned based on its content. You can change the left, right, top, and bottom content spacing of a `Badge` control by using the `Padding` property. The default value of `Padding` property is `0,0,0,0`.
 
 {% tabs %}
 {% highlight XAML %}

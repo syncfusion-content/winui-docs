@@ -183,8 +183,3 @@ sfCalendar.NumberOfWeeksInView = 3;
 ![change-number-of-weeks-in-a-view-in-winui-calendar](Images/localization-and-formatting/change-number-of-weeks-in-a-view-in-winui-calendar.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Selection).
-<<<<<<< .mine
-
-=======
-
->>>>>>> .theirs

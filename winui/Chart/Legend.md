@@ -438,7 +438,7 @@ The [`series`](https://help.syncfusion.com/winui/chart/seriestypes/series) can b
 ![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/winui_chart_legend_toggle_series_visibility.png)
 
 
-YOu can also view the associated [`series`](https://help.syncfusion.com/winui/chart/seriestypes/series), by clicking on its disabled legend item.
+You can also view the associated [`series`](https://help.syncfusion.com/winui/chart/seriestypes/series), by clicking on its disabled legend item.
 
 ![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/winui_chart_legend_toggle_series_visibility1.png)
 

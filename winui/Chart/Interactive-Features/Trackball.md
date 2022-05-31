@@ -459,7 +459,7 @@ chart.Behaviors.Add(behavior);
 
 ### Label display mode
 
-By default, the Trackball series label will be displayed only for the nearest point When there is a multiple series. If you want to display all the y values with respect to the x value, then the [`LabelDisplayMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_LabelDisplayMode) property is set to [`FloatAllPoints`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.TrackballLabelDisplayMode.html).
+By default, the Trackball series label will be displayed only for the nearest point when there is a multiple series. If you want to display all the y values with respect to the x value, then the [`LabelDisplayMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_LabelDisplayMode) property is set to [`FloatAllPoints`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.TrackballLabelDisplayMode.html).
 
 **FloatAllPoints**
 

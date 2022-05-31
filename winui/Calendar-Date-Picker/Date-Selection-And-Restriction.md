@@ -28,7 +28,7 @@ sfCalendarDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction).
 
-You can also change the selected date interactively by selecting a date from drop-down calendar or by entering the date value in editor of `Calendar Date Picker`. Now, you can get the selected date from the `SelectedDate` property.
+You can also change the selected date interactively by selecting a date from the drop-down calendar or by entering the date value in editor of `Calendar Date Picker`. You can get the selected date from the `SelectedDate` property.
 
 ![date-selection-in-winui-calendar-date-picker](Getting-Started_images/date-selection-in-winui-calendar-date-picker.gif)
 
@@ -184,7 +184,7 @@ private void SfCalendarDatePicker_CalendarItemPrepared(object sender, CalendarIt
 
 ## Highlight today and selected dates
 
-You can use the [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectionHighlightMode) property to update the background and border of the dates in a drop-down calendar by highlighting today and a selected date. The default value of `SelectionHighlightMode` property is **Outline**.
+You can highlight the today and selected date in the drop-down calendar using the [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectionHighlightMode) property to update the background and border of the dates. The default value of `SelectionHighlightMode` property is **Outline**. The default value of `SelectionHighlightMode` property is **Outline**.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}

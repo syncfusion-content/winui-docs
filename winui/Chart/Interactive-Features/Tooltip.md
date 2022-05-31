@@ -13,7 +13,7 @@ The Tooltip feature allows you to display any information over a [`ChartSeries`]
 
 ## Define Tooltip
 
-By default, a small box containing the data points' y values is displayed as the tooltip. The y values vary depending on the [`ChartSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). For example, a single y value is usually displayed in [`Column`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#) and [`BarSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.BarSeries.html#). 
+By default, a small box containing the data points y values is displayed as the tooltip. The y values vary depending on the [`ChartSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). For example, a single y value is usually displayed in [`Column`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#) and [`BarSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.BarSeries.html#). 
 
 The tooltip will be visible if you enable [`ShowTooltip`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property, as shown in the following code sample.
 

@@ -76,7 +76,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-N> If the `SelectedDate` property is used to select a date and `SelectionMode` property value is **Single**. The`SelectedDates` collection property will have only `SelectedDate` property value. 
+N> If the `SelectedDate` property is used to select a date and `SelectionMode` property value is **Single**, then the `SelectedDates` collection property will have only `SelectedDate` property value. 
 
 ![multiple-dates-selection-in-winui-calendar](Images/selection/multiple-dates-selection-in-winui-calendar.png)
 
@@ -101,7 +101,7 @@ sfCalendar.SelectionMode = CalendarSelectionMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
 
-N> If `SelectedDate` property is used to select a date and `SelectionMode` property value is **Multiple**. The`SelectedDates` collection property will have only `SelectedDate` property value. 
+N> If `SelectedDate` property is used to select a date and `SelectionMode` property value is **Multiple**, then the `SelectedDates` collection property will have only `SelectedDate` property value. 
 
 N> The `SelectedDate` property value will be same as the first date value in `SelectedDates` collection and changes with it.
 
@@ -134,7 +134,7 @@ N> Download demo application from [Github](https://github.com/SyncfusionExamples
 
 ## Highlight today and selected date
 
-You can update the background and border of the dates by highlighting the today and selected date with the [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionHighlightMode) property. The default value of `SelectionHighlightMode` property is **Outline**.
+You can highlight the today and selected date using [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionHighlightMode) property to update the background and border of the dates. The default value of `SelectionHighlightMode` property is **Outline**.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
@@ -178,10 +178,5 @@ sfCalendar.SelectionShape = SelectionShape.Rectangle;
 
 ![change-shape-of-today-and-selected-date-in-winui-calendar](Images/selection/change-shape-of-today-and-selected-date-in-winui-calendar.png)
 
-<<<<<<< .mine
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Selection).
 
-=======
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Selection)
-
->>>>>>> .theirs

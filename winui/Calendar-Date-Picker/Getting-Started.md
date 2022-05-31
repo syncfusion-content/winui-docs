@@ -274,7 +274,7 @@ private void SfCalendarDatePicker_SelectedDateChanged(object sender, SelectedDat
 
 Since, the default value of `EditMode` property is **Mask**, each input numbers entered in editor are automatically validated with the `DisplayDateFormat`'s formats and the proper value is assigned in current field. Then, focus will move to next input field of the date format.
 
-If you want to perform the validation after the user completely entered their date inputs, set the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_EditMode) property value as **Normal**. Then, the entered date value is validated with the `DisplayDateFormat` property value by pressing the `Enter` key or lost focus. If the entered value does not match the `DisplayDateFormat` property, the previously selected date value is set to the `SelectedDate` property.
+If you want to perform the validation after the user completely entered their date inputs, set the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_EditMode) property value as **Normal**. Then, the entered date value is validated with the `DisplayDateFormat` property value by pressing the `Enter` key or lost focus. If the entered value does not suit the `DisplayDateFormat` property, the previously selected date value is set to the `SelectedDate` property.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
@@ -304,7 +304,7 @@ The `SelectedDateChanging` event will be triggered as soon as a date is selected
 * `NewDate` - Gets a date, which is currently selected.
 * `Cancel` - Gets or sets whether to cancel the selected date value update.
 
-Users are restricted to select a blackout date from a drop-down menu, but they can provide text input by the editor. Because selecting a blackout date leads to crash, you can cancel the change using the `SelectedDateChanging` event.
+Users are restricted to select a blackout date from a drop-down menu, but you can provide text input by the editor. Because selecting a blackout date leads to crash, you can cancel the change using the `SelectedDateChanging` event.
 
 N> `SelectedDateChanging` event is called before the `SelectedDateChanged` event, when a date is selected.
 

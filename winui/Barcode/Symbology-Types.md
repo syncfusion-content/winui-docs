@@ -182,7 +182,7 @@ The [Code39Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barc
 
 * Allows character set of digits (0-9), upper case alphabets (A-Z), and symbols like space, minus (-), plus (+), period (.), dollar sign ($), slash (/), and percent (%).
 * Always starts and ends with an asterisk (*) symbol, termed as start and stop character.
-* Each character is encoded with 5 bars and 4 spaces, each of which is 3 are wide and 6 are narrow.
+* Each character is encoded with five bars and four spaces where three are wide and six are narrow.
 
 {% tabs %}
 {% highlight xaml %}

@@ -15,7 +15,7 @@ The [WinUI Calendar](https://www.syncfusion.com/winui-controls/calendar) control
 
 ![winui-calendar-control](Images/getting-started/winui-calendar-control.png)
 
-## Key Features
+## Key features
 
 * The calendar supports different cultures and language types.
 * Allows to change the direction of navigation within a view.
