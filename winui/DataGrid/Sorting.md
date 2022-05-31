@@ -52,7 +52,7 @@ N> The [GridColumn.AllowSorting](https://help.syncfusion.com/cr/winui/Syncfusion
 
 End users can sort the column by clicking column header cell. Once the columns get sorted, the sort indicator will be displayed on the right side of the column header.
 
-![WinUI DataGrid Sorting](Sorting-images/winui-datagrid-sorting.png)
+<img src="Sorting-images/winui-datagrid-sorting.png" alt="WinUI DataGrid Sorting" width="100%" Height="Auto"/>
 
 
 ## Sort column in double click
@@ -92,7 +92,7 @@ To apply sorting on multiple columns, user have to click the column header by pr
 
 In the below screen shot, the OrderID column sorted. Then the `CustomerName` column is sorted against the `OrderID` data by clicking column header by pressing <kbd>Ctrl</kbd> key. The sorting state of `OrderID` column is preserved and `CustomerName` column sorted against `OrderID` column.  
 
-![Multi Column Sorting in WinUI DataGrid](Sorting-images/winui-datagrid-multi-sorting.png)
+<img src="Sorting-images/winui-datagrid-multi-sorting.png" alt="Multi Column Sorting in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ### Display sort order
 It is also possible to display sorted order of columns in header by setting [SfDataGrid.ShowSortNumbers](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_ShowSortNumbers) property to `true`. 
@@ -108,7 +108,7 @@ this.sfDataGrid.ShowSortNumbers = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Sorting Orders in WinUI DataGrid](Sorting-images/winui-datagrid-sorting-orders.png)
+<img src="Sorting-images/winui-datagrid-sorting-orders.png" alt="Sorting Orders in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Programmatic sorting
 
@@ -250,7 +250,7 @@ this.sfDataGrid.SortComparers.Add(new SortComparer() { Comparer = new CustomComp
 
 Sorting `CustomerName` column sorts the data using custom comparer available in `SfDataGrid.SortComparers`.
 
-![Custom Sorting in WinUI DataGrid](Sorting-images/winui-datagrid-custom-sorting.png)
+<img src="Sorting-images/winui-datagrid-custom-sorting.png" alt="Custom Sorting in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Sorting the underlying collection 
 
@@ -304,7 +304,7 @@ private object GetOrderSource(OrderInfo source, string name)
 
 [Action](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grids_GridSortColumnsChangingEventArgs_Action) – Gets the action triggered this event.
  
-[Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) – Setting value to `true`, cancels the triggered action.
+[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-6.0) – Setting value to `true`, cancels the triggered action.
  
 [AddedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grids_GridSortColumnsChangingEventArgs_AddedItems) - Gets the list of new `SortColumnDescription’s` that are added.
 
@@ -312,7 +312,7 @@ private object GetOrderSource(OrderInfo source, string name)
  
 [CancelScroll](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grids_GridSortColumnsChangingEventArgs_CancelScroll) - Gets or sets a value that indicates, whether scroll and bring SelectedItem in view after sorting takes place.
 
-You can prevent sorting for the particular column through [GridSortColumnsChangingEventArgs.Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) property of `SortColumnsChanging` event.
+You can prevent sorting for the particular column through [GridSortColumnsChangingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-6.0) property of `SortColumnsChanging` event.
 
 {% tabs %}
 {% highlight c# %}

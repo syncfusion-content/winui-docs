@@ -64,7 +64,7 @@ private void SfDataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEv
 {% endhighlight %}
 {% endtabs %}
 
-![Horizontally Merged Cells in WinUI DataGrid](Merge-Cells_images/winui-datagrid-merged-columns.png)
+<img src="Merge-Cells_images/winui-datagrid-merged-columns.png" alt="Horizontally Merged Cells in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ### Merging cells vertically by fixed range
 
@@ -88,7 +88,7 @@ private void SfDataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEv
 {% endhighlight %}
 {% endtabs %}
 
-![Vertically Merged Cells in WinUI DataGrid](Merge-Cells_images/winui-datagrid-merged-columns.png)
+<img src="Merge-Cells_images/winui-datagrid-merged-rows.png" alt="Vertically Merged Cells in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ### Merging range of cells
 
@@ -111,7 +111,7 @@ private void SfDataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEv
 {% endhighlight %}
 {% endtabs %}
 
-![Range of Cells Merged in WinUI DataGrid](Merge-Cells_images/winui-datagrid-merged-cells.png)
+<img src="Merge-Cells_images/winui-datagrid-merged-cells.png" alt="Range of Cells Merged in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Merging cells based on the content
 
@@ -318,12 +318,15 @@ Master-details view allows you to merge the range of cells using the `QueryCover
 <dataGrid:SfDataGrid x:Name="sfDataGrid" 
                         SelectionUnit="Cell" 
                         NavigationMode="Cell"
+                        GridLinesVisibility="Both"
                         AutoGenerateColumns="True" ColumnSizer="Star"
                         ItemsSource="{Binding Orders}">
     <dataGrid:SfDataGrid.DetailsViewDefinition>
         <dataGrid:GridViewDefinition RelationalColumn="OrderDetails">
             <dataGrid:GridViewDefinition.DataGrid>
-                <dataGrid:SfDataGrid x:Name="firstDetailsViewGrid" AutoGenerateColumns="True" QueryCoveredRange="FirstDetailsViewGrid_QueryCoveredRange" />
+                <dataGrid:SfDataGrid x:Name="firstDetailsViewGrid" AutoGenerateColumns="True" 
+                GridLinesVisibility="Both"
+                QueryCoveredRange="FirstDetailsViewGrid_QueryCoveredRange" />
             </dataGrid:GridViewDefinition.DataGrid>
         </dataGrid:GridViewDefinition>
     </dataGrid:SfDataGrid.DetailsViewDefinition>
@@ -350,7 +353,7 @@ private void FirstDetailsViewGrid_QueryCoveredRange(object sender, GridQueryCove
 {% endhighlight %}
 {% endtabs %}
 
-![Range of Cells Merged in Master-Details View of WinUI DataGrid](Merge-Cells_images/winui-datagrid-merged-cells-in-master-details-view.png)
+<img src="Merge-Cells_images/winui-datagrid-merged-cells-in-master-details-view.png" alt="Range of Cells Merged in Master-Details View of WinUI DataGrid" width="100%" Height="Auto"/>
 
 ### Merging range of parent cells
 
