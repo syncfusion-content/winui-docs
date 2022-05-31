@@ -22,13 +22,13 @@ The following are the API’s in [ChartAxis](https://www.syncfusion.com/winui-co
 
 * [`ArrangeRect`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ArrangeRect) – Represents the bounds of chart axis size. 
 * [`VisibleRange`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleRange) – Represent the axis start and end values.
-* [`VisibleLabels`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleLabels) – Represents the axis label collection which are visible in axis.
+* [`VisibleLabels`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleLabels) – Represents the axis label collection, which are visible in axis.
 
-The following topics explains in detail about the axis and its parts:
+The following topics explain in detail about the axis and its parts:
 
 ## Header
 
-In [`ChartAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#) you can define any object as header using [`Header`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_Header) property. The following code example demonstrates the defining header in primary and secondary axis. 
+In [`ChartAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#), you can define any object as header using [`Header`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_Header) property. The following code example demonstrates how to define a header in primary and secondary axes. 
 
 {% tabs %}
 
@@ -65,7 +65,7 @@ chart.SecondaryAxis = new NumericalAxis() { Header = "Values(In Tonnes)" };
 
 **Header** **Customization**
 
-Default appearance of the header can be customized using [`HeaderTemplate`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_HeaderTemplate) property. The following code snippet demonstrates the header customization.
+The default appearance of the header can be customized using the [`HeaderTemplate`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_HeaderTemplate) property. The following code sample demonstrates the header customization.
 
 {% tabs %}
 
@@ -142,7 +142,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 **HeaderStyle**
 
-[`HeaderStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_HeaderStyle) property is used to provide style for the axis header. The following code example explains header style customization.
+[`HeaderStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_HeaderStyle) property is used to provide style for the axis header. The following code example explains how to customize the header style.
 
 {% tabs %}
 
@@ -294,7 +294,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **Custom** **Labels**
 
-SfChart allows user to define the labels for the axis. For defining the axis label you have to set the [`Content`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Content) and [`Position`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Position) property. You can define the labels using [`CustomLabels`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_CustomLabels) property as in the below code snippet.
+`SfChart` allows the user to define the labels for the axis. For defining the axis label, you have to set the [`Content`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Content) and [`Position`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Position) properties. You can define the labels using [`CustomLabels`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_CustomLabels) property as shown in the following code sample.
 
 {% tabs %}
 
@@ -351,7 +351,7 @@ chart.PrimaryAxis = axis;
 ![Axis label customization support in WinUI](Axis_images/Axis_img6.jpeg)
 
 
-You can also directly bind the collection of labels to the [`LabelSource`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelSource) property for defining custom labels. The following code example demonstrates the defining the label collection in code behind and binding the property in XAML page.
+You can also directly bind the collection of labels to the [`LabelSource`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelSource) property for defining custom labels. The following code example demonstrates how to define the label collection in code behind and then bind the property in XAML page.
 
 {% tabs %}
 
@@ -422,7 +422,7 @@ public class LabelItem
 
 **Label** **Formatting**
 
-Axis labels can be formatting by predefined formatting types based on the axis types.
+Axis labels can be formatted using predefined formatting types based on the axis types.
 
 **DateTimeAxis**
 
@@ -488,7 +488,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **LabelTemplate**
 
-[`LabelTemplate`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelTemplate) property allows you to define the appearance for the axis labels, the following code example illustrates the [`LabelTemplate`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelTemplate) property.
+The [`LabelTemplate`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelTemplate) property allows you to define the appearance for the axis labels. The following code example illustrates the [`LabelTemplate`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelTemplate) property.
 
 {% tabs %}
 
@@ -552,7 +552,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 **LabelExtent**
 
-This property allows us to set the distance between the axis header and the axis using [`LabelExtent`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelExtent) property. The following code snippet defines the [`LabelExtent`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelExtent) property.
+This property allows us to set the distance between the axis header and the axis using the [`LabelExtent`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelExtent) property. The following code sample defines the [`LabelExtent`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelExtent) property.
 
 {% tabs %}
 
@@ -586,7 +586,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **Smart** **Axis** **Labels**
 
-When there are more number of axis labels, they may overlap with each other. SfChart provides support to handle the overlapping labels using the [`LabelIntersectAction`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction) property. By default the [`LabelIntersectAction`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction) value is [`Hide`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.AxisLabelIntersectAction.html).
+When there are more number of axis labels, they may overlap with each other. `SfChart` provides support to handle the overlapping labels using the [`LabelIntersectAction`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction) property. By default, the [`LabelIntersectAction`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction) value is [`Hide`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.AxisLabelIntersectAction.html).
 
 The following are the options for intersecting action.
 
@@ -597,7 +597,7 @@ The following are the options for intersecting action.
 
 **None**
 
-None option is used to display all the label even if it intersects. The following code snippet demonstrates the `LabelIntersectAction` as None option.
+None option is used to display all the label, even if it intersects. The following code sample demonstrates the `LabelIntersectAction` as None option.
 
 {% tabs %}
 
@@ -695,7 +695,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **Auto**
 
-This option in [`LabelIntersectAction`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction) property is used to rotate the labels if it intersects. The following code snippet and image demonstrates the rotate option in [`LabelIntersectAction`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction) property.
+This option in [`LabelIntersectAction`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction) property is used to rotate the labels if they intersects. The following code sample and image demonstrate the rotate option in the [`LabelIntersectAction`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction) property.
 
 {% tabs %}
 
@@ -725,7 +725,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 **EdgeLabelsDrawingMode**
 
-SfChart provides support to customize the position of the edge labels in axis using the [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode) property. [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode) property default value is [`Center`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode.html).
+`SfChart` provides support to customize the position of the edge labels in axis using the [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode) property. [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode) property default value is [`Center`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode.html).
 
 The following are the customizing options in [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode).
 
@@ -863,7 +863,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **EdgeLabelsVisibilityMode**
 
-The visibility of the extreme labels of the axis can be controlled using [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) property. By default the [`Default`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode.html) option in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) is set, which displays the edge label based on auto interval calculations. The following image depicts the default option in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) while zooming.
+The visibility of the extreme labels of the axis can be controlled using [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) property. By default, the [`Default`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode.html) option in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) is set, which displays the edge label based on auto interval calculations. The following image depicts the default option in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) while zooming.
 
 ![Axis edge label visibility support in WinUI Chart](Axis_images/Axis_img23.jpeg)
 
@@ -872,7 +872,7 @@ The visibility of the extreme labels of the axis can be controlled using [`EdgeL
 
 AlwaysVisible option in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) is used to view the edge labels even while performing zooming.
 
-The following code example and image demonstrates the `AlwaysVisible` option while zooming.
+The following code example and image demonstrate the `AlwaysVisible` option while zooming.
 
 {% tabs %}
 
@@ -906,7 +906,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **Visible**
 
-Visible option is used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).
+Visible option is used to display the edge labels (first and last label) irrespective of the auto-interval calculation until zooming (i.e., in normal state).
 
 {% tabs %}
 
@@ -939,7 +939,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ## Grid lines
 
-By default, gridlines are automatically added to the [`ChartAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#) in its defined intervals. SfChart supports customization of gridline. The visibility of the gridlines can be controlled using the [`ShowGridLines`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowGridLines) property.
+By default, gridlines are automatically added to the [`ChartAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#) in its defined intervals. `SfChart` supports customization of gridline. The visibility of the gridlines can be controlled using the [`ShowGridLines`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowGridLines) property.
 
 The following code example illustrates the [`ShowGridLines`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowGridLines) property as false in the primary axis.
 
@@ -973,7 +973,7 @@ chart.PrimaryAxis = new NumericalAxis()
 ![Gridlines customization support in WinUI Chart](Axis_images/Axis_img26.jpeg)
 
 
-Style can also be applied to Major and Minor Gridlines using [`MajorGridLineStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorGridLineStyle) and [`MinorGridLineStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorGridLineStyle) properties.
+Style can also be applied to Major and Minor gridlines using the [`MajorGridLineStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorGridLineStyle) and [`MinorGridLineStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorGridLineStyle) properties.
 
 **MajorGridLineStyle**
 
@@ -1079,11 +1079,11 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ## Tick lines
 
-Tick line are the small lines which is drawn on the axis line representing the axis labels. Tick lines will be drawn outside of the axis by default. 
+Tick lines are the small lines, which is drawn on the axis line representing the axis labels. Tick lines will be drawn outside of the axis by default. 
 
 **TickLineSize**
 
-Tick lines height can be customized using [`TickLineSize`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TickLineSize) property as shown in the below code snippet.
+Tick lines height can be customized using the [`TickLineSize`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TickLineSize) property as shown in the following code sample.
 
 {% tabs %}
 
@@ -1117,7 +1117,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **Positioning** **the** **Major** **Tick** **Lines**
 
-Tick lines can be positioned inside or outside of the chart area using [`TickLinesPosition`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TickLinesPosition) property. By default the tick lines will positioned outside of the chart area. The following code example demonstrates the positioning tick lines inside chart area.
+Tick lines can be positioned inside or outside of the chart area using the [`TickLinesPosition`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TickLinesPosition) property. By default, the tick lines will be positioned outside of the chart area. The following code example demonstrates how to position the tick lines inside of the chart area.
 
 {% tabs %}
 
@@ -1151,7 +1151,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **Customization**
 
-Style can be applied to major tick lines using [`MajorTickLineStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorTickLineStyle) property. The following code snippet demonstrates the styling of major tick lines.
+Style can be applied to major tick lines using the [`MajorTickLineStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorTickLineStyle) property. The following code sample demonstrates the styling of major tick lines.
 
 {% tabs %}
 
@@ -1205,7 +1205,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **MinorTickLines**
 
-Minor tick lines can be added by defining [`SmallTicksPerInterval`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTicksPerInterval) property. This property will add the tick lines to every interval.
+Minor tick lines can be added by defining the [`SmallTicksPerInterval`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTicksPerInterval) property. This property will add the tick lines to every interval.
 
 The following code example demonstrates the small ticks set for every interval.
 
@@ -1243,9 +1243,9 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **Positioning** **the** **minor** **tick** **lines**
 
-Minor tick lines can be positioned inside or outside using [`SmallTickLinesPosition`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTickLinesPosition) property. By default the minor tick lines will be positioned outside.
+Minor tick lines can be positioned inside or outside using the [`SmallTickLinesPosition`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTickLinesPosition) property. By default, the minor tick lines will be positioned outside.
 
-The following code example demonstrates the positioning of minor tick lines inside the chart area.
+The following code example demonstrates how to position the minor tick lines inside the chart area.
 
 {% tabs %}
 
@@ -1281,7 +1281,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **Customization** **of** **Minor** **Ticklines**
 
-The height of the minor tick lines can be customized using [`SmallTickLineSize`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTickLineSize) property as shown in the below code snippet.
+The height of the minor tick lines can be customized using the [`SmallTickLineSize`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTickLineSize) property as shown in the following code sample.
 
 {% tabs %}
 
@@ -1316,7 +1316,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ![Ticklines customization support in WinUI Chart](Axis_images/Axis_img34.jpeg)
 
-Styling customization of minor tick lines can be defined using [`MinorTickLineStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorTickLineStyle) property. The following code example and image demonstrates the style for minor tick lines.
+Styling customization of minor tick lines can be defined using the [`MinorTickLineStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorTickLineStyle) property. The following code example and image demonstrates the style for minor tick lines.
 
 {% tabs %}
 
@@ -1380,7 +1380,7 @@ N> For category axis, small tick lines is not applicable since it is rendered ba
 
 ## AxisLine
 
-SfChart provides support to customize the style of the axis line by defining the [`AxisLineStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineStyle) property as shown in the below code snippet.
+`SfChart` provides support to customize the style of the axis line by defining the [`AxisLineStyle`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineStyle) property as shown in the following code sample.
 
 {% tabs %}
 
@@ -1430,7 +1430,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **Applying** **Padding** **to** **the** **Axis** **line**
 
-The padding to the axis line is defined using [`AxisLineOffset`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineOffset) property. The following code example demonstrates the setting [`AxisLineOffset`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineOffset) for x axis.
+The padding to the axis line is defined using the [`AxisLineOffset`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineOffset) property. The following code example demonstrates how to set [`AxisLineOffset`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineOffset) for the x-axis.
 
 {% tabs %}
 
@@ -1463,17 +1463,17 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ## Types of Axis
 
-[`ChartAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#) supports the following types.
+[`ChartAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#) supports the following types:
 
 * NumericalAxis
 * CategoryAxis
 * DateTimeAxis
 
-You can choose any type of [`ChartAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#), like [`DateTimeAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#), [`NumericalAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#), [`CategoryAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#) depending on the value type. 
+You can choose any type of [`ChartAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#) such as[`DateTimeAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#), [`NumericalAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#), or [`CategoryAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#) depending on the value type. 
 
 ### NumericalAxis
 
-[`NumericalAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#) is used to plot numerical values to the chart. [`NumericalAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#) can be defined for both [`PrimaryAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) and [`SecondaryAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis). The following code snippet shows how to define the [`NumericalAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#).
+[`NumericalAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#) is used to plot numerical values to the chart. [`NumericalAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#) can be defined for both [`PrimaryAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) and [`SecondaryAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis). The following code sample shows how to define the [`NumericalAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#).
 
 {% tabs %}
 
@@ -1512,7 +1512,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 **Customizing** **the** **NumericalAxis** **Range**
 
-[`Maximum`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Maximum) property used for setting the maximum value for the axis range and [`Minimum`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Minimum) property is used for setting the minimum value for the axis range.
+The [`Maximum`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Maximum) property is used for setting the maximum value for the axis range and [`Minimum`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Minimum) property is used for setting the minimum value for the axis range.
 
 {% tabs %}
 
@@ -1548,11 +1548,11 @@ chart.SecondaryAxis = new NumericalAxis()
 ![NumericalAxis customization support in WinUI Chart](Axis_images/Axis_img43.jpeg)
 
 
-N> If  minimum or maximum value is set, the other value is calculated by default internally.
+N> If minimum or maximum value is set, the other value is calculated by default internally.
 
 **StartRangeFromZero**
 
-[`NumericalAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#) will calculate the range based on the data points binded to the axis. To start the range from zero have to define the [`StartRangeFromZero`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_StartRangeFromZero) property to True. The following code example demonstrates the NumericalAxis range starting from zero.
+[`NumericalAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#) will calculate the range based on the data points bound to the axis. To start the range from zero, set the [`StartRangeFromZero`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_StartRangeFromZero) property to True. The following code example demonstrates the NumericalAxis range starting from zero.
 
 {% tabs %}
 
@@ -1617,7 +1617,7 @@ chart.PrimaryAxis = new CategoryAxis();
 
 **LabelPlacement**
 
-In [`CategoryAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#), labels is placed based on tick lines using [`LabelPlacement`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_LabelPlacement) property. By default the labels is placed [`OnTicks`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.LabelPlacement.html). The following code example demonstrates placing the label between ticks in [`CategoryAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#)
+In [`CategoryAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#), labels are placed based on tick lines using the [`LabelPlacement`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_LabelPlacement) property. By default, the labels are placed [`OnTicks`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.LabelPlacement.html). The following code example demonstrates how to place the label between ticks in [`CategoryAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#).
 
 {% tabs %}
 
@@ -1651,7 +1651,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 **IsIndexed**
 
-By default, [`CategoryAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) plots the values based on the index of the data points. However, the [`CategoryAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) can be made to plot the data points based on its data, instead of index value by disabling the [`IsIndexed`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_IsIndexed) property of [`CategoryAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CategoryAxis.html), and it is shown in the following code example.
+By default, [`CategoryAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) plots the values based on the index of the data points. However, by disabling the [`IsIndexed`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_IsIndexed) property of the [`CategoryAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CategoryAxis.html), it is possible to make the [`CategoryAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) plot the data points based on their data rather than their index value, and it is shown in the following code example.
 
 {% tabs %}
 
@@ -1679,11 +1679,11 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-The following screenshot illustrates the series with IsIndexed value as False.
+The following screenshot illustrates the series with the IsIndexed value as False.
 
 ![Axis label IsIndexed support in WinUI Chart](Axis_images/isindexed_false.png)
 
-By default, the IsIndexed property value is true, and it is shown in following screenshot.
+By default, the IsIndexed property value is true, and it is shown in the following screenshot.
 
 ![Axis label IsIndexed support in WinUI Chart](Axis_images/isindexed_true.png)
 
@@ -1691,7 +1691,7 @@ N> This feature is not applicable for AccumulationSeries, RadarSeries, and Polar
 
 ### DateTimeAxis
 
-[`DateTimeAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#) is used to plot DateTime values. The [`DateTimeAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#) is widely used to make financial charts in places like the Stock Market, where index plotting is done every day.
+[`DateTimeAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#) is used to plot DateTime values. The [`DateTimeAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#) is widely used to make financial charts in places, like the Stock Market, where index plotting is done on a daily basis.
 
 {% tabs %}
 
@@ -1725,7 +1725,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **Customizing** **the** **Range**
 
-[`Minimum`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_Maximum) properties behavior is same as in NumericalAxis instead of setting numerical value, you have to set date time values.
+[`Minimum`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_Maximum) properties behavior is same as in NumericalAxis, but instead of setting numerical values, you have to set date-time values.
 
 {% tabs %}
 
@@ -1767,15 +1767,15 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **Business** **Hours** **Range** **Calculation**
 
-SfChart provides support to plot only the business hours in DateTimeAxis. This support is enabled by setting [`EnableBusinessHours`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_EnableBusinessHours) property to true.
+`SfChart` provides support to plot only the business hours in DateTimeAxis. This support is enabled by setting the [`EnableBusinessHours`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_EnableBusinessHours) property to true.
 
-The following properties are used for business hour range calculation,
+The following properties are used for business hour range calculation:
 
 * [`OpenTime`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_OpenTime)- Represents the open working time of a day.
 * [`CloseTime`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_CloseTime)- Represents the close working time of a day.
 * [`WorkingDays`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_WorkingDays)- Represents the working [`days`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.Day.html) of a week.
 
-The following code snippet demonstrates the business hours support in DateTimeAxis.
+The following code sample demonstrates the business hours support in DateTimeAxis.
 
 {% tabs %}
 
@@ -1844,11 +1844,11 @@ this.Chart.SecondaryAxis.IsInversed = true;
 
 ## Customizing the Intervals
 
-[`ChartAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#) calculates the range and intervals automatically based on the data points. The axis range and interval can be defined using the [`Minimum`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Minimum), [`Maximum`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Maximum) and [`Interval`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Interval) properties.
+[`ChartAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#) calculates the range and intervals automatically based on the data points. The axis range and interval can be defined using the [`Minimum`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Minimum), [`Maximum`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Maximum), and [`Interval`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Interval) properties.
 
 **NumericalAxis**
 
-The following code snippet demonstrates the [`Interval`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Interval) customization in NumericalAxis.
+The following code sample demonstrates the [`Interval`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Interval) customization in NumericalAxis.
 
 {% tabs %}
 
@@ -1882,7 +1882,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 **CategoryAxis**
 
-The following code snippet demonstrates the [`Interval`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_Interval) customization in CategoryAxis.
+The following code sample demonstrates the [`Interval`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_Interval) customization in CategoryAxis.
 
 {% tabs %}
 
@@ -1917,7 +1917,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 The DateTimeAxis [`Interval`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_Interval) value corresponds to the type specified in the [`IntervalType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) property.
 
-For instance, if the [`Interval`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_Interval) is set as 2 and [`IntervalType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) is set as [`Days`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), the labels are plotted for every two days. The following are the options for [`IntervalType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) property
+For instance, if the [`Interval`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_Interval) is set to two and [`IntervalType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) is set to [`Days`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), the labels are plotted for every two days. The following are the options for [`IntervalType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) property.
 
 * Auto
 * Days
@@ -1928,9 +1928,9 @@ For instance, if the [`Interval`](https://help.syncfusion.com/cr/WinUI/Syncfusio
 * Seconds
 * Years
 
-The default [`IntervalType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) of a [`DateTimeAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#) is Auto. It calculates the type automatically and the interval, accordingly.
+The default [`IntervalType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) of a [`DateTimeAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#) is Auto. It calculates the type and the interval automatically.
 
-The following code snippet demonstrates the DateTimeAxis having one month interval.
+The following code snippet demonstrates the DateTimeAxis with a one-month interval.
 
 {% tabs %}
 
@@ -2082,14 +2082,14 @@ The [`RangePadding`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Cha
 
 **Auto**
 
-By default the date time range padding is [`Auto`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html).
+By default, the date-time range padding is [`Auto`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html).
 
 ![DateTimeAxis range padding support in WinUI Chart](Axis_images/Axis_img61.jpeg)
 
 
 **Additional**
 
-When [`RangePadding`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#), the DateTime interval of the axis is added as padding, as shown in the following screenshot.
+When you use [`RangePadding`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#), the DateTime interval of the axis is added as padding, as shown in the following screenshot.
 
 {% tabs %}
 
@@ -2159,7 +2159,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 When the [`RangePadding`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for a [`DateTimeAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#) is [`None`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html).
 
-The following screenshot demonstrates a chart’s x-axis with `RangePadding` set to `None`. 
+The following screenshot demonstrates a chart’s x-axis with `RangePadding` set to `None.` 
 
 {% tabs %}
 
@@ -2456,7 +2456,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **RoundStart**
 
-If [`RangePadding`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`NumericalAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#) is set to [`RoundStart`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalPadding.html), rounds the range of the chart axis in the start to the nearest possible value.
+If [`RangePadding`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`NumericalAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#) is set to [`RoundStart`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalPadding.html), the chart axis range is rounded to the nearest possible value.
 
 The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`RoundStart`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
 
@@ -2492,7 +2492,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **RoundEnd**
 
-If [`RangePadding`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`NumericalAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#) is set to [`RoundEnd`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalPadding.html), rounds the range of the chart axis in the end to the nearest possible value.
+If [`RangePadding`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`NumericalAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#) is set to [`RoundEnd`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalPadding.html), the chart axis range is rounded to the nearest possible value at the end.
 
 The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`RoundEnd`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
 
@@ -2600,7 +2600,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ##  Applying Padding to the Axis
 
-[`PlotOffset`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_PlotOffset) property is used to provide padding to the axis. The following code snippet demonstrates the padding applied to both x and y axes.
+[`PlotOffset`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_PlotOffset) property is used to provide padding to the axis. The following code sample demonstrates the padding applied to both x and y axes.
 
 {% tabs %}
 
@@ -2648,7 +2648,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ### PlotOffsetStart
 
-[`PlotOffsetStart`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_PlotOffsetStart) property is used to provide padding to the axis at start position. The following code snippet demonstrates the padding applied to start position for both x and y axes.
+[`PlotOffsetStart`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_PlotOffsetStart) property is used to provide padding to the axis at start position. The following code sample demonstrates the padding applied to start position for both x and y axes.
 
 {% tabs %}
 
@@ -2696,7 +2696,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ### PlotOffsetEnd
 
-[`PlotOffsetEnd`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_PlotOffsetEnd) property is used to provide padding to the axis at end position. The following code snippet demonstrates the padding applied to end position for both x and y axes.
+[`PlotOffsetEnd`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_PlotOffsetEnd) property is used to provide padding to the axis at end position. The following code sample demonstrates the padding applied to end position for both x and y axes.
 
 {% tabs %}
 
@@ -2748,7 +2748,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ### AutoScrollingDeltaType
 
-In [`DateTimeAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html), you can apply auto scrolling delta value in [`Years`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), [`Months`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), [`Days`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), [`Hours`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), [`Minutes`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), [`Seconds`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html) and [`Milliseconds`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html) by setting the [`AutoScrollingDeltaType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_AutoScrollingDeltaType) property. The default value of this property is [`Auto`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), and the delta will be calculated automatically based on range.
+In [`DateTimeAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html), you can apply auto scrolling delta value in [`Years`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), [`Months`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), [`Days`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), [`Hours`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), [`Minutes`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), [`Seconds`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), and [`Milliseconds`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html) by setting the [`AutoScrollingDeltaType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_AutoScrollingDeltaType) property. The default value of this property is [`Auto`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), and the delta will be calculated automatically based on range.
 
 {% tabs %} 
 
@@ -2807,7 +2807,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 ## Auto Interval Calculation on Zooming
 
-[`EnableAutoIntervalOnZooming`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EnableAutoIntervalOnZooming) property is used to maintain the interval even it is in zooming state only if we set the interval to the axis. Default value of this property is true. While zooming based on the auto range padding the interval will be calculated.
+[`EnableAutoIntervalOnZooming`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EnableAutoIntervalOnZooming) property is used to maintain the interval, even if it is in a zooming state, only if we set the interval to the axis. The default value of this property is true. While zooming based on the auto-range padding the interval will be calculated.
 
 ![Auto interval on zooming support in WinUI](Axis_images/Axis_img70.jpeg)
 
@@ -2848,9 +2848,9 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ## Multiple Axes
 
-SfChart provides a way to arrange multiple series inside the same chart area, giving the chart more space than x-axis and y-axis. These axes can be arranged in a stacking order or in a side by side pattern.
+SfChart provides a way to arrange multiple series inside the same chart area, giving the chart more space than the x-axis and y-axis. These axes can be arranged in a stacking order or in a side by side pattern.
 
-By default, all the series are plotted based on primary and secondary axis. You can add more axes by adding additional axis to the series. There are two properties [`XAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_XAxis) and [`YAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_YAxis) in all the series type which is used to provide Multiple axes support, except [`CircularSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html), [`PyramidSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.PyramidSeries.html), and [`FunnelSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.FunnelSeries.html).
+By default, all the series are plotted based on primary and secondary axis. You can add more axes by adding additional axis to the series. There are two properties [`XAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_XAxis) and [`YAxis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_YAxis) in all the series type, which is used to provide Multiple axes support, except [`CircularSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html), [`PyramidSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.PyramidSeries.html), and [`FunnelSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.FunnelSeries.html).
 
 {% tabs %}
 
@@ -2929,7 +2929,7 @@ chart.Series.Add(series2);
 
 ![Multiple axes support in WinUI Chart](Axis_images/Axis_img72.jpeg)
 
-In the above screenshot, the LineSeries is plotted based on additional X & Y axes, and ColumnSeries (or remaining series) is plotted based on the primary and secondary axes.
+In the above screenshot, the LineSeries is plotted based on additional X and Y axes, and ColumnSeries (or remaining series) is plotted based on the primary and secondary axes.
 
 ## Events
 
@@ -2945,7 +2945,7 @@ The [`ActualRangeChanged`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xa
 
 ### LabelCreated
 
-The [`LabelCreated`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html) event occurs when the axis label is created. This argument contains [`AxisLabel`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.LabelCreatedEventArgs.html#Syncfusion_UI_Xaml_Charts_LabelCreatedEventArgs_AxisLabel) of [`ChartAxisLabel`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html), which contains the following properties.
+The [`LabelCreated`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html) event occurs when the axis label is created. This argument contains [`AxisLabel`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.LabelCreatedEventArgs.html#Syncfusion_UI_Xaml_Charts_LabelCreatedEventArgs_AxisLabel) of [`ChartAxisLabel`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html), which has the following properties:
 
 * [`Content`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Content) - Gets or sets the content of label.
 * [`Position`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Position) - Gets or sets the position of label.
@@ -2959,7 +2959,7 @@ The [`AxisBoundsChanged`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xam
 
 ### LabelClicked
 
-The [`LabelClicked`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html) event is triggered when labels are clicked. The argument contains [`Label`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.AxisLabelClickedEventArgs.html#Syncfusion_UI_Xaml_Charts_AxisLabelClickedEventArgs_Label) of [`ChartAxisLabel`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html), which contains the following properties.
+The [`LabelClicked`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html) event is triggered when labels are clicked. The argument contains [`Label`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.AxisLabelClickedEventArgs.html#Syncfusion_UI_Xaml_Charts_AxisLabelClickedEventArgs_Label) of [`ChartAxisLabel`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html), which has the following properties.
 
 * [`Content`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Content) - Gets the content of label.
 * [`Position`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Position) - Gets the position of label.

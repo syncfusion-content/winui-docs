@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Badge
 
-This section explains the steps required to add the [WinUI Badge](https://www.syncfusion.com/winui-controls/badge) control and its elements such as shapes, alignment and predefined colors. This section covers only basic features needed to get started with Syncfusion `Badge` control.
+This section explains the steps required to add the [WinUI Badge](https://www.syncfusion.com/winui-controls/badge) control and its elements such as shapes, alignment, and predefined colors. This section covers only basic features needed to get started with Syncfusion `Badge` control.
 
 ## Structure of Badge control
 
@@ -75,7 +75,7 @@ namespace GettingStarted
 
 If you want to assign `Badge` for any objects, create the `Badge` and assign the badge to the `BadgeContainer.Badge` property. Before that you need to create a `BadgeContainer` and add that object to the `BadgeContainer.Content` property.
 
-Here, `Badge` control added for the `Button` control.
+Here, the `Badge` control has been added for the `Button` control.
 
 {% tabs %}
 {% highlight XAML %}
@@ -109,7 +109,7 @@ badgeContainer.Badge = badge;
 
 ![Badge added to the Button control](Getting-Started_images/Adding_Badge.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Getting_Started)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Getting_Started).
 
 ## Setting Badge display content
 
@@ -147,7 +147,7 @@ badgeContainer.Badge = badge;
 
 ![Badge display content changed](Getting-Started_images/Change_BadgeContent.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Content_CustomUI)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Content_CustomUI).
 
 ## Alignment of Badge
 
@@ -181,11 +181,11 @@ badge.Content = "99+";
 
 ![Alignment of the Badge control is changed](Getting-Started_images/Alignment.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features).
 
 ## Positioning of Badge
 
-You can change the horizontal or vertical position of the `Badge` either inside, outside or in the middle by using the [HorizontalAnchor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalAnchor) and [VerticalAnchor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalAnchor) properties. The default value of `HorizontalAnchor` and `VerticalAnchor` properties is `Center`.
+You can change the horizontal or vertical position of the `Badge` either inside, outside, or in the middle by using the [HorizontalAnchor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalAnchor) and [VerticalAnchor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalAnchor) properties. The default value of `HorizontalAnchor` and `VerticalAnchor` properties is `Center`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -215,9 +215,9 @@ badge.Content = "99+";
 
 ![Position of the Badge control is changed](Getting-Started_images/Anchor.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features).
 
-## Place the Badge any where on the container
+## Place the Badge anywhere on the container
 
 If you want to place the `Badge` anywhere on the container, use the [HorizontalPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalPosition) or [VerticalPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalPosition) properties. The value range for `HorizontalPosition` and `VerticalPosition` properties is `0` to `1`. The default value of `HorizontalPosition` property is `1` and `VerticalPosition` property is `0`.
 
@@ -251,11 +251,11 @@ badge.VerticalPosition = 0.8;
 
 ![Displaying the customized alignment of the Badge control](Getting-Started_images/Custom_Alignment.png)
 
-## Adding badge without BadgeContainer
+## Adding Badge without BadgeContainer
 
 You can directly add the `Badge` to any objects without using the `BadgeContainer`.
 
-N> By default, `Badge` will automatically aligned and positioned inside the container based on its content. If you use `Badge` control without `BadgeContainer`, alignment and positioning options are not applicable.
+N> By default, `Badge` will be automatically aligned and positioned inside the container based on their content. If you use `Badge` control without `BadgeContainer`, the alignment and positioning options are not applicable.
 
 {% tabs %}
 {% highlight C# %}
@@ -330,27 +330,27 @@ public class ViewModel {
 
 ![Badge added for ListView Items](Getting-Started_images/badge_withoutBadgeContainer.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_without_BadgeContainer)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_without_BadgeContainer).
 
 ## Predefined colors for displaying the badges
 
 You can change background color of the `Badge` by using the [Fill](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_Fill) property. Based on the value of `Fill` property, respective background color will be applied to the `Badge`. The default value of `Fill` property is `Accent`.
 
-The `Badge` supports the following different essential states :
+The `Badge` supports the following different essential states:
 
-* Accent - RoyalBlue background will be applied
+* Accent - RoyalBlue background will be applied.
 
-* Alt - DarkSlateGray background will be applied
+* Alt - DarkSlateGray background will be applied.
 
-* Default - Lavender background will be applied
+* Default - Lavender background will be applied.
 
-* Error - OrangeRed background will be applied
+* Error - OrangeRed background will be applied.
 
-* Information - LightSeaGreen background will be applied
+* Information - LightSeaGreen background will be applied.
 
-* Success - Green background will be applied
+* Success - Green background will be applied.
 
-* Warning - Orange background will be applied
+* Warning - Orange background will be applied.
 
 ![Displaying the various state colors for Badge](Getting-Started_images/States.png)
 
@@ -380,13 +380,13 @@ badge.Content = "99+";
 
 ![Displaying the Success state of Badge](Getting-Started_images/Information_States.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features).
 
 N> If you want to apply your own customized colors for the background of `Badge`, refer the [Custom colors for displaying the badges](https://help.syncfusion.com/winui/badge/badge-customization#custom-colors-for-displaying-the-badge) page.
 
 ## Predefined shapes for displaying the Badge
 
-You can change the default shape to either `Rectangle`, `Oval` or `Ellipse` by using [Shape](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_Shape) property. If you want to display the `Badge` content without any default shapes , use the `Shape` property value as `None`. The default value of `Shape` property is `Oval`.
+You can change the default shape to either `Rectangle`, `Oval`, or `Ellipse` by using [Shape](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_Shape) property. If you want to display the `Badge` content without any default shapes, use the `Shape` property value as `None`. The default value of `Shape` property is `Oval`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -414,13 +414,13 @@ badge.Content = "99+";
 
 ![Displaying the different default Badge shapes](Getting-Started_images/Default_Shape.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features).
 
 N> If you want to apply your own customized shapes for the `Badge`, refer the [Custom shape for displaying the Badge](https://help.syncfusion.com/winui/badge/badge-customization#custom-shape-for-displaying-the-badge) page.
 
 ## Animate when content changes
 
-You can enable the `Scale` or `Opacity` based animation for displaying the `Badge` text by using [AnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_AnimationType) property. You can only see the animation when you change the text of the `Badge`. The default value of `AnimationType` property is `None`.
+You can enable the `Scale` or `Opacity` based animation to display the `Badge` text by using [AnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_AnimationType) property. You can only see the animation when you change the text of the `Badge`. The default value of `AnimationType` property is `None`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -455,11 +455,11 @@ badge.Content = "1";
 
 ![Displaying the Badge with opacity based animation](Getting-Started_images/Opacity_animation.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features).
 
-## Custom Content Formats
+## Custom content formats
 
-You can format the content which is displayed in the `Badge` content by using the converters. For example, you can display the number as `99+` which is greater than or equal to `100`.
+You can format the content displayed in the `Badge` content by using the converters. For example, you can display the number as `99+`, which is greater than or equal to `100`.
 
 {% tabs %}
 {% highlight C# %}
@@ -541,4 +541,4 @@ public class CustomNumberConverter : IValueConverter {
 
 ![Number formatting for the Badge content](Getting-Started_images/number.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Content_CustomUI)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Content_CustomUI).
