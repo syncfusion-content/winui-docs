@@ -9,11 +9,11 @@ documentation: ug
 
 # UI customization of the WinUI Calendar (SfCalendar)
 
-This section describes about the various customization options available in [Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control.
+This section describes about the various customization options available in the [Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control.
 
 ## Hide days that are out of scope
 
-You can hide the days that are out of the scope of current view by setting the [OutOfScopeVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_OutOfScopeVisibility) property value as **Hidden**. The default value of `OutOfScopeVisibility` property is **Enabled**.
+You can hide the days that are out of scope of the current view by setting the [OutOfScopeVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_OutOfScopeVisibility) property value as **Hidden**. The default value of `OutOfScopeVisibility` property is **Enabled**.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
@@ -33,9 +33,9 @@ sfCalendar.OutOfScopeVisibility = OutOfScopeVisibility.Hidden;
 
 ![hide-leading-trailing-days-in-winui-calendar](Images/UI-customization/hide-leading-trailing-days-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction).
 
-## Custom UI for specific cell in Calendar
+## Custom UI for specific cell in calendar
 
 You can change the UI of specific cells in `Calendar` by using the [CalendarItem.ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItem.html) property. The `DataContext` of `CalendarItem.ContentTemplate` is `Calendar`. 
 
@@ -169,7 +169,7 @@ public class EventDataConverter : IValueConverter
 
 ![ui-customation-for-specific-cell-in-winui-calendar](Images/UI-customization/ui-customation-for-specific-cell-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/CustomUI)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/CustomUI).
 
 ## Customize using theme keys
 
@@ -280,4 +280,4 @@ You can customize the colors of day names and headers of month, year, decade and
 
 ![customize-ui-using-theme-keys-in-winui-calendar](Images/UI-customization/customize-ui-using-theme-keys-in-winui-calendar.png)
 
-N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/CustomUI)
+N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/CustomUI).

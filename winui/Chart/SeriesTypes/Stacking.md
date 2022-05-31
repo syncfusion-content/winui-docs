@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stacked in WinUI Chart control | Syncfusion
-description: Learn here all about Stacked support in Syncfusion WinUI Chart(SfChart) control with stacked line chart types support and more.
+description: Learn here all about Stacked support in Syncfusion WinUI Chart (SfChart) control with stacked line chart types support and more.
 platform: WinUI
 control: SfChart
 documentation: ug
@@ -170,7 +170,7 @@ chart.Series.Add(series3);
 
 [`StackedColumnSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.StackedColumnSeries.html#) resembles multiple types of ColumnSeries. Each series is vertically stacked one above the other. When there is only one series, then it is ColumnSeries. 
 
-The following code example illustrates how to use StackedColumnSeries:
+The following code example illustrates how to use StackedColumnSeries.
 
 {% tabs %}
 
@@ -308,7 +308,7 @@ chart.Series.Add(series3);
 
 ## Stacked Bar
 
-[`StackedBarSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.StackedBarSeries.html#) is a multiple series type of BarSeries. Each BarSeries is then stacked horizontally, side by side to each other. When there exists only one series, it resembles a simple BarSeries. 
+[`StackedBarSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.StackedBarSeries.html#) is a multiple series type of BarSeries. Each BarSeries is then stacked horizontally, side by side to each other. When only one series exists, it resembles a simple BarSeries. 
 
 {% tabs %}
 
@@ -453,7 +453,7 @@ chart.Series.Add(series3);
 
 ## Stacked Area
 
-[`StackedAreaSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.StackedAreaSeries.html#) is representing areas stacked vertically one above the other. 
+[`StackedAreaSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.StackedAreaSeries.html#) represents areas stacked vertically one above the other. 
 
 {% tabs %}
 
@@ -524,7 +524,7 @@ chart.Series.Add(series3);
 
 StackedArea100Series is similar to StackedAreaSeries, but the cumulative portion of each stacked element always totals 100%. 
 
-The following code example shows the way to add Stacked area 100 series:
+The following code example shows how to add stacked area 100 series.
 
 {% tabs %}
 
@@ -591,7 +591,7 @@ chart.Series.Add(series3);
 
 ![StackedArea100 chart type in WinUI](Series_images/stackedarea100_chart.png)
 
-You can draw open curve like Area using this [`IsClosed`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.StackedAreaSeries.html#Syncfusion_UI_Xaml_Charts_StackedAreaSeries_IsClosed) property.
+You can draw open curve like Area using the [`IsClosed`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.StackedAreaSeries.html#Syncfusion_UI_Xaml_Charts_StackedAreaSeries_IsClosed) property.
 
 {% tabs %}
 
