@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in WinUI Badge control | Syncfusion
-description: Learn here all about Customization feature in Syncfusion WinUI Badge control with more colors, shapes, UI custom support.
+description: Learn here all about Customization feature in Syncfusion WinUI Badge control with more colors, shapes, and UI custom support.
 platform: WinUI
 control: SfBadge
 documentation: ug
@@ -13,9 +13,9 @@ This section explains the customization features available in the WinUI [Badge](
 
 ## Custom colors for displaying the Badge
 
-If you want to change the background color of the `Badge` other than the default `Fill` colors, use the `Background` property. You can also change foreground of the `Badge` by using the `Foreground` property. The default value of `Background` and `Foreground` properties is `null`.
+If you want to change the background color of the `Badge` other than the default `Fill` colors, use the `Background` property. You can also change the foreground of the `Badge` by using the `Foreground` property. The default value of `Background` and `Foreground` properties is `null`.
 
-N> If you change the background color, `Badge` control will automatically assign contrasting foreground to the `Badge` content.
+N> If you change the background color, `Badge` control will automatically assign a contrasting foreground to the `Badge` content.
 
 {% tabs %}
 {% highlight XAML %}
@@ -45,7 +45,7 @@ badge.Content = "99+";
 
 ![Displaying the Badge with custom colors](Getting-Started_images/Custom_Color.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Control)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Control).
 
 ## Custom shape for displaying the Badge
 
@@ -74,11 +74,11 @@ If you want to change the shape of the `Badge` other than the default shapes, us
 
 ![Displaying the custom shape of Badge](Getting-Started_images/Custom_Shape.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features).
 
 ## Custom UI of Badge content
 
-You can change the appearance of `Badge` content by using `ContentTemplate` property. The `DataContext` of `ContentTemplate` property is `Content`.
+You can change the appearance of `Badge` content by using the `ContentTemplate` property. The `DataContext` of `ContentTemplate` property is `Content`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -111,9 +111,9 @@ You can change the appearance of `Badge` content by using `ContentTemplate` prop
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Content_CustomUI)
 
 
-## Custom Content Formats
+## Custom content formats
 
-You can format the content which is displayed in the `Badge` content by using the converters. For example, you can display the number as `99+` which is greater than or equal to `100`.
+You can format the content displayed in the `Badge` content by using the converters. For example, you can display the number as `99+`, which is greater than or equal to `100`.
 
 {% tabs %}
 {% highlight C# %}
@@ -194,7 +194,7 @@ public class CustomNumberConverter : IValueConverter {
 
 ![Number formatting for the Badge content](Getting-Started_images/number.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Content_CustomUI)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Content_CustomUI).
 
 ## Stroke customization
 
@@ -262,7 +262,7 @@ badge.Content = "99+";
 
 ## Change Badge size
 
-By default, the `Badge` control size is automatically allocated based on the content. You can change the size of `Badge` by using the `Width` and `Height` properties. The default value of `Width` property is `40` and `Height` property is `30`.
+By default, the `Badge` control size will be automatically allocated based on the content. You can change the size of `Badge` by using the `Width` and `Height` properties. The default value of `Width` property is `40` and `Height` property is `30`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -292,11 +292,11 @@ badge.Content = "99+";
 
 ![Size of the Badge control is changed](Getting-Started_images/size.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Getting_Started)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Getting_Started).
 
 ## Text formatting
 
-You can change the style, size and font family of the `Badge` display content by using the `FontFamily`, `FontStyle` and `FontSize` properties. The default value of `FontFamily` property is `Segoe UI`, `FontStyle` property is `Normal` and  `FontSize` property is `14`.
+You can change the style, size, and font family of the `Badge` display content by using the `FontFamily`, `FontStyle`, and `FontSize` properties. The default value of `FontFamily` property is `Segoe UI`, `FontStyle` property is `Normal`, and  `FontSize` property is `14`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -390,4 +390,4 @@ badge.Content = "99+";
 
 ![Displaying the Badge with reduced opacity](Getting-Started_images/Opacity.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Control)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Control).

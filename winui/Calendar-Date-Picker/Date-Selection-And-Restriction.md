@@ -26,9 +26,9 @@ sfCalendarDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06
 
 ![programatic-date-selection-in-winui-calendar-date-picker](Getting-Started_images/programatic-date-selection-in-winui-calendar-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction).
 
-You can also change the selected date interactively by selecting a date from dropdown calendar or by entering the date value in editor of `Calendar Date Picker`. You can get the selected date from the `SelectedDate` property.
+You can also change the selected date interactively by selecting a date from the drop-down calendar or by entering the date value in editor of `Calendar Date Picker`. You can get the selected date from the `SelectedDate` property.
 
 ![date-selection-in-winui-calendar-date-picker](Getting-Started_images/date-selection-in-winui-calendar-date-picker.gif)
 
@@ -53,17 +53,17 @@ sfCalendarDatePicker.MaxDate = new DateTimeOffset(new DateTime(2021, 01, 24));
 {% endhighlight %}
 {% endtabs %}
 
-N> When `MinDisplayMode` property value is **Year** and `MinDate` value is **15/01/2021**, selecting the month of minimum date will set the starting date value from the minimum date, i.e., from *January 15, 2021*.
+N> When `MinDisplayMode` property value is set to **Year** and `MinDate` value is set to **15/01/2021**, selecting the month of the minimum date will set the starting date value from the minimum date, i.e., from *January 15, 2021*.
 
 N> The `MinDate` property value should not be greater than the `MaxDate` property value.
 
 ![change-minimum-and-maximum-dates-in-winui-calendar-date-picker](Getting-Started_images/change-minimum-and-maximum-dates-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction).
 
 ## Block dates using BlackoutDates
 
-You can block particular dates from the date selection, by adding respective dates in the [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_BlackoutDates) collection property. The default value of `BlackoutDates` property is **null**.
+You can block particular dates from the date selection by adding respective dates in the [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_BlackoutDates) collection property. The default value of `BlackoutDates` property is **null**.
 
 {% tabs %}
 {% highlight c# tabtitle="ViewModel.cs" %}
@@ -116,13 +116,13 @@ sfCalendarDatePicker.BlackoutDates = (sfCalendarDatePicker.DataContext as ViewMo
 
 ![change-black-out-dates-disabled-dates-in-winui-calendar-date-picker](Getting-Started_images/change-black-out-dates-disabled-dates-in-winui-calendar-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/BlockedDates)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/BlockedDates).
 
 ## Disable dates dynamically (All weekend days)
 
 You can prevent the users from selecting any dates or days (example: all weekend days) by handling the [CalendarItemPrepared](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_CalendarItemPrepared) event and setting [ItemInfo.IsBlackout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemPreparedEventArgs.html#Syncfusion_UI_Xaml_Calendar_CalendarItemPreparedEventArgs_ItemInfo) property value as **true** for those specific dates.
 
-N> You can also change the text to be displayed for specific days or dates in dropdown calendar using `ItemInfo.DisplayText` property.  
+N> You can also change the text displayed for specific days or dates in the drop-down calendar by using the `ItemInfo.DisplayText` property.  
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
@@ -160,9 +160,9 @@ private void SfCalendarDatePicker_CalendarItemPrepared(object sender, CalendarIt
 
 ![change-black-out-dates-to-weekend-dates-in-winui-calendar-date-picker](Getting-Started_images/change-black-out-dates-to-weekend-dates-in-winui-calendar-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/BlockedDates)
+N> Download demo application. from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/BlockedDates)
 
-You can also change the text to be displayed for specific days or dates in `Calendar Date Picker` using [ItemInfo.DisplayText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_DisplayText) property. 
+You can also change the text displayed for specific days or dates in `Calendar Date Picker` using the [ItemInfo.DisplayText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_DisplayText) property. 
 
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="8 9" %}
@@ -184,7 +184,7 @@ private void SfCalendarDatePicker_CalendarItemPrepared(object sender, CalendarIt
 
 ## Highlight today and selected dates
 
-You can highlight the today and selected date in dropdown calendar using [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectionHighlightMode) property to update the background and border of the dates. The default value of `SelectionHighlightMode` property is **Outline**.
+You can highlight the today and selected date in the drop-down calendar using the [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectionHighlightMode) property to update the background and border of the dates. The default value of `SelectionHighlightMode` property is **Outline**. The default value of `SelectionHighlightMode` property is **Outline**.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}

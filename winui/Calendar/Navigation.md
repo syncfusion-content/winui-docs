@@ -9,11 +9,11 @@ documentation: ug
 
 # Navigate between views in WinUI Calendar (SfCalendar)
 
-You can easily navigate to the month, year, decade, or century views to select different dates by clicking the header button. Initially month view is loaded. You can also change the view programmatically by using [DisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_DisplayMode) property.
+You can easily navigate to the month, year, decade, or century views to select different dates by clicking the header button. Initially, month view is loaded. You can also change the view programmatically by using the [DisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_DisplayMode) property.
 
 ## Bring a date into view
 
-You can navigate to the month containing required date using [`SetDisplayDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SetDisplayDate_System_DateTimeOffset_) method. To navigate to the required date of any month or year, pass the **DateTime** value in `SetDisplayDate` method argument.
+You can navigate to the month containing the required date using the [`SetDisplayDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SetDisplayDate_System_DateTimeOffset_) method. To navigate to the required date of any month or year, pass the **DateTime** value in `SetDisplayDate` method argument.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
@@ -35,7 +35,7 @@ private void calendar_Loaded(object sender, RoutedEventArgs e)
 
 ## Restrict navigation between views
 
-You can restrict navigation within a minimum and maximum views by using [MinDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MinDisplayMode) and [MaxDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MaxDisplayMode) properties. This will be useful when your date range is smaller and you don’t want to show century view. By default, the value of `MinDisplayMode` is **Month** and `MaxDisplayMode` is **Century**.
+You can restrict navigation within a minimum and maximum views by using the [MinDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MinDisplayMode) and [MaxDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MaxDisplayMode) properties. This will be useful when your date range is smaller and you do not want to show a century view. By default, the value of `MinDisplayMode` is **Month** and `MaxDisplayMode` is **Century**.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4" %}
@@ -58,7 +58,7 @@ sfCalendar.DisplayMode = CalendarDisplayMode.Month;
 
 ![restrict-view-navigation-in-winui-calendar](Images/navigation/restrict-view-navigation-in-winui-calendar.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction).
 
 ## Selection based on view restriction
 
@@ -106,18 +106,18 @@ sfCalendar.NavigationDirection = Orientation.Horizontal;
 
 ![change-navigation-buttons-in-winui-calendar](Images/navigation/change-navigation-buttons-in-winui-calendar.png)
 
-When the `NavigationDirection` property is **Vertical**, you can navigate within views by mouse scroll or by navigation buttons. When the `NavigationDirection` property is **Horizontal**, you can navigate by navigation buttons only.
+When the `NavigationDirection` property is set to **Vertical**, you can navigate within views using mouse scroll or navigation buttons. When the `NavigationDirection` property is set to **Horizontal**, you can navigate only using navigation buttons.
 
 ![change-navigation-buttons-direction-in-winui-calendar](Images/navigation/change-navigation-buttons-direction-in-winui-calendar.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction).
 
 ## Navigation by keyboard
 
-You can navigate between elements in `Calendar` control by keyboard keys or by mouse interaction. The keyboard keys to navigate and select are listed below.
+You can navigate between elements in the `Calendar` control using keyboard shortcuts or mouse interaction. The following are the list of keyboard shortcuts to navigate and select.
 
 * **Tab** or **Shift+Tab** - To navigate between date cell and elements in header.
-* **UpArrow**,**DownArrow**,**LeftArrow** and **RightArrow** - To navigate between calendar date or month or decade cells.
+* **UpArrow**, **DownArrow**, **LeftArrow**, and **RightArrow** - To navigate between calendar date, month, or decade cells.
 * **Space** or **Enter** - To select a cell.
 * **Ctrl + UpArrow** and **ctrl + DownArrow** - To navigate between views (Example: Navigate from month to year view).
 * **PageUp** and **PageDown** - To navigate within views (Example: Navigate between months).
