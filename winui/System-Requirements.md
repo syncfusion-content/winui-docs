@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# System requirements for WinUI Components
+# System Requirements for WinUI Components
 
 The system requirements for using our Syncfusion WinUI platform are as follows
 
