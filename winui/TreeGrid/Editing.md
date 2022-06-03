@@ -62,7 +62,7 @@ N> `TreeGridColumn.AllowEditing` takes higher priority than `SfTreeGrid.AllowEdi
 
 N> It is mandatory to set the [NavigationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.NavigationMode.html) to Cell to enable CurrentCell navigation and editing.
 
-### Entering into edit mode
+## Entering into edit mode
 
 You can enter into edit mode by pressing <kbd>F2</kbd> key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTab) by setting [SfTreeGrid.EditTrigger](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_EditTrigger) property.
 
@@ -86,7 +86,7 @@ this.treeGrid.EditTrigger = EditTrigger.OnTap;
 {% endhighlight %}
 {% endtabs %}
 
-### Cursor placement
+## Cursor placement
 
 When the cell enters into edit mode, cursor is placed based on [SfTreeGrid.EditorSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_EditorSelectionBehavior) property.
 
