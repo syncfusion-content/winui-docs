@@ -37,3 +37,4 @@ This application was built using a trial version of Syncfusion Essential Studio.
 
 * [How to Generate Syncfusion WinUI License Key?](https://help.syncfusion.com/winui/licensing/generating-license-keys)
 * [How to Register Syncfusion License Key in WinUI Application?](https://help.syncfusion.com/winui/licensing/registering-license-keys)
+

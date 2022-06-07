@@ -134,7 +134,7 @@ SfDataGrid allows you to open filter popup in less time by setting [CanGenerateU
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>    
+<Application.Resources>    
     <Style TargetType="dataGrid:GridFilterControl">
         <Setter Property="FilterMode" Value="AdvancedFilter" />
     </Style>
@@ -142,7 +142,7 @@ SfDataGrid allows you to open filter popup in less time by setting [CanGenerateU
     <Style TargetType="dataGrid:AdvancedFilterControl">
         <Setter Property="CanGenerateUniqueItems" Value="False" />
     </Style>
-</Page.Resources>
+</Application.Resources>
 {% endhighlight %}
 {% endtabs %}
 
