@@ -83,7 +83,7 @@ Ribbon contextual tab groups are used to group the ribbon tabs for easier naviga
 {% tabs %}
 {% highlight xaml %}
 
- <ribbon:SfRibbon.ContextualTabGroups>
+<ribbon:SfRibbon.ContextualTabGroups>
         <ribbon:RibbonContextualTabGroup x:Name="ImageOptions">
             <ribbon:RibbonContextualTabGroup.Tabs>
                 <ribbon:RibbonTab Header="Picture Format">
@@ -98,32 +98,32 @@ Ribbon contextual tab groups are used to group the ribbon tabs for easier naviga
                 <ribbon:RibbonTab Header="Item Design"/>
                 <ribbon:RibbonTab Header="Layout"/>
         </ribbon:RibbonContextualTabGroup>
- </ribbon:SfRibbon.ContextualTabGroups>
- <ToggleButton Click="ImageButton_Click">
+</ribbon:SfRibbon.ContextualTabGroups>
+<ToggleButton Click="ImageButton_Click">
                <Image Source="ms-appx:///Assets/Image.png"/>
- </ToggleButton>
- <GridView ItemsSource="{Binding Employees}"
+</ToggleButton>
+<GridView ItemsSource="{Binding Employees}"
            SelectedItem="{Binding SelectedEmployee, Mode=TwoWay}"
            SelectionChanged="GridView_SelectionChanged"/>
 
 {% endhighlight %} 
 {% highlight c# %}
 
-        private void ImageButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.ImageOptions.Visibility = Visibility.Visible;
-            this.TableOptions.Visibility = Visibility.Collapsed;
-        }
-        private void Grid_PointerPressed(object sender, PointerRoutedEventArgs e)
-        {
-            this.ImageOptions.Visibility = Visibility.Collapsed;
-             this.TableOptions.Visibility = Visibility.Collapsed;
-        }
-        private void GridView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            this.ImageOptions.Visibility = Visibility.Collapsed;
-            this.TableOptions.Visibility = Visibility.Visible;
-        }
+private void ImageButton_Click(object sender, RoutedEventArgs e)
+{
+  this.ImageOptions.Visibility = Visibility.Visible;
+  this.TableOptions.Visibility = Visibility.Collapsed;
+}
+private void Grid_PointerPressed(object sender, PointerRoutedEventArgs e)
+{
+  this.ImageOptions.Visibility = Visibility.Collapsed;
+  this.TableOptions.Visibility = Visibility.Collapsed;
+}
+private void GridView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+{
+  this.ImageOptions.Visibility = Visibility.Collapsed;
+  this.TableOptions.Visibility = Visibility.Visible;
+}
 
 {% endhighlight %} 
 {% endtabs %}
@@ -137,21 +137,21 @@ When the contextual tab group is visible, use the `SelectFirstTabOnVisible` prop
 {% tabs %}
 {% highlight xaml %}
 
-   <ribbon:SfRibbon.ContextualTabGroups>
-        <ribbon:RibbonContextualTabGroup x:Name="TableOptions"
-                                SelectFirstTabOnVisible="True" >
-            <ribbon:RibbonContextualTabGroup.Tabs>
-                <ribbon:RibbonTab Header="Item Design"/>
-                <ribbon:RibbonTab Header="Layout"/>
-            </ribbon:RibbonContextualTabGroup.Tabs>
-        </ribbon:RibbonContextualTabGroup>
-        <ribbon:RibbonContextualTabGroup x:Name="TableOptions"
-                                SelectFirstTabOnVisible="False">
-            <ribbon:RibbonContextualTabGroup.Tabs>
-                <ribbon:RibbonTab Header="Item Design"/>
-                <ribbon:RibbonTab Header="Layout"/>
-        </ribbon:RibbonContextualTabGroup>
-    </ribbon:SfRibbon.ContextualTabGroups>
+<ribbon:SfRibbon.ContextualTabGroups>
+    <ribbon:RibbonContextualTabGroup x:Name="TableOptions"
+                            SelectFirstTabOnVisible="True" >
+        <ribbon:RibbonContextualTabGroup.Tabs>
+            <ribbon:RibbonTab Header="Item Design"/>
+            <ribbon:RibbonTab Header="Layout"/>
+        </ribbon:RibbonContextualTabGroup.Tabs>
+    </ribbon:RibbonContextualTabGroup>
+    <ribbon:RibbonContextualTabGroup x:Name="TableOptions"
+                            SelectFirstTabOnVisible="False">
+        <ribbon:RibbonContextualTabGroup.Tabs>
+            <ribbon:RibbonTab Header="Item Design"/>
+            <ribbon:RibbonTab Header="Layout"/>
+    </ribbon:RibbonContextualTabGroup>
+</ribbon:SfRibbon.ContextualTabGroups>
 
 {% endhighlight %} 
 {% endtabs %}
@@ -173,15 +173,15 @@ The background color of tab groups can be applied using `Background` property. W
 {% tabs %}
 {% highlight xaml %}
 
-   <ribbon:SfRibbon.ContextualTabGroups>
-        <ribbon:RibbonContextualTabGroup x:Name="TableOptions"
-                                        Background="LightGray">
-          <ribbon:RibbonContextualTabGroup.Tabs>
-                <ribbon:RibbonTab Header="Item Design"/>
-                <ribbon:RibbonTab Header="Layout"/>
-          </ribbon:RibbonContextualTabGroup.Tabs>
-        </ribbon:RibbonContextualTabGroup>
-    </ribbon:SfRibbon.ContextualTabGroups>
+<ribbon:SfRibbon.ContextualTabGroups>
+     <ribbon:RibbonContextualTabGroup x:Name="TableOptions"
+                                     Background="LightGray">
+       <ribbon:RibbonContextualTabGroup.Tabs>
+             <ribbon:RibbonTab Header="Item Design"/>
+             <ribbon:RibbonTab Header="Layout"/>
+       </ribbon:RibbonContextualTabGroup.Tabs>
+     </ribbon:RibbonContextualTabGroup>
+</ribbon:SfRibbon.ContextualTabGroups>
 
 {% endhighlight %} 
 {% endtabs %}
@@ -195,15 +195,15 @@ The foreground color of tab groups can be applied using `Foreground` property. W
 {% tabs %}
 {% highlight xaml %}
 
-   <ribbon:SfRibbon.ContextualTabGroups>
-        <ribbon:RibbonContextualTabGroup x:Name="ImageOptions"
-                                SelectFirstTabOnVisible="True"  
-                                Foreground="#950245" >
-            <ribbon:RibbonContextualTabGroup.Tabs>
-                <ribbon:RibbonTab Header="Picture Format"/>
-            </ribbon:RibbonContextualTabGroup.Tabs>
-        </ribbon:RibbonContextualTabGroup>
-    </ribbon:SfRibbon.ContextualTabGroups>
+<ribbon:SfRibbon.ContextualTabGroups>
+     <ribbon:RibbonContextualTabGroup x:Name="ImageOptions"
+                             SelectFirstTabOnVisible="True"  
+                             Foreground="#950245" >
+         <ribbon:RibbonContextualTabGroup.Tabs>
+             <ribbon:RibbonTab Header="Picture Format"/>
+         </ribbon:RibbonContextualTabGroup.Tabs>
+     </ribbon:RibbonContextualTabGroup>
+</ribbon:SfRibbon.ContextualTabGroups>
 
 {% endhighlight %} 
 {% endtabs %}
