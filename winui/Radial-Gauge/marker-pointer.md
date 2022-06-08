@@ -7,9 +7,9 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Marker Pointer in WinUI Radial Gauge
+# Shape Pointer in WinUI Radial Gauge
 
-Indicate current values by using different types of marker pointers. You can change the marker type using the [`MarkerType`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerType) property.
+The `ShapePointer` in `SfRadialGauge` allows you to use any build-in shapes (`ShapeType`) as a pointer to mark a specified value. The default `ShapeType` of the ShapePointer is InvertedTriangle.
 
 {% tabs %}
 
@@ -19,7 +19,7 @@ Indicate current values by using different types of marker pointers. You can cha
     <gauge:SfRadialGauge.Axes>
         <gauge:RadialAxis>
             <gauge:RadialAxis.Pointers>
-                <gauge:MarkerPointer Value="60" />
+                <gauge:ShapePointer Value="60" />
             </gauge:RadialAxis.Pointers>
         </gauge:RadialAxis>
     </gauge:SfRadialGauge.Axes>
@@ -34,9 +34,9 @@ SfRadialGauge sfRadialGauge = new SfRadialGauge();
 RadialAxis radialAxis = new RadialAxis();
 sfRadialGauge.Axes.Add(radialAxis);
 
-MarkerPointer markerPointer = new MarkerPointer();
-markerPointer.Value = 60;
-radialAxis.Pointers.Add(markerPointer);
+ShapePointer shapePointer = new ShapePointer();
+shapePointer.Value = 60;
+radialAxis.Pointers.Add(shapePointer);
 
 this.Content = sfRadialGauge;
 
@@ -44,48 +44,27 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![WinUI Radial Gauge Default Marker Pointer](images/marker-pointers/winui-radial-gauge-default-marker-pointer.png)
+![WinUI Radial Gauge Default Shape Pointer](images/marker-pointers/winui-radial-gauge-default-marker-pointer.png)
 
-Gauge supports the following types of marker:
+Gauge supports the following types of shapes:
 
-* Circle
-* Diamond
-* Image
 * Inverted triangle
-* Rectangle
-* Text
 * Triangle
-* Custom
+* Circle
+* Rectangle
+* Diamond
 
-![WinUI Radial Gauge Markers](images/marker-pointers/winui-radial-gauge-markers.png)
+![WinUI Radial Gauge Shapes](images/marker-pointers/winui-radial-shape-pointer-shapes.png)
 
-## Image pointer
+## Shape customization
 
-Image is used to denote the current pointer values instead of shape. It can be achieved by specifying the [`MarkerType`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerType) as image and specifying the [`ImageSource`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_ImageSource) property of marker pointer.
+The shape pointer can be customized using the following properties:
 
-{% highlight xaml %}
-
-<gauge:SfRadialGauge>
-    <gauge:SfRadialGauge.Axes>
-        <gauge:RadialAxis>
-            <gauge:RadialAxis.Pointers>
-                <gauge:MarkerPointer Value="60"
-                                     MarkerHeight="30"
-                                     MarkerWidth="30"
-                                     MarkerType="Image"
-                                     ImageSource="pin.png"/>
-            </gauge:RadialAxis.Pointers>
-        </gauge:RadialAxis>
-    </gauge:SfRadialGauge.Axes>
-</gauge:SfRadialGauge>
-
-{% endhighlight %}
-
-![WinUI Radial Gauge Image Pointer](images/marker-pointers/winui-radial-gauge-image-pointer.png)
-
-## Text pointer
-
-Text is used to denote the current pointer value instead of any marker shape. It can be achieved by setting the [`MarkerType`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerType) as text and provide required text in [`Text`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_Text) property. The provided text can be customized using the `Foreground`, `FontSize`, `FontWeight` and `FontFamily` properties of marker pointer.
+* `Fill` – Allows to customize the shape color.
+* `ShaperHeight` – Allows to specify the shape height.
+* `ShapeWidth` – Allows to specify the shape width.
+* `Stroke` – Allows to specify the border color for the shape.
+* `StrokeThickness` –  Allows to specify the border width of the shape.
 
 {% tabs %}
 
@@ -95,123 +74,7 @@ Text is used to denote the current pointer value instead of any marker shape. It
     <gauge:SfRadialGauge.Axes>
         <gauge:RadialAxis>
             <gauge:RadialAxis.Pointers>
-                <gauge:MarkerPointer Value="50"
-                                     MarkerHeight="30"
-                                     MarkerWidth="30"
-                                     MarkerType="Text"
-                                     Text="Average"
-                                     FontSize="15"
-                                     FontWeight="SemiBold"
-                                     FontStyle="Italic" />
-            </gauge:RadialAxis.Pointers>
-        </gauge:RadialAxis>
-    </gauge:SfRadialGauge.Axes>
-</gauge:SfRadialGauge>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfRadialGauge sfRadialGauge = new SfRadialGauge();
-
-RadialAxis radialAxis = new RadialAxis();
-sfRadialGauge.Axes.Add(radialAxis);
-
-MarkerPointer markerPointer = new MarkerPointer();
-markerPointer.Value = 50;
-markerPointer.MarkerHeight = 30;
-markerPointer.MarkerWidth = 30;
-markerPointer.MarkerType = Syncfusion.UI.Xaml.Gauges.MarkerType.Text;
-markerPointer.Text = "Average";
-markerPointer.FontSize = 15;
-markerPointer.FontWeight = FontWeights.SemiBold;
-markerPointer.FontStyle = FontStyle.Italic;
-radialAxis.Pointers.Add(markerPointer);
-
-this.Content = sfRadialGauge;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![WinUI Radial Gauge Text Pointer](images/marker-pointers/winui-radial-gauge-text-pointer.png)
-
-## Add customized pointer
-
-You can add customized symbols to denote the current pointer value instead of in-built marker shape. It can be achieved by setting the [`MarkerType`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerType) as [`Custom`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerType.html#Syncfusion_UI_Xaml_Gauges_MarkerType_Custom) and provide required shape in [`MarkerTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerTemplate) property.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<Page.Resources>
-    <DataTemplate x:Key="CustomMarkerPointer">
-        <Grid>
-            <Rectangle Fill="{Binding Background}"
-                       Stroke="{Binding BorderBrush}"
-                       StrokeThickness="{Binding BorderWidth}"
-                       Width="{Binding MarkerWidth}"
-                       Height="{Binding MarkerHeight}"
-                       RadiusX="3"
-                       RadiusY="3" />
-        </Grid>
-    </DataTemplate>
-</Page.Resources>
-
-<gauge:SfRadialGauge>
-    <gauge:SfRadialGauge.Axes>
-        <gauge:RadialAxis>
-            <gauge:RadialAxis.Pointers>
-                <gauge:MarkerPointer Value="60"
-                                     MarkerType="Custom"
-                                     MarkerTemplate="{StaticResource CustomMarkerPointer}"/>
-            </gauge:RadialAxis.Pointers>
-        </gauge:RadialAxis>
-    </gauge:SfRadialGauge.Axes>
-</gauge:SfRadialGauge>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfRadialGauge sfRadialGauge = new SfRadialGauge();
-
-RadialAxis radialAxis = new RadialAxis();
-sfRadialGauge.Axes.Add(radialAxis);
-
-MarkerPointer markerPointer = new MarkerPointer();
-markerPointer.Value = 60;
-markerPointer.MarkerType = Syncfusion.UI.Xaml.Gauges.MarkerType.Custom;
-markerPointer.MarkerTemplate = this.Resources["CustomMarkerPointer"] as DataTemplate;
-radialAxis.Pointers.Add(markerPointer);
-
-this.Content = sfRadialGauge;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![WinUI Radial Gauge Custom Marker](images/marker-pointers/winui-radial-gauge-custom-marker.png)
-
-## Marker customization
-
-The marker pointer can be customized using the following properties:
-
-* `Background` – Allows to customize the marker color.
-* [`MarkerHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerHeight) – Allows to specify the marker height.
-* [`MarkerWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerWidth) – Allows to specify the marker width.
-* `BorderBrush` – Allows to specify the border color for the marker.
-* [`BorderWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_BorderWidth) –  Allows to specify the border width of the marker.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<gauge:SfRadialGauge>
-    <gauge:SfRadialGauge.Axes>
-        <gauge:RadialAxis>
-            <gauge:RadialAxis.Pointers>
-                <gauge:MarkerPointer Value="60"
+                <gauge:ShapePointer Value="60"
                                      MarkerHeight="30"
                                      MarkerWidth="30"
                                      BorderBrush="Black"
@@ -232,15 +95,15 @@ SfRadialGauge sfRadialGauge = new SfRadialGauge();
 RadialAxis radialAxis = new RadialAxis();
 sfRadialGauge.Axes.Add(radialAxis);
 
-MarkerPointer markerPointer = new MarkerPointer();
-markerPointer.Value = 60;
-markerPointer.MarkerHeight = 30;
-markerPointer.MarkerWidth = 30;
-markerPointer.BorderBrush = new SolidColorBrush(Colors.Black);
-markerPointer.BorderWidth = 3;
-markerPointer.MarkerType = Syncfusion.UI.Xaml.Gauges.MarkerType.Circle;
-markerPointer.Background = new SolidColorBrush(Colors.LightBlue);
-radialAxis.Pointers.Add(markerPointer);
+ShapePointer shapePointer = new ShapePointer();
+shapePointer.Value = 60;
+shapePointer.ShapeHeight = 30;
+shapePointer.ShapeWidth = 30;
+shapePointer.Stroke = new SolidColorBrush(Colors.Black);
+shapePointer.StrokeThickness = 3;
+shapePointer.ShapeType = Syncfusion.UI.Xaml.Gauges.MarkerType.Circle;
+shapePointer.Fill = new SolidColorBrush(Colors.LightBlue);
+radialAxis.Pointers.Add(shapePointer);
 
 this.Content = sfRadialGauge;
 
@@ -248,13 +111,13 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![WinUI Radial Gauge Custom Marker Pointer](images/marker-pointers/winui-radial-gauge-custom-marker-pointer.png)
+![WinUI Radial Gauge Custom Shape Pointer](images/marker-pointers/winui-radial-gauge-custom-marker-pointer.png)
 
-## Marker position customization
+## Shape position customization
 
-The marker pointer can be moved near or far from its actual position using the [`MarkerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerOffset) and [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_OffsetUnit) properties. 
+The shape pointer can be moved near or far from its actual position using the `MarkerOffset` and `OffsetUnit` properties. 
 
-When you set [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_OffsetUnit) to pixel, the marker pointer will be moved based on the pixel value. If you set [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_OffsetUnit) to factor, then provided factor will be multiplied with the axis radius value, and then the pointer will be moved to corresponding value. The default value of [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_OffsetUnit) is [`SizeUnit.Pixel`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SizeUnit.html#Syncfusion_UI_Xaml_Gauges_SizeUnit_Pixel).
+When you set `OffsetUnit` to pixel, the shape pointer will be moved based on the pixel value. If you set `OffsetUnit` to factor, then provided factor will be multiplied with the axis radius value, and then the pointer will be moved to corresponding value. The default value of `OffsetUnit` is `SizeUnit.Pixel`.
 
 {% tabs %}
 
@@ -264,7 +127,7 @@ When you set [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
     <gauge:SfRadialGauge.Axes>
         <gauge:RadialAxis>
             <gauge:RadialAxis.Pointers>
-                <gauge:MarkerPointer Value="60"
+                <gauge:ShapePointer Value="60"
                                      MarkerOffset="-18"/>
             </gauge:RadialAxis.Pointers>
         </gauge:RadialAxis>
@@ -280,10 +143,10 @@ SfRadialGauge sfRadialGauge = new SfRadialGauge();
 RadialAxis radialAxis = new RadialAxis();
 sfRadialGauge.Axes.Add(radialAxis);
 
-MarkerPointer markerPointer = new MarkerPointer();
-markerPointer.Value = 60;
-markerPointer.MarkerOffset = -18;
-radialAxis.Pointers.Add(markerPointer);
+ShapePointer shapePointer = new ShapePointer();
+shapePointer.Value = 60;
+shapePointer.MarkerOffset = -18;
+radialAxis.Pointers.Add(shapePointer);
 
 this.Content = sfRadialGauge;
 
@@ -292,3 +155,5 @@ this.Content = sfRadialGauge;
 {% endtabs %}
 
 ![WinUI Radial Gauge Marker Offset](images/marker-pointers/winui-radial-gauge-marker-offset.png)
+
+N> Provide positive value to `MarkerOffset` to move the pointer inside of the axis and negative value to move the pointer outside of the axis.

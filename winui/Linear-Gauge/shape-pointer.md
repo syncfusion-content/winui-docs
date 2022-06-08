@@ -19,7 +19,7 @@ Indicate current values by using the different types of shape pointers. You can 
     <gauge:SfLinearGauge.Axis>
         <gauge:LinearAxis>
             <gauge:LinearAxis.MarkerPointers>
-                <gauge:ShapePointer Value="60" />
+                <gauge:LinearShapePointer Value="60" />
             </gauge:LinearAxis.MarkerPointers>
         </gauge:LinearAxis>
     </gauge:SfLinearGauge.Axis>
@@ -31,7 +31,7 @@ Indicate current values by using the different types of shape pointers. You can 
 
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
 
-ShapePointer shapePointer = new ShapePointer();
+LinearShapePointer shapePointer = new LinearShapePointer();
 shapePointer.Value = 60;
 sfLinearGauge.Axis.MarkerPointers.Add(shapePointer);
 
@@ -49,8 +49,9 @@ Gauge supports the following types of shape pointer:
 * Diamond
 * Inverted triangle
 * Triangle
+* Rectangle
 
-![all default shape pointers](images/shape-pointer/pointer_shapes.png)
+![all default shape pointers](images/shape-pointer/shape_pointer_shapes.png)
 
 ## Custom shape pointer
 
@@ -78,7 +79,7 @@ You can add customized shapes to denote the current pointer value instead of in-
     <gauge:SfLinearGauge.Axis>
         <gauge:LinearAxis>
             <gauge:LinearAxis.MarkerPointers>
-                <gauge:ShapePointer Value="60" 
+                <gauge:LinearShapePointer Value="60" 
                                     ShapeTemplate="{StaticResource CustomShapePointer}"/>
             </gauge:LinearAxis.MarkerPointers>
         </gauge:LinearAxis>
@@ -91,7 +92,7 @@ You can add customized shapes to denote the current pointer value instead of in-
 
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
 
-ShapePointer shapePointer = new ShapePointer();
+LinearShapePointer shapePointer = new LinearShapePointer();
 shapePointer.Value = 60;
 shapePointer.ShapeTemplate = this.Resources["CustomShapePointer"] as DataTemplate;
 sfLinearGauge.Axis.MarkerPointers.Add(shapePointer);
@@ -122,7 +123,7 @@ The shape pointer can be customized using the following properties:
     <gauge:SfLinearGauge.Axis>
         <gauge:LinearAxis>
             <gauge:LinearAxis.MarkerPointers>
-                <gauge:ShapePointer Value="60"
+                <gauge:LinearShapePointer Value="60"
                                     ShapeHeight="30"
                                     ShapeWidth="30"
                                     Fill="LightBlue"
@@ -140,7 +141,7 @@ The shape pointer can be customized using the following properties:
 
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
 
-ShapePointer shapePointer = new ShapePointer();
+LinearShapePointer shapePointer = new LinearShapePointer();
 shapePointer.Value = 60;
 shapePointer.ShapeHeight = 30;
 shapePointer.ShapeWidth = 30;
@@ -174,7 +175,7 @@ To move the pointer outside of the axis, provide negative values.
     <gauge:SfLinearGauge.Axis>
         <gauge:LinearAxis>
             <gauge:LinearAxis.MarkerPointers>
-                <gauge:ShapePointer Value="60"
+                <gauge:LinearShapePointer Value="60"
                                     OffsetPoint="0,-25"/>
             </gauge:LinearAxis.MarkerPointers>
         </gauge:LinearAxis>
@@ -187,7 +188,7 @@ To move the pointer outside of the axis, provide negative values.
 
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
 
-ShapePointer shapePointer = new ShapePointer();
+LinearShapePointer shapePointer = new LinearShapePointer();
 shapePointer.Value = 60;
 shapePointer.OffsetPoint = new Point(0, -25);
 sfLinearGauge.Axis.MarkerPointers.Add(shapePointer);
@@ -212,7 +213,7 @@ You can change the horizontal or vertical position of the shape pointer either s
     <gauge:SfLinearGauge.Axis>
         <gauge:LinearAxis>
             <gauge:LinearAxis.MarkerPointers>
-                <gauge:ShapePointer Value="60"
+                <gauge:LinearShapePointer Value="60"
                                     VerticalAnchor="End"
                                     OffsetPoint="0,-5" />
             </gauge:LinearAxis.MarkerPointers>
@@ -226,7 +227,7 @@ You can change the horizontal or vertical position of the shape pointer either s
 
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
 
-ShapePointer shapePointer = new ShapePointer();
+LinearShapePointer shapePointer = new LinearShapePointer();
 shapePointer.Value = 60;
 shapePointer.VerticalAnchor = GaugeAnchor.End;
 shapePointer.OffsetPoint = new Point(0, -5);

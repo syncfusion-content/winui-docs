@@ -19,8 +19,8 @@ Highlight values using an image, icon, text, or any other custom view. You can s
     <gauge:SfLinearGauge.Axis>
         <gauge:LinearAxis>
             <gauge:LinearAxis.MarkerPointers>
-                <gauge:ContentPointer Value="60">
-                    <gauge:ContentPointer.Content>
+                <gauge:LinearContentPointer Value="60">
+                    <gauge:LinearContentPointer.Content>
                         <Grid Background="Orange"
                               BorderBrush="Black"
                               BorderThickness="1"
@@ -28,8 +28,8 @@ Highlight values using an image, icon, text, or any other custom view. You can s
                             <TextBlock Text="60"
                                        Margin="2" />
                         </Grid>
-                    </gauge:ContentPointer.Content>
-                </gauge:ContentPointer>
+                    </gauge:LinearContentPointer.Content>
+                </gauge:LinearContentPointer>
             </gauge:LinearAxis.MarkerPointers>
         </gauge:LinearAxis>
     </gauge:SfLinearGauge.Axis>
@@ -41,7 +41,7 @@ Highlight values using an image, icon, text, or any other custom view. You can s
 
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
 
-ContentPointer contentPointer = new ContentPointer();
+LinearContentPointer contentPointer = new LinearContentPointer();
 contentPointer.Value = 60;
 Grid contentPointerRootChild = new Grid
 {
@@ -83,9 +83,9 @@ To move the pointer outside of the axis, provide negative values.
     <gauge:SfLinearGauge.Axis>
         <gauge:LinearAxis>
             <gauge:LinearAxis.MarkerPointers>
-                <gauge:ContentPointer Value="60"
+                <gauge:LinearContentPointer Value="60"
                                       OffsetPoint="0,-25">
-                    <gauge:ContentPointer.Content>
+                    <gauge:LinearContentPointer.Content>
                         <Path Data="M41.8985 10.0861C41.8985 15.6565 37.3759 20.1722 31.7971 20.1722C26.2181 
                               20.1722 21.6956 15.6565 21.6956 10.0861C21.6956 4.51575 26.2181 0 31.7971 0C37.3759 0 41.8985 4.51575 
                               41.8985 10.0861ZM44.0872 71.1554L46.4467 97.9785C46.7136 101.013 44.4753 103.693 41.4376 103.976C38.3846 
@@ -101,8 +101,8 @@ To move the pointer outside of the axis, provide negative values.
                               Stretch="Fill"
                               Fill="Gray">
                         </Path>
-                    </gauge:ContentPointer.Content>
-                </gauge:ContentPointer>
+                    </gauge:LinearContentPointer.Content>
+                </gauge:LinearContentPointer>
             </gauge:LinearAxis.MarkerPointers>
         </gauge:LinearAxis>
     </gauge:SfLinearGauge.Axis>
@@ -127,7 +127,7 @@ Geometry geometry = (Geometry)XamlReader.Load(
 
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
 
-ContentPointer contentPointer = new ContentPointer();
+LinearContentPointer contentPointer = new LinearContentPointer();
 contentPointer.Value = 60;
 contentPointer.OffsetPoint = new Point(0, -25);
 contentPointer.Content = new Path
@@ -160,15 +160,15 @@ You can change the horizontal or vertical position of the content pointer either
     <gauge:SfLinearGauge.Axis>
         <gauge:LinearAxis>
             <gauge:LinearAxis.MarkerPointers>
-                <gauge:ContentPointer Value="60"
+                <gauge:LinearContentPointer Value="60"
                                       VerticalAnchor="End"
                                       OffsetPoint="0,-3">
-                    <gauge:ContentPointer.Content>
+                    <gauge:LinearContentPointer.Content>
                         <Image Source="Assets/Thumbs-Up.png"
                                Height="20"
                                Width="20" />
-                    </gauge:ContentPointer.Content>
-                </gauge:ContentPointer>
+                    </gauge:LinearContentPointer.Content>
+                </gauge:LinearContentPointer>
             </gauge:LinearAxis.MarkerPointers>
         </gauge:LinearAxis>
     </gauge:SfLinearGauge.Axis>
@@ -180,7 +180,7 @@ You can change the horizontal or vertical position of the content pointer either
 
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
 
-ContentPointer contentPointer = new ContentPointer();
+LinearContentPointer contentPointer = new LinearContentPointer();
 contentPointer.Value = 60;
 contentPointer.VerticalAnchor = GaugeAnchor.End;
 contentPointer.OffsetPoint = new Point(0, -3);
