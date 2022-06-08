@@ -131,7 +131,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![WinUI Radial Gauge Content Pointer with Image](images/marker-pointers/winui-radial-gauge-image-pointer.png)
+![WinUI Radial Gauge Content Pointer with Image](images/content-pointer/winui-radial-gauge-image-pointer.png)
 
 ## Content position customization
 
