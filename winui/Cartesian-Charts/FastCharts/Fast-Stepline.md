@@ -17,13 +17,13 @@ A fast stepline bitmap series is a special kind of series that can render a coll
 
 <chart:SfCartesianChart>
 
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis />
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis>  
+    </chart:SfCartesianChart.YAxes>  
 
     <chart:SfCartesianChart.Series>
         <chart:FastStepLineBitmapSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" />
@@ -36,9 +36,9 @@ A fast stepline bitmap series is a special kind of series that can render a coll
 
 SfCartesianChart chart = new SfCartesianChart();
 DateTimeAxis primaryAxis = new DateTimeAxis();
-chart.PrimaryAxis = primaryAxis;
+chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
-chart.SecondaryAxis = secondaryAxis;
+chart.YAxes.Add(secondaryAxis);
 
 FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
 {
@@ -65,13 +65,13 @@ The anti aliasing mode can be enabled using the [EnableAntiAliasing](https://hel
 
 <chart:SfCartesianChart>
 
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis />
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis>  
+    </chart:SfCartesianChart.YAxes>  
 
     <chart:SfCartesianChart.Series>
         <chart:FastStepLineBitmapSeries EnableAntiAliasing="True" ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" />
@@ -84,9 +84,9 @@ The anti aliasing mode can be enabled using the [EnableAntiAliasing](https://hel
 
 SfCartesianChart chart = new SfCartesianChart();
 DateTimeAxis primaryAxis = new DateTimeAxis();
-chart.PrimaryAxis = primaryAxis;
+chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
-chart.SecondaryAxis = secondaryAxis;
+chart.YAxes.Add(secondaryAxis);
 . . .
 FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
 {

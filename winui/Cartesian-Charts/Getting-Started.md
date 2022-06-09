@@ -135,7 +135,7 @@ this.DataContext = new ViewModel();
 
 ## Initialize Chart Axis
 
-[ChartAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html) is used to locate the data points inside the chart area. The [PrimaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PrimaryAxis) and [SecondaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_SecondaryAxis) properties of the chart is used to initialize the axis for the chart.
+[ChartAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html) is used to locate the data points inside the chart area. The [XAxes]() and [YAxes]() collection of the chart is used to initialize the axis for the chart.
 
 {% tabs %} 
 
@@ -143,13 +143,13 @@ this.DataContext = new ViewModel();
 
 <chart:SfCartesianChart>
 
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis/>
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis/>
-    </chart:SfCartesianChart.SecondaryAxis>
+    </chart:SfCartesianChart.YAxes>
     
 </chart:SfCartesianChart>
 
@@ -159,9 +159,9 @@ this.DataContext = new ViewModel();
 
 SfCartesianChart chart = new SfCartesianChart();
 CategoryAxis primaryAxis = new CategoryAxis();
-chart.PrimaryAxis = primaryAxis;
+chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
-chart.SecondaryAxis = secondaryAxis;
+chart.YAxes.Add(secondaryAxis);
 
 {% endhighlight %}
 
@@ -182,12 +182,12 @@ N> You need to set [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusio
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis Header="Name"/>
-    </chart:SfCartesianChart.PrimaryAxis>
-    <chart:SfCartesianChart.SecondaryAxis>
+    </chart:SfCartesianChart.XAxes>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis Header="Height(in cm)"/>
-    </chart:SfCartesianChart.SecondaryAxis>
+    </chart:SfCartesianChart.YAxes>
     <chart:ColumnSeries ItemsSource="{Binding Data}"
                         XBindingPath="Name" 
                         YBindingPath="Height">
@@ -203,12 +203,12 @@ SfCartesianChart chart = new SfCartesianChart();
 //Adding horizontal axis to the chart 
 CategoryAxis primaryAxis = new CategoryAxis();
 primaryAxis.Header = "Name";   
-chart.PrimaryAxis = primaryAxis;
+chart.XAxes.Add(primaryAxis);
 
 //Adding vertical axis to the chart 
 NumericalAxis secondaryAxis = new NumericalAxis();
 secondaryAxis.Header = "Height(in cm)";  
-chart.SecondaryAxis = secondaryAxis;
+chart.YAxes.Add(secondaryAxis);
 
 //Initialize the two series for SfChart
 ColumnSeries series = new ColumnSeries();
@@ -386,12 +386,12 @@ The following code example gives you the complete code of above configurations.
         </chart:SfCartesianChart.DataContext>
         
         <!--Initialize the axis for chart-->
-        <chart:SfCartesianChart.PrimaryAxis>
+        <chart:SfCartesianChart.XAxes>
             <chart:CategoryAxis Header="Names"/>
-        </chart:SfCartesianChart.PrimaryAxis>
-        <chart:SfCartesianChart.SecondaryAxis>
+        </chart:SfCartesianChart.XAxes>
+        <chart:SfCartesianChart.YAxes>
             <chart:NumericalAxis Header="Height(in cm)"/>
-        </chart:SfCartesianChart.SecondaryAxis>
+        </chart:SfCartesianChart.YAxes>
 
         <!--Initialize the series for chart-->
         <chart:ColumnSeries Label="Heights" ShowTooltip="True"
@@ -426,13 +426,13 @@ namespace SfChart_GettingStarted
             CategoryAxis primaryAxis = new CategoryAxis();
             primaryAxis.Header = "Name";
             primaryAxis.FontSize = 14;
-            chart.PrimaryAxis = primaryAxis;
+            chart.XAxes.Add(primaryAxis);
 
             //Adding vertical axis to the chart 
             NumericalAxis secondaryAxis = new NumericalAxis();
             secondaryAxis.Header = "Height(in cm)";
             secondaryAxis.FontSize = 14;
-            chart.SecondaryAxis = secondaryAxis;
+            chart.YAxes.Add(secondaryAxis);
 
             //Adding legend for the chart
             ChartLegend legend = new ChartLegend();

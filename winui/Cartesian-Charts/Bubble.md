@@ -21,13 +21,13 @@ To render a bubble series, create an instance of [BubbleSeries](https://help.syn
 
 <chart:SfCartesianChart>
     
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis />
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis> 
+    </chart:SfCartesianChart.YAxes> 
 
     <chart:BubbleSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" Size="Size" MinimumRadius="5" MaximumRadius="10"/>
     ...
@@ -39,9 +39,9 @@ To render a bubble series, create an instance of [BubbleSeries](https://help.syn
 
 SfCartesianChart chart = new SfCartesianChart();
 CategoryAxis primaryAxis = new CategoryAxis();
-chart.PrimaryAxis = primaryAxis;
+chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
-chart.SecondaryAxis = secondaryAxis;
+chart.YAxes.Add(secondaryAxis);
 . . .
 BubbleSeries series = new BubbleSeries()
 {
@@ -72,13 +72,13 @@ The zero size bubble segments can be enabled or disabled by using the [ShowZeroB
 
 <chart:SfCartesianChart>
 
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis />
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis> 
+    </chart:SfCartesianChart.YAxes> 
 
     <chart:BubbleSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" Size="Size" ShowZeroBubbles="True"/>
     ...
@@ -90,9 +90,9 @@ The zero size bubble segments can be enabled or disabled by using the [ShowZeroB
 
 SfCartesianChart chart = new SfCartesianChart();
 CategoryAxis primaryAxis = new CategoryAxis();
-chart.PrimaryAxis = primaryAxis;
+chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
-chart.SecondaryAxis = secondaryAxis;
+chart.YAxes.Add(secondaryAxis);
 . . .
 BubbleSeries series = new BubbleSeries()
 {
@@ -118,13 +118,13 @@ chart.Series.Add(series);
 
 <chart:SfCartesianChart>
     
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis />
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis> 
+    </chart:SfCartesianChart.YAxes> 
     
     <chart:BubbleSeries ItemsSource="{Binding Data}" XBindingPath="XValue" 
                         YBindingPath="YValue" Size="Size"
@@ -138,9 +138,9 @@ chart.Series.Add(series);
 
 SfCartesianChart chart = new SfCartesianChart();
 CategoryAxis primaryAxis = new CategoryAxis();
-chart.PrimaryAxis = primaryAxis;
+chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
-chart.SecondaryAxis = secondaryAxis;
+chart.YAxes.Add(secondaryAxis);
 . . .
 BubbleSeries series = new BubbleSeries()
 {

@@ -11,34 +11,19 @@ documentation: ug
 
 The appearance of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) can be customized by using the predefined palettes, custom palettes and gradient, which allows to enrich the application.
 
-## Palettes
+## Applying PaletteBrushes for Chart
 
-[SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) provides options for applying various kinds of palettes. Some predefined palettes, such as.
+By default, chart applies a set of predefined brushes to the series in a predefined order. [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) provides [PaletteBrushes] property for applying various kinds of custom palettes brushes.
 
-* Metro
-* AutumnBrights
-* FloraHues
-* Pineapple
-* TomatoSpectrum
-* RedChrome
-* PurpleChrome
-* BlueChrome
-* GreenChrome
-* Elite
-* LightCandy
-* SandyBeach
+### Predefined PaletteBrushes
 
-N> Elite, SandyBeach and LightCandy palettes are not supported in the bitmap series types.
-
-### Applying Palette
-
-Each palette applies a set of predefined brushes to the series in a predefined order. [Metro](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html#Syncfusion_UI_Xaml_Charts_ChartColorPalette_Metro) palette is the default palette.
+Currently, Chart supports only one predefined palette and it is the default palette for SfCartesianChart. The following screenshot shows the default appearance of multiple series.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart x:Name="chart" Palette="Metro">
+<chart:SfCartesianChart x:Name="chart">
 
 </chart:SfCartesianChart>
 
@@ -47,7 +32,7 @@ Each palette applies a set of predefined brushes to the series in a predefined o
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-chart.Palette = ChartColorPalette.Metro;
+
 . . .
 this.Content = chart;
 
@@ -55,65 +40,15 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Predefined palette in WinUI Chart](Appearance_images/WinUI_chart_predefined_palette.png)
+![Predefined PaletteBrushes in WinUI Chart](Appearance_images/WinUI_chart_predefined_palette.png)
 
-The following code example defined [Palette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) as [BlueChrome](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html#Syncfusion_UI_Xaml_Charts_ChartColorPalette_BlueChrome).
+### Custom PaletteBrushes
 
-{% tabs %}
+[SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) provides support to define own brushes for the chart with preferred order by using the [PaletteBrushes]() property, as shown in the following code example.
 
-{% highlight xaml %}
+## Applying PaletteBrushes for Series
 
-<chart:SfCartesianChart x:Name="chart" Palette="BlueChrome"/>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-chart.Palette = ChartColorPalette.BlueChrome;
-. . .
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Palette support in WinUI Chart](Appearance_images/WinUI_chart_bluechrome_palette.png)
-
-### Applying Palette to Segment
-
-Cartesian chart provides support to set the palette to series for applying predefined brushes to the segment. The following code example shows you how to set the [GreenChrome](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html#Syncfusion_UI_Xaml_Charts_ChartColorPalette_GreenChrome) palette for the series.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:ColumnSeries ItemsSource="{Binding Data}"  
-                    XBindingPath="Demand" 
-                    YBindingPath="Year2010" 
-                    Palette="GreenChrome"/>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-ColumnSeries series1 = new ColumnSeries()
-{
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "Demand",
-    YBindingPath = "Year2010",
-    Palette = ChartColorPalette.GreenChrome
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Series palette support in WinUI Chart](Appearance_images/WinUI_chart_greenchrome_palette.png)
-
-## Custom Palette
-
-[SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) provides support to define own brushes for the chart with preferred order by using the [CustomBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartColorModel.html#Syncfusion_UI_Xaml_Charts_ChartColorModel_CustomBrushes) property of [ChartColorModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartColorModel.html) and [Palette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) value as `Custom`, as shown in the following code example.
+Cartesian chart provides support to set the palette to series for applying predefined brushes to the segment. The following code example shows you how to set the [PaletteBrushes]() for the series.
 
 {% tabs %}
 
@@ -122,19 +57,16 @@ ColumnSeries series1 = new ColumnSeries()
 <chart:SfCartesianChart.Series>
     <chart:ColumnSeries ItemsSource="{Binding Data}"  
                         XBindingPath="Demand" 
-                        YBindingPath="Year2010" 
-                        Palette="Custom">
-        <chart:ColumnSeries.ColorModel>
-            <chart:ChartColorModel>
-                <chart:ChartColorModel.CustomBrushes>
+                        YBindingPath="Year2010">
+        <chart:ColumnSeries.PaletteBrushes>
+            <BrushCollection>
                     <SolidColorBrush Color="#26c6da"/>
                     <SolidColorBrush Color="#00bcd4"/>
                     <SolidColorBrush Color="#00acc1"/>
                     <SolidColorBrush Color="#0097a7"/>
                     <SolidColorBrush Color="#00838f"/>
-                </chart:ChartColorModel.CustomBrushes>
-            </chart:ChartColorModel>
-        </chart:ColumnSeries.ColorModel>
+            </BrushCollection>
+        </chart:ColumnSeries.PaletteBrushes>
     </chart:ColumnSeries>
 </chart:SfCartesianChart.Series>
 
@@ -144,20 +76,19 @@ ColumnSeries series1 = new ColumnSeries()
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-ChartColorModel colorModel = new ChartColorModel();
-colorModel.CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 38, 198, 218)));
-colorModel.CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 188, 212)));
-colorModel.CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 172, 193)));
-colorModel.CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 151, 167)));
-colorModel.CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 131, 143)));
+List<Brush> CustomBrushes = new List<Brush>();
+CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 38, 198, 218)));
+CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 188, 212)));
+CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 172, 193)));
+CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 151, 167)));
+CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 131, 143)));
 
 ColumnSeries series = new ColumnSeries()
 {
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2010",
-    Palette = ChartColorPalette.Custom,
-    ColorModel = colorModel
+    PaletteBrushes = CustomBrushes,
 };
 . . .
 chart.Series.Add(series);
@@ -167,13 +98,13 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Custom palette in WinUI Chart](Appearance_images/WinUI_chart_custom_palette.png)
+![Custom PaletteBrushes in WinUI Chart](Appearance_images/WinUI_chart_custom_palette.png)
 
 ## Applying Gradient
 
-Gradient for the chart can be set by using the [ColorModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_ColorModel) property with the help of `LinearGradientBrush` or `RadialGradientBrush`.
+Gradient for the chart can be set by using the [PaletteBrushes]() property with the help of `LinearGradientBrush` or `RadialGradientBrush`.
 
-The following code sample and screenshot illustrates how to apply the gradient brushes for the series using the [ColorModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_ColorModel) property.
+The following code sample and screenshot illustrates how to apply the gradient brushes for the series using the [PaletteBrushes]() property.
 
 {% tabs %}
 
@@ -181,11 +112,9 @@ The following code sample and screenshot illustrates how to apply the gradient b
 
  <chart:ColumnSeries ItemsSource="{Binding Data}"  
                                       XBindingPath="Demand" 
-                                      YBindingPath="Year2010" 
-                                      Palette="Custom">
-    <chart:ColumnSeries.ColorModel>
-        <chart:ChartColorModel>
-            <chart:ChartColorModel.CustomBrushes>
+                                      YBindingPath="Year2010">
+    <chart:ColumnSeries.PaletteBrushes>
+        <BrushCollection>
                 <LinearGradientBrush>
                     <GradientStop Offset="1" Color="#FFE7C7" />
                     <GradientStop Offset="0" Color="#FCB69F" />
@@ -206,9 +135,8 @@ The following code sample and screenshot illustrates how to apply the gradient b
                     <GradientStop Offset="1" Color="#A8EAEE" />
                     <GradientStop Offset="0" Color="#7BB0F9" />
                 </LinearGradientBrush>
-            </chart:ChartColorModel.CustomBrushes>
-        </chart:ChartColorModel>
-    </chart:ColumnSeries.ColorModel>
+        </chart:BrushCollection>
+    </chart:ColumnSeries.PaletteBrushes>
 </chart:ColumnSeries>
 
 {% endhighlight %}
@@ -217,7 +145,7 @@ The following code sample and screenshot illustrates how to apply the gradient b
 
 SfCartesianChart chart = new SfCartesianChart();
 ...
-ChartColorModel colorModel = new ChartColorModel();
+List<Brush> CustomBrushes = new List<Brush>();
 LinearGradientBrush gradientColor1 = new LinearGradientBrush();
 GradientStop stop1 = new GradientStop() { Offset = 1, Color = Color.FromRgb(255, 231, 199) };
 GradientStop stop2 = new GradientStop() { Offset = 0, Color = Color.FromRgb(252, 182, 159) };
@@ -229,16 +157,15 @@ stop2 = new GradientStop() { Offset = 0, Color = Color.FromRgb(252, 204, 45) };
 gradientColor2.GradientStops.Add(stop1);
 gradientColor2.GradientStops.Add(stop2);
 ...
-colorModel.CustomBrushes.Add(gradientColor1);
-colorModel.CustomBrushes.Add(gradientColor2);
+CustomBrushes.Add(gradientColor1);
+CustomBrushes.Add(gradientColor2);
 ...
 ColumnSeries series = new ColumnSeries()
 {
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2010",
-    Palette = ChartColorPalette.Custom,
-    ColorModel = colorModel
+    PaletteBrushes = CustomBrushes,
 };
 chart.Series.Add(series);
 . . .            

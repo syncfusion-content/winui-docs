@@ -13,7 +13,7 @@ Cartesian chart supports selection that allows to select a segment or series in 
 
 ## Enable Selection
 
-To enable the selection in chart, create an instance of [ChartSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html) and add it to the `Behaviors` collection of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html). And also need to set the [SelectionBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SelectionBrush) property to highlight the segment in the chart.
+To enable the selection in chart, create an instance of [ChartSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html) and set it to the `SelectionBehavior` property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html). And also need to set the [SelectionBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SelectionBrush) property to highlight the segment in the chart.
 
 {% tabs %}
 
@@ -21,9 +21,9 @@ To enable the selection in chart, create an instance of [ChartSelectionBehavior]
 
 <chart:SfCartesianChart>
 . . .
-    <chart:SfCartesianChart.Behaviors>
+    <chart:SfCartesianChart.SelectionBehavior>
         <chart:ChartSelectionBehavior />
-    </chart:SfCartesianChart.Behaviors>
+    </chart:SfCartesianChart.SelectionBehavior>
 
     <chart:ColumnSeries ItemsSource="{Binding Data}" 
                         XBindingPath="Demand"
@@ -38,7 +38,7 @@ To enable the selection in chart, create an instance of [ChartSelectionBehavior]
 SfCartesianChart chart = new SfCartesianChart();
 . . .
 ChartSelectionBehavior selection = new ChartSelectionBehavior();
-chart.Behaviors.Add(selection);
+chart.SelectionBehavior = selection;
 
 ColumnSeries series = new ColumnSeries()
 {
@@ -69,9 +69,9 @@ The following code example demonstrates the spline series segment selection by c
 
 <chart:SfCartesianChart>
 . . .
-    <chart:SfCartesianChart.Behaviors>
+    <chart:SfCartesianChart.SelectionBehavior>
         <chart:ChartSelectionBehavior />
-    </chart:SfCartesianChart.Behaviors>
+    </chart:SfCartesianChart.SelectionBehavior>
 
     <chart:SplineSeries ItemsSource="{Binding Data}" 
                         XBindingPath="Demand"
@@ -87,7 +87,7 @@ The following code example demonstrates the spline series segment selection by c
 SfCartesianChart chart = new SfCartesianChart();
 . . .
 ChartSelectionBehavior selection = new ChartSelectionBehavior();
-chart.Behaviors.Add(selection);
+chart.SelectionBehavior = selection;
 
 SplineSeries series = new SplineSeries()
 {
@@ -117,9 +117,9 @@ Series selection is used to highlight a particular series when using multiple se
 
 <chart:SfCartesianChart>
 . . .
-    <chart:SfCartesianChart.Behaviors>
+    <chart:SfCartesianChart.SelectionBehavior>
         <chart:ChartSelectionBehavior SeriesSelectionBrush="Green" Type="Series"/>
-    </chart:SfCartesianChart.Behaviors>
+    </chart:SfCartesianChart.SelectionBehavior>
 . . .
 </chart:SfCartesianChart>
 
@@ -132,7 +132,7 @@ SfCartesianChart chart = new SfCartesianChart();
 ChartSelectionBehavior selection = new ChartSelectionBehavior();
 selection.SeriesSelectionBrush = new SolidColorBrush(Colors.Green);
 selection.Type = SelectionType.Series;
-chart.Behaviors.Add(selection);
+chart.SelectionBehavior = selection;
 . . .
 this.Content = chart;
 
@@ -152,9 +152,9 @@ Cartesian chart provides support to select single or multiple segments/series by
 
 <chart:SfCartesianChart>
 . . .
-    <chart:SfCartesianChart.Behaviors>
+    <chart:SfCartesianChart.SelectionBehavior>
         <chart:ChartSelectionBehavior  Type="MultiPoint"/>
-    </chart:SfCartesianChart.Behaviors>
+    </chart:SfCartesianChart.SelectionBehavior>
 
     <chart:SfCartesianChart.Series>
         <chart:ColumnSeries ItemsSource="{Binding Data}"  
@@ -173,7 +173,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 ChartSelectionBehavior selection = new ChartSelectionBehavior();
 selection.Type = SelectionType.MultiPoint;
-chart.Behaviors.Add(selection);
+chart.SelectionBehavior = selection;
 
 ColumnSeries series = new ColumnSeries()
 {
@@ -199,9 +199,9 @@ The following code snippet demonstrates multiple series selection.
 
 <chart:SfCartesianChart>
 . . .
-    <chart:SfCartesianChart.Behaviors>
+    <chart:SfCartesianChart.SelectionBehavior>
         <chart:ChartSelectionBehavior SeriesSelectionBrush="Green" Type="MultiSeries"/>
-    </chart:SfCartesianChart.Behaviors>
+    </chart:SfCartesianChart.SelectionBehavior>
 . . .
 </chart:SfCartesianChart>
 
@@ -214,7 +214,7 @@ SfCartesianChart chart = new SfCartesianChart();
 ChartSelectionBehavior selection = new ChartSelectionBehavior();
 selection.SeriesSelectionBrush = new SolidColorBrush(Colors.Green);
 selection.Type = SelectionType.MultiSeries;
-chart.Behaviors.Add(selection);
+chart.SelectionBehavior = selection;
 . . .
 this.Content = chart;
 
@@ -234,9 +234,9 @@ Cartesian chart provides support to select a point programmatically on a chart u
 
 <chart:SfCartesianChart>
 . . .
-    <chart:SfCartesianChart.Behaviors>
+    <chart:SfCartesianChart.SelectionBehavior>
         <chart:ChartSelectionBehavior/>
-    </chart:SfCartesianChart.Behaviors>
+    </chart:SfCartesianChart.SelectionBehavior>
 
     <chart:SfCartesianChart.Series>
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
@@ -255,7 +255,7 @@ Cartesian chart provides support to select a point programmatically on a chart u
 SfCartesianChart chart = new SfCartesianChart();
 . . .
 ChartSelectionBehavior selection = new ChartSelectionBehavior();
-chart.Behaviors.Add(selection);
+chart.SelectionBehavior = selection;
 
 ColumnSeries series = new ColumnSeries()
 {
@@ -282,9 +282,9 @@ Select a series programmatically on a chart using the [SelectedSeriesIndex](http
 
 <chart:SfCartesianChart SelectedSeriesIndex="0">
 . . .
-    <chart:SfCartesianChart.Behaviors>
+    <chart:SfCartesianChart.SelectionBehavior>
         <chart:ChartSelectionBehavior SeriesSelectionBrush="Green" Type="Series"/>
-    </chart:SfCartesianChart.Behaviors>
+    </chart:SfCartesianChart.SelectionBehavior>
 . . .
 </chart:SfCartesianChart>
 
@@ -298,7 +298,7 @@ chart.SelectedSeriesIndex = 0;
 ChartSelectionBehavior selection = new ChartSelectionBehavior();
 selection.SeriesSelectionBrush = new SolidColorBrush(Colors.Green);
 selection.Type = SelectionType.Series;
-chart.Behaviors.Add(selection);
+chart.SelectionBehavior = selection;
 . . .
 this.Content = chart;
 
@@ -318,9 +318,9 @@ this.Content = chart;
 
 <chart:SfCartesianChart>
 . . . 
-    <chart:SfCartesianChart.Behaviors>
+    <chart:SfCartesianChart.SelectionBehavior>
         <chart:ChartSelectionBehavior  Cursor="Hand"/>
-    </chart:SfCartesianChart.Behaviors>
+    </chart:SfCartesianChart.SelectionBehavior>
 
     <chart:SfCartesianChart.Series>
         <chart:ColumnSeries ItemsSource="{Binding Data}"  
@@ -339,7 +339,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 ChartSelectionBehavior selection = new ChartSelectionBehavior();
 selection.Cursor = Windows.UI.Core.CoreCursorType.Hand;
-chart.Behaviors.Add(selection);
+chart.SelectionBehavior = selection;
 
 ColumnSeries series = new ColumnSeries()
 {

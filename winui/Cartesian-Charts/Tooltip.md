@@ -66,7 +66,7 @@ this.Content = chart;
 
 ![Tooltip support in WinUI chart](Tooltip_images/WinUI_chart_tooltip.png)
 
-The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) is used to customize the tooltip. For customizing the tooltip, create an instance [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) and add it to the `Behaviors` collection of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html). The following properties are used to customize the tooltip:
+The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) is used to customize the tooltip. For customizing the tooltip, create an instance [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) and set it to the `TooltipBehavior` property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html). The following properties are used to customize the tooltip:
 
 * [Style](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) - Used to customize the fill and stroke of the tooltip.
 * [LabelStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_LabelStyle) - Used to customize the tooltip label.
@@ -82,9 +82,9 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart.Behaviors>
+<chart:SfCartesianChart.TooltipBehavior>
     <chart:ChartTooltipBehavior/>
-</chart:SfCartesianChart.Behaviors>
+</chart:SfCartesianChart.TooltipBehavior>
 
 {% endhighlight %}
 
@@ -92,9 +92,8 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 
 SfCartesianChart chart = new SfCartesianChart();
 
-ChartTooltipBehavior behavior = new ChartTooltipBehavior();
-
-chart.Behaviors.Add(behavior);
+ChartTooltipBehavior tooltip = new ChartTooltipBehavior();
+chart.TooltipBehavior = tooltip;
 
 {% endhighlight %}
 
@@ -116,9 +115,9 @@ The tooltip's fill and stroke color can be customized by using the [Style](https
         </Style>
     </chart:SfCartesianChart.Resources>
 . . .
-    <chart:SfCartesianChart.Behaviors>
+    <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
-    </chart:SfCartesianChart.Behaviors>
+    </chart:SfCartesianChart.TooltipBehavior>
 
     <chart:SfCartesianChart.Series>
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
@@ -146,7 +145,7 @@ style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)
 ...
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.Style = style;
-chart.Behaviors.Add(tooltipBehavior);
+chart.TooltipBehavior = tooltipBehavior;
 
 ColumnSeries series1 = new ColumnSeries()
 {
@@ -191,9 +190,9 @@ The tooltip label style can be customized by using the [LabelStyle](https://help
         </Style>
     </chart:SfCartesianChart.Resources>
 . . .
-    <chart:SfCartesianChart.Behaviors>
+    <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior LabelStyle="{StaticResource labelStyle}"/>
-    </chart:SfCartesianChart.Behaviors>
+    </chart:SfCartesianChart.TooltipBehavior>
 
     <chart:SfCartesianChart.Series>
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
@@ -222,7 +221,7 @@ labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBr
 ...
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.LabelStyle = labelStyle;
-chart.Behaviors.Add(tooltipBehavior);
+chart.TooltipBehavior = tooltipBehavior;
 
 ColumnSeries series1 = new ColumnSeries()
 {
@@ -264,9 +263,9 @@ Tooltip can be positioned horizontally left, right, or center to the cursor posi
 
 <chart:SfCartesianChart Height="388"  Width="500" Palette="BlueChrome">
 . . .
-    <chart:SfCartesianChart.Behaviors>
+    <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior HorizontalAlignment="Left"/>
-    </chart:SfCartesianChart.Behaviors>
+    </chart:SfCartesianChart.TooltipBehavior>
 
     <chart:SfCartesianChart.Series>
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
@@ -290,7 +289,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.HorizontalAlignment = HorizontalAlignment.Left;
-chart.Behaviors.Add(tooltipBehavior);
+chart.TooltipBehavior = tooltipBehavior;
 
 ColumnSeries series1 = new ColumnSeries()
 {
@@ -328,9 +327,9 @@ Tooltip can be positioned vertically top, bottom, or center to the cursor positi
 
 <chart:SfCartesianChart Height="388"  Width="500" Palette="BlueChrome">
 . . .
-    <chart:SfCartesianChart.Behaviors>
+    <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior VerticalAlignment="Bottom"/>
-    </chart:SfCartesianChart.Behaviors>
+    </chart:SfCartesianChart.TooltipBehavior>
 
     <chart:SfCartesianChart.Series>
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
@@ -354,7 +353,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.VerticalAlignment = VerticalAlignment.Bottom;
-chart.Behaviors.Add(tooltipBehavior);
+chart.TooltipBehavior = tooltipBehavior;
 
 ColumnSeries series1 = new ColumnSeries()
 {
@@ -392,9 +391,9 @@ The tooltip can be positioned at a particular distance from the cursor by using 
 
 <chart:SfCartesianChart Height="388"  Width="500" Palette="BlueChrome">
 . . .
-    <chart:SfCartesianChart.Behaviors>
+    <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior HorizontalOffset="40" VerticalOffset="40"/>
-    </chart:SfCartesianChart.Behaviors>
+    </chart:SfCartesianChart.TooltipBehavior>
 
     <chart:SfCartesianChart.Series>
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
@@ -419,7 +418,7 @@ SfCartesianChart chart = new SfCartesianChart();
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.HorizontalOffset = 40;
 tooltipBehavior.VerticalOffset = 40;
-chart.Behaviors.Add(tooltipBehavior);
+chart.TooltipBehavior = tooltipBehavior;
 
 ColumnSeries series1 = new ColumnSeries()
 {
@@ -459,9 +458,9 @@ N> By default, the tooltip will be displayed for 1000 milliseconds.
 
 <chart:SfCartesianChart Height="388"  Width="500" Palette="BlueChrome">
 . . .
-    <chart:SfCartesianChart.Behaviors>
+    <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior ShowDuration="5000"/>
-    </chart:SfCartesianChart.Behaviors>
+    </chart:SfCartesianChart.TooltipBehavior>
 
     <chart:SfCartesianChart.Series>
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
@@ -485,7 +484,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.ShowDuration = 5000;
-chart.Behaviors.Add(tooltipBehavior);
+chart.TooltipBehavior = tooltipBehavior;
 
 ColumnSeries series1 = new ColumnSeries()
 {
@@ -521,9 +520,9 @@ Animation for tooltip can be set by using the [EnableAnimation](https://help.syn
 
 <chart:SfCartesianChart Height="388"  Width="500" Palette="BlueChrome">
 . . .
-    <chart:SfCartesianChart.Behaviors>
+    <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior EnableAnimation="True"/>
-    </chart:SfCartesianChart.Behaviors>
+    </chart:SfCartesianChart.TooltipBehavior>
 
     <chart:SfCartesianChart.Series>
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
@@ -547,7 +546,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.EnableAnimation = true;
-chart.Behaviors.Add(tooltipBehavior);
+chart.TooltipBehavior = tooltipBehavior;
 
 ColumnSeries series1 = new ColumnSeries()
 {
@@ -598,9 +597,9 @@ The [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
         </Style>
     </chart:SfCartesianChart.Resources>
 . . .
-    <chart:SfCartesianChart.Behaviors>
+    <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
-    </chart:SfCartesianChart.Behaviors>
+    </chart:SfCartesianChart.TooltipBehavior>
 
     <chart:SfCartesianChart.Series>
         <chart:ColumnSeries ItemsSource="{Binding Data}" TooltipTemplate="{StaticResource tooltipTemplate1}"

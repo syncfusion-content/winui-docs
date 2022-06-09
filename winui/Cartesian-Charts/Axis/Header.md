@@ -17,12 +17,12 @@ The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
     <chart:CategoryAxis Header="Category"/>
-</chart:SfCartesianChart.PrimaryAxis>
-<chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.XAxes>
+<chart:SfCartesianChart.YAxes>
     <chart:NumericalAxis Header="Values"/>
-</chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
 
@@ -32,8 +32,8 @@ The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new CategoryAxis() { Header = "Category" };
-chart.SecondaryAxis = new NumericalAxis() { Header = "Values" };
+chart.XAxes.Add(new CategoryAxis() { Header = "Category" });
+chart.YAxes.Add(new NumericalAxis() { Header = "Values" });
 
 {% endhighlight %}
 
@@ -51,11 +51,13 @@ The [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 
 <chart:SfCartesianChart>
 . . .
-<chart:CategoryAxis Header="Category">
-    <chart:CategoryAxis.HeaderStyle>
-        <chart:LabelStyle FontFamily="Algerian" FontSize="13" Foreground="Blue"/>
-    </chart:CategoryAxis.HeaderStyle>
-</chart:CategoryAxis>
+<chart:SfCartesianChart.XAxes>
+    <chart:CategoryAxis Header="Category">
+        <chart:CategoryAxis.HeaderStyle>
+            <chart:LabelStyle FontFamily="Algerian" FontSize="13" Foreground="Blue"/>
+        </chart:CategoryAxis.HeaderStyle>
+    </chart:CategoryAxis>
+</chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>
 
@@ -65,13 +67,14 @@ The [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new CategoryAxis() { Header = "Category" };
-chart.PrimaryAxis.HeaderStyle = new LabelStyle()
+CategoryAxis primaryAxis = new CategoryAxis() { Header = "Category" };
+primaryAxis.HeaderStyle = new LabelStyle()
 {
     FontFamily = new FontFamily("Calibri"),
     FontSize = 13,
     Foreground = new SolidColorBrush(Colors.Blue),
 };
+chart.XAxes.Add(primaryAxis);
 
 {% endhighlight %}
 
@@ -97,10 +100,10 @@ The appearance of the header can be customized using the [HeaderTemplate](https:
     </DataTemplate>
 </chart:SfCartesianChart.Resources>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
     <chart:CategoryAxis HeaderTemplate="{StaticResource headerTemplate}">
     </chart:CategoryAxis>
-</chart:SfCartesianChart.PrimaryAxis>
+</chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>
 
@@ -110,10 +113,11 @@ The appearance of the header can be customized using the [HeaderTemplate](https:
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new CategoryAxis()
+CategoryAxis primaryAxis = new CategoryAxis()
 {
     HeaderTemplate = chart.Resources["headerTemplate"] as DataTemplate
 };
+chart.XAxes.Add(primaryAxis);
 
 {% endhighlight %}
 

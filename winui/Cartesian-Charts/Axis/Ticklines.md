@@ -21,13 +21,13 @@ N> For category axis, minor tick lines are not applicable. Since it is rendered 
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
     <chart:NumericalAxis SmallTicksPerInterval="4"/>
-</chart:SfCartesianChart.PrimaryAxis>
+</chart:SfCartesianChart.XAxes>
 
-<chart:SfCartesianChart.SecondaryAxis>
+<chart:SfCartesianChart.YAxes>
     <chart:NumericalAxis />
-</chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
 
@@ -37,12 +37,13 @@ N> For category axis, minor tick lines are not applicable. Since it is rendered 
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new NumericalAxis()
+NumericalAxis primaryAxis = new NumericalAxis()
 {
    SmallTicksPerInterval = 4 
 };
+chart.XAxes.Add(primaryAxis);
 
-chart.SecondaryAxis = new NumericalAxis();
+chart.YAxes.Add(new NumericalAxis());
 
 {% endhighlight %}
 
@@ -58,13 +59,13 @@ Both major and minor tick lines height can be customized by using the [TickLineS
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
     <chart:NumericalAxis SmallTickLineSize="10" SmallTicksPerInterval="4" TickLineSize="15"/>
-</chart:SfCartesianChart.PrimaryAxis>
+</chart:SfCartesianChart.XAxes>
 
-<chart:SfCartesianChart.SecondaryAxis>
+<chart:SfCartesianChart.YAxes>
     <chart:NumericalAxis />
-</chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
 
@@ -74,14 +75,15 @@ Both major and minor tick lines height can be customized by using the [TickLineS
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new NumericalAxis()
+NumericalAxis primaryAxis = new NumericalAxis()
 {
    TickLineSize = 15,
    SmallTickLineSize = 10,
    SmallTicksPerInterval = 4
 };
+chart.XAxes.Add(primaryAxis);
 
-chart.SecondaryAxis = new NumericalAxis();
+chart.YAxes.Add(new NumericalAxis());
 
 {% endhighlight %}
 
@@ -104,13 +106,13 @@ Tick lines can be positioned inside or outside of the chart area. By default the
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
     <chart:NumericalAxis TickLinesPosition="Inside" SmallTickLinesPosition="Inside"/>
-</chart:SfCartesianChart.PrimaryAxis>
+</chart:SfCartesianChart.XAxes>
 
-<chart:SfCartesianChart.SecondaryAxis>
+<chart:SfCartesianChart.YAxes>
     <chart:NumericalAxis />
-</chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
 
@@ -120,13 +122,14 @@ Tick lines can be positioned inside or outside of the chart area. By default the
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new NumericalAxis()
+NumericalAxis primaryAxis = new NumericalAxis()
 {
    TickLinesPosition = AxisElementPosition.Inside,
    SmallTickLinesPosition = AxisElementPosition.Inside
 };
+chart.XAxes.Add(primaryAxis);
 
-chart.SecondaryAxis = new NumericalAxis();
+chart.YAxes.Add(new NumericalAxis());
 
 {% endhighlight %}
 
@@ -151,13 +154,13 @@ Both major and minor tick lines can be customized by using the [MajorTickLineSty
     </Style>
 </chart:SfCartesianChart.Resources>
 
-<chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
     <chart:NumericalAxis SmallTicksPerInterval="4" MinorTickLineStyle="{StaticResource lineStyle}"  MajorTickLineStyle="{StaticResource lineStyle}" />
-</chart:SfCartesianChart.PrimaryAxis>
+</chart:SfCartesianChart.XAxes>
 
-<chart:SfCartesianChart.SecondaryAxis>
+<chart:SfCartesianChart.YAxes>
     <chart:NumericalAxis />
-</chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
 
@@ -167,14 +170,15 @@ Both major and minor tick lines can be customized by using the [MajorTickLineSty
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new NumericalAxis()
+NumericalAxis primaryAxis = new NumericalAxis()
 {
     SmallTicksPerInterval = 4,
     MajorTickLineStyle = chart.Resources["lineStyle"] as Style,
     MinorTickLineStyle = chart.Resources["lineStyle"] as Style 
 };
+chart.XAxes.Add(primaryAxis);
 
-chart.SecondaryAxis = new NumericalAxis();
+chart.YAxes.Add(new NumericalAxis());
 
 {% endhighlight %}
 
