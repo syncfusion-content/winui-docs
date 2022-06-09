@@ -21,7 +21,6 @@ To define the tooltip in the chart, set the [ShowTooltip](https://help.syncfusio
 
 <chart:SfFunnelChart x:Name="chart" 
                 ShowTooltip="True"
-                Palette="BlueChrome"
                 ItemsSource="{Binding Data}" 
                 XBindingPath="Category"
                 YBindingPath="Value">          
@@ -33,7 +32,6 @@ To define the tooltip in the chart, set the [ShowTooltip](https://help.syncfusio
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-chart.Palette = ChartColorPalette.BlueChrome;
 chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
@@ -47,7 +45,7 @@ this.Content = chart;
 
 ![Tooltip support in WinUI chart](Tooltip_Images/winui-chart_tooltip.png)
 
-The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) is used to customize the tooltip. For customizing the tooltip, create an instance [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) and add it to the `Behaviors` collection of [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html). The following properties are used to customize the tooltip:
+The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) is used to customize the tooltip. For customizing the tooltip, create an instance [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) and set it to the `TooltipBehavior` property of [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html). The following properties are used to customize the tooltip:
 
 * [Style](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) - Used to customize the fill and stroke of the tooltip.
 * [LabelStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_LabelStyle) - Used to customize the tooltip label.
@@ -63,9 +61,9 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 
 {% highlight xml %}
 
-<chart:SfFunnelChart.Behaviors>
+<chart:SfFunnelChart.TooltipBehavior>
     <chart:ChartTooltipBehavior/>
-</chart:SfFunnelChart.Behaviors>
+</chart:SfFunnelChart.TooltipBehavior>
 
 {% endhighlight %}
 
@@ -74,8 +72,7 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 SfFunnelChart chart = new SfFunnelChart();
 
 ChartTooltipBehavior behavior = new ChartTooltipBehavior();
-
-chart.Behaviors.Add(behavior);
+chart.TooltipBehavior = behavior;
 
 {% endhighlight %}
 
@@ -100,9 +97,9 @@ The following code example explains how to apply the style for tooltip backgroun
         </Style>
     </chart:SfFunnelChart.Resources>
 
-    <chart:SfFunnelChart.Behaviors>
+    <chart:SfFunnelChart.TooltipBehavior>
         <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
-    </chart:SfFunnelChart.Behaviors>
+    </chart:SfFunnelChart.TooltipBehavior>
 
 </chart:SfFunnelChart>
 
@@ -118,7 +115,7 @@ style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)
 ...
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.Style = style;
-chart.Behaviors.Add(tooltipBehavior);
+chart.TooltipBehavior = tooltipBehavior;
 
 {% endhighlight %}
 
@@ -146,9 +143,9 @@ The following code example explains how to apply the style for a tooltip label.
         </Style>
     </chart:SfFunnelChart.Resources>
 
-    <chart:SfFunnelChart.Behaviors>
+    <chart:SfFunnelChart.TooltipBehavior>
         <chart:ChartTooltipBehavior LabelStyle="{StaticResource labelStyle}"/>
-    </chart:SfFunnelChart.Behaviors>
+    </chart:SfFunnelChart.TooltipBehavior>
 
 </chart:SfFunnelChart>
 
@@ -164,7 +161,7 @@ labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBr
 ...
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.LabelStyle = labelStyle;
-chart.Behaviors.Add(tooltipBehavior);
+chart.TooltipBehavior = tooltipBehavior;
 
 {% endhighlight %}
 
@@ -184,7 +181,7 @@ The following code example explains how to display both x-value and y-value in t
 
 <chart:SfFunnelChart x:Name="chart" 
                 ShowTooltip="True" 
-                Palette="BlueChrome" TooltipTemplate="{StaticResource tooltipTemplate}"
+                TooltipTemplate="{StaticResource tooltipTemplate}"
                 ItemsSource="{Binding Data}" 
                 XBindingPath="Category"
                 YBindingPath="Value">
@@ -205,9 +202,9 @@ The following code example explains how to display both x-value and y-value in t
         </Style>
     </chart:SfFunnelChart.Resources>
 
-    <chart:SfFunnelChart.Behaviors>
+    <chart:SfFunnelChart.TooltipBehavior>
         <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
-    </chart:SfFunnelChart.Behaviors>
+    </chart:SfFunnelChart.TooltipBehavior>
 
 </chart:SfFunnelChart>
 
@@ -216,7 +213,6 @@ The following code example explains how to display both x-value and y-value in t
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-chart.Palette = ChartColorPalette.BlueChrome;
 chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";

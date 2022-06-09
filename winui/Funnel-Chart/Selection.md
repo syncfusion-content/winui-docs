@@ -22,14 +22,13 @@ To enable the selection in chart, create an instance of [ChartSelectionBehavior]
 <chart:SfFunnelChart x:Name="chart" 
                     SelectionBrush="Red"
                     Height="388" Width="500"
-                    Palette="BlueChrome"
                     ItemsSource="{Binding Data}" 
                     XBindingPath="Category"
                     YBindingPath="Value">
 
-    <chart:SfFunnelChart.Behaviors>
+    <chart:SfFunnelChart.SelectionBehavior>
         <chart:ChartSelectionBehavior />
-    </chart:SfFunnelChart.Behaviors>
+    </chart:SfFunnelChart.SelectionBehavior>
 
 </chart:SfFunnelChart>
 
@@ -43,7 +42,7 @@ chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.SelectionBrush = new SolidColorBrush(Colors.Red);
 ChartSelectionBehavior selection = new ChartSelectionBehavior();
-chart.Behaviors.Add(selection);
+chart.SelectionBehavior = selection;
 . . .
 this.Content = chart;
 
@@ -65,14 +64,13 @@ N> `Series` and `MultiSeries` selection type is not support for funnel chart.
 
 <chart:SfFunnelChart x:Name="chart"  
                     SelectionBrush="Red"
-                    Palette="BlueChrome" 
                     ItemsSource="{Binding Data}" 
                     XBindingPath="Category"
                     YBindingPath="Value">
 
-    <chart:SfFunnelChart.Behaviors>
+    <chart:SfFunnelChart.SelectionBehavior>
         <chart:ChartSelectionBehavior Type="MultiPoint"/>
-    </chart:SfFunnelChart.Behaviors>
+    </chart:SfFunnelChart.SelectionBehavior>
 . . .
 </chart:SfFunnelChart>
 
@@ -87,7 +85,7 @@ chart.YBindingPath = "Value";
 chart.SelectionBrush = new SolidColorBrush(Colors.Red);
 ChartSelectionBehavior selection = new ChartSelectionBehavior();
 selection.Type = SelectionType.MultiPoint;
-chart.Behaviors.Add(selection);
+chart.SelectionBehavior = selection;
 . . .
 this.Content = chart;
 
@@ -109,14 +107,13 @@ The following code snippet demonstrates hand cursor in segment selection.
 
 <<chart:SfFunnelChart x:Name="chart"  
                     SelectionBrush="Red"
-                    Palette="BlueChrome"  
                     ItemsSource="{Binding Data}" 
                     XBindingPath="Category"
                     YBindingPath="Value">
 
-        <chart:SfFunnelChart.Behaviors>
+        <chart:SfFunnelChart.SelectionBehavior>
             <chart:ChartSelectionBehavior Cursor="Hand" />
-        </chart:SfFunnelChart.Behaviors>
+        </chart:SfFunnelChart.SelectionBehavior>
 
 </chart:SfFunnelChart>
 
@@ -131,7 +128,7 @@ chart.YBindingPath = "Value";
 chart.SelectionBrush = new SolidColorBrush(Colors.Red);
 ChartSelectionBehavior selection = new ChartSelectionBehavior();
 selection.Cursor = Windows.UI.Core.CoreCursorType.Hand;
-chart.Behaviors.Add(selection);
+chart.SelectionBehavior = selection;
 . . .
 this.Content = chart;
 

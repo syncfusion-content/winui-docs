@@ -47,7 +47,7 @@ chart.Series.Add(series);
 
 ![Tooltip support in WinUI chart](Tooltip_Images/WinUI_pie_chart_tooltip.png)
 
-The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) is used to customize the tooltip. For customizing the tooltip, create an instance [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) and add it to the `Behaviors` collection of [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html). The following properties are used to customize the tooltip:
+The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) is used to customize the tooltip. For customizing the tooltip, create an instance [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) and set it to the `TooltipBehavior` property of [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html). The following properties are used to customize the tooltip:
 
 * [Style](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) - Used to customize the fill and stroke of the tooltip.
 * [LabelStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_LabelStyle) - Used to customize the tooltip label.
@@ -65,9 +65,9 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 
 <chart:SfCircularChart>
 . . .
-<chart:SfCircularChart.Behaviors>
+<chart:SfCircularChart.TooltipBehavior>
     <chart:ChartTooltipBehavior/>
-</chart:SfCircularChart.Behaviors>
+</chart:SfCircularChart.TooltipBehavior>
 
 </chart:SfCircularChart>
 
@@ -78,7 +78,7 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 SfCircularChart chart = new SfCircularChart();
 . . .
 ChartTooltipBehavior tooltip = new ChartTooltipBehavior();
-chart.Behaviors.Add(tooltip);
+chart.TooltipBehavior = tooltip;
 
 {% endhighlight %}
 
@@ -101,9 +101,9 @@ The tooltip's fill and stroke color can be customized by using the [Style](https
     </Style>
 </chart:SfCircularChart.Resources>
 
-<chart:SfCircularChart.Behaviors>
+<chart:SfCircularChart.TooltipBehavior>
     <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
-</chart:SfCircularChart.Behaviors>
+</chart:SfCircularChart.TooltipBehavior>
 
 </chart:SfCircularChart>
 
@@ -120,7 +120,7 @@ style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)
 ChartTooltipBehavior tooltip = new ChartTooltipBehavior();
 tooltip.Style = style;
 . . . 
-chart.Behaviors.Add(tooltip);
+chart.TooltipBehavior = tooltip;
 
 {% endhighlight %}
 
@@ -146,9 +146,9 @@ The tooltip label style can be customized by using the [LabelStyle](https://help
     </Style>
 </chart:SfCircularChart.Resources>
 
-<chart:SfCircularChart.Behaviors>
+<chart:SfCircularChart.TooltipBehavior>
     <chart:ChartTooltipBehavior LabelStyle="{StaticResource labelStyle}"/>
-</chart:SfCircularChart.Behaviors>
+</chart:SfCircularChart.TooltipBehavior>
 
 </chart:SfCircularChart>
 
@@ -166,7 +166,7 @@ labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBr
 ChartTooltipBehavior tooltip = new ChartTooltipBehavior();
 tooltip.LabelStyle = labelStyle;
 . . .
-chart.Behaviors.Add(tooltip);
+chart.TooltipBehavior = tooltip;
 
 {% endhighlight %}
 

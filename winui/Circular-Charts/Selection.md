@@ -13,19 +13,22 @@ Circular chart supports selection that allows to select a segment in a series or
 
 ## Enable Selection
 
-To enable the selection in chart, create an instance of [ChartSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html) and add it to the `Behaviors` collection of circular chart. And also need to set the [SelectionBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_SelectionBrush) property to highlight the segment in the series.
+To enable the selection in chart, create an instance of [ChartSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html) and set it to the `SelectionBehavior` property of circular chart. And also need to set the [SelectionBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_SelectionBrush) property to highlight the segment in the series.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    <chart:SfCircularChart.Behaviors>
+
+    <chart:SfCircularChart.SelectionBehavior>
         <chart:ChartSelectionBehavior />
-    </chart:SfCircularChart.Behaviors>
-<chart:SfCircularChart.Series>
-    <chart:PieSeries SelectionBrush="BlueViolet"/>
-</chart:SfCircularChart.Series>
+    </chart:SfCircularChart.SelectionBehavior>
+
+    <chart:SfCircularChart.Series>
+        <chart:PieSeries SelectionBrush="BlueViolet"/>
+    </chart:SfCircularChart.Series>
+    
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -35,7 +38,7 @@ To enable the selection in chart, create an instance of [ChartSelectionBehavior]
 SfCircularChart chart = new SfCircularChart();
 
 ChartSelectionBehavior selection = new ChartSelectionBehavior();
-chart.Behaviors.Add(selection);
+chart.SelectionBehavior = selection;
 
 PieSeries series = new PieSeries();
 series.SelectionBrush = new SolidColorBrush(Colors.BlueViolet);
@@ -57,9 +60,9 @@ Circular chart allows to select single or multiple segment\series using [Type](h
 
 <chart:SfCircularChart>
 . . .
-    <chart:SfCircularChart.Behaviors>
+    <chart:SfCircularChart.SelectionBehavior>
         <chart:ChartSelectionBehavior Type="MultiPoint"/>
-    </chart:SfCircularChart.Behaviors>
+    </chart:SfCircularChart.SelectionBehavior>
 
 </chart:SfCircularChart>
 
@@ -71,7 +74,7 @@ SfCircularChart chart = new SfCircularChart();
 . . .
 ChartSelectionBehavior selection = new ChartSelectionBehavior();
 selection.Type = SelectionType.MultiPoint;
-chart.Behaviors.Add(selection);
+chart.SelectionBehavior = selection;
 
 {% endhighlight %}
 
