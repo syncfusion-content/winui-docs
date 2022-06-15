@@ -60,3 +60,40 @@ A `Trailingview` appears after the `AutoComplete` selection area. Any content, s
 {% endtabs %}
 
 ![Trailing View in WinUI AutoComplete](Leading_and_Trailing_view_images/Trailing-View-in-AutoComplete.png)
+
+## Both Leading and Trailing View in WinUI AutoComplete (SfAutoComplete)
+
+The `AutoComplete` provides support to hold both `Leadingview` and `Trailingview`.
+
+{% tabs %}
+{% highlight xaml %}
+
+  <editors:SfAutoComplete Header="Autocomplete with Leading and Trailing View"
+                          PlaceholderText="Search a country"
+                          Width="400"
+                          ItemsSource="{Binding ContinentList}"
+                          TextMemberPath="Country"
+                          DisplayMemberPath="Country">
+      <editors:SfAutoComplete.LeadingView>
+          <editors:SfComboBox Margin="0,3,0,3">
+              <editors:SfComboBoxItem Content="Asia" />
+              <editors:SfComboBoxItem Content="Africa" />
+              <editors:SfComboBoxItem Content="North America"/>
+              <editors:SfComboBoxItem Content="South America" />
+              <editors:SfComboBoxItem Content="Europe" />
+              <editors:SfComboBoxItem Content="All Countries"
+                                      IsSelected="True"/>
+          </editors:SfComboBox>
+      </editors:SfAutoComplete.LeadingView>
+      <editors:SfAutoComplete.TrailingView>
+          <Button BorderThickness="0"
+                  Margin="0,0,0,3">
+              <FontIcon Glyph="&#xEBE7;"/>
+          </Button>
+      </editors:SfAutoComplete.TrailingView>
+  </editors:SfAutoComplete>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Leading and Trailing View in WinUI AutoComplete](Leading_and_Trailing_view_images/Leading-and-Trailing-View-in-AutoComplete.png)

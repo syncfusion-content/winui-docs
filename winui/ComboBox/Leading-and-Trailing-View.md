@@ -38,7 +38,7 @@ A `Leadingview` appears before the `ComboBox` selection area. Any content, such 
 
 ## Trailing View in WinUI ComboBox (SfComboBox)
 
-A `Trailingview` appears after the `AutoComplete` selection area. Any content, such as an icon, image, button, or other control, is displayed in the `Trailingview`. Its default value is `Null`. When the `Trailingview` is not in use, their `Visibility` gets `Collapsed`. It was achieved by using a `String to Visibility Converter`.
+A `Trailingview` appears after the `ComboBox`  selection area. Any content, such as an icon, image, button, or other control, is displayed in the `Trailingview`. Its default value is `Null`. When the `Trailingview` is not in use, their `Visibility` gets `Collapsed`. It was achieved by using a `String to Visibility Converter`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -61,3 +61,39 @@ A `Trailingview` appears after the `AutoComplete` selection area. Any content, s
 
 ![Trailing View in WinUI ComboBox](Leading_and_Trailing_view_images/Trailing-View-in-ComboBox.png)
 
+## Leading and Trailing View in WinUI ComboBox (SfComboBox)
+
+The `ComboBox` provides support to hold both `Leadingview` and `Trailingview`.
+
+{% tabs %}
+{% highlight XAML %}
+
+  <editors:SfComboBox Header="ComboBox with Leading and Trailing View"
+                      Width="350"
+                      PlaceholderText="Search a country"
+                      ItemsSource="{Binding ContinentList}"
+                      TextMemberPath="Country"
+                      DisplayMemberPath="Country">
+      <editors:SfComboBox.LeadingView>
+          <editors:SfComboBox Margin="0,3,0,3">
+              <editors:SfComboBoxItem Content="Asia" />
+              <editors:SfComboBoxItem Content="Africa" />
+              <editors:SfComboBoxItem Content="North America"/>
+              <editors:SfComboBoxItem Content="South America" />
+              <editors:SfComboBoxItem Content="Europe" />
+              <editors:SfComboBoxItem Content="All Countries"
+                                      IsSelected="True"/>
+          </editors:SfComboBox>
+      </editors:SfComboBox.LeadingView>
+      <editors:SfComboBox.TrailingView>
+          <Button BorderThickness="0"
+                  Margin="0,0,0,3">
+              <FontIcon Glyph="&#xEBE7;"/>
+          </Button>
+      </editors:SfComboBox.TrailingView>
+  </editors:SfComboBox>
+  
+{% endhighlight %}
+{% endtabs %}
+
+![Leading and Trailing View in WinUI ComboBox](Leading_and_Trailing_view_images/Leading-and-Trailing-View-in-ComboBox.png)
