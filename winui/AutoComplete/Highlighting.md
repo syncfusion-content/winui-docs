@@ -4,7 +4,7 @@ title: Highlighting Feature in WinUI AutoComplete control | Syncfusion
 description: Learn here all about Highlighting Feature in Syncfusion WinUI AutoComplete control into WinUI application.
 platform: winui
 control: SfAutoComplete
-documentation: ug
+documentation: UG
 ---
 
 # Highlighting in WinUI AutoComplete(SfAutoComplete)
