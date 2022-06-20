@@ -99,9 +99,9 @@ chart.Series.Add(series3);
 
 ![Multiple doughnut series support in WinUI Chart](Series_images/winui-multiple-doughnut-series.png)
 
-## Doughnut Coefficient
+## Inner Radius
 
-The [DoughnutCoefficient](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_DoughnutCoefficient) property of doughnut series is used to define the inner circle. It also has [DoughnutSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_DoughnutSize) property, which is used to define the size for this series, similar to [CircularCoefficient](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_CircularCoefficient) in [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html).
+The [InnerRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_DoughnutCoefficient) property of doughnut series is used to define the inner circle. It also has [Radius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_DoughnutSize) property, which is used to define the size for this series, similar to [Radius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_CircularCoefficient) in [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html).
 
 {% tabs %}
 
@@ -110,7 +110,7 @@ The [DoughnutCoefficient](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 <chart:SfCircularChart>
 
     <chart:SfCircularChart.Series>
-        <chart:DoughnutSeries ItemsSource="{Binding Data}" DoughnutCoefficient="0.7"
+        <chart:DoughnutSeries ItemsSource="{Binding Data}" InnerRadius="0.7"
                           XBindingPath="Product" 
                           YBindingPath="SalesRate" />
     </chart:SfCircularChart.Series>
@@ -126,7 +126,7 @@ SfCircularChart chart = new SfCircularChart();
 DoughnutSeries series = new DoughnutSeries();
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
-series.DoughnutCoefficient = 0.7;
+series.InnerRadius = 0.7;
 
 chart.Series.Add(series);
 
@@ -135,44 +135,6 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Doughnut coefficient support in WinUI Chart](Series_images/doughnut_coefficient.png)
-
-## Doughnut Size
-
-The size of doughnut series can be customized by using the [DoughnutSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_DoughnutSize) property. The following code illustrates how to use this property in series.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCircularChart>
-
-    <chart:SfCircularChart.Series>
-        <chart:DoughnutSeries DoughnutSize="0.8" />
-        <chart:DoughnutSeries DoughnutSize="0.8" />
-    </chart:SfCircularChart.Series>
-
-</chart:SfCircularChart>
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCircularChart chart = new SfCircularChart();
-
-DoughnutSeries series1 = new DoughnutSeries();
-. . .
-series1.DoughnutSize = 0.8;
-chart.Series.Add(series1);
-
-DoughnutSeries series2 = new DoughnutSeries();
-. . .
-series2.DoughnutSize = 0.8;
-chart.Series.Add(series2);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Doughnut size support in WinUI Chart](Series_images/doughnut_size.png)
 
 ## Semi Doughnut
 
