@@ -130,12 +130,13 @@ series.DataLabelSettings = new CircularDataLabelSettings()
     Position = CircularSeriesLabelPosition.Outside,
     Foreground = new SolidColorBrush(Colors.White),
     BorderBrush = new SolidColorBrush(Colors.Black),
-    Background =new SolidColorBrush(Colors.AliceBlue),
+    Background = new SolidColorBrush(Color.FromArgb(255, 30, 136, 229)),
     BorderThickness = new Thickness(1),
     Margin = new Thickness(1),
     FontStyle = FontStyle.Italic,
     FontFamily = new FontFamily("Calibri"),
-    FontSize = 11
+    FontSize = 11,
+    Context = LabelContext.Percentage
 };
 
 chart.Series.Add(series);
@@ -259,7 +260,7 @@ chart.Series.Add(series);
 . . .
 <chart:PieSeries ShowDataLabels="True">
     <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings Position="Outside" Rotation="335"/>
+        <chart:CircularDataLabelSettings Context="Percentage" Position="Outside" Rotation="335"/>
     </chart:PieSeries.DataLabelSettings>
 </chart:PieSeries>
 . . .
@@ -275,6 +276,7 @@ PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
 series.DataLabelSettings = new CircularDataLabelSettings()
 {
+    Context = LabelContext.Percentage,
     Position = CircularSeriesLabelPosition.Outside,
     Rotation = 335,
 };
@@ -311,7 +313,7 @@ The connector line can be customized using the below properties.
 . . . 
 <chart:PieSeries ShowDataLabels="True">
     <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings ShowConnectorLine="True" ConnectorHeight="40" ConnectorType="StraightLine" ConnectorLineStyle="{StaticResource lineStyle}"/>
+        <chart:CircularDataLabelSettings Position="Outside" Context="Percentage" ShowConnectorLine="True" ConnectorHeight="40" ConnectorType="StraightLine" ConnectorLineStyle="{StaticResource lineStyle}"/>
     </chart:PieSeries.DataLabelSettings>
 </chart:PieSeries>
 
@@ -327,6 +329,8 @@ PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
 series.DataLabelSettings = new CircularDataLabelSettings()
 {
+    Context = LabelContext.Percentage,
+    Position = CircularSeriesLabelPosition.Outside,
     ShowConnectorLine = true,
     ConnectorHeight = 40,
     ConnectorLineStyle = chart.Resources["lineStyle"] as Style,
@@ -352,7 +356,7 @@ chart.Series.Add(series);
 . . .
 <chart:PieSeries ShowDataLabels="True">
     <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings ConnectorType="Bezier"
+        <chart:CircularDataLabelSettings ConnectorType="Bezier" ConnectorHeight="40"
                                          Position="Outside"
                                          ShowConnectorLine="True"/>
     </chart:PieSeries.DataLabelSettings>
@@ -370,6 +374,7 @@ series.ShowDataLabels = true;
 series.DataLabelSettings = new CircularDataLabelSettings()
 {
     ShowConnectorLine = true,
+    ConnectorHeight = 40,
     ConnectorType = ConnectorMode.Bezier, 
     Position = CircularSeriesLabelPosition.Outside,
 };
@@ -396,7 +401,10 @@ chart.Series.Add(series);
 . . .
 <chart:PieSeries ShowDataLabels="True">
     <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings UseSeriesPalette="True"/>
+        <chart:CircularDataLabelSettings UseSeriesPalette="True" 
+        ShowConnectorLine="True" 
+        ConnectorHeight="40"
+        Position="Outside"/>
     </chart:PieSeries.DataLabelSettings>
 </chart:PieSeries>
 
@@ -413,6 +421,9 @@ series.ShowDataLabels = true;
 series.DataLabelSettings = new CircularDataLabelSettings()
 {
     UseSeriesPalette = true,
+    ShowConnectorLine = true,
+    ConnectorHeight = 40,
+    Position = CircularSeriesLabelPosition.Outside,
 };
 
 chart.Series.Add(series);
