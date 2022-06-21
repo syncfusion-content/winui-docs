@@ -28,19 +28,19 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
             </gauge:LinearAxis.BarPointers>
 
             <gauge:LinearAxis.MarkerPointers>
-                <gauge:ShapePointer Value="60"
+                <gauge:LinearShapePointer Value="60"
                                     VerticalAnchor="End"
                                     OffsetPoint="0,-3"
                                     EnableAnimation="True" />
 
-                <gauge:ContentPointer Value="60"
+                <gauge:LinearContentPointer Value="60"
                                       VerticalAnchor="End"
                                       OffsetPoint="0,-23"
                                       EnableAnimation="True">
-                    <gauge:ContentPointer.Content>
+                    <gauge:LinearContentPointer.Content>
                         <TextBlock Text="60%" />
-                    </gauge:ContentPointer.Content>
-                </gauge:ContentPointer>
+                    </gauge:LinearContentPointer.Content>
+                </gauge:LinearContentPointer>
 
             </gauge:LinearAxis.MarkerPointers>
         </gauge:LinearAxis>
@@ -60,14 +60,14 @@ barPointer1.Value = 60;
 barPointer1.EnableAnimation = true;
 sfLinearGauge.Axis.BarPointers.Add(barPointer1);
 
-ShapePointer shapePointer1 = new ShapePointer();
+LinearShapePointer shapePointer1 = new LinearShapePointer();
 shapePointer1.Value = 60;
 shapePointer1.VerticalAnchor = GaugeAnchor.End;
 shapePointer1.OffsetPoint = new Point(0, -3);
 shapePointer1.EnableAnimation = true;
 sfLinearGauge.Axis.MarkerPointers.Add(shapePointer1);
 
-ContentPointer contentPointer1 = new ContentPointer();
+LinearContentPointer contentPointer1 = new LinearContentPointer();
 contentPointer1.Value = 60;
 contentPointer1.VerticalAnchor = GaugeAnchor.End;
 contentPointer1.OffsetPoint = new Point(0, -23);
@@ -103,21 +103,21 @@ The [`AnimationDuration`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
             </gauge:LinearAxis.BarPointers>
 
             <gauge:LinearAxis.MarkerPointers>
-                <gauge:ShapePointer Value="60"
+                <gauge:LinearShapePointer Value="60"
                                     VerticalAnchor="End"
                                     OffsetPoint="0,-3"
                                     EnableAnimation="True"
                                     AnimationDuration="3000" />
 
-                <gauge:ContentPointer Value="60"
+                <gauge:LinearContentPointer Value="60"
                                       VerticalAnchor="End"
                                       OffsetPoint="0,-23"
                                       EnableAnimation="True"
                                       AnimationDuration="3000">
-                    <gauge:ContentPointer.Content>
+                    <gauge:LinearContentPointer.Content>
                         <TextBlock Text="60%" />
-                    </gauge:ContentPointer.Content>
-                </gauge:ContentPointer>
+                    </gauge:LinearContentPointer.Content>
+                </gauge:LinearContentPointer>
 
             </gauge:LinearAxis.MarkerPointers>
         </gauge:LinearAxis>
@@ -138,7 +138,7 @@ barPointer1.EnableAnimation = true;
 barPointer1.AnimationDuration = 3000;
 sfLinearGauge.Axis.BarPointers.Add(barPointer1);
 
-ShapePointer shapePointer1 = new ShapePointer();
+LinearShapePointer shapePointer1 = new LinearShapePointer();
 shapePointer1.Value = 60;
 shapePointer1.VerticalAnchor = GaugeAnchor.End;
 shapePointer1.OffsetPoint = new Point(0, -3);
@@ -146,7 +146,7 @@ shapePointer1.EnableAnimation = true;
 shapePointer1.AnimationDuration = 3000;
 sfLinearGauge.Axis.MarkerPointers.Add(shapePointer1);
 
-ContentPointer contentPointer1 = new ContentPointer();
+LinearContentPointer contentPointer1 = new LinearContentPointer();
 contentPointer1.Value = 60;
 contentPointer1.VerticalAnchor = GaugeAnchor.End;
 contentPointer1.OffsetPoint = new Point(0, -23);
@@ -187,28 +187,28 @@ The [`AnimationDuration`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
             </gauge:LinearAxis.BarPointers>
 
             <gauge:LinearAxis.MarkerPointers>
-                <gauge:ShapePointer Value="70"
+                <gauge:LinearShapePointer Value="70"
                                     VerticalAnchor="End"
                                     OffsetPoint="0,-3"
                                     EnableAnimation="True"
                                     AnimationDuration="3000">
-                    <gauge:ShapePointer.AnimationEasingFunction>
+                    <gauge:LinearShapePointer.AnimationEasingFunction>
                         <CircleEase EasingMode="EaseIn" />
-                    </gauge:ShapePointer.AnimationEasingFunction>
-                </gauge:ShapePointer>
+                    </gauge:LinearShapePointer.AnimationEasingFunction>
+                </gauge:LinearShapePointer>
 
-                <gauge:ContentPointer Value="70"
+                <gauge:LinearContentPointer Value="70"
                                       VerticalAnchor="End"
                                       OffsetPoint="0,-23"
                                       EnableAnimation="True"
                                       AnimationDuration="3000">
-                    <gauge:ContentPointer.AnimationEasingFunction>
+                    <gauge:LinearContentPointer.AnimationEasingFunction>
                         <CircleEase EasingMode="EaseIn" />
-                    </gauge:ContentPointer.AnimationEasingFunction>
-                    <gauge:ContentPointer.Content>
+                    </gauge:LinearContentPointer.AnimationEasingFunction>
+                    <gauge:LinearContentPointer.Content>
                         <TextBlock Text="70%" />
-                    </gauge:ContentPointer.Content>
-                </gauge:ContentPointer>
+                    </gauge:LinearContentPointer.Content>
+                </gauge:LinearContentPointer>
 
             </gauge:LinearAxis.MarkerPointers>
         </gauge:LinearAxis>
@@ -230,7 +230,7 @@ barPointer1.AnimationDuration = 3000;
 barPointer1.AnimationEasingFunction = new CircleEase { EasingMode = EasingMode.EaseIn };
 sfLinearGauge.Axis.BarPointers.Add(barPointer1);
 
-ShapePointer shapePointer1 = new ShapePointer();
+LinearShapePointer shapePointer1 = new LinearShapePointer();
 shapePointer1.Value = 70;
 shapePointer1.VerticalAnchor = GaugeAnchor.End;
 shapePointer1.OffsetPoint = new Point(0, -3);
@@ -239,7 +239,7 @@ shapePointer1.AnimationDuration = 3000;
 shapePointer1.AnimationEasingFunction = new CircleEase { EasingMode = EasingMode.EaseIn };
 sfLinearGauge.Axis.MarkerPointers.Add(shapePointer1);
 
-ContentPointer contentPointer1 = new ContentPointer();
+LinearContentPointer contentPointer1 = new LinearContentPointer();
 contentPointer1.Value = 70;
 contentPointer1.VerticalAnchor = GaugeAnchor.End;
 contentPointer1.OffsetPoint = new Point(0, -23);

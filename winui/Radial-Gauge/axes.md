@@ -581,15 +581,15 @@ this.Content = sfRadialGauge;
             </gauge:RadialAxis.BackgroundContent>              
 
             <gauge:RadialAxis.Pointers>
-                <gauge:MarkerPointer Value="90"
+                <gauge:ShapePointer Value="90"
                                      Background="#FFDF5F2D"
                                      EnableAnimation="True"
                                      AnimationDuration="1200"
                                      MarkerOffset="0.71"
                                      OffsetUnit="Factor"
-                                     MarkerType="Triangle"
-                                     MarkerHeight="10"
-                                     MarkerWidth="15" />
+                                     ShapeType="Triangle"
+                                     ShapeHeight="10"
+                                     ShapeWidth="15" />
             </gauge:RadialAxis.Pointers>
 
             <gauge:RadialAxis.Annotations>
@@ -639,17 +639,17 @@ Image image = new Image { Source = bm };
 radialAxis.BackgroundContent = image;
 sfRadialGauge.Axes.Add(radialAxis);
 
-MarkerPointer markerPointer = new MarkerPointer();
-markerPointer.Value = 90;
-markerPointer.Background = new SolidColorBrush(Color.FromArgb(255, 223, 95, 45));
-markerPointer.EnableAnimation = true;
-markerPointer.AnimationDuration = 1200;
-markerPointer.MarkerOffset = 0.71;
-markerPointer.OffsetUnit = SizeUnit.Factor;
-markerPointer.MarkerType = Syncfusion.UI.Xaml.Gauges.MarkerType.Triangle;
-markerPointer.MarkerHeight = 10;
-markerPointer.MarkerWidth = 15;
-radialAxis.Pointers.Add(markerPointer);
+ShapePointer shapePointer = new ShapePointer();
+shapePointer.Value = 90;
+shapePointer.Background = new SolidColorBrush(Color.FromArgb(255, 223, 95, 45));
+shapePointer.EnableAnimation = true;
+shapePointer.AnimationDuration = 1200;
+shapePointer.MarkerOffset = 0.71;
+shapePointer.OffsetUnit = SizeUnit.Factor;
+shapePointer.ShapeType = Syncfusion.UI.Xaml.Gauges.GaugeShapeType.Triangle;
+shapePointer.ShapeHeight = 10;
+shapePointer.ShapeWidth = 15;
+radialAxis.Pointers.Add(shapePointer);
 
 GaugeAnnotation gaugeAnnotation = new GaugeAnnotation();
 gaugeAnnotation.DirectionValue = 270;

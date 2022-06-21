@@ -36,17 +36,17 @@ In addition to the default pointer, you can add n number of pointers to an axis 
             </gauge:LinearAxis.BarPointers>
 
             <gauge:LinearAxis.MarkerPointers>
-                <gauge:ShapePointer Value="90"
+                <gauge:LinearShapePointer Value="90"
                                     VerticalAnchor="End"
                                     OffsetPoint="0,-3" />
 
-                <gauge:ContentPointer Value="90"
+                <gauge:LinearContentPointer Value="90"
                                       VerticalAnchor="End"
                                       OffsetPoint="0,-23">
-                    <gauge:ContentPointer.Content>
+                    <gauge:LinearContentPointer.Content>
                         <TextBlock Text="90%" />
-                    </gauge:ContentPointer.Content>
-                </gauge:ContentPointer>
+                    </gauge:LinearContentPointer.Content>
+                </gauge:LinearContentPointer>
 
             </gauge:LinearAxis.MarkerPointers>
         </gauge:LinearAxis>
@@ -64,13 +64,13 @@ BarPointer barPointer1 = new BarPointer();
 barPointer1.Value = 90;
 sfLinearGauge.Axis.BarPointers.Add(barPointer1);
 
-ShapePointer shapePointer1 = new ShapePointer();
+LinearShapePointer shapePointer1 = new LinearShapePointer();
 shapePointer1.Value = 90;
 shapePointer1.VerticalAnchor = GaugeAnchor.End;
 shapePointer1.OffsetPoint = new Point(0, -3);
 sfLinearGauge.Axis.MarkerPointers.Add(shapePointer1);
 
-ContentPointer contentPointer1 = new ContentPointer();
+LinearContentPointer contentPointer1 = new LinearContentPointer();
 contentPointer1.Value = 90;
 contentPointer1.VerticalAnchor = GaugeAnchor.End;
 contentPointer1.OffsetPoint = new Point(0, -23);
@@ -99,7 +99,7 @@ Shape pointer can be dragged over the scale value. It can be achieved by clickin
                           AxisLineStroke="CornflowerBlue"
                           AxisLineStrokeThickness="30">
             <gauge:LinearAxis.MarkerPointers>
-                <gauge:ShapePointer Value="30"
+                <gauge:LinearShapePointer Value="30"
                                     IsInteractive="True"
                                     OffsetPoint="0,-15"
                                     VerticalAnchor="End"
@@ -118,7 +118,7 @@ sfLinearGauge.Axis.ShowTicks = false;
 sfLinearGauge.Axis.AxisLineStrokeThickness = 30;
 sfLinearGauge.Axis.AxisLineStroke = new SolidColorBrush(Colors.CornflowerBlue);
 
-ShapePointer shapePointer1 = new ShapePointer();
+LinearShapePointer shapePointer1 = new LinearShapePointer();
 shapePointer1.Value = 30;
 shapePointer1.IsInteractive = true;
 shapePointer1.VerticalAnchor = GaugeAnchor.End;
@@ -154,7 +154,7 @@ this.Content = sfLinearGauge;
                           AxisLineStroke="CornflowerBlue"
                           AxisLineStrokeThickness="30">
             <gauge:LinearAxis.MarkerPointers>
-                <gauge:ShapePointer Value="30"
+                <gauge:LinearShapePointer Value="30"
                                     IsInteractive="True"
                                     OffsetPoint="0,-15"
                                     VerticalAnchor="End"

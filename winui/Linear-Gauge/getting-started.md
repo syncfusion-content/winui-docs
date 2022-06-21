@@ -193,7 +193,7 @@ Shape pointer is to highlight current values by using the different types of sha
                           Interval="10">
             ...
             <gauge:LinearAxis.MarkerPointers>
-                <gauge:ShapePointer Value="90"
+                <gauge:LinearShapePointer Value="90"
                                     VerticalAnchor="End"
                                     OffsetPoint="0,-8" />
             </gauge:LinearAxis.MarkerPointers>
@@ -209,7 +209,7 @@ SfLinearGauge sfLinearGauge = new SfLinearGauge();
 sfLinearGauge.Axis.Maximum = 140;
 sfLinearGauge.Axis.Interval = 10;
 ...
-ShapePointer shapePointer1 = new ShapePointer();
+LinearShapePointer shapePointer1 = new LinearShapePointer();
 shapePointer1.Value = 90;
 shapePointer1.VerticalAnchor = GaugeAnchor.End;
 shapePointer1.OffsetPoint = new Point(0, -8);
@@ -236,13 +236,13 @@ Content pointer is used to highlight values using an image, icon, text, or any o
         <gauge:LinearAxis Maximum="140"
                           Interval="10">
             ...
-            <gauge:ContentPointer Value="90"
+            <gauge:LinearContentPointer Value="90"
                       VerticalAnchor="End"
                       OffsetPoint="0,-28">
-                <gauge:ContentPointer.Content>
+                <gauge:LinearContentPointer.Content>
                     <TextBlock Text="90%" />
-                </gauge:ContentPointer.Content>
-            </gauge:ContentPointer>
+                </gauge:LinearContentPointer.Content>
+            </gauge:LinearContentPointer>
         </gauge:LinearAxis>
     </gauge:SfLinearGauge.Axis>
 </gauge:SfLinearGauge>
@@ -255,7 +255,7 @@ SfLinearGauge sfLinearGauge = new SfLinearGauge();
 sfLinearGauge.Axis.Maximum = 140;
 sfLinearGauge.Axis.Interval = 10;
 ...
-ContentPointer contentPointer1 = new ContentPointer();
+LinearContentPointer contentPointer1 = new LinearContentPointer();
 contentPointer1.Value = 90;
 contentPointer1.VerticalAnchor = GaugeAnchor.End;
 contentPointer1.OffsetPoint = new Point(0, -28);
@@ -297,17 +297,17 @@ The following code example gives you the complete code of above configurations.
             </gauge:LinearAxis.BarPointers>
 
             <gauge:LinearAxis.MarkerPointers>
-                <gauge:ShapePointer Value="90"
+                <gauge:LinearShapePointer Value="90"
                                     VerticalAnchor="End"
                                     OffsetPoint="0,-8" />
 
-                <gauge:ContentPointer Value="90"
+                <gauge:LinearContentPointer Value="90"
                                       VerticalAnchor="End"
                                       OffsetPoint="0,-28">
-                    <gauge:ContentPointer.Content>
+                    <gauge:LinearContentPointer.Content>
                         <TextBlock Text="90%" />
-                    </gauge:ContentPointer.Content>
-                </gauge:ContentPointer>
+                    </gauge:LinearContentPointer.Content>
+                </gauge:LinearContentPointer>
 
             </gauge:LinearAxis.MarkerPointers>
         </gauge:LinearAxis>
@@ -344,13 +344,13 @@ BarPointer barPointer1 = new BarPointer();
 barPointer1.Value = 90;
 sfLinearGauge.Axis.BarPointers.Add(barPointer1);
 
-ShapePointer shapePointer1 = new ShapePointer();
+LinearShapePointer shapePointer1 = new LinearShapePointer();
 shapePointer1.Value = 90;
 shapePointer1.VerticalAnchor = GaugeAnchor.End;
 shapePointer1.OffsetPoint = new Point(0, -8);
 sfLinearGauge.Axis.MarkerPointers.Add(shapePointer1);
 
-ContentPointer contentPointer1 = new ContentPointer();
+LinearContentPointer contentPointer1 = new LinearContentPointer();
 contentPointer1.Value = 90;
 contentPointer1.VerticalAnchor = GaugeAnchor.End;
 contentPointer1.OffsetPoint = new Point(0, -28);

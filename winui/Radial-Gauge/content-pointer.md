@@ -204,4 +204,4 @@ this.Content = sfRadialGauge;
 
 ![WinUI Radial Gauge Marker Offset](images/content-pointer/content-pointer-offset.png)
 
-N> Provide positive value to `MarkerOffset` to move the pointer inside of the axis and negative value to move the pointer outside of the axis.
+N> Provide positive value to [`MarkerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerOffset) to move the pointer inside of the axis and negative value to move the pointer outside of the axis.

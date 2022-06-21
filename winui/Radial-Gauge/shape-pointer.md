@@ -75,11 +75,11 @@ The shape pointer can be customized using the following properties:
         <gauge:RadialAxis>
             <gauge:RadialAxis.Pointers>
                 <gauge:ShapePointer Value="60"
-                                     MarkerHeight="30"
-                                     MarkerWidth="30"
+                                     ShapeHeight="30"
+                                     ShapeWidth="30"
                                      BorderBrush="Black"
                                      BorderWidth="3"
-                                     MarkerType="Circle"
+                                     ShapeType="Circle"
                                      Background="LightBlue"/>
             </gauge:RadialAxis.Pointers>
         </gauge:RadialAxis>
@@ -101,7 +101,7 @@ shapePointer.ShapeHeight = 30;
 shapePointer.ShapeWidth = 30;
 shapePointer.Stroke = new SolidColorBrush(Colors.Black);
 shapePointer.StrokeThickness = 3;
-shapePointer.ShapeType = Syncfusion.UI.Xaml.Gauges.MarkerType.Circle;
+shapePointer.ShapeType = Syncfusion.UI.Xaml.Gauges.GaugeShapeType.Circle;
 shapePointer.Fill = new SolidColorBrush(Colors.LightBlue);
 radialAxis.Pointers.Add(shapePointer);
 
@@ -156,4 +156,4 @@ this.Content = sfRadialGauge;
 
 ![WinUI Radial Gauge Marker Offset](images/marker-pointers/winui-radial-gauge-marker-offset.png)
 
-N> Provide positive value to `MarkerOffset` to move the pointer inside of the axis and negative value to move the pointer outside of the axis.
+N> Provide positive value to [`MarkerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerOffset) to move the pointer inside of the axis and negative value to move the pointer outside of the axis.
