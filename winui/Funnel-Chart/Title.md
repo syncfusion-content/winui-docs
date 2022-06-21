@@ -95,7 +95,6 @@ The title text content can be aligned horizontally to the left, center or right 
  <chart:SfFunnelChart x:Name="chart" 
                 HorizontalHeaderAlignment="Right"
                 ShowTooltip="True"
-                Palette="BlueChrome"
                 Height="388" Width="500" 
                 ItemsSource="{Binding Data}" 
                 XBindingPath="Category"
@@ -136,7 +135,6 @@ public sealed partial class MainPage : Page
         chart.DataContext = viewModel;
         chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
         chart.HorizontalHeaderAlignment = HorizontalAlignment.Right;
-        chart.Palette = ChartColorPalette.BlueChrome;
         chart.XBindingPath = "Category";
         chart.YBindingPath = "Value";
         chart.Height = 388;

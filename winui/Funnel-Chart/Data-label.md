@@ -21,7 +21,6 @@ To define the data label in the chart, set the [ShowDataLabels](https://help.syn
 
 <chart:SfFunnelChart x:Name="chart" 
                 ShowDataLabels="True"
-                Palette="BlueChrome" 
                 ItemsSource="{Binding Data}" 
                 XBindingPath="Category"
                 YBindingPath="Value">
@@ -34,7 +33,6 @@ To define the data label in the chart, set the [ShowDataLabels](https://help.syn
 
 SfFunnelChart chart = new SfFunnelChart();
 chart.ShowDataLabels = true;
-chart.Palette = ChartColorPalette.BlueChrome;
 chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
@@ -57,7 +55,6 @@ To customize the content of data labels, need to define [DataLabelSettings](http
 
 <chart:SfFunnelChart x:Name="chart" 
                 ShowDataLabels="True"
-                Palette="BlueChrome" 
                 ItemsSource="{Binding Data}" 
                 XBindingPath="Category"
                 YBindingPath="Value">
@@ -107,7 +104,6 @@ The following properties are used to customize the data label:
 
 <chart:SfFunnelChart x:Name="chart" 
                 ShowDataLabels="True"
-                Palette="BlueChrome" 
                 ItemsSource="{Binding Data}" 
                 XBindingPath="Category"
                 YBindingPath="Value">
@@ -129,10 +125,10 @@ chart.DataLabelSettings = new FunnelDataLabelSettings()
 { 
     Foreground = new SolidColorBrush(Colors.White),
     BorderBrush = new SolidColorBrush(Colors.White),
-    Background = "#1E88E5",
+    Background = new SolidColorBrush(Color.FromArgb(255, 30, 136, 229)),
     BorderThickness = new Thickness(1),
     Margin = new Thickness(1),
-    FontStyle = FontStyles.Italic,
+    FontStyle = FontStyle.Italic,
     FontFamily = new FontFamily("Calibri"),
     FontSize = 16
 };
@@ -153,10 +149,11 @@ The appearance of the data label can be customized by using the [ContentTemplate
 
 {% highlight xaml %}
 
-<Page.Resources>
-    <DataTemplate x:Key="dataLabelTemplate">
-        <StackPanel Orientation="Vertical">
-            <Path Grid.Row="0"  Stretch="Uniform" Fill="LightGreen" Width="15" Height="15" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5" Data="M11.771002,1.993L5.0080013,14.284 10.752002,14.284 6.6450019,22.804 17.900003,11.921 11.655003,11.921 18.472004,1.993z M10.593002,0L22.256004,0 15.440003,9.9280005 22.827004,9.9280005 0,32 7.5790019,16.277 1.637001,16.277z">
+<Grid x:Name="grid">
+    <Grid.Resources>
+       <DataTemplate x:Key="dataLabelTemplate">
+            <StackPanel Orientation="Vertical">
+                <Path Grid.Row="0"  Stretch="Uniform" Fill="LightGreen" Width="15" Height="15" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5" Data="M11.771002,1.993L5.0080013,14.284 10.752002,14.284 6.6450019,22.804 17.900003,11.921 11.655003,11.921 18.472004,1.993z M10.593002,0L22.256004,0 15.440003,9.9280005 22.827004,9.9280005 0,32 7.5790019,16.277 1.637001,16.277z">
                     <Path.RenderTransform>
                         <TransformGroup>
                             <TransformGroup.Children>
@@ -166,14 +163,12 @@ The appearance of the data label can be customized by using the [ContentTemplate
                         </TransformGroup>
                     </Path.RenderTransform>
                 </Path>
-            <TextBlock Grid.Row="1" Text="{Binding}" FontSize="12" Foreground="White"></TextBlock>
-        </StackPanel>
-    </DataTemplate>
-</Page.Resources>
-<Grid>
+                <TextBlock Grid.Row="1" Text="{Binding}" FontSize="12" Foreground="White"></TextBlock>
+            </StackPanel>
+        </DataTemplate>
+    </Grid.Resources>
    <chart:SfFunnelChart x:Name="chart" 
                 ShowDataLabels="True"
-                Palette="BlueChrome" 
                 ItemsSource="{Binding Data}" 
                 XBindingPath="Category"
                 YBindingPath="Value">
@@ -194,7 +189,7 @@ chart.ShowDataLabels = true;
 . . . 
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 { 
-    ContentTemplate = this.Resources["dataLabelTemplate"] as DataTemplate
+    ContentTemplate = this.grid.Resources["dataLabelTemplate"] as DataTemplate
 };
 
 this.Content = chart;
@@ -215,13 +210,12 @@ The [Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 
 <chart:SfFunnelChart x:Name="chart" 
                 ShowDataLabels="True"
-                Palette="BlueChrome" 
                 ItemsSource="{Binding Data}" 
                 XBindingPath="Category"
                 YBindingPath="Value">
 
     <chart:SfFunnelChart.DataLabelSettings>
-        <chart:FunnelDataLabelSettings Format="#.000" Foreground="White" />
+        <chart:FunnelDataLabelSettings Format="#.00" Foreground="White" />
     </chart:SfFunnelChart.DataLabelSettings>
 
 </chart:SfFunnelChart>
@@ -235,7 +229,7 @@ chart.ShowDataLabels = true;
 . . . 
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 {  
-    Format = "#.000",
+    Format = "#.00",
     Foreground = new SolidColorBrush(Colors.White)
 };
 
@@ -257,7 +251,6 @@ The [Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Ch
 
 <chart:SfFunnelChart x:Name="chart" 
                 ShowDataLabels="True"
-                Palette="BlueChrome" 
                 ItemsSource="{Binding Data}" 
                 XBindingPath="Category"
                 YBindingPath="Value">
@@ -279,7 +272,7 @@ chart.DataLabelSettings = new FunnelDataLabelSettings()
 { 
     Rotation = 45,
     BorderBrush = new SolidColorBrush(Colors.White),
-    Background = "#1E88E5",
+    Background = new SolidColorBrush(Color.FromArgb(255, 30, 136, 229)),
     BorderThickness = new Thickness(1)
 };
 

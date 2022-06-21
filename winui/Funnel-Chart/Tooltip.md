@@ -179,34 +179,26 @@ The following code example explains how to display both x-value and y-value in t
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart x:Name="chart" 
-                ShowTooltip="True" 
-                TooltipTemplate="{StaticResource tooltipTemplate}"
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
-
-    <chart:SfFunnelChart.Resources>
+<Grid x:Name="grid">
+    <Grid.Resources>
         <DataTemplate x:Key="tooltipTemplate">
-            <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal" Background="LightGreen">
                 <TextBlock Text="{Binding Item.Category}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 <TextBlock Text=" : " Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 <TextBlock Text="{Binding Item.Value}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </StackPanel>
         </DataTemplate>
 
-        <Style TargetType="Path" x:Key="style">
-            <Setter Property="Stroke" Value="Black"/>
-            <Setter Property="Fill" Value="LightGreen"/>
-            <Setter Property="StrokeThickness" Value="2"/>
-        </Style>
-    </chart:SfFunnelChart.Resources>
+    </Grid.Resources>
 
-    <chart:SfFunnelChart.TooltipBehavior>
-        <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
-    </chart:SfFunnelChart.TooltipBehavior>
-
-</chart:SfFunnelChart>
+    <chart:SfFunnelChart x:Name="chart" 
+                         ItemsSource="{Binding Data}" 
+                         XBindingPath="Category"
+                         YBindingPath="Value"
+                         ShowTooltip="True"
+                         TooltipTemplate="{StaticResource tooltipTemplate}">
+        </chart:SfFunnelChart>
+</Grid> 
 
 {% endhighlight %}
 
@@ -216,8 +208,8 @@ SfFunnelChart chart = new SfFunnelChart();
 chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
-chart.TooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate;
 chart.ShowTooltip = true;
+chart.TooltipTemplate = this.grid.Resources["tooltipTemplate"] as DataTemplate;
 . . .
 this.Content = chart;
         
