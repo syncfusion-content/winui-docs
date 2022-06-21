@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Marker Pointer in WinUI Radial Gauge control | Syncfusion
-description: Learn here all about Marker Pointer feature of Syncfusion WinUI Radial Gauge control with image, text pointer support and more.
+title: Shape Pointer in WinUI Radial Gauge control | Syncfusion
+description: Learn here all about Shape Pointer feature of Syncfusion WinUI Radial Gauge control with customization support.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Shape Pointer in WinUI Radial Gauge
 
-The `ShapePointer` in `SfRadialGauge` allows you to use any build-in shapes (`ShapeType`) as a pointer to mark a specified value. The default `ShapeType` of the ShapePointer is InvertedTriangle.
+The `ShapePointer` in [`SfRadialGauge`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfRadialGauge.html) allows you to use any build-in shapes (`ShapeType`) as a pointer to mark a specified value. The default `ShapeType` of the ShapePointer is InvertedTriangle.
 
 {% tabs %}
 
@@ -115,9 +115,9 @@ this.Content = sfRadialGauge;
 
 ## Shape position customization
 
-The shape pointer can be moved near or far from its actual position using the `MarkerOffset` and `OffsetUnit` properties. 
+The shape pointer can be moved near or far from its actual position using the [`MarkerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerOffset) and [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_OffsetUnit) properties. 
 
-When you set `OffsetUnit` to pixel, the shape pointer will be moved based on the pixel value. If you set `OffsetUnit` to factor, then provided factor will be multiplied with the axis radius value, and then the pointer will be moved to corresponding value. The default value of `OffsetUnit` is `SizeUnit.Pixel`.
+When you set [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_OffsetUnit) to pixel, the shape pointer will be moved based on the pixel value. If you set [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_OffsetUnit) to factor, then provided factor will be multiplied with the axis radius value, and then the pointer will be moved to corresponding value. The default value of [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_OffsetUnit) is [`SizeUnit.Pixel`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SizeUnit.html#Syncfusion_UI_Xaml_Gauges_SizeUnit_Pixel).
 
 {% tabs %}
 
