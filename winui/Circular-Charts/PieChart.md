@@ -43,9 +43,9 @@ chart.Series.Add(series);
 
 ![Pie series type in WinUI Chart](Series_images/pie_chart.png)
 
-## Circular Coefficient
+## Radius
 
-The rendering size of the [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html) can be controlled using the [CircularCoefficient](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_CircularCoefficient) property as shown in the following code sample.
+The rendering size of the [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html) can be controlled using the [Radius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_CircularCoefficient) property as shown in the following code sample.
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ The rendering size of the [PieSeries](https://help.syncfusion.com/cr/winui/Syncf
         <chart:PieSeries ItemsSource="{Binding Data}" 
                          XBindingPath="Product" 
                          YBindingPath="SalesRate"
-                         CircularCoefficient = "0.9"/>
+                         Radius = "0.9"/>
     </chart:SfCircularChart.Series>
         
 </chart:SfCircularChart>
@@ -71,7 +71,7 @@ SfCircularChart chart = new SfCircularChart();
 PieSeries series = new PieSeries();
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
-series.CircularCoefficient = 0.9;
+series.Radius = 0.9;
 
 chart.Series.Add(series);
 
@@ -79,7 +79,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Circular coefficient support in WinUI Chart](Series_images/winui_pie_circularcoefficient.png)
+![Radius support in WinUI Chart](Series_images/winui_pie_Radius.png)
 
 ## Group small data points into “others”
 
@@ -188,9 +188,9 @@ chart.Series.Add(series);
 <chart:SfCircularChart>
 . . .
     <chart:SfCircularChart.Series>
-        <chart:DoughnutSeries ItemsSource="{Binding Data}"  DoughnutCoefficient="0.5" XBindingPath="Demand" YBindingPath="Year2010"/>
+        <chart:DoughnutSeries ItemsSource="{Binding Data}"  InnerRadius="0.7" XBindingPath="Demand" YBindingPath="Year2010"/>
                     
-        <chart:PieSeries ItemsSource="{Binding Data}" CircularCoefficient="0.5" XBindingPath="Demand"  YBindingPath="Year2011"/>
+        <chart:PieSeries ItemsSource="{Binding Data}" Radius="0.5" XBindingPath="Demand"  YBindingPath="Year2011"/>
     </chart:SfCircularChart.Series>
 
 </chart:SfCircularChart>
@@ -205,13 +205,13 @@ DoughnutSeries series1 = new DoughnutSeries();
 series1.SetBinding(DoughnutSeries.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
 series1.XBindingPath = "Demand";
 series1.YBindingPath = "Year2010";
-series1.DoughnutCoefficient = 0.5;
+series1.InnerRadius = 0.7;
 
 PieSeries series2 = new PieSeries();
 series2.SetBinding(PieSeries.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
 series2.XBindingPath = "Demand";
 series2.YBindingPath = "Year2011";
-series2.CircularCoefficient = 0.5;
+series2.Radius = 0.5;
 
 chart.Series.Add(series1);
 chart.Series.Add(series2);

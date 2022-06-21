@@ -24,7 +24,6 @@ To define the tooltip in the chart, set the [ShowTooltip](https://help.syncfusio
     <chart:PieSeries ShowTooltip="True"
                      ItemsSource="{Binding Data}" 
                      ShowDataLabels="True" 
-                     Palette="BlueChrome"
                      XBindingPath="Product" 
                      YBindingPath="SalesRate">
     </chart:PieSeries>
@@ -37,7 +36,7 @@ To define the tooltip in the chart, set the [ShowTooltip](https://help.syncfusio
 
 SfCircularChart chart = new SfCircularChart();
 . . .
-PieSeries series = new PieSeries() { Label = "Continents" };
+PieSeries series = new PieSeries();
 series.ShowTooltip = true;
 chart.Series.Add(series);
 
@@ -186,18 +185,19 @@ Circular chart provides support to customize the appearance of the tooltip by us
 . . .
     <chart:SfCircularChart.Resources>
         <DataTemplate x:Key="tooltipTemplate">
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="{Binding Item.Product}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Text=" : " Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Text="{Binding Item.SalesRate}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </StackPanel>
+            <Border  Background="LightGreen">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="{Binding Item.Product}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text=" : " Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="{Binding Item.SalesRate}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Border>
         </DataTemplate>
     </chart:SfCircularChart.Resources>
 
     <chart:SfCircularChart.Series>
         <chart:PieSeries ShowTooltip="True"
                  ItemsSource="{Binding Data}" 
-                 Palette="BlueChrome"
                  XBindingPath="Product" 
                  YBindingPath="SalesRate"
                  TooltipTemplate="{StaticResource tooltipTemplate}"/>
