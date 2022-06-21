@@ -51,7 +51,7 @@ Gauge supports the following types of shape pointer:
 * Triangle
 * Rectangle
 
-![all default shape pointers](images/shape-pointer/shape_pointer_shapes.png)
+![all default shape pointers](images/shape-pointer/pointer_shapes.png)
 
 ## Custom shape pointer
 
