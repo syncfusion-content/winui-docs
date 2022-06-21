@@ -333,6 +333,8 @@ The following built-in filter types are supported in SfTreeGrid:
 
 * Number filter: Loads various menu options to filter the numeric data.
 
+* Date filter: Loads various menu options and [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) to filter DateTimeOffset type column.
+
 <table>
 <tr>
 <th>
@@ -340,6 +342,9 @@ Text filters
 </th>
 <th>
 Number filters
+</th>
+<th>
+Date filters
 </th>
 </tr>
 <tr>
@@ -349,6 +354,9 @@ When the string value is bound to the {{'[TreeGridColumn](https://help.syncfusio
 <td>
 When integer, double, short, decimal, byte, or long are bound to the {{'[TreeGridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html)'|markdownify}}, then `Number Filters` are loaded in {{'[TreeGridAdvancedFilterControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridAdvancedFilterControl.html)'|markdownify}}.
 </td>
+<td>
+When the DateTimeOffset type value is bound to the {{'[TreeGridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html)'|markdownify}}, then `Date Filters` are loaded in {{'[TreeGridAdvancedFilterControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridAdvancedFilterControl.html)'|markdownify}}.
+</td>
 </tr>
 <tr>
 <td>
@@ -356,6 +364,9 @@ When integer, double, short, decimal, byte, or long are bound to the {{'[TreeGri
 </td>
 <td>
 <img src="Filtering-images/winui-treegrid-number-filter.png" alt="Displays Number Filter in WinUI TreeGrid" />
+</td>
+<td>
+<img src="Filtering-images/winui-treegrid-date-filter.png" alt="Displays Date Filter in WinUI TreeGrid" />
 </td>
 </tr>
 <tr>
@@ -386,6 +397,19 @@ When integer, double, short, decimal, byte, or long are bound to the {{'[TreeGri
 <li>Less Than or Equal</li>
 <li>Greater Than</li>
 <li>Greater Than or Equal</li>
+</ol>
+</td>
+<td>
+<b>Filter menu options</b>
+<ol>
+<li>Equals</li>
+<li>Does Not Equal</li>
+<li>Before</li>
+<li>Before Or Equal</li>
+<li>After</li>
+<li>After or Equal</li>
+<li>Null</li>
+<li>Not Null</li>
 </ol>
 </td>
 </tr>

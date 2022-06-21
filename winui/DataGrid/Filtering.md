@@ -272,6 +272,7 @@ Below are the built-in filter types supported.
  
 * [TextFilters](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.AdvancedFilterType.html#Syncfusion_UI_Xaml_Grids_AdvancedFilterType_TextFilter) – Loads various menu options to filter the display text effectively.
 * [NumberFilters](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.AdvancedFilterType.html#Syncfusion_UI_Xaml_Grids_AdvancedFilterType_NumberFilter) – Loads various menu options to filter the numeric data.
+* [DateFilters](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.AdvancedFilterType.html#Syncfusion_UI_Xaml_Grids_AdvancedFilterType_DateFilter) – Loads various menu options and [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) to filter DateTimeOffset type column.
 
 <table>
 <tr>
@@ -281,6 +282,9 @@ Text Filters
 <th>
 Number Filters
 </th>
+<th>
+Date Filters
+</th>
 </tr>
 <tr>
 <td>
@@ -289,6 +293,9 @@ When the string value is bounded to the {{ '[GridColumn](https://help.syncfusion
 <td>
 When integer, double, short, decimal, byte or long are bound to the {{ '[GridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html)' | markdownify }} then <code>NumberFilters</code> are loaded in {{ '[AdvancedFilterControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.AdvancedFilterControl.html)' | markdownify }}.
 </td>
+<td>
+When the DateTimeOffset type value is bound to the {{ '[GridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html)' | markdownify }} then <code>DateFilters</code> are loaded in {{ '[AdvancedFilterControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.AdvancedFilterControl.html)' | markdownify }}.
+</td>
 </tr>
 <tr>
 <td>
@@ -296,6 +303,9 @@ When integer, double, short, decimal, byte or long are bound to the {{ '[GridCol
 </td>
 <td>
 <img src="Filtering_images/winui-datagrid-number-filter.png" alt="WinUI DataGrid displays Number Filter"/>
+</td>
+<td>
+<img src="Filtering_images/winui-datagrid-date-filter.png" alt="WinUI DataGrid displays Date Filter"/>
 </td>
 </tr>
 <tr>
@@ -327,6 +337,19 @@ When integer, double, short, decimal, byte or long are bound to the {{ '[GridCol
 <li>Less Than or Equal</li>
 <li>Greater Than</li>
 <li>Greater Than or Equal</li>
+</ol>
+</td>
+<td>
+<b>Filter menu options</b>
+<ol>
+<li>Equals</li>
+<li>Does Not Equal</li>
+<li>Before</li>
+<li>Before Or Equal</li>
+<li>After</li>
+<li>After or Equal</li>
+<li>Null</li>
+<li>Not Null</li>
 </ol>
 </td>
 </tr>
