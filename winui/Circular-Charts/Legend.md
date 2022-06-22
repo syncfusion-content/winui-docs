@@ -307,7 +307,7 @@ chart.Legend = new ChartLegend()
 
 ![ToggleSeriesVisibility support for legend in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_item_toggle.png)
 
-**Docking**
+## Placement
 
 Legends can be docked left, right, and top or bottom around the chart area using [Placement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) property. By default, the chart legend is docked at the top of the chart as mentioned earlier.
 
