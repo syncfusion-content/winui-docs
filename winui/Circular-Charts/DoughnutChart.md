@@ -134,7 +134,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Doughnut coefficient support in WinUI Chart](Series_images/doughnut_coefficient.png)
+![Inner radius support in WinUI Chart](Series_images/doughnut_inner_radius.png)
 
 ## Semi Doughnut
 
