@@ -36,10 +36,10 @@ A fast column chart is a special kind of series that can render a collection wit
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-DateTimeAxis primaryAxis = new DateTimeAxis();
-chart.XAxes.Add(primaryAxis);
-NumericalAxis secondaryAxis = new NumericalAxis();
-chart.YAxes.Add(secondaryAxis);
+DateTimeAxis xAxis = new DateTimeAxis();
+chart.XAxes.Add(xAxis);
+NumericalAxis yAxis = new NumericalAxis();
+chart.YAxes.Add(yAxis);
 
 FastColumnBitmapSeries series = new FastColumnBitmapSeries()
 {

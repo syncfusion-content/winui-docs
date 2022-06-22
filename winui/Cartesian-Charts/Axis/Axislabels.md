@@ -11,40 +11,6 @@ documentation: ug
 
 Axis labels are used to show the units or measures or category value of axis to visualize the data user friendly. It will be generated based on the range and the values binded to [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath) or [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.XyDataSeries.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties of series.
 
-## Position 
-
-The [LabelPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelPosition) property is used to position the axis label either inside or outside of the chart plotting area. By default, [LabelPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelPosition) is [Outside](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AxisElementPosition.html#Syncfusion_UI_Xaml_Charts_AxisElementPosition_Outside).
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart>
-. . .
-<chart:SfCartesianChart.XAxes>
-    <chart:CategoryAxis LabelPosition="Inside"/>
-</chart:SfCartesianChart.XAxes>
-
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-. . .
-CategoryAxis primaryAxis = new CategoryAxis()
-{
-    LabelPosition = AxisElementPosition.Inside
-};
-chart.XAxes.Add(primaryAxis);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Axis label position in WinUI Chart](Axis_images/WinUI_Chart_Axis_label_inside_position.png)
-
 ## Rotation Angle
 
 The [LabelRotationAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelRotationAngle) property is used to define the angle for the label content.
@@ -78,56 +44,6 @@ chart.XAxes.Add(primaryAxis);
 {% endtabs %}
 
 ![Axis label rotation angle in WinUI Chart](Axis_images/WinUI_Chart_Axis_label_rotation.png)
-
-## Custom Axis Labels
-
-Chart axis allows user to define the own axis labels. [Content](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Content) and [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Position) property of [ChartAxisLabel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html) used to defines the label for axis using the [CustomLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_CustomLabels) property as in the below code sample.
-
-N> Also directly bind the collection of labels to the [LabelSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelSource) property for defining custom labels.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart>
-. . .
-<chart:SfCartesianChart.XAxes>
-    <chart:CategoryAxis>
-        <chart:CategoryAxis.CustomLabels>
-            <chart:ChartAxisLabel Position="0" Content="0-1"/>
-            <chart:ChartAxisLabel Position="1" Content="1-2"/>
-            <chart:ChartAxisLabel Position="2" Content="2-3"/>
-            <chart:ChartAxisLabel Position="3" Content="3-4"/>
-            <chart:ChartAxisLabel Position="4" Content="4-5"/>
-            <chart:ChartAxisLabel Position="5" Content="5-5"/>
-        </chart:CategoryAxis.CustomLabels>
-    </chart:CategoryAxis>
-</chart:SfCartesianChart.XAxes>
-
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-
-CategoryAxis axis = new CategoryAxis();
-
-axis.CustomLabels.Add(new ChartAxisLabel() { Position = 0, Content = "0-1" });
-axis.CustomLabels.Add(new ChartAxisLabel() { Position = 1, Content = "1-2" });
-axis.CustomLabels.Add(new ChartAxisLabel() { Position = 2, Content = "2-3" });
-axis.CustomLabels.Add(new ChartAxisLabel() { Position = 3, Content = "3-4" });
-axis.CustomLabels.Add(new ChartAxisLabel() { Position = 4, Content = "4-5" });
-axis.CustomLabels.Add(new ChartAxisLabel() { Position = 5, Content = "5-5" });
-
-chart.XAxes.Add(axis);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Axis label customization support in WinUI](Axis_images/WinUI_Chart_Axis_Custom_labels.png)
 
 ## Format
 

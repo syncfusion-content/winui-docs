@@ -35,10 +35,10 @@ A fast stepline bitmap series is a special kind of series that can render a coll
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-DateTimeAxis primaryAxis = new DateTimeAxis();
-chart.XAxes.Add(primaryAxis);
-NumericalAxis secondaryAxis = new NumericalAxis();
-chart.YAxes.Add(secondaryAxis);
+DateTimeAxis xAxis = new DateTimeAxis();
+chart.XAxes.Add(xAxis);
+NumericalAxis yAxis = new NumericalAxis();
+chart.YAxes.Add(yAxis);
 
 FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
 {
@@ -83,10 +83,10 @@ The anti aliasing mode can be enabled using the [EnableAntiAliasing](https://hel
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-DateTimeAxis primaryAxis = new DateTimeAxis();
-chart.XAxes.Add(primaryAxis);
-NumericalAxis secondaryAxis = new NumericalAxis();
-chart.YAxes.Add(secondaryAxis);
+DateTimeAxis xAxis = new DateTimeAxis();
+chart.XAxes.Add(xAxis);
+NumericalAxis yAxis = new NumericalAxis();
+chart.YAxes.Add(yAxis);
 . . .
 FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
 {

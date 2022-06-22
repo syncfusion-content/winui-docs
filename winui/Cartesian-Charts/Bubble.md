@@ -38,10 +38,10 @@ To render a bubble series, create an instance of [BubbleSeries](https://help.syn
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-CategoryAxis primaryAxis = new CategoryAxis();
-chart.XAxes.Add(primaryAxis);
-NumericalAxis secondaryAxis = new NumericalAxis();
-chart.YAxes.Add(secondaryAxis);
+CategoryAxis xAxis = new CategoryAxis();
+chart.XAxes.Add(xAxis);
+NumericalAxis yAxis = new NumericalAxis();
+chart.YAxes.Add(yAxis);
 . . .
 BubbleSeries series = new BubbleSeries()
 {
@@ -61,103 +61,5 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Bubble chart type in WinUI Chart](Bubble_Images/WinUI_bubble_chart.png)
-
-## Show zero size bubbles
-
-The zero size bubble segments can be enabled or disabled by using the [ShowZeroBubbles](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_ShowZeroBubbles) property. The default value of this property is `True`.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart>
-
-    <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis />
-    </chart:SfCartesianChart.XAxes>
-
-    <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis />
-    </chart:SfCartesianChart.YAxes> 
-
-    <chart:BubbleSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" Size="Size" ShowZeroBubbles="True"/>
-    ...
-<chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-CategoryAxis primaryAxis = new CategoryAxis();
-chart.XAxes.Add(primaryAxis);
-NumericalAxis secondaryAxis = new NumericalAxis();
-chart.YAxes.Add(secondaryAxis);
-. . .
-BubbleSeries series = new BubbleSeries()
-{
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "XValue",
-    YBindingPath = "YValue",
-    Size = "Size",
-    ShowZeroBubbles = true,
-};
-
-chart.Series.Add(series);
-...
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Show zero size bubbles support in WinUI Chart](Bubble_Images/WinUI_bubble_chart_showzerobubble_true.png)
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart>
-    
-    <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis />
-    </chart:SfCartesianChart.XAxes>
-
-    <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis />
-    </chart:SfCartesianChart.YAxes> 
-    
-    <chart:BubbleSeries ItemsSource="{Binding Data}" XBindingPath="XValue" 
-                        YBindingPath="YValue" Size="Size"
-                        ShowZeroBubbles="False"/>
-    ...
-<chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-CategoryAxis primaryAxis = new CategoryAxis();
-chart.XAxes.Add(primaryAxis);
-NumericalAxis secondaryAxis = new NumericalAxis();
-chart.YAxes.Add(secondaryAxis);
-. . .
-BubbleSeries series = new BubbleSeries()
-{
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "XValue",
-    YBindingPath = "YValue",
-    Size = "Size",
-    ShowZeroBubbles = false,
-};
-
-chart.Series.Add(series);
-...
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![ShowZeroBubbles support in WinUI Chart](Bubble_Images/WinUI_bubble_chart_showzerobubble_false.png)
 
 N> You can refer to our [WinUI Bubble Chart](https://www.syncfusion.com/winui-controls/charts/winui-bubble-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Bubble Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Basic%20Charts/BubbleChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.

@@ -99,7 +99,7 @@ chart.YAxes.Add(new NumericalAxis();
 
 ## Minor Grid Lines
 
-Minor gridlines will be added automatically when the small tick lines is defined using the [SmallTicksPerInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTicksPerInterval) property of chart axis.
+Minor gridlines will be added automatically when the minor tick lines is defined using the [MinorTicksPerInterval]() property of chart axis.
 
 {% tabs %}
 
@@ -112,7 +112,7 @@ Minor gridlines will be added automatically when the small tick lines is defined
 </chart:SfCartesianChart.XAxes>
 
 <chart:SfCartesianChart.YAxes>
-    <chart:NumericalAxis SmallTicksPerInterval="3" />
+    <chart:NumericalAxis MinorTicksPerInterval="3" />
 </chart:SfCartesianChart.YAxes>
 . . .
 </chart:SfCartesianChart>
@@ -125,7 +125,7 @@ SfCartesianChart chart = new SfCartesianChart();
 chart.XAxes.Add(new NumericalAxis();
 NumericalAxis secondaryAxis = new NumericalAxis()
 {
-    SmallTicksPerInterval = 3,
+    MinorTicksPerInterval = 3,
 };
 chart.YAxes.Add(secondaryAxis);
 . . .
@@ -157,7 +157,7 @@ The [MinorGridLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 </chart:SfCartesianChart.XAxes>
 
 <chart:SfCartesianChart.YAxes>
-    <chart:NumericalAxis SmallTicksPerInterval="3" MinorGridLineStyle="{StaticResource lineStyle}"/>
+    <chart:NumericalAxis MinorTicksPerInterval="3" MinorGridLineStyle="{StaticResource lineStyle}"/>
 </chart:SfCartesianChart.YAxes>
 . . .
 </chart:SfCartesianChart>
@@ -170,7 +170,7 @@ SfCartesianChart chart = new SfCartesianChart();
 chart.XAxes.Add(new NumericalAxis());
 NumericalAxis secondaryAxis = new NumericalAxis()
 {
-    SmallTicksPerInterval = 3,
+    MinorTicksPerInterval = 3,
     MinorGridLineStyle = chart.Resources["lineStyle"] as Style 
 };
 chart.YAxes.Add(secondaryAxis);

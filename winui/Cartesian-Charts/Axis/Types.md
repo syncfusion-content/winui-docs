@@ -121,42 +121,6 @@ chart.YAxes.Add(secondaryAxis);
 
 ![NumericalAxis range customization in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_Numeric.png)
 
-### Start from zero
-
-[NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) will calculate the start range based on the data points binded to the chart. By defining the [StartRangeFromZero](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_StartRangeFromZero) property to True, numerical axis start the range from zero.
-
-N> By default, Range is calculated between the minimum and maximum value of the data points.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart>
-. . .
-<chart:SfCartesianChart.YAxes>
-    <chart:NumericalAxis StartRangeFromZero="True"/>
-</chart:SfCartesianChart.YAxes>
-
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-. . .
-NumericalAxis secondaryAxis = new NumericalAxis()
-{
-   StartRangeFromZero = true
-};
-chart.YAxes.Add(secondaryAxis);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![NumericalAxis customization support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_startZero.png)
-
 ## Category Axis
 
 The [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) is an indexed based axis that plots values based on the index of the data point collection. The points are equally spaced here.
@@ -402,50 +366,6 @@ chart.XAxes.Add(primaryAxis);
 {% endtabs %}
 
 ![DateTimeAxis range customization support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_range_datetime.png)
-
-### Enable Business Hours
-
-[SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) provides support to plot only the business hours in [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html). This support is enabled by setting [EnableBusinessHours](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_EnableBusinessHours) property to true.
-
-The following properties are used for business hour range calculation:
-
-* [OpenTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_OpenTime)- Represents the open working time of a day.
-* [CloseTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_CloseTime)- Represents the close working time of a day.
-* [WorkingDays](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_WorkingDays)- Represents the working [days](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Day.html) of a week.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart>
-. . .
-<chart:SfCartesianChart.XAxes>
-    <chart:DateTimeAxis LabelFormat="dd-MMM" EnableBusinessHours="True" OpenTime="9" 
-                        CloseTime="24" 
-                        WorkingDays="Friday,Saturday,Sunday,Monday,Tuesday,Wednesday,Sunday"/>
-</chart:SfCartesianChart.XAxes>
-
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-. . .
-DateTimeAxis primaryAxis = new DateTimeAxis()
-{
-    EnableBusinessHours = true,
-    OpenTime = 9,
-    CloseTime = 24,
-    WorkingDays = Day.Friday | Day.Saturday | Day.Sunday |
-                Day.Monday | Day.Tuesday| Day.Wednesday| Day.Sunday
-};
-chart.XAxes.Add(primaryAxis);
-
-{% endhighlight %}
-
-{% endtabs %}
 
 ## Inversed
 

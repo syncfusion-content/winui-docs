@@ -52,26 +52,6 @@ Cartesian chart provides support to set the palette to series for applying prede
 
 {% tabs %}
 
-{% highlight xaml %}
-
-<chart:SfCartesianChart.Series>
-    <chart:ColumnSeries ItemsSource="{Binding Data}"  
-                        XBindingPath="Demand" 
-                        YBindingPath="Year2010">
-        <chart:ColumnSeries.PaletteBrushes>
-            <BrushCollection>
-                    <SolidColorBrush Color="#26c6da"/>
-                    <SolidColorBrush Color="#00bcd4"/>
-                    <SolidColorBrush Color="#00acc1"/>
-                    <SolidColorBrush Color="#0097a7"/>
-                    <SolidColorBrush Color="#00838f"/>
-            </BrushCollection>
-        </chart:ColumnSeries.PaletteBrushes>
-    </chart:ColumnSeries>
-</chart:SfCartesianChart.Series>
-
-{% endhighlight %}
-
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
@@ -108,39 +88,6 @@ The following code sample and screenshot illustrates how to apply the gradient b
 
 {% tabs %}
 
-{% highlight xaml %}
-
- <chart:ColumnSeries ItemsSource="{Binding Data}"  
-                                      XBindingPath="Demand" 
-                                      YBindingPath="Year2010">
-    <chart:ColumnSeries.PaletteBrushes>
-        <BrushCollection>
-                <LinearGradientBrush>
-                    <GradientStop Offset="1" Color="#FFE7C7" />
-                    <GradientStop Offset="0" Color="#FCB69F" />
-                </LinearGradientBrush>
-                <LinearGradientBrush>
-                    <GradientStop Offset="1" Color="#fadd7d" />
-                    <GradientStop Offset="0" Color="#fccc2d" />
-                </LinearGradientBrush>
-                <LinearGradientBrush>
-                    <GradientStop Offset="1" Color="#DCFA97" />
-                    <GradientStop Offset="0" Color="#96E6A1" />
-                </LinearGradientBrush>
-                <LinearGradientBrush>
-                    <GradientStop Offset="1" Color="#DDD6F3" />
-                    <GradientStop Offset="0" Color="#FAACA8" />
-                </LinearGradientBrush>
-                <LinearGradientBrush>
-                    <GradientStop Offset="1" Color="#A8EAEE" />
-                    <GradientStop Offset="0" Color="#7BB0F9" />
-                </LinearGradientBrush>
-        </chart:BrushCollection>
-    </chart:ColumnSeries.PaletteBrushes>
-</chart:ColumnSeries>
-
-{% endhighlight %}
-
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
@@ -176,106 +123,3 @@ this.Content = chart;
 {% endtabs %}
 
 ![Gradient support in WinUI Chart](Appearance_images/WinUI_chart_gradient_color.png)
-
-The following code sample and screenshot illustrates how to apply the gradient color using the [Interior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Interior) property of series with `LinearGradientBrush`.
-
-{% tabs %}
-
-{% highlight xaml %}
-
- <chart:SfCartesianChart.Series>
-    <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                        XBindingPath="Demand" 
-                        YBindingPath="Year2010">
-        <chart:ColumnSeries.Interior>
-            <LinearGradientBrush>
-                <GradientStop Offset="1" Color="#A8EAEE" />
-                <GradientStop Offset="0" Color="#7BB0F9" />
-            </LinearGradientBrush>
-        </chart:ColumnSeries.Interior>
-    </chart:ColumnSeries>
-</chart:SfCartesianChart.Series>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-...
-LinearGradientBrush gradientColor = new LinearGradientBrush();
-GradientStop stop1 = new GradientStop() { Offset = 1, Color = Color.FromRgb(168, 234, 238) };
-GradientStop stop2 = new GradientStop() { Offset = 0, Color = Color.FromRgb(123, 176, 249) };
-gradientColor.GradientStops.Add(stop1);
-gradientColor.GradientStops.Add(stop2);
-...
-ColumnSeries series = new ColumnSeries()
-{
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "Demand",
-    YBindingPath = "Year2010",
-    Interior = gradientColor,
-};
-. . .            
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Interior support in WinUI Chart](Appearance_images/WinUI_chart_interior_gradient_color.png)
-
-## Segment Color Binding
-
-The color of the each segment can be set by binding their corresponding model property from the `ItemsSource` collection to its [SegmentColorPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SegmentColorPath) property of series as follows.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:ColumnSeries x:Name="chart" 
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Demand"
-                YBindingPath="Year2010"
-                SegmentColorPath="SegmentColor">
-</chart:ColumnSeries>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-public class ViewModel
-{
-    public ObservableCollection<Model> Data { get; set; }
-
-    public ViewModel()
-    {
-        Data = new ObservableCollection<Model>()
-        {
-            new Model(){ Demand = "Jewelry", Year2010 = 500 , SegmentColor = new SolidColorBrush(Color.FromArgb(255, 152, 251, 152))},
-            new Model(){ Demand = "Electronics", Year2010 = 1300, SegmentColor = new SolidColorBrush(Color.FromArgb(255, 255, 105, 180))},
-            new Model(){ Demand = "Research", Year2010 = 1100 , SegmentColor = new SolidColorBrush(Color.FromArgb(255, 255, 165, 0))},
-            new Model(){ Demand = "Investment", Year2010 = 1600 , SegmentColor = new SolidColorBrush(Color.FromArgb(255, 238, 130, 238))},
-            new Model(){ Demand = "Purchases", Year2010 = 1000 , SegmentColor = new SolidColorBrush(Color.FromArgb(255, 0, 255, 255))},
-
-        };
-    }
-}
-
-SfCartesianChart chart = new SfCartesianChart();
-. . .
-ColumnSeries series = new ColumnSeries()
-{
-    ItemsSource = viewModel.Data,
-    XBindingPath = "Demand",
-    YBindingPath = "Year2010",
-    SegmentColorPath = "SegmentColor"
-};
-. . .            
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Segment color binding support in WinUI Chart](Appearance_images/WinUI_chart_colorvaluepath.png)
-

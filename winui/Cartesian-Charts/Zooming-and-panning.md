@@ -112,82 +112,6 @@ chart.ZoomPanBehavior = zooming;
 
 {% endtabs %}
 
-### Selection Zooming
-
-Selection zooming is used to zoom a particular area by selecting the region using rectangle. To enable the selection zooming, you have to set [EnableSelectionZooming](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_EnableSelectionZooming) property to `true`.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<chart:SfCartesianChart>
-    <chart:SfCartesianChart.ZoomPanBehavior>
-        <chart:ChartZoomPanBehavior EnableSelectionZooming="True"/>
-    </chart:SfCartesianChart.ZoomPanBehavior>
-    ...
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
-{
-    EnableSelectionZooming = true
-};
-
-chart.ZoomPanBehavior = zooming;
-...
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Selection zooming support in WinUI Chart](Zooming-and-panning_images/WinUI_chart_selection_zooming.png)
-
-### Customization of Selection Rectangle
-
-Selection rectangle can be customized by setting the following properties: 
-
-* [Fill](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_Fill) - Represents the brush filled in selection rectangle. 
-* [Stroke](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_Stroke) - Represents the outer line color of selection rectangle.
-* [StrokeThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_StrokeThickness)- Represents the selection rectangle outer line thickness. 
-
-{% tabs %}
-
-{% highlight xml %}
-
-<chart:SfCartesianChart>
-    <chart:SfCartesianChart.ZoomPanBehavior>
-        <chart:ChartZoomPanBehavior EnableSelectionZooming="True" Fill="LightSkyBlue" Stroke="Blue" StrokeThickness="2"/>
-    </chart:SfCartesianChart.ZoomPanBehavior>
-    ...
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-
-ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
-{
-    EnableSelectionZooming = true,
-    Fill = new SolidColorBrush(Colors.LightSkyBlue),
-    Stroke = new SolidColorBrush(Colors.Blue),
-    StrokeThickness = 2
-};
-
-chart.ZoomPanBehavior = zooming;
-...
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Customizing selection rectangle support in WinUI Chart](Zooming-and-panning_images/WinUI_customizing_selection_rectangle_zooming.png)
-
 ### Zooming by setting ZoomFactor and ZoomPosition
 
 [ZoomFactor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_ZoomFactor) defines the percentage of visible range from the total range of axis values. [ZoomPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_ZoomPosition) defines the position for ranges of values that need to be displayed as a result of [ZoomFactor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_ZoomFactor). 
@@ -291,39 +215,6 @@ chart.ZoomPanBehavior = zooming;
 {% endtabs %}
 
 ![Zoom mode support in WinUI Chart](Zooming-and-panning_images/WinUI_chart_zoom_modeY.png)
-
-## Maximum Zoom level
-
-The [MaximumZoomLevel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_MaximumZoomLevel) property defines the maximum zooming level of the chart area. Zooming will be stopped after reaching this value.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart>
-    <chart:SfCartesianChart.ZoomPanBehavior>
-        <chart:ChartZoomPanBehavior EnableSelectionZooming="True" MaximumZoomLevel="100"/>
-    </chart:SfCartesianChart.ZoomPanBehavior>
-    ...
-</chart:SfCartesianChart>
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-...
-ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
-{
-    EnableSelectionZooming = true,
-    MaximumZoomLevel = 100
-};
-
-chart.ZoomPanBehavior = zooming;
-...
-
-{% endhighlight %}
-
-{% endtabs %}
 
 ## Enable Panning
 

@@ -378,33 +378,6 @@ By clicking on disabled legend item, we can view the associated `series`,
 
 ![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/WinUI_chart_legend_toggleSeriesVisibility1.png)
 
-## Position
-
-The legends can be placed either inside or outside of the chart area (plotting area). By default, it will be displayed outside and positioned at top (using [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Position)) of the chart area.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart.Legend>
-    <chart:ChartLegend Position="Inside"/>
-</chart:SfCartesianChart.Legend>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-chart.Legend = new ChartLegend()
-{
-    Position = LegendPosition.Inside
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Positioning support for legend in WinUI Chart](Legend_images/WinUI_chart_legend_position.png)
-
 ## Background customization 
 
 The legend background appearance can be customized by using the following properties:
