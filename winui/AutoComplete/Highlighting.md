@@ -27,7 +27,8 @@ The text highlight can be indicated with various customizing styles by enabling 
 
 {% tabs %}
 {% highlight XAML %}
-    <editors:SfAutoComplete DisplayMemberPath="Name"                       
+    <editors:SfAutoComplete x:Name="autoComplete"
+                            DisplayMemberPath="Name"                       
                             TextHighlightMode="Matched"                                
                             TextSearchMode="StartsWith"                               
                             HighlightedTextFontSize="15"                               
@@ -60,7 +61,7 @@ It highlights the matches that starts with the typed characters in suggestion li
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfAutoComplete                             
+<editors:SfAutoComplete x:Name="autoComplete"                            
                         DisplayMemberPath="Name"                             
                         TextHighlightMode="Matched"
                         TextSearchMode="StartsWith"                           
@@ -98,7 +99,8 @@ It highlights all the matches that contains the typed characters in suggestion l
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfAutoComplete                           
+<editors:SfAutoComplete     
+                x:Name="autoComplete"                      
                 DisplayMemberPath="Name”                              
                 TextHighlightMode="Matched"
                 TextSearchMode="Contains"                           
@@ -134,7 +136,8 @@ It highlights all the matches that contains the typed characters in suggestion l
 ###  TextSearchMode="StartsWith"          
 {% tabs %}
 {% highlight XAML %}
-               <editors:SfAutoComplete                            
+               <editors:SfAutoComplete         
+                                x:Name="autoComplete"                   
                                 DisplayMemberPath="Name"                               
                                 TextHighlightMode="Unmatched"
                                 TextSearchMode="StartsWith"                              
@@ -157,7 +160,8 @@ It highlights all the matches that contains the typed characters in suggestion l
 ###  TextSearchMode="Contains"           
 {% tabs %}
 {% highlight XAML %}
-               <editors:SfAutoComplete                            
+               <editors:SfAutoComplete        
+                                x:Name="autoComplete"                    
                                 DisplayMemberPath="Name"                               
                                 TextHighlightMode="Unmatched"
                                 TextSearchMode="Contains"                              
