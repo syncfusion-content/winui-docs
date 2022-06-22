@@ -1,14 +1,14 @@
 ---
 layout: post
-title: WinUI System Requirements | Syncfusion WinUI Controls
-description: This section provides the information about the system requirements for WinUI - Windows App SDK platform.
+title: System Requirements in WinUI - Syncfusion
+description: Checkout and learn here all about the system requirements needed to use the Syncfusion WinUI Components.
 platform: winui
 control: Installation and Deployment
 documentation: ug
 
 ---
 
-# System Requirements for WinUI
+# System Requirements for WinUI Components
 
 The system requirements for using our Syncfusion WinUI platform are as follows
 
