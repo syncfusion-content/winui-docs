@@ -45,7 +45,7 @@ chart.Series.Add(series);
 
 ## Radius
 
-The rendering size of the [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html) can be controlled using the [Radius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_CircularCoefficient) property as shown in the following code sample.
+The rendering size of the [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html) can be controlled using the [Radius]() property as shown in the following code sample.
 
 {% tabs %}
 

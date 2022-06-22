@@ -309,9 +309,9 @@ chart.Legend = new ChartLegend()
 
 ## Placement
 
-Legends can be docked left, right, and top or bottom around the chart area using [Placement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) property. By default, the chart legend is docked at the top of the chart as mentioned earlier.
+Legends can be docked left, right, and top or bottom around the chart area using [Placement]() property. By default, the chart legend is docked at the top of the chart as mentioned earlier.
 
-To display the legend at the left, set the [Placement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) as [Left](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDock.html#Syncfusion_UI_Xaml_Charts_ChartDock_Left) as in below code snippet.
+To display the legend at the left, set the [Placement]() as [Left]() as in below code snippet.
 
 {% tabs %}
 
