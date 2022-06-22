@@ -44,12 +44,14 @@ The below code shows how to include the `Trailingview` in `AutoComplete`.
 <editors:SfAutoComplete Header="AutoComplete with Trailing View"
                         PlaceholderText="Search a country">
         <editors:SfAutoComplete.TrailingView>
-                <Button>
+              <Button Style="{ThemeResource AlternateCloseButtonStyle}"
+                      Height="30"
+                      AllowFocusOnInteraction="False">
                     <Viewbox Height="16"
                              Width="16">
                         <FontIcon Glyph="&#xEBE7;" />
                     </Viewbox>
-                </Button>
+              </Button>
         </editors:SfAutoComplete.TrailingView>
 </editors:SfAutoComplete>
 

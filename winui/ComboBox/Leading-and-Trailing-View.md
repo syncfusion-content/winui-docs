@@ -44,7 +44,8 @@ The below code shows how to include the `Trailingview` in `ComboBox`.
 <editors:SfComboBox Header="ComboBox with Trailing View"
                     PlaceholderText="Search a country">
         <editors:SfComboBox.TrailingView>
-                <Button>
+                <Button BorderThickness="0"
+                        Height="25">
                     <Viewbox Height="16"
                              Width="16">
                         <FontIcon Glyph="&#xEBE7;" />
