@@ -215,7 +215,7 @@ The [Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
                 YBindingPath="Value">
 
     <chart:SfFunnelChart.DataLabelSettings>
-        <chart:FunnelDataLabelSettings Format="#.00" Foreground="White" />
+        <chart:FunnelDataLabelSettings Format="#.000" Foreground="White" />
     </chart:SfFunnelChart.DataLabelSettings>
 
 </chart:SfFunnelChart>
@@ -229,7 +229,7 @@ chart.ShowDataLabels = true;
 . . . 
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 {  
-    Format = "#.00",
+    Format = "#.000",
     Foreground = new SolidColorBrush(Colors.White)
 };
 

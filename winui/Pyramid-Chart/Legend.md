@@ -235,9 +235,9 @@ this.Content = chart;
 
 ![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_Images/WinUI_chart_legend_toggleSeriesVisibility.png)
 
-## Position
+## Placement
 
-The legends can be placed either inside or outside of the chart area (plotting area). By default, it will be displayed outside and positioned at top (using [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Position)) of the chart area.
+By using the [Placement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) property, legends can be docked to the left, right, and top or bottom of the chart area. By default, the chart legend is docked at the top of the chart as mentioned earlier.
 
 {% tabs %}
 
@@ -246,7 +246,7 @@ The legends can be placed either inside or outside of the chart area (plotting a
 <chart:SfPyramidChart x:Name="chart">
 . . .
     <chart:SfPyramidChart.Legend>
-        <chart:ChartLegend Position="Inside"/>
+        <chart:ChartLegend ItemMargin="10" Placement="Left"/>
     </chart:SfPyramidChart.Legend>
 . . .
 </chart:SfPyramidChart>
@@ -258,39 +258,7 @@ The legends can be placed either inside or outside of the chart area (plotting a
 SfPyramidChart chart = new SfPyramidChart();
 chart.Legend = new ChartLegend()
 {
-    Position = LegendPosition.Inside
-};
-. . . 
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### Docking the Legend Position
-
-By using the [DockPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) property, legends can be docked to the left, right, and top or bottom of the chart area. By default, the chart legend is docked at the top of the chart as mentioned earlier.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfPyramidChart x:Name="chart">
-. . .
-    <chart:SfPyramidChart.Legend>
-        <chart:ChartLegend ItemMargin="10" DockPosition="Left"/>
-    </chart:SfPyramidChart.Legend>
-. . .
-</chart:SfPyramidChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfPyramidChart chart = new SfPyramidChart();
-chart.Legend = new ChartLegend()
-{
-   DockPosition = ChartDock.Left,
+   Placement = LegendPlacement.Left,
    ItemMargin = new Thickness(10),
 };
 . . . 
@@ -301,78 +269,6 @@ this.Content = chart;
 {% endtabs %}
 
 ![Positioning the legend at right in WinUI Chart](Legend_Images/WinUI_chart_legend_dockPosition.png)
-
-### Floating Legends
-
-To position the legend at any arbitrary location within the chart, you need to set [DockPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) as `Floating` and provide its relative position by using the [OffsetX](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_OffsetX) and [OffsetY](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_OffsetY) properties.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfPyramidChart x:Name="chart">
-. . .
-    <chart:SfPyramidChart.Legend>
-        <chart:ChartLegend DockPosition="Floating" Orientation="Vertical" OffsetX="10" OffsetY="45" ItemMargin="3"/>
-    </chart:SfPyramidChart.Legend>
-. . .
-</chart:SfPyramidChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfPyramidChart chart = new SfPyramidChart();
-chart.Legend = new ChartLegend()
-{
-    DockPosition = ChartDock.Floating,
-    Orientation = ChartOrientation.Vertical,
-    OffsetX = 10,
-    OffsetY = 45,
-    ItemMargin = new Thickness(3)
-};
-. . . 
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Floating legend support in WinUI Chart](Legend_Images/WinUI_chart_legend_floating.png)
-
-## Orientation
-
-Orientation of the legend items can be aligned vertically or horizontally by setting the [Orientation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Orientation) property of legend. By default, the value of [Orientation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Orientation) property is [Horizontal](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartOrientation.html#Syncfusion_UI_Xaml_Charts_ChartOrientation_Horizontal).
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfPyramidChart x:Name="chart">
-. . .
-    <chart:SfPyramidChart.Legend>
-        <chart:ChartLegend Orientation="Vertical"/>
-    </chart:SfPyramidChart.Legend>
-. . .
-</chart:SfPyramidChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfPyramidChart chart = new SfPyramidChart();
-chart.Legend = new ChartLegend()
-{
-    Orientation = ChartOrientation.Vertical
-};
-. . . 
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Legend orientation support in WinUI Chart](Legend_Images/WinUI_chart_legend_orientation.png)
 
 ## Background customization 
 
@@ -410,7 +306,7 @@ chart.Legend = new ChartLegend()
     BorderBrush = new SolidColorBrush(Colors.Black),
     BorderThickness = new Thickness(1),
     Opacity = 0.9,
-    CornerRadius = CornerRadiusHelper.FromUniformRadius(5)
+    CornerRadius = new CornerRadius(5)
 };
 . . . 
 this.Content = chart;
@@ -453,7 +349,7 @@ Customize each legend item by using the `ItemTemplate` property in [ChartLegend]
 SfPyramidChart chart = new SfPyramidChart();
 chart.Legend = new ChartLegend()
 {
-   ItemTemplate = chart.Resources["itemTemplate"] as DataTemplate
+   ItemTemplate = chart.Resources["labelTemplate"] as DataTemplate
 };
 . . . 
 this.Content = chart;

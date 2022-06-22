@@ -182,23 +182,31 @@ The following code example explains how to display both x-value and y-value in t
 <Grid x:Name="grid">
     <Grid.Resources>
         <DataTemplate x:Key="tooltipTemplate">
-            <StackPanel Orientation="Horizontal" Background="LightGreen">
+            <StackPanel Orientation="Horizontal">
                 <TextBlock Text="{Binding Item.Category}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 <TextBlock Text=" : " Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 <TextBlock Text="{Binding Item.Value}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </StackPanel>
         </DataTemplate>
 
+        <Style TargetType="Path" x:Key="style">
+            <Setter Property="Stroke" Value="Black"/>
+            <Setter Property="Fill" Value="LightGreen"/>
+            <Setter Property="StrokeThickness" Value="2"/>
+        </Style>
     </Grid.Resources>
 
-    <chart:SfFunnelChart x:Name="chart" 
+    <chart:SfFunnelChart x:Name="chart"
                          ItemsSource="{Binding Data}" 
-                         XBindingPath="Category"
-                         YBindingPath="Value"
+                         XBindingPath="Category"  
+                         YBindingPath="Value" 
                          ShowTooltip="True"
                          TooltipTemplate="{StaticResource tooltipTemplate}">
-        </chart:SfFunnelChart>
-</Grid> 
+
+        <chart:SfFunnelChart.TooltipBehavior>
+            <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
+        </chart:SfFunnelChart.TooltipBehavior>
+</Grid>
 
 {% endhighlight %}
 

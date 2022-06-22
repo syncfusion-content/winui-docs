@@ -95,7 +95,6 @@ The title text content can be aligned horizontally to the left, center or right 
 <chart:SfPyramidChart x:Name="chart" 
                 Header="The Food Comparison Pyramid"
                 HorizontalHeaderAlignment="Left"
-                Palette="BlueChrome"
                 ItemsSource="{Binding Data}" 
                 XBindingPath="FoodName"
                 YBindingPath="Calories">
@@ -114,7 +113,6 @@ public sealed partial class MainPage : Page
         SfPyramidChart chart = new SfPyramidChart();
         chart.Header = "The Food Comparison Pyramid";
         chart.HorizontalHeaderAlignment = HorizontalAlignment.Left;
-        chart.Palette = ChartColorPalette.BlueChrome;
         chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
         chart.XBindingPath = "FoodName";
         chart.YBindingPath = "Calories";

@@ -20,7 +20,6 @@ Exploding a segment is used to pull attention to a specific area of the pyramid.
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart" 
-                Palette="BlueChrome"
                 ExplodeIndex="3"  
                 ExplodeOffset="30" 
                 ItemsSource="{Binding Data}" 
@@ -34,7 +33,6 @@ Exploding a segment is used to pull attention to a specific area of the pyramid.
 {% highlight C# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-chart.Palette = ChartColorPalette.BlueChrome;
 chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
