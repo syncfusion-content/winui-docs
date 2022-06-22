@@ -11,124 +11,6 @@ documentation: ug
 
 Axis labels are used to show the units or measures or category values of axis to visualize the data. It will be generated based on the range and values binded to the series in the chart. 
 
-## Custom Axis Labels
-
-Chart axis allows user to define the own axis labels. The [Content](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Content) and [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Position) property of [ChartAxisLabel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html) used to define the labels for axis using the [CustomLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_CustomLabels) property.
-
-N> Also, directly bind the collection of labels to the [LabelSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelSource) property for defining custom labels.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfPolarChart>
-                
-    <chart:SfPolarChart.PrimaryAxis>
-        <chart:CategoryAxis >
-            <chart:CategoryAxis.CustomLabels>
-                <chart:ChartAxisLabel Position="0" Content="North(0°)"/>
-                <chart:ChartAxisLabel Position="1" Content="NorthEast(45°)"/>
-                <chart:ChartAxisLabel Position="2" Content="East(90°)"/>
-                <chart:ChartAxisLabel Position="3" Content="SouthEast(135°)"/>
-                <chart:ChartAxisLabel Position="4" Content="South(180°)"/>
-                <chart:ChartAxisLabel Position="5" Content="SouthWest(225°)"/>
-                <chart:ChartAxisLabel Position="6" Content="West(270°)"/>
-                <chart:ChartAxisLabel Position="7" Content="NorthWest(315°)"/>
-            </chart:CategoryAxis.CustomLabels>
-        </chart:CategoryAxis>
-    </chart:SfPolarChart.PrimaryAxis>
-                    
-    <chart:SfPolarChart.SecondaryAxis>
-        <chart:NumericalAxis/>
-    </chart:SfPolarChart.SecondaryAxis>
-    ...
-</chart:SfPolarChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfPolarChart chart = new SfPolarChart();
-
-CategoryAxis axis = new CategoryAxis();
-
-axis.CustomLabels.Add(new ChartAxisLabel() { Position = 0, Content = "North(0°)" });
-axis.CustomLabels.Add(new ChartAxisLabel() { Position = 1, Content = "NorthEast(45°)" });
-axis.CustomLabels.Add(new ChartAxisLabel() { Position = 2, Content = "East(90°)" });
-axis.CustomLabels.Add(new ChartAxisLabel() { Position = 3, Content = "SouthEast(135°)" });
-axis.CustomLabels.Add(new ChartAxisLabel() { Position = 4, Content = "South(180°)" });
-axis.CustomLabels.Add(new ChartAxisLabel() { Position = 5, Content = "SouthWest(225°)" });
-axis.CustomLabels.Add(new ChartAxisLabel() { Position = 6, Content = "West(270°)" });
-axis.CustomLabels.Add(new ChartAxisLabel() { Position = 7, Content = "NorthWest(315°)" });
-
-chart.PrimaryAxis = axis;
-
-chart.SecondaryAxis = new NumericalAxis();
-...
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Custom axis labels in WinUI Chart](Axis_Images/WinUI_Chart_CustomLabels.png)
-
-The following code sample demonstrates how to bind the collection of labels to the [LabelSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelSource).
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfPolarChart>
-        
-    <chart:SfPolarChart.PrimaryAxis>
-        <chart:CategoryAxis LabelSource="{Binding Labels}" ContentPath="Content"/>
-    </chart:SfPolarChart.PrimaryAxis>
-        
-    <chart:SfPolarChart.SecondaryAxis>
-        <chart:NumericalAxis/>
-    </chart:SfPolarChart.SecondaryAxis>
-    ...
-</chart:SfPolarChart>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-SfPolarChart chart = new SfPolarChart();
-
-chart.PrimaryAxis = new CategoryAxis()
-{
-    ContentPath = "Content",
-    PositionPath = "Position",
-    LabelsSource = viewModel.Labels,
-};
-
-...
-
-public List<LabelItem> Labels { get; set; }
-
-Labels = new List<LabelItem>
-{
-    new LabelItem() {Position=0, Content = "North(0°)"},
-    new LabelItem() {Position=1, Content = "NorthEast(45°)"},
-    new LabelItem() {Position=2, Content = "East(90°)" },
-    new LabelItem() {Position=3, Content = "SouthEast(135°)"},
-    new LabelItem() {Position=4, Content = "South(180°)"},
-    new LabelItem() {Position=5, Content = "SouthWest(225°)"},
-    new LabelItem() {Position=6, Content = "West(270°)"},
-    new LabelItem() {Position=7, Content = "NorthWest(315°)"},
-};
-
-public class LabelItem
-{
-    public string Content { get; set; }
-    public int Position { get; set; }
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
 ## Rotation
 
 The [LabelRotationAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelRotationAngle) property is used to define the angle for the label content.
@@ -213,7 +95,7 @@ The appearance of the axis labels can be customized by using the [LabelTemplate]
 
 {% highlight xaml %}
 
-<chart:SfPolarChart>
+<chart:SfPolarChart x:Name="chart">
 
     <chart:SfPolarChart.Resources>
         <DataTemplate x:Key="labelTemplate">
