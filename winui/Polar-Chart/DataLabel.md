@@ -285,7 +285,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 ![Rotation support for data label in WinUI Chart](DataLabel_Images/WinUI_Chart_data_label_Rotation.png)
 
-## Applying Series Interior
+## Applying Series Fill
 
 The [UseSeriesPalette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_UseSeriesPalette) property is used to set the [Fill]( ) of the series to the data label background. 
 
