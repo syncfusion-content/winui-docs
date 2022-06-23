@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains the customization features available in the WinUI [Shadow] control.
 
-## Apply Color for shadow
+## Applying Color for shadow
 
 If you want to change the color of the shadow other than the default Color value, use the `Color` property. The default value of `Color` property is `Black` color with 25% alpha value.
 
@@ -42,7 +42,7 @@ If you want to change the color of the shadow other than the default Color value
 
 ![Color customization in shadow control in WinUI](Shadow_images/winui_shadow_color.png)
 
-## Apply BlurRadius for shadow
+## Applying BlurRadius for shadow
 
 If you want to change the blur radius of the shadow other than the default value, use the `BlurRadius` property. The default value of `BlurRadius` property is 8.
 
@@ -72,7 +72,7 @@ If you want to change the blur radius of the shadow other than the default value
 
 ![BlurRadius customization in shadow control in WinUI](Shadow_images/winui_shadow_blurradius.png)
 
-## Apply OffsetX for shadow
+## Applying OffsetX for shadow
 
  If you want to change the offsetX position of the shadow other than the default value, use the `OffsetX` property. The default value of `OffsetX` property is 4.
 
@@ -102,7 +102,7 @@ If you want to change the blur radius of the shadow other than the default value
 
 ![OffsetX position customization in shadow control in WinUI](Shadow_images/winui_shadow_offsetx.png)
 
-## Apply OffsetY for shadow
+## Applying OffsetY for shadow
 
 If you want to change the offsetY position of the shadow other than the default value, use the `OffsetY` property. The default value of `OffsetY` property is 4.
 
@@ -132,7 +132,7 @@ If you want to change the offsetY position of the shadow other than the default 
 
 ![OffsetY position customization in shadow control in WinUI](Shadow_images/winui_shadow_offsety.png)
 
-## Apply CornerRadius for shadow
+## Applying CornerRadius for shadow
 
 If you want to change the corner radius of the shadow other than the default value, use the `CornerRadius` property. The default value of `CornerRadius` property is 0.
 
