@@ -206,6 +206,7 @@ The following code example explains how to display both x-value and y-value in t
         <chart:SfFunnelChart.TooltipBehavior>
             <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
         </chart:SfFunnelChart.TooltipBehavior>
+    </chart:SfFunnelChart>
 </Grid>
 
 {% endhighlight %}

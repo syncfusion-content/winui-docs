@@ -185,14 +185,18 @@ Circular chart provides support to customize the appearance of the tooltip by us
 . . .
     <chart:SfCircularChart.Resources>
         <DataTemplate x:Key="tooltipTemplate">
-            <Border  Background="LightGreen">
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="{Binding Item.Product}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <TextBlock Text=" : " Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <TextBlock Text="{Binding Item.SalesRate}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                </StackPanel>
-            </Border>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Item.Category}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text=" : " Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding Item.Value}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
         </DataTemplate>
+
+        <Style TargetType="Path" x:Key="style">
+            <Setter Property="Stroke" Value="Black"/>
+            <Setter Property="Fill" Value="LightGreen"/>
+            <Setter Property="StrokeThickness" Value="2"/>
+        </Style>
     </chart:SfCircularChart.Resources>
 
     <chart:SfCircularChart.Series>
@@ -203,6 +207,9 @@ Circular chart provides support to customize the appearance of the tooltip by us
                  TooltipTemplate="{StaticResource tooltipTemplate}"/>
     </chart:SfCircularChart.Series>
     . . .
+    <chart:SfCircularChart.TooltipBehavior>
+        <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
+    </chart:SfCircularChart.TooltipBehavior>
 </chart:SfCircularChart>
 
 {% endhighlight %}
