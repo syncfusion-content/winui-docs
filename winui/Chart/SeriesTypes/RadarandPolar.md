@@ -11,7 +11,7 @@ documentation: ug
 
 ## Radar
 
-[`RadarSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.RadarSeries.html#) represents a collection of data, displayed by quantitative variables, represented by axes starting from the same point. The relative position and angle of the axes is not uniform. 
+[`RadarSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.RadarSeries.html#) represents a collection of data displayed by quantitative variables represented by axes starting from the same point. The relative position and angle of the axes are not uniform. 
 
 The following code example illustrates the use of radar series:
 
@@ -53,7 +53,7 @@ chart.Series.Add(series);
 
 ## Polar
 
-[`PolarSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.PolarSeries.html#) displays data points that are grouped by category, on a 360 degree circle. The following code example shows how to use polar series.
+[`PolarSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.PolarSeries.html#) displays data points that are grouped by category on a 360-degree circle. The following code example shows how to use polar series.
 
 {% tabs %}
 
@@ -91,7 +91,7 @@ chart.Series.Add(series);
 ![Polar chart type in WinUI](Series_images/polar_chart.png)
 
 
-The Radar and Polar charts having the following properties in common:
+The Radar and Polar charts have the following properties in common:
 
 * [`IsClosed`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase.html#Syncfusion_UI_Xaml_Charts_PolarRadarSeriesBase_IsClosed)
 * [`DrawType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase.html#Syncfusion_UI_Xaml_Charts_PolarRadarSeriesBase_DrawType)
@@ -99,7 +99,7 @@ The Radar and Polar charts having the following properties in common:
 
 ### IsClosed
 
-This property used to draw the closed path as below.
+This property is used to draw the closed path as follows.
 
 {% tabs %}
 
@@ -148,7 +148,7 @@ chart.Series.Add(series);
 
 ### DrawType
 
-This property defines type of curve, whether its [`Line`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html) or [`Area`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html).
+This property defines type of curve, whether it is [`Line`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html) or [`Area`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html).
 
 **DrawType** **as** **Area**
 
@@ -236,13 +236,13 @@ chart.Series.Add(series);
 
 ![Draw type support for polar series in WinUI Chart](Series_images/polar_drawtype_line.png)
 
-### Polar Angle
+### Polar angle
 
-[`Chart axis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html) provides support to render polar and radar series on 0,90,180 and 270 degrees. It can be achieved by its `PolarAngle` property. The `PolarAngle` is type of `ChartPolarAngle` and its default value is `Rotate270`, `Rotate0`, `Rotate90` and `Rotate180` are another supported values of `PolarAngle`. Both the primary and secondary axes can be rotated individually based on its `PolarAngle` value.
+[`Chart axis`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html) provides support to render polar and radar series on 0,90,180 and 270 degrees. It can be achieved by its `PolarAngle` property. The 'PolarAngle' is a type of 'ChartPolarAngle,' and its default value is 'Rotate270.' Other supported values of 'PolarAngle' include 'Rotate0,' 'Rotate90,' and 'Rotate180.' Both the primary and secondary axes can be rotated individually based on their `PolarAngle` value.
 
 **Rotate0**
 
-The below snippet explains how the axes of series has been rotated when `PolarAngle` value is [`Rotate0`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
+The following sample explains how the axes of the series have been rotated when the `PolarAngle` value is [`Rotate0`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html).
 
 {% tabs %}
 
@@ -287,7 +287,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 **Rotate90**
 
-The below snippet explains how the axes of series has been rotated when `PolarAngle` value is [`Rotate90`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
+The following sample explains how the axes of the series have been rotated when the `PolarAngle` value is [`Rotate90`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html).
 
 {% tabs %}
 
@@ -332,7 +332,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 **Rotate180**
 
-The below snippet explains how the axes of series has been rotated when `PolarAngle` value is [`Rotate180`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
+The following sample explains how the axes of the series have been rotated when the `PolarAngle` value is [`Rotate180`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html).
 
 {% tabs %}
 
@@ -377,7 +377,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 **Rotate270**
 
-The below snippet explains how the axes of series has been rotated, when `PolarAngle` value is [`Rotate270`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
+The following sample explains how the axes of the series have been rotated when the `PolarAngle` value is [`Rotate270`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html).
 
 {% tabs %}
 

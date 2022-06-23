@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WinUI Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Chart(SfChart) control, its elements, and more.
+description: Learn here all about getting started with Syncfusion WinUI Chart (SfChart) control, its elements, and more.
 platform: WinUI
 control: Chart
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 # Getting Started with WinUI Chart
 
-This section explains you the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to learn to get started with the Chart.
+This section explains you the steps required to populate the chart with data, header, add data labels, legend, and tooltips. This section covers only the minimal features that you need to learn to get started with the chart.
 
-## Creating an application with WinUI Chart
+## Creating an application with WinUI chart
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2.	Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
-3.	Import the control namespace `Syncfusion.UI.Xaml.Charts`  in XAML or C# to initialize the control.
-4.	Initialize SfChart control.
+3.	Import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C# to initialize the control.
+4.	Initialize `SfChart` control.
 
 {% tabs %} 
 
@@ -61,9 +61,9 @@ namespace SfChart_GettingStarted
 {% endtabs %}
 
 ## Initialize chart axis
-`Chart`supports default axes, so that these axes ([PrimaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) and [SecondaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis)) will get generated automatically based upon the data bind to the chart.
+`Chart` supports default axes, so that these axes ([PrimaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) and [SecondaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis)) will get generated automatically based on the data binded to the chart.
 
-Axes will be explicitly specified for it's customization purpose. The initialization of an empty chart with two axes as shown below,
+Axes will be explicitly specified for the customization purpose. The initialization of an empty chart with two axes as shown in the following code sample.
 
 {% tabs %} 
 
@@ -92,13 +92,13 @@ chart.SecondaryAxis = secondaryAxis;
 
 {% endtabs %} 
 
-Run the project and check if you get following output to make sure you have configured your project properly to add chart.
+Run the project and check if you get the following output to ensure you have configured your project properly to add a chart.
 
 ![Initializing WinUI Chart](Getting-Started_Images/img1.png)
 
 ## Initialize view model
 
-Now, let us define a simple data model that represents a data point in chart.
+Now, let us define a simple data model that represents a data point in the chart.
 
 {% tabs %}  
 
@@ -144,7 +144,7 @@ public class ViewModel
 
 Set the `ViewModel` instance as the `DataContext` of your window; this is done to bind properties of `ViewModel` to  the chart.
  
-N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `DataContext` in XAML.
+N> If you prefer to set the 'DataContext' in XAML, add the namespace of the 'ViewModel' class to your XAML Page.
 
 {% tabs %} 
 
@@ -230,9 +230,9 @@ chart.Series.Add(series);
 
 {% endtabs %} 
 
-## Add title
+## Add a title
 
-The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_Header) property of chart as follows.
+The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set the title using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_Header) property of the chart as follows.
 
 {% tabs %} 
 
@@ -337,7 +337,7 @@ series.Label = "Heights";
 
 ## Enable tooltip
 
-Tooltips are used to show information about the segment, when you click the segment. You can enable tooltip by setting series [ShowTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property to true.
+Tooltips show information about the segment when you click on it. You can enable the tooltip by setting series [ShowTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property to true.
 
 {% tabs %} 
 
@@ -478,6 +478,6 @@ The following chart is created as a result of the previous codes.
 
 ![Getting Started WinUI Chart](Getting-Started_images/img3.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI).
 
-N> You can refer to our [WinUI Charts](https://www.syncfusion.com/winui-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Charts example](https://github.com/syncfusion/winui-demos/tree/master/chart) that shows how to render various chart types as well as how to easily configure with built-in support for creating stunning visual effects.
+N> For groundbreaking feature representations, please visit our [WinUI Charts](https://www.syncfusion.com/winui-controls/charts) feature tour page. You can also explore our [WinUI Charts example](https://github.com/syncfusion/winui-demos/tree/master/chart), which shows how to render various chart types as well as to configure with built-in support for creating stunning visual effects.

@@ -45,7 +45,7 @@ this.sfDataGrid.CopyOption = GridCopyOptions.CopyData | GridCopyOptions.IncludeH
 {% endhighlight %}
 {% endtabs %}
 
-![Copy to Clipboard in WinUI DataGrid](Clipboard-Operations_images/winui-datagrid-clipboard-copy.png)
+<img src="Clipboard-Operations_images/winui-datagrid-clipboard-copy.png" alt="Copy to Clipboard in WinUI DataGrid" width="100%" Height="Auto"/>
 
 N> `IncludeHiddenColumn` is not supported when [SelectionUnit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionUnit.html) is [Cell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionUnit.html#Syncfusion_UI_Xaml_Grids_GridSelectionUnit_Cell).
 
@@ -69,7 +69,8 @@ You have to use `ExcludeFirstLine`, `IncludeHiddenColumn` options along with `Pa
 <dataGrid:SfDataGrid x:Name="sfDataGrid"
                        SelectionUnit="Row"
                        SelectionMode="Single"
-                       GridPasteOption="PasteData,ExcludeFirstLine" 
+                       CopyOption="CopyData,IncludeHeaders"
+                       PasteOption="PasteData,ExcludeFirstLine" 
                        ItemsSource="{Binding Orders}"/>
 {% endhighlight %}
 {% highlight c# %}
@@ -77,7 +78,7 @@ this.sfDataGrid.PasteOption = GridPasteOptions.PasteData | GridPasteOptions.Excl
 {% endhighlight %}
 {% endtabs %}
 
-![Paste Clipboard Content in WinUI DataGrid](Clipboard-Operations_images/winui-datagrid-clipboard-paste.png)
+<img src="Clipboard-Operations_images/winui-datagrid-clipboard-paste.png" alt="Paste Clipboard Content in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Cut to Clipboard in DataGrid
 
@@ -100,7 +101,7 @@ You have to use `IncludeHeaders`, `IncludeFormat`, `IncludeHiddenColumn` options
 <dataGrid:SfDataGrid x:Name="sfDataGrid"
                        SelectionUnit="Row"
                        SelectionMode="Single"
-                       GridCopyOption="CutData,IncludeHeaders" 
+                       CopyOption="CutData,IncludeHeaders" 
                        ItemsSource="{Binding Orders}"/>
 {% endhighlight %}
 {% highlight c# %}
@@ -108,7 +109,7 @@ this.sfDataGrid.CopyOption = GridCopyOptions.CutData | GridCopyOptions.IncludeHe
 {% endhighlight %}
 {% endtabs %}
 
-![Cut to Clipboard in WinUI DataGrid](Clipboard-Operations_images/winui-datagrid-clipboard-cut.png)
+<img src="Clipboard-Operations_images/winui-datagrid-clipboard-cut.png" alt="Cut to Clipboard in WinUI DataGrid" width="100%" Height="Auto"/>
 
 N> `IncludeHiddenColumn` is not supported when `SelectionUnit` is `Cell`.
 
@@ -182,7 +183,7 @@ void sfDataGrid_CopyGridCellContent(object sender, GridCopyPasteCellEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Copy to Clipboard based on Cell Value in WinUI DataGrid](Clipboard-Operations_images/winui-datagrid-clipboard-copy-based-on-cell-value.png)
+<img src="Clipboard-Operations_images/winui-datagrid-clipboard-copy-based-on-cell-value.png" alt="Copy to Clipboard based on Cell Value in WinUI DataGrid" width="100%" Height="Auto"/>
 
 The below code example handled the copy operation when `MappingName` of a Column is Country.
 
@@ -196,7 +197,7 @@ void sfDataGrid_CopyGridCellContent(object sender, GridCopyPasteCellEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Copy to Clipboard based on Mapping Name in WinUI DataGrid](Clipboard-Operations_images/winui-datagrid-clipboard-copy-based-on-mapping-name.png)
+<img src="Clipboard-Operations_images/winui-datagrid-clipboard-copy-based-on-mapping-name.png" alt="Copy to Clipboard based on Mapping Name in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ### PasteGridCellContent
 
@@ -235,7 +236,7 @@ void sfDataGrid_PasteGridCellContent(object sender, GridCopyPasteCellEventArgs e
 {% endhighlight %}
 {% endtabs %}
 
-![Paste Clipboard Content based on Cell Value in WinUI DataGrid](Clipboard-Operations_images/winui-datagrid-clipboard-paste-based-on-cell-value.png)
+<img src="Clipboard-Operations_images/winui-datagrid-clipboard-paste-based-on-cell-value.png" alt="Paste Clipboard Content based on Cell Value in WinUI DataGrid" width="100%" Height="Auto"/>
 
 The below code example handled the paste operation when `MappingName` of Column is OrderID
 
@@ -249,7 +250,7 @@ void sfDataGrid_PasteGridCellContent(object sender, GridCopyPasteCellEventArgs e
 {% endhighlight %}
 {% endtabs %}
 
-![Paste Clipboard Content based on Mapping Name in WinUI DataGrid](Clipboard-Operations_images/winui-datagrid-clipboard-paste-based-on-mapping-name.png)
+<img src="Clipboard-Operations_images/winui-datagrid-clipboard-paste-based-on-cell-value.png" alt="Paste Clipboard Content based on Mapping Name in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Handling Programmatically
 

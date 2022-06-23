@@ -153,7 +153,7 @@ In the following example, the command receives the underlying data object as com
                                    AutoGenerateColumns="False"
                                    ItemsSource="{Binding Orders}">
 <dataGrid:SfDataGrid.Columns>
-    <dataGrid:GridTextColumn HeaderText="Order ID" MappingName="OrderID" TextAlignment="Right" />
+    <dataGrid:GridNumericColumn HeaderText="Order ID" MappingName="OrderID" />
     <dataGrid:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID"  />
     <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
     <dataGrid:GridTextColumn MappingName="Country" />
@@ -240,7 +240,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![Binding Button Command to ViewModel in WinUI DataGrid](MVVM_images/winui-datagrid-binding-button-command.png)
+<img src="MVVM_images/winui-datagrid-binding-button-command.png" alt="Binding Button Command to ViewModel in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Binding ComboBoxColumn ItemsSource from view model
 
@@ -254,11 +254,11 @@ You can bind the `ItemsSource` from `ViewModel` to [GridComboBoxColumn](https://
                                    AutoGenerateColumns="False"
                                    ItemsSource="{Binding Orders}">
     <dataGrid:SfDataGrid.Columns>
-        <dataGrid:GridTextColumn HeaderText="Order ID" MappingName="OrderID" TextAlignment="Right"/>
+        <dataGrid:GridNumericColumn HeaderText="Order ID" MappingName="OrderID" />
         <dataGrid:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID"  />
         <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />    
-        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
         <dataGrid:GridComboBoxColumn MappingName="Country" ItemsSource="{Binding Path=DataContext.CountryList, ElementName=sfDataGrid}" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
     </dataGrid:SfDataGrid.Columns>
 </dataGrid:SfDataGrid>
 
@@ -323,7 +323,7 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![Binding ComboBoxColumn ItemsSource from ViewModel in WinUI DataGrid](MVVM_images/winui-datagrid-binding-comboboxcolumn-itemssource.png)
+<img src="MVVM_images/winui-datagrid-binding-comboboxcolumn-itemssource.png" alt="Binding ComboBoxColumn ItemsSource from ViewModel in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Binding ItemsSource from view model to ComboBox inside data template
 
@@ -337,22 +337,22 @@ You can load the `ComboBox` inside the `GridTemplateColumn` and bind the `ItemsS
                                    AutoGenerateColumns="False"
                                    ItemsSource="{Binding Orders}">
     <dataGrid:SfDataGrid.Columns>
-        <dataGrid:GridTextColumn HeaderText="Order ID" MappingName="OrderID" TextAlignment="Right" />
+        <dataGrid:GridNumericColumn HeaderText="Order ID" MappingName="OrderID" />
         <dataGrid:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID"  />
         <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />    
-        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
         <dataGrid:GridTemplateColumn MappingName="Country">
             <dataGrid:GridTemplateColumn.CellTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding Country}" />
-                <DataTemplate>
+                </DataTemplate>
             </dataGrid:GridTemplateColumn.CellTemplate>	
             <dataGrid:GridTemplateColumn.EditTemplate>
                 <DataTemplate>
                     <ComboBox ItemsSource="{Binding Path=DataContext.CountryList, ElementName=sfDataGrid}" DisplayMemberPath="{Binding CountryList}" Width="150" />
-                <DataTemplate>
+                </DataTemplate>
             </dataGrid:GridTemplateColumn.EditTemplate>
         </dataGrid:GridTemplateColumn>	
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
     </dataGrid:SfDataGrid.Columns>
 </dataGrid:SfDataGrid>
 {% endhighlight %}
@@ -416,7 +416,7 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays ComboBox with MVVM Data Template Binding](MVVM_images/winui-datagrid-combobox-with-mvvm-data-template-binding.png)
+<img src="MVVM_images/winui-datagrid-combobox-with-mvvm-data-template-binding.png" alt="WinUI DataGrid displays ComboBox with MVVM Data Template Binding" width="100%" Height="Auto"/>
 
 ## Binding DataGrid columns from view model
 

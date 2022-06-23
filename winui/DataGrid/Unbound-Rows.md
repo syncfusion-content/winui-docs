@@ -15,7 +15,8 @@ SfDataGrid allows you to add **additional rows** at top and also bottom of the S
 {% highlight xaml %}
 xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 
-<dataGrid:SfDataGrid x:Name="sfDataGrid" AutoGenerateColumns="False" ItemsSource="{Binding Orders}">
+<dataGrid:SfDataGrid x:Name="sfDataGrid" AutoGenerateColumns="False" 
+                    ItemsSource="{Binding Orders}">
     <dataGrid:SfDataGrid.UnboundRows>
         <dataGrid:GridUnboundRow  Position="Top"/>
     </dataGrid:SfDataGrid.UnboundRows>
@@ -27,7 +28,7 @@ this.sfDataGrid.UnboundRows.Add(new GridUnboundRow() {Position = UnboundRowsPosi
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid Unbound Rows](Unbound-Rows_images/winui-datagrid-unbound-rows.png)
+<img src="Unbound-Rows_images/winui-datagrid-unbound-rows.png" alt="WinUI DataGrid Unbound Rows" width="100%" Height="Auto"/>
 
 N> [AllowFrozenGroupHeaders](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_AllowFrozenGroupHeaders) is not supported with unbound rows.
 
@@ -97,7 +98,7 @@ Unbound row placed at bottom, right below record rows. In this position, unbound
 
 Below screen shot shows different unbound rows placed in all possible positions.
 
-![WinUI DataGrid displays Unbound Rows at Top and Bottom Position](Unbound-Rows_images/winui-datagrid-unbound-row-position.png)
+<img src="Unbound-Rows_images/winui-datagrid-unbound-row-position.png" alt="WinUI DataGrid displays Unbound Rows at Top and Bottom Position" width="100%" Height="Auto"/>
 
 ## Populating data for Unbound rows
 
@@ -122,6 +123,7 @@ For example, now unbound row populated based on selected items in SfDataGrid.
 
 {% tabs %}
 {% highlight c# %}
+var collection = (this.dataGrid.DataContext as ViewModel).Orders;
 this.sfDataGrid.SelectedItems.Add(collection[4]);
 this.sfDataGrid.SelectedItems.Add(collection[5]);
 this.sfDataGrid.SelectedItems.Add(collection[7]);
@@ -146,7 +148,7 @@ private void SfDataGrid_QueryUnboundRow(object sender, GridUnboundRowEventsArgs 
 {% endhighlight %}
 {% endtabs %}
 
-![Populating data with Unbound Row in WinUI DataGrid](Unbound-Rows_images/winui-datagrid-unbound-rows-with-poplulated-data.png)
+<img src="Unbound-Rows_images/winui-datagrid-unbound-rows-with-poplulated-data.png" alt="Populating data with Unbound Row in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Refreshing the Unbound Rows at runtime
 
@@ -276,7 +278,7 @@ this.sfDataGrid.UnboundRowCellRenderers.Add("UnboundTextColumn", new GridUnbound
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Unbound Row behavior in WinUI DataGrid](Unbound-Rows_images/winui-datagrid-unbound-row-customization.png)
+<img src="Unbound-Rows_images/winui-datagrid-unbound-row-customization.png" alt="Customizing Unbound Row behavior in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Templating Unbound row cells
 
@@ -284,20 +286,22 @@ You can customize the unbound row cells using [GridUnboundRowEventsArgs.CellTemp
 
 {% tabs %}
 {% highlight xaml %}
-<DataTemplate x:Key="unboundRowCellTemplate">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <TextBlock Text="{Binding}" 
+<Application.Resources>
+    <DataTemplate x:Key="unboundRowCellTemplate">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="{Binding}" 
                    Grid.Column="1" Margin="0,0,3,0" 
                    TextWrapping="Wrap"  
                    VerticalAlignment="Center"  
                    HorizontalAlignment="Right" />
-        <Image Source="\Images\thumb_yes.png" HorizontalAlignment="Left" />
-    </Grid>
-</DataTemplate>
+            <Image Source="\Images\thumb_yes.png" HorizontalAlignment="Left" />
+        </Grid>
+    </DataTemplate>
+</Application.Resources>
 {% endhighlight %}
 {% endtabs %}
 <br/>
@@ -328,7 +332,7 @@ private void SfDataGrid_QueryUnboundRow(object sender, GridUnboundRowEventsArgs 
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Unbound Row Cell in WinUI DataGrid](Unbound-Rows_images/winui-datagrid-row-cell-customization.png)
+<img src="Unbound-Rows_images/winui-datagrid-row-cell-customization.png" alt="Customizing Unbound Row Cell in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Changing Unbound row height
 
@@ -336,7 +340,6 @@ You can change the height of unbound row using [SfDataGrid.QueryRowHeight](https
 
 {% tabs %}
 {% highlight c# %}
-using Syncfusion.UI.Xaml.DataGrid;
 this.sfDataGrid.QueryRowHeight += SfDataGrid_QueryRowHeight;
 
 private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
@@ -351,7 +354,7 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Unbound Row Height in WinUI DataGrid](Unbound-Rows_images/winui-datagrid-row-height.png)
+<img src="Unbound-Rows_images/winui-datagrid-row-height.png" alt="Changing Unbound Row Height in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Get Unbound rows
 
@@ -406,7 +409,7 @@ private void SfDataGrid_QueryUnboundRow(object sender, GridUnboundRowEventsArgs 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays Merged Unbound Row Cell](Unbound-Rows_images/winui-datagrid-merged-cells.png)
+<img src="Unbound-Rows_images/winui-datagrid-merged-cells.png" alt="WinUI DataGrid displays Merged Unbound Row Cell" width="100%" Height="Auto"/>
 
 ## Unbound row for Master-details view
 
@@ -418,12 +421,15 @@ You can get the DetailsViewDataGrid using [GridUnboundRowEventsArgs.OriginalSend
 {% highlight xaml %}
 <dataGrid:SfDataGrid x:Name="sfDataGrid"                                  
                        NavigationMode="Cell"
-                       AutoGenerateColumns="True"                              
+                       AutoGenerateColumns="True" 
+                       GridLinesVisibility="Both"                             
                        ItemsSource="{Binding Orders}">
     <dataGrid:SfDataGrid.DetailsViewDefinition>
         <dataGrid:GridViewDefinition RelationalColumn="OrderDetails">
             <dataGrid:GridViewDefinition.DataGrid>
-                <dataGrid:SfDataGrid x:Name="firstDetailsViewGrid"                                             AutoGenerateColumns="True">
+                <dataGrid:SfDataGrid x:Name="firstDetailsViewGrid"
+                                    GridLinesVisibility="Both"                                            
+                                    AutoGenerateColumns="True">
                     <dataGrid:SfDataGrid.UnboundRows>
                         <dataGrid:GridUnboundRow Position="Top" 
                                                  ShowBelowSummary="True" />
@@ -460,4 +466,4 @@ private void FirstDetailsViewGrid_QueryUnboundRow(object sender, GridUnboundRowE
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays Unbound Rows in Master Details View](Unbound-Rows_images/winui-datagrid-master-details-view-row.png)
+<img src="Unbound-Rows_images/winui-datagrid-master-details-view-row.png" alt="WinUI DataGrid displays Unbound Rows in Master Details View" width="100%" Height="Auto"/>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spline in WinUI Chart control | Syncfusion
-description: Learn here all about Spline support in Syncfusion WinUI Chart(SfChart) control with Area, Type support and more.
+description: Learn here all about Spline support in Syncfusion WinUI Chart (SfChart) control with Area, Type support and more.
 platform: WinUI
 control: SfChart
 documentation: ug
@@ -59,7 +59,7 @@ chart.Series.Add(series2);
 
 **Dashed Lines**
 
-[`StrokeDashArray`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_StrokeDashArray) property of the [`SplineSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineSeries.html#) is used to render spline series with dashes.
+The [`StrokeDashArray`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_StrokeDashArray) property of the [`SplineSeries`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineSeries.html#) is used to render spline series with dashes.
 
 {% tabs %}
 
@@ -146,7 +146,7 @@ chart.Series.Add(series);
 
 ## SplineType
 
-[`Spline`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineSeries.html) and [`SplineArea`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineAreaSeries.html) series provide support for various spline type. The spline type of the series can be changed by using its [`SplineType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineTypeProperty) property. The following spline types are supported by Spline and SplineArea series:
+The [`Spline`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineSeries.html) and [`SplineArea`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineAreaSeries.html) series support various spline types. The spline type of the series can be changed by using the [`SplineType`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineTypeProperty) property. The following spline types are supported by Spline and SplineArea series:
 
        * Natural
        * Monotonic

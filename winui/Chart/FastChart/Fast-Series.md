@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fast Series in WinUI Chart control | Syncfusion
-description: Learn here all about Fast Series feature of Syncfusion WinUI Chart control(SfChart) with fastline chart and more.
+description: Learn here all about Fast Series feature of Syncfusion WinUI Chart control (SfChart) with fastline chart and more.
 platform: WinUI
 control: SfChart
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 ## FastLine Chart
 
-The [`FastLineSeries`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineSeries.html) is a special kind of line series that can render a collection with huge number of datapoints using the polyline segment. 
+The [`FastLineSeries`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineSeries.html) is a special kind of line series that can render a collection with a huge number of data points using the polyline segment. 
 
 {% tabs %}
 

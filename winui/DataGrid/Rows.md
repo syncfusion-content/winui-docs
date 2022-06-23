@@ -25,7 +25,7 @@ RowHeader is a special column used to indicate the status of row (current row, e
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AddNewRowPosition="Top"
                        ItemsSource="{Binding Orders}"
                        ShowRowHeader="True" />
@@ -35,7 +35,7 @@ sfDataGrid.ShowRowHeader = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid Row Header](Rows_images/winui-datagrid-row-header.png)
+<img src="Rows_images/winui-datagrid-row-header.png" alt="WinUI DataGrid Row Header" width="100%" Height="Auto"/>
 
 ### Row indicators and its description
 
@@ -88,7 +88,7 @@ You can change the width of the row header by setting [SfDataGrid.RowHeaderWidth
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        ShowRowHeader="True"
                        RowHeaderWidth="50"
                        ItemsSource="{Binding Orders}" />
@@ -106,10 +106,10 @@ You can display the corresponding row index in each row header, by customizing t
 {% tabs %}
 {% highlight xaml %}
 
-<Style TargetType="syncfusion:GridRowHeaderCell">
+<Style TargetType="dataGrid:GridRowHeaderCell">
     <Setter Property="Template">
         <Setter.Value>
-            <ControlTemplate TargetType="syncfusion:GridRowHeaderCell">
+            <ControlTemplate TargetType="dataGrid:GridRowHeaderCell">
                 <Border x:Name="PART_RowHeaderCellBorder"
                         Background="{TemplateBinding Background}"
                         BorderBrush="{TemplateBinding BorderBrush}"
@@ -129,7 +129,7 @@ You can display the corresponding row index in each row header, by customizing t
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DatGrid displays Row Header Cells with Row Index](Rows_images/winui-datagrid-row-header-with-index.png)
+<img src="Rows_images/winui-datagrid-row-header-with-index.png" alt="WinUI DatGrid displays Row Header Cells with Row Index" width="100%" Height="Auto"/>
 
 
 ### Change the current row indicator
@@ -139,10 +139,10 @@ You can change the current row indicator in the row header by customizing the co
 {% tabs %}
 {% highlight xaml %}
 
-<Style TargetType="syncfusion:GridRowHeaderCell">
+<Style TargetType="dataGrid:GridRowHeaderCell">
     <Setter Property="Template">
         <Setter.Value>
-            <ControlTemplate TargetType="syncfusion:GridRowHeaderCell">
+            <ControlTemplate TargetType="dataGrid:GridRowHeaderCell">
                 <Border x:Name="PART_RowHeaderCellBorder"
                         Background="{TemplateBinding Background}"
                         BorderBrush="{TemplateBinding BorderBrush}"
@@ -181,14 +181,14 @@ You can change the current row indicator in the row header by customizing the co
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Current Row Indicator in WinUI DataGrid](Rows_images/winui-datagrid-current-row-indicator.png)
+<img src="Rows_images/winui-datagrid-current-row-indicator.png" alt="Customizing Current Row Indicator in WinUI DataGrid" width="100%" Height="Auto"/>
 
 
 ## Header Row
 
 Header row is present in top of the DataGrid which has column headers in it. Column header describes the caption to identify the column content.
 
-![WinUI DataGrid Header Row with Column Header](Rows_images/winui-datagrid-header-row-with-column-header.png)
+<img src="Rows_images/winui-datagrid-header-row-with-column-header.png" alt="WinUI DataGrid Header Row with Column Header" width="100%" Height="Auto"/>
 
 You can change the header row height by setting [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_HeaderRowHeight) property.
 
@@ -199,32 +199,32 @@ You can hide the header row by setting `SfDataGrid.HeaderRowHeight` as `0` (zero
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        HeaderRowHeight="0"
                        ItemsSource="{Binding Orders}" />
 {% endhighlight %}
 {% endtabs %}
 
-![Hide Row Header in WinUI DataGrid](Rows_images/winui-datagrid-hide-row-header.png)
+<img src="Rows_images/winui-datagrid-hide-row-header.png" alt="Hide Row Header in WinUI DataGrid" width="100%" Height="Auto"/>
 
 You can also hide the header row of DetailsViewDataGrid by setting `HeaderRowHeight` as `0` (zero) to [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid).
 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid" ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.DetailsViewDefinition>
-        <syncfusion:GridViewDefinition RelationalColumn="OrderDetails">
-            <syncfusion:GridViewDefinition.DataGrid>
-                <syncfusion:SfDataGrid x:Name="firstLevelNestedGrid" HeaderRowHeight="0" />
-            </syncfusion:GridViewDefinition.DataGrid>
-        </syncfusion:GridViewDefinition>
-    </syncfusion:SfDataGrid.DetailsViewDefinition>
-</syncfusion:SfDataGrid>
+<dataGrid:SfDataGrid x:Name="sfDataGrid" ItemsSource="{Binding Orders}">
+    <dataGrid:SfDataGrid.DetailsViewDefinition>
+        <dataGrid:GridViewDefinition RelationalColumn="OrderDetails">
+            <dataGrid:GridViewDefinition.DataGrid>
+                <dataGrid:SfDataGrid x:Name="firstLevelNestedGrid" HeaderRowHeight="0" />
+            </dataGrid:GridViewDefinition.DataGrid>
+        </dataGrid:GridViewDefinition>
+    </dataGrid:SfDataGrid.DetailsViewDefinition>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
-![Hide Row Header of Details View in WinUI DataGrid](Rows_images/winui-datagrid-details-view-without-header.png)
+<img src="Rows_images/winui-datagrid-details-view-without-header.png" alt="Hide Row Header of Details View in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Freeze panes
 
@@ -276,7 +276,7 @@ Set the frozen columns in <kbd>right side</kbd> of the SfDataGrid.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        FrozenFooterColumnCount="1"
                        FrozenColumnCount="1"
                        FrozenRowsCount="2"
@@ -291,7 +291,7 @@ sfDataGrid.FrozenFooterRowsCount = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays Frozen Rows and columns at top and bottom](Rows_images/winui-datagrid-frozen-rows-columns-position.png)
+<img src="Rows_images/winui-datagrid-frozen-rows-columns-position.png" alt="WinUI DataGrid displays Frozen Rows and columns at top and bottom" width="100%" Height="Auto"/>
 
 ### Differentiate frozen rows from normal rows
 
@@ -300,13 +300,13 @@ You can differentiate the frozen rows and footer rows from normal rows by writin
 
 {% tabs %}
 {% highlight xaml %}
-<Style TargetType="syncfusion:DataGridRowControl">
+<Style TargetType="dataGrid:DataGridRowControl">
     <Setter Property="Background" Value="Transparent" />
     <Setter Property="BorderBrush" Value="Gray" />
     <Setter Property="BorderThickness" Value="0" />
     <Setter Property="Template">
         <Setter.Value>
-            <ControlTemplate TargetType="syncfusion:DataGridRowControl">
+            <ControlTemplate TargetType="dataGrid:DataGridRowControl">
                 <Grid>
                     <VisualStateManager.VisualStateGroups>
                         <VisualStateGroup x:Name="BorderStates">
@@ -366,8 +366,6 @@ You can differentiate the frozen rows and footer rows from normal rows by writin
 
                     <Border x:Name="PART_RowHighlightBorder"
                             Margin="1"
-                            Background="{TemplateBinding RowHoverBackground}"
-                            BorderBrush="{TemplateBinding RowHoverBackground}"
                             BorderThickness="{TemplateBinding BorderThickness}"
                             Visibility="{TemplateBinding HighlightSelectionBorderVisibility}" />
 
@@ -382,7 +380,7 @@ You can differentiate the frozen rows and footer rows from normal rows by writin
 {% endhighlight %}
 {% endtabs %}
 
-![Differentiating Frozen Rows and Footer Rows from Normal rows in WinUI DataGrid](Rows_images/winui-datagrid-difference-of-frozen-and-normal-rows.png)
+<img src="Rows_images/winui-datagrid-difference-of-frozen-and-normal-rows.png" alt="Differentiating Frozen Rows and Footer Rows from Normal rows in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ### Disable drag and drop between frozen and non-frozen columns
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Upgrade NuGet Packages| WinUI | Syncfusion
-description: this section provides the information about upgrading the WinUI NuGet packages to most recent version
+title: Upgrade Syncfusion WinUI NuGet packages to a latest version
+description: Learn here about the how to upgrading Syncfusion WinUI NuGet packages to a latest version using NuGet manager and package manager UI.
 platform: winui
 control: Essential Studio
 documentation: ug
 ---
 
-# Upgrading Syncfusion WinUI NuGet packages
+# Upgrading Syncfusion WinUI NuGet packages to a latest version
 
 Every three months, Syncfusion releases new volumes with interesting new features. For this volume, there will be a weekly NuGet release and one service pack. Syncfusion WinUI NuGet packages are released on a weekly basis to address critical issue fixes in volume releases.
 

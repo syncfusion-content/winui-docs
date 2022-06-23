@@ -13,7 +13,7 @@ You can change the header row height by setting [SfDataGrid.HeaderRowHeight](htt
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid" 
+<dataGrid:SfDataGrid x:Name="sfDataGrid" 
                        RowHeight="30"
                        HeaderRowHeight="50"
                        ItemsSource="{Binding Orders}" />
@@ -24,28 +24,7 @@ this.sfDataGrid.RowHeight = 30;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing RowHeight and HeaderRowHeight in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-header-row-height.png)
-
-You can also change the row height of particular row using [QueryRowHeight](https://help.syncfusion.com/winui/datagrid/row-height-customization#queryrowheight-event) event.
-
-
-{% tabs %}
-{% highlight c# %}
-this.sfDataGrid.QueryRowHeight += SfDataGrid_QueryRowHeight;
-
-private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
-{
-    if (e.RowIndex == 3) //Sets Height to the third row.
-    {
-        e.Height = 50;
-        e.Handled = true;
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-![Changing Specific Row Height in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-row-height.png)
+<img src="Row-Height-Customization_images/winui-datagrid-header-row-height.png" alt="Changing RowHeight and HeaderRowHeight in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## QueryRowHeight event
 
@@ -75,7 +54,7 @@ void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Changing RowHeight based on Row Index in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-specfic-row-height.png)
+<img src="Row-Height-Customization_images/winui-datagrid-specfic-row-height.png" alt="Changing RowHeight based on Row Index in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ### Limitations
 
@@ -96,14 +75,14 @@ Below are the parameter to `GetAutoRowHeight` method,
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfDataGrid" ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn HeaderText="Order ID" MappingName="OrderID" TextAlignment="Right"/>
-        <syncfusion:GridTextColumn HeaderText="Customer Name" MappingName="CustomerName" TextWrapping="Wrap" />
-        <syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" TextWrapping="Wrap" />
-        <syncfusion:GridTextColumn MappingName="Country" TextWrapping="Wrap" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+<dataGrid:SfDataGrid x:Name="sfDataGrid" ItemsSource="{Binding Orders}">
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridNumericColumn HeaderText="Order ID" MappingName="OrderID" />
+        <dataGrid:GridTextColumn HeaderText="Customer Name" MappingName="CustomerName" TextWrapping="Wrap" />
+        <dataGrid:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" TextWrapping="Wrap" />
+        <dataGrid:GridTextColumn MappingName="Country" TextWrapping="Wrap" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 GridRowSizingOptions gridRowResizingOptions = new GridRowSizingOptions();
@@ -114,7 +93,7 @@ this.sfDataGrid.QueryRowHeight += SfDataGrid_QueryRowHeight;
 
 private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {
-    if (this.sfDataGrid.GridColumnSizer.GetAutoRowHeight(e.RowIndex, gridRowResizingOptions, out autoHeight))
+    if (this.sfDataGrid.ColumnSizer.GetAutoRowHeight(e.RowIndex, gridRowResizingOptions, out autoHeight))
     {
         if (autoHeight > 32)
         {
@@ -128,7 +107,7 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 Here, row heights are customized based on the large text content.
 
-![Auto Size Row Height in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-auto-size-row-height.png)
+<img src="Row-Height-Customization_images/winui-datagrid-auto-size-row-height.png" alt="Auto Size Row Height in WinUI DataGrid" width="100%" Height="Auto"/>
 
 #### GridRowSizingOptions
 
@@ -159,7 +138,7 @@ gridRowResizingOptions.ExcludeColumns = excludeColumns;
     
 private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {
-    if (this.sfDataGrid.GridColumnSizer.GetAutoRowHeight(e.RowIndex, gridRowResizingOptions, out autoHeight))
+    if (this.sfDataGrid.ColumnSizer.GetAutoRowHeight(e.RowIndex, gridRowResizingOptions, out autoHeight))
     {
         if (autoHeight > 32)
         {
@@ -174,7 +153,7 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 Here `CustomerID` and `Country` columns are excluded from height calculation and the row height is calculated based on `CustomerName` column only.
  
-![Auto Fit RowHeight in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-auto-fit-row-height.png)
+<img src="Row-Height-Customization_images/winui-datagrid-auto-fit-row-height.png" alt="Auto Fit RowHeight in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Changes header row height based on its Content
 
@@ -183,10 +162,8 @@ By default, auto height is supported for the headers is `QueryRowHeight` event. 
 
 {% tabs %}
 {% highlight xaml %}
-xmlns:core="using:Syncfusion.UI.Xaml.Core"
 
-<Page.Resources>
-    <core:StringFormatConverter x:Key="stringFormatConverter" />
+<Application.Resources>
     <DataTemplate x:Key="headerTemplate">
         <TextBlock Height="50"
                     FontWeight="Bold"
@@ -194,16 +171,17 @@ xmlns:core="using:Syncfusion.UI.Xaml.Core"
                     Text="Total Amount of Price in this month"
                     TextWrapping="Wrap" />
     </DataTemplate>
-</Page.Resources>
+</Application.Resources>
 
-<syncfusion:SfDataGrid x:Name="sfDataGrid" ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="TotalPrice" DisplayBinding="{Binding Path=TotalPrice, Converter={StaticResource stringFormatConverter}, ConverterParameter='{}{0:C}'}" TextAlignment="Right" HeaderTemplate="{StaticResource headerTemplate}" TextWrapping="Wrap" />
-        <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <syncfusion:GridTextColumn MappingName="Country" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
+<dataGrid:SfDataGrid x:Name="sfDataGrid" ItemsSource="{Binding Orders}">
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridNumericColumn MappingName="TotalPrice" HeaderTemplate="{StaticResource headerTemplate}" TextWrapping="Wrap" />
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridTextColumn  MappingName="ShipCity" HeaderText="Ship City"/>
+        <dataGrid:GridTextColumn MappingName="Country" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 GridRowSizingOptions gridRowResizingOptions = new GridRowSizingOptions();
@@ -217,7 +195,7 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
     //checked whether the row index is header or not.
     if (this.sfDataGrid.GetHeaderIndex() == e.RowIndex)
     {
-        if (this.sfDataGrid.GridColumnSizer.GetAutoRowHeight(e.RowIndex, gridRowResizingOptions, out autoHeight))
+        if (this.sfDataGrid.ColumnSizer.GetAutoRowHeight(e.RowIndex, gridRowResizingOptions, out autoHeight))
         {
             if (autoHeight > 32)
             {
@@ -230,7 +208,7 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Auto Fit Header Row Height in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-auto-fit-header-row-height.png)
+<img src="Row-Height-Customization_images/winui-datagrid-auto-fit-header-row-height.png" alt="Auto Fit Header Row Height in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Change StackedHeaderRow height based on its content
 
@@ -240,10 +218,10 @@ Also you can wrap stacked header text by writing style of TargetType [GridStacke
 
 {% tabs %}
 {% highlight xaml %}
-<Style TargetType="syncfusion:GridStackedHeaderCellControl">
+<Style TargetType="dataGrid:GridStackedHeaderCellControl">
     <Setter Property="Template">
         <Setter.Value>
-            <ControlTemplate TargetType="syncfusion:GridStackedHeaderCellControl">
+            <ControlTemplate TargetType="dataGrid:GridStackedHeaderCellControl">
                 <Border Background="{TemplateBinding Background}"
                         BorderBrush="{TemplateBinding BorderBrush}"
                         BorderThickness="{TemplateBinding BorderThickness}">
@@ -272,7 +250,7 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {    
     if (e.RowIndex < this.sfDataGrid.StackedHeaderRows.Count)
     {
-        if (this.sfDataGrid.GridColumnSizer.GetAutoRowHeight(e.RowIndex, gridRowResizingOptions, out autoHeight))
+        if (this.sfDataGrid.ColumnSizer.GetAutoRowHeight(e.RowIndex, gridRowResizingOptions, out autoHeight))
         {
             if (autoHeight > 32)
             {
@@ -285,7 +263,7 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Auto Fit StackedHeaderRow Height in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-stacked-header-row-height.png)
+<img src="Row-Height-Customization_images/winui-datagrid-stacked-header-row-height.png" alt="Auto Fit StackedHeaderRow Height in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Change TableSummaryRow height
 
@@ -308,5 +286,5 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Changing TableSummaryRow Height in WinUI DataGrid](Row-Height-Customization_images/winui-datagrid-table-summary-row-height.png)
+<img src="Row-Height-Customization_images/winui-datagrid-table-summary-row-height.png" alt="Changing TableSummaryRow Height in WinUI DataGrid" width="100%" Height="Auto"/>
 

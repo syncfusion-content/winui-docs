@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Marker in WinUI Chart control | Syncfusion
-description: Learn here all about Data Marker feature of Syncfusion WinUI Chart control with customizing marker support.
+description: Learn here all about the Data Marker feature of Syncfusion WinUI Chart control with customizing marker support.
 platform: WinUI
 control: Chart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Marker in WinUI Chart
 
-To enable the marker symbol, you have to set the [ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ContentTemplate) property of [CartesianDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianDataLabelSettings.html).
+To enable the marker symbol, set the [ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ContentTemplate) property of [CartesianDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianDataLabelSettings.html).
 
 The following code example demonstrates how to define marker symbol using [ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ContentTemplate).
 

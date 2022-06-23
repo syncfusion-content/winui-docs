@@ -25,8 +25,7 @@ The following are the list of options available to customize grid lines visibili
 
 ### Both
 
-The [GridLinesVisibility.Both](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_Both) displays the DataGrid with both horizontal and vertical grid lines. By default GridLinesVisibility value set as Both.
-
+The [GridLinesVisibility.Both](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_Both) displays the DataGrid with both horizontal and vertical grid lines.
 {% tabs %}
 {% highlight xaml %}
 xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
@@ -42,7 +41,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid with GridLines](GridLines_images/winui-datagrid-gridlines.png)
+<img src="GridLines_images/winui-datagrid-gridlines.png" alt="WinUI DataGrid with GridLines" width="100%" Height="Auto"/>
 
 ### Horizontal
 
@@ -63,7 +62,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid with Horizontal GridLines](GridLines_images/winui-datagrid-horizontal-gridlines.png)
+<img src="GridLines_images/winui-datagrid-horizontal-gridlines.png" alt="WinUI DataGrid with Horizontal GridLines" width="100%" Height="Auto"/>
 
 ### Vertical
 
@@ -84,10 +83,10 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid with Vertical GridLines](GridLines_images/winui-datagrid-vertical-gridlines.png)
+<img src="GridLines_images/winui-datagrid-vertical-gridlines.png" alt="WinUI DataGrid with Vertical GridLines" width="100%" Height="Auto"/>
 
 ### None
-[GridLinesVisibility.None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_None) displays the DataGrid without grid lines.
+[GridLinesVisibility.None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_None) displays the DataGrid without grid lines. By default GridLinesVisibility value set as None.
 
 {% tabs %}
 {% highlight xaml %}
@@ -104,7 +103,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid without GridLines](GridLines_images/winui-datagrid-without-gridlines.png)
+<img src="GridLines_images/winui-datagrid-without-gridlines.png" alt="WinUI DataGrid without GridLines" width="100%" Height="Auto"/>
 
 ## Header rows
 
@@ -125,7 +124,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays Horizontal Header Lines](GridLines_images/winui-datagrid-horizontal-header-lines.png)
+<img src="GridLines_images/winui-datagrid-horizontal-header-lines.png" alt="WinUI DataGrid displays Horizontal Header Lines" width="100%" Height="Auto"/>
 
 ## Grid lines for Master-Details view
 
@@ -150,6 +149,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
                     </dataGrid:SfDataGrid>
                 </dataGrid:GridViewDefinition.DataGrid>
             </dataGrid:GridViewDefinition>
+        </dataGrid:SfDataGrid.DetailsViewDefinition>
 </dataGrid:SfDataGrid>
 
 
@@ -163,7 +163,7 @@ this.FirstLevelNestedGrid.HeaderLinesVisibility = GridLinesVisibility.Horizontal
 {% endhighlight %}
 {% endtabs %}
 
-![DetailsViewDataGrid GridLinesVisibility customization in WinUI DataGrid](GridLines_images/winui-detailsviewdatagrid-horizontal-lines.png)
+<img src="GridLines_images/winui-detailsviewdatagrid-horizontal-lines.png" alt="DetailsViewDataGrid GridLinesVisibility customization in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Limitations
 

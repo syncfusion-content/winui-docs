@@ -300,18 +300,16 @@ By default, you cannot serialize the template content in SfDataGrid. This is the
 </Application.Resources>
 
 
-<syncfusion:SfDataGrid x:Name="dataGrid"
-                       AutoGenerateColumns="False"
-                       ItemsSource="{Binding Orders}">
-
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTemplateColumn CellTemplate="{StaticResource cellTemplate}"
-                                       HeaderText="Order ID"
-                                       MappingName="OrderID"
-                                       SetCellBoundValue="True" />        
-    </syncfusion:SfDataGrid.Columns>
-
-</syncfusion:SfDataGrid>
+<dataGrid:SfDataGrid x:Name="dataGrid"
+                    AutoGenerateColumns="False"
+                    ItemsSource="{Binding Orders}">
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTemplateColumn CellTemplate="{StaticResource cellTemplate}"
+                                HeaderText="Order ID"
+                                MappingName="OrderID"
+                                SetCellBoundValue="True" />        
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
