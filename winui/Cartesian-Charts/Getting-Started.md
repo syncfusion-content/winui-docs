@@ -22,12 +22,12 @@ This section explains how to populate the Cartesian chart with data, a header, d
 
 {% highlight xaml %}
 
-<Window
+<Window>
     . . .
     
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts">
     
-    <Grid>
+    <Grid x:Name="grid">
         <chart:SfCartesianChart/>
     </Grid>
 </Window>
@@ -47,7 +47,7 @@ namespace SfChart_GettingStarted
             InitializeComponent();
             
             SfCartesianChart chart = new SfCartesianChart();      
-            Root_Chart.Children.Add(chart);
+            grid.Children.Add(chart);
         }
     }   
 }
@@ -120,7 +120,7 @@ N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `Da
     mc:Ignorable="d" Height="350" Width="525"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid x:Name="Root_Chart">
+    <Grid x:Name="grid">
 	    <Grid.DataContext>
 	        <model:ViewModel/>
 	    </Grid.DataContext>
@@ -132,7 +132,7 @@ N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `Da
 
 {% highlight C# %} 
 
-Root_Chart.DataContext = new ViewModel();
+grid.DataContext = new ViewModel();
 
 {% endhighlight %}
 

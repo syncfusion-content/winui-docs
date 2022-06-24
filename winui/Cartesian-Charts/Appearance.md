@@ -52,6 +52,28 @@ Cartesian chart provides support to set the palette to series for applying prede
 
 {% tabs %}
 
+{% highlight xaml %}
+
+<chart:SfCartesianChart.Resources>
+    <BrushCollection x:Key="customBrushes">
+        <SolidColorBrush Color="#26c6da"/>
+        <SolidColorBrush Color="#00bcd4"/>
+        <SolidColorBrush Color="#00acc1"/>
+        <SolidColorBrush Color="#0097a7"/>
+        <SolidColorBrush Color="#00838f"/>
+    </BrushCollection>
+</chart:SfCartesianChart.Resources>
+
+<chart:SfCartesianChart.Series>
+    <chart:ColumnSeries ItemsSource="{Binding Data}"  
+                        XBindingPath="Demand" 
+                        YBindingPath="Year2010" 
+                        PaletteBrushes="{StaticResource customBrushes}">        
+    </chart:ColumnSeries>
+</chart:SfCartesianChart.Series>
+
+{% endhighlight %}
+
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
@@ -87,6 +109,43 @@ Gradient for the chart can be set by using the [PaletteBrushes]() property with 
 The following code sample and screenshot illustrates how to apply the gradient brushes for the series using the [PaletteBrushes]() property.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart.Resources>
+    <BrushCollection x:Key="customBrushes">
+        <LinearGradientBrush>
+            <GradientStop Offset="1" Color="#FFE7C7" />
+            <GradientStop Offset="0" Color="#FCB69F" />
+        </LinearGradientBrush>
+        <LinearGradientBrush>
+            <GradientStop Offset="1" Color="#fadd7d" />
+            <GradientStop Offset="0" Color="#fccc2d" />
+        </LinearGradientBrush>
+        <LinearGradientBrush>
+            <GradientStop Offset="1" Color="#DCFA97" />
+            <GradientStop Offset="0" Color="#96E6A1" />
+        </LinearGradientBrush>
+        <LinearGradientBrush>
+            <GradientStop Offset="1" Color="#DDD6F3" />
+            <GradientStop Offset="0" Color="#FAACA8" />
+        </LinearGradientBrush>
+        <LinearGradientBrush>
+            <GradientStop Offset="1" Color="#A8EAEE" />
+            <GradientStop Offset="0" Color="#7BB0F9" />
+        </LinearGradientBrush>
+    </BrushCollection>
+</chart:SfCartesianChart.Resources>
+
+<chart:SfCartesianChart.Series>
+    <chart:ColumnSeries ItemsSource="{Binding Data}"  
+                        XBindingPath="Demand" 
+                        YBindingPath="Year2010" 
+                        PaletteBrushes="{StaticResource customBrushes}">        
+    </chart:ColumnSeries>
+</chart:SfCartesianChart.Series>
+
+{% endhighlight %}
 
 {% highlight c# %}
 

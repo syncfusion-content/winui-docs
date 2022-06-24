@@ -378,6 +378,35 @@ By clicking on disabled legend item, we can view the associated `series`,
 
 ![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/WinUI_chart_legend_toggleSeriesVisibility1.png)
 
+## Placement
+
+Legends can be docked left, right, and top or bottom around the chart area using [Placement]() property. By default, the chart legend is docked at the top of the chart as mentioned earlier.
+
+To display the legend at the left, set the [Placement]() as [Left]() as in below code snippet.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart.Legend>
+    <chart:ChartLegend Placement="Bottom"/>
+</chart:SfCartesianChart.Legend>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.Legend = new ChartLegend()
+{
+   Placement = ChartDock.Bottom
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Positioning the legend at right in WinUI Chart](Legend_images/WinUI_chart_legend_placement.png)
+
 ## Background customization 
 
 The legend background appearance can be customized by using the following properties:

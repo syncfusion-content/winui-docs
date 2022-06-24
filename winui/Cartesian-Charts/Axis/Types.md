@@ -403,7 +403,7 @@ chart.YAxes.Add(secondaryAxis);
 
 Cartesian charts provides support to arrange the multiple series inside the same chart area with specified x-axis and y-axis. There are two properties [XAxisName]() and [YAxisName]() in all the Cartesian series type, which is used to provide multiple axes support. These axes can be arranged in a stacking order or in a side by side pattern.
 
-By default, The 0th index value of XAxes and YAxes is used to plot all of the series.
+By default, all the series are plotted based on the 0th index axis of XAxes and YAxes.
 
 {% tabs %}
 

@@ -229,6 +229,8 @@ this.Content = chart;
 
 ## Selection on initial rendering
 
+### SelectedIndex
+
 Cartesian chart provides support to select a point programmatically on a chart using the [SelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SelectedIndex) property of series.
 
 {% tabs %}
@@ -310,6 +312,56 @@ this.Content = chart;
 {% endtabs %}
 
 ![Initial series selection rendering support in WinUI Chart](Selection_images/WinUI_charts_selected_serie_index.png)
+
+### SelectedIndexes
+
+Cartesian chart provides support to select multiple points programmatically on a chart using the [SelectedIndexes]() property of `DataPointSelectionBehavior`.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<chart:SfCartesianChart>
+. . .
+    <chart:ColumnSeries ItemsSource="{Binding Data}" 
+                        XBindingPath="Demand"
+                        YBindingPath="Year2010">
+			<chart:ColumnSeries.SelectionBehavior>
+                <chart:DataPointSelectionBehavior SelectionBrush="BlueViolet" 
+				                                  Type="Multiple" 
+                                                  SelectedIndexes="{Binding SelectedIndexes}" />
+            </chart:ColumnSeries.SelectionBehavior>
+    </chart:ColumnSeries>
+</chart:SfCircularChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularChart chart = new SfCircularChart();
+. . .
+ColumnSeries series = new ColumnSeries()
+{
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "Demand",
+    YBindingPath = "Year2010"
+};
+
+DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
+{
+	SelectionBrush = new SolidColorBrush(Colors.BlueViolet),
+    Type = SelectionType.Multiple,
+    SelectedIndexes = new List<int>() { 1, 3 }
+};
+
+series.SelectionBehavior = selection;
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Initial series selection rendering support in WinUI Chart](Selection_images/WinUI_chart_selected_Datapoint_indexes.png.png)
 
 ## Events
 
