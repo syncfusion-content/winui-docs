@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Leading and Trailing View with WinUI AutoComplete | Syncfusion
-description: Learn here all about Leading and Trailing View support in Syncfusion WinUI AutoComplete control and more.
+title: Leading and trailing view in WinUI AutoComplete | Syncfusion
+description: Learn how to add leading and trailing view in Syncfusion WinUI AutoComplete control and more.
 platform: WinUI
 control: SfAutoComplete
 documentation: ug
 ---
 
-# Leading  and Trailing View in WinUI AutoComplete (SfAutoComplete)
+# Leading and Trailing View in WinUI AutoComplete (SfAutoComplete)
 
-This section explains about the Leading and Trailing view support available in [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html).The `Leadingview` appears before the `AutoComplete` selection area and `Trailingview` appears after the `AutoComplete` selection area. Any content, such as an icon, image, button, or other control, can be displayed in the `Leadingview` and `Trailingview`.
+This section explains about the leading and trailing view support available in [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html).The `LeadingView` appears before the `AutoComplete` selection area and `TrailingView` appears after the `AutoComplete` selection area. Any content, such as an icon, image, button, or control, can be displayed in the `LeadingView` and `TrailingView`.
 
 ## Leading View 
 
-The below code shows how to include the `Leadingview` in `AutoComplete`.
+The below code shows how to include the `LeadingView` in AutoComplete.
 
 {% tabs %}
 {% highlight xaml %}
@@ -32,11 +32,11 @@ The below code shows how to include the `Leadingview` in `AutoComplete`.
 {% endhighlight %}
 {% endtabs %}
 
-![Leading View in WinUI AutoComplete](Leading_and_Trailing_view_images/Leading-View-in-AutoComplete.png)
+![WinUI AutoComplete control with icon in leading view](Leading_and_Trailing_view_images/Leading-View-in-AutoComplete.png)
 
 ## Trailing View 
 
-The below code shows how to include the `Trailingview` in `AutoComplete`.
+The below code shows how to include the `TrailingView` in AutoComplete.
 
 {% tabs %}
 {% highlight xaml %}
@@ -58,11 +58,11 @@ The below code shows how to include the `Trailingview` in `AutoComplete`.
 {% endhighlight %}
 {% endtabs %}
 
-![Trailing View in WinUI AutoComplete](Leading_and_Trailing_view_images/Trailing-View-in-AutoComplete.png)
+![WinUI AutoComplete control with button in trailing view](Leading_and_Trailing_view_images/Trailing-View-in-AutoComplete.png)
 
-## Both Leading and Trailing View 
+## Leading and Trailing View 
 
-The below code shows how to include both the `Leadingview` and `Trailingview` in `AutoComplete`.
+The below code shows how to include both `LeadingView` and `TrailingView` in AutoComplete.
 
 {% tabs %}
 {% highlight xaml %}
@@ -92,4 +92,4 @@ The below code shows how to include both the `Leadingview` and `Trailingview` in
 {% endhighlight %}
 {% endtabs %}
 
-![Leading and Trailing View in WinUI AutoComplete](Leading_and_Trailing_view_images/Leading-and-Trailing-View-in-AutoComplete.png)
+![WinUI AutoComplete control with combo box in leading view and button in trailing view](Leading_and_Trailing_view_images/Leading-and-Trailing-View-in-AutoComplete.png)
