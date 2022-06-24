@@ -33,6 +33,11 @@ The application language can be changed by setting the desired language to the `
 
 {% endtabs %}
 
+The following screenshot illustrates how the localization is applied to the datagrid based on the defined language to the `ApplicationLanguages.PrimaryLanguageOverride` property.
+
+<img src="Localization-images/winui-datagrid-localization.png" alt="WinUI DataGrid Localization" width="100%" Height="Auto"/>
+
+
 ## Creating .resw files
 
 The following steps can be used to generate .resw files for any language:
