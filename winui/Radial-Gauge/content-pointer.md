@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Content pointer in WinUI Radial Gauge control | Syncfusion
-description: Learn here all about Content Pointer feature of Syncfusion WinUI Radial Gauge control with image, text and customization support.
+description: Learn here all about content pointer feature of Syncfusion WinUI Radial Gauge control with image, text and customization support.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Shape Pointer in WinUI Radial Gauge control | Syncfusion
-description: Learn here all about Shape Pointer feature of Syncfusion WinUI Radial Gauge control with customization support.
+title: Shape pointer in WinUI Radial Gauge control | Syncfusion
+description: Learn here all about shape pointer feature of Syncfusion WinUI Radial Gauge control with customization support.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug
 ---
 
-# Shape Pointer in WinUI Radial Gauge
+# Shape pointer in WinUI Radial Gauge
 
-The `ShapePointer` in [`SfRadialGauge`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfRadialGauge.html) allows you to use any build-in shapes (`ShapeType`) as a pointer to mark a specified value. The default `ShapeType` of the ShapePointer is InvertedTriangle.
+The [`ShapePointer`]() in [`SfRadialGauge`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfRadialGauge.html) allows you to use any build-in shapes as a pointer to mark a specified value. The default type is [`InvertedTriangle`]().
 
 {% tabs %}
 
@@ -44,27 +44,27 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![WinUI Radial Gauge Default Shape Pointer](images/marker-pointers/winui-radial-gauge-default-marker-pointer.png)
+![WinUI Radial Gauge default shape pointer](images/marker-pointers/winui-radial-gauge-default-marker-pointer.png)
 
 Gauge supports the following types of shapes:
 
-* Inverted triangle
-* Triangle
-* Circle
-* Rectangle
-* Diamond
+* [`Inverted triangle`]()
+* [`Triangle`]()
+* [`Circle`]()
+* [`Rectangle`]()
+* [`Diamond`]()
 
-![WinUI Radial Gauge Shapes](images/marker-pointers/winui-radial-shape-pointer-shapes.png)
+![WinUI Radial Gauge shapes](images/marker-pointers/winui-radial-shape-pointer-shapes.png)
 
 ## Shape customization
 
 The shape pointer can be customized using the following properties:
 
-* `Fill` – Allows to customize the shape color.
-* `ShaperHeight` – Allows to specify the shape height.
-* `ShapeWidth` – Allows to specify the shape width.
-* `Stroke` – Allows to specify the border color for the shape.
-* `StrokeThickness` –  Allows to specify the border width of the shape.
+* [`Fill`]() – Allows to customize the shape color.
+* [`ShaperHeight`]() – Allows to specify the shape height.
+* [`ShapeWidth`]() – Allows to specify the shape width.
+* [`Stroke`]() – Allows to specify the border color for the shape.
+* [`StrokeThickness`]() –  Allows to specify the border width of the shape.
 
 {% tabs %}
 
@@ -75,12 +75,12 @@ The shape pointer can be customized using the following properties:
         <gauge:RadialAxis>
             <gauge:RadialAxis.Pointers>
                 <gauge:ShapePointer Value="60"
-                                     ShapeHeight="30"
-                                     ShapeWidth="30"
-                                     BorderBrush="Black"
-                                     BorderWidth="3"
-                                     ShapeType="Circle"
-                                     Background="LightBlue"/>
+                                    ShapeHeight="30"
+                                    ShapeWidth="30"
+                                    BorderBrush="Black"
+                                    BorderWidth="3"
+                                    ShapeType="Circle"
+                                    Background="LightBlue"/>
             </gauge:RadialAxis.Pointers>
         </gauge:RadialAxis>
     </gauge:SfRadialGauge.Axes>
@@ -111,7 +111,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![WinUI Radial Gauge Custom Shape Pointer](images/marker-pointers/winui-radial-gauge-custom-marker-pointer.png)
+![WinUI Radial Gauge custom shape pointer](images/marker-pointers/winui-radial-gauge-custom-marker-pointer.png)
 
 ## Shape position customization
 
@@ -154,6 +154,6 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![WinUI Radial Gauge Marker Offset](images/marker-pointers/winui-radial-gauge-marker-offset.png)
+![WinUI Radial Gauge marker offset](images/marker-pointers/winui-radial-gauge-marker-offset.png)
 
 N> Provide positive value to [`MarkerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerOffset) to move the pointer inside of the axis and negative value to move the pointer outside of the axis.
