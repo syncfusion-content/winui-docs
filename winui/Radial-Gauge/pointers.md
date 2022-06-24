@@ -11,8 +11,9 @@ documentation: ug
 
  Pointer is used to indicate values on an axis. The radial gauge control has three types of pointers: 
 
-[`Marker pointer`](https://help.syncfusion.com/winui/radial-gauge/marker-pointer)
-[`Needle Pointer`](https://help.syncfusion.com/winui/radial-gauge/needle-pointer)
+[`Shape pointer`](https://help.syncfusion.com/winui/radial-gauge/marker-pointer)
+`Content pointer`
+[`Needle pointer`](https://help.syncfusion.com/winui/radial-gauge/needle-pointer)
 [`Range pointer`](https://help.syncfusion.com/winui/radial-gauge/range-pointer)
 
 All the pointers can be customized as needed. You can add multiple pointers to the gauge to point multiple values on the same scale. The value of the pointer is set using the [`Value`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_Value) property.
@@ -32,7 +33,7 @@ In addition to the default pointer, you can add n number of pointers to an axis 
         <gauge:RadialAxis>
             <gauge:RadialAxis.Pointers>
                 <gauge:RangePointer Value="30" />
-                <gauge:MarkerPointer Value="70" />
+                <gauge:ShapePointer Value="70" />
                 <gauge:NeedlePointer Value="60" />
             </gauge:RadialAxis.Pointers>
         </gauge:RadialAxis>
@@ -48,8 +49,8 @@ SfRadialGauge sfRadialGauge = new SfRadialGauge();
 RadialAxis radialAxis = new RadialAxis();
 RangePointer rangePointer = new RangePointer { Value = 30 };
 radialAxis.Pointers.Add(rangePointer);
-MarkerPointer markerPointer = new MarkerPointer { Value = 70 };
-radialAxis.Pointers.Add(markerPointer);
+ShapePointer shapePointer = new ShapePointer { Value = 70 };
+radialAxis.Pointers.Add(shapePointer);
 NeedlePointer needlePointer = new NeedlePointer { Value = 60 };
 radialAxis.Pointers.Add(needlePointer);
 
@@ -77,7 +78,7 @@ Pointers can be dragged over the scale value. It can be achieved by clicking and
                           AxisLineFill="CornflowerBlue"
                           AxisLineWidth="30">
             <gauge:RadialAxis.Pointers>
-                <gauge:MarkerPointer Value="30"
+                <gauge:ShapePointer Value="30"
                                      IsInteractive="True"
                                      MarkerOffset="-30"
                                      Background="Indigo" />
@@ -98,12 +99,12 @@ radialAxis.AxisLineFill = new SolidColorBrush(Colors.CornflowerBlue);
 radialAxis.AxisLineWidth = 30;
 sfRadialGauge.Axes.Add(radialAxis);
 
-MarkerPointer markerPointer = new MarkerPointer();
-markerPointer.Value = 30;
-markerPointer.IsInteractive = true;
-markerPointer.Background = new SolidColorBrush(Colors.Indigo);
-markerPointer.MarkerOffset = -30;
-radialAxis.Pointers.Add(markerPointer);
+ShapePointer shapePointer = new ShapePointer();
+shapePointer.Value = 30;
+shapePointer.IsInteractive = true;
+shapePointer.Background = new SolidColorBrush(Colors.Indigo);
+shapePointer.MarkerOffset = -30;
+radialAxis.Pointers.Add(shapePointer);
 
 this.Content = sfRadialGauge;
 
@@ -133,12 +134,12 @@ this.Content = sfRadialGauge;
                           AxisLineFill="CornflowerBlue"
                           AxisLineWidth="30">
             <gauge:RadialAxis.Pointers>
-                <gauge:MarkerPointer Value="30"
+                <gauge:ShapePointer Value="30"
                                      IsInteractive="True"
                                      MarkerOffset="-30"
                                      Background="Indigo" 
-                                     ValueChanging="MarkerPointer_ValueChanging"
-                                     ValueChanged="MarkerPointer_ValueChanged"/>
+                                     ValueChanging="ShapePointer_ValueChanging"
+                                     ValueChanged="ShapePointer_ValueChanged"/>
             </gauge:RadialAxis.Pointers>
         </gauge:RadialAxis>
     </gauge:SfRadialGauge.Axes>
@@ -148,7 +149,7 @@ this.Content = sfRadialGauge;
 
 {% highlight c# %}
 
-private void MarkerPointer_ValueChanging(object sender, ValueChangingEventArgs e)
+private void ShapePointer_ValueChanging(object sender, ValueChangingEventArgs e)
 {
     if (e.NewValue > 60)
     {
@@ -156,7 +157,7 @@ private void MarkerPointer_ValueChanging(object sender, ValueChangingEventArgs e
     }
 }
 
-private void MarkerPointer_ValueChanged(object sender, ValueChangedEventArgs e)
+private void ShapePointer_ValueChanged(object sender, ValueChangedEventArgs e)
 {
 
 }
