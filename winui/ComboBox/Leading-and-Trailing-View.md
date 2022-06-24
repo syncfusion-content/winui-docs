@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Leading and trailing view in WinUI ComboBox control | Syncfusion
-description: Learn how to add leading and trailing view in Syncfusion WinUI ComboBox control and more.
-platform: WinUI
+description: Learn how to add leading and trailing view (front and back view) in Syncfusion WinUI ComboBox control and more.
+platform: winui
 control: SfComboBox
 documentation: ug
 ---
@@ -32,7 +32,7 @@ The below code shows how to include the `LeadingView` in ComboBox.
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Combobox control with icon in leading view](Leading_and_Trailing_view_images/Leading-View-in-ComboBox.png)
+![WinUI Combobox control with icon in leading view (front view)](Leading_and_Trailing_view_images/Leading-View-in-ComboBox.png)
 
 ## Trailing View 
 
@@ -57,7 +57,7 @@ The below code shows how to include the `Trailingview` in ComboBox.
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox control with button in trailing view](Leading_and_Trailing_view_images/Trailing-View-in-ComboBox.png)
+![WinUI ComboBox control with button in trailing view (back view)](Leading_and_Trailing_view_images/Trailing-View-in-ComboBox.png)
 
 ## Leading and Trailing View 
 
@@ -91,4 +91,4 @@ The below code shows how to include both the `Leadingview` and `Trailingview` in
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox control with combo box in leading view and button in trailing view](Leading_and_Trailing_view_images/Leading-and-Trailing-View-in-ComboBox.png)
+![WinUI ComboBox control with combo box in leading view (front view) and button in trailing view (back view)](Leading_and_Trailing_view_images/Leading-and-Trailing-View-in-ComboBox.png)

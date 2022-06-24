@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Leading and trailing view in WinUI AutoComplete | Syncfusion
-description: Learn how to add leading and trailing view in Syncfusion WinUI AutoComplete control and more.
-platform: WinUI
+description: Learn how to add leading and trailing view (front and back view) in Syncfusion WinUI AutoComplete control and more.
+platform: winui
 control: SfAutoComplete
 documentation: ug
 ---
@@ -32,7 +32,7 @@ The below code shows how to include the `LeadingView` in AutoComplete.
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AutoComplete control with icon in leading view](Leading_and_Trailing_view_images/Leading-View-in-AutoComplete.png)
+![WinUI AutoComplete control with icon in leading view (front view)](Leading_and_Trailing_view_images/Leading-View-in-AutoComplete.png)
 
 ## Trailing View 
 
@@ -58,7 +58,7 @@ The below code shows how to include the `TrailingView` in AutoComplete.
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AutoComplete control with button in trailing view](Leading_and_Trailing_view_images/Trailing-View-in-AutoComplete.png)
+![WinUI AutoComplete control with button in trailing view (back view)](Leading_and_Trailing_view_images/Trailing-View-in-AutoComplete.png)
 
 ## Leading and Trailing View 
 
@@ -92,4 +92,4 @@ The below code shows how to include both `LeadingView` and `TrailingView` in Aut
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AutoComplete control with combo box in leading view and button in trailing view](Leading_and_Trailing_view_images/Leading-and-Trailing-View-in-AutoComplete.png)
+![WinUI AutoComplete control with combo box in leading view (front view) and button in trailing view (back view)](Leading_and_Trailing_view_images/Leading-and-Trailing-View-in-AutoComplete.png)
