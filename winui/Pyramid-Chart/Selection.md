@@ -140,11 +140,29 @@ this.Content = chart;
 
 {% endtabs %}
 
+![SelectedIndex in WinUI Chart](Selection_images/WinUI_chart_selected_index.png)
+
 ### SelectedIndexes
 
 Pyramid chart provides support to select multiple points programmatically on a chart using the [SelectedIndexes]() property of `DataPointSelectionBehavior`.
 
 {% tabs %}
+
+{% highlight xml %}
+
+<chart:SfPyramidChart x:Name="chart"  
+                    ItemsSource="{Binding Data}" 
+                    XBindingPath="Category"
+                    YBindingPath="Value">
+
+    chart:SfPyramidChart.SelectionBehavior>
+        <chart:DataPointSelectionBehavior Type="Multiple" SelectionBrush="Red"
+        SelectedIndexes="{Binding SelectedIndexes}"/>
+    </chart:SfPyramidChart.SelectionBehavior>
+. . .
+</chart:SfPyramidChart>
+
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -165,6 +183,8 @@ this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
+
+![SelectedIndexes in WinUI Chart](Selection_images/WinUI_chart_selected_indexes.png)
 
 ## Events
 

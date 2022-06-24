@@ -140,11 +140,29 @@ this.Content = chart;
 
 {% endtabs %}
 
+![SelectedIndex in WinUI Chart](Selection_images/WinUI_chart_selected_index.png)
+
 ### SelectedIndexes
 
 Funnel chart provides support to select multiple points programmatically on a chart using the [SelectedIndexes]() property of `DataPointSelectionBehavior`.
 
 {% tabs %}
+
+{% highlight xml %}
+
+<chart:SfFunnelChart x:Name="chart"  
+                    ItemsSource="{Binding Data}" 
+                    XBindingPath="Category"
+                    YBindingPath="Value">
+
+    <<chart:SfFunnelChart.SelectionBehavior>
+        <chart:DataPointSelectionBehavior SelectionBrush="Red" Type="Multiple"
+        SelectedIndexes="{Binding SelectedIndexes}"/>
+    </chart:SfFunnelChart.SelectionBehavior>
+. . .
+</chart:SfFunnelChart>
+
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -165,6 +183,8 @@ this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
+
+![SelectedIndexes in WinUI Chart](Selection_images/WinUI_chart_selected_indexes.png)
 
 ## Events
 

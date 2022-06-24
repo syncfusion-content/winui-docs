@@ -137,11 +137,30 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
+![SelectedIndex in WinUI Chart](Selection_images/WinUI_chart_selected_index.png)
+
 ### SelectedIndexes
 
 Circular chart provides support to select multiple points programmatically on a chart using the [SelectedIndexes]() property of `DataPointSelectionBehavior`.
 
 {% tabs %}
+
+{% highlight xml %}
+
+<chart:SfCircularChart>
+. . .
+    <chart:SfCircularChart.Series>
+        <chart:PieSeries>
+            <chart:PieSeries.SelectionBehavior>
+                chart:DataPointSelectionBehavior SelectionBrush="BlueViolet" Type="Multiple" 
+                SelectedIndexes="{Binding SelectedIndexes}" />
+            </chart:PieSeries.SelectionBehavior>
+        </chart:PieSeries>
+    </chart:SfCircularChart.Series>
+
+</chart:SfCircularChart>
+
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -161,6 +180,8 @@ chart.Series.Add(series);
 {% endhighlight %}
 
 {% endtabs %}
+
+![SelectedIndexes in WinUI Chart](Selection_images/WinUI_chart_selected_indexes.png)
 
 ## Events
 
