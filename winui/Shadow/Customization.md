@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in WinUI Shadow control | Syncfusion
-description: Learn here all about customization feature in Syncfusion WinUI Shadow control.
+description: Learn here all about the customization features such as color, opacity, position, and blur radius in Syncfusion WinUI Shadow control.
 platform: winui-controls
 control: SfShadow
 documentation: ug
@@ -20,7 +20,8 @@ If you want to change the color of the shadow other than the default Color value
 
 <syncfusion:SfShadow>
     <Button Height="50" width="100" Content="Button"         
-         CornerRadius="5"/>
+         CornerRadius="5">
+    </Button>
 </syncfusion:SfShadow>
 
 {% endhighlight %}
@@ -35,7 +36,6 @@ If you want to change the color of the shadow other than the default Color value
    shadow.Height = 50;
    shadow.width = 100;
    shadow.Content = "Button";
-   this.Content = shadow;
 
 {% endhiglight %}
 {% endtabs %}
@@ -51,7 +51,8 @@ If you want to change the blur radius of the shadow other than the default value
 
 <syncfusion:SfShadow>
     <Button Height="50" width="100" Content="Button"         
-         CornerRadius="5"/>
+         CornerRadius="5">
+    </Button>
 </syncfusion:SfShadow>
 
 {% endhighlight %}
@@ -65,23 +66,23 @@ If you want to change the blur radius of the shadow other than the default value
    shadow.Height = 50;
    shadow.width = 100;
    shadow.Content = "Button";
-   this.Content = shadow;
 
 {% endhiglight %}
 {% endtabs %}
 
 ![BlurRadius customization in shadow control in WinUI](Shadow_images/winui_shadow_blurradius.png)
 
-## Applying OffsetX for shadow
+## Applying Offset for shadow
 
- If you want to change the offsetX position of the shadow other than the default value, use the `OffsetX` property. The default value of `OffsetX` property is 4.
+ If you want to change the offsetX position of the shadow other than the default value, use the `OffsetX` and `OffsetY` property. The default value of `OffsetX` and `OffsetY` property is 4.
 
 {% tabs %}
 {% highlight XAML %}
 
 <syncfusion:SfShadow>
     <Button Height="50" width="100" Content="Button"         
-         CornerRadius="5"/>
+         CornerRadius="5">
+    </Button>
 </syncfusion:SfShadow>
 
 {% endhighlight %}
@@ -89,35 +90,6 @@ If you want to change the blur radius of the shadow other than the default value
 
    SfShadow shadow = new SfShadow();
    shadow.OffsetX = 12;
-   
-   Button button = new Button();
-   shadow.Content = button;
-   shadow.Height = 50;
-   shadow.width = 100;
-   shadow.Content = "Button";
-   this.Content = shadow;
-
-{% endhiglight %}
-{% endtabs %}
-
-![OffsetX position customization in shadow control in WinUI](Shadow_images/winui_shadow_offsetx.png)
-
-## Applying OffsetY for shadow
-
-If you want to change the offsetY position of the shadow other than the default value, use the `OffsetY` property. The default value of `OffsetY` property is 4.
-
-{% tabs %}
-{% highlight XAML %}
-
-<syncfusion:SfShadow>
-    <Button Height="50" width="100" Content="Button"         
-         CornerRadius="5"/>
-</syncfusion:SfShadow>
-
-{% endhighlight %}
-{% highlight C# %}
-
-   SfShadow shadow = new SfShadow();
    shadow.OffsetY = 12;
    
    Button button = new Button();
@@ -125,12 +97,11 @@ If you want to change the offsetY position of the shadow other than the default 
    shadow.Height = 50;
    shadow.width = 100;
    shadow.Content = "Button";
-   this.Content = shadow;
 
 {% endhiglight %}
 {% endtabs %}
 
-![OffsetY position customization in shadow control in WinUI](Shadow_images/winui_shadow_offsety.png)
+![OffsetX and OffsetY position customization in shadow control in WinUI](Shadow_images/winui_shadow_offset.png)
 
 ## Applying CornerRadius for shadow
 
@@ -141,7 +112,8 @@ If you want to change the corner radius of the shadow other than the default val
 
 <syncfusion:SfShadow>
     <Button Height="50" width="100" Content="Button"         
-         CornerRadius="5"/>
+         CornerRadius="5">
+    </Button>
 </syncfusion:SfShadow>
 
 {% endhighlight %}
@@ -155,7 +127,6 @@ If you want to change the corner radius of the shadow other than the default val
    shadow.Height = 50;
    shadow.width = 100;
    shadow.Content = "Button";
-   this.Content = shadow;
 
 {% endhiglight %}
 {% endtabs %}
