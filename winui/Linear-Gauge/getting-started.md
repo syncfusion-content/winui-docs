@@ -177,7 +177,7 @@ this.Content = sfLinearGauge;
 
 ## Add marker pointer to the linear gauge
 
-MarkerPointers contains a list of pointer elements, where you can add any number of gauge pointers such as [`ShapePointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html), and [`ContentPointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ContentPointer.html), inside the axis to indicate the value.
+MarkerPointers contains a list of pointer elements, where you can add any number of gauge pointers such as [`LinearShapePointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearShapePointer.html), and [`LinearContentPointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearContentPointer.html), inside the axis to indicate the value.
 
 ### Add shape pointer to the linear gauge
 
@@ -255,12 +255,12 @@ SfLinearGauge sfLinearGauge = new SfLinearGauge();
 sfLinearGauge.Axis.Maximum = 140;
 sfLinearGauge.Axis.Interval = 10;
 ...
-LinearContentPointer contentPointer1 = new LinearContentPointer();
-contentPointer1.Value = 90;
-contentPointer1.VerticalAnchor = GaugeAnchor.End;
-contentPointer1.OffsetPoint = new Point(0, -28);
-contentPointer1.Content = new TextBlock { Text = "90%" };
-sfLinearGauge.Axis.MarkerPointers.Add(contentPointer1);
+LinearContentPointer linearContentPointer1 = new LinearContentPointer();
+linearContentPointer1.Value = 90;
+linearContentPointer1.VerticalAnchor = GaugeAnchor.End;
+linearContentPointer1.OffsetPoint = new Point(0, -28);
+linearContentPointer1.Content = new TextBlock { Text = "90%" };
+sfLinearGauge.Axis.MarkerPointers.Add(linearContentPointer1);
 
 this.Content = sfLinearGauge;
 
@@ -350,12 +350,12 @@ shapePointer1.VerticalAnchor = GaugeAnchor.End;
 shapePointer1.OffsetPoint = new Point(0, -8);
 sfLinearGauge.Axis.MarkerPointers.Add(shapePointer1);
 
-LinearContentPointer contentPointer1 = new LinearContentPointer();
-contentPointer1.Value = 90;
-contentPointer1.VerticalAnchor = GaugeAnchor.End;
-contentPointer1.OffsetPoint = new Point(0, -28);
-contentPointer1.Content = new TextBlock { Text = "90%" };
-sfLinearGauge.Axis.MarkerPointers.Add(contentPointer1);
+LinearContentPointer linearContentPointer1 = new LinearContentPointer();
+linearContentPointer1.Value = 90;
+linearContentPointer1.VerticalAnchor = GaugeAnchor.End;
+linearContentPointer1.OffsetPoint = new Point(0, -28);
+linearContentPointer1.Content = new TextBlock { Text = "90%" };
+sfLinearGauge.Axis.MarkerPointers.Add(linearContentPointer1);
 
 this.Content = sfLinearGauge;
 

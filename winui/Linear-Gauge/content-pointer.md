@@ -9,7 +9,7 @@ documentation: ug
 
 # Content Pointer in WinUI Linear Gauge
 
-Highlight values using an image, icon, text, or any other custom view. You can set the custom views using the [`Content`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ContentPointer.html#Syncfusion_UI_Xaml_Gauges_ContentPointer_Content) property.
+Highlight values using an image, icon, text, or any other custom view. You can set the custom views using the [`Content`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearContentPointer.html#Syncfusion_UI_Xaml_Gauges_LinearContentPointer_Content) property.
 
 {% tabs %}
 
@@ -41,8 +41,8 @@ Highlight values using an image, icon, text, or any other custom view. You can s
 
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
 
-LinearContentPointer contentPointer = new LinearContentPointer();
-contentPointer.Value = 60;
+LinearContentPointer linearContentPointer = new LinearContentPointer();
+linearContentPointer.Value = 60;
 Grid contentPointerRootChild = new Grid
 {
     Background = new SolidColorBrush(Colors.Orange),
@@ -56,8 +56,8 @@ contentPointerRootChild.Children.Add(new TextBlock
     Margin = new Thickness { Bottom = 2, Left = 2, Right = 2, Top = 2 }
 });
 
-contentPointer.Content = contentPointerRootChild;
-sfLinearGauge.Axis.MarkerPointers.Add(contentPointer);
+linearContentPointer.Content = contentPointerRootChild;
+sfLinearGauge.Axis.MarkerPointers.Add(linearContentPointer);
 
 this.Content = sfLinearGauge;
 
@@ -127,10 +127,10 @@ Geometry geometry = (Geometry)XamlReader.Load(
 
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
 
-LinearContentPointer contentPointer = new LinearContentPointer();
-contentPointer.Value = 60;
-contentPointer.OffsetPoint = new Point(0, -25);
-contentPointer.Content = new Path
+LinearContentPointer linearContentPointer = new LinearContentPointer();
+linearContentPointer.Value = 60;
+linearContentPointer.OffsetPoint = new Point(0, -25);
+linearContentPointer.Content = new Path
 {
     Data = geometry,
     Stretch = Stretch.Fill,
@@ -138,7 +138,7 @@ contentPointer.Content = new Path
     Width = 20,
     Height = 40,
 };
-sfLinearGauge.Axis.MarkerPointers.Add(contentPointer);
+sfLinearGauge.Axis.MarkerPointers.Add(linearContentPointer);
 
 this.Content = sfLinearGauge;
 
@@ -180,14 +180,14 @@ You can change the horizontal or vertical position of the content pointer either
 
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
 
-LinearContentPointer contentPointer = new LinearContentPointer();
-contentPointer.Value = 60;
-contentPointer.VerticalAnchor = GaugeAnchor.End;
-contentPointer.OffsetPoint = new Point(0, -3);
+LinearContentPointer linearContentPointer = new LinearContentPointer();
+linearContentPointer.Value = 60;
+linearContentPointer.VerticalAnchor = GaugeAnchor.End;
+linearContentPointer.OffsetPoint = new Point(0, -3);
 BitmapImage bitmapImage = new BitmapImage { UriSource = new Uri("ms-appx:///WinUIReUnion/Assets/Thumbs-Up.png", UriKind.Absolute) };
 Image image = new Image { Source = bitmapImage };
-contentPointer.Content = image;
-sfLinearGauge.Axis.MarkerPointers.Add(contentPointer);
+linearContentPointer.Content = image;
+sfLinearGauge.Axis.MarkerPointers.Add(linearContentPointer);
 
 this.Content = sfLinearGauge;
 

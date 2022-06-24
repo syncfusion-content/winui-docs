@@ -70,12 +70,12 @@ shapePointer1.VerticalAnchor = GaugeAnchor.End;
 shapePointer1.OffsetPoint = new Point(0, -3);
 sfLinearGauge.Axis.MarkerPointers.Add(shapePointer1);
 
-LinearContentPointer contentPointer1 = new LinearContentPointer();
-contentPointer1.Value = 90;
-contentPointer1.VerticalAnchor = GaugeAnchor.End;
-contentPointer1.OffsetPoint = new Point(0, -23);
-contentPointer1.Content = new TextBlock { Text = "90%" };
-sfLinearGauge.Axis.MarkerPointers.Add(contentPointer1);
+LinearContentPointer linearContentPointer1 = new LinearContentPointer();
+linearContentPointer1.Value = 90;
+linearContentPointer1.VerticalAnchor = GaugeAnchor.End;
+linearContentPointer1.OffsetPoint = new Point(0, -23);
+linearContentPointer1.Content = new TextBlock { Text = "90%" };
+sfLinearGauge.Axis.MarkerPointers.Add(linearContentPointer1);
 
 this.Content = sfLinearGauge;
 
@@ -87,7 +87,7 @@ this.Content = sfLinearGauge;
 
 ## Pointer dragging
 
-Shape pointer can be dragged over the scale value. It can be achieved by clicking and dragging the pointer. To enable or disable the pointer drag, use the [`IsInteractive`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html#Syncfusion_UI_Xaml_Gauges_ShapePointer_IsInteractive) property.
+Shape pointer can be dragged over the scale value. It can be achieved by clicking and dragging the pointer. To enable or disable the pointer drag, use the [`IsInteractive`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearShapePointer.html#Syncfusion_UI_Xaml_Gauges_LinearShapePointer_IsInteractive) property.
 
 {% tabs %}
 
@@ -187,5 +187,5 @@ private void ShapePointer_ValueChanged(object sender, ValueChangedEventArgs e)
 
 {% endtabs %}
 
-N> `ValueChanged` event is exist for all pointers, other events available only for `ShapePointer`.
+N> `ValueChanged` event is exist for all pointers, other events available only for `LinearShapePointer`.
 

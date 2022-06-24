@@ -67,13 +67,13 @@ shapePointer1.OffsetPoint = new Point(0, -3);
 shapePointer1.EnableAnimation = true;
 sfLinearGauge.Axis.MarkerPointers.Add(shapePointer1);
 
-LinearContentPointer contentPointer1 = new LinearContentPointer();
-contentPointer1.Value = 60;
-contentPointer1.VerticalAnchor = GaugeAnchor.End;
-contentPointer1.OffsetPoint = new Point(0, -23);
-contentPointer1.Content = new TextBlock { Text = "60%" };
-contentPointer1.EnableAnimation = true;
-sfLinearGauge.Axis.MarkerPointers.Add(contentPointer1);
+LinearContentPointer linearContentPointer1 = new LinearContentPointer();
+linearContentPointer1.Value = 60;
+linearContentPointer1.VerticalAnchor = GaugeAnchor.End;
+linearContentPointer1.OffsetPoint = new Point(0, -23);
+linearContentPointer1.Content = new TextBlock { Text = "60%" };
+linearContentPointer1.EnableAnimation = true;
+sfLinearGauge.Axis.MarkerPointers.Add(linearContentPointer1);
 
 this.Content = sfLinearGauge;
 
@@ -146,14 +146,14 @@ shapePointer1.EnableAnimation = true;
 shapePointer1.AnimationDuration = 3000;
 sfLinearGauge.Axis.MarkerPointers.Add(shapePointer1);
 
-LinearContentPointer contentPointer1 = new LinearContentPointer();
-contentPointer1.Value = 60;
-contentPointer1.VerticalAnchor = GaugeAnchor.End;
-contentPointer1.OffsetPoint = new Point(0, -23);
-contentPointer1.Content = new TextBlock { Text = "60%" };
-contentPointer1.EnableAnimation = true;
-contentPointer1.AnimationDuration = 3000;
-sfLinearGauge.Axis.MarkerPointers.Add(contentPointer1);
+LinearContentPointer linearContentPointer1 = new LinearContentPointer();
+linearContentPointer1.Value = 60;
+linearContentPointer1.VerticalAnchor = GaugeAnchor.End;
+linearContentPointer1.OffsetPoint = new Point(0, -23);
+linearContentPointer1.Content = new TextBlock { Text = "60%" };
+linearContentPointer1.EnableAnimation = true;
+linearContentPointer1.AnimationDuration = 3000;
+sfLinearGauge.Axis.MarkerPointers.Add(linearContentPointer1);
 
 this.Content = sfLinearGauge;
 
@@ -239,15 +239,15 @@ shapePointer1.AnimationDuration = 3000;
 shapePointer1.AnimationEasingFunction = new CircleEase { EasingMode = EasingMode.EaseIn };
 sfLinearGauge.Axis.MarkerPointers.Add(shapePointer1);
 
-LinearContentPointer contentPointer1 = new LinearContentPointer();
-contentPointer1.Value = 70;
-contentPointer1.VerticalAnchor = GaugeAnchor.End;
-contentPointer1.OffsetPoint = new Point(0, -23);
-contentPointer1.Content = new TextBlock { Text = "70%" };
-contentPointer1.EnableAnimation = true;
-contentPointer1.AnimationDuration = 3000;
-contentPointer1.AnimationEasingFunction = new CircleEase { EasingMode = EasingMode.EaseIn };
-sfLinearGauge.Axis.MarkerPointers.Add(contentPointer1);
+LinearContentPointer linearContentPointer1 = new LinearContentPointer();
+linearContentPointer1.Value = 70;
+linearContentPointer1.VerticalAnchor = GaugeAnchor.End;
+linearContentPointer1.OffsetPoint = new Point(0, -23);
+linearContentPointer1.Content = new TextBlock { Text = "70%" };
+linearContentPointer1.EnableAnimation = true;
+linearContentPointer1.AnimationDuration = 3000;
+linearContentPointer1.AnimationEasingFunction = new CircleEase { EasingMode = EasingMode.EaseIn };
+sfLinearGauge.Axis.MarkerPointers.Add(linearContentPointer1);
 
 this.Content = sfLinearGauge;
 

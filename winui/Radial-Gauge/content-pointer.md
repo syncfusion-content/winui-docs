@@ -1,15 +1,19 @@
 ---
 layout: post
-title: Content Pointer in WinUI Radial Gauge control | Syncfusion
+title: Content pointer in WinUI Radial Gauge control | Syncfusion
 description: Learn here all about Content Pointer feature of Syncfusion WinUI Radial Gauge control with image, text and customization support.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug
 ---
 
-# Content Pointer in WinUI Radial Gauge
+# Content pointer in WinUI Radial Gauge
 
-The `ContentPointer` in [`SfRadialGauge`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfRadialGauge.html) allows you to use any content using the `Content` property as a pointer to mark a specified value.
+The [`ContentPointer`]() in [`SfRadialGauge`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfRadialGauge.html) allows you to use any content as a pointer using the [`Content`]() property of it. 
+
+**Add custom text as content pointer**
+
+The following code sample demonstrate how to add a custom text as a content pointer.
 
 {% tabs %}
 
@@ -68,11 +72,11 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![WinUI Radial Gauge Content Pointer](images/content-pointer/default-content-pointer.png)
+![WinUI Radial Gauge content pointer](images/content-pointer/default-content-pointer.png)
 
-## Add image to content pointer
+**Add image to content pointer**
 
-The content pointer of `SfRadialGauge` can also have an image as its `Content`.
+The following code demonstrate how to use a `Image` as a content pointer.
 
 {% tabs %}
 
@@ -131,9 +135,9 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![WinUI Radial Gauge Content Pointer with Image](images/content-pointer/winui-radial-gauge-image-pointer.png)
+![Image as a content of content pointer in WinUI Radial Gauge](images/content-pointer/winui-radial-gauge-image-pointer.png)
 
-## Content position customization
+## Position customization
 
 The content pointer can be moved near or far from its actual position using the [`MarkerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerOffset) and [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_OffsetUnit) properties. 
 

@@ -31,9 +31,9 @@ Indicate current values by using the different types of shape pointers. You can 
 
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
 
-LinearShapePointer shapePointer = new LinearShapePointer();
-shapePointer.Value = 60;
-sfLinearGauge.Axis.MarkerPointers.Add(shapePointer);
+LinearShapePointer linearShapePointer = new LinearShapePointer();
+linearShapePointer.Value = 60;
+sfLinearGauge.Axis.MarkerPointers.Add(linearShapePointer);
 
 this.Content = sfLinearGauge;
 
@@ -55,7 +55,7 @@ Gauge supports the following types of shape pointer:
 
 ## Custom shape pointer
 
-You can add customized shapes to denote the current pointer value instead of in-built shape. It can be achieved by providing required shape in [`ShapeTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html#Syncfusion_UI_Xaml_Gauges_ShapePointer_ShapeTemplate) property.
+You can add customized shapes to denote the current pointer value instead of in-built shape. It can be achieved by providing required shape in [`ShapeTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearShapePointer.html#Syncfusion_UI_Xaml_Gauges_LinearShapePointer_ShapeTemplate) property.
 
 {% tabs %}
 
@@ -92,10 +92,10 @@ You can add customized shapes to denote the current pointer value instead of in-
 
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
 
-LinearShapePointer shapePointer = new LinearShapePointer();
-shapePointer.Value = 60;
-shapePointer.ShapeTemplate = this.Resources["CustomShapePointer"] as DataTemplate;
-sfLinearGauge.Axis.MarkerPointers.Add(shapePointer);
+LinearShapePointer linearShapePointer = new LinearShapePointer();
+linearShapePointer.Value = 60;
+linearShapePointer.ShapeTemplate = this.Resources["CustomShapePointer"] as DataTemplate;
+sfLinearGauge.Axis.MarkerPointers.Add(linearShapePointer);
 
 this.Content = sfLinearGauge;
 
@@ -109,11 +109,11 @@ this.Content = sfLinearGauge;
 
 The shape pointer can be customized using the following properties:
 
-* [`Fill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html#Syncfusion_UI_Xaml_Gauges_ShapePointer_Fill) – Allows to customize the shape color.
-* [`Stroke`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html#Syncfusion_UI_Xaml_Gauges_ShapePointer_Stroke) – Allows to specify the border color for the shape.
-* [`StrokeThickness`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html#Syncfusion_UI_Xaml_Gauges_ShapePointer_StrokeThickness) –  Allows to specify the border width of the shape.
-* [`ShapeHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html#Syncfusion_UI_Xaml_Gauges_ShapePointer_ShapeHeight) – Allows to specify the shape height.
-* [`ShapeWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html#Syncfusion_UI_Xaml_Gauges_ShapePointer_ShapeWidth) – Allows to specify the shape width.
+* [`Fill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearShapePointer.html#Syncfusion_UI_Xaml_Gauges_LinearShapePointer_Fill) – Allows to customize the shape color.
+* [`Stroke`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearShapePointer.html#Syncfusion_UI_Xaml_Gauges_LinearShapePointer_Stroke) – Allows to specify the border color for the shape.
+* [`StrokeThickness`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearShapePointer.html#Syncfusion_UI_Xaml_Gauges_LinearShapePointer_StrokeThickness) –  Allows to specify the border width of the shape.
+* [`ShapeHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearShapePointer.html#Syncfusion_UI_Xaml_Gauges_LinearShapePointer_ShapeHeight) – Allows to specify the shape height.
+* [`ShapeWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearShapePointer.html#Syncfusion_UI_Xaml_Gauges_LinearShapePointer_ShapeWidth) – Allows to specify the shape width.
 
 {% tabs %}
 
@@ -141,15 +141,15 @@ The shape pointer can be customized using the following properties:
 
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
 
-LinearShapePointer shapePointer = new LinearShapePointer();
-shapePointer.Value = 60;
-shapePointer.ShapeHeight = 30;
-shapePointer.ShapeWidth = 30;
-shapePointer.Fill = new SolidColorBrush(Colors.LightBlue);
-shapePointer.Stroke = new SolidColorBrush(Colors.Black);
-shapePointer.StrokeThickness = 3;
-shapePointer.ShapeType = GaugeShapeType.Circle;
-sfLinearGauge.Axis.MarkerPointers.Add(shapePointer);
+LinearShapePointer linearShapePointer = new LinearShapePointer();
+linearShapePointer.Value = 60;
+linearShapePointer.ShapeHeight = 30;
+linearShapePointer.ShapeWidth = 30;
+linearShapePointer.Fill = new SolidColorBrush(Colors.LightBlue);
+linearShapePointer.Stroke = new SolidColorBrush(Colors.Black);
+linearShapePointer.StrokeThickness = 3;
+linearShapePointer.ShapeType = GaugeShapeType.Circle;
+sfLinearGauge.Axis.MarkerPointers.Add(linearShapePointer);
 
 this.Content = sfLinearGauge;
 
@@ -188,10 +188,10 @@ To move the pointer outside of the axis, provide negative values.
 
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
 
-LinearShapePointer shapePointer = new LinearShapePointer();
-shapePointer.Value = 60;
-shapePointer.OffsetPoint = new Point(0, -25);
-sfLinearGauge.Axis.MarkerPointers.Add(shapePointer);
+LinearShapePointer linearShapePointer = new LinearShapePointer();
+linearShapePointer.Value = 60;
+linearShapePointer.OffsetPoint = new Point(0, -25);
+sfLinearGauge.Axis.MarkerPointers.Add(linearShapePointer);
 
 this.Content = sfLinearGauge;
 
@@ -227,11 +227,11 @@ You can change the horizontal or vertical position of the shape pointer either s
 
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
 
-LinearShapePointer shapePointer = new LinearShapePointer();
-shapePointer.Value = 60;
-shapePointer.VerticalAnchor = GaugeAnchor.End;
-shapePointer.OffsetPoint = new Point(0, -5);
-sfLinearGauge.Axis.MarkerPointers.Add(shapePointer);
+LinearShapePointer linearShapePointer = new LinearShapePointer();
+linearShapePointer.Value = 60;
+linearShapePointer.VerticalAnchor = GaugeAnchor.End;
+linearShapePointer.OffsetPoint = new Point(0, -5);
+sfLinearGauge.Axis.MarkerPointers.Add(linearShapePointer);
 
 this.Content = sfLinearGauge;
 
