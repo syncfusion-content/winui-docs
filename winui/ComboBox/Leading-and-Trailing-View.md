@@ -32,7 +32,7 @@ The below code shows how to include the `LeadingView` in ComboBox.
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Combobox control with icon in leading view (front view)](Leading_and_Trailing_view_images/Leading-View-in-ComboBox.png)
+![WinUI Combobox control with icon in leading view or front view](Leading_and_Trailing_view_images/Leading-View-in-ComboBox.png)
 
 ## Trailing View 
 
@@ -57,7 +57,7 @@ The below code shows how to include the `Trailingview` in ComboBox.
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox control with button in trailing view (back view)](Leading_and_Trailing_view_images/Trailing-View-in-ComboBox.png)
+![WinUI ComboBox control with button in trailing view or back view](Leading_and_Trailing_view_images/Trailing-View-in-ComboBox.png)
 
 ## Leading and Trailing View 
 
@@ -91,4 +91,4 @@ The below code shows how to include both the `Leadingview` and `Trailingview` in
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox control with combo box in leading view (front view) and button in trailing view (back view)](Leading_and_Trailing_view_images/Leading-and-Trailing-View-in-ComboBox.png)
+![WinUI ComboBox control with combo box in leading view or front view and button in trailing view or back view](Leading_and_Trailing_view_images/Leading-and-Trailing-View-in-ComboBox.png)

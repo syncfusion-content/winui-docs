@@ -32,7 +32,7 @@ The below code shows how to include the `LeadingView` in AutoComplete.
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AutoComplete control with icon in leading view (front view)](Leading_and_Trailing_view_images/Leading-View-in-AutoComplete.png)
+![WinUI AutoComplete control with icon in leading view or front view](Leading_and_Trailing_view_images/Leading-View-in-AutoComplete.png)
 
 ## Trailing View 
 
@@ -58,7 +58,7 @@ The below code shows how to include the `TrailingView` in AutoComplete.
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AutoComplete control with button in trailing view (back view)](Leading_and_Trailing_view_images/Trailing-View-in-AutoComplete.png)
+![WinUI AutoComplete control with button in trailing view or back view](Leading_and_Trailing_view_images/Trailing-View-in-AutoComplete.png)
 
 ## Leading and Trailing View 
 
@@ -92,4 +92,4 @@ The below code shows how to include both `LeadingView` and `TrailingView` in Aut
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AutoComplete control with combo box in leading view (front view) and button in trailing view (back view)](Leading_and_Trailing_view_images/Leading-and-Trailing-View-in-AutoComplete.png)
+![WinUI AutoComplete control with combo box in leading view or front view and button in trailing view or back view](Leading_and_Trailing_view_images/Leading-and-Trailing-View-in-AutoComplete.png)
