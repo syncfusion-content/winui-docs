@@ -151,8 +151,8 @@ The appearance of the data label can be customized using the [ContentTemplate](h
 
 {% highlight xaml %}
 
-<chart:SfPolarChart x:Name="chart">
-    <chart:SfPolarChart.Resources>
+<Grid x:Name="grid">
+    <Grid.Resources>
         <DataTemplate x:Key="datalabelTemplate">
                 <Grid>
                     <Ellipse
@@ -173,15 +173,17 @@ The appearance of the data label can be customized using the [ContentTemplate](h
                             TextWrapping="Wrap" />
                 </Grid>
         </DataTemplate>
-    </chart:SfPolarChart.Resources>
+    </Grid.Resources>
+    <chart:SfPolarChart x:Name="chart">
     ...
-    <chart:PolarAreaSeries ShowDataLabels="True">
-        <chart:PolarAreaSeries.DataLabelSettings>
-            <chart:PolarDataLabelSettings ContentTemplate="{StaticResource datalabelTemplate}" />
-        </chart:PolarAreaSeries.DataLabelSettings>
-    </chart:PolarAreaSeries>
+        <chart:PolarAreaSeries ShowDataLabels="True">
+            <chart:PolarAreaSeries.DataLabelSettings>
+                <chart:PolarDataLabelSettings ContentTemplate="{StaticResource datalabelTemplate}" />
+            </chart:PolarAreaSeries.DataLabelSettings>
+        </chart:PolarAreaSeries>
     ...
-</chart:SfPolarChart>
+    </chart:SfPolarChart>
+</Grid>
 
 {% endhighlight %}
 
@@ -194,7 +196,7 @@ series.ShowDataLabels = true;
 
 series.DataLabelSettings = new PolarDataLabelSettings() 
 { 
-    ContentTemplate = chart.Resources["datalabelTemplate"] as DataTemplate,
+    ContentTemplate = grid.Resources["datalabelTemplate"] as DataTemplate,
 };
 ...
 

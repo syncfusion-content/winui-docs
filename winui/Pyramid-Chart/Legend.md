@@ -323,8 +323,8 @@ Customize each legend item by using the `ItemTemplate` property in [ChartLegend]
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart>
-    <chart:SfPyramidChart.Resources>
+<Grid x:Name="grid">
+    <Grid.Resources>
         <DataTemplate x:Key="labelTemplate">
             <StackPanel Margin="10" Orientation="Vertical">
                 <Ellipse Height="15" Width="15" Fill="{Binding Interior}" 
@@ -334,13 +334,14 @@ Customize each legend item by using the `ItemTemplate` property in [ChartLegend]
                            FontWeight="SemiBold" Text="{Binding Label}"/>
             </StackPanel>
         </DataTemplate>
-    </chart:SfPyramidChart.Resources>
+    </Grid.Resources>
+    <chart:SfPyramidChart>
     . . .
-    <chart:SfPyramidChart.Legend>
-        <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}"/>
-    </chart:SfPyramidChart.Legend>
-
-</chart:SfPyramidChart>
+        <chart:SfPyramidChart.Legend>
+            <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}"/>
+        </chart:SfPyramidChart.Legend>
+    </chart:SfPyramidChart>
+</Grid>
 
 {% endhighlight %}
 
@@ -349,7 +350,7 @@ Customize each legend item by using the `ItemTemplate` property in [ChartLegend]
 SfPyramidChart chart = new SfPyramidChart();
 chart.Legend = new ChartLegend()
 {
-   ItemTemplate = chart.Resources["labelTemplate"] as DataTemplate
+   ItemTemplate = grid.Resources["labelTemplate"] as DataTemplate
 };
 . . . 
 this.Content = chart;

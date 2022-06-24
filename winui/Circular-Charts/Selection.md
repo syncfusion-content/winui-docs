@@ -54,7 +54,7 @@ chart.Series.Add(series);
 
 ## Multi-selection
 
-Circular chart allows to select single or multiple segments using [Type]() property. By default the [Type]() value is [Single]().
+Circular chart allows to select single or multiple segments using [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) property. By default the [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) value is [Single]().
 
 {% tabs %}
 
@@ -94,9 +94,77 @@ chart.Series.Add(series);
 
 ![Multi-selection support in WinUI Pie Chart](Selection_Images/WinUI_pie_chart_multiple_selection.png)
 
+## Selection on initial rendering
+
+### SelectedIndex
+
+Circular chart provides support to select a point programmatically on a chart using the [SelectedIndex]() property of `DataPointSelectionBehavior`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCircularChart>
+. . .
+    <chart:SfCircularChart.Series>
+        <chart:PieSeries>
+            <chart:PieSeries.SelectionBehavior>
+                chart:DataPointSelectionBehavior SelectionBrush="BlueViolet" 
+                SelectedIndex="2"/>
+            </chart:PieSeries.SelectionBehavior>
+        </chart:PieSeries>
+    </chart:SfCircularChart.Series>
+    
+</chart:SfCircularChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularChart chart = new SfCircularChart();
+. . .
+PieSeries series = new PieSeries();
+DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
+{
+	SelectionBrush = new SolidColorBrush(Colors.BlueViolet),
+    SelectedIndex = 2
+};
+
+series.SelectionBehavior = selection;
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### SelectedIndexes
+
+Circular chart provides support to select multiple points programmatically on a chart using the [SelectedIndexes]() property of `DataPointSelectionBehavior`.
+
+{% tabs %}
+
+{% highlight c# %}
+
+SfCircularChart chart = new SfCircularChart();
+. . .
+PieSeries series = new PieSeries();
+DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
+{
+	SelectionBrush = new SolidColorBrush(Colors.BlueViolet),
+    Type = SelectionType.Multiple,
+    SelectedIndexes = new List<int>() { 2, 3, 4 }
+};
+
+series.SelectionBehavior = selection;
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Events
 
-The following events are available in the [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) selection.
+The following events are available in the [ChartSelectionBehavior]().
 
 ### SelectionChanging
 
@@ -105,7 +173,7 @@ The [SelectionChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 * [CurrentIndex]() - Gets the selected data point index.
 * [PreviousIndex]() - Gets the previous selected data point index.
 
-* [Cancel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangingEventArgs_Cancel) - Gets or Sets a value that indicates whether the selection should be canceled.
+* [Cancel]() - Gets or Sets a value that indicates whether the selection should be canceled.
 
 ### SelectionChanged
 

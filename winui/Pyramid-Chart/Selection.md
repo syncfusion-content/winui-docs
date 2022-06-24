@@ -55,7 +55,7 @@ this.Content = chart;
 
 ## Multi-selection
 
-Pyramid chart provides support to select multiple segments by using [Type]() property as [Multiple]().  By default, the value of [Type]() is [Single]() and it is used for single selection.
+Pyramid chart provides support to select multiple segments by using [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) property as [Multiple]().  By default, the value of [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) is [Single]() and it is used for single selection.
 
 N> `Series` and `MultiSeries` selection type is not support for pyramid chart.
 
@@ -97,9 +97,78 @@ this.Content = chart;
 
 ![Multi selection support in WinUI Chart](Selection_images/WinUI_chart_multi_selection.png)
 
+## Selection on initial rendering
+
+### SelectedIndex
+
+Pyramid chart provides support to select a point programmatically on a chart using the [SelectedIndex]() property of `DataPointSelectionBehavior`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfPyramidChart x:Name="chart" 
+                    Height="388" Width="500"
+                    ItemsSource="{Binding Data}" 
+                    XBindingPath="Category"
+                    YBindingPath="Value">
+
+    <chart:SfPyramidChart.SelectionBehavior>
+        <chart:DataPointSelectionBehavior SelectionBrush="Red" SelectedIndex="1"/>
+    </chart:SfPyramidChart.SelectionBehavior>
+
+</chart:SfPyramidChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfPyramidChart chart = new SfPyramidChart();
+chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+chart.XBindingPath = "Category";
+chart.YBindingPath = "Value";
+DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
+{
+	SelectionBrush = new SolidColorBrush(Colors.Red),
+    SelectedIndex= 1
+};
+chart.SelectionBehavior = selection;
+. . .
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### SelectedIndexes
+
+Pyramid chart provides support to select multiple points programmatically on a chart using the [SelectedIndexes]() property of `DataPointSelectionBehavior`.
+
+{% tabs %}
+
+{% highlight c# %}
+
+SfPyramidChart chart = new SfPyramidChart();
+chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+chart.XBindingPath = "Category";
+chart.YBindingPath = "Value";
+DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
+{
+	SelectionBrush = new SolidColorBrush(Colors.Red),
+	Type = SelectionType.Multiple,
+    SelectedIndexes = new List<int>() { 2, 4 }
+};
+chart.SelectionBehavior = selection;
+. . .
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Events
 
-The following selection events are available in [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html).
+The following selection events are available in [ChartSelectionBehavior]().
 
 ### SelectionChanging
 
@@ -107,7 +176,7 @@ The [SelectionChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 * [CurrentIndex]() - Gets the selected data point index.
 * [PreviousIndex]() - Gets the previous selected data point index.
-* [Cancel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangingEventArgs_Cancel) - Gets or Sets a value that indicates whether the selection should be canceled.
+* [Cancel]() - Gets or Sets a value that indicates whether the selection should be canceled.
 
 ### SelectionChanged
 

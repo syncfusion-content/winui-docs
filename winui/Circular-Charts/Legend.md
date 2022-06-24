@@ -170,14 +170,14 @@ Circular chart provides support to add custom icon for the legend using [LegendI
 
 {% highlight xaml %}
 
-<chart:SfCircularChart>
-    <chart:SfCircularChart.Resources>
+<Grid x:Name="grid">
+    <Grid.Resources>
         <DataTemplate x:Key="iconTemplate">
             <Ellipse Height="15" Width="15" Fill="White" 
                  Stroke="#4a4a4a" StrokeThickness="2"/>
         </DataTemplate>
-    </chart:SfCircularChart.Resources>
-
+    </Grid.Resources>
+<chart:SfCircularChart>
     <chart:SfCircularChart.Legend>
         <chart:ChartLegend IconWidth="15" IconHeight="15"/>
     </chart:SfCircularChart.Legend>
@@ -186,6 +186,7 @@ Circular chart provides support to add custom icon for the legend using [LegendI
         LegendIconTemplate="{StaticResource iconTemplate}"
         ItemsSource="{Binding Data}"/>
 </chart:SfCircularChart>
+</Grid>
 
 {% endhighlight %}
 
@@ -194,7 +195,7 @@ Circular chart provides support to add custom icon for the legend using [LegendI
 SfCircularChart chart = new SfCircularChart();
 . . .
 PieSeries series = new PieSeries();
-series.LegendIconTemplate = chart.Resources["iconTemplate"] as DataTemplate;
+series.LegendIconTemplate = grid.Resources["iconTemplate"] as DataTemplate;
 . . .
 chart.Series.Add(series);
 
@@ -394,8 +395,8 @@ Customize each legend item by using `ItemTemplate` property in [ChartLegend](htt
 
 {% highlight xaml %}
 
-<chart:SfCircularChart>
-    <chart:SfCircularChart.Resources>
+<Grid x:Name="grid">
+    <Grid.Resources>
         <DataTemplate x:Key="labelTemplate">
             <StackPanel Margin="10" Orientation="Vertical">
                 <Ellipse Height="15" Width="15" Fill="{Binding Interior}" 
@@ -405,13 +406,15 @@ Customize each legend item by using `ItemTemplate` property in [ChartLegend](htt
                            FontWeight="SemiBold" Text="{Binding Label}"/>
             </StackPanel>
         </DataTemplate>
-    </chart:SfCircularChart.Resources>
+    </Grid.Resources>
+<chart:SfCircularChart>
     . . .
     <chart:SfCircularChart.Legend>
         <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}"/>
     </chart:SfCircularChart.Legend>
 
 </chart:SfCircularChart>
+</Grid>
 
 {% endhighlight %}
 
@@ -422,7 +425,7 @@ SfCircularChart chart = new SfCircularChart();
 chart.Legend = new ChartLegend()
 {
 
-   ItemTemplate = chart.Resources["itemTemplate"] as DataTemplate
+   ItemTemplate = grid.Resources["itemTemplate"] as DataTemplate
 };
 
 {% endhighlight %}

@@ -181,14 +181,13 @@ Circular chart provides support to customize the appearance of the tooltip by us
 
 {% highlight xaml %}
 
-<chart:SfCircularChart>
-. . .
-    <chart:SfCircularChart.Resources>
+<Grid x:Name="grid">
+    <Grid.Resources>
         <DataTemplate x:Key="tooltipTemplate">
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="{Binding Item.Category}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding Item.Product}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 <TextBlock Text=" : " Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Text="{Binding Item.Value}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding Item.SalesRate}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </StackPanel>
         </DataTemplate>
 
@@ -197,8 +196,9 @@ Circular chart provides support to customize the appearance of the tooltip by us
             <Setter Property="Fill" Value="LightGreen"/>
             <Setter Property="StrokeThickness" Value="2"/>
         </Style>
-    </chart:SfCircularChart.Resources>
-
+    </Grid.Resources>
+<chart:SfCircularChart>
+. . .
     <chart:SfCircularChart.Series>
         <chart:PieSeries ShowTooltip="True"
                  ItemsSource="{Binding Data}" 
@@ -211,6 +211,7 @@ Circular chart provides support to customize the appearance of the tooltip by us
         <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
     </chart:SfCircularChart.TooltipBehavior>
 </chart:SfCircularChart>
+</Grid>
 
 {% endhighlight %}
 
@@ -220,7 +221,7 @@ SfCircularChart chart = new SfCircularChart();
 . . .
 PieSeries series = new PieSeries();
 series.ShowTooltip = true;
-series.TooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate;
+series.TooltipTemplate = grid.Resources["tooltipTemplate"] as DataTemplate;
 . . .     
 {% endhighlight %}
 

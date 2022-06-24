@@ -13,7 +13,7 @@ The appearance of [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion
 
 ## Default PaletteBrushes
 
-Default palette applies a set of predefined brushes to the series in a predefined order.
+Currently, [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) supports only one predefined [PaletteBrushes]() and it is the default palette for SfPolarChart. The following screenshot shows the default appearance of multiple series.
 
 {% tabs %}
 

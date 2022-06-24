@@ -11,9 +11,9 @@ documentation: ug
 
 The appearance of [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html) can be customized by using the predefined palettes, custom palettes and gradient, which allows to enrich the application.
 
-## Default PaletteBrushes
+## Predefined PaletteBrushes
 
-Default palette applies a set of predefined brushes to the series in a predefined order.
+Currently, [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html) supports only one predefined [PaletteBrushes]() and it is the default palette for SfPyramidChart. The following screenshot shows the default appearance of pyramid chart.
 
 {% tabs %}
 

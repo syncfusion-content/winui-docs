@@ -321,8 +321,8 @@ Customize each legend item by using the `ItemTemplate` property in [ChartLegend]
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart>
-    <chart:SfFunnelChart.Resources>
+<Grid x:Name="grid">
+    <Grid.Resources>
         <DataTemplate x:Key="labelTemplate">
             <StackPanel Margin="10" Orientation="Vertical">
                 <Ellipse Height="15" Width="15" Fill="{Binding Interior}" 
@@ -332,13 +332,15 @@ Customize each legend item by using the `ItemTemplate` property in [ChartLegend]
                            FontWeight="SemiBold" Text="{Binding Label}"/>
             </StackPanel>
         </DataTemplate>
-    </chart:SfFunnelChart.Resources>
-    . . .
+    </Grid.Resources>
+<chart:SfFunnelChart>
+. . .
     <chart:SfFunnelChart.Legend>
         <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}"/>
     </chart:SfFunnelChart.Legend>
 
 </chart:SfFunnelChart>
+</Grid>
 
 {% endhighlight %}
 
@@ -348,7 +350,7 @@ SfFunnelChart chart = new SfFunnelChart();
 chart.Legend = new ChartLegend()
 {
 
-   ItemTemplate = chart.Resources["labelTemplate"] as DataTemplate
+   ItemTemplate = grid.Resources["labelTemplate"] as DataTemplate
 };
 . . .
 this.Content = chart;

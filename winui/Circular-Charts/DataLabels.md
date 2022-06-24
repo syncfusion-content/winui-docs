@@ -155,8 +155,8 @@ The appearance of the data label can be customized using [ContentTemplate](https
 
 {% highlight xaml %}
 
-<chart:SfCircularChart >
-    <chart:SfCircularChart.Resources>
+<Grid x:Name="grid">
+    <GridResources>
         <DataTemplate x:Key="labelTemplate">
             <StackPanel Margin="10" Orientation="Vertical">
                 <Ellipse Height="15" Width="15" Fill="Cyan" 
@@ -166,16 +166,18 @@ The appearance of the data label can be customized using [ContentTemplate](https
                            FontWeight="SemiBold" Text="{Binding Item.Product}"/>
             </StackPanel>
         </DataTemplate>
-    </chart:SfCircularChart.Resources>
+    </Grid.Resources>
+    <chart:SfCircularChart >
 ...
-<chart:PieSeries ShowDataLabels="True">
-    <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings Position="Inside" ContentTemplate="{StaticResource labelTemplate}"
+    <chart:PieSeries ShowDataLabels="True">
+        <chart:PieSeries.DataLabelSettings>
+            <chart:CircularDataLabelSettings Position="Inside" ContentTemplate="{StaticResource labelTemplate}"
                                          Context="DataLabelItem"/>
-    </chart:PieSeries.DataLabelSettings>
-</chart:PieSeries>
+        </chart:PieSeries.DataLabelSettings>
+    </chart:PieSeries>
 . . .
-</chart:SfCircularChart>
+    </chart:SfCircularChart>
+</Grid>
 {% endhighlight %}
 
 {% highlight c# %}
@@ -188,7 +190,7 @@ series.DataLabelSettings = new CircularDataLabelSettings()
 {
     Position = CircularSeriesLabelPosition.Inside,
     Context = LabelContext.DataLabelItem,
-    ContentTemplate = chart.Resources["labelTemplate"] as DataTemplate,
+    ContentTemplate = grid.Resources["labelTemplate"] as DataTemplate,
 };
 . . .
 chart.Series.Add(series);
@@ -303,21 +305,22 @@ The connector line can be customized using the below properties.
 
 {% highlight xaml %}
 
-<chart:SfCircularChart>
-    <chart:SfCircularChart.Resources>
+<Grid x:Name="grid">
+    <Grid.Resources>
         <Style TargetType="Path" x:Key="lineStyle">
             <Setter Property="StrokeDashArray" Value="10,7,5"/>
             <Setter Property="Stroke" Value="Black"/>
         </Style>
-</chart:SfCircularChart.Resources>
+    </Grid.Resources>
+<chart:SfCircularChart>
 . . . 
 <chart:PieSeries ShowDataLabels="True">
     <chart:PieSeries.DataLabelSettings>
         <chart:CircularDataLabelSettings Position="Outside" Context="Percentage" ShowConnectorLine="True" ConnectorHeight="40" ConnectorType="StraightLine" ConnectorLineStyle="{StaticResource lineStyle}"/>
     </chart:PieSeries.DataLabelSettings>
 </chart:PieSeries>
-
 </chart:SfCircularChart>
+</Grid>
 
 {% endhighlight %}
 
@@ -333,7 +336,7 @@ series.DataLabelSettings = new CircularDataLabelSettings()
     Position = CircularSeriesLabelPosition.Outside,
     ShowConnectorLine = true,
     ConnectorHeight = 40,
-    ConnectorLineStyle = chart.Resources["lineStyle"] as Style,
+    ConnectorLineStyle = grid.Resources["lineStyle"] as Style,
 };
 . . .
 chart.Series.Add(series);

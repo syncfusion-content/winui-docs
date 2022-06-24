@@ -11,9 +11,9 @@ documentation: ug
 
 The appearance of [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) can be customized by using the predefined palettes, custom palettes and gradient, which allows to enrich the application.
 
-## Default PaletteBrushes
+## Predefined PaletteBrushes
 
-Default palette applies a set of predefined brushes to the series in a predefined order.
+Currently, [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) supports only one predefined [PaletteBrushes]() and it is the default palette for any circular series. The following screenshot shows the default appearance of pie series.
 
 {% tabs %}
 
@@ -41,7 +41,7 @@ chart.Series.Add(series);
 
 ## Custom PaletteBrushes
 
-[SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) provides support to define own brushes for chart with preferred order by using the [PaletteBrushes]() property, as shown in the following code example.
+[SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) provides support to define own brushes for series with preferred order by using the [PaletteBrushes]() property, as shown in the following code example.
 
 {% tabs %}
 

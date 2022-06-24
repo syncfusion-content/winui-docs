@@ -11,9 +11,9 @@ documentation: ug
 
 The appearance of [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) can be customized by using the predefined palettes, custom palettes and gradient, which allows to enrich the application.
 
-## Default PaletteBrushes
+## Predefined PaletteBrushes
 
-Default palette applies a set of predefined brushes to the series in a predefined order.
+Currently, [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) supports only one predefined [PaletteBrushes]() and it is the default palette for SfFunnelChart. The following screenshot shows the default appearance of funnel chart.
 
 {% tabs %}
 
