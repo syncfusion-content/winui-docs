@@ -9,7 +9,7 @@ documentation: ug
 
 # WinUI Shadow Overview
 
-The [WinUI Shadow] .NET WinUI Shadow control is used to apply shadow effects to framework elements to give them an appearance of depth, allowing users to easily differentiate overlapping elements and enjoy a beautiful and appealing user interface.
+The .NET WinUI Shadow control is used to apply shadow effects to framework elements to give them an appearance of depth, allowing users to easily differentiate overlapping elements and enjoy a beautiful and appealing user interface.
 
 ![Displaying the Shadow control](Shadow_images/winui_shadow_overview)
 
@@ -19,9 +19,3 @@ The [WinUI Shadow] .NET WinUI Shadow control is used to apply shadow effects to 
 * BlurRadius: Applies the blur radius for the shadow.
 * CornerRadius: Applies the corner radius for the shadow.
 * Offset: `OffsetX` and `OffsetY` properties, position the shadow relative to the position of the view.
-
-
-
-
-
-
