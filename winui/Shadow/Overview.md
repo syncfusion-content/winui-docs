@@ -2,7 +2,7 @@
 layout: post
 title: About WinUI Shadow control | Syncfusion
 description: The .NET WinUI Shadow control is used to apply shadow effects to any framework element to create a beautiful and appealing UI.
-platform: winui-controls
+platform: WinUI
 control: SfShadow
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with WinUI Shadow control | Syncfusion
 description: Learn here all about getting started with Syncfusion WinUI Shadow(SfShadow) control, its elements, and more.
-platform: winui-controls
+platform: WinUI
 control: SfShadow
 documentation: ug
 ---
