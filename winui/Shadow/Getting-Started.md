@@ -33,7 +33,7 @@ This section explains the steps required to add the WinUI Shadow control and cov
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
       <syncfusion:SfShadow>
-         <Button Height="50" width="100" Content="Button" CornerRadius="5"/>
+         <Button Height="50" width="100" Content="Button"/>
       </syncfusion:SfShadow>
     </Grid>
 </Page>
@@ -48,24 +48,23 @@ This section explains the steps required to add the WinUI Shadow control and cov
    Button button = new Button();
    button.Height = 50;
    button.Width = 100;
-   button.CornerRadius = 5;
    button.Content = "Button";
    shadow.Content = button;
 
 {% endhighlight %}
 {% endtabs %}
 
-![Shadow effect for button in Winui](Shadow_images/winui_shadow_button.png)
+![Shadow effect for button in WinUI](Shadow_images/winui_shadow_button.png)
 
-## Applying shadow effect for image in Winui
+## Applying shadow effect for image
 
-You can apply the shadow effects for any types of [Image](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.image) with the help of SfShadow control.
+You can apply the shadow effects for any types of [Image](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.image) with the help of `SfShadow` control.
 
 {% tabs %}
 {% highlight XAML %}
 
 <syncfusion:SfShadow>
-   <Image Height="200" Width="250" Source="/Assets/Shadow/Ellipse_Shadow.png"/>
+   <Image Height="250" Width="250" Source="/Assets/Shadow/Ellipse_Shadow.png"/>
 </syncfusion:SfShadow>
 
 {% endhighlight %}
@@ -84,11 +83,11 @@ You can apply the shadow effects for any types of [Image](https://docs.microsoft
 {% endhighlight %}
 {% endtabs %}
 
-![Shadow effect for image in Winui](Shadow_images/winui_shadow_image.png)
+![Shadow effect for image in WinUI](Shadow_images/winui_shadow_image.png)
 
-## Applying shadow effect for shape in Winui
+## Applying shadow effect for shape 
 
-You can apply the shadow effects for any types of [Shape](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.shape) and [Path](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.path) with the help of SfShadow control.
+You can apply the shadow effects for any types of [Shape](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.shape) and [Path](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.path) with the help of `SfShadow` control.
 
 {% tabs %}
 {% highlight XAML %}
@@ -163,4 +162,4 @@ You can apply the shadow effects for any types of [Shape](https://docs.microsoft
 {% endhighlight %}
 {% endtabs %}
 
-![Shadow effect for shape in Winui](Shadow_images/winui_shadow_star.png)
+![Shadow effect for shape in WinUI](Shadow_images/winui_shadow_star.png)
