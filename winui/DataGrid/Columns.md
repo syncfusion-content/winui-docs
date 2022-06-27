@@ -825,7 +825,7 @@ private void SfDataGrid_ColumnDragging(object sender, QueryColumnDraggingEventAr
 {% endtabs %}
 
 
-N> FrozenColumnsCount and FooterColumnCount should be lesser than the number of Columns that can be displayed in View.
+N> FrozenColumnsCount and FrozenFooterColumnsCount should be lesser than the number of Columns that can be displayed in View.
 
 ## Freezing columns 
 
