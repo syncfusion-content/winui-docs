@@ -9,12 +9,12 @@ documentation: ug
 
 # Row drag and drop in WinUI TreeGrid (SfTreeGrid)
 
-`SfTreeGrid` allows you to drag and drop the rows by setting the [AllowDraggingRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowDraggingRows) and [AllowDrop](https://docs.microsoft.com/en-us/dotnet/api/system.windows.uielement.allowdrop) properties to true. You can also drag and drop the rows between treegrid and other controls such as [ListView](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.listview?view=winui-3.0), [DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html) and [SfTreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html). 
+`SfTreeGrid` allows you to drag and drop the rows by setting the `AllowRowDragDrop` and [AllowDrop](https://docs.microsoft.com/en-us/dotnet/api/system.windows.uielement.allowdrop) properties to true. You can also drag and drop the rows between treegrid and other controls such as [ListView](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.listview?view=winui-3.0), [DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html) and [SfTreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html). 
 
 {% tabs %}
 {% highlight xml %}
 <syncfusion:SfTreeGrid Name="sfTreeGrid" 
-                               AllowDraggingRows="True" 
+                               AllowRowDragDrop="True" 
                                AllowDrop="True" 
                                ChildPropertyName="ReportsTo" 
                                ItemsSource="{Binding Employees}"
@@ -22,7 +22,7 @@ documentation: ug
                                SelfRelationRootValue="-1" />
 {% endhighlight %}
 {% highlight c# %}
-sfTreeGrid.AllowDraggingRows = true;
+sfTreeGrid.AllowRowDragDrop = true;
 sfTreeGrid.AllowDrop = true;
 {% endhighlight %}
 {% endtabs %}
