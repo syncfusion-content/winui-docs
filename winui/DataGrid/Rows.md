@@ -257,7 +257,7 @@ Set the footer rows count at <kbd>bottom</kbd> of the SfDataGrid.
 </tr>
 <tr>
 <td>
-{{'[FrozenColumnCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_FrozenColumnCount)'| markdownify }}
+{{'FrozenColumnsCount'| markdownify }}
 </td>
 <td>
 Set the frozen columns count in <kbd>left side</kbd> of the SfDataGrid. 
@@ -265,7 +265,7 @@ Set the frozen columns count in <kbd>left side</kbd> of the SfDataGrid.
 </tr>
 <tr>
 <td>
-{{'[FrozenFooterColumnCount ](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_FrozenFooterColumnCount)'| markdownify }}
+{{'FrozenFooterColumnsCount'| markdownify }}
 </td>
 <td>
 Set the frozen columns in <kbd>right side</kbd> of the SfDataGrid.
@@ -277,15 +277,15 @@ Set the frozen columns in <kbd>right side</kbd> of the SfDataGrid.
 {% tabs %}
 {% highlight xaml %}
 <dataGrid:SfDataGrid x:Name="sfDataGrid"
-                       FrozenFooterColumnCount="1"
-                       FrozenColumnCount="1"
+                       FrozenFooterColumnsCount="1"
+                       FrozenColumnsCount="1"
                        FrozenRowsCount="2"
                        FrozenFooterRowsCount="3"
                        ItemsSource="{Binding Orders}" />
 {% endhighlight %}
 {% highlight c# %}
-sfDataGrid.FrozenFooterColumnCount = 1;
-sfDataGrid.FrozenColumnCount = 1;
+sfDataGrid.FrozenFooterColumnsCount = 1;
+sfDataGrid.FrozenColumnsCount = 1;
 sfDataGrid.FrozenRowsCount = 2;
 sfDataGrid.FrozenFooterRowsCount = 3;
 {% endhighlight %}
@@ -398,7 +398,7 @@ void SfDataGrid_ColumnDragging(object sender, QueryColumnDraggingEventArgs e)
     if (e.Reason == QueryColumnDraggingReason.Dropping)
     {
         //used to get frozen column index from the  frozen column count.
-        var frozenColIndex = sfDataGrid.FrozenColumnCount +
+        var frozenColIndex = sfDataGrid.FrozenColumnsCount +
                                               this.sfDataGrid.ResolveToStartColumnIndex();
         //cancels dragging from frozen column to non-frozen column.
 
