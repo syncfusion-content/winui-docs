@@ -17,7 +17,7 @@ Cartesian chart supports the following types of chart axis.
 
 ## Numerical Axis
 
-[NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is used to plot numerical values to the chart. [NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) can be defined for both [PrimaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PrimaryAxis) and [SecondaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_SecondaryAxis).
+[NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is used to plot numerical values to the chart. [NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) can be defined for both [XAxes]() and [YAxes]().
 
 {% tabs %}
 
@@ -25,12 +25,12 @@ Cartesian chart supports the following types of chart axis.
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
     <chart:NumericalAxis/>
-</chart:SfCartesianChart.PrimaryAxis>
-<chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.XAxes>
+<chart:SfCartesianChart.YAxes>
     <chart:NumericalAxis/>
-</chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
 
@@ -40,9 +40,9 @@ Cartesian chart supports the following types of chart axis.
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new NumericalAxis();
+chart.XAxes.Add(new NumericalAxis());
 
-chart.SecondaryAxis = new NumericalAxis();
+chart.YAxes.Add(new NumericalAxis());
 
 {% endhighlight %}
 
@@ -60,12 +60,12 @@ Axis interval can be customized by using the [Interval](https://help.syncfusion.
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
     <chart:NumericalAxis Interval="10" />
-</chart:SfCartesianChart.PrimaryAxis>
-<chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.XAxes>
+<chart:SfCartesianChart.YAxes>
     <chart:NumericalAxis/>
-</chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
 
@@ -75,12 +75,13 @@ Axis interval can be customized by using the [Interval](https://help.syncfusion.
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new NumericalAxis()
+NumericalAxis primaryAxis = new NumericalAxis()
 {
     Interval = 10, 
 };
+chart.XAxes.Add(primaryAxis);
 
-chart.SecondaryAxis = new NumericalAxis();
+chart.YAxes.Add(new NumericalAxis());
 
 {% endhighlight %}
 
@@ -98,61 +99,27 @@ N> If  minimum or maximum value is set, the other value is calculated by default
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart.SecondaryAxis>
+<chart:SfCartesianChart.YAxes>
     <chart:NumericalAxis Maximum="2750" Minimum="250" Interval="250"/>
-</chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.YAxes>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-chart.SecondaryAxis = new NumericalAxis()
+NumericalAxis secondaryAxis = new NumericalAxis()
 {
     Maximum = 2750,
     Minimum = 250,
     Interval = 250
 };
+chart.YAxes.Add(secondaryAxis);
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![NumericalAxis range customization in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_Numeric.png)
-
-### Start from zero
-
-[NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) will calculate the start range based on the data points binded to the chart. By defining the [StartRangeFromZero](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_StartRangeFromZero) property to True, numerical axis start the range from zero.
-
-N> By default, Range is calculated between the minimum and maximum value of the data points.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart>
-. . .
-<chart:SfCartesianChart.SecondaryAxis>
-    <chart:NumericalAxis StartRangeFromZero="True"/>
-</chart:SfCartesianChart.SecondaryAxis>
-
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-. . .
-chart.SecondaryAxis = new NumericalAxis()
-{
-   StartRangeFromZero = true
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![NumericalAxis customization support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_startZero.png)
 
 ## Category Axis
 
@@ -164,9 +131,9 @@ The [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
     <chart:CategoryAxis/>
-</chart:SfCartesianChart.PrimaryAxis>
+</chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>
 
@@ -176,7 +143,7 @@ The [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new CategoryAxis();
+chart.XAxes.Add(new CategoryAxis());
 
 {% endhighlight %}
 
@@ -194,9 +161,9 @@ The [LabelPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
     <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
-</chart:SfCartesianChart.PrimaryAxis>
+</chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>
 
@@ -206,10 +173,11 @@ The [LabelPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new CategoryAxis()
+CategoryAxis primaryAxis = new CategoryAxis()
 {
     LabelPlacement = LabelPlacement.BetweenTicks
 };
+chart.XAxes.Add(primaryAxis);
 
 {% endhighlight %}
 
@@ -227,12 +195,12 @@ By default, the [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.U
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
     <chart:CategoryAxis Interval="2" />
-</chart:SfCartesianChart.PrimaryAxis>
-<chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.XAxes>
+<chart:SfCartesianChart.YAxes>
     <chart:NumericalAxis/>
-</chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
 
@@ -242,12 +210,13 @@ By default, the [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.U
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new CategoryAxis()
+CategoryAxis primaryAxis = new CategoryAxis()
 {
     Interval = 2, 
 };
+chart.XAxes.Add(primaryAxis);
 
-chart.SecondaryAxis = new NumericalAxis();
+chart.YAxes.Add(new NumericalAxis());
 
 {% endhighlight %}
 
@@ -265,9 +234,9 @@ By default, [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
     <chart:CategoryAxis IsIndexed="False"/>
-</chart:SfCartesianChart.PrimaryAxis>
+</chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>
 
@@ -277,10 +246,11 @@ By default, [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new CategoryAxis()
+CategoryAxis primaryAxis = new CategoryAxis()
 {
     IsIndexed = false,
 };
+chart.XAxes.Add(primaryAxis);
 
 {% endhighlight %}
 
@@ -296,9 +266,9 @@ chart.PrimaryAxis = new CategoryAxis()
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
     <chart:DateTimeAxis LabelFormat="MMM-yy"/>
-</chart:SfCartesianChart.PrimaryAxis>
+</chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>
 
@@ -308,10 +278,11 @@ chart.PrimaryAxis = new CategoryAxis()
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new DateTimeAxis()
+DateTimeAxis primaryAxis = new DateTimeAxis()
 {
     LabelFormat = "MMM-yy"
 };
+chart.XAxes.Add(primaryAxis);
 
 {% endhighlight %}
 
@@ -329,12 +300,12 @@ In [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
     <chart:DateTimeAxis Interval="6" IntervalType="Months" LabelFormat="MMM-yy"/>
-</chart:SfCartesianChart.PrimaryAxis>
-<chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.XAxes>
+<chart:SfCartesianChart.YAxes>
     <chart:NumericalAxis/>
-</chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
 
@@ -344,14 +315,15 @@ In [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new DateTimeAxis()
+DateTimeAxis primaryAxis = new DateTimeAxis()
 {
     Interval = 6, 
     IntervalType = DateTimeIntervalType.Months,
     LabelFormat = "MMM-yy"
 };
+chart.XAxes.Add(primaryAxis);
 
-chart.SecondaryAxis = new NumericalAxis();
+chart.YAxes.Add(new NumericalAxis());
 
 {% endhighlight %}
 
@@ -369,9 +341,9 @@ chart.SecondaryAxis = new NumericalAxis();
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
     <chart:DateTimeAxis Minimum="2021/05/1" Maximum="2021/11/01"  LabelFormat="MMM-yy"/>
-</chart:SfCartesianChart.PrimaryAxis>
+</chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>
 
@@ -381,61 +353,19 @@ chart.SecondaryAxis = new NumericalAxis();
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new DateTimeAxis()
+DateTimeAxis primaryAxis = new DateTimeAxis()
 {
     Minimum = new DateTime(2021,05,10),
     Maximum = new DateTime(2021,11,01),
     LabelFormat = "MMM-dd",
 };
+chart.XAxes.Add(primaryAxis);
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![DateTimeAxis range customization support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_range_datetime.png)
-
-### Enable Business Hours
-
-[SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) provides support to plot only the business hours in [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html). This support is enabled by setting [EnableBusinessHours](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_EnableBusinessHours) property to true.
-
-The following properties are used for business hour range calculation:
-
-* [OpenTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_OpenTime)- Represents the open working time of a day.
-* [CloseTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_CloseTime)- Represents the close working time of a day.
-* [WorkingDays](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_WorkingDays)- Represents the working [days](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Day.html) of a week.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart>
-. . .
-<chart:SfCartesianChart.PrimaryAxis>
-    <chart:DateTimeAxis LabelFormat="dd-MMM" EnableBusinessHours="True" OpenTime="9" 
-                        CloseTime="24" 
-                        WorkingDays="Friday,Saturday,Sunday,Monday,Tuesday,Wednesday,Sunday"/>
-</chart:SfCartesianChart.PrimaryAxis>
-
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-. . .
-chart.PrimaryAxis = new DateTimeAxis()
-{
-    EnableBusinessHours = true,
-    OpenTime = 9,
-    CloseTime = 24,
-    WorkingDays = Day.Friday | Day.Saturday | Day.Sunday |
-                Day.Monday | Day.Tuesday| Day.Wednesday| Day.Sunday
-};
-
-{% endhighlight %}
-
-{% endtabs %}
 
 ## Inversed
 
@@ -447,9 +377,9 @@ Axis can be inverted by using the [IsInversed](https://help.syncfusion.com/cr/wi
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.SecondaryAxis>
+<chart:SfCartesianChart.YAxes>
     <chart:NumericalAxis IsInversed="True"/>
-</chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
 
@@ -459,8 +389,9 @@ Axis can be inverted by using the [IsInversed](https://help.syncfusion.com/cr/wi
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-this.Chart.SecondaryAxis = new NumericalAxis();
-this.Chart.SecondaryAxis.IsInversed = true;
+NumericalAxis secondaryAxis = new NumericalAxis();
+secondaryAxis.IsInversed = true;
+chart.YAxes.Add(secondaryAxis);
 
 {% endhighlight %}
 
@@ -470,33 +401,40 @@ this.Chart.SecondaryAxis.IsInversed = true;
 
 ## Multiple Axes
 
-Cartesian charts provides support to arrange the multiple series inside the same chart area with specified x-axis and y-axis. There are two properties [XAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_XAxis) and [YAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_YAxis) in all the Cartesian series type, which is used to provide multiple axes support. These axes can be arranged in a stacking order or in a side by side pattern.
+Cartesian charts provides support to arrange the multiple series inside the same chart area with specified x-axis and y-axis. There are two properties [XAxisName]() and [YAxisName]() in all the Cartesian series type, which is used to provide multiple axes support. These axes can be arranged in a stacking order or in a side by side pattern.
 
-By default, all the series are plotted based on primary and secondary axis.
+By default, all the series are plotted based on the 0th index axis of XAxes and YAxes.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
-<chart:SfCartesianChart.Series>
-    <chart:ColumnSeries ItemsSource="{Binding Data1}" 
-                     XBindingPath="Date"
-                     YBindingPath="Value">
-        <chart:ColumnSeries.XAxis>
-            <chart:DateTimeAxis LabelFormat="dd-MMM" OpposedPosition="True" ShowGridLines="False"/>
-        </chart:ColumnSeries.XAxis>
-        <chart:ColumnSeries.YAxis>
-            <chart:NumericalAxis OpposedPosition="True" ShowGridLines="False"/>
-        </chart:ColumnSeries.YAxis>
-    </chart:ColumnSeries>
-    <chart:SplineSeries ItemsSource="{Binding Data}" 
-                     XBindingPath="Date"
-                     YBindingPath="Value"/>
-</chart:SfCartesianChart.Series>
+    . . .
+	<chart:SfCartesianChart.XAxes>
+		<chart:DateTimeAxis ShowMajorGridLines="False" />
+	</chart:SfCartesianChart.XAxes>
+
+	<chart:SfCartesianChart.YAxes>
+		<chart:NumericalAxis ShowMajorGridLines="False" />
+		<chart:NumericalAxis Name="Series_YAxis" ShowMajorGridLines="False" />
+	</chart:SfCartesianChart.YAxes>
+
+    <chart:SfCartesianChart.Series>
+        <chart:SfCartesianChart.Series>
+            <chart:ColumnSeries ItemsSource="{Binding Data1}" 
+                    XBindingPath="Date"
+                    YBindingPath="Value"
+					YAxisName="Series_YAxis">
+            </chart:ColumnSeries>
+            <chart:SplineSeries ItemsSource="{Binding Data}" 
+                    XBindingPath="Date"
+                    YBindingPath="Value"/>
+    </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
+
+</ContentPage>
 
 {% endhighlight %}
 
@@ -504,9 +442,25 @@ By default, all the series are plotted based on primary and secondary axis.
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
+DateTimeAxis primaryAxis = new DateTimeAxis()
+{
+    ShowMajorGridLines = false
+};
+chart.XAxes.Add(primaryAxis);
+
+NumericalAxis secondaryAxis = new NumericalAxis()
+{
+    ShowMajorGridLines = false
+};
+secondaryAxis.Name = "Series_YAxis";
+chart.YAxes.Add(secondaryAxis);
+
+NumericalAxis secondaryAxis1 = new NumericalAxis();
+chart.YAxes.Add(secondaryAxis1);
 
 ColumnSeries series1 = new ColumnSeries()
 {
+    YAxisName = "Series_YAxis"
     ItemsSource = new ViewModel().Demands,
     XBindingPath = "Demand",
     YBindingPath = "Year2011"
@@ -519,18 +473,6 @@ SplineSeries series2 = new SplineSeries()
     YBindingPath = "Year2011",
 };
 
-series1.XAxis = new DateTimeAxis()
-{
-    LabelFormat = "dd-MMM",
-    OpposedPosition = true,
-    ShowGridLines = false
-};
-series1.YAxis = new NumericalAxis()
-{
-    OpposedPosition = true,
-    ShowGridLines = false
-};
-
 chart.Series.Add(series1);
 chart.Series.Add(series2);
 
@@ -540,4 +482,4 @@ chart.Series.Add(series2);
 
 ![Multiple axes support in WinUI Chart](Axis_Images/winui_chart_axis_types_multipleaxis.png)
 
-In the above image, the [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html) is plotted based on additional X & Y axes, and [SplineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SplineSeries.html) is plotted based on the primary and secondary axes.
+In the above image, the [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html) is plotted based on additional axes of YAxes collection, and [SplineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SplineSeries.html) is plotted based on axis of the collection’s 0th index.

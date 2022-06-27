@@ -35,15 +35,15 @@ By default, the [RangePadding](https://help.syncfusion.com/cr/winui/Syncfusion.U
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart Palette="BlueChrome">
+<chart:SfCartesianChart>
 . . .
-    <chart:SfCartesianChart.PrimaryAxis>
-        <chart:NumericalAxis  RangePadding="Additional"/>
-    </chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
+        <chart:NumericalAxis RangePadding="Additional"/>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis>
+    </chart:SfCartesianChart.YAxes>
 . . .
 </chart:SfCartesianChart>
 
@@ -52,14 +52,14 @@ By default, the [RangePadding](https://help.syncfusion.com/cr/winui/Syncfusion.U
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-chart.Palette = ChartColorPalette.BlueChrome;
 
-chart.PrimaryAxis = new NumericalAxis()
+NumericalAxis primaryAxis = new NumericalAxis()
 {
     RangePadding = NumericalPadding.Additional,
 };
+chart.XAxes.Add(primaryAxis);
 
-chart.SecondaryAxis = new NumericalAxis();
+chart.YAxes.Add(new NumericalAxis());
 . . .
 this.Content = chart;
 
@@ -75,15 +75,15 @@ this.Content = chart;
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart Palette="BlueChrome">
+<chart:SfCartesianChart>
 . . .
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:NumericalAxis RangePadding="None"/>
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis>
+    </chart:SfCartesianChart.YAxes>
 . . .
 </chart:SfCartesianChart>
 
@@ -92,14 +92,14 @@ this.Content = chart;
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-chart.Palette = ChartColorPalette.BlueChrome;
 
-chart.PrimaryAxis = new NumericalAxis()
+NumericalAxis primaryAxis = new NumericalAxis()
 {
     RangePadding = NumericalPadding.None,
 };
+chart.XAxes.Add(primaryAxis);
 
-chart.SecondaryAxis = new NumericalAxis();
+chart.YAxes.Add(new NumericalAxis());
 . . .
 this.Content = chart;
 
@@ -115,15 +115,15 @@ this.Content = chart;
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart Palette="BlueChrome">
+<chart:SfCartesianChart>
 . . .
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:NumericalAxis  RangePadding="Round"/>
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis>
+    </chart:SfCartesianChart.YAxes>
 . . .
 </chart:SfCartesianChart>
 
@@ -132,14 +132,14 @@ this.Content = chart;
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-chart.Palette = ChartColorPalette.BlueChrome;
 
-chart.PrimaryAxis = new NumericalAxis()
+NumericalAxis primaryAxis = new NumericalAxis()
 {
     RangePadding = NumericalPadding.Round,
 };
+chart.XAxes.Add(primaryAxis);
 
-chart.SecondaryAxis = new NumericalAxis();
+chart.YAxes.Add(new NumericalAxis());
 . . .
 this.Content = chart;
 
@@ -168,15 +168,15 @@ The [RangePadding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart Palette="BlueChrome">
+<chart:SfCartesianChart>
 . . .
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis RangePadding="Additional" LabelFormat="MMM-yy"/>
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis>
+    </chart:SfCartesianChart.YAxes>
 . . .
 </chart:SfCartesianChart>
 
@@ -185,15 +185,15 @@ The [RangePadding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-chart.Palette = ChartColorPalette.BlueChrome;
 
-chart.PrimaryAxis = new DateTimeAxis()
+DateTimeAxis primaryAxis = new DateTimeAxis()
 {
     RangePadding = DateTimeRangePadding.Additional,
     LabelFormat = "MMM-yy"
 };
+chart.XAxes.Add(primaryAxis);
 
-chart.SecondaryAxis = new NumericalAxis();
+chart.YAxes.Add(new NumericalAxis());
 . . .
 this.Content = chart;
 
@@ -209,15 +209,15 @@ this.Content = chart;
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart Palette="BlueChrome">
+<chart:SfCartesianChart>
 . . .
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis RangePadding="None" LabelFormat="MMM-yy"/>
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis>
+    </chart:SfCartesianChart.YAxes>
 . . .
 </chart:SfCartesianChart>
 
@@ -226,15 +226,15 @@ this.Content = chart;
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-chart.Palette = ChartColorPalette.BlueChrome;
 
-chart.PrimaryAxis = new DateTimeAxis()
+DateTimeAxis primaryAxis = new DateTimeAxis()
 {
     RangePadding = DateTimeRangePadding.None,
     LabelFormat = "MMM-yy"
 };
+chart.XAxes.Add(primaryAxis);
 
-chart.SecondaryAxis = new NumericalAxis();
+chart.YAxes.Add(new NumericalAxis());
 . . .
 this.Content = chart;
 
@@ -250,15 +250,15 @@ this.Content = chart;
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart Palette="BlueChrome">
+<chart:SfCartesianChart>
 . . .
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis RangePadding="Round" LabelFormat="MMM-yy"/>
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis>
+    </chart:SfCartesianChart.YAxes>
 . . .
 </chart:SfCartesianChart>
 
@@ -267,15 +267,15 @@ this.Content = chart;
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-chart.Palette = ChartColorPalette.BlueChrome;
 
-chart.PrimaryAxis = new DateTimeAxis()
+DateTimeAxis primaryAxis = new DateTimeAxis()
 {
     RangePadding = DateTimeRangePadding.Round,
     LabelFormat = "MMM-yy"
 };
+chart.XAxes.Add(primaryAxis);
 
-chart.SecondaryAxis = new NumericalAxis();
+chart.YAxes.Add(new NumericalAxis());
 . . .
 this.Content = chart;
 

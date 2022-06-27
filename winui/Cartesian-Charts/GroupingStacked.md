@@ -17,13 +17,13 @@ Chart provides support to group the stacked similar series by using the [GroupNa
 
 <chart:SfCartesianChart>
     
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis>  
+    </chart:SfCartesianChart.YAxes>  
     
     <chart:StackedColumnSeries GroupName="Group1" XBindingPath="Year" 
             YBindingPath="Quarter1" ItemsSource="{Binding AnnualDetails}"/>
@@ -47,9 +47,9 @@ SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
 CategoryAxis primaryAxis = new CategoryAxis();
 primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
-chart.PrimaryAxis = primaryAxis;
+chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
-chart.SecondaryAxis = secondaryAxis;
+chart.YAxes.Add(secondaryAxis);
 
 StackedColumnSeries series1 = new StackedColumnSeries()
 {
