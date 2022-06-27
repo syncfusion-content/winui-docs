@@ -69,7 +69,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Predefined palette in WinUI Chart](Appearance_Images/WinUI_Chart_metro_palette.png)
+![Predefined palette in WinUI Chart](Appearance_Images/winui-chart_predefined_palette.png)
 
 ## Custom PaletteBrushes
 
