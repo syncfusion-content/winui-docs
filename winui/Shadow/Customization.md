@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in WinUI Shadow control | Syncfusion
-description: Learn here all about the customization features such as color, opacity, position, and blur radius in Syncfusion WinUI Shadow control.
+description: Learn all about the customization features such as color, opacity, position, and blur radius in Syncfusion's WinUI Shadow control here.
 platform: WinUI
 control: SfShadow
 documentation: ug
@@ -13,7 +13,7 @@ This section explains the customization features available in the WinUI Shadow c
 
 ## Applying Color for shadow
 
-The shadow color can be customized using the `Color` property. The default value of `Color` property is `Black` color with 25% alpha value.
+The shadow color can be customized using the `Color` property. The default value of the `Color` property is `Black` color with a 25% alpha value.
 
 {% tabs %}
 {% highlight XAML %}
@@ -41,7 +41,7 @@ The shadow color can be customized using the `Color` property. The default value
 
 ## Applying BlurRadius for shadow
 
-Blur level of shadow effect can be customized using the `BlurRadius` property. The default value of `BlurRadius` property is 8.
+The blur level of the shadow effect can be customized using the `BlurRadius` property. The default value of `BlurRadius` property is 8.
 
 {% tabs %}
 {% highlight XAML %}
@@ -102,7 +102,7 @@ The corner radius of the shadow can be customized using the `ShadowCornerRadius`
 
 ## Positioning the shadow
 
-The position of shadow can be customized using the `OffsetX` and `OffsetY` properties. The default value of `OffsetX` and `OffsetY` properties is 4.
+The position of the shadow can be customized using the `OffsetX` and `OffsetY` properties. The default value of the `OffsetX` and `OffsetY` properties is 4.
 
 {% tabs %}
 {% highlight XAML %}
