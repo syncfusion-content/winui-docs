@@ -77,10 +77,10 @@ The shape pointer can be customized using the following properties:
                 <gauge:ShapePointer Value="60"
                                     ShapeHeight="30"
                                     ShapeWidth="30"
-                                    BorderBrush="Black"
-                                    BorderWidth="3"
+                                    Stroke="Black"
+                                    StrokeThickness="3"
                                     ShapeType="Circle"
-                                    Background="LightBlue"/>
+                                    Fill="LightBlue"/>
             </gauge:RadialAxis.Pointers>
         </gauge:RadialAxis>
     </gauge:SfRadialGauge.Axes>
