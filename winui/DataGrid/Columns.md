@@ -812,7 +812,7 @@ private void SfDataGrid_ColumnDragging(object sender, QueryColumnDraggingEventAr
 {
     if (e.Reason == QueryColumnDraggingReason.Dropping)
     {
-        var frozenColIndex = this.sfDataGrid.FrozenColumnCount + this.sfDataGrid.ResolveToStartColumnIndex();
+        var frozenColIndex = this.sfDataGrid.FrozenColumnsCount + this.sfDataGrid.ResolveToStartColumnIndex();
 
         if (e.From < frozenColIndex && e.To > frozenColIndex - 1)
             e.Cancel = true;
@@ -825,17 +825,17 @@ private void SfDataGrid_ColumnDragging(object sender, QueryColumnDraggingEventAr
 {% endtabs %}
 
 
-N> FrozenColumnCount and FooterColumnCount should be lesser than the number of Columns that can be displayed in View.
+N> FrozenColumnsCount and FooterColumnCount should be lesser than the number of Columns that can be displayed in View.
 
 ## Freezing columns 
 
-You can freeze the columns in view at the left and right side like in excel by setting [SfDataGrid.FrozenColumnCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_FrozenColumnCount) and [SfDataGrid.FrozenFooterColumnCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_FrozenFooterColumnCount) properties.
+You can freeze the columns in view at the left and right side like in excel by setting `SfDataGrid.FrozenColumnsCount` and `SfDataGrid.FrozenFooterColumnsCount` properties.
  
 {% tabs %}
 {% highlight xaml %}
 <dataGrid:SfDataGrid  x:Name="dataGrid"
                         AutoGenerateColumns="True"
-                        FrozenColumnCount="2"
+                        FrozenColumnsCount="2"
                         ItemsSource="{Binding Orders}"/>
 {% endhighlight %}
 {% endtabs %}
