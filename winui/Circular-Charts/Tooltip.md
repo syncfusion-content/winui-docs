@@ -24,7 +24,6 @@ To define the tooltip in the chart, set the [ShowTooltip](https://help.syncfusio
     <chart:PieSeries ShowTooltip="True"
                      ItemsSource="{Binding Data}" 
                      ShowDataLabels="True" 
-                     Palette="BlueChrome"
                      XBindingPath="Product" 
                      YBindingPath="SalesRate">
     </chart:PieSeries>
@@ -37,7 +36,7 @@ To define the tooltip in the chart, set the [ShowTooltip](https://help.syncfusio
 
 SfCircularChart chart = new SfCircularChart();
 . . .
-PieSeries series = new PieSeries() { Label = "Continents" };
+PieSeries series = new PieSeries();
 series.ShowTooltip = true;
 chart.Series.Add(series);
 
@@ -47,7 +46,7 @@ chart.Series.Add(series);
 
 ![Tooltip support in WinUI chart](Tooltip_Images/WinUI_pie_chart_tooltip.png)
 
-The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) is used to customize the tooltip. For customizing the tooltip, create an instance [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) and add it to the `Behaviors` collection of [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html). The following properties are used to customize the tooltip:
+The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) is used to customize the tooltip. For customizing the tooltip, create an instance [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) and set it to the `TooltipBehavior` property of [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html). The following properties are used to customize the tooltip:
 
 * [Style](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) - Used to customize the fill and stroke of the tooltip.
 * [LabelStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_LabelStyle) - Used to customize the tooltip label.
@@ -65,9 +64,9 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 
 <chart:SfCircularChart>
 . . .
-<chart:SfCircularChart.Behaviors>
+<chart:SfCircularChart.TooltipBehavior>
     <chart:ChartTooltipBehavior/>
-</chart:SfCircularChart.Behaviors>
+</chart:SfCircularChart.TooltipBehavior>
 
 </chart:SfCircularChart>
 
@@ -78,7 +77,7 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 SfCircularChart chart = new SfCircularChart();
 . . .
 ChartTooltipBehavior tooltip = new ChartTooltipBehavior();
-chart.Behaviors.Add(tooltip);
+chart.TooltipBehavior = tooltip;
 
 {% endhighlight %}
 
@@ -101,9 +100,9 @@ The tooltip's fill and stroke color can be customized by using the [Style](https
     </Style>
 </chart:SfCircularChart.Resources>
 
-<chart:SfCircularChart.Behaviors>
+<chart:SfCircularChart.TooltipBehavior>
     <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
-</chart:SfCircularChart.Behaviors>
+</chart:SfCircularChart.TooltipBehavior>
 
 </chart:SfCircularChart>
 
@@ -120,7 +119,7 @@ style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)
 ChartTooltipBehavior tooltip = new ChartTooltipBehavior();
 tooltip.Style = style;
 . . . 
-chart.Behaviors.Add(tooltip);
+chart.TooltipBehavior = tooltip;
 
 {% endhighlight %}
 
@@ -146,9 +145,9 @@ The tooltip label style can be customized by using the [LabelStyle](https://help
     </Style>
 </chart:SfCircularChart.Resources>
 
-<chart:SfCircularChart.Behaviors>
+<chart:SfCircularChart.TooltipBehavior>
     <chart:ChartTooltipBehavior LabelStyle="{StaticResource labelStyle}"/>
-</chart:SfCircularChart.Behaviors>
+</chart:SfCircularChart.TooltipBehavior>
 
 </chart:SfCircularChart>
 
@@ -166,7 +165,7 @@ labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBr
 ChartTooltipBehavior tooltip = new ChartTooltipBehavior();
 tooltip.LabelStyle = labelStyle;
 . . .
-chart.Behaviors.Add(tooltip);
+chart.TooltipBehavior = tooltip;
 
 {% endhighlight %}
 
@@ -182,9 +181,8 @@ Circular chart provides support to customize the appearance of the tooltip by us
 
 {% highlight xaml %}
 
-<chart:SfCircularChart>
-. . .
-    <chart:SfCircularChart.Resources>
+<Grid x:Name="grid">
+    <Grid.Resources>
         <DataTemplate x:Key="tooltipTemplate">
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="{Binding Item.Product}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -192,18 +190,28 @@ Circular chart provides support to customize the appearance of the tooltip by us
                 <TextBlock Text="{Binding Item.SalesRate}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </StackPanel>
         </DataTemplate>
-    </chart:SfCircularChart.Resources>
 
+        <Style TargetType="Path" x:Key="style">
+            <Setter Property="Stroke" Value="Black"/>
+            <Setter Property="Fill" Value="LightGreen"/>
+            <Setter Property="StrokeThickness" Value="2"/>
+        </Style>
+    </Grid.Resources>
+<chart:SfCircularChart>
+. . .
     <chart:SfCircularChart.Series>
         <chart:PieSeries ShowTooltip="True"
                  ItemsSource="{Binding Data}" 
-                 Palette="BlueChrome"
                  XBindingPath="Product" 
                  YBindingPath="SalesRate"
                  TooltipTemplate="{StaticResource tooltipTemplate}"/>
     </chart:SfCircularChart.Series>
     . . .
+    <chart:SfCircularChart.TooltipBehavior>
+        <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
+    </chart:SfCircularChart.TooltipBehavior>
 </chart:SfCircularChart>
+</Grid>
 
 {% endhighlight %}
 
@@ -213,7 +221,7 @@ SfCircularChart chart = new SfCircularChart();
 . . .
 PieSeries series = new PieSeries();
 series.ShowTooltip = true;
-series.TooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate;
+series.TooltipTemplate = grid.Resources["tooltipTemplate"] as DataTemplate;
 . . .     
 {% endhighlight %}
 
