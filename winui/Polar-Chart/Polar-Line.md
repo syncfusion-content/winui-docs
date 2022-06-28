@@ -15,26 +15,23 @@ To render a line series in polar chart, create an instance of the [PolarLineSeri
 
 {% highlight xaml %}
 
-<chart:SfPolarChart Palette="BlueChrome">
+<chart:SfPolarChart>
 ...
     <chart:SfPolarChart.Series>
-        <chart:SfPolarChart.Series>
-            <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
-                        XBindingPath="Direction"
-                        YBindingPath="Tree" Label="Tree">
-            </chart:PolarLineSeries>
+        <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
+                    XBindingPath="Direction"
+                    YBindingPath="Tree">
+        </chart:PolarLineSeries>
 
-            <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
-                        XBindingPath="Direction"
-                        YBindingPath="Weed" Label="Weed">
-            </chart:PolarLineSeries>
+        <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
+                    XBindingPath="Direction"
+                    YBindingPath="Weed">
+        </chart:PolarLineSeries>
 
-            <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
-                        XBindingPath="Direction"
-                        YBindingPath="Flower" Label="Flower">
-            </chart:PolarLineSeries>
-        </chart:SfPolarChart.Series>
-
+        <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
+                    XBindingPath="Direction"
+                    YBindingPath="Flower">
+        </chart:PolarLineSeries>
     </chart:SfPolarChart.Series>
 ...
 </chart:SfPolarChart>
@@ -44,7 +41,6 @@ To render a line series in polar chart, create an instance of the [PolarLineSeri
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-chart.Palette = ChartColorPalette.BlueChrome;
 ...
 PolarLineSeries series1 = new PolarLineSeries();
 series1.XBindingPath = "Direction";

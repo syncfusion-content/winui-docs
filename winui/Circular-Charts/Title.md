@@ -63,6 +63,7 @@ Chart provides support to add any `UIElement` as a title. The following code exa
 SfCircularChart chart = new SfCircularChart();
 Border border = new Border()
 {
+    BorderThickness = new Thickness(0.5),
     BorderBrush = new SolidColorBrush(Colors.Black),
     Margin = new Thickness(10),
     CornerRadius = new CornerRadius(5)
@@ -73,7 +74,8 @@ TextBlock textBlock = new TextBlock()
     Text = "Circular Chart Header",
     FontFamily = new FontFamily("Verdana"),
     Foreground = new SolidColorBrush(Colors.Blue),
-    FontSize = 25,
+    FontSize = 14,
+    Margin = new Thickness(5),
 };
 
 border.Child = textBlock;
@@ -117,6 +119,7 @@ chart.HorizontalHeaderAlignment = HorizontalAlignment.Right;
 . . .
 Border border = new Border()
 {
+    BorderThickness = new Thickness(0.5),
     BorderBrush = new SolidColorBrush(Colors.Black),
     Margin = new Thickness(10),
     CornerRadius = new CornerRadius(5)
@@ -128,7 +131,8 @@ TextBlock textBlock = new TextBlock()
     HorizontalTextAlignment = TextAlignment.Center,
     FontFamily = new FontFamily("Verdana"),
     Foreground = new SolidColorBrush(Colors.Blue),
-    FontSize = 25,
+    FontSize = 14,
+    Margin = new Thickness(5),
 };
 
 border.Child = textBlock;

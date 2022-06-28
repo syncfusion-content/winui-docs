@@ -49,7 +49,7 @@ Polar chart provides support to add any `UIElement` as a title for legend. [Head
     <chart:SfPolarChart.Legend>
         <chart:ChartLegend>
             <chart:ChartLegend.Header>
-                <TextBox Text="Plant Details" 
+                <TextBlock Text="Plant Details" 
                     HorizontalAlignment="Center"
                     FontWeight="Bold"
                     Foreground="Blue"/>
@@ -221,9 +221,11 @@ chart.Legend = new ChartLegend()
 
 ![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/WinUI_Chart_Legend_ToggleSeriesVisibility.png)
 
-## Position
+## Placement
 
-The legends can be placed either inside or outside of the chart area (plotting area). By default, it will be displayed outside and positioned at top (using [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Position)) of the chart area.
+By using the [Placement]( ) property, legends can be docked to the left, right, and top or bottom of the chart area. By default, the chart legend is docked at the top of the chart as mentioned earlier.
+
+To display the legend at the right, you can set the [Placement]( ) as [Right]( ) as in below code snippet.
 
 {% tabs %}
 
@@ -231,7 +233,7 @@ The legends can be placed either inside or outside of the chart area (plotting a
 
 <chart:SfPolarChart>
     <chart:SfPolarChart.Legend>
-        <chart:ChartLegend Position="Inside"/>
+        <chart:ChartLegend ItemMargin="10" Placement="Right"/>
     </chart:SfPolarChart.Legend>
     ...
 </chart:SfPolarChart>
@@ -243,41 +245,7 @@ The legends can be placed either inside or outside of the chart area (plotting a
 SfPolarChart chart = new SfPolarChart();
 chart.Legend = new ChartLegend()
 {
-    Position = LegendPosition.Inside
-};
-...
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Position support for legend in WinUI Chart](Legend_images/WinUI_Chart_Legend_Position.png)
-
-**Docking the legend position**
-
-By using the [DockPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) property, legends can be docked to the left, right, and top or bottom of the chart area. By default, the chart legend is docked at the top of the chart as mentioned earlier.
-
-To display the legend at the right, you can set the [DockPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) as [Right](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDock.html#Syncfusion_UI_Xaml_Charts_ChartDock_Right) as in below code snippet.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfPolarChart>
-    <chart:SfPolarChart.Legend>
-        <chart:ChartLegend ItemMargin="10" DockPosition="Right"/>
-    </chart:SfPolarChart.Legend>
-    ...
-</chart:SfPolarChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfPolarChart chart = new SfPolarChart();
-chart.Legend = new ChartLegend()
-{
-   DockPosition = ChartDock.Right,
+   Placement = LegendPlacement.Right,
    ItemMargin = new Thickness(10),
 };
 ...
@@ -287,72 +255,6 @@ chart.Legend = new ChartLegend()
 {% endtabs %}
 
 ![Positioning the legend at right in WinUI Chart](Legend_images/WinUI_Chart_Legend_Dock_Right.png)
-
-**Floating legends**
-
-To position the legend at any arbitrary location within the chart, you need to set [DockPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) as `Floating` and provide its relative position by using the [OffsetX](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_OffsetX) and [OffsetY](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_OffsetY) properties.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfPolarChart>
-    <chart:SfPolarChart.Legend>
-        <chart:ChartLegend DockPosition="Floating" Orientation="Vertical" OffsetX="330" OffsetY="180"/>
-    </chart:SfPolarChart.Legend>
-    ...
-</chart:SfPolarChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfPolarChart chart = new SfPolarChart();
-chart.Legend = new ChartLegend()
-{
-    DockPosition = ChartDock.Floating,
-    Orientation = ChartOrientation.Vertical,
-    OffsetX = 330,
-    OffsetY = 180
-};
-...
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Floating legend support in WinUI Chart](Legend_images/WinUI_Chart_Legend_floating.png)
-
-## Orientation
-
-Orientation of the legend items can aligned vertically or horizontally by setting [Orientation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Orientation) property of legend. By default, the value of [Orientation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Orientation) property is [Horizontal](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartOrientation.html#Syncfusion_UI_Xaml_Charts_ChartOrientation_Horizontal). 
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfPolarChart>
-    <chart:SfPolarChart.Legend>
-        <chart:ChartLegend Orientation="Vertical"/>
-    </chart:SfPolarChart.Legend>
-</chart:SfPolarChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfPolarChart chart = new SfPolarChart();
-chart.Legend = new ChartLegend()
-{
-    Orientation = ChartOrientation.Vertical
-};
-...
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Legend orientation support in WinUI Chart](Legend_images/WinUI_Chart_Legend_Orientation.png)
 
 ## Background customization 
 
@@ -389,7 +291,7 @@ chart.Legend = new ChartLegend()
     BorderBrush = new SolidColorBrush(Colors.Black),
     BorderThickness = new Thickness(1),
     Opacity = 0.9,
-    CornerRadius = CornerRadiusHelper.FromUniformRadius(5)
+    CornerRadius = new CornerRadius(5)
 };
 ...
 
@@ -405,7 +307,7 @@ Customize each legend item by using the `ItemTemplate` property in [ChartLegend]
 
 {% highlight xaml %}
 
-<chart:SfPolarChart>
+<chart:SfPolarChart x:Name="chart">
     <chart:SfPolarChart.Resources>
         <DataTemplate x:Key="labelTemplate">
             <StackPanel Margin="10" Orientation="Vertical">

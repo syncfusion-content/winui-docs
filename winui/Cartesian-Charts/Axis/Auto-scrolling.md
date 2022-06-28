@@ -19,15 +19,15 @@ The [AutoScrollingDelta](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart x:Name="chart" Palette="BlueChrome">
+<chart:SfCartesianChart x:Name="chart">
 . . .
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:NumericalAxis AutoScrollingDelta="3"/>
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis>
+    </chart:SfCartesianChart.YAxes>
 
     <chart:SfCartesianChart.Behaviors>
         <chart:ChartZoomPanBehavior />
@@ -40,14 +40,14 @@ The [AutoScrollingDelta](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-chart.Palette = ChartColorPalette.BlueChrome;
 
-chart.PrimaryAxis = new NumericalAxis()
+NumericalAxis primaryAxis = new NumericalAxis()
 {
     AutoScrollingDelta = 3,
 };
+chart.XAxes.Add(primaryAxis);
 
-chart.SecondaryAxis = new NumericalAxis();
+chart.YAxes.Add(new NumericalAxis());
 ChartZoomPanBehavior zoomPanBehavior = new ChartZoomPanBehavior();
 chart.Behaviors.Add(zoomPanBehavior);
 . . .
@@ -67,15 +67,15 @@ The [AutoScrollingMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart x:Name="chart" Palette="BlueChrome">
+<chart:SfCartesianChart x:Name="chart">
 . . .
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:NumericalAxis AutoScrollingDelta="3" AutoScrollingMode="Start"/>
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis>
+    </chart:SfCartesianChart.YAxes>
 
     <chart:SfCartesianChart.Behaviors>
         <chart:ChartZoomPanBehavior />
@@ -88,15 +88,15 @@ The [AutoScrollingMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-chart.Palette = ChartColorPalette.BlueChrome;
 
-chart.PrimaryAxis = new NumericalAxis()
+NumericalAxis primaryAxis = new NumericalAxis()
 {
     AutoScrollingDelta = 3,
     AutoScrollingMode = ChartAutoScrollingMode.Start
 };
+chart.XAxes.Add(primaryAxis);
 
-chart.SecondaryAxis = new NumericalAxis();
+chart.YAxes.Add(new NumericalAxis());
 ChartZoomPanBehavior zoomPanBehavior = new ChartZoomPanBehavior();
 chart.Behaviors.Add(zoomPanBehavior);
 . . .
@@ -116,15 +116,15 @@ In additional, the [AutoScrollingDeltaType](https://help.syncfusion.com/cr/winui
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart x:Name="chart" Palette="BlueChrome">
+<chart:SfCartesianChart x:Name="chart">
 . . .
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis AutoScrollingDelta = "4" LabelFormat="MMM-yy" AutoScrollingDeltaType = "Months"/>
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis>
+    </chart:SfCartesianChart.YAxes>
 
     <chart:SfCartesianChart.Behaviors>
         <chart:ChartZoomPanBehavior />
@@ -137,16 +137,16 @@ In additional, the [AutoScrollingDeltaType](https://help.syncfusion.com/cr/winui
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-chart.Palette = ChartColorPalette.BlueChrome;
 
-chart.PrimaryAxis = new DateTimeAxis()
+DateTimeAxis primaryAxis = new DateTimeAxis()
 {
     AutoScrollingDelta = 4,
     AutoScrollingDeltaType = DateTimeIntervalType.Months,
     LabelFormat = "MMM-yy"
 };
+chart.XAxes.Add(primaryAxis);
 
-chart.SecondaryAxis = new NumericalAxis();
+chart.YAxes.Add(new NumericalAxis());
 ChartZoomPanBehavior zoomPanBehavior = new ChartZoomPanBehavior();
 chart.Behaviors.Add(zoomPanBehavior);
 . . .
