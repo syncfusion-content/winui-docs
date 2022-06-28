@@ -9,7 +9,7 @@ documentation: ug
 
 # Leading and Trailing View in WinUI AutoComplete (SfAutoComplete)
 
-This section explains about the leading and trailing view support available in [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html).The `LeadingView` appears before the `AutoComplete` selection area and `TrailingView` appears after the `AutoComplete` selection area. Any content, such as an icon, image, button, or control, can be displayed in the `LeadingView` and `TrailingView`.
+This section explains about the leading and trailing view support available in [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html). The `LeadingView` appears before the `AutoComplete` selection area and `TrailingView` appears after the `AutoComplete` selection area. Any content, such as an icon, image, button, or control, can be displayed in the `LeadingView` and `TrailingView.`
 
 ## Leading View 
 
