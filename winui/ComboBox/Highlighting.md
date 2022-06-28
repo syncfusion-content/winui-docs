@@ -9,21 +9,21 @@ documentation: UG
 
 # Highlighting in WinUI ComboBox(SfComboBox)
 
-Highlight matching characters in a suggestion list to pick an item with more clarity. There are two ways to highlight the matching text:
+Highlight matching characters in the suggestion list to pick an item with more clarity. There are two ways to highlight the matching text:
 
 * **Highlight beginning text**
 * **Highlight all occurance of search text**
 
 
-The text highlight can be indicated with various customizing styles by enabling the below properties. They are
+The text highlight can be indicated with various customizing styles by enabling the following properties. They are
 
-* **HighlightedTextColor** - sets the color of the highlighted text for differentiating the highlighted characters.
+* **HighlightedTextColor** - Sets the color of the highlighted text for differentiating the highlighted characters.
 
-* **HighlightedTextFontStyle** - sets the font style of the highlighted text.
+* **HighlightedTextFontStyle** - Sets the font style of the highlighted text.
         
-* **HighlightedTextFontWeight** - sets the font weight of the highlighted text.
+* **HighlightedTextFontWeight** - Sets the font weight of the highlighted text.
 
-* **HightlightedTextFontSize** - sets the font size of the highlighted text.
+* **HightlightedTextFontSize** - Sets the font size of the highlighted text.
 
 {% tabs %}
 {% highlight XAML %}
@@ -60,7 +60,7 @@ The text highlight can be indicated with various customizing styles by enabling 
 
 
 ### **Highlight beginning text**
-It highlights the matches that starts with the typed characters in suggestion list.
+It highlights the matches that start with the typed characters in the suggestion list.
 
 {% tabs %}
 {% highlight XAML %}
@@ -100,7 +100,7 @@ comboBox.HighlightedTextForeground = Color.Red;
 
 
 ### **Highlight all occurance of search text**
-It highlights all the matches that contains the typed characters in suggestion list. 
+It highlights all the matches that contain the typed characters in the suggestion list. 
 
 
 
@@ -140,9 +140,9 @@ It highlights all the matches that contains the typed characters in suggestion l
 
 ## **Highlighting search text mode** 
  The SfComboBox provides the following modes.
-* **None** - This mode doesnot highlight any text.
+* **None** - This mode does not highlight any text.
 * **Matched** - This mode highlights the text that matches the user input.
-* **Unmatched** - This mode highlights the text that doesnot matches the user input.
+* **Unmatched** - This mode highlights the text that does not matches the user input.
 
 ###  TextSearchMode="StartsWith"          
 {% tabs %}
