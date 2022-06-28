@@ -19,7 +19,7 @@ The shadow color can be customized using the `Color` property. The default value
 {% highlight XAML %}
 
 <syncfusion:SfShadow Color="Red">
-    <Button Height="50" width="100" Content="Button"/>
+    <Button Height="50" Width="100" Content="Button"/>
 </syncfusion:SfShadow>
 
 {% endhighlight %}
@@ -30,7 +30,7 @@ shadow.Color = Color.FromArgb(255, 255, 0, 0);
    
 Button button = new Button(); 
 button.Height = 50;
-button.width = 100;
+button.Width = 100;
 button.Content = "Button";
 shadow.Content = button;
 
@@ -47,7 +47,7 @@ The blur level of the shadow effect can be customized using the `BlurRadius` pro
 {% highlight XAML %}
 
 <syncfusion:SfShadow BlurRadius="10" OffsetX="10" OffsetY="10">
-    <Button Height="50" width="100" Content="Button"/>
+    <Button Height="50" Width="100" Content="Button"/>
 </syncfusion:SfShadow>
 
 {% endhighlight %}
@@ -60,7 +60,7 @@ shadow.OffsetY = 10;
 
 Button button = new Button();
 button.Height = 50;
-button.width = 100;
+button.Width = 100;
 button.Content = "Button";
 shadow.Content = button;
 
@@ -77,7 +77,7 @@ The corner radius of the shadow can be customized using the `ShadowCornerRadius`
 {% highlight XAML %}
 
 <syncfusion:SfShadow ShadowCornerRadius="10" OffsetX="10" OffsetY="10">
-    <Button Height="50" width="100" Content="Button" CornerRadius="10"/>
+    <Button Height="50" Width="100" Content="Button" CornerRadius="10"/>
 </syncfusion:SfShadow>
 
 {% endhighlight %}
@@ -90,7 +90,7 @@ shadow.OffsetY = 10;
    
 Button button = new Button(); 
 button.Height = 50;
-button.width = 100;
+button.Width = 100;
 button.Content = "Button";
 button.CornerRadius = 10;
 shadow.Content = button;
@@ -108,7 +108,7 @@ The position of the shadow can be customized using the `OffsetX` and `OffsetY` p
 {% highlight XAML %}
 
 <syncfusion:SfShadow OffsetX="10" OffsetY="10">
-    <Button Height="50" width="100" Content="Button"/>
+    <Button Height="50" Width="100" Content="Button"/>
 </syncfusion:SfShadow>
 
 {% endhighlight %}
@@ -120,7 +120,7 @@ shadow.OffsetY = 10;
    
 Button button = new Button(); 
 button.Height = 50;
-button.width = 100;
+button.Width = 100;
 button.Content = "Button";
 shadow.Content = button;
 

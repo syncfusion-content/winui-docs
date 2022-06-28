@@ -33,7 +33,7 @@ This section explains the steps required to add the WinUI Shadow control and cov
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
       <syncfusion:SfShadow>
-         <Button Height="50" width="100" Content="Button"/>
+         <Button Height="50" Width="100" Content="Button"/>
       </syncfusion:SfShadow>
     </Grid>
 </Page>
