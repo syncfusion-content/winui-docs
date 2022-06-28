@@ -34,7 +34,29 @@ The Scheduler supports editing the recurrence appointment. The following editor 
 
 ![edit-an-recurring-appointment-using-recurring-appointment-editor-dialog-in-winui-scheduler](Appointment-Editing_Images/edit-an-recurring-appointment-using-recurring-appointment-editor-dialog-in-winui-scheduler.png)
 
+Handle the opening of recurrence popup window using `EditMode` property in `RecurringAppointmentBeginningEditEventArgs` by handling `RecurringAppointmentBeginningEdit` event.
+
+#### RecurringAppointmentBeginningEdit Event
+
 The opening of recurrence popup editor dialog can be handled using `EditMode` property in `RecurringAppointmentBeginningEditEventArgs` by handling `RecurringAppointmentBeginningEdit` event.
+
+`EditMode` : Get or Sets the edit mode to perform the edit option to edit the occurrence or series for recurrence appointment. The default value of `EditMode` is `User.`
+
+* User: The default editor content dialog will appear when editing a recurrence appointment to select the edit option from the end-user itself.
+* Occurrence: Edit the particular occurrence alone in a recurrence appointment. The default editor content dialog will not appear.
+* Series: Edit the entire series in a recurrence appointment. The default editor content dialog will not appear.
+
+{% tabs %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
+this.scheduler.RecurringAppointmentBeginningEdit += scheduler_RecurringAppointmentBeginningEdit;
+
+private void scheduler_RecurringAppointmentBeginningEdit(object sender, RecurringAppointmentBeginningEditEventArgs e)
+{
+	// Get or set the edit mode to perform the edit option
+	e.EditMode = RecurringAppointmentEditMode.Occurrence;
+}
+{% endhighlight %}
+{% endtabs%}
 
 #### AppointmentEditorOpening event
 
@@ -74,28 +96,6 @@ private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorO
 {% endtabs%}
 
 * [Resource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditorOpeningEventArgs.html#Syncfusion_UI_Xaml_Scheduler_AppointmentEditorOpeningEventArgs_Resource): Gets the resource of an appointment under which the appointment is located.
-
-#### RecurringAppointmentBeginningEdit Event
-
-The opening of recurrence popup editor dialog can be handled using `EditMode` property in `RecurringAppointmentBeginningEditEventArgs` by handling `RecurringAppointmentBeginningEdit` event.
-
-`EditMode` : Get or Sets the edit mode to perform the edit option to edit the occurrence or series for recurrence appointment. The default value of `EditMode` is `User.`
-
-* User: The default editor content dialog will appear when editing a recurrence appointment to select the edit option from the end-user itself.
-* Occurrence: Edit the particular occurrence alone in a recurrence appointment. The default editor content dialog will not appear.
-* Series: Edit the entire series in a recurrence appointment. The default editor content dialog will not appear.
-
-{% tabs %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
-this.scheduler.RecurringAppointmentBeginningEdit += scheduler_RecurringAppointmentBeginningEdit;
-
-private void scheduler_RecurringAppointmentBeginningEdit(object sender, RecurringAppointmentBeginningEditEventArgs e)
-{
-	// Get or set the edit mode to perform the edit option
-	var editMode = e.EditMode;
-}
-{% endhighlight %}
-{% endtabs%}
 
 ## Visible/Collapse the built-in editors in appointment editor dialog
 
