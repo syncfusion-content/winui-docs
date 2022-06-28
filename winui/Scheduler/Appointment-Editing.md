@@ -35,6 +35,7 @@ The Scheduler supports editing the recurrence appointment. The following editor 
 ![edit-an-recurring-appointment-using-recurring-appointment-editor-dialog-in-winui-scheduler](Appointment-Editing_Images/edit-an-recurring-appointment-using-recurring-appointment-editor-dialog-in-winui-scheduler.png)
 
 The opening of recurrence popup editor dialog can be handled using `EditMode` property in `RecurringAppointmentBeginningEditEventArgs` by handling `RecurringAppointmentBeginningEdit` event.
+
 #### AppointmentEditorOpening event
 
 While opening the appointment editor UI dialog to add or update appointment, the Scheduler notifies the [AppointmentEditorOpening](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditorOpening) event.
