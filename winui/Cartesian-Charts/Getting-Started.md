@@ -101,7 +101,7 @@ public class ViewModel
 
 {% endtabs %} 
 
-Set the `ViewModel` instance as the `DataContext` of your window; this is done to bind properties of `ViewModel` to  the chart.
+Set the `ViewModel` instance as the `DataContext` of our chart; this is done to bind properties of `ViewModel` to  the chart.
  
 N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `DataContext` in XAML.
 

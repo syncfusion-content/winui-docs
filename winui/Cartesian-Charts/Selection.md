@@ -361,7 +361,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Initial series selection rendering support in WinUI Chart](Selection_images/WinUI_chart_selected_Datapoint_indexes.png.png)
+![Initial series selection rendering support in WinUI Chart](Selection_images/WinUI_chart_selected_Datapoint_indexes.png)
 
 ## Events
 
@@ -373,7 +373,7 @@ The [SelectionChanging]() event occurs before the data point or series is being 
 
 * [CurrentIndex]() - Gets the selected data point orseries index.
 * [PreviousIndex]() - Gets the previous selected data point or series index.
-* [Cancel]() - Gets or Sets a value that indicates whether the selection should be canceled.
+* [Cancel]() - Gets or sets a value that indicates whether the selection should be canceled.
 
 ### SelectionChanged
 
