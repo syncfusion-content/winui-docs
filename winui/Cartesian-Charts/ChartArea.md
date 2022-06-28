@@ -19,8 +19,11 @@ Chart provides the properties like [PlotAreaBorderBrush](https://help.syncfusion
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart Header="Chart Area Header" PlotAreaBackground="LightCyan" Background="LightBlue"
-                        PlotAreaBorderBrush="Blue" PlotAreaBorderThickness="3">
+<chart:SfCartesianChart Header="Chart Area Header" 
+						PlotAreaBackground="LightCyan" 
+						Background="LightBlue"
+                        PlotAreaBorderBrush="Blue" 
+						PlotAreaBorderThickness="3">
 . . .
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis/>

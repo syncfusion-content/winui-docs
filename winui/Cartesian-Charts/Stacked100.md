@@ -28,13 +28,16 @@ The [StackedColumn100Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.
     </chart:SfCartesianChart.YAxes>  
 
     <chart:StackedColumn100Series XBindingPath="CountryName" 
-            YBindingPath="GoldMedals" ItemsSource="{Binding MedalDetails}"/>
+								  YBindingPath="GoldMedals" 
+								  ItemsSource="{Binding MedalDetails}"/>
 
     <chart:StackedColumn100Series XBindingPath="CountryName"
-            YBindingPath="SilverMedals" ItemsSource="{Binding MedalDetails}"/>
+								  YBindingPath="SilverMedals" 
+								  ItemsSource="{Binding MedalDetails}"/>
 
     <chart:StackedColumn100Series XBindingPath="CountryName" 
-            YBindingPath="BronzeMedals" ItemsSource="{Binding MedalDetails}"/>
+								  YBindingPath="BronzeMedals" 
+								  ItemsSource="{Binding MedalDetails}"/>
     ...
 </chart:SfCartesianChart>
 
@@ -103,16 +106,16 @@ The [StackedLine100Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
     </chart:SfCartesianChart.YAxes>  
 
     <chart:StackedLine100Series ItemsSource="{Binding Data}" 
-            XBindingPath="MonthlyExpenses" 
-            YBindingPath="Father" />
+                                XBindingPath="MonthlyExpenses" 
+                                YBindingPath="Father" />
 
     <chart:StackedLine100Series ItemsSource="{Binding Data}"
-            XBindingPath="MonthlyExpenses"  
-            YBindingPath="Mother" />
+                                XBindingPath="MonthlyExpenses"  
+                                YBindingPath="Mother" />
 
     <chart:StackedLine100Series ItemsSource="{Binding Data}"
-            XBindingPath="MonthlyExpenses" 
-            YBindingPath="Son"/>
+                                XBindingPath="MonthlyExpenses" 
+                                YBindingPath="Son"/>
     ...
 <chart:SfCartesianChart>
 
@@ -181,13 +184,16 @@ The [StackedArea100Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
     </chart:SfCartesianChart.YAxes>  
     
     <chart:StackedArea100Series XBindingPath="Month"         
-        YBindingPath="Bus" ItemsSource="{Binding Accidents}" />
+								YBindingPath="Bus" 
+								ItemsSource="{Binding Accidents}" />
 
     <chart:StackedArea100Series XBindingPath="Month" 
-        YBindingPath="Car" ItemsSource="{Binding Accidents}" />
+								YBindingPath="Car" 
+								ItemsSource="{Binding Accidents}" />
 
     <chart:StackedArea100Series XBindingPath="Month" 
-        YBindingPath="Truck" ItemsSource="{Binding Accidents}" />
+								YBindingPath="Truck" 
+								ItemsSource="{Binding Accidents}" />
 </chart:SfCartesianChart>
 
 {% endhighlight %}

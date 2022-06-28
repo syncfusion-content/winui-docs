@@ -39,7 +39,11 @@ The available shapes are
     </chart:SfCartesianChart.YAxes> 
 
     <chart:SfCartesianChart.Series>
-        <chart:FastScatterBitmapSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" PointHeight="7" PointWidth="7"/>
+        <chart:FastScatterBitmapSeries ItemsSource="{Binding Data}" 
+									   XBindingPath="XValue" 
+									   YBindingPath="YValue" 
+									   PointHeight="7" 
+									   PointWidth="7"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>

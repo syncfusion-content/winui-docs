@@ -22,7 +22,7 @@ This section explains how to populate the Cartesian chart with data, a header, d
 
 {% highlight xaml %}
 
-<Window>
+<Window
     . . .
     
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts">
@@ -40,9 +40,9 @@ using Syncfusion.UI.Xaml.Charts;
 
 namespace SfChart_GettingStarted
 {
-    public sealed partial class MainPage : Window
+    public sealed partial class MainWindow : Window
     {
-        public MainPage()
+        public MainWindow()
         {
             InitializeComponent();
             
@@ -110,7 +110,7 @@ N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `Da
 {% highlight xaml %} 
 
 <Window
-    x:Class="SfChart_GettingStarted.MainPage"
+    x:Class="SfChart_GettingStarted.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:model="using:SfChart_GettingStarted"
@@ -348,7 +348,10 @@ Tooltips are used to show information about the segment, when hovers on the segm
 
 <chart:SfCartesianChart>
 	...
-   <chart:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Height"/>
+   <chart:ColumnSeries ShowTooltip="True" 
+					   ItemsSource="{Binding Data}" 
+					   XBindingPath="Name" 
+					   YBindingPath="Height"/>
 	...
 </chart:SfCartesianChart> 
 
@@ -373,7 +376,7 @@ The following code example gives you the complete code of above configurations.
 {% highlight xaml %}
 
 <Window
-    x:Class="SfChart_GettingStarted.MainPage"
+    x:Class="SfChart_GettingStarted.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -420,13 +423,18 @@ using Syncfusion.UI.Xaml.Charts;
 
 namespace SfChart_GettingStarted
 {
-    public sealed partial class MainPage : Window
+    public sealed partial class MainWindow : Window
     {
-        public MainPage()
+        public MainWindow()
         {
             InitializeComponent();
             
-            SfCartesianChart chart = new SfCartesianChart() { Header = "Height Comparison", Height = 300, Width = 500 };
+            SfCartesianChart chart = new SfCartesianChart() 
+			{ 
+				Header = "Height Comparison", 
+				Height = 300, 
+				Width = 500 
+			};
 
             //Adding horizontal axis to the chart 
             CategoryAxis xAxis = new CategoryAxis();

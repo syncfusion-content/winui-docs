@@ -17,7 +17,7 @@ Cartesian chart supports the following types of chart axis.
 
 ## Numerical Axis
 
-[NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is used to plot numerical values to the chart. [NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) can be defined for both [XAxes]() and [YAxes]().
+[NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is used to plot numerical values to the chart. [NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) can be added for both [XAxes]() and [YAxes]().
 
 {% tabs %}
 
@@ -301,7 +301,9 @@ In [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 <chart:SfCartesianChart>
 . . .
 <chart:SfCartesianChart.XAxes>
-    <chart:DateTimeAxis Interval="6" IntervalType="Months" LabelFormat="MMM-yy"/>
+    <chart:DateTimeAxis Interval="6" 
+	                    IntervalType="Months" 
+						LabelFormat="MMM-yy"/>
 </chart:SfCartesianChart.XAxes>
 <chart:SfCartesianChart.YAxes>
     <chart:NumericalAxis/>
@@ -342,7 +344,9 @@ chart.YAxes.Add(new NumericalAxis());
 <chart:SfCartesianChart>
 . . .
 <chart:SfCartesianChart.XAxes>
-    <chart:DateTimeAxis Minimum="2021/05/1" Maximum="2021/11/01"  LabelFormat="MMM-yy"/>
+    <chart:DateTimeAxis Minimum="2021/05/1" 
+						Maximum="2021/11/01"  
+						LabelFormat="MMM-yy"/>
 </chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>
@@ -417,19 +421,20 @@ By default, all the series are plotted based on the 0th index axis of XAxes and 
 
 	<chart:SfCartesianChart.YAxes>
 		<chart:NumericalAxis ShowMajorGridLines="False" />
-		<chart:NumericalAxis Name="Series_YAxis" ShowMajorGridLines="False" />
+		<chart:NumericalAxis Name="Series_YAxis" 
+							 ShowMajorGridLines="False" />
 	</chart:SfCartesianChart.YAxes>
 
     <chart:SfCartesianChart.Series>
         <chart:SfCartesianChart.Series>
             <chart:ColumnSeries ItemsSource="{Binding Data1}" 
-                    XBindingPath="Date"
-                    YBindingPath="Value"
-					YAxisName="Series_YAxis">
+                                XBindingPath="Date"
+                                YBindingPath="Value"
+					            YAxisName="Series_YAxis">
             </chart:ColumnSeries>
             <chart:SplineSeries ItemsSource="{Binding Data}" 
-                    XBindingPath="Date"
-                    YBindingPath="Value"/>
+                                XBindingPath="Date"
+                                YBindingPath="Value"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>

@@ -13,7 +13,7 @@ The trackball allows you to track a data point closer to the cursor position. Th
 
 ## Define Trackball
 
-To add trackball in the chart, create an instance [ChartTrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html) and set it to the [TrackballBehavior]() property of the chart.
+To add the trackball in the chart, create an instance [ChartTrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html) and set it to the [TrackballBehavior]() property of the chart.
 
 {% tabs %}
 
@@ -156,7 +156,7 @@ ChartTrackballBehavior Trackball = new ChartTrackballBehavior()
     LineStyle = chart.Resources["lineStyle"] as Style
 };
 
-chart.Behaviors.Add(Trackball);
+chart.TrackballBehavior = Trackball;
 ...
 
 {% endhighlight %}
@@ -198,7 +198,7 @@ ChartTrackballBehavior Trackball = new ChartTrackballBehavior()
     ChartTrackballStyle = chart.Resources["trackballStyle"] as Style
 };
 
-chart.Behaviors.Add(Trackball);
+chart.TrackballBehavior = Trackball;
 ...
 
 {% endhighlight %}
@@ -278,7 +278,8 @@ The appearance of the axis label can be customized by using the [TrackballLabelT
     </chart:SfCartesianChart.Resources>
 
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis ShowTrackballInfo="True" TrackballLabelTemplate="{StaticResource labelTemplate}"/>
+        <chart:CategoryAxis ShowTrackballInfo="True" 
+							TrackballLabelTemplate="{StaticResource labelTemplate}"/>
     </chart:SfCartesianChart.XAxes>
 . . .
 </chart:SfCartesianChart>
@@ -321,7 +322,8 @@ The [ShowTrackballInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
                             YBindingPath="Year2010"/>
         <chart:SplineSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand" 
-                            YBindingPath="Year2011" ShowTrackballInfo="False"/>
+                            YBindingPath="Year2011" 
+							ShowTrackballInfo="False"/>
         <chart:SplineSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand" 
                             YBindingPath="Year2012">
@@ -363,7 +365,8 @@ The trackball label displayed over the series can be aligned using the [LabelHor
 <chart:SfCartesianChart>
 . . .
     <chart:SfCartesianChart.TrackballBehavior>
-        <chart:ChartTrackballBehavior LabelHorizontalAlignment="Center" LabelVerticalAlignment="Center"/>
+        <chart:ChartTrackballBehavior LabelHorizontalAlignment="Center" 
+									  LabelVerticalAlignment="Center"/>
     </chart:SfCartesianChart.TrackballBehavior>
 . . .
 </chart:SfCartesianChart>
@@ -534,7 +537,7 @@ The following screenshot illustrates the trackball label for multiple series, wh
 SfCartesianChart chart = new SfCartesianChart();
 . . .
 ChartTrackballBehavior Trackball = new ChartTrackballBehavior();
-chart.Behaviors.Add(Trackball);
+chart.TrackballBehavior = Trackball;
 
 ColumnSeries series = new ColumnSeries()
 {

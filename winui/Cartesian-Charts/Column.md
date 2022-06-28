@@ -26,7 +26,9 @@ documentation: ug
     </chart:SfCartesianChart.YAxes>   
 
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue"/>
+        <chart:ColumnSeries ItemsSource="{Binding Data}" 
+							XBindingPath="XValue" 
+							YBindingPath="YValue"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
@@ -76,7 +78,10 @@ The [SegmentSpacing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
     </chart:SfCartesianChart.YAxes> 
 
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" SegmentSpacing="0.5"/>
+        <chart:ColumnSeries ItemsSource="{Binding Data}" 
+							XBindingPath="XValue" 
+							YBindingPath="YValue" 
+							SegmentSpacing="0.5"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
