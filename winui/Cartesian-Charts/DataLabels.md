@@ -224,7 +224,7 @@ The [Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 . . .
 <chart:ColumnSeries ShowDataLabels="True">
     <chart:ColumnSeries.DataLabelSettings>
-        <chart:CartesianDataLabelSettings Format="#.000" />
+        <chart:CartesianDataLabelSettings Background="Transparent" Position="Outer" Format="#.000" />
     </chart:ColumnSeries.DataLabelSettings>
 
 </chart:ColumnSeries>
@@ -239,7 +239,9 @@ ColumnSeries series = new ColumnSeries();
 . . .
 series.DataLabelSettings = new CartesianDataLabelSettings()
 {
-    Format = "#.000"
+    Format = "#.000",
+	Position = DataLabelPosition.Outer
+	Background = new SolidColorBrush(Colors.Transparent),
 };
 
 chart.Series.Add(series);

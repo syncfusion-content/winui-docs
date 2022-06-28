@@ -20,15 +20,15 @@ Chart provides the properties like [PlotAreaBorderBrush](https://help.syncfusion
 {% highlight xaml %}
 
 <chart:SfCartesianChart Header="Chart Area Header" PlotAreaBackground="LightCyan" Background="LightBlue"
-                        PlotAreaBorderBrush="Blue" PlotAreaBorderThickness="3"  Palette="BlueChrome">
+                        PlotAreaBorderBrush="Blue" PlotAreaBorderThickness="3">
 . . .
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis/>
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis/>
-    </chart:SfCartesianChart.SecondaryAxis>
+    </chart:SfCartesianChart.YAxes>
 
     <chart:SfCartesianChart.Legend>
         <chart:ChartLegend/>
@@ -54,10 +54,11 @@ chart.PlotAreaBackground = new SolidColorBrush(Colors.LightCyan);
 chart.PlotAreaBorderBrush = new SolidColorBrush(Colors.Blue);
 chart.Background = new SolidColorBrush(Colors.LightBlue);
 chart.PlotAreaBorderThickness = new Thickness(3);
-chart.Palette = ChartColorPalette.BlueChrome;
 
-chart.PrimaryAxis = new CategoryAxis();
-chart.SecondaryAxis = new NumericalAxis();
+CategoryAxis primaryAxis = new CategoryAxis();
+chart.XAxes.Add(primaryAxis);
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.YAxes.Add(secondaryAxis);
 
 ChartLegend legend = new ChartLegend();
 chart.Legend = legend;

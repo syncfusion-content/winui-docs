@@ -19,13 +19,13 @@ The [FastLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 <chart:SfCartesianChart>
 
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis />
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis>  
+    </chart:SfCartesianChart.YAxes>  
 
     <chart:SfCartesianChart.Series>
         <chart:FastLineSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue"/>
@@ -37,10 +37,10 @@ The [FastLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-DateTimeAxis primaryAxis = new DateTimeAxis();
-chart.PrimaryAxis = primaryAxis;
-NumericalAxis secondaryAxis = new NumericalAxis();
-chart.SecondaryAxis = secondaryAxis;
+DateTimeAxis xAxis = new DateTimeAxis();
+chart.XAxes.Add(xAxis);
+NumericalAxis yAxis = new NumericalAxis();
+chart.YAxes.Add(yAxis);
 
 FastLineSeries series = new FastLineSeries()
 {
@@ -67,13 +67,13 @@ The [FastLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 
 <chart:SfCartesianChart>
 
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis />
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis>  
+    </chart:SfCartesianChart.YAxes>  
 
     <chart:SfCartesianChart.Series>
         <chart:FastLineBitmapSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue"/>
@@ -86,10 +86,10 @@ The [FastLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-DateTimeAxis primaryAxis = new DateTimeAxis();
-chart.PrimaryAxis = primaryAxis;
-NumericalAxis secondaryAxis = new NumericalAxis();
-chart.SecondaryAxis = secondaryAxis;
+DateTimeAxis xAxis = new DateTimeAxis();
+chart.XAxes.Add(xAxis);
+NumericalAxis yAxis = new NumericalAxis();
+chart.YAxes.Add(yAxis);
 
 FastLineBitmapSeries series = new FastLineBitmapSeries()
 {
@@ -116,13 +116,13 @@ As it was rendered using bitmap, there might be some jagged lines at the edges. 
 
 <chart:SfCartesianChart>
 
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis />
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis>  
+    </chart:SfCartesianChart.YAxes>  
 
     <chart:SfCartesianChart.Series>
         <chart:FastLineBitmapSeries EnableAntiAliasing="True" ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue"/>
@@ -135,10 +135,10 @@ As it was rendered using bitmap, there might be some jagged lines at the edges. 
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-DateTimeAxis primaryAxis = new DateTimeAxis();
-chart.PrimaryAxis = primaryAxis;
-NumericalAxis secondaryAxis = new NumericalAxis();
-chart.SecondaryAxis = secondaryAxis;
+DateTimeAxis xAxis = new DateTimeAxis();
+chart.XAxes.Add(xAxis);
+NumericalAxis yAxis = new NumericalAxis();
+chart.YAxes.Add(yAxis);
 
 FastLineBitmapSeries series = new FastLineBitmapSeries()
 {
