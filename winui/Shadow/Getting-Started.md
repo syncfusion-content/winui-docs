@@ -41,15 +41,15 @@ This section explains the steps required to add the WinUI Shadow control and cov
 {% endhighlight %}
 {% highlight C# %}
 
-   // Creating an instance of the Shadow control.
-   SfShadow shadow = new SfShadow();
+// Creating an instance of the Shadow control.
+SfShadow shadow = new SfShadow();
 
-   // Setting the SfShadow content value.
-   Button button = new Button();
-   button.Height = 50;
-   button.Width = 100;
-   button.Content = "Button";
-   shadow.Content = button;
+// Setting the SfShadow content value.
+Button button = new Button();
+button.Height = 50;
+button.Width = 100;
+button.Content = "Button";
+shadow.Content = button;
 
 {% endhighlight %}
 {% endtabs %}
@@ -64,21 +64,21 @@ You can apply the shadow effects for any types of [Image](https://docs.microsoft
 {% highlight XAML %}
 
 <syncfusion:SfShadow>
-   <Image Height="250" Width="250" Source="/Assets/Shadow/Ellipse_Shadow.png"/>
+   <Image Height="150" Width="150" Source="/Assets/Shadow/Ellipse_Shadow.png"/>
 </syncfusion:SfShadow>
 
 {% endhighlight %}
 {% highlight C# %}
 
-   SfShadow shadow = new SfShadow();
+SfShadow shadow = new SfShadow();
 
-   Image image = new Image();
-   image.Height = 250;
-   image.Width = 250;
-   BitmapImage bitmapImage = new BitmapImage();
-   bitmapImage.UriSource = new Uri("ms-appx:///Assets/Image/Ellipse_Shadow.png");
-   image.Source = bitmapImage;
-   shadow.Content = image;
+Image image = new Image();
+image.Height = 150;
+image.Width = 150;
+BitmapImage bitmapImage = new BitmapImage();
+bitmapImage.UriSource = new Uri("ms-appx:///Assets/Image/Ellipse_Shadow.png");
+image.Source = bitmapImage;
+shadow.Content = image;
 
 {% endhighlight %}
 {% endtabs %}
@@ -92,74 +92,74 @@ You can apply the shadow effects for any types of [Shape](https://docs.microsoft
 {% tabs %}
 {% highlight XAML %}
 
-   <StackPanel Orientation="Horizontal">
-       <syncfusion:SfShadow>
-          <Path Data="M44.5 4L54.0608 33.4114H85L59.9696 51.5886L69.5304 81L44.5 62.8228L19.4696 81L29.0304 51.5886L4 33.4114H34.9392L44.5 4Z" Fill="#FFD700"/>  
-       </syncfusion:SfShadow>
-       <syncfusion:SfShadow>
-          <Path Data="M44.5 4L54.0608 33.4114H85L59.9696 51.5886L69.5304 81L44.5 62.8228L19.4696 81L29.0304 51.5886L4 33.4114H34.9392L44.5 4Z" Fill="#FFD700"/>  
-       </syncfusion:SfShadow>
-       <syncfusion:SfShadow>
-          <Path Data="M44.5 4L54.0608 33.4114H85L59.9696 51.5886L69.5304 81L44.5 62.8228L19.4696 81L29.0304 51.5886L4 33.4114H34.9392L44.5 4Z" Fill="#FFD700"/>  
-       </syncfusion:SfShadow>
-       <syncfusion:SfShadow>
-          <Path Data="M44.5 4L54.0608 33.4114H85L59.9696 51.5886L69.5304 81L44.5 62.8228L19.4696 81L29.0304 51.5886L4 33.4114H34.9392L44.5 4Z" Fill="#FFD700"/>  
-       </syncfusion:SfShadow>
-       <syncfusion:SfShadow>
-          <Path Data="M44.5 4L54.0608 33.4114H85L59.9696 51.5886L69.5304 81L44.5 62.8228L19.4696 81L29.0304 51.5886L4 33.4114H34.9392L44.5 4Z" Fill="#FFD700"/>  
-       </syncfusion:SfShadow>
-   </StackPanel>
+<StackPanel Orientation="Horizontal">
+   <syncfusion:SfShadow>
+      <Path Data="M44.5 4L54.0608 33.4114H85L59.9696 51.5886L69.5304 81L44.5 62.8228L19.4696 81L29.0304 51.5886L4 33.4114H34.9392L44.5 4Z" Fill="#FFD700"/>  
+   </syncfusion:SfShadow>
+   <syncfusion:SfShadow>
+      <Path Data="M44.5 4L54.0608 33.4114H85L59.9696 51.5886L69.5304 81L44.5 62.8228L19.4696 81L29.0304 51.5886L4 33.4114H34.9392L44.5 4Z" Fill="#FFD700"/>  
+   </syncfusion:SfShadow>
+   <syncfusion:SfShadow>
+      <Path Data="M44.5 4L54.0608 33.4114H85L59.9696 51.5886L69.5304 81L44.5 62.8228L19.4696 81L29.0304 51.5886L4 33.4114H34.9392L44.5 4Z" Fill="#FFD700"/>  
+   </syncfusion:SfShadow>
+   <syncfusion:SfShadow>
+      <Path Data="M44.5 4L54.0608 33.4114H85L59.9696 51.5886L69.5304 81L44.5 62.8228L19.4696 81L29.0304 51.5886L4 33.4114H34.9392L44.5 4Z" Fill="#FFD700"/>  
+   </syncfusion:SfShadow>
+   <syncfusion:SfShadow>
+      <Path Data="M44.5 4L54.0608 33.4114H85L59.9696 51.5886L69.5304 81L44.5 62.8228L19.4696 81L29.0304 51.5886L4 33.4114H34.9392L44.5 4Z" Fill="#FFD700"/>  
+   </syncfusion:SfShadow>
+</StackPanel>
 
 {% endhighlight %}
 {% highlight C# %}
 
-   StackPanel panel = new StackPanel();
-   panel.Orientation = Orientation.Horizontal;
-   panel.HorizontalAlignment = HorizontalAlignment.Center;
-   panel.VerticalAlignment = VerticalAlignment.Center;
+StackPanel panel = new StackPanel();
+panel.Orientation = Orientation.Horizontal;
+panel.HorizontalAlignment = HorizontalAlignment.Center;
+panel.VerticalAlignment = VerticalAlignment.Center;
 
-   SfShadow shadow1 = new SfShadow();
-   Path path1 = new Path();
-   string data1 = "M44.5 4L54.0608 33.4114H85L59.9696 51.5886L69.5304 81L44.5 62.8228L19.4696 81L29.0304 51.5886L4 33.4114H34.9392L44.5 4Z";
-   path1.SetBinding(Microsoft.UI.Xaml.Shapes.Path.DataProperty, new Binding() { Source = data1 });    
-   path1.Fill = new SolidColorBrush(Color.FromArgb(255, 255, 215, 0));
-   shadow1.Content = path1;
+SfShadow shadow1 = new SfShadow();
+Path path1 = new Path();
+string data1 = "M44.5 4L54.0608 33.4114H85L59.9696 51.5886L69.5304 81L44.5 62.8228L19.4696 81L29.0304 51.5886L4 33.4114H34.9392L44.5 4Z";
+path1.SetBinding(Microsoft.UI.Xaml.Shapes.Path.DataProperty, new Binding() { Source = data1 });    
+path1.Fill = new SolidColorBrush(Color.FromArgb(255, 255, 215, 0));
+shadow1.Content = path1;
            
-   SfShadow shadow2 = new SfShadow();
-   Path path2 = new Path();
-   string data2 = "M44.5 4L54.0608 33.4114H85L59.9696 51.5886L69.5304 81L44.5 62.8228L19.4696 81L29.0304 51.5886L4 33.4114H34.9392L44.5 4Z";
-   path2.SetBinding(Microsoft.UI.Xaml.Shapes.Path.DataProperty, new Binding() { Source = data2 });
-   path2.Fill = new SolidColorBrush(Color.FromArgb(255, 255, 215, 0));
-   shadow2.Content = path2;
+SfShadow shadow2 = new SfShadow();
+Path path2 = new Path();
+string data2 = "M44.5 4L54.0608 33.4114H85L59.9696 51.5886L69.5304 81L44.5 62.8228L19.4696 81L29.0304 51.5886L4 33.4114H34.9392L44.5 4Z";
+path2.SetBinding(Microsoft.UI.Xaml.Shapes.Path.DataProperty, new Binding() { Source = data2 });
+path2.Fill = new SolidColorBrush(Color.FromArgb(255, 255, 215, 0));
+shadow2.Content = path2;
           
-   SfShadow shadow3 = new SfShadow();
-   Path path3 = new Path();
-   string data3 = "M44.5 4L54.0608 33.4114H85L59.9696 51.5886L69.5304 81L44.5 62.8228L19.4696 81L29.0304 51.5886L4 33.4114H34.9392L44.5 4Z";
-   path3.SetBinding(Microsoft.UI.Xaml.Shapes.Path.DataProperty, new Binding() { Source = data3 });
-   path3.Fill = new SolidColorBrush(Color.FromArgb(255, 255, 215, 0));
-   shadow3.Content = path3;
+SfShadow shadow3 = new SfShadow();
+Path path3 = new Path();
+string data3 = "M44.5 4L54.0608 33.4114H85L59.9696 51.5886L69.5304 81L44.5 62.8228L19.4696 81L29.0304 51.5886L4 33.4114H34.9392L44.5 4Z";
+path3.SetBinding(Microsoft.UI.Xaml.Shapes.Path.DataProperty, new Binding() { Source = data3 });
+path3.Fill = new SolidColorBrush(Color.FromArgb(255, 255, 215, 0));
+shadow3.Content = path3;
            
-   SfShadow shadow4 = new SfShadow();
-   Path path4 = new Path();
-   string data4 = "M44.5 4L54.0608 33.4114H85L59.9696 51.5886L69.5304 81L44.5 62.8228L19.4696 81L29.0304 51.5886L4 33.4114H34.9392L44.5 4Z";
-   path4.SetBinding(Microsoft.UI.Xaml.Shapes.Path.DataProperty, new Binding() { Source = data4 });
-   path4.Fill = new SolidColorBrush(Color.FromArgb(255, 255, 215, 0));
-   shadow4.Content = path4;
-          
-   SfShadow shadow5 = new SfShadow();
-   Path path5 = new Path();
-   string data5 = "M44.5 4L54.0608 33.4114H85L59.9696 51.5886L69.5304 81L44.5 62.8228L19.4696 81L29.0304 51.5886L4 33.4114H34.9392L44.5 4Z";
-   path5.SetBinding(Microsoft.UI.Xaml.Shapes.Path.DataProperty, new Binding() { Source = data5 });
-   path5.Fill = new SolidColorBrush(Color.FromArgb(255, 255, 215, 0));
-   shadow5.Content = path5;
+SfShadow shadow4 = new SfShadow();
+Path path4 = new Path();
+string data4 = "M44.5 4L54.0608 33.4114H85L59.9696 51.5886L69.5304 81L44.5 62.8228L19.4696 81L29.0304 51.5886L4 33.4114H34.9392L44.5 4Z";
+path4.SetBinding(Microsoft.UI.Xaml.Shapes.Path.DataProperty, new Binding() { Source = data4 });
+path4.Fill = new SolidColorBrush(Color.FromArgb(255, 255, 215, 0));
+shadow4.Content = path4;
+        
+SfShadow shadow5 = new SfShadow();
+Path path5 = new Path();
+string data5 = "M44.5 4L54.0608 33.4114H85L59.9696 51.5886L69.5304 81L44.5 62.8228L19.4696 81L29.0304 51.5886L4 33.4114H34.9392L44.5 4Z";
+path5.SetBinding(Microsoft.UI.Xaml.Shapes.Path.DataProperty, new Binding() { Source = data5 });
+path5.Fill = new SolidColorBrush(Color.FromArgb(255, 255, 215, 0));
+shadow5.Content = path5;
             
-   panel.Children.Add(shadow1);
-   panel.Children.Add(shadow2);
-   panel.Children.Add(shadow3);
-   panel.Children.Add(shadow4);
-   panel.Children.Add(shadow5);
+panel.Children.Add(shadow1);
+panel.Children.Add(shadow2);
+panel.Children.Add(shadow3);
+panel.Children.Add(shadow4);
+panel.Children.Add(shadow5);
    
 {% endhighlight %}
 {% endtabs %}
 
-![Shadow effect for shape in WinUI](Shadow_images/winui_shadow_star.png)
+![Shadow effect for shape in WinUI](Shadow_images/winui_shadow_path.png)
