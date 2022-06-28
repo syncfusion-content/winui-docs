@@ -20,7 +20,6 @@ The [Mode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunn
 {% highlight xaml %}
 
 <chart:SfFunnelChart x:Name="chart"
-                Palette="BlueChrome"
                 ItemsSource="{Binding Data}" 
                 XBindingPath="Category" 
                 YBindingPath="Value" 
@@ -32,7 +31,6 @@ The [Mode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunn
 {% highlight C# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-chart.Palette = ChartColorPalette.BlueChrome;
 chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
@@ -55,7 +53,6 @@ this.Content = chart;
 {% highlight xaml %}
 
 <chart:SfFunnelChart x:Name="chart"
-                Palette="BlueChrome"
                 ItemsSource="{Binding Data}" 
                 XBindingPath="Category" 
                 YBindingPath="Value" 
@@ -67,7 +64,6 @@ this.Content = chart;
 {% highlight C# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-chart.Palette = ChartColorPalette.BlueChrome;
 chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";

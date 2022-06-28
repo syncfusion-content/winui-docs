@@ -9,19 +9,19 @@ documentation: ug
 
 # Row drag and drop in WinUI DataGrid (SfDataGrid)
 
-[WinUI DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html) allows you to drag and drop the rows by setting the [AllowDraggingRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowDraggingRows) and [AllowDrop](https://docs.microsoft.com/en-us/dotnet/api/system.windows.uielement.allowdrop) property to `true`. You can also drag and drop the rows between DataGrid and other controls such as [ListView](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.listview?view=winui-3.0) , [SfTreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) and [SfTreeGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html). 
+[WinUI DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html) allows you to drag and drop the rows by setting the `AllowRowDragDrop` and [AllowDrop](https://docs.microsoft.com/en-us/dotnet/api/system.windows.uielement.allowdrop) property to `true`. You can also drag and drop the rows between DataGrid and other controls such as [ListView](https://docs.microsoft.com/en-us/windows/apps/design/controls/listview-and-gridview) , [SfTreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) and [SfTreeGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html). 
 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="sfDataGrid"
-                     AllowDraggingRows="True"
+                     AllowRowDragDrop="True"
                      AllowDrop="True"               
                      AutoGenerateColumns="True"
                      ItemsSource="{Binding Orders}" />
 {% endhighlight %}
 
 {% highlight c# %}
-this.sfDataGrid.AllowDraggingRows = true;
+this.sfDataGrid.AllowRowDragDrop = true;
 this.sfDataGrid.AllowDrop = true;
 {% endhighlight %}
 {% endtabs %}
@@ -41,7 +41,7 @@ If you drop above the target record, it will be added above the target record.
 
 WinUI DataGrid (SfDataGrid) allows to select and drag multiple rows. To enable multiple selection, set the [SfDataGrid.SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectionMode) as `Multiple` or `Extended`. 
 
-N> The drag selection cannot be performed while the `AllowDraggingRows` enabled as `true` in the SfDataGrid.
+N> The drag selection cannot be performed while the `AllowRowDragDrop` enabled as `true` in the SfDataGrid.
 
 <img src="Row-Drag-Drop-Images/RowDragDrop-Img3.png" alt="Dragging Multiple Rows in WinUI DataGrid" width="100%" Height="Auto"/>
 

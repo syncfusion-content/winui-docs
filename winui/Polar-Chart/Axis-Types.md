@@ -125,41 +125,6 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![Numerical axis range in WinUI Chart](Axis_Images/WinUI_Chart_NumericalAxis_AxisRange.png)
 
-### Start from zero
-
-[NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) will calculate the start range based on the data points binded to the chart. By defining the [StartRangeFromZero](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_StartRangeFromZero) property to True, numerical axis start the range from zero.
-
-N> By default, axis range is calculated between the minimum and maximum value of the data points.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfPolarChart>
-    <chart:SfPolarChart.SecondaryAxis>
-        <chart:NumericalAxis StartRangeFromZero="True" />
-    </chart:SfPolarChart.SecondaryAxis>
-    ...
-</chart:SfPolarChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfPolarChart chart = new SfPolarChart();
-...
-chart.SecondaryAxis = new NumericalAxis()
-{
-   StartRangeFromZero = true
-};
-...
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![NumericalAxis support in WinUI Chart](Axis_Images/WinUI_Chart_NumericalAxis_StartRangeFromZero.png)
-
 ## DateTime Axis
 
 The [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is used to plot the chart with `DateTime` values.

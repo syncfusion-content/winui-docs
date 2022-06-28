@@ -103,7 +103,7 @@ The appearance of the header can be customized using the [HeaderTemplate](https:
 
 {% highlight xaml %}
 
-<chart:SfPolarChart>
+<chart:SfPolarChart x:Name="chart">
     <chart:SfPolarChart.Resources>
         <DataTemplate x:Key="headerTemplate">
             <Border BorderBrush="Blue" CornerRadius="5" BorderThickness="1">
