@@ -34,7 +34,7 @@ button.width = 100;
 button.Content = "Button";
 shadow.Content = button;
 
-{% endhiglight %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Color customization in WinUI Shadow control](Shadow_images/winui_shadow_color.png)
@@ -64,7 +64,7 @@ button.width = 100;
 button.Content = "Button";
 shadow.Content = button;
 
-{% endhiglight %}
+{% endhighlight %}
 {% endtabs %}
 
 ![BlurRadius customization in WinUI Shadow control](Shadow_images/winui_shadow_blurradius.png)
@@ -95,7 +95,7 @@ button.Content = "Button";
 button.CornerRadius = 10;
 shadow.Content = button;
 
-{% endhiglight %}
+{% endhighlight %}
 {% endtabs %}
 
 ![CornerRadius customization in WinUI Shadow control](Shadow_images/winui_shadow_cornerradius.png)
@@ -124,7 +124,7 @@ button.width = 100;
 button.Content = "Button";
 shadow.Content = button;
 
-{% endhiglight %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Positioning in WinUI Shadow control](Shadow_images/winui_shadow_offset.png)
