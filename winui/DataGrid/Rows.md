@@ -257,7 +257,7 @@ Set the footer rows count at <kbd>bottom</kbd> of the SfDataGrid.
 </tr>
 <tr>
 <td>
-{{`FrozenColumnsCount`| markdownify }}
+`FrozenColumnsCount`
 </td>
 <td>
 Set the frozen columns count in <kbd>left side</kbd> of the SfDataGrid. 
@@ -265,7 +265,7 @@ Set the frozen columns count in <kbd>left side</kbd> of the SfDataGrid.
 </tr>
 <tr>
 <td>
-{{`FrozenFooterColumnsCount`| markdownify }}
+`FrozenFooterColumnsCount`
 </td>
 <td>
 Set the frozen columns in <kbd>right side</kbd> of the SfDataGrid.
