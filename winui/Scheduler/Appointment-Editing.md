@@ -34,7 +34,29 @@ The Scheduler supports editing the recurrence appointment. The following editor 
 
 ![edit-an-recurring-appointment-using-recurring-appointment-editor-dialog-in-winui-scheduler](Appointment-Editing_Images/edit-an-recurring-appointment-using-recurring-appointment-editor-dialog-in-winui-scheduler.png)
 
-The opening of recurrence popup editor dialog can be handled using [RecurringAppointmentEditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.RecurringAppointmentEditMode.html) property in [AppointmentEditorOpeningEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditorOpeningEventArgs.html) by handling [AppointmentEditorOpening](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditorOpening) event.
+Handle the opening of recurrence popup window using the `EditMode` property in the `RecurringAppointmentBeginningEditEventArgs` by handling the `RecurringAppointmentBeginningEdit` event.
+
+#### RecurringAppointmentBeginningEdit Event
+
+The opening of the recurrence popup editor dialog can be handled using the `EditMode` property in the `RecurringAppointmentBeginningEditEventArgs` by handling the `RecurringAppointmentBeginningEdit` event.
+
+`EditMode:` Gets or Sets the edit mode to perform the edit option to edit the occurrence or series for a recurrence appointment. The default value of the `EditMode` is `User.`
+
+* User: The default editor content dialog will appear when editing a recurrence appointment to select the edit option from the end-user itself.
+* Occurrence: Edit a particular occurrence alone in a recurrence appointment. The default editor content dialog will not appear.
+* Series: Edit the entire series in a recurrence appointment. The default editor content dialog will not appear.
+
+{% tabs %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
+this.scheduler.RecurringAppointmentBeginningEdit += scheduler_RecurringAppointmentBeginningEdit;
+
+private void scheduler_RecurringAppointmentBeginningEdit(object sender, RecurringAppointmentBeginningEditEventArgs e)
+{
+	// Get or set the edit mode to perform the edit option.
+	e.EditMode = RecurringAppointmentEditMode.Occurrence;
+}
+{% endhighlight %}
+{% endtabs%}
 
 #### AppointmentEditorOpening event
 
@@ -48,13 +70,7 @@ The [AppointmentEditorOpeningEventArgs](https://help.syncfusion.com/cr/winui/Syn
 
 [AppointmentEditorOptions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditorOptions.html): Specifies to show the editors for the `ScheduleAppointment` details in `SchedulerAppointmentEditorView` while double clicking the scheduler.
 
-`Cancel`: To avoid the default appointment editor showing, by enabling this property.
-
-[RecurrenceEditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditorOpeningEventArgs.html#Syncfusion_UI_Xaml_Scheduler_AppointmentEditorOpeningEventArgs_RecurrenceEditMode): Get or Sets the edit mode to perform the edit option to edit the occurrence or series for recurrence appointment. The default value of `RecurrenceEditMode` is `User.`
-
-* User: The default editor content dialog will appear when editing a recurrence appointment to select the edit option from the end-user itself.
-* Occurrence: Edit the particular occurrence alone in a recurrence appointment. The default editor content dialog will not appear.
-* Series: Edit the entire series in a recurrence appointment. The default editor content dialog will not appear.
+`Cancel:` To avoid the default appointment editor from showing by enabling this property.
 
 For example, to use a custom appointment editor dialog instead of a default appointment editor content dialog, you can handle the `AppointmentEditorOpening` event.
 
@@ -175,12 +191,6 @@ The [AppointmentDeletingEventArgs](https://help.syncfusion.com/cr/winui/Syncfusi
 [Appointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentDeletingEventArgs.html#Syncfusion_UI_Xaml_Scheduler_AppointmentDeletingEventArgs_Appointment): Gets the selected appointment to delete.
 
 `Cancel`: To avoid appointment deleting by enabling this property.
-
-[RecurrenceEditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentDeletingEventArgs.html#Syncfusion_UI_Xaml_Scheduler_AppointmentDeletingEventArgs_RecurrenceEditMode): Gets or sets whether to delete series or occurrence when deleting a recurrence appointment. The default value of `RecurrenceEditMode` is set to `User`
-
-* User: The default editor dialog will appear when deleting a recurrence appointment to select the edit option from the end-user itself.
-* Occurrence: Delete the particular occurrence alone in a recurrence appointment. The default editor dialog will not appear.
-* Series: Delete the entire series in a recurrence appointment. The default editor dialog will not appear.
 
 {% tabs %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
