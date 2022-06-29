@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance in WinUI Chart (SfPolarChart)
 
-The appearance of [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) can be customized by using the predefined palettes, custom palettes and gradient, which allows to enrich the application.
+The appearance of the [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) can be customized by using the predefined palettes, custom palettes, and gradient which allows enriching the application.
 
 ## Default PaletteBrushes
 
-Currently, [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) supports only one predefined [PaletteBrushes]() and it is the default palette for SfPolarChart. The following screenshot shows the default appearance of multiple series.
+Currently, the [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) supports only one predefined [PaletteBrushes]() and it is the default brushes for the SfPolarChart. The following screenshot shows the default appearance of multiple series.
 
 {% tabs %}
 
@@ -73,7 +73,7 @@ this.Content = chart;
 
 ## Custom PaletteBrushes
 
-[SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) provides support to define own brushes for chart with preferred order by using the [PaletteBrushes]() property, as shown in the following code example.
+The [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) provides support to define own brushes for the chart with preferred order by using the [PaletteBrushes]() property, as shown in the following code example.
 
 {% tabs %}
 
@@ -122,7 +122,7 @@ this.Content = chart;
 
 ## Applying Gradient
 
-Gradient for the polar chart can be set by using the [PaletteBrushes]() property of the funnel chart with the help of `LinearGradientBrush` or `RadialGradientBrush`.
+Gradient for the polar chart can be set by using the [PaletteBrushes]() property of the funnel chart with the help of the `LinearGradientBrush` or `RadialGradientBrush`.
 
 {% tabs %}
 

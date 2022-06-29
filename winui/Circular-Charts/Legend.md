@@ -312,7 +312,7 @@ chart.Legend = new ChartLegend()
 
 Legends can be docked left, right, and top or bottom around the chart area using [Placement]() property. By default, the chart legend is docked at the top of the chart as mentioned earlier.
 
-To display the legend at the left, set the [Placement]() as [Left]() as in below code snippet.
+To display the legend at the left, set the [Placement]() as [Left]() as in the following code sample.
 
 {% tabs %}
 
@@ -352,7 +352,7 @@ The legend background appearance can be customized by using the below properties
 `BorderBrush` - used to change the stroke color of the legend.
 `Background` - used to change the background color of legend.
 `Opacity` - used to control the transparency of the legend icon shape.
-`CornerRadius` - used to change the corner radius of the legend.
+[CornerRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CornerRadius) - used to change the corner radius of the legend.
 
 {% tabs %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Axis labels in WinUI Chart
 
-Axis labels are used to show the units or measures or category values of axis to visualize the data. It will be generated based on the range and values binded to the series in the chart. 
+The axis labels are used to show the units, measures, or category values of the axis to visualize the data. It will be generated based on the range and values binded to the series in the chart.
 
 ## Rotation
 

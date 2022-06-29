@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance in WinUI Chart (SfCircularChart)
 
-The appearance of [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) can be customized by using the predefined palettes, custom palettes and gradient, which allows to enrich the application.
+The appearance of the [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) can be customized by using the predefined palettes, custom palettes, and gradient which allows enriching the application.
 
 ## Predefined PaletteBrushes
 
-Currently, [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) supports only one predefined [PaletteBrushes]() and it is the default palette for any circular series. The following screenshot shows the default appearance of pie series.
+Currently, the [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) supports only one predefined [PaletteBrushes]() and it is the default brushes for any circular series. The following screenshot shows the default appearance of the pie series.
 
 {% tabs %}
 
@@ -29,7 +29,12 @@ Currently, [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.
 
 {% highlight c# %}
 
-PieSeries series = new PieSeries() { ItemsSource= new ViewModel().Data, XBindingPath="Product", YBindingPath="SalesRate" };
+PieSeries series = new PieSeries()
+{
+	ItemsSource = new ViewModel().Data,
+	XBindingPath = "Product",
+	YBindingPath = "SalesRate" 
+};
 . . .
 chart.Series.Add(series);
 
@@ -41,7 +46,7 @@ chart.Series.Add(series);
 
 ## Custom PaletteBrushes
 
-[SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) provides support to define own brushes for series with preferred order by using the [PaletteBrushes]() property, as shown in the following code example.
+The [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) provides support to define own brushes for series with preferred order by using the [PaletteBrushes]() property as shown in the following code example.
 
 {% tabs %}
 
@@ -94,7 +99,7 @@ chart.Series.Add(series);
 
 ## Applying Gradient
 
-Gradient for the circular chart can be set by using the [PaletteBrushes]() property of the series with the help of `LinearGradientBrush` or `RadialGradientBrush`.
+The gradient for the circular chart can be set by using the [PaletteBrushes]() property of the series with the help of the `LinearGradientBrush` or `RadialGradientBrush`.
 
 {% tabs %}
 
