@@ -26,8 +26,7 @@ To enable the selection in the chart, create an instance of the [DataPointSelect
                       YBindingPath="Value">
 
     <chart:SfPyramidChart.SelectionBehavior>
-        <chart:DataPointSelectionBehavior
-        SelectionBrush="Red"/>
+        <chart:DataPointSelectionBehavior SelectionBrush="Red"/>
     </chart:SfPyramidChart.SelectionBehavior>
 
 </chart:SfPyramidChart>

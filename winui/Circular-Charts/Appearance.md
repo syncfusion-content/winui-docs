@@ -29,7 +29,12 @@ Currently, the [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion
 
 {% highlight c# %}
 
-PieSeries series = new PieSeries() { ItemsSource= new ViewModel().Data, XBindingPath="Product", YBindingPath="SalesRate" };
+PieSeries series = new PieSeries()
+{
+	ItemsSource = new ViewModel().Data,
+	XBindingPath = "Product",
+	YBindingPath = "SalesRate" 
+};
 . . .
 chart.Series.Add(series);
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WinUI Chart (SfPyramidChart)
 
-The appearance of the [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html)  can be customized by using the predefined palette, custom palette, and gradient which allows enriching the application.
+The appearance of the [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html) can be customized by using the predefined palette, custom palette, and gradient which allows enriching the application.
 
 ## Predefined PaletteBrushes
 
