@@ -278,7 +278,7 @@ The legend background appearance can be customized by using the following proper
 `BorderBrush` - used to change the stroke color of the legend.
 `Background` - used to change the background color of the legend.
 `Opacity` - used to control the transparency of the legend icon shape.
-`CornerRadius` - used to change the corner radius of the legend.
+[CornerRadius]() - used to change the corner radius of the legend.
 
 {% tabs %}
 

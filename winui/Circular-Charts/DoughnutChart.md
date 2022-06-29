@@ -101,7 +101,7 @@ chart.Series.Add(series3);
 
 ## Inner Radius
 
-The [InnerRadius]() property of doughnut series is used to define the inner circle. It also has [Radius]() property, which is used to define the size for this series, similar to [Radius]() in [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html).
+The [InnerRadius]() property of the doughnut series is used to define the inner circle. It also has the [Radius]() property which is used to define the size for this series, similar to the [Radius]() in the [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html).
 
 {% tabs %}
 

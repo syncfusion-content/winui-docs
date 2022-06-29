@@ -237,7 +237,7 @@ this.Content = chart;
 
 By using the [Placement]() property, legends can be docked to the left, right, and top or bottom of the chart area. By default, the chart legend is docked at the top of the chart as mentioned earlier.
 
-To display the legend at the right, you can set the [Placement]() as [Right]() as shown in the following code sample.
+To display the legend at the right, set the [Placement]() as [Right]() as shown in the following code sample.
 
 {% tabs %}
 
@@ -278,7 +278,7 @@ The legend background appearance can be customized by using the following proper
 `BorderBrush` - used to change the stroke color of the legend.
 `Background` - used to change the background color of the legend.
 `Opacity` - used to control the transparency of the legend icon shape.
-`CornerRadius` - used to change the corner radius of the legend.
+[CornerRadius]() - used to change the corner radius of the legend.
 
 {% tabs %}
 

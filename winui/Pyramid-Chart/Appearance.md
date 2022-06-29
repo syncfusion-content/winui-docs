@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance in WinUI Chart (SfPyramidChart)
 
-The appearance of [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html) can be customized by using the predefined palettes, custom palettes and gradient, which allows to enrich the application.
+The appearance of the [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html)  can be customized by using the predefined palette, custom palette, and gradient which allows enriching the application.
 
 ## Predefined PaletteBrushes
 
-Currently, [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html) supports only one predefined [PaletteBrushes]() and it is the default palette for SfPyramidChart. The following screenshot shows the default appearance of pyramid chart.
+Currently, the [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html) supports only one predefined [PaletteBrushes]() and it is the default brushes for the SfPyramidChart. The following screenshot shows the default appearance of the pyramid chart.
 
 {% tabs %}
 
@@ -45,7 +45,7 @@ this.Content = chart;
 
 ## Custom PaletteBrushes
 
-[SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html) provides support to define own brushes for the chart with preferred order by using the [PaletteBrushes]() property, as shown in the following code example.
+The [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html) provides support to define own brushes for the chart with preferred order by using the [PaletteBrushes]() property as shown in the following code example.
 
 {% tabs %}
 
@@ -102,7 +102,7 @@ this.Content = chart;
 
 ## Applying Gradient
 
-Gradient for the pyramid chart can be set by using the [PaletteBrushes]() property of the pyramid chart with the help of `LinearGradientBrush` or `RadialGradientBrush`.
+Gradient for the pyramid chart can be set by using the [PaletteBrushes]() property of the pyramid chart with the help of the `LinearGradientBrush` or `RadialGradientBrush`.
 
 {% tabs %}
 
