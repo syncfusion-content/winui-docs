@@ -9,9 +9,9 @@ documentation: ug
 
 # Tick Lines in WinUI Chart (SfCartesianChart)
 
-Tick lines are the small lines which is drawn on the axis line representing the axis labels. Tick lines will be drawn outside of the axis by default. 
+Tick lines are the small lines which are drawn on the axis line representing the axis labels. Tick lines will be drawn outside of the axis by default. 
 
-And also minor tick lines can be added to the axis by defining the [MinorTicksPerInterval]() property. This property will add the minor tick lines to every interval based on value.
+The minor tick lines can be added to the axis by defining the [MinorTicksPerInterval]() property. This property will add the minor tick lines to every interval based on value.
 
 N> For category axis, minor tick lines are not applicable. Since it is rendered based on index positions.
 
@@ -60,7 +60,9 @@ Both major and minor tick lines height can be customized by using the [TickLineS
 <chart:SfCartesianChart>
 . . .
 <chart:SfCartesianChart.XAxes>
-    <chart:NumericalAxis MinorTickLineSize="10" MinorTicksPerInterval="4" TickLineSize="15"/>
+    <chart:NumericalAxis MinorTickLineSize="10" 
+						 MinorTicksPerInterval="4" 
+						 TickLineSize="15"/>
 </chart:SfCartesianChart.XAxes>
 
 <chart:SfCartesianChart.YAxes>
@@ -109,7 +111,9 @@ Both major and minor tick lines can be customized by using the [MajorTickLineSty
 </chart:SfCartesianChart.Resources>
 
 <chart:SfCartesianChart.XAxes>
-    <chart:NumericalAxis MinorTicksPerInterval="4" MinorTickLineStyle="{StaticResource lineStyle}"  MajorTickLineStyle="{StaticResource lineStyle}" />
+    <chart:NumericalAxis MinorTicksPerInterval="4" 
+						 MinorTickLineStyle="{StaticResource lineStyle}"  
+						 MajorTickLineStyle="{StaticResource lineStyle}" />
 </chart:SfCartesianChart.XAxes>
 
 <chart:SfCartesianChart.YAxes>

@@ -29,9 +29,9 @@ The [AutoScrollingDelta](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
         <chart:NumericalAxis />
     </chart:SfCartesianChart.YAxes>
 
-    <chart:SfCartesianChart.Behaviors>
-        <chart:ChartZoomPanBehavior />
-    </chart:SfCartesianChart.Behaviors>
+    <chart:SfCartesianChart.ZoomPanBehavior>
+        <chart:ChartZoomPanBehavior/>
+    </chart:SfCartesianChart.ZoomPanBehavior>
 . . .
 </chart:SfCartesianChart>
 
@@ -49,7 +49,7 @@ chart.XAxes.Add(primaryAxis);
 
 chart.YAxes.Add(new NumericalAxis());
 ChartZoomPanBehavior zoomPanBehavior = new ChartZoomPanBehavior();
-chart.Behaviors.Add(zoomPanBehavior);
+chart.ZoomPanBehavior = zoomPanBehavior;
 . . .
 this.Content = chart;
 
@@ -70,16 +70,17 @@ The [AutoScrollingMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 <chart:SfCartesianChart x:Name="chart">
 . . .
     <chart:SfCartesianChart.XAxes>
-        <chart:NumericalAxis AutoScrollingDelta="3" AutoScrollingMode="Start"/>
+        <chart:NumericalAxis AutoScrollingDelta="3" 
+							 AutoScrollingMode="Start"/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
     </chart:SfCartesianChart.YAxes>
 
-    <chart:SfCartesianChart.Behaviors>
-        <chart:ChartZoomPanBehavior />
-    </chart:SfCartesianChart.Behaviors>
+    <chart:SfCartesianChart.ZoomPanBehavior>
+        <chart:ChartZoomPanBehavior/>
+    </chart:SfCartesianChart.ZoomPanBehavior>
 . . .
 </chart:SfCartesianChart>
 
@@ -98,7 +99,7 @@ chart.XAxes.Add(primaryAxis);
 
 chart.YAxes.Add(new NumericalAxis());
 ChartZoomPanBehavior zoomPanBehavior = new ChartZoomPanBehavior();
-chart.Behaviors.Add(zoomPanBehavior);
+chart.ZoomPanBehavior = zoomPanBehavior;
 . . .
 this.Content = chart;
 
@@ -119,16 +120,18 @@ In additional, the [AutoScrollingDeltaType](https://help.syncfusion.com/cr/winui
 <chart:SfCartesianChart x:Name="chart">
 . . .
     <chart:SfCartesianChart.XAxes>
-        <chart:DateTimeAxis AutoScrollingDelta = "4" LabelFormat="MMM-yy" AutoScrollingDeltaType = "Months"/>
+        <chart:DateTimeAxis AutoScrollingDelta = "4" 
+							LabelFormat="MMM-yy" 
+							AutoScrollingDeltaType = "Months"/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
     </chart:SfCartesianChart.YAxes>
 
-    <chart:SfCartesianChart.Behaviors>
-        <chart:ChartZoomPanBehavior />
-    </chart:SfCartesianChart.Behaviors>
+    <chart:SfCartesianChart.ZoomPanBehavior>
+        <chart:ChartZoomPanBehavior/>
+    </chart:SfCartesianChart.ZoomPanBehavior>
 . . .
 </chart:SfCartesianChart>
 
@@ -148,7 +151,7 @@ chart.XAxes.Add(primaryAxis);
 
 chart.YAxes.Add(new NumericalAxis());
 ChartZoomPanBehavior zoomPanBehavior = new ChartZoomPanBehavior();
-chart.Behaviors.Add(zoomPanBehavior);
+chart.ZoomPanBehavior = zoomPanBehavior;
 . . .
 this.Content = chart;
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WinUI Chart (SfCartesianChart)
 
-The appearance of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) can be customized by using the predefined palettes, custom palettes and gradient, which allows to enrich the application.
+The appearance of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) can be customized by using the predefined brushes, custom brushes and gradient, which allows to enrich the application.
 
 ## Applying PaletteBrushes for Chart
 
@@ -153,15 +153,37 @@ SfCartesianChart chart = new SfCartesianChart();
 ...
 List<Brush> CustomBrushes = new List<Brush>();
 LinearGradientBrush gradientColor1 = new LinearGradientBrush();
-GradientStop stop1 = new GradientStop() { Offset = 1, Color = Color.FromRgb(255, 231, 199) };
-GradientStop stop2 = new GradientStop() { Offset = 0, Color = Color.FromRgb(252, 182, 159) };
+GradientStop stop1 = new GradientStop() 
+{
+    Offset = 1, 
+    Color = Color.FromArgb(255, 255, 231, 199) 
+};
+
+GradientStop stop2 = new GradientStop() 
+{
+    Offset = 0, 
+    Color = Color.FromArgb(255, 252, 182, 159)
+};
+
 gradientColor1.GradientStops.Add(stop1);
 gradientColor1.GradientStops.Add(stop2);
+
 LinearGradientBrush gradientColor2 = new LinearGradientBrush();
-stop1 = new GradientStop() { Offset = 1, Color = Color.FromRgb(250, 221, 125) };
-stop2 = new GradientStop() { Offset = 0, Color = Color.FromRgb(252, 204, 45) };
+stop1 = new GradientStop() 
+{
+    Offset = 1, 
+    Color = Color.FromArgb(255, 250, 221, 125) 
+};
+
+stop2 = new GradientStop() 
+{
+    Offset = 0, 
+    Color = Color.FromArgb(255, 252, 204, 45) 
+};
+
 gradientColor2.GradientStops.Add(stop1);
 gradientColor2.GradientStops.Add(stop2);
+
 ...
 CustomBrushes.Add(gradientColor1);
 CustomBrushes.Add(gradientColor2);

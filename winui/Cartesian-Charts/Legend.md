@@ -66,9 +66,9 @@ Cartesian chart provides support to add any `UIElement` as a title for legend. [
         <chart:ChartLegend>
             <chart:ChartLegend.Header>
                 <TextBox Text="Foods" 
-                HorizontalAlignment="Center"
-                FontWeight="Bold"
-                Foreground="Blue"/>
+						 HorizontalAlignment="Center"
+                         FontWeight="Bold"
+                         Foreground="Blue"/>
             </chart:ChartLegend.Header>
         </chart:ChartLegend>
     </chart:SfCartesianChart.Legend>
@@ -159,7 +159,8 @@ The appearance of the legend icon can be customized using the below properties.
 {% highlight xaml %}
 
 <chart:SfCartesianChart.Legend>
-    <chart:ChartLegend IconWidth="15" IconHeight="15" 
+    <chart:ChartLegend IconWidth="15" 
+					   IconHeight="15" 
                        IconVisibility="Visible">
     </chart:ChartLegend>
 </chart:SfCartesianChart.Legend>
@@ -192,8 +193,11 @@ Cartesian chart provides support to add custom icon for the legend using [Legend
 <chart:SfCartesianChart >
      <chart:SfCartesianChart.Resources>
         <DataTemplate x:Key="iconTemplate">
-            <Ellipse Height="10" Width="10" Fill="White" 
-                     Stroke="#4a4a4a" StrokeThickness="2"/>
+            <Ellipse Height="10" 
+					 Width="10" 
+					 Fill="White" 
+                     Stroke="#4a4a4a" 
+					 StrokeThickness="2"/>
         </DataTemplate>
     </chart:SfCartesianChart.Resources>
     . . .   
@@ -202,7 +206,11 @@ Cartesian chart provides support to add custom icon for the legend using [Legend
     </chart:SfCartesianChart.Legend>
     . . .
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries  ItemsSource="{Binding Data}" Label="Gold" LegendIconTemplate="{StaticResource iconTemplate}" XBindingPath="Year" YBindingPath="India"/>
+        <chart:ColumnSeries  ItemsSource="{Binding Data}" 
+							 Label="Gold" 
+							 LegendIconTemplate="{StaticResource iconTemplate}" 
+							 XBindingPath="Year" 
+							 YBindingPath="India"/>
     </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
@@ -246,11 +254,17 @@ The [VisibilityOnLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
     </chart:SfCartesianChart.Legend>
 
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries  ItemsSource="{Binding Data}" Label="Gold" VisibilityOnLegend="Visible"
-        XBindingPath="Year" YBindingPath="India"/>
+        <chart:ColumnSeries ItemsSource="{Binding Data}" 
+							Label="Gold" 
+							VisibilityOnLegend="Visible"
+							XBindingPath="Year" 
+							YBindingPath="India"/>
 
-        <chart:SplineSeries  ItemsSource="{Binding Data}" Label="Silver" VisibilityOnLegend="Collapsed"
-        XBindingPath="Year" YBindingPath="America"/>
+        <chart:SplineSeries ItemsSource="{Binding Data}" 
+							Label="Silver" 
+							VisibilityOnLegend="Collapsed" 
+							XBindingPath="Year" 
+							YBindingPath="America"/>
     </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
@@ -382,7 +396,7 @@ By clicking on disabled legend item, we can view the associated `series`,
 
 Legends can be docked left, right, and top or bottom around the chart area using [Placement]() property. By default, the chart legend is docked at the top of the chart as mentioned earlier.
 
-To display the legend at the left, set the [Placement]() as [Left]() as in below code snippet.
+To display the legend at the bottom, set the [Placement]() as [Bottom]() as in below code snippet.
 
 {% tabs %}
 
@@ -415,15 +429,17 @@ The legend background appearance can be customized by using the following proper
 `BorderBrush` - used to change the stroke color of the legend.
 `Background` - used to change the background color of the legend.
 `Opacity` - used to control the transparency of the legend icon shape.
-`CornerRadius` - used to change the corner radius of the legend.
+[CornerRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CornerRadius) - used to change the corner radius of the legend.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart.Legend>
-    <chart:ChartLegend Background="LightGray" BorderBrush="Black" 
-                       BorderThickness="1" CornerRadius="5" 
+    <chart:ChartLegend Background="LightGray" 
+					   BorderBrush="Black" 
+                       BorderThickness="1" 
+					   CornerRadius="5" 
                        Opacity="0.9" >
     </chart:ChartLegend>
 </chart:SfCartesianChart.Legend>
@@ -457,11 +473,16 @@ Customize each legend item by using the `ItemTemplate` property in [ChartLegend]
     <chart:SfCartesianChart.Resources>
         <DataTemplate x:Key="labelTemplate">
             <StackPanel Margin="10" Orientation="Vertical">
-                <Ellipse Height="15" Width="15" Fill="{Binding Interior}" 
-                 Stroke="#4a4a4a" StrokeThickness="2"/>
-                <TextBlock HorizontalAlignment="Center" FontSize="12"
+                <Ellipse Height="15" 
+						 Width="15" 
+						 Fill="{Binding Interior}" 
+						 Stroke="#4a4a4a" 
+						 StrokeThickness="2"/>
+                <TextBlock HorizontalAlignment="Center" 
+						   FontSize="12"
                            Foreground="Black" 
-                           FontWeight="SemiBold" Text="{Binding Label}"/>
+                           FontWeight="SemiBold" 
+						   Text="{Binding Label}"/>
             </StackPanel>
         </DataTemplate>
     </chart:SfCartesianChart.Resources>

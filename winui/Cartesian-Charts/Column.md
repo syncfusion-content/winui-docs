@@ -17,16 +17,18 @@ documentation: ug
 
 <chart:SfCartesianChart>
 
-    <chart:SfCartesianChart.XAxes
+    <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis />
     </chart:SfCartesianChart.XAxes
 
-    <chart:SfCartesianChart.YAxes
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.YAxes   
+    </chart:SfCartesianChart.YAxes>   
 
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue"/>
+        <chart:ColumnSeries ItemsSource="{Binding Data}" 
+							XBindingPath="XValue" 
+							YBindingPath="YValue"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
@@ -67,16 +69,19 @@ The [SegmentSpacing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 <chart:SfCartesianChart>
 
-    <chart:SfCartesianChart.XAxes
+    <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis />
-    </chart:SfCartesianChart.XAxes
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.YAxes
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.YAxes  
+    </chart:SfCartesianChart.YAxes> 
 
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" SegmentSpacing="0.5"/>
+        <chart:ColumnSeries ItemsSource="{Binding Data}" 
+							XBindingPath="XValue" 
+							YBindingPath="YValue" 
+							SegmentSpacing="0.5"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
