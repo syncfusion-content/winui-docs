@@ -15,26 +15,23 @@ To render a area series in polar chart, create an instance of the [PolarAreaSeri
 
 {% highlight xaml %}
 
-<chart:SfPolarChart Palette="BlueChrome">
+<chart:SfPolarChart>
 ...
     <chart:SfPolarChart.Series>
-        <chart:SfPolarChart.Series>
-            <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                        XBindingPath="Direction"
-                        YBindingPath="Tree" Label="Tree">
-            </chart:PolarAreaSeries>
+        <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
+                    XBindingPath="Direction"
+                    YBindingPath="Tree" Label="Tree">
+        </chart:PolarAreaSeries>
 
-            <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                        XBindingPath="Direction"
-                        YBindingPath="Weed" Label="Weed">
-            </chart:PolarAreaSeries>
+        <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
+                    XBindingPath="Direction"
+                    YBindingPath="Weed" Label="Weed">
+        </chart:PolarAreaSeries>
 
-            <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                        XBindingPath="Direction"
-                        YBindingPath="Flower" Label="Flower">
-            </chart:PolarAreaSeries>
-        </chart:SfPolarChart.Series>
-
+        <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
+                    XBindingPath="Direction"
+                    YBindingPath="Flower" Label="Flower">
+        </chart:PolarAreaSeries>
     </chart:SfPolarChart.Series>
 ...
 </chart:SfPolarChart>
@@ -44,7 +41,6 @@ To render a area series in polar chart, create an instance of the [PolarAreaSeri
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-chart.Palette = ChartColorPalette.BlueChrome;
 ...
 PolarAreaSeries series1 = new PolarAreaSeries();
 series1.XBindingPath = "Direction";

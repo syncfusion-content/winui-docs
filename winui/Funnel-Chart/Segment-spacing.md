@@ -16,7 +16,6 @@ The gap between each segment in the funnel chart can be set using the [GapRatio]
 {% highlight xaml %}
 
 <chart:SfFunnelChart x:Name="chart"
-        Palette="BlueChrome"
         ItemsSource="{Binding Data}" 
         XBindingPath="Category" 
         YBindingPath="Value" 
@@ -28,7 +27,6 @@ The gap between each segment in the funnel chart can be set using the [GapRatio]
 {% highlight C# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-chart.Palette = ChartColorPalette.BlueChrome;
 chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";

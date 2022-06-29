@@ -28,8 +28,9 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 . . .
 <chart:SfCartesianChart.Series>
     <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                     XBindingPath="Category"
-                     YBindingPath="Value" ShowDataLabels="True">
+                        XBindingPath="Category"
+                        YBindingPath="Value" 
+					    ShowDataLabels="True">
     </chart:ColumnSeries>
 </chart:SfCartesianChart.Series>
 
@@ -114,10 +115,15 @@ The following properties are used to customize the data label.
 . . .
 <chart:ColumnSeries ShowDataLabels="True">
 <chart:ColumnSeries.DataLabelSettings>
-    <chart:CartesianDataLabelSettings Position="Outer" Foreground="White" 
-                                      FontSize="11" FontFamily="Calibri" 
-                                      BorderBrush="Black" BorderThickness="1" 
-                                      Margin="1" FontStyle="Italic" Background="#1E88E5" />
+    <chart:CartesianDataLabelSettings Position="Outer" 
+									  Foreground="White" 
+                                      FontSize="11" 
+									  FontFamily="Calibri" 
+                                      BorderBrush="Black" 
+									  BorderThickness="1" 
+                                      Margin="1"
+									  FontStyle="Italic" 
+									  Background="#1E88E5" />
 </chart:ColumnSeries.DataLabelSettings>
 
 </chart:ColumnSeries>
@@ -185,7 +191,8 @@ The appearance of the data label can be customized using the [ContentTemplate](h
 . . . 
 <chart:ColumnSeries ShowDataLabels="True">
     <chart:ColumnSeries.DataLabelSettings>
-        <chart:CartesianDataLabelSettings Position="Outer" ContentTemplate="{StaticResource dataLabelTemplate}"/>
+        <chart:CartesianDataLabelSettings Position="Outer" 
+										  ContentTemplate="{StaticResource dataLabelTemplate}"/>
     </chart:ColumnSeries.DataLabelSettings>
 . . .
 </chart:ColumnSeries>
@@ -224,7 +231,9 @@ The [Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 . . .
 <chart:ColumnSeries ShowDataLabels="True">
     <chart:ColumnSeries.DataLabelSettings>
-        <chart:CartesianDataLabelSettings Format="#.000" />
+        <chart:CartesianDataLabelSettings Background="Transparent" 
+										  Position="Outer" 
+										  Format="#.000" />
     </chart:ColumnSeries.DataLabelSettings>
 
 </chart:ColumnSeries>
@@ -239,7 +248,9 @@ ColumnSeries series = new ColumnSeries();
 . . .
 series.DataLabelSettings = new CartesianDataLabelSettings()
 {
-    Format = "#.000"
+    Format = "#.000",
+	Position = DataLabelPosition.Outer
+	Background = new SolidColorBrush(Colors.Transparent),
 };
 
 chart.Series.Add(series);
@@ -262,7 +273,8 @@ The [Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Ch
 . . .
 <chart:ColumnSeries ShowDataLabels="True">
     <chart:ColumnSeries.DataLabelSettings>
-        <chart:CartesianDataLabelSettings Rotation="45" Position="Outer" />
+        <chart:CartesianDataLabelSettings Rotation="45"
+										  Position="Outer" />
     </chart:ColumnSeries.DataLabelSettings>
 </chart:ColumnSeries>
 </chart:SfCartesianChart>

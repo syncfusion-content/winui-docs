@@ -94,8 +94,7 @@ The title text content can be aligned horizontally to the left, center or right 
 
  <chart:SfFunnelChart x:Name="chart" 
                 HorizontalHeaderAlignment="Right"
-                ShowTooltip="True"
-                Palette="BlueChrome"
+                ShowDataLabels="True"
                 Height="388" Width="500" 
                 ItemsSource="{Binding Data}" 
                 XBindingPath="Category"
@@ -114,10 +113,6 @@ The title text content can be aligned horizontally to the left, center or right 
             <chart:SfFunnelChart.Legend>
                 <chart:ChartLegend />
             </chart:SfFunnelChart.Legend>
-
-            <chart:SfFunnelChart.DataLabelSettings>
-                <chart:FunnelDataLabelSettings Visible="True" />
-            </chart:SfFunnelChart.DataLabelSettings>
             
 </chart:SfFunnelChart>
 
@@ -136,7 +131,6 @@ public sealed partial class MainPage : Page
         chart.DataContext = viewModel;
         chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
         chart.HorizontalHeaderAlignment = HorizontalAlignment.Right;
-        chart.Palette = ChartColorPalette.BlueChrome;
         chart.XBindingPath = "Category";
         chart.YBindingPath = "Value";
         chart.Height = 388;
@@ -161,8 +155,7 @@ public sealed partial class MainPage : Page
         border.Child = textBlock;
         chart.Header = border;
         chart.Legend = new ChartLegend();
-        chart.ShowTooltip = true;
-        chart.DataLabelSettings = new FunnelDataLabelSettings() { Visible = true };
+        chart.ShowDataLabels = true;
 
         this.Content = chart;
     }

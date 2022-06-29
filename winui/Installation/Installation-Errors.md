@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation Errors of Essential Studio | WinUI |Syncfusion
-description: Learn here some information about the essential studio installation errors and steps for resolving it.
+title: Installation Errors in WinUI - Syncfusion
+description: Learn here about the common installation errors and solution to those errors in Syncfusion WinUI Components installation.
 platform: winui
 control: Essential Studio
 documentation: ug
