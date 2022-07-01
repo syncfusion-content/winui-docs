@@ -13,7 +13,7 @@ The appearance of the [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncf
 
 ## Predefined PaletteBrushes
 
-Currently, the [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) supports only one predefined [PaletteBrushes]() and it is the default brushes for the SfFunnelChart. The following screenshot shows the default appearance of the funnel chart.
+Currently, the [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) supports only one predefined [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_PaletteBrushes) and it is the default brushes for the SfFunnelChart. The following screenshot shows the default appearance of the funnel chart.
 
 {% tabs %}
 
@@ -45,7 +45,7 @@ this.Content = chart;
 
 ## Custom PaletteBrushes
 
-The [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) provides support to define own brushes for the chart with preferred order by using the [PaletteBrushes]() property as shown in the following code example.
+The [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) provides support to define own brushes for the chart with preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_PaletteBrushes) property as shown in the following code example.
 
 {% tabs %}
 
@@ -101,7 +101,7 @@ this.Content = chart;
 
 ## Applying Gradient
 
-The gradient for the funnel chart can be set by using the [PaletteBrushes]() property of the funnel chart with the help of the `LinearGradientBrush` or `RadialGradientBrush`.
+The gradient for the funnel chart can be set by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_PaletteBrushes) property of the funnel chart with the help of the `LinearGradientBrush` or `RadialGradientBrush`.
 
 {% tabs %}
 

@@ -13,7 +13,7 @@ The appearance of the [SfCircularChart](https://help.syncfusion.com/cr/winui/Syn
 
 ## Predefined PaletteBrushes
 
-Currently, the [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) supports only one predefined [PaletteBrushes]() and it is the default brushes for any circular series. The following screenshot shows the default appearance of the pie series.
+Currently, the [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) supports only one predefined [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_PaletteBrushes) and it is the default brushes for any circular series. The following screenshot shows the default appearance of the pie series.
 
 {% tabs %}
 
@@ -46,7 +46,7 @@ chart.Series.Add(series);
 
 ## Custom PaletteBrushes
 
-The [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) provides support to define own brushes for series with preferred order by using the [PaletteBrushes]() property as shown in the following code example.
+The [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) provides support to define own brushes for series with preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_PaletteBrushes) property as shown in the following code example.
 
 {% tabs %}
 
@@ -99,7 +99,7 @@ chart.Series.Add(series);
 
 ## Applying Gradient
 
-The gradient for the circular chart can be set by using the [PaletteBrushes]() property of the series with the help of the `LinearGradientBrush` or `RadialGradientBrush`.
+The gradient for the circular chart can be set by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_PaletteBrushes) property of the series with the help of the `LinearGradientBrush` or `RadialGradientBrush`.
 
 {% tabs %}
 

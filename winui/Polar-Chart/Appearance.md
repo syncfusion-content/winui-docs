@@ -13,7 +13,7 @@ The appearance of the [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfu
 
 ## Default PaletteBrushes
 
-Currently, the [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) supports only one predefined [PaletteBrushes]() and it is the default brushes for the SfPolarChart. The following screenshot shows the default appearance of multiple series.
+Currently, the [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) supports only one predefined [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_PaletteBrushes) and it is the default brushes for the SfPolarChart. The following screenshot shows the default appearance of multiple series.
 
 {% tabs %}
 
@@ -73,7 +73,7 @@ this.Content = chart;
 
 ## Custom PaletteBrushes
 
-The [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) provides support to define own brushes for the chart with preferred order by using the [PaletteBrushes]() property, as shown in the following code example.
+The [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) provides support to define own brushes for the chart with preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_PaletteBrushes) property, as shown in the following code example.
 
 {% tabs %}
 
@@ -122,7 +122,7 @@ this.Content = chart;
 
 ## Applying Gradient
 
-Gradient for the polar chart can be set by using the [PaletteBrushes]() property of the funnel chart with the help of the `LinearGradientBrush` or `RadialGradientBrush`.
+Gradient for the polar chart can be set by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_PaletteBrushes) property of the funnel chart with the help of the `LinearGradientBrush` or `RadialGradientBrush`.
 
 {% tabs %}
 
@@ -182,7 +182,7 @@ chart.PaletteBrushes = customBrushes;
 
 ![Gradient support in WinUI Chart](Appearance_Images/WinUI_Chart_Series_Gradient.png)
 
-Gradient color using the [Fill]( ) property of series with `LinearGradientBrush`.
+Gradient color using the [Fill](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Fill) property of series with `LinearGradientBrush`.
 
 {% tabs %}
 
