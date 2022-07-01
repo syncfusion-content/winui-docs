@@ -257,7 +257,7 @@ Set the footer rows count at <kbd>bottom</kbd> of the SfDataGrid.
 </tr>
 <tr>
 <td>
-`FrozenColumnsCount`
+{{'[FrozenColumnsCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_FrozenColumnsCountProperty)'| markdownify }}
 </td>
 <td>
 Set the frozen columns count in <kbd>left side</kbd> of the SfDataGrid. 
@@ -265,7 +265,7 @@ Set the frozen columns count in <kbd>left side</kbd> of the SfDataGrid.
 </tr>
 <tr>
 <td>
-`FrozenFooterColumnsCount`
+{{'[FrozenFooterColumnsCount ](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_FrozenFooterColumnsCountProperty)'| markdownify }}
 </td>
 <td>
 Set the frozen columns in <kbd>right side</kbd> of the SfDataGrid.

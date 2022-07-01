@@ -829,7 +829,7 @@ N> FrozenColumnsCount and FrozenFooterColumnsCount should be lesser than the num
 
 ## Freezing columns 
 
-You can freeze the columns in view at the left and right side like in excel by setting `SfDataGrid.FrozenColumnsCount` and `SfDataGrid.FrozenFooterColumnsCount` properties.
+You can freeze the columns in view at the left and right side like in excel by setting [SfDataGrid.FrozenColumnsCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_FrozenColumnsCountProperty) and [SfDataGrid.FrozenFooterColumnsCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_FrozenFooterColumnsCountProperty) properties.
  
 {% tabs %}
 {% highlight xaml %}

@@ -673,7 +673,7 @@ private void TreeGrid_ColumnDragging(object sender, TreeGridColumnDraggingEventA
 
 ## Freezing Columns
 
-You can freeze the columns in view at the left and right side like in excel by setting `SfTreeGrid.FrozenColumnsCount` and `SfTreeGrid.FrozenFooterColumnsCount` properties.
+You can freeze the columns in view at the left and right side like in excel by setting [SfTreeGrid.FrozenColumnsCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_FrozenColumnsCountProperty) and [SfTreeGrid.FrozenFooterColumnsCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_FrozenFooterColumnsCountProperty) properties.
 
 {% tabs %}
 {% highlight xaml %}
