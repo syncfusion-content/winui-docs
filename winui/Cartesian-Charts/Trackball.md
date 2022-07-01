@@ -13,7 +13,7 @@ The trackball allows you to track a data point closer to the cursor position. Th
 
 ## Define Trackball
 
-To add the trackball in the chart, create an instance [ChartTrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html) and set it to the [TrackballBehavior]() property of the chart.
+To add the trackball in the chart, create an instance [ChartTrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html) and set it to the [TrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_TrackballBehavior) property of the chart.
 
 {% tabs %}
 
@@ -130,7 +130,7 @@ By using the [LineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart Height="388"  Width="500" Palette="BlueChrome">
+<chart:SfCartesianChart Height="388"  Width="500">
 . . .
     <chart:SfCartesianChart.Resources>
         <Style TargetType="Line" x:Key="lineStyle">
@@ -173,7 +173,7 @@ By default, the trackball symbol is displayed as ellipse. To change the default 
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart Height="388"  Width="500" Palette="BlueChrome">
+<chart:SfCartesianChart Height="388"  Width="500">
 . . 
     <chart:SfCartesianChart.Resources>
         <Style TargetType="chart:ChartTrackballControl" x:Key="trackballStyle">
