@@ -261,7 +261,7 @@ Tooltip can be positioned horizontally left, right, or center to the cursor posi
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart Height="388"  Width="500" Palette="BlueChrome">
+<chart:SfCartesianChart Height="388"  Width="500">
 . . .
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior HorizontalAlignment="Left"/>
@@ -325,7 +325,7 @@ Tooltip can be positioned vertically top, bottom, or center to the cursor positi
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart Height="388"  Width="500" Palette="BlueChrome">
+<chart:SfCartesianChart Height="388"  Width="500">
 . . .
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior VerticalAlignment="Bottom"/>
@@ -389,7 +389,7 @@ The tooltip can be positioned at a particular distance from the cursor by using 
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart Height="388"  Width="500" Palette="BlueChrome">
+<chart:SfCartesianChart Height="388"  Width="500">
 . . .
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior HorizontalOffset="40" VerticalOffset="40"/>
@@ -456,7 +456,7 @@ N> By default, the tooltip will be displayed for 1000 milliseconds.
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart Height="388"  Width="500" Palette="BlueChrome">
+<chart:SfCartesianChart Height="388"  Width="500">
 . . .
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior ShowDuration="5000"/>
@@ -518,7 +518,7 @@ Animation for tooltip can be set by using the [EnableAnimation](https://help.syn
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart Height="388"  Width="500" Palette="BlueChrome">
+<chart:SfCartesianChart Height="388"  Width="500">
 . . .
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior EnableAnimation="True"/>
@@ -580,7 +580,7 @@ The [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart Height="388"  Width="500" Palette="BlueChrome">
+<chart:SfCartesianChart Height="388"  Width="500">
     <chart:SfCartesianChart.Resources>
         <DataTemplate x:Key="tooltipTemplate1">
             <StackPanel Orientation="Horizontal">
