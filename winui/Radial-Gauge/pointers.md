@@ -11,8 +11,8 @@ documentation: ug
 
  Pointer is used to indicate values on an axis. The radial gauge control has three types of pointers: 
 
-[`Shape pointer`]()
-[`Content pointer`]()
+[`Shape pointer`](https://help.syncfusion.com/winui/radial-gauge/shape-pointer)
+[`Content pointer`](https://help.syncfusion.com/winui/radial-gauge/content-pointer)
 [`Needle pointer`](https://help.syncfusion.com/winui/radial-gauge/needle-pointer)
 [`Range pointer`](https://help.syncfusion.com/winui/radial-gauge/range-pointer)
 

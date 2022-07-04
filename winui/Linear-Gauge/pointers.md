@@ -11,7 +11,7 @@ documentation: ug
 
  The pointer is used to indicate values on an axis. The Linear Gauge control has three types of pointers:
 
-[`bar pointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.BarPointer.html)
+[`bar pointer`](https://help.syncfusion.com/winui/linear-gauge/bar-pointer)
 [`Shape Pointer`](https://help.syncfusion.com/winui/linear-gauge/shape-pointer)
 [`Content pointer`](https://help.syncfusion.com/winui/linear-gauge/content-pointer)
 
@@ -187,5 +187,5 @@ private void ShapePointer_ValueChanged(object sender, ValueChangedEventArgs e)
 
 {% endtabs %}
 
-N> `ValueChanged` event is exist for all pointers, other events available only for `LinearShapePointer`.
+N> [`ValueChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_ValueChanged) event is exist for all pointers, other events available only for [`LinearShapePointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearShapePointer.html).
 
