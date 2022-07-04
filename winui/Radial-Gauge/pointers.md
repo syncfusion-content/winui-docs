@@ -9,7 +9,7 @@ documentation: ug
 
 # Pointers in WinUI Radial Gauge
 
- Pointer is used to indicate values on an axis. The radial gauge control has three types of pointers: 
+ Pointer is used to indicate values on an axis. The radial gauge control has four types of pointers: 
 
 [`Shape pointer`](https://help.syncfusion.com/winui/radial-gauge/shape-pointer)
 [`Content pointer`](https://help.syncfusion.com/winui/radial-gauge/content-pointer)
