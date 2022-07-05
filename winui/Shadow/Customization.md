@@ -9,7 +9,7 @@ documentation: ug
 
 # Customization in WinUI Shadow
 
-This section explains the customization features available in the [WinUI Shadow control](https://www.syncfusion.com/winui-controls/shadow).
+This section explains the customization features available in the WinUI Shadow control.
 
 ## Applying Color for shadow
 
