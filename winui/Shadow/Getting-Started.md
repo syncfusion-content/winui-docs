@@ -9,14 +9,14 @@ documentation: ug
 
 # Getting Started with WinUI Shadow
 
-This section explains the steps required to add the WinUI Shadow control and covers only the basic features needed to get started with Syncfusion `SfShadow` control.
+This section explains the steps required to add the [WinUI Shadow control](https://www.syncfusion.com/winui-controls/shadow) and covers only the basic features needed to get started with Syncfusion [SfShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html) control.
 
 ## Creating an application with WinUI Shadow control
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Add reference to [Syncfusion.Core.WinUI](https://www.nuget.org/packages/Syncfusion.Core.WinUI) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Core` in XAML or C# code.
-4. Initialize the `SfShadow` control.
+4. Initialize the [SfShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html) control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -58,7 +58,7 @@ shadow.Content = button;
 
 ## Applying shadow effect for image
 
-You can apply the shadow effects for any types of [Image](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.image) with the help of `SfShadow` control.
+You can apply the shadow effects for any types of [Image](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.image) with the help of [SfShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html) control.
 
 {% tabs %}
 {% highlight XAML %}
@@ -87,7 +87,7 @@ shadow.Content = image;
 
 ## Applying shadow effect for shape 
 
-You can apply the shadow effects for any types of [Shape](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.shape) and [Path](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.path) with the help of `SfShadow` control.
+You can apply the shadow effects for any types of [Shape](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.shape) and [Path](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.path) with the help of [SfShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html) control.
 
 {% tabs %}
 {% highlight XAML %}
