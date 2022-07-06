@@ -13,13 +13,13 @@ This section explains the customization features available in the WinUI Shadow c
 
 ## Applying Color for shadow
 
-The shadow color can be customized using the `Color` property. The default value of the `Color` property is `Black` color with a 25% alpha value.
+The shadow color can be customized using the [Color](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html#Syncfusion_UI_Xaml_Core_SfShadow_Color) property. The default value of the [Color](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html#Syncfusion_UI_Xaml_Core_SfShadow_Color) property is `Black` color with a 25% alpha value.
 
 {% tabs %}
 {% highlight XAML %}
 
 <syncfusion:SfShadow Color="Red">
-    <Button Height="50" Width="100" Content="Button"/>
+   <Button Height="50" Width="100" Content="Button"/>
 </syncfusion:SfShadow>
 
 {% endhighlight %}
@@ -41,13 +41,13 @@ shadow.Content = button;
 
 ## Applying BlurRadius for shadow
 
-The blur level of the shadow effect can be customized using the `BlurRadius` property. The default value of `BlurRadius` property is 8.
+The blur level of the shadow effect can be customized using the [BlurRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html#Syncfusion_UI_Xaml_Core_SfShadow_BlurRadius) property. The default value of [BlurRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html#Syncfusion_UI_Xaml_Core_SfShadow_BlurRadius) property is 8.
 
 {% tabs %}
 {% highlight XAML %}
 
 <syncfusion:SfShadow BlurRadius="10" OffsetX="10" OffsetY="10">
-    <Button Height="50" Width="100" Content="Button"/>
+   <Button Height="50" Width="100" Content="Button"/>
 </syncfusion:SfShadow>
 
 {% endhighlight %}
@@ -71,13 +71,13 @@ shadow.Content = button;
 
 ## Applying CornerRadius for shadow
 
-The corner radius of the shadow can be customized using the `ShadowCornerRadius` property. The default value of `ShadowCornerRadius` property is 0.
+The corner radius of the shadow can be customized using the [ShadowCornerRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html#Syncfusion_UI_Xaml_Core_SfShadow_ShadowCornerRadius) property. The default value of [ShadowCornerRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html#Syncfusion_UI_Xaml_Core_SfShadow_ShadowCornerRadius) property is 0.
 
 {% tabs %}
 {% highlight XAML %}
 
 <syncfusion:SfShadow ShadowCornerRadius="10" OffsetX="10" OffsetY="10">
-    <Button Height="50" Width="100" Content="Button" CornerRadius="10"/>
+   <Button Height="50" Width="100" Content="Button" CornerRadius="10"/>
 </syncfusion:SfShadow>
 
 {% endhighlight %}
@@ -102,13 +102,13 @@ shadow.Content = button;
 
 ## Positioning the shadow
 
-The position of the shadow can be customized using the `OffsetX` and `OffsetY` properties. The default value of the `OffsetX` and `OffsetY` properties is 4.
+The position of the shadow can be customized using the [OffsetX](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html#Syncfusion_UI_Xaml_Core_SfShadow_OffsetX) and [OffsetY](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html#Syncfusion_UI_Xaml_Core_SfShadow_OffsetY) properties. The default value of the [OffsetX](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html#Syncfusion_UI_Xaml_Core_SfShadow_OffsetX) and [OffsetY](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html#Syncfusion_UI_Xaml_Core_SfShadow_OffsetY) properties is 4.
 
 {% tabs %}
 {% highlight XAML %}
 
 <syncfusion:SfShadow OffsetX="10" OffsetY="10">
-    <Button Height="50" Width="100" Content="Button"/>
+   <Button Height="50" Width="100" Content="Button"/>
 </syncfusion:SfShadow>
 
 {% endhighlight %}
