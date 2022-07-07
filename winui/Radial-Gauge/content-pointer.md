@@ -11,7 +11,7 @@ documentation: ug
 
 The [`ContentPointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ContentPointer.html) in [`SfRadialGauge`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfRadialGauge.html) allows you to use any content as a pointer using the [`Content`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ContentPointer.html#Syncfusion_UI_Xaml_Gauges_ContentPointer_Content) property of it. 
 
-**Add custom text as content pointer**
+## Add custom text as content pointer
 
 The following code sample demonstrate how to add a custom text as a content pointer.
 
@@ -74,7 +74,7 @@ this.Content = sfRadialGauge;
 
 ![WinUI Radial Gauge content pointer](images/content-pointer/default-content-pointer.png)
 
-**Add image to content pointer**
+## Add image to content pointer
 
 The following code demonstrate how to use a `Image` as a content pointer.
 
