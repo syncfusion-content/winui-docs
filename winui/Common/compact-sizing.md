@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Right to left in WinUI Controls | Syncfusion
-description: Learn here about Right to left FlowDirection support in Syncfusion WinUI Project Reunion controls and more details. 
+title: Compact Sizing in WinUI Controls | Syncfusion
+description: Learn here about Compact Sizing support in Syncfusion WinUI Project Reunion controls and more details. 
 platform: WinUI
-control: RightToLeft
+control: Compact Sizing
 documentation: ug
 ---
 
