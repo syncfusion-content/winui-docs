@@ -196,6 +196,14 @@ The Syncfusion WinUI Controls are the suite, ever needed to create state of art 
 		</td>
 	</tr>
 	<tr>
+	    <td rowspan="1" valign="top">
+		MISCELLANEOUS<br/>
+		</td>
+		<td>
+			<a href="https://help.syncfusion.com/winui/shadow/getting-started">Shadow</a><br/>
+		</td>
+	</tr>	
+	<tr>
 		<td rowspan="4" valign="top">
 			FILE FORMATS<br/>
 		</td>
