@@ -10,8 +10,8 @@ documentation: ug
 # Compact Sizing in WinUI Controls
 
 There are two types of spacing support for controls in WinUI.
-1. [Standard](https://docs.microsoft.com/en-us/windows/apps/design/style/spacing#fluent-standard-sizing) - to accommodate both touch and pointer input
-2. [Compact](https://docs.microsoft.com/en-us/windows/apps/design/style/spacing#fluent-compact-sizing) - designed primarily to accommodate pointer input
+1. [Standard](https://docs.microsoft.com/en-us/windows/apps/design/style/spacing#fluent-standard-sizing) - to accommodate both touch and pointer input.
+2. [Compact](https://docs.microsoft.com/en-us/windows/apps/design/style/spacing#fluent-compact-sizing) - designed primarily to accommodate pointer input.
 
 Compact sizing enables dense, information-rich groups of controls and can help with the following:
 * Browsing large amounts of content.
@@ -20,7 +20,7 @@ Compact sizing enables dense, information-rich groups of controls and can help w
 
 ## Examples of compact sizing
 
-Compact sizing is implemented through a special resource dictionary that can be specified in your application at either the page level or at a specific layout. The resource dictionary is available in the WinUI Nuget package.
+Compact sizing is implemented through a unique resource dictionary that can be specified in your application at either the page level or a specific layout. The resource dictionary is available in the WinUI Nuget package.
 
 The following examples show how the Compact style can be applied for the window and an individual Grid control.
 
