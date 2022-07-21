@@ -11,7 +11,8 @@ documentation: ug
 
 The Scheduler supports to reschedule the appointment by performing the drag and drop operation.
 
-N> In Drag and Drop functionality is break due to the latest Microsoft.WindowsAppSDK version 1.1.
+N> The Syncfusion WinUI controls have been upgraded to Windows App SDK 1.1 (https://help.syncfusion.com/winui/release-notes/v20.2.0.36?type=all#common 
+) and there is a framework break with Drag and Drop functionality and the following framework issue in this report https://github.com/microsoft/microsoft-ui-xaml/issues/7231 , so appointment drag and drop will not work until the framework resolves this issue.
 
 ## Disable drag and drop
 
