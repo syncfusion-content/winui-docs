@@ -35,9 +35,7 @@ This section explains the steps required to add the Rating control and covers on
      <syncfusion:SfRating 
           Value="5"
           Precision="Standard"
-          ItemSize="80"
-          Items="{Binding list}"
-          ItemsSpacing="5">
+          Items="{Binding list}">
      </syncfusion:SfRating>
     </Grid>
 </Page>
@@ -53,38 +51,107 @@ data.Add(new SfRatingItem());
 // Creating an instance of the Rating control.
 SfRating rating = new SfRating();
 
+//Setting the property value to the Rating control instance.
 rating.Value = 5;
 rating.Precision = Precision.Standard;
-rating.ItemSize = 80;
 rating.Items = data; 
-rating.ItemsSpacing = 5;
 
 {% endhighlight %}
 {% endtabs %}
 
-## Rating Control using the itemscount property
+## Rating control using TemplateSelector Property
 
 {% tabs %}
 {% highlight XAML %}
 
+<ResourceDictionary>
+  <DataTemplate x:Key="selectedTemplate">
+    <Viewbox>
+      <StackPanel Orientation="Vertical">
+        <Image Source="{Binding SelectedTemplate}"/>
+      </StackPanel>
+    </Viewbox>
+  </DataTemplate>
+  <DataTemplate x:Key="unSelectedTemplate">
+    <Viewbox>
+      <StackPanel Orientation="Vertical">
+        <Image Source="{Binding UnSelectedTemplate}"/>
+      </StackPanel>
+    </Viewbox>
+   </DataTemplate>
+   <local:ContentTemplate x:Key="template"
+         SelectedTemplate="{StaticResource selectedTemplate}"
+         ChildTemplate="{StaticResource unSelectedTemplate}"/> 
+</ResourceDictionary>
+
 <syncfusion:SfRating
-          Value="5"
-          Precision="Half"
-          ItemSize="80"
-          ItemsCount="5"
-          ItemsSpacing="5">
+         Value="5"
+         Precision="Standard"
+         TemplateSelector="{StaticResource template}"
+         Items={Binding list}>
 </syncfusion:SfRating>
 
 {% endhighlight %}
 {% highlight C# %}
 
-SfRating rating = new SfRating();
+public class RatingViewModel
+{
+   public RatingViewModel()
+   {
+      list = new ObservableCollection<object>();
+      list.Add(new RatingModel() {  UnSelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/AngryUnSelected.png")), SelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/AngrySelected.png")) });
+      list.Add(new RatingModel() { UnSelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/UnhappyUnSelected.png")), SelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/UnhappySelected.png")) });
+      list.Add(new RatingModel() { UnSelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/NeutralUnSelected.png")), SelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/NeutralSelected.png")) });
+      list.Add(new RatingModel() {  UnSelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/HappyUnSelected.png")), SelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/HappySelected.png")) });
+      list.Add(new RatingModel() { UnSelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/ExcitedUnSelected.png")), SelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/ExcitedSelected.png")) });
+   }
+   public ObservableCollection<object> list
+   {
+      get; set;
+   }
+}
+public class RatingModel : INotifyPropertyChanged
+{
+    private BitmapImage unSelectedTemplate;
+    public BitmapImage UnSelectedTemplate
+    {
+      get { return unSelectedTemplate; }
+      set
+      {
+         unSelectedTemplate = value; OnPropertyChanged("UnSelectedTemplate");
+      }
+    }
+ 
+    private BitmapImage selectedTemplate;
+    public BitmapImage SelectedTemplate
+    {
+      get { return selectedTemplate; }
+      set
+      {
+         selectedTemplate = value; OnPropertyChanged("SelectedTemplate");
+      }
+    }
+    private void OnPropertyChanged(String parameter)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(parameter));
+    }
 
-rating.Value = 5;
-rating.Precision = Precision.Half;
-rating.ItemSize = 80;
-rating.Items = 5;
-rating.ItemsSpacing = 5;
+    public event PropertyChangedEventHandler PropertyChanged;
+}
+public class ContentTemplate : DataTemplateSelector
+{
+    public DataTemplate SelectedTemplate { get; set; }
+    public DataTemplate ChildTemplate { get; set; }
+    protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
+    {
+       if (container == null)
+           return null;
+       SfRating Rating = container as SfRating;
+       if (Rating.Items.IndexOf(item) + 1 <= Rating.Value)
+           return SelectedTemplate;
+       return ChildTemplate;
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
