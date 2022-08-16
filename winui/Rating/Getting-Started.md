@@ -33,9 +33,8 @@ This section explains the steps required to add the Rating control and covers on
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
      <syncfusion:SfRating 
-          Value="5"
-          Precision="Standard"
-          Items="{Binding list}">
+          Value="3"
+          Items="{Binding data}">
      </syncfusion:SfRating>
     </Grid>
 </Page>
@@ -43,7 +42,7 @@ This section explains the steps required to add the Rating control and covers on
 {% endhighlight %}
 {% highlight C# %}
 
-ObservableCollection<object> data = new ObservableCollection<object>();
+ObservableCollection<SfRatingItem> data = new ObservableCollection<SfRatingItem>();
 data.Add(new SfRatingItem());
 data.Add(new SfRatingItem());
 data.Add(new SfRatingItem());
@@ -52,12 +51,13 @@ data.Add(new SfRatingItem());
 SfRating rating = new SfRating();
 
 //Setting the property value to the Rating control instance.
-rating.Value = 5;
-rating.Precision = Precision.Standard;
+rating.Value = 3;
 rating.Items = data; 
 
 {% endhighlight %}
 {% endtabs %}
+
+![Rating control Default in WinUI](Rating_images/winui_rating_overview.png)
 
 ## Rating control using TemplateSelector Property
 
@@ -85,10 +85,9 @@ rating.Items = data;
 </ResourceDictionary>
 
 <syncfusion:SfRating
-         Value="5"
-         Precision="Standard"
+         Value="3"
          TemplateSelector="{StaticResource template}"
-         Items={Binding list}>
+         Items="{Binding data}">
 </syncfusion:SfRating>
 
 {% endhighlight %}
@@ -98,14 +97,14 @@ public class RatingViewModel
 {
    public RatingViewModel()
    {
-      list = new ObservableCollection<object>();
-      list.Add(new RatingModel() {  UnSelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/AngryUnSelected.png")), SelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/AngrySelected.png")) });
-      list.Add(new RatingModel() { UnSelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/UnhappyUnSelected.png")), SelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/UnhappySelected.png")) });
-      list.Add(new RatingModel() { UnSelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/NeutralUnSelected.png")), SelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/NeutralSelected.png")) });
-      list.Add(new RatingModel() {  UnSelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/HappyUnSelected.png")), SelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/HappySelected.png")) });
-      list.Add(new RatingModel() { UnSelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/ExcitedUnSelected.png")), SelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/ExcitedSelected.png")) });
+      data = new ObservableCollection<SfRatingItem>();
+      data.Add(new RatingModel() {  UnSelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/AngryUnSelected.png")), SelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/AngrySelected.png")) });
+      data.Add(new RatingModel() { UnSelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/UnhappyUnSelected.png")), SelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/UnhappySelected.png")) });
+      data.Add(new RatingModel() { UnSelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/NeutralUnSelected.png")), SelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/NeutralSelected.png")) });
+      data.Add(new RatingModel() {  UnSelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/HappyUnSelected.png")), SelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/HappySelected.png")) });
+      data.Add(new RatingModel() { UnSelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/ExcitedUnSelected.png")), SelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/ExcitedSelected.png")) });
    }
-   public ObservableCollection<object> list
+   public ObservableCollection<SfRatingItem> data
    {
       get; set;
    }
@@ -155,3 +154,5 @@ public class ContentTemplate : DataTemplateSelector
 
 {% endhighlight %}
 {% endtabs %}
+
+![Rating control Customview in WinUI](Rating_images/winui_rating_customview.png)
