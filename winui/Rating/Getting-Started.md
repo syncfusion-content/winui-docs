@@ -57,8 +57,6 @@ rating.Items = data;
 {% endhighlight %}
 {% endtabs %}
 
-![Rating control Default in WinUI](Rating_images/winui_rating_overview.png)
-
 ## Rating control using TemplateSelector Property
 
 {% tabs %}
@@ -154,5 +152,3 @@ public class ContentTemplate : DataTemplateSelector
 
 {% endhighlight %}
 {% endtabs %}
-
-![Rating control Customview in WinUI](Rating_images/winui_rating_customview.png)
