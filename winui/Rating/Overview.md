@@ -16,4 +16,3 @@ The Syncfusion [WinUI Rating control] provides the number of stars that represen
 `Precision`: Options to decide the accuracy level of rating.
 `ItemsCount`: Support to determine the number of Rating items to be displayed.
 `ToolTip`: Supports to show the selected rating value while clicking the rating control.
-`Orientation`: Supports to show the Rating control in horizontal or vertical option by using the Orientation property.

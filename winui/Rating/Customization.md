@@ -40,7 +40,7 @@ The Rating control value can be customized using the `Value` Property. The defau
 {% highlight XAML %}
 
 <syncfusion:SfRating
-      Value="3"
+      Value="2"
       ItemsCount="5">
 </syncfusion:SfRating>
 
@@ -49,7 +49,7 @@ The Rating control value can be customized using the `Value` Property. The defau
 
 SfRating rating = new SfRating();
  
-rating.Value = 3;
+rating.Value = 2;
 rating.ItemsCount = 5;
 
 {% endhighlight %}
@@ -64,21 +64,21 @@ The Rating control Precision can be customized using the `Precision` Property. I
 
 //Rating Value setted with Standard Precision
 <syncfusion:SfRating
-     Value="3"
+     Value="2"
      Precision="Standard"
      ItemsCount="5">
 </syncfusion:SfRating>
 
 //Rating Value setted with Half Precision
 <syncfusion:SfRating
-     Value="3"
+     Value="2"
      Precision="Half"
      ItemsCount="5">
 </syncfusion:SfRating>
 
 Rating value setted with Exact Precision
 <syncfusion:SfRating
-     Value="3"
+     Value="2"
      Precision="Exact"
      ItemsCount="5">
 </syncfusion:SfRating>
@@ -88,15 +88,15 @@ Rating value setted with Exact Precision
 
 SfRating rating = new SfRating();
  
-rating.Value = 3;
+rating.Value = 2;
 rating.Precision = Precision.Standard;
 rating.ItemsCount = 5;
 
-rating.Value = 3;
+rating.Value = 2;
 rating.Precision = Precision.Half;
 rating.ItemsCount = 5;
 
-rating.Value = 3;
+rating.Value = 2;
 rating.Precision = Precision.Exact;
 rating.ItemsCount = 5;
 
@@ -128,36 +128,9 @@ rating.ItemSize = 60;
 {% endhighlight %}
 {% endtabs %}
 
-## Rating Control using the ItemsSpacing property
-
-The Rating control itemsspacing can be customized using the `ItemsSpacing` Property. The default value is 0.
-
-{% tabs %}
-{% highlight XAML %}
-
-<syncfusion:SfRating
-      Value="2"
-      ItemsCount="5"
-      ItemsSpacing="2">
-</syncfusion:SfRating>
-
-{% endhighlight %}
-{% highlight C# %}
-
-SfRating rating = new SfRating();
-
-rating.Value = 2;
-rating.ItemsCount = 5;
-rating.ItemsSpacing = 2;
-
-{% endhighlight %}
-{% endtabs %}
-
-
-
 ## Rating Control using the Style property
 
-The Rating control style can be customized using the `RatedStyle`, `UnRatedStyle` and `HighlightStyle` Property. The default value is null.
+The Rating control style can be customized using the `RatedStyle`, `UnratedStyle` and `HighlightStyle` Property. The default value is null.
 
 {% tabs %}
 {% highlight XAML %}
@@ -184,7 +157,7 @@ The Rating control style can be customized using the `RatedStyle`, `UnRatedStyle
       Value="2"
       ItemsCount="5"
       RatedStyle={StaticResource ratedStyle}
-      UnRatedStyle={StaticResource unRatedStyle}
+      UnratedStyle={StaticResource unRatedStyle}
       HighlightStyle={StaticResource highlightStyle}>
 </syncfusion:SfRating>
 
@@ -208,7 +181,7 @@ setter3.Property = Path.StrokeThicknessProperty;
 setter3.Value = 2;
 style1.Setters.Add(setter3);
 
-//UnRatedStyle
+//UnratedStyle
 Style style2 = new Style(typeof(Path));
 Setter setter1 = new Setter();
 setter1.Property = Path.FillProperty;
@@ -247,7 +220,7 @@ SfRating rating = new SfRating();
 rating.Value = 2;
 rating.ItemsCount = 5;
 rating.RatedStyle = style1;
-rating.UnRatedStyle = style2;
+rating.UnratedStyle = style2;
 rating.HighlightStyle = style3;
 
 {% endhighlight %}
@@ -261,7 +234,7 @@ The Rating control isreadonly can be customized using the `IsReadOnly` Property.
 {% highlight XAML %}
 
 <syncfusion:SfRating
-     Value="3"
+     Value="2"
      ItemsCount="5"
      IsReadOnly="True">
 </syncfusion:SfRating>
@@ -271,12 +244,34 @@ The Rating control isreadonly can be customized using the `IsReadOnly` Property.
 
 SfRating rating = new SfRating();
 
+rating.Value = 2;
 rating.ItemsCount = 5;
-rating.Value = 3;
 rating.IsReadOnly = true;
 
 {% endhighlight %}
 {% endtabs %}
 
+## Rating Control using the  ShowTooltip property
 
+The Rating control showtooltip can be customized using the `ShowTooltip` property. The default value is `false`.
 
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:SfRating
+     Value="2"
+     ItemsCount="5"
+     ShowTooltip="True">
+</syncfusion:SfRating>
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfRating rating = new SfRating();
+
+rating.Value = 2;
+rating.ItemsCount = 5;
+rating.ShowTooltip = true;
+
+{% endhighlight %}
+{% endtabs %}

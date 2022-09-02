@@ -33,7 +33,7 @@ This section explains the steps required to add the Rating control and covers on
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
      <syncfusion:SfRating 
-          Value="3"
+          Value="2"
           Items="{Binding data}">
      </syncfusion:SfRating>
     </Grid>
@@ -51,7 +51,7 @@ data.Add(new SfRatingItem());
 SfRating rating = new SfRating();
 
 //Setting the property value to the Rating control instance.
-rating.Value = 3;
+rating.Value = 2;
 rating.Items = data; 
 
 {% endhighlight %}
@@ -63,91 +63,64 @@ rating.Items = data;
 {% highlight XAML %}
 
 <ResourceDictionary>
-  <DataTemplate x:Key="selectedTemplate">
-    <Viewbox>
-      <StackPanel Orientation="Vertical">
-        <Image Source="{Binding SelectedTemplate}"/>
-      </StackPanel>
-    </Viewbox>
+  <DataTemplate x:Key="AngrySelectedTemplate">
+     <Viewbox>
+       <StackPanel Orientation="Vertical">
+         <Image Source="/Assets/Rating/AngrySelected.png"/>
+       </StackPanel>
+     </Viewbox>
   </DataTemplate>
-  <DataTemplate x:Key="unSelectedTemplate">
-    <Viewbox>
-      <StackPanel Orientation="Vertical">
-        <Image Source="{Binding UnSelectedTemplate}"/>
-      </StackPanel>
-    </Viewbox>
-   </DataTemplate>
-   <local:ContentTemplate x:Key="template"
-         SelectedTemplate="{StaticResource selectedTemplate}"
-         ChildTemplate="{StaticResource unSelectedTemplate}"/> 
+  <DataTemplate x:Key="AngryUnSelectedTemplate">
+     <Viewbox>
+       <StackPanel Orientation="Vertical">
+         <Image Source="/Assets/Rating/AngryUnselected.png"/>
+       </StackPanel>
+     </Viewbox>
+  </DataTemplate>
+  <local:ContentTemplateView x:Key="viewtemplate"
+         AngryTemplate="{StaticResource AngrySelectedTemplate}"                             
+         AngryUnSelectedTemplate="{StaticResource AngryUnSelectedTemplate}"/>
 </ResourceDictionary>
-
+  
 <syncfusion:SfRating
-         Value="3"
-         TemplateSelector="{StaticResource template}"
+         Value="2"
+         TemplateSelector="{StaticResource viewtemplate}"
          Items="{Binding data}">
 </syncfusion:SfRating>
 
 {% endhighlight %}
 {% highlight C# %}
 
-public class RatingViewModel
-{
-   public RatingViewModel()
-   {
-      data = new ObservableCollection<SfRatingItem>();
-      data.Add(new RatingModel() {  UnSelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/AngryUnSelected.png")), SelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/AngrySelected.png")) });
-      data.Add(new RatingModel() { UnSelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/UnhappyUnSelected.png")), SelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/UnhappySelected.png")) });
-      data.Add(new RatingModel() { UnSelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/NeutralUnSelected.png")), SelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/NeutralSelected.png")) });
-      data.Add(new RatingModel() {  UnSelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/HappyUnSelected.png")), SelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/HappySelected.png")) });
-      data.Add(new RatingModel() { UnSelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/ExcitedUnSelected.png")), SelectedTemplate = new BitmapImage(new Uri("ms-appx:///Assets/Rating/ExcitedSelected.png")) });
-   }
-   public ObservableCollection<SfRatingItem> data
-   {
-      get; set;
-   }
-}
-public class RatingModel : INotifyPropertyChanged
-{
-    private BitmapImage unSelectedTemplate;
-    public BitmapImage UnSelectedTemplate
-    {
-      get { return unSelectedTemplate; }
-      set
-      {
-         unSelectedTemplate = value; OnPropertyChanged("UnSelectedTemplate");
-      }
-    }
- 
-    private BitmapImage selectedTemplate;
-    public BitmapImage SelectedTemplate
-    {
-      get { return selectedTemplate; }
-      set
-      {
-         selectedTemplate = value; OnPropertyChanged("SelectedTemplate");
-      }
-    }
-    private void OnPropertyChanged(String parameter)
-    {
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(parameter));
-    }
+ObservableCollection<SfRatingItem> data = new ObservableCollection<SfRatingItem>();
+data.Add(new SfRatingItem());
+data.Add(new SfRatingItem());
+data.Add(new SfRatingItem());
+data.Add(new SfRatingItem());
+data.Add(new SfRatingItem());
 
-    public event PropertyChangedEventHandler PropertyChanged;
-}
-public class ContentTemplate : DataTemplateSelector
+public class ImageDataTemplateSelector : DataTemplateSelector
 {
-    public DataTemplate SelectedTemplate { get; set; }
-    public DataTemplate ChildTemplate { get; set; }
-    protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
+  public DataTemplate AngryTemplate { get; set; }
+  public DataTemplate AngryUnSelectedTemplate { get; set; }
+        
+  protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
+  {
+    if (container == null)
+        return null;
+    SfRating Rating = container as SfRating;
+    SfRatingItem Item = item as SfRatingItem;
+    if (Rating.Items.IndexOf(Item) + 1 == Rating.Value)
     {
-       if (container == null)
-           return null;
-       SfRating Rating = container as SfRating;
-       if (Rating.Items.IndexOf(item) + 1 <= Rating.Value)
-           return SelectedTemplate;
-       return ChildTemplate;
+        if (Rating.Items.IndexOf(Item) == 0)
+            return AngryTemplate;
     }
+    else
+    {
+        if (Rating.Items.IndexOf(Item) == 0)
+            return AngryUnSelectedTemplate;
+    }
+    return null;
+  } 
 }
 
 {% endhighlight %}
