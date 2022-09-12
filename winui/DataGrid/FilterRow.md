@@ -223,7 +223,6 @@ The default filter condition is Equals, the below filter conditions are availabl
 <li>After or Equal</li>
 </ol>
 </td>
-</td>
 </tr>
 </table>
 
