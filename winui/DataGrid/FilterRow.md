@@ -110,6 +110,20 @@ CheckBox
 Used for filtering the Boolean values.
 </td>
 </tr>
+<tr>
+<td>
+Date
+</td>
+<td>
+{{'[SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html)'| markdownify }}
+</td>
+<td>
+{{'`GridFilterRowDateRenderer`'| markdownify }}
+</td>
+<td>
+Used for filtering the DateTimeOffset values.
+</td>
+</tr>
 </table>
 
 ## Filter options
@@ -142,6 +156,9 @@ Below are the filter conditions supported by different filter row editors in SfD
 <td>
 {{'**CheckBox Editor**'| markdownify }}
 </td>
+<td>
+{{'**Date Editor**'| markdownify }}
+</td>
 </tr>
 <tr>
 <td>
@@ -154,6 +171,9 @@ When string value is bounded to the {{'[GridColumn](https://help.syncfusion.com/
 </td>
 <td>
 When Boolean type is bounded to the {{'[GridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html)'| markdownify }}, then <code>CheckBox</code> editor is loaded in {{'[FilterRowCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.RowFilter.GridFilterRowCellRenderer-2.html#Syncfusion_UI_Xaml_DataGrid_RowFilter_GridFilterRowCellRenderer_2_FilterRowCell)'| markdownify }}.
+</td>
+<td>
+When DateTimeOffset type is bounded to the {{'[GridDateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html)'| markdownify }}, then <code>Date</code> editor is loaded in {{'[FilterRowCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.RowFilter.GridFilterRowCellRenderer-2.html#Syncfusion_UI_Xaml_DataGrid_RowFilter_GridFilterRowCellRenderer_2_FilterRowCell)'| markdownify }}.
 </td>
 </tr>
 <tr>
@@ -189,6 +209,20 @@ The default filter condition is Begins With, the below filter conditions are ava
 </td>
 <td>
 Always equals filter condition will be applied for filtering the CheckBox value.
+</td>
+<td>
+The default filter condition is Equals, the below filter conditions are available in date filter.
+<ol>
+<li>Equals</li>
+<li>Does Not Equal</li>
+<li>Null</li>
+<li>Not Null</li>
+<li>Before</li>
+<li>Before or Equal</li>
+<li>After</li>
+<li>After or Equal</li>
+</ol>
+</td>
 </td>
 </tr>
 </table>
