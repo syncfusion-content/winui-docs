@@ -13,7 +13,7 @@ Tooltip is used to display any information over segments. It appears at center o
 
 ## Define Tooltip
 
-To define the tooltip in the chart, set the [ShowTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property of series to true. The default value of [ShowTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property is false.
+To define the tooltip in the chart, set the [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property of series to true. The default value of [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property is false.
 
 {% tabs %}
 
@@ -21,7 +21,7 @@ To define the tooltip in the chart, set the [ShowTooltip](https://help.syncfusio
 
 <chart:SfCircularChart>
 . . .
-    <chart:PieSeries ShowTooltip="True"
+    <chart:PieSeries EnableTooltip="True"
                      ItemsSource="{Binding Data}" 
                      ShowDataLabels="True" 
                      XBindingPath="Product" 
@@ -37,7 +37,7 @@ To define the tooltip in the chart, set the [ShowTooltip](https://help.syncfusio
 SfCircularChart chart = new SfCircularChart();
 . . .
 PieSeries series = new PieSeries();
-series.ShowTooltip = true;
+series.EnableTooltip = true;
 chart.Series.Add(series);
 
 {% endhighlight %}
@@ -200,11 +200,11 @@ Circular chart provides support to customize the appearance of the tooltip by us
 <chart:SfCircularChart>
 . . .
     <chart:SfCircularChart.Series>
-        <chart:PieSeries ShowTooltip="True"
-                 ItemsSource="{Binding Data}" 
-                 XBindingPath="Product" 
-                 YBindingPath="SalesRate"
-                 TooltipTemplate="{StaticResource tooltipTemplate}"/>
+        <chart:PieSeries EnableTooltip="True"
+                         ItemsSource="{Binding Data}" 
+                         XBindingPath="Product" 
+                         YBindingPath="SalesRate"
+                         TooltipTemplate="{StaticResource tooltipTemplate}"/>
     </chart:SfCircularChart.Series>
     . . .
     <chart:SfCircularChart.TooltipBehavior>
@@ -220,7 +220,7 @@ Circular chart provides support to customize the appearance of the tooltip by us
 SfCircularChart chart = new SfCircularChart();
 . . .
 PieSeries series = new PieSeries();
-series.ShowTooltip = true;
+series.EnableTooltip = true;
 series.TooltipTemplate = grid.Resources["tooltipTemplate"] as DataTemplate;
 . . .     
 {% endhighlight %}

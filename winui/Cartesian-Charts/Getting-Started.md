@@ -340,7 +340,7 @@ series.Label = "Heights";
 
 ## Enable Tooltip
 
-Tooltips are used to show information about the segment, when hovers on the segment. Enable tooltip by setting series [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_EnableTooltip) property to true.
+Tooltips are used to show information about the segment, when hovers on the segment. Enable tooltip by setting series [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property to true.
 
 {% tabs %} 
 

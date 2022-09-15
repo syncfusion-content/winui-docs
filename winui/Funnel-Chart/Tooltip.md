@@ -13,17 +13,17 @@ Tooltip is used to display any information over segments. It appears at the data
 
 ## Define Tooltip
 
-To define the tooltip in the chart, set the [ShowTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_ShowTooltip) property to true. The default value of [ShowTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_ShowTooltip) property is false.
+To define the tooltip in the chart, set the [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_ShowTooltip) property to true. The default value of [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_ShowTooltip) property is false.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfFunnelChart x:Name="chart" 
-                ShowTooltip="True"
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">          
+                     EnableTooltip="True"
+                     ItemsSource="{Binding Data}" 
+                     XBindingPath="Category"
+                     YBindingPath="Value">          
 
 </chart:SfFunnelChart>
 
@@ -35,7 +35,7 @@ SfFunnelChart chart = new SfFunnelChart();
 chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
-chart.ShowTooltip = true;
+chart.EnableTooltip = true;
 . . . 
 this.Content = chart;
 
@@ -88,7 +88,7 @@ The following code example explains how to apply the style for tooltip backgroun
 
 {% highlight xml %}
 
-<chart:SfFunnelChart x:Name="chart" ShowTooltip="True">
+<chart:SfFunnelChart x:Name="chart" EnableTooltip="True">
 
     <chart:SfFunnelChart.Resources>
         <Style TargetType="Path" x:Key="style">
@@ -108,7 +108,7 @@ The following code example explains how to apply the style for tooltip backgroun
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-chart.ShowTooltip = true;
+chart.EnableTooltip = true;
 Style style = new Style(typeof(Path));
 style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Black)));
 style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)));
@@ -133,7 +133,7 @@ The following code example explains how to apply the style for a tooltip label.
 
 {% highlight xml %}
 
-<chart:SfFunnelChart x:Name="chart" ShowTooltip="True">
+<chart:SfFunnelChart x:Name="chart" EnableTooltip="True">
 
     <chart:SfFunnelChart.Resources>
         <Style TargetType="TextBlock" x:Key="labelStyle">
@@ -200,7 +200,7 @@ The following code example explains how to display both x-value and y-value in t
                          ItemsSource="{Binding Data}" 
                          XBindingPath="Category"  
                          YBindingPath="Value" 
-                         ShowTooltip="True"
+                         EnableTooltip="True"
                          TooltipTemplate="{StaticResource tooltipTemplate}">
 
         <chart:SfFunnelChart.TooltipBehavior>
@@ -217,7 +217,7 @@ SfFunnelChart chart = new SfFunnelChart();
 chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
-chart.ShowTooltip = true;
+chart.EnableTooltip = true;
 chart.TooltipTemplate = this.grid.Resources["tooltipTemplate"] as DataTemplate;
 . . .
 this.Content = chart;

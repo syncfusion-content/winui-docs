@@ -239,9 +239,9 @@ this.Content = chart;
 
 ![Custom legend icon in WinUI Chart](Legend_images/WinUI_chart_custom_legend_icon.png)
 
-## Icon Visibility
+## Legend Visibility
 
-The [IsVisibleOnLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_VisibilityOnLegend) property of series is used to enable/disable the visibility of legend icon as shown in below example.
+The [IsVisibleOnLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_VisibilityOnLegend) property of series is used to enable/disable the visibility of legend as shown in below example.
 
 {% tabs %}
 
@@ -256,13 +256,13 @@ The [IsVisibleOnLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
     <chart:SfCartesianChart.Series>
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
                             Label="Gold" 
-                            IsVisibleOnLegend=true
+                            IsVisibleOnLegend="True"
                             XBindingPath="Year" 
                             YBindingPath="India"/>
 
         <chart:SplineSeries ItemsSource="{Binding Data}" 
                             Label="Silver" 
-                            IsVisibleOnLegend=false, 
+                            IsVisibleOnLegend="False"
                             XBindingPath="Year" 
                             YBindingPath="America"/>
     </chart:SfCartesianChart.Series>
@@ -290,7 +290,7 @@ SplineSeries splineSeries = new SplineSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Year",
     YBindingPath = "America",
-    IsVisibleOnLegend = true
+    IsVisibleOnLegend = false
 };
 
 chart.Series.Add(splineSeries);
@@ -428,7 +428,6 @@ The legend background appearance can be customized by using the following proper
 `BorderThickness` - used to change the stroke width of the legend.
 `BorderBrush` - used to change the stroke color of the legend.
 `Background` - used to change the background color of the legend.
-`Opacity` - used to control the transparency of the legend icon shape.
 [CornerRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CornerRadius) - used to change the corner radius of the legend.
 
 {% tabs %}

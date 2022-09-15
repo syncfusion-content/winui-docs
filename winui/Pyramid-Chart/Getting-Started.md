@@ -216,13 +216,13 @@ chart.Legend = new ChartLegend();
 
 ## Enable Tooltip
 
-Tooltips are used to display information about a segment, when the mouse is moved over it. Enable tooltip by setting [ShowTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_ShowTooltip) property as true.
+Tooltips are used to display information about a segment, when the mouse is moved over it. Enable tooltip by setting [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_ShowTooltip) property as true.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart ShowTooltip="True">
+<chart:SfPyramidChart EnableTooltip="True">
     . . . 
 </chart:SfPyramidChart>
 
@@ -232,7 +232,7 @@ Tooltips are used to display information about a segment, when the mouse is move
 
 SfPyramidChart chart = new SfPyramidChart();
 . . .
-chart.ShowTooltip = true;
+chart.EnableTooltip = true;
 
 {% endhighlight %}
 
@@ -247,12 +247,12 @@ N> To plot the chart, the [XBindingPath](https://help.syncfusion.com/cr/winui/Sy
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart" 
-                    Header="The Food Comparison Pyramid"
-                    ShowTooltip="True"
-                    ShowDataLabels="True"
-                    ItemsSource="{Binding Data}" 
-                    XBindingPath="FoodName"
-                    YBindingPath="Calories">
+                      Header="The Food Comparison Pyramid"
+                      EnableTooltip="True"
+                      ShowDataLabels="True"
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="FoodName"
+                      YBindingPath="Calories">
 
     <chart:SfPyramidChart.DataContext>
         <model:ChartViewModel />
@@ -284,7 +284,7 @@ public sealed partial class MainWindow : Window
         chart.YBindingPath = "Calories";
         chart.Header = "The Food Comparison Pyramid";
         chart.Legend = new ChartLegend();
-        chart.ShowTooltip = true;
+        chart.EnableTooltip = true;
         chart.ShowDataLabels = true;
 
         this.Content = chart;
