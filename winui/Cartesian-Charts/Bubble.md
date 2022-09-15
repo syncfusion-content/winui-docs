@@ -30,11 +30,11 @@ To render a bubble series, create an instance of [BubbleSeries](https://help.syn
     </chart:SfCartesianChart.YAxes> 
 
     <chart:BubbleSeries ItemsSource="{Binding Data}" 
-						XBindingPath="XValue" 
-						YBindingPath="YValue" 
-						Size="Size" 
-						MinimumRadius="5" 
-						MaximumRadius="10"/>
+                        XBindingPath="XValue" 
+                        YBindingPath="YValue" 
+                        Size="Size" 
+                        MinimumRadius="5" 
+                        MaximumRadius="10"/>
     ...
 <chart:SfCartesianChart>
 

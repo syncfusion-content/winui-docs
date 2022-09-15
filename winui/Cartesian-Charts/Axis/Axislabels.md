@@ -13,7 +13,7 @@ Axis labels are used to show the units, measures, or category value of the axis 
 
 ## Rotation Angle
 
-The [LabelRotationAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelRotationAngle) property is used to define the angle for the label content.
+The [LabelRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelRotationAngle) property is used to define the angle for the label content.
 
 {% tabs %}
 
@@ -22,7 +22,7 @@ The [LabelRotationAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 <chart:SfCartesianChart>
 . . .
 <chart:SfCartesianChart.XAxes>
-    <chart:CategoryAxis LabelRotationAngle="90"/>
+    <chart:CategoryAxis LabelRotation="90"/>
 </chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>
@@ -35,7 +35,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 CategoryAxis primaryAxis = new CategoryAxis()
 {
-    LabelRotationAngle = 90
+    LabelRotation = 90
 };
 chart.XAxes.Add(primaryAxis);
 
@@ -58,7 +58,11 @@ Axis labels can be formatted by predefined formatting types by using the [LabelF
 <chart:SfCartesianChart>
 . . .
 <chart:SfCartesianChart.XAxes>
-    <chart:DateTimeAxis LabelFormat="MMM-yy"/>
+    <chart:DateTimeAxis>
+        <chart:DateTimeAxis.LabelStyle>
+            <chart:LabelStyle LabelFormat="MMM-yy" />
+        </chart:DateTimeAxis.LabelStyle>
+    </chart:DateTimeAxis>
 </chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>
@@ -71,7 +75,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 DateTimeAxis primaryAxis = new DateTimeAxis()
 {
-    LabelFormat = "MMM-yy",
+    LabelStyle = new LabelStyle() { LabelFormat= "MMM-yy" }
 };
 chart.XAxes.Add(primaryAxis);
 
@@ -88,7 +92,11 @@ chart.XAxes.Add(primaryAxis);
 <chart:SfCartesianChart>
 . . .
 <chart:SfCartesianChart.YAxes>
-    <chart:NumericalAxis LabelFormat="0.00"/>
+    <chart:NumericalAxis >
+        <chart:NumericalAxis.LabelStyle>
+            <chart:LabelStyle LabelFormat="0.00" />
+                </chart:NumericalAxis.LabelStyle>
+        </chart:NumericalAxis>
 </chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
@@ -101,7 +109,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 NumericalAxis secondaryAxis = new NumericalAxis()
 {
-    LabelFormat = "0.00"
+    LabelStyle = new LabelStyle() { LabelFormat= "0.00" }
 };
 chart.YAxes.Add(secondaryAxis);
 
@@ -189,7 +197,7 @@ chart.XAxes.Add(primaryAxis);
 
 ## Smart Axis Labels
 
-When there are more number of axis labels, they may overlap with each other. Chart axis provides support to handle the overlapping axis labels using the [LabelIntersectAction](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction) property. By default the [LabelIntersectAction](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction) value is [Hide](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AxisLabelIntersectAction.html#Syncfusion_UI_Xaml_Charts_AxisLabelIntersectAction_Hide).
+When there are more number of axis labels, they may overlap with each other. Chart axis provides support to handle the overlapping axis labels using the [LabelsIntersectAction](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction) property. By default the [LabelsIntersectAction](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction) value is [Hide](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction.html#Syncfusion_UI_Xaml_Charts_AxisLabelsIntersectAction_Hide).
 
 | Actions | Description |
 |--|--|

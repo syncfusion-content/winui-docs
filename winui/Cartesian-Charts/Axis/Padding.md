@@ -9,50 +9,6 @@ documentation: ug
 
 # Axis Padding in WinUI Chart (SfCartesianChart)
 
-The [PlotOffset](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_PlotOffset) property is used to provide padding to the axis. The following code sample demonstrates the padding applied to both x and y-axes.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart>
-. . .
-<chart:SfCartesianChart.XAxes>
-    <chart:CategoryAxis PlotOffset="30"/>
-</chart:SfCartesianChart.XAxes>
-
-<chart:SfCartesianChart.YAxes>
-    <chart:NumericalAxis PlotOffset="30"/>
-</chart:SfCartesianChart.YAxes>
-
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-. . .
-CategoryAxis primaryAxis = new CategoryAxis()
-{
-   PlotOffset = 30
-};
-chart.XAxes.Add(primaryAxis);
-
-NumericalAxis secondaryAxis = new NumericalAxis()
-{
-   PlotOffset = 30
-};
-chart.YAxes.Add(secondaryAxis);
-. . .
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![PlotOffset support in WinUI Chart](Axis_images/winui_chart_axis_plot-offset.png)
-
 ## PlotOffsetStart
 
 The [PlotOffsetStart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_PlotOffsetStart) property is used to provide padding to the axis at start position. The following code sample demonstrates the padding applied to Start position for both x and y-axes.

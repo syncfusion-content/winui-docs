@@ -340,7 +340,7 @@ series.Label = "Heights";
 
 ## Enable Tooltip
 
-Tooltips are used to show information about the segment, when hovers on the segment. Enable tooltip by setting series [ShowTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property to true.
+Tooltips are used to show information about the segment, when hovers on the segment. Enable tooltip by setting series [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_EnableTooltip) property to true.
 
 {% tabs %} 
 
@@ -348,7 +348,7 @@ Tooltips are used to show information about the segment, when hovers on the segm
 
 <chart:SfCartesianChart>
 	...
-   <chart:ColumnSeries ShowTooltip="True" 
+   <chart:ColumnSeries EnableTooltip="True" 
 					   ItemsSource="{Binding Data}" 
 					   XBindingPath="Name" 
 					   YBindingPath="Height"/>
@@ -363,7 +363,7 @@ ColumnSeries series = new ColumnSeries();
 series.ItemsSource = (new ViewModel()).Data;
 series.XBindingPath = "Name";          
 series.YBindingPath = "Height";
-series.ShowTooltip = true;
+series.EnableTooltip = true;
 
 {% endhighlight %}
 
@@ -403,7 +403,7 @@ The following code example gives you the complete code of above configurations.
 
         <!--Initialize the series for chart-->
         <chart:ColumnSeries Label="Heights" 
-							ShowTooltip="True"
+							EnableTooltip="True"
                             ShowDataLabels="True"
                             ItemsSource="{Binding Data}"
                             XBindingPath="Name" 
@@ -457,7 +457,7 @@ namespace SfChart_GettingStarted
             series.ItemsSource = (new ViewModel()).Data;
             series.XBindingPath = "Name";            
             series.YBindingPath = "Height";
-            series.ShowTooltip = true;
+            series.EnableTooltip = true;
             series.Label = "Heights"; 
             series.ShowDataLabels = true;
             series.DataLabelSettings = new CartesianDataLabelSettings()
