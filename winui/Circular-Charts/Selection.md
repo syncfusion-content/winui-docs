@@ -82,7 +82,7 @@ PieSeries series = new PieSeries();
 DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
 {
     SelectionBrush = new SolidColorBrush(Colors.BlueViolet),
-    Type = SelectionType.Multiple
+    Type = ChartSelectionType.Multiple
 };
 
 series.SelectionBehavior = selection;
@@ -170,7 +170,7 @@ PieSeries series = new PieSeries();
 DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
 {
     SelectionBrush = new SolidColorBrush(Colors.BlueViolet),
-    Type = SelectionType.Multiple,
+    Type = ChartSelectionType.Multiple,
     SelectedIndexes = new List<int>() { 2, 3, 4 }
 };
 
@@ -189,7 +189,7 @@ The following events are available in the [ChartSelectionBehavior](https://help.
 
 ### SelectionChanging
 
-The [SelectionChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SelectionChanging) event occurs before the data point is being selected. This is a cancelable event. This argument contains the following information.
+The [SelectionChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SelectionChanging) event occurs before the data point is being selected. This is a cancelable event. The `ChartSelectionChangingEventArgs` contains the following information.
 
 * [CurrentIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_SelectionChangingEventArgs_CurrentIndex) - Gets the selected data point index.
 * [PreviousIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_SelectionChangingEventArgs_PreviousIndex) - Gets the previous selected data point index.
@@ -198,7 +198,7 @@ The [SelectionChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 ### SelectionChanged
 
-The [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SelectionChanged) event occurs after a data point has been selected. This argument contains the following information.
+The [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SelectionChanged) event occurs after a data point has been selected. The `ChartSelectionChangedEventArgs` argument contains the following information.
 
 * [CurrentIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_SelectionChangedEventArgs_CurrentIndex) - Gets the selected data point index.
 * [PreviousIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_SelectionChangedEventArgs_PreviousIndex) - Gets the previous selected data point index.
