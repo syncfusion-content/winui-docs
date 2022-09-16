@@ -98,6 +98,42 @@ autoComplete.SelectionMode = AutoCompleteSelectionMode.Multiple;
 
 ![Multiple selection in WinUI AutoComplete](Selection_images/winui-autocomplete-multiple-selection.gif)
 
+## Auto-Append UI
+
+The AutoComplete control provides auto-append support with selection of text as well as text alone, as in Windows 11.The auto-append UI can be set by `AppendType` property.There are two different auto-append UI: `TextWithSelection` and `Text`.
+
+### Auto-append UI as TextWithSelection
+
+When entering text in the text box selection area, if the `AppendType` property is `TextWithSelection`, the appended text can be the selection of text.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfAutoComplete ItemsSource="{Binding Countries}"
+                        AppendType="TextWithSelection">
+</editors:SfAutoComplete>
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI AutoComplete control with auto-append UI as TextWithSelection](Selection_images/winui-AutoComplete-TextWithSelection.png)
+
+### Auto-append UI as Text
+
+When entering text in the text box selection area, if the `AppendType` property is `Text`, the appended text can be text alone.
+ 
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfAutoComplete ItemsSource="{Binding Countries}"
+                        AppendType="Text">
+</editors:SfAutoComplete>
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI AutoComplete control with auto-append UI as Text](Selection_images/winui-AutoComplete-Text.png)
+
 ## Selection changed notification
 
 When an item is selected from the drop-down list, the [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_SelectionChanged) event is triggered. The `SelectionChanged` event contains the newly selected and removed items in the `AddedItems` and `RemovedItems` properties. The `SelectionChanged` contains the following properties:
