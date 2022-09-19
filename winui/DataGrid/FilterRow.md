@@ -170,15 +170,15 @@ When string value is bounded to the {{'[GridColumn](https://help.syncfusion.com/
 
 </td>
 <td>
-When Boolean type is bounded to the {{'[GridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html)'| markdownify }}, then <code>CheckBox</code> editor is loaded in {{'[FilterRowCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.RowFilter.GridFilterRowCellRenderer-2.html#Syncfusion_UI_Xaml_DataGrid_RowFilter_GridFilterRowCellRenderer_2_FilterRowCell)'| markdownify }}.
+When the Boolean type is bounded to the {{'[GridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html)'| markdownify }}, the <code>CheckBox</code> editor is loaded in {{'[FilterRowCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.RowFilter.GridFilterRowCellRenderer-2.html#Syncfusion_UI_Xaml_DataGrid_RowFilter_GridFilterRowCellRenderer_2_FilterRowCell)'| markdownify }}.
 </td>
 <td>
-When DateTimeOffset type is bounded to the {{'[GridDateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html)'| markdownify }}, then <code>Date</code> editor is loaded in {{'[FilterRowCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.RowFilter.GridFilterRowCellRenderer-2.html#Syncfusion_UI_Xaml_DataGrid_RowFilter_GridFilterRowCellRenderer_2_FilterRowCell)'| markdownify }}.
+When the DateTimeOffset type is bounded to the {{'[GridDateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html)'| markdownify }}, the <code>Date</code> editor is loaded in {{'[FilterRowCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.RowFilter.GridFilterRowCellRenderer-2.html#Syncfusion_UI_Xaml_DataGrid_RowFilter_GridFilterRowCellRenderer_2_FilterRowCell)'| markdownify }}.
 </td>
 </tr>
 <tr>
 <td>
-The default filter condition is Equals, the below filter conditions are available in numeric filter.
+The default filter condition is Equals, and the following filter conditions are available in the numeric filter.
 <ol>
 <li>Equals</li>
 <li>Does Not Equal</li> 
@@ -191,7 +191,7 @@ The default filter condition is Equals, the below filter conditions are availabl
 </ol>
 </td>
 <td>
-The default filter condition is Begins With, the below filter conditions are available in text filter.
+The default filter condition is Begins With, and the following filter conditions are available in the text filter.
 <ol>
 <li>Equals</li>
 <li>Does Not Equal</li> 
@@ -211,7 +211,7 @@ The default filter condition is Begins With, the below filter conditions are ava
 Always equals filter condition will be applied for filtering the CheckBox value.
 </td>
 <td>
-The default filter condition is Equals, the below filter conditions are available in date filter.
+The default filter condition is Equals, and the following filter conditions are available in the date filter.
 <ol>
 <li>Equals</li>
 <li>Does Not Equal</li>
