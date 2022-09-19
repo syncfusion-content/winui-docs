@@ -244,6 +244,40 @@ The selected items can be changed interactively by using keyboard or by selectin
 
 N> You can refer more information about customization of `ComboBoxTokenItem` from [this](https://help.syncfusion.com/winui/combobox/ui-customization#styling-comboboxtokenitem) link.
 
+## Auto-Append UI
+
+The ComboBox control provides auto-append support with the selection of text as well as text alone. The auto-append UI can be defined by using the `AutoAppendType` property. There are two types of auto-append UI: `TextWithSelection` and `Text`. When the auto-append UI is set to `Text`, the appended text appears with a faded foreground, similar to Windows 11.
+
+### Auto-append UI as TextWithSelection
+
+When entering text in the text box selection area, if the `AutoAppendType` property is `Text`, the appended text appears with fade foreground.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfComboBox AppendType="TextWithSelection">
+</editors:SfComboBox>
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI ComboBox control with auto-append UI as TextWithSelection](Selection_images/winui-AutoComplete-TextWithSelection.png)
+
+### Auto-append UI as Text
+
+When entering text in the text box selection area, if the `AutoAppendType` property is `Text`, the appended text appears in a fading foreground.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfComboBox AutoAppendType="Text">
+</editors:SfComboBox>
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI ComboBox control with auto-append UI as Text](Selection_images/winui-AutoComplete-Text.png)
+
 ## Selection changed notification
 
 When selecting an item from the drop-down list, the [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectionChanged) event is triggered. The `SelectionChanged` event contains the newly selected and removed items in the AddedItems and RemovedItems properties. The `SelectionChanged` contains the following properties:
