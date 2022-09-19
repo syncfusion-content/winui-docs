@@ -261,7 +261,7 @@ When entering text in the text box selection area, if the `AutoAppendType` prope
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox control with auto-append UI as TextWithSelection](Selection_images/winui-AutoComplete-TextWithSelection.png)
+![WinUI ComboBox control with auto-append UI as TextWithSelection](Selection_images/winui-combobox-auto-append-textwithselection.png)
 
 ### Auto-append UI as Text
 
@@ -276,7 +276,7 @@ When entering text in the text box selection area, if the `AutoAppendType` prope
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox control with auto-append UI as Text](Selection_images/winui-AutoComplete-Text.png)
+![WinUI ComboBox control with auto-append UI as Text](Selection_images/winui-combobox-auto-append-text.png)
 
 ## Selection changed notification
 

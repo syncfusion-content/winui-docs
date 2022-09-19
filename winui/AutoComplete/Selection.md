@@ -115,7 +115,7 @@ When entering text in the text box selection area, if the `AppendType` property 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AutoComplete control with auto-append UI as TextWithSelection](Selection_images/winui-AutoComplete-TextWithSelection.png)
+![WinUI AutoComplete control with auto-append UI as TextWithSelection](Selection_images/winui-autocomplete-auto-append-textwithselection.png)
 
 ### Auto-append UI as Text
 
@@ -130,7 +130,7 @@ When entering text in the text box selection area, if the `AppendType` property 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AutoComplete control with auto-append UI as Text](Selection_images/winui-AutoComplete-Text.png)
+![WinUI AutoComplete control with auto-append UI as Text](Selection_images/winui-autocomplete-auto-append-text.png)
 
 ## Selection changed notification
 
