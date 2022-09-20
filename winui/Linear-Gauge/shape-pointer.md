@@ -161,7 +161,7 @@ this.Content = sfLinearGauge;
 
 ## Shadow support
 
-The shadow can be applied by the [`HasShadow`]() property.
+The shadow can be applied by the `HasShadow` property.
 
 {% tabs %}
 
