@@ -246,7 +246,7 @@ N> Refer more information about customization of `ComboBoxTokenItem` from [this]
 
 ## Auto-Append UI
 
-The ComboBox control provides auto-append support with the selection of text as well as text alone. The auto-append UI can be defined by using the `AutoAppendType` property. There are two types of auto-append UI: The `TextWithSelection` and `Text`, When the auto-append UI is set to `Text`, the appended text appears with a faded foreground, similar to Windows 11.
+The ComboBox control provides auto-append support with the selection of text as well as text alone. The auto-append UI can be defined by using the `AutoAppendType` property. There are two types of auto-append UI: The `TextWithSelection` and `Text.` When the auto-append UI is set to `Text,` the appended text appears with a faded foreground, similar to Windows 11.
 
 #### Auto-append UI as TextWithSelection
 
@@ -265,7 +265,7 @@ When entering a text in the text box selection area, if the `AutoAppendType` pro
 
 #### Auto-append UI as Text
 
-When entering a text in the text box selection area, if the `AutoAppendType` property is `Text`, the appended text appears in a fading foreground.
+When entering a text in the text box selection area, if the `AutoAppendType` property is `Text,` the appended text appears in a fading foreground.
 
 {% tabs %}
 {% highlight XAML %}

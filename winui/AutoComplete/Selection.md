@@ -100,7 +100,7 @@ autoComplete.SelectionMode = AutoCompleteSelectionMode.Multiple;
 
 ## Auto-Append UI
 
-The AutoComplete control provides auto-append support with the selection of text as well as text alone. The auto-append UI can be defined by using the `AppendType` property. There are two types of auto-append UI: The `TextWithSelection` and `Text`. When the auto-append UI is set to `Text`, the appended text appears with a faded foreground, similar to Windows 11.
+The AutoComplete control provides auto-append support with the selection of text as well as text alone. The auto-append UI can be defined by using the `AppendType` property. There are two types of auto-append UI: The `TextWithSelection` and `Text.` When the auto-append UI is set to `Text,` the appended text appears with a faded foreground, similar to Windows 11.
 
 #### Auto-append UI as TextWithSelection
 
@@ -119,7 +119,7 @@ When entering a text in the text box selection area, if the `AppendType` propert
 
 #### Auto-append UI as Text
 
-When entering a text in the text box selection area, if the `AppendType` property is `Text`, the appended text appears in a fading foreground.
+When entering a text in the text box selection area, if the `AppendType` property is `Text,` the appended text appears in a fading foreground.
 
 {% tabs %}
 {% highlight XAML %}
