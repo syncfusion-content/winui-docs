@@ -9,7 +9,7 @@ documentation: ug
 
 # Export To Excel in WinUI DataGrid
 
-[WinUI DataGrid](https://help.syncfusion.com/winui/datagrid/overview) provides support to export data to excel. It also provides support for grouping, filtering, sorting, unbound rows, merged cells, stacked headers and Details View while exporting.
+[WinUI DataGrid](https://help.syncfusion.com/winui/datagrid/overview) provides support to export data to excel. We can export unbound rows, unbound columns, merged cells, stacked headers and Details View while exporting.
 
 The following assemblies needs to be added for exporting to excel.
 
@@ -92,7 +92,7 @@ Save(stream, "Sample");
 
 ### Export groups with outlines
 
-By default, all the groups in dataGrid will be exported in expanded state. You can enable outlines in excel based on groups by setting the `ShowOutlines` property as `true` in `DataGridExcelExportOptions`.
+By default, all the groups in dataGrid will be exported in expanded state. You can enable outlines in excel based on group expanded state by setting the `ShowOutlines` property as `true` in `DataGridExcelExportOptions`.
 
 {% tabs %}
 {% highlight c# %}
@@ -389,120 +389,6 @@ private static void CellsExportHandler(object sender, DataGridCellExcelExportOpt
 
 Here, `OrderID` column cells are customized while exporting.
 
-## Customize exported workbook and worksheet
-
-SfDataGrid exports to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). You can refer [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating workbook and sheet after exporting. 
-
-### Workbook
-SfDataGrid provides option to return [ExcelEngine](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.ExcelEngine.html) from that you can get exported workbook. This allows you to protect, encrypt and add worksheet before saving. 
-
-{% tabs %}
-{% highlight c# %}
-var options = new DataGridExcelExportOptions();
-var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
-var workBook = excelEngine.Excel.Workbooks[0];
-MemoryStream stream = new MemoryStream();
-workBook.SaveAs(stream);
-Save(stream, "Sample");
-{% endhighlight %}
-{% endtabs %}
-
-### Worksheet customization
-
-SfDataGrid provides support to export to already existing file or worksheet. 
-
-In the below code snippet, worksheet is created and passed to `ExportToExcel` method. In the same way, you can open already existing excel also using `XlsIO`. 
-
-{% tabs %}
-{% highlight c# %}
-var options = new DataGridExcelExportOptions();
-ExcelEngine excelEngine = new ExcelEngine();
-IWorkbook workBook = excelEngine.Excel.Workbooks.Create();
-dataGrid.ExportToExcel(dataGrid.View, options, workBook.Worksheets[0]);
-workBook.Version = ExcelVersion.Excel2013;
-MemoryStream stream = new MemoryStream();
-workBook.SaveAs(stream);
-Save(stream, "Sample");
-{% endhighlight %}
-{% endtabs %}
-
-Before saving workbook, you need to set the specific excel version by using `IWorkbook.Version` property. Here, you can directly manipulate the data in the worksheet. You can refer [here](http://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation) for more information.
-
-#### Setting borders
-
-You can set borders to excel cells by directly accessing worksheet after exporting data.
-
-{% tabs %}
-{% highlight c# %}
-var options = new DataGridExcelExportOptions();
-options.ExcelVersion = ExcelVersion.Excel2013;
-var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
-var workBook = excelEngine.Excel.Workbooks[0];
-workBook.Worksheets[0].UsedRange.BorderInside(ExcelLineStyle.Dash_dot, ExcelKnownColors.Black);
-workBook.Worksheets[0].UsedRange.BorderAround(ExcelLineStyle.Dash_dot, ExcelKnownColors.Black);
-MemoryStream stream = new MemoryStream();
-workBook.SaveAs(stream);
-Save(stream, "Sample");
-{% endhighlight %}
-{% endtabs %}
-
-<img src="Export-to-Excel_images/winui-datagrid-change-border-style.png" alt="Changing Border Style in Exported Excel for WinUI DataGrid" width="100%" Height="Auto"/>
-
-#### Enabling Filters
-
-You can show filters in exported worksheet by enabling filter for the exported range in the worksheet.
-
-{% tabs %}
-{% highlight c# %}
-var options = new DataGridExcelExportOptions();
-var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
-var workBook = excelEngine.Excel.Workbooks[0];
-workBook.Worksheets[0].AutoFilters.FilterRange = workBook.Worksheets[0].UsedRange;
-MemoryStream stream = new MemoryStream();
-workBook.SaveAs(stream);
-Save(stream, "Sample");
-{% endhighlight %}
-{% endtabs %}
-
-<img src="Export-to-Excel_images/winui-datagrid-filter-on-exported-excel.png" alt="Filters on Exported Excel in WinUI DataGrid" width="100%" Height="Auto"/>
-
-While using `stacked headers`, you can specify the `range` based on Stacked headers count.
-
-{% tabs %}
-{% highlight c# %}
-var options = new DataGridExcelExportOptions();
-options.CanExportStackedHeaders = true;
-var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
-var workBook = excelEngine.Excel.Workbooks[0];
-var range = "A" + (dataGrid.StackedHeaderRows.Count + 1).ToString() + ":" + workBook.Worksheets[0].UsedRange.End.AddressLocal;
-excelEngine.Excel.Workbooks[0].Worksheets[0].AutoFilters.FilterRange = workBook.Worksheets[0].Range[range];
-MemoryStream stream = new MemoryStream();
-workBook.SaveAs(stream);
-Save(stream, "Sample");
-{% endhighlight %}
-{% endtabs %}
-
-You can refer [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#data-filtering).
-
-#### Customize the range of cells
-
-You can customize the range of cells after exporting to excel by directly manipulating worksheet.
-
-{% tabs %}
-{% highlight c# %}
-var options = new DataGridExcelExportOptions();
-var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
-var workBook = excelEngine.Excel.Workbooks[0];
-workBook.Worksheets[0].Range["A2:A6"].CellStyle.Color = Syncfusion.Drawing.Color.LightSlateGray;
-workBook.Worksheets[0].Range["A2:A6"].CellStyle.Font.Color = ExcelKnownColors.White;
-MemoryStream stream = new MemoryStream();
-workBook.SaveAs(stream);
-Save(stream, "Sample");
-{% endhighlight %}
-{% endtabs %}
-
-<img src="Export-to-Excel_images/winui-datagrid-range-of-cells-customization.png" alt="Customizing Range of Cells in Exported Excel for WinUI DataGrid" width="100%" Height="Auto"/>
-
 ## Exporting DetailsView
 
 By default, [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDataGrid.html) will be exported to Excel. You can customize its exporting operation by using `DetailsViewExportHandler`.
@@ -593,6 +479,119 @@ private static void CellsExportHandler(object sender, DataGridCellExcelExportOpt
 
 <img src="Export-to-Excel_images/winui-datagrid-exported-cell-customization.png" alt="Customizing DetailsViewDataGrid Cells while Exporting to Excel in WinUI DataGrid" width="100%" Height="Auto"/>
 
+## Customize exported workbook and worksheet
+
+SfDataGrid exports to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). You can refer [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating workbook and sheet after exporting. 
+
+### Workbook
+SfDataGrid provides option to return [ExcelEngine](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.ExcelEngine.html) from that you can get exported workbook. This allows you to protect, encrypt and add worksheet before saving. 
+
+{% tabs %}
+{% highlight c# %}
+var options = new DataGridExcelExportOptions();
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+var workBook = excelEngine.Excel.Workbooks[0];
+MemoryStream stream = new MemoryStream();
+workBook.SaveAs(stream);
+Save(stream, "Sample");
+{% endhighlight %}
+{% endtabs %}
+
+### Worksheet customization
+
+SfDataGrid provides support to export to already existing file or worksheet. 
+
+In the below code snippet, worksheet is created and passed to `ExportToExcel` method. In the same way, you can open already existing excel also using `XlsIO`. 
+
+{% tabs %}
+{% highlight c# %}
+var options = new DataGridExcelExportOptions();
+ExcelEngine excelEngine = new ExcelEngine();
+IWorkbook workBook = excelEngine.Excel.Workbooks.Create();
+dataGrid.ExportToExcel(dataGrid.View, options, workBook.Worksheets[0]);
+workBook.Version = ExcelVersion.Excel2013;
+MemoryStream stream = new MemoryStream();
+workBook.SaveAs(stream);
+Save(stream, "Sample");
+{% endhighlight %}
+{% endtabs %}
+
+Before saving workbook, you need to set the specific excel version by using `IWorkbook.Version` property. Here, you can directly manipulate the data in the worksheet. You can refer [here](http://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation) for more information.
+
+#### Setting borders
+
+You can set borders to excel cells by directly accessing worksheet after exporting data.
+
+{% tabs %}
+{% highlight c# %}
+var options = new DataGridExcelExportOptions();
+options.ExcelVersion = ExcelVersion.Excel2013;
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+var workBook = excelEngine.Excel.Workbooks[0];
+workBook.Worksheets[0].UsedRange.BorderInside(ExcelLineStyle.Dash_dot, ExcelKnownColors.Black);
+workBook.Worksheets[0].UsedRange.BorderAround(ExcelLineStyle.Dash_dot, ExcelKnownColors.Black);
+MemoryStream stream = new MemoryStream();
+workBook.SaveAs(stream);
+Save(stream, "Sample");
+{% endhighlight %}
+{% endtabs %}
+
+<img src="Export-to-Excel_images/winui-datagrid-change-border-style.png" alt="Changing Border Style in Exported Excel for WinUI DataGrid" width="100%" Height="Auto"/>
+
+#### Enabling Filters
+
+You can show filters in exported worksheet by enabling filter for the exported range in the worksheet.
+
+{% tabs %}
+{% highlight c# %}
+var options = new DataGridExcelExportOptions();
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+var workBook = excelEngine.Excel.Workbooks[0];
+workBook.Worksheets[0].AutoFilters.FilterRange = workBook.Worksheets[0].UsedRange;
+MemoryStream stream = new MemoryStream();
+workBook.SaveAs(stream);
+Save(stream, "Sample");
+{% endhighlight %}
+{% endtabs %}
+
+<img src="Export-to-Excel_images/winui-datagrid-filter-on-exported-excel.png" alt="Filters on Exported Excel in WinUI DataGrid" width="100%" Height="Auto"/>
+
+While using `stacked headers`, the filter option enable for stacked header cell. To avoid this, you can specify the `range` based on Stacked headers count to show the filter icon in the header cell.
+
+{% tabs %}
+{% highlight c# %}
+var options = new DataGridExcelExportOptions();
+options.CanExportStackedHeaders = true;
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+var workBook = excelEngine.Excel.Workbooks[0];
+var range = "A" + (dataGrid.StackedHeaderRows.Count + 1).ToString() + ":" + workBook.Worksheets[0].UsedRange.End.AddressLocal;
+excelEngine.Excel.Workbooks[0].Worksheets[0].AutoFilters.FilterRange = workBook.Worksheets[0].Range[range];
+MemoryStream stream = new MemoryStream();
+workBook.SaveAs(stream);
+Save(stream, "Sample");
+{% endhighlight %}
+{% endtabs %}
+
+You can refer [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#data-filtering).
+
+#### Customize the range of cells
+
+You can customize the range of cells after exporting to excel by directly manipulating worksheet.
+
+{% tabs %}
+{% highlight c# %}
+var options = new DataGridExcelExportOptions();
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+var workBook = excelEngine.Excel.Workbooks[0];
+workBook.Worksheets[0].Range["A2:A6"].CellStyle.Color = Syncfusion.Drawing.Color.LightSlateGray;
+workBook.Worksheets[0].Range["A2:A6"].CellStyle.Font.Color = ExcelKnownColors.White;
+MemoryStream stream = new MemoryStream();
+workBook.SaveAs(stream);
+Save(stream, "Sample");
+{% endhighlight %}
+{% endtabs %}
+
+<img src="Export-to-Excel_images/winui-datagrid-range-of-cells-customization.png" alt="Customizing Range of Cells in Exported Excel for WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Performance
 
@@ -605,7 +604,7 @@ You can perform cell level customization such as row-level styling, formatting p
 In the below code snippet, NumberFormat for `Unit Price` column is changed in the exported sheet after exporting without using `CellsExportHandler`. 
 
 Reference:
-[http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting](http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)
+[CellRange Formatting](http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)
 
 {% tabs %}
 {% highlight c# %}
