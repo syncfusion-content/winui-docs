@@ -9,13 +9,15 @@ documentation: ug
 
 # WinUI Rating Overview
 
-The Syncfusion provides the number of stars that represents a rating. And also used to configure the item size, tooltip and the number of displayed items in the SfRating control. The Rating control can be used in various scenarios like movie rating, rating the application and etc.
+The .NET WinUI Rating control is used to provide or view ratings on a numeric scale for any service provided, such as movies applications, products, and more.
 
 [!Rating control overview in WinUI](Rating_images/winui_rating_overview.png)
 
 ## Key features
 
-`Precision`: Options to decide the accuracy level of rating.
-`Value`: Options to set the value regarding precision type for the rating control.
-`ItemsCount`: Support to determine the number of Rating items to be displayed.
-`ToolTip`: Supports to show the selected rating value while clicking the rating control.
+* `Precision`: Set an accuracy level for ratings. 
+* `Template`: Add rating items as images, paths, font icons, and other elements.
+* `Read only`: Limit user selection and only allow viewing of the rating value. 
+* `ItemsCount`: Support to determine the number of Rating items to be displayed.
+* `ToolTip`: Show the value of rating on mouse hover over the control. 
+* `Customization`: Customize the rating item's style, size, and more. 
