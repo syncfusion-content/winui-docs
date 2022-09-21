@@ -625,7 +625,7 @@ Save(stream, "Sample");
 In the below code snippet, the background color of rows in excel is changed based on row index using conditional formatting for better performance.
 
 Reference:
-[http://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting](http://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting)
+[Conditional Formatting](http://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting)
 
 {% tabs %}
 {% highlight c# %}
