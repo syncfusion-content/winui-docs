@@ -263,20 +263,20 @@ private static void GridExportHandler(object sender, DataGridExcelExportStartOpt
 {
     if (e.CellType == ExportCellType.HeaderCell)
     {
-        e.Style.Color = Color.Red;
+        e.Style.Color = Color.FromArgb(100, 228, 234);
         e.Style.Font.Color = ExcelKnownColors.White;
         e.Handled = true;
     }
 
     else if (e.CellType == ExportCellType.RecordCell)
     {
-        e.Style.Color = Color.PaleTurquoise;
+        e.Style.Color = Color.FromArgb(240, 224, 144);
         e.Handled = true;
     }
 
     else if (e.CellType == ExportCellType.GroupCaptionCell)
     {
-        e.Style.Color = Color.Pink;
+        e.Style.Color = Color.FromArgb(252, 159, 161);
         e.Handled = true;
     }
 }
