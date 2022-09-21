@@ -115,7 +115,7 @@ this.Content = sfRadialGauge;
 
 ## Shadow support
 
-The shadow can be applied by the `HasShadow` property.
+The shadow can be applied by using the `HasShadow` property.
 
 {% tabs %}
 

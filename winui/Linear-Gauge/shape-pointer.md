@@ -161,7 +161,7 @@ this.Content = sfLinearGauge;
 
 ## Shadow support
 
-The shadow can be applied by the `HasShadow` property.
+The shadow can be applied by using the `HasShadow` property.
 
 {% tabs %}
 
@@ -201,7 +201,7 @@ this.Content = sfLinearGauge;
 
 ## Shape position customization
 
-The shape pointer can be moved near or far from its actual position in X or Y direction using the [`OffsetPoint`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearMarkerPointer.html#Syncfusion_UI_Xaml_Gauges_LinearMarkerPointer_OffsetPoint) property. 
+The shape pointer can be moved near or far from its actual position in the X or Y direction using the [`OffsetPoint`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearMarkerPointer.html#Syncfusion_UI_Xaml_Gauges_LinearMarkerPointer_OffsetPoint) property. 
 
 To move the pointer inside of the axis, provide positive values.
 
