@@ -95,7 +95,7 @@ chart.YAxes.Add(new NumericalAxis());
 
 ## Customization
 
-Both major and minor tick lines can be customized by using the [MajorTickStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorTickLineStyle) and [MinorTickStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorTickLineStyle) properties respectively. 
+Both major and minor tick lines can be customized by using the [MajorTickStyle]() and [MinorTickStyle]() properties respectively. 
 
 {% tabs %}
 

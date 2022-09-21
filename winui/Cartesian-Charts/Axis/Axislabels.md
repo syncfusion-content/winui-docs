@@ -13,7 +13,7 @@ Axis labels are used to show the units, measures, or category value of the axis 
 
 ## Rotation Angle
 
-The [LabelRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelRotationAngle) property is used to define the angle for the label content.
+The [LabelRotation]() property is used to define the angle for the label content.
 
 {% tabs %}
 
@@ -197,7 +197,7 @@ chart.XAxes.Add(primaryAxis);
 
 ## Smart Axis Labels
 
-When there are more number of axis labels, they may overlap with each other. Chart axis provides support to handle the overlapping axis labels using the [LabelsIntersectAction](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction) property. By default the [LabelsIntersectAction](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction) value is [Hide](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AxisLabelIntersectAction.html#Syncfusion_UI_Xaml_Charts_AxisLabelIntersectAction_Hide).
+When there are more number of axis labels, they may overlap with each other. Chart axis provides support to handle the overlapping axis labels using the [LabelsIntersectAction]() property. By default the [LabelsIntersectAction]() value is [Hide]().
 
 | Actions | Description |
 |--|--|
