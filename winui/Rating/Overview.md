@@ -18,6 +18,7 @@ The .NET WinUI Rating control is used to provide or view ratings on a numeric sc
 * `Precision`: Set an accuracy level for ratings. 
 * `Template`: Add rating items as images, paths, font icons, and other elements.
 * `Read only`: Limit user selection and only allow viewing of the rating value. 
-* `ItemsCount`: Support to determine the number of Rating items to be displayed.
+* `ItemsCount`: To specify the number of items to display.
 * `ToolTip`: Show the value of rating on mouse hover over the control. 
 * `Customization`: Customize the rating item's style, size, and more. 
+
