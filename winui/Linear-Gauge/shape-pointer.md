@@ -159,9 +159,49 @@ this.Content = sfLinearGauge;
 
 ![shape pointer customization](images/shape-pointer/shape_customization.png)
 
+## Shadow support
+
+The shadow can be applied by using the `HasShadow` property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<gauge:SfLinearGauge>
+    <gauge:SfLinearGauge.Axis>
+        <gauge:LinearAxis>
+            <gauge:LinearAxis.MarkerPointers>
+                <gauge:LinearShapePointer Value="50"
+                                          ShapeType="Circle"
+                                          HasShadow="True" />
+            </gauge:LinearAxis.MarkerPointers>
+        </gauge:LinearAxis>
+    </gauge:SfLinearGauge.Axis>
+</gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+LinearShapePointer linearShapePointer = new LinearShapePointer();
+linearShapePointer.Value = 50;
+linearShapePointer.ShapeType = GaugeShapeType.Circle;
+linearShapePointer.HasShadow = true;
+sfLinearGauge.Axis.MarkerPointers.Add(linearShapePointer);
+
+this.Content = sfLinearGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Change shape pointer elevation](images/shape-pointer/pointer_shadow.png)
+
 ## Shape position customization
 
-The shape pointer can be moved near or far from its actual position in X or Y direction using the [`OffsetPoint`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearMarkerPointer.html#Syncfusion_UI_Xaml_Gauges_LinearMarkerPointer_OffsetPoint) property. 
+The shape pointer can be moved near or far from its actual position in the X or Y direction using the [`OffsetPoint`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearMarkerPointer.html#Syncfusion_UI_Xaml_Gauges_LinearMarkerPointer_OffsetPoint) property. 
 
 To move the pointer inside of the axis, provide positive values.
 
