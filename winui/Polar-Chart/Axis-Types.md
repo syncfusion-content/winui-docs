@@ -136,7 +136,11 @@ The [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 <chart:SfPolarChart>
             
     <chart:SfPolarChart.PrimaryAxis>
-        <chart:DateTimeAxis Interval="1" IntervalType="Months" LabelFormat="MMM/dd"/>
+        <chart:DateTimeAxis Interval="1" IntervalType="Months">
+        <chart:DateTimeAxis.LabelStyle>
+            <chart:LabelStyle LabelFormat="MMM/dd" />
+        </chart:DateTimeAxis.LabelStyle>
+    </chart:DateTimeAxis>
     </chart:SfPolarChart.PrimaryAxis>
             
     <chart:SfPolarChart.SecondaryAxis>
@@ -156,7 +160,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 {
     Interval = 1,
     IntervalType = DateTimeIntervalType.Months,
-    LabelFormat = "MMM/dd",
+    LabelStyle = new LabelStyle() { LabelFormat="MMM/dd" },
 };
 
 chart.SecondaryAxis = new NumericalAxis();

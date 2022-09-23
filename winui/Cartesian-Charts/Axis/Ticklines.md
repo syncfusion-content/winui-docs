@@ -61,8 +61,8 @@ Both major and minor tick lines height can be customized by using the [TickLineS
 . . .
 <chart:SfCartesianChart.XAxes>
     <chart:NumericalAxis MinorTickLineSize="10" 
-						 MinorTicksPerInterval="4" 
-						 TickLineSize="15"/>
+                         MinorTicksPerInterval="4" 
+                         TickLineSize="15"/>
 </chart:SfCartesianChart.XAxes>
 
 <chart:SfCartesianChart.YAxes>
@@ -95,7 +95,7 @@ chart.YAxes.Add(new NumericalAxis());
 
 ## Customization
 
-Both major and minor tick lines can be customized by using the [MajorTickLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorTickLineStyle) and [MinorTickLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorTickLineStyle) properties respectively. 
+Both major and minor tick lines can be customized by using the [MajorTickStyle]() and [MinorTickStyle]() properties respectively. 
 
 {% tabs %}
 
@@ -112,8 +112,8 @@ Both major and minor tick lines can be customized by using the [MajorTickLineSty
 
 <chart:SfCartesianChart.XAxes>
     <chart:NumericalAxis MinorTicksPerInterval="4" 
-						 MinorTickLineStyle="{StaticResource lineStyle}"  
-						 MajorTickLineStyle="{StaticResource lineStyle}" />
+                         MinorTickStyle="{StaticResource lineStyle}"  
+                         MajorTickStyle="{StaticResource lineStyle}" />
 </chart:SfCartesianChart.XAxes>
 
 <chart:SfCartesianChart.YAxes>
@@ -131,8 +131,8 @@ SfCartesianChart chart = new SfCartesianChart();
 NumericalAxis primaryAxis = new NumericalAxis()
 {
     MinorTicksPerInterval = 4,
-    MajorTickLineStyle = chart.Resources["lineStyle"] as Style,
-    MinorTickLineStyle = chart.Resources["lineStyle"] as Style 
+    MajorTickStyle = chart.Resources["lineStyle"] as Style,
+    MinorTickStyle = chart.Resources["lineStyle"] as Style 
 };
 chart.XAxes.Add(primaryAxis);
 

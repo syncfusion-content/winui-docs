@@ -93,11 +93,11 @@ The title text content can be aligned horizontally to the left, center or right 
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart" 
-                Header="The Food Comparison Pyramid"
-                HorizontalHeaderAlignment="Left"
-                ItemsSource="{Binding Data}" 
-                XBindingPath="FoodName"
-                YBindingPath="Calories">
+                      Header="The Food Comparison Pyramid"
+                      HorizontalHeaderAlignment="Left"
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="FoodName"
+                      YBindingPath="Calories">
             
 </chart:SfPyramidChart>
 

@@ -56,9 +56,9 @@ The pyramid chart provides support to add any `UIElement` as a title for legend.
         <chart:ChartLegend>
             <chart:ChartLegend.Header>
                 <TextBox Text="Foods" 
-                    HorizontalAlignment="Center"
-                    FontWeight="Bold"
-                    Foreground="Blue"/>
+                         HorizontalAlignment="Center"
+                         FontWeight="Bold"
+                         Foreground="Blue"/>
             </chart:ChartLegend.Header>
         </chart:ChartLegend>
     </chart:SfPyramidChart.Legend>
@@ -107,7 +107,7 @@ The legend icon represents a symbol associated with each legend item. The appear
 . . .
     <chart:SfPyramidChart.Legend>
         <chart:ChartLegend IconWidth="15" IconHeight="15" 
-                       IconVisibility="Visible">
+                           IconVisibility="Visible">
         </chart:ChartLegend>
     </chart:SfPyramidChart.Legend>
 . . .
@@ -277,7 +277,6 @@ The legend background appearance can be customized by using the following proper
 `BorderThickness` - used to change the stroke width of the legend.
 `BorderBrush` - used to change the stroke color of the legend.
 `Background` - used to change the background color of the legend.
-`Opacity` - used to control the transparency of the legend icon shape.
 [CornerRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CornerRadius) - used to change the corner radius of the legend.
 
 {% tabs %}
@@ -287,9 +286,10 @@ The legend background appearance can be customized by using the following proper
 <chart:SfPyramidChart x:Name="chart">
 . . .
     <chart:SfPyramidChart.Legend>
-        <chart:ChartLegend Background="LightGray" BorderBrush="Black" 
-                       BorderThickness="1" CornerRadius="5" 
-                       Opacity="0.9" >
+        <chart:ChartLegend Background="LightGray" 
+                           BorderBrush="Black" 
+                           BorderThickness="1" 
+                           CornerRadius="5">
         </chart:ChartLegend>
     </chart:SfPyramidChart.Legend>
 . . .
@@ -305,7 +305,6 @@ chart.Legend = new ChartLegend()
     Background = new SolidColorBrush(Colors.LightGray),
     BorderBrush = new SolidColorBrush(Colors.Black),
     BorderThickness = new Thickness(1),
-    Opacity = 0.9,
     CornerRadius = new CornerRadius(5)
 };
 . . . 

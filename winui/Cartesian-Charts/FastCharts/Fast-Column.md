@@ -27,8 +27,8 @@ A fast column chart is a special kind of series that can render a collection wit
 
     <chart:SfCartesianChart.Series>
         <chart:FastColumnBitmapSeries ItemsSource="{Binding Data}" 
-									  XBindingPath="XValue" 
-									  YBindingPath="YValue"/>
+                                      XBindingPath="XValue" 
+                                      YBindingPath="YValue"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>

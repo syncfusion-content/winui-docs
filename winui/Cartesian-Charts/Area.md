@@ -29,8 +29,8 @@ The [WinUI Area Chart](https://www.syncfusion.com/winui-controls/charts/winui-ar
 
     <chart:SfCartesianChart.Series>
         <chart:AreaSeries ItemsSource="{Binding Data}" 
-						  XBindingPath="Demand" 
-						  YBindingPath="Year2010"/>  
+                          XBindingPath="Demand" 
+                          YBindingPath="Year2010"/>  
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
@@ -81,8 +81,8 @@ The [SplineAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
             
     <chart:SfCartesianChart.Series>
         <chart:SplineAreaSeries ItemsSource="{Binding Data}" 
-								XBindingPath="Demand" 
-								YBindingPath="Year2010"/>  
+                                XBindingPath="Demand" 
+                                YBindingPath="Year2010"/>  
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
@@ -135,8 +135,8 @@ The [StepAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
     <chart:SfCartesianChart.Series>
         <chart:StepAreaSeries XBindingPath="XValue" 
-							  YBindingPath="YValue" 
-							  ItemsSource="{Binding Data}"/> 
+                              YBindingPath="YValue" 
+                              ItemsSource="{Binding Data}"/> 
     </chart:SfCartesianChart.Series>
     ...
 </chart:SfCartesianChart>

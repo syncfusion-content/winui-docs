@@ -103,13 +103,14 @@ The default value of the [GroupTo](https://help.syncfusion.com/cr/winui/Syncfusi
 
     <chart:SfCircularChart.Series>
         <chart:PieSeries ItemsSource="{Binding Data}" 
-                     XBindingPath="Product" 
-                     YBindingPath="SalesRate" ShowDataLabels="True"
-                     GroupTo="1000" GroupMode="Value">
+                         XBindingPath="Product" 
+                         YBindingPath="SalesRate"
+                         ShowDataLabels="True"
+                         GroupTo="1000" GroupMode="Value">
             <chart:PieSeries.DataLabelSettings>
                 <chart:CircularDataLabelSettings ShowConnectorLine="True"
-                          ConnectorHeight="80" 
-                          Context="DataLabelItem"/>
+                                                 ConnectorHeight="80" 
+                                                 Context="DataLabelItem"/>
             </chart:PieSeries.DataLabelSettings>
         </chart:PieSeries>
     </chart:SfCircularChart.Series>
@@ -150,9 +151,11 @@ By using the [StartAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 <chart:SfCircularChart>
 
     <chart:SfCircularChart.Series>
-        <chart:PieSeries StartAngle="180" EndAngle="360" ItemsSource="{Binding Data}"
-                     XBindingPath="Product" 
-                     YBindingPath="SalesRate" ShowDataLabels="True"/>
+        <chart:PieSeries StartAngle="180" EndAngle="360"
+                         ItemsSource="{Binding Data}"
+                         XBindingPath="Product" 
+                         YBindingPath="SalesRate"
+                         ShowDataLabels="True"/>
     </chart:SfCircularChart.Series>
 
 </chart:SfCircularChart>
@@ -188,9 +191,15 @@ chart.Series.Add(series);
 <chart:SfCircularChart>
 . . .
     <chart:SfCircularChart.Series>
-        <chart:DoughnutSeries ItemsSource="{Binding Data}"  InnerRadius="0.7" XBindingPath="Demand" YBindingPath="Year2010"/>
-                    
-        <chart:PieSeries ItemsSource="{Binding Data}" Radius="0.5" XBindingPath="Demand"  YBindingPath="Year2011"/>
+        <chart:DoughnutSeries ItemsSource="{Binding Data}" 
+                              InnerRadius="0.7"                    
+                              XBindingPath="Demand"
+                              YBindingPath="Year2010"/>
+
+        <chart:PieSeries ItemsSource="{Binding Data}" 
+                         XBindingPath="Demand" 
+                         YBindingPath="Year2011"
+                         Radius="0.5" />
     </chart:SfCircularChart.Series>
 
 </chart:SfCircularChart>

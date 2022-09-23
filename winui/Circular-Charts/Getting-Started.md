@@ -250,7 +250,7 @@ chart.Legend = new ChartLegend();
 
 ## Enable Tooltip
 
-Tooltips are used to show information about the segment, when mouse over on it. Enable tooltip by setting series [ShowTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property as true.
+Tooltips are used to show information about the segment, when mouse over on it. Enable tooltip by setting series [EnableTooltip]() property as true.
 
 {% tabs %} 
 
@@ -258,7 +258,7 @@ Tooltips are used to show information about the segment, when mouse over on it. 
 
 <chart:SfCircularChart>
 . . .
-    <chart:PieSeries ShowTooltip="True"/>
+    <chart:PieSeries EnableTooltip="True"/>
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -268,7 +268,7 @@ Tooltips are used to show information about the segment, when mouse over on it. 
 SfCircularChart chart = new SfCircularChart();
 . . .
 PieSeries series = new PieSeries();
-series.ShowTooltip = true;
+series.EnableTooltip = true;
 
 chart.Series.Add(series);
 
@@ -291,7 +291,7 @@ The following code example gives you the complete code of above configurations.
     </chart:SfCircularChart.Legend>
     <chart:SfCircularChart.Series>
         <chart:PieSeries ItemsSource="{Binding Data}" ShowDataLabels="True"
-                         XBindingPath="Product" ShowTooltip="True"
+                         XBindingPath="Product" EnableTooltip="True"
                          YBindingPath="SalesRate">
         </chart:PieSeries>
     </chart:SfCircularChart.Series>
@@ -318,7 +318,7 @@ public sealed partial class MainWindow : Window
         series.SetBinding(PieSeries.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
         series.XBindingPath = "Product";
         series.YBindingPath = "SalesRate";
-        series.ShowTooltip = true;
+        series.EnableTooltip = true;
         series.ShowDataLabels = true;
 
         chart.Series.Add(series);

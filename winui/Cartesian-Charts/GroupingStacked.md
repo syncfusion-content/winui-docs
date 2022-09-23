@@ -26,24 +26,24 @@ Chart provides support to group the stacked similar series by using the [GroupNa
     </chart:SfCartesianChart.YAxes>  
     
     <chart:StackedColumnSeries GroupName="Group1" 
-							   XBindingPath="Year" 
-							   YBindingPath="Quarter1" 
-							   ItemsSource="{Binding AnnualDetails}"/>
+                               XBindingPath="Year" 
+                               YBindingPath="Quarter1" 
+                               ItemsSource="{Binding AnnualDetails}"/>
 
     <chart:StackedColumnSeries GroupName="Group1" 
-							   XBindingPath="Year" 
-							   YBindingPath="Quarter2"
-							   ItemsSource="{Binding AnnualDetails}"/>
+                               XBindingPath="Year" 
+                               YBindingPath="Quarter2"
+                               ItemsSource="{Binding AnnualDetails}"/>
 
     <chart:StackedColumnSeries GroupName="Group2" 
-							   XBindingPath="Year"  
-							   YBindingPath="Quarter3" 
-							   ItemsSource="{Binding AnnualDetails}"/>
+                               XBindingPath="Year"  
+                               YBindingPath="Quarter3" 
+                               ItemsSource="{Binding AnnualDetails}"/>
 
     <chart:StackedColumnSeries GroupName="Group2" 
-							   XBindingPath="Year"
-							   YBindingPath="Quarter4" 
-							   ItemsSource="{Binding AnnualDetails}"/>
+                               XBindingPath="Year"
+                               YBindingPath="Quarter4" 
+                               ItemsSource="{Binding AnnualDetails}"/>
 
 </chart:SfCartesianChart>
 

@@ -101,10 +101,10 @@ The title text content can be aligned horizontally to the left, center or right 
     <chart:SfCircularChart.Header>
         <Border BorderThickness="0.5" BorderBrush="Black" Margin="10" CornerRadius="5">
             <TextBlock Text="Circular Chart Header"
-                   Margin="5" 
-                   HorizontalTextAlignment="Center"
-                   FontFamily="Verdana" FontSize="14" 
-                   Foreground="Blue"/>
+                       Margin="5" 
+                       HorizontalTextAlignment="Center"
+                       FontFamily="Verdana" FontSize="14" 
+                       Foreground="Blue"/>
         </Border>
     </chart:SfCircularChart.Header>
 

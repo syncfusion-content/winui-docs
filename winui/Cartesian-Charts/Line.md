@@ -29,11 +29,11 @@ documentation: ug
 
     <chart:SfCartesianChart.Series>
         <chart:LineSeries XBindingPath="Demand" 
-						  ItemsSource="{Binding Data}" 
-						  YBindingPath="Year2010"/>
+	                      ItemsSource="{Binding Data}" 
+                          YBindingPath="Year2010"/>
         <chart:LineSeries XBindingPath="Demand" 
-						  ItemsSource="{Binding Data}" 
-						  YBindingPath="Year2011"/>
+                          ItemsSource="{Binding Data}" 
+                          YBindingPath="Year2011"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
@@ -94,13 +94,13 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ch
 
     <chart:SfCartesianChart.Series>
         <chart:LineSeries XBindingPath="Demand" 
-						  ItemsSource="{Binding Data}" 
-						  YBindingPath="Year2010" 
-						  StrokeDashArray="5,2"/>
+                          ItemsSource="{Binding Data}" 
+                          YBindingPath="Year2010" 
+                          StrokeDashArray="5,2"/>
         <chart:LineSeries XBindingPath="Demand" 
-						  ItemsSource="{Binding Data}" 
-						  YBindingPath="Year2011" 
-						  StrokeDashArray="5,2"/>
+                          ItemsSource="{Binding Data}" 
+                          YBindingPath="Year2011" 
+                          StrokeDashArray="5,2"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
@@ -167,11 +167,11 @@ The [StepLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
     <chart:SfCartesianChart.Series>
         <chart:StepLineSeries ItemsSource="{Binding Data}" 
-							  XBindingPath="XValue" 
-							  YBindingPath="YValue"/>
+                              XBindingPath="XValue" 
+                              YBindingPath="YValue"/>
         <chart:StepLineSeries ItemsSource="{Binding Data}" 
-							  XBindingPath="XValue" 
-							  YBindingPath="YValue1"/>
+                              XBindingPath="XValue" 
+                              YBindingPath="YValue1"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
@@ -228,11 +228,11 @@ The [SplineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 
     <chart:SfCartesianChart.Series>
         <chart:SplineSeries XBindingPath="Demand" 
-							ItemsSource="{Binding Data}" 
-							YBindingPath="Year2010"/>
+                            ItemsSource="{Binding Data}" 
+                            YBindingPath="Year2010"/>
         <chart:SplineSeries XBindingPath="Demand" 
-							ItemsSource="{Binding Data}" 
-							YBindingPath="Year2011"/>
+                            ItemsSource="{Binding Data}" 
+                            YBindingPath="Year2011"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
@@ -299,9 +299,9 @@ The following types are used in SplineSeries:
 
     <chart:SfCartesianChart.Series>
         <chart:SplineSeries XBindingPath="Demand" 
-							ItemsSource="{Binding Data}" 
-							YBindingPath="Year2010" 
-							Type="Cardinal"/>
+                            ItemsSource="{Binding Data}" 
+                            YBindingPath="Year2010" 
+                            Type="Cardinal"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>

@@ -50,9 +50,9 @@ Polar chart provides support to add any `UIElement` as a title for legend. [Head
         <chart:ChartLegend>
             <chart:ChartLegend.Header>
                 <TextBlock Text="Plant Details" 
-                    HorizontalAlignment="Center"
-                    FontWeight="Bold"
-                    Foreground="Blue"/>
+                           HorizontalAlignment="Center"
+                           FontWeight="Bold"
+                           Foreground="Blue"/>
             </chart:ChartLegend.Header>
         </chart:ChartLegend>
     </chart:SfPolarChart.Legend>
@@ -263,7 +263,6 @@ The legend background appearance can be customized by using the following proper
 `BorderThickness` - used to change the stroke width of the legend.
 `BorderBrush` - used to change the stroke color of the legend.
 `Background` - used to change the background color of legend.
-`Opacity` - used to control the transparency of the legend icon shape.
 [CornerRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CornerRadius) - used to change the corner radius of the legend.
 
 {% tabs %}
@@ -272,9 +271,10 @@ The legend background appearance can be customized by using the following proper
 
 <chart:SfPolarChart>
     <chart:SfPolarChart.Legend>
-        <chart:ChartLegend Background="LightGray" BorderBrush="Black" 
-                        BorderThickness="1" CornerRadius="5" 
-                        Opacity="0.9">
+        <chart:ChartLegend Background="LightGray"
+                           BorderBrush="Black" 
+                           BorderThickness="1" 
+                           CornerRadius="5">
         </chart:ChartLegend>
     </chart:SfPolarChart.Legend>
     ...
@@ -290,7 +290,6 @@ chart.Legend = new ChartLegend()
     Background = new SolidColorBrush(Colors.LightGray),
     BorderBrush = new SolidColorBrush(Colors.Black),
     BorderThickness = new Thickness(1),
-    Opacity = 0.9,
     CornerRadius = new CornerRadius(5)
 };
 ...
@@ -312,7 +311,7 @@ Customize each legend item by using the `ItemTemplate` property in [ChartLegend]
         <DataTemplate x:Key="labelTemplate">
             <StackPanel Margin="10" Orientation="Vertical">
                 <Ellipse Height="15" Width="15" Fill="{Binding Interior}" 
-                 Stroke="#4a4a4a" StrokeThickness="2"/>
+                         Stroke="#4a4a4a" StrokeThickness="2"/>
                 <TextBlock HorizontalAlignment="Center" FontSize="12"
                            Foreground="Black" 
                            FontWeight="SemiBold" Text="{Binding Label}"/>

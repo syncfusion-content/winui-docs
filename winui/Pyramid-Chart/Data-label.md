@@ -20,10 +20,10 @@ To define the data label in the chart, set the [ShowDataLabels](https://help.syn
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart" 
-                ShowDataLabels="True"
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
+                      ShowDataLabels="True"
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="Category"
+                      YBindingPath="Value">
 . . .
  </chart:SfPyramidChart>
 
@@ -54,10 +54,10 @@ To customize the content of data labels, need to define [DataLabelSettings](http
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart" 
-                ShowDataLabels="True"
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
+                      ShowDataLabels="True"
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="Category"
+                      YBindingPath="Value">
 . . .
     <chart:SfPyramidChart.DataLabelSettings>
         <chart:PyramidDataLabelSettings Context="Percentage" />
@@ -104,10 +104,10 @@ The following properties are used to customize the data label:
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart" 
-                ShowDataLabels="True"
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
+                      ShowDataLabels="True"
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="Category"
+                      YBindingPath="Value">
 . . .
     <chart:SfPyramidChart.DataLabelSettings>
         <chart:PyramidDataLabelSettings Foreground="White" FontSize="16" FontFamily="Calibri" BorderBrush="White" BorderThickness="1" Margin="1" FontStyle="Italic" Background="#1E88E5" />
@@ -210,10 +210,10 @@ The [Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart" 
-                ShowDataLabels="True"
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
+                      ShowDataLabels="True"
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="Category"
+                      YBindingPath="Value">
 
     <chart:SfPyramidChart.DataLabelSettings>
         <chart:PyramidDataLabelSettings Format="#.000" Foreground="White" />
@@ -251,10 +251,10 @@ The [Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Ch
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart" 
-                ShowDataLabels="True"
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
+                      ShowDataLabels="True"
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="Category"
+                      YBindingPath="Value">
 
     <chart:SfPyramidChart.DataLabelSettings>
         <chart:PyramidDataLabelSettings Rotation="45" BorderBrush="White" BorderThickness="1" Background="#1E88E5"/>

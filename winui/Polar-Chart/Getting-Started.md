@@ -187,8 +187,8 @@ N> To plot the series, the [XBindingPath](https://help.syncfusion.com/cr/winui/S
     </chart:SfPolarChart.SecondaryAxis>
     <chart:SfPolarChart.Series>
         <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                         XBindingPath="Direction" 
-                         YBindingPath="Tree"/>
+                               XBindingPath="Direction" 
+                               YBindingPath="Tree"/>
     </chart:SfPolarChart.Series>
     ...
 </chart:SfPolarChart>
@@ -258,9 +258,9 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 <chart:SfPolarChart>
     ...
     <chart:PolarAreaSeries ShowDataLabels="True"
-                        ItemsSource="{Binding PlantDetails}" 
-                        XBindingPath="Direction" 
-                        YBindingPath="Tree">
+                           ItemsSource="{Binding PlantDetails}" 
+                           XBindingPath="Direction" 
+                           YBindingPath="Tree">
     </chart:PolarAreaSeries>
 </chart:SfPolarChart>
 
@@ -315,9 +315,9 @@ N> Additionally, set label for each series using the [Label](https://help.syncfu
 <chart:SfPolarChart>
     . . .
     <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                        XBindingPath="Direction" 
-                        YBindingPath="Tree"
-                        Label="Tree"/>
+                           XBindingPath="Direction" 
+                           YBindingPath="Tree"
+                           Label="Tree"/>
     ...
 </chart:SfPolarChart>
 
@@ -359,13 +359,13 @@ The following code example gives you the complete code of above configurations.
     </chart:SfPolarChart.Legend>
     <chart:SfPolarChart.Series>
         <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                         XBindingPath="Direction" YBindingPath="Tree"
-                         Label="Tree" ShowDataLabels="True"
-                         LegendIcon="Pentagon">
-                <chart:PolarAreaSeries.DataLabelSettings>
-                    <chart:PolarDataLabelSettings Foreground="White" FontSize="12" 
-                                            FontFamily="Calibri" BorderBrush="White" 
-                                            BorderThickness="1" Margin="1"/>
+                               XBindingPath="Direction" YBindingPath="Tree"
+                               Label="Tree" ShowDataLabels="True"
+                               LegendIcon="Pentagon">
+            <chart:PolarAreaSeries.DataLabelSettings>
+                <chart:PolarDataLabelSettings Foreground="White" FontSize="12" 
+                                              FontFamily="Calibri" BorderBrush="White" 
+                                              BorderThickness="1" Margin="1"/>
                 </chart:PolarAreaSeries.DataLabelSettings>
         </chart:PolarAreaSeries>
     </chart:SfPolarChart.Series>

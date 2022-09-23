@@ -19,19 +19,16 @@ To render a area series in polar chart, create an instance of the [PolarAreaSeri
 ...
     <chart:SfPolarChart.Series>
         <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                    XBindingPath="Direction"
-                    YBindingPath="Tree" Label="Tree">
-        </chart:PolarAreaSeries>
+                               XBindingPath="Direction"
+                               YBindingPath="Tree" Label="Tree" />
 
         <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                    XBindingPath="Direction"
-                    YBindingPath="Weed" Label="Weed">
-        </chart:PolarAreaSeries>
+                               XBindingPath="Direction"
+                               YBindingPath="Weed" Label="Weed" />
 
         <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                    XBindingPath="Direction"
-                    YBindingPath="Flower" Label="Flower">
-        </chart:PolarAreaSeries>
+                               XBindingPath="Direction"
+                               YBindingPath="Flower" Label="Flower" />
     </chart:SfPolarChart.Series>
 ...
 </chart:SfPolarChart>
@@ -80,9 +77,8 @@ The [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 ...
     <chart:SfPolarChart.Series>
         <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                    XBindingPath="Direction"
-                    YBindingPath="Tree" >
-        </chart:PolarAreaSeries>
+                               XBindingPath="Direction"
+                               YBindingPath="Tree" />
     </chart:SfPolarChart.Series>
 ...
 </chart:SfPolarChart>
@@ -120,10 +116,9 @@ chart.Series.Add(series);
 ...
     <chart:SfPolarChart.Series>
         <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                    XBindingPath="Direction"
-                    YBindingPath="Tree" 
-                    IsClosed="False">
-        </chart:PolarAreaSeries>
+                               XBindingPath="Direction"
+                               YBindingPath="Tree" 
+                               IsClosed="False" />
     </chart:SfPolarChart.Series>
 ...
 </chart:SfPolarChart>
