@@ -31,10 +31,10 @@ To render a scatter chart, create an instance of the [ScatterSeries](https://hel
                 
     <chart:SfCartesianChart.Series>
         <chart:ScatterSeries PointHeight="7" 
-							 PointWidth="7" 
-							 ItemsSource="{Binding Data}" 
-							 XBindingPath="XValue" 
-							 YBindingPath="YValue"/>
+                             PointWidth="7" 
+                             ItemsSource="{Binding Data}" 
+                             XBindingPath="XValue" 
+                             YBindingPath="YValue"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>

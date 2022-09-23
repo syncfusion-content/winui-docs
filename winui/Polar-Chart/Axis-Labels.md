@@ -13,7 +13,7 @@ The axis labels are used to show the units, measures, or category values of the 
 
 ## Rotation
 
-The [LabelRotationAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelRotationAngle) property is used to define the angle for the label content.
+The [LabelRotation]() property is used to define the angle for the label content.
 
 {% tabs %}
 
@@ -22,7 +22,7 @@ The [LabelRotationAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 <chart:SfPolarChart>
     ...
     <chart:SfPolarChart.SecondaryAxis>
-        <chart:NumericalAxis LabelRotationAngle="30"/>
+        <chart:NumericalAxis LabelRotation="30"/>
     </chart:SfPolarChart.SecondaryAxis>
     ...
 </chart:SfPolarChart>
@@ -36,7 +36,7 @@ SfPolarChart chart = new SfPolarChart();
 chart.PrimaryAxis = new CategoryAxis();
 chart.SecondaryAxis = new NumericalAxis()
 {
-    LabelRotationAngle = 30,
+    LabelRotation = 30,
 }
 ...
 
@@ -44,7 +44,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Chart axis label rotation angle support in WinUI chart](Axis_Images/WinUI_Chart_LabelRotationAngle.png)
+![Chart axis label rotation support in WinUI chart](Axis_Images/WinUI_Chart_LabelRotationAngle.png)
 
 ## Format
 
@@ -61,7 +61,11 @@ Axis labels can be formatted by predefined formatting types by using the [LabelF
     </chart:SfPolarChart.PrimaryAxis>
                 
     <chart:SfPolarChart.SecondaryAxis>
-        <chart:NumericalAxis LabelFormat="0.0"/>
+        <chart:NumericalAxis>
+            <chart:NumericalAxis.LabelStyle>
+                <chart:LabelStyle LabelFormat="0.0" />
+            </chart:NumericalAxis.LabelStyle>
+        </chart:NumericalAxis>
     </chart:SfPolarChart.SecondaryAxis>
     ...
 
@@ -77,7 +81,7 @@ chart.PrimaryAxis = new CategoryAxis();
 
 chart.SecondaryAxis = new NumericalAxis()
 {
-    LabelFormat = "0.0",
+    LabelStyle = new LabelStyle() { LabelFormat= "0.0" }
 };
 ...
 

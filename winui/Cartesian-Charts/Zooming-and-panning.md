@@ -122,7 +122,7 @@ chart.ZoomPanBehavior = zooming;
 
 <chart:SfCartesianChart>
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis ShowGridLines="False" ZoomFactor="0.3" ZoomPosition="0.5"/>
+        <chart:CategoryAxis ShowMajorGridLines="False" ZoomFactor="0.3" ZoomPosition="0.5"/>
     </chart:SfCartesianChart.XAxes>
     ...
 </chart:SfCartesianChart>
@@ -134,7 +134,7 @@ chart.ZoomPanBehavior = zooming;
 SfCartesianChart chart = new SfCartesianChart();
 CategoryAxis primaryAxis = new CategoryAxis()
 {
-    ShowGridLines = false,
+    ShowMajorGridLines = false,
     ZoomFactor = 0.3,
     ZoomPosition = 0.5
 };

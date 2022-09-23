@@ -112,13 +112,13 @@ The appearance of the header can be customized using the [HeaderTemplate](https:
             </Border>
         </DataTemplate>
     </chart:SfPolarChart.Resources>
-
+    
     <chart:SfPolarChart.PrimaryAxis>
         <chart:CategoryAxis/>
     </chart:SfPolarChart.PrimaryAxis>
     <chart:SfPolarChart.SecondaryAxis>
-        <chart:NumericalAxis Header="Tree" HeaderTemplate="{StaticResource headerTemplate}">
-        </chart:NumericalAxis>
+        <chart:NumericalAxis Header="Tree" 
+                             HeaderTemplate="{StaticResource headerTemplate}" />
     </chart:SfPolarChart.SecondaryAxis>
     ...
 </chart:SfPolarChart>

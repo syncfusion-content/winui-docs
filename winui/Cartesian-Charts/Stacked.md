@@ -28,16 +28,16 @@ The [StackedColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
     </chart:SfCartesianChart.YAxes>  
 
     <chart:StackedColumnSeries XBindingPath="CountryName"    
-							   YBindingPath="GoldMedals" 
-							   ItemsSource="{Binding MedalDetails}"/>
+                               YBindingPath="GoldMedals" 
+                               ItemsSource="{Binding MedalDetails}"/>
 
     <chart:StackedColumnSeries XBindingPath="CountryName" 
-							   YBindingPath="SilverMedals" 
-							   ItemsSource="{Binding MedalDetails}"/> 
+                               YBindingPath="SilverMedals" 
+                               ItemsSource="{Binding MedalDetails}"/> 
 
     <chart:StackedColumnSeries XBindingPath="CountryName" 
-							   YBindingPath="BronzeMedals" 
-							   ItemsSource="{Binding MedalDetails}"/>
+                               YBindingPath="BronzeMedals" 
+                               ItemsSource="{Binding MedalDetails}"/>
     ...
 </chart:SfCartesianChart>
 {% endhighlight %}
@@ -104,20 +104,17 @@ The [StackedLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
         <chart:NumericalAxis />
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:StackedLineSeries  
-            XBindingPath="MonthlyExpenses"    
-            YBindingPath="Father" 
-            ItemsSource="{Binding Data}"/>
+    <chart:StackedLineSeries XBindingPath="MonthlyExpenses"    
+                             YBindingPath="Father" 
+                             ItemsSource="{Binding Data}"/>
 
-    <chart:StackedLineSeries
-            XBindingPath="MonthlyExpenses" 
-            YBindingPath="Mother"
-            ItemsSource="{Binding Data}"/> 
+    <chart:StackedLineSeries XBindingPath="MonthlyExpenses" 
+                             YBindingPath="Mother"
+                             ItemsSource="{Binding Data}"/> 
 
-    <chart:StackedLineSeries 
-            XBindingPath="MonthlyExpenses" 
-            YBindingPath="Son"
-            ItemsSource="{Binding Data}" />
+    <chart:StackedLineSeries XBindingPath="MonthlyExpenses" 
+                             YBindingPath="Son"
+                             ItemsSource="{Binding Data}" />
     ...
 </chart:SfCartesianChart>
 
@@ -186,16 +183,16 @@ The [StackedAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
     </chart:SfCartesianChart.YAxes>  
 
     <chart:StackedAreaSeries XBindingPath="Month" 
-							 YBindingPath="Bus" 
-							 ItemsSource="{Binding Accidents}" />
+                             YBindingPath="Bus" 
+                             ItemsSource="{Binding Accidents}" />
 
     <chart:StackedAreaSeries XBindingPath="Month"         
-							 YBindingPath="Car" 
-							 ItemsSource="{Binding Accidents}" />
+                             YBindingPath="Car" 
+                             ItemsSource="{Binding Accidents}" />
 
     <chart:StackedAreaSeries XBindingPath="Month"                 
-							 YBindingPath="Truck" 
-							 ItemsSource="{Binding Accidents}" />
+                             YBindingPath="Truck" 
+                             ItemsSource="{Binding Accidents}" />
     ...
 </chart:SfCartesianChart>
 

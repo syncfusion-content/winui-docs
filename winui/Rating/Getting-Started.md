@@ -52,12 +52,14 @@ This section explains the steps required to add the WinUI Rating control and cov
 // Creating an instance of the Rating control.
 SfRating rating = new SfRating();
 
-//Setting the property value to the Rating control instance.
+//Adding items to the Rating control.
 rating.Items.Add(new SfRatingItem() { Content = "1"});
 rating.Items.Add(new SfRatingItem() { Content = "2"});
 rating.Items.Add(new SfRatingItem() { Content = "3"});
 rating.Items.Add(new SfRatingItem() { Content = "4"});
 rating.Items.Add(new SfRatingItem() { Content = "5"});
+
+//Setting rating value.
 rating.Value = 3;
            
 {% endhighlight %}
@@ -77,7 +79,6 @@ rating.Value = 3;
 {% highlight C# %}
 
 SfRating rating = new SfRating();
-
 rating.Value = 3;
 rating.ItemsCount = 5;
 

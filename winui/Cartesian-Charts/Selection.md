@@ -11,6 +11,20 @@ documentation: ug
 
 Cartesian chart supports selection that allows to select a segment or series in the chart by using [SelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_SelectionBehavior) property. 
 
+## Properties
+
+The Selection feature can be configured using the following properties:
+
+* [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) - Gets or Sets the [ChartSelectionType]() Enum value for the Selection Behavior.     
+The following `ChartSelectionType` can be achieved during Selection:
+    * Single - Allows to select a single segment or series.
+    * SingleDeselect -  Allows to select and deselect a single segment or series.
+    * Multiple - Allows to select multiple segments or series.
+    * None - Restricts the segment or series selection.
+* [SelectionBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionBrush) - Gets or Sets  the SelectionBrush color value for Selection Behavior.
+* [SelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectedIndex) - Gets or Sets  the index value of the segment that should be selected during the Selection.
+* [SelectedIndexes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectedIndexes) - Gets or Sets  the list of indexes of the segments that should be selected during the Selection.
+
 ## Enable DataPoint Selection
 
 To enable the datapoint selection in chart, create an instance of [DataPointSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataPointSelectionBehavior.html) and set it to the `SelectionBehavior` property of chart series. And also need to set the [SelectionBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionBrush) property to highlight the segment in the chart.
@@ -145,7 +159,7 @@ this.Content = chart;
 
 ## Multi-selection
 
-Cartesian chart provides support to select single or multiple segments/series by using the [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) property. [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) property with [Multiple](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SelectionType.html#Syncfusion_UI_Xaml_Charts_SelectionType_Multiple) value is used to select multiple segments/series. By default, the [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) value is [Single](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SelectionType.html#Syncfusion_UI_Xaml_Charts_SelectionType_Single).
+Cartesian chart provides support to select single or multiple segments/series by using the [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) property. [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) property with [Multiple]() value is used to select multiple segments/series. By default, the [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) value is [Single]().
 
 {% tabs %}
 
@@ -158,11 +172,11 @@ Cartesian chart provides support to select single or multiple segments/series by
         <chart:ColumnSeries ItemsSource="{Binding Data}"  
                             XBindingPath="Demand"
                             YBindingPath="Year2010">
-		    <chart:ColumnSeries.SelectionBehavior>
-		        <chart:DataPointSelectionBehavior SelectionBrush="Red" 
-												  Type="Multiple"/>
-		    </chart:ColumnSeries.SelectionBehavior>
-	    </chart:ColumnSeries>				
+            <chart:ColumnSeries.SelectionBehavior>
+                <chart:DataPointSelectionBehavior SelectionBrush="Red" 
+                                                  Type="Multiple"/>
+            </chart:ColumnSeries.SelectionBehavior>
+        </chart:ColumnSeries>				
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
@@ -183,7 +197,7 @@ ColumnSeries series = new ColumnSeries()
 
 DataPointSelectionBehavior selection = new DataPointSelectionBehavior();
 selection.SelectionBrush = new SolidColorBrush(Colors.Red);
-selection.Type = SelectionType.Multiple;
+selection.Type = ChartSelectionType.Multiple;
 series.SelectionBehavior = selection;
 
 chart.Series.Add(series);
@@ -204,9 +218,9 @@ The following code snippet demonstrates multiple series selection.
 <chart:SfCartesianChart>
 . . .
     <chart:SfCartesianChart.SelectionBehavior>
-	    <chart:SeriesSelectionBehavior SelectionBrush="Red"
-									   Type="Multiple"/>
-	</chart:SfCartesianChart.SelectionBehavior>	
+        <chart:SeriesSelectionBehavior SelectionBrush="Red"
+                                       Type="Multiple"/>
+    </chart:SfCartesianChart.SelectionBehavior>	
 . . .
 </chart:SfCartesianChart>
 
@@ -218,7 +232,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 SeriesSelectionBehavior selection = new SeriesSelectionBehavior();
 selection.SelectionBrush = new SolidColorBrush(Colors.Red);
-selection.Type = SelectionType.Multiple;
+selection.Type = ChartSelectionType.Multiple;
 chart.SelectionBehavior = selection;
 . . .
 this.Content = chart;
@@ -240,17 +254,16 @@ Cartesian chart provides support to select a point programmatically on a chart u
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
-    
+. . .   
     <chart:SfCartesianChart.Series>
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand"
                             YBindingPath="Year2010">
-			<chart:ColumnSeries.SelectionBehavior>
-			    <chart:DataPointSelectionBehavior SelectedIndex="3" 
-												  SelectionBrush="Red"/>
-			</chart:ColumnSeries.SelectionBehavior>
-		</chart:ColumnSeries>	
+            <chart:ColumnSeries.SelectionBehavior>
+                <chart:DataPointSelectionBehavior SelectedIndex="3" 
+                                                  SelectionBrush="Red"/>
+            </chart:ColumnSeries.SelectionBehavior>
+        </chart:ColumnSeries>	
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
@@ -292,9 +305,9 @@ Select a series programmatically on a chart using the [SelectedIndex](https://he
 <chart:SfCartesianChart>
 . . .
     <chart:SfCartesianChart.SelectionBehavior>
-	    <chart:SeriesSelectionBehavior SelectionBrush="Red" 
-									   SelectedIndex="1"/>
-	</chart:SfCartesianChart.SelectionBehavior>	
+        <chart:SeriesSelectionBehavior SelectionBrush="Red" 
+                                       SelectedIndex="1"/>
+    </chart:SfCartesianChart.SelectionBehavior>	
 . . .
 </chart:SfCartesianChart>
 
@@ -330,9 +343,9 @@ Cartesian chart provides support to select multiple points programmatically on a
     <chart:ColumnSeries ItemsSource="{Binding Data}" 
                         XBindingPath="Demand"
                         YBindingPath="Year2010">
-			<chart:ColumnSeries.SelectionBehavior>
+            <chart:ColumnSeries.SelectionBehavior>
                 <chart:DataPointSelectionBehavior SelectionBrush="BlueViolet" 
-				                                  Type="Multiple" 
+                                                  Type="Multiple" 
                                                   SelectedIndexes="{Binding SelectedIndexes}" />
             </chart:ColumnSeries.SelectionBehavior>
     </chart:ColumnSeries>
@@ -354,7 +367,7 @@ ColumnSeries series = new ColumnSeries()
 DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
 {
 	SelectionBrush = new SolidColorBrush(Colors.BlueViolet),
-    Type = SelectionType.Multiple,
+    Type = ChartSelectionType.Multiple,
     SelectedIndexes = new List<int>() { 1, 3 }
 };
 
@@ -373,15 +386,15 @@ The following selection events are available in the [ChartSelectionBehavior](htt
 
 ### SelectionChanging
 
-The [SelectionChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionChanging) event occurs before the data point or series is being selected. This is a cancelable event. This argument contains the following information.
+The [SelectionChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionChanging) event occurs before the data point or series is being selected. This is a cancelable event. The `ChartSelectionChangingEventArgs` contains the following information.
 
-* [CurrentIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_SelectionChangingEventArgs_CurrentIndex) - Gets the selected data point orseries index.
-* [PreviousIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_SelectionChangingEventArgs_PreviousIndex) - Gets the previous selected data point or series index.
+* [NewIndexes]() - Gets the collection of selected data point or series index. Here, NewIndexes[0] is the current selected index.
+* [OldIndexes]() - Gets the collection of previous selected data point or series index. Here, OldIndexes[0] is the current unselected index.
 * [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-6.0) - Gets or sets a value that indicates whether the selection should be canceled.
 
 ### SelectionChanged
 
-The [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionChanged) event occurs after a data point or series has been selected. This argument contains the following information.
+The [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionChanged) event occurs after a data point or series has been selected. The `ChartSelectionChangedEventArgs` contains the following information.
 
-* [CurrentIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_SelectionChangedEventArgs_CurrentIndex) - Gets the selected data point or series index.
-* [PreviousIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_SelectionChangedEventArgs_PreviousIndex) - Gets the previous selected data point or series index.
+* [NewIndexes]() - Gets the collection of selected data point or series index. Here, NewIndexes[0] is the current selected index.
+* [OldIndexes]() - Gets the collection of previous selected data point or series index. Here, OldIndexes[0] is the current unselected index.

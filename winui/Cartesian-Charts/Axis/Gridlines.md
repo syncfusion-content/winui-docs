@@ -11,7 +11,7 @@ documentation: ug
 
 ## Major Grid Lines
 
-By default, major gridlines are automatically added to the [ChartAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html) in its defined intervals. The visibility of the gridlines can be controlled using the [ShowGridLines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowGridLines) property. The default value of [ShowGridLines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowGridLines) is true. 
+By default, major gridlines are automatically added to the [ChartAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html) in its defined intervals. The visibility of the gridlines can be controlled using the [ShowMajorGridLines]() property. The default value of [ShowMajorGridLines]() is true. 
 
 {% tabs %}
 
@@ -20,7 +20,7 @@ By default, major gridlines are automatically added to the [ChartAxis](https://h
 <chart:SfCartesianChart>
 
 <chart:SfCartesianChart.XAxes>
-    <chart:NumericalAxis ShowGridLines="False"/>
+    <chart:NumericalAxis ShowMajorGridLines="False"/>
 </chart:SfCartesianChart.XAxes>
 
 <chart:SfCartesianChart.YAxes>
@@ -37,7 +37,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 NumericalAxis primaryAxis = new NumericalAxis()
 {
-    ShowGridLines = false
+    ShowMajorGridLines = false
 };
 chart.XAxes.Add(primaryAxis);
 
@@ -158,7 +158,7 @@ The [MinorGridLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 
 <chart:SfCartesianChart.YAxes>
     <chart:NumericalAxis MinorTicksPerInterval="3" 
-						 MinorGridLineStyle="{StaticResource lineStyle}"/>
+                         MinorGridLineStyle="{StaticResource lineStyle}"/>
 </chart:SfCartesianChart.YAxes>
 . . .
 </chart:SfCartesianChart>

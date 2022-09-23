@@ -15,11 +15,10 @@ The neck width of funnel chart can be customized by using the [MinimumWidth](htt
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart
-        MinimumWidth="20" 
-        ItemsSource="{Binding Data}" 
-        XBindingPath="Category"
-        YBindingPath="Value">
+<chart:SfFunnelChart MinimumWidth="20" 
+                     ItemsSource="{Binding Data}" 
+                     XBindingPath="Category"
+                     YBindingPath="Value">
 </chart:SfFunnelChart>
  
 {% endhighlight %}
@@ -48,11 +47,10 @@ The funnel chart can be customized to the inverted pyramid chart by setting the 
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart
-        MinimumWidth="0" 
-        ItemsSource="{Binding Data}" 
-        XBindingPath="Category"
-        YBindingPath="Value">
+<chart:SfFunnelChart MinimumWidth="0" 
+                     ItemsSource="{Binding Data}" 
+                     XBindingPath="Category"
+                    YBindingPath="Value">
 </chart:SfFunnelChart>
  
 {% endhighlight %}

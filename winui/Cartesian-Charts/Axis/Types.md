@@ -224,38 +224,6 @@ chart.YAxes.Add(new NumericalAxis());
 
 ![CategoryAxis interval support in WinUI Chart](Axis_Images/winui_chart_category_axis_interval.png)
 
-### IsIndexed
-
-By default, [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) plots the values based on the index of the data points. However, the [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) can be made to plot the data points based on its data, instead of index value by disabling the [IsIndexed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_IsIndexed) property of [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html).
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart>
-. . .
-<chart:SfCartesianChart.XAxes>
-    <chart:CategoryAxis IsIndexed="False"/>
-</chart:SfCartesianChart.XAxes>
-
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-. . .
-CategoryAxis primaryAxis = new CategoryAxis()
-{
-    IsIndexed = false,
-};
-chart.XAxes.Add(primaryAxis);
-
-{% endhighlight %}
-
-{% endtabs %}
-
 ## DateTime Axis
 
 [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is used to plot `DateTime` values. The [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is widely used to make financial charts in places like the Stock Market, where index plotting is done every day.
@@ -267,7 +235,11 @@ chart.XAxes.Add(primaryAxis);
 <chart:SfCartesianChart>
 . . .
 <chart:SfCartesianChart.XAxes>
-    <chart:DateTimeAxis LabelFormat="MMM-yy"/>
+    <chart:DateTimeAxis>
+        <chart:DateTimeAxis.LabelStyle>
+            <chart:LabelStyle LabelFormat="MMM-yy" />
+        </chart:DateTimeAxis.LabelStyle>
+    </chart:DateTimeAxis>
 </chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>
@@ -280,7 +252,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 DateTimeAxis primaryAxis = new DateTimeAxis()
 {
-    LabelFormat = "MMM-yy"
+    LabelStyle = new LabelStyle() { LabelFormat= "MMM-yy" }
 };
 chart.XAxes.Add(primaryAxis);
 
@@ -302,8 +274,11 @@ In [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 . . .
 <chart:SfCartesianChart.XAxes>
     <chart:DateTimeAxis Interval="6" 
-	                    IntervalType="Months" 
-						LabelFormat="MMM-yy"/>
+                        IntervalType="Months" >
+        <chart:DateTimeAxis.LabelStyle>
+            <chart:LabelStyle LabelFormat="MMM-yy" />
+        </chart:DateTimeAxis.LabelStyle>
+    </chart:DateTimeAxis>
 </chart:SfCartesianChart.XAxes>
 <chart:SfCartesianChart.YAxes>
     <chart:NumericalAxis/>
@@ -321,7 +296,7 @@ DateTimeAxis primaryAxis = new DateTimeAxis()
 {
     Interval = 6, 
     IntervalType = DateTimeIntervalType.Months,
-    LabelFormat = "MMM-yy"
+    LabelStyle = new LabelStyle() { LabelFormat= "MMM-yy" }
 };
 chart.XAxes.Add(primaryAxis);
 
@@ -345,8 +320,11 @@ chart.YAxes.Add(new NumericalAxis());
 . . .
 <chart:SfCartesianChart.XAxes>
     <chart:DateTimeAxis Minimum="2021/05/1" 
-						Maximum="2021/11/01"  
-						LabelFormat="MMM-yy"/>
+                        Maximum="2021/11/01" >
+        <chart:DateTimeAxis.LabelStyle>
+            <chart:LabelStyle LabelFormat="MMM-yy" />
+        </chart:DateTimeAxis.LabelStyle>
+    </chart:DateTimeAxis>
 </chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>
@@ -361,7 +339,7 @@ DateTimeAxis primaryAxis = new DateTimeAxis()
 {
     Minimum = new DateTime(2021,05,10),
     Maximum = new DateTime(2021,11,01),
-    LabelFormat = "MMM-dd",
+    LabelStyle = new LabelStyle() { LabelFormat= "MMM-yy" }
 };
 chart.XAxes.Add(primaryAxis);
 
@@ -405,7 +383,7 @@ chart.YAxes.Add(secondaryAxis);
 
 ## Multiple Axes
 
-Cartesian charts provides support to arrange the multiple series inside the same chart area with specified x-axis and y-axis. There are two properties [XAxisName]() and [YAxisName]() in all the Cartesian series type, which is used to provide multiple axes support. These axes can be arranged in a stacking order or in a side by side pattern.
+Cartesian charts provides support to arrange the multiple series inside the same chart area with specified x-axis and y-axis. There are two properties [XAxisName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_XAxisName) and [YAxisName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_YAxisName) in all the Cartesian series type, which is used to provide multiple axes support. These axes can be arranged in a stacking order or in a side by side pattern.
 
 By default, all the series are plotted based on the 0th index axis of XAxes and YAxes.
 

@@ -27,8 +27,8 @@ A fast stepline bitmap series is a special kind of series that can render a coll
 
     <chart:SfCartesianChart.Series>
         <chart:FastStepLineBitmapSeries ItemsSource="{Binding Data}" 
-										XBindingPath="XValue" 
-										YBindingPath="YValue" />
+                                        XBindingPath="XValue" 
+                                        YBindingPath="YValue" />
     </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
@@ -77,9 +77,9 @@ The anti aliasing mode can be enabled using the [EnableAntiAliasing](https://hel
 
     <chart:SfCartesianChart.Series>
         <chart:FastStepLineBitmapSeries EnableAntiAliasing="True" 
-										ItemsSource="{Binding Data}" 
-										XBindingPath="XValue" 
-										YBindingPath="YValue" />
+                                        ItemsSource="{Binding Data}" 
+                                        XBindingPath="XValue" 
+                                        YBindingPath="YValue" />
     </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
