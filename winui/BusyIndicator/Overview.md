@@ -20,3 +20,4 @@ The Busy Indicator control for .NET WinUI is used to display a predefined built-
 * `SizeFactor`: Customize the size of the indicator.
 * `Color`: Customize the indicator color.
 * `Content`: Display an indicator showing the loading progress of the content with customization support.
+
