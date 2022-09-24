@@ -32,7 +32,7 @@ rating.EnableToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Rating control](Rating_images/winui_rating_tooltip.png)
+![Rating control using enabletooltip in WinUI](Rating_images/winui_rating_tooltip.png)
 
 ## Rating Control using the ToolTipFormat 
 
@@ -63,7 +63,7 @@ rating.ToolTipFormat = "0.000";
 {% endhighlight %}
 {% endtabs %}
 
-![Rating control](Rating_images/rating_winui_tooltipformat1.png)
+![Rating control using tooltipformat in WinUI](Rating_images/winui_rating_tooltipformat1.png)
 
 {% tabs %}
 {% highlight XAML %}
@@ -89,4 +89,4 @@ rating.ToolTipFormat = "$.00";
 {% endhighlight %}
 {% endtabs %}
 
-![Rating control](Rating_images/winui_rating_tooltipformat2.png)
+![Rating control using tooltipformat in WinUI](Rating_images/winui_rating_tooltipformat2.png)
