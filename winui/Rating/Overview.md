@@ -11,7 +11,7 @@ documentation: ug
 
 The .NET WinUI Rating control is used to provide or view ratings on a numeric scale for any service provided, such as movies applications, products, and more.
 
-[!Rating control overview in WinUI](Rating_images/winui_rating_overview.png)
+![Rating control overview in WinUI](Rating_images/winui_rating_overview.png)
 
 ## Key features
 
