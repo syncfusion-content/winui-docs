@@ -14,10 +14,8 @@ The Rating control tooltip can be enabled by using the `EnableToolTip` property.
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfRating
-     Value="3"
-     ItemsCount="5"
-     EnableToolTip="True">
+<syncfusion:SfRating Value="3"
+     ItemsCount="5" EnableToolTip="True">
 </syncfusion:SfRating>
 
 {% endhighlight %}
@@ -40,12 +38,9 @@ The tooltip content can be formatted by using the `ToolTipFormat` property.
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfRating
-     Value="2.7"
-     Precision="Exact"
-     ItemsCount="5"
-     EnableToolTip="True"
-     ToolTipFormat="0.000">
+<syncfusion:SfRating Value="2.7"
+     Precision="Exact" ItemsCount="5"
+     EnableToolTip="True" ToolTipFormat="0.000">
 </syncfusion:SfRating>
 
 {% endhighlight %}
