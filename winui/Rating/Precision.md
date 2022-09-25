@@ -34,7 +34,7 @@ rating.ItemsCount = 5;
 {% endhighlight %}
 {% endtabs %}
 
-![Rating control using whole precision in WinUI](Rating_images/winui_rating_precision_full.png)
+![WinUI Rating control with full precision](Rating_images/winui_rating_precision_full.png)
 
 ## Half
 
@@ -59,7 +59,7 @@ rating.ItemsCount = 5;
 {% endhighlight %}
 {% endtabs %}
 
-![Rating control using half precision in WinUI](Rating_images/winui_rating_precision_half.png)
+![WinUI Rating control with half precision](Rating_images/winui_rating_precision_half.png)
 
 ## Exact
 
@@ -84,5 +84,5 @@ rating.ItemsCount = 5;
 {% endhighlight %}
 {% endtabs %}
 
-![Rating control using exact precision in WinUI](Rating_images/winui_rating_precision_exact.png)
+![WinUI Rating control with exact precision](Rating_images/winui_rating_precision_exact.png)
 
