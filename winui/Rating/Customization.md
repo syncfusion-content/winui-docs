@@ -191,7 +191,7 @@ public class PathDataTemplateSelector : DataTemplateSelector
   }
 }
 
-![Rating control path in WinUI](Rating_image/winui_rating_path.png)
+![Rating control path in WinUI](Rating_images/winui_rating_path.png)
 
 ## Images
 
