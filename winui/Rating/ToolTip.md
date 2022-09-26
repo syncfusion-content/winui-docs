@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToolTip with WinUI Rating control | Syncfusion
+title: ToolTip in WinUI Rating control | Syncfusion
 description: Learn here all about how to enable the tooltip and format the tooltip content in WinUI Syncfusion Rating (SfRating) control.
 platform: WinUI
 control: SfRating
@@ -47,7 +47,6 @@ The tooltip content can be formatted by using the `ToolTipFormat` property.
 {% highlight C# %}
 
 SfRating rating = new SfRating();
-
 rating.Value = 2;
 rating.Precision= RatingPrecision.Exact;
 rating.ItemsCount = 5;
