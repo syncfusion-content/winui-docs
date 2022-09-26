@@ -32,8 +32,7 @@ This section explains the steps required to add the BusyIndicator control and co
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
-      <notification:SfBusyIndicator IsActive="True">
-      </notification:SfBusyIndicator>
+      <notification:SfBusyIndicator IsActive="True"/>
     </Grid>
 </Page>
 
@@ -51,7 +50,7 @@ busyIndicator.IsActive = true;
 
 ## Setting Animation Type in BusyIndicator
 
-SfBusyIndicator provides 7 predefined animation types like DottedCircularFluent, DottedCircle, DottedLinear and so on. User can select any one of the animation types using `AnimationType` property.
+The BusyIndicator control provides 7 predefined animation types like `DottedCircularFluent`, `DottedCircle`, `DottedLinear` and so on. User can select any one of the animation types using `AnimationType` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -64,7 +63,6 @@ SfBusyIndicator provides 7 predefined animation types like DottedCircularFluent,
 {% highlight C# %}
 
 SfBusyIndicator busyIndicator = new SfBusyIndicator();
-
 busyIndicator.IsActive = true;
 busyIndicator.AnimationType = BusyIndicatorAnimationType.DottedCircularFluent;
 
@@ -73,7 +71,7 @@ busyIndicator.AnimationType = BusyIndicatorAnimationType.DottedCircularFluent;
 
 ## Adding Content in BusyIndicator
 
-SfBusyIndicator provides option to set the content that indicates the information related to loading. This can be done using `BusyContent` property.
+The BusyIndicator control provides option to set the content that indicates the busy status of the control to the users by using the `BusyContent` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -86,7 +84,6 @@ SfBusyIndicator provides option to set the content that indicates the informatio
 {% highlight C# %}
 
 SfBusyIndicator busyIndicator = new SfBusyIndicator();
-
 busyIndicator.IsActive = true;
 busyIndicator.BusyContent = "Loading";
 
@@ -107,7 +104,6 @@ The following code example gives you the complete code of above configurations.
 {% highlight C# %}
 
 SfBusyIndicator busyIndicator = new SfBusyIndicator();
-
 busyIndicator.IsActive = true;
 busyIndicator.AnimationType = BusyIndicatorAnimationType.DottedCircularFluent;
 busyIndicator.BusyContent = "Loading";
