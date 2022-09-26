@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AnimationType in WinUI BusyIndicator control | Syncfusion
-description: Learn here all about seven different animation types and features with Syncfusion WinUI BusyIndicator Control.
+description: Learn here all about different animation types available in the Syncfusion WinUI BusyIndicator control.
 platform: WinUI
 control: SfBusyIndicator
 documentation: ug
