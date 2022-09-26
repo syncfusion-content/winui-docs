@@ -13,7 +13,7 @@ This section explains the customization features available in the WinUI `BusyInd
 
 ## Size
 
-The BusyIndicator size can be customized using the factor values 0 to 1.
+The indicator size can be customized by using the `SizeFactor` property. Its default value is 0.5 and ranges from 0 to 1.
 
 {% tabs %}
 {% highlight XAML %}
@@ -38,7 +38,7 @@ busyIndicator.SizeFactor = 0.2;
 
 ## Duration
 
-The WinUI BusyIndicator animation speed can be customized using factor values 0 to 1.
+The indicator animation speed can be customized by using the `DurationFactor` property. Its default value is 0.5 and ranges from 0 to 1.
 
 {% tabs %}
 {% highlight XAML %}
@@ -54,7 +54,7 @@ The WinUI BusyIndicator animation speed can be customized using factor values 0 
 SfBusyIndicator busyIndicator = new SfBusyIndicator();
 busyIndicator.IsActive = true;
 busyIndicator.AnimationType = BusyIndicatorAnimationType.DottedCircularFluent;
-busyIndicator.SizeFactor = 0.9;
+busyIndicator.DurationFactor = 0.9;
 
 {% endhighlight %}
 {% endtabs %}
@@ -63,7 +63,7 @@ busyIndicator.SizeFactor = 0.9;
 
 ## Color
 
-The BusyIndicator color can be customized based on the requirement.
+The indicator color can be customized by using the `Color` property.
 
 {% tabs %}
 {% highlight XAML %}
