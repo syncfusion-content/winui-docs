@@ -30,9 +30,11 @@ busyIndicator.BusyContent = "Loading";
 {% endhighlight %}
 {% endtabs %}
 
-![BusyIndicator content in WinUI](BusyIndicator_videos/winui_busyindicator_content.jpg)
+![WinUI BusyIndicator control with BusyContent](BusyIndicator_videos/winui_busyindicator_content.jpg)
 
 ## BusyContentPosition
+
+The BusyIndicator control provides options to set the `BusyContent` at the Top, Bottom, Left and Right of the Busy Indicator. The `BusyContent` can be set using the `BusyContentPosition` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -55,9 +57,11 @@ busyIndicator.BusyContentPosition = BusyIndicatorContentPosition.Top;
 {% endhighlight %}
 {% endtabs %}
 
-![BusyIndicator BusyContentPosition in WinUI](BusyIndicator_videos/winui_busyindicator_contentposition.jpg)
+![WinUI BusyIndicator control with BusyContentPosition](BusyIndicator_videos/winui_busyindicator_contentposition.jpg)
 
 ## BusyContentTemplate
+
+The BusyIndicator control provides options to set the `BusyContent` section as to change the template by using the `BusyContentTemplate` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -73,4 +77,4 @@ busyIndicator.BusyContentPosition = BusyIndicatorContentPosition.Top;
 {% endhighlight %}
 {% endtabs %}
 
-![BusyIndicator BusyContentTemplate in WinUI](BusyIndicator_videos/winui_busyindicator_contenttemplate.jpg)
+![WinUI BusyIndicator control with BusyContentTemplate](BusyIndicator_videos/winui_busyindicator_contenttemplate.jpg)
