@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with WinUI BusyIndicator control | Syncfusion
+title: Getting started with WinUI BusyIndicator control | Syncfusion
 description: Learn here all about getting started with the Syncfusion WinUI BusyIndicator(SfBusyIndicator) control and its basic features.
 platform: WinUI
 control: SfBusyIndicator
