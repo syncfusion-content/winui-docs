@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Content in WinUI BusyIndicator control | Syncfusion
-description: Learn here all about showing the loading progress of the content with Syncfusion WinUI BusyIndicator Control.
+description: Learn here all about the loading progress content and its customization available in the Syncfusion WinUI BusyIndicator control.
 platform: WinUI
 control: SfBusyIndicator
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Content in WinUI BusyIndicator
 
-The BusyIndicator control provides option to set the content that indicates the busy status of the control to the users by using the `BusyContent` property.
+The BusyIndicator control provides option to set the custom message that indicates the busy status of the control to the users by using the `BusyContent` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -30,11 +30,11 @@ busyIndicator.BusyContent = "Loading";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI BusyIndicator control with BusyContent](BusyIndicator_videos/winui_busyindicator_content.jpg)
+![BusyContent in WinUI BusyIndicator control.](BusyIndicator_videos/winui_busyindicator_content.jpg)
 
-## BusyContentPosition
+## Busy content position
 
-The BusyIndicator control provides options to set the `BusyContent` at the Top, Bottom, Left and Right of the Busy Indicator. The `BusyContent` can be set using the `BusyContentPosition` property.
+The content can be positioned at the top, bottom, right, or left of the indicator by using the `BusyContentPosition` property. The default value is `Bottom`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -57,11 +57,11 @@ busyIndicator.BusyContentPosition = BusyIndicatorContentPosition.Top;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI BusyIndicator control with BusyContentPosition](BusyIndicator_videos/winui_busyindicator_contentposition.jpg)
+![BusyContentPosition in WinUI BusyIndicator control.](BusyIndicator_videos/winui_busyindicator_contentposition.jpg)
 
-## BusyContentTemplate
+## Busy content template
 
-The BusyIndicator control provides options to set the `BusyContent` section as to change the template by using the `BusyContentTemplate` property.
+The BusyIndicator control provides options to customize the content by using the `DataTemplate` with the help of `BusyContentTemplate` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -77,4 +77,4 @@ The BusyIndicator control provides options to set the `BusyContent` section as t
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI BusyIndicator control with BusyContentTemplate](BusyIndicator_videos/winui_busyindicator_contenttemplate.jpg)
+![BusyContentTemplate in WinUI BusyIndicator control.](BusyIndicator_videos/winui_busyindicator_contenttemplate.jpg)
