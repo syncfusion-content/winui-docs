@@ -16,7 +16,7 @@ The `AnimationType` property for the SfBusyIndicator control allows the users to
 
 <notification:SfBusyIndicator IsActive="True"
     AnimationType="DottedCircle"
-    BusyContent="Dotted circle">
+    BusyContent="Loading">
 </syncfusion:SfRating>
 
 {% endhighlight %}
@@ -25,7 +25,7 @@ The `AnimationType` property for the SfBusyIndicator control allows the users to
 SfBusyIndicator busyIndicator = new SfBusyIndicator();
 busyIndicator.IsActive = true;
 busyIndicator.AnimationType = BusyIndicatorAnimationType.DottedCircle;
-busyIndicator.Content = "Dotted circle";
+busyIndicator.Content = "Loading";
 
 {% endhighlight %}
 {% endtabs %}
