@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization with WinUI Rating control | Syncfusion
-description: Learn here all about UI customization with Syncfusion WinUI Rating Control (SfRating), its elements, and more.
+title: Customization in WinUI Rating control | Syncfusion
+description: Learn here all about the customization features such as style, item size, read-only, and template in Syncfusion WinUI Rating (SfRating) control.
 platform: WinUI
 control: SfRating
 documentation: ug
@@ -13,7 +13,7 @@ This section explains the customization features available in the WinUI `Rating`
 
 ## Style
 
-The Rating control style can be customized using the `RatedItemStyle`, `UnratedItemStyle` Property.
+The Rating control style can be customized by using the `RatedItemStyle` and `UnratedItemStyle` properties.
 
 {% tabs %}
 {% highlight XAML %}
@@ -87,7 +87,7 @@ rating.UnratedItemStyle = style2;
 
 ## ItemSize 
 
-The Rating control itemsize can be customized using the `ItemSize` Property. The default value is 24.
+The size of each rating item in the Rating control can be customized by using the `ItemSize` property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -112,7 +112,7 @@ rating.ItemSize = 50;
 
 ## IsReadOnly
 
-The Rating control isreadonly can be customized using the `IsReadOnly` Property. The default value is `false`.
+The Rating control provides support to restrict the user's selection and only allows viewing of the rating value by setting the `IsReadOnly` property value as true. The default value is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -137,9 +137,11 @@ rating.IsReadOnly = true;
 
 ## ItemTemplateSelector
 
-The Rating control itemtemplateselector can be customized using the `ItemTemplateSelector` Property.
+The Rating control provides support to change the rating items such as images, paths, font icons, and other elements with the help of `ItemTemplateSelector` property.
 
 ## Path
+
+Item template selector that uses paths to show rated and unrated items.
 
 {% tabs %}
 {% highlight XAML %}
@@ -194,6 +196,8 @@ public class PathDataTemplateSelector : DataTemplateSelector
 ![Rating control path in WinUI](Rating_images/winui_rating_path.png)
 
 ## Images
+
+Item template selector that uses images to show rated and unrated items.
 
 {% tabs %}
 {% highlight XAML %}
