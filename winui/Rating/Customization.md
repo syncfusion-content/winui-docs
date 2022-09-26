@@ -74,7 +74,6 @@ setter6.Value = 1;
 style2.Setters.Add(setter6);
 
 SfRating rating = new SfRating();
-
 rating.Value = 3;
 rating.ItemsCount = 5;
 rating.RatedItemStyle = style1;
@@ -100,7 +99,6 @@ The size of each rating item in the Rating control can be customized by using th
 {% highlight C# %}
 
 SfRating rating = new SfRating();
-
 rating.Value = 3;
 rating.ItemsCount = 5;
 rating.ItemSize = 50;
@@ -125,7 +123,6 @@ The Rating control provides support to restrict the user's selection and only al
 {% highlight C# %}
 
 SfRating rating = new SfRating();
-
 rating.Value = 3;
 rating.ItemsCount = 5;
 rating.IsReadOnly = true;

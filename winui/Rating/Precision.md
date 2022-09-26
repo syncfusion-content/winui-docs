@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Precision with WinUI Rating control | Syncfusion
+title: Precision in WinUI Rating control | Syncfusion
 description: Learn here all about the precision feature in the Rating control to set the accuracy level such as full, half, and exact.
 platform: WinUI
 control: SfRating
@@ -26,7 +26,6 @@ Rating value can be provided with whole precision.
 {% highlight C# %}
 
 SfRating rating = new SfRating();
-
 rating.Value = 3;
 rating.Precision = RatingPrecision.Full;
 rating.ItemsCount = 5;
@@ -51,7 +50,6 @@ Rating value can be provided with half precision.
 {% highlight C# %}
 
 SfRating rating = new SfRating();
-
 rating.Value = 3.5;
 rating.Precision = RatingPrecision.Half;
 rating.ItemsCount = 5;
@@ -76,7 +74,6 @@ Rating value can be provided with exact precision.
 {% highlight C# %}
 
 SfRating rating = new SfRating();
-
 rating.Value = 3.7;
 rating.Precision = RatingPrecision.Exact;
 rating.ItemsCount = 5;
