@@ -82,7 +82,7 @@ rating.UnratedItemStyle = style2;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Rating control with style](Rating_images/winui_rating_style.png)
+![Style customization in WinUI Rating control](Rating_images/winui_rating_style.png)
 
 ## ItemSize 
 
@@ -106,7 +106,7 @@ rating.ItemSize = 50;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Rating control with itemsize](Rating_images/winui_rating_itemsize.png)
+![Size customization in WinUI Rating control](Rating_images/winui_rating_itemsize.png)
 
 ## IsReadOnly
 
@@ -130,7 +130,7 @@ rating.IsReadOnly = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Rating control with isreadonly](Rating_images/winui_rating_isreadonly.png)
+![Readonly state in WinUI Rating control](Rating_images/winui_rating_readonly.png)
 
 ## ItemTemplateSelector
 
@@ -181,16 +181,19 @@ public class PathDataTemplateSelector : DataTemplateSelector
 
    protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
   {
-    SfRatingItem RatingItem = item as SfRatingItem;
-    if (RatingItem == null)
+    SfRatingItem ratingItem = item as SfRatingItem;
+    if (ratingItem == null)
         return null;
-    if (RatingItem.IsSelected)
+    if (ratingItem.IsSelected)
         return SelectedTemplate;
     return UnselectedTemplate;
   }
 }
 
-![Rating control path in WinUI](Rating_images/winui_rating_path.png)
+{% endhighlight %}
+{% endtabs %}
+
+![Path template in WinUI Rating control](Rating_images/winui_rating_path.png)
 
 ## Images
 
@@ -233,12 +236,12 @@ public class ImageDataTemplateSelector : DataTemplateSelector
         
    protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
   {
-    SfRating Rating = container as SfRating; 
-    SfRatingItem RatingItem = item as SfRatingItem; 
-    if(RatingItem == null)
+    SfRating rating = container as SfRating; 
+    SfRatingItem ratingItem = item as SfRatingItem; 
+    if(ratingItem == null)
        return null;
-    if(RatingItem.IsSelected) 
-       if (Rating.Items.IndexOf(RatingItem)+1 == (Rating.Value)) 
+    if(ratingItem.IsSelected) 
+       if (rating.Items.IndexOf(ratingItem)+1 == (rating.Value)) 
            return SadTemplate; 
     return SadUnselectedTemplate; 
   }
@@ -247,5 +250,5 @@ public class ImageDataTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Rating control images in WinUI](Rating_images/winui_rating_emoji.png)
+![Image template in WinUI Rating control](Rating_images/winui_rating_emoji.png)
 
