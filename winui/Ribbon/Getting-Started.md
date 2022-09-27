@@ -392,7 +392,7 @@ The `RibbonComboBox` control combines a text box and a drop-down list box, allow
     <ribbon:RibbonComboBox Header="Font Family"
                            Width="200"
                            DisplayOptions="Normal,Simplified">
-        <ribbon:RibbonComboBoxItem Content="Calibri"/>
+        <ribbon:RibbonComboBoxItem Content="Calibrii"/>
         <ribbon:RibbonComboBoxItem Content="Arial" />
         <ribbon:RibbonComboBoxItem Content="Segoe UI" />
     </ribbon:RibbonComboBox>
