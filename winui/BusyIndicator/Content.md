@@ -16,7 +16,7 @@ The BusyIndicator control provides option to set the custom message that indicat
 
 <notification:SfBusyIndicator IsActive="True"
      AnimationType="DottedCircle"
-     BusyContent="Loading">
+     BusyContent="Loading...">
 </notification:SfBusyIndicator>
 
 {% endhighlight %}
@@ -25,7 +25,7 @@ The BusyIndicator control provides option to set the custom message that indicat
 SfBusyIndicator busyIndicator = new SfBusyIndicator();
 busyIndicator.IsActive = true;
 busyIndicator.AnimationType = BusyIndicatorAnimationType.DottedCircle;
-busyIndicator.BusyContent = "Loading";
+busyIndicator.BusyContent = "Loading...";
 
 {% endhighlight %}
 {% endtabs %}
@@ -41,7 +41,7 @@ The content can be positioned at the top, bottom, right, or left of the indicato
 
 <notification:SfBusyIndicator IsActive="True"
      AnimationType="DottedCircle"
-     BusyContent="Loading"
+     BusyContent="Loading..."
      BusyContentPosition="Top">
 </notification:SfBusyIndicator>
 
@@ -51,7 +51,7 @@ The content can be positioned at the top, bottom, right, or left of the indicato
 SfBusyIndicator busyIndicator = new SfBusyIndicator();
 busyIndicator.IsActive = true;
 busyIndicator.AnimationType = BusyIndicatorAnimationType.DottedCircle;
-busyIndicator.BusyContent = "Loading";
+busyIndicator.BusyContent = "Loading...";
 busyIndicator.BusyContentPosition = BusyIndicatorContentPosition.Top;
 
 {% endhighlight %}

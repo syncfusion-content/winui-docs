@@ -13,7 +13,7 @@ The rating value can be provided with three options such as full, half, and exac
 
 ## Full
 
-Rating value can be provided with whole precision.
+Rating value can be provided with nearest rounded value.
 
 {% tabs %}
 {% highlight XAML %}
@@ -37,7 +37,7 @@ rating.ItemsCount = 5;
 
 ## Half
 
-Rating value can be provided with half precision.
+Rating value can be provided with nearest half value.
 
 {% tabs %}
 {% highlight XAML %}
@@ -61,7 +61,7 @@ rating.ItemsCount = 5;
 
 ## Exact
 
-Rating value can be provided with exact precision.
+Rating value can be provided with exact value.
 
 {% tabs %}
 {% highlight XAML %}
