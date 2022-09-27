@@ -130,7 +130,7 @@ rating.IsReadOnly = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Readonly state in WinUI Rating control](Rating_images/winui_rating_readonly.png)
+![Read-only state in WinUI Rating control](Rating_images/winui_rating_readonly.png)
 
 ## ItemTemplateSelector
 
