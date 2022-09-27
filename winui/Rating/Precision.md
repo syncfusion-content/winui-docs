@@ -9,7 +9,7 @@ documentation: ug
 
 # Precision in WinUI Rating
 
-The rating value can be provided with three options such as full, half, and exact using the `Precision` property. The default value is `Full`.
+The Rating control provides option to set an accuracy level for ratings with flexible precision to handle full, half, or exact values using the `Precision` property. The default value is `Full`.
 
 ## Full
 

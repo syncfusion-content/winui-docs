@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About WinUI Rating control| Syncfusion
+title: About WinUI Rating control | Syncfusion
 description: Learn here all about introduction of Syncfusion WinUI Rating Control (SfRating) with key features and more.
 platform: WinUI
 control: SfRating
