@@ -382,6 +382,58 @@ this.rootGrid.Children.Add(sfRibbon);
 
 N> The other icon types such as   [BitmapIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.bitmapicon?view=windows-app-sdk-1.0), [FontIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.fonticon?view=windows-app-sdk-1.0), [PathIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.pathicon?view=windows-app-sdk-1.0) and [SymbolIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.symbolicon?view=windows-app-sdk-1.0) can be used for the Ribbon items such as RibbonButton, RibbonDropDownButton, RibbonSplitButton and Ribbon Item host controls.
 
+## Add ribbon ComboBox
+
+The `RibbonComboBox` control combines a text box and a drop-down list box, allowing users to choose items from the list or add new values and it allows to display in the normal, simplified, and overflow layout of the ribbon. Use the `DisplayOptions` property to set the control in different layouts.
+
+{% tabs %}
+{% highlight xaml %}
+<Grid x:Name="rootGrid">
+    <ribbon:RibbonComboBox Header="Font Family"
+                           Width="200"
+                           DisplayOptions="Normal,Simplified">
+        <ribbon:RibbonComboBoxItem Content="Calibri"/>
+        <ribbon:RibbonComboBoxItem Content="Arial" />
+        <ribbon:RibbonComboBoxItem Content="Segoe UI" />
+    </ribbon:RibbonComboBox>
+    <ribbon:RibbonComboBox Header="Font Size"
+                           Width="97" 
+                           DisplayOptions="Normal,Overflow">
+        <ribbon:RibbonComboBoxItem Content="12" />                                    
+        <ribbon:RibbonComboBoxItem Content="14" />
+        <ribbon:RibbonComboBoxItem Content="18" />
+        <ribbon:RibbonComboBoxItem Content="20" />
+        <ribbon:RibbonComboBoxItem Content="24" />
+        <ribbon:RibbonComboBoxItem Content="34" />
+        <ribbon:RibbonComboBoxItem Content="46" />
+    </ribbon:RibbonComboBox>
+</Grid>
+{% endhighlight %}
+{% highlight c# %}
+RibbonComboBox ribbonComboBox = new RibbonComboBox() { Header = "Font Family", Width = 200, DisplayOptions = DisplayOptions.Normal | DisplayOptions.Simplified };
+RibbonComboBoxItem ribbonComboBoxItem = new RibbonComboBoxItem() { Content = "Calibri" };
+RibbonComboBoxItem ribbonComboBoxItem1 = new RibbonComboBoxItem() { Content= "Arial" };
+RibbonComboBoxItem ribbonComboBoxItem2 = new RibbonComboBoxItem() { Content= "Segoe UI" };
+
+ribbonComboBox.Items.Add(ribbonComboBoxItem);
+ribbonComboBox.Items.Add(ribbonComboBoxItem1);
+ribbonComboBox.Items.Add(ribbonComboBoxItem2);
+
+RibbonComboBox ribbonComboBox1 = new RibbonComboBox() { Header = "Font size", Width = 97, DisplayOptions = DisplayOptions.Normal | DisplayOptions.Overflow };
+RibbonComboBoxItem ribbonComboBoxItemSize = new RibbonComboBoxItem() { Content = "12" };
+RibbonComboBoxItem ribbonComboBoxItemSize1 = new RibbonComboBoxItem() { Content = "14" };
+RibbonComboBoxItem ribbonComboBoxItemSize2 = new RibbonComboBoxItem() { Content = "16" };
+
+ribbonComboBox1.Items.Add(ribbonComboBoxItemSize);
+ribbonComboBox1.Items.Add(ribbonComboBoxItemSize1);
+ribbonComboBox1.Items.Add(ribbonComboBoxItemSize2);
+rootGrid.Children.Add(ribbonComboBox);
+rootGrid.Children.Add(ribbonComboBox1);
+{% endhighlight %}
+{% endtabs %}
+
+![Add ribbon comboBox in group](Getting-Started-images/ribbonComboBox.png)
+
 ## Add ribbon gallery
 
 The example below shows how to include the [RibbonGallery](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGallery.html) control within a RibbonGroup.
