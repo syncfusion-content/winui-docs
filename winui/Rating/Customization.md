@@ -130,13 +130,13 @@ rating.IsReadOnly = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Readonly state in WinUI Rating control](Rating_images/winui_rating_readonly.png)
+![Read-only state in WinUI Rating control](Rating_images/winui_rating_readonly.png)
 
 ## ItemTemplateSelector
 
 The Rating control provides support to change the rating items such as images, paths, font icons, and other elements with the help of `ItemTemplateSelector` property.
 
-## Path
+## Path customization
 
 Item template selector that uses paths to show rated and unrated items.
 
@@ -195,7 +195,7 @@ public class PathDataTemplateSelector : DataTemplateSelector
 
 ![Path template in WinUI Rating control](Rating_images/winui_rating_path.png)
 
-## Images
+## Image customization
 
 Item template selector that uses images to show rated and unrated items.
 
