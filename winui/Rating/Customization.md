@@ -136,7 +136,7 @@ rating.IsReadOnly = true;
 
 The Rating control provides support to change the rating items such as images, paths, font icons, and other elements with the help of `ItemTemplateSelector` property.
 
-## Path customization
+### Path customization
 
 Item template selector that uses paths to show rated and unrated items.
 
@@ -195,7 +195,7 @@ public class PathDataTemplateSelector : DataTemplateSelector
 
 ![Path template in WinUI Rating control](Rating_images/winui_rating_path.png)
 
-## Image customization
+### Image customization
 
 Item template selector that uses images to show rated and unrated items.
 
@@ -204,22 +204,66 @@ Item template selector that uses images to show rated and unrated items.
 
 <ResourceDictionary>
   <DataTemplate x:Key="sadSelectedTemplate">
-     <Viewbox>
-       <StackPanel Orientation="Vertical">
+     <Grid Margin="3">
          <Image Source="/Assets/Rating/SadSelected.png"/>
-       </StackPanel>
-     </Viewbox>
+     </Grid>
   </DataTemplate>
   <DataTemplate x:Key="sadUnselectedTemplate">
-     <Viewbox>
-       <StackPanel Orientation="Vertical">
-         <Image Source="/Assets/Rating/SadUnselected.png"/>
-       </StackPanel>
-     </Viewbox>
+     <Grid Margin="3">     
+         <Image Source="/Assets/Rating/SadUnselected.png"/>     
+     </Grid>
+  </DataTemplate>
+  <DataTemplate x:Key="unhappySelectedTemplate">
+     <Grid Margin="3">
+         <Image Source="/Assets/Rating/UnhappySelected.png"/>
+     </Grid>
+  </DataTemplate>
+  <DataTemplate x:Key="unhappyUnselectedTemplate">
+     <Grid Margin="3">
+         <Image Source="/Assets/Rating/UnhappyUnselected.png"/>
+     </Grid>
+  </DataTemplate>
+  <DataTemplate x:Key="neutralSelectedTemplate">
+     <Grid Margin="3">
+         <Image Source="/Assets/Rating/NeutralSelected.png"/>
+     </Grid>
+  </DataTemplate>
+  <DataTemplate x:Key="neutralUnselectedTemplate">
+     <Grid Margin="3">
+         <Image Source="/Assets/Rating/NeutralUnselected.png"/>
+     </Grid>
+  </DataTemplate>
+  <DataTemplate x:Key="happySelectedTemplate">
+     <Grid Margin="3">
+         <Image Source="/Assets/Rating/HappySelected.png"/>
+     </Grid>
+  </DataTemplate>
+  <DataTemplate x:Key="happyUnselectedTemplate">
+     <Grid Margin="3">
+         <Image Source="/Assets/Rating/HappyUnselected.png"/>
+     </Grid>
+  </DataTemplate>
+  <DataTemplate x:Key="excitedSelectedTemplate">
+     <Grid Margin="3">
+         <Image Source="/Assets/Rating/ExcitedSelected.png"/>
+     </Grid>
+  </DataTemplate>
+  <DataTemplate x:Key="excitedUnselectedTemplate">
+     <Grid Margin="3">
+         <Image Source="/Assets/Rating/ExcitedUnselected.png"/>
+     </Grid>
   </DataTemplate>
   <local:ImageDataTemplateSelector x:Key="emojiTemplate"
          SadTemplate="{StaticResource sadSelectedTemplate}"                             
-         SadUnselectedTemplate="{StaticResource sadUnselectedTemplate}"/>
+         SadUnselectedTemplate="{StaticResource sadUnselectedTemplate}"
+         UnhappyTemplate="{StaticResource unhappySelectedTemplate}"
+         UnhappyUnselectedTemplate="{StaticResource unhappyUnselectedTemplate}"
+         NeutralTemplate="{StaticResource neutralSelectedTemplate}"
+         NeutralUnselectedTemplate="{StaticResource neutralUnselectedTemplate}"
+         HappyTemplate="{StaticResource happySelectedTemplate}"
+         HappyUnselectedTemplate="{StaticResource happyUnselectedTemplate}"
+         ExcitedTemplate="{StaticResource excitedSelectedTemplate}"
+         ExcitedUnselectedTemplate="{StaticResource excitedUnselectedTemplate}"/>
 </ResourceDictionary>
   
 <syncfusion:SfRating Value="4" ItemsCount="5"
@@ -231,8 +275,16 @@ Item template selector that uses images to show rated and unrated items.
 
 public class ImageDataTemplateSelector : DataTemplateSelector
 {
-  public DataTemplate SadTemplate { get; set; }
-  public DataTemplate SadUnselectedTemplate { get; set; }
+   public DataTemplate SadTemplate { get; set; }
+   public DataTemplate ExcitedTemplate { get; set; }
+   public DataTemplate HappyTemplate { get; set; }
+   public DataTemplate NeutralTemplate { get; set; }
+   public DataTemplate UnhappyTemplate { get; set; }
+   public DataTemplate SadUnselectedTemplate { get; set; }
+   public DataTemplate ExcitedUnselectedTemplate { get; set; }
+   public DataTemplate HappyUnselectedTemplate { get; set; }
+   public DataTemplate NeutralUnselectedTemplate { get; set; }
+   public DataTemplate UnhappyUnselectedTemplate { get; set; }
         
    protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
   {
@@ -240,10 +292,33 @@ public class ImageDataTemplateSelector : DataTemplateSelector
     SfRatingItem ratingItem = item as SfRatingItem; 
     if(ratingItem == null)
        return null;
-    if(ratingItem.IsSelected) 
-       if (rating.Items.IndexOf(ratingItem)+1 == (rating.Value)) 
-           return SadTemplate; 
-    return SadUnselectedTemplate; 
+    if (rating.Items.IndexOf(ratingItem) + 1 == rating.Value)
+    {
+      if (rating.Items.IndexOf(ratingItem) == 0)
+          return SadTemplate;
+      if (rating.Items.IndexOf(ratingItem) == 1)
+          return UnhappyTemplate;
+      if (rating.Items.IndexOf(ratingItem) == 2)
+          return NeutralTemplate;
+      if (rating.Items.IndexOf(ratingItem) == 3)
+          return HappyTemplate;
+      if (rating.Items.IndexOf(ratingItem) == 4)
+          return ExcitedTemplate;
+    }
+    else
+    {
+      if (rating.Items.IndexOf(ratingItem) == 0)
+          return SadUnselectedTemplate;
+      if (rating.Items.IndexOf(ratingItem) == 1)
+          return UnhappyUnselectedTemplate;
+      if (rating.Items.IndexOf(ratingItem) == 2)
+          return NeutralUnselectedTemplate;
+      if (rating.Items.IndexOf(ratingItem) == 3)
+          return HappyUnselectedTemplate;
+      if (rating.Items.IndexOf(ratingItem) == 4)
+          return ExcitedUnselectedTemplate;
+    }
+    return null; 
   }
 }
 
