@@ -277,7 +277,6 @@ The legend background appearance can be customized by using the following proper
 `BorderThickness` - used to change the stroke width of the legend.
 `BorderBrush` - used to change the stroke color of the legend.
 `Background` - used to change the background color of the legend.
-`Opacity` - used to control the transparency of the legend icon shape.
 [CornerRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CornerRadius) - used to change the corner radius of the legend.
 
 {% tabs %}
@@ -287,7 +286,7 @@ The legend background appearance can be customized by using the following proper
 <chart:SfFunnelChart x:Name="chart">
 . . .
     <chart:SfFunnelChart.Legend>
-        <chart:ChartLegend Background="Gray" BorderBrush="Black" BorderThickness="1" CornerRadius="5" Opacity="0.9" >
+        <chart:ChartLegend Background="Gray" BorderBrush="Black" BorderThickness="1" CornerRadius="5" >
     </chart:ChartLegend>
     </chart:SfFunnelChart.Legend>
 . . .
@@ -303,7 +302,6 @@ chart.Legend = new ChartLegend()
     Background = new SolidColorBrush(Colors.Gray),
     BorderBrush = new SolidColorBrush(Colors.Black),
     BorderThickness = new Thickness(1),
-    Opacity = 0.9,
     CornerRadius = new CornerRadius(5)
 };
 . . .

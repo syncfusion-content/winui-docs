@@ -93,12 +93,12 @@ The title text content can be aligned horizontally to the left, center or right 
 {% highlight xaml %}
 
  <chart:SfFunnelChart x:Name="chart" 
-                HorizontalHeaderAlignment="Right"
-                ShowDataLabels="True"
-                Height="388" Width="500" 
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
+                     HorizontalHeaderAlignment="Right"
+                     ShowDataLabels="True"
+                     Height="388" Width="500" 
+                     ItemsSource="{Binding Data}" 
+                     XBindingPath="Category"
+                     YBindingPath="Value">
                 
             <chart:SfFunnelChart.Header>
                 <Border BorderThickness="2" Background="LightBlue" BorderBrush="Black" Margin="10" CornerRadius="5">

@@ -63,7 +63,7 @@ The padding to the axis line is defined by using the [AxisLineOffset](https://he
 . . .
 <chart:SfCartesianChart.XAxes>
     <chart:NumericalAxis AxisLineOffset="25" 
-						 AxisLineStyle="{StaticResource lineStyle}"/>
+                         AxisLineStyle="{StaticResource lineStyle}"/>
 </chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>

@@ -181,10 +181,9 @@ Circular chart provides support to add custom icon for the legend using [LegendI
     <chart:SfCircularChart.Legend>
         <chart:ChartLegend IconWidth="15" IconHeight="15"/>
     </chart:SfCircularChart.Legend>
-    
-    <chart:PieSeries 
-        LegendIconTemplate="{StaticResource iconTemplate}"
-        ItemsSource="{Binding Data}"/>
+
+    <chart:PieSeries LegendIconTemplate="{StaticResource iconTemplate}"
+                     ItemsSource="{Binding Data}"/>
 </chart:SfCircularChart>
 </Grid>
 
@@ -351,7 +350,6 @@ The legend background appearance can be customized by using the below properties
 `BorderThickness` - used to change the stroke width of the legend.
 `BorderBrush` - used to change the stroke color of the legend.
 `Background` - used to change the background color of legend.
-`Opacity` - used to control the transparency of the legend icon shape.
 [CornerRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CornerRadius) - used to change the corner radius of the legend.
 
 {% tabs %}
@@ -361,8 +359,8 @@ The legend background appearance can be customized by using the below properties
 . . .
 <chart:SfCircularChart.Legend>
     <chart:ChartLegend Background="Gray" BorderBrush="Black" 
-                       BorderThickness="1" CornerRadius="5" 
-                       Opacity="0.9" >
+                       BorderThickness="1" 
+                       CornerRadius="5" >
     </chart:ChartLegend>
 </chart:SfCircularChart.Legend>
 
@@ -379,7 +377,6 @@ chart.Legend = new ChartLegend()
     Background = new SolidColorBrush(Colors.Gray),
     BorderBrush = new SolidColorBrush(Colors.Black),
     BorderThickness = new Thickness(1),
-    Opacity = 0.9,
     CornerRadius = new CornerRadius(5)
 };
 

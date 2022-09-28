@@ -13,7 +13,7 @@ Tooltip is used to display any information over segments. It appears at the data
 
 ## Define Tooltip
 
-To define the tooltip in the series, set the [ShowTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property to true. The default value of [ShowTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property is `false`.
+To define the tooltip in the series, set the [EnableTooltip]() property to true. The default value of [EnableTooltip]() property is `false`.
 
 {% tabs %}
 
@@ -25,12 +25,12 @@ To define the tooltip in the series, set the [ShowTooltip](https://help.syncfusi
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand"
                             YBindingPath="Year2010" 
-                            ShowTooltip="True"/>
+                            EnableTooltip="True"/>
 
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand"
                             YBindingPath="Year2011"
-                            ShowTooltip="True"/>
+                            EnableTooltip="True"/>
     </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
@@ -45,7 +45,7 @@ ColumnSeries series1 = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2010",
-    ShowTooltip = true
+    EnableTooltip = true
 };
 
 ColumnSeries series2 = new ColumnSeries()
@@ -53,7 +53,7 @@ ColumnSeries series2 = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2011",
-    ShowTooltip = true
+    EnableTooltip = true
 };
 
 chart.Series.Add(series1);
@@ -123,12 +123,12 @@ The tooltip's fill and stroke color can be customized by using the [Style](https
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand"
                             YBindingPath="Year2010" 
-                            ShowTooltip="True"/>
+                            EnableTooltip="True"/>
                 
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand"
                             YBindingPath="Year2011"
-                            ShowTooltip="True"/>
+                            EnableTooltip="True"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
@@ -152,7 +152,7 @@ ColumnSeries series1 = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2010",
-    ShowTooltip = true
+    EnableTooltip = true
 };
 
 ColumnSeries series2 = new ColumnSeries()
@@ -160,7 +160,7 @@ ColumnSeries series2 = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2011",
-    ShowTooltip = true
+    EnableTooltip = true
 };
 
 chart.Series.Add(series1);
@@ -198,12 +198,12 @@ The tooltip label style can be customized by using the [LabelStyle](https://help
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand"
                             YBindingPath="Year2010" 
-                            ShowTooltip="True"/>
+                            EnableTooltip="True"/>
                 
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand"
                             YBindingPath="Year2011"
-                            ShowTooltip="True"/>
+                            EnableTooltip="True"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
@@ -228,7 +228,7 @@ ColumnSeries series1 = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2010",
-    ShowTooltip = true
+    EnableTooltip = true
 };
 
 ColumnSeries series2 = new ColumnSeries()
@@ -236,7 +236,7 @@ ColumnSeries series2 = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2011",
-    ShowTooltip = true
+    EnableTooltip = true
 };
 
 chart.Series.Add(series1);
@@ -271,12 +271,12 @@ Tooltip can be positioned horizontally left, right, or center to the cursor posi
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand"
                             YBindingPath="Year2010" 
-                            ShowTooltip="True"/>
+                            EnableTooltip="True"/>
                 
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand"
                             YBindingPath="Year2011"
-                            ShowTooltip="True"/>
+                            EnableTooltip="True"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
@@ -296,7 +296,7 @@ ColumnSeries series1 = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2010",
-    ShowTooltip = true
+    EnableTooltip = true
 };
 
 ColumnSeries series2 = new ColumnSeries()
@@ -304,7 +304,7 @@ ColumnSeries series2 = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2011",
-    ShowTooltip = true
+    EnableTooltip = true
 };
 
 chart.Series.Add(series1);
@@ -335,12 +335,12 @@ Tooltip can be positioned vertically top, bottom, or center to the cursor positi
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand"
                             YBindingPath="Year2010" 
-                            ShowTooltip="True"/>
+                            EnableTooltip="True"/>
                 
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand"
                             YBindingPath="Year2011"
-                            ShowTooltip="True"/>
+                            EnableTooltip="True"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
@@ -360,7 +360,7 @@ ColumnSeries series1 = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2010",
-    ShowTooltip = true
+    EnableTooltip = true
 };
 
 ColumnSeries series2 = new ColumnSeries()
@@ -368,7 +368,7 @@ ColumnSeries series2 = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2011",
-    ShowTooltip = true
+    EnableTooltip = true
 };
 
 chart.Series.Add(series1);
@@ -399,12 +399,12 @@ The tooltip can be positioned at a particular distance from the cursor by using 
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand"
                             YBindingPath="Year2010" 
-                            ShowTooltip="True"/>
+                            EnableTooltip="True"/>
                 
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand"
                             YBindingPath="Year2011"
-                            ShowTooltip="True"/>
+                            EnableTooltip="True"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
@@ -425,7 +425,7 @@ ColumnSeries series1 = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2010",
-    ShowTooltip = true
+    EnableTooltip = true
 };
 
 ColumnSeries series2 = new ColumnSeries()
@@ -433,7 +433,7 @@ ColumnSeries series2 = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2011",
-    ShowTooltip = true
+    EnableTooltip = true
 };
 
 chart.Series.Add(series1);
@@ -466,12 +466,12 @@ N> By default, the tooltip will be displayed for 1000 milliseconds.
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand"
                             YBindingPath="Year2010" 
-                            ShowTooltip="True"/>
+                            EnableTooltip="True"/>
                 
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand"
                             YBindingPath="Year2011"
-                            ShowTooltip="True"/>
+                            EnableTooltip="True"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
@@ -491,7 +491,7 @@ ColumnSeries series1 = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2010",
-    ShowTooltip = true
+    EnableTooltip = true
 };
 
 ColumnSeries series2 = new ColumnSeries()
@@ -499,7 +499,7 @@ ColumnSeries series2 = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2011",
-    ShowTooltip = true
+    EnableTooltip = true
 };
 
 chart.Series.Add(series1);
@@ -528,12 +528,12 @@ Animation for tooltip can be set by using the [EnableAnimation](https://help.syn
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand"
                             YBindingPath="Year2010" 
-                            ShowTooltip="True"/>
+                            EnableTooltip="True"/>
                 
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand"
                             YBindingPath="Year2011"
-                            ShowTooltip="True"/>
+                            EnableTooltip="True"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
@@ -553,7 +553,7 @@ ColumnSeries series1 = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2010",
-    ShowTooltip = true
+    EnableTooltip = true
 };
 
 ColumnSeries series2 = new ColumnSeries()
@@ -561,7 +561,7 @@ ColumnSeries series2 = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2011",
-    ShowTooltip = true
+    EnableTooltip = true
 };
 
 chart.Series.Add(series1);
@@ -603,16 +603,16 @@ The [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
 
     <chart:SfCartesianChart.Series>
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
-							TooltipTemplate="{StaticResource tooltipTemplate1}"
+                            TooltipTemplate="{StaticResource tooltipTemplate1}"
                             XBindingPath="Demand"
                             YBindingPath="Year2010" 
-                            ShowTooltip="True"/>
+                            EnableTooltip="True"/>
                 
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
-							TooltipTemplate="{StaticResource tooltipTemplate2}"
+                            TooltipTemplate="{StaticResource tooltipTemplate2}"
                             XBindingPath="Demand"
                             YBindingPath="Year2011"
-                            ShowTooltip="True"/>
+                            EnableTooltip="True"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
@@ -628,7 +628,7 @@ ColumnSeries series1 = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2010",
-    ShowTooltip = true,
+    EnableTooltip = true,
     TooltipTemplate = chart.Resources["tooltipTemplate1"] as DataTemplate
 };
 
@@ -637,7 +637,7 @@ ColumnSeries series2 = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2011",
-    ShowTooltip = true,
+    EnableTooltip = true,
     TooltipTemplate = chart.Resources["tooltipTemplate2"] as DataTemplate
 };
 

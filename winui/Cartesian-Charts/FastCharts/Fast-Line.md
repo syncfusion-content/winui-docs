@@ -29,8 +29,8 @@ The [FastLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
     <chart:SfCartesianChart.Series>
         <chart:FastLineSeries ItemsSource="{Binding Data}" 
-							  XBindingPath="XValue" 
-							  YBindingPath="YValue"/>
+                              XBindingPath="XValue" 
+                              YBindingPath="YValue"/>
     </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
@@ -79,8 +79,8 @@ The [FastLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 
     <chart:SfCartesianChart.Series>
         <chart:FastLineBitmapSeries ItemsSource="{Binding Data}" 
-									XBindingPath="XValue" 
-									YBindingPath="YValue"/>
+                                    XBindingPath="XValue" 
+                                    YBindingPath="YValue"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
@@ -130,9 +130,9 @@ As it was rendered using bitmap, there might be some jagged lines at the edges. 
 
     <chart:SfCartesianChart.Series>
         <chart:FastLineBitmapSeries EnableAntiAliasing="True" 
-								    ItemsSource="{Binding Data}" 
-									XBindingPath="XValue" 
-									YBindingPath="YValue"/>
+                                    ItemsSource="{Binding Data}" 
+                                    XBindingPath="XValue" 
+                                    YBindingPath="YValue"/>
     </chart:SfCartesianChart.Series>
     
 </chart:SfCartesianChart>

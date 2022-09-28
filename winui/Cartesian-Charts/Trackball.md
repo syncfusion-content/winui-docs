@@ -279,7 +279,7 @@ The appearance of the axis label can be customized by using the [TrackballLabelT
 
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis ShowTrackballInfo="True" 
-							TrackballLabelTemplate="{StaticResource labelTemplate}"/>
+                            TrackballLabelTemplate="{StaticResource labelTemplate}"/>
     </chart:SfCartesianChart.XAxes>
 . . .
 </chart:SfCartesianChart>
@@ -323,7 +323,7 @@ The [ShowTrackballInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
         <chart:SplineSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand" 
                             YBindingPath="Year2011" 
-							ShowTrackballInfo="False"/>
+                            ShowTrackballInfo="False"/>
         <chart:SplineSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand" 
                             YBindingPath="Year2012">
@@ -366,7 +366,7 @@ The trackball label displayed over the series can be aligned using the [LabelHor
 . . .
     <chart:SfCartesianChart.TrackballBehavior>
         <chart:ChartTrackballBehavior LabelHorizontalAlignment="Center" 
-									  LabelVerticalAlignment="Center"/>
+                                      LabelVerticalAlignment="Center"/>
     </chart:SfCartesianChart.TrackballBehavior>
 . . .
 </chart:SfCartesianChart>

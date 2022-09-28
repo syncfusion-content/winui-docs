@@ -46,9 +46,9 @@ Chart provides support to add any `UIElement` as a title. The following code exa
 
     <chart:SfCartesianChart.Header>
         <Border BorderThickness="2" 
-				BorderBrush="Black" 
-				Margin="10" 
-				CornerRadius="5">
+                BorderBrush="Black" 
+                Margin="10" 
+                CornerRadius="5">
             <TextBlock FontSize="14" Text="Chart Area Header" Margin="5"/>
         </Border>
     </chart:SfCartesianChart.Header>
@@ -100,9 +100,9 @@ The title text content can be aligned horizontally to the left, center or right 
 . . .
     <chart:SfCartesianChart.Header>
         <Border BorderThickness="2" 
-				BorderBrush="Black" 
-				Margin="0, 0, 0, 10" 
-				CornerRadius="5">
+                BorderBrush="Black" 
+                Margin="0, 0, 0, 10" 
+                CornerRadius="5">
             <TextBlock FontSize="14" Text="Chart Area Header" Margin="5"/>
         </Border>
     </chart:SfCartesianChart.Header>

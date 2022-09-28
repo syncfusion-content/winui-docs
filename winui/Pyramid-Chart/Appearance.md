@@ -20,9 +20,9 @@ Currently, the [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart" 
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="Category"
+                      YBindingPath="Value">
 
 </chart:SfPyramidChart>
 
@@ -64,11 +64,11 @@ The [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
     </Grid.Resources>
 
      <chart:SfPyramidChart x:Name="chart" 
-                Palette="Custom" 
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value"
-                PaletteBrushes="{StaticResource customBrushes}">
+                           Palette="Custom" 
+                           ItemsSource="{Binding Data}" 
+                           XBindingPath="Category"
+                           YBindingPath="Value"
+                           PaletteBrushes="{StaticResource customBrushes}">
      . . .
     </chart:SfPyramidChart>
 </Grid>
@@ -135,11 +135,11 @@ Gradient for the pyramid chart can be set by using the [PaletteBrushes](https://
     </Grid.Resources>
 
      <chart:SfPyramidChart x:Name="chart" 
-                Palette="Custom" 
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value"
-                PaletteBrushes="{StaticResource customBrushes}">
+                           Palette="Custom" 
+                           ItemsSource="{Binding Data}" 
+                           XBindingPath="Category"
+                           YBindingPath="Value"
+                           PaletteBrushes="{StaticResource customBrushes}">
      . . .
     </chart:SfPyramidChart>
 </Grid>

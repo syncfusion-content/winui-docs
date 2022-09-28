@@ -13,17 +13,17 @@ Tooltip is used to display any information over segments. It appears at the data
 
 ## Define Tooltip
 
-To define the tooltip in the chart, set the [ShowTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_ShowTooltip) property to true. The default value of [ShowTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_ShowTooltip) property is false.
+To define the tooltip in the chart, set the [EnableTooltip]() property to true. The default value of [EnableTooltip]() property is false.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart" 
-                ShowTooltip="True"
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">          
+                      EnableTooltip="True"
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="Category"
+                      YBindingPath="Value">          
 
 </chart:SfPyramidChart>
 
@@ -35,7 +35,7 @@ SfPyramidChart chart = new SfPyramidChart();
 chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
-chart.ShowTooltip = true;
+chart.EnableTooltip = true;
 . . . 
 this.Content = chart;
 
@@ -76,7 +76,7 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-chart.ShowTooltip = true;
+chart.EnableTooltip = true;
 ChartTooltipBehavior behavior = new ChartTooltipBehavior();
 chart.TooltipBehavior = behavior;
 . . . 
@@ -95,7 +95,7 @@ The tooltip's fill and stroke color can be customized by using the [Style](https
 {% highlight xml %}
 
 <chart:SfPyramidChart x:Name="chart" 
-                ShowTooltip="True">          
+                      EnableTooltip="True">          
 . . . 
     <chart:SfPyramidChart.Resources>
         <Style TargetType="Path" x:Key="style">
@@ -115,7 +115,7 @@ The tooltip's fill and stroke color can be customized by using the [Style](https
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-chart.ShowTooltip = true;
+chart.EnableTooltip = true;
 Style style = new Style(typeof(Path));
 style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Black)));
 style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)));
@@ -140,7 +140,7 @@ The tooltip label style can be customized by using the [LabelStyle](https://help
 
 {% highlight xml %}
 
-<chart:SfPyramidChart x:Name="chart" ShowTooltip="True">          
+<chart:SfPyramidChart x:Name="chart" EnableTooltip="True">          
 . . . 
     <chart:SfPyramidChart.Resources>
         <Style TargetType="TextBlock" x:Key="labelStyle">
@@ -161,7 +161,7 @@ The tooltip label style can be customized by using the [LabelStyle](https://help
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-chart.ShowTooltip = true;
+chart.EnableTooltip = true;
 Style labelStyle = new Style(typeof(TextBlock));
 labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
 labelStyle.Setters.Add(new Setter(TextBlock.FontStyleProperty, FontStyle.Italic));
@@ -208,7 +208,7 @@ The pyramid chart provides support to customize the appearance of the tooltip by
                            ItemsSource="{Binding Data}" 
                            XBindingPath="Category"  
                            YBindingPath="Value" 
-                           ShowTooltip="True"
+                           EnableTooltip="True"
                            TooltipTemplate="{StaticResource tooltipTemplate}">
 
         <chart:SfPyramidChart.TooltipBehavior>
@@ -226,7 +226,7 @@ chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new 
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.TooltipTemplate = this.grid.Resources["tooltipTemplate"] as DataTemplate;
-chart.ShowTooltip = true;
+chart.EnableTooltip = true;
 . . .
 this.Content = chart;
         

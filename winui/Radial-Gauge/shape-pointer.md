@@ -113,6 +113,99 @@ this.Content = sfRadialGauge;
 
 ![WinUI Radial Gauge custom shape pointer](images/marker-pointers/winui-radial-gauge-custom-marker-pointer.png)
 
+## Shadow support
+
+The shadow can be applied by using the `HasShadow` property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<gauge:SfRadialGauge>
+    <gauge:SfRadialGauge.Axes>
+        <gauge:RadialAxis>
+            <gauge:RadialAxis.Pointers>
+                <gauge:ShapePointer Value="60"
+                                    ShapeType="Circle"
+                                    HasShadow="True"/>
+            </gauge:RadialAxis.Pointers>
+        </gauge:RadialAxis>
+    </gauge:SfRadialGauge.Axes>
+</gauge:SfRadialGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+sfRadialGauge.Axes.Add(radialAxis);
+
+ShapePointer pointer = new ShapePointer();
+pointer.Value = 60;
+pointer.ShapeType = GaugeShapeType.Circle;
+pointer.HasShadow = true;
+radialAxis.Pointers.Add(pointer);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Change shape pointer elevation](images/marker-pointers/winui-radial-gauge-shape-pointer-shadow.png)
+
+## Shape pointer overlay
+
+The shape pointer overlay is rendered around the shape when the cursor is on the shape's area. When the [`IsInteractive`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_IsInteractive) property is set to true and when the cursor is on the shape pointer's area, the overlay will be displayed around the shape pointer.
+
+The shape pointer overlay can be customized using the following properties:
+
+* `OverlayFill`- Allows you to specify the shape pointer overlay's color.
+* `OverlayRadius` - Allows you to specify the shape pointer overlay's radius.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<gauge:SfRadialGauge>
+    <gauge:SfRadialGauge.Axes>
+        <gauge:RadialAxis>
+            <gauge:RadialAxis.Pointers>
+                <gauge:ShapePointer Value="60"
+                                    ShapeType="Circle"
+                                    IsInteractive="True"
+                                    OverlayRadius="20"/>
+            </gauge:RadialAxis.Pointers>
+        </gauge:RadialAxis>
+    </gauge:SfRadialGauge.Axes>
+</gauge:SfRadialGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRadialGauge sfRadialGauge = new SfRadialGauge();
+
+RadialAxis radialAxis = new RadialAxis();
+sfRadialGauge.Axes.Add(radialAxis);
+
+ShapePointer pointer = new ShapePointer();
+pointer.Value = 60;
+pointer.ShapeType = GaugeShapeType.Circle;
+pointer.OverlayRadius = 20;
+pointer.IsInteractive = true;
+radialAxis.Pointers.Add(pointer);
+
+this.Content = sfRadialGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Change shape pointer overlay](images/marker-pointers/winui-radial-gauge-shape-pointer-overlay.png)
+
 ## Shape position customization
 
 The shape pointer can be moved near or far from its actual position using the [`MarkerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerOffset) and [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_OffsetUnit) properties. 
