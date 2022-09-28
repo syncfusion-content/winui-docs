@@ -285,8 +285,6 @@ public class ImageDataTemplateSelector : DataTemplateSelector
    public DataTemplate HappyUnselectedTemplate { get; set; }
    public DataTemplate NeutralUnselectedTemplate { get; set; }
    public DataTemplate UnhappyUnselectedTemplate { get; set; }
-   public DataTemplate SelectedTemplate { get; set; }
-   public DataTemplate ChildTemplate { get; set; }
         
    protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
   {
