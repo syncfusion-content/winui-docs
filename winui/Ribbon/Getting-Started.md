@@ -155,7 +155,7 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ## Add ribbon button
 
-The [RibbonButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonButton.html) represents a normal button and can be added to a ribbon group with different sizes using the `SizeMode` property. Use the `Content` and `Icon` properties to set the label and icon to the button.
+The [RibbonButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonButton.html) represents a normal button and can be added to a ribbon group with different sizes using the `AllowedSizeModes` property. Use the `Content` and `Icon` properties to set the label and icon to the button.
 
 {% tabs %}
 {% highlight xaml %}
@@ -166,35 +166,35 @@ The [RibbonButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbo
         <ribbon:RibbonTab Header="Insert">
             <ribbon:RibbonGroup Header="Illustrations">
                 <ribbon:RibbonButton Content="Pictures"
-                                     SizeMode="Large">
+                                     AllowedSizeModes="Large">
                     <ribbon:RibbonButton.Icon>
                         <SymbolIcon Symbol="Pictures" />
                     </ribbon:RibbonButton.Icon>
                 </ribbon:RibbonButton>
                 <ribbon:RibbonButton Content="Shapes"
-                                     SizeMode="Normal">
+                                     AllowedSizeModes="Normal">
                     <ribbon:RibbonButton.Icon>
                         <FontIcon Glyph="&#xF158;" />
                     </ribbon:RibbonButton.Icon>
                 </ribbon:RibbonButton>
                 <ribbon:RibbonButton Content="Icons"
-                                     SizeMode="Normal">
+                                     AllowedSizeModes="Normal">
                     <ribbon:RibbonButton.Icon>
                         <FontIcon Glyph="&#xECAA;" />
                     </ribbon:RibbonButton.Icon>
                 </ribbon:RibbonButton>
                 <ribbon:RibbonButton Icon="DisconnectDrive"
                                      Content="3D Models"
-                                     SizeMode="Normal" />
-                <ribbon:RibbonButton SizeMode="Small">
+                                     AllowedSizeModes="Normal" />
+                <ribbon:RibbonButton AllowedSizeModes="Small">
                     <ribbon:RibbonButton.Icon>
                         <BitmapIcon UriSource="ms-appx:///Assets/Bookmarks.png" />
                     </ribbon:RibbonButton.Icon>
                 </ribbon:RibbonButton>
                 <ribbon:RibbonButton Icon="Character"
-                                     SizeMode="Small" />
+                                     AllowedSizeModes="Small" />
                 <ribbon:RibbonButton Icon="FullScreen"
-                                     SizeMode="Small" />
+                                     AllowedSizeModes="Small" />
             </ribbon:RibbonGroup>
         </ribbon:RibbonTab> 
         <ribbon:RibbonTab Header="View" />
@@ -214,15 +214,15 @@ RibbonTab layoutTab = new RibbonTab() { Header = "Layout" };
 
 RibbonGroup illustrationsGroup = new RibbonGroup() { Header = "Illustrations" };
 
-RibbonButton pictureButton = new RibbonButton() { Content = "Picures" , SizeMode= SizeMode.Large, Icon = new SymbolIcon(Symbol.Pictures)};
+RibbonButton pictureButton = new RibbonButton() { Content = "Picures" , AllowedSizeModes= AllowedSizeModes.Large, Icon = new SymbolIcon(Symbol.Pictures)};
 
-RibbonButton shapesButton = new RibbonButton() { Content = "Shapes" , SizeMode= SizeMode.Normal, Icon = new FontIcon() { Glyph= "\xF158" } };
-RibbonButton iconsButton = new RibbonButton() { Content = "Icons" , SizeMode= SizeMode.Normal, Icon = new FontIcon() { Glyph= "\xECAA" } };            
-RibbonButton disconnectDriveButton = new RibbonButton() { Content = "3D Models" , SizeMode= SizeMode.Small, Icon = new SymbolIcon(Symbol.DisconnectDrive)  };
+RibbonButton shapesButton = new RibbonButton() { Content = "Shapes" , AllowedSizeModes= AllowedSizeModes.Normal, Icon = new FontIcon() { Glyph= "\xF158" } };
+RibbonButton iconsButton = new RibbonButton() { Content = "Icons" , AllowedSizeModes= AllowedSizeModes.Normal, Icon = new FontIcon() { Glyph= "\xECAA" } };            
+RibbonButton disconnectDriveButton = new RibbonButton() { Content = "3D Models" , AllowedSizeModes= AllowedSizeModes.Small, Icon = new SymbolIcon(Symbol.DisconnectDrive)  };
 
-RibbonButton bookmarksButton = new RibbonButton() { SizeMode = SizeMode.Small, Icon = new BitmapIcon() { UriSource = new Uri("msappx:///Assets/Bookmarks.png") } };
-RibbonButton characterButton = new RibbonButton() {   SizeMode= SizeMode.Small, Icon = new SymbolIcon(Symbol.Character) };
-RibbonButton fullScreenButton = new RibbonButton() { SizeMode = SizeMode.Small, Icon = new SymbolIcon(Symbol.FullScreen) };
+RibbonButton bookmarksButton = new RibbonButton() { AllowedSizeModes = AllowedSizeModes.Small, Icon = new BitmapIcon() { UriSource = new Uri("msappx:///Assets/Bookmarks.png") } };
+RibbonButton characterButton = new RibbonButton() {   AllowedSizeModes= AllowedSizeModes.Small, Icon = new SymbolIcon(Symbol.Character) };
+RibbonButton fullScreenButton = new RibbonButton() { AllowedSizeModes = AllowedSizeModes.Small, Icon = new SymbolIcon(Symbol.FullScreen) };
 
 illustrationsGroup.Items.Add(pictureButton);
 illustrationsGroup.Items.Add(shapesButton);
@@ -247,7 +247,7 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ## Add ribbon drop down button
 
-The [RibbonDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonDropDownButton.html) represents a dropdown button that displays the drop-down menu items when clicked. It allows to arrange a button with different sizes within a ribbon group using the `SizeMode` property. Use the `Content` and `Icon` properties to set the label and icon to the button, and populate the drop-down menu items using the `Flyout` control in the button.
+The [RibbonDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonDropDownButton.html) represents a dropdown button that displays the drop-down menu items when clicked. It allows to arrange a button with different sizes within a ribbon group using the `AllowedSizeModes` property. Use the `Content` and `Icon` properties to set the label and icon to the button, and populate the drop-down menu items using the `Flyout` control in the button.
 
 {% tabs %}
 {% highlight xaml %}
@@ -257,7 +257,7 @@ The [RibbonDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
             <ribbon:RibbonTab Header="Home">
                 <ribbon:RibbonGroup Header="File">
                     <ribbon:RibbonDropDownButton Content="New File"
-                                                     SizeMode="Large">
+                                                     AllowedSizeModes="Large">
                         <ribbon:RibbonDropDownButton.Icon>
                                 <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE7C3;" />
                         </ribbon:RibbonDropDownButton.Icon>
@@ -287,7 +287,7 @@ RibbonTab layoutTab = new RibbonTab() { Header = "Layout" };
 
 RibbonGroup fileGroup = new RibbonGroup() { Header = "File" };
 
-RibbonDropDownButton newFileButton = new RibbonDropDownButton() { Content = "New File", SizeMode = SizeMode.Large, Icon = new FontIcon() { Glyph = "\xE7C3", FontFamily = new FontFamily("Segoe MDL2 Assets") } };
+RibbonDropDownButton newFileButton = new RibbonDropDownButton() { Content = "New File", AllowedSizeModes = AllowedSizeModes.Large, Icon = new FontIcon() { Glyph = "\xE7C3", FontFamily = new FontFamily("Segoe MDL2 Assets") } };
 
 MenuFlyout flyout = new MenuFlyout();
 MenuFlyoutItem emptyFileMenuFlyoutItem = new MenuFlyoutItem() { Text = "Empty File" };
@@ -312,7 +312,7 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ## Add ribbon split button
 
-The [RibbonSplitButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonSplitButton.html) represents a combined control that has a primary button which responds to a `Click` event and a secondary button acts like a drop-down menu with a list of values. It allows  to arrange a button with different sizes within a ribbon group using the `SizeMode` property. Use the `Content` and `Icon` properties to set the label and icon to the button, and populate the drop-down menu items using the `Flyout` control in the button.
+The [RibbonSplitButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonSplitButton.html) represents a combined control that has a primary button which responds to a `Click` event and a secondary button acts like a drop-down menu with a list of values. It allows  to arrange a button with different sizes within a ribbon group using the `AllowedSizeModes` property. Use the `Content` and `Icon` properties to set the label and icon to the button, and populate the drop-down menu items using the `Flyout` control in the button.
 
 {% tabs %}
 {% highlight xaml %}
@@ -323,7 +323,7 @@ The [RibbonSplitButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
                 <ribbon:RibbonGroup Header="Voice">
                     <ribbon:RibbonSplitButton Icon="Microphone"
                                         Content="Dictate"
-                                        SizeMode="Large">
+                                        AllowedSizeModes="Large">
                         <ribbon:RibbonSplitButton.Flyout>
                             <MenuFlyout>
                                 <MenuFlyoutItem Text="Chinese" />
@@ -351,7 +351,7 @@ RibbonTab layoutTab = new RibbonTab() { Header = "Layout" };
 
 RibbonGroup voiceGroup = new RibbonGroup() { Header = "Voice" };
 
-RibbonSplitButton splitButton = new RibbonSplitButton() { Content = "Dictate", SizeMode = SizeMode.Large, Icon = new SymbolIcon(Symbol.Microphone) };
+RibbonSplitButton splitButton = new RibbonSplitButton() { Content = "Dictate", AllowedSizeModes = AllowedSizeModes.Large, Icon = new SymbolIcon(Symbol.Microphone) };
 
 MenuFlyout flyout = new MenuFlyout();
 MenuFlyoutItem chineseMenuFlyoutItem = new MenuFlyoutItem() { Text = "Chinese" };
@@ -381,6 +381,62 @@ this.rootGrid.Children.Add(sfRibbon);
 ![Add ribbon split button in group](Getting-Started-images/add-ribbon-split-button.png)
 
 N> The other icon types such as   [BitmapIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.bitmapicon?view=windows-app-sdk-1.0), [FontIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.fonticon?view=windows-app-sdk-1.0), [PathIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.pathicon?view=windows-app-sdk-1.0) and [SymbolIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.symbolicon?view=windows-app-sdk-1.0) can be used for the Ribbon items such as RibbonButton, RibbonDropDownButton, RibbonSplitButton and Ribbon Item host controls.
+
+## Add ribbon combobox
+
+The `RibbonComboBox` control combines a text box and a drop-down list box, allowing users to choose items from the list or add new values and it allows to display in the normal, simplified, and overflow layout of the ribbon. Use the `DisplayOptions` property to set the control in different layouts.
+
+In the overflow menu, the RibbonComboBox template has been changed to look like a dropdown button. While clicking the ribboncombobox in the overflow menu, the flyout will open on either the right or left side and displays the ribbon combobox items.
+
+{% tabs %}
+{% highlight xaml %}
+<Grid x:Name="rootGrid">
+    <ribbon:RibbonComboBox Header="Font Family"
+                           Width="200"
+                           DisplayOptions="Normal,Simplified">
+        <ribbon:RibbonComboBoxItem Content="Calibri"/>
+        <ribbon:RibbonComboBoxItem Content="Arial" />
+        <ribbon:RibbonComboBoxItem Content="Segoe UI" />
+    </ribbon:RibbonComboBox>
+    <ribbon:RibbonComboBox Header="Font Size"
+                           Width="97" 
+                           DisplayOptions="Normal,Overflow">
+        <ribbon:RibbonComboBoxItem Content="12" />                                    
+        <ribbon:RibbonComboBoxItem Content="14" />
+        <ribbon:RibbonComboBoxItem Content="18" />
+        <ribbon:RibbonComboBoxItem Content="20" />
+        <ribbon:RibbonComboBoxItem Content="24" />
+        <ribbon:RibbonComboBoxItem Content="34" />
+        <ribbon:RibbonComboBoxItem Content="46" />
+    </ribbon:RibbonComboBox>
+</Grid>
+{% endhighlight %}
+{% highlight c# %}
+RibbonComboBox ribbonComboBox = new RibbonComboBox() { Header = "Font Family", Width = 200, DisplayOptions = DisplayOptions.Normal | DisplayOptions.Simplified };
+RibbonComboBoxItem ribbonComboBoxItem = new RibbonComboBoxItem() { Content = "Calibri" };
+RibbonComboBoxItem ribbonComboBoxItem1 = new RibbonComboBoxItem() { Content= "Arial" };
+RibbonComboBoxItem ribbonComboBoxItem2 = new RibbonComboBoxItem() { Content= "Segoe UI" };
+
+ribbonComboBox.Items.Add(ribbonComboBoxItem);
+ribbonComboBox.Items.Add(ribbonComboBoxItem1);
+ribbonComboBox.Items.Add(ribbonComboBoxItem2);
+
+RibbonComboBox ribbonComboBox1 = new RibbonComboBox() { Header = "Font size", Width = 97, DisplayOptions = DisplayOptions.Normal | DisplayOptions.Overflow };
+RibbonComboBoxItem ribbonComboBoxItemSize = new RibbonComboBoxItem() { Content = "12" };
+RibbonComboBoxItem ribbonComboBoxItemSize1 = new RibbonComboBoxItem() { Content = "14" };
+RibbonComboBoxItem ribbonComboBoxItemSize2 = new RibbonComboBoxItem() { Content = "16" };
+
+ribbonComboBox1.Items.Add(ribbonComboBoxItemSize);
+ribbonComboBox1.Items.Add(ribbonComboBoxItemSize1);
+ribbonComboBox1.Items.Add(ribbonComboBoxItemSize2);
+rootGrid.Children.Add(ribbonComboBox);
+rootGrid.Children.Add(ribbonComboBox1);
+{% endhighlight %}
+{% endtabs %}
+
+![Add ribbon comboBox in group](Getting-Started-images/ribbon-combobox-in-normal-menu.png)
+
+![Add ribbon comboBox in group](Getting-Started-images/ribbon-combobox-in-overflow-menu.png)
 
 ## Add ribbon gallery
 
@@ -464,7 +520,7 @@ Ribbon allows to host other controls such as checkbox, radio button and combobox
                                 </ToggleButton.Content>
                             </ToggleButton>
                             <ribbon:RibbonSplitButton x:Name="underlineButton"
-                                                      SizeMode="Small"
+                                                      AllowedSizeModes="Small"
                                                       Icon="Underline"
                                                       Content="Underline">
                                 <ribbon:RibbonSplitButton.Flyout>
@@ -478,7 +534,7 @@ Ribbon allows to host other controls such as checkbox, radio button and combobox
                             </ribbon:RibbonSplitButton>
                             <ribbon:RibbonButton x:Name="fontSizeButton"
                                                  Icon="FontSize"
-                                                 SizeMode="Small"
+                                                 AllowedSizeModes="Small"
                                                  Content="FontSize" />
                         </StackPanel>
                     </ribbon:RibbonItemHost.ItemTemplate>

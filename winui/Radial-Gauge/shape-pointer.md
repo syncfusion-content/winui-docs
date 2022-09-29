@@ -115,7 +115,7 @@ this.Content = sfRadialGauge;
 
 ## Shadow support
 
-The shadow can be applied by using the `HasShadow` property.
+The shadow can be applied by using the [`HasShadow`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html#Syncfusion_UI_Xaml_Gauges_ShapePointer_HasShadow) property.
 
 {% tabs %}
 
@@ -162,8 +162,8 @@ The shape pointer overlay is rendered around the shape when the cursor is on the
 
 The shape pointer overlay can be customized using the following properties:
 
-* `OverlayFill`- Allows you to specify the shape pointer overlay's color.
-* `OverlayRadius` - Allows you to specify the shape pointer overlay's radius.
+* [`OverlayFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html#Syncfusion_UI_Xaml_Gauges_ShapePointer_OverlayFill) - Allows you to specify the shape pointer overlay's color.
+* [`OverlayRadius`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html#Syncfusion_UI_Xaml_Gauges_ShapePointer_OverlayRadius) - Allows you to specify the shape pointer overlay's radius.
 
 {% tabs %}
 
