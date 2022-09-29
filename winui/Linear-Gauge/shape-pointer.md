@@ -161,7 +161,7 @@ this.Content = sfLinearGauge;
 
 ## Shadow support
 
-The shadow can be applied by using the `HasShadow` property.
+The shadow can be applied by using the [`HasShadow`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearShapePointer.html#Syncfusion_UI_Xaml_Gauges_LinearShapePointer_HasShadow) property.
 
 {% tabs %}
 
