@@ -250,7 +250,7 @@ chart.Legend = new ChartLegend();
 
 ## Enable Tooltip
 
-Tooltips are used to show information about the segment, when mouse over on it. Enable tooltip by setting series [EnableTooltip]() property as true.
+Tooltips are used to show information about the segment, when mouse over on it. Enable tooltip by setting series [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property as true.
 
 {% tabs %} 
 

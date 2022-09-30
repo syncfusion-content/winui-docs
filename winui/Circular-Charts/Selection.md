@@ -15,7 +15,7 @@ The circular chart supports selection that allows the selection of a segment in 
 
 The Selection feature can be configured using the following properties:
 
-* [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) - Gets or Sets the [ChartSelectionType]() Enum value for the Selection Behavior.     
+* [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) - Gets or Sets the [ChartSelectionType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionType.html) Enum value for the Selection Behavior.     
 The following `ChartSelectionType` can be achieved during Selection:
     * Single - Allows to select a single segment.
     * SingleDeselect -  Allows to select and deselect a single segment.
@@ -68,7 +68,7 @@ chart.Series.Add(series);
 
 ## Multi-selection
 
-The circular chart allows to select single or multiple segments using the [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) property. By default the [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) value is [Single]().
+The circular chart allows to select single or multiple segments using the [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) property. By default the [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) value is [Single](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionType.html#Syncfusion_UI_Xaml_Charts_ChartSelectionType_Single).
 
 {% tabs %}
 
@@ -205,8 +205,8 @@ The following events are available in the [ChartSelectionBehavior](https://help.
 
 The [SelectionChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SelectionChanging) event occurs before the data point is being selected. This is a cancelable event. The `ChartSelectionChangingEventArgs` contains the following information.
 
-* [NewIndexes]() - Gets the collection of selected data point index. Here, NewIndexes[0] is the current selected index.
-* [OldIndexes]() - Gets the collection of previous selected data point index. Here, OldIndexes[0] is the current unselected index.
+* [NewIndexes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangingEventArgs_NewIndexes) - Gets the collection of selected data point index. Here, NewIndexes[0] is the current selected index.
+* [OldIndexes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangingEventArgs_OldIndexes) - Gets the collection of previous selected data point index. Here, OldIndexes[0] is the current unselected index.
 
 * [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-6.0) - Gets or sets a value that indicates whether the selection should be canceled.
 
@@ -214,5 +214,5 @@ The [SelectionChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 The [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SelectionChanged) event occurs after a data point has been selected. The `ChartSelectionChangedEventArgs` argument contains the following information.
 
-* [NewIndexes]() - Gets the collection of selected data point index. Here, NewIndexes[0] is the current selected index.
-* [OldIndexes]() - Gets the collection of previous selected data point index. Here, OldIndexes[0] is the current unselected index.
+* [NewIndexes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangedEventArgs_NewIndexes) - Gets the collection of selected data point index. Here, NewIndexes[0] is the current selected index.
+* [OldIndexes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangedEventArgs_OldIndexes) - Gets the collection of previous selected data point index. Here, OldIndexes[0] is the current unselected index.
