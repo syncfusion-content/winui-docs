@@ -30,7 +30,7 @@ busyIndicator.BusyContent = "Loading...";
 {% endhighlight %}
 {% endtabs %}
 
-![BusyContent in WinUI BusyIndicator control.](BusyIndicator_videos/winui_busyindicator_content.jpg)
+![BusyContent in WinUI BusyIndicator control.](BusyIndicator_images/winui_busyindicator_content.jpg)
 
 ## Busy content position
 
@@ -57,7 +57,7 @@ busyIndicator.BusyContentPosition = BusyIndicatorContentPosition.Top;
 {% endhighlight %}
 {% endtabs %}
 
-![BusyContentPosition in WinUI BusyIndicator control.](BusyIndicator_videos/winui_busyindicator_contentposition.jpg)
+![BusyContentPosition in WinUI BusyIndicator control.](BusyIndicator_images/winui_busyindicator_contentposition.jpg)
 
 ## Busy content template
 
@@ -77,4 +77,4 @@ The BusyIndicator control provides options to customize the content by using the
 {% endhighlight %}
 {% endtabs %}
 
-![BusyContentTemplate in WinUI BusyIndicator control.](BusyIndicator_videos/winui_busyindicator_contenttemplate.jpg)
+![BusyContentTemplate in WinUI BusyIndicator control.](BusyIndicator_images/winui_busyindicator_contenttemplate.jpg)
