@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Content in WinUI BusyIndicator control | Syncfusion
-description: Learn here all about the loading progress content and its customization available in the Syncfusion WinUI BusyIndicator control.
+description: Learn all about the loading progress content and its customization available in the Syncfusion WinUI BusyIndicator control here.
 platform: WinUI
 control: SfBusyIndicator
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Content in WinUI BusyIndicator
 
-The BusyIndicator control provides option to set the custom message that indicates the busy status of the control to the users by using the `BusyContent` property.
+The BusyIndicator control provides an option to set the custom message that indicates the busy status of the control to the users by using the `BusyContent` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -30,7 +30,7 @@ busyIndicator.BusyContent = "Loading...";
 {% endhighlight %}
 {% endtabs %}
 
-![BusyContent in WinUI BusyIndicator control.](BusyIndicator_videos/winui_busyindicator_content.jpg)
+![BusyContent in WinUI BusyIndicator control.](BusyIndicator_images/winui_busyindicator_content.jpg)
 
 ## Busy content position
 
@@ -57,11 +57,11 @@ busyIndicator.BusyContentPosition = BusyIndicatorContentPosition.Top;
 {% endhighlight %}
 {% endtabs %}
 
-![BusyContentPosition in WinUI BusyIndicator control.](BusyIndicator_videos/winui_busyindicator_contentposition.jpg)
+![BusyContentPosition in WinUI BusyIndicator control.](BusyIndicator_images/winui_busyindicator_contentposition.jpg)
 
 ## Busy content template
 
-The BusyIndicator control provides options to customize the content by using the `DataTemplate` with the help of `BusyContentTemplate` property.
+The BusyIndicator control provides options to customize the content by using the `DataTemplate` with the help of the `BusyContentTemplate` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -77,4 +77,4 @@ The BusyIndicator control provides options to customize the content by using the
 {% endhighlight %}
 {% endtabs %}
 
-![BusyContentTemplate in WinUI BusyIndicator control.](BusyIndicator_videos/winui_busyindicator_contenttemplate.jpg)
+![BusyContentTemplate in WinUI BusyIndicator control.](BusyIndicator_images/winui_busyindicator_contenttemplate.jpg)

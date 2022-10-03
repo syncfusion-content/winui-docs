@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AnimationType in WinUI BusyIndicator control | Syncfusion
-description: Learn here all about different animation types available in the Syncfusion WinUI BusyIndicator control.
+description: Learn all about different animation types available in the Syncfusion WinUI BusyIndicator control here.
 platform: WinUI
 control: SfBusyIndicator
 documentation: ug
@@ -30,7 +30,7 @@ busyIndicator.Content = "Loading";
 {% endhighlight %}
 {% endtabs %}
 
-The following gif image contains the types of animation in BusyIndicator.
+The following gif image contains the types of animation in BusyIndicator:
 
-![WinUI BusyIndicator control with AnimationTypes](BusyIndicator_videos/winui_busyindicator_animationtypes.gif)
+![WinUI BusyIndicator control with AnimationTypes](BusyIndicator_images/winui_busyindicator_animationtypes.gif)
 

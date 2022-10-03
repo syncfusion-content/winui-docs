@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in WinUI BusyIndicator control | Syncfusion
-description: Learn here all about the customization features such as size factor, duration factor, and color in Syncfusion WinUI BusyIndicator (SfBusyIndicator) control.
+description: Learn all about the customization features such as size factor, duration factor, and color in Syncfusion WinUI BusyIndicator (SfBusyIndicator) control here.
 platform: WinUI
 control: SfBusyIndicator
 documentation: ug
@@ -34,7 +34,7 @@ busyIndicator.SizeFactor = 0.2;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI BusyIndicator control with SizeFactor](BusyIndicator_videos/winui_busyindicator_size.gif)
+![WinUI BusyIndicator control with SizeFactor](BusyIndicator_images/winui_busyindicator_size.gif)
 
 ## Duration
 
@@ -59,7 +59,7 @@ busyIndicator.DurationFactor = 0.9;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI BusyIndicator control with DurationFactor](BusyIndicator_videos/winui_busyindicator_duration.gif)
+![WinUI BusyIndicator control with DurationFactor](BusyIndicator_images/winui_busyindicator_duration.gif)
 
 ## Color
 
@@ -84,4 +84,4 @@ busyIndicator.Color = new SolidColorBrush(Colors.Red);
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI BusyIndicator control with Color](BusyIndicator_videos/winui_busyindicator_color.jpg)
+![WinUI BusyIndicator control with Color](BusyIndicator_images/winui_busyindicator_color.jpg)
