@@ -50,7 +50,7 @@ busyIndicator.IsActive = true;
 
 ## Setting Animation Type in BusyIndicator
 
-The [BusyIndicator control](https://www.syncfusion.com/winui-controls/busy-indicator) provides 7 predefined animation types like `DottedCircularFluent`, `DottedCircle`, `DottedLinear`, and so on. Users can select any one of the animation types using the `AnimationType` property.
+The [BusyIndicator control](https://www.syncfusion.com/winui-controls/busy-indicator) provides 7 predefined animation types like `DottedCircularFluent`, `DottedCircle`, `DottedLinear`, and so on. Users can select any one of the animation types using the [AnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_AnimationType) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -71,7 +71,7 @@ busyIndicator.AnimationType = BusyIndicatorAnimationType.DottedCircularFluent;
 
 ## Adding Content in BusyIndicator
 
-The [BusyIndicator control](https://www.syncfusion.com/winui-controls/busy-indicator) provides option to set the content that indicates the busy status of the control to the users by using the `BusyContent` property.
+The [BusyIndicator control](https://www.syncfusion.com/winui-controls/busy-indicator) provides option to set the content that indicates the busy status of the control to the users by using the [BusyContent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_BusyContent) property.
 
 {% tabs %}
 {% highlight xaml %}
