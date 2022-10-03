@@ -9,7 +9,7 @@ documentation: ug
 
 # Content in WinUI BusyIndicator
 
-The BusyIndicator control provides an option to set the custom message that indicates the busy status of the control to the users by using the `BusyContent` property.
+The [BusyIndicator control](https://www.syncfusion.com/winui-controls/busy-indicator) provides an option to set the custom message that indicates the busy status of the control to the users by using the [BusyContent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_BusyContent) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -34,7 +34,7 @@ busyIndicator.BusyContent = "Loading...";
 
 ## Busy content position
 
-The content can be positioned at the top, bottom, right, or left of the indicator by using the `BusyContentPosition` property. The default value is `Bottom`.
+The content can be positioned at the top, bottom, right, or left of the indicator by using the [BusyContentPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_BusyContentPosition) property. The default value is `Bottom`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -61,7 +61,7 @@ busyIndicator.BusyContentPosition = BusyIndicatorContentPosition.Top;
 
 ## Busy content template
 
-The BusyIndicator control provides options to customize the content by using the `DataTemplate` with the help of the `BusyContentTemplate` property.
+The [BusyIndicator control](https://www.syncfusion.com/winui-controls/busy-indicator) provides options to customize the content by using the `DataTemplate` with the help of the [BusyContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_BusyContentTemplate) property.
 
 {% tabs %}
 {% highlight xaml %}

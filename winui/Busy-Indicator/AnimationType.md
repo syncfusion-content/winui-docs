@@ -9,7 +9,7 @@ documentation: ug
 
 # AnimationType in WinUI BusyIndicator
 
-The `AnimationType` property for the SfBusyIndicator control allows the users to set one of the animations from the built-in animations. The different types of animations are `DottedCircularFluent`, `DottedCircle`, `DottedLinear`, `DoubleCircle`, `LinearBox`, `LinearOscillatingBox`, and `SingleCircle`.
+The [AnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_AnimationType) property for the [SfBusyIndicator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html) control allows the users to set one of the animations from the built-in animations. The different types of animations are `DottedCircularFluent`, `DottedCircle`, `DottedLinear`, `DoubleCircle`, `LinearBox`, `LinearOscillatingBox`, and `SingleCircle`.
 
 {% tabs %}
 {% highlight XAML %}

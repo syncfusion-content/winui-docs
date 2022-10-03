@@ -9,7 +9,7 @@ documentation: ug
 
 # Precision in WinUI Rating
 
-The Rating control provides an option to set an accuracy level for ratings with flexible precision to handle full, half, or exact values using the `Precision` property. The default value is `Full`.
+The [Rating control](https://www.syncfusion.com/winui-controls/rating) provides an option to set an accuracy level for ratings with flexible precision to handle full, half, or exact values using the [Precision](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfRating.html#Syncfusion_UI_Xaml_Editors_SfRating_Precision) property. The default value is `Full`.
 
 ## Full
 

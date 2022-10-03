@@ -13,7 +13,7 @@ This section explains the customization features available in the WinUI `BusyInd
 
 ## Size
 
-The indicator size can be customized by using the `SizeFactor` property. Its default value is 0.5 and ranges from 0 to 1.
+The indicator size can be customized by using the [SizeFactor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_SizeFactor) property. Its default value is 0.5 and ranges from 0 to 1.
 
 {% tabs %}
 {% highlight XAML %}
@@ -38,7 +38,7 @@ busyIndicator.SizeFactor = 0.2;
 
 ## Duration
 
-The indicator animation speed can be customized by using the `DurationFactor` property. Its default value is 0.5 and ranges from 0 to 1.
+The indicator animation speed can be customized by using the [DurationFactor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_DurationFactor) property. Its default value is 0.5 and ranges from 0 to 1.
 
 {% tabs %}
 {% highlight XAML %}
@@ -63,7 +63,7 @@ busyIndicator.DurationFactor = 0.9;
 
 ## Color
 
-The indicator color can be customized by using the `Color` property.
+The indicator color can be customized by using the [Color](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_Color) property.
 
 {% tabs %}
 {% highlight XAML %}

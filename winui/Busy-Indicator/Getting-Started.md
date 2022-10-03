@@ -9,14 +9,14 @@ documentation: ug
 
 # Getting Started with WinUI BusyIndicator
 
-This section explains the steps required to add the BusyIndicator control and covers only the basic features needed to get started with Syncfusion `BusyIndicator` control.
+This section explains the steps required to add the [BusyIndicator control](https://www.syncfusion.com/winui-controls/busy-indicator) and covers only the basic features needed to get started with Syncfusion `BusyIndicator` control.
 
 ## Creating an application with WinUI BusyIndicator control
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Add reference to [Syncfusion.Notifications.WinUI](https://www.nuget.org/packages/Syncfusion.Notifications.WinUI) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Notifications` in XAML or C# code.
-4. Initialize the SfBusyIndicator control.
+4. Initialize the [SfBusyIndicator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html) control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -50,7 +50,7 @@ busyIndicator.IsActive = true;
 
 ## Setting Animation Type in BusyIndicator
 
-The BusyIndicator control provides 7 predefined animation types like `DottedCircularFluent`, `DottedCircle`, `DottedLinear`, and so on. Users can select any one of the animation types using the `AnimationType` property.
+The [BusyIndicator control](https://www.syncfusion.com/winui-controls/busy-indicator) provides 7 predefined animation types like `DottedCircularFluent`, `DottedCircle`, `DottedLinear`, and so on. Users can select any one of the animation types using the `AnimationType` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -71,7 +71,7 @@ busyIndicator.AnimationType = BusyIndicatorAnimationType.DottedCircularFluent;
 
 ## Adding Content in BusyIndicator
 
-The BusyIndicator control provides option to set the content that indicates the busy status of the control to the users by using the `BusyContent` property.
+The [BusyIndicator control](https://www.syncfusion.com/winui-controls/busy-indicator) provides option to set the content that indicates the busy status of the control to the users by using the `BusyContent` property.
 
 {% tabs %}
 {% highlight xaml %}
