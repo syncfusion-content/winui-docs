@@ -111,4 +111,4 @@ busyIndicator.BusyContent = "Loading";
 {% endhighlight %}
 {% endtabs %}
 
-![BusyIndicator control getting started in WinUI](BusyIndicator_videos/winui_busyindicator_getting_started.gif)
+![BusyIndicator control getting started in WinUI](BusyIndicator_images/winui_busyindicator_getting_started.gif)
