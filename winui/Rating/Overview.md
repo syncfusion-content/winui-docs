@@ -9,7 +9,7 @@ documentation: ug
 
 # WinUI Rating Overview
 
-The .NET WinUI Rating control is used to provide or view ratings on a numeric scale for any service, such as movie applications, products, and more.
+The .NET WinUI Rating control is used to provide or view ratings on a numeric scale for any service provided, such as movies, applications, products, and more.
 
 ![Rating control overview in WinUI](Rating_images/winui_rating_overview.png)
 
