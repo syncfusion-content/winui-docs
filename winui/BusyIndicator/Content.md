@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Content in WinUI BusyIndicator control | Syncfusion
-description: Learn here all about the loading progress content and its customization available in the Syncfusion WinUI BusyIndicator control.
+description: Learn all about the loading progress content and its customization available in the Syncfusion WinUI BusyIndicator control here.
 platform: WinUI
 control: SfBusyIndicator
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Content in WinUI BusyIndicator
 
-The BusyIndicator control provides option to set the custom message that indicates the busy status of the control to the users by using the `BusyContent` property.
+The BusyIndicator control provides an option to set the custom message that indicates the busy status of the control to the users by using the `BusyContent` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -61,7 +61,7 @@ busyIndicator.BusyContentPosition = BusyIndicatorContentPosition.Top;
 
 ## Busy content template
 
-The BusyIndicator control provides options to customize the content by using the `DataTemplate` with the help of `BusyContentTemplate` property.
+The BusyIndicator control provides options to customize the content by using the `DataTemplate` with the help of the `BusyContentTemplate` property.
 
 {% tabs %}
 {% highlight xaml %}

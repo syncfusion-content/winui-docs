@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in WinUI Rating control | Syncfusion
-description: Learn here all about the customization features such as style, item size, read-only, and template in Syncfusion WinUI Rating (SfRating) control.
+description: Learn all about the customization features such as style, item size, read-only, and template in Syncfusion WinUI Rating (SfRating) control here.
 platform: WinUI
 control: SfRating
 documentation: ug
@@ -134,7 +134,7 @@ rating.IsReadOnly = true;
 
 ## ItemTemplateSelector
 
-The Rating control provides support to change the rating items such as images, paths, font icons, and other elements with the help of `ItemTemplateSelector` property.
+The Rating control provides support to change the rating items such as images, paths, font icons, and other elements with the help of the `ItemTemplateSelector` property.
 
 ### Path customization
 

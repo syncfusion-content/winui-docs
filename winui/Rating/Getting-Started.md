@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with WinUI Rating control | Syncfusion
-description: Learn here all about getting started with the Syncfusion WinUI Rating(SfRating) control and its basic features.
+description: Learn all about getting started with the Syncfusion WinUI Rating(SfRating) control and its basic features here.
 platform: WinUI
 control: SfRating
 documentation: ug

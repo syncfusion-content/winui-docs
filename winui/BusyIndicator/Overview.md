@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WinUI BusyIndicator control | Syncfusion
-description: Learn here all about introduction of Syncfusion WinUI BusyIndicator Control (SfBusyIndicator) with key features and more.
+description: Learn all about the introduction of Syncfusion WinUI BusyIndicator Control (SfBusyIndicator) with essential features and more here.
 platform: WinUI
 control: SfBusyIndicator
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # WinUI BusyIndicator Overview
 
-The Busy Indicator control for .NET WinUI is used to display a predefined built-in animation when an operation runs in the background of the application and waiting for its completion. It can be customized in terms of size, color, duration, and content.
+The Busy Indicator control for .NET WinUI is used to display a predefined built-in animation when an operation runs in the application's background and is waiting for its completion. It can be customized in terms of size, color, duration, and content.
 
 ![BusyIndicator control overview in WinUI](BusyIndicator_videos/winui_busyindicator_overview.gif)
 

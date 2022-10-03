@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Precision in WinUI Rating control | Syncfusion
-description: Learn here all about the precision feature in the Rating control to set the accuracy level such as full, half, and exact.
+description: Learn all about the precision feature in the Rating control to set the accuracy level such as full, half, and exact here.
 platform: WinUI
 control: SfRating
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Precision in WinUI Rating
 
-The Rating control provides option to set an accuracy level for ratings with flexible precision to handle full, half, or exact values using the `Precision` property. The default value is `Full`.
+The Rating control provides an option to set an accuracy level for ratings with flexible precision to handle full, half, or exact values using the `Precision` property. The default value is `Full`.
 
 ## Full
 
-Rating value can be provided with nearest rounded value.
+The rating value can be provided with the nearest rounded value.
 
 {% tabs %}
 {% highlight XAML %}
@@ -37,7 +37,7 @@ rating.ItemsCount = 5;
 
 ## Half
 
-Rating value can be provided with nearest half value.
+The rating value can be provided with the nearest half value.
 
 {% tabs %}
 {% highlight XAML %}
@@ -61,7 +61,7 @@ rating.ItemsCount = 5;
 
 ## Exact
 
-Rating value can be provided with exact value.
+The rating value can be provided with the exact value.
 
 {% tabs %}
 {% highlight XAML %}
