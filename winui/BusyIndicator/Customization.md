@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in WinUI BusyIndicator control | Syncfusion
-description: Learn here all about the customization features such as size factor, duration factor, and color in Syncfusion WinUI BusyIndicator (SfBusyIndicator) control.
+description: Learn all about the customization features such as size factor, duration factor, and color in Syncfusion WinUI BusyIndicator (SfBusyIndicator) control here.
 platform: WinUI
 control: SfBusyIndicator
 documentation: ug
