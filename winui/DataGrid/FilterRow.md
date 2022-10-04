@@ -118,7 +118,7 @@ Date
 {{'[SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html)'| markdownify }}
 </td>
 <td>
-{{'`GridFilterRowDateRenderer`'| markdownify }}
+{{'[GridFilterRowDateRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.RowFilter.GridFilterRowDateRenderer.html)'| markdownify }}
 </td>
 <td>
 Used for filtering the DateTimeOffset values.
