@@ -212,8 +212,7 @@ Save(stream, "Sample");
 
 ## Export DataGrid SelectedItems to Excel
 
-By default, the entire grid will be exported to Excel. Export selected rows only by passing the `SelectedItems` to the 
-`ExportToExcel` method.
+By default, the entire grid will be exported to Excel. Export selected rows only by passing the `SelectedItems` to the `ExportToExcel` method.
 
 {% tabs %}
 {% highlight c# %}

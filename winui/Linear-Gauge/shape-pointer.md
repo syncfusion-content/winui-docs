@@ -161,7 +161,7 @@ this.Content = sfLinearGauge;
 
 ## Shadow support
 
-The shadow can be applied by using the `HasShadow` property.
+The shadow can be applied by using the [`HasShadow`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearShapePointer.html#Syncfusion_UI_Xaml_Gauges_LinearShapePointer_HasShadow) property.
 
 {% tabs %}
 
@@ -173,7 +173,8 @@ The shadow can be applied by using the `HasShadow` property.
             <gauge:LinearAxis.MarkerPointers>
                 <gauge:LinearShapePointer Value="50"
                                           ShapeType="Circle"
-                                          HasShadow="True" />
+                                          HasShadow="True"
+                                          OffsetPoint="0,-12" />
             </gauge:LinearAxis.MarkerPointers>
         </gauge:LinearAxis>
     </gauge:SfLinearGauge.Axis>
@@ -189,6 +190,7 @@ LinearShapePointer linearShapePointer = new LinearShapePointer();
 linearShapePointer.Value = 50;
 linearShapePointer.ShapeType = GaugeShapeType.Circle;
 linearShapePointer.HasShadow = true;
+linearShapePointer.OffsetPoint = new Point(0, -12);
 sfLinearGauge.Axis.MarkerPointers.Add(linearShapePointer);
 
 this.Content = sfLinearGauge;
