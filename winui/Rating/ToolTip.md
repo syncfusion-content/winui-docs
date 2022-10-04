@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ToolTip in WinUI Rating control | Syncfusion
-description: Learn here all about how to enable the tooltip and format the tooltip content in WinUI Syncfusion Rating (SfRating) control.
+description: Learn all about how to enable the tooltip and format the tooltip content in WinUI Syncfusion Rating (SfRating) control here.
 platform: WinUI
 control: SfRating
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # ToolTip in WinUI Rating
 
-The Rating control tooltip can be enabled by using the `EnableToolTip` property. It will show the rating value when the user hovers the mouse over the control. The default value is `false`.
+The Rating control tooltip can be enabled by using the [EnableToolTip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfRating.html#Syncfusion_UI_Xaml_Editors_SfRating_EnableToolTip) property. When the mouse hovers over the control, it will show the rating value content as a tooltip. The default value is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -33,7 +33,7 @@ rating.EnableToolTip = true;
 
 ## ToolTipFormat for Rating
 
-The tooltip content can be formatted by using the `ToolTipFormat` property.
+The tooltip content can be formatted by using the [ToolTipFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfRating.html#Syncfusion_UI_Xaml_Editors_SfRating_ToolTipFormat) property.
 
 {% tabs %}
 {% highlight XAML %}

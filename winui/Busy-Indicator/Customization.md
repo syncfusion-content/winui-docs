@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in WinUI BusyIndicator control | Syncfusion
-description: Learn here all about the customization features such as size factor, duration factor, and color in Syncfusion WinUI BusyIndicator (SfBusyIndicator) control.
+description: Learn all about the customization features such as size factor, duration factor, and color in Syncfusion WinUI BusyIndicator (SfBusyIndicator) control here.
 platform: WinUI
 control: SfBusyIndicator
 documentation: ug
@@ -13,7 +13,7 @@ This section explains the customization features available in the WinUI `BusyInd
 
 ## Size
 
-The indicator size can be customized by using the `SizeFactor` property. Its default value is 0.5 and ranges from 0 to 1.
+The indicator size can be customized by using the [SizeFactor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_SizeFactor) property. Its default value is 0.5 and ranges from 0 to 1.
 
 {% tabs %}
 {% highlight XAML %}
@@ -34,11 +34,11 @@ busyIndicator.SizeFactor = 0.2;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI BusyIndicator control with SizeFactor](BusyIndicator_videos/winui_busyindicator_size.gif)
+![WinUI BusyIndicator control with SizeFactor](BusyIndicator_images/winui_busyindicator_size.gif)
 
 ## Duration
 
-The indicator animation speed can be customized by using the `DurationFactor` property. Its default value is 0.5 and ranges from 0 to 1.
+The indicator animation speed can be customized by using the [DurationFactor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_DurationFactor) property. Its default value is 0.5 and ranges from 0 to 1.
 
 {% tabs %}
 {% highlight XAML %}
@@ -59,11 +59,11 @@ busyIndicator.DurationFactor = 0.9;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI BusyIndicator control with DurationFactor](BusyIndicator_videos/winui_busyindicator_duration.gif)
+![WinUI BusyIndicator control with DurationFactor](BusyIndicator_images/winui_busyindicator_duration.gif)
 
 ## Color
 
-The indicator color can be customized by using the `Color` property.
+The indicator color can be customized by using the [Color](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_Color) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -84,4 +84,4 @@ busyIndicator.Color = new SolidColorBrush(Colors.Red);
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI BusyIndicator control with Color](BusyIndicator_videos/winui_busyindicator_color.jpg)
+![WinUI BusyIndicator control with Color](BusyIndicator_images/winui_busyindicator_color.jpg)

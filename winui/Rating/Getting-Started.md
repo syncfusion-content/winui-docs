@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with WinUI Rating control | Syncfusion
-description: Learn here all about getting started with the Syncfusion WinUI Rating(SfRating) control and its basic features.
+description: Learn all about getting started with the Syncfusion WinUI Rating(SfRating) control and its basic features here.
 platform: WinUI
 control: SfRating
 documentation: ug
@@ -16,7 +16,7 @@ This section explains the steps required to add the WinUI Rating control and cov
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
-4. Initialize the SfRating control.
+4. Initialize the [SfRating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfRating.html) control.
 
 ## Initialize Rating control using Items
 
