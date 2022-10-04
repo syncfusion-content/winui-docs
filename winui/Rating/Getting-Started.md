@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Rating
 
-This section explains the steps required to add the [WinUI Rating control](https://www.syncfusion.com/winui-controls/rating) and covers only the basic features needed to get started with Syncfusion `Rating` control.
+This section explains the steps required to add the WinUI Rating control and covers only the basic features needed to get started with Syncfusion `Rating` control.
 
 ## Creating an application with WinUI Rating control
 

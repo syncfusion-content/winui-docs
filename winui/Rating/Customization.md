@@ -13,7 +13,7 @@ This section explains the customization features available in the WinUI `Rating`
 
 ## Style
 
-The [Rating control](https://www.syncfusion.com/winui-controls/rating) style can be customized by using the [RatedItemStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfRating.html#Syncfusion_UI_Xaml_Editors_SfRating_RatedItemStyle) and [UnratedItemStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfRating.html#Syncfusion_UI_Xaml_Editors_SfRating_UnratedItemStyle) properties.
+The Rating control style can be customized by using the [RatedItemStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfRating.html#Syncfusion_UI_Xaml_Editors_SfRating_RatedItemStyle) and [UnratedItemStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfRating.html#Syncfusion_UI_Xaml_Editors_SfRating_UnratedItemStyle) properties.
 
 {% tabs %}
 {% highlight XAML %}
@@ -86,7 +86,7 @@ rating.UnratedItemStyle = style2;
 
 ## ItemSize 
 
-The size of each rating item in the [Rating control](https://www.syncfusion.com/winui-controls/rating) can be customized by using the [ItemSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfRating.html#Syncfusion_UI_Xaml_Editors_SfRating_ItemSize) property.
+The size of each rating item in the Rating control can be customized by using the [ItemSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfRating.html#Syncfusion_UI_Xaml_Editors_SfRating_ItemSize) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -110,7 +110,7 @@ rating.ItemSize = 50;
 
 ## IsReadOnly
 
-The [Rating control](https://www.syncfusion.com/winui-controls/rating) provides support to restrict the user's selection and only allows viewing of the rating value by setting the [IsReadOnly](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfRating.html#Syncfusion_UI_Xaml_Editors_SfRating_IsReadOnly) property value as true. The default value is `false`.
+The Rating control provides support to restrict the user's selection and only allows viewing of the rating value by setting the [IsReadOnly](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfRating.html#Syncfusion_UI_Xaml_Editors_SfRating_IsReadOnly) property value as true. The default value is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -134,7 +134,7 @@ rating.IsReadOnly = true;
 
 ## ItemTemplateSelector
 
-The [Rating control](https://www.syncfusion.com/winui-controls/rating) provides support to change the rating items such as images, paths, font icons, and other elements with the help of the [ItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfRating.html#Syncfusion_UI_Xaml_Editors_SfRating_ItemTemplateSelector) property.
+The Rating control provides support to change the rating items such as images, paths, font icons, and other elements with the help of the [ItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfRating.html#Syncfusion_UI_Xaml_Editors_SfRating_ItemTemplateSelector) property.
 
 ### Path customization
 

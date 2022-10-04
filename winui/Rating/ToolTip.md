@@ -9,7 +9,7 @@ documentation: ug
 
 # ToolTip in WinUI Rating
 
-The [Rating control](https://www.syncfusion.com/winui-controls/rating) tooltip can be enabled by using the [EnableToolTip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfRating.html#Syncfusion_UI_Xaml_Editors_SfRating_EnableToolTip) property. When the mouse hovers over the control, it will show the rating value content as a tooltip. The default value is `false`.
+The Rating control tooltip can be enabled by using the [EnableToolTip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfRating.html#Syncfusion_UI_Xaml_Editors_SfRating_EnableToolTip) property. When the mouse hovers over the control, it will show the rating value content as a tooltip. The default value is `false`.
 
 {% tabs %}
 {% highlight XAML %}
