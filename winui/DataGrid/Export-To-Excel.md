@@ -76,7 +76,7 @@ The exporting operation can be customized by passing [DataGridExcelExportOptions
 
 ### Export mode
 
-By default, only the actual value will be exported to excel. To export the display text, set the [ExportMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridExcelExportOptions.html#Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportOptions_ExportMode) property as [Text](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.ExportMode.html#Syncfusion_UI_Xaml_DataGrid_Export_ExportMode_Value). 
+By default, only the actual value will be exported to excel. To export the display text, set the [ExportMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridExcelExportOptions.html#Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportOptions_ExportMode) property as [Text](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.ExportMode.html#Syncfusion_UI_Xaml_DataGrid_Export_ExportMode_Text). 
 
 {% tabs %}
 {% highlight c# %}
