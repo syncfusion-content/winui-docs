@@ -33,7 +33,7 @@ rating.EnableToolTip = true;
 
 ## ToolTipFormat for Rating
 
-The tooltip content can be formatted by using the [ToolTipFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfRating.html#Syncfusion_UI_Xaml_Editors_SfRating_ToolTipFormat) property.
+The tooltip content can be formatted by using the [ToolTipFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfRating.html#Syncfusion_UI_Xaml_Editors_SfRating_ToolTipFormat) property. [Custom numeric format strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings) and [Standard numeric format strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) can be used to format the tooltip content.
 
 {% tabs %}
 {% highlight XAML %}
