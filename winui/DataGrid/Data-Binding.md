@@ -87,7 +87,7 @@ Based on type of data item bound to SfDataGrid, the data operations and column a
 
 {% tabs %}
 {% highlight xaml %}
-<dataGrid:SfDataGrid x:Name="dataGrid" ItemsSource="{Binding Orders}" SourceType="{x:Type local:OrderInfo}"/>
+<dataGrid:SfDataGrid x:Name="dataGrid" ItemsSource="{Binding Orders}" SourceType="local:OrderInfo"/>
 {% endhighlight %}
 {% highlight c# %}
 dataGrid.SourceType = typeof(OrderInfo);
