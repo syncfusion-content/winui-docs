@@ -21,6 +21,7 @@ This section explains the steps required to add the [WinUI Radial Gauge](https:/
 
 4. Initialize the SfRadialGauge control
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight xaml %}
@@ -37,6 +38,8 @@ this.Content = sfRadialGauge;
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Add axis to the radial gauge
 

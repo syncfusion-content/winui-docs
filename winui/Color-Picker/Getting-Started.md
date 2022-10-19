@@ -22,6 +22,7 @@ This section describes how to create a [WinUI Color Picker](https://www.syncfusi
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 4. Initialize the `SfColorPicker` control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -70,6 +71,8 @@ namespace GettingStarted
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![WinUI Color Picker Control](Getting-Started_images/winui-colorpicker-control.jpg)
 

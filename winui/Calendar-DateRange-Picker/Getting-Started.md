@@ -31,6 +31,7 @@ To add `Calendar DateRange Picker` control manually in XAML, follow these steps:
 3. Import the control namespace `Syncfusion.UI.Xaml.Calendar` in XAML page.
 4. Initialize the `Calendar DateRange Picker` control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8 12" %}
 
@@ -51,6 +52,8 @@ To add `Calendar DateRange Picker` control manually in XAML, follow these steps:
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding control manually in C#
 
@@ -64,6 +67,7 @@ To add `Calendar DateRange Picker` control manually in C# , follow these steps:
 3. Import the control namespace `Syncfusion.UI.Xaml.Calendar` in C# page.
 4. Initialize the `Calendar DateRange Picker` control.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 13 14" %}
 
@@ -87,6 +91,8 @@ namespace GettingStarted
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![daterange-picker-with-normal-view-winui-calendar-date-range-picker](Images/getting-started/daterange-picker-with-normal-view-winui-calendar-date-range-picker.png)
 

@@ -21,6 +21,7 @@ This section provides an overview of how to use the [WinUI Segmented Control](ht
 
 4. Initialize the [SfSegmentedControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html).
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -56,6 +57,8 @@ public sealed partial class MainWindow : Window
 
 {% endhighlight %}
 {% endtabs %} 
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Populating items using string collection
 

@@ -22,6 +22,7 @@ This section explains the steps required to add the [WinUI Calendar Date Picker]
 3. Import the control namespace `Syncfusion.UI.Xaml.Calendar` in XAML or C# code.
 4. Initialize the `SfCalendarDatePicker` control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8 12" %}
 
@@ -64,6 +65,8 @@ namespace GettingStarted
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![date-picker-with-normal-view-winui-calendar-date-picker](Getting-Started_images/date-picker-with-normal-view-in-winui-calendar-date-picker.png)
 

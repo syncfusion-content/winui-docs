@@ -18,6 +18,7 @@ This section explains how to populate the [WinUI Funnel Chart](https://www.syncf
 3. Import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C# to initialize the control.
 4. Initialize [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) control.
 
+{% capture codesnippet1 %}
 {% tabs %} 
 
 {% highlight xaml %}
@@ -54,6 +55,8 @@ public sealed partial class MainWindow : Window
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Initialize View Model
 

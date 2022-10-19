@@ -17,6 +17,7 @@ This section explains you the steps required to populate the chart with data, he
 3.	Import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C# to initialize the control.
 4.	Initialize `SfChart` control.
 
+{% capture codesnippet1 %}
 {% tabs %} 
 
 {% highlight xaml %}
@@ -59,6 +60,8 @@ namespace SfChart_GettingStarted
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Initialize chart axis
 `Chart` supports default axes, so that these axes ([PrimaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) and [SecondaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis)) will get generated automatically based on the data binded to the chart.
