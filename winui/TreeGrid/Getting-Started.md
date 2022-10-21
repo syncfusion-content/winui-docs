@@ -21,7 +21,7 @@ This section explains the steps required to add the [WinUI TreeGrid](https://www
 
 4. Initialize the SfTreeGrid control.
 
-
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <Window
@@ -62,6 +62,8 @@ namespace GettingStarted
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Binding self-relational data in SfTreeGrid
 
@@ -76,6 +78,7 @@ SfTreeGrid is a data-bound control. So before create binding to the control, you
 
 1. Creating data object class named `EmployeeInfo` and declare properties as shown below,
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 public class EmployeeInfo
@@ -125,11 +128,14 @@ public class EmployeeInfo
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 N> If you want your data object (EmployeeInfo class) to automatically reflect property changes, then the object must implement `INotifyPropertyChanged` interface.
  
 2. Create a `ViewModel` class with Employees property and Employees property is initialized with several data objects in constructor.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 public class ViewModel
@@ -201,6 +207,8 @@ private  ObservableCollection<EmployeeInfo> GetEmployees()
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 #### Binding to Data
 
@@ -271,6 +279,7 @@ SfTreeGrid supports to bind nested or hierarchical collection (where each data o
 
 1. Create data object class named `PersonInfo` and declare properties as shown below, 
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 public class PersonInfo
@@ -314,9 +323,12 @@ public class PersonInfo
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 2. Create a `ViewModel` class with PersonDetails property and PersonDetails property is initialized with several data objects in constructor
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c# %}
 public class ViewModel 
@@ -357,6 +369,8 @@ public class ViewModel
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 #### Binding to Data
 

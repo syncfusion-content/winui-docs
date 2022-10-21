@@ -63,6 +63,7 @@ You can change the UI of specific cells in `Calendar DateRange Picker` drop-down
 
 1. Create a **EventDataConverter** class and set the special dates for specific events. 
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# tabtitle="EventDataConverter.cs" %}
 
@@ -122,9 +123,12 @@ public class EventDataConverter : IValueConverter
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Create a **DataTemplate** to customize the date cells of the calendar. Now, add the `Calendar` control inside the `FlyoutBase.AttachedFlyout` property and the `DropDownFlyout` control.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" %}
 
@@ -201,6 +205,8 @@ public class EventDataConverter : IValueConverter
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![change-drop-down-item-template-in-winui-calendar-date-range-picker](Images/drop-down-calendar/change-drop-down-item-template-in-winui-calendar-date-range-picker.png)
 

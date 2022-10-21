@@ -22,6 +22,7 @@ This section explains the steps required to add the [WinUI Badge](https://www.sy
 3. Import the control namespace `Syncfusion.UI.Xaml.Notifications` in XAML or C# code.
 4. Initialize the `SfBadge` control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -70,6 +71,8 @@ namespace GettingStarted
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding badge for a Button
 
