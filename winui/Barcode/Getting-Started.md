@@ -18,6 +18,7 @@ This section provides a quick overview of how to get started with the [WinUI Bar
 3. Import the control namespace `using Syncfusion.UI.Xaml.Barcode` in XAML or C# code.
 4. Initialize the `SfBarCode` control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -64,6 +65,8 @@ public sealed partial class GettingStartedPage : Page
 
 {% endhighlight %}
 {% endtabs %} 
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![CodaBar Barcode](Getting_Started_Images/CodaBar.png)
 

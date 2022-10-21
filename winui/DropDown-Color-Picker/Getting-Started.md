@@ -29,6 +29,7 @@ To add `DropDown Color Picker` control manually in XAML , follow the below steps
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 4. Initialize the `SfDropDownColorPicker` control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -49,6 +50,8 @@ To add `DropDown Color Picker` control manually in XAML , follow the below steps
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding control manually in C#
 
@@ -60,6 +63,7 @@ To add the `DropDown Color Picker` control manually in C#, follow the below step
 3. Import the `DropDown Color Picker` namespace `Syncfusion.UI.Xaml.Editors` in C# page.
 4. Initialize the `SfDropDownColorPicker` control.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -82,6 +86,8 @@ namespace GettingStarted
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![DropDown Color Picker added in the winui application](Getting-Started_images/ColorPicker_Added.jpg)
 

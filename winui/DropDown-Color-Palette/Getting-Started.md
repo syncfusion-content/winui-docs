@@ -41,6 +41,7 @@ To add `DropDown Color Palette` control manually in XAML , follow the below step
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 4. Initialize the `SfDropDownColorPalette` control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -61,6 +62,8 @@ To add `DropDown Color Palette` control manually in XAML , follow the below step
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding control manually in C#
 
@@ -72,6 +75,7 @@ To add the `DropDown Color Palette` control manually in C#, follow the below ste
 3. Import the `DropDown Color Palette` namespace `Syncfusion.UI.Xaml.Editors` in C# page.
 4. Initialize the `SfDropDownColorPalette` control.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -94,6 +98,8 @@ namespace GettingStarted
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![Dropdown Color Palette added in the winui application](Getting-Started_images/controladded.png)
 

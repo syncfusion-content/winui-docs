@@ -21,6 +21,7 @@ This section explains the steps required to add the DataGrid control and binding
 
 4. Initialize the SfDataGrid control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <Page
@@ -58,6 +59,8 @@ namespace GettingStarted
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Creating Data Model for sample application
 
@@ -65,6 +68,7 @@ SfDataGrid is a data-bound control. So before create binding to the control, you
 
 1. Create data object class named **OrderInfo** and declare properties as shown below,
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -118,12 +122,14 @@ public class OrderInfo
 
 {% endhighlight %}
 {% endtabs %}
-
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 N> If you want your data object (OrderInfo class) to automatically reflect property changes, then the object must implement **INotifyPropertyChanged** interface.
  
-2.Create a **ViewModel** class with Orders property and Orders property is initialized with several data objects in constructor.
+2. Create a **ViewModel** class with Orders property and Orders property is initialized with several data objects in constructor.
 
+{% capture codesnippet3 %}
 {% tabs %} 
 {% highlight c# %}
 
@@ -159,6 +165,8 @@ public class ViewModel
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ### Binding to Data
 

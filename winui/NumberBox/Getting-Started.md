@@ -31,6 +31,7 @@ To add `NumberBox` control manually in XAML, follow the below steps.
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML page.
 4. Initialize the `NumberBox` control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -54,6 +55,8 @@ To add `NumberBox` control manually in XAML, follow the below steps.
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding control manually in C#
 
@@ -67,6 +70,7 @@ To add `NumberBox` control manually in C# , follow the below steps.
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in C# page.
 4. Initialize the `NumberBox` control.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -90,6 +94,8 @@ namespace GettingStarted
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![WinUI NumberBox Application](GettingStarted_images/gettingStarted_img.png)
 

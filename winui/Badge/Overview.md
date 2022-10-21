@@ -17,12 +17,12 @@ The [WinUI Badge](https://www.syncfusion.com/winui-controls/badge) control is us
 
 ## Key features
 
-* Position - Position the `Badge` text around the `Badge` content.
-* Predefined colors - Customize the `Badge` background with predefined colors for success, warning, error, and information states.
-* Animation - Use animations for `Badge` text.
-* Predefined and custom shapes for `Badge` control.
-* Rotation - Rotate the `Badge` to any angle.
-* Alignment - Align the `Badge` at any position
-* Custom UI - Customize UI for the control and its content.
+* **Position** - Position the `Badge` text around the `Badge` content.
+* **Predefined colors** - Customize the `Badge` background with predefined colors for success, warning, error, and information states.
+* **Animation** - Use animations for `Badge` text.
+* **Shapes** - Predefined and custom shapes for `Badge` control.
+* **Rotation** - Rotate the `Badge` to any angle.
+* **Alignment** - Align the `Badge` at any position
+* **Custom UI** - Customize UI for the control and its content.
 
 

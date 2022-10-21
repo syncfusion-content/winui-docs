@@ -21,6 +21,7 @@ This section explains the steps required to add the [WinUI Linear Gauge](https:/
 
 4. Initialize the [`SfLinearGauge`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight xaml %}
@@ -37,6 +38,9 @@ this.Content = sfLinearGauge;
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
+
 
 ![Initialize linear gauge](images/getting-started/gauge.png)
 

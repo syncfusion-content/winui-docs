@@ -31,6 +31,7 @@ To add `Calendar` control manually in XAML, follow these steps:
 3. Import the control namespace `Syncfusion.UI.Xaml.Calendar` in XAML page.
 4. Initialize the `Calendar` control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8 12" %}
 
@@ -51,6 +52,8 @@ To add `Calendar` control manually in XAML, follow these steps:
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding control manually in C#
 
@@ -64,6 +67,7 @@ To add the `Calendar` control manually in C#, follow these steps:
 3. Import the `Calendar` namespace `Syncfusion.UI.Xaml.Calendar` in C# page.
 4. Initialize the `Calendar` control.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="1 14 15" %}
 
@@ -88,6 +92,8 @@ namespace GettingStarted
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![winui-calendar-application](Images/getting-started/winui-calendar-application.png)
 
