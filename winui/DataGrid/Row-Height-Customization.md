@@ -72,7 +72,7 @@ Below are the parameter to `GetAutoRowHeight` method,
 
 2. [GridRowSizingOptions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridRowSizingOptions.html) – A class with properties to customize the row height calculation.
 
-
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <dataGrid:SfDataGrid x:Name="sfDataGrid" ItemsSource="{Binding Orders}">
@@ -104,6 +104,8 @@ private void SfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 }   
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 Here, row heights are customized based on the large text content.
 

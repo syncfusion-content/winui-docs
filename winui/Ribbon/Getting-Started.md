@@ -21,7 +21,7 @@ This section explains the steps required to add the Ribbon control and its eleme
 
 4.	Initialize the [SfRibbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html) control. 
 
-
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -59,6 +59,8 @@ namespace GettingStarted
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Add ribbon tab
 

@@ -18,6 +18,7 @@ This section explains how to populate the Cartesian chart with data, a header, d
 3. To initialize the control, import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C#.
 4. Initialize [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) control.
 
+{% capture codesnippet1 %}
 {% tabs %} 
 
 {% highlight xaml %}
@@ -55,6 +56,8 @@ namespace SfChart_GettingStarted
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Initialize View Model
 

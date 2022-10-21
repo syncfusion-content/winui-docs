@@ -18,6 +18,7 @@ This section explains the steps required to add the BusyIndicator control and co
 3. Import the control namespace `Syncfusion.UI.Xaml.Notifications` in XAML or C# code.
 4. Initialize the [SfBusyIndicator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html) control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -47,6 +48,8 @@ busyIndicator.IsActive = true;
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Setting Animation Type in BusyIndicator
 

@@ -18,6 +18,7 @@ This section explains the steps required to add the [WinUI Shadow control](https
 3. Import the control namespace `Syncfusion.UI.Xaml.Core` in XAML or C# code.
 4. Initialize the [SfShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html) control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -53,6 +54,8 @@ shadow.Content = button;
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Shadow effect for button in WinUI](Shadow_images/winui_shadow_button.png)
 

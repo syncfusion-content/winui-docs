@@ -18,6 +18,7 @@ This section explains how to populate the circular chart with data, header, data
 3. Import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C# to initialize the control.
 4. Initialize [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) control.
 
+{% capture codesnippet1 %}
 {% tabs %} 
 
 {% highlight xaml %}
@@ -49,6 +50,8 @@ public sealed partial class MainWindow : Window
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Initialize View Model
 

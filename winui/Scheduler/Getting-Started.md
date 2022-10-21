@@ -21,6 +21,7 @@ This section provides an overview of working with [WinUI Scheduler](https://www.
 
 4. Initialize the WinUI Scheduler control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8 12" %}
 <Window
@@ -59,6 +60,8 @@ namespace GettingStarted
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Change different Scheduler Views
 

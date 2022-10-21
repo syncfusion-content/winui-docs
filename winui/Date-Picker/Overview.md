@@ -21,6 +21,6 @@ The WinUI [Date Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 ### Key Features
 
-* Formatting – The Control displays the selected date value in a various formats.
-* Date Spinner – The drop-down portion used for selecting the date and it can be customized.
-* Restrict dates – Restrict the user to select specific dates.
+* **Formatting** – The Control displays the selected date value in a various formats.
+* **Date Spinner** – The drop-down portion used for selecting the date and it can be customized.
+* **Restrict dates** – Restrict the user to select specific dates.
