@@ -15,11 +15,11 @@ This section explains the steps required to add the Ribbon control and its eleme
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 
-2.	Add reference to [Syncfusion.Ribbon.WinUI](https://www.nuget.org/packages/Syncfusion.Ribbon.WinUI) NuGet.
+2. Add reference to [Syncfusion.Ribbon.WinUI](https://www.nuget.org/packages/Syncfusion.Ribbon.WinUI) NuGet.
 
-3.	Import the control namespace `Syncfusion.UI.Xaml.Ribbon` in XAML or C# code.
+3. Import the control namespace `Syncfusion.UI.Xaml.Ribbon` in XAML or C# code.
 
-4.	Initialize the [SfRibbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html) control. 
+4. Initialize the [SfRibbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html) control. 
 
 {% capture codesnippet1 %}
 {% tabs %}
