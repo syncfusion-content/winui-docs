@@ -13,7 +13,7 @@ The axis labels are used to show the units, measures, or category values of the 
 
 ## Rotation
 
-The [LabelRotation]() property is used to define the angle for the label content.
+The [LabelRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelRotation) property is used to define the angle for the label content.
 
 {% tabs %}
 

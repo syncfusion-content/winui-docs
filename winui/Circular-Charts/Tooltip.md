@@ -13,7 +13,7 @@ Tooltip is used to display any information over segments. It appears at center o
 
 ## Define Tooltip
 
-To define the tooltip in the chart, set the [EnableTooltip]() property of series to true. The default value of [EnableTooltip]() property is false.
+To define the tooltip in the chart, set the [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property of series to true. The default value of [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property is false.
 
 {% tabs %}
 

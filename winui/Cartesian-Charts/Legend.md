@@ -241,7 +241,7 @@ this.Content = chart;
 
 ## Legend Visibility
 
-The [IsVisibleOnLegend]() property of series is used to enable/disable the visibility of legend as shown in below example.
+The [IsVisibleOnLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_IsVisibleOnLegend) property of series is used to enable/disable the visibility of legend as shown in below example.
 
 {% tabs %}
 
