@@ -142,6 +142,11 @@ The Syncfusion WinUI Controls are the suite, ever needed to create state of art 
 		</td>
 	</tr>
 	<tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/rating/getting-started" >Rating</a><br/>
+		</td>
+	</tr>
+	<tr>
 	    <td rowspan="6" valign="top">
 		CALENDARS<br/>
 		</td>
@@ -180,6 +185,9 @@ The Syncfusion WinUI Controls are the suite, ever needed to create state of art 
 		</td>
 		<td>
 			<a href="https://help.syncfusion.com/winui/badge/getting-started">Badge</a><br/>
+		</td>
+		<td>
+			<a href="https://help.syncfusion.com/winui/busy-indicator/getting-started">BusyIndicator</a><br/>
 		</td>
 	</tr>	
     <tr>
