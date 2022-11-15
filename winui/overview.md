@@ -138,12 +138,12 @@ The Syncfusion WinUI Controls are the suite, ever needed to create state of art 
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/winui/segmentedcontrol/getting-started" >Segmented Control</a><br/>
+			<a href="https://help.syncfusion.com/winui/rating/getting-started" >Rating</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/winui/rating/getting-started" >Rating</a><br/>
+			<a href="https://help.syncfusion.com/winui/segmentedcontrol/getting-started" >Segmented Control</a><br/>
 		</td>
 	</tr>
 	<tr>
