@@ -307,7 +307,7 @@ chart.XAxes.Add(primaryAxis);
 
 When the mouse hovered in the chart area, you can view the label displayed over the series in addition the axis label.
 
-**ShowTrackballInfo**
+###ShowTrackballInfo
 
 The [ShowTrackballInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballInfo) property is used to enable or disable the label for corresponding series. By default, [ShowTrackballInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballInfo) property is `true`.
 
@@ -354,7 +354,7 @@ chart.Series.Add(series3);
 
 ![Trackball series label in WinUI chart](Trackball_images/WinUI_chart_trackball_series_label.png)
 
-**Alignment of series label**
+###Alignment of series label
 
 The trackball label displayed over the series can be aligned using the [LabelHorizontalAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_LabelHorizontalAlignment) and [LabelVerticalAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_LabelVerticalAlignment) properties. By default, the [LabelHorizontalAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_LabelHorizontalAlignment) is `Left` and [LabelVerticalAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_LabelVerticalAlignment) is `Top`.
 
@@ -395,7 +395,7 @@ chart.TrackballBehavior = behavior;
 
 When there is a multiple series, the trackball series label will be displayed only for the nearest point. If you want to display all the y values with respect to the x value then the [LabelDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_LabelDisplayMode) property is set to [FloatAllPoints](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.TrackballLabelDisplayMode.html#Syncfusion_UI_Xaml_Charts_TrackballLabelDisplayMode_FloatAllPoints).
 
-**FloatAllPoints**
+###FloatAllPoints
 
 {% tabs %}
 
@@ -428,7 +428,7 @@ chart.TrackballBehavior = behavior;
 
 ![LabelDisplayMode support for Trackball in WinUI Chart](Trackball_images/WinUI_chart_trackball_float_all_points.png)
 
-**NearestPoint**
+###NearestPoint
 
 {% tabs %}
 

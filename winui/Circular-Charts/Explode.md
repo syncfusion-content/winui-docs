@@ -16,7 +16,7 @@ Exploding a segment is used to pull attention to a specific area of the circular
 * [ExplodeRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_ExplodeRadius) - Used to define the explode distance.
 * [ExplodeOnTap](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeOnTap) - Used to explode the segment when segment is clicked.
 
-**Explode Index**
+##Explode Index
 
 {% tabs %}
 
@@ -53,7 +53,7 @@ chart.Series.Add(series);
 
 N> By default [ExplodeRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_ExplodeRadius) value is zero. So you need to define [ExplodeRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_ExplodeRadius) value, when you set [ExplodeIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeIndex) or [ExplodeAll](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeAll).
 
-**Explode All**
+##Explode All
 
 {% tabs %}
 

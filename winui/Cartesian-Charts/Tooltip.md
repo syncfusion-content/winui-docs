@@ -253,7 +253,7 @@ this.Content = chart;
 
 The tooltip can be aligned with respect to the cursor position using the [HorizontalAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_HorizontalAlignment) and [VerticalAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_VerticalAlignment) properties.
 
-**HorizontalAlignment**
+###HorizontalAlignment
 
 Tooltip can be positioned horizontally left, right, or center to the cursor position.
 
@@ -317,7 +317,7 @@ this.Content = chart;
 
 ![Tooltip horizontal alignment in WinUI Chart](Tooltip_images/WinUI_chart_tooltip_horizontal_alignment.png)
 
-**VerticalAlignment**
+###VerticalAlignment
 
 Tooltip can be positioned vertically top, bottom, or center to the cursor position.
 
