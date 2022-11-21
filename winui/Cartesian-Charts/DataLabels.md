@@ -170,21 +170,32 @@ The appearance of the data label can be customized using the [ContentTemplate](h
 <chart:SfCartesianChart.Resources>
     <DataTemplate x:Key="dataLabelTemplate">
         <StackPanel Orientation="Vertical">
-            <Path Grid.Row="0"  Stretch="Uniform" Fill="#1E88E5"                              
-               Width="15" Height="15" Margin="0,0,0,0"                              
-               RenderTransformOrigin="0.5,0.5"
-               Data="M22.5,15.8899993896484L37.5,                                
-               30.8899993896484 7.5,30.8899993896484 22.5,15.8899993896484z">
+            <Path Grid.Row="0" 
+				  Stretch="Uniform"
+				  Fill="#1E88E5"                              
+				  Width="15"
+				  Height="15"
+				  Margin="0,0,0,0"                              
+				  RenderTransformOrigin="0.5,0.5"
+				  Data="M22.5,15.8899993896484L37.5,                                
+				  30.8899993896484 7.5,
+				  30.8899993896484 22.5,
+				  15.8899993896484z">
                 <Path.RenderTransform>
                     <TransformGroup>
                         <TransformGroup.Children>
                             <RotateTransform Angle="0" />
-                            <ScaleTransform ScaleX="1" ScaleY="1" />
+                            <ScaleTransform ScaleX="1"
+											ScaleY="1" />
                         </TransformGroup.Children>
                     </TransformGroup>
                 </Path.RenderTransform>
             </Path>
-            <TextBlock Grid.Row="1" Text="{Binding}" FontSize="11" Foreground="Black"></TextBlock>
+            <TextBlock Grid.Row="1"
+					   Text="{Binding}" 
+					   FontSize="11"
+					   Foreground="Black">
+		   </TextBlock>
         </StackPanel>
     </DataTemplate>
 </chart:SfCartesianChart.Resources>
@@ -317,7 +328,8 @@ N> This behavior varies based on the chart series type.
 . . .
 <chart:ColumnSeries ShowDataLabels="True">
     <chart:ColumnSeries.DataLabelSettings>
-        <chart:CartesianDataLabelSettings BarLabelAlignment="Middle"/>
+        <chart:CartesianDataLabelSettings
+					BarLabelAlignment="Middle"/>
     </chart:ColumnSeries.DataLabelSettings>
 </chart:ColumnSeries>
 </chart:SfCartesianChart>
@@ -368,8 +380,10 @@ The connector line can be customized using the below properties.
 
 <chart:SfCartesianChart.Resources>
     <Style TargetType="Path" x:Key="lineStyle">
-        <Setter Property="StrokeDashArray" Value="10,7,5"/>
-        <Setter Property="Stroke" Value="Black"/>
+        <Setter Property="StrokeDashArray"
+				Value="10,7,5"/>
+        <Setter Property="Stroke"
+				Value="Black"/>
     </Style>
 </chart:SfCartesianChart.Resources>
 . . .
@@ -418,7 +432,8 @@ chart.Series.Add(series);
 . . .
 <chart:ColumnSeries ShowDataLabels="True">
     <chart:ColumnSeries.DataLabelSettings>
-        <chart:CartesianDataLabelSettings  UseSeriesPalette="True"/>
+        <chart:CartesianDataLabelSettings
+					UseSeriesPalette="True"/>
     </chart:ColumnSeries.DataLabelSettings>
 </chart:ColumnSeries>
 

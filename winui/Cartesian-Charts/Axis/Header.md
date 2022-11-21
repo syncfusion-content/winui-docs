@@ -54,7 +54,9 @@ The [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 <chart:SfCartesianChart.XAxes>
     <chart:CategoryAxis Header="Category">
         <chart:CategoryAxis.HeaderStyle>
-            <chart:LabelStyle FontFamily="Algerian" FontSize="13" Foreground="Blue"/>
+            <chart:LabelStyle FontFamily="Algerian"
+							  FontSize="13"
+							  Foreground="Blue"/>
         </chart:CategoryAxis.HeaderStyle>
     </chart:CategoryAxis>
 </chart:SfCartesianChart.XAxes>
@@ -94,8 +96,14 @@ The appearance of the header can be customized using the [HeaderTemplate](https:
 . . .
 <chart:SfCartesianChart.Resources>
     <DataTemplate x:Key="headerTemplate">
-        <Border BorderBrush="Blue" CornerRadius="5" BorderThickness="1">
-            <TextBlock Text="Category" FontSize="12" FontStyle="Italic" FontWeight="Bold" Margin="3"/>
+        <Border BorderBrush="Blue"
+				CornerRadius="5"
+				BorderThickness="1">
+            <TextBlock Text="Category"
+					   FontSize="12"
+					   FontStyle="Italic" 
+					   FontWeight="Bold"
+					   Margin="3"/>
         </Border>
     </DataTemplate>
 </chart:SfCartesianChart.Resources>
