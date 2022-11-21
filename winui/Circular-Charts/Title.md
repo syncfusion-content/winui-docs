@@ -15,7 +15,8 @@ documentation: ug
 
 {% highlight xaml %}
 
-<chart:SfCircularChart x:Name="chart" Header="Circular Chart Header">
+<chart:SfCircularChart x:Name="chart"
+					   Header="Circular Chart Header">
  . . .           
 </chart:SfCircularChart>
 
@@ -45,10 +46,14 @@ Chart provides support to add any `UIElement` as a title. The following code exa
 <chart:SfCircularChart>
 . . .
 <chart:SfCircularChart.Header>
-    <Border BorderThickness="0.5" BorderBrush="Black" Margin="10" CornerRadius="5">
+    <Border BorderThickness="0.5"
+			BorderBrush="Black"
+			Margin="10"
+			CornerRadius="5">
         <TextBlock Text="Circular Chart Header"
                    Margin="5" 
-                   FontFamily="Verdana" FontSize="14" 
+                   FontFamily="Verdana"
+				   FontSize="14" 
                    Foreground="Blue">
         </TextBlock>
     </Border>
@@ -99,11 +104,15 @@ The title text content can be aligned horizontally to the left, center or right 
                 HorizontalHeaderAlignment="Right">
 
     <chart:SfCircularChart.Header>
-        <Border BorderThickness="0.5" BorderBrush="Black" Margin="10" CornerRadius="5">
+        <Border BorderThickness="0.5"
+				BorderBrush="Black"
+				Margin="10" 
+				CornerRadius="5">
             <TextBlock Text="Circular Chart Header"
                        Margin="5" 
                        HorizontalTextAlignment="Center"
-                       FontFamily="Verdana" FontSize="14" 
+                       FontFamily="Verdana"
+					   FontSize="14" 
                        Foreground="Blue"/>
         </Border>
     </chart:SfCircularChart.Header>

@@ -110,8 +110,10 @@ The following properties are used to customize the data label.
                                      FontSize="11" 
                                      FontFamily="Calibri" 
                                      BorderBrush="Black" 
-                                     BorderThickness="1" Margin="1" 
-                                     FontStyle="Italic" Background="#1E88E5"
+                                     BorderThickness="1"
+									 Margin="1" 
+                                     FontStyle="Italic"
+									 Background="#1E88E5"
                                      Context="Percentage"/>
 </chart:PieSeries.DataLabelSettings>
 . . .
@@ -161,9 +163,11 @@ The appearance of the data label can be customized using [ContentTemplate](https
             <StackPanel Margin="10" Orientation="Vertical">
                 <Ellipse Height="15" Width="15" Fill="Cyan" 
                  Stroke="#4a4a4a" StrokeThickness="2"/>
-                <TextBlock HorizontalAlignment="Center" FontSize="12"
+                <TextBlock HorizontalAlignment="Center" 
+						   FontSize="12"
                            Foreground="Black" 
-                           FontWeight="SemiBold" Text="{Binding Item.Product}"/>
+                           FontWeight="SemiBold"
+						   Text="{Binding Item.Product}"/>
             </StackPanel>
         </DataTemplate>
     </Grid.Resources>
@@ -171,8 +175,10 @@ The appearance of the data label can be customized using [ContentTemplate](https
 ...
     <chart:PieSeries ShowDataLabels="True">
         <chart:PieSeries.DataLabelSettings>
-            <chart:CircularDataLabelSettings Position="Inside" ContentTemplate="{StaticResource labelTemplate}"
-                                         Context="DataLabelItem"/>
+            <chart:CircularDataLabelSettings
+						Position="Inside"
+						ContentTemplate="{StaticResource labelTemplate}"
+                        Context="DataLabelItem"/>
         </chart:PieSeries.DataLabelSettings>
     </chart:PieSeries>
 . . .
@@ -221,7 +227,10 @@ The following are the values for this property:
 . . .
 <chart:PieSeries ShowDataLabels="True">
     <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings Position="OutsideExtended" ShowConnectorLine="True" Context="Percentage"/>
+        <chart:CircularDataLabelSettings
+					Position="OutsideExtended"
+					ShowConnectorLine="True"
+					Context="Percentage"/>
     </chart:PieSeries.DataLabelSettings>
 </chart:PieSeries>
 . . .
@@ -262,7 +271,10 @@ chart.Series.Add(series);
 . . .
 <chart:PieSeries ShowDataLabels="True">
     <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings Context="Percentage" Position="Outside" Rotation="335"/>
+        <chart:CircularDataLabelSettings
+					Context="Percentage"
+					Position="Outside"
+					Rotation="335"/>
     </chart:PieSeries.DataLabelSettings>
 </chart:PieSeries>
 . . .
@@ -316,7 +328,13 @@ The connector line can be customized using the below properties.
 . . . 
 <chart:PieSeries ShowDataLabels="True">
     <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings Position="Outside" Context="Percentage" ShowConnectorLine="True" ConnectorHeight="40" ConnectorType="StraightLine" ConnectorLineStyle="{StaticResource lineStyle}"/>
+        <chart:CircularDataLabelSettings
+					Position="Outside"
+					Context="Percentage"
+					ShowConnectorLine="True"
+					ConnectorHeight="40"
+					ConnectorType="StraightLine"
+					ConnectorLineStyle="{StaticResource lineStyle}"/>
     </chart:PieSeries.DataLabelSettings>
 </chart:PieSeries>
 </chart:SfCircularChart>
@@ -359,9 +377,11 @@ chart.Series.Add(series);
 . . .
 <chart:PieSeries ShowDataLabels="True">
     <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings ConnectorType="Bezier" ConnectorHeight="40"
-                                         Position="Outside"
-                                         ShowConnectorLine="True"/>
+        <chart:CircularDataLabelSettings
+					ConnectorType="Bezier"
+					ConnectorHeight="40"
+                    Position="Outside"
+                    ShowConnectorLine="True"/>
     </chart:PieSeries.DataLabelSettings>
 </chart:PieSeries>
 
@@ -404,10 +424,11 @@ The [UseSeriesPalette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
 . . .
 <chart:PieSeries ShowDataLabels="True">
     <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings UseSeriesPalette="True" 
-        ShowConnectorLine="True" 
-        ConnectorHeight="40"
-        Position="Outside"/>
+        <chart:CircularDataLabelSettings
+					UseSeriesPalette="True" 
+					ShowConnectorLine="True" 
+					ConnectorHeight="40"
+					Position="Outside"/>
     </chart:PieSeries.DataLabelSettings>
 </chart:PieSeries>
 

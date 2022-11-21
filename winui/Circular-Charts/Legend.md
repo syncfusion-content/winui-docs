@@ -138,7 +138,8 @@ The appearance of the legend icon can be customized using the below properties.
 <chart:SfCircularChart>
 . . .
 <chart:SfCircularChart.Legend>
-    <chart:ChartLegend IconWidth="10" IconHeight="5" 
+    <chart:ChartLegend IconWidth="10" 
+					   IconHeight="5" 
                        IconVisibility="Visible">
     </chart:ChartLegend>
 </chart:SfCircularChart.Legend>
@@ -173,13 +174,17 @@ Circular chart provides support to add custom icon for the legend using [LegendI
 <Grid x:Name="grid">
     <Grid.Resources>
         <DataTemplate x:Key="iconTemplate">
-            <Ellipse Height="15" Width="15" Fill="White" 
-                 Stroke="#4a4a4a" StrokeThickness="2"/>
+            <Ellipse Height="15"
+					 Width="15"
+					 Fill="White" 
+					 Stroke="#4a4a4a" 
+					 StrokeThickness="2"/>
         </DataTemplate>
     </Grid.Resources>
 <chart:SfCircularChart>
     <chart:SfCircularChart.Legend>
-        <chart:ChartLegend IconWidth="15" IconHeight="15"/>
+        <chart:ChartLegend IconWidth="15"
+						   IconHeight="15"/>
     </chart:SfCircularChart.Legend>
 
     <chart:PieSeries LegendIconTemplate="{StaticResource iconTemplate}"
@@ -320,7 +325,8 @@ To display the legend at the left, set the [Placement](https://help.syncfusion.c
 <chart:SfCircularChart>
 . . .
 <chart:SfCircularChart.Legend>
-    <chart:ChartLegend ItemMargin="10" Placement="Left"/>
+    <chart:ChartLegend ItemMargin="10"
+					   Placement="Left"/>
 </chart:SfCircularChart.Legend>
 
 </chart:SfCircularChart>
@@ -358,8 +364,9 @@ The legend background appearance can be customized by using the below properties
 <chart:SfCircularChart>
 . . .
 <chart:SfCircularChart.Legend>
-    <chart:ChartLegend Background="Gray" BorderBrush="Black" 
-                       BorderThickness="1" 
+    <chart:ChartLegend Background="Gray"
+					   BorderBrush="Black" 
+					   BorderThickness="1" 
                        CornerRadius="5" >
     </chart:ChartLegend>
 </chart:SfCircularChart.Legend>
@@ -395,12 +402,18 @@ Customize each legend item by using `ItemTemplate` property in [ChartLegend](htt
 <Grid x:Name="grid">
     <Grid.Resources>
         <DataTemplate x:Key="labelTemplate">
-            <StackPanel Margin="10" Orientation="Vertical">
-                <Ellipse Height="15" Width="15" Fill="{Binding Interior}" 
-                 Stroke="#4a4a4a" StrokeThickness="2"/>
-                <TextBlock HorizontalAlignment="Center" FontSize="12"
+            <StackPanel Margin="10"
+						Orientation="Vertical">
+                <Ellipse Height="15"
+						 Width="15"
+						 Fill="{Binding Interior}" 
+						 Stroke="#4a4a4a"
+						 StrokeThickness="2"/>
+                <TextBlock HorizontalAlignment="Center"
+						   FontSize="12"
                            Foreground="Black" 
-                           FontWeight="SemiBold" Text="{Binding Label}"/>
+                           FontWeight="SemiBold"
+						   Text="{Binding Label}"/>
             </StackPanel>
         </DataTemplate>
     </Grid.Resources>

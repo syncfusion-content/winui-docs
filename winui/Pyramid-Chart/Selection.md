@@ -83,7 +83,9 @@ N> `Series` and `MultiSeries` selection type is not support for pyramid chart.
                       YBindingPath="Value">
 
     <chart:SfPyramidChart.SelectionBehavior>
-        <chart:DataPointSelectionBehavior Type="Multiple" SelectionBrush="Red"/>
+        <chart:DataPointSelectionBehavior
+					Type="Multiple" 
+					SelectionBrush="Red"/>
     </chart:SfPyramidChart.SelectionBehavior>
 . . .
 </chart:SfPyramidChart>
@@ -128,7 +130,9 @@ Pyramid chart provides support to select a point programmatically on a chart usi
                       YBindingPath="Value">
 
     <chart:SfPyramidChart.SelectionBehavior>
-        <chart:DataPointSelectionBehavior SelectionBrush="Red" SelectedIndex="1"/>
+        <chart:DataPointSelectionBehavior
+					SelectionBrush="Red"
+					SelectedIndex="1"/>
     </chart:SfPyramidChart.SelectionBehavior>
 
 </chart:SfPyramidChart>
@@ -170,8 +174,10 @@ Pyramid chart provides support to select multiple points programmatically on a c
                       YBindingPath="Value">
  
     <chart:SfPyramidChart.SelectionBehavior>
-        <chart:DataPointSelectionBehavior Type="Multiple" SelectionBrush="Red"
-        SelectedIndexes="{Binding SelectedIndexes}"/>
+        <chart:DataPointSelectionBehavior
+					Type="Multiple" 
+					SelectionBrush="Red"
+					SelectedIndexes="{Binding SelectedIndexes}"/>
     </chart:SfPyramidChart.SelectionBehavior>
 . . .
 </chart:SfPyramidChart>

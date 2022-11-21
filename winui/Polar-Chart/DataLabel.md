@@ -109,11 +109,15 @@ The following properties are used to customize the data label.
                            YBindingPath="Tree"
                            ShowDataLabels="True">
                 <chart:PolarAreaSeries.DataLabelSettings>
-                    <chart:PolarDataLabelSettings Foreground="White" FontSize="12" 
-                                                  BorderBrush="White"                             
-                                                  BorderThickness="1" Margin="1" 
-                                                  FontStyle="Italic" FontFamily="Calibri"
-                                                  Background="#1E88E5">
+                    <chart:PolarDataLabelSettings
+								Foreground="White"
+								FontSize="12" 
+								BorderBrush="White"                             
+								BorderThickness="1" 
+								Margin="1" 
+								FontStyle="Italic"
+								FontFamily="Calibri"
+								Background="#1E88E5">
                     </chart:PolarDataLabelSettings>
                 </chart:PolarAreaSeries.DataLabelSettings>
     </chart:PolarAreaSeries>
@@ -180,7 +184,8 @@ The appearance of the data label can be customized using the [ContentTemplate](h
     ...
         <chart:PolarAreaSeries ShowDataLabels="True">
             <chart:PolarAreaSeries.DataLabelSettings>
-                <chart:PolarDataLabelSettings ContentTemplate="{StaticResource datalabelTemplate}" />
+                <chart:PolarDataLabelSettings
+							ContentTemplate="{StaticResource datalabelTemplate}" />
             </chart:PolarAreaSeries.DataLabelSettings>
         </chart:PolarAreaSeries>
     ...
@@ -351,7 +356,8 @@ The connector line can be customized using the following properties:
                            XBindingPath="Direction" 
                            YBindingPath="Tree">
         <chart:PolarLineSeries.DataLabelSettings>
-            <chart:PolarDataLabelSettings ShowConnectorLine="True" ConnectorHeight="25" 
+            <chart:PolarDataLabelSettings ShowConnectorLine="True" 
+										  ConnectorHeight="25" 
                                           ConnectorRotation="45"/>
         </chart:PolarLineSeries.DataLabelSettings>
     </chart:PolarLineSeries>
