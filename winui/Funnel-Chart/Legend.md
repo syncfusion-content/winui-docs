@@ -104,8 +104,9 @@ The legend icon represents a symbol associated with each legend item. The appear
 <chart:SfFunnelChart x:Name="chart">
 . . .
     <chart:SfFunnelChart.Legend>
-        <chart:ChartLegend IconWidth="15" IconHeight="15" 
-                       IconVisibility="Visible">
+        <chart:ChartLegend IconWidth="15" 
+						   IconHeight="15" 
+						   IconVisibility="Visible">
         </chart:ChartLegend>
     </chart:SfFunnelChart.Legend>
 . . .
@@ -246,7 +247,8 @@ To display the legend at the right, set the [Placement](https://help.syncfusion.
 <chart:SfFunnelChart x:Name="chart">
 . . .
     <chart:SfFunnelChart.Legend>
-        <chart:ChartLegend ItemMargin="10" Placement="Right"/>
+        <chart:ChartLegend ItemMargin="10"
+						   Placement="Right"/>
     </chart:SfFunnelChart.Legend>
 . . .
 </chart:SfFunnelChart>
@@ -286,7 +288,10 @@ The legend background appearance can be customized by using the following proper
 <chart:SfFunnelChart x:Name="chart">
 . . .
     <chart:SfFunnelChart.Legend>
-        <chart:ChartLegend Background="Gray" BorderBrush="Black" BorderThickness="1" CornerRadius="5" >
+        <chart:ChartLegend Background="Gray" 
+						   BorderBrush="Black"
+						   BorderThickness="1"
+						   CornerRadius="5" >
     </chart:ChartLegend>
     </chart:SfFunnelChart.Legend>
 . . .
@@ -322,12 +327,18 @@ Customize each legend item by using the `ItemTemplate` property in [ChartLegend]
 <Grid x:Name="grid">
     <Grid.Resources>
         <DataTemplate x:Key="labelTemplate">
-            <StackPanel Margin="10" Orientation="Vertical">
-                <Ellipse Height="15" Width="15" Fill="{Binding Interior}" 
-                 Stroke="#4a4a4a" StrokeThickness="2"/>
-                <TextBlock HorizontalAlignment="Center" FontSize="12"
+            <StackPanel Margin="10"
+						Orientation="Vertical">
+                <Ellipse Height="15"
+						 Width="15"
+						 Fill="{Binding Interior}" 
+						 Stroke="#4a4a4a"
+						 StrokeThickness="2"/>
+                <TextBlock HorizontalAlignment="Center"
+						   FontSize="12"
                            Foreground="Black" 
-                           FontWeight="SemiBold" Text="{Binding Label}"/>
+                           FontWeight="SemiBold"
+						   Text="{Binding Label}"/>
             </StackPanel>
         </DataTemplate>
     </Grid.Resources>

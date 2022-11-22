@@ -144,7 +144,8 @@ The following code example explains how to apply the style for a tooltip label.
     </chart:SfFunnelChart.Resources>
 
     <chart:SfFunnelChart.TooltipBehavior>
-        <chart:ChartTooltipBehavior LabelStyle="{StaticResource labelStyle}"/>
+        <chart:ChartTooltipBehavior
+					LabelStyle="{StaticResource labelStyle}"/>
     </chart:SfFunnelChart.TooltipBehavior>
 
 </chart:SfFunnelChart>
@@ -183,9 +184,24 @@ The following code example explains how to display both x-value and y-value in t
     <Grid.Resources>
         <DataTemplate x:Key="tooltipTemplate">
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="{Binding Item.Category}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Text=" : " Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Text="{Binding Item.Value}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding Item.Category}" 
+						   Foreground="Black"
+						   FontWeight="Medium"
+						   FontSize="12" 
+						   HorizontalAlignment="Center"
+						   VerticalAlignment="Center"/>
+                <TextBlock Text=" : " 
+						   Foreground="Black"
+						   FontWeight="Medium"
+						   FontSize="12"
+						   HorizontalAlignment="Center" 
+						   VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding Item.Value}"
+						   Foreground="Black" 
+						   FontWeight="Medium"
+						   FontSize="12" 
+						   HorizontalAlignment="Center" 
+						   VerticalAlignment="Center"/>
             </StackPanel>
         </DataTemplate>
 

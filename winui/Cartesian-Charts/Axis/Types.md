@@ -100,7 +100,9 @@ N> If  minimum or maximum value is set, the other value is calculated by default
 {% highlight xaml %}
 
 <chart:SfCartesianChart.YAxes>
-    <chart:NumericalAxis Maximum="2750" Minimum="250" Interval="250"/>
+    <chart:NumericalAxis Maximum="2750"
+						 Minimum="250" 
+						 Interval="250"/>
 </chart:SfCartesianChart.YAxes>
 
 {% endhighlight %}

@@ -45,8 +45,13 @@ The pyramid chart provides support to add any `UIElement` as a title. The follow
  <chart:SfPyramidChart>
 
     <chart:SfPyramidChart.Header>
-        <Border BorderThickness="2" BorderBrush="Black" Margin="10" CornerRadius="5">
-            <TextBlock FontSize="14" Text="The Food Comparison Pyramid" Margin="5"/>
+        <Border BorderThickness="2"
+				BorderBrush="Black"
+				Margin="10"
+				CornerRadius="5">
+            <TextBlock FontSize="14"
+					   Text="The Food Comparison Pyramid"
+					   Margin="5"/>
         </Border>
     </chart:SfPyramidChart.Header>
             

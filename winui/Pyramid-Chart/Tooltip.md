@@ -151,7 +151,8 @@ The tooltip label style can be customized by using the [LabelStyle](https://help
     </chart:SfPyramidChart.Resources>
 
     <chart:SfPyramidChart.TooltipBehavior>
-        <chart:ChartTooltipBehavior LabelStyle="{StaticResource labelStyle}"/>
+        <chart:ChartTooltipBehavior
+					LabelStyle="{StaticResource labelStyle}"/>
     </chart:SfPyramidChart.TooltipBehavior>
 . . . 
 </chart:SfPyramidChart>
@@ -191,9 +192,24 @@ The pyramid chart provides support to customize the appearance of the tooltip by
     <Grid.Resources>
         <DataTemplate x:Key="tooltipTemplate">
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="{Binding Item.Category}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Text=" : " Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Text="{Binding Item.Value}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding Item.Category}"
+						   Foreground="Black"
+						   FontWeight="Medium"
+						   FontSize="12" 
+						   HorizontalAlignment="Center"
+						   VerticalAlignment="Center"/>
+                <TextBlock Text=" : "
+						   Foreground="Black"
+						   FontWeight="Medium"
+						   FontSize="12"
+						   HorizontalAlignment="Center" 
+						   VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding Item.Value}"
+						   Foreground="Black"
+						   FontWeight="Medium"
+						   FontSize="12"
+						   HorizontalAlignment="Center"
+						   VerticalAlignment="Center"/>
             </StackPanel>
         </DataTemplate>
 
