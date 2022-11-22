@@ -351,10 +351,11 @@ Tooltips are used to show information about the segment, when hovers on the segm
 
 <chart:SfCartesianChart>
 	...
-   <chart:ColumnSeries EnableTooltip="True" 
-					   ItemsSource="{Binding Data}" 
-					   XBindingPath="Name" 
-					   YBindingPath="Height"/>
+   <chart:ColumnSeries
+				EnableTooltip="True" 
+			    ItemsSource="{Binding Data}" 
+			    XBindingPath="Name" 
+			    YBindingPath="Height"/>
 	...
 </chart:SfCartesianChart> 
 
@@ -405,7 +406,8 @@ The following code example gives you the complete code of above configurations.
         </chart:SfCartesianChart.YAxes>
 
         <!--Initialize the series for chart-->
-        <chart:ColumnSeries Label="Heights" 
+        <chart:ColumnSeries 
+						Label="Heights" 
 							EnableTooltip="True"
                             ShowDataLabels="True"
                             ItemsSource="{Binding Data}"

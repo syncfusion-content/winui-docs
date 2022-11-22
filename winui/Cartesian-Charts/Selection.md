@@ -90,7 +90,8 @@ The following code example demonstrates the spline series segment selection by c
                         YBindingPath="Year2010"
                         ShowDataLabels="True">
 		<chart:SplineSeries.SelectionBehavior>
-		    <chart:DataPointSelectionBehavior SelectionBrush="Red"/>
+		    <chart:DataPointSelectionBehavior
+						SelectionBrush="Red"/>
 		</chart:SplineSeries.SelectionBehavior>
 	</chart:SplineSeries>				
 </chart:SfCartesianChart>
@@ -134,7 +135,8 @@ Series selection is used to highlight a particular series when using multiple se
 <chart:SfCartesianChart>
 . . .
     <chart:SfCartesianChart.SelectionBehavior>
-	    <chart:SeriesSelectionBehavior SelectionBrush="Red"/>
+	    <chart:SeriesSelectionBehavior
+					SelectionBrush="Red"/>
 	</chart:SfCartesianChart.SelectionBehavior>	
 . . .
 </chart:SfCartesianChart>
@@ -173,8 +175,9 @@ Cartesian chart provides support to select single or multiple segments/series by
                             XBindingPath="Demand"
                             YBindingPath="Year2010">
             <chart:ColumnSeries.SelectionBehavior>
-                <chart:DataPointSelectionBehavior SelectionBrush="Red" 
-                                                  Type="Multiple"/>
+                <chart:DataPointSelectionBehavior
+							SelectionBrush="Red" 
+						    Type="Multiple"/>
             </chart:ColumnSeries.SelectionBehavior>
         </chart:ColumnSeries>				
     </chart:SfCartesianChart.Series>
@@ -260,8 +263,9 @@ Cartesian chart provides support to select a point programmatically on a chart u
                             XBindingPath="Demand"
                             YBindingPath="Year2010">
             <chart:ColumnSeries.SelectionBehavior>
-                <chart:DataPointSelectionBehavior SelectedIndex="3" 
-                                                  SelectionBrush="Red"/>
+                <chart:DataPointSelectionBehavior
+							SelectedIndex="3" 
+						    SelectionBrush="Red"/>
             </chart:ColumnSeries.SelectionBehavior>
         </chart:ColumnSeries>	
     </chart:SfCartesianChart.Series>
@@ -305,8 +309,9 @@ Select a series programmatically on a chart using the [SelectedIndex](https://he
 <chart:SfCartesianChart>
 . . .
     <chart:SfCartesianChart.SelectionBehavior>
-        <chart:SeriesSelectionBehavior SelectionBrush="Red" 
-                                       SelectedIndex="1"/>
+        <chart:SeriesSelectionBehavior
+					SelectionBrush="Red" 
+				    SelectedIndex="1"/>
     </chart:SfCartesianChart.SelectionBehavior>	
 . . .
 </chart:SfCartesianChart>
@@ -344,9 +349,10 @@ Cartesian chart provides support to select multiple points programmatically on a
                         XBindingPath="Demand"
                         YBindingPath="Year2010">
             <chart:ColumnSeries.SelectionBehavior>
-                <chart:DataPointSelectionBehavior SelectionBrush="BlueViolet" 
-                                                  Type="Multiple" 
-                                                  SelectedIndexes="{Binding SelectedIndexes}" />
+                <chart:DataPointSelectionBehavior
+							SelectionBrush="BlueViolet" 
+						    Type="Multiple" 
+						    SelectedIndexes="{Binding SelectedIndexes}" />
             </chart:ColumnSeries.SelectionBehavior>
     </chart:ColumnSeries>
 </chart:SfCircularChart>

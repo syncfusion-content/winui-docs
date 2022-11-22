@@ -176,13 +176,15 @@ By default, the trackball symbol is displayed as ellipse. To change the default 
 <chart:SfCartesianChart Height="388"  Width="500">
 . . 
     <chart:SfCartesianChart.Resources>
-        <Style TargetType="chart:ChartTrackballControl" x:Key="trackballStyle">
+        <Style TargetType="chart:ChartTrackballControl"
+			   x:Key="trackballStyle">
             <Setter Property="Background" Value="Red"></Setter>
         </Style>
     </chart:SfCartesianChart.Resources>
     . . .
     <chart:SfCartesianChart.TrackballBehavior>
-        <chart:ChartTrackballBehavior ChartTrackballStyle="{StaticResource trackballStyle}"/>
+        <chart:ChartTrackballBehavior
+					ChartTrackballStyle="{StaticResource trackballStyle}"/>
     </chart:SfCartesianChart.TrackballBehavior>
 . . .
 </chart:SfCartesianChart>
@@ -270,9 +272,14 @@ The appearance of the axis label can be customized by using the [TrackballLabelT
 
     <chart:SfCartesianChart.Resources>
         <DataTemplate x:Key="labelTemplate">
-            <Border CornerRadius="4" BorderThickness="1" BorderBrush="Black"
-                    Background="LightGreen" Padding="6,0,6,6">
-                <TextBlock Foreground="Black" Text="{Binding ValueX}" FontSize="15"/>
+            <Border CornerRadius="4"
+					BorderThickness="1"
+					BorderBrush="Black"
+                    Background="LightGreen"
+					Padding="6,0,6,6">
+                <TextBlock Foreground="Black"
+						   Text="{Binding ValueX}"
+						   FontSize="15"/>
             </Border>
         </DataTemplate>
     </chart:SfCartesianChart.Resources>
@@ -509,9 +516,13 @@ The following screenshot illustrates the trackball label for multiple series, wh
 . . .
     <chart:SfCartesianChart.Resources>
         <DataTemplate x:Key="labelTemplate">
-            <Border CornerRadius="5" BorderThickness="1" 
-                        BorderBrush="Black" Background="LightGreen" Padding="5">
-                <TextBlock Foreground="Black" Text="{Binding ValueY}"/>
+            <Border CornerRadius="5"
+					BorderThickness="1" 
+					BorderBrush="Black"
+					Background="LightGreen"
+					Padding="5">
+                <TextBlock Foreground="Black"
+						   Text="{Binding ValueY}"/>
             </Border>
         </DataTemplate>
     </chart:SfCartesianChart.Resources>

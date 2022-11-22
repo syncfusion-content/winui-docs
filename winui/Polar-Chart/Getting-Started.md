@@ -362,13 +362,18 @@ The following code example gives you the complete code of above configurations.
     </chart:SfPolarChart.Legend>
     <chart:SfPolarChart.Series>
         <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                               XBindingPath="Direction" YBindingPath="Tree"
-                               Label="Tree" ShowDataLabels="True"
+                               XBindingPath="Direction"
+							   YBindingPath="Tree"
+                               Label="Tree"
+							   ShowDataLabels="True"
                                LegendIcon="Pentagon">
             <chart:PolarAreaSeries.DataLabelSettings>
-                <chart:PolarDataLabelSettings Foreground="White" FontSize="12" 
-                                              FontFamily="Calibri" BorderBrush="White" 
-                                              BorderThickness="1" Margin="1"/>
+                <chart:PolarDataLabelSettings Foreground="White"
+											  FontSize="12" 
+                                              FontFamily="Calibri"
+											  BorderBrush="White" 
+                                              BorderThickness="1"
+											  Margin="1"/>
                 </chart:PolarAreaSeries.DataLabelSettings>
         </chart:PolarAreaSeries>
     </chart:SfPolarChart.Series>

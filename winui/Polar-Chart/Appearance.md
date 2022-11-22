@@ -23,17 +23,20 @@ Currently, the [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI
                     GridLineType="Polygon">
         ...
         <chart:SfPolarChart.Series>
-            <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
+            <chart:PolarLineSeries
+						ItemsSource="{Binding PlantDetails}" 
                         XBindingPath="Direction"
                         YBindingPath="Tree" Label="Tree">
             </chart:PolarLineSeries>
 
-            <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
+            <chart:PolarLineSeries
+						ItemsSource="{Binding PlantDetails}" 
                         XBindingPath="Direction"
                         YBindingPath="Weed" Label="Weed">
             </chart:PolarLineSeries>
 
-            <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
+            <chart:PolarLineSeries
+						ItemsSource="{Binding PlantDetails}" 
                         XBindingPath="Direction"
                         YBindingPath="Flower" Label="Flower">
             </chart:PolarLineSeries>

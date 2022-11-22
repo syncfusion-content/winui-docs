@@ -24,7 +24,12 @@ Exploding a segment is used to pull attention to a specific area of the circular
 
 <chart:SfCircularChart>
 . . .
-    <chart:PieSeries x:Name="PieSeries" ItemsSource="{Binding Data}" ExplodeIndex="2" ExplodeRadius="10" XBindingPath="Utilization" YBindingPath="ResponseTime" />
+    <chart:PieSeries x:Name="PieSeries" 
+					 ItemsSource="{Binding Data}"
+					 ExplodeIndex="2"
+					 ExplodeRadius="10"
+					 XBindingPath="Utilization"
+					 YBindingPath="ResponseTime" />
 
 </chart:SfCircularChart>
 
@@ -61,7 +66,11 @@ N> By default [ExplodeRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI
 
 <chart:SfCircularChart>
 . . .
-    <chart:PieSeries ExplodeAll="True" ExplodeRadius="15" XBindingPath="Category" ItemsSource="{Binding Data}" YBindingPath="Value">
+    <chart:PieSeries ExplodeAll="True"
+					 ExplodeRadius="15"
+					 XBindingPath="Category"
+					 ItemsSource="{Binding Data}"
+					 YBindingPath="Value">
 
 </chart:SfCircularChart>
 
