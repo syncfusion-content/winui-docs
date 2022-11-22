@@ -185,9 +185,24 @@ Circular chart provides support to customize the appearance of the tooltip by us
     <Grid.Resources>
         <DataTemplate x:Key="tooltipTemplate">
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="{Binding Item.Product}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Text=" : " Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Text="{Binding Item.SalesRate}" Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding Item.Product}"
+						   Foreground="Black"
+						   FontWeight="Medium"
+						   FontSize="12"
+						   HorizontalAlignment="Center"
+						   VerticalAlignment="Center"/>
+                <TextBlock Text=" : "
+						   Foreground="Black"
+						   FontWeight="Medium" 
+						   FontSize="12" 
+						   HorizontalAlignment="Center" 
+						   VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding Item.SalesRate}" 
+						   Foreground="Black"
+						   FontWeight="Medium"
+						   FontSize="12"
+						   HorizontalAlignment="Center" 
+						   VerticalAlignment="Center"/>
             </StackPanel>
         </DataTemplate>
 

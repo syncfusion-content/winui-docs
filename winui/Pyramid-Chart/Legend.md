@@ -106,7 +106,8 @@ The legend icon represents a symbol associated with each legend item. The appear
 <chart:SfPyramidChart x:Name="chart">
 . . .
     <chart:SfPyramidChart.Legend>
-        <chart:ChartLegend IconWidth="15" IconHeight="15" 
+        <chart:ChartLegend IconWidth="15"
+						   IconHeight="15" 
                            IconVisibility="Visible">
         </chart:ChartLegend>
     </chart:SfPyramidChart.Legend>
@@ -246,7 +247,8 @@ By using the [Placement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 <chart:SfPyramidChart x:Name="chart">
 . . .
     <chart:SfPyramidChart.Legend>
-        <chart:ChartLegend ItemMargin="10" Placement="Left"/>
+        <chart:ChartLegend ItemMargin="10" 
+						   Placement="Left"/>
     </chart:SfPyramidChart.Legend>
 . . .
 </chart:SfPyramidChart>
@@ -325,19 +327,26 @@ Customize each legend item by using the `ItemTemplate` property in [ChartLegend]
 <Grid x:Name="grid">
     <Grid.Resources>
         <DataTemplate x:Key="labelTemplate">
-            <StackPanel Margin="10" Orientation="Vertical">
-                <Ellipse Height="15" Width="15" Fill="{Binding Interior}" 
-                 Stroke="#4a4a4a" StrokeThickness="2"/>
-                <TextBlock HorizontalAlignment="Center" FontSize="12"
+            <StackPanel Margin="10"
+						Orientation="Vertical">
+                <Ellipse Height="15"
+						 Width="15"
+						 Fill="{Binding Interior}" 
+						 Stroke="#4a4a4a"
+						 StrokeThickness="2"/>
+                <TextBlock HorizontalAlignment="Center"
+						   FontSize="12"
                            Foreground="Black" 
-                           FontWeight="SemiBold" Text="{Binding Label}"/>
+                           FontWeight="SemiBold"
+						   Text="{Binding Label}"/>
             </StackPanel>
         </DataTemplate>
     </Grid.Resources>
     <chart:SfPyramidChart>
     . . .
         <chart:SfPyramidChart.Legend>
-            <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}"/>
+            <chart:ChartLegend
+				ItemTemplate="{StaticResource labelTemplate}"/>
         </chart:SfPyramidChart.Legend>
     </chart:SfPyramidChart>
 </Grid>

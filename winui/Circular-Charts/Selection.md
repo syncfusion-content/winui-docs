@@ -79,7 +79,8 @@ The circular chart allows to select single or multiple segments using the [Type]
     <chart:SfCircularChart.Series>
         <chart:PieSeries>
             <chart:PieSeries.SelectionBehavior>
-                <chart:DataPointSelectionBehavior SelectionBrush="BlueViolet" Type="Multiple" />
+                <chart:DataPointSelectionBehavior SelectionBrush="BlueViolet"
+												  Type="Multiple" />
             </chart:PieSeries.SelectionBehavior>
         </chart:PieSeries>
     </chart:SfCircularChart.Series>
@@ -123,8 +124,9 @@ The circular chart provides support to select a point programmatically on a char
     <chart:SfCircularChart.Series>
         <chart:PieSeries>
             <chart:PieSeries.SelectionBehavior>
-                <chart:DataPointSelectionBehavior SelectionBrush="BlueViolet" 
-                SelectedIndex="2"/>
+                <chart:DataPointSelectionBehavior
+							SelectionBrush="BlueViolet" 
+							SelectedIndex="2"/>
             </chart:PieSeries.SelectionBehavior>
         </chart:PieSeries>
     </chart:SfCircularChart.Series>
@@ -166,8 +168,10 @@ The circular chart provides support to select multiple points programmatically o
     <chart:SfCircularChart.Series>
         <chart:PieSeries>
             <chart:PieSeries.SelectionBehavior>
-                <chart:DataPointSelectionBehavior SelectionBrush="BlueViolet" Type="Multiple" 
-                SelectedIndexes="{Binding SelectedIndexes}" />
+                <chart:DataPointSelectionBehavior
+							SelectionBrush="BlueViolet"
+							Type="Multiple" 
+							SelectedIndexes="{Binding SelectedIndexes}" />
             </chart:PieSeries.SelectionBehavior>
         </chart:PieSeries>
     </chart:SfCircularChart.Series>

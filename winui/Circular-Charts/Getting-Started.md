@@ -293,8 +293,10 @@ The following code example gives you the complete code of above configurations.
         <chart:ChartLegend/>
     </chart:SfCircularChart.Legend>
     <chart:SfCircularChart.Series>
-        <chart:PieSeries ItemsSource="{Binding Data}" ShowDataLabels="True"
-                         XBindingPath="Product" EnableTooltip="True"
+        <chart:PieSeries ItemsSource="{Binding Data}"
+						 ShowDataLabels="True"
+                         XBindingPath="Product"
+						 EnableTooltip="True"
                          YBindingPath="SalesRate">
         </chart:PieSeries>
     </chart:SfCircularChart.Series>
