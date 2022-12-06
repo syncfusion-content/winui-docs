@@ -316,7 +316,7 @@ When the mouse hovered in the chart area, you can view the label displayed over 
 
 **ShowTrackballInfo**
 
-The [ShowTrackballInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballInfo) property is used to enable or disable the label for corresponding series. By default, [ShowTrackballInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballInfo) property is `true`.
+The [ShowTrackballInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_ShowTrackballInfo) property is used to enable or disable the label for corresponding series. By default, [ShowTrackballInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_ShowTrackballInfo) property is `true`.
 
 {% tabs %}
 
@@ -506,7 +506,7 @@ The following screenshot illustrates the trackball label for multiple series, wh
 
 ## Template
 
-[TrackballLabelTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TrackballLabelTemplate) property is used to customize the appearance of series label in trackball.
+[TrackballLabelTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_TrackballLabelTemplate) property is used to customize the appearance of series label in trackball.
 
 {% tabs %}
 
