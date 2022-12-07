@@ -185,7 +185,7 @@ chart.PaletteBrushes = customBrushes;
 
 ![Gradient support in WinUI Chart](Appearance_Images/WinUI_Chart_Series_Gradient.png)
 
-Gradient color using the [Fill](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Fill) property of series with `LinearGradientBrush`.
+Gradient color using the [Fill](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_Fill) property of series with `LinearGradientBrush`.
 
 {% tabs %}
 
