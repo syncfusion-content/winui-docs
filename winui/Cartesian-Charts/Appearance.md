@@ -46,6 +46,35 @@ this.Content = chart;
 
 [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) provides support to define own brushes for the chart with preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PaletteBrushes) property, as shown in the following code example.
 
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart x:Name="chart" PaletteBrushes="{Binding CustomBrushes}">
+. . .
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+List<Brush> CustomBrushes = new List<Brush>();
+CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 38, 198, 218)));
+CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 172, 193)));
+CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 151, 167)));
+CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 131, 143)));
+
+this.chart.PaletteBrushes = CustomBrushes;
+. . .
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Custom PaletteBrushes in WinUI Chart](Appearance_images/WinUI_chart_custom_paletteBrushes.png)
+
 ## Applying PaletteBrushes for Series
 
 Cartesian chart provides support to set the palette to series for applying predefined brushes to the segment. The following code example shows you how to set the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PaletteBrushes) for the series.
