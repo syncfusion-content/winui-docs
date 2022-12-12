@@ -128,3 +128,61 @@ shadow.Content = button;
 {% endtabs %}
 
 ![Positioning in WinUI Shadow control](Shadow_images/winui_shadow_offset.png)
+
+## Enable or Disable the shadow
+
+The enable or disable the shadow can be customized using the `EnableShadow` property. The default value of the `EnableShadow` property is true.
+
+{% tabs %}
+{% highlight XAML %}
+
+<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+   <syncfusion:SfShadow EnableShadow="{Binding ElementName=toggle, Path=IsOn}">
+     <Button Height="50" Width="100" Content="Button"/>
+   </syncfusion:SfShadow>
+   <ToggleSwitch x:Name="toggle" IsOn="True"/>
+</StackPanel>
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfShadow shadow = new SfShadow();
+shadow.EnableShadow = true;
+   
+Button button = new Button(); 
+button.Height = 50;
+button.Width = 100;
+button.Content = "Button";
+shadow.Content = button;
+
+{% endhighlight %}
+{% endtabs %}
+
+![EnableShadow true state WinUI Shadow control](Shadow_images/winui_shadow_enableshadow_true.png)
+
+{% tabs %}
+{% highlight XAML %}
+
+<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+   <syncfusion:SfShadow EnableShadow="{Binding ElementName=toggle, Path=IsOn}">
+     <Button Height="50" Width="100" Content="Button"/>
+   </syncfusion:SfShadow>
+   <ToggleSwitch x:Name="toggle" IsOn="False"/>
+</StackPanel>
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfShadow shadow = new SfShadow();
+shadow.EnableShadow = false;
+   
+Button button = new Button(); 
+button.Height = 50;
+button.Width = 100;
+button.Content = "Button";
+shadow.Content = button;
+
+{% endhighlight %}
+{% endtabs %}
+
+![EnableShadow false state WinUI Shadow control](Shadow_images/winui_shadow_enableshadow_false.png)
