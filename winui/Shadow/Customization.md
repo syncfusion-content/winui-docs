@@ -133,7 +133,7 @@ shadow.Content = button;
 
 The Shadow control provides support to enable or disable the shadow effect by using the `EnableShadow` property. The default value of the `EnableShadow` property is true.
 
-The below code snippet show how to display the shadow to be false:
+The below code snippet shows how to disable the shadow effect:
 
 {% tabs %}
 {% highlight XAML %}
@@ -159,4 +159,4 @@ shadow.Content = button;
 {% endhighlight %}
 {% endtabs %}
 
-![EnableShadow false state WinUI Shadow control](Shadow_images/winui_shadow_enableshadow_false.png)
+![EnableShadow in WinUI Shadow control](Shadow_images/winui_shadow_enableshadow_false.png)
