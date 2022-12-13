@@ -110,7 +110,7 @@ rating.ItemSize = 50;
 
 ## Orientation 
 
-The Rating control provides support to displayed horizontally or vertically by setting the `Orientation` property.
+The Rating control provides support to display the rating items either horizontally or vertically by setting the `Orientation` property. The default value is horizontal.
 
 {% tabs %}
 {% highlight XAML %}
