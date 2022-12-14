@@ -6,3 +6,5 @@ platform: WinUI
 control: SfMaskedTextBox
 documentation: ug
 ---
+
+# Customization in WinUI SfMaskedTextBox

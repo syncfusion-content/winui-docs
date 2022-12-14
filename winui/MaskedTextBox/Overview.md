@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WinUI MaskedTextBox control | Syncfusion
-description: Learn all about the introduction of Syncfusion WinUI MaskedTextBox Control (SfMaskedTextBox) with essential features and more here.
+description: Learn all about the introduction of Syncfusion WinUI MaskedTextBox(SfMaskedTextBox) Control with essential features and more here.
 platform: WinUI
 control: SfMaskedTextBox
 documentation: ug
