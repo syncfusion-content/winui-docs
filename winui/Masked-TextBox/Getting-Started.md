@@ -47,7 +47,7 @@ This section explains the steps required to add the WinUI MaskedTextBox control 
 // Creating an instance of the MaskedTextBox control.
 SfMaskedTextBox maskedTextBox = new SfMaskedTextBox();
 maskedTextBox.MaskType = MaskedTextBoxMaskType.Simple;
-sfMaskedText.Mask = "00/00/0000";
+maskedTextBox.Mask = "00/00/0000";
 
 {% endhighlight %}
 {% endtabs %}
@@ -83,7 +83,7 @@ sfMaskedText.Mask = "00/00/0000";
 // Creating an instance of the MaskedTextBox control.
 SfMaskedTextBox maskedTextBox = new SfMaskedTextBox();
 maskedTextBox.MaskType = MaskedTextBoxMaskType.RegEx;
-sfMaskedText.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+.[A-Za-z]{2,3}";
+maskedTextBox.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+.[A-Za-z]{2,3}";
 
 {% endhighlight %}
 {% endtabs %}
