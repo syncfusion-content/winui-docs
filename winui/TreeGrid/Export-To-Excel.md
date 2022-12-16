@@ -90,7 +90,7 @@ Save(stream, "Sample");
 {% endhighlight %}
 {% endtabs %}
 
-### Export with outlines	
+### Export without outlines	
 
 By default, all the children in TreeGrid will be exported based on the state in TreeGrid. Disable the outlines in Excel by setting the `ShowOutlines` property to false in the`TreeGridExcelExportOptions` class.
 
@@ -98,7 +98,7 @@ By default, all the children in TreeGrid will be exported based on the state in 
 {% highlight c# %}
 var options = new TreeGridExcelExportOptions();
 options.ExcelVersion = ExcelVersion.Excel2013;
-options.ShowOutlines = true;
+options.ShowOutlines = false;
 var excelEngine = treeGrid.ExportToExcel(options);
 var workBook = excelEngine.Excel.Workbooks[0];
 MemoryStream stream = new MemoryStream();
