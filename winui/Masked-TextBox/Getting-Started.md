@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI SfMaskedTextBox
 
-This section explains the steps required to add the WinUI MaskedTextBox control and covers the basic features needed to get started with Syncfusion `MaskedTextBox` control.
+This section explains the steps required to add the WinUI MaskedTextBox control to get started with Syncfusion `MaskedTextBox` control.
 
 ## Creating an application with WinUI MaskedTextBox control
 
@@ -18,7 +18,7 @@ This section explains the steps required to add the WinUI MaskedTextBox control 
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 4. Initialize the `MaskedTextBox` control.
 
-## Initialize MaskedTextBox control using Simple mask
+## Initialize MaskedTextBox control using simple mask
 
 {% tabs %}
 {% highlight xaml %}
@@ -34,8 +34,10 @@ This section explains the steps required to add the WinUI MaskedTextBox control 
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
-        <!--Adding SfMaskedTextBox control with Simple mask.-->
+        <!--Adding SfMaskedTextBox control for date mask.-->
         <syncfusion:SfMaskedTextBox x:Name="sfMaskedTextBox"
+                                    Width="195"
+                                    Height="32"
                                     MaskType="Simple"
                                     Mask="00/00/0000" />
     </Grid>
@@ -52,7 +54,7 @@ maskedTextBox.Mask = "00/00/0000";
 {% endhighlight %}
 {% endtabs %}
 
-![MaskedTextBox control overview in WinUI](MaskedTextBox_Images/winui_getting_started_simple_mask.png)
+![Simple mask in WinUI MaskedTextBox](MaskedTextBox_Images/winui_simple_mask.png)
 
 ## Initialize MaskedTextBox control using RegEx mask
 
@@ -70,8 +72,10 @@ maskedTextBox.Mask = "00/00/0000";
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
-        <!--Adding SfMaskedTextBox control with RegEx mask type.-->
+        <!--Adding SfMaskedTextBox control for email mask.-->
         <syncfusion:SfMaskedTextBox x:Name="sfMaskedTextBox"
+                                    Width="195"
+                                    Height="32"
                                     MaskType="RegEx"
                                     Mask="[A-Za-z0-9._%-]+@[A-Za-z0-9]+\.[A-Za-z]{2,3}" />
     </Grid>
@@ -88,4 +92,4 @@ maskedTextBox.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+\\.[A-Za-z]{2,3}";
 {% endhighlight %}
 {% endtabs %}
 
-![MaskedTextBox control overview in WinUI](MaskedTextBox_Images/winui_getting_started_regex_mask.png)
+![RegEx mask in WinUI MaskedTextBox](MaskedTextBox_Images/winui_regex_mask.png)
