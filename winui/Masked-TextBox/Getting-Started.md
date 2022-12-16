@@ -73,7 +73,7 @@ maskedTextBox.Mask = "00/00/0000";
         <!--Adding SfMaskedTextBox control with RegEx mask type.-->
         <syncfusion:SfMaskedTextBox x:Name="sfMaskedTextBox"
                                     MaskType="RegEx"
-                                    Mask="[A-Za-z0-9._%-]+@[A-Za-z0-9]+.[A-Za-z]{2,3}" />
+                                    Mask="[A-Za-z0-9._%-]+@[A-Za-z0-9]+\.[A-Za-z]{2,3}" />
     </Grid>
 </Page>
 
@@ -83,7 +83,7 @@ maskedTextBox.Mask = "00/00/0000";
 // Creating an instance of the MaskedTextBox control.
 SfMaskedTextBox maskedTextBox = new SfMaskedTextBox();
 maskedTextBox.MaskType = MaskedTextBoxMaskType.RegEx;
-maskedTextBox.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+.[A-Za-z]{2,3}";
+maskedTextBox.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+\\.[A-Za-z]{2,3}";
 
 {% endhighlight %}
 {% endtabs %}
