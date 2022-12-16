@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Export To Excel in WinUI TreeGrid control | Syncfusion
-description: Learn here all about Export To Excel support in Syncfusion WinUI TreeGrid (SfTreeGrid) control and more.
+description: Learn about Export To Excel support in Syncfusion WinUI TreeGrid (SfTreeGrid) control and more.
 platform: winui
 control: TreeGrid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Export To Excel in WinUI TreeGrid (SfTreeGrid)
 
-The [WinUI TreeGrid](https://help.syncfusion.com/winui/treegrid/overview) supports exporting data to excel. Export merged cells, stacked headers while exporting.
+The [WinUI TreeGrid](https://help.syncfusion.com/winui/treegrid/overview) supports exporting data to excel. Export merged cells and stacked headers while exporting.
 
 The following assemblies needs to be added for exporting to excel.
 
@@ -53,7 +53,7 @@ async void Save(MemoryStream stream, string filename)
     {
         using (IRandomAccessStream zipStream = await stFile.OpenAsync(FileAccessMode.ReadWrite))
         {
-            //Write the compressed data from the memory to the file
+            //Write the compressed data from the memory to the file.
             using (Stream outstream = zipStream.AsStreamForWrite())
             {
                 byte[] buffer = stream.ToArray();
@@ -68,15 +68,15 @@ async void Save(MemoryStream stream, string filename)
 {% endhighlight %}
 {% endtabs %}
 
-N> The SfTreeGrid exports data to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). Refer to the [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating the exported worksheets.
+N> The SfTreeGrid exports data to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). For manipulating the exported worksheets, refer to the [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet).
 
 ## Excel exporting options
 
-The exporting operation can be customized by passing `TreeGridExcelExportOptions` instance as an argument to the `ExportToExcel` method. 
+The exporting operation can be customized by passing the `TreeGridExcelExportOptions` instance as an argument to the `ExportToExcel` method. 
 
 ### Export mode
 
-By default, only the actual value will be exported to excel. To export the display text, set the `ExportMode` property as `Text`. 
+By default, only the actual value will be exported to excel. To export the display text, set the `ExportMode` property as `Text.` 
 
 {% tabs %}
 {% highlight c# %}
@@ -92,13 +92,13 @@ Save(stream, "Sample");
 
 ### Export without outlines	
 
-By default, all the children in the TreeGrid will be exported based on the state in TreeGrid. You can disable the outlines in Excel by setting the `ShowOutlines` property to false in `TreeGridExcelExportOptions` class.
+By default, all the children in TreeGrid will be exported based on the state in TreeGrid. Disable the outlines in Excel by setting the `ShowOutlines` property to false in the`TreeGridExcelExportOptions` class.
 
 {% tabs %}
 {% highlight c# %}
 var options = new TreeGridExcelExportOptions();
 options.ExcelVersion = ExcelVersion.Excel2013;
-options.ShowOutlines = false;
+options.ShowOutlines = true;
 var excelEngine = treeGrid.ExportToExcel(options);
 var workBook = excelEngine.Excel.Workbooks[0];
 MemoryStream stream = new MemoryStream();
@@ -111,7 +111,7 @@ Save(stream, "Sample");
 
 ### Exclude columns while exporting
 
-By default, all the columns (including hidden columns) in the TreeGrid will be exported to Excel. To exclude some columns, use `ExcludedColumns` field in `TreeGridExcelExportOptions` class.
+By default, all the columns (including hidden columns) in TreeGrid will be exported to Excel. To exclude some columns, use `ExcludedColumns` field in the `TreeGridExcelExportOptions` class.
 
 {% tabs %}
 {% highlight c# %}
@@ -147,7 +147,7 @@ Save(stream, "Sample");
 
 ### Exporting stacked headers
 
-Export the stacked headers to excel by setting the `CanExportStackedHeaders` property to `true`.
+Export the stacked headers to excel by setting the `CanExportStackedHeaders` property to `true.`
 
 {% tabs %}
 {% highlight c# %}
@@ -163,7 +163,7 @@ Save(stream, "Sample");
 
 ### Exporting merged cells
 
-Export the merged cells to excel by setting the `CanExportMergedCells` property as `true`.
+Export the merged cells to excel by setting the `CanExportMergedCells` property as `true.`
 
 {% tabs %}
 {% highlight c# %}
@@ -179,7 +179,7 @@ Save(stream, "Sample");
 
 ### Export column width to Excel
 
-You can export the columns with its actual width by setting the `CanExportColumnWidth` property to `true`. 
+Export the columns with their actual width by setting the `CanExportColumnWidth` property to `true.` 
 
 {% tabs %}
 {% highlight c# %}
@@ -194,11 +194,11 @@ Save(stream, "Sample");
 {% endhighlight %}
 {% endtabs %}
 
-The default value of the `CanExportColumnWidth` property is `true`.
+The default value of the `CanExportColumnWidth` property is `true.`
 
 ### Export with customized row height
 
-You can export the TreeGrid to Excel with customized row height by using the `DefaultRowHeight` property.
+Export the TreeGrid to Excel with customized row height by using the `DefaultRowHeight` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -215,7 +215,7 @@ Save(stream, "Sample");
 
 ### Change the node expand state in Excel
 
-You can change the node expanding state in Excel by using the `NodeExpandMode` property.
+Change the node expanding state in Excel by using the `NodeExpandMode` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -232,7 +232,7 @@ Save(stream, "Sample");
 
 ### Changing start row and column index while exporting
 
-Export the data to the specified row index and column index in the worksheet, by setting the `StartRowIndex` and `StartColumnIndex` properties.
+Export the data to the specified row and column index in the worksheet by setting the `StartRowIndex` and `StartColumnIndex` properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -252,7 +252,7 @@ Save(stream, "Sample");
 
 ## Row Height and Column Width customization  
 
-After exporting the data to Excel, you can set different row heights and column widths for the columns. You can refer to [here](http://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation#adjust-row-height-and-column-width) for more information.
+After exporting the data to Excel, set different row heights and column widths for the columns. Refer to [here](http://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation#adjust-row-height-and-column-width) for more information.
 
 {% tabs %}
 {% highlight c# %}
@@ -270,7 +270,7 @@ Save(stream, "Sample");
 
 ## Styling cells based on CellType in Excel
 
-Customize the cell styles based on the `CellType` by using the `GridExportHandler`.
+Customize the cell styles based on the `CellType` by using the `GridExportHandler.`
 
 {% tabs %}
 {% highlight c# %}
@@ -304,11 +304,11 @@ private void GridExportHandler(object sender, TreeGridExcelExportStartOptions e)
 
 ## Cell customization in Excel while exporting
 
-Customize the cells by setting the `CellsExportHandler` in the `TreeGridExcelExportOptions`.
+Customize the cells by setting the `CellsExportHandler` in the `TreeGridExcelExportOptions.`
 
 ### Customize cell value while exporting
 
-Customize the cell values while exporting to excel by using the `CellsExportHandler` in the `TreeGridExcelExportOptions`.
+Customize the cell values while exporting to excel by using the `CellsExportHandler` in the `TreeGridExcelExportOptions.`
 
 {% tabs %}
 {% highlight c# %}
@@ -323,7 +323,7 @@ Save(stream, "Sample");
 
 private void CellsExportHandler(object sender, TreeGridCellExcelExportOptions e)
 {
-    // Based on the column mapping name and the cell type, we can change the cell values while exporting to excel.
+    // Based on the column mapping name and the cell type, change the cell values while exporting to excel.
     if (e.CellType == ExportCellType.RecordCell && e.ColumnName == "Availability")
     {
         if (e.CellValue.Equals(true))
@@ -343,7 +343,7 @@ Here, the cell values changed for the Availability column are based on the cust
 
 ### Changing row style in Excel based on data
 
-You can customize the rows based on the record values by using the `CellsExportHandler`.
+Customize the rows based on the record values by using the `CellsExportHandler.`
 
 {% tabs %}
 {% highlight c# %}
@@ -362,7 +362,7 @@ private void CellsExportHandler(object sender, TreeGridCellExcelExportOptions e)
         return;
     var record = e.Node as EmployeeInfo;
 
-    if (record.City == "US")
+    if (record.City == "UK")
     {
         e.Range.CellStyle.Color = Color.LightYellow;
         e.Range.CellStyle.Font.Color = ExcelKnownColors.Pink;
@@ -377,7 +377,7 @@ Here, the records having the `City` name as `US` are customized.
 
 ### Customize the cells based on column name
 
-You can customize the cells based on the [GridCellExcelExportingEventArgs.ColumnName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.GridCellExcelExportingEventArgs.html#Syncfusion_UI_Xaml_Grid_Converter_GridCellExcelExportingEventArgs_ColumnName) property in [CellsExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_CellsExportingEventHandler).
+Customize the cells based on the `TreeGridCellExcelExportOptions.ColumnName` property in the `CellsExportHandler.`
 
 {% tabs %}
 {% highlight c# %}
@@ -392,7 +392,7 @@ Save(stream, "Sample");
 
 private void CellsExportHandler(object sender, TreeGridCellExcelExportOptions e)
 {
-    if (e.ColumnName != "ID")
+    if (e.ColumnName != "FirstName")
         return;
 
     e.Range.CellStyle.Font.Size = 12;
@@ -408,11 +408,11 @@ Here, the `ID` column cells are customized while exporting.
 
 ## Customize exported workbook and worksheet
 
-The TreeGrid can be exported to Excel using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). You can refer to the [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating the workbooks and sheets after exporting.
+The TreeGrid can be exported to Excel using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). Refer to the [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating the workbooks and sheets after exporting.
 
 ### Set borders
 
-You can set the borders to Excel cells by directly accessing worksheet after exporting the data.
+Set the borders to Excel cells by directly accessing the worksheet after exporting the data.
 
 {% tabs %}
 {% highlight c# %}
@@ -449,8 +449,7 @@ Save(stream, "Sample");
 
 <img src="Export-To-Excel_images/winui-treegrid-filter.png" alt="Filters on Exported Excel in WinUI TreeGrid" width="100%" Height="Auto"/>
 
-
-While using the `stacked headers`, the filter option enables for the stacked header cell. To avoid this, specify the `range` based on the Stacked headers count to show the filter icon in the header cell.
+While using the `stacked headers`, the filter option enables the stacked header cell. To avoid this, specify the `range` based on the Stacked headers count to show the filter icon in the header cell.
 
 {% tabs %}
 {% highlight c# %}
@@ -468,35 +467,15 @@ Save(stream, "Sample");
 
 Please refer to the [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#data-filtering).
 
-### Customize the range of cells
-
-Customize the range of cells after exporting to excel by directly manipulating worksheet.
-
-{% tabs %}
-{% highlight c# %}
-var options = new TreeGridExcelExportOptions();
-options.ExcelVersion = ExcelVersion.Excel2013;
-var excelEngine = treeGrid.ExportToExcel(options);
-var workBook = excelEngine.Excel.Workbooks[0];
-workBook.Worksheets[0].Range["A2:A6"].CellStyle.Color = Syncfusion.Drawing.Color.LightSlateGray;
-workBook.Worksheets[0].Range["A2:A6"].CellStyle.Font.Color = ExcelKnownColors.White;
-MemoryStream stream = new MemoryStream();
-workBook.SaveAs(stream);
-Save(stream, "Sample");
-{% endhighlight %}
-{% endtabs %}
-
-<img src="Export-To-Excel_images/winui-treegrid-range-of-cells.png" alt="Customizing Range of Cells in Exported Excel for WinUI TreeGrid" width="100%" Height="Auto"/>
-
 ## Performance
 
-Using the `TreeGridExcelExportOptions.CellsExportHandler` and changing the settings for each cell will consume more memory and time. So, avoid using the `CellsExportHandler` and instead of this, you can do the required settings in the exported sheet.
+Using the `TreeGridExcelExportOptions.CellsExportHandler` and changing the settings for each cell will consume more memory and time. So, avoid using the `CellsExportHandler`, and instead of this, do the required settings in the exported sheet.
 
 ### Formatting column without using CellsExportHandler
 
 Perform cell-level customization such as row-level styling and formatting particular columns in the exported worksheet. 
 
-In the following code sample, the NumberFormat for the `Salary` column is changed in the exported sheet after exporting without using the `CellsExportHandler`. 
+In the following code sample, the NumberFormat for the `Salary` column is changed in the exported sheet after exporting without using the `CellsExportHandler.` 
 
 Reference:
 [CellRange Formatting](http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)
@@ -508,7 +487,7 @@ options.ExportMode = ExportMode.Value;
 options.ExcelVersion = ExcelVersion.Excel2013;
 var excelEngine = treeGrid.ExportToExcel(options);
 IWorkbook workBook = excelEngine.Excel.Workbooks[0];
-workBook.ActiveSheet.Columns[2].NumberFormat = "$0.0";
+workBook.ActiveSheet.Columns[2].NumberFormat = "0.0";
 MemoryStream stream = new MemoryStream();
 workBook.SaveAs(stream);
 Save(stream, "Sample");
@@ -517,68 +496,11 @@ Save(stream, "Sample");
 
 <img src="Export-To-Excel_images/winui-treegrid-column-formatting.png" alt="Formatting the Column while Exporting to Excel in WinUI TreeGrid" width="100%" Height="Auto"/>
 
-### Alternate row styling without using CellsExportHandler
-
-In the following code sample, the background color of rows in excel is changed based on the row index using conditional formatting for better performance.
-
-Reference:
-[Conditional Formatting](http://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting)
-
-{% tabs %}
-{% highlight c# %}
-var options = new TreeGridExcelExportOptions();
-options.ExportMode = ExportMode.Value;
-options.ExcelVersion = ExcelVersion.Excel2013;
-var excelEngine = treeGrid.ExportToExcel(options);
-IWorkbook workBook = excelEngine.Excel.Workbooks[0];
-IConditionalFormats condition = workBook.ActiveSheet.Range[2, 1, this.treeGrid.View.Nodes.Count + 1, this.treeGrid.Columns.Count].ConditionalFormats;
-IConditionalFormat condition1 = condition.AddCondition();
-condition1.FormatType = ExcelCFType.Formula;
-condition1.FirstFormula = "MOD(ROW(),2)=0";
-condition1.BackColorRGB = Syncfusion.Drawing.Color.Pink;
-IConditionalFormat condition2 = condition.AddCondition();
-condition2.FormatType = ExcelCFType.Formula;
-condition2.FirstFormula = "MOD(ROW(),2)=1";
-condition2.BackColorRGB = Syncfusion.Drawing.Color.LightGray;
-MemoryStream stream = new MemoryStream();
-workBook.SaveAs(stream);
-Save(stream, "Sample");
-{% endhighlight %}
-{% endtabs %}
-
-<img src="Export-To-Excel_images/winui-treegrid-changing-row-style.png" alt="Displaying Row Style while Exporting to Excel in WinUI TreeGrid" width="100%" Height="Auto"/>
-
 ## How to
-
-### Export multiple TreeGrids to single Excel sheet
-
-You can export multiple TreeGrids to single Excel sheet by merging one TreeGrid worksheet into another using the `Worksheet.UsedRange.CopyTo` method.
-
-{% tabs %}
-{% highlight c# %}
-var options = new TreeGridExcelExportOptions();
-options.ExcelVersion = ExcelVersion.Excel2013;
-
-var excelEngine = treeGrid.ExportToExcel(options);
-var workBook1 = excelEngine.Excel.Workbooks[0];
-var worksheet1 = workBook1.Worksheets[0];
-            
-excelEngine = treeGrid1.ExportToExcel(options);
-var workBook2 = excelEngine.Excel.Workbooks[0];
-var worksheet2 = workBook2.Worksheets[0];
-
-var columnCount = this.treeGrid1.Columns.Count;
-//Merge the One TreeGrid WorkSheet into the other TreeGrid WorkSheet
-worksheet2.UsedRange.CopyTo(worksheet1[1, columnCount + 1]);
-MemoryStream stream = new MemoryStream();
-workBook1.SaveAs(stream);
-Save(stream, "Sample");
-{% endhighlight %}
-{% endtabs %}
 
 ### Export the TreeGrid that is not loaded in view
 
-You can export the TreeGrid that is not loaded in view by calling the ApplyTemplate() method before exporting.
+Export the TreeGrid that is not loaded in view by calling the ApplyTemplate() method before exporting.
 
 {% tabs %}
 {% highlight c# %}
@@ -592,4 +514,3 @@ workBook1.SaveAs(stream);
 Save(stream, "Sample");
 {% endhighlight %}
 {% endtabs %}
-
