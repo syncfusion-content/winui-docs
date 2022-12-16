@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Export To Excel in WinUI TreeGrid control | Syncfusion
-description: Learn about Export To Excel support in Syncfusion WinUI TreeGrid (SfTreeGrid) control and more.
+description: Learn here all about Export To Excel support in Syncfusion WinUI TreeGrid (SfTreeGrid) control and more.
 platform: winui
 control: TreeGrid
 documentation: ug
