@@ -18,8 +18,6 @@ Each `MaskType` has different set of mask elements that are combined to form a m
 
 The expressions that are generated with letters, digits, and special characters come under this group. This is mainly used for fixed length inputs. For example: Phone number.
 
-Mask elements in this mask type are as follows:
-
 ### Simple Mask Elements
 
 <table>
