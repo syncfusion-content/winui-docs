@@ -1,24 +1,24 @@
 ---
 layout: post
 title: Mask formats in WinUI MaskedTextBox control | Syncfusion
-description: Learn all about the value mask formats in the MaskedTextBox (SfMaskedTextBox) control to set the mask format for the value.
+description: Learn all about how to set the mask format for the value in the MaskedTextBox (SfMaskedTextBox) control with prompts and literals.
 platform: WinUI
 control: SfMaskedTextBox
 documentation: ug
 ---
 
-# Value mask formats in WinUI SfMaskedTextBox
+# Formatting value in WinUI MaskedTextBox
 
-`SfMaskedTextBox` allows you to format the characters in the `Value` property in a mask scenario (when the Mask property is set). By default, the `Value` property holds your input characters, prompt characters and the literals defined in the mask. You can modify this and allow the `Value` property to hold the characters without prompt and literals by setting the `ValueMaskFormat` property of the control. The `Value` in the `SfMaskedTextBox` is formatted by any one of the following formatting enum values:
+The `MaskedTextBox` control allows you to format input values with prompt and literal characters which are defined in the mask expression by setting the `ValueMaskFormat` property. By default, the `Value` property of the control includes the characters typed by the user, as well as any prompt or literal characters in the input. The control provides several formatting options, which are listed below.
 
 1. ExcludePromptAndLiterals
 2. IncludePrompt
 3. IncludeLiterals
 4. IncludePromptAndLiterals
 
-## ExcludePromptAndLiterals
+## Exclude prompts and literals
 
-The `Value` property contains only the text entered by the user. It does not include prompt and literals characters in the `Value`.
+Set up the MaskedTextBox to exclude prompt and literal characters, preserving only the typed characters.
 
 ### Example
 
@@ -45,11 +45,11 @@ maskedTextBox.ValueMaskFormat = MaskedTextBoxMaskFormat.ExcludePromptAndLiterals
 {% endhighlight %}
 {% endtabs %}
 
-![Value mask format ExcludePromptAndLiterals in WinUI MaskedTextBox](MaskedTextBox_Images/winui_mask_format_exclude_prompt_and_literals.png)
+![WinUI MaskedTextBox excludes prompts and literals](MaskedTextBox_Images/winui_masked_textbox_exclude_prompts_and_literals.png)
 
-## IncludePrompt
+## Include prompts
 
-The `Value` property contains the text entered by the user as well as the prompt character.
+Set up the MaskedTextBox to preserve typed and prompt characters, excluding literals.
 
 ### Example
 
@@ -76,11 +76,11 @@ maskedTextBox.ValueMaskFormat = MaskedTextBoxMaskFormat.IncludePrompt;
 {% endhighlight %}
 {% endtabs %}
 
-![Value mask format IncludePrompt in WinUI MaskedTextBox](MaskedTextBox_Images/winui_mask_format_include_prompt.png)
+![WinUI MaskedTextBox includes prompts](MaskedTextBox_Images/winui_masked_textbox_include_prompts.png)
 
-## IncludeLiterals
+## Include literals
 
-The `Value` property contains the text entered by the user as well as any literal characters defined in the mask.
+Keep typed and literal characters in the input but exclude prompt characters.
 
 ### Example
 
@@ -107,11 +107,11 @@ maskedTextBox.ValueMaskFormat = MaskedTextBoxMaskFormat.IncludeLiterals;
 {% endhighlight %}
 {% endtabs %}
 
-![Value mask format IncludeLiterals in WinUI MaskedTextBox](MaskedTextBox_Images/winui_mask_format_include_literals.png)
+![WinUI MaskedTextBox includes literals](MaskedTextBox_Images/winui_masked_textbox_include_literals.png)
 
-## IncludePromptAndLiterals
+## Include prompts and literals
 
-The `Value` property contains text entered by the user as well as any literal characters and the prompt character defined in the mask.
+Maintain typed, prompt, and literal characters in the input.
 
 ### Example
 
@@ -138,4 +138,4 @@ maskedTextBox.ValueMaskFormat = MaskedTextBoxMaskFormat.IncludePromptAndLiterals
 {% endhighlight %}
 {% endtabs %}
 
-![Value mask format IncludePromptAndLiterals in WinUI MaskedTextBox](MaskedTextBox_Images/winui_mask_format_include_propmpt-and_literals.png)
+![WinUI MaskedTextBox includes prompts and literals](MaskedTextBox_Images/winui_masked_textbox_include_prompts-and_literals.png)
