@@ -20,8 +20,6 @@ The `MaskedTextBox` control allows you to format input values with prompt and li
 
 Set up the MaskedTextBox to exclude prompt and literal characters, preserving only the typed characters.
 
-### Example
-
 {% tabs %}
 {% highlight XAML %}
 
@@ -50,8 +48,6 @@ maskedTextBox.ValueMaskFormat = MaskedTextBoxMaskFormat.ExcludePromptAndLiterals
 ## Include prompts
 
 Set up the MaskedTextBox to preserve typed and prompt characters, excluding literals.
-
-### Example
 
 {% tabs %}
 {% highlight XAML %}
@@ -82,8 +78,6 @@ maskedTextBox.ValueMaskFormat = MaskedTextBoxMaskFormat.IncludePrompt;
 
 Keep typed and literal characters in the input but exclude prompt characters.
 
-### Example
-
 {% tabs %}
 {% highlight XAML %}
 
@@ -112,8 +106,6 @@ maskedTextBox.ValueMaskFormat = MaskedTextBoxMaskFormat.IncludeLiterals;
 ## Include prompts and literals
 
 Maintain typed, prompt, and literal characters in the input.
-
-### Example
 
 {% tabs %}
 {% highlight XAML %}
