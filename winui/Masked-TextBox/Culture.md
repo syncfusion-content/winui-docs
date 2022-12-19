@@ -13,12 +13,9 @@ Special symbols like currency symbols, date separators, decimal separators, and 
 
 <table>
 <tr>
-<td>
-{{'**Characters**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
+<th>
+Characters</th><th>
+Description</th>
 </tr>
 <tr>
 <td>
