@@ -66,26 +66,26 @@ Shift up. Converts all the characters that follow to uppercase.</td></tr>
 {% highlight XAML %}
 
 <syncfusion:SfMaskedTextBox x:Name="sfMaskedTextBox"
+                            Width="195"
                             MaskType="Simple"
-                            Mask="000:000:000" />
+                            Mask="(000) 000-0000" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfMaskedTextBox maskedTextBox = new SfMaskedTextBox();
+maskedTextBox.Width = "195";
 maskedTextBox.MaskType = MaskedTextBoxMaskType.Simple;
-maskedTextBox.Mask = "000:000:000";
+maskedTextBox.Mask = "(000) 000-0000";
 
 {% endhighlight %}
 {% endtabs %}
 
-![Mask type simple in WinUI MaskedTextBox](MaskedTextBox_Images/winui_mask_type_simple.png)
-
-![Mask type simple with value in WinUI MaskedTextBox](MaskedTextBox_Images/winui_simple_mask_with_value.png)
+![Mask type simple in WinUI MaskedTextBox](MaskedTextBox_Images/winui_mask_type_simple.gif)
 
 ## RegEx
 
-The expressions that are generated with regular expressions come under this group. For example: hexadecimal values [0-9A-C].
+The expressions that are generated with regular expressions come under this group. For example: alpha numeric values [0-9A-Z].
 
 ### RegEx mask elements
 
@@ -181,18 +181,18 @@ Accepts any character. It can be changed based on culture</td></tr>
 
 <syncfusion:SfMaskedTextBox x:Name="sfMaskedTextBox"
                             MaskType="RegEx"
-                            Mask="(0[0-9]|1[1-9]|2[1-3]){2}:[0-5][0-9]:[0-5][0-9]" />
+                            Width="195"
+                            Mask="[A-Za-z0-9._%-]+@[A-Za-z0-9]+\.[A-Za-z]{2,3}" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfMaskedTextBox maskedTextBox = new SfMaskedTextBox();
+maskedTextBox.Width = "195";
 maskedTextBox.MaskType = MaskedTextBoxMaskType.RegEx;
-maskedTextBox.Mask = "(0[0-9]|1[1-9]|2[1-3]){2}:[0-5][0-9]:[0-5][0-9]";
+maskedTextBox.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+\.[A-Za-z]{2,3}";
 
 {% endhighlight %}
 {% endtabs %}
 
-![Mask type RegEx in WinUI MaskedTextBox](MaskedTextBox_Images/winui_mask_type_regex.png)
-
-![Mask type RegEx with value in WinUI MaskedTextBox](MaskedTextBox_Images/winui_regex_mask_with_value.png)
+![Mask type RegEx in WinUI MaskedTextBox](MaskedTextBox_Images/winui_mask_type_regex.gif)
