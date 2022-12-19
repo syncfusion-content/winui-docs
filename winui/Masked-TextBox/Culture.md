@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Culture in WinUI MaskedTextBox control | Syncfusion
-description: Learn all about how to set the different culture support for currency symbols, date separators, and decimal separators in the MaskedTextBox (SfMaskedTextBox) control.
+description: Learn all about how to set the different culture support for currency symbols, date, time, decimal, and group separators in the MaskedTextBox (SfMaskedTextBox) control.
 platform: WinUI
 control: SfMaskedTextBox
 documentation: ug
