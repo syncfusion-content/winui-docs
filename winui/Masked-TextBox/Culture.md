@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Culture in WinUI MaskedTextBox control | Syncfusion
-description: Learn all about the culture in the MaskedTextBox (SfMaskedTextBox) control for the specific set of symbols such as '.', ',', '/', ':' and '$'.
+description: Learn all about how to set the different culture support for currency symbols, date separators, and decimal separators in the MaskedTextBox (SfMaskedTextBox) control.
 platform: WinUI
 control: SfMaskedTextBox
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Culture in WinUI MaskedTextBox
 
-Special symbols like currency symbols, date separators, decimal separators, and others are applied based on the specified culture.
+The MaskedTextBox allows you to set any culture support for currency symbols, date separators, time separators, group separators, and decimal separators by using the below special symbols.
 
 <table>
 <tr>
@@ -59,6 +59,8 @@ Currency symbol determined by current culture.
 </tr>
 </table>
 
+The following example shows how to set the the France culture for currency symbol, group separator and decimal separator.
+
 {% tabs %}
 {% highlight C# %}
 
@@ -71,6 +73,6 @@ maskedTextBox.Culture = new CultureInfo("fr-FR");
 {% endhighlight %}
 {% endtabs %}
 
-Now the ‘$’ will be localized to ‘€’; ‘.’ will be localized to ‘,’ and ‘,’ will be localized to ‘ ‘(single white space).
+Based on the France Culture, the ‘$’ will be localized to ‘€’; ‘.’ will be localized to ‘,’ and ‘,’ will be localized to ‘ ‘(single white space).
 
 ![WinUI MaskedTextBox culture](MaskedTextBox_Images/winui_masked_textbox_culture.gif)
