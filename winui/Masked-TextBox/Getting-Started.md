@@ -35,8 +35,7 @@ This section explains the steps required to add the WinUI MaskedTextBox control 
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
         <!--Adding SfMaskedTextBox control for date mask.-->
-        <syncfusion:SfMaskedTextBox x:Name="sfMaskedTextBox"
-                                    Width="195"
+        <syncfusion:SfMaskedTextBox Width="200"
                                     MaskType="Simple"
                                     Mask="00/00/0000" />
     </Grid>
@@ -47,7 +46,7 @@ This section explains the steps required to add the WinUI MaskedTextBox control 
 
 // Creating an instance of the MaskedTextBox control.
 SfMaskedTextBox maskedTextBox = new SfMaskedTextBox();
-maskedTextBox.Width = "195";
+maskedTextBox.Width = "200";
 maskedTextBox.MaskType = MaskedTextBoxMaskType.Simple;
 maskedTextBox.Mask = "00/00/0000";
 
@@ -73,8 +72,7 @@ maskedTextBox.Mask = "00/00/0000";
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
         <!--Adding SfMaskedTextBox control for email mask.-->
-        <syncfusion:SfMaskedTextBox x:Name="sfMaskedTextBox"
-                                    Width="195"
+        <syncfusion:SfMaskedTextBox Width="200"
                                     MaskType="RegEx"
                                     Mask="[A-Za-z0-9._%-]+@[A-Za-z0-9]+\.[A-Za-z]{2,3}" />
     </Grid>
@@ -85,7 +83,7 @@ maskedTextBox.Mask = "00/00/0000";
 
 // Creating an instance of the MaskedTextBox control.
 SfMaskedTextBox maskedTextBox = new SfMaskedTextBox();
-maskedTextBox.Width = "195";
+maskedTextBox.Width = "200";
 maskedTextBox.MaskType = MaskedTextBoxMaskType.RegEx;
 maskedTextBox.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+\\.[A-Za-z]{2,3}";
 

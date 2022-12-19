@@ -65,8 +65,7 @@ Shift up. Converts all the characters that follow to uppercase.</td></tr>
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfMaskedTextBox x:Name="sfMaskedTextBox"
-                            Width="195"
+<syncfusion:SfMaskedTextBox Width="200"
                             MaskType="Simple"
                             Mask="(000) 000-0000" />
 
@@ -74,7 +73,7 @@ Shift up. Converts all the characters that follow to uppercase.</td></tr>
 {% highlight C# %}
 
 SfMaskedTextBox maskedTextBox = new SfMaskedTextBox();
-maskedTextBox.Width = "195";
+maskedTextBox.Width = "200";
 maskedTextBox.MaskType = MaskedTextBoxMaskType.Simple;
 maskedTextBox.Mask = "(000) 000-0000";
 
@@ -179,16 +178,15 @@ Accepts any character. It can be changed based on culture</td></tr>
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfMaskedTextBox x:Name="sfMaskedTextBox"
-                            MaskType="RegEx"
-                            Width="195"
+<syncfusion:SfMaskedTextBox MaskType="RegEx"
+                            Width="200"
                             Mask="[A-Za-z0-9._%-]+@[A-Za-z0-9]+\.[A-Za-z]{2,3}" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfMaskedTextBox maskedTextBox = new SfMaskedTextBox();
-maskedTextBox.Width = "195";
+maskedTextBox.Width = "200";
 maskedTextBox.MaskType = MaskedTextBoxMaskType.RegEx;
 maskedTextBox.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+\.[A-Za-z]{2,3}";
 
