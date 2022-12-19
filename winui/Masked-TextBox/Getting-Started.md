@@ -91,3 +91,29 @@ maskedTextBox.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+\\.[A-Za-z]{2,3}";
 {% endtabs %}
 
 ![RegEx mask in WinUI MaskedTextBox](MaskedTextBox_Images/winui_regex_mask.png)
+
+## Setting the value
+
+The MaskedTextBox control displays the value that can be set using the `Value` property.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:SfMaskedTextBox Width="200"
+                            MaskType="Simple"
+                            Mask="00/00/0000"
+                            Value="12/02/2022" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfMaskedTextBox maskedTextBox = new SfMaskedTextBox();
+maskedTextBox.Width = "200";
+maskedTextBox.MaskType = MaskedTextBoxMaskType.Simple;
+maskedTextBox.Mask = "00/00/0000";
+maskedTextBox.Value = "12/02/2022";
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI MaskedTextBox value](MaskedTextBox_Images/winui_masked_textbox_value.png)

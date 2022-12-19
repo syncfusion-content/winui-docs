@@ -42,7 +42,7 @@ maskedTextBox.ValueMaskFormat = MaskedTextBoxMaskFormat.ExcludePromptAndLiterals
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI MaskedTextBox excludes prompts and literals](MaskedTextBox_Images/winui_masked_textbox_exclude_prompts_and_literals.png)
+![WinUI MaskedTextBox excludes prompts and literals](MaskedTextBox_Images/winui_masked_textbox_exclude_prompts_and_literals.gif)
 
 ## Include prompts
 
@@ -70,7 +70,7 @@ maskedTextBox.ValueMaskFormat = MaskedTextBoxMaskFormat.IncludePrompt;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI MaskedTextBox includes prompts](MaskedTextBox_Images/winui_masked_textbox_include_prompts.png)
+![WinUI MaskedTextBox includes prompts](MaskedTextBox_Images/winui_masked_textbox_include_prompts.gif)
 
 ## Include literals
 
@@ -98,7 +98,7 @@ maskedTextBox.ValueMaskFormat = MaskedTextBoxMaskFormat.IncludeLiterals;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI MaskedTextBox includes literals](MaskedTextBox_Images/winui_masked_textbox_include_literals.png)
+![WinUI MaskedTextBox includes literals](MaskedTextBox_Images/winui_masked_textbox_include_literals.gif)
 
 ## Include prompts and literals
 
@@ -126,4 +126,4 @@ maskedTextBox.ValueMaskFormat = MaskedTextBoxMaskFormat.IncludePromptAndLiterals
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI MaskedTextBox includes prompts and literals](MaskedTextBox_Images/winui_masked_textbox_include_prompts-and_literals.png)
+![WinUI MaskedTextBox includes prompts and literals](MaskedTextBox_Images/winui_masked_textbox_include_prompts-and_literals.gif)
