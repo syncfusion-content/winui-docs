@@ -7,7 +7,7 @@ control: SfMaskedTextBox
 documentation: ug
 ---
 
-# Getting Started with WinUI SfMaskedTextBox
+# Getting Started with WinUI MaskedTextBox
 
 This section explains the steps required to add the WinUI MaskedTextBox control to get started with Syncfusion `MaskedTextBox` control.
 

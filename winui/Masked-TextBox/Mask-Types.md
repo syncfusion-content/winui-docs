@@ -7,7 +7,7 @@ control: SfMaskedTextBox
 documentation: ug
 ---
 
-# Mask types in WinUI SfMaskedTextBox
+# Mask types in WinUI MaskedTextBox
 
 Each `MaskType` has different set of mask elements that are combined to form a mask expression. Based on the complexity and usage, mask types are classified as,
 
