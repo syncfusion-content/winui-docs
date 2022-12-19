@@ -23,8 +23,7 @@ Set up the MaskedTextBox to exclude prompt and literal characters, preserving on
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfMaskedTextBox x:Name="sfMaskedTextBox"
-                            Width="195"
+<syncfusion:SfMaskedTextBox Width="200"
                             MaskType="Simple"
                             Mask=">AAAAA-AAAAA-AAAAA-AAAAA"
                             Value="DF321SD1A"
@@ -34,7 +33,7 @@ Set up the MaskedTextBox to exclude prompt and literal characters, preserving on
 {% highlight C# %}
 
 SfMaskedTextBox maskedTextBox = new SfMaskedTextBox();
-maskedTextBox.Width = "195";
+maskedTextBox.Width = "200";
 maskedTextBox.MaskType = MaskedTextBoxMaskType.Simple;
 maskedTextBox.Mask = ">AAAAA-AAAAA-AAAAA-AAAAA";
 maskedTextBox.Value = "DF321SD1A";
@@ -52,8 +51,7 @@ Set up the MaskedTextBox to preserve typed and prompt characters, excluding lite
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfMaskedTextBox x:Name="sfMaskedTextBox"
-                            Width="195"
+<syncfusion:SfMaskedTextBox Width="200"
                             MaskType="Simple"
                             Mask=">AAAAA-AAAAA-AAAAA-AAAAA"
                             Value="DF321SD1A"
@@ -63,7 +61,7 @@ Set up the MaskedTextBox to preserve typed and prompt characters, excluding lite
 {% highlight C# %}
 
 SfMaskedTextBox maskedTextBox = new SfMaskedTextBox();
-maskedTextBox.Width = "195";
+maskedTextBox.Width = "200";
 maskedTextBox.MaskType = MaskedTextBoxMaskType.Simple;
 maskedTextBox.Mask = ">AAAAA-AAAAA-AAAAA-AAAAA";
 maskedTextBox.Value = "DF321SD1A";
@@ -81,8 +79,7 @@ Keep typed and literal characters in the input but exclude prompt characters.
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfMaskedTextBox x:Name="sfMaskedTextBox"
-                            Width="195"
+<syncfusion:SfMaskedTextBox Width="200"
                             MaskType="Simple"
                             Mask=">AAAAA-AAAAA-AAAAA-AAAAA"
                             Value="DF321SD1A"
@@ -92,7 +89,7 @@ Keep typed and literal characters in the input but exclude prompt characters.
 {% highlight C# %}
 
 SfMaskedTextBox maskedTextBox = new SfMaskedTextBox();
-maskedTextBox.Width = "195";
+maskedTextBox.Width = "200";
 maskedTextBox.MaskType = MaskedTextBoxMaskType.Simple;
 maskedTextBox.Mask = ">AAAAA-AAAAA-AAAAA-AAAAA";
 maskedTextBox.Value = "DF321SD1A";
@@ -110,8 +107,7 @@ Maintain typed, prompt, and literal characters in the input.
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfMaskedTextBox x:Name="sfMaskedTextBox"
-                            Width="195"
+<syncfusion:SfMaskedTextBox Width="200"
                             MaskType="Simple"
                             Mask=">AAAAA-AAAAA-AAAAA-AAAAA"
                             Value="DF321SD1A"
@@ -121,7 +117,7 @@ Maintain typed, prompt, and literal characters in the input.
 {% highlight C# %}
 
 SfMaskedTextBox maskedTextBox = new SfMaskedTextBox();
-maskedTextBox.Width = "195";
+maskedTextBox.Width = "200";
 maskedTextBox.MaskType = MaskedTextBoxMaskType.Simple;
 maskedTextBox.Mask = ">AAAAA-AAAAA-AAAAA-AAAAA";
 maskedTextBox.Value = "DF321SD1A";

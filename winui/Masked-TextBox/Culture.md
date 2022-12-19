@@ -65,7 +65,7 @@ The following example shows how to set the the France culture for currency symbo
 {% highlight C# %}
 
 SfMaskedTextBox maskedTextBox = new SfMaskedTextBox();
-maskedTextBox.Width = "195";
+maskedTextBox.Width = "200";
 maskedTextBox.MaskType = MaskedTextBoxMaskType.Simple;
 maskedTextBox.Mask = "$ 0,000.00";
 maskedTextBox.Culture = new CultureInfo("fr-FR");
