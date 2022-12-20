@@ -94,7 +94,7 @@ maskedTextBox.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+\\.[A-Za-z]{2,3}";
 
 ## Setting the prompt character
 
-Displays prompt character for the absence of your input in the mask and its default value is ‘_’. You can set the custom prompt character using `PromptChar` property.
+Every single mask displays a prompt character ('_') in the absence of your input. You can customize this prompt character by using the `PromptChar` property."
 
 {% tabs %}
 {% highlight C# %}
@@ -113,7 +113,7 @@ maskedTextBox.PromptChar = '#';
 
 ## Setting the value
 
-The MaskedTextBox control displays the value that can be set using the `Value` property.
+The `Value` property is used to set the input value for MaskedTextBox control.
 
 {% tabs %}
 {% highlight XAML %}
