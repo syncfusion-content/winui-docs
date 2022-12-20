@@ -92,6 +92,25 @@ maskedTextBox.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+\\.[A-Za-z]{2,3}";
 
 ![RegEx mask in WinUI MaskedTextBox](MaskedTextBox_Images/winui_regex_mask.png)
 
+## Setting the prompt character
+
+Displays prompt character for the absence of your input in the mask and its default value is ‘_’. You can set the custom prompt character using `PromptChar` property.
+
+{% tabs %}
+{% highlight C# %}
+
+// Creating an instance of the MaskedTextBox control.
+SfMaskedTextBox maskedTextBox = new SfMaskedTextBox();
+maskedTextBox.Width = "200";
+maskedTextBox.MaskType = MaskedTextBoxMaskType.Simple;
+maskedTextBox.Mask = "00/00/0000";
+maskedTextBox.PromptChar = '#';
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI MaskedTextBox prompt character](MaskedTextBox_Images/winui_masked_textbox_prompt_char.png)
+
 ## Setting the value
 
 The MaskedTextBox control displays the value that can be set using the `Value` property.
