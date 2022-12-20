@@ -108,6 +108,30 @@ rating.ItemSize = 50;
 
 ![Size customization in WinUI Rating control](Rating_images/winui_rating_itemsize.png)
 
+## Orientation 
+
+The Rating control provides support to display the rating items either horizontally or vertically by setting the `Orientation` property. The default value is horizontal.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:SfRating Value="3"
+     ItemsCount="5" Orientation="Vertical">
+</syncfusion:SfRating>
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfRating rating = new SfRating();
+rating.Value = 3;
+rating.ItemsCount = 5;
+rating.Orientation = Orientation.Vertical;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Orientation customization in WinUI Rating control](Rating_images/winui_rating_orientation.png)
+
 ## IsReadOnly
 
 The Rating control provides support to restrict the user's selection and only allows viewing of the rating value by setting the [IsReadOnly](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfRating.html#Syncfusion_UI_Xaml_Editors_SfRating_IsReadOnly) property value as true. The default value is `false`.
