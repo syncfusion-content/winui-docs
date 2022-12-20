@@ -94,7 +94,7 @@ maskedTextBox.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+\\.[A-Za-z]{2,3}";
 
 ## Setting the prompt character
 
-Every single mask displays a prompt character ('_') in the absence of your input. You can customize this prompt character by using the `PromptChar` property."
+Every single mask displays a prompt character ('_') in the absence of your input. You can customize this prompt character by using the `PromptChar` property.
 
 {% tabs %}
 {% highlight C# %}
