@@ -134,8 +134,8 @@ N> `TextBoxStyle` will only have an effect in single selection editable mode.
                     SelectionMode="Single"
                     ItemsSource="{Binding SocialMedias}"
                     DisplayMemberPath="Name"
-                    TextMemberPath="Name"
-                    ShowClearButton="False">
+                    TextMemberPath="Name">
+                    
     <editors:SfComboBox.TextBoxStyle>
         <Style TargetType="TextBox">                   
             <Style.Setters>              

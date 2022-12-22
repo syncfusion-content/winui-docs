@@ -65,34 +65,6 @@ comboBox.IsEditable = false;
 
 ![WinUI ComboBox choose item using keyboard](Editing_images/winui-combobox-non-edit-mode.gif)
 
-## Hide clear button in the editor
-
-By default, the clear button `X` will be displayed in the editor of the `ComboBox` control, which can be used to clear the entered input. Hide the clear button in `ComboBox` control using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_ShowClearButton) property. The default value of `ShowClearButton` property value is `true`.
-
-{% tabs %}
-{% highlight XAML %}
-
-<editors:SfComboBox x:Name="comboBox"
-                    Width="250"
-                    IsEditable="true"
-                    ShowClearButton="false"
-                    ItemsSource="{Binding SocialMedias}"
-                    DisplayMemberPath="Name"
-                    TextMemberPath="Name">
-</editors:SfComboBox>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-comboBox.ShowClearButton = false;
-
-{% endhighlight %}
-{% endtabs %}
-
-![WinUI ComboBox hide clear button](Editing_images/winui-combobox-hideclearbutton.png)
-
-N> The `ShowClearButton` property has no effect in non-editable mode.
 
 ## Open a drop-down programmatically
 
