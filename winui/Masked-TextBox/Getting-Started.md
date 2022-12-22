@@ -113,7 +113,7 @@ maskedTextBox.PromptChar = '#';
 
 ## Setting the value
 
-The [Value](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_Value) property is used to set the input value for MaskedTextBox control.
+The [Value](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_Value) property is used to set the input value for Masked TextBox control.
 
 {% tabs %}
 {% highlight XAML %}
