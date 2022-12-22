@@ -9,7 +9,7 @@ documentation: ug
 
 # Formatting value in WinUI MaskedTextBox
 
-The `MaskedTextBox` control allows you to format input values with prompt and literal characters which are defined in the mask expression by setting the `ValueMaskFormat` property. By default, the `Value` property of the control includes the characters typed by the user, as well as any prompt or literal characters in the input. The control provides several formatting options, which are listed below.
+The `MaskedTextBox` control allows you to format input values with prompt and literal characters which are defined in the mask expression by setting the [ValueMaskFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_ValueMaskFormat) property. By default, the [Value](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_Value) property of the control includes the characters typed by the user, as well as any prompt or literal characters in the input. The control provides several formatting options, which are listed below.
 
 1. ExcludePromptAndLiterals
 2. IncludePrompt

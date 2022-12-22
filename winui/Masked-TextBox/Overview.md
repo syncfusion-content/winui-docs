@@ -9,7 +9,7 @@ documentation: ug
 
 # WinUI MaskedTextBox Overview
 
-The .NET WinUI MaskedTextBox is an advanced version of the input control that restricts input of certain characters, text, and numbers by using a mask pattern. This control is used to create a template for providing information such as telephone numbers, email IDs, IP addresses, product keys, and so on.
+The [.NET WinUI MaskedTextBox](https://www.syncfusion.com/winui-controls/masked-textbox) is an advanced version of the input control that restricts input of certain characters, text, and numbers by using a mask pattern. This control is used to create a template for providing information such as telephone numbers, email IDs, IP addresses, product keys, and so on.
 
 ![MaskedTextBox control overview in WinUI](MaskedTextBox_Images/winui_maskedtextbox_overview.png)
 

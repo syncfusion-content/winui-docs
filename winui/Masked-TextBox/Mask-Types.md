@@ -9,7 +9,7 @@ documentation: ug
 
 # Mask types in WinUI MaskedTextBox
 
-Each `MaskType` has different set of mask elements that are combined to form a mask expression. Based on the complexity and usage, mask types are classified as,
+Each [MaskType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_MaskType) has different set of mask elements that are combined to form a mask expression. Based on the complexity and usage, mask types are classified as,
 
 1. Simple
 2. RegEx

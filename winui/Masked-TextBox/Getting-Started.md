@@ -9,14 +9,14 @@ documentation: ug
 
 # Getting Started with WinUI MaskedTextBox
 
-This section explains the steps required to add the WinUI MaskedTextBox control to get started with Syncfusion `MaskedTextBox` control.
+This section explains the steps required to add the [WinUI MaskedTextBox](https://www.syncfusion.com/winui-controls/masked-textbox) control to get started with Syncfusion [MaskedTextBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html) control.
 
 ## Creating an application with WinUI MaskedTextBox control
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
-4. Initialize the `MaskedTextBox` control.
+4. Initialize the [MaskedTextBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html) control.
 
 ## Initialize MaskedTextBox control using simple mask
 
@@ -94,7 +94,7 @@ maskedTextBox.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+\\.[A-Za-z]{2,3}";
 
 ## Setting the prompt character
 
-Every single mask displays a prompt character ('_') in the absence of your input. You can customize this prompt character by using the `PromptChar` property.
+Every single mask displays a prompt character ('_') in the absence of your input. You can customize this prompt character by using the [PromptChar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_PromptChar) property.
 
 {% tabs %}
 {% highlight C# %}
@@ -113,7 +113,7 @@ maskedTextBox.PromptChar = '#';
 
 ## Setting the value
 
-The `Value` property is used to set the input value for MaskedTextBox control.
+The [Value](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_Value) property is used to set the input value for MaskedTextBox control.
 
 {% tabs %}
 {% highlight XAML %}
