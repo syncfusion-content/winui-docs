@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Culture in WinUI MaskedTextBox control | Syncfusion
-description: Learn all about how to set the different culture support for currency symbols, date, time, decimal, and group separators in the MaskedTextBox control.
+title: Culture in WinUI Masked TextBox control | Syncfusion
+description: Learn all about how to set the different culture support for currency symbols, date, time, decimal, and group separators in the Masked TextBox control.
 platform: WinUI
 control: SfMaskedTextBox
 documentation: ug
 ---
 
-# Culture in WinUI MaskedTextBox
+# Culture in WinUI Masked TextBox
 
-The MaskedTextBox allows you to set any culture support for currency symbols, date separators, time separators, group separators, and decimal separators by using the below special symbols.
+The Masked TextBox allows you to set any [Culture](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_Culture) support for currency symbols, date separators, time separators, group separators, and decimal separators by using the below special symbols.
 
 <table>
 <tr>
@@ -75,4 +75,4 @@ maskedTextBox.Culture = new CultureInfo("fr-FR");
 
 Based on the France Culture, the ‘$’ will be localized to ‘€’; ‘.’ will be localized to ‘,’ and ‘,’ will be localized to ‘ ‘(single white space).
 
-![WinUI MaskedTextBox culture](MaskedTextBox_Images/winui_masked_textbox_culture.gif)
+![WinUI Masked TextBox culture](MaskedTextBox_Images/winui_masked_textbox_culture.gif)
