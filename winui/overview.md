@@ -99,7 +99,7 @@ The Syncfusion WinUI Controls are the suite, ever needed to create state of art 
 		</td>
 	</tr>
 	<tr>
-	    <td rowspan="9" valign="top">
+	    <td rowspan="10" valign="top">
 			EDITORS<br/>
 		</td>	
 		<td>
@@ -129,6 +129,11 @@ The Syncfusion WinUI Controls are the suite, ever needed to create state of art 
 	<tr>
 		<td>
 			<a href="https://help.syncfusion.com/winui/color-palette/getting-started">Color Palette</a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/masked-textbox/getting-started">Masked TextBox</a><br/>
 		</td>
 	</tr>
 	<tr>
