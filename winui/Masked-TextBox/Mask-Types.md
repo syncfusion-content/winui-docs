@@ -7,7 +7,7 @@ control: SfMaskedTextBox
 documentation: ug
 ---
 
-# Mask types in WinUI MaskedTextBox
+# Mask types in WinUI Masked TextBox
 
 Each [MaskType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_MaskType) has different set of mask elements that are combined to form a mask expression. Based on the complexity and usage, mask types are classified as,
 
@@ -80,7 +80,7 @@ maskedTextBox.Mask = "(000) 000-0000";
 {% endhighlight %}
 {% endtabs %}
 
-![Mask type simple in WinUI MaskedTextBox](MaskedTextBox_Images/winui_mask_type_simple.gif)
+![Mask type simple in WinUI Masked TextBox](MaskedTextBox_Images/winui_mask_type_simple.gif)
 
 ## RegEx
 
@@ -193,4 +193,4 @@ maskedTextBox.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+\.[A-Za-z]{2,3}";
 {% endhighlight %}
 {% endtabs %}
 
-![Mask type RegEx in WinUI MaskedTextBox](MaskedTextBox_Images/winui_mask_type_regex.gif)
+![Mask type RegEx in WinUI Masked TextBox](MaskedTextBox_Images/winui_mask_type_regex.gif)

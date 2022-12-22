@@ -7,7 +7,7 @@ control: SfMaskedTextBox
 documentation: ug
 ---
 
-# Customization in WinUI MaskedTextBox
+# Customization in WinUI Masked TextBox
 
 This section explains the header, header template, and description of MaskedTextBox.
 
@@ -35,7 +35,7 @@ maskedTextBox.Mask = ">AAAAA-AAAAA-AAAAA-AAAAA";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI MaskedTextBox header](MaskedTextBox_Images/winui_masked_textbox_header.png)
+![WinUI Masked TextBox header](MaskedTextBox_Images/winui_masked_textbox_header.png)
 
 ## Header template
 
@@ -59,7 +59,7 @@ By using the [HeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI MaskedTextBox header template](MaskedTextBox_Images/winui_masked_textbox_header_template.png)
+![WinUI Masked TextBox header template](MaskedTextBox_Images/winui_masked_textbox_header_template.png)
 
 ## Description
 
@@ -85,4 +85,4 @@ maskedTextBox.Mask = ">AAAAA-AAAAA-AAAAA-AAAAA";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI MaskedTextBox description](MaskedTextBox_Images/winui_masked_textbox_description.png)
+![WinUI Masked TextBox description](MaskedTextBox_Images/winui_masked_textbox_description.png)

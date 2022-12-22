@@ -7,9 +7,9 @@ control: SfMaskedTextBox
 documentation: ug
 ---
 
-# Formatting value in WinUI MaskedTextBox
+# Formatting value in WinUI Masked TextBox
 
-The `MaskedTextBox` control allows you to format input values with prompt and literal characters which are defined in the mask expression by setting the [ValueMaskFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_ValueMaskFormat) property. By default, the [Value](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_Value) property of the control includes the characters typed by the user, as well as any prompt or literal characters in the input. The control provides several formatting options, which are listed below.
+The `Masked TextBox` control allows you to format input values with prompt and literal characters which are defined in the mask expression by setting the [ValueMaskFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_ValueMaskFormat) property. By default, the [Value](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_Value) property of the control includes the characters typed by the user, as well as any prompt or literal characters in the input. The control provides several formatting options, which are listed below.
 
 1. ExcludePromptAndLiterals
 2. IncludePrompt
@@ -42,7 +42,7 @@ maskedTextBox.ValueMaskFormat = MaskedTextBoxMaskFormat.ExcludePromptAndLiterals
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI MaskedTextBox excludes prompts and literals](MaskedTextBox_Images/winui_masked_textbox_exclude_prompts_and_literals.png)
+![WinUI Masked TextBox excludes prompts and literals](MaskedTextBox_Images/winui_masked_textbox_exclude_prompts_and_literals.png)
 
 ## Include prompts
 
@@ -70,7 +70,7 @@ maskedTextBox.ValueMaskFormat = MaskedTextBoxMaskFormat.IncludePrompt;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI MaskedTextBox includes prompts](MaskedTextBox_Images/winui_masked_textbox_include_prompts.png)
+![WinUI Masked TextBox includes prompts](MaskedTextBox_Images/winui_masked_textbox_include_prompts.png)
 
 ## Include literals
 
@@ -98,7 +98,7 @@ maskedTextBox.ValueMaskFormat = MaskedTextBoxMaskFormat.IncludeLiterals;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI MaskedTextBox includes literals](MaskedTextBox_Images/winui_masked_textbox_include_literals.png)
+![WinUI Masked TextBox includes literals](MaskedTextBox_Images/winui_masked_textbox_include_literals.png)
 
 ## Include prompts and literals
 
@@ -126,4 +126,4 @@ maskedTextBox.ValueMaskFormat = MaskedTextBoxMaskFormat.IncludePromptAndLiterals
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI MaskedTextBox includes prompts and literals](MaskedTextBox_Images/winui_masked_textbox_include_prompts-and_literals.png)
+![WinUI Masked TextBox includes prompts and literals](MaskedTextBox_Images/winui_masked_textbox_include_prompts-and_literals.png)
