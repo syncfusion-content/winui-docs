@@ -13,7 +13,7 @@ This section explains the header, header template, and description of MaskedText
 
 ## Header
 
-The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_Header) property is used to display the title for the MaskedTextBox control.
+The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_Header) property is used to display the title for the Masked TextBox control.
 
 {% tabs %}
 {% highlight XAML %}
