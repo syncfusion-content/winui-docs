@@ -9,7 +9,7 @@ documentation: ug
 
 # Culture in WinUI MaskedTextBox
 
-The MaskedTextBox allows you to set any culture support for currency symbols, date separators, time separators, group separators, and decimal separators by using the below special symbols.
+The MaskedTextBox allows you to set any [Culture](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_Culture) support for currency symbols, date separators, time separators, group separators, and decimal separators by using the below special symbols.
 
 <table>
 <tr>
