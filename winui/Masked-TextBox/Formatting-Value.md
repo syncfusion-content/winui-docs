@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Mask formats in WinUI MaskedTextBox control | Syncfusion
-description: Learn all about how to set the mask format for the value in the MaskedTextBox (SfMaskedTextBox) control with prompts and literals.
+title: Mask formats in WinUI Masked TextBox control | Syncfusion
+description: Learn all about how to set the mask format for the value in the Masked TextBox (SfMaskedTextBox) control with prompts and literals.
 platform: WinUI
 control: SfMaskedTextBox
 documentation: ug
@@ -18,7 +18,7 @@ The `Masked TextBox` control allows you to format input values with prompt and l
 
 ## Exclude prompts and literals
 
-Set up the MaskedTextBox to exclude prompt and literal characters, preserving only the typed characters.
+Set up the Masked TextBox to exclude prompt and literal characters, preserving only the typed characters.
 
 {% tabs %}
 {% highlight XAML %}
@@ -46,7 +46,7 @@ maskedTextBox.ValueMaskFormat = MaskedTextBoxMaskFormat.ExcludePromptAndLiterals
 
 ## Include prompts
 
-Set up the MaskedTextBox to preserve typed and prompt characters, excluding literals.
+Set up the Masked TextBox to preserve typed and prompt characters, excluding literals.
 
 {% tabs %}
 {% highlight XAML %}

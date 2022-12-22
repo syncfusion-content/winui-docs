@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Mask types in WinUI MaskedTextBox control | Syncfusion
-description: Learn more about the various mask types available in the MaskedTextBox (SfMaskedTextBox) control, including Simple and RegEx, and how to use them effectively.
+title: Mask types in WinUI Masked TextBox control | Syncfusion
+description: Learn more about the various mask types available in the Masked TextBox (SfMaskedTextBox) control, including Simple and RegEx, and how to use them effectively.
 platform: WinUI
 control: SfMaskedTextBox
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in WinUI MaskedTextBox control | Syncfusion
-description: Learn all about the customization such as header, header template, and description support in the MaskedTextBox (SfMaskedTextBox) control.
+title: Customization in WinUI Masked TextBox control | Syncfusion
+description: Learn all about the customization such as header, header template, and description support in the Masked TextBox (SfMaskedTextBox) control.
 platform: WinUI
 control: SfMaskedTextBox
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Customization in WinUI Masked TextBox
 
-This section explains the header, header template, and description of MaskedTextBox.
+This section explains the header, header template, and description of Masked TextBox.
 
 ## Header
 
