@@ -78,7 +78,7 @@ The exporting operation can be customized by passing the [TreeGridExcelExportOpt
 
 ### Export mode
 
-By default, only the actual value will be exported to excel. To export the display text, set the [ExportMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.ExportMode.html) property as [Text(https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.ExportMode.html#Syncfusion_UI_Xaml_TreeGrid_Export_ExportMode_Text).] 
+By default, only the actual value will be exported to excel. To export the display text, set the [ExportMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.ExportMode.html) property as [Text](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.ExportMode.html#Syncfusion_UI_Xaml_TreeGrid_Export_ExportMode_Text). 
 
 {% tabs %}
 {% highlight c# %}
@@ -272,7 +272,7 @@ Save(stream, "Sample");
 
 ## Styling cells based on CellType in Excel
 
-Customize the cell styles based on the [CellType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.ExportCellType.html) by using the [GridExportHandler(https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.TreeGridExcelExportOptions.html#Syncfusion_UI_Xaml_TreeGrid_Export_TreeGridExcelExportOptions_GridExportHandler).]
+Customize the cell styles based on the [CellType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.ExportCellType.html) by using the [GridExportHandler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.TreeGridExcelExportOptions.html#Syncfusion_UI_Xaml_TreeGrid_Export_TreeGridExcelExportOptions_GridExportHandler).
 
 {% tabs %}
 {% highlight c# %}
@@ -306,11 +306,11 @@ private void GridExportHandler(object sender, TreeGridExcelExportStartOptions e)
 
 ## Cell customization in Excel while exporting
 
-Customize the cells by setting the [CellsExportHandler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.TreeGridExcelExportOptions.html#Syncfusion_UI_Xaml_TreeGrid_Export_TreeGridExcelExportOptions_CellsExportHandler) in the [TreeGridExcelExportOptions(https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.TreeGridExcelExportOptions.html).]
+Customize the cells by setting the [CellsExportHandler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.TreeGridExcelExportOptions.html#Syncfusion_UI_Xaml_TreeGrid_Export_TreeGridExcelExportOptions_CellsExportHandler) in the [TreeGridExcelExportOptions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.TreeGridExcelExportOptions.html).
 
 ### Customize cell value while exporting
 
-Customize the cell values while exporting to excel by using the [CellsExportHandler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.TreeGridExcelExportOptions.html#Syncfusion_UI_Xaml_TreeGrid_Export_TreeGridExcelExportOptions_CellsExportHandler) in the [TreeGridExcelExportOptions(https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.TreeGridExcelExportOptions.html).]
+Customize the cell values while exporting to excel by using the [CellsExportHandler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.TreeGridExcelExportOptions.html#Syncfusion_UI_Xaml_TreeGrid_Export_TreeGridExcelExportOptions_CellsExportHandler) in the [TreeGridExcelExportOptions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.TreeGridExcelExportOptions.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -345,7 +345,7 @@ Here, the cell values changed for the Availability column are based on the cust
 
 ### Changing row style in Excel based on data
 
-Customize the rows based on the record values by using the [CellsExportHandler(https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.TreeGridExcelExportOptions.html#Syncfusion_UI_Xaml_TreeGrid_Export_TreeGridExcelExportOptions_CellsExportHandler).]
+Customize the rows based on the record values by using the [CellsExportHandler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.TreeGridExcelExportOptions.html#Syncfusion_UI_Xaml_TreeGrid_Export_TreeGridExcelExportOptions_CellsExportHandler).
 
 {% tabs %}
 {% highlight c# %}
@@ -379,7 +379,7 @@ Here, the records having the `City` name as `US` are customized.
 
 ### Customize the cells based on column name
 
-Customize the cells based on the [TreeGridCellExcelExportOptions.ColumnName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.TreeGridCellExcelExportOptions.html#Syncfusion_UI_Xaml_TreeGrid_Export_TreeGridCellExcelExportOptions_ColumnName) property in the [CellsExportHandler(https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.TreeGridExcelExportOptions.html#Syncfusion_UI_Xaml_TreeGrid_Export_TreeGridExcelExportOptions_CellsExportHandler).]
+Customize the cells based on the [TreeGridCellExcelExportOptions.ColumnName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.TreeGridCellExcelExportOptions.html#Syncfusion_UI_Xaml_TreeGrid_Export_TreeGridCellExcelExportOptions_ColumnName) property in the [CellsExportHandler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.TreeGridExcelExportOptions.html#Syncfusion_UI_Xaml_TreeGrid_Export_TreeGridExcelExportOptions_CellsExportHandler).
 
 {% tabs %}
 {% highlight c# %}
@@ -477,7 +477,7 @@ Using the [TreeGridExcelExportOptions.CellsExportHandler](https://help.syncfusi
 
 Perform cell-level customization such as row-level styling and formatting particular columns in the exported worksheet. 
 
-In the following code sample, the NumberFormat for the `Salary` column is changed in the exported sheet after exporting without using the [CellsExportHandler(https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.TreeGridExcelExportOptions.html#Syncfusion_UI_Xaml_TreeGrid_Export_TreeGridExcelExportOptions_CellsExportHandler).] 
+In the following code sample, the NumberFormat for the `Salary` column is changed in the exported sheet after exporting without using the [CellsExportHandler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.TreeGridExcelExportOptions.html#Syncfusion_UI_Xaml_TreeGrid_Export_TreeGridExcelExportOptions_CellsExportHandler). 
 
 Reference:
 [CellRange Formatting](http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)
