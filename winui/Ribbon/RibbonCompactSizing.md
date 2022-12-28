@@ -17,7 +17,7 @@ The Compact sizing feature in the Ribbon control allows you to display the ribbo
 
 ## Applying compact sizing for Ribbon control
 
-Compact sizing is implemented through a unique resource dictionary that can be specified in your application at either the page level or a specific layout. The resource dictionary is available in the WinUI Nuget package.
+Compact sizing is implemented by a unique resource dictionary that can be specified in your application at either the page level or a specific layout. The resource dictionary is available in the WinUI NuGet package.
 
 The following examples show how the Compact style can be applied for the window and an individual Grid control.
 
@@ -51,7 +51,7 @@ The following examples show how the Compact style can be applied for the window 
 
 ## Compact Sizing applied areas in Ribbon control
 
-When Compact styling is applied, elements such as buttons and other controls may be displayed at a smaller size, and layout elements such as height, width and spacing  may be rearranged to take up less space.
+When Compact styling is applied, elements such as buttons and other controls can be displayed at a smaller size, and layout elements such as height, width, and spacing can be rearranged to take up less space.
 
 * RibbonButton.
 * RibbonDropDownButton.
