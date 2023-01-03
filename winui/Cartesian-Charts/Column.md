@@ -19,7 +19,7 @@ documentation: ug
 
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis />
-    </chart:SfCartesianChart.XAxes
+    </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
@@ -81,7 +81,7 @@ The [SegmentSpacing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
                             XBindingPath="XValue" 
                             YBindingPath="YValue" 
-	                        SegmentSpacing="0.5"/>
+                            SegmentSpacing="0.5"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
