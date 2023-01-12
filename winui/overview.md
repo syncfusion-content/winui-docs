@@ -133,7 +133,7 @@ The Syncfusion WinUI Controls are the suite, ever needed to create state of art 
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/winui/masked-textbox/getting-started">Masked TextBox</a><br/>
+			<a href="https://help.syncfusion.com/winui/masked-textbox/getting-started">MaskedTextBox</a><br/>
 		</td>
 	</tr>
 	<tr>
