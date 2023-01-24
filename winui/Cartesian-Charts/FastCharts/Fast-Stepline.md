@@ -9,7 +9,7 @@ documentation: ug
 
 # Fast Step Line Chart in WinUI (SfCartesianChart)
 
-A fast step line bitmap series is a special kind of series that can render a large collection of data points using `WriteableBitmap.` The [FastStepLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html) is the high performance version of step line series.
+A fast step line bitmap series is a special kind of series that can render a large collection of data points using `WriteableBitmap.` The [FastStepLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html) is the high-performance version of step line series.
 
 {% tabs %}
 
