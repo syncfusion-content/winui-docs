@@ -9,7 +9,7 @@ documentation: ug
 
 # Scatter Chart in WinUI Charts (SfCartesianChart)
 
-The [WinUI Scatter Chart](https://www.syncfusion.com/winui-controls/charts/winui-scatter-chart) is similar to bubble chart, where each data point being represented by a circle with equal size.
+The [WinUI Scatter Chart](https://www.syncfusion.com/winui-controls/charts/winui-scatter-chart) is similar to bubble chart, where each data point is represented by a circle with equal size.
 
 ## Scatter Chart
 
@@ -67,4 +67,4 @@ this.Content = chart;
 
 ![Scatter chart type in WinUI Chart](Chart-types_images/WinUI_scatter_chart.png)
 
-N> You can also explore our [WinUI Scatter Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Basic%20Charts/ScatterChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can also explore our [WinUI Scatter Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Basic%20Charts/ScatterChart.xaml), which demonstrates how to configure with built-in support for creating stunning visual effects.

@@ -61,7 +61,7 @@ this.Content = chart;
 
 ## Segment spacing
 
-The [SegmentSpacing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SegmentSpacing) property is used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively.
+The [SegmentSpacing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SegmentSpacing) property can be used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1, where 1 corresponds to 100% of the available space, and 0 corresponds to 0% of the available space
 
 {% tabs %}
 
@@ -113,4 +113,4 @@ this.Content = chart;
 
 ![Column segment spacing in WinUI Chart](Chart-Types_images/WinUI_column_chart_segment_spacing.png)
 
-N> You can also explore our [WinUI Column Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Basic%20Charts/ColumnChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can also explore our [WinUI Column Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Basic%20Charts/ColumnChart.xaml), which demonstrates how to configure with built-in support for creating stunning visual effects.
