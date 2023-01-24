@@ -228,7 +228,7 @@ chart.YAxes.Add(new NumericalAxis());
 
 ## DateTime Axis
 
-[DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is used to plot `DateTime` values, it is commony used to make financial charts such as in the Stock Market, where index plotting is done on a daily basis.
+[DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is used to plot `DateTime` values, it is commonly used to make financial charts such as in the Stock Market, where index plotting is done on a daily basis.
 
 {% tabs %}
 
