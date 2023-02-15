@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Line Chart in WinUI Chart control | Syncfusion
-description: Learn here all about the line chart and its type in Syncfusion WinUI Chart (SfCartesianChart) control. 
+description: Learn here all about the line chart and its type in the Syncfusion WinUI Chart (SfCartesianChart) control. 
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -149,7 +149,7 @@ this.Content = chart;
 
 ## Step Line Chart 
 
-The [StepLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StepLineSeries.html) plots horizontal and vertical lines to connect the data points resulting in a step-like progression.
+The [StepLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StepLineSeries.html) plots horizontal and vertical lines to connect the data points, resulting in a step-like progression.
 
 {% tabs %}
 
@@ -206,7 +206,7 @@ this.Content = chart;
 
 ![Step line Chart in WinUI](Chart-types_images/WinUI_step_line_chart.png)
 
-N> You can refer to our [WinUI Step Line Chart](https://www.syncfusion.com/winui-controls/charts/winui-step-line-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Step Line Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Basic%20Charts/StepLineChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can refer to our [WinUI Step Line Chart](https://www.syncfusion.com/winui-controls/charts/winui-step-line-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Step Line Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Basic%20Charts/StepLineChart.xaml), which demonstrates how to configure with built-in support for creating stunning visual effects.
 
 ## Spline Chart 
 
@@ -334,4 +334,4 @@ this.Content = chart;
 
 ![Spline types chart in WinUI Chart](Chart-types_images/WinUI_spline_types_chart.png)
 
-N> You can refer to our [WinUI Spline Chart](https://www.syncfusion.com/winui-controls/charts/winui-spline-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Spline Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Basic%20Charts/SplineChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can refer to our [WinUI Spline Chart](https://www.syncfusion.com/winui-controls/charts/winui-spline-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Spline Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Basic%20Charts/SplineChart.xaml), which demonstrates how to configure with built-in support for creating stunning visual effects.

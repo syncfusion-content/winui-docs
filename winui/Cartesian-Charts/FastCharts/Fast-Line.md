@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fast Line chart in WinUI Chart control | Syncfusion
-description: Learn here all about Fast Line Series feature of Syncfusion WinUI Chart control(SfCartesianChart) and more.
+description: Learn here all about Fast Line Series feature of the Syncfusion WinUI Chart control(SfCartesianChart) and more.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Fast Line Chart
 
-The [FastLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineSeries.html) is a special kind of line series that can render a collection with huge number of datapoints using the polyline segment. 
+The [FastLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineSeries.html) is a special kind of line series that can render a large collection of data points using the polyline segment. 
 
 {% tabs %}
 
@@ -61,7 +61,7 @@ chart.Series.Add(series);
 
 ## Fast Line Bitmap Chart
 
-The [FastLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html) displays a series of line segments, rendered using `WriteableBitmap`. The advantage of [FastLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html) is, it renders a million data point in a fraction of seconds.
+The [FastLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html) displays a series of line segments rendered using `WriteableBitmap.` The advantage of [FastLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html) is that it renders a million data points in a fraction of seconds.
 
 {% tabs %}
 

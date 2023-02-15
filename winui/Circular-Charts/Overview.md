@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About WinUI Chart Charts | Syncfusion
-description: Learn here all about introduction of Syncfusion WinUI Chart(SfCircularChart) control with key features and more.
+title: About WinUI Charts | Syncfusion
+description: Learn here all about introduction of Syncfusion WinUI Chart (SfCircularChart) control with key features and more.
 platform: WinUI
 control: SfCircularChart
 documentation: ug
