@@ -193,7 +193,7 @@ The vertical alignment of the Barcode text can be changed using the [VerticalTex
 The Barcode can be customized using the following properties:
 
 ### Background
-The Barcode background can be changed using the [Background](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.background?view=netcore-3.1#System_Windows_Controls_Control_Background) property.
+The Barcode background can be changed using the [Background](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.background?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1#System_Windows_Controls_Control_Background#System_Windows_Controls_Control_Background) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -208,7 +208,7 @@ The Barcode background can be changed using the [Background](https://docs.micros
 {% endtabs %} 
 
 ### Foreground
-The Barcode foreground can be changed using the [Foreground](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netcore-3.1#System_Windows_Controls_Control_Foreground) property.
+The Barcode foreground can be changed using the [Foreground](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1#System_Windows_Controls_Control_Foreground#System_Windows_Controls_Control_Foreground) property.
 
 {% tabs %}
 {% highlight xaml %}
