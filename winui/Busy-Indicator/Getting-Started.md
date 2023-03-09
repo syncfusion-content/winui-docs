@@ -53,7 +53,7 @@ busyIndicator.IsActive = true;
 
 ## Setting Animation Type in BusyIndicator
 
-The BusyIndicator control provides 7 predefined animation types like `DottedCircularFluent`, `DottedCircle`, `DottedLinear`, and so on. Users can select any one of the animation types using the [AnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_AnimationType) property.
+The BusyIndicator control provides 8 predefined animation types like `DottedCircularFluent`, `DottedCircle`, `DottedLinear`, and so on. Users can select any one of the animation types using the [AnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_AnimationType) property.
 
 {% tabs %}
 {% highlight xaml %}
