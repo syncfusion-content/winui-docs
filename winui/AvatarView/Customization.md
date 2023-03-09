@@ -6,5 +6,5 @@ platform: WinUI
 control: AvatarView
 documentation: ug
 ---
- 
+
 # Customization in SfAvatarView
