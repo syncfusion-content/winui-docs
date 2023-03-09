@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion Avatar View control for WinUI
+title: Overview of WinUI AvatarView control | Syncfusion
 description: Learn all about the introduction of Syncfusion WinUI AvatarView Control (SfAvatarView) with essential features and more here.
 platform: WinUI
 control: SfAvatarView

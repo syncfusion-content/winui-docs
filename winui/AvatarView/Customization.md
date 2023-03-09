@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization in Syncfusion AvatarView WinUI
+title: Customization in WinUI AvatarView control | Syncfusion
 description: Learn all about the customization features such as Height, Width, BorderBrush, Background, FontSize and CornerRadius in WinUI AvatarView control here.
 platform: WinUI
 control: AvatarView
