@@ -86,7 +86,7 @@ The following properties are used to customize and configure tooltip, which is a
 * `VerticalOffset` - Used to position the tooltip at a distance from the data point or cursor position vertically.
 * `HorizontalAlignment` - Used to align the tooltip label at left, right, and center of the data point position or cursor position horizontally.
 * `VerticalAlignment` - Used to align the tooltip label at top, center, and bottom of the data point position or cursor position vertically.
-* `ShowDuration` - Used to set the amount of time that the tooltip remains visible in milliseconds.
+* `Duration` - Used to set the amount of time that the tooltip remains visible in milliseconds.
 * `InitialShowDelay` - Used to delay in milliseconds to show the tooltip once the user interacts with series.
 
 {% tabs %}
@@ -484,7 +484,7 @@ chart.Series.Add(series2);
 
 ### Tooltip duration
 
-The attached property [`ShowDuration`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetShowDuration_System_Windows_DependencyObject_System_Int32_) in [`ChartTooltip`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) sets the duration time for tooltip to be displayed in milliseconds.
+The attached property [`Duration`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetShowDuration_System_Windows_DependencyObject_System_Int32_) in [`ChartTooltip`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) sets the duration time for tooltip to be displayed in milliseconds.
 
 The following code example demonstrates the duration of the tooltip set as 5 seconds.
 
@@ -494,7 +494,7 @@ The following code example demonstrates the duration of the tooltip set as 5 sec
 
 <Chart:ColumnSeries ShowTooltip="True"  
 
-Chart:ChartTooltip.ShowDuration="5000"                                          
+Chart:ChartTooltip.Duration="5000"                                          
 
 ItemsSource="{Binding Demands}"                                     
 
