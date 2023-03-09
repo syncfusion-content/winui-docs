@@ -245,7 +245,7 @@ public class SocialMediaStyleSelector : StyleSelector
 
 ## Customize ComboBoxItem 
 
-The [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_ItemTemplate) property helps you to decorate drop-down items using the custom templates. The default value of `ItemTemplate` is `null`. The following example shows how to add image or custom control in drop-down items using templates.
+The [ItemTemplate](https://help.syncfusion.com/cr/winui#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_ItemTemplate/Syncfusion.UI.Xaml.Charts.html) property helps you to decorate drop-down items using the custom templates. The default value of `ItemTemplate` is `null`. The following example shows how to add image or custom control in drop-down items using templates.
 
 {% tabs %}
 {% highlight C# %}
@@ -819,7 +819,7 @@ public class CountryTemplateSelector : DataTemplateSelector
 
 ## How to change DropDown MaxHeight
 
-The maximum height of the drop-down can be changed by using the [MaxDropDownHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_MaxDropDownHeight) property of `ComboBox` control. The default value of `MaxDropDownHeight` property is `288`. 
+The maximum height of the drop-down can be changed by using the [MaxDropDownHeight](https://help.syncfusion.com/cr/winui#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_MaxDropDownHeight/Syncfusion.UI.Xaml.Charts.html) property of `ComboBox` control. The default value of `MaxDropDownHeight` property is `288`. 
 
  N> If the `MaxDropDownHeight` is too small compared to the populated items, scroll viewer will be automatically shown to navigate the hidden items.
 
