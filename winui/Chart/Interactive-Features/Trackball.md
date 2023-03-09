@@ -231,7 +231,7 @@ chart.Behaviors.Add(Trackball);
 
 The axis label will be viewed when the [`ShowTrackballLabel`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballInfo) property is set to true. If you want to collapse the visibility of axis label in Trackball, set `ShowTrackballLabel` as false.
 
-N> By default, the value of [`ShowTrackbalLabel`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballInfo) is false.
+N> By default, the value of [`ShowTrackballLabel`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballInfo) is false.
 
 **Alignment** **of** **Axis** **Label**
 
