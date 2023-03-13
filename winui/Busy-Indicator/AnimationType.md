@@ -17,7 +17,7 @@ The [AnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Noti
 <notification:SfBusyIndicator IsActive="True"
     AnimationType="DottedCircle"
     BusyContent="Loading">
-</syncfusion:SfRating>
+</notification:SfBusyIndicator>
 
 {% endhighlight %}
 {% highlight C# %}
