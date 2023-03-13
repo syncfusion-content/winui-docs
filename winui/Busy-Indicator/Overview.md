@@ -15,7 +15,7 @@ The [Busy Indicator control](https://www.syncfusion.com/winui-controls/busy-indi
 
 ## Key features
 
-* `AnimationType`: Seven different animation types.
+* `AnimationType`: Eight different animation types.
 * `DurationFactor`: Customize the animation duration.
 * `SizeFactor`: Customize the size of the indicator.
 * `Color`: Customize the indicator color.
