@@ -350,3 +350,4 @@ public class ImageDataTemplateSelector : DataTemplateSelector
 {% endtabs %}
 
 ![Image template in WinUI Rating control](Rating_images/winui_rating_emoji.png)
+
