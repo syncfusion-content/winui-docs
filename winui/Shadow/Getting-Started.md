@@ -61,7 +61,7 @@ shadow.Content = button;
 
 ## Applying shadow effect for image
 
-You can apply the shadow effects for any types of [Image](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.image) with the help of [SfShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html) control.
+You can apply the shadow effects for any types of [Image](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.image?view=windows-app-sdk-1.2) with the help of [SfShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html) control.
 
 {% tabs %}
 {% highlight XAML %}
@@ -90,7 +90,7 @@ shadow.Content = image;
 
 ## Applying shadow effect for shape 
 
-You can apply the shadow effects for any types of [Shape](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.shape) and [Path](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.path) with the help of [SfShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html) control.
+You can apply the shadow effects for any types of [Shape](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.shape?view=windows-app-sdk-1.2) and [Path](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.path?view=windows-app-sdk-1.2) with the help of [SfShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html) control.
 
 {% tabs %}
 {% highlight XAML %}
