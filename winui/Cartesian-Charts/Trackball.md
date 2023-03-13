@@ -42,7 +42,7 @@ chart.TrackballBehavior = behavior;
 
 ![Trackball support in WinUI chart](Trackball_images/WinUI_chart_trackball.png)
 
-To view the trackball label in the particular axis, you have to enable the [ShowTrackballInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballInfo) property in that axis as in the following code snippet.
+To view the trackball label in the particular axis, you have to enable the [ShowTrackballLabel]() property in that axis as in the following code snippet.
 
 {% tabs %}
 
@@ -50,7 +50,7 @@ To view the trackball label in the particular axis, you have to enable the [Show
 
 <chart:SfCartesianChart>
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis ShowTrackballInfo="True"/>
+        <chart:CategoryAxis ShowTrackballLabel="True"/>
     </chart:SfCartesianChart.XAxes>
     . . .
     <chart:SfCartesianChart.TrackballBehavior>
@@ -68,7 +68,7 @@ chart.TrackballBehavior = behavior;
 
 CategoryAxis primaryAxis = new CategoryAxis()
 {
-    ShowTrackballInfo = true
+    ShowTrackballLabel = true
 };
 chart.XAxes.Add(primaryAxis);
 ...
@@ -211,7 +211,7 @@ chart.TrackballBehavior = Trackball;
 
 ## Axis Label
 
-The axis label will be viewed when the [ShowTrackballInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballInfo) property is set to true. The default value of [ShowTrackballInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballInfo) is `false`.
+The axis label will be viewed when the [ShowTrackballLabel]() property is set to true. The default value of [ShowTrackballLabel]() is `false`.
 
 {% tabs %}
 
@@ -219,7 +219,7 @@ The axis label will be viewed when the [ShowTrackballInfo](https://help.syncfusi
 
 <chart:SfCartesianChart>
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis ShowTrackballInfo="True"/>
+        <chart:CategoryAxis ShowTrackballLabel="True"/>
     </chart:SfCartesianChart.XAxes>
     . . .
     <chart:SfCartesianChart.TrackballBehavior>
@@ -236,7 +236,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 CategoryAxis primaryAxis = new CategoryAxis()
 {
-    ShowTrackballInfo = true
+    ShowTrackballLabel = true
 };
 chart.XAxes.Add(primaryAxis);
 ...
@@ -285,7 +285,7 @@ The appearance of the axis label can be customized by using the [TrackballLabelT
     </chart:SfCartesianChart.Resources>
 
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis ShowTrackballInfo="True" 
+        <chart:CategoryAxis ShowTrackballLabel="True" 
                             TrackballLabelTemplate="{StaticResource labelTemplate}"/>
     </chart:SfCartesianChart.XAxes>
 . . .
@@ -299,7 +299,7 @@ SfCartesianChart chart = new SfCartesianChart();
 
 NumericalAxis primaryAxis = new NumericalAxis()
 {
-    ShowTrackballInfo = true,
+    ShowTrackballLabel = true,
     TrackballLabelTemplate = chart.Resources["labelTemplate"] as DataTemplate
 };
 chart.XAxes.Add(primaryAxis);
@@ -314,9 +314,9 @@ chart.XAxes.Add(primaryAxis);
 
 When the mouse hovered in the chart area, you can view the label displayed over the series in addition the axis label.
 
-**ShowTrackballInfo**
+**ShowTrackballLabel**
 
-The [ShowTrackballInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_ShowTrackballInfo) property is used to enable or disable the label for corresponding series. By default, [ShowTrackballInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_ShowTrackballInfo) property is `true`.
+The [ShowTrackballLabel]() property is used to enable or disable the label for corresponding series. By default, [ShowTrackballLabel]() property is `true`.
 
 {% tabs %}
 
@@ -330,7 +330,7 @@ The [ShowTrackballInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
         <chart:SplineSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand" 
                             YBindingPath="Year2011" 
-                            ShowTrackballInfo="False"/>
+                            ShowTrackballLabel="False"/>
         <chart:SplineSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand" 
                             YBindingPath="Year2012">
@@ -348,7 +348,7 @@ SplineSeries series1 = new SplineSeries();
 chart.Series.Add(series1);
 SplineSeries series2 = new SplineSeries()
 {
-    ShowTrackballInfo = false
+    ShowTrackballLabel = false
 };
 chart.Series.Add(series2);
 SplineSeries series3 = new SplineSeries();

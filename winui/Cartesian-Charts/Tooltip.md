@@ -448,7 +448,7 @@ this.Content = chart;
 
 ## Duration
 
-The [ShowDuration](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_ShowDuration) property is used to specify the duration time in milliseconds for which tooltip will be displayed.
+The [ShowDuration]() property is used to specify the duration time in milliseconds for which tooltip will be displayed.
 
 N> By default, the tooltip will be displayed for 1000 milliseconds.
 
