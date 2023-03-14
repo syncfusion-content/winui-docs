@@ -34,7 +34,11 @@ This section explains the steps required to add the WinUI AvatarView control and
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
-      <syncfusion:SfAvatarView AvatarSize="ExtraLarge"/>
+      <syncfusion:SfAvatarView ContentType="CustomImage"
+                               AvatarSize="ExtraLarge"
+                               ImageSource="ellanaa.png"
+                               BorderBrush="Black">
+      </syncfusion:SfAvatarView>
     </Grid>
 </Page>
 
@@ -43,7 +47,10 @@ This section explains the steps required to add the WinUI AvatarView control and
 
 // Creating an instance of the AvatarView control.
 SfAvatarView avatarView = new SfAvatarView();
+avatarView.ContentType = AvatarContentType.CustomImage;
 avatarView.AvatarSize = AvatarSize.ExtraLarge;
+avatarView.ImageSource = new BitmapImage(new Uri("ms-appx:///ellanaa.png"));
+avatarView.BorderBrush = new SolidColorBrush(Colors.Black);
 
 //Setting page content.
 page.Content = avatarView;
