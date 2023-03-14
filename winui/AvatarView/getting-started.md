@@ -38,7 +38,7 @@ This section explains the steps required to add the WinUI AvatarView control and
     </Grid>
 </Page>
 
-{% endhighlight %}
+{% endhighlight %} 
 {% highlight C# %}
 
 // Creating an instance of the AvatarView control.
