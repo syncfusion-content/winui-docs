@@ -158,7 +158,7 @@ chart.Series.Add(series);
 
 ## FastScatterBitmap Chart
 
-[`FastScatterBitmapSeries`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html) is used to render a large number of scatter points. The [`ScatterHeight`]() and [`ScatterWidth`]() are also available as in [`ScatterSeries`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ScatterSeries.html). [`Type`]() is used to change the rendering shape of a fast scatter bitmap series. The available shapes are [`Cross`](), [`Diamond`](), [`Ellipse`](), [`Hexagon`](), [`InvertedTriangle`](), [`Pentagon`](), [`Plus`](), [`Rectangle`](), and [`Triangle`]().
+[`FastScatterBitmapSeries`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html) is used to render a large number of scatter points. The [`ScatterHeight`]() and [`ScatterWidth`]() are also available as in [`ScatterSeries`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ScatterSeries.html). [`ShapeType`]() is used to change the rendering shape of a fast scatter bitmap series. The available shapes are [`Cross`](), [`Diamond`](), [`Ellipse`](), [`Hexagon`](), [`InvertedTriangle`](), [`Pentagon`](), [`Plus`](), [`Rectangle`](), and [`Triangle`]().
 
 {% tabs %}
 
