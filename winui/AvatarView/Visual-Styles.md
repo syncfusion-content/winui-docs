@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Visual Style in WinUI AvatarView control | Syncfusion
-description: This section will explain about the different types of visual style that exists in WinUI SfAvatarView.
+title: Visual Styles in WinUI Avatar View control | Syncfusion
+description: This section will explain about the different types of visual styles that exists in WinUI Avatar View.
 platform: WinUI
-control: AvatarView
+control: Avatar View
 documentation: ug
 ---
 
-# Visual Style in WinUI Avatar View(SfAvatarView)
+# Visual Styles in WinUI Avatar View
