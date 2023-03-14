@@ -49,7 +49,7 @@ To view the Trackball in the particular axis, enable the `ShowTrackballInfo` pro
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:CategoryAxis  ShowTrackballLabel="True" />
+<syncfusion:CategoryAxis  ShowTrackballInfo="True" />
 
 </syncfusion:SfChart.PrimaryAxis>
 
@@ -482,7 +482,7 @@ By default, the Trackball series label will be displayed only for the nearest po
 ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 {
 
-    LabelDisplayMode = TrackBallLabelDisplayMode.FloatAllPoints
+    LabelDisplayMode = TrackballLabelDisplayMode.FloatAllPoints
 
 };
 
@@ -516,7 +516,7 @@ chart.Behaviors.Add(behavior);
 ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 {
 
-    LabelDisplayMode = TrackBallLabelDisplayMode.NearestPoint
+    LabelDisplayMode = TrackballLabelDisplayMode.NearestPoint
 
 };
 
@@ -551,7 +551,7 @@ chart.Behaviors.Add(behavior);
 ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 {
 
-    LabelDisplayMode = TrackBallLabelDisplayMode.GroupAllPoints
+    LabelDisplayMode = TrackballLabelDisplayMode.GroupAllPoints
 
 };
 
