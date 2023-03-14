@@ -74,7 +74,7 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 * [VerticalAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_VerticalAlignment) - Used to align the tooltip label at the top, center, and bottom of the data point position or cursor position vertically.
 * [HorizontalOffset](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_HorizontalOffset) - Used to position the tooltip at a distance from the data point or cursor position horizontally.
 * [VerticalOffset](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_VerticalOffset) - Used to position the tooltip at a distance from the data point or cursor position vertically.
-* [ShowDuration](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_ShowDuration) - Used to set the amount of time that the tooltip remains visible in milliseconds.
+* [Duration]() - Used to set the amount of time that the tooltip remains visible in milliseconds.
 * [EnableAnimation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_EnableAnimation) - Used to enable the animation when showing the tooltip.
 * [InitialShowDelay](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_InitialShowDelay) - Used to delay the display of the tooltip in milliseconds after the user interacts with the series.
 
@@ -448,7 +448,7 @@ this.Content = chart;
 
 ## Duration
 
-The [ShowDuration](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_ShowDuration) property is used to specify the duration time in milliseconds for which tooltip will be displayed.
+The [Duration]() property is used to specify the duration time in milliseconds for which tooltip will be displayed.
 
 N> By default, the tooltip will be displayed for 1000 milliseconds.
 
@@ -459,7 +459,7 @@ N> By default, the tooltip will be displayed for 1000 milliseconds.
 <chart:SfCartesianChart Height="388"  Width="500">
 . . .
     <chart:SfCartesianChart.TooltipBehavior>
-        <chart:ChartTooltipBehavior ShowDuration="5000"/>
+        <chart:ChartTooltipBehavior Duration="5000"/>
     </chart:SfCartesianChart.TooltipBehavior>
 
     <chart:SfCartesianChart.Series>
@@ -483,7 +483,7 @@ N> By default, the tooltip will be displayed for 1000 milliseconds.
 SfCartesianChart chart = new SfCartesianChart();
 . . .
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
-tooltipBehavior.ShowDuration = 5000;
+tooltipBehavior.Duration = 5000;
 chart.TooltipBehavior = tooltipBehavior;
 
 ColumnSeries series1 = new ColumnSeries()

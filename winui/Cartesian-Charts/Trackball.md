@@ -42,7 +42,7 @@ chart.TrackballBehavior = behavior;
 
 ![Trackball support in WinUI chart](Trackball_images/WinUI_chart_trackball.png)
 
-To view the trackball label in the particular axis, you have to enable the [ShowTrackballInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballInfo) property in that axis as in the following code snippet.
+To view the trackball label in the particular axis, you have to enable the [ShowTrackballLabel]() property in that axis as in the following code snippet.
 
 {% tabs %}
 
@@ -50,7 +50,7 @@ To view the trackball label in the particular axis, you have to enable the [Show
 
 <chart:SfCartesianChart>
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis ShowTrackballInfo="True"/>
+        <chart:CategoryAxis ShowTrackballLabel="True"/>
     </chart:SfCartesianChart.XAxes>
     . . .
     <chart:SfCartesianChart.TrackballBehavior>
@@ -68,7 +68,7 @@ chart.TrackballBehavior = behavior;
 
 CategoryAxis primaryAxis = new CategoryAxis()
 {
-    ShowTrackballInfo = true
+    ShowTrackballLabel = true
 };
 chart.XAxes.Add(primaryAxis);
 ...
@@ -211,7 +211,7 @@ chart.TrackballBehavior = Trackball;
 
 ## Axis Label
 
-The axis label will be viewed when the [ShowTrackballInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballInfo) property is set to true. The default value of [ShowTrackballInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballInfo) is `false`.
+The axis label will be viewed when the [ShowTrackballLabel]() property is set to true. The default value of [ShowTrackballLabel]() is `false`.
 
 {% tabs %}
 
@@ -219,7 +219,7 @@ The axis label will be viewed when the [ShowTrackballInfo](https://help.syncfusi
 
 <chart:SfCartesianChart>
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis ShowTrackballInfo="True"/>
+        <chart:CategoryAxis ShowTrackballLabel="True"/>
     </chart:SfCartesianChart.XAxes>
     . . .
     <chart:SfCartesianChart.TrackballBehavior>
@@ -236,7 +236,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 CategoryAxis primaryAxis = new CategoryAxis()
 {
-    ShowTrackballInfo = true
+    ShowTrackballLabel = true
 };
 chart.XAxes.Add(primaryAxis);
 ...
@@ -285,7 +285,7 @@ The appearance of the axis label can be customized by using the [TrackballLabelT
     </chart:SfCartesianChart.Resources>
 
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis ShowTrackballInfo="True" 
+        <chart:CategoryAxis ShowTrackballLabel="True" 
                             TrackballLabelTemplate="{StaticResource labelTemplate}"/>
     </chart:SfCartesianChart.XAxes>
 . . .
@@ -299,7 +299,7 @@ SfCartesianChart chart = new SfCartesianChart();
 
 NumericalAxis primaryAxis = new NumericalAxis()
 {
-    ShowTrackballInfo = true,
+    ShowTrackballLabel = true,
     TrackballLabelTemplate = chart.Resources["labelTemplate"] as DataTemplate
 };
 chart.XAxes.Add(primaryAxis);
@@ -314,9 +314,9 @@ chart.XAxes.Add(primaryAxis);
 
 When the mouse hovered in the chart area, you can view the label displayed over the series in addition the axis label.
 
-**ShowTrackballInfo**
+**ShowTrackballLabel**
 
-The [ShowTrackballInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_ShowTrackballInfo) property is used to enable or disable the label for corresponding series. By default, [ShowTrackballInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_ShowTrackballInfo) property is `true`.
+The [ShowTrackballLabel]() property is used to enable or disable the label for corresponding series. By default, [ShowTrackballLabel]() property is `true`.
 
 {% tabs %}
 
@@ -330,7 +330,7 @@ The [ShowTrackballInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
         <chart:SplineSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand" 
                             YBindingPath="Year2011" 
-                            ShowTrackballInfo="False"/>
+                            ShowTrackballLabel="False"/>
         <chart:SplineSeries ItemsSource="{Binding Data}" 
                             XBindingPath="Demand" 
                             YBindingPath="Year2012">
@@ -348,7 +348,7 @@ SplineSeries series1 = new SplineSeries();
 chart.Series.Add(series1);
 SplineSeries series2 = new SplineSeries()
 {
-    ShowTrackballInfo = false
+    ShowTrackballLabel = false
 };
 chart.Series.Add(series2);
 SplineSeries series3 = new SplineSeries();
@@ -398,9 +398,9 @@ chart.TrackballBehavior = behavior;
 
 ![Alignment support for Trackball series label in WinUI Chart](Trackball_images/WinUI_chart_trackball_label_alignment.png)
 
-## Label Display Mode
+## Display Mode
 
-When there is a multiple series, the trackball series label will be displayed only for the nearest point. If you want to display all the y values with respect to the x value then the [LabelDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_LabelDisplayMode) property is set to [FloatAllPoints](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.TrackballLabelDisplayMode.html#Syncfusion_UI_Xaml_Charts_TrackballLabelDisplayMode_FloatAllPoints).
+When there is a multiple series, the trackball series label will be displayed only for the nearest point. If you want to display all the y values with respect to the x value then the [DisplayMode]() property is set to [FloatAllPoints](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.TrackballLabelDisplayMode.html#Syncfusion_UI_Xaml_Charts_TrackballLabelDisplayMode_FloatAllPoints).
 
 **FloatAllPoints**
 
@@ -410,7 +410,7 @@ When there is a multiple series, the trackball series label will be displayed on
 
 <chart:SfCartesianChart>
     <chart:SfCartesianChart.TrackballBehavior>
-        <chart:ChartTrackballBehavior LabelDisplayMode="FloatAllPoints"/>
+        <chart:ChartTrackballBehavior DisplayMode="FloatAllPoints"/>
     </chart:SfCartesianChart.TrackballBehavior>
     ...
 </chart:SfCartesianChart>
@@ -423,7 +423,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 {
-    LabelDisplayMode = TrackballLabelDisplayMode.FloatAllPoints
+    DisplayMode = LabelDisplayMode.FloatAllPoints
 };
 
 chart.TrackballBehavior = behavior;
@@ -433,7 +433,7 @@ chart.TrackballBehavior = behavior;
 
 {% endtabs %}
 
-![LabelDisplayMode support for Trackball in WinUI Chart](Trackball_images/WinUI_chart_trackball_float_all_points.png)
+![DisplayMode support for Trackball in WinUI Chart](Trackball_images/WinUI_chart_trackball_float_all_points.png)
 
 **NearestPoint**
 
@@ -443,7 +443,7 @@ chart.TrackballBehavior = behavior;
 
 <chart:SfCartesianChart>
     <chart:SfCartesianChart.TrackballBehavior>
-        <chart:ChartTrackballBehavior LabelDisplayMode="NearestPoint"/>
+        <chart:ChartTrackballBehavior DisplayMode="NearestPoint"/>
     </chart:SfCartesianChart.TrackballBehavior>
 </chart:SfCartesianChart>
 
@@ -455,7 +455,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 {
-    LabelDisplayMode = TrackballLabelDisplayMode.NearestPoint
+    DisplayMode = LabelDisplayMode.NearestPoint
 };
 
 chart.TrackballBehavior = behavior;
@@ -465,11 +465,11 @@ chart.TrackballBehavior = behavior;
 
 {% endtabs %}
 
-![LabelDisplayMode support for Trackball in WinUI Chart](Trackball_images/WinUI_chart_trackball_nearest_point.png)
+![DisplayMode support for Trackball in WinUI Chart](Trackball_images/WinUI_chart_trackball_nearest_point.png)
 
 **GroupAllPoints**
 
-[ChartTrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html) supports to group the multiple trackball points, and allows to display the trackball points in a single trackball label. It can be achieved by setting the [LabelDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_LabelDisplayMode)) property of [ChartTrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html) as [GroupAllPoints](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.TrackballLabelDisplayMode.html#Syncfusion_UI_Xaml_Charts_TrackballLabelDisplayMode_GroupAllPoints).
+[ChartTrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html) supports to group the multiple trackball points, and allows to display the trackball points in a single trackball label. It can be achieved by setting the [DisplayMode]()) property of [ChartTrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html) as [GroupAllPoints](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.TrackballLabelDisplayMode.html#Syncfusion_UI_Xaml_Charts_TrackballLabelDisplayMode_GroupAllPoints).
 
 {% tabs %}
 
@@ -477,7 +477,7 @@ chart.TrackballBehavior = behavior;
 
 <chart:SfCartesianChart>
     <chart:SfCartesianChart.TrackballBehavior>
-        <chart:ChartTrackballBehavior LabelDisplayMode="GroupAllPoints"/>
+        <chart:ChartTrackballBehavior DisplayMode="GroupAllPoints"/>
     </chart:SfCartesianChart.TrackballBehavior>
     ...
 </chart:SfCartesianChart>
@@ -490,7 +490,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 {
-    LabelDisplayMode = TrackballLabelDisplayMode.GroupAllPoints
+    DisplayMode = LabelDisplayMode.GroupAllPoints
 };
 
 chart.TrackballBehavior = behavior;
@@ -500,9 +500,9 @@ chart.TrackballBehavior = behavior;
 
 {% endtabs %}
 
-The following screenshot illustrates the trackball label for multiple series, when the [LabelDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_LabelDisplayMode) property value is `GroupAllPoints`.
+The following screenshot illustrates the trackball label for multiple series, when the [DisplayMode]() property value is `GroupAllPoints`.
 
-![LabelDisplayMode support for Trackball in WinUI Chart](Trackball_images/WinUI_chart_trackball_group_all_points.png)
+![DisplayMode support for Trackball in WinUI Chart](Trackball_images/WinUI_chart_trackball_group_all_points.png)
 
 ## Template
 
