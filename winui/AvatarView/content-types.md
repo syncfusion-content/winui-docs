@@ -7,4 +7,4 @@ control: AvatarView
 documentation: ug
 ---
 
-# Content types in WinUI AvatarView
+# Content Types in WinUI AvatarView
