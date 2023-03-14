@@ -7,4 +7,4 @@ control: Avatar View
 documentation: ug
 ---
 
-# Customization in WinUI Avatar View
+# Customization in WinUI Avatar View 
