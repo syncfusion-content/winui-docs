@@ -7,7 +7,7 @@ control: SfRating
 documentation: ug
 ---
 
-# Clear Rating
+# Clear Rating in WinUI
 
 The Rating control provides value support to determine whether a user can remove their rating or not, by using the `IsClearEnabled` property.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Placeholder in WinUI Rating control | Syncfusion
+title: Placeholder value in WinUI Rating control | Syncfusion
 description: Learn all about the placeholder feature in the Rating control to show the average rating value before the user provide their own rating.
 platform: WinUI
 control: SfRating
