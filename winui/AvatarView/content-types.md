@@ -194,9 +194,9 @@ public class EmployeeViewModel
    public EmployeeViewModel()
    {
       CollectionImage = new ObservableCollection<Employee>();
-      CollectionImage.Add(new Employee { Name="Mike" , ImageSource = "mike.png",Colors=Colors.Gray });
-      CollectionImage.Add(new Employee { Name="Alex",ImageSource= "alex.png", Colors = Colors.Bisque });
-      CollectionImage.Add(new Employee { Name="Ellanaa", ImageSource= "ellanaa.png",Colors=Colors.LightCoral });
+      CollectionImage.Add(new Employee { Name="Mike" , ImageSource ="mike.png", Colors=Colors.Gray });
+      CollectionImage.Add(new Employee { Name="Alex",ImageSource="alex.png", Colors =Colors.Bisque });
+      CollectionImage.Add(new Employee { Name="Ellanaa", ImageSource="ellanaa.png", Colors=Colors.LightCoral });
    }
 
 }
@@ -306,8 +306,8 @@ public class EmployeeViewModel
    {
       CollectionImage = new ObservableCollection<Employee>();
       CollectionImage.Add(new Employee { ImageSource="mike.png" });
-      CollectionImage.Add(new Employee { Name= "alex", Colors=Colors.White });
-      CollectionImage.Add(new Employee { ImageSource= "ellanaa.png" });
+      CollectionImage.Add(new Employee { Name="alex", Colors=Colors.White });
+      CollectionImage.Add(new Employee { ImageSource="ellanaa.png" });
    }     
 }
 
