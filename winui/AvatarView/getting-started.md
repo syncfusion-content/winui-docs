@@ -58,36 +58,20 @@ page.Content = avatarView;
 {% tabs %}
 {% highlight xaml %}
 
-<Page
-    x:Class="GettingStarted.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:GettingStarted"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Core"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Grid>
-      <syncfusion:SfAvatarView ContentType="CustomImage"
-                               AvatarSize="ExtraLarge"
-                               ImageSource="ellanaa.png"
-                               BorderBrush="Black">
-      </syncfusion:SfAvatarView>
-    </Grid>
-</Page>
+<syncfusion:SfAvatarView ContentType="CustomImage"
+                          AvatarSize="ExtraLarge"
+                          ImageSource="ellanaa.png"
+                          BorderBrush="Black">
+</syncfusion:SfAvatarView>
 
 {% endhighlight %} 
 {% highlight C# %}
 
-// Creating an instance of the AvatarView control.
 SfAvatarView avatarView = new SfAvatarView();
 avatarView.ContentType = AvatarContentType.CustomImage;
 avatarView.AvatarSize = AvatarSize.ExtraLarge;
 avatarView.ImageSource = new BitmapImage(new Uri("ms-appx:///ellanaa.png"));
 avatarView.BorderBrush = new SolidColorBrush(Colors.Black);
-
-//Setting page content.
 page.Content = avatarView;
            
 {% endhighlight %}
