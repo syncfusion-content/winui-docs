@@ -70,7 +70,7 @@ avatarView.BorderBrush = new SolidColorBrush(Colors.Black);
 {% endhighlight %}
 {% endtabs %}
 
-![SingleCharacter](AvatarView_images/winui_avatarview_contenttype_initials.png)
+![SingleCharacter](avatarview_images/winui_initials_avatarview.png)
 
 ### DoubleCharacter
 
@@ -101,7 +101,7 @@ avatarView.BorderBrush = new SolidColorBrush(Colors.Black);
 {% endhighlight %}
 {% endtabs %}
 
-![Double Character](AvatarView_images/winui_avatarview_contenttype_doubleinitials.png)
+![Double Character](avatarview_images/winui_doubleinitials_avatarview.png)
 
 ## Custom image
 
@@ -132,7 +132,7 @@ avatarView.BorderBrush = new SolidColorBrush(Colors.Black);
 {% endhighlight %}
 {% endtabs %}
 
-![AvatarCharacter](AvatarView_images/winui_avatarview_contenttype_avatarcharacter.png)
+![AvatarCharacter](avatarview_images/winui_avatarcharacter_avatarview.png)
 
 ## GroupView 
 
@@ -243,7 +243,7 @@ public partial class MainWindow : Window
 {% endhighlight %}
 {% endtabs %}
 
-![GroupViewImage](AvatarView_images/winui_imagegroupsource_avatarview.png)
+![GroupViewImage](avatarview_images/winui_imagegroupsource_avatarview.png)
 
 ## Add initials only in GroupView
 
@@ -291,7 +291,7 @@ public partial class MainWindow : Window
 {% endhighlight %}
 {% endtabs %}
 
-![GroupView in Initials Only](AvatarView_images/winui_initialgroupsource_avatarview.png)
+![GroupView in Initials Only](avatarview_images/winui_initialgroupsource_avatarview.png)
 
 ## Add both image and initials in a GroupView
 
@@ -315,5 +315,5 @@ public class EmployeeViewModel
 {% endtabs %}
 
 
-![GroupView for both image and initials](AvatarView_images/winui_groupsource_avatarview.png)
+![GroupView for both image and initials](avatarview_images/winui_groupsource_avatarview.png)
 
