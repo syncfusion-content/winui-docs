@@ -13,11 +13,11 @@ documentation: ug
 
 The `AvatarView` control allows you to display the view in five different ways:
 
-* `Default` - Displays the default avatar character when initializing without any other source such as image, initials or group.
+* `Default` - Displays the `Avatar1` character image when initializing without any other source such as image, initials or group.
 
 * `Initials` - Displays the initials in the view.
 
-* `AvatarCharacter` - Displays the avatar character image in the view.
+* `AvatarCharacter` - Displays the pre-defined avatar character image in the view.
 
 * `CustomImage` - Displays a custom image in the view.
 
@@ -25,7 +25,7 @@ The `AvatarView` control allows you to display the view in five different ways:
 
 ## Default
 
-Default content type is used for displaying the default avatar character when initializing without the initials, custom image, or group view types.Refer to the Getting Started Documentation in SfAvatarView.
+Default content type is used for displaying the `Avatar1` character image when initializing without the initials, custom image, or group view types. Refer to the Getting Started Documentation in SfAvatarView.
 
 ## Initials 
 
@@ -109,7 +109,7 @@ You can add a custom image by setting the `ImageSource` property. Refer to the G
 
 ## Avatar characters
 
-You can set the default images that already present in avatar view by setting the `AvatarCharacter` property.
+You can set the pre-defined images in avatar view by setting the `AvatarCharacter` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -183,12 +183,12 @@ public class Employee
 
 public class EmployeeViewModel
 {
-   private ObservableCollection<Employee> collectionimage;
+   private ObservableCollection<Employee> collectionImage;
 
    public ObservableCollection<Employee> CollectionImage
    {
-      get { return collectionimage; }
-      set { collectionimage = value; }
+      get { return collectionImage; }
+      set { collectionImage = value; }
    }
 
    public EmployeeViewModel()
