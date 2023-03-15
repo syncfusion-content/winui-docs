@@ -20,7 +20,7 @@ This section explains the steps required to add the WinUI AvatarView control wit
 
 ## Initialize AvatarView 
 
-By default, AvataView control is displayed with `Avatar1` character image with circle shape.
+By default, AvatarView control is displayed with `Avatar1` character image with circle shape.
 
 {% tabs %}
 {% highlight xaml %}
