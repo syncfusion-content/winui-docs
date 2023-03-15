@@ -30,4 +30,5 @@ rating.IsClearEnabled = true;
 
 {% endhighlight %}
 {% endtabs %}
+
 ![Clear rating value in WinUI Rating control](Rating_images/winui_rating_isclearenabled.gif)
