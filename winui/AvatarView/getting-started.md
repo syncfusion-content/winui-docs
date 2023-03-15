@@ -59,9 +59,9 @@ page.Content = avatarView;
 {% highlight xaml %}
 
 <syncfusion:SfAvatarView ContentType="CustomImage"
-                          AvatarSize="ExtraLarge"
-                          ImageSource="ellanaa.png"
-                          BorderBrush="Black">
+                         AvatarSize="ExtraLarge"
+                         ImageSource="ellanaa.png"
+                         BorderBrush="Black">
 </syncfusion:SfAvatarView>
 
 {% endhighlight %} 
