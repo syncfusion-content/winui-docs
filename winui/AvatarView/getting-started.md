@@ -20,7 +20,7 @@ This section explains the steps required to add the WinUI AvatarView control wit
 
 ## Initialize AvatarView 
 
-When AvatarView is initialized without the initials, custom image and group view, the default avatar character is displayed.
+Initializing AvatarView without the initials, custom image and group view, the default avatar character is displayed.
 
 {% tabs %}
 {% highlight xaml %}
