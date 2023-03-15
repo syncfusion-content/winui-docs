@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains the steps required to add the WinUI AvatarView control and covers only the basic features needed to get started with Syncfusion `AvatarView` control.
 
-## Creating an application with WinUI AvatarView control
+## Creating an application with WinUI AvatarView
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Add reference to [Syncfusion.Core.WinUI](https://www.nuget.org/packages/Syncfusion.Core.WinUI) NuGet. 
