@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WinUI AvatarView control | Syncfusion
-description: Learn all about getting started with the Syncfusion WinUI AvatarView (SfAvatarView) control, its elements, and more here.
+description: Learn here all about getting started with the Syncfusion WinUI AvatarView (SfAvatarView) control with its basic features.
 platform: WinUI
 control: AvatarView
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI AvatarView
 
-This section explains the steps required to add the WinUI AvatarView control and covers only the basic features needed to get started with Syncfusion `AvatarView` control.
+This section explains the steps required to add the WinUI AvatarView control with its basic features.
 
 ## Creating an application with WinUI AvatarView
 
@@ -19,6 +19,8 @@ This section explains the steps required to add the WinUI AvatarView control and
 4. Initialize the `SfAvatarView` control.
 
 ## Initialize AvatarView 
+
+When AvatarView is initialised without the initials, custom image and group view, the default avatar character is displayed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -34,7 +36,7 @@ This section explains the steps required to add the WinUI AvatarView control and
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
-      <syncfusion:SfAvatarView AvatarSize="ExtraLarge" />
+      <syncfusion:SfAvatarView />
     </Grid>
 </Page>
 
@@ -43,25 +45,22 @@ This section explains the steps required to add the WinUI AvatarView control and
 
 // Creating an instance of the AvatarView control.
 SfAvatarView avatarView = new SfAvatarView();
-avatarView.AvatarSize = AvatarSize.ExtraLarge;
-
-//Setting page content.
-page.Content = avatarView;
            
 {% endhighlight %}
 {% endtabs %}
 
-![AvatarView control](avatarview_images/winui_avatarview_initialise.png)
+![WinUI AvatarView control](avatarview_images/winui_avatarview.png)
 
 ## Initialize AvatarView with ImageSource
+
+You can add a custom image to display in WinUI AvatarView using the `ImageSource` property.
 
 {% tabs %}
 {% highlight xaml %}
 
 <syncfusion:SfAvatarView ContentType="CustomImage"
                          AvatarSize="ExtraLarge"
-                         ImageSource="ellanaa.png"
-                         BorderBrush="Black">
+                         ImageSource="Images\person.png">
 </syncfusion:SfAvatarView>
 
 {% endhighlight %} 
@@ -70,11 +69,9 @@ page.Content = avatarView;
 SfAvatarView avatarView = new SfAvatarView();
 avatarView.ContentType = AvatarContentType.CustomImage;
 avatarView.AvatarSize = AvatarSize.ExtraLarge;
-avatarView.ImageSource = new BitmapImage(new Uri("ms-appx:///ellanaa.png"));
-avatarView.BorderBrush = new SolidColorBrush(Colors.Black);
-page.Content = avatarView;
+avatarView.ImageSource = new BitmapImage(new Uri("ms-appx:///Images\\person.png"));
            
 {% endhighlight %}
 {% endtabs %}
 
-![AvatarView control with custom image](avatarview_images/winui_avatarview_initialiseimage.png)
+![WinUI AvatarView control with image](avatarview_images/winui_imagesource_avatarview.png)
