@@ -20,7 +20,7 @@ This section explains the steps required to add the WinUI AvatarView control wit
 
 ## Initialize AvatarView 
 
-Initializing AvatarView without the initials, custom image and group view, the default avatar character is displayed.
+By default, AvataView control is displayed with `Avatar1` character image with circle shape.
 
 {% tabs %}
 {% highlight xaml %}
@@ -53,7 +53,7 @@ SfAvatarView avatarView = new SfAvatarView();
 
 ## Initialize AvatarView with ImageSource
 
-You can add a custom image to display in WinUI AvatarView using the `ImageSource` property.
+You can add any custom image as an avatar in WinUI AvatarView control using the `ImageSource` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -74,4 +74,4 @@ avatarView.ImageSource = new BitmapImage(new Uri("ms-appx:///Images\\person.png"
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AvatarView control with image](avatarview_images/winui_imagesource_avatarview.png)
+![WinUI AvatarView control with custom image.](avatarview_images/winui_imagesource_avatarview.png)
