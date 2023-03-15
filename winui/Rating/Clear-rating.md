@@ -1,17 +1,17 @@
 ---
 layout: post
-title: ClearEnabled in WinUI Rating control | Syncfusion
+title: Clear rating value in WinUI Rating control | Syncfusion
 description: Learn all about how to enable the clear enable feature in the Rating control the user can remove their rating or not.
 platform: WinUI
 control: SfRating
 documentation: ug
 ---
 
-# Clear Rating in WinUI
+# Clear rating value in WinUI Rating
 
 The Rating control provides value support to determine whether a user can remove their rating or not, by using the `IsClearEnabled` property.
 
-`Note`- It supports Precision full value only.
+`Note`- It supports Precision `full` value only.
 
 {% tabs %}
 {% highlight XAML %}
@@ -30,4 +30,4 @@ rating.IsClearEnabled = true;
 
 {% endhighlight %}
 {% endtabs %}
-![IsClearEnabled customization in WinUI Rating control](Rating_images/winui_rating_isclearenabled.gif)
+![Clear rating value in WinUI Rating control](Rating_images/winui_rating_isclearenabled.gif)

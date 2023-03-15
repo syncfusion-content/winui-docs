@@ -14,7 +14,7 @@ The Rating control provides the average rating value before the user provide or 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfRating Value="3"
+<syncfusion:SfRating 
      ItemsCount="5" PlaceholderValue="2">
 </syncfusion:SfRating>
 
@@ -22,11 +22,10 @@ The Rating control provides the average rating value before the user provide or 
 {% highlight C# %}
 
 SfRating rating = new SfRating();
-rating.Value = 3;
 rating.ItemsCount = 5;
 rating.PlaceholderValue = 2;
 
 {% endhighlight %}
 {% endtabs %}
 
-![PlaceholderValue feature in WinUI Rating control](Rating_images/winui_rating_placeholdervalue.png)
+![Placeholder value feature in WinUI Rating control](Rating_images/winui_rating_placeholdervalue.png)
