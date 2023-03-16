@@ -137,6 +137,8 @@ You can add maximum three images or initials in the same view using a GroupView 
 `BackgroundColorMemberPath`: Sets the background color of the group view.
 `InitialsColorMemberPath`: Sets the color for the initials in the group view.
 
+The following code sample demonstrates how to add images using the GroupSource property.
+
 {% tabs %}
 {% highlight c# %}
 public class Employee
