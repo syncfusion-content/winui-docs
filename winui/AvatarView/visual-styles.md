@@ -9,8 +9,6 @@ documentation: ug
 
 # Visual Styles in WinUI AvatarView
 
-## Visual Styles in WinUI AvatarView
-
 The `AvatarView` control supports visual style customization using the following built-in visual styles:
 
 * Custom
@@ -34,7 +32,6 @@ You can directly set value to the circle in the `AvatarView` using the following
 The following code sample demonstrates how to define visual style of circle AvatarView.
 
 {% tabs %}
-
 {% highlight xaml %}
 
 <Page.Resources>
@@ -76,7 +73,6 @@ The following code sample demonstrates how to define visual style of circle Avat
 </Page.Content>
 
 {% endhighlight %}
-
 {% highlight c# %}
 
 StackPanel stack = new StackPanel();
@@ -211,10 +207,9 @@ Grid.SetColumn(XLargeCircleTextBlock, 4);
 stack.Children.Add(mainGrid);
 
 {% endhighlight %}
-
 {% endtabs %}
 
-![WinUI AvatarView control with circle visual style](avatarview_images/winui_avatarview_circle_visualstyle.png)
+![WinUI AvatarView control with circle visual style](avatarview_images/winui_circle_visualstyle_avatarview.png)
 
 ## Square
 
@@ -229,7 +224,6 @@ You can directly set value to the square in the `SfAvatarView` using the followi
 The following code sample demonstrates how to define visual style of square AvatarView.
 
 {% tabs %}
-
 {% highlight xaml %}
 
 <Page.Resources>
@@ -271,10 +265,9 @@ The following code sample demonstrates how to define visual style of square Avat
 </Page.Content>
 
 {% endhighlight %}
-
 {% highlight c# %}
 
- StackPanel stack = new StackPanel();
+StackPanel stack = new StackPanel();
 stack.Orientation = Orientation.Vertical;
 stack.HorizontalAlignment = HorizontalAlignment.Stretch;
 stack.VerticalAlignment = VerticalAlignment.Stretch;
@@ -408,4 +401,4 @@ stack.Children.Add(mainGrid);
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AvatarView control with square visual style](avatarview_images/winui_avatarview_square_visualstyle.png)
+![WinUI AvatarView control with square visual style](avatarview_images/winui_square_visualstyle_avatarview.png)
