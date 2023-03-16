@@ -41,11 +41,11 @@ The `InitialsType` contains the following two types:
 * SingleCharacter
 * DoubleCharacter
 
-You must set the `AvatarName` string property for displaying the initial value in the AvatarView.
+You must set the `AvatarName` string property for displaying the initials value in the AvatarView.
 
 #### SingleCharacter
 
-The `SingleCharacter` is used for displaying the first character in the string you have set in the `AvatarName` property.
+When using the `SingleCharacter` property in AvatarView, it will display the first character of the string set in the `AvatarName` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -68,11 +68,11 @@ avatarView.Background = new SolidColorBrush(Colors.Bisque);
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AvatarView control with initials](avatarview_images/winui_initials_avatarview.png)
+![WinUI AvatarView control with SingleCharacter](avatarview_images/winui_initials_avatarview.png)
 
 ### DoubleCharacter
 
-The `DoubleCharacter` is used for displaying a two-characters text you have set in the `AvatarName` property. If the initials contain one word, it shows the first and last letters of the single string. If it contains two or more words, it displays the first letter of the first string and first letter of the second string.
+When using the `DoubleCharacter property` in AvatarView, it will display a two-character text set in the `AvatarName` property. If the initials consist of a single word, it will show the first and last letters of that word. If the initials contain two or more words, it will display the first letter of the first word and the first letter of the second word.
 
 {% tabs %}
 {% highlight xaml %}
@@ -97,13 +97,13 @@ avatarView.Background = new SolidColorBrush(Colors.Bisque);
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AvatarView control with double initials](avatarview_images/winui_doubleinitials_avatarview.png)
+![WinUI AvatarView control with DoubleCharacter](avatarview_images/winui_doubleinitials_avatarview.png)
 
-## Custom image
+## CustomImage
 
 You can add a custom image by setting the `ImageSource` property. Refer to the Getting Started Documentation in SfAvatarView.
 
-## Avatar characters
+## AvatarCharacter
 
 You can set the pre-defined images in avatar view by setting the `AvatarCharacter` property.
 
@@ -141,6 +141,7 @@ The following code sample demonstrates how to add images using the GroupSource p
 
 {% tabs %}
 {% highlight c# %}
+
 public class Employee
 {
    private string name;
@@ -174,7 +175,6 @@ public class Employee
       get { return initialsColors; }
       set { initialsColors = value; }
    }
-
 }
 
 public class EmployeeViewModel
@@ -194,7 +194,6 @@ public class EmployeeViewModel
       CollectionImage.Add(new Employee { Name="Alex",ImageSource="alex.png", Colors=ColorHelper.FromArgb(0xFF, 0xD6, 0xE8, 0xD7), InitialsColors=ColorHelper.FromArgb(0xFF, 0x24, 0x4F, 0x23) });
       CollectionImage.Add(new Employee { Name="Ellanaa", ImageSource="ellanaa.png", Colors=ColorHelper.FromArgb(0xFF, 0xD6, 0xE3, 0xE8) ,InitialsColors=ColorHelper.FromArgb(0xFF, 0x1A, 0x5F, 0x6F) });
    }
-
 }
 
 {% endhighlight %}
@@ -238,7 +237,7 @@ public partial class MainWindow : Window
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AvatarView control with images groupview](avatarview_images/winui_imagegroupsource_avatarview.png)
+![WinUI AvatarView control with GroupView in only Images](avatarview_images/winui_imagegroupsource_avatarview.png)
 
 ## Add initials only in GroupView
 
@@ -284,7 +283,7 @@ public partial class MainWindow : Window
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AvatarView control with initials groupview](avatarview_images/winui_initialgroupsource_avatarview.png)
+![WinUI AvatarView control with GroupView in only Initials](avatarview_images/winui_initialsgroupsource_avatarview.png)
 
 ## Add both image and initials in a GroupView
 
@@ -308,5 +307,5 @@ public class EmployeeViewModel
 {% endtabs %}
 
 
-![WinUI AvatarView control with groupview](avatarview_images/winui_groupsource_avatarview.png)
+![WinUI AvatarView control with GroupView for both Initials and Images](avatarview_images/winui_groupsource_avatarview.png)
 
