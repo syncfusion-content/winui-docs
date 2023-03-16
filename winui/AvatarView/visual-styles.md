@@ -19,7 +19,7 @@ The `AvatarView` control supports visual style customization using the following
 
 ## Custom
 
-Custom type allows you to customize the control, where you can handle the size, font size, corner radius, etc. of the control.
+Custom type allows you to customize the control, where you can handle the size, font size, corner radius, etc. of the control. Refer to the Customization Documentation in SfAvatarView.
 
 ## Circle
 
@@ -214,7 +214,7 @@ stack.Children.Add(mainGrid);
 
 {% endtabs %}
 
-![WinUI AvatarView control with circle visual style](AvatarView_images/winui_avatarview_circle_visualstyle.png)
+![WinUI AvatarView control with circle visual style](avatarview_images/winui_avatarview_circle_visualstyle.png)
 
 ## Square
 
