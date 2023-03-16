@@ -198,8 +198,8 @@ public class EmployeeViewModel
       CollectionImage.Add(new Employee { Name="Alex",ImageSource="alex.png", Colors =Colors.Bisque });
       CollectionImage.Add(new Employee { Name="Ellanaa", ImageSource="ellanaa.png", Colors=Colors.LightCoral });
    }
-
 }
+
 {% endhighlight %}
 {% endtabs %}
 
