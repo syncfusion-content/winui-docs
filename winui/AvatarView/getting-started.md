@@ -74,4 +74,4 @@ avatarView.ImageSource = new BitmapImage(new Uri("ms-appx:///Images\\person.png"
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AvatarView control with custom image.](avatarview_images/winui_imagesource_avatarview.png)
+![WinUI AvatarView control with custom image](avatarview_images/winui_imagesource_avatarview.png)
