@@ -53,8 +53,7 @@ The `SingleCharacter` is used for displaying the first character in the string y
 <syncfusion:SfAvatarView ContentType="Initials"
                          AvatarSize="ExtraLarge"
                          AvatarName="Alex"
-                         Background="Bisque"
-                         BorderBrush="Black">
+                         Background="Bisque">
 </syncfusion:SfAvatarView>
 
 {% endhighlight %}
@@ -65,7 +64,6 @@ avatarView.AvatarName = "Alex";
 avatarView.ContentType = AvatarContentType.Initials;
 avatarView.AvatarSize = AvatarSize.ExtraLarge;
 avatarView.Background = new SolidColorBrush(Colors.Bisque);
-avatarView.BorderBrush = new SolidColorBrush(Colors.Black);
 
 {% endhighlight %}
 {% endtabs %}
@@ -83,8 +81,7 @@ The `DoubleCharacter` is used for displaying a two-characters text you have set 
                          AvatarSize="ExtraLarge"
                          AvatarName="Alex"
                          InitialsType="DoubleCharacter"
-                         Background="Bisque"
-                         BorderBrush="Black">
+                         Background="Bisque">
 </syncfusion:SfAvatarView>
 
 {% endhighlight %}
@@ -96,7 +93,6 @@ avatarView.ContentType = AvatarContentType.Initials;
 avatarView.AvatarSize = AvatarSize.ExtraLarge;
 avatarView.InitialsType = AvatarInitialsType.DoubleCharacter;
 avatarView.Background = new SolidColorBrush(Colors.Bisque);
-avatarView.BorderBrush = new SolidColorBrush(Colors.Black);
 
 {% endhighlight %}
 {% endtabs %}
@@ -116,8 +112,7 @@ You can set the pre-defined images in avatar view by setting the `AvatarCharacte
 
 <syncfusion:SfAvatarView ContentType="AvatarCharacter"
                          AvatarSize="ExtraLarge"
-                         AvatarCharacter="Avatar15"
-                         BorderBrush="Black">
+                         AvatarCharacter="Avatar15">
 </syncfusion:SfAvatarView>
 
 {% endhighlight %}
@@ -127,7 +122,6 @@ SfAvatarView avatarView = new SfAvatarView();
 avatarView.ContentType = AvatarContentType.AvatarCharacter;
 avatarView.AvatarSize = AvatarSize.ExtraLarge;
 avatarView.AvatarCharacter = AvatarCharacter.Avatar15;
-avatarView.BorderBrush = new SolidColorBrush(Colors.Black);
             
 {% endhighlight %}
 {% endtabs %}
@@ -142,8 +136,6 @@ You can add maximum three images or initials in the same view using a GroupView 
 `ImageSourceMemberPath`: Displays the images in the group view.
 `BackgroundColorMemberPath`: Sets the background color of the group view.
 `InitialsColorMemberPath`: Sets the color for the initials in the group view.
-
-The following code sample demonstrates how to add images using the GroupSource property.
 
 {% tabs %}
 {% highlight c# %}
@@ -180,6 +172,7 @@ public class Employee
       get { return initialsColors; }
       set { initialsColors = value; }
    }
+
 }
 
 public class EmployeeViewModel
@@ -195,10 +188,11 @@ public class EmployeeViewModel
    public EmployeeViewModel()
    {
       CollectionImage = new ObservableCollection<Employee>();
-      CollectionImage.Add(new Employee { Name="Mike" , ImageSource ="mike.png", Colors=Colors.Gray });
-      CollectionImage.Add(new Employee { Name="Alex",ImageSource="alex.png", Colors =Colors.Bisque });
-      CollectionImage.Add(new Employee { Name="Ellanaa", ImageSource="ellanaa.png", Colors=Colors.LightCoral });
+      CollectionImage.Add(new Employee { Name="Mike" , ImageSource="mike.png", Colors=ColorHelper.FromArgb(0xFF, 0xF2, 0xE9, 0xC8), InitialsColors=ColorHelper.FromArgb(0xFF, 0x69, 0x53, 0x1C) });
+      CollectionImage.Add(new Employee { Name="Alex",ImageSource="alex.png", Colors=ColorHelper.FromArgb(0xFF, 0xD6, 0xE8, 0xD7), InitialsColors=ColorHelper.FromArgb(0xFF, 0x24, 0x4F, 0x23) });
+      CollectionImage.Add(new Employee { Name="Ellanaa", ImageSource="ellanaa.png", Colors=ColorHelper.FromArgb(0xFF, 0xD6, 0xE3, 0xE8) ,InitialsColors=ColorHelper.FromArgb(0xFF, 0x1A, 0x5F, 0x6F) });
    }
+
 }
 
 {% endhighlight %}
@@ -216,8 +210,7 @@ public class EmployeeViewModel
                          InitialsMemberPath="Name"
                          BackgroundColorMemberPath="Colors"
                          ImageSourceMemberPath="ImageSource"
-                         AvatarSize="ExtraLarge"
-                         BorderBrush="Black">
+                         AvatarSize="ExtraLarge">
 </syncfusion:SfAvatarView>
 
 {% endhighlight %}
@@ -236,7 +229,6 @@ public partial class MainWindow : Window
       avatarView.InitialsMemberPath = "Name";
       avatarView.BackgroundColorMemberPath = "Colors";
       avatarView.AvatarSize = AvatarSize.ExtraLarge;
-      avatarView.BorderBrush = new SolidColorBrush(Colors.Black);
       page.DataContext = emp;
    }
 }
@@ -263,8 +255,7 @@ You can set the initials only in the group view by setting the `InitialsMemberPa
                          InitialsMemberPath="Name"
                          BackgroundColorMemberPath="Colors"
                          InitialsColorMemberPath="InitialsColors"
-                         AvatarSize="ExtraLarge"
-                         BorderBrush="Black">
+                         AvatarSize="ExtraLarge">
 </syncfusion:SfAvatarView>
 
 {% endhighlight %}
@@ -284,7 +275,6 @@ public partial class MainWindow : Window
       avatarView.InitialsColorMemberPath = "InitialsColors";
       avatarView.BackgroundColorMemberPath = "Colors";
       avatarView.AvatarSize = AvatarSize.ExtraLarge;
-      avatarView.BorderBrush = new SolidColorBrush(Colors.Black);
       page.DataContext = emp;
    }
 }
@@ -307,7 +297,7 @@ public class EmployeeViewModel
    {
       CollectionImage = new ObservableCollection<Employee>();
       CollectionImage.Add(new Employee { ImageSource="mike.png" });
-      CollectionImage.Add(new Employee { Name="alex", Colors=Colors.White });
+      CollectionImage.Add(new Employee {  Name="Alex", Colors=ColorHelper.FromArgb(0xFF, 0xD6, 0xE8, 0xD7), InitialsColors=ColorHelper.FromArgb(0xFF, 0x24, 0x4F, 0x23) });
       CollectionImage.Add(new Employee { ImageSource="ellanaa.png" });
    }     
 }
