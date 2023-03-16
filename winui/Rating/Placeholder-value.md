@@ -9,7 +9,7 @@ documentation: ug
 
 # Placeholder value in WinUI Rating
 
-The Rating control provides the average rating value before the user provide or click any other actions by using the `PlaceholderValue` property.
+By using the `PlaceholderValue` property, the Rating control can display the average rating value before the user provides their own rating by click or other action.
 
 {% tabs %}
 {% highlight XAML %}
