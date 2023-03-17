@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in WinUI AvatarView control | Syncfusion
-description: Learn all about the customization features such as Height, Width, BorderBrush, Background, FontSize and CornerRadius in WinUI AvatarView control here.
+description: Learn all about the customization features such as BorderThickness, BorderBrush, Background, FontSize and GradientBackground in WinUI AvatarView control here.
 platform: WinUI
 control: AvatarView
 documentation: ug
@@ -9,15 +9,15 @@ documentation: ug
 
 # Customization in WinUI AvatarView 
 
-The `AvatarView` control provides options to customize the color, size ect. of the control. The control can be customized using the following properties:
+The `AvatarView` control offers a range of customization options, including the ability to modify its colors, background, and more. You can utilize the following properties to customize this control:
 
-## Colors
+## Border
 
-Colors in the `AvatarView` can be customized by the border brush and by the background color.
+Personalize the border of `AvatarView` control by adjusting the border brush and border thickness properties to achieve the desired look.
 
 ### BorderBrush
 
-The `BorderBrush` property is used for setting color to the border color of `AvatarView`.
+To set the color of the border surrounding your `AvatarView`, you can use the `BorderBrush` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -43,9 +43,68 @@ avatarView.BorderBrush = new SolidColorBrush(Colors.Red);
 
 ![WinUI AvatarView control with custom BorderBrush](avatarview_images/winui_borderbrush_avatarview.png)
 
+### Border Thickness
+
+You can customize the thickness of the AvatarView control by using the `BorderThickness` property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfAvatarView   AvatarShape="Custom"
+                           Width="100"
+                           Height="100"
+                           CornerRadius="50"
+                           BorderBrush="Black" 
+                           BorderThickness="4">
+</syncfusion:SfAvatarView>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfAvatarView avatarView = new SfAvatarView();
+avatarView.AvatarShape = AvatarShape.Custom;
+avatarView.Height = 100;
+avatarView.Width = 100;
+avatarView.BorderThickness = new Thickness(4);
+avatarView.CornerRadius = new CornerRadius(50);
+avatarView.BorderBrush = new SolidColorBrush(Colors.Black);
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI AvatarView control with custom BorderThickness](avatarview_images/winui_borderthickness_avatarview.png)
+
+### Background
+
+You can customize the background of the AvatarView control by using the `Background` property.
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfAvatarView ContentType="Initials"
+                         AvatarSize="ExtraLarge"
+                         AvatarName="Alex"
+                         InitialsType="DoubleCharacter"
+                         Background="Bisque">
+</syncfusion:SfAvatarView>
+
+{% endhighlight %}
+{% highlight c# %}
+          
+SfAvatarView avatarView = new SfAvatarView();
+avatarView.AvatarName = "Alex";
+avatarView.ContentType = AvatarContentType.Initials;
+avatarView.AvatarSize = AvatarSize.ExtraLarge;
+avatarView.InitialsType = AvatarInitialsType.DoubleCharacter;
+avatarView.Background = new SolidColorBrush(Colors.Bisque);
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI AvatarView control with custom background](avatarview_images/winui_double_character_initialstype_avatarview.png)
+
 ### Gradients
 
-You can also specify a range of colors using `LinearGradientBrush` in `Background` Property as demonstrated in the following code example.
+You can use the `LinearGradientBrush` in the `Background` property to specify a range of colors for your AvatarView, as shown in the following code example.
 
 {% tabs %}
 {% highlight xaml %}
@@ -87,81 +146,4 @@ avatarView.Background = new LinearGradientBrush()
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AvatarView control with custom Gradient](avatarview_images/winui_gradient_avatarview.png)
-
-## Sizing
-
-In the `AvatarView` control, size of the view can be controlled using width, height, border thickness, and corner radius.
-
-### Width
-
-You can customize the width of the avatar view using the `Width` property only when the AvatarShape is `Custom`.
-
-### Height
-
-You can customize the height of the avatar view using the `Height` property only when the AvatarShape is `Custom`.
-
-### Border Thickness
-
-You can customize the thickness of the avatar view using the `BorderThickness` property.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfAvatarView   AvatarShape="Custom"
-                           Width="100"
-                           Height="100"
-                           CornerRadius="50"
-                           BorderBrush="Black" 
-                           BorderThickness="4">
-</syncfusion:SfAvatarView>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfAvatarView avatarView = new SfAvatarView();
-avatarView.AvatarShape = AvatarShape.Custom;
-avatarView.Height = 100;
-avatarView.Width = 100;
-avatarView.BorderThickness = new Thickness(4);
-avatarView.CornerRadius = new CornerRadius(50);
-avatarView.BorderBrush = new SolidColorBrush(Colors.Black);
-
-{% endhighlight %}
-{% endtabs %}
-
-![WinUI AvatarView control with custom BorderThickness](avatarview_images/winui_borderthickness_avatarview.png)
-
-### Corner radius
-
-You can customize the corner radius of the avatar view using the `CornerRadius` property only when the AvatarShape is `Custom`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfAvatarView  AvatarShape="Custom"
-                          ImageSource="Michael.png"
-                          BorderBrush="Black"
-                          Width="75"
-                          Height="75"
-                          CornerRadius="0,0,34,34">
-</syncfusion:SfAvatarView>
-
-{% endhighlight %}
-{% highlight c# %}
-
-Grid mainGrid = new Grid();
-SfAvatarView avatarView = new SfAvatarView();
-avatarView.Width = 75;
-avatarView.Height = 75;
-avatarView.CornerRadius = new CornerRadius(0,0,34,34);
-avatarView.ImageSource = new BitmapImage(new Uri("ms-appx:///Michael.png"));
-avatarView.AvatarShape = AvatarShape.Custom;
-avatarView.BorderBrush = new SolidColorBrush(Colors.Black);
-mainGrid.Children.Add(avatarView);
-page.Content = mainGrid;
-
-{% endhighlight %}
-{% endtabs %}
-
-![WinUI AvatarView control with custom CornerRadius](avatarview_images/winui_cornerradius_avatarview.png)
+![WinUI AvatarView control with LinearGradientBrush](avatarview_images/winui_gradient_avatarview.png)
