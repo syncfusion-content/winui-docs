@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visual Styles in WinUI AvatarView control | Syncfusion
-description: This section will explain about the different types of visual styles that exists in WinUI AvatarView.
+description: Learn here all about the different visual styles that are available in the WinUI AvatarView.
 platform: WinUI
 control: AvatarView
 documentation: ug
