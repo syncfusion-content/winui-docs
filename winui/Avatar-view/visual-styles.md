@@ -9,8 +9,7 @@ documentation: ug
 
 # Visual Styles in WinUI AvatarView
 
-The `AvatarView` control provides the ability to customize visual styles, offering a selection of built-in styles.
-The `AvatarShape` property can be used to configure the visual style of the AvatarView control with any of the available options, including:
+`AvatarView` control allows for customization of visual styles by providing a range of built-in styles. You can configure the visual style of your avatar using the `AvatarShape` property and select from the available options, such as:
 
 * Custom
 * Circle
@@ -22,7 +21,7 @@ Custom type enables extensive customization options such as adjusting the size, 
 
 ## Circle
 
-The `AvatarView` control provides a convenient method of applying the `Circle` style to avatar view by simply specifying the desired size through the `AvatarSize` property, which includes the following options:
+The `AvatarView` control allows you to set the size of the circle by utilizing the predefined `AvatarSize` values such as:
 
 * ExtraLarge
 * Large
@@ -214,7 +213,7 @@ stack.Children.Add(mainGrid);
 
 ## Square
 
-The `AvatarView` control provides a convenient method of applying the `Square` style to avatar view by simply specifying the desired size through the `AvatarSize` property, which includes the following options:
+The `AvatarView` control allows you to set the size of the square by utilizing the predefined `AvatarSize` values such as:
 
 * ExtraLarge
 * Large
