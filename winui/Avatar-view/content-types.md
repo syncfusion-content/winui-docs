@@ -9,23 +9,20 @@ documentation: ug
 
 # Content Types in WinUI AvatarView
 
-The AvatarView control supports five different types of content: `Default`, `Initials`, `CustomImage`, `AvatarCharacter`, and `GroupView`.
+The `AvatarView` control supports five different types of content: `Default`, `Initials`, `CustomImage`, `AvatarCharacter`, and `GroupView`.
 
 ## Default
 
-Default content type is used for displaying the `Avatar1` character image when initializing without the initials, custom image, or group view types.
+Default content type is used for displaying the `Avatar1` character image when initializing the control without the initials or custom image or group source.
 
 {% tabs %}
 {% highlight xaml %}
 
-<Grid>
 <syncfusion:SfAvatarView />
-</Grid>
 
 {% endhighlight %} 
 {% highlight C# %}
 
-// Creating an instance of the AvatarView control.
 SfAvatarView avatarView = new SfAvatarView();
            
 {% endhighlight %}
@@ -35,23 +32,18 @@ SfAvatarView avatarView = new SfAvatarView();
 
 ## Initials 
 
-Initials content type is used to show initials to the `AvatarView`. When using the `ContentType` as initials, you need to set the initial character using the following properties:
-
-* `InitialsType` - Defines the type of characters to be displayed.  
-* `AvatarName` - Defines the initials to be displayed.
+The Initials content type is used to display initials in the AvatarView. To use this content type, you must provide a value for the `AvatarName` property, which sets the initials to be displayed in the avatar view. Depending on the specified `InitialsType` property, the initials will be formatted accordingly.
 
 ### InitialsType
 
-The `InitialsType` contains the following two types:
+The `InitialsType` property includes two types:
 
-* SingleCharacter
-* DoubleCharacter
-
-You must set the `AvatarName` string property for displaying the initials value in the AvatarView.
+SingleCharacter - used to display a single character in the avatar.
+DoubleCharacter - used to display two characters in the avatar.
 
 **SingleCharacter**
 
-The `SingleCharacter` is used for displaying the first character in the string you have set in the `AvatarName` property.
+The single character initials type is used to display the first character of the AvatarName property value as the avatar.
 
 {% tabs %}
 {% highlight xaml %}
@@ -74,11 +66,11 @@ avatarView.Background = new SolidColorBrush(Colors.Bisque);
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AvatarView control with SingleCharacter](avatarview_images/winui_initials_avatarview.png)
+![WinUI AvatarView control with SingleCharacter](avatarview_images/winui_single_character_initialstype_avatarview.png)
 
 **DoubleCharacter**
 
-The `DoubleCharacter` is used for displaying a two-characters text you have set in the `AvatarName` property. If the initials consist of a single word, it will show the first and last letters of that word. If the initials contain two or more words, it will display the first letter of the first word and the first letter of the second word.
+The double character initials type is used to display a two-character text as avatar that has been set in the `AvatarName` property. If the AvatarName consist of a single word, the first and last letters of that word will be displayed. However, if the `AvatarName` contains two or more words, the first letter of the first word and the first letter of the second word will be displayed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -103,11 +95,11 @@ avatarView.Background = new SolidColorBrush(Colors.Bisque);
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AvatarView control with DoubleCharacter](avatarview_images/winui_doubleinitials_avatarview.png)
+![WinUI AvatarView control with DoubleCharacter](avatarview_images/winui_double_character_initialstype_avatarview.png)
 
-## Custom Image
+## Custom image
 
-You can add a custom image by setting the `ImageSource` property.
+You can add any custom image as the avatar by using the `ImageSource` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -128,11 +120,11 @@ avatarView.ImageSource = new BitmapImage(new Uri("ms-appx:///Images\\person.png"
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AvatarView control with custom image.](avatarview_images/winui_imagesource_avatarview.png)
+![WinUI AvatarView control with custom image](avatarview_images/winui_imagesource_avatarview.png)
 
-## Avatar Character
+## Avatar character
 
-You can set the pre-defined images in avatar view by setting the `AvatarCharacter` property.
+You can set the pre-defined avatar character images as avatar view by using the `AvatarCharacter` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -153,76 +145,51 @@ avatarView.AvatarCharacter = AvatarCharacter.Avatar15;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AvatarView control with avatar character](avatarview_images/winui_avatarcharacter_avatarview.png)
+![WinUI AvatarView control with avatar character](avatarview_images/winui_avatar_character_avatarview.png)
 
-## Group View 
+## Group view 
 
-You can add upto three images or initials in the same view using a GroupView type.
+The `Group` content type allows you to display up to three images or initials within a single avatar view. To use this content type, you must set the following properties, which include:
 
-`InitialsMemberPath`: Displays the initials in the group view.
-`ImageSourceMemberPath`: Displays the images in the group view.
-`BackgroundColorMemberPath`: Sets the background color of the group view.
-`InitialsColorMemberPath`: Sets the color for the initials in the group view.
+`GroupSource`: Used to set the ItemSource for the group view.
+`InitialsMemberPath`: Used to set the initials for the group view.
+`ImageSourceMemberPath`: Used to set the images for the group view.
+`BackgroundColorMemberPath`: Used to set the background color for the group view.
+`InitialsColorMemberPath`: Used to set the initials color for the group view.
+
+The following code sample illustrates how to create an item source for a class.
 
 {% tabs %}
 {% highlight c# %}
 
 public class Employee
 {
-   private string name;
+   public string Name { get; set; }
 
-   public string Name
-   {
-      get { return name; }
-      set { name = value; }
-   }
+   public string ImageSource { get; set; }
 
-   private string imagesource;
+   public Color Background { get; set; }
 
-   public string ImageSource
-   {
-      get { return imagesource; }
-      set { imagesource = value; }
-   }
-
-   private Color colors;
-
-   public Color Colors
-   {
-      get { return colors; }
-      set { colors = value; }
-   }
-
-   private Color initialsColors;
-
-   public Color InitialsColors
-   {
-      get { return initialsColors; }
-      set { initialsColors = value; }
-   }
+   public Color InitialsColor { get; set; }
 }
 
 public class EmployeeViewModel
 {
-   private ObservableCollection<Employee> collectionImage;
-
-   public ObservableCollection<Employee> CollectionImage
-   {
-      get { return collectionImage; }
-      set { collectionImage = value; }
-   }
+   public ObservableCollection<Employee> CollectionImage { get; set; }
 
    public EmployeeViewModel()
    {
       CollectionImage = new ObservableCollection<Employee>();
       CollectionImage.Add(new Employee { ImageSource="mike.png" });
-      CollectionImage.Add(new Employee {  Name="Alex", Colors=ColorHelper.FromArgb(0xFF, 0xD6, 0xE8, 0xD7), InitialsColors=ColorHelper.FromArgb(0xFF, 0x24, 0x4F, 0x23) });
+      CollectionImage.Add(new Employee {  Name="Alex", Background=ColorHelper.FromArgb(0xFF, 0xD6, 0xE8, 0xD7), InitialsColor=ColorHelper.FromArgb(0xFF, 0x24, 0x4F, 0x23) });
       CollectionImage.Add(new Employee { ImageSource="ellanaa.png" });
    }    
 }
 
 {% endhighlight %}
 {% endtabs %}
+
+The following code sample illustrates how to set the group source and member path for the avatar view control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -234,9 +201,9 @@ public class EmployeeViewModel
 <syncfusion:SfAvatarView ContentType="Group"   
                          GroupSource="{Binding CollectionImage}"
                          InitialsMemberPath="Name"
-                         BackgroundColorMemberPath="Colors"
+                         BackgroundColorMemberPath="Background"
                          ImageSourceMemberPath="ImageSource"
-                         InitialsColorMemberPath="InitialsColors"
+                         InitialsColorMemberPath="InitialsColor"
                          AvatarSize="ExtraLarge">
 </syncfusion:SfAvatarView>
 
@@ -245,23 +212,24 @@ public class EmployeeViewModel
 
 public partial class MainWindow : Window
 {
-   EmployeeViewModel emp;
    public MainPage()
    {
-      emp = new EmployeeViewModel();
+      Grid grid = new Grid();
+      EmployeeViewModel employee = employee = new EmployeeViewModel();
+      grid.DataContext = employee;
       SfAvatarView avatarView = new SfAvatarView();
       avatarView.ContentType = AvatarContentType.Group;
-      avatarView.GroupSource = emp.CollectionImage;
+      avatarView.GroupSource = employee.CollectionImage;
       avatarView.ImageSourceMemberPath = "ImageSource";
       avatarView.InitialsMemberPath = "Name";
-      avatarView.BackgroundColorMemberPath = "Colors";
-      avatarView.InitialsColorMemberPath = "InitialsColors";
+      avatarView.BackgroundColorMemberPath = "Background";
+      avatarView.InitialsColorMemberPath = "InitialsColor";
       avatarView.AvatarSize = AvatarSize.ExtraLarge;
-      page.DataContext = emp;
+      grid.Children.Add(avatarView);
    }
 }
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AvatarView control with GroupView for both Initials and Images](avatarview_images/winui_groupsource_avatarview.png)
+![WinUI AvatarView control with Group Content Type](avatarview_images/winui_group_contenttype_avatarview.png)
