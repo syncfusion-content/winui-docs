@@ -9,7 +9,7 @@ documentation: ug
 
 # Legend in WinUI Charts (SfCircularChart)
 
-The legend contains list of series data points in the chart. The information provided in each legend item helps to identify the corresponding data series in the chart.
+The legend contains list of series data points in the chart. The information provided in each legend item allows you to identify the corresponding data series in the chart.
 
 {% tabs %}
 
@@ -36,7 +36,7 @@ N> The x-value of data points in the circular chart will be the legend items ‘
 
 ## Title
 
-Circular chart provides support to add any `UIElement` as a title for legend. [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Header) property of [ChartLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html) is used to define the title for legend as the following code example.
+Circular chart provides support to add any `UIElement` as a title for legend. The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Header) property of [ChartLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html) is used to define the title for legend, as shown in the following code example.
 
 {% tabs %}
 
@@ -82,7 +82,7 @@ chart.Legend = legend;
 
 ## Icon
 
-Legend icon represents a symbol associated with the each legend item. [LegendIcon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_LegendIcon) property of series is used to set the icon type for legend item. By default, the legend icon is [SeriesType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegendIcon.html#Syncfusion_UI_Xaml_Charts_ChartLegendIcon_SeriesType).
+Legend icon represents a symbol associated with the each legend item. The [LegendIcon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_LegendIcon) property of series is used to set the icon type for legend item. By default, the legend icon is [SeriesType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegendIcon.html#Syncfusion_UI_Xaml_Charts_ChartLegendIcon_SeriesType).
 
 {% tabs %}
 
@@ -125,7 +125,7 @@ chart.Series.Add(series);
 
 ![Legend icon in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_icon.png)
 
-The appearance of the legend icon can be customized using the below properties.
+The appearance of the legend icon can be customized using the following properties:
 
 * [IconWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_IconWidth) - Gets or sets the double value that represents the legend icon(s) width.
 * [IconHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_IconHeight) - Gets or sets the double value that represents that legend icon(s) height.
@@ -165,7 +165,7 @@ chart.Legend = new ChartLegend()
 
 **Custom legend icon**
 
-Circular chart provides support to add custom icon for the legend using [LegendIconTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_LegendIconTemplate) property of series as in below example.
+Circular chart provides support to add custom icon for the legend using the [LegendIconTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_LegendIconTemplate) property of series, as shown in the following code example.
 
 {% tabs %}
 
@@ -211,7 +211,7 @@ chart.Series.Add(series);
 
 ## Item spacing
 
-[ItemMargin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ItemMargin) property of the [ChartLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html) is used to provide spacing between each legend items.
+The [ItemMargin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ItemMargin) property of the [ChartLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html) is used to provide spacing between each legend items.
 
 {% tabs %}
 
@@ -242,9 +242,9 @@ chart.Legend = new ChartLegend()
 
 ![Legend item spacing support in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_item_spacing.png)
 
-## Checkbox for Legend
+## Checkbox for legend
 
-Circular chart provides support to enable the checkbox for each legend item to visible or collapse the associated data points. By default, the value of [CheckBoxVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CheckBoxVisibility) property is `Collapsed`.  
+Circular chart provides support to enable the checkbox for each legend item to visible or collapse the associated data points. By default, the value of [CheckBoxVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CheckBoxVisibility) property is `Collapsed.`  
 
 {% tabs %}
 
@@ -275,13 +275,13 @@ chart.Legend = new ChartLegend()
 
 ![Checkbox support for legend in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_checkbox.png)
 
-The data point can be collapsed by unchecking the checkbox as below:
+The data point can be collapsed by unchecking the checkbox as follows.
 
 ![Checkbox support for legend in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_checkbox_uncheck.png)
 
 ## Toggle series visibility 
 
-The visibility of the segment can be control by tapping the legend item by enabling the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) property. By default, the value of [ToggleSeriesVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) property is `False`.
+The visibility of the segment can be controlled by tapping the legend item by enabling the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) property. By default, the value of [ToggleSeriesVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) property is `False.`
 
 {% tabs %}
 
@@ -314,9 +314,9 @@ chart.Legend = new ChartLegend()
 
 ## Placement
 
-Legends can be docked left, right, and top or bottom around the chart area using [Placement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Placement) property. By default, the chart legend is docked at the top of the chart as mentioned earlier.
+Legends can be docked left, right, and top or bottom around the chart area using the [Placement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Placement) property. By default, the chart legend is docked at the top of the chart as mentioned earlier.
 
-To display the legend at the left, set the [Placement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Placement) as [Left](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LegendPlacement.html#Syncfusion_UI_Xaml_Charts_LegendPlacement_Left) as in the following code sample.
+To display the legend at the left, set the [Placement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Placement) to [Left](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LegendPlacement.html#Syncfusion_UI_Xaml_Charts_LegendPlacement_Left), as shown in the following code sample.
 
 {% tabs %}
 
@@ -349,13 +349,13 @@ chart.Legend = new ChartLegend()
 
 ![Positioning the legend at left in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_dock_left.png)
 
-## Background Customization 
+## Background customization 
 
-The legend background appearance can be customized by using the below properties.
+The legend background appearance can be customized by using the following properties:
 
 [`BorderThickness`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_BorderThickness) - used to change the stroke width of the legend.
 [`BorderBrush`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_BorderBrush) - used to change the stroke color of the legend.
-[`Background`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Background) - used to change the background color of legend.
+[`Background`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Background) - used to change the background color of the legend.
 [`CornerRadius`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CornerRadius) - used to change the corner radius of the legend.
 
 {% tabs %}
@@ -393,7 +393,7 @@ chart.Legend = new ChartLegend()
 
 ## Template
 
-Customize each legend item by using [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ItemTemplate) property in [ChartLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html) as in below code snippet:
+Customize each legend item by using the [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ItemTemplate) property in [ChartLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html), as shown in the following code sample.
 
 {% tabs %}
 

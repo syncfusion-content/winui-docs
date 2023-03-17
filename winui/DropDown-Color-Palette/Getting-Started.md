@@ -35,7 +35,7 @@ In this walkthrough, you will create a WinUI application that contains the `Drop
 
 To add `DropDown Color Palette` control manually in XAML , follow the below steps.
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Download and refer the following NuGet in the project.
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
@@ -69,7 +69,7 @@ To add `DropDown Color Palette` control manually in XAML , follow the below step
 
 To add the `DropDown Color Palette` control manually in C#, follow the below steps.
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Download and refer the following NuGet in the project.
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
 3. Import the `DropDown Color Palette` namespace `Syncfusion.UI.Xaml.Editors` in C# page.

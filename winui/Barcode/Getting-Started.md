@@ -13,7 +13,7 @@ This section provides a quick overview of how to get started with the [WinUI Bar
 
 ## Creating an application with WinUI Barcode
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Add reference to [Syncfusion.Barcode.WinUI](https://www.nuget.org/packages/Syncfusion.Barcode.WinUI) NuGet. 
 3. Import the control namespace `using Syncfusion.UI.Xaml.Barcode` in XAML or C# code.
 4. Initialize the `SfBarCode` control.

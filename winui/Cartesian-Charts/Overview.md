@@ -9,7 +9,7 @@ documentation: ug
 
 # WinUI Chart Overview
 
-The [WinUI Chart](https://www.syncfusion.com/winui-controls/charts) provides a perfect way to visualize data with a high level of user interactivity that focus on development, productivity and simplicity of use. Chart also provides a wide variety of charting features that can be used to visualize large quantities of data, flexibility of binding data and user customization. 
+The [WinUI Chart](https://www.syncfusion.com/winui-controls/charts) provides a perfect way to visualize data with a high level of user interactivity that focus on development, productivity, and simplicity of use. Chart also provides a wide variety of charting features that can be used to visualize large quantities of data, flexibility of binding data and user customization. 
 
 ![Overview of WinUI Chart](Overview_images/chart_overview.png)
 
@@ -17,12 +17,12 @@ The [WinUI Chart](https://www.syncfusion.com/winui-controls/charts) provides a p
 
 * Cartesian charts supports different types of series and each type of chart represents a unique style of representing data with more user friendly and greater UI visualization.
 
-* Allows you to map data from the specified path, by achieving data binding concept.
+* Allows you to map data from the specified path by achieving data binding concept.
 
-* Interactive zooming can be done with touch mode enabled that allows you to explore portions of large charts in more detail, with excellent performance.
+* Interactive zooming can be done by enabling touch mode, which allows you to  explore portions of large charts in more detail with excellent performance.
 
 * When you need more information about particular segment in a chart, a little mouse over on the series provides much more information by including tooltip and trackball behavior.
 
-* Cartesian chart provides support for rendering multiple series at same time, with options to compare and visualize two different series simultaneously.
+* The Cartesian chart provides support for rendering multiple series at the same time with options to compare and visualize two different series simultaneously.
 
-* User friendly and provides various options for you to customize chart features like axis, legends and data markers.
+* User friendly and provides various options for you to customize chart features such as axis, legends, and data markers.

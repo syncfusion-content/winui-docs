@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fast Scatter Chart in WinUI Chart control | Syncfusion
-description: Learn here all about Fast Scatter Chart of Syncfusion WinUI Chart (SfCartesianChart) control and more.
+description: Learn here all about Fast Scatter Chart of the Syncfusion WinUI Chart (SfCartesianChart) control and more.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Fast Scatter Chart in WinUI (SfCartesianChart)
 
-A fast scatter chart is a special kind of series that can render a collection with huge number of data points using `WriteableBitmap`. [FastScatterBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html) is used to render high number of scatter points. 
+A fast scatter chart is a special kind of series that can render a large collection of data points using `WriteableBitmap.` The [FastScatterBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html) is used to render high number of scatter points. 
 
-The [PointHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastScatterBitmapSeries_PointHeight) and [PointWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastScatterBitmapSeries_PointWidth) properties are used to change the height and width of scatter segments. [ShapeType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastScatterBitmapSeries_ShapeType) is used to change the rendering shape of fast scatter bitmap series. 
+The [PointHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastScatterBitmapSeries_PointHeight) and [PointWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastScatterBitmapSeries_PointWidth) properties are used to change the height and width of scatter segments. The [ShapeType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastScatterBitmapSeries_ShapeType) is used to change the rendering shape of fast scatter bitmap series. 
 
-The available shapes are 
+The available shapes are: 
 * `Cross` 
 * `Diamond` 
 * `Ellipse` 

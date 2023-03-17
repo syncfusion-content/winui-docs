@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started with WinUI Cartesian Chart (SfCartesianChart)
 
-This section explains how to populate the Cartesian chart with data, a header, data labels, a legend and tooltips, as well as the essential aspects for getting started with the chart.
+This section explains how to populate the Cartesian chart with data, adding a header, data labels, a legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
 ## Creating an application with WinUI Chart
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
 3. To initialize the control, import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C#.
 4. Initialize [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) control.
@@ -61,7 +61,7 @@ namespace SfChart_GettingStarted
 
 ## Initialize View Model
 
-Now, let us define a simple data model that represents a data point in chart.
+Now, let us define a simple data model that represents a data point in the chart.
 
 {% tabs %}  
 
@@ -175,13 +175,13 @@ chart.YAxes.Add(yAxis);
 
 {% endtabs %} 
 
-Run the project and check if you get following output to make sure you have configured your project properly to add chart.
+Run the project and check the output to ensure that you have configured your project properly to add the chart.
 
 ![Initializing axis for WinUI Chart](Getting-Started_Images/WinUI_chart_initializied.png)
 
 ## Populate Chart with Data
 
-As we are going to visualize the comparison of heights in the data model, add [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html) to [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) property of chart, and then bind the `Data` property of the above `ViewModel` to the `ColumnSeries.ItemsSource` as follows.
+As we are going to visualize the comparison of heights in the data model, add [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html) to [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) property of chart. Then, bind the `Data` property of the above `ViewModel` to the `ColumnSeries.ItemsSource` as follows.
 
 N> You need to set [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_XBindingPath) and [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.XyDataSeries.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties, so that chart would fetch values from the respective properties in the data model to plot the series.
 
@@ -258,7 +258,7 @@ chart.Header = "Height Comparison";
 
 ## Enable Data Labels
 
-The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataMarkerSeries.html#Syncfusion_UI_Xaml_Charts_DataMarkerSeries_ShowDataLabels) property of series can be used to enable the data labels to improve the readability of the chart. The label visibility is set to `False` by default.
+The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataMarkerSeries.html#Syncfusion_UI_Xaml_Charts_DataMarkerSeries_ShowDataLabels) property of series can be used to enable the data labels to improve the readability of the chart. By default, the label visibility is set to `False.`
 
 {% tabs %} 
 
@@ -485,4 +485,4 @@ The following chart is created as a result of the previous codes.
 
 ![Getting started for WinUI Chart](Getting-Started_Images/WinUI_chart.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/CartesianChartGettingStarted)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/CartesianChartGettingStarted).

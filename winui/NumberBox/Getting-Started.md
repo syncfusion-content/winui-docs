@@ -23,7 +23,7 @@ In this walkthrough, you will create a WinUI application that contains the [Numb
 
 To add `NumberBox` control manually in XAML, follow the below steps.
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2.  Download and refer the following NuGet package in the project.
 
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
@@ -62,7 +62,7 @@ To add `NumberBox` control manually in XAML, follow the below steps.
 
 To add `NumberBox` control manually in C# , follow the below steps.
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2.  Download and refer the following NuGet in the project.
 
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
@@ -125,7 +125,7 @@ sfNumberBox.CustomFormat = "0.000";
 
 ## Change number format
 
-You can change the format in which the value should be displayed using the [CustomFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_CustomFormat) property and [NumberFormatter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_NumberFormatter) property. By default, value of the `CustomFormat` property and `NumberFormatter` property is **null**. You can apply various custom formats available in [this link](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) to the `NumberBox` control  using `CustomFormat` property.
+You can change the format in which the value should be displayed using the [CustomFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_CustomFormat) property and [NumberFormatter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_NumberFormatter) property. By default, value of the `CustomFormat` property and `NumberFormatter` property is **null**. You can apply various custom formats available in [this link](https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) to the `NumberBox` control  using `CustomFormat` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -147,7 +147,7 @@ sfNumberBox.CustomFormat = "C2";
 {% endhighlight %}
 {% endtabs %}
 
-You can also change the format of the value of `NumberBox` control using `NumberFormatter` property with [different formatters](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting?view=winrt-20348) available.
+You can also change the format of the value of `NumberBox` control using `NumberFormatter` property with [different formatters](https://learn.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting?view=winrt-20348) available.
 
 {% tabs %}
 {% highlight xaml %}
