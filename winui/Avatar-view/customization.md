@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in WinUI AvatarView control | Syncfusion
-description: Learn all about the customization features such as BorderThickness, BorderBrush, Background, FontSize and GradientBackground in WinUI AvatarView control here.
+description: Learn all about the various customization features available in the WinUI AvatarView control, including border, background, gradient, font, and more.
 platform: WinUI
 control: AvatarView
 documentation: ug
@@ -9,15 +9,15 @@ documentation: ug
 
 # Customization in WinUI AvatarView 
 
-The `AvatarView` control offers a range of customization options, including the ability to modify its colors, background, and more. You can utilize the following properties to customize this control:
+The `AvatarView` control offers a range of customization options, including the ability to modify its border, background, and more.
 
 ## Border
 
-Personalize the border of `AvatarView` control by adjusting the border brush and border thickness properties to achieve the desired look.
+Customize the border of AvatarView control by using the `BorderBrush` and `BorderThickness` properties to achieve the desired look.
 
-### BorderBrush
+**BorderBrush**
 
-To set the color of the border surrounding your `AvatarView`, you can use the `BorderBrush` property.
+You can customize the thickness of the AvatarView control by using the `BorderBrush` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -33,7 +33,6 @@ To set the color of the border surrounding your `AvatarView`, you can use the `B
 
 SfAvatarView avatarView = new SfAvatarView();
 avatarView.ContentType = AvatarContentType.AvatarCharacter;
-avatarView.AvatarShape = AvatarShape.Circle;
 avatarView.AvatarSize = AvatarSize.ExtraLarge;
 avatarView.AvatarCharacter = AvatarCharacter.Avatar16;
 avatarView.BorderBrush = new SolidColorBrush(Colors.Red);
@@ -41,9 +40,9 @@ avatarView.BorderBrush = new SolidColorBrush(Colors.Red);
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AvatarView control with custom BorderBrush](avatarview_images/winui_borderbrush_avatarview.png)
+![WinUI AvatarView control with custom BorderBrush](avatarview_images/winui_avatarview_borderbrush.png)
 
-### Border Thickness
+**BorderThickness**
 
 You can customize the thickness of the AvatarView control by using the `BorderThickness` property.
 
@@ -51,9 +50,7 @@ You can customize the thickness of the AvatarView control by using the `BorderTh
 {% highlight xaml %}
 
 <syncfusion:SfAvatarView   AvatarShape="Custom"
-                           Width="100"
-                           Height="100"
-                           CornerRadius="50"
+                           AvatarSize="ExtraLarge"
                            BorderBrush="Black" 
                            BorderThickness="4">
 </syncfusion:SfAvatarView>
@@ -63,20 +60,19 @@ You can customize the thickness of the AvatarView control by using the `BorderTh
 
 SfAvatarView avatarView = new SfAvatarView();
 avatarView.AvatarShape = AvatarShape.Custom;
-avatarView.Height = 100;
-avatarView.Width = 100;
+avatarView.AvatarSize = AvatarSize.ExtraLarge;
 avatarView.BorderThickness = new Thickness(4);
-avatarView.CornerRadius = new CornerRadius(50);
 avatarView.BorderBrush = new SolidColorBrush(Colors.Black);
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AvatarView control with custom BorderThickness](avatarview_images/winui_borderthickness_avatarview.png)
+![WinUI AvatarView control with custom BorderThickness](avatarview_images/winui_avatarview_borderthickness.png)
 
-### Background
+## Background
 
 You can customize the background of the AvatarView control by using the `Background` property.
+
 {% tabs %}
 {% highlight xaml %}
 
@@ -102,9 +98,9 @@ avatarView.Background = new SolidColorBrush(Colors.Bisque);
 
 ![WinUI AvatarView control with custom background](avatarview_images/winui_double_character_initialstype_avatarview.png)
 
-### Gradients
+## Gradients
 
-You can use the `LinearGradientBrush` in the `Background` property to specify a range of colors for your AvatarView, as shown in the following code example.
+You can use the `LinearGradientBrush` or `RadialGradientBrush` in the `Background` property to specify a range of colors for your AvatarView, as shown in the following code example.
 
 {% tabs %}
 {% highlight xaml %}
@@ -146,4 +142,4 @@ avatarView.Background = new LinearGradientBrush()
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AvatarView control with LinearGradientBrush](avatarview_images/winui_gradient_avatarview.png)
+![WinUI AvatarView control with Gradient Background](avatarview_images/winui_avatarview_gradient.png)
