@@ -151,13 +151,13 @@ avatarView.AvatarCharacter = AvatarCharacter.Avatar15;
 
 The `Group` content type allows you to display up to three images or initials within a single avatar view. To use this content type, you must set the following properties, which include:
 
-`GroupSource`: Used to set the ItemSource for the group view.
+`GroupSource`: Used to set the ItemsSource for the group view.
 `InitialsMemberPath`: Used to set the initials for the group view.
-`ImageSourceMemberPath`: Used to set the images for the group view.
-`BackgroundColorMemberPath`: Used to set the background color for the group view.
 `InitialsColorMemberPath`: Used to set the initials color for the group view.
+`BackgroundColorMemberPath`: Used to set the background color for the group view.
+`ImageSourceMemberPath`: Used to set the image source for the group view.
 
-The following code sample illustrates how to create an item source for a class.
+The following code example illustrates how to create an ItemsSource for a group avatar view.
 
 {% tabs %}
 {% highlight c# %}
@@ -189,7 +189,7 @@ public class EmployeeViewModel
 {% endhighlight %}
 {% endtabs %}
 
-The following code sample illustrates how to set the group source and member path for the avatar view control.
+The following code example illustrates how to set the group source and member paths for the avatar view.
 
 {% tabs %}
 {% highlight xaml %}
@@ -215,8 +215,8 @@ public partial class MainWindow : Window
    public MainPage()
    {
       Grid grid = new Grid();
-      EmployeeViewModel employee = employee = new EmployeeViewModel();
-      grid.DataContext = employee;
+      EmployeeViewModel employeeViewModel = new EmployeeViewModel();
+      grid.DataContext = employeeViewModel;
       SfAvatarView avatarView = new SfAvatarView();
       avatarView.ContentType = AvatarContentType.Group;
       avatarView.GroupSource = employee.CollectionImage;
