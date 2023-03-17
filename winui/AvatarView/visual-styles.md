@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visual Styles in WinUI AvatarView control | Syncfusion
-description: This section will explain about the different types of visual styles that exists in WinUI AvatarView.
+description: This section will provide an explanation of the various visual styles that are available in WinUI AvatarView.
 platform: WinUI
 control: AvatarView
 documentation: ug
@@ -9,7 +9,8 @@ documentation: ug
 
 # Visual Styles in WinUI AvatarView
 
-The `AvatarView` control supports visual style customization using the following built-in visual styles:
+The `AvatarView` control provides the ability to customize visual styles, offering a selection of built-in styles.
+The `AvatarShape` property can be used to configure the visual style of the AvatarView control with any of the available options, including:
 
 * Custom
 * Circle
@@ -17,11 +18,11 @@ The `AvatarView` control supports visual style customization using the following
 
 ## Custom
 
-Custom type allows you to customize the control, where you can handle the size, font size, corner radius, etc. of the control. Refer to the Customization Documentation in SfAvatarView.
+Custom type enables extensive customization options such as adjusting the size, font size, corner radius, and other properties.
 
 ## Circle
 
-You can directly set value to the circle in the `AvatarView` using the following styles:
+The `AvatarView` control provides a convenient method of applying the `Circle` style to avatar view by simply specifying the desired size through the `AvatarSize` property, which includes the following options:
 
 * ExtraLarge
 * Large
@@ -29,7 +30,7 @@ You can directly set value to the circle in the `AvatarView` using the following
 * Small
 * ExtraSmall
 
-The following code sample demonstrates how to define visual style of circle AvatarView.
+The following code sample illustrates how to set the visual style of AvatarView to `Circle`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -213,7 +214,7 @@ stack.Children.Add(mainGrid);
 
 ## Square
 
-You can directly set value to the square in the `SfAvatarView` using the following styles:
+The `AvatarView` control provides a convenient method of applying the `Square` style to avatar view by simply specifying the desired size through the `AvatarSize` property, which includes the following options:
 
 * ExtraLarge
 * Large
@@ -221,7 +222,7 @@ You can directly set value to the square in the `SfAvatarView` using the followi
 * Small
 * ExtraSmall
 
-The following code sample demonstrates how to define visual style of square AvatarView.
+The following code sample illustrates how to set the visual style of AvatarView to `Square`.
 
 {% tabs %}
 {% highlight xaml %}
