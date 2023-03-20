@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Clear rating value in WinUI Rating control | Syncfusion
-description: Learn all about how to clear the rating value in the WinUI Rating (SfRating) control.
+description: Learn how to clear the rating value in the WinUI Rating (SfRating) control.
 platform: WinUI
 control: SfRating
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Clear rating value in WinUI Rating
 
-The `IsClearEnabled` property of the Rating control allows you to clear the provided rating value when the value is true. The default value of the property is `true`.
+The `IsClearEnabled` property of the Rating control allows you to clear the provided rating value when the value is true. The default value of the `IsClearEnabled` property is `true`.
 
 N> It supports precision mode `full` only.
 

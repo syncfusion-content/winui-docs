@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Placeholder value in WinUI Rating control | Syncfusion
-description: Learn all about the placeholder feature in the Rating control to show the average rating value before the user provide their own rating.
+description: Learn about the placeholder feature in the Rating control to show the average rating value before the user provides their rating.
 platform: WinUI
 control: SfRating
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Placeholder value in WinUI Rating
 
-By using the `PlaceholderValue` property, the Rating control can display the average rating value before the user provides their own rating by click or any other action.
+By using the `PlaceholderValue` property, the Rating control display the average rating value before the user provides their rating by click or any other action.
 
 {% tabs %}
 {% highlight XAML %}
