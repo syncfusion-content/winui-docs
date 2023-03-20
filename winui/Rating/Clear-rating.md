@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Clear rating value in WinUI Rating control | Syncfusion
-description: Learn all about how to clear the rating value in the WinUI Rating (SfRating) control.
+description: Learn how to clear the rating value in the WinUI Rating (SfRating) control.
 platform: WinUI
 control: SfRating
 documentation: ug
