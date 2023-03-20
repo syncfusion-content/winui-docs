@@ -382,13 +382,13 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ![Add ribbon split button in group](Getting-Started-images/add-ribbon-split-button.png)
 
-N> The other icon types such as   [BitmapIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.bitmapicon?view=windows-app-sdk-1.0), [FontIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.fonticon?view=windows-app-sdk-1.0), [PathIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.pathicon?view=windows-app-sdk-1.0) and [SymbolIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.symbolicon?view=windows-app-sdk-1.0) can be used for the Ribbon items such as RibbonButton, RibbonDropDownButton, RibbonSplitButton and Ribbon Item host controls.
+N> The other icon types such as   [BitmapIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.bitmapicon?view=windows-app-sdk-1.0), [FontIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.fonticon?view=windows-app-sdk-1.0), [PathIcon](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.pathicon?view=windows-app-sdk-1.0) and [SymbolIcon](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.symbolicon?view=windows-app-sdk-1.0) can be used for the Ribbon items such as RibbonButton, RibbonDropDownButton, RibbonSplitButton and Ribbon Item host controls.
 
 ## Add ribbon combobox
 
 The `RibbonComboBox` control combines a text box and a drop-down list box, allowing users to choose items from the list or add new values and it allows to display in the normal, simplified, and overflow layout of the ribbon. Use the `DisplayOptions` property to set the control in different layouts.
 
-In the overflow menu, the RibbonComboBox template has been changed to look like a dropdown button. While clicking the ribboncombobox in the overflow menu, the flyout will open on either the right or left side and displays the ribbon combobox items.
+In the overflow menu, the RibbonComboBox template has been changed to look like a dropdown button. While clicking the ribbon combobox in the overflow menu, the flyout will open on either the right or left side and displays the ribbon combobox items.
 
 {% tabs %}
 {% highlight xaml %}
