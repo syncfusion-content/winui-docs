@@ -31,6 +31,8 @@ For the circle style, you can use the `AvatarSize` property to set the avatar's 
 
 The following code sample illustrates how to set the visual styles of AvatarView to `Circle`.
 
+N> The default Avatar Shape is Circle.
+
 {% tabs %}
 {% highlight xaml %}
 

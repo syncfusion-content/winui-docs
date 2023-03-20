@@ -143,3 +143,35 @@ avatarView.Background = new LinearGradientBrush()
 {% endtabs %}
 
 ![WinUI AvatarView control with Gradient Background](avatarview_images/winui_avatarview_gradient.png)
+
+## Font
+
+Customize the Font of AvatarView control by using the `FontFamily` and `Foreground` properties to achieve the desired look.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfAvatarView  ContentType="Initials" 
+                          AvatarName="Alex"
+                          AvatarSize="ExtraLarge"
+                          FontFamily="Segoe UI Variable Static Display"
+                          Foreground="#FF69531C"
+                          Background="#FFF2E9C8">
+</syncfusion:SfAvatarView>
+  
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfAvatarView avatarView = new SfAvatarView();
+avatarView.ContentType = AvatarContentType.Initials;
+avatarView.AvatarName = "Alex";
+avatarView.AvatarSize = AvatarSize.ExtraLarge;
+avatarView.FontFamily = new FontFamily("Segoe UI Variable Static Display");
+avatarView.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0x69, 0x53, 0x1C));
+avatarView.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xF2, 0xE9, 0xC8));
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI AvatarView control with custom Font](avatarview_images/winui_avatarview_font.png)
