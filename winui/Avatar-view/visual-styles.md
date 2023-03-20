@@ -19,6 +19,33 @@ The `AvatarView` control provides support for various built-in visual styles. Yo
 
 Custom type allows you to customize the AvatarView control with height, width, font and corner radius.
 
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfAvatarView  AvatarShape="Custom"
+                          Height="60"
+                          Width="75"
+                          AvatarName="Alex"
+                          FontSize="35"
+                          CornerRadius="0,23,0,23">
+</syncfusion:SfAvatarView>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfAvatarView avatarView = new SfAvatarView();
+avatarView.AvatarShape = AvatarShape.Custom;
+avatarView.Height = 60;
+avatarView.Width = 75;  
+avatarView.AvatarName = "Alex";
+avatarView.FontSize = 35;
+avatarView.CornerRadius = new CornerRadius(0,23,0,23);
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI AvatarView control with custom visual styles](avatarview_images/winui_custom_style_avatarview.png)
+
 ## Circle
 
 For the circle style, you can use the `AvatarSize` property to set the avatar's pre-defined circle size, which includes the following values:
@@ -30,6 +57,8 @@ For the circle style, you can use the `AvatarSize` property to set the avatar's 
 * Extra-small
 
 The following code sample illustrates how to set the visual styles of AvatarView to `Circle`.
+
+N> The default `AvatarShape` is Circle.
 
 {% tabs %}
 {% highlight xaml %}
@@ -45,7 +74,7 @@ The following code sample illustrates how to set the visual styles of AvatarView
 
 <Page.Content>
     <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-        <Grid >
+        <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
@@ -58,16 +87,16 @@ The following code sample illustrates how to set the visual styles of AvatarView
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <syncfusion:SfAvatarView AvatarShape="Circle" AvatarSize="ExtraLarge" Grid.Row="0" Grid.Column="4" Style="{StaticResource AvatarViewStyle}"/>
-            <TextBlock Text="Extra-large" Grid.Row="1" TextAlignment="Center" Grid.Column="4" FontSize="10"/>
-            <syncfusion:SfAvatarView AvatarShape="Circle" AvatarSize="Large" Grid.Row="0" Grid.Column="3" Style="{StaticResource AvatarViewStyle}"/>
-            <TextBlock Text="Large" Grid.Row="1" TextAlignment="Center" Grid.Column="3" FontSize="10"/>
+            <syncfusion:SfAvatarView AvatarShape="Circle" AvatarSize="ExtraLarge" Grid.Row="0" Grid.Column="0" Style="{StaticResource AvatarViewStyle}"/>
+            <TextBlock Text="Extra-small" Grid.Row="1" TextAlignment="Center" Grid.Column="4" FontSize="10"/>
+            <syncfusion:SfAvatarView AvatarShape="Circle" AvatarSize="Large" Grid.Row="0" Grid.Column="1" Style="{StaticResource AvatarViewStyle}"/>
+            <TextBlock Text="Small" Grid.Row="1" TextAlignment="Center" Grid.Column="3" FontSize="10"/>
             <syncfusion:SfAvatarView AvatarShape="Circle" AvatarSize="Medium" Grid.Row="0" Grid.Column="2" Style="{StaticResource AvatarViewStyle}"/>
             <TextBlock Text="Medium" Grid.Row="1" TextAlignment="Center" Grid.Column="2" FontSize="10"/>
-            <syncfusion:SfAvatarView AvatarShape="Circle" AvatarSize="Small" Grid.Row="0" Grid.Column="1" Style="{StaticResource AvatarViewStyle}"/>
-            <TextBlock Text="Small" Grid.Row="1" TextAlignment="Center" Grid.Column="1" FontSize="10"/>
-            <syncfusion:SfAvatarView AvatarShape="Circle" AvatarSize="ExtraSmall" Grid.Row="0" Grid.Column="0" Style="{StaticResource AvatarViewStyle}"/>
-            <TextBlock Text="Extra-small" Grid.Row="1"  TextAlignment="Center" Grid.Column="0" FontSize="10"/>
+            <syncfusion:SfAvatarView AvatarShape="Circle" AvatarSize="Small" Grid.Row="0" Grid.Column="3" Style="{StaticResource AvatarViewStyle}"/>
+            <TextBlock Text="Large" Grid.Row="1" TextAlignment="Center" Grid.Column="1" FontSize="10"/>
+            <syncfusion:SfAvatarView AvatarShape="Circle" AvatarSize="ExtraSmall" Grid.Row="0" Grid.Column="4" Style="{StaticResource AvatarViewStyle}"/>
+            <TextBlock Text="Extra-large" Grid.Row="1"  TextAlignment="Center" Grid.Column="0" FontSize="10"/>
         </Grid>
     </StackPanel>
 </Page.Content>
@@ -103,7 +132,7 @@ avatarView1.ContentType = AvatarContentType.AvatarCharacter;
 avatarView1.AvatarCharacter = AvatarCharacter.Avatar13;
 
 TextBlock LargeCircleTextBlock = new TextBlock();
-LargeCircleTextBlock.Text = "Large;
+LargeCircleTextBlock.Text = "Large";
 LargeCircleTextBlock.FontSize = 12;
 LargeCircleTextBlock.TextAlignment = TextAlignment.Center;
 LargeCircleTextBlock.FontSize = 10;
@@ -167,11 +196,11 @@ Grid.SetRow(avatarView3, 0);
 Grid.SetRow(avatarView2, 0);
 Grid.SetRow(avatarView1, 0);
 
-Grid.SetColumn(avatarView5, 0);
-Grid.SetColumn(avatarView4, 1);
+Grid.SetColumn(avatarView5, 4);
+Grid.SetColumn(avatarView4, 3);
 Grid.SetColumn(avatarView3, 2);
-Grid.SetColumn(avatarView2, 3);
-Grid.SetColumn(avatarView1, 4);
+Grid.SetColumn(avatarView2, 1);
+Grid.SetColumn(avatarView1, 0);
 
 Grid.SetRow(XSmallCircleTextBlock, 1);
 Grid.SetRow(SmallCircleTextBlock, 1);
@@ -179,11 +208,11 @@ Grid.SetRow(MediumCircleTextBlock, 1);
 Grid.SetRow(LargeCircleTextBlock, 1);
 Grid.SetRow(XLargeCircleTextBlock, 1);
 
-Grid.SetColumn(XSmallCircleTextBlock, 0);
-Grid.SetColumn(SmallCircleTextBlock, 1);
+Grid.SetColumn(XSmallCircleTextBlock, 4);
+Grid.SetColumn(SmallCircleTextBlock, 3);
 Grid.SetColumn(MediumCircleTextBlock, 2);
-Grid.SetColumn(LargeCircleTextBlock, 3);
-Grid.SetColumn(XLargeCircleTextBlock, 4);
+Grid.SetColumn(LargeCircleTextBlock, 1);
+Grid.SetColumn(XLargeCircleTextBlock, 0);
 stack.Children.Add(mainGrid);
 
 {% endhighlight %}
@@ -217,29 +246,29 @@ The following code sample illustrates how to set the visual styles of AvatarView
 
 <Page.Content>
     <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-        <Grid >
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
-                <syncfusion:SfAvatarView AvatarShape="Square" AvatarSize="ExtraLarge" Grid.Row="0" Grid.Column="4" Style="{StaticResource AvatarViewStyle}"/>
-                <TextBlock Text="Extra-large" Grid.Row="1" TextAlignment="Center" Grid.Column="4" FontSize="10"/>
-                <syncfusion:SfAvatarView AvatarShape="Square" AvatarSize="Large" Grid.Row="0" Grid.Column="3" Style="{StaticResource AvatarViewStyle}"/>
-                <TextBlock Text="Large" TextAlignment="Center" Grid.Column="3" FontSize="10"/>
-                <syncfusion:SfAvatarView AvatarShape="Square" AvatarSize="Medium" Grid.Row="0" Grid.Column="2" Style="{StaticResource AvatarViewStyle}"/>
-                <TextBlock Text="Medium" TextAlignment="Center" Grid.Column="2" FontSize="10"/>
-                <syncfusion:SfAvatarView AvatarShape="Square" AvatarSize="Small" Grid.Row="0" Grid.Column="1" Style="{StaticResource AvatarViewStyle}"/>
-                <TextBlock Text="Small" TextAlignment="Center" Grid.Column="1" FontSize="10"/>
-                <syncfusion:SfAvatarView AvatarShape="Square" AvatarSize="ExtraSmall" Grid.Row="0" Grid.Column="0" Style="{StaticResource AvatarViewStyle}"/>
-                <TextBlock Text="Extra-small" TextAlignment="Center" Grid.Column="0" FontSize="10"/>
+            <syncfusion:SfAvatarView AvatarShape="Square" AvatarSize="ExtraLarge" Grid.Row="0" Grid.Column="0" Style="{StaticResource AvatarViewStyle}"/>
+            <TextBlock Text="Extra-small" Grid.Row="1" TextAlignment="Center" Grid.Column="4" FontSize="10"/>
+            <syncfusion:SfAvatarView AvatarShape="Square" AvatarSize="Large" Grid.Row="0" Grid.Column="1" Style="{StaticResource AvatarViewStyle}"/>
+            <TextBlock Text="Small" Grid.Row="1" TextAlignment="Center" Grid.Column="3" FontSize="10"/>
+            <syncfusion:SfAvatarView AvatarShape="Square" AvatarSize="Medium" Grid.Row="0" Grid.Column="2" Style="{StaticResource AvatarViewStyle}"/>
+            <TextBlock Text="Medium" Grid.Row="1" TextAlignment="Center" Grid.Column="2" FontSize="10"/>
+            <syncfusion:SfAvatarView AvatarShape="Square" AvatarSize="Small" Grid.Row="0" Grid.Column="3" Style="{StaticResource AvatarViewStyle}"/>
+            <TextBlock Text="large" Grid.Row="1" TextAlignment="Center" Grid.Column="1" FontSize="10"/>
+            <syncfusion:SfAvatarView AvatarShape="Square" AvatarSize="ExtraSmall" Grid.Row="0" Grid.Column="4" Style="{StaticResource AvatarViewStyle}"/>
+            <TextBlock Text="Extra-large" Grid.Row="1" TextAlignment="Center" Grid.Column="0" FontSize="10"/>
         </Grid>
     </StackPanel>
 </Page.Content>
@@ -339,11 +368,11 @@ Grid.SetRow(avatarView3, 0);
 Grid.SetRow(avatarView2, 0);
 Grid.SetRow(avatarView1, 0);
 
-Grid.SetColumn(avatarView5, 0);
-Grid.SetColumn(avatarView4, 1);
+Grid.SetColumn(avatarView5, 4);
+Grid.SetColumn(avatarView4, 3);
 Grid.SetColumn(avatarView3, 2);
-Grid.SetColumn(avatarView2, 3);
-Grid.SetColumn(avatarView1, 4);
+Grid.SetColumn(avatarView2, 1);
+Grid.SetColumn(avatarView1, 0);
 
 Grid.SetRow(XSmallSquareTextBlock, 1);
 Grid.SetRow(SmallSquareTextBlock, 1);
@@ -351,11 +380,11 @@ Grid.SetRow(MediumSquareTextBlock, 1);
 Grid.SetRow(LargeSquareTextBlock, 1);
 Grid.SetRow(XLargeSquareTextBlock, 1);
 
-Grid.SetColumn(XSmallSquareTextBlock, 0);
-Grid.SetColumn(SmallSquareTextBlock, 1);
+Grid.SetColumn(XSmallSquareTextBlock, 4);
+Grid.SetColumn(SmallSquareTextBlock, 3);
 Grid.SetColumn(MediumSquareTextBlock, 2);
-Grid.SetColumn(LargeSquareTextBlock, 3);
-Grid.SetColumn(XLargeSquareTextBlock, 4);
+Grid.SetColumn(LargeSquareTextBlock, 1);
+Grid.SetColumn(XLargeSquareTextBlock, 0);
 stack.Children.Add(mainGrid);
 
 {% endhighlight %}
