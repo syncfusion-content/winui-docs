@@ -100,7 +100,7 @@ avatarView.Background = new SolidColorBrush(Colors.Bisque);
 
 ## Gradient background
 
-You can use the `LinearGradientBrush` or `RadialGradientBrush` in the `Background` property to specify a range of colors for your AvatarView, as shown in the following code example.
+You can use the `LinearGradientBrush` or `RadialGradientBrush` for the Background property to specify a range of colors to apply the gradient background for the AvatarView, as shown in the following code example.
 
 {% tabs %}
 {% highlight xaml %}
