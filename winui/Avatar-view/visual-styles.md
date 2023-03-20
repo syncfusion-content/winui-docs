@@ -19,31 +19,15 @@ The `AvatarView` control provides support for various built-in visual styles. Yo
 
 Custom type allows you to customize the AvatarView control with height, width, font and corner radius.
 
-**Height**
-
-You can customize the height of the AvatarView control by using the `Height` property.
-
-**Width**
-
-You can customize the width of the AvatarView control by using the `Width` property.
-
-**FontSize**
-
-You can customize the font size of the AvatarView control by using the `FontSize` property.
-
-**CornerRadius**
-
-You can customize the corner radius of the AvatarView control by using the `CornerRadius` property.
-
 {% tabs %}
 {% highlight xaml %}
 
 <syncfusion:SfAvatarView  AvatarShape="Custom"
-                          Height="75"
+                          Height="60"
                           Width="75"
                           AvatarName="Alex"
                           FontSize="35"
-                          CornerRadius="0,0,34,34">
+                          CornerRadius="0,23,0,23">
 </syncfusion:SfAvatarView>
 
 {% endhighlight %}
@@ -51,11 +35,11 @@ You can customize the corner radius of the AvatarView control by using the `Corn
 
 SfAvatarView avatarView = new SfAvatarView();
 avatarView.AvatarShape = AvatarShape.Custom;
-avatarView.Height = 75;
+avatarView.Height = 60;
 avatarView.Width = 75;  
 avatarView.AvatarName = "Alex";
 avatarView.FontSize = 35;
-avatarView.CornerRadius = new CornerRadius(0,0,34,34);
+avatarView.CornerRadius = new CornerRadius(0,23,0,23);
 
 {% endhighlight %}
 {% endtabs %}
@@ -74,7 +58,7 @@ For the circle style, you can use the `AvatarSize` property to set the avatar's 
 
 The following code sample illustrates how to set the visual styles of AvatarView to `Circle`.
 
-N> The default Avatar Shape is Circle.
+N> The default `AvatarShape` is Circle.
 
 {% tabs %}
 {% highlight xaml %}

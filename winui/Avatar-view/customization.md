@@ -13,11 +13,11 @@ The `AvatarView` control offers a range of customization options, including the 
 
 ## Border
 
-Customize the border of `AvatarView` control by using the `BorderBrush` and `BorderThickness` properties to achieve the desired look.
+Customize the border of `AvatarView` control by using the `BorderBrush` and `BorderThickness` properties.
 
 **BorderBrush**
 
-You can customize the thickness of the AvatarView control by using the `BorderBrush` property.
+You can customize the border color of the AvatarView control by using the `BorderBrush` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -44,7 +44,7 @@ avatarView.BorderBrush = new SolidColorBrush(Colors.Red);
 
 **BorderThickness**
 
-You can customize the thickness of the AvatarView control by using the `BorderThickness` property.
+You can customize the border thickness of the AvatarView control by using the `BorderThickness` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -98,7 +98,7 @@ avatarView.Background = new SolidColorBrush(Colors.Bisque);
 
 ![WinUI AvatarView control with custom background](avatarview_images/winui_double_character_initialstype_avatarview.png)
 
-## Gradients
+## Gradient background
 
 You can use the `LinearGradientBrush` or `RadialGradientBrush` in the `Background` property to specify a range of colors for your AvatarView, as shown in the following code example.
 
@@ -146,7 +146,7 @@ avatarView.Background = new LinearGradientBrush()
 
 ## Font
 
-Customize the Font of AvatarView control by using the `FontFamily` and `Foreground` properties to achieve the desired look.
+You can customize the font of initials in the `AvatarView` control by using the `FontFamily` and `Foreground` properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -173,4 +173,4 @@ avatarView.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xF2, 0xE9, 0xC
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AvatarView control with custom Font](avatarview_images/winui_avatarview_font.png)
+![WinUI AvatarView control with custom font](avatarview_images/winui_avatarview_font.png)
