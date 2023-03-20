@@ -13,7 +13,7 @@ The `AvatarView` control offers a range of customization options, including the 
 
 ## Border
 
-Customize the border of AvatarView control by using the `BorderBrush` and `BorderThickness` properties to achieve the desired look.
+Customize the border of `AvatarView` control by using the `BorderBrush` and `BorderThickness` properties to achieve the desired look.
 
 **BorderBrush**
 
@@ -159,7 +159,6 @@ Customize the Font of AvatarView control by using the `FontFamily` and `Foregrou
                           Background="#FFF2E9C8">
 </syncfusion:SfAvatarView>
   
-
 {% endhighlight %}
 {% highlight c# %}
 

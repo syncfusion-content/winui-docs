@@ -19,6 +19,49 @@ The `AvatarView` control provides support for various built-in visual styles. Yo
 
 Custom type allows you to customize the AvatarView control with height, width, font and corner radius.
 
+**Height**
+
+You can customize the height of the AvatarView control by using the `Height` property.
+
+**Width**
+
+You can customize the width of the AvatarView control by using the `Width` property.
+
+**FontSize**
+
+You can customize the font size of the AvatarView control by using the `FontSize` property.
+
+**CornerRadius**
+
+You can customize the corner radius of the AvatarView control by using the `CornerRadius` property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfAvatarView  AvatarShape="Custom"
+                          Height="75"
+                          Width="75"
+                          AvatarName="Alex"
+                          FontSize="35"
+                          CornerRadius="0,0,34,34">
+</syncfusion:SfAvatarView>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfAvatarView avatarView = new SfAvatarView();
+avatarView.AvatarShape = AvatarShape.Custom;
+avatarView.Height = 75;
+avatarView.Width = 75;  
+avatarView.AvatarName = "Alex";
+avatarView.FontSize = 35;
+avatarView.CornerRadius = new CornerRadius(0,0,34,34);
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI AvatarView control with custom visual styles](avatarview_images/winui_custom_style_avatarview.png)
+
 ## Circle
 
 For the circle style, you can use the `AvatarSize` property to set the avatar's pre-defined circle size, which includes the following values:
