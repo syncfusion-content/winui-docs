@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visual Styles in WinUI AvatarView control | Syncfusion
-description: Learn here all about the different visual styles that are available in the WinUI AvatarView.
+description: Learn about the different visual styles that are available in the Syncfusion WinUI AvatarView.
 platform: WinUI
 control: AvatarView
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Visual Styles in WinUI AvatarView
 
-The `AvatarView` control provides support for various built-in visual styles. You can configure the visual style of your AvatarView by using the `AvatarShape` property and select from the available options, such as:
+The `AvatarView` control provides support for various built-in visual styles. Configure the visual style of your AvatarView by using the `AvatarShape` property and selecting from the available options, such as:
 
 * Custom
 * Circle
@@ -17,7 +17,7 @@ The `AvatarView` control provides support for various built-in visual styles. Yo
 
 ## Custom
 
-Custom type allows you to customize the AvatarView control with height, width, font and corner radius.
+The custom type allows you to customize the AvatarView control with height, width, font, and corner radius.
 
 {% tabs %}
 {% highlight xaml %}
@@ -48,7 +48,7 @@ avatarView.CornerRadius = new CornerRadius(0,23,0,23);
 
 ## Circle
 
-For the circle style, you can use the `AvatarSize` property to set the avatar's pre-defined circle size, which includes the following values:
+For the circle style, use the `AvatarSize` property to set the avatar's pre-defined circle size, which includes the following values.
 
 * Extra-large
 * Large
@@ -222,7 +222,7 @@ stack.Children.Add(mainGrid);
 
 ## Square
 
-For the square style, you can use the `AvatarSize` property to set the avatar's pre-defined square size, which includes the following values:
+For the square style, use the `AvatarSize` property to set the avatar's pre-defined square size, which includes the following values.
 
 * Extra-large
 * Large

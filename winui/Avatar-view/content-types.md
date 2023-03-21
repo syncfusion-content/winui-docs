@@ -9,11 +9,11 @@ documentation: ug
 
 # Content Types in WinUI AvatarView
 
-The `AvatarView` control supports five different types of content: `Default`, `Initials`, `CustomImage`, `AvatarCharacter`, and `GroupView`.
+The `AvatarView` control supports five types of content: `Default`, `Initials`, `CustomImage`, `AvatarCharacter`, and `GroupView`.
 
 ## Default
 
-Default content type is used for displaying the `Avatar1` character image when initializing the control without the initials or custom image or group source.
+The default content type displays the `Avatar1` character image when initializing the control without the initials, custom image, or group source.
 
 {% tabs %}
 {% highlight xaml %}
@@ -32,18 +32,18 @@ SfAvatarView avatarView = new SfAvatarView();
 
 ## Initials 
 
-The Initials content type is used to display initials in the AvatarView. To use this content type, you must provide a value for the `AvatarName` property, which sets the initials to be displayed in the avatar view. Depending on the specified `InitialsType` property, the initials will be formatted accordingly.
+The Initials content type displays initials in the AvatarView. To use this content type, you must provide a value for the `AvatarName` property, which sets the initials to be displayed in the avatar view. The initials will be formatted accordingly depending on the specified `InitialsType` property.
 
 ### InitialsType
 
 The `InitialsType` property includes two types:
 
-SingleCharacter - used to display a single character in the avatar.
-DoubleCharacter - used to display two characters in the avatar.
+`SingleCharacter` - Used to display a single character in the avatar.
+`DoubleCharacter` - Used to display two characters in the avatar.
 
-**SingleCharacter**
+**Single character**
 
-The single character initials type is used to display the first character of the AvatarName property value as the avatar.
+The single character initials type displays the first character of the `AvatarName` property value as the avatar.
 
 {% tabs %}
 {% highlight xaml %}
@@ -68,9 +68,9 @@ avatarView.Background = new SolidColorBrush(Colors.Bisque);
 
 ![WinUI AvatarView control with SingleCharacter](avatarview_images/winui_single_character_initialstype_avatarview.png)
 
-**DoubleCharacter**
+**Double character**
 
-The double character initials type is used to display a two-character text as avatar that has been set in the `AvatarName` property. If the AvatarName consist of a single word, the first and last letters of that word will be displayed. However, if the `AvatarName` contains two or more words, the first letter of the first word and the first letter of the second word will be displayed.
+The double character initials type displays a two-character text as an avatar set in the `AvatarName` property. If the AvatarName consists of a single word, that word's first and last letters will be displayed. However, if the `AvatarName` contains two or more words, the first letter of the first word and the first letter of the second word will be displayed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -99,7 +99,7 @@ avatarView.Background = new SolidColorBrush(Colors.Bisque);
 
 ## Custom image
 
-You can add any custom image as the avatar by using the `ImageSource` property.
+Add any custom image as the avatar by using the `ImageSource` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -124,7 +124,7 @@ avatarView.ImageSource = new BitmapImage(new Uri("ms-appx:///Images\\person.png"
 
 ## Avatar character
 
-You can set the pre-defined avatar character images as avatar view by using the `AvatarCharacter` property.
+Set the pre-defined avatar character images as avatar by using the `AvatarCharacter` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -149,7 +149,7 @@ avatarView.AvatarCharacter = AvatarCharacter.Avatar15;
 
 ## Group view 
 
-The `Group` content type allows you to display up to three images or initials within a single avatar view. To use this content type, you must set the following properties, which include:
+The `Group` content type allows you to display up to three images or initials within a single avatar view. To use this content type, you must set the following properties.
 
 `GroupSource`: Used to set the ItemsSource for the group view.
 `InitialsMemberPath`: Used to set the initials for the group view.
