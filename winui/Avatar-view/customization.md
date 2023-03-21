@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in WinUI AvatarView control | Syncfusion
-description: Learn all about the various customization features available in the WinUI AvatarView control, including border, background, gradient, font, and more.
+description: Learn about the various customization features in the WinUI AvatarView control, including border, background, gradient, font, and more.
 platform: WinUI
 control: AvatarView
 documentation: ug
@@ -9,15 +9,15 @@ documentation: ug
 
 # Customization in WinUI AvatarView 
 
-The `AvatarView` control offers a range of customization options, including the ability to modify its border, background, and more.
+The `AvatarView` control offers a range of customization options, including modifying its border, background, and more.
 
 ## Border
 
-Customize the border of `AvatarView` control by using the `BorderBrush` and `BorderThickness` properties.
+Customize the `AvatarView` control border using the `BorderBrush` and `BorderThickness` properties.
 
 **BorderBrush**
 
-You can customize the border color of the AvatarView control by using the `BorderBrush` property.
+Customize the border color of the AvatarView control by using the `BorderBrush` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -44,7 +44,7 @@ avatarView.BorderBrush = new SolidColorBrush(Colors.Red);
 
 **BorderThickness**
 
-You can customize the border thickness of the AvatarView control by using the `BorderThickness` property.
+Customize the border thickness of the AvatarView control by using the `BorderThickness` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -71,7 +71,7 @@ avatarView.BorderBrush = new SolidColorBrush(Colors.Black);
 
 ## Background
 
-You can customize the background of the AvatarView control by using the `Background` property.
+Customize the background of the AvatarView control by using the `Background` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -100,7 +100,7 @@ avatarView.Background = new SolidColorBrush(Colors.Bisque);
 
 ## Gradient background
 
-You can use the `LinearGradientBrush` or `RadialGradientBrush` for the Background property to specify a range of colors to apply the gradient background for the AvatarView, as shown in the following code example.
+Use the `LinearGradientBrush` or `RadialGradientBrush` for the Background property to specify a range of colors to apply the gradient background for the AvatarView as shown in the following code example.
 
 {% tabs %}
 {% highlight xaml %}
@@ -146,7 +146,7 @@ avatarView.Background = new LinearGradientBrush()
 
 ## Font
 
-You can customize the font of initials in the `AvatarView` control by using the `FontFamily` and `Foreground` properties.
+Customize the font of initials in the AvatarView control by using the `FontFamily` and `Foreground` properties.
 
 {% tabs %}
 {% highlight xaml %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WinUI AvatarView control | Syncfusion
-description: Learn here all about getting started with the Syncfusion WinUI AvatarView (SfAvatarView) control with its basic features.
+description: Learn about getting started with the Syncfusion WinUI AvatarView (SfAvatarView) control with its basic features.
 platform: WinUI
 control: AvatarView
 documentation: ug
@@ -20,7 +20,7 @@ This section explains the steps required to add the WinUI AvatarView control wit
 
 ## Initialize AvatarView 
 
-By default, AvatarView control is displayed with `Avatar1` character image, AvatarShape of `Circle` and AvatarSize of `Large`.
+By default, AvatarView control is displayed with the `Avatar1` character image, AvatarShape of `Circle`, and AvatarSize of `Large`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -53,7 +53,7 @@ SfAvatarView avatarView = new SfAvatarView();
 
 ## Initialize AvatarView with ImageSource
 
-You can add any custom image as an avatar in WinUI AvatarView control using the `ImageSource` property.
+Add any custom image as an avatar in WinUI AvatarView control using the `ImageSource` property.
 
 {% tabs %}
 {% highlight xaml %}
