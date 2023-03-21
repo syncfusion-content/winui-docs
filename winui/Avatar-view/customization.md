@@ -146,7 +146,7 @@ avatarView.Background = new LinearGradientBrush()
 
 ## Font
 
-Customize the font of initials in the AvatarView control by using the `FontFamily` and `Foreground` properties.
+Customize the font of initials in the `AvatarView` control by using the `FontFamily` and `Foreground` properties.
 
 {% tabs %}
 {% highlight xaml %}

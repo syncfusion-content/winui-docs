@@ -38,12 +38,12 @@ The Initials content type displays initials in the AvatarView. To use this conte
 
 The `InitialsType` property includes two types:
 
-SingleCharacter - Used to display a single character in the avatar.
-DoubleCharacter - Used to display two characters in the avatar.
+`SingleCharacter` - Used to display a single character in the avatar.
+`DoubleCharacter` - Used to display two characters in the avatar.
 
-**SingleCharacter**
+**Single character**
 
-The single character initials type is used to display the first character of the AvatarName property value as the avatar.
+The single character initials type displays the first character of the `AvatarName` property value as the avatar.
 
 {% tabs %}
 {% highlight xaml %}
@@ -68,7 +68,7 @@ avatarView.Background = new SolidColorBrush(Colors.Bisque);
 
 ![WinUI AvatarView control with SingleCharacter](avatarview_images/winui_single_character_initialstype_avatarview.png)
 
-**DoubleCharacter**
+**Double character**
 
 The double character initials type displays a two-character text as an avatar set in the `AvatarName` property. If the AvatarName consists of a single word, that word's first and last letters will be displayed. However, if the `AvatarName` contains two or more words, the first letter of the first word and the first letter of the second word will be displayed.
 
@@ -124,7 +124,7 @@ avatarView.ImageSource = new BitmapImage(new Uri("ms-appx:///Images\\person.png"
 
 ## Avatar character
 
-Set the pre-defined avatar character images as avatar view by using the `AvatarCharacter` property.
+Set the pre-defined avatar character images as avatar by using the `AvatarCharacter` property.
 
 {% tabs %}
 {% highlight xaml %}
