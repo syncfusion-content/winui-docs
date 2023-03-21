@@ -9,7 +9,7 @@ documentation: ug
 
 # Date selection in WinUI Calendar Date Picker (SfCalendarDatePicker)
 
-This section explains about the date selection in [WinUI Calendar Date Picker](https://www.syncfusion.com/winui-controls/calendar-datepicker) control and how to restrict or limit the users to select date within a range.
+This section explains about the date selection in [WinUI Calendar Date Picker](https://www.syncfusion.com/winui-controls/calendar-date-picker) control and how to restrict or limit the users to select date within a range.
 
 ## Select the date 
 
