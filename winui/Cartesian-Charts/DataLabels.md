@@ -18,7 +18,7 @@ Each data label can be represented by the following:
 
 ## Enable Data Label 
 
-The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataMarkerSeries.html#Syncfusion_UI_Xaml_Charts_DataMarkerSeries_ShowDataLabels) property of series is used to enable the data labels.
+The [ShowDataLabels]() property of series is used to enable the data labels.
 
 {% tabs %}
 
