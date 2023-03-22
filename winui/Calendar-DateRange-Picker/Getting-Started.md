@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Calendar DateRange Picker
 
-This section explains the steps required to add the [WinUI Calendar DateRange Picker](https://www.syncfusion.com/winui-controls/calendar-daterangepicker) control and its date range selection options. 
+This section explains the steps required to add the [WinUI Calendar DateRange Picker](https://www.syncfusion.com/winui-controls/calendar-daterange-picker) control and its date range selection options. 
 
 ## Structure of Calendar DateRange Picker control
 
