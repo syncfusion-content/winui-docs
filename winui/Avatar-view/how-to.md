@@ -24,7 +24,7 @@ The `AvatarView` control provides support for `Badge` to notify users of new or 
             <notification:SfBadge Shape="None" 
                                   HorizontalPosition="0.85"
                                   VerticalPosition="0.85">
-                  <Viewbox Height="26" Width="26">
+                  <Viewbox Height="27" Width="27">
                         <Grid Height="13" Width="13">
                               <Ellipse x:Name="ellipse"
                                        Fill="LimeGreen"
@@ -54,7 +54,7 @@ badgeContainer.Badge = badge;
 badge.Shape = BadgeShape.None;
 badge.HorizontalPosition = 0.85;
 badge.VerticalPosition = 0.85;
-Viewbox viewBox = new Viewbox() { Height = 26, Width = 26 };
+Viewbox viewBox = new Viewbox() { Height = 27, Width = 27 };
 Grid grid = new Grid() { Height = 13, Width = 13 };
 
 Ellipse ellipse = new Ellipse();
