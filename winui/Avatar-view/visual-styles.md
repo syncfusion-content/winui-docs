@@ -9,7 +9,7 @@ documentation: ug
 
 # Visual Styles in WinUI AvatarView
 
-The `AvatarView` control provides support for various built-in visual styles. Configure the visual style of your AvatarView by using the `AvatarShape` property and selecting from the available options, such as:
+The [SfAvatarView](https://www.syncfusion.com/winui-controls/avatar-view) control provides support for various built-in visual styles. Configure the visual style of your AvatarView by using the [AvatarShape](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html#Syncfusion_UI_Xaml_Core_SfAvatarView_AvatarShape) property and selecting from the available options, such as:
 
 * Custom
 * Circle
@@ -48,7 +48,7 @@ avatarView.CornerRadius = new CornerRadius(0,23,0,23);
 
 ## Circle
 
-For the circle style, use the `AvatarSize` property to set the avatar's pre-defined circle size, which includes the following values.
+For the circle style, use the [AvatarSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html#Syncfusion_UI_Xaml_Core_SfAvatarView_AvatarSize) property to set the avatar's pre-defined circle size, which includes the following values.
 
 * Extra-large
 * Large
@@ -56,9 +56,9 @@ For the circle style, use the `AvatarSize` property to set the avatar's pre-defi
 * Small
 * Extra-small
 
-The following code sample illustrates how to set the visual styles of AvatarView to `Circle`.
+The following code sample illustrates how to set the visual styles of AvatarView to [Circle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.AvatarShape.html#Syncfusion_UI_Xaml_Core_AvatarShape_Circle).
 
-N> The default `AvatarShape` is Circle.
+N> The default AvatarShape is Circle.
 
 {% tabs %}
 {% highlight xaml %}
@@ -222,7 +222,7 @@ stack.Children.Add(mainGrid);
 
 ## Square
 
-For the square style, use the `AvatarSize` property to set the avatar's pre-defined square size, which includes the following values.
+For the square style, use the [AvatarSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html#Syncfusion_UI_Xaml_Core_SfAvatarView_AvatarSize) property to set the avatar's pre-defined square size, which includes the following values.
 
 * Extra-large
 * Large
@@ -230,7 +230,7 @@ For the square style, use the `AvatarSize` property to set the avatar's pre-defi
 * Small
 * Extra-small
 
-The following code sample illustrates how to set the visual styles of AvatarView to `Square`.
+The following code sample illustrates how to set the visual styles of AvatarView to [Square](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.AvatarShape.html#Syncfusion_UI_Xaml_Core_AvatarShape_Square).
 
 {% tabs %}
 {% highlight xaml %}
