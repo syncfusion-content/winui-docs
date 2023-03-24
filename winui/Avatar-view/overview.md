@@ -9,7 +9,7 @@ documentation: ug
 
 # WinUI AvatarView Overview
 
-The .NET AvatarView control provides a graphical representation of a user image that allows you to customize the view by adding an image, background color, icon, text, and more.
+The .NET WinUI `AvatarView` control provides a graphical representation of a user image that allows you to customize the view by adding an image, background color, icon, text, and more.
 
 ![WinUI AvatarView control overview](avatarview_images/winui_avatarview_overview.png)
 
