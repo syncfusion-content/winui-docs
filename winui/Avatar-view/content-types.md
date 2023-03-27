@@ -9,11 +9,11 @@ documentation: ug
 
 # Content Types in WinUI AvatarView
 
-The `AvatarView` control supports five types of content: `Default`, `Initials`, `CustomImage`, `AvatarCharacter`, and `GroupView`.
+The [SfAvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html) control supports five types of content: [Default](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.AvatarContentType.html#Syncfusion_UI_Xaml_Core_AvatarContentType_Default), [Initials](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.AvatarContentType.html#Syncfusion_UI_Xaml_Core_AvatarContentType_Initials), [CustomImage](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.AvatarContentType.html#Syncfusion_UI_Xaml_Core_AvatarContentType_CustomImage), [AvatarCharacter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.AvatarContentType.html#Syncfusion_UI_Xaml_Core_AvatarContentType_AvatarCharacter), and [GroupView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.AvatarContentType.html#Syncfusion_UI_Xaml_Core_AvatarContentType_Group).
 
 ## Default
 
-The default content type displays the `Avatar1` character image when initializing the control without the initials, custom image, or group source.
+The default content type displays the [Avatar1](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.AvatarCharacter.html#Syncfusion_UI_Xaml_Core_AvatarCharacter_Avatar1) character image when initializing the control without the initials, custom image, or group source.
 
 {% tabs %}
 {% highlight xaml %}
@@ -32,18 +32,18 @@ SfAvatarView avatarView = new SfAvatarView();
 
 ## Initials 
 
-The Initials content type displays initials in the AvatarView. To use this content type, you must provide a value for the `AvatarName` property, which sets the initials to be displayed in the avatar view. The initials will be formatted accordingly depending on the specified `InitialsType` property.
+The Initials content type displays initials in the AvatarView. To use this content type, you must provide a value for the [AvatarName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html#Syncfusion_UI_Xaml_Core_SfAvatarView_AvatarName) property, which sets the initials to be displayed in the avatar view. The initials will be formatted accordingly depending on the specified [InitialsType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html#Syncfusion_UI_Xaml_Core_SfAvatarView_InitialsType) property.
 
 ### InitialsType
 
-The `InitialsType` property includes two types:
+The [InitialsType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html#Syncfusion_UI_Xaml_Core_SfAvatarView_InitialsType) property includes two types:
 
-`SingleCharacter` - Used to display a single character in the avatar.
-`DoubleCharacter` - Used to display two characters in the avatar.
+[SingleCharacter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.AvatarInitialsType.html#Syncfusion_UI_Xaml_Core_AvatarInitialsType_SingleCharacter) - Used to display a single character in the avatar.
+[DoubleCharacter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.AvatarInitialsType.html#Syncfusion_UI_Xaml_Core_AvatarInitialsType_DoubleCharacter) - Used to display two characters in the avatar.
 
 **Single character**
 
-The single character initials type displays the first character of the `AvatarName` property value as the avatar.
+The single character initials type displays the first character of the [AvatarName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html#Syncfusion_UI_Xaml_Core_SfAvatarView_AvatarName) property value as the avatar.
 
 {% tabs %}
 {% highlight xaml %}
@@ -70,7 +70,7 @@ avatarView.Background = new SolidColorBrush(Colors.Bisque);
 
 **Double character**
 
-The double character initials type displays a two-character text as an avatar set in the `AvatarName` property. If the AvatarName consists of a single word, that word's first and last letters will be displayed. However, if the `AvatarName` contains two or more words, the first letter of the first word and the first letter of the second word will be displayed.
+The double character initials type displays a two-character text as an avatar set in the [AvatarName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html#Syncfusion_UI_Xaml_Core_SfAvatarView_AvatarName) property. If the AvatarName consists of a single word, that word's first and last letters will be displayed. However, if the [AvatarName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html#Syncfusion_UI_Xaml_Core_SfAvatarView_AvatarName) contains two or more words, the first letter of the first word and the first letter of the second word will be displayed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -99,7 +99,7 @@ avatarView.Background = new SolidColorBrush(Colors.Bisque);
 
 ## Custom image
 
-Add any custom image as the avatar by using the `ImageSource` property.
+Add any custom image as the avatar by using the [ImageSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html#Syncfusion_UI_Xaml_Core_SfAvatarView_ImageSource) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -124,7 +124,7 @@ avatarView.ImageSource = new BitmapImage(new Uri("ms-appx:///Images\\person.png"
 
 ## Avatar character
 
-Set the pre-defined avatar character images as avatar by using the `AvatarCharacter` property.
+Set the pre-defined avatar character images as avatar by using the [AvatarCharacter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.AvatarContentType.html#Syncfusion_UI_Xaml_Core_AvatarContentType_AvatarCharacter) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -149,13 +149,13 @@ avatarView.AvatarCharacter = AvatarCharacter.Avatar15;
 
 ## Group view 
 
-The `Group` content type allows you to display up to three images or initials within a single avatar view. To use this content type, you must set the following properties.
+The [Group](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.AvatarContentType.html#Syncfusion_UI_Xaml_Core_AvatarContentType_Group) content type allows you to display up to three images or initials within a single avatar view. To use this content type, you must set the following properties.
 
-`GroupSource`: Used to set the ItemsSource for the group view.
-`InitialsMemberPath`: Used to set the initials for the group view.
-`InitialsColorMemberPath`: Used to set the initials color for the group view.
-`BackgroundColorMemberPath`: Used to set the background color for the group view.
-`ImageSourceMemberPath`: Used to set the image source for the group view.
+[GroupSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html#Syncfusion_UI_Xaml_Core_SfAvatarView_GroupSource): Used to set the ItemsSource for the group view.
+[InitialsMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html#Syncfusion_UI_Xaml_Core_SfAvatarView_InitialsMemberPath): Used to set the initials for the group view.
+[InitialsColorMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html#Syncfusion_UI_Xaml_Core_SfAvatarView_InitialsColorMemberPath): Used to set the initials color for the group view.
+[BackgroundColorMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html#Syncfusion_UI_Xaml_Core_SfAvatarView_BackgroundColorMemberPath): Used to set the background color for the group view.
+[ImageSourceMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html#Syncfusion_UI_Xaml_Core_SfAvatarView_ImageSourceMemberPath): Used to set the image source for the group view.
 
 The following code example illustrates how to create an ItemsSource for a group avatar view.
 
