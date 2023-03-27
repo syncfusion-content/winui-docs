@@ -9,7 +9,7 @@ documentation: ug
 
 # WinUI BusyIndicator Overview
 
-The [Busy Indicator control](https://www.syncfusion.com/winui-controls/busy-indicator) for .NET WinUI is used to display a predefined built-in animation when an operation runs in the application's background and is waiting for its completion. It can be customized in terms of size, color, duration, and content.
+The [WinUI Busy Indicator control](https://www.syncfusion.com/winui-controls/busy-indicator) is used to display a predefined built-in animation when an operation runs in the application's background and is waiting for its completion. It can be customized in terms of size, color, duration, and content.
 
 ![BusyIndicator control overview in WinUI](BusyIndicator_images/winui_busyindicator_overview.gif)
 
