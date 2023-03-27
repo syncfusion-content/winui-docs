@@ -9,15 +9,15 @@ documentation: ug
 
 # Customization in WinUI AvatarView 
 
-The [SfAvatarView](https://www.syncfusion.com/winui-controls/avatar-view) control offers a range of customization options, including modifying its border, background, and more.
+The [SfAvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html) control offers a range of customization options, including modifying its border, background, and more.
 
 ## Border
 
-Customize the `AvatarView` control border using the [BorderBrush](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.borderbrush?view=windows-app-sdk-1.2) and [BorderThickness](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.control.borderthickness?view=winrt-22621) properties.
+Customize the `AvatarView` control border using the [BorderBrush](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.borderbrush) and [BorderThickness](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.borderthickness) properties.
 
 **BorderBrush**
 
-Customize the border color of the AvatarView control by using the [BorderBrush](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.borderbrush?view=windows-app-sdk-1.2) property.
+Customize the border color of the AvatarView control by using the [BorderBrush](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.borderbrush) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -44,7 +44,7 @@ avatarView.BorderBrush = new SolidColorBrush(Colors.Red);
 
 **BorderThickness**
 
-Customize the border thickness of the AvatarView control by using the [BorderThickness](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.control.borderthickness?view=winrt-22621) property.
+Customize the border thickness of the AvatarView control by using the [BorderThickness](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.borderthickness) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -71,7 +71,7 @@ avatarView.BorderBrush = new SolidColorBrush(Colors.Black);
 
 ## Background
 
-Customize the background of the AvatarView control by using the [Background](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.control.background?view=winrt-22621) property.
+Customize the background of the AvatarView control by using the [Background](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.background) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -100,7 +100,7 @@ avatarView.Background = new SolidColorBrush(Colors.Bisque);
 
 ## Gradient background
 
-Use the [LinearGradientBrush](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.lineargradientbrush?view=winrt-22621) or [RadialGradientBrush](https://learn.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.media.radialgradientbrush?view=winui-2.8) for the [Background](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.control.background?view=winrt-22621) property to specify a range of colors to apply the gradient background for the AvatarView as shown in the following code example.
+Use the `LinearGradientBrush` or `RadialGradientBrush` for the [Background](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.background) property to specify a range of colors to apply the gradient background for the AvatarView as shown in the following code example.
 
 {% tabs %}
 {% highlight xaml %}
@@ -146,7 +146,7 @@ avatarView.Background = new LinearGradientBrush()
 
 ## Font
 
-Customize the font of initials in the `AvatarView` control by using the [FontFamily](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.control.fontfamily?view=winrt-22621) and [Foreground](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.foreground?view=windows-app-sdk-1.2) properties.
+Customize the font of initials in the `AvatarView` control by using the [FontFamily](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.fontfamily) and [Foreground](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.foreground) properties.
 
 {% tabs %}
 {% highlight xaml %}
