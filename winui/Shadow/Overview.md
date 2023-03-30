@@ -9,7 +9,7 @@ documentation: ug
 
 # WinUI Shadow Overview
 
-The .NET [WinUI Shadow control](https://www.syncfusion.com/winui-controls/shadow) is used to apply shadow effects to framework elements to give them an appearance of depth, allowing users to easily differentiate overlapping elements and enjoy a beautiful and appealing user interface.
+The [WinUI Shadow control](https://www.syncfusion.com/winui-controls/shadow) is used to apply shadow effects to framework elements to give them an appearance of depth, allowing users to easily differentiate overlapping elements and enjoy a beautiful and appealing user interface.
 
 ![Shadow control overview in WinUI](Shadow_images/winui_shadow_overview.png)
 

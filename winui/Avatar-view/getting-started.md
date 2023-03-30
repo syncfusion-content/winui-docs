@@ -9,18 +9,18 @@ documentation: ug
 
 # Getting Started with WinUI AvatarView
 
-This section explains the steps required to add the WinUI AvatarView control with its basic features.
+This section explains the steps required to add the WinUI [SfAvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html) control with its basic features.
 
 ## Creating an application with WinUI AvatarView
 
 1. Create a [WinUI 3 desktop app for C# and .NET 6](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Add reference to [Syncfusion.Core.WinUI](https://www.nuget.org/packages/Syncfusion.Core.WinUI) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Core` in XAML or C# code.
-4. Initialize the `SfAvatarView` control.
+4. Initialize the [SfAvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html) control.
 
 ## Initialize AvatarView 
 
-By default, AvatarView control is displayed with the `Avatar1` character image, AvatarShape of `Circle`, and AvatarSize of `Large`.
+By default, AvatarView control is displayed with the [Avatar1](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.AvatarCharacter.html#Syncfusion_UI_Xaml_Core_AvatarCharacter_Avatar1) character image, AvatarShape of [Circle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.AvatarShape.html#Syncfusion_UI_Xaml_Core_AvatarShape_Circle), and AvatarSize of [Small](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.AvatarSize.html#Syncfusion_UI_Xaml_Core_AvatarSize_Small).
 
 {% tabs %}
 {% highlight xaml %}
@@ -53,7 +53,7 @@ SfAvatarView avatarView = new SfAvatarView();
 
 ## Initialize AvatarView with ImageSource
 
-Add any custom image as an avatar in WinUI AvatarView control using the `ImageSource` property.
+Add any custom image as an avatar in WinUI AvatarView control using the [ImageSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html#Syncfusion_UI_Xaml_Core_SfAvatarView_ImageSource) property.
 
 {% tabs %}
 {% highlight xaml %}
