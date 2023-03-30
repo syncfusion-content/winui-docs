@@ -11,7 +11,7 @@ documentation: ug
 
 ## Set badge to avatar
 
-The [SfAvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html) control provides support for [Badge](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html) to notify users of new or unread messages, notifications, or the status of something.
+The [SfAvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html) control provides support for [SfBadge](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html) to notify users of new or unread messages, notifications, or the status of something.
 
 {% tabs %}
 {% highlight xaml %}
