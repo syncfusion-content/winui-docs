@@ -1,6 +1,6 @@
 ---
 layout: post
-title: States in WinUI AvatarView control | Syncfusion
+title: Badge in WinUI AvatarView control | Syncfusion
 description: Learn about how to set the different states of badge for the WinUI AvatarView control(SfAvatarView).
 platform: WinUI
 control: AvatarView
