@@ -1,17 +1,17 @@
 ---
 layout: post
 title: States in WinUI AvatarView control | Syncfusion
-description: Learn about using of the different states that exist in WinUi AvatarView control(SfAvatarView).
+description: Learn about how to set the different states of badge for the WinUI AvatarView control(SfAvatarView).
 platform: WinUI
 control: AvatarView
 documentation: ug
 ---
 
-# How to use different states
+# How to use badge for WinUI AvatarView
 
-## Set badge to avatar
+The [SfAvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html) control supports various [SfBadge](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html) states to notify users of new or unread messages, notifications, or status updates.
 
-The [SfAvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html) control provides support for [SfBadge](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html) to notify users of new or unread messages, notifications, or the status of something.
+The following code explains how to set [SfBadge](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html) for [SfAvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -78,4 +78,4 @@ this.Content = badgeContainer;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AvatarView control with Badge](avatarview_images/winui_badge_avatarview.png)
+![WinUI AvatarView control with Badge](avatarview_images/winui_avatarview_with_badge.png)
