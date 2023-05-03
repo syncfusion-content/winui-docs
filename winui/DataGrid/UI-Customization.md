@@ -311,7 +311,7 @@ The appearance of AddNewRow can customized by using `SyncfusionAddNewRowControlB
 The appearance of header row can be customized by using `SyncfusionGridHeaderCellControlBackground` and `SyncfusionGridHeaderCellControlForeground` these key's.
 
 {% tabs %}
-{% highlight xaml %}s
+{% highlight xaml %}
 <dataGrid:SfDataGrid x:Name="sfDataGrid"
                      ColumnWidthMode="Star"
                      AllowGrouping="True"
@@ -334,6 +334,52 @@ The appearance of header row can be customized by using `SyncfusionGridHeaderCel
 {% endtabs %}
 
 <img src="UI_Customization-images/UI_Customization-img10.png" alt="Displaying RowHeader styling in WinUI SfDataGrid" width="100%" Height="Auto"/>
+
+### Displaying row index in row header cell 
+
+The appearance of row header can be customized by writing style of TargetType [GridRowHeaderCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridRowHeaderCell.html).
+
+You can also display the row index value in the row header cell by customizing its style.
+
+{% tabs %}
+{% highlight xaml %}
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
+                               AutoGenerateColumns="False"
+                               ShowRowHeader="True"
+                               AllowEditing="True"
+                               ItemsSource="{Binding Orders}">
+        <dataGrid:SfDataGrid.Columns>
+            <dataGrid:GridNumericColumn MappingName="OrderID" HeaderText="Order ID" />
+            <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+            <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />                <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+            <dataGrid:GridTextColumn MappingName="Country" />
+        </dataGrid:SfDataGrid.Columns>
+        <dataGrid:SfDataGrid.Resources>
+            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlBackground" Color="Cyan"/>
+            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlForeground" Color="DarkBlue"/>
+            <Style TargetType="dataGrid:GridRowHeaderCell">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="dataGrid:GridRowHeaderCell">
+                            <Border x:Name="PART_RowHeaderCellBorder"
+                                    Background="Bisque"
+                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}">
+                                <Grid>
+                                    <TextBlock HorizontalAlignment="Center"
+                                               VerticalAlignment="Center"
+                                               Text="{Binding RowIndex, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                               TextAlignment="Center" />
+                                </Grid>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </dataGrid:SfDataGrid.Resources>
+</dataGrid:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
 
 ## Styling DetailsViewDataGrid
 
