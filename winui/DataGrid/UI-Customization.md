@@ -339,7 +339,7 @@ The appearance of header row can be customized by using `SyncfusionGridHeaderCel
 
 The appearance of row header can be customized by writing style of TargetType [GridRowHeaderCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridRowHeaderCell.html).
 
-You can also display the row index value in the row header cell by customizing its style.
+You can also style the [GridRowHeaderIndentCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridRowHeaderIndentCell.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -351,17 +351,17 @@ You can also display the row index value in the row header cell by customizing i
                      AllowEditing="True"
                      ItemsSource="{Binding Orders}">
     <dataGrid:SfDataGrid.Columns>
-        <dataGrid:GridNumericColumn MappingName="OrderID" HeaderText="Order ID" />
-        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-        <dataGrid:GridTextColumn MappingName="Country" />
+        <dataGrid:GridNumericColumn MappingName="OrderID" HeaderText="Order ID"/>
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID"/>
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name"/>
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City"/>
+        <dataGrid:GridTextColumn MappingName="Country"/>
     </dataGrid:SfDataGrid.Columns>
     <dataGrid:SfDataGrid.Resources>
         <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlBackground" Color="Cyan"/>
         <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlForeground" Color="DarkBlue"/>
-        <SolidColorBrush x:Key="SyncfusionGridRowHeaderIndentCellBackground" Color="Gray" />
-        <SolidColorBrush x:Key="SyncfusionGridRowHeaderCellBackground" Color="Gray" />
+        <SolidColorBrush x:Key="SyncfusionGridRowHeaderIndentCellBackground" Color="Gray"/>
+        <SolidColorBrush x:Key="SyncfusionGridRowHeaderCellBackground" Color="Gray"/>
     </dataGrid:SfDataGrid.Resources>
 </dataGrid:SfDataGrid>
 {% endhighlight %}
