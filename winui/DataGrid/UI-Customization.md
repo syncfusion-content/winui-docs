@@ -344,40 +344,25 @@ You can also display the row index value in the row header cell by customizing i
 {% tabs %}
 {% highlight xaml %}
 <dataGrid:SfDataGrid x:Name="sfDataGrid"
-                               AutoGenerateColumns="False"
-                               ShowRowHeader="True"
-                               AllowEditing="True"
-                               ItemsSource="{Binding Orders}">
-        <dataGrid:SfDataGrid.Columns>
-            <dataGrid:GridNumericColumn MappingName="OrderID" HeaderText="Order ID" />
-            <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-            <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-            <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-            <dataGrid:GridTextColumn MappingName="Country" />
-        </dataGrid:SfDataGrid.Columns>
-        <dataGrid:SfDataGrid.Resources>
-            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlBackground" Color="Cyan"/>
-            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlForeground" Color="DarkBlue"/>
-            <Style TargetType="dataGrid:GridRowHeaderCell">
-                <Setter Property="Template">
-                    <Setter.Value>
-                        <ControlTemplate TargetType="dataGrid:GridRowHeaderCell">
-                            <Border x:Name="PART_RowHeaderCellBorder"
-                                    Background="Bisque"
-                                    BorderBrush="{TemplateBinding BorderBrush}"
-                                    BorderThickness="{TemplateBinding BorderThickness}">
-                                <Grid>
-                                    <TextBlock HorizontalAlignment="Center"
-                                               VerticalAlignment="Center"
-                                               Text="{Binding RowIndex, RelativeSource={RelativeSource Mode=TemplatedParent}}"
-                                               TextAlignment="Center" />
-                                </Grid>
-                            </Border>
-                        </ControlTemplate>
-                    </Setter.Value>
-                </Setter>
-            </Style>
-        </dataGrid:SfDataGrid.Resources>
+                     AutoGeneratingColumn="False"
+                     ShowRowHeader="True"
+                     ColumnWidthMode="Star"
+                     AllowGrouping="True"
+                     AllowEditing="True"
+                     ItemsSource="{Binding Orders}">
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridNumericColumn MappingName="OrderID" HeaderText="Order ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+        <dataGrid:GridTextColumn MappingName="Country" />
+    </dataGrid:SfDataGrid.Columns>
+    <dataGrid:SfDataGrid.Resources>
+        <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlBackground" Color="Cyan"/>
+        <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlForeground" Color="DarkBlue"/>
+        <SolidColorBrush x:Key="SyncfusionGridRowHeaderIndentCellBackground" Color="Gray" />
+        <SolidColorBrush x:Key="SyncfusionGridRowHeaderCellBackground" Color="Gray" />
+    </dataGrid:SfDataGrid.Resources>
 </dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
