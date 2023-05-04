@@ -382,6 +382,8 @@ You can also display the row index value in the row header cell by customizing i
 {% endhighlight %}
 {% endtabs %}
 
+<img src="UI_Customization-images/UI_Customization-img12.png" alt="Styling and displaying RowHeader in WinUI SfDataGrid" width="100%" Height="Auto"/>
+
 ## Styling DetailsViewDataGrid
 
 The appearance of [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDataGrid.html) can be customized by using `SyncfusionDetailsViewGridBackground` this key.
