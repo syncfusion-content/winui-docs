@@ -320,11 +320,11 @@ The appearance of row header can be customized by using `SyncfusionGridRowHeader
                      AutoGenerateColumns="False"
                      ItemsSource="{Binding Orders}" >
     <dataGrid:SfDataGrid.Columns>
-        <dataGrid:GridNumericColumn MappingName="OrderID" HeaderText="Order ID" />
-        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-        <dataGrid:GridTextColumn MappingName="Country" />
+        <dataGrid:GridNumericColumn MappingName="OrderID" HeaderText="Order ID"/>
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID"/>
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name"/>
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City"/>
+        <dataGrid:GridTextColumn MappingName="Country"/>
     </dataGrid:SfDataGrid.Columns>
     <dataGrid:SfDataGrid.Resources>
         <SolidColorBrush x:Key="SyncfusionGridRowHeaderCellBackground" Color="Gray"/>
