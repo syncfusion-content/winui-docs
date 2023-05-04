@@ -335,7 +335,7 @@ The appearance of row header can be customized by using `SyncfusionGridRowHeader
 {% endhighlight %}
 {% endtabs %}
 
-<img src="UI_Customization-images/UI_Customization-img10.png" alt="Appearance customization of Row header using key in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="UI_Customization-images/UI_Customization-img12.png" alt="Appearance customization of Row header using key in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Styling DetailsViewDataGrid
 
