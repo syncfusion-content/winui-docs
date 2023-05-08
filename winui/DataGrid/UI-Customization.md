@@ -308,10 +308,11 @@ The appearance of AddNewRow can customized by using `SyncfusionAddNewRowControlB
 
 ## Styling RowHeader
 
-The appearance of header row can be customized by using `SyncfusionGridHeaderCellControlBackground` and `SyncfusionGridHeaderCellControlForeground` these key's.
+The appearance of row header can be customized by using `SyncfusionGridRowHeaderCellBackground`, `SyncfusionGridRowHeaderIndentCellBackground` and 
+`SyncfusionDataGridRowHeaderCellCurrentRowIconFill` these key's.
 
 {% tabs %}
-{% highlight xaml %}s
+{% highlight xaml %}
 <dataGrid:SfDataGrid x:Name="sfDataGrid"
                      ColumnWidthMode="Star"
                      AllowGrouping="True"
@@ -319,21 +320,22 @@ The appearance of header row can be customized by using `SyncfusionGridHeaderCel
                      AutoGenerateColumns="False"
                      ItemsSource="{Binding Orders}" >
     <dataGrid:SfDataGrid.Columns>
-        <dataGrid:GridNumericColumn MappingName="OrderID" HeaderText="Order ID" />
-        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-        <dataGrid:GridTextColumn MappingName="Country" />
+        <dataGrid:GridNumericColumn MappingName="OrderID" HeaderText="Order ID"/>
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID"/>
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name"/>
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City"/>
+        <dataGrid:GridTextColumn MappingName="Country"/>
     </dataGrid:SfDataGrid.Columns>
     <dataGrid:SfDataGrid.Resources>
-        <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlBackground" Color="Cyan"/>
-        <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlForeground" Color="DarkBlue"/>
+        <SolidColorBrush x:Key="SyncfusionGridRowHeaderCellBackground" Color="Gray"/>
+        <SolidColorBrush x:Key="SyncfusionGridRowHeaderIndentCellBackground" Color="Gray"/>        
+        <SolidColorBrush x:Key="SyncfusionDataGridRowHeaderCellCurrentRowIconFill" Color="White"/>
     </dataGrid:SfDataGrid.Resources>
 </dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
-<img src="UI_Customization-images/UI_Customization-img10.png" alt="Displaying RowHeader styling in WinUI SfDataGrid" width="100%" Height="Auto"/>
+<img src="UI_Customization-images/UI_Customization-img12.png" alt="Appearance customization of Row header using key in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Styling DetailsViewDataGrid
 
