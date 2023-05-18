@@ -19,7 +19,7 @@ Windows 10, version 1809 (build 17763) or later.
 ## Development Environment
 
 * [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)
-* [Windows App SDK 1.1 extension](https://docs.microsoft.com/en-us/windows/apps/windows-app-sdk/stable-channel#version-11)
+* [Windows App SDK 1.2 extension](https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/stable-channel#version-12)
 * .NET 6.0
 
 N> * For more information on WinUI 3 tooling support, see [Windows UI Library 3](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/)
