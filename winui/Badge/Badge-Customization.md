@@ -45,7 +45,7 @@ badge.Content = "99+";
 
 ![Displaying the Badge with custom colors](Getting-Started_images/Custom_Color.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Control).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Badge_Control).
 
 ## Custom shape for displaying the Badge
 
@@ -228,7 +228,7 @@ badge.Content = "99+";
 
 ![Displaying the Badge with customized stroke](Getting-Started_images/Stroke.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Control)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Badge_Control)
 
 ## Hide the Badge
 
@@ -292,7 +292,7 @@ badge.Content = "99+";
 
 ![Size of the Badge control is changed](Getting-Started_images/size.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Getting_Started).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Getting_Started).
 
 ## Text formatting
 
@@ -328,7 +328,7 @@ badge.Content = "99+";
 
 ![Badge display content text format changed](Getting-Started_images/Text_formatting.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Control)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Badge_Control)
 
 ## Rotate the Badge
 
@@ -390,4 +390,4 @@ badge.Content = "99+";
 
 ![Displaying the Badge with reduced opacity](Getting-Started_images/Opacity.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Control).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Badge_Control).
