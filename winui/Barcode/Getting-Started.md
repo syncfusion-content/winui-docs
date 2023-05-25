@@ -13,7 +13,7 @@ This section provides a quick overview of how to get started with the [WinUI Bar
 
 ## Creating an application with WinUI Barcode
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Add reference to [Syncfusion.Barcode.WinUI](https://www.nuget.org/packages/Syncfusion.Barcode.WinUI) NuGet. 
 3. Import the control namespace `using Syncfusion.UI.Xaml.Barcode` in XAML or C# code.
 4. Initialize the `SfBarCode` control.
@@ -193,7 +193,7 @@ The vertical alignment of the Barcode text can be changed using the [VerticalTex
 The Barcode can be customized using the following properties:
 
 ### Background
-The Barcode background can be changed using the [Background](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.background?view=netcore-3.1#System_Windows_Controls_Control_Background) property.
+The Barcode background can be changed using the [Background](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.background?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1#System_Windows_Controls_Control_Background) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -208,7 +208,7 @@ The Barcode background can be changed using the [Background](https://docs.micros
 {% endtabs %} 
 
 ### Foreground
-The Barcode foreground can be changed using the [Foreground](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netcore-3.1#System_Windows_Controls_Control_Foreground) property.
+The Barcode foreground can be changed using the [Foreground](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1#System_Windows_Controls_Control_Foreground) property.
 
 {% tabs %}
 {% highlight xaml %}
