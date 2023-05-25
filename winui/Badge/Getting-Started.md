@@ -17,7 +17,7 @@ This section explains the steps required to add the [WinUI Badge](https://www.sy
 
 ## Creating an application with WinUI Badge
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Add reference to [Syncfusion.Notifications.WinUI](https://www.nuget.org/packages/Syncfusion.Notifications.WinUI) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Notifications` in XAML or C# code.
 4. Initialize the `SfBadge` control.
@@ -112,7 +112,7 @@ badgeContainer.Badge = badge;
 
 ![Badge added to the Button control](Getting-Started_images/Adding_Badge.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Getting_Started).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Getting_Started).
 
 ## Setting Badge display content
 
