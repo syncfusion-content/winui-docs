@@ -148,5 +148,5 @@ private void SfCalendar_ItemPrepared(object sender, CalendarItemPreparedEventArg
 
 ![change-black-out-dates-with-display-text-in-winui-calendar](Images/restrict-date-selection/change-black-out-dates-with-display-text-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Formatting).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/Formatting).
 
