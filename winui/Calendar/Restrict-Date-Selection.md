@@ -25,7 +25,7 @@ sfCalendar.MaxDate = new DateTimeOffset(new DateTime(2021, 03, 23));
 {% endhighlight  %}
 {% endtabs %}
 
-![change-minimum-and-maximum-dates-in-winui-calendar](Images/restrict-date-selection/change-minimum-and-maximum-dates-in-winui-calendar.png)
+![Change minimum and maximum dates in WinUI Calendar](images/restrict-date-selection/winui-calender-change-minimum-and-maximum-dates-mode.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction).
 
@@ -81,7 +81,7 @@ sfCalendar.BlackoutDates = (sfCalendar.DataContext as ViewModel).BlockedDates;
 {% endhighlight  %}
 {% endtabs %}
 
-![change-black-out-dates-disabled-dates-in-winui-calendar](Images/restrict-date-selection/change-black-out-dates-disabled-dates-in-winui-calendar.png)
+![Change black out dates disabled dates in WinUI Calendar](images/restrict-date-selection/winui-calendar-change-black-out-dates-disabled-dates-mode.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/BlockedDates)
 
@@ -124,7 +124,7 @@ private void SfCalendar_ItemPrepared(object sender, CalendarItemPreparedEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![change-black-out-dates-to-weekend-dates-in-winui-calendar](Images/restrict-date-selection/change-black-out-dates-to-weekend-dates-in-winui-calendar.png)
+![Change black out dates to weekend dates in WinUI Calendar](images/restrict-date-selection/winui-calendar-change-black-out-dates-to-weekend-dates-mode.png)
 
 You can also use the [ItemInfo.DisplayText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_DisplayText) property to change the text displayed for specific days or dates in the `Calendar`. 
 
@@ -146,7 +146,7 @@ private void SfCalendar_ItemPrepared(object sender, CalendarItemPreparedEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![change-black-out-dates-with-display-text-in-winui-calendar](Images/restrict-date-selection/change-black-out-dates-with-display-text-in-winui-calendar.png)
+![Change black out dates with display text in WinUI Calendar](images/restrict-date-selection/winui-calendar-change-black-out-dates-with-display-text-mode.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Formatting).
 
