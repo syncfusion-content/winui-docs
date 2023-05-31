@@ -13,7 +13,7 @@ The [WinUI Color Picker](https://www.syncfusion.com/winui-controls/color-picker)
 
 ## Color Picker control structure
 
-![WinUI Color Picker](Getting-Started_images/winui-colorpicker.gif)
+![WinUI ColorPicker structure control](getting-started_images/winui-colorpicker-structure-control.gif)
 
 ## Key features
 
