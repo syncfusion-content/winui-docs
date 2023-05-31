@@ -11,7 +11,7 @@ documentation: ug
 
 The [WinUI Chart](https://www.syncfusion.com/winui-controls/charts) provides a perfect way to visualize data with a high level of user interactivity that focus on development, productivity and simplicity of use. Chart also provides a wide variety of charting features that can be used to visualize large quantities of data, flexibility of binding data and user customization. 
 
-![Overview of WinUI Chart](Overview_images/chart_overview.png)
+![Overview of WinUI Chart](overview_images/winui-chart-overview.png)
 
 ## Key features
 
