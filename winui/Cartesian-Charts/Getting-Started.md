@@ -177,7 +177,7 @@ chart.YAxes.Add(yAxis);
 
 Run the project and check if you get following output to make sure you have configured your project properly to add chart.
 
-![Initializing axis for WinUI Chart](getting-started_images/winui-chart-initializing-axis.png)
+![Initializing axis for WinUI Cartesian Chart](getting-started_images/winui-cartesian-chart-initializing-axis.png)
 
 ## Populate Chart with Data
 
