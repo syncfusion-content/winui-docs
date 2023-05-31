@@ -13,7 +13,7 @@ This section describes how to create a [WinUI Color Picker](https://www.syncfusi
 
 ## Structure of Color Picker control
 
-![WinUI Color Picker](Getting-Started_images/winui-colorpicker.png)
+![Getting started with WinUI ColorPicker](getting-started_images/winui-colorpicker-getting-started.png)
 
 ## Creating an application with WinUI Color Picker
 
@@ -74,7 +74,7 @@ namespace GettingStarted
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![WinUI Color Picker Control](Getting-Started_images/winui-colorpicker-control.jpg)
+![WinUI ColorPicker control structure ](getting-started_images/winui-colorpicker-control-structure.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
@@ -97,7 +97,7 @@ colorPicker.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 {% endhighlight %}
 {% endtabs %}
 
-![Selecting Solid Color in WinUI Color Picker](Getting-Started_images/winui-colorpicker-select-solid-color.png)
+![Selecting solid color in WinUI ColorPicker](getting-started_images/winui-colorpicker-select-solid-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
@@ -120,7 +120,7 @@ colorPicker.ColorChannelOptions = ColorChannelOptions.HSV;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Color Picker displays different Solid Color Modes](Getting-Started_images/winui-colorpicker-solid-color-modes.jpg)
+![WinUI ColorPicker displays different solid color modes](getting-started_images/winui-colorpicker-solid-color-modes.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
@@ -142,7 +142,7 @@ colorPicker.AlphaInputOptions = ColorInputOptions.TextInput;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Color Picker displays Opacity Value Editor](Getting-Started_images/winui-colorpicker-opacity-value-editor.png)
+![WinUI ColorPicker displays opacity value editor](getting-started_images/winui-colorpicker-opacity-value-editor.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
@@ -164,7 +164,7 @@ colorPicker.IsHexInputVisible = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Hide Hexadecimal Value Editor in WinUI Color Picker](Getting-Started_images/winui-colorpicker-hide-hexadecimal-value-editor.png)
+![Hide hexadecimal value editor in WinUI ColorPicker](getting-started_images/winui-colorpicker-hide-hexadecimal-value-editor.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
@@ -208,7 +208,7 @@ colorPicker.SelectedBrush = linearGradient;
 {% endhighlight %}
 {% endtabs %}
 
-![Linear Gradient Color in WinUI Color Picker](Getting-Started_images/winui-colorpicker-linear-gradient-color.png)
+![Linear gradient color in WinUI ColorPicker](getting-started_images/winui-colorpicker-linear-gradient-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectLinearGradientColors)
 
@@ -230,7 +230,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Selecting Linear Gradient Color at runtime in WinUI Color Picker](Getting-Started_images/winui-colorpicker-linear-gradient-color-selection.gif)
+![Selecting linear gradient color at runtime in WinUI ColorPicker](getting-started_images/winui-colorpicker-linear-gradient-color-selection.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
@@ -278,7 +278,7 @@ colorPicker.SelectedBrush = radialGradient;
 {% endhighlight %}
 {% endtabs %}
 
-![Radial Gradient Color in WinUI Color Picker](Getting-Started_images/winui-colorpicker-radial-gradient-color.png)
+![Radial gradient color in WinUI ColorPicker](getting-started_images/winui-colorpicker-radial-gradient-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectRadialGradientColors)
 
@@ -300,7 +300,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.RadialGradientBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Select Radial Gradient Color at runtime in WinUI ColorPicker](Getting-Started_images/winui-colorpicker-radial-gradient-color-selection.gif)
+![Select radial gradient color at runtime in WinUI ColorPicker](getting-started_images/winui-colorpicker-radial-gradient-color-selection.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
@@ -322,7 +322,7 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush | BrushTypeOptio
 {% endhighlight %}
 {% endtabs %}
 
-![Enable Solid and Radial Gradient Color in WinUI Color Picker](Getting-Started_images/winui-colorpicker-solid-and-radial-gradient-color.jpg)
+![Enable solid and radial gradient color in WinUI ColorPicker](getting-started_images/winui-colorpicker-solid-and-radial-gradient-color.jpg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
@@ -330,7 +330,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can change the color selection mode directly at runtime by clicking on the corresponding `Solid`, `Linear` or `Radial` gradient brush mode drop down options which is placed in the top of the `Color Picker` control.
 
-![Switch between Solid, Linear and Gradient Color in WinUI Color Picker](Getting-Started_images/winui-colorpicker-switch-color-option.gif)
+![Switch between solid, linear and gradient color in WinUI ColorPicker](getting-started_images/winui-colorpicker-switch-color-option.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)
 
