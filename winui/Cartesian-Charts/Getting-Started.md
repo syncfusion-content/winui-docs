@@ -483,6 +483,6 @@ namespace SfChart_GettingStarted
 
 The following chart is created as a result of the previous codes.
 
-![Getting started for WinUI Chart](getting-started_images/winui-chart-gtting-started.png)
+![Getting started for WinUI Cartesian Chart](getting-started_images/winui-cartesian-chart-gtting-started.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/CartesianChartGettingStarted)
