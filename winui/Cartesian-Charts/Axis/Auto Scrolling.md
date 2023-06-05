@@ -66,6 +66,8 @@ By adding [ChartZoomPanBehavior](https://help.syncfusion.com/cr/winui/Syncfusion
 
 {% endtabs %}
 
+![AutoScrollingDelta support WinUI Chart](Axis_Images/winui_chart_axis_auto-scrolling-delta.png)
+
 ## AutoScrollingMode
 
 [AutoScrollingMode]() property can be used to determine whether the axis should be scrolled from start position or end position. The default value of AutoScrollingMode is `ChartAutoScrollingMode.End`.
@@ -118,6 +120,7 @@ By adding [ChartZoomPanBehavior](https://help.syncfusion.com/cr/winui/Syncfusion
 
 {% endtabs %}
 
+![AutoScrollingMode support WinUI Chart](Axis_Images/winui_chart_axis_auto-scrolling-mode.png)
 
 ## AutoScrollingDeltaType
 
@@ -181,5 +184,6 @@ In [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 
 {% endtabs %}
 
+![DateTimeAxis AutoScrollingDetlaType support WinUI Chart](Axis_Images/winui_chart_datetime-axis_auto-scrolling-mode.png)
 
 
