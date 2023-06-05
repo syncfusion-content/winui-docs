@@ -382,6 +382,74 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ![Add ribbon split button in group](Getting-Started-images/add-ribbon-split-button.png)
 
+## Add ribbon toggle button
+
+The [RibbonToggleButton] represents a toggle button, it allows users to switch between two incompatible options and can be added to a ribbon group with different sizes using the `AllowedSizeModes` property. Use the `Content` and `Icon` properties to set the label and icon to the ribbon toggle button.
+
+{% tabs %}
+{% highlight xaml %}
+ <Grid x:Name="rootGrid">
+        <ribbon:SfRibbon x:Name="sfRibbon" >
+            <ribbon:SfRibbon.Tabs>
+                <ribbon:RibbonTab Header="Home">
+                    <ribbon:RibbonGroup Header="Font">
+                        <ribbon:RibbonToggleButton  DisplayOptions="Normal,Simplified" Command="{Binding ButtonCommand}" CommandParameter="Bold" Content="Bold"
+                                     AllowedSizeModes="Large">
+                            <ribbon:RibbonToggleButton.Icon>
+                                <SymbolIcon Symbol="Bold" />
+                            </ribbon:RibbonToggleButton.Icon>
+                        </ribbon:RibbonToggleButton>
+                        <ribbon:RibbonToggleButton DisplayOptions="Normal,Simplified" Command="{Binding ButtonCommand}" CommandParameter="Italic" Content="Italic"
+                                     AllowedSizeModes="Normal">
+                            <ribbon:RibbonToggleButton.Icon>
+                                <SymbolIcon Symbol="Italic" />
+                            </ribbon:RibbonToggleButton.Icon>
+                        </ribbon:RibbonToggleButton>
+                        <ribbon:RibbonToggleButton Command="{Binding ButtonCommand}" AllowedSizeModes="Small"
+                                                                      CommandParameter="Underline"
+                                                                      Content="Underline" Icon="Underline"
+                                                                      DisplayOptions="Normal,Simplified" IsEnabled="True" >
+                        </ribbon:RibbonToggleButton>
+                    </ribbon:RibbonGroup>
+                </ribbon:RibbonTab>
+                <ribbon:RibbonTab Header="Insert" />
+                <ribbon:RibbonTab Header="View" />
+                <ribbon:RibbonTab Header="Layout" />
+            </ribbon:SfRibbon.Tabs>
+        </ribbon:SfRibbon>
+    </Grid>
+{% endhighlight %}   
+{% highlight c# %}
+
+SfRibbon sfRibbon = new SfRibbon();
+RibbonTab homeTab = new RibbonTab() { Header = "Home" };
+RibbonTab insertTab = new RibbonTab() { Header = "Insert" };
+RibbonTab viewTab = new RibbonTab() { Header = "View" };
+RibbonTab layoutTab = new RibbonTab() { Header = "Layout" };
+RibbonGroup fontGroup = new RibbonGroup() { Header = "Font" };
+
+RibbonToggleButton boldButton = new RibbonToggleButton() { DisplayOptions = DisplayOptions.Normal, Content = "Bold", AllowedSizeModes = RibbonElementSizeModes.Large,Icon = new SymbolIcon(Symbol.Bold) };
+
+RibbonToggleButton italicButton = new RibbonToggleButton() { DisplayOptions = DisplayOptions.Normal, Content = "Italic", AllowedSizeModes = RibbonElementSizeModes.Normal, Icon = new SymbolIcon(Symbol.Italic) };
+
+RibbonToggleButton underlineButton = new RibbonToggleButton() { DisplayOptions = DisplayOptions.Normal, Content = "Underline" AllowedSizeModes = RibbonElementSizeModes.Small, Icon = new SymbolIcon(Symbol.Underline), };
+
+sfRibbon.Tabs.Add(homeTab);
+homeTab.Items.Add(fontGroup);
+fontGroup.Items.Add(boldButton);
+fontGroup.Items.Add(italicButton);
+fontGroup.Items.Add(underlineButton);
+sfRibbon.Tabs.Add(homeTab);
+sfRibbon.Tabs.Add(insertTab);
+sfRibbon.Tabs.Add(viewTab);
+sfRibbon.Tabs.Add(layoutTab);
+rootGrid.Children.Add(sfRibbon);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Add ribbon toggle button in group](Getting-Started-images/add-ribbon-toggle-button.png)
+
 N> The other icon types such as   [BitmapIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.bitmapicon?view=windows-app-sdk-1.0), [FontIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.fonticon?view=windows-app-sdk-1.0), [PathIcon](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.pathicon?view=windows-app-sdk-1.0) and [SymbolIcon](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.symbolicon?view=windows-app-sdk-1.0) can be used for the Ribbon items such as RibbonButton, RibbonDropDownButton, RibbonSplitButton and Ribbon Item host controls.
 
 ## Add ribbon combobox
