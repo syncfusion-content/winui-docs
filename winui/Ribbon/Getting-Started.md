@@ -384,7 +384,7 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ## Add ribbon toggle button
 
-The RibbonToggleButton represents a toggle button, it allows user to perform a toggle (on/off) action between checked and unchecked states, it can be added to a ribbon group with different sizes using the `AllowedSizeModes` property. Use the `Content` and `Icon` properties to set the label and icon to the ribbon toggle button.
+The RibbonToggleButton represents a toggle button, it allows user to perform a toggle (on/off) action between checked and unchecked states. Also, it can be added to a ribbon group with different sizes using the `AllowedSizeModes` property. Use the `Content` and `Icon` properties to set the label and icon to the ribbon toggle button.
 
 {% tabs %}
 {% highlight xaml %}
