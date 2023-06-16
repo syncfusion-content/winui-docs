@@ -13,7 +13,7 @@ This section explains the steps required to add the [WinUI DropDown Color Palett
 
 ## Control Structure
 
-![Dropdown Color Palette control structure](Getting-Started_images/Control_Structure_GS.png)
+![WinUI DropDown Color Palette control structure](getting-started_images/winui-dropdown-color-palette-control-structure.png)
 
 * The Selected Color represents the color that you select.
 * The Automatic Color represents the color, which can be set by you as default color.
@@ -25,7 +25,7 @@ This section explains the steps required to add the [WinUI DropDown Color Palett
 
 ### More Color Dialog
 
-![Dropdown Color Palette more color dialog structure](Getting-Started_images/MoreColorControl_Structure_GS.jpg)
+![WinUI DropDown Color Palette dialog structure](getting-started_images/winui-dropdown-color-palette-dialog-structure.jpg)
 
 ## Creating an application with WinUI DropDown Color Palette
 
@@ -101,7 +101,7 @@ namespace GettingStarted
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![Dropdown Color Palette added in the winui application](Getting-Started_images/controladded.png)
+![DropDown Color Palette added in the WinUI application](getting-started_images/winui-dropdown-color-palette-control-added.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
 
@@ -123,7 +123,7 @@ colorPalette.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown Color Palette programmatically picked the yellow color](Getting-Started_images/Colorprogrammatically.png)
+![Accessing values programmatically in WinUI DropDown Color Palette](getting-started_images/winui-dropdown-color-palette-access-values-programmatically.png)
 
 Here, `Yellow` color is selected color in the `DropDown Color Palette`.
 
@@ -146,7 +146,7 @@ SfDropDownColorPalette sfDropDownColorPalette =  new SfDropDownColorPalette();
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown Color Palette control with theme and standard color items](Getting-Started_images/ThemeColorPanel.png)
+![WinUI Dropdown Color Palette control with theme and standard color items](getting-started_images/winui-color-palette-theme-colo-panel.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
 
@@ -167,7 +167,7 @@ SfDropDownColorPalette sfDropDownColorPalette =  new SfDropDownColorPalette();
 {% endhighlight %}
 {% endtabs %}
 
-![Dropdown Color Palette control with theme and standard color items](Getting-Started_images/automatic_color.png)
+![Automatic color in Dropdown Color Palette](getting-started_images/winui-dropdown-color-palette-automatic-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
 
