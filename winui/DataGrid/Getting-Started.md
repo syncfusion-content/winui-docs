@@ -206,7 +206,7 @@ sfDataGrid.ItemsSource = viewModel.Orders;
 
 Now, run the application and you can expect the below output,
 
-<img src="getting-started-images/winui-datagrid-getting-started.png" alt="Getting started with WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="getting-started-images/winui-datagrid-getting-started.png" alt="Getting Started with WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Defining Columns
 
