@@ -53,7 +53,7 @@ maskedTextBox.Mask = "00/00/0000";
 {% endhighlight %}
 {% endtabs %}
 
-![Simple mask in WinUI MaskedTextBox](MaskedTextBox_Images/winui_simple_mask.png)
+![WinUI MaskedTextBox simple](maskedtextbox_images/winui-masked-textbox-simple.png)
 
 ## Initialize MaskedTextBox control using RegEx mask
 
@@ -90,7 +90,7 @@ maskedTextBox.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+\\.[A-Za-z]{2,3}";
 {% endhighlight %}
 {% endtabs %}
 
-![RegEx mask in WinUI MaskedTextBox](MaskedTextBox_Images/winui_regex_mask.png)
+![WinUI MaskedTextBox regex](maskedtextbox_images/winui-masked-textbox-regex.png)
 
 ## Setting the prompt character
 
@@ -109,7 +109,7 @@ maskedTextBox.PromptChar = '#';
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI MaskedTextBox prompt character](MaskedTextBox_Images/winui_masked_textbox_prompt_char.png)
+![WinUI MaskedTextBox prompt character](maskedtextbox_-mages/winui-masked-textbox-prompt-character.png)
 
 ## Setting the value
 
@@ -135,4 +135,4 @@ maskedTextBox.Value = "12/02/2022";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI MaskedTextBox value](MaskedTextBox_Images/winui_masked_textbox_value.png)
+![WinUI MaskedTextBox value](maskedtextBox_images/winui-masked-textbox-value.png)
