@@ -13,7 +13,7 @@ This section explains the steps required to add the [WinUI NumberBox](https://ww
 
 ## Structure of NumberBox control
 
-![WinUI NumberBox Structure](Overview_images/overview_img.png)
+![WinUI NumberBox Structure](overview_images/winui-numberbox-structure.png)
 
 ## Creating an application with WinUI NumberBox
 
@@ -97,7 +97,7 @@ namespace GettingStarted
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![WinUI NumberBox Application](GettingStarted_images/gettingStarted_img.png)
+![WinUI NumberBox control added](gettingstarted_images/winui-numberbox-added.png)
 
 ## Editing the value
 
@@ -121,7 +121,7 @@ sfNumberBox.CustomFormat = "0.000";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI NumberBox value editing](GettingStarted_images/editing_value.gif)
+![WinUI NumberBox value editing](gettingstarted_images/winui-numberbox-editing-value.gif)
 
 ## Change number format
 
@@ -172,7 +172,7 @@ sfNumberBox.NumberFormatter = new CurrencyFormatter(currencyCode, new string[] {
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI NumberBox value editing](GettingStarted_images/custom_format.png)
+![WinUI NumberBox custom format](gettingstarted_images/winui-numberbox-custom-format.png)
 
 ## Accept null value
 
@@ -196,7 +196,7 @@ sfNumberBox.AllowNull = false;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI NumberBox prevent empty textbox](GettingStarted_images/allowNull.gif)
+![WinUI NumberBox allow null value](gettingstarted_images/winui-numberbox-allow-null-value.gif)
 
 ## Header and description
 This section explains about `header` and `description` properties of NumberBox.
@@ -222,7 +222,7 @@ SfNumberBox.Header = "Amount to withdraw";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI NumberBox with Header](GettingStarted_images/header_text.png)
+![WinUI NumberBox with Header Text](gettingstarted_images/winui-numberbox-header-text.png)
 
 #### Header customization
 By using the controls `HeaderTemplate` property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
@@ -244,7 +244,7 @@ By using the controls `HeaderTemplate` property, you can customize the appearanc
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI NumberBox with Header Template](GettingStarted_images/header_template.png)
+![WinUI NumberBox with Header Template](gettingstarted_images/winui-numberbox-header-template.png)
 
 ### Description
 The `Description` support is used to display the content beneath the control as well as to provide guidance on the input that the control expects.
@@ -268,7 +268,7 @@ SfNumberBox.Description = “Please enter only positive digit.”;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI NumberBox with Description](GettingStarted_images/description_text.png)
+![WinUI NumberBox with Description Text](gettingstarted_images/winui-numberbox-description-text.png)
 
 
 ## Setting watermark text
@@ -293,7 +293,7 @@ sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI NumberBox Watermark Text](GettingStarted_images/watermark_text.png)
+![WinUI NumberBox Watermark Text](gettingstarted_images/winui-numberbox-watermark-text.png)
 
 ## Clear button visibility 
 
@@ -324,11 +324,11 @@ SfNumberBox.IsEditable = true;
 
 If IsEditable is true
 
-![WinUI NumberBox with Clear Button](GettingStarted_images/clearbutton_visible.png)
+![WinUI NumberBox with Clear Button Visibility](gettingstarted_images/winui-numberbox-clear-button-visibility.png)
 
 If IsEditable is false
 
-![WinUI NumberBox without Clear Button](GettingStarted_images/clearbutton_collapsed.png)
+![WinUI NumberBox without Clear Button Collapsed](gettingstarted_images/winui-numberbox-without-clear-button-collapsed.png)
 
 
 ## Value changed notification
