@@ -30,7 +30,7 @@ The selected item can be changed interactively by selecting from the drop-down l
 {% endhighlight %}
 {% endtabs %}
 
-![Single selection in WinUI ComboBox](Selection_images/winui-combobox-single-selection.gif)
+![Single selection in WinUI ComboBox](selection_images/winui-combobox-single-selection.gif)
 
 ### Programmatic selection 
 
@@ -55,7 +55,7 @@ comboBox.SelectedIndex = 2;
 {% endhighlight %}
 {% endtabs %}
 
-![Single selection in WinUI ComboBox programmatically](Selection_images/winui-combobox-single-selection-programmatically.png)
+![Single selection programmatically in WinUI ComboBox](selection_images/winui-combobox-single-selection-programmatically.png)
 
 ### Decide when to update selected item
 
@@ -97,7 +97,7 @@ private async  void OnComboBoxSelectionChanged(object sender, ComboBoxSelectionC
 
 The following screenshot demonstrates, while typing `f` in ComboBox control `Facebook` will be set as selected item.
 
-![Updates selected item each time the user navigates to a new selection in ComboBox](Selection_images/winui-combobox-selection-change-trigger-always.png)
+![Selection change triggers in WinUI ComboBox](selection_images/winui-combobox-selection-change-triggers.png)
 
 N> You can refer more information about `SelectionChanged` event from [this](https://help.syncfusion.com/winui/combobox/selection#selection-changed-event) link.
 
@@ -134,7 +134,7 @@ this.comboBox.SelectedItems.Add(socialMediasList[5]);
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple selection in WinUI ComboBox programmatically](Selection_images/winui-combobox-multiple-selection-programmatically.png)
+![Multiple selection programmatically in WinUI ComboBox](selection_images/winui-combobox-multiple-selection-programmatically.png)
 
 ### How to hide the check box
 
@@ -159,7 +159,7 @@ comboBox.IsMultiSelectCheckBoxEnabled = false;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox hide the checkbox in drop down list](Selection_images/winui-combobox-multi-select-checkbox-enabled.png)
+![Multi select checkbox enabled in WinUI ComboBox](selection_images/winui-combobox-multi-select-checkbox-enabled.png)
 
 ### Multiple selection display
 
@@ -186,7 +186,7 @@ The selected items can be changed interactively by using keyboard or by selectin
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple selection in WinUI ComboBox](Selection_images/winui-combobox-multiple-selection-delimiter.gif)
+![Multiple selection delimeter in WinUI ComboBox](selection_images/winui-combobox-multiple-selection-delimiter.gif)
 
 ##### Separate items using delimiter
 
@@ -211,7 +211,7 @@ comboBox.DelimiterText = "-";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox seperate the selected items using delimiter text](Selection_images/winui-combobox-delimiter-text.png)
+![WinUI ComboBox seperate the selected items using delimiter text](selection_images/winui-combobox-delimiter-text.png)
 
 #### Token
 
@@ -240,7 +240,7 @@ The selected items can be changed interactively by using keyboard or by selectin
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple selection in WinUI ComboBox](Selection_images/winui-combobox-multiple-selection-token.gif)
+![Multiple selection token in WinUI ComboBox](selection_images/winui-combobox-multiple-selection-token.gif)
 
 N> Refer more information about customization of `ComboBoxTokenItem` from [this](https://help.syncfusion.com/winui/combobox/ui-customization#styling-comboboxtokenitem) link.
 
@@ -261,7 +261,7 @@ When entering a text in the text box selection area, if the `AutoAppendType` pro
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox control with auto-append UI as TextWithSelection](Selection_images/winui-combobox-auto-append-textwithselection.png)
+![WinUI ComboBox control with auto-append UI as TextWithSelection](selection_images/winui-combobox-auto-append-textwithselection.png)
 
 #### Auto-append UI as Text
 
@@ -276,7 +276,7 @@ When entering a text in the text box selection area, if the `AutoAppendType` pro
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox control with auto-append UI as Text](Selection_images/winui-combobox-auto-append-text.png)
+![WinUI ComboBox control with auto-append UI as Text](selection_images/winui-combobox-auto-append-text.png)
 
 ## Selection changed notification
 
@@ -324,4 +324,4 @@ private async  void OnComboBoxSelectionChanged(object sender, ComboBoxSelectionC
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox selection change notification](Selection_images/winui-combobox-selection-change-notification.png)
+![Selection change notification in WinUI ComboBox](selection_images/winui-combobox-selection-change-notification.png)
