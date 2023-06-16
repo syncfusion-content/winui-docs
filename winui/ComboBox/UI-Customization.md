@@ -38,7 +38,7 @@ The `ComboBox` control header can be changed by using the [Header](https://help.
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox displays header](Styling_images/winui-combobox-headerTemplate.png)
+![WinUI ComboBox displays header template](styling_images/winui-combobox-header-template.png)
 
 ## Description for ComboBox
 
@@ -68,7 +68,7 @@ The `ComboBox` control description can be changed by using the [Description](htt
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox displays description](Styling_images/winui-combobox-description.png)
+![WinUI ComboBox displays description](styling_images/winui-combobox-description.png)
 
 ## Placeholder text
 
@@ -92,7 +92,7 @@ comboBox.PlaceholderText = "Select a social media";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox Watermark Text](Styling_images/winui-combobox-watermark_text.png)
+![WinUI ComboBox Watermark Text](styling_images/winui-combobox-watermark-text.png)
 
 ### Change foreground of placeholder text
 
@@ -117,7 +117,7 @@ comboBox.PlaceholderForeground = new SolidColorBrush(Colors.Red);
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox placeholder text foreground](Styling_images/winui-combobox-placeholder-text-foreground.png)
+![WinUI ComboBox placeholder text foreground](styling_images/winui-combobox-placeholder-text-foreground.png)
 
 ## Customize the edit mode TextBox
 
@@ -149,7 +149,7 @@ N> `TextBoxStyle` will only have an effect in single selection editable mode.
 {% endhighlight %}
 {% endtabs %}
 
-![Styling the editing textBox using TextBoxStyle](Styling_images/winui-combobox-textboxstyle.png)
+![TextBox style in WinUI ComboBox](styling_images/winui-combobox-textbox-style.png)
 
 ## Styling ComboBoxItem
 
@@ -177,7 +177,7 @@ The `ComboBox` control allows you to customize the style of [ComboBoxItem](https
 {% endhighlight %}
 {% endtabs %}
 
-![Custom UI of ComboBoxItem using ItemContainerStyle](Styling_images/winui-combobox-itemcontainerstyle.png)
+![Item container style in WinUI ComboBox](styling_images/winui-combobox-item-container-style.png)
 
 ### Style ComboBoxItem based on condition   
 
@@ -241,7 +241,7 @@ public class SocialMediaStyleSelector : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Different custom UI of ComboBoxItem using ItemContainerStyleSelector](Styling_images/winui-combobox-itemcontainerstyleselector.png)
+![Item container style selector in WinUI ComboBox](styling_images/winui-combobox-item-container-style-selector.png)
 
 ## Customize ComboBoxItem 
 
@@ -346,7 +346,7 @@ public class EmployeeViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![Custom UI of ComboboxItem using ItemTemplate](Styling_images/winui-combobox-itemtemplate.png)
+![Customize item template in WinUI ComboBox](styling_images/winui-combobox-customize-item-template.png)
 
 ### Customize ComboBoxItem based on condition
 
@@ -507,7 +507,7 @@ public class EmployeeTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Different custom UI of ComboBoxItem using ItemTemplateSelector](Styling_images/winui-combobox-itemtemplateselector.png)
+![Item template selector in WinUI ComboBox](styling_images/winui-combobox-item-template-selector.png)
 
 ## Styling token items
 
@@ -532,7 +532,7 @@ The ComboBox control allows you to customize the style of [ComboBoxTokenItem](ht
 {% endhighlight %}
 {% endtabs %}
 
-![Custom UI of ComboBoxTokenItem using TokenItemStyle](Styling_images/winui-combobox-tokenitemstyle.png)
+![Token item style in WinUI ComboBox](styling_images/winui-combobox-token-item-style.png)
 
 ### Style token items based on condition   
 
@@ -594,7 +594,7 @@ public class SocialMediaStyleSelector : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Different custom UI of ComboBoxTokenItem using TokenItemStyleSelector](Styling_images/winui-combobox-tokenitemstyleselector.png)
+![Token item style selector in WinUI ComboBox](Styling_images/winui-combobox-token-item-style-selector.png)
 
 ## Templating ComboBox tokens 
 
@@ -710,7 +710,7 @@ public class CountryViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![Custom UI of ComboBoxTokenItem using TokenItemTemplate](Styling_images/winui-combobox-tokenitemtemplate.png)
+![Token item template in WinUI ComboBox](styling_images/winui-combobox-token-item-template.png)
 
 ### Templating ComboBox tokens based on condition
 
@@ -815,7 +815,7 @@ public class CountryTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Different custom UI of ComboBoxTokenItem using TokenItemTemplateSelector](Styling_images/winui-combobox-tokenitemtemplateselector.png)
+![Token item template selector in WinUI ComboBox](styling_images/winui-combobox-token-item-template-selector.png)
 
 ## How to change DropDown MaxHeight
 
@@ -842,4 +842,4 @@ comboBox.MaxDropDownHeight = 208;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox maximum drop down height changed](Styling_images/winui-combobox-maxdropdownheight.png)
+![WinUI ComboBox maximum drop down height changed](styling_images/winui-combobox-max-dropdown-height.png)
