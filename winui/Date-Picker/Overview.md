@@ -13,11 +13,11 @@ The WinUI [Date Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 ### Normal view:
 
-![date-picker-with-normal-view-in-winui-date-picker](Images/over-view/date-picker-with-normal-view-in-winui-date-picker.png)
+![DatePicker with normal view in WinUI application](images/over-view/winui-date-picker-with-normal-view.png)
 
 ### Expanded view:
 
-![date-picker-with-expand-view-in-winui-date-picker](Images/over-view/date-picker-with-expand-view-in-winui-date-picker.png)
+![DatePicker with expand view in WinUI application](images/over-view/winui-date-picker-with-expand-view.png)
 
 ### Key Features
 

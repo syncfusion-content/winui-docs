@@ -13,7 +13,7 @@ This section explains the steps required to add the WINUI [Date Picker](https://
 
 ## Structure of Date Picker control
 
-![winui-datepicker-structure](Images/getting-started/winui-datepicker-structure.png)
+![WinUI DatePicker Structure](images/getting-started/winui-datepicker-structure.png)
 
 ## Creating an application with WinUI Date Picker
 
@@ -91,7 +91,7 @@ namespace GettingStarted
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![winui-datepicker-control](Images/getting-started/winui-datepicker-control.png)
+![WinUI DatePicker Control](images/getting-started/winui-datepicker-control.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/Getting_Started)
 
@@ -108,7 +108,7 @@ sfDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 10, 29));
 {% endhighlight %}
 {% endtabs %}
 
-![programmatic-date-selection-in-winui-date-picker](Images/getting-started/programmatic-date-selection-in-winui-date-picker.png)
+![Programmatic date selection in WinUI DatePicker](images/getting-started/winui-date-picker-programmatic-date-selection.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -129,7 +129,7 @@ SfDatePicker sfDatePicker= new SfDatePicker();
 {% endhighlight %}
 {% endtabs %}
 
-![date-selection-in-winui-date-picker](Images/getting-started/date-selection-in-winui-date-picker.gif)
+![Date selection in WinUI DatePicker](images/getting-started/winui-date-picker-date-selection.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/Getting_Started)
 
@@ -164,7 +164,7 @@ sfDatePicker.AllowNull = true;
 {% endhighlight %}
 {% endtabs %}
 
-![allow-null-value-in-winui-date-picker](Images/getting-started/allow-null-value-in-winui-date-picker.png)
+![Allow null value in WinUI DatePicker](images/getting-started/winui-date-picker-allow-null-value.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
@@ -190,7 +190,7 @@ datePicker.Header = "Enter your interview date";
 {% endhighlight %}
 {% endtabs %}
 
-![customize-header-text-in-winui-date-picker](Images/getting-started/customize-header-text-in-winui-date-picker.png)
+![Customize header text in WinUI DatePicker](images/getting-started/winui-date-picker-customize-header-text.png)
 
 #### Header customization
 By using the controls `HeaderTemplate` property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
@@ -213,7 +213,7 @@ By using the controls `HeaderTemplate` property, you can customize the appearanc
 {% endhighlight %}
 {% endtabs %}
 
-![customize-header-template-in-winui-date-picker](Images/getting-started/customize-header-template-in-winui-date-picker.png)
+![Customize header template in WinUI DatePicker](images/getting-started/winui-date-picker-customize-header-template.png)
 
 ### Description
 The `Description` support is used to display the content beneath the control as well as to provide guidance on the input that the control expects.
@@ -236,7 +236,7 @@ datePicker.Description = "The chosen date must be within the next 5 days.";
 {% endhighlight %}
 {% endtabs %}
 
-![customize-header-description-text-in-winui-date-picker](Images/getting-started/customize-header-description-text-in-winui-date-picker.png)
+![Customize header description text in WinUI DatePicker](images/getting-started/winui-date-picker-customize-header-description-text.png)
 
 
 ## Setting watermark text
@@ -263,7 +263,7 @@ sfDatePicker.AllowNull = true;
 {% endhighlight %}
 {% endtabs %}
 
-![customize-text-with-water-mark-in-winui-date-picker](Images/getting-started/customize-text-with-water-mark-in-winui-date-picker.png)
+![Customize text with watermark in WinUI DatePicker](images/getting-started/winui-date-picker-customize-text-with-water-mark.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 

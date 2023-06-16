@@ -25,7 +25,7 @@ sfDatePicker.MaxDate = new DateTimeOffset(new DateTime(2020,12,20));
 {% endhighlight  %}
 {% endtabs %}
 
-![change-minimum-and-maximum-dates-in-winui-date-picker](Images/getting-started/change-minimum-and-maximum-dates-in-winui-date-picker.png)
+![Change minimum and maximum dates in WinUI DatePicker](images/getting-started/winui-date-picker-change-minimum-and-maximum-dates.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
@@ -74,7 +74,7 @@ sfDatePicker.BlackoutDates = (sfDatePicker.DataContext as ViewModel).BlockedDate
 {% endhighlight  %}
 {% endtabs %}
 
-![change-black-out-dates-disabled-dates-in-winui-date-picker](Images/getting-started/change-black-out-dates-disabled-dates-in-winui-date-picker.png)
+![Disable dates using black out dates in WinUI DataPicker](images/getting-started/winui-date-picker-disable-date-using-black-out-dates.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -114,7 +114,7 @@ private void SfDatePicker_DateFieldItemPrepared(object sender, DateTimeFieldItem
 {% endhighlight  %}
 {% endtabs %}
 
-![change-black-out-dates-to-weekend-dates-in-winui-date-picker](Images/getting-started/change-black-out-dates-to-weekend-dates-in-winui-date-picker.png)
+![Change black out dates to weekend in WinUI DatePicker](images/getting-started/winui-date-picker-change-black-out-dates-to-weekend.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
@@ -138,7 +138,7 @@ sfDatePicker.ShowSubmitButtons = false;
 {% endhighlight %}
 {% endtabs %}
 
-![show-or-hide-submit-buttons-in-winui-date-picker](Images/getting-started/show-or-hide-submit-buttons-in-winui-date-picker.gif)
+![Show or hide submit buttons in WinUI DatePicker](images/getting-started/winui-date-picker-show-or-hide-submit-buttons.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
