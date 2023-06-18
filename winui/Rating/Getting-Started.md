@@ -65,7 +65,7 @@ rating.Value = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![Rating control using items in WinUI](Rating_images/winui_rating_items.png)
+![Rating control using items in WinUI](rating_images/winui-rating-items.png)
 
 ## Initialize Rating control using ItemsCount
 
@@ -85,5 +85,5 @@ rating.ItemsCount = 5;
 {% endhighlight %}
 {% endtabs %}
 
-![Rating control using itemscount in WinUI](Rating_images/winui_rating_itemscount.png)
+![Rating control using itemscount in WinUI](rating_images/winui-rating-items-count.png)
 

@@ -95,7 +95,7 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Add ribbon tab in ribbon](Getting-Started-images/add-ribbon-tab.png)
+![WinUI Ribbon tab added in ribbon](getting-started-images/winui-ribbon-added-tab.png)
 
 
 ## Add ribbon group
@@ -153,7 +153,7 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Add ribbon group in ribbon tab](Getting-Started-images/add-ribbon-group.png)
+![WinUI Ribbon group added in tab](getting-started-images/winui-ribbon-added-group.png)
 
 ## Add ribbon button
 
@@ -245,7 +245,7 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Add ribbon button in group](Getting-Started-images/add-ribbon-button.png)
+![WinUI Ribbon button added in group](getting-started-images/winui-ribbon-added-button.png)
 
 ## Add ribbon drop down button
 
@@ -310,7 +310,7 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Add ribbon drop down button in group](Getting-Started-images/add-ribbon-drop-down-button.png)
+![WinUI Ribbon dropdown button added in group](getting-started-images/winui-ribbon-added-dropdown-button.png)
 
 ## Add ribbon split button
 
@@ -380,7 +380,7 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Add ribbon split button in group](Getting-Started-images/add-ribbon-split-button.png)
+![WinUI Ribbon split button added in group](getting-started-images/winui-ribbon-added-split-button.png)
 
 N> The other icon types such as   [BitmapIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.bitmapicon?view=windows-app-sdk-1.0), [FontIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.fonticon?view=windows-app-sdk-1.0), [PathIcon](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.pathicon?view=windows-app-sdk-1.0) and [SymbolIcon](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.symbolicon?view=windows-app-sdk-1.0) can be used for the Ribbon items such as RibbonButton, RibbonDropDownButton, RibbonSplitButton and Ribbon Item host controls.
 
@@ -471,7 +471,7 @@ rootGalleryGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Add ribbon gallery in group](Getting-Started-images/add-ribbon-gallery.png)
+![WinUI Ribbon gallery added in group](getting-started-images/winui-ribbon-added-gallery.png)
 
 ## Host a custom control
 
@@ -636,7 +636,7 @@ The [RibbonBackstage](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ri
 {% endhighlight %}
 {% endtabs %}
 
-![Add ribbon backstage to the ribbon](Getting-Started-images/add-ribbon-backstage.gif)
+![Add backstage in WinUI Ribbon](getting-started-images/winui-ribbon-added-backstage.gif)
 
 ### Backstage view 
 
@@ -664,7 +664,7 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %} 
 {% endtabs %}
 
-![Add backstage view to the ribbon backstage](Getting-Started-images/add-backstage-view.gif)
+![Add backstage view to the backstage in WinUI Ribbon](getting-started-images/winui-ribbon-added-backstage-view.gif)
 
 ## Add right pane
 
@@ -700,4 +700,4 @@ this.rootGrid.Children.Add(sfRibbon);
 {% endhighlight %}
 {% endtabs %}
 
-![Add right pane to the ribbon](Getting-Started-images/add-right-pane.png)
+![Add right pane in WinUI Ribbon](getting-started-images/winui-ribbon-added-right-pane.png)
