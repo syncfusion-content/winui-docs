@@ -21,7 +21,7 @@ The Syncfusion [WinUI TreeGrid](https://www.syncfusion.com/winui-controls/treegr
 * **Styling** – Extensive support for customizing styles of cells and rows in SfTreeGrid.
 * **Stacked Headers** – Extensive support to show multiple headers called stacked headers.
 
-<img src="Overview-images/winui-treegrid.png" alt="WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="overview-images/winui-treegrid-overview.png" alt="Overview of WinUI TreeGrid" width="100%" Height="Auto"/>
 
 
 
