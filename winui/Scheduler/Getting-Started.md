@@ -78,7 +78,7 @@ this.Schedule.ViewType = SchedulerViewType.Month;
 {% endhighlight %}
 {% endtabs %}
 
-![show-month-view-in-winui-scheduler](GettingStarted_Images/month-view-in-winui-scheduler.png)
+![Show month view in WinUI Scheduler](gettingstarted_images/winui-scheduler-show-month-view.png)
 
 ## Appointments
 
@@ -399,4 +399,4 @@ Schedule.FirstDayOfWeek = DayOfWeek.Monday;
 {% endhighlight %}  
 {% endtabs %}  
 
-![change-first-day-of-week-in-winui-scheduler](GettingStarted_Images/change-first-day-of-week-in-winui-scheduler.png)
+![Change first day of week in WinUI Scheduler](gettingstarted_images/winui-scheduler-change-first-day-of-week.png)
