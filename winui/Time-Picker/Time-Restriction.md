@@ -25,7 +25,7 @@ sfTimePicker.MaxTime = new DateTimeOffset(new DateTime(DateTime.Now.Year, DateTi
 {% endhighlight  %}
 {% endtabs %}
 
-![Change minimum and maximum times in WinUI TimePicker](getting-started_images/winui-time-picker-change-minimum-and-maximum-times.png)
+![Change minimum and maximum times in WinUI TimePicker](getting-started_images/change-minimum-and-maximum-times-in-winui-time-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 

@@ -108,7 +108,7 @@ sfTimePicker.SelectedTime = new DateTimeOffset(new DateTime(2021, 10, 29, 10, 45
 {% endhighlight %}
 {% endtabs %}
 
-![Programmatic selection in WinUI TimePicker](getting-started_images/winui-time-picker-programmatic-selection.png)
+![Programmatic selection in WinUI TimePicker](getting-started_images/programmatic-time-selection-in-winui-time-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
