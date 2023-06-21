@@ -146,7 +146,7 @@ SfDropDownColorPalette sfDropDownColorPalette =  new SfDropDownColorPalette();
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Dropdown Color Palette control with theme and standard color items](getting-started_images/winui-color-palette-theme-colo-panel.png)
+![WinUI Dropdown Color Palette control with theme and standard color items](getting-started_images/winui-color-palette-theme-color-panel.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
 
