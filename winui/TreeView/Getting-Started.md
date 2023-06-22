@@ -248,7 +248,7 @@ public class Folder : NotificationObject
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI TreeView Data Binding](Data-Binding_images/winui-treeview-data-binding.jpg)
+![WinUI TreeView Data Binding](data-binding_images/winui-treeview-data-binding.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Populating-Nodes-with-Bound-mode)
 
@@ -603,6 +603,6 @@ You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/winu
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI TreeView with TreeViewNodes](GettingStarted_images/winui-treeview-with-treeviewnodes.jpg)
+![WinUI TreeView with Nodes](gettingstarted_images/winui-treeview-with-nodes.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-treeview-examples/tree/main/Samples/Populating-Nodes-with-Unbound-mode)
