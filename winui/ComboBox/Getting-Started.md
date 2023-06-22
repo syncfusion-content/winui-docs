@@ -105,7 +105,7 @@ this.Content = comboBox;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox populating the SfComboBoxItem](GettingStarted_images/winui-combobox-populating-comboBoxItem.gif)
+![Populating the ComboBoxItem in WinUI application](gettingstarted_images/winui-combobox-populating-items.gif)
 
 ## Populating items using data binding
 
@@ -210,7 +210,7 @@ comboBox.TextMemberPath = "Name";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox populating using data binding](GettingStarted_images/winui-combobox-populating-data-binding.png)
+![Populating data binding in WinUI ComboBox](gettingstarted_images/winui-combobox-populating-data-binding.png)
 
 ## Multi selection
 
@@ -237,7 +237,7 @@ comboBox.SelectionMode = ComboBoxSelectionMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
 
-![Multiselect ComboBox control](GettingStarted_images/winui-combobox-multi-selection.png)
+![Multi selection in WinUI ComboBox](gettingstarted_images/winui-combobox-multi-selection.png)
 
 ## Editing
 
@@ -282,7 +282,7 @@ Based on the [TextSearchMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox search the items based on provided input](GettingStarted_images/winui-combobox-text-searching.gif)
+![Text searching in WinUI ComboBox](gettingstarted_images/winui-combobox-text-searching.gif)
 
 ## Filtering
 
@@ -309,7 +309,7 @@ comboBox.IsFilteringEnabled = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox filter the items based on starting text](GettingStarted_images/winui-combobox-filtering-start-text.gif)
+![Filtering starting text in WinUI ComboBox](gettingstarted_images/winui-combobox-filtering-starting-text.gif)
 
 N> Filtering will be supported only for editable mode.
 
@@ -359,6 +359,6 @@ N> `SelectionBoxItemTemplate` has no effect when `IsEditable` is `true`.
 {% endhighlight %}
 {% endtabs %}
 
-![Custom UI of Selection Box using SelectionBoxItemTemplate](GettingStarted_images/winui-combobox-selectionBoxItemTemplate.png)
+![Selection Box Item Template in WinUI ComboBox](gettingstarted_images/winui-combobox-selection-box-item-template.png)
 
 N> You can refer more information about different theme support and customization of `ComboBox` element using the theme keys from [this](https://help.syncfusion.com/winui/themes) link.
