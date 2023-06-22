@@ -13,7 +13,7 @@ The [WinUI ComboBox control](https://www.syncfusion.com/winui-controls/combobox)
 
 ## Control structure
 
-![WinUI ComboBox structure](Overview_images/winui-combobox-control.png)
+![WinUI ComboBox structure](overview_images/winui-combobox-control.png)
 
 ## Key features
 

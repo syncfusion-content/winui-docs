@@ -49,7 +49,7 @@ comboBox.TextMemberPath = "ID";
 
 For e.g. After typing `4` in selection box.
 
-![WinUI ComboBox text searching based on TextMemberPath](Searching_images/winui-combobox-textmemberpath-searching.png)
+![WinUI ComboBox text searching based on TextMemberPath](searching_images/winui-combobox-textmemberpath-searching.png)
 
 ## Non-Editable mode Searching based on DisplayMemberPath
 
@@ -76,7 +76,7 @@ comboBox.DisplayMemberPath = "ID";
 
 For e.g. After typing `4` in drop-down.
 
-![WinUI ComboBox text searching based on DisplayMemberPath](Searching_images/winui-combobox-displaymemberpath-searching.png)
+![WinUI ComboBox text searching based on DisplayMemberPath](searching_images/winui-combobox-displaymemberpath-searching.png)
 
 ## Auto appending of text
 
@@ -95,7 +95,7 @@ The `ComboBox` control provides support to auto append the text based on data so
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox auto append text based on data source when user edits](Searching_images/winui-combobox-auto-append-text.png)
+![WinUI ComboBox auto append text based on data source when user edits](searching_images/winui-combobox-auto-append-text.png)
 
 N> Auto appending of text is supported only in `Editable` mode and `TextSearchMode` property should be `StartsWith`.
 
@@ -131,7 +131,7 @@ comboBox.TextSearchMode = ComboBoxTextSearchMode.StartsWith;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox search the items based on provided input in single selection mode](Searching_images/winui-combobox-searching-start-text-single-selection-mode.gif)
+![WinUI ComboBox search the items based on provided input in single selection mode](searching_images/winui-combobox-searching-start-text-single-selection-mode.gif)
 
 The following examples show how to perform text searching functionality in multiple selection mode.
 
@@ -155,7 +155,7 @@ comboBox.TextSearchMode = ComboBoxTextSearchMode.StartsWith;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox search the items based on provided input in multiple selection mode](Searching_images/winui-combobox-searching-start-text-multiple-selection-mode.gif)
+![WinUI ComboBox search the items based on provided input in multiple selection mode](searching_images/winui-combobox-searching-start-text-multiple-selection-mode.gif)
 
 ### Search with contains text
 
@@ -181,7 +181,7 @@ comboBox.TextSearchMode = ComboBoxTextSearchMode.Contains;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox search the items based on provided input in editable mode](Searching_images/winui-combobox-searching-contains-text-editable-mode.gif)
+![WinUI ComboBox search the items based on provided input in editable mode](searching_images/winui-combobox-searching-contains-text-editable-mode.gif)
 
 ### Custom searching
 
@@ -262,7 +262,7 @@ public class StringLengthSearchingBehavior : IComboBoxSearchBehavior
 
 For e.g. After typing `9` in selection box, the first item that fully matches the typed length will be highlighted.
 
-![WinUI ComboBox highlight the first item that fully matches the typed length](Searching_images/winui-combobox-custom-searching.png)
+![WinUI ComboBox highlight the first item that fully matches the typed length](searching_images/winui-combobox-custom-searching.png)
 
 ## How to disable searching
 
@@ -288,5 +288,5 @@ comboBox.IsTextSearchEnabled = false;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox text searching functionality is disabled](Searching_images/winui-combobox-disable-text-searching.png)
+![WinUI ComboBox text searching functionality is disabled](searching_images/winui-combobox-disable-text-searching.png)
 
