@@ -92,7 +92,7 @@ The Segmented Control allows you to set the collection of strings as a data sour
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control getting started using string collection](Getting_Started_Images/winui-segmented-control-getting-started.png)
+![WinUI Segmented Control getting started using string collection](getting_started_images/winui-segmented-control-getting-started.png)
 
 ## Populating items using business objects
 
@@ -170,7 +170,7 @@ public class SegmentedModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control using DisplayMemberPath and business object](Getting_Started_Images/winui-segmented-control-displaymemberpath.png)
+![WinUI Segmented Control using DisplayMemberPath and business object](getting_started_images/winui-segmented-control-displaymemberpath.png)
 
 ### ItemTemplate
 
@@ -304,7 +304,7 @@ public class SegmentedModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI Segmented Control using ItemTemplate and business object](Getting_Started_Images/winui-segmented-control-itemtemplate.png)
+![WinUI Segmented Control using ItemTemplate and business object](getting_started_images/winui-segmented-control-itemtemplate.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-segmentedcontrol-examples/tree/main/Samples/Getting-Started)
 

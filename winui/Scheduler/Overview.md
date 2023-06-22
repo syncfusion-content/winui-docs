@@ -11,7 +11,7 @@ documentation: ug
 
 The Syncfusion [WinUI Scheduler](https://www.syncfusion.com/winui-controls/scheduler) displays appointments in different views and allows users to create and manage appointments. It's rich feature set includes functionalities like viewing daily/all day/spanned appointments, complete customization using the custom Templates, efficient performance, and Data binding to different sources.
 
-![show-week-view-in-winui-scheduler](Overview_Images/week-view-in-winui-scheduler.png)
+![Show week view in WinUI Scheduler](overview_images/winui-scheduler-show-week-view.png)
 
 ## Key features
 
@@ -21,13 +21,13 @@ The Syncfusion [WinUI Scheduler](https://www.syncfusion.com/winui-controls/sched
 
 * **Recurrence Events**: Easily configure the recurring events on a daily, weekly, monthly, or yearly basis. Also skip or change the occurrence of a recurring appointment.
 
-![recurring-events-with-exceptions-dates-in-winui-scheduler](Overview_Images/recurring-events-with-exceptions-dates-in-winui-scheduler.png)
+![Recurring events with exceptions dates in WinUI Scheduler](overview_images/winui-scheduler-recurring-events-with-exceptions-dates.png)
 
 * **Appointment Mapping**: The WinUI Scheduler control supports to map any collection that implements the IEnumerable interface to populate appointments.
 
 * **Appointment Editor**: Easily create, edit, or delete appointments using the built-in appointment editor.
 
-![appointment-editor-in-winui-scheduler](Overview_Images/appointment-editor-in-winui-scheduler.png)
+![Appointment editor in WinUI Scheduler](overview_images/winui-scheduler-appointment-editor.png)
 
 * **Timezone**: The Display appointments can be created in various time zones in the system time zone. The appointment start and end times are also automatically adjusted and displayed based on the daylight savings time.
 

@@ -25,7 +25,7 @@ sfTimePicker.MaxTime = new DateTimeOffset(new DateTime(DateTime.Now.Year, DateTi
 {% endhighlight  %}
 {% endtabs %}
 
-![change-minimum-and-maximum-times-in-winui-time-picker](Getting-Started_images/change-minimum-and-maximum-times-in-winui-time-picker.png)
+![Change minimum and maximum times in WinUI TimePicker](getting-started_images/change-minimum-and-maximum-times-in-winui-time-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
@@ -78,7 +78,7 @@ sfTimePicker.BlackoutTimes = (sfTimePicker.DataContext as ViewModel).BlackoutTim
 {% endhighlight  %}
 {% endtabs %}
 
-![change-black-out-times-in-winui-time-picker](Getting-Started_images/change-black-out-times-in-winui-time-picker.png)
+![Change black out times in WinUI TimePicker](getting-started_images/winui-time-picker-change-black-out-times.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -144,7 +144,7 @@ private void SfTimePicker_TimeFieldPrepared(object sender, DateTimeFieldPrepared
 {% endhighlight %}
 {% endtabs %}
 
-![change-custom-time-interval-in-winui-time-picker](Dropdown-Time-Spinner_images/change-custom-time-interval-in-winui-time-picker.png)
+![Change custom time interval in winui-time-picker](dropdown-time-spinner_images/winui-time-picker-change-custom-time-interval.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeFieldPrepared)
 
@@ -168,7 +168,7 @@ sfTimePicker.ShowSubmitButtons = false;
 {% endhighlight %}
 {% endtabs %}
 
-![show-or-hide-submit-buttons-in-winui-time-picker](Getting-Started_images/show-or-hide-submit-buttons-in-winui-time-picker.gif)
+![Show or hide submit buttons in WinUI TimePicker](getting-started_images/winui-time-picker-show-or-hide-submit-buttons.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 

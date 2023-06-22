@@ -13,7 +13,7 @@ This section explains the steps required to add the [WinUI Time Picker](https://
 
 ## Structure of Time Picker control
 
-![winui-time-picker-structure](Getting-Started_images/winui-time-picker-structure.png)
+![WinUI TimePicker structure](getting-started_images/winui-time-picker-structure.png)
 
 ## Creating an application with WinUI Time Picker
 
@@ -91,7 +91,7 @@ namespace GettingStarted
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![winui-time-picker-control](Getting-Started_images/winui-time-picker-control.png)
+![WinUI TimePicker control](getting-started_images/winui-time-picker-control.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/Getting_Started)
 
@@ -108,7 +108,7 @@ sfTimePicker.SelectedTime = new DateTimeOffset(new DateTime(2021, 10, 29, 10, 45
 {% endhighlight %}
 {% endtabs %}
 
-![programmatic-time-selection-in-winui-time-picker](Getting-Started_images/programmatic-time-selection-in-winui-time-picker.png)
+![Programmatic selection in WinUI TimePicker](getting-started_images/programmatic-time-selection-in-winui-time-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
 
@@ -129,7 +129,7 @@ SfTimePicker sfTimePicker= new SfTimePicker();
 {% endhighlight %}
 {% endtabs %}
 
-![time-selection-in-winui-time-picker](Getting-Started_images/time-selection-in-winui-time-picker.gif)
+![Selection in WinUI TimePicker](getting-started_images/winui-time-picker-selection.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/Getting_Started)
 
@@ -163,7 +163,7 @@ sfTimePicker.AllowNull = true;
 {% endhighlight %}
 {% endtabs %}
 
-![allow-null-value-in-winui-time-picker](Getting-Started_images/allow-null-value-in-winui-time-picker.png)
+![Allow null value in WinUI TimePicker](getting-started_images/winui-time-picker-allow-null-value.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
@@ -189,7 +189,7 @@ timePicker.Header = "Select your convenient order delivery time";
 {% endhighlight %}
 {% endtabs %}
 
-![customize-header-text-in-winui-time-picker](Getting-Started_images/customize-header-text-in-winui-time-picker.png)
+![Customize header text in WinUI TimePicker](getting-started_images/winui-time-picker-customize-header-text.png)
 #### Header customization
 By using the controls `HeaderTemplate` property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
 
@@ -211,7 +211,7 @@ By using the controls `HeaderTemplate` property, you can customize the appearanc
 {% endhighlight %}
 {% endtabs %}
 
-![customize-header-template-in-winui-time-picker](Getting-Started_images/customize-header-template-in-winui-time-picker.png)
+![Customize header template in WinUI TimePicker](getting-started_images/winui-time-picker-customize-header-template.png)
 
 ### Description
 The `Description` support is used to display the content beneath the control as well as to provide guidance on the input that the control expects.
@@ -235,7 +235,7 @@ timePicker.Description = "Your order will be delivered on time.";
 {% endhighlight %}
 {% endtabs %}
 
-![customize-header-description-text-in-winui-time-picker](Getting-Started_images/customize-header-description-text-in-winui-time-picker.png)
+![Customize header description text in WinUI TimePicker](getting-started_images/winui-time-picker-customize-header-description-text.png)
 
 ## Setting watermark text
 
@@ -260,7 +260,7 @@ sfTimePicker.AllowNull = true;
 {% endhighlight %}
 {% endtabs %}
 
-![customize-text-with-water-mark-in-winui-time-picker](Getting-Started_images/customize-text-with-water-mark-in-winui-time-picker.png)
+![Customize text with watermark in WinUI TimePicker](getting-started_images/winui-time-picker-customize-text-with-watermark.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 

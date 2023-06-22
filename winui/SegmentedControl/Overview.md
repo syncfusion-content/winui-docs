@@ -11,7 +11,7 @@ documentation: ug
 
 The Syncfusion [WinUI Segmented Control](https://www.syncfusion.com/winui-controls/segmented-control) provides a simple way to choose from a linear set of two or more segments, each of which functions as a mutually exclusive option.
 
-![Overview of WinUI Segmented Control](Overview_Images/winui-segmented-control-overview.png)
+![Overview of WinUI Segmented Control](overview_images/winui-segmented-control-overview.png)
 
 ## Key features
 

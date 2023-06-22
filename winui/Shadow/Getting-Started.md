@@ -57,7 +57,7 @@ shadow.Content = button;
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![Shadow effect for button in WinUI](Shadow_images/winui_shadow_button.png)
+![Shadow effect for button in WinUI](shadow_images/winui-shadow-button.png)
 
 ## Applying shadow effect for image
 
@@ -86,7 +86,7 @@ shadow.Content = image;
 {% endhighlight %}
 {% endtabs %}
 
-![Shadow effect for image in WinUI](Shadow_images/winui_shadow_image.png)
+![Shadow effect for image in WinUI](shadow_images/winui-shadow-image.png)
 
 ## Applying shadow effect for shape 
 
@@ -165,4 +165,4 @@ panel.Children.Add(shadow5);
 {% endhighlight %}
 {% endtabs %}
 
-![Shadow effect for shape in WinUI](Shadow_images/winui_shadow_path.png)
+![Shadow effect for shape in WinUI](shadow_images/winui-shadow-shape.png)
