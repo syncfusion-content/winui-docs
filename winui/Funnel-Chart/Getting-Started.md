@@ -301,7 +301,7 @@ public sealed partial class MainWindow : Window
 
 {% endtabs %}
 
-![Getting Started in WinUI Chart](Getting-Started_Images/winui-chart.png)
+![Getting Started with WinUI Chart](getting-started_images/winui-chart-getting-started.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/FunnelChartGettingStarted).
 

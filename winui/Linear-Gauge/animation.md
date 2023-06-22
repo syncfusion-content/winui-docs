@@ -255,6 +255,6 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![animation easing function](images/animation/animation_easingFunction.gif)
+![Animation easing function in WinUI linear Gauge](images/animation/winui-linear-gauge-animation-easing-function.gif)
 
 N> Refer to this [EasingFunctionBase](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.animation.easingfunctionbase), to learn more about available easing functions in WinUI.

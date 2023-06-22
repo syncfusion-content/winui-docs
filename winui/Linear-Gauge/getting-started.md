@@ -177,7 +177,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![gauge bar pointer to linear gauge](images/getting-started/gauge_barPointer.png)
+![Bar pointer in WinUI Linear Gauge](images/getting-started/winui-linear-gauge-bar-pointer.png)
 
 ## Add marker pointer to the linear gauge
 
@@ -225,7 +225,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![gauge shape pointer to linear gauge](images/getting-started/gauge_shapePointer.png)
+![Shape pointer in WinUI Linear Gauge](images/getting-started/winui-linear-gauge-shape-pointer.png)
 
 ### Add content pointer to the linear gauge
 
@@ -272,7 +272,7 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-![gauge content pointer to linear gauge](images/getting-started/gauge_contentPointer.png)
+![Content pointer in WinUI Linear Gauge](images/getting-started/winui-linear-gauge-content-pointer.png)
 
 The following code example gives you the complete code of above configurations.
 
