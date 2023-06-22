@@ -11,7 +11,7 @@ documentation: ug
 
 The [WinUI Rating control](https://www.syncfusion.com/winui-controls/rating) is used to provide or view ratings on a numeric scale for any service provided, such as movies, applications, products, and more.
 
-![Rating control overview in WinUI](Rating_images/winui_rating_overview.png)
+![Rating control overview in WinUI](rating_images/winui-rating-overview.png)
 
 ## Key features
 

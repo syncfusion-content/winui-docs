@@ -21,9 +21,9 @@ The Syncfusion [WinUI Ribbon](https://www.syncfusion.com/winui-controls/ribbon) 
 * **RibbonGallery:** A simple and flexible ribbon gallery feature displays a collection of related commands similar to the gallery feature used in Microsoft Office.
 
 
- ![Overview of WinUI SfRibbon control](Overview-images/syncfusion-winui-ribbon.png)
+ ![Overview of WinUI SfRibbon control](overview-images/winui-ribbon-overview.png)
 
- ![Overview of WinUI SfRibbon Backstage](Overview-images/ribbon-backstage.gif)
+ ![Overview of WinUI SfRibbon Backstage](overview-images/winui-ribbon-backstage.gif)
 
 
 
