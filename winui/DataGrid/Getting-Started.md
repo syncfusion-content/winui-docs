@@ -206,7 +206,7 @@ sfDataGrid.ItemsSource = viewModel.Orders;
 
 Now, run the application and you can expect the below output,
 
-<img src="Getting-Started-images/winui-datagrid-getting-started.png" alt="WinUi DataGrid" width="100%" Height="Auto"/>
+<img src="getting-started-images/winui-datagrid-getting-started.png" alt="Getting Started with WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Defining Columns
 
@@ -456,7 +456,7 @@ Grouping can be enabled by setting [SfDataGrid.ShowGroupDropArea](https://help.s
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Getting-Started-images/winui-datagrid-grouping.png" alt="WinUI DataGrid Grouping" width="100%" Height="Auto"/>
+<img src="getting-started-images/winui-datagrid-grouping.png" alt="WinUI DataGrid grouping" width="100%" Height="Auto"/>
 
 ## Editing
 
@@ -467,7 +467,7 @@ You can customize the editing operations by handling [SfDataGrid.CurrentCellBegi
 
 Filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_AllowFiltering) property to `true`, where you can open advanced filter UI by clicking the Filter icon in column header and filter the SfDataGrid. You can customize the filtering operations by handling [SfDataGrid.FilterChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_FilterChanging) and [SfDataGrid.FilterChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_FilterChanged) events.
 
-<img src="Getting-Started-images/winui-datagrid-filtering.png" alt="WinUI DataGrid Filtering" width="100%" Height="Auto"/>
+<img src="getting-started-images/winui-datagrid-filtering.png" alt="WinUI DataGrid filtering" width="100%" Height="Auto"/>
 
 
 
