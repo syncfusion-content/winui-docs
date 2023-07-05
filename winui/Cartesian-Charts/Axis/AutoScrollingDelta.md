@@ -13,7 +13,7 @@ Axis supports auto-scrolling the live data added to the chart with a specific ra
 
 ## AutoScrollingDelta
 
-The [AutoScrollingDelta]() property is used to set the specified range of data visible in the chart. It always shows the recently added data points at the end, and the scrolling will be reset to the end of the range whenever a new point is added. The default value of AutoScrollingDelta is `double.NaN`.
+The [AutoScrollingDelta](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AutoScrollingDelta) property is used to set the specified range of data visible in the chart. It always shows the recently added data points at the end, and the scrolling will be reset to the end of the range whenever a new point is added. The default value of AutoScrollingDelta is `double.NaN`.
 
 By adding the [ChartZoomPanBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior__ctor) to the chart, scroll to see the previous data points using the [EnablePanning](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_EnablePanning) property.
 
@@ -70,7 +70,7 @@ By adding the [ChartZoomPanBehavior](https://help.syncfusion.com/cr/winui/Syncfu
 
 ## AutoScrollingMode
 
-The [AutoScrollingMode]() property can be used to determine whether the axis should be scrolled from the start or end positions. The default value of AutoScrollingMode is `ChartAutoScrollingMode.End`.
+The [AutoScrollingMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AutoScrollingMode) property can be used to determine whether the axis should be scrolled from the start or end positions. The default value of AutoScrollingMode is `ChartAutoScrollingMode.End`.
 
 {% tabs %}
 
@@ -124,7 +124,7 @@ The [AutoScrollingMode]() property can be used to determine whether the axis sho
 
 ## AutoScrollingDeltaType
 
-In the [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html), apply auto-scrolling delta value in [Auto](), [Years](), [Months](), [Days](), [Hours](), [Minutes](), [Seconds](), and [Milliseconds]() by setting AutoScrollingDeltaType property. The default value of this property is `DateTimeIntervalType.Auto`, and the delta will be calculated automatically based on range.
+In the [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html), apply auto-scrolling delta value in [Auto](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Auto), [Years](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Years), [Months](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Months), [Days](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Days), [Hours](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Hours), [Minutes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Minutes), [Seconds](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Seconds), and [Milliseconds](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Milliseconds) by setting AutoScrollingDeltaType property. The default value of this property is `DateTimeIntervalType.Auto`, and the delta will be calculated automatically based on range.
 
 {% tabs %}
 
