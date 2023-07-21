@@ -47,7 +47,10 @@ The below code shows how to include the `NoResultsFoundTemplate` in AutoComplete
                            ItemsSource="{Binding ContinentList }">
             <editors:SfAutoComplete.NoResultsFoundTemplate>
                 <DataTemplate>
-                    <TextBlock Text="Not Found" Foreground="Red" FontStyle="Italic" FontSize="20"  />
+                    <TextBlock Text="Not Found" 
+                        Foreground="Red" 
+                        FontStyle="Italic" 
+                        FontSize="20"  />
                 </DataTemplate>
             </editors:SfAutoComplete.NoResultsFoundTemplate>
  </editors:SfAutoComplete>
@@ -75,7 +78,7 @@ The below code shows how to include both `NoResultsFoundContent` and `NoResultsF
                 <DataTemplate>
                     <TextBlock Text="{Binding}"
                        Foreground="Red"
-                       FontStyle=""
+                       FontStyle="Italic"
                        FontSize="20" />
                 </DataTemplate>
             </editors:SfAutoComplete.NoResultsFoundTemplate>
