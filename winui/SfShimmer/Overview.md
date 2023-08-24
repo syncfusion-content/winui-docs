@@ -15,7 +15,6 @@ The [WinUI Shimmer control](https://www.syncfusion.com/winui-controls/SfShimmer)
 
 ## Key Features
 
-* `Built-in Views`: Choose from various built-in shimmer views, including Circle Persona, Square Persona, Profile, Article, Video, Feed, and Shopping.
-* `Custom Views`: Create custom shimmer views using different shape types such as Circle, Rectangle, and RoundedRectangle.
-* `Wave Directions`: Define animation wave directions, including Default, Left-to-right, Right-to-left, Top-to-bottom, and Bottom-to-top.
-* `Customization`: Customize the background fill, wave color, wave width, repeat count, wave duration, and wave angle.
+* `Built-in Views`: Choose from various built-in shimmer views, including Circle Persona, Square Persona, Profile, Article, Video, Feed and Shopping.
+* `Wave Directions`: Define animation wave directions, including Default, Left-to-right, Right-to-left, Top-to-bottom and Bottom-to-top.
+* `Customization`: Customize the background fill, wave color, wave width, repeat count and wave duration.
