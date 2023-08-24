@@ -79,8 +79,6 @@ Shimmer.RepeatCount = 2;
 
 ![WinUI Shimmmer control with custom Fill](SfShimmer_images/Customization_images/winui_shimmer_repeatcount.gif)
 
-<syncfusion:SfShimmer RepeatCount="2" />
-
 ## Wave Duration
 
 The `WaveDuration` property determines the duration of the wave animation in milliseconds.
