@@ -7,7 +7,7 @@ control: SfShimmer
 documentation: ug
 ---
 
-# Customization in WinUI AvatarView
+# Customization in WinUI Shimmer
 
 This section explains how to customize the appearance of the Syncfusion WinUI Shimmer (SfShimmer) control using various properties. You can modify the following aspects of the Shimmer effect:
 
