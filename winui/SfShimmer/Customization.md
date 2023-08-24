@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in WinUI Shimmer control | Syncfusion
-description: Learn how to customize the appearance of the Syncfusion WinUI Shimmer(SfShimmer) control using various properties like Fill, Wave Color, Wave Width, Repeat Count, Wave Duration, and Wave Angle.
+description: Learn how to customize the appearance of the Syncfusion WinUI Shimmer(SfShimmer) control using various properties like Fill, Wave Color, Wave Width, Repeat Count and Wave Duration.
 platform: WinUI
 control: SfShimmer
 documentation: ug
@@ -18,16 +18,15 @@ The `Fill` property allows you to set the background color of the Shimmer view.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfShimmer Fill="Red" />
+<syncfusion:SfShimmer Fill="Blue" />
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfShimmer Shimmer = new SfShimmer();
-Shimmer.Fill = new SolidColorBrush(Colors.Red);
+Shimmer.Fill = new SolidColorBrush(Colors.Blue);
 
-![WinUI Shimmmer control with custom Fill](SfShimmer_images/Gettting_Started/winui_shimmer_fill.gif)
-
+![WinUI Shimmmer control with custom Fill](SfShimmer_images/Customization_images/winui_shimmer_fill.gif)
 
 ## Wave Color
 
@@ -42,42 +41,62 @@ The `WaveColor` property lets you define the color of the shimmer wave.
 {% highlight c# %}
 
 SfShimmer Shimmer = new SfShimmer();
-Shimmer.Fill = new SolidColorBrush(Colors.Blue);
+Shimmer.WaveColor = new SolidColorBrush(Colors.Blue);
 
-![WinUI Shimmmer control with custom Fill](SfShimmer_images/Gettting_Started/winui_shimmer_wavecolor.gif)
+![WinUI Shimmmer control with custom Fill](SfShimmer_images/Customization_images/winui_shimmer_wavecolor.gif)
 
 ## Wave Width
+
 The `WaveWidth` property specifies the width of the shimmer wave.
 
+{% tabs %}
+{% highlight xaml %}
 
-<syncfusion:SfShimmer WaveWidth="200" />
+<syncfusion:SfShimmer WaveWidth="10" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfShimmer Shimmer = new SfShimmer();
+Shimmer.WaveWidthy = 10;
+
+![WinUI Shimmmer control with custom Fill](SfShimmer_images/Customization_images/winui_shimmer_wavewidth.gif)
 
 ## Repeat Count
+
 The `RepeatCount` property sets the number of times the built-in view should be repeated.
 
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfShimmer RepeatCount ="2" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfShimmer Shimmer = new SfShimmer();
+Shimmer.RepeatCount = 2;
+
+![WinUI Shimmmer control with custom Fill](SfShimmer_images/Customization_images/winui_shimmer_repeatcount.gif)
 
 <syncfusion:SfShimmer RepeatCount="2" />
 
 ## Wave Duration
-The `WaveDuration`` property determines the duration of the wave animation in milliseconds.
+
+The `WaveDuration` property determines the duration of the wave animation in milliseconds.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfShimmer WaveDuration="5000" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfShimmer Shimmer = new SfShimmer();
+Shimmer.WaveDuration =5000;
+
+![WinUI Shimmmer control with custom Fill](SfShimmer_images/Customization_images/winui_shimmer_waveduration.gif)
 
 
-<syncfusion:SfShimmer WaveDuration="1500" />
 
-## Wave Angle
-The `WaveAngle` property allows you to adjust the angle of the shimmer wave.
-
-<syncfusion:SfShimmer WaveAngle="15" />
-
-## Applying Customization
-To apply these customization properties and achieve the desired visual effects, use the following syntax:
-
-```markdown
-<syncfusion:SfShimmer
-    Fill="LightGray"
-    WaveColor="White"
-    WaveWidth="200"
-    RepeatCount="2"
-    WaveDuration="1500"
-    WaveAngle="15" />
-For more detailed information about customizing the Syncfusion Shimmer control, refer to the Syncfusion Shimmer documentation.

@@ -26,12 +26,11 @@ The Circle Persona view renders a circular avatar-like effect during loading.
 SfShimmer Shimmer = new SfShimmer();
 Shimmer.Type = ShimmerType.CirclePersona;
 
-![WinUI Shimmmer control with Built_in CirclePersona View](SfShimmer_images/CustomView_images/winui_shimmer_circlepersona.gif)
+![WinUI Shimmmer control with Built_in CirclePersona View](SfShimmer_images/BuiltinView_images/winui_shimmer_circlepersona.gif)
 
 ## Square Persona
 
 The Square Persona view renders a square avatar-like effect during loading.
-
 
 {% tabs %}
 {% highlight xaml %}
@@ -44,13 +43,11 @@ The Square Persona view renders a square avatar-like effect during loading.
 SfShimmer Shimmer = new SfShimmer();
 Shimmer.Type = ShimmerType.SquarePersona;
 
-![WinUI Shimmmer control with Built_in SquarePersona View](SfShimmer_images/CustomView_images/winui_shimmer_squarepersona.gif)
-
+![WinUI Shimmmer control with Built_in SquarePersona View](SfShimmer_images/BuiltinView_images/winui_shimmer_squarepersona.gif)
 
 ## Profile
 
 The Profile view displays a shimmering effect for a user profile during loading.
-
 
 {% tabs %}
 {% highlight xaml %}
@@ -63,11 +60,11 @@ The Profile view displays a shimmering effect for a user profile during loading.
 SfShimmer Shimmer = new SfShimmer();
 Shimmer.Type = ShimmerType.Profile;
 
-![WinUI Shimmmer control with Built_in Profile View](SfShimmer_images/CustomView_images/winui_shimmer_profile.gif)
+![WinUI Shimmmer control with Built_in Profile View](SfShimmer_images/BuiltinView_images/winui_shimmer_profile.gif)
 
 ## Article
-The Article view provides a shimmering effect for an article layout during loading.
 
+The Article view provides a shimmering effect for an article layout during loading.
 
 {% tabs %}
 {% highlight xaml %}
@@ -80,11 +77,11 @@ The Article view provides a shimmering effect for an article layout during loadi
 SfShimmer Shimmer = new SfShimmer();
 Shimmer.Type = ShimmerType.Article;
 
-![WinUI Shimmmer control with Built_in Profile View](SfShimmer_images/CustomView_images/winui_shimmer_article.gif)
+![WinUI Shimmmer control with Built_in Profile View](SfShimmer_images/BuiltinView_images/winui_shimmer_article.gif)
 
 ## Video
-The Video view displays a shimmering effect for a video content layout during loading.
 
+The Video view displays a shimmering effect for a video content layout during loading.
 
 {% tabs %}
 {% highlight xaml %}
@@ -97,11 +94,11 @@ The Video view displays a shimmering effect for a video content layout during lo
 SfShimmer Shimmer = new SfShimmer();
 Shimmer.Type = ShimmerType.Video;
 
-![WinUI Shimmmer control with Built_in Video View](SfShimmer_images/CustomView_images/winui_shimmer_video.gif)
+![WinUI Shimmmer control with Built_in Video View](SfShimmer_images/BuiltinView_images/winui_shimmer_video.gif)
 
 ## Feed
-The Feed view provides a shimmering effect for a social media feed layout during loading.
 
+The Feed view provides a shimmering effect for a social media feed layout during loading.
 
 {% tabs %}
 {% highlight xaml %}
@@ -114,12 +111,11 @@ The Feed view provides a shimmering effect for a social media feed layout during
 SfShimmer Shimmer = new SfShimmer();
 Shimmer.Type = ShimmerType.Feed;
 
-![WinUI Shimmmer control with Built_in Feed View](SfShimmer_images/CustomView_images/winui_shimmer_feed.gif)
+![WinUI Shimmmer control with Built_in Feed View](SfShimmer_images/BuiltinView_images/winui_shimmer_feed.gif)
 
 ## Shopping
 
 The Shopping view displays a shimmering effect for a shopping product layout during loading.
-
 
 {% tabs %}
 {% highlight xaml %}
@@ -132,7 +128,7 @@ The Shopping view displays a shimmering effect for a shopping product layout dur
 SfShimmer Shimmer = new SfShimmer();
 Shimmer.Type = ShimmerType.Shopping;
 
-![WinUI Shimmmer control with Built_in Shopping View](SfShimmer_images/CustomView_images/winui_shimmer_shopping.gif)
+![WinUI Shimmmer control with Built_in Shopping View](SfShimmer_images/BuiltinView_images/winui_shimmer_shopping.gif)
 
 These built-in views allow you to easily apply shimmer effects to different types of content in your WinUI application. Customize these views further by adjusting other properties of the SfShimmer control.
 

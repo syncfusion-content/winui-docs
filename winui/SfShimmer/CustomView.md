@@ -26,7 +26,7 @@ The default wave direction allows the animation to flow from the top-left corner
 SfShimmer Shimmer = new SfShimmer();
 Shimmer.WaveDirection = ShimmerWaveDirection.Default;
 
-![WinUI Shimmmer control with custom Fill](SfShimmer_images/CustomView_images/winui_shimmer_default.gif)
+![WinUI Shimmmer control with DefaultView](SfShimmer_images/CustomView_images/winui_shimmer_default.gif)
 
 ## Left-to-right
 
@@ -43,7 +43,7 @@ The default wave direction allows the animation to flow from the top-left corner
 SfShimmer Shimmer = new SfShimmer();
 Shimmer.WaveDirection = ShimmerWaveDirection.Default;
 
-![WinUI Shimmmer control with custom Fill](SfShimmer_images/CustomView_images/winui_shimmer_lefttoright.gif)
+![WinUI Shimmmer control with LeftToRight View](SfShimmer_images/CustomView_images/winui_shimmer_lefttoright.gif)
 
 ## Right-to-left
 
@@ -60,7 +60,7 @@ The right-to-left wave direction animates the shimmer effect from the right side
 SfShimmer Shimmer = new SfShimmer();
 Shimmer.WaveDirection = ShimmerWaveDirection.RightToLeft;
 
-![WinUI Shimmmer control with custom Fill](SfShimmer_images/CustomView_images/winui_shimmer_righttoleft.gif)
+![WinUI Shimmmer control with RightToLeftView](SfShimmer_images/CustomView_images/winui_shimmer_righttoleft.gif)
 
 ## Top-to-bottom
 
@@ -75,7 +75,7 @@ Shimmer.WaveDirection = ShimmerWaveDirection.RightToLeft;
 SfShimmer Shimmer = new SfShimmer();
 Shimmer.WaveDirection = ShimmerWaveDirection.TopToBottom;
 
-![WinUI Shimmmer control with custom Fill](SfShimmer_images/CustomView_images/winui_shimmer_toptobottom.gif)
+![WinUI Shimmmer control with TopToBottomView](SfShimmer_images/CustomView_images/winui_shimmer_toptobottom.gif)
 ## Bottom-to-top
 
 {% tabs %}
@@ -89,4 +89,4 @@ Shimmer.WaveDirection = ShimmerWaveDirection.TopToBottom;
 SfShimmer Shimmer = new SfShimmer();
 Shimmer.WaveDirection = ShimmerWaveDirection.BottomToTop;
 
-![WinUI Shimmmer control with custom Fill](SfShimmer_images/CustomView_images/winui_shimmer_bottomtotop.gif)
+![WinUI Shimmmer control with TopToBottomView](SfShimmer_images/CustomView_images/winui_shimmer_bottomtotop.gif)
