@@ -257,4 +257,4 @@ this.Content = sfLinearGauge;
 
 ![animation easing function](images/animation/animation_easingFunction.gif)
 
-N> Refer to this [EasingFunctionBase](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.animation.easingfunctionbase), to learn more about available easing functions in WinUI.
+N> Refer to this [EasingFunctionBase](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.animation.easingfunctionbase?view=winrt-22621), to learn more about available easing functions in WinUI.
