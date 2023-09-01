@@ -11,10 +11,10 @@ documentation: ug
 
 Exploding a segment is used to pull attention to a specific area of the circular chart. The following properties are used to explode the segments in the circular chart.
 
-* [ExplodeAll]()  - Used to explode all the segments of these series.
-* [ExplodeIndex]() - Used to explode any specific segment.
-* [ExplodeRadius]() - Used to define the explode distance.
-* [ExplodeOnTap]() - Used to explode the segment when segment is clicked.
+* [ExplodeAll](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_ExplodeAll)  - Used to explode all the segments of these series.
+* [ExplodeIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_ExplodeIndex) - Used to explode any specific segment.
+* [ExplodeRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_ExplodeRadius) - Used to define the explode distance.
+* [ExplodeOnTap](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_ExplodeOnTap) - Used to explode the segment when segment is clicked.
 
 **Explode Index**
 
@@ -56,7 +56,7 @@ chart.Series.Add(series);
 
 ![Exploding a segment in WinUI pie chart](Series_images/pie_explode_radius.png)
 
-N> By default [ExplodeRadius]() value is zero. So you need to define [ExplodeRadius]() value, when you set [ExplodeIndex]() or [ExplodeAll]().
+N> By default [ExplodeRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_ExplodeRadius) value is zero. So you need to define [ExplodeRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_ExplodeRadius) value, when you set [ExplodeIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_ExplodeIndex) or [ExplodeAll](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_ExplodeAll).
 
 **Explode All**
 
