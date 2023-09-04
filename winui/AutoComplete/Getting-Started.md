@@ -23,7 +23,7 @@ This section explains how to add the [AutoComplete](https://help.syncfusion.com/
 
 {% capture codesnippet1 %}
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml %
 
 <Window
     x:Class="GettingStarted.MainWindow"
@@ -61,7 +61,7 @@ namespace GettingStarted
     }
 }
 
-{% endhighlight %}
+{% endhighlight %
 {% endtabs %}
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
@@ -210,7 +210,7 @@ autoComplete.TextMemberPath = "Name";
 The `AutoComplete` control allows you to filter the data items based on their starting letter or whether they contain a specific letter entered in the editing text box. The string comparison for filtering suggestions can be changed using the [TextSearchMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_SelectionMode) property. It also supports the custom filtering option.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml %
 
 <editors:SfAutoComplete x:Name="autoComplete"
                         TextSearchMode="Contains"
@@ -225,7 +225,7 @@ autoComplete.TextSearchMode = AutoCompleteTextSearchMode.Contains;
 autoComplete.DisplayMemberPath = "Name";
 autoComplete.TextMemberPath = "Name";
 
-{% endhighlight %}
+{% endhighlight %
 {% endtabs %}
 
 **TextSearchMode="StartWith"**
