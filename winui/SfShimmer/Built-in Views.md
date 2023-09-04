@@ -7,129 +7,29 @@ control: SfShimmer
 documentation: ug
 ---
 
-# Built-in Views of WinUI Shimmer Control
+# Built-in Views of WinUI Shimmer Control (SfShimmer)
 
-The Syncfusion WinUI Shimmer control provides various built-in views that enhance the responsiveness of your application during content loading or background processing. Each built-in view has a unique visual effect. Below are the available built-in views:
+## Built-in types
 
-## Circle Persona
+Syncfusion WinUI Shimmer (SfShimmer) control provides seven built-in shimmer view types such as CirclePersona, SquarePersona, Profile, Article, Video, Feed, and Shopping.
 
-The Circle Persona view renders a circular avatar-like effect during loading.
+![WinUI Shimmmer control with DefaultView](SfShimmer_images/BuiltinView_images/winui_shimmer_BuiltinView.gif)
 
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfShimmer Type="CirclePersona" />
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfShimmer Shimmer = new SfShimmer();
-Shimmer.Type = ShimmerType.CirclePersona;
-
-![WinUI Shimmmer control with Built_in CirclePersona View](SfShimmer_images/BuiltinView_images/winui_shimmer_circlepersona.gif)
-
-## Square Persona
-
-The Square Persona view renders a square avatar-like effect during loading.
+The built-in shimmer types can be used by setting the Type of SfShimmer. By default, the CirclePersona is initially rendered.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="XAML" hl_lines="2" %}
 
-<syncfusion:SfShimmer Type="SquarePersona" />
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfShimmer Shimmer = new SfShimmer();
-Shimmer.Type = ShimmerType.SquarePersona;
-
-![WinUI Shimmmer control with Built_in SquarePersona View](SfShimmer_images/BuiltinView_images/winui_shimmer_squarepersona.gif)
-
-## Profile
-
-The Profile view displays a shimmering effect for a user profile during loading.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfShimmer Type="Profile" />
+<shimmer:SfShimmer x:Name="Shimmer"
+                   Type="CirclePersona">
+</shimmer:SfShimmer>
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="C#" hl_lines="3" %}
 
-SfShimmer Shimmer = new SfShimmer();
-Shimmer.Type = ShimmerType.Profile;
-
-![WinUI Shimmmer control with Built_in Profile View](SfShimmer_images/BuiltinView_images/winui_shimmer_profile.gif)
-
-## Article
-
-The Article view provides a shimmering effect for an article layout during loading.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfShimmer Type="Article" />
+SfShimmer shimmer = new SfShimmer();
+Shimmer.Type = shimmerType.CirclePersona;
+this.Content = shimmer;
 
 {% endhighlight %}
-{% highlight c# %}
-
-SfShimmer Shimmer = new SfShimmer();
-Shimmer.Type = ShimmerType.Article;
-
-![WinUI Shimmmer control with Built_in Profile View](SfShimmer_images/BuiltinView_images/winui_shimmer_article.gif)
-
-## Video
-
-The Video view displays a shimmering effect for a video content layout during loading.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfShimmer Type="Video" />
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfShimmer Shimmer = new SfShimmer();
-Shimmer.Type = ShimmerType.Video;
-
-![WinUI Shimmmer control with Built_in Video View](SfShimmer_images/BuiltinView_images/winui_shimmer_video.gif)
-
-## Feed
-
-The Feed view provides a shimmering effect for a social media feed layout during loading.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfShimmer Type="Feed" />
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfShimmer Shimmer = new SfShimmer();
-Shimmer.Type = ShimmerType.Feed;
-
-![WinUI Shimmmer control with Built_in Feed View](SfShimmer_images/BuiltinView_images/winui_shimmer_feed.gif)
-
-## Shopping
-
-The Shopping view displays a shimmering effect for a shopping product layout during loading.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfShimmer Type="Shopping" />
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfShimmer Shimmer = new SfShimmer();
-Shimmer.Type = ShimmerType.Shopping;
-
-![WinUI Shimmmer control with Built_in Shopping View](SfShimmer_images/BuiltinView_images/winui_shimmer_shopping.gif)
-
-These built-in views allow you to easily apply shimmer effects to different types of content in your WinUI application. Customize these views further by adjusting other properties of the SfShimmer control.
-
-For more information about customizing the WinUI Shimmer control and using built-in views, refer to the Syncfusion Shimmer documentation.
+{% endtabs %}
