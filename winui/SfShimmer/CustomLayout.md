@@ -32,10 +32,8 @@ The `Custom Layout` property of the SfShimmer can be used to create your shimmer
         </syncfusion:SfShimmer.CustomLayout>
     </syncfusion:SfShimmer>
 
-
 {% endhighlight %}
 {% highlight C# %} 
-
 
     SfShimmer sfShimmer = new SfShimmer();
     Grid customLayout = new Grid

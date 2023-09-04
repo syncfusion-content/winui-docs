@@ -18,14 +18,14 @@ The `Fill` property allows you to set the background color of the Shimmer view.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfShimmer Fill="#89CFF0" />
+    <syncfusion:SfShimmer Fill="#89CFF0" />
 
 {% endhighlight %}
 {% highlight c# %}
 
-SfShimmer Shimmer = new SfShimmer();
-Shimmer.Fill = Color.FromRgba("#89CFF0");
-this.Content = Shimmer;
+    SfShimmer Shimmer = new SfShimmer();
+    Shimmer.Fill = Color.FromRgba("#89CFF0");
+    this.Content = Shimmer;
 
 {% endhighlight %}
 {% endtabs %}
@@ -39,14 +39,14 @@ The `WaveColor` property lets you define the color of the shimmer wave.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfShimmer WaveColor ="#89CFF0" />
+    <syncfusion:SfShimmer WaveColor ="#89CFF0" />
 
 {% endhighlight %}
 {% highlight c# %}
 
-SfShimmer Shimmer = new SfShimmer();
-Shimmer.WaveColor = Color.FromRgba("#89CFF0");
-this.Content = Shimmer;
+    SfShimmer Shimmer = new SfShimmer();
+    Shimmer.WaveColor = Color.FromRgba("#89CFF0");
+    this.Content = Shimmer;
 
 {% endhighlight %}
 {% endtabs %}
@@ -60,14 +60,14 @@ The `WaveWidth` property specifies the width of the shimmer wave.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfShimmer WaveWidth="50" WaveColor="#89CFF0"/>
+    <syncfusion:SfShimmer WaveWidth="50" WaveColor="#89CFF0"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
-SfShimmer Shimmer = new SfShimmer();
-Shimmer.WaveWidth = 50;
-this.Content = Shimmer;
+    SfShimmer Shimmer = new SfShimmer();
+    Shimmer.WaveWidth = 50;
+    this.Content = Shimmer;
 
 {% endhighlight %}
 {% endtabs %}
@@ -81,14 +81,14 @@ The `RepeatCount` property sets the number of times the built-in view should be 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfShimmer RepeatCount ="2" />
+    <syncfusion:SfShimmer RepeatCount ="3" />
 
 {% endhighlight %}
 {% highlight c# %}
 
-SfShimmer Shimmer = new SfShimmer();
-Shimmer.RepeatCount = 3;
-this.Content = Shimmer;
+    SfShimmer Shimmer = new SfShimmer();
+    Shimmer.RepeatCount = 3;
+    this.Content = Shimmer;
 
 {% endhighlight %}
 {% endtabs %}
@@ -102,14 +102,14 @@ The `WaveDuration` property determines the duration of the wave animation in mil
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfShimmer WaveDuration="3000" />
+    <syncfusion:SfShimmer WaveDuration="3000" />
 
 {% endhighlight %}
 {% highlight c# %}
 
-SfShimmer Shimmer = new SfShimmer();
-Shimmer.WaveDuration =3000;
-this.Content = Shimmer;
+    SfShimmer Shimmer = new SfShimmer();
+    Shimmer.WaveDuration =3000;
+    this.Content = Shimmer;
 
 {% endhighlight %}
 {% endtabs %}

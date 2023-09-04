@@ -18,18 +18,18 @@ Syncfusion WinUI Shimmer (SfShimmer) control provides seven built-in shimmer vie
 The built-in shimmer types can be used by setting the Type of SfShimmer. By default, the CirclePersona is initially rendered.
 
 {% tabs %}
-{% highlight xaml tabtitle="XAML" hl_lines="2" %}
+{% highlight xaml %}
 
-<syncfusion:SfShimmer x:Name="Shimmer"
-                   Type="CirclePersona">
-</syncfusion:SfShimmer>
+    <syncfusion:SfShimmer x:Name="Shimmer"
+                    Type="CirclePersona">
+    </syncfusion:SfShimmer>
 
-{% endhighlight %}
-{% highlight c# tabtitle="C#" hl_lines="3" %}
+{% endhighlight %} 
+{% highlight C# %}
 
-SfShimmer shimmer = new SfShimmer();
-Shimmer.Type = shimmerType.CirclePersona;
-this.Content = shimmer;
+    SfShimmer Shimmer = new SfShimmer();
+    Shimmer.Type = ShimmerType.CirclePersona;
+    this.Content = Shimmer;
 
 {% endhighlight %}
 {% endtabs %}

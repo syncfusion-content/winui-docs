@@ -25,26 +25,24 @@ To initialize the Shimmer control, you can simply add the `SfShimmer` control in
 {% tabs %}
 {% highlight xaml %}
 
-<Window
-    x:Class="GettingStarted.MainWindow"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:GettingStarted"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Core"
-    mc:Ignorable="d">
-    <Grid>
-        <syncfusion:SfShimmer />
-    </Grid>
-</Window>
+    <Window
+        x:Class="GettingStarted.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="using:GettingStarted"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:syncfusion="using:Syncfusion.UI.Xaml.Core"
+        mc:Ignorable="d">
+        <Grid>
+            <syncfusion:SfShimmer />
+        </Grid>
+    </Window>
 
 {% endhighlight %} 
 {% highlight C# %}
 
-// Creating an instance of the Shimmer control.
-
-SfShimmer Shimmer = new SfShimmer();
+    SfShimmer Shimmer = new SfShimmer();
            
 {% endhighlight %}
 {% endtabs %}
