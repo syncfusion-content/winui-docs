@@ -27,6 +27,9 @@ SfShimmer Shimmer = new SfShimmer();
 Shimmer.Fill = Color.FromRgba("#89CFF0");
 this.Content = Shimmer;
 
+{% endhighlight %}
+{% endtabs %}
+
 ![Fill customization in WinUI Shimmer](SfShimmer_images/Customization_images/winui_shimmer_fill.gif)
 
 ## Wave Color
@@ -44,6 +47,9 @@ The `WaveColor` property lets you define the color of the shimmer wave.
 SfShimmer Shimmer = new SfShimmer();
 Shimmer.WaveColor = Color.FromRgba("#89CFF0");
 this.Content = Shimmer;
+
+{% endhighlight %}
+{% endtabs %}
 
 ![WaveColor customization in WinUI Shimmer](SfShimmer_images/Customization_images/winui_shimmer_wavecolor.gif)
 
@@ -63,6 +69,9 @@ SfShimmer Shimmer = new SfShimmer();
 Shimmer.WaveWidth = 50;
 this.Content = Shimmer;
 
+{% endhighlight %}
+{% endtabs %}
+
 ![WaveWidth customization in WinUI Shimmer](SfShimmer_images/Customization_images/winui_shimmer_wavewidth.gif)
 
 ## Repeat Count
@@ -80,6 +89,9 @@ The `RepeatCount` property sets the number of times the built-in view should be 
 SfShimmer Shimmer = new SfShimmer();
 Shimmer.RepeatCount = 3;
 this.Content = Shimmer;
+
+{% endhighlight %}
+{% endtabs %}
 
 ![RepeatCount customization in WinUI Shimmer](SfShimmer_images/Customization_images/winui_shimmer_repeatcount.gif)
 
@@ -99,7 +111,7 @@ SfShimmer Shimmer = new SfShimmer();
 Shimmer.WaveDuration =3000;
 this.Content = Shimmer;
 
+{% endhighlight %}
+{% endtabs %}
+
 ![WaveDuration customization in WinUI Shimmer](SfShimmer_images/Customization_images/winui_shimmer_waveduration.gif)
-
-
-
