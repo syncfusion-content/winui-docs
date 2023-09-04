@@ -43,6 +43,7 @@ To initialize the Shimmer control, you can simply add the `SfShimmer` control in
 {% highlight C# %}
 
 // Creating an instance of the Shimmer control.
+
 SfShimmer Shimmer = new SfShimmer();
            
 {% endhighlight %}
