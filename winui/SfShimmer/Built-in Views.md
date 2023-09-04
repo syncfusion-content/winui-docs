@@ -20,9 +20,9 @@ The built-in shimmer types can be used by setting the Type of SfShimmer. By defa
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="2" %}
 
-<shimmer:SfShimmer x:Name="Shimmer"
+<syncfusion:SfShimmer x:Name="Shimmer"
                    Type="CirclePersona">
-</shimmer:SfShimmer>
+</syncfusion:SfShimmer>
 
 {% endhighlight %}
 {% highlight c# tabtitle="C#" hl_lines="3" %}
