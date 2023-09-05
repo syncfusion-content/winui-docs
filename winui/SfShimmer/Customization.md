@@ -53,6 +53,27 @@ The `WaveColor` property lets you define the color of the shimmer wave.
 
 ![WaveColor customization in WinUI Shimmer](SfShimmer_images/Customization_images/winui_shimmer_wavecolor.gif)
 
+## Wave Duration
+
+The `WaveDuration` property determines the duration of the wave animation in milliseconds.
+
+{% tabs %}
+{% highlight xaml %}
+
+    <syncfusion:SfShimmer WaveDuration="3000" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+    SfShimmer Shimmer = new SfShimmer();
+    Shimmer.WaveDuration =3000;
+    this.Content = Shimmer;
+
+{% endhighlight %}
+{% endtabs %}
+
+![WaveDuration customization in WinUI Shimmer](SfShimmer_images/Customization_images/winui_shimmer_waveduration.gif)
+
 ## Wave Width
 
 The `WaveWidth` property specifies the width of the shimmer wave.
@@ -60,13 +81,14 @@ The `WaveWidth` property specifies the width of the shimmer wave.
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SfShimmer WaveWidth="50" WaveColor="#89CFF0"/>
+    <syncfusion:SfShimmer WaveWidth="70" 
+                          WaveColor="#89CFF0"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
     SfShimmer Shimmer = new SfShimmer();
-    Shimmer.WaveWidth = 50;
+    Shimmer.WaveWidth = 70;
     this.Content = Shimmer;
 
 {% endhighlight %}
@@ -94,24 +116,3 @@ The `RepeatCount` property sets the number of times the built-in view should be 
 {% endtabs %}
 
 ![RepeatCount customization in WinUI Shimmer](SfShimmer_images/Customization_images/winui_shimmer_repeatcount.gif)
-
-## Wave Duration
-
-The `WaveDuration` property determines the duration of the wave animation in milliseconds.
-
-{% tabs %}
-{% highlight xaml %}
-
-    <syncfusion:SfShimmer WaveDuration="3000" />
-
-{% endhighlight %}
-{% highlight c# %}
-
-    SfShimmer Shimmer = new SfShimmer();
-    Shimmer.WaveDuration =3000;
-    this.Content = Shimmer;
-
-{% endhighlight %}
-{% endtabs %}
-
-![WaveDuration customization in WinUI Shimmer](SfShimmer_images/Customization_images/winui_shimmer_waveduration.gif)
