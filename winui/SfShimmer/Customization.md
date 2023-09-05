@@ -89,6 +89,7 @@ The `WaveWidth` property specifies the width of the shimmer wave.
 
     SfShimmer Shimmer = new SfShimmer();
     Shimmer.WaveWidth = 70;
+    Shimmer.WaveColor = Color.FromRgba("#89CFF0");
     this.Content = Shimmer;
 
 {% endhighlight %}
