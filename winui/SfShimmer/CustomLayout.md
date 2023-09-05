@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About WinUI Shimmer control | Syncfusion
+title: Custom Layout in WinUI Shimmer control | Syncfusion
 description: Learn here all about the Custom Layout support in Syncfusion WinUI Shimmer (SfShimmer) control and more.
 platform: WinUI
 control: SfShimmer
