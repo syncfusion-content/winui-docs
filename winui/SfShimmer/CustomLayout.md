@@ -160,9 +160,7 @@ The `Custom Layout` property of the SfShimmer can be used to create your shimmer
     customLayout.ColumnDefinitions.Add(new ColumnDefinition() { Width = GridLength.Auto });
 
     Rectangle rectangle1 = new Rectangle()
-    {
-        
-        Fill = new SolidColorBrush(Colors.LightGray),
+    {               
         RadiusX = 3,
         RadiusY = 3,
         HorizontalAlignment = HorizontalAlignment.Left,
@@ -174,8 +172,7 @@ The `Custom Layout` property of the SfShimmer can be used to create your shimmer
     Grid.SetColumnSpan(rectangle1, 2);
 
     Rectangle rectangle2 = new Rectangle()
-    {
-        Fill = new SolidColorBrush(Colors.LightGray),
+    {        
         RadiusX = 3,
         RadiusY = 3,
         HorizontalAlignment = HorizontalAlignment.Left,
@@ -186,8 +183,7 @@ The `Custom Layout` property of the SfShimmer can be used to create your shimmer
     Grid.SetColumnSpan(rectangle2, 2);
 
     Rectangle rectangle3 = new Rectangle()
-    {
-        Fill = new SolidColorBrush(Colors.LightGray),
+    {       
         RadiusX = 3,
         RadiusY = 3,
     };
@@ -195,8 +191,7 @@ The `Custom Layout` property of the SfShimmer can be used to create your shimmer
     Grid.SetRowSpan(rectangle3, 8);
 
     Rectangle rectangle4 = new Rectangle()
-    {
-        Fill = new SolidColorBrush(Colors.LightGray),
+    {       
         RadiusX = 3,
         RadiusY = 3,
         HorizontalAlignment = HorizontalAlignment.Left,
@@ -207,8 +202,7 @@ The `Custom Layout` property of the SfShimmer can be used to create your shimmer
     Grid.SetColumn(rectangle4, 1);
 
     Rectangle rectangle5 = new Rectangle()
-    {
-        Fill = new SolidColorBrush(Colors.LightGray),
+    {      
         RadiusX = 3,
         RadiusY = 3,
         HorizontalAlignment = HorizontalAlignment.Left,
@@ -219,8 +213,7 @@ The `Custom Layout` property of the SfShimmer can be used to create your shimmer
     Grid.SetColumn(rectangle5, 1);
 
     Rectangle rectangle6 = new Rectangle()
-    {
-        Fill = new SolidColorBrush(Colors.LightGray),
+    {     
         RadiusX = 3,
         RadiusY = 3,
         HorizontalAlignment = HorizontalAlignment.Left,
@@ -231,8 +224,7 @@ The `Custom Layout` property of the SfShimmer can be used to create your shimmer
     Grid.SetColumn(rectangle6, 1);
 
     Rectangle rectangle7 = new Rectangle()
-    {
-        Fill = new SolidColorBrush(Colors.LightGray),
+    {      
         RadiusX = 3,
         RadiusY = 3,
         HorizontalAlignment = HorizontalAlignment.Left,
@@ -243,8 +235,7 @@ The `Custom Layout` property of the SfShimmer can be used to create your shimmer
     Grid.SetColumn(rectangle7, 1);
 
     Rectangle rectangle8 = new Rectangle()
-    {
-        Fill = new SolidColorBrush(Colors.LightGray),
+    {      
         RadiusX = 3,
         RadiusY = 3,
         HorizontalAlignment = HorizontalAlignment.Left,
@@ -255,8 +246,7 @@ The `Custom Layout` property of the SfShimmer can be used to create your shimmer
     Grid.SetColumn(rectangle8, 1);
 
     Rectangle rectangle9 = new Rectangle()
-    {
-        Fill = new SolidColorBrush(Colors.LightGray),
+    {     
         RadiusX = 3,
         RadiusY = 3,
         HorizontalAlignment = HorizontalAlignment.Left,
@@ -267,8 +257,7 @@ The `Custom Layout` property of the SfShimmer can be used to create your shimmer
     Grid.SetColumn(rectangle9, 1);
 
     Rectangle rectangle10 = new Rectangle()
-    {
-        Fill = new SolidColorBrush(Colors.LightGray),
+    {    
         RadiusX = 3,
         RadiusY = 3,
         HorizontalAlignment = HorizontalAlignment.Left,
@@ -279,8 +268,7 @@ The `Custom Layout` property of the SfShimmer can be used to create your shimmer
     Grid.SetColumn(rectangle10, 1);
 
     Rectangle rectangle11 = new Rectangle()
-    {
-        Fill = new SolidColorBrush(Colors.LightGray),
+    {     
         RadiusX = 3,
         RadiusY = 3,
         HorizontalAlignment = HorizontalAlignment.Left,
@@ -290,8 +278,7 @@ The `Custom Layout` property of the SfShimmer can be used to create your shimmer
     Grid.SetRow(rectangle11, 10);
 
     Rectangle rectangle12 = new Rectangle()
-    {
-        Fill = new SolidColorBrush(Colors.LightGray),
+    {     
         RadiusX = 3,
         RadiusY = 3,
         HorizontalAlignment = HorizontalAlignment.Left,
@@ -303,8 +290,7 @@ The `Custom Layout` property of the SfShimmer can be used to create your shimmer
     Grid.SetRowSpan(rectangle12, 12);
 
     Rectangle rectangle13 = new Rectangle()
-    {
-        Fill = new SolidColorBrush(Colors.LightGray),
+    {     
         RadiusX = 3,
         RadiusY = 3,
         HorizontalAlignment = HorizontalAlignment.Left,
