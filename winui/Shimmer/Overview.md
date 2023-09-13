@@ -11,7 +11,7 @@ documentation: ug
 
 The WinUI Shimmer control enhances the responsiveness of your application by displaying a shimmer effect during content loading or background processing.
 
-![WinUI Shimmer control overview](SfShimmer_images/Overview_images/winui_shimmer_overview.gif)
+![WinUI Shimmer control overview](Shimmer_images/Overview_images/winui_shimmer_overview.gif)
 
 ## Key Features
 
