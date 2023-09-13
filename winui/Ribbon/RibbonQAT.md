@@ -14,11 +14,12 @@ The 'Quick Access Toolbar' is used to group frequently used commands above or be
 ## QAT Supported Ribbon Items
 
 1. Ribbon Button
-2. Ribbon Toggle Button
-3. Ribbon Drop Down Button
+2. Ribbon ToggleButton
+3. Ribbon DropDown Button
 4. Ribbon Split Button
 5. Ribbon ComboBox
 6. Ribbon Group
+7. RibbonItemsHost
 
 ## Add items in QAT
 
