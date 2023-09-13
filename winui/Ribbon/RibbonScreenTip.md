@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ScreenTip | WinUI | Ribbon | Syncfusion
-description: Learn more about the Quick Access ToolBar  in the Syncfusion WinUI Ribbon (SfRibbon) control.
+description: Learn more about the ScreenTip in the Syncfusion WinUI Ribbon (SfRibbon) control.
 platform: winui
 control: Ribbon
 documentation: ug
@@ -13,7 +13,7 @@ documentation: ug
 
 ## Adding ScreenTip for ribbon items
 
-ScreenTip can be added as follows.
+ScreenTip can be set to each Ribbon item by using its `ScreenTip` property. The below code shows how to define the ScreenTip for ribbon items in Ribbon control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -154,3 +154,5 @@ ScreenTip can be added as follows.
 {% endtabs %}
 
 ![ScreenTip in Ribbon control](Ribbon-ScreenTip-images/winui-ribbon-screentip.png)
+
+![Customized ScreenTip in Ribbon control](Ribbon-ScreenTip-images/winui-ribbon-customized-screentip.png)
