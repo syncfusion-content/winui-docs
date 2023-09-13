@@ -18,16 +18,16 @@ The built-in shimmer types can be used by setting the Type of SfShimmer. By defa
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SfShimmer x:Name="Shimmer"
-                    Type="CirclePersona">
-    </syncfusion:SfShimmer>
+<syncfusion:SfShimmer x:Name="Shimmer"
+                Type="CirclePersona">
+</syncfusion:SfShimmer>
 
 {% endhighlight %} 
 {% highlight C# %}
 
-    SfShimmer Shimmer = new SfShimmer();
-    Shimmer.Type = ShimmerType.CirclePersona;
-    this.Content = Shimmer;
+SfShimmer Shimmer = new SfShimmer();
+Shimmer.Type = ShimmerType.CirclePersona;
+this.Content = Shimmer;
 
 {% endhighlight %}
 {% endtabs %}
