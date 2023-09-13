@@ -3,7 +3,7 @@ layout: post
 title: Getting started with WinUI Shimmer control | Syncfusion
 description: Learn about getting started with the Syncfusion WinUI Shimmer(SfShimmer) control and its basic features here.
 platform: WinUI
-control: SfShimmer
+control: Shimmer
 documentation: ug
 ---
 
