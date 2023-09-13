@@ -9,7 +9,7 @@ documentation: ug
 
 # Quick Access ToolBar in WinUI Ribbon
 
-The 'Quick Access Toolbar' is used to group frequently used commands above or below the Ribbon, and it allows users to add or remove commands to/from it. This feature provides end users with easy accessibility.
+The Quick Access Toolbar (QAT) is used to render a set of ribbon items that are commonly used in applications. It renders at the top-left corner of a window or ribbon to make it more accessible. Users can place it above or below the ribbon, remove commands from it, or add commands to it.
 
 ## QAT Supported Ribbon Items
 
