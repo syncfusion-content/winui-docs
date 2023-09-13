@@ -7,13 +7,30 @@ control: Ribbon
 documentation: ug
 ---
 
-# QuickAccessToolBar in WinUI Ribbon
+# Quick Access ToolBar in WinUI Ribbon
 
-`QuickAccessToolBar`(QAT) is a customizable bar that provides one click access to the most important and frequently used items.
+The 'Quick Access Toolbar' is used to group frequently used commands above or below the Ribbon, and it allows users to add or remove commands to/from it. This feature provides end users with easy accessibility.
+
+## QAT Supported Ribbon Items
+
+1. Ribbon Button
+2. Ribbon Toggle Button
+3. Ribbon Drop Down Button
+4. Ribbon Split Button
+5. Ribbon ComboBox
+6. Ribbon Group
 
 ## Add items in QAT
 
-### Add items through code
+Add items to the Quick Access Toolbar (QAT) by following these methods:
+
+ * Dynamically include default items in the QAT.
+ * Statically include custom items in the QAT.
+ * Add items to the QAT using MenuItems.
+
+N> QAT items are unique, so when adding them through MenuItems or statically, it's important to provide Content to avoid duplicates.
+
+## Add items to QAT Statically
 
 QAT items can be added as follows,
 
@@ -47,57 +64,16 @@ QAT items can be added as follows,
 
 ![Default QAT item in Ribbon control](Ribbon-QAT-images/default-qat.png)
 
-### Add items through context menu
+## Add items to QAT Dynamically
 
-QAT item can be add with right click on item in QAT and select `Add to Quick Access Toolbar`.
+To add an item to the Quick Access Toolbar (QAT), right-click the required and QAT supported Ribbon item and select `Add to Quick Access Toolbar`. The respective item will then be added to the QAT. 
 
 ![Add items through context menu in QAT](Ribbon-QAT-images/add-items-in-qat.png)
 
-### Removing QAT items
+## Add items to QAT through QAT Menuitems
+The Ribbon also supports adding items to the Quick Access Toolbar (QAT) through Menu items. To add items to the Drop Down Menu of the Quick Access Toolbar, use the 'MenuItems' property of the Quick Access Toolbar. Items can be added to the QAT by making the selection.
 
-QAT item can be removed with right click on item in QAT and select `Remove from Quick Access Toolbar`.
-
-![Remove QAT items from QAT](Ribbon-QAT-images/remove-items-from-qat.png)
-
-## QAT items positions
-
-QAT's position can be dynamically adjusted above or below the ribbon. Above the ribbon is the default value.
-
-{% tabs %}
-{% highlight xaml %}
-
-<ribbon:SfRibbon x:Name="ribbon" >
-            <ribbon:SfRibbon.QuickAccessToolBar>
-                <ribbon:QuickAccessToolBar Positions="AboveRibbon">
-                    <ribbon:RibbonButton x:Name="SaveButton"
-                                         Content="Save"
-                                         Icon="Save"
-                                         Command="{Binding ButtonCommand}"
-                                         CommandParameter="Save"/>
-                    <ribbon:RibbonButton x:Name="undoButton"
-                                         Content="Undo"
-                                         Icon="Undo"
-                                         Command="{Binding ButtonCommand}"
-                                         CommandParameter="Undo"/>
-                    <ribbon:RibbonButton x:Name="printButton"
-                                         Content="Print"
-                                         Icon="Print"
-                                         Command="{Binding ButtonCommand}"
-                                         CommandParameter="Print"/>                       
-                </ribbon:QuickAccessToolBar>
-            </ribbon:SfRibbon.QuickAccessToolBar>
-</ribbon:SfRibbon>
-
-{% endhighlight %}
-{% endtabs %}
-
-![QAT position in above ribbon](Ribbon-QAT-images/above-ribbon.png)
-
-![QAT position in below ribbon](Ribbon-QAT-images/below-ribbon.png)
-
-## QAT Menu items
-
-Ribbon also supports to add the items to QAT Menu items. To add the items to the Drop Down Menu of the QuickAccessToolBar, use the attached property, QATMenuItems of the Quick Access ToolBar . `QATMenuItems` can be added to the QAT by making the Selection.
+In 'MenuItems', include items that are either already in the Ribbon Tabs or not in the Ribbon Tabs. If the item is not in the Ribbon Tab, specify all the required properties. otherwise, providing the 'Content' is sufficient
 
 {% tabs %}
 {% highlight xaml %}
@@ -171,6 +147,65 @@ Ribbon also supports to add the items to QAT Menu items. To add the items to the
 {% endtabs %}
 
 ![QAT menu items](Ribbon-QAT-images/qat-menu-items.png)
+
+
+## Removing QAT items
+
+To remove a QAT item, right-click on the item in the QAT and select `Remove from Quick Access Toolbar`. 
+
+![Remove QAT items from QAT](Ribbon-QAT-images/remove-items-from-qat.png)
+
+## Position of Quick Access Toolbar
+
+The position of the QAT can be dynamically adjusted either above or below the ribbon. The default position is above the ribbon.
+
+{% tabs %}
+{% highlight xaml %}
+
+<ribbon:SfRibbon x:Name="ribbon" >
+            <ribbon:SfRibbon.QuickAccessToolBar>
+                <ribbon:QuickAccessToolBar Positions="AboveRibbon">
+                    <ribbon:RibbonButton x:Name="SaveButton"
+                                         Content="Save"
+                                         Icon="Save"
+                                         Command="{Binding ButtonCommand}"
+                                         CommandParameter="Save"/>
+                    <ribbon:RibbonButton x:Name="undoButton"
+                                         Content="Undo"
+                                         Icon="Undo"
+                                         Command="{Binding ButtonCommand}"
+                                         CommandParameter="Undo"/>
+                    <ribbon:RibbonButton x:Name="printButton"
+                                         Content="Print"
+                                         Icon="Print"
+                                         Command="{Binding ButtonCommand}"
+                                         CommandParameter="Print"/>                       
+                </ribbon:QuickAccessToolBar>
+            </ribbon:SfRibbon.QuickAccessToolBar>
+</ribbon:SfRibbon>
+
+{% endhighlight %}
+{% endtabs %}
+
+QAT in above Ribbon
+
+![QAT position in above ribbon](Ribbon-QAT-images/above-ribbon.png)
+
+QAT in below Ribbon
+
+![QAT position in below ribbon](Ribbon-QAT-images/below-ribbon.png)
+
+### Command Label
+
+When the QAT is positioned below the Ribbon, it supports command labels. To show or hide the command label for QAT items, click `Show Command Labels` or `Hide Command Labels` in the QAT Drop Down.
+
+Show Command Labels
+
+![Show Command Label](Ribbon-QAT-images/show-command-label.png)
+
+Hide Command Labels
+
+![Hide Command Label](Ribbon-QAT-images/hide-command-label.png)
 
 ## Overflow button in QAT
 
