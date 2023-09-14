@@ -27,6 +27,8 @@ To add Quick Access Toolbar in Ribbon control, set the QuickAccessToolBar proper
 {% endhighlight %}
 {% endtabs %}
 
+![Add items through context menu in QAT](Ribbon-QAT-images/quick-access-toolbar.png)
+
 ## Adding items in Quick Access Toolbar
 
 Ribbon items can be added in the Quick Access Toolbar (QAT) by following below ways:
@@ -35,9 +37,9 @@ Ribbon items can be added in the Quick Access Toolbar (QAT) by following below w
  * Adding items through Code.
  * Adding items using QAT MenuItems.
 
- N> Currently, Ribbon Gallery is not supported as a QAT add-in.
+ N> Currently, Ribbon Gallery and RibbonItemHost is not supported as a QAT add-in.
 
-### Add items through ContextMenu
+### Adding items through ContextMenu
 
 To add an item to the Quick Access Toolbar (QAT), right-click the required ribbon item and select `Add to Quick Access Toolbar`. The respective item will then be added to the QAT. 
 
