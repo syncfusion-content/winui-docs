@@ -1,15 +1,19 @@
 ---
 layout: post
-title: Custom Layout in WinUI Shimmer control | Syncfusion
-description: Learn here all about the Custom Layout support in Syncfusion WinUI Shimmer (SfShimmer) control and more.
+title: Custom layout in WinUI Shimmer control | Syncfusion
+description:  Learn here all about the custom layout support in Syncfusion WinUI Shimmer (SfShimmer) control to create your own shimmer type.
 platform: WinUI
 control: Shimmer
 documentation: ug
 ---
 
-# Custom Layout of WinUI Shimmer (SfShimmer)
+## Custom layout of WinUI Shimmer (SfShimmer)
 
-The `Custom Layout` property of the SfShimmer can be used to create your shimmer view. The below code demonstrates how to customize the shimmer view using the WinUI framework elements by `Custom Layout`.
+The `CustomLayout` property empowers you to design your own shimmer type and giving you full control over create your desired shimmer type.
+
+# How to create a custom shimmer type
+
+You can create a custom shimmer layout by setting the `CustomLayout` property of the SfShimmer control. Below is a code example that demonstrates how to achieve this:
 
 {% tabs %}
 {% highlight xaml %} 
@@ -322,4 +326,4 @@ this.Content = mainGrid;
 {% endhighlight %}
 {% endtabs %}
 
-![Shimmer Custom Layout in WinUI](Shimmer_images/winui_shimmer_customlayout.gif)
+![Custom layout in WinUI Shimmer](Shimmer_Images/winui_shimmer_customlayout.gif)
