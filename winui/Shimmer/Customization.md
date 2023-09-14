@@ -116,4 +116,4 @@ this.Content = Shimmer;
 {% endhighlight %}
 {% endtabs %}
 
-![RepeatCount customization in WinUI Shimmer](Shimmer_images/winui_shimmer_repeatcount.gif)
+![RepeatCount customization in WinUI Shimmer](Shimmer_Images/winui_shimmer_repeatcount.gif)
