@@ -30,7 +30,7 @@ this.Content = Shimmer;
 {% endhighlight %}
 {% endtabs %}
 
-![Fill customization in WinUI Shimmer](Shimmer_images/winui_shimmer_fill.gif)
+![Fill customization in WinUI Shimmer](Shimmer_Images/winui_shimmer_fill.gif)
 
 ## WaveColor
 
@@ -51,7 +51,7 @@ this.Content = Shimmer;
 {% endhighlight %}
 {% endtabs %}
 
-![WaveColor customization in WinUI Shimmer](Shimmer_images/winui_shimmer_wavecolor.gif)
+![WaveColor customization in WinUI Shimmer](Shimmer_Images/winui_shimmer_wavecolor.gif)
 
 ## WaveDuration
 
@@ -72,7 +72,7 @@ this.Content = Shimmer;
 {% endhighlight %}
 {% endtabs %}
 
-![WaveDuration customization in WinUI Shimmer](Shimmer_images/winui_shimmer_waveduration.gif)
+![WaveDuration customization in WinUI Shimmer](Shimmer_Images/winui_shimmer_waveduration.gif)
 
 ## WaveWidth
 
@@ -95,7 +95,7 @@ this.Content = Shimmer;
 {% endhighlight %}
 {% endtabs %}
 
-![WaveWidth customization in WinUI Shimmer](Shimmer_images/winui_shimmer_wavewidth.gif)
+![WaveWidth customization in WinUI Shimmer](Shimmer_Images/winui_shimmer_wavewidth.gif)
 
 ## RepeatCount
 
