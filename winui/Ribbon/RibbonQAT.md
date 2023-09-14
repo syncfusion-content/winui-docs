@@ -127,7 +127,7 @@ The Ribbon also supports adding items to the QAT Menu items. To add items to the
 
 ![QAT menu items](Ribbon-QAT-images/selection-after-adding.png)
 
-N> To avoid adding duplicate items in QAT, set content property of ribbon items.
+N> To avoid adding duplicate items in QAT, set content property for ribbon items.
 
 ## Removing QAT items
 
@@ -194,9 +194,3 @@ When the QAT is positioned below the Ribbon, it supports command labels at runti
 **Hide Command Labels**
 
 ![Hide Command Label](Ribbon-QAT-images/below-ribbon.png)
-
-## Overflow in QAT
-
-When the Quick Access Toolbar (QAT) panel contains an excessive number of items, it may exceed the available space within the QAT panel's size. In such cases, these additional items will be displayed within an Overflow button.
-
-![QAT overflow menu items in Ribbon control](Ribbon-QAT-images/qat-overflow-items.png)
