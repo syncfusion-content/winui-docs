@@ -52,7 +52,7 @@ SfShimmer Shimmer = new SfShimmer();
 
 ## Loading shimmer content
 
-Disabling the `IsActive` property of SfShimmer displays the content without any shimmer animation. Enabling the `IsActive` property, which defaults to true, activates the shimmer animation in the background. You can change the IsActive property to control how your content is presented.
+When you set the IsActive property to false in SfShimmer, the content is displayed without any shimmer animation. Conversely, when IsActive is set to true, which is its default state, only the animation is displayed, and the content remains invisible. This allows you to control how your content is presented, with the option to show the animation exclusively when IsActive is set to true.
 
 {% tabs %}
 {% highlight xaml %}
