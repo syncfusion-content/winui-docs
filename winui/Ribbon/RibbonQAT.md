@@ -187,10 +187,4 @@ The position of the QAT can also be changed using its drop-down menu option.
 
 When the QAT is positioned below the Ribbon, it supports command labels at runtime. To show or hide the command label for QAT items, click `Show Command Labels` or `Hide Command Labels` in the Context menu.
 
-**Show Command Labels**
-
 ![Show Command Label](Ribbon-QAT-images/show-command-label.png)
-
-**Hide Command Labels**
-
-![Hide Command Label](Ribbon-QAT-images/below-ribbon.png)
