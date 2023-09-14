@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Built-in Types of WinUI Shimmer Control | Syncfusion
-description: Learn about the various built-in types available in the Syncfusion WinUI Shimmer(SfShimmer) control, including Circle Persona, Square Persona, Profile, Article, Video, Feed, and Shopping.
+title: Built-in types of WinUI Shimmer control | Syncfusion
+description: Learn about the various built-in types available in the Syncfusion WinUI Shimmer (SfShimmer) control, including CirclePersona, SquarePersona, Profile, Article, Video, Feed, and Shopping.
 platform: WinUI
 control: Shimmer
 documentation: ug
@@ -9,17 +9,17 @@ documentation: ug
 
 # Built-in Types of WinUI Shimmer Control (SfShimmer)
 
-Syncfusion WinUI Shimmer (SfShimmer) control provides seven built-in shimmer view types such as CirclePersona, SquarePersona, Profile, Article, Video, Feed, and Shopping.
+The Syncfusion WinUI Shimmer (SfShimmer) control offers a range of built-in shimmer types, each designed to serve specific user interface needs. These built-in types provide convenient options for creating captivating loading animations in your WinUI applications. The following built-in shimmer types such as CirclePersona, SquarePersona, Profile, Article, Video, Feed, and Shopping is available in Shimmer control.
 
-![WinUI Shimmmer control with DefaultView](Shimmer_images/winui_shimmer_BuiltinView.gif)
+![WinUI Shimmmer control with DefaultView](Shimmer_Images/winui_shimmer_BuiltinView.gif)
 
-The built-in shimmer types can be used by setting the Type of SfShimmer. By default, the CirclePersona is initially rendered.
+By default, the WinUI Shimmer control initializes with the `CirclePersona` type. You can easily switch between these built-in types by setting the Type property of the SfShimmer control.
 
 {% tabs %}
 {% highlight xaml %}
 
 <syncfusion:SfShimmer x:Name="Shimmer"
-                Type="CirclePersona">
+                      Type="CirclePersona">
 </syncfusion:SfShimmer>
 
 {% endhighlight %} 
