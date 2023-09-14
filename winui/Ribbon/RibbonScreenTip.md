@@ -13,8 +13,8 @@ documentation: ug
 
 The ScreenTip consist of two parts 
     
-* **Title:** A property of a type object that specifes the title of the ScreenTip.
-* **Content:** A property of a type object that specifes the content of the ScreenTip.
+* **Title:** Specifies the title of the ScreenTip..
+* **Content:** Specifies the content of the ScreenTip..
 
 ## Adding ScreenTip for ribbon items
 
