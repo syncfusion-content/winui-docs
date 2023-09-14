@@ -1,36 +1,52 @@
 ---
 layout: post
-title: Quick Access ToolBar | WinUI | Ribbon | Syncfusion
-description: Learn more about the Quick Access ToolBar  in the Syncfusion WinUI Ribbon (SfRibbon) control.
+title: Quick Access Toolbar | WinUI | Ribbon | Syncfusion
+description: Learn more about the Quick Access Toolbar  in the Syncfusion WinUI Ribbon (SfRibbon) control.
 platform: winui
 control: Ribbon
 documentation: ug
 ---
 
-# Quick Access ToolBar in WinUI Ribbon
+# Quick Access Toolbar in WinUI Ribbon
 
 The Quick Access Toolbar (QAT) is used to render a set of ribbon items that are commonly used in applications. It renders at the top-left corner of a window or ribbon to make it more accessible. Users can place it above or below the ribbon, remove commands from it, or add commands to it.
 
-## Add items in QAT
+## Adding Quick Access Toolbar in Ribbon 
 
-Add items to the Quick Access Toolbar (QAT) by following these methods:
+To add Quick Access Toolbar in Ribbon control, set the QuickAccessToolBar property of Ribbon. The below code shows how to add the `Quick Access Toolbar` in Ribbon.
 
- * Add items through ContextMenu.
- * Add Items through Code.
- * Add items to the QAT using MenuItems.
+{% tabs %}
+{% highlight xaml %}
+
+ <ribbon:SfRibbon x:Name="ribbon" >
+            <ribbon:SfRibbon.QuickAccessToolBar>
+                <ribbon:QuickAccessToolBar />
+            </ribbon:SfRibbon.QuickAccessToolBar>
+</ribbon:SfRibbon>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Adding items in Quick Access Toolbar
+
+Ribbon items can be added in the Quick Access Toolbar (QAT) by following below ways:
+
+ * Adding items through ContextMenu.
+ * Adding items through Code.
+ * Adding items using QAT MenuItems.
 
  N> Currently, Ribbon Gallery is not supported as a QAT add-in.
 
 ### Add items through ContextMenu
 
-To add an item to the Quick Access Toolbar (QAT), right-click the required and QAT supported Ribbon item and select `Add to Quick Access Toolbar`. The respective item will then be added to the QAT. 
+To add an item to the Quick Access Toolbar (QAT), right-click the required ribbon item and select `Add to Quick Access Toolbar`. The respective item will then be added to the QAT. 
 
 ![Add items through context menu in QAT](Ribbon-QAT-images/add-items-in-qat.png)
 
 
-### Add Items through Code
+### Adding items through Code
 
-QAT items can be added as follows,
+To add the ribbon items in Ribbon Quick Access Toolbar through code behind, you need to populate the QuickAccessToolbar `Items` collection. The below code shows how to add the ribbon items in `Quick Access Toolbar` of Ribbon.
 
 {% tabs %}
 {% highlight xaml %}
@@ -62,10 +78,11 @@ QAT items can be added as follows,
 
 ![Default QAT item in Ribbon control](Ribbon-QAT-images/default-qat.png)
 
-### Add items to QAT through QAT Menuitems
-The Ribbon also supports adding items to the Quick Access Toolbar (QAT) through Menu items. To add items to the Drop Down Menu of the Quick Access Toolbar, use the 'MenuItems' property of the Quick Access Toolbar. Items can be added to the QAT by making the selection.
+### Adding items using QAT MenuItems
 
-In 'MenuItems', include items that are either already in the Ribbon Tabs or not in the Ribbon Tabs. If the item is not in the Ribbon Tab, specify all the required properties. otherwise, providing the 'Content' is sufficient
+The Ribbon also supports adding items to the QAT Menu items. To add items to the drop-down menu of the Quick Access Toolbar, use the `MenuItems` property of the Quick Access Toolbar. Items can be added to the QAT by making the selection.
+
+In 'MenuItems', define the ribbon items that are either already contain in the Ribbon Tabs or not in the Ribbon Tabs. If the item is not in the Ribbon Tab, specify all the required properties. Otherwise, providing the 'Content' is sufficient.
 
 {% tabs %}
 {% highlight xaml %}
