@@ -49,3 +49,32 @@ SfShimmer Shimmer = new SfShimmer();
 {% endtabs %}
 
 ![WinUI Shimmer control overview](Shimmer_images/winui_shimmer_getting_started.gif)
+
+## Loading shimmer content
+
+By disabling the `IsActive` property of `SfShimmer` , shimmer content is loaded.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfShimmer x:Name="shimmer"  IsActive ="false">
+    <syncfusion:SfShimmer.Content>
+            <TextBlock Text="Content is loaded!"/>
+    </syncfusion:SfShimmer.Content>
+</syncfusion:SfShimmer>
+
+{% endhighlight %} 
+{% highlight C# %}
+
+SfShimmer Shimmer= new SfShimmer()
+{
+    IsActive = false,
+    Content = new TextBlock
+    {
+        Text = "Content is loaded!"
+    }
+};
+this.Content = Shimmer;
+
+{% endhighlight %}
+{% endtabs %}
