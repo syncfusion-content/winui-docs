@@ -52,29 +52,81 @@ SfShimmer Shimmer = new SfShimmer();
 
 ## Loading shimmer content
 
-By disabling the `IsActive` property of `SfShimmer`, shimmer content is loaded.
+Disabling the `IsActive` property of SfShimmer displays the content without any shimmer animation. Enabling the `IsActive` property, which defaults to true, activates the shimmer animation in the background. You can change the IsActive property to control how your content is presented.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfShimmer x:Name="shimmer" IsActive="False">
-    <syncfusion:SfShimmer.Content>
-        <TextBlock Text="Content is loaded!"/>
-    </syncfusion:SfShimmer.Content>
-</syncfusion:SfShimmer>
+<Syncfusion:SfShimmer x:Name="shimmer" Width="400" WaveDuration="3000">
+    <Syncfusion:SfShimmer.Content>
+        <StackPanel Orientation="Horizontal">
+            <Image Source="Assets/Icon.png" Width="130" Height="130"/>
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="Syncfusion provides an ecosystem of compatible developer" FontWeight="SemiLight" FontSize="13"  Margin="-10,20,0,0"/>
+                <TextBlock Text="control suites, embeddable BI platforms, and business software." FontWeight="SemiLight" FontSize="13" Margin="-10,0,0,0" />
+                <TextBlock Text="We are proud to serve a wide variety of customers, from individual" FontWeight="SemiLight" FontSize="13" Margin="-10,20,0,0" />
+                <TextBlock Text="developers to Fortune 100 companies." FontWeight="SemiLight" FontSize="13" Margin="-10,0,0,0" />
+            </StackPanel>
+        </StackPanel>
+    </Syncfusion:SfShimmer.Content>
+</Syncfusion:SfShimmer>
 
 {% endhighlight %} 
 {% highlight C# %}
 
-SfShimmer Shimmer = new SfShimmer()
-{
-    IsActive = false,
-    Content = new TextBlock
-    {
-        Text = "Content is loaded!"
-    }
-};
-this.Content = Shimmer;
+SfShimmer shimmer = new SfShimmer();
+shimmer.Name = "shimmer";
+shimmer.Width = 400;
+shimmer.WaveDuration = 3000;
+
+StackPanel stackPanel = new StackPanel();
+stackPanel.Orientation = Orientation.Horizontal;
+
+Image image = new Image();
+image.Source = new BitmapImage(new Uri("Assets/Icon.png", UriKind.Relative));
+image.Width = 130;
+image.Height = 130;
+
+StackPanel textStackPanel = new StackPanel();
+textStackPanel.Orientation = Orientation.Vertical;
+
+TextBlock textBlock1 = new TextBlock();
+textBlock1.Text = "Syncfusion provides an ecosystem of compatible developer";
+textBlock1.FontWeight = FontWeights.SemiLight;
+textBlock1.FontSize = 13;
+textBlock1.Margin = new Thickness(-10, 20, 0, 0);
+
+TextBlock textBlock2 = new TextBlock();
+textBlock2.Text = "control suites, embeddable BI platforms, and business software.";
+textBlock2.FontWeight = FontWeights.SemiLight;
+textBlock2.FontSize = 13;
+textBlock2.Margin = new Thickness(-10, 0, 0, 0);
+
+TextBlock textBlock3 = new TextBlock();
+textBlock3.Text = "We are proud to serve a wide variety of customers, from individual";
+textBlock3.FontWeight = FontWeights.SemiLight;
+textBlock3.FontSize = 13;
+textBlock3.Margin = new Thickness(-10, 20, 0, 0);
+
+TextBlock textBlock4 = new TextBlock();
+textBlock4.Text = "developers to Fortune 100 companies.";
+textBlock4.FontWeight = FontWeights.SemiLight;
+textBlock4.FontSize = 13;
+textBlock4.Margin = new Thickness(-10, 0, 0, 0);
+
+textStackPanel.Children.Add(textBlock1);
+textStackPanel.Children.Add(textBlock2);
+textStackPanel.Children.Add(textBlock3);
+textStackPanel.Children.Add(textBlock4);
+
+stackPanel.Children.Add(image);
+stackPanel.Children.Add(textStackPanel);
+
+shimmer.Content = stackPanel;
+
+this.Content = shimmer;
 
 {% endhighlight %}
 {% endtabs %}
+
+![WinUI Shimmer control Content](Shimmer_Images/winui_shimmer_content.gif)
