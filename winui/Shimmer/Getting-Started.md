@@ -48,4 +48,4 @@ SfShimmer Shimmer = new SfShimmer();
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Shimmer control overview](Shimmer_images/winui_shimmer_getting_started.gif)
+![WinUI Shimmer control overview](Shimmer_Images/winui_shimmer_getting_started.gif)
