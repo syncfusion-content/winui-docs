@@ -33,7 +33,17 @@ ScreenTip can be set to each Ribbon item by using its `ScreenTip` property. The 
                                 Icon="Paste"
                                 AllowedSizeModes="Large">
                             <ribbon:RibbonSplitButton.Flyout>
-                                ...
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Command="{Binding ButtonCommand}"
+                                                    CommandParameter="Paste -&gt;Paste command"
+                                                    Text="Paste" />
+                                    <MenuFlyoutItem Command="{Binding ButtonCommand}"
+                                                    CommandParameter="Paste -&gt;Paste Special"
+                                                    Text="Paste Special" />
+                                    <MenuFlyoutItem Command="{Binding ButtonCommand}"
+                                                    CommandParameter="Paste -&gt; Set Default Paste"
+                                                    Text="Set Default Paste" />
+                                </MenuFlyout>
                             </ribbon:RibbonSplitButton.Flyout>
                             <ribbon:RibbonSplitButton.ScreenTip>
                             <ribbon:ScreenTip Title="Paste" Content="Add content on the clipboard to your document." />
@@ -45,7 +55,7 @@ ScreenTip can be set to each Ribbon item by using its `ScreenTip` property. The 
                                     CommandParameter="Cut"
                                     AllowedSizeModes="Normal, Small" >
                 <ribbon:RibbonButton.ScreenTip>
-                        <ribbon:ScreenTip Title="Cut" Content="Remove the selection and put it on the clipboard so you can paste it somewhere else." />
+                        <ribbon:ScreenTip Title="Cut" Content="Cut the selection and put it on the clipboard." />
                 </ribbon:RibbonButton.ScreenTip>
                 </ribbon:RibbonButton>
                 // Add more elements here...
@@ -63,9 +73,7 @@ ScreenTip can be set to each Ribbon item by using its `ScreenTip` property. The 
 
 ### Customize the ScreenTip Title and Content
 
-The appearance of the title and content can be customized by using the `TitleTemplate` and `ContentTemplate` property of the ScreenTip class.
-
-The following code example explains how to add a title and its customization.
+The appearance of the title and content can be customized by using the `TitleTemplate` and `ContentTemplate` property of the ScreenTip class. The following code example explains how to add a customizable title and content.
 
 {% tabs %}
 {% highlight xaml %}
@@ -80,7 +88,17 @@ The following code example explains how to add a title and its customization.
                             Icon="Paste"
                             AllowedSizeModes="Large">
                     <ribbon:RibbonSplitButton.Flyout>
-                        ...
+                        <MenuFlyout>
+                                    <MenuFlyoutItem Command="{Binding ButtonCommand}"
+                                                    CommandParameter="Paste -&gt;Paste command"
+                                                    Text="Paste" />
+                                    <MenuFlyoutItem Command="{Binding ButtonCommand}"
+                                                    CommandParameter="Paste -&gt;Paste Special"
+                                                    Text="Paste Special" />
+                                    <MenuFlyoutItem Command="{Binding ButtonCommand}"
+                                                    CommandParameter="Paste -&gt; Set Default Paste"
+                                                    Text="Set Default Paste" />
+                                </MenuFlyout>
                     </ribbon:RibbonSplitButton.Flyout>
                     <ribbon:RibbonSplitButton.ScreenTip>
                         <ribbon:ScreenTip Title="Paste" >
