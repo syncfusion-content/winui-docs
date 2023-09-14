@@ -57,7 +57,7 @@ Disabling the `IsActive` property of SfShimmer displays the content without any 
 {% tabs %}
 {% highlight xaml %}
 
-<Syncfusion:SfShimmer x:Name="shimmer" Width="400" WaveDuration="3000">
+<Syncfusion:SfShimmer x:Name="shimmer" Width="500" WaveDuration="3000">
     <Syncfusion:SfShimmer.Content>
         <StackPanel Orientation="Horizontal">
             <Image Source="Assets/Icon.png" Width="130" Height="130"/>
@@ -76,14 +76,14 @@ Disabling the `IsActive` property of SfShimmer displays the content without any 
 
 SfShimmer shimmer = new SfShimmer();
 shimmer.Name = "shimmer";
-shimmer.Width = 400;
+shimmer.Width = 500;
 shimmer.WaveDuration = 3000;
 
 StackPanel stackPanel = new StackPanel();
 stackPanel.Orientation = Orientation.Horizontal;
 
 Image image = new Image();
-image.Source = new BitmapImage(new Uri("Assets/Icon.png", UriKind.Relative));
+image.Source = new BitmapImage(new Uri("Assets/Icon.png"));
 image.Width = 130;
 image.Height = 130;
 
