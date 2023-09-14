@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in WinUI Shimmer control | Syncfusion
-description: Learn how to customize the appearance of the Syncfusion WinUI Shimmer(SfShimmer) control using various properties like Fill, Wave Color, Wave Width, Repeat Count and Wave Duration.
+description: Learn how to customize the appearance of the Syncfusion WinUI Shimmer(SfShimmer) control  using various properties like Fill, WaveColor, WaveWidth, RepeatCount and WaveDuration.
 platform: WinUI
 control: Shimmer
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Customization in WinUI Shimmer
 
-This section explains how to customize the appearance of the Syncfusion WinUI Shimmer (SfShimmer) control using various properties. You can modify the following aspects of the Shimmer effect:
+This section explains how to customize the appearance of the Syncfusion WinUI Shimmer (SfShimmer) control using various properties. You will learn how to modify the following aspects of the shimmer effect:
 
 ## Fill
 
-The `Fill` property allows you to set the background color of the Shimmer view.
+The `Fill` property allows you to specify the background color of the shimmer view.
 
 {% tabs %}
 {% highlight xaml %}
@@ -32,9 +32,9 @@ this.Content = Shimmer;
 
 ![Fill customization in WinUI Shimmer](Shimmer_images/winui_shimmer_fill.gif)
 
-## Wave Color
+## WaveColor
 
-The `WaveColor` property lets you define the color of the shimmer wave.
+The `WaveColor` property enables you to define the color of the shimmer wave.
 
 {% tabs %}
 {% highlight xaml %}
@@ -53,7 +53,7 @@ this.Content = Shimmer;
 
 ![WaveColor customization in WinUI Shimmer](Shimmer_images/winui_shimmer_wavecolor.gif)
 
-## Wave Duration
+## WaveDuration
 
 The `WaveDuration` property determines the duration of the wave animation in milliseconds.
 
@@ -74,7 +74,7 @@ this.Content = Shimmer;
 
 ![WaveDuration customization in WinUI Shimmer](Shimmer_images/winui_shimmer_waveduration.gif)
 
-## Wave Width
+## WaveWidth
 
 The `WaveWidth` property specifies the width of the shimmer wave.
 
@@ -97,7 +97,7 @@ this.Content = Shimmer;
 
 ![WaveWidth customization in WinUI Shimmer](Shimmer_images/winui_shimmer_wavewidth.gif)
 
-## Repeat Count
+## RepeatCount
 
 The `RepeatCount` property sets the number of times the built-in view should be repeated.
 
