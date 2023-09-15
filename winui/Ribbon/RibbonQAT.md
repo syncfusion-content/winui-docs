@@ -182,6 +182,8 @@ The position of the QAT can also be changed using its drop-down menu option.
 
 You can show or hide the command label in the Quick Access Toolbar using the `Show Command Labels` or `Hide Command Labels` QAT drop-down menu item.
 
-N> `Show Command Labels` or `Hide Command Labels` menu item will only be shown in QAT drop-down while placing QAT below the ribbon like in Microsoft Word.
+![WinUI Ribbon QAT show command label menu item](Ribbon-QAT-images/winui-ribbon-qat-show-command-labels.png)
 
 ![WinUI Ribbon QAT commands with label](Ribbon-QAT-images/winui-ribbon-qat-commands-with-label.png)
+
+N> `Show Command Labels` or `Hide Command Labels` menu item will only be shown in QAT drop-down while placing QAT below the ribbon like in Microsoft Word.
