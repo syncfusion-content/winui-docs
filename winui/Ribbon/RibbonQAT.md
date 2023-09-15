@@ -71,7 +71,6 @@ To add the ribbon items in Quick Access Toolbar (QAT) through code behind, you n
 
 ![WinUI Ribbon QAT Items](Ribbon-QAT-images/winui-ribbon-qat-items.png)
 
-
 ### Adding items using ContextMenu
 
 To add the ribbon items to the Quick Access Toolbar (QAT) through context menu, right-click the required ribbon item and select `Add to Quick Access Toolbar`. The respective item will be added to the QAT. 
@@ -79,7 +78,6 @@ To add the ribbon items to the Quick Access Toolbar (QAT) through context menu, 
 ![WinUI RibbonItem Context Menu](Ribbon-QAT-images/winui-ribbon-item-context-menu.png)
 
 ![WinUI Ribbon QAT Items added at run-time](Ribbon-QAT-images/winui-ribbon-qat-items-added-at-runtime.png)
-
 
 ### Adding items using QAT MenuItems
 
