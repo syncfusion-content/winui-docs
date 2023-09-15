@@ -180,6 +180,8 @@ The position of the QAT can also be changed using its drop-down menu option.
 
 ## Command Label
 
-WinUI Ribbon Command Label illustrates the implementation of MS Word. When the QAT is positioned below the Ribbon, it supports command labels at runtime. To show or hide the command label for QAT items, click `Show Command Labels` or `Hide Command Labels` in the Context menu
+You can show or hide the command label in the Quick Access Toolbar using the `Show Command Labels` or `Hide Command Labels` QAT drop-down menu item.
 
-![Show Command Label](Ribbon-QAT-images/show-command-label.png)
+N> `Show Command Labels` or `Hide Command Labels` menu item will only be shown in QAT drop-down while placing QAT below the ribbon like in Microsoft Word.
+
+![WinUI Ribbon QAT commands with label](Ribbon-QAT-images/winui-ribbon-qat-commands-with-label.png)
