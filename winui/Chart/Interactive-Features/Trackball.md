@@ -383,7 +383,7 @@ When the Trackball is hovered over, the label is displayed over the series as we
 
 **ShowTrackballInfo**
 
-The `ShowTrackballInfo` property of [`Cartesian Series`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CartesianSeries.html) allows user to enable or disable the [`Trackball`](https://help.syncfusion.com/WinUI/sfchart/interactive-features#Trackball) label for corresponding series. By default, `ShowTrackballInfo` property is true. The property can be set as shown in the following code example.
+The `ShowTrackballInfo` property of [`Cartesian Series`](https://help.syncfusion.com/cr/WinUI/Syncfusion.UI.Xaml.Charts.CartesianSeries.html) allows user to enable or disable the [`Trackball`](https://help.syncfusion.com/winui/chart/interactive-features/trackball) label for corresponding series. By default, `ShowTrackballInfo` property is true. The property can be set as shown in the following code example.
 
 {% tabs %}
 
