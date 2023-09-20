@@ -38,31 +38,31 @@ Ribbon items can be added in the Quick Access Toolbar (QAT) by following below w
 
  N> Currently, Ribbon Gallery and RibbonItemHost are not supported as a QAT add-in.
 
- ### Adding items through Code
+### Adding items through Code
 
 To add the ribbon items in Quick Access Toolbar (QAT) through code behind, you need to populate the QuickAccessToolbar `Items` collection. The below code shows how to add the ribbon items in `Quick Access Toolbar` of Ribbon.
 
 {% tabs %}
 {% highlight xaml %}
 <ribbon:SfRibbon x:Name="ribbon" >
-    <ribbon:SfRibbon.QuickAccessToolBar>
-         <ribbon:QuickAccessToolBar>
-              <ribbon:RibbonButton x:Name="SaveButton"
-                                   Content="Save"
-                                   Icon="Save"
-                                   Command="{Binding ButtonCommand}"
-                                   CommandParameter="Save"/>
-              <ribbon:RibbonButton x:Name="undoButton"
-                                   Content="Undo"
-                                   Icon="Undo"
-                                   Command="{Binding ButtonCommand}"
-                                   CommandParameter="Undo"/>
-              <ribbon:RibbonButton x:Name="printButton"
-                                   Content="Print"
-                                   Icon="Print"
-                                   Command="{Binding ButtonCommand}"
-                                   CommandParameter="Print"/>                       
-          </ribbon:QuickAccessToolBar>
+   <ribbon:SfRibbon.QuickAccessToolBar>
+       <ribbon:QuickAccessToolBar>
+         <ribbon:RibbonButton x:Name="SaveButton"
+                              Content="Save"
+                              Icon="Save"
+                              Command="{Binding ButtonCommand}"
+                              CommandParameter="Save"/>
+         <ribbon:RibbonButton x:Name="undoButton"
+                              Content="Undo"
+                              Icon="Undo"
+                              Command="{Binding ButtonCommand}"
+                              CommandParameter="Undo"/>
+         <ribbon:RibbonButton x:Name="printButton"
+                              Content="Print"
+                              Icon="Print"
+                              Command="{Binding ButtonCommand}"
+                              CommandParameter="Print"/>                       
+        </ribbon:QuickAccessToolBar>
     </ribbon:SfRibbon.QuickAccessToolBar>
     ...
 </ribbon:SfRibbon> 
