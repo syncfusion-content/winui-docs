@@ -22,11 +22,11 @@ Windows 10, version 1809 (build 17763) or later.
 * [Windows App SDK 1.2 extension](https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/stable-channel#version-124-122302174)
 * .NET 6.0
 
-N> * For more information on WinUI 3 tooling support, see [Windows UI Library 3](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/)
+N> * For more information on WinUI 3 tooling support, see [Windows UI Library 3](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/)
 
 
 {% seealso %}
 
-[How to set up your WinUI Windows App SDK development environment](https://docs.microsoft.com/en-us/windows/apps/windows-app-sdk/set-up-your-development-environment?tabs=visual-studio-2019) in Microsoft Docs.
+[How to set up your WinUI Windows App SDK development environment](https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/set-up-your-development-environment?tabs=cs-vs-community%2Ccpp-vs-community%2Cvs-2022-17-1-a%2Cvs-2022-17-1-b) in Microsoft Docs.
 
 {% endseealso %}
