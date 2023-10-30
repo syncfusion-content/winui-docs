@@ -9,11 +9,11 @@ documentation: ug
 
 # Customization in WinUI Shimmer
 
-This section explains how to customize the appearance of the Syncfusion WinUI Shimmer (SfShimmer) control using various properties. You will learn how to modify the following aspects of the shimmer effect:
+This section explains how to customize the appearance of the Syncfusion [WinUI Shimmer control](https://www.syncfusion.com/winui-controls/shimmer) (SfShimmer) using various properties. You will learn how to modify the following aspects of the shimmer effect:
 
 ## Fill
 
-The `Fill` property allows you to specify the background color of the shimmer view.
+The [Fill](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShimmer.html#Syncfusion_UI_Xaml_Core_SfShimmer_Fill) property allows you to specify the background color of the shimmer view.
 
 {% tabs %}
 {% highlight xaml %}
@@ -34,7 +34,7 @@ this.Content = Shimmer;
 
 ## WaveColor
 
-The `WaveColor` property enables you to define the color of the shimmer wave.
+The [WaveColor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShimmer.html#Syncfusion_UI_Xaml_Core_SfShimmer_WaveColor) property enables you to define the color of the shimmer wave.
 
 {% tabs %}
 {% highlight xaml %}
@@ -55,7 +55,7 @@ this.Content = Shimmer;
 
 ## WaveDuration
 
-The `WaveDuration` property determines the duration of the wave animation in milliseconds.
+The [WaveDuration](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShimmer.html#Syncfusion_UI_Xaml_Core_SfShimmer_WaveDuration) property determines the duration of the wave animation in milliseconds.
 
 {% tabs %}
 {% highlight xaml %}
@@ -76,7 +76,7 @@ this.Content = Shimmer;
 
 ## WaveWidth
 
-The `WaveWidth` property specifies the width of the shimmer wave.
+The [WaveWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShimmer.html#Syncfusion_UI_Xaml_Core_SfShimmer_WaveWidth) property specifies the width of the shimmer wave.
 
 {% tabs %}
 {% highlight xaml %}
@@ -99,7 +99,7 @@ this.Content = Shimmer;
 
 ## RepeatCount
 
-The `RepeatCount` property sets the number of times the built-in view should be repeated.
+The [RepeatCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShimmer.html#Syncfusion_UI_Xaml_Core_SfShimmer_RepeatCount) property sets the number of times the built-in view should be repeated.
 
 {% tabs %}
 {% highlight xaml %}
