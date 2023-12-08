@@ -151,7 +151,6 @@ To remove the added Quick Access Toolbar (QAT) item, select the item in the righ
 
 ![WinUI Ribbon QAT item removed](Ribbon-QAT-images/winui-ribbon-removed-qat-item.png)
 
-
 ## Change Position of Quick Access Toolbar
 
 The position of Quick Access Toolbar (QAT) can be changed by using it `Position` property.
