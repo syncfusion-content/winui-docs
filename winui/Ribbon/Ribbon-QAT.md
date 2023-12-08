@@ -121,6 +121,20 @@ The Ribbon also supports adding items to the QAT Menu items. To add items to the
 
 ![WinUI Ribbon QAT menu items](Ribbon-QAT-images/winui-ribbon-qat-menu-items.png)
 
+## Add items to QAT customize dialog window
+
+To open QAT Customize Window, select `MoreCommands` option from the ContextMenu of the QAT. In the QAT Customized dialog Window, the list of Commands is available. The Commands can be filtered only from the Particular tab by using `Choose commands from` option. Then, select the Command to add to the QuickAccessToolBar and add commands to the right Pane of the Quick Access ToolBar Dialog by clicking Add Button. Finally click OK.
+
+![Adding WinUI Ribbon Items to QAT Customize Window](Ribbon-QAT-images/winui-ribbon-items-in-more-commands.png)
+
+![Adding WinUI Ribbon Items to QAT Customize Window](Ribbon-QAT-images/winui-ribbon-items-to-customize-window.png)
+
+![Adding WinUI Ribbon Items to QuickAccessToolbar](Ribbon-QAT-images/winui-ribbon-item-to-quick-access-toolbar.png)
+
+Finally, the Items gets displayed in the QAT
+
+![Added WinUI Ribbon Items in QuickAccessToolbar](Ribbon-QAT-images/winui-ribbon-items-in-quick-access-toolbar.png)
+
 N> To avoid adding duplicate items in QAT, set Content property for ribbon items.
 
 ## Removing QAT items
@@ -130,6 +144,13 @@ To remove an items from Quick Access Toolbar (QAT), right-click the required QAT
 ![WinUI Ribbon QAT item context menu](Ribbon-QAT-images/winui-ribbon-qat-item-context-menu.png)
 
 ![WinUI Ribbon QAT item removed](Ribbon-QAT-images/winui-ribbon-qat-item-removed.png)
+
+To remove the added Quick Access Toolbar (QAT) item, select the item in the right panel and select **Remove** button. 
+
+![WinUI Ribbon Items to QAT Customize Window](Ribbon-QAT-images/winui-ribbon-remove-qat-item.png)
+
+![WinUI Ribbon QAT item removed](Ribbon-QAT-images/winui-ribbon-removed-qat-item.png)
+
 
 ## Change Position of Quick Access Toolbar
 
@@ -185,17 +206,3 @@ You can show or hide the command label in the Quick Access Toolbar using the `Sh
 ![WinUI Ribbon QAT commands with label](Ribbon-QAT-images/winui-ribbon-qat-commands-with-label.png)
 
 N> `Show Command Labels` or `Hide Command Labels` menu item will only be shown in QAT drop-down while placing QAT below the ribbon like in Microsoft Word.
-
-## Add items to QAT customize dialogue windowwinui
-
-To open QAT Customize Window, select `MoreCommands` option from the ContextMenu of the QAT. In the QAT Customized Window, the list of Commands is available. The Commands can be filtered only from the Particular tab by using `Choose commands from` option. Then, select the Command to add to the QuickAccessToolBar and add commands to the right Pane of the Quick Access ToolBar Dialog by clicking Add Button. Finally click OK.
-
-
-![Adding WPF Ribbon Items to QAT Customize Window](Ribbon-QAT-images/winui-ribbon-items-to-customize-window.png)
-
-
-![Adding WPF Ribbon Items to QuickAccessToolbar](Ribbon-QAT-images/winui-ribbon-item-to-quick-access-toolbar.png)
-
-Finally, the Items gets displayed in the QAT
-
-![Added WPF Ribbon Items in QuickAccessToolbar](Ribbon-QAT-images/winui-ribbon-items-in-quick-access-toolbar.png)
