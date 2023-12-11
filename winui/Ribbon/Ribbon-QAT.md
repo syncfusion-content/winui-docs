@@ -124,9 +124,9 @@ The Ribbon also supports adding items to the QAT Menu items. To add items to the
 
 ## Adding items using QAT Customize dialog window
 
-To open QAT customize dialog window, select `MoreCommands` option from the ContextMenu of the QAT. This dialog window showcases all available commands within the Ribbon control.
+To open the QAT customize dialog window, select the `MoreCommands` option from the ContextMenu of the QAT. This dialog window showcases all available commands within the Ribbon control.
 
-By using `Choose commands from` option, you can filter the command based on ribbon tabs. Then, select the desired command and click `Add` button to add the command to the right Pane of the QAT dialog window. Finally, click `OK`.
+Filter the command based on ribbon tabs by using the `Choose commands from` option. Then, select the desired command and click `Add` to add the command to the right Pane of the QAT dialog window. Finally, click `OK`.
 
 ![MoreCommands option in QAT drop-down context menu](Ribbon-QAT-images/winui-ribbon-more-commands-option.png)
 
@@ -134,7 +134,7 @@ By using `Choose commands from` option, you can filter the command based on ribb
 
 ![Adding command to right pane of QAT dialog window](Ribbon-QAT-images/winui-ribbon-add-command-to-right-pane-in-qat-dialog-window.png)
 
-Finally, the Items gets displayed in the QAT
+Finally, the Items are displayed in the QAT.
 
 ![Add commands to WinUI Ribbon QuickAccessToolbar](Ribbon-QAT-images/winui-ribbon-add-commands-to-qat.png)
 
@@ -148,7 +148,7 @@ To remove an items from Quick Access Toolbar (QAT), right-click the required QAT
 
 ![WinUI Ribbon QAT item removed](Ribbon-QAT-images/winui-ribbon-qat-item-removed.png)
 
-QAT item can also be removed by using Customize window, just select the QAT item in the right panel and select `Remove`. 
+QAT items can also be removed by using the Customize window. Select the QAT item in the right panel, then select `Remove`. 
 
 ![WinUI Ribbon Items to QAT Customize Window](Ribbon-QAT-images/winui-ribbon-remove-qat-item.png)
 
