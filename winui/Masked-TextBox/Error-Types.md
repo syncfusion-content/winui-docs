@@ -171,7 +171,6 @@ SfMaskedTextBox maskedTextBoxSuccess = new SfMaskedTextBox();
 maskedTextBoxSuccess.MaskType = MaskedTextBoxMaskType.RegEx;
 maskedTextBoxSuccess.Mask = "[a-z0-9._%-]+@[a-z0-9]+\\.[a-z]{2,3}";
 maskedTextBoxSuccess.Width = 200;
-maskedTextBoxSuccess.ErrorType = ErrorType.Success;
 maskedTextBoxSuccess.ValueChanging += SfMaskedTextBox_ValueChanging;
 
 // If the entered text is valid, then the success icon will show in the maskedTextbox.
@@ -232,7 +231,7 @@ The `CustomErrorBorderBrush` property sets the color of the bottom border of the
                             ErrorType="Custom"
                             ValueChanging="SfMaskedTextBox_ValueChanging"
                             CustomErrorIcon="CustomIcon.png"
-                            CustomErrorBorderBrush="Teal"/>
+                            CustomErrorBorderBrush="Purple"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -242,7 +241,7 @@ maskedTextBox.MaskType = MaskedTextBoxMaskType.RegEx;
 maskedTextBox.Mask = "[a-z0-9._%-]+@[a-z0-9]+\\.[a-z]{2,3}";
 maskedTextBox.Width = 200;
 maskedTextBox.ErrorType = ErrorType.Custom;
-maskedTextBox.CustomErrorBorderBrush = new SolidColorBrush(Colors.Teal);
+maskedTextBox.CustomErrorBorderBrush = new SolidColorBrush(Colors.Purple);
 maskedTextBox.ValueChanging += SfMaskedTextBox_ValueChanging;
 
 {% endhighlight %}
