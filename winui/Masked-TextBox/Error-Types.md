@@ -175,7 +175,7 @@ maskedTextBoxSuccess.ValueChanging += SfMaskedTextBox_ValueChanging;
 
 // If the entered text is valid, then the success icon will show in the maskedTextbox.
 
- private void SfMaskedTextBox_ValueChanging(object sender, Syncfusion.UI.Xaml.Editors.MaskedTextBoxValueChangingEventArgs e)
+ private void SfMaskedTextBox_ValueChanging(object sender, MaskedTextBoxValueChangingEventArgs e)
  {
      if(e.IsValid)
      {
