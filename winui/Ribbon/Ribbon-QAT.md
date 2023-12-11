@@ -35,7 +35,7 @@ Ribbon items can be added in the Quick Access Toolbar (QAT) by following below w
  * Adding items through Code.
  * Adding items using ContextMenu.
  * Adding items using QAT MenuItems.
- * Adding items using Customize dialog window
+ * Adding items using QAT Customize dialog window
 
  N> Currently, Ribbon Gallery and RibbonItemHost are not supported as a QAT add-in.
 
