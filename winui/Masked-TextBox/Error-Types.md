@@ -242,6 +242,7 @@ maskedTextBox.Mask = "[a-z0-9._%-]+@[a-z0-9]+\\.[a-z]{2,3}";
 maskedTextBox.Width = 200;
 maskedTextBox.ErrorType = ErrorType.Custom;
 maskedTextBox.CustomErrorBorderBrush = new SolidColorBrush(Colors.Purple);
+maskedTextBox.CustomErrorIcon = new BitmapImage(new Uri("ms-appx:///CustomIcon.png"));
 maskedTextBox.ValueChanging += SfMaskedTextBox_ValueChanging;
 
 {% endhighlight %}
