@@ -21,6 +21,7 @@ The `None` error type is ideal when users prefer no visible signals for errors.
 <syncfusion:SfMaskedTextBox MaskType="RegEx" 
                             Mask="[a-z0-9._%-]+@[a-z0-9]+\.[a-z]{2,3}" 
                             Width="200"
+                            ValueChanging="SfMaskedTextBox_ValueChanging"
                             ErrorType="None"/>
 
 {% endhighlight %}
@@ -31,6 +32,7 @@ maskedTextBoxNone.MaskType = MaskedTextBoxMaskType.RegEx;
 maskedTextBoxNone.Mask = "[a-z0-9._%-]+@[a-z0-9]+\\.[a-z]{2,3}";
 maskedTextBoxNone.Width = 200;
 maskedTextBoxNone.ErrorType = ErrorType.None;
+maskedTextBoxNone.ValueChanging += SfMaskedTextBox_ValueChanging;
 
 {% endhighlight %}
 {% endtabs %}
@@ -39,7 +41,7 @@ maskedTextBoxNone.ErrorType = ErrorType.None;
 
 # Default:
 
-The `Default` Error Type shows a Red color botttom border brush in the MaskedTextBox Control.
+The `Default` error type shows a red color botttom border brush in the MaskedTextBox Control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -47,6 +49,7 @@ The `Default` Error Type shows a Red color botttom border brush in the MaskedTex
 <syncfusion:SfMaskedTextBox MaskType="RegEx" 
                             Mask="[a-z0-9._%-]+@[a-z0-9]+\.[a-z]{2,3}" 
                             Width="200"
+                            ValueChanging="SfMaskedTextBox_ValueChanging"
                             ErrorType="Default"/>
 
 {% endhighlight %}
@@ -57,6 +60,7 @@ maskedTextBoxDefault.MaskType = MaskedTextBoxMaskType.RegEx;
 maskedTextBoxDefault.Mask = "[a-z0-9._%-]+@[a-z0-9]+\\.[a-z]{2,3}";
 maskedTextBoxDefault.Width = 200;
 maskedTextBoxDefault.ErrorType = ErrorType.Default;
+maskedTextBoxDefault.ValueChanging += SfMaskedTextBox_ValueChanging;
 
 {% endhighlight %}
 {% endtabs %}
@@ -65,7 +69,7 @@ maskedTextBoxDefault.ErrorType = ErrorType.Default;
 
 # Warning:
 
-The `Warning` Error Type to visually highlight potential concerns that need immediate attention.
+The `Warning` error type to visually highlight potential concerns that need immediate attention.
 
 {% tabs %}
 {% highlight xaml %}
@@ -73,6 +77,7 @@ The `Warning` Error Type to visually highlight potential concerns that need imme
 <syncfusion:SfMaskedTextBox MaskType="RegEx" 
                             Mask="[a-z0-9._%-]+@[a-z0-9]+\.[a-z]{2,3}" 
                             Width="200"
+                            ValueChanging="SfMaskedTextBox_ValueChanging"
                             ErrorType="Warning"/>
 
 {% endhighlight %}
@@ -83,6 +88,7 @@ maskedTextBoxWarning.MaskType = MaskedTextBoxMaskType.RegEx;
 maskedTextBoxWarning.Mask = "[a-z0-9._%-]+@[a-z0-9]+\\.[a-z]{2,3}";
 maskedTextBoxWarning.Width = 200;
 maskedTextBoxWarning.ErrorType = ErrorType.Warning;
+maskedTextBoxWarning.ValueChanging += SfMaskedTextBox_ValueChanging;
 
 {% endhighlight %}
 {% endtabs %}
@@ -91,7 +97,7 @@ maskedTextBoxWarning.ErrorType = ErrorType.Warning;
 
 # Information:
 
-The `Information` Error Type uses an icon to share non-essential details or guidance.
+The `Information` error type uses an icon to share non-essential details or guidance.
 
 {% tabs %}
 {% highlight xaml %}
@@ -99,6 +105,7 @@ The `Information` Error Type uses an icon to share non-essential details or guid
 <syncfusion:SfMaskedTextBox MaskType="RegEx" 
                             Mask="[a-z0-9._%-]+@[a-z0-9]+\.[a-z]{2,3}" 
                             Width="200"
+                            ValueChanging="SfMaskedTextBox_ValueChanging"
                             ErrorType="Information"/>
 
 {% endhighlight %}
@@ -109,6 +116,7 @@ maskedTextBoxInformation.MaskType = MaskedTextBoxMaskType.RegEx;
 maskedTextBoxInformation.Mask = "[a-z0-9._%-]+@[a-z0-9]+\\.[a-z]{2,3}";
 maskedTextBoxInformation.Width = 200;
 maskedTextBoxInformation.ErrorType = ErrorType.Information;
+maskedTextBoxInformation.ValueChanging += SfMaskedTextBox_ValueChanging;
 
 {% endhighlight %}
 {% endtabs %}
@@ -117,7 +125,7 @@ maskedTextBoxInformation.ErrorType = ErrorType.Information;
 
 # Critical:
 
-The `Critical` Error Type for urgent issues that require immediate action.
+The `Critical` error type for urgent issues that require immediate action.
 
 {% tabs %}
 {% highlight xaml %}
@@ -125,6 +133,7 @@ The `Critical` Error Type for urgent issues that require immediate action.
 <syncfusion:SfMaskedTextBox MaskType="RegEx" 
                             Mask="[a-z0-9._%-]+@[a-z0-9]+\.[a-z]{2,3}" 
                             Width="200"
+                            ValueChanging="SfMaskedTextBox_ValueChanging"
                             ErrorType="Critical"/>
 
 {% endhighlight %}
@@ -135,6 +144,7 @@ maskedTextBoxCritical.MaskType = MaskedTextBoxMaskType.RegEx;
 maskedTextBoxCritical.Mask = "[a-z0-9._%-]+@[a-z0-9]+\\.[a-z]{2,3}";
 maskedTextBoxCritical.Width = 200;
 maskedTextBoxCritical.ErrorType = ErrorType.Critical;
+maskedTextBoxCritical.ValueChanging += SfMaskedTextBox_ValueChanging;
 
 {% endhighlight %}
 {% endtabs %}
@@ -151,6 +161,7 @@ The `Success` error type offers a positive visual confirmation for successful ac
 <syncfusion:SfMaskedTextBox MaskType="RegEx" 
                             Mask="[a-z0-9._%-]+@[a-z0-9]+\.[a-z]{2,3}" 
                             Width="200"
+                            ValueChanging="SfMaskedTextBox_ValueChanging"
                             ErrorType="Success"/>
 
 {% endhighlight %}
@@ -161,6 +172,17 @@ maskedTextBoxSuccess.MaskType = MaskedTextBoxMaskType.RegEx;
 maskedTextBoxSuccess.Mask = "[a-z0-9._%-]+@[a-z0-9]+\\.[a-z]{2,3}";
 maskedTextBoxSuccess.Width = 200;
 maskedTextBoxSuccess.ErrorType = ErrorType.Success;
+maskedTextBoxSuccess.ValueChanging += SfMaskedTextBox_ValueChanging;
+
+// If the entered text is valid, then the success icon will show in the maskedTextbox.
+
+ private void SfMaskedTextBox_ValueChanging(object sender, Syncfusion.UI.Xaml.Editors.MaskedTextBoxValueChangingEventArgs e)
+ {
+     if(e.IsValid)
+     {
+         maskedTextBoxSuccess.ErrorType = ErrorType.Success;
+     }
+ }
 
 {% endhighlight %}
 {% endtabs %}
@@ -178,6 +200,7 @@ The `Custom` error type enables users to define a unique error icon using the `C
                             Mask="[a-z0-9._%-]+@[a-z0-9]+\.[a-z]{2,3}" 
                             Width="200"
                             ErrorType="Custom"
+                            ValueChanging="SfMaskedTextBox_ValueChanging"
                             CustomErrorIcon="CustomIcon.png"/>
 
 {% endhighlight %}
@@ -189,6 +212,7 @@ maskedTextBoxCustom.Mask = "[a-z0-9._%-]+@[a-z0-9]+\\.[a-z]{2,3}";
 maskedTextBoxCustom.Width = 200;
 maskedTextBoxCustom.ErrorType = ErrorType.Custom;
 maskedTextBoxCustom.CustomErrorIcon = new BitmapImage(new Uri("ms-appx:///CustomIcon.png"));
+maskedTextBoxCustom.ValueChanging += SfMaskedTextBox_ValueChanging;
 
 {% endhighlight %}
 {% endtabs %}
@@ -206,6 +230,8 @@ The `CustomErrorBorderBrush` property sets the color of the bottom border of the
                             Mask="[a-z0-9._%-]+@[a-z0-9]+\.[a-z]{2,3}" 
                             Width="200"
                             ErrorType="Custom"
+                            ValueChanging="SfMaskedTextBox_ValueChanging"
+                            CustomErrorIcon="CustomIcon.png"
                             CustomErrorBorderBrush="Teal"/>
 
 {% endhighlight %}
@@ -217,6 +243,7 @@ maskedTextBox.Mask = "[a-z0-9._%-]+@[a-z0-9]+\\.[a-z]{2,3}";
 maskedTextBox.Width = 200;
 maskedTextBox.ErrorType = ErrorType.Custom;
 maskedTextBox.CustomErrorBorderBrush = new SolidColorBrush(Colors.Teal);
+maskedTextBox.ValueChanging += SfMaskedTextBox_ValueChanging;
 
 {% endhighlight %}
 {% endtabs %}
@@ -233,6 +260,7 @@ The `ErrorContent` property is used to display content when hovering over the er
 <syncfusion:SfMaskedTextBox MaskType="RegEx" 
                             Mask="[a-z0-9._%-]+@[a-z0-9]+\.[a-z]{2,3}" 
                             Width="200"
+                            ValueChanging="SfMaskedTextBox_ValueChanging"
                             ErrorType="Warning"
                             ErrorContent="Caps not allowed in the mail id"/>
 
@@ -245,6 +273,7 @@ maskedTextBox.Mask = "[a-z0-9._%-]+@[a-z0-9]+\\.[a-z]{2,3}";
 maskedTextBox.Width = 200;
 maskedTextBox.ErrorType = ErrorType.Warning;
 maskedTextBox.ErrorContent = "Caps not allowed in the mail id";
+maskedTextBox.ValueChanging += SfMaskedTextBox_ValueChanging;
 
 {% endhighlight %}
 {% endtabs %}
