@@ -23,7 +23,8 @@ The [WinUI MaskedTextBox](https://www.syncfusion.com/winui-controls/masked-textb
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfMaskedTextBox MaskType="RegEx" 
+<syncfusion:SfMaskedTextBox Name="maskedTextBox"
+                            MaskType="RegEx" 
                             Mask="[a-z0-9._%-]+@[a-z0-9]+\.[a-z]{2,3}" 
                             Width="200"
                             ErrorType="Warning"
@@ -43,7 +44,7 @@ maskedTextBox.ValueChanging += errorTypeMaskTextBox_ValueChanging;
 
 private void errorTypeMaskTextBox_ValueChanging(object sender, MaskedTextBoxValueChangingEventArgs e)
 {
-    maskedTextbox.ErrorType = e.IsValid ? ErrorType.Success : errorType;
+    maskedTextBox.ErrorType = e.IsValid ? ErrorType.Success : ErrorType.Warning;
 }
 
 {% endhighlight %}
@@ -58,7 +59,8 @@ The `Custom` error type in the SfMaskedTextBox allows users to define a unique e
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfMaskedTextBox MaskType="Simple" 
+<syncfusion:SfMaskedTextBox Name="maskedTextBox"
+                            MaskType="Simple" 
                             Mask="(+00) 000 000-0000" 
                             Width="200"
                             ErrorType="Custom"
@@ -82,7 +84,7 @@ maskedTextBox.ValueChanging += errorTypeMaskTextBox_ValueChanging;
 
 private void errorTypeMaskTextBox_ValueChanging(object sender, MaskedTextBoxValueChangingEventArgs e)
 {
-    maskedTextbox.ErrorType = e.IsValid ? ErrorType.Success : errorType;
+    maskedTextBox.ErrorType = e.IsValid ? ErrorType.Success : ErrorType.Custom;
 }
 
 {% endhighlight %}
@@ -97,7 +99,8 @@ The `ErrorContent` property is used to display content when hovering over the er
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfMaskedTextBox MaskType="RegEx" 
+<syncfusion:SfMaskedTextBox Name="maskedTextBox"
+                            MaskType="RegEx" 
                             Mask="[a-z0-9._%-]+@[a-z0-9]+\.[a-z]{2,3}" 
                             Width="200"
                             ErrorType="Warning"
@@ -119,7 +122,7 @@ maskedTextBox.ValueChanging += ValueChanging="errorTypeMaskTextBox_ValueChanging
 
 private void errorTypeMaskTextBox_ValueChanging(object sender, MaskedTextBoxValueChangingEventArgs e)
 {
-    maskedTextbox.ErrorType = e.IsValid ? ErrorType.Success : errorType;
+    maskedTextBox.ErrorType = e.IsValid ? ErrorType.Success : ErrorType.Warning;
 }
 
 {% endhighlight %}
