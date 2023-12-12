@@ -116,7 +116,7 @@ maskedTextBox.Mask = "[a-z0-9._%-]+@[a-z0-9]+\\.[a-z]{2,3}";
 maskedTextBox.Width = 200;
 maskedTextBox.ErrorType = ErrorType.Warning;
 maskedTextBox.ErrorContent = "Caps not allowed in the mail ID";
-maskedTextBox.ValueChanging += ValueChanging="errorTypeMaskTextBox_ValueChanging";
+maskedTextBox.ValueChanging += errorTypeMaskTextBox_ValueChanging;
 
 // If the entered value is valid then success icon will display in the SfMaskedTextBox .
 
