@@ -11,7 +11,6 @@ documentation: ug
 
 The [WinUI MaskedTextBox](https://www.syncfusion.com/winui-controls/masked-textbox) control provides comprehensive error types support to facilitate effective input validation and enhance user experience. This feature enables users to utilize various error icons and styles based on specific validation scenarios.The following error types such as none, default, warning, information, critical, success, custom is available in the MaskedTextBox control.
 
-
 * `None` : No visible signals for errors.
 * `Default` : Red bottom border brush in the MaskedTextBox Control.
 * `Warning ` : Visual highlight for potential concerns needing immediate attention.
@@ -69,8 +68,8 @@ maskedTextBox.MaskType = MaskedTextBoxMaskType.RegEx;
 maskedTextBox.Mask = "[a-z0-9._%-]+@[a-z0-9]+\\.[a-z]{2,3}";
 maskedTextBox.Width = 200;
 maskedTextBox.ErrorType = ErrorType.Custom;
-maskedTextBox.CustomErrorBorderBrush = new SolidColorBrush(Colors.Purple);
 maskedTextBox.CustomErrorIcon = new BitmapImage(new Uri("ms-appx:///CustomIcon.png"));
+maskedTextBox.CustomErrorBorderBrush = new SolidColorBrush(Colors.Purple);
 maskedTextBox.ValueChanging += SfMaskedTextBox_ValueChanging;
 
 {% endhighlight %}
@@ -106,4 +105,4 @@ maskedTextBox.ValueChanging += SfMaskedTextBox_ValueChanging;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI MaskedTextBox control with Errortype Custom](MaskedTextBox_images/winui_masked_textbox_errorcontent.png)
+![WinUI MaskedTextBox control with Error Content](MaskedTextBox_images/winui_masked_textbox_errorcontent.png)
