@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Error Indication in WinUI MaskedTextBox control | Syncfusion
-description: Explore the various error types supported by the Syncfusion WinUI MaskedTextBox (SfMaskedTextBox) control to enhance user experience and input validation.
+description: Explore the error indication support and various error types supported by the WinUI MaskedTextBox control to enhance user experience and input validation.
 platform: WinUI
 control: SfMaskedTextBox
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 The MaskedTextBox control supports error indication by displaying an icon and providing additional details upon hovering over the icon. This powerful feature allows users to employ various error icons based on specific validation scenarios.
 
-## Built-in error types:
+## Built-in error types
 
 The MaskedTextBox control offers several built-in error types:
 
@@ -53,7 +53,7 @@ private void ErrorTypeMaskTextBox_ValueChanging(object sender, MaskedTextBoxValu
 
 ![WinUI MaskedTextBox control with error type](MaskedTextBox_images/winui_masked_textbox_errortype.png)
 
-## Custom error type:
+## Custom error type
 
 The `Custom` error type provides users with the flexibility to customize both the error icon and the border brush. This customization is achieved through the following properties:
 
@@ -95,7 +95,7 @@ private void ErrorTypeMaskTextBox_ValueChanging(object sender, MaskedTextBoxValu
 
 ![WinUI MaskedTextBox control with custom error type](MaskedTextBox_images/winui_masked_textbox_errortype_custom.png)
 
-## Error content:
+## Error content
 
 The `ErrorContent` property is used to display content when hovering over the error icon. This feature allows you to provide additional information or guidance related to the specific error scenario.
 
