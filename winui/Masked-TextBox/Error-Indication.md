@@ -73,7 +73,7 @@ The `Custom` error type in the SfMaskedTextBox allows users to define a unique e
 
 SfMaskedTextBox maskedTextBox = new SfMaskedTextBox();
 maskedTextBox.MaskType = MaskedTextBoxMaskType.Simple;
-maskedTextBox.Mask = "[a-z0-9._%-]+@[a-z0-9]+\\.[a-z]{2,3}";
+maskedTextBox.Mask = "(+00) 000 000-0000";
 maskedTextBox.Width = 200;
 maskedTextBox.ErrorType = ErrorType.Custom;
 maskedTextBox.CustomErrorIcon = new BitmapImage(new Uri("ms-appx:///CustomIcon.png"));
