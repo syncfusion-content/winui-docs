@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of WinUI Shimmer control | Syncfusion
-description: Learn about the introduction of Syncfusion WinUI Shimmer Control (SfShimmer) with essential features and more.
+description: Learn about the introduction of WinUI Shimmer Control with essential features and more.
 platform: WinUI
 control: Shimmer
 documentation: ug
