@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Validation support in WinUI MaskedTextBox control | Syncfusion
-description: Learn all about restricting the validation support in the MaskedTextBox (SfMaskedTextBox) control.
+title: Validation support in WinUI Masked TextBox control | Syncfusion
+description: Learn all about restricting the validation support in the Masked TextBox (SfMaskedTextBox) control.
 platform: WinUI
 control: SfMaskedTextBox
 documentation: ug
 ---
 
-# How to restrict the default validation in WinUI MaskedTextBox
+# How to restrict the default validation in WinUI Masked TextBox
 
-The MaskedTextBox control provides the ability to validate the input according to the completion of masked input. By default, validation is enabled in the MaskedTextBox control. However, you can disable the validation by assigning `true` to the `IsValid` property of the ValueChanging event.
+The Masked TextBox control provides the ability to validate the input according to the completion of masked input. By default, validation is enabled in the Masked TextBox control. However, you can disable the validation by assigning `true` to the `IsValid` property of the ValueChanging event.
 
 {% tabs %}
 
@@ -35,4 +35,4 @@ private void maskedTextBox_ValueChanging(object sender, MaskedTextBoxValueChangi
 
 {% endtabs %}
 
-![Validation support restriction in WinUI MaskedTextBox](MaskedTextBox_Images/winui_masked_textbox_validation.gif)
+![Validation support restriction in WinUI Masked TextBox](MaskedTextBox_Images/winui_masked_textbox_validation.gif)
