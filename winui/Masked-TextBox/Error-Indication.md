@@ -55,10 +55,10 @@ private void ErrorTypeMaskTextBox_ValueChanging(object sender, MaskedTextBoxValu
 
 ## Custom error type
 
-The `Custom` error type provides users with the flexibility to customize both the error icon and the border brush. This customization is achieved through the following properties:
+The `Custom` [ErrorType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_ErrorTypeProperty) provides users with the flexibility to customize both the error icon and the border brush. This customization is achieved through the following properties:
 
-* [CustomErrorIcon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_CustomErrorIcon): Allows you to set a custom error icon.
-* [CustomErrorBorderBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_CustomErrorBorderBrush): Enables customization of the border brush for the `Custom` error type.
+* [CustomErrorIcon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_CustomErrorIcon) : Allows you to set a custom error icon.
+* [CustomErrorBorderBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_CustomErrorBorderBrush) : Enables customization of the border brush for the `Custom` error type.
 
 
 {% tabs %}
