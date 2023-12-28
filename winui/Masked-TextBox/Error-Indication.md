@@ -15,12 +15,12 @@ The Masked TextBox control supports error indication by displaying an icon and p
 
 The Masked TextBox control offers several built-in error types:
 
-* `None` : No visible signals for errors.
-* `Default` : Red bottom border brush in the Masked TextBox Control.
-* `Warning` : Visual highlight for potential concerns needing immediate attention.
-* `Information` : Share non-essential details or guidance.
-* `Critical` : Urgent issues requiring immediate action.
-* `Success` : Positive confirmation for valid input or successful actions.
+* [None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.ErrorType.html#Syncfusion_UI_Xaml_Editors_ErrorType_None) : No visible signals for errors.
+* [Default](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.ErrorType.html#Syncfusion_UI_Xaml_Editors_ErrorType_Default) : Red bottom border brush in the Masked TextBox Control.
+* [Warning](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.ErrorType.html#Syncfusion_UI_Xaml_Editors_ErrorType_Warning) : Visual highlight for potential concerns needing immediate attention.
+* [Information](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.ErrorType.html#Syncfusion_UI_Xaml_Editors_ErrorType_Information) : Share non-essential details or guidance.
+* [Critical](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.ErrorType.html#Syncfusion_UI_Xaml_Editors_ErrorType_Critical) : Urgent issues requiring immediate action.
+* [Success](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.ErrorType.html#Syncfusion_UI_Xaml_Editors_ErrorType_Success) : Positive confirmation for valid input or successful actions.
 
 {% tabs %}
 {% highlight xaml %}
@@ -55,10 +55,10 @@ private void ErrorTypeMaskTextBox_ValueChanging(object sender, MaskedTextBoxValu
 
 ## Custom error type
 
-The `Custom` [ErrorType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_ErrorTypeProperty) provides users with the flexibility to customize both the error icon and the border brush. This customization is achieved through the following properties:
+The [Custom](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.ErrorType.html#Syncfusion_UI_Xaml_Editors_ErrorType_Custom) error type provides users with the flexibility to customize both the error icon and the border brush. This customization is achieved through the following properties:
 
 * [CustomErrorIcon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_CustomErrorIcon) : Allows you to set a custom error icon.
-* [CustomErrorBorderBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_CustomErrorBorderBrush) : Enables customization of the border brush for the `Custom` error type.
+* [CustomErrorBorderBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_CustomErrorBorderBrush) : Enables customization of the border brush for the custom error type.
 
 
 {% tabs %}
