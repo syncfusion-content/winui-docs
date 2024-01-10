@@ -132,3 +132,11 @@ You can cutomize the default appearance of themes by overriding the key values. 
  </scheduler:SfScheduler>
 {% endhighlight %}
 {% endtabs %}
+
+{% tabs %}
+{% highlight %}
+
+You can find the keys for all the themes [here]. (https://github.com/SyncfusionExamples/Themes-for-WinUI-SfScheduler)
+
+{% endhighlight %}
+{% endtabs %}
