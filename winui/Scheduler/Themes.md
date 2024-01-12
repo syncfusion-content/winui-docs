@@ -8,107 +8,82 @@ documentation: ug
 ---
 
 # Themes in WinUI Scheduler (SfScheduler)
-Theming plays a crucial role in enhancing the visual appeal and user experience of applications. The WinUI SfScheduler  allows you to customize its appearance by applying different themes. This section provides instructions on how to apply the themes and customize them.
+Theming plays a crucial role in enhancing the visual appeal and user experience of applications. The WinUI SfScheduler  allows you to customize its appearance by applying different themes.
 
+Refer to the following link for guidance on applying themes: [Themes for Syncfusion WinUI controls](https://help.syncfusion.com/winui/common/themes)
 
+## Keys
 
-## Applying Themes
+The following are some of the keys for WinUI SfScheduler control:
 
-The SfScheduler supports the following built-in themes:
+<table>
+    <tr>
+        <td><b>Key</b></td>
+        <td><b>Description</b></td>
+    </tr>
+    <tr>
+        <td>SyncfusionSchedulerBorderBrush</td>
+        <td>Border color of the SfScheduler control.</td>
+    </tr>
+    <tr>
+        <td>SyncfusionSchedulerBackground</td>
+        <td>Background color of the SfScheduler control.</td>
+    </tr>
+    <tr>
+        <td>SyncfusionSchedulerBorderThickness</td>
+        <td>Thickness of the border for the SfScheduler control</td>
+    </tr>
+    <tr>
+        <td>SyncfusionSchedulerHeaderControlBackground</td>
+        <td>Background color of the header in SfScheduler.</td>
+    </tr>
+    <tr>
+        <td>SyncfusionSchedulerHeaderControlForeground</td>
+        <td>Foreground color of the header in SfScheduler.</td>
+    </tr>
+    <tr>
+        <td>SyncfusionSchedulerAllowedViewTypeSelected</td>
+        <td>Background color of the selected allowed view button.</td>
+    </tr>
+    <tr>
+        <td>SyncfusionSchedulerAllowedViewTypeSelectedForeground</td>
+        <td>Foreground color of the selected allowed view button.</td>
+    </tr>
+    <tr>
+        <td>SyncfusionSchedulerHeaderControlBorderBrush</td>
+        <td>Border color of the header in SfScheduler.</td>
+    </tr>
+    <tr>
+        <td>SyncfusionSchedulerHeaderControlBorderThickness</td>
+        <td>Thickness of the border for the header in SfScheduler.</td>
+    </tr>
+    <tr>
+        <td>SyncfusionSchedulerAllowedViewNavigationButtonPadding</td>
+        <td>Padding for allowed view buttons in SfScheduler.</td>
+    </tr>
+    <tr>
+        <td>SyncfusionSchedulerHeaderAllowedViewButtonCornerRadius</td>
+        <td>Corner radius for allowed view buttons in the header of SfScheduler.</td>
+    </tr>
+    <tr>
+        <td>SyncfusionViewHeaderControlBackground</td>
+        <td>Background color of the view header of SfScheduler.</td>
+    </tr>
+    <tr>
+        <td>SyncfusionViewHeaderControlBorderBrush</td>
+        <td>Border color of the view header of SfScheduler.</td>
+    </tr>
+    <tr>
+        <td>SyncfusionViewHeaderControlBorderThickness</td>
+        <td>Thickness of the border for the view header of SfScheduler.</td>
+    </tr>    
+</table>
 
-1. Light Theme
-2. Dark Theme
-3. High Contrast Theme
-
-### Light theme
-
-SfScheduler has individual resource dictionaries for the themes mentioned above. To define a light theme, use a resource dictionary and assign a key "Light" to it and include the theme keys within it. 
-
-{% tabs %}
-{% highlight MainWindow.xaml %}
-
- <scheduler:SfScheduler>
-
-     <scheduler:SfScheduler.Resources>
-         
-         <ResourceDictionary>
-             <ResourceDictionary.ThemeDictionaries>                 
-                 <ResourceDictionary x:Key="Light">
-                     <SolidColorBrush x:Key="SyncfusionSchedulerBorderBrush" Color="{StaticResource DividerStrokeColorDefault}"  />
-                     <SolidColorBrush x:Key="SyncfusionSchedulerBackground" Color="{StaticResource ControlSolidFillColorDefault}"  />
-                     <Thickness x:Key="SyncfusionSchedulerBorderThickness">1</Thickness>
-                     ....
-                 </ResourceDictionary>               
-             </ResourceDictionary.ThemeDictionaries>
-         </ResourceDictionary>
-         
-     </scheduler:SfScheduler.Resources>
-
- </scheduler:SfScheduler>
-{% endhighlight %}
-{% endtabs %}
-
-
-
-### Dark theme
-
-For dark theme use the resource dictionary with the key  "Dark" and the necessary theme keys in it.
-
-{% tabs %}
-{% highlight MainWindow.xaml %} 
-
-<scheduler:SfScheduler>
-
-     <scheduler:SfScheduler.Resources>
-         
-         <ResourceDictionary>
-             <ResourceDictionary.ThemeDictionaries>                 
-                 <SolidColorBrush x:Key="SyncfusionSchedulerHeaderControlBackground" Color="{ThemeResource SystemColorWindowColor}" />
-                 <SolidColorBrush x:Key="SyncfusionViewHeaderControlBackground" Color="{ThemeResource SystemColorWindowColor}" />
-                <Thickness x:Key="SyncfusionSchedulerHeaderControlBorderThickness">0</Thickness>
-                     ....
-                 </ResourceDictionary>               
-             </ResourceDictionary.ThemeDictionaries>
-         </ResourceDictionary>
-         
-     </scheduler:SfScheduler.Resources>
-
- </scheduler:SfScheduler>
-{% endhighlight %}
-{% endtabs %}
-
-
-
-### HighContrast theme
-
-You can use HighContrast theme with the key "HighContrast" for the resource dictionary along with its theme keys.
-
-{% tabs %}
-{% highlight MainWindow.xaml %} 
-
-<scheduler:SfScheduler>
-
-     <scheduler:SfScheduler.Resources>
-         
-         <ResourceDictionary>
-             <ResourceDictionary.ThemeDictionaries>                 
-                 <SolidColorBrush x:Key="SyncfusionViewHeaderControlBackground" Color="{ThemeResource SystemColorWindowColor}" />
-                 <SolidColorBrush x:Key="SyncfusionMonthViewHeaderForeground" Color="{ThemeResource SystemColorButtonTextColor}" />
-                <Thickness x:Key="SyncfusionMonthViewHeaderBorderThickness">0,1,0,1</Thickness>
-                     ....
-                 </ResourceDictionary>               
-             </ResourceDictionary.ThemeDictionaries>
-         </ResourceDictionary>
-         
-     </scheduler:SfScheduler.Resources>
-
- </scheduler:SfScheduler>
-{% endhighlight %}
-{% endtabs %}
+You can find the keys for all themes in this [theme resource file.](https://github.com/syncfusion/winui-controls-theme-resource-files/tree/master/Syncfusion.Scheduler.WinUI)
 
 ## Customize themes
 
-You can cutomize the default appearance of themes by overriding the key values. You can modify the values of the specific keys as needed.
+You can customize the default appearance of themes by overriding key values. Adjust the values of specific keys as required.
 
 {% tabs %}
 {% highlight MainWindow.xaml %}
@@ -119,9 +94,9 @@ You can cutomize the default appearance of themes by overriding the key values. 
          
          <ResourceDictionary>
              <ResourceDictionary.ThemeDictionaries>                 
-                 <ResourceDictionary x:Key="Light">
-                     <SolidColorBrush x:Key="SyncfusionMonthCellBackground" Color="LightCyan" />
-                     <SolidColorBrush x:Key="SyncfusionMonthCellForeground" Color="Purple" />
+                 <ResourceDictionary x:Key="Dark">
+                      <SolidColorBrush x:Key="SyncfusionMonthCellBackground" Color="Beige" />
+                      <SolidColorBrush x:Key="SyncfusionMonthCellForeground" Color="Purple" />
                      ....
                  </ResourceDictionary>               
              </ResourceDictionary.ThemeDictionaries>
@@ -133,10 +108,7 @@ You can cutomize the default appearance of themes by overriding the key values. 
 {% endhighlight %}
 {% endtabs %}
 
-{% tabs %}
-{% highlight %}
+![customize-themes-in-winui-scheduler](Themes_Images/customize-theme-in-winui-sfscheduler)
 
-You can find the keys for all the themes [here]. (https://github.com/SyncfusionExamples/Themes-for-WinUI-SfScheduler)
 
-{% endhighlight %}
-{% endtabs %}
+N> The HighContrast theme set in the scheduler will be applied to all existing high contrast themes on the computer.
