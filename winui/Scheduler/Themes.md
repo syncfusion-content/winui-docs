@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Themes in WinUI Scheduler control | Syncfusion
-description: Learn here all about to use various themes in Syncfusion WinUI Scheduler(SfScheduler) control and more.
+description: Learn here all about to use various themes in Syncfusion WinUI `Scheduler`(`SfScheduler`) control and more.
 platform: winui
 control: SfScheduler
 documentation: ug
