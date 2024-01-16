@@ -26,8 +26,9 @@ You can customize the default appearance of themes by overriding key values. Adj
          <ResourceDictionary>
              <ResourceDictionary.ThemeDictionaries>                 
                  <ResourceDictionary x:Key="Dark">
-                      <SolidColorBrush x:Key="SyncfusionMonthCellBackground" Color="Beige" />
-                      <SolidColorBrush x:Key="SyncfusionMonthCellForeground" Color="Purple" />
+                      <SolidColorBrush x:Key="SyncfusionMonthCellForeground" Color="Aqua" />
+                      <SolidColorBrush x:Key="SyncfusionMonthViewHeaderForeground" Color="Yellow" />
+                      <SolidColorBrush x:Key="SyncfusionTodayMonthViewHeaderForeground" Color="LawnGreen" />
                  </ResourceDictionary>               
              </ResourceDictionary.ThemeDictionaries>
          </ResourceDictionary>
