@@ -21,19 +21,19 @@ You can customize the default appearance of themes by overriding key values. Adj
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
 
-<scheduler:SfScheduler>
-     <scheduler:SfScheduler.Resources
-         <ResourceDictionary>
-             <ResourceDictionary.ThemeDictionaries>                 
-                 <ResourceDictionary x:Key="Dark">
-                      <SolidColorBrush x:Key="SyncfusionMonthCellForeground" Color="Aqua" />
-                      <SolidColorBrush x:Key="SyncfusionMonthViewHeaderForeground" Color="Yellow" />
-                      <SolidColorBrush x:Key="SyncfusionTodayMonthViewHeaderForeground" Color="LawnGreen" />
-                 </ResourceDictionary>               
-             </ResourceDictionary.ThemeDictionaries>
-         </ResourceDictionary>
-    </scheduler:SfScheduler.Resources>
-</scheduler:SfScheduler>
+    <scheduler:SfScheduler>
+        <scheduler:SfScheduler.Resources
+            <ResourceDictionary>
+                <ResourceDictionary.ThemeDictionaries>                 
+                    <ResourceDictionary x:Key="Dark">
+                        <SolidColorBrush x:Key="SyncfusionMonthCellForeground" Color="Aqua" />
+                        <SolidColorBrush x:Key="SyncfusionMonthViewHeaderForeground" Color="Yellow" />
+                        <SolidColorBrush x:Key="SyncfusionTodayMonthViewHeaderForeground" Color="LawnGreen" />
+                    </ResourceDictionary>               
+                </ResourceDictionary.ThemeDictionaries>
+            </ResourceDictionary>
+        </scheduler:SfScheduler.Resources>
+    </scheduler:SfScheduler>
 
 {% endhighlight %}
 {% endtabs %}
