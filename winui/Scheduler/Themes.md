@@ -8,11 +8,9 @@ documentation: ug
 ---
 
 # Themes in WinUI Scheduler (SfScheduler)
-Theming plays a crucial role in enhancing the visual appeal and user experience of applications. The WinUI SfScheduler  allows you to customize its appearance by applying different themes.
+ The WinUI Scheduler allows you to apply different themes to customize its appearance for a better user exoerience.
 
-Refer to the following link for guidance on applying themes: [Themes for Syncfusion WinUI controls](https://help.syncfusion.com/winui/common/themes)
-
-## Keys
+Refer to the following link for guidance on applying themes: [Themes for Syncfusion WinUI controls](https://help.syncfusion.com/winui/common/themes) 
 
 The following are some of the keys for WinUI SfScheduler control:
 
@@ -81,7 +79,7 @@ The following are some of the keys for WinUI SfScheduler control:
 
 You can find the keys for all themes in this [theme resource file.](https://github.com/syncfusion/winui-controls-theme-resource-files/tree/master/Syncfusion.Scheduler.WinUI)
 
-## Customize themes
+## Customize scheduler theme appearance using ThemeResource
 
 You can customize the default appearance of themes by overriding key values. Adjust the values of specific keys as required.
 
@@ -111,4 +109,4 @@ You can customize the default appearance of themes by overriding key values. Adj
 ![customize-themes-in-winui-scheduler](Themes_Images/customize-theme-in-winui-sfscheduler)
 
 
-N> The HighContrast theme set in the scheduler will be applied to all existing high contrast themes on the computer.
+N> The HighContrast theme settings within the scheduler will be universally applied to all pre-existing high contrast themes on the computer.
