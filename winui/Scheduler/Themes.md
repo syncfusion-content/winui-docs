@@ -38,7 +38,7 @@ You can customize the default appearance of themes by overriding key values. Adj
 {% endhighlight %}
 {% endtabs %}
 
-![customize-theme-in-winui-sfscheduler](Themes_Images/customize-theme-in-winui-sfscheduler.jpg)
+![customize-theme-in-winui-sfscheduler](Themes_Images/customize-theme-in-winui-sfscheduler.png)
 
 
 N> The HighContrast theme settings within the scheduler will be universally applied to all pre-existing high contrast themes on the computer.
