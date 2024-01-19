@@ -51,7 +51,7 @@ private void ErrorTypeMaskTextBox_ValueChanging(object sender, MaskedTextBoxValu
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Masked TextBox control with error type](MaskedTextBox_images/winui_masked_textbox_errortype.png)
+![WinUI Masked TextBox control with error type.](MaskedTextBox_images/winui_masked_textbox_errortype.png)
 
 ## Custom error type
 
@@ -93,7 +93,7 @@ private void ErrorTypeMaskTextBox_ValueChanging(object sender, MaskedTextBoxValu
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Masked TextBox control with custom error type](MaskedTextBox_images/winui_masked_textbox_errortype_custom.png)
+![WinUI Masked TextBox control with custom error type.](MaskedTextBox_images/winui_masked_textbox_errortype_custom.png)
 
 ## Error content
 
@@ -129,4 +129,4 @@ private void ErrorTypeMaskTextBox_ValueChanging(object sender, MaskedTextBoxValu
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Masked TextBox control with error content](MaskedTextBox_images/winui_masked_textbox_errorcontent.png)
+![WinUI Masked TextBox control with error content.](MaskedTextBox_images/winui_masked_textbox_errorcontent.png)
