@@ -22,7 +22,7 @@ You can customize the default appearance of themes by overriding key values. Adj
 {% highlight xaml tabtitle="MainWindow.xaml" %}
 
     <scheduler:SfScheduler>
-        <scheduler:SfScheduler.Resources
+        <scheduler:SfScheduler.Resources>
             <ResourceDictionary>
                 <ResourceDictionary.ThemeDictionaries>                 
                     <ResourceDictionary x:Key="Dark">
