@@ -11,7 +11,7 @@ documentation: ug
 
 ## Major Grid Lines
 
-By default, major gridlines are automatically added to the [ChartAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html) in its defined intervals. The visibility of the gridlines can be controlled using the [ShowMajorGridLines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowMajorGridLines) property. The default value of [ShowMajorGridLines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowMajorGridLines) is true. 
+By default, major gridlines are automatically added to the [ChartAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html?tabs=tabid-7%2Ctabid-5%2Ctabid-9%2Ctabid-45%2Ctabid-20%2Ctabid-32%2Ctabid-13%2Ctabid-15%2Ctabid-17%2Ctabid-18%2Ctabid-36%2Ctabid-34%2Ctabid-11%2Ctabid-46%2Ctabid-22%2Ctabid-24%2Ctabid-38%2Ctabid-3%2Ctabid-1%2Ctabid-30%2Ctabid-42%2Ctabid-40%2Ctabid-44%2Ctabid-28%2Ctabid-26%2Ctabid-47%2Ctabid-49) in its defined intervals. The visibility of the gridlines can be controlled using the [ShowMajorGridLines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html?tabs=tabid-7%2Ctabid-5%2Ctabid-9%2Ctabid-45%2Ctabid-20%2Ctabid-32%2Ctabid-13%2Ctabid-15%2Ctabid-17%2Ctabid-18%2Ctabid-36%2Ctabid-34%2Ctabid-11%2Ctabid-46%2Ctabid-22%2Ctabid-24%2Ctabid-38%2Ctabid-3%2Ctabid-1%2Ctabid-30%2Ctabid-42%2Ctabid-40%2Ctabid-44%2Ctabid-28%2Ctabid-26%2Ctabid-47%2Ctabid-49#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowMajorGridLines) property. The default value of [ShowMajorGridLines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html?tabs=tabid-7%2Ctabid-5%2Ctabid-9%2Ctabid-45%2Ctabid-20%2Ctabid-32%2Ctabid-13%2Ctabid-15%2Ctabid-17%2Ctabid-18%2Ctabid-36%2Ctabid-34%2Ctabid-11%2Ctabid-46%2Ctabid-22%2Ctabid-24%2Ctabid-38%2Ctabid-3%2Ctabid-1%2Ctabid-30%2Ctabid-42%2Ctabid-40%2Ctabid-44%2Ctabid-28%2Ctabid-26%2Ctabid-47%2Ctabid-49#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowMajorGridLines) is true. 
 
 {% tabs %}
 
@@ -51,7 +51,7 @@ chart.YAxes.Add(new NumericalAxis();
 
 ### Customization
 
-The [MajorGridLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorGridLineStyle) property in the chart axis is used to customize the appearance of major gridlines.
+The [MajorGridLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html?tabs=tabid-7%2Ctabid-5%2Ctabid-9%2Ctabid-45%2Ctabid-20%2Ctabid-32%2Ctabid-13%2Ctabid-15%2Ctabid-17%2Ctabid-18%2Ctabid-36%2Ctabid-34%2Ctabid-11%2Ctabid-46%2Ctabid-22%2Ctabid-24%2Ctabid-38%2Ctabid-3%2Ctabid-1%2Ctabid-30%2Ctabid-42%2Ctabid-40%2Ctabid-44%2Ctabid-28%2Ctabid-26%2Ctabid-47%2Ctabid-49#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorGridLineStyle) property in the chart axis is used to customize the appearance of major gridlines.
 
 {% tabs %}
 
@@ -99,7 +99,7 @@ chart.YAxes.Add(new NumericalAxis();
 
 ## Minor Grid Lines
 
-Minor gridlines will be added automatically when the minor tick lines is defined using the [MinorTicksPerInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_MinorTicksPerInterval) property of the chart axis.
+Minor gridlines will be added automatically when the minor tick lines is defined using the [MinorTicksPerInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html?tabs=tabid-1%2Ctabid-7%2Ctabid-5%2Ctabid-3%2Ctabid-9%2Ctabid-11#Syncfusion_UI_Xaml_Charts_RangeAxisBase_MinorTicksPerInterval) property of the chart axis.
 
 {% tabs %}
 
@@ -136,7 +136,7 @@ chart.YAxes.Add(secondaryAxis);
 
 ### Customization
 
-The [MinorGridLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_MinorGridLineStyle) property in the chart axis is used to customize the appearance of minor gridlines.
+The [MinorGridLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html?tabs=tabid-1%2Ctabid-7%2Ctabid-5%2Ctabid-3%2Ctabid-9%2Ctabid-11#Syncfusion_UI_Xaml_Charts_RangeAxisBase_MinorGridLineStyle) property in the chart axis is used to customize the appearance of minor gridlines.
 
 {% tabs %}
 
