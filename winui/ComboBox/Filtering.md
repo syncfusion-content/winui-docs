@@ -121,7 +121,7 @@ comboBox.TextSearchMode = ComboBoxTextSearchMode.StartsWith;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox filter the items based on starting text](Filtering_images/winui-combobox-filtering-start-text.gif)
+![WinUI ComboBox filter the items based on starting text](filtering_images/winui-combobox-filtering-start-text.gif)
 
 N> To disable the auto appending and highlighting feature, set the [IsTextSearchEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsTextSearchEnabled) property as `false`.
 
@@ -149,7 +149,7 @@ comboBox.TextSearchMode = ComboBoxTextSearchMode.Contains;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox filter the items based on contains text](Filtering_images/winui-combobox-filtering-contains-text.gif)
+![WinUI ComboBox filter the items based on contains text](filtering_images/winui-combobox-filtering-contains-text.gif)
 
 N> Auto appending of the first suggested item text to typed input is not supported in this mode.
 
@@ -230,4 +230,4 @@ public class CityFilteringBehavior : IComboBoxFilterBehavior
 
 The following gif demonstrates how to display the cities in drop-down based on the country name entered in the ComboBox control.
 
-![WinUI ComboBox filter the items based on custom filtering logic](Filtering_images/winui-combobox-custom-filtering.gif)
+![WinUI ComboBox filter the items based on custom filtering logic](filtering_images/winui-combobox-custom-filtering.gif)
