@@ -13,7 +13,7 @@ This section explains the steps required to add the [WinUI Masked TextBox](https
 
 ## Creating an application with WinUI Masked TextBox control
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 4. Initialize the [SfMaskedTextBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html) control.
