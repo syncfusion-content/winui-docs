@@ -11,7 +11,7 @@ documentation: ug
 
 ## PlotOffsetStart
 
-The [PlotOffsetStart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_PlotOffsetStart) property is used to provide padding to the axis at start position. The following code sample demonstrates the padding applied to Start position for both x and y-axes.
+The [PlotOffsetStart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html?tabs=tabid-7%2Ctabid-5%2Ctabid-9%2Ctabid-45%2Ctabid-20%2Ctabid-32%2Ctabid-13%2Ctabid-15%2Ctabid-17%2Ctabid-18%2Ctabid-36%2Ctabid-34%2Ctabid-11%2Ctabid-46%2Ctabid-22%2Ctabid-24%2Ctabid-38%2Ctabid-3%2Ctabid-1%2Ctabid-30%2Ctabid-42%2Ctabid-40%2Ctabid-44%2Ctabid-28%2Ctabid-26%2Ctabid-47%2Ctabid-49#Syncfusion_UI_Xaml_Charts_ChartAxis_PlotOffsetStart) property is used to provide padding to the axis at start position. The following code sample demonstrates the padding applied to Start position for both x and y-axes.
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ this.Content = chart;
 
 ## PlotOffsetEnd
 
-The [PlotOffsetEnd](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_PlotOffsetEnd) property is used to provide padding to the axis at end position. The following code sample demonstrates the padding applied to end position for both x and y-axes.
+The [PlotOffsetEnd](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html?tabs=tabid-7%2Ctabid-5%2Ctabid-9%2Ctabid-45%2Ctabid-20%2Ctabid-32%2Ctabid-13%2Ctabid-15%2Ctabid-17%2Ctabid-18%2Ctabid-36%2Ctabid-34%2Ctabid-11%2Ctabid-46%2Ctabid-22%2Ctabid-24%2Ctabid-38%2Ctabid-3%2Ctabid-1%2Ctabid-30%2Ctabid-42%2Ctabid-40%2Ctabid-44%2Ctabid-28%2Ctabid-26%2Ctabid-47%2Ctabid-49#Syncfusion_UI_Xaml_Charts_ChartAxis_PlotOffsetEnd) property is used to provide padding to the axis at end position. The following code sample demonstrates the padding applied to end position for both x and y-axes.
 
 {% tabs %}
 
