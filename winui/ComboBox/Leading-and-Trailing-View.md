@@ -9,7 +9,7 @@ documentation: ug
 
 # Leading and Trailing View in WinUI ComboBox (SfComboBox)
 
-This section explains about the leading and trailing view support available in [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html). The `LeadingView` appears before the `ComboBox` selection area, and `TrailingView` appears after the `ComboBox` selection area. Any content, such as an icon, image, button, or control, can be displayed in the `LeadingView` and `TrailingView.`
+This section explains about the leading and trailing view support available in [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html?tabs=tabid-1). The `LeadingView` appears before the `ComboBox` selection area, and `TrailingView` appears after the `ComboBox` selection area. Any content, such as an icon, image, button, or control, can be displayed in the `LeadingView` and `TrailingView.`
 
 ## Leading View 
 
