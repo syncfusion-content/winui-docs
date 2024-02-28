@@ -1176,9 +1176,9 @@ public static class LinqExtensions
 {% capture codesnippet2 %}
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
+<Window.Resources>
     <local:CustomAggregate x:Key="customAggregate" />
-</Page.Resources>
+</Window.Resources>
 
 <dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AutoGenerateColumns="True"

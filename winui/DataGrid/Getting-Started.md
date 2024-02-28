@@ -24,8 +24,8 @@ This section explains the steps required to add the DataGrid control and binding
 {% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
-<Page
-    x:Class="GettingStarted.MainPage"
+<Window
+    x:Class="GettingStarted.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:GettingStarted"
@@ -37,7 +37,7 @@ This section explains the steps required to add the DataGrid control and binding
     <Grid x:Name="rootGrid">
     <dataGrid:SfDataGrid x:Name="sfDataGrid" />
     </Grid>
-</Page>
+</Window>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -45,11 +45,11 @@ using Syncfusion.UI.Xaml.DataGrid;
 namespace GettingStarted
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty window that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class MainWindow : Window
     {
-        public MainPage()
+        public MainWindow()
         {
             this.InitializeComponent();
             SfDataGrid sfDataGrid = new SfDataGrid();
@@ -177,8 +177,8 @@ Bind the collection created in previous step to `SfDataGrid.ItemsSource` propert
 {% tabs %}
 {% highlight xaml %}
 
-<Page
-    x:Class="GettingStarted.MainPage"
+<Window
+    x:Class="GettingStarted.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:GettingStarted"
@@ -187,15 +187,15 @@ Bind the collection created in previous step to `SfDataGrid.ItemsSource` propert
     xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Page.DataContext>
+    <Window.DataContext>
         <local:ViewModel/>
-    </Page.DataContext>
+    </Window.DataContext>
     <Grid>
         <dataGrid:SfDataGrid x:Name="sfDataGrid"
                                AutoGenerateColumns="True"
                                ItemsSource="{Binding Orders}"/>
     </Grid>
-</Page>
+</Window>
 
 {% endhighlight %}
 {% highlight c# %}

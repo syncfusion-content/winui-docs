@@ -278,13 +278,13 @@ You can use the same [DataTemplate](https://docs.microsoft.com/en-us/windows/win
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
+<Window.Resources>
     <DataTemplate x:Key="cellTemplate">
         <TextBlock Margin="3,0,0,0"
                    Foreground="Red"
                    Text="{Binding Path=Value}" />
     </DataTemplate>
-</Page.Resources>
+</Window.Resources>
 
 <dataGrid:SfDataGrid x:Name="dataGrid"
                        AllowEditing="True"
@@ -405,9 +405,9 @@ public class CurrencyFormatConverter : IValueConverter
  
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
+<Window.Resources>
     <local:CurrencyFormatConverter x:Key="currencyFormatConverter" />
-</Page.Resources>
+</Window.Resources>
 
 <dataGrid:SfDataGrid x:Name="sfDataGrid"
                      AllowEditing="True"
@@ -488,7 +488,7 @@ When column is auto-generated, you can style the column by handling `AutoGenerat
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
+<Window.Resources>
     <Style x:Key="cellStyle" TargetType="dataGrid:GridCell">
         <Setter Property="FontSize" Value="12" />
         <Setter Property="FontFamily" Value="Segoe UI" />
@@ -497,7 +497,7 @@ When column is auto-generated, you can style the column by handling `AutoGenerat
         <Setter Property="FontStretch" Value="Condensed" />
     </Style>
         
-</Page.Resources>
+</Window.Resources>
 {% endhighlight %}
 {% endtabs %}
 
@@ -572,9 +572,9 @@ Below code, sets the customized style selector to `GridColumn.CellStyleSelector`
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
+<Window.Resources>
     <local:CustomCellStyleSelector x:Key="cellStyleSelector"/>
-</Page.Resources>
+</Window.Resources>
 
 <dataGrid:SfDataGrid x:Name="dataGrid"
                        ItemsSource="{Binding Orders}"  
@@ -1106,10 +1106,10 @@ In the below code, custom template selector set to `GridTemplateColumn.EditTempl
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>    
+<Window.Resources>    
     <local:CustomEditTemplateSelector x:Key="cellTemplateSelector" />
     <local:CustomEditTemplateSelector x:Key="editTemplateSelector" />
-</Page.Resources>
+</Window.Resources>
 
 <dataGrid:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
@@ -1163,7 +1163,7 @@ You can improve the drop-down opening time on loading by setting [VirtualizingSt
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
+<Window.Resources>
     <Style TargetType="ComboBox">
         <Setter Property="ItemsPanel">
             <Setter.Value>
@@ -1173,7 +1173,7 @@ You can improve the drop-down opening time on loading by setting [VirtualizingSt
             </Setter.Value>
         </Setter>
     </Style>
-</Page.Resources>
+</Window.Resources>
 {% endhighlight %}
 {% endtabs %}
 
@@ -1329,9 +1329,9 @@ class StringToImageConverter : IValueConverter
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
+<Window.Resources>
     <local:StringToImageConverter x:Key="stringToImageConverter" />
-</Page.Resources>
+</Window.Resources>
 
 <Grid>
     <dataGrid:SfDataGrid x:Name="dataGrid"
@@ -2166,9 +2166,9 @@ public class MaxLengthConverter : IValueConverter
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
+<Window.Resources>
     <local:MaxLengthConverter x:Key="converter" />
-</Page.Resources>
+</Window.Resources>
 
 <dataGrid:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
@@ -2193,11 +2193,11 @@ N> TextBlock does not have the MaxLength property. Therefore, you can use the co
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
+<Window.Resources>
     <Style TargetType="TextBox">
         <Setter Property="MaxLength" Value="7" />
     </Style>
-</Page.Resources>
+</Window.Resources>
 
 <dataGrid:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 

@@ -230,9 +230,9 @@ Custom comparer can be added to [SfDataGrid.SortComparers](https://help.syncfusi
 xmlns:data="using:Syncfusion.UI.Xaml.Data"
 xmlns:grids="using:Syncfusion.UI.Xaml.Grids"
 
-<Page.Resources>
+<Window.Resources>
     <local:CustomComparer x:Key="comparer" />
-</Page.Resources>
+</Window.Resources>
 
 <dataGrid:SfDataGrid x:Name="sfDataGrid" ItemsSource="{Binding Orders}">
     <dataGrid:SfDataGrid.SortComparers>

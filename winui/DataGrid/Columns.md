@@ -417,11 +417,11 @@ You can set [GridColumn.HeaderTemplate](https://help.syncfusion.com/cr/winui/Syn
  
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
+<Window.Resources>
     <DataTemplate x:Key="headerTemplate">
         <TextBlock Text="The product has been purchased by the following OrderID" TextWrapping="Wrap" />
     </DataTemplate>        
-</Page.Resources>
+</Window.Resources>
 {% endhighlight %}
 {% endtabs %}
 
@@ -869,9 +869,9 @@ Below code, binds the `ViewModel.AllowFiltering` property to `GridColumn.AllowFi
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
+<Window.Resources>
     <local:ViewModel x:Key="viewModel" />
-</Page.Resources>
+</Window.Resources>
 
 <dataGrid:GridTextColumn  AllowFiltering="{Binding AllowFiltering,
                                                     Source={StaticResource viewModel}}"
