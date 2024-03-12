@@ -302,4 +302,4 @@ public sealed partial class MainWindow : Window
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/PyramidChartGettingStarted).
 
-N> You can also explore our [WinUI Pyramid Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Funnel%20And%20Pyramid%20Charts/PyramidChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can also explore our [WinUI Pyramid Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Pyramid%20Charts) that shows how to easily configure with built-in support for creating stunning visual effects.
