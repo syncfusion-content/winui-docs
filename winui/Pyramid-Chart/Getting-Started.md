@@ -16,7 +16,7 @@ This section explains how to populate the [WinUI Pyramid Chart](https://www.sync
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C# to initialize the control.
-4. Initialize [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html) control.
+4. Initialize [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html?tabs=tabid-1%2Ctabid-4%2Ctabid-6%2Ctabid-21%2Ctabid-13%2Ctabid-25%2Ctabid-31%2Ctabid-27%2Ctabid-29%2Ctabid-15%2Ctabid-33%2Ctabid-10%2Ctabid-8%2Ctabid-19%2Ctabid-12%2Ctabid-17%2Ctabid-23) control.
 
 {% capture codesnippet1 %}
 {% tabs %} 
@@ -302,4 +302,4 @@ public sealed partial class MainWindow : Window
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/PyramidChartGettingStarted).
 
-N> You can also explore our [WinUI Pyramid Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Funnel%20And%20Pyramid%20Charts/PyramidChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can also explore our [WinUI Pyramid Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Pyramid%20Charts) that shows how to easily configure with built-in support for creating stunning visual effects.
