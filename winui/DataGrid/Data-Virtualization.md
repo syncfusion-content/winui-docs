@@ -108,14 +108,15 @@ In the below code, `IncrementalList` is initialized by passing Action to its con
 
 {% tabs %}
 {% highlight xaml %}
-<Page.DataContext>
-    <local:ViewModel />
-</Page.DataContext>
 
 <dataGrid:SfDataGrid x:Name="sfDataGrid" 
                        AllowFiltering="True"
                        AutoGenerateColumns="True"    
-                       ItemsSource="{Binding IncrementalItemsSource}"/>  
+                       ItemsSource="{Binding IncrementalItemsSource}">
+    <dataGrid:SfDataGrid.DataContext>
+        <local:ViewModel />
+    </dataGrid:SfDataGrid.DataContext>
+</dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -160,27 +161,25 @@ In the below code, data fetched when you click the `Load Items` button.
 
 {% tabs %}
 {% highlight xaml %}
-<Page.DataContext>
-    <local:ViewModel />
-</Page.DataContext>
 
 <Grid>
-
     <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*" />
         <ColumnDefinition Width="90" />
     </Grid.ColumnDefinitions>
-
     <dataGrid:SfDataGrid x:Name="sfDataGrid"
                            Grid.Column="0"
                            DataFetchSize="5"                             
-                           ItemsSource="{Binding IncrementalItemsSource}" />
+                           ItemsSource="{Binding IncrementalItemsSource}" >
+        <dataGrid:SfDataGrid.DataContext>
+            <local:ViewModel />
+        </dataGrid:SfDataGrid.DataContext>
+    </dataGrid:SfDataGrid>
     <Button x:Name="LoadItems"
             Grid.Column="1"
             Command="{Binding DataContext.LoadItems,
                               ElementName=sfDataGrid}"
             Content="Load Items" />
-
 </Grid>
 {% endhighlight %}
 {% endtabs %}

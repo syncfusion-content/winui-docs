@@ -45,8 +45,13 @@ this.Content = chart;
  <chart:SfFunnelChart>
 
     <chart:SfFunnelChart.Header>
-        <Border BorderThickness="2" BorderBrush="Black" Margin="10" CornerRadius="5">
-            <TextBlock FontSize="14" Text="PRODUCT SALES" Margin="5"/>
+        <Border BorderThickness="2"
+				BorderBrush="Black"
+				Margin="10"
+				CornerRadius="5">
+            <TextBlock FontSize="14" 
+					   Text="PRODUCT SALES"
+					   Margin="5"/>
         </Border>
     </chart:SfFunnelChart.Header>
             
@@ -93,17 +98,22 @@ The title text content can be aligned horizontally to the left, center or right 
 {% highlight xaml %}
 
  <chart:SfFunnelChart x:Name="chart" 
-                HorizontalHeaderAlignment="Right"
-                ShowTooltip="True"
-                Palette="BlueChrome"
-                Height="388" Width="500" 
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
+                     HorizontalHeaderAlignment="Right"
+                     ShowDataLabels="True"
+                     Height="388" Width="500" 
+                     ItemsSource="{Binding Data}" 
+                     XBindingPath="Category"
+                     YBindingPath="Value">
                 
             <chart:SfFunnelChart.Header>
-                <Border BorderThickness="2" Background="LightBlue" BorderBrush="Black" Margin="10" CornerRadius="5">
-                    <TextBlock FontSize="14" Text="PRODUCT SALES" Margin="5"/>
+                <Border BorderThickness="2"
+						Background="LightBlue"
+						BorderBrush="Black"
+						Margin="10" 
+						CornerRadius="5">
+                    <TextBlock FontSize="14"
+							   Text="PRODUCT SALES" 
+							   Margin="5"/>
                 </Border>
             </chart:SfFunnelChart.Header>
 
@@ -114,10 +124,6 @@ The title text content can be aligned horizontally to the left, center or right 
             <chart:SfFunnelChart.Legend>
                 <chart:ChartLegend />
             </chart:SfFunnelChart.Legend>
-
-            <chart:SfFunnelChart.DataLabelSettings>
-                <chart:FunnelDataLabelSettings Visible="True" />
-            </chart:SfFunnelChart.DataLabelSettings>
             
 </chart:SfFunnelChart>
 
@@ -136,7 +142,6 @@ public sealed partial class MainPage : Page
         chart.DataContext = viewModel;
         chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
         chart.HorizontalHeaderAlignment = HorizontalAlignment.Right;
-        chart.Palette = ChartColorPalette.BlueChrome;
         chart.XBindingPath = "Category";
         chart.YBindingPath = "Value";
         chart.Height = 388;
@@ -161,8 +166,7 @@ public sealed partial class MainPage : Page
         border.Child = textBlock;
         chart.Header = border;
         chart.Legend = new ChartLegend();
-        chart.ShowTooltip = true;
-        chart.DataLabelSettings = new FunnelDataLabelSettings() { Visible = true };
+        chart.ShowDataLabels = true;
 
         this.Content = chart;
     }

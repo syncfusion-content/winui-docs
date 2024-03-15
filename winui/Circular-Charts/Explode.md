@@ -11,10 +11,10 @@ documentation: ug
 
 Exploding a segment is used to pull attention to a specific area of the circular chart. The following properties are used to explode the segments in the circular chart.
 
-* [ExplodeAll](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeAll)  - Used to explode all the segments of these series.
-* [ExplodeIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeIndex) - Used to explode any specific segment.
-* [ExplodeRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_ExplodeRadius) - Used to define the explode distance.
-* [ExplodeOnTap](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeOnTap) - Used to explode the segment when segment is clicked.
+* [ExplodeAll](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_ExplodeAll)  - Used to explode all the segments of these series.
+* [ExplodeIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_ExplodeIndex) - Used to explode any specific segment.
+* [ExplodeRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_ExplodeRadius) - Used to define the explode distance.
+* [ExplodeOnTap](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_ExplodeOnTap) - Used to explode the segment when segment is clicked.
 
 **Explode Index**
 
@@ -24,7 +24,12 @@ Exploding a segment is used to pull attention to a specific area of the circular
 
 <chart:SfCircularChart>
 . . .
-    <chart:PieSeries x:Name="PieSeries" ItemsSource="{Binding Data}" ExplodeIndex="2" ExplodeRadius="10" XBindingPath="Utilization" YBindingPath="ResponseTime" />
+    <chart:PieSeries x:Name="PieSeries" 
+					 ItemsSource="{Binding Data}"
+					 ExplodeIndex="2"
+					 ExplodeRadius="10"
+					 XBindingPath="Utilization"
+					 YBindingPath="ResponseTime" />
 
 </chart:SfCircularChart>
 
@@ -51,7 +56,7 @@ chart.Series.Add(series);
 
 ![Exploding a segment in WinUI pie chart](Series_images/pie_explode_radius.png)
 
-N> By default [ExplodeRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_ExplodeRadius) value is zero. So you need to define [ExplodeRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_ExplodeRadius) value, when you set [ExplodeIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeIndex) or [ExplodeAll](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeAll).
+N> By default [ExplodeRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_ExplodeRadius) value is zero. So you need to define [ExplodeRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_ExplodeRadius) value, when you set [ExplodeIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_ExplodeIndex) or [ExplodeAll](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_ExplodeAll).
 
 **Explode All**
 
@@ -61,7 +66,11 @@ N> By default [ExplodeRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI
 
 <chart:SfCircularChart>
 . . .
-    <chart:PieSeries ExplodeAll="True" ExplodeRadius="15" XBindingPath="Category" ItemsSource="{Binding Data}" YBindingPath="Value">
+    <chart:PieSeries ExplodeAll="True"
+					 ExplodeRadius="15"
+					 XBindingPath="Category"
+					 ItemsSource="{Binding Data}"
+					 YBindingPath="Value">
 
 </chart:SfCircularChart>
 

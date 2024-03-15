@@ -47,10 +47,10 @@ Circular chart provides support to add any `UIElement` as a title for legend. [H
     <chart:SfCircularChart.Legend>
         <chart:ChartLegend>
             <chart:ChartLegend.Header>
-                <TextBox Text="Products" 
-                         HorizontalAlignment="Center"
-                         FontWeight="Bold"
-                         Foreground="Blue"/>
+                <TextBlock Text="Products" 
+                           HorizontalAlignment="Center"
+                           FontWeight="Bold"
+                           Foreground="Blue"/>
             </chart:ChartLegend.Header>
     </chart:ChartLegend>
 </chart:SfCircularChart.Legend>
@@ -82,7 +82,7 @@ chart.Legend = legend;
 
 ## Icon
 
-Legend icon represents a symbol associated with the each legend item. [LegendIcon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_LegendIcon) property of series is used to set the icon type for legend item. By default, the legend icon is [SeriesType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegendIcon.html#Syncfusion_UI_Xaml_Charts_ChartLegendIcon_SeriesType).
+Legend icon represents a symbol associated with the each legend item. [LegendIcon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_LegendIcon) property of series is used to set the icon type for legend item. By default, the legend icon is [SeriesType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegendIcon.html#Syncfusion_UI_Xaml_Charts_ChartLegendIcon_SeriesType).
 
 {% tabs %}
 
@@ -115,7 +115,7 @@ SfCircularChart chart = new SfCircularChart();
 chart.Legend = new ChartLegend();
 
 PieSeries series = new PieSeries();
-series.LegendIcon = ChartLegendIcon.Circle;
+series.LegendIcon = ChartLegendIcon.Rectangle;
 
 chart.Series.Add(series);
 
@@ -138,7 +138,8 @@ The appearance of the legend icon can be customized using the below properties.
 <chart:SfCircularChart>
 . . .
 <chart:SfCircularChart.Legend>
-    <chart:ChartLegend IconWidth="10" IconHeight="5" 
+    <chart:ChartLegend IconWidth="10" 
+					   IconHeight="5" 
                        IconVisibility="Visible">
     </chart:ChartLegend>
 </chart:SfCircularChart.Legend>
@@ -164,28 +165,32 @@ chart.Legend = new ChartLegend()
 
 **Custom legend icon**
 
-Circular chart provides support to add custom icon for the legend using [LegendIconTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_LegendIconTemplate) property of series as in below example.
+Circular chart provides support to add custom icon for the legend using [LegendIconTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_LegendIconTemplate) property of series as in below example.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfCircularChart>
-    <chart:SfCircularChart.Resources>
+<Grid x:Name="grid">
+    <Grid.Resources>
         <DataTemplate x:Key="iconTemplate">
-            <Ellipse Height="15" Width="15" Fill="White" 
-                 Stroke="#4a4a4a" StrokeThickness="2"/>
+            <Ellipse Height="15"
+					 Width="15"
+					 Fill="White" 
+					 Stroke="#4a4a4a" 
+					 StrokeThickness="2"/>
         </DataTemplate>
-    </chart:SfCircularChart.Resources>
-
+    </Grid.Resources>
+<chart:SfCircularChart>
     <chart:SfCircularChart.Legend>
-        <chart:ChartLegend IconWidth="15" IconHeight="15"/>
+        <chart:ChartLegend IconWidth="15"
+						   IconHeight="15"/>
     </chart:SfCircularChart.Legend>
-    
-    <chart:PieSeries 
-        LegendIconTemplate="{StaticResource iconTemplate}"
-        ItemsSource="{Binding Data}"/>
+
+    <chart:PieSeries LegendIconTemplate="{StaticResource iconTemplate}"
+                     ItemsSource="{Binding Data}"/>
 </chart:SfCircularChart>
+</Grid>
 
 {% endhighlight %}
 
@@ -194,7 +199,7 @@ Circular chart provides support to add custom icon for the legend using [LegendI
 SfCircularChart chart = new SfCircularChart();
 . . .
 PieSeries series = new PieSeries();
-series.LegendIconTemplate = chart.Resources["iconTemplate"] as DataTemplate;
+series.LegendIconTemplate = grid.Resources["iconTemplate"] as DataTemplate;
 . . .
 chart.Series.Add(series);
 
@@ -307,41 +312,11 @@ chart.Legend = new ChartLegend()
 
 ![ToggleSeriesVisibility support for legend in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_item_toggle.png)
 
-## Position
+## Placement
 
-The legends can be placed either inside or outside of the chart area (plotting area). By default, it will be displayed outside and positioned at top (using [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Position)) of the chart area.
+Legends can be docked left, right, and top or bottom around the chart area using [Placement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Placement) property. By default, the chart legend is docked at the top of the chart as mentioned earlier.
 
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCircularChart>
-. . .
-    <chart:SfCircularChart.Legend>
-        <chart:ChartLegend Position="Inside"/>
-    </chart:SfCircularChart.Legend>
-</chart:SfCircularChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCircularChart chart = new SfCircularChart();
-. . .
-chart.Legend = new ChartLegend()
-{
-    Position = LegendPosition.Inside
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-**Docking**
-
-Legends can be docked left, right, and top or bottom around the chart area using [DockPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) property. By default, the chart legend is docked at the top of the chart as mentioned earlier.
-
-To display the legend at the left, set the [DockPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) as [Left](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDock.html#Syncfusion_UI_Xaml_Charts_ChartDock_Left) as in below code snippet.
+To display the legend at the left, set the [Placement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Placement) as [Left](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LegendPlacement.html#Syncfusion_UI_Xaml_Charts_LegendPlacement_Left) as in the following code sample.
 
 {% tabs %}
 
@@ -350,7 +325,8 @@ To display the legend at the left, set the [DockPosition](https://help.syncfusio
 <chart:SfCircularChart>
 . . .
 <chart:SfCircularChart.Legend>
-    <chart:ChartLegend ItemMargin="10" DockPosition="Left"/>
+    <chart:ChartLegend ItemMargin="10"
+					   Placement="Left"/>
 </chart:SfCircularChart.Legend>
 
 </chart:SfCircularChart>
@@ -363,7 +339,8 @@ SfCircularChart chart = new SfCircularChart();
 . . .
 chart.Legend = new ChartLegend()
 {
-   DockPosition = ChartDock.Left
+    ItemMargin = new Thickness(10),
+    Placement = LegendPlacement.Left
 };
 
 {% endhighlight %}
@@ -372,84 +349,14 @@ chart.Legend = new ChartLegend()
 
 ![Positioning the legend at left in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_dock_left.png)
 
-**Floating legends**
-
-To position the legend at any arbitrary location inside chart, need to set [DockPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) as `Floating` and provide its relative position by using [OffsetX](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_OffsetX) and [OffsetY](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_OffsetY) properties.
- 
-Offset specifies x or y distance from origin.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCircularChart>
-. . .
-    <chart:SfCircularChart.Legend>
-        <chart:ChartLegend DockPosition="Floating" OffsetX="330" OffsetY="160"/>
-    </chart:SfCircularChart.Legend>
-</chart:SfCircularChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCircularChart chart = new SfCircularChart();
-. . .
-chart.Legend = new ChartLegend()
-{
-    DockPosition = ChartDock.Floating,
-    OffsetX = 330,
-    OffsetY = 160
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Positioning the legend at floating in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_floating.png)
-
-## Orientation
-
-Orientation of the legend items can aligned vertically or horizontally by setting [Orientation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Orientation) property of legend. By default, the value of [Orientation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Orientation) property is [Horizontal](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartOrientation.html#Syncfusion_UI_Xaml_Charts_ChartOrientation_Horizontal). 
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCircularChart>
-. . .
-    <chart:SfCircularChart.Legend>
-        <chart:ChartLegend Orientation="Vertical"/>
-    </chart:SfCircularChart.Legend>
-
-</chart:SfCircularChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCircularChart chart = new SfCircularChart();
-. . .
-chart.Legend = new ChartLegend()
-{
-    Orientation = ChartOrientation.Vertical
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Legend orientation support in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_orientation.png)
-
 ## Background Customization 
 
 The legend background appearance can be customized by using the below properties.
 
-`BorderThickness` - used to change the stroke width of the legend.
-`BorderBrush` - used to change the stroke color of the legend.
-`Background` - used to change the background color of legend.
-`Opacity` - used to control the transparency of the legend icon shape.
-`CornerRadius` - used to change the corner radius of the legend.
+[`BorderThickness`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_BorderThickness) - used to change the stroke width of the legend.
+[`BorderBrush`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_BorderBrush) - used to change the stroke color of the legend.
+[`Background`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Background) - used to change the background color of legend.
+[`CornerRadius`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CornerRadius) - used to change the corner radius of the legend.
 
 {% tabs %}
 
@@ -457,9 +364,10 @@ The legend background appearance can be customized by using the below properties
 <chart:SfCircularChart>
 . . .
 <chart:SfCircularChart.Legend>
-    <chart:ChartLegend Background="Gray" BorderBrush="Black" 
-                       BorderThickness="1" CornerRadius="5" 
-                       Opacity="0.9" >
+    <chart:ChartLegend Background="Gray"
+					   BorderBrush="Black" 
+					   BorderThickness="1" 
+                       CornerRadius="5" >
     </chart:ChartLegend>
 </chart:SfCircularChart.Legend>
 
@@ -476,8 +384,7 @@ chart.Legend = new ChartLegend()
     Background = new SolidColorBrush(Colors.Gray),
     BorderBrush = new SolidColorBrush(Colors.Black),
     BorderThickness = new Thickness(1),
-    Opacity = 0.9,
-    CornerRadius = CornerRadiusHelper.FromUniformRadius(5)
+    CornerRadius = new CornerRadius(5)
 };
 
 {% endhighlight %}
@@ -486,30 +393,38 @@ chart.Legend = new ChartLegend()
 
 ## Template
 
-Customize each legend item by using `ItemTemplate` property in [ChartLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html) as in below code snippet:
+Customize each legend item by using [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ItemTemplate) property in [ChartLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html) as in below code snippet:
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfCircularChart>
-    <chart:SfCircularChart.Resources>
+<Grid x:Name="grid">
+    <Grid.Resources>
         <DataTemplate x:Key="labelTemplate">
-            <StackPanel Margin="10" Orientation="Vertical">
-                <Ellipse Height="15" Width="15" Fill="{Binding Interior}" 
-                 Stroke="#4a4a4a" StrokeThickness="2"/>
-                <TextBlock HorizontalAlignment="Center" FontSize="12"
+            <StackPanel Margin="10"
+						Orientation="Vertical">
+                <Ellipse Height="15"
+						 Width="15"
+						 Fill="{Binding Interior}" 
+						 Stroke="#4a4a4a"
+						 StrokeThickness="2"/>
+                <TextBlock HorizontalAlignment="Center"
+						   FontSize="12"
                            Foreground="Black" 
-                           FontWeight="SemiBold" Text="{Binding Label}"/>
+                           FontWeight="SemiBold"
+						   Text="{Binding Label}"/>
             </StackPanel>
         </DataTemplate>
-    </chart:SfCircularChart.Resources>
+    </Grid.Resources>
+<chart:SfCircularChart>
     . . .
     <chart:SfCircularChart.Legend>
         <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}"/>
     </chart:SfCircularChart.Legend>
 
 </chart:SfCircularChart>
+</Grid>
 
 {% endhighlight %}
 
@@ -520,7 +435,7 @@ SfCircularChart chart = new SfCircularChart();
 chart.Legend = new ChartLegend()
 {
 
-   ItemTemplate = chart.Resources["itemTemplate"] as DataTemplate
+   ItemTemplate = grid.Resources["itemTemplate"] as DataTemplate
 };
 
 {% endhighlight %}

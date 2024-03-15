@@ -17,16 +17,18 @@ A fast stepline bitmap series is a special kind of series that can render a coll
 
 <chart:SfCartesianChart>
 
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis />
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis>  
+    </chart:SfCartesianChart.YAxes>  
 
     <chart:SfCartesianChart.Series>
-        <chart:FastStepLineBitmapSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" />
+        <chart:FastStepLineBitmapSeries ItemsSource="{Binding Data}" 
+                                        XBindingPath="XValue" 
+                                        YBindingPath="YValue" />
     </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
@@ -35,10 +37,10 @@ A fast stepline bitmap series is a special kind of series that can render a coll
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-DateTimeAxis primaryAxis = new DateTimeAxis();
-chart.PrimaryAxis = primaryAxis;
-NumericalAxis secondaryAxis = new NumericalAxis();
-chart.SecondaryAxis = secondaryAxis;
+DateTimeAxis xAxis = new DateTimeAxis();
+chart.XAxes.Add(xAxis);
+NumericalAxis yAxis = new NumericalAxis();
+chart.YAxes.Add(yAxis);
 
 FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
 {
@@ -65,16 +67,19 @@ The anti aliasing mode can be enabled using the [EnableAntiAliasing](https://hel
 
 <chart:SfCartesianChart>
 
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis />
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis>  
+    </chart:SfCartesianChart.YAxes>  
 
     <chart:SfCartesianChart.Series>
-        <chart:FastStepLineBitmapSeries EnableAntiAliasing="True" ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" />
+        <chart:FastStepLineBitmapSeries EnableAntiAliasing="True" 
+                                        ItemsSource="{Binding Data}" 
+                                        XBindingPath="XValue" 
+                                        YBindingPath="YValue" />
     </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
@@ -83,10 +88,10 @@ The anti aliasing mode can be enabled using the [EnableAntiAliasing](https://hel
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-DateTimeAxis primaryAxis = new DateTimeAxis();
-chart.PrimaryAxis = primaryAxis;
-NumericalAxis secondaryAxis = new NumericalAxis();
-chart.SecondaryAxis = secondaryAxis;
+DateTimeAxis xAxis = new DateTimeAxis();
+chart.XAxes.Add(xAxis);
+NumericalAxis yAxis = new NumericalAxis();
+chart.YAxes.Add(yAxis);
 . . .
 FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
 {

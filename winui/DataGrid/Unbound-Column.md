@@ -33,7 +33,7 @@ this.sfDataGrid.Columns.Add(new GridUnboundColumn() { HeaderText = "Discount Pri
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid Unbound Column](Unbound-Column_images/winui-datagrid-unbound-column.png)
+<img src="Unbound-Column_images/winui-datagrid-unbound-column.png" alt="WinUI DataGrid Unbound Column" width="100%" Height="Auto"/>
 
 N> It is mandatory to specify the [GridColumn.MappingName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_MappingName) for `GridUnboundColumn` with some name to identify the column. It is not necessary to define name of field in the data object.
 
@@ -194,12 +194,12 @@ NOT
 {% endhighlight %}
 {% highlight c# %}
 
-(this.sfDataGrid.Columns[4] as GridUnboundColumn).Expression = "Discount * UnitPrice > 25000" + (char)135 + "UnitPrice * Quantity > 25000";
+(this.sfDataGrid.Columns[4] as GridUnboundColumn).Expression = "Discount * UnitPrice > 500" + (char)135 + "UnitPrice > 100";
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI DataGrid displays Unbound Column with Expression](Unbound-Column_images/winui-datagrid-expression-column.png)
+<img src="Unbound-Column_images/winui-datagrid-expression-column.png" alt="WinUI DataGrid displays Unbound Column with Expression" width="100%" Height="Auto"/>
 
 ### Using Format
 
@@ -227,7 +227,7 @@ this.sfDataGrid.Columns.Add(new GridUnboundColumn() { HeaderText = "Discount Pri
 {% endhighlight %}
 {% endtabs %}
 
-![Formatting Unbound Columns in WinUI DataGrid](Unbound-Column_images/winui-datagrid-unbound-column-formatting.png)
+<img src="Unbound-Column_images/winui-datagrid-unbound-column-formatting.png" alt="Formatting Unbound Columns in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ### Using QueryUnboundColumnValue event
 
@@ -256,7 +256,7 @@ void SfDataGrid_QueryUnboundColumnValue(object sender, GridUnboundColumnEventsAr
 {% endhighlight %}
 {% endtabs %}
 
-![Populating data with Unbound Column in WinUI DataGrid](Unbound-Column_images/winui-datagrid-unbound-column-with-populated-data.png)
+<img src="Unbound-Column_images/winui-datagrid-unbound-column-with-populated-data.png" alt="Populating data with Unbound Column in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Editing unbound column
 
@@ -388,7 +388,7 @@ public class GridUnboundCellTextBoxRendererExt : GridUnboundCellTextBoxRenderer
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Unbound Column behavior in WinUI DataGrid](Unbound-Column_images/winui-datagrid-unbound-column-behavior-customization.png)
+<img src="Unbound-Column_images/winui-datagrid-unbound-column-behavior-customization.png" alt="Customizing Unbound Column behavior in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ### Custom renderer
 

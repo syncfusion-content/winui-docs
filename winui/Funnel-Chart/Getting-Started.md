@@ -18,6 +18,7 @@ This section explains how to populate the [WinUI Funnel Chart](https://www.syncf
 3. Import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C# to initialize the control.
 4. Initialize [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) control.
 
+{% capture codesnippet1 %}
 {% tabs %} 
 
 {% highlight xaml %}
@@ -54,6 +55,8 @@ public sealed partial class MainWindow : Window
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Initialize View Model
 
@@ -217,13 +220,13 @@ chart.Legend = new ChartLegend();
 
 ## Enable Tooltip
 
-Tooltips are used to display information about a segment, when the mouse is moved over it. Enable tooltip by setting funnel chart [ShowTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_ShowTooltip) property as true.
+Tooltips are used to display information about a segment, when the mouse is moved over it. Enable tooltip by setting funnel chart [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property as true.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart ShowTooltip="True">
+<chart:SfFunnelChart EnableTooltip="True">
     . . . 
 </chart:SfFunnelChart>
 
@@ -233,7 +236,7 @@ Tooltips are used to display information about a segment, when the mouse is move
 
 SfFunnelChart chart = new SfFunnelChart();
 . . .
-chart.ShowTooltip = true;
+chart.EnableTooltip = true;
 
 {% endhighlight %}
 
@@ -248,9 +251,8 @@ N> To plot the chart, the [XBindingPath](https://help.syncfusion.com/cr/winui/Sy
 {% highlight xaml %}
 
 <chart:SfFunnelChart x:Name="chart" Header="PRODUCT SALES" 
-                             ShowTooltip="True"
+                             EnableTooltip="True"
                              ShowDataLabels="True"
-                             Palette="BlueChrome"
                              Height="388" Width="500" 
                              ItemsSource="{Binding Data}" 
                              XBindingPath="Category"
@@ -288,7 +290,7 @@ public sealed partial class MainWindow : Window
         chart.Height = 388;
         chart.Width = 500;
         chart.Legend = new ChartLegend();
-        chart.ShowTooltip = true;
+        chart.EnableTooltip = true;
         chart.ShowDataLabels = true;
 
         this.Content = chart;

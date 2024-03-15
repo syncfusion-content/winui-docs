@@ -60,7 +60,9 @@ The [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
     <chart:SfPolarChart.SecondaryAxis>
         <chart:NumericalAxis Header="Tree">
             <chart:NumericalAxis.HeaderStyle>
-                <chart:LabelStyle FontFamily="Algerian" FontSize="13" Foreground="Black"/>
+                <chart:LabelStyle FontFamily="Algerian"
+								  FontSize="13"
+								  Foreground="Black"/>
             </chart:NumericalAxis.HeaderStyle>
         </chart:NumericalAxis>
     </chart:SfPolarChart.SecondaryAxis>
@@ -103,22 +105,27 @@ The appearance of the header can be customized using the [HeaderTemplate](https:
 
 {% highlight xaml %}
 
-<chart:SfPolarChart>
+<chart:SfPolarChart x:Name="chart">
     <chart:SfPolarChart.Resources>
         <DataTemplate x:Key="headerTemplate">
-            <Border BorderBrush="Blue" CornerRadius="5" BorderThickness="1">
-                <TextBlock Text="{Binding}" FontSize="12" Margin="3"
-                            FontStyle="Italic" FontWeight="Bold"/>
+            <Border BorderBrush="Blue"
+					CornerRadius="5"
+					BorderThickness="1">
+                <TextBlock Text="{Binding}"
+						   FontSize="12"
+						   Margin="3"
+                           FontStyle="Italic"
+						   FontWeight="Bold"/>
             </Border>
         </DataTemplate>
     </chart:SfPolarChart.Resources>
-
+    
     <chart:SfPolarChart.PrimaryAxis>
         <chart:CategoryAxis/>
     </chart:SfPolarChart.PrimaryAxis>
     <chart:SfPolarChart.SecondaryAxis>
-        <chart:NumericalAxis Header="Tree" HeaderTemplate="{StaticResource headerTemplate}">
-        </chart:NumericalAxis>
+        <chart:NumericalAxis Header="Tree" 
+                             HeaderTemplate="{StaticResource headerTemplate}" />
     </chart:SfPolarChart.SecondaryAxis>
     ...
 </chart:SfPolarChart>

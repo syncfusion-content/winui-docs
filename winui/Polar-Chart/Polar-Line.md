@@ -15,26 +15,20 @@ To render a line series in polar chart, create an instance of the [PolarLineSeri
 
 {% highlight xaml %}
 
-<chart:SfPolarChart Palette="BlueChrome">
+<chart:SfPolarChart>
 ...
     <chart:SfPolarChart.Series>
-        <chart:SfPolarChart.Series>
-            <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
-                        XBindingPath="Direction"
-                        YBindingPath="Tree" Label="Tree">
-            </chart:PolarLineSeries>
+        <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
+                               XBindingPath="Direction"
+                               YBindingPath="Tree" />
 
-            <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
-                        XBindingPath="Direction"
-                        YBindingPath="Weed" Label="Weed">
-            </chart:PolarLineSeries>
+        <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
+                               XBindingPath="Direction"
+                               YBindingPath="Weed" />
 
-            <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
-                        XBindingPath="Direction"
-                        YBindingPath="Flower" Label="Flower">
-            </chart:PolarLineSeries>
-        </chart:SfPolarChart.Series>
-
+        <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
+                               XBindingPath="Direction"
+                               YBindingPath="Flower" />
     </chart:SfPolarChart.Series>
 ...
 </chart:SfPolarChart>
@@ -44,7 +38,6 @@ To render a line series in polar chart, create an instance of the [PolarLineSeri
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-chart.Palette = ChartColorPalette.BlueChrome;
 ...
 PolarLineSeries series1 = new PolarLineSeries();
 series1.XBindingPath = "Direction";
@@ -73,7 +66,7 @@ chart.Series.Add(series3);
 
 ## Grid line type
 
-The [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_GridLineType) property is used to change the rendering type of axis grid lines. The default value of [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_GridLineType) is `Circle`. By changing the grid line type as `Polygon`, we can shown the polar chart similar like radar chart or spider chart or web chart. 
+The [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_GridLineType) property is used to change the rendering type of axis grid lines. The default value of [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_GridLineType) is [Circle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarChartGridLineType.html#Syncfusion_UI_Xaml_Charts_PolarChartGridLineType_Circle). By changing the grid line type as [Polygon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarChartGridLineType.html#Syncfusion_UI_Xaml_Charts_PolarChartGridLineType_Polygon), we can shown the polar chart similar like radar chart or spider chart or web chart. 
 
 {% tabs %}
 
@@ -83,9 +76,8 @@ The [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 ...
     <chart:SfPolarChart.Series>
         <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
-                    XBindingPath="Direction"
-                    YBindingPath="Tree" >
-        </chart:PolarLineSeries>
+                               XBindingPath="Direction"
+                               YBindingPath="Tree" />
     </chart:SfPolarChart.Series>
 ...
 </chart:SfPolarChart>
@@ -122,10 +114,9 @@ chart.Series.Add(series);
 ...
     <chart:SfPolarChart.Series>
         <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
-                    XBindingPath="Direction"
-                    YBindingPath="Tree" 
-                    IsClosed="False">
-        </chart:PolarLineSeries>
+                               XBindingPath="Direction"
+                               YBindingPath="Tree" 
+                               IsClosed="False" />
     </chart:SfPolarChart.Series>
 ...
 </chart:SfPolarChart>

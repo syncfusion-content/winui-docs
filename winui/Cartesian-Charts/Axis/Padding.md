@@ -9,48 +9,6 @@ documentation: ug
 
 # Axis Padding in WinUI Chart (SfCartesianChart)
 
-The [PlotOffset](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_PlotOffset) property is used to provide padding to the axis. The following code sample demonstrates the padding applied to both x and y-axes.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart>
-. . .
-<chart:SfCartesianChart.PrimaryAxis>
-    <chart:CategoryAxis PlotOffset="30"/>
-</chart:SfCartesianChart.PrimaryAxis>
-
-<chart:SfCartesianChart.SecondaryAxis>
-    <chart:NumericalAxis PlotOffset="30"/>
-</chart:SfCartesianChart.SecondaryAxis>
-
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-. . .
-chart.PrimaryAxis = new CategoryAxis()
-{
-   PlotOffset = 30
-};
-
-chart.SecondaryAxis = new NumericalAxis()
-{
-   PlotOffset = 30
-};
-. . .
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![PlotOffset support in WinUI Chart](Axis_images/winui_chart_axis_plot-offset.png)
-
 ## PlotOffsetStart
 
 The [PlotOffsetStart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_PlotOffsetStart) property is used to provide padding to the axis at start position. The following code sample demonstrates the padding applied to Start position for both x and y-axes.
@@ -61,13 +19,13 @@ The [PlotOffsetStart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ch
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
     <chart:CategoryAxis PlotOffsetStart="30"/>
-</chart:SfCartesianChart.PrimaryAxis>
+</chart:SfCartesianChart.XAxes>
 
-<chart:SfCartesianChart.SecondaryAxis>
+<chart:SfCartesianChart.YAxes>
     <chart:NumericalAxis PlotOffsetStart="30"/>
-</chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
 
@@ -77,15 +35,17 @@ The [PlotOffsetStart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ch
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new CategoryAxis()
+CategoryAxis primaryAxis = new CategoryAxis()
 {
    PlotOffsetStart = 30
 };
+chart.XAxes.Add(primaryAxis);
 
-chart.SecondaryAxis = new NumericalAxis()
+NumericalAxis secondaryAxis = new NumericalAxis()
 {
    PlotOffsetStart = 30
 };
+chart.YAxes.Add(secondaryAxis);
 . . .
 this.Content = chart;
 
@@ -105,13 +65,13 @@ The [PlotOffsetEnd](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
     <chart:CategoryAxis PlotOffsetEnd="30"/>
-</chart:SfCartesianChart.PrimaryAxis>
+</chart:SfCartesianChart.XAxes>
 
-<chart:SfCartesianChart.SecondaryAxis>
+<chart:SfCartesianChart.YAxes>
     <chart:NumericalAxis PlotOffsetEnd="30"/>
-</chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
 
@@ -121,15 +81,17 @@ The [PlotOffsetEnd](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new CategoryAxis()
+CategoryAxis primaryAxis = new CategoryAxis()
 {
    PlotOffsetEnd = 30
 };
+chart.XAxes.Add(primaryAxis);
 
-chart.SecondaryAxis = new NumericalAxis()
+NumericalAxis secondaryAxis = new NumericalAxis()
 {
    PlotOffsetEnd = 30
 };
+chart.YAxes.Add(secondaryAxis);
 . . .
 this.Content = chart;
 

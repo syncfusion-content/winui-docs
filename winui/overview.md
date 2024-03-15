@@ -99,7 +99,7 @@ The Syncfusion WinUI Controls are the suite, ever needed to create state of art 
 		</td>
 	</tr>
 	<tr>
-	    <td rowspan="8" valign="top">
+	    <td rowspan="10" valign="top">
 			EDITORS<br/>
 		</td>	
 		<td>
@@ -133,12 +133,22 @@ The Syncfusion WinUI Controls are the suite, ever needed to create state of art 
 	</tr>
 	<tr>
 		<td>
+			<a href="https://help.syncfusion.com/winui/masked-textbox/getting-started">MaskedTextBox</a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
 			<a href="https://help.syncfusion.com/winui/numberbox/getting-started" >NumberBox</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
 			<a href="https://help.syncfusion.com/winui/segmentedcontrol/getting-started" >Segmented Control</a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/rating/getting-started" >Rating</a><br/>
 		</td>
 	</tr>
 	<tr>
@@ -175,11 +185,16 @@ The Syncfusion WinUI Controls are the suite, ever needed to create state of art 
 		</td>
 	</tr>
     <tr>
-	    <td rowspan="1" valign="top">
+	    <td rowspan="2" valign="top">
 		NOTIFICATION<br/>
 		</td>
 		<td>
 			<a href="https://help.syncfusion.com/winui/badge/getting-started">Badge</a><br/>
+		</td>
+	</tr>
+	<tr>
+	    <td>
+			<a href="https://help.syncfusion.com/winui/busy-indicator/getting-started">BusyIndicator</a><br/>
 		</td>
 	</tr>	
     <tr>
@@ -195,6 +210,19 @@ The Syncfusion WinUI Controls are the suite, ever needed to create state of art 
 			<a href="https://help.syncfusion.com/winui/rangeslider/getting-started">Range Slider</a><br/>
 		</td>
 	</tr>
+	<tr>
+	    <td rowspan="2" valign="top">
+		MISCELLANEOUS<br/>
+		</td>
+		<td>
+			<a href="https://help.syncfusion.com/winui/avatar-view/getting-started">AvatarView</a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/shadow/getting-started">Shadow</a><br/>
+		</td>
+	</tr>	
 	<tr>
 		<td rowspan="4" valign="top">
 			FILE FORMATS<br/>

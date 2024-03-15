@@ -13,7 +13,7 @@ This section provides an overview of how to use the [WinUI Segmented Control](ht
 
 ## Creating an application using WinUI Segmented Control
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 
 2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
 
@@ -21,6 +21,7 @@ This section provides an overview of how to use the [WinUI Segmented Control](ht
 
 4. Initialize the [SfSegmentedControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html).
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -56,6 +57,8 @@ public sealed partial class MainWindow : Window
 
 {% endhighlight %}
 {% endtabs %} 
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Populating items using string collection
 

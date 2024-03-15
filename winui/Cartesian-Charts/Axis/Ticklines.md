@@ -9,9 +9,9 @@ documentation: ug
 
 # Tick Lines in WinUI Chart (SfCartesianChart)
 
-Tick lines are the small lines which is drawn on the axis line representing the axis labels. Tick lines will be drawn outside of the axis by default. 
+Tick lines are the small lines which are drawn on the axis line representing the axis labels. Tick lines will be drawn outside of the axis by default. 
 
-And also minor tick lines can be added to the axis by defining the [SmallTicksPerInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTicksPerInterval) property. This property will add the minor tick lines to every interval based on value.
+The minor tick lines can be added to the axis by defining the [MinorTicksPerInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_MinorTicksPerInterval) property. This property will add the minor tick lines to every interval based on value.
 
 N> For category axis, minor tick lines are not applicable. Since it is rendered based on index positions.
 
@@ -21,13 +21,13 @@ N> For category axis, minor tick lines are not applicable. Since it is rendered 
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
-    <chart:NumericalAxis SmallTicksPerInterval="4"/>
-</chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
+    <chart:NumericalAxis MinorTicksPerInterval="4"/>
+</chart:SfCartesianChart.XAxes>
 
-<chart:SfCartesianChart.SecondaryAxis>
+<chart:SfCartesianChart.YAxes>
     <chart:NumericalAxis />
-</chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
 
@@ -37,12 +37,13 @@ N> For category axis, minor tick lines are not applicable. Since it is rendered 
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new NumericalAxis()
+NumericalAxis primaryAxis = new NumericalAxis()
 {
-   SmallTicksPerInterval = 4 
+   MinorTicksPerInterval = 4 
 };
+chart.XAxes.Add(primaryAxis);
 
-chart.SecondaryAxis = new NumericalAxis();
+chart.YAxes.Add(new NumericalAxis());
 
 {% endhighlight %}
 
@@ -50,7 +51,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 ## Size
 
-Both major and minor tick lines height can be customized by using the [TickLineSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TickLineSize) and [SmallTickLineSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTickLineSize) properties respectively.
+Both major and minor tick lines height can be customized by using the [TickLineSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TickLineSize) and [MinorTickLineSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_MinorTickLineSize) properties respectively.
 
 {% tabs %}
 
@@ -58,13 +59,15 @@ Both major and minor tick lines height can be customized by using the [TickLineS
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
-    <chart:NumericalAxis SmallTickLineSize="10" SmallTicksPerInterval="4" TickLineSize="15"/>
-</chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
+    <chart:NumericalAxis MinorTickLineSize="10" 
+                         MinorTicksPerInterval="4" 
+                         TickLineSize="15"/>
+</chart:SfCartesianChart.XAxes>
 
-<chart:SfCartesianChart.SecondaryAxis>
+<chart:SfCartesianChart.YAxes>
     <chart:NumericalAxis />
-</chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
 
@@ -74,14 +77,15 @@ Both major and minor tick lines height can be customized by using the [TickLineS
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new NumericalAxis()
+NumericalAxis primaryAxis = new NumericalAxis()
 {
    TickLineSize = 15,
-   SmallTickLineSize = 10,
-   SmallTicksPerInterval = 4
+   MinorTickLineSize = 10,
+   MinorTicksPerInterval = 4
 };
+chart.XAxes.Add(primaryAxis);
 
-chart.SecondaryAxis = new NumericalAxis();
+chart.YAxes.Add(new NumericalAxis());
 
 {% endhighlight %}
 
@@ -89,54 +93,9 @@ chart.SecondaryAxis = new NumericalAxis();
 
 ![Axis tick lines height support in WinUI Chart](Axis_images/winui_chart_axis_small_ticklines.png)
 
-## Position
-
-Tick lines can be positioned inside or outside of the chart area. By default the tick lines will positioned outside of the chart area. 
-
-| Property | Description |
-|--|--|
-|[TickLinesPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TickLinesPosition) | Used to position the major tick lines|
-|[SmallTickLinesPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTickLinesPosition) | Used to position the minor tick lines|
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart>
-. . .
-<chart:SfCartesianChart.PrimaryAxis>
-    <chart:NumericalAxis TickLinesPosition="Inside" SmallTickLinesPosition="Inside"/>
-</chart:SfCartesianChart.PrimaryAxis>
-
-<chart:SfCartesianChart.SecondaryAxis>
-    <chart:NumericalAxis />
-</chart:SfCartesianChart.SecondaryAxis>
-
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-. . .
-chart.PrimaryAxis = new NumericalAxis()
-{
-   TickLinesPosition = AxisElementPosition.Inside,
-   SmallTickLinesPosition = AxisElementPosition.Inside
-};
-
-chart.SecondaryAxis = new NumericalAxis();
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Axis tick lines positioning support in WinUI Chart](Axis_images/WinUI_Chart_Axis_tickline_position.png)
-
 ## Customization
 
-Both major and minor tick lines can be customized by using the [MajorTickLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorTickLineStyle) and [MinorTickLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorTickLineStyle) properties respectively. 
+Both major and minor tick lines can be customized by using the [MajorTickStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorTickStyle) and [MinorTickStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_MinorTickStyle) properties respectively. 
 
 {% tabs %}
 
@@ -151,13 +110,15 @@ Both major and minor tick lines can be customized by using the [MajorTickLineSty
     </Style>
 </chart:SfCartesianChart.Resources>
 
-<chart:SfCartesianChart.PrimaryAxis>
-    <chart:NumericalAxis SmallTicksPerInterval="4" MinorTickLineStyle="{StaticResource lineStyle}"  MajorTickLineStyle="{StaticResource lineStyle}" />
-</chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
+    <chart:NumericalAxis MinorTicksPerInterval="4" 
+                         MinorTickStyle="{StaticResource lineStyle}"  
+                         MajorTickStyle="{StaticResource lineStyle}" />
+</chart:SfCartesianChart.XAxes>
 
-<chart:SfCartesianChart.SecondaryAxis>
+<chart:SfCartesianChart.YAxes>
     <chart:NumericalAxis />
-</chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
 
@@ -167,14 +128,15 @@ Both major and minor tick lines can be customized by using the [MajorTickLineSty
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new NumericalAxis()
+NumericalAxis primaryAxis = new NumericalAxis()
 {
-    SmallTicksPerInterval = 4,
-    MajorTickLineStyle = chart.Resources["lineStyle"] as Style,
-    MinorTickLineStyle = chart.Resources["lineStyle"] as Style 
+    MinorTicksPerInterval = 4,
+    MajorTickStyle = chart.Resources["lineStyle"] as Style,
+    MinorTickStyle = chart.Resources["lineStyle"] as Style 
 };
+chart.XAxes.Add(primaryAxis);
 
-chart.SecondaryAxis = new NumericalAxis();
+chart.YAxes.Add(new NumericalAxis());
 
 {% endhighlight %}
 

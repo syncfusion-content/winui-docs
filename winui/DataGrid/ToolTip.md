@@ -40,7 +40,7 @@ You can enable the ToolTip for the particular column by setting the [GridColumn.
 {% highlight xaml %}
 
 <dataGrid:SfDataGrid.Columns>
-    <dataGrid:GridTextColumn HeaderText="Order ID" ShowToolTip="True" MappingName="OrderID" TextAlignment="Right" />
+    <dataGrid:GridNumericColumn HeaderText="Order ID" ShowToolTip="True" MappingName="OrderID" />
     <dataGrid:GridTextColumn HeaderText="Customer ID" ShowToolTip="True" MappingName="CustomerID" />
 </dataGrid:SfDataGrid.Columns>
 
@@ -56,7 +56,7 @@ this.sfDataGrid.Columns["CustomerID"].ShowToolTip = true;
 
 N> `GridColumn.ShowToolTip` takes higher priority than `SfDataGrid.ShowToolTip`.
 
-![Displaying Tooltip for Record Cell in WinUI DataGrid](ToolTip_images/winui-datagrid-record-cell-tooltip.png)
+<img src="ToolTip_images/winui-datagrid-record-cell-tooltip.png" alt="Displaying Tooltip for Record Cell in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Header tooltip
 
@@ -66,7 +66,7 @@ You can enable the ToolTip for the header cell by setting the [GridColumn.ShowHe
 {% highlight xaml %}
 
 <dataGrid:SfDataGrid.Columns>
-    <dataGrid:GridTextColumn HeaderText="Order ID" ShowHeaderToolTip="True" MappingName="OrderID" TextAlignment="Right" />
+    <dataGrid:GridNumericColumn HeaderText="Order ID" ShowHeaderToolTip="True" MappingName="OrderID" />
 </dataGrid:SfDataGrid.Columns>
 
 {% endhighlight %}
@@ -78,7 +78,7 @@ this.sfDataGrid.Columns["OrderID"].ShowHeaderToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Tooltip for Header in WinUI DataGrid](ToolTip_images/winui-datagrid-tooltip-for-header.png)
+<img src="ToolTip_images/winui-datagrid-tooltip-for-header.png" alt="Displaying Tooltip for Header in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## ToolTip Customization
 
@@ -91,15 +91,16 @@ You can customize the appearance of the ToolTip for particular column by setting
 {% tabs %}
 {% highlight xaml %}
 
-<Page.Resources>
+<Application.Resources>
     <local:StringToImageConverter x:Key="imageConverter" />        
     <DataTemplate x:Key="templateToolTip">
         <Image Height="100" Width="100" Source="{Binding CustomerID,Converter={StaticResource imageConverter}}" />
     </DataTemplate>
-</Page.Resources>
+</Application.Resources>
+
 
 <dataGrid:SfDataGrid.Columns>
-    <dataGrid:GridTextColumn HeaderText="Order ID"  ShowToolTip="True" MappingName="OrderID" />
+    <dataGrid:GridNumericColumn HeaderText="Order ID"  ShowToolTip="True" MappingName="OrderID" />
     <dataGrid:GridTextColumn HeaderText="Customer ID" ToolTipTemplate="{StaticResource templateToolTip}" ShowToolTip="True" MappingName="CustomerID" />
 </dataGrid:SfDataGrid.Columns>
 
@@ -122,7 +123,7 @@ public class StringToImageConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Tooltip Customization using ToolTipTemplate in WinUI DataGrid](ToolTip_images/winui-datagrid-tooltip-customization-using-tooltiptemplate.png)
+<img src="ToolTip_images/winui-datagrid-tooltip-customization-using-tooltiptemplate.png" alt="Displaying Tooltip Customization using ToolTipTemplate in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ### Customize the ToolTip with ToolTipTemplateSelector
 
@@ -131,7 +132,7 @@ The different ToolTip template can be loaded in a same column conditionally base
 {% tabs %}
 {% highlight xaml %}
 
-<Page.Resources>
+<Application.Resources>
     <DataTemplate x:Key="toolTip1">
         <Grid>
             <Rectangle Fill="Transparent"/>
@@ -144,14 +145,14 @@ The different ToolTip template can be loaded in a same column conditionally base
             <TextBlock Text="{Binding OrderID}" FontStyle="Italic" Foreground="Green" />
         </Grid>
     </DataTemplate>
-</Page.Resources>
+</Application.Resources>
 
 <dataGrid:SfDataGrid.Columns>
-    <dataGrid:GridTextColumn HeaderText="Order ID" ShowToolTip="True" MappingName="OrderID" >
-        <dataGrid:GridTextColumn.ToolTipTemplateSelector>
+    <dataGrid:GridNumericColumn HeaderText="Order ID" ShowToolTip="True" MappingName="OrderID" >
+        <dataGrid:GridNumericColumn.ToolTipTemplateSelector>
             <local:ToolTipTemplateSelector AlternateTemplate="{StaticResource toolTip2}"  DefaultTemplate="{StaticResource toolTip1}" />
-        </dataGrid:GridTextColumn.ToolTipTemplateSelector>
-    </dataGrid:GridTextColumn>
+        </dataGrid:GridNumericColumn.ToolTipTemplateSelector>
+    </dataGrid:GridNumericColumn>
 </dataGrid:SfDataGrid.Columns>
 
 {% endhighlight %}
@@ -210,11 +211,11 @@ public class ToolTipTemplateSelector : DataTemplateSelector
 
 The below image refers the `DefaultTemplate` which is applied through `ToolTipTemplateSelector`.
 
-![Displaying DefaultTemplate for Tooltip using ToolTipTemplateSelector in WinUI DataGrid](ToolTip_images/winui-datagrid-default-template-for-tooltip-using-tooltiptemplateselector.png)
+<img src="ToolTip_images/winui-datagrid-default-template-for-tooltip-using-tooltiptemplateselector.png" alt="Displaying DefaultTemplate for Tooltip using ToolTipTemplateSelector in WinUI DataGrid" width="100%" Height="Auto"/>
 
 The below image refers the `AlternateTemplate` which is applied through `ToolTipTemplateSelector`.
 
-![Displaying AlternateTemplate for Tooltip using ToolTipTemplateSelector in WinUI DataGrid](ToolTip_images/winui-datagrid-alternate-template-for-tooltip-using-tooltiptemplateselector.png)
+<img src="ToolTip_images/winui-datagrid-alternate-template-for-tooltip-using-tooltiptemplateselector.png" alt="Displaying AlternateTemplate for Tooltip using ToolTipTemplateSelector in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Events
 

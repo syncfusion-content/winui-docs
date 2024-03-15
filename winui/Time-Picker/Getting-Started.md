@@ -23,12 +23,13 @@ In this walkthrough, you will create a WinUI application that contains the `Time
 
 To add `Time Picker` control manually in XAML , follow the below steps.
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Download and refer the following NuGet in the project.
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 4. Initialize the `SfTimePicker` control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8 12" %}
 
@@ -49,17 +50,20 @@ To add `Time Picker` control manually in XAML , follow the below steps.
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding control manually in C#
 
 To add the `Time Picker` control manually in C#, follow the below steps.
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Download and refer the following NuGet in the project.
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
 3. Import the `Time Picker` namespace `Syncfusion.UI.Xaml.Editors` in C# page.
 4. Initialize the `SfTimePicker` control.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="1 14 15" %}
 
@@ -84,6 +88,8 @@ namespace GettingStarted
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![winui-time-picker-control](Getting-Started_images/winui-time-picker-control.png)
 

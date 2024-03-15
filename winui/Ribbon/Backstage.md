@@ -181,6 +181,7 @@ The Ribbon allows to show or hide a backstage view visibility using the `IsBacks
 
  The visibility of the backstage view can be directly enabled or disabled by setting value to the `IsBackstageOpen` property of Ribbon.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <ribbon:SfRibbon x:Name="ribbon"
@@ -193,11 +194,15 @@ The Ribbon allows to show or hide a backstage view visibility using the `IsBacks
 </ribbon:SfRibbon>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
+
 
 * Through back button click event
 
  The backstage view can be opened or closed dynamically using `BackButtonClick` event.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight xaml %}
 <ribbon:SfRibbon x:Name="ribbon">
@@ -217,11 +222,14 @@ private void BackstageView_BackButtonClick(BackstageView sender, object args)
 }
 {% endhighlight %} 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 * Through Back button command
 
 The backstage view can be opened or closed dynamically using `BackButtonCommand` property.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight xaml %}
 <ribbon:SfRibbon x:Name="ribbon">
@@ -249,6 +257,8 @@ private void ExecuteButtonCommand(object obj)
 }
 {% endhighlight %} 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ## Back button visibility
 

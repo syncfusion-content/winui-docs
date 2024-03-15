@@ -272,7 +272,7 @@ Below are the built-in filter types supported.
  
 * [TextFilters](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.AdvancedFilterType.html#Syncfusion_UI_Xaml_Grids_AdvancedFilterType_TextFilter) – Loads various menu options to filter the display text effectively.
 * [NumberFilters](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.AdvancedFilterType.html#Syncfusion_UI_Xaml_Grids_AdvancedFilterType_NumberFilter) – Loads various menu options to filter the numeric data.
-* [DateFilters](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.AdvancedFilterType.html#Syncfusion_UI_Xaml_Grids_AdvancedFilterType_DateFilter) – Loads various menu options and [DatePicker](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.datepicker?view=winui-3.0-preview) to filter DateTime type column.
+* [DateFilters](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.AdvancedFilterType.html#Syncfusion_UI_Xaml_Grids_AdvancedFilterType_DateFilter) – Loads various menu options and [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) to filter DateTimeOffset type column.
 
 <table>
 <tr>
@@ -294,7 +294,7 @@ When the string value is bounded to the {{ '[GridColumn](https://help.syncfusion
 When integer, double, short, decimal, byte or long are bound to the {{ '[GridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html)' | markdownify }} then <code>NumberFilters</code> are loaded in {{ '[AdvancedFilterControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.AdvancedFilterControl.html)' | markdownify }}.
 </td>
 <td>
-When the DateTime type value is bound to the {{ '[GridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html)' | markdownify }}, then <code>DateFilters</code> are loaded in {{ '[AdvancedFilterControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.AdvancedFilterControl.html)' | markdownify }}.
+When the DateTimeOffset type value is bound to the {{ '[GridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html)' | markdownify }} then <code>DateFilters</code> are loaded in {{ '[AdvancedFilterControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.AdvancedFilterControl.html)' | markdownify }}.
 </td>
 </tr>
 <tr>
@@ -347,7 +347,7 @@ When the DateTime type value is bound to the {{ '[GridColumn](https://help.syncf
 <li>Before</li>
 <li>Before Or Equal</li>
 <li>After</li>
-<li>After Or Equal</li>
+<li>After or Equal</li>
 <li>Null</li>
 <li>Not Null</li>
 </ol>
@@ -472,37 +472,6 @@ Advanced Filter with `ImmediateUpdateColumnFilter` is `True`
 <img src="Filtering_images/winui-datagrid-immediate-advanced-filter.png" alt="Advanced Filter with Immediate Filter in WinUI DataGrid" width="100%" Height="Auto"/>
 
 N> In Checkbox Filter, the `SelectAll` option is not reflected in the filter updates if `ImmediateUpdateColumnFilter` is `True`.
-
-## Filtering based on DisplayText
-
-In UI filtering, records are filtered based on actual value by default. If you want to filter the records based on [DisplayText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.ColumnFilter.html#Syncfusion_UI_Xaml_Data_ColumnFilter_DisplayText), you need to set [ColumnFilter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_ColumnFilter) property as `DisplayText`. 
-
-{% tabs %}
-{% highlight xaml %}
-
-<dataGrid:GridDateColumn  MappingName="OrderDate" HeaderText="Order Date" ColumnFilter="DisplayText"/>
-
-{% endhighlight %}
-{% highlight c# %}
-sfDataGrid.Columns["OrderDate"].ColumnFilter = ColumnFilter.DisplayText;
-{% endhighlight %}
-{% endtabs %}
-
-Consider in the following dataGrid, first and second records have same display value for OrderDate column but both have different actual value (E.g. 10/2/2010 12:00:00 AM and 10/2/2010 6:30:00 PM).
-
-<img src="Filtering_images/winui-datagrid-value-instead-of-formatting-string.png" alt="Filter WinUI DataGrid using Actual Value instead of Formatted String" width="100%" Height="Auto"/>
-
-By default, based on the actual value only filter will be applied. So it will consider both values as different. And while opening filter popup, both values will be displayed like below.
-
-<img src="Filtering_images/winui-datagrid-filtering-format-string.png" alt="Filtering WinUI DataGrid based on Formatted String" width="Auto" Height="Auto"/>
-
-If you set `ColumnFilter` as `DisplayText`, display value only will be considered for filtering. So filter popup will be shown like below.
-
-<img src="Filtering_images/winui-datagrid-filter-actual-value.png" alt="Filter based on actual value in WinUI DataGrid" width="Auto" Height="Auto"/>
-
-After filtering, both records having the same OrderDate display value will be displayed in view.
-
-<img src="Filtering_images/winui-datagrid-same-record-values.png" alt="Filtered same Record Values in WinUI DataGrid" width="100%" Height="Auto"/>
 
 ## Events
 

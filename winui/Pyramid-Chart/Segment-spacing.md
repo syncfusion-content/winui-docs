@@ -16,11 +16,10 @@ The gap between each segment in the pyramid chart can be set using the [GapRatio
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart"
-        Palette="BlueChrome"
-        ItemsSource="{Binding Data}" 
-        XBindingPath="Category" 
-        YBindingPath="Value" 
-        GapRatio="0.3">
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="Category" 
+                      YBindingPath="Value" 
+                      GapRatio="0.3">
 </chart:SfPyramidChart>
  
 {% endhighlight %}
@@ -28,7 +27,6 @@ The gap between each segment in the pyramid chart can be set using the [GapRatio
 {% highlight C# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-chart.Palette = ChartColorPalette.BlueChrome;
 chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";

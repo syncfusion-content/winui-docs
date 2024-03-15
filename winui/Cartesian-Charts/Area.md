@@ -19,16 +19,18 @@ The [WinUI Area Chart](https://www.syncfusion.com/winui-controls/charts/winui-ar
 
 <chart:SfCartesianChart>
     
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis />
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis>   
+    </chart:SfCartesianChart.YAxes>   
 
     <chart:SfCartesianChart.Series>
-        <chart:AreaSeries ItemsSource="{Binding Data}" XBindingPath="Demand" YBindingPath="Year2010"/>  
+        <chart:AreaSeries ItemsSource="{Binding Data}" 
+                          XBindingPath="Demand" 
+                          YBindingPath="Year2010"/>  
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
@@ -38,10 +40,10 @@ The [WinUI Area Chart](https://www.syncfusion.com/winui-controls/charts/winui-ar
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-CategoryAxis primaryAxis = new CategoryAxis();
-chart.PrimaryAxis = primaryAxis;
-NumericalAxis secondaryAxis = new NumericalAxis();
-chart.SecondaryAxis = secondaryAxis;
+CategoryAxis xAxis = new CategoryAxis();
+chart.XAxes.Add(xAxis);
+NumericalAxis yAxis = new NumericalAxis();
+chart.YAxes.Add(yAxis);
 
 AreaSeries series = new AreaSeries()
 {
@@ -69,16 +71,18 @@ The [SplineAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
 
 <chart:SfCartesianChart>
 
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis />
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis>
+    </chart:SfCartesianChart.YAxes>
             
     <chart:SfCartesianChart.Series>
-        <chart:SplineAreaSeries ItemsSource="{Binding Data}" XBindingPath="Demand" YBindingPath="Year2010"/>  
+        <chart:SplineAreaSeries ItemsSource="{Binding Data}" 
+                                XBindingPath="Demand" 
+                                YBindingPath="Year2010"/>  
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
@@ -89,9 +93,9 @@ The [SplineAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
 
 SfCartesianChart chart = new SfCartesianChart();
 CategoryAxis primaryAxis = new CategoryAxis();
-chart.PrimaryAxis = primaryAxis;
+chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
-chart.SecondaryAxis = secondaryAxis;
+chart.YAxes.Add(secondaryAxis);
 
 SplineAreaSeries series = new SplineAreaSeries()
 {
@@ -121,16 +125,18 @@ The [StepAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 <chart:SfCartesianChart>
 
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis />
-    </chart:SfCartesianChart.PrimaryAxis>
+    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.SecondaryAxis>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.SecondaryAxis> 
+    </chart:SfCartesianChart.YAxes> 
 
     <chart:SfCartesianChart.Series>
-        <chart:StepAreaSeries XBindingPath="XValue" YBindingPath="YValue" ItemsSource="{Binding Data}"/> 
+        <chart:StepAreaSeries XBindingPath="XValue" 
+                              YBindingPath="YValue" 
+                              ItemsSource="{Binding Data}"/> 
     </chart:SfCartesianChart.Series>
     ...
 </chart:SfCartesianChart>
@@ -140,10 +146,10 @@ The [StepAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-CategoryAxis primaryAxis = new CategoryAxis();
-chart.PrimaryAxis = primaryAxis;
-NumericalAxis secondaryAxis = new NumericalAxis();
-chart.SecondaryAxis = secondaryAxis;
+CategoryAxis xAxis = new CategoryAxis();
+chart.XAxes.Add(xAxis);
+NumericalAxis yAxis = new NumericalAxis();
+chart.YAxes.Add(yAxis);
 
 StepAreaSeries series = new StepAreaSeries()
 {

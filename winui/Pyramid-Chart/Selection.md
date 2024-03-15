@@ -9,27 +9,39 @@ documentation: ug
 
 # Selection in WinUI Chart (SfPyramidChart)
 
-Pyramid chart supports selection that allows to select a segment in the chart by using [ChartSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html). 
+The pyramid chart supports selection that allows the selection of a segment in the chart by using the [SelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_SelectionBehavior). 
+
+## Properties
+
+The Selection feature can be configured using the following properties:
+
+* [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) - Gets or Sets the [ChartSelectionType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionType.html) Enum value for the Selection Behavior.     
+The following [ChartSelectionType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionType.html) can be achieved during Selection:
+    * Single - Allows to select a single segment.
+    * SingleDeselect -  Allows to select and deselect a single segment.
+    * Multiple - Allows to select multiple segments.
+    * None - Restricts the segment selection.
+* [SelectionBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionBrush) - Gets or Sets  the SelectionBrush color value for Selection Behavior.
+* [SelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectedIndex) - Gets or Sets  the index value of the segment that should be selected during the Selection.
+* [SelectedIndexes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectedIndexes) - Gets or Sets  the list of indexes of the segments that should be selected during the Selection.
 
 ## Enable Selection
 
-To enable the selection in chart, create an instance of [ChartSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html) and add it to the `Behaviors` collection of pyramid chart. And also need to set the [SelectionBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_SelectionBrush) property to highlight the segment in the pyramid chart.
+To enable the selection in the chart, create an instance of the [DataPointSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataPointSelectionBehavior.html) and set it to the [SelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html?tabs=tabid-1%2Ctabid-2#Syncfusion_UI_Xaml_Charts_SfPyramidChart_SelectionBehavior) of the pyramid chart. And also, set the [SelectionBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionBrush) property to highlight the segment in the pyramid chart.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart" 
-                    SelectionBrush="Red"
-                    Height="388" Width="500"
-                    Palette="BlueChrome"
-                    ItemsSource="{Binding Data}" 
-                    XBindingPath="Category"
-                    YBindingPath="Value">
+                      Height="388" Width="500"
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="Category"
+                      YBindingPath="Value">
 
-    <chart:SfPyramidChart.Behaviors>
-        <chart:ChartSelectionBehavior />
-    </chart:SfPyramidChart.Behaviors>
+    <chart:SfPyramidChart.SelectionBehavior>
+        <chart:DataPointSelectionBehavior SelectionBrush="Red"/>
+    </chart:SfPyramidChart.SelectionBehavior>
 
 </chart:SfPyramidChart>
 
@@ -41,9 +53,11 @@ SfPyramidChart chart = new SfPyramidChart();
 chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
-chart.SelectionBrush = new SolidColorBrush(Colors.Red);
-ChartSelectionBehavior selection = new ChartSelectionBehavior();
-chart.Behaviors.Add(selection);
+DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
+{
+    SelectionBrush = new SolidColorBrush(Colors.Red),
+};
+chart.SelectionBehavior = selection;
 . . .
 this.Content = chart;
 
@@ -55,7 +69,7 @@ this.Content = chart;
 
 ## Multi-selection
 
-Pyramid chart provides support to select multiple segments by using [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) property as [MultiPoint](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SelectionType.html#Syncfusion_UI_Xaml_Charts_SelectionType_MultiPoint).  By default, the value of [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) is [Point](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SelectionType.html#Syncfusion_UI_Xaml_Charts_SelectionType_Point) and it is used for single selection.
+Pyramid chart provides support to select multiple segments by using the [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) property as [Multiple](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionType.html#Syncfusion_UI_Xaml_Charts_ChartSelectionType_Multiple). By default, the value of the [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Type) is [Single](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionType.html#Syncfusion_UI_Xaml_Charts_ChartSelectionType_Single) and it is used for a single selection.
 
 N> `Series` and `MultiSeries` selection type is not support for pyramid chart.
 
@@ -64,15 +78,15 @@ N> `Series` and `MultiSeries` selection type is not support for pyramid chart.
 {% highlight xml %}
 
 <chart:SfPyramidChart x:Name="chart"  
-                    SelectionBrush="Red"
-                    Palette="BlueChrome" 
-                    ItemsSource="{Binding Data}" 
-                    XBindingPath="Category"
-                    YBindingPath="Value">
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="Category"
+                      YBindingPath="Value">
 
-    <chart:SfPyramidChart.Behaviors>
-        <chart:ChartSelectionBehavior Type="MultiPoint"/>
-    </chart:SfPyramidChart.Behaviors>
+    <chart:SfPyramidChart.SelectionBehavior>
+        <chart:DataPointSelectionBehavior
+					Type="Multiple" 
+					SelectionBrush="Red"/>
+    </chart:SfPyramidChart.SelectionBehavior>
 . . .
 </chart:SfPyramidChart>
 
@@ -84,10 +98,12 @@ SfPyramidChart chart = new SfPyramidChart();
 chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
-chart.SelectionBrush = new SolidColorBrush(Colors.Red);
-ChartSelectionBehavior selection = new ChartSelectionBehavior();
-selection.Type = SelectionType.MultiPoint;
-chart.Behaviors.Add(selection);
+DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
+{
+    SelectionBrush = new SolidColorBrush(Colors.Red),
+    Type = ChartSelectionType.Multiple
+};
+chart.SelectionBehavior = selection;
 . . .
 this.Content = chart;
 
@@ -97,24 +113,27 @@ this.Content = chart;
 
 ![Multi selection support in WinUI Chart](Selection_images/WinUI_chart_multi_selection.png)
 
-## Changing Cursor while Selection
+## Selection on initial rendering
 
-[Cursor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_Cursor) property allows to define the cursor when mouse is hovered over the segment with segment selection enabled.
+### SelectedIndex
+
+Pyramid chart provides support to select a point programmatically on a chart using the [SelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectedIndex) property of the [DataPointSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataPointSelectionBehavior.html).
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
-<<chart:SfPyramidChart x:Name="chart"  
-                    SelectionBrush="Red"
-                    Palette="BlueChrome"  
-                    ItemsSource="{Binding Data}" 
-                    XBindingPath="Category"
-                    YBindingPath="Value">
+<chart:SfPyramidChart x:Name="chart" 
+                      Height="388" Width="500"
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="Category"
+                      YBindingPath="Value">
 
-        <chart:SfPyramidChart.Behaviors>
-            <chart:ChartSelectionBehavior Cursor="Hand" />
-        </chart:SfPyramidChart.Behaviors>
+    <chart:SfPyramidChart.SelectionBehavior>
+        <chart:DataPointSelectionBehavior
+					SelectionBrush="Red"
+					SelectedIndex="1"/>
+    </chart:SfPyramidChart.SelectionBehavior>
 
 </chart:SfPyramidChart>
 
@@ -126,10 +145,12 @@ SfPyramidChart chart = new SfPyramidChart();
 chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
-chart.SelectionBrush = new SolidColorBrush(Colors.Red);
-ChartSelectionBehavior selection = new ChartSelectionBehavior();
-selection.Cursor = Windows.UI.Core.CoreCursorType.Hand;
-chart.Behaviors.Add(selection);
+DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
+{
+    SelectionBrush = new SolidColorBrush(Colors.Red),
+    SelectedIndex= 1
+};
+chart.SelectionBehavior = selection;
 . . .
 this.Content = chart;
 
@@ -137,26 +158,69 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Changing cursor while selection support in WinUI Chart](Selection_images/WinUI_chart_cursor.png)
+![SelectedIndex in WinUI Chart](Selection_images/WinUI_chart_selected_index.png)
+
+### SelectedIndexes
+
+Pyramid chart provides support to select multiple points programmatically on a chart using the [SelectedIndexes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectedIndexes) property of the [DataPointSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataPointSelectionBehavior.html).
+
+{% tabs %}
+
+{% highlight xml %}
+
+<chart:SfPyramidChart x:Name="chart"  
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="Category"
+                      YBindingPath="Value">
+ 
+    <chart:SfPyramidChart.SelectionBehavior>
+        <chart:DataPointSelectionBehavior
+					Type="Multiple" 
+					SelectionBrush="Red"
+					SelectedIndexes="{Binding SelectedIndexes}"/>
+    </chart:SfPyramidChart.SelectionBehavior>
+. . .
+</chart:SfPyramidChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfPyramidChart chart = new SfPyramidChart();
+chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+chart.XBindingPath = "Category";
+chart.YBindingPath = "Value";
+DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
+{
+    SelectionBrush = new SolidColorBrush(Colors.Red),
+    Type = ChartSelectionType.Multiple,
+    SelectedIndexes = new List<int>() { 2, 4 }
+};
+chart.SelectionBehavior = selection;
+. . .
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![SelectedIndexes in WinUI Chart](Selection_images/WinUI_chart_selected_indexes.png)
 
 ## Events
 
-The following selection events are available in [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html).
+The following selection events are available in the [ChartSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html).
 
 ### SelectionChanging
 
-The [SelectionChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SelectionChanging) event occurs before the data point is being selected. This is a cancelable event. This argument contains the following information.
+The [SelectionChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionChanging) event occurs before the data point is being selected. This is a cancelable event. The [ChartSelectionChangingEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangingEventArgs.html) contains the following information.
 
-* [SelectedSegment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangingEventArgs_SelectedSegment) - Gets the segment of the selected data point.
-* [SelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangingEventArgs_SelectedIndex) - Gets the selected data point index.
-* [PreviousSelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangingEventArgs_PreviousSelectedIndex) - Gets the previous selected data point index.
-* [Cancel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangingEventArgs_Cancel) - Gets or Sets a value that indicates whether the selection should be canceled.
+* [NewIndexes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangingEventArgs_NewIndexes) - Gets the collection of selected data point index. Here, NewIndexes[0] is the current selected index.
+* [OldIndexes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangingEventArgs_OldIndexes) - Gets the collection of previous selected data point index. Here, OldIndexes[0] is the current unselected index.
+* [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-6.0) - Gets or sets a value that indicates whether the selection should be canceled.
 
 ### SelectionChanged
 
-The [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SelectionChanged) event occurs after a data point has been selected. This argument contains the following information.
+The [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionChanged) event occurs after a data point has been selected. The [ChartSelectionChangedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs.html) contains the following information.
 
-* [SelectedSegment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangedEventArgs_SelectedSegment) - Gets the segment of the selected data point.
-* [SelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangedEventArgs_SelectedIndex) - Gets the selected data point index.
-* [PreviousSelectedSegment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangedEventArgs_PreviousSelectedSegment) - Gets the segment of previous selected data point.
-* [PreviousSelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangedEventArgs_PreviousSelectedIndex) - Gets the previous selected data point index.
+* [NewIndexes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangedEventArgs_NewIndexes) - Gets the collection of selected data point index. Here, NewIndexes[0] is the current selected index.
+* [OldIndexes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangedEventArgs_OldIndexes) - Gets the collection of previous selected data point index. Here, OldIndexes[0] is the current unselected index.

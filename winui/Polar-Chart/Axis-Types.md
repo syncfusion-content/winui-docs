@@ -100,7 +100,9 @@ N> If  minimum or maximum value is set, the other value is calculated by default
 
 <chart:SfPolarChart>
     <chart:SfPolarChart.SecondaryAxis>
-        <chart:NumericalAxis Minimum="10" Maximum="90" Interval="20" />
+        <chart:NumericalAxis Minimum="10"
+							 Maximum="90"
+							 Interval="20" />
     </chart:SfPolarChart.SecondaryAxis>
     ...
 </chart:SfPolarChart>
@@ -125,41 +127,6 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![Numerical axis range in WinUI Chart](Axis_Images/WinUI_Chart_NumericalAxis_AxisRange.png)
 
-### Start from zero
-
-[NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) will calculate the start range based on the data points binded to the chart. By defining the [StartRangeFromZero](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_StartRangeFromZero) property to True, numerical axis start the range from zero.
-
-N> By default, axis range is calculated between the minimum and maximum value of the data points.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfPolarChart>
-    <chart:SfPolarChart.SecondaryAxis>
-        <chart:NumericalAxis StartRangeFromZero="True" />
-    </chart:SfPolarChart.SecondaryAxis>
-    ...
-</chart:SfPolarChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfPolarChart chart = new SfPolarChart();
-...
-chart.SecondaryAxis = new NumericalAxis()
-{
-   StartRangeFromZero = true
-};
-...
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![NumericalAxis support in WinUI Chart](Axis_Images/WinUI_Chart_NumericalAxis_StartRangeFromZero.png)
-
 ## DateTime Axis
 
 The [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is used to plot the chart with `DateTime` values.
@@ -171,7 +138,12 @@ The [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 <chart:SfPolarChart>
             
     <chart:SfPolarChart.PrimaryAxis>
-        <chart:DateTimeAxis Interval="1" IntervalType="Months" LabelFormat="MMM/dd"/>
+        <chart:DateTimeAxis Interval="1"
+							IntervalType="Months">
+        <chart:DateTimeAxis.LabelStyle>
+            <chart:LabelStyle LabelFormat="MMM/dd" />
+        </chart:DateTimeAxis.LabelStyle>
+    </chart:DateTimeAxis>
     </chart:SfPolarChart.PrimaryAxis>
             
     <chart:SfPolarChart.SecondaryAxis>
@@ -191,7 +163,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 {
     Interval = 1,
     IntervalType = DateTimeIntervalType.Months,
-    LabelFormat = "MMM/dd",
+    LabelStyle = new LabelStyle() { LabelFormat="MMM/dd" },
 };
 
 chart.SecondaryAxis = new NumericalAxis();
@@ -202,3 +174,19 @@ chart.SecondaryAxis = new NumericalAxis();
 {% endtabs %}
 
 ![DateTimeAxis support in WinUI Chart](Axis_Images/WinUI_Chart_DateTimeAxis.png)
+
+## Events
+### ActualRangeChanged
+
+The [ActualRangeChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ActualRangeChanged) event is triggered when the actual range of the axis is changed. The argument contains the following information:
+
+* [ActualMinimum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ActualRangeChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ActualRangeChangedEventArgs_ActualMinimum) - used to get the actual minimum value of the axis.
+* [ActualMaximum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ActualRangeChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ActualRangeChangedEventArgs_ActualMaximum) - used to get the actual maximum value of the axis.
+
+### LabelCreated
+
+The [LabelCreated](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelCreated) event is triggered when the axis label is created. The argument contains the following information:
+
+* [Label](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabelEventArgs_Label) - Used to get or set the text of axis label.
+* [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabelEventArgs_Position) - Used to get the position of label.
+* [LabelStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabelEventArgs_LabelStyle) - Used to customize the appearance of axis labels.

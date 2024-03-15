@@ -13,7 +13,7 @@ This section provides an overview of working with [WinUI Scheduler](https://www.
 
 ## Creating an application with WinUI Scheduler
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 
 2. Add reference to the [Syncfusion.Scheduler.WinUI](https://www.nuget.org/packages/Syncfusion.Scheduler.WinUI) NuGet. 
 
@@ -21,6 +21,7 @@ This section provides an overview of working with [WinUI Scheduler](https://www.
 
 4. Initialize the WinUI Scheduler control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8 12" %}
 <Window
@@ -59,6 +60,8 @@ namespace GettingStarted
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Change different Scheduler Views
 

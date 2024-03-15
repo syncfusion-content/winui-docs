@@ -212,7 +212,7 @@ N> The `LoadOnDemandCommand` receives [TreeViewNode](https://help.syncfusion.com
 
 ## Handling expander visibility
 
-The `TreeView` shows the expander for a particular node based on return value of [CanExecute](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.input.icommand.canexecute?view=winrt-19041) method of [LoadOnDemandCommand](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LoadOnDemandCommand). If `CanExecute` returns `true`, then expander icon is displayed for that node. If `CanExecute` returns `false`, then expander icon will not be displayed for that node. The `CanExecute` method gets called to decide the visibility of expander icon and before executing `LoadOnDemandCommand`. 
+The `TreeView` shows the expander for a particular node based on return value of [CanExecute](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.input.icommand.canexecute?view=winrt-19041) method of [LoadOnDemandCommand](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LoadOnDemandCommand). If `CanExecute` returns `true`, then expander icon is displayed for that node. If `CanExecute` returns `false`, then expander icon will not be displayed for that node. The `CanExecute` method gets called to decide the visibility of expander icon and before executing `LoadOnDemandCommand`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -236,7 +236,7 @@ private bool CanExecuteOnDemandLoading(object sender)
 
 ## On-demand loading of child items
 
-You can load child items for the node in [Execute](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.input.icommand.execute?view=winrt-19041) method of `LoadOnDemandCommand`. The Execute method will get called when user expands the tree node. In `LoadOnDemand.Execute` method, you can perform following operations,
+You can load child items for the node in [Execute](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.input.icommand.execute?view=winrt-19041) method of `LoadOnDemandCommand`. The Execute method will get called when user expands the tree node. In `LoadOnDemand.Execute` method, you can perform following operations,
 
 * Show or hide busy indicator in the place of expander by setting [TreeViewNode.ShowExpanderAnimation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html#Syncfusion_UI_Xaml_TreeView_TreeViewNode_ShowExpanderAnimation) until the data fetched.
 * Once data fetched, you can populate the child nodes by calling [TreeViewNode.PopulateChildNodes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html#Syncfusion_UI_Xaml_TreeView_TreeViewNode_PopulateChildNodes_System_Collections_IEnumerable_) method by passing the child items collection. 
@@ -246,21 +246,20 @@ You can load child items for the node in [Execute](https://docs.microsoft.com/en
 {% tabs %}
 {% highlight c# %}
 
-private async void ExecuteOnDemandLoading(object obj)
-{
-    var node = obj as TreeViewNode;
-    node.ShowExpanderAnimation = true;
-    LoadOnDemandModel loadOnDemandModel = node.Content as LoadOnDemandModel;
-    await Application.Current.Resources.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, async () => 
+ private void ExecuteOnDemandLoading(object obj)
     {
-        await Task.Delay(2000).ConfigureAwait(true);
-        var items = GetSubMenu(loadOnDemandModel.ID);
-        node.PopulateChildNodes(items);
-        if (items.Any())
-            node.IsExpanded = true;
-        node.ShowExpanderAnimation = false;
-    });
-}
+        var node = obj as TreeViewNode;
+        node.ShowExpanderAnimation = true;
+        LoadOnDemandModel loadOnDemandModel = node.Content as LoadOnDemandModel
+		Application.Current.Resources.DispatcherQueue.TryEnqueue(() =>
+            {
+                var items = GetSubMenu(loadOnDemandModel.ID);
+                node.PopulateChildNodes(items);
+                if (items.Any())
+                    node.IsExpanded = true;
+                node.ShowExpanderAnimation = false;
+            });
+    }
 
 {% endhighlight %}
 {% endtabs %}

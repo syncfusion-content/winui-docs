@@ -9,44 +9,11 @@ documentation: ug
 
 # Axis Labels in WinUI Chart (SfCartesianChart)
 
-Axis labels are used to show the units or measures or category value of axis to visualize the data user friendly. It will be generated based on the range and the values binded to [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath) or [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.XyDataSeries.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties of series.
-
-## Position 
-
-The [LabelPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelPosition) property is used to position the axis label either inside or outside of the chart plotting area. By default, [LabelPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelPosition) is [Outside](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AxisElementPosition.html#Syncfusion_UI_Xaml_Charts_AxisElementPosition_Outside).
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart>
-. . .
-<chart:SfCartesianChart.PrimaryAxis>
-    <chart:CategoryAxis LabelPosition="Inside"/>
-</chart:SfCartesianChart.PrimaryAxis>
-
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-. . .
-chart.PrimaryAxis = new CategoryAxis()
-{
-    LabelPosition = AxisElementPosition.Inside
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Axis label position in WinUI Chart](Axis_images/WinUI_Chart_Axis_label_inside_position.png)
+Axis labels are used to show the units, measures, or category value of the axis to visualize the data user friendly. It will be generated based on the range and the values binded to the [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_XBindingPath) or [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.XyDataSeries.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties of series.
 
 ## Rotation Angle
 
-The [LabelRotationAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelRotationAngle) property is used to define the angle for the label content.
+The [LabelRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelRotation) property is used to define the angle for the label content.
 
 {% tabs %}
 
@@ -54,9 +21,9 @@ The [LabelRotationAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
-    <chart:CategoryAxis LabelRotationAngle="90"/>
-</chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
+    <chart:CategoryAxis LabelRotation="90"/>
+</chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>
 
@@ -66,66 +33,17 @@ The [LabelRotationAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new CategoryAxis()
+CategoryAxis primaryAxis = new CategoryAxis()
 {
-    LabelRotationAngle = 90
+    LabelRotation = 90
 };
+chart.XAxes.Add(primaryAxis);
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Axis label rotation angle in WinUI Chart](Axis_images/WinUI_Chart_Axis_label_rotation.png)
-
-## Custom Axis Labels
-
-Chart axis allows user to define the own axis labels. [Content](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Content) and [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Position) property of [ChartAxisLabel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html) used to defines the label for axis using the [CustomLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_CustomLabels) property as in the below code sample.
-
-N> Also directly bind the collection of labels to the [LabelSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelSource) property for defining custom labels.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart>
-. . .
-<chart:SfCartesianChart.PrimaryAxis>
-    <chart:CategoryAxis>
-        <chart:CategoryAxis.CustomLabels>
-            <chart:ChartAxisLabel Position="0" Content="0-1"/>
-            <chart:ChartAxisLabel Position="1" Content="1-2"/>
-            <chart:ChartAxisLabel Position="2" Content="2-3"/>
-            <chart:ChartAxisLabel Position="3" Content="3-4"/>
-            <chart:ChartAxisLabel Position="4" Content="4-5"/>
-            <chart:ChartAxisLabel Position="5" Content="5-5"/>
-        </chart:CategoryAxis.CustomLabels>
-    </chart:CategoryAxis>
-</chart:SfCartesianChart.PrimaryAxis>
-
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart();
-
-CategoryAxis axis = new CategoryAxis();
-
-axis.CustomLabels.Add(new ChartAxisLabel() { Position = 0, Content = "0-1" });
-axis.CustomLabels.Add(new ChartAxisLabel() { Position = 1, Content = "1-2" });
-axis.CustomLabels.Add(new ChartAxisLabel() { Position = 2, Content = "2-3" });
-axis.CustomLabels.Add(new ChartAxisLabel() { Position = 3, Content = "3-4" });
-axis.CustomLabels.Add(new ChartAxisLabel() { Position = 4, Content = "4-5" });
-axis.CustomLabels.Add(new ChartAxisLabel() { Position = 5, Content = "5-5" });
-
-chart.PrimaryAxis = axis;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Axis label customization support in WinUI](Axis_images/WinUI_Chart_Axis_Custom_labels.png)
 
 ## Format
 
@@ -139,9 +57,13 @@ Axis labels can be formatted by predefined formatting types by using the [LabelF
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
-    <chart:DateTimeAxis LabelFormat="MMM-yy"/>
-</chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
+    <chart:DateTimeAxis>
+        <chart:DateTimeAxis.LabelStyle>
+            <chart:LabelStyle LabelFormat="MMM-yy" />
+        </chart:DateTimeAxis.LabelStyle>
+    </chart:DateTimeAxis>
+</chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>
 
@@ -151,10 +73,11 @@ Axis labels can be formatted by predefined formatting types by using the [LabelF
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new DateTimeAxis()
+DateTimeAxis primaryAxis = new DateTimeAxis()
 {
-    LabelFormat = "MMM-yy",
+    LabelStyle = new LabelStyle() { LabelFormat= "MMM-yy" }
 };
+chart.XAxes.Add(primaryAxis);
 
 {% endhighlight %}
 
@@ -168,9 +91,13 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.SecondaryAxis>
-    <chart:NumericalAxis LabelFormat="0.00"/>
-</chart:SfCartesianChart.SecondaryAxis>
+<chart:SfCartesianChart.YAxes>
+    <chart:NumericalAxis >
+        <chart:NumericalAxis.LabelStyle>
+            <chart:LabelStyle LabelFormat="0.00" />
+                </chart:NumericalAxis.LabelStyle>
+        </chart:NumericalAxis>
+</chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
 
@@ -180,10 +107,11 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.SecondaryAxis = new NumericalAxis()
+NumericalAxis secondaryAxis = new NumericalAxis()
 {
-    LabelFormat = "0.00"
+    LabelStyle = new LabelStyle() { LabelFormat= "0.00" }
 };
+chart.YAxes.Add(secondaryAxis);
 
 {% endhighlight %}
 
@@ -203,15 +131,21 @@ The appearance of the axis labels can be customized by using the [LabelTemplate]
 . . .
 <chart:SfCartesianChart.Resources>
     <DataTemplate x:Key="labelTemplate">
-        <Border BorderBrush="Blue" CornerRadius="5" BorderThickness="1">
-            <TextBlock Text="{Binding Content}" FontSize="12" FontStyle="Italic" FontWeight="Bold" Margin="3"/>
+        <Border BorderBrush="Blue"
+				CornerRadius="5"
+				BorderThickness="1">
+            <TextBlock Text="{Binding Content}"
+					   FontSize="12"
+					   FontStyle="Italic"
+					   FontWeight="Bold" 
+					   Margin="3"/>
         </Border>
     </DataTemplate>
 </chart:SfCartesianChart.Resources>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
     <chart:CategoryAxis LabelTemplate="{StaticResource labelTemplate}"/>
-</chart:SfCartesianChart.PrimaryAxis>
+</chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>
 
@@ -221,10 +155,11 @@ The appearance of the axis labels can be customized by using the [LabelTemplate]
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new CategoryAxis()
+CategoryAxis primaryAxis = new CategoryAxis()
 {
     LabelTemplate = chart.Resources["labelTemplate"] as DataTemplate
 };
+chart.XAxes.Add(primaryAxis);
 
 {% endhighlight %}
 
@@ -242,9 +177,10 @@ The [LabelExtent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
-    <chart:CategoryAxis Header="Demand" LabelExtent="50"/>
-</chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
+    <chart:CategoryAxis Header="Demand"
+						LabelExtent="50"/>
+</chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>
 
@@ -253,11 +189,12 @@ The [LabelExtent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-chart.PrimaryAxis = new NumericalAxis()
+NumericalAxis primaryAxis = new NumericalAxis()
 {
     Header = "Demand",
     LabelExtent = 50
 };
+chart.XAxes.Add(primaryAxis);
 
 {% endhighlight %}
 
@@ -267,7 +204,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ## Smart Axis Labels
 
-When there are more number of axis labels, they may overlap with each other. Chart axis provides support to handle the overlapping axis labels using the [LabelIntersectAction](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction) property. By default the [LabelIntersectAction](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelIntersectAction) value is [Hide](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AxisLabelIntersectAction.html#Syncfusion_UI_Xaml_Charts_AxisLabelIntersectAction_Hide).
+When there are more number of axis labels, they may overlap with each other. Chart axis provides support to handle the overlapping axis labels using the [LabelsIntersectAction](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelsIntersectAction) property. By default the [LabelsIntersectAction](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelsIntersectAction) value is [Hide](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction.html#Syncfusion_UI_Xaml_Charts_AxisLabelsIntersectAction_Hide).
 
 | Actions | Description |
 |--|--|
@@ -290,7 +227,7 @@ When there are more number of axis labels, they may overlap with each other. Cha
 
 ## Edge Labels Drawing Mode
 
-Chart axis provides support to customize the rendering position of the edge labels using the [EdgeLabelsDrawingMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode) property. [EdgeLabelsDrawingMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode) property default value is `Center`.
+Chart axis provides support to customize the rendering position of the edge labels using the [EdgeLabelsDrawingMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode) property. [EdgeLabelsDrawingMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode) property default value is [Center](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode.html#Syncfusion_UI_Xaml_Charts_EdgeLabelsDrawingMode_Center).
 
 | Action | Description |
 |--|--|
@@ -305,9 +242,9 @@ Chart axis provides support to customize the rendering position of the edge labe
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
     <chart:DateTimeAxis EdgeLabelsDrawingMode="Shift"/>
-</chart:SfCartesianChart.PrimaryAxis>
+</chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>
 
@@ -317,10 +254,11 @@ Chart axis provides support to customize the rendering position of the edge labe
 
 SfCartesianChart chart = new SfCartesianChart();
 . . . 
-chart.PrimaryAxis = new DateTimeAxis()
+DateTimeAxis primaryAxis = new DateTimeAxis()
 {
     EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift
 };
+chart.XAxes.Add(primaryAxis);
 
 {% endhighlight %}
 
@@ -330,11 +268,11 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 ## Edge Labels Visibility
  
-The visibility of the edge labels of the axis can be controlled using the [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) property. The default value of [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) is `Default`, which displays the edge label based on auto interval calculations.
+The visibility of the edge labels of the axis can be controlled using the [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_EdgeLabelsVisibilityMode) property. The default value of [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_EdgeLabelsVisibilityMode) is [Default](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode.html#Syncfusion_UI_Xaml_Charts_EdgeLabelsVisibilityMode_Default), which displays the edge label based on auto interval calculations.
 
 **Always Visible**
 
-[AlwaysVisible](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode.html#Syncfusion_UI_Xaml_Charts_EdgeLabelsVisibilityMode_AlwaysVisible) option in [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) is used to view the edge labels even in chart area zoomed state.
+[AlwaysVisible](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode.html#Syncfusion_UI_Xaml_Charts_EdgeLabelsVisibilityMode_AlwaysVisible) option in [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_EdgeLabelsVisibilityMode) is used to view the edge labels even in chart area zoomed state.
 
 {% tabs %}
 
@@ -342,9 +280,9 @@ The visibility of the edge labels of the axis can be controlled using the [EdgeL
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
     <chart:NumericalAxis EdgeLabelsVisibilityMode="AlwaysVisible"/>
-</chart:SfCartesianChart.PrimaryAxis>
+</chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>
 
@@ -354,10 +292,11 @@ The visibility of the edge labels of the axis can be controlled using the [EdgeL
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new NumericalAxis()
+NumericalAxis primaryAxis = new NumericalAxis()
 {
     EdgeLabelsVisibilityMode = EdgeLabelsVisibilityMode.AlwaysVisible
 };
+chart.XAxes.Add(primaryAxis);
 
 {% endhighlight %}
 
@@ -373,9 +312,9 @@ chart.PrimaryAxis = new NumericalAxis()
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.PrimaryAxis>
+<chart:SfCartesianChart.XAxes>
     <chart:NumericalAxis EdgeLabelsVisibilityMode="Visible"/>
-</chart:SfCartesianChart.PrimaryAxis>
+</chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>
 
@@ -385,10 +324,11 @@ chart.PrimaryAxis = new NumericalAxis()
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-chart.PrimaryAxis = new NumericalAxis()
+NumericalAxis primaryAxis = new NumericalAxis()
 {
     EdgeLabelsVisibilityMode = EdgeLabelsVisibilityMode.Visible
 };
+chart.XAxes.Add(primaryAxis);
 
 {% endhighlight %}
 

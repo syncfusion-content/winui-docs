@@ -13,11 +13,12 @@ This section explains the steps required to add the [TreeView](https://help.sync
 
 ## Creating an application with WinUI TreeView
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Install the [Syncfusion.TreeView.WinUI](https://www.nuget.org/packages/Syncfusion.TreeView.WinUI) NuGet packages.
 3. Import the control namespace `Syncfusion.UI.Xaml.TreeView` in XAML or C# code.
 4. Initialize the TreeView control.
 
+{% capture codesnippet1 %}
 {% tabs %} 
 {% highlight xaml %} 
 
@@ -57,6 +58,8 @@ public sealed partial class GettingStartedPage : Page
 
 {% endhighlight %}
 {% endtabs %} 
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Bind to a hierarchical data source - Bound Mode
 

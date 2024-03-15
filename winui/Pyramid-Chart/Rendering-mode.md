@@ -20,11 +20,10 @@ The [Surface](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Cha
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart"
-                Palette="BlueChrome"
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category" 
-                YBindingPath="Value" 
-                Mode="Surface">
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="Category" 
+                      YBindingPath="Value" 
+                      Mode="Surface">
 </chart:SfPyramidChart>
  
 {% endhighlight %}
@@ -32,7 +31,6 @@ The [Surface](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Cha
 {% highlight C# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-chart.Palette = ChartColorPalette.BlueChrome;
 chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
@@ -55,11 +53,10 @@ The [Linear](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart"
-                Palette="BlueChrome"
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category" 
-                YBindingPath="Value" 
-                Mode="ValueIsWidth">
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="Category" 
+                      YBindingPath="Value" 
+                      Mode="Linear">
 </chart:SfPyramidChart>
  
 {% endhighlight %}
@@ -67,7 +64,6 @@ The [Linear](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 {% highlight C# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-chart.Palette = ChartColorPalette.BlueChrome;
 chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";

@@ -13,7 +13,7 @@ This section explains how to add the [AutoComplete](https://help.syncfusion.com/
 
 ## Creating an application with WinUI AutoComplete
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Download and refer to the following NuGet package in the project.
 
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
@@ -21,6 +21,7 @@ This section explains how to add the [AutoComplete](https://help.syncfusion.com/
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 4. Initialize the `SfAutoComplete` control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -62,6 +63,8 @@ namespace GettingStarted
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![WinUI AutoComplete populating items using data binding](GettingStarted_images/winui-autocomplete-control.png)
 

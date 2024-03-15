@@ -1116,6 +1116,7 @@ You can calculate the summary values based on custom logic using [GridSummaryCol
  
 In the below code snippet, the Standard Deviation is calculated for quantity of products.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 public class CustomAggregate : ISummaryAggregate
@@ -1167,9 +1168,12 @@ public static class LinqExtensions
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3.Assign the custom aggregate to `GridSummaryColumn.CustomAggregate` property and set the [SummaryType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryColumn.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryColumn_SummaryType) as [Custom](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.SummaryType.html#Syncfusion_UI_Xaml_Data_SummaryType_Custom). [GridSummaryColumn.Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryColumn.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryColumn_Format) property is defined based on property name in custom aggregate `StdDev`.
+3. Assign the custom aggregate to `GridSummaryColumn.CustomAggregate` property and set the [SummaryType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryColumn.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryColumn_SummaryType) as [Custom](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.SummaryType.html#Syncfusion_UI_Xaml_Data_SummaryType_Custom). [GridSummaryColumn.Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryColumn.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryColumn_Format) property is defined based on property name in custom aggregate `StdDev`.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
@@ -1217,6 +1221,8 @@ this.sfDataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 });
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 <img src="Summaries_images/winui-datagrid-custom-aggregate-summaries.png" alt="Custom Aggregate Summaries in WinUI SfDataGrid" width="100%" Height="Auto"/>
 

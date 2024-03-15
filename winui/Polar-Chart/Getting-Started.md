@@ -18,6 +18,7 @@ This section explains how to populate the [WinUI Polar Chart](https://www.syncfu
 3. Import the control namespace `Syncfusion.UI.Xaml.Charts`  in XAML or C# to initialize the control.
 4. Initialize [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) control.
 
+{% capture codesnippet1 %}
 {% tabs %} 
 
 {% highlight xaml %}
@@ -53,6 +54,8 @@ public sealed partial class MainWindow : Window
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Initialize View Model
 
@@ -170,9 +173,9 @@ chart.SecondaryAxis = secondaryAxis;
 
 ## Populate Chart with Data
 
-Adding [PolarAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarAreaSeries.html) to the polar chart [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_Series) collection and binding `Data` to the series [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ItemsSource) property from its `DataContext` for creating polar chart.
+Adding [PolarAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarAreaSeries.html) to the polar chart [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_Series) collection and binding `Data` to the series [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_ItemsSource) property from its `DataContext` for creating polar chart.
 
-N> To plot the series, the [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath) and [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase.html#Syncfusion_UI_Xaml_Charts_PolarRadarSeriesBase_YBindingPath) properties must be configured so that the chart may get values from the respective properties in the data model.
+N> To plot the series, the [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_XBindingPath) and [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase.html#Syncfusion_UI_Xaml_Charts_PolarRadarSeriesBase_YBindingPath) properties must be configured so that the chart may get values from the respective properties in the data model.
 
 {% tabs %}   
 
@@ -187,8 +190,8 @@ N> To plot the series, the [XBindingPath](https://help.syncfusion.com/cr/winui/S
     </chart:SfPolarChart.SecondaryAxis>
     <chart:SfPolarChart.Series>
         <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                         XBindingPath="Direction" 
-                         YBindingPath="Tree"/>
+                               XBindingPath="Direction" 
+                               YBindingPath="Tree"/>
     </chart:SfPolarChart.Series>
     ...
 </chart:SfPolarChart>
@@ -249,7 +252,7 @@ chart.Header = "Polar Chart";
 
 ## Enable Data Labels
 
-The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataMarkerSeries.html#Syncfusion_UI_Xaml_Charts_DataMarkerSeries_ShowDataLabels) property of series can be used to enable the data labels to improve the readability of the chart. The label visibility is set to `False` by default.
+The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_ShowDataLabels) property of series can be used to enable the data labels to improve the readability of the chart. The label visibility is set to `False` by default.
 
 {% tabs %} 
 
@@ -258,9 +261,9 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 <chart:SfPolarChart>
     ...
     <chart:PolarAreaSeries ShowDataLabels="True"
-                        ItemsSource="{Binding PlantDetails}" 
-                        XBindingPath="Direction" 
-                        YBindingPath="Tree">
+                           ItemsSource="{Binding PlantDetails}" 
+                           XBindingPath="Direction" 
+                           YBindingPath="Tree">
     </chart:PolarAreaSeries>
 </chart:SfPolarChart>
 
@@ -306,7 +309,7 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %}  
 
-N> Additionally, set label for each series using the [Label](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Label) property of chart series, which will be displayed in corresponding legend.
+N> Additionally, set label for each series using the [Label](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_Label) property of chart series, which will be displayed in corresponding legend.
 
 {% tabs %} 
 
@@ -315,9 +318,9 @@ N> Additionally, set label for each series using the [Label](https://help.syncfu
 <chart:SfPolarChart>
     . . .
     <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                        XBindingPath="Direction" 
-                        YBindingPath="Tree"
-                        Label="Tree"/>
+                           XBindingPath="Direction" 
+                           YBindingPath="Tree"
+                           Label="Tree"/>
     ...
 </chart:SfPolarChart>
 
@@ -359,13 +362,18 @@ The following code example gives you the complete code of above configurations.
     </chart:SfPolarChart.Legend>
     <chart:SfPolarChart.Series>
         <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                         XBindingPath="Direction" YBindingPath="Tree"
-                         Label="Tree" ShowDataLabels="True"
-                         LegendIcon="Pentagon">
-                <chart:PolarAreaSeries.DataLabelSettings>
-                    <chart:PolarDataLabelSettings Foreground="White" FontSize="12" 
-                                            FontFamily="Calibri" BorderBrush="White" 
-                                            BorderThickness="1" Margin="1"/>
+                               XBindingPath="Direction"
+							   YBindingPath="Tree"
+                               Label="Tree"
+							   ShowDataLabels="True"
+                               LegendIcon="Pentagon">
+            <chart:PolarAreaSeries.DataLabelSettings>
+                <chart:PolarDataLabelSettings Foreground="White"
+											  FontSize="12" 
+                                              FontFamily="Calibri"
+											  BorderBrush="White" 
+                                              BorderThickness="1"
+											  Margin="1"/>
                 </chart:PolarAreaSeries.DataLabelSettings>
         </chart:PolarAreaSeries>
     </chart:SfPolarChart.Series>

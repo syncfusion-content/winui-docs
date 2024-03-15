@@ -29,6 +29,7 @@ To add `Date Picker` control manually in XAML , follow the below steps.
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 4. Initialize the `SfDatePicker` control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8 12" %}
 
@@ -49,17 +50,20 @@ To add `Date Picker` control manually in XAML , follow the below steps.
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding control manually in C#
 
 To add the `Date Picker` control manually in C#, follow the below steps.
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-uwp).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Download and refer the following NuGet in the project.
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
 3. Import the `Date Picker` namespace `Syncfusion.UI.Xaml.Editors` in C# page.
 4. Initialize the `Date Picker` control.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="1 14 15" %}
 
@@ -84,6 +88,8 @@ namespace GettingStarted
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![winui-datepicker-control](Images/getting-started/winui-datepicker-control.png)
 

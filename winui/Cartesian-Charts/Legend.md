@@ -9,7 +9,7 @@ documentation: ug
 
 # Legend in WinUI Chart (SfCartesianChart)
 
-The legend contains a list of series data points in the chart. The information provided in each legend item helps you to identify the corresponding series in the chart. This allows us to specify the [Label](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Label) for each series which is to be displayed in legend label.
+The legend contains a list of series data points in the chart. The information provided in each legend item helps you to identify the corresponding series in the chart. This allows us to specify the [Label](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_Label) for each series which is to be displayed in legend label.
 
 {% tabs %}
 
@@ -21,10 +21,10 @@ The legend contains a list of series data points in the chart. The information p
         <chart:ChartLegend/>
     </chart:SfCartesianChart.Legend>
 
-    <chart:SplineSeries  Label="Spline"
-                         ItemsSource="{Binding Data}" 
-                         XBindingPath="Year"
-                         YBindingPath="India">
+    <chart:SplineSeries Label="Spline"
+                        ItemsSource="{Binding Data}" 
+                        XBindingPath="Year"
+                        YBindingPath="India">
     </chart:SplineSeries>
 
 </chart:SfCartesianChart>
@@ -66,9 +66,9 @@ Cartesian chart provides support to add any `UIElement` as a title for legend. [
         <chart:ChartLegend>
             <chart:ChartLegend.Header>
                 <TextBox Text="Foods" 
-                HorizontalAlignment="Center"
-                FontWeight="Bold"
-                Foreground="Blue"/>
+                         HorizontalAlignment="Center"
+                         FontWeight="Bold"
+                         Foreground="Blue"/>
             </chart:ChartLegend.Header>
         </chart:ChartLegend>
     </chart:SfCartesianChart.Legend>
@@ -103,7 +103,7 @@ this.Content = chart;
 
 ## Icon
 
-Legend icon represents a symbol associated with the each legend item. [LegendIcon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_LegendIcon) property of series is used to set the icon type for legend item. By default, the legend icon is [SeriesType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegendIcon.html#Syncfusion_UI_Xaml_Charts_ChartLegendIcon_SeriesType).
+Legend icon represents a symbol associated with the each legend item. [LegendIcon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_LegendIcon) property of series is used to set the icon type for legend item. By default, the legend icon is [SeriesType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegendIcon.html#Syncfusion_UI_Xaml_Charts_ChartLegendIcon_SeriesType).
 
 {% tabs %}
 
@@ -159,7 +159,8 @@ The appearance of the legend icon can be customized using the below properties.
 {% highlight xaml %}
 
 <chart:SfCartesianChart.Legend>
-    <chart:ChartLegend IconWidth="15" IconHeight="15" 
+    <chart:ChartLegend IconWidth="15" 
+                       IconHeight="15" 
                        IconVisibility="Visible">
     </chart:ChartLegend>
 </chart:SfCartesianChart.Legend>
@@ -183,7 +184,7 @@ chart.Legend = new ChartLegend()
 
 ### Custom Icon
 
-Cartesian chart provides support to add custom icon for the legend using [LegendIconTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_LegendIconTemplate) property of series as in below example.
+Cartesian chart provides support to add custom icon for the legend using [LegendIconTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_LegendIconTemplate) property of series as in below example.
 
 {% tabs %}
 
@@ -192,8 +193,11 @@ Cartesian chart provides support to add custom icon for the legend using [Legend
 <chart:SfCartesianChart >
      <chart:SfCartesianChart.Resources>
         <DataTemplate x:Key="iconTemplate">
-            <Ellipse Height="10" Width="10" Fill="White" 
-                     Stroke="#4a4a4a" StrokeThickness="2"/>
+            <Ellipse Height="10" 
+                     Width="10" 
+                     Fill="White" 
+                     Stroke="#4a4a4a" 
+                     StrokeThickness="2"/>
         </DataTemplate>
     </chart:SfCartesianChart.Resources>
     . . .   
@@ -202,7 +206,11 @@ Cartesian chart provides support to add custom icon for the legend using [Legend
     </chart:SfCartesianChart.Legend>
     . . .
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries  ItemsSource="{Binding Data}" Label="Gold" LegendIconTemplate="{StaticResource iconTemplate}" XBindingPath="Year" YBindingPath="India"/>
+        <chart:ColumnSeries  ItemsSource="{Binding Data}" 
+                             Label="Gold" 
+                             LegendIconTemplate="{StaticResource iconTemplate}" 
+                             XBindingPath="Year" 
+                             YBindingPath="India"/>
     </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
@@ -231,9 +239,9 @@ this.Content = chart;
 
 ![Custom legend icon in WinUI Chart](Legend_images/WinUI_chart_custom_legend_icon.png)
 
-## Icon Visibility
+## Legend Visibility
 
-The [VisibilityOnLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_VisibilityOnLegend) property of series is used to enable/disable the visibility of legend icon as shown in below example.
+The [IsVisibleOnLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_IsVisibleOnLegend) property of series is used to enable/disable the visibility of legend as shown in below example.
 
 {% tabs %}
 
@@ -246,11 +254,17 @@ The [VisibilityOnLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
     </chart:SfCartesianChart.Legend>
 
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries  ItemsSource="{Binding Data}" Label="Gold" VisibilityOnLegend="Visible"
-        XBindingPath="Year" YBindingPath="India"/>
+        <chart:ColumnSeries ItemsSource="{Binding Data}" 
+                            Label="Gold" 
+                            IsVisibleOnLegend="True"
+                            XBindingPath="Year" 
+                            YBindingPath="India"/>
 
-        <chart:SplineSeries  ItemsSource="{Binding Data}" Label="Silver" VisibilityOnLegend="Collapsed"
-        XBindingPath="Year" YBindingPath="America"/>
+        <chart:SplineSeries ItemsSource="{Binding Data}" 
+                            Label="Silver" 
+                            IsVisibleOnLegend="False"
+                            XBindingPath="Year" 
+                            YBindingPath="America"/>
     </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
@@ -268,7 +282,7 @@ ColumnSeries columnSeries = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Year",
     YBindingPath = "India",
-    VisibilityOnLegend = Visibility.Visible
+    IsVisibleOnLegend = true
 };
 SplineSeries splineSeries = new SplineSeries()
 {
@@ -276,7 +290,7 @@ SplineSeries splineSeries = new SplineSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Year",
     YBindingPath = "America",
-    VisibilityOnLegend = Visibility.Collapsed
+    IsVisibleOnLegend = false
 };
 
 chart.Series.Add(splineSeries);
@@ -291,7 +305,7 @@ this.Content = chart;
 
 ## Item spacing
 
-[ItemMargin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ItemMargin) property of the [ChartLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) is used to provide spacing between each legend items.
+[ItemMargin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ItemMargin) property of the [ChartLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html) is used to provide spacing between each legend items.
 
 {% tabs %}
 
@@ -378,16 +392,18 @@ By clicking on disabled legend item, we can view the associated `series`,
 
 ![ToggleSeriesVisibility support for legend in WinUI Chart](Legend_images/WinUI_chart_legend_toggleSeriesVisibility1.png)
 
-## Position
+## Placement
 
-The legends can be placed either inside or outside of the chart area (plotting area). By default, it will be displayed outside and positioned at top (using [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Position)) of the chart area.
+Legends can be docked left, right, and top or bottom around the chart area using [Placement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Placement) property. By default, the chart legend is docked at the top of the chart as mentioned earlier.
+
+To display the legend at the bottom, set the [Placement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Placement) as [Bottom](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LegendPlacement.html#Syncfusion_UI_Xaml_Charts_LegendPlacement_Bottom) as in below code snippet.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart.Legend>
-    <chart:ChartLegend Position="Inside"/>
+    <chart:ChartLegend Placement="Bottom"/>
 </chart:SfCartesianChart.Legend>
 
 {% endhighlight %}
@@ -396,120 +412,33 @@ The legends can be placed either inside or outside of the chart area (plotting a
 
 chart.Legend = new ChartLegend()
 {
-    Position = LegendPosition.Inside
+   Placement = LegendPlacement.Bottom
 };
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Positioning support for legend in WinUI Chart](Legend_images/WinUI_chart_legend_position.png)
-
-### Docking the Legend Position
-
-By using the [DockPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) property, legends can be docked to the left, right, and top or bottom of the chart area. By default, the chart legend is docked at the top of the chart as mentioned earlier.
-
-To display the legend at the bottom, you can set the [DockPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) as `Bottom` as shown in the following code sample.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart.Legend>
-    <chart:ChartLegend DockPosition="Bottom"/>
-</chart:SfCartesianChart.Legend>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-chart.Legend = new ChartLegend()
-{
-   DockPosition = ChartDock.Bottom
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Positioning the legend at right in WinUI Chart](Legend_images/WinUI_chart_legend_dockPosition.png)
-
-### Floating Legends
-
-To position the legend at any arbitrary location within the chart, you need to set [DockPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) as `Floating` and provide its relative position by using the [OffsetX](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_OffsetX) and [OffsetY](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_OffsetY) properties.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart.Legend>
-    <chart:ChartLegend DockPosition="Floating" Orientation="Vertical" OffsetX="30" OffsetY="45" ItemMargin="3"/>
-</chart:SfCartesianChart.Legend>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-chart.Legend = new ChartLegend()
-{
-    DockPosition = ChartDock.Floating,
-    Orientation = ChartOrientation.Vertical,
-    OffsetX = 30,
-    OffsetY = 45,
-    ItemMargin = new Thickness(3)
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Floating legend support in WinUI Chart](Legend_images/WinUI_chart_legend_floating.png)
-
-## Orientation
-
-Orientation of the legend items can be aligned vertically or horizontally by setting the [Orientation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Orientation) property of legend. By default, the value of [Orientation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Orientation) property is [Horizontal](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartOrientation.html#Syncfusion_UI_Xaml_Charts_ChartOrientation_Horizontal).
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart.Legend>
-    <chart:ChartLegend Orientation="Vertical"/>
-</chart:SfCartesianChart.Legend>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-chart.Legend = new ChartLegend()
-{
-    Orientation = ChartOrientation.Vertical
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Legend orientation support in WinUI Chart](Legend_images/WinUI_chart_legend_orientation.png)
+![Positioning the legend at right in WinUI Chart](Legend_images/WinUI_chart_legend_placement.png)
 
 ## Background customization 
 
 The legend background appearance can be customized by using the following properties:
 
-`BorderThickness` - used to change the stroke width of the legend.
-`BorderBrush` - used to change the stroke color of the legend.
-`Background` - used to change the background color of the legend.
-`Opacity` - used to control the transparency of the legend icon shape.
-`CornerRadius` - used to change the corner radius of the legend.
+[`BorderThickness`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_BorderThickness) - used to change the stroke width of the legend.
+[`BorderBrush`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_BorderBrush) - used to change the stroke color of the legend.
+[`Background`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Background) - used to change the background color of the legend.
+[`CornerRadius`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CornerRadius) - used to change the corner radius of the legend.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart.Legend>
-    <chart:ChartLegend Background="LightGray" BorderBrush="Black" 
-                       BorderThickness="1" CornerRadius="5" 
-                       Opacity="0.9" >
+    <chart:ChartLegend Background="LightGray" 
+                       BorderBrush="Black" 
+                       BorderThickness="1" 
+                       CornerRadius="5" >
     </chart:ChartLegend>
 </chart:SfCartesianChart.Legend>
 
@@ -522,8 +451,7 @@ chart.Legend = new ChartLegend()
     Background = new SolidColorBrush(Colors.LightGray),
     BorderBrush = new SolidColorBrush(Colors.Black),
     BorderThickness = new Thickness(1),
-    Opacity = 0.9,
-    CornerRadius = CornerRadiusHelper.FromUniformRadius(5)
+    CornerRadius = new CornerRadius(5)
 };
 
 {% endhighlight %}
@@ -532,7 +460,7 @@ chart.Legend = new ChartLegend()
 
 ## Template
 
-Customize each legend item by using the `ItemTemplate` property in [ChartLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend), as shown in the following code sample.
+Customize each legend item by using the [`ItemTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ItemTemplate) property in [`ChartLegend`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html), as shown in the following code sample.
 
 {% tabs %}
 
@@ -542,11 +470,16 @@ Customize each legend item by using the `ItemTemplate` property in [ChartLegend]
     <chart:SfCartesianChart.Resources>
         <DataTemplate x:Key="labelTemplate">
             <StackPanel Margin="10" Orientation="Vertical">
-                <Ellipse Height="15" Width="15" Fill="{Binding Interior}" 
-                 Stroke="#4a4a4a" StrokeThickness="2"/>
-                <TextBlock HorizontalAlignment="Center" FontSize="12"
+                <Ellipse Height="15" 
+                         Width="15" 
+                         Fill="{Binding Interior}" 
+                         Stroke="#4a4a4a" 
+                         StrokeThickness="2"/>
+                <TextBlock HorizontalAlignment="Center" 
+                           FontSize="12"
                            Foreground="Black" 
-                           FontWeight="SemiBold" Text="{Binding Label}"/>
+                           FontWeight="SemiBold" 
+                           Text="{Binding Label}"/>
             </StackPanel>
         </DataTemplate>
     </chart:SfCartesianChart.Resources>

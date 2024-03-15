@@ -5,17 +5,18 @@ description: Learn here all about how to localize and customize formats in Calen
 platform: WinUI
 control: SfCalendar
 documentation: ug
+
 ---
 
 # Localize and change format in WinUI Calendar (SfCalendar)
 
 This section describes how to localize [Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control using [`CalendarIdentifier`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_CalendarIdentifier) and `Language` properties and to change the display formats.
 
-## Types of Calendar
+## Types of calendar
 
-The `Calendar` control supports different type of calendars such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using [CalendarIdentifier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_CalendarIdentifier) property. The default value of `CalendarIdentifier` property is **GregorianCalendar**.
+The `Calendar` control supports different type of calendars such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using the [CalendarIdentifier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_CalendarIdentifier) property. The default value of `CalendarIdentifier` property is **GregorianCalendar**.
 
-You can select the required `CalendarIdentifier` value from below types.
+You can select the required `CalendarIdentifier` value from the following types.
 
  * JulianCalendar
  * GregorianCalendar
@@ -29,9 +30,9 @@ You can select the required `CalendarIdentifier` value from below types.
 
 N> Japanese and Lunar type calendars are not supported in `Calendar` control.
 
-N> When `CalendarIdentifier` and `FlowDirection` properties are set, `FlowDirection` property is given higher precedence.
+N> When both the `CalendarIdentifier` and `FlowDirection` properties are set, the `FlowDirection` property is given higher precedence.
 
-N> `Calendar` control updates the flow direction visually based on the `CalendarIdentifier` property value.
+N> The `Calendar` control updates the flow direction visually based on the `CalendarIdentifier` property value.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
@@ -51,7 +52,7 @@ sfCalendar.CalendarIdentifier = "HebrewCalendar";
 
 ![hebrew-calendar-in-winui-calendar](Images/localization-and-formatting/hebrew-calendar-in-winui-calendar.png)
  
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Formatting)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Formatting).
 
 ## Change the language
 
@@ -75,7 +76,7 @@ sfCalendar.Language = "fr-FR";
 
 ![french-calendar-in-winui-calendar](Images/localization-and-formatting/french-calendar-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Formatting)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Formatting).
 
 ## First day of week
 
@@ -99,13 +100,13 @@ sfCalendar.FirstDayOfWeek = FirstDayOfWeek.Monday;
 
 ![change-first-day-of-week-in-winui-calendar](Images/localization-and-formatting/change-first-day-of-week-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Selection)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Selection).
 
 ## Change flow direction
 
 You can change the flow direction of the `Calendar` layout from right to left by setting the `FlowDirection` property value as **RightToLeft**. The default value of `FlowDirection` property is **LeftToRight**.
 
-N> When `CalendarIdentifier` and `FlowDirection` properties are set, FlowDirection property is given higher precedence.
+N> When both the `CalendarIdentifier` and `FlowDirection` properties are set, the FlowDirection property is given higher precedence.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
@@ -125,13 +126,13 @@ sfCalendar.FlowDirection = FlowDirection.RightToLeft;
 
 ![change-flow-direction-in-winui-calendar](Images/localization-and-formatting/change-flow-direction-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Formatting)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Formatting).
 
 ## Change date display format
 
-You can use different date formats such as abbreviated or full name for a day, month, week names or header name of month and year by using the [DayFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_DayFormat), [MonthFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MonthFormat), [DayOfWeekFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_DayOfWeekFormat) and [MonthHeaderFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MonthHeaderFormat) properties.
+You can use different date formats such as an abbreviated or full names for a day, month, week names or header name of month and year by using the [DayFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_DayFormat), [MonthFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MonthFormat), [DayOfWeekFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_DayOfWeekFormat), and [MonthHeaderFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MonthHeaderFormat) properties.
 
-N> Refer [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.datetimeformatting.datetimeformatter?view=winrt-19041) page to get more date formatting.
+N> Refer to this [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.datetimeformatting.datetimeformatter?view=winrt-19041) page to get more date formatting.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5" %}
@@ -157,7 +158,7 @@ sfCalendar.MonthHeaderFormat = "{month.abbreviated} {year.abbreviated}‎";
 
 ![change-date-display-format-in-winui-calendar](Images/localization-and-formatting/change-date-display-format-in-winui-calendar.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Formatting)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Formatting).
 
 ## Number of weeks in a view
 
@@ -181,4 +182,4 @@ sfCalendar.NumberOfWeeksInView = 3;
 
 ![change-number-of-weeks-in-a-view-in-winui-calendar](Images/localization-and-formatting/change-number-of-weeks-in-a-view-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Selection)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Selection).
