@@ -41,7 +41,7 @@ Calculates the width of column based on header and cell contents. So that header
 <code>AutoWithLastColumnFill</code>
 </td>
 <td>
-Applies <code>ColumnWidthMode.Auto</code> width to all the columns except last column which is visible and the remaining width from total width of SfDataGird is set to last column.
+Applies <code>ColumnWidthMode.Auto</code> width to all the columns except last column which is visible and the remaining width from total width of SfDataGrid is set to last column.
 </td>
 </tr>
 <tr>
