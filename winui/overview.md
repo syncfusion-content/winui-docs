@@ -7,7 +7,7 @@ control: Overview
 documentation: ug
 ---
 
-# Overview of WinUI Appplication
+# Overview of WinUI Application
 
 The Syncfusion WinUI Controls are the suite, ever needed to create state of art WinUI applications.
 
