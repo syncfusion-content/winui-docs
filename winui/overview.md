@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion WinUI Controls
-description: Learn here all about appearance support in Syncfusion Essential Studio for WinUI is a state-of-the-art WinUI toolkit for developing Windows apps.
+title: Overview of WinUI | Syncfusion
+description: Learn here all about overview of Syncfusion Essential Studio for WinUI application, it's elements and more details.
 platform: winui
 control: Overview
 documentation: ug
 ---
 
-# Syncfusion WinUI Controls
+# Overview of WinUI Appplication
 
 The Syncfusion WinUI Controls are the suite, ever needed to create state of art WinUI applications.
 
