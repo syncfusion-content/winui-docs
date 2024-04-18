@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of WinUI | Syncfusion
-description: Learn here all about overview of Syncfusion Essential Studio for WinUI application, it's elements and more details.
+description: Learn here all about Winui overview in Syncfusion Essential Studio for WinUI application, it's elements and more details.
 platform: winui
 control: Overview
 documentation: ug
