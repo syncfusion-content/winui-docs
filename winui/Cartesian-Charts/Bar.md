@@ -117,4 +117,3 @@ The [SegmentSpacing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 ![Column segment spacing in WinUI Chart](Chart-Types_images/WinUI_bar_chart_segment_spacing.png)
 
-N> You can also explore our [WinUI Column Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Basic%20Charts/ColumnChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
