@@ -115,5 +115,5 @@ The [SegmentSpacing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 {% endtabs %}
 
-![Column segment spacing in WinUI Chart](Chart-Types_images/WinUI_bar_chart_segment_spacing.png)
+![Bar segment spacing in WinUI Chart](Chart-Types_images/WinUI_bar_chart_segment_spacing.png)
 
