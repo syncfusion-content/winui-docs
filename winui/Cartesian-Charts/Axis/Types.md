@@ -497,7 +497,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Multiple axes support in WinUI Chart](Axis_Images/winui_chart_axis_types_multipleaxis.png)
+![Multiple axes support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_multipleAxis.png)
 
 In the above image, the [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html) is plotted based on additional axes of YAxes collection, and [SplineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SplineSeries.html) is plotted based on axis of the collection’s 0th index.
 
