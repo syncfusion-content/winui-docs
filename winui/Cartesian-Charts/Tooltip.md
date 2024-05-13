@@ -444,7 +444,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Offset support for tooltip in WinUI Chart](Tooltip_images/WinUI_chart_tooltip_offset.png)
+![Offset support for tooltip in WinUI Chart](Tooltip_images/WinUI_chart_tooltip_off_set.png)
 
 ## Duration
 
