@@ -15,48 +15,48 @@ To render a line series in polar chart, create an instance of the [PolarLineSeri
 
 {% highlight xaml %}
 
-<chart:SfPolarChart>
-...
-    <chart:SfPolarChart.Series>
-        <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
-                               XBindingPath="Direction"
-                               YBindingPath="Tree" />
+    <chart:SfPolarChart>
+    ...
+        <chart:SfPolarChart.Series>
+            <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
+                                XBindingPath="Direction"
+                                YBindingPath="Tree" />
 
-        <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
-                               XBindingPath="Direction"
-                               YBindingPath="Weed" />
+            <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
+                                XBindingPath="Direction"
+                                YBindingPath="Weed" />
 
-        <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
-                               XBindingPath="Direction"
-                               YBindingPath="Flower" />
-    </chart:SfPolarChart.Series>
-...
-</chart:SfPolarChart>
+            <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
+                                XBindingPath="Direction"
+                                YBindingPath="Flower" />
+        </chart:SfPolarChart.Series>
+    ...
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
-...
-PolarLineSeries series1 = new PolarLineSeries();
-series1.XBindingPath = "Direction";
-series1.YBindingPath = "Tree";
-series1.ItemsSource = viewModel.PlantDetails;
+    SfPolarChart chart = new SfPolarChart();
+    ...
+    PolarLineSeries series1 = new PolarLineSeries();
+    series1.XBindingPath = "Direction";
+    series1.YBindingPath = "Tree";
+    series1.ItemsSource = viewModel.PlantDetails;
 
-PolarLineSeries series2 = new PolarLineSeries();
-series2.XBindingPath = "Direction";
-series2.YBindingPath = "Weed";
-series2.ItemsSource = viewModel.PlantDetails;
+    PolarLineSeries series2 = new PolarLineSeries();
+    series2.XBindingPath = "Direction";
+    series2.YBindingPath = "Weed";
+    series2.ItemsSource = viewModel.PlantDetails;
 
-PolarLineSeries series3 = new PolarLineSeries();
-series3.XBindingPath = "Direction";
-series3.YBindingPath = "Flower";
-series3.ItemsSource = viewModel.PlantDetails;
-...
-chart.Series.Add(series1);
-chart.Series.Add(series2);
-chart.Series.Add(series3);
+    PolarLineSeries series3 = new PolarLineSeries();
+    series3.XBindingPath = "Direction";
+    series3.YBindingPath = "Flower";
+    series3.ItemsSource = viewModel.PlantDetails;
+    ...
+    chart.Series.Add(series1);
+    chart.Series.Add(series2);
+    chart.Series.Add(series3);
 
 {% endhighlight %}
 
@@ -72,29 +72,29 @@ The [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 
 {% highlight xaml %}
 
-<chart:SfPolarChart GridLineType="Polygon">
-...
-    <chart:SfPolarChart.Series>
-        <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
-                               XBindingPath="Direction"
-                               YBindingPath="Tree" />
-    </chart:SfPolarChart.Series>
-...
-</chart:SfPolarChart>
+    <chart:SfPolarChart GridLineType="Polygon">
+    ...
+        <chart:SfPolarChart.Series>
+            <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
+                                XBindingPath="Direction"
+                                YBindingPath="Tree" />
+        </chart:SfPolarChart.Series>
+    ...
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
-chart.GridLineType= PolarChartGridLineType.Polygon;
-...
-PolarLineSeries series = new PolarLineSeries();
-series.XBindingPath = "Direction";
-series.YBindingPath = "Tree";
-series.ItemsSource = viewModel.PlantDetails;
-...
-chart.Series.Add(series);
+    SfPolarChart chart = new SfPolarChart();
+    chart.GridLineType= PolarChartGridLineType.Polygon;
+    ...
+    PolarLineSeries series = new PolarLineSeries();
+    series.XBindingPath = "Direction";
+    series.YBindingPath = "Tree";
+    series.ItemsSource = viewModel.PlantDetails;
+    ...
+    chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -104,37 +104,37 @@ chart.Series.Add(series);
 
 ## Closing Path
 
-[IsClosed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase.html#Syncfusion_UI_Xaml_Charts_PolarRadarSeriesBase_IsClosed) property is used to render the series with or without closed path. The default value of [IsClosed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase.html#Syncfusion_UI_Xaml_Charts_PolarRadarSeriesBase_IsClosed) is `true`. 
+[IsClosed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarSeries.html#Syncfusion_UI_Xaml_Charts_PolarSeries_IsClosed) property is used to render the series with or without closed path. The default value of [IsClosed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarSeries.html#Syncfusion_UI_Xaml_Charts_PolarSeries_IsClosed) is `true`. 
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfPolarChart GridLineType="Polygon">
-...
-    <chart:SfPolarChart.Series>
-        <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
-                               XBindingPath="Direction"
-                               YBindingPath="Tree" 
-                               IsClosed="False" />
-    </chart:SfPolarChart.Series>
-...
-</chart:SfPolarChart>
+    <chart:SfPolarChart GridLineType="Polygon">
+    ...
+        <chart:SfPolarChart.Series>
+            <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
+                                XBindingPath="Direction"
+                                YBindingPath="Tree" 
+                                IsClosed="False" />
+        </chart:SfPolarChart.Series>
+    ...
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
-chart.GridLineType= PolarChartGridLineType.Polygon;
-...
-PolarLineSeries series = new PolarLineSeries();
-series.XBindingPath = "Direction";
-series.YBindingPath = "Tree";
-series.ItemsSource = viewModel.PlantDetails;
-series.IsClosed = false;
-...
-chart.Series.Add(series);
+    SfPolarChart chart = new SfPolarChart();
+    chart.GridLineType= PolarChartGridLineType.Polygon;
+    ...
+    PolarLineSeries series = new PolarLineSeries();
+    series.XBindingPath = "Direction";
+    series.YBindingPath = "Tree";
+    series.ItemsSource = viewModel.PlantDetails;
+    series.IsClosed = false;
+    ...
+    chart.Series.Add(series);
 
 {% endhighlight %}
 

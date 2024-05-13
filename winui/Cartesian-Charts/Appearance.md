@@ -23,17 +23,17 @@ Currently, Chart supports only one predefined palette and it is the default pale
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart x:Name="chart">
+    <chart:SfCartesianChart x:Name="chart">
 
-</chart:SfCartesianChart>
+    </chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart();
+    SfCartesianChart chart = new SfCartesianChart();
 
-. . .
+    . . .
 this.Content = chart;
 
 {% endhighlight %}
@@ -50,24 +50,24 @@ this.Content = chart;
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart x:Name="chart" PaletteBrushes="{Binding CustomBrushes}">
-. . .
+    <chart:SfCartesianChart x:Name="chart" PaletteBrushes="{Binding CustomBrushes}">
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart();
-List<Brush> CustomBrushes = new List<Brush>();
-CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 38, 198, 218)));
-CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 172, 193)));
-CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 151, 167)));
-CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 131, 143)));
+    SfCartesianChart chart = new SfCartesianChart();
+    List<Brush> CustomBrushes = new List<Brush>();
+    CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 38, 198, 218)));
+    CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 172, 193)));
+    CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 151, 167)));
+    CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 131, 143)));
 
-this.chart.PaletteBrushes = CustomBrushes;
-. . .
-this.Content = chart;
+    this.chart.PaletteBrushes = CustomBrushes;
+    . . .
+    this.Content = chart;
 
 {% endhighlight %}
 
@@ -83,47 +83,47 @@ Cartesian chart provides support to set the palette to series for applying prede
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart.Resources>
-    <BrushCollection x:Key="customBrushes">
-        <SolidColorBrush Color="#26c6da"/>
-        <SolidColorBrush Color="#00bcd4"/>
-        <SolidColorBrush Color="#00acc1"/>
-        <SolidColorBrush Color="#0097a7"/>
-        <SolidColorBrush Color="#00838f"/>
-    </BrushCollection>
-</chart:SfCartesianChart.Resources>
+    <chart:SfCartesianChart.Resources>
+        <BrushCollection x:Key="customBrushes">
+            <SolidColorBrush Color="#26c6da"/>
+            <SolidColorBrush Color="#00bcd4"/>
+            <SolidColorBrush Color="#00acc1"/>
+            <SolidColorBrush Color="#0097a7"/>
+            <SolidColorBrush Color="#00838f"/>
+        </BrushCollection>
+    </chart:SfCartesianChart.Resources>
 
-<chart:SfCartesianChart.Series>
-    <chart:ColumnSeries ItemsSource="{Binding Data}"  
-                        XBindingPath="Demand" 
-                        YBindingPath="Year2010" 
-                        PaletteBrushes="{StaticResource customBrushes}">        
-    </chart:ColumnSeries>
-</chart:SfCartesianChart.Series>
+    <chart:SfCartesianChart.Series>
+        <chart:ColumnSeries ItemsSource="{Binding Data}"  
+                            XBindingPath="Demand" 
+                            YBindingPath="Year2010" 
+                            PaletteBrushes="{StaticResource customBrushes}">        
+        </chart:ColumnSeries>
+    </chart:SfCartesianChart.Series>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart();
-. . .
-List<Brush> CustomBrushes = new List<Brush>();
-CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 38, 198, 218)));
-CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 188, 212)));
-CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 172, 193)));
-CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 151, 167)));
-CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 131, 143)));
+    SfCartesianChart chart = new SfCartesianChart();
+    . . .
+    List<Brush> CustomBrushes = new List<Brush>();
+    CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 38, 198, 218)));
+    CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 188, 212)));
+    CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 172, 193)));
+    CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 151, 167)));
+    CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 131, 143)));
 
-ColumnSeries series = new ColumnSeries()
-{
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "Demand",
-    YBindingPath = "Year2010",
-    PaletteBrushes = CustomBrushes,
-};
-. . .
-chart.Series.Add(series);
-this.Content = chart;
+    ColumnSeries series = new ColumnSeries()
+    {
+        ItemsSource = new ViewModel().Data,
+        XBindingPath = "Demand",
+        YBindingPath = "Year2010",
+        PaletteBrushes = CustomBrushes,
+    };
+    . . .
+    chart.Series.Add(series);
+    this.Content = chart;
 
 {% endhighlight %}
 
@@ -141,92 +141,92 @@ The following code sample and screenshot illustrates how to apply the gradient b
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart.Resources>
-    <BrushCollection x:Key="customBrushes">
-        <LinearGradientBrush>
-            <GradientStop Offset="1" Color="#FFE7C7" />
-            <GradientStop Offset="0" Color="#FCB69F" />
-        </LinearGradientBrush>
-        <LinearGradientBrush>
-            <GradientStop Offset="1" Color="#fadd7d" />
-            <GradientStop Offset="0" Color="#fccc2d" />
-        </LinearGradientBrush>
-        <LinearGradientBrush>
-            <GradientStop Offset="1" Color="#DCFA97" />
-            <GradientStop Offset="0" Color="#96E6A1" />
-        </LinearGradientBrush>
-        <LinearGradientBrush>
-            <GradientStop Offset="1" Color="#DDD6F3" />
-            <GradientStop Offset="0" Color="#FAACA8" />
-        </LinearGradientBrush>
-        <LinearGradientBrush>
-            <GradientStop Offset="1" Color="#A8EAEE" />
-            <GradientStop Offset="0" Color="#7BB0F9" />
-        </LinearGradientBrush>
-    </BrushCollection>
-</chart:SfCartesianChart.Resources>
+    <chart:SfCartesianChart.Resources>
+        <BrushCollection x:Key="customBrushes">
+            <LinearGradientBrush>
+                <GradientStop Offset="1" Color="#FFE7C7" />
+                <GradientStop Offset="0" Color="#FCB69F" />
+            </LinearGradientBrush>
+            <LinearGradientBrush>
+                <GradientStop Offset="1" Color="#fadd7d" />
+                <GradientStop Offset="0" Color="#fccc2d" />
+            </LinearGradientBrush>
+            <LinearGradientBrush>
+                <GradientStop Offset="1" Color="#DCFA97" />
+                <GradientStop Offset="0" Color="#96E6A1" />
+            </LinearGradientBrush>
+            <LinearGradientBrush>
+                <GradientStop Offset="1" Color="#DDD6F3" />
+                <GradientStop Offset="0" Color="#FAACA8" />
+            </LinearGradientBrush>
+            <LinearGradientBrush>
+                <GradientStop Offset="1" Color="#A8EAEE" />
+                <GradientStop Offset="0" Color="#7BB0F9" />
+            </LinearGradientBrush>
+        </BrushCollection>
+    </chart:SfCartesianChart.Resources>
 
-<chart:SfCartesianChart.Series>
-    <chart:ColumnSeries ItemsSource="{Binding Data}"  
-                        XBindingPath="Demand" 
-                        YBindingPath="Year2010" 
-                        PaletteBrushes="{StaticResource customBrushes}">        
-    </chart:ColumnSeries>
-</chart:SfCartesianChart.Series>
+    <chart:SfCartesianChart.Series>
+        <chart:ColumnSeries ItemsSource="{Binding Data}"  
+                            XBindingPath="Demand" 
+                            YBindingPath="Year2010" 
+                            PaletteBrushes="{StaticResource customBrushes}">        
+        </chart:ColumnSeries>
+    </chart:SfCartesianChart.Series>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart();
-...
-List<Brush> CustomBrushes = new List<Brush>();
-LinearGradientBrush gradientColor1 = new LinearGradientBrush();
-GradientStop stop1 = new GradientStop() 
-{
-    Offset = 1, 
-    Color = Color.FromArgb(255, 255, 231, 199) 
-};
+    SfCartesianChart chart = new SfCartesianChart();
+    ...
+    List<Brush> CustomBrushes = new List<Brush>();
+    LinearGradientBrush gradientColor1 = new LinearGradientBrush();
+    GradientStop stop1 = new GradientStop() 
+    {
+        Offset = 1, 
+        Color = Color.FromArgb(255, 255, 231, 199) 
+    };
 
-GradientStop stop2 = new GradientStop() 
-{
-    Offset = 0, 
-    Color = Color.FromArgb(255, 252, 182, 159)
-};
+    GradientStop stop2 = new GradientStop() 
+    {
+        Offset = 0, 
+        Color = Color.FromArgb(255, 252, 182, 159)
+    };
 
-gradientColor1.GradientStops.Add(stop1);
-gradientColor1.GradientStops.Add(stop2);
+    gradientColor1.GradientStops.Add(stop1);
+    gradientColor1.GradientStops.Add(stop2);
 
-LinearGradientBrush gradientColor2 = new LinearGradientBrush();
-stop1 = new GradientStop() 
-{
-    Offset = 1, 
-    Color = Color.FromArgb(255, 250, 221, 125) 
-};
+    LinearGradientBrush gradientColor2 = new LinearGradientBrush();
+    stop1 = new GradientStop() 
+    {
+        Offset = 1, 
+        Color = Color.FromArgb(255, 250, 221, 125) 
+    };
 
-stop2 = new GradientStop() 
-{
-    Offset = 0, 
-    Color = Color.FromArgb(255, 252, 204, 45) 
-};
+    stop2 = new GradientStop() 
+    {
+        Offset = 0, 
+        Color = Color.FromArgb(255, 252, 204, 45) 
+    };
 
-gradientColor2.GradientStops.Add(stop1);
-gradientColor2.GradientStops.Add(stop2);
+    gradientColor2.GradientStops.Add(stop1);
+    gradientColor2.GradientStops.Add(stop2);
 
-...
-CustomBrushes.Add(gradientColor1);
-CustomBrushes.Add(gradientColor2);
-...
-ColumnSeries series = new ColumnSeries()
-{
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "Demand",
-    YBindingPath = "Year2010",
-    PaletteBrushes = CustomBrushes,
-};
-chart.Series.Add(series);
-. . .            
-this.Content = chart;
+    ...
+    CustomBrushes.Add(gradientColor1);
+    CustomBrushes.Add(gradientColor2);
+    ...
+    ColumnSeries series = new ColumnSeries()
+    {
+        ItemsSource = new ViewModel().Data,
+        XBindingPath = "Demand",
+        YBindingPath = "Year2010",
+        PaletteBrushes = CustomBrushes,
+    };
+    chart.Series.Add(series);
+    . . .            
+    this.Content = chart;
 
 {% endhighlight %}
 

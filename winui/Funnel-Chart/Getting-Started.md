@@ -23,34 +23,34 @@ This section explains how to populate the [WinUI Funnel Chart](https://www.syncf
 
 {% highlight xaml %}
 
-<Window>
-    x:Class="ChartDemo.MainWindow"
+    <Window>
+        x:Class="ChartDemo.MainWindow"
 
-    . . .
-    xmlns:chart="using:Syncfusion.UI.Xaml.Charts">
-    <chart:SfFunnelChart/>
+        . . .
+        xmlns:chart="using:Syncfusion.UI.Xaml.Charts">
+        <chart:SfFunnelChart/>
 
-</Window>
+    </Window>
  
 {% endhighlight %}
 
 {% highlight C# %}
 
-using Syncfusion.UI.Xaml.Charts;
+    using Syncfusion.UI.Xaml.Charts;
 
-. . .
+    . . .
 
-public sealed partial class MainWindow : Window
-{
-    
-    public MainWindow()
+    public sealed partial class MainWindow : Window
     {
-        this.InitializeComponent();
-        SfFunnelChart chart = new SfFunnelChart();
-        . . .
-        this.Content = chart;
-    }
-}   
+        
+        public MainWindow()
+        {
+            this.InitializeComponent();
+            SfFunnelChart chart = new SfFunnelChart();
+            . . .
+            this.Content = chart;
+        }
+    }   
 
 {% endhighlight %}
 
@@ -66,12 +66,12 @@ Now, let us define a simple data model that represents a data point in the chart
 
 {% highlight c# %}
 
-public class Model
-{
-    public string Category { get; set; }
+    public class Model
+    {
+        public string Category { get; set; }
 
-    public double Value { get; set; }
-}
+        public double Value { get; set; }
+    }
 
 {% endhighlight %} 
 
@@ -83,22 +83,22 @@ Next, create a view model class and initialize a list of `Model` objects as foll
 
 {% highlight c# %}
 
-public class ChartViewModel
-{
-    public List<Model> Data { get; set; }
-
-    public ChartViewModel()
+    public class ChartViewModel
     {
-        Data = new List<Model>()
+        public List<Model> Data { get; set; }
+
+        public ChartViewModel()
         {
-            new Model(){Category = "Lava", Value = 50},
-            new Model(){Category = "HP", Value = 30},
-            new Model(){Category = "Moto", Value = 60},
-            new Model(){Category = "Sony", Value = 50},
-            new Model(){Category = "LG", Value = 45},
-        };
+            Data = new List<Model>()
+            {
+                new Model(){Category = "Lava", Value = 50},
+                new Model(){Category = "HP", Value = 30},
+                new Model(){Category = "Moto", Value = 60},
+                new Model(){Category = "Sony", Value = 50},
+                new Model(){Category = "LG", Value = 45},
+            };
+        }
     }
-}
 
 {% endhighlight %} 
 
@@ -112,26 +112,26 @@ N> If you prefer to set `DataContext` in XAML, add the namespace of the `ViewMod
 
 {% highlight xaml %} 
 
-<Window>
-    . . .
+    <Window>
+        . . .
 
-    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
-    xmlns:model="using:ChartDemo.ViewModel">
+        xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+        xmlns:model="using:ChartDemo.ViewModel">
 
-    <chart:SfFunnelChart>
-        <chart:SfFunnelChart.DataContext>
-            <model:ChartViewModel/>
-        </chart:SfFunnelChart.DataContext>
-    </chart:SfFunnelChart>
+        <chart:SfFunnelChart>
+            <chart:SfFunnelChart.DataContext>
+                <model:ChartViewModel/>
+            </chart:SfFunnelChart.DataContext>
+        </chart:SfFunnelChart>
 
-</Window>
+    </Window>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-ChartViewModel viewModel = new ChartViewModel();
-chart.DataContext = viewModel;
+    ChartViewModel viewModel = new ChartViewModel();
+    chart.DataContext = viewModel;
 
 {% endhighlight %}
 
@@ -145,21 +145,21 @@ The title of the chart provide quick information to the user about the data bein
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart Header="PRODUCT SALES">
-    
-. . .
+    <chart:SfFunnelChart Header="PRODUCT SALES">
+        
+    . . .
 
-</chart:SfFunnelChart>
+    </chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-SfFunnelChart chart = new SfFunnelChart();
+    SfFunnelChart chart = new SfFunnelChart();
 
-. . .
+    . . .
 
-chart.Header = "PRODUCT SALES";
+    chart.Header = "PRODUCT SALES";
 
 {% endhighlight %}
 
@@ -173,19 +173,19 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart ShowDataLabels="True">
-. . . 
-</chart:SfFunnelChart>
+    <chart:SfFunnelChart ShowDataLabels="True">
+    . . . 
+    </chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-SfFunnelChart chart = new SfFunnelChart();
+    SfFunnelChart chart = new SfFunnelChart();
 
-. . .
+    . . .
 
-chart.ShowDataLabels = true;
+    chart.ShowDataLabels = true;
 
 {% endhighlight %}
 
@@ -199,20 +199,20 @@ The legend provides information about the data point displayed in the funnel cha
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart>
-    . . .
-    <chart:SfFunnelChart.Legend>
-        <chart:ChartLegend/>
-    </chart:SfFunnelChart.Legend>
-</chart:SfFunnelChart>
+    <chart:SfFunnelChart>
+        . . .
+        <chart:SfFunnelChart.Legend>
+            <chart:ChartLegend/>
+        </chart:SfFunnelChart.Legend>
+    </chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-SfFunnelChart chart = new SfFunnelChart();
-. . .
-chart.Legend = new ChartLegend();
+    SfFunnelChart chart = new SfFunnelChart();
+    . . .
+    chart.Legend = new ChartLegend();
 
 {% endhighlight %}
 
@@ -226,17 +226,17 @@ Tooltips are used to display information about a segment, when the mouse is move
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart EnableTooltip="True">
-    . . . 
-</chart:SfFunnelChart>
+    <chart:SfFunnelChart EnableTooltip="True">
+        . . . 
+    </chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-SfFunnelChart chart = new SfFunnelChart();
-. . .
-chart.EnableTooltip = true;
+    SfFunnelChart chart = new SfFunnelChart();
+    . . .
+    chart.EnableTooltip = true;
 
 {% endhighlight %}
 
@@ -250,52 +250,52 @@ N> To plot the chart, the [XBindingPath](https://help.syncfusion.com/cr/winui/Sy
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart x:Name="chart" Header="PRODUCT SALES" 
-                             EnableTooltip="True"
-                             ShowDataLabels="True"
-                             Height="388" Width="500" 
-                             ItemsSource="{Binding Data}" 
-                             XBindingPath="Category"
-                             YBindingPath="Value">
+    <chart:SfFunnelChart x:Name="chart" Header="PRODUCT SALES" 
+                                EnableTooltip="True"
+                                ShowDataLabels="True"
+                                Height="388" Width="500" 
+                                ItemsSource="{Binding Data}" 
+                                XBindingPath="Category"
+                                YBindingPath="Value">
 
-        <chart:SfFunnelChart.DataContext>
-            <model:ChartViewModel />
-        </chart:SfFunnelChart.DataContext>
+            <chart:SfFunnelChart.DataContext>
+                <model:ChartViewModel />
+            </chart:SfFunnelChart.DataContext>
 
-        <chart:SfFunnelChart.Legend>
-            <chart:ChartLegend />
-        </chart:SfFunnelChart.Legend>
-            
-</chart:SfFunnelChart>
+            <chart:SfFunnelChart.Legend>
+                <chart:ChartLegend />
+            </chart:SfFunnelChart.Legend>
+                
+    </chart:SfFunnelChart>
  
 {% endhighlight %}
 
 {% highlight C# %}
 
-using Syncfusion.UI.Xaml.Charts;
+    using Syncfusion.UI.Xaml.Charts;
 
-. . .
+    . . .
 
-public sealed partial class MainWindow : Window
-{
-    public MainWindow()
+    public sealed partial class MainWindow : Window
     {
-        SfFunnelChart chart = new SfFunnelChart();
-        ChartViewModel viewModel = new ChartViewModel();
-        chart.DataContext = viewModel;
-        chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
-        chart.XBindingPath = "Category";
-        chart.YBindingPath = "Value";
-        chart.Header = "PRODUCT SALES";
-        chart.Height = 388;
-        chart.Width = 500;
-        chart.Legend = new ChartLegend();
-        chart.EnableTooltip = true;
-        chart.ShowDataLabels = true;
+        public MainWindow()
+        {
+            SfFunnelChart chart = new SfFunnelChart();
+            ChartViewModel viewModel = new ChartViewModel();
+            chart.DataContext = viewModel;
+            chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+            chart.XBindingPath = "Category";
+            chart.YBindingPath = "Value";
+            chart.Header = "PRODUCT SALES";
+            chart.Height = 388;
+            chart.Width = 500;
+            chart.Legend = new ChartLegend();
+            chart.EnableTooltip = true;
+            chart.ShowDataLabels = true;
 
-        this.Content = chart;
+            this.Content = chart;
+        }
     }
-}
 
 {% endhighlight %}
 

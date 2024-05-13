@@ -33,34 +33,34 @@ To enable the selection in the chart, create an instance of the [DataPointSelect
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart x:Name="chart" 
-                     Height="388"
-                     Width="500"
-                     ItemsSource="{Binding Data}" 
-                     XBindingPath="Category"
-                     YBindingPath="Value">
+    <chart:SfFunnelChart x:Name="chart" 
+                        Height="388"
+                        Width="500"
+                        ItemsSource="{Binding Data}" 
+                        XBindingPath="Category"
+                        YBindingPath="Value">
 
-    <chart:SfFunnelChart.SelectionBehavior>
-        <chart:DataPointSelectionBehavior SelectionBrush="Red"/>
-    </chart:SfFunnelChart.SelectionBehavior>
+        <chart:SfFunnelChart.SelectionBehavior>
+            <chart:DataPointSelectionBehavior SelectionBrush="Red"/>
+        </chart:SfFunnelChart.SelectionBehavior>
 
-</chart:SfFunnelChart>
+    </chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfFunnelChart chart = new SfFunnelChart();
-chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
-chart.XBindingPath = "Category";
-chart.YBindingPath = "Value";
-DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
-{
-    SelectionBrush = new SolidColorBrush(Colors.Red),
-};
-chart.SelectionBehavior = selection;
-. . .
-this.Content = chart;
+    SfFunnelChart chart = new SfFunnelChart();
+    chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+    chart.XBindingPath = "Category";
+    chart.YBindingPath = "Value";
+    DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
+    {
+        SelectionBrush = new SolidColorBrush(Colors.Red),
+    };
+    chart.SelectionBehavior = selection;
+    . . .
+    this.Content = chart;
 
 {% endhighlight %}
 
@@ -78,34 +78,34 @@ N> The `Series` and `MultiSeries` selection types are not supported for the funn
 
 {% highlight xml %}
 
-<chart:SfFunnelChart x:Name="chart"  
-                     ItemsSource="{Binding Data}" 
-                     XBindingPath="Category"
-                     YBindingPath="Value">
+    <chart:SfFunnelChart x:Name="chart"  
+                        ItemsSource="{Binding Data}" 
+                        XBindingPath="Category"
+                        YBindingPath="Value">
 
-    <chart:SfFunnelChart.SelectionBehavior>
-        <chart:DataPointSelectionBehavior SelectionBrush="Red"
-										  Type="Multiple"/>
-    </chart:SfFunnelChart.SelectionBehavior>
-. . .
-</chart:SfFunnelChart>
+        <chart:SfFunnelChart.SelectionBehavior>
+            <chart:DataPointSelectionBehavior SelectionBrush="Red"
+                                            Type="Multiple"/>
+        </chart:SfFunnelChart.SelectionBehavior>
+    . . .
+    </chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfFunnelChart chart = new SfFunnelChart();
-chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
-chart.XBindingPath = "Category";
-chart.YBindingPath = "Value";
-DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
-{
-    SelectionBrush = new SolidColorBrush(Colors.Red),
-    Type = ChartSelectionType.Multiple,
-};
-chart.SelectionBehavior = selection;
-. . .
-this.Content = chart;
+    SfFunnelChart chart = new SfFunnelChart();
+    chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+    chart.XBindingPath = "Category";
+    chart.YBindingPath = "Value";
+    DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
+    {
+        SelectionBrush = new SolidColorBrush(Colors.Red),
+        Type = ChartSelectionType.Multiple,
+    };
+    chart.SelectionBehavior = selection;
+    . . .
+    this.Content = chart;
 
 {% endhighlight %}
 
@@ -123,35 +123,35 @@ The funnel chart provides support to select a point programmatically on a chart 
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart x:Name="chart" 
-                     Height="388" Width="500"
-                     ItemsSource="{Binding Data}" 
-                     XBindingPath="Category"
-                     YBindingPath="Value">
+    <chart:SfFunnelChart x:Name="chart" 
+                        Height="388" Width="500"
+                        ItemsSource="{Binding Data}" 
+                        XBindingPath="Category"
+                        YBindingPath="Value">
 
-    <chart:SfFunnelChart.SelectionBehavior>
-        <chart:DataPointSelectionBehavior SelectionBrush="Red"
-										  SelectedIndex="2"/>
-    </chart:SfFunnelChart.SelectionBehavior>
+        <chart:SfFunnelChart.SelectionBehavior>
+            <chart:DataPointSelectionBehavior SelectionBrush="Red"
+                                            SelectedIndex="2"/>
+        </chart:SfFunnelChart.SelectionBehavior>
 
-</chart:SfFunnelChart>
+    </chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfFunnelChart chart = new SfFunnelChart();
-chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
-chart.XBindingPath = "Category";
-chart.YBindingPath = "Value";
-DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
-{
-    SelectionBrush = new SolidColorBrush(Colors.Red),
-    SelectedIndex= 2
-};
-chart.SelectionBehavior = selection;
-. . .
-this.Content = chart;
+    SfFunnelChart chart = new SfFunnelChart();
+    chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+    chart.XBindingPath = "Category";
+    chart.YBindingPath = "Value";
+    DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
+    {
+        SelectionBrush = new SolidColorBrush(Colors.Red),
+        SelectedIndex= 2
+    };
+    chart.SelectionBehavior = selection;
+    . . .
+    this.Content = chart;
 
 {% endhighlight %}
 
@@ -167,36 +167,36 @@ Funnel chart provides support to select multiple points programmatically on a ch
 
 {% highlight xml %}
 
-<chart:SfFunnelChart x:Name="chart"  
-                     ItemsSource="{Binding Data}" 
-                     XBindingPath="Category"
-                     YBindingPath="Value">
+    <chart:SfFunnelChart x:Name="chart"  
+                        ItemsSource="{Binding Data}" 
+                        XBindingPath="Category"
+                        YBindingPath="Value">
 
-    <chart:SfFunnelChart.SelectionBehavior>
-        <chart:DataPointSelectionBehavior SelectionBrush="Red" 
-										  Type="Multiple"
-        SelectedIndexes="{Binding SelectedIndexes}"/>
-    </chart:SfFunnelChart.SelectionBehavior>
-. . .
-</chart:SfFunnelChart>
+        <chart:SfFunnelChart.SelectionBehavior>
+            <chart:DataPointSelectionBehavior SelectionBrush="Red" 
+                                            Type="Multiple"
+            SelectedIndexes="{Binding SelectedIndexes}"/>
+        </chart:SfFunnelChart.SelectionBehavior>
+    . . .
+    </chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfFunnelChart chart = new SfFunnelChart();
-chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
-chart.XBindingPath = "Category";
-chart.YBindingPath = "Value";
-DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
-{
-    SelectionBrush = new SolidColorBrush(Colors.Red),
-    Type = ChartSelectionType.Multiple,
-    SelectedIndexes = new List<int>() { 2, 3, 4 }
-};
-chart.SelectionBehavior = selection;
-. . .
-this.Content = chart;
+    SfFunnelChart chart = new SfFunnelChart();
+    chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+    chart.XBindingPath = "Category";
+    chart.YBindingPath = "Value";
+    DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
+    {
+        SelectionBrush = new SolidColorBrush(Colors.Red),
+        Type = ChartSelectionType.Multiple,
+        SelectedIndexes = new List<int>() { 2, 3, 4 }
+    };
+    chart.SelectionBehavior = selection;
+    . . .
+    this.Content = chart;
 
 {% endhighlight %}
 

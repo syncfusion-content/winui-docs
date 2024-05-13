@@ -43,23 +43,23 @@ To render a scatter chart, create an instance of the [ScatterSeries](https://hel
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart();
-NumericalAxis xAxis = new NumericalAxis();
-chart.XAxes.Add(xAxis);
-NumericalAxis yAxis = new NumericalAxis();
-chart.YAxes.Add(yAxis);
+    SfCartesianChart chart = new SfCartesianChart();
+    NumericalAxis xAxis = new NumericalAxis();
+    chart.XAxes.Add(xAxis);
+    NumericalAxis yAxis = new NumericalAxis();
+    chart.YAxes.Add(yAxis);
 
-ScatterSeries series = new ScatterSeries()
-{
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "XValue",
-    YBindingPath = "YValue",
-    PointHeight = 7,
-    PointWidth = 7,
-};
+    ScatterSeries series = new ScatterSeries()
+    {
+        ItemsSource = new ViewModel().Data,
+        XBindingPath = "XValue",
+        YBindingPath = "YValue",
+        PointHeight = 7,
+        PointWidth = 7,
+    };
 
-chart.Series.Add(series);
-this.Content = chart;
+    chart.Series.Add(series);
+    this.Content = chart;
 
 {% endhighlight %}
 

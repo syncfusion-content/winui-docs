@@ -36,18 +36,18 @@ A fast stepline bitmap series is a special kind of series that can render a coll
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart();
-DateTimeAxis xAxis = new DateTimeAxis();
-chart.XAxes.Add(xAxis);
-NumericalAxis yAxis = new NumericalAxis();
-chart.YAxes.Add(yAxis);
+    SfCartesianChart chart = new SfCartesianChart();
+    DateTimeAxis xAxis = new DateTimeAxis();
+    chart.XAxes.Add(xAxis);
+    NumericalAxis yAxis = new NumericalAxis();
+    chart.YAxes.Add(yAxis);
 
-FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
-{
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "XValue",
-    YBindingPath = "YValue"
-};
+    FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
+    {
+        ItemsSource = new ViewModel().Data,
+        XBindingPath = "XValue",
+        YBindingPath = "YValue"
+    };
 
 chart.Series.Add(series);
 

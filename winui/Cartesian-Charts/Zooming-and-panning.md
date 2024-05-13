@@ -21,22 +21,22 @@ To enable the zooming and panning in the chart, create an instance of [ChartZoom
 
 {% highlight xml %}
 
-<chart:SfCartesianChart>
-    ...
-    <chart:SfCartesianChart.ZoomPanBehavior>
-        <chart:ChartZoomPanBehavior />
-    </chart:SfCartesianChart.ZoomPanBehavior>
-</chart:SfCartesianChart>
+    <chart:SfCartesianChart>
+        ...
+        <chart:SfCartesianChart.ZoomPanBehavior>
+            <chart:ChartZoomPanBehavior />
+        </chart:SfCartesianChart.ZoomPanBehavior>
+    </chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart();
-...
-ChartZoomPanBehavior zooming = new ChartZoomPanBehavior();
-chart.ZoomPanBehavior = zooming;
-...
+    SfCartesianChart chart = new SfCartesianChart();
+    ...
+    ChartZoomPanBehavior zooming = new ChartZoomPanBehavior();
+    chart.ZoomPanBehavior = zooming;
+    ...
 
 {% endhighlight %}
 
@@ -54,26 +54,26 @@ Pinch zooming is enable by using the [EnablePinchZooming](https://help.syncfusio
 
 {% highlight xml %}
 
-<chart:SfCartesianChart>
-    <chart:SfCartesianChart.ZoomPanBehavior>
-        <chart:ChartZoomPanBehavior EnablePinchZooming="True"/>
-    </chart:SfCartesianChart.ZoomPanBehavior>
-    ...
-</chart:SfCartesianChart>
+    <chart:SfCartesianChart>
+        <chart:SfCartesianChart.ZoomPanBehavior>
+            <chart:ChartZoomPanBehavior EnablePinchZooming="True"/>
+        </chart:SfCartesianChart.ZoomPanBehavior>
+        ...
+    </chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart();
-...
-ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
-{
-    EnablePinchZooming = true
-};
+    SfCartesianChart chart = new SfCartesianChart();
+    ...
+    ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
+    {
+        EnablePinchZooming = true
+    };
 
-chart.ZoomPanBehavior = zooming;
-...
+    chart.ZoomPanBehavior = zooming;
+    ...
 
 {% endhighlight %}
 
@@ -87,26 +87,26 @@ Zooming can be performed by mouse wheel action by setting [EnableMouseWheelZoomi
 
 {% highlight xml %}
 
-<chart:SfCartesianChart>
-    <chart:SfCartesianChart.ZoomPanBehavior>
-        <chart:ChartZoomPanBehavior EnableMouseWheelZooming="True"/>
-    </chart:SfCartesianChart.ZoomPanBehavior>
-    ...
-</chart:SfCartesianChart>
+    <chart:SfCartesianChart>
+        <chart:SfCartesianChart.ZoomPanBehavior>
+            <chart:ChartZoomPanBehavior EnableMouseWheelZooming="True"/>
+        </chart:SfCartesianChart.ZoomPanBehavior>
+        ...
+    </chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart();
-...
-ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
-{
-    EnableMouseWheelZooming = true
-};
+    SfCartesianChart chart = new SfCartesianChart();
+    ...
+    ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
+    {
+        EnableMouseWheelZooming = true
+    };
 
-chart.ZoomPanBehavior = zooming;
-...
+    chart.ZoomPanBehavior = zooming;
+    ...
 
 {% endhighlight %}
 
@@ -120,26 +120,26 @@ chart.ZoomPanBehavior = zooming;
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart>
-    <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis ShowMajorGridLines="False" ZoomFactor="0.3" ZoomPosition="0.5"/>
-    </chart:SfCartesianChart.XAxes>
-    ...
-</chart:SfCartesianChart>
+    <chart:SfCartesianChart>
+        <chart:SfCartesianChart.XAxes>
+            <chart:CategoryAxis ShowMajorGridLines="False" ZoomFactor="0.3" ZoomPosition="0.5"/>
+        </chart:SfCartesianChart.XAxes>
+        ...
+    </chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart();
-CategoryAxis primaryAxis = new CategoryAxis()
-{
-    ShowMajorGridLines = false,
-    ZoomFactor = 0.3,
-    ZoomPosition = 0.5
-};
-chart.XAxes.Add(primaryAxis);
-...
+    SfCartesianChart chart = new SfCartesianChart();
+    CategoryAxis primaryAxis = new CategoryAxis()
+    {
+        ShowMajorGridLines = false,
+        ZoomFactor = 0.3,
+        ZoomPosition = 0.5
+    };
+    chart.XAxes.Add(primaryAxis);
+    ...
 
 {% endhighlight %}
 
@@ -157,26 +157,26 @@ Following code example illustrates how to restrict the chart to be zoomed only a
 
 {% highlight xml %}
 
-<chart:SfCartesianChart>
-    <chart:SfCartesianChart.ZoomPanBehavior>
-        <chart:ChartZoomPanBehavior ZoomMode="X" />
-    </chart:SfCartesianChart.ZoomPanBehavior>
-    ...
-</chart:SfCartesianChart>
+    <chart:SfCartesianChart>
+        <chart:SfCartesianChart.ZoomPanBehavior>
+            <chart:ChartZoomPanBehavior ZoomMode="X" />
+        </chart:SfCartesianChart.ZoomPanBehavior>
+        ...
+    </chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart();
-...
-ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
-{
-    ZoomMode = ZoomMode.X
-};
+    SfCartesianChart chart = new SfCartesianChart();
+    ...
+    ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
+    {
+        ZoomMode = ZoomMode.X
+    };
 
-chart.ZoomPanBehavior = zooming;
-...
+    chart.ZoomPanBehavior = zooming;
+    ...
 
 {% endhighlight %}
 
@@ -190,25 +190,25 @@ Following code example illustrates how to restrict the chart to be zoomed only a
 
 {% highlight xml %}
 
-<chart:SfCartesianChart>
-    <chart:SfCartesianChart.ZoomPanBehavior>
-        <chart:ChartZoomPanBehavior ZoomMode="Y" />
-    </chart:SfCartesianChart.ZoomPanBehavior>
-    ...
-</chart:SfCartesianChart>
+    <chart:SfCartesianChart>
+        <chart:SfCartesianChart.ZoomPanBehavior>
+            <chart:ChartZoomPanBehavior ZoomMode="Y" />
+        </chart:SfCartesianChart.ZoomPanBehavior>
+        ...
+    </chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart();
-ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
-{
-    ZoomMode = ZoomMode.Y
-};
+    SfCartesianChart chart = new SfCartesianChart();
+    ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
+    {
+        ZoomMode = ZoomMode.Y
+    };
 
-chart.ZoomPanBehavior = zooming;
-...
+    chart.ZoomPanBehavior = zooming;
+    ...
 
 {% endhighlight %}
 
@@ -224,26 +224,26 @@ Panning feature allows moving the visible area of the chart when it is zoomed in
 
 {% highlight xml %}
 
-<chart:SfCartesianChart>
-    <chart:SfCartesianChart.ZoomPanBehavior>
-        <chart:ChartZoomPanBehavior EnableMouseWheelZooming="True" EnablePanning="True"/>
-    </chart:SfCartesianChart.ZoomPanBehavior>
-    ...
-</chart:SfCartesianChart>
+    <chart:SfCartesianChart>
+        <chart:SfCartesianChart.ZoomPanBehavior>
+            <chart:ChartZoomPanBehavior EnableMouseWheelZooming="True" EnablePanning="True"/>
+        </chart:SfCartesianChart.ZoomPanBehavior>
+        ...
+    </chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart();
-ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
-{
-    EnableMouseWheelZooming = true,
-    EnablePanning = true
-};
+    SfCartesianChart chart = new SfCartesianChart();
+    ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
+    {
+        EnableMouseWheelZooming = true,
+        EnablePanning = true
+    };
 
-chart.ZoomPanBehavior = zooming;
-...
+    chart.ZoomPanBehavior = zooming;
+    ...
 
 {% endhighlight %}
 

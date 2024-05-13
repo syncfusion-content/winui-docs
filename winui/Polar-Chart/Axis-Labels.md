@@ -19,26 +19,26 @@ The [LabelRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
 
 {% highlight xaml %}
 
-<chart:SfPolarChart>
-    ...
-    <chart:SfPolarChart.SecondaryAxis>
-        <chart:NumericalAxis LabelRotation="30"/>
-    </chart:SfPolarChart.SecondaryAxis>
-    ...
-</chart:SfPolarChart>
+    <chart:SfPolarChart>
+        ...
+        <chart:SfPolarChart.SecondaryAxis>
+            <chart:NumericalAxis LabelRotation="30"/>
+        </chart:SfPolarChart.SecondaryAxis>
+        ...
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
-...
-chart.PrimaryAxis = new CategoryAxis();
-chart.SecondaryAxis = new NumericalAxis()
-{
-    LabelRotation = 30,
-}
-...
+    SfPolarChart chart = new SfPolarChart();
+    ...
+    chart.PrimaryAxis = new CategoryAxis();
+    chart.SecondaryAxis = new NumericalAxis()
+    {
+        LabelRotation = 30,
+    }
+    ...
 
 {% endhighlight %}
 
@@ -54,36 +54,36 @@ Axis labels can be formatted by predefined formatting types by using the [LabelF
 
 {% highlight xaml %}
 
-<chart:SfPolarChart>
-            
-    <chart:SfPolarChart.PrimaryAxis>
-        <chart:CategoryAxis/>
-    </chart:SfPolarChart.PrimaryAxis>
+    <chart:SfPolarChart>
                 
-    <chart:SfPolarChart.SecondaryAxis>
-        <chart:NumericalAxis>
-            <chart:NumericalAxis.LabelStyle>
-                <chart:LabelStyle LabelFormat="0.0" />
-            </chart:NumericalAxis.LabelStyle>
-        </chart:NumericalAxis>
-    </chart:SfPolarChart.SecondaryAxis>
-    ...
+        <chart:SfPolarChart.PrimaryAxis>
+            <chart:CategoryAxis/>
+        </chart:SfPolarChart.PrimaryAxis>
+                    
+        <chart:SfPolarChart.SecondaryAxis>
+            <chart:NumericalAxis>
+                <chart:NumericalAxis.LabelStyle>
+                    <chart:LabelStyle LabelFormat="0.0" />
+                </chart:NumericalAxis.LabelStyle>
+            </chart:NumericalAxis>
+        </chart:SfPolarChart.SecondaryAxis>
+        ...
 
-</chart:SfPolarChart>
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
+    SfPolarChart chart = new SfPolarChart();
 
-chart.PrimaryAxis = new CategoryAxis();
+    chart.PrimaryAxis = new CategoryAxis();
 
-chart.SecondaryAxis = new NumericalAxis()
-{
-    LabelStyle = new LabelStyle() { LabelFormat= "0.0" }
-};
-...
+    chart.SecondaryAxis = new NumericalAxis()
+    {
+        LabelStyle = new LabelStyle() { LabelFormat= "0.0" }
+    };
+    ...
 
 {% endhighlight %}
 
@@ -99,47 +99,47 @@ The appearance of the axis labels can be customized by using the [LabelTemplate]
 
 {% highlight xaml %}
 
-<Grid x:Name="grid">
-    <Grid.Resources>
-        <DataTemplate x:Key="labelTemplate">
-            <Border Background="Blue"
-					CornerRadius="5"
-					BorderThickness="1">
-                <TextBlock Text="{Binding Content}"
-						   Foreground="White"
-						   FontStyle="Italic" 
-						   FontSize="10"
-						   FontWeight="Bold" 
-						   Margin="3"/>
-            </Border>
-        </DataTemplate>
-    </Grid.Resources>
-    <chart:SfPolarChart x:Name="chart">
-    ...
-        <chart:SfPolarChart.PrimaryAxis>
-            <chart:CategoryAxis LabelTemplate="{StaticResource labelTemplate}"/>
-        </chart:SfPolarChart.PrimaryAxis>
+    <Grid x:Name="grid">
+        <Grid.Resources>
+            <DataTemplate x:Key="labelTemplate">
+                <Border Background="Blue"
+                        CornerRadius="5"
+                        BorderThickness="1">
+                    <TextBlock Text="{Binding Content}"
+                            Foreground="White"
+                            FontStyle="Italic" 
+                            FontSize="10"
+                            FontWeight="Bold" 
+                            Margin="3"/>
+                </Border>
+            </DataTemplate>
+        </Grid.Resources>
+        <chart:SfPolarChart x:Name="chart">
+        ...
+            <chart:SfPolarChart.PrimaryAxis>
+                <chart:CategoryAxis LabelTemplate="{StaticResource labelTemplate}"/>
+            </chart:SfPolarChart.PrimaryAxis>
 
-        <chart:SfPolarChart.SecondaryAxis>
-            <chart:NumericalAxis/>
-        </chart:SfPolarChart.SecondaryAxis>
-    ...
-    </chart:SfPolarChart>
-</Grid>
+            <chart:SfPolarChart.SecondaryAxis>
+                <chart:NumericalAxis/>
+            </chart:SfPolarChart.SecondaryAxis>
+        ...
+        </chart:SfPolarChart>
+    </Grid>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
+    SfPolarChart chart = new SfPolarChart();
 
-chart.PrimaryAxis = new CategoryAxis()
-{
-    LabelTemplate = grid.Resources["labelTemplate"] as DataTemplate
-};
+    chart.PrimaryAxis = new CategoryAxis()
+    {
+        LabelTemplate = grid.Resources["labelTemplate"] as DataTemplate
+    };
 
-chart.SecondaryAxis = new NumericalAxis();
-...
+    chart.SecondaryAxis = new NumericalAxis();
+    ...
 
 {% endhighlight %}
 

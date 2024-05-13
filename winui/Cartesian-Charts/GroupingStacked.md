@@ -51,51 +51,51 @@ Chart provides support to group the stacked similar series by using the [GroupNa
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart();
-ViewModel viewModel = new ViewModel();
-CategoryAxis primaryAxis = new CategoryAxis();
-primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
-chart.XAxes.Add(primaryAxis);
-NumericalAxis secondaryAxis = new NumericalAxis();
-chart.YAxes.Add(secondaryAxis);
+    SfCartesianChart chart = new SfCartesianChart();
+    ViewModel viewModel = new ViewModel();
+    CategoryAxis primaryAxis = new CategoryAxis();
+    primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
+    chart.XAxes.Add(primaryAxis);
+    NumericalAxis secondaryAxis = new NumericalAxis();
+    chart.YAxes.Add(secondaryAxis);
 
-StackedColumnSeries series1 = new StackedColumnSeries()
-{
-    ItemsSource = viewModel.AnnualDetails,
-    XBindingPath = "Year",
-    YBindingPath = "Quarter1",
-    GroupName = "Group1",
-};
+    StackedColumnSeries series1 = new StackedColumnSeries()
+    {
+        ItemsSource = viewModel.AnnualDetails,
+        XBindingPath = "Year",
+        YBindingPath = "Quarter1",
+        GroupName = "Group1",
+    };
 
-StackedColumnSeries series2 = new StackedColumnSeries()
-{
-    ItemsSource = viewModel.AnnualDetails,
-    XBindingPath = "Year",
-    YBindingPath = "Quarter2",
-    GroupName = "Group1",
-};
+    StackedColumnSeries series2 = new StackedColumnSeries()
+    {
+        ItemsSource = viewModel.AnnualDetails,
+        XBindingPath = "Year",
+        YBindingPath = "Quarter2",
+        GroupName = "Group1",
+    };
 
-StackedColumnSeries series3 = new StackedColumnSeries()
-{
-    ItemsSource = viewModel.AnnualDetails,
-    XBindingPath = "Year",
-    YBindingPath = "Quarter3",
-    GroupName = "Group2",
-};
+    StackedColumnSeries series3 = new StackedColumnSeries()
+    {
+        ItemsSource = viewModel.AnnualDetails,
+        XBindingPath = "Year",
+        YBindingPath = "Quarter3",
+        GroupName = "Group2",
+    };
 
-StackedColumnSeries series4 = new StackedColumnSeries()
-{
-    ItemsSource = viewModel.AnnualDetails,
-    XBindingPath = "Year",
-    YBindingPath = "Quarter4",
-    GroupName = "Group2",
-};
+    StackedColumnSeries series4 = new StackedColumnSeries()
+    {
+        ItemsSource = viewModel.AnnualDetails,
+        XBindingPath = "Year",
+        YBindingPath = "Quarter4",
+        GroupName = "Group2",
+    };
 
-chart.Series.Add(series1);
-chart.Series.Add(series2);
-chart.Series.Add(series3);
-chart.Series.Add(series4);
-...
+    chart.Series.Add(series1);
+    chart.Series.Add(series2);
+    chart.Series.Add(series3);
+    chart.Series.Add(series4);
+    ...
 
 {% endhighlight %}
 
