@@ -43,23 +43,23 @@ To render a scatter chart, create an instance of the [ScatterSeries](https://hel
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart();
-NumericalAxis xAxis = new NumericalAxis();
-chart.XAxes.Add(xAxis);
-NumericalAxis yAxis = new NumericalAxis();
-chart.YAxes.Add(yAxis);
+    SfCartesianChart chart = new SfCartesianChart();
+    NumericalAxis xAxis = new NumericalAxis();
+    chart.XAxes.Add(xAxis);
+    NumericalAxis yAxis = new NumericalAxis();
+    chart.YAxes.Add(yAxis);
 
-ScatterSeries series = new ScatterSeries()
-{
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "XValue",
-    YBindingPath = "YValue",
-    PointHeight = 7,
-    PointWidth = 7,
-};
+    ScatterSeries series = new ScatterSeries()
+    {
+        ItemsSource = new ViewModel().Data,
+        XBindingPath = "XValue",
+        YBindingPath = "YValue",
+        PointHeight = 7,
+        PointWidth = 7,
+    };
 
-chart.Series.Add(series);
-this.Content = chart;
+    chart.Series.Add(series);
+    this.Content = chart;
 
 {% endhighlight %}
 
@@ -67,4 +67,4 @@ this.Content = chart;
 
 ![Scatter chart type in WinUI Chart](Chart-types_images/WinUI_scatter_chart.png)
 
-N> You can also explore our [WinUI Scatter Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Basic%20Charts/ScatterChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can also explore our [WinUI Scatter Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/Scatter) that shows how to easily configure with built-in support for creating stunning visual effects.

@@ -15,27 +15,27 @@ To render a [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 {% highlight xaml %}
 
-<chart:SfCircularChart>
+    <chart:SfCircularChart>
 
-    <chart:SfCircularChart.Series>
-        <chart:PieSeries ItemsSource="{Binding Data}" 
-                         XBindingPath="Product" 
-                         YBindingPath="SalesRate"/>
-    </chart:SfCircularChart.Series>
-        
-</chart:SfCircularChart>
+        <chart:SfCircularChart.Series>
+            <chart:PieSeries ItemsSource="{Binding Data}" 
+                            XBindingPath="Product" 
+                            YBindingPath="SalesRate"/>
+        </chart:SfCircularChart.Series>
+            
+    </chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCircularChart chart = new SfCircularChart();
+    SfCircularChart chart = new SfCircularChart();
 
-PieSeries series = new PieSeries();
-series.XBindingPath = "Product";
-series.YBindingPath = "SalesRate";
+    PieSeries series = new PieSeries();
+    series.XBindingPath = "Product";
+    series.YBindingPath = "SalesRate";
 
-chart.Series.Add(series);
+    chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -51,29 +51,29 @@ The rendering size of the [PieSeries](https://help.syncfusion.com/cr/winui/Syncf
 
 {% highlight xaml %}
 
-<chart:SfCircularChart>
+    <chart:SfCircularChart>
 
-    <chart:SfCircularChart.Series>
-        <chart:PieSeries ItemsSource="{Binding Data}" 
-                         XBindingPath="Product" 
-                         YBindingPath="SalesRate"
-                         Radius = "0.9"/>
-    </chart:SfCircularChart.Series>
-        
-</chart:SfCircularChart>
+        <chart:SfCircularChart.Series>
+            <chart:PieSeries ItemsSource="{Binding Data}" 
+                            XBindingPath="Product" 
+                            YBindingPath="SalesRate"
+                            Radius = "0.9"/>
+        </chart:SfCircularChart.Series>
+            
+    </chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCircularChart chart = new SfCircularChart();
+    SfCircularChart chart = new SfCircularChart();
 
-PieSeries series = new PieSeries();
-series.XBindingPath = "Product";
-series.YBindingPath = "SalesRate";
-series.Radius = 0.9;
+    PieSeries series = new PieSeries();
+    series.XBindingPath = "Product";
+    series.YBindingPath = "SalesRate";
+    series.Radius = 0.9;
 
-chart.Series.Add(series);
+    chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -99,42 +99,42 @@ The default value of the [GroupTo](https://help.syncfusion.com/cr/winui/Syncfusi
 {% tabs %}
 
 {% highlight xaml %}
-<chart:SfCircularChart>
+    <chart:SfCircularChart>
 
-    <chart:SfCircularChart.Series>
-        <chart:PieSeries ItemsSource="{Binding Data}" 
-                         XBindingPath="Product" 
-                         YBindingPath="SalesRate"
-                         ShowDataLabels="True"
-                         GroupTo="1000"
-						 GroupMode="Value">
-            <chart:PieSeries.DataLabelSettings>
-                <chart:CircularDataLabelSettings
-							ShowConnectorLine="True"
-                            ConnectorHeight="80" 
-                            Context="DataLabelItem"/>
-            </chart:PieSeries.DataLabelSettings>
-        </chart:PieSeries>
-    </chart:SfCircularChart.Series>
+        <chart:SfCircularChart.Series>
+            <chart:PieSeries ItemsSource="{Binding Data}" 
+                            XBindingPath="Product" 
+                            YBindingPath="SalesRate"
+                            ShowDataLabels="True"
+                            GroupTo="1000"
+                            GroupMode="Value">
+                <chart:PieSeries.DataLabelSettings>
+                    <chart:CircularDataLabelSettings
+                                ShowConnectorLine="True"
+                                ConnectorHeight="80" 
+                                Context="DataLabelItem"/>
+                </chart:PieSeries.DataLabelSettings>
+            </chart:PieSeries>
+        </chart:SfCircularChart.Series>
 
-</chart:SfCircularChart>
+    </chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-PieSeries series = new PieSeries();
-series.GroupMode = PieGroupMode.Value;
-series.GroupTo = 1000;
-series.ShowDataLabels = true;
-series.DataLabelSettings = new CircularDataLabelSettings()
-{
-    ShowConnectorLine = true,
-    ConnectorHeight = 80,
-    Context = LabelContext.DataLabelItem
-};
+    PieSeries series = new PieSeries();
+    series.GroupMode = PieGroupMode.Value;
+    series.GroupTo = 1000;
+    series.ShowDataLabels = true;
+    series.DataLabelSettings = new CircularDataLabelSettings()
+    {
+        ShowConnectorLine = true,
+        ConnectorHeight = 80,
+        Context = LabelContext.DataLabelItem
+    };
 
-chart.Series.Add(series);
+    chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -150,31 +150,31 @@ By using the [StartAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 
 {% highlight xaml %}
 
-<chart:SfCircularChart>
+    <chart:SfCircularChart>
 
-    <chart:SfCircularChart.Series>
-        <chart:PieSeries StartAngle="180" EndAngle="360"
-                         ItemsSource="{Binding Data}"
-                         XBindingPath="Product" 
-                         YBindingPath="SalesRate"
-                         ShowDataLabels="True"/>
-    </chart:SfCircularChart.Series>
+        <chart:SfCircularChart.Series>
+            <chart:PieSeries StartAngle="180" EndAngle="360"
+                            ItemsSource="{Binding Data}"
+                            XBindingPath="Product" 
+                            YBindingPath="SalesRate"
+                            ShowDataLabels="True"/>
+        </chart:SfCircularChart.Series>
 
-</chart:SfCircularChart>
+    </chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCircularChart chart = new SfCircularChart();
+    SfCircularChart chart = new SfCircularChart();
 
-PieSeries series = new PieSeries();
-series.XBindingPath = "Product";
-series.YBindingPath = "SalesRate";
-series.StartAngle = 180;
-series.EndAngle = 360;
+    PieSeries series = new PieSeries();
+    series.XBindingPath = "Product";
+    series.YBindingPath = "SalesRate";
+    series.StartAngle = 180;
+    series.EndAngle = 360;
 
-chart.Series.Add(series);
+    chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -190,42 +190,42 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:SfCircularChart>
-. . .
-    <chart:SfCircularChart.Series>
-        <chart:DoughnutSeries ItemsSource="{Binding Data}" 
-                              InnerRadius="0.7"                    
-                              XBindingPath="Demand"
-                              YBindingPath="Year2010"/>
+    <chart:SfCircularChart>
+    . . .
+        <chart:SfCircularChart.Series>
+            <chart:DoughnutSeries ItemsSource="{Binding Data}" 
+                                InnerRadius="0.7"                    
+                                XBindingPath="Demand"
+                                YBindingPath="Year2010"/>
 
-        <chart:PieSeries ItemsSource="{Binding Data}" 
-                         XBindingPath="Demand" 
-                         YBindingPath="Year2011"
-                         Radius="0.5" />
-    </chart:SfCircularChart.Series>
+            <chart:PieSeries ItemsSource="{Binding Data}" 
+                            XBindingPath="Demand" 
+                            YBindingPath="Year2011"
+                            Radius="0.5" />
+        </chart:SfCircularChart.Series>
 
-</chart:SfCircularChart>
+    </chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCircularChart chart = new SfCircularChart();
-. . .
-DoughnutSeries series1 = new DoughnutSeries();
-series1.SetBinding(DoughnutSeries.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
-series1.XBindingPath = "Demand";
-series1.YBindingPath = "Year2010";
-series1.InnerRadius = 0.7;
+    SfCircularChart chart = new SfCircularChart();
+    . . .
+    DoughnutSeries series1 = new DoughnutSeries();
+    series1.SetBinding(DoughnutSeries.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+    series1.XBindingPath = "Demand";
+    series1.YBindingPath = "Year2010";
+    series1.InnerRadius = 0.7;
 
-PieSeries series2 = new PieSeries();
-series2.SetBinding(PieSeries.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
-series2.XBindingPath = "Demand";
-series2.YBindingPath = "Year2011";
-series2.Radius = 0.5;
+    PieSeries series2 = new PieSeries();
+    series2.SetBinding(PieSeries.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+    series2.XBindingPath = "Demand";
+    series2.YBindingPath = "Year2011";
+    series2.Radius = 0.5;
 
-chart.Series.Add(series1);
-chart.Series.Add(series2);
+    chart.Series.Add(series1);
+    chart.Series.Add(series2);
 
 {% endhighlight %}
 
@@ -233,4 +233,4 @@ chart.Series.Add(series2);
 
 ![Combination Chart of WinUI chart](Series_images/winui_combination_chart.png)
 
-N> You can refer to our [WinUI Pie Chart](https://www.syncfusion.com/winui-controls/charts/winui-pie-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Pie Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Circular%20Charts/PieChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can refer to our [WinUI Pie Chart](https://www.syncfusion.com/winui-controls/charts/winui-pie-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Pie Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Circular%20Charts/Pie/PieChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.

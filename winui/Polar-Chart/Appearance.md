@@ -19,54 +19,54 @@ Currently, the [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI
 
 {% highlight xaml %}
 
-<chart:SfPolarChart x:Name="chart"
-                    GridLineType="Polygon">
-        ...
-        <chart:SfPolarChart.Series>
-            <chart:PolarLineSeries
-						ItemsSource="{Binding PlantDetails}" 
-                        XBindingPath="Direction"
-                        YBindingPath="Tree" Label="Tree">
-            </chart:PolarLineSeries>
+    <chart:SfPolarChart x:Name="chart"
+                        GridLineType="Polygon">
+            ...
+            <chart:SfPolarChart.Series>
+                <chart:PolarLineSeries
+                            ItemsSource="{Binding PlantDetails}" 
+                            XBindingPath="Direction"
+                            YBindingPath="Tree" Label="Tree">
+                </chart:PolarLineSeries>
 
-            <chart:PolarLineSeries
-						ItemsSource="{Binding PlantDetails}" 
-                        XBindingPath="Direction"
-                        YBindingPath="Weed" Label="Weed">
-            </chart:PolarLineSeries>
+                <chart:PolarLineSeries
+                            ItemsSource="{Binding PlantDetails}" 
+                            XBindingPath="Direction"
+                            YBindingPath="Weed" Label="Weed">
+                </chart:PolarLineSeries>
 
-            <chart:PolarLineSeries
-						ItemsSource="{Binding PlantDetails}" 
-                        XBindingPath="Direction"
-                        YBindingPath="Flower" Label="Flower">
-            </chart:PolarLineSeries>
-        </chart:SfPolarChart.Series>
-        ...
-</chart:SfPolarChart>
+                <chart:PolarLineSeries
+                            ItemsSource="{Binding PlantDetails}" 
+                            XBindingPath="Direction"
+                            YBindingPath="Flower" Label="Flower">
+                </chart:PolarLineSeries>
+            </chart:SfPolarChart.Series>
+            ...
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
-chart.GridLineType = PolarChartGridLineType.Polygon;
-...
-PolarLineSeries series1 = new PolarLineSeries();
-series1.XBindingPath = "Direction";
-series1.YBindingPath = "Tree";
-series1.ItemsSource = viewModel.PlantDetails;
+    SfPolarChart chart = new SfPolarChart();
+    chart.GridLineType = PolarChartGridLineType.Polygon;
+    ...
+    PolarLineSeries series1 = new PolarLineSeries();
+    series1.XBindingPath = "Direction";
+    series1.YBindingPath = "Tree";
+    series1.ItemsSource = viewModel.PlantDetails;
 
-PolarLineSeries series2 = new PolarLineSeries();
-series2.XBindingPath = "Direction";
-series2.YBindingPath = "Weed";
-series2.ItemsSource = viewModel.PlantDetails;
+    PolarLineSeries series2 = new PolarLineSeries();
+    series2.XBindingPath = "Direction";
+    series2.YBindingPath = "Weed";
+    series2.ItemsSource = viewModel.PlantDetails;
 
-PolarLineSeries series3 = new PolarLineSeries();
-series3.XBindingPath = "Direction";
-series3.YBindingPath = "Flower";
-series3.ItemsSource = viewModel.PlantDetails;
-...
-this.Content = chart;
+    PolarLineSeries series3 = new PolarLineSeries();
+    series3.XBindingPath = "Direction";
+    series3.YBindingPath = "Flower";
+    series3.ItemsSource = viewModel.PlantDetails;
+    ...
+    this.Content = chart;
 
 {% endhighlight %}
 
@@ -82,40 +82,40 @@ The [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 
 {% highlight xaml %}
 
-<Grid>
-    <Grid.Resources>
-        <BrushCollection x:Key="customBrushes">
-                <SolidColorBrush Color="#4dd0e1"/>
-                <SolidColorBrush Color="#26c6da"/>
-                <SolidColorBrush Color="#00bcd4"/>
-                <SolidColorBrush Color="#00acc1"/>
-                <SolidColorBrush Color="#0097a7"/>
-                <SolidColorBrush Color="#00838f"/>
-        </BrushCollection>
-    </Grid.Resources>
-    <chart:SfPolarChart x:Name="chart"
-                        PaletteBrushes="{StaticResource customBrushes}" >
-. . .
-</chart:SfPolarChart>
-</Grid>
+    <Grid>
+        <Grid.Resources>
+            <BrushCollection x:Key="customBrushes">
+                    <SolidColorBrush Color="#4dd0e1"/>
+                    <SolidColorBrush Color="#26c6da"/>
+                    <SolidColorBrush Color="#00bcd4"/>
+                    <SolidColorBrush Color="#00acc1"/>
+                    <SolidColorBrush Color="#0097a7"/>
+                    <SolidColorBrush Color="#00838f"/>
+            </BrushCollection>
+        </Grid.Resources>
+        <chart:SfPolarChart x:Name="chart"
+                            PaletteBrushes="{StaticResource customBrushes}" >
+    . . .
+    </chart:SfPolarChart>
+    </Grid>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
-...
-List<Brush> customBrushes = new List<Brush>();
-customBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 77, 208, 225)));
-customBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 38, 198, 218)));
-customBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 188, 212)));
-customBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 172, 193)));
-customBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 151, 167)));
-customBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 131, 143)));
+    SfPolarChart chart = new SfPolarChart();
+    ...
+    List<Brush> customBrushes = new List<Brush>();
+    customBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 77, 208, 225)));
+    customBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 38, 198, 218)));
+    customBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 188, 212)));
+    customBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 172, 193)));
+    customBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 151, 167)));
+    customBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 131, 143)));
 
-chart.PaletteBrushes = customBrushes;
-. . .            
-this.Content = chart;
+    chart.PaletteBrushes = customBrushes;
+    . . .            
+    this.Content = chart;
 
 {% endhighlight %}
 
@@ -131,53 +131,53 @@ Gradient for the polar chart can be set by using the [PaletteBrushes](https://he
 
 {% highlight xaml %}
 
-<Grid>
-    <Grid.Resources>
-        <BrushCollection x:Key="customBrushes">
-                <LinearGradientBrush>
-                    <GradientStop Offset="1" Color="#FFE7C7" />
-                    <GradientStop Offset="0" Color="#FCB69F" />
-                </LinearGradientBrush>
-                <LinearGradientBrush>
-                    <GradientStop Offset="1" Color="#fadd7d" />
-                    <GradientStop Offset="0" Color="#fccc2d" />
-                </LinearGradientBrush>
-                <LinearGradientBrush>
-                    <GradientStop Offset="1" Color="#DCFA97" />
-                    <GradientStop Offset="0" Color="#96E6A1" />
-                </LinearGradientBrush>
-        </BrushCollection>
-    </Grid.Resources>
-    <chart:SfPolarChart x:Name="chart" 
-                        PaletteBrushes="{StaticResource customBrushes}">
-. . .
-</chart:SfPolarChart>
-</Grid>
+    <Grid>
+        <Grid.Resources>
+            <BrushCollection x:Key="customBrushes">
+                    <LinearGradientBrush>
+                        <GradientStop Offset="1" Color="#FFE7C7" />
+                        <GradientStop Offset="0" Color="#FCB69F" />
+                    </LinearGradientBrush>
+                    <LinearGradientBrush>
+                        <GradientStop Offset="1" Color="#fadd7d" />
+                        <GradientStop Offset="0" Color="#fccc2d" />
+                    </LinearGradientBrush>
+                    <LinearGradientBrush>
+                        <GradientStop Offset="1" Color="#DCFA97" />
+                        <GradientStop Offset="0" Color="#96E6A1" />
+                    </LinearGradientBrush>
+            </BrushCollection>
+        </Grid.Resources>
+        <chart:SfPolarChart x:Name="chart" 
+                            PaletteBrushes="{StaticResource customBrushes}">
+    . . .
+    </chart:SfPolarChart>
+    </Grid>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
-...
-List<Brush> customBrushes = new List<Brush>();
-LinearGradientBrush gradientColor1 = new LinearGradientBrush();
-GradientStop stop1 = new GradientStop() { Offset = 1, Color = Color.FromArgb(255, 255, 231, 199) };
-GradientStop stop2 = new GradientStop() { Offset = 0, Color = Color.FromArgb(255, 252, 182, 159) };
-gradientColor1.GradientStops.Add(stop1);
-gradientColor1.GradientStops.Add(stop2);
-LinearGradientBrush gradientColor2 = new LinearGradientBrush();
-stop1 = new GradientStop() { Offset = 1, Color = Color.FromArgb(255, 250, 221, 125) };
-stop2 = new GradientStop() { Offset = 0, Color = Color.FromArgb(255, 252, 204, 45) };
+    SfPolarChart chart = new SfPolarChart();
+    ...
+    List<Brush> customBrushes = new List<Brush>();
+    LinearGradientBrush gradientColor1 = new LinearGradientBrush();
+    GradientStop stop1 = new GradientStop() { Offset = 1, Color = Color.FromArgb(255, 255, 231, 199) };
+    GradientStop stop2 = new GradientStop() { Offset = 0, Color = Color.FromArgb(255, 252, 182, 159) };
+    gradientColor1.GradientStops.Add(stop1);
+    gradientColor1.GradientStops.Add(stop2);
+    LinearGradientBrush gradientColor2 = new LinearGradientBrush();
+    stop1 = new GradientStop() { Offset = 1, Color = Color.FromArgb(255, 250, 221, 125) };
+    stop2 = new GradientStop() { Offset = 0, Color = Color.FromArgb(255, 252, 204, 45) };
 
-gradientColor2.GradientStops.Add(stop1);
-gradientColor2.GradientStops.Add(stop2);
+    gradientColor2.GradientStops.Add(stop1);
+    gradientColor2.GradientStops.Add(stop2);
 
-customBrushes.Add(gradientColor1);
-customBrushes.Add(gradientColor2);
+    customBrushes.Add(gradientColor1);
+    customBrushes.Add(gradientColor2);
 
-chart.PaletteBrushes = customBrushes;
-. . .
+    chart.PaletteBrushes = customBrushes;
+    . . .
 
 {% endhighlight %}
 
@@ -191,38 +191,38 @@ Gradient color using the [Fill](https://help.syncfusion.com/cr/winui/Syncfusion.
 
 {% highlight xaml %}
 
-<chart:SfPolarChart>
-    ...
-    <chart:PolarAreaSeries  ItemsSource="{Binding PlantDetails}" 
-                            XBindingPath="Direction" 
-                            YBindingPath="Tree" Label="Tree">
+    <chart:SfPolarChart>
+        ...
+        <chart:PolarAreaSeries  ItemsSource="{Binding PlantDetails}" 
+                                XBindingPath="Direction" 
+                                YBindingPath="Tree" Label="Tree">
 
-        <chart:PolarAreaSeries.Fill>
-            <LinearGradientBrush>
-                <GradientStop Offset="1" Color="#A8EAEE" />
-                <GradientStop Offset="0" Color="#7BB0F9" />
-            </LinearGradientBrush>
-        </chart:PolarAreaSeries.Fill>
-                   
-    </chart:PolarAreaSeries>
-...
-</chart:SfPolarChart>
+            <chart:PolarAreaSeries.Fill>
+                <LinearGradientBrush>
+                    <GradientStop Offset="1" Color="#A8EAEE" />
+                    <GradientStop Offset="0" Color="#7BB0F9" />
+                </LinearGradientBrush>
+            </chart:PolarAreaSeries.Fill>
+                    
+        </chart:PolarAreaSeries>
+    ...
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
-. . .
-LinearGradientBrush gradientColor = new LinearGradientBrush();
-GradientStop stop1 = new GradientStop() { Offset = 1, Color = Color.FromArgb(255, 168, 234, 238) };
-GradientStop stop2 = new GradientStop() { Offset = 0, Color = Color.FromArgb(255, 123, 176, 249) };
-gradientColor.GradientStops.Add(stop1);
-gradientColor.GradientStops.Add(stop2);
+    SfPolarChart chart = new SfPolarChart();
+    . . .
+    LinearGradientBrush gradientColor = new LinearGradientBrush();
+    GradientStop stop1 = new GradientStop() { Offset = 1, Color = Color.FromArgb(255, 168, 234, 238) };
+    GradientStop stop2 = new GradientStop() { Offset = 0, Color = Color.FromArgb(255, 123, 176, 249) };
+    gradientColor.GradientStops.Add(stop1);
+    gradientColor.GradientStops.Add(stop2);
 
-PolarAreaSeries series = new PolarAreaSeries();
-series.Fill = gradientColor;
-...
+    PolarAreaSeries series = new PolarAreaSeries();
+    series.Fill = gradientColor;
+    ...
 
 {% endhighlight %}
 

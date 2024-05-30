@@ -15,27 +15,27 @@ documentation: ug
 
 {% highlight xaml %}
 
-<chart:SfCircularChart>
+    <chart:SfCircularChart>
 
-    <chart:SfCircularChart.Series>
-        <chart:DoughnutSeries ItemsSource="{Binding Data}" 
-                              XBindingPath="Product" 
-                              YBindingPath="SalesRate" />
-    </chart:SfCircularChart.Series>
+        <chart:SfCircularChart.Series>
+            <chart:DoughnutSeries ItemsSource="{Binding Data}" 
+                                XBindingPath="Product" 
+                                YBindingPath="SalesRate" />
+        </chart:SfCircularChart.Series>
 
-</chart:SfCircularChart>
+    </chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCircularChart chart = new SfCircularChart();
+    SfCircularChart chart = new SfCircularChart();
 
-DoughnutSeries series = new DoughnutSeries();
-series.XBindingPath = "Product";
-series.YBindingPath = "SalesRate";
+    DoughnutSeries series = new DoughnutSeries();
+    series.XBindingPath = "Product";
+    series.YBindingPath = "SalesRate";
 
-chart.Series.Add(series);
+    chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -51,47 +51,47 @@ Circular chart provides support add the multiple doughnut series in a single cha
 
 {% highlight xaml %}
 
-<chart:SfCircularChart>
+    <chart:SfCircularChart>
 
-    <chart:SfCircularChart.Series>
-         <chart:SfCircularChart.Series>
-                <chart:DoughnutSeries ItemsSource="{Binding Data}" 
-                         XBindingPath="Product" 
-                         YBindingPath="SalesRate1">
-                </chart:DoughnutSeries>
-                <chart:DoughnutSeries ItemsSource="{Binding Data}" 
-                         XBindingPath="Product" 
-                         YBindingPath="SalesRate2">
-                </chart:DoughnutSeries>
-                <chart:DoughnutSeries ItemsSource="{Binding Data}" 
-                         XBindingPath="Product" 
-                         YBindingPath="SalesRate3">
-                </chart:DoughnutSeries>
-            </chart:SfCircularChart.Series>
-    </chart:SfCircularChart.Series>
+        <chart:SfCircularChart.Series>
+            <chart:SfCircularChart.Series>
+                    <chart:DoughnutSeries ItemsSource="{Binding Data}" 
+                            XBindingPath="Product" 
+                            YBindingPath="SalesRate1">
+                    </chart:DoughnutSeries>
+                    <chart:DoughnutSeries ItemsSource="{Binding Data}" 
+                            XBindingPath="Product" 
+                            YBindingPath="SalesRate2">
+                    </chart:DoughnutSeries>
+                    <chart:DoughnutSeries ItemsSource="{Binding Data}" 
+                            XBindingPath="Product" 
+                            YBindingPath="SalesRate3">
+                    </chart:DoughnutSeries>
+                </chart:SfCircularChart.Series>
+        </chart:SfCircularChart.Series>
 
-</chart:SfCircularChart>
+    </chart:SfCircularChart>
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCircularChart chart = new SfCircularChart();
+    SfCircularChart chart = new SfCircularChart();
 
-DoughnutSeries series1 = new DoughnutSeries();
-series1.XBindingPath = "Product";
-series1.YBindingPath = "SalesRate1";
+    DoughnutSeries series1 = new DoughnutSeries();
+    series1.XBindingPath = "Product";
+    series1.YBindingPath = "SalesRate1";
 
-DoughnutSeries series2 = new DoughnutSeries();
-series2.XBindingPath = "Product";
-series2.YBindingPath = "SalesRate2";
+    DoughnutSeries series2 = new DoughnutSeries();
+    series2.XBindingPath = "Product";
+    series2.YBindingPath = "SalesRate2";
 
-DoughnutSeries series3 = new DoughnutSeries();
-series3.XBindingPath = "Product";
-series3.YBindingPath = "SalesRate3";
+    DoughnutSeries series3 = new DoughnutSeries();
+    series3.XBindingPath = "Product";
+    series3.YBindingPath = "SalesRate3";
 
-chart.Series.Add(series1);
-chart.Series.Add(series2);
-chart.Series.Add(series3);
+    chart.Series.Add(series1);
+    chart.Series.Add(series2);
+    chart.Series.Add(series3);
 
 {% endhighlight %}
 
@@ -121,14 +121,14 @@ The [InnerRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 
 {% highlight c# %}
 
-SfCircularChart chart = new SfCircularChart();
+    SfCircularChart chart = new SfCircularChart();
 
-DoughnutSeries series = new DoughnutSeries();
-series.XBindingPath = "Product";
-series.YBindingPath = "SalesRate";
-series.InnerRadius = 0.7;
+    DoughnutSeries series = new DoughnutSeries();
+    series.XBindingPath = "Product";
+    series.YBindingPath = "SalesRate";
+    series.InnerRadius = 0.7;
 
-chart.Series.Add(series);
+    chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -159,15 +159,15 @@ By using the [StartAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 
 {% highlight c# %}
 
-SfCircularChart chart = new SfCircularChart();
+    SfCircularChart chart = new SfCircularChart();
 
-DoughnutSeries series = new DoughnutSeries();
-series.XBindingPath = "Product";
-series.YBindingPath = "SalesRate";
-series.StartAngle = 180;
-series.EndAngle = 360;
+    DoughnutSeries series = new DoughnutSeries();
+    series.XBindingPath = "Product";
+    series.YBindingPath = "SalesRate";
+    series.StartAngle = 180;
+    series.EndAngle = 360;
 
-chart.Series.Add(series);
+    chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -175,4 +175,4 @@ chart.Series.Add(series);
 
 ![Semi doughnut support in WinUI Chart](Series_images/semi_doughnut_chart.png)
 
-N> You can refer to our [WinUI Doughnut Chart](https://www.syncfusion.com/winui-controls/charts/winui-doughnut-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Doughnut Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Circular%20Charts/DoughnutChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can refer to our [WinUI Doughnut Chart](https://www.syncfusion.com/winui-controls/charts/winui-doughnut-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Doughnut Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Circular%20Charts/Doughnut/DoughnutChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.

@@ -27,38 +27,38 @@ The following [ChartSelectionType](https://help.syncfusion.com/cr/winui/Syncfusi
 
 ## Enable Selection
 
-To enable the selection in chart, create an instance of the [DataPointSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataPointSelectionBehavior.html) and set it to the [SelectionBehavior]() property of the circular series. Also set the [SelectionBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionBrush) property to highlight the segment in the series.
+To enable the selection in chart, create an instance of the [DataPointSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataPointSelectionBehavior.html) and set it to the [SelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html?tabs=tabid-24%2Ctabid-22%2Ctabid-4%2Ctabid-11%2Ctabid-6%2Ctabid-18%2Ctabid-8%2Ctabid-13%2Ctabid-15%2Ctabid-17%2Ctabid-1%2Ctabid-3%2Ctabid-10%2Ctabid-20#Syncfusion_UI_Xaml_Charts_ChartSeries_SelectionBehavior) property of the circular series. Also set the [SelectionBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionBrush) property to highlight the segment in the series.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfCircularChart>
-. . .
-    <chart:SfCircularChart.Series>
-        <chart:PieSeries>
-            <chart:PieSeries.SelectionBehavior>
-                <chart:DataPointSelectionBehavior SelectionBrush="BlueViolet"/>
-            </chart:PieSeries.SelectionBehavior>
-        </chart:PieSeries>
-    </chart:SfCircularChart.Series>
-    
-</chart:SfCircularChart>
+    <chart:SfCircularChart>
+    . . .
+        <chart:SfCircularChart.Series>
+            <chart:PieSeries>
+                <chart:PieSeries.SelectionBehavior>
+                    <chart:DataPointSelectionBehavior SelectionBrush="BlueViolet"/>
+                </chart:PieSeries.SelectionBehavior>
+            </chart:PieSeries>
+        </chart:SfCircularChart.Series>
+        
+    </chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCircularChart chart = new SfCircularChart();
-. . .
-PieSeries series = new PieSeries();
-DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
-{
-    SelectionBrush = new SolidColorBrush(Colors.BlueViolet),
-};
+    SfCircularChart chart = new SfCircularChart();
+    . . .
+    PieSeries series = new PieSeries();
+    DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
+    {
+        SelectionBrush = new SolidColorBrush(Colors.BlueViolet),
+    };
 
-series.SelectionBehavior = selection;
-chart.Series.Add(series);
+    series.SelectionBehavior = selection;
+    chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -74,34 +74,34 @@ The circular chart allows to select single or multiple segments using the [Type]
 
 {% highlight xml %}
 
-<chart:SfCircularChart>
-. . .
-    <chart:SfCircularChart.Series>
-        <chart:PieSeries>
-            <chart:PieSeries.SelectionBehavior>
-                <chart:DataPointSelectionBehavior SelectionBrush="BlueViolet"
-												  Type="Multiple" />
-            </chart:PieSeries.SelectionBehavior>
-        </chart:PieSeries>
-    </chart:SfCircularChart.Series>
+    <chart:SfCircularChart>
+    . . .
+        <chart:SfCircularChart.Series>
+            <chart:PieSeries>
+                <chart:PieSeries.SelectionBehavior>
+                    <chart:DataPointSelectionBehavior SelectionBrush="BlueViolet"
+                                                    Type="Multiple" />
+                </chart:PieSeries.SelectionBehavior>
+            </chart:PieSeries>
+        </chart:SfCircularChart.Series>
 
-</chart:SfCircularChart>
+    </chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCircularChart chart = new SfCircularChart();
-. . .
-PieSeries series = new PieSeries();
-DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
-{
-    SelectionBrush = new SolidColorBrush(Colors.BlueViolet),
-    Type = ChartSelectionType.Multiple
-};
+    SfCircularChart chart = new SfCircularChart();
+    . . .
+    PieSeries series = new PieSeries();
+    DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
+    {
+        SelectionBrush = new SolidColorBrush(Colors.BlueViolet),
+        Type = ChartSelectionType.Multiple
+    };
 
-series.SelectionBehavior = selection;
-chart.Series.Add(series);
+    series.SelectionBehavior = selection;
+    chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -119,35 +119,35 @@ The circular chart provides support to select a point programmatically on a char
 
 {% highlight xaml %}
 
-<chart:SfCircularChart>
-. . .
-    <chart:SfCircularChart.Series>
-        <chart:PieSeries>
-            <chart:PieSeries.SelectionBehavior>
-                <chart:DataPointSelectionBehavior
-							SelectionBrush="BlueViolet" 
-							SelectedIndex="2"/>
-            </chart:PieSeries.SelectionBehavior>
-        </chart:PieSeries>
-    </chart:SfCircularChart.Series>
-    
-</chart:SfCircularChart>
+    <chart:SfCircularChart>
+    . . .
+        <chart:SfCircularChart.Series>
+            <chart:PieSeries>
+                <chart:PieSeries.SelectionBehavior>
+                    <chart:DataPointSelectionBehavior
+                                SelectionBrush="BlueViolet" 
+                                SelectedIndex="2"/>
+                </chart:PieSeries.SelectionBehavior>
+            </chart:PieSeries>
+        </chart:SfCircularChart.Series>
+        
+    </chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCircularChart chart = new SfCircularChart();
-. . .
-PieSeries series = new PieSeries();
-DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
-{
-    SelectionBrush = new SolidColorBrush(Colors.BlueViolet),
-    SelectedIndex = 2
-};
+    SfCircularChart chart = new SfCircularChart();
+    . . .
+    PieSeries series = new PieSeries();
+    DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
+    {
+        SelectionBrush = new SolidColorBrush(Colors.BlueViolet),
+        SelectedIndex = 2
+    };
 
-series.SelectionBehavior = selection;
-chart.Series.Add(series);
+    series.SelectionBehavior = selection;
+    chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -163,37 +163,37 @@ The circular chart provides support to select multiple points programmatically o
 
 {% highlight xml %}
 
-<chart:SfCircularChart>
-. . .
-    <chart:SfCircularChart.Series>
-        <chart:PieSeries>
-            <chart:PieSeries.SelectionBehavior>
-                <chart:DataPointSelectionBehavior
-							SelectionBrush="BlueViolet"
-							Type="Multiple" 
-							SelectedIndexes="{Binding SelectedIndexes}" />
-            </chart:PieSeries.SelectionBehavior>
-        </chart:PieSeries>
-    </chart:SfCircularChart.Series>
+    <chart:SfCircularChart>
+    . . .
+        <chart:SfCircularChart.Series>
+            <chart:PieSeries>
+                <chart:PieSeries.SelectionBehavior>
+                    <chart:DataPointSelectionBehavior
+                                SelectionBrush="BlueViolet"
+                                Type="Multiple" 
+                                SelectedIndexes="{Binding SelectedIndexes}" />
+                </chart:PieSeries.SelectionBehavior>
+            </chart:PieSeries>
+        </chart:SfCircularChart.Series>
 
-</chart:SfCircularChart>
+    </chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCircularChart chart = new SfCircularChart();
-. . .
-PieSeries series = new PieSeries();
-DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
-{
-    SelectionBrush = new SolidColorBrush(Colors.BlueViolet),
-    Type = ChartSelectionType.Multiple,
-    SelectedIndexes = new List<int>() { 2, 3, 4 }
-};
+    SfCircularChart chart = new SfCircularChart();
+    . . .
+    PieSeries series = new PieSeries();
+    DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
+    {
+        SelectionBrush = new SolidColorBrush(Colors.BlueViolet),
+        Type = ChartSelectionType.Multiple,
+        SelectedIndexes = new List<int>() { 2, 3, 4 }
+    };
 
-series.SelectionBehavior = selection;
-chart.Series.Add(series);
+    series.SelectionBehavior = selection;
+    chart.Series.Add(series);
 
 {% endhighlight %}
 

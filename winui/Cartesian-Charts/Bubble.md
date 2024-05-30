@@ -19,47 +19,47 @@ To render a bubble series, create an instance of [BubbleSeries](https://help.syn
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart>
-    
-    <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis />
-    </chart:SfCartesianChart.XAxes>
+    <chart:SfCartesianChart>
+        
+        <chart:SfCartesianChart.XAxes>
+            <chart:CategoryAxis />
+        </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis />
-    </chart:SfCartesianChart.YAxes> 
+        <chart:SfCartesianChart.YAxes>
+            <chart:NumericalAxis />
+        </chart:SfCartesianChart.YAxes> 
 
-    <chart:BubbleSeries ItemsSource="{Binding Data}" 
-                        XBindingPath="XValue" 
-                        YBindingPath="YValue" 
-                        Size="Size" 
-                        MinimumRadius="5" 
-                        MaximumRadius="10"/>
-    ...
-<chart:SfCartesianChart>
+        <chart:BubbleSeries ItemsSource="{Binding Data}" 
+                            XBindingPath="XValue" 
+                            YBindingPath="YValue" 
+                            Size="Size" 
+                            MinimumRadius="5" 
+                            MaximumRadius="10"/>
+        ...
+    <chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart();
-CategoryAxis xAxis = new CategoryAxis();
-chart.XAxes.Add(xAxis);
-NumericalAxis yAxis = new NumericalAxis();
-chart.YAxes.Add(yAxis);
-. . .
-BubbleSeries series = new BubbleSeries()
-{
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "XValue",
-    YBindingPath = "YValue",
-    Size = "Size",
-    MinimumRadius = 5,
-    MaximumRadius = 10
-};
+    SfCartesianChart chart = new SfCartesianChart();
+    CategoryAxis xAxis = new CategoryAxis();
+    chart.XAxes.Add(xAxis);
+    NumericalAxis yAxis = new NumericalAxis();
+    chart.YAxes.Add(yAxis);
+    . . .
+    BubbleSeries series = new BubbleSeries()
+    {
+        ItemsSource = new ViewModel().Data,
+        XBindingPath = "XValue",
+        YBindingPath = "YValue",
+        Size = "Size",
+        MinimumRadius = 5,
+        MaximumRadius = 10
+    };
 
-chart.Series.Add(series);
-...
+    chart.Series.Add(series);
+    ...
 
 {% endhighlight %}
 
@@ -67,4 +67,4 @@ chart.Series.Add(series);
 
 ![Bubble chart type in WinUI Chart](Bubble_Images/WinUI_bubble_chart.png)
 
-N> Refer to our [WinUI Bubble Chart](https://www.syncfusion.com/winui-controls/charts/winui-bubble-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Bubble Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Basic%20Charts/BubbleChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> Refer to our [WinUI Bubble Chart](https://www.syncfusion.com/winui-controls/charts/winui-bubble-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Bubble Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/Bubble) that shows how to easily configure with built-in support for creating stunning visual effects.

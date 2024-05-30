@@ -15,18 +15,18 @@ documentation: ug
 
 {% highlight xaml %}
 
-<chart:SfPolarChart x:Name="chart" Header="Polar Chart">
- . . .           
-</chart:SfPolarChart>
+    <chart:SfPolarChart x:Name="chart" Header="Polar Chart">
+    . . .           
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-SfPolarChart chart = new SfPolarChart();
-chart.Header = "Polar Chart";
-. . . 
-this.Content = chart;
+    SfPolarChart chart = new SfPolarChart();
+    chart.Header = "Polar Chart";
+    . . . 
+    this.Content = chart;
 
 {% endhighlight %}
 
@@ -42,39 +42,39 @@ Chart provides support to add any `UIElement` as a title. The following code exa
 
 {% highlight xaml %}
 
- <chart:SfPolarChart>
-    <chart:SfPolarChart.Header>
-        <Border BorderThickness="2" BorderBrush="Black" Margin="10" CornerRadius="5">
-            <TextBlock FontSize="14" Text="Polar Chart" Margin="5"/>
-        </Border>
-    </chart:SfPolarChart.Header>
-    ...
-</chart:SfPolarChart>
+    <chart:SfPolarChart>
+        <chart:SfPolarChart.Header>
+            <Border BorderThickness="2" BorderBrush="Black" Margin="10" CornerRadius="5">
+                <TextBlock FontSize="14" Text="Polar Chart" Margin="5"/>
+            </Border>
+        </chart:SfPolarChart.Header>
+        ...
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
-. . .
-Border border = new Border()
-{
-    BorderThickness = new Thickness(2),
-    BorderBrush = new SolidColorBrush(Colors.Black),
-    Margin = new Thickness(10),
-    CornerRadius = new CornerRadius(5)
-};
+    SfPolarChart chart = new SfPolarChart();
+    . . .
+    Border border = new Border()
+    {
+        BorderThickness = new Thickness(2),
+        BorderBrush = new SolidColorBrush(Colors.Black),
+        Margin = new Thickness(10),
+        CornerRadius = new CornerRadius(5)
+    };
 
-TextBlock textBlock = new TextBlock()
-{
-    Text = "Polar Chart",
-    Margin = new Thickness(5),
-    FontSize = 14
-};
+    TextBlock textBlock = new TextBlock()
+    {
+        Text = "Polar Chart",
+        Margin = new Thickness(5),
+        FontSize = 14
+    };
 
-border.Child = textBlock;
-. . . 
-this.Content = chart;
+    border.Child = textBlock;
+    . . . 
+    this.Content = chart;
 
 {% endhighlight %}
 
@@ -90,51 +90,51 @@ The title text content can be aligned horizontally to the left, center or right 
 
 {% highlight xaml %}
 
-<chart:SfPolarChart HorizontalHeaderAlignment="Left">
-    <chart:SfPolarChart.Header>
-        <Border BorderThickness="2"
-				BorderBrush="Black"
-				Background="LightBlue"
-				Margin="10"
-				CornerRadius="5">
-            <TextBlock Text="Polar Chart"
-                       Margin="5" 
-                       HorizontalTextAlignment="Center"
-                       FontSize="14" 
-                       Foreground="Blue">
-            </TextBlock>
-        </Border>
-    </chart:SfPolarChart.Header>
-    ...
- </chart:SfPolarChart>
+    <chart:SfPolarChart HorizontalHeaderAlignment="Left">
+        <chart:SfPolarChart.Header>
+            <Border BorderThickness="2"
+                    BorderBrush="Black"
+                    Background="LightBlue"
+                    Margin="10"
+                    CornerRadius="5">
+                <TextBlock Text="Polar Chart"
+                        Margin="5" 
+                        HorizontalTextAlignment="Center"
+                        FontSize="14" 
+                        Foreground="Blue">
+                </TextBlock>
+            </Border>
+        </chart:SfPolarChart.Header>
+        ...
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
-chart.HorizontalHeaderAlignment = HorizontalAlignment.Left;
-...
-Border border = new Border()
-{
-    BorderThickness = new Thickness(2),
-    BorderBrush = new SolidColorBrush(Colors.Black),
-    Background = new SolidColorBrush(Colors.LightBlue),
-    Margin = new Thickness(10),
-    CornerRadius = new CornerRadius(5)
-};
+    SfPolarChart chart = new SfPolarChart();
+    chart.HorizontalHeaderAlignment = HorizontalAlignment.Left;
+    ...
+    Border border = new Border()
+    {
+        BorderThickness = new Thickness(2),
+        BorderBrush = new SolidColorBrush(Colors.Black),
+        Background = new SolidColorBrush(Colors.LightBlue),
+        Margin = new Thickness(10),
+        CornerRadius = new CornerRadius(5)
+    };
 
-TextBlock textBlock = new TextBlock()
-{
-    Text = "Polar Chart",
-    HorizontalTextAlignment = TextAlignment.Center,
-    Foreground = new SolidColorBrush(Colors.Blue),
-    FontSize = 14,
-};
+    TextBlock textBlock = new TextBlock()
+    {
+        Text = "Polar Chart",
+        HorizontalTextAlignment = TextAlignment.Center,
+        Foreground = new SolidColorBrush(Colors.Blue),
+        FontSize = 14,
+    };
 
-border.Child = textBlock;
-chart.Header = border;
-...
+    border.Child = textBlock;
+    chart.Header = border;
+    ...
 
 {% endhighlight %}
 

@@ -42,31 +42,31 @@ documentation: ug
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart();
-CategoryAxis xAxis = new CategoryAxis();
-chart.XAxes.Add(xAxis);
-NumericalAxis yAxis = new NumericalAxis();
-chart.YAxes.Add(yAxis);
+    SfCartesianChart chart = new SfCartesianChart();
+    CategoryAxis xAxis = new CategoryAxis();
+    chart.XAxes.Add(xAxis);
+    NumericalAxis yAxis = new NumericalAxis();
+    chart.YAxes.Add(yAxis);
 
-LineSeries series1 = new LineSeries()
-{
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "Demand",
-    YBindingPath = "Year2010",
-};
+    LineSeries series1 = new LineSeries()
+    {
+        ItemsSource = new ViewModel().Data,
+        XBindingPath = "Demand",
+        YBindingPath = "Year2010",
+    };
 
-LineSeries series2 = new LineSeries()
-{
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "Demand",
-    YBindingPath = "Year2011",
+    LineSeries series2 = new LineSeries()
+    {
+        ItemsSource = new ViewModel().Data,
+        XBindingPath = "Demand",
+        YBindingPath = "Year2011",
 
-};
+    };
 
-chart.Series.Add(series1);
-chart.Series.Add(series2);
+    chart.Series.Add(series1);
+    chart.Series.Add(series2);
 
-this.Content = chart;
+    this.Content = chart;
 
 {% endhighlight %}
 
@@ -109,37 +109,37 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ch
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart();
-CategoryAxis xAxis = new CategoryAxis();
-chart.XAxes.Add(xAxis);
-NumericalAxis yAxis = new NumericalAxis();
-chart.YAxes.Add(yAxis);
+    SfCartesianChart chart = new SfCartesianChart();
+    CategoryAxis xAxis = new CategoryAxis();
+    chart.XAxes.Add(xAxis);
+    NumericalAxis yAxis = new NumericalAxis();
+    chart.YAxes.Add(yAxis);
 
-DoubleCollection doubleCollection = new DoubleCollection();
-doubleCollection.Add(5);
-doubleCollection.Add(2);
-. . .
-LineSeries series1 = new LineSeries()
-{
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "Demand",
-    YBindingPath = "Year2010",
-    StrokeDashArray = doubleCollection
+    DoubleCollection doubleCollection = new DoubleCollection();
+    doubleCollection.Add(5);
+    doubleCollection.Add(2);
+    . . .
+    LineSeries series1 = new LineSeries()
+    {
+        ItemsSource = new ViewModel().Data,
+        XBindingPath = "Demand",
+        YBindingPath = "Year2010",
+        StrokeDashArray = doubleCollection
 
-};
+    };
 
-LineSeries series2 = new LineSeries()
-{
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "Demand",
-    YBindingPath = "Year2011",
-    StrokeDashArray = doubleCollection
-};
+    LineSeries series2 = new LineSeries()
+    {
+        ItemsSource = new ViewModel().Data,
+        XBindingPath = "Demand",
+        YBindingPath = "Year2011",
+        StrokeDashArray = doubleCollection
+    };
 
-chart.Series.Add(series1);
-chart.Series.Add(series2);
+    chart.Series.Add(series1);
+    chart.Series.Add(series2);
 
-this.Content = chart;
+    this.Content = chart;
 
 {% endhighlight %}
 
@@ -180,25 +180,25 @@ The [StepLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart();
-CategoryAxis xAxis = new CategoryAxis();
-chart.XAxes.Add(xAxis);
-NumericalAxis yAxis = new NumericalAxis();
-chart.YAxes.Add(yAxis);
+    SfCartesianChart chart = new SfCartesianChart();
+    CategoryAxis xAxis = new CategoryAxis();
+    chart.XAxes.Add(xAxis);
+    NumericalAxis yAxis = new NumericalAxis();
+    chart.YAxes.Add(yAxis);
 
-StepLineSeries series1 = new StepLineSeries();
-series1.ItemsSource = new ViewModel().Data;
-series1.XBindingPath = "XValue";
-series1.YBindingPath = "YValue";
-chart.Series.Add(series);
+    StepLineSeries series1 = new StepLineSeries();
+    series1.ItemsSource = new ViewModel().Data;
+    series1.XBindingPath = "XValue";
+    series1.YBindingPath = "YValue";
+    chart.Series.Add(series);
 
-StepLineSeries series2 = new StepLineSeries();
-series2.ItemsSource = new ViewModel().Data;
-series2.XBindingPath = "XValue";
-series2.YBindingPath = "YValue1";
-chart.Series.Add(series2);
+    StepLineSeries series2 = new StepLineSeries();
+    series2.ItemsSource = new ViewModel().Data;
+    series2.XBindingPath = "XValue";
+    series2.YBindingPath = "YValue1";
+    chart.Series.Add(series2);
 
-this.Content = chart;
+    this.Content = chart;
 
 {% endhighlight %}
 
@@ -206,7 +206,7 @@ this.Content = chart;
 
 ![Step line Chart in WinUI](Chart-types_images/WinUI_step_line_chart.png)
 
-N> You can refer to our [WinUI Step Line Chart](https://www.syncfusion.com/winui-controls/charts/winui-step-line-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Step Line Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Basic%20Charts/StepLineChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can refer to our [WinUI Step Line Chart](https://www.syncfusion.com/winui-controls/charts/winui-step-line-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Step Line Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/StepLine) that shows how to easily configure with built-in support for creating stunning visual effects.
 
 ## Spline Chart 
 
@@ -310,23 +310,23 @@ The following types are used in SplineSeries:
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart();
-CategoryAxis xAxis = new CategoryAxis();
-chart.XAxes.Add(xAxis);
-NumericalAxis yAxis = new NumericalAxis();
-chart.YAxes.Add(yAxis);
+    SfCartesianChart chart = new SfCartesianChart();
+    CategoryAxis xAxis = new CategoryAxis();
+    chart.XAxes.Add(xAxis);
+    NumericalAxis yAxis = new NumericalAxis();
+    chart.YAxes.Add(yAxis);
 
-SplineSeries series = new SplineSeries()
-{
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "Demand",
-    YBindingPath = "Year2010",
-    Type = SplineType.Cardinal
-};
+    SplineSeries series = new SplineSeries()
+    {
+        ItemsSource = new ViewModel().Data,
+        XBindingPath = "Demand",
+        YBindingPath = "Year2010",
+        Type = SplineType.Cardinal
+    };
 
-chart.Series.Add(series);
+    chart.Series.Add(series);
 
-this.Content = chart;
+    this.Content = chart;
 
 {% endhighlight %}
 
@@ -334,4 +334,4 @@ this.Content = chart;
 
 ![Spline types chart in WinUI Chart](Chart-types_images/WinUI_spline_types_chart.png)
 
-N> You can refer to our [WinUI Spline Chart](https://www.syncfusion.com/winui-controls/charts/winui-spline-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Spline Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Basic%20Charts/SplineChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can refer to our [WinUI Spline Chart](https://www.syncfusion.com/winui-controls/charts/winui-spline-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Spline Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/Spline) that shows how to easily configure with built-in support for creating stunning visual effects.

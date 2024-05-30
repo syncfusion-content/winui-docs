@@ -19,25 +19,25 @@ To define the tooltip in the chart, set the [EnableTooltip](https://help.syncfus
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart x:Name="chart" 
-                     EnableTooltip="True"
-                     ItemsSource="{Binding Data}" 
-                     XBindingPath="Category"
-                     YBindingPath="Value">          
+    <chart:SfFunnelChart x:Name="chart" 
+                        EnableTooltip="True"
+                        ItemsSource="{Binding Data}" 
+                        XBindingPath="Category"
+                        YBindingPath="Value">          
 
-</chart:SfFunnelChart>
+    </chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfFunnelChart chart = new SfFunnelChart();
-chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
-chart.XBindingPath = "Category";
-chart.YBindingPath = "Value";
-chart.EnableTooltip = true;
-. . . 
-this.Content = chart;
+    SfFunnelChart chart = new SfFunnelChart();
+    chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+    chart.XBindingPath = "Category";
+    chart.YBindingPath = "Value";
+    chart.EnableTooltip = true;
+    . . . 
+    this.Content = chart;
 
 {% endhighlight %}
 
@@ -61,18 +61,18 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 
 {% highlight xml %}
 
-<chart:SfFunnelChart.TooltipBehavior>
-    <chart:ChartTooltipBehavior/>
-</chart:SfFunnelChart.TooltipBehavior>
+    <chart:SfFunnelChart.TooltipBehavior>
+        <chart:ChartTooltipBehavior/>
+    </chart:SfFunnelChart.TooltipBehavior>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfFunnelChart chart = new SfFunnelChart();
+    SfFunnelChart chart = new SfFunnelChart();
 
-ChartTooltipBehavior behavior = new ChartTooltipBehavior();
-chart.TooltipBehavior = behavior;
+    ChartTooltipBehavior behavior = new ChartTooltipBehavior();
+    chart.TooltipBehavior = behavior;
 
 {% endhighlight %}
 
@@ -88,34 +88,34 @@ The following code example explains how to apply the style for tooltip backgroun
 
 {% highlight xml %}
 
-<chart:SfFunnelChart x:Name="chart" EnableTooltip="True">
+    <chart:SfFunnelChart x:Name="chart" EnableTooltip="True">
 
-    <chart:SfFunnelChart.Resources>
-        <Style TargetType="Path" x:Key="style">
-            <Setter Property="Stroke" Value="Black"/>
-            <Setter Property="Fill" Value="Gray"/>
-        </Style>
-    </chart:SfFunnelChart.Resources>
+        <chart:SfFunnelChart.Resources>
+            <Style TargetType="Path" x:Key="style">
+                <Setter Property="Stroke" Value="Black"/>
+                <Setter Property="Fill" Value="Gray"/>
+            </Style>
+        </chart:SfFunnelChart.Resources>
 
-    <chart:SfFunnelChart.TooltipBehavior>
-        <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
-    </chart:SfFunnelChart.TooltipBehavior>
+        <chart:SfFunnelChart.TooltipBehavior>
+            <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
+        </chart:SfFunnelChart.TooltipBehavior>
 
-</chart:SfFunnelChart>
+    </chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfFunnelChart chart = new SfFunnelChart();
-chart.EnableTooltip = true;
-Style style = new Style(typeof(Path));
-style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Black)));
-style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)));
-...
-ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
-tooltipBehavior.Style = style;
-chart.TooltipBehavior = tooltipBehavior;
+    SfFunnelChart chart = new SfFunnelChart();
+    chart.EnableTooltip = true;
+    Style style = new Style(typeof(Path));
+    style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Black)));
+    style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)));
+    ...
+    ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
+    tooltipBehavior.Style = style;
+    chart.TooltipBehavior = tooltipBehavior;
 
 {% endhighlight %}
 
@@ -133,36 +133,36 @@ The following code example explains how to apply the style for a tooltip label.
 
 {% highlight xml %}
 
-<chart:SfFunnelChart x:Name="chart" EnableTooltip="True">
+    <chart:SfFunnelChart x:Name="chart" EnableTooltip="True">
 
-    <chart:SfFunnelChart.Resources>
-        <Style TargetType="TextBlock" x:Key="labelStyle">
-            <Setter Property="FontSize" Value="14"/>
-            <Setter Property="Foreground" Value="Red"/>
-            <Setter Property="FontStyle" Value="Italic"/>
-        </Style>
-    </chart:SfFunnelChart.Resources>
+        <chart:SfFunnelChart.Resources>
+            <Style TargetType="TextBlock" x:Key="labelStyle">
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="Foreground" Value="Red"/>
+                <Setter Property="FontStyle" Value="Italic"/>
+            </Style>
+        </chart:SfFunnelChart.Resources>
 
-    <chart:SfFunnelChart.TooltipBehavior>
-        <chart:ChartTooltipBehavior
-					LabelStyle="{StaticResource labelStyle}"/>
-    </chart:SfFunnelChart.TooltipBehavior>
+        <chart:SfFunnelChart.TooltipBehavior>
+            <chart:ChartTooltipBehavior
+                        LabelStyle="{StaticResource labelStyle}"/>
+        </chart:SfFunnelChart.TooltipBehavior>
 
-</chart:SfFunnelChart>
+    </chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfFunnelChart chart = new SfFunnelChart();
-Style labelStyle = new Style(typeof(TextBlock));
-labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
-labelStyle.Setters.Add(new Setter(TextBlock.FontStyleProperty, FontStyles.Italic));
-labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red)));
-...
-ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
-tooltipBehavior.LabelStyle = labelStyle;
-chart.TooltipBehavior = tooltipBehavior;
+    SfFunnelChart chart = new SfFunnelChart();
+    Style labelStyle = new Style(typeof(TextBlock));
+    labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
+    labelStyle.Setters.Add(new Setter(TextBlock.FontStyleProperty, FontStyles.Italic));
+    labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red)));
+    ...
+    ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
+    tooltipBehavior.LabelStyle = labelStyle;
+    chart.TooltipBehavior = tooltipBehavior;
 
 {% endhighlight %}
 
@@ -180,63 +180,63 @@ The following code example explains how to display both x-value and y-value in t
 
 {% highlight xaml %}
 
-<Grid x:Name="grid">
-    <Grid.Resources>
-        <DataTemplate x:Key="tooltipTemplate">
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="{Binding Item.Category}" 
-						   Foreground="Black"
-						   FontWeight="Medium"
-						   FontSize="12" 
-						   HorizontalAlignment="Center"
-						   VerticalAlignment="Center"/>
-                <TextBlock Text=" : " 
-						   Foreground="Black"
-						   FontWeight="Medium"
-						   FontSize="12"
-						   HorizontalAlignment="Center" 
-						   VerticalAlignment="Center"/>
-                <TextBlock Text="{Binding Item.Value}"
-						   Foreground="Black" 
-						   FontWeight="Medium"
-						   FontSize="12" 
-						   HorizontalAlignment="Center" 
-						   VerticalAlignment="Center"/>
-            </StackPanel>
-        </DataTemplate>
+    <Grid x:Name="grid">
+        <Grid.Resources>
+            <DataTemplate x:Key="tooltipTemplate">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="{Binding Item.Category}" 
+                            Foreground="Black"
+                            FontWeight="Medium"
+                            FontSize="12" 
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
+                    <TextBlock Text=" : " 
+                            Foreground="Black"
+                            FontWeight="Medium"
+                            FontSize="12"
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Center"/>
+                    <TextBlock Text="{Binding Item.Value}"
+                            Foreground="Black" 
+                            FontWeight="Medium"
+                            FontSize="12" 
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Center"/>
+                </StackPanel>
+            </DataTemplate>
 
-        <Style TargetType="Path" x:Key="style">
-            <Setter Property="Stroke" Value="Black"/>
-            <Setter Property="Fill" Value="LightGreen"/>
-            <Setter Property="StrokeThickness" Value="2"/>
-        </Style>
-    </Grid.Resources>
+            <Style TargetType="Path" x:Key="style">
+                <Setter Property="Stroke" Value="Black"/>
+                <Setter Property="Fill" Value="LightGreen"/>
+                <Setter Property="StrokeThickness" Value="2"/>
+            </Style>
+        </Grid.Resources>
 
-    <chart:SfFunnelChart x:Name="chart"
-                         ItemsSource="{Binding Data}" 
-                         XBindingPath="Category"  
-                         YBindingPath="Value" 
-                         EnableTooltip="True"
-                         TooltipTemplate="{StaticResource tooltipTemplate}">
+        <chart:SfFunnelChart x:Name="chart"
+                            ItemsSource="{Binding Data}" 
+                            XBindingPath="Category"  
+                            YBindingPath="Value" 
+                            EnableTooltip="True"
+                            TooltipTemplate="{StaticResource tooltipTemplate}">
 
-        <chart:SfFunnelChart.TooltipBehavior>
-            <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
-        </chart:SfFunnelChart.TooltipBehavior>
-    </chart:SfFunnelChart>
-</Grid>
+            <chart:SfFunnelChart.TooltipBehavior>
+                <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
+            </chart:SfFunnelChart.TooltipBehavior>
+        </chart:SfFunnelChart>
+    </Grid>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfFunnelChart chart = new SfFunnelChart();
-chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
-chart.XBindingPath = "Category";
-chart.YBindingPath = "Value";
-chart.EnableTooltip = true;
-chart.TooltipTemplate = this.grid.Resources["tooltipTemplate"] as DataTemplate;
-. . .
-this.Content = chart;
+    SfFunnelChart chart = new SfFunnelChart();
+    chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+    chart.XBindingPath = "Category";
+    chart.YBindingPath = "Value";
+    chart.EnableTooltip = true;
+    chart.TooltipTemplate = this.grid.Resources["tooltipTemplate"] as DataTemplate;
+    . . .
+    this.Content = chart;
         
 {% endhighlight %}
 

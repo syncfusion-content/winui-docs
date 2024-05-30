@@ -15,21 +15,21 @@ The legend contains list of series in the chart. The information provided in eac
 
 {% highlight xaml %}
 
-<chart:SfPolarChart>
-    ...
-    <chart:SfPolarChart.Legend>
-        <chart:ChartLegend/>
-    </chart:SfPolarChart.Legend>
-    
-</chart:SfPolarChart>
+    <chart:SfPolarChart>
+        ...
+        <chart:SfPolarChart.Legend>
+            <chart:ChartLegend/>
+        </chart:SfPolarChart.Legend>
+        
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
-chart.Legend = new ChartLegend();
-...
+    SfPolarChart chart = new SfPolarChart();
+    chart.Legend = new ChartLegend();
+    ...
 
 {% endhighlight %}
 
@@ -45,38 +45,38 @@ Polar chart provides support to add any `UIElement` as a title for legend. [Head
 
 {% highlight xaml %}
 
-<chart:SfPolarChart>
-    <chart:SfPolarChart.Legend>
-        <chart:ChartLegend>
-            <chart:ChartLegend.Header>
-                <TextBlock Text="Plant Details" 
-                           HorizontalAlignment="Center"
-                           FontWeight="Bold"
-                           Foreground="Blue"/>
-            </chart:ChartLegend.Header>
-        </chart:ChartLegend>
-    </chart:SfPolarChart.Legend>
-    ...
-</chart:SfPolarChart>
+    <chart:SfPolarChart>
+        <chart:SfPolarChart.Legend>
+            <chart:ChartLegend>
+                <chart:ChartLegend.Header>
+                    <TextBlock Text="Plant Details" 
+                            HorizontalAlignment="Center"
+                            FontWeight="Bold"
+                            Foreground="Blue"/>
+                </chart:ChartLegend.Header>
+            </chart:ChartLegend>
+        </chart:SfPolarChart.Legend>
+        ...
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
-ChartLegend legend = new ChartLegend();
+    SfPolarChart chart = new SfPolarChart();
+    ChartLegend legend = new ChartLegend();
 
-TextBlock textBlock = new TextBlock()
-{
-    Text = "Plant Details",
-    HorizontalTextAlignment = TextAlignment.Center,
-    Foreground = new SolidColorBrush(Colors.Blue),
-    FontWeight = FontWeights.Bold,
-};
+    TextBlock textBlock = new TextBlock()
+    {
+        Text = "Plant Details",
+        HorizontalTextAlignment = TextAlignment.Center,
+        Foreground = new SolidColorBrush(Colors.Blue),
+        FontWeight = FontWeights.Bold,
+    };
 
-legend.Header = textBlock;
-chart.Legend = legend;
-...
+    legend.Header = textBlock;
+    chart.Legend = legend;
+    ...
 
 {% endhighlight %}
 
@@ -96,28 +96,28 @@ The legend icon represents a symbol associated with each legend item. The appear
 
 {% highlight xaml %}
 
-<chart:SfPolarChart>
-    <chart:SfPolarChart.Legend>
-        <chart:ChartLegend IconWidth="15"
-						   IconHeight="15" 
-						   IconVisibility="Visible">
-        </chart:ChartLegend>
-    </chart:SfPolarChart.Legend>
-    ...
-</chart:SfPolarChart>
+    <chart:SfPolarChart>
+        <chart:SfPolarChart.Legend>
+            <chart:ChartLegend IconWidth="15"
+                            IconHeight="15" 
+                            IconVisibility="Visible">
+            </chart:ChartLegend>
+        </chart:SfPolarChart.Legend>
+        ...
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
-chart.Legend = new ChartLegend()
-{
-    IconWidth = 15,
-    IconHeight = 15,
-    IconVisibility = Visibility.Visible,
-};
-...
+    SfPolarChart chart = new SfPolarChart();
+    chart.Legend = new ChartLegend()
+    {
+        IconWidth = 15,
+        IconHeight = 15,
+        IconVisibility = Visibility.Visible,
+    };
+    ...
 
 {% endhighlight %}
 
@@ -133,23 +133,23 @@ chart.Legend = new ChartLegend()
 
 {% highlight xaml %}
 
-<chart:SfPolarChart>
-    <chart:SfPolarChart.Legend>
-        <chart:ChartLegend ItemMargin="10"/>
-    </chart:SfPolarChart.Legend>
-    ...
-</chart:SfPolarChart>
+    <chart:SfPolarChart>
+        <chart:SfPolarChart.Legend>
+            <chart:ChartLegend ItemMargin="10"/>
+        </chart:SfPolarChart.Legend>
+        ...
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
-chart.Legend = new ChartLegend()
-{
-    ItemMargin = new Thickness(10)
-};
-...
+    SfPolarChart chart = new SfPolarChart();
+    chart.Legend = new ChartLegend()
+    {
+        ItemMargin = new Thickness(10)
+    };
+    ...
 
 {% endhighlight %}
 
@@ -165,23 +165,23 @@ Polar chart provides support to enable the checkbox for each legend item to visi
 
 {% highlight xaml %}
 
-<chart:SfPolarChart>
-    <chart:SfPolarChart.Legend>
-        <chart:ChartLegend CheckBoxVisibility="Visible"/>
-    </chart:SfPolarChart.Legend>
-    ...
-</chart:SfPolarChart>
+    <chart:SfPolarChart>
+        <chart:SfPolarChart.Legend>
+            <chart:ChartLegend CheckBoxVisibility="Visible"/>
+        </chart:SfPolarChart.Legend>
+        ...
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
-chart.Legend = new ChartLegend()
-{
-   CheckBoxVisibility = Visibility.Visible
-};
-...
+    SfPolarChart chart = new SfPolarChart();
+    chart.Legend = new ChartLegend()
+    {
+    CheckBoxVisibility = Visibility.Visible
+    };
+    ...
 
 {% endhighlight %}
 
@@ -197,24 +197,24 @@ By enabling the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/winui/Sy
 
 {% highlight xaml %}
 
-<chart:SfPolarChart>
-    <chart:SfPolarChart.Legend>
-        <chart:ChartLegend ToggleSeriesVisibility="True"/>
-    </chart:SfPolarChart.Legend>
-    ...
-</chart:SfPolarChart>
+    <chart:SfPolarChart>
+        <chart:SfPolarChart.Legend>
+            <chart:ChartLegend ToggleSeriesVisibility="True"/>
+        </chart:SfPolarChart.Legend>
+        ...
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
+    SfPolarChart chart = new SfPolarChart();
 
-chart.Legend = new ChartLegend()
-{
-   ToggleSeriesVisibility = true
-};
-...
+    chart.Legend = new ChartLegend()
+    {
+    ToggleSeriesVisibility = true
+    };
+    ...
 
 {% endhighlight %}
 
@@ -232,24 +232,24 @@ To display the legend at the right, set the [Placement](https://help.syncfusion.
 
 {% highlight xaml %}
 
-<chart:SfPolarChart>
-    <chart:SfPolarChart.Legend>
-        <chart:ChartLegend ItemMargin="10" Placement="Right"/>
-    </chart:SfPolarChart.Legend>
-    ...
-</chart:SfPolarChart>
+    <chart:SfPolarChart>
+        <chart:SfPolarChart.Legend>
+            <chart:ChartLegend ItemMargin="10" Placement="Right"/>
+        </chart:SfPolarChart.Legend>
+        ...
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
-chart.Legend = new ChartLegend()
-{
-   Placement = LegendPlacement.Right,
-   ItemMargin = new Thickness(10),
-};
-...
+    SfPolarChart chart = new SfPolarChart();
+    chart.Legend = new ChartLegend()
+    {
+    Placement = LegendPlacement.Right,
+    ItemMargin = new Thickness(10),
+    };
+    ...
 
 {% endhighlight %}
 
@@ -270,30 +270,30 @@ The legend background appearance can be customized by using the following proper
 
 {% highlight xaml %}
 
-<chart:SfPolarChart>
-    <chart:SfPolarChart.Legend>
-        <chart:ChartLegend Background="LightGray"
-                           BorderBrush="Black" 
-                           BorderThickness="1" 
-                           CornerRadius="5">
-        </chart:ChartLegend>
-    </chart:SfPolarChart.Legend>
-    ...
-</chart:SfPolarChart>
+    <chart:SfPolarChart>
+        <chart:SfPolarChart.Legend>
+            <chart:ChartLegend Background="LightGray"
+                            BorderBrush="Black" 
+                            BorderThickness="1" 
+                            CornerRadius="5">
+            </chart:ChartLegend>
+        </chart:SfPolarChart.Legend>
+        ...
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
-chart.Legend = new ChartLegend()
-{
-    Background = new SolidColorBrush(Colors.LightGray),
-    BorderBrush = new SolidColorBrush(Colors.Black),
-    BorderThickness = new Thickness(1),
-    CornerRadius = new CornerRadius(5)
-};
-...
+    SfPolarChart chart = new SfPolarChart();
+    chart.Legend = new ChartLegend()
+    {
+        Background = new SolidColorBrush(Colors.LightGray),
+        BorderBrush = new SolidColorBrush(Colors.Black),
+        BorderThickness = new Thickness(1),
+        CornerRadius = new CornerRadius(5)
+    };
+    ...
 
 {% endhighlight %}
 
@@ -307,40 +307,40 @@ Customize each legend item by using the [ItemTemplate](https://help.syncfusion.c
 
 {% highlight xaml %}
 
-<chart:SfPolarChart x:Name="chart">
-    <chart:SfPolarChart.Resources>
-        <DataTemplate x:Key="labelTemplate">
-            <StackPanel Margin="10" Orientation="Vertical">
-                <Ellipse Height="15"
-						 Width="15" 
-						 Fill="{Binding Interior}" 
-                         Stroke="#4a4a4a"
-						 StrokeThickness="2"/>
-                <TextBlock HorizontalAlignment="Center"
-						   FontSize="12"
-                           Foreground="Black" 
-                           FontWeight="SemiBold"
-						   Text="{Binding Label}"/>
-            </StackPanel>
-        </DataTemplate>
-    </chart:SfPolarChart.Resources>
-    ...
-    <chart:SfPolarChart.Legend>
-        <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}"/>
-    </chart:SfPolarChart.Legend>
-    ...
-</chart:SfPolarChart>
+    <chart:SfPolarChart x:Name="chart">
+        <chart:SfPolarChart.Resources>
+            <DataTemplate x:Key="labelTemplate">
+                <StackPanel Margin="10" Orientation="Vertical">
+                    <Ellipse Height="15"
+                            Width="15" 
+                            Fill="{Binding Interior}" 
+                            Stroke="#4a4a4a"
+                            StrokeThickness="2"/>
+                    <TextBlock HorizontalAlignment="Center"
+                            FontSize="12"
+                            Foreground="Black" 
+                            FontWeight="SemiBold"
+                            Text="{Binding Label}"/>
+                </StackPanel>
+            </DataTemplate>
+        </chart:SfPolarChart.Resources>
+        ...
+        <chart:SfPolarChart.Legend>
+            <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}"/>
+        </chart:SfPolarChart.Legend>
+        ...
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
-chart.Legend = new ChartLegend()
-{
-   ItemTemplate = chart.Resources["labelTemplate"] as DataTemplate
-};
-...
+    SfPolarChart chart = new SfPolarChart();
+    chart.Legend = new ChartLegend()
+    {
+    ItemTemplate = chart.Resources["labelTemplate"] as DataTemplate
+    };
+    ...
 
 {% endhighlight %}
 

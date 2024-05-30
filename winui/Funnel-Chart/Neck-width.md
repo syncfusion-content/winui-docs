@@ -15,23 +15,23 @@ The neck width of funnel chart can be customized by using the [MinimumWidth](htt
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart MinimumWidth="20" 
-                     ItemsSource="{Binding Data}" 
-                     XBindingPath="Category"
-                     YBindingPath="Value">
-</chart:SfFunnelChart>
+    <chart:SfFunnelChart MinimumWidth="20" 
+                        ItemsSource="{Binding Data}" 
+                        XBindingPath="Category"
+                        YBindingPath="Value">
+    </chart:SfFunnelChart>
  
 {% endhighlight %}
 
 {% highlight C# %}
 
-SfFunnelChart chart = new SfFunnelChart();
-chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
-chart.XBindingPath = "Category";
-chart.YBindingPath = "Value";
-chart.MinimumWidth = 20;
-. . . 
-this.Content = chart;
+    SfFunnelChart chart = new SfFunnelChart();
+    chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+    chart.XBindingPath = "Category";
+    chart.YBindingPath = "Value";
+    chart.MinimumWidth = 20;
+    . . . 
+    this.Content = chart;
 
 {% endhighlight %}
 
@@ -47,23 +47,23 @@ The funnel chart can be customized to the inverted pyramid chart by setting the 
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart MinimumWidth="0" 
-                     ItemsSource="{Binding Data}" 
-                     XBindingPath="Category"
-                    YBindingPath="Value">
-</chart:SfFunnelChart>
+    <chart:SfFunnelChart MinimumWidth="0" 
+                        ItemsSource="{Binding Data}" 
+                        XBindingPath="Category"
+                        YBindingPath="Value">
+    </chart:SfFunnelChart>
  
 {% endhighlight %}
 
 {% highlight C# %}
 
-SfFunnelChart chart = new SfFunnelChart();
-chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
-chart.XBindingPath = "Category";
-chart.YBindingPath = "Value";
-chart.MinimumWidth = 0;
-. . . 
-this.Content = chart;
+    SfFunnelChart chart = new SfFunnelChart();
+    chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+    chart.XBindingPath = "Category";
+    chart.YBindingPath = "Value";
+    chart.MinimumWidth = 0;
+    . . . 
+    this.Content = chart;
 
 {% endhighlight %}
 

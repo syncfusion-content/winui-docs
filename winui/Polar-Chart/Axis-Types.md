@@ -23,27 +23,27 @@ The [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 
 {% highlight xaml %}
 
-<chart:SfPolarChart>
+    <chart:SfPolarChart>
 
-    <chart:SfPolarChart.PrimaryAxis>
-        <chart:CategoryAxis/>
-    </chart:SfPolarChart.PrimaryAxis>
+        <chart:SfPolarChart.PrimaryAxis>
+            <chart:CategoryAxis/>
+        </chart:SfPolarChart.PrimaryAxis>
 
-    <chart:SfPolarChart.SecondaryAxis>
-        <chart:NumericalAxis/>
-    </chart:SfPolarChart.SecondaryAxis>
-...
+        <chart:SfPolarChart.SecondaryAxis>
+            <chart:NumericalAxis/>
+        </chart:SfPolarChart.SecondaryAxis>
+    ...
 
-</chart:SfPolarChart>
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
-chart.PrimaryAxis = new CategoryAxis();
-chart.SecondaryAxis = new NumericalAxis();
-...
+    SfPolarChart chart = new SfPolarChart();
+    chart.PrimaryAxis = new CategoryAxis();
+    chart.SecondaryAxis = new NumericalAxis();
+    ...
 
 {% endhighlight %}
 
@@ -59,28 +59,28 @@ The [NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
 
 {% highlight xaml %}
 
-<chart:SfPolarChart>
+    <chart:SfPolarChart>
 
-    <chart:SfPolarChart.PrimaryAxis>
-        <chart:NumericalAxis/>
-    </chart:SfPolarChart.PrimaryAxis>
-    
-    <chart:SfPolarChart.SecondaryAxis>
-        <chart:NumericalAxis/>
-    </chart:SfPolarChart.SecondaryAxis>
-    ...
-    
-</chart:SfPolarChart>
+        <chart:SfPolarChart.PrimaryAxis>
+            <chart:NumericalAxis/>
+        </chart:SfPolarChart.PrimaryAxis>
+        
+        <chart:SfPolarChart.SecondaryAxis>
+            <chart:NumericalAxis/>
+        </chart:SfPolarChart.SecondaryAxis>
+        ...
+        
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
-...
-chart.PrimaryAxis = new NumericalAxis();
-chart.SecondaryAxis = new NumericalAxis();
-...
+    SfPolarChart chart = new SfPolarChart();
+    ...
+    chart.PrimaryAxis = new NumericalAxis();
+    chart.SecondaryAxis = new NumericalAxis();
+    ...
 
 {% endhighlight %}
 
@@ -98,28 +98,28 @@ N> If  minimum or maximum value is set, the other value is calculated by default
 
 {% highlight xaml %}
 
-<chart:SfPolarChart>
-    <chart:SfPolarChart.SecondaryAxis>
-        <chart:NumericalAxis Minimum="10"
-							 Maximum="90"
-							 Interval="20" />
-    </chart:SfPolarChart.SecondaryAxis>
-    ...
-</chart:SfPolarChart>
+    <chart:SfPolarChart>
+        <chart:SfPolarChart.SecondaryAxis>
+            <chart:NumericalAxis Minimum="10"
+                                Maximum="90"
+                                Interval="20" />
+        </chart:SfPolarChart.SecondaryAxis>
+        ...
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
-...
-chart.SecondaryAxis = new NumericalAxis()
-{
-    Maximum = 90,
-    Minimum = 10,
-    Interval = 20,
-};
-...
+    SfPolarChart chart = new SfPolarChart();
+    ...
+    chart.SecondaryAxis = new NumericalAxis()
+    {
+        Maximum = 90,
+        Minimum = 10,
+        Interval = 20,
+    };
+    ...
 
 {% endhighlight %}
 
@@ -135,39 +135,39 @@ The [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 
 {% highlight xaml %}
 
-<chart:SfPolarChart>
-            
-    <chart:SfPolarChart.PrimaryAxis>
-        <chart:DateTimeAxis Interval="1"
-							IntervalType="Months">
-        <chart:DateTimeAxis.LabelStyle>
-            <chart:LabelStyle LabelFormat="MMM/dd" />
-        </chart:DateTimeAxis.LabelStyle>
-    </chart:DateTimeAxis>
-    </chart:SfPolarChart.PrimaryAxis>
-            
-    <chart:SfPolarChart.SecondaryAxis>
-        <chart:NumericalAxis/>
-    </chart:SfPolarChart.SecondaryAxis>
-    ...
+    <chart:SfPolarChart>
+                
+        <chart:SfPolarChart.PrimaryAxis>
+            <chart:DateTimeAxis Interval="1"
+                                IntervalType="Months">
+            <chart:DateTimeAxis.LabelStyle>
+                <chart:LabelStyle LabelFormat="MMM/dd" />
+            </chart:DateTimeAxis.LabelStyle>
+        </chart:DateTimeAxis>
+        </chart:SfPolarChart.PrimaryAxis>
+                
+        <chart:SfPolarChart.SecondaryAxis>
+            <chart:NumericalAxis/>
+        </chart:SfPolarChart.SecondaryAxis>
+        ...
 
-</chart:SfPolarChart>
+    </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPolarChart chart = new SfPolarChart();
+    SfPolarChart chart = new SfPolarChart();
 
-chart.PrimaryAxis = new DateTimeAxis()
-{
-    Interval = 1,
-    IntervalType = DateTimeIntervalType.Months,
-    LabelStyle = new LabelStyle() { LabelFormat="MMM/dd" },
-};
+    chart.PrimaryAxis = new DateTimeAxis()
+    {
+        Interval = 1,
+        IntervalType = DateTimeIntervalType.Months,
+        LabelStyle = new LabelStyle() { LabelFormat="MMM/dd" },
+    };
 
-chart.SecondaryAxis = new NumericalAxis();
-...
+    chart.SecondaryAxis = new NumericalAxis();
+    ...
 
 {% endhighlight %}
 
