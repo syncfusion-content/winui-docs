@@ -22,33 +22,33 @@ Exploding a segment is used to pull attention to a specific area of the circular
 
 {% highlight xaml %}
 
-    <chart:SfCircularChart>
-    . . .
-        <chart:PieSeries x:Name="PieSeries" 
-                        ItemsSource="{Binding Data}"
-                        ExplodeIndex="2"
-                        ExplodeRadius="10"
-                        XBindingPath="Utilization"
-                        YBindingPath="ResponseTime" />
+<chart:SfCircularChart>
+. . .
+    <chart:PieSeries x:Name="PieSeries" 
+					 ItemsSource="{Binding Data}"
+					 ExplodeIndex="2"
+					 ExplodeRadius="10"
+					 XBindingPath="Utilization"
+					 YBindingPath="ResponseTime" />
 
-    </chart:SfCircularChart>
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCircularChart chart = new SfCircularChart();
-    . . .
-    PieSeries series = new PieSeries()
-    {
-        ItemsSource = new ViewModel().Data,
-        XBindingPath = "Utilization",
-        YBindingPath = "ResponseTime",
-        ExplodeIndex = 2,
-        ExplodeRadius = 10
-    };
+SfCircularChart chart = new SfCircularChart();
+. . .
+PieSeries series = new PieSeries()
+{
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "Utilization",
+    YBindingPath = "ResponseTime",
+    ExplodeIndex = 2,
+    ExplodeRadius = 10
+};
 
-    chart.Series.Add(series);
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -64,32 +64,32 @@ N> By default [ExplodeRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI
 
 {% highlight xaml %}
 
-    <chart:SfCircularChart>
-    . . .
-        <chart:PieSeries ExplodeAll="True"
-                        ExplodeRadius="15"
-                        XBindingPath="Category"
-                        ItemsSource="{Binding Data}"
-                        YBindingPath="Value">
+<chart:SfCircularChart>
+. . .
+    <chart:PieSeries ExplodeAll="True"
+					 ExplodeRadius="15"
+					 XBindingPath="Category"
+					 ItemsSource="{Binding Data}"
+					 YBindingPath="Value">
 
-    </chart:SfCircularChart>
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCircularChart chart = new SfCircularChart();
-    . . .
-    PieSeries series = new PieSeries()
-    {
-        ItemsSource = new ViewModel().Data,
-        XBindingPath = "Category",
-        YBindingPath = "Value",
-        ExplodeAll = true,
-        ExplodeRadius = 15
-    };
+SfCircularChart chart = new SfCircularChart();
+. . .
+PieSeries series = new PieSeries()
+{
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "Category",
+    YBindingPath = "Value",
+    ExplodeAll = true,
+    ExplodeRadius = 15
+};
 
-    chart.Series.Add(series);
+chart.Series.Add(series);
 
 {% endhighlight %}
 
