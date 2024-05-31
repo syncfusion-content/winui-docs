@@ -52,22 +52,22 @@ The available shapes are
 
 {% highlight C# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
-    NumericalAxis xAxis = new NumericalAxis();
-    chart.XAxes.Add(xAxis);
-    NumericalAxis yAxis = new NumericalAxis();
-    chart.YAxes.Add(yAxis);
+SfCartesianChart chart = new SfCartesianChart();
+NumericalAxis xAxis = new NumericalAxis();
+chart.XAxes.Add(xAxis);
+NumericalAxis yAxis = new NumericalAxis();
+chart.YAxes.Add(yAxis);
 
-    FastScatterBitmapSeries series = new FastScatterBitmapSeries()
-    {
-        ItemsSource = new ViewModel().Data,
-        XBindingPath = "XValue",
-        YBindingPath = "YValue",
-        PointHeight = 7,
-        PointWidth = 7
-    };
+FastScatterBitmapSeries series = new FastScatterBitmapSeries()
+{
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
+    PointHeight = 7,
+    PointWidth = 7
+};
 
-    chart.Series.Add(series);
+chart.Series.Add(series);
 
 {% endhighlight %}
 

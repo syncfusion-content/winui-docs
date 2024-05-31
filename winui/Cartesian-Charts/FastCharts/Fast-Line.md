@@ -38,20 +38,20 @@ The [FastLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
-    DateTimeAxis xAxis = new DateTimeAxis();
-    chart.XAxes.Add(xAxis);
-    NumericalAxis yAxis = new NumericalAxis();
-    chart.YAxes.Add(yAxis);
+SfCartesianChart chart = new SfCartesianChart();
+DateTimeAxis xAxis = new DateTimeAxis();
+chart.XAxes.Add(xAxis);
+NumericalAxis yAxis = new NumericalAxis();
+chart.YAxes.Add(yAxis);
 
-    FastLineSeries series = new FastLineSeries()
-    {
-        ItemsSource = new ViewModel().Data,
-        XBindingPath = "XValue",
-        YBindingPath = "YValue",
-    };
+FastLineSeries series = new FastLineSeries()
+{
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
+};
 
-    chart.Series.Add(series);
+chart.Series.Add(series);
 
 {% endhighlight %}
 

@@ -17,43 +17,43 @@ The [WinUI Area Chart](https://www.syncfusion.com/winui-controls/charts/winui-ar
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart>
-        
-        <chart:SfCartesianChart.XAxes>
-            <chart:CategoryAxis />
-        </chart:SfCartesianChart.XAxes>
+<chart:SfCartesianChart>
+    
+    <chart:SfCartesianChart.XAxes>
+        <chart:CategoryAxis />
+    </chart:SfCartesianChart.XAxes>
 
-        <chart:SfCartesianChart.YAxes>
-            <chart:NumericalAxis />
-        </chart:SfCartesianChart.YAxes>   
+    <chart:SfCartesianChart.YAxes>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.YAxes>   
 
-        <chart:SfCartesianChart.Series>
-            <chart:AreaSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand" 
-                            YBindingPath="Year2010"/>  
-        </chart:SfCartesianChart.Series>
+    <chart:SfCartesianChart.Series>
+        <chart:AreaSeries ItemsSource="{Binding Data}" 
+                          XBindingPath="Demand" 
+                          YBindingPath="Year2010"/>  
+    </chart:SfCartesianChart.Series>
 
-    </chart:SfCartesianChart>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
-    CategoryAxis xAxis = new CategoryAxis();
-    chart.XAxes.Add(xAxis);
-    NumericalAxis yAxis = new NumericalAxis();
-    chart.YAxes.Add(yAxis);
+SfCartesianChart chart = new SfCartesianChart();
+CategoryAxis xAxis = new CategoryAxis();
+chart.XAxes.Add(xAxis);
+NumericalAxis yAxis = new NumericalAxis();
+chart.YAxes.Add(yAxis);
 
-    AreaSeries series = new AreaSeries()
-    {
-        ItemsSource = new ViewModel().Data,
-        XBindingPath = "Demand",
-        YBindingPath = "Year2010",
-    };
+AreaSeries series = new AreaSeries()
+{
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "Demand",
+    YBindingPath = "Year2010",
+};
 
-    chart.Series.Add(series);
-    this.Content = chart;
+chart.Series.Add(series);
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -69,21 +69,21 @@ The [SplineAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart>
+<chart:SfCartesianChart>
 
-        <chart:SfCartesianChart.XAxes>
-            <chart:CategoryAxis />
-        </chart:SfCartesianChart.XAxes>
+    <chart:SfCartesianChart.XAxes>
+        <chart:CategoryAxis />
+    </chart:SfCartesianChart.XAxes>
 
-        <chart:SfCartesianChart.YAxes>
-            <chart:NumericalAxis />
-        </chart:SfCartesianChart.YAxes>
-                
-        <chart:SfCartesianChart.Series>
-            <chart:SplineAreaSeries ItemsSource="{Binding Data}" 
-                                    XBindingPath="Demand" 
-                                    YBindingPath="Year2010"/>  
-        </chart:SfCartesianChart.Series>
+    <chart:SfCartesianChart.YAxes>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.YAxes>
+            
+    <chart:SfCartesianChart.Series>
+        <chart:SplineAreaSeries ItemsSource="{Binding Data}" 
+                                XBindingPath="Demand" 
+                                YBindingPath="Year2010"/>  
+    </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
 
@@ -91,21 +91,21 @@ The [SplineAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
-    CategoryAxis primaryAxis = new CategoryAxis();
-    chart.XAxes.Add(primaryAxis);
-    NumericalAxis secondaryAxis = new NumericalAxis();
-    chart.YAxes.Add(secondaryAxis);
+SfCartesianChart chart = new SfCartesianChart();
+CategoryAxis primaryAxis = new CategoryAxis();
+chart.XAxes.Add(primaryAxis);
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.YAxes.Add(secondaryAxis);
 
-    SplineAreaSeries series = new SplineAreaSeries()
-    {
-        ItemsSource = new ViewModel().Data,
-        XBindingPath = "Demand",
-        YBindingPath = "Year2010",
-    };
+SplineAreaSeries series = new SplineAreaSeries()
+{
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "Demand",
+    YBindingPath = "Year2010",
+};
 
-    chart.Series.Add(series);
-    this.Content = chart;
+chart.Series.Add(series);
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -145,21 +145,21 @@ The [StepAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
-    CategoryAxis xAxis = new CategoryAxis();
-    chart.XAxes.Add(xAxis);
-    NumericalAxis yAxis = new NumericalAxis();
-    chart.YAxes.Add(yAxis);
+SfCartesianChart chart = new SfCartesianChart();
+CategoryAxis xAxis = new CategoryAxis();
+chart.XAxes.Add(xAxis);
+NumericalAxis yAxis = new NumericalAxis();
+chart.YAxes.Add(yAxis);
 
-    StepAreaSeries series = new StepAreaSeries()
-    {
-        ItemsSource = new ViewModel().Data,
-        XBindingPath = "XValue",
-        YBindingPath = "YValue",
-    };
+StepAreaSeries series = new StepAreaSeries()
+{
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
+};
 
-    chart.Series.Add(series);
-    this.Content = chart;
+chart.Series.Add(series);
+this.Content = chart;
 
 {% endhighlight %}
 
