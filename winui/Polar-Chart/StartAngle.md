@@ -15,18 +15,18 @@ By using the [StartAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 
 {% highlight xaml %}
 
-    <chart:SfPolarChart StartAngle="Rotate0">
-    ...
-    </chart:SfPolarChart>
+<chart:SfPolarChart StartAngle="Rotate0">
+...
+</chart:SfPolarChart>
 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfPolarChart chart = new SfPolarChart();
-    chart.StartAngle = ChartPolarAngle.Rotate0;
-    ...
+SfPolarChart chart = new SfPolarChart();
+chart.StartAngle = ChartPolarAngle.Rotate0;
+...
 
 {% endhighlight %}
 

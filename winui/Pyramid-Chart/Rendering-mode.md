@@ -19,24 +19,24 @@ The [Surface](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Cha
 
 {% highlight xaml %}
 
-    <chart:SfPyramidChart x:Name="chart"
-                        ItemsSource="{Binding Data}" 
-                        XBindingPath="Category" 
-                        YBindingPath="Value" 
-                        Mode="Surface">
-    </chart:SfPyramidChart>
-    
+<chart:SfPyramidChart x:Name="chart"
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="Category" 
+                      YBindingPath="Value" 
+                      Mode="Surface">
+</chart:SfPyramidChart>
+ 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfPyramidChart chart = new SfPyramidChart();
-    chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
-    chart.XBindingPath = "Category";
-    chart.YBindingPath = "Value";
-    chart.Mode = ChartPyramidMode.Surface;
-    . . . 
-    this.Content = chart;
+SfPyramidChart chart = new SfPyramidChart();
+chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+chart.XBindingPath = "Category";
+chart.YBindingPath = "Value";
+chart.Mode = ChartPyramidMode.Surface;
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -52,24 +52,24 @@ The [Linear](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 
 {% highlight xaml %}
 
-    <chart:SfPyramidChart x:Name="chart"
-                        ItemsSource="{Binding Data}" 
-                        XBindingPath="Category" 
-                        YBindingPath="Value" 
-                        Mode="Linear">
-    </chart:SfPyramidChart>
+<chart:SfPyramidChart x:Name="chart"
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="Category" 
+                      YBindingPath="Value" 
+                      Mode="Linear">
+</chart:SfPyramidChart>
  
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfPyramidChart chart = new SfPyramidChart();
-    chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
-    chart.XBindingPath = "Category";
-    chart.YBindingPath = "Value";
-    chart.Mode = ChartPyramidMode.Linear;
-    . . . 
-    this.Content = chart;
+SfPyramidChart chart = new SfPyramidChart();
+chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+chart.XBindingPath = "Category";
+chart.YBindingPath = "Value";
+chart.Mode = ChartPyramidMode.Linear;
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 

@@ -15,18 +15,18 @@ documentation: ug
 
 {% highlight xaml %}
 
-    <chart:SfPyramidChart x:Name="chart" Header="The Food Comparison Pyramid">
-    . . .           
-    </chart:SfPyramidChart>
+<chart:SfPyramidChart x:Name="chart" Header="The Food Comparison Pyramid">
+ . . .           
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfPyramidChart chart = new SfPyramidChart();
-    chart.Header = "The Food Comparison Pyramid";
-    . . . 
-    this.Content = chart;
+SfPyramidChart chart = new SfPyramidChart();
+chart.Header = "The Food Comparison Pyramid";
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -42,46 +42,46 @@ The pyramid chart provides support to add any `UIElement` as a title. The follow
 
 {% highlight xaml %}
 
-    <chart:SfPyramidChart>
+ <chart:SfPyramidChart>
 
-        <chart:SfPyramidChart.Header>
-            <Border BorderThickness="2"
-                    BorderBrush="Black"
-                    Margin="10"
-                    CornerRadius="5">
-                <TextBlock FontSize="14"
-                        Text="The Food Comparison Pyramid"
-                        Margin="5"/>
-            </Border>
-        </chart:SfPyramidChart.Header>
-                
-    </chart:SfPyramidChart>
+    <chart:SfPyramidChart.Header>
+        <Border BorderThickness="2"
+				BorderBrush="Black"
+				Margin="10"
+				CornerRadius="5">
+            <TextBlock FontSize="14"
+					   Text="The Food Comparison Pyramid"
+					   Margin="5"/>
+        </Border>
+    </chart:SfPyramidChart.Header>
+            
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-        SfPyramidChart chart = new SfPyramidChart();
-        . . .
-        Border border = new Border()
-        {
-            BorderThickness = new Thickness(2),
-            BorderBrush = new SolidColorBrush(Colors.Black),
-            Margin = new Thickness(10),
-            CornerRadius = new CornerRadius(5)
-        };
+    SfPyramidChart chart = new SfPyramidChart();
+    . . .
+    Border border = new Border()
+    {
+        BorderThickness = new Thickness(2),
+        BorderBrush = new SolidColorBrush(Colors.Black),
+        Margin = new Thickness(10),
+        CornerRadius = new CornerRadius(5)
+    };
 
-        TextBlock textBlock = new TextBlock()
-        {
-            Text = "The Food Comparison Pyramid",
-            Margin = new Thickness(5),
-            FontSize = 14
-        };
+    TextBlock textBlock = new TextBlock()
+    {
+        Text = "The Food Comparison Pyramid",
+        Margin = new Thickness(5),
+        FontSize = 14
+    };
 
-        border.Child = textBlock;
-        chart.Header = border;
-        . . . 
-        this.Content = chart;
+    border.Child = textBlock;
+    chart.Header = border;
+    . . . 
+    this.Content = chart;
 
 {% endhighlight %}
 
@@ -97,34 +97,34 @@ The title text content can be aligned horizontally to the left, center or right 
 
 {% highlight xaml %}
 
-    <chart:SfPyramidChart x:Name="chart" 
-                        Header="The Food Comparison Pyramid"
-                        HorizontalHeaderAlignment="Left"
-                        ItemsSource="{Binding Data}" 
-                        XBindingPath="FoodName"
-                        YBindingPath="Calories">
-                
-    </chart:SfPyramidChart>
+<chart:SfPyramidChart x:Name="chart" 
+                      Header="The Food Comparison Pyramid"
+                      HorizontalHeaderAlignment="Left"
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="FoodName"
+                      YBindingPath="Calories">
+            
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    public sealed partial class MainPage : Page
+public sealed partial class MainPage : Page
+{
+    public MainPage()
     {
-        public MainPage()
-        {
-            this.InitializeComponent();
-            SfPyramidChart chart = new SfPyramidChart();
-            chart.Header = "The Food Comparison Pyramid";
-            chart.HorizontalHeaderAlignment = HorizontalAlignment.Left;
-            chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
-            chart.XBindingPath = "FoodName";
-            chart.YBindingPath = "Calories";
-            . . . 
-            this.Content = chart;
-        }
+        this.InitializeComponent();
+        SfPyramidChart chart = new SfPyramidChart();
+        chart.Header = "The Food Comparison Pyramid";
+        chart.HorizontalHeaderAlignment = HorizontalAlignment.Left;
+        chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+        chart.XBindingPath = "FoodName";
+        chart.YBindingPath = "Calories";
+        . . . 
+        this.Content = chart;
     }
+}
 
 {% endhighlight %}
 

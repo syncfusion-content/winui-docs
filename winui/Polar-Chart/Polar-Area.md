@@ -15,49 +15,49 @@ To render a area series in polar chart, create an instance of the [PolarAreaSeri
 
 {% highlight xaml %}
 
-    <chart:SfPolarChart>
-    ...
-        <chart:SfPolarChart.Series>
-            <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                                XBindingPath="Direction"
-                                YBindingPath="Tree" Label="Tree" />
+<chart:SfPolarChart>
+...
+    <chart:SfPolarChart.Series>
+        <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
+                               XBindingPath="Direction"
+                               YBindingPath="Tree" Label="Tree" />
 
-            <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                                XBindingPath="Direction"
-                                YBindingPath="Weed" Label="Weed" />
+        <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
+                               XBindingPath="Direction"
+                               YBindingPath="Weed" Label="Weed" />
 
-            <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                                XBindingPath="Direction"
-                                YBindingPath="Flower" Label="Flower" />
-        </chart:SfPolarChart.Series>
-    ...
-    </chart:SfPolarChart>
+        <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
+                               XBindingPath="Direction"
+                               YBindingPath="Flower" Label="Flower" />
+    </chart:SfPolarChart.Series>
+...
+</chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfPolarChart chart = new SfPolarChart();
-    ...
-    PolarAreaSeries series1 = new PolarAreaSeries();
-    series1.XBindingPath = "Direction";
-    series1.YBindingPath = "Tree";
-    series1.ItemsSource = viewModel.PlantDetails;
+SfPolarChart chart = new SfPolarChart();
+...
+PolarAreaSeries series1 = new PolarAreaSeries();
+series1.XBindingPath = "Direction";
+series1.YBindingPath = "Tree";
+series1.ItemsSource = viewModel.PlantDetails;
 
-    PolarAreaSeries series2 = new PolarAreaSeries();
-    series2.XBindingPath = "Direction";
-    series2.YBindingPath = "Weed";
-    series2.ItemsSource = viewModel.PlantDetails;
+PolarAreaSeries series2 = new PolarAreaSeries();
+series2.XBindingPath = "Direction";
+series2.YBindingPath = "Weed";
+series2.ItemsSource = viewModel.PlantDetails;
 
-    PolarAreaSeries series3 = new PolarAreaSeries();
-    series3.XBindingPath = "Direction";
-    series3.YBindingPath = "Flower";
-    series3.ItemsSource = viewModel.PlantDetails;
-    ...
-    chart.Series.Add(series1);
-    chart.Series.Add(series2);
-    chart.Series.Add(series3);
-    ...
+PolarAreaSeries series3 = new PolarAreaSeries();
+series3.XBindingPath = "Direction";
+series3.YBindingPath = "Flower";
+series3.ItemsSource = viewModel.PlantDetails;
+...
+chart.Series.Add(series1);
+chart.Series.Add(series2);
+chart.Series.Add(series3);
+...
 
 {% endhighlight %}
 
@@ -73,30 +73,30 @@ The [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 
 {% highlight xaml %}
 
-    <chart:SfPolarChart GridLineType="Polygon">
-    ...
-        <chart:SfPolarChart.Series>
-            <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                                XBindingPath="Direction"
-                                YBindingPath="Tree" />
-        </chart:SfPolarChart.Series>
-    ...
-    </chart:SfPolarChart>
+<chart:SfPolarChart GridLineType="Polygon">
+...
+    <chart:SfPolarChart.Series>
+        <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
+                               XBindingPath="Direction"
+                               YBindingPath="Tree" />
+    </chart:SfPolarChart.Series>
+...
+</chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfPolarChart chart = new SfPolarChart();
-    chart.GridLineType= PolarChartGridLineType.Polygon;
-    ...
-    PolarAreaSeries series = new PolarAreaSeries();
-    series.XBindingPath = "Direction";
-    series.YBindingPath = "Tree";
-    series.ItemsSource = viewModel.PlantDetails;
+SfPolarChart chart = new SfPolarChart();
+chart.GridLineType= PolarChartGridLineType.Polygon;
+...
+PolarAreaSeries series = new PolarAreaSeries();
+series.XBindingPath = "Direction";
+series.YBindingPath = "Tree";
+series.ItemsSource = viewModel.PlantDetails;
 
-    chart.Series.Add(series);
-    ...
+chart.Series.Add(series);
+...
 
 {% endhighlight %}
 
@@ -112,31 +112,31 @@ The [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 
 {% highlight xaml %}
 
-    <chart:SfPolarChart GridLineType="Polygon">
-    ...
-        <chart:SfPolarChart.Series>
-            <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                                XBindingPath="Direction"
-                                YBindingPath="Tree" 
-                                IsClosed="False" />
-        </chart:SfPolarChart.Series>
-    ...
-    </chart:SfPolarChart>
+<chart:SfPolarChart GridLineType="Polygon">
+...
+    <chart:SfPolarChart.Series>
+        <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
+                               XBindingPath="Direction"
+                               YBindingPath="Tree" 
+                               IsClosed="False" />
+    </chart:SfPolarChart.Series>
+...
+</chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfPolarChart chart = new SfPolarChart();
-    chart.GridLineType= PolarChartGridLineType.Polygon;
-    ...
-    PolarAreaSeries series = new PolarAreaSeries();
-    series.XBindingPath = "Direction";
-    series.YBindingPath = "Tree";
-    series.ItemsSource = viewModel.PlantDetails;
-    series.IsClosed= false;
-    ...
-    chart.Series.Add(series);
+SfPolarChart chart = new SfPolarChart();
+chart.GridLineType= PolarChartGridLineType.Polygon;
+...
+PolarAreaSeries series = new PolarAreaSeries();
+series.XBindingPath = "Direction";
+series.YBindingPath = "Tree";
+series.ItemsSource = viewModel.PlantDetails;
+series.IsClosed= false;
+...
+chart.Series.Add(series);
 
 {% endhighlight %}
 

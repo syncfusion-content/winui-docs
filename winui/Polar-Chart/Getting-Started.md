@@ -181,46 +181,46 @@ N> To plot the series, the [XBindingPath](https://help.syncfusion.com/cr/winui/S
 
 {% highlight xaml %}
 
-    <chart:SfPolarChart>
-        <chart:SfPolarChart.PrimaryAxis> 
-            <chart:CategoryAxis /> 
-        </chart:SfPolarChart.PrimaryAxis> 
-        <chart:SfPolarChart.SecondaryAxis> 
-            <chart:NumericalAxis/> 
-        </chart:SfPolarChart.SecondaryAxis>
-        <chart:SfPolarChart.Series>
-            <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                                XBindingPath="Direction" 
-                                YBindingPath="Tree"/>
-        </chart:SfPolarChart.Series>
-        ...
-    </chart:SfPolarChart>
+<chart:SfPolarChart>
+    <chart:SfPolarChart.PrimaryAxis> 
+        <chart:CategoryAxis /> 
+    </chart:SfPolarChart.PrimaryAxis> 
+    <chart:SfPolarChart.SecondaryAxis> 
+        <chart:NumericalAxis/> 
+    </chart:SfPolarChart.SecondaryAxis>
+    <chart:SfPolarChart.Series>
+        <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
+                               XBindingPath="Direction" 
+                               YBindingPath="Tree"/>
+    </chart:SfPolarChart.Series>
+    ...
+</chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfPolarChart chart = new SfPolarChart();
+SfPolarChart chart = new SfPolarChart();
 
-    ChartViewModel viewModel = new ChartViewModel();
-    chart.DataContext = viewModel;
+ChartViewModel viewModel = new ChartViewModel();
+chart.DataContext = viewModel;
 
-    CategoryAxis primaryAxis = new CategoryAxis();
-    chart.PrimaryAxis = primaryAxis;    
-    NumericalAxis secondaryAxis = new NumericalAxis();
-    chart.SecondaryAxis = secondaryAxis;
+CategoryAxis primaryAxis = new CategoryAxis();
+chart.PrimaryAxis = primaryAxis;    
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
 
-    PolarAreaSeries series = new PolarAreaSeries();
-    series.XBindingPath = "Direction";
-    series.YBindingPath = "Tree";
+PolarAreaSeries series = new PolarAreaSeries();
+series.XBindingPath = "Direction";
+series.YBindingPath = "Tree";
 
-    series.SetBinding(
-        ChartSeriesBase.ItemsSourceProperty, 
-        new Binding() 
-        { Path = new PropertyPath("PlantDetails") });
+series.SetBinding(
+    ChartSeriesBase.ItemsSourceProperty, 
+    new Binding() 
+    { Path = new PropertyPath("PlantDetails") });
 
-    chart.Series.Add(series);
-    . . .
+chart.Series.Add(series);
+. . .
 
 {% endhighlight %}
 
@@ -234,17 +234,17 @@ The title of the chart provide quick information to the user about the data bein
 
 {% highlight xaml %}
 
-    <chart:SfPolarChart Header="Polar Chart"> 
-    ...
-    </chart:SfPolarChart> 
+<chart:SfPolarChart Header="Polar Chart"> 
+...
+</chart:SfPolarChart> 
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfPolarChart chart = new SfPolarChart();
-    chart.Header = "Polar Chart";
-    ...
+SfPolarChart chart = new SfPolarChart();
+chart.Header = "Polar Chart";
+...
 
 {% endhighlight %}
 
@@ -258,23 +258,23 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 {% highlight xaml %}
 
-    <chart:SfPolarChart>
-        ...
-        <chart:PolarAreaSeries ShowDataLabels="True"
-                            ItemsSource="{Binding PlantDetails}" 
-                            XBindingPath="Direction" 
-                            YBindingPath="Tree">
-        </chart:PolarAreaSeries>
-    </chart:SfPolarChart>
+<chart:SfPolarChart>
+    ...
+    <chart:PolarAreaSeries ShowDataLabels="True"
+                           ItemsSource="{Binding PlantDetails}" 
+                           XBindingPath="Direction" 
+                           YBindingPath="Tree">
+    </chart:PolarAreaSeries>
+</chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfPolarChart chart = new SfPolarChart();
-    PolarAreaSeries series = new PolarAreaSeries();
-    series.ShowDataLabels = true;
-    ...
+SfPolarChart chart = new SfPolarChart();
+PolarAreaSeries series = new PolarAreaSeries();
+series.ShowDataLabels = true;
+...
 
 {% endhighlight %}
 
@@ -288,22 +288,22 @@ The legend provides information about the data point displayed in the polar char
 
 {% highlight xaml %}
 
-    <chart:SfPolarChart>
-        ...
-        <chart:SfPolarChart.Legend>
-            <chart:ChartLegend/>
-        </chart:SfPolarChart.Legend>
-        ...
-    </chart:SfPolarChart>
+<chart:SfPolarChart>
+    ...
+    <chart:SfPolarChart.Legend>
+        <chart:ChartLegend/>
+    </chart:SfPolarChart.Legend>
+    ...
+</chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfPolarChart chart = new SfPolarChart();
-    . . .
-    chart.Legend = new ChartLegend();
-    ...
+SfPolarChart chart = new SfPolarChart();
+. . .
+chart.Legend = new ChartLegend();
+...
 
 {% endhighlight %}
 
@@ -315,27 +315,27 @@ N> Additionally, set label for each series using the [Label](https://help.syncfu
 
 {% highlight xaml %}
 
-    <chart:SfPolarChart>
-        . . .
-        <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                            XBindingPath="Direction" 
-                            YBindingPath="Tree"
-                            Label="Tree"/>
-        ...
-    </chart:SfPolarChart>
+<chart:SfPolarChart>
+    . . .
+    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
+                           XBindingPath="Direction" 
+                           YBindingPath="Tree"
+                           Label="Tree"/>
+    ...
+</chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfPolarChart chart = new SfPolarChart();
-    ...
-    PolarAreaSeries series = new PolarAreaSeries();
-    series.ItemsSource = viewModel.PlantDetails;
-    series.XBindingPath = "Direction";
-    series.YBindingPath = "Tree";
-    series.Label = "Tree";
-    ...
+SfPolarChart chart = new SfPolarChart();
+...
+PolarAreaSeries series = new PolarAreaSeries();
+series.ItemsSource = viewModel.PlantDetails;
+series.XBindingPath = "Direction";
+series.YBindingPath = "Tree";
+series.Label = "Tree";
+...
 
 {% endhighlight %}
 
@@ -347,85 +347,85 @@ The following code example gives you the complete code of above configurations.
 
 {% highlight xaml %}
 
-    <chart:SfPolarChart Header="Polar Chart">
-        <chart:SfPolarChart.DataContext>
-            <model:ChartViewModel/>
-        </chart:SfPolarChart.DataContext>
-        <chart:SfPolarChart.PrimaryAxis> 
-            <chart:CategoryAxis /> 
-        </chart:SfPolarChart.PrimaryAxis> 
-        <chart:SfPolarChart.SecondaryAxis> 
-            <chart:NumericalAxis/> 
-        </chart:SfPolarChart.SecondaryAxis>
-        <chart:SfPolarChart.Legend>
-            <chart:ChartLegend/>
-        </chart:SfPolarChart.Legend>
-        <chart:SfPolarChart.Series>
-            <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                                XBindingPath="Direction"
-                                YBindingPath="Tree"
-                                Label="Tree"
-                                ShowDataLabels="True"
-                                LegendIcon="Pentagon">
-                <chart:PolarAreaSeries.DataLabelSettings>
-                    <chart:PolarDataLabelSettings Foreground="White"
-                                                FontSize="12" 
-                                                FontFamily="Calibri"
-                                                BorderBrush="White" 
-                                                BorderThickness="1"
-                                                Margin="1"/>
-                    </chart:PolarAreaSeries.DataLabelSettings>
-            </chart:PolarAreaSeries>
-        </chart:SfPolarChart.Series>
-    </chart:SfPolarChart>
+<chart:SfPolarChart Header="Polar Chart">
+    <chart:SfPolarChart.DataContext>
+        <model:ChartViewModel/>
+    </chart:SfPolarChart.DataContext>
+    <chart:SfPolarChart.PrimaryAxis> 
+           <chart:CategoryAxis /> 
+      </chart:SfPolarChart.PrimaryAxis> 
+      <chart:SfPolarChart.SecondaryAxis> 
+           <chart:NumericalAxis/> 
+      </chart:SfPolarChart.SecondaryAxis>
+    <chart:SfPolarChart.Legend>
+        <chart:ChartLegend/>
+    </chart:SfPolarChart.Legend>
+    <chart:SfPolarChart.Series>
+        <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
+                               XBindingPath="Direction"
+							   YBindingPath="Tree"
+                               Label="Tree"
+							   ShowDataLabels="True"
+                               LegendIcon="Pentagon">
+            <chart:PolarAreaSeries.DataLabelSettings>
+                <chart:PolarDataLabelSettings Foreground="White"
+											  FontSize="12" 
+                                              FontFamily="Calibri"
+											  BorderBrush="White" 
+                                              BorderThickness="1"
+											  Margin="1"/>
+                </chart:PolarAreaSeries.DataLabelSettings>
+        </chart:PolarAreaSeries>
+    </chart:SfPolarChart.Series>
+</chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    using Syncfusion.UI.Xaml.Charts;
-    . . .
-    public sealed partial class MainWindow : Window
+using Syncfusion.UI.Xaml.Charts;
+. . .
+public sealed partial class MainWindow : Window
+{
+    public MainWindow()
     {
-        public MainWindow()
-        {
-            SfPolarChart chart = new SfPolarChart();
+        SfPolarChart chart = new SfPolarChart();
 
-            chart.Header = "Polar Chart";
-            chart.Legend = new ChartLegend();
-            ChartViewModel viewModel = new ChartViewModel();
-            chart.DataContext = viewModel;
-            
-            CategoryAxis primaryAxis = new CategoryAxis();
-            chart.PrimaryAxis = primaryAxis;    
-            NumericalAxis secondaryAxis = new NumericalAxis();
-            chart.SecondaryAxis = secondaryAxis;
+        chart.Header = "Polar Chart";
+        chart.Legend = new ChartLegend();
+        ChartViewModel viewModel = new ChartViewModel();
+        chart.DataContext = viewModel;
+        
+        CategoryAxis primaryAxis = new CategoryAxis();
+        chart.PrimaryAxis = primaryAxis;    
+        NumericalAxis secondaryAxis = new NumericalAxis();
+        chart.SecondaryAxis = secondaryAxis;
 
-            PolarAreaSeries series = new PolarAreaSeries();
-            series.XBindingPath = "Direction";
-            series.YBindingPath = "Tree";
-            series.Label = "Tree";
-            series.LegendIcon = ChartLegendIcon.Pentagon;
-            series.ShowDataLabels = true;
-            series.DataLabelSettings = new PolarDataLabelSettings() 
-            { 
-                Foreground = new SolidColorBrush(Colors.White),
-                BorderBrush = new SolidColorBrush(Colors.White),
-                BorderThickness = new Thickness(1),
-                Margin = new Thickness(1),
-                FontFamily = new FontFamily("Calibri"),
-                FontSize = 12
-            };
+        PolarAreaSeries series = new PolarAreaSeries();
+        series.XBindingPath = "Direction";
+        series.YBindingPath = "Tree";
+        series.Label = "Tree";
+        series.LegendIcon = ChartLegendIcon.Pentagon;
+        series.ShowDataLabels = true;
+        series.DataLabelSettings = new PolarDataLabelSettings() 
+        { 
+            Foreground = new SolidColorBrush(Colors.White),
+            BorderBrush = new SolidColorBrush(Colors.White),
+            BorderThickness = new Thickness(1),
+            Margin = new Thickness(1),
+            FontFamily = new FontFamily("Calibri"),
+            FontSize = 12
+        };
 
-            series.SetBinding(
-                ChartSeriesBase.ItemsSourceProperty, 
-                new Binding() 
-                { Path = new PropertyPath("PlantDetails") });
+        series.SetBinding(
+            ChartSeriesBase.ItemsSourceProperty, 
+            new Binding() 
+            { Path = new PropertyPath("PlantDetails") });
 
-            chart.Series.Add(series);
-            this.Content = chart;
-        }
+        chart.Series.Add(series);
+        this.Content = chart;
     }
+}
 
 {% endhighlight %}
 
