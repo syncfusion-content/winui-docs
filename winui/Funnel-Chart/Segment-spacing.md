@@ -15,24 +15,24 @@ The gap between each segment in the funnel chart can be set using the [GapRatio]
 
 {% highlight xaml %}
 
-    <chart:SfFunnelChart x:Name="chart"
-                        ItemsSource="{Binding Data}" 
-                        XBindingPath="Category" 
-                        YBindingPath="Value" 
-                        GapRatio="0.5">
-    </chart:SfFunnelChart>
+<chart:SfFunnelChart x:Name="chart"
+                     ItemsSource="{Binding Data}" 
+                     XBindingPath="Category" 
+                     YBindingPath="Value" 
+                     GapRatio="0.5">
+</chart:SfFunnelChart>
  
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfFunnelChart chart = new SfFunnelChart();
-    chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
-    chart.XBindingPath = "Category";
-    chart.YBindingPath = "Value";
-    chart.GapRatio = 0.5;
-    . . . 
-    this.Content = chart;
+SfFunnelChart chart = new SfFunnelChart();
+chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+chart.XBindingPath = "Category";
+chart.YBindingPath = "Value";
+chart.GapRatio = 0.5;
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
