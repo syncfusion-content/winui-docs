@@ -17,44 +17,44 @@ N> By default, [IsTransposed](https://help.syncfusion.com/cr/winui/Syncfusion.UI
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart IsTransposed="True">
+<chart:SfCartesianChart IsTransposed="True">
 
-        <chart:SfCartesianChart.XAxes>
-            <chart:CategoryAxis />
-        </chart:SfCartesianChart.XAxes>
+    <chart:SfCartesianChart.XAxes>
+        <chart:CategoryAxis />
+    </chart:SfCartesianChart.XAxes>
 
-        <chart:SfCartesianChart.YAxes>
-            <chart:NumericalAxis />
-        </chart:SfCartesianChart.YAxes>   
+    <chart:SfCartesianChart.YAxes>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.YAxes>   
 
-        <chart:SfCartesianChart.Series>
-            <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                                XBindingPath="XValue" 
-                                YBindingPath="YValue"/>
-        </chart:SfCartesianChart.Series>
+    <chart:SfCartesianChart.Series>
+        <chart:ColumnSeries ItemsSource="{Binding Data}" 
+                            XBindingPath="XValue" 
+                            YBindingPath="YValue"/>
+    </chart:SfCartesianChart.Series>
 
-    </chart:SfCartesianChart>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
-    chart.IsTransposed = true;
-    CategoryAxis xAxis = new CategoryAxis();
-    chart.XAxes.Add(xAxis);
-    NumericalAxis yAxis = new NumericalAxis();
-    chart.YAxes.Add(yAxis);
+SfCartesianChart chart = new SfCartesianChart();
+chart.IsTransposed = true;
+CategoryAxis xAxis = new CategoryAxis();
+chart.XAxes.Add(xAxis);
+NumericalAxis yAxis = new NumericalAxis();
+chart.YAxes.Add(yAxis);
 
-    ColumnSeries series = new ColumnSeries()
-    {
-        ItemsSource = new ViewModel().Data,
-        XBindingPath = "XValue",
-        YBindingPath = "YValue",
-    };
+ColumnSeries series = new ColumnSeries()
+{
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
+};
 
-    chart.Series.Add(series);
-    this.Content = chart;
+chart.Series.Add(series);
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -70,46 +70,46 @@ The [SegmentSpacing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart IsTransposed="True">
+<chart:SfCartesianChart IsTransposed="True">
 
-        <chart:SfCartesianChart.XAxes>
-            <chart:CategoryAxis />
-        </chart:SfCartesianChart.XAxes>
+    <chart:SfCartesianChart.XAxes>
+        <chart:CategoryAxis />
+    </chart:SfCartesianChart.XAxes>
 
-        <chart:SfCartesianChart.YAxes>
-            <chart:NumericalAxis />
-        </chart:SfCartesianChart.YAxes> 
+    <chart:SfCartesianChart.YAxes>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.YAxes> 
 
-        <chart:SfCartesianChart.Series>
-            <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                                XBindingPath="XValue" 
-                                YBindingPath="YValue" 
-                                SegmentSpacing="0.5"/>
-        </chart:SfCartesianChart.Series>
+    <chart:SfCartesianChart.Series>
+        <chart:ColumnSeries ItemsSource="{Binding Data}" 
+                            XBindingPath="XValue" 
+                            YBindingPath="YValue" 
+                            SegmentSpacing="0.5"/>
+    </chart:SfCartesianChart.Series>
 
-    </chart:SfCartesianChart>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
-    chart.IsTransposed = true;
-    CategoryAxis xAxis = new CategoryAxis();
-    chart.XAxes.Add(xAxis);
-    NumericalAxis yAxis = new NumericalAxis();
-    chart.YAxes.Add(yAxis);
+SfCartesianChart chart = new SfCartesianChart();
+chart.IsTransposed = true;
+CategoryAxis xAxis = new CategoryAxis();
+chart.XAxes.Add(xAxis);
+NumericalAxis yAxis = new NumericalAxis();
+chart.YAxes.Add(yAxis);
 
-    ColumnSeries series = new ColumnSeries()
-    {
-        ItemsSource = new ViewModel().Data,
-        XBindingPath = "XValue",
-        YBindingPath = "YValue",
-        SegmentSpacing = 0.5
-    };
+ColumnSeries series = new ColumnSeries()
+{
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
+    SegmentSpacing = 0.5
+};
 
-    chart.Series.Add(series);
-    this.Content = chart;
+chart.Series.Add(series);
+this.Content = chart;
 
 {% endhighlight %}
 

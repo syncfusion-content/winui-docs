@@ -45,39 +45,39 @@ The [StackedColumn100Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
-    ViewModel viewModel = new ViewModel();
-    CategoryAxis primaryAxis = new CategoryAxis();
-    primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
-    chart.XAxes.Add(primaryAxis);
-    NumericalAxis secondaryAxis = new NumericalAxis();
-    chart.YAxes.Add(secondaryAxis);
+SfCartesianChart chart = new SfCartesianChart();
+ViewModel viewModel = new ViewModel();
+CategoryAxis primaryAxis = new CategoryAxis();
+primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
+chart.XAxes.Add(primaryAxis);
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.YAxes.Add(secondaryAxis);
 
-    StackedColumn100Series series1 = new StackedColumn100Series()
-    {
-        ItemsSource = viewModel.MedalDetails,
-        XBindingPath = "CountryName",
-        YBindingPath = "GoldMedals",
-    };
+StackedColumn100Series series1 = new StackedColumn100Series()
+{
+    ItemsSource = viewModel.MedalDetails,
+    XBindingPath = "CountryName",
+    YBindingPath = "GoldMedals",
+};
 
-    StackedColumn100Series series2 = new StackedColumn100Series()
-    {
-        ItemsSource = viewModel.MedalDetails,
-        XBindingPath = "CountryName",
-        YBindingPath = "SilverMedals",
-    };
+StackedColumn100Series series2 = new StackedColumn100Series()
+{
+    ItemsSource = viewModel.MedalDetails,
+    XBindingPath = "CountryName",
+    YBindingPath = "SilverMedals",
+};
 
-    StackedColumn100Series series3 = new StackedColumn100Series()
-    {
-        ItemsSource = viewModel.MedalDetails,
-        XBindingPath = "CountryName",
-        YBindingPath = "BronzeMedals",
-    };
+StackedColumn100Series series3 = new StackedColumn100Series()
+{
+    ItemsSource = viewModel.MedalDetails,
+    XBindingPath = "CountryName",
+    YBindingPath = "BronzeMedals",
+};
 
-    chart.Series.Add(series1);
-    chart.Series.Add(series2);
-    chart.Series.Add(series3);
-    ...
+chart.Series.Add(series1);
+chart.Series.Add(series2);
+chart.Series.Add(series3);
+...
 
 {% endhighlight %}
 
@@ -123,39 +123,39 @@ The [StackedLine100Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
-    ViewModel viewModel = new ViewModel();
-    CategoryAxis primaryAxis = new CategoryAxis();
-    primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
-    chart.XAxes.Add(primaryAxis);
-    NumericalAxis secondaryAxis = new NumericalAxis();
-    chart.YAxes.Add(secondaryAxis);
+SfCartesianChart chart = new SfCartesianChart();
+ViewModel viewModel = new ViewModel();
+CategoryAxis primaryAxis = new CategoryAxis();
+primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
+chart.XAxes.Add(primaryAxis);
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.YAxes.Add(secondaryAxis);
 
-    StackedLine100Series series1 = new StackedLine100Series()
-    {
-        ItemsSource = viewModel.Data,
-        XBindingPath = "MonthlyExpenses",
-        YBindingPath = "Father",
-    };
+StackedLine100Series series1 = new StackedLine100Series()
+{
+    ItemsSource = viewModel.Data,
+    XBindingPath = "MonthlyExpenses",
+    YBindingPath = "Father",
+};
 
-    StackedLine100Series series2 = new StackedLine100Series()
-    {
-        ItemsSource = viewModel.Data,
-        XBindingPath = "MonthlyExpenses",
-        YBindingPath = "Mother",
-    };
+StackedLine100Series series2 = new StackedLine100Series()
+{
+    ItemsSource = viewModel.Data,
+    XBindingPath = "MonthlyExpenses",
+    YBindingPath = "Mother",
+};
 
-    StackedLine100Series series3 = new StackedLine100Series()
-    {
-        ItemsSource = viewModel.Data,
-        XBindingPath = "MonthlyExpenses",
-        YBindingPath = "Son",
-    };
+StackedLine100Series series3 = new StackedLine100Series()
+{
+    ItemsSource = viewModel.Data,
+    XBindingPath = "MonthlyExpenses",
+    YBindingPath = "Son",
+};
 
-    chart.Series.Add(series1);
-    chart.Series.Add(series2);
-    chart.Series.Add(series3);
-    ...
+chart.Series.Add(series1);
+chart.Series.Add(series2);
+chart.Series.Add(series3);
+...
 
 {% endhighlight %}
 
@@ -200,39 +200,39 @@ The [StackedArea100Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
-    ViewModel viewModel = new ViewModel();
-    CategoryAxis primaryAxis = new CategoryAxis();
-    primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
-    chart.XAxes.Add(primaryAxis);
-    NumericalAxis secondaryAxis = new NumericalAxis();
-    chart.YAxes.Add(secondaryAxis);
+SfCartesianChart chart = new SfCartesianChart();
+ViewModel viewModel = new ViewModel();
+CategoryAxis primaryAxis = new CategoryAxis();
+primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
+chart.XAxes.Add(primaryAxis);
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.YAxes.Add(secondaryAxis);
 
-    StackedArea100Series series1 = new StackedArea100Series()
-    {
-        ItemsSource = viewModel.Accidents,
-        XBindingPath = "Month",
-        YBindingPath = "Bus",
-    };
+StackedArea100Series series1 = new StackedArea100Series()
+{
+    ItemsSource = viewModel.Accidents,
+    XBindingPath = "Month",
+    YBindingPath = "Bus",
+};
 
-    StackedArea100Series series2 = new StackedArea100Series()
-    {
-        ItemsSource = viewModel.Accidents,
-        XBindingPath = "Month",
-        YBindingPath = "Car",
-    };
+StackedArea100Series series2 = new StackedArea100Series()
+{
+    ItemsSource = viewModel.Accidents,
+    XBindingPath = "Month",
+    YBindingPath = "Car",
+};
 
-    StackedArea100Series series3 = new StackedArea100Series()
-    {
-        ItemsSource = viewModel.Accidents,
-        XBindingPath = "Month",
-        YBindingPath = "Truck",
-    };
+StackedArea100Series series3 = new StackedArea100Series()
+{
+    ItemsSource = viewModel.Accidents,
+    XBindingPath = "Month",
+    YBindingPath = "Truck",
+};
 
-    chart.Series.Add(series1);
-    chart.Series.Add(series2);
-    chart.Series.Add(series3);
-    ...
+chart.Series.Add(series1);
+chart.Series.Add(series2);
+chart.Series.Add(series3);
+...
 
 {% endhighlight %}
 

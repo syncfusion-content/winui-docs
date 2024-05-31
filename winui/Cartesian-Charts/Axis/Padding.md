@@ -17,37 +17,37 @@ The [PlotOffsetStart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ch
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart>
-    . . .
-    <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis PlotOffsetStart="30"/>
-    </chart:SfCartesianChart.XAxes>
+<chart:SfCartesianChart>
+. . .
+<chart:SfCartesianChart.XAxes>
+    <chart:CategoryAxis PlotOffsetStart="30"/>
+</chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis PlotOffsetStart="30"/>
-    </chart:SfCartesianChart.YAxes>
+<chart:SfCartesianChart.YAxes>
+    <chart:NumericalAxis PlotOffsetStart="30"/>
+</chart:SfCartesianChart.YAxes>
 
-    </chart:SfCartesianChart>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
-    . . .
-    CategoryAxis primaryAxis = new CategoryAxis()
-    {
-    PlotOffsetStart = 30
-    };
-    chart.XAxes.Add(primaryAxis);
+SfCartesianChart chart = new SfCartesianChart();
+. . .
+CategoryAxis primaryAxis = new CategoryAxis()
+{
+   PlotOffsetStart = 30
+};
+chart.XAxes.Add(primaryAxis);
 
-    NumericalAxis secondaryAxis = new NumericalAxis()
-    {
-    PlotOffsetStart = 30
-    };
-    chart.YAxes.Add(secondaryAxis);
-    . . .
-    this.Content = chart;
+NumericalAxis secondaryAxis = new NumericalAxis()
+{
+   PlotOffsetStart = 30
+};
+chart.YAxes.Add(secondaryAxis);
+. . .
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -63,37 +63,37 @@ The [PlotOffsetEnd](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart>
-    . . .
-    <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis PlotOffsetEnd="30"/>
-    </chart:SfCartesianChart.XAxes>
+<chart:SfCartesianChart>
+. . .
+<chart:SfCartesianChart.XAxes>
+    <chart:CategoryAxis PlotOffsetEnd="30"/>
+</chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis PlotOffsetEnd="30"/>
-    </chart:SfCartesianChart.YAxes>
+<chart:SfCartesianChart.YAxes>
+    <chart:NumericalAxis PlotOffsetEnd="30"/>
+</chart:SfCartesianChart.YAxes>
 
-    </chart:SfCartesianChart>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
-    . . .
-    CategoryAxis primaryAxis = new CategoryAxis()
-    {
-    PlotOffsetEnd = 30
-    };
-    chart.XAxes.Add(primaryAxis);
+SfCartesianChart chart = new SfCartesianChart();
+. . .
+CategoryAxis primaryAxis = new CategoryAxis()
+{
+   PlotOffsetEnd = 30
+};
+chart.XAxes.Add(primaryAxis);
 
-    NumericalAxis secondaryAxis = new NumericalAxis()
-    {
-    PlotOffsetEnd = 30
-    };
-    chart.YAxes.Add(secondaryAxis);
-    . . .
-    this.Content = chart;
+NumericalAxis secondaryAxis = new NumericalAxis()
+{
+   PlotOffsetEnd = 30
+};
+chart.YAxes.Add(secondaryAxis);
+. . .
+this.Content = chart;
 
 {% endhighlight %}
 

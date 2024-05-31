@@ -15,27 +15,27 @@ The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 
 {% highlight xaml %}
 
-    <chart:SfPolarChart>
-        <chart:SfPolarChart.PrimaryAxis>
-            <chart:CategoryAxis/>
-        </chart:SfPolarChart.PrimaryAxis>
-        <chart:SfPolarChart.SecondaryAxis>
-            <chart:NumericalAxis Header="Tree"/>
-        </chart:SfPolarChart.SecondaryAxis>
-    ...
-    </chart:SfPolarChart>
+<chart:SfPolarChart>
+    <chart:SfPolarChart.PrimaryAxis>
+        <chart:CategoryAxis/>
+    </chart:SfPolarChart.PrimaryAxis>
+    <chart:SfPolarChart.SecondaryAxis>
+        <chart:NumericalAxis Header="Tree"/>
+    </chart:SfPolarChart.SecondaryAxis>
+...
+</chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfPolarChart chart = new SfPolarChart();
-    chart.PrimaryAxis = new CategoryAxis();
-    chart.SecondaryAxis = new NumericalAxis()
-    {
-        Header = "Tree" 
-    };
-    ...
+SfPolarChart chart = new SfPolarChart();
+chart.PrimaryAxis = new CategoryAxis();
+chart.SecondaryAxis = new NumericalAxis()
+{
+    Header = "Tree" 
+};
+...
 
 {% endhighlight %}
 
@@ -53,43 +53,43 @@ The [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 
 {% highlight xaml %}
 
-    <chart:SfPolarChart>
-        <chart:SfPolarChart.PrimaryAxis>
-            <chart:CategoryAxis/>
-        </chart:SfPolarChart.PrimaryAxis>
-        <chart:SfPolarChart.SecondaryAxis>
-            <chart:NumericalAxis Header="Tree">
-                <chart:NumericalAxis.HeaderStyle>
-                    <chart:LabelStyle FontFamily="Algerian"
-                                    FontSize="13"
-                                    Foreground="Black"/>
-                </chart:NumericalAxis.HeaderStyle>
-            </chart:NumericalAxis>
-        </chart:SfPolarChart.SecondaryAxis>
-        ...
-    </chart:SfPolarChart>
+<chart:SfPolarChart>
+    <chart:SfPolarChart.PrimaryAxis>
+        <chart:CategoryAxis/>
+    </chart:SfPolarChart.PrimaryAxis>
+    <chart:SfPolarChart.SecondaryAxis>
+        <chart:NumericalAxis Header="Tree">
+            <chart:NumericalAxis.HeaderStyle>
+                <chart:LabelStyle FontFamily="Algerian"
+								  FontSize="13"
+								  Foreground="Black"/>
+            </chart:NumericalAxis.HeaderStyle>
+        </chart:NumericalAxis>
+    </chart:SfPolarChart.SecondaryAxis>
+    ...
+</chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfPolarChart chart = new SfPolarChart();
-    ...
-    LabelStyle style = new LabelStyle()
-    {
-        FontFamily = new FontFamily("Algerian"),
-        FontSize = 13,
-        Foreground = new SolidColorBrush(Colors.Black)
-    };
+SfPolarChart chart = new SfPolarChart();
+...
+LabelStyle style = new LabelStyle()
+{
+    FontFamily = new FontFamily("Algerian"),
+    FontSize = 13,
+    Foreground = new SolidColorBrush(Colors.Black)
+};
 
-    chart.PrimaryAxis = new CategoryAxis();
+chart.PrimaryAxis = new CategoryAxis();
 
-    chart.SecondaryAxis = new NumericalAxis()
-    {
-        Header = "Tree",
-        LabelStyle = style
-    };
-    ...
+chart.SecondaryAxis = new NumericalAxis()
+{
+    Header = "Tree",
+    LabelStyle = style
+};
+...
 
 {% endhighlight %}
 
@@ -105,46 +105,46 @@ The appearance of the header can be customized using the [HeaderTemplate](https:
 
 {% highlight xaml %}
 
-    <chart:SfPolarChart x:Name="chart">
-        <chart:SfPolarChart.Resources>
-            <DataTemplate x:Key="headerTemplate">
-                <Border BorderBrush="Blue"
-                        CornerRadius="5"
-                        BorderThickness="1">
-                    <TextBlock Text="{Binding}"
-                            FontSize="12"
-                            Margin="3"
-                            FontStyle="Italic"
-                            FontWeight="Bold"/>
-                </Border>
-            </DataTemplate>
-        </chart:SfPolarChart.Resources>
-        
-        <chart:SfPolarChart.PrimaryAxis>
-            <chart:CategoryAxis/>
-        </chart:SfPolarChart.PrimaryAxis>
-        <chart:SfPolarChart.SecondaryAxis>
-            <chart:NumericalAxis Header="Tree" 
-                                HeaderTemplate="{StaticResource headerTemplate}" />
-        </chart:SfPolarChart.SecondaryAxis>
-        ...
-    </chart:SfPolarChart>
+<chart:SfPolarChart x:Name="chart">
+    <chart:SfPolarChart.Resources>
+        <DataTemplate x:Key="headerTemplate">
+            <Border BorderBrush="Blue"
+					CornerRadius="5"
+					BorderThickness="1">
+                <TextBlock Text="{Binding}"
+						   FontSize="12"
+						   Margin="3"
+                           FontStyle="Italic"
+						   FontWeight="Bold"/>
+            </Border>
+        </DataTemplate>
+    </chart:SfPolarChart.Resources>
+    
+    <chart:SfPolarChart.PrimaryAxis>
+        <chart:CategoryAxis/>
+    </chart:SfPolarChart.PrimaryAxis>
+    <chart:SfPolarChart.SecondaryAxis>
+        <chart:NumericalAxis Header="Tree" 
+                             HeaderTemplate="{StaticResource headerTemplate}" />
+    </chart:SfPolarChart.SecondaryAxis>
+    ...
+</chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfPolarChart chart = new SfPolarChart();
-    ...
+SfPolarChart chart = new SfPolarChart();
+...
 
-    chart.PrimaryAxis = new CategoryAxis();
+chart.PrimaryAxis = new CategoryAxis();
 
-    chart.SecondaryAxis = new NumericalAxis()
-    {
-        Header = "Tree",
-        HeaderTemplate = chart.Resources["headerTemplate"] as DataTemplate
-    };
-    ...
+chart.SecondaryAxis = new NumericalAxis()
+{
+    Header = "Tree",
+    HeaderTemplate = chart.Resources["headerTemplate"] as DataTemplate
+};
+...
 
 {% endhighlight %}
 

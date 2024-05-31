@@ -15,18 +15,18 @@ documentation: ug
 
 {% highlight xaml %}
 
-    <chart:SfFunnelChart x:Name="chart" Header="PRODUCT SALES">
-    . . .           
-    </chart:SfFunnelChart>
+<chart:SfFunnelChart x:Name="chart" Header="PRODUCT SALES">
+ . . .           
+</chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfFunnelChart chart = new SfFunnelChart();
-    chart.Header = "PRODUCT SALES";
-    . . . 
-    this.Content = chart;
+SfFunnelChart chart = new SfFunnelChart();
+chart.Header = "PRODUCT SALES";
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -42,20 +42,20 @@ documentation: ug
 
 {% highlight xaml %}
 
-    <chart:SfFunnelChart>
+ <chart:SfFunnelChart>
 
-        <chart:SfFunnelChart.Header>
-            <Border BorderThickness="2"
-                    BorderBrush="Black"
-                    Margin="10"
-                    CornerRadius="5">
-                <TextBlock FontSize="14" 
-                        Text="PRODUCT SALES"
-                        Margin="5"/>
-            </Border>
-        </chart:SfFunnelChart.Header>
-                
-    </chart:SfFunnelChart>
+    <chart:SfFunnelChart.Header>
+        <Border BorderThickness="2"
+				BorderBrush="Black"
+				Margin="10"
+				CornerRadius="5">
+            <TextBlock FontSize="14" 
+					   Text="PRODUCT SALES"
+					   Margin="5"/>
+        </Border>
+    </chart:SfFunnelChart.Header>
+            
+</chart:SfFunnelChart>
 
 {% endhighlight %}
 
@@ -97,80 +97,80 @@ The title text content can be aligned horizontally to the left, center or right 
 
 {% highlight xaml %}
 
-    <chart:SfFunnelChart x:Name="chart" 
-                        HorizontalHeaderAlignment="Right"
-                        ShowDataLabels="True"
-                        Height="388" Width="500" 
-                        ItemsSource="{Binding Data}" 
-                        XBindingPath="Category"
-                        YBindingPath="Value">
-                    
-                <chart:SfFunnelChart.Header>
-                    <Border BorderThickness="2"
-                            Background="LightBlue"
-                            BorderBrush="Black"
-                            Margin="10" 
-                            CornerRadius="5">
-                        <TextBlock FontSize="14"
-                                Text="PRODUCT SALES" 
-                                Margin="5"/>
-                    </Border>
-                </chart:SfFunnelChart.Header>
-
-                <chart:SfFunnelChart.DataContext>
-                    <model:ChartViewModel />
-                </chart:SfFunnelChart.DataContext>
-
-                <chart:SfFunnelChart.Legend>
-                    <chart:ChartLegend />
-                </chart:SfFunnelChart.Legend>
+ <chart:SfFunnelChart x:Name="chart" 
+                     HorizontalHeaderAlignment="Right"
+                     ShowDataLabels="True"
+                     Height="388" Width="500" 
+                     ItemsSource="{Binding Data}" 
+                     XBindingPath="Category"
+                     YBindingPath="Value">
                 
-    </chart:SfFunnelChart>
+            <chart:SfFunnelChart.Header>
+                <Border BorderThickness="2"
+						Background="LightBlue"
+						BorderBrush="Black"
+						Margin="10" 
+						CornerRadius="5">
+                    <TextBlock FontSize="14"
+							   Text="PRODUCT SALES" 
+							   Margin="5"/>
+                </Border>
+            </chart:SfFunnelChart.Header>
+
+            <chart:SfFunnelChart.DataContext>
+                <model:ChartViewModel />
+            </chart:SfFunnelChart.DataContext>
+
+            <chart:SfFunnelChart.Legend>
+                <chart:ChartLegend />
+            </chart:SfFunnelChart.Legend>
+            
+</chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    public sealed partial class MainPage : Page
+public sealed partial class MainPage : Page
+{
+    public MainPage()
     {
-        public MainPage()
+        this.InitializeComponent();
+            
+        SfFunnelChart chart = new SfFunnelChart();
+        ChartViewModel viewModel = new ChartViewModel();
+        chart.DataContext = viewModel;
+        chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+        chart.HorizontalHeaderAlignment = HorizontalAlignment.Right;
+        chart.XBindingPath = "Category";
+        chart.YBindingPath = "Value";
+        chart.Height = 388;
+        chart.Width = 500;
+
+        Border border = new Border()
         {
-            this.InitializeComponent();
-                
-            SfFunnelChart chart = new SfFunnelChart();
-            ChartViewModel viewModel = new ChartViewModel();
-            chart.DataContext = viewModel;
-            chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
-            chart.HorizontalHeaderAlignment = HorizontalAlignment.Right;
-            chart.XBindingPath = "Category";
-            chart.YBindingPath = "Value";
-            chart.Height = 388;
-            chart.Width = 500;
+            BorderThickness = new Thickness(2),
+            BorderBrush = new SolidColorBrush(Colors.Black),
+            Background = new SolidColorBrush(Colors.LightBlue),
+            Margin = new Thickness(10),
+            CornerRadius = new CornerRadius(5)
+        };
 
-            Border border = new Border()
-            {
-                BorderThickness = new Thickness(2),
-                BorderBrush = new SolidColorBrush(Colors.Black),
-                Background = new SolidColorBrush(Colors.LightBlue),
-                Margin = new Thickness(10),
-                CornerRadius = new CornerRadius(5)
-            };
+        TextBlock textBlock = new TextBlock()
+        {
+            Text = "PRODUCT SALES",
+            Margin = new Thickness(5),
+            FontSize = 14
+        };
 
-            TextBlock textBlock = new TextBlock()
-            {
-                Text = "PRODUCT SALES",
-                Margin = new Thickness(5),
-                FontSize = 14
-            };
+        border.Child = textBlock;
+        chart.Header = border;
+        chart.Legend = new ChartLegend();
+        chart.ShowDataLabels = true;
 
-            border.Child = textBlock;
-            chart.Header = border;
-            chart.Legend = new ChartLegend();
-            chart.ShowDataLabels = true;
-
-            this.Content = chart;
-        }
+        this.Content = chart;
     }
+}
 
 {% endhighlight %}
 

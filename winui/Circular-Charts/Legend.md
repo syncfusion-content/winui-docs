@@ -15,9 +15,9 @@ The legend contains list of series data points in the chart. The information pro
 
 {% highlight xaml %}
 
-    <chart:SfCircularChart.Legend>
-        <chart:ChartLegend/>
-    </chart:SfCircularChart.Legend>
+<chart:SfCircularChart.Legend>
+    <chart:ChartLegend/>
+</chart:SfCircularChart.Legend>
 
 {% endhighlight %}
 
@@ -42,37 +42,37 @@ Circular chart provides support to add any `UIElement` as a title for legend. [H
 
 {% highlight xaml %}
 
-    <chart:SfCircularChart>
-    . . .
-        <chart:SfCircularChart.Legend>
-            <chart:ChartLegend>
-                <chart:ChartLegend.Header>
-                    <TextBlock Text="Products" 
-                            HorizontalAlignment="Center"
-                            FontWeight="Bold"
-                            Foreground="Blue"/>
-                </chart:ChartLegend.Header>
-        </chart:ChartLegend>
-    </chart:SfCircularChart.Legend>
-    </chart:SfCircularChart>
+<chart:SfCircularChart>
+. . .
+    <chart:SfCircularChart.Legend>
+        <chart:ChartLegend>
+            <chart:ChartLegend.Header>
+                <TextBlock Text="Products" 
+                           HorizontalAlignment="Center"
+                           FontWeight="Bold"
+                           Foreground="Blue"/>
+            </chart:ChartLegend.Header>
+    </chart:ChartLegend>
+</chart:SfCircularChart.Legend>
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCircularChart chart = new SfCircularChart();
-    ChartLegend legend = new ChartLegend();
+SfCircularChart chart = new SfCircularChart();
+ChartLegend legend = new ChartLegend();
 
-    TextBlock textBlock = new TextBlock()
-    {
-        Text = "Products",
-        HorizontalTextAlignment = TextAlignment.Center,
-        Foreground = new SolidColorBrush(Colors.Blue),
-        FontWeight = FontWeights.Bold,
-    };
+TextBlock textBlock = new TextBlock()
+{
+    Text = "Products",
+    HorizontalTextAlignment = TextAlignment.Center,
+    Foreground = new SolidColorBrush(Colors.Blue),
+    FontWeight = FontWeights.Bold,
+};
 
-    legend.Header = textBlock;
-    chart.Legend = legend;
+legend.Header = textBlock;
+chart.Legend = legend;
 
 {% endhighlight %}
 
@@ -88,36 +88,36 @@ Legend icon represents a symbol associated with the each legend item. [LegendIco
 
 {% highlight xaml %}
 
-    <chart:SfCircularChart>
-    . . .
-    <chart:SfCircularChart.Legend>
-        <chart:ChartLegend/>
-    </chart:SfCircularChart.Legend>
+<chart:SfCircularChart>
+. . .
+<chart:SfCircularChart.Legend>
+    <chart:ChartLegend/>
+</chart:SfCircularChart.Legend>
 
 
-    <chart:SfCircularChart.Series>
-        <chart:PieSeries LegendIcon="Rectangle"
-                        ItemsSource="{Binding Data}"  
-                        XBindingPath="Product" 
-                        YBindingPath="SalesRate">
-        </chart:PieSeries>
-    </chart:SfCircularChart.Series>
-    . . .
-    </chart:SfCircularChart>
+<chart:SfCircularChart.Series>
+    <chart:PieSeries LegendIcon="Rectangle"
+                     ItemsSource="{Binding Data}"  
+                     XBindingPath="Product" 
+                     YBindingPath="SalesRate">
+    </chart:PieSeries>
+</chart:SfCircularChart.Series>
+. . .
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 
-    SfCircularChart chart = new SfCircularChart();
-    . . .
-    chart.Legend = new ChartLegend();
+SfCircularChart chart = new SfCircularChart();
+. . .
+chart.Legend = new ChartLegend();
 
-    PieSeries series = new PieSeries();
-    series.LegendIcon = ChartLegendIcon.Rectangle;
+PieSeries series = new PieSeries();
+series.LegendIcon = ChartLegendIcon.Rectangle;
 
-    chart.Series.Add(series);
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -135,29 +135,29 @@ The appearance of the legend icon can be customized using the below properties.
 
 {% highlight xaml %}
 
-    <chart:SfCircularChart>
-    . . .
-    <chart:SfCircularChart.Legend>
-        <chart:ChartLegend IconWidth="10" 
-                        IconHeight="5" 
-                        IconVisibility="Visible">
-        </chart:ChartLegend>
-    </chart:SfCircularChart.Legend>
+<chart:SfCircularChart>
+. . .
+<chart:SfCircularChart.Legend>
+    <chart:ChartLegend IconWidth="10" 
+					   IconHeight="5" 
+                       IconVisibility="Visible">
+    </chart:ChartLegend>
+</chart:SfCircularChart.Legend>
 
-    </chart:SfCircularChart>
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCircularChart chart = new SfCircularChart();
-    . . .
-    chart.Legend = new ChartLegend()
-    {
-        IconWidth = 10,
-        IconHeight = 5,
-        IconVisibility = Visibility.Visible,
-    };
+SfCircularChart chart = new SfCircularChart();
+. . .
+chart.Legend = new ChartLegend()
+{
+    IconWidth = 10,
+    IconHeight = 5,
+    IconVisibility = Visibility.Visible,
+};
 
 {% endhighlight %}
 
@@ -171,37 +171,37 @@ Circular chart provides support to add custom icon for the legend using [LegendI
 
 {% highlight xaml %}
 
-    <Grid x:Name="grid">
-        <Grid.Resources>
-            <DataTemplate x:Key="iconTemplate">
-                <Ellipse Height="15"
-                        Width="15"
-                        Fill="White" 
-                        Stroke="#4a4a4a" 
-                        StrokeThickness="2"/>
-            </DataTemplate>
-        </Grid.Resources>
-    <chart:SfCircularChart>
-        <chart:SfCircularChart.Legend>
-            <chart:ChartLegend IconWidth="15"
-                            IconHeight="15"/>
-        </chart:SfCircularChart.Legend>
+<Grid x:Name="grid">
+    <Grid.Resources>
+        <DataTemplate x:Key="iconTemplate">
+            <Ellipse Height="15"
+					 Width="15"
+					 Fill="White" 
+					 Stroke="#4a4a4a" 
+					 StrokeThickness="2"/>
+        </DataTemplate>
+    </Grid.Resources>
+<chart:SfCircularChart>
+    <chart:SfCircularChart.Legend>
+        <chart:ChartLegend IconWidth="15"
+						   IconHeight="15"/>
+    </chart:SfCircularChart.Legend>
 
-        <chart:PieSeries LegendIconTemplate="{StaticResource iconTemplate}"
-                        ItemsSource="{Binding Data}"/>
-    </chart:SfCircularChart>
-    </Grid>
+    <chart:PieSeries LegendIconTemplate="{StaticResource iconTemplate}"
+                     ItemsSource="{Binding Data}"/>
+</chart:SfCircularChart>
+</Grid>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCircularChart chart = new SfCircularChart();
-    . . .
-    PieSeries series = new PieSeries();
-    series.LegendIconTemplate = grid.Resources["iconTemplate"] as DataTemplate;
-    . . .
-    chart.Series.Add(series);
+SfCircularChart chart = new SfCircularChart();
+. . .
+PieSeries series = new PieSeries();
+series.LegendIconTemplate = grid.Resources["iconTemplate"] as DataTemplate;
+. . .
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -217,24 +217,24 @@ Circular chart provides support to add custom icon for the legend using [LegendI
 
 {% highlight xaml %}
 
-    <chart:SfCircularChart>
-    . . .
-    <chart:SfCircularChart.Legend>
-        <chart:ChartLegend ItemMargin="10"/>
-    </chart:SfCircularChart.Legend>
+<chart:SfCircularChart>
+. . .
+<chart:SfCircularChart.Legend>
+    <chart:ChartLegend ItemMargin="10"/>
+</chart:SfCircularChart.Legend>
 
-    </chart:SfCircularChart>
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCircularChart chart = new SfCircularChart();
-    . . .
-    chart.Legend = new ChartLegend()
-    {
-        ItemMargin = new Thickness(10)
-    };
+SfCircularChart chart = new SfCircularChart();
+. . .
+chart.Legend = new ChartLegend()
+{
+    ItemMargin = new Thickness(10)
+};
 
 {% endhighlight %}
 
@@ -250,24 +250,24 @@ Circular chart provides support to enable the checkbox for each legend item to v
 
 {% highlight xaml %}
 
-    <chart:SfCircularChart>
-    . . .
-        <chart:SfCircularChart.Legend>
-            <chart:ChartLegend CheckBoxVisibility="Visible"/>
-        </chart:SfCircularChart.Legend>
+<chart:SfCircularChart>
+. . .
+    <chart:SfCircularChart.Legend>
+        <chart:ChartLegend CheckBoxVisibility="Visible"/>
+    </chart:SfCircularChart.Legend>
 
-    </chart:SfCircularChart>
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCircularChart chart = new SfCircularChart();
-    . . .
-    chart.Legend = new ChartLegend()
-    {
-    CheckBoxVisibility = Visibility.Visible
-    };
+SfCircularChart chart = new SfCircularChart();
+. . .
+chart.Legend = new ChartLegend()
+{
+   CheckBoxVisibility = Visibility.Visible
+};
 
 {% endhighlight %}
 
@@ -287,24 +287,24 @@ The visibility of the segment can be control by tapping the legend item by enabl
 
 {% highlight xaml %}
 
-    <chart:SfCircularChart>
-    . . .
-        <chart:SfCircularChart.Legend>
-            <chart:ChartLegend ToggleSeriesVisibility="True"/>
-        </chart:SfCircularChart.Legend>
+<chart:SfCircularChart>
+. . .
+    <chart:SfCircularChart.Legend>
+        <chart:ChartLegend ToggleSeriesVisibility="True"/>
+    </chart:SfCircularChart.Legend>
 
-    </chart:SfCircularChart>
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCircularChart chart = new SfCircularChart();
-    . . .
-    chart.Legend = new ChartLegend()
-    {
-    ToggleSeriesVisibility = true
-    };
+SfCircularChart chart = new SfCircularChart();
+. . .
+chart.Legend = new ChartLegend()
+{
+   ToggleSeriesVisibility = true
+};
 
 {% endhighlight %}
 
@@ -322,26 +322,26 @@ To display the legend at the left, set the [Placement](https://help.syncfusion.c
 
 {% highlight xaml %}
 
-    <chart:SfCircularChart>
-    . . .
-    <chart:SfCircularChart.Legend>
-        <chart:ChartLegend ItemMargin="10"
-                        Placement="Left"/>
-    </chart:SfCircularChart.Legend>
+<chart:SfCircularChart>
+. . .
+<chart:SfCircularChart.Legend>
+    <chart:ChartLegend ItemMargin="10"
+					   Placement="Left"/>
+</chart:SfCircularChart.Legend>
 
-    </chart:SfCircularChart>
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCircularChart chart = new SfCircularChart();
-    . . .
-    chart.Legend = new ChartLegend()
-    {
-        ItemMargin = new Thickness(10),
-        Placement = LegendPlacement.Left
-    };
+SfCircularChart chart = new SfCircularChart();
+. . .
+chart.Legend = new ChartLegend()
+{
+    ItemMargin = new Thickness(10),
+    Placement = LegendPlacement.Left
+};
 
 {% endhighlight %}
 
@@ -361,31 +361,31 @@ The legend background appearance can be customized by using the below properties
 {% tabs %}
 
 {% highlight xaml %}
-    <chart:SfCircularChart>
-    . . .
-    <chart:SfCircularChart.Legend>
-        <chart:ChartLegend Background="Gray"
-                        BorderBrush="Black" 
-                        BorderThickness="1" 
-                        CornerRadius="5" >
-        </chart:ChartLegend>
-    </chart:SfCircularChart.Legend>
+<chart:SfCircularChart>
+. . .
+<chart:SfCircularChart.Legend>
+    <chart:ChartLegend Background="Gray"
+					   BorderBrush="Black" 
+					   BorderThickness="1" 
+                       CornerRadius="5" >
+    </chart:ChartLegend>
+</chart:SfCircularChart.Legend>
 
-    </chart:SfCircularChart>
+</chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCircularChart chart = new SfCircularChart();
-    . . .
-    chart.Legend = new ChartLegend()
-    {
-        Background = new SolidColorBrush(Colors.Gray),
-        BorderBrush = new SolidColorBrush(Colors.Black),
-        BorderThickness = new Thickness(1),
-        CornerRadius = new CornerRadius(5)
-    };
+SfCircularChart chart = new SfCircularChart();
+. . .
+chart.Legend = new ChartLegend()
+{
+    Background = new SolidColorBrush(Colors.Gray),
+    BorderBrush = new SolidColorBrush(Colors.Black),
+    BorderThickness = new Thickness(1),
+    CornerRadius = new CornerRadius(5)
+};
 
 {% endhighlight %}
 
@@ -399,44 +399,44 @@ Customize each legend item by using [ItemTemplate](https://help.syncfusion.com/c
 
 {% highlight xaml %}
 
-    <Grid x:Name="grid">
-        <Grid.Resources>
-            <DataTemplate x:Key="labelTemplate">
-                <StackPanel Margin="10"
-                            Orientation="Vertical">
-                    <Ellipse Height="15"
-                            Width="15"
-                            Fill="{Binding Interior}" 
-                            Stroke="#4a4a4a"
-                            StrokeThickness="2"/>
-                    <TextBlock HorizontalAlignment="Center"
-                            FontSize="12"
-                            Foreground="Black" 
-                            FontWeight="SemiBold"
-                            Text="{Binding Label}"/>
-                </StackPanel>
-            </DataTemplate>
-        </Grid.Resources>
-    <chart:SfCircularChart>
-        . . .
-        <chart:SfCircularChart.Legend>
-            <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}"/>
-        </chart:SfCircularChart.Legend>
+<Grid x:Name="grid">
+    <Grid.Resources>
+        <DataTemplate x:Key="labelTemplate">
+            <StackPanel Margin="10"
+						Orientation="Vertical">
+                <Ellipse Height="15"
+						 Width="15"
+						 Fill="{Binding Interior}" 
+						 Stroke="#4a4a4a"
+						 StrokeThickness="2"/>
+                <TextBlock HorizontalAlignment="Center"
+						   FontSize="12"
+                           Foreground="Black" 
+                           FontWeight="SemiBold"
+						   Text="{Binding Label}"/>
+            </StackPanel>
+        </DataTemplate>
+    </Grid.Resources>
+<chart:SfCircularChart>
+    . . .
+    <chart:SfCircularChart.Legend>
+        <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}"/>
+    </chart:SfCircularChart.Legend>
 
-    </chart:SfCircularChart>
-    </Grid>
+</chart:SfCircularChart>
+</Grid>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCircularChart chart = new SfCircularChart();
-    . . .
-    chart.Legend = new ChartLegend()
-    {
+SfCircularChart chart = new SfCircularChart();
+. . .
+chart.Legend = new ChartLegend()
+{
 
-    ItemTemplate = grid.Resources["itemTemplate"] as DataTemplate
-    };
+   ItemTemplate = grid.Resources["itemTemplate"] as DataTemplate
+};
 
 {% endhighlight %}
 

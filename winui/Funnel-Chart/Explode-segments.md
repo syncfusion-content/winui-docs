@@ -19,27 +19,27 @@ Exploding a segment is used to pull attention to a specific area of the funnel. 
 
 {% highlight xaml %}
 
-    <chart:SfFunnelChart x:Name="chart" 
-                    ExplodeIndex="3"  
-                    ExplodeOffset="30" 
-                    ItemsSource="{Binding Data}" 
-                    XBindingPath="Category"
-                    YBindingPath="Value">
+<chart:SfFunnelChart x:Name="chart" 
+                ExplodeIndex="3"  
+                ExplodeOffset="30" 
+                ItemsSource="{Binding Data}" 
+                XBindingPath="Category"
+                YBindingPath="Value">
 
-    </chart:SfFunnelChart>
+</chart:SfFunnelChart>
  
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfFunnelChart chart = new SfFunnelChart();
-    chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
-    chart.XBindingPath = "Category";
-    chart.YBindingPath = "Value";
-    chart.ExplodeIndex = 3;
-    chart.ExplodeOffset = 30;
-    . . . 
-    this.Content = chart;
+SfFunnelChart chart = new SfFunnelChart();
+chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+chart.XBindingPath = "Category";
+chart.YBindingPath = "Value";
+chart.ExplodeIndex = 3;
+chart.ExplodeOffset = 30;
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 

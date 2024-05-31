@@ -36,21 +36,21 @@ This section explains how to populate the [WinUI Pyramid Chart](https://www.sync
 
 {% highlight C# %}
 
-    using Syncfusion.UI.Xaml.Charts;
+using Syncfusion.UI.Xaml.Charts;
 
-    . . .
+. . .
 
-    public sealed partial class MainWindow : Window
+public sealed partial class MainWindow : Window
+{
+    
+    public MainWindow()
     {
-        
-        public MainWindow()
-        {
-            this.InitializeComponent();
-            SfPyramidChart chart = new SfPyramidChart();
-            . . .
-            this.Content = chart;
-        }
-    }   
+        this.InitializeComponent();
+        SfPyramidChart chart = new SfPyramidChart();
+        . . .
+        this.Content = chart;
+    }
+}   
 
 {% endhighlight %}
 
@@ -66,12 +66,12 @@ Now, let us define a simple data model that represents a data point in the chart
 
 {% highlight c# %}
 
-    public class Model
-    {
-        public string FoodName { get; set; }
+public class Model
+{
+    public string FoodName { get; set; }
 
-        public double Calories { get; set; }
-    }
+    public double Calories { get; set; }
+}
 
 {% endhighlight %} 
 
@@ -83,23 +83,23 @@ Next, create a view model class and initialize a list of `Model` objects as foll
 
 {% highlight c# %}
 
-    public class ChartViewModel
-    {
-        public List<Model> Data { get; set; }
+public class ChartViewModel
+{
+    public List<Model> Data { get; set; }
 
-        public ChartViewModel()
+    public ChartViewModel()
+    {
+        Data = new List<Model>()
         {
-            Data = new List<Model>()
-            {
-                new Model(){FoodName = "Sweet treats", Calories = 250},
-                new Model(){FoodName = "Cheese", Calories = 402},
-                new Model(){FoodName = "Vegetables", Calories = 65},
-                new Model(){FoodName = "Fish", Calories = 206},
-                new Model(){FoodName = "Fruits", Calories = 52},
-                new Model(){FoodName = "Rice", Calories = 130},
-            };
-        }
+            new Model(){FoodName = "Sweet treats", Calories = 250},
+            new Model(){FoodName = "Cheese", Calories = 402},
+            new Model(){FoodName = "Vegetables", Calories = 65},
+            new Model(){FoodName = "Fish", Calories = 206},
+            new Model(){FoodName = "Fruits", Calories = 52},
+            new Model(){FoodName = "Rice", Calories = 130},
+        };
     }
+}
 
 {% endhighlight %} 
 
@@ -113,26 +113,26 @@ N> If you prefer to set `DataContext` in XAML, add the namespace of the `ViewMod
 
 {% highlight xaml %} 
 
-    <Window>
-        . . .
+<Window>
+    . . .
 
-        xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
-        xmlns:model="using:ChartDemo.ViewModel">
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    xmlns:model="using:ChartDemo.ViewModel">
 
-        <chart:SfPyramidChart>
-            <chart:SfPyramidChart.DataContext>
-                <model:ChartViewModel/>
-            </chart:SfPyramidChart.DataContext>
-        </chart:SfPyramidChart>
+    <chart:SfPyramidChart>
+        <chart:SfPyramidChart.DataContext>
+            <model:ChartViewModel/>
+        </chart:SfPyramidChart.DataContext>
+    </chart:SfPyramidChart>
 
-    </Window>
+</Window>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-    ChartViewModel viewModel = new ChartViewModel();
-    chart.DataContext = viewModel;
+ChartViewModel viewModel = new ChartViewModel();
+chart.DataContext = viewModel;
 
 {% endhighlight %}
 
@@ -146,21 +146,21 @@ The title of the chart provide quick information to the user about the data bein
 
 {% highlight xaml %}
 
-    <chart:SfPyramidChart Header="Calories in food">
-        
-    . . .
+<chart:SfPyramidChart Header="Calories in food">
+    
+. . .
 
-    </chart:SfPyramidChart>
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfPyramidChart chart = new SfPyramidChart();
+SfPyramidChart chart = new SfPyramidChart();
 
-    . . .
+. . .
 
-    chart.Header = "Calories in food";
+chart.Header = "Calories in food";
 
 {% endhighlight %}
 
@@ -174,17 +174,17 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 {% highlight xaml %}
 
-    <chart:SfPyramidChart ShowDataLabels="True">
-        . . . 
-    </chart:SfPyramidChart>
+<chart:SfPyramidChart ShowDataLabels="True">
+    . . . 
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfPyramidChart chart = new SfPyramidChart();
-    . . .
-    chart.ShowDataLabels = true;
+SfPyramidChart chart = new SfPyramidChart();
+. . .
+chart.ShowDataLabels = true;
 
 {% endhighlight %}
 
@@ -198,20 +198,20 @@ The legend provides information about the data point displayed in the pyramid ch
 
 {% highlight xaml %}
 
-    <chart:SfPyramidChart>
-        . . .
-        <chart:SfPyramidChart.Legend>
-            <chart:ChartLegend/>
-        </chart:SfPyramidChart.Legend>
-    </chart:SfPyramidChart>
+<chart:SfPyramidChart>
+    . . .
+    <chart:SfPyramidChart.Legend>
+        <chart:ChartLegend/>
+    </chart:SfPyramidChart.Legend>
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfPyramidChart chart = new SfPyramidChart();
-    . . .
-    chart.Legend = new ChartLegend();
+SfPyramidChart chart = new SfPyramidChart();
+. . .
+chart.Legend = new ChartLegend();
 
 {% endhighlight %}
 
@@ -225,17 +225,17 @@ Tooltips are used to display information about a segment, when the mouse is move
 
 {% highlight xaml %}
 
-    <chart:SfPyramidChart EnableTooltip="True">
-        . . . 
-    </chart:SfPyramidChart>
+<chart:SfPyramidChart EnableTooltip="True">
+    . . . 
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfPyramidChart chart = new SfPyramidChart();
-    . . .
-    chart.EnableTooltip = true;
+SfPyramidChart chart = new SfPyramidChart();
+. . .
+chart.EnableTooltip = true;
 
 {% endhighlight %}
 
@@ -249,50 +249,50 @@ N> To plot the chart, the [XBindingPath](https://help.syncfusion.com/cr/winui/Sy
 
 {% highlight xaml %}
 
-    <chart:SfPyramidChart x:Name="chart" 
-                        Header="The Food Comparison Pyramid"
-                        EnableTooltip="True"
-                        ShowDataLabels="True"
-                        ItemsSource="{Binding Data}" 
-                        XBindingPath="FoodName"
-                        YBindingPath="Calories">
+<chart:SfPyramidChart x:Name="chart" 
+                      Header="The Food Comparison Pyramid"
+                      EnableTooltip="True"
+                      ShowDataLabels="True"
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="FoodName"
+                      YBindingPath="Calories">
 
-        <chart:SfPyramidChart.DataContext>
-            <model:ChartViewModel />
-        </chart:SfPyramidChart.DataContext>
+    <chart:SfPyramidChart.DataContext>
+        <model:ChartViewModel />
+    </chart:SfPyramidChart.DataContext>
 
-        <chart:SfPyramidChart.Legend>
-            <chart:ChartLegend />
-        </chart:SfPyramidChart.Legend>
+    <chart:SfPyramidChart.Legend>
+        <chart:ChartLegend />
+    </chart:SfPyramidChart.Legend>
 
-    </chart:SfPyramidChart>
+</chart:SfPyramidChart>
  
 {% endhighlight %}
 
 {% highlight C# %}
 
-    using Syncfusion.UI.Xaml.Charts;
+using Syncfusion.UI.Xaml.Charts;
 
-    . . .
+. . .
 
-    public sealed partial class MainWindow : Window
+public sealed partial class MainWindow : Window
+{
+    public MainWindow()
     {
-        public MainWindow()
-        {
-            SfPyramidChart chart = new SfPyramidChart();
-            ChartViewModel viewModel = new ChartViewModel();
-            chart.DataContext = viewModel;
-            chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
-            chart.XBindingPath = "FoodName";
-            chart.YBindingPath = "Calories";
-            chart.Header = "The Food Comparison Pyramid";
-            chart.Legend = new ChartLegend();
-            chart.EnableTooltip = true;
-            chart.ShowDataLabels = true;
+        SfPyramidChart chart = new SfPyramidChart();
+        ChartViewModel viewModel = new ChartViewModel();
+        chart.DataContext = viewModel;
+        chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+        chart.XBindingPath = "FoodName";
+        chart.YBindingPath = "Calories";
+        chart.Header = "The Food Comparison Pyramid";
+        chart.Legend = new ChartLegend();
+        chart.EnableTooltip = true;
+        chart.ShowDataLabels = true;
 
-            this.Content = chart;
-        }
+        this.Content = chart;
     }
+}
 
 {% endhighlight %}
 

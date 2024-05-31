@@ -37,21 +37,21 @@ This section explains how to populate the Cartesian chart with data, a header, d
 
 {% highlight C# %}
 
-    using Syncfusion.UI.Xaml.Charts;
+using Syncfusion.UI.Xaml.Charts;
 
-    namespace SfChart_GettingStarted
+namespace SfChart_GettingStarted
+{
+    public sealed partial class MainWindow : Window
     {
-        public sealed partial class MainWindow : Window
+        public MainWindow()
         {
-            public MainWindow()
-            {
-                InitializeComponent();
-                
-                SfCartesianChart chart = new SfCartesianChart();      
-                grid.Children.Add(chart);
-            }
-        }   
-    }
+            InitializeComponent();
+            
+            SfCartesianChart chart = new SfCartesianChart();      
+            grid.Children.Add(chart);
+        }
+    }   
+}
 
 {% endhighlight %}
 
@@ -67,12 +67,12 @@ Now, let us define a simple data model that represents a data point in chart.
 
 {% highlight c# %}
 
-    public class Person   
-    {   
-        public string Name { get; set; }
+public class Person   
+{   
+    public string Name { get; set; }
 
-        public double Height { get; set; }
-    }
+    public double Height { get; set; }
+}
 
 {% endhighlight %} 
 
@@ -84,21 +84,21 @@ Next, create a view model class and initialize a list of `Person` objects as fol
 
 {% highlight c# %}
 
-    public class ViewModel
+public class ViewModel
+{
+    public List<Person> Data { get; set; }
+    public ViewModel()
     {
-        public List<Person> Data { get; set; }
-        public ViewModel()
+        Data = new List<Person>()
         {
-            Data = new List<Person>()
-            {
-                new Person { Name = "David", Height = 170 },
-                new Person { Name = "Michael", Height = 96 },
-                new Person { Name = "Steve", Height = 65 },
-                new Person { Name = "Joel", Height = 182 },
-                new Person { Name = "Bob", Height = 134 }
-            };
-        }
+            new Person { Name = "David", Height = 170 },
+            new Person { Name = "Michael", Height = 96 },
+            new Person { Name = "Steve", Height = 65 },
+            new Person { Name = "Joel", Height = 182 },
+            new Person { Name = "Bob", Height = 134 }
+        };
     }
+}
 
 {% endhighlight %} 
 
@@ -112,24 +112,24 @@ N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `Da
 
 {% highlight xaml %} 
 
-    <Window
-        x:Class="SfChart_GettingStarted.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:model="using:SfChart_GettingStarted"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" Height="350" Width="525"
-        Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+<Window
+    x:Class="SfChart_GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:model="using:SfChart_GettingStarted"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="350" Width="525"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <Grid x:Name="grid">
-            <Grid.DataContext>
-                <model:ViewModel/>
-            </Grid.DataContext>
-        </Grid>	
-        
-    </Window>
+    <Grid x:Name="grid">
+	    <Grid.DataContext>
+	        <model:ViewModel/>
+	    </Grid.DataContext>
+	</Grid>	
+	
+</Window>
 
 {% endhighlight %}
 
@@ -189,44 +189,44 @@ N> You need to set [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusio
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart>
-        <chart:SfCartesianChart.XAxes>
-            <chart:CategoryAxis Header="Name"/>
-        </chart:SfCartesianChart.XAxes>
-        <chart:SfCartesianChart.YAxes>
-            <chart:NumericalAxis Header="Height(in cm)"/>
-        </chart:SfCartesianChart.YAxes>
-        <chart:ColumnSeries ItemsSource="{Binding Data}"
-                            XBindingPath="Name" 
-                            YBindingPath="Height">
-        </chart:ColumnSeries>
-    </chart:SfCartesianChart>
+<chart:SfCartesianChart>
+    <chart:SfCartesianChart.XAxes>
+        <chart:CategoryAxis Header="Name"/>
+    </chart:SfCartesianChart.XAxes>
+    <chart:SfCartesianChart.YAxes>
+        <chart:NumericalAxis Header="Height(in cm)"/>
+    </chart:SfCartesianChart.YAxes>
+    <chart:ColumnSeries ItemsSource="{Binding Data}"
+                        XBindingPath="Name" 
+                        YBindingPath="Height">
+    </chart:ColumnSeries>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
+SfCartesianChart chart = new SfCartesianChart();
 
-    //Adding horizontal axis to the chart 
-    CategoryAxis xAxis = new CategoryAxis();
-    xAxis.Header = "Name";   
-    chart.XAxes.Add(xAxis);
+//Adding horizontal axis to the chart 
+CategoryAxis xAxis = new CategoryAxis();
+xAxis.Header = "Name";   
+chart.XAxes.Add(xAxis);
 
-    //Adding vertical axis to the chart 
-    NumericalAxis yAxis = new NumericalAxis();
-    yAxis.Header = "Height(in cm)";  
-    chart.YAxes.Add(yAxis);
+//Adding vertical axis to the chart 
+NumericalAxis yAxis = new NumericalAxis();
+yAxis.Header = "Height(in cm)";  
+chart.YAxes.Add(yAxis);
 
-    //Initialize the two series for SfChart
-    ColumnSeries series = new ColumnSeries();
+//Initialize the two series for SfChart
+ColumnSeries series = new ColumnSeries();
 
-    series.ItemsSource = (new ViewModel()).Data;
-    series.XBindingPath = "Name";            
-    series.YBindingPath = "Height";         
-                
-    //Adding Series to the Chart Series Collection
-    chart.Series.Add(series);
+series.ItemsSource = (new ViewModel()).Data;
+series.XBindingPath = "Name";            
+series.YBindingPath = "Height";         
+            
+//Adding Series to the Chart Series Collection
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -240,10 +240,10 @@ The title of the chart provide quick information to the user about the data bein
 
 {% highlight xaml %}
 
-    <Grid>
-    <chart:SfCartesianChart Header="Height Comparison"> 
-    </chart:SfCartesianChart>
-    </Grid>
+<Grid>
+   <chart:SfCartesianChart Header="Height Comparison"> 
+   </chart:SfCartesianChart>
+</Grid>
 
 {% endhighlight %}
 
@@ -293,20 +293,20 @@ The legend provides information about the data point displayed in the chart. The
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart >
-        . . .
-        <chart:SfCartesianChart.Legend>
-            <chart:ChartLegend/>
-        </chart:SfCartesianChart.Legend>
-        . . .
-    </chart:SfCartesianChart>
+<chart:SfCartesianChart >
+    . . .
+    <chart:SfCartesianChart.Legend>
+        <chart:ChartLegend/>
+    </chart:SfCartesianChart.Legend>
+    . . .
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
-    chart.Legend = new ChartLegend (); 
+SfCartesianChart chart = new SfCartesianChart();
+chart.Legend = new ChartLegend (); 
 
 {% endhighlight %}
 
@@ -318,24 +318,24 @@ N> Additionally, set label for each series using the [Label](https://help.syncfu
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart>
-    . . .
-        <chart:ColumnSeries Label="Heights"
-                            ItemsSource="{Binding Data}"
-                            XBindingPath="Name" 
-                            YBindingPath="Height">
-        </chart:ColumnSeries>
-    </chart:SfCartesianChart>
+<chart:SfCartesianChart>
+. . .
+    <chart:ColumnSeries Label="Heights"
+                        ItemsSource="{Binding Data}"
+                        XBindingPath="Name" 
+                        YBindingPath="Height">
+    </chart:ColumnSeries>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    ColumnSeries series = new ColumnSeries(); 
-    series.ItemsSource = (new ViewModel()).Data;
-    series.XBindingPath = "Name"; 
-    series.YBindingPath = "Height"; 
-    series.Label = "Heights";
+ColumnSeries series = new ColumnSeries(); 
+series.ItemsSource = (new ViewModel()).Data;
+series.XBindingPath = "Name"; 
+series.YBindingPath = "Height"; 
+series.Label = "Heights";
 
 {% endhighlight %}
 
@@ -349,25 +349,25 @@ Tooltips are used to show information about the segment, when hovers on the segm
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart>
-        ...
-    <chart:ColumnSeries
-                    EnableTooltip="True" 
-                    ItemsSource="{Binding Data}" 
-                    XBindingPath="Name" 
-                    YBindingPath="Height"/>
-        ...
-    </chart:SfCartesianChart> 
+<chart:SfCartesianChart>
+	...
+   <chart:ColumnSeries
+				EnableTooltip="True" 
+			    ItemsSource="{Binding Data}" 
+			    XBindingPath="Name" 
+			    YBindingPath="Height"/>
+	...
+</chart:SfCartesianChart> 
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    ColumnSeries series = new ColumnSeries();
-    series.ItemsSource = (new ViewModel()).Data;
-    series.XBindingPath = "Name";          
-    series.YBindingPath = "Height";
-    series.EnableTooltip = true;
+ColumnSeries series = new ColumnSeries();
+series.ItemsSource = (new ViewModel()).Data;
+series.XBindingPath = "Name";          
+series.YBindingPath = "Height";
+series.EnableTooltip = true;
 
 {% endhighlight %}
 
@@ -379,103 +379,103 @@ The following code example gives you the complete code of above configurations.
 
 {% highlight xaml %}
 
-    <Window
-        x:Class="SfChart_GettingStarted.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" Height="350" Width="525"
-        Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+<Window
+    x:Class="SfChart_GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="350" Width="525"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <chart:SfCartesianChart Header="Height Comparison">
-            <chart:SfCartesianChart.Legend>
-                <chart:ChartLegend/>
-            </chart:SfCartesianChart.Legend>
-            <chart:SfCartesianChart.DataContext>
-                <Model:ChartViewModel/>
-            </chart:SfCartesianChart.DataContext>
-            
-            <!--Initialize the axis for chart-->
-            <chart:SfCartesianChart.XAxes>
-                <chart:CategoryAxis Header="Names"/>
-            </chart:SfCartesianChart.XAxes>
-            <chart:SfCartesianChart.YAxes>
-                <chart:NumericalAxis Header="Height(in cm)"/>
-            </chart:SfCartesianChart.YAxes>
+    <chart:SfCartesianChart Header="Height Comparison">
+        <chart:SfCartesianChart.Legend>
+            <chart:ChartLegend/>
+        </chart:SfCartesianChart.Legend>
+        <chart:SfCartesianChart.DataContext>
+            <Model:ChartViewModel/>
+        </chart:SfCartesianChart.DataContext>
+        
+        <!--Initialize the axis for chart-->
+        <chart:SfCartesianChart.XAxes>
+            <chart:CategoryAxis Header="Names"/>
+        </chart:SfCartesianChart.XAxes>
+        <chart:SfCartesianChart.YAxes>
+            <chart:NumericalAxis Header="Height(in cm)"/>
+        </chart:SfCartesianChart.YAxes>
 
-            <!--Initialize the series for chart-->
-            <chart:ColumnSeries 
-                            Label="Heights" 
-                                EnableTooltip="True"
-                                ShowDataLabels="True"
-                                ItemsSource="{Binding Data}"
-                                XBindingPath="Name" 
-                                YBindingPath="Height">
-                <chart:ColumnSeries.DataLabelSettings>
-                    <chart:CartesianDataLabelSettings Position="Inner"/>
-                </chart:ColumnSeries.DataLabelSettings>
-            </chart:ColumnSeries>
-        </chart:SfCartesianChart>
-    </Window>
+        <!--Initialize the series for chart-->
+        <chart:ColumnSeries 
+						Label="Heights" 
+							EnableTooltip="True"
+                            ShowDataLabels="True"
+                            ItemsSource="{Binding Data}"
+                            XBindingPath="Name" 
+                            YBindingPath="Height">
+            <chart:ColumnSeries.DataLabelSettings>
+                <chart:CartesianDataLabelSettings Position="Inner"/>
+            </chart:ColumnSeries.DataLabelSettings>
+        </chart:ColumnSeries>
+    </chart:SfCartesianChart>
+</Window>
  
 {% endhighlight %}
 
 {% highlight C# %}
 
-    using Syncfusion.UI.Xaml.Charts;
+using Syncfusion.UI.Xaml.Charts;
 
-    namespace SfChart_GettingStarted
+namespace SfChart_GettingStarted
+{
+    public sealed partial class MainWindow : Window
     {
-        public sealed partial class MainWindow : Window
+        public MainWindow()
         {
-            public MainWindow()
+            InitializeComponent();
+            
+            SfCartesianChart chart = new SfCartesianChart() 
+			{ 
+				Header = "Height Comparison", 
+				Height = 300, 
+				Width = 500 
+			};
+
+            //Adding horizontal axis to the chart 
+            CategoryAxis xAxis = new CategoryAxis();
+            xAxis.Header = "Name";
+            xAxis.FontSize = 14;
+            chart.XAxes.Add(xAxis);
+
+            //Adding vertical axis to the chart 
+            NumericalAxis yAxis = new NumericalAxis();
+            yAxis.Header = "Height(in cm)";
+            yAxis.FontSize = 14;
+            chart.YAxes.Add(yAxis);
+
+            //Adding legend for the chart
+            ChartLegend legend = new ChartLegend();
+            chart.Legend = legend;
+
+            //Initializing column series
+            ColumnSeries series = new ColumnSeries();
+            series.ItemsSource = (new ViewModel()).Data;
+            series.XBindingPath = "Name";            
+            series.YBindingPath = "Height";
+            series.EnableTooltip = true;
+            series.Label = "Heights"; 
+            series.ShowDataLabels = true;
+            series.DataLabelSettings = new CartesianDataLabelSettings()
             {
-                InitializeComponent();
-                
-                SfCartesianChart chart = new SfCartesianChart() 
-                { 
-                    Header = "Height Comparison", 
-                    Height = 300, 
-                    Width = 500 
-                };
+                Position = DataLabelPosition.Inner,
+            };
 
-                //Adding horizontal axis to the chart 
-                CategoryAxis xAxis = new CategoryAxis();
-                xAxis.Header = "Name";
-                xAxis.FontSize = 14;
-                chart.XAxes.Add(xAxis);
-
-                //Adding vertical axis to the chart 
-                NumericalAxis yAxis = new NumericalAxis();
-                yAxis.Header = "Height(in cm)";
-                yAxis.FontSize = 14;
-                chart.YAxes.Add(yAxis);
-
-                //Adding legend for the chart
-                ChartLegend legend = new ChartLegend();
-                chart.Legend = legend;
-
-                //Initializing column series
-                ColumnSeries series = new ColumnSeries();
-                series.ItemsSource = (new ViewModel()).Data;
-                series.XBindingPath = "Name";            
-                series.YBindingPath = "Height";
-                series.EnableTooltip = true;
-                series.Label = "Heights"; 
-                series.ShowDataLabels = true;
-                series.DataLabelSettings = new CartesianDataLabelSettings()
-                {
-                    Position = DataLabelPosition.Inner,
-                };
-
-                //Adding series to the chart series collection
-                chart.Series.Add(series);
-                this.Content = chart;
-            }
-        }   
-    }
+            //Adding series to the chart series collection
+            chart.Series.Add(series);
+            this.Content = chart;
+        }
+    }   
+}
 
 {% endhighlight %}
 

@@ -51,31 +51,31 @@ Chart provides the properties like [PlotAreaBorderBrush](https://help.syncfusion
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
-    chart.Header = "Chart Area Header";
-    chart.PlotAreaBackground = new SolidColorBrush(Colors.LightCyan);
-    chart.PlotAreaBorderBrush = new SolidColorBrush(Colors.Blue);
-    chart.Background = new SolidColorBrush(Colors.LightBlue);
-    chart.PlotAreaBorderThickness = new Thickness(3);
+SfCartesianChart chart = new SfCartesianChart();
+chart.Header = "Chart Area Header";
+chart.PlotAreaBackground = new SolidColorBrush(Colors.LightCyan);
+chart.PlotAreaBorderBrush = new SolidColorBrush(Colors.Blue);
+chart.Background = new SolidColorBrush(Colors.LightBlue);
+chart.PlotAreaBorderThickness = new Thickness(3);
 
-    CategoryAxis primaryAxis = new CategoryAxis();
-    chart.XAxes.Add(primaryAxis);
-    NumericalAxis secondaryAxis = new NumericalAxis();
-    chart.YAxes.Add(secondaryAxis);
+CategoryAxis primaryAxis = new CategoryAxis();
+chart.XAxes.Add(primaryAxis);
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.YAxes.Add(secondaryAxis);
 
-    ChartLegend legend = new ChartLegend();
-    chart.Legend = legend;
+ChartLegend legend = new ChartLegend();
+chart.Legend = legend;
 
-    ColumnSeries series = new ColumnSeries()
-    {
-        ItemsSource = new ViewModel().Data,
-        XBindingPath = "Demand",
-        YBindingPath = "Year2010",
-        Label = "Year 2010"
-    };
+ColumnSeries series = new ColumnSeries()
+{
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "Demand",
+    YBindingPath = "Year2010",
+    Label = "Year 2010"
+};
 
-    chart.Series.Add(series);
-    this.Content = chart;
+chart.Series.Add(series);
+this.Content = chart;
 
 {% endhighlight %}
 

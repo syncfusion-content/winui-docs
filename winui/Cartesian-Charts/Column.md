@@ -37,21 +37,21 @@ documentation: ug
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
-    CategoryAxis xAxis = new CategoryAxis();
-    chart.XAxes.Add(xAxis);
-    NumericalAxis yAxis = new NumericalAxis();
-    chart.YAxes.Add(yAxis);
+SfCartesianChart chart = new SfCartesianChart();
+CategoryAxis xAxis = new CategoryAxis();
+chart.XAxes.Add(xAxis);
+NumericalAxis yAxis = new NumericalAxis();
+chart.YAxes.Add(yAxis);
 
-    ColumnSeries series = new ColumnSeries()
-    {
-        ItemsSource = new ViewModel().Data,
-        XBindingPath = "XValue",
-        YBindingPath = "YValue",
-    };
+ColumnSeries series = new ColumnSeries()
+{
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
+};
 
-    chart.Series.Add(series);
-    this.Content = chart;
+chart.Series.Add(series);
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -90,22 +90,22 @@ The [SegmentSpacing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
-    CategoryAxis xAxis = new CategoryAxis();
-    chart.XAxes.Add(xAxis);
-    NumericalAxis yAxis = new NumericalAxis();
-    chart.YAxes.Add(yAxis);
+SfCartesianChart chart = new SfCartesianChart();
+CategoryAxis xAxis = new CategoryAxis();
+chart.XAxes.Add(xAxis);
+NumericalAxis yAxis = new NumericalAxis();
+chart.YAxes.Add(yAxis);
 
-    ColumnSeries series = new ColumnSeries()
-    {
-        ItemsSource = new ViewModel().Data,
-        XBindingPath = "XValue",
-        YBindingPath = "YValue",
-        SegmentSpacing = 0.5
-    };
+ColumnSeries series = new ColumnSeries()
+{
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
+    SegmentSpacing = 0.5
+};
 
-    chart.Series.Add(series);
-    this.Content = chart;
+chart.Series.Add(series);
+this.Content = chart;
 
 {% endhighlight %}
 
