@@ -41,10 +41,13 @@ The following code example shows the usage of DataTemplate.
     <syncfusion:SfScheduler.ToolTipTemplate>
      <DataTemplate>
      <Border x:Name="PART_ToolTipBorder"
-             CornerRadius="0"
-             VerticalAlignment="Stretch"
-             HorizontalAlignment="Stretch"
-             BorderThickness="1">
+        BorderBrush="White"
+        Background="Black"
+        CornerRadius="0"
+        VerticalAlignment="Stretch"
+        HorizontalAlignment="Stretch"
+        BorderThickness="1"
+        Padding="5">
          <StackPanel>
              <TextBlock x:Name="PART_AppointmentTextBlock"
                         Text="{Binding Subject}"
