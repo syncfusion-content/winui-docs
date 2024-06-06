@@ -496,3 +496,22 @@ Customize the default appearance of view header by setting the [ViewHeaderTempla
 {% endtabs %}
 
 ![view-header-appearance-customization-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/view-header-appearance-customization-in-winui-scheduler.png)
+
+## Cell right padding support
+
+This feature allows you to add spacing between a cell's appointment and its border. The spacing can be applied to the right side in day and week views.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
+<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+    <scheduler:SfScheduler.DaysViewSettings>
+        <scheduler:DaysViewSettings CellRightPadding="30"/>
+    </scheduler:SfScheduler.DaysViewSettings>
+</scheduler:SfScheduler>
+{% endhighlight %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+this.Schedule.ViewType = SchedulerViewType.Week;
+this.Schedule.DaysViewSettings.CellRightPadding = 30;
+{% endhighlight %}
+{% endtabs %}
+

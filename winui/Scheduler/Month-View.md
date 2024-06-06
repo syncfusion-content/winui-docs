@@ -593,3 +593,21 @@ You can customize the default appearance of more appointments indicator in a mon
 {% endtabs %}
 
 ![appointment-display-count-appearance-customization-in-WinUI-scheduler-month-view](Month-View_Imges/appointment-display-count-appearance-customization-in-WinUI-scheduler-month-view.png)
+
+## Cell right padding support
+
+This feature allows you to add spacing between a cell's appointment and its border. The spacing can be applied to the right side in month views.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
+<scheduler:SfScheduler x:Name="Schedule" ViewType="Month">
+     <syncfusion:SfScheduler.MonthViewSettings>
+     <syncfusion:MonthViewSettings CellRightPadding="30" />
+ </syncfusion:SfScheduler.MonthViewSettings>
+</scheduler:SfScheduler>
+{% endhighlight %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+this.Schedule.ViewType = SchedulerViewType.Month;
+this.Schedule.MonthViewSettings.CellRightPadding = 30;
+{% endhighlight %}
+{% endtabs %}
