@@ -509,9 +509,9 @@ You can customize the spacing between an appointment and the bottom border of it
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
 <scheduler:SfScheduler x:Name="Schedule" 
                        ViewType="TimelineWeek">
- <syncfusion:SfScheduler.TimelineViewSettings>
-     <syncfusion:TimelineViewSettings CellBottomPadding="30" />
- </syncfusion:SfScheduler.TimelineViewSettings>
+ <scheduler:SfScheduler.TimelineViewSettings>
+     <scheduler:TimelineViewSettings CellBottomPadding="30" />
+ </scheduler:SfScheduler.TimelineViewSettings>
 </scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}

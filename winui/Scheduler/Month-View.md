@@ -602,9 +602,9 @@ You can customize the spacing between an appointment and the right border of its
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
 <scheduler:SfScheduler x:Name="Schedule" 
                        ViewType="Month">
- <syncfusion:SfScheduler.MonthViewSettings>
-     <syncfusion:MonthViewSettings CellRightPadding="30" />
- </syncfusion:SfScheduler.MonthViewSettings>
+ <scheduler:SfScheduler.MonthViewSettings>
+     <scheduler:MonthViewSettings CellRightPadding="30" />
+ </scheduler:SfScheduler.MonthViewSettings>
 </scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
