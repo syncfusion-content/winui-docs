@@ -497,7 +497,7 @@ Customize the default appearance of view header by setting the [ViewHeaderTempla
 
 ![view-header-appearance-customization-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/view-header-appearance-customization-in-winui-scheduler.png)
 
-## Cell right padding support
+## Cell right padding
 
 You can customize the spacing between an appointment and the right border of its cell to enhance interaction with a scheduler that contains appointments.
 

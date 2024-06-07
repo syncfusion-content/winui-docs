@@ -501,7 +501,7 @@ this.Schedule.TimelineViewSettings.TimelineAppointmentHeight = 100;
 
 ![appointment-height-in-winui-scheduler](TimelineViews_Images/appointment-height-in-winui-scheduler.png)
 
-## Cell bottom padding support
+## Cell bottom padding
 
 You can customize the spacing between an appointment and the bottom border of its cell to enhance interaction with a scheduler that contains appointments.
 
