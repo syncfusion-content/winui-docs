@@ -766,9 +766,9 @@ To enable tooltip for the scheduler appointments, use the `EnableTooltip` proper
 
 {% tabs %}
 {% highlight xaml %}
- <syncfusion:SfScheduler x:Name="Schedule"
+ <scheduler:SfScheduler x:Name="Schedule"
                          EnableToolTip="True">
- </syncfusion:SfScheduler>
+ </scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
 this.Schedule.EnableToolTip = true;
@@ -783,9 +783,9 @@ The following code example shows the usage of DataTemplate.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
-<syncfusion:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="Schedule"
                         EnableToolTip="True">
- <syncfusion:SfScheduler.ToolTipTemplate>
+ <scheduler:SfScheduler.ToolTipTemplate>
      <DataTemplate>
         <Border x:Name="PART_ToolTipBorder"
                 BorderBrush="White"
@@ -805,8 +805,8 @@ The following code example shows the usage of DataTemplate.
          </StackPanel>
        </Border>
    </DataTemplate>
- </syncfusion:SfScheduler.ToolTipTemplate>
-</syncfusion:SfScheduler>
+ </scheduler:SfScheduler.ToolTipTemplate>
+</scheduler:SfScheduler>
 
 N>
 * This property will only be applicable when `EnableTooltip` is set to true.
