@@ -499,11 +499,12 @@ Customize the default appearance of view header by setting the [ViewHeaderTempla
 
 ## Cell right padding support
 
-This feature allows you to add spacing between a cell's appointment and its border. The spacing can be applied to the right side in day and week views.
+You can customize the spacing between an appointment and the right border of its cell to enhance interaction with a scheduler that contains appointments.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+<scheduler:SfScheduler x:Name="Schedule" 
+                       ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings CellRightPadding="30"/>
     </scheduler:SfScheduler.DaysViewSettings>
@@ -515,3 +516,5 @@ this.Schedule.DaysViewSettings.CellRightPadding = 30;
 {% endhighlight %}
 {% endtabs %}
 
+N>
+* This customization will apply only when the scheduler has an appointment.
