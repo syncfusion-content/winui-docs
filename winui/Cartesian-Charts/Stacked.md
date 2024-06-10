@@ -84,7 +84,7 @@ chart.Series.Add(series3);
 
 ![StackedColumn chart type in WinUI Chart](Stacking_Series_Images/WinUI_Chart_stackedcolumn.png)
 
-N> You can refer to our [WinUI Stacked Column Chart](https://www.syncfusion.com/winui-controls/charts/winui-stacked-column-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Stacked Column Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Stacking%20Charts/StackingColumnChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can refer to our [WinUI Stacked Column Chart](https://www.syncfusion.com/winui-controls/charts/winui-stacked-column-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Stacked Column Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Cartesian%20Charts/StackedCharts/StackingColumnChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
 
 ## Stacked Line Chart
 
@@ -162,7 +162,7 @@ chart.Series.Add(series3);
 
 ![StackedLine chart type in WinUI Chart](Stacking_Series_Images/WinUI_Chart_stackedline.png)
 
-N> You can refer to our [WinUI Stacked Line Chart](https://www.syncfusion.com/winui-controls/charts/winui-stacked-line-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Stacked Line Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Stacking%20Charts/StackingLineChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can refer to our [WinUI Stacked Line Chart](https://www.syncfusion.com/winui-controls/charts/winui-stacked-line-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Stacked Line Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Cartesian%20Charts/StackedCharts/StackingLineChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
 
 ## Stacked Area Chart
 
@@ -240,4 +240,4 @@ chart.Series.Add(series3);
 
 ![StackedArea chart type in WinUI Chart](Stacking_Series_Images/WinUI_Chart_stackedarea.png)
 
-N> You can refer to our [WinUI Stacked Area Chart](https://www.syncfusion.com/winui-controls/charts/winui-stacked-area-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Stacked Area Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Stacking%20Charts/StackingAreaChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can refer to our [WinUI Stacked Area Chart](https://www.syncfusion.com/winui-controls/charts/winui-stacked-area-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Stacked Area Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Cartesian%20Charts/StackedCharts/StackingAreaChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.

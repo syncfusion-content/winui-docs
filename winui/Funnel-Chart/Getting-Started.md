@@ -305,4 +305,4 @@ public sealed partial class MainWindow : Window
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/FunnelChartGettingStarted).
 
-N> You can also explore our [WinUI Funnel Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Funnel%20And%20Pyramid%20Charts/FunnelChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can also explore our [WinUI Funnel Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Funnel%20Charts/DefaultFunnelChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.

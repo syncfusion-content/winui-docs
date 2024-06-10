@@ -85,7 +85,7 @@ chart.Series.Add(series3);
 
 ![StackedColumn100 chart type in WinUI Chart](Stacking100_Series_Images/WinUI_Chart_stackedcolumn100.png)
 
-N> You can refer to our [WinUI 100% Stacked Column Chart](https://www.syncfusion.com/winui-controls/charts/winui-stacked-column-100-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI 100% Stacked Column Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Stacking%20Charts%20100/StackingColumn100Chart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can refer to our [WinUI 100% Stacked Column Chart](https://www.syncfusion.com/winui-controls/charts/winui-stacked-column-100-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI 100% Stacked Column Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Cartesian%20Charts/Stacked100Chart/StackingColumn100Chart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
 
 ## Stacked Line 100 Chart
 
@@ -163,7 +163,7 @@ chart.Series.Add(series3);
 
 ![StackedLine100 chart type in WinUI Chart](Stacking100_Series_Images/WinUI_Chart_Stackedline100.png)
 
-N> You can refer to our [WinUI 100% Stacked Line Chart](https://www.syncfusion.com/winui-controls/charts/winui-stacked-line-100-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI 100% Stacked Line Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Stacking%20Charts%20100/StackingLine100Chart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can refer to our [WinUI 100% Stacked Line Chart](https://www.syncfusion.com/winui-controls/charts/winui-stacked-line-100-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI 100% Stacked Line Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Cartesian%20Charts/Stacked100Chart/StackingLine100Chart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
 
 ## Stacked Area 100 Chart
 
@@ -240,4 +240,4 @@ chart.Series.Add(series3);
 
 ![StackedArea100 chart type in WinUI Chart](Stacking100_Series_Images/WinUI_Chart_Stackedarea100.png)
 
-N> You can refer to our [WinUI 100% Stacked Area Chart](https://www.syncfusion.com/winui-controls/charts/winui-stacked-area-100-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI 100% Stacked Area Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Stacking%20Charts%20100/StackingArea100Chart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can refer to our [WinUI 100% Stacked Area Chart](https://www.syncfusion.com/winui-controls/charts/winui-stacked-area-100-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI 100% Stacked Area Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Cartesian%20Charts/Stacked100Chart/StackingArea100Chart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.

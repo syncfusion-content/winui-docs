@@ -1,21 +1,23 @@
 ---
 layout: post
-title: Column Chart in WinUI Chart control | Syncfusion
-description: Learn here all about the column chart and its features in Syncfusion WinUI Chart (SfCartesianChart) control.
+title: Bar Chart in WinUI Chart control | Syncfusion
+description: Learn here all about the bar chart and its features in Syncfusion WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 ---
 
-# Column Chart in WinUI Chart (SfCartesianChart)
+# Bar Chart in WinUI Chart (SfCartesianChart)
 
-[WinUI Column Chart](https://www.syncfusion.com/winui-controls/charts/winui-column-chart) is used to plot discrete rectangles for the given data point values. To render a column chart, create an instance of [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
+A bar chart uses bars to represent data points and compare values across different categories. To render bar chart, initialize the [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) and switch the chart X and Y axes by using the [IsTransposed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_IsTransposed) property as true. Then, create an instance of [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
+
+N> By default, [IsTransposed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_IsTransposed) property of the [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) is false.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart>
+<chart:SfCartesianChart IsTransposed="True">
 
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis />
@@ -38,6 +40,7 @@ documentation: ug
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+chart.IsTransposed = true;
 CategoryAxis xAxis = new CategoryAxis();
 chart.XAxes.Add(xAxis);
 NumericalAxis yAxis = new NumericalAxis();
@@ -57,7 +60,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Column chart type in WinUI Chart](Chart-Types_images/WinUI_column_chart.png)
+![Bar chart type in WinUI Chart](Chart-Types_images/WinUI_bar_chart.png)
 
 ## Segment spacing
 
@@ -67,7 +70,7 @@ The [SegmentSpacing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart>
+<chart:SfCartesianChart IsTransposed="True">
 
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis />
@@ -91,6 +94,7 @@ The [SegmentSpacing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+chart.IsTransposed = true;
 CategoryAxis xAxis = new CategoryAxis();
 chart.XAxes.Add(xAxis);
 NumericalAxis yAxis = new NumericalAxis();
@@ -111,6 +115,6 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Column segment spacing in WinUI Chart](Chart-Types_images/WinUI_column_chart_segment_spacing.png)
+![Bar segment spacing in WinUI Chart](Chart-Types_images/WinUI_bar_chart_segment_spacing.png)
 
-N> You can also explore our [WinUI Column Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/Column) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can also explore our [WinUI bar Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/Bar) that shows how to easily configure with built-in support for creating stunning visual effects.

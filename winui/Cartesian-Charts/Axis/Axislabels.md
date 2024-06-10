@@ -47,7 +47,7 @@ chart.XAxes.Add(primaryAxis);
 
 ## Format
 
-Axis labels can be formatted by predefined formatting types by using the [LabelFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelFormat) property based on the axis types.
+Axis labels can be formatted by predefined formatting types by using the [LabelFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LabelStyle.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_LabelStyle_LabelFormat) property based on the axis types.
 
 **DateTimeAxis**
 
