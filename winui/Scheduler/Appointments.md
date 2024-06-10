@@ -756,6 +756,64 @@ N>
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/RecursiveExceptionAppointment/BusinessObject)
 
+## Appointment tooltip
+
+An interactive tooltip provides additional details about the appointments on hovering the mouse over them.
+
+### Enable tooltip for appointments
+
+To enable tooltip for the scheduler appointments, use the `EnableTooltip` property of `SfScheduler.` By default, `EnableTooltip` is set to `false.` To provide users with additional information or context about appointments, simply set this property to true.
+
+{% tabs %}
+{% highlight xaml %}
+ <scheduler:SfScheduler x:Name="Schedule"
+                         EnableToolTip="True">
+ </scheduler:SfScheduler>
+{% endhighlight %}
+{% highlight c# %}
+this.Schedule.EnableToolTip = true;
+{% endhighlight %}
+{% endtabs %}
+
+### Customize tooltip appearance
+
+You can customize the tooltip appearance by using the `ToolTipTemplate` property in the `SfScheduler.`
+
+The following code example shows the usage of DataTemplate.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainWindow.xaml" %}
+<scheduler:SfScheduler x:Name="Schedule"
+                        EnableToolTip="True">
+ <scheduler:SfScheduler.ToolTipTemplate>
+     <DataTemplate>
+        <Border x:Name="PART_ToolTipBorder"
+                BorderBrush="White"
+                Background="Black"
+                CornerRadius="0"
+                VerticalAlignment="Stretch"
+                HorizontalAlignment="Stretch"
+                BorderThickness="1"
+                Padding="5">
+         <StackPanel>
+             <TextBlock x:Name="PART_AppointmentTextBlock"
+                        Text="{Binding Subject}"
+                        Foreground="White"
+                        FontSize="12"
+                        TextWrapping="Wrap"
+                        TextTrimming="CharacterEllipsis" />
+         </StackPanel>
+       </Border>
+   </DataTemplate>
+ </scheduler:SfScheduler.ToolTipTemplate>
+</scheduler:SfScheduler>
+
+N>
+* This property will only be applicable when `EnableTooltip` is set to true.
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Appearance customization
 
 The default appearance of schedule appointment can be customized in all views by using the [AppointmentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplate) and [AppointmentTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplateSelector) properties of [ViewSettingsBase](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html). Use the [AllDayAppointmentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html#Syncfusion_UI_Xaml_Scheduler_DaysViewSettings_AllDayAppointmentTemplate) property of [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) to customize the appearance of all-day appointments in day, week, and workweek views.
