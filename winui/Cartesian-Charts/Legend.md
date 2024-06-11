@@ -5,6 +5,7 @@ description: This sections explains about how to configure the legend and its fe
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
+keywords: legend in winui chart, winui sfcartesianchart legend, winui chart legend customization, syncfusion winui chart legend, winui chart legend properties, winui sfcartesianchart legend configuration.
 ---
 
 # Legend in WinUI Chart (SfCartesianChart)

@@ -5,6 +5,7 @@ description: Learn here all about the bubble series and its features in Syncfusi
 platform: WinUI
 control: SfChart
 documentation: ug
+keywords: bubble chart in winui chart, winui sfcartesianchart bubble chart, winui bubble chart customization, syncfusion winui bubble chart, winui sfcartesianchart bubble chart settings.
 ---
 
 # Bubble Chart in WinUI Chart (SfCartesianChart)

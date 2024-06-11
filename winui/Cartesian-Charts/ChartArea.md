@@ -5,6 +5,7 @@ description: Learn here all about chart area and its customization in Syncfusion
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
+keywords: chart area in winui chart, winui sfcartesianchart chart area, winui chart area customization, syncfusion winui chart area, winui sfcartesianchart area settings.
 ---
 
 # Chart Area in WinUI Chart (SfCartesianChart)

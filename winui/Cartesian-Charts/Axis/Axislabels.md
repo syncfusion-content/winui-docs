@@ -5,6 +5,7 @@ description: Learn here all about axis labels and its customization in Syncfusio
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
+keywords: axis labels in winui chart, winui sfcartesianchart axis labels, winui chart axis labels customization, syncfusion winui chart axis labels, winui sfcartesianchart axis labels settings.
 ---
 
 # Axis Labels in WinUI Chart (SfCartesianChart)

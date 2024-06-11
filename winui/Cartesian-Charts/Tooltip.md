@@ -5,6 +5,7 @@ description: This section explains about how to enable tooltip and its customiza
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
+keywords: tooltip in winui chart, winui sfcartesianchart tooltip, winui chart tooltip customization, syncfusion winui chart tooltip, winui sfcartesianchart tooltip settings.
 ---
 
 # Tooltip in WinUI Chart (SfCartesianChart)
