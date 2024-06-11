@@ -775,7 +775,7 @@ this.Schedule.EnableToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-![appointment-tooltip-in-winui-scheduler](Appointment_Images/tooltip-winui-scheduler.gif)
+![appointment-tool-tip-support-in-winui-scheduler](Appointment_Images/tooltip-winui-scheduler.gif)
 
 
 ### Customize tooltip appearance
