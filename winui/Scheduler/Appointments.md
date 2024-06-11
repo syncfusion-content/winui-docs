@@ -775,6 +775,9 @@ this.Schedule.EnableToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
+![appointment-tooltip-in-winui-scheduler](Appointment_Images/tooltip-winui-scheduler.gif)
+
+
 ### Customize tooltip appearance
 
 You can customize the tooltip appearance by using the `ToolTipTemplate` property in the `SfScheduler.`
