@@ -762,7 +762,7 @@ An interactive tooltip provides additional details about the appointments on hov
 
 ### Enable tooltip for appointments
 
-To enable tooltip for the scheduler appointments, use the [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableToolTip) property of [SfScheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html). By default, [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableToolTip) is set to `false.` To provide users with additional information or context about appointments, simply set this property to true.
+To enable tooltip for the scheduler appointments, use the [EnableToolTip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableToolTip) property of [SfScheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html). By default, [EnableToolTip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableToolTip) is set to `false.` To provide users with additional information or context about appointments, simply set this property to true.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
@@ -812,7 +812,7 @@ The following code example shows the usage of DataTemplate.
 </scheduler:SfScheduler>
 
 N>
-* This property will only be applicable when [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableToolTip) is set to true.
+* This property will only be applicable when [EnableToolTip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableToolTip) is set to true.
 
 {% endhighlight %}
 {% endtabs %}
