@@ -811,11 +811,11 @@ The following code example shows the usage of DataTemplate.
  </scheduler:SfScheduler.ToolTipTemplate>
 </scheduler:SfScheduler>
 
-N>
-* This property will only be applicable when [EnableToolTip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableToolTip) is set to true.
-
 {% endhighlight %}
 {% endtabs %}
+
+N>
+* This property will only be applicable when [EnableToolTip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableToolTip) is set to true.
 
 ## Appearance customization
 
