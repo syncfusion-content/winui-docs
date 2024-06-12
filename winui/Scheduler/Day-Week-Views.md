@@ -499,7 +499,7 @@ Customize the default appearance of view header by setting the [ViewHeaderTempla
 
 ## Cell right padding
 
-You can customize the spacing between an appointment and the right border of its cell to enhance interaction with a scheduler that contains appointments.
+To enhance interaction with a scheduler's appointments, you can customize the spacing between appointments and the right border of their cells using the [CellRightPadding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html#Syncfusion_UI_Xaml_Scheduler_DaysViewSettings_CellRightPadding) property of [DayViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) in the scheduler.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
@@ -515,6 +515,8 @@ this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.DaysViewSettings.CellRightPadding = 30;
 {% endhighlight %}
 {% endtabs %}
+
+![cell-right-padding-support-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/cell-right-padding-support-in-winui-scheduler.png)
 
 N>
 * This customization will apply only when the scheduler has an appointment.
