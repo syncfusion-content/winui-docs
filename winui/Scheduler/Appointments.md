@@ -762,15 +762,15 @@ An interactive tooltip provides additional details about the appointments on hov
 
 ### Enable tooltip for appointments
 
-To enable tooltip for the scheduler appointments, use the `EnableTooltip` property of `SfScheduler.` By default, `EnableTooltip` is set to `false.` To provide users with additional information or context about appointments, simply set this property to true.
+To enable tooltip for the scheduler appointments, use the [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableToolTip) property of [SfScheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html). By default, [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableToolTip) is set to `false.` To provide users with additional information or context about appointments, simply set this property to true.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" %}
  <scheduler:SfScheduler x:Name="Schedule"
-                         EnableToolTip="True">
+                        EnableToolTip="True">
  </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" %}
 this.Schedule.EnableToolTip = true;
 {% endhighlight %}
 {% endtabs %}
@@ -787,7 +787,7 @@ The following code example shows the usage of DataTemplate.
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
 <scheduler:SfScheduler x:Name="Schedule"
-                        EnableToolTip="True">
+                       EnableToolTip="True">
  <scheduler:SfScheduler.ToolTipTemplate>
      <DataTemplate>
         <Border x:Name="PART_ToolTipBorder"
@@ -812,7 +812,7 @@ The following code example shows the usage of DataTemplate.
 </scheduler:SfScheduler>
 
 N>
-* This property will only be applicable when `EnableTooltip` is set to true.
+* This property will only be applicable when [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableToolTip) is set to true.
 
 {% endhighlight %}
 {% endtabs %}
