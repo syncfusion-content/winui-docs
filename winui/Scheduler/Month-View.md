@@ -613,5 +613,7 @@ this.Schedule.MonthViewSettings.CellRightPadding = 30;
 {% endhighlight %}
 {% endtabs %}
 
+![cell-right-padding-support-in-WinUI-scheduler-month-view](Month-View_Imges/cell-right-padding-support-in-WinUI-scheduler.png)
+
 N>
 * This customization will apply only when the scheduler has an appointment.

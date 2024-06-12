@@ -520,5 +520,7 @@ this.Schedule.TimelineViewSettings.CellBottomPadding = 30;
 {% endhighlight %}
 {% endtabs %}
 
+![cell-bottom-padding-support-in-winui-scheduler](TimelineViews_Images/cell-bottom-padding-support-in-winui-scheduler.png)
+
 N>
 * This customization will apply only when the scheduler has an appointment.

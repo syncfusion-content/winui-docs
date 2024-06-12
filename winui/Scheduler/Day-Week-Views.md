@@ -516,5 +516,7 @@ this.Schedule.DaysViewSettings.CellRightPadding = 30;
 {% endhighlight %}
 {% endtabs %}
 
+![cell-right-padding-support-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/cell-right-padding-support-in-winui-scheduler.png)
+
 N>
 * This customization will apply only when the scheduler has an appointment.
