@@ -5,6 +5,7 @@ description: Learn here all about the column chart and its features in Syncfusio
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
+keywords: column chart in winui chart, winui sfcartesianchart column chart, winui column chart customization, syncfusion winui column chart, winui chart column chart properties.
 ---
 
 # Column Chart in WinUI Chart (SfCartesianChart)

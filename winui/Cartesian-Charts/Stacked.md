@@ -5,6 +5,7 @@ description: Learn here all about stacked chart types column, line, and area in 
 platform: WinUI
 control: SfChart
 documentation: ug
+keywords: stacked charts in winui chart, winui sfcartesianchart stacked charts, winui stacked charts customization, syncfusion winui stacked charts, winui sfcartesianchart stacked charts configuration.
 ---
 
 # Stacked Charts in WinUI Chart (SfCartesianChart)

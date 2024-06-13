@@ -5,6 +5,7 @@ description: Learn here all about stacked 100 chart types column, line and area 
 platform: WinUI
 control: SfChart
 documentation: ug
+keywords: stacked 100 charts in winui chart, winui stacked 100 charts customization, syncfusion winui stacked 100 charts, cumulative chart in winui chart, winui sfcartesianchart cumulative chart, syncfusion winui cumulative chart.
 ---
 
 # Stacked 100 Charts in WinUI Chart (SfCartesianChart)

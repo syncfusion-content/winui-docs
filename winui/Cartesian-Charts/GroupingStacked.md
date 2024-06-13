@@ -5,6 +5,7 @@ description: Learn here all about the stacked group chart and its features in Sy
 platform: WinUI
 control: SfChart
 documentation: ug
+keywords: stacked group chart in winui chart, winui stacked group chart customization, syncfusion winui stacked group chart, winui sfcartesianchart stacked group chart settings.
 ---
 
 # Stacked Group Chart in WinUI Chart (SfCartesianChart)
