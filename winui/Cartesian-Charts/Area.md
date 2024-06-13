@@ -5,6 +5,7 @@ description: Learn here all about the area chart types and its features in Syncf
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
+keywords: area chart in winui chart, winui sfcartesianchart area chart, winui area chart customization, syncfusion winui area chart, winui sfcartesianchart area chart settings.
 ---
 
 # Area Chart in WinUI Charts (SfCartesianChart)

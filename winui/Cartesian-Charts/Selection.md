@@ -5,6 +5,7 @@ description: Learn here all about selection and multi-selection support in Syncf
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
+keywords: selection in winui chart, winui sfcartesianchart selection, winui chart selection customization, syncfusion winui chart selection, winui chart selection properties.
 ---
 
 # Selection in WinUI Chart (SfCartesianChart)
