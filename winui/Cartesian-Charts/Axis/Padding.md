@@ -5,6 +5,7 @@ description: Learn here all about how to set padding for chart axis in Syncfusio
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
+keywords: axis padding in winui chart, winui sfcartesianchart axis padding, winui chart axis padding customization, syncfusion winui chart axis padding.
 ---
 
 # Axis Padding in WinUI Chart (SfCartesianChart)

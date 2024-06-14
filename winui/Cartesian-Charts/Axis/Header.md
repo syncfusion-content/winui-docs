@@ -5,6 +5,7 @@ description: This section explains about chart axis header, header style, header
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
+keywords: axis title in winui chart, winui sfcartesianchart axis title, winui chart axis title customization, syncfusion winui chart axis title, winui sfcartesianchart axis title configuration.
 ---
 
 # Axis Title in WinUI Chart (SfCartesianChart)

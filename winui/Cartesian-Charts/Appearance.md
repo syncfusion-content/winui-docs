@@ -5,6 +5,7 @@ description: This section explains about how to apply palettes and gradient in t
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
+keywords: appearance in winui chart, winui sfcartesianchart appearance, winui chart appearance customization, syncfusion winui chart appearance, winui sfcartesianchart appearance configuration.
 ---
 
 # Appearance in WinUI Chart (SfCartesianChart)

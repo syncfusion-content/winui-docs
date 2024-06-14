@@ -5,6 +5,7 @@ description: Learn here all about Fast Column Bitmap Series of Syncfusion WinUI 
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
+keywords: winui fast column chart, winui sfcartesianchart, winui fast column chart customization, syncfusion winui fast column chart, winui fast column chart configuration.
 ---
 
 # Fast Column Chart in WinUI (SfCartesianChart)
