@@ -5,7 +5,7 @@ description: Learn here all about Fast Line Series feature of Syncfusion WinUI C
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
-keywords: fast line chart in winui, winui sfcartesianchart fast line chart, winui fast line chart customization, syncfusion winui fast line chart, winui sfcartesianchart fast line chart settings.
+keywords: winui fast line chart, winui sfcartesianchart, fast line chart, winui fast line chart customization, syncfusion winui fast line chart, fast line chart settings.
 ---
 
 # Fast Line Chart in WinUI (SfCartesianChart)
