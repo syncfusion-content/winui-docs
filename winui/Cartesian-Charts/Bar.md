@@ -5,7 +5,7 @@ description: Learn here all about the bar chart and its features in Syncfusion W
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
-keywords: bar chart in winui chart, winui sfcartesianchart bar chart, winui bar chart customization, syncfusion winui bar chart, winui sfcartesianchart bar chart settings.
+keywords: winui bar chart, winui sfcartesianchart, winui bar chart customization, syncfusion winui bar chart, winui bar chart settings.
 ---
 
 # Bar Chart in WinUI Chart (SfCartesianChart)
