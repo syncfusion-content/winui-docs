@@ -5,6 +5,7 @@ description: Learn here all about the line chart and its type in Syncfusion WinU
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
+keywords: winui line chart, winui sfcartesianchart, winui line chart customization, syncfusion winui line chart,  winui line chart configuration.
 ---
 
 # Line Chart in WinUI Chart (SfCartesianChart)

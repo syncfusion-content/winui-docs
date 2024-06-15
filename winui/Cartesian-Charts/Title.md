@@ -5,6 +5,7 @@ description: Learn here all about title with Syncfusion WinUI Chart (SfCartesian
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
+keywords: winui chart title, winui sfcartesianchart title, winui chart title customization, syncfusion winui chart title, winui sfcartesianchart title configuration.
 ---
 
 # Chart Title in WinUI Chart (SfCartesianChart)

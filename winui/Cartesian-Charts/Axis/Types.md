@@ -5,6 +5,7 @@ description: Learn here all about axis types and its features in Syncfusion WinU
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
+keywords: types of axis in winui chart, winui sfcartesianchart axis types, winui chart axis types, syncfusion winui chart axis types, winui sfcartesianchart axis options.
 ---
 
 # Types of Axis in WinUI Chart (SfCartesianChart)

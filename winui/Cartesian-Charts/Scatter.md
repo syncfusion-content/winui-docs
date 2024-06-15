@@ -5,6 +5,7 @@ description: Learn here all about the scatter chart and its features in Syncfusi
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
+keywords: winui scatter chart, winui sfcartesianchart, winui scatter chart customization, syncfusion winui scatter chart, winui scatter chart properties.
 ---
 
 # Scatter Chart in WinUI Charts (SfCartesianChart)
