@@ -5,6 +5,7 @@ description: Learn here all about introduction of Syncfusion WinUI Chart (SfCart
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
+keywords: winui chart overview, introduction to winui charts, exploring winui chart capabilities.
 ---
 
 # WinUI Chart Overview

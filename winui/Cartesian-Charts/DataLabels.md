@@ -5,6 +5,7 @@ description: This section explains about how to configure the data labels and it
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
+keywords: data label in winui chart, winui sfcartesianchart data label, winui data label customization, syncfusion winui data label, winui chart data label overview.
 ---
 
 # Data Label in WinUI Chart (SfCartesianChart)
