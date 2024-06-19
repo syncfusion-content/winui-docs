@@ -788,7 +788,7 @@ The following code example shows the usage of DataTemplate.
 {% highlight xaml tabtitle="MainWindow.xaml" %}
 <scheduler:SfScheduler x:Name="Schedule"
                        EnableToolTip="True">
- <syncfusion:SfScheduler.ToolTipTemplate>
+ <scheduler:SfScheduler.ToolTipTemplate>
     <DataTemplate>
         <Border Background="Black"
                 CornerRadius="4"
@@ -835,13 +835,13 @@ The following code example shows the usage of DataTemplate.
             </Grid>
         </Border>
     </DataTemplate>
-</syncfusion:SfScheduler.ToolTipTemplate>
+ </scheduler:SfScheduler.ToolTipTemplate>
 </scheduler:SfScheduler>
 
 {% endhighlight %}
 {% endtabs %}
 
-![appointment-tool-tip-customisation-support-in-winui-scheduler](Appointment_Images/appointment-tool-tip-customization-support-in-winui-scheduler.gif)
+![appointment-tool-tip-customization-support-in-winui-scheduler](Appointment_Images/appointment-tool-tip-customization-support-in-winui-scheduler.gif)
 
 N>
 * This property will only be applicable when [EnableToolTip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableToolTip) is set to true.
