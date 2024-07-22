@@ -235,6 +235,16 @@ DataGridColumnSizer.SetMargin(gridColumn, ThicknessHelper.FromLengths(9, 3, 1, 3
 {% endhighlight %}
 {% endtabs %}
 
+## Performance tips
+
+When the [SfDataGrid.ColumnWidthMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ColumnWidthMode) is set to [ColumnWidthMode.Auto](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridLengthUnitType.html#Syncfusion_UI_Xaml_Grid_GridLengthUnitType_Auto), the column widths are calculated based on the contents of every cell in each column. But using large datasets with `ColumnWidthMode` as `Auto` can lead to performance issues due to the extensive calculations.
+
+To improve the loading performance, you can use [ColumnSizer.AutoFitMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.ColumnWidthMode.html) as [AutoFitMode.SmartFit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.AutoFitMode.html#Syncfusion_UI_Xaml_Grids_AutoFitMode_SmartFit) mode. When using both `AutoFitMode` as `SmartFit` mode with `ColumnWidthMode` as `Auto`, the column widths are adjusted based on the text length, but only when the current text length is greater than the previous text length. 
+
+{% tabs %} {% highlight c# %} sfDataGrid.ColumnSizer.AutoFitMode = AutoFitMode.SmartFit; {% endhighlight %} {% endtabs %}
+
+N>  `AutoFitMode.SmartFit` mode does not account for special characters such as `\n` (newline) or `\t` (tab). If your `WinUI DataGrid` (SfDataGrid) does not contain these special characters, we recommend enabling the Smart Fit calculation to enhance loading performance.
+
 ## Star column sizer ratio support
 
 You can customize the `ColumnWidthMode.Star` width calculation logic by overriding [SetStarWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridColumnSizer.html#Syncfusion_UI_Xaml_DataGrid_DataGridColumnSizer_SetStarWidth_System_Double_System_Collections_Generic_IEnumerable_Syncfusion_UI_Xaml_DataGrid_GridColumn__) method of [DataGridColumnSizer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridColumnSizer.html).
