@@ -14,7 +14,7 @@ The system requirements for using our Syncfusion WinUI platform are as follows
 
 ## Operating Systems
 
-Windows 10, version 1809 (build 17763) or later.
+Windows 11 and Windows 10 version 1809 (build 17763) or later.
 
 ## Development Environment
 
