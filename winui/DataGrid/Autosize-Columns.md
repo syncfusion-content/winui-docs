@@ -123,6 +123,44 @@ this.sfDataGrid.Columns["OrderID"].ColumnWidthMode = ColumnWidthMode.AutoLastCol
 
 <img src="Autosize-Columns-images/winui-datagrid-column-filling.png" alt="Specific Column in WinUI DataGrid Fills Remaining Width" width="100%" Height="Auto"/>
 
+## Improving Performance of Auto-Sizing Calculations
+
+By default, the column auto-sizing calculation was performed for all rows in the DataGrid. However, we now provide support for the `AutoFitRange` property, which allows auto-sizing to be calculated for either visible rows or all rows in the grid. The default value is `AutoFitRange.AllRows`.
+While scrolling, the column width adjusts according to the visible text. When you scroll up, the width remains unchanged and retains its maximum value. Additionally, when a new record is added or edited, the column width adjusts based on the text content.
+
+<table>
+<tr>
+<th>
+Type
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+<code>VisibleRows</code>
+</td>
+<td>
+Specifies that column auto-sizing considers only the visible rows in the grid.
+</td>
+</tr>
+<tr>
+<td>
+<code>AllRows</code>
+</td>
+<td>
+Specifies that column auto-sizing considers all rows in the grid.
+</td>
+</tr>
+</table>
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.AutoFitRange = Syncfusion.UI.Xaml.Grids.AutoFitRange.VisibleRows;
+{% endhighlight %}
+{% endtabs %}
+
 ## Refreshing autosize calculation at runtime
 
 You can refresh the autosize calculation at runtime by calling [SfDataGrid.ColumnSizer.Refresh](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridColumnSizer.html#Syncfusion_UI_Xaml_DataGrid_DataGridColumnSizer_Refresh) method.
