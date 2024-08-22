@@ -125,9 +125,11 @@ this.sfDataGrid.Columns["OrderID"].ColumnWidthMode = ColumnWidthMode.AutoLastCol
 
 ## Improving Performance of Auto-Sizing Calculations
 
-By default, column auto-sizing is calculated for all rows in the DataGrid. The AutoFitRange property allows you to specify whether auto-sizing applies to visible rows or all rows in the grid. The default value for the AutoFitRange property is AllRows.
+By default, column auto-sizing is calculated for all rows in the DataGrid. The `AutoFitRange` property allows you to specify whether auto-sizing is based on visible rows or all rows in the DataGrid. The default value for the `AutoFitRange` property is AllRows.
 
 The column width adjusts based on the visible text and maintains the maximum width of the column.
+
+Below are the options available for AutoFitRange:
 
 <table>
 <tr>
