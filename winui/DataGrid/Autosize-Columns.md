@@ -125,8 +125,9 @@ this.sfDataGrid.Columns["OrderID"].ColumnWidthMode = ColumnWidthMode.AutoLastCol
 
 ## Improving Performance of Auto-Sizing Calculations
 
-By default, the column auto-sizing calculation was performed for all rows in the DataGrid. However, we now provide support for the `AutoFitRange` property, which allows auto-sizing to be calculated for either visible rows or all rows in the grid. The default value is `AutoFitRange.AllRows`.
-While scrolling, the column width adjusts according to the visible text. When you scroll up, the width remains unchanged and retains its maximum value. Additionally, when a new record is added or edited, the column width adjusts based on the text content.
+By default, column auto-sizing is calculated for all rows in the DataGrid. The AutoFitRange property allows you to specify whether auto-sizing applies to visible rows or all rows in the grid. The default value for the AutoFitRange property is AllRows.
+
+The column width adjusts based on the visible text and maintains the maximum width of the column.
 
 <table>
 <tr>
@@ -156,6 +157,22 @@ Specifies that column auto-sizing considers all rows in the grid.
 </table>
 
 {% tabs %}
+{% highlight xaml %}
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
+                        AutoGenerateColumns="False"
+                        ColumnWidthMode="AutoLastColumnFill"
+                        AutoFitRange="VisibleRows"
+                        ItemsSource="{Binding OrdersDetails}">            
+            <dataGrid:SfDataGrid.Columns>
+                <dataGrid:GridTextColumn HeaderText="Order ID" MappingName="OrderID" ColumnWidthMode="AutoLastColumnFill" />
+                <dataGrid:GridTextColumn HeaderText="Customer ID" MappingName="Customer ID" />               
+                <dataGrid:GridTextColumn HeaderText="Order Date" MappingName="OrderDate" />
+                <dataGrid:GridTextColumn HeaderText="Unit Price" MappingName="UnitPrice" />
+                <dataGrid:GridTextColumn HeaderText="Ship City" MappingName="ShipCity" />
+                <dataGrid:GridTextColumn MappingName="Country" />
+            </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
+{% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.AutoFitRange = Syncfusion.UI.Xaml.Grids.AutoFitRange.VisibleRows;
 {% endhighlight %}
