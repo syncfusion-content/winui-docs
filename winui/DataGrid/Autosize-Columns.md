@@ -125,9 +125,7 @@ this.sfDataGrid.Columns["OrderID"].ColumnWidthMode = ColumnWidthMode.AutoLastCol
 
 ## Improving Performance of Auto-Sizing Calculations
 
-By default, column auto-sizing is calculated for all rows in the DataGrid. The `AutoFitRange` property allows you to specify whether auto-sizing is based on visible rows or all rows in the DataGrid. The default value for the `AutoFitRange` property is AllRows.
-
-The column width adjusts based on the visible text and maintains the maximum width of the column.
+By default, column auto-sizing is calculated for all rows in the DataGrid. The `AutoFitRange` property allows you to specify whether auto-sizing is based on visible rows or all rows in the DataGrid. The default value for the `AutoFitRange` property is `AllRows`.
 
 Below are the options available for AutoFitRange:
 
@@ -145,7 +143,7 @@ Description
 <code>VisibleRows</code>
 </td>
 <td>
-Specifies that column auto-sizing considers only the visible rows in the grid.
+Specifies that column auto-sizing considers only the visible rows in the DataGrid.
 </td>
 </tr>
 <tr>
@@ -153,27 +151,31 @@ Specifies that column auto-sizing considers only the visible rows in the grid.
 <code>AllRows</code>
 </td>
 <td>
-Specifies that column auto-sizing considers all rows in the grid.
+Specifies that column auto-sizing considers all rows in the DataGrid.
 </td>
 </tr>
 </table>
 
+In `AutoFitRange.VisibleRows` mode, column widths are calculated based on the content of the visible rows and maintain the column's maximum width.This approach enhances performance by calculating the width based only on the visible rows, thus avoiding unnecessary calculations for rows that are not currently displayed.
+
+
 {% tabs %}
 {% highlight xaml %}
-<dataGrid:SfDataGrid x:Name="sfDataGrid"
-                        AutoGenerateColumns="False"
-                        ColumnWidthMode="AutoLastColumnFill"
-                        AutoFitRange="VisibleRows"
-                        ItemsSource="{Binding OrdersDetails}">            
-            <dataGrid:SfDataGrid.Columns>
-                <dataGrid:GridTextColumn HeaderText="Order ID" MappingName="OrderID" ColumnWidthMode="AutoLastColumnFill" />
-                <dataGrid:GridTextColumn HeaderText="Customer ID" MappingName="Customer ID" />               
-                <dataGrid:GridTextColumn HeaderText="Order Date" MappingName="OrderDate" />
-                <dataGrid:GridTextColumn HeaderText="Unit Price" MappingName="UnitPrice" />
-                <dataGrid:GridTextColumn HeaderText="Ship City" MappingName="ShipCity" />
-                <dataGrid:GridTextColumn MappingName="Country" />
-            </dataGrid:SfDataGrid.Columns>
-</dataGrid:SfDataGrid>
+  <dataGrid:SfDataGrid x:Name="sfDataGrid"
+                  AutoGenerateColumns="False"
+                  ColumnWidthMode="Auto"
+                  AutoFitRange="VisibleRows"
+                  GridLinesVisibility="Both"
+                  ItemsSource="{Binding OrdersDetails}">
+      <dataGrid:SfDataGrid.Columns>
+          <dataGrid:GridTextColumn HeaderText="Order ID" MappingName="OrderID" />
+          <dataGrid:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" />
+          <dataGrid:GridTextColumn HeaderText="Order Date" MappingName="OrderDate" />
+          <dataGrid:GridTextColumn HeaderText="Unit Price" MappingName="UnitPrice" />
+          <dataGrid:GridTextColumn HeaderText="Ship City" MappingName="ShipCity" />
+          <dataGrid:GridTextColumn MappingName="Country" />
+      </dataGrid:SfDataGrid.Columns>
+  </dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.AutoFitRange = Syncfusion.UI.Xaml.Grids.AutoFitRange.VisibleRows;
