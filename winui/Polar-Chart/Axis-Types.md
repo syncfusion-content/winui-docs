@@ -101,8 +101,8 @@ N> If  minimum or maximum value is set, the other value is calculated by default
 <chart:SfPolarChart>
     <chart:SfPolarChart.SecondaryAxis>
         <chart:NumericalAxis Minimum="10"
-							 Maximum="90"
-							 Interval="20" />
+			     Maximum="90"
+			     Interval="20" />
     </chart:SfPolarChart.SecondaryAxis>
     ...
 </chart:SfPolarChart>
@@ -139,7 +139,7 @@ The [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
             
     <chart:SfPolarChart.PrimaryAxis>
         <chart:DateTimeAxis Interval="1"
-							IntervalType="Months">
+			    IntervalType="Months">
         <chart:DateTimeAxis.LabelStyle>
             <chart:LabelStyle LabelFormat="MMM/dd" />
         </chart:DateTimeAxis.LabelStyle>
