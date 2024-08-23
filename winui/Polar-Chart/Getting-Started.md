@@ -363,17 +363,17 @@ The following code example gives you the complete code of above configurations.
     <chart:SfPolarChart.Series>
         <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
                                XBindingPath="Direction"
-							   YBindingPath="Tree"
+			       YBindingPath="Tree"
                                Label="Tree"
-							   ShowDataLabels="True"
+			       ShowDataLabels="True"
                                LegendIcon="Pentagon">
             <chart:PolarAreaSeries.DataLabelSettings>
                 <chart:PolarDataLabelSettings Foreground="White"
-											  FontSize="12" 
+					      FontSize="12" 
                                               FontFamily="Calibri"
-											  BorderBrush="White" 
+					      BorderBrush="White" 
                                               BorderThickness="1"
-											  Margin="1"/>
+					      Margin="1"/>
                 </chart:PolarAreaSeries.DataLabelSettings>
         </chart:PolarAreaSeries>
     </chart:SfPolarChart.Series>
