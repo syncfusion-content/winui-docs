@@ -123,7 +123,7 @@ this.sfDataGrid.Columns["OrderID"].ColumnWidthMode = ColumnWidthMode.AutoLastCol
 
 <img src="Autosize-Columns-images/winui-datagrid-column-filling.png" alt="Specific Column in WinUI DataGrid Fills Remaining Width" width="100%" Height="Auto"/>
 
-## Improving Performance of Auto-Sizing Calculations
+## Column Auto Sizing for Visible Rows
 
 By default, column auto-sizing is calculated for all rows in the DataGrid. The `AutoFitRange` property allows you to specify whether auto-sizing is based on visible rows or all rows in the DataGrid. The default value for the `AutoFitRange` property is `AllRows`.
 
