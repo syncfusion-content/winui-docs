@@ -99,8 +99,8 @@ The legend icon represents a symbol associated with each legend item. The appear
 <chart:SfPolarChart>
     <chart:SfPolarChart.Legend>
         <chart:ChartLegend IconWidth="15"
-						   IconHeight="15" 
-						   IconVisibility="Visible">
+			   IconHeight="15" 
+			   IconVisibility="Visible">
         </chart:ChartLegend>
     </chart:SfPolarChart.Legend>
     ...
@@ -312,15 +312,15 @@ Customize each legend item by using the [ItemTemplate](https://help.syncfusion.c
         <DataTemplate x:Key="labelTemplate">
             <StackPanel Margin="10" Orientation="Vertical">
                 <Ellipse Height="15"
-						 Width="15" 
-						 Fill="{Binding Interior}" 
+			 Width="15" 
+			 Fill="{Binding Interior}" 
                          Stroke="#4a4a4a"
-						 StrokeThickness="2"/>
+			 StrokeThickness="2"/>
                 <TextBlock HorizontalAlignment="Center"
-						   FontSize="12"
+			   FontSize="12"
                            Foreground="Black" 
                            FontWeight="SemiBold"
-						   Text="{Binding Label}"/>
+			   Text="{Binding Label}"/>
             </StackPanel>
         </DataTemplate>
     </chart:SfPolarChart.Resources>

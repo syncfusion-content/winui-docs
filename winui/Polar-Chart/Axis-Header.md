@@ -61,8 +61,8 @@ The [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
         <chart:NumericalAxis Header="Tree">
             <chart:NumericalAxis.HeaderStyle>
                 <chart:LabelStyle FontFamily="Algerian"
-								  FontSize="13"
-								  Foreground="Black"/>
+				  FontSize="13"
+				  Foreground="Black"/>
             </chart:NumericalAxis.HeaderStyle>
         </chart:NumericalAxis>
     </chart:SfPolarChart.SecondaryAxis>
@@ -109,13 +109,13 @@ The appearance of the header can be customized using the [HeaderTemplate](https:
     <chart:SfPolarChart.Resources>
         <DataTemplate x:Key="headerTemplate">
             <Border BorderBrush="Blue"
-					CornerRadius="5"
-					BorderThickness="1">
+		    CornerRadius="5"
+		    BorderThickness="1">
                 <TextBlock Text="{Binding}"
-						   FontSize="12"
-						   Margin="3"
+			   FontSize="12"
+			   Margin="3"
                            FontStyle="Italic"
-						   FontWeight="Bold"/>
+			   FontWeight="Bold"/>
             </Border>
         </DataTemplate>
     </chart:SfPolarChart.Resources>

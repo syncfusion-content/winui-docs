@@ -90,13 +90,13 @@ public class ChartViewModel
         PlantDetails = new ObservableCollection<PlantData>()
         {
             new PlantData(){ Direction = "North", Tree = 80 },
-            new PlantData(){ Direction = "NorthWest", Tree = 87 },
-            new PlantData(){ Direction = "West", Tree = 78 },
-            new PlantData(){ Direction = "SouthWest", Tree = 85 },
+            new PlantData(){ Direction = "NorthEast", Tree = 87 },
+            new PlantData(){ Direction = "East", Tree = 78 },
+            new PlantData(){ Direction = "SouthEast", Tree = 85 },
             new PlantData(){ Direction = "South", Tree = 81 },
-            new PlantData(){ Direction = "SouthEast", Tree = 88 },
-            new PlantData(){ Direction = "East", Tree = 80 },
-            new PlantData(){ Direction = "NorthEast", Tree = 85 },
+            new PlantData(){ Direction = "SouthWest", Tree = 88 },
+            new PlantData(){ Direction = "West", Tree = 80 },
+            new PlantData(){ Direction = "NorthWest", Tree = 85 },
         };
     }
 }
@@ -363,17 +363,17 @@ The following code example gives you the complete code of above configurations.
     <chart:SfPolarChart.Series>
         <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
                                XBindingPath="Direction"
-							   YBindingPath="Tree"
+			       YBindingPath="Tree"
                                Label="Tree"
-							   ShowDataLabels="True"
+			       ShowDataLabels="True"
                                LegendIcon="Pentagon">
             <chart:PolarAreaSeries.DataLabelSettings>
                 <chart:PolarDataLabelSettings Foreground="White"
-											  FontSize="12" 
+					      FontSize="12" 
                                               FontFamily="Calibri"
-											  BorderBrush="White" 
+					      BorderBrush="White" 
                                               BorderThickness="1"
-											  Margin="1"/>
+					      Margin="1"/>
                 </chart:PolarAreaSeries.DataLabelSettings>
         </chart:PolarAreaSeries>
     </chart:SfPolarChart.Series>
