@@ -130,9 +130,9 @@ In the below example, OrderID column displays value with one decimal digit in ce
 {% highlight xaml %}
 xmlns:core="using:Syncfusion.UI.Xaml.Core"
 
-<Page.Resources>
+<Window.Resources>
     <core:StringFormatConverter x:Key="stringFormatConverter" />
-</Page.Resources>
+</Window.Resources>
 <dataGrid:GridTextColumn HeaderText="Order ID"  
                            TextAlignment="Right"
                            DisplayBinding="{Binding OrderID, 
@@ -418,9 +418,9 @@ Now , assign the `keySelector` into `GroupColumnDescription.KeySelector` and set
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
+<Window.Resources>
     <local:EmployeeViewModel x:Key="viewModel"/>
-</Page.Resources>
+</Window.Resources>
   
 <dataGrid:SfDataGrid  x:Name="sfDataGrid"                          
                         AutoGenerateColumns="True"                          

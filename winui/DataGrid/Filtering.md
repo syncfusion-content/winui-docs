@@ -242,11 +242,11 @@ You can skip the `GridFilterControl` styling for particular column from `SfDataG
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
+<Window.Resources>
     <Style x:Key="filterControlStyle" TargetType="dataGrid:GridFilterControl">
         <Setter Property="FilterMode" Value="AdvancedFilter" />
     </Style>
-</Page.Resources> 
+</Window.Resources> 
 
 <dataGrid:SfDataGrid Name="sfDataGrid"
                        AllowFiltering="True"
@@ -741,13 +741,13 @@ You can customize the FilterPopup size using [FilterPopupHeight](https://help.sy
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
+<Window.Resources>
     <Style TargetType="dataGrid:GridFilterControl">
         <Setter Property="FontSize" Value="14" />
         <Setter Property="FontWeight" Value="Normal" />
         <Setter Property="FilterPopupHeight" Value="620" />
     </Style>
-</Page.Resources>
+</Window.Resources>
 {% endhighlight %}
 {% endtabs %}
 
@@ -762,7 +762,7 @@ You can change the filter icon style by editing the [FilterToggleButton](https:/
 
 xmlns:grid="using:Syncfusion.UI.Xaml.Grids"
 
-<Page.Resources>
+<Window.Resources>
     <Style TargetType="grid:FilterToggleButton">
 	    <Setter Property="Template">
             <Setter.Value>
@@ -825,7 +825,7 @@ xmlns:grid="using:Syncfusion.UI.Xaml.Grids"
             </Setter.Value>
         </Setter>
     </Style>
-</Page.Resources>
+</Window.Resources>
 {% endhighlight %}
 {% endtabs %}
 
