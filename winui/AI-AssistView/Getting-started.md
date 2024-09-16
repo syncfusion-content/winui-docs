@@ -85,7 +85,6 @@ Create a simple aiassist chat collection as shown in the following code example 
          this.Chats = new ObservableCollection<object>();          
          this.CurrentUser = new Author { Name="John"};
          this.GenerateMessages();
-
      }
 
      private async void GenerateMessages()
