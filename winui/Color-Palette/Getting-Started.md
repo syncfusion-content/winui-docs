@@ -13,7 +13,7 @@ This section explains the steps required to add the [WinUI Color Palette](https:
 
 ## Control Structure
 
-![WinUI Color Palette Control](Getting-Started_images/winui-colorpalette-control.png)
+![WinUI Color Palette control](getting-started_images/winui-color-palette-control.png)
 
 * The Selected Color represents the color that you select.
 * The Automatic Color represents the Color, which can be set by you as default color.
@@ -26,7 +26,7 @@ This section explains the steps required to add the [WinUI Color Palette](https:
 
 ### More Color Dialog
 
-![WinUI Color Palette displays More Color Options](Getting-Started_images/winui-colorpalette-more-color-options.jpg)
+![WinUI Color Palette displays more color options](getting-started_images/winui-color-palette-more-color-options.jpg)
 
 ## Creating an application with WinUI Color Palette
 
@@ -81,7 +81,7 @@ namespace GettingStarted
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![Overview of WinUI Color Palette](Getting-Started_images/winui-colorpalette-overview.png)
+![Overview of WinUI Color Palette](getting-started_images/winui-color-palette-overview.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -105,7 +105,7 @@ colorPalette.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 {% endhighlight %}
 {% endtabs %}
 
-![Selecting Color Programmatically in WinUI Color Palette](Working-with-SfColorPalette_images/winui-colorpalette-color-selection.png)
+![Selecting Color Programmatically in WinUI Color Palette](Working-with-SfColorPalette_images/winui-color-palette-color-selection.png)
 
 Here, `Yellow` color is selected color in the `ColorPalette`.
 
@@ -136,7 +136,7 @@ colorPalette.StandardColors.ShowColorShades = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Color Palette with Theme and Standard Color Palettes](Getting-Started_images/winui-colorpalette-theme-and-standard-color.png)
+![WinUI Color Palette with Theme and Standard Color Palettes](Getting-Started_images/winui-color-palette-theme-and-standard-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -144,7 +144,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can select a various theme colors by setting the value to the [ActivePalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_ActivePalette) property. Based on the `ActivePalette` value, the respective base theme color items are displayed with its variants. The default value of `ActivePalette` property is `Office`.
 
-![WinUI Color Palette displays Various Theme Palettes](Working-with-SfColorPalette_images/winui-colorpalette-theme-palette.jpg)
+![WinUI Color Palette displays various theme palettes](working-with-sfcolorpalette_images/winui-color-palette-theme-palette.jpg)
 
 {% tabs %}
 {% highlight xaml %}
@@ -160,7 +160,7 @@ colorPalette.ActivePalette = ColorPaletteNames.Yellow;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Color Palette with Yellow Theme Color](Working-with-SfColorPalette_images/winui-colorpalette-theme-color.png)
+![WinUI Color Palette with Yellow Theme Color](Working-with-SfColorPalette_images/winui-color-palette-theme-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -251,7 +251,7 @@ colorPalette.ShowMoreColorsButton = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Color Palette with More Color Window](Getting-Started_images/winui-colorpalette-more-color-window.gif)
+![WinUI Color Palette with more color window](getting-started_images/winui-color-palette-more-color-window.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -276,7 +276,7 @@ var recentColors = colorPalette.RecentColors;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Color Palette with Recent Color Items](Getting-Started_images/winui-colorpalette-recent-colors.png)
+![WinUI Color Palette with recent color items](getting-started_images/winui-colorpalette-recent-colors.png)
 
 ## Select transparent color 
 
@@ -297,7 +297,7 @@ colorPalette.ShowNoColorButton = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Selecting Transparent Color in WinUI Color Palette](Working-with-SfColorPalette_images/winui-colorpalette-transparent-color.png)
+![Selecting transparent color in WinUI Color Palette](working-with-sfcolorpalette_images/winui-color-palette-transparent-color.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
