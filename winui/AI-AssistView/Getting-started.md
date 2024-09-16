@@ -50,7 +50,7 @@ SfAIAssistView aiAssistView = new SfAIAssistView();
 
 ## Creating ViewModel for AIAssistView
 
-Create a simple aiassist chat collection as shown in the following code example in a new class file. Save it as ViewModel.cs file.
+Create a simple ai assist chat collection as shown in the following code example in a new class file. Save it as ViewModel.cs file.
 
 {% tabs %}
 

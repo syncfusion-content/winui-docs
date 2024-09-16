@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TypingIndicator in WinUI AIAssistView control | Syncfusion
-description: Learn about the TypingIndicator feature in the AIAssistView control.
+title: TypingIndicator in WinUI AI AssistView control | Syncfusion
+description: Learn about the typing indicator feature displayed in the AI AssistView control while the AI processes or generates a response.
 platform: WinUI
 control: SfAIAssistView
 documentation: ug
 ---
 
-# Initialize the TypingIndicator in WinUI SfAIAssistView
+# Initialize the typing indicator in WinUI SfAIAssistView
 
 By using the `TypingIndicator` property, a typing indicator is shown while the AI is processing or generating a response, giving users real-time feedback and enhancing conversational flow
 

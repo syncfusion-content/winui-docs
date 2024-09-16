@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Suggestions in WinUI AIAssistView control | Syncfusion
-description: Learn about the suggestion feature in the AIAssistView control.
+title: Suggestions in WinUI AI AssistView control | Syncfusion
+description: Learn about the suggestion feature that displays AI-driven suggestions in the bottom right corner of the AI AssistView control.
 platform: WinUI
 control: SfAIAssistView
 documentation: ug
