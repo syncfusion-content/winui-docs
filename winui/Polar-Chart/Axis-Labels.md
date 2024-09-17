@@ -103,14 +103,14 @@ The appearance of the axis labels can be customized by using the [LabelTemplate]
     <Grid.Resources>
         <DataTemplate x:Key="labelTemplate">
             <Border Background="Blue"
-					CornerRadius="5"
-					BorderThickness="1">
+		    CornerRadius="5"
+		    BorderThickness="1">
                 <TextBlock Text="{Binding Content}"
-						   Foreground="White"
-						   FontStyle="Italic" 
-						   FontSize="10"
-						   FontWeight="Bold" 
-						   Margin="3"/>
+			   Foreground="White"
+			   FontStyle="Italic" 
+			   FontSize="10"
+			   FontWeight="Bold" 
+			   Margin="3"/>
             </Border>
         </DataTemplate>
     </Grid.Resources>
