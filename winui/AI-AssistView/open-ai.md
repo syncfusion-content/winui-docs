@@ -11,10 +11,10 @@ documentation: ug
 
 This section explains about how to connect the AIAssistView with OpenAI.
 
-## Creating an application with Nuget reference.
+## Creating an application with NuGet reference.
 
 1. Create a [WinUI 3 desktop app for C# and .NET 6](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
-2. Add reference to [Microsoft.Semantickernal](https://www.nuget.org/packages/Microsoft.SemanticKernel) NuGet. 
+2. Add reference to [Microsoft.SemanticKernal](https://www.nuget.org/packages/Microsoft.SemanticKernel) NuGet. 
 
 ## Creating the OpenAI view model class.
 
