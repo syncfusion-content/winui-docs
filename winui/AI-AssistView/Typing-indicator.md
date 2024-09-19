@@ -62,6 +62,20 @@ By using the `TypingIndicator` property, a typing indicator is shown while the A
          Suggestion = new ObservableCollection<string> {"What is the future of WinUI?", "What is XAML?", "What is the difference between WinUI 2 and WinUI 3?" };
      }
 
+    
+     public IEnumerable<string> Suggestion
+     {
+        get
+        {
+         return this.suggestion;
+        }
+        set
+        {
+         this.suggestion = value;
+         RaisePropertyChanged("Suggestion");
+        }
+     }
+
      public ObservableCollection<object> Chats
      {
          get
