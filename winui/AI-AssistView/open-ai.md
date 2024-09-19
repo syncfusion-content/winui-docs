@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains about how to connect the AIAssistView with OpenAI.
 
-## Creating an application with WinUI AIAssistView
+## Creating an application with Nuget reference.
 
 1. Create a [WinUI 3 desktop app for C# and .NET 6](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Add reference to [Microsoft.Semantickernal](https://www.nuget.org/packages/Microsoft.SemanticKernel) NuGet. 
@@ -197,4 +197,4 @@ To connect with OpenAI, we need the following details.
 {% endhighlight %}
 {% endtabs %}
 
-![Suggestion feature in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_openai.gif)
+![OpenAI in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_openai.gif)
