@@ -125,7 +125,7 @@ this.sfDataGrid.Columns["OrderID"].ColumnWidthMode = ColumnWidthMode.AutoLastCol
 
 ## Column Auto Sizing for Visible Rows
 
-By default, column auto-sizing is calculated for all rows in the DataGrid. The [AutoFitRange](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.AutoFitRange.html) property allows you to specify whether auto-sizing is based on visible rows or all rows in the DataGrid. The default value for the `AutoFitRange` property is [AllRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.AutoFitRange.html#Syncfusion_UI_Xaml_Grids_AutoFitRange_AllRows).
+By default, column auto-sizing is calculated for all rows in the DataGrid. The [AutoFitRange](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.AutoFitRange.html) property allows you to specify whether auto-sizing is based on visible rows or all rows in the DataGrid. The default value for the `AutoFitRange` property is [AutoFitRange.AllRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.AutoFitRange.html#Syncfusion_UI_Xaml_Grids_AutoFitRange_AllRows).
 
 Below are the options available for AutoFitRange:
 
