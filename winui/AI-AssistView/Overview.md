@@ -13,7 +13,7 @@ The Syncfusion .NET [WinUI AIAssistView control](https://www.syncfusion.com/winu
 
 ## Key features
 
-* `Suggestions`: Offers selectable response suggestions to expedite the conversation flow.
-* `Typing indicator`: Displays a loading indicator to represent asynchronous communication with AI services.
-* `Formatted responses`: Visualizes responses using customizable templates.
-* `Styling`: Allows customization of the appearance of both request and response items.
+* **Suggestions**: Offers selectable response suggestions to expedite the conversation flow.
+* **Typing indicator** : Displays a loading indicator to represent asynchronous communication with AI services.
+* **Formatted responses** : Visualizes responses using customizable templates.
+* **Styling**: Allows customization of the appearance of both request and response items.
