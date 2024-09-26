@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Getting Started with WinUI AIAssistView control | Syncfusion
-description: Learn about getting started with the Syncfusion WinUI AIAssistView (SfAIAssistView) control with its basic features.
+title: Getting Started with WinUI AI AssistView control | Syncfusion
+description: Learn about getting started with the Syncfusion WinUI AI AssistView (SfAIAssistView) control with its basic features.
 platform: WinUI
-control: AIAssistView
+control: AI AssistView
 documentation: ug
 ---
 
-# Getting Started with WinUI AIAssistView
+# Getting Started with WinUI AI AssistView
 
-This section explains the steps required to add the WinUI [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAIAssistView.html) control with its basic features.
+This section explains the steps required to add the WinUI [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control with its basic features.
 
-## Creating an application with WinUI AIAssistView
+## Creating an application with WinUI AI AssistView
 
 1. Create a [WinUI 3 desktop app for C# and .NET 6](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Add reference to [Syncfusion.Chat.WinUI](https://www.nuget.org/packages/Syncfusion.Chat.WinUI) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Chat` in XAML or C# code.
 4. Initialize the [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control.
 
-## Initialize AIAssistView
+## Initialize AI AssistView
 
 {% tabs %}
 {% highlight xaml %}
@@ -42,13 +42,13 @@ This section explains the steps required to add the WinUI [SfAIAssistView](https
 
 {% highlight C# %}
 
-// Creating an instance of the AvatarView control.
+// Creating an instance of the AI AssistView control.
 SfAIAssistView aiAssistView = new SfAIAssistView();
            
 {% endhighlight %}
 {% endtabs %}
 
-## Creating ViewModel for AIAssistView
+## Creating ViewModel for AI AssistView
 
 Create a simple chat collection as shown in the following code example in a new class file. Save it as ViewModel.cs file.
 
@@ -136,5 +136,4 @@ Create a simple chat collection as shown in the following code example in a new 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AIAssistView control getting started](aiassistview_images/winui_aiassistview_gettingstarted.png)
-
+![WinUI AI AssistView control getting started](aiassistview_images/winui_aiassistview_gettingstarted.png)
