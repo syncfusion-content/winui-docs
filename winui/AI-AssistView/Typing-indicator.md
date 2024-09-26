@@ -7,9 +7,9 @@ control: SfAIAssistView
 documentation: ug
 ---
 
-# Initialize the typing indicator in WinUI SfAIAssistView
+# Initialize the typing indicator in WinUI AI AssistView
 
-By using the `TypingIndicator` property, a typing indicator is shown while the AI is processing or generating a response, giving users real-time feedback and enhancing conversational flow
+By using the [TypingIndicator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html#Syncfusion_UI_Xaml_Chat_SfAIAssistView_TypingIndicator) property, a typing indicator is shown while the AI is processing or generating a response, giving users real-time feedback and enhancing conversational flow
 
 {% tabs %}
 

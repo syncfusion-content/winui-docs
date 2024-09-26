@@ -1,15 +1,15 @@
 ---
 layout: post
-title: About .NET WinUI AI Assist View control | Syncfusion
-description: Learn about the introduction of Syncfusion WinUI AIAssistView Control (SfAvatarView) with essential features and more.
+title: About .NET WinUI AI AssistView control | Syncfusion
+description: Learn about the introduction of Syncfusion WinUI AI AssistView Control (SfAvatarView) with essential features and more.
 platform: WinUI
 control: SfAIAssistView
 documentation: ug
 ---
 
-# Overview of .NET WinUI AI Assist View (SfAIAssistView)
+# Overview of .NET WinUI AI AssistView (SfAIAssistView)
 
-The Syncfusion .NET [WinUI AIAssistView control](https://www.syncfusion.com/winui-controls/aiassist-view) control is used to enhance interaction between users and AI services. It offers a user-friendly interface for creating intelligent and responsive applications with AI services, allowing users to customize the appearance easily.
+The Syncfusion .NET [WinUI AI AssistView control](https://www.syncfusion.com/winui-controls/aiassist-view) is used to enhance interaction between users and AI services. It offers a user-friendly interface for creating intelligent and responsive applications with AI services, allowing users to customize the appearance easily.
 
 ## Key features
 

@@ -7,9 +7,9 @@ control: SfAIAssistView
 documentation: ug
 ---
 
-# Suggestions in WinUI SfAIAssistView
+# Suggestions in WinUI AI AssistView
 
-By using the `Suggestions` property, the AssistView displays AI-driven suggestions in the bottom right corner, making it easy for users to quickly respond or choose from relevant options.
+By using the [Suggestions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html#Syncfusion_UI_Xaml_Chat_SfAIAssistView_Suggestions) property, the AssistView displays AI-driven suggestions in the bottom right corner, making it easy for users to quickly respond or choose from relevant options.
 
 {% tabs %}
 
@@ -114,4 +114,4 @@ By using the `Suggestions` property, the AssistView displays AI-driven suggestio
 {% endhighlight %}
 {% endtabs %}
 
-![Suggestion feature in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_suggestions.png)
+![Suggestion feature in WinUI AI AssistView control](aiassistview_images/winui_aiassistview_suggestions.png)
