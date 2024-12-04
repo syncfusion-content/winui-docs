@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinUI Badge control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Badge(SfBadge) control, its elements, and more.
+title: Getting Started with WinUI Badge control | Syncfusion®
+description: Learn here all about getting started with Syncfusion® WinUI Badge(SfBadge) control, its elements, and more.
 platform: WinUI
 control: SfBadge
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Badge
 
-This section explains the steps required to add the [WinUI Badge](https://www.syncfusion.com/winui-controls/badge) control and its elements such as shapes, alignment, and predefined colors. This section covers only basic features needed to get started with Syncfusion `Badge` control.
+This section explains the steps required to add the [WinUI Badge](https://www.syncfusion.com/winui-controls/badge) control and its elements such as shapes, alignment, and predefined colors. This section covers only basic features needed to get started with Syncfusion® `Badge` control.
 
 ## Structure of Badge control
 

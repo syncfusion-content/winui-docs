@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About WinUI ComboBox control | Syncfusion
-description: Learn here all about introduction of Syncfusion WinUI ComboBox (multi-select ComboBox) control, its features, and more.
+title: About WinUI ComboBox control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® WinUI ComboBox (multi-select ComboBox) control, its features, and more.
 platform: winui
 control: SfComboBox
 documentation: ug
