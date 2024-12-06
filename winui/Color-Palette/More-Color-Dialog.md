@@ -7,6 +7,10 @@ control: SfColorPalette
 documentation: ug
 ---
 
+# More Colors in WinUI Color Palette control
+
+This section explains the different more colors available in the [Color Palette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html) and  how to choose the colors and its panel customizations.
+
 ## Choosing a color from MoreColors dialog in WinUI Color Palette
 
 In addition to colors in `Theme colors` and `Standard colors`, `MoreColor` feature allows you to select wide range of color options from the WinUI [Color Palette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html). You can select any custom color with various opacity level based on requirement.
