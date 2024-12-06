@@ -7,17 +7,18 @@ control: SfKanban
 documentation: ug
 ---
 
-# WinUI Kanban (SfKanban) Overview
+# Overview of WinUI Kanban (SfKanban)
 
-The Syncfusion WinUI Kanban control is a versatile and interactive tool designed to simplify task management and enhance workflow visualization. It offers clear and efficient way to monitor tasks across various stages of completion, ensuring seamless tracking of progress. With its elegant design and powerful features, the control facilitates effective planning and promotes productivity, making it an essential asset for managing tasks and workflows throughout the software development lifecycle.
+The Syncfusion WinUI Kanban control is an efficient way to visualize a workflow at each stage of completion. It facilitates clear planning and provides a transparent view of work progression. SfKanban offers a variety of features that are essential for monitoring tasks throughout the software development cycle.
 
 ## Key features
 
-* Swimlanes – Horizontally organize the Kanban board to categorize cards by key attributes such as assignee, project, or type.
-* Appearance customization – Customize the UI of each element using templates, including column headers, cards, and swimlane headers.
-* Work-in-Progress (WIP) limit – Set limits on the number of tasks at each stage of the workflow within each column.
-* Expand and collapse columns – Expand or collapse columns easily to manage the visibility of tasks and maintain an organized board view.
-* Drag-and-Drop – Easily move cards across columns, within the same column, or between swimlane rows, enabling quick task updates and improved workflow management.
-* Localization – Localize all default static strings in the WinUI Kanban control to any supported language for a globalized user experience.
-* RTL – Render text and layout in a right-to-left direction, ensuring compatibility with RTL languages.
-* Themes – Support for light and dark themes that automatically adjust to the system's theme settings.
+* Work-in-Progress (WIP) Limit: Allows users to set task limits for each stage, preventing overload and improving efficiency.
+* Cards: Display tasks, progress, and priority for better tracking.
+* Columns: Organize work into stages, such as To-Do, In-Progress, and Completed.
+* Swimlanes: Categorize tasks based on projects, teams, or custom criteria.
+* Interaction: Includes features like card tapping, column expansion/collapsing, and drag-and-drop for seamless workflow management.
+* Events : Triggered when dragging or repositioning cards, as well as when a card is tapped.
+* Appearance Customization: Supports UI customization for elements such as column headers, cards, and swimlane headers using templates.
+* Localization and RTL support: Easily adapts to any language or culture, with support for right-to-left (RTL) layout direction.
+* Themes: Offers built-in light and dark themes, which automatically adjust to the system's settings.

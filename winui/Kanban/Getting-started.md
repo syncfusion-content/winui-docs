@@ -6,9 +6,10 @@ platform: winui
 control: SfKanban
 documentation: ug
 ---
-# Getting Started with WinUI Kanban (SfKanban)
 
-This section provides an overview of working with WinUI Kanban and a step-by-step guide to configuring and using it effectively in your application.
+# Getting Started with WinUI Kanban Control
+
+This section provides a quick overview of how to get started with the WinUI Kanban control (SfKanban) for WinUI and a walk-through to configure the WinUI Kanban control in a real-time scenario. Follow the steps below to add WinUI Kanban control to your project.
 
 ## Creating an application with WinUI Kanban
 
@@ -23,40 +24,28 @@ This section provides an overview of working with WinUI Kanban and a step-by-ste
 {% capture codesnippet1 %}
 {% tabs %}
 
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7 12" %}
-<Window x:Class="GettingStarted.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:GettingStarted"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:kanban="using:Syncfusion.UI.Xaml.Kanban"
-        mc:Ignorable="d"
-        Title="GettingStarted">
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 5" %}
 
-        <Grid>
-            <kanban:SfKanban x:Name="sfKanban"/>
-        </Grid>
+<Window 
+    ...
+    xmlns:kanban="using:Syncfusion.UI.Xaml.Kanban">
+
+    <kanban:SfKanban x:Name="kanban"/>
 </Window>
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1 13 14" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1 9 10" %}
 using Syncfusion.UI.Xaml.Kanban;
+. . .
 
-namespace GettingStarted
+public sealed partial class MainWindow : Window
 {
-    /// <summary>
-    /// An empty window that can be used on its own or navigated to within a Frame.
-    /// </summary>
-    public sealed partial class MainWindow : Window
+    public MainWindow()
     {
-        public MainWindow()
-        {
-            this.InitializeComponent();
-            SfKanban sfKanban = new SfKanban();
-            this.Content = sfKanban;
-        }
+        this.InitializeComponent();
+        SfKanban kanban = new SfKanban();
+        this.Content = kanban;
     }
 }
 
@@ -65,150 +54,189 @@ namespace GettingStarted
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-### Create a Data Model
+## Populate WinUI Kanban item source
 
-To populate the `SfKanban` control, you need to create a collection of `KanbanModel` objects. These objects represent the tasks or items to be displayed on the Kanban board, each containing properties such as `title`, `description`, `category`, and other relevant details.
+Here are the steps to render kanban card items using the WinUI Kanban control with the respective `KanbanModel` class:
+
+* Create the ViewModel.
+* Bind the item source for Kanban.
+
+### Define the view model
+
+Create a view model class to set values for the properties listed in the `KanbanModel` class as shown in the following example code. Each `KanbanModel` instance represents a card in the Kanban control.
 
 {% highlight c# %}
    
+public class ViewModel
+{
+    #region Properties
+
     /// <summary>
-    /// Represents a ViewModel that designed to manage a collection of kanban tasks in a software project management system, typically used in kanban boards.
+    /// Gets or sets the collection of <see cref="KanbanModel"/> objects representing tasks in various stages.
     /// </summary>
-    public class GettingStartedViewModel
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    #endregion
+
+    #region Constructor
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ViewModel"/> class.
+    /// </summary>
+    public ViewModel()
     {
-        #region Properties
-
-        /// <summary>
-        /// Gets or sets the collection of <see cref="KanbanModel"/> objects representing tasks in various stages.
-        /// </summary>
-        public ObservableCollection<KanbanModel> TaskDetails { get; set; }
-
-        #endregion
-
-        #region Constructor
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="GettingStartedViewModel"/> class.
-        /// </summary>
-        public GettingStartedViewModel()
-        {
-            this.TaskDetails = this.GetTaskDetails();
-        }
-
-        #endregion
-
-        #region Private methods
-
-        /// <summary>
-        /// Method to get the kanban model collections.
-        /// </summary>
-        /// <returns>The kanban model collections.</returns>
-        private ObservableCollection<KanbanModel> GetTaskDetails()
-        {
-            var taskDetails = new ObservableCollection<KanbanModel>();
-            string path = @"ms-appx:///";
-
-            KanbanModel taskDetail = new KanbanModel();
-            taskDetail.Title = "UWP Issue";
-            taskDetail.Id = "651";
-            taskDetail.Description = "Crosshair label template not visible in UWP";
-            taskDetail.Category = "Open";
-            taskDetail.IndicatorColorKey = "High";
-            taskDetail.Tags = new List<string>() { "Bug Fixing" };
-            taskDetail.Image = new Image
-            {
-                Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
-            };
-
-            taskDetails.Add(taskDetail);
-
-            taskDetail = new KanbanModel();
-            taskDetail.Title = "WinUI Issue";
-            taskDetail.Id = "646";
-            taskDetail.Description = "AxisLabel cropped when rotating the axis label";
-            taskDetail.Category = "Open";
-            taskDetail.IndicatorColorKey = "Low";
-            taskDetail.Tags = new List<string>() { "Bug Fixing" };
-            taskDetail.Image = new Image
-            {
-                Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
-            };
-
-            taskDetails.Add(taskDetail);
-
-            taskDetail = new KanbanModel();
-            taskDetail.Title = "Kanban Feature";
-            taskDetail.Id = "25678";
-            taskDetail.Description = "Provide drag and drop support";
-            taskDetail.Category = "In Progress";
-            taskDetail.IndicatorColorKey = "Low";
-            taskDetail.Tags = new List<string>() { "New control" };
-            taskDetail.Image = new Image
-            {
-                Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle3.png"))
-            };
-
-            taskDetails.Add(taskDetail);
-
-            taskDetail = new KanbanModel();
-            taskDetail.Title = "New Feature";
-            taskDetail.Id = "29574";
-            taskDetail.Description = "Dragging events support for Kanban";
-            taskDetail.Category = "Closed";
-            taskDetail.IndicatorColorKey = "Normal";
-            taskDetail.Tags = new List<string>() { "New Control" };
-            taskDetail.Image = new Image
-            {
-                Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
-            };
-
-            taskDetails.Add(taskDetail);
-            return taskDetails;
-        }
-
-        #endregion
+        this.TaskDetails = this.GetTaskDetails();
     }
+
+    #endregion
+
+    #region Private methods
+
+    /// <summary>
+    /// Method to get the kanban model collections.
+    /// </summary>
+    /// <returns>The kanban model collections.</returns>
+    private ObservableCollection<KanbanModel> GetTaskDetails()
+    {
+        var taskDetails = new ObservableCollection<KanbanModel>();
+        string path = @"ms-appx:///";
+
+        KanbanModel taskDetail = new KanbanModel();
+        taskDetail.Title = "UWP Issue";
+        taskDetail.Id = "651";
+        taskDetail.Description = "Crosshair label template not visible in UWP";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WinUI Issue";
+        taskDetail.Id = "646";
+        taskDetail.Description = "AxisLabel cropped when rotating the axis label";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Kanban Feature";
+        taskDetail.Id = "25678";
+        taskDetail.Description = "Provide drag and drop support";
+        taskDetail.Category = "In Progress";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "New control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle3.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "New Feature";
+        taskDetail.Id = "29574";
+        taskDetail.Description = "Dragging events support for Kanban";
+        taskDetail.Category = "Closed";
+        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Tags = new List<string>() { "New Control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WF Issue";
+        taskDetail.Id = "1254";
+        taskDetail.Description = "HorizontalAlignment for tooltip is not working";
+        taskDetail.Category = "Review";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle5.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+        return taskDetails;
+    }
+
+    #endregion
+}
 
 {% endhighlight %}
 
-### Bind Data to the Kanban Control
+### Bind item source for Kanban
 
-To bind a data source to the `SfKanban` control, set the `ItemsSource` property as demonstrated in the example below. This property connects the collection of `KanbanModel` objects to the Kanban board, enabling the display of tasks.
+To populate the Kanban card items, utilize the `ItemsSource` property of SfKanban.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4 8" %}
 
 <Grid>
-    <kanban:SfKanban x:Name="sfKanban"
-                     ItemsSource="{Binding TaskDetails}"/>
     <Grid.DataContext>
-        <local:GettingStartedViewModel/>
+        <local:ViewModel/>
     </Grid.DataContext>
+
+    <kanban:SfKanban x:Name="kanban"
+                     ItemsSource="{Binding TaskDetails}"/>
 </Grid>
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
-this.sfKanban.ItemsSource = new GettingStartedViewModel().TaskDetails;
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Define columns
+### Automatically generating columns in the Kanban control
 
-To configure columns in the `SfKanban` control, you must manually define them by adding `KanbanColumn` objects to the `Columns` collection property of SfKanban.
+To automatically generate columns in the Kanban control, you can set the `AutoGenerateColumns` property to `true`. When enabled, the columns are generated dynamically based on the `Category` property of KanbanModel, creating a column for each distinct value in the `ItemsSource`.
 
-The `ItemsSource` bound to the Kanban control will populate the respective columns based on the `Categories` property in KanbanColumn.
+{% tabs %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
+
+<kanban:SfKanban x:Name="kanban"
+                 ItemsSource="{Binding TaskDetails}"
+                 AutoGenerateColumns="True">
+</kanban:SfKanban>
+
+{% endhighlight %}
+
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
+this.kanban.AutoGenerateColumns = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Manually defining columns in the Kanban control
+
+You can manually define columns in the Kanban control by adding `KanbanColumn` objects to the `Columns` collection property of SfKanban. The `ItemsSource` bound to the Kanban control will populate the respective columns based on the `Categories` property in `KanbanColumn`.
 
 The following code example illustrates how this can be done.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4 5 6 7" %}
 
-<kanban:SfKanban x:Name="sfKanban"
+<kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}"
                  AutoGenerateColumns="False">
     <kanban:KanbanColumn Categories="Open" HeaderText="To Do"/>
@@ -218,19 +246,19 @@ The following code example illustrates how this can be done.
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3 5 6 7" %}
 
-this.sfKanban.ItemsSource = new GettingStartedViewModel().TaskDetails;
-this.sfKanban.AutoGenerateColumns = false;
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
+this.kanban.AutoGenerateColumns = false;
 
-sfKanban.Columns.Add(new KanbanColumn() { Categories = "Open", HeaderText = "To Do", });
-sfKanban.Columns.Add(new KanbanColumn() { Categories = "In Progress", HeaderText = "Progress", });
-sfKanban.Columns.Add(new KanbanColumn() { Categories = "Review,Closed", HeaderText = "Done", });
+kanban.Columns.Add(new KanbanColumn() { Categories = "Open", HeaderText = "To Do", });
+kanban.Columns.Add(new KanbanColumn() { Categories = "In Progress", HeaderText = "Progress", });
+kanban.Columns.Add(new KanbanColumn() { Categories = "Review,Closed", HeaderText = "Done", });
 
 {% endhighlight %}
 {% endtabs %}
 
-Alternatively, you can set the `AutoGenerateColumns` property to `true` to automatically create columns without manually defining them. When enabled, the columns are generated dynamically based on the `Category` property of KanbanModel, creating a column for each distinct value in the `ItemsSource`.
+N> When manually defining columns, ensure the `AutoGenerateColumns` property of `SfKanban` is set to `false`.
 
 ## Theme
 
@@ -238,4 +266,6 @@ The WinUI Kanban supports light and dark themes, automatically adjusting to the 
 
 Refer to the following link for guidance on applying themes: [Themes for Syncfusion WinUI controls](https://help.syncfusion.com/winui/common/themes)
 
-You can find the kanban keys for both themes here.
+N> You can refer to our `WinUI Kanban` feature tour page for its groundbreaking feature representations. You can also explore our `WinUI Kanban Examples` that shows you how to render the Kanban in WinUI.
+
+Also, you can find the Kanban keys for the Light, Dark, and High Contrast themes here.
