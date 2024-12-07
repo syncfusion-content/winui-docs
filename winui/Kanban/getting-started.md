@@ -24,7 +24,7 @@ This section provides a quick overview of how to get started with the WinUI Kanb
 {% capture codesnippet1 %}
 {% tabs %}
 
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 5" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3 5" %}
 
 <Window 
     ...
@@ -35,7 +35,8 @@ This section provides a quick overview of how to get started with the WinUI Kanb
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1 9 10" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="1 9 10" %}
+
 using Syncfusion.UI.Xaml.Kanban;
 . . .
 
@@ -184,20 +185,18 @@ To populate the Kanban card items, utilize the `ItemsSource` property of SfKanba
 
 {% tabs %}
 
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4 8" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
 
-<Grid>
-    <Grid.DataContext>
+<kanban:SfKanban x:Name="kanban"
+                 ItemsSource="{Binding TaskDetails}">
+    <kanban:SfKanban.DataContext>
         <local:ViewModel/>
-    </Grid.DataContext>
-
-    <kanban:SfKanban x:Name="kanban"
-                     ItemsSource="{Binding TaskDetails}"/>
-</Grid>
+    </kanban:SfKanban.DataContext>
+</kanban:SfKanban>
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
@@ -210,16 +209,19 @@ this.kanban.ItemsSource = new ViewModel().TaskDetails;
 To automatically generate columns in the Kanban control, you can set the `AutoGenerateColumns` property to `true`. When enabled, the columns are generated dynamically based on the `Category` property of KanbanModel, creating a column for each distinct value in the `ItemsSource`.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
 <kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}"
                  AutoGenerateColumns="True">
+    <kanban:SfKanban.DataContext>
+        <local:ViewModel/>
+    </kanban:SfKanban.DataContext>
 </kanban:SfKanban>
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.AutoGenerateColumns = true;
@@ -234,7 +236,7 @@ You can manually define columns in the Kanban control by adding `KanbanColumn` o
 The following code example illustrates how this can be done.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4 5 6 7" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3 4 5 6" %}
 
 <kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}"
@@ -246,14 +248,14 @@ The following code example illustrates how this can be done.
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3 5 6 7" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines=" 2 4 5 6" %}
 
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.AutoGenerateColumns = false;
 
-kanban.Columns.Add(new KanbanColumn() { Categories = "Open", HeaderText = "To Do", });
-kanban.Columns.Add(new KanbanColumn() { Categories = "In Progress", HeaderText = "Progress", });
-kanban.Columns.Add(new KanbanColumn() { Categories = "Review,Closed", HeaderText = "Done", });
+this.kanban.Columns.Add(new KanbanColumn() { Categories = "Open", HeaderText = "To Do", });
+this.kanban.Columns.Add(new KanbanColumn() { Categories = "In Progress", HeaderText = "Progress", });
+this.kanban.Columns.Add(new KanbanColumn() { Categories = "Review,Closed", HeaderText = "Done", });
 
 {% endhighlight %}
 {% endtabs %}
