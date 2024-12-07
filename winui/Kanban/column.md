@@ -29,7 +29,7 @@ Columns are smartly sized by default to ensure optimal arrangement and readabili
 
 {% endhighlight %}
 
-{% highlight C# tabtitle="MainWindow.xaml.cs" %} 
+{% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
 this.kanban.MinimumColumnWidth = 300;
 this.kanban.MaximumColumnWidth = 350;
@@ -52,7 +52,7 @@ You can also define the exact width for the columns using `ColumnWidth` property
 
 {% endhighlight %}
 
-{% highlight C# tabtitle="MainWindow.xaml.cs" %} 
+{% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
 this.kanban.ColumnWidth = 400;
 
@@ -102,7 +102,7 @@ You can set the header text for a column using the `HeaderText` property, which 
 
 {% endhighlight %}
 
-{% highlight C# tabtitle="MainWindow.xaml.cs" %} 
+{% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
 this.kanban.Columns.Add(new KanbanColumn() { Categories = "Open", HeaderText = "To Do" });
 
@@ -111,7 +111,7 @@ this.kanban.Columns.Add(new KanbanColumn() { Categories = "Open", HeaderText = "
 
 ### Customizing column header template
 
-To replace the UI of the header, you can use the `ColumnHeaderTemplate` of the `SfKanabn`. The following code example illustrates how this can be done.
+To replace the UI of the header, you can use the `ColumnHeaderTemplate` of the `SfKanban`. The following code example illustrates how this can be done.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
@@ -144,7 +144,7 @@ To expand or collapse a column programmatically, use the `KanbanColumn.IsExpande
 
 {% endhighlight %}
 
-{% highlight C# tabtitle="MainWindow.xaml.cs" %} 
+{% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
 this.kanban.Columns.Add(new KanbanColumn() { Categories = "Open", HeaderText = "To Do", IsExpanded = false });
 
@@ -162,7 +162,7 @@ The WinUI Kanban Control allows you to enable or disable the drag-and-drop funct
 
 {% endhighlight %}
 
-{% highlight C# tabtitle="MainWindow.xaml.cs" %} 
+{% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
 this.kanban.Columns.Add(new KanbanColumn() { Categories = "Open", HeaderText = "To Do", AllowDrag = false, AllowDrop = false });
 
