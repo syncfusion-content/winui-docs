@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Keyboard support in WinUI ComboBox control | Syncfusion
-description: Learn here all about Keyboard support in Syncfusion WinUI ComboBox (multi-select ComboBox) control and more.
+title: Keyboard support in WinUI ComboBox control | Syncfusion®
+description: Learn here all about Keyboard support in Syncfusion® WinUI ComboBox (multi-select ComboBox) control and more.
 platform: winui
 control: SfComboBox
 documentation: ug
