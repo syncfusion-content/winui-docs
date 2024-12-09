@@ -13,7 +13,7 @@ This section provides a quick overview of how to get started with the WinUI Kanb
 
 ## Creating an application with WinUI Kanban
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
+1. Create a [WinUI 3 desktop app for C# and .NET 6](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 
 2. Add reference to the `Syncfusion.Kanban.WinUI` NuGet.
 
@@ -24,9 +24,9 @@ This section provides a quick overview of how to get started with the WinUI Kanb
 {% capture codesnippet1 %}
 {% tabs %}
 
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3 5" %}
+{% highlight XAML hl_lines="3 5" %}
 
-<Window 
+<Window
     ...
     xmlns:kanban="using:Syncfusion.UI.Xaml.Kanban">
 
@@ -35,7 +35,7 @@ This section provides a quick overview of how to get started with the WinUI Kanb
 
 {% endhighlight %}
 
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="1 9 10" %}
+{% highlight C# hl_lines="1 9 10" %}
 
 using Syncfusion.UI.Xaml.Kanban;
 . . .
@@ -57,16 +57,16 @@ public sealed partial class MainWindow : Window
 
 ## Populate WinUI Kanban item source
 
-Here are the steps to render kanban card items using the WinUI Kanban control with the respective `KanbanModel` class:
+Here are the steps to render kanban card items using the WinUI Kanban control with the respective `KanbanModel` class.
 
-* Create the ViewModel.
+* Create view model.
 * Bind the item source for Kanban.
 
-### Define the view model
+### Create view model
 
 Create a view model class to set values for the properties listed in the `KanbanModel` class as shown in the following example code. Each `KanbanModel` instance represents a card in the Kanban control.
 
-{% highlight c# %}
+{% highlight c# tabtitle="ViewModel.cs" %}
    
 public class ViewModel
 {
@@ -181,11 +181,11 @@ public class ViewModel
 
 ### Bind item source for Kanban
 
-To populate the Kanban card items, utilize the `ItemsSource` property of SfKanban.
+To populate the kanban card items, utilize the `ItemsSource` property of `SfKanban`.
 
 {% tabs %}
 
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight XAML hl_lines="2" %}
 
 <kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}">
@@ -196,7 +196,7 @@ To populate the Kanban card items, utilize the `ItemsSource` property of SfKanba
 
 {% endhighlight %}
 
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# %}
 
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
@@ -204,58 +204,33 @@ this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
 {% endtabs %}
 
-### Automatically generating columns in the Kanban control
+### Defining columns
 
-To automatically generate columns in the Kanban control, you can set the `AutoGenerateColumns` property to `true`. When enabled, the columns are generated dynamically based on the `Category` property of KanbanModel, creating a column for each distinct value in the `ItemsSource`.
+The columns are generated automatically based on the different values of the `Category` in the `KanbanModel` class from the `ItemsSource`. However, you can manually define the columns by setting the `AutoGenerateColumns` property to `false` and adding `KanbanColumn` instances to the `Columns` property of `SfKanban`. You can define the column categories using the `Categories` property of `KanbanColumn`, and the cards will be added to their respective columns.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight XAML hl_lines="2 4 5 6 7" %}
 
 <kanban:SfKanban x:Name="kanban"
-                 ItemsSource="{Binding TaskDetails}"
-                 AutoGenerateColumns="True">
-    <kanban:SfKanban.DataContext>
-        <local:ViewModel/>
-    </kanban:SfKanban.DataContext>
+                 AutoGenerateColumns="False" 
+                 ItemsSource="{Binding TaskDetails}">
+        <kanban:KanbanColumn HeaderText="To Do" Categories="Open" />
+        <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
+        <kanban:KanbanColumn HeaderText="Code Review" Categories="Code Review" />
+        <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
 </kanban:SfKanban>
 
 {% endhighlight %}
 
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# hl_lines="1 4 5 6 7" %}
 
-this.kanban.ItemsSource = new ViewModel().TaskDetails;
-this.kanban.AutoGenerateColumns = true;
-
-{% endhighlight %}
-{% endtabs %}
-
-### Manually defining columns in the Kanban control
-
-You can manually define columns in the Kanban control by adding `KanbanColumn` objects to the `Columns` collection property of SfKanban. The `ItemsSource` bound to the Kanban control will populate the respective columns based on the `Categories` property in `KanbanColumn`.
-
-The following code example illustrates how this can be done.
-
-{% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3 4 5 6" %}
-
-<kanban:SfKanban x:Name="kanban"
-                 ItemsSource="{Binding TaskDetails}"
-                 AutoGenerateColumns="False">
-    <kanban:KanbanColumn Categories="Open" HeaderText="To Do"/>
-    <kanban:KanbanColumn Categories="In Progress" HeaderText="Progress"/>
-    <kanban:KanbanColumn Categories="Review,Closed" HeaderText="Done"/>
-</kanban:SfKanban>
-
-{% endhighlight %}
-
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines=" 2 4 5 6" %}
-
-this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.AutoGenerateColumns = false;
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
-this.kanban.Columns.Add(new KanbanColumn() { Categories = "Open", HeaderText = "To Do", });
-this.kanban.Columns.Add(new KanbanColumn() { Categories = "In Progress", HeaderText = "Progress", });
-this.kanban.Columns.Add(new KanbanColumn() { Categories = "Review,Closed", HeaderText = "Done", });
+this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "To Do", Categories = "Open" });
+this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "In Progress", Categories = "In Progress" });
+this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Code Review", Categories = "Code Review" });
+this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "Done" });
 
 {% endhighlight %}
 {% endtabs %}
@@ -269,5 +244,3 @@ The WinUI Kanban supports light and dark themes, automatically adjusting to the 
 Refer to the following link for guidance on applying themes: [Themes for Syncfusion WinUI controls](https://help.syncfusion.com/winui/common/themes)
 
 N> You can refer to our `WinUI Kanban` feature tour page for its groundbreaking feature representations. You can also explore our `WinUI Kanban Examples` that shows you how to render the Kanban in WinUI.
-
-Also, you can find the Kanban keys for the Light, Dark, and High Contrast themes here.
