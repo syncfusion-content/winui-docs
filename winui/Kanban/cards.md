@@ -13,14 +13,14 @@ Cards in the WinUI Kanban Control provide a visual representation of tasks as th
 
 The appearance and content of the cards can be customized using the below properties of `KanbanModel`.
 
-* Title - Gets or sets the string value used to display the header of a card in the KanbanModel.
-* Description - Gets or sets the string value used to display the description of a card in the KanbanModel.
-* Category - Gets or sets the category associated with the card in the KanbanModel.
-* Assignee - Gets or sets the assignee associated with the card in the KanbanModel.
-* Image - Specifies the image source representing the card's assignee or related entity.
-* IndicatorColorKey - Provides unique key with each Kanban card to dynamically assign indicator colors. It is often used in scenarios where cards are categorized or prioritized by color, based on specific key values.
-* Id - Used to uniquely identify each Kanban card, allowing for efficient management, tracking, and updates of individual cards within Kanban control.
-* Tags - Used to assign multiple tags to a kanban card, which can be used for categorization, filtering, or additional metadata.
+* `Title` - Gets or sets the string value used to display the header of a card in the KanbanModel.
+* `Description` - Gets or sets the string value used to display the description of a card in the KanbanModel.
+* `Category` - Gets or sets the category associated with the card in the KanbanModel.
+* `Assignee` - Gets or sets the assignee associated with the card in the KanbanModel.
+* `Image` - Specifies the image source representing the card's assignee or related entity.
+* `IndicatorColorKey` - Provides unique key with each Kanban card to dynamically assign indicator colors. It is often used in scenarios where cards are categorized or prioritized by color, based on specific key values.
+* `Id` - Used to uniquely identify each Kanban card, allowing for efficient management, tracking, and updates of individual cards within Kanban control.
+* `Tags` - Used to assign multiple tags to a kanban card, which can be used for categorization, filtering, or additional metadata.
 
 {% highlight C# %}
 
@@ -41,7 +41,7 @@ taskDetail.Image = new Image
 Following code snippet is used to define the colors for each key.
 
 {% tabs %}
-{% highlight xaml hl_lines="6 7 8 9 10" %}
+{% highlight XAML hl_lines="6 7 8 9 10" %}
 
 <kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}">
@@ -102,7 +102,7 @@ The following code snippet demonstrates how to use the `CardTemplate` property t
 To dynamically apply different templates to Kanban cards based on specific conditions, use the `CardTemplateSelector` property. This allows you to define multiple templates and choose one at runtime based on card data.
 
 {% tabs %}
-{% highlight xaml hl_lines="28" %}
+{% highlight XAML hl_lines="28" %}
 
 <Grid>
     <Grid.DataContext>
@@ -126,8 +126,8 @@ To dynamically apply different templates to Kanban cards based on specific condi
             </Border>
         </DataTemplate>
         <local:KanbanCardTemplateSelector x:Key="cardTemplateSelector"
-                                    HighPriorityTemplate="{StaticResource highPriorityTemplate}"
-                                    DefaultTemplate="{StaticResource defaultTemplate}"/>
+                                          HighPriorityTemplate="{StaticResource highPriorityTemplate}"
+                                          DefaultTemplate="{StaticResource defaultTemplate}"/>
     </Grid.Resources>
 
     <kanban:SfKanban x:Name="kanban" 
