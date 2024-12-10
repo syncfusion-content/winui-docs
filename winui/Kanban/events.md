@@ -17,7 +17,7 @@ The `CardDragStarting` event occurs when the card start to drag. We can get the 
 * Card - Returns the dragging card in the kanban.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight XAML hl_lines="2" %}
 
 <kanban:SfKanban x:Name="kanban"
                  CardDragStarting="OnKanbanCardDragStarting"
@@ -29,7 +29,7 @@ The `CardDragStarting` event occurs when the card start to drag. We can get the 
 
 {% endhighlight %}
 
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
+{% highlight C# hl_lines="1" %}
 
 this.kanban.CardDragStarting += this.OnKanbanCardDragStarting;
 
@@ -52,7 +52,7 @@ The `CardDragOver` event occurs when card drag started in a column. We can get t
 * CurrentRowIndex - Returns the current row index of the swimlane that contains the card. The current row index is relevant only for the swimlane column and is used to get the swimlane's index.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight XAML hl_lines="2" %}
 
 <kanban:SfKanban x:Name="kanban"
                  CardDragOver="OnKanbanCardDragOver"
@@ -64,7 +64,7 @@ The `CardDragOver` event occurs when card drag started in a column. We can get t
 
 {% endhighlight %}
 
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
+{% highlight C# hl_lines="1" %}
 
 this.kanban.CardDragOver += this.OnKanbanCardDragOver;
 
@@ -94,7 +94,7 @@ The `CardDrop` event occurs when leaving the dragging card from one column. We c
 * TargetRowIndex - Returns the integer value indicating the target row index of the swimlane where the card is going to be inserted. It is applicable only for the swimlane column.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight XAML hl_lines="2" %}
 
 <kanban:SfKanban x:Name="kanban"
                  CardDrop="OnKanbanCardDrop"
@@ -106,7 +106,7 @@ The `CardDrop` event occurs when leaving the dragging card from one column. We c
 
 {% endhighlight %}
 
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
+{% highlight C# hl_lines="1" %}
 
 this.kanban.CardDrop += this.OnKanbanCardDrop;
 
@@ -135,7 +135,7 @@ The `CardTapped` event occurs when the card is tapped. We can get the below deta
 * SelectedCardIndex - Returns the index position of the tapped card within its column.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight XAML hl_lines="2" %}
 
 <kanban:SfKanban x:Name="kanban"
                  CardTapped="OnKanbanCardTapped"
@@ -147,7 +147,7 @@ The `CardTapped` event occurs when the card is tapped. We can get the below deta
 
 {% endhighlight %}
 
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
+{% highlight C# hl_lines="1" %}
 
 this.kanban.CardTapped += this.OnKanbanCardTapped;
 
@@ -166,7 +166,7 @@ private void OnKanbanCardTapped(object sender, KanbanCardTappedEventArgs e)
 The `CardTappedCommand` property is used to associate a command with an instance of SfKanban. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight XAML hl_lines="2" %}
 
 <kanban:SfKanban x:Name="kanban"
                  CardTappedCommand="KanbanCardTappedCommand"
@@ -319,7 +319,7 @@ The `CardTappedCommand` property is used to associate a command with an instance
 
 {% endhighlight %}
 
-{% highlight C# tabtitle="RelayCommand"  %}
+{% highlight C# tabtitle="RelayCommand" %}
 
 public class RelayCommand : ICommand
 {
@@ -355,5 +355,4 @@ public class RelayCommand : ICommand
 }
 
 {% endhighlight %}
-
 {% endtabs %}
