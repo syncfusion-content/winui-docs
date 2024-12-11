@@ -260,23 +260,37 @@ this.Schedule.MonthViewSettings.TrailingDaysVisibility = Visibility.Collapsed;
 
 ![customize-leading-and-trailing-days-visibility-in-winui-scheduler-month-view](Month-View_Imges/customize-leading-and-trailing-days-visibility-in-winui-scheduler.png)
 
-## Customizing the Number of Visible Weeks
-The number of week visible in the month view can be changed by setting the NumberOfVisibleWeeks property of the MonthViewSettings in SfScheduler. The default value is 6, and the valid range is from 1 to 6. Even if leading and trailing days are hidden, they will appear when changing the number of visible weeks, as no additional days exist during this change.
+## Customize number of month rows
+
+The number of week visible in the month view can be changed by setting the NumberOfVisibleWeeks property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html) in the Scheduler. By default, 6 weeks are visible.
 
 {% tabs %}
-{% highlight xaml %}
+
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
+
 <scheduler:SfScheduler x:Name="Schedule" 
                      ViewType="Month">
     <scheduler:SfScheduler.MonthViewSettings>
         <scheduler:MonthViewSetting NumberOfVisibleWeeks="3"/>
     </scheduler:SfScheduler.MonthViewSettings>
 </scheduler:SfScheduler>
+
 {% endhighlight %}
-{% highlight c#%}
+
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+
 this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.MonthViewSettings.NumberOfVisibleWeeks = 3;
+
 {% endhighlight %}
+
 {% endtabs %}
+
+N>
+* The week number range is limited to values between 1 and 6. Any value outside this range will cause the NumberOfVisibleWeeks to default to 6.
+* The NumberOfVisibleWeeks property dynamically controls the number of weeks displayed in the scheduler's month view.
+* The [DisplayDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_DisplayDate) property defines the first row of dates shown in the scheduler's month view.
+* The [LeadingDaysVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_LeadingDaysVisibility) and [TrailingDaysVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_TrailingDaysVisibility) properties are applicable only when the number of visible weeks is set to 6.
 
 ## Blackout dates
 
