@@ -266,7 +266,7 @@ The number of week visible in the month view can be changed by setting the Numbe
 
 {% tabs %}
 
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
 
 <scheduler:SfScheduler x:Name="Schedule" 
                      ViewType="Month">
@@ -277,7 +277,7 @@ The number of week visible in the month view can be changed by setting the Numbe
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.MonthViewSettings.NumberOfVisibleWeeks = 3;
