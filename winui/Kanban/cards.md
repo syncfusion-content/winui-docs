@@ -216,6 +216,12 @@ The following code snippet demonstrates how to use the `CardTemplate` property t
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
+
+{% endhighlight %}
+
 {% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
