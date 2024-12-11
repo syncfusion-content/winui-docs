@@ -7,38 +7,40 @@ control: SfKanban
 documentation: ug
 ---
 
-# Cards in WinUI Kanban Control
+# Cards in WinUI Kanban (SfKanban) control
 
-Cards in the WinUI Kanban Control provide a visual representation of tasks as they move through different stages of a workflow. Each card corresponds to a task and displays key information, such as the title, description, tags, and status, helping users track progress and manage tasks effectively.
+The Kanban cards visually represent tasks and their progression through various stages. The default UI of each card can be customized using the following properties of the KanbanModel.
 
-The appearance and content of the cards can be customized using the below properties of `KanbanModel`.
+* `Title` - Sets the title of the card.
+* `Description` - Sets the description text of the card.
+* `Category` - Sets the category of the card, determining which column it will be placed in.
+* `Assignee` - Defines the assignee associated with the card in the `KanbanModel`.
+* `Image` - Sets the image for the card, which is displayed on the right side in the default card template.
+* `IndicatorColorKey` - Specifies the indicator color for the card, commonly used for categorize or prioritize card based on color key values.
+* `Id` - Sets the unique ID of the card.
+* `Tags` - Specifies the tags for the card, displayed at the bottom of the default card template.
 
-* `Title` - Gets or sets the string value used to display the header of a card in the KanbanModel.
-* `Description` - Gets or sets the string value used to display the description of a card in the KanbanModel.
-* `Category` - Gets or sets the category associated with the card in the KanbanModel.
-* `Assignee` - Gets or sets the assignee associated with the card in the KanbanModel.
-* `Image` - Specifies the image source representing the card's assignee or related entity.
-* `IndicatorColorKey` - Provides unique key with each Kanban card to dynamically assign indicator colors. It is often used in scenarios where cards are categorized or prioritized by color, based on specific key values.
-* `Id` - Used to uniquely identify each Kanban card, allowing for efficient management, tracking, and updates of individual cards within Kanban control.
-* `Tags` - Used to assign multiple tags to a kanban card, which can be used for categorization, filtering, or additional metadata.
+Below is an example that shows how to define values in the `KanbanModel`.
 
 {% highlight C# %}
 
-KanbanModel taskDetail = new KanbanModel();
-taskDetail.Title = "UWP Issue";
-taskDetail.Id = "651";
-taskDetail.Description = "Crosshair label template not visible in UWP";
-taskDetail.Category = "Open";
-taskDetail.IndicatorColorKey = "High";
-taskDetail.Tags = new List<string>() { "Bug Fixing" };
-taskDetail.Image = new Image
+KanbanModel taskDetail = new KanbanModel()
 {
-    Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+    Title = "UWP Issue",
+    Id = "651",
+    Description = "Crosshair label template not visible in UWP",
+    Category = "Open",
+    IndicatorColorKey = "High",
+    Tags = new List() { "Bug Fixing" },
+    Image = new Image
+    {
+        Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+    }
 };
 
 {% endhighlight %}
 
-Following code snippet is used to define the colors for each key.
+The following code snippet defines the colors for each key.
 
 {% tabs %}
 {% highlight XAML hl_lines="6 7 8 9 10" %}
@@ -57,25 +59,142 @@ Following code snippet is used to define the colors for each key.
 
 {% endhighlight %}
 
-{% highlight C# hl_lines="5" %}
+{% highlight C# hl_lines="3 4 5 6" %}
 
-List<KanbanColorMapping> indicatorColorPalette = new List<KanbanColorMapping>();
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
+List<KanbanColorMapping> indicatorColorPalette = new List();
 indicatorColorPalette.Add(new KanbanColorMapping() { Key="Low", Color = Colors.Blue });
 indicatorColorPalette.Add(new KanbanColorMapping() { Key= "Normal", Color = Colors.Green });
 indicatorColorPalette.Add(new KanbanColorMapping() { Key= "High", Color = Colors.Red });
 this.kanban.IndicatorColorPalette = indicatorColorPalette;
 
 {% endhighlight %}
+
+{% highlight C# tabtitle="ViewModel.cs" %}
+
+public class ViewModel
+{
+    #region Properties
+
+    /// <summary>
+    /// Gets or sets the collection of <see cref="KanbanModel"/> objects representing tasks in various stages.
+    /// </summary>
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    #endregion
+
+    #region Constructor
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ViewModel"/> class.
+    /// </summary>
+    public ViewModel()
+    {
+        this.TaskDetails = this.GetTaskDetails();
+    }
+
+    #endregion
+
+    #region Private methods
+
+    /// <summary>
+    /// Method to get the kanban model collections.
+    /// </summary>
+    /// <returns>The kanban model collections.</returns>
+    private ObservableCollection<KanbanModel> GetTaskDetails()
+    {
+        var taskDetails = new ObservableCollection<KanbanModel>();
+        string path = @"ms-appx:///";
+
+        KanbanModel taskDetail = new KanbanModel();
+        taskDetail.Title = "UWP Issue";
+        taskDetail.Id = "651";
+        taskDetail.Description = "Crosshair label template not visible in UWP";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WinUI Issue";
+        taskDetail.Id = "646";
+        taskDetail.Description = "AxisLabel cropped when rotating the axis label";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Kanban Feature";
+        taskDetail.Id = "25678";
+        taskDetail.Description = "Provide drag and drop support";
+        taskDetail.Category = "In Progress";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "New control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle3.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "New Feature";
+        taskDetail.Id = "29574";
+        taskDetail.Description = "Dragging events support for Kanban";
+        taskDetail.Category = "Closed";
+        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Tags = new List<string>() { "New Control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WF Issue";
+        taskDetail.Id = "1254";
+        taskDetail.Description = "HorizontalAlignment for tooltip is not working";
+        taskDetail.Category = "Review";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle5.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+        return taskDetails;
+    }
+
+    #endregion
+}
+
+{% endhighlight %}
 {% endtabs %}
 
-## Customizing kanban cards
+## Card appearance customization
 
-### Customize kanban cards using template
+The card appearance customization can be achieved by using the `CardTemplate` and `CardTemplateSelector` properties in the SfKanban.
 
-The appearance of Kanban cards can be fully customized using the `CardTemplate` property of the `SfKanban` control. By setting this property, you can define a custom design for the entire card.
+### Customize card appearance using DataTemplate
 
-The following code snippet demonstrates how to use the `CardTemplate` property to apply a custom template to Kanban cards:
+You can replace the entire card template with your own design and customize its appearance using the `CardTemplate` properties in `SfKanban`.
 
+The following code snippet demonstrates how to use the `CardTemplate` property to apply a custom template to kanban cards.
+
+{% tabs %}
 {% highlight xaml %}
 
 <kanban:SfKanban x:Name="kanban"
@@ -97,9 +216,123 @@ The following code snippet demonstrates how to use the `CardTemplate` property t
 
 {% endhighlight %}
 
-### Customize kanban cards using template selector
+{% highlight C# tabtitle="ViewModel.cs" %}
 
-To dynamically apply different templates to Kanban cards based on specific conditions, use the `CardTemplateSelector` property. This allows you to define multiple templates and choose one at runtime based on card data.
+public class ViewModel
+{
+    #region Properties
+
+    /// <summary>
+    /// Gets or sets the collection of <see cref="KanbanModel"/> objects representing tasks in various stages.
+    /// </summary>
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    #endregion
+
+    #region Constructor
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ViewModel"/> class.
+    /// </summary>
+    public ViewModel()
+    {
+        this.TaskDetails = this.GetTaskDetails();
+    }
+
+    #endregion
+
+    #region Private methods
+
+    /// <summary>
+    /// Method to get the kanban model collections.
+    /// </summary>
+    /// <returns>The kanban model collections.</returns>
+    private ObservableCollection<KanbanModel> GetTaskDetails()
+    {
+        var taskDetails = new ObservableCollection<KanbanModel>();
+        string path = @"ms-appx:///";
+
+        KanbanModel taskDetail = new KanbanModel();
+        taskDetail.Title = "UWP Issue";
+        taskDetail.Id = "651";
+        taskDetail.Description = "Crosshair label template not visible in UWP";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WinUI Issue";
+        taskDetail.Id = "646";
+        taskDetail.Description = "AxisLabel cropped when rotating the axis label";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Kanban Feature";
+        taskDetail.Id = "25678";
+        taskDetail.Description = "Provide drag and drop support";
+        taskDetail.Category = "In Progress";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "New control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle3.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "New Feature";
+        taskDetail.Id = "29574";
+        taskDetail.Description = "Dragging events support for Kanban";
+        taskDetail.Category = "Closed";
+        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Tags = new List<string>() { "New Control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WF Issue";
+        taskDetail.Id = "1254";
+        taskDetail.Description = "HorizontalAlignment for tooltip is not working";
+        taskDetail.Category = "Review";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle5.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+        return taskDetails;
+    }
+
+    #endregion
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Customize card appearance using DataTemplateSelector
+
+You can customize the card appearance by using the CardTemplateSelector property in the SfKanban. The DataTemplateSelector can choose a DataTemplate at runtime based on the value of a data-bound to kanban card appearance by using the CardTemplateSelector. It allows you to choose a different data template for each card, as well as to customize the appearance of a particular card based on certain conditions.
 
 {% tabs %}
 {% highlight XAML hl_lines="28" %}
@@ -158,4 +391,120 @@ public class KanbanCardTemplateSelector : DataTemplateSelector
 }
 
 {% endhighlight %}
+
+{% highlight C# tabtitle="ViewModel.cs" %}
+
+public class ViewModel
+{
+    #region Properties
+
+    /// <summary>
+    /// Gets or sets the collection of <see cref="KanbanModel"/> objects representing tasks in various stages.
+    /// </summary>
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    #endregion
+
+    #region Constructor
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ViewModel"/> class.
+    /// </summary>
+    public ViewModel()
+    {
+        this.TaskDetails = this.GetTaskDetails();
+    }
+
+    #endregion
+
+    #region Private methods
+
+    /// <summary>
+    /// Method to get the kanban model collections.
+    /// </summary>
+    /// <returns>The kanban model collections.</returns>
+    private ObservableCollection<KanbanModel> GetTaskDetails()
+    {
+        var taskDetails = new ObservableCollection<KanbanModel>();
+        string path = @"ms-appx:///";
+
+        KanbanModel taskDetail = new KanbanModel();
+        taskDetail.Title = "UWP Issue";
+        taskDetail.Id = "651";
+        taskDetail.Description = "Crosshair label template not visible in UWP";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WinUI Issue";
+        taskDetail.Id = "646";
+        taskDetail.Description = "AxisLabel cropped when rotating the axis label";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Kanban Feature";
+        taskDetail.Id = "25678";
+        taskDetail.Description = "Provide drag and drop support";
+        taskDetail.Category = "In Progress";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "New control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle3.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "New Feature";
+        taskDetail.Id = "29574";
+        taskDetail.Description = "Dragging events support for Kanban";
+        taskDetail.Category = "Closed";
+        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Tags = new List<string>() { "New Control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WF Issue";
+        taskDetail.Id = "1254";
+        taskDetail.Description = "HorizontalAlignment for tooltip is not working";
+        taskDetail.Category = "Review";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle5.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+        return taskDetails;
+    }
+
+    #endregion
+}
+
+{% endhighlight %}
 {% endtabs %}
+
+N>
+The `DataContext` for both the `CardTemplate` and `CardTemplateSelector` properties in the `SfKanban` is set to KanbanModel.
