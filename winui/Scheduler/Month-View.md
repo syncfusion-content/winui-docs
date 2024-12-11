@@ -260,30 +260,27 @@ this.Schedule.MonthViewSettings.TrailingDaysVisibility = Visibility.Collapsed;
 
 ![customize-leading-and-trailing-days-visibility-in-winui-scheduler-month-view](Month-View_Imges/customize-leading-and-trailing-days-visibility-in-winui-scheduler.png)
 
-## Customize number of month rows
+## Customize the number of visible weeks
 
-The number of week visible in the month view can be changed by setting the `NumberOfVisibleWeeks` property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html) in the Scheduler. By default, 6 weeks are visible.
+The number of weeks visible in the month view can be changed by setting the `NumberOfVisibleWeeks` property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html) in the [SfScheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html). By default, 6 weeks are visible.
 
 {% tabs %}
-
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
 
 <scheduler:SfScheduler x:Name="Schedule" 
-                     ViewType="Month">
+                       ViewType="Month">
     <scheduler:SfScheduler.MonthViewSettings>
         <scheduler:MonthViewSetting NumberOfVisibleWeeks="3"/>
     </scheduler:SfScheduler.MonthViewSettings>
 </scheduler:SfScheduler>
 
 {% endhighlight %}
-
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.MonthViewSettings.NumberOfVisibleWeeks = 3;
 
 {% endhighlight %}
-
 {% endtabs %}
 
 N>
