@@ -7,16 +7,16 @@ control: SfKanban
 documentation: ug
 ---
 
-# Swim lanes in WinUI Kanban Control
+# Swimlane in WinUI Kanban (SfKanban) control
 
-The Swim lanes organize the Kanban board horizontally, allowing you to categorize cards by key attributes such as assignee, project, or task type.
+Swimlanes are horizontal categorizations of cards on the WinUI Kanban Board. It is used for grouping of cards, which brings transparency to the workflow process They allow you to categorize your workflow by projects, teams, users, or any other criteria you need.
 
-By default, swimlanes are categorized based on the `Assignee` property in the `KanbanModel` class. However, you can customize the categorization by mapping the `SwimlaneKey` property to the appropriate property name in `KanbanModel`.
+By default, swimlanes are categorized based on the `Assignee` values in the `KanbanModel` class. You can also define category by mapping `SwimlaneKey` to appropriate property name in the defined `KanbanModel`.
 
-The following code example demonstrates how to group the underlying data collection using the `SwimlaneKey` property:
+The following code example demonstrates how to group the underlying data collection using the `SwimlaneKey` property.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight XAML hl_lines="2" %}
 
 <kanban:SfKanban x:Name="kanban"
                     ItemsSource="{Binding TaskDetails}"
@@ -28,13 +28,14 @@ The following code example demonstrates how to group the underlying data collect
 
 {% endhighlight %}
 
-{% highlight C# tabtitle="MainWindow.xaml.cs" %}
+{% highlight C# hl_lines="2" %}
 
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.SwimlaneKey = "IndicatorColorKey";
 
 {% endhighlight %}
 
-{% highlight C# tabtitle="ViewModel" %}
+{% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
@@ -162,19 +163,20 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-## Customize swim lane header
+## Customize swimlane header
 
-The WinUI Kanban control allows you to customize the appearance of swimlane headers using the SwimlaneHeaderTemplate property. This enables you to create a unique design for the header displayed at the start of each swimlane group.
+The WinUI Kanban control allows you to customize the appearance of swimlane headers using the `SwimlaneHeaderTemplate` property. This enables you to create a unique design for the header displayed at the beginning of each swimlane group.
 
-The following code example demonstrates how to customize a swimlane header:
+The following code example demonstrates how to customize a swimlane header.
 
-{% highlight XAML tabtitle="MainWindow.xaml" %}
+{% tabs %}
+{% highlight XAML hl_lines="4" %}
 
 <kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}"
                  SwimlaneKey="IndicatorColorKey">
     <kanban:SfKanban.SwimlaneHeaderTemplate>
-        <DataTemplate x:Name="swim">
+        <DataTemplate x:Name="swimlaneHeaderTemplate">
             <Grid>
                 <Border BorderBrush="Black" CornerRadius="5,5,5,5" Width="150" Margin="10,2,10,0" HorizontalAlignment="Left" >
                     <StackPanel Background="LightGray" x:Name="SwimlaneHeaderPanel" Orientation="Horizontal">
@@ -218,3 +220,140 @@ The following code example demonstrates how to customize a swimlane header:
 </kanban:SfKanban>
 
 {% endhighlight %}
+
+{% highlight C# %}
+
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
+this.kanban.SwimlaneKey = "IndicatorColorKey";
+
+{% endhighlight %}
+
+{% highlight C# tabtitle="ViewModel.cs" %}
+
+public class ViewModel
+{
+    #region Properties
+
+    /// <summary>
+    /// Gets or sets the collection of <see cref="KanbanModel"/> objects representing tasks in various stages.
+    /// </summary>
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    #endregion
+
+    #region Constructor
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ViewModel"/> class.
+    /// </summary>
+    public ViewModel()
+    {
+        this.TaskDetails = this.GetTaskDetails();
+    }
+
+    #endregion
+
+    #region Private methods
+
+    /// <summary>
+    /// Method to get the kanban model collections.
+    /// </summary>
+    /// <returns>The kanban model collections.</returns>
+    private ObservableCollection<KanbanModel> GetTaskDetails()
+    {
+        var taskDetails = new ObservableCollection<KanbanModel>();
+        string path = @"ms-appx:///";
+
+        KanbanModel taskDetail = new KanbanModel();
+        taskDetail.Title = "Customer meeting";
+        taskDetail.Id = "3";
+        taskDetail.Assignee = "Janet Leverling";
+        taskDetail.Description = "Arrange a web meeting with the customer to get new requirements.";
+        taskDetail.Category = "Backlog";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle1.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Edge browser issues";
+        taskDetail.Id = "4";
+        taskDetail.Assignee = "Janet Leverling";
+        taskDetail.Description = "Fix the issues reported in the IE browser.";
+        taskDetail.Category = "Review";
+        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle1.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Application performance";
+        taskDetail.Id = "2";
+        taskDetail.Assignee = "Andrew Fuller";
+        taskDetail.Description = "Improve application performance.";
+        taskDetail.Category = "Backlog";
+        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Analysis";
+        taskDetail.Id = "18";
+        taskDetail.Assignee = "Andrew Fuller";
+        taskDetail.Description = "Analyze SQL server 2008 connection.";
+        taskDetail.Category = "In Progress";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Responsive support";
+        taskDetail.Id = "14";
+        taskDetail.Assignee = "Laura Callahan";
+        taskDetail.Description = "Add responsive support to application.";
+        taskDetail.Category = "In Progress";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Filtering feature";
+        taskDetail.Id = "48";
+        taskDetail.Assignee = "Laura Callahan";
+        taskDetail.Description = "Check filtering validation.";
+        taskDetail.Category = "Testing";
+        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+        return taskDetails;
+    }
+    #endregion
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N>
+The `DataContext` for the `SwimlaneHeaderTemplate` property in `SfKanban` is set to the `KanbanModel`.
