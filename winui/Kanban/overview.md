@@ -11,7 +11,7 @@ documentation: ug
 
 The Syncfusion WinUI Kanban control provides an efficient way to visualize workflows at each stage of completion. It enables clear planning and offers a transparent view of work progress. With a range of essential features, SfKanban is ideal for monitoring tasks throughout the software development cycle.
 
-![Overview in WinUI Kanban control](overview-images/overview-in-winui-kanban-control.png)
+![overview-in-winui-kanban](images/overview/overview-in-winui-kanban.png)
 
 ## Key features
 
@@ -20,7 +20,7 @@ The Syncfusion WinUI Kanban control provides an efficient way to visualize workf
 * **Columns**: Organize work into columns for stages like to-do, in-progress, and completed.
 * **Swim lanes**: Organize tasks based on projects, teams, or custom criteria.
 
-![Swim lanes in WinUI Kanban control](overview-images/swim-lanes-in-winui-kanban-control.png)
+![swim-lanes-in-winui-kanban](images/overview/swim-lanes-in-winui-kanban.png)
 
 * **Interaction**: Includes card tapping, column expansion/collapse, and drag-and-drop.
 * **Events**: Triggered when cards are dragged, repositioned, or tapped.
