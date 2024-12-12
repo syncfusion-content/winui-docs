@@ -16,7 +16,7 @@ By default, swimlanes are categorized based on the `Assignee` values in the `Kan
 The following code example demonstrates how to group the underlying data collection using the `SwimlaneKey` property.
 
 {% tabs %}
-{% highlight XAML hl_lines="2" %}
+{% highlight XAML hl_lines="3" %}
 
 <kanban:SfKanban x:Name="kanban"
                     ItemsSource="{Binding TaskDetails}"
@@ -170,7 +170,7 @@ The WinUI Kanban control allows you to customize the appearance of swimlane head
 The following code example demonstrates how to customize a swimlane header.
 
 {% tabs %}
-{% highlight XAML hl_lines="4" %}
+{% highlight XAML hl_lines="4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42" %}
 
 <kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}"
