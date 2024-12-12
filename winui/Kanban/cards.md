@@ -26,16 +26,16 @@ Below is an example that shows how to define values in the `KanbanModel`.
 
 new KanbanModel()
 {
-Title = "UWP Issue",
-Id = "651",
-Description = "Crosshair label template not visible in UWP",
-Category = "Open",
-IndicatorColorKey = "High",
-Tags = new List() { "Bug Fixing" },
-Image = new Image
-{
-   Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
-}
+    Title = "UWP Issue",
+    Id = "651",
+    Description = "Crosshair label template not visible in UWP",
+    Category = "Open",
+    IndicatorColorKey = "High",
+    Tags = new List() { "Bug Fixing" },
+    Image = new Image
+    {
+        Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+    }
 };
 
 {% endhighlight %}
