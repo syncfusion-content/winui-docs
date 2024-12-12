@@ -1061,18 +1061,37 @@ public class ViewModel
 
 ### Placeholder in WinUI Kanban control
 
-The placeholders in WinUI Kanban control visually represents the position where a card will be placed within a Kanban column during a drag operation.
+The placeholders in the WinUI Kanban control provide a visual indication of the exact position where the card has been dragged and where it will be placed within a Kanban column during a drag-and-drop operation.
 
-The appearance of placeholders can be customized by assigning custom values to the Kanban placeholder keys.
+The appearance of drag-and-drop placeholders in the WinUI Kanban control can be customized by modifying the values of the predefined theme keys.
+
+#### Drag placeholder theme keys
+
+The following theme keys control the appearance of the drag placeholder:
+
+* SyncfusionKanbanPlaceholderBackground
+* SyncfusionKanbanPlaceholderBorderBrush
+* SyncfusionKanbanPlaceholderBorderThickness
+
+#### Drop placeholder theme keys
+
+The following theme keys control the appearance of the drop placeholder:
+
+* SyncfusionKanbanPlaceholderSelectedBackground
+* SyncfusionKanbanPlaceholderSelectedBorderBrush
+* SyncfusionKanbanPlaceholderSelectedBorderThickness
 
 {% tabs %}
-{% highlight XAML hl_lines="4 5 6" %}
+{% highlight XAML hl_lines="3 4 5 6 7 8" %}
 
 <Grid>
     <Grid.Resources>
-        <SolidColorBrush x:Key="SyncfusionKanbanPlaceholderSelectedBackground" Color="OrangeRed" />
-        <SolidColorBrush x:Key="SyncfusionKanbanPlaceholderSelectedBorderBrush" Color="DarkRed" />
-        <Thickness x:Key="SyncfusionKanbanPlaceholderSelectedBorderThickness">2</Thickness>
+            <SolidColorBrush x:Key="SyncfusionKanbanPlaceholderBackground" Color="LightBlue" />
+            <SolidColorBrush x:Key="SyncfusionKanbanPlaceholderBorderBrush" Color="DarkBlue" />
+            <Thickness x:Key="SyncfusionKanbanPlaceholderBorderThickness">2</Thickness>
+            <SolidColorBrush x:Key="SyncfusionKanbanPlaceholderSelectedBackground" Color="OrangeRed" />
+            <SolidColorBrush x:Key="SyncfusionKanbanPlaceholderSelectedBorderBrush" Color="DarkRed" />
+            <Thickness x:Key="SyncfusionKanbanPlaceholderSelectedBorderThickness">3</Thickness>
     </Grid.Resources>
 
     <kanban:SfKanban x:Name="kanban"
