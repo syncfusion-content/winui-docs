@@ -17,11 +17,11 @@ The `CardDragStarting` event occurs when the card start to drag. We can get the 
 * Card - Returns the dragging card in the kanban.
 
 {% tabs %}
-{% highlight XAML hl_lines="2" %}
+{% highlight XAML hl_lines="3" %}
 
 <kanban:SfKanban x:Name="kanban"
-                 CardDragStarting="OnKanbanCardDragStarting"
-                 ItemsSource="{Binding TaskDetails}">
+                 ItemsSource="{Binding TaskDetails}"
+                 CardDragStarting="OnKanbanCardDragStarting">
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -29,8 +29,9 @@ The `CardDragStarting` event occurs when the card start to drag. We can get the 
 
 {% endhighlight %}
 
-{% highlight C# hl_lines="1" %}
+{% highlight C# hl_lines="2" %}
 
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.CardDragStarting += this.OnKanbanCardDragStarting;
 
 private void OnKanbanCardDragStarting(object sender, KanbanCardDragStartingEventArgs e)
@@ -40,6 +41,106 @@ private void OnKanbanCardDragStarting(object sender, KanbanCardDragStartingEvent
 }
 
 {% endhighlight %}
+
+{% highlight c# tabtitle="ViewModel.cs" %}
+
+public class ViewModel
+{
+    #region Properties
+
+    /// <summary>
+    /// Gets or sets the collection of <see cref="KanbanModel"/> objects representing tasks in various stages.
+    /// </summary>
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    #endregion
+
+    #region Constructor
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ViewModel"/> class.
+    /// </summary>
+    public ViewModel()
+    {
+        this.TaskDetails = this.GetTaskDetails();
+    }
+
+    #endregion
+
+    #region Private methods
+
+    /// <summary>
+    /// Method to get the kanban model collections.
+    /// </summary>
+    /// <returns>The kanban model collections.</returns>
+    private ObservableCollection<KanbanModel> GetTaskDetails()
+    {
+        var taskDetails = new ObservableCollection<KanbanModel>();
+        string path = @"ms-appx:///";
+
+        KanbanModel taskDetail = new KanbanModel();
+        taskDetail.Title = "UWP Issue";
+        taskDetail.Id = "651";
+        taskDetail.Description = "Crosshair label template not visible in UWP";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WinUI Issue";
+        taskDetail.Id = "646";
+        taskDetail.Description = "AxisLabel cropped when rotating the axis label";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Kanban Feature";
+        taskDetail.Id = "25678";
+        taskDetail.Description = "Provide drag and drop support";
+        taskDetail.Category = "In Progress";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "New control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle3.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "New Feature";
+        taskDetail.Id = "29574";
+        taskDetail.Description = "Dragging events support for Kanban";
+        taskDetail.Category = "Closed";
+        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Tags = new List<string>() { "New Control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+        return taskDetails;
+    }
+
+    #endregion
+}
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Notifying Kanban card drag over 
@@ -52,11 +153,11 @@ The `CardDragOver` event occurs when card drag started in a column. We can get t
 * CurrentRowIndex - Returns the current row index of the swimlane that contains the card. The current row index is relevant only for the swimlane column and is used to get the swimlane's index.
 
 {% tabs %}
-{% highlight XAML hl_lines="2" %}
+{% highlight XAML hl_lines="3" %}
 
 <kanban:SfKanban x:Name="kanban"
-                 CardDragOver="OnKanbanCardDragOver"
-                 ItemsSource="{Binding TaskDetails}">
+                 ItemsSource="{Binding TaskDetails}"
+                 CardDragOver="OnKanbanCardDragOver">
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -64,8 +165,9 @@ The `CardDragOver` event occurs when card drag started in a column. We can get t
 
 {% endhighlight %}
 
-{% highlight C# hl_lines="1" %}
+{% highlight C# hl_lines="2" %}
 
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.CardDragOver += this.OnKanbanCardDragOver;
 
 private void OnKanbanCardDragOver(object sender, KanbanCardDragOverEventArgs e)
@@ -77,6 +179,106 @@ private void OnKanbanCardDragOver(object sender, KanbanCardDragOverEventArgs e)
 }
 
 {% endhighlight %}
+
+{% highlight c# tabtitle="ViewModel.cs" %}
+
+public class ViewModel
+{
+    #region Properties
+
+    /// <summary>
+    /// Gets or sets the collection of <see cref="KanbanModel"/> objects representing tasks in various stages.
+    /// </summary>
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    #endregion
+
+    #region Constructor
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ViewModel"/> class.
+    /// </summary>
+    public ViewModel()
+    {
+        this.TaskDetails = this.GetTaskDetails();
+    }
+
+    #endregion
+
+    #region Private methods
+
+    /// <summary>
+    /// Method to get the kanban model collections.
+    /// </summary>
+    /// <returns>The kanban model collections.</returns>
+    private ObservableCollection<KanbanModel> GetTaskDetails()
+    {
+        var taskDetails = new ObservableCollection<KanbanModel>();
+        string path = @"ms-appx:///";
+
+        KanbanModel taskDetail = new KanbanModel();
+        taskDetail.Title = "UWP Issue";
+        taskDetail.Id = "651";
+        taskDetail.Description = "Crosshair label template not visible in UWP";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WinUI Issue";
+        taskDetail.Id = "646";
+        taskDetail.Description = "AxisLabel cropped when rotating the axis label";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Kanban Feature";
+        taskDetail.Id = "25678";
+        taskDetail.Description = "Provide drag and drop support";
+        taskDetail.Category = "In Progress";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "New control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle3.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "New Feature";
+        taskDetail.Id = "29574";
+        taskDetail.Description = "Dragging events support for Kanban";
+        taskDetail.Category = "Closed";
+        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Tags = new List<string>() { "New Control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+        return taskDetails;
+    }
+
+    #endregion
+}
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Notifying Kanban card drop
@@ -94,11 +296,11 @@ The `CardDrop` event occurs when leaving the dragging card from one column. We c
 * TargetRowIndex - Returns the integer value indicating the target row index of the swimlane where the card is going to be inserted. It is applicable only for the swimlane column.
 
 {% tabs %}
-{% highlight XAML hl_lines="2" %}
+{% highlight XAML hl_lines="3" %}
 
 <kanban:SfKanban x:Name="kanban"
-                 CardDrop="OnKanbanCardDrop"
-                 ItemsSource="{Binding TaskDetails}">
+                 ItemsSource="{Binding TaskDetails}"
+                 CardDrop="OnKanbanCardDrop">
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -106,8 +308,9 @@ The `CardDrop` event occurs when leaving the dragging card from one column. We c
 
 {% endhighlight %}
 
-{% highlight C# hl_lines="1" %}
+{% highlight C# hl_lines="2" %}
 
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.CardDrop += this.OnKanbanCardDrop;
 
 private void OnKanbanCardDrop(object sender, KanbanCardDropEventArgs e)
@@ -124,6 +327,106 @@ private void OnKanbanCardDrop(object sender, KanbanCardDropEventArgs e)
 }
 
 {% endhighlight %}
+
+{% highlight c# tabtitle="ViewModel.cs" %}
+
+public class ViewModel
+{
+    #region Properties
+
+    /// <summary>
+    /// Gets or sets the collection of <see cref="KanbanModel"/> objects representing tasks in various stages.
+    /// </summary>
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    #endregion
+
+    #region Constructor
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ViewModel"/> class.
+    /// </summary>
+    public ViewModel()
+    {
+        this.TaskDetails = this.GetTaskDetails();
+    }
+
+    #endregion
+
+    #region Private methods
+
+    /// <summary>
+    /// Method to get the kanban model collections.
+    /// </summary>
+    /// <returns>The kanban model collections.</returns>
+    private ObservableCollection<KanbanModel> GetTaskDetails()
+    {
+        var taskDetails = new ObservableCollection<KanbanModel>();
+        string path = @"ms-appx:///";
+
+        KanbanModel taskDetail = new KanbanModel();
+        taskDetail.Title = "UWP Issue";
+        taskDetail.Id = "651";
+        taskDetail.Description = "Crosshair label template not visible in UWP";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WinUI Issue";
+        taskDetail.Id = "646";
+        taskDetail.Description = "AxisLabel cropped when rotating the axis label";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Kanban Feature";
+        taskDetail.Id = "25678";
+        taskDetail.Description = "Provide drag and drop support";
+        taskDetail.Category = "In Progress";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "New control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle3.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "New Feature";
+        taskDetail.Id = "29574";
+        taskDetail.Description = "Dragging events support for Kanban";
+        taskDetail.Category = "Closed";
+        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Tags = new List<string>() { "New Control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+        return taskDetails;
+    }
+
+    #endregion
+}
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Notifying Kanban card tap
@@ -135,11 +438,11 @@ The `CardTapped` event occurs when the card is tapped. We can get the below deta
 * SelectedCardIndex - Returns the index position of the tapped card within its column.
 
 {% tabs %}
-{% highlight XAML hl_lines="2" %}
+{% highlight XAML hl_lines="3" %}
 
 <kanban:SfKanban x:Name="kanban"
-                 CardTapped="OnKanbanCardTapped"
-                 ItemsSource="{Binding TaskDetails}">
+                 ItemsSource="{Binding TaskDetails}"
+                 CardTapped="OnKanbanCardTapped">
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -147,8 +450,9 @@ The `CardTapped` event occurs when the card is tapped. We can get the below deta
 
 {% endhighlight %}
 
-{% highlight C# hl_lines="1" %}
+{% highlight C# hl_lines="2" %}
 
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.CardTapped += this.OnKanbanCardTapped;
 
 private void OnKanbanCardTapped(object sender, KanbanCardTappedEventArgs e)
@@ -159,6 +463,106 @@ private void OnKanbanCardTapped(object sender, KanbanCardTappedEventArgs e)
 }
 
 {% endhighlight %}
+
+{% highlight c# tabtitle="ViewModel.cs" %}
+
+public class ViewModel
+{
+    #region Properties
+
+    /// <summary>
+    /// Gets or sets the collection of <see cref="KanbanModel"/> objects representing tasks in various stages.
+    /// </summary>
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    #endregion
+
+    #region Constructor
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ViewModel"/> class.
+    /// </summary>
+    public ViewModel()
+    {
+        this.TaskDetails = this.GetTaskDetails();
+    }
+
+    #endregion
+
+    #region Private methods
+
+    /// <summary>
+    /// Method to get the kanban model collections.
+    /// </summary>
+    /// <returns>The kanban model collections.</returns>
+    private ObservableCollection<KanbanModel> GetTaskDetails()
+    {
+        var taskDetails = new ObservableCollection<KanbanModel>();
+        string path = @"ms-appx:///";
+
+        KanbanModel taskDetail = new KanbanModel();
+        taskDetail.Title = "UWP Issue";
+        taskDetail.Id = "651";
+        taskDetail.Description = "Crosshair label template not visible in UWP";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WinUI Issue";
+        taskDetail.Id = "646";
+        taskDetail.Description = "AxisLabel cropped when rotating the axis label";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Kanban Feature";
+        taskDetail.Id = "25678";
+        taskDetail.Description = "Provide drag and drop support";
+        taskDetail.Category = "In Progress";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "New control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle3.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "New Feature";
+        taskDetail.Id = "29574";
+        taskDetail.Description = "Dragging events support for Kanban";
+        taskDetail.Category = "Closed";
+        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Tags = new List<string>() { "New Control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+        return taskDetails;
+    }
+
+    #endregion
+}
+
+{% endhighlight %}
+
 {% endtabs %}
 
 #### Command
@@ -166,11 +570,11 @@ private void OnKanbanCardTapped(object sender, KanbanCardTappedEventArgs e)
 The `CardTappedCommand` property is used to associate a command with an instance of SfKanban. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
 
 {% tabs %}
-{% highlight XAML hl_lines="2" %}
+{% highlight XAML hl_lines="3" %}
 
 <kanban:SfKanban x:Name="kanban"
-                 CardTappedCommand="KanbanCardTappedCommand"
-                 ItemsSource="{Binding TaskDetails}">
+                 ItemsSource="{Binding TaskDetails}"
+                 CardTappedCommand="KanbanCardTappedCommand">
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
