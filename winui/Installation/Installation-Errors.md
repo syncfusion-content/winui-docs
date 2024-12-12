@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation Errors in WinUI - Syncfusion
-description: Learn here about the common installation errors and solution to those errors in Syncfusion WinUI Components installation.
+title: Installation Errors in WinUI - Syncfusion&reg;
+description: Learn here about the common installation errors and solution to those errors in Syncfusion&reg; WinUI Components installation.
 platform: winui
 control: Essential Studio
 documentation: ug
@@ -38,7 +38,7 @@ Only a licensed unlock key can unlock a licensed installer. So, to unlock the Li
 
 ### Problem
 
-**Error Message:** Your license for Syncfusion Essential Studio for WinUI has been expired since {date}. Please renew your subscription and try again.
+**Error Message:** Your license for Syncfusion&reg; Essential Studio&reg; for WinUI has been expired since {date}. Please renew your subscription and try again.
 
 **Online Installer**
 
@@ -103,7 +103,7 @@ You are trying to install when another installation is already running in your m
 
 ### Suggested solution
 
-Open and kill the msiexec process in the task manager and then continue to install Syncfusion. If the problem is still present, restart the computer and try Syncfusion installer. 
+Open and kill the msiexec process in the task manager and then continue to install Syncfusion&reg;. If the problem is still present, restart the computer and try Syncfusion&reg; installer. 
 
 1. Open the Windows Task Manager.
 
@@ -139,7 +139,7 @@ You have enabled controlled folder access settings on your computer.
 
 1.	We will ship our demos in the public documents folder by default. 
 2.	You have controlled folder access enabled on your machine, so our demos cannot be installed in the documents folder. If you need to install our demos in the Documents folder, follow the steps in this [link](https://support.microsoft.com/en-us/windows/allow-an-app-to-access-controlled-folders-b5b6627a-b008-2ca2-7931-7e51e912b034) and disable the controlled folder access.
-3.	You can enable this option after the installing our Syncfusion setup.
+3.	You can enable this option after the installing our Syncfusion&reg; setup.
 
 **Suggestion 2:**
 

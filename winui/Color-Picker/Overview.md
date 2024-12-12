@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About WinUI Color Picker control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® WinUI Color Picker control with an user interface to select and adjust color values support.
+title: About WinUI Color Picker control | Syncfusion&reg;
+description: Learn here all about introduction of Syncfusion&reg; WinUI Color Picker control with an user interface to select and adjust color values support.
 platform: WinUI
 control: SfColorPicker
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping in WinUI AutoComplete control | Syncfusion®
-description: Learn here all about Grouping support in Syncfusion® WinUI AutoComplete (multi-select AutoComplete) control with UI grouping and more.
+title: Grouping in WinUI AutoComplete control | Syncfusion&reg;
+description: Learn here all about Grouping support in Syncfusion&reg; WinUI AutoComplete (multi-select AutoComplete) control with UI grouping and more.
 platform: winui
 control: SfAutoComplete
 documentation: ug

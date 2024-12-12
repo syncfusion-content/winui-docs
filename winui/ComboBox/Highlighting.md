@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Highlighting Feature in WinUI Combobox control | Syncfusion®
-description: Learn here all about Highlighting Feature in Syncfusion® WinUI Combobox control into WinUI application.
+title: Highlighting Feature in WinUI Combobox control | Syncfusion&reg;
+description: Learn here all about Highlighting Feature in Syncfusion&reg; WinUI Combobox control into WinUI application.
 platform: winui
 control: SfComboBox
 documentation: UG

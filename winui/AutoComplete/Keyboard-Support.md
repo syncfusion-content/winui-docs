@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Keyboard support in WinUI AutoComplete control | Syncfusion®
-description: Learn here all about Keyboard support in Syncfusion® WinUI AutoComplete (multi-select AutoComplete) control and more.
+title: Keyboard support in WinUI AutoComplete control | Syncfusion&reg;
+description: Learn here all about Keyboard support in Syncfusion&reg; WinUI AutoComplete (multi-select AutoComplete) control and more.
 platform: winui
 control: SfAutoComplete
 documentation: ug

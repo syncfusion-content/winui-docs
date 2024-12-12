@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dropdown Customization in WinUI DropDown Color Palette | Syncfusion®
+title: Dropdown Customization in WinUI DropDown Color Palette | Syncfusion&reg;
 description: This section describes about how to customize the DropDown Color Palette (SfDropDownColorPalette) control into WinUI application and its additional features.
 platform: WinUI
 control: SfDropDownColorPalette

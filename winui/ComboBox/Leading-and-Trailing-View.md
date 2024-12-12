@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Leading and trailing view in WinUI ComboBox control | Syncfusion®
-description: Learn how to add leading and trailing view (front and back view) in Syncfusion® WinUI ComboBox control and more.
+title: Leading and trailing view in WinUI ComboBox control | Syncfusion&reg;
+description: Learn how to add leading and trailing view (front and back view) in Syncfusion&reg; WinUI ComboBox control and more.
 platform: winui
 control: SfComboBox
 documentation: ug

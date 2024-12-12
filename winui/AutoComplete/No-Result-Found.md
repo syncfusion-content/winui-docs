@@ -1,7 +1,7 @@
 ---
 layout: post
-title: No Result Found in WinUI AutoComplete control | Syncfusion®
-description: Learn how to use NoResultsFoundTemplate and NoResultsFoundContent in Syncfusion® WinUI AutoComplete control.
+title: No Result Found in WinUI AutoComplete control | Syncfusion&reg;
+description: Learn how to use NoResultsFoundTemplate and NoResultsFoundContent in Syncfusion&reg; WinUI AutoComplete control.
 platform: winui
 control: SfAutoComplete
 documentation: ug

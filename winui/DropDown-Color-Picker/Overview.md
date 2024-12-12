@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About WinUI DropDown Color Picker control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® WinUI DropDown Color Picker(SfDropDownColorPicker) control and more.
+title: About WinUI DropDown Color Picker control | Syncfusion&reg;
+description: Learn here all about introduction of Syncfusion&reg; WinUI DropDown Color Picker(SfDropDownColorPicker) control and more.
 platform: WinUI
 control: SfDropDownColorPicker
 documentation: ug

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization of Color Palette in DropDown Color Palette | Syncfusion®
+title: Customization of Color Palette in DropDown Color Palette | Syncfusion&reg;
 description: This section describes about how to customize the Color Palette in the DropDown Color Palette (SfDropDownColorPalette) control and its additional features.
 platform: WinUI
 control: SfDropDownColorPalette

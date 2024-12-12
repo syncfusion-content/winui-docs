@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in WinUI AutoComplete control | Syncfusion®
-description: Learn here all about Selection modes support in Syncfusion® WinUI AutoComplete (multi-select AutoComplete) control and more.
+title: Selection in WinUI AutoComplete control | Syncfusion&reg;
+description: Learn here all about Selection modes support in Syncfusion&reg; WinUI AutoComplete (multi-select AutoComplete) control and more.
 platform: winui
 control: SfAutoComplete
 documentation: ug
