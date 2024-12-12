@@ -11,7 +11,7 @@ documentation: ug
 
 Swimlanes are horizontal categorizations of cards on the WinUI Kanban Board. It is used for grouping of cards, which brings transparency to the workflow process They allow you to categorize your workflow by projects, teams, users, or any other criteria you need.
 
-By default, swimlanes are categorized based on the `Assignee` values in the `KanbanModel` class. You can also define category by mapping `SwimlaneKey` to appropriate property name in the defined `KanbanModel`.
+By default, swimlanes are categorized based on the `Assignee` values in the `KanbanModel` class. You can also define a category by mapping `SwimlaneKey` to the appropriate property name in the defined `KanbanModel`.
 
 The following code example demonstrates how to group the underlying data collection using the `SwimlaneKey` property.
 
