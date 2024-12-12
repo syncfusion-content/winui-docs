@@ -9,7 +9,7 @@ documentation: ug
 
 # Columns in WinUI Kanban (SfKanban) control
 
-The WinUI Kanban control organizes its layout into columns, each representing a distinct stage of a workflow, such as to-do, in progress, testing, validation, and completed. It supports various operations, including drag-and-drop, swim lane, and column toggling, all based on the defined columns.
+The WinUI Kanban control organizes its layout into columns, each representing a distinct stage of a workflow, such as to-do, in-progress, testing, validation, and completed. It supports various operations, including drag-and-drop, swim lane, and column toggling, all based on the defined columns.
 
 ## Change column width
 
@@ -1061,7 +1061,7 @@ public class ViewModel
 
 ### Placeholder in WinUI Kanban control
 
-The placeholders in the WinUI Kanban control provide a visual indication of the exact position where the card has been dragged and where it will be placed within a Kanban column during a drag-and-drop operation.
+The placeholders in the WinUI Kanban control visually indicate the exact position where a card is dragged and where it will be placed within a Kanban column during a drag-and-drop operation.
 
 The appearance of drag-and-drop placeholders in the WinUI Kanban control can be customized by modifying the values of the predefined theme keys.
 
@@ -1069,17 +1069,17 @@ The appearance of drag-and-drop placeholders in the WinUI Kanban control can be 
 
 The following theme keys control the appearance of the drag placeholder:
 
-* SyncfusionKanbanPlaceholderBackground
-* SyncfusionKanbanPlaceholderBorderBrush
-* SyncfusionKanbanPlaceholderBorderThickness
+* `SyncfusionKanbanPlaceholderBackground`
+* `SyncfusionKanbanPlaceholderBorderBrush`
+* `SyncfusionKanbanPlaceholderBorderThickness`
 
 #### Drop placeholder theme keys
 
 The following theme keys control the appearance of the drop placeholder:
 
-* SyncfusionKanbanPlaceholderSelectedBackground
-* SyncfusionKanbanPlaceholderSelectedBorderBrush
-* SyncfusionKanbanPlaceholderSelectedBorderThickness
+* `SyncfusionKanbanPlaceholderSelectedBackground`
+* `SyncfusionKanbanPlaceholderSelectedBorderBrush`
+* `SyncfusionKanbanPlaceholderSelectedBorderThickness`
 
 {% tabs %}
 {% highlight XAML hl_lines="3 4 5 6 7 8" %}
@@ -1207,7 +1207,7 @@ public class ViewModel
 
 ## Work-in-Progress (WIP) limit and indications
 
-The WinUI Kanban control allows users to set limits on the number of tasks in each column at every stage of the workflow, helping to prevent overload. The minimum and maximum number of items allowed in a column can be customized using the `MinimumCount` and `MaximumCount` properties in `KanbanColumn`.
+The WinUI Kanban control allows users to set limits on the number of tasks in each column at every stage of the workflow, helping to prevent task overload. The minimum and maximum number of items allowed in a column can be customized using the `MinimumCount` and `MaximumCount` properties in `KanbanColumn`.
 
 The Kanban control also supports built-in error bars that change color when the WIP limit is exceeded or when a task fails validation, making it easier to quickly identify bottlenecks in the process.
 

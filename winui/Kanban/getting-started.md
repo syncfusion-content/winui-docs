@@ -244,3 +244,11 @@ The WinUI Kanban supports light and dark themes, automatically adjusting to the 
 Refer to the following link for guidance on applying themes: [Themes for Syncfusion WinUI controls](https://help.syncfusion.com/winui/common/themes)
 
 N> You can refer to our `WinUI Kanban` feature tour page for its groundbreaking feature representations. You can also explore our `WinUI Kanban Examples` that shows you how to render the Kanban in WinUI.
+
+## Localization
+
+The WinUI Kanban control allows localization of all the static default strings, enabling you to translate them into any supported language. For detailed steps on how to localize the default strings, refer to the following link: [Localization in WinUI controls](https://help.syncfusion.com/winui/common/localization).
+
+## Right to Left (RTL)
+
+The WinUI Kanban supports RTL rendering, displaying text and the control’s layout from right to left. For more information on enabling RTL rendering refer to the following link: [Right to left in WinUI controls](https://help.syncfusion.com/winui/common/right-to-left).
