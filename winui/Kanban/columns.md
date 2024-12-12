@@ -13,7 +13,7 @@ The WinUI Kanban control organizes its layout into columns, each representing a 
 
 ## Change column width
 
-By default, the columns are sized smartly to arrange the default elements of the cards with better readability. You can also define the minimum and maximum widths for the columns in `SfKanban` using the `MinimumColumnWidth` and `MaximumColumnWidth` properties, respectively.
+By default, the columns are sized smartly to arrange the default UI of the cards with better readability. You can also define the minimum and maximum widths for the columns in `SfKanban` using the `MinimumColumnWidth` and `MaximumColumnWidth` properties, respectively.
 
 {% tabs %}
 {% highlight XAML hl_lines="3 4" %}
@@ -389,7 +389,7 @@ public class ViewModel
 
 ### Populating Multi-Category Columns with Cards
 
-The Kanban board allows to render a single column by mapping multiple categories using `Categories` property of `KanbanColumn` in `SfKanban`. For example, you can map the “In Progress” and “Validated” types under the “In progress” column.
+The Kanban board allows user to render a single column by mapping multiple categories using `Categories` property of `KanbanColumn` in `SfKanban`. For example, you can map the `In Progress` and `Validated` types under the `In progress` column.
 
 {% tabs %}
 {% highlight XAML hl_lines="5" %}
@@ -532,7 +532,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-## Customize column headers appearance
+## Customize columns header appearance
 
 The WinUI Kanban control allows you to customize the header text, column header template, and more.
 
@@ -1207,7 +1207,7 @@ public class ViewModel
 
 ## Work-in-Progress (WIP) limit and indications
 
-The WinUI Kanban control allows users to set limits on the number of tasks in each column at every stage of the workflow, helping to prevent overload. The minimum and maximum number of items allowed in a column can be customized using the `MinimumLimit` and `MaximumLimit` properties in `KanbanColumn`.
+The WinUI Kanban control allows users to set limits on the number of tasks in each column at every stage of the workflow, helping to prevent overload. The minimum and maximum number of items allowed in a column can be customized using the `MinimumCount` and `MaximumCount` properties in `KanbanColumn`.
 
 The Kanban control also supports built-in error bars that change color when the WIP limit is exceeded or when a task fails validation, making it easier to quickly identify bottlenecks in the process.
 
