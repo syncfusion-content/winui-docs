@@ -9,7 +9,7 @@ documentation: ug
 
 # Cards in WinUI Kanban (SfKanban) control
 
-The Kanban cards visually represent tasks and their progression through various stages. The default UI of each card can be customized using the following properties of the KanbanModel.
+The Kanban cards visually represent tasks and their progression through various stages. The default UI of each card can be customized using the following properties of the `KanbanModel`.
 
 * `Title` - Sets the title of the card.
 * `Description` - Sets the description text of the card.
@@ -24,18 +24,18 @@ Below is an example that shows how to define values in the `KanbanModel`.
 
 {% highlight C# %}
 
-KanbanModel taskDetail = new KanbanModel()
+new KanbanModel()
 {
-    Title = "UWP Issue",
-    Id = "651",
-    Description = "Crosshair label template not visible in UWP",
-    Category = "Open",
-    IndicatorColorKey = "High",
-    Tags = new List() { "Bug Fixing" },
-    Image = new Image
-    {
-        Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
-    }
+Title = "UWP Issue",
+Id = "651",
+Description = "Crosshair label template not visible in UWP",
+Category = "Open",
+IndicatorColorKey = "High",
+Tags = new List() { "Bug Fixing" },
+Image = new Image
+{
+   Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+}
 };
 
 {% endhighlight %}
@@ -59,7 +59,7 @@ The following code snippet defines the colors for each key.
 
 {% endhighlight %}
 
-{% highlight C# hl_lines="3 4 5 6" %}
+{% highlight C# hl_lines="2 3 4 5 6" %}
 
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
 List<KanbanColorMapping> indicatorColorPalette = new List();
@@ -186,16 +186,16 @@ public class ViewModel
 
 ## Card appearance customization
 
-The card appearance customization can be achieved by using the `CardTemplate` and `CardTemplateSelector` properties in the SfKanban.
+The card appearance customization can be achieved by using the `CardTemplate` and `CardTemplateSelector` properties in the `SfKanban`.
 
 ### Customize card appearance using DataTemplate
 
-You can replace the entire card template with your own design and customize its appearance using the `CardTemplate` properties in `SfKanban`.
+You can replace the entire card template with your own design and customize its appearance using the `CardTemplate` property in `SfKanban`.
 
 The following code snippet demonstrates how to use the `CardTemplate` property to apply a custom template to kanban cards.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML hl_lines="3 4 5 6 7 8 9 10 11 12" %}
 
 <kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}">
@@ -338,7 +338,7 @@ public class ViewModel
 
 ### Customize card appearance using DataTemplateSelector
 
-You can customize the card appearance by using the CardTemplateSelector property in the SfKanban. The DataTemplateSelector can choose a DataTemplate at runtime based on the value of a data-bound to kanban card appearance by using the CardTemplateSelector. It allows you to choose a different data template for each card, as well as to customize the appearance of a particular card based on certain conditions.
+You can customize the card appearance by using the `CardTemplateSelector` property in the `SfKanban`. The DataTemplateSelector can choose a DataTemplate at runtime based on the value of a data-bound to kanban card appearance by using the `CardTemplateSelector`. It allows you to choose a different data template for each card, as well as to customize the appearance of a particular card based on certain conditions.
 
 {% tabs %}
 {% highlight XAML hl_lines="28" %}
@@ -513,4 +513,4 @@ public class ViewModel
 {% endtabs %}
 
 N>
-The `DataContext` for both the `CardTemplate` and `CardTemplateSelector` properties in the `SfKanban` is set to KanbanModel.
+The `DataContext` for both the `CardTemplate` and `CardTemplateSelector` properties in the `SfKanban` is set to `KanbanModel`.
