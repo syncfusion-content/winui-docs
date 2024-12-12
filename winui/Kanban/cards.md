@@ -338,7 +338,7 @@ public class ViewModel
 
 ### Customize card appearance using DataTemplateSelector
 
-You can customize the card appearance by using the `CardTemplateSelector` property in the `SfKanban`. The DataTemplateSelector can choose a DataTemplate at runtime based on the value of a data-bound to kanban card appearance by using the `CardTemplateSelector`. It allows you to choose a different data template for each card, as well as to customize the appearance of a particular card based on certain conditions.
+You can customize the card appearance by using the `CardTemplateSelector` property in the `SfKanban`. The `DataTemplateSelector` can choose a `DataTemplate` at runtime based on the value of a data-bound to kanban card appearance by using the `CardTemplateSelector`. It allows you to choose a different data template for each card, as well as to customize the appearance of a particular card based on certain conditions.
 
 {% tabs %}
 {% highlight XAML hl_lines="28" %}
