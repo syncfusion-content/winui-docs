@@ -192,7 +192,7 @@ The card appearance customization can be achieved by using the `CardTemplate` an
 
 You can replace the entire card template with your own design and customize its appearance using the `CardTemplate` property in `SfKanban`.
 
-The following code snippet demonstrates how to use the `CardTemplate` property to apply a custom template to kanban cards.
+The following code snippet demonstrates, how to use the `CardTemplate` property to apply a custom template to kanban cards.
 
 {% tabs %}
 {% highlight XAML hl_lines="3 4 5 6 7 8 9 10 11 12" %}
