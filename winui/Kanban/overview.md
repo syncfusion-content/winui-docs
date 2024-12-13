@@ -22,9 +22,6 @@ The Syncfusion WinUI Kanban control provides an efficient way to visualize workf
 
 * **Cards**: Display tasks, progress, and priority.
 * **Columns**: Organize work into columns for stages like to-do, in-progress, and completed.
-
-![columns-in-winui-kanban](images/overview/columns-in-winui-kanban.png)
-
 * **Swim lanes**: Organize tasks based on projects, teams, or custom criteria.
 
 ![swim-lanes-in-winui-kanban](images/overview/swim-lanes-in-winui-kanban.png)
