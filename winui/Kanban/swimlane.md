@@ -9,18 +9,18 @@ documentation: ug
 
 # Swimlane in WinUI Kanban (SfKanban) control
 
-Swimlanes are horizontal categorizations of cards on the WinUI Kanban Board. It is used for grouping of cards, which brings transparency to the workflow process They allow you to categorize your workflow by projects, teams, users, or any other criteria you need.
+Swimlanes are horizontal categorizations of cards on the WinUI Kanban Board. It is used for grouping of cards, which brings transparency to the workflow process. They allow you to categorize your workflow by projects, teams, users, or any other criteria you need.
 
 By default, swimlanes are categorized based on the `Assignee` values in the `KanbanModel` class. You can also define a category by mapping `SwimlaneKey` to the appropriate property name in the defined `KanbanModel`.
 
-The following code example demonstrates how to group the underlying data collection using the `SwimlaneKey` property.
+The following example code demonstrates, how to group the underlying data collection using the `SwimlaneKey` property in the Kanban control.
 
 {% tabs %}
-{% highlight XAML hl_lines="3" %}
+{% highlight XAML hl_lines="2" %}
 
 <kanban:SfKanban x:Name="kanban"
-                    ItemsSource="{Binding TaskDetails}"
-                    SwimlaneKey="IndicatorColorKey">
+                 SwimlaneKey="IndicatorColorKey"
+                 ItemsSource="{Binding TaskDetails}">
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -28,10 +28,10 @@ The following code example demonstrates how to group the underlying data collect
 
 {% endhighlight %}
 
-{% highlight C# hl_lines="2" %}
+{% highlight C# hl_lines="1" %}
 
-this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.SwimlaneKey = "IndicatorColorKey";
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
 {% endhighlight %}
 
@@ -167,55 +167,83 @@ public class ViewModel
 
 The WinUI Kanban control allows you to customize the appearance of swimlane headers using the `SwimlaneHeaderTemplate` property. This enables you to create a unique design for the header displayed at the beginning of each swimlane group.
 
-The following code example demonstrates how to customize a swimlane header.
+The following example code demonstrates, how to customize a swimlane header in the WinUI Kanban control.
 
 {% tabs %}
 {% highlight XAML hl_lines="4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42" %}
 
 <kanban:SfKanban x:Name="kanban"
-                 ItemsSource="{Binding TaskDetails}"
-                 SwimlaneKey="IndicatorColorKey">
+                 SwimlaneKey="IndicatorColorKey"
+                 ItemsSource="{Binding TaskDetails}">
     <kanban:SfKanban.SwimlaneHeaderTemplate>
         <DataTemplate x:Name="swimlaneHeaderTemplate">
             <Grid>
-                <Border BorderBrush="Black" CornerRadius="5,5,5,5" Width="150" Margin="10,2,10,0" HorizontalAlignment="Left" >
-                    <StackPanel Background="LightGray" x:Name="SwimlaneHeaderPanel" Orientation="Horizontal">
-                        <Grid x:Name="CollapsedIcon" Background="Transparent" Height="30" Width="30">
-                            <Path x:Name="ExpandedPath" IsHitTestVisible="False" 
-                                    Data="M30.587915,0L31.995998,1.4199842 15.949964,17.351 0,1.4979873 1.4099131,0.078979151 15.949964,14.53102z"
-                                    Stretch="Uniform" Fill="#FF000000" Width="14" Height="14" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                <Border BorderBrush="Black"
+                        CornerRadius="5,5,5,5"
+                        Width="150"
+                        Margin="10,2,10,0"
+                        HorizontalAlignment="Left">
+                    <StackPanel Background="LightGray"
+                                x:Name="SwimlaneHeaderPanel"
+                                Orientation="Horizontal">
+                        <Grid x:Name="CollapsedIcon"
+                              Background="Transparent"
+                              Height="30"
+                              Width="30">
+                            <Path x:Name="ExpandedPath"
+                                  IsHitTestVisible="False"
+                                  Data="M30.587915,0L31.995998,1.4199842 15.949964,17.351 0,1.4979873 1.4099131,0.078979151 15.949964,14.53102z"
+                                  Stretch="Uniform"
+                                  Fill="#FF000000"
+                                  Width="14"
+                                  Height="14"
+                                  Margin="0,0,0,0"
+                                  RenderTransformOrigin="0.5,0.5">
                                 <Path.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <RotateTransform Angle="0" />
-                                            <ScaleTransform ScaleX="1" ScaleY="1" />
+                                            <ScaleTransform ScaleX="1"
+                                                            ScaleY="1" />
                                         </TransformGroup.Children>
                                     </TransformGroup>
                                 </Path.RenderTransform>
                             </Path>
-                            <Path x:Name="CollapsedPath" Visibility="Collapsed" IsHitTestVisible="False"
-                                    Data="M1.4200482,0L17.351001,16.046996 1.4980513,31.996001 0.078979631,30.585997 14.531046,16.046019 0,1.4089964z"
-                                    Stretch="Uniform" Fill="#FF000000" Width="14" Height="14" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                            <Path x:Name="CollapsedPath"
+                                  Visibility="Collapsed"
+                                  IsHitTestVisible="False"
+                                  Data="M1.4200482,0L17.351001,16.046996 1.4980513,31.996001 0.078979631,30.585997 14.531046,16.046019 0,1.4089964z"
+                                  Stretch="Uniform"
+                                  Fill="#FF000000"
+                                  Width="14"
+                                  Height="14"
+                                  Margin="0,0,0,0"
+                                  RenderTransformOrigin="0.5,0.5">
                                 <Path.RenderTransform>
                                     <TransformGroup>
                                         <TransformGroup.Children>
                                             <RotateTransform Angle="0" />
-                                            <ScaleTransform ScaleX="1" ScaleY="1" />
+                                            <ScaleTransform ScaleX="1"
+                                                            ScaleY="1" />
                                         </TransformGroup.Children>
                                     </TransformGroup>
                                 </Path.RenderTransform>
-                        </Path>
-                    </Grid>
-                    <TextBlock FontWeight="Medium" IsHitTestVisible="False" FontSize="15" 
-                               FontStretch="Expanded" TextWrapping="NoWrap"
-                               VerticalAlignment="Center" Text="{Binding Title}" />
-                </StackPanel>
+                            </Path>
+                        </Grid>
+                        <TextBlock FontWeight="Medium"
+                                   IsHitTestVisible="False"
+                                   FontSize="15"
+                                   FontStretch="Expanded"
+                                   TextWrapping="NoWrap"
+                                   VerticalAlignment="Center"
+                                   Text="{Binding Title}" />
+                    </StackPanel>
                 </Border>
             </Grid>
         </DataTemplate>
     </kanban:SfKanban.SwimlaneHeaderTemplate>
     <kanban:SfKanban.DataContext>
-        <local:ViewModel/>
+        <local:ViewModel />
     </kanban:SfKanban.DataContext>
 </kanban:SfKanban>
 
@@ -223,8 +251,8 @@ The following code example demonstrates how to customize a swimlane header.
 
 {% highlight C# %}
 
-this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.SwimlaneKey = "IndicatorColorKey";
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
 {% endhighlight %}
 
@@ -349,6 +377,7 @@ public class ViewModel
         taskDetails.Add(taskDetail);
         return taskDetails;
     }
+
     #endregion
 }
 
