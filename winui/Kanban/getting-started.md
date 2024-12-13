@@ -15,7 +15,7 @@ This section provides a quick overview of how to get started with the WinUI Kanb
 
 1. Create a [WinUI 3 desktop app for C# and .NET 6](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 
-2. Add reference to the `Syncfusion.Kanban.WinUI` NuGet.
+2. Add reference to the [Syncfusion.Kanban.WinUI](https://www.nuget.org/packages/Syncfusion.Kanban.WinUI) NuGet.
 
 3. Import the control namespace `Syncfusion.UI.Xaml.Kanban` in XAML or C# code.
 
@@ -57,14 +57,14 @@ public sealed partial class MainWindow : Window
 
 ## Populate WinUI Kanban item source
 
-Here are the steps to render kanban card items using the WinUI Kanban control with the respective `KanbanModel` class.
+Here are the steps to render kanban card items using the WinUI Kanban control with the respective [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) class.
 
 * Create view model.
 * Bind the item source for Kanban.
 
 ### Create view model
 
-Create a view model class to set values for the properties listed in the `KanbanModel` class as shown in the following example code. Each `KanbanModel` instance represents a card in the Kanban control.
+Create a view model class to set values for the properties listed in the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) class as shown in the following example code. Each [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) instance represents a card in the Kanban control.
 
 {% highlight C# tabtitle="ViewModel.cs" %}
    
@@ -181,7 +181,7 @@ public class ViewModel
 
 ### Bind item source for Kanban
 
-To populate the kanban card items, utilize the `ItemsSource` property of `SfKanban`.
+To populate the kanban card items, utilize the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
 
 {% tabs %}
 
@@ -206,7 +206,7 @@ this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
 ### Defining columns
 
-The columns are generated automatically based on the different values of the `Category` in the `KanbanModel` class from the `ItemsSource`. However, you can manually define the columns by setting the `AutoGenerateColumns` property to `false` and adding `KanbanColumn` instances to the `Columns` property of `SfKanban`. You can define the column categories using the `Categories` property of `KanbanColumn`, and the cards will be added to their respective columns.
+The columns are generated automatically based on the different values of the [Category](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Category) in the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) class from the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource). However, you can manually define the columns by setting the [AutoGenerateColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) property to `false` and adding [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) instances to the [Columns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). You can define the column categories using the [Categories](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Categories) property of [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html), and the cards will be added to their respective columns.
 
 {% tabs %}
 {% highlight XAML hl_lines="2 4 5 6 7" %}
@@ -352,7 +352,7 @@ public class ViewModel
 
 {% endtabs %}
 
-N> When manually defining columns, ensure the `AutoGenerateColumns` property of `SfKanban` is set to `false`.
+N> When manually defining columns, ensure the [AutoGenerateColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) is set to `false`.
 
 ## Theme
 
