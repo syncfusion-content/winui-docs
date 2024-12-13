@@ -218,6 +218,9 @@ The columns are generated automatically based on the different values of the `Ca
         <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
         <kanban:KanbanColumn HeaderText="Code Review" Categories="Code Review" />
         <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
+    <kanban:SfKanban.DataContext>
+        <local:ViewModel/>
+    </kanban:SfKanban.DataContext>
 </kanban:SfKanban>
 
 {% endhighlight %}
