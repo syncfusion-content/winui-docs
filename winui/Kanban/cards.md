@@ -512,5 +512,4 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-N>
-The `DataContext` for both the `CardTemplate` and `CardTemplateSelector` properties in the `SfKanban` is set to `KanbanModel`.
+N> The `DataContext` for both the `CardTemplate` and `CardTemplateSelector` properties in the `SfKanban` is set to `KanbanModel`.
