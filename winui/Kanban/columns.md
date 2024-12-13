@@ -37,7 +37,7 @@ this.kanban.MaximumColumnWidth = 350;
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
@@ -160,7 +160,7 @@ this.kanban.ColumnWidth = 320;
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
@@ -287,7 +287,7 @@ this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
@@ -397,9 +397,9 @@ The Kanban board allows user to render a single column by mapping multiple categ
 <kanban:SfKanban x:Name="kanban"
                  AutoGenerateColumns="False" 
                  ItemsSource="{Binding TaskDetails}">
-        <kanban:KanbanColumn HeaderText="To Do" Categories="Open" />
-        <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress,Validated" />
-        <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
+    <kanban:KanbanColumn HeaderText="To Do" Categories="Open" />
+    <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress,Validated" />
+    <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -418,7 +418,7 @@ this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
@@ -546,9 +546,9 @@ You can use the `HeaderText` property of `KanbanColumn` to customize the header 
 <kanban:SfKanban x:Name="kanban"
                  AutoGenerateColumns="False" 
                  ItemsSource="{Binding TaskDetails}">
-        <kanban:KanbanColumn HeaderText="To Do" Categories="Open" />
-        <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
-        <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
+    <kanban:KanbanColumn HeaderText="To Do" Categories="Open" />
+    <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
+    <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -567,7 +567,7 @@ this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
@@ -692,7 +692,13 @@ You can customize the column header appearance by using the `ColumnHeaderTemplat
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight C# %}
+
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
+
+{% endhighlight %}
+
+{% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
@@ -804,9 +810,9 @@ The Kanban allows you to programmatically expand or collapse columns using the `
 <kanban:SfKanban x:Name="kanban"
                  AutoGenerateColumns="False" 
                  ItemsSource="{Binding TaskDetails}">
-        <kanban:KanbanColumn HeaderText="To Do" Categories="Open" IsExpanded="False"/>
-        <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
-        <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
+    <kanban:KanbanColumn HeaderText="To Do" Categories="Open" IsExpanded="False"/>
+    <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
+    <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -825,7 +831,7 @@ this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
@@ -937,9 +943,9 @@ Cards can be dragged and dropped across columns, within columns, or across swiml
 <kanban:SfKanban x:Name="kanban"
                  AutoGenerateColumns="False" 
                  ItemsSource="{Binding TaskDetails}">
-        <kanban:KanbanColumn HeaderText="To Do" Categories="Open" AllowDrag="False" AllowDrop="False"/>
-        <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
-        <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
+    <kanban:KanbanColumn HeaderText="To Do" Categories="Open" AllowDrag="False" AllowDrop="False"/>
+    <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
+    <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -958,7 +964,7 @@ this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
@@ -1104,7 +1110,13 @@ The following theme keys control the appearance of the drop placeholder:
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight C# %}
+
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
+
+{% endhighlight %}
+
+{% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
@@ -1217,9 +1229,9 @@ The Kanban control also supports built-in error bars that change color when the 
 <kanban:SfKanban x:Name="kanban"
                  AutoGenerateColumns="False" 
                  ItemsSource="{Binding TaskDetails}">
-            <kanban:KanbanColumn HeaderText="To Do" Categories="Open" MaximumCount="1" />
-            <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" MinimumCount="2" />
-            <kanban:KanbanColumn HeaderText="Done" Categories="Done" MinimumCount="1" MaximumCount="5" />
+    <kanban:KanbanColumn HeaderText="To Do" Categories="Open" MaximumCount="1" />
+    <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" MinimumCount="2" />
+    <kanban:KanbanColumn HeaderText="Done" Categories="Done" MinimumCount="1" MaximumCount="5" />
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -1238,7 +1250,7 @@ this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
