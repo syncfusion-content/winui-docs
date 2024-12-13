@@ -364,8 +364,8 @@ N> You can refer to our `WinUI Kanban` feature tour page for its groundbreaking 
 
 ## Localization
 
-The WinUI Kanban allows localization of all the static default strings, enabling you to translate them into any supported language. For detailed steps on how to localize the default strings, refer to the following link: [Localization in WinUI controls](https://help.syncfusion.com/winui/common/localization).
+The WinUI Kanban control supports the localization of all static default strings, allowing you to translate them into any supported language. For detailed instructions on how to localize the default strings, refer to the following link: [Localization in WinUI controls](https://help.syncfusion.com/winui/common/localization).
 
 ## Right to Left (RTL)
 
-The WinUI Kanban supports RTL rendering, displaying text and the control’s layout from right to left. For more information on enabling RTL rendering refer to the following link: [Right to left in WinUI controls](https://help.syncfusion.com/winui/common/right-to-left).
+The WinUI Kanban control supports RTL (Right-to-Left) rendering, allowing both text and the control's layout to be displayed from right to left. For more information on how to enable RTL rendering, please refer to the following link: [Right to left in WinUI controls](https://help.syncfusion.com/winui/common/right-to-left).
