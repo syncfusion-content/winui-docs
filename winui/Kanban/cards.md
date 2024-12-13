@@ -513,3 +513,5 @@ public class ViewModel
 {% endtabs %}
 
 N> The [DataContext](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.frameworkelement.datacontext?view=winrt-26100) for both the [CardTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplate) and [CardTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplateSelector) properties in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) is set to [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
+
+
