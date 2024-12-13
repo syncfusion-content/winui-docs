@@ -66,7 +66,7 @@ Here are the steps to render kanban card items using the WinUI Kanban control wi
 
 Create a view model class to set values for the properties listed in the `KanbanModel` class as shown in the following example code. Each `KanbanModel` instance represents a card in the Kanban control.
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight C# tabtitle="ViewModel.cs" %}
    
 public class ViewModel
 {
@@ -236,6 +236,120 @@ this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Code Review", Categor
 this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "Done" });
 
 {% endhighlight %}
+
+{% highlight C# tabtitle="ViewModel.cs" %}
+   
+public class ViewModel
+{
+    #region Properties
+
+    /// <summary>
+    /// Gets or sets the collection of <see cref="KanbanModel"/> objects representing tasks in various stages.
+    /// </summary>
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    #endregion
+
+    #region Constructor
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ViewModel"/> class.
+    /// </summary>
+    public ViewModel()
+    {
+        this.TaskDetails = this.GetTaskDetails();
+    }
+
+    #endregion
+
+    #region Private methods
+
+    /// <summary>
+    /// Method to get the kanban model collections.
+    /// </summary>
+    /// <returns>The kanban model collections.</returns>
+    private ObservableCollection<KanbanModel> GetTaskDetails()
+    {
+        var taskDetails = new ObservableCollection<KanbanModel>();
+        string path = @"ms-appx:///";
+
+        KanbanModel taskDetail = new KanbanModel();
+        taskDetail.Title = "UWP Issue";
+        taskDetail.Id = "651";
+        taskDetail.Description = "Crosshair label template not visible in UWP";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WinUI Issue";
+        taskDetail.Id = "646";
+        taskDetail.Description = "AxisLabel cropped when rotating the axis label";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Kanban Feature";
+        taskDetail.Id = "25678";
+        taskDetail.Description = "Provide drag and drop support";
+        taskDetail.Category = "In Progress";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "New control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle3.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "New Feature";
+        taskDetail.Id = "29574";
+        taskDetail.Description = "Dragging events support for Kanban";
+        taskDetail.Category = "Done";
+        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Tags = new List<string>() { "New Control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WF Issue";
+        taskDetail.Id = "1254";
+        taskDetail.Description = "HorizontalAlignment for tooltip is not working";
+        taskDetail.Category = "Code Review";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle5.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+        return taskDetails;
+    }
+
+    #endregion
+}
+
+{% endhighlight %}
+
 {% endtabs %}
 
 N> When manually defining columns, ensure the `AutoGenerateColumns` property of `SfKanban` is set to `false`.
@@ -250,7 +364,7 @@ N> You can refer to our `WinUI Kanban` feature tour page for its groundbreaking 
 
 ## Localization
 
-The WinUI Kanban control allows localization of all the static default strings, enabling you to translate them into any supported language. For detailed steps on how to localize the default strings, refer to the following link: [Localization in WinUI controls](https://help.syncfusion.com/winui/common/localization).
+The WinUI Kanban allows localization of all the static default strings, enabling you to translate them into any supported language. For detailed steps on how to localize the default strings, refer to the following link: [Localization in WinUI controls](https://help.syncfusion.com/winui/common/localization).
 
 ## Right to Left (RTL)
 
