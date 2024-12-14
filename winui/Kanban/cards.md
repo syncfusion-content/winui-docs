@@ -9,18 +9,18 @@ documentation: ug
 
 # Cards in WinUI Kanban (SfKanban) control
 
-The Kanban cards visually represent tasks and their progression through various stages. The default UI of each card can be customized using the following properties of the `KanbanModel`.
+The Kanban cards visually represent tasks and their progression through various stages. The default UI of each card can be customized using the following properties of the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
 
-* `Title` - Sets the title of the card.
-* `Description` - Sets the description text of the card.
-* `Category` - Sets the category of the card, determining which column it will be placed in.
-* `Assignee` - Defines the assignee associated with the card in the `KanbanModel`.
-* `Image` - Sets the image for the card, which is displayed on the right side in the default card template.
-* `IndicatorColorKey` - Specifies the indicator color for the card, commonly used for categorize or prioritize card based on color key values.
-* `Id` - Sets the unique ID of the card.
-* `Tags` - Specifies the tags for the card, displayed at the bottom of the default card template.
+* [Title](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Title) - Sets the title of the card.
+* [Description](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Description) - Sets the description text of the card.
+* [Category](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Category) - Sets the category of the card, determining which column it will be placed in.
+* [Assignee](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Assignee) - Defines the assignee associated with the card in the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
+* [Image](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Image) - Sets the image for the card, which is displayed on the right side in the default card template.
+* [IndicatorColorKey](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_IndicatorColorKey) - Specifies the indicator color for the card, commonly used for categorize or prioritize card based on color key values.
+* [Id](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Id) - Sets the unique ID of the card.
+* [Tags](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Tags) - Specifies the tags for the card, displayed at the bottom of the default card template.
 
-Below is an example that shows how to define values in the `KanbanModel`.
+Below is an example that shows how to define values in the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
 
 {% highlight C# %}
 
@@ -186,13 +186,13 @@ public class ViewModel
 
 ## Card appearance customization
 
-The card appearance customization can be achieved by using the `CardTemplate` and `CardTemplateSelector` properties in the `SfKanban`.
+The card appearance customization can be achieved by using the [CardTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplate) and [CardTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplateSelector) properties in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
 
 ### Customize card appearance using DataTemplate
 
-You can replace the entire card template with your own design and customize its appearance using the `CardTemplate` property in `SfKanban`.
+You can replace the entire card template with your own design and customize its appearance using the [CardTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplate) property in [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
 
-The following code snippet demonstrates, how to use the `CardTemplate` property to apply a custom template to kanban cards.
+The following code snippet demonstrates, how to use the [CardTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplate) property to apply a custom template to kanban cards.
 
 {% tabs %}
 {% highlight XAML hl_lines="3 4 5 6 7 8 9 10 11 12" %}
@@ -338,7 +338,7 @@ public class ViewModel
 
 ### Customize card appearance using DataTemplateSelector
 
-You can customize the card appearance by using the `CardTemplateSelector` property in the `SfKanban`. The `DataTemplateSelector` can choose a `DataTemplate` at runtime based on the value of a data-bound to kanban card appearance by using the `CardTemplateSelector`. It allows you to choose a different data template for each card, as well as to customize the appearance of a particular card based on certain conditions.
+You can customize the card appearance by using the [CardTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplateSelector) property in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). The `DataTemplateSelector` can choose a `DataTemplate` at runtime based on the value of a data-bound to kanban card appearance by using the [CardTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplateSelector). It allows you to choose a different data template for each card, as well as to customize the appearance of a particular card based on certain conditions.
 
 {% tabs %}
 {% highlight XAML hl_lines="28" %}
@@ -512,4 +512,6 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-N> The `DataContext` for both the `CardTemplate` and `CardTemplateSelector` properties in the `SfKanban` is set to `KanbanModel`.
+N> The `DataContext` for both the [CardTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplate) and [CardTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplateSelector) properties in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) is set to [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
+
+

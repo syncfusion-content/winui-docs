@@ -9,11 +9,11 @@ documentation: ug
 
 # Columns in WinUI Kanban (SfKanban) control
 
-The WinUI Kanban control organizes its layout into columns, each representing a distinct stage of a workflow, such as to-do, in progress, testing, validation, and completed. It supports various operations, including drag-and-drop, swim lane, and column toggling, all based on the defined columns.
+The WinUI Kanban control organizes its layout into columns, each representing a distinct stage of a workflow, such as to-do, in-progress, testing, validation, and completed. It supports various operations, including drag-and-drop, swim lane, and column toggling, all based on the defined columns.
 
 ## Change column width
 
-By default, the columns are sized smartly to arrange the default UI of the cards with better readability. You can also define the minimum and maximum widths for the columns in `SfKanban` using the `MinimumColumnWidth` and `MaximumColumnWidth` properties, respectively.
+By default, the columns are sized smartly to arrange the default UI of the cards with better readability. You can also define the minimum and maximum widths for the columns in [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) using the [MinimumColumnWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_MinimumColumnWidth) and [MaximumColumnWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_MaximumColumnWidth) properties, respectively.
 
 {% tabs %}
 {% highlight XAML hl_lines="3 4" %}
@@ -37,7 +37,7 @@ this.kanban.MaximumColumnWidth = 350;
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
@@ -138,7 +138,7 @@ public class ViewModel
 
 {% endtabs %}
 
-You can also define the exact width for the columns using `ColumnWidth` property of `SfKanban`.
+You can also define the exact width for the columns using [ColumnWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnWidth) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
 
 {% tabs %}
 {% highlight XAML hl_lines="3" %}
@@ -160,7 +160,7 @@ this.kanban.ColumnWidth = 320;
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
@@ -262,9 +262,9 @@ public class ViewModel
 
 ## Categorizing columns
 
-Columns are automatically generated based on the `Category` values in the `KanbanModel` from `ItemsSource`. To manually define columns, set `AutoGenerateColumns` to `false`, add `KanbanColumn` instances to the `Columns` property, and use the `Categories` property to assign categories to the columns. Cards will then be added accordingly.
+Columns are automatically generated based on the [Category](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Category) values in the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) from [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource). To manually define columns, set [AutoGenerateColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) to `false`, add [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) instances to the [Columns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) property, and use the [Categories](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Categories) property to assign categories to the columns. Cards will then be added accordingly.
 
-The following example code generates the columns automatically based on the `Category` values.
+The following example code generates the columns automatically based on the [Category](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Category) values.
 
 {% tabs %}
 
@@ -287,7 +287,7 @@ this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
@@ -389,7 +389,7 @@ public class ViewModel
 
 ### Populating Multi-Category Columns with Cards
 
-The Kanban board allows user to render a single column by mapping multiple categories using `Categories` property of `KanbanColumn` in `SfKanban`. For example, you can map the `In Progress` and `Validated` types under the `In progress` column.
+The Kanban board allows user to render a single column by mapping multiple categories using [Categories](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Categories) property of [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) in [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). For example, you can map the `In Progress` and `Validated` types under the `In progress` column.
 
 {% tabs %}
 {% highlight XAML hl_lines="5" %}
@@ -397,9 +397,9 @@ The Kanban board allows user to render a single column by mapping multiple categ
 <kanban:SfKanban x:Name="kanban"
                  AutoGenerateColumns="False" 
                  ItemsSource="{Binding TaskDetails}">
-        <kanban:KanbanColumn HeaderText="To Do" Categories="Open" />
-        <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress,Validated" />
-        <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
+    <kanban:KanbanColumn HeaderText="To Do" Categories="Open" />
+    <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress,Validated" />
+    <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -418,7 +418,7 @@ this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
@@ -538,7 +538,7 @@ The WinUI Kanban control allows you to customize the header text, column header 
 
 ### Customize the header text
 
-You can use the `HeaderText` property of `KanbanColumn` to customize the header text of a column in the kanban control.
+You can use the [HeaderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_HeaderText) property of [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) to customize the header text of a column in the kanban control.
 
 {% tabs %}
 {% highlight XAML hl_lines="4 5 6" %}
@@ -546,9 +546,9 @@ You can use the `HeaderText` property of `KanbanColumn` to customize the header 
 <kanban:SfKanban x:Name="kanban"
                  AutoGenerateColumns="False" 
                  ItemsSource="{Binding TaskDetails}">
-        <kanban:KanbanColumn HeaderText="To Do" Categories="Open" />
-        <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
-        <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
+    <kanban:KanbanColumn HeaderText="To Do" Categories="Open" />
+    <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
+    <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -567,7 +567,7 @@ this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
@@ -671,7 +671,7 @@ public class ViewModel
 
 ### Customize column header appearance using DataTemplate
 
-You can customize the column header appearance by using the `ColumnHeaderTemplate` property in the `SfKanban` control. The `DataContext` for the `ColumnHeaderTemplate` property in `SfKanban` is set to the `KanbanModel`.
+You can customize the column header appearance by using the [ColumnHeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnHeaderTemplate) property in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control. The `DataContext` for the [ColumnHeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnHeaderTemplate) property in [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) is set to the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
 
 {% tabs %}
 {% highlight XAML hl_lines="3 4 5 6 7 8 9" %}
@@ -692,7 +692,13 @@ You can customize the column header appearance by using the `ColumnHeaderTemplat
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight C# %}
+
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
+
+{% endhighlight %}
+
+{% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
@@ -796,7 +802,7 @@ public class ViewModel
 
 ## Expand/Collapse column
 
-The Kanban allows you to programmatically expand or collapse columns using the `IsExpanded` property of `KanbanColumn` in the `SfKanban` control. By default, columns can be expanded or collapsed by tapping the toggle button placed at the top-right corner of the kanban column header.
+The Kanban allows you to programmatically expand or collapse columns using the [IsExpanded](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_IsExpanded) property of [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control. By default, columns can be expanded or collapsed by tapping the toggle button placed at the top-right corner of the kanban column header.
 
 {% tabs %}
 {% highlight XAML hl_lines="4" %}
@@ -804,9 +810,9 @@ The Kanban allows you to programmatically expand or collapse columns using the `
 <kanban:SfKanban x:Name="kanban"
                  AutoGenerateColumns="False" 
                  ItemsSource="{Binding TaskDetails}">
-        <kanban:KanbanColumn HeaderText="To Do" Categories="Open" IsExpanded="False"/>
-        <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
-        <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
+    <kanban:KanbanColumn HeaderText="To Do" Categories="Open" IsExpanded="False"/>
+    <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
+    <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -825,7 +831,7 @@ this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
@@ -929,7 +935,7 @@ public class ViewModel
 
 ## Card drag and drop
 
-Cards can be dragged and dropped across columns, within columns, or across swimlane rows to modify the card's status. To enable drag-and-drop functionality within the kanban, set the `AllowDrag` property of `KanbanColumn` to `true`. To disable drag-and-drop, set this property to `false`. The default value is `true`.
+Cards can be dragged and dropped across columns, within columns, or across swimlane rows to modify the card's status. To enable drag-and-drop functionality within the kanban, set the [AllowDrag](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_AllowDrag) property of [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) to `true`. To disable drag-and-drop, set this property to `false`. The default value is `true`.
 
 {% tabs %}
 {% highlight XAML hl_lines="4" %}
@@ -937,9 +943,9 @@ Cards can be dragged and dropped across columns, within columns, or across swiml
 <kanban:SfKanban x:Name="kanban"
                  AutoGenerateColumns="False" 
                  ItemsSource="{Binding TaskDetails}">
-        <kanban:KanbanColumn HeaderText="To Do" Categories="Open" AllowDrag="False" AllowDrop="False"/>
-        <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
-        <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
+    <kanban:KanbanColumn HeaderText="To Do" Categories="Open" AllowDrag="False" AllowDrop="False"/>
+    <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
+    <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -958,7 +964,7 @@ this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
@@ -1061,7 +1067,7 @@ public class ViewModel
 
 ### Placeholder in WinUI Kanban control
 
-The placeholders in the WinUI Kanban control provide a visual indication of the exact position where the card has been dragged and where it will be placed within a Kanban column during a drag-and-drop operation.
+The placeholders in the WinUI Kanban control visually indicate the exact position where a card is dragged and where it will be placed within a Kanban column during a drag-and-drop operation.
 
 The appearance of drag-and-drop placeholders in the WinUI Kanban control can be customized by modifying the values of the predefined theme keys.
 
@@ -1069,17 +1075,17 @@ The appearance of drag-and-drop placeholders in the WinUI Kanban control can be 
 
 The following theme keys control the appearance of the drag placeholder:
 
-* SyncfusionKanbanPlaceholderBackground
-* SyncfusionKanbanPlaceholderBorderBrush
-* SyncfusionKanbanPlaceholderBorderThickness
+* `SyncfusionKanbanPlaceholderBackground`
+* `SyncfusionKanbanPlaceholderBorderBrush`
+* `SyncfusionKanbanPlaceholderBorderThickness`
 
 #### Drop placeholder theme keys
 
 The following theme keys control the appearance of the drop placeholder:
 
-* SyncfusionKanbanPlaceholderSelectedBackground
-* SyncfusionKanbanPlaceholderSelectedBorderBrush
-* SyncfusionKanbanPlaceholderSelectedBorderThickness
+* `SyncfusionKanbanPlaceholderSelectedBackground`
+* `SyncfusionKanbanPlaceholderSelectedBorderBrush`
+* `SyncfusionKanbanPlaceholderSelectedBorderThickness`
 
 {% tabs %}
 {% highlight XAML hl_lines="3 4 5 6 7 8" %}
@@ -1104,7 +1110,13 @@ The following theme keys control the appearance of the drop placeholder:
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight C# %}
+
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
+
+{% endhighlight %}
+
+{% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
@@ -1207,7 +1219,7 @@ public class ViewModel
 
 ## Work-in-Progress (WIP) limit and indications
 
-The WinUI Kanban control allows users to set limits on the number of tasks in each column at every stage of the workflow, helping to prevent overload. The minimum and maximum number of items allowed in a column can be customized using the `MinimumCount` and `MaximumCount` properties in `KanbanColumn`.
+The WinUI Kanban control allows users to set limits on the number of tasks in each column at every stage of the workflow, helping to prevent task overload. The minimum and maximum number of items allowed in a column can be customized using the [MinimumCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_MinimumCount) and [MaximumCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_MaximumCount) properties in [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html).
 
 The Kanban control also supports built-in error bars that change color when the WIP limit is exceeded or when a task fails validation, making it easier to quickly identify bottlenecks in the process.
 
@@ -1217,9 +1229,9 @@ The Kanban control also supports built-in error bars that change color when the 
 <kanban:SfKanban x:Name="kanban"
                  AutoGenerateColumns="False" 
                  ItemsSource="{Binding TaskDetails}">
-            <kanban:KanbanColumn HeaderText="To Do" Categories="Open" MaximumCount="1" />
-            <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" MinimumCount="2" />
-            <kanban:KanbanColumn HeaderText="Done" Categories="Done" MinimumCount="1" MaximumCount="5" />
+    <kanban:KanbanColumn HeaderText="To Do" Categories="Open" MaximumCount="1" />
+    <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" MinimumCount="2" />
+    <kanban:KanbanColumn HeaderText="Done" Categories="Done" MinimumCount="1" MaximumCount="5" />
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -1238,7 +1250,7 @@ this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
