@@ -285,6 +285,8 @@ this.Schedule.MonthViewSettings.ShowAgendaView = true;
 {% endhighlight %}
 {% endtabs %}
 
+![Number-of-visible-weeks-in-month-view-in-WinUI-Scheduler](Month-View_Imges/number-of-visible-weeks-in-month-view-in-winui-scheduler.webp)
+
 N>
 * The week number range is limited to values between 1 and 6. Any value outside this range will cause the [`NumberOfVisibleWeeks`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_NumberOfVisibleWeeks) to default to 6.
 * The [`NumberOfVisibleWeeks`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_NumberOfVisibleWeeks) property dynamically controls the number of weeks displayed in the scheduler's month view.
