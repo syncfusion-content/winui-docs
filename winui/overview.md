@@ -89,6 +89,11 @@ The Syncfusion WinUI Controls are the suite, ever needed to create state of art 
 		</td>
 	</tr>
 	<tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/kanban/getting-started">Kanban</a><br/>
+		</td>
+	</tr>
+	<tr>
 		<td rowspan="2" valign="top">
 			NAVIGATION<br/>
 		</td>
