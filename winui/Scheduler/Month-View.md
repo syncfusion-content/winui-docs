@@ -270,7 +270,8 @@ The number of weeks visible in the month view can be changed by setting the [`Nu
 <scheduler:SfScheduler x:Name="Schedule" 
                        ViewType="Month">
     <scheduler:SfScheduler.MonthViewSettings>
-        <scheduler:MonthViewSetting NumberOfVisibleWeeks="3"/>
+        <scheduler:MonthViewSetting NumberOfVisibleWeeks="3"
+                                    ShowAgendaView="True"/>
     </scheduler:SfScheduler.MonthViewSettings>
 </scheduler:SfScheduler>
 
@@ -279,6 +280,7 @@ The number of weeks visible in the month view can be changed by setting the [`Nu
 
 this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.MonthViewSettings.NumberOfVisibleWeeks = 3;
+this.Schedule.MonthViewSettings.ShowAgendaView = true;
 
 {% endhighlight %}
 {% endtabs %}
