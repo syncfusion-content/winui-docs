@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About WinUI NumberBox control | Syncfusion
-description: Learn here all about introduction of Syncfusion WinUI NumberBox (SfNumberBox) control, its features, and more.
+title: About WinUI NumberBox control | Syncfusion&reg;
+description: Learn here all about introduction of Syncfusion&reg; WinUI NumberBox (SfNumberBox) control, its features, and more.
 platform: winui
 control: SfNumberBox
 documentation: ug

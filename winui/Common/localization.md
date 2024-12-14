@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Localization of Syncfusion WinUI Controls
-description: Learn about localization support in Syncfusion WinUI controls using the .resw files and editing default strings of WinUI controls.
+title: Localization of Syncfusion&reg; WinUI Controls
+description: Learn about localization support in Syncfusion&reg; WinUI controls using the .resw files and editing default strings of WinUI controls.
 platform: winui
 control: Localization
 documentation: ug
 ---
 
-# Localization of Syncfusion WinUI controls
+# Localization of Syncfusion&reg; WinUI controls
 
 Localization is the process of making an application multilingual by formatting the content according to the languages. This involves configuring the application for a specific language. For example, 
- `en-US` is the language of English spoken in the United States, while `en-GB` is the language of English spoken in Great Britain. Syncfusion WinUI controls can be localized by adding resource files for each language.
+ `en-US` is the language of English spoken in the United States, while `en-GB` is the language of English spoken in Great Britain. Syncfusion&reg; WinUI controls can be localized by adding resource files for each language.
 
 ## Changing application language
 
@@ -42,7 +42,7 @@ The following screenshot illustrates how the localization is applied to the data
 
 The following steps can be used to generate .resw files for any language:
 
-N> The default resource files of all Syncfusion WinUI libraries can be obtained from [GitHub](https://github.com/syncfusion/winui-controls-localization-resource-files).
+N> The default resource files of all Syncfusion&reg; WinUI libraries can be obtained from [GitHub](https://github.com/syncfusion/winui-controls-localization-resource-files).
 
 1) Right-click the project and add a New folder named as "Resources".
 
@@ -62,4 +62,4 @@ N> If the `SfDataGrid` control is used in the application, copy and paste the `S
 
 ## Editing default language strings
 
-The default string of any control can be changed by adding the default .resw files (from [GitHub](https://github.com/syncfusion/winui-controls-localization-resource-files)) to the Resources folder of the application. If the default string is added, Syncfusion WinUI controls reads it from the .resw files of the application.
+The default string of any control can be changed by adding the default .resw files (from [GitHub](https://github.com/syncfusion/winui-controls-localization-resource-files)) to the Resources folder of the application. If the default string is added, Syncfusion&reg; WinUI controls reads it from the .resw files of the application.
