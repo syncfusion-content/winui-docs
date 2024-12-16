@@ -46,7 +46,7 @@ The Syncfusion WinUI Controls are the suite, ever needed to create state of art 
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="8" valign="top">
+		<td rowspan="9" valign="top">
 			DATA VISUALIZATION<br/>
 		</td>
 		<td>
