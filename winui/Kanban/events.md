@@ -7,14 +7,14 @@ control: SfKanban
 documentation: ug
 ---
 
-# Events in WinUI Kanban Control
+# Events in WinUI Kanban (SfKanban)
 
-## Notifying Kanban card drag start
+## DragStarting
 
-The `CardDragStarting` event occurs when the card start to drag. We can get the below details from the `CardDragStarting` event.
+The [CardDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDragStarting) event occurs when a card begins to be dragged. We can get the following details from the [CardDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDragStarting) event.
 
-* Column -  Returns the source column from which the card is being dragged.
-* Card - Returns the dragging card in the kanban.
+* [Column](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragStartingEventArgs_Column) -  Returns the source column from which the card is being dragged.
+* [Card](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragStartingEventArgs_Card) - Returns the dragging card in the kanban.
 
 {% tabs %}
 {% highlight XAML hl_lines="3" %}
@@ -36,8 +36,8 @@ this.kanban.CardDragStarting += this.OnKanbanCardDragStarting;
 
 private void OnKanbanCardDragStarting(object sender, KanbanCardDragStartingEventArgs e)
 {
-    var selectedCard = e.Card;
-    var selectedcolumn = e.Column;
+    var draggingCard = e.Card;
+    var draggingColumn = e.Column;
 }
 
 {% endhighlight %}
@@ -143,14 +143,14 @@ public class ViewModel
 
 {% endtabs %}
 
-## Notifying Kanban card drag over 
+## DragOver
 
-The `CardDragOver` event occurs when card drag started in a column. We can get the below details from the `CardDragOver` event.
+The [CardDragOver](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDragOver) event occurs when a card is being dragged over a column. We can get the following details from the [CardDragOver](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDragOver) event.
 
-* Column - Returns the column in which the card is currently being dragged.
-* CurrentIndex - Returns the current index position of the card within its column.
-* CurrentColumnIndex - Returns the current index of the column that contains the card.
-* CurrentRowIndex - Returns the current row index of the swimlane that contains the card. The current row index is relevant only for the swimlane column and is used to get the swimlane's index.
+* [Column](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragOverEventArgs_Column) - Returns the column in which the card is currently being dragged.
+* [CurrentIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragOverEventArgs_CurrentIndex) - Returns the current index position of the card within its column.
+* [CurrentColumnIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragOverEventArgs_CurrentColumnIndex) - Returns the current index of the column that contains the card.
+* [CurrentRowIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragOverEventArgs_CurrentRowIndex) - The current row index is applicable only for the swimlane column and is used to get the swimlane's index.
 
 {% tabs %}
 {% highlight XAML hl_lines="3" %}
@@ -281,19 +281,19 @@ public class ViewModel
 
 {% endtabs %}
 
-## Notifying Kanban card drop
+## Drop
 
-The `CardDrop` event occurs when leaving the dragging card from one column. We can get the below details from the `CardDrop` event.
+The [CardDrop](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDrop) event occurs when a dragged card is dropped into a column. We can get the following details from the [CardDrop](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDrop) event.
 
-* SourceColumn - Returns the target column out of which the user drags the card.
-* PreviousCardIndex - Returns the integer value that indicates the previous card index while dragging into the next column.
-* PreviousColumnIndex - Returns the integer value indicating the previous card's column index while drag enters next column.
-* PreviousRowIndex - Returns the integer value indicating the previous card's swimlane index while drag enters next swimlane. It is applicable only for the swimlane column.
-* TargetColumn - Returns the target column upon which the card is dropped.
-* TargetSwimlane - Returns the target swimlane on which the card is dropped.
-* TargetCardIndex - Returns the index in the target column where the card is going to be inserted.
-* TargetColumnIndex - Returns the target column index where the card is going to be inserted.
-* TargetRowIndex - Returns the integer value indicating the target row index of the swimlane where the card is going to be inserted. It is applicable only for the swimlane column.
+* [SourceColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDropEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDropEventArgs_SourceColumn) - Returns the column from which the user drags the card.
+* [PreviousCardIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDropEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDropEventArgs_PreviousCardIndex) - Returns the integer value that indicates the previous card index while dragging into the next column.
+* [PreviousColumnIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDropEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDropEventArgs_PreviousColumnIndex) - Returns the integer value indicating the previous card's column index while drag enters next column.
+* [PreviousRowIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDropEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDropEventArgs_PreviousRowIndex) - Returns the integer value indicating the previous card's swimlane index while drag enters next swimlane. It is applicable only for the swimlane column.
+* [TargetColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDropEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDropEventArgs_TargetColumn) - Returns the target column upon which the card is dropped.
+* [TargetSwimlane](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDropEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDropEventArgs_TargetSwimlane) - Returns the target swimlane on which the card is dropped.
+* [TargetCardIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDropEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDropEventArgs_TargetCardIndex) - Returns the index in the target column where the card is going to be inserted.
+* [TargetColumnIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDropEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDropEventArgs_TargetColumnIndex) - Returns the target column index where the card is going to be inserted.
+* [TargetRowIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDropEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDropEventArgs_TargetRowIndex) - Returns the integer value indicating the target row index of the swimlane where the card is going to be inserted. It is applicable only for the swimlane column.
 
 {% tabs %}
 {% highlight XAML hl_lines="3" %}
@@ -429,13 +429,13 @@ public class ViewModel
 
 {% endtabs %}
 
-## Notifying Kanban card tap
+## CardTapped
 
-The `CardTapped` event occurs when the card is tapped. We can get the below details from the `CardTapped` event.
+The [CardTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTapped) event occurs when the card is tapped. We can get the following details from the [CardTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTapped) event.
 
-* SelectedCard - Returns the instance of the card that was tapped.
-* SelectedColumn - Returns the instance of the column containing the tapped card.
-* SelectedCardIndex - Returns the index position of the tapped card within its column.
+* [SelectedCard](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardTappedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardTappedEventArgs_SelectedCard) - Returns the instance of the card that was tapped.
+* [SelectedColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardTappedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardTappedEventArgs_SelectedColumn) - Returns the instance of the column containing the tapped card.
+* [SelectedCardIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardTappedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardTappedEventArgs_SelectedCardIndex) - Returns the index position of the tapped card within its column.
 
 {% tabs %}
 {% highlight XAML hl_lines="3" %}
@@ -565,9 +565,13 @@ public class ViewModel
 
 {% endtabs %}
 
-#### Command
+## Command
 
-The `CardTappedCommand` property is used to associate a command with an instance of SfKanban. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
+Kanban commands allow to map [CardTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTapped) event to command which supports the MVVM (Model-View-ViewModel) pattern.
+
+### CardTappedCommand
+
+The [CardTappedCommand](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTappedCommand) is triggered when a card is tapped, passing the [KanbanCardTappedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardTappedEventArgs.html) as a parameter.
 
 {% tabs %}
 {% highlight XAML hl_lines="3" %}
@@ -582,7 +586,7 @@ The `CardTappedCommand` property is used to associate a command with an instance
 
 {% endhighlight %}
 
-{% highlight C# tabtitle="ViewModel"  %}
+{% highlight C# tabtitle="ViewModel" hl_lines="25 113 114 115 116 117 118 119 120 121 122 123 125 126 127 128 129 130 131 132 133" %}
 
     public class ViewModel
     {
@@ -608,7 +612,7 @@ The `CardTappedCommand` property is used to associate a command with an instance
         public ViewModel()
         {
             this.TaskDetails = this.GetTaskDetails();
-            CardTappedCommand = new RelayCommand(OnCardTapped, CanExecuteCardTapped);
+            this.CardTappedCommand = new RelayCommand(OnCardTapped, CanExecuteCardTapped);
         }
 
         #endregion
@@ -699,7 +703,7 @@ The `CardTappedCommand` property is used to associate a command with an instance
         /// <summary>
         /// Handles the event when a Kanban card is tapped.
         /// </summary>
-        /// <param name="parameter"></param>
+        /// <param name="parameter">The object.</param>
         private void OnCardTapped(object parameter)
         {
             if (parameter is KanbanCardTappedEventArgs args)
@@ -709,10 +713,10 @@ The `CardTappedCommand` property is used to associate a command with an instance
         }
 
         /// <summary>
-        /// Determines whether card tapped can be executed.
+        /// Determines whether the CardTapped command can be executed.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <returns></returns>
+        /// <param name="sender">The source of the command.</param>
+        /// <returns>Returns a boolean indicating whether the command can be executed.</returns>
         private bool CanExecuteCardTapped(object sender)
         {
             return true;
