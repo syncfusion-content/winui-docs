@@ -46,7 +46,7 @@ The Syncfusion WinUI Controls are the suite, ever needed to create state of art 
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="8" valign="top">
+		<td rowspan="9" valign="top">
 			DATA VISUALIZATION<br/>
 		</td>
 		<td>
@@ -86,6 +86,11 @@ The Syncfusion WinUI Controls are the suite, ever needed to create state of art 
 	<tr>
 		<td>
 			<a href="https://help.syncfusion.com/winui/pyramid-chart/getting-started">Pyramid Chart</a><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="https://help.syncfusion.com/winui/kanban/getting-started">Kanban</a><br/>
 		</td>
 	</tr>
 	<tr>
