@@ -150,7 +150,7 @@ The [CardDragOver](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanba
 * [Column](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragOverEventArgs_Column) - Returns the column in which the card is currently being dragged.
 * [CurrentIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragOverEventArgs_CurrentIndex) - Returns the current index position of the card within its column.
 * [CurrentColumnIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragOverEventArgs_CurrentColumnIndex) - Returns the current index of the column that contains the card.
-* [CurrentRowIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragOverEventArgs_CurrentRowIndex) - The current row index is applicable only for the swimlane column and is used to get the swimlane's index.
+* [CurrentRowIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragOverEventArgs_CurrentRowIndex) - Returns the current row index of the swimlane that contains the card. The current row index is applicable only for the swimlane column and is used to get the swimlane's index.
 
 {% tabs %}
 {% highlight XAML hl_lines="3" %}
