@@ -201,10 +201,10 @@ The following code snippet demonstrates, how to use the `CardTemplate` property 
                  ItemsSource="{Binding TaskDetails}">
     <kanban:SfKanban.CardTemplate>
         <DataTemplate>
-            <Border BorderBrush="Green" BorderThickness="1" CornerRadius="10" Background="LightGreen">
+            <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="3" Background="#F3F3F2">
                 <StackPanel Margin="10">
                     <TextBlock Text="{Binding Title}" TextAlignment="Center" FontWeight="Bold" FontSize="14" />
-                    <TextBlock Text="{Binding Description}" TextAlignment="Center" FontSize="14" TextWrapping="Wrap" />
+                    <TextBlock Text="{Binding Description}" TextAlignment="Center" FontSize="12" TextWrapping="Wrap" Margin="5" />
                 </StackPanel>
             </Border>
         </DataTemplate>

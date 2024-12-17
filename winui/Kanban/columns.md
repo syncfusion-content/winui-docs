@@ -835,9 +835,9 @@ The Kanban allows you to programmatically expand or collapse columns using the `
 <kanban:SfKanban x:Name="kanban"
                  AutoGenerateColumns="False" 
                  ItemsSource="{Binding TaskDetails}">
-        <kanban:KanbanColumn HeaderText="To Do" Categories="Open" IsExpanded="False"/>
+        <kanban:KanbanColumn HeaderText="To Do" Categories="Open" />
         <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
-        <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
+        <kanban:KanbanColumn HeaderText="Done" Categories="Done" IsExpanded="False" />
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -850,9 +850,9 @@ The Kanban allows you to programmatically expand or collapse columns using the `
 this.kanban.AutoGenerateColumns = false;
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
-this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "To Do", Categories = "Open", IsExpanded = false });
+this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "To Do", Categories = "Open" });
 this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "In Progress", Categories = "In Progress" });
-this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "Done" });
+this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "Done", IsExpanded = false });
 
 {% endhighlight %}
 
