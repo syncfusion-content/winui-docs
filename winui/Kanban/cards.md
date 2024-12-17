@@ -152,7 +152,7 @@ public class ViewModel
         taskDetail.Title = "New Feature";
         taskDetail.Id = "29574";
         taskDetail.Description = "Dragging events support for Kanban";
-        taskDetail.Category = "Closed";
+        taskDetail.Category = "In Progress";
         taskDetail.IndicatorColorKey = "Normal";
         taskDetail.Tags = new List<string>() { "New Control" };
         taskDetail.Image = new Image
@@ -166,7 +166,7 @@ public class ViewModel
         taskDetail.Title = "WF Issue";
         taskDetail.Id = "1254";
         taskDetail.Description = "HorizontalAlignment for tooltip is not working";
-        taskDetail.Category = "Review";
+        taskDetail.Category = "Closed";
         taskDetail.IndicatorColorKey = "High";
         taskDetail.Tags = new List<string>() { "Bug fixing" };
         taskDetail.Image = new Image
