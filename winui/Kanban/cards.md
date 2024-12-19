@@ -184,6 +184,8 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
+![cards-indicator-color-in-winui-kanban](images/cards/cards-indicator-color-in-winui-kanban.png)
+
 ## Card appearance customization
 
 The card appearance customization can be achieved by using the [CardTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplate) and [CardTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplateSelector) properties in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
@@ -336,6 +338,8 @@ public class ViewModel
 
 {% endhighlight %}
 {% endtabs %}
+
+![card-template-in-winui-kanban](images/cards/card-template-in-winui-kanban.png)
 
 ### Customize card appearance using DataTemplateSelector
 
@@ -513,5 +517,7 @@ public class ViewModel
 
 {% endhighlight %}
 {% endtabs %}
+
+![card-template-selector-in-winui-kanban](images/cards/card-template-selector-in-winui-kanban.png)
 
 N> The `DataContext` for both the [CardTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplate) and [CardTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplateSelector) properties in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) is set to [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
