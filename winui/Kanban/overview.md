@@ -16,6 +16,9 @@ The Syncfusion WinUI Kanban control provides an efficient way to visualize workf
 ## Key features
 
 * **Work-in-progress (WIP) limit**: Users can set task limits per stage, preventing overload and improving efficiency.
+
+![work-in-progress-limit-in-winui-kanban](images/overview/work-in-progress-limit-in-winui-kanban.png)
+
 * **Cards**: Display tasks, progress, and priority.
 * **Columns**: Organize work into columns for stages like to-do, in-progress, and completed.
 
