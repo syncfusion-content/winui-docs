@@ -138,6 +138,8 @@ public class ViewModel
 
 {% endtabs %}
 
+![minimum-maximum-column-width-in-winui-kanban](images/columns/minimum-maximum-column-width-in-winui-kanban.png)
+
 You can also define the exact width for the columns using [ColumnWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnWidth) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
 
 {% tabs %}
@@ -259,6 +261,8 @@ public class ViewModel
 
 {% endhighlight %}
 {% endtabs %}
+
+![column-width-in-winui-kanban](images/columns/column-width-in-winui-kanban.png)
 
 ## Categorizing columns
 
@@ -386,6 +390,8 @@ public class ViewModel
 
 {% endhighlight %}
 {% endtabs %}
+
+![categorizing-columns-in-winui-kanban](images/columns/categorizing-columns-in-winui-kanban.png)
 
 ### Populating Multi-Category Columns with Cards
 
@@ -531,6 +537,8 @@ public class ViewModel
 
 {% endhighlight %}
 {% endtabs %}
+
+![multi-category-columns-in-winui-kanban](images/columns/multi-category-columns-in-winui-kanban.png)
 
 ## Customize columns header appearance
 
@@ -800,6 +808,8 @@ public class ViewModel
 
 {% endtabs %}
 
+![column-header-template-in-winui-kanban](images/columns/column-header-template-in-winui-kanban.png)
+
 ## Expand/Collapse column
 
 The Kanban allows you to programmatically expand or collapse columns using the [IsExpanded](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_IsExpanded) property of [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control. By default, columns can be expanded or collapsed by tapping the toggle button placed at the top-right corner of the kanban column header.
@@ -932,6 +942,8 @@ public class ViewModel
 {% endhighlight %}
 
 {% endtabs %}
+
+![expand-collapse-column-in-winui-kanban](images/columns/expand-collapse-column-in-winui-kanban.png)
 
 ## Card drag and drop
 
@@ -1217,6 +1229,8 @@ public class ViewModel
 
 {% endtabs %}
 
+![placeholder-in-winui-kanban](images/columns/placeholder-in-winui-kanban.png)
+
 ## Work-in-Progress (WIP) limit and indications
 
 The WinUI Kanban control allows users to set limits on the number of tasks in each column at every stage of the workflow, helping to prevent overload. The minimum and maximum number of items allowed in a column can be customized using the [MinimumCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_MinimumCount) and [MaximumCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_MaximumCount) properties in [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html).
@@ -1349,3 +1363,5 @@ public class ViewModel
 
 {% endhighlight %}
 {% endtabs %}
+
+![work-in-progress-limit-in-winui-kanban](images/columns/work-in-progress-limit-in-winui-kanban.png)

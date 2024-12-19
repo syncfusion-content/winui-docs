@@ -163,6 +163,8 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
+![swimlane-in-winui-kanban](images/swimlane/swimlane-in-winui-kanban.png)
+
 ## Customize swimlane header
 
 The WinUI Kanban control allows you to customize the appearance of swimlane headers using the [SwimlaneHeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_SwimlaneHeaderTemplate) property. This enables you to create a unique design for the header displayed at the beginning of each swimlane group.
@@ -385,3 +387,5 @@ public class ViewModel
 {% endtabs %}
 
 N> The `DataContext` for the [SwimlaneHeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_SwimlaneHeaderTemplate) property in [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) is set to the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
+
+![swimlane-header-template-in-winui-kanban](images/swimlane/swimlane-header-template-in-winui-kanban.png)
