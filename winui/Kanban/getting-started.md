@@ -231,7 +231,6 @@ this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
 this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "To Do", Categories = "Open" });
 this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "In Progress", Categories = "In Progress" });
-this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Code Review", Categories = "Code Review" });
 this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "Done" });
 
 {% endhighlight %}
