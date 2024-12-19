@@ -20,8 +20,8 @@ By default, the columns are sized smartly to arrange the default UI of the cards
 
 <kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}"
-                 MinimumColumnWidth="300"
-                 MaximumColumnWidth="350">
+                 MinimumColumnWidth="200"
+                 MaximumColumnWidth="250">
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -32,8 +32,8 @@ By default, the columns are sized smartly to arrange the default UI of the cards
 {% highlight C# hl_lines="2 3" %}
 
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
-this.kanban.MinimumColumnWidth = 300;
-this.kanban.MaximumColumnWidth = 350;
+this.kanban.MinimumColumnWidth = 200;
+this.kanban.MaximumColumnWidth = 250;
 
 {% endhighlight %}
 
@@ -145,7 +145,7 @@ You can also define the exact width for the columns using [ColumnWidth](https://
 
 <kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}"
-                 ColumnWidth="320">
+                 ColumnWidth="280">
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -156,7 +156,7 @@ You can also define the exact width for the columns using [ColumnWidth](https://
 {% highlight C# hl_lines="2" %}
 
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
-this.kanban.ColumnWidth = 320;
+this.kanban.ColumnWidth = 280;
 
 {% endhighlight %}
 
@@ -674,15 +674,46 @@ public class ViewModel
 You can customize the column header appearance by using the [ColumnHeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnHeaderTemplate) property in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control. The `DataContext` for the [ColumnHeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnHeaderTemplate) property in [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) is set to the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
 
 {% tabs %}
-{% highlight XAML hl_lines="3 4 5 6 7 8 9" %}
+{% highlight XAML hl_lines="3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40" %}
 
 <kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}">
     <kanban:SfKanban.ColumnHeaderTemplate>
         <DataTemplate>
-            <StackPanel Background="LightBlue">
-                <TextBlock Margin="10" Text="{Binding  HeaderText}" Foreground="Red" HorizontalAlignment="Center"/>
-            </StackPanel>
+            <Grid Height="40" Background="LightBlue" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="{Binding HeaderText}" Grid.Row="0"
+                            Margin="6,2,0,0"
+                            HighContrastAdjustment="None"
+                            Foreground="Black"
+                            FontWeight="Bold"
+                            FontFamily="Lucida Handwriting"
+                            FontStyle="Italic"
+                            FontSize="13"></TextBlock>
+                <StackPanel Orientation="Horizontal" Grid.Row="1">
+                    <TextBlock Text="Items Count : "
+                                HorizontalAlignment="Center" 
+                                Margin="6,1,0,0"
+                                HighContrastAdjustment="None"
+                                Foreground="Black"
+                                FontWeight="Normal"
+                                FontStyle="Italic"
+                                FontSize="11">                                
+                    </TextBlock>
+                    <TextBlock Text="{Binding CardsCount}" 
+                                HorizontalAlignment="Center"
+                                Margin="3,1,0,0"
+                                HighContrastAdjustment="None"
+                                Foreground="Black"
+                                FontWeight="Normal"
+                                FontStyle="Italic"
+                                FontSize="11">                                
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
         </DataTemplate>
     </kanban:SfKanban.ColumnHeaderTemplate>
     <kanban:SfKanban.DataContext>
@@ -810,9 +841,9 @@ The Kanban allows you to programmatically expand or collapse columns using the [
 <kanban:SfKanban x:Name="kanban"
                  AutoGenerateColumns="False" 
                  ItemsSource="{Binding TaskDetails}">
-    <kanban:KanbanColumn HeaderText="To Do" Categories="Open" IsExpanded="False"/>
-    <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
-    <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
+        <kanban:KanbanColumn HeaderText="To Do" Categories="Open" />
+        <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
+        <kanban:KanbanColumn HeaderText="Done" Categories="Done" IsExpanded="False" />
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -825,9 +856,9 @@ The Kanban allows you to programmatically expand or collapse columns using the [
 this.kanban.AutoGenerateColumns = false;
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
-this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "To Do", Categories = "Open", IsExpanded = false });
+this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "To Do", Categories = "Open" });
 this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "In Progress", Categories = "In Progress" });
-this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "Done" });
+this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "Done", IsExpanded = false });
 
 {% endhighlight %}
 
@@ -1046,7 +1077,7 @@ public class ViewModel
         taskDetail.Title = "New Feature";
         taskDetail.Id = "29574";
         taskDetail.Description = "Dragging events support for Kanban";
-        taskDetail.Category = "Closed";
+        taskDetail.Category = "Done";
         taskDetail.IndicatorColorKey = "Normal";
         taskDetail.Tags = new List<string>() { "New Control" };
         taskDetail.Image = new Image
@@ -1332,7 +1363,7 @@ public class ViewModel
         taskDetail.Title = "New Feature";
         taskDetail.Id = "29574";
         taskDetail.Description = "Dragging events support for Kanban";
-        taskDetail.Category = "Closed";
+        taskDetail.Category = "Done";
         taskDetail.IndicatorColorKey = "Normal";
         taskDetail.Tags = new List<string>() { "New Control" };
         taskDetail.Image = new Image
