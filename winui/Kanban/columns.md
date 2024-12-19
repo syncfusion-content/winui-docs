@@ -20,8 +20,8 @@ By default, the columns are sized smartly to arrange the default UI of the cards
 
 <kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}"
-                 MinimumColumnWidth="300"
-                 MaximumColumnWidth="350">
+                 MinimumColumnWidth="200"
+                 MaximumColumnWidth="250">
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -32,8 +32,8 @@ By default, the columns are sized smartly to arrange the default UI of the cards
 {% highlight C# hl_lines="2 3" %}
 
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
-this.kanban.MinimumColumnWidth = 300;
-this.kanban.MaximumColumnWidth = 350;
+this.kanban.MinimumColumnWidth = 200;
+this.kanban.MaximumColumnWidth = 250;
 
 {% endhighlight %}
 
@@ -138,6 +138,8 @@ public class ViewModel
 
 {% endtabs %}
 
+![minimum-maximum-column-width-in-winui-kanban](images/columns/minimum-maximum-column-width-in-winui-kanban.png)
+
 You can also define the exact width for the columns using [ColumnWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnWidth) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
 
 {% tabs %}
@@ -145,7 +147,7 @@ You can also define the exact width for the columns using [ColumnWidth](https://
 
 <kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}"
-                 ColumnWidth="320">
+                 ColumnWidth="280">
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -156,7 +158,7 @@ You can also define the exact width for the columns using [ColumnWidth](https://
 {% highlight C# hl_lines="2" %}
 
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
-this.kanban.ColumnWidth = 320;
+this.kanban.ColumnWidth = 280;
 
 {% endhighlight %}
 
@@ -259,6 +261,8 @@ public class ViewModel
 
 {% endhighlight %}
 {% endtabs %}
+
+![column-width-in-winui-kanban](images/columns/column-width-in-winui-kanban.png)
 
 ## Categorizing columns
 
@@ -386,6 +390,8 @@ public class ViewModel
 
 {% endhighlight %}
 {% endtabs %}
+
+![categorizing-columns-in-winui-kanban](images/columns/categorizing-columns-in-winui-kanban.png)
 
 ### Populating Multi-Category Columns with Cards
 
@@ -532,6 +538,8 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
+![multi-category-columns-in-winui-kanban](images/columns/multi-category-columns-in-winui-kanban.png)
+
 ## Customize columns header appearance
 
 The WinUI Kanban control allows you to customize the header text, column header template, and more.
@@ -674,15 +682,46 @@ public class ViewModel
 You can customize the column header appearance by using the [ColumnHeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnHeaderTemplate) property in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control. The `DataContext` for the [ColumnHeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnHeaderTemplate) property in [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) is set to the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
 
 {% tabs %}
-{% highlight XAML hl_lines="3 4 5 6 7 8 9" %}
+{% highlight XAML hl_lines="3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40" %}
 
 <kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}">
     <kanban:SfKanban.ColumnHeaderTemplate>
         <DataTemplate>
-            <StackPanel Background="LightBlue">
-                <TextBlock Margin="10" Text="{Binding  HeaderText}" Foreground="Red" HorizontalAlignment="Center"/>
-            </StackPanel>
+            <Grid Height="40" Background="LightBlue" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="{Binding HeaderText}" Grid.Row="0"
+                            Margin="6,2,0,0"
+                            HighContrastAdjustment="None"
+                            Foreground="Black"
+                            FontWeight="Bold"
+                            FontFamily="Lucida Handwriting"
+                            FontStyle="Italic"
+                            FontSize="13"></TextBlock>
+                <StackPanel Orientation="Horizontal" Grid.Row="1">
+                    <TextBlock Text="Items Count : "
+                                HorizontalAlignment="Center" 
+                                Margin="6,1,0,0"
+                                HighContrastAdjustment="None"
+                                Foreground="Black"
+                                FontWeight="Normal"
+                                FontStyle="Italic"
+                                FontSize="11">                                
+                    </TextBlock>
+                    <TextBlock Text="{Binding CardsCount}" 
+                                HorizontalAlignment="Center"
+                                Margin="3,1,0,0"
+                                HighContrastAdjustment="None"
+                                Foreground="Black"
+                                FontWeight="Normal"
+                                FontStyle="Italic"
+                                FontSize="11">                                
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
         </DataTemplate>
     </kanban:SfKanban.ColumnHeaderTemplate>
     <kanban:SfKanban.DataContext>
@@ -800,6 +839,8 @@ public class ViewModel
 
 {% endtabs %}
 
+![column-header-template-in-winui-kanban](images/columns/column-header-template-in-winui-kanban.png)
+
 ## Expand/Collapse column
 
 The Kanban allows you to programmatically expand or collapse columns using the [IsExpanded](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_IsExpanded) property of [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control. By default, columns can be expanded or collapsed by tapping the toggle button placed at the top-right corner of the kanban column header.
@@ -810,9 +851,9 @@ The Kanban allows you to programmatically expand or collapse columns using the [
 <kanban:SfKanban x:Name="kanban"
                  AutoGenerateColumns="False" 
                  ItemsSource="{Binding TaskDetails}">
-    <kanban:KanbanColumn HeaderText="To Do" Categories="Open" IsExpanded="False"/>
-    <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
-    <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
+        <kanban:KanbanColumn HeaderText="To Do" Categories="Open" />
+        <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
+        <kanban:KanbanColumn HeaderText="Done" Categories="Done" IsExpanded="False" />
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
@@ -825,9 +866,9 @@ The Kanban allows you to programmatically expand or collapse columns using the [
 this.kanban.AutoGenerateColumns = false;
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
-this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "To Do", Categories = "Open", IsExpanded = false });
+this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "To Do", Categories = "Open" });
 this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "In Progress", Categories = "In Progress" });
-this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "Done" });
+this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "Done", IsExpanded = false });
 
 {% endhighlight %}
 
@@ -932,6 +973,8 @@ public class ViewModel
 {% endhighlight %}
 
 {% endtabs %}
+
+![expand-collapse-column-in-winui-kanban](images/columns/expand-collapse-column-in-winui-kanban.png)
 
 ## Card drag and drop
 
@@ -1046,7 +1089,7 @@ public class ViewModel
         taskDetail.Title = "New Feature";
         taskDetail.Id = "29574";
         taskDetail.Description = "Dragging events support for Kanban";
-        taskDetail.Category = "Closed";
+        taskDetail.Category = "Done";
         taskDetail.IndicatorColorKey = "Normal";
         taskDetail.Tags = new List<string>() { "New Control" };
         taskDetail.Image = new Image
@@ -1217,6 +1260,8 @@ public class ViewModel
 
 {% endtabs %}
 
+![placeholder-in-winui-kanban](images/columns/placeholder-in-winui-kanban.png)
+
 ## Work-in-Progress (WIP) limit and indications
 
 The WinUI Kanban control allows users to set limits on the number of tasks in each column at every stage of the workflow, helping to prevent overload. The minimum and maximum number of items allowed in a column can be customized using the [MinimumCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_MinimumCount) and [MaximumCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_MaximumCount) properties in [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html).
@@ -1332,7 +1377,7 @@ public class ViewModel
         taskDetail.Title = "New Feature";
         taskDetail.Id = "29574";
         taskDetail.Description = "Dragging events support for Kanban";
-        taskDetail.Category = "Closed";
+        taskDetail.Category = "Done";
         taskDetail.IndicatorColorKey = "Normal";
         taskDetail.Tags = new List<string>() { "New Control" };
         taskDetail.Image = new Image
@@ -1349,3 +1394,5 @@ public class ViewModel
 
 {% endhighlight %}
 {% endtabs %}
+
+![work-in-progress-limit-in-winui-kanban](images/columns/work-in-progress-limit-in-winui-kanban.png)
