@@ -361,7 +361,9 @@ The WinUI Kanban supports light and dark themes, automatically adjusting to the 
 
 Refer to the following link for guidance on applying themes: [Themes for Syncfusion WinUI controls](https://help.syncfusion.com/winui/common/themes)
 
-You can find the kanban keys for all themes in this [theme resource file.](https://github.com/syncfusion/winui-controls-theme-resource-files/tree/master/Syncfusion.Kanban.WinUI).
+You can find the kanban keys for all themes in this [theme resource file](https://github.com/syncfusion/winui-controls-theme-resource-files/tree/master/Syncfusion.Kanban.WinUI).
+
+![theming-in-winui-kanban](images/getting-started/theming-in-winui-kanban.png)
 
 ## Localization
 
