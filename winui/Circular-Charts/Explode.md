@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Explode segments in WinUI Chart control | Syncfusion
-description: This section explains about how to explode single segment or all segments in Syncfusion WinUI Chart (SfCircularChart) control.
+title: Explode segments in WinUI Chart control | Syncfusion®
+description: This section explains about how to explode single segment or all segments in Syncfusion® WinUI Chart (SfCircularChart) control.
 platform: WinUI
 control: SfCircularChart
 documentation: ug

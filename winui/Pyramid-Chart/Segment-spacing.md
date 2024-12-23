@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Segment spacing in WinUI Chart control | Syncfusion
-description: This section explains about how to set segment spacing for the Syncfusion WinUI Chart (SfPyramidChart) control.
+title: Segment spacing in WinUI Chart control | Syncfusion®
+description: This section explains about how to set segment spacing for the Syncfusion® WinUI Chart (SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug

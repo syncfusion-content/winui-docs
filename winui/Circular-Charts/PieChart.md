@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pie Chart in WinUI Chart control | Syncfusion
-description: Learn here all about the pie chart and its features in Syncfusion WinUI Chart (SfCircularChart) control.
+title: Pie Chart in WinUI Chart control | Syncfusion®
+description: Learn here all about the pie chart and its features in Syncfusion® WinUI Chart (SfCircularChart) control.
 platform: WinUI
 control: SfCircularChart
 documentation: ug

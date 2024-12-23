@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data labels in WinUI Chart control | Syncfusion
-description: This section explains about how to add and customize the data labels in Syncfusion WinUI Chart (SfPyramidChart) control.
+title: Data labels in WinUI Chart control | Syncfusion®
+description: This section explains about how to add and customize the data labels in Syncfusion® WinUI Chart (SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug

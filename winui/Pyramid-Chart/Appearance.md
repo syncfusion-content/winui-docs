@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in WinUI Chart control | Syncfusion
-description: This section explains about how to apply palettes and gradient in the Syncfusion WinUI Chart(SfPyramidChart) control.
+title: Appearance in WinUI Chart control | Syncfusion®
+description: This section explains about how to apply palettes and gradient in the Syncfusion® WinUI Chart(SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
