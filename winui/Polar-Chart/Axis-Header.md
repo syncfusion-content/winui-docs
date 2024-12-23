@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Axis title in WinUI Chart control | Syncfusion
-description: Learn here all about the chart axis title of Syncfusion WinUI Chart (SfPolarChart) control and its customization.
+title: Axis title in WinUI Chart control | Syncfusion®
+description: Learn here all about the chart axis title of Syncfusion® WinUI Chart (SfPolarChart) control and its customization.
 platform: WinUI
 control: SfPolarChart
 documentation: ug

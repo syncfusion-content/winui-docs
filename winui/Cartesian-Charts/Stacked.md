@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Stacked charts in WinUI Chart control | Syncfusion
-description: Learn here all about stacked chart types column, line, and area in Syncfusion WinUI Chart(SfChart) control.
+title: Stacked charts in WinUI Chart control | Syncfusion®
+description: Learn here all about stacked chart types column, line, and area in Syncfusion® WinUI Chart(SfChart) control.
 platform: WinUI
 control: SfChart
 documentation: ug

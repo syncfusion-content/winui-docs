@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Polar line chart | SfPolarChart | Syncfusion
-description: Learn here all about the polar line chart and its features in Syncfusion WinUI Chart (SfPolarChart) control.
+title: Polar line chart | SfPolarChart | Syncfusion®
+description: Learn here all about the polar line chart and its features in Syncfusion® WinUI Chart (SfPolarChart) control.
 platform: WinUI
 control: SfPolarChart
 documentation: ug

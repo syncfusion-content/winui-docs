@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in WinUI Chart control | Syncfusion
-description: This section explains about how to apply palettes and gradient in the Syncfusion WinUI Chart (SfFunnelChart) control
+title: Appearance in WinUI Chart control | Syncfusion®
+description: This section explains about how to apply palettes and gradient in the Syncfusion® WinUI Chart (SfFunnelChart) control
 platform: WinUI
 control: SfFunnelChart
 documentation: ug

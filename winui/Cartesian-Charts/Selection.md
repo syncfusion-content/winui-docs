@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in WinUI Chart control | Syncfusion
-description: Learn here all about selection and multi-selection support in Syncfusion WinUI Chart (SfCartesianChart) control.
+title: Selection in WinUI Chart control | Syncfusion®
+description: Learn here all about selection and multi-selection support in Syncfusion® WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug

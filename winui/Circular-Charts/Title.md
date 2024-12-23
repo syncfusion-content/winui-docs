@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Header in WinUI Chart control | Syncfusion
-description: Learn here all about title with Syncfusion WinUI Chart (SfCircularChart) control and its customization.
+title: Header in WinUI Chart control | Syncfusion®
+description: Learn here all about title with Syncfusion® WinUI Chart (SfCircularChart) control and its customization.
 platform: WinUI
 control: SfCircularChart
 documentation: ug

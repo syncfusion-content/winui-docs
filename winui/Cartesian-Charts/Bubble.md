@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bubble Chart in WinUI Chart control | Syncfusion
-description: Learn here all about the bubble series and its features in Syncfusion WinUI Chart (SfCartesianChart) control.
+title: Bubble Chart in WinUI Chart control | Syncfusion®
+description: Learn here all about the bubble series and its features in Syncfusion® WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfChart
 documentation: ug
