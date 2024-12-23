@@ -1108,6 +1108,8 @@ public class ViewModel
 
 {% endtabs %}
 
+![card-drag-drop-in-winui-kanban](images/columns/card-drag-drop-in-winui-kanban.gif)
+
 ### Placeholder in WinUI Kanban control
 
 The placeholders in the WinUI Kanban control visually indicate the exact position where a card is dragged and where it will be placed within a Kanban column during a drag-and-drop operation.
