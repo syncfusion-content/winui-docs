@@ -980,7 +980,7 @@ public class ViewModel
 
 Cards can be dragged and dropped across columns, within columns, or across swimlane rows to modify the card's status. To enable drag-and-drop functionality within the kanban, set the [AllowDrag](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_AllowDrag) property of [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) to `true`. The default value is `true`.
 
-
+![card-drag-drop-in-winui-kanban](images/columns/card-drag-drop-in-winui-kanban.gif)
 
 To disable drag-and-drop, set [AllowDrag](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_AllowDrag) and [AllowDrop](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.uielement.allowdrop?view=winrt-26100#windows-ui-xaml-uielement-allowdrop) properties to `false`.
 
@@ -1112,7 +1112,7 @@ public class ViewModel
 
 {% endtabs %}
 
-![card-drag-drop-in-winui-kanban](images/columns/card-drag-drop-in-winui-kanban.gif)
+![disable-card-drag-drop-in-winui-kanban](images/columns/disable-card-drag-drop-in-winui-kanban.gif)
 
 ### Placeholder in WinUI Kanban control
 
