@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Axis labels in WinUI Chart control | Syncfusion
-description: Learn here all about axis labels and its customization in Syncfusion WinUI Chart (SfCartesianChart) control.
+title: Axis labels in WinUI Chart control | Syncfusion®
+description: Learn here all about axis labels and its customization in Syncfusion® WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug

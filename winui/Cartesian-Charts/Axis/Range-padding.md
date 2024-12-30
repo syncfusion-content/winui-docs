@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Range padding in WinUI Chart control | Syncfusion
-description: Learn here all about axis range padding and its types features of Syncfusion WinUI Chart (SfCartesianChart) control.
+title: Range padding in WinUI Chart control | Syncfusion®
+description: Learn here all about axis range padding and its types features of Syncfusion® WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug

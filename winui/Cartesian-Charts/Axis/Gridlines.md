@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Axis grid lines in WinUI Chart control | Syncfusion
-description: Learn here all about the chart axis grid lines and its customization in syncfusion WinUI Chart(SfCartesianChart).
+title: Axis grid lines in WinUI Chart control | Syncfusion®
+description: Learn here all about the chart axis grid lines and its customization in Syncfusion® WinUI Chart(SfCartesianChart).
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
