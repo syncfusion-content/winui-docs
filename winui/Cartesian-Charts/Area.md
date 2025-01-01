@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Area Chart in WinUI Chart control | Syncfusion®
+title: Area Chart in WinUI Chart control | Syncfusion
 description: Learn here all about the area chart types and its features in Syncfusion® WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart

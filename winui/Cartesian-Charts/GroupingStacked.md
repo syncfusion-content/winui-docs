@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stacked group chart in WinUI Chart control | Syncfusion®
+title: Stacked group chart in WinUI Chart control | Syncfusion
 description: Learn here all about the stacked group chart and its features in Syncfusion® WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfChart

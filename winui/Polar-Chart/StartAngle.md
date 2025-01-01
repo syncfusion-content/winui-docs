@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Start angle in WinUI Chart control | Syncfusion®
+title: Start angle in WinUI Chart control | Syncfusion
 description: This sections explains about how to change the angle position of rendering in Syncfusion® WinUI Chart (SfPolarChart) control.
 platform: WinUI
 control: SfPolarChart

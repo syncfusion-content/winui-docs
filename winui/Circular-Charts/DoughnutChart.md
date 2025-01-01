@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Doughnut chart in WinUI Chart control | Syncfusion®
+title: Doughnut chart in WinUI Chart control | Syncfusion
 description: Learn here all about doughnut chart and its features in Syncfusion® WinUI Chart (SfCircularChart) control.
 platform: WinUI
 control: SfCircularChart

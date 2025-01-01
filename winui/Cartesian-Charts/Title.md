@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Title in WinUI Chart control | Syncfusion®
+title: Title in WinUI Chart control | Syncfusion
 description: Learn here all about title with Syncfusion® WinUI Chart (SfCartesianChart) control and its customization.
 platform: WinUI
 control: SfCartesianChart

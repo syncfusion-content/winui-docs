@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data label in WinUI Chart control | Syncfusion®
+title: Data label in WinUI Chart control | Syncfusion
 description: This section explains about how to add and customize the data labels in Syncfusion® WinUI Chart (SfFunnelChart) control.
 platform: WinUI
 control: SfFunnelChart

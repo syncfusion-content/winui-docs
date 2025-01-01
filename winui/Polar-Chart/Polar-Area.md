@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Polar area chart | SfPolarChart | Syncfusion®
+title: Polar area chart | SfPolarChart | Syncfusion
 description: Learn here all about the polar area chart and its features in Syncfusion® WinUI Chart (SfPolarChart) control.
 platform: WinUI
 control: SfPolarChart

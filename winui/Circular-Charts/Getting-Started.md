@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with WinUI Circular Chart control | Syncfusion®
+title: Getting Started with WinUI Circular Chart control | Syncfusion
 description: Learn here all about getting started with Syncfusion® WinUI Circular Chart (SfCircularChart) control, its elements, and more.
 platform: WinUI
 control: SfCircularChart

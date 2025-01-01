@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip in WinUI Chart control | Syncfusion®
+title: Tooltip in WinUI Chart control | Syncfusion
 description: This section explains about how to enable tooltip and its customization in Syncfusion® WinUI Chart (SfCircularChart) control
 platform: WinUI
 control: SfCircularChart

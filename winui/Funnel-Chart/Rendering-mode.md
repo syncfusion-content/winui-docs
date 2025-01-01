@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rendering mode in WinUI Chart control | Syncfusion®
+title: Rendering mode in WinUI Chart control | Syncfusion
 description: This sections explains about the rendering mode types of Syncfusion® WinUI Chart(SfFunnelChart) control
 platform: WinUI
 control: SfFunnelChart

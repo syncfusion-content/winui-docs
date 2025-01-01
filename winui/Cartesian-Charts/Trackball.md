@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Trackball in WinUI Chart control | Syncfusion®
+title:  Trackball in WinUI Chart control | Syncfusion
 description: Learn here all about trackball and its customziation in Syncfusion® WinUI Chart (SfCartesianChart) control
 platform: WinUI
 control: SfCartesianChart

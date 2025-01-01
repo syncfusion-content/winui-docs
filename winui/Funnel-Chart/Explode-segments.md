@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Explode segments in WinUI Chart control | Syncfusion®
+title: Explode segments in WinUI Chart control | Syncfusion
 description: This section explains about how to explode single segment or all segments in Syncfusion® WinUI Chart (SfFunnelChart) control.
 platform: WinUI 
 control: SfFunnelChart

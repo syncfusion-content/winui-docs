@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stacked 100 Charts in WinUI Chart control | Syncfusion®
+title: Stacked 100 Charts in WinUI Chart control | Syncfusion
 description: Learn here all about stacked 100 chart types column, line and area in Syncfusion® WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfChart

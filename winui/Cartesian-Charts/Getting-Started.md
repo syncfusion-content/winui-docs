@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with WinUI Cartesian Chart control | Syncfusion®
+title: Getting started with WinUI Cartesian Chart control | Syncfusion
 description: This section explains about the getting started with Syncfusion® WinUI Cartesian Chart (SfCartesianChart) control, its elements, and more.
 platform: WinUI
 control: SfCartesianChart

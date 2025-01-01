@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fast Charts in WinUI Chart control | Syncfusion®
+title: Fast Charts in WinUI Chart control | Syncfusion
 description: Learn here all about Fast Chart feature in Syncfusion® WinUI Chart (SfCartesianChart) control and how to configure easily with high performance charts.
 platform: WinUI
 control: SfCartesianChart

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with WinUI Pyramid Chart control | Syncfusion®
+title: Getting started with WinUI Pyramid Chart control | Syncfusion
 description: This section explains about getting started with Syncfusion® WinUI Pyramid Chart (SfPyramidChart) control, its elements, and more.
 platform: WinUI
 control: SfPyramidChart

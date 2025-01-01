@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Line Chart in WinUI Chart control | Syncfusion®
+title: Line Chart in WinUI Chart control | Syncfusion
 description: Learn here all about the line chart and its type in Syncfusion® WinUI Chart (SfCartesianChart) control. 
 platform: WinUI
 control: SfCartesianChart

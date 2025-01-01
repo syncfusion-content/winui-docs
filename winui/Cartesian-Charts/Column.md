@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column Chart in WinUI Chart control | Syncfusion®
+title: Column Chart in WinUI Chart control | Syncfusion
 description: Learn here all about the column chart and its features in Syncfusion® WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart

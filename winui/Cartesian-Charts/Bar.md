@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bar Chart in WinUI Chart control | Syncfusion®
+title: Bar Chart in WinUI Chart control | Syncfusion
 description: Learn here all about the bar chart and its features in Syncfusion® WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
