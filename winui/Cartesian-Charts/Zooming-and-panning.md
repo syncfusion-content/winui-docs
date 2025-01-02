@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Zooming and Panning in WinUI Chart control | Syncfusion
-description: Learn here all about Zooming and Panning feature of Syncfusion WinUI Chart(SfCartesianChart) control.
+description: Learn here all about Zooming and Panning feature of Syncfusion® WinUI Chart(SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
