@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Segment spacing in WinUI Chart control | Syncfusion
-description: This section explains about how to set segment spacing for the Syncfusion WinUI Chart (SfFunnelChart) control
+description: This section explains about how to set segment spacing for the Syncfusion® WinUI Chart (SfFunnelChart) control
 platform: WinUI
 control: SfFunnelChart
 documentation: ug

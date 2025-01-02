@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tooltip in WinUI Chart control | Syncfusion
-description: This section explains about how to enable tooltip and its customization in Syncfusion WinUI Chart(SfPyramidChart) control.
+description: This section explains about how to enable tooltip and its customization in Syncfusion® WinUI Chart(SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug

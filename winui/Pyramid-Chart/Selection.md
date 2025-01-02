@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in WinUI Chart control | Syncfusion
-description: Learn here all about selection and multi-selection support in Syncfusion WinUI Chart (SfPyramidChart) control.
+description: Learn here all about selection and multi-selection support in Syncfusion® WinUI Chart (SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug

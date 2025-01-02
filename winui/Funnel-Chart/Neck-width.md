@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Neck width in WinUI Chart control | Syncfusion
-description: This section explains about how to customize the neck width in Syncfusion WinUI Chart (SfFunnelChart) control.
+description: This section explains about how to customize the neck width in Syncfusion® WinUI Chart (SfFunnelChart) control.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug

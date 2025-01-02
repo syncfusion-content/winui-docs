@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fast Line chart in WinUI Chart control | Syncfusion
-description: Learn here all about Fast Line Series feature of Syncfusion WinUI Chart control(SfCartesianChart) and more.
+description: Learn here all about Fast Line Series feature of Syncfusion® WinUI Chart control(SfCartesianChart) and more.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug

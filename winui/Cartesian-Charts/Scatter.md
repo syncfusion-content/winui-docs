@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scatter Chart in WinUI Chart control | Syncfusion
-description: Learn here all about the scatter chart and its features in Syncfusion WinUI Chart (SfCartesianChart) control.
+description: Learn here all about the scatter chart and its features in Syncfusion® WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug

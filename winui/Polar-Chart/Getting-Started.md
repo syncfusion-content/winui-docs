@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WinUI Polar Chart control | Syncfusion
-description: Learn here all about getting started with the Syncfusion WinUI Polar Chart (SfPolarChart) control and its elements, and more.
+description: Learn here all about getting started with the Syncfusion® WinUI Polar Chart (SfPolarChart) control and its elements, and more.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
