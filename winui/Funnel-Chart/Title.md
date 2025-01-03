@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Title in WinUI Chart control | Syncfusion
-description: Learn here all about title with Syncfusion WinUI Chart (SfFunnelChart) control and its customization.
+description: Learn here all about title with Syncfusion® WinUI Chart (SfFunnelChart) control and its customization.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
