@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Title in WinUI Chart control | Syncfusion
-description: Learn here all about title with Syncfusion WinUI Chart(SfPyramidChart) control and its customization.
+description: Learn here all about title with Syncfusion® WinUI Chart(SfPyramidChart) control and its customization.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
