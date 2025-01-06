@@ -15,6 +15,7 @@ Cartesian chart supports the following types of chart axis.
 * NumericalAxis
 * CategoryAxis
 * DateTimeAxis
+* LogarithmicAxis
 
 ## Numerical Axis
 
@@ -351,6 +352,132 @@ chart.XAxes.Add(primaryAxis);
 {% endtabs %}
 
 ![DateTimeAxis range customization support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_range_datetime.png)
+
+## Logarithmic Axis
+
+The [LogarithmicAxis]() uses a logarithmic scale, ideal for visualizing data with large value differences. It can be applied to both the X and Y axes of a chart, allows customization of the logarithmic base, and dynamically calculates ranges to effectively display wide-ranging datasets.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart>
+. . .
+<chart:SfCartesianChart.SecondaryAxis>
+    <chart:LogarithmicAxis />
+</chart:SfCartesianChart.SecondaryAxis>
+
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+. . .
+LogarithmicAxis secondaryAxis = new LogarithmicAxis()
+chart.SecondaryAxis.Add(secondaryAxis);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Interval
+
+The axis interval in WinUI charts can be customized using the [Interval]() property of the axis. By default, the interval is calculated based on the minimum and maximum values of the provided data, with a default value of `1`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart>
+. . .
+<chart:SfCartesianChart.SecondaryAxis>
+    <chart:LogarithmicAxis Interval="2" />
+</chart:SfCartesianChart.SecondaryAxis>
+
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+. . .
+LogarithmicAxis secondaryAxis = new LogarithmicAxis()
+{
+    Interval = 2,
+};
+
+chart.SecondaryAxis.Add(secondaryAxis);
+
+{% endhighlight %}
+{% endtabs %}
+
+### Customizing the Range
+
+To customize the range of the logarithmic axis in WinUI charts, you can use the [Minimum]() and [Maximum]() properties of the LogarithmicAxis. By default, the range is automatically calculated to align with the provided data.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart>
+. . .
+<chart:SfCartesianChart.SecondaryAxis>
+    <chart:LogarithmicAxis Minimum="100" Maximum="10000" />
+</chart:SfCartesianChart.SecondaryAxis>
+
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+. . .
+LogarithmicAxis secondaryAxis = new LogarithmicAxis()
+{
+    Minimum = 100,
+    Maximum = 10000,
+};
+
+chart.SecondaryAxis.Add(secondaryAxis);
+
+{% endhighlight %}
+{% endtabs %}
+
+### Customizing the Logarithmic base
+
+In WinUI charts, the logarithmic axis base can be customized using the [LogarithmicBase]() property. The default base value is `10`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart>
+. . .
+<chart:SfCartesianChart.SecondaryAxis>
+    <chart:LogarithmicAxis LogarithmicBase="2" />
+</chart:SfCartesianChart.SecondaryAxis>
+
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+. . .
+LogarithmicAxis secondaryAxis = new LogarithmicAxis()
+{
+    LogarithmicBase = 2,
+};
+
+chart.SecondaryAxis.Add(secondaryAxis);
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Inversed
 

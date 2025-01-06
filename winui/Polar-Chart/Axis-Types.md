@@ -14,6 +14,7 @@ Polar chart supports the following types of chart axis.
 * CategoryAxis
 * NumericalAxis
 * DateTimeAxis
+* LogarithmicAxis
 
 ## Category Axis
 
@@ -174,6 +175,132 @@ chart.SecondaryAxis = new NumericalAxis();
 {% endtabs %}
 
 ![DateTimeAxis support in WinUI Chart](Axis_Images/WinUI_Chart_DateTimeAxis.png)
+
+## Logarithmic Axis
+
+The LogarithmicAxis uses a logarithmic scale, and it is very useful in visualizing data when the given data range has a big difference. It can be defined for both PrimaryAxis and SecondaryAxis.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfPolarChart>
+. . .
+<chart:SfPolarChart.SecondaryAxis>
+    <chart:LogarithmicAxis />
+</chart:SfPolarChart.SecondaryAxis>
+
+</chart:SfPolarChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfPolarChart chart = new SfPolarChart();
+. . .
+LogarithmicAxis secondaryAxis = new LogarithmicAxis()
+chart.SecondaryAxis.Add(secondaryAxis);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Interval
+
+The axis interval in WinUI charts can be customized using the [Interval]() property of the axis. By default, the interval is calculated based on the minimum and maximum values of the provided data, with a default value of `1`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfPolarChart>
+. . .
+<chart:SfPolarChart.SecondaryAxis>
+    <chart:LogarithmicAxis Interval="2" />
+</chart:SfPolarChart.SecondaryAxis>
+
+</chart:SfPolarChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfPolarChart chart = new SfPolarChart();
+. . .
+LogarithmicAxis secondaryAxis = new LogarithmicAxis()
+{
+    Interval = 2,
+};
+
+chart.SecondaryAxis.Add(secondaryAxis);
+
+{% endhighlight %}
+{% endtabs %}
+
+### Customizing the Range
+
+To customize the range of the logarithmic axis in WinUI charts, you can use the [Minimum]() and [Maximum]() properties of the LogarithmicAxis. By default, the range is automatically calculated to align with the provided data.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfPolarChart>
+. . .
+<chart:SfPolarChart.SecondaryAxis>
+    <chart:LogarithmicAxis Minimum="100" Maximum="10000" />
+</chart:SfPolarChart.SecondaryAxis>
+
+</chart:SfPolarChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfPolarChart chart = new SfPolarChart();
+. . .
+LogarithmicAxis secondaryAxis = new LogarithmicAxis()
+{
+    Minimum = 100,
+    Maximum = 10000,
+};
+
+chart.SecondaryAxis.Add(secondaryAxis);
+
+{% endhighlight %}
+{% endtabs %}
+
+### Customizing the Logarithmic base
+
+In WinUI charts, the logarithmic axis base can be customized using the [LogarithmicBase]() property. The default base value is `10`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfPolarChart>
+. . .
+<chart:SfPolarChart.SecondaryAxis>
+    <chart:LogarithmicAxis LogarithmicBase="2" />
+</chart:SfPolarChart.SecondaryAxis>
+
+</chart:SfPolarChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfPolarChart chart = new SfPolarChart();
+. . .
+LogarithmicAxis secondaryAxis = new LogarithmicAxis()
+{
+    LogarithmicBase = 2,
+};
+
+chart.SecondaryAxis.Add(secondaryAxis);
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Events
 ### ActualRangeChanged
