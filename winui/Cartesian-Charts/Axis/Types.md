@@ -386,7 +386,7 @@ chart.SecondaryAxis.Add(secondaryAxis);
 
 ### Interval
 
-The Axis interval in WinUI charts can be customized using the [Interval]() property of the axis. By default, the interval is calculated based on the minimum and maximum values of the provided data, with a default value of `1`.
+The Axis interval can be customized using the [Interval]() property of the axis. By default, the interval is calculated based on the minimum and maximum values of the provided data, with a default value of `1`.
 
 {% tabs %}
 
@@ -416,11 +416,9 @@ chart.SecondaryAxis.Add(secondaryAxis);
 {% endhighlight %}
 {% endtabs %}
 
-![LogarithmicAxis interval support in WinUI Chart](Axis_Images/WinUI_Chart_LogarithmicAxis_Interval.png)
-
 ### Customizing the Range
 
-To customize the range of the logarithmic axis in WinUI charts, you can use the [Minimum]() and [Maximum]() properties of the LogarithmicAxis. By default, the range is automatically calculated to align with the provided data.
+The range of the logarithmic axis can be customized using the [Minimum]() and [Maximum]() properties of the LogarithmicAxis. By default, the range is automatically calculated to align with the provided data.
 
 {% tabs %}
 
@@ -451,11 +449,9 @@ chart.SecondaryAxis.Add(secondaryAxis);
 {% endhighlight %}
 {% endtabs %}
 
-![LogarithmicAxis range customization support in WinUI Chart](Axis_Images/WinUI_Chart_LogarithmicAxis_AxisRange.png)
-
 ### Customizing the Logarithmic base
 
-In WinUI charts, the logarithmic axis base can be customized using the [LogarithmicBase]() property. The default logarithmic base value is `10`.
+The logarithmic axis base can be customized using the [LogarithmicBase]() property. The default logarithmic base value is `10`.
 
 {% tabs %}
 
