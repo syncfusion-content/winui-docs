@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Leading and trailing view in WinUI AutoComplete | Syncfusion
-description: Learn how to add leading and trailing view (front and back view) in Syncfusion WinUI AutoComplete control and more.
+title: Leading and trailing view in WinUI AutoComplete | Syncfusion&reg;
+description: Learn how to add leading and trailing view (front and back view) in Syncfusion&reg; WinUI AutoComplete control and more.
 platform: winui
 control: SfAutoComplete
 documentation: ug
