@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Searching and Filtering in WinUI AutoComplete control | Syncfusion&reg;
+title: Searching and Filtering in WinUI AutoComplete control | Syncfusion
 description: Learn how to perform searching and filtering operations in Syncfusion&reg; WinUI AutoComplete (multi-select AutoComplete) control and more.
 platform: winui
 control: SfAutoComplete
