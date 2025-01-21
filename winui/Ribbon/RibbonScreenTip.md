@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ScreenTip in WinUI Ribbon control | Syncfusion&reg;
-description: Learn more about the ScreenTip in the Syncfusion&reg; WinUI Ribbon (SfRibbon) control.
+title: ScreenTip in WinUI Ribbon control | Syncfusion
+description: Learn more about the ScreenTip in the Syncfusion WinUI Ribbon (SfRibbon) control.
 platform: winui
 control: Ribbon
 documentation: ug

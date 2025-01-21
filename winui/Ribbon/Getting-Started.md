@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinUI Ribbon control | Syncfusion&reg;
-description: Learn here all about getting started with Syncfusion&reg; WinUI Ribbon(SfRibbon) control, its elements, and more.
+title: Getting Started with WinUI Ribbon control | Syncfusion
+description: Learn here all about getting started with Syncfusion WinUI Ribbon(SfRibbon) control, its elements, and more.
 platform: winui
 control: Ribbon
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Ribbon
 
-This section explains the steps required to add the Ribbon control and its elements such as ribbon tabs, ribbon groups, built in ribbon items, custom ribbon items, right pane, backstage and its items. This section also covers the basic features needed to get started with Syncfusion&reg; ribbon control.
+This section explains the steps required to add the Ribbon control and its elements such as ribbon tabs, ribbon groups, built in ribbon items, custom ribbon items, right pane, backstage and its items. This section also covers the basic features needed to get started with Syncfusion<sup>&reg;</sup> ribbon control.
 
 ## Creating an application with WinUI Ribbon
 

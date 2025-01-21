@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinUI ComboBox | Syncfusion&reg;
-description: Learn how to get started with Syncfusion&reg; WinUI ComboBox (multi-select ComboBox) control, its elements, and more in here.
+title: Getting Started with WinUI ComboBox | Syncfusion
+description: Learn how to get started with Syncfusion WinUI ComboBox (multi-select ComboBox) control, its elements, and more in here.
 platform: WinUI
 control: SfComboBox
 documentation: ug

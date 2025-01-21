@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Simplified layout | WinUI | Ribbon | Syncfusion&reg;
-description: Learn here about Simplified layout and Display mode support in Syncfusion&reg; WinUI Ribbon (SfRibbon) control and more details.
+title: Simplified layout | WinUI | Ribbon | Syncfusion
+description: Learn here about Simplified layout and Display mode support in Syncfusion WinUI Ribbon (SfRibbon) control and more details.
 platform: winui
 control: Ribbon
 documentation: ug

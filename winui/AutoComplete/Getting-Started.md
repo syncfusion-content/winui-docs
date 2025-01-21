@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinUI AutoComplete | Syncfusion&reg
-description: Learn how to get started with Syncfusion&reg; WinUI AutoComplete control and its suggestion list, as well as other topics, in this section.
+title: Getting Started with WinUI AutoComplete | Syncfusion
+description: Learn how to get started with Syncfusion WinUI AutoComplete control and its suggestion list, as well as other topics, in this section.
 platform: WinUI
 control: SfAutoComplete
 documentation: ug

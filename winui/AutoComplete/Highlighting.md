@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Highlighting Feature in WinUI AutoComplete control | Syncfusion&reg;
-description: Learn here all about Highlighting Feature in Syncfusion&reg; WinUI AutoComplete control into WinUI application.
+title: Highlighting Feature in WinUI AutoComplete control | Syncfusion
+description: Learn here all about Highlighting Feature in Syncfusion WinUI AutoComplete control into WinUI application.
 platform: winui
 control: SfAutoComplete
 documentation: UG

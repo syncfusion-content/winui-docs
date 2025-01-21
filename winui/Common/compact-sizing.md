@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Compact Sizing in WinUI Controls | Syncfusion&reg;
-description: Learn here about Compact Sizing support in Syncfusion&reg; WinUI Project Reunion controls and more details. 
+title: Compact Sizing in WinUI Controls | Syncfusion
+description: Learn here about Compact Sizing support in Syncfusion WinUI Project Reunion controls and more details. 
 platform: WinUI
 control: Compact Sizing
 documentation: ug
