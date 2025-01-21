@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in WinUI Badge control | Syncfusion&reg;
-description: Learn here all about Customization feature in Syncfusion&reg; WinUI Badge control with more colors, shapes, and UI custom support.
+title: Customization in WinUI Badge control | Syncfusion
+description: Learn here all about Customization feature in Syncfusion WinUI Badge control with more colors, shapes, and UI custom support.
 platform: WinUI
 control: SfBadge
 documentation: ug

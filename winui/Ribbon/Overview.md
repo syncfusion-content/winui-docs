@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About WinUI Ribbon control | Syncfusion&reg;
-description: Learn here all about introduction of Syncfusion&reg; WinUI Ribbon(SfRibbon) control with key features and more.
+title: About WinUI Ribbon control | Syncfusion
+description: Learn here all about introduction of Syncfusion WinUI Ribbon(SfRibbon) control with key features and more.
 platform: winui
 control: Ribbon
 documentation: ug

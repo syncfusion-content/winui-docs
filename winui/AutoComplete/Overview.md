@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About WinUI AutoComplete control | Syncfusion&reg;
-description: Learn here all about introduction of Syncfusion&reg; WinUI AutoComplete (multi-select AutoComplete) control, its features, and more.
+title: About WinUI AutoComplete control | Syncfusion
+description: Learn here all about introduction of Syncfusion WinUI AutoComplete (multi-select AutoComplete) control, its features, and more.
 platform: winui
 control: SfAutoComplete
 documentation: ug

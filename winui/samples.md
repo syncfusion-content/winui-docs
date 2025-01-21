@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Guide to run online and offline samples from WinUI Studio | Syncfusion&reg;
-description: Learn how to run the online samples and offline samples of Syncfusion&reg; Essential Studio&reg; WinUI controls and components.
+title: Guide to run online and offline samples from WinUI Studio | Syncfusion
+description: Learn how to run the online samples and offline samples of Syncfusion Essential Studio WinUI controls and components.
 platform: winui
 control: Samples
 documentation: ug

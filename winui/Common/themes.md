@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Theme support for Syncfusion&reg; WinUI Controls
-description: Explains about the supported themes and guides how to configure themes for Syncfusion&reg; WinUI controls.
+title: Theme support for Syncfusion WinUI Controls
+description: Explains about the supported themes and guides how to configure themes for Syncfusion WinUI controls.
 platform: winui
 control: Themes
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility support for Syncfusion&reg; WinUI Controls | Syncfusion&reg;
-description: Learn about Accessibility in the Syncfusion&reg; WinUI controls, including UI automation, Keyboard, and HighContrast theme support.
+title: Accessibility support for Syncfusion WinUI Controls | Syncfusion
+description: Learn about Accessibility in the Syncfusion WinUI controls, including UI automation, Keyboard, and HighContrast theme support.
 platform: winui
 control: Accessibility
 documentation: ug

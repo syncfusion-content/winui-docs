@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change number format in WinUI NumberBox | Syncfusion&reg;
-description: Learn here about changing the number format of Syncfusion&reg; WinUI NumberBox (SfNumberBox) control and more.
+title: Change number format in WinUI NumberBox | Syncfusion
+description: Learn here about changing the number format of Syncfusion WinUI NumberBox (SfNumberBox) control and more.
 platform: WinUI
 control: SfNumberBox
 documentation: ug

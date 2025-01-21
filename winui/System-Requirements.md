@@ -1,7 +1,7 @@
 ---
 layout: post
-title: System Requirements in WinUI - Syncfusion&reg;
-description: Checkout and learn here all about the system requirements needed to use the Syncfusion&reg; WinUI Components.
+title: System Requirements in WinUI - Syncfusion
+description: Checkout and learn here all about the system requirements needed to use the Syncfusion WinUI Components.
 platform: winui
 control: Installation and Deployment
 documentation: ug

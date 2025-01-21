@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ribbon key tip feature in WinUI Ribbon control | Syncfusion&reg;
-description: Learn more about the keyboard navigation using key tips in the Syncfusion&reg; WinUI Ribbon (SfRibbon) control.
+title: Ribbon key tip feature in WinUI Ribbon control | Syncfusion
+description: Learn more about the keyboard navigation using key tips in the Syncfusion WinUI Ribbon (SfRibbon) control.
 platform: winui
 control: Ribbon
 documentation: ug

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization of Color Picker in DropDown Color Picker | Syncfusion&reg;
+title: Customization of Color Picker in DropDown Color Picker | Syncfusion
 description: This section describes about how to customize the Color Picker in the DropDown Color Picker (SfDropDownColorPicker) control and its additional features.
 platform: WinUI
 control: SfDropDownColorPicker
