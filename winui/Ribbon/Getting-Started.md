@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Ribbon
 
-This section explains the steps required to add the Ribbon control and its elements such as ribbon tabs, ribbon groups, built in ribbon items, custom ribbon items, right pane, backstage and its items. This section also covers the basic features needed to get started with Syncfusion&reg; ribbon control.
+This section explains the steps required to add the Ribbon control and its elements such as ribbon tabs, ribbon groups, built in ribbon items, custom ribbon items, right pane, backstage and its items. This section also covers the basic features needed to get started with Syncfusion<sup>&reg;</sup> ribbon control.
 
 ## Creating an application with WinUI Ribbon
 
