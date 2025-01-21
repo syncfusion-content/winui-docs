@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Themes for Syncfusion WinUI Controls
+# Themes for Syncfusion<sup>&reg;</sup> WinUI Controls
 
 Themes provide a sense of visual continuity for the Windows apps. 
 It allows you to customize the appearance of the application. 
@@ -16,7 +16,7 @@ The theme affects the colors of the Controls' background, foreground, border bru
 
 ## Supported themes
 
-Syncfusion WinUI controls support Light and Dark themes. 
+Syncfusion<sup>&reg;</sup> WinUI controls support Light and Dark themes. 
 
 **Light theme**
 
@@ -29,7 +29,7 @@ Syncfusion WinUI controls support Light and Dark themes.
 ## Applying themes at the application level
 
 The theme for the whole application can be changed using the `RequestedTheme` property available in App.xaml. 
-Syncfusion control adopts to Theme settings, when it is applied using the `RequestedTheme` property. 
+Syncfusion<sup>&reg;</sup> control adopts to Theme settings, when it is applied using the `RequestedTheme` property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -88,9 +88,9 @@ N> When the RequestedTheme value is set on a FrameworkElement, it is inherited b
 
 ## Theme resource
 
-Syncfusion provides a theme resource file for all Syncfusion WinUI Project Reunion controls. By referring to this file, the appearance of the controls can be customized at the application level.
+Syncfusion<sup>&reg;</sup> provides a theme resource file for all Syncfusion<sup>&reg;</sup> WinUI Project Reunion controls. By referring to this file, the appearance of the controls can be customized at the application level.
 
-Theme resource files for Syncfusion WinUI controls can be referred from this [link](https://github.com/syncfusion/winui-controls-theme-resource-files).
+Theme resource files for Syncfusion<sup>&reg;</sup> WinUI controls can be referred from this [link](https://github.com/syncfusion/winui-controls-theme-resource-files).
 
 ### Modify theme resource at application level
 
