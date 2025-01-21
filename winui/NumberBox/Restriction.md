@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Value change restriction in WinUI NumberBox | Syncfusion
-description: Learn here all about how to restrict the value change in Syncfusion WinUI NumberBox (SfNumberBox) control and more.
+title: Value change restriction in WinUI NumberBox | Syncfusion&reg;
+description: Learn here all about how to restrict the value change in Syncfusion&reg; WinUI NumberBox (SfNumberBox) control and more.
 platform: winui
 control:  SfNumberBox
 documentation: ug
