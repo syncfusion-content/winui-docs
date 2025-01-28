@@ -19,7 +19,7 @@ In another way, open the Control Panel from the following installed location.
 
 C:\Program Files (x86)\Syncfusion\Essential Studio\WinUI\{{ site.releaseversion }}\Infrastructure\Launcher\Syncfusion WinUI Control Panel.exe 
 
-N> In the above section, latest Essential Studio version details has been provided. Refer installed Essential Studio version instead of mentioned version.
+N> In the above section, latest Essential Studio<sup>&reg;</sup> version details has been provided. Refer installed Essential Studio<sup>&reg;</sup> version instead of mentioned version.
 
 ## Syncfusion<sup>&reg;</sup> Controls Gallery for WinUI Desktop
 

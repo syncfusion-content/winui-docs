@@ -9,7 +9,7 @@ documentation: ug
 
 # Simplified Layout in WinUI Ribbon Control
 
-The Syncfusion Ribbon provides a compact and simplified layout by arranging the most-used commands in a single line, occupying less space. Quickly navigate to other commonly used commands in the overflow menu, and then switch to normal mode using the built-in toggle button. This section explains in detail about the simplified layout.
+The Syncfusion<sup>&reg;</sup> Ribbon provides a compact and simplified layout by arranging the most-used commands in a single line, occupying less space. Quickly navigate to other commonly used commands in the overflow menu, and then switch to normal mode using the built-in toggle button. This section explains in detail about the simplified layout.
 
 ## Enabling simplified layout
 
@@ -208,7 +208,7 @@ Overflow menu can be enabled either at the end of each `RibbonGroup` or placed a
 
 ## Display mode  
 
-Syncfusion Ribbon control provides a minimized and adorner state. Enable the `AllowMinimize` property to toggle between normal and minimized state. 
+Syncfusion<sup>&reg;</sup> Ribbon control provides a minimized and adorner state. Enable the `AllowMinimize` property to toggle between normal and minimized state. 
 
 {% tabs %}
 {% highlight xaml %}
