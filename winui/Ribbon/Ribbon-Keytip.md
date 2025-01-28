@@ -9,7 +9,7 @@ documentation: ug
 
 # Keyboard Navigation in WinUI Ribbon
 
-The Syncfusion&reg; WinUI [SfRibbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html) supports the keyboard navigation to activate the ribbon elements via KeyTipService, which represents the service that provides the attached properties to enable and manage the KeyTips to the ribbon control. 
+The Syncfusion<sup>&reg;</sup> WinUI [SfRibbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html) supports the keyboard navigation to activate the ribbon elements via KeyTipService, which represents the service that provides the attached properties to enable and manage the KeyTips to the ribbon control. 
 
 KeyTips, also known as access keys or accelerators, are shortcut key combinations that are used to activate the ribbon's tabs and buttons, as well as the Backstage file menu.
 
