@@ -586,7 +586,7 @@ The [CardTappedCommand](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 {% endhighlight %}
 
-{% highlight C# tabtitle="ViewModel.cs" hl_lines="25 122 123 125 126 127 128 129 130 131 132 134 135 136 137 138 139 140 141 142 143" %}
+{% highlight C# tabtitle="ViewModel" hl_lines="25 122 123 125 126 127 128 129 130 131 132 134 135 136 137 138 139 140 141 142 143" %}
 
     public class ViewModel
     {
@@ -727,7 +727,7 @@ The [CardTappedCommand](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 {% endhighlight %}
 
-{% highlight C# tabtitle="RelayCommand.cs" %}
+{% highlight C# tabtitle="RelayCommand" %}
 
 public class RelayCommand : ICommand
 {

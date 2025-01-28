@@ -152,7 +152,7 @@ public class ViewModel
         taskDetail.Title = "New Feature";
         taskDetail.Id = "29574";
         taskDetail.Description = "Dragging events support for Kanban";
-        taskDetail.Category = "In Progress";
+        taskDetail.Category = "Closed";
         taskDetail.IndicatorColorKey = "Normal";
         taskDetail.Tags = new List<string>() { "New Control" };
         taskDetail.Image = new Image
@@ -166,7 +166,7 @@ public class ViewModel
         taskDetail.Title = "WF Issue";
         taskDetail.Id = "1254";
         taskDetail.Description = "HorizontalAlignment for tooltip is not working";
-        taskDetail.Category = "Closed";
+        taskDetail.Category = "Review";
         taskDetail.IndicatorColorKey = "High";
         taskDetail.Tags = new List<string>() { "Bug fixing" };
         taskDetail.Image = new Image
@@ -183,8 +183,6 @@ public class ViewModel
 
 {% endhighlight %}
 {% endtabs %}
-
-![cards-indicator-color-in-winui-kanban](images/cards/cards-indicator-color-in-winui-kanban.png)
 
 ## Card appearance customization
 
@@ -203,10 +201,10 @@ The following code snippet demonstrates, how to use the [CardTemplate](https://h
                  ItemsSource="{Binding TaskDetails}">
     <kanban:SfKanban.CardTemplate>
         <DataTemplate>
-            <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="3" Background="#F3F3F2">
+            <Border BorderBrush="Green" BorderThickness="1" CornerRadius="10" Background="LightGreen">
                 <StackPanel Margin="10">
                     <TextBlock Text="{Binding Title}" TextAlignment="Center" FontWeight="Bold" FontSize="14" />
-                    <TextBlock Text="{Binding Description}" TextAlignment="Center" FontSize="12" TextWrapping="Wrap" Margin="5" />
+                    <TextBlock Text="{Binding Description}" TextAlignment="Center" FontSize="14" TextWrapping="Wrap" />
                 </StackPanel>
             </Border>
         </DataTemplate>
@@ -263,7 +261,7 @@ public class ViewModel
         KanbanModel taskDetail = new KanbanModel();
         taskDetail.Title = "UWP Issue";
         taskDetail.Id = "651";
-        taskDetail.Description = "In minimized state, first and last segments have incorrect spacing";
+        taskDetail.Description = "Crosshair label template not visible in UWP";
         taskDetail.Category = "Open";
         taskDetail.IndicatorColorKey = "High";
         taskDetail.Tags = new List<string>() { "Bug Fixing" };
@@ -289,9 +287,9 @@ public class ViewModel
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
-        taskDetail.Title = "WPF Issue";
+        taskDetail.Title = "Kanban Feature";
         taskDetail.Id = "25678";
-        taskDetail.Description = "Minimum and maximum properties are not working in dynamic update";
+        taskDetail.Description = "Provide drag and drop support";
         taskDetail.Category = "In Progress";
         taskDetail.IndicatorColorKey = "Low";
         taskDetail.Tags = new List<string>() { "New control" };
@@ -302,31 +300,30 @@ public class ViewModel
 
         taskDetails.Add(taskDetail);
 
-
-        taskDetail = new KanbanModel();
-        taskDetail.Title = "WF Issue";
-        taskDetail.Id = "1254";
-        taskDetail.Description = "HorizontalAlignment for tooltip is not working";
-        taskDetail.Category = "In Progress";
-        taskDetail.IndicatorColorKey = "High";
-        taskDetail.Tags = new List<string>() { "Bug fixing" };
-        taskDetail.Image = new Image
-        {
-            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle5.png"))
-        };
-
-        taskDetails.Add(taskDetail);
-
         taskDetail = new KanbanModel();
         taskDetail.Title = "New Feature";
         taskDetail.Id = "29574";
-        taskDetail.Description = "Need to implement tooltip support for Kanban";
+        taskDetail.Description = "Dragging events support for Kanban";
         taskDetail.Category = "Closed";
         taskDetail.IndicatorColorKey = "Normal";
         taskDetail.Tags = new List<string>() { "New Control" };
         taskDetail.Image = new Image
         {
             Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WF Issue";
+        taskDetail.Id = "1254";
+        taskDetail.Description = "HorizontalAlignment for tooltip is not working";
+        taskDetail.Category = "Review";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle5.png"))
         };
 
         taskDetails.Add(taskDetail);
@@ -338,8 +335,6 @@ public class ViewModel
 
 {% endhighlight %}
 {% endtabs %}
-
-![card-template-in-winui-kanban](images/cards/card-template-in-winui-kanban.png)
 
 ### Customize card appearance using DataTemplateSelector
 
@@ -354,18 +349,18 @@ You can customize the card appearance by using the [CardTemplateSelector](https:
     </Grid.DataContext>    
     <Grid.Resources>
         <DataTemplate x:Key="highPriorityTemplate">
-            <Border BorderBrush="Black" BorderThickness="1" CornerRadius="3" Background="#F3CFCE">
+            <Border BorderBrush="Red" BorderThickness="2" CornerRadius="10" Background="LightPink">
                 <StackPanel Margin="10">
-                    <TextBlock Text="{Binding Title}" FontWeight="Bold" TextAlignment="Center" FontSize="14" />
-                    <TextBlock Text="{Binding Description}" FontSize="12" TextAlignment="Center" TextWrapping="Wrap" Margin="5" />
+                    <TextBlock Text="{Binding Title}" FontWeight="Bold" FontSize="16" />
+                    <TextBlock Text="{Binding Description}" FontSize="14" TextWrapping="Wrap" />
                 </StackPanel>
             </Border>
         </DataTemplate>
         <DataTemplate x:Key="defaultTemplate">
-            <Border BorderBrush="Black" BorderThickness="1" CornerRadius="3" Background="#F3EADC">
+            <Border BorderBrush="Green" BorderThickness="1" CornerRadius="10" Background="LightGreen">
                 <StackPanel Margin="10">
-                    <TextBlock Text="{Binding Title}" FontWeight="Bold" TextAlignment="Center" FontSize="14" />
-                    <TextBlock Text="{Binding Description}" FontSize="12" TextAlignment="Center" TextWrapping="Wrap" Margin="5" />
+                    <TextBlock Text="{Binding Title}" FontWeight="Bold" FontSize="16" />
+                    <TextBlock Text="{Binding Description}" FontSize="14" TextWrapping="Wrap" />
                 </StackPanel>
             </Border>
         </DataTemplate>
@@ -442,7 +437,7 @@ public class ViewModel
         KanbanModel taskDetail = new KanbanModel();
         taskDetail.Title = "UWP Issue";
         taskDetail.Id = "651";
-        taskDetail.Description = "In minimized state, first and last segments have incorrect spacing";
+        taskDetail.Description = "Crosshair label template not visible in UWP";
         taskDetail.Category = "Open";
         taskDetail.IndicatorColorKey = "High";
         taskDetail.Tags = new List<string>() { "Bug Fixing" };
@@ -468,9 +463,9 @@ public class ViewModel
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
-        taskDetail.Title = "WPF Issue";
+        taskDetail.Title = "Kanban Feature";
         taskDetail.Id = "25678";
-        taskDetail.Description = "Minimum and maximum properties are not working in dynamic update";
+        taskDetail.Description = "Provide drag and drop support";
         taskDetail.Category = "In Progress";
         taskDetail.IndicatorColorKey = "Low";
         taskDetail.Tags = new List<string>() { "New control" };
@@ -481,31 +476,30 @@ public class ViewModel
 
         taskDetails.Add(taskDetail);
 
-
-        taskDetail = new KanbanModel();
-        taskDetail.Title = "WF Issue";
-        taskDetail.Id = "1254";
-        taskDetail.Description = "HorizontalAlignment for tooltip is not working";
-        taskDetail.Category = "In Progress";
-        taskDetail.IndicatorColorKey = "High";
-        taskDetail.Tags = new List<string>() { "Bug fixing" };
-        taskDetail.Image = new Image
-        {
-            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle5.png"))
-        };
-
-        taskDetails.Add(taskDetail);
-
         taskDetail = new KanbanModel();
         taskDetail.Title = "New Feature";
         taskDetail.Id = "29574";
-        taskDetail.Description = "Need to implement tooltip support for Kanban";
+        taskDetail.Description = "Dragging events support for Kanban";
         taskDetail.Category = "Closed";
         taskDetail.IndicatorColorKey = "Normal";
         taskDetail.Tags = new List<string>() { "New Control" };
         taskDetail.Image = new Image
         {
             Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WF Issue";
+        taskDetail.Id = "1254";
+        taskDetail.Description = "HorizontalAlignment for tooltip is not working";
+        taskDetail.Category = "Review";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle5.png"))
         };
 
         taskDetails.Add(taskDetail);
@@ -518,6 +512,6 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![card-template-selector-in-winui-kanban](images/cards/card-template-selector-in-winui-kanban.png)
-
 N> The `DataContext` for both the [CardTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplate) and [CardTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplateSelector) properties in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) is set to [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
+
+
