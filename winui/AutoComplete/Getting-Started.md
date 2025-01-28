@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI AutoComplete (SfAutoComplete)
 
-This section explains how to add the [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control and bind data to it. This section covers only the basic features needed to get started with the Syncfusion&reg `AutoComplete` control.
+This section explains how to add the [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control and bind data to it. This section covers only the basic features needed to get started with the Syncfusion<sup>&reg;</sup> `AutoComplete` control.
 
 ## Creating an application with WinUI AutoComplete
 
