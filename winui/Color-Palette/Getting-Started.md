@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Color Palette
 
-This section explains the steps required to add the [WinUI Color Palette](https://www.syncfusion.com/winui-controls/color-palette) control and its various color options. This section covers only basic features needed to get started with Syncfusion `Color Palette` control.
+This section explains the steps required to add the [WinUI Color Palette](https://www.syncfusion.com/winui-controls/color-palette) control and its various color options. This section covers only basic features needed to get started with Syncfusion<sup>&reg;</sup> `Color Palette` control.
 
 ## Control Structure
 
