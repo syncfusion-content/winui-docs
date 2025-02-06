@@ -148,7 +148,7 @@ public class ViewModel
         taskDetail.Title = "New Feature";
         taskDetail.Id = "29574";
         taskDetail.Description = "Dragging events support for Kanban";
-        taskDetail.Category = "Done";
+        taskDetail.Category = "Closed";
         taskDetail.IndicatorColorKey = "Normal";
         taskDetail.Tags = new List<string>() { "New Control" };
         taskDetail.Image = new Image
@@ -162,7 +162,7 @@ public class ViewModel
         taskDetail.Title = "WF Issue";
         taskDetail.Id = "1254";
         taskDetail.Description = "HorizontalAlignment for tooltip is not working";
-        taskDetail.Category = "Code Review";
+        taskDetail.Category = "Review";
         taskDetail.IndicatorColorKey = "High";
         taskDetail.Tags = new List<string>() { "Bug fixing" };
         taskDetail.Image = new Image
@@ -204,6 +204,8 @@ this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
 {% endtabs %}
 
+![binding-item-source-in-winui-kanban](images/getting-started/binding-item-source-in-winui-kanban.png)
+
 ### Defining columns
 
 The columns are generated automatically based on the different values of the [Category](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Category) in the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) class from the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource). However, you can manually define the columns by setting the [AutoGenerateColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) property to `false` and adding [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) instances to the [Columns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). You can define the column categories using the [Categories](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Categories) property of [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html), and the cards will be added to their respective columns.
@@ -216,7 +218,6 @@ The columns are generated automatically based on the different values of the [Ca
                  ItemsSource="{Binding TaskDetails}">
         <kanban:KanbanColumn HeaderText="To Do" Categories="Open" />
         <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
-        <kanban:KanbanColumn HeaderText="Code Review" Categories="Code Review" />
         <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
@@ -232,7 +233,6 @@ this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
 this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "To Do", Categories = "Open" });
 this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "In Progress", Categories = "In Progress" });
-this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Code Review", Categories = "Code Review" });
 this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "Done" });
 
 {% endhighlight %}
@@ -319,7 +319,7 @@ public class ViewModel
         taskDetail.Title = "New Feature";
         taskDetail.Id = "29574";
         taskDetail.Description = "Dragging events support for Kanban";
-        taskDetail.Category = "Done";
+        taskDetail.Category = "In Progress";
         taskDetail.IndicatorColorKey = "Normal";
         taskDetail.Tags = new List<string>() { "New Control" };
         taskDetail.Image = new Image
@@ -333,7 +333,7 @@ public class ViewModel
         taskDetail.Title = "WF Issue";
         taskDetail.Id = "1254";
         taskDetail.Description = "HorizontalAlignment for tooltip is not working";
-        taskDetail.Category = "Code Review";
+        taskDetail.Category = "Done";
         taskDetail.IndicatorColorKey = "High";
         taskDetail.Tags = new List<string>() { "Bug fixing" };
         taskDetail.Image = new Image
@@ -349,10 +349,11 @@ public class ViewModel
 }
 
 {% endhighlight %}
-
 {% endtabs %}
 
 N> When manually defining columns, ensure the [AutoGenerateColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) is set to `false`.
+
+![defining-columns-in-winui-kanban](images/getting-started/defining-columns-in-winui-kanban.png)
 
 ## Theme
 
@@ -360,12 +361,20 @@ The WinUI Kanban supports light and dark themes, automatically adjusting to the 
 
 Refer to the following link for guidance on applying themes: [Themes for Syncfusion WinUI controls](https://help.syncfusion.com/winui/common/themes)
 
-N> You can refer to our `WinUI Kanban` feature tour page for its groundbreaking feature representations. You can also explore our `WinUI Kanban Examples` that shows you how to render the Kanban in WinUI.
+You can find the kanban keys for all themes in this [theme resource file](https://github.com/syncfusion/winui-controls-theme-resource-files/tree/master/Syncfusion.Kanban.WinUI).
+
+![theming-in-winui-kanban](images/getting-started/theming-in-winui-kanban.png)
 
 ## Localization
 
 The WinUI Kanban control supports the localization of all static default strings, allowing you to translate them into any supported language. For detailed instructions on how to localize the default strings, refer to the following link: [Localization in WinUI controls](https://help.syncfusion.com/winui/common/localization).
 
+![localization-support-in-winui-kanban](images/getting-started/localization-support-in-winui-kanban.png)
+
 ## Right to Left (RTL)
 
 The WinUI Kanban control supports RTL (Right-to-Left) rendering, allowing both text and the control's layout to be displayed from right to left. For more information on how to enable RTL rendering, please refer to the following link: [Right to left in WinUI controls](https://help.syncfusion.com/winui/common/right-to-left).
+
+![right-to-left-support-in-winui-kanban](images/getting-started/right-to-left-support-in-winui-kanban.png)
+
+N> You can refer to our [WinUI Kanban](https://www.syncfusion.com/winui-controls/kanban) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Kanban Examples](https://github.com/SyncfusionExamples/winui-kanban-examples) that shows you how to render the Kanban in WinUI.

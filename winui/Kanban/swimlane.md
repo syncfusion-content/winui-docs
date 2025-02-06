@@ -73,10 +73,10 @@ public class ViewModel
 
         KanbanModel taskDetail = new KanbanModel();
         taskDetail.Title = "Customer meeting";
-        taskDetail.Id = "3";
+        taskDetail.Id = "1";
         taskDetail.Assignee = "Janet Leverling";
         taskDetail.Description = "Arrange a web meeting with the customer to get new requirements.";
-        taskDetail.Category = "Backlog";
+        taskDetail.Category = "Open";
         taskDetail.IndicatorColorKey = "High";
         taskDetail.Image = new Image
         {
@@ -87,11 +87,25 @@ public class ViewModel
 
         taskDetail = new KanbanModel();
         taskDetail.Title = "Edge browser issues";
-        taskDetail.Id = "4";
+        taskDetail.Id = "1";
         taskDetail.Assignee = "Janet Leverling";
         taskDetail.Description = "Fix the issues reported in the IE browser.";
-        taskDetail.Category = "Review";
+        taskDetail.Category = "In Progress";
         taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle1.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Login validation";
+        taskDetail.Id = "1";
+        taskDetail.Assignee = "Janet Leverling";
+        taskDetail.Description = "Login page validation.";
+        taskDetail.Category = "Done";
+        taskDetail.IndicatorColorKey = "Low";
         taskDetail.Image = new Image
         {
             Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle1.png"))
@@ -104,36 +118,64 @@ public class ViewModel
         taskDetail.Id = "2";
         taskDetail.Assignee = "Andrew Fuller";
         taskDetail.Description = "Improve application performance.";
-        taskDetail.Category = "Backlog";
+        taskDetail.Category = "Open";
         taskDetail.IndicatorColorKey = "Normal";
         taskDetail.Image = new Image
         {
-            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle5.png"))
         };
 
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
         taskDetail.Title = "Analysis";
-        taskDetail.Id = "18";
+        taskDetail.Id = "2";
         taskDetail.Assignee = "Andrew Fuller";
         taskDetail.Description = "Analyze SQL server 2008 connection.";
         taskDetail.Category = "In Progress";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle5.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Data binding issues";
+        taskDetail.Id = "2";
+        taskDetail.Assignee = "Andrew Fuller";
+        taskDetail.Description = "Fix the issues reported in data binding.";
+        taskDetail.Category = "Done";
+        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle5.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Editing";
+        taskDetail.Id = "3";
+        taskDetail.Assignee = "Laura Callahan";
+        taskDetail.Description = "Enhance editing functionality.";
+        taskDetail.Category = "Open";
         taskDetail.IndicatorColorKey = "Low";
         taskDetail.Image = new Image
         {
-            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
         };
 
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
         taskDetail.Title = "Responsive support";
-        taskDetail.Id = "14";
+        taskDetail.Id = "3";
         taskDetail.Assignee = "Laura Callahan";
         taskDetail.Description = "Add responsive support to application.";
         taskDetail.Category = "In Progress";
-        taskDetail.IndicatorColorKey = "High";
+        taskDetail.IndicatorColorKey = "Low";
         taskDetail.Image = new Image
         {
             Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
@@ -143,11 +185,11 @@ public class ViewModel
 
         taskDetail = new KanbanModel();
         taskDetail.Title = "Filtering feature";
-        taskDetail.Id = "48";
+        taskDetail.Id = "3";
         taskDetail.Assignee = "Laura Callahan";
         taskDetail.Description = "Check filtering validation.";
-        taskDetail.Category = "Testing";
-        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Category = "Done";
+        taskDetail.IndicatorColorKey = "High";
         taskDetail.Image = new Image
         {
             Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
@@ -163,6 +205,8 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
+![swimlane-in-winui-kanban](images/swimlane/swimlane-in-winui-kanban.png)
+
 ## Customize swimlane header
 
 The WinUI Kanban control allows you to customize the appearance of swimlane headers using the [SwimlaneHeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_SwimlaneHeaderTemplate) property. This enables you to create a unique design for the header displayed at the beginning of each swimlane group.
@@ -170,7 +214,7 @@ The WinUI Kanban control allows you to customize the appearance of swimlane head
 The following example code demonstrates, how to customize a swimlane header in the WinUI Kanban control.
 
 {% tabs %}
-{% highlight XAML hl_lines="4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42" %}
+{% highlight XAML hl_lines="4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70" %}
 
 <kanban:SfKanban x:Name="kanban"
                  SwimlaneKey="IndicatorColorKey"
@@ -294,10 +338,10 @@ public class ViewModel
 
         KanbanModel taskDetail = new KanbanModel();
         taskDetail.Title = "Customer meeting";
-        taskDetail.Id = "3";
+        taskDetail.Id = "1";
         taskDetail.Assignee = "Janet Leverling";
         taskDetail.Description = "Arrange a web meeting with the customer to get new requirements.";
-        taskDetail.Category = "Backlog";
+        taskDetail.Category = "Open";
         taskDetail.IndicatorColorKey = "High";
         taskDetail.Image = new Image
         {
@@ -308,11 +352,25 @@ public class ViewModel
 
         taskDetail = new KanbanModel();
         taskDetail.Title = "Edge browser issues";
-        taskDetail.Id = "4";
+        taskDetail.Id = "1";
         taskDetail.Assignee = "Janet Leverling";
         taskDetail.Description = "Fix the issues reported in the IE browser.";
-        taskDetail.Category = "Review";
+        taskDetail.Category = "In Progress";
         taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle1.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Login validation";
+        taskDetail.Id = "1";
+        taskDetail.Assignee = "Janet Leverling";
+        taskDetail.Description = "Login page validation.";
+        taskDetail.Category = "Done";
+        taskDetail.IndicatorColorKey = "Low";
         taskDetail.Image = new Image
         {
             Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle1.png"))
@@ -325,36 +383,64 @@ public class ViewModel
         taskDetail.Id = "2";
         taskDetail.Assignee = "Andrew Fuller";
         taskDetail.Description = "Improve application performance.";
-        taskDetail.Category = "Backlog";
+        taskDetail.Category = "Open";
         taskDetail.IndicatorColorKey = "Normal";
         taskDetail.Image = new Image
         {
-            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle5.png"))
         };
 
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
         taskDetail.Title = "Analysis";
-        taskDetail.Id = "18";
+        taskDetail.Id = "2";
         taskDetail.Assignee = "Andrew Fuller";
         taskDetail.Description = "Analyze SQL server 2008 connection.";
         taskDetail.Category = "In Progress";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle5.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Data binding issues";
+        taskDetail.Id = "2";
+        taskDetail.Assignee = "Andrew Fuller";
+        taskDetail.Description = "Fix the issues reported in data binding.";
+        taskDetail.Category = "Done";
+        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle5.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Editing";
+        taskDetail.Id = "3";
+        taskDetail.Assignee = "Laura Callahan";
+        taskDetail.Description = "Enhance editing functionality.";
+        taskDetail.Category = "Open";
         taskDetail.IndicatorColorKey = "Low";
         taskDetail.Image = new Image
         {
-            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
         };
 
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
         taskDetail.Title = "Responsive support";
-        taskDetail.Id = "14";
+        taskDetail.Id = "3";
         taskDetail.Assignee = "Laura Callahan";
         taskDetail.Description = "Add responsive support to application.";
         taskDetail.Category = "In Progress";
-        taskDetail.IndicatorColorKey = "High";
+        taskDetail.IndicatorColorKey = "Low";
         taskDetail.Image = new Image
         {
             Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
@@ -364,11 +450,11 @@ public class ViewModel
 
         taskDetail = new KanbanModel();
         taskDetail.Title = "Filtering feature";
-        taskDetail.Id = "48";
+        taskDetail.Id = "3";
         taskDetail.Assignee = "Laura Callahan";
         taskDetail.Description = "Check filtering validation.";
-        taskDetail.Category = "Testing";
-        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Category = "Done";
+        taskDetail.IndicatorColorKey = "High";
         taskDetail.Image = new Image
         {
             Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
@@ -385,3 +471,5 @@ public class ViewModel
 {% endtabs %}
 
 N> The `DataContext` for the [SwimlaneHeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_SwimlaneHeaderTemplate) property in [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) is set to the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
+
+![swimlane-header-template-in-winui-kanban](images/swimlane/swimlane-header-template-in-winui-kanban.png)

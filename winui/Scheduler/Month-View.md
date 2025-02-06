@@ -262,7 +262,7 @@ this.Schedule.MonthViewSettings.TrailingDaysVisibility = Visibility.Collapsed;
 
 ## Change the number of visible weeks
 
-The number of weeks visible in the month view can be changed by setting the `NumberOfVisibleWeeks` property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html) in the [SfScheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html). By default, 6 weeks are visible.
+The number of weeks visible in the month view can be changed by setting the [`NumberOfVisibleWeeks`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_NumberOfVisibleWeeks) property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html) in the [SfScheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html). By default, 6 weeks are visible.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
@@ -270,7 +270,8 @@ The number of weeks visible in the month view can be changed by setting the `Num
 <scheduler:SfScheduler x:Name="Schedule" 
                        ViewType="Month">
     <scheduler:SfScheduler.MonthViewSettings>
-        <scheduler:MonthViewSetting NumberOfVisibleWeeks="3"/>
+        <scheduler:MonthViewSetting NumberOfVisibleWeeks="3"
+                                    ShowAgendaView="True"/>
     </scheduler:SfScheduler.MonthViewSettings>
 </scheduler:SfScheduler>
 
@@ -279,15 +280,16 @@ The number of weeks visible in the month view can be changed by setting the `Num
 
 this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.MonthViewSettings.NumberOfVisibleWeeks = 3;
+this.Schedule.MonthViewSettings.ShowAgendaView = true;
 
 {% endhighlight %}
 {% endtabs %}
 
-![Number-of-visible-weeks-in-month-view-in-WinUI-Scheduler](Month-View_Imges/number-of-visible-weeks-in-month-view-in-winui-scheduler.webp){:width="540" height="290"}
+![Number-of-visible-weeks-in-month-view-in-WinUI-Scheduler](Month-View_Imges/number-of-visible-weeks-in-month-view-in-winui-scheduler.webp)
 
 N>
-* The week number range is limited to values between 1 and 6. Any value outside this range will cause the `NumberOfVisibleWeeks` to default to 6.
-* The `NumberOfVisibleWeeks` property dynamically controls the number of weeks displayed in the scheduler's month view.
+* The week number range is limited to values between 1 and 6. Any value outside this range will cause the [NumberOfVisibleWeeks](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_NumberOfVisibleWeeks) to default to 6.
+* The [NumberOfVisibleWeeks](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_NumberOfVisibleWeeks) property dynamically controls the number of weeks displayed in the scheduler's month view.
 * The [DisplayDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_DisplayDate) property defines the first row of dates shown in the scheduler's month view.
 * The [LeadingDaysVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_LeadingDaysVisibility) and [TrailingDaysVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_TrailingDaysVisibility) properties are applicable only when the number of visible weeks is set to 6.
 
