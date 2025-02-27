@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row drag and drop in WinUI TreeGrid control | Syncfusion
-description: Learn here all about row drag and drop support in Syncfusion WinUI TreeGrid (SfTreeGrid) control and more.
+title: Row drag and drop in WinUI TreeGrid control | Syncfusion®
+description: Learn here all about row drag and drop support in Syncfusion® WinUI TreeGrid (SfTreeGrid) control and more.
 platform: winui
 control: SfTreeGrid
 documentation: ug

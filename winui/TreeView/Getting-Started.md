@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinUI TreeView control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI TreeView control, its elements, and more.
+title: Getting Started with WinUI TreeView control | Syncfusion®
+description: Learn here all about getting started with Syncfusion® WinUI TreeView control, its elements, and more.
 platform: WinUI
 control: TreeView
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI TreeView
 
-This section explains the steps required to add the [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) control and binding data in Treeview control. This section covers only basic features needed to get started with Syncfusion TreeView control.
+This section explains the steps required to add the [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) control and binding data in Treeview control. This section covers only basic features needed to get started with Syncfusion<sup>®</sup> TreeView control.
 
 ## Creating an application with WinUI TreeView
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row drag and drop in WinUI DataGrid control | Syncfusion
-description: Learn here all about row drag and drop support in Syncfusion WinUI DataGrid (SfDataGrid) control and more.
+title: Row drag and drop in WinUI DataGrid control | Syncfusion®
+description: Learn here all about row drag and drop support in Syncfusion® WinUI DataGrid (SfDataGrid) control and more.
 platform: winui
 control: SfDataGrid
 documentation: ug

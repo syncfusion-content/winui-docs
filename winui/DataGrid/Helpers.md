@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Helpers | DataGrid | WinUI | Syncfusion
-description: Learn about helpers such as getting the actual row index irrespective of grouping and so on in Syncfusion WinUI DataGrid (SfDataGrid) control and more details.
+title: Helpers | DataGrid | WinUI | Syncfusion®
+description: Learn about helpers such as getting the actual row index irrespective of grouping and so on in Syncfusion® WinUI DataGrid (SfDataGrid) control and more details.
 platform: winui
 control: DataGrid
 documentation: ug

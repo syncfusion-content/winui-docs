@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load On Demand in WinUI TreeView control | Syncfusion
-description: Learn here all about Load On Demand support in Syncfusion WinUI TreeView(SfTreeView) control and more.
+title: Load On Demand in WinUI TreeView control | Syncfusion®
+description: Learn here all about Load On Demand support in Syncfusion® WinUI TreeView(SfTreeView) control and more.
 platform: WinUI
 control: TreeView
 documentation: ug
