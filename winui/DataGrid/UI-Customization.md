@@ -1,7 +1,7 @@
 ---
 layout: post
-title: UI Customization in WinUI DataGrid control | Syncfusion
-description: Learn about UI Customization support in Syncfusion WinUI DataGrid (SfDataGrid) control and more details.
+title: UI Customization in WinUI DataGrid control | Syncfusion®
+description: Learn about UI Customization support in Syncfusion® WinUI DataGrid (SfDataGrid) control and more details.
 platform: winui
 control: SfDataGrid
 documentation: ug
