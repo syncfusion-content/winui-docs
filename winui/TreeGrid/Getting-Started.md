@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinUI TreeGrid control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI TreeGrid control, its elements, and more.
+title: Getting Started with WinUI TreeGrid control | Syncfusion®
+description: Learn here all about getting started with Syncfusion® WinUI TreeGrid control, its elements, and more.
 platform: winui
 control: TreeGrid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI TreeGrid
 
-This section explains the steps required to add the [WinUI TreeGrid](https://www.syncfusion.com/winui-controls/treegrid) control and binding data in treegrid control. This section covers only basic features needed to get started with Syncfusion treegrid control.
+This section explains the steps required to add the [WinUI TreeGrid](https://www.syncfusion.com/winui-controls/treegrid) control and binding data in treegrid control. This section covers only basic features needed to get started with Syncfusion<sup>®</sup> treegrid control.
 
 ## Creating an application with WinUI TreeGrid
 

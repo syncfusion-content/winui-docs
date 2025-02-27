@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CRUD Operations in WinUI DataGrid control | Syncfusion
-description: Learn here all about CRUD Operations feature of Syncfusion WinUI DataGrid(SfDataGrid) control and more.
+title: CRUD Operations in WinUI DataGrid control | Syncfusion®
+description: Learn here all about CRUD Operations feature of Syncfusion® WinUI DataGrid(SfDataGrid) control and more.
 platform: winui
 control: DataGrid
 documentation: ug
