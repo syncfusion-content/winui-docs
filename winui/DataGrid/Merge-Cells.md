@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Merge Cells in WinUI DataGrid control | Syncfusion
-description: Learn here all about Merge Cells support in Syncfusion WinUI DataGrid (SfDataGrid) control and more.
+title: Merge Cells in WinUI DataGrid control | Syncfusion®
+description: Learn here all about Merge Cells support in Syncfusion® WinUI DataGrid (SfDataGrid) control and more.
 platform: winui
 control: DataGrid
 documentation: ug
