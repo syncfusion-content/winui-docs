@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Helpers | TreeGrid | WinUI | Syncfusion
+title: Helpers | TreeGrid | WinUI | Syncfusion®
 description: This section describes about the index resolver class for getting the row/column/node indexes and Dispose method of TreeGrid.
 platform: winui
 control: TreeGrid

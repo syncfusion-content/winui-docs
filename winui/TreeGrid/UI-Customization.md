@@ -1,7 +1,7 @@
 ---
 layout: post
-title: UI Customization in WinUI TreeGrid control | Syncfusion.
-description: Learn about UI Customization in Syncfusion WinUI TreeGrid (SfTreeGrid) control and more details.| Syncfusion | SfTreeGrid 
+title: UI Customization in WinUI TreeGrid control | Syncfusion®.
+description: Learn about UI Customization in Syncfusion® WinUI TreeGrid (SfTreeGrid) control and more details.| Syncfusion® | SfTreeGrid 
 platform: winui
 control: SfTreeGrid
 documentation: ug
