@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cards in WinUI Kanban control | Syncfusion
-description: This section describes about cards in Syncfusion WinUI Kanban (SfKanban) control, its elements and more.
+title: Cards in WinUI Kanban control | Syncfusion<sup>®</sup>
+description: This section describes about cards in Syncfusion<sup>®</sup> WinUI Kanban (SfKanban) control, its elements and more.
 platform: winui
 control: SfKanban
 documentation: ug
