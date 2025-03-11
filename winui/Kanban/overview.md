@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About WinUI Kanban control | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio WinUI Kanban (SfKanban) control, its features and more.
+title: About WinUI Kanban control | Syncfusion<sup>®</sup>
+description: Learn here all about introduction of Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> WinUI Kanban (SfKanban) control, its features and more.
 platform: winui
 control: SfKanban
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview of WinUI Kanban (SfKanban)
 
-The Syncfusion WinUI Kanban control provides an efficient way to visualize workflows at each stage of completion. It enables clear planning and offers a transparent view of work progress. With a range of essential features, SfKanban is ideal for monitoring tasks throughout the software development cycle.
+The Syncfusion<sup>®</sup> WinUI Kanban control provides an efficient way to visualize workflows at each stage of completion. It enables clear planning and offers a transparent view of work progress. With a range of essential features, SfKanban is ideal for monitoring tasks throughout the software development cycle.
 
 ![overview-in-winui-kanban](images/overview/overview-in-winui-kanban.png)
 
