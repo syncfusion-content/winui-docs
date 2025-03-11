@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/b61b3589-0129-4644-aea8-334718d9dad2)---
 layout: post
 title:  Axis types in WinUI Chart control | Syncfusion
 description: Learn here all about the axis types and its features in  Syncfusion® WinUI Chart (SfPolarChart) control.
