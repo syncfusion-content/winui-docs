@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Swimlane support in WinUI Kanban control | Syncfusion
-description: Learn here all about the swimlane support and its customization in Syncfusion WinUI Kanban (SfKanban) control.
+title: Swimlane support in WinUI Kanban control | Syncfusion<sup>®</sup>
+description: Learn here all about the swimlane support and its customization in Syncfusion<sup>®</sup> WinUI Kanban (SfKanban) control.
 platform: winui
 control: SfKanban
 documentation: ug
