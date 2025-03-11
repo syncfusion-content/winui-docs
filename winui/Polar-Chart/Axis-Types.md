@@ -1,4 +1,4 @@
----
+![image](https://github.com/user-attachments/assets/b61b3589-0129-4644-aea8-334718d9dad2)---
 layout: post
 title:  Axis types in WinUI Chart control | Syncfusion
 description: Learn here all about the axis types and its features in  Syncfusion® WinUI Chart (SfPolarChart) control.
@@ -178,7 +178,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 ## Logarithmic Axis
 
-The Logarithmic axis uses a logarithmic scale, and it is very useful in visualizing data when the given data range has a big difference. It can be defined for both PrimaryAxis and SecondaryAxis.
+The logarithmic axis uses a logarithmic scale, making it highly effective for visualizing data with large range differences. It can be applied to both the PrimaryAxis and SecondaryAxis.
 
 {% tabs %}
 
