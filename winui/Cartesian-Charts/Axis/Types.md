@@ -363,9 +363,9 @@ The [LogarithmicAxis]() uses a logarithmic scale, ideal for visualizing data wit
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.SecondaryAxis>
+<chart:SfCartesianChart.YAxes>
     <chart:LogarithmicAxis />
-</chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
 
@@ -394,9 +394,9 @@ The Axis interval can be customized using the [Interval]() property of the axis.
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.SecondaryAxis>
+<chart:SfCartesianChart.YAxes>
     <chart:LogarithmicAxis Interval="10" />
-</chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
 
@@ -426,9 +426,9 @@ The range of the logarithmic axis can be customized using the [Minimum]() and [M
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.SecondaryAxis>
+<chart:SfCartesianChart.YAxes>
     <chart:LogarithmicAxis Minimum="100" Maximum="100000" />
-</chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
 
@@ -459,9 +459,9 @@ The logarithmic axis base can be customized using the [LogarithmicBase]() proper
 
 <chart:SfCartesianChart>
 . . .
-<chart:SfCartesianChart.SecondaryAxis>
+<chart:SfCartesianChart.YAxes>
     <chart:LogarithmicAxis LogarithmicBase="2" />
-</chart:SfCartesianChart.SecondaryAxis>
+</chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
 
