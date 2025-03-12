@@ -15,8 +15,10 @@ The [CardDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.K
 
 * [Column](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragStartingEventArgs_Column) -  Returns the source column from which the card is being dragged.
 * [Card](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragStartingEventArgs_Card) - Returns the dragging card in the kanban.
+* [IsDraggingCardRetained]() - This allows repeated drag-and-drop actions on the same card without moving it from the source column.
 
 {% tabs %}
+
 {% highlight XAML hl_lines="3" %}
 
 <kanban:SfKanban x:Name="kanban"
@@ -29,21 +31,31 @@ The [CardDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.K
 
 {% endhighlight %}
 
-{% highlight C# hl_lines="2" %}
+{% highlight C# hl_lines="2 7 11" %}
 
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.CardDragStarting += this.OnKanbanCardDragStarting;
 
 private void OnKanbanCardDragStarting(object sender, KanbanCardDragStartingEventArgs e)
 {
-    var draggingCard = e.Card;
-    var draggingColumn = e.Column;
+        var draggingCard = e.Card;
+        var draggingColumn = e.Column;
+        e.IsDraggingCardRetained = true;
+
+        /*e.IsDraggingCardRetained is also use for specific columns with the column name
+        if (e.Column.HeaderText.ToString() == "Menu")
+        {
+            e.IsDraggingCardRetained = true;
+        }*/
+            
 }
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="ViewModel.cs" %}
+![IsDraggingCardRetained property in WinUI SfKanban]( )
 
+{% highlight c# tabtitle="ViewModel.cs" %}
+ 
 public class ViewModel
 {
     #region Properties
