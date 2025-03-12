@@ -376,7 +376,7 @@ The [LogarithmicAxis]() uses a logarithmic scale, ideal for visualizing data wit
 SfCartesianChart chart = new SfCartesianChart();
 . . .
 LogarithmicAxis secondaryAxis = new LogarithmicAxis()
-chart.SecondaryAxis.Add(secondaryAxis);
+chart.YAxes.Add(secondaryAxis);
 
 {% endhighlight %}
 
@@ -411,7 +411,7 @@ LogarithmicAxis secondaryAxis = new LogarithmicAxis()
     Interval = 10,
 };
 
-chart.SecondaryAxis.Add(secondaryAxis);
+chart.YAxes.Add(secondaryAxis);
 
 {% endhighlight %}
 {% endtabs %}
@@ -444,7 +444,7 @@ LogarithmicAxis secondaryAxis = new LogarithmicAxis()
     Maximum = 100000,
 };
 
-chart.SecondaryAxis.Add(secondaryAxis);
+chart.YAxes.Add(secondaryAxis);
 
 {% endhighlight %}
 {% endtabs %}
@@ -476,7 +476,7 @@ LogarithmicAxis secondaryAxis = new LogarithmicAxis()
     LogarithmicBase = 2,
 };
 
-chart.SecondaryAxis.Add(secondaryAxis);
+chart.YAxes.Add(secondaryAxis);
 
 {% endhighlight %}
 {% endtabs %}
