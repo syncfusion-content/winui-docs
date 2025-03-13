@@ -14,11 +14,11 @@ documentation: ug
 The [CardDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDragStarting) event occurs when a card begins to be dragged. We can get the following details from the [CardDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDragStarting) event.
 
 * [Column](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragStartingEventArgs_Column) -  Returns the source column from which the card is being dragged.
+
 * [Card](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragStartingEventArgs_Card) - Returns the dragging card in the kanban.
 * [IsDraggingCardRetained]() - This allows repeated drag-and-drop actions on the same card without moving it from the source column.
 
 {% tabs %}
-
 {% highlight XAML hl_lines="3" %}
 
 <kanban:SfKanban x:Name="kanban"
@@ -30,7 +30,6 @@ The [CardDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.K
 </kanban:SfKanban>
 
 {% endhighlight %}
-
 {% highlight C# hl_lines="2 7 11" %}
 
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
@@ -51,9 +50,6 @@ private void OnKanbanCardDragStarting(object sender, KanbanCardDragStartingEvent
 }
 
 {% endhighlight %}
-
-![IsDraggingCardRetained property in WinUI SfKanban]( )
-
 {% highlight c# tabtitle="ViewModel.cs" %}
  
 public class ViewModel

@@ -9,11 +9,11 @@ documentation: ug
 
 # Workflow configuration
 
-A Kanban [`Workflow`] defines the movement of tasks through different stages in a process, ensuring efficient tracking and management.
+A Kanban [`Workflow`]() defines the movement of tasks through different stages in a process, ensuring efficient tracking and management.
 
 * [`Category`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#:~:text=System.String-,Category,-Gets%20or%20sets) – Represents a specific stage in the workflow that an item is currently in.
 
-* [`AllowedTransitions`] – Specifies the list of categories where an item can be moved from its current category.
+* [`AllowedTransitions`]() – Specifies the list of categories where an item can be moved from its current category.
 
 Workflows help in visualizing the progress of tasks, identifying bottlenecks, and ensuring smooth task transitions. By defining workflows, teams can establish clear task movement rules, improving collaboration and efficiency.
 - **Improved Task Management**: Clearly defined categories and transitions help in tracking task status.
@@ -23,6 +23,7 @@ Workflows help in visualizing the progress of tasks, identifying bottlenecks, an
 
 {% tabs %}
 {% highlight xaml %}
+
     <kanban:SfKanban x:Name="kanban"
                      AutoGenerateColumns="False"
                      ItemsSource="{Binding TaskDetails}">
@@ -60,9 +61,23 @@ Workflows help in visualizing the progress of tasks, identifying bottlenecks, an
                 </kanban:KanbanColumn.ErrorBarSettings>
             </kanban:KanbanColumn>
     </kanban:SfKanban>
-{% endhighlight %}
 
+{% endhighlight %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" %}
+
+ this.kanban.ItemsSource = new ViewModel().TaskDetails;
+
+         this.kanban.Workflows = new List<KanbanWorkflow>()
+         {
+             new KanbanWorkflow() { Category = "Open", AllowedTransitions ={ "In Progress", "Closed", "Closed No Changes", "Won't Fix"} },
+             new KanbanWorkflow() { Category = "Postponed", AllowedTransitions ={ "Open", "In Progress", "Closed", "Closed No Changes", "Won't Fix"} },
+             new KanbanWorkflow() { Category = "Review", AllowedTransitions ={ "In Progress", "Closed", "Postponed" } },
+             new KanbanWorkflow() { Category = "In Progress", AllowedTransitions ={ "Review", "Postponed"} },
+         };
+
+{% endhighlight %}
 {% highlight c# tabtitle="ViewModel.cs" % }
+
 public class ViewModel
          {
              public ViewModel()
@@ -83,20 +98,6 @@ public class ViewModel
          }
          
 {% endhighlight %}
-
-{% highlight c# hl_lines="2 4 5 6 7 8" %}
- this.kanban.ItemsSource = new ViewModel().TaskDetails;
-
-         this.kanban.Workflows = new List<KanbanWorkflow>()
-         {
-             new KanbanWorkflow() { Category = "Open", AllowedTransitions ={ "In Progress", "Closed", "Closed No Changes", "Won't Fix"} },
-             new KanbanWorkflow() { Category = "Postponed", AllowedTransitions ={ "Open", "In Progress", "Closed", "Closed No Changes", "Won't Fix"} },
-             new KanbanWorkflow() { Category = "Review", AllowedTransitions ={ "In Progress", "Closed", "Postponed" } },
-             new KanbanWorkflow() { Category = "In Progress", AllowedTransitions ={ "Review", "Postponed"} },
-         };
-{% endhighlight %}
 {% endtabs %}
 
 By utilizing workflows, teams can effectively manage tasks and streamline the development process. As the project evolves, workflows can be adjusted to accommodate new requirements, making them a flexible and essential tool for project management.
-
-![Workflow configuration in WinUI SfKanban]()
