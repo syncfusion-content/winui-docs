@@ -76,27 +76,241 @@ Workflows help in visualizing the progress of tasks, identifying bottlenecks, an
          };
 
 {% endhighlight %}
-{% highlight c# tabtitle="ViewModel.cs" % }
+{% highlight C# tabtitle="ViewModel.cs" %} 
 
-public class ViewModel
-         {
-             public ViewModel()
-             {
-                 TaskDetails = new ObservableCollection<KanbanModel>();
-                 TaskDetails.Add(new KanbanModel()
-                    {
-                        Title = "Universal App",
-                        Id = "6593",
-                        Description = "Draft preliminary software specifications",
-                        Category = "Review",
-                        IndicatorColorKey = "High",
-                        Tags = new List<string> { "Analysis" },
-                        Image = new Image { Source = new BitmapImage(new Uri("ms-appx:///Images/People_Circle0.png", UriKind.RelativeOrAbsolute)) },
-                    });
-             }
-             public ObservableCollection<KanbanModel> TaskDetails { get; set; }
-         }
-         
+    public class ViewModel
+    {
+        #region Properties
+
+        /// <summary>
+        /// Gets or sets the collection of <see cref="KanbanModel"/> objects representing tasks in various stages.
+        /// </summary>
+        public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+        #endregion
+
+        #region Constructor
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ViewModel"/> class.
+        /// </summary>
+        public ViewModel()
+        {
+            this.TaskDetails = this.GetTaskDetails();
+        }
+
+        #endregion
+
+        #region Private methods
+
+        /// <summary>
+        /// Method to get the kanban model collections.
+        /// </summary>
+        /// <returns>The kanban model collections.</returns>
+        private ObservableCollection<KanbanModel> GetTaskDetails()
+        {
+            var taskDetails = new ObservableCollection<KanbanModel>();
+
+            KanbanModel taskDetail = new KanbanModel();
+            taskDetail.Title = "UWP Issue";
+            taskDetail.Id = "6593";
+            taskDetail.Description = "Sorting is not working properly in DateTimeAxis";
+            taskDetail.Category = "Postponed";
+            taskDetail.IndicatorColorKey = "High";
+            taskDetail.Tags = new List<string>() { "Bug Fixing" };
+            taskDetail.Image = new Image
+            {
+                Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle1.png"))
+            };
+
+            taskDetails.Add(taskDetail);
+
+            taskDetail = new KanbanModel();
+            taskDetail.Title = "New Feature";
+            taskDetail.Id = "6593";
+            taskDetail.Description = "Need to create code base for Gantt control";
+            taskDetail.Category = "Postponed";
+            taskDetail.IndicatorColorKey = "Low";
+            taskDetail.Tags = new List<string>() { "GanttControl UWP" };
+            taskDetail.Image = new Image
+            {
+                Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
+            };
+
+            taskDetails.Add(taskDetail);
+
+            taskDetail = new KanbanModel();
+            taskDetail.Title = "UG";
+            taskDetail.Id = "6516";
+            taskDetail.Description = "Need to do post-processing work for closed incidents";
+            taskDetail.Category = "Postponed";
+            taskDetail.IndicatorColorKey = "Normal";
+            taskDetail.Tags = new List<string>() { "Post-processing" };
+            taskDetail.Image = new Image
+            {
+                Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle3.png"))
+            };
+
+            taskDetails.Add(taskDetail);
+
+            taskDetail = new KanbanModel();
+            taskDetail.Title = "UWP Issue";
+            taskDetail.Id = "651";
+            taskDetail.Description = "Crosshair label template not visible in UWP";
+            taskDetail.Category = "Open";
+            taskDetail.IndicatorColorKey = "High";
+            taskDetail.Tags = new List<string>() { "Bug Fixing" };
+            taskDetail.Image = new Image
+            {
+                Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
+            };
+
+            taskDetails.Add(taskDetail);
+
+            taskDetail = new KanbanModel();
+            taskDetail.Title = "WinUI Issue";
+            taskDetail.Id = "646";
+            taskDetail.Description = "AxisLabel cropped when rotating the axis label";
+            taskDetail.Category = "Open";
+            taskDetail.IndicatorColorKey = "Low";
+            taskDetail.Tags = new List<string>() { "Bug Fixing" };
+            taskDetail.Image = new Image
+            {
+                Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle5.png"))
+            };
+
+            taskDetails.Add(taskDetail);
+
+            taskDetail = new KanbanModel();
+            taskDetail.Title = "WPF Issue";
+            taskDetail.Id = "23822";
+            taskDetail.Description = "Need to implement tooltip support for histogram series";
+            taskDetail.Category = "Open";
+            taskDetail.IndicatorColorKey = "High";
+            taskDetail.Tags = new List<string>() { "Bug Fixing" };
+            taskDetail.Image = new Image
+            {
+                Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle6.png"))
+            };
+
+            taskDetails.Add(taskDetail);
+
+            taskDetail = new KanbanModel();
+            taskDetail.Title = "Kanban Feature";
+            taskDetail.Id = "25678";
+            taskDetail.Description = "Provide drag and drop support";
+            taskDetail.Category = "In Progress";
+            taskDetail.IndicatorColorKey = "Low";
+            taskDetail.Tags = new List<string>() { "New control" };
+            taskDetail.Image = new Image
+            {
+                Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle7.png"))
+            };
+
+            taskDetails.Add(taskDetail);
+
+            taskDetail = new KanbanModel();
+            taskDetail.Title = "WF Issue";
+            taskDetail.Id = "1254";
+            taskDetail.Description = "HorizontalAlignment for tooltip is not working";
+            taskDetail.Category = "In Progress";
+            taskDetail.IndicatorColorKey = "High";
+            taskDetail.Tags = new List<string>() { "Bug fixing" };
+            taskDetail.Image = new Image
+            {
+                Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle8.png"))
+            };
+
+            taskDetails.Add(taskDetail);
+
+            taskDetail = new KanbanModel();
+            taskDetail.Title = "WPF Issue";
+            taskDetail.Id = "28066";
+            taskDetail.Description = "In minimized state, first and last segments have incorrect spacing";
+            taskDetail.Category = "Review";
+            taskDetail.IndicatorColorKey = "Normal";
+            taskDetail.Tags = new List<string>() { "Bug Fixing" };
+            taskDetail.Image = new Image
+            {
+                Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle9.png"))
+            };
+
+            taskDetails.Add(taskDetail);
+
+            taskDetail = new KanbanModel();
+            taskDetail.Title = "WinUI Issue";
+            taskDetail.Id = "29477";
+            taskDetail.Description = "Null reference exception thrown in line chart";
+            taskDetail.Category = "Review";
+            taskDetail.IndicatorColorKey = "Normal";
+            taskDetail.Tags = new List<string>() { "Bug Fixing" };
+            taskDetail.Image = new Image
+            {
+                Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle10.png"))
+            };
+
+            taskDetails.Add(taskDetail);
+
+            taskDetail = new KanbanModel();
+            taskDetail.Title = "WPF Issue";
+            taskDetail.Id = "29574";
+            taskDetail.Description = "Minimum and maximum properties are not working in dynamic update";
+            taskDetail.Category = "Review";
+            taskDetail.IndicatorColorKey = "High";
+            taskDetail.Tags = new List<string>() { "Bug Fixing" };
+            taskDetail.Image = new Image
+            {
+                Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle11.png"))
+            };
+
+            taskDetails.Add(taskDetail);
+
+            taskDetail = new KanbanModel();
+            taskDetail.Title = "Kanban Feature";
+            taskDetail.Id = "29574";
+            taskDetail.Description = "Need to implement tooltip support for Kanban";
+            taskDetail.Category = "Review";
+            taskDetail.IndicatorColorKey = "High";
+            taskDetail.Tags = new List<string>() { "New Control" };
+            taskDetail.Image = new Image
+            {
+                Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle12.png"))
+            };
+
+            taskDetails.Add(taskDetail);
+
+            taskDetail = new KanbanModel();
+            taskDetail.Title = "New Feature";
+            taskDetail.Id = "29574";
+            taskDetail.Description = "Dragging events support for Kanban";
+            taskDetail.Category = "Closed";
+            taskDetail.IndicatorColorKey = "Normal";
+            taskDetail.Tags = new List<string>() { "New Control" };
+            taskDetail.Image = new Image
+            {
+                Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle13.png"))
+            };
+
+            taskDetails.Add(taskDetail);
+
+            taskDetail = new KanbanModel();
+            taskDetail.Title = "New Feature";
+            taskDetail.Id = "29574";
+            taskDetail.Description = "Swimlane support for Kanban";
+            taskDetail.Category = "Open";
+            taskDetail.IndicatorColorKey = "Low";
+            taskDetail.Tags = new List<string>() { "New Control" };
+            taskDetail.Image = new Image
+            {
+                Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle14.png"))
+            };
+
+            taskDetails.Add(taskDetail);
+            return taskDetails;
+        }
+        #endregion
+    }
+
 {% endhighlight %}
 {% endtabs %}
 
