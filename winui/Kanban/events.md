@@ -21,156 +21,126 @@ The [CardDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.K
 {% tabs %}
 {% highlight XAML hl_lines="3" %}
 
-        <kanban:SfKanban
-                x:Name="kanban"
-                CardDragStart="kanban_DragStart"  
-                CardDragEnd="kanban_DragEnd"
-                ItemsSource="{Binding PizzaShop}">
-            <kanban:SfKanban.DataContext>
-                <local:MenuDetails/>
-            </kanban:SfKanban.DataContext>
-        </kanban:SfKanban>
+kanban:SfKanban x:Name="kanban"
+                 ItemsSource="{Binding TaskDetails}"
+                 CardDragStarting="OnKanbanCardDragStarting">
+    <kanban:SfKanban.DataContext>
+        <local:ViewModel/>
+    </kanban:SfKanban.DataContext>
+</kanban:SfKanban>
 
 {% endhighlight %}
 {% highlight C# hl_lines="10" %}
 
-        SfKanban kanban = new SfKanban();
-        kanban.DataContext = new MenuDetails();
-        Binding itemsSourceBinding = new Binding("PizzaShop");
-        kanban.SetBinding(SfKanban.ItemsSourceProperty, itemsSourceBinding);
-        kanban.CardDragStart += kanban_DragStart;
-        kanban.CardDragEnd += kanban_DragEnd;
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
+this.kanban.CardDragStarting += this.OnKanbanCardDragStarting;
 
-        private void kanban_DragStart(object sender, KanbanDragStartEventArgs e)
-        {
-            if (e.SelectedColumn.Title.ToString() == "Menu")
-            {
-                e.KeepCard = true;
-            }
-        }
-
-        private void kanban_DragEnd(object sender, KanbanDragEndEventArgs e)
-        {
-            if (e.SelectedColumn.Title.ToString() == "Menu" && e.SelectedColumn != e.TargetColumn && e.TargetColumn.Title.ToString() == "Order")
-            {
-                e.IsCancel = true;
-
-                KanbanModel selectedCard = e.SelectedCard.Content as KanbanModel;
-
-                KanbanModel model = new KanbanModel();
-                model.Category = e.TargetKey;
-                model.Description = selectedCard.Description;
-                model.ImageURL = selectedCard.ImageURL;
-                model.ColorKey = selectedCard.ColorKey;
-                model.Tags = selectedCard.Tags;
-                model.ID = selectedCard.ID;
-                model.Title = selectedCard.Title;
-
-                (kanban.ItemsSource as ObservableCollection<KanbanModel>).Add(model);
-            }
-        }
+private void OnKanbanCardDragStarting(object sender, KanbanCardDragStartingEventArgs e)
+{
+    var draggingCard = e.Card;
+    var draggingColumn = e.Column;
+    e.KeepCard = true;
+}
 
 {% endhighlight %}
 {% highlight c# tabtitle="ViewModel.cs" %}
  
-    public class MenuDetails
+public class ViewModel
+{
+    #region Properties
+
+    /// <summary>
+    /// Gets or sets the collection of <see cref="KanbanModel"/> objects representing tasks in various stages.
+    /// </summary>
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    #endregion
+
+    #region Constructor
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ViewModel"/> class.
+    /// </summary>
+    public ViewModel()
     {
-        public ObservableCollection<KanbanModel> PizzaShop
+        this.TaskDetails = this.GetTaskDetails();
+    }
+
+    #endregion
+
+    #region Private methods
+
+    /// <summary>
+    /// Method to get the kanban model collections.
+    /// </summary>
+    /// <returns>The kanban model collections.</returns>
+    private ObservableCollection<KanbanModel> GetTaskDetails()
+    {
+        var taskDetails = new ObservableCollection<KanbanModel>();
+        string path = @"ms-appx:///";
+
+        KanbanModel taskDetail = new KanbanModel();
+        taskDetail.Title = "UWP Issue";
+        taskDetail.Id = "651";
+        taskDetail.Description = "Crosshair label template not visible in UWP";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
         {
-            get;
-            set;
-        }
+            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+        };
 
-        public MenuDetails()
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WinUI Issue";
+        taskDetail.Id = "646";
+        taskDetail.Description = "AxisLabel cropped when rotating the axis label";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
         {
-            PizzaShop = new ObservableCollection<KanbanModel>();
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
+        };
 
-            KanbanModel item = new KanbanModel();
-            item.Category = "Menu";
-            item.Title = "Double Cheese Margherita";
-            item.Description = "The minimalist classic with a double helping of cheese";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/DoubleCheeseMargherita.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
+        taskDetails.Add(taskDetail);
 
-            item = new KanbanModel();
-            item.Category = "Menu";
-            item.Title = "Bucolic Pie";
-            item.Description = "The pizza you daydream about to escape city life. Onions, peppers, and tomatoes";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Bucolicpie.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Kanban Feature";
+        taskDetail.Id = "25678";
+        taskDetail.Description = "Provide drag and drop support";
+        taskDetail.Category = "In Progress";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "New control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle3.png"))
+        };
 
-            item = new KanbanModel();
-            item.Category = "Menu";
-            item.Title = "Bumper Crop";
-            item.Description = "Can't get enough veggies? Eat this. Carrots, mushrooms, potatoes, and way more";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Bumpercrop.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
+        taskDetails.Add(taskDetail);
 
-            item = new KanbanModel();
-            item.Category = "Menu";
-            item.Title = "Spice of Life";
-            item.Description = "Thrill-seeking, heat-seeking pizza people only.  It's hot. Trust us";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Spiceoflife.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "New Feature";
+        taskDetail.Id = "29574";
+        taskDetail.Description = "Dragging events support for Kanban";
+        taskDetail.Category = "Closed";
+        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Tags = new List<string>() { "New Control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
+        };
 
-            item = new KanbanModel();
-            item.Category = "Order";
-            item.Title = "Very Nicoise";
-            item.Description = "Anchovies, Dijon vinaigrette, shallots, red peppers, and potatoes";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Verynicoise.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
+        taskDetails.Add(taskDetail);
+        return taskDetails;
+    }
 
-            item = new KanbanModel();
-            item.Category = "Menu";
-            item.Title = "Margherita";
-            item.Description = "The classic. Fresh tomatoes, garlic, olive oil, and basil. For pizza purists and minimalists only";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Margherita.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Menu";
-            item.Title = "Very Nicoise";
-            item.Description = "Anchovies, Dijon vinaigrette, shallots, red peppers, and potatoes";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Verynicoise.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Ready to Serve";
-            item.Title = "Margherita";
-            item.Description = "The classic. Fresh tomatoes, garlic, olive oil, and basil. For pizza purists and minimalists only";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Margherita.png", UriKind.RelativeOrAbsolute);
-            item.ColorKey = "Ready";
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Ready to Delivery";
-            item.Title = "Salad Daze";
-            item.Description = "Pretty much salad on a pizza. Broccoli, olives, cherry tomatoes, red onion";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Saladdaze.png", UriKind.RelativeOrAbsolute);
-            item.ColorKey = "Delivery";
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Menu";
-            item.Title = "Salad Daze";
-            item.Description = "Pretty much salad on a pizza. Broccoli, olives, cherry tomatoes, red onion";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Saladdaze.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
-        }
-    }`
+    #endregion
+}   
 
 {% endhighlight %}
-
 {% endtabs %}
 
 ## DragOver

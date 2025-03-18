@@ -268,148 +268,247 @@ public class ViewModel
 
 Columns are automatically generated based on the [Category](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Category) values in the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) from [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource) property. To categorize columns based on a specific property, you must explicitly define the property path using the `ColumnMappingPath` property. However, only the properties of [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) can be assigned to `ColumnMappingPath`.
 
-The properties of Kanban Model is used for the Keys of `ColumnMappingPath`. They are 
-
-    * `Title` 
-    * `Id`
-    * `Description` 
-    * `specifications`
-    * `Category`
-    * `IndicatorColorKey` 
-    * `Tags` 
-
 {% tabs %}
-{% highlight XAML hl_lines="5" %}
+{% highlight XAML hl_lines="2" %}
 
-    <kanban:SfKanban
-        x:Name="kanban"
-        AutoGenerateColumns="True"
-        ColumnMappingPath="Category"
-        ItemsSource="{Binding PizzaShop}">
-        <kanban:SfKanban.DataContext>
-            <local:MenuDetails/>
-        </kanban:SfKanban.DataContext>
-    </kanban:SfKanban>
+<kanban:SfKanban x:Name="kanban"
+                 ColumnMappingPath="Id"
+                 ItemsSource="{Binding TaskDetails}">
+    <kanban:SfKanban.DataContext>
+        <local:ViewModel/>
+    </kanban:SfKanban.DataContext>
+</kanban:SfKanban>
 
 {% endhighlight %}
+{% highlight C# hl_lines="1" %}
 
-{% highlight C# hl_lines="5" %}
-
-    var kanban = new SfKanban();
-    kanban.Name = "kanban";
-    kanban.AutoGenerateColumns = true;
-    kanban.ColumnMappingPath = "Category";
-
-    // Set the DataContext (equivalent to <local:MenuDetails />)
-    kanban.DataContext = new MenuDetails();
-    var binding = new Binding("PizzaShop");
-    kanban.SetBinding(SfKanban.ItemsSourceProperty, binding);
+this.kanban.ColumnMappingPath = "Id";
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
 {% endhighlight %}
 {% highlight C# tabtitle="ViewModel.cs" %}
 
-    public class MenuDetails
+public class ViewModel
+{
+    #region Properties
+
+    /// <summary>
+    /// Gets or sets the collection of <see cref="KanbanModel"/> objects representing tasks in various stages.
+    /// </summary>
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    #endregion
+
+    #region Constructor
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ViewModel"/> class.
+    /// </summary>
+    public ViewModel()
     {
-        public ObservableCollection<KanbanModel> PizzaShop
-        {
-            get;
-            set;
-        }
-
-        public MenuDetails()
-        {
-            PizzaShop = new ObservableCollection<KanbanModel>();
-
-            KanbanModel item = new KanbanModel();
-            item.Category = "Menu";
-            item.Title = "Double Cheese Margherita";
-            item.Description = "The minimalist classic with a double helping of cheese";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/DoubleCheeseMargherita.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Menu";
-            item.Title = "Bucolic Pie";
-            item.Description = "The pizza you daydream about to escape city life. Onions, peppers, and tomatoes";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Bucolicpie.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Menu";
-            item.Title = "Bumper Crop";
-            item.Description = "Can't get enough veggies? Eat this. Carrots, mushrooms, potatoes, and way more";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Bumpercrop.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Menu";
-            item.Title = "Spice of Life";
-            item.Description = "Thrill-seeking, heat-seeking pizza people only.  It's hot. Trust us";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Spiceoflife.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Order";
-            item.Title = "Very Nicoise";
-            item.Description = "Anchovies, Dijon vinaigrette, shallots, red peppers, and potatoes";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Verynicoise.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Menu";
-            item.Title = "Margherita";
-            item.Description = "The classic. Fresh tomatoes, garlic, olive oil, and basil. For pizza purists and minimalists only";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Margherita.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Menu";
-            item.Title = "Very Nicoise";
-            item.Description = "Anchovies, Dijon vinaigrette, shallots, red peppers, and potatoes";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Verynicoise.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Ready to Serve";
-            item.Title = "Margherita";
-            item.Description = "The classic. Fresh tomatoes, garlic, olive oil, and basil. For pizza purists and minimalists only";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Margherita.png", UriKind.RelativeOrAbsolute);
-            item.ColorKey = "Ready";
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Ready to Delivery";
-            item.Title = "Salad Daze";
-            item.Description = "Pretty much salad on a pizza. Broccoli, olives, cherry tomatoes, red onion";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Saladdaze.png", UriKind.RelativeOrAbsolute);
-            item.ColorKey = "Delivery";
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Menu";
-            item.Title = "Salad Daze";
-            item.Description = "Pretty much salad on a pizza. Broccoli, olives, cherry tomatoes, red onion";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Saladdaze.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
-        }
+        this.TaskDetails = this.GetTaskDetails();
     }
+
+    #endregion
+
+    #region Private methods
+
+    /// <summary>
+    /// Method to get the kanban model collections.
+    /// </summary>
+    /// <returns>The kanban model collections.</returns>
+    private ObservableCollection<KanbanModel> GetTaskDetails()
+    {
+        var taskDetails = new ObservableCollection<KanbanModel>();
+        string path = @"ms-appx:///";
+
+        KanbanModel taskDetail = new KanbanModel();
+        taskDetail.Title = "UWP Issue";
+        taskDetail.Id = "651";
+        taskDetail.Description = "Crosshair label template not visible in UWP";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WinUI Issue";
+        taskDetail.Id = "646";
+        taskDetail.Description = "AxisLabel cropped when rotating the axis label";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Kanban Feature";
+        taskDetail.Id = "25678";
+        taskDetail.Description = "Provide drag and drop support";
+        taskDetail.Category = "In Progress";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "New control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle3.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "New Feature";
+        taskDetail.Id = "29574";
+        taskDetail.Description = "Dragging events support for Kanban";
+        taskDetail.Category = "Closed";
+        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Tags = new List<string>() { "New Control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+        return taskDetails;
+    }
+
+    #endregion
+}
 
 {% endhighlight %}
 {% endtabs %}
 
-To manually define columns, set [AutoGenerateColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) to `false`, add [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) instances to the [Columns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) instances to the Columns property, and use the [Categories](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Categories) property to assign categories to the columns. Cards will then be added accordingly.
+To manually define columns, set [AutoGenerateColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) to `false`, add [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) instances to the [Columns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) property, and use the [Categories](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Categories) property to assign categories to the columns. Cards will then be added accordingly.
 
-The following example code generates the columns automatically based on the `Category` values.
+The following example code generates the columns automatically based on the [Category](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Category) values.
+
+{% tabs %}
+{% highlight XAML hl_lines="2" %}
+
+<kanban:SfKanban x:Name="kanban"
+                 AutoGenerateColumns="True"
+                 ItemsSource="{Binding TaskDetails}">
+    <kanban:SfKanban.DataContext>
+        <local:ViewModel/>
+    </kanban:SfKanban.DataContext>
+</kanban:SfKanban>
+
+{% endhighlight %}
+{% highlight C# hl_lines="1" %}
+
+this.kanban.AutoGenerateColumns = true;
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
+
+{% endhighlight %}
+{% highlight C# tabtitle="ViewModel.cs" %}
+
+public class ViewModel
+{
+    #region Properties
+
+    /// <summary>
+    /// Gets or sets the collection of <see cref="KanbanModel"/> objects representing tasks in various stages.
+    /// </summary>
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    #endregion
+
+    #region Constructor
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ViewModel"/> class.
+    /// </summary>
+    public ViewModel()
+    {
+        this.TaskDetails = this.GetTaskDetails();
+    }
+
+    #endregion
+
+    #region Private methods
+
+    /// <summary>
+    /// Method to get the kanban model collections.
+    /// </summary>
+    /// <returns>The kanban model collections.</returns>
+    private ObservableCollection<KanbanModel> GetTaskDetails()
+    {
+        var taskDetails = new ObservableCollection<KanbanModel>();
+        string path = @"ms-appx:///";
+
+        KanbanModel taskDetail = new KanbanModel();
+        taskDetail.Title = "UWP Issue";
+        taskDetail.Id = "651";
+        taskDetail.Description = "Crosshair label template not visible in UWP";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WinUI Issue";
+        taskDetail.Id = "646";
+        taskDetail.Description = "AxisLabel cropped when rotating the axis label";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Kanban Feature";
+        taskDetail.Id = "25678";
+        taskDetail.Description = "Provide drag and drop support";
+        taskDetail.Category = "In Progress";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "New control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle3.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "New Feature";
+        taskDetail.Id = "29574";
+        taskDetail.Description = "Dragging events support for Kanban";
+        taskDetail.Category = "Closed";
+        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Tags = new List<string>() { "New Control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+        return taskDetails;
+    }
+
+    #endregion
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![categorizing-columns-in-winui-kanban](images/columns/categorizing-columns-in-winui-kanban.png)
 
 ### Populating Multi-Category Columns with Cards
 

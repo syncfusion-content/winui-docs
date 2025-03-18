@@ -9,198 +9,178 @@ documentation: ug
 
 # Workflows in WinUI Kanban (SfKanban) control
 
-The WinUI Kanban `Workflow` allows to set the flow of cards between the columns. It provides restriction on columns when the card is moved from one column to another column. It provides support to prevent the drag and drop action on the column.
+The `WinUI Kanban` workflow allows to set the flow of cards between the columns. It provides restriction on columns when the card is moved from one column to another column. It provides support to prevent the drag and drop action on the column.
 
-To define the flow of card transitions between different states, create an instance of the KanbanWorkflow class and add it to the Workflows property of the SfKanban to define the `Workflow` for each column. The KanbanWorkflow class contains the following properties to specify the source and target categories.
+To define the flow of card transitions between different states, create an instance of the `KanbanWorkflow` class and add it to the `Workflows` property of the `SfKanban` to define the workflow for each column. The `KanbanWorkflow` class contains the following properties to specify the source and target categories.
 
-* [`Category`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#:~:text=System.String-,Category,-Gets%20or%20sets) – Used to define the source category/state..
-
+* `Category` – Used to define the source category/state..
 * `AllowedTransitions` – Used to define the list of categories/states to which a card can be moved from the current category.
  
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="12 13 14 15 16 17 18 20 21 22 23 24  26 27 28 29 30 31 32 " %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38" %}
      
-     <kanban:SfKanban
-          x:Name="kanban"
-          AutoGenerateColumns="False"
-          CardDragEnd="kanban_DragEnd"
-          CardDragStart="kanban_DragStart"
-          ItemsSource="{Binding PizzaShop}">
-
-            <kanban:SfKanban.DataContext>
-                <local:MenuDetails/>
-            </kanban:SfKanban.DataContext>
-
-            <kanban:SfKanban.Workflows>
-                <kanban:WorkflowCollection>
-                    <kanban:KanbanWorkflow Category="Menu">
-                        <kanban:KanbanWorkflow.AllowedTransitions>
-                            <system:String>Dining</system:String>
-                            <system:String>Delivery</system:String>
-                        </kanban:KanbanWorkflow.AllowedTransitions>
-                    </kanban:KanbanWorkflow>
-
-                    <kanban:KanbanWorkflow Category="Dining">
-                        <kanban:KanbanWorkflow.AllowedTransitions>
-                            <system:String>Ready to Serve</system:String>
-                        </kanban:KanbanWorkflow.AllowedTransitions>
-                    </kanban:KanbanWorkflow>
-
-                    <kanban:KanbanWorkflow Category="Delivery">
-                        <kanban:KanbanWorkflow.AllowedTransitions>
-                            <system:String>Ready to Delivery</system:String>
-                        </kanban:KanbanWorkflow.AllowedTransitions>
-                    </kanban:KanbanWorkflow>
-                </kanban:WorkflowCollection>
-            </kanban:SfKanban.Workflows>
-
-            <kanban:KanbanColumn Title="Menu" Categories="Menu" />
-            <kanban:KanbanColumn Title="Order" Categories="Dining,Delivery" />
-            <kanban:KanbanColumn
-            Title="Ready to Serve"  
-            AllowDrag="False"
-            Categories="Ready to Serve" />
-            <kanban:KanbanColumn
-            Title="Ready to Delivery"
-            AllowDrag="False"
-            Categories="Ready to Delivery"/>
-        </kanban:SfKanban>
+<kanban:SfKanban x:Name="kanban"
+                 AutoGenerateColumns="False"
+                 ItemsSource="{Binding TaskDetails}">
+    <kanban:SfKanban.DataContext>
+        <local:ViewModel/>
+    </kanban:SfKanban.DataContext>
+    <kanban:SfKanban.Workflows>
+        <kanban:KanbanWorkflow Category="Open">
+            <kanban:KanbanWorkflow.AllowedTransitions>
+                <x:String>In Progress</x:String>
+                <x:String>Closed</x:String>
+                <x:String>Closed No Changes</x:String>
+                <x:String>Won't Fix</x:String>
+            </kanban:KanbanWorkflow.AllowedTransitions>
+        </kanban:KanbanWorkflow>
+        <kanban:KanbanWorkflow Category="Postponed">
+            <kanban:KanbanWorkflow.AllowedTransitions>
+                <x:String>Open</x:String>
+                <x:String>In Progress</x:String>
+                <x:String>Closed</x:String>
+                <x:String>Closed No Changes</x:String>
+                <x:String>Won't Fix</x:String>
+            </kanban:KanbanWorkflow.AllowedTransitions>
+        </kanban:KanbanWorkflow>
+        <kanban:KanbanWorkflow Category="Review">
+            <kanban:KanbanWorkflow.AllowedTransitions>
+                <x:String>In Progress</x:String>
+                <x:String>Closed</x:String>
+                <x:String>Postponed</x:String>
+            </kanban:KanbanWorkflow.AllowedTransitions>
+        </kanban:KanbanWorkflow>
+        <kanban:KanbanWorkflow Category="In Progress">
+            <kanban:KanbanWorkflow.AllowedTransitions>
+                <x:String>Review</x:String>
+                <x:String>Postponed</x:String>
+            </kanban:KanbanWorkflow.AllowedTransitions>
+        </kanban:KanbanWorkflow>
+    </kanban:SfKanban.Workflows>
+    <kanban:SfKanban.IndicatorColorPalette>
+        <kanban:KanbanColorMapping Key="Low" Color="#0F7B0F"/>
+        <kanban:KanbanColorMapping Key="Normal" Color="#FFB900"/>
+        <kanban:KanbanColorMapping Key="High" Color="#C42B1C"/>
+    </kanban:SfKanban.IndicatorColorPalette>
+    <kanban:KanbanColumn HeaderText="To Do" Categories="Open,Postponed" />
+    <kanban:KanbanColumn HeaderText="In Progress"
+                         Categories="In Progress"/>
+    <kanban:KanbanColumn HeaderText="For Review"
+                         Categories="Review"/>
+    <kanban:KanbanColumn HeaderText="Done"
+                         Categories="Closed,Closed No Changes,Won't Fix"/>
+ </kanban:SfKanban>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1 2 3 4" %}
-            var workflow = new WorkflowCollection();
-            workflow.Add(new KanbanWorkflow() { Category = "Menu", AllowedTransitions = { "Dining", "Delivery" } });
-            workflow.Add(new KanbanWorkflow() { Category = "Dining", AllowedTransitions = { "Ready to Serve" } });
-            workflow.Add(new KanbanWorkflow() { Category = "Delivery", AllowedTransitions = { "Ready to Delivery" } });
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1 2 3 4 5 6 7" %}
+           
+this.kanban.Workflows = new List<KanbanWorkflow>()
+{
+    new KanbanWorkflow() { Category = "Open", AllowedTransitions ={ "In Progress", "Closed", "Closed No Changes", "Won't Fix"} },
+    new KanbanWorkflow() { Category = "Postponed", AllowedTransitions ={ "Open", "In Progress", "Closed", "Closed No Changes", "Won't Fix"} },
+    new KanbanWorkflow() { Category = "Review", AllowedTransitions ={ "In Progress", "Closed", "Postponed" } },
+    new KanbanWorkflow() { Category = "In Progress", AllowedTransitions ={ "Review", "Postponed"} },
+};
 
-    private void kanban_DragStart(object sender, KanbanDragStartEventArgs e)
-            {
-                if (e.SelectedColumn.Title.ToString() == "Menu")
-                {
-                    e.KeepCard = true;
-                }
-            }
-
-    private void kanban_DragEnd(object sender, KanbanDragEndEventArgs e)
-            {
-                if (e.SelectedColumn.Title.ToString() == "Menu" && e.SelectedColumn != e.TargetColumn &&
-                    e.TargetColumn.Title.ToString() == "Order")
-                {
-                    e.IsCancel = true;
-
-                    KanbanModel selectedCard = e.SelectedCard.Content as KanbanModel;
-
-                    KanbanModel model = new KanbanModel();
-                    model.Category = e.TargetKey;
-                    model.Description = selectedCard.Description;
-                    model.ImageURL = selectedCard.ImageURL;
-                    model.ColorKey = selectedCard.ColorKey;
-                    model.Tags = selectedCard.Tags;
-                    model.ID = selectedCard.ID;
-                    model.Title = selectedCard.Title;
-
-                    (kanban.ItemsSource as ObservableCollection<KanbanModel>).Add(model);
-                }
-            }
 {% endhighlight %}
 {% highlight C# tabtitle="ViewModel.cs" %} 
 
-     public class MenuDetails
+public class ViewModel
+{
+    #region Properties
+
+    /// <summary>
+    /// Gets or sets the collection of <see cref="KanbanModel"/> objects representing tasks in various stages.
+    /// </summary>
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    #endregion
+
+    #region Constructor
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ViewModel"/> class.
+    /// </summary>
+    public ViewModel()
     {
-        public ObservableCollection<KanbanModel> PizzaShop
-        {
-            get;
-            set;
-        }
-
-        public MenuDetails()
-        {
-            PizzaShop = new ObservableCollection<KanbanModel>();
-
-            KanbanModel item = new KanbanModel();
-            item.Category = "Menu";
-            item.Title = "Double Cheese Margherita";
-            item.Description = "The minimalist classic with a double helping of cheese";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/DoubleCheeseMargherita.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Menu";
-            item.Title = "Bucolic Pie";
-            item.Description = "The pizza you daydream about to escape city life. Onions, peppers, and tomatoes";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Bucolicpie.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Menu";
-            item.Title = "Bumper Crop";
-            item.Description = "Can't get enough veggies? Eat this. Carrots, mushrooms, potatoes, and way more";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Bumpercrop.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Menu";
-            item.Title = "Spice of Life";
-            item.Description = "Thrill-seeking, heat-seeking pizza people only.  It's hot. Trust us";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Spiceoflife.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Order";
-            item.Title = "Very Nicoise";
-            item.Description = "Anchovies, Dijon vinaigrette, shallots, red peppers, and potatoes";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Verynicoise.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Menu";
-            item.Title = "Margherita";
-            item.Description = "The classic. Fresh tomatoes, garlic, olive oil, and basil. For pizza purists and minimalists only";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Margherita.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Menu";
-            item.Title = "Very Nicoise";
-            item.Description = "Anchovies, Dijon vinaigrette, shallots, red peppers, and potatoes";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Verynicoise.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Ready to Serve";
-            item.Title = "Margherita";
-            item.Description = "The classic. Fresh tomatoes, garlic, olive oil, and basil. For pizza purists and minimalists only";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Margherita.png", UriKind.RelativeOrAbsolute);
-            item.ColorKey = "Ready";
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Ready to Delivery";
-            item.Title = "Salad Daze";
-            item.Description = "Pretty much salad on a pizza. Broccoli, olives, cherry tomatoes, red onion";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Saladdaze.png", UriKind.RelativeOrAbsolute);
-            item.ColorKey = "Delivery";
-            PizzaShop.Add(item);
-
-            item = new KanbanModel();
-            item.Category = "Menu";
-            item.Title = "Salad Daze";
-            item.Description = "Pretty much salad on a pizza. Broccoli, olives, cherry tomatoes, red onion";
-            item.Tags = new string[] { "Onions", "Bell Pepper", "Pork", "Cheese" };
-            item.ImageURL = new Uri(@"syncfusion.kanbandemos.wpf;component/Assets/Kanban/Saladdaze.png", UriKind.RelativeOrAbsolute);
-            PizzaShop.Add(item);
-        }
+        this.TaskDetails = this.GetTaskDetails();
     }
+
+    #endregion
+
+    #region Private methods
+
+    /// <summary>
+    /// Method to get the kanban model collections.
+    /// </summary>
+    /// <returns>The kanban model collections.</returns>
+    private ObservableCollection<KanbanModel> GetTaskDetails()
+    {
+        var taskDetails = new ObservableCollection<KanbanModel>();
+        string path = @"ms-appx:///";
+
+        KanbanModel taskDetail = new KanbanModel();
+        taskDetail.Title = "UWP Issue";
+        taskDetail.Id = "651";
+        taskDetail.Description = "Crosshair label template not visible in UWP";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WinUI Issue";
+        taskDetail.Id = "646";
+        taskDetail.Description = "AxisLabel cropped when rotating the axis label";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "Kanban Feature";
+        taskDetail.Id = "25678";
+        taskDetail.Description = "Provide drag and drop support";
+        taskDetail.Category = "In Progress";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "New control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle3.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "New Feature";
+        taskDetail.Id = "29574";
+        taskDetail.Description = "Dragging events support for Kanban";
+        taskDetail.Category = "Closed";
+        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Tags = new List<string>() { "New Control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+        return taskDetails;
+    }
+
+    #endregion
+}     
+
 {% endhighlight %}
 {% endtabs %}
 
-By following the code snippet, you will notice that the card picked from the Open state is not allowed to be dropped in the Review state because we have defined that the card can only move from the Open state to the In Progress, Closed, Closed No Changes, Won't Fix states and not to any other states.
+By following the code snippet, you will notice that a card picked from the `Open` state cannot be dropped into the `Review` state. This is because we have defined that the card can only transition from the `Open` state to the `In Progress`, `Closed`, `Closed No Changes`, and `Won't Fix` states, and not to any other states.
