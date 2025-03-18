@@ -266,7 +266,7 @@ public class ViewModel
 
 ## Categorizing columns
 
-Columns are automatically generated based on the `Category` values in the `KanbanModel` from ItemsSource property. To categorize columns based on a specific property, you must explicitly define the property path using the `ColumnMappingPath` property. However, only the properties of `KanbanModel` can be assigned to `ColumnMappingPath`.
+Columns are automatically generated based on the [Category](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Category) values in the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) from [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource) property. To categorize columns based on a specific property, you must explicitly define the property path using the `ColumnMappingPath` property. However, only the properties of [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) can be assigned to `ColumnMappingPath`.
 
 The properties of Kanban Model is used for the Keys of `ColumnMappingPath`. They are 
 
@@ -407,7 +407,7 @@ The properties of Kanban Model is used for the Keys of `ColumnMappingPath`. They
 {% endhighlight %}
 {% endtabs %}
 
-To manually define columns, set `AutoGenerateColumns` to `false`, add `KanbanColumn` instances to the Columns property, and use the Categories property to assign categories to the columns. Cards will then be added accordingly.
+To manually define columns, set [AutoGenerateColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) to `false`, add [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) instances to the [Columns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) instances to the Columns property, and use the [Categories](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Categories) property to assign categories to the columns. Cards will then be added accordingly.
 
 The following example code generates the columns automatically based on the `Category` values.
 
