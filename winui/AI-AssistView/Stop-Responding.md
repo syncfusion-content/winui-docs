@@ -7,7 +7,9 @@ control: SfAIAssistView
 documentation: ug
 ---
 
-## Stop Responding
+# Stop Responding in WinUI AI AssistView
+
+## EnableStopResponding
 
 The **SfAIAssistView** control provides a **Stop Responding** feature that allows users to cancel an ongoing AI response by clicking the Stop Responding button. This feature ensures that users can interrupt the response if it is no longer needed. By default, the Stop Responding button is not displayed; to enable it, set the **EnableStopResponding** property to **true**.
 
