@@ -112,7 +112,7 @@ public class ViewModel : INotifyPropertyChanged
 {
     public ICommand StopRespondingCommand { get; set; }
   
-    public AIAssistViewModel()
+    public ViewModel()
     {
         StopRespondingCommand = new RelayCommand(ExecuteStopResponding);
     }
