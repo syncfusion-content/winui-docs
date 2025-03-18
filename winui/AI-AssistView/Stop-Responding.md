@@ -7,7 +7,7 @@ control: SfAIAssistView
 documentation: ug
 ---
 
-# Stop Responding
+## Stop Responding
 
 The **SfAIAssistView** control provides a **Stop Responding** feature that allows users to cancel an ongoing AI response by clicking the Stop Responding button. This feature ensures that users can interrupt the response if it is no longer needed. By default, the Stop Responding button is not displayed; to enable it, set the **EnableStopResponding** property to **true**.
 
@@ -41,11 +41,11 @@ aiAssistView.EnableStopResponding = true;
 {% endhighlight %}
 {% endtabs %}
 
-# Event and Command
+### Event and Command
 
 The **SfAIAssistView** control includes a built-in event called **StopResponding** and a command named **StopRespondingCommand**. These are triggered when the Stop Responding button is clicked. To cancel the response using the StopRespondingCommand or StopResponding event, you can include logic to stop the ongoing response as shown below.
 
-# StopResponding Event
+#### StopResponding Event
 
 {% tabs %}
 
@@ -82,7 +82,7 @@ private void sfAIAssistView_StopResponding(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-# StopResponding Command  
+#### StopResponding Command  
 
 {% tabs %}
 
@@ -133,7 +133,7 @@ public class ViewModel : INotifyPropertyChanged
 
 ![StopResponding feature in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_stopresponding.gif)
 
-# StopRespondingTemplate
+#### StopRespondingTemplate
 
 The **StopRespondingTemplate** property in SfAIAssistView is a data template that defines the UI for stopping AI responses. It allows customization of how the stop action is presented, enabling users to modify the appearance and behavior of the stop button.
 
