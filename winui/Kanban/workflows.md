@@ -9,12 +9,12 @@ documentation: ug
 
 # Workflows in WinUI Kanban (SfKanban) control
 
-The `WinUI Kanban` workflow allows to set the flow of cards between the columns. It provides restriction on columns when the card is moved from one column to another column. It provides support to prevent the drag and drop action on the column.
+The `WinUI Kanban` workflow allows to define the flow of cards between columns, offering restrictions when moving cards from one column to another. It also supports preventing drag-and-drop actions on specific columns.
 
 To define the flow of card transitions between different states, create an instance of the `KanbanWorkflow` class and add it to the `Workflows` property of the `SfKanban` to define the workflow for each column. The `KanbanWorkflow` class contains the following properties to specify the source and target categories.
 
-* `Category` – Used to define the source category/state..
-* `AllowedTransitions` – Used to define the list of categories/states to which a card can be moved from the current category.
+* `Category` – Used to define the source category or state.
+* `AllowedTransitions` – Used to define the list of categories or states to which a card can be moved from the current category.
  
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38" %}

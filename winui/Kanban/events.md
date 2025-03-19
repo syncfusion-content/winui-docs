@@ -15,7 +15,7 @@ The [CardDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.K
 
 * [Column](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragStartingEventArgs_Column) -  Returns the source column from which the card is being dragged.
 * [Card](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragStartingEventArgs_Card) - Returns the dragging card in the kanban.
-* `KeepCard` - Determines whether the original card remains in the source column during a drag operation. When set to true, the card stays in its original column while being dragged, allowing repeated drag-and-drop actions without moving it. A preview of the card is generated during the drag.
+* `KeepCard` - Determines whether the original card remains in the source column during a drag operation. When set to `true`, the card stays in its original column while being dragged, allowing repeated drag-and-drop actions without relocating the card. A preview of the card is generated during the drag.
 
 {% tabs %}
 {% highlight XAML hl_lines="3" %}
