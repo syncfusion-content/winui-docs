@@ -20,7 +20,7 @@ The [CardDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.K
 {% tabs %}
 {% highlight XAML hl_lines="3" %}
 
-kanban:SfKanban x:Name="kanban"
+<kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}"
                  CardDragStarting="OnKanbanCardDragStarting">
     <kanban:SfKanban.DataContext>
