@@ -17,7 +17,7 @@ To define the flow of card transitions between different states, create an insta
 * `AllowedTransitions` – Used to define the list of categories or states to which a card can be moved from the current category.
  
 {% tabs %}
-{% highlight XAML hl_lines="7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38" %}
+{% highlight XAML hl_lines="7 8 9 10 11 12 13 14 15 16 17 18 19" %}
      
 <kanban:SfKanban x:Name="kanban"
                  AutoGenerateColumns="False"
@@ -25,50 +25,30 @@ To define the flow of card transitions between different states, create an insta
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>
-    <kanban:SfKanban.Workflows>
-        <kanban:KanbanWorkflow Category="Open">
-            <kanban:KanbanWorkflow.AllowedTransitions>
-                <x:String>In Progress</x:String>
-                <x:String>Closed</x:String>
-                <x:String>Closed No Changes</x:String>
-                <x:String>Won't Fix</x:String>
-            </kanban:KanbanWorkflow.AllowedTransitions>
-        </kanban:KanbanWorkflow>
-        <kanban:KanbanWorkflow Category="Postponed">
-            <kanban:KanbanWorkflow.AllowedTransitions>
-                <x:String>Open</x:String>
-                <x:String>In Progress</x:String>
-                <x:String>Closed</x:String>
-                <x:String>Closed No Changes</x:String>
-                <x:String>Won't Fix</x:String>
-            </kanban:KanbanWorkflow.AllowedTransitions>
-        </kanban:KanbanWorkflow>
-        <kanban:KanbanWorkflow Category="Review">
-            <kanban:KanbanWorkflow.AllowedTransitions>
-                <x:String>In Progress</x:String>
-                <x:String>Closed</x:String>
-                <x:String>Postponed</x:String>
-            </kanban:KanbanWorkflow.AllowedTransitions>
-        </kanban:KanbanWorkflow>
-        <kanban:KanbanWorkflow Category="In Progress">
-            <kanban:KanbanWorkflow.AllowedTransitions>
-                <x:String>Review</x:String>
-                <x:String>Postponed</x:String>
-            </kanban:KanbanWorkflow.AllowedTransitions>
-        </kanban:KanbanWorkflow>
-    </kanban:SfKanban.Workflows>
+        <kanban:SfKanban.Workflows>
+            <kanban:KanbanWorkflow Category="Open">
+                <kanban:KanbanWorkflow.AllowedTransitions>
+                    <x:String>In Progress</x:String>
+                </kanban:KanbanWorkflow.AllowedTransitions>
+            </kanban:KanbanWorkflow>
+            <kanban:KanbanWorkflow Category="In Progress">
+                <kanban:KanbanWorkflow.AllowedTransitions>
+                    <x:String>Closed</x:String>
+                    <x:String>Won't Fix</x:String>
+                </kanban:KanbanWorkflow.AllowedTransitions>
+            </kanban:KanbanWorkflow>
+        </kanban:SfKanban.Workflows>
     <kanban:SfKanban.IndicatorColorPalette>
         <kanban:KanbanColorMapping Key="Low" Color="#0F7B0F"/>
         <kanban:KanbanColorMapping Key="Normal" Color="#FFB900"/>
         <kanban:KanbanColorMapping Key="High" Color="#C42B1C"/>
     </kanban:SfKanban.IndicatorColorPalette>
-    <kanban:KanbanColumn HeaderText="To Do" Categories="Open,Postponed" />
+    <kanban:KanbanColumn HeaderText="To Do" 
+                         Categories="Open,Postponed" />
     <kanban:KanbanColumn HeaderText="In Progress"
                          Categories="In Progress"/>
-    <kanban:KanbanColumn HeaderText="For Review"
-                         Categories="Review"/>
     <kanban:KanbanColumn HeaderText="Done"
-                         Categories="Closed,Closed No Changes,Won't Fix"/>
+                         Categories="Closed,Won't Fix"/>
  </kanban:SfKanban>
 
 {% endhighlight %}
@@ -76,10 +56,8 @@ To define the flow of card transitions between different states, create an insta
            
 this.kanban.Workflows = new List<KanbanWorkflow>()
 {
-    new KanbanWorkflow() { Category = "Open", AllowedTransitions ={ "In Progress", "Closed", "Closed No Changes", "Won't Fix"} },
-    new KanbanWorkflow() { Category = "Postponed", AllowedTransitions ={ "Open", "In Progress", "Closed", "Closed No Changes", "Won't Fix"} },
-    new KanbanWorkflow() { Category = "Review", AllowedTransitions ={ "In Progress", "Closed", "Postponed" } },
-    new KanbanWorkflow() { Category = "In Progress", AllowedTransitions ={ "Review", "Postponed"} },
+    new KanbanWorkflow() { Category = "Open", AllowedTransitions ={ "In Progress" } },
+    new KanbanWorkflow() { Category = "In Progress", AllowedTransitions ={ "Closed", "Won't Fix" } },
 };
 
 {% endhighlight %}
@@ -165,7 +143,7 @@ public class ViewModel
         taskDetail.Title = "New Feature";
         taskDetail.Id = "29574";
         taskDetail.Description = "Dragging events support for Kanban";
-        taskDetail.Category = "Closed";
+        taskDetail.Category = "In Progress";
         taskDetail.IndicatorColorKey = "Normal";
         taskDetail.Tags = new List<string>() { "New Control" };
         taskDetail.Image = new Image
@@ -178,7 +156,7 @@ public class ViewModel
     }
 
     #endregion
-}     
+}  
 
 {% endhighlight %}
 {% endtabs %}

@@ -200,7 +200,7 @@ public class ViewModel
 
         KanbanModel taskDetail = new KanbanModel();
         taskDetail.Title = "UWP Issue";
-        taskDetail.Id = "651";
+        taskDetail.Id = "24376";
         taskDetail.Description = "Crosshair label template not visible in UWP";
         taskDetail.Category = "Open";
         taskDetail.IndicatorColorKey = "High";
@@ -214,7 +214,7 @@ public class ViewModel
 
         taskDetail = new KanbanModel();
         taskDetail.Title = "WinUI Issue";
-        taskDetail.Id = "646";
+        taskDetail.Id = "24376";
         taskDetail.Description = "AxisLabel cropped when rotating the axis label";
         taskDetail.Category = "Open";
         taskDetail.IndicatorColorKey = "Low";
