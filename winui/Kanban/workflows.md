@@ -17,7 +17,7 @@ To define the flow of card transitions between different states, create an insta
 * `AllowedTransitions` – Used to define the list of categories or states to which a card can be moved from the current category.
  
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38" %}
+{% highlight XAML hl_lines="7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38" %}
      
 <kanban:SfKanban x:Name="kanban"
                  AutoGenerateColumns="False"
@@ -72,7 +72,7 @@ To define the flow of card transitions between different states, create an insta
  </kanban:SfKanban>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1 2 3 4 5 6 7" %}
+{% highlight C# hl_lines="1 2 3 4 5 6 7" %}
            
 this.kanban.Workflows = new List<KanbanWorkflow>()
 {
