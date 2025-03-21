@@ -161,4 +161,4 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-By following the code snippet, you will notice that a card picked from the `Open` state cannot be dropped into the `Review` state. This is because we have defined that the card can only transition from the `Open` state to the `In Progress`, `Closed`, `Closed No Changes`, and `Won't Fix` states, and not to any other states.
+By following the code snippet, you will notice that a card picked from the `In Progress` state cannot be dropped into the `Open` state. This is because we have defined that the card can only transition from the `In Progress` state to the `Closed`, and `Won't Fix` states, and not to any other states.
