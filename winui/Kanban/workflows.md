@@ -162,3 +162,5 @@ public class ViewModel
 {% endtabs %}
 
 By following the code snippet, you will notice that a card picked from the `In Progress` state cannot be dropped into the `Open` state. This is because we have defined that the card can only transition from the `In Progress` state to the `Closed`, and `Won't Fix` states, and not to any other states.
+
+![workflows-in-winui-kanban](images/workflow/workflows-in-winui-kanban.gif)
