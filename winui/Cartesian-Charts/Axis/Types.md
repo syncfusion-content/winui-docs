@@ -355,7 +355,7 @@ chart.XAxes.Add(primaryAxis);
 
 ## Logarithmic Axis
 
-The [LogarithmicAxis]() uses a logarithmic scale, ideal for visualizing data with large value differences. It can be applied to both the X and Y axes of a chart, allows customization of the logarithmic base, and dynamically calculates ranges to effectively display wide-ranging datasets.
+The [LogarithmicAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html) uses a logarithmic scale, ideal for visualizing data with large value differences. It can be applied to both the X and Y axes of a chart, allows customization of the logarithmic base, and dynamically calculates ranges to effectively display wide-ranging datasets.
 
 {% tabs %}
 
@@ -386,7 +386,7 @@ chart.YAxes.Add(secondaryAxis);
 
 ### Interval
 
-The Axis interval can be customized using the [Interval]() property of the axis. By default, the interval is calculated based on the minimum and maximum values of the provided data, with a default value of `1`.
+The Axis interval can be customized using the [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html#Syncfusion_UI_Xaml_Charts_LogarithmicAxis_Interval) property of the axis. By default, the interval is calculated based on the minimum and maximum values of the provided data, with a default value of `1`.
 
 {% tabs %}
 
@@ -418,7 +418,7 @@ chart.YAxes.Add(secondaryAxis);
 
 ### Customizing the Range
 
-The range of the logarithmic axis can be customized using the [Minimum]() and [Maximum]() properties of the LogarithmicAxis. By default, the range is automatically calculated to align with the provided data.
+The range of the logarithmic axis can be customized using the [Minimum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html#Syncfusion_UI_Xaml_Charts_LogarithmicAxis_Minimum) and [Maximum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html#Syncfusion_UI_Xaml_Charts_LogarithmicAxis_Maximum) properties of the LogarithmicAxis. By default, the range is automatically calculated to align with the provided data.
 
 {% tabs %}
 
@@ -451,7 +451,7 @@ chart.YAxes.Add(secondaryAxis);
 
 ### Customizing the Logarithmic base
 
-The logarithmic axis base can be customized using the [LogarithmicBase]() property. The default logarithmic base value is `10`.
+The logarithmic axis base can be customized using the [LogarithmicBase](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html#Syncfusion_UI_Xaml_Charts_LogarithmicAxis_LogarithmicBase) property. The default logarithmic base value is `10`.
 
 {% tabs %}
 
