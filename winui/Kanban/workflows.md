@@ -9,7 +9,7 @@ documentation: ug
 
 # Workflows in WinUI Kanban (SfKanban) control
 
-The [WinUI Kanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.html) workflow allows to define the flow of cards between columns, offering restrictions when moving cards from one column to another. It also supports preventing drag-and-drop actions on specific columns.
+The [WinUI Kanban](https://www.syncfusion.com/winui-controls/kanban) workflow allows to define the flow of cards between columns, offering restrictions when moving cards from one column to another. It also supports preventing drag-and-drop actions on specific columns.
 
 To define the flow of card transitions between different states, create an instance of the [KanbanWorkflow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html) class and add it to the [Workflows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Workflows) property of the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) to define the workflow for each column. The [KanbanWorkflow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html) class contains the following properties to specify the source and target categories.
 
