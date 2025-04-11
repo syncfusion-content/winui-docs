@@ -147,7 +147,7 @@ private void SfDataGrid_RowDragStarting(object sender, DataGridRowDragStartingEv
 
 ### Disable dropping over certain rows in WinUI DataGrid
 
-You can restrict the dropping the records in certain rows in SfDataGrid by using the [SfDataGrid.RowDropping]((https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_RowDropping)) event.
+You can restrict the dropping the records in certain rows in SfDataGrid by using the [SfDataGrid.RowDropping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_RowDropping) event.
 
 {% tabs %}
 {% highlight c# %}
