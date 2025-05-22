@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinUI Polar Chart control | Syncfusion
-description: Learn here all about getting started with the Syncfusion® WinUI Polar Chart (SfPolarChart) control and its elements, and more.
+title: Getting Started with WinUI Polar Chart Control | Syncfusion
+description: Learn all about getting started with the Syncfusion® WinUI Polar Chart (SfPolarChart) control and its elements, and more.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
@@ -9,14 +9,14 @@ documentation: ug
 
 # Getting Started with WinUI Polar Chart (SfPolarChart)
 
-This section explains how to populate the [WinUI Polar Chart](https://www.syncfusion.com/winui-controls/charts/winui-polar-chart) with data, header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
+This section explains how to populate the [WinUI Polar Chart](https://www.syncfusion.com/winui-controls/charts/winui-polar-chart) with data, headers, data labels, legends, and tooltips, as well as the essential aspects for getting started with the chart.
 
-## Creating an application with WinUI Chart
+## Creating an Application with WinUI Chart
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
-2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
-3. Import the control namespace `Syncfusion.UI.Xaml.Charts`  in XAML or C# to initialize the control.
-4. Initialize [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) control.
+2. Add a reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet.
+3. Import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C# to initialize the control.
+4. Initialize the [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) control.
 
 {% capture codesnippet1 %}
 {% tabs %} 
@@ -59,7 +59,7 @@ public sealed partial class MainWindow : Window
 
 ## Initialize View Model
 
-Now, let us define a simple data model that represents a data point in chart.
+Now, let us define a simple data model that represents a data point in the chart.
 
 {% tabs %}  
 
@@ -106,7 +106,7 @@ public class ChartViewModel
 {% endtabs %} 
 
 Create a `ChartViewModel` instance and set it as the chart's `DataContext`. This enables property binding from the `ChartViewModel` class.
- 
+
 N> If you prefer to set `DataContext` in XAML, add the namespace of the `ViewModel` class to your XAML Page.
 
 {% tabs %} 
@@ -140,7 +140,7 @@ chart.DataContext = viewModel;
 
 ## Initialize Chart Axis
 
-[ChartAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html) is used to locate the data points inside the chart area. The [PrimaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_PrimaryAxis) and [SecondaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_SecondaryAxis) properties of the chart is used to initialize the axis for the chart.
+[ChartAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html) is used to locate data points inside the chart area. The [PrimaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_PrimaryAxis) and [SecondaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_SecondaryAxis) properties of the chart are used to initialize the axes for the chart.
 
 {% tabs %} 
 
@@ -173,9 +173,9 @@ chart.SecondaryAxis = secondaryAxis;
 
 ## Populate Chart with Data
 
-Adding [PolarAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarAreaSeries.html) to the polar chart [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_Series) collection and binding `Data` to the series [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_ItemsSource) property from its `DataContext` for creating polar chart.
+Add [PolarAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarAreaSeries.html) to the polar chart [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_Series) collection and bind `Data` to the series [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_ItemsSource) property from its `DataContext` for creating the polar chart.
 
-N> To plot the series, the [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_XBindingPath) and [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarSeries.html#Syncfusion_UI_Xaml_Charts_PolarSeries_YBindingPath) properties must be configured so that the chart may get values from the respective properties in the data model.
+N> To plot the series, the [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_XBindingPath) and [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarSeries.html#Syncfusion_UI_Xaml_Charts_PolarSeries_YBindingPath) properties must be configured so that the chart can get values from the respective properties in the data model.
 
 {% tabs %}   
 
@@ -228,7 +228,7 @@ chart.Series.Add(series);
 
 ## Add Title
 
-The title of the chart provide quick information to the user about the data being plotted in the chart. The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to set title for polar chart as follows.
+The title of the chart provides quick information to the user about the data being plotted in the chart. The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to set the title for the polar chart as follows.
 
 {% tabs %} 
 
@@ -252,7 +252,7 @@ chart.Header = "Polar Chart";
 
 ## Enable Data Labels
 
-The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_ShowDataLabels) property of series can be used to enable the data labels to improve the readability of the chart. The label visibility is set to `False` by default.
+The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_ShowDataLabels) property of a series can be used to enable data labels to improve the readability of the chart. The label visibility is set to `False` by default.
 
 {% tabs %} 
 
@@ -282,7 +282,7 @@ series.ShowDataLabels = true;
 
 ## Enable Legend
 
-The legend provides information about the data point displayed in the polar chart. The [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property of the chart was used to enable it.
+The legend provides information about the data points displayed in the polar chart. The [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property of the chart is used to enable it.
 
 {% tabs %} 
 
@@ -309,7 +309,7 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %}  
 
-N> Additionally, set label for each series using the [Label](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_Label) property of chart series, which will be displayed in corresponding legend.
+N> Additionally, set a label for each series using the [Label](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_Label) property of the chart series, which will be displayed in the corresponding legend.
 
 {% tabs %} 
 
@@ -362,17 +362,17 @@ The following code example gives you the complete code of above configurations.
     </chart:SfPolarChart.Legend>
     <chart:SfPolarChart.Series>
         <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                               XBindingPath="Direction"
+                   XBindingPath="Direction"
 			       YBindingPath="Tree"
-                               Label="Tree"
+                   Label="Tree"
 			       ShowDataLabels="True"
-                               LegendIcon="Pentagon">
+                   LegendIcon="Pentagon">
             <chart:PolarAreaSeries.DataLabelSettings>
-                <chart:PolarDataLabelSettings Foreground="White"
+                <chart:PolarDataLabelSettings Foreground="White" 
 					      FontSize="12" 
-                                              FontFamily="Calibri"
+                          FontFamily="Calibri"
 					      BorderBrush="White" 
-                                              BorderThickness="1"
+                          BorderThickness="1"
 					      Margin="1"/>
                 </chart:PolarAreaSeries.DataLabelSettings>
         </chart:PolarAreaSeries>
@@ -431,10 +431,10 @@ public sealed partial class MainWindow : Window
 
 {% endtabs %}
 
-The following chart is created as a result of the previous codes.
+The following chart is created as a result of the above code.
 
 ![Getting Started WinUI Chart](Getting-Started_Images/WinUI_Chart.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/PolarChartGettingStarted)
+N> Download the demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/PolarChartGettingStarted)
 
-N> You can also explore our [WinUI Polar Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Polar%20Charts) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can also explore our [WinUI Polar Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Polar%20Charts), which shows how to easily configure with built-in support for creating stunning visual effects.
