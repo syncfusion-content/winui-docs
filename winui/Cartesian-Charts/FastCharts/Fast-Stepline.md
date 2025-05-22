@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Fast Step Line Chart in WinUI Chart control | Syncfusion
-description: Learn here all about Fast Step Line Chart of Syncfusion® WinUI Chart (SfCartesianChart) control and more.
+title: Fast Step Line Chart in WinUI Chart Control | Syncfusion
+description: Learn all about the Fast Step Line Chart of the Syncfusion® WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
-keywords: winui fast step line chart, winui sfcartesianchart, winui fast step line chart customization, syncfusion winui fast step line chart, fast step line chart settings.
+keywords: WinUI fast step line chart, WinUI SfCartesianChart, WinUI fast step line chart customization, Syncfusion WinUI fast step line chart, fast step line chart settings.
 ---
 
 # Fast Step Line Chart in WinUI (SfCartesianChart)
 
-A fast stepline bitmap series is a special kind of series that can render a collection with huge number of data points using `WriteableBitmap`. [FastStepLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html) is the high performance version of step line series.
+A fast step line bitmap series is a specialized series that can efficiently render a large number of data points using `WriteableBitmap`. The [FastStepLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html) is an optimized version of the step line series.
 
 {% tabs %}
 
@@ -60,7 +60,7 @@ chart.Series.Add(series);
 
 ### Anti-aliasing
 
-The anti aliasing mode can be enabled using the [EnableAntiAliasing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastStepLineBitmapSeries_EnableAntiAliasing) property of [FastStepLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html) as shown in the following code sample.
+The anti-aliasing mode can be enabled using the [EnableAntiAliasing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastStepLineBitmapSeries_EnableAntiAliasing) property of the [FastStepLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html), as shown in the following code sample.
 
 {% tabs %}
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Stacked group chart in WinUI Chart control | Syncfusion
-description: Learn here all about the stacked group chart and its features in Syncfusion® WinUI Chart (SfCartesianChart) control.
+title: Stacked Group Chart in WinUI Chart Control | Syncfusion
+description: Learn all about the stacked group chart and its features in the Syncfusion® WinUI Chart (SfCartesianChart) control.
 platform: WinUI
-control: SfChart
+control: SfCartesianChart
 documentation: ug
 keywords: stacked group chart in winui chart, winui stacked group chart customization, syncfusion winui stacked group chart, winui sfcartesianchart stacked group chart settings.
 ---
 
 # Stacked Group Chart in WinUI Chart (SfCartesianChart)
 
-Chart provides support to group the stacked similar series by using the [GroupName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedSeriesBase.html#Syncfusion_UI_Xaml_Charts_StackedSeriesBase_GroupName) property of stacked series. The stacked series which contains the same [GroupName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedSeriesBase.html#Syncfusion_UI_Xaml_Charts_StackedSeriesBase_GroupName) will be stacked in a single group.
+The chart provides support to group similar stacked series using the [GroupName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedSeriesBase.html#Syncfusion_UI_Xaml_Charts_StackedSeriesBase_GroupName) property of the stacked series. Series that share the same [GroupName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedSeriesBase.html#Syncfusion_UI_Xaml_Charts_StackedSeriesBase_GroupName) will be stacked together in a single group.
 
 {% tabs %}
 
