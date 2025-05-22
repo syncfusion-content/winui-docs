@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in WinUI Chart control | Syncfusion
-description: This section explains about how to apply palettes and gradient in the Syncfusion® WinUI Chart (SfPolarChart) control
+title: Appearance in WinUI Chart Control | Syncfusion
+description: This section explains how to apply palettes and gradients in the Syncfusion® WinUI Chart (SfPolarChart) control.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance in WinUI Chart (SfPolarChart)
 
-The appearance of the [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) can be customized by using the predefined palettes, custom palettes, and gradient which allows enriching the application.
+The appearance of the [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) can be customized using predefined palettes, custom palettes, and gradients, which enhance the application's visual appeal.
 
 ## Default PaletteBrushes
 
-Currently, the [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) supports only one predefined [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_PaletteBrushes) and it is the default brushes for the SfPolarChart. The following screenshot shows the default appearance of multiple series.
+Currently, the [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) supports only one predefined [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_PaletteBrushes), which serve as the default brushes for the SfPolarChart. The following screenshot shows the default appearance of multiple series.
 
 {% tabs %}
 
@@ -76,7 +76,7 @@ this.Content = chart;
 
 ## Custom PaletteBrushes
 
-The [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) provides support to define own brushes for the chart with preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_PaletteBrushes) property, as shown in the following code example.
+The [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) allows users to define their own brushes for the chart in a preferred order using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_PaletteBrushes) property, as shown in the following code example.
 
 {% tabs %}
 
@@ -125,7 +125,7 @@ this.Content = chart;
 
 ## Applying Gradient
 
-Gradient for the polar chart can be set by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_PaletteBrushes) property of the funnel chart with the help of the `LinearGradientBrush` or `RadialGradientBrush`.
+Gradients for the polar chart can be set using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_PaletteBrushes) property with the aid of `LinearGradientBrush` or `RadialGradientBrush`.
 
 {% tabs %}
 
@@ -185,7 +185,9 @@ chart.PaletteBrushes = customBrushes;
 
 ![Gradient support in WinUI Chart](Appearance_Images/WinUI_Chart_Series_Gradient.png)
 
-Gradient color using the [Fill](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_Fill) property of series with `LinearGradientBrush`.
+## Gradient Color Using the Fill Property
+
+Gradient colors can be applied using the [Fill](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_Fill) property of the series with `LinearGradientBrush`.
 
 {% tabs %}
 

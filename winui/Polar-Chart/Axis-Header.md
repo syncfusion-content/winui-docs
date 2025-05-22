@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Axis title in WinUI Chart control | Syncfusion
-description: Learn here all about the chart axis title of Syncfusion® WinUI Chart (SfPolarChart) control and its customization.
+title: Axis Title in WinUI Chart Control | Syncfusion
+description: Learn about the chart axis title of the Syncfusion® WinUI Chart (SfPolarChart) control and its customization options.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
@@ -41,13 +41,14 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-N> Polar chart supports title for secondary axis only.
+N> The polar chart supports titles for the secondary axis only.
+
 
 ![Axis title in WinUI Chart](Axis_Images/WinUI_Chart_AxisHeader.png)
 
 ## Style
 
-The [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_HeaderStyle) property is used to provide style for the axis header.
+The [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_HeaderStyle) property is used to style the axis header.
 
 {% tabs %}
 

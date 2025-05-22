@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Polar area chart | SfPolarChart | Syncfusion
-description: Learn here all about the polar area chart and its features in Syncfusion® WinUI Chart (SfPolarChart) control.
+title: Polar Area Chart | SfPolarChart | Syncfusion
+description: Learn all about the polar area chart and its features in the Syncfusion® WinUI Chart (SfPolarChart) control.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Polar Area Chart in WinUI Charts (SfPolarChart)
 
-To render a area series in polar chart, create an instance of the [PolarAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarAreaSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_Series) collection property of [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html).
+To render an area series in a polar chart, create an instance of the [PolarAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarAreaSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_Series) collection property of [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html).
 
 {% tabs %}
 
@@ -65,9 +65,9 @@ chart.Series.Add(series3);
 
 ![PolarAreaSeries in WinUI chart](PolarArea_Images/WinUI_Chart_PolarAreaSeries.png)
 
-## Grid line type 
+## Grid Line Type
 
-The [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_GridLineType) property is used to change the rendering type of axis grid lines. The default value of [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_GridLineType) is [Circle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarChartGridLineType.html#Syncfusion_UI_Xaml_Charts_PolarChartGridLineType_Circle). By changing the grid line type as [Polygon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarChartGridLineType.html#Syncfusion_UI_Xaml_Charts_PolarChartGridLineType_Polygon), we can shown the polar chart similar like spider chart or web chart. 
+The [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_GridLineType) property is used to change the rendering type of axis grid lines. The default value of [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_GridLineType) is [Circle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarChartGridLineType.html#Syncfusion_UI_Xaml_Charts_PolarChartGridLineType_Circle). By changing the grid line type to [Polygon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarChartGridLineType.html#Syncfusion_UI_Xaml_Charts_PolarChartGridLineType_Polygon), the polar chart can resemble a spider chart or web chart.
 
 {% tabs %}
 
@@ -106,7 +106,7 @@ chart.Series.Add(series);
 
 ## Closing Path
 
-[IsClosed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarSeries.html#Syncfusion_UI_Xaml_Charts_PolarSeries_IsClosed) property is used to render the series with or without closed path. The default value of [IsClosed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarSeries.html#Syncfusion_UI_Xaml_Charts_PolarSeries_IsClosed) is `true`. 
+The [IsClosed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarSeries.html#Syncfusion_UI_Xaml_Charts_PolarSeries_IsClosed) property is used to render the series with or without a closed path. The default value of [IsClosed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarSeries.html#Syncfusion_UI_Xaml_Charts_PolarSeries_IsClosed) is `true`. 
 
 {% tabs %}
 
