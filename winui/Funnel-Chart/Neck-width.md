@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Neck width in WinUI Chart control | Syncfusion
-description: This section explains about how to customize the neck width in Syncfusion® WinUI Chart (SfFunnelChart) control.
+title: Neck Width in WinUI Chart Control | Syncfusion
+description: This section explains how to customize the neck width in the Syncfusion® WinUI Chart (SfFunnelChart) control.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Neck Width in WinUI Chart (SfFunnelChart)
 
-The neck width of funnel chart can be customized by using the [MinimumWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_MinimumWidth) property. The default value of [MinimumWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_MinimumWidth) property is 40. The following code example explains how to change the neck width.
+The neck width of the funnel chart can be customized using the [MinimumWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_MinimumWidth) property. The default value of the [MinimumWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_MinimumWidth) property is 40. The following code example demonstrates how to change the neck width.
 
 {% tabs %} 
 
@@ -41,7 +41,7 @@ this.Content = chart;
 
 ## Inverted Pyramid
 
-The funnel chart can be customized to the inverted pyramid chart by setting the [MinimumWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_MinimumWidth) property to 0.
+The funnel chart can be transformed into an inverted pyramid chart by setting the [MinimumWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_MinimumWidth) property to 0.
 
 {% tabs %} 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About WinUI Chart control | Syncfusion
-description: Learn here all about introduction of Syncfusion® WinUI Chart (SfCartesianChart) control with key features and more.
+title: About WinUI Chart Control | Syncfusion
+description: Learn about the Syncfusion® WinUI Chart (SfCartesianChart) control, its key features, and more.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -10,20 +10,20 @@ keywords: winui chart overview, introduction to winui charts, exploring winui ch
 
 # WinUI Chart Overview
 
-The [WinUI Chart](https://www.syncfusion.com/winui-controls/charts) provides a perfect way to visualize data with a high level of user interactivity that focus on development, productivity and simplicity of use. Chart also provides a wide variety of charting features that can be used to visualize large quantities of data, flexibility of binding data and user customization. 
+The [WinUI Chart](https://www.syncfusion.com/winui-controls/charts) provides an ideal way to visualize data with a high level of user interactivity, focusing on development, productivity, and simplicity of use. The chart also offers a wide variety of charting features that are suitable for visualizing large quantities of data, flexible data binding, and extensive user customization options.
 
 ![Overview of WinUI Chart](Overview_images/chart_overview.png)
 
-## Key features
+## Key Features
 
-* Cartesian charts supports different types of series and each type of chart represents a unique style of representing data with more user friendly and greater UI visualization.
+* Cartesian charts support different types of series, with each chart type representing a unique style of data visualization that is user-friendly and enhances UI visualization.
+  
+* Enables data mapping from specified paths through data binding concepts.
 
-* Allows you to map data from the specified path, by achieving data binding concept.
+* Features interactive zooming with touch mode enabled, allowing you to explore portions of large charts in more detail with excellent performance.
 
-* Interactive zooming can be done with touch mode enabled that allows you to explore portions of large charts in more detail, with excellent performance.
+* Provides more information about specific segments in a chart through tooltips and trackball behavior on mouse hover.
 
-* When you need more information about particular segment in a chart, a little mouse over on the series provides much more information by including tooltip and trackball behavior.
+* Supports rendering multiple series simultaneously, with options to compare and visualize two different series side by side.
 
-* Cartesian chart provides support for rendering multiple series at same time, with options to compare and visualize two different series simultaneously.
-
-* User friendly and provides various options for you to customize chart features like axis, legends and data markers.
+* User-friendly and offers various options for customizing chart features such as axes, legends, and data markers.
