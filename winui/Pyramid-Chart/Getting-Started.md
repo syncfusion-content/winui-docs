@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Getting started with WinUI Pyramid Chart control | Syncfusion
-description: This section explains about getting started with Syncfusion® WinUI Pyramid Chart (SfPyramidChart) control, its elements, and more.
+title: Getting Started with WinUI Pyramid Chart Control | Syncfusion
+description: This section explains how to get started with the Syncfusion® WinUI Pyramid Chart (SfPyramidChart) control, its elements, and more.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
 ---
 
-# Getting started with WinUI Pyramid Chart (SfPyramidChart)
+# Getting Started with WinUI Pyramid Chart (SfPyramidChart)
 
-This section explains how to populate the [WinUI Pyramid Chart](https://www.syncfusion.com/winui-controls/charts/winui-pyramid-chart) with data, a header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
+This section describes how to populate the [WinUI Pyramid Chart](https://www.syncfusion.com/winui-controls/charts/winui-pyramid-chart) with data, a header, data labels, a legend, and tooltips, as well as other essential aspects for getting started with the chart.
 
-## Creating an application with WinUI Chart
+## Creating an Application with WinUI Chart
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
-2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
+2. Add a reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet.
 3. Import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C# to initialize the control.
-4. Initialize [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html?tabs=tabid-1%2Ctabid-4%2Ctabid-6%2Ctabid-21%2Ctabid-13%2Ctabid-25%2Ctabid-31%2Ctabid-27%2Ctabid-29%2Ctabid-15%2Ctabid-33%2Ctabid-10%2Ctabid-8%2Ctabid-19%2Ctabid-12%2Ctabid-17%2Ctabid-23) control.
+4. Initialize the [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html) control.
 
 {% capture codesnippet1 %}
 {% tabs %} 
@@ -60,7 +60,7 @@ public sealed partial class MainWindow : Window
 
 ## Initialize View Model
 
-Now, let us define a simple data model that represents a data point in the chart.
+Now, let's define a simple data model that represents a data point in the chart.
 
 {% tabs %}  
 
@@ -107,7 +107,7 @@ public class ChartViewModel
 
 Create a `ViewModel` instance and set it as the chart's `DataContext`. This enables property binding from the `ViewModel` class.
 
-N> If you prefer to set `DataContext` in XAML, add the namespace of the `ViewModel` class to your XAML Page.
+N> If you prefer to set `DataContext` in XAML, add the namespace of the `ViewModel` class to your XAML page.
 
 {% tabs %} 
 
@@ -140,7 +140,7 @@ chart.DataContext = viewModel;
 
 ## Add Title
 
-The title of the chart provide quick information to the user about the data being plotted in the chart. The title cane be set by using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property of the pyramid chart as follows.
+The title of the chart provides quick information to the user about the data being plotted. The title can be set by using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property of the pyramid chart as follows.
 
 {% tabs %} 
 
@@ -192,7 +192,7 @@ chart.ShowDataLabels = true;
 
 ## Enable Legend
 
-The legend provides information about the data point displayed in the pyramid chart. The [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property of the chart was used to enable it.
+The legend provides information about the data points displayed in the pyramid chart. The [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property of the chart is used to enable it.
 
 {% tabs %} 
 
@@ -219,7 +219,7 @@ chart.Legend = new ChartLegend();
 
 ## Enable Tooltip
 
-Tooltips are used to display information about a segment, when the mouse is moved over it. Enable tooltip by setting [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property as true.
+Tooltips are used to display information about a segment when the mouse is moved over it. Enable tooltip by setting the [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property to true.
 
 {% tabs %} 
 
@@ -241,7 +241,7 @@ chart.EnableTooltip = true;
 
 {% endtabs %}
 
-The following code example gives you the complete code of above configurations.
+The following code example gives you the complete code of the above configurations.
 
 N> To plot the chart, the [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_XBindingPath) and [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_YBindingPath) properties must be configured so that the chart may get values from the respective properties in the data model.
 
@@ -300,6 +300,6 @@ public sealed partial class MainWindow : Window
 
 ![Getting started for WinUI Chart](Getting-Started_Images/WinUI_Chart.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/PyramidChartGettingStarted).
+N> Download the demo application from [GitHub](https://github.[REDACTED]).
 
 N> You can also explore our [WinUI Pyramid Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Pyramid%20Charts) that shows how to easily configure with built-in support for creating stunning visual effects.
