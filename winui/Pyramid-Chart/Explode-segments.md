@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Explode segments in WinUI Chart control | Syncfusion
-description: This section explains about how to explode single segment or all segments in Syncfusion® WinUI Chart (SfPyramidChart) control.
+title: Explode Segments in WinUI Chart Control | Syncfusion
+description: This section explains how to explode a single segment or all segments in the Syncfusion® WinUI Chart (SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Explode Segments in WinUI Chart (SfPyramidChart)
 
-Exploding a segment is used to pull attention to a specific area of the pyramid. The following properties are used to explode the segments in the pyramid chart.
+Exploding a segment is used to draw attention to a specific area of the pyramid. The following properties are used to explode segments in the pyramid chart:
 
-* [ExplodeIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_ExplodeIndex) - Used to explode any specific segment.
-* [ExplodeOffset](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_ExplodeOffset) - Used to define the explode distance of segment.
-* [ExplodeOnTap](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_ExplodeOnTap) - Used to explode the segment when segment is tapped/clicked.
+* [ExplodeIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_ExplodeIndex) - Used to explode a specific segment.
+* [ExplodeOffset](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_ExplodeOffset) - Used to define the explode distance of a segment.
+* [ExplodeOnTap](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_ExplodeOnTap) - Used to explode the segment when it is tapped/clicked.
 
 {% tabs %} 
 
