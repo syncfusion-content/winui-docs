@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  Axis types in WinUI Chart control | Syncfusion
-description: Learn here all about the axis types and its features in  Syncfusion® WinUI Chart (SfPolarChart) control.
+title: Axis Types in WinUI Chart Control | Syncfusion
+description: Learn about the axis types and their features in the Syncfusion® WinUI Chart (SfPolarChart) control.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
 ---
 
-# Types of Axis in WinUI Chart (SfPolarChart) 
+# Types of Axis in WinUI Chart (SfPolarChart)
 
-Polar chart supports the following types of chart axis.
+The Polar Chart supports the following types of chart axes:
 
 * CategoryAxis
 * NumericalAxis
@@ -18,7 +18,7 @@ Polar chart supports the following types of chart axis.
 
 ## Category Axis
 
-The [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) is an indexed based axis that plots values based on the index of the data point collection. The points are equally spaced here.
+The [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) is an index-based axis that plots values based on the index of the data point collection. The points are equally spaced.
 
 {% tabs %}
 
@@ -54,7 +54,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 ## Numerical Axis
 
-The [NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is used to plot the numerical values to the chart. [NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) can be defined for both [PrimaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_PrimaryAxis) and [SecondaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_SecondaryAxis).
+The [NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is used to plot numerical values on the chart. It can be defined for both [PrimaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_PrimaryAxis) and [SecondaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_SecondaryAxis).
 
 {% tabs %}
 
@@ -89,11 +89,11 @@ chart.SecondaryAxis = new NumericalAxis();
 
 ![Numerical Axis support in WinUI Chart](Axis_Images/WinUI_Chart_NumericalAxis.png)
 
-### Customizing the range
+### Customizing the Range
 
-[Maximum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Maximum) and [Minimum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Minimum) properties of axis is used for setting the maximum and minimum value of the axis range respectively.
+The [Maximum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Maximum) and [Minimum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Minimum) properties of the axis are used to set the maximum and minimum values of the axis range, respectively.
 
-N> If  minimum or maximum value is set, the other value is calculated by default internally.
+N> If either the minimum or maximum value is set, the other value is automatically calculated internally.
 
 {% tabs %}
 
@@ -130,7 +130,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ## DateTime Axis
 
-The [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is used to plot the chart with `DateTime` values.
+The [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is used to plot charts with `DateTime` values.
 
 {% tabs %}
 
@@ -209,7 +209,7 @@ chart.SecondaryAxis.Add(secondaryAxis);
 
 ### Interval
 
-The Axis interval can be customized using the [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html#Syncfusion_UI_Xaml_Charts_LogarithmicAxis_Interval) property of the axis. By default, the interval is calculated based on the minimum and maximum values of the provided data, with a default value of `1`.
+The axis interval can be customized using the [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html#Syncfusion_UI_Xaml_Charts_LogarithmicAxis_Interval) property. By default, the interval is calculated based on the minimum and maximum values of the provided data, with a default value of `1`.
 
 {% tabs %}
 
@@ -241,7 +241,7 @@ chart.SecondaryAxis.Add(secondaryAxis);
 
 ### Customizing the Range
 
-The range of the logarithmic axis can be customized using the [Minimum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html#Syncfusion_UI_Xaml_Charts_LogarithmicAxis_Minimum) and [Maximum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html#Syncfusion_UI_Xaml_Charts_LogarithmicAxis_Maximum) properties of the LogarithmicAxis. By default, the range is automatically calculated to align with the provided data.
+The range of the logarithmic axis can be customized using the [Minimum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html#Syncfusion_UI_Xaml_Charts_LogarithmicAxis_Minimum) and [Maximum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html#Syncfusion_UI_Xaml_Charts_LogarithmicAxis_Maximum) properties. By default, the range is automatically calculated to align with the provided data.
 
 {% tabs %}
 
@@ -272,7 +272,7 @@ chart.SecondaryAxis.Add(secondaryAxis);
 {% endhighlight %}
 {% endtabs %}
 
-### Customizing the Logarithmic base
+### Customizing the Logarithmic Base
 
 The logarithmic axis base can be customized using the [LogarithmicBase](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html#Syncfusion_UI_Xaml_Charts_LogarithmicAxis_LogarithmicBase) property. The default base value is `10`.
 
@@ -307,17 +307,18 @@ chart.SecondaryAxis.Add(secondaryAxis);
 ![LogarithmicAxis base customization support in WinUI Chart](Axis_Images/WinUI_Chart_LogarithmicAxis_LogarithmicBase.png)
 
 ## Events
+
 ### ActualRangeChanged
 
-The [ActualRangeChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ActualRangeChanged) event is triggered when the actual range of the axis is changed. The argument contains the following information:
+The [ActualRangeChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ActualRangeChanged) event is triggered when the actual range of the axis changes. The event argument contains the following information:
 
-* [ActualMinimum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ActualRangeChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ActualRangeChangedEventArgs_ActualMinimum) - used to get the actual minimum value of the axis.
-* [ActualMaximum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ActualRangeChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ActualRangeChangedEventArgs_ActualMaximum) - used to get the actual maximum value of the axis.
+* [ActualMinimum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ActualRangeChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ActualRangeChangedEventArgs_ActualMinimum) - Retrieves the actual minimum value of the axis.
+* [ActualMaximum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ActualRangeChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ActualRangeChangedEventArgs_ActualMaximum) - Retrieves the actual maximum value of the axis.
 
 ### LabelCreated
 
-The [LabelCreated](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelCreated) event is triggered when the axis label is created. The argument contains the following information:
+The [LabelCreated](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelCreated) event is triggered when an axis label is created. The event argument contains the following information:
 
-* [Label](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabelEventArgs_Label) - Used to get or set the text of axis label.
-* [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabelEventArgs_Position) - Used to get the position of label.
+* [Label](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabelEventArgs_Label) - Used to get or set the text of the axis label.
+* [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabelEventArgs_Position) - Used to get the position of the label.
 * [LabelStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabelEventArgs_LabelStyle) - Used to customize the appearance of axis labels.

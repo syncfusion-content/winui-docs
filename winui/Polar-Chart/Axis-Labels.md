@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Axis labels in WinUI Chart control | Syncfusion
-description: Learn here all about the chart axis lables and its customization in Syncfusion® WinUI Chart (SfPolarChart) control.
+title: Axis Labels in WinUI Chart Control | Syncfusion
+description: Learn all about chart axis labels and their customization in the Syncfusion® WinUI Chart (SfPolarChart) control.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
 ---
 
-# Axis labels in WinUI Chart
+# Axis Labels in WinUI Chart
 
-The axis labels are used to show the units, measures, or category values of the axis to visualize the data. It will be generated based on the range and values binded to the series in the chart.
+The axis labels display the units, measures, or category values of the axis to visualize the data. They are generated based on the range and values bound to the series in the chart.
 
 ## Rotation
 
@@ -48,7 +48,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ## Format
 
-Axis labels can be formatted by predefined formatting types by using the [LabelFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LabelStyle.html#Syncfusion_UI_Xaml_Charts_LabelStyle_LabelFormat) property based on the axis types.
+Axis labels can be formatted using predefined formatting types with the [LabelFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LabelStyle.html#Syncfusion_UI_Xaml_Charts_LabelStyle_LabelFormat) property based on the axis types.
 
 {% tabs %}
 
@@ -93,7 +93,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ## Template
 
-The appearance of the axis labels can be customized by using the [LabelTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelTemplate) property of axis.
+The appearance of the axis labels can be customized using the [LabelTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelTemplate) property.
 
 {% tabs %}
 
