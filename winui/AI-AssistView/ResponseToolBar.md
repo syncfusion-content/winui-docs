@@ -1,63 +1,46 @@
 ---
 layout: post
-title: ResponseToolBar in WinUI AI AssistView control | Syncfusion
-description: Learn about ResponseToolBar with the Syncfusion WinUI AI AssistView (SfAIAssistView) control with its basic features.
+title: Response Toolbar in WinUI AI AssistView control | Syncfusion
+description: Learn about Response Toolbar with the Syncfusion WinUI AI AssistView (SfAIAssistView) control with its basic features.
 platform: WinUI
 control: AI AssistView
 documentation: ug
 ---
 
-# ResponseToolBar in WinUI AI AssistView 
+# Response Toolbar in WinUI AI AssistView 
 
-#### ResponseToolBar
+The [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control includes a **Response Toolbar** feature that enables users to customize the response toolbar in chat interactions. By default, the toolbar offers built-in options such as Copy, Regenerate, Like, and Dislike. Additionally, you can add custom toolbar items as needed.
 
-The [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control includes a **Response Toolbar** feature which allows users to customize the response toolbar in chat. By default, the toolbar contains built-in options such as copy, regenerate, like, and dislike. Users can also add custom items, as needed.
+## ResponseToolbarItem
 
-#### ResponseToolBarItem
+The **ResponseToolbarItem** class is used to define and add items in the response toolbar of chat responses for SfAIAssistView. The following properties are available in this class:
 
-The **ResponseToolbarItem** in [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) can be customized using the ItemTemplate property to define a custom appearance and behavior. This allows you to display icons, buttons, text, or even controls like Path, Image, or TextBlock.
-
-### ItemType
-
-The **ItemType** property in ResponseToolbarItem defines the type of built-in action or interaction displayed on the response toolbar. It helps identify the behavior and icon associated with that toolbar item.
-
-The **ItemType** property includes five types:
-
-**Copy** - Displays a "Copy" icon to allow copying the response content to clipboard.
-**Like** - Displays a thumbs-up icon. Used to indicate a positive response or feedback.
-**DisLike** - Displays a thumbs-down icon. Used to indicate a negative response or feedback.
-**Regenerate** - Used to regenerate a response (if AI is integrated for retry or rephrasing).
-**Custom** - Allows you to define a completely customized button with a custom template and behavior.
+- **Index**: Specifies the internal order or position of the toolbar item
+- **IsEnabled**: Specifies whether the toolbar item is enabled (interactive) or disabled (non-interactive).
+- **Tooltip**: Sets the tooltip text displayed when the user hovers over the toolbar item.
+- **Visible**: Indicates whether the toolbar item is visible.
+- **ItemType**: Specifies the type of the toolbar item. This is used to distinguish between built-in and custom items.
+- **ItemTemplate**: Allows you to set a custom template for rendering the toolbar item.
 
 {% tabs %}
-
 {% highlight xaml %}
 
  <Grid x:Name="grid1">
     <syncfusion:SfAIAssistView x:Name="aiAssistView" CurrentUser="{Binding CurrentUser}"  
                                Messages="{Binding Chats}" >
-        <syncfusion:SfAIAssistView.ResponseToolbarItems>
-            <syncfusion:ResponseToolbarItem ItemType="Copy"  Tooltip="Copy"></syncfusion:ResponseToolbarItem>
-            <syncfusion:ResponseToolbarItem ItemType="Regenerate" Tooltip="Regenerate"></syncfusion:ResponseToolbarItem>
-            <syncfusion:ResponseToolbarItem ItemType="Like" Tooltip="Like" ></syncfusion:ResponseToolbarItem>
-            <syncfusion:ResponseToolbarItem ItemType="Dislike" Tooltip="Dislike"></syncfusion:ResponseToolbarItem>
-        </syncfusion:SfAIAssistView.ResponseToolbarItems>
     </syncfusion:SfAIAssistView>
 </Grid>
 
 {% endhighlight %} 
-
 {% endtabs %}
 
 ![ResponseToolBar feature in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_responsetoolbar.png)
 
-
-#### IsResponseToolbarVisible
+## Response Toolbar Visibility
 
 The **IsResponseToolbarVisible** property of the [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control determines whether the response toolbar is displayed below each chat message. When set to false, the response toolbar is hidden. By default, this property is set to true.
 
 {% tabs %}
-
 {% highlight xaml %}
 
 <Grid x:Name="grid1">
@@ -76,44 +59,14 @@ aiAssistView.IsResponseToolbarVisible = false;
 {% endhighlight %}
 {% endtabs %}
 
-![IsResponseToolbarVisible in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_isresponsetoolbarvisible.png)
+![Response Toolbar Visibility in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_isresponsetoolbarvisible.png)
 
-#### ResponseToolbarItemClicked 
 
-The **ResponseToolbarItemClicked** event is triggered whenever a toolbar item (like a button) in the ResponseToolbarItems collection is clicked by the user.
+## Customized Response Toolbar Item using item template
 
-This allows you to centrally handle custom actions for buttons like "Copy", "Like", "Delete", or any other custom tools you define in ResponseToolbarItems.
+The **ResponseToolbarItem** in [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) can be customized using the ItemTemplate property to define a custom appearance and behavior. This allows you to display icons, buttons, text, or even controls like Path, Image, or TextBlock.
 
 {% tabs %}
-
-{% highlight xaml %}
-
-<Grid x:Name="grid1">
-    <syncfusion:SfAIAssistView x:Name="sfAIAssistView"
-                           ResponseToolbarItemClicked="AiAssistView_ResponseToolbarItemClicked"/>
-</Grid>
-
-{% endhighlight %} 
-
-{% highlight C# %}
-
-SfAIAssistView sfAIAssistView = new SfAIAssistView();
-sfAIAssistView.ResponseToolbarItemClicked += AiAssistView_ResponseToolbarItemClicked;
-
-private void AiAssistView_ResponseToolbarItemClicked(object sender, ResponseToolbarItemClickedEventArgs e)
-{
-    // Call the logic similar to HandleResponseToolbarItemClick
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-
-#### Customized ResponseToolBar Template
-
-The **ResponseToolbarItem** in [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) can be customized using the ItemTemplate property to define a custom appearance and behavior. This allows you to display icons, buttons, text, or even controls like Path, Image, or TextBlock
-{% tabs %}
-
 {% highlight xaml %}
 
  <Grid x:Name="grid1">
@@ -143,7 +96,33 @@ The **ResponseToolbarItem** in [SfAIAssistView](https://help.syncfusion.com/cr/w
  </Grid>
 
 {% endhighlight %} 
-
 {% endtabs %}
 
-![CustomizedResponseToolBarTemplate feature in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_customizedresponsetoolbartemplate.png)
+![Customized Response Toolbar Template feature in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_customizedresponsetoolbartemplate.png)
+
+## Item Clicked Event 
+
+The **ResponseToolbarItemClicked** event is triggered whenever a toolbar item (like a button) in the ResponseToolbarItems collection is clicked by the user.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Grid x:Name="grid1">
+    <syncfusion:SfAIAssistView x:Name="sfAIAssistView"
+                           ResponseToolbarItemClicked="AiAssistView_ResponseToolbarItemClicked"/>
+</Grid>
+
+{% endhighlight %} 
+
+{% highlight C# %}
+
+SfAIAssistView sfAIAssistView = new SfAIAssistView();
+sfAIAssistView.ResponseToolbarItemClicked += AiAssistView_ResponseToolbarItemClicked;
+
+private void AiAssistView_ResponseToolbarItemClicked(object sender, ResponseToolbarItemClickedEventArgs e)
+{
+    // Call the logic similar to HandleResponseToolbarItemClick
+}
+
+{% endhighlight %}
+{% endtabs %}
