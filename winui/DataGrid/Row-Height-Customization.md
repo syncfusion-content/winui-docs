@@ -231,11 +231,8 @@ void sfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
     if (this.sfDataGrid.ColumnSizer.GetAutoRowHeight(e.RowIndex, gridRowResizingOptions, out autoHeight))
     {
-        if (autoHeight > 24)
-        {
-            e.Height = autoHeight;
-            e.Handled = true;
-        }
+        e.Height = (autoHeight > this.sfDataGrid.RowHeight) ? autoHeight : this.sfDataGrid.RowHeight;
+        e.Handled = true;
     }
 }
 {% endhighlight %}
