@@ -202,6 +202,44 @@ this.sfDataGrid.GetVisualContainer().InvalidateMeasureInfo();
 {% endhighlight %}
 {% endtabs %}
 
+### Update Row Height while editing
+
+You can set the height of the row based on the content after editing by refreshing the row height in [SfDataGrid.CurrentCellEndEdit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentCellEndEdit) event.
+
+You can call the `InvalidateRowHeight` method in [CurrentCellEndEdit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentCellEndEdit) event to reset the particular row height. Then call the `InvalidateMeasureInfo` method of `VisualContainer` to refresh the view. Now the `QueryRowHeight` event is called again for edited row alone and row height is calculated based on edited content.
+
+{% tabs %}
+{% highlight c# %}
+using Syncfusion.UI.Xaml.DataGrid.Helpers;
+
+GridRowSizingOptions gridRowResizingOptions = new GridRowSizingOptions();
+
+//To get the calculated height from GetAutoRowHeight method.    
+double autoHeight = double.NaN;        
+
+this.sfDatagrid.QueryRowHeight += sfDataGrid_QueryRowHeight;
+this.sfDatagrid.CurrentCellEndEdit += sfDataGrid_CurrentCellEndEdit;
+
+void sfDataGrid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventArgs args)
+{
+    sfDataGrid.InvalidateRowHeight(args.RowColumnIndex.RowIndex);
+    sfDataGrid.GetVisualContainer().InvalidateMeasureInfo();
+}
+
+void sfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
+{
+
+    if (this.sfDataGrid.ColumnSizer.GetAutoRowHeight(e.RowIndex, gridRowResizingOptions, out autoHeight))
+    {
+        if (autoHeight > 24)
+        {
+            e.Height = autoHeight;
+            e.Handled = true;
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
 
 ## Changes header row height based on its Content
 
