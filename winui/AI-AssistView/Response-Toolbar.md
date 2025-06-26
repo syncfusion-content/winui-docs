@@ -57,7 +57,6 @@ aiAssistView.IsResponseToolbarVisible = false;
 
 ![Response toolbar visibility in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_isresponsetoolbarvisible.png)
 
-
 ## Customization of Response toolbar item using ItemTemplate
 
 The **ResponseToolbarItem** in [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) can be customized using the ItemTemplate property to define a custom appearance and behavior. This allows you to display icons, buttons, text, or even UI elements such as Path, Image, or TextBlock within the toolbar.
