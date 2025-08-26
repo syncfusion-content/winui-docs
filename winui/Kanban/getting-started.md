@@ -212,7 +212,7 @@ public class KanbanViewModel
 
 ### Creating the custom model tasks with data mapping
 
-You can also map custom model data to our Kanban. Here are the steps to render tasks using the [WinUI Kanban](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control with respective custom data properties.
+You can also map custom model data to our Kanban. Here are the steps to render tasks using the [WinUI Kanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control with respective custom data properties.
 
 * **Define the the Custom Model:** Create a custom class `TaskDetails` with mandatory fields `Subject`, `Details`, and `Status` similar to the [`KanbanModel`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) fields `Title`, `Description`, and `Category`..
 * **Define the the Custom View Model:** Create a `ViewModel` class with a collection property to hold instances of your custom model. Each custom model instance should represent a card in the Kanban control, similar to the [`KanbanModel`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) instance provided by Syncfusion.
