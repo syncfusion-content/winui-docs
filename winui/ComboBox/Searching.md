@@ -99,9 +99,9 @@ The `ComboBox` control provides support to auto append the text based on data so
 
 N> Auto appending of text is supported only in `Editable` mode and `TextSearchMode` property should be `StartsWith`.
 
-## Diacritic Option
+## Diacritic aware search
 
-The `IgnoreDiacritic` option allows string comparison and search operations to treat characters with diacritical marks (accents) as equivalent to their base characters. This is useful for linguistic normalization, search indexing, and user-friendly matching across languages. Enable or disable the diacritic sensitivity using the `IgnoreDiacritic` property. The following code example demonstrates how to enable the diacritic sensitivity.
+The `IgnoreDiacritic` option allows string comparison and search operations to treat characters with diacritical marks (accents) as equivalent to their base characters. This is useful for search indexing, and user-friendly matching across languages. By default, Diacritic is not considered. Enable or disable the diacritic sensitivity using the `IgnoreDiacritic` property. The following code example demonstrates how to enable the diacritic sensitivity.
 
 {% tabs %}
 {% highlight xaml %}

@@ -326,11 +326,11 @@ private async  void OnComboBoxSelectionChanged(object sender, ComboBoxSelectionC
 
 ## Selection changing notification
 
-The SelectionChanging event occurs before the items is being selected. This is a cancelable event. This argument contains the following information:
+The `SelectionChanging` event occurs before processing the selection. This is a cancelable event. This argument contains the following information:
 
  * `AddedItems` - Contains the items that were selected.
  * `RemovedItems` - Contains the items that were unselected.
- * `AllowDetachSelection` - Gets or sets a value indicating whether the selected item in the list should be displayed or not.
+ * `AllowDetachedSelection` - Gets or sets a value indicating whether the selected item in the list should be displayed or not.
  * `Cancel` - Gets or sets a value that indicates whether the selection should be canceled or not.
 
 ![WinUI ComboBox selection change notification](Selection_images/winui-combobox-selection-change-notification.png)
