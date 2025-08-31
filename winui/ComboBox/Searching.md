@@ -99,6 +99,31 @@ The `ComboBox` control provides support to auto append the text based on data so
 
 N> Auto appending of text is supported only in `Editable` mode and `TextSearchMode` property should be `StartsWith`.
 
+## Diacritic Option
+
+The `IgnoreDiacritic` option allows string comparison and search operations to treat characters with diacritical marks (accents) as equivalent to their base characters. This is useful for linguistic normalization, search indexing, and user-friendly matching across languages. Enable or disable the diacritic sensitivity using the `IgnoreDiacritic` property. The following code example demonstrates how to enable the diacritic sensitivity.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfComboBox x:Name="comboBox"
+                    Width="250"
+                    IsEditable="true"
+                    ItemsSource="{Binding SocialMedias}"
+                    TextMemberPath="Name"
+                    DisplayMemberPath="Name"
+                    IgnoreDiacritic = "false" />
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+comboBox.IgnoreDiacritic = "false";
+
+{% endhighlight %}
+{% endtabs %}
+
+
 ## Search Mode
 
 The `TextSearchMode` property of the `ComboBox` can be used to regulate how the control behaves when it receives user input. The default text searching type is `StartsWith`, ignoring accent and it is case insensitive. The available text search modes are,
