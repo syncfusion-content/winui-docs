@@ -821,6 +821,29 @@ You can restrict the users to enter input within a minimum and maximum range in 
 {% endhighlight %}
 {% endtabs %}
 
+### Clear Button support
+
+`TreeGridNumericColumn` provides support to show or hide clear icon in columns based on `ShowClearButton` property. You can enable or disable the `ShowClearButton` property based on your requirement.
+
+{% tabs %}
+{% highlight xaml %}
+<dataGrid:SfTreeGrid x:Name="dataGrid" 
+                       ItemsSource="{Binding Orders}"
+                       AutoGenerateColumns="False"
+                       AllowEditing="True" >
+    <dataGrid:SfTreeGrid.Columns>
+        <dataGrid:TreeGridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:TreeGridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <dataGrid:TreeGridNumericColumn MappingName="UnitPrice" HeaderText="Unit Price" ShowClearButton="True" />
+        <dataGrid:TreeGridTextColumn MappingName="Country" />
+        <dataGrid:TreeGridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </dataGrid:SfTreeGrid.Columns>
+</dataGrid:SfTreeGrid>
+{% endhighlight %}
+{% endtabs %}
+
+<img src="Column-Type-images/winui-treegrid-NumericColumn-ShowClearButton.png" alt="WinUI TreeGrid Column with DateColumn" width="100%" Height="Auto"/>
+
 ### UpDown button placement
 
 You can increase or decrease the value of the `TreeGridNumericColumn` using the up-down button. By default, the value of [UpDownPlacementMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_UpDownPlacementMode) property is [Hidden](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.NumberBoxUpDownPlacementMode.html#Syncfusion_UI_Xaml_Editors_NumberBoxUpDownPlacementMode_Hidden). You can change the up-down button position by assigning the value `UpDownPlacementMode` property as [Inline](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.NumberBoxUpDownPlacementMode.html#Syncfusion_UI_Xaml_Editors_NumberBoxUpDownPlacementMode_Inline) or [Compact](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.NumberBoxUpDownPlacementMode.html#Syncfusion_UI_Xaml_Editors_NumberBoxUpDownPlacementMode_Compact).
@@ -938,6 +961,29 @@ The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 ### Setting date value range
 
 You can restrict and display the input value within the range using the [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MinDate) and [MaxDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MaxDate) properties.
+
+### Clear Button support
+
+`TreeGridDateColumn` provides support to show or hide clear icon in columns based on `ShowClearButton` property. You can enable or disable the `ShowClearButton` property based on your requirement.
+
+{% tabs %}
+{% highlight xaml %}
+<dataGrid:SfTreeGrid x:Name="dataGrid" 
+                       ItemsSource="{Binding Orders}"
+                       AutoGenerateColumns="False"
+                       AllowEditing="True" >
+    <dataGrid:SfTreeGrid.Columns>
+        <dataGrid:TreeGridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:TreeGridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <dataGrid:TreeGridNumericColumn MappingName="UnitPrice" HeaderText="Unit Price" ShowClearButton="True" />
+        <dataGrid:TreeGridTextColumn MappingName="Country" />
+        <dataGrid:TreeGridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </dataGrid:SfTreeGrid.Columns>
+</dataGrid:SfTreeGrid>
+{% endhighlight %}
+{% endtabs %}
+
+<img src="Column-Type-images/winui-treegrid-DateColumn-ShowClearButton.png" alt="WinUI TreeGrid Column with DateColumn" width="100%" Height="Auto"/>
 
 ## TreeGridTimeColumn
 

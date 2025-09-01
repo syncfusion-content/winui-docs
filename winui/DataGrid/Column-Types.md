@@ -827,6 +827,29 @@ You can restrict the users to enter input within a minimum and maximum range in 
 {% endhighlight %}
 {% endtabs %}
 
+### Clear Button support
+
+`GridNumericColumn` provides support to show or hide clear icon in columns based on `ShowClearButton` property. You can enable or disable the `ShowClearButton` property based on your requirement.
+
+{% tabs %}
+{% highlight xaml %}
+<dataGrid:SfDataGrid x:Name="dataGrid" 
+                       ItemsSource="{Binding Orders}"
+                       AutoGenerateColumns="False"
+                       AllowEditing="True" >
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <dataGrid:GridNumericColumn MappingName="UnitPrice" HeaderText="Unit Price" ShowClearButton="True" />
+        <dataGrid:GridTextColumn MappingName="Country" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
+
+<img src="winui\DataGrid\Column-Types_images\winui-datagrid-numericolumn-showclearbutton.png" alt="WinUI DataGrid Column with NumericColumn" width="100%" Height="Auto"/>
+
 ### UpDown button placement
 
 You can increase or decrease the value of the `GridNumericColumn` using the up-down button. By default, the value of [UpDownPlacementMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_UpDownPlacementMode) property is [Hidden](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.NumberBoxUpDownPlacementMode.html#Syncfusion_UI_Xaml_Editors_NumberBoxUpDownPlacementMode_Hidden). You can change the up-down button position by assigning the value `UpDownPlacementMode` property as [Inline](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.NumberBoxUpDownPlacementMode.html#Syncfusion_UI_Xaml_Editors_NumberBoxUpDownPlacementMode_Inline) or [Compact](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.NumberBoxUpDownPlacementMode.html#Syncfusion_UI_Xaml_Editors_NumberBoxUpDownPlacementMode_Compact).
@@ -931,6 +954,31 @@ The `PlaceholderText` does not shown, when the `AllowNull` is `false`.
 ### Setting date value range
 
 You can restrict and display the input value within the range using [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html#Syncfusion_UI_Xaml_DataGrid_GridDateColumn_MinDate) and [MaxDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html#Syncfusion_UI_Xaml_DataGrid_GridDateColumn_MaxDate) properties.
+
+### Clear Button support
+
+`GridDateColumn` provides support to show or hide clear icon in columns based on `ShowClearButton` property. You can enable or disable the `ShowClearButton` property based on your requirement.
+
+{% tabs %}
+{% highlight xaml %}
+<dataGrid:SfDataGrid x:Name="dataGrid" 
+                       ItemsSource="{Binding Orders}"
+                       AutoGenerateColumns="False"
+                       AllowEditing="True" >
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <dataGrid:GridTextColumn MappingName="Country" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+        <dataGrid:GridDateColumn MappingName="Date" HeaderDate="Order Date" ShowClearButton="True" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
+
+<img src="winui\DataGrid\Column-Types_images\winui-datagrid-numericolumn-showclearbutton.png" alt="WinUI DataGrid Column with NumericColumn" width="100%" Height="Auto"/>
+
 
 ## GridCheckBoxColumn
 
