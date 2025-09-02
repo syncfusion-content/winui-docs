@@ -328,9 +328,37 @@ private async  void OnComboBoxSelectionChanged(object sender, ComboBoxSelectionC
 
 The `SelectionChanging` event occurs before processing the selection. This is a cancelable event. This argument contains the following information:
 
- * `AddedItems` - Contains the items that were selected.
- * `RemovedItems` - Contains the items that were unselected.
- * `AllowDetachedSelection` - Gets or sets a value indicating whether the selected item in the list should be displayed or not.
+ * `AddedItems` - Contains the items that are being selected.
+ * `RemovedItems` - Contains the items that are being unselected.
+ * `AllowDetachedSelection` - Gets or sets a value indicating whether the not in list item should be displayed or not.
  * `Cancel` - Gets or sets a value that indicates whether the selection should be canceled or not.
+
+ {% tabs %}
+
+ {% highlight xaml %}
+
+<editors:SfComboBox x:Name="comboBox"
+                    Width="250"
+                    TextMemberPath="Name"
+                    DisplayMemberPath="Name"
+                    ItemsSource="{Binding SocialMedias}"
+                    SelectionChanging="OnComboBoxSelectionChanging" />
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+comboBox.SelectionChanging += OnComboBoxSelectionChanging;
+
+private void OnComboBoxSelectionChanging(object sender, Syncfusion.UI.Xaml.Editors.ComboBoxSelectionChangingEventArgs e)
+{
+    e.AllowDetachedSelection = true;
+
+    e.Cancel = true;
+}
+
+{% endhighlight %}
+
+ {% endtabs %}
 
 ![WinUI ComboBox selection change notification](Selection_images/winui-combobox-selection-change-notification.png)
