@@ -214,8 +214,6 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![defining-columns-in-winui-kanban](images/getting-started/defining-columns-in-winui-kanban.png)
-
 ### Creating the custom model tasks with data mapping
 
 You can also map custom data model to our Kanban control. The following steps demonstrate how to render tasks using the [WinUI Kanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control with respective custom data properties.
