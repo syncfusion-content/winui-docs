@@ -57,7 +57,7 @@ public sealed partial class MainWindow : Window
 
 ## Populate WinUI Kanban item source
 
-This section explains how to populate the .NET MAUI Kanban control's `ItemSource` by creating and binding both default and custom task data models.
+This section explains how to populate the WinUI Kanban control's `ItemSource` by creating and binding both default and custom task data models.
 
 ### Creating the default model tasks
 
