@@ -100,6 +100,8 @@ this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "
 {% endhighlight %}
 {% highlight C# tabtitle="ViewModel.cs" %}
    
+using Syncfusion.UI.Xaml.Kanban;
+
 public class ViewModel
 {
     #region Properties
