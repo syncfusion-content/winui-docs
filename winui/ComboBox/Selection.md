@@ -324,6 +324,8 @@ private async  void OnComboBoxSelectionChanged(object sender, ComboBoxSelectionC
 {% endhighlight %}
 {% endtabs %}
 
+![WinUI ComboBox selection change notification](Selection_images/winui-combobox-selection-change-notification.png)
+
 ## Selection changing notification
 
 The `SelectionChanging` event occurs before processing the selection. This is a cancelable event. This argument contains the following information:
@@ -353,12 +355,8 @@ comboBox.SelectionChanging += OnComboBoxSelectionChanging;
 private void OnComboBoxSelectionChanging(object sender, Syncfusion.UI.Xaml.Editors.ComboBoxSelectionChangingEventArgs e)
 {
     e.AllowDetachedSelection = true;
-
-    e.Cancel = true;
 }
 
 {% endhighlight %}
 
  {% endtabs %}
-
-![WinUI ComboBox selection change notification](Selection_images/winui-combobox-selection-change-notification.png)
