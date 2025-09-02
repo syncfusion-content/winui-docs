@@ -57,6 +57,8 @@ public sealed partial class MainWindow : Window
 
 ## Populate WinUI Kanban item source
 
+This section explains how to populate the .NET MAUI Kanban control's `ItemSource` by creating and binding both default and custom task data models.
+
 ### Creating the default model tasks
 
 * **Define the View Model:** 
@@ -73,7 +75,6 @@ To populate the kanban card items, utilize the [`ItemsSource`](https://help.sync
 The following sample code demonstrates this process in action:
 
 {% tabs %}
-
 {% highlight XAML hl_lines="2, 4, 5, 6, 7, 8, 9" %}
 
 <kanban:SfKanban x:Name="kanban"
@@ -83,29 +84,23 @@ The following sample code demonstrates this process in action:
         <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
         <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
     <kanban:SfKanban.DataContext>
-        <local:KanbanViewModel/>
+        <local:ViewModel/>
     </kanban:SfKanban.DataContext>
 </kanban:SfKanban>
 
 {% endhighlight %}
+{% highlight C# hl_lines="1, 2, 3, 4, 5" %}
 
-{% highlight C# hl_lines="1, 3, 4, 5, 7, 8, 9" %}
-
-KanbanViewModel viewModel = new KanbanViewModel();
-
-this.kanban.DataContext = viewModel;
 this.kanban.AutoGenerateColumns = false;
-this.kanban.ItemsSource = viewModel.TaskDetails;
-
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "To Do", Categories = "Open" });
 this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "In Progress", Categories = "In Progress" });
 this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "Done" });
 
 {% endhighlight %}
-
-{% highlight C# tabtitle="KanbanViewModel.cs" %}
+{% highlight C# tabtitle="ViewModel.cs" %}
    
-public class KanbanViewModel
+public class ViewModel
 {
     #region Properties
 
@@ -119,9 +114,9 @@ public class KanbanViewModel
     #region Constructor
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="KanbanViewModel"/> class.
+    /// Initializes a new instance of the <see cref="ViewModel"/> class.
     /// </summary>
-    public KanbanViewModel()
+    public ViewModel()
     {
         this.TaskDetails = this.GetTaskDetails();
     }
@@ -215,7 +210,6 @@ public class KanbanViewModel
 }
 
 {% endhighlight %}
-
 {% endtabs %}
 
 ![defining-columns-in-winui-kanban](images/getting-started/defining-columns-in-winui-kanban.png)
@@ -244,14 +238,13 @@ Alternatively, you can manually define columns by setting [`AutoGenerateColumns`
 Let’s look at the practical code example:
 
 {% tabs %}
-
 {% highlight XAML hl_lines="2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27" %}
 
 <kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}"
                  ColumnMappingPath="Status">
     <kanban:SfKanban.DataContext>
-        <local:KanbanViewModel />
+        <local:ViewModel />
     </kanban:SfKanban.DataContext>
     <kanban:SfKanban.CardTemplate>
         <DataTemplate>
@@ -277,18 +270,12 @@ Let’s look at the practical code example:
 </kanban:SfKanban>
 
 {% endhighlight %}
+{% highlight C# hl_lines="1, 2" %}
 
-{% highlight C# hl_lines="1, 3, 4, 6" %}
-
-KanbanViewModel viewModel = new KanbanViewModel();
-
-this.kanban.DataContext = viewModel;
-this.kanban.ItemsSource = viewModel.TaskDetails;
-
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.ColumnMappingPath = "Status";
 
 {% endhighlight %}
-
 {% highlight C# tabtitle="TaskDetails.cs" %}
 
 public class TaskDetails
@@ -299,14 +286,13 @@ public class TaskDetails
 }
 
 {% endhighlight %}
+{% highlight C# tabtitle="ViewModel.cs" %}
 
-{% highlight C# tabtitle="KanbanViewModel.cs" %}
-
-public class KanbanViewModel
+public class ViewModel
 {
     public ObservableCollection<TaskDetails> TaskDetails { get; set; }
 
-    public KanbanViewModel()
+    public ViewModel()
     {
         this.TaskDetails = this.GetTaskDetails();
     }
@@ -317,12 +303,6 @@ public class KanbanViewModel
 
         TaskDetails taskDetail = new TaskDetails();
         taskDetail.Title = "UWP Issue";
-        taskDetail.Description = "Sorting is not working properly in DateTimeAxis";
-        taskDetail.Status = "Postponed";
-        taskDetails.Add(taskDetail);
-
-        taskDetail = new TaskDetails();
-        taskDetail.Title = "WPF Issue";
         taskDetail.Description = "Crosshair label template not visible in UWP";
         taskDetail.Status = "Open";
         taskDetails.Add(taskDetail);
@@ -330,12 +310,7 @@ public class KanbanViewModel
         taskDetail = new TaskDetails();
         taskDetail.Title = "WinUI Issue";
         taskDetail.Description = "AxisLabel cropped when rotating the axis label";
-        taskDetail.Status = "In Progress";
-        taskDetails.Add(taskDetail);
-
-        taskDetail = new TaskDetails();
-        taskDetail.Title = "UWP Issue";
-        taskDetail.Description = "Crosshair label template not visible in UWP";
+        taskDetail.Status = "Open";
         taskDetails.Add(taskDetail);
 
         taskDetail = new TaskDetails();
@@ -345,27 +320,15 @@ public class KanbanViewModel
         taskDetails.Add(taskDetail);
 
         taskDetail = new TaskDetails();
-        taskDetail.Title = "WF Issue";
-        taskDetail.Description = "HorizontalAlignment for tooltip is not working";
+        taskDetail.Title = "New Feature";
+        taskDetail.Description = "ragging events support for Kanban";
         taskDetail.Status = "In Progress";
         taskDetails.Add(taskDetail);
 
         taskDetail = new TaskDetails();
-        taskDetail.Title = "WPF Issue";
-        taskDetail.Description = "In minimized state, first and last segments have incorrect spacing";
-        taskDetail.Status = "Code Review";
-        taskDetails.Add(taskDetail);
-
-        taskDetail = new TaskDetails();
-        taskDetail.Title = "WPF Issue";
-        taskDetail.Description = "In minimized state, first and last segments have incorrect spacing";
-        taskDetail.Status = "Code Review";
-        taskDetails.Add(taskDetail);
-
-        taskDetail = new TaskDetails();
-        taskDetail.Title = "New Feature";
-        taskDetail.Description = "Dragging events support for Kanban";
-        taskDetail.Status = "Closed";
+        taskDetail.Title = "WF Issue";
+        taskDetail.Description = "HorizontalAlignment for tooltip is not working";
+        taskDetail.Status = "Done";
         taskDetails.Add(taskDetail);
 
         return taskDetails;
@@ -373,7 +336,6 @@ public class KanbanViewModel
 }
 
 {% endhighlight %}
-
 {% endtabs %}
 
 N> When manually defining columns, ensure the [AutoGenerateColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) is set to `false`.
