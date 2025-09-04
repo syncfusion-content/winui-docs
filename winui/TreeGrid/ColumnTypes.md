@@ -821,11 +821,18 @@ You can restrict the users to enter input within a minimum and maximum range in 
 {% endhighlight %}
 {% endtabs %}
 
-### Clear Icon support
+### Clear Button support
 
-`TreeGridNumericColumn` provides support for clearing the cell value during editing when the `ShowClearButton` property is enabled. When `ShowClearButton` is set to `True`, a clear icon is displayed in the cell editor, enabling users to remove the cell’s value during editing.
+The `TreeGridNumericColumn` provides a clear button feature that enables users to reset cell values during editing using the `ShowClearButton` property.
+When `ShowClearButton` is set to `True`, a clear button appears within the editor, providing users with a convenient way to clear the cell's value.
 
-When [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_AllowNull) is set to `True`, the cell displays a null value when clicking the `ShowClearButton`, when `AllowNull` is set to `False`, the cell displays the [MinValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_MinValue) of the column.
+#### AllowNull Behavior
+
+The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_AllowNull) property:
+
+ - When `AllowNull` is to `True`, clicking the clear button sets the cell value to `null`.
+ - When `AllowNull` is to `False`, clicking the clear button sets the cell value to the column's
+  [MinValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_MinValue).
 
 {% tabs %}
 {% highlight xaml %}
@@ -834,11 +841,13 @@ When [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGri
                        AutoGenerateColumns="False"
                        AllowEditing="True" >
     <dataGrid:SfTreeGrid.Columns>
-        <dataGrid:TreeGridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <dataGrid:TreeGridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <dataGrid:TreeGridNumericColumn MappingName="UnitPrice" HeaderText="Unit Price" ShowClearButton="True" />
-        <dataGrid:TreeGridTextColumn MappingName="Country" />
-        <dataGrid:TreeGridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+        <dataGrid:TreeGridTextColumn MappingName="First Name" HeaderText="First Name" />
+        <dataGrid:TreeGridTextColumn MappingName="Last Name" HeaderText="Last Name" />
+         <dataGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
+        <dataGrid:TreeGridNumericColumn MappingName="Employee ID" HeaderText="Employee ID" ShowClearButton="True" />
+        <dataGrid:TreeGridTextColumn MappingName="Salary" HeaderText="Salary" />
+        <dataGrid:TreeGridTextColumn MappingName="Reports To" HeaderText="Reports To" />
+         <dateGrid:TreeGridDateColumn MappingName="Joining Date" HeaderText="Joining Date"/>
     </dataGrid:SfTreeGrid.Columns>
 </dataGrid:SfTreeGrid>
 {% endhighlight %}
@@ -969,7 +978,7 @@ You can restrict and display the input value within the range using the [MinDate
 The `TreeGridDateColumn` provides a clear button feature that enables users to reset cell values during editing using the `ShowClearButton` property.
 When `ShowClearButton` is set to `True`, a clear button appears within the editor, providing users with a convenient way to clear the cell's value.
 
-### AllowNull Behavior
+#### AllowNull Behavior
 The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_AllowNull) property:
 
 - When `AllowNull` is `True`, clicking the clear button sets the cell value to null.
@@ -982,11 +991,13 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
                        AutoGenerateColumns="False"
                        AllowEditing="True" >
     <dataGrid:SfTreeGrid.Columns>
-        <dataGrid:TreeGridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <dataGrid:TreeGridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <dataGrid:TreeGridNumericColumn MappingName="UnitPrice" HeaderText="Unit Price" ShowClearButton="True" />
-        <dataGrid:TreeGridTextColumn MappingName="Country" />
-        <dataGrid:TreeGridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+        <dataGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
+        <dataGrid:TreeGridTextColumn MappingName="Last Name" HeaderText="Last Name" />
+        <dataGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
+        <dataGrid:TreeGridNumericColumn MappingName="Employee ID" HeaderText="EmployeeID" />
+        <dataGrid:TreeGridTextColumn MappingName="Salary" HeaderText="Salary"/>
+        <dataGrid:TreeGridTextColumn MappingName="Reports To" HeaderText="Reports To" />
+        <dateGrid:TreeGridDateColumn MappingName="Joining Date" HeaderText="Joining Date" ShowClearButton="True" />
     </dataGrid:SfTreeGrid.Columns>
 </dataGrid:SfTreeGrid>
 {% endhighlight %}

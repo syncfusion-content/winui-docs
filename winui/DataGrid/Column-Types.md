@@ -832,7 +832,7 @@ You can restrict the users to enter input within a minimum and maximum range in 
 The `GridNumericColumn` provides a clear button feature that enables users to reset cell values during editing using the `ShowClearButton` property.
 When `ShowClearButton` is set to `True`, a clear button is displayed in the cell editor, enabling users to clear the cell’s value during editing.
 
-### AllowNull Behavior
+#### AllowNull Behavior
 
 The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_AllowNull) property:
 
@@ -847,11 +847,11 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
                        AutoGenerateColumns="False"
                        AllowEditing="True" >
     <dataGrid:SfDataGrid.Columns>
-        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridNumericColumn MappingName="Order ID" HeaderText="Order ID" ShowClearButton="True" />
         <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <dataGrid:GridNumericColumn MappingName="UnitPrice" HeaderText="Unit Price" ShowClearButton="True" />
-        <dataGrid:GridTextColumn MappingName="Country" />
-        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+        <dataGrid:GridTextColumn MappingName="Country" HeaderText="Country" />
+        <dataGrid:GridTextColumn MappingName="Customer ID" HeaderText="Customer ID" />
+        <dataGrid:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" />    
     </dataGrid:SfDataGrid.Columns>
 </dataGrid:SfDataGrid>
 {% endhighlight %}
@@ -969,7 +969,7 @@ You can restrict and display the input value within the range using [MinDate](ht
 The `GridDateColumn` provides a clear button feature that enables users to reset cell values during editing using the`ShowClearButton` property.
 When `ShowClearButton` is set to `True`, a clear button appears within the editor, providing users with a convenient way to clear the cell's value.
 
-### AllowNull Behaviour
+#### AllowNull Behaviour
 
 The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html#Syncfusion_UI_Xaml_DataGrid_GridDateColumn_AllowNull) property:
 
@@ -984,12 +984,11 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
                        AutoGenerateColumns="False"
                        AllowEditing="True" >
     <dataGrid:SfDataGrid.Columns>
-        <dataGrid:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
-        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
-        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
-        <dataGrid:GridTextColumn MappingName="Country" />
+        <dataGrid:GridTextColumn MappingName="Customer ID" HeaderText="Customer ID" />
+        <dataGrid:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" />
+        <dataGrid:GridDateColumn MappingName="Order Date" HeaderText="Order Date" />
+        <dataGrid:GridTimeColumn MappingName="Order Time" HeaderText="Order Date" ShowClearButton="True"/>
         <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-        <dataGrid:GridDateColumn MappingName="Date" HeaderDate="Order Date" ShowClearButton="True"/>
     </dataGrid:SfDataGrid.Columns>
 </dataGrid:SfDataGrid>
 {% endhighlight %}
