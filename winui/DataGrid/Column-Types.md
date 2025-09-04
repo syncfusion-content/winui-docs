@@ -838,7 +838,7 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
 
  - When `AllowNull` is `True`, clicking the clear button sets the cell value to null.
 
- - When `AllowNull` is `False`, clicking the clear button sets the cell value to the column's [MinValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_MinValue) of the column.
+ - When `AllowNull` is `False`, clicking the clear button sets the cell value to the column's [MinValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_MinValue).
 
 {% tabs %}
 {% highlight xaml %}
