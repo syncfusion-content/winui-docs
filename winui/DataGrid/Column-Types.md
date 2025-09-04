@@ -827,11 +827,18 @@ You can restrict the users to enter input within a minimum and maximum range in 
 {% endhighlight %}
 {% endtabs %}
 
-### Clear Icon support
+### Clear Button support
 
-`GridNumericColumn` provides support for clearing the cell value during editing when the `ShowClearButton` property is enabled. When `ShowClearButton` is set to `True`, a clear icon is displayed in the cell editor, enabling users to remove the cell’s value during editing. 
+The `GridNumericColumn` provides a clear button feature that enables users to reset cell values during editing using the `ShowClearButton` property.
+When `ShowClearButton` is set to `True`, a clear button is displayed in the cell editor, enabling users to clear the cell’s value during editing.
 
-When [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_AllowNull) is set to `True`,  clicking the `ShowClearButton` will clear the cell and display a null value. Conversely, when `AllowNull` is set to `False`, clicking the `ShowClearButton` displays the [MinValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_MinValue) of the column.
+### AllowNull Behavior
+
+The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_AllowNull) property:
+
+ - When `AllowNull` is `True`, clicking the clear button sets the cell value to null.
+
+ - When `AllowNull` is `False`, clicking the clear button sets the cell value to the column's [MinValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_MinValue) of the column.
 
 {% tabs %}
 {% highlight xaml %}
@@ -850,7 +857,7 @@ When [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGri
 {% endhighlight %}
 {% endtabs %}
 
-<img src="winui\DataGrid\Column-Types_images\winui-datagrid-numericolumn-showclearbutton.png" alt="WinUI DataGrid Column with NumericColumn" width="100%" Height="Auto"/>
+<img src="winui\DataGrid\Column-Types_images\winui-datagrid-numericolumn-showclearbutton.png" alt="WinUI DataGrid NumericColumn with Clear Button" width="100%" Height="Auto"/>
 
 ### UpDown button placement
 
@@ -957,11 +964,18 @@ The `PlaceholderText` does not shown, when the `AllowNull` is `false`.
 
 You can restrict and display the input value within the range using [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html#Syncfusion_UI_Xaml_DataGrid_GridDateColumn_MinDate) and [MaxDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html#Syncfusion_UI_Xaml_DataGrid_GridDateColumn_MaxDate) properties.
 
-### Clear Icon support
+### Clear Button support
 
-`GridDateColumn` provides support for clearing the cell value during editing when the `ShowClearButton` property is enabled. When `ShowClearButton` is set to `True`, a clear icon is displayed in the cell editor, enabling users to remove the cell’s value during editing. 
+The `GridDateColumn` provides a clear button feature that enables users to reset cell values during editing using the`ShowClearButton` property.
+When `ShowClearButton` is set to `True`, a clear button appears within the editor, providing users with a convenient way to clear the cell's value.
 
-When [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html#Syncfusion_UI_Xaml_DataGrid_GridDateColumn_AllowNull) is set to `True`,  clicking the `ShowClearButton` will clear the cell and display a null value. Conversely, when `AllowNull` is set to `False`, clicking the `ShowClearButton` displays the [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html#Syncfusion_UI_Xaml_DataGrid_GridDateColumn_MinDate) of the column.
+### AllowNull Behaviour
+
+The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html#Syncfusion_UI_Xaml_DataGrid_GridDateColumn_AllowNull) property:
+
+- When `AllowNull` is `True`, clicking the clear button sets the cell value to `null`.
+
+- When `AllowNull` is `False`, clicking the clear button sets the cell value to the column's [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html#Syncfusion_UI_Xaml_DataGrid_GridDateColumn_MinDate).
 
 {% tabs %}
 {% highlight xaml %}
@@ -975,13 +989,13 @@ When [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGri
         <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
         <dataGrid:GridTextColumn MappingName="Country" />
         <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
-        <dataGrid:GridDateColumn MappingName="Date" HeaderDate="Order Date" ShowClearButton="True" />
+        <dataGrid:GridDateColumn MappingName="Date" HeaderDate="Order Date" ShowClearButton="True"/>
     </dataGrid:SfDataGrid.Columns>
 </dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
-<img src="winui\DataGrid\Column-Types_images\winui-datagrid-numericolumn-showclearbutton.png" alt="WinUI DataGrid Column with NumericColumn" width="100%" Height="Auto"/>
+<img src="winui\DataGrid\Column-Types_images\winui-datagrid-DateColumn-ShowClearButton.png" alt="WinUI DataGrid DateColumn with Clear Button" width="100%" Height="Auto"/>
 
 
 ## GridCheckBoxColumn

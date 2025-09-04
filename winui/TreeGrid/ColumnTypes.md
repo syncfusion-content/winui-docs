@@ -844,7 +844,7 @@ When [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGri
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-NumericColumn-ShowClearButton.png" alt="WinUI TreeGrid Column with DateColumn" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-NumericColumn-ShowClearButton.png" alt="WinUI TreeGrid DateColumn with Clear Button" width="100%" Height="Auto"/>
 
 ### UpDown button placement
 
@@ -964,11 +964,16 @@ The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 
 You can restrict and display the input value within the range using the [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MinDate) and [MaxDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MaxDate) properties.
 
-### Clear Icon support
+### Clear Button support
 
-`TreeGridDateColumn` provides support for clearing the cell value during editing when the `ShowClearButton` property is enabled. When `ShowClearButton` is set to `True`, a clear icon is displayed in the cell editor, enabling users to remove the cell’s value during editing. 
+The `TreeGridDateColumn` provides a clear button feature that enables users to reset cell values during editing using the `ShowClearButton` property.
+When `ShowClearButton` is set to `True`, a clear button appears within the editor, providing users with a convenient way to clear the cell's value.
 
-When [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_AllowNull) is set to `True`,  clicking the `ShowClearButton` will clear the cell and display a null value. Conversely, when `AllowNull` is set to `False`, clicking the `ShowClearButton` displays the [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MinDate) of the column.
+### AllowNull Behavior
+The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_AllowNull) property:
+
+- When `AllowNull` is `True`, clicking the clear button sets the cell value to null.
+- When `AllowNull` is `False`, clicking the clear button sets the cell value to the column's [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MinDate).
 
 {% tabs %}
 {% highlight xaml %}
@@ -987,7 +992,7 @@ When [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGri
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-DateColumn-ShowClearButton.png" alt="WinUI TreeGrid Column with DateColumn" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-DateColumn-ShowClearButton.png" alt="WinUI TreeGrid DateColumn with Clear Button" width="100%" Height="Auto"/>
 
 ## TreeGridTimeColumn
 
