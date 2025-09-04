@@ -821,9 +821,11 @@ You can restrict the users to enter input within a minimum and maximum range in 
 {% endhighlight %}
 {% endtabs %}
 
-### Clear Button support
+### Clear Icon support
 
-`TreeGridNumericColumn` provides support for clearing the cell value during editing when the `ShowClearButton` property is enabled. When `ShowClearButton` is set to `True`, a clear icon is displayed in the cell editor, enabling users to remove the cell’s value during editing. You can set the `ShowClearButton` property to `True` or `False` based on your requirement.
+`TreeGridNumericColumn` provides support for clearing the cell value during editing when the `ShowClearButton` property is enabled. When `ShowClearButton` is set to `True`, a clear icon is displayed in the cell editor, enabling users to remove the cell’s value during editing.
+
+When [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_AllowNull) is set to `True`, the cell displays a null value when clicking the `ShowClearButton`, when `AllowNull` is set to `False`, the cell displays the [MinValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_MinValue) of the column.
 
 {% tabs %}
 {% highlight xaml %}
@@ -962,9 +964,11 @@ The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 
 You can restrict and display the input value within the range using the [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MinDate) and [MaxDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MaxDate) properties.
 
-### Clear Button support
+### Clear Icon support
 
-`TreeGridDateColumn` provides support for clearing the cell value during editing when the `ShowClearButton` property is enabled. When `ShowClearButton` is set to `True`, a clear icon is displayed in the cell editor, enabling users to remove the cell’s value during editing. You can set the `ShowClearButton` property to `True` or `False` based on your requirement.
+`TreeGridDateColumn` provides support for clearing the cell value during editing when the `ShowClearButton` property is enabled. When `ShowClearButton` is set to `True`, a clear icon is displayed in the cell editor, enabling users to remove the cell’s value during editing. 
+
+When [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_AllowNull) is set to `True`,  clicking the `ShowClearButton` will clear the cell and display a null value. Conversely, when `AllowNull` is set to `False`, clicking the `ShowClearButton` displays the [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MinDate) of the column.
 
 {% tabs %}
 {% highlight xaml %}
