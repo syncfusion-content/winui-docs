@@ -829,7 +829,7 @@ You can restrict the users to enter input within a minimum and maximum range in 
 
 ### Clear Button support
 
-`GridNumericColumn` provides support to show or hide clear icon in columns based on `ShowClearButton` property. You can enable or disable the `ShowClearButton` property based on your requirement.
+`GridNumericColumn` provides support for clearing the cell value during editing when the `ShowClearButton` property is enabled. When `ShowClearButton` is set to `True`, a clear icon is displayed in the cell editor, enabling users to remove the cell’s value during editing. You can set the `ShowClearButton` property to `True` or `False` based on your requirement.
 
 {% tabs %}
 {% highlight xaml %}
@@ -957,7 +957,7 @@ You can restrict and display the input value within the range using [MinDate](ht
 
 ### Clear Button support
 
-`GridDateColumn` provides support to show or hide clear icon in columns based on `ShowClearButton` property. You can enable or disable the `ShowClearButton` property based on your requirement.
+`GridDateColumn` provides support for clearing the cell value during editing when the `ShowClearButton` property is enabled. When `ShowClearButton` is set to `True`, a clear icon is displayed in the cell editor, enabling users to remove the cell’s value during editing. You can set the `ShowClearButton` property to `True` or `False` based on your requirement.
 
 {% tabs %}
 {% highlight xaml %}
