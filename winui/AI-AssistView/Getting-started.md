@@ -136,10 +136,6 @@ Create a simple chat collection as shown in the following code example in a new 
 {% endhighlight %}
 {% endtabs %}
 
-<<<<<<< HEAD
 ![WinUI AI AssistView control getting started](aiassistview_images/winui_aiassistview_gettingstarted.png)
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/Syncfusion-winui-ai-assistView-examples/tree/master/Samples/Getting-Started)
-=======
-![WinUI AI AssistView control getting started](aiassistview_images/winui_aiassistview_gettingstarted.png)
->>>>>>> 88aa19a81c5f749f95544010e3e9819b587593cd
+[View sample in GitHub](https://github.com/SyncfusionExamples/Syncfusion-winui-ai-assistView-examples/tree/master/Samples/Getting-Started)s
