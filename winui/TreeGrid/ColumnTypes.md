@@ -836,24 +836,26 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
 
 {% tabs %}
 {% highlight xaml %}
-<dataGrid:SfTreeGrid x:Name="dataGrid" 
-                       ItemsSource="{Binding Orders}"
-                       AutoGenerateColumns="False"
-                       AllowEditing="True" >
-    <dataGrid:SfTreeGrid.Columns>
-        <dataGrid:TreeGridTextColumn MappingName="First Name" HeaderText="First Name" />
-        <dataGrid:TreeGridTextColumn MappingName="Last Name" HeaderText="Last Name" />
-         <dataGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
-        <dataGrid:TreeGridNumericColumn MappingName="Employee ID" HeaderText="Employee ID" ShowClearButton="True" />
-        <dataGrid:TreeGridTextColumn MappingName="Salary" HeaderText="Salary" />
-        <dataGrid:TreeGridTextColumn MappingName="Reports To" HeaderText="Reports To" />
-         <dateGrid:TreeGridDateColumn MappingName="Joining Date" HeaderText="Joining Date"/>
-    </dataGrid:SfTreeGrid.Columns>
-</dataGrid:SfTreeGrid>
+<treeGrid:SfTreeGrid Name="sfTreeGrid"
+                        ChildPropertyName="ReportsTo"
+                        ParentPropertyName="ID"
+                        SelfRelationRootValue="-1"
+                        AutoExpandMode="AllNodesExpanded"
+                        ItemsSource="{Binding Employees}"
+                        AllowEditing="True">
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" ShowClearButton="True"/>
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Salary" MappingName="Salary" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Reports To" MappingName="ReportsTo" />
+        <treeGrid:TreeGridDateColumn HeaderText="Joining Date" MappingName="JoiningDate" Width="150"/>
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-NumericColumn-ShowClearButton.png" alt="WinUI TreeGrid DateColumn with Clear Button" width="100%" Height="Auto"/>
+<img src="Column-Type-images\winui-treegrid-NumericColumn-ShowClearButton.png" alt="WinUI TreeGrid NumericColumn with Clear Button" width="100%" Height="Auto"/>
 
 ### UpDown button placement
 
@@ -987,19 +989,22 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
 {% tabs %}
 {% highlight xaml %}
 <dataGrid:SfTreeGrid x:Name="dataGrid" 
-                       ItemsSource="{Binding Orders}"
-                       AutoGenerateColumns="False"
-                       AllowEditing="True" >
-    <dataGrid:SfTreeGrid.Columns>
-        <dataGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
-        <dataGrid:TreeGridTextColumn MappingName="Last Name" HeaderText="Last Name" />
-        <dataGrid:TreeGridTextColumn MappingName="Title" HeaderText="Title" />
-        <dataGrid:TreeGridNumericColumn MappingName="Employee ID" HeaderText="EmployeeID" />
-        <dataGrid:TreeGridTextColumn MappingName="Salary" HeaderText="Salary"/>
-        <dataGrid:TreeGridTextColumn MappingName="Reports To" HeaderText="Reports To" />
-        <dateGrid:TreeGridDateColumn MappingName="Joining Date" HeaderText="Joining Date" ShowClearButton="True" />
-    </dataGrid:SfTreeGrid.Columns>
-</dataGrid:SfTreeGrid>
+<treeGrid:SfTreeGrid Name="sfTreeGrid"
+                        ChildPropertyName="ReportsTo"
+                        ParentPropertyName="ID"
+                        SelfRelationRootValue="-1"
+                        AutoExpandMode="AllNodesExpanded"
+                        ItemsSource="{Binding Employees}"
+                        AllowEditing="True">
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID"/>
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Salary" MappingName="Salary" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Reports To" MappingName="ReportsTo" />
+        <treeGrid:TreeGridDateColumn HeaderText="Joining Date" MappingName="JoiningDate" Width="150" ShowClearButton="True"/>
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
 
