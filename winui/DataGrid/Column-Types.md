@@ -987,7 +987,7 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
         <dataGrid:GridTextColumn MappingName="Customer ID" HeaderText="Customer ID" />
         <dataGrid:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" />
         <dataGrid:GridDateColumn MappingName="Order Date" HeaderText="Order Date" />
-        <dataGrid:GridTimeColumn MappingName="Order Time" HeaderText="Order Date" ShowClearButton="True"/>
+        <dataGrid:GridTimeColumn MappingName="Order Time" HeaderText="Order Time" ShowClearButton="True"/>
         <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
     </dataGrid:SfDataGrid.Columns>
 </dataGrid:SfDataGrid>
