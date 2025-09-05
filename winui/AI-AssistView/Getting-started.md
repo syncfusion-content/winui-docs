@@ -138,4 +138,4 @@ Create a simple chat collection as shown in the following code example in a new 
 
 ![WinUI AI AssistView control getting started](aiassistview_images/winui_aiassistview_gettingstarted.png)
 
-[View sample in GitHub](https://github.com/SyncfusionExamples/Syncfusion-winui-ai-assistView-examples/tree/master/Samples/Getting-Started)s
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/Syncfusion-winui-ai-assistView-examples/tree/master/Samples/Getting-Started)
