@@ -857,7 +857,7 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
 {% endhighlight %}
 {% endtabs %}
 
-<img src="winui\DataGrid\Column-Types_images\winui-datagrid-numericolumn-showclearbutton.png" alt="WinUI DataGrid NumericColumn with Clear Button" width="100%" Height="Auto"/>
+<img src="Column-Types_images\winui-datagrid-NumericColumn-ShowClearButton.png" alt="WinUI DataGrid NumericColumn with Clear Button" width="100%" Height="Auto"/>
 
 ### UpDown button placement
 
@@ -986,15 +986,15 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
     <dataGrid:SfDataGrid.Columns>
         <dataGrid:GridTextColumn MappingName="Customer ID" HeaderText="Customer ID" />
         <dataGrid:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" />
-        <dataGrid:GridDateColumn MappingName="Order Date" HeaderText="Order Date" />
-        <dataGrid:GridTimeColumn MappingName="Order Time" HeaderText="Order Time" ShowClearButton="True"/>
+        <dataGrid:GridDateColumn MappingName="Order Date" HeaderText="Order Date" ShowClearButton="True" />
+        <dataGrid:GridTimeColumn MappingName="Order Time" HeaderText="Order Time" />
         <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
     </dataGrid:SfDataGrid.Columns>
 </dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
-<img src="winui\DataGrid\Column-Types_images\winui-datagrid-DateColumn-ShowClearButton.png" alt="WinUI DataGrid DateColumn with Clear Button" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-DateColumn-ShowClearButton.png" alt="WinUI DataGrid DateColumn with Clear Button" width="100%" Height="Auto"/>
 
 
 ## GridCheckBoxColumn
