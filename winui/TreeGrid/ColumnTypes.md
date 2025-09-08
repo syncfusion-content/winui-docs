@@ -821,6 +821,42 @@ You can restrict the users to enter input within a minimum and maximum range in 
 {% endhighlight %}
 {% endtabs %}
 
+### Clear Button support
+
+The `TreeGridNumericColumn` provides a clear button feature that enables users to reset cell values during editing using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_ShowClearButton) property.
+When `ShowClearButton` is set to `True`, a clear button appears within the editor, providing users with a convenient way to clear the cell's value.
+
+#### AllowNull Behavior
+
+The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_AllowNull) property:
+
+ - When `AllowNull` is to `True`, clicking the clear button sets the cell value to `null`.
+ - When `AllowNull` is to `False`, clicking the clear button sets the cell value to the column's
+  [MinValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_MinValue).
+
+{% tabs %}
+{% highlight xaml %}
+<treeGrid:SfTreeGrid Name="sfTreeGrid"
+                        ChildPropertyName="ReportsTo"
+                        ParentPropertyName="ID"
+                        SelfRelationRootValue="-1"
+                        AutoExpandMode="AllNodesExpanded"
+                        ItemsSource="{Binding Employees}"
+                        AllowEditing="True">
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" ShowClearButton="True"/>
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Salary" MappingName="Salary" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Reports To" MappingName="ReportsTo" />
+        <treeGrid:TreeGridDateColumn HeaderText="Joining Date" MappingName="JoiningDate" Width="150"/>
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% endtabs %}
+
+<img src="Column-Type-images\winui-treegrid-NumericColumn-ShowClearButton.png" alt="WinUI TreeGrid NumericColumn with Clear Button" width="100%" Height="Auto"/>
+
 ### UpDown button placement
 
 You can increase or decrease the value of the `TreeGridNumericColumn` using the up-down button. By default, the value of [UpDownPlacementMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_UpDownPlacementMode) property is [Hidden](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.NumberBoxUpDownPlacementMode.html#Syncfusion_UI_Xaml_Editors_NumberBoxUpDownPlacementMode_Hidden). You can change the up-down button position by assigning the value `UpDownPlacementMode` property as [Inline](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.NumberBoxUpDownPlacementMode.html#Syncfusion_UI_Xaml_Editors_NumberBoxUpDownPlacementMode_Inline) or [Compact](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.NumberBoxUpDownPlacementMode.html#Syncfusion_UI_Xaml_Editors_NumberBoxUpDownPlacementMode_Compact).
@@ -938,6 +974,41 @@ The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 ### Setting date value range
 
 You can restrict and display the input value within the range using the [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MinDate) and [MaxDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MaxDate) properties.
+
+### Clear Button support
+
+The `TreeGridDateColumn` provides a clear button feature that enables users to reset cell values during editing using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_ShowClearButton) property.
+When `ShowClearButton` is set to `True`, a clear button appears within the editor, providing users with a convenient way to clear the cell's value.
+
+#### AllowNull Behavior
+The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_AllowNull) property:
+
+- When `AllowNull` is `True`, clicking the clear button sets the cell value to null.
+- When `AllowNull` is `False`, clicking the clear button sets the cell value to the column's [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MinDate).
+
+{% tabs %}
+{% highlight xaml %}
+<dataGrid:SfTreeGrid x:Name="dataGrid" 
+<treeGrid:SfTreeGrid Name="sfTreeGrid"
+                        ChildPropertyName="ReportsTo"
+                        ParentPropertyName="ID"
+                        SelfRelationRootValue="-1"
+                        AutoExpandMode="AllNodesExpanded"
+                        ItemsSource="{Binding Employees}"
+                        AllowEditing="True">
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID"/>
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
+        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Salary" MappingName="Salary" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Reports To" MappingName="ReportsTo" />
+        <treeGrid:TreeGridDateColumn HeaderText="Joining Date" MappingName="JoiningDate" Width="150" ShowClearButton="True"/>
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% endtabs %}
+
+<img src="Column-Type-images/winui-treegrid-DateColumn-ShowClearButton.png" alt="WinUI TreeGrid DateColumn with Clear Button" width="100%" Height="Auto"/>
 
 ## TreeGridTimeColumn
 
