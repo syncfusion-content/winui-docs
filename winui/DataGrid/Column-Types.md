@@ -832,7 +832,7 @@ You can restrict the users to enter input within a minimum and maximum range in 
 The `GridNumericColumn` provides a clear button feature that enables users to reset cell values during editing using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_ShowClearButton) property.
 When `ShowClearButton` is set to `True`, a clear button is displayed in the cell editor, enabling users to clear the cell’s value during editing.
 
-#### AllowNull Behavior
+**AllowNull Behavior**
 
 The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_AllowNull) property:
 
@@ -969,7 +969,7 @@ You can restrict and display the input value within the range using [MinDate](ht
 The `GridDateColumn` provides a clear button feature that enables users to reset cell values during editing using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html#Syncfusion_UI_Xaml_DataGrid_GridDateColumn_ShowClearButton) property.
 When `ShowClearButton` is set to `True`, a clear button appears within the editor, providing users with a convenient way to clear the cell's value.
 
-#### AllowNull Behavior
+**AllowNull Behavior**
 
 The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html#Syncfusion_UI_Xaml_DataGrid_GridDateColumn_AllowNull) property:
 
