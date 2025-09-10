@@ -847,11 +847,12 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
                        AutoGenerateColumns="False"
                        AllowEditing="True" >
     <dataGrid:SfDataGrid.Columns>
-        <dataGrid:GridNumericColumn MappingName="Order ID" HeaderText="Order ID" ShowClearButton="True" />
+        <dataGrid:GridNumericColumn MappingName="OrderID" HeaderText="Order ID" ShowClearButton="True" />
         <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <dataGrid:GridDateColumn MappingName="OrderDate" HeaderText="Order Date" ShowClearButton="True" />
         <dataGrid:GridTextColumn MappingName="Country" HeaderText="Country" />
-        <dataGrid:GridTextColumn MappingName="Customer ID" HeaderText="Customer ID" />
-        <dataGrid:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" />    
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City"/>  
     </dataGrid:SfDataGrid.Columns>
 </dataGrid:SfDataGrid>
 {% endhighlight %}
@@ -984,11 +985,12 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
                        AutoGenerateColumns="False"
                        AllowEditing="True" >
     <dataGrid:SfDataGrid.Columns>
-        <dataGrid:GridTextColumn MappingName="Customer ID" HeaderText="Customer ID" />
-        <dataGrid:GridNumericColumn MappingName="Quantity" HeaderText="Quantity" />
-        <dataGrid:GridDateColumn MappingName="Order Date" HeaderText="Order Date" ShowClearButton="True" />
-        <dataGrid:GridTimeColumn MappingName="Order Time" HeaderText="Order Time" />
-        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+        <dataGrid:GridNumericColumn MappingName="OrderID" HeaderText="Order ID" ShowClearButton="True" />
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <dataGrid:GridDateColumn MappingName="OrderDate" HeaderText="Order Date" ShowClearButton="True" />
+        <dataGrid:GridTextColumn MappingName="Country" HeaderText="Country" />
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City"/>
     </dataGrid:SfDataGrid.Columns>
 </dataGrid:SfDataGrid>
 {% endhighlight %}
