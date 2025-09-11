@@ -989,7 +989,6 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
 
 {% tabs %}
 {% highlight xaml %}
-<dataGrid:SfTreeGrid x:Name="dataGrid" 
 <treeGrid:SfTreeGrid Name="sfTreeGrid"
                         ChildPropertyName="ReportsTo"
                         ParentPropertyName="ID"
