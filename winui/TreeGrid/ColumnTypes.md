@@ -988,8 +988,7 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
 - When `AllowNull` is `False`, clicking the clear button sets the cell value to the column's [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MinDate).
 
 {% tabs %}
-{% highlight xaml %}
-<dataGrid:SfTreeGrid x:Name="dataGrid" 
+{% highlight xaml %} 
 <treeGrid:SfTreeGrid Name="sfTreeGrid"
                         ChildPropertyName="ReportsTo"
                         ParentPropertyName="ID"
