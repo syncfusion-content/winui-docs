@@ -133,6 +133,7 @@ public class ViewModel
         {
             Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
         };
+
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
@@ -146,6 +147,7 @@ public class ViewModel
         {
             Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
         };
+
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
@@ -159,6 +161,7 @@ public class ViewModel
         {
             Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle3.png"))
         };
+
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
@@ -172,6 +175,7 @@ public class ViewModel
         {
             Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
         };
+
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
@@ -185,8 +189,8 @@ public class ViewModel
         {
             Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle5.png"))
         };
-        taskDetails.Add(taskDetail);
 
+        taskDetails.Add(taskDetail);
         return taskDetails;
     }
 }
@@ -281,30 +285,35 @@ public class ViewModel
         taskDetail.Title = "UWP Issue";
         taskDetail.Description = "Crosshair label template not visible in UWP";
         taskDetail.Status = "Open";
+
         taskDetails.Add(taskDetail);
 
         taskDetail = new TaskDetails();
         taskDetail.Title = "WinUI Issue";
         taskDetail.Description = "AxisLabel cropped when rotating the axis label";
         taskDetail.Status = "Open";
+
         taskDetails.Add(taskDetail);
 
         taskDetail = new TaskDetails();
         taskDetail.Title = "Kanban Feature";
         taskDetail.Description = "Provide drag and drop support";
         taskDetail.Status = "In Progress";
+
         taskDetails.Add(taskDetail);
 
         taskDetail = new TaskDetails();
         taskDetail.Title = "New Feature";
         taskDetail.Description = "ragging events support for Kanban";
         taskDetail.Status = "In Progress";
+
         taskDetails.Add(taskDetail);
 
         taskDetail = new TaskDetails();
         taskDetail.Title = "WF Issue";
         taskDetail.Description = "HorizontalAlignment for tooltip is not working";
         taskDetail.Status = "Done";
+
         taskDetails.Add(taskDetail);
 
         return taskDetails;
