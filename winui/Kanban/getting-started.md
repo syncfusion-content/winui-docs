@@ -131,7 +131,7 @@ public class ViewModel
         taskDetail.Tags = new List<string>() { "Bug Fixing" };
         taskDetail.Image = new Image
         {
-            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle1.png"))
         };
 
         taskDetails.Add(taskDetail);
