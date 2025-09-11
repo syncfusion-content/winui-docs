@@ -826,7 +826,7 @@ You can restrict the users to enter input within a minimum and maximum range in 
 The `TreeGridNumericColumn` provides a clear button feature that enables users to reset cell values during editing using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_ShowClearButton) property.
 When `ShowClearButton` is set to `True`, a clear button appears within the editor, providing users with a convenient way to clear the cell's value.
 
-#### AllowNull Behavior
+**AllowNull Behavior**
 
 The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_AllowNull) property:
 
@@ -980,7 +980,8 @@ You can restrict and display the input value within the range using the [MinDate
 The `TreeGridDateColumn` provides a clear button feature that enables users to reset cell values during editing using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_ShowClearButton) property.
 When `ShowClearButton` is set to `True`, a clear button appears within the editor, providing users with a convenient way to clear the cell's value.
 
-#### AllowNull Behavior
+**AllowNull Behavior**
+
 The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_AllowNull) property:
 
 - When `AllowNull` is `True`, clicking the clear button sets the cell value to null.
