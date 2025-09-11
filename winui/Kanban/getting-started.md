@@ -271,7 +271,6 @@ public class TaskDetails
 public class ViewModel
 {
     public ObservableCollection<TaskDetails> TaskDetails { get; set; }
-
     public ViewModel()
     {
         this.TaskDetails = this.GetTaskDetails();
@@ -325,7 +324,7 @@ public class ViewModel
 
 N> 
 * When manually defining columns, ensure the [AutoGenerateColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) is set to `false`.
-* When using a custom data model, the default card UI is not applicable. You must define a custom DataTemplate using the CardTemplate property to render the card content appropriately.
+* When using a custom data model, the default card UI is not applicable. You must define a custom `DataTemplate` using the [CardTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplate) property to render the card content appropriately.
 
 ## Theme
 
