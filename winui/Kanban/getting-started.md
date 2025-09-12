@@ -120,7 +120,6 @@ public class ViewModel
     private ObservableCollection<KanbanModel> GetTaskDetails()
     {
         var taskDetails = new ObservableCollection<KanbanModel>();
-        string path = @"ms-appx:///";
 
         KanbanModel taskDetail = new KanbanModel();
         taskDetail.Title = "UWP Issue";
@@ -129,11 +128,6 @@ public class ViewModel
         taskDetail.Category = "Open";
         taskDetail.IndicatorColorKey = "High";
         taskDetail.Tags = new List<string>() { "Bug Fixing" };
-        taskDetail.Image = new Image
-        {
-            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle1.png"))
-        };
-
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
@@ -143,11 +137,6 @@ public class ViewModel
         taskDetail.Category = "Open";
         taskDetail.IndicatorColorKey = "Low";
         taskDetail.Tags = new List<string>() { "Bug Fixing" };
-        taskDetail.Image = new Image
-        {
-            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
-        };
-
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
@@ -157,11 +146,6 @@ public class ViewModel
         taskDetail.Category = "In Progress";
         taskDetail.IndicatorColorKey = "Low";
         taskDetail.Tags = new List<string>() { "New control" };
-        taskDetail.Image = new Image
-        {
-            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle3.png"))
-        };
-
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
@@ -171,11 +155,6 @@ public class ViewModel
         taskDetail.Category = "In Progress";
         taskDetail.IndicatorColorKey = "Normal";
         taskDetail.Tags = new List<string>() { "New Control" };
-        taskDetail.Image = new Image
-        {
-            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
-        };
-
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
@@ -185,18 +164,16 @@ public class ViewModel
         taskDetail.Category = "Done";
         taskDetail.IndicatorColorKey = "High";
         taskDetail.Tags = new List<string>() { "Bug fixing" };
-        taskDetail.Image = new Image
-        {
-            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle5.png"))
-        };
-
         taskDetails.Add(taskDetail);
+
         return taskDetails;
     }
 }
 
 {% endhighlight %}
 {% endtabs %}
+
+![defining-columns-using-default-model-in-winui-kanban](images/getting-started/defining-columns-using-default-model-in-winui-kanban.png)
 
 ### Creating the custom model tasks with data mapping
 
@@ -218,7 +195,7 @@ Alternatively, you can manually define columns by setting [`AutoGenerateColumns`
 Let’s look at the practical code example:
 
 {% tabs %}
-{% highlight XAML hl_lines="2 3 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27" %}
+{% highlight XAML hl_lines="2 3 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26" %}
 
 <kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}"
@@ -228,23 +205,22 @@ Let’s look at the practical code example:
     </kanban:SfKanban.DataContext>
     <kanban:SfKanban.CardTemplate>
         <DataTemplate>
-            <StackPanel Width="250"
-                        Orientation="Vertical"
-                        Background="Gray"
-                        Padding="10,10,10,10">
-                <StackPanel  Orientation="Horizontal">
+            <Border BorderBrush="Black"
+                    BorderThickness="1"
+                    CornerRadius="3"
+                    Background="#F3CFCE">
+                <StackPanel Margin="10">
                     <TextBlock Text="{Binding Title}"
-                               Foreground="Silver"
-                               HorizontalAlignment="Stretch" />
+                               TextAlignment="Center"
+                               FontWeight="Bold"
+                               FontSize="14" />
+                    <TextBlock Text="{Binding Description}"
+                               TextAlignment="Center"
+                               FontSize="12"
+                               TextWrapping="Wrap"
+                               Margin="5" />
                 </StackPanel>
-                <StackPanel  Orientation="Horizontal">
-                    <TextBox Text="{Binding Description}"
-                             Width="150"
-                             FontSize="14"
-                             Foreground="Silver"
-                             TextWrapping="Wrap" />
-                </StackPanel>
-            </StackPanel>
+            </Border>
         </DataTemplate>
     </kanban:SfKanban.CardTemplate>
 </kanban:SfKanban>
@@ -321,6 +297,8 @@ public class ViewModel
 
 {% endhighlight %}
 {% endtabs %}
+
+![defining-columns-using-custom-model-in-winui-kanban](images/getting-started/defining-columns-using-custom-model-in-winui-kanban.png)
 
 N> 
 * When manually defining columns, ensure the [AutoGenerateColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) is set to `false`.
