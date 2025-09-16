@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection in WinUI Chart Control | Syncfusion
+title: Selection in WinUI Circular Chart Control | Syncfusion
 description: This section explains how to configure selection support and its features in the WinUI Chart (SfCircularChart).
 platform: WinUI
 control: SfCircularChart
