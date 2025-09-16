@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance in WinUI Chart Control | Syncfusion
+title: Appearance in WinUI Cartesian Chart Control | Syncfusion
 description: This section explains how to apply palettes and gradients in the Syncfusion® WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart

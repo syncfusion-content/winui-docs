@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About WinUI Chart Control | Syncfusion
+title: About WinUI Cartesian Chart Control | Syncfusion
 description: Learn about the Syncfusion® WinUI Chart (SfCartesianChart) control, its key features, and more.
 platform: WinUI
 control: SfCartesianChart

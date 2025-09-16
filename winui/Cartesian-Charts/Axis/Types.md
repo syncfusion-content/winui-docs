@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis Types in WinUI Chart Control | Syncfusion
+title: Axis Types in WinUI Cartesian Chart Control | Syncfusion
 description: Learn all about axis types and their features in the Syncfusion® WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart

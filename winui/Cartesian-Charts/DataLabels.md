@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Label in WinUI Chart Control | Syncfusion
+title: Data Label in WinUI Cartesian Chart Control | Syncfusion
 description: This section explains how to configure the data labels and their features in the WinUI Chart (SfCartesianChart).
 platform: WinUI
 control: SfCartesianChart
