@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart area in WinUI Chart control | Syncfusion
-description: Learn here all about chart area and its customization in Syncfusion® WinUI Chart (SfCartesianChart) control.
+title: Chart Area in WinUI Chart Control | Syncfusion
+description: Learn about chart area and its customization in the Syncfusion® WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -10,11 +10,11 @@ keywords: chart area in winui chart, winui sfcartesianchart chart area, winui ch
 
 # Chart Area in WinUI Chart (SfCartesianChart)
 
-Chart area represents the entire chart and all its elements. It’s a virtual rectangular area that includes all the chart elements like title, axis, legends, series, etc.
+The chart area represents the entire chart and all its elements. It is a virtual rectangular area that includes all the chart elements like the title, axis, legends, series, etc.
 
 ## Customization
 
-Chart provides the properties like [PlotAreaBorderBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBorderBrush), [PlotAreaBorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBorderThickness) and [PlotAreaBackground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBackground) for customizing the plot area.
+The chart provides properties such as [PlotAreaBorderBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBorderBrush), [PlotAreaBorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBorderThickness), and [PlotAreaBackground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBackground) for customizing the plot area.
 
 {% tabs %}
 
