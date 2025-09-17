@@ -551,8 +551,6 @@ chart.YAxes.Add(secondaryAxis);
 
 Cartesian charts provide support for arranging multiple series within the same chart area with specified x-axis and y-axis. There are two properties, [XAxisName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_XAxisName) and [YAxisName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_YAxisName) present in all Cartesian series types, which are used to provide multiple axes support. These axes can be arranged in a stacking order or in a side-by-side pattern. By default, all series are plotted based on the 0th index axis of XAxes and YAxes.
 
-{% tabs %}
-
 By default, all the series are plotted based on the 0th index axis of XAxes and YAxes.
 
 {% tabs %}
