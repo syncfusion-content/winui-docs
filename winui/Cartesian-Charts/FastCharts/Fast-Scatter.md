@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fast Scatter Chart in WinUI Chart Control | Syncfusion
-description: Learn all about the Fast Scatter Chart of the Syncfusion® WinUI Chart (SfCartesianChart) control.
+description: Learn all about the Fast Scatter Series feature of the Syncfusion® WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
