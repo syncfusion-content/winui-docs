@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fast Step Line Chart in WinUI Chart Control | Syncfusion
-description: Learn all about the Fast Step Line Chart of the Syncfusion® WinUI Chart (SfCartesianChart) control.
+description: Learn all about the Fast Step Line Chart of the Syncfusion® WinUI Chart control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
