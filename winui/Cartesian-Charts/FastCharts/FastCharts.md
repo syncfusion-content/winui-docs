@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Fast Charts in WinUI Chart control | Syncfusion
-description: Learn here all about Fast Chart feature in Syncfusion® WinUI Chart (SfCartesianChart) control and how to configure easily with high performance charts.
+title: Fast Charts in WinUI Chart Control | Syncfusion
+description: Explore the Fast Chart features in the Syncfusion® WinUI Chart (SfCartesianChart) control and learn how to configure them for high-performance charting.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
-keywords: fast charts in winui, fast charts, winui fast charts customization, syncfusion winui fast charts, winui sfcartesianchart.
+keywords: fast charts in WinUI, fast charts, WinUI fast charts customization, Syncfusion WinUI fast charts, WinUI SfCartesianChart.
 ---
 
 # Fast Charts in WinUI (SfCartesianChart)
 
-Chart includes functionality for rendering the large number of data points with fast plotting and it supports 5 fast chart types. Each chart type is easily configurable with built-in support for creating high performance charts.
+The chart provides functionalities for rendering a large number of data points quickly with support for five fast chart types. Each chart type is easily configurable and offers built-in support for creating high-performance charts.
 
-* FastLine Series -  It is rendering by using a polyline segment.
-* Fast Bitmap Series - It is rendering by using `WriteableBitmap`.
+* FastLine Series - Renders data using a polyline segment.
+* Fast Bitmap Series - Utilizes `WriteableBitmap` for rendering.
