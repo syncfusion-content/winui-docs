@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Header for axis in WinUI Chart control | Syncfusion
-description: This section explains about chart axis header, header style, header template and its customization in WinUI chart (SfCartesianChart).
+title: Header for Axis in WinUI Chart Control | Syncfusion
+description: This section explains chart axis headers, header styles, header templates, and their customization in the WinUI Chart (SfCartesianChart).
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
-keywords: axis title in winui chart, winui sfcartesianchart axis title, winui chart axis title customization, syncfusion winui chart axis title, winui sfcartesianchart axis title configuration.
+keywords: axis title in WinUI chart, WinUI SfCartesianChart axis title, WinUI chart axis title customization, Syncfusion WinUI chart axis title, WinUI SfCartesianChart axis title configuration.
 ---
 
 # Axis Title in WinUI Chart (SfCartesianChart)
 
-The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_Header) property is used to set the title for the chart axis. It accepts any `UIElement` as content of axis title. 
+The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_Header) property is used to set the title for the chart axis. It accepts any `UIElement` as the content of the axis title. 
 
 {% tabs %}
 
@@ -44,7 +44,7 @@ chart.YAxes.Add(new NumericalAxis() { Header = "Values" });
 
 ## Style
 
-The [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_HeaderStyle) property is used to provide style for the axis header.
+The [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_HeaderStyle) property is used to provide a style for the axis header.
 
 {% tabs %}
 

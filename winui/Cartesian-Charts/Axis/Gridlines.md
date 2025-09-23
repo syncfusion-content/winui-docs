@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Axis grid lines in WinUI Chart control | Syncfusion
-description: Learn here all about the chart axis grid lines and its customization in Syncfusion® WinUI Chart(SfCartesianChart).
+title: Axis Grid Lines in WinUI Chart Control | Syncfusion
+description: Learn all about the chart axis grid lines and their customization in Syncfusion® WinUI Chart (SfCartesianChart).
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
-keywords: grid lines in winui chart, winui sfcartesianchart grid lines, winui chart grid lines customization, syncfusion winui chart grid lines, winui sfcartesianchart grid lines settings.
+keywords: grid lines in WinUI chart, WinUI SfCartesianChart grid lines, WinUI chart grid lines customization, Syncfusion WinUI chart grid lines, WinUI SfCartesianChart grid lines settings.
 ---
 
 # Grid Lines in WinUI Chart (SfCartesianChart)
 
 ## Major Grid Lines
 
-By default, major gridlines are automatically added to the [ChartAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html) in its defined intervals. The visibility of the gridlines can be controlled using the [ShowMajorGridLines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowMajorGridLines) property. The default value of [ShowMajorGridLines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowMajorGridLines) is true. 
+By default, major gridlines are automatically added to the [ChartAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html) at defined intervals. The visibility of the gridlines can be controlled using the [ShowMajorGridLines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowMajorGridLines) property. The default value of [ShowMajorGridLines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowMajorGridLines) is true.
 
 {% tabs %}
 
@@ -100,7 +100,7 @@ chart.YAxes.Add(new NumericalAxis();
 
 ## Minor Grid Lines
 
-Minor gridlines will be added automatically when the minor tick lines is defined using the [MinorTicksPerInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_MinorTicksPerInterval) property of the chart axis.
+Minor gridlines are added automatically when minor tick lines are defined using the [MinorTicksPerInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_MinorTicksPerInterval) property of the chart axis.
 
 {% tabs %}
 

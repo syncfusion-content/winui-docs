@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scatter Chart in WinUI Chart control | Syncfusion
-description: Learn here all about the scatter chart and its features in Syncfusion® WinUI Chart (SfCartesianChart) control.
+title: Scatter Chart in WinUI Chart Control | Syncfusion
+description: Learn about the scatter chart and its features in the Syncfusion® WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -10,11 +10,11 @@ keywords: winui scatter chart, winui sfcartesianchart, winui scatter chart custo
 
 # Scatter Chart in WinUI Charts (SfCartesianChart)
 
-The [WinUI Scatter Chart](https://www.syncfusion.com/winui-controls/charts/winui-scatter-chart) is similar to bubble chart, where each data point being represented by a circle with equal size.
+The [WinUI Scatter Chart](https://www.syncfusion.com/winui-controls/charts/winui-scatter-chart) is similar to a bubble chart, where each data point is represented by a circle of equal size.
 
 ## Scatter Chart
 
-To render a scatter chart, create an instance of the [ScatterSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ScatterSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html). The segment size can be defined by using the [PointHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ScatterSeries.html#Syncfusion_UI_Xaml_Charts_ScatterSeries_PointHeight) and [PointWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ScatterSeries.html#Syncfusion_UI_Xaml_Charts_ScatterSeries_PointWidth) properties.
+To render a scatter chart, create an instance of the [ScatterSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ScatterSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html). The segment size can be defined using the [PointHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ScatterSeries.html#Syncfusion_UI_Xaml_Charts_ScatterSeries_PointHeight) and [PointWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ScatterSeries.html#Syncfusion_UI_Xaml_Charts_ScatterSeries_PointWidth) properties.
 
 {% tabs %}
 
@@ -68,4 +68,4 @@ this.Content = chart;
 
 ![Scatter chart type in WinUI Chart](Chart-types_images/WinUI_scatter_chart.png)
 
-N> You can also explore our [WinUI Scatter Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/Scatter) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can also explore our [WinUI Scatter Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/Scatter) that shows how to configure it easily with built-in support for creating stunning visual effects.
