@@ -24,7 +24,26 @@ The application language can be changed by setting the desired language to the `
     {
         public MainWindow()
         {
-            Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = "de";
+            Microsoft.Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = "de"; // Works for the both and unpack deployments. 
+            this.InitializeComponent();            
+        }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+You can use the below code for packaged deployments. But in unpackaged deployments, it may cause the app to crash.
+
+{% tabs %}
+
+{% highlight c# %}
+
+    public sealed partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = "de"; // This code works for packaged deployments, but in unpackaged deployments, it may cause the app to crash.
             this.InitializeComponent();
         }
     }
@@ -32,6 +51,8 @@ The application language can be changed by setting the desired language to the `
 {% endhighlight %}
 
 {% endtabs %}
+
+N> We recommend setting the above code before the `InitializeComponent` method if you have added a .resw file to your project. Otherwise, it may cause the project to crash.
 
 The following screenshot illustrates how the localization is applied to the datagrid based on the defined language to the `ApplicationLanguages.PrimaryLanguageOverride` property.
 
