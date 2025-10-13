@@ -14,7 +14,7 @@ Localization is the process of making an application multilingual by formatting 
 
 ## Changing application language
 
-The application language can be changed by setting the desired language to respective control name with the `ResourceContext.QualifierValues["Language"]` property in the constructor of the main window. Localization can be done while changing the application language by creating a .resw file.
+The application language can be changed by setting the desired language to the `ApplicationLanguages.PrimaryLanguageOverride` property in the constructor of the main window. Localization can be done while changing the application language by creating a .resw file.
 
 {% tabs %}
 
@@ -24,8 +24,7 @@ The application language can be changed by setting the desired language to respe
     {
         public MainWindow()
         {
-            {ControlLocalizationResouceAccessor}.Instance.ResourceContext.QualifierValues["Language"] = "{Language}";
-            // eg: EditorsLocalizationResourceAccessor.Instance.ResourceContext.QualifierValues["Language"] = "de";
+            Microsoft.Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = "de";
             this.InitializeComponent();
         }
     }
@@ -34,50 +33,9 @@ The application language can be changed by setting the desired language to respe
 
 {% endtabs %}
 
-**Control resource Accessor list**
-
-<table>
-    <tr>
-        <td><b>Controls</b></td>
-        <td><b>LocalizationName</b></td>
-    </tr>
-    <tr>
-        <td>Editors</td>
-        <td>EditorsLocalizationResourceAccessor</td>
-    </tr>
-    <tr>
-        <td>Ribbon</td>
-        <td>RibbonLocalizationResourceAccessor</td>
-    </tr>
-    <tr>
-        <td>DataGrid</td>
-        <td>GridLocalizationResourceAccessor</td>
-    </tr>
-    <tr>
-        <td>TreeView</td>
-        <td>TreeViewLocalizationResourceAccessor</td>
-    </tr>
-    <tr>
-        <td>Scheduler</td>
-        <td>SchedulerLocalizationResourceAccessor</td>
-    </tr>
-    <tr>
-        <td>TreeView</td>
-        <td>TreeViewLocalizationResourceAccessor</td>
-    </tr>
-    <tr>
-        <td>Kanban</td>
-        <td>KanbanLocalizationResourceAccessor</td>
-    </tr>
-    <tr>
-        <td>Chat</td>
-        <td>ChatLocalizationResourceAccessor</td>
-    </tr>
-</table>
-
 N> We recommend to set the above code before InitializeComponent method when you added the '.resw' file in your project. [If not, it leads to crash the project.]
 
-The following screenshot illustrates how the localization is applied to the datagrid based on the defined language to the `ResourceContext.QualifierValues["Language"]` property.
+The following screenshot illustrates how the localization is applied to the datagrid based on the defined language to the `ApplicationLanguages.PrimaryLanguageOverride` property.
 
 <img src="Localization-images/winui-datagrid-localization.png" alt="WinUI DataGrid Localization" width="100%" Height="Auto"/>
 
