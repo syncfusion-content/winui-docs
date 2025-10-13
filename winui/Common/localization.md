@@ -24,6 +24,7 @@ The application language can be changed by setting the desired language to the `
     {
         public MainWindow()
         {
+            Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = "de"; // This code will work for packaged type, but for unpackaged type it will not lead to a crash.
             Microsoft.Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = "de";
             this.InitializeComponent();
         }
@@ -33,7 +34,7 @@ The application language can be changed by setting the desired language to the `
 
 {% endtabs %}
 
-N> We recommend to set the above code before InitializeComponent method when you added the '.resw' file in your project. [If not, it leads to crash the project.]
+N> We recommend setting the above code before the `InitializeComponent` method if you have added a .resw file to your project. Otherwise, it may cause the project to crash.
 
 The following screenshot illustrates how the localization is applied to the datagrid based on the defined language to the `ApplicationLanguages.PrimaryLanguageOverride` property.
 
