@@ -24,9 +24,26 @@ The application language can be changed by setting the desired language to the `
     {
         public MainWindow()
         {
-            Microsoft.Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = "de"; // Works for the both pack and unpack type 
-                           or
-            Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = "de"; // This code works for packaged deployments, but in unpackaged deployments, it may cause the app to crash."
+            Microsoft.Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = "de"; // Works for the both and unpack deployments. 
+            this.InitializeComponent();            
+        }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+You can use the below code for packaged deployments. But in unpackaged deployments, it may cause the app to crash.
+
+{% tabs %}
+
+{% highlight c# %}
+
+    public sealed partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = "de"; // This code works for packaged deployments, but in unpackaged deployments, it may cause the app to crash.
             this.InitializeComponent();
         }
     }
