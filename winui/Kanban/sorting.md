@@ -7,7 +7,7 @@ control: SfKanban
 documentation: ug
 ---
 
-# Card Item Sorting in .NET MAUI Kanban(SfKanban)
+# Card Item Sorting in .NET WinUI Kanban (SfKanban)
 
 The Kanban control supports customizable card sorting within columns based on specific data fields such as `Priority`, `DueDate`, or `Status`. Sorting can be configured programmatically and updated dynamically at runtime using the following properties:
 
@@ -122,7 +122,7 @@ public class SortingViewModel
 }
 
 N> 
- * To apply sorting after a drop operation, handle the `DragEnd` event and explicitly call the `RefreshKanbanColumn` method. This ensures the column updates to reflect the new card order based on the defined sorting logic.
+ * To apply sorting after a drop operation, handle the `CardDrop` event and explicitly call the `RefreshKanbanColumn` method. This ensures the column updates to reflect the new card order based on the defined sorting logic.
  * When using a custom data model, the default card UI is not applicable. To render the card content, you must define a custom `DataTemplate` using the `CardTemplate` property.
 
 {% endhighlight %}
@@ -231,5 +231,5 @@ public class SortingViewModel
 {% endtabs %}
 
 N> 
- * The Index-based sorting can be achieved at the sample level after a drag-and-drop action. To implement this handle the `DragEnd` event, access the items in the target column using `e.TargetColumn.Items`, and update the numeric field used for sorting to maintain a continuous order. Finally, call `RefreshKanbanColumn` to update the UI with the new order.
+ * The Index-based sorting can be achieved at the sample level after a drag-and-drop action. To implement this handle the `CardDrop` event, access the items in the target column using `e.TargetColumn.Items`, and update the numeric field used for sorting to maintain a continuous order. Finally, call `RefreshKanbanColumn` method to update the UI with the new order.
  * To disable sorting logic, avoid assigning a value to the `SortingMappingPath` property. This ensures that card positions remain static and reflect the order of the `ItemsSource` collection, making it suitable for scenarios where sorting is not required or is managed externally.
