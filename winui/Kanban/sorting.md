@@ -32,7 +32,7 @@ To enable custom sorting behavior, a valid property name from the [ItemsSource](
 This example demonstrates how card positions are updated based on sorting configurations and property mappings.
 
 {% tabs %}
-{% highlight XAML hl_lines="3 5" %}
+{% highlight XAML hl_lines="2 3 5" %}
 
 <kanban:SfKanban x:Name="kanban" 
                  SortingMappingPath="Priority"
@@ -41,35 +41,68 @@ This example demonstrates how card positions are updated based on sorting config
                  ColumnMappingPath="Category">
     <kanban:SfKanban.CardTemplate>
         <DataTemplate>
-            <Border Background="#F3CFCE" BorderBrush="Black" BorderThickness="1" CornerRadius="8" Padding="8">
+            <Border Background="#F3CFCE"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    CornerRadius="8"
+                    Padding="8">
                 <Grid ColumnSpacing="8">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Orientation="Horizontal"
-                                Spacing="4" VerticalAlignment="Center" Height="20">
-                        <TextBlock Text="•" FontSize="14" FontWeight="Bold" Foreground="Orange"
-                                    VerticalAlignment="Center" HorizontalAlignment="Center" />
-                        <TextBlock Text="{Binding Priority}" FontSize="14" FontWeight="Bold" Foreground="Orange"
-                                    VerticalAlignment="Center" HorizontalAlignment="Left" Height="20" />
+                    <StackPanel Grid.Row="0"
+                                Grid.ColumnSpan="2"
+                                Orientation="Horizontal"
+                                Spacing="4"
+                                VerticalAlignment="Center"
+                                Height="20">
+                        <TextBlock Text="•"
+                                   FontSize="14"
+                                   FontWeight="Bold"
+                                   Foreground="Orange"
+                                   VerticalAlignment="Center"
+                                   HorizontalAlignment="Center" />
+                        <TextBlock Text="{Binding Priority}"
+                                   FontSize="14"
+                                   FontWeight="Bold"
+                                   Foreground="Orange"
+                                   VerticalAlignment="Center"
+                                   HorizontalAlignment="Left"
+                                   Height="20"/>
                     </StackPanel>
-                    <TextBlock Grid.Row="1" Grid.ColumnSpan="2" Text="{Binding Title}" FontWeight="Bold"
-                               FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" />
-                    <TextBlock  Grid.Row="2" Grid.ColumnSpan="2" Text="{Binding Description}" FontSize="12"
-                                TextWrapping="WrapWholeWords" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" />
+                    <TextBlock Grid.Row="1"
+                               Grid.ColumnSpan="2"
+                               Text="{Binding Title}"
+                               FontWeight="Bold"
+                               FontSize="14"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Margin="5"/>
+                    <TextBlock Grid.Row="2"
+                               Grid.ColumnSpan="2"
+                               Text="{Binding Description}"
+                               FontSize="12"
+                               TextWrapping="WrapWholeWords"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Margin="5"/>
                 </Grid>
             </Border>
         </DataTemplate>
     </kanban:SfKanban.CardTemplate>
-    <kanban:KanbanColumn HeaderText="Open" Categories="Open"/>
-    <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress"/>
-    <kanban:KanbanColumn HeaderText="Done" AllowDrag="False" Categories="Done"/>
+    <kanban:KanbanColumn HeaderText="Open"
+                         Categories="Open"/>
+    <kanban:KanbanColumn HeaderText="In Progress"
+                         Categories="In Progress"/>
+    <kanban:KanbanColumn HeaderText="Done"
+                         Categories="Done"
+                         AllowDrag="False"/>
     <kanban:SfKanban.DataContext>
         <local:SortingViewModel/>
     </kanban:SfKanban.DataContext>
@@ -121,12 +154,12 @@ public class SortingViewModel
     public ObservableCollection<CardDetails> Cards { get; set; }
 }
 
+{% endhighlight %}
+{% endtabs %}
+
 N> 
  * To apply sorting after a drop operation, handle the [CardDrop](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDrop) event and explicitly call the [RefreshKanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_RefreshKanbanColumn_System_String_) method. This ensures the column updates to reflect the new card order based on the defined sorting logic.
  * When using a custom data model, the default card UI is not applicable. To render the card content, you must define a custom `DataTemplate` using the [CardTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplate) property.
-
-{% endhighlight %}
-{% endtabs %}
 
 ### Index-Based Sorting
 
@@ -137,7 +170,7 @@ N> The [SortingMappingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 The following code example illustrates how cards numeric property updated using the index-based sorting approach.
 
 {% tabs %}
-{% highlight XAML hl_lines="2 3" %}
+{% highlight XAML hl_lines="2 3 5" %}
 
 <kanban:SfKanban x:Name="kanban" 
                  SortingMappingPath="Index"
@@ -146,35 +179,66 @@ The following code example illustrates how cards numeric property updated using 
                  ColumnMappingPath="Category">
     <kanban:SfKanban.CardTemplate>
         <DataTemplate>
-            <Border Background="#F3EADC" BorderBrush="Black" BorderThickness="1" CornerRadius="8" Padding="8">
+            <Border Background="#F3EADC"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    CornerRadius="8"
+                    Padding="8">
                 <Grid ColumnSpacing="8">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Orientation="Horizontal"
-                                VerticalAlignment="Center" HorizontalAlignment="Right" >
-                        <TextBlock Text="Rank #" FontSize="14" FontWeight="Bold" Foreground="#026B6E"
-                                   VerticalAlignment="Center" HorizontalAlignment="Center" />
-                        <TextBlock Text="{Binding Index}" FontSize="14" FontWeight="Bold" Foreground="#026B6E"
-                                   VerticalAlignment="Center" HorizontalAlignment="Center"  />
+                    <StackPanel Grid.Row="0"
+                                Grid.ColumnSpan="2"
+                                Orientation="Horizontal"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Right">
+                        <TextBlock Text="Rank #"
+                                   FontSize="14"
+                                   FontWeight="Bold"
+                                   Foreground="#026B6E"
+                                   VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"/>
+                        <TextBlock Text="{Binding Index}"
+                                   FontSize="14"
+                                   FontWeight="Bold"
+                                   Foreground="#026B6E"
+                                   VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"/>
                     </StackPanel>
-                    <TextBlock Grid.Row="1" Grid.ColumnSpan="2" Text="{Binding Title}" FontWeight="Bold"
-                               FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" />
-                    <TextBlock  Grid.Row="2" Grid.ColumnSpan="2" Text="{Binding Description}" FontSize="12"
-                                TextWrapping="WrapWholeWords" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" />
+                    <TextBlock Grid.Row="1"
+                               Grid.ColumnSpan="2"
+                               Text="{Binding Title}"
+                               FontWeight="Bold"
+                               FontSize="14"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Margin="5"/>
+                    <TextBlock Grid.Row="2"
+                               Grid.ColumnSpan="2"
+                               Text="{Binding Description}"
+                               FontSize="12"
+                               TextWrapping="WrapWholeWords"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Margin="5"/>
                 </Grid>
             </Border>
         </DataTemplate>
     </kanban:SfKanban.CardTemplate>
-    <kanban:KanbanColumn HeaderText="Open" Categories="Open"/>
-    <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress"/>
-    <kanban:KanbanColumn HeaderText="Done" AllowDrag="False" Categories="Done"/>
+    <kanban:KanbanColumn HeaderText="Open"
+                         Categories="Open"/>
+    <kanban:KanbanColumn HeaderText="In Progress"
+                         Categories="In Progress"/>
+    <kanban:KanbanColumn HeaderText="Done"
+                         Categories="Done"
+                         AllowDrag="False"/>
     <kanban:SfKanban.DataContext>
         <local:SortingViewModel/>
     </kanban:SfKanban.DataContext>
