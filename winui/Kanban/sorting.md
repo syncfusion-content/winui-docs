@@ -250,7 +250,7 @@ The following code example illustrates how cards numeric property updated using 
 </kanban:SfKanban>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# hl_lines="5 6 7 11 22 23" %}
 
 private KanbanCardItem selectedCard;
 private KanbanColumn? targetColumn;
@@ -274,6 +274,7 @@ private void OnCardDrop(object? sender, KanbanDragEndEventArgs e)
     }
 
     this.ApplySortingWithoutPositionChange(e);
+    this.kanban.RefreshKanbanColumn(e.TargetColumn.AllowedTransitionCategory.ToString());
 }
 
 private void ApplySortingWithoutPositionChange(KanbanCardDropEventArgs e)
