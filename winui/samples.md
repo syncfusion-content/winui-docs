@@ -51,7 +51,7 @@ All the sample browser projects are configured as single SDK-style projects that
 
 When you click the `Run Local Demos` or `Explore Demo Source` button, the  `net10.0-windows` entry will be automatically removed from the targets file if `.NET 10` is not installed on your machine, preventing any compilation errors. 
 
-To use the `.NET 10 framework`, install the required SDK and add `net10.0-windows` to the < TargetFrameworks > tag in the `MultiTargeting.targets` file located at the Samples Location:[D:\WinUI31.2.9\WinUI\31.2.9\SampleBrowser\targets\MultiTargeting.targets] as shown in the image below. 
+To use the `.NET 10 framework`, install the required SDK and add `net10.0-windows` to the `<TargetFrameworks>` tag in the `MultiTargeting.targets` file located at the Samples Location:[D:\WinUI31.2.9\WinUI\31.2.9\SampleBrowser\targets\MultiTargeting.targets] as shown in the image below. 
 
 ![WinUI TargetFrameworks](Guide-to-run-the-samples-images/TargetFrameworks_winui.png)
 
