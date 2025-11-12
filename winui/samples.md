@@ -57,7 +57,7 @@ To use the `.NET 10 framework`, install the required SDK and add `net10.0-window
 
 ## Online Sample
 
-* Download and install demos from [Microsoft Store](https://www.microsoft.com/en-in/p/syncfusion-winui-controls-gallery/9n0fp16ddc06?activetab=pivot:overviewtab).
+* Download and install demos from [Microsoft Store](https://apps.microsoft.com/detail/9n0fp16ddc06?hl=en-GB&gl=IN).
 
 
 ## Download demos from online (clone from github repository)
