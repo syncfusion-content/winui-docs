@@ -66,5 +66,5 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant is desi
 
 ## See also
 
-* Add the [SyncfusionWinUIAssistant MCP Server](https://help.syncfusion.com/winui/ai-coding-assistant/mcp-server) to an MCP-enabled client.
+* Add the **SyncfusionWinUIAssistant MCP Server** to an MCP-enabled client.
 * [Syncfusion<sup style="font-size:70%">&reg;</sup> WinUI Documentation](https://help.syncfusion.com/winui/overview).
