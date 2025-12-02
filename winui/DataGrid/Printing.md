@@ -14,18 +14,18 @@ To display the print preview window, you need to pass the `Window` instance as a
  
 {% tabs %}
 {% highlight c# %}
- public sealed partial class MainWindow : Window
- {
-     public MainWindow()
-     {
-         this.InitializeComponent();
+public sealed partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+        this.InitializeComponent();
 
-     }
-     private void Print_Click(object sender, RoutedEventArgs e)
-     {
-         sfDataGrid.Print(this);
-     }
- }
+    }
+    private void Print_Click(object sender, RoutedEventArgs e)
+    {
+        sfDataGrid.Print(this);
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
