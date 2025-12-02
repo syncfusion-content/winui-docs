@@ -14,6 +14,7 @@ To display the print preview window, you need to pass the `Window` instance as a
  
 {% tabs %}
 {% highlight c# %}
+
 public sealed partial class MainWindow : Window
 {
     public MainWindow()
@@ -26,6 +27,7 @@ public sealed partial class MainWindow : Window
         sfDataGrid.Print(this);
     }
 }
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -35,8 +37,10 @@ SfDataGrid provides various options to customize print preview settings using [S
 
 {% tabs %}
 {% highlight c# %}
+
 sfDataGrid.PrintSettings.CanRepeatHeaders = true;
 sfDataGrid.Print(window);
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -52,8 +56,10 @@ SfDataGrid provides support to scale rows or columns or both while printing to f
 
 {% tabs %}
 {% highlight c# %}
+
 sfDataGrid.PrintSettings.ScalingOption = PrintScalingOptions.FitAllColumnsOnOnePage;
 sfDataGrid.Print(window);
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -63,8 +69,10 @@ Column headers can be printed on each page by enabling [PrintSettings.CanRepeatH
 
 {% tabs %}
 {% highlight c# %}
+
 sfDataGrid.PrintSettings.CanRepeatHeaders = true;
 sfDataGrid.Print(window);
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -74,18 +82,23 @@ You can change the text direction in print page by using [PrintSettings.FlowDire
 
 {% tabs %}
 {% highlight c# %}
+
 sfDataGrid.PrintSettings.FlowDirection = FlowDirection.RightToLeft;
 sfDataGrid.Print(window);
+
 {% endhighlight %}
 {% endtabs %}
 
 ### Print with StackedHeaders
 
 SfDataGrid provides support to print the StackedHeaders by setting the [PrintSettings.CanPrintStackedHeaders](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_CanPrintStackedHeaders) as ‘true’.
+
 {% tabs %}
 {% highlight c# %}
+
 sfDataGrid.PrintSettings.CanPrintStackedHeaders = true;
 sfDataGrid.Print(window);
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -103,8 +116,10 @@ Orientation can also be changed in print dialog at runtime by selecting a option
 
 {% tabs %}
 {% highlight c# %}
+
 sfDataGrid.PrintSettings.Orientation = PrintOrientation.Landscape;
 sfDataGrid.Print(window);
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -114,8 +129,10 @@ SfDataGrid provides support to change the page size. Page size can be changed by
 
 {% tabs %}
 {% highlight c# %}
+
 sfDataGrid.PrintSettings.PageSize = new Size(800, 800);
 sfDataGrid.Print(window);
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -125,8 +142,10 @@ SfDataGrid provides support to change the page padding to adjust content in prin
 
 {% tabs %}
 {% highlight c# %}
+
 sfDataGrid.PrintSettings.PagePadding = new Thickness(10, 20, 10, 20);
 sfDataGrid.Print(window);
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -140,14 +159,16 @@ Steps to add page header while printing,
 
 {% tabs %}
 {% highlight xaml %}
-<Application.Resources>
-    <DataTemplate x:Key="PageHeaderTemplate">
-        <Grid Background="Gray">
-            <TextBlock Text="Syncfusion" FontSize="18" FontWeight="Bold" 
-            Foreground="White" HorizontalAlignment="Center"/>
-        </Grid>
-    </DataTemplate>
-</Application.Resources>
+
+&lt;Application.Resources&gt;
+    &lt;DataTemplate x:Key="PageHeaderTemplate"&gt;
+        &lt;Grid Background="Gray"&gt;
+            &lt;TextBlock Text="Syncfusion" FontSize="18" FontWeight="Bold" 
+            Foreground="White" HorizontalAlignment="Center"/&gt;
+        &lt;/Grid&gt;
+    &lt;/DataTemplate&gt;
+&lt;/Application.Resources&gt;
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -156,9 +177,11 @@ Steps to add page header while printing,
     
 {% tabs %}
 {% highlight c# %}
+
 sfDataGrid.PrintSettings.PageHeaderHeight = 30;
 sfDataGrid.PrintSettings.HeaderTemplate = Application.Current.Resources["PageHeaderTemplate"] as DataTemplate;
 sfDataGrid.Print(window);
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -170,30 +193,29 @@ N> [DataGridPrintManager](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 
 ### Printing Current Date time
 
-You can print current Date and Time at each page by setting the  [FooterHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_FooterHeight), [FooterTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_FooterTemplate) properties in [PrintSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_PrintSettings). 
+You can print current Date and Time at each page by setting the [FooterHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_FooterHeight), [FooterTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_FooterTemplate) properties in [PrintSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_PrintSettings). 
+
 
 {% tabs %}
 {% highlight xaml %}
-
-<Grid.Resources>        
-    <local:OrderInfoViewModel  x:Key="viewModel"/>    
-    <DataTemplate x:Key="PageFooterTemplate">
-        <Grid>
-            <TextBlock HorizontalAlignment="Center" FontSize="20" VerticalAlignment="Center"  
-             Text="{Binding Path=Date, Source={StaticResource viewModel}}"/>
-        </Grid>
-    </DataTemplate>
-</Grid.Resources>
-
+&lt;Grid.Resources&gt;        
+    &lt;local:OrderInfoViewModel x:Key="viewModel"/&gt;    
+    &lt;DataTemplate x:Key="PageFooterTemplate"&gt;
+        &lt;Grid&gt;
+            &lt;TextBlock HorizontalAlignment="Center" FontSize="20" VerticalAlignment="Center"  
+                       Text="{Binding Path=Date, Source={StaticResource viewModel}}"/&gt;
+        &lt;/Grid&gt;
+    &lt;/DataTemplate&gt;
+&lt;/Grid.Resources&gt;
 {% endhighlight %}
-{% highlight c# %}
 
+{% highlight c# %}
 sfDataGrid.PrintSettings.FooterHeight = 30;
 sfDataGrid.PrintSettings.FooterTemplate = grid.Resources["PageFooterTemplate"] as DataTemplate;
 sfDataGrid.Print(window);
-
 {% endhighlight %}
 {% endtabs %}
+
 
 ![WinUI DataGrid displays Current DateTime in Printing](Printing-images/winui-datagrid-printing-with-current-date-time.png)
 
@@ -204,8 +226,10 @@ You can print SfDataGrid as it displayed in View by setting [PrintSettings.CanPr
 
 {% tabs %}
 {% highlight c# %}
+
 sfDataGrid.PrintSettings.CanPrintStyles = true;
 sfDataGrid.Print(window);
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -213,11 +237,11 @@ sfDataGrid.Print(window);
 
 {% tabs %}
 {% highlight xaml %}
-<Grid.Resources>
-    <Style TargetType="dataGrid:GridHeaderCellControl">
-        <Setter Property="Background" Value="LightPink"/>
-    </Style>
-</Grid.Resources>
+&lt;Grid.Resources&gt;
+    &lt;Style TargetType="dataGrid:GridHeaderCellControl"&gt;
+        &lt;Setter Property="Background" Value="LightPink"/&gt;
+    &lt;/Style&gt;
+&lt;/Grid.Resources&gt;
 {% endhighlight %}
 {% endtabs %}
 
@@ -233,6 +257,7 @@ SfDataGrid allows you to set different row height for specific rows while printi
 
 {% tabs %}
 {% highlight c# %}
+
 public class CustomPrintManager : DataGridPrintManager
 {
     public CustomPrintManager(SfDataGrid grid , Window window)
@@ -253,8 +278,10 @@ public class CustomPrintManager : DataGridPrintManager
 
 {% tabs %}
 {% highlight c# %}
+
 sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , this);
 sfDataGrid.PrintSettings.PrintManager.Print();
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -267,6 +294,7 @@ Here, unbound row is excluded while printing. Likewise, you can hide any row bas
 
 {% tabs %}
 {% highlight c# %}
+
 public class CustomPrintManager : DataGridPrintManager
 {
     public CustomPrintManager(SfDataGrid grid , Window window)
@@ -284,11 +312,12 @@ public class CustomPrintManager : DataGridPrintManager
 {% endhighlight %}
 {% endtabs %}
 
-
 {% tabs %}
 {% highlight c# %}
+
 sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , this);
 sfDataGrid.PrintSettings.PrintManager.Print();
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -298,6 +327,7 @@ SfDataGrid allows you to the exclude the columns while printing the grid. You ca
 
 {% tabs %}
 {% highlight c# %}
+
 public class CustomPrintManager : DataGridPrintManager
 {
     public CustomPrintManager(SfDataGrid grid , Window window)
@@ -316,11 +346,12 @@ public class CustomPrintManager : DataGridPrintManager
 {% endhighlight %}
 {% endtabs %}
 
-
 {% tabs %}
 {% highlight c# %}
+
 sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , this);
 sfDataGrid.PrintSettings.PrintManager.Print();
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -332,6 +363,7 @@ SfDataGrid allows you to change column header text while printing the grid. You 
 
 {% tabs %}
 {% highlight c# %}
+
 public class CustomPrintManager : DataGridPrintManager
 {
     public CustomPrintManager(SfDataGrid grid , Window window)
@@ -350,11 +382,12 @@ public class CustomPrintManager : DataGridPrintManager
 {% endhighlight %}
 {% endtabs %}
 
-
 {% tabs %}
 {% highlight c# %}
+
 sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , this);
 sfDataGrid.PrintSettings.PrintManager.Print();
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -366,6 +399,7 @@ You can apply row styles based on custom logic by overriding [GetPrintGridCell](
 
 {% tabs %}
 {% highlight c# %}
+
 public class CustomPrintManager : DataGridPrintManager
 {
     public CustomPrintManager(SfDataGrid grid , Window window)
@@ -389,11 +423,12 @@ public class CustomPrintManager : DataGridPrintManager
 {% endhighlight %}
 {% endtabs %}
 
-
 {% tabs %}
 {% highlight c# %}
+
 sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , this);
 sfDataGrid.PrintSettings.PrintManager.Print();
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -464,6 +499,7 @@ SfDataGrid allows you to apply alternative row style by overriding [GetPrintGrid
 
 {% tabs %}
 {% highlight c# %}
+
 public class CustomPrintManager : DataGridPrintManager
 {
     public CustomPrintManager(SfDataGrid grid , Window window)
@@ -483,11 +519,12 @@ public class CustomPrintManager : DataGridPrintManager
 {% endhighlight %}
 {% endtabs %}
 
-
 {% tabs %}
 {% highlight c# %}
+
 sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , this);
 sfDataGrid.PrintSettings.PrintManager.Print();
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -499,6 +536,7 @@ You can apply column styles based on custom logic by overriding [GetPrintGridCel
 
 {% tabs %}
 {% highlight c# %}
+
 public class CustomPrintManager : DataGridPrintManager
 {
     public CustomPrintManager(SfDataGrid grid , Window window)
@@ -516,11 +554,12 @@ public class CustomPrintManager : DataGridPrintManager
 {% endhighlight %}
 {% endtabs %}
 
-
 {% tabs %}
 {% highlight c# %}
+
 sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , this);
 sfDataGrid.PrintSettings.PrintManager.Print();
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -534,6 +573,7 @@ Selected rows can be printed by overriding [GetSourceListForPrinting](https://he
 
 {% tabs %}
 {% highlight c# %}
+
 public class CustomPrintManager : DataGridPrintManager
 {
     public CustomPrintManager(SfDataGrid grid , Window window)
@@ -566,10 +606,13 @@ public class CustomPrintManager : DataGridPrintManager
 }
 {% endhighlight %}
 {% endtabs %}
+
 {% tabs %}
 {% highlight c# %}
+
 sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , this);
 sfDataGrid.PrintSettings.PrintManager.Print();
+
 {% endhighlight %}
 {% endtabs %}
 
