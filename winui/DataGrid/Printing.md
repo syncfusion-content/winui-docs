@@ -36,7 +36,7 @@ SfDataGrid provides various options to customize print preview settings using [S
 {% tabs %}
 {% highlight c# %}
 sfDataGrid.PrintSettings.CanRepeatHeaders = true;
-sfDataGrid.Print();
+sfDataGrid.Print(window);
 {% endhighlight %}
 {% endtabs %}
 
@@ -174,6 +174,7 @@ You can print current Date and Time at each page by setting the  [FooterHeight](
 
 {% tabs %}
 {% highlight xaml %}
+
 <Grid.Resources>        
     <local:OrderInfoViewModel  x:Key="viewModel"/>    
     <DataTemplate x:Key="PageFooterTemplate">
@@ -183,11 +184,14 @@ You can print current Date and Time at each page by setting the  [FooterHeight](
         </Grid>
     </DataTemplate>
 </Grid.Resources>
+
 {% endhighlight %}
 {% highlight c# %}
+
 sfDataGrid.PrintSettings.FooterHeight = 30;
 sfDataGrid.PrintSettings.FooterTemplate = grid.Resources["PageFooterTemplate"] as DataTemplate;
 sfDataGrid.Print(window);
+
 {% endhighlight %}
 {% endtabs %}
 
