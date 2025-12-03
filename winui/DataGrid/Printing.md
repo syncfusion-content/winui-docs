@@ -160,14 +160,14 @@ Steps to add page header while printing,
 {% tabs %}
 {% highlight xaml %}
 
-&lt;Application.Resources&gt;
-    &lt;DataTemplate x:Key="PageHeaderTemplate"&gt;
-        &lt;Grid Background="Gray"&gt;
-            &lt;TextBlock Text="Syncfusion" FontSize="18" FontWeight="Bold" 
-            Foreground="White" HorizontalAlignment="Center"/&gt;
-        &lt;/Grid&gt;
-    &lt;/DataTemplate&gt;
-&lt;/Application.Resources&gt;
+<Application.Resources>
+    <DataTemplate x:Key="PageHeaderTemplate">
+        <Grid Background="Gray">
+            <TextBlock Text="Syncfusion" FontSize="18" FontWeight="Bold" 
+                       Foreground="White" HorizontalAlignment="Center"/>
+        </Grid>
+    </DataTemplate>
+</Application.Resources>
 
 {% endhighlight %}
 {% endtabs %}
@@ -195,24 +195,27 @@ N> [DataGridPrintManager](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 
 You can print current Date and Time at each page by setting the [FooterHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_FooterHeight), [FooterTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Print.DataGridPrintSettings.html#Syncfusion_UI_Xaml_DataGrid_Print_DataGridPrintSettings_FooterTemplate) properties in [PrintSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_PrintSettings). 
 
-
 {% tabs %}
 {% highlight xaml %}
-&lt;Grid.Resources&gt;        
-    &lt;local:OrderInfoViewModel x:Key="viewModel"/&gt;    
-    &lt;DataTemplate x:Key="PageFooterTemplate"&gt;
-        &lt;Grid&gt;
-            &lt;TextBlock HorizontalAlignment="Center" FontSize="20" VerticalAlignment="Center"  
-                       Text="{Binding Path=Date, Source={StaticResource viewModel}}"/&gt;
-        &lt;/Grid&gt;
-    &lt;/DataTemplate&gt;
-&lt;/Grid.Resources&gt;
+
+<Grid.Resources>        
+    <local:OrderInfoViewModel x:Key="viewModel"/>    
+    <DataTemplate x:Key="PageFooterTemplate">
+        <Grid>
+            <TextBlock HorizontalAlignment="Center" FontSize="20" VerticalAlignment="Center"  
+                       Text="{Binding Path=Date, Source={StaticResource viewModel}}"/>
+        </Grid>
+    </DataTemplate>
+</Grid.Resources>
+
 {% endhighlight %}
 
 {% highlight c# %}
+
 sfDataGrid.PrintSettings.FooterHeight = 30;
 sfDataGrid.PrintSettings.FooterTemplate = grid.Resources["PageFooterTemplate"] as DataTemplate;
 sfDataGrid.Print(window);
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -237,11 +240,11 @@ sfDataGrid.Print(window);
 
 {% tabs %}
 {% highlight xaml %}
-&lt;Grid.Resources&gt;
-    &lt;Style TargetType="dataGrid:GridHeaderCellControl"&gt;
-        &lt;Setter Property="Background" Value="LightPink"/&gt;
-    &lt;/Style&gt;
-&lt;/Grid.Resources&gt;
+<Grid.Resources>
+    <Style TargetType="dataGrid:GridHeaderCellControl">
+        <Setter Property="Background" Value="LightPink"/>
+    </Style>
+</Grid.Resources>
 {% endhighlight %}
 {% endtabs %}
 
@@ -279,7 +282,7 @@ public class CustomPrintManager : DataGridPrintManager
 {% tabs %}
 {% highlight c# %}
 
-sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , this);
+sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , window);
 sfDataGrid.PrintSettings.PrintManager.Print();
 
 {% endhighlight %}
@@ -315,7 +318,7 @@ public class CustomPrintManager : DataGridPrintManager
 {% tabs %}
 {% highlight c# %}
 
-sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , this);
+sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , window);
 sfDataGrid.PrintSettings.PrintManager.Print();
 
 {% endhighlight %}
@@ -349,7 +352,7 @@ public class CustomPrintManager : DataGridPrintManager
 {% tabs %}
 {% highlight c# %}
 
-sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , this);
+sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , window);
 sfDataGrid.PrintSettings.PrintManager.Print();
 
 {% endhighlight %}
@@ -385,7 +388,7 @@ public class CustomPrintManager : DataGridPrintManager
 {% tabs %}
 {% highlight c# %}
 
-sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , this);
+sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , window);
 sfDataGrid.PrintSettings.PrintManager.Print();
 
 {% endhighlight %}
@@ -426,7 +429,7 @@ public class CustomPrintManager : DataGridPrintManager
 {% tabs %}
 {% highlight c# %}
 
-sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , this);
+sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , window);
 sfDataGrid.PrintSettings.PrintManager.Print();
 
 {% endhighlight %}
@@ -522,7 +525,7 @@ public class CustomPrintManager : DataGridPrintManager
 {% tabs %}
 {% highlight c# %}
 
-sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , this);
+sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , window);
 sfDataGrid.PrintSettings.PrintManager.Print();
 
 {% endhighlight %}
@@ -557,7 +560,7 @@ public class CustomPrintManager : DataGridPrintManager
 {% tabs %}
 {% highlight c# %}
 
-sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , this);
+sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , window);
 sfDataGrid.PrintSettings.PrintManager.Print();
 
 {% endhighlight %}
@@ -610,7 +613,7 @@ public class CustomPrintManager : DataGridPrintManager
 {% tabs %}
 {% highlight c# %}
 
-sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , this);
+sfDataGrid.PrintSettings.PrintManager = new CustomPrintManager(this.sfDataGrid , window);
 sfDataGrid.PrintSettings.PrintManager.Print();
 
 {% endhighlight %}
