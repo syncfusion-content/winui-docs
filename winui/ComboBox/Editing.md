@@ -65,6 +65,30 @@ comboBox.IsEditable = false;
 
 ![WinUI ComboBox choose item using keyboard](Editing_images/winui-combobox-non-edit-mode.gif)
 
+## Setting Null Value in ComboBox
+
+In editable mode, enable the `AllowNull` property by setting it to `true`. This allows the ComboBox to accept a null value when the selected item is cleared using the `Delete` or `Backspace` key. By default, this property is set to `false`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfComboBox x:Name="comboBox"
+                    Width="250"
+                    IsEditable="true"
+                    ItemsSource="{Binding SocialMedias}"
+                    DisplayMemberPath="Name"
+                    TextMemberPath="Name"
+                    AllowNull="true">
+</editors:SfComboBox>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+comboBox.AllowNull = true;
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Open a drop-down programmatically
 
