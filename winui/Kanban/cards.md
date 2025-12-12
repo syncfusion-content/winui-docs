@@ -521,3 +521,345 @@ public class ViewModel
 ![card-template-selector-in-winui-kanban](images/cards/card-template-selector-in-winui-kanban.png)
 
 N> The `DataContext` for both the [CardTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplate) and [CardTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplateSelector) properties in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) is set to [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
+
+## Cards ToolTip
+
+An interactive tooltip provides additional details about the cards on hovering the mouse over them.
+
+### Enable tooltip for cards
+
+To enable tooltip for the kanban cards, use the `IsToolTipEnabled` property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). By default, `IsToolTipEnabled` is set to `false.` To provide users with additional information or context about cards, simply set this property to true.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainWindow.xaml" %}
+
+<kanban:SfKanban x:Name="kanban"
+                 IsToolTipEnabled="True" 
+                 ItemsSource="{Binding TaskDetails}">
+    <kanban:SfKanban.DataContext>
+        <local:ViewModel/>
+    </kanban:SfKanban.DataContext>
+</kanban:SfKanban>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" %}
+
+this.kanban.IsToolTipEnabled = true;
+
+{% endhighlight %}
+{% highlight C# tabtitle="ViewModel.cs" %}
+
+public class ViewModel
+{
+    #region Properties
+
+    /// <summary>
+    /// Gets or sets the collection of <see cref="KanbanModel"/> objects representing tasks in various stages.
+    /// </summary>
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    #endregion
+
+    #region Constructor
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ViewModel"/> class.
+    /// </summary>
+    public ViewModel()
+    {
+        this.TaskDetails = this.GetTaskDetails();
+    }
+
+    #endregion
+
+    #region Private methods
+
+    /// <summary>
+    /// Method to get the kanban model collections.
+    /// </summary>
+    /// <returns>The kanban model collections.</returns>
+    private ObservableCollection<KanbanModel> GetTaskDetails()
+    {
+        var taskDetails = new ObservableCollection<KanbanModel>();
+
+        KanbanModel taskDetail = new KanbanModel();
+        taskDetail.Title = "UWP Issue";
+        taskDetail.Id = "651";
+        taskDetail.Description = "In minimized state, first and last segments have incorrect spacing";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WinUI Issue";
+        taskDetail.Id = "646";
+        taskDetail.Description = "AxisLabel cropped when rotating the axis label";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WPF Issue";
+        taskDetail.Id = "25678";
+        taskDetail.Description = "Minimum and maximum properties are not working in dynamic update";
+        taskDetail.Category = "In Progress";
+        taskDetail.IndicatorColorKey = "Low";
+        taskDetail.Tags = new List<string>() { "New control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle3.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WF Issue";
+        taskDetail.Id = "1254";
+        taskDetail.Description = "HorizontalAlignment for tooltip is not working";
+        taskDetail.Category = "In Progress";
+        taskDetail.IndicatorColorKey = "High";
+        taskDetail.Tags = new List<string>() { "Bug fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle5.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "New Feature";
+        taskDetail.Id = "29574";
+        taskDetail.Description = "Need to implement tooltip support for Kanban";
+        taskDetail.Category = "Closed";
+        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Tags = new List<string>() { "New Control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WPF Issue";
+        taskDetail.Id = "29477";
+        taskDetail.Description = "Null reference exception thrown in line chart";
+        taskDetail.Category = "Closed";
+        taskDetail.IndicatorColorKey = "Normal";
+        taskDetail.Tags = new List<string>() { "New Control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle3.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        return taskDetails;
+    }
+
+    #endregion
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Customize tooltip appearance
+
+You can customize the tooltip appearance by using the `ToolTipTemplate` property in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
+
+The following code example shows the usage of DataTemplate.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainWindow.xaml" %}
+
+<kanban:SfKanban x:Name="kanbanColumn"
+                     IsToolTipEnabled="True"
+                     ItemsSource="{Binding TaskDetails}">
+    <kanban:SfKanban.ToolTipTemplate>
+        <DataTemplate>
+            <Border Background="Black" CornerRadius="4" Padding="5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="{Binding IndicatorColorKey}" Grid.Column="0" VerticalAlignment="Stretch"
+                               HorizontalAlignment="Left" Width="7" Margin="0,0,5,0" />
+                    <Grid Grid.Column="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="5*"/>
+                            <ColumnDefinition Width="5*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions >
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="Title :" FontSize="10.5" Grid.Row="0" Grid.Column="0"
+                                   Margin="0,0,0,5"  Foreground="White" />
+                        <TextBlock Text="{Binding  Title}" Grid.Row="0" Grid.Column="1" FontSize="10.5"  
+                                   Margin="8,0,0,5" Foreground="White" />
+                        <TextBlock Text="Status :" Margin="0,0,0,8" Grid.Row="1" Grid.Column="0"
+                                   FontSize="10.5" Foreground="White" />
+                        <TextBlock Text="{Binding Category}" Grid.Row="1" Grid.Column="1" FontSize="10.5" 
+                                   Margin="8,0,0,5" Foreground="White" />
+                        <TextBlock Text="Description :" Grid.Row="2" Grid.Column="0"
+                                   FontSize="10.5" Foreground="White" />
+                        <TextBlock Text="{Binding Description}" Margin="8,0,0,5" Width="150" TextWrapping="Wrap" TextTrimming="CharacterEllipsis"
+                                   FontSize="10.5" Grid.Row="2" Grid.Column="1" Foreground="White" />
+                    </Grid>
+                </Grid>
+            </Border>
+        </DataTemplate>
+    </kanban:SfKanban.ToolTipTemplate>
+    <kanban:SfKanban.DataContext>
+        <local:ViewModel/>
+    </kanban:SfKanban.DataContext>
+</kanban:SfKanban>
+
+{% endhighlight %}
+{% highlight C# tabtitle="ViewModel.cs" %}
+
+public class ViewModel
+{
+    #region Properties
+
+    /// <summary>
+    /// Gets or sets the collection of <see cref="KanbanModel"/> objects representing tasks in various stages.
+    /// </summary>
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    #endregion
+
+    #region Constructor
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ViewModel"/> class.
+    /// </summary>
+    public ViewModel()
+    {
+        this.TaskDetails = this.GetTaskDetails();
+    }
+
+    #endregion
+
+    #region Private methods
+
+        /// <summary>
+    /// Method to get the kanban model collections.
+    /// </summary>
+    /// <returns>The kanban model collections.</returns>
+    private ObservableCollection<KanbanModel> GetTaskDetails()
+    {
+        var taskDetails = new ObservableCollection<KanbanModel>();
+        string path = @"ms-appx:///";
+
+        KanbanModel taskDetail = new KanbanModel();
+        taskDetail.Title = "UWP Issue";
+        taskDetail.Id = "651";
+        taskDetail.Description = "In minimized state, first and last segments have incorrect spacing";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "#FFECB93C";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WinUI Issue";
+        taskDetail.Id = "646";
+        taskDetail.Description = "AxisLabel cropped when rotating the axis label";
+        taskDetail.Category = "Open";
+        taskDetail.IndicatorColorKey = "#FF5187C6";
+        taskDetail.Tags = new List<string>() { "Bug Fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle2.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WPF Issue";
+        taskDetail.Id = "25678";
+        taskDetail.Description = "Minimum and maximum properties are not working in dynamic update";
+        taskDetail.Category = "In Progress";
+        taskDetail.IndicatorColorKey = "#FF5187C6";
+        taskDetail.Tags = new List<string>() { "New control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle3.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WF Issue";
+        taskDetail.Id = "1254";
+        taskDetail.Description = "HorizontalAlignment for tooltip is not working";
+        taskDetail.Category = "In Progress";
+        taskDetail.IndicatorColorKey = "#FFECB93C";
+        taskDetail.Tags = new List<string>() { "Bug fixing" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle4.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "New Feature";
+        taskDetail.Id = "29574";
+        taskDetail.Description = "Need to implement tooltip support for Kanban";
+        taskDetail.Category = "Closed";
+        taskDetail.IndicatorColorKey = "#FF57B94C";
+        taskDetail.Tags = new List<string>() { "New Control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle5.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        taskDetail = new KanbanModel();
+        taskDetail.Title = "WPF Issue";
+        taskDetail.Id = "29477";
+        taskDetail.Description = "Null reference exception thrown in line chart";
+        taskDetail.Category = "Closed";
+        taskDetail.IndicatorColorKey = "#FF57B94C";
+        taskDetail.Tags = new List<string>() { "New Control" };
+        taskDetail.Image = new Image
+        {
+            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle6.png"))
+        };
+
+        taskDetails.Add(taskDetail);
+
+        return taskDetails;
+    }
+
+    #endregion
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N>
+* This property will only be applicable when `EnableToolTip` is set to true.
