@@ -180,9 +180,9 @@ The following code example explains how to display both x-value and y-value in t
 
 {% highlight xaml %}
 
-<Grid x:Name="grid">
-    <Grid.Resources>
-        <DataTemplate x:Key="tooltipTemplate">
+<chart:SfFunnelChart x:Name="chart" Height="388"  Width="500">
+    <chart:SfFunnelChart.Resources>
+        <DataTemplate x:Key="tooltipTemplate" x:DataType="chart:ChartSegment">
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="{Binding Item.Category}" 
 						   Foreground="Black"
@@ -210,8 +210,8 @@ The following code example explains how to display both x-value and y-value in t
             <Setter Property="Fill" Value="LightGreen"/>
             <Setter Property="StrokeThickness" Value="2"/>
         </Style>
-    </Grid.Resources>
-
+    </chart:SfFunnelChart.Resources>
+. . .
     <chart:SfFunnelChart x:Name="chart"
                          ItemsSource="{Binding Data}" 
                          XBindingPath="Category"  
@@ -223,7 +223,8 @@ The following code example explains how to display both x-value and y-value in t
             <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
         </chart:SfFunnelChart.TooltipBehavior>
     </chart:SfFunnelChart>
-</Grid>
+
+</chart:SfFunnelChart>
 
 {% endhighlight %}
 
@@ -243,3 +244,5 @@ this.Content = chart;
 {% endtabs %}
 
 ![Tooltip template in WinUI Chart](Tooltip_Images/winui-chart_tooltip_template.png)
+
+N> The [Item](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSegment.html#Syncfusion_UI_Xaml_Charts_ChartSegment_Item) can be used to access the data linked to the associated model class. The binding context for Chart `TooltipTemplate` is [ChartSegment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSegment.html), which provides the necessary data for the tootip labels.
