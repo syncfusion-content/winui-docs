@@ -188,21 +188,21 @@ The pyramid chart provides support to customize the appearance of the tooltip by
 
 {% highlight xaml %}
 
-<Grid x:Name="grid">
-    <Grid.Resources>
-        <DataTemplate x:Key="tooltipTemplate">
+<chart:SfPyramidChart x:Name="chart" Height="388"  Width="500">
+    <chart:SfPyramidChart.Resources>
+        <DataTemplate x:Key="tooltipTemplate1" x:DataType="chart:ChartSegment">
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="{Binding Item.Category}"
 						   Foreground="Black"
-						   FontWeight="Medium"
-						   FontSize="12" 
+						   FontWeight="Medium" 
+						   FontSize="12"
 						   HorizontalAlignment="Center"
 						   VerticalAlignment="Center"/>
                 <TextBlock Text=" : "
 						   Foreground="Black"
 						   FontWeight="Medium"
-						   FontSize="12"
-						   HorizontalAlignment="Center" 
+						   FontSize="12" 
+						   HorizontalAlignment="Center"
 						   VerticalAlignment="Center"/>
                 <TextBlock Text="{Binding Item.Value}"
 						   Foreground="Black"
@@ -212,14 +212,14 @@ The pyramid chart provides support to customize the appearance of the tooltip by
 						   VerticalAlignment="Center"/>
             </StackPanel>
         </DataTemplate>
-
+        . . .
         <Style TargetType="Path" x:Key="style">
-                <Setter Property="Stroke" Value="Black"/>
-                <Setter Property="Fill" Value="LightGreen"/>
-                <Setter Property="StrokeThickness" Value="2"/>
+            <Setter Property="Stroke" Value="Black"/>
+            <Setter Property="Fill" Value="LightGreen"/>
+            <Setter Property="StrokeThickness" Value="2"/>
         </Style>
-    </Grid.Resources>
-
+    </chart:SfPyramidChart.Resources>
+. . .
     <chart:SfPyramidChart x:Name="chart"
                            ItemsSource="{Binding Data}" 
                            XBindingPath="Category"  
@@ -231,7 +231,8 @@ The pyramid chart provides support to customize the appearance of the tooltip by
             <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
         </chart:SfPyramidChart.TooltipBehavior>
     </chart:SfPyramidChart>
-</Grid>
+
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
@@ -251,3 +252,5 @@ this.Content = chart;
 {% endtabs %}
 
 ![Tooltip template in WinUI Chart](Tooltip_Images/WinUI_chart_tooltip_template.png)
+
+N> The [Item](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSegment.html#Syncfusion_UI_Xaml_Charts_ChartSegment_Item) can be used to access the data linked to the associated model class. The binding context for Chart `TooltipTemplate` is [ChartSegment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSegment.html), which provides the necessary data for the tootip labels.

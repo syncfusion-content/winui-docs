@@ -309,26 +309,26 @@ Customize each legend item by using the [ItemTemplate](https://help.syncfusion.c
 
 <chart:SfPolarChart x:Name="chart">
     <chart:SfPolarChart.Resources>
-        <DataTemplate x:Key="labelTemplate">
+        <DataTemplate x:Key="labelTemplate" x:DataType="chart:LegendItem">
             <StackPanel Margin="10" Orientation="Vertical">
-                <Ellipse Height="15"
-			 Width="15" 
-			 Fill="{Binding Interior}" 
-                         Stroke="#4a4a4a"
-			 StrokeThickness="2"/>
-                <TextBlock HorizontalAlignment="Center"
-			   FontSize="12"
+                <Ellipse Height="15" 
+                         Width="15" 
+                         Fill="{Binding IconBrush}" 
+                         Stroke="#4a4a4a" 
+                         StrokeThickness="2"/>
+                <TextBlock HorizontalAlignment="Center" 
+                           FontSize="12"
                            Foreground="Black" 
-                           FontWeight="SemiBold"
-			   Text="{Binding Label}"/>
+                           FontWeight="SemiBold" 
+                           Text="{Binding Item._XAxesData}"/>
             </StackPanel>
         </DataTemplate>
     </chart:SfPolarChart.Resources>
-    ...
+    . . .
     <chart:SfPolarChart.Legend>
         <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}"/>
     </chart:SfPolarChart.Legend>
-    ...
+
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -347,4 +347,6 @@ chart.Legend = new ChartLegend()
 {% endtabs %}
 
 ![Legend ItemTemplate support in WinUI Chart](Legend_images/WinUI_Chart_Legend_Item_customizing.png)
+
+N> The [Item](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LegendItem.html#Syncfusion_UI_Xaml_Charts_LegendItem_Item) can be used to access the data linked to the associated model class. The binding context for ChartLegend `ItemTemplate` is [LegendItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LegendItem.html), which provides the necessary data for the legend labels.
 
