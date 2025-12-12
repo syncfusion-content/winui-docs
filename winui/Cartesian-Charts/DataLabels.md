@@ -203,7 +203,8 @@ The appearance of the data label can be customized using the [ContentTemplate](h
 . . . 
 <chart:ColumnSeries ShowDataLabels="True">
     <chart:ColumnSeries.DataLabelSettings>
-        <chart:CartesianDataLabelSettings Position="Outer" 
+        <chart:CartesianDataLabelSettings Position="Outer"
+                                          Context="YValue"
                                           ContentTemplate="{StaticResource dataLabelTemplate}"/>
     </chart:ColumnSeries.DataLabelSettings>
 . . .
@@ -231,6 +232,8 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Data label template in WinUI chart](DataLabel_images/winui_chart_data_label_template.png)
+
+N> The binding context for Chart `ContentTemplate` is [ChartDataLabel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabel.html), which provides the necessary data for the data labels. The [Context](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Context) value to customize the content of data labels. This property is used to define the value that will be displayed in the data label, such as the x value or any other value from the underlying model object. The default value of `Context` is [YValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LabelContext.html#Syncfusion_UI_Xaml_Charts_LabelContext_YValue).
 
 ## Format
 

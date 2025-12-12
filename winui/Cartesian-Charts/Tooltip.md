@@ -581,7 +581,7 @@ The [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart x:Name="chart" Height="388"  Width="500">
+<chart:SfCartesianChart Height="388"  Width="500">
     <chart:SfCartesianChart.Resources>
         <DataTemplate x:Key="tooltipTemplate1" x:DataType="chart:ChartSegment">
             <StackPanel Orientation="Horizontal">

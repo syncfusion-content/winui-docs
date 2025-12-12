@@ -467,7 +467,7 @@ Customize each legend item by using the [`ItemTemplate`](https://help.syncfusion
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart x:Name="chart">
+<chart:SfCartesianChart>
     <chart:SfCartesianChart.Resources>
         <DataTemplate x:Key="labelTemplate" x:DataType="chart:LegendItem">
             <StackPanel Margin="10" Orientation="Vertical">
