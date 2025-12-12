@@ -531,7 +531,7 @@ An interactive tooltip provides additional details about the cards on hovering t
 To enable tooltip for the kanban cards, use the `IsToolTipEnabled` property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). By default, `IsToolTipEnabled` is set to `false.` To provide users with additional information or context about cards, simply set this property to true.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <kanban:SfKanban x:Name="kanban"
                  IsToolTipEnabled="True" 
@@ -542,7 +542,7 @@ To enable tooltip for the kanban cards, use the `IsToolTipEnabled` property of [
 </kanban:SfKanban>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
 
 this.kanban.IsToolTipEnabled = true;
 
@@ -581,6 +581,7 @@ public class ViewModel
     private ObservableCollection<KanbanModel> GetTaskDetails()
     {
         var taskDetails = new ObservableCollection<KanbanModel>();
+        string path = @"ms-appx:///";
 
         KanbanModel taskDetail = new KanbanModel();
         taskDetail.Title = "UWP Issue";
@@ -591,7 +592,7 @@ public class ViewModel
         taskDetail.Tags = new List<string>() { "Bug Fixing" };
         taskDetail.Image = new Image
         {
-            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle1.png"))
         };
 
         taskDetails.Add(taskDetail);
@@ -683,11 +684,11 @@ You can customize the tooltip appearance by using the `ToolTipTemplate` property
 The following code example shows the usage of DataTemplate.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <kanban:SfKanban x:Name="kanbanColumn"
-                     IsToolTipEnabled="True"
-                     ItemsSource="{Binding TaskDetails}">
+                 IsToolTipEnabled="True"
+                 ItemsSource="{Binding TaskDetails}">
     <kanban:SfKanban.ToolTipTemplate>
         <DataTemplate>
             <Border Background="Black" CornerRadius="4" Padding="5">
@@ -765,7 +766,6 @@ public class ViewModel
     private ObservableCollection<KanbanModel> GetTaskDetails()
     {
         var taskDetails = new ObservableCollection<KanbanModel>();
-        string path = @"ms-appx:///";
 
         KanbanModel taskDetail = new KanbanModel();
         taskDetail.Title = "UWP Issue";
