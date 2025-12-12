@@ -513,18 +513,18 @@ The following screenshot illustrates the trackball label for multiple series, wh
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart>
+<chart:SfCartesianChart x:Name="chart">
 . . .
     <chart:SfCartesianChart.Resources>
-        <DataTemplate x:Key="labelTemplate">
+        <DataTemplate x:Key="labelTemplate" x:DataType="chart:ChartPointInfo">
             <Border CornerRadius="5"
-					BorderThickness="1" 
-					BorderBrush="Black"
-					Background="LightGreen"
-					Padding="5">
-                <TextBlock Foreground="Black"
-						   Text="{Binding ValueY}"/>
-            </Border>
+            BorderThickness="1" 
+            BorderBrush="Black"
+            Background="LightGreen"
+            Padding="5">
+            <TextBlock Foreground="Black"
+              Text="{Binding ValueY}"/>
+        </Border>
         </DataTemplate>
     </chart:SfCartesianChart.Resources>
     . . .
@@ -567,6 +567,8 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Trackball templte support for Trackball in WinUI Chart](Trackball_images/WinUI_chart_trackball_label_template.png)
+
+N> The binding context for Chart `TrackballLabelTemplate` is [ChartPointInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html), which provides the necessary data for the trackball labels.
 
 ### Applying Series Interior
 
