@@ -651,7 +651,7 @@ You can customize the tooltip appearance by using the `ToolTipTemplate` property
 The following code example shows the usage of DataTemplate.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight XAML hl_lines="2" %}
 
 <kanban:SfKanban x:Name="kanban"
                  IsToolTipEnabled="True"
