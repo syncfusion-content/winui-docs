@@ -522,16 +522,16 @@ public class ViewModel
 
 N> The `DataContext` for both the [CardTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplate) and [CardTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplateSelector) properties in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) is set to [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
 
-## Cards ToolTip
+## Cards tooltip
 
 An interactive tooltip provides additional details about the cards on hovering the mouse over them.
 
 ### Enable tooltip for cards
 
-To enable tooltip for the kanban cards, use the `IsToolTipEnabled` property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). By default, `IsToolTipEnabled` is set to `false.` To provide users with additional information or context about cards, simply set this property to true.
+To enable tooltip for the kanban cards, use `IsToolTipEnabled` property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). By default, `IsToolTipEnabled` is set to `false.` To provide users with additional information or context about cards, simply set this property to `true.`
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight XAML hl_lines="2" %}
 
 <kanban:SfKanban x:Name="kanban"
                  IsToolTipEnabled="True" 
@@ -542,7 +542,7 @@ To enable tooltip for the kanban cards, use the `IsToolTipEnabled` property of [
 </kanban:SfKanban>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
+{% highlight C# %}
 
 this.kanban.IsToolTipEnabled = true;
 
@@ -581,8 +581,6 @@ public class ViewModel
     private ObservableCollection<KanbanModel> GetTaskDetails()
     {
         var taskDetails = new ObservableCollection<KanbanModel>();
-        string path = @"ms-appx:///";
-
         KanbanModel taskDetail = new KanbanModel();
         taskDetail.Title = "UWP Issue";
         taskDetail.Id = "651";
@@ -590,11 +588,6 @@ public class ViewModel
         taskDetail.Category = "Open";
         taskDetail.IndicatorColorKey = "High";
         taskDetail.Tags = new List<string>() { "Bug Fixing" };
-        taskDetail.Image = new Image
-        {
-            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle1.png"))
-        };
-
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
@@ -604,11 +597,6 @@ public class ViewModel
         taskDetail.Category = "Open";
         taskDetail.IndicatorColorKey = "Low";
         taskDetail.Tags = new List<string>() { "Bug Fixing" };
-        taskDetail.Image = new Image
-        {
-            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle2.png"))
-        };
-
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
@@ -618,13 +606,7 @@ public class ViewModel
         taskDetail.Category = "In Progress";
         taskDetail.IndicatorColorKey = "Low";
         taskDetail.Tags = new List<string>() { "New control" };
-        taskDetail.Image = new Image
-        {
-            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle3.png"))
-        };
-
         taskDetails.Add(taskDetail);
-
 
         taskDetail = new KanbanModel();
         taskDetail.Title = "WF Issue";
@@ -633,11 +615,6 @@ public class ViewModel
         taskDetail.Category = "In Progress";
         taskDetail.IndicatorColorKey = "High";
         taskDetail.Tags = new List<string>() { "Bug fixing" };
-        taskDetail.Image = new Image
-        {
-            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle5.png"))
-        };
-
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
@@ -647,11 +624,6 @@ public class ViewModel
         taskDetail.Category = "Closed";
         taskDetail.IndicatorColorKey = "Normal";
         taskDetail.Tags = new List<string>() { "New Control" };
-        taskDetail.Image = new Image
-        {
-            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle4.png"))
-        };
-
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
@@ -661,11 +633,6 @@ public class ViewModel
         taskDetail.Category = "Closed";
         taskDetail.IndicatorColorKey = "Normal";
         taskDetail.Tags = new List<string>() { "New Control" };
-        taskDetail.Image = new Image
-        {
-            Source = new BitmapImage(new Uri(path + "Assets/Kanban/People_Circle3.png"))
-        };
-
         taskDetails.Add(taskDetail);
 
         return taskDetails;
@@ -686,7 +653,7 @@ The following code example shows the usage of DataTemplate.
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
-<kanban:SfKanban x:Name="kanbanColumn"
+<kanban:SfKanban x:Name="kanban"
                  IsToolTipEnabled="True"
                  ItemsSource="{Binding TaskDetails}">
     <kanban:SfKanban.ToolTipTemplate>
@@ -697,8 +664,8 @@ The following code example shows the usage of DataTemplate.
                         <ColumnDefinition Width="Auto" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <Rectangle Fill="{Binding IndicatorColorKey}" Grid.Column="0" VerticalAlignment="Stretch"
-                               HorizontalAlignment="Left" Width="7" Margin="0,0,5,0" />
+                    <Rectangle Fill="{Binding IndicatorColorKey}" Grid.Column="0"               VerticalAlignment="Stretch" HorizontalAlignment="Left" Width="7" 
+                    Margin="0,0,5,0" />
                     <Grid Grid.Column="1">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="5*"/>
@@ -710,7 +677,7 @@ The following code example shows the usage of DataTemplate.
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
                         <TextBlock Text="Title :" FontSize="10.5" Grid.Row="0" Grid.Column="0"
-                                   Margin="0,0,0,5"  Foreground="White" />
+                                   Margin="0,0,0,5" Foreground="White" />
                         <TextBlock Text="{Binding  Title}" Grid.Row="0" Grid.Column="1" FontSize="10.5"  
                                    Margin="8,0,0,5" Foreground="White" />
                         <TextBlock Text="Status :" Margin="0,0,0,8" Grid.Row="1" Grid.Column="0"
@@ -759,7 +726,7 @@ public class ViewModel
 
     #region Private methods
 
-        /// <summary>
+    /// <summary>
     /// Method to get the kanban model collections.
     /// </summary>
     /// <returns>The kanban model collections.</returns>
@@ -774,11 +741,6 @@ public class ViewModel
         taskDetail.Category = "Open";
         taskDetail.IndicatorColorKey = "#FFECB93C";
         taskDetail.Tags = new List<string>() { "Bug Fixing" };
-        taskDetail.Image = new Image
-        {
-            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
-        };
-
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
@@ -788,11 +750,6 @@ public class ViewModel
         taskDetail.Category = "Open";
         taskDetail.IndicatorColorKey = "#FF5187C6";
         taskDetail.Tags = new List<string>() { "Bug Fixing" };
-        taskDetail.Image = new Image
-        {
-            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle2.png"))
-        };
-
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
@@ -802,11 +759,6 @@ public class ViewModel
         taskDetail.Category = "In Progress";
         taskDetail.IndicatorColorKey = "#FF5187C6";
         taskDetail.Tags = new List<string>() { "New control" };
-        taskDetail.Image = new Image
-        {
-            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle3.png"))
-        };
-
         taskDetails.Add(taskDetail);
 
 
@@ -817,11 +769,6 @@ public class ViewModel
         taskDetail.Category = "In Progress";
         taskDetail.IndicatorColorKey = "#FFECB93C";
         taskDetail.Tags = new List<string>() { "Bug fixing" };
-        taskDetail.Image = new Image
-        {
-            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle4.png"))
-        };
-
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
@@ -831,11 +778,6 @@ public class ViewModel
         taskDetail.Category = "Closed";
         taskDetail.IndicatorColorKey = "#FF57B94C";
         taskDetail.Tags = new List<string>() { "New Control" };
-        taskDetail.Image = new Image
-        {
-            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle5.png"))
-        };
-
         taskDetails.Add(taskDetail);
 
         taskDetail = new KanbanModel();
@@ -845,11 +787,6 @@ public class ViewModel
         taskDetail.Category = "Closed";
         taskDetail.IndicatorColorKey = "#FF57B94C";
         taskDetail.Tags = new List<string>() { "New Control" };
-        taskDetail.Image = new Image
-        {
-            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle6.png"))
-        };
-
         taskDetails.Add(taskDetail);
 
         return taskDetails;
@@ -862,4 +799,4 @@ public class ViewModel
 {% endtabs %}
 
 N>
-* This property will only be applicable when `EnableToolTip` is set to true.
+* This property will only be applicable when `IsToolTipEnabled` is set to `true.`
