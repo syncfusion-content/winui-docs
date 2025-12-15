@@ -47,14 +47,6 @@ For example, following is a demonstration to run an individual `Chart` control p
 
 ![Running an individual control project](Guide-to-run-the-samples-images/run-induvidual-control-project.png)
 
-All the sample browser projects are configured as single SDK-style projects that support multiple frameworks: `.NET 8.0`, `.NET 9.0`, and `.NET 10`. 
-
-When you click the `Run Local Demos` or `Explore Demo Source` button, the  `net10.0-windows` entry will be automatically removed from the targets file if `.NET 10` is not installed on your machine, preventing any compilation errors. 
-
-To use the `.NET 10 framework`, install the required SDK and add `net10.0-windows` to the `<TargetFrameworks>` tag in the `MultiTargeting.targets` file located at the Samples Location:[..\WinUI\31.2.12\SampleBrowser\targets\MultiTargeting.targets] as shown in the image below. 
-
-![WinUI TargetFrameworks](Guide-to-run-the-samples-images/TargetFrameworks_winui.png)
-
 ## Online Sample
 
 * Download and install demos from [Microsoft Store](https://apps.microsoft.com/detail/9n0fp16ddc06?hl=en-GB&gl=IN).
