@@ -395,7 +395,7 @@ The following code example gives you the complete code of above configurations.
             <chart:ChartLegend/>
         </chart:SfCartesianChart.Legend>
         <chart:SfCartesianChart.DataContext>
-            <Model:ChartViewModel/>
+            <Model:ViewModel/>
         </chart:SfCartesianChart.DataContext>
         
         <!--Initialize the axis for chart-->
