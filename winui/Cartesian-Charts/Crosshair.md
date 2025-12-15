@@ -41,7 +41,7 @@ chart.CrosshairBehavior = behavior;
 
 {% endtabs %}
 
-![]()
+![Crosshair support in WinUI chart](Crosshair_images/WinUI_Chart_Crosshair.png)
 
 To view the crosshair label in the particular axis, you have to enable the [ShowTrackballLabel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballLabel) property in that axis as in the following code snippet.
 
@@ -78,7 +78,7 @@ chart.XAxes.Add(primaryAxis);
 
 {% endtabs %}
 
-![]()
+![Crosshair ShowTrackballLabel support in WinUI chart](Crosshair_images/WinUI_Chart_Crosshair_ShowTrackballLabel.png)
 
 
 ## Horizontal and Vertical Line style
@@ -125,7 +125,7 @@ chart.Behaviors.Add(crosshair);
 
 {% endtabs %}
 
-![]()
+![Crosshair HorizontalLineStyle support in WinUI chart](Crosshair_images/WinUI_Chart_Crosshair_HorizontalLineStyle.png)
 
 ### VerticalLineStyle
 
@@ -167,7 +167,7 @@ chart.Behaviors.Add(crosshair);
 
 {% endtabs %}
 
-![]()
+![Crosshair VerticalLineStyle support in WinUI chart](Crosshair_images/WinUI_Chart_Crosshair_VerticalLineStyle.png)
 
 
 ## Horizontal and Vertical Axis label
@@ -209,7 +209,7 @@ chart.Behaviors.Add(crosshair);
 
 {% endtabs %}
 
-![]()
+![Crosshair HorizontalAxisLabelAlignment support in WinUI chart](Crosshair_images/WinUI_Chart_Crosshair_HorizontalAxisLabelAlignment.png)
 
 ### VerticalAxisLabelAlignment
 
@@ -239,7 +239,7 @@ chart.Behaviors.Add(crosshair);
 
 {% endtabs %}
 
-![]()
+![Crosshair VerticalAxisLabelAlignment support in WinUI chart](Crosshair_images/WinUI_Chart_Crosshair_VerticalAxisLabelAlignment.png)
 
 ## Template
 
@@ -307,4 +307,4 @@ chart.XAxes.Add(secondaryAxis);
 
 {% endtabs %}
 
-![]()
+![Crosshair Template support in WinUI chart](Crosshair_images/WinUI_Chart_Crosshair_Template.png)
