@@ -195,6 +195,7 @@ The appearance of the data label can be customized by using the [ContentTemplate
 
         <chart:SfFunnelChart.DataLabelSettings>
             <chart:FunnelDataLabelSettings
+                        Context="YValue"
 						ContentTemplate="{StaticResource dataLabelTemplate}" />
         </chart:SfFunnelChart.DataLabelSettings>
 
@@ -210,6 +211,7 @@ chart.ShowDataLabels = true;
 . . . 
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 { 
+    Context = LabelContext.YValue,
     ContentTemplate = this.grid.Resources["dataLabelTemplate"] as DataTemplate
 };
 
@@ -220,6 +222,8 @@ this.Content = chart;
 {% endtabs %}
 
 ![Template support for data label in WinUI Chart](Data-label_images/winui-chart_data_labeltemplate.png)
+
+N> The binding context for the Chart `ContentTemplate` is [Context](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Context), which is used to customize the content of data labels. This property defines the value displayed in the data label, such as the X value or any other value from the underlying model object. By default, the value of `Context` is [YValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LabelContext.html#Syncfusion_UI_Xaml_Charts_LabelContext_YValue).
 
 ## Format
 

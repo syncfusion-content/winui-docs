@@ -513,7 +513,7 @@ The following screenshot illustrates the trackball label for multiple series, wh
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart x:Name="chart">
+<chart:SfCartesianChart>
 . . .
     <chart:SfCartesianChart.Resources>
         <DataTemplate x:Key="labelTemplate" x:DataType="chart:ChartPointInfo">

@@ -207,6 +207,8 @@ chart.Series.Add(series);
 
 ![Template support for data label in WinUI Chart](DataLabel_Images/WinUI_pie_chart_data_label_template.png)
 
+N> The binding context for the Chart `ContentTemplate` is [Context](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Context), which is used to customize the content of data labels. This property defines the value displayed in the data label, such as the X value or any other value from the underlying model object. By default, the value of `Context` is [YValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LabelContext.html#Syncfusion_UI_Xaml_Charts_LabelContext_YValue).
+
 ## Position
 
 [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) providing additional customization option to position the data label smartly based on series types using [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_CircularDataLabelSettings_Position) property.

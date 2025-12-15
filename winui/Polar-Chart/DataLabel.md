@@ -183,7 +183,7 @@ The appearance of the data label can be customized using the [ContentTemplate](h
     ...
         <chart:PolarAreaSeries ShowDataLabels="True">
             <chart:PolarAreaSeries.DataLabelSettings>
-                <chart:PolarDataLabelSettings ContentTemplate="{StaticResource datalabelTemplate}" />
+                <chart:PolarDataLabelSettings Context="YValue" ContentTemplate="{StaticResource datalabelTemplate}" />
             </chart:PolarAreaSeries.DataLabelSettings>
         </chart:PolarAreaSeries>
     ...
@@ -201,6 +201,7 @@ series.ShowDataLabels = true;
 
 series.DataLabelSettings = new PolarDataLabelSettings() 
 { 
+    Context = LabelContext.YValue,
     ContentTemplate = grid.Resources["datalabelTemplate"] as DataTemplate,
 };
 ...
@@ -210,6 +211,8 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 {% endtabs %}
 
 ![Template support for data label in WinUI Chart](DataLabel_Images/WinUI_Chart_DataLabel_LabelTemplate.png)
+
+N> The binding context for the Chart `ContentTemplate` is [Context](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Context), which is used to customize the content of data labels. This property defines the value displayed in the data label, such as the X value or any other value from the underlying model object. By default, the value of `Context` is [YValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LabelContext.html#Syncfusion_UI_Xaml_Charts_LabelContext_YValue).
 
 ## Format
 
