@@ -127,3 +127,31 @@ private void AiAssistView_InputToolbarItemClicked(object sender, InputToolbarIte
 This feature supports customizing the header section of the input area using a flexible template. The layout and styling of the header can include elements such as file upload information, error details, notifications, or other custom components to display relevant information.
 
 ![Uploaded files template in WinUI SfAIAssistView control](aiassistview_images/winui-aiassistview-input-header-template.webp)
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfAIAssistView.InputToolbarHeaderTemplate>
+    <DataTemplate>
+        <Border CornerRadius="6">
+            <ItemsControl ItemsSource="{Binding Files}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal" Margin="0,4,0,4"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplateSelector>
+                    <local:FileIconTemplateSelector TextTemplate="{StaticResource textTemplate}"
+                                                    HtmlTemplate="{StaticResource htmlTemplate}"
+                                                    JsonTemplate="{StaticResource jsonTemplate}"
+                                                    XmlTemplate="{StaticResource xmlTemplate}"
+                                                    MarkDownTemplate="{StaticResource markdownTemplate}"/>
+                  
+                </ItemsControl.ItemTemplateSelector>
+            </ItemsControl>
+        </Border>
+    </DataTemplate>
+</syncfusion:SfAIAssistView.InputToolbarHeaderTemplate>
+
+{% endhighlight %} 
+{% endtabs %}
