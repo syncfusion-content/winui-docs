@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Input Toolbar in WinUI AI AssistView control | Syncfusion
-description: Learn about the input toolbar feature in the AI AssistView control, which enables users to access quick actions to input textbox responses through toolbar items.
+description: The input toolbar in AI AssistView offers quick actions via toolbar items to streamline textbox response entry.
 platform: WinUI
 control: SfAIAssistView
 documentation: ug
