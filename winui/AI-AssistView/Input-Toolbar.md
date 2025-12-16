@@ -152,8 +152,8 @@ This feature supports customizing the header section of the input area using a f
                                 </Grid>
                             </Viewbox>
                             <StackPanel Margin="10,0,10,0" Orientation="Vertical">
-                                <TextBlock Text="{Binding Name}" Foreground="#777" FontWeight="SemiBold"/>
-                                <TextBlock Text="{Binding Size}" Foreground="#777" FontSize="11"/>
+                                <TextBlock Text="{Binding Name}" Foreground="Black" FontWeight="SemiBold"/>
+                                <TextBlock Text="{Binding Size}" Foreground="Black" FontSize="11"/>
                             </StackPanel>
                         </StackPanel>
                     </Border>
