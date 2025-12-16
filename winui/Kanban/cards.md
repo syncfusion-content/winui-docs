@@ -644,6 +644,8 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
+![card-tool-tip-support-in-winui-kanban](images/cards/card-tool-tip-support-in-winui-kanban.gif)
+
 ### Customize tooltip appearance
 
 You can customize the tooltip appearance by using the `ToolTipTemplate` property in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
@@ -797,6 +799,8 @@ public class ViewModel
 
 {% endhighlight %}
 {% endtabs %}
+
+![card-tool-tip-customization-support-in-winui-kanban](images/cards/card-tool-tip-customization-support-in-winui-kanban.gif)
 
 N>
 * This property will only be applicable when `IsToolTipEnabled` is set to `true.`
