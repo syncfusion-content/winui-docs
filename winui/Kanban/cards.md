@@ -528,7 +528,7 @@ An interactive tooltip provides additional details about the cards on hovering t
 
 ### Enable tooltip for cards
 
-To enable tooltip for the kanban cards, use `IsToolTipEnabled` property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). By default, `IsToolTipEnabled` is set to `false.` To provide users with additional information or context about cards, simply set this property to `true.`
+To enable tooltip for the kanban cards, use [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). By default, [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) is set to `false.` To provide users with additional information or context about cards, simply set this property to `true.`
 
 {% tabs %}
 {% highlight XAML hl_lines="2" %}
@@ -648,7 +648,7 @@ public class ViewModel
 
 ### Customize tooltip appearance
 
-You can customize the tooltip appearance by using the `ToolTipTemplate` property in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
+You can customize the tooltip appearance by using the [ToolTipTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ToolTipTemplate) property in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
 
 The following code example shows the usage of DataTemplate.
 
@@ -666,8 +666,12 @@ The following code example shows the usage of DataTemplate.
                         <ColumnDefinition Width="Auto" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <Rectangle Fill="{Binding IndicatorColorKey}" Grid.Column="0"               VerticalAlignment="Stretch" HorizontalAlignment="Left" Width="7" 
-                    Margin="0,0,5,0" />
+                    <Rectangle Fill="{Binding IndicatorColorKey}" 
+                               Grid.Column="0"               
+                               VerticalAlignment="Stretch" 
+                               HorizontalAlignment="Left" 
+                               Width="7" 
+                               Margin="0,0,5,0" />
                     <Grid Grid.Column="1">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="5*"/>
@@ -688,8 +692,8 @@ The following code example shows the usage of DataTemplate.
                                    Margin="8,0,0,5" Foreground="White" />
                         <TextBlock Text="Description :" Grid.Row="2" Grid.Column="0"
                                    FontSize="10.5" Foreground="White" />
-                        <TextBlock Text="{Binding Description}" Margin="8,0,0,5" Width="150" TextWrapping="Wrap" TextTrimming="CharacterEllipsis"
-                                   FontSize="10.5" Grid.Row="2" Grid.Column="1" Foreground="White" />
+                        <TextBlock Text="{Binding Description}" Margin="8,0,0,5" Width="150" TextWrapping="Wrap"                   
+                                   TextTrimming="CharacterEllipsis" FontSize="10.5" Grid.Row="2" Grid.Column="1" Foreground="White" />
                     </Grid>
                 </Grid>
             </Border>
@@ -803,4 +807,4 @@ public class ViewModel
 ![card-tool-tip-customization-support-in-winui-kanban](images/cards/card-tool-tip-customization-support-in-winui-kanban.gif)
 
 N>
-* This property will only be applicable when `IsToolTipEnabled` is set to `true.`
+* This property will only be applicable when [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) is set to `true.`
