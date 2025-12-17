@@ -30,7 +30,7 @@ keywords: winui line chart, winui sfcartesianchart, winui line chart customizati
 
     <chart:SfCartesianChart.Series>
         <chart:LineSeries XBindingPath="Demand" 
-	                      ItemsSource="{Binding Data}" 
+	                  ItemsSource="{Binding Data}" 
                           YBindingPath="Year2010"/>
         <chart:LineSeries XBindingPath="Demand" 
                           ItemsSource="{Binding Data}" 

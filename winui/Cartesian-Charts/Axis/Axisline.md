@@ -77,7 +77,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 NumericalAxis primaryAxis = new NumericalAxis()
 {
-    AxisLineOffset = 25
+    AxisLineOffset = 25,
     AxisLineStyle = chart.Resources["lineStyle"] as Style
 };
 chart.XAxes.Add(primaryAxis);

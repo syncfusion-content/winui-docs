@@ -54,9 +54,9 @@ The funnel chart provides support to add any `UIElement` as a title for legend. 
         <chart:ChartLegend>
             <chart:ChartLegend.Header>
                 <TextBox Text="Products" 
-                    HorizontalAlignment="Center"
-                    FontWeight="Bold"
-                    Foreground="Blue"/>
+                         HorizontalAlignment="Center"
+                         FontWeight="Bold"
+                         Foreground="Blue"/>
             </chart:ChartLegend.Header>
         </chart:ChartLegend>
     </chart:SfFunnelChart.Legend>
@@ -105,8 +105,8 @@ The legend icon represents a symbol associated with each legend item. The appear
 . . .
     <chart:SfFunnelChart.Legend>
         <chart:ChartLegend IconWidth="15" 
-						   IconHeight="15" 
-						   IconVisibility="Visible">
+			   IconHeight="15" 
+			   IconVisibility="Visible">
         </chart:ChartLegend>
     </chart:SfFunnelChart.Legend>
 . . .
@@ -248,7 +248,7 @@ To display the legend at the right, set the [Placement](https://help.syncfusion.
 . . .
     <chart:SfFunnelChart.Legend>
         <chart:ChartLegend ItemMargin="10"
-						   Placement="Right"/>
+		           Placement="Right"/>
     </chart:SfFunnelChart.Legend>
 . . .
 </chart:SfFunnelChart>
@@ -289,9 +289,9 @@ The legend background appearance can be customized by using the following proper
 . . .
     <chart:SfFunnelChart.Legend>
         <chart:ChartLegend Background="Gray" 
-						   BorderBrush="Black"
-						   BorderThickness="1"
-						   CornerRadius="5" >
+			   BorderBrush="Black"
+			   BorderThickness="1"
+			   CornerRadius="5" >
     </chart:ChartLegend>
     </chart:SfFunnelChart.Legend>
 . . .
@@ -324,32 +324,29 @@ Customize each legend item by using the [ItemTemplate](https://help.syncfusion.c
 
 {% highlight xaml %}
 
-<Grid x:Name="grid">
-    <Grid.Resources>
-        <DataTemplate x:Key="labelTemplate">
-            <StackPanel Margin="10"
-						Orientation="Vertical">
-                <Ellipse Height="15"
-						 Width="15"
-						 Fill="{Binding Interior}" 
-						 Stroke="#4a4a4a"
-						 StrokeThickness="2"/>
-                <TextBlock HorizontalAlignment="Center"
-						   FontSize="12"
+<chart:SfFunnelChart x:Name="chart">
+    <chart:SfFunnelChart.Resources>
+        <DataTemplate x:Key="labelTemplate" x:DataType="chart:LegendItem">
+            <StackPanel Margin="10" Orientation="Vertical">
+                <Ellipse Height="15" 
+                         Width="15" 
+                         Fill="{Binding IconBrush}" 
+                         Stroke="#4a4a4a" 
+                         StrokeThickness="2"/>
+                <TextBlock HorizontalAlignment="Center" 
+                           FontSize="12"
                            Foreground="Black" 
-                           FontWeight="SemiBold"
-						   Text="{Binding Label}"/>
+                           FontWeight="SemiBold" 
+                           Text="{Binding Item._XAxesData}"/>
             </StackPanel>
         </DataTemplate>
-    </Grid.Resources>
-<chart:SfFunnelChart>
-. . .
+    </chart:SfFunnelChart.Resources>
+    . . .
     <chart:SfFunnelChart.Legend>
         <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}"/>
     </chart:SfFunnelChart.Legend>
 
 </chart:SfFunnelChart>
-</Grid>
 
 {% endhighlight %}
 
@@ -358,7 +355,6 @@ Customize each legend item by using the [ItemTemplate](https://help.syncfusion.c
 SfFunnelChart chart = new SfFunnelChart();
 chart.Legend = new ChartLegend()
 {
-
    ItemTemplate = grid.Resources["labelTemplate"] as DataTemplate
 };
 . . .
@@ -369,3 +365,5 @@ this.Content = chart;
 {% endtabs %}
 
 ![Legend ItemTemplate support in WinUI Chart](Legend_images/winui-chart_legend_item_customizing.png)
+
+N> The [Item](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LegendItem.html#Syncfusion_UI_Xaml_Charts_LegendItem_Item) can be used to access the data linked to the associated model class. The binding context for ChartLegend `ItemTemplate` is [LegendItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LegendItem.html), which provides the necessary data for the legend labels.

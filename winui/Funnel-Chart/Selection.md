@@ -84,8 +84,7 @@ N> The `Series` and `MultiSeries` selection types are not supported for the funn
                      YBindingPath="Value">
 
     <chart:SfFunnelChart.SelectionBehavior>
-        <chart:DataPointSelectionBehavior SelectionBrush="Red"
-										  Type="Multiple"/>
+        <chart:DataPointSelectionBehavior SelectionBrush="Red" Type="Multiple"/>
     </chart:SfFunnelChart.SelectionBehavior>
 . . .
 </chart:SfFunnelChart>
@@ -130,8 +129,7 @@ The funnel chart provides support to select a point programmatically on a chart 
                      YBindingPath="Value">
 
     <chart:SfFunnelChart.SelectionBehavior>
-        <chart:DataPointSelectionBehavior SelectionBrush="Red"
-										  SelectedIndex="2"/>
+        <chart:DataPointSelectionBehavior SelectionBrush="Red" SelectedIndex="2"/>
     </chart:SfFunnelChart.SelectionBehavior>
 
 </chart:SfFunnelChart>
@@ -173,9 +171,8 @@ Funnel chart provides support to select multiple points programmatically on a ch
                      YBindingPath="Value">
 
     <chart:SfFunnelChart.SelectionBehavior>
-        <chart:DataPointSelectionBehavior SelectionBrush="Red" 
-										  Type="Multiple"
-        SelectedIndexes="{Binding SelectedIndexes}"/>
+        <chart:DataPointSelectionBehavior SelectionBrush="Red" Type="Multiple" 
+                                          SelectedIndexes="{Binding SelectedIndexes}"/>
     </chart:SfFunnelChart.SelectionBehavior>
 . . .
 </chart:SfFunnelChart>

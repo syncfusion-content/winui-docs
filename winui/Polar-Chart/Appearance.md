@@ -23,22 +23,19 @@ Currently, the [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI
                     GridLineType="Polygon">
         ...
         <chart:SfPolarChart.Series>
-            <chart:PolarLineSeries
-			ItemsSource="{Binding PlantDetails}" 
-                        XBindingPath="Direction"
-                        YBindingPath="Tree" Label="Tree">
+            <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
+                                   XBindingPath="Direction"
+                                   YBindingPath="Tree" Label="Tree">
             </chart:PolarLineSeries>
 
-            <chart:PolarLineSeries
-			ItemsSource="{Binding PlantDetails}" 
-                        XBindingPath="Direction"
-                        YBindingPath="Weed" Label="Weed">
+            <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
+                                   XBindingPath="Direction"
+                                   YBindingPath="Weed" Label="Weed">
             </chart:PolarLineSeries>
 
-            <chart:PolarLineSeries
-			ItemsSource="{Binding PlantDetails}" 
-                        XBindingPath="Direction"
-                        YBindingPath="Flower" Label="Flower">
+            <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
+                                   XBindingPath="Direction"
+                                   YBindingPath="Flower" Label="Flower">
             </chart:PolarLineSeries>
         </chart:SfPolarChart.Series>
         ...
@@ -202,8 +199,7 @@ Gradient color using the [Fill](https://help.syncfusion.com/cr/winui/Syncfusion.
                 <GradientStop Offset="1" Color="#A8EAEE" />
                 <GradientStop Offset="0" Color="#7BB0F9" />
             </LinearGradientBrush>
-        </chart:PolarAreaSeries.Fill>
-                   
+        </chart:PolarAreaSeries.Fill>  
     </chart:PolarAreaSeries>
 ...
 </chart:SfPolarChart>
