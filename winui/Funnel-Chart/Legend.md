@@ -54,9 +54,9 @@ The funnel chart provides support to add any `UIElement` as a title for legend. 
         <chart:ChartLegend>
             <chart:ChartLegend.Header>
                 <TextBox Text="Products" 
-                    HorizontalAlignment="Center"
-                    FontWeight="Bold"
-                    Foreground="Blue"/>
+                         HorizontalAlignment="Center"
+                         FontWeight="Bold"
+                         Foreground="Blue"/>
             </chart:ChartLegend.Header>
         </chart:ChartLegend>
     </chart:SfFunnelChart.Legend>
@@ -105,8 +105,8 @@ The legend icon represents a symbol associated with each legend item. The appear
 . . .
     <chart:SfFunnelChart.Legend>
         <chart:ChartLegend IconWidth="15" 
-						   IconHeight="15" 
-						   IconVisibility="Visible">
+			   IconHeight="15" 
+			   IconVisibility="Visible">
         </chart:ChartLegend>
     </chart:SfFunnelChart.Legend>
 . . .
@@ -248,7 +248,7 @@ To display the legend at the right, set the [Placement](https://help.syncfusion.
 . . .
     <chart:SfFunnelChart.Legend>
         <chart:ChartLegend ItemMargin="10"
-						   Placement="Right"/>
+		           Placement="Right"/>
     </chart:SfFunnelChart.Legend>
 . . .
 </chart:SfFunnelChart>
@@ -289,9 +289,9 @@ The legend background appearance can be customized by using the following proper
 . . .
     <chart:SfFunnelChart.Legend>
         <chart:ChartLegend Background="Gray" 
-						   BorderBrush="Black"
-						   BorderThickness="1"
-						   CornerRadius="5" >
+			   BorderBrush="Black"
+			   BorderThickness="1"
+			   CornerRadius="5" >
     </chart:ChartLegend>
     </chart:SfFunnelChart.Legend>
 . . .
@@ -355,7 +355,6 @@ Customize each legend item by using the [ItemTemplate](https://help.syncfusion.c
 SfFunnelChart chart = new SfFunnelChart();
 chart.Legend = new ChartLegend()
 {
-
    ItemTemplate = grid.Resources["labelTemplate"] as DataTemplate
 };
 . . .

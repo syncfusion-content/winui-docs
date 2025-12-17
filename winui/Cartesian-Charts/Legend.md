@@ -227,8 +227,8 @@ ColumnSeries series = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Year",
     YBindingPath = "India",
-    IconTemplate = chart.Resources["iconTemplate"] as DataTemplate
-    Label = "Gold";
+    IconTemplate = chart.Resources["iconTemplate"] as DataTemplate,
+    Label = "Gold",
 };
 
 chart.Series.Add(series);

@@ -42,16 +42,16 @@ this.Content = chart;
 
 {% highlight xaml %}
 
- <chart:SfFunnelChart>
+<chart:SfFunnelChart>
 
     <chart:SfFunnelChart.Header>
         <Border BorderThickness="2"
-				BorderBrush="Black"
-				Margin="10"
-				CornerRadius="5">
+		BorderBrush="Black"
+		Margin="10"
+		CornerRadius="5">
             <TextBlock FontSize="14" 
-					   Text="PRODUCT SALES"
-					   Margin="5"/>
+		       Text="PRODUCT SALES"
+		       Margin="5"/>
         </Border>
     </chart:SfFunnelChart.Header>
             
@@ -97,7 +97,7 @@ The title text content can be aligned horizontally to the left, center or right 
 
 {% highlight xaml %}
 
- <chart:SfFunnelChart x:Name="chart" 
+<chart:SfFunnelChart x:Name="chart" 
                      HorizontalHeaderAlignment="Right"
                      ShowDataLabels="True"
                      Height="388" Width="500" 
@@ -107,13 +107,13 @@ The title text content can be aligned horizontally to the left, center or right 
                 
             <chart:SfFunnelChart.Header>
                 <Border BorderThickness="2"
-						Background="LightBlue"
-						BorderBrush="Black"
-						Margin="10" 
-						CornerRadius="5">
+			Background="LightBlue"
+			BorderBrush="Black"
+			Margin="10" 
+			CornerRadius="5">
                     <TextBlock FontSize="14"
-							   Text="PRODUCT SALES" 
-							   Margin="5"/>
+			       Text="PRODUCT SALES" 
+			       Margin="5"/>
                 </Border>
             </chart:SfFunnelChart.Header>
 

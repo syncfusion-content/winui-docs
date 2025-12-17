@@ -22,8 +22,7 @@ Currently, the [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.
 <chart:SfPyramidChart x:Name="chart" 
                       ItemsSource="{Binding Data}" 
                       XBindingPath="Category"
-                      YBindingPath="Value">
-
+                      YBindingPath="Value"
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -72,6 +71,7 @@ The [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
      . . .
     </chart:SfPyramidChart>
 </Grid>
+
 {% endhighlight %}
 
 {% highlight c# %}
@@ -114,23 +114,23 @@ Gradient for the pyramid chart can be set by using the [PaletteBrushes](https://
             <LinearGradientBrush>
                     <GradientStop Offset="1" Color="#FFE7C7" />
                     <GradientStop Offset="0" Color="#FCB69F" />
-                </LinearGradientBrush>
-                <LinearGradientBrush>
+            </LinearGradientBrush>
+            <LinearGradientBrush>
                     <GradientStop Offset="1" Color="#fadd7d" />
                     <GradientStop Offset="0" Color="#fccc2d" />
-                </LinearGradientBrush>
-                <LinearGradientBrush>
+            </LinearGradientBrush>
+            <LinearGradientBrush>
                     <GradientStop Offset="1" Color="#DCFA97" />
                     <GradientStop Offset="0" Color="#96E6A1" />
-                </LinearGradientBrush>
-                <LinearGradientBrush>
+            </LinearGradientBrush>
+            <LinearGradientBrush>
                     <GradientStop Offset="1" Color="#DDD6F3" />
                     <GradientStop Offset="0" Color="#FAACA8" />
-                </LinearGradientBrush>
-                <LinearGradientBrush>
+            </LinearGradientBrush>
+            <LinearGradientBrush>
                     <GradientStop Offset="1" Color="#A8EAEE" />
                     <GradientStop Offset="0" Color="#7BB0F9" />
-                </LinearGradientBrush>
+            </LinearGradientBrush>
         </BrushCollection>
     </Grid.Resources>
 
@@ -143,6 +143,7 @@ Gradient for the pyramid chart can be set by using the [PaletteBrushes](https://
      . . .
     </chart:SfPyramidChart>
 </Grid>
+
 {% endhighlight %}
 
 {% highlight c# %}

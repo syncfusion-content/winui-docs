@@ -307,7 +307,7 @@ Customize each legend item by using the [ItemTemplate](https://help.syncfusion.c
 
 {% highlight xaml %}
 
-<chart:SfPolarChart x:Name="chart">
+<chart:SfPolarChart x:Name="chart" x:DataType="chart:LegendItem">
     <chart:SfPolarChart.Resources>
         <DataTemplate x:Key="labelTemplate" x:DataType="chart:LegendItem">
             <StackPanel Margin="10" Orientation="Vertical">

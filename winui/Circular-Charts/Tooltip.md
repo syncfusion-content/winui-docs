@@ -185,26 +185,26 @@ Circular chart provides support to customize the appearance of the tooltip by us
     
 <chart:SfCircularChart x:Name="chart">
     <chart.SfCircularChart.Resources>
-            <DataTemplate x:Key="tooltipTemplate">
+            <DataTemplate x:Key="tooltipTemplate" x:DataType="chart:ChartSegment">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="{Binding Item.Product}"
-                            Foreground="Black"
-                            FontWeight="Medium"
-                            FontSize="12"
-                            HorizontalAlignment="Center"
-                            VerticalAlignment="Center"/>
+                               Foreground="Black"
+                               FontWeight="Medium"
+                               FontSize="12"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"/>
                     <TextBlock Text=" : "
-                            Foreground="Black"
-                            FontWeight="Medium" 
-                            FontSize="12" 
-                            HorizontalAlignment="Center" 
-                            VerticalAlignment="Center"/>
+                               Foreground="Black"
+                               FontWeight="Medium" 
+                               FontSize="12" 
+                               HorizontalAlignment="Center" 
+                               VerticalAlignment="Center"/>
                     <TextBlock Text="{Binding Item.SalesRate}" 
-                            Foreground="Black"
-                            FontWeight="Medium"
-                            FontSize="12"
-                            HorizontalAlignment="Center" 
-                            VerticalAlignment="Center"/>
+                               Foreground="Black"
+                               FontWeight="Medium"
+                               FontSize="12"
+                               HorizontalAlignment="Center" 
+                               VerticalAlignment="Center"/>
                 </StackPanel>
             </DataTemplate>
             <Style TargetType="Path" x:Key="style">
@@ -213,7 +213,7 @@ Circular chart provides support to customize the appearance of the tooltip by us
                 <Setter Property="StrokeThickness" Value="2"/>
             </Style>
     </chart.SfCircularChart.Resources>
-. . .
+    . . .
     <chart:SfCircularChart.Series>
         <chart:PieSeries EnableTooltip="True"
                          ItemsSource="{Binding Data}" 

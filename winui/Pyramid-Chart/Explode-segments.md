@@ -20,12 +20,11 @@ Exploding a segment is used to pull attention to a specific area of the pyramid.
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart" 
-                ExplodeIndex="3"  
-                ExplodeOffset="30" 
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
-
+                      ExplodeIndex="3"  
+                      ExplodeOffset="30" 
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="Category"
+                      YBindingPath="Value">
 </chart:SfPyramidChart>
  
 {% endhighlight %}

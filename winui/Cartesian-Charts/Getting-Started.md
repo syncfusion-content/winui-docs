@@ -47,7 +47,6 @@ namespace SfChart_GettingStarted
         public MainWindow()
         {
             InitializeComponent();
-            
             SfCartesianChart chart = new SfCartesianChart();      
             grid.Children.Add(chart);
         }
@@ -352,11 +351,10 @@ Tooltips are used to show information about the segment, when hovers on the segm
 
 <chart:SfCartesianChart>
 	...
-   <chart:ColumnSeries
-				EnableTooltip="True" 
-			    ItemsSource="{Binding Data}" 
-			    XBindingPath="Name" 
-			    YBindingPath="Height"/>
+   <chart:ColumnSeries EnableTooltip="True" 
+                       ItemsSource="{Binding Data}" 
+	               XBindingPath="Name" 
+		       YBindingPath="Height"/>
 	...
 </chart:SfCartesianChart> 
 
@@ -394,6 +392,7 @@ The following code example gives you the complete code of above configurations.
         <chart:SfCartesianChart.Legend>
             <chart:ChartLegend/>
         </chart:SfCartesianChart.Legend>
+
         <chart:SfCartesianChart.DataContext>
             <Model:ViewModel/>
         </chart:SfCartesianChart.DataContext>
@@ -402,14 +401,14 @@ The following code example gives you the complete code of above configurations.
         <chart:SfCartesianChart.XAxes>
             <chart:CategoryAxis Header="Names"/>
         </chart:SfCartesianChart.XAxes>
+
         <chart:SfCartesianChart.YAxes>
             <chart:NumericalAxis Header="Height(in cm)"/>
         </chart:SfCartesianChart.YAxes>
 
         <!--Initialize the series for chart-->
-        <chart:ColumnSeries 
-						Label="Heights" 
-							EnableTooltip="True"
+        <chart:ColumnSeries Label="Heights" 
+			    EnableTooltip="True"
                             ShowDataLabels="True"
                             ItemsSource="{Binding Data}"
                             XBindingPath="Name" 
@@ -436,11 +435,11 @@ namespace SfChart_GettingStarted
             InitializeComponent();
             
             SfCartesianChart chart = new SfCartesianChart() 
-			{ 
-				Header = "Height Comparison", 
-				Height = 300, 
-				Width = 500 
-			};
+	    { 
+	        Header = "Height Comparison", 
+		Height = 300, 
+		Width = 500 
+	    };
 
             //Adding horizontal axis to the chart 
             CategoryAxis xAxis = new CategoryAxis();

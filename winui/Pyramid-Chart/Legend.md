@@ -107,7 +107,7 @@ The legend icon represents a symbol associated with each legend item. The appear
 . . .
     <chart:SfPyramidChart.Legend>
         <chart:ChartLegend IconWidth="15"
-						   IconHeight="15" 
+			   IconHeight="15" 
                            IconVisibility="Visible">
         </chart:ChartLegend>
     </chart:SfPyramidChart.Legend>
@@ -248,7 +248,7 @@ By using the [Placement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 . . .
     <chart:SfPyramidChart.Legend>
         <chart:ChartLegend ItemMargin="10" 
-						   Placement="Left"/>
+			   Placement="Left"/>
     </chart:SfPyramidChart.Legend>
 . . .
 </chart:SfPyramidChart>

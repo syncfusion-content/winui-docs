@@ -26,7 +26,7 @@ By adding the [ChartZoomPanBehavior](https://help.syncfusion.com/cr/winui/Syncfu
     <chart:SfCartesianChart  x:Name="chart" >
     ...
     <chart:SfCartesianChart.XAxes>
-        <chart:NumericalAxis   AutoScrollingDelta="3"  />
+        <chart:NumericalAxis AutoScrollingDelta="3"  />
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
@@ -34,7 +34,7 @@ By adding the [ChartZoomPanBehavior](https://help.syncfusion.com/cr/winui/Syncfu
     </chart:SfCartesianChart.YAxes>
 
     <chart:SfCartesianChart.ZoomPanBehavior>
-        <chart:ChartZoomPanBehavior  EnablePanning="True"  />
+        <chart:ChartZoomPanBehavior EnablePanning="True"  />
     </chart:SfCartesianChart.ZoomPanBehavior>
     ...
     </chart:SfCartesianChart>
@@ -63,6 +63,7 @@ By adding the [ChartZoomPanBehavior](https://help.syncfusion.com/cr/winui/Syncfu
     chart.ZoomPanBehavior = zoomPanBehavior;
     ...
     this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -80,8 +81,7 @@ The [AutoScrollingMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
     <chart:SfCartesianChart  x:Name="chart" >
     ...
     <chart:SfCartesianChart.XAxes>
-        <chart:NumericalAxis   AutoScrollingDelta="3" 
-                               AutoScrollingMode="Start" />
+        <chart:NumericalAxis AutoScrollingDelta="3" AutoScrollingMode="Start" />
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
@@ -89,7 +89,7 @@ The [AutoScrollingMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
     </chart:SfCartesianChart.YAxes>
 
     <chart:SfCartesianChart.ZoomPanBehavior>
-        <chart:ChartZoomPanBehavior  EnablePanning="True"  />
+        <chart:ChartZoomPanBehavior EnablePanning="True"  />
     </chart:SfCartesianChart.ZoomPanBehavior>
     ...
     </chart:SfCartesianChart>
@@ -117,6 +117,7 @@ The [AutoScrollingMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
     chart.ZoomPanBehavior = zoomPanBehavior;
     ...
     this.Content = chart;
+    
 {% endhighlight %}
 
 {% endtabs %}
@@ -131,12 +132,10 @@ In the [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ch
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart  x:Name="chart" >
+<chart:SfCartesianChart  x:Name="chart" >
     ...
     <chart:SfCartesianChart.XAxes>
-        <chart:DateTimeAxis 
-                        AutoScrollingDelta="4"  
-                        AutoScrollingDeltaType="Months" >
+        <chart:DateTimeAxis AutoScrollingDelta="4" AutoScrollingDeltaType="Months" >
             <chart:DateTimeAxis.LabelStyle>
                 <chart:LabelStyle LabelFormat="MMM-yy" />
             </chart:DateTimeAxis.LabelStyle>
@@ -148,10 +147,10 @@ In the [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ch
     </chart:SfCartesianChart.YAxes>
 
     <chart:SfCartesianChart.ZoomPanBehavior>
-        <chart:ChartZoomPanBehavior  EnablePanning="True"  />
+        <chart:ChartZoomPanBehavior EnablePanning="True"  />
     </chart:SfCartesianChart.ZoomPanBehavior>
     ...
-    </chart:SfCartesianChart>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
@@ -181,6 +180,7 @@ In the [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ch
     chart.ZoomPanBehavior = zoomPanBehavior;
     ...
     this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}
