@@ -113,6 +113,9 @@ The Syncfusion WinUI Chart suite offers versatile visualization tools across var
 {% promptcard Axis Customization %}
 #SyncfusionWinUIAssistant Configure axis intervals, labels format, inversed axis, axis crossing, and logarithmic axis.
 {% endpromptcard %}
+{% promptcard Gridlines and Chart Area Styling %}
+#SyncfusionWinUIAssistant Customize major/minor gridlines, tick lines, chart area background, and border.
+{% endpromptcard %}
 {% promptcard Animation Support %}
 #SyncfusionWinUIAssistant How to enable animations in WinUI Charts to make data visualization more engaging?
 {% endpromptcard %}
