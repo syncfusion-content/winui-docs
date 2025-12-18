@@ -53,7 +53,7 @@ The Syncfusion WinUI Data Grid delivers fast, flexible tables for large datasets
 #SyncfusionWinUIAssistant Create a multicolumn Grid to display product details with sorting and filtering.
 {% endpromptcard %}
 {% promptcard Load control in a cell/column %}
-#SyncfusionWinUIAssistant How can I integrate or load a WPF control inside each cell or column of the Syncfusion WPF DataGrid?
+#SyncfusionWinUIAssistant How can I integrate or load a WinUI control inside each cell or column of the Syncfusion WinUI DataGrid?
 {% endpromptcard %}
 {% promptcard Advanced Grid Features %}
 #SyncfusionWinUIAssistant Show me a Grid with sorting, grouping, filtering, and virtual scrolling
@@ -175,11 +175,11 @@ The Syncfusion WinUI Scheduler helps manage events, resources, and timelines wit
 {% promptcard Recurring Events and Series Editing %}
 #SyncfusionWinUIAssistant Create recurring appointments (daily/weekly/monthly/yearly) and enable editing a single occurrence or the entire series.
 {% endpromptcard %}
-{% promptcard Time Zones and DST %}
-#SyncfusionWinUIAssistant Show appointments in specific time zones with automatic Daylight Saving Time handling and conversion.
+{% promptcard Time Zones %}
+#SyncfusionWinUIAssistant Show appointments in the WinUI Scheduler control for specific time zones.
 {% endpromptcard %}
 {% promptcard Work Time, Work Days, and First Day of Week %}
-#SyncfusionWinUIAssistant How to set working hours, configure work days, customize the first day of week, and hide non-working days.
+#SyncfusionWinUIAssistant How to set working hours, configure work days and customize the first day of week.
 {% endpromptcard %}
 {% promptcard Min/Max Date Navigation Limits %}
 #SyncfusionWinUIAssistant How to restrict navigation with MinimumDateTime and MaximumDateTime to keep users in a valid planning range.
@@ -187,11 +187,11 @@ The Syncfusion WinUI Scheduler helps manage events, resources, and timelines wit
 {% promptcard Special Time Regions (Blocking Intervals) %}
 #SyncfusionWinUIAssistant Define special time regions to block interaction (e.g., holidays/breaks) and highlight them across views.
 {% endpromptcard %}
-{% promptcard Blackout Dates (Selectable Day Predicate) %}
-#SyncfusionWinUIAssistant Disable specific dates like weekends or holidays to prevent selection and interaction.
+{% promptcard Blackout Dates for MonthView %}
+#SyncfusionWinUIAssistant Disable specific dates like weekends or holidays to prevent selection and interaction for month view.
 {% endpromptcard %}
-{% promptcard Drag-and-Drop and Inline Editing %}
-#SyncfusionWinUIAssistant Enable drag to reschedule, resize to change duration, and inline editors for quick appointment updates.
+{% promptcard Drag-and-Drop %}
+#SyncfusionWinUIAssistant Enable drag to reschedule, resize to change duration for quick appointment updates.
 {% endpromptcard %}
 {% promptcard Resources and Grouping %}
 #SyncfusionWinUIAssistant Group by resources (rooms/people/teams) with color-coding and timeline views optimized for many resources.
