@@ -61,7 +61,6 @@ LineSeries series2 = new LineSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2011",
-
 };
 
 chart.Series.Add(series1);
@@ -126,7 +125,6 @@ LineSeries series1 = new LineSeries()
     XBindingPath = "Demand",
     YBindingPath = "Year2010",
     StrokeDashArray = doubleCollection
-
 };
 
 LineSeries series2 = new LineSeries()

@@ -41,6 +41,7 @@ The [StackedColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
                                ItemsSource="{Binding MedalDetails}"/>
     ...
 </chart:SfCartesianChart>
+
 {% endhighlight %}
 
 {% highlight c# %}
