@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance in WinUI Chart control | Syncfusion
+title: Appearance in WinUI Circular Chart control | Syncfusion
 description: This section explains about how to apply palettes and gradient in the Syncfusion® WinUI Chart (SfCircularChart) control
 platform: WinUI
 control: SfCircularChart

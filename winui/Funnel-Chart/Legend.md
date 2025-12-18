@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in WinUI Chart control | Syncfusion
+title: Legend in WinUI Funnel Chart control | Syncfusion
 description: This sections explains about how to configure the legend and its features title, icons, labels, and template in WinUI Chart (SfFunnelChart).
 platform: WinUI
 control: SfFunnelChart
