@@ -280,7 +280,7 @@ The Syncfusion WinUI Ribbon is a command bar that organizes an application’s t
 #SyncfusionWinUIAssistant How to localize Ribbon text and tooltips and enable right-to-left (RTL) layout?
 {% endpromptcard %}
 {% promptcard Theming %}
-#SyncfusionWinUIAssistant How to style ribbon items, screentip, keytip and QAT; support Light/Dark themes.
+#SyncfusionWinUIAssistant How to style ribbon items, screen tip, key tip and QAT; support Light/Dark themes.
 {% endpromptcard %}
 {% promptcard Group Resizing Policies %}
 #SyncfusionWinUIAssistant How to configure Ribbon group size definitions (Large, Medium, Small) and item collapsing for narrow widths?
