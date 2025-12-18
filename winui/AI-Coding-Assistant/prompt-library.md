@@ -233,9 +233,6 @@ The Syncfusion WinUI Calendar supports flexible date selection, localization, an
 {% promptcard Custom Day Cell Format %}
 #SyncfusionWinUIAssistant Customize the day cell format in the Calendar to show short weekday names.
 {% endpromptcard %}
-{% promptcard Highlight Weekends %}
-#SyncfusionWinUIAssistant Highlight weekends in the Calendar with a different background color.
-{% endpromptcard %}
 {% promptcard Multi-Selection and Range %}
 #SyncfusionWinUIAssistant Enable both multi-date selection and range selection in the Calendar.
 {% endpromptcard %}
