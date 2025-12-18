@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Title in WinUI Chart control | Syncfusion
+title: Title in WinUI Polar Chart control | Syncfusion
 description: Learn here all about the title in Syncfusion® WinUI Chart (SfPolarChart) control and its customization.
 platform: WinUI
 control: SfPolarChart

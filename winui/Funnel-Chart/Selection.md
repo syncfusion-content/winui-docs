@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection in WinUI Chart control | Syncfusion
+title: Selection in WinUI Funnel Chart control | Syncfusion
 description: Learn here all about selection and multi-selection support in Syncfusion® WinUI Chart (SfFunnelChart) control.
 platform: WinUI
 control: SfFunnelChart

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Explode segments in WinUI Chart control | Syncfusion
+title: Explode segments in WinUI Pyramid Chart control | Syncfusion
 description: This section explains about how to explode single segment or all segments in Syncfusion® WinUI Chart (SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart

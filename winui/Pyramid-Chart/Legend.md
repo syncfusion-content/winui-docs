@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in WinUI Chart control | Syncfusion
+title: Legend in WinUI Pyramid Chart control | Syncfusion
 description: This sections explains about how to configure the legend and its features title, icons, labels, and template in WinUI Chart(SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
