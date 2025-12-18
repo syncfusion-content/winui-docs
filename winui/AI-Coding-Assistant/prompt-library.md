@@ -92,32 +92,35 @@ The Syncfusion WinUI Chart suite offers versatile visualization tools across var
 {% promptcard Zooming and panning %}
 #SyncfusionWinUIAssistant How to enable zooming and panning in WinUI Charts to make large datasets more interactive?
 {% endpromptcard %}
-{% promptcard Annotations %}
-#SyncfusionWinUIAssistant Add custom annotations to highlight specific data points in a chart.
-{% endpromptcard %}
-{% promptcard Chart Export to Image or PDF %}
-#SyncfusionWinUIAssistant How do I export a Syncfusion Chart to PDF or image format?
-{% endpromptcard %}
-{% promptcard Print Support %}
-#SyncfusionWinUIAssistant Enable print functionality for a Syncfusion WinUI Chart component.
-{% endpromptcard %}
 {% promptcard Data Label and ToolTip Support %}
 #SyncfusionWinUIAssistant Enable tooltips and data labels in Syncfusion WinUI Chart component.
+{% endpromptcard %}
+{% promptcard Tooltips and Trackball %}
+#SyncfusionWinUIAssistant Show interactive tooltips and a trackball with formatted labels and multiple series value display.
+{% endpromptcard %}
+{% promptcard Axes and Multiple Axes %}
+#SyncfusionWinUIAssistant Configure CategoryAxis, NumericalAxis, DateTimeAxis, and add a secondary Y-axis with series mapped to it.
+{% endpromptcard %}
+{% promptcard Legend and Title %}
+#SyncfusionWinUIAssistant Add chart title, subtitle, and a responsive legend (positioning, overflow modes) in a WinUI chart.
+{% endpromptcard %}
+{% promptcard Series Types Quick Setup %}
+#SyncfusionWinUIAssistant Create a chart with Line, Spline, StepLine, Area, SplineArea, Column, Bar, Scatter, and Bubble series.
+{% endpromptcard %}
+{% promptcard Segment Color Mapping and Gradients %}
+#SyncfusionWinUIAssistant Apply segment color mapping and gradient fills based on Y-value ranges.
+{% endpromptcard %}
+{% promptcard Axis Customization %}
+#SyncfusionWinUIAssistant Configure axis intervals, labels format, inversed axis, axis crossing, and logarithmic axis.
 {% endpromptcard %}
 {% promptcard Animation Support %}
 #SyncfusionWinUIAssistant How to enable animations in WinUI Charts to make data visualization more engaging?
 {% endpromptcard %}
-{% promptcard Dynamic Chart with Remote Data %}
-#SyncfusionWinUIAssistant Create a chart that updates dynamically with remote API data.
-{% endpromptcard %}
 {% promptcard Multiple Series Types %}
 #SyncfusionWinUIAssistant How do I combine bar and line chart types in a single Syncfusion Chart?
 {% endpromptcard %}
-{% promptcard Troubleshooting Chart Data Binding %}
-#SyncfusionWinUIAssistant Why isn’t my remote data showing up in the Syncfusion Chart?
-{% endpromptcard %}
-{% promptcard Custom Markers and Labels %}
-#SyncfusionWinUIAssistant Show me an example of customizing chart markers and data label styles.
+{% promptcard Custom Labels %}
+#SyncfusionWinUIAssistant Show me an example of customizing chart data label styles.
 {% endpromptcard %}
 {% endpromptcards %}
 
@@ -220,9 +223,6 @@ The Syncfusion WinUI Calendar supports flexible date selection, localization, an
 {% endpromptcard %}
 {% promptcard Week Number %}
 #SyncfusionWinUIAssistant How to show week number in the WinUI calendar?
-{% endpromptcard %}
-{% promptcard Skip Months Feature %}
-#SyncfusionWinUIAssistant Enable skipping months in Calendar navigation for faster browsing.
 {% endpromptcard %}
 {% promptcard Show Other Month Days %}
 #SyncfusionWinUIAssistant How to show days from adjacent months in the current Calendar view?
