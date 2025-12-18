@@ -52,8 +52,8 @@ The Syncfusion WinUI Data Grid delivers fast, flexible tables for large datasets
 {% promptcard Multicolumn Grid Setup %}
 #SyncfusionWinUIAssistant Create a multicolumn Grid to display product details with sorting and filtering.
 {% endpromptcard %}
-{% promptcard Chat Integration %}
-#SyncfusionWinUIAssistant How can I integrate a chat widget inside each row of the Syncfusion Grid?
+{% promptcard Load control in a cell/column %}
+#SyncfusionWinUIAssistant How can I integrate or load a WPF control inside each cell or column of the Syncfusion WPF DataGrid?
 {% endpromptcard %}
 {% promptcard Advanced Grid Features %}
 #SyncfusionWinUIAssistant Show me a Grid with paging, sorting, grouping, filtering, and virtual scrolling
@@ -61,14 +61,11 @@ The Syncfusion WinUI Data Grid delivers fast, flexible tables for large datasets
 {% promptcard Troubleshooting Grid Export %}
 #SyncfusionWinUIAssistant Why isn’t my Grid exporting to PDF and Excel correctly?
 {% endpromptcard %}
-{% promptcard Inline Editing %}
-#SyncfusionWinUIAssistant How do I enable inline editing for CRUD operations in the Grid?
-{% endpromptcard %}
-{% promptcard Custom Toolbar %}
-#SyncfusionWinUIAssistant Add custom toolbar buttons for PDF and Excel export in the Grid.
+{% promptcard Cell Editing %}
+#SyncfusionWinUIAssistant How to enable cell editing in the DataGrid?
 {% endpromptcard %}
 {% promptcard Dynamic Column Configuration %}
-#SyncfusionWinUIAssistant How can I dynamically configure multicolumn layout with filtering and sorting?
+#SyncfusionWinUIAssistant How can I add or display the predefined or multi columns in a drop-down in the DataGrid?
 {% endpromptcard %}
 {% promptcard Drag and drop support %}
 #SyncfusionWinUIAssistant How to Drag and Drop a Row in WinUI DataGrid?
