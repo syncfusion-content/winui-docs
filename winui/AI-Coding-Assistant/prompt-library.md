@@ -28,8 +28,8 @@ Before starting, make sure your MCP Server is set up and running.
 The Syncfusion WinUI Data Grid delivers fast, flexible tables for large datasets with built-in interactivity.
 
 {% promptcards %}
-{% promptcard Paging and Sorting %}
-#SyncfusionWinUIAssistant How do I enable paging and sorting in the Syncfusion WinUI Grid?
+{% promptcard Sorting %}
+#SyncfusionWinUIAssistant How do I enable sorting in the Syncfusion WinUI Grid?
 {% endpromptcard %}
 {% promptcard Grouping and Filtering %}
 #SyncfusionWinUIAssistant Show me an example of grouping and filtering data in the Grid component.
@@ -56,10 +56,10 @@ The Syncfusion WinUI Data Grid delivers fast, flexible tables for large datasets
 #SyncfusionWinUIAssistant How can I integrate or load a WPF control inside each cell or column of the Syncfusion WPF DataGrid?
 {% endpromptcard %}
 {% promptcard Advanced Grid Features %}
-#SyncfusionWinUIAssistant Show me a Grid with paging, sorting, grouping, filtering, and virtual scrolling
+#SyncfusionWinUIAssistant Show me a Grid with sorting, grouping, filtering, and virtual scrolling
 {% endpromptcard %}
 {% promptcard Troubleshooting Grid Export %}
-#SyncfusionWinUIAssistant Why isn’t my Grid exporting to PDF and Excel correctly?
+#SyncfusionWinUIAssistant Why isn’t my Grid exporting to Excel correctly?
 {% endpromptcard %}
 {% promptcard Cell Editing %}
 #SyncfusionWinUIAssistant How to enable cell editing in the DataGrid?
