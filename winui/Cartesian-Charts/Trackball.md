@@ -581,6 +581,7 @@ Interior color of the series is applied to the series label by setting [UseSerie
     </chart:SfCartesianChart.TrackballBehavior>
     ...
 </chart:SfCartesianChart>
+
 {% endhighlight %}
 
 {% highlight c# %}

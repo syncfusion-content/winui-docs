@@ -242,6 +242,7 @@ The [Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 {% tabs %}
 
 {% highlight xaml %}
+
 <chart:SfCartesianChart>
 . . .
 <chart:ColumnSeries ShowDataLabels="True">
@@ -293,6 +294,7 @@ The [Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Ch
     </chart:ColumnSeries.DataLabelSettings>
 </chart:ColumnSeries>
 </chart:SfCartesianChart>
+
 {% endhighlight %}
 
 {% highlight c# %}

@@ -18,7 +18,7 @@ To add the crosshair in the chart, create an instance [ChartCrosshairBehavior](h
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfCartesianChart>
     <chart:SfCartesianChart.CrosshairBehavior>
@@ -47,7 +47,7 @@ To view the crosshair label in the particular axis, you have to enable the [Show
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfCartesianChart>
     <chart:SfCartesianChart.XAxes>

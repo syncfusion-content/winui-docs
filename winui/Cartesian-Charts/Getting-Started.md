@@ -127,7 +127,7 @@ N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `Da
 	    <Grid.DataContext>
 	        <model:ViewModel/>
 	    </Grid.DataContext>
-	</Grid>	
+    </Grid>	
 	
 </Window>
 
