@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance in WinUI Chart control | Syncfusion
+title: Appearance in WinUI Circular Chart control | Syncfusion
 description: This section explains about how to apply palettes and gradient in the Syncfusion® WinUI Chart (SfCircularChart) control
 platform: WinUI
 control: SfCircularChart
@@ -110,25 +110,25 @@ The gradient for the circular chart can be set by using the [PaletteBrushes](htt
     <chart:SfCircularChart.Resources>
             <BrushCollection x:Key="customBrushes">
                 <LinearGradientBrush>
-                        <GradientStop Offset="1" Color="#FFE7C7" />
-                        <GradientStop Offset="0" Color="#FCB69F" />
-                    </LinearGradientBrush>
-                    <LinearGradientBrush>
-                        <GradientStop Offset="1" Color="#fadd7d" />
-                        <GradientStop Offset="0" Color="#fccc2d" />
-                    </LinearGradientBrush>
-                    <LinearGradientBrush>
-                        <GradientStop Offset="1" Color="#DCFA97" />
-                        <GradientStop Offset="0" Color="#96E6A1" />
-                    </LinearGradientBrush>
-                    <LinearGradientBrush>
-                        <GradientStop Offset="1" Color="#DDD6F3" />
-                        <GradientStop Offset="0" Color="#FAACA8" />
-                    </LinearGradientBrush>
-                    <LinearGradientBrush>
-                        <GradientStop Offset="1" Color="#A8EAEE" />
-                        <GradientStop Offset="0" Color="#7BB0F9" />
-                    </LinearGradientBrush>
+                    <GradientStop Offset="1" Color="#FFE7C7" />
+                    <GradientStop Offset="0" Color="#FCB69F" />
+                </LinearGradientBrush>
+                <LinearGradientBrush>
+                    <GradientStop Offset="1" Color="#fadd7d" />
+                    <GradientStop Offset="0" Color="#fccc2d" />
+                </LinearGradientBrush>
+                <LinearGradientBrush>
+                    <GradientStop Offset="1" Color="#DCFA97" />
+                    <GradientStop Offset="0" Color="#96E6A1" />
+                </LinearGradientBrush>
+                <LinearGradientBrush>
+                    <GradientStop Offset="1" Color="#DDD6F3" />
+                    <GradientStop Offset="0" Color="#FAACA8" />
+                </LinearGradientBrush>
+                <LinearGradientBrush>
+                    <GradientStop Offset="1" Color="#A8EAEE" />
+                    <GradientStop Offset="0" Color="#7BB0F9" />
+                </LinearGradientBrush>
             </BrushCollection>
     </chart:SfCircularChart.Resources>
 

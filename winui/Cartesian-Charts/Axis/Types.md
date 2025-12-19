@@ -103,8 +103,8 @@ N> If  minimum or maximum value is set, the other value is calculated by default
 
 <chart:SfCartesianChart.YAxes>
     <chart:NumericalAxis Maximum="2750"
-						 Minimum="250" 
-						 Interval="250"/>
+                         Minimum="250" 
+			 Interval="250"/>
 </chart:SfCartesianChart.YAxes>
 
 {% endhighlight %}
@@ -565,8 +565,7 @@ By default, all the series are plotted based on the 0th index axis of XAxes and 
 
 	<chart:SfCartesianChart.YAxes>
 		<chart:NumericalAxis ShowMajorGridLines="False" />
-		<chart:NumericalAxis Name="Series_YAxis" 
-							 ShowMajorGridLines="False" />
+		<chart:NumericalAxis Name="Series_YAxis" ShowMajorGridLines="False" />
 	</chart:SfCartesianChart.YAxes>
 
     <chart:SfCartesianChart.Series>
@@ -574,7 +573,7 @@ By default, all the series are plotted based on the 0th index axis of XAxes and 
             <chart:ColumnSeries ItemsSource="{Binding Data1}" 
                                 XBindingPath="Date"
                                 YBindingPath="Value"
-					            YAxisName="Series_YAxis">
+				YAxisName="Series_YAxis">
             </chart:ColumnSeries>
             <chart:SplineSeries ItemsSource="{Binding Data}" 
                                 XBindingPath="Date"
@@ -582,8 +581,6 @@ By default, all the series are plotted based on the 0th index axis of XAxes and 
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>
-
-</ContentPage>
 
 {% endhighlight %}
 

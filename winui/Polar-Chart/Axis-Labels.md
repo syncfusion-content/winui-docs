@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis labels in WinUI Chart control | Syncfusion
+title: Axis labels in WinUI Polar Chart control  | Syncfusion
 description: Learn here all about the chart axis lables and its customization in Syncfusion® WinUI Chart (SfPolarChart) control.
 platform: WinUI
 control: SfPolarChart
