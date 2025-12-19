@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection in WinUI Chart control | Syncfusion
+title: Selection in WinUI Pyramid Chart control | Syncfusion
 description: Learn here all about selection and multi-selection support in Syncfusion® WinUI Chart (SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
@@ -38,11 +38,9 @@ To enable the selection in the chart, create an instance of the [DataPointSelect
                       ItemsSource="{Binding Data}" 
                       XBindingPath="Category"
                       YBindingPath="Value">
-
     <chart:SfPyramidChart.SelectionBehavior>
         <chart:DataPointSelectionBehavior SelectionBrush="Red"/>
     </chart:SfPyramidChart.SelectionBehavior>
-
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -83,9 +81,8 @@ N> `Series` and `MultiSeries` selection type is not support for pyramid chart.
                       YBindingPath="Value">
 
     <chart:SfPyramidChart.SelectionBehavior>
-        <chart:DataPointSelectionBehavior
-					Type="Multiple" 
-					SelectionBrush="Red"/>
+        <chart:DataPointSelectionBehavior Type="Multiple" 
+					  SelectionBrush="Red"/>
     </chart:SfPyramidChart.SelectionBehavior>
 . . .
 </chart:SfPyramidChart>
@@ -130,9 +127,8 @@ Pyramid chart provides support to select a point programmatically on a chart usi
                       YBindingPath="Value">
 
     <chart:SfPyramidChart.SelectionBehavior>
-        <chart:DataPointSelectionBehavior
-					SelectionBrush="Red"
-					SelectedIndex="1"/>
+        <chart:DataPointSelectionBehavior SelectionBrush="Red"
+					  SelectedIndex="1"/>
     </chart:SfPyramidChart.SelectionBehavior>
 
 </chart:SfPyramidChart>
@@ -174,10 +170,9 @@ Pyramid chart provides support to select multiple points programmatically on a c
                       YBindingPath="Value">
  
     <chart:SfPyramidChart.SelectionBehavior>
-        <chart:DataPointSelectionBehavior
-					Type="Multiple" 
-					SelectionBrush="Red"
-					SelectedIndexes="{Binding SelectedIndexes}"/>
+        <chart:DataPointSelectionBehavior Type="Multiple" 
+					  SelectionBrush="Red"
+					  SelectedIndexes="{Binding SelectedIndexes}"/>
     </chart:SfPyramidChart.SelectionBehavior>
 . . .
 </chart:SfPyramidChart>

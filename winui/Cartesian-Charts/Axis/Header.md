@@ -98,13 +98,13 @@ The appearance of the header can be customized using the [HeaderTemplate](https:
 <chart:SfCartesianChart.Resources>
     <DataTemplate x:Key="headerTemplate">
         <Border BorderBrush="Blue"
-				CornerRadius="5"
-				BorderThickness="1">
+		CornerRadius="5"
+		BorderThickness="1">
             <TextBlock Text="Category"
-					   FontSize="12"
-					   FontStyle="Italic" 
-					   FontWeight="Bold"
-					   Margin="3"/>
+		       FontSize="12"
+		       FontStyle="Italic" 
+		       FontWeight="Bold"
+		       Margin="3"/>
         </Border>
     </DataTemplate>
 </chart:SfCartesianChart.Resources>

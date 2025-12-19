@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip in WinUI Chart control | Syncfusion
+title: Tooltip in WinUI Circular Chart control | Syncfusion
 description: This section explains about how to enable tooltip and its customization in Syncfusion® WinUI Chart (SfCircularChart) control
 platform: WinUI
 control: SfCircularChart
@@ -182,38 +182,38 @@ Circular chart provides support to customize the appearance of the tooltip by us
 {% highlight xaml %}
 
 <Grid x:Name="grid">
-    <Grid.Resources>
-        <DataTemplate x:Key="tooltipTemplate">
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="{Binding Item.Product}"
-						   Foreground="Black"
-						   FontWeight="Medium"
-						   FontSize="12"
-						   HorizontalAlignment="Center"
-						   VerticalAlignment="Center"/>
-                <TextBlock Text=" : "
-						   Foreground="Black"
-						   FontWeight="Medium" 
-						   FontSize="12" 
-						   HorizontalAlignment="Center" 
-						   VerticalAlignment="Center"/>
-                <TextBlock Text="{Binding Item.SalesRate}" 
-						   Foreground="Black"
-						   FontWeight="Medium"
-						   FontSize="12"
-						   HorizontalAlignment="Center" 
-						   VerticalAlignment="Center"/>
-            </StackPanel>
-        </DataTemplate>
-
-        <Style TargetType="Path" x:Key="style">
-            <Setter Property="Stroke" Value="Black"/>
-            <Setter Property="Fill" Value="LightGreen"/>
-            <Setter Property="StrokeThickness" Value="2"/>
-        </Style>
-    </Grid.Resources>
-<chart:SfCircularChart>
-. . .
+    
+<chart:SfCircularChart x:Name="chart">
+    <chart.SfCircularChart.Resources>
+            <DataTemplate x:Key="tooltipTemplate" x:DataType="chart:ChartSegment">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="{Binding Item.Product}"
+                               Foreground="Black"
+                               FontWeight="Medium"
+                               FontSize="12"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"/>
+                    <TextBlock Text=" : "
+                               Foreground="Black"
+                               FontWeight="Medium" 
+                               FontSize="12" 
+                               HorizontalAlignment="Center" 
+                               VerticalAlignment="Center"/>
+                    <TextBlock Text="{Binding Item.SalesRate}" 
+                               Foreground="Black"
+                               FontWeight="Medium"
+                               FontSize="12"
+                               HorizontalAlignment="Center" 
+                               VerticalAlignment="Center"/>
+                </StackPanel>
+            </DataTemplate>
+            <Style TargetType="Path" x:Key="style">
+                <Setter Property="Stroke" Value="Black"/>
+                <Setter Property="Fill" Value="LightGreen"/>
+                <Setter Property="StrokeThickness" Value="2"/>
+            </Style>
+    </chart.SfCircularChart.Resources>
+    . . .
     <chart:SfCircularChart.Series>
         <chart:PieSeries EnableTooltip="True"
                          ItemsSource="{Binding Data}" 
@@ -243,4 +243,6 @@ series.TooltipTemplate = grid.Resources["tooltipTemplate"] as DataTemplate;
 {% endtabs %}
 
 ![Tooltip template in WinUI Circular Chart](Tooltip_Images/WinUI_pie_chart_tooltip_template.png)
+
+N> The [Item](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSegment.html#Syncfusion_UI_Xaml_Charts_ChartSegment_Item) can be used to access the data linked to the associated model class. The binding context for Chart `TooltipTemplate` is [ChartSegment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSegment.html), which provides the necessary data for the tooltip labels.
 

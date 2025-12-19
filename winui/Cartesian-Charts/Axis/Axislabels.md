@@ -93,11 +93,11 @@ chart.XAxes.Add(primaryAxis);
 <chart:SfCartesianChart>
 . . .
 <chart:SfCartesianChart.YAxes>
-    <chart:NumericalAxis >
+    <chart:NumericalAxis>
         <chart:NumericalAxis.LabelStyle>
             <chart:LabelStyle LabelFormat="0.00" />
-                </chart:NumericalAxis.LabelStyle>
-        </chart:NumericalAxis>
+        </chart:NumericalAxis.LabelStyle>
+    </chart:NumericalAxis>
 </chart:SfCartesianChart.YAxes>
 
 </chart:SfCartesianChart>
@@ -133,13 +133,13 @@ The appearance of the axis labels can be customized by using the [LabelTemplate]
 <chart:SfCartesianChart.Resources>
     <DataTemplate x:Key="labelTemplate">
         <Border BorderBrush="Blue"
-				CornerRadius="5"
-				BorderThickness="1">
+	        CornerRadius="5"
+		BorderThickness="1">
             <TextBlock Text="{Binding Content}"
-					   FontSize="12"
-					   FontStyle="Italic"
-					   FontWeight="Bold" 
-					   Margin="3"/>
+		       FontSize="12"
+		       FontStyle="Italic"
+		       FontWeight="Bold" 
+		       Margin="3"/>
         </Border>
     </DataTemplate>
 </chart:SfCartesianChart.Resources>
@@ -179,8 +179,7 @@ The [LabelExtent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 <chart:SfCartesianChart>
 . . .
 <chart:SfCartesianChart.XAxes>
-    <chart:CategoryAxis Header="Demand"
-						LabelExtent="50"/>
+    <chart:CategoryAxis Header="Demand" LabelExtent="50"/>
 </chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>

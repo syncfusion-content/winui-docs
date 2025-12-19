@@ -111,9 +111,9 @@ The following properties are used to customize the data label.
                                      FontFamily="Calibri" 
                                      BorderBrush="Black" 
                                      BorderThickness="1"
-									 Margin="1" 
+				     Margin="1" 
                                      FontStyle="Italic"
-									 Background="#1E88E5"
+				     Background="#1E88E5"
                                      Context="Percentage"/>
 </chart:PieSeries.DataLabelSettings>
 . . .
@@ -164,26 +164,27 @@ The appearance of the data label can be customized using [ContentTemplate](https
                 <Ellipse Height="15" Width="15" Fill="Cyan" 
                  Stroke="#4a4a4a" StrokeThickness="2"/>
                 <TextBlock HorizontalAlignment="Center" 
-						   FontSize="12"
+			   FontSize="12"
                            Foreground="Black" 
                            FontWeight="SemiBold"
-						   Text="{Binding Item.Product}"/>
+			   Text="{Binding Item.Product}"/>
             </StackPanel>
         </DataTemplate>
     </Grid.Resources>
+
     <chart:SfCircularChart >
-...
+    ...
     <chart:PieSeries ShowDataLabels="True">
         <chart:PieSeries.DataLabelSettings>
-            <chart:CircularDataLabelSettings
-						Position="Inside"
-						ContentTemplate="{StaticResource labelTemplate}"
-                        Context="DataLabelItem"/>
+            <chart:CircularDataLabelSettings Position="Inside"
+					     ContentTemplate="{StaticResource labelTemplate}"
+                                             Context="DataLabelItem"/>
         </chart:PieSeries.DataLabelSettings>
     </chart:PieSeries>
-. . .
+   ...
     </chart:SfCircularChart>
 </Grid>
+
 {% endhighlight %}
 
 {% highlight c# %}
@@ -207,6 +208,8 @@ chart.Series.Add(series);
 
 ![Template support for data label in WinUI Chart](DataLabel_Images/WinUI_pie_chart_data_label_template.png)
 
+N> The binding context for the DataLabelSettings `ContentTemplate` is [Context](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Context), which is used to customize the content of data labels. This property defines the value displayed in the data label, such as the X value or any other value from the underlying model object. By default, the value of `Context` is [YValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LabelContext.html#Syncfusion_UI_Xaml_Charts_LabelContext_YValue).
+
 ## Position
 
 [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) providing additional customization option to position the data label smartly based on series types using [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_CircularDataLabelSettings_Position) property.
@@ -227,10 +230,9 @@ The following are the values for this property:
 . . .
 <chart:PieSeries ShowDataLabels="True">
     <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings
-					Position="OutsideExtended"
-					ShowConnectorLine="True"
-					Context="Percentage"/>
+        <chart:CircularDataLabelSettings Position="OutsideExtended"
+					 ShowConnectorLine="True"
+					 Context="Percentage"/>
     </chart:PieSeries.DataLabelSettings>
 </chart:PieSeries>
 . . .
@@ -271,10 +273,9 @@ chart.Series.Add(series);
 . . .
 <chart:PieSeries ShowDataLabels="True">
     <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings
-					Context="Percentage"
-					Position="Outside"
-					Rotation="335"/>
+        <chart:CircularDataLabelSettings Context="Percentage"
+					 Position="Outside"
+					 Rotation="335"/>
     </chart:PieSeries.DataLabelSettings>
 </chart:PieSeries>
 . . .
@@ -328,13 +329,12 @@ The connector line can be customized using the below properties.
 . . . 
 <chart:PieSeries ShowDataLabels="True">
     <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings
-					Position="Outside"
-					Context="Percentage"
-					ShowConnectorLine="True"
-					ConnectorHeight="40"
-					ConnectorType="StraightLine"
-					ConnectorLineStyle="{StaticResource lineStyle}"/>
+        <chart:CircularDataLabelSettings Position="Outside"
+					 Context="Percentage"
+					 ShowConnectorLine="True"
+					 ConnectorHeight="40"
+					 ConnectorType="StraightLine"
+					 ConnectorLineStyle="{StaticResource lineStyle}"/>
     </chart:PieSeries.DataLabelSettings>
 </chart:PieSeries>
 </chart:SfCircularChart>
@@ -377,15 +377,15 @@ chart.Series.Add(series);
 . . .
 <chart:PieSeries ShowDataLabels="True">
     <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings
-					ConnectorType="Bezier"
-					ConnectorHeight="40"
-                    Position="Outside"
-                    ShowConnectorLine="True"/>
+        <chart:CircularDataLabelSettings ConnectorType="Bezier"
+					 ConnectorHeight="40"
+                                         Position="Outside"
+                                         ShowConnectorLine="True"/>
     </chart:PieSeries.DataLabelSettings>
 </chart:PieSeries>
 
 </chart:SfCircularChart>
+
 {% endhighlight %}
 
 {% highlight c# %}
@@ -424,11 +424,10 @@ The [UseSeriesPalette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
 . . .
 <chart:PieSeries ShowDataLabels="True">
     <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings
-					UseSeriesPalette="True" 
-					ShowConnectorLine="True" 
-					ConnectorHeight="40"
-					Position="Outside"/>
+        <chart:CircularDataLabelSettings UseSeriesPalette="True" 
+					 ShowConnectorLine="True" 
+					 ConnectorHeight="40"
+					 Position="Outside"/>
     </chart:PieSeries.DataLabelSettings>
 </chart:PieSeries>
 
